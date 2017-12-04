@@ -26,13 +26,6 @@
     @include centred;
   }
 
-  &__download-button {
-    margin-top: -1.3rem;
-    padding: 0.3rem 0 0.3rem 0;
-    background-color: $bpk-color-gray-700;
-    width: 100%;
-  }
-
   &__background-duck {
     background-image: url("https://c1.staticflickr.com/5/4344/35990455490_a009268ead_k.jpg");
     background-repeat: no-repeat;
