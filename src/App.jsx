@@ -3,9 +3,11 @@ import BpkText from 'bpk-component-text';
 import BpkBannerAlert, { ALERT_TYPES } from 'bpk-component-banner-alert';
 // import * as TOKENS from 'bpk-tokens/tokens/ios/base.react.native.es6';
 import { BpkGridContainer, BpkGridRow, BpkGridColumn } from 'bpk-component-grid';
-import ComingSoon from './ComingSoon';
+import BpkButton  from 'bpk-component-button';
+import MainContent  from './MainContent';
+import NavLayout  from './NavLayout';
 
-import STYLES from './App.scss';
+import STYLES from './app.scss';
 
 const getClassName = className => STYLES[className] || 'UNKNOWN';
 const MAX_BYTES_TO_HOLD_IN_MEMORY = 240;
@@ -18,12 +20,12 @@ class App extends Component {
   constructor(props) {
     super(props);
 
-    this.state = {
-      comingSoon: true,
-    };
+    // this.state = {
+    //   comingSoon: true,
+    // };
 
     // <editor-fold> Function Bindings
-    // this.uploadConfigurationFile = this.uploadConfigurationFile.bind(this);
+    this.downloadPdf = this.downloadPdf.bind(this);
     // </editor-fold> Function Bindings
   }
 
@@ -39,7 +41,7 @@ class App extends Component {
     const encodedUri = encodeURI(fileContent);
     const link = document.createElement('a');
     link.setAttribute('href', encodedUri);
-    link.setAttribute('download', 'configuration.txt');
+    link.setAttribute('download', 'george_gillams_no_pdf.txt');
     document.body.appendChild(link); // Required for FF
     link.click(); // This will download the data file named "configuration.json".
   }
@@ -48,25 +50,18 @@ class App extends Component {
   render() {
     return (
       <div>
-        <header className={`${getClassName('App__header')} ${getClassName('App--centered')}`}>
+        <header className={`${getClassName('app__header')} ${getClassName('app--centered')}`}>
           <BpkGridContainer>
             <BpkGridRow>
               <BpkGridColumn width={12}>
-                <BpkText tagName="h1" textStyle="xxl" className={getClassName('App__text')}>George Gillams</BpkText>
-                <BpkText tagName="h3" textStyle="md" className={getClassName('App__text')}>Open-source Software Engineer</BpkText>
+                <BpkText tagName="h1" textStyle="xxl" className={getClassName('app__text')}>George Gillams</BpkText>
+                <BpkText tagName="h3" textStyle="md" className={getClassName('app__text')}>Open-source Software Engineer</BpkText>
               </BpkGridColumn>
             </BpkGridRow>
           </BpkGridContainer>
         </header>
-        <main className={getClassName('App__main')}>
-          <BpkGridContainer>
-            <BpkGridRow>
-              <BpkGridColumn width={12}>
-                <ComingSoon/>
-              </BpkGridColumn>
-            </BpkGridRow>
-          </BpkGridContainer>
-        </main>
+        <BpkButton link onClick={this.downloadPdf} className={getClassName('app__download-button')}>Download PDF</BpkButton>
+          <NavLayout/>
       </div>
     );
   }

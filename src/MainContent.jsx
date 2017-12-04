@@ -14,26 +14,31 @@ import BpkSmallDownloadIcon from 'bpk-component-icon/sm/download';
 import BpkSmallUpgradeIcon from 'bpk-component-icon/sm/upgrade';
 // import * as TOKENS from 'bpk-tokens/tokens/ios/base.react.native.es6';
 import BpkHorizontalNav, { BpkHorizontalNavItem } from 'bpk-component-horizontal-nav';
+import { BpkGridContainer, BpkGridRow, BpkGridColumn } from 'bpk-component-grid';
 
-import STYLES from './app.scss';
+import STYLES from './main-content.scss';
 
 const getClassName = className => STYLES[className] || 'UNKNOWN';
 const AlignedBpkSmallDownloadIcon = alignToButton(BpkSmallDownloadIcon);
 const AlignedBpkSmallUpgradeIcon = alignToButton(BpkSmallUpgradeIcon);
 
-const ComingSoon = (props) => {
+const MainContent = (props) => {
 
   return (
-    <div>
-      <div className={getClassName('app__background-duck')}>
-    </div>
-    <BpkText tagName="h2" textStyle="xxl" className={getClassName('app__big-picture-text')}>Coming Soon...</BpkText>
-  </div>
+    <main className={getClassName('main-content__main')}>
+      <BpkGridContainer>
+        <BpkGridRow>
+          <BpkGridColumn width={12}>
+            Content
+          </BpkGridColumn>
+        </BpkGridRow>
+      </BpkGridContainer>
+    </main>
   );
 };
 
-// ComingSoon.propTypes = {
+// MainContent.propTypes = {
 //   // serialPortPath: PropTypes.string.isRequired,
 // };
 
-export default ComingSoon;
+export default MainContent;

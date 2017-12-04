@@ -14,26 +14,32 @@ import BpkSmallDownloadIcon from 'bpk-component-icon/sm/download';
 import BpkSmallUpgradeIcon from 'bpk-component-icon/sm/upgrade';
 // import * as TOKENS from 'bpk-tokens/tokens/ios/base.react.native.es6';
 import BpkHorizontalNav, { BpkHorizontalNavItem } from 'bpk-component-horizontal-nav';
+import { BpkGridContainer, BpkGridRow, BpkGridColumn } from 'bpk-component-grid';
 
-import STYLES from './app.scss';
+import STYLES from './nav-layout.scss';
 
 const getClassName = className => STYLES[className] || 'UNKNOWN';
 const AlignedBpkSmallDownloadIcon = alignToButton(BpkSmallDownloadIcon);
 const AlignedBpkSmallUpgradeIcon = alignToButton(BpkSmallUpgradeIcon);
 
-const ComingSoon = (props) => {
+const NavLayout = (props) => {
+
+  // TODO MAKE THIS RESPONSIVE: ie HIDE NAV COL IFF < tablet breakpoint
 
   return (
-    <div>
-      <div className={getClassName('app__background-duck')}>
-    </div>
-    <BpkText tagName="h2" textStyle="xxl" className={getClassName('app__big-picture-text')}>Coming Soon...</BpkText>
-  </div>
+      <div className={getClassName('nav-layout__main')}>
+        <span className={getClassName('nav-layout__nav-col')}>
+          Navigation
+        </span>
+        <span className={getClassName('nav-layout__content-col')}>
+          Content
+        </span>
+      </div>
   );
 };
 
-// ComingSoon.propTypes = {
+// NavLayout.propTypes = {
 //   // serialPortPath: PropTypes.string.isRequired,
 // };
 
-export default ComingSoon;
+export default NavLayout;
