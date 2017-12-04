@@ -1,0 +1,11 @@
+.DS_Store
+.idea
+.sass-cache
+/dist
+/coverage
+node_modules
+npm-debug.*
+lerna-debug.log
+sassdoc-data.json
+backpack.iml
+yarn.lock

@@ -1,0 +1,43 @@
+{
+  "name": "curriculum-vitae",
+  "homepage": "https://georgegillams.github.io/",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "babel-preset-es2015": "^6.24.1",
+    "backpack-react-scripts": "5.0.2",
+    "bpk-animate-height": "^1.0.31",
+    "bpk-component-accordion": "^1.1.40",
+    "bpk-component-banner-alert": "^1.3.5",
+    "bpk-component-checkbox": "^1.3.34",
+    "bpk-component-horizontal-nav": "^1.0.40",
+    "bpk-component-input": "^3.2.36",
+    "bpk-tokens": "^26.4.5",
+    "mathjs": "^3.16.5",
+    "react-file-reader": "git://github.com/georgegillams/react-file-reader.git#add-support-for-userland-styling"
+  },
+  "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -b master -d build",
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "lint:scss": "stylelint 'src/**/*.scss' --syntax scss",
+    "lint:scss:fix": "stylefmt --recursive 'src/**/*.scss'",
+    "lint:js": "eslint . --ignore-path .gitignore --ext .js,.jsx",
+    "lint:js:fix": "npm run lint:js -- --fix",
+    "lint": "npm run lint:js && npm run lint:scss",
+    "eject": "react-scripts eject"
+  },
+  "devDependencies": {
+    "bpk-component-button": "^1.6.69",
+    "bpk-component-code": "^1.0.29",
+    "bpk-component-grid": "^1.1.35",
+    "bpk-component-text": "^1.0.27",
+    "bpk-mixins": "^17.0.11",
+    "bpk-stylesheets": "^3.2.73",
+    "gh-pages": "^1.1.0",
+    "react": "^15.6.2",
+    "react-dom": "^15.6.2"
+  }
+}
