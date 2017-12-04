@@ -24,11 +24,10 @@ const AlignedBpkSmallUpgradeIcon = alignToButton(BpkSmallUpgradeIcon);
 const ComingSoon = (props) => {
 
   return (
-    <div>
-      <div className={getClassName('app__background-duck')}>
+    <div className={getClassName('app__container')} >
+      <div className={getClassName('app__background-duck')} />
+      <BpkText tagName="h2" textStyle="xxl" className={getClassName('app__big-picture-text')}>Coming Soon...</BpkText>
     </div>
-    <BpkText tagName="h2" textStyle="xxl" className={getClassName('app__big-picture-text')}>Coming Soon...</BpkText>
-  </div>
   );
 };
 

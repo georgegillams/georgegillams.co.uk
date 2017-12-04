@@ -15,6 +15,8 @@ import BpkSmallUpgradeIcon from 'bpk-component-icon/sm/upgrade';
 // import * as TOKENS from 'bpk-tokens/tokens/ios/base.react.native.es6';
 import BpkHorizontalNav, { BpkHorizontalNavItem } from 'bpk-component-horizontal-nav';
 import { BpkGridContainer, BpkGridRow, BpkGridColumn } from 'bpk-component-grid';
+import Section from './Section';
+import SubSection from './SubSection';
 
 import STYLES from './main-content.scss';
 
@@ -26,13 +28,11 @@ const MainContent = (props) => {
 
   return (
     <main className={getClassName('main-content__main')}>
-      <BpkGridContainer>
-        <BpkGridRow>
-          <BpkGridColumn width={12}>
+      <Section name="Section name">
+        <SubSection name="Subsection name">
             Content
-          </BpkGridColumn>
-        </BpkGridRow>
-      </BpkGridContainer>
+        </SubSection>
+      </Section>
     </main>
   );
 };
