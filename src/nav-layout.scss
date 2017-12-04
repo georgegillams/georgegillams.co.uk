@@ -1,31 +1,6 @@
 @import '~bpk-mixins';
 
 .nav-layout {
-  @mixin full-width {
-    width: 100%;
-    margin-right: 0;
-  }
-
-  @mixin left-aligned {
-    text-align: left;
-  }
-
-  @mixin centred {
-    text-align: center;
-  }
-
-  @mixin max-width {
-    max-width: 30rem;
-  }
-
-  &__big-picture-text {
-    // margin-top: 50rem;
-    text-shadow: 0 0 8px rgba(0,0,0,.25);
-    color: $bpk-color-white;
-
-    @include centred;
-  }
-
   &__main {
     display: flex;
     margin: 1rem;
@@ -33,10 +8,11 @@
   }
 
   &__nav-col {
+    overflow: hidden;
     width: 100%;
     max-width: 13rem;
     display: inline-block;
-    background-color: $bpk-color-blue-500;
+    // background-color: $bpk-color-blue-500;
 
     @include bpk-breakpoint-tablet {
       max-width: 0rem;
@@ -44,42 +20,10 @@
   }
 
   &__content-col {
+    overflow: hidden;
     min-width: 13rem;
-      display: inline-block;
-       flex-grow: 1;
-    background-color: $bpk-color-green-500;
-  }
-
-  &__header {
-    padding: $bpk-spacing-xs 0;
-    background-color: $bpk-color-gray-900;
-    color: $bpk-color-white;
-    margin-bottom: $bpk-spacing-sm;
-
-    @include centred
-
-    @include bpk-box-shadow-sm;
-
-    @include bpk-breakpoint-mobile {
-      padding: $bpk-spacing-base 0;
-    }
-  }
-
-  &__component {
-    margin-right: $bpk-spacing-base;
-    margin-bottom: $bpk-spacing-base;
-  }
-
-  &__button {
-    margin-right: $bpk-spacing-base;
-    margin-bottom: $bpk-spacing-base;
-
-    @include bpk-breakpoint-mobile {
-      @include full-width;
-    }
-  }
-
-  &__text {
-    margin-bottom: $bpk-spacing-sm;
+    display: inline-block;
+    flex-grow: 1;
+    // background-color: $bpk-color-green-500;
   }
 }

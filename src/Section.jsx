@@ -15,36 +15,31 @@ import BpkSmallUpgradeIcon from 'bpk-component-icon/sm/upgrade';
 // import * as TOKENS from 'bpk-tokens/tokens/ios/base.react.native.es6';
 import BpkHorizontalNav, { BpkHorizontalNavItem } from 'bpk-component-horizontal-nav';
 import { BpkGridContainer, BpkGridRow, BpkGridColumn } from 'bpk-component-grid';
-import MainContent from './MainContent';
-import ProfilePic from './ProfilePic';
-import ComingSoon from './ComingSoon';
-import GetSocial from './GetSocial';
 
-import STYLES from './nav-layout.scss';
+import STYLES from './section.scss';
 
 const getClassName = className => STYLES[className] || 'UNKNOWN';
 const AlignedBpkSmallDownloadIcon = alignToButton(BpkSmallDownloadIcon);
 const AlignedBpkSmallUpgradeIcon = alignToButton(BpkSmallUpgradeIcon);
 
-const NavLayout = (props) => {
+const Section = (props) => {
+  const { name, style, className, children } = props;
 
-  // TODO MAKE THIS RESPONSIVE: ie HIDE NAV COL IFF < tablet breakpoint
+  const outerClassName = [getClassName('section__section')];
+  if(className){ outerClassName.push(className);}
 
   return (
-      <div className={getClassName('nav-layout__main')}>
-        <span className={getClassName('nav-layout__nav-col')}>
-          <ProfilePic/>
-        </span>
-        <span className={getClassName('nav-layout__content-col')}>
-          <GetSocial/>
-          <ComingSoon/>
-        </span>
-      </div>
+    <div className={outerClassName.join(' ')} style={style}>
+      <BpkText tagName="h2" textStyle="lg" className={getClassName('app__text')}>
+        {name}
+      </BpkText>
+      {children}
+    </div>
   );
 };
 
-// NavLayout.propTypes = {
-//   // serialPortPath: PropTypes.string.isRequired,
-// };
+Section.propTypes = {
+  name: PropTypes.string.isRequired,
+};
 
-export default NavLayout;
+export default Section;

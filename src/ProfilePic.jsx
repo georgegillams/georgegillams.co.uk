@@ -12,39 +12,31 @@ import { colors } from 'bpk-tokens/tokens/base.es6';
 import { alignToButton } from 'bpk-component-icon';
 import BpkSmallDownloadIcon from 'bpk-component-icon/sm/download';
 import BpkSmallUpgradeIcon from 'bpk-component-icon/sm/upgrade';
+import BpkImage from 'bpk-component-image';
 // import * as TOKENS from 'bpk-tokens/tokens/ios/base.react.native.es6';
 import BpkHorizontalNav, { BpkHorizontalNavItem } from 'bpk-component-horizontal-nav';
 import { BpkGridContainer, BpkGridRow, BpkGridColumn } from 'bpk-component-grid';
-import MainContent from './MainContent';
-import ProfilePic from './ProfilePic';
-import ComingSoon from './ComingSoon';
-import GetSocial from './GetSocial';
+import Section from './Section';
+import SubSection from './SubSection';
+import georgegillams from './images/georgegillams.jpg';
 
-import STYLES from './nav-layout.scss';
+import STYLES from './profile-pic.scss';
 
 const getClassName = className => STYLES[className] || 'UNKNOWN';
 const AlignedBpkSmallDownloadIcon = alignToButton(BpkSmallDownloadIcon);
 const AlignedBpkSmallUpgradeIcon = alignToButton(BpkSmallUpgradeIcon);
 
-const NavLayout = (props) => {
-
-  // TODO MAKE THIS RESPONSIVE: ie HIDE NAV COL IFF < tablet breakpoint
+const ProfilePic = (props) => {
 
   return (
-      <div className={getClassName('nav-layout__main')}>
-        <span className={getClassName('nav-layout__nav-col')}>
-          <ProfilePic/>
-        </span>
-        <span className={getClassName('nav-layout__content-col')}>
-          <GetSocial/>
-          <ComingSoon/>
-        </span>
-      </div>
+    <div className={getClassName('profile-pic__container')} >
+      <div className={getClassName('profile-pic__image')} style={{backgroundImage: `url(${georgegillams})`}} />
+    </div>
   );
 };
 
-// NavLayout.propTypes = {
+// ProfilePic.propTypes = {
 //   // serialPortPath: PropTypes.string.isRequired,
 // };
 
-export default NavLayout;
+export default ProfilePic;
