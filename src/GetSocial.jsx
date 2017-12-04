@@ -12,39 +12,41 @@ import { colors } from 'bpk-tokens/tokens/base.es6';
 import { alignToButton } from 'bpk-component-icon';
 import BpkSmallDownloadIcon from 'bpk-component-icon/sm/download';
 import BpkSmallUpgradeIcon from 'bpk-component-icon/sm/upgrade';
+import BpkImage from 'bpk-component-image';
 // import * as TOKENS from 'bpk-tokens/tokens/ios/base.react.native.es6';
 import BpkHorizontalNav, { BpkHorizontalNavItem } from 'bpk-component-horizontal-nav';
 import { BpkGridContainer, BpkGridRow, BpkGridColumn } from 'bpk-component-grid';
-import MainContent from './MainContent';
-import ProfilePic from './ProfilePic';
-import ComingSoon from './ComingSoon';
-import GetSocial from './GetSocial';
+import Section from './Section';
+import SubSection from './SubSection';
+import githubIcon from './icons/github.png';
+import facebookIcon from './icons/facebook.png';
+import linkedinIcon from './icons/linkedin.png';
 
-import STYLES from './nav-layout.scss';
+import STYLES from './get-social.scss';
 
 const getClassName = className => STYLES[className] || 'UNKNOWN';
 const AlignedBpkSmallDownloadIcon = alignToButton(BpkSmallDownloadIcon);
 const AlignedBpkSmallUpgradeIcon = alignToButton(BpkSmallUpgradeIcon);
 
-const NavLayout = (props) => {
-
-  // TODO MAKE THIS RESPONSIVE: ie HIDE NAV COL IFF < tablet breakpoint
+const GetSocial = (props) => {
 
   return (
-      <div className={getClassName('nav-layout__main')}>
-        <span className={getClassName('nav-layout__nav-col')}>
-          <ProfilePic/>
-        </span>
-        <span className={getClassName('nav-layout__content-col')}>
-          <GetSocial/>
-          <ComingSoon/>
-        </span>
-      </div>
+    <div className={getClassName('get-social__container')}>
+      <a className={getClassName('get-social__link')} href="https://github.com/georgegillams/" target="_blank">
+        <img className={getClassName('get-social__icon')} src={githubIcon}/>
+      </a>
+      <a className={getClassName('get-social__link')} href="https://www.facebook.com/george333123" target="_blank">
+        <img className={getClassName('get-social__icon')} src={facebookIcon}/>
+      </a>
+      <a className={getClassName('get-social__link')} href="https://www.linkedin.com/in/george-gillams-37537077" target="_blank">
+        <img className={getClassName('get-social__icon')} src={linkedinIcon}/>
+      </a>
+    </div>
   );
 };
 
-// NavLayout.propTypes = {
+// GetSocial.propTypes = {
 //   // serialPortPath: PropTypes.string.isRequired,
 // };
 
-export default NavLayout;
+export default GetSocial;

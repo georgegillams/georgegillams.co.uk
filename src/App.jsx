@@ -5,6 +5,7 @@ import BpkBannerAlert, { ALERT_TYPES } from 'bpk-component-banner-alert';
 import { BpkGridContainer, BpkGridRow, BpkGridColumn } from 'bpk-component-grid';
 import BpkButton  from 'bpk-component-button';
 import MainContent  from './MainContent';
+import GetSocial  from './GetSocial';
 import NavLayout  from './NavLayout';
 
 import STYLES from './app.scss';
@@ -60,8 +61,8 @@ class App extends Component {
             </BpkGridRow>
           </BpkGridContainer>
         </header>
-        <BpkButton link onClick={this.downloadPdf} className={getClassName('app__download-button')}>Download PDF</BpkButton>
-          <NavLayout/>
+        <BpkButton link onClick={this.downloadPdf} className={getClassName('app__download-button')}>Download CV</BpkButton>
+        <NavLayout/>
       </div>
     );
   }

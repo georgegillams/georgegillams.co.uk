@@ -1,0 +1,18 @@
+@import '~bpk-mixins';
+
+.profile-pic {
+  &__container {
+    width: 13rem;
+    height: 13rem;
+    border-radius: 5px;
+    overflow: hidden;
+  }
+
+  &__image {
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+}
