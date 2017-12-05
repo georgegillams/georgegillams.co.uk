@@ -3,10 +3,10 @@ import BpkText from 'bpk-component-text';
 import BpkBannerAlert, { ALERT_TYPES } from 'bpk-component-banner-alert';
 // import * as TOKENS from 'bpk-tokens/tokens/ios/base.react.native.es6';
 import { BpkGridContainer, BpkGridRow, BpkGridColumn } from 'bpk-component-grid';
-import BpkButton  from 'bpk-component-button';
-import MainContent  from './MainContent';
-import GetSocial  from './GetSocial';
-import NavLayout  from './NavLayout';
+import BpkButton from 'bpk-component-button';
+import MainContent from './MainContent';
+import GetSocial from './GetSocial';
+import NavLayout from './NavLayout';
 
 import STYLES from './app.scss';
 
@@ -38,7 +38,7 @@ class App extends Component {
 
   // <editor-fold> Helper Methods
   downloadPdf() {
-    const fileContent = `data:text/txt;charset=utf-8,${"PDF Coming soon!"}`;
+    const fileContent = `data:text/txt;charset=utf-8,${'PDF Coming soon!'}`;
     const encodedUri = encodeURI(fileContent);
     const link = document.createElement('a');
     link.setAttribute('href', encodedUri);
@@ -62,7 +62,8 @@ class App extends Component {
           </BpkGridContainer>
         </header>
         <BpkButton link onClick={this.downloadPdf} className={getClassName('app__download-button')}>Download CV</BpkButton>
-        <NavLayout/>
+        <GetSocial />
+        <NavLayout />
       </div>
     );
   }

@@ -26,22 +26,23 @@ const getClassName = className => STYLES[className] || 'UNKNOWN';
 const AlignedBpkSmallDownloadIcon = alignToButton(BpkSmallDownloadIcon);
 const AlignedBpkSmallUpgradeIcon = alignToButton(BpkSmallUpgradeIcon);
 
-const NavLayout = (props) => {
+const NavLayout = props =>
 
   // TODO MAKE THIS RESPONSIVE: ie HIDE NAV COL IFF < tablet breakpoint
 
-  return (
-      <div className={getClassName('nav-layout__main')}>
+  (
+    <div className={getClassName('nav-layout__main')}>
+      <div className={getClassName('nav-layout__centre-column')}>
         <span className={getClassName('nav-layout__nav-col')}>
-          <ProfilePic/>
+          <ProfilePic />
         </span>
         <span className={getClassName('nav-layout__content-col')}>
-          <GetSocial/>
-          <ComingSoon/>
+          <ComingSoon />
         </span>
       </div>
-  );
-};
+    </div>
+  )
+;
 
 // NavLayout.propTypes = {
 //   // serialPortPath: PropTypes.string.isRequired,
