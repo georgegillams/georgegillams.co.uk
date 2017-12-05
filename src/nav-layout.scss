@@ -3,8 +3,16 @@
 .nav-layout {
   &__main {
     display: flex;
-    margin: 1rem;
+    margin: 2rem;
     flex-direction: row;
+    justify-content: center;
+  }
+
+  &__centre-column {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    max-width: 65rem;
   }
 
   &__nav-col {
