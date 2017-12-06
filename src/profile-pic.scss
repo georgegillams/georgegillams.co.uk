@@ -2,8 +2,9 @@
 
 .profile-pic {
   &__container {
-    width: 13rem;
-    height: 13rem;
+    width: 15rem;
+    min-width: 15rem;
+    height: 15rem;
     border-radius: .5rem;
     overflow: hidden;
   }

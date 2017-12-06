@@ -4,20 +4,20 @@
   &__container {
     display: flex;
     width: 100%;
-    margin: 1rem 0;
     flex-direction: row;
-    justify-content: center;
+    // justify-content: center;
   }
 
   &__icon {
     display: inline-block;
     width: 100%;
-    max-width: 1.5rem;
+    max-width: 2rem;
     height: 100%;
-    max-height: 1.5rem;
+    max-height: 2rem;
+    filter: opacity(75%);
   }
 
   &__link {
-    margin: 0 .5rem;
+    margin: 0 .5rem 0 .2rem;
   }
 }
