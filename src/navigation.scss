@@ -2,10 +2,13 @@
 
 .navigation {
   &__container {
-    margin: 1.5rem 0;
+    width: 100%;
+    padding: 1rem 0;
 
     @include bpk-breakpoint-tablet {
-      margin: 1.5rem;
+      display: flex;
+      justify-content: center;
+      padding: 1rem;
     }
   }
 
@@ -20,7 +23,7 @@
       width: auto;
       min-width: auto;
       max-width: auto;
-      margin: 1rem;
+      margin: 0 1rem;
     }
   }
 }

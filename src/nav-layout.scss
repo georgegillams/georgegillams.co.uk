@@ -28,29 +28,22 @@
 
     @include bpk-breakpoint-tablet {
       display: flex;
-      flex-wrap: wrap;
       max-width: 100%;
+      flex-flow: wrap;
       flex-direction: row;
       justify-content: center;
     }
   }
 
   &__content-col {
-    display: inline-block;
-    min-width: 15rem;
-    flex-grow: 1;
-    overflow: hidden;
-
     display: flex;
+    display: inline-block;
     width: 100%;
+    min-width: 15rem;
     padding: 1rem;
     flex-direction: row;
     justify-content: center;
-
-    // @include bpk-breakpoint-tablet {
-    //   min-width: 100%;
-    //   width: 100%;
-    //   max-width: 100%;
-    // }
+    flex-grow: 1;
+    overflow: hidden;
   }
 }
