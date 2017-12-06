@@ -1,0 +1,12 @@
+@import '~bpk-mixins';
+
+.personal-details {
+  &__container {
+    min-width: 15rem;
+    padding: 1rem;
+  }
+
+  &__section {
+    padding: 1rem 0;
+  }
+}
