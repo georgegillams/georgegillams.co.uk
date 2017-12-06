@@ -1,26 +1,24 @@
 @import '~bpk-mixins';
 
 .app {
-
   @mixin centred {
     text-align: center;
   }
 
   &__download-button {
-    margin-top: -1.3rem;
-    padding: 0.3rem 0 0.3rem 0;
-    background-color: $bpk-color-gray-700;
     width: 100%;
+    margin-top: -1.3rem;
+    padding: .3rem 0;
+    background-color: $bpk-color-gray-700;
   }
 
   &__header {
+    margin-bottom: $bpk-spacing-sm;
     padding: $bpk-spacing-xs 0;
     background-color: $bpk-color-gray-900;
     color: $bpk-color-white;
-    margin-bottom: $bpk-spacing-sm;
 
-    @include centred
-
+    @include centred;
     @include bpk-box-shadow-sm;
 
     @include bpk-breakpoint-mobile {
@@ -29,29 +27,29 @@
   }
 
   &__container {
-    width: 100%;
     display: flex;
-    justify-content: center;
+    width: 100%;
     padding: 1rem;
     flex-direction: row;
+    justify-content: center;
   }
 
   &__big-picture-text {
     margin-top: 3rem;
-    text-shadow: 0 0 8px rgba(0,0,0,.25);
-    color: $bpk-color-white;
+    color: $bpk-color-gray-500;
+    text-shadow: 0 0 1rem $bpk-color-gray-100;
   }
 
   &__background-duck {
-    background-image: url("https://c1.staticflickr.com/5/4344/35990455490_a009268ead_k.jpg");
+    position: fixed;
+    top: -1rem;
+    left: -1rem;
+    z-index: -1;
+    width: 105%;
+    height: 105%;
+    background-image: url('https://c1.staticflickr.com/5/4344/35990455490_a009268ead_k.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-    filter: blur(5px) brightness(0.75);
-    height: 105%;
-    left: -5px;
-    position: fixed;
-    top: -5px;
-    width: 105%;
-    z-index: -1;
-}
+    filter: blur(1rem) brightness(.75);
+  }
 }

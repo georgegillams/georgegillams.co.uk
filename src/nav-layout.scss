@@ -10,28 +10,26 @@
 
   &__centre-column {
     display: flex;
-    flex-direction: row;
     width: 100%;
     max-width: 65rem;
+    flex-direction: row;
   }
 
   &__nav-col {
-    overflow: hidden;
+    display: inline-block;
     width: 100%;
     max-width: 13rem;
-    display: inline-block;
-    // background-color: $bpk-color-blue-500;
+    overflow: hidden;
 
     @include bpk-breakpoint-tablet {
-      max-width: 0rem;
+      max-width: 0;
     }
   }
 
   &__content-col {
-    overflow: hidden;
-    min-width: 13rem;
     display: inline-block;
+    min-width: 13rem;
     flex-grow: 1;
-    // background-color: $bpk-color-green-500;
+    overflow: hidden;
   }
 }

@@ -14,8 +14,6 @@
     "bpk-component-image": "^2.0.5",
     "bpk-component-input": "^3.2.36",
     "bpk-tokens": "^26.4.5",
-    "mathjs": "^3.16.5",
-    "react-file-reader": "git://github.com/georgegillams/react-file-reader.git#add-support-for-userland-styling"
   },
   "scripts": {
     "predeploy": "npm run build",
