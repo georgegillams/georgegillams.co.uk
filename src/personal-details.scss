@@ -3,10 +3,15 @@
 .personal-details {
   &__container {
     min-width: 15rem;
-    padding: 1rem;
   }
 
   &__section {
+    display: flex;
     padding: 1rem 0;
+    flex-direction: column;
+
+    @include bpk-breakpoint-tablet {
+      align-items: center;
+    }
   }
 }
