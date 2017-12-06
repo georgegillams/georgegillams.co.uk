@@ -6,10 +6,18 @@
   }
 
   &__download-button {
-    width: 100%;
-    margin-top: -1.3rem;
-    padding: .3rem 0;
-    background-color: $bpk-color-gray-700;
+    color: $bpk-color-blue-500
+  }
+
+  &__download-button-container {
+    position: absolute;
+    display: flex;
+    width: 12.5rem;
+    height: 1.625rem;
+    justify-content: center;
+    align-items: stretch;
+    transform: matrix(1, -1, 1, 1, -50, 10);
+    background-color: $bpk-color-gray-900;
   }
 
   &__header {

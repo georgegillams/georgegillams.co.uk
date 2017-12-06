@@ -1,6 +1,7 @@
 import React from 'react';
 import ProfilePic from './ProfilePic';
 import ComingSoon from './ComingSoon';
+import PersonalDetails from './PersonalDetails';
 
 import STYLES from './nav-layout.scss';
 
@@ -11,6 +12,7 @@ const NavLayout = () => (
     <div className={getClassName('nav-layout__centre-column')}>
       <span className={getClassName('nav-layout__nav-col')}>
         <ProfilePic />
+        <PersonalDetails />
       </span>
       <span className={getClassName('nav-layout__content-col')}>
         <ComingSoon />

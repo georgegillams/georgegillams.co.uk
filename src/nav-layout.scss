@@ -13,23 +13,38 @@
     width: 100%;
     max-width: 65rem;
     flex-direction: row;
+
+    @include bpk-breakpoint-tablet {
+      flex-direction: column;
+    }
   }
 
   &__nav-col {
     display: inline-block;
     width: 100%;
-    max-width: 13rem;
+    max-width: 15rem;
     overflow: hidden;
+    // background-color: blue;
 
     @include bpk-breakpoint-tablet {
-      max-width: 0;
+      display: flex;
+      flex-wrap: wrap;
+      max-width: 100%;
+      flex-direction: row;
+      justify-content: center;
     }
   }
 
   &__content-col {
     display: inline-block;
-    min-width: 13rem;
+    min-width: 15rem;
     flex-grow: 1;
     overflow: hidden;
+
+    // @include bpk-breakpoint-tablet {
+    //   min-width: 100%;
+    //   width: 100%;
+    //   max-width: 100%;
+    // }
   }
 }
