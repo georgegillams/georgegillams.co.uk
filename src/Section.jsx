@@ -16,7 +16,7 @@ const Section = (props) => {
 
   return (
     <div className={outerClassName.join(' ')} style={style}>
-      <BpkText tagName="h2" textStyle="lg" className={getClassName('app__text')}>
+      <BpkText tagName="h2" textStyle="xxl" className={getClassName('section__section--text')}>
         {name}
       </BpkText>
       {children}
