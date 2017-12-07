@@ -31,10 +31,10 @@ const App = () => (
         <div>
           <Switch>
             <Route exact path="/" component={HomePage} />
-            <Route path="/net-neutrality" component={NetNeutrality} />
-            <Route path="/stuff" component={Stuff} />
-            <Route path="/contact" component={Contact} />
-            <Route path="/nn" render={() => (<Redirect to="/net-neutrality" />)} />
+            <Route path="/?p=/net-neutrality" component={NetNeutrality} />
+            <Route path="/?p=/stuff" component={Stuff} />
+            <Route path="/?p=/contact" component={Contact} />
+            <Route path="/?p=/nn" render={() => (<Redirect to="/net-neutrality" />)} />
           </Switch>
         </div>
       </NavLayout>
