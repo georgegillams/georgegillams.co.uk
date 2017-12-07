@@ -18,7 +18,7 @@ const ProfilePic = () => (
       <GetSocial />
     </div>
     <div className={getClassName('personal-details__section')}>
-      <BpkText tagName="h3" textStyle="base">v_1.1.0</BpkText>
+      <BpkText tagName="h3" textStyle="sm">v_1.2.0</BpkText>
     </div>
   </div>
 );
