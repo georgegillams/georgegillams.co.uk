@@ -2,7 +2,6 @@
 
 .section {
   &__section {
-    padding: 1rem;
     color: $bpk-color-gray-700;
 
     &--text {
@@ -11,7 +10,7 @@
   }
 
   &__sub-section {
-    padding: 0 0 1rem 0;
+    padding: 0 0 1rem;
     color: $bpk-color-gray-700;
 
     &--text {

@@ -1,4 +1,5 @@
 import React from 'react';
+import BpkText from 'bpk-component-text';
 import Section from './../Section';
 import SubSection from './../SubSection';
 
@@ -20,7 +21,7 @@ const MainContent = () => (
         The Internet’s impact on the World Wide Web (WWW) itself has been no exception. Since its invention, the WWW has changed beyond recognition. Once a system for accessing simple documents, the web now allows us to access a wide range of media types. We can stream all our music and video entertainment. We have continual access to photos of our friends on Facebook, and we can create various &quot;streams&quot; of our own lives through Snapchat and Strava. By 2019, it is forecast that 80% of all traffic on the Internet will be some form of video content [3].
       </SubSection>
       <SubSection name="Fact Analysis">
-        An on-line service which uses these new high-data-rate formats may have significantly greater traffic demands than another. Due to the principle of NN, ISPs are unable to discriminate between services in response to the resulting imbalance of network traffic. They must, by law1, treat all (legal) content equally regardless of its source and destination. That’s not to say that ISPs are getting a bad deal from high-bandwidth services, as they are allowed to charge Content Providers (CPs) based on the bandwidth they use.
+        An on-line service which uses these new high-data-rate formats may have significantly greater traffic demands than another. Due to the principle of NN, ISPs are unable to discriminate between services in response to the resulting imbalance of network traffic. They must, by law<sup>1</sup>, treat all (legal) content equally regardless of its source and destination. That’s not to say that ISPs are getting a bad deal from high-bandwidth services, as they are allowed to charge Content Providers (CPs) based on the bandwidth they use.
         The simple principle of NN makes the Internet a strangely level playing field which, according to Wu, makes it a platform where money can have a limited influence on speech [12].
         <br />
         <br />
@@ -28,6 +29,11 @@ const MainContent = () => (
         <br />
         <br />
         As the Internet has matured, it has become more centralised in many ways. The early Internet’s End to End (E2E) principle suggested that functionality should be implemented at endpoints wherever possible, and at network level wherever absolutely necessary [1]. ISPs have disregarded this principle in order to build connecting infrastructure, charging users and CPs as much as they can for access. This has allowed them to make vast profits and has facilitated the use of Internet Traffic Management (ITM) techniques. Many of these are necessary in order to maintain the network, such as protecting against Denial of Service (DOS) attacks and performing protocol-agnostic routing of traffic to keep congestion down. Thanks to the principle of NN, ISPs have not been able to abuse the shift towards centralisation in order to interfere with end-users’ enjoyment [1]. If NN legislation were relaxed, they could capitalise on their new capabilities by charging users to access specific services whilst also invoicing CPs for access or priority access to their customer-base [6].
+        <br />
+        <br />
+        <BpkText textStyle="xs">
+          <sup>1</sup> EU law requires NN to be respected except for a few specific circumstances. US laws have protected NN since 2010, but Ajit Pai seeks to repeal the rules set down in the Federal Communications Commission (FCC)’s Open Internet Order.
+        </BpkText>
       </SubSection>
       <SubSection name="Logical Consistency">
         According to the models analysed by Reiffers-Masson, Hayel, and Altman, allowing &quot;pricing agreements&quot; between CPs and ISPs would benefit Internet users in providing a better-perceived cost of service [11]. However, they also accept that this would come at a detriment to CPs. Reiffers-Masson, Hayel, and Altman claim that the charging of the two-sided market would reach an equilibrium, but also accept that they have not considered the effects of ISPs interfering with Quality of Service (QOS). They also, in my view, consider an unrealistic model in which users and CPs are exclusive groups. As far as Lee and Wu are concerned, users act as CPs in the sense that all media is &quot;content&quot; [6]. I also feel it is wrong to ignore the detriment that the additional costs would bring to CPs. After-all, it is the absence of payments from content creators which has facilitated the entry of many content creators in the first place [6]. Destroying NN would lead to reduced competition and innovation, and ultimately will negatively affect all those who thrive on the open platform.
@@ -38,12 +44,17 @@ const MainContent = () => (
       <SubSection name="Conflict of Interest">
         ISPs all have some conflict of interest when it comes to the NN debate. They provide traditional telecommunication products with which modern Internet applications compete. For example, many individuals now use WhatsApp in place of Multimedia Message Service (MMS). If Verizon in the United States (US) were able to degrade user’s WhatsApp experience, then more MMS messages would be sent over their network and phone bills would rise.
         <br />
-        Similarly, ISPs often have an interest in prioritising one 3rd-party service over another. This could be simply down to which service pays them more, or could relate to complicated political matters surrounding the companies. Ajit Pai strenuously denies that any ISP would ever carry out targeted, deliberate degradation of traffic to support their own interests, but it is done even with NN legislation in place. From May 2013, the download speeds for Americans accessing Netflix steadily fell on a number of networks, with several users reporting greater speeds when accessing the service via a Virtual Private Network (VPN)2. In February 2014 when Netflix resolved a dispute with Comcast, their speed was suddenly restored. This can be seen in Appendix A. Evidence of similar conduct by Free - an ISP in France - was seen during negotiations with Google [4].
+        Similarly, ISPs often have an interest in prioritising one 3rd-party service over another. This could be simply down to which service pays them more, or could relate to complicated political matters surrounding the companies. Ajit Pai strenuously denies that any ISP would ever carry out targeted, deliberate degradation of traffic to support their own interests, but it is done even with NN legislation in place. From May 2013, the download speeds for Americans accessing Netflix steadily fell on a number of networks, with several users reporting greater speeds when accessing the service via a Virtual Private Network (VPN)<sup>2</sup>. In February 2014 when Netflix resolved a dispute with Comcast, their speed was suddenly restored. This can be seen in Appendix A. Evidence of similar conduct by Free - an ISP in France - was seen during negotiations with Google [4].
         <br />
         <br />
         As well as providing millions of people with opportunities to reach large audiences, freedom on the Internet has broken down barriers to the free flow of information. This has enabled many to enjoy free expression, and democratic participation that would otherwise be impossible [9].
         <br />
         The openness of the Internet has enabled millions of people around the world to become owners in the political process of their country. The damaging effects of ending NN would not only harm the future of the technology itself, but also the freedoms that have been won by many [10].
+        <br />
+        <br />
+        <BpkText textStyle="xs">
+          <sup>2</sup> Using a VPN prevents ISPs from seeing the true source and destination of a user’s packets, which prevents them from treating traffic differently based on which service is being accessed.
+        </BpkText>
       </SubSection>
       <SubSection name="Conclusion">
         Throughout history, whenever a new communication technology has been invented, it has always become less open during a process of consolidation by organisations who want power over the industry [13].
