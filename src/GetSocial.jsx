@@ -3,6 +3,7 @@ import githubIcon from './icons/github.png';
 import facebookIcon from './icons/facebook.png';
 import linkedinIcon from './icons/linkedin.png';
 import flickrIcon from './icons/flickr.png';
+// import skyscannerIcon from './icons/skyscanner.png';
 
 import STYLES from './get-social.scss';
 
@@ -13,6 +14,9 @@ const GetSocial = () => (
     <a className={getClassName('get-social__link')} href="https://github.com/georgegillams/" rel="noopener noreferrer" target="_blank">
       <img alt="github" className={getClassName('get-social__icon')} src={githubIcon} />
     </a>
+    {/* <a className={getClassName('get-social__link')} href="https://github.com/Skyscanner" rel="noopener noreferrer" target="_blank">
+      <img alt="Skyscanner" className={getClassName('get-social__icon')} src={skyscannerIcon} />
+    </a> */}
     <a className={getClassName('get-social__link')} href="https://www.facebook.com/george333123" rel="noopener noreferrer" target="_blank">
       <img alt="facebook" className={getClassName('get-social__icon')} src={facebookIcon} />
     </a>

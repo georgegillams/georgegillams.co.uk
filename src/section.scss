@@ -3,9 +3,19 @@
 .section {
   &__section {
     padding: 1rem;
+    color: $bpk-color-gray-700;
+
+    &--text {
+      padding-bottom: 1rem;
+    }
   }
 
   &__sub-section {
-    padding: 1rem 0 1rem 0;
+    padding: 0 0 1rem 0;
+    color: $bpk-color-gray-700;
+
+    &--text {
+      padding-bottom: .4rem;
+    }
   }
 }
