@@ -1,0 +1,9 @@
+@import '~bpk-mixins';
+
+.for-oh-four {
+  &__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}

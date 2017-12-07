@@ -1,7 +1,9 @@
 import React from 'react';
 import {
+  BrowserRouter,
   Route,
-  HashRouter,
+  Redirect,
+  Switch,
 } from 'react-router-dom';
 import BpkText from 'bpk-component-text';
 import NavLayout from './NavLayout';
@@ -18,23 +20,26 @@ import STYLES from './app.scss';
 const getClassName = className => STYLES[className] || 'UNKNOWN';
 
 const App = () => (
-  <HashRouter>
+  <BrowserRouter>
     <div>
       <div className={getClassName('app__download-button-container')}>
-        <a href="https://dl.dropbox.com/s/smcdcgitd4nog17/George%20Gillams%20CV.pdf?dl=0">
+        <a href="https://dl.dropbox.com/s/smcdcgitd4nog17/George%20Gillams%20CV.pdf?dl=0" className={getClassName('app_cv-link')}>
           <BpkText className={getClassName('app__download-button')} textStyle="sm" >Grab my CV</BpkText>
         </a>
       </div>
       <NavLayout>
         <div>
-          <Route exact path="/" component={HomePage} />
-          <Route path="/net-neutrality" component={NetNeutrality} />
-          <Route path="/stuff" component={Stuff} />
-          <Route path="/contact" component={Contact} />
+          <Switch>
+            <Route exact path="/" component={HomePage} />
+            <Route path="/net-neutrality" component={NetNeutrality} />
+            <Route path="/stuff" component={Stuff} />
+            <Route path="/contact" component={Contact} />
+            <Route path="/nn" render={() => (<Redirect to="/net-neutrality" />)} />
+          </Switch>
         </div>
       </NavLayout>
     </div>
-  </HashRouter>
+  </BrowserRouter>
 );
 
 export default App;
