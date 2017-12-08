@@ -1,5 +1,5 @@
 import React from 'react';
-import georgegillams from './images/georgegillams.jpg';
+import georgegillams from './../images/georgegillams.jpg';
 
 import STYLES from './profile-pic.scss';
 

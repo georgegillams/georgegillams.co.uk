@@ -1,9 +1,9 @@
 import React from 'react';
 import BpkText from 'bpk-component-text';
-import Section from './../Section';
-import SubSection from './../SubSection';
+import Section from './../components/Section';
+import SubSection from './../components/SubSection';
 
-import STYLES from './../pages.scss';
+import STYLES from './../components/pages.scss';
 
 const getClassName = className => STYLES[className] || 'UNKNOWN';
 
