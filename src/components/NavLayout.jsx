@@ -9,10 +9,12 @@ import STYLES from './nav-layout.scss';
 const getClassName = className => STYLES[className] || 'UNKNOWN';
 
 const NavLayout = (props) => {
-  const { children } = props;
+  const { children, className, ...rest } = props;
+  const classNameFinal = [getClassName('nav-layout__main')];
+  if (className) { classNameFinal.push(className); }
 
   return (
-    <div className={getClassName('nav-layout__main')}>
+    <div className={classNameFinal.join(' ')} {...rest} >
       <div className={getClassName('nav-layout__centre-column')}>
         <span className={getClassName('nav-layout__nav-col')}>
           <ProfilePic />
@@ -25,6 +27,14 @@ const NavLayout = (props) => {
       </div>
     </div>
   );
+};
+
+NavLayout.propTypes = {
+  className: PropTypes.string,
+};
+
+NavLayout.defaultProps = {
+  className: null,
 };
 
 NavLayout.propTypes = {
