@@ -6,6 +6,10 @@
     margin: 2rem;
     flex-direction: row;
     justify-content: center;
+
+    @include bpk-breakpoint-tablet {
+      margin: .5rem;
+    }
   }
 
   &__centre-column {
@@ -39,12 +43,15 @@
   &__content-col {
     display: flex;
     display: inline-block;
-    width: 100%;
     min-width: 15rem;
-    padding: 1rem;
+    padding: 2rem;
     flex-direction: row;
     justify-content: center;
     flex-grow: 1;
     overflow: hidden;
+
+    @include bpk-breakpoint-tablet {
+      padding: .5rem;
+    }
   }
 }
