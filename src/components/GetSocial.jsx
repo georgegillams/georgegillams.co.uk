@@ -1,9 +1,9 @@
 import React from 'react';
-import githubIcon from './icons/github.png';
-import facebookIcon from './icons/facebook.png';
-import linkedinIcon from './icons/linkedin.png';
-import flickrIcon from './icons/flickr.png';
-// import skyscannerIcon from './icons/skyscanner.png';
+import githubIcon from './../icons/github.png';
+import facebookIcon from './../icons/facebook.png';
+import linkedinIcon from './../icons/linkedin.png';
+import flickrIcon from './../icons/flickr.png';
+// import skyscannerIcon from './../icons/skyscanner.png';
 
 import STYLES from './get-social.scss';
 

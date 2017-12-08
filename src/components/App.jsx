@@ -2,7 +2,6 @@ import React from 'react';
 import {
   BrowserRouter,
   Route,
-  Redirect,
   Switch,
 } from 'react-router-dom';
 import BpkText from 'bpk-component-text';
@@ -10,7 +9,7 @@ import NavLayout from './NavLayout';
 
 // <editor-fold> Content Imports
 import HomePage from './HomePage';
-import NetNeutrality from './Articles/NetNeutrality';
+import NetNeutrality from './../Articles/NetNeutrality';
 import Contact from './Contact';
 import ForOhFour from './ForOhFour';
 // </editor-fold> Content Imports
