@@ -8,14 +8,14 @@ const getClassName = className => STYLES[className] || 'UNKNOWN';
 
 const SubSection = (props) => {
   const {
-    name, style, className, children,
+    name, className, children, ...rest
   } = props;
 
-  const outerClassName = [getClassName('section__sub-section')];
-  if (className) { outerClassName.push(className); }
+  const classNameFinal = [getClassName('section__sub-section')];
+  if (className) { classNameFinal.push(className); }
 
   return (
-    <div className={outerClassName.join(' ')} style={style}>
+    <div className={classNameFinal.join(' ')} {...rest}>
       <BpkText tagName="h3" textStyle="lg" className={getClassName('section__sub-section--text')}>
         {name}
       </BpkText>
