@@ -1,7 +1,12 @@
-import 'bpk-stylesheets';
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { BrowserRouter } from 'react-router-dom';
+import App from './components/App';
 
-import App from './App';
-
-ReactDOM.render(React.createElement(App), document.getElementById('root'));
+/* eslint-disable react/jsx-filename-extension */
+ReactDOM.render(
+  <BrowserRouter>
+    <App />
+  </BrowserRouter>,
+  document.getElementById('root'),
+);
