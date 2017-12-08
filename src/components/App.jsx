@@ -8,10 +8,10 @@ import BpkText from 'bpk-component-text';
 import NavLayout from './NavLayout';
 
 // <editor-fold> Content Imports
-import HomePage from './HomePage';
-import NetNeutrality from './../Articles/NetNeutrality';
-import Contact from './Contact';
-import ForOhFour from './ForOhFour';
+import HomePage from '../Pages/HomePage';
+import NetNeutrality from '../Pages/Articles/NetNeutrality';
+import Contact from '../Pages/Contact';
+import ForOhFour from '../Pages/ForOhFour';
 // </editor-fold> Content Imports
 
 import STYLES from './app.scss';

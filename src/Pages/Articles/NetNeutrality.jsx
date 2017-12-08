@@ -1,17 +1,17 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import BpkText from 'bpk-component-text';
-import Section from './../components/Section';
-import SubSection from './../components/SubSection';
+import Section from './../../components/Section';
+import SubSection from './../../components/SubSection';
 
-import STYLES from './../components/pages.scss';
-
-const getClassName = className => STYLES[className] || 'UNKNOWN';
+// import STYLES from '../pages.scss';
+//
+// const getClassName = className => STYLES[className] || 'UNKNOWN';
 
 /* eslint-disable max-len */
 const NetNeutrality = (props) => {
   const { className, ...rest } = props;
-  const classNameFinal = [getClassName('main-content__main')];
+  const classNameFinal = [];
   if (className) { classNameFinal.push(className); }
 
   return (
