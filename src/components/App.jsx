@@ -11,6 +11,7 @@ import NavLayout from './NavLayout';
 import HomePage from '../Pages/HomePage';
 import NetNeutrality from '../Pages/Articles/NetNeutrality';
 import Contact from '../Pages/Contact';
+import Engagement from '../Pages/Engagement';
 import ForOhFour from '../Pages/ForOhFour';
 // </editor-fold> Content Imports
 
@@ -31,6 +32,7 @@ const App = () => (
           <Switch>
             <Route exact path="/" component={HomePage} />
             <Route path="/net-neutrality" component={NetNeutrality} />
+            <Route path="/engagement" component={Engagement} />
             <Route path="/contact" component={Contact} />
             <Route component={ForOhFour} />
           </Switch>
