@@ -1,12 +1,16 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import BpkText from 'bpk-component-text';
+import BpkImage, { withLazyLoading, withLoadingBehavior } from 'bpk-component-image';
 import Section from './../../components/Section';
 import SubSection from './../../components/SubSection';
+import netflixDownloads from './../../images/netflixDownloads.png';
 
 // import STYLES from '../pages.scss';
 //
 // const getClassName = className => STYLES[className] || 'UNKNOWN';
+const documentIfExists = typeof window !== 'undefined' ? document : null;
+const FadingLazyLoadedImage = withLoadingBehavior(withLazyLoading(BpkImage, documentIfExists));
 
 /* eslint-disable max-len */
 const NetNeutrality = (props) => {
@@ -26,7 +30,7 @@ const NetNeutrality = (props) => {
           <br />
         The Internet’s impact on the World Wide Web (WWW) itself has been no exception. Since its invention, the WWW has changed beyond recognition. Once a system for accessing simple documents, the web now allows us to access a wide range of media types. We can stream all our music and video entertainment. We have continual access to photos of our friends on Facebook, and we can create various &quot;streams&quot; of our own lives through Snapchat and Strava. By 2019, it is forecast that 80% of all traffic on the Internet will be some form of video content [3].
         </SubSection>
-        <SubSection name="Fact Analysis">
+        <SubSection name="The effects of NN">
         An on-line service which uses these new high-data-rate formats may have significantly greater traffic demands than another. Due to the principle of NN, ISPs are unable to discriminate between services in response to the resulting imbalance of network traffic. They must, by law<sup>1</sup>, treat all (legal) content equally regardless of its source and destination. That’s not to say that ISPs are getting a bad deal from high-bandwidth services, as they are allowed to charge Content Providers (CPs) based on the bandwidth they use.
         The simple principle of NN makes the Internet a strangely level playing field which, according to Wu, makes it a platform where money can have a limited influence on speech [12].
         <br />
@@ -41,7 +45,7 @@ const NetNeutrality = (props) => {
             <sup>1</sup> EU law requires NN to be respected except for a few specific circumstances. US laws have protected NN since 2010, but Ajit Pai seeks to repeal the rules set down in the Federal Communications Commission (FCC)’s Open Internet Order.
           </BpkText>
         </SubSection>
-        <SubSection name="Logical Consistency">
+        <SubSection name="The impact of changing NN legislation">
         According to the models analysed by Reiffers-Masson, Hayel, and Altman, allowing &quot;pricing agreements&quot; between CPs and ISPs would benefit Internet users in providing a better-perceived cost of service [11]. However, they also accept that this would come at a detriment to CPs. Reiffers-Masson, Hayel, and Altman claim that the charging of the two-sided market would reach an equilibrium, but also accept that they have not considered the effects of ISPs interfering with Quality of Service (QOS). They also, in my view, consider an unrealistic model in which users and CPs are exclusive groups. As far as Lee and Wu are concerned, users act as CPs in the sense that all media is &quot;content&quot; [6]. I also feel it is wrong to ignore the detriment that the additional costs would bring to CPs. After-all, it is the absence of payments from content creators which has facilitated the entry of many content creators in the first place [6]. Destroying NN would lead to reduced competition and innovation, and ultimately will negatively affect all those who thrive on the open platform.
         <br />
           <br />
@@ -110,6 +114,24 @@ const NetNeutrality = (props) => {
         <br />
           <br />
         [13] Tim Wu. The Master Switch: The Rise and Fall of Information Empires. Borzoi Books. Alfred A. Knopf, 2010. ISBN: 9780307269935. URL: https:\/\/books.google.co.uk/books? id=tKr0QwAACAAJ.
+        </SubSection>
+        <SubSection name="Conclusion">
+        Throughout history, whenever a new communication technology has been invented, it has always become less open during a process of consolidation by organisations who want power over the industry [13].
+        In many countries, governments have greatly enjoyed these monopolies is it provides them opportunities for mass intervention [13]. This is evident from the nature of illegal mass-surveillance operations that the US and United Kingdom (UK) carried out with the help of a number of large companies including Google, Facebook, and Apple [8].
+        <br />
+          <br />
+        If we allow ISPs to become gatekeepers of traffic and content on the Internet, they will be able to corrupt a system which currently allows users to freely connect with vast audiences. In doing so, they will gain total control over our communication, resulting in ISPs having unprecedented economical, social and political influence. It is important to protect NN globall, as the Internet is a global resource. Failing to protect NN in one country would have a huge knock-on effect for the rest of the world. For this reason, Canadian Prime Minister Justin Tradeau has condemned the attack on NN.
+        <br />
+          <br />
+        The Internet is not currently broken. It fosters free-speech and creativity. Fundamental changes to the architecture of the Internet would risk damage to healthcare advances, trade, innovation and social well-being. Furthermore, abandoning NN could deny millions of individuals basic rights enjoyed by Internet-users around the world.
+        </SubSection>
+        <SubSection name="Appendix A - Netflix download speeds on a number of American ISPs">
+          <FadingLazyLoadedImage
+            altText="Netflix download speeds on a number of American ISPs"
+            width={987}
+            height={575}
+            src={netflixDownloads}
+          />
         </SubSection>
       </Section>
     </main>
