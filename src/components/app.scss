@@ -12,6 +12,7 @@
   &__download-button-container {
     position: absolute;
     display: flex;
+    z-index: 2;
     width: 12.5rem;
     height: 1.625rem;
     justify-content: center;
