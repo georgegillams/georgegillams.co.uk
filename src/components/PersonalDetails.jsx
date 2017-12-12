@@ -18,7 +18,16 @@ const PersonalDetails = (props) => {
         <a className={getClassName('personal-details__link')} href="/">
           <BpkText tagName="h1" textStyle="xl">George Gillams</BpkText>
         </a>
-        <BpkText tagName="h3" textStyle="base">Open-source Software Engineer</BpkText>
+        <BpkText tagName="h3" textStyle="base">
+          Open-source Software Engineer at
+          <a className={getClassName('personal-details__link')} href="https://github.com/Skyscanner" rel="noopener noreferrer" target="_blank" >
+            {' Skyscanner '}
+          </a>
+      and completeing a Masters at Southampton.
+      <a className={getClassName('personal-details__link')} href="/engagement">
+        {' Recently engaged.'}
+      </a>
+        </BpkText>
       </div>
       <div className={getClassName('personal-details__section')}>
         <GetSocial />
