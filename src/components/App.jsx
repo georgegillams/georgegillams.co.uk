@@ -9,6 +9,7 @@ import NavLayout from './NavLayout';
 
 // <editor-fold> Content Imports
 import HomePage from '../Pages/HomePage';
+import SwitchToVim from '../Pages/Articles/SwitchToVim';
 import NetNeutrality from '../Pages/Articles/NetNeutrality';
 import Contact from '../Pages/Contact';
 import Engagement from '../Pages/Engagement';
@@ -32,17 +33,11 @@ const App = () => (
           <Switch>
             <Route exact path="/" component={HomePage} />
             <Route path="/net-neutrality" component={NetNeutrality} />
+            <Route path="/vim" component={SwitchToVim} />
             <Route path="/engagement" component={Engagement} />
             <Route path="/contact" component={Contact} />
             <Route component={ForOhFour} />
           </Switch>
-          {/* <Switch>
-            <Route exact path="/" component={HomePage} />
-            <Route path="/?p=/net-neutrality" component={NetNeutrality} />
-            <Route path="/?p=/stuff" component={Stuff} />
-            <Route path="/?p=/contact" component={Contact} />
-            <Route path="/?p=/nn" render={() => (<Redirect to="/net-neutrality" />)} />
-          </Switch> */}
         </div>
       </NavLayout>
     </div>
