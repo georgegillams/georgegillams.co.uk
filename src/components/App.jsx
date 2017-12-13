@@ -23,11 +23,11 @@ const getClassName = className => STYLES[className] || 'UNKNOWN';
 const App = () => (
   <BrowserRouter>
     <div>
-      <div className={getClassName('app__download-button-container')}>
+      {/* <div className={getClassName('app__download-button-container')}>
         <a href="https://dl.dropbox.com/s/smcdcgitd4nog17/George%20Gillams%20CV.pdf?dl=0" className={getClassName('app_cv-link')}>
           <BpkText className={getClassName('app__download-button')} textStyle="sm" >Grab my CV</BpkText>
         </a>
-      </div>
+    </div> */}
       <NavLayout>
         <div>
           <Switch>
