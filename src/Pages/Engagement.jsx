@@ -4,7 +4,8 @@ import BpkText from 'bpk-component-text';
 import BpkImage, { withLazyLoading, withLoadingBehavior } from 'bpk-component-image';
 import Section from './../components/Section';
 import SubSection from './../components/SubSection';
-import humans from './images/humans.jpg';
+import tiggsAmazed from './images/tiggsAmazed.png';
+import humans from './images/humans.png';
 
 // import STYLES from '../pages.scss';
 //
@@ -22,8 +23,14 @@ const Engagement = (props) => {
     <main className={classNameFinal.join(' ')} {...rest} >
       <Section name="We're engaged!">
         We just wanted to let you all know that we&apos;ve sealed the deal! We&apos;ll set a date for the wedding soon!!!
+        <br />
+        <br />
+        <FadingLazyLoadedImage style={{ marginBottom: '1.5rem', width: '100%' }} altText="My humans are getting married" width={2514} height={1676} src={humans} />
+      This was Tigg's face when we first told him!
+        <br />
+        <br />
+        <FadingLazyLoadedImage style={{ marginBottom: '1.5rem', width: '100%' }} altText="Tigg's face when we told him!" width={2514} height={1676} src={tiggsAmazed} />
       </Section>
-      <FadingLazyLoadedImage style={{ marginTop: '2rem', width: '50%' }} altText="My humans are getting married" width={570} height={545} src={humans} />
     </main>
   );
 };

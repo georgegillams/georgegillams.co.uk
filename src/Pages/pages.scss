@@ -1,6 +1,10 @@
 @import '~bpk-mixins';
 
 .pages {
+    &__home-page-item {
+        padding-bottom: 1.5rem;
+    }
+
   &__link {
     color: $bpk-color-gray-700;
     text-decoration: none;
