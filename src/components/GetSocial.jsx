@@ -5,6 +5,7 @@ import githubIcon from './../icons/github.png';
 import facebookIcon from './../icons/facebook.png';
 import linkedinIcon from './../icons/linkedin.png';
 import flickrIcon from './../icons/flickr.png';
+import emailIcon from './../icons/email.png';
 
 // import skyscannerIcon from './../icons/skyscanner.png';
 
@@ -23,7 +24,7 @@ const GetSocial = (props) => {
     <div className={classNameFinal.join(' ')} {...rest} >
       <a className={getClassName('get-social__link')} href="https://github.com/georgegillams/" rel="noopener noreferrer" target="_blank">
         <img alt="github" width={5} height={5} className={getClassName('get-social__icon')} src={githubIcon} />
-        </a>
+      </a>
       {/* <a className={getClassName('get-social__link')} href="https://github.com/Skyscanner" rel="noopener noreferrer" target="_blank">
       <img alt="Skyscanner" width={5} height={5} className={getClassName('get-social__icon')} src={skyscannerIcon} />
       </a> */}
@@ -35,6 +36,9 @@ const GetSocial = (props) => {
       </a>
       <a className={getClassName('get-social__link')} href="https://www.flickr.com/people/137198167@N03/" rel="noopener noreferrer" target="_blank">
         <img alt="flickr" width={5} height={5} className={getClassName('get-social__icon')} src={flickrIcon} />
+      </a>
+      <a className={getClassName('get-social__link')} href="mailto:georgegillams@hotmail.co.uk" rel="noopener noreferrer" target="_blank">
+        <img alt="email" width={5} height={5} className={getClassName('get-social__icon')} src={emailIcon} />
       </a>
     </div>
   );
