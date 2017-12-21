@@ -31,7 +31,7 @@ const PersonalDetails = (props) => {
           <BpkText tagName="h1" textStyle="xl">George Gillams</BpkText>
         </a>
         <BpkText tagName="h3" textStyle="base">
-            Open-source Software Engineer at {skyscanner}, completeing a Masters at {southampton}.
+            Open-source Software Engineer at {skyscanner}, completing a Masters at {southampton}.
       {/* <a className={getClassName('personal-details__link')} href="/engagement">
         {' Recently engaged.'}
       </a> */}
