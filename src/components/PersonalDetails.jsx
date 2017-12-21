@@ -37,11 +37,15 @@ const PersonalDetails = (props) => {
           <BpkText tagName="h1" textStyle="xl">George Gillams</BpkText>
         </a>
         <BpkText tagName="h3" textStyle="base">
-          Open-source Software Engineer at {skyscanner} whilst completing a Masters at {southampton}.
-          <br />
-          Based in London.
-      {/* <br />
-          Recently {engaged}! */}
+            Open-source Software Engineer at {skyscanner}.
+            <br />
+            Masters student at {southampton}.
+            <br />
+           Based in London.
+            <br />
+           Passionate photobomber.
+        {/* <br />
+           Recently {engaged}! */}
         </BpkText>
       </div>
       <div className={getClassName('personal-details__section')}>
