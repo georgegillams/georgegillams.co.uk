@@ -3,13 +3,9 @@
 .nav-layout {
   &__main {
     display: flex;
-    margin: 2rem;
+    margin: .5rem;
     flex-direction: row;
     justify-content: center;
-
-    @include bpk-breakpoint-tablet {
-      margin: .5rem;
-    }
   }
 
   &__centre-column {
@@ -27,6 +23,7 @@
     display: inline-block;
     width: 100%;
     max-width: 15rem;
+    margin-right: 2rem;
     padding-top: 1rem;
     overflow: hidden;
     // background-color: blue;
@@ -45,14 +42,10 @@
     display: inline-block;
     width: 100%;
     min-width: 15rem;
-    padding: 2rem;
+    padding-top: 1rem;
     flex-direction: row;
     justify-content: center;
     flex-grow: 1;
     overflow: hidden;
-
-    @include bpk-breakpoint-tablet {
-      padding: .5rem;
-    }
   }
 }

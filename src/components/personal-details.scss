@@ -22,5 +22,13 @@
     &:hover {
       text-decoration: underline;
     }
+
+  &--skyscanner-blue {
+      color: $bpk-color-blue-500;
+  }
+
+  &--southampton-blue {
+      color: rgb(0,92,133);
+  }
   }
 }

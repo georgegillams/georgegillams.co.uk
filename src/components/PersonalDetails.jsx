@@ -12,19 +12,36 @@ const PersonalDetails = (props) => {
   const classNameFinal = [getClassName('personal-details__container')];
   if (className) { classNameFinal.push(className); }
 
+  const southampton = (
+    <a className={`${getClassName('personal-details__link')} ${getClassName('personal-details__link--southampton-blue')}`} href="https://www.ecs.soton.ac.uk/programmes/g600-meng-software-engineering-4-yrs#modules" rel="noopener noreferrer" target="_blank" >
+      Southampton
+    </a>
+  );
+
+  const skyscanner = (
+    <a className={`${getClassName('personal-details__link')} ${getClassName('personal-details__link--skyscanner-blue')}`} href="https://github.com/Skyscanner" rel="noopener noreferrer" target="_blank" >
+      Skyscanner
+    </a>
+  );
+
   return (
     <div className={classNameFinal.join(' ')} {...rest} >
       <div className={getClassName('personal-details__section')}>
         <a className={getClassName('personal-details__link')} href="/">
           <BpkText tagName="h1" textStyle="xl">George Gillams</BpkText>
         </a>
-        <BpkText tagName="h3" textStyle="base">Open-source Software Engineer</BpkText>
+        <BpkText tagName="h3" textStyle="base">
+            Open-source Software Engineer at {skyscanner}, completeing a Masters at {southampton}.
+      {/* <a className={getClassName('personal-details__link')} href="/engagement">
+        {' Recently engaged.'}
+      </a> */}
+        </BpkText>
       </div>
       <div className={getClassName('personal-details__section')}>
         <GetSocial />
       </div>
       <div className={getClassName('personal-details__section')}>
-        <BpkText tagName="h3" textStyle="sm">v_1.0.2</BpkText>
+        <BpkText tagName="h3" textStyle="sm">v_1.0.3</BpkText>
       </div>
     </div>
   );
