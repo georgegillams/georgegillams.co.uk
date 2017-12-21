@@ -24,6 +24,12 @@ const PersonalDetails = (props) => {
     </a>
   );
 
+  const engaged = (
+    <a className={getClassName('personal-details__link')} href="/engagement">
+      engaged
+    </a>
+  );
+
   return (
     <div className={classNameFinal.join(' ')} {...rest} >
       <div className={getClassName('personal-details__section')}>
@@ -31,17 +37,18 @@ const PersonalDetails = (props) => {
           <BpkText tagName="h1" textStyle="xl">George Gillams</BpkText>
         </a>
         <BpkText tagName="h3" textStyle="base">
-            Open-source Software Engineer at {skyscanner}, completing a Masters at {southampton}.
-      {/* <a className={getClassName('personal-details__link')} href="/engagement">
-        {' Recently engaged.'}
-      </a> */}
+          Open-source Software Engineer at {skyscanner} whilst completing a Masters at {southampton}.
+          <br />
+          Based in London.
+      {/* <br />
+          Recently {engaged}! */}
         </BpkText>
       </div>
       <div className={getClassName('personal-details__section')}>
         <GetSocial />
       </div>
       <div className={getClassName('personal-details__section')}>
-        <BpkText tagName="h3" textStyle="sm">v_1.0.3</BpkText>
+        <BpkText tagName="h3" textStyle="sm">v_1.0.4</BpkText>
       </div>
     </div>
   );

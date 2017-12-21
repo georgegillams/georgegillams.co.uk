@@ -5,6 +5,7 @@ import BpkImage, { withLazyLoading, withLoadingBehavior } from 'bpk-component-im
 import Section from './../../components/Section';
 import SubSection from './../../components/SubSection';
 import netflixDownloads from './../../images/netflixDownloads.png';
+import ArticleDate from '../../components/ArticleDate';
 
 // import STYLES from '../pages.scss';
 //
@@ -17,10 +18,12 @@ const NetNeutrality = (props) => {
   const { className, ...rest } = props;
   const classNameFinal = [];
   if (className) { classNameFinal.push(className); }
+  const dateWritten = new Date(2017, 11, 8, 7, 1, 0);
 
   return (
     <main className={classNameFinal.join(' ')} {...rest} >
       <Section name="My Take on Net Neutrality">
+        <ArticleDate date={dateWritten} />
         {/* <SubSection name="Abstract">
           TODO
         </SubSection> */}
