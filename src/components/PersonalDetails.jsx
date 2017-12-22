@@ -41,15 +41,15 @@ const PersonalDetails = (props) => {
            Based in London.
             <br />
            Passionate photobomber.
-         <br />
-           Recently {engaged}!
+      {/* <br />
+           Recently {engaged}! */}
         </BpkText>
       </div>
       <div className={getClassName('personal-details__section')}>
         <GetSocial />
       </div>
       <div className={getClassName('personal-details__section')}>
-        <BpkText tagName="h3" textStyle="sm">v_1.0.4</BpkText>
+        <BpkText tagName="h3" textStyle="sm">v_1.0.5</BpkText>
       </div>
     </div>
   );
