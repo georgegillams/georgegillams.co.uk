@@ -12,6 +12,7 @@ import HomePage from '../Pages/HomePage';
 import SwitchToVim from '../Pages/Articles/SwitchToVim';
 import NetNeutrality from '../Pages/Articles/NetNeutrality';
 import Contact from '../Pages/Contact';
+import AboutMe from '../Pages/AboutMe';
 import Engagement from '../Pages/Engagement';
 import ForOhFour from '../Pages/ForOhFour';
 // </editor-fold> Content Imports
@@ -35,6 +36,7 @@ const App = () => (
             <Route path="/net-neutrality" component={NetNeutrality} />
             <Route path="/vim" component={SwitchToVim} />
             <Route path="/engagement" component={Engagement} />
+            <Route path="/about" component={AboutMe} />
             <Route path="/contact" component={Contact} />
             <Route component={ForOhFour} />
           </Switch>

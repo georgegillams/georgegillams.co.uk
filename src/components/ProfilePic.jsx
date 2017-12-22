@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import BpkImage, { withLazyLoading, withLoadingBehavior } from 'bpk-component-image';
-import georgegillams from './../images/georgegillams.jpg';
+import logo from './../images/logo.svg';
 
 import STYLES from './profile-pic.scss';
 
@@ -16,7 +16,9 @@ const ProfilePic = (props) => {
 
   return (
     <div className={classNameFinal.join(' ')} {...rest} >
-      <FadingLazyLoadedImage altText="george gillams" width={500} height={500} src={georgegillams} />
+      <a className={getClassName('personal-details__link')} href="/">
+        <FadingLazyLoadedImage style={{ width: '100%' }} altText="George Gillams" width={500} height={500} src={logo} />
+      </a>
     </div>
   );
 };
