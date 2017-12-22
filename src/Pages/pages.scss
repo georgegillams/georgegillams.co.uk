@@ -1,14 +1,26 @@
 @import '~bpk-mixins';
 
 .pages {
-    &__home-page-item {
-        padding-bottom: 1.5rem;
+  &__home-page-item {
+      padding-bottom: 1.5rem;
+  }
+
+  &__home-page-tree {
+    display: flex;
+    height: 30rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    @include bpk-breakpoint-tablet {
+      height: auto;
     }
+  }
+
 
   &__link {
     color: $bpk-color-gray-700;
     text-decoration: none;
-
     &:hover {
       text-decoration: underline;
     }

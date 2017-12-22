@@ -12,13 +12,13 @@ import ArticleDate from '../../components/ArticleDate';
 // const getClassName = className => STYLES[className] || 'UNKNOWN';
 const documentIfExists = typeof window !== 'undefined' ? document : null;
 const FadingLazyLoadedImage = withLoadingBehavior(withLazyLoading(BpkImage, documentIfExists));
+const dateWritten = new Date(2017, 11, 8, 7, 1, 0);
 
 /* eslint-disable max-len */
 const NetNeutrality = (props) => {
   const { className, ...rest } = props;
   const classNameFinal = [];
   if (className) { classNameFinal.push(className); }
-  const dateWritten = new Date(2017, 11, 8, 7, 1, 0);
 
   return (
     <main className={classNameFinal.join(' ')} {...rest} >

@@ -36,7 +36,7 @@ const PersonalDetails = (props) => {
         <a className={getClassName('personal-details__link')} href="/">
           <BpkText tagName="h1" textStyle="xl">George Gillams</BpkText>
         </a>
-        <BpkText tagName="h3" textStyle="base">
+        <BpkText style={{ width: '12.5rem' }} tagName="h3" textStyle="base">
             Open-source Software Engineer at {skyscanner}.
             <br />
             Masters student at {southampton}.
@@ -44,8 +44,8 @@ const PersonalDetails = (props) => {
            Based in London.
             <br />
            Passionate photobomber.
-        {/* <br />
-           Recently {engaged}! */}
+         <br />
+           Recently {engaged}!
         </BpkText>
       </div>
       <div className={getClassName('personal-details__section')}>
