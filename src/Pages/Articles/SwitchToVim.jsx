@@ -3,10 +3,12 @@ import PropTypes from 'prop-types';
 import BpkText from 'bpk-component-text';
 import Section from './../../components/Section';
 import SubSection from './../../components/SubSection';
+import ArticleDate from '../../components/ArticleDate';
 
 // import STYLES from '../pages.scss';
 //
 // const getClassName = className => STYLES[className] || 'UNKNOWN';
+const dateWritten = new Date(2018, 0, 15, 16, 45, 0);
 
 /* eslint-disable max-len */
 const SwitchToVim = (props) => {
@@ -17,6 +19,7 @@ const SwitchToVim = (props) => {
   return (
     <main className={classNameFinal.join(' ')} {...rest} >
       <Section name="Switching to Vim">
+        <ArticleDate date={dateWritten} />
         {/* <SubSection name="Abstract">
           TODO
         </SubSection> */}
