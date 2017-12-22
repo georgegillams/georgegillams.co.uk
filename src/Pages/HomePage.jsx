@@ -11,19 +11,19 @@ const HomePage = () => (
   <main className={getClassName('pages__home-page-tree')}>
     <div>
       <SubSection className={getClassName('pages__home-page-item')} name="Articles">
-        <a className={getClassName('pages__link')} href="/vim">
+        {/*    <a className={getClassName('pages__link')} href="/vim">
 Switching to Vim
-        </a>
+        </a> */}
         <br />
         <a className={getClassName('pages__link')} href="/net-neutrality">
        My Take on Net Neutrality
         </a>
       </SubSection>
-      <SubSection className={getClassName('pages__home-page-item')} name="Travel">
+      {/*      <SubSection className={getClassName('pages__home-page-item')} name="Travel">
         <a className={getClassName('pages__link')} href="/Iceland">
 Iceland
         </a>
-      </SubSection>
+      </SubSection> */}
       {/* <a className={getClassName('pages__link')} href="/engagement">
       <Section className={getClassName('pages__home-page-item')} name="We just got engaged!">
         I finally got around to asking, and she said yes!
