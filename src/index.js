@@ -6,7 +6,7 @@ import WebFont from 'webfontloader';
 
 WebFont.load({
   google: {
-    families: ['Iceland:300,400,700', 'cursive'],
+    families: ['Quattrocento Sans:300,400,700', 'sans-serif'],
   },
 });
 
