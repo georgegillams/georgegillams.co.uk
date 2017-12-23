@@ -11,19 +11,23 @@ const HomePage = () => (
   <main className={getClassName('pages__home-page-tree')}>
     <div>
       <SubSection className={getClassName('pages__home-page-item')} name="Articles">
-        {/*    <a className={getClassName('pages__link')} href="/vim">
-Switching to Vim
-        </a> */}
+        <a className={getClassName('pages__link')} href="/articles/vim">
+          Switching to Vim
+        </a>
         <br />
-        <a className={getClassName('pages__link')} href="/net-neutrality">
-       My Take on Net Neutrality
+        <a className={getClassName('pages__link')} href="/articles/net-neutrality">
+          My Take on Net Neutrality
         </a>
       </SubSection>
-      {/*      <SubSection className={getClassName('pages__home-page-item')} name="Travel">
-        <a className={getClassName('pages__link')} href="/Iceland">
-Iceland
+      <SubSection className={getClassName('pages__home-page-item')} name="Travel">
+        {/* <a className={getClassName('pages__link')} href="https://flic.kr/s/aHsm9VxHMV"> */}
+        <a className={getClassName('pages__link')} href="/travel/munich-2017">
+          Munich
         </a>
-      </SubSection> */}
+        {/*  <a className={getClassName('pages__link')} href="/travel/iceland">
+          Iceland
+        </a> */}
+      </SubSection>
       {/* <a className={getClassName('pages__link')} href="/engagement">
       <Section className={getClassName('pages__home-page-item')} name="We just got engaged!">
         I finally got around to asking, and she said yes!
