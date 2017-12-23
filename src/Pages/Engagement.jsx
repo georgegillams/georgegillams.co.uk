@@ -4,8 +4,8 @@ import BpkText from 'bpk-component-text';
 import BpkImage, { withLazyLoading, withLoadingBehavior } from 'bpk-component-image';
 import Section from './../components/Section';
 import SubSection from './../components/SubSection';
-import tiggsAmazed from './images/tiggsAmazed.png';
-import humans from './images/humans.png';
+import tiggsAmazed from './images/tiggsAmazed.jpg';
+import humans from './images/humans.jpg';
 
 // import STYLES from '../pages.scss';
 //
