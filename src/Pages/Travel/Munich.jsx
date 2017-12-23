@@ -6,6 +6,7 @@ import Section from './../../components/Section';
 import SubSection from './../../components/SubSection';
 import netflixDownloads from './../../images/netflixDownloads.png';
 import ArticleDate from '../../components/ArticleDate';
+import philMunich from './images/munichPhil.jpg';
 
 import STYLES from '../pages.scss';
 
@@ -22,9 +23,11 @@ const Munich = (props) => {
 
   return (
     <main className={classNameFinal.join(' ')} {...rest} >
+      <Section name="Munich - Christmas 2017" />
       <a className={getClassName('pages__link')} href="https://flic.kr/s/aHsm9VxHMV">
-        <Section name="Click here to see the full album on Flickr" />
+        <SubSection name="Click here to see the full album on Flickr" />
       </a>
+      <FadingLazyLoadedImage style={{ marginBottom: '1.5rem', width: '100%' }} altText="My brother up a tree" width={2514} height={1676} src={philMunich} />
     </main>
   );
 };
