@@ -1,24 +1,40 @@
 @import '~bpk-mixins';
+@fontface {
+  font-family: 'Bungee Inline', cursive;
+  src: url('https://fonts.googleapis.com/css?family=Bungee+Inline')
+}
+@fontface {
+  font-family: 'Neuton', serif;
+  src: url('https://fonts.googleapis.com/css?family=Neuton')
+}
+@fontface {
+  font-family: 'Quattrocento Sans', sans-serif;
+  src: url('https://fonts.googleapis.com/css?family=Quattrocento+Sans')
+}
+@fontface {
+  font-family: 'Iceland', cursive;
+  src: url('https://fonts.googleapis.com/css?family=Iceland')
+}
 
 .section {
   &__section {
     color: $bpk-color-gray-700;
+    font-family: 'Neuton', serif;
 
     &--text {
-      padding-bottom: 0.5rem;
-      font-family: 'Quattrocento-Sans';
-      src: local('Iceland'), url(../fonts/QuattrocentoSans-Regular.ttf) format('ttf');
+      padding-bottom: .5rem;
+      font-family: 'Quattrocento Sans', sans-serif;
     }
   }
 
   &__sub-section {
     padding: 0 0 1rem;
     color: $bpk-color-gray-700;
+    font-family: 'Neuton', serif;
 
     &--text {
       padding-bottom: .4rem;
-      font-family: 'Quattrocento-Sans';
-      src: local('Iceland'), url(../fonts/QuattrocentoSans-Regular.ttf) format('ttf');
+      font-family: 'Quattrocento Sans', sans-serif;
     }
   }
 }
