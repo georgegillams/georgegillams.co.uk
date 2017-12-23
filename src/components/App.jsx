@@ -11,6 +11,7 @@ import NavLayout from './NavLayout';
 import HomePage from '../Pages/HomePage';
 import SwitchToVim from '../Pages/Articles/SwitchToVim';
 import NetNeutrality from '../Pages/Articles/NetNeutrality';
+import Munich from '../Pages/Travel/Munich';
 import Contact from '../Pages/Contact';
 import AboutMe from '../Pages/AboutMe';
 import Engagement from '../Pages/Engagement';
@@ -33,11 +34,10 @@ const App = () => (
         <div>
           <Switch>
             <Route exact path="/" component={HomePage} />
+            <Route path="/articles/net-neutrality" component={NetNeutrality} />
+            <Route path="/articles/vim" component={SwitchToVim} />
+            <Route path="/travel/munich-2017" component={Munich} />
             <Route path="/net-neutrality" component={NetNeutrality} />
-            <Route path="/vim" component={SwitchToVim} />
-            <Route path="/engagement" component={Engagement} />
-            <Route path="/about" component={AboutMe} />
-            <Route path="/contact" component={Contact} />
             <Route component={ForOhFour} />
           </Switch>
         </div>
@@ -45,5 +45,9 @@ const App = () => (
     </div>
   </BrowserRouter>
 );
+// <Route path="/travel/iceland" component={Iceland} />
+// <Route path="/engagement" component={Engagement} />
+// <Route path="/about" component={AboutMe} />
+// <Route path="/contact" component={Contact} />
 
 export default App;
