@@ -14,7 +14,8 @@
     "bpk-component-image": "^2.0.5",
     "bpk-component-input": "^3.2.36",
     "bpk-tokens": "^26.4.5",
-    "react-router-dom": "^4.2.2"
+    "react-router-dom": "^4.2.2",
+    "webfontloader": "^1.6.28"
   },
   "scripts": {
     "predeploy": "npm run build",
