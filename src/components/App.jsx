@@ -35,6 +35,7 @@ const App = () => (
           <Switch>
             <Route exact path="/" component={HomePage} />
             <Route path="/articles/net-neutrality" component={NetNeutrality} />
+            <Route path="/articles/vim" component={SwitchToVim} />
             <Route path="/travel/munich-2017" component={Munich} />
             <Route path="/net-neutrality" component={NetNeutrality} />
             <Route component={ForOhFour} />
@@ -45,7 +46,6 @@ const App = () => (
   </BrowserRouter>
 );
 // <Route path="/travel/iceland" component={Iceland} />
-// <Route path="/articles/vim" component={SwitchToVim} />
 // <Route path="/engagement" component={Engagement} />
 // <Route path="/about" component={AboutMe} />
 // <Route path="/contact" component={Contact} />

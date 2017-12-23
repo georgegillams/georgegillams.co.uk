@@ -11,10 +11,10 @@ const HomePage = () => (
   <main className={getClassName('pages__home-page-tree')}>
     <div>
       <SubSection className={getClassName('pages__home-page-item')} name="Articles">
-        {/*    <a className={getClassName('pages__link')} href="/articles/vim">
+        <a className={getClassName('pages__link')} href="/articles/vim">
           Switching to Vim
         </a>
-        <br /> */}
+        <br />
         <a className={getClassName('pages__link')} href="/articles/net-neutrality">
           My Take on Net Neutrality
         </a>
