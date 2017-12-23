@@ -15,7 +15,7 @@ const FadingLazyLoadedImage = withLoadingBehavior(withLazyLoading(BpkImage, docu
 const dateWritten = new Date(2017, 11, 8, 7, 1, 0);
 
 /* eslint-disable max-len */
-const NetNeutrality = (props) => {
+const Munich = (props) => {
   const { className, ...rest } = props;
   const classNameFinal = [];
   if (className) { classNameFinal.push(className); }
@@ -29,12 +29,12 @@ const NetNeutrality = (props) => {
   );
 };
 
-NetNeutrality.propTypes = {
+Munich.propTypes = {
   className: PropTypes.string,
 };
 
-NetNeutrality.defaultProps = {
+Munich.defaultProps = {
   className: null,
 };
 
-export default NetNeutrality;
+export default Munich;
