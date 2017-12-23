@@ -1,4 +1,20 @@
 @import '~bpk-mixins';
+@fontface {
+  font-family: 'Bungee Inline', cursive;
+  src: url('https://fonts.googleapis.com/css?family=Bungee+Inline')
+}
+@fontface {
+  font-family: 'Neuton', serif;
+  src: url('https://fonts.googleapis.com/css?family=Neuton')
+}
+@fontface {
+  font-family: 'Quattrocento Sans', sans-serif;
+  src: url('https://fonts.googleapis.com/css?family=Quattrocento+Sans')
+}
+@fontface {
+  font-family: 'Iceland', cursive;
+  src: url('https://fonts.googleapis.com/css?family=Iceland')
+}
 
 .personal-details {
   &__container {
@@ -9,6 +25,7 @@
     display: flex;
     padding: 1rem 0;
     flex-direction: column;
+    font-family: 'Neuton', serif;
 
     @include bpk-breakpoint-tablet {
       align-items: center;
