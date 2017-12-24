@@ -32,8 +32,12 @@ const HomePage = () => (
         <a className={getClassName('pages__link')} href="/services/photobombing">
           Photobombing
         </a>
-        {/*  <a className={getClassName('pages__link')} href="/travel/iceland">
-          Iceland
+        <br />
+        <a className={getClassName('pages__link')} href="/contact">
+          Contact
+        </a>
+        {/*  <a className={getClassName('pages__link')} href="/engagement">
+          Engagement
         </a> */}
       </SubSection>
       {/* <a className={getClassName('pages__link')} href="/engagement">

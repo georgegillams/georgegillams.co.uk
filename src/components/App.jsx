@@ -40,6 +40,7 @@ const App = () => (
             <Route path="/services/photobombing" component={Photobombing} />
             <Route path="/travel/munich-2017" component={Munich} />
             <Route path="/net-neutrality" component={NetNeutrality} />
+            <Route path="/contact" component={Contact} />
             <Route component={ForOhFour} />
           </Switch>
         </div>
@@ -50,6 +51,5 @@ const App = () => (
 // <Route path="/travel/iceland" component={Iceland} />
 // <Route path="/engagement" component={Engagement} />
 // <Route path="/about" component={AboutMe} />
-// <Route path="/contact" component={Contact} />
 
 export default App;
