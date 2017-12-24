@@ -24,6 +24,12 @@ const PersonalDetails = (props) => {
     </a>
   );
 
+  const phone = (
+    <a className={getClassName('personal-details__link')} href="tel:+447867592615" rel="noopener noreferrer" target="_blank" >
+      +44 (0) 786759 2615
+    </a>
+  );
+
   const photobomber = (
     <a className={getClassName('personal-details__link')} href="/services/photobombing">
       Passionate photobomber.
@@ -54,6 +60,7 @@ const PersonalDetails = (props) => {
       <div className={getClassName('personal-details__section')}>
         <GetSocial />
       </div>
+      {phone}
       <div className={getClassName('personal-details__section')}>
         <BpkText tagName="h3" textStyle="sm">v_1.0.5</BpkText>
       </div>
