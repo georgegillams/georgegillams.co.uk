@@ -24,6 +24,12 @@ const PersonalDetails = (props) => {
     </a>
   );
 
+  const photobomber = (
+    <a className={getClassName('personal-details__link')} href="/services/photobombing">
+      Passionate photobomber.
+    </a>
+  );
+
   const engaged = (
     <a className={getClassName('personal-details__link')} href="/engagement">
       engaged
@@ -40,8 +46,8 @@ const PersonalDetails = (props) => {
             <br />
            Based in London.
             <br />
-           Passionate photobomber.
-      {/* <br />
+          {photobomber}
+          {/* <br />
            Recently {engaged}! */}
         </BpkText>
       </div>

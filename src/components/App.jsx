@@ -12,6 +12,7 @@ import HomePage from '../Pages/HomePage';
 import SwitchToVim from '../Pages/Articles/SwitchToVim';
 import NetNeutrality from '../Pages/Articles/NetNeutrality';
 import Munich from '../Pages/Travel/Munich';
+import Photobombing from '../Pages/Services/Photobombing';
 import Contact from '../Pages/Contact';
 import AboutMe from '../Pages/AboutMe';
 import Engagement from '../Pages/Engagement';
@@ -36,6 +37,7 @@ const App = () => (
             <Route exact path="/" component={HomePage} />
             <Route path="/articles/net-neutrality" component={NetNeutrality} />
             <Route path="/articles/vim" component={SwitchToVim} />
+            <Route path="/services/photobombing" component={Photobombing} />
             <Route path="/travel/munich-2017" component={Munich} />
             <Route path="/net-neutrality" component={NetNeutrality} />
             <Route component={ForOhFour} />
