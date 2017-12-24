@@ -58,9 +58,10 @@ const PersonalDetails = (props) => {
         </BpkText>
       </div>
       <div className={getClassName('personal-details__section')}>
-        <GetSocial />
+        <GetSocial >
+          {phone}
+        </GetSocial>
       </div>
-      {phone}
       <div className={getClassName('personal-details__section')}>
         <BpkText tagName="h3" textStyle="sm">v_1.0.5</BpkText>
       </div>

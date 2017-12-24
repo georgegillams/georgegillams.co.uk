@@ -16,30 +16,35 @@ const getClassName = className => STYLES[className] || 'UNKNOWN';
 // const FadingLazyLoadedImage = withLoadingBehavior(withLazyLoading(BpkImage, documentIfExists));
 
 const GetSocial = (props) => {
-  const { className, ...rest } = props;
-  const classNameFinal = [getClassName('get-social__container')];
-  if (className) { classNameFinal.push(className); }
+  const { className, children, ...rest } = props;
+  const outerClassNameFinal = [];
+  if (className) { outerClassNameFinal(className); }
 
   return (
-    <div className={classNameFinal.join(' ')} {...rest} >
-      <a className={getClassName('get-social__link')} href="https://github.com/georgegillams/" rel="noopener noreferrer" target="_blank">
-        <img alt="github" width={5} height={5} className={getClassName('get-social__icon')} src={githubIcon} />
-      </a>
-      {/* <a className={getClassName('get-social__link')} href="https://github.com/Skyscanner" rel="noopener noreferrer" target="_blank">
+    <div className={outerClassNameFinal.join(' ')} {...rest} >
+      <div className={getClassName('get-social__container')} >
+        <a className={getClassName('get-social__link')} href="https://github.com/georgegillams/" rel="noopener noreferrer" target="_blank">
+          <img alt="github" width={5} height={5} className={getClassName('get-social__icon')} src={githubIcon} />
+        </a>
+        {/* <a className={getClassName('get-social__link')} href="https://github.com/Skyscanner" rel="noopener noreferrer" target="_blank">
       <img alt="Skyscanner" width={5} height={5} className={getClassName('get-social__icon')} src={skyscannerIcon} />
       </a> */}
-      <a className={getClassName('get-social__link')} href="https://www.facebook.com/george333123" rel="noopener noreferrer" target="_blank">
-        <img alt="facebook" width={5} height={5} className={getClassName('get-social__icon')} src={facebookIcon} />
-      </a>
-      <a className={getClassName('get-social__link')} href="https://www.linkedin.com/in/george-gillams-37537077" rel="noopener noreferrer" target="_blank">
-        <img alt="linkedin" width={5} height={5} className={getClassName('get-social__icon')} src={linkedinIcon} />
-      </a>
-      <a className={getClassName('get-social__link')} href="https://www.flickr.com/people/137198167@N03/" rel="noopener noreferrer" target="_blank">
-        <img alt="flickr" width={5} height={5} className={getClassName('get-social__icon')} src={flickrIcon} />
-      </a>
-      <a className={getClassName('get-social__link')} href="mailto:georgegillams@hotmail.co.uk" rel="noopener noreferrer" target="_blank">
-        <img alt="email" width={5} height={5} className={getClassName('get-social__icon')} src={emailIcon} />
-      </a>
+        <a className={getClassName('get-social__link')} href="https://www.facebook.com/george333123" rel="noopener noreferrer" target="_blank">
+          <img alt="facebook" width={5} height={5} className={getClassName('get-social__icon')} src={facebookIcon} />
+        </a>
+        <a className={getClassName('get-social__link')} href="https://www.linkedin.com/in/george-gillams-37537077" rel="noopener noreferrer" target="_blank">
+          <img alt="linkedin" width={5} height={5} className={getClassName('get-social__icon')} src={linkedinIcon} />
+        </a>
+        <a className={getClassName('get-social__link')} href="https://www.flickr.com/people/137198167@N03/" rel="noopener noreferrer" target="_blank">
+          <img alt="flickr" width={5} height={5} className={getClassName('get-social__icon')} src={flickrIcon} />
+        </a>
+        <a className={getClassName('get-social__link')} href="mailto:georgegillams@hotmail.co.uk" rel="noopener noreferrer" target="_blank">
+          <img alt="email" width={5} height={5} className={getClassName('get-social__icon')} src={emailIcon} />
+        </a>
+      </div>
+      <div className={getClassName('get-social__container')} style={{ paddingTop: '1rem' }}>
+        {children}
+      </div>
     </div>
   );
 };
