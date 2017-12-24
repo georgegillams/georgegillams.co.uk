@@ -28,6 +28,14 @@ const HomePage = () => (
           Iceland
         </a> */}
       </SubSection>
+      <SubSection className={getClassName('pages__home-page-item')} name="Services">
+        <a className={getClassName('pages__link')} href="/services/photobombing">
+          Photobombing
+        </a>
+        {/*  <a className={getClassName('pages__link')} href="/travel/iceland">
+          Iceland
+        </a> */}
+      </SubSection>
       {/* <a className={getClassName('pages__link')} href="/engagement">
       <Section className={getClassName('pages__home-page-item')} name="We just got engaged!">
         I finally got around to asking, and she said yes!

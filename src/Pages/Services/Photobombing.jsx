@@ -6,7 +6,7 @@ import Section from './../../components/Section';
 import SubSection from './../../components/SubSection';
 import netflixDownloads from './../../images/netflixDownloads.png';
 import ArticleDate from '../../components/ArticleDate';
-import philMunich from './images/munichPhil.jpg';
+import sealPhotobomb from './images/sealPhotobomb.jpg';
 
 import STYLES from '../pages.scss';
 
@@ -16,28 +16,28 @@ const FadingLazyLoadedImage = withLoadingBehavior(withLazyLoading(BpkImage, docu
 const dateWritten = new Date(2017, 11, 8, 7, 1, 0);
 
 /* eslint-disable max-len */
-const Munich = (props) => {
+const Photobombing = (props) => {
   const { className, ...rest } = props;
   const classNameFinal = [];
   if (className) { classNameFinal.push(className); }
 
   return (
     <main className={classNameFinal.join(' ')} {...rest} >
-      <Section name="Munich - Christmas 2017" />
-      <a className={getClassName('pages__link')} href="https://flic.kr/s/aHsm9VxHMV" rel="noopener noreferrer" target="_blank">
-        <SubSection name="Click here to see the full album on Flickr" />
+      <Section name="Photobombing" />
+      <a className={getClassName('pages__link')} href="https://www.dropbox.com/request/erdfWZ3zPHy5sOYmcrY8" rel="noopener noreferrer" target="_blank">
+        <SubSection name="Have I photobombed you? Click here to send me the goods!" />
       </a>
-      <FadingLazyLoadedImage style={{ marginBottom: '1.5rem', width: '100%' }} altText="My brother up a tree" width={2514} height={1676} src={philMunich} />
+      <FadingLazyLoadedImage style={{ marginBottom: '1.5rem', width: '100%' }} altText="Seal photobombing" width={800} height={584} src={sealPhotobomb} />
     </main>
   );
 };
 
-Munich.propTypes = {
+Photobombing.propTypes = {
   className: PropTypes.string,
 };
 
-Munich.defaultProps = {
+Photobombing.defaultProps = {
   className: null,
 };
 
-export default Munich;
+export default Photobombing;
