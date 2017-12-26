@@ -1,6 +1,7 @@
 import PropTypes from 'prop-types';
 import React from 'react';
-import ProfilePic from './ProfilePic';
+// import ProfilePic from './ProfilePic';
+import Logo from './Logo';
 import PersonalDetails from './PersonalDetails';
 // import Navigation from './Navigation';
 
@@ -17,7 +18,8 @@ const NavLayout = (props) => {
     <div className={classNameFinal.join(' ')} {...rest} >
       <div className={getClassName('nav-layout__centre-column')}>
         <span className={getClassName('nav-layout__nav-col')}>
-          <ProfilePic />
+          <Logo />
+          {/* <ProfilePic /> */}
           <PersonalDetails />
           {/* <Navigation /> */}
         </span>

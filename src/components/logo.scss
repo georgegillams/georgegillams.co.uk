@@ -16,44 +16,32 @@
   src: url('https://fonts.googleapis.com/css?family=Iceland')
 }
 
-.personal-details {
+.logo {
   &__container {
     display: flex;
     flex-direction: column;
-    // min-width: 15rem;
+    padding-bottom: 1rem;
 
     @include bpk-breakpoint-tablet {
       align-items: center;
+      padding-left: 2rem;
+      padding-right: 2rem;
     }
   }
 
-  &__section {
-    display: flex;
-    padding: 1rem 0;
-    flex-direction: column;
-    font-family: 'Neuton', serif;
-    max-width: 12.5rem;
-
-    @include bpk-breakpoint-tablet {
-        text-align: center;
-      align-items: center;
-    }
-  }
-
-  &__link {
+  &__logo--base {
+    display: inline-block;
+    font-size: 1.6rem;
     color: $bpk-color-gray-700;
-    text-decoration: none;
-
-    &:hover {
-      text-decoration: underline;
-    }
-
-  &--skyscanner-blue {
-      color: $bpk-color-blue-500;
+    font-family: 'Quattrocento Sans', sans-serif;
   }
 
-  &--southampton-blue {
-      color: rgb(0,92,133);
-  }
+  &__logo--large {
+    display: inline-block;
+    font-size: 5.5rem;
+    line-height: 6rem;
+    color: rgb(62,158,235);
+    font-weight: bold;
+    font-family: 'Quattrocento Sans', sans-serif;
   }
 }

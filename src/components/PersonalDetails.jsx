@@ -45,7 +45,7 @@ const PersonalDetails = (props) => {
   return (
     <div className={classNameFinal.join(' ')} {...rest} >
       <div className={getClassName('personal-details__section')}>
-        <BpkText style={{ width: '12.5rem' }} tagName="h3" textStyle="base">
+        <BpkText tagName="h3" textStyle="base">
             Open-source Software Engineer at {skyscanner}.
             <br />
             Masters student at {southampton}.
