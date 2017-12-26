@@ -33,6 +33,10 @@ const HomePage = () => (
           Photobombing
         </a>
         <br />
+        <a className={getClassName('pages__link')} href="/about">
+          About me
+        </a>
+        <br />
         <a className={getClassName('pages__link')} href="https://georgegillams.typeform.com/to/oBmiJZ" rel="noopener noreferrer" target="_blank">
           Contact
         </a>

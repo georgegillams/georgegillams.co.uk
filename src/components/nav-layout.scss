@@ -11,7 +11,7 @@
   &__centre-column {
     display: flex;
     width: 100%;
-    max-width: 60rem;
+    max-width: 64rem;
     flex-direction: row;
 
     @include bpk-breakpoint-tablet {
