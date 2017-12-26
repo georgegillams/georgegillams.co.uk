@@ -22,12 +22,15 @@ const AboutMe = (props) => {
   return (
     <main className={classNameFinal.join(' ')} {...rest} >
       <Section name="About me">
-          I&apos;m a open-source software engineer, passionate about design, travelling and photography. When I&apos;m not internationally photobombing unsuspecting strangers I&apos;m based somewhere between Southampton and London.
+          I&apos;m a open-source software engineer, passionate about design, travel and photography. When I&apos;m not internationally photobombing unsuspecting strangers I&apos;m based somewhere between Southampton and London.
         <br />
         <br />
-        I recently got engaged, and will be graduating from my Masters soon.
+        I enjoy getting outdoors and trying new things, and will be completeing my 5th Tough Mudder in May 2018. I also try to squeeze in as much volunteering as I can, so you may find me dressed as a for Help for Heroes bear, reviewing content for Beat, or submitting PR's to Mozilla's open-source. I look forward to doing more of all that when I finish my Masters.
         <br />
         <br />
+        {/* I recently got engaged
+        <br />
+        <br /> */}
         <FadingLazyLoadedImage style={{ marginBottom: '1.5rem', width: '100%' }} altText="George Gillams" width={2592} height={1944} src={georgeAndCharlie} />
       </Section>
     </main>
