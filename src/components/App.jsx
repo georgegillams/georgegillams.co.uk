@@ -17,11 +17,39 @@ import Contact from '../Pages/Contact';
 import AboutMe from '../Pages/AboutMe';
 import Engagement from '../Pages/Engagement';
 import ForOhFour from '../Pages/ForOhFour';
-// </editor-fold> Content Imports
+import Logo from './Logo';
+import PersonalDetails from './PersonalDetails';
 
 import STYLES from './app.scss';
 
 const getClassName = className => STYLES[className] || 'UNKNOWN';
+
+const children1 = (
+  <div>
+    <Logo />
+    {/* <ProfilePic /> */}
+    <PersonalDetails />
+    {/* <Navigation /> */}
+  </div>
+);
+
+const children2 = (
+  <div>
+    <Switch>
+      <Route exact path="/" component={HomePage} />
+      <Route path="/articles/net-neutrality" component={NetNeutrality} />
+      <Route path="/articles/vim" component={SwitchToVim} />
+      <Route path="/services/photobombing" component={Photobombing} />
+      <Route path="/travel/munich-2017" component={Munich} />
+      <Route path="/net-neutrality" component={NetNeutrality} />
+      <Route path="/about" component={AboutMe} />
+      <Route path="/contact" component={Contact} />
+      <Route component={ForOhFour} />
+    </Switch>
+  </div>
+);
+// <Route path="/travel/iceland" component={Iceland} />
+// <Route path="/engagement" component={Engagement} />
 
 const App = () => (
   <BrowserRouter>
@@ -31,25 +59,9 @@ const App = () => (
           <BpkText className={getClassName('app__download-button')} textStyle="sm" >Grab my CV</BpkText>
         </a>
     </div> */}
-      <NavLayout>
-        <div>
-          <Switch>
-            <Route exact path="/" component={HomePage} />
-            <Route path="/articles/net-neutrality" component={NetNeutrality} />
-            <Route path="/articles/vim" component={SwitchToVim} />
-            <Route path="/services/photobombing" component={Photobombing} />
-            <Route path="/travel/munich-2017" component={Munich} />
-            <Route path="/net-neutrality" component={NetNeutrality} />
-            <Route path="/about" component={AboutMe} />
-            <Route path="/contact" component={Contact} />
-            <Route component={ForOhFour} />
-          </Switch>
-        </div>
-      </NavLayout>
+      <NavLayout children1={children1} children2={children2} />
     </div>
   </BrowserRouter>
 );
-// <Route path="/travel/iceland" component={Iceland} />
-// <Route path="/engagement" component={Engagement} />
 
 export default App;
