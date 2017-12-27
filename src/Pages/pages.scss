@@ -2,7 +2,7 @@
 
 .pages {
   &__home-page-item {
-      padding-bottom: 1.5rem;
+    padding-bottom: 1.5rem;
   }
 
   &__home-page-tree {
@@ -17,6 +17,13 @@
     }
   }
 
+  &__page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
 
   &__link {
     color: $bpk-color-gray-700;

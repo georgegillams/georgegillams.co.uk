@@ -18,7 +18,7 @@ const dateWritten = new Date(2017, 11, 8, 7, 1, 0);
 /* eslint-disable max-len */
 const Photobombing = (props) => {
   const { className, ...rest } = props;
-  const classNameFinal = [];
+  const classNameFinal = [getClassName('pages__page')];
   if (className) { classNameFinal.push(className); }
 
   return (

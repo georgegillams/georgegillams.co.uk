@@ -18,6 +18,7 @@
 
 .section {
   &__section {
+    width:100%;
     color: $bpk-color-gray-700;
     font-family: 'Neuton', serif;
 
@@ -29,6 +30,7 @@
   }
 
   &__sub-section {
+    width:100%;
     padding: 0 0 1rem;
     color: $bpk-color-gray-700;
     font-family: 'Neuton', serif;
