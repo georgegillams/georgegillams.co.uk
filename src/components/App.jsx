@@ -11,6 +11,7 @@ import NavLayout from './NavLayout';
 import HomePage from '../Pages/HomePage';
 import SwitchToVim from '../Pages/Articles/SwitchToVim';
 import NetNeutrality from '../Pages/Articles/NetNeutrality';
+import Longleat from '../Pages/Travel/Longleat';
 import Munich from '../Pages/Travel/Munich';
 import Photobombing from '../Pages/Services/Photobombing';
 import Contact from '../Pages/Contact';
@@ -40,6 +41,7 @@ const children2 = (
       <Route path="/articles/net-neutrality" component={NetNeutrality} />
       <Route path="/articles/vim" component={SwitchToVim} />
       <Route path="/services/photobombing" component={Photobombing} />
+      <Route path="/travel/longleat-2017" component={Longleat} />
       <Route path="/travel/munich-2017" component={Munich} />
       <Route path="/net-neutrality" component={NetNeutrality} />
       <Route path="/about" component={AboutMe} />

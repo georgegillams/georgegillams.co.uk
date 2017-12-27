@@ -24,6 +24,10 @@ const HomePage = () => (
         <a className={getClassName('pages__link')} href="/travel/munich-2017">
           Munich
         </a>
+        <br />
+        <a className={getClassName('pages__link')} href="/travel/longleat-2017">
+          Longleat
+        </a>
         {/*  <a className={getClassName('pages__link')} href="/travel/iceland">
           Iceland
         </a> */}
