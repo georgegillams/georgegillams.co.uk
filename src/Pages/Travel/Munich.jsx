@@ -18,16 +18,17 @@ const dateWritten = new Date(2017, 11, 8, 7, 1, 0);
 /* eslint-disable max-len */
 const Munich = (props) => {
   const { className, ...rest } = props;
-  const classNameFinal = [];
+  const classNameFinal = [getClassName('pages__page')];
   if (className) { classNameFinal.push(className); }
 
   return (
     <main className={classNameFinal.join(' ')} {...rest} >
-      <Section name="Munich - Christmas 2017" />
-      <a className={getClassName('pages__link')} href="https://flic.kr/s/aHsm9VxHMV" rel="noopener noreferrer" target="_blank">
-        <SubSection name="Click here to see the full album on Flickr" />
-      </a>
-      <FadingLazyLoadedImage style={{ marginBottom: '1.5rem', width: '100%' }} altText="My brother up a tree" width={2514} height={1676} src={philMunich} />
+      <Section name="Munich - Christmas 2017" >
+        <a className={getClassName('pages__link')} href="https://flic.kr/s/aHsm9VxHMV" rel="noopener noreferrer" target="_blank">
+          <SubSection name="Click here to see the full album on Flickr" />
+        </a>
+        <FadingLazyLoadedImage style={{ marginBottom: '1.5rem', width: '100%' }} altText="My brother up a tree" width={2514} height={1676} src={philMunich} />
+      </Section>
     </main>
   );
 };

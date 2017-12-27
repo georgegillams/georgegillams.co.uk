@@ -37,7 +37,7 @@ const HomePage = () => (
           About me
         </a>
         <br />
-        <a className={getClassName('pages__link')} href="https://georgegillams.typeform.com/to/oBmiJZ" rel="noopener noreferrer" target="_blank">
+        <a className={getClassName('pages__link')} href="/contact">
           Contact
         </a>
         {/*  <a className={getClassName('pages__link')} href="/engagement">
