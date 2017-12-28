@@ -22,14 +22,16 @@ const Engagement = (props) => {
   return (
     <main className={classNameFinal.join(' ')} {...rest} >
       <Section name="We're engaged!">
-        We just wanted to let you all know that we&apos;ve sealed the deal! We&apos;ll set a date for the wedding soon!!!
-        <br />
-        <br />
-        <FadingLazyLoadedImage style={{ marginBottom: '1.5rem', width: '100%' }} altText="My humans are getting married" width={2514} height={1676} src={humans} />
+        <SubSection name="We're very pleased to announce our engagement!" >
+          We&apos;ll set a date for the wedding soon!!!
+          <br />
+          <br />
+          <FadingLazyLoadedImage style={{ marginBottom: '1.5rem', width: '100%' }} altText="My humans are getting married" width={2514} height={1676} src={humans} />
       This was Tigg's face when we first told him!
-        <br />
-        <br />
-        <FadingLazyLoadedImage style={{ marginBottom: '1.5rem', width: '100%' }} altText="Tigg's face when we told him!" width={2514} height={1676} src={tiggsAmazed} />
+          <br />
+          <br />
+          <FadingLazyLoadedImage style={{ marginBottom: '1.5rem', width: '100%' }} altText="Tigg's face when we told him!" width={2514} height={1676} src={tiggsAmazed} />
+        </SubSection>
       </Section>
     </main>
   );
