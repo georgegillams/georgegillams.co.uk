@@ -27,7 +27,7 @@ const Photobombing = (props) => {
       <a className={getClassName('pages__link')} href="https://www.dropbox.com/request/erdfWZ3zPHy5sOYmcrY8" rel="noopener noreferrer" target="_blank">
         <SubSection name="Have I photobombed you? Click here to send me the goods!" />
       </a>
-      <FadingLazyLoadedImage style={{ marginBottom: '1.5rem', width: '100%' }} altText="Seal photobombing" width={800} height={584} src={sealPhotobomb} />
+      <FadingLazyLoadedImage className={getClassName('pages__image')} altText="Seal photobombing" width={800} height={584} src={sealPhotobomb} />
     </main>
   );
 };

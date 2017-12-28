@@ -33,4 +33,14 @@
       text-decoration: underline;
     }
   }
+
+  &__image {
+      display: inline-block;
+      margin-bottom: 1.5rem;
+      width:80%;
+
+    @include bpk-breakpoint-tablet {
+      width:90%;
+    }
+  }
 }

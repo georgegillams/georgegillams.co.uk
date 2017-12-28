@@ -1,23 +1,26 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import BpkText from 'bpk-component-text';
 import BpkImage, { withLazyLoading, withLoadingBehavior } from 'bpk-component-image';
 import Section from './../components/Section';
 import SubSection from './../components/SubSection';
 import tiggsAmazed from './images/tiggsAmazed.jpg';
 import humans from './images/humans.jpg';
 
-// import STYLES from '../pages.scss';
-//
-// const getClassName = className => STYLES[className] || 'UNKNOWN';
+import STYLES from './pages.scss';
+
+const getClassName = className => STYLES[className] || 'UNKNOWN';
 const documentIfExists = typeof window !== 'undefined' ? document : null;
 const FadingLazyLoadedImage = withLoadingBehavior(withLazyLoading(BpkImage, documentIfExists));
 
 /* eslint-disable max-len */
 const Engagement = (props) => {
   const { className, ...rest } = props;
-  const classNameFinal = [];
+  const classNameFinal = [getClassName('pages__page')];
   if (className) { classNameFinal.push(className); }
+
+  // TODO Add image of starbucks cups
+  // TODO Add image of Iceland sceneray throught the ring
+  // TODO Add image of proposal
 
   return (
     <main className={classNameFinal.join(' ')} {...rest} >
@@ -26,11 +29,12 @@ const Engagement = (props) => {
           We&apos;ll set a date for the wedding soon!!!
           <br />
           <br />
-          <FadingLazyLoadedImage style={{ marginBottom: '1.5rem', width: '100%' }} altText="My humans are getting married" width={2514} height={1676} src={humans} />
-      This was Tigg's face when we first told him!
+          <FadingLazyLoadedImage className={getClassName('pages__image')} altText="My humans are getting married" width={2514} height={1676} src={humans} />
+          <br />
+      This was Tigg&apos;s face when we first told him!
           <br />
           <br />
-          <FadingLazyLoadedImage style={{ marginBottom: '1.5rem', width: '100%' }} altText="Tigg's face when we told him!" width={2514} height={1676} src={tiggsAmazed} />
+          <FadingLazyLoadedImage className={getClassName('pages__image')} altText="Tigg's face when we told him!" width={2514} height={1676} src={tiggsAmazed} />
         </SubSection>
       </Section>
     </main>

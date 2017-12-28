@@ -31,7 +31,7 @@ const AboutMe = (props) => {
         {/* I recently got engaged
         <br />
         <br /> */}
-        <FadingLazyLoadedImage style={{ marginBottom: '1.5rem', width: '100%' }} altText="George Gillams" width={2592} height={1944} src={georgeAndCharlie} />
+        <FadingLazyLoadedImage className={getClassName('pages__image')} altText="George Gillams" width={2592} height={1944} src={georgeAndCharlie} />
       </Section>
     </main>
   );
