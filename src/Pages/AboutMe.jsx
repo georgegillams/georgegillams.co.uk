@@ -28,6 +28,11 @@ const AboutMe = (props) => {
         I enjoy getting outdoors and trying new things, and will be completeing my 5th Tough Mudder in May 2018. I also try to squeeze in as much volunteering as I can, so you may find me dressed as a Help for Heroes bear, reviewing content for Beat, or submitting PR's to Mozilla's open-source. I look forward to doing more of all that when I finish my Masters.
         <br />
         <br />
+        {/* <SubSection name="Achievements">
+            I&apos;m not usually one to blow my own trumpet, but recent achievements of note include my Masters in Software Engineering and Grade 8 on the flute.
+        <FadingLazyLoadedImage className={getClassName('pages__image')} altText="George Gillams Degree" width={2592} height={1944} src={georgeDegree} />
+        <FadingLazyLoadedImage className={getClassName('pages__image')} altText="George Gillams Grade 8 Certificate" width={2592} height={1944} src={georgeFlute} />
+        </SubSection> */}
         {/* I recently got engaged
         <br />
         <br /> */}
