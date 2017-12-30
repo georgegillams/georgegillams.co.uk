@@ -25,9 +25,9 @@ const Photobombing = (props) => {
     <main className={classNameFinal.join(' ')} {...rest} >
       <Section name="Photobombing" />
       <a className={getClassName('pages__link')} href="https://www.dropbox.com/request/erdfWZ3zPHy5sOYmcrY8" rel="noopener noreferrer" target="_blank">
-        <SubSection name="Have I photobombed you? Click here to send me the goods!" />
+        <SubSection name="Have I photobombed you? Send me the goods →" />
+        <FadingLazyLoadedImage className={getClassName('pages__image')} altText="Seal photobombing" width={800} height={584} src={sealPhotobomb} />
       </a>
-      <FadingLazyLoadedImage className={getClassName('pages__image')} altText="Seal photobombing" width={800} height={584} src={sealPhotobomb} />
     </main>
   );
 };
