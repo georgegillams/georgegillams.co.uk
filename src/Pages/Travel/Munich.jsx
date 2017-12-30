@@ -21,9 +21,9 @@ const Munich = (props) => {
     <main className={classNameFinal.join(' ')} {...rest} >
       <Section name="Munich - Christmas 2017" >
         <a className={getClassName('pages__link')} href="https://flic.kr/s/aHsm9VxHMV" rel="noopener noreferrer" target="_blank">
-          <SubSection name="Click here to see the full album on Flickr" />
+          <SubSection name="See the full album on Flickr →" />
+          <FadingLazyLoadedImage className={getClassName('pages__image')} altText="My brother up a tree" width={2514} height={1676} src={philMunich} />
         </a>
-        <FadingLazyLoadedImage className={getClassName('pages__image')} altText="My brother up a tree" width={2514} height={1676} src={philMunich} />
       </Section>
     </main>
   );
