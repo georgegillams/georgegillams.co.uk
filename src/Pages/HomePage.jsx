@@ -21,16 +21,17 @@ const HomePage = () => (
       </SubSection>
       <SubSection className={getClassName('pages__home-page-item')} name="Travel">
         {/* <a className={getClassName('pages__link')} href="https://flic.kr/s/aHsm9VxHMV"> */}
-        <a className={getClassName('pages__link')} href="/travel/munich-2017">
-          Munich
+        <a className={getClassName('pages__link')} href="/travel/iceland-2018">
+          Iceland
         </a>
         <br />
         <a className={getClassName('pages__link')} href="/travel/longleat-2017">
           Longleat
         </a>
-        {/*  <a className={getClassName('pages__link')} href="/travel/iceland">
-          Iceland
-        </a> */}
+        <br />
+        <a className={getClassName('pages__link')} href="/travel/munich-2017">
+          Munich
+        </a>
       </SubSection>
       <SubSection className={getClassName('pages__home-page-item')} name="Services">
         <a className={getClassName('pages__link')} href="/services/photobombing">
