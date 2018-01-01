@@ -13,6 +13,7 @@ import SwitchToVim from '../Pages/Articles/SwitchToVim';
 import NetNeutrality from '../Pages/Articles/NetNeutrality';
 import Longleat from '../Pages/Travel/Longleat';
 import Munich from '../Pages/Travel/Munich';
+import Iceland from '../Pages/Travel/Iceland';
 import Photobombing from '../Pages/Services/Photobombing';
 import Contact from '../Pages/Contact';
 import AboutMe from '../Pages/AboutMe';
@@ -45,13 +46,13 @@ const children2 = (
       <Route path="/travel/munich-2017" component={Munich} />
       <Route path="/net-neutrality" component={NetNeutrality} />
       <Route path="/about" component={AboutMe} />
+      <Route path="/travel/iceland-2018" component={Iceland} />
+      <Route path="/engagement" component={Engagement} />
       <Route path="/contact" component={Contact} />
       <Route component={ForOhFour} />
     </Switch>
   </div>
 );
-// <Route path="/travel/iceland" component={Iceland} />
-// <Route path="/engagement" component={Engagement} />
 
 const App = () => (
   <BrowserRouter>
