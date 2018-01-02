@@ -22,7 +22,7 @@ const Iceland = (props) => {
       <Section name="Iceland - January 2018" >
         <a className={getClassName('pages__link')} href="https://flic.kr/s/aHskqS4GoZ" rel="noopener noreferrer" target="_blank">
           <SubSection name="See the full album on Flickr →" />
-          <FadingLazyLoadedImage className={getClassName('pages__image')} altText="My brother up a tree" width={2514} height={1676} src={iceland} />
+          <FadingLazyLoadedImage className={getClassName('pages__image')} altText="Overlooking the harbour" width={2514} height={1676} src={iceland} />
         </a>
       </Section>
     </main>

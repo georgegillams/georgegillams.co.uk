@@ -15,10 +15,10 @@ const Contact = (props) => {
     <main className={classNameFinal.join(' ')} {...rest} >
       <Section name="Get in touch" >
         <a className={getClassName('pages__link')} href="tel:+447867592615" rel="noopener noreferrer" target="_blank">
-          <SubSection name="Phone me" />
+          <SubSection name="Call +44 (0) 786759 2615" />
         </a>
         <a className={getClassName('pages__link')} href="mailto:g@georgegillams.co.uk" rel="noopener noreferrer" target="_blank">
-          <SubSection name="Email me" />
+          <SubSection name="Email g@georgegillams.co.uk" />
         </a>
         <a className={getClassName('pages__link')} href="https://georgegillams.typeform.com/to/oBmiJZ" rel="noopener noreferrer" target="_blank">
           <SubSection name="Contact me online" />
