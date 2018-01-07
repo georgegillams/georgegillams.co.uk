@@ -33,11 +33,7 @@ const HomePage = () => (
           Munich
         </a>
       </SubSection>
-      <SubSection className={getClassName('pages__home-page-item')} name="Services">
-        <a className={getClassName('pages__link')} href="/services/photobombing">
-          Photobombing
-        </a>
-        <br />
+      <SubSection className={getClassName('pages__home-page-item')} name="Other stuff">
         <a className={getClassName('pages__link')} href="/about">
           About me
         </a>

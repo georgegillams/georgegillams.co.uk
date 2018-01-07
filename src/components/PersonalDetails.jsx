@@ -51,10 +51,6 @@ const PersonalDetails = (props) => {
             Masters student at {southampton}.
             <br />
            Based in London.
-            <br />
-          {photobomber}
-          {/* <br />
-           Recently {engaged}! */}
         </BpkText>
       </div>
       <div className={getClassName('personal-details__section')}>
