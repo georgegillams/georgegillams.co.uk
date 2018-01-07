@@ -41,7 +41,6 @@ const children2 = (
       <Route exact path="/" component={HomePage} />
       <Route path="/articles/net-neutrality" component={NetNeutrality} />
       <Route path="/articles/vim" component={SwitchToVim} />
-      <Route path="/services/photobombing" component={Photobombing} />
       <Route path="/travel/longleat-2017" component={Longleat} />
       <Route path="/travel/munich-2017" component={Munich} />
       <Route path="/net-neutrality" component={NetNeutrality} />
