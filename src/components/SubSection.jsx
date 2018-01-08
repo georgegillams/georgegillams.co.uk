@@ -14,7 +14,7 @@ const SubSection = (props) => {
   const classNameFinal = [getClassName('section__sub-section')];
   if (className) { classNameFinal.push(className); }
   const textClassNameFinal = [getClassName('section__sub-section--text')];
-  if (textClassName) { classNameFinal.push(textClassName); }
+  if (textClassName) { textClassNameFinal.push(textClassName); }
 
   return (
     <div className={classNameFinal.join(' ')} {...rest}>
