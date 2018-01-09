@@ -6,6 +6,7 @@ import facebookIcon from './../icons/facebook.png';
 import linkedinIcon from './../icons/linkedin.png';
 import flickrIcon from './../icons/flickr.png';
 import emailIcon from './../icons/email.png';
+import phoneIcon from './../icons/phone.png';
 import dropboxIcon from './../icons/dropbox.png';
 
 // import skyscannerIcon from './../icons/skyscanner.png';
@@ -46,6 +47,9 @@ const GetSocial = (props) => {
         </a>
         <a className={getClassName('get-social__link')} href="mailto:g@georgegillams.co.uk" rel="noopener noreferrer" target="_blank">
           <img alt="email" width={5} height={5} className={getClassName('get-social__icon')} src={emailIcon} />
+        </a>
+        <a className={getClassName('get-social__link')} href="tel:+447867592615" rel="noopener noreferrer" target="_blank">
+          <img alt="phone" width={5} height={5} className={getClassName('get-social__icon')} src={phoneIcon} />
         </a>
       </div>
       <div className={getClassName('get-social__container')} style={{ paddingTop: '1rem' }}>
