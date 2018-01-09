@@ -19,6 +19,7 @@ import Contact from '../Pages/Contact';
 import AboutMe from '../Pages/AboutMe';
 import Engagement from '../Pages/Engagement';
 import ForOhFour from '../Pages/ForOhFour';
+import Degree from '../Pages/Documents/Degree';
 import Logo from './Logo';
 import PersonalDetails from './PersonalDetails';
 
@@ -48,6 +49,7 @@ const children2 = (
       <Route path="/travel/iceland-2018" component={Iceland} />
       <Route path="/engagement" component={Engagement} />
       <Route path="/contact" component={Contact} />
+      {/* <Route path="/documents/degree" component={Degree} /> */}
       <Route component={ForOhFour} />
     </Switch>
   </div>
