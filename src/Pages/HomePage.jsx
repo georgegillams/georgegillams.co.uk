@@ -10,7 +10,7 @@ const getClassName = className => STYLES[className] || 'UNKNOWN';
 const HomePage = () => (
   <main className={getClassName('pages__home-page-tree')}>
     <div>
-      <SubSection className={getClassName('pages__home-page-item')} name="Articles">
+      <SubSection className={getClassName('pages__home-page-item')} name="Articles 📝">
         <a className={getClassName('pages__link')} href="/articles/vim">
           Switching to Vim
         </a>
@@ -19,7 +19,7 @@ const HomePage = () => (
           My Take on Net Neutrality
         </a>
       </SubSection>
-      <SubSection className={getClassName('pages__home-page-item')} name="Travel">
+      <SubSection className={getClassName('pages__home-page-item')} name="Travel ✈️">
         {/* <a className={getClassName('pages__link')} href="https://flic.kr/s/aHsm9VxHMV"> */}
         <a className={getClassName('pages__link')} href="/travel/iceland-2018">
           Iceland
@@ -33,7 +33,7 @@ const HomePage = () => (
           Munich
         </a>
       </SubSection>
-      <SubSection className={getClassName('pages__home-page-item')} name="Other stuff">
+      <SubSection className={getClassName('pages__home-page-item')} name="Other stuff 🤷‍♂️">
         <a className={getClassName('pages__link')} href="/about">
           About me
         </a>

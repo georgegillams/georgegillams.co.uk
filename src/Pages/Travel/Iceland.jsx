@@ -19,7 +19,7 @@ const Iceland = (props) => {
 
   return (
     <main className={classNameFinal.join(' ')} {...rest} >
-      <Section name="Iceland - January 2018" >
+      <Section name="Iceland  🛥 January 2018" >
         <a className={getClassName('pages__link')} href="https://flic.kr/s/aHskqS4GoZ" rel="noopener noreferrer" target="_blank">
           <SubSection name="See the full album on Flickr →" textClassName={getClassName('pages__link')} />
           <FadingLazyLoadedImage className={getClassName('pages__image')} altText="Overlooking the harbour" width={2514} height={1676} src={iceland} />
