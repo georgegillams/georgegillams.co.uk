@@ -33,6 +33,12 @@ const HomePage = () => (
           Munich
         </a>
       </SubSection>
+      {/* <SubSection className={getClassName('pages__home-page-item')} name="Documents 🥇">
+        <a className={getClassName('pages__link')} href="/documents/degree">
+         Degree Certificate - 2018
+        </a>
+        <br />
+      </SubSection> */}
       <SubSection className={getClassName('pages__home-page-item')} name="Other stuff 🤷‍♂️">
         <a className={getClassName('pages__link')} href="/about">
           About me
@@ -41,15 +47,7 @@ const HomePage = () => (
         <a className={getClassName('pages__link')} href="/contact">
           Contact
         </a>
-        {/*  <a className={getClassName('pages__link')} href="/engagement">
-          Engagement
-        </a> */}
       </SubSection>
-      {/* <a className={getClassName('pages__link')} href="/engagement">
-      <Section className={getClassName('pages__home-page-item')} name="We just got engaged!">
-        I finally got around to asking, and she said yes!
-      </Section>
-    </a> */}
     </div>
   </main>
 );
