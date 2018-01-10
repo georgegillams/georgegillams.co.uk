@@ -35,7 +35,7 @@
     max-width: 12.5rem;
 
     @include bpk-breakpoint-tablet {
-        text-align: center;
+      text-align: center;
       align-items: center;
     }
   }
@@ -46,6 +46,7 @@
 
     &:hover {
       color: rgb(62,158,235);
+      text-decoration: none;
     }
 
   &--skyscanner-blue {
