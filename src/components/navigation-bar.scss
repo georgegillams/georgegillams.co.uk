@@ -1,0 +1,30 @@
+@import '~bpk-mixins';
+
+.get-social {
+  &__container {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+
+    @include bpk-breakpoint-tablet {
+      justify-content: center;
+    }
+  }
+
+  &__icon {
+    display: inline-block;
+    width: 100%;
+    max-width: 2rem;
+    height: 100%;
+    max-height: 2rem;
+    filter: opacity(70%);
+
+    &:hover {
+      filter: opacity(90%);
+    }
+  }
+
+  &__link {
+    margin: 0 .5rem 0 .2rem;
+  }
+}
