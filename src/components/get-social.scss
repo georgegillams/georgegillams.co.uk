@@ -9,6 +9,10 @@
     @include bpk-breakpoint-tablet {
       justify-content: center;
     }
+
+    &--centered {
+      justify-content: center;
+    }
   }
 
   &__icon {

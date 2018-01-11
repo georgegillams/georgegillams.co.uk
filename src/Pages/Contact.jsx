@@ -1,6 +1,7 @@
 import React from 'react';
 import Section from '../components/Section';
 import SubSection from '../components/SubSection';
+import SideBar from '../components/SideBar';
 
 import STYLES from './pages.scss';
 
@@ -12,19 +13,21 @@ const Contact = (props) => {
   if (className) { classNameFinal.push(className); }
 
   return (
-    <main className={classNameFinal.join(' ')} {...rest} >
-      <Section name="Get in touch" >
-        <a className={getClassName('pages__link')} href="tel:+447867592615" rel="noopener noreferrer" target="_blank">
-          <SubSection name="Call +44 (0) 786759 2615" textClassName={getClassName('pages__link')} />
-        </a>
-        <a className={getClassName('pages__link')} href="mailto:g@georgegillams.co.uk" rel="noopener noreferrer" target="_blank">
-          <SubSection name="Email g@georgegillams.co.uk" textClassName={getClassName('pages__link')} />
-        </a>
-        <a className={getClassName('pages__link')} href="https://georgegillams.typeform.com/to/oBmiJZ" rel="noopener noreferrer" target="_blank">
-          <SubSection name="Contact me online" textClassName={getClassName('pages__link')} />
-        </a>
-      </Section>
-    </main>
+    <SideBar>
+      <main className={classNameFinal.join(' ')} {...rest} >
+        <Section name="Get in touch" >
+          <a className={getClassName('pages__link')} href="tel:+447867592615" rel="noopener noreferrer" target="_blank">
+            <SubSection name="Call +44 (0) 786759 2615" textClassName={getClassName('pages__link')} />
+          </a>
+          <a className={getClassName('pages__link')} href="mailto:g@georgegillams.co.uk" rel="noopener noreferrer" target="_blank">
+            <SubSection name="Email g@georgegillams.co.uk" textClassName={getClassName('pages__link')} />
+          </a>
+          <a className={getClassName('pages__link')} href="https://georgegillams.typeform.com/to/oBmiJZ" rel="noopener noreferrer" target="_blank">
+            <SubSection name="Contact me online" textClassName={getClassName('pages__link')} />
+          </a>
+        </Section>
+      </main>
+    </SideBar>
   );
 };
 // <div dangerouslySetInnerHTML={{ __html: thisIsMyCopy }} />

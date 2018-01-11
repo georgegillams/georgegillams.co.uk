@@ -21,6 +21,7 @@ const getClassName = className => STYLES[className] || 'UNKNOWN';
 
 import { colorGray700 } from 'bpk-tokens/tokens/base.es6';
 
+const mainLinkStyle = { color: '#3e9eeb', fontFamily: 'Neuton', fontWeight: 'bold' };
 const linkStyle = { color: colorGray700, fontFamily: 'Neuton' };
 
 class NavigationBar extends Component {
@@ -41,7 +42,8 @@ class NavigationBar extends Component {
 
       return (
         <div>
-          <Navbar light expand="sm" {...rest}>
+          <Navbar light expand="md" {...rest}>
+            {/* <NavbarBrand style={mainLinkStyle} href="/">&lt;G/&gt;</NavbarBrand> */}
             <NavbarToggler onClick={this.toggle} />
             <Collapse isOpen={this.state.isOpen} navbar>
               <Nav className="ml-auto" navbar>

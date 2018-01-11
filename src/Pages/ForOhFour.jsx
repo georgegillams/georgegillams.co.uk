@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import Section from '../components/Section';
+import SideBar from '../components/SideBar';
 
 import STYLES from './for-oh-four.scss';
 
@@ -13,14 +14,16 @@ const ForOhFour = (props) => {
   if (className) { classNameFinal.push(className); }
 
   return (
-    <main className={classNameFinal.join(' ')} {...rest} >
-      <Section
-        className={getClassName('for-oh-four__container')}
-        name="Oops."
-      >
+    <SideBar>
+      <main className={classNameFinal.join(' ')} {...rest} >
+        <Section
+          className={getClassName('for-oh-four__container')}
+          name="Oops."
+        >
         The page you&apos;re looking for just isn&apos;t here.
-      </Section>
-    </main>
+        </Section>
+      </main>
+    </SideBar>
   );
 };
 

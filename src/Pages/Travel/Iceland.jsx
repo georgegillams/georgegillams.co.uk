@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import BpkImage, { withLazyLoading, withLoadingBehavior } from 'bpk-component-image';
 import Section from './../../components/Section';
 import SubSection from './../../components/SubSection';
+import SideBar from '../../components/SideBar';
 import iceland0 from './images/iceland0.jpg';
 import iceland1 from './images/iceland1.jpg';
 import iceland2 from './images/iceland2.jpg';
@@ -21,16 +22,18 @@ const Iceland = (props) => {
   if (className) { classNameFinal.push(className); }
 
   return (
-    <main className={classNameFinal.join(' ')} {...rest} >
-      <Section name="Iceland  🛥 January 2018" >
-        <a className={getClassName('pages__link')} href="https://flic.kr/s/aHskqS4GoZ" rel="noopener noreferrer" target="_blank">
-          <SubSection name="See the full album on Flickr →" textClassName={getClassName('pages__link')} />
-          <FadingLazyLoadedImage className={getClassName('pages__image')} altText="Overlooking the harbour" width={3} height={2} src={iceland2} />
-          <FadingLazyLoadedImage className={getClassName('pages__image')} altText="Overlooking the harbour" width={3} height={2} src={iceland1} />
-          <FadingLazyLoadedImage className={getClassName('pages__image')} altText="Overlooking the harbour" width={2} height={3} src={iceland3} />
-        </a>
-      </Section>
-    </main>
+    <SideBar>
+      <main className={classNameFinal.join(' ')} {...rest} >
+        <Section name="Iceland  🛥 January 2018" >
+          <a className={getClassName('pages__link')} href="https://flic.kr/s/aHskqS4GoZ" rel="noopener noreferrer" target="_blank">
+            <SubSection name="See the full album on Flickr →" textClassName={getClassName('pages__link')} />
+            <FadingLazyLoadedImage className={getClassName('pages__image')} altText="Overlooking the harbour" width={3} height={2} src={iceland2} />
+            <FadingLazyLoadedImage className={getClassName('pages__image')} altText="Overlooking the harbour" width={3} height={2} src={iceland1} />
+            <FadingLazyLoadedImage className={getClassName('pages__image')} altText="Overlooking the harbour" width={2} height={3} src={iceland3} />
+          </a>
+        </Section>
+      </main>
+    </SideBar>
   );
 };
 

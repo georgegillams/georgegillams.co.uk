@@ -29,14 +29,18 @@
     }
   }
 
-  &__logo--base {
+  &__logo-base {
     display: inline-block;
     font-size: 1.6rem;
     color: $bpk-color-gray-700;
     font-family: 'Quattrocento Sans', sans-serif;
+
+    &--light {
+      color: $bpk-color-gray-100;
+    }
   }
 
-  &__logo--large {
+  &__logo-large {
     display: inline-block;
     font-size: 5.5rem;
     line-height: 6rem;
