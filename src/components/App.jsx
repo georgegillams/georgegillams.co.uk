@@ -23,6 +23,7 @@ import Degree from '../Pages/Documents/Degree';
 import Logo from './Logo';
 import PersonalDetails from './PersonalDetails';
 import NavigationBar from './NavigationBar';
+import blackwood from '../images/blackwood.jpg';
 
 import STYLES from './app.scss';
 
