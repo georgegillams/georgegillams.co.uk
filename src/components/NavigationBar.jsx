@@ -47,7 +47,7 @@ class NavigationBar extends Component {
               <Nav className="ml-auto" navbar>
                 <UncontrolledDropdown nav inNavbar>
                   <DropdownToggle style={linkStyle} nav caret>
-                    Articles
+                    Articles 📝
                   </DropdownToggle>
                   <DropdownMenu >
                     <NavItem>
@@ -60,7 +60,7 @@ class NavigationBar extends Component {
                 </UncontrolledDropdown>
                 <UncontrolledDropdown nav inNavbar>
                   <DropdownToggle style={linkStyle} nav caret>
-                    Travel
+                    Travel ✈️
                   </DropdownToggle>
                   <DropdownMenu >
                     <NavItem>
@@ -86,7 +86,7 @@ class NavigationBar extends Component {
                 </UncontrolledDropdown> */}
                 <UncontrolledDropdown nav inNavbar>
                   <DropdownToggle style={linkStyle} nav caret>
-                    Other stuff
+                    Other stuff 🤷‍♂️
                   </DropdownToggle>
                   <DropdownMenu >
                     <NavItem>
