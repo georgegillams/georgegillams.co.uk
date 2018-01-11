@@ -16,6 +16,7 @@
     "bpk-tokens": "^26.4.5",
     "dompurify": "^1.0.3",
     "react-helmet": "^5.2.0",
+    "react-navbar": "^1.0.0",
     "react-render-html": "^0.6.0",
     "react-router-dom": "^4.2.2",
     "webfontloader": "^1.6.28"
@@ -42,6 +43,7 @@
     "bpk-stylesheets": "^3.2.73",
     "gh-pages": "^1.1.0",
     "react": "^15.6.2",
-    "react-dom": "^15.6.2"
+    "react-dom": "^15.6.2",
+    "reactstrap": "^5.0.0-alpha.4"
   }
 }
