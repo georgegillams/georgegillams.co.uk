@@ -14,7 +14,7 @@ const getClassName = className => STYLES[className] || 'UNKNOWN';
 /* eslint-disable max-len */
 const HomePage = () => (
   <main>
-    <Slider
+    {/* <Slider
       dots
       infinite
       speed={500}
@@ -27,7 +27,7 @@ const HomePage = () => (
       <div><h3 /></div>
       <div><h3 /></div>
       <div><h3 /></div>
-    </Slider>
+    </Slider> */}
     <div className={getClassName('pages__home-page-tree')}>
       <div>
         <SubSection className={getClassName('pages__home-page-item')} name="Articles 📝">
