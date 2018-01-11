@@ -5,12 +5,13 @@ import {
   Switch,
 } from 'react-router-dom';
 import BpkText from 'bpk-component-text';
-import NavLayout from './NavLayout';
 
 // <editor-fold> Content Imports
 import HomePage from '../Pages/HomePage';
+import SiteMap from '../Pages/SiteMap';
 import SwitchToVim from '../Pages/Articles/SwitchToVim';
 import NetNeutrality from '../Pages/Articles/NetNeutrality';
+import MarkAustinOnAnorexiaNervosa from '../Pages/Articles/MarkAustinOnAnorexiaNervosa';
 import Longleat from '../Pages/Travel/Longleat';
 import Munich from '../Pages/Travel/Munich';
 import Iceland from '../Pages/Travel/Iceland';
@@ -29,25 +30,19 @@ import STYLES from './app.scss';
 
 const getClassName = className => STYLES[className] || 'UNKNOWN';
 
-const children1 = (
+const App = () => (
   <div>
-    <Logo />
-    {/* <ProfilePic /> */}
-    <PersonalDetails />
-    {/* <Navigation /> */}
-  </div>
-);
-
-const children2 = (
-  <BrowserRouter>
-    <div>
+    <NavigationBar />
+    <BrowserRouter>
       <Switch>
         <Route exact path="/" component={HomePage} />
+        {/* <Route path="/articles/anorexia-nervosa" component={MarkAustinOnAnorexiaNervosa} /> */}
         <Route path="/articles/net-neutrality" component={NetNeutrality} />
         <Route path="/articles/vim" component={SwitchToVim} />
         <Route path="/travel/longleat-2017" component={Longleat} />
         <Route path="/travel/munich-2017" component={Munich} />
         <Route path="/net-neutrality" component={NetNeutrality} />
+        <Route path="/site-map" component={SiteMap} />
         <Route path="/about" component={AboutMe} />
         <Route path="/travel/iceland-2018" component={Iceland} />
         <Route path="/engagement" component={Engagement} />
@@ -55,19 +50,7 @@ const children2 = (
         {/* <Route path="/documents/degree" component={Degree} /> */}
         <Route component={ForOhFour} />
       </Switch>
-    </div>
-  </BrowserRouter>
-);
-
-const App = () => (
-  <div>
-    {/* <div className={getClassName('app__download-button-container')}>
-        <a href="https://dl.dropbox.com/s/smcdcgitd4nog17/George%20Gillams%20CV.pdf?dl=0" className={getClassName('app_cv-link')}>
-          <BpkText className={getClassName('app__download-button')} textStyle="sm" >Grab my CV</BpkText>
-        </a>
-    </div> */}
-    <NavigationBar />
-    <NavLayout children1={children1} children2={children2} />
+    </BrowserRouter>
   </div>
 );
 

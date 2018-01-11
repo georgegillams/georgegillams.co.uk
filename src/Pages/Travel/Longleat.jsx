@@ -1,11 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import BpkText from 'bpk-component-text';
 import BpkImage, { withLazyLoading, withLoadingBehavior } from 'bpk-component-image';
 import Section from './../../components/Section';
 import SubSection from './../../components/SubSection';
-import netflixDownloads from './../../images/netflixDownloads.png';
-import ArticleDate from '../../components/ArticleDate';
+import SideBar from '../../components/SideBar';
 import longleatLight from './images/longleatLight.jpg';
 
 import STYLES from '../pages.scss';
@@ -22,14 +20,16 @@ const Longleat = (props) => {
   if (className) { classNameFinal.push(className); }
 
   return (
-    <main className={classNameFinal.join(' ')} {...rest} >
-      <Section name="Longleat 🦁 Christmas 2017" >
-        <a className={getClassName('pages__link')} href="https://flic.kr/s/aHsktEsk1b" rel="noopener noreferrer" target="_blank">
-          <SubSection name="See the full album on Flickr →" textClassName={getClassName('pages__link')} />
-          <FadingLazyLoadedImage className={getClassName('pages__image')} altText="Longleat Festival of Light" width={2514} height={1676} src={longleatLight} />
-        </a>
-      </Section>
-    </main>
+    <SideBar>
+      <main className={classNameFinal.join(' ')} {...rest} >
+        <Section name="Longleat 🦁 Christmas 2017" >
+          <a className={getClassName('pages__link')} href="https://flic.kr/s/aHsktEsk1b" rel="noopener noreferrer" target="_blank">
+            <SubSection name="See the full album on Flickr →" textClassName={getClassName('pages__link')} />
+            <FadingLazyLoadedImage className={getClassName('pages__image')} altText="Longleat Festival of Light" width={2514} height={1676} src={longleatLight} />
+          </a>
+        </Section>
+      </main>
+    </SideBar>
   );
 };
 
