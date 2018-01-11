@@ -44,9 +44,13 @@ const PersonalDetails = (props) => {
         <Section className={textClassNameFinal.join(' ')} name="">
             Open-source Software Engineer at {skyscanner}.
             <br />
+          <br />
             Masters student at {southampton}.
             <br />
+          <br />
            Based in London.
+            <br />
+          <br />
         </Section>
       </div>
     </div>
