@@ -65,6 +65,10 @@
   }
 
   &__banner-container {
+      display: flex;
+      width: 100%;
+      flex-direction: row;
+      justify-content: space-around;
       padding-top: 2rem;
       padding-left: 1rem;
   }
