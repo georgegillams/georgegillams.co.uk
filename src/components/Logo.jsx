@@ -11,21 +11,24 @@ const documentIfExists = typeof window !== 'undefined' ? document : null;
 const FadingLazyLoadedImage = withLoadingBehavior(withLazyLoading(BpkImage, documentIfExists));
 
 const ProfilePic = (props) => {
-  const { className, ...rest } = props;
+  const { className, light, ...rest } = props;
   const classNameFinal = [getClassName('logo__container')];
   if (className) { classNameFinal.push(className); }
+
+  const baseTextClassNameFinal = [getClassName('logo__logo-base')];
+  if (light) { baseTextClassNameFinal.push(getClassName('logo__logo-base--light')); }
 
   return (
     <div className={classNameFinal.join(' ')} {...rest} >
       <a href="/">
-        <BpkText textStyle="xxl" className={getClassName('logo__logo--large')} >
+        <BpkText textStyle="xxl" className={getClassName('logo__logo-large')} >
           {'<G/>'}
         </BpkText>
         <br />
       </a>
       <a href="/">
         <br />
-        <BpkText textStyle="lg" className={getClassName('logo__logo--base')} >
+        <BpkText textStyle="lg" className={baseTextClassNameFinal.join(' ')} >
           {'George Gillams'}
         </BpkText>
       </a>
@@ -35,10 +38,12 @@ const ProfilePic = (props) => {
 
 ProfilePic.propTypes = {
   className: PropTypes.string,
+  light: PropTypes.bool,
 };
 
 ProfilePic.defaultProps = {
   className: null,
+  light: false,
 };
 
 export default ProfilePic;
