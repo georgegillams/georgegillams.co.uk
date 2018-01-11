@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
+import GetSocial from './GetSocial';
 import Logo from './Logo';
 import PersonalDetails from './PersonalDetails';
 
@@ -21,6 +22,7 @@ const SideBar = (props) => {
         <span className={getClassName('side-bar__nav-col')}>
           <Logo />
           <PersonalDetails />
+          <GetSocial />
         </span>
         <span className={getClassName('side-bar__content-col')}>
           {children}

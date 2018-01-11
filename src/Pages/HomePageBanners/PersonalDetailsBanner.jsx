@@ -1,5 +1,6 @@
 import React from 'react';
 import Logo from '../../components/Logo';
+import PersonalDetails from '../../components/PersonalDetails';
 import NoSideBar from '../../components/NoSideBar';
 import blackwood from '../../images/blackwood.jpg';
 
@@ -15,6 +16,7 @@ const PersonalDetailsBanner = () => (
         <NoSideBar>
           <div className={getClassName('pages__banner-container')}>
             <Logo light />
+            <PersonalDetails light />
           </div>
         </NoSideBar>
       </div>

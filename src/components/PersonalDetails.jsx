@@ -1,16 +1,18 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import BpkText from 'bpk-component-text';
-import GetSocial from './GetSocial';
+import Section from './Section';
 
 import STYLES from './personal-details.scss';
 
 const getClassName = className => STYLES[className] || 'UNKNOWN';
 
 const PersonalDetails = (props) => {
-  const { className, ...rest } = props;
+  const { className, light, ...rest } = props;
   const classNameFinal = [getClassName('personal-details__container')];
   if (className) { classNameFinal.push(className); }
+
+  const textClassNameFinal = [];
+  if (light) textClassNameFinal.push(getClassName('personal-details__section--light'));
 
   const southampton = (
     <a className={`${getClassName('personal-details__link')} ${getClassName('personal-details__link--southampton-blue')}`} href="https://www.ecs.soton.ac.uk/programmes/g600-meng-software-engineering-4-yrs#modules" rel="noopener noreferrer" target="_blank" >
@@ -21,12 +23,6 @@ const PersonalDetails = (props) => {
   const skyscanner = (
     <a className={`${getClassName('personal-details__link')} ${getClassName('personal-details__link--skyscanner-blue')}`} href="https://github.com/Skyscanner" rel="noopener noreferrer" target="_blank" >
       Skyscanner
-    </a>
-  );
-
-  const phone = (
-    <a className={getClassName('personal-details__link')} href="tel:+447867592615" rel="noopener noreferrer" target="_blank" >
-      +44 (0) 786759 2615
     </a>
   );
 
@@ -45,18 +41,13 @@ const PersonalDetails = (props) => {
   return (
     <div className={classNameFinal.join(' ')} {...rest} >
       <div className={getClassName('personal-details__section')}>
-        <BpkText tagName="h3" textStyle="base">
+        <Section className={textClassNameFinal.join(' ')} name="">
             Open-source Software Engineer at {skyscanner}.
             <br />
             Masters student at {southampton}.
             <br />
            Based in London.
-        </BpkText>
-      </div>
-      <div className={getClassName('personal-details__section')}>
-        <GetSocial >
-          {phone}
-        </GetSocial>
+        </Section>
       </div>
     </div>
   );
@@ -64,10 +55,12 @@ const PersonalDetails = (props) => {
 
 PersonalDetails.propTypes = {
   className: PropTypes.string,
+  light: PropTypes.bool,
 };
 
 PersonalDetails.defaultProps = {
   className: null,
+  light: false,
 };
 
 export default PersonalDetails;
