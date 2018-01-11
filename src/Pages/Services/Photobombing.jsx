@@ -1,11 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import BpkText from 'bpk-component-text';
 import BpkImage, { withLazyLoading, withLoadingBehavior } from 'bpk-component-image';
 import Section from './../../components/Section';
 import SubSection from './../../components/SubSection';
-import netflixDownloads from './../../images/netflixDownloads.png';
-import ArticleDate from '../../components/ArticleDate';
 import sealPhotobomb from './images/sealPhotobomb.jpg';
 
 import STYLES from '../pages.scss';

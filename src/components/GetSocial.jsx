@@ -18,13 +18,18 @@ const getClassName = className => STYLES[className] || 'UNKNOWN';
 // const FadingLazyLoadedImage = withLoadingBehavior(withLazyLoading(BpkImage, documentIfExists));
 
 const GetSocial = (props) => {
-  const { className, children, ...rest } = props;
+  const {
+    className, children, alwaysCentered, ...rest
+  } = props;
   const outerClassNameFinal = [];
   if (className) { outerClassNameFinal(className); }
 
+  const containerClassNameFinal = [getClassName('get-social__container')];
+  if (alwaysCentered) { containerClassNameFinal.push(getClassName('get-social__container--centered')); }
+
   return (
     <div className={outerClassNameFinal.join(' ')} {...rest} >
-      <div className={getClassName('get-social__container')} style={{ paddingBottom: '0.4rem' }}>
+      <div className={containerClassNameFinal.join(' ')} style={{ paddingBottom: '0.4rem' }}>
         <a className={getClassName('get-social__link')} href="https://github.com/georgegillams/" rel="noopener noreferrer" target="_blank">
           <img alt="github" width={5} height={5} className={getClassName('get-social__icon')} src={githubIcon} />
         </a>
@@ -41,7 +46,7 @@ const GetSocial = (props) => {
           <img alt="flickr" width={5} height={5} className={getClassName('get-social__icon')} src={flickrIcon} />
         </a>
       </div>
-      <div className={getClassName('get-social__container')} >
+      <div className={containerClassNameFinal.join(' ')} >
         <a className={getClassName('get-social__link')} href="https://www.dropbox.com/request/Xin5hG6X6zX2z94VLJJm" rel="noopener noreferrer" target="_blank">
           <img alt="dropbox" width={5} height={5} className={getClassName('get-social__icon')} src={dropboxIcon} />
         </a>
@@ -61,10 +66,12 @@ const GetSocial = (props) => {
 
 GetSocial.propTypes = {
   className: PropTypes.string,
+  alwaysCentered: PropTypes.bool,
 };
 
 GetSocial.defaultProps = {
   className: null,
+  alwaysCentered: false,
 };
 
 export default GetSocial;
