@@ -69,7 +69,14 @@
       padding-top: 2rem;
       padding-left: 1rem;
 
-    &--spread {
+    &--vertical-spread {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        height: 22rem;
+    }
+
+    &--horizontal-spread {
         display: flex;
         flex-direction: row;
         justify-content: space-around;
