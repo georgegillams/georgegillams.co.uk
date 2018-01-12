@@ -14,7 +14,7 @@ const PersonalDetailsBanner = () => (
     <div className={getClassName('pages__banner-image')} style={{ backgroundImage: `url(${blackwood})` }} >
       <div>
         <NoSideBar>
-          <div className={`${getClassName('pages__banner-container')} ${getClassName('pages__banner-container--spread')}`}>
+          <div className={`${getClassName('pages__banner-container')} ${getClassName('pages__banner-container--vertical-spread')}`}>
             <Logo alwaysCentered light />
           </div>
         </NoSideBar>
