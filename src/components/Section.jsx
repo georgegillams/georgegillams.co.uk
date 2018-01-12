@@ -18,16 +18,18 @@ const Section = (props) => {
 
   return (
     <div className={classNameFinal.join(' ')} {...rest}>
-      <BpkText tagName="h2" textStyle="xxl" className={textClassNameFinal.join(' ')}>
-        {name}
-      </BpkText>
+      {name &&
+        <BpkText tagName="h2" textStyle="xxl" className={textClassNameFinal.join(' ')}>
+          {name}
+        </BpkText>
+      }
       {children}
     </div>
   );
 };
 
 Section.propTypes = {
-  name: PropTypes.string.isRequired,
+  name: PropTypes.string,
   className: PropTypes.string,
   textClassName: PropTypes.string,
   style: PropTypes.style,

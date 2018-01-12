@@ -12,6 +12,7 @@ import STYLES from './pages.scss';
 const getClassName = className => STYLES[className] || 'UNKNOWN';
 
 /* eslint-disable max-len */
+// autoplay
 const HomePage = () => (
   <main>
     <Slider
@@ -20,7 +21,6 @@ const HomePage = () => (
       speed={500}
       slidesToShow={1}
       slidesToScroll={1}
-      autoplay
       autoplaySpeed={10000}
     >
       <div><PersonalDetailsBanner /></div>

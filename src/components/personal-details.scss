@@ -20,25 +20,25 @@
   &__container {
     display: flex;
     flex-direction: column;
-    // min-width: 15rem;
+    font-family: 'Neuton', serif;
+    max-width: 12.5rem;
+    padding: 1rem 0;
 
     @include bpk-breakpoint-tablet {
       align-items: center;
+      text-align: center;
+    }
+
+    &--centralised-spread {
+        // flex-direction: row;
+        justify-content: space-around;
+        min-width: 100%;
+      align-items: center;
+      text-align: center;
     }
   }
 
   &__section {
-    display: flex;
-    padding: 1rem 0;
-    flex-direction: column;
-    font-family: 'Neuton', serif;
-    max-width: 12.5rem;
-
-    @include bpk-breakpoint-tablet {
-      text-align: center;
-      align-items: center;
-    }
-
     &--light {
         color: $bpk-color-gray-100;
     }
