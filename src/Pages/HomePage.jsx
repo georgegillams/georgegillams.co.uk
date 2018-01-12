@@ -5,6 +5,7 @@ import GetSocial from '../components/GetSocial';
 import PersonalDetailsBanner from './HomePageBanners/PersonalDetailsBanner';
 import IcelandBanner from './HomePageBanners/IcelandBanner';
 import NetNeutralityBanner from './HomePageBanners/NetNeutralityBanner';
+import MunichBanner from './HomePageBanners/MunichBanner';
 
 import STYLES from './pages.scss';
 
@@ -25,6 +26,7 @@ const HomePage = () => (
       <div><PersonalDetailsBanner /></div>
       <div><IcelandBanner /></div>
       <div><NetNeutralityBanner /></div>
+      <div><MunichBanner /></div>
     </Slider>
     <br />
     <br />
