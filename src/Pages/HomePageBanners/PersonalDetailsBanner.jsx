@@ -16,6 +16,7 @@ const PersonalDetailsBanner = () => (
         <NoSideBar>
           <div className={`${getClassName('pages__banner-container')} ${getClassName('pages__banner-container--vertical-spread')}`}>
             <Logo alwaysCentered light />
+            <PersonalDetails centralisedSpread light />
           </div>
         </NoSideBar>
       </div>

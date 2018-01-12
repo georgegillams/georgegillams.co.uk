@@ -7,11 +7,14 @@ import STYLES from './personal-details.scss';
 const getClassName = className => STYLES[className] || 'UNKNOWN';
 
 const PersonalDetails = (props) => {
-  const { className, light, ...rest } = props;
+  const {
+    className, centralisedSpread, light, ...rest
+  } = props;
   const classNameFinal = [getClassName('personal-details__container')];
+  if (centralisedSpread) { classNameFinal.push(getClassName('personal-details__container--centralised-spread')); }
   if (className) { classNameFinal.push(className); }
 
-  const textClassNameFinal = [];
+  const textClassNameFinal = [getClassName('personal-details__section')];
   if (light) textClassNameFinal.push(getClassName('personal-details__section--light'));
 
   const southampton = (
@@ -40,19 +43,16 @@ const PersonalDetails = (props) => {
 
   return (
     <div className={classNameFinal.join(' ')} {...rest} >
-      <div className={getClassName('personal-details__section')}>
-        <Section className={textClassNameFinal.join(' ')} name="">
+      <Section className={textClassNameFinal.join(' ')} noTitle>
             Open-source Software Engineer at {skyscanner}.
-            <br />
-          <br />
+      </Section>
+      <Section className={textClassNameFinal.join(' ')} noTitle>
             Masters student at {southampton}.
-            <br />
-          <br />
+      </Section>
+      <Section className={textClassNameFinal.join(' ')} noTitle>
            Based in London.
-            <br />
-          <br />
-        </Section>
-      </div>
+      </Section>
+      <Section className={textClassNameFinal.join(' ')} noTitle />
     </div>
   );
 };
@@ -60,11 +60,13 @@ const PersonalDetails = (props) => {
 PersonalDetails.propTypes = {
   className: PropTypes.string,
   light: PropTypes.bool,
+  centralisedSpread: PropTypes.bool,
 };
 
 PersonalDetails.defaultProps = {
   className: null,
   light: false,
+  centralisedSpread: false,
 };
 
 export default PersonalDetails;
