@@ -38,20 +38,20 @@ const App = () => (
     <BrowserRouter>
       <Switch>
         <Route exact path="/" component={HomePage} />
+        <Route path="/about/engagement" component={Engagement} />
         {/* <Route path="/articles/anorexia-nervosa" component={MarkAustinOnAnorexiaNervosa} /> */}
         <Route path="/articles/net-neutrality" component={NetNeutrality} />
         <Route path="/articles/vim" component={SwitchToVim} />
         <Route path="/travel/longleat-2017" component={Longleat} />
         <Route path="/travel/munich-2017" component={Munich} />
+        <Route path="/travel/iceland-2018" component={Iceland} />
+        {/* <Route path="/documents/degree" component={Degree} /> */}
         <Route path="/net-neutrality" component={NetNeutrality} />
         <Route path="/site-map" component={SiteMap} />
-        <Route path="/about" component={AboutMe} />
         <Route path="/travel" component={Travel} />
         <Route path="/articles" component={Articles} />
-        <Route path="/travel/iceland-2018" component={Iceland} />
-        <Route path="/engagement" component={Engagement} />
+        <Route path="/about" component={AboutMe} />
         <Route path="/contact" component={Contact} />
-        {/* <Route path="/documents/degree" component={Degree} /> */}
         <Route component={ForOhFour} />
       </Switch>
     </BrowserRouter>

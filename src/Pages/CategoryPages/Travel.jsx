@@ -1,33 +1,21 @@
 import React from 'react';
 import SideBar from '../../components/SideBar';
-import SubSection from '../../components/SubSection';
+import Card from '../../components/Card';
+import iceland from '../Travel/images/iceland2.jpg';
+import longleat from '../Travel/images/longleatLight.jpg';
+import munich from '../Travel/images/munich.jpg';
 
 import STYLES from '../pages.scss';
 
 const getClassName = className => STYLES[className] || 'UNKNOWN';
 
 /* eslint-disable max-len */
-const SiteMap = () => (
+const Travel = () => (
   <SideBar>
-    <div className={getClassName('pages__site-map-tree')}>
-      <div>
-        <SubSection className={getClassName('pages__site-map-item')} name="Travel ✈️">
-          {/* <a className={getClassName('pages__link')} href="https://flic.kr/s/aHsm9VxHMV"> */}
-          <a className={getClassName('pages__link')} href="/travel/iceland-2018">
-          Iceland
-          </a>
-          <br />
-          <a className={getClassName('pages__link')} href="/travel/longleat-2017">
-          Longleat
-          </a>
-          <br />
-          <a className={getClassName('pages__link')} href="/travel/munich-2017">
-          Munich
-          </a>
-        </SubSection>
-      </div>
-    </div>
+    <Card className={getClassName('pages__card')} imageSrc={iceland} linkUrl="/travel/iceland-2018" title="Iceland 2018" />
+    <Card className={getClassName('pages__card')} imageSrc={longleat} linkUrl="/travel/longleat-2017" title="Longleat 2017" />
+    <Card className={getClassName('pages__card')} imageSrc={munich} linkUrl="/travel/munich-2017" title="Munich 2017" />
   </SideBar>
 );
 
-export default SiteMap;
+export default Travel;

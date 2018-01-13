@@ -1,28 +1,21 @@
 import React from 'react';
 import SideBar from '../../components/SideBar';
-import SubSection from '../../components/SubSection';
+import Card from '../../components/Card';
+import iceland from '../Travel/images/iceland2.jpg';
+import netNeutrality from '../Articles/images/netNeutrality.jpg';
+import vim from '../Articles/images/vim.jpg';
 
 import STYLES from '../pages.scss';
 
 const getClassName = className => STYLES[className] || 'UNKNOWN';
 
 /* eslint-disable max-len */
-const SiteMap = () => (
+const Articles = () => (
   <SideBar>
-    <div className={getClassName('pages__site-map-tree')}>
-      <div>
-        <SubSection className={getClassName('pages__site-map-item')} name="Articles 📝">
-          <a className={getClassName('pages__link')} href="/articles/vim">
-          Switching to Vim
-          </a>
-          <br />
-          <a className={getClassName('pages__link')} href="/articles/net-neutrality">
-          My Take on Net Neutrality
-          </a>
-        </SubSection>
-      </div>
-    </div>
+    <Card className={getClassName('pages__card')} imageSrc={netNeutrality} linkUrl="/articles/net-neutrality" title="My Take on Net Neutrality" />
+    <Card className={getClassName('pages__card')} imageSrc={vim} linkUrl="/articles/vim" title="Switching to Vim" />
   </SideBar>
 );
 
-export default SiteMap;
+export default Articles;
+
