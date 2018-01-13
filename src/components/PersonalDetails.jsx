@@ -17,14 +17,17 @@ const PersonalDetails = (props) => {
   const textClassNameFinal = [getClassName('personal-details__section')];
   if (light) textClassNameFinal.push(getClassName('personal-details__section--light'));
 
+  const linkTextClassNameFinal = [getClassName('personal-details__link')];
+  if (light) linkTextClassNameFinal.push(getClassName('personal-details__link--light'));
+
   const southampton = (
-    <a className={`${getClassName('personal-details__link')} ${getClassName('personal-details__link--southampton-blue')}`} href="https://www.ecs.soton.ac.uk/programmes/g600-meng-software-engineering-4-yrs#modules" rel="noopener noreferrer" target="_blank" >
+    <a className={linkTextClassNameFinal.join(' ')} href="https://www.ecs.soton.ac.uk/programmes/g600-meng-software-engineering-4-yrs#modules" rel="noopener noreferrer" target="_blank" >
       Southampton
     </a>
   );
 
   const skyscanner = (
-    <a className={`${getClassName('personal-details__link')} ${getClassName('personal-details__link--skyscanner-blue')}`} href="https://github.com/Skyscanner" rel="noopener noreferrer" target="_blank" >
+    <a className={linkTextClassNameFinal.join(' ')} href="https://github.com/Skyscanner" rel="noopener noreferrer" target="_blank" >
       Skyscanner
     </a>
   );

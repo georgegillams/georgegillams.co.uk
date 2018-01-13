@@ -13,6 +13,8 @@ import SwitchToVim from '../Pages/Articles/SwitchToVim';
 import NetNeutrality from '../Pages/Articles/NetNeutrality';
 import MarkAustinOnAnorexiaNervosa from '../Pages/Articles/MarkAustinOnAnorexiaNervosa';
 import Longleat from '../Pages/Travel/Longleat';
+import Travel from '../Pages/CategoryPages/Travel';
+import Articles from '../Pages/CategoryPages/Articles';
 import Munich from '../Pages/Travel/Munich';
 import Iceland from '../Pages/Travel/Iceland';
 import Photobombing from '../Pages/Services/Photobombing';
@@ -44,6 +46,8 @@ const App = () => (
         <Route path="/net-neutrality" component={NetNeutrality} />
         <Route path="/site-map" component={SiteMap} />
         <Route path="/about" component={AboutMe} />
+        <Route path="/travel" component={Travel} />
+        <Route path="/articles" component={Articles} />
         <Route path="/travel/iceland-2018" component={Iceland} />
         <Route path="/engagement" component={Engagement} />
         <Route path="/contact" component={Contact} />

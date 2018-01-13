@@ -15,6 +15,7 @@ const getClassName = className => STYLES[className] || 'UNKNOWN';
 const HomePage = () => (
   <main>
     <Slider
+      className={getClassName('pages__slider')}
       dots
       infinite
       speed={500}
