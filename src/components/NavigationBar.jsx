@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
+import SubSection from './SubSection';
+import NavigationItem from './NavigationItem';
 import {
   Collapse,
   Navbar,
@@ -15,7 +17,7 @@ import {
   Button,
 } from 'reactstrap';
 
-import STYLES from './section.scss';
+import STYLES from './navigation-bar.scss';
 
 const getClassName = className => STYLES[className] || 'UNKNOWN';
 
@@ -35,73 +37,18 @@ class NavigationBar extends Component {
       this.setState({ isOpen: !this.state.isOpen });
     }
 
+  // <SubSection clasName={getClassName('navigation-bar__item')} name="TEST" />
     render() {
       const { className, ...rest } = this.props;
-      const outerClassNameFinal = [];
+      const outerClassNameFinal = [getClassName('navigation-bar__bar')];
       if (className) { outerClassNameFinal(className); }
 
       return (
-        <div>
-          <Navbar light expand="md" {...rest}>
-            {/* <NavbarBrand style={mainLinkStyle} href="/">&lt;G/&gt;</NavbarBrand> */}
-            <NavbarToggler onClick={this.toggle} />
-            <Collapse isOpen={this.state.isOpen} navbar>
-              <Nav className="ml-auto" navbar>
-                <UncontrolledDropdown nav inNavbar>
-                  <DropdownToggle style={linkStyle} nav caret>
-                    Articles 📝
-                  </DropdownToggle>
-                  <DropdownMenu >
-                    <NavItem>
-                      <NavLink style={linkStyle} href="/articles/vim/">Switching to Vim</NavLink>
-                    </NavItem>
-                    <NavItem>
-                      <NavLink style={linkStyle} href="/articles/net-neutrality/">My Take on Net Neutrality</NavLink>
-                    </NavItem>
-                  </DropdownMenu>
-                </UncontrolledDropdown>
-                <UncontrolledDropdown nav inNavbar>
-                  <DropdownToggle style={linkStyle} nav caret>
-                    Travel ✈️
-                  </DropdownToggle>
-                  <DropdownMenu >
-                    <NavItem>
-                      <NavLink style={linkStyle} href="/travel/iceland-2018/">Iceland</NavLink>
-                    </NavItem>
-                    <NavItem>
-                      <NavLink style={linkStyle} href="/travel/longleat-2017/">Longleat</NavLink>
-                    </NavItem>
-                    <NavItem>
-                      <NavLink style={linkStyle} href="/travel/munich-2017/">Munich</NavLink>
-                    </NavItem>
-                  </DropdownMenu>
-                </UncontrolledDropdown>
-                {/* <UncontrolledDropdown nav inNavbar>
-                  <DropdownToggle style={linkStyle} nav caret>
-                    Documents
-                  </DropdownToggle>
-                  <DropdownMenu >
-                    <NavItem>
-                      <NavLink style={linkStyle} href="/documents/degree/">Degree Certificate</NavLink>
-                    </NavItem>
-                  </DropdownMenu>
-                </UncontrolledDropdown> */}
-                <UncontrolledDropdown nav inNavbar>
-                  <DropdownToggle style={linkStyle} nav caret>
-                    Other stuff 🤷‍♂️
-                  </DropdownToggle>
-                  <DropdownMenu >
-                    <NavItem>
-                      <NavLink style={linkStyle} href="/about">About me</NavLink>
-                    </NavItem>
-                    <NavItem>
-                      <NavLink style={linkStyle} href="/contact">Contact</NavLink>
-                    </NavItem>
-                  </DropdownMenu>
-                </UncontrolledDropdown>
-              </Nav>
-            </Collapse>
-          </Navbar>
+        <div className={outerClassNameFinal.join(' ')} {...rest}>
+          <NavigationItem className={getClassName('navigation-bar__nav-item')} name="Articles" linkUrl="/articles" />
+          <NavigationItem className={getClassName('navigation-bar__nav-item')} name="Travel" linkUrl="/travel" />
+          <NavigationItem className={getClassName('navigation-bar__nav-item')} name="About" linkUrl="/about" />
+          <NavigationItem className={getClassName('navigation-bar__nav-item')} name="Contact" linkUrl="/contact" />
         </div>
       );
     }
