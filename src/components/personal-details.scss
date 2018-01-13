@@ -39,12 +39,16 @@
   }
 
   &__section {
+    color: $bpk-color-gray-700;
+    text-decoration: none;
+
     &--light {
         color: $bpk-color-gray-100;
     }
   }
 
   &__link {
+    font-style: italic;
     color: $bpk-color-gray-700;
     text-decoration: none;
 
@@ -53,12 +57,8 @@
       text-decoration: none;
     }
 
-  &--skyscanner-blue {
-      color: $bpk-color-blue-500;
-  }
-
-  &--southampton-blue {
-      color: rgb(0,92,133);
-  }
+    &--light {
+        color: $bpk-color-gray-100;
+    }
   }
 }
