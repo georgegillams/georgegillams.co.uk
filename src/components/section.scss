@@ -41,6 +41,14 @@
     color: $bpk-color-gray-700;
       padding-bottom: .4rem;
       font-family: 'Quattrocento Sans', sans-serif;
+
+    &--no-padding {
+        padding:0;
+    }
+    }
+
+    &--no-padding {
+        padding:0;
     }
   }
 }
