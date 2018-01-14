@@ -4,12 +4,15 @@ import BpkImage, { withLazyLoading, withLoadingBehavior } from 'bpk-component-im
 import Section from './../../components/Section';
 import SubSection from './../../components/SubSection';
 import SideBar from '../../components/SideBar';
+import Comments from '../../components/Comments';
 import iceland0 from './images/iceland0.jpg';
 import iceland1 from './images/iceland1.jpg';
 import iceland2 from './images/iceland2.jpg';
 import iceland3 from './images/iceland3.jpg';
 
 import STYLES from '../pages.scss';
+
+const PAGE_ID = 927581;
 
 const getClassName = className => STYLES[className] || 'UNKNOWN';
 const documentIfExists = typeof window !== 'undefined' ? document : null;
@@ -32,6 +35,7 @@ const Iceland = (props) => {
             <FadingLazyLoadedImage className={getClassName('pages__image')} altText="Overlooking the harbour" width={2} height={3} src={iceland3} />
           </a>
         </Section>
+        <Comments pageId={PAGE_ID} />
       </main>
     </SideBar>
   );
