@@ -8,6 +8,7 @@ import BpkText from 'bpk-component-text';
 
 // <editor-fold> Content Imports
 import HomePage from '../Pages/HomePage';
+import Work from '../Pages/Work';
 import SiteMap from '../Pages/SiteMap';
 import SwitchToVim from '../Pages/Articles/SwitchToVim';
 import NetNeutrality from '../Pages/Articles/NetNeutrality';
@@ -48,6 +49,7 @@ const App = () => (
         {/* <Route path="/documents/degree" component={Degree} /> */}
         <Route path="/net-neutrality" component={NetNeutrality} />
         <Route path="/site-map" component={SiteMap} />
+        <Route path="/work" component={Work} />
         <Route path="/travel" component={Travel} />
         <Route path="/articles" component={Articles} />
         <Route path="/about" component={AboutMe} />
