@@ -33,31 +33,39 @@ import STYLES from './app.scss';
 
 const getClassName = className => STYLES[className] || 'UNKNOWN';
 
-const App = () => (
-  <div>
-    <NavigationBar />
-    <BrowserRouter>
-      <Switch>
-        <Route exact path="/" component={HomePage} />
-        <Route path="/about/engagement" component={Engagement} />
-        {/* <Route path="/articles/anorexia-nervosa" component={MarkAustinOnAnorexiaNervosa} /> */}
-        <Route path="/articles/net-neutrality" component={NetNeutrality} />
-        <Route path="/articles/vim" component={SwitchToVim} />
-        <Route path="/travel/longleat-2017" component={Longleat} />
-        <Route path="/travel/munich-2017" component={Munich} />
-        <Route path="/travel/iceland-2018" component={Iceland} />
-        {/* <Route path="/documents/degree" component={Degree} /> */}
-        <Route path="/net-neutrality" component={NetNeutrality} />
-        <Route path="/site-map" component={SiteMap} />
-        <Route path="/work" component={Work} />
-        <Route path="/travel" component={Travel} />
-        <Route path="/articles" component={Articles} />
-        <Route path="/about" component={AboutMe} />
-        <Route path="/contact" component={Contact} />
-        <Route component={ForOhFour} />
-      </Switch>
-    </BrowserRouter>
-  </div>
-);
+class App extends React.Component {
+  componentWillMount() {
+    document.getElementById('body').className = getClassName('app__body');
+  }
+
+  render() {
+    return (
+      <div>
+        <NavigationBar />
+        <BrowserRouter>
+          <Switch>
+            <Route exact path="/" component={HomePage} />
+            <Route path="/about/engagement" component={Engagement} />
+            {/* <Route path="/articles/anorexia-nervosa" component={MarkAustinOnAnorexiaNervosa} /> */}
+            <Route path="/articles/net-neutrality" component={NetNeutrality} />
+            <Route path="/articles/vim" component={SwitchToVim} />
+            <Route path="/travel/longleat-2017" component={Longleat} />
+            <Route path="/travel/munich-2017" component={Munich} />
+            <Route path="/travel/iceland-2018" component={Iceland} />
+            {/* <Route path="/documents/degree" component={Degree} /> */}
+            <Route path="/net-neutrality" component={NetNeutrality} />
+            <Route path="/site-map" component={SiteMap} />
+            <Route path="/work" component={Work} />
+            <Route path="/travel" component={Travel} />
+            <Route path="/articles" component={Articles} />
+            <Route path="/about" component={AboutMe} />
+            <Route path="/contact" component={Contact} />
+            <Route component={ForOhFour} />
+          </Switch>
+        </BrowserRouter>
+      </div>
+    );
+  }
+}
 
 export default App;

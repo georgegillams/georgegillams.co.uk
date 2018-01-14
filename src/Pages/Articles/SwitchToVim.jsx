@@ -5,11 +5,13 @@ import Section from './../../components/Section';
 import SubSection from './../../components/SubSection';
 import ArticleDate from '../../components/ArticleDate';
 import SideBar from '../../components/SideBar';
+import Comments from '../../components/Comments';
 
 // import STYLES from '../pages.scss';
 //
 // const getClassName = className => STYLES[className] || 'UNKNOWN';
-const dateWritten = new Date(2017, 11, 23, 14, 3, 0);
+const DATE_WRITTEN = new Date(2017, 11, 23, 14, 3, 0);
+const BLOG_ID = 729471;
 
 /* eslint-disable max-len */
 const SwitchToVim = (props) => {
@@ -21,7 +23,7 @@ const SwitchToVim = (props) => {
     <SideBar>
       <main className={classNameFinal.join(' ')} {...rest} >
         <Section name="Switching to Vim">
-          <ArticleDate date={dateWritten} />
+          <ArticleDate date={DATE_WRITTEN} />
           <SubSection name="Why I did it">
 	It started with the classic situation of knowing someone at work who is some sort of Vim jedi. I was in awe of his workflow since I arrived, and soon decided that if I could dance around my code like he does I&apos;d be able to achieve far more with every hour in my day. As I&apos;m currently juggling a Masters, a part-time Software Engineering job, and going on more holidays than the average student, that seemed a nice prospect. Maybe I&apos;d even find enough save myself enough time to start contributing to Mozilla, which I&apos;ve been trying to fit in for a while!
           </SubSection>
@@ -37,6 +39,7 @@ const SwitchToVim = (props) => {
             </SubSection>
           </SubSection>
         </Section>
+        <Comments blogId={BLOG_ID} />
       </main>
     </SideBar>
   );
