@@ -8,17 +8,18 @@ const getClassName = className => STYLES[className] || 'UNKNOWN';
 
 const SubSection = (props) => {
   const {
-    name, className, noPadding, textClassName, children, ...rest
+    light, name, className, noPadding, textClassName, children, ...rest
   } = props;
 
   const classNameFinal = [getClassName('section__sub-section')];
-  if (className) { classNameFinal.push(className); }
   const textClassNameFinal = [getClassName('section__sub-section--text')];
-  if (textClassName) { textClassNameFinal.push(textClassName); }
+  if (light) { textClassNameFinal.push(getClassName('section__sub-section--text--light')); }
   if (noPadding) {
     classNameFinal.push(getClassName('section__sub-section--no-padding'));
     textClassNameFinal.push(getClassName('section__sub-section--text--no-padding'));
   }
+  if (className) { classNameFinal.push(className); }
+  if (textClassName) { textClassNameFinal.push(textClassName); }
 
   return (
     <div className={classNameFinal.join(' ')} {...rest}>

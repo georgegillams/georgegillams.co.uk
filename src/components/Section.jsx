@@ -8,12 +8,17 @@ const getClassName = className => STYLES[className] || 'UNKNOWN';
 
 const Section = (props) => {
   const {
-    name, className, textClassName, children, ...rest
+    light, noPadding, name, className, textClassName, children, ...rest
   } = props;
 
   const classNameFinal = [getClassName('section__section')];
-  if (className) { classNameFinal.push(className); }
   const textClassNameFinal = [getClassName('section__section--text')];
+  if (light) { textClassNameFinal.push(getClassName('section__section--text--light')); }
+  if (noPadding) {
+    classNameFinal.push(getClassName('section__sub-section--no-padding'));
+    textClassNameFinal.push(getClassName('section__sub-section--text--no-padding'));
+  }
+  if (className) { classNameFinal.push(className); }
   if (textClassName) { textClassNameFinal.push(textClassName); }
 
   return (
