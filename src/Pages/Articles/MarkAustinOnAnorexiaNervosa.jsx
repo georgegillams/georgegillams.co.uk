@@ -141,7 +141,6 @@ const NetNeutrality = (props) => {
             />
           </SubSection>
         </Section>
-        <Comments blogId={BLOG_ID} />
       </main>
     </SideBar>
   );
