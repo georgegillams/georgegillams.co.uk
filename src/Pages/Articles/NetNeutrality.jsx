@@ -7,13 +7,15 @@ import SubSection from './../../components/SubSection';
 import netflixDownloads from './images/netflixDownloads.png';
 import ArticleDate from '../../components/ArticleDate';
 import SideBar from '../../components/SideBar';
+import Comments from '../../components/Comments';
 
 // import STYLES from '../pages.scss';
 //
 // const getClassName = className => STYLES[className] || 'UNKNOWN';
 const documentIfExists = typeof window !== 'undefined' ? document : null;
 const FadingLazyLoadedImage = withLoadingBehavior(withLazyLoading(BpkImage, documentIfExists));
-const dateWritten = new Date(2017, 11, 8, 7, 1, 0);
+const DATE_WRITTEN = new Date(2017, 11, 8, 7, 1, 0);
+const BLOG_ID = 238476;
 
 /* eslint-disable max-len */
 const NetNeutrality = (props) => {
@@ -25,7 +27,7 @@ const NetNeutrality = (props) => {
     <SideBar>
       <main className={classNameFinal.join(' ')} {...rest} >
         <Section name="My Take on Net Neutrality">
-          <ArticleDate date={dateWritten} />
+          <ArticleDate date={DATE_WRITTEN} />
           {/* <SubSection name="Abstract">
           TODO
         </SubSection> */}
@@ -139,6 +141,7 @@ const NetNeutrality = (props) => {
             />
           </SubSection>
         </Section>
+        <Comments blogId={BLOG_ID} />
       </main>
     </SideBar>
   );

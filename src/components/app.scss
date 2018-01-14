@@ -1,6 +1,10 @@
 @import '~bpk-mixins';
 
 .app {
+    &__body{
+      margin: 0;
+    }
+
   @mixin centred {
     text-align: center;
   }
