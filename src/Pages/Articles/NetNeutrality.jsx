@@ -7,7 +7,6 @@ import SubSection from './../../components/SubSection';
 import netflixDownloads from './images/netflixDownloads.png';
 import ArticleDate from '../../components/ArticleDate';
 import SideBar from '../../components/SideBar';
-import Comments from '../../components/Comments';
 
 // import STYLES from '../pages.scss';
 //
@@ -15,7 +14,6 @@ import Comments from '../../components/Comments';
 const documentIfExists = typeof window !== 'undefined' ? document : null;
 const FadingLazyLoadedImage = withLoadingBehavior(withLazyLoading(BpkImage, documentIfExists));
 const DATE_WRITTEN = new Date(2017, 11, 8, 7, 1, 0);
-const BLOG_ID = 238476;
 
 /* eslint-disable max-len */
 const NetNeutrality = (props) => {

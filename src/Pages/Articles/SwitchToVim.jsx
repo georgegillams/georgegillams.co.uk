@@ -5,13 +5,11 @@ import Section from './../../components/Section';
 import SubSection from './../../components/SubSection';
 import ArticleDate from '../../components/ArticleDate';
 import SideBar from '../../components/SideBar';
-import Comments from '../../components/Comments';
 
 // import STYLES from '../pages.scss';
 //
 // const getClassName = className => STYLES[className] || 'UNKNOWN';
 const DATE_WRITTEN = new Date(2017, 11, 23, 14, 3, 0);
-const BLOG_ID = 729471;
 
 /* eslint-disable max-len */
 const SwitchToVim = (props) => {
