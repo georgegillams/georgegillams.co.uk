@@ -39,6 +39,7 @@ const SwitchToVim = (props) => {
             </SubSection>
           </SubSection>
         </Section>
+        <Comments blogId={BLOG_ID} />
       </main>
     </SideBar>
   );
