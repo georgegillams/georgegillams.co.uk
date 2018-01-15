@@ -4,9 +4,12 @@ import BpkImage, { withLazyLoading, withLoadingBehavior } from 'bpk-component-im
 import Section from './../../components/Section';
 import SubSection from './../../components/SubSection';
 import SideBar from '../../components/SideBar';
+import Comments from '../../components/Comments';
 import longleatLight from './images/longleatLight.jpg';
 
 import STYLES from '../pages.scss';
+
+const PAGE_ID = 834762;
 
 const getClassName = className => STYLES[className] || 'UNKNOWN';
 const documentIfExists = typeof window !== 'undefined' ? document : null;
@@ -28,6 +31,7 @@ const Longleat = (props) => {
             <FadingLazyLoadedImage className={getClassName('pages__image')} altText="Longleat Festival of Light" width={2514} height={1676} src={longleatLight} />
           </a>
         </Section>
+        <Comments pageId={PAGE_ID} />
       </main>
     </SideBar>
   );

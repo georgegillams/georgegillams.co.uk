@@ -4,9 +4,12 @@ import BpkImage, { withLazyLoading, withLoadingBehavior } from 'bpk-component-im
 import Section from './../../components/Section';
 import SubSection from './../../components/SubSection';
 import SideBar from '../../components/SideBar';
+import Comments from '../../components/Comments';
 import philMunich from './images/munichPhil.jpg';
 
 import STYLES from '../pages.scss';
+
+const PAGE_ID = 1029384;
 
 const getClassName = className => STYLES[className] || 'UNKNOWN';
 const documentIfExists = typeof window !== 'undefined' ? document : null;
@@ -27,6 +30,7 @@ const Munich = (props) => {
             <FadingLazyLoadedImage className={getClassName('pages__image')} altText="My brother up a tree" width={2514} height={1676} src={philMunich} />
           </a>
         </Section>
+        <Comments pageId={PAGE_ID} />
       </main>
     </SideBar>
   );
