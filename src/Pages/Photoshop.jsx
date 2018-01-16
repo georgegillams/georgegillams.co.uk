@@ -4,7 +4,6 @@ import BpkText from 'bpk-component-text';
 import BpkImage, { withLazyLoading, withLoadingBehavior } from 'bpk-component-image';
 import Section from '../components/Section';
 import SubSection from '../components/SubSection';
-import SideBar from '../components/SideBar';
 
 import STYLES from './pages.scss';
 
@@ -19,16 +18,14 @@ const Photoshop = (props) => {
   if (className) { classNameFinal.push(className); }
 
   return (
-    <SideBar>
-      <main className={classNameFinal.join(' ')} {...rest} >
-        <Section name="Photoshop">
-          <SubSection name="Work 1">
+    <main className={classNameFinal.join(' ')} {...rest} >
+      <Section name="Photoshop">
+        <SubSection name="Work 1">
               Work 1 description
         <br />
-          </SubSection>
-        </Section>
-      </main>
-    </SideBar>
+        </SubSection>
+      </Section>
+    </main>
   );
 };
 

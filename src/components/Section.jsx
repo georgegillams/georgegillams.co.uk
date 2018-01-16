@@ -2,21 +2,28 @@ import PropTypes from 'prop-types';
 import React from 'react';
 import BpkText from 'bpk-component-text';
 
-import STYLES from './section.scss';
+import STYLES from './typography.scss';
 
 const getClassName = className => STYLES[className] || 'UNKNOWN';
 
 const Section = (props) => {
   const {
-    light, noPadding, name, className, textClassName, children, ...rest
+    link, fancy, light, noPadding, name, className, textClassName, children, ...rest
   } = props;
 
-  const classNameFinal = [getClassName('section__section')];
-  const textClassNameFinal = [getClassName('section__section--text')];
-  if (light) { textClassNameFinal.push(getClassName('section__section--text--light')); }
+  const classNameFinal = [getClassName('typography__main')];
+  const textClassNameFinal = [getClassName('typography__text'), getClassName('typography__text--section')];
+  if (light) {
+    classNameFinal.push(getClassName('typography--light'));
+    textClassNameFinal.push(getClassName('typography--light'));
+  }
   if (noPadding) {
-    classNameFinal.push(getClassName('section__sub-section--no-padding'));
-    textClassNameFinal.push(getClassName('section__sub-section--text--no-padding'));
+    classNameFinal.push(getClassName('typography--no-padding'));
+    textClassNameFinal.push(getClassName('typography--no-padding'));
+  }
+  if (fancy) {
+    classNameFinal.push(getClassName('typography--fancy'));
+    textClassNameFinal.push(getClassName('typography--fancy'));
   }
   if (className) { classNameFinal.push(className); }
   if (textClassName) { textClassNameFinal.push(textClassName); }
@@ -34,6 +41,10 @@ const Section = (props) => {
 };
 
 Section.propTypes = {
+  link: PropTypes.bool,
+  fancy: PropTypes.bool,
+  light: PropTypes.bool,
+  noPadding: PropTypes.bool,
   name: PropTypes.string,
   className: PropTypes.string,
   textClassName: PropTypes.string,
@@ -42,6 +53,11 @@ Section.propTypes = {
 };
 
 Section.defaultProps = {
+  link: false,
+  fancy: false,
+  light: false,
+  name: null,
+  noPadding: false,
   className: null,
   textClassName: null,
   style: null,

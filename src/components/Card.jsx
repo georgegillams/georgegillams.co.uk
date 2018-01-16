@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import BpkCard from 'bpk-component-card';
 import Section from './Section';
 
@@ -6,7 +7,6 @@ import STYLES from './card.scss';
 
 const getClassName = className => STYLES[className] || 'UNKNOWN';
 
-/* eslint-disable max-len */
 const Card = (props) => {
   const {
     light, linkUrl, imageSrc, title, className, ...rest
@@ -17,9 +17,25 @@ const Card = (props) => {
 
   return (
     <BpkCard className={classNameFinal.join(' ')} style={{ backgroundImage: `url(${imageSrc})` }} href={linkUrl} {...rest}>
-      <Section light={light} name={title} textClassName={getClassName('pages__link')} />
+      <Section light={light} name={title} link />
     </BpkCard>
   );
+};
+
+Card.propTypes = {
+  light: PropTypes.bool,
+  imageSrc: PropTypes.node,
+  linkUrl: PropTypes.string,
+  title: PropTypes.string,
+  className: PropTypes.string,
+};
+
+Card.defaultProps = {
+  light: false,
+  linkUrl: null,
+  imageSrc: null,
+  title: null,
+  className: null,
 };
 
 export default Card;

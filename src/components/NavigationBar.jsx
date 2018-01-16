@@ -1,21 +1,8 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import SubSection from './SubSection';
+import Logo from './Logo';
 import NavigationItem from './NavigationItem';
-import {
-  Collapse,
-  Navbar,
-  NavbarToggler,
-  NavbarBrand,
-  Nav,
-  NavItem,
-  NavLink,
-  UncontrolledDropdown,
-  DropdownToggle,
-  DropdownMenu,
-  DropdownItem,
-  Button,
-} from 'reactstrap';
 
 import STYLES from './navigation-bar.scss';
 
@@ -47,7 +34,9 @@ class NavigationBar extends Component {
         <header className={outerClassNameFinal.join(' ')} {...rest}>
           <NavigationItem className={getClassName('navigation-bar__nav-item')} name="Articles" linkUrl="/articles" />
           <NavigationItem className={getClassName('navigation-bar__nav-item')} name="Travel" linkUrl="/travel" />
-          {/* <NavigationItem className={getClassName('navigation-bar__nav-item')} name="Work" linkUrl="/work" /> */}
+          <NavigationItem className={getClassName('navigation-bar__nav-item')} name="Art" linkUrl="/photoshop" />
+          <Logo className={getClassName('navigation-bar__nav-item')} small />
+          <NavigationItem className={getClassName('navigation-bar__nav-item')} name="Work" linkUrl="/work" />
           <NavigationItem className={getClassName('navigation-bar__nav-item')} name="About" linkUrl="/about" />
           <NavigationItem className={getClassName('navigation-bar__nav-item')} name="Contact" linkUrl="/contact" />
         </header>

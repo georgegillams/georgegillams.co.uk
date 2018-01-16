@@ -1,0 +1,22 @@
+@import '~bpk-mixins';
+
+.page-content-container {
+  &__main {
+    display: flex;
+    margin: 0 .5rem .5rem;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  &__centre-column {
+    display: flex;
+    width: 80%;
+    max-width: 74rem;
+    flex-direction: row;
+
+    @include bpk-breakpoint-tablet {
+      width: 90%;
+      flex-direction: column;
+    }
+  }
+}
