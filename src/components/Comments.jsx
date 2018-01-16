@@ -32,17 +32,17 @@ class Comments extends React.Component {
     if (this.state.comments) {
       comments = this.state.comments.length === 0 ?
         (
-          <SubSection name="No comments yet. Be the first!" />
+          <SubSection className={getClassName('comments__component')} name="No comments yet. Be the first!" />
         ) : (
           this.state.comments.map((c, i) =>
-            (<SubSection name={`${c.commenter_name}`}>
+            (<SubSection className={getClassName('comments__component')} name={`${c.commenter_name}`}>
               {c.comment}
             </SubSection >
             )));
     }
 
     const commentsLoading = (
-      <SubSection name="Loading comments for blog..." >
+      <SubSection className={getClassName('comments__component')} name="Loading comments for blog..." >
         <BpkSpinner type={SPINNER_TYPES.dark} />
       </SubSection >
     );

@@ -16,6 +16,7 @@ const TextLink = (props) => {
   if (light) { classNameFinal.push(getClassName('typography--light')); }
   if (noPadding) { classNameFinal.push(getClassName('typography--no-padding')); }
   if (fancy) classNameFinal.push(getClassName('typography--fancy'));
+  classNameFinal.push(getClassName('typography--inline'));
   const outerClassNameFinal = JSON.parse(JSON.stringify(classNameFinal));
   if (className) { outerClassNameFinal.push(className); }
 
