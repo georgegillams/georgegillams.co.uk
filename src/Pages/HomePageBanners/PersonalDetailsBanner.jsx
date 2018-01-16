@@ -11,7 +11,7 @@ const getClassName = className => STYLES[className] || 'UNKNOWN';
 /* eslint-disable max-len */
 const PersonalDetailsBanner = () => (
   <main className={getClassName('pages__banner')}>
-    <div className={getClassName('pages__banner-image')} style={{ background: 'black', backgroundImage: `url(${blackwood})` }} >
+    <div className={getClassName('pages__banner-image')} style={{ background: 'rgb(26, 33, 43)', backgroundImage: `url(${blackwood})` }} >
       <div>
         <PageContentContainer>
           <div className={`${getClassName('pages__banner-container')} ${getClassName('pages__banner-container--vertical-spread')}`}>

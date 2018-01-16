@@ -34,9 +34,9 @@ class NavigationBar extends Component {
         <header className={outerClassNameFinal.join(' ')} {...rest}>
           <NavigationItem className={getClassName('navigation-bar__nav-item')} name="Articles" linkUrl="/articles" />
           <NavigationItem className={getClassName('navigation-bar__nav-item')} name="Travel" linkUrl="/travel" />
-          <NavigationItem className={getClassName('navigation-bar__nav-item')} name="Art" linkUrl="/photoshop" />
+          {/* <NavigationItem className={getClassName('navigation-bar__nav-item')} name="Art" linkUrl="/photoshop" /> */}
           <Logo className={getClassName('navigation-bar__nav-item')} small />
-          <NavigationItem className={getClassName('navigation-bar__nav-item')} name="Work" linkUrl="/work" />
+          {/* <NavigationItem className={getClassName('navigation-bar__nav-item')} name="Work" linkUrl="/work" /> */}
           <NavigationItem className={getClassName('navigation-bar__nav-item')} name="About" linkUrl="/about" />
           <NavigationItem className={getClassName('navigation-bar__nav-item')} name="Contact" linkUrl="/contact" />
         </header>
