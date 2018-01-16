@@ -10,8 +10,21 @@
     color: white;
     font-size: 1rem;
 
-    &:hover {
-      background-color: rgb(40, 102, 150);
+    &--bouncy {
+      padding: .1rem .5rem;
+      background-color: transparent;
+      color: $bpk-color-gray-700;
+
+      &:hover {
+        color: white;
+        background-color: rgb(62,158,235);
+      }
+    }
+
+    &--no-bouncy {
+      &:hover {
+        background-color: rgb(40, 102, 150);
+      }
     }
 
     &--vertical-spread {
