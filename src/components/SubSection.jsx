@@ -12,7 +12,7 @@ const SubSection = (props) => {
   } = props;
 
   const classNameFinal = [getClassName('typography__main')];
-  const textClassNameFinal = [getClassName('typography__text-subsection')];
+  const textClassNameFinal = [getClassName('typography__text--subsection')];
   if (light) {
     classNameFinal.push(getClassName('typography--light'));
     textClassNameFinal.push(getClassName('typography--light'));
