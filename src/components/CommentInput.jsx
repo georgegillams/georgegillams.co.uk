@@ -52,7 +52,7 @@ class CommentInput extends React.Component {
                 ) : (
                   <div>
                     <BpkInput
-                      className={getClassName('comments__component')}
+                      className={`${getClassName('comments__component')} ${getClassName('comments__component--text-box-hack')}`}
                       id="commenterName"
                       name="Name"
                       value={this.state.name}
@@ -60,7 +60,7 @@ class CommentInput extends React.Component {
                       placeholder="You name"
                     />
                     <BpkTextArea
-                      className={getClassName('comments__component')}
+                      className={`${getClassName('comments__component')} ${getClassName('comments__component--text-box-hack')}`}
                       id="comment"
                       name="Comment"
                       values={this.state.comment}
