@@ -19,7 +19,7 @@ const Button = (props) => {
   if (className) classNameFinal.push(className);
 
   return (
-    <button className={classNameFinal.join(' ')} {...rest}>
+    <button onClick={onClick} className={classNameFinal.join(' ')} {...rest}>
       {children}
     </button>
   );

@@ -25,16 +25,16 @@ class Footer extends Component {
   render() {
     const { className, ...rest } = this.props;
     const outerClassNameFinal = [getClassName('footer__container')];
-    if (className) { outerClassNameFinal(className); }
+    if (className) { outerClassNameFinal.push(className); }
 
     return (
       <footer className={outerClassNameFinal.join(' ')} style={{ backgroundImage: `url(${blackPaper})` }} {...rest}>
-        <GetSocial light alwaysCentered />
-        <a className={getClassNamePages('pages__link')} href="/site-map" >
-          <SubSection noPadding light name="Site map →" textClassName={getClassName('pages__link')} />
+        <GetSocial light alwaysCentered className={getClassName('footer__component')} />
+        <a href="/site-map" >
+          <SubSection noPadding light name="Site map →" link className={getClassName('footer__component')} />
         </a>
-        <PersonalDetails centralisedSpread light />
-        <TechSpecs light />
+        <PersonalDetails light className={getClassName('footer__component')} />
+        <TechSpecs light className={getClassName('footer__component')} />
         <SubSection fancy noPadding light >© copyright George Gillams 2017 - 2018</SubSection>
       </footer>
     );
