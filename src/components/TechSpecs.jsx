@@ -12,13 +12,13 @@ const TechSpecs = (props) => {
 
   return (
     <div className={outerClassNameFinal.join(' ')} {...rest} >
-      <Section light={light} fancy={fancy}>
+      <Section noPadding light={light} fancy={fancy}>
           Built in <TextLink light={light} fancy={fancy} href="https://reactjs.org/" rel="noopener noreferrer" target="_blank">React</TextLink>
       </Section>
-      <Section light={light} fancy={fancy}>
+      <Section noPadding light={light} fancy={fancy}>
           Hosted on <TextLink light={light} fancy={fancy} href="https://pages.github.com/" rel="noopener noreferrer" target="_blank">GitHub pages</TextLink>
       </Section>
-      <Section light={light} fancy={fancy}>
+      <Section noPadding light={light} fancy={fancy}>
           Data on <TextLink light={light} fancy={fancy} href="https://restdb.io/" rel="noopener noreferrer" target="_blank">restdb.io</TextLink>
       </Section>
     </div>

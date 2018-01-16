@@ -8,13 +8,13 @@ const getClassName = className => STYLES[className] || 'UNKNOWN';
 
 const TextLink = (props) => {
   const {
-    fancy, light, noPadding, href, className, textClassName, children, ...rest
+    fancy, light, href, className, textClassName, children, ...rest
   } = props;
 
   const classNameFinal = [getClassName('typography__main')];
   classNameFinal.push(getClassName('typography--link'));
+  classNameFinal.push(getClassName('typography--no-padding'));
   if (light) { classNameFinal.push(getClassName('typography--light')); }
-  if (noPadding) { classNameFinal.push(getClassName('typography--no-padding')); }
   if (fancy) classNameFinal.push(getClassName('typography--fancy'));
   classNameFinal.push(getClassName('typography--inline'));
   const outerClassNameFinal = JSON.parse(JSON.stringify(classNameFinal));
@@ -32,7 +32,6 @@ const TextLink = (props) => {
 TextLink.propTypes = {
   fancy: PropTypes.bool,
   light: PropTypes.bool,
-  noPadding: PropTypes.bool,
   children: PropTypes.node,
   href: PropTypes.string,
   textClassName: PropTypes.string,
@@ -42,7 +41,6 @@ TextLink.propTypes = {
 TextLink.defaultProps = {
   fancy: false,
   light: false,
-  noPadding: false,
   href: null,
   children: null,
   textClassName: null,
