@@ -1,7 +1,7 @@
 import React from 'react';
 import BpkInput from 'bpk-component-input';
 import BpkTextArea from 'bpk-component-textarea';
-import BpkButton from 'bpk-component-button';
+import Button from './Button';
 import Section from './Section';
 import RestDbIoFunctions from '../RestDbIoFunctions';
 
@@ -57,11 +57,11 @@ class CommentInput extends React.Component {
             onChange={this.onCommentChanged}
             placeholder="Your comment(s)"
           />
-          <BpkButton
+          <Button
             className={getClassName('comments__component')}
             onClick={this.submitComment}
-          >SUBMIT COMMENT
-          </BpkButton>
+          >Submit comment
+          </Button>
         </div>
       );
     }
