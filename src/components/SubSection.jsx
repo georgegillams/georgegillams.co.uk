@@ -8,7 +8,7 @@ const getClassName = className => STYLES[className] || 'UNKNOWN';
 
 const SubSection = (props) => {
   const {
-    light, name, className, noPadding, textClassName, children, ...rest
+    fancy, light, name, className, noPadding, textClassName, children, ...rest
   } = props;
 
   const classNameFinal = [getClassName('section__sub-section')];
@@ -18,6 +18,7 @@ const SubSection = (props) => {
     classNameFinal.push(getClassName('section__sub-section--no-padding'));
     textClassNameFinal.push(getClassName('section__sub-section--text--no-padding'));
   }
+  if (fancy) textClassNameFinal.push(getClassName('section__sub-section--text--fancy'));
   if (className) { classNameFinal.push(className); }
   if (textClassName) { textClassNameFinal.push(textClassName); }
 

@@ -1,9 +1,8 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import SubSection from './SubSection';
-import NavigationItem from './NavigationItem';
 
-import STYLES from './navigation-bar.scss';
+import STYLES from './footer.scss';
 
 const getClassName = className => STYLES[className] || 'UNKNOWN';
 
@@ -12,7 +11,7 @@ import { colorGray700 } from 'bpk-tokens/tokens/base.es6';
 const mainLinkStyle = { color: '#3e9eeb', fontFamily: 'Neuton', fontWeight: 'bold' };
 const linkStyle = { color: colorGray700, fontFamily: 'Neuton' };
 
-class NavigationBar extends Component {
+class Footer extends Component {
   constructor(props) {
     super(props);
 
@@ -30,23 +29,19 @@ class NavigationBar extends Component {
       if (className) { outerClassNameFinal(className); }
 
       return (
-        <header className={outerClassNameFinal.join(' ')} {...rest}>
-          <NavigationItem className={getClassName('navigation-bar__nav-item')} name="Articles" linkUrl="/articles" />
-          <NavigationItem className={getClassName('navigation-bar__nav-item')} name="Travel" linkUrl="/travel" />
-          {/* <NavigationItem className={getClassName('navigation-bar__nav-item')} name="Work" linkUrl="/work" /> */}
-          <NavigationItem className={getClassName('navigation-bar__nav-item')} name="About" linkUrl="/about" />
-          <NavigationItem className={getClassName('navigation-bar__nav-item')} name="Contact" linkUrl="/contact" />
-        </header>
+        <footer className={outerClassNameFinal.join(' ')} {...rest}>
+          <SubSection fancy noPadding name="© copyright George Gillams 2017 - 2018" />
+        </footer>
       );
     }
 }
 
-NavigationBar.propTypes = {
+Footer.propTypes = {
   className: PropTypes.string,
 };
 
-NavigationBar.defaultProps = {
+Footer.defaultProps = {
   className: null,
 };
 
-export default NavigationBar;
+export default Footer;
