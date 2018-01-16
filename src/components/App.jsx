@@ -28,6 +28,7 @@ import Degree from '../Pages/Documents/Degree';
 import Logo from './Logo';
 import PersonalDetails from './PersonalDetails';
 import NavigationBar from './NavigationBar';
+import Footer from './Footer';
 import blackwood from '../images/blackwood.jpg';
 
 import STYLES from './app.scss';
@@ -65,6 +66,7 @@ class App extends React.Component {
             <Route component={ForOhFour} />
           </Switch>
         </BrowserRouter>
+        <Footer/>
       </div>
     );
   }
