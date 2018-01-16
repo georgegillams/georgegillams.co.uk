@@ -9,6 +9,7 @@ import BpkText from 'bpk-component-text';
 // <editor-fold> Content Imports
 import HomePage from '../Pages/HomePage';
 import Work from '../Pages/Work';
+import Photoshop from '../Pages/Photoshop';
 import SiteMap from '../Pages/SiteMap';
 import SwitchToVim from '../Pages/Articles/SwitchToVim';
 import NetNeutrality from '../Pages/Articles/NetNeutrality';
@@ -59,6 +60,7 @@ class App extends React.Component {
             <Route path="/travel" component={Travel} />
             <Route path="/articles" component={Articles} />
             <Route path="/about" component={AboutMe} />
+            <Route path="/photoshop" component={Photoshop} />
             <Route path="/contact" component={Contact} />
             <Route component={ForOhFour} />
           </Switch>
