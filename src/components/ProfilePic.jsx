@@ -11,6 +11,7 @@ const FadingLazyLoadedImage = withLoadingBehavior(withLazyLoading(BpkImage, docu
 
 const ProfilePic = (props) => {
   const { className, ...rest } = props;
+
   const classNameFinal = [getClassName('profile-pic__container')];
   if (className) { classNameFinal.push(className); }
 

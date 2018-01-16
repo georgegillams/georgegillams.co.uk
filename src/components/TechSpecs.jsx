@@ -1,44 +1,40 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import SubSection from './SubSection';
-// import BpkImage, { withLazyLoading, withLoadingBehavior } from 'bpk-component-image';
-import githubIcon from './../icons/github.png';
-
-// import skyscannerIcon from './../icons/skyscanner.png';
-
-import STYLES from './tech-specs.scss';
-
-const getClassName = className => STYLES[className] || 'UNKNOWN';
-// const documentIfExists = typeof window !== 'undefined' ? document : null;
-// const FadingLazyLoadedImage = withLoadingBehavior(withLazyLoading(BpkImage, documentIfExists));
+import Section from './Section';
+import TextLink from './TextLink';
 
 const TechSpecs = (props) => {
   const {
-    light, className, children, alwaysCentered, ...rest
+    light, fancy, className, children, ...rest
   } = props;
   const outerClassNameFinal = [];
   if (className) { outerClassNameFinal(className); }
 
-  const containerClassNameFinal = [getClassName('get-social__container')];
-  if (alwaysCentered) { containerClassNameFinal.push(getClassName('get-social__container--centered')); }
-
   return (
     <div className={outerClassNameFinal.join(' ')} {...rest} >
-      <SubSection light={light} noPadding name="Built in React" />
-      <SubSection light={light} noPadding name="Hosted on GitHub" />
-      <SubSection light={light} noPadding name="Data on restdb.io" />
+      <Section light={light} fancy={fancy}>
+          Built in <TextLink href="https://github.com/Skyscanner" rel="noopener noreferrer" target="_blank">React</TextLink>.
+      </Section>
+      <Section light={light} fancy={fancy}>
+          Hosted on <TextLink href="https://www.ecs.soton.ac.uk/programmes/g600-meng-software-engineering-4-yrs#modules" rel="noopener noreferrer" target="_blank">GitHub</TextLink>.
+      </Section>
+      <Section light={light} fancy={fancy}>
+          Data on <TextLink href="https://www.ecs.soton.ac.uk/programmes/g600-meng-software-engineering-4-yrs#modules" rel="noopener noreferrer" target="_blank">restdb.io</TextLink>.
+      </Section>
     </div>
   );
 };
 
 TechSpecs.propTypes = {
+  light: PropTypes.bool,
+  fancy: PropTypes.bool,
   className: PropTypes.string,
-  alwaysCentered: PropTypes.bool,
 };
 
 TechSpecs.defaultProps = {
+  light: false,
+  fancy: false,
   className: null,
-  alwaysCentered: false,
 };
 
 export default TechSpecs;

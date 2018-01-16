@@ -27,11 +27,15 @@
     color: $bpk-color-gray-700;
     // font-family: 'Quattrocento Sans', sans-serif;
     font-family: 'Neuton', serif;
+    text-decoration: none;
 
     &--text {
-    color: $bpk-color-gray-700;
+      color: $bpk-color-gray-700;
       padding-bottom: .5rem;
       font-family: 'Quattrocento Sans', sans-serif;
+      font-size: 2.2rem;
+      line-height: 2.2rem;
+      text-decoration: none;
 
       &--fancy {
         font-family: 'Tangerine', cursive;
@@ -53,11 +57,13 @@
     color: $bpk-color-gray-700;
     // font-family: 'Quattrocento Sans', sans-serif;
     font-family: 'Neuton', serif;
+    text-decoration: none;
 
     &--text {
-    color: $bpk-color-gray-700;
+      color: $bpk-color-gray-700;
       padding-bottom: .4rem;
       font-family: 'Quattrocento Sans', sans-serif;
+      text-decoration: none;
 
       &--fancy {
         font-family: 'Tangerine', cursive;
@@ -77,3 +83,26 @@
     }
   }
 }
+  // &__section {
+  //   color: $bpk-color-gray-700;
+  //   text-decoration: none;
+
+  //   &--light {
+  //       color: $bpk-color-gray-100;
+  //   }
+  // }
+
+  // &__link {
+  //   font-style: italic;
+  //   color: $bpk-color-gray-700;
+  //   text-decoration: none;
+
+  //   &:hover {
+  //     color: rgb(62,158,235);
+  //     text-decoration: none;
+  //   }
+
+  //   &--light {
+  //       color: $bpk-color-gray-100;
+  //   }
+  // }

@@ -1,16 +1,12 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import BpkText from 'bpk-component-text';
-import BpkImage, { withLazyLoading, withLoadingBehavior } from 'bpk-component-image';
-import logo from './../images/logo.svg';
 
 import STYLES from './logo.scss';
 
 const getClassName = className => STYLES[className] || 'UNKNOWN';
-const documentIfExists = typeof window !== 'undefined' ? document : null;
-const FadingLazyLoadedImage = withLoadingBehavior(withLazyLoading(BpkImage, documentIfExists));
 
-const ProfilePic = (props) => {
+const Logo = (props) => {
   const {
     small, className, alwaysCentered, light, ...rest
   } = props;
@@ -44,16 +40,18 @@ const ProfilePic = (props) => {
   );
 };
 
-ProfilePic.propTypes = {
+Logo.propTypes = {
   className: PropTypes.string,
+  small: PropTypes.bool,
   light: PropTypes.bool,
   alwaysCentered: PropTypes.bool,
 };
 
-ProfilePic.defaultProps = {
+Logo.defaultProps = {
   className: null,
+  small: false,
   light: false,
   alwaysCentered: false,
 };
 
-export default ProfilePic;
+export default Logo;

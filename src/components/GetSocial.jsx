@@ -19,7 +19,7 @@ const getClassName = className => STYLES[className] || 'UNKNOWN';
 
 const GetSocial = (props) => {
   const {
-    light, className, children, alwaysCentered, ...rest
+    light, className, alwaysCentered, ...rest
   } = props;
   const outerClassNameFinal = [];
   if (className) { outerClassNameFinal(className); }
@@ -27,7 +27,9 @@ const GetSocial = (props) => {
   const containerClassNameFinal = [getClassName('get-social__container')];
   const iconClassNameFinal = [getClassName('get-social__icon')];
   const darkIconClassNameFinal = [getClassName('get-social__icon')];
+
   if (alwaysCentered) { containerClassNameFinal.push(getClassName('get-social__container--centered')); }
+
   if (light) {
     darkIconClassNameFinal.push(getClassName('get-social__icon--light-inverted'));
     iconClassNameFinal.push(getClassName('get-social__icon--light'));
@@ -64,19 +66,18 @@ const GetSocial = (props) => {
           <img alt="phone" width={5} height={5} className={darkIconClassNameFinal.join(' ')} src={phoneIcon} />
         </a>
       </div>
-      <div className={getClassName('get-social__container')} style={{ paddingTop: '1rem' }}>
-        {children}
-      </div>
     </div>
   );
 };
 
 GetSocial.propTypes = {
+  light: PropTypes.bool,
   className: PropTypes.string,
   alwaysCentered: PropTypes.bool,
 };
 
 GetSocial.defaultProps = {
+  light: false,
   className: null,
   alwaysCentered: false,
 };

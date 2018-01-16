@@ -1,61 +1,26 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import Section from './Section';
-
-import STYLES from './personal-details.scss';
-
-const getClassName = className => STYLES[className] || 'UNKNOWN';
+import TextLink from './TextLink';
 
 const PersonalDetails = (props) => {
   const {
-    className, centralisedSpread, light, ...rest
+    className, light, fancy, ...rest
   } = props;
-  const classNameFinal = [getClassName('personal-details__container')];
-  if (centralisedSpread) { classNameFinal.push(getClassName('personal-details__container--centralised-spread')); }
+  const classNameFinal = [];
   if (className) { classNameFinal.push(className); }
-
-  const textClassNameFinal = [getClassName('personal-details__section')];
-  if (light) textClassNameFinal.push(getClassName('personal-details__section--light'));
-
-  const linkTextClassNameFinal = [getClassName('personal-details__link')];
-  if (light) linkTextClassNameFinal.push(getClassName('personal-details__link--light'));
-
-  const southampton = (
-    <a className={linkTextClassNameFinal.join(' ')} href="https://www.ecs.soton.ac.uk/programmes/g600-meng-software-engineering-4-yrs#modules" rel="noopener noreferrer" target="_blank" >
-      Southampton
-    </a>
-  );
-
-  const skyscanner = (
-    <a className={linkTextClassNameFinal.join(' ')} href="https://github.com/Skyscanner" rel="noopener noreferrer" target="_blank" >
-      Skyscanner
-    </a>
-  );
-
-  const photobomber = (
-    <a className={getClassName('personal-details__link')} href="/services/photobombing">
-      Passionate photobomber.
-    </a>
-  );
-
-  const engaged = (
-    <a className={getClassName('personal-details__link')} href="/engagement">
-      engaged
-    </a>
-  );
 
   return (
     <div className={classNameFinal.join(' ')} {...rest} >
-      <Section className={textClassNameFinal.join(' ')} noTitle>
-            Open-source Software Engineer at {skyscanner}.
+      <Section light={light} fancy={fancy}>
+          Open-source Software Engineer at <TextLink href="https://github.com/Skyscanner" rel="noopener noreferrer" target="_blank">Skyscanner</TextLink>.
       </Section>
-      <Section className={textClassNameFinal.join(' ')} noTitle>
-            Masters student at {southampton}.
+      <Section light={light} fancy={fancy}>
+          Master student at <TextLink href="https://www.ecs.soton.ac.uk/programmes/g600-meng-software-engineering-4-yrs#modules" rel="noopener noreferrer" target="_blank">Southampton</TextLink>.
       </Section>
-      <Section className={textClassNameFinal.join(' ')} noTitle>
+      <Section light={light} fancy={fancy}>
            Based in London.
       </Section>
-      <Section className={textClassNameFinal.join(' ')} noTitle />
     </div>
   );
 };
@@ -63,12 +28,14 @@ const PersonalDetails = (props) => {
 PersonalDetails.propTypes = {
   className: PropTypes.string,
   light: PropTypes.bool,
+  fancy: PropTypes.bool,
   centralisedSpread: PropTypes.bool,
 };
 
 PersonalDetails.defaultProps = {
   className: null,
   light: false,
+  fancy: false,
   centralisedSpread: false,
 };
 

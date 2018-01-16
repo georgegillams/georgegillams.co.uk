@@ -2,7 +2,6 @@ import React from 'react';
 import BpkInput from 'bpk-component-input';
 import BpkTextArea from 'bpk-component-textarea';
 import Button from './Button';
-import Section from './Section';
 import RestDbIoFunctions from '../RestDbIoFunctions';
 
 import STYLES from './comments.scss';

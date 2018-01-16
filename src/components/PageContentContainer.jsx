@@ -22,10 +22,12 @@ const NoSideBar = (props) => {
 };
 
 NoSideBar.propTypes = {
+  children: PropTypes.node,
   className: PropTypes.string,
 };
 
 NoSideBar.defaultProps = {
+  children: null,
   className: null,
 };
 
