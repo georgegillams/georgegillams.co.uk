@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
+import Button from './Button';
 import SubSection from './SubSection';
 
 import STYLES from './navigation-bar.scss';
@@ -29,7 +30,7 @@ class NavigationItem extends Component {
     return (
       <div className={outerClassNameFinal.join(' ')} {...rest}>
         <a className={getClassName2('pages__link')} href={linkUrl}>
-          <SubSection noPadding name={name} textClassName={getClassName2('pages__link')} />
+          <Button large bouncy >{name}</Button>
         </a>
       </div>
     );
