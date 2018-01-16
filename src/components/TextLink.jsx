@@ -2,40 +2,50 @@ import PropTypes from 'prop-types';
 import React from 'react';
 import BpkText from 'bpk-component-text';
 
-import STYLES from './section.scss';
+import STYLES from './typography.scss';
 
 const getClassName = className => STYLES[className] || 'UNKNOWN';
 
 const TextLink = (props) => {
   const {
-    fancy, light, noPadding, className, children, ...rest
+    fancy, light, noPadding, href, className, textClassName, children, ...rest
   } = props;
 
-  const textClassNameFinal = [getClassName('section__section--text')];
-  textClassNameFinal.push(getClassName('section__section--text--link'));
-  if (light) {
-    textClassNameFinal.push(getClassName('section__section--text--light'));
-    textClassNameFinal.push(getClassName('section__section--text--light--link'));
-  }
-  if (noPadding) {
-    textClassNameFinal.push(getClassName('section__sub-section--text--no-padding'));
-  }
-  if (fancy) textClassNameFinal.push(getClassName('section__section--text--fancy'));
-  if (className) { textClassNameFinal.push(className); }
+  const classNameFinal = [getClassName('typography__main')];
+  classNameFinal.push(getClassName('typography--link'));
+  if (light) { classNameFinal.push(getClassName('typography--light')); }
+  if (noPadding) { classNameFinal.push(getClassName('typography--no-padding')); }
+  if (fancy) classNameFinal.push(getClassName('typography--fancy'));
+  const outerClassNameFinal = JSON.parse(JSON.stringify(classNameFinal));
+  if (className) { outerClassNameFinal.push(className); }
 
   return (
-    <BpkText tagName="h2" className={textClassNameFinal.join(' ')}>
-      {children}
-    </BpkText>
+    <div className={outerClassNameFinal.join(' ')} {...rest}>
+      <a href={href} rel="noopener noreferrer" target="_blank" className={classNameFinal.join(' ')}>
+        {children}
+      </a>
+    </div>
   );
 };
 
 TextLink.propTypes = {
+  fancy: PropTypes.bool,
+  light: PropTypes.bool,
+  noPadding: PropTypes.bool,
   children: PropTypes.node,
+  href: PropTypes.string,
+  textClassName: PropTypes.string,
+  className: PropTypes.string,
 };
 
 TextLink.defaultProps = {
+  fancy: false,
+  light: false,
+  noPadding: false,
+  href: null,
   children: null,
+  textClassName: null,
+  className: null,
 };
 
 export default TextLink;

@@ -8,18 +8,18 @@ const TechSpecs = (props) => {
     light, fancy, className, children, ...rest
   } = props;
   const outerClassNameFinal = [];
-  if (className) { outerClassNameFinal(className); }
+  if (className) { outerClassNameFinal.push(className); }
 
   return (
     <div className={outerClassNameFinal.join(' ')} {...rest} >
       <Section light={light} fancy={fancy}>
-          Built in <TextLink href="https://github.com/Skyscanner" rel="noopener noreferrer" target="_blank">React</TextLink>.
+          Built in <TextLink light={light} fancy={fancy} href="https://reactjs.org/" rel="noopener noreferrer" target="_blank">React</TextLink>
       </Section>
       <Section light={light} fancy={fancy}>
-          Hosted on <TextLink href="https://www.ecs.soton.ac.uk/programmes/g600-meng-software-engineering-4-yrs#modules" rel="noopener noreferrer" target="_blank">GitHub</TextLink>.
+          Hosted on <TextLink light={light} fancy={fancy} href="https://pages.github.com/" rel="noopener noreferrer" target="_blank">GitHub pages</TextLink>
       </Section>
       <Section light={light} fancy={fancy}>
-          Data on <TextLink href="https://www.ecs.soton.ac.uk/programmes/g600-meng-software-engineering-4-yrs#modules" rel="noopener noreferrer" target="_blank">restdb.io</TextLink>.
+          Data on <TextLink light={light} fancy={fancy} href="https://restdb.io/" rel="noopener noreferrer" target="_blank">restdb.io</TextLink>
       </Section>
     </div>
   );

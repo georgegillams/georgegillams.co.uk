@@ -27,10 +27,11 @@ const Iceland = (props) => {
     <main className={classNameFinal.join(' ')} {...rest} >
       <Section name="Iceland  🛥 January 2018" >
         <a className={getClassName('pages__link')} href="https://flic.kr/s/aHskqS4GoZ" rel="noopener noreferrer" target="_blank">
-          <SubSection name="See the full album on Flickr →" textClassName={getClassName('pages__link')} />
-          <FadingLazyLoadedImage className={getClassName('pages__image')} altText="Overlooking the harbour" width={3} height={2} src={iceland2} />
-          <FadingLazyLoadedImage className={getClassName('pages__image')} altText="Overlooking the harbour" width={3} height={2} src={iceland1} />
-          <FadingLazyLoadedImage className={getClassName('pages__image')} altText="Overlooking the harbour" width={2} height={3} src={iceland3} />
+          <SubSection name="See the full album on Flickr →" link >
+            <FadingLazyLoadedImage className={getClassName('pages__image')} altText="Overlooking the harbour" width={3} height={2} src={iceland2} />
+            <FadingLazyLoadedImage className={getClassName('pages__image')} altText="Overlooking the harbour" width={3} height={2} src={iceland1} />
+            <FadingLazyLoadedImage className={getClassName('pages__image')} altText="Overlooking the harbour" width={2} height={3} src={iceland3} />
+          </SubSection>
         </a>
       </Section>
       <Comments pageId={PAGE_ID} />

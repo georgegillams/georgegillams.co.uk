@@ -22,7 +22,7 @@ const GetSocial = (props) => {
     light, className, alwaysCentered, ...rest
   } = props;
   const outerClassNameFinal = [];
-  if (className) { outerClassNameFinal(className); }
+  if (className) { outerClassNameFinal.push(className); }
 
   const containerClassNameFinal = [getClassName('get-social__container')];
   const iconClassNameFinal = [getClassName('get-social__icon')];

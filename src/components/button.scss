@@ -16,6 +16,9 @@
       background-color: transparent;
       color: $bpk-color-gray-700;
       transition: all 0.1s;
+      // @include bounceIn(
+      //   $delay: .5s
+      // );
 
       &:focus,
       &:active,
