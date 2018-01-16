@@ -4,7 +4,6 @@ import BpkText from 'bpk-component-text';
 import BpkImage, { withLazyLoading, withLoadingBehavior } from 'bpk-component-image';
 import Section from '../components/Section';
 import SubSection from '../components/SubSection';
-import SideBar from '../components/SideBar';
 
 // import STYLES from '../pages.scss';
 //
@@ -19,21 +18,19 @@ const Work = (props) => {
   if (className) { classNameFinal.push(className); }
 
   return (
-    <SideBar>
-      <main className={classNameFinal.join(' ')} {...rest} >
-        <Section name="My Work">
-          <SubSection name="Where it started">
+    <main className={classNameFinal.join(' ')} {...rest} >
+      <Section name="My Work">
+        <SubSection name="Where it started">
               I started my Software Engineering career at Leonardo where I worked for 60 weeks, mainly on a .NET analysis framework which supported other development teams in building powerful applications.
         <br />
-            <br />
+          <br />
         I then moved on to become a Software Engineering intern at Skyscanner, where I worked on their open-source design system. I continued this work whilst completing my Masters in Southampton. Once my Masters was out of the way, Ire-joined as a full-time employee.
-          </SubSection>
-          <SubSection name="Portfolio">
+        </SubSection>
+        <SubSection name="Portfolio">
               This web-site demonstrates some of my web-development capabilities. Below I have included examples and extracts from my work on open-source products.
-          </SubSection>
-        </Section>
-      </main>
-    </SideBar>
+        </SubSection>
+      </Section>
+    </main>
   );
 };
 

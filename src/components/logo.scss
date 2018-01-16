@@ -51,5 +51,9 @@
     color: rgb(62,158,235);
     font-weight: bold;
     font-family: 'Quattrocento Sans', sans-serif;
+
+    &--smaller {
+        font-size: 3.5rem;
+    }
   }
 }

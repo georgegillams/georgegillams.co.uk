@@ -6,16 +6,15 @@
     flex-wrap: wrap;
     width: 100%;
     flex-direction: row;
-    justify-content:right;
-    padding-right: 0.5rem;
+    justify-content: center;
+    align-items: center;
 
     @include bpk-breakpoint-tablet {
     }
   }
 
   &__nav-item {
-      padding: 1.5rem;
-      padding-left: 0;
+      padding: 0 1rem;
     // display: inline-block;
     // width: 100%;
     // max-width: 2rem;

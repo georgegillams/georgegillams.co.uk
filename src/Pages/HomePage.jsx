@@ -29,14 +29,7 @@ const HomePage = () => (
       <div><NetNeutralityBanner /></div>
       <div><MunichBanner /></div>
     </Slider>
-    <br />
-    <br />
-    <div className={getClassName('pages__home-page-gubbins')}>
-      <GetSocial alwaysCentered />
-      <a className={getClassName('pages__link')} href="/site-map" >
-        <SubSection name="Site map →" textClassName={getClassName('pages__link')} />
-      </a>
-    </div>
+    <div style={{ minHeight: '15rem' }} />
   </main>
 );
 

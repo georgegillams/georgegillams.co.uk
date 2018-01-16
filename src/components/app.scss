@@ -9,20 +9,14 @@
     text-align: center;
   }
 
-  &__download-button {
-    color: $bpk-color-blue-500;
+  &__site {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
   }
 
-  &__download-button-container {
-    position: absolute;
-    display: flex;
-    z-index: 2;
-    width: 12.5rem;
-    height: 1.625rem;
-    justify-content: center;
-    align-items: stretch;
-    transform: matrix(1, -1, 1, 1, -50, 10);
-    background-color: $bpk-color-gray-900;
+  &__main {
+      flex: 1;
   }
 
   &__header {

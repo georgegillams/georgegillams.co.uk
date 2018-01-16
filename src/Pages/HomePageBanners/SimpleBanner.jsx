@@ -1,5 +1,5 @@
 import React from 'react';
-import NoSideBar from '../../components/NoSideBar';
+import PageContentContainer from '../../components/PageContentContainer';
 import Section from './../../components/Section';
 
 import STYLES from '../pages.scss';
@@ -10,13 +10,13 @@ const getClassName = className => STYLES[className] || 'UNKNOWN';
 const SimpleBanner = props => (
   <main className={getClassName('pages__banner')}>
     <div className={getClassName('pages__banner-image')} style={{ backgroundImage: `url(${props.imageSrc})` }} >
-      <NoSideBar>
+      <PageContentContainer>
         <div className={getClassName('pages__banner-container')}>
           <a className={getClassName('pages__link')} href={props.linkUrl}>
-            <Section name={props.title} textClassName={getClassName('pages__link')} />
+            <Section light={props.light} name={props.title} textClassName={getClassName('pages__link')} />
           </a>
         </div>
-      </NoSideBar>
+      </PageContentContainer>
     </div>
   </main>
 );

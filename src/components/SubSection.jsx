@@ -24,9 +24,11 @@ const SubSection = (props) => {
 
   return (
     <div className={classNameFinal.join(' ')} {...rest}>
-      <BpkText tagName="h3" textStyle="lg" className={textClassNameFinal.join(' ')}>
-        {name}
-      </BpkText>
+      {name &&
+        <BpkText tagName="h3" textStyle="lg" className={textClassNameFinal.join(' ')}>
+          {name}
+        </BpkText>
+        }
       {children}
     </div>
   );

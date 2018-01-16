@@ -18,7 +18,7 @@ const Section = (props) => {
     classNameFinal.push(getClassName('section__sub-section--no-padding'));
     textClassNameFinal.push(getClassName('section__sub-section--text--no-padding'));
   }
-  if (fancy) textClassNameFinal.push(getClassName('section__sub-section--text--fancy'));
+  if (fancy) textClassNameFinal.push(getClassName('section__section--text--fancy'));
   if (className) { classNameFinal.push(className); }
   if (textClassName) { textClassNameFinal.push(textClassName); }
 
