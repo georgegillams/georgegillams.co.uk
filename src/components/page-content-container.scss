@@ -10,11 +10,12 @@
 
   &__centre-column {
     display: flex;
-    width: 100%;
+    width: 80%;
     max-width: 74rem;
     flex-direction: row;
 
     @include bpk-breakpoint-tablet {
+      width: 90%;
       flex-direction: column;
     }
   }

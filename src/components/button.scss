@@ -33,18 +33,5 @@
         background-color: rgb(40, 102, 150);
       }
     }
-
-    &--vertical-spread {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        height: 28rem;
-    }
-
-    &--horizontal-spread {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-    }
   }
 }

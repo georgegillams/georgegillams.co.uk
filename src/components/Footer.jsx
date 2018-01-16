@@ -20,32 +20,25 @@ const linkStyle = { color: colorGray700, fontFamily: 'Neuton' };
 class Footer extends Component {
   constructor(props) {
     super(props);
-
-    this.state = { isOpen: false };
   }
 
-    toggle = () => {
-      this.setState({ isOpen: !this.state.isOpen });
-    }
+  render() {
+    const { className, ...rest } = this.props;
+    const outerClassNameFinal = [getClassName('footer__container')];
+    if (className) { outerClassNameFinal(className); }
 
-  // <SubSection clasName={getClassName('navigation-bar__item')} name="TEST" />
-    render() {
-      const { className, ...rest } = this.props;
-      const outerClassNameFinal = [getClassName('footer__container')];
-      if (className) { outerClassNameFinal(className); }
-
-      return (
-        <footer className={outerClassNameFinal.join(' ')} style={{ backgroundImage: `url(${blackPaper})` }} {...rest}>
-          <GetSocial light alwaysCentered />
-          <a className={getClassNamePages('pages__link')} href="/site-map" >
-            <SubSection noPadding light name="Site map →" textClassName={getClassName('pages__link')} />
-          </a>
-          <PersonalDetails centralisedSpread light />
-          <TechSpecs light />
-          <SubSection fancy noPadding light name="© copyright George Gillams 2017 - 2018" />
-        </footer>
-      );
-    }
+    return (
+      <footer className={outerClassNameFinal.join(' ')} style={{ backgroundImage: `url(${blackPaper})` }} {...rest}>
+        <GetSocial light alwaysCentered />
+        <a className={getClassNamePages('pages__link')} href="/site-map" >
+          <SubSection noPadding light name="Site map →" textClassName={getClassName('pages__link')} />
+        </a>
+        <PersonalDetails centralisedSpread light />
+        <TechSpecs light />
+        <SubSection fancy noPadding light >© copyright George Gillams 2017 - 2018</SubSection>
+      </footer>
+    );
+  }
 }
 
 Footer.propTypes = {

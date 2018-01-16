@@ -1,12 +1,10 @@
 import React from 'react';
-import BpkCard from 'bpk-component-card';
-import Section from './Section';
+import PropTypes from 'prop-types';
 
 import STYLES from './button.scss';
 
 const getClassName = className => STYLES[className] || 'UNKNOWN';
 
-/* eslint-disable max-len */
 const Button = (props) => {
   const {
     bouncy, onClick, className, children, ...rest
@@ -25,6 +23,20 @@ const Button = (props) => {
       {children}
     </button>
   );
+};
+
+Button.propTypes = {
+  bouncy: PropTypes.bool,
+  onClick: PropTypes.func,
+  className: PropTypes.string,
+  children: PropTypes.node,
+};
+
+Button.defaultProps = {
+  bouncy: false,
+  onClick: null,
+  className: null,
+  children: null,
 };
 
 export default Button;
