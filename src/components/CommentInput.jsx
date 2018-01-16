@@ -67,6 +67,7 @@ class CommentInput extends React.Component {
                       onChange={this.onCommentChanged}
                       placeholder="Your comment(s)"
                     />
+                    <br />
                     <Button
                       className={getClassName('comments__component')}
                       onClick={this.submitComment}
