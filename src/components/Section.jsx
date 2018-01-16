@@ -17,6 +17,10 @@ const Section = (props) => {
     classNameFinal.push(getClassName('typography--light'));
     textClassNameFinal.push(getClassName('typography--light'));
   }
+  if (link) {
+    classNameFinal.push(getClassName('typography--link'));
+    textClassNameFinal.push(getClassName('typography--link'));
+  }
   if (noPadding) {
     classNameFinal.push(getClassName('typography--no-padding'));
     textClassNameFinal.push(getClassName('typography--no-padding'));
