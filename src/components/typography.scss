@@ -27,6 +27,8 @@
     font-family: 'Neuton', serif;
     text-decoration: none;
     width: 100%;
+    padding-bottom: 1rem;
+}
     
     &__text {
       color: $bpk-color-gray-700;
@@ -35,7 +37,6 @@
       text-decoration: none;
 
         &--subsection{
-      padding-bottom: .4rem;
       text-decoration: none;
         }
 
@@ -46,7 +47,6 @@
         }
 
     }
-}
 
       &--fancy {
         font-family: 'Tangerine', cursive;

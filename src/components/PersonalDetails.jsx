@@ -12,13 +12,13 @@ const PersonalDetails = (props) => {
 
   return (
     <div className={classNameFinal.join(' ')} {...rest} >
-      <Section light fancy={fancy}>
+      <Section noPadding light fancy={fancy}>
           Open-source Software Engineer at <TextLink light={light} fancy={fancy} href="https://github.com/Skyscanner" rel="noopener noreferrer" target="_blank">Skyscanner</TextLink>
       </Section>
-      <Section light fancy={fancy}>
+      <Section noPadding light fancy={fancy}>
           Master student at <TextLink light={light} fancy={fancy} href="https://www.ecs.soton.ac.uk/programmes/g600-meng-software-engineering-4-yrs#modules" rel="noopener noreferrer" target="_blank">Southampton</TextLink>
       </Section>
-      <Section light fancy={fancy}>
+      <Section noPadding light fancy={fancy}>
            Based in London.
       </Section>
     </div>

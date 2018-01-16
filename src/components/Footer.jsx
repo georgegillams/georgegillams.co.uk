@@ -23,6 +23,8 @@ class Footer extends Component {
   }
 
   render() {
+    const currentYear = (new Date()).getFullYear();
+
     const { className, ...rest } = this.props;
     const outerClassNameFinal = [getClassName('footer__container')];
     if (className) { outerClassNameFinal.push(className); }
@@ -35,7 +37,7 @@ class Footer extends Component {
         </a>
         <PersonalDetails light className={getClassName('footer__component')} />
         <TechSpecs light className={getClassName('footer__component')} />
-        <SubSection fancy noPadding light >© copyright George Gillams 2017 - 2018</SubSection>
+        <SubSection fancy noPadding light >{`© copyright George Gillams 2017 - ${currentYear}`}</SubSection>
       </footer>
     );
   }
