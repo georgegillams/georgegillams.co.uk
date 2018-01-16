@@ -26,6 +26,7 @@
     color: $bpk-color-gray-700;
     font-family: 'Neuton', serif;
     text-decoration: none;
+    width: 100%;
     
     &__text {
       color: $bpk-color-gray-700;
@@ -35,11 +36,13 @@
 
         &--subsection{
       padding-bottom: .4rem;
+      text-decoration: none;
         }
 
         &--section {
       font-size: 2.2rem;
       line-height: 2.2rem;
+      text-decoration: none;
         }
 
     }
@@ -51,6 +54,10 @@
 
       &--no-padding {
         padding:0;
+      }
+
+      &--inline {
+        width: auto;
       }
 
       &--link {

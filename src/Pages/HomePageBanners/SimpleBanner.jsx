@@ -12,8 +12,8 @@ const SimpleBanner = props => (
     <div className={getClassName('pages__banner-image')} style={{ backgroundImage: `url(${props.imageSrc})` }} >
       <PageContentContainer>
         <div className={getClassName('pages__banner-container')}>
-          <a className={getClassName('pages__link')} href={props.linkUrl}>
-            <Section light={props.light} name={props.title} textClassName={getClassName('pages__link')} />
+          <a style={{ textDecoration: 'none' }} href={props.linkUrl}>
+            <Section light={props.light} name={props.title} link />
           </a>
         </div>
       </PageContentContainer>
