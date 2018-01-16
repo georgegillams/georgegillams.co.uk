@@ -19,57 +19,65 @@ const getClassName = className => STYLES[className] || 'UNKNOWN';
 
 const GetSocial = (props) => {
   const {
-    className, children, alwaysCentered, ...rest
+    light, className, alwaysCentered, ...rest
   } = props;
   const outerClassNameFinal = [];
-  if (className) { outerClassNameFinal(className); }
+  if (className) { outerClassNameFinal.push(className); }
 
   const containerClassNameFinal = [getClassName('get-social__container')];
+  const iconClassNameFinal = [getClassName('get-social__icon')];
+  const darkIconClassNameFinal = [getClassName('get-social__icon')];
+
   if (alwaysCentered) { containerClassNameFinal.push(getClassName('get-social__container--centered')); }
+
+  if (light) {
+    darkIconClassNameFinal.push(getClassName('get-social__icon--light-inverted'));
+    iconClassNameFinal.push(getClassName('get-social__icon--light'));
+  } else {
+    darkIconClassNameFinal.push(getClassName('get-social__icon--no-light'));
+    iconClassNameFinal.push(getClassName('get-social__icon--no-light'));
+  }
 
   return (
     <div className={outerClassNameFinal.join(' ')} {...rest} >
       <div className={containerClassNameFinal.join(' ')} style={{ paddingBottom: '0.4rem' }}>
         <a className={getClassName('get-social__link')} href="https://github.com/georgegillams/" rel="noopener noreferrer" target="_blank">
-          <img alt="github" width={5} height={5} className={getClassName('get-social__icon')} src={githubIcon} />
+          <img alt="github" width={5} height={5} className={darkIconClassNameFinal.join(' ')} src={githubIcon} />
         </a>
         {/* <a className={getClassName('get-social__link')} href="https://github.com/Skyscanner" rel="noopener noreferrer" target="_blank">
-      <img alt="Skyscanner" width={5} height={5} className={getClassName('get-social__icon')} src={skyscannerIcon} />
+      <img alt="Skyscanner" width={5} height={5} className={iconClassNameFinal.join(' ')} src={skyscannerIcon} />
       </a> */}
         <a className={getClassName('get-social__link')} href="https://www.facebook.com/george333123" rel="noopener noreferrer" target="_blank">
-          <img alt="facebook" width={5} height={5} className={getClassName('get-social__icon')} src={facebookIcon} />
+          <img alt="facebook" width={5} height={5} className={iconClassNameFinal.join(' ')} src={facebookIcon} />
         </a>
         <a className={getClassName('get-social__link')} href="https://www.linkedin.com/in/george-gillams-37537077" rel="noopener noreferrer" target="_blank">
-          <img alt="linkedin" width={5} height={5} className={getClassName('get-social__icon')} src={linkedinIcon} />
+          <img alt="linkedin" width={5} height={5} className={iconClassNameFinal.join(' ')} src={linkedinIcon} />
         </a>
         <a className={getClassName('get-social__link')} href="https://www.flickr.com/people/137198167@N03/" rel="noopener noreferrer" target="_blank">
-          <img alt="flickr" width={5} height={5} className={getClassName('get-social__icon')} src={flickrIcon} />
+          <img alt="flickr" width={5} height={5} className={iconClassNameFinal.join(' ')} src={flickrIcon} />
         </a>
-      </div>
-      <div className={containerClassNameFinal.join(' ')} >
         <a className={getClassName('get-social__link')} href="https://www.dropbox.com/request/Xin5hG6X6zX2z94VLJJm" rel="noopener noreferrer" target="_blank">
-          <img alt="dropbox" width={5} height={5} className={getClassName('get-social__icon')} src={dropboxIcon} />
+          <img alt="dropbox" width={5} height={5} className={iconClassNameFinal.join(' ')} src={dropboxIcon} />
         </a>
         <a className={getClassName('get-social__link')} href="mailto:g@georgegillams.co.uk" rel="noopener noreferrer" target="_blank">
-          <img alt="email" width={5} height={5} className={getClassName('get-social__icon')} src={emailIcon} />
+          <img alt="email" width={5} height={5} className={darkIconClassNameFinal.join(' ')} src={emailIcon} />
         </a>
         <a className={getClassName('get-social__link')} href="tel:+447867592615" rel="noopener noreferrer" target="_blank">
-          <img alt="phone" width={5} height={5} className={getClassName('get-social__icon')} src={phoneIcon} />
+          <img alt="phone" width={5} height={5} className={darkIconClassNameFinal.join(' ')} src={phoneIcon} />
         </a>
-      </div>
-      <div className={getClassName('get-social__container')} style={{ paddingTop: '1rem' }}>
-        {children}
       </div>
     </div>
   );
 };
 
 GetSocial.propTypes = {
+  light: PropTypes.bool,
   className: PropTypes.string,
   alwaysCentered: PropTypes.bool,
 };
 
 GetSocial.defaultProps = {
+  light: false,
   className: null,
   alwaysCentered: false,
 };

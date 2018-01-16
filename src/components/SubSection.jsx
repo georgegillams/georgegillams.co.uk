@@ -2,36 +2,53 @@ import PropTypes from 'prop-types';
 import React from 'react';
 import BpkText from 'bpk-component-text';
 
-import STYLES from './section.scss';
+import STYLES from './typography.scss';
 
 const getClassName = className => STYLES[className] || 'UNKNOWN';
 
 const SubSection = (props) => {
   const {
-    light, name, className, noPadding, textClassName, children, ...rest
+    link, fancy, light, name, className, noPadding, textClassName, children, ...rest
   } = props;
 
-  const classNameFinal = [getClassName('section__sub-section')];
-  const textClassNameFinal = [getClassName('section__sub-section--text')];
-  if (light) { textClassNameFinal.push(getClassName('section__sub-section--text--light')); }
+  const classNameFinal = [getClassName('typography__main')];
+  const textClassNameFinal = [getClassName('typography__text-subsection')];
+  if (light) {
+    classNameFinal.push(getClassName('typography--light'));
+    textClassNameFinal.push(getClassName('typography--light'));
+  }
+  if (link) {
+    classNameFinal.push(getClassName('typography--link'));
+    textClassNameFinal.push(getClassName('typography--link'));
+  }
   if (noPadding) {
-    classNameFinal.push(getClassName('section__sub-section--no-padding'));
-    textClassNameFinal.push(getClassName('section__sub-section--text--no-padding'));
+    classNameFinal.push(getClassName('typography--no-padding'));
+    textClassNameFinal.push(getClassName('typography--no-padding'));
+  }
+  if (fancy) {
+    classNameFinal.push(getClassName('typography--fancy'));
+    textClassNameFinal.push(getClassName('typography--fancy'));
   }
   if (className) { classNameFinal.push(className); }
   if (textClassName) { textClassNameFinal.push(textClassName); }
 
   return (
     <div className={classNameFinal.join(' ')} {...rest}>
-      <BpkText tagName="h3" textStyle="lg" className={textClassNameFinal.join(' ')}>
-        {name}
-      </BpkText>
+      {name &&
+        <BpkText tagName="h3" textStyle="lg" className={textClassNameFinal.join(' ')}>
+          {name}
+        </BpkText>
+        }
       {children}
     </div>
   );
 };
 
 SubSection.propTypes = {
+  link: PropTypes.bool,
+  fancy: PropTypes.bool,
+  light: PropTypes.bool,
+  noPadding: PropTypes.bool,
   name: PropTypes.string.isRequired,
   className: PropTypes.string,
   textClassName: PropTypes.string,
@@ -40,6 +57,10 @@ SubSection.propTypes = {
 };
 
 SubSection.defaultProps = {
+  link: false,
+  fancy: false,
+  light: false,
+  noPadding: false,
   className: null,
   textClassName: null,
   style: null,

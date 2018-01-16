@@ -5,7 +5,7 @@ import SubSection from './SubSection';
 import CommentInput from './CommentInput';
 import RestDbIoFunctions from '../RestDbIoFunctions';
 
-import STYLES from './card.scss';
+import STYLES from './comments.scss';
 
 const getClassName = className => STYLES[className] || 'UNKNOWN';
 
@@ -21,7 +21,7 @@ class Comments extends React.Component {
       pageId, className, ...rest
     } = this.props;
 
-    const classNameFinal = [getClassName('card__image')];
+    const classNameFinal = [];
     if (className) classNameFinal.push(className);
 
     RestDbIoFunctions.getComments(pageId, (results) => {
@@ -49,7 +49,7 @@ class Comments extends React.Component {
 
 
     return (
-      <Section name="Comments" >
+      <Section name="Comments" className={classNameFinal.join(' ')}>
         {this.state.comments ?
                 (comments)
           :

@@ -22,13 +22,29 @@
     height: 100%;
     max-height: 2rem;
     filter: opacity(70%);
+    padding: 0 1rem;
 
+    &--light {
+      filter: opacity(100%);
+
+
+      &:hover {
+        filter: opacity(80%);
+      }
+  }
+  
+      &--light-inverted {
+        filter: brightness(0) invert(1);
+        
+        &:hover {
+          filter:brightness(0) invert(1) opacity(90%);
+        }
+      }
+
+  &--no-light {
     &:hover {
       filter: opacity(90%);
     }
   }
-
-  &__link {
-    margin: 0 .5rem 0 .2rem;
   }
 }

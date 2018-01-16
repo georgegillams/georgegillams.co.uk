@@ -1,18 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import Button from './Button';
-import SubSection from './SubSection';
-
-import STYLES from './navigation-bar.scss';
-import STYLES2 from '../Pages/pages.scss';
-
-const getClassName = className => STYLES[className] || 'UNKNOWN';
-const getClassName2 = className => STYLES2[className] || 'UNKNOWN';
-
-import { colorGray700 } from 'bpk-tokens/tokens/base.es6';
-
-const mainLinkStyle = { color: '#3e9eeb', fontFamily: 'Neuton', fontWeight: 'bold' };
-const linkStyle = { color: colorGray700, fontFamily: 'Neuton' };
 
 class NavigationItem extends Component {
   constructor(props) {
@@ -29,7 +17,7 @@ class NavigationItem extends Component {
 
     return (
       <div className={outerClassNameFinal.join(' ')} {...rest}>
-        <a className={getClassName2('pages__link')} href={linkUrl}>
+        <a href={linkUrl}>
           <Button large bouncy >{name}</Button>
         </a>
       </div>

@@ -6,25 +6,15 @@
     flex-wrap: wrap;
     width: 100%;
     flex-direction: row;
-    justify-content:right;
-    padding-right: 0.5rem;
+    justify-content: center;
+    align-items: center;
 
     @include bpk-breakpoint-tablet {
+        //TODO CODE
     }
   }
 
   &__nav-item {
-      padding: 1.5rem;
-      padding-left: 0;
-    // display: inline-block;
-    // width: 100%;
-    // max-width: 2rem;
-    // height: 100%;
-    // max-height: 2rem;
-    // filter: opacity(70%);
-
-    // &:hover {
-    //   filter: opacity(90%);
-    // }
+      padding: 0 1rem;
   }
 }

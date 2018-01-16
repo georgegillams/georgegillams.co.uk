@@ -3,7 +3,7 @@ import SimpleBanner from './SimpleBanner';
 import iceland from '../Travel/images/iceland2.jpg';
 
 const IcelandBanner = () => (
-  <SimpleBanner imageSrc={iceland} linkUrl="/travel/iceland-2018" title="Iceland 2018" />
+  <SimpleBanner light imageSrc={iceland} linkUrl="/travel/iceland-2018" title="Iceland 2018" />
 );
 
 export default IcelandBanner;
