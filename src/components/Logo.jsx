@@ -12,7 +12,7 @@ const FadingLazyLoadedImage = withLoadingBehavior(withLazyLoading(BpkImage, docu
 
 const ProfilePic = (props) => {
   const {
-    className, alwaysCentered, light, ...rest
+    small, className, alwaysCentered, light, ...rest
   } = props;
   const classNameFinal = [getClassName('logo__container')];
   if (className) { classNameFinal.push(className); }
@@ -21,19 +21,24 @@ const ProfilePic = (props) => {
   const baseTextClassNameFinal = [getClassName('logo__logo-base')];
   if (light) { baseTextClassNameFinal.push(getClassName('logo__logo-base--light')); }
 
+  const largeTextClassNameFinal = [getClassName('logo__logo-large')];
+  if (small) { largeTextClassNameFinal.push(getClassName('logo__logo-large--smaller')); }
+
   return (
     <div className={classNameFinal.join(' ')} {...rest} >
       <a href="/">
-        <BpkText textStyle="xxl" className={getClassName('logo__logo-large')} >
+        <BpkText textStyle="xxl" className={largeTextClassNameFinal.join(' ')} >
           {'<G/>'}
         </BpkText>
-        <br />
-      </a>
-      <a href="/">
-        <br />
-        <BpkText textStyle="lg" className={baseTextClassNameFinal.join(' ')} >
-          {'George Gillams'}
-        </BpkText>
+        {!small &&
+        <div>
+          <br />
+          <br />
+          <BpkText textStyle="lg" className={baseTextClassNameFinal.join(' ')} >
+            {'George Gillams'}
+          </BpkText>
+        </div>
+        }
       </a>
     </div>
   );

@@ -2,7 +2,6 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import BpkImage, { withLazyLoading, withLoadingBehavior } from 'bpk-component-image';
 import Section from './../../components/Section';
-import SideBar from '../../components/SideBar';
 import degreeCertificate from './images/degreeCertificate.jpg';
 
 import STYLES from '../pages.scss';
@@ -18,13 +17,11 @@ const Degree = (props) => {
   if (className) { classNameFinal.push(className); }
 
   return (
-    <SideBar>
-      <main className={classNameFinal.join(' ')} {...rest} >
-        <Section name="MEng Software Engineering 🎓 2018" >
-          <FadingLazyLoadedImage className={getClassName('pages__image')} altText="Degree certificate" width={1000} height={1414} src={degreeCertificate} />
-        </Section>
-      </main>
-    </SideBar>
+    <main className={classNameFinal.join(' ')} {...rest} >
+      <Section name="MEng Software Engineering 🎓 2018" >
+        <FadingLazyLoadedImage className={getClassName('pages__image')} altText="Degree certificate" width={1000} height={1414} src={degreeCertificate} />
+      </Section>
+    </main>
   );
 };
 

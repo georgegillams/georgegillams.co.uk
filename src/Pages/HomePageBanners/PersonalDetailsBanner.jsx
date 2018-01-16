@@ -1,7 +1,7 @@
 import React from 'react';
 import Logo from '../../components/Logo';
 import PersonalDetails from '../../components/PersonalDetails';
-import NoSideBar from '../../components/NoSideBar';
+import PageContentContainer from '../../components/PageContentContainer';
 import blackwood from '../../images/blackwood.jpg';
 
 import STYLES from '../pages.scss';
@@ -13,12 +13,12 @@ const PersonalDetailsBanner = () => (
   <main className={getClassName('pages__banner')}>
     <div className={getClassName('pages__banner-image')} style={{ background: 'black', backgroundImage: `url(${blackwood})` }} >
       <div>
-        <NoSideBar>
+        <PageContentContainer>
           <div className={`${getClassName('pages__banner-container')} ${getClassName('pages__banner-container--vertical-spread')}`}>
             <Logo alwaysCentered light />
             <PersonalDetails centralisedSpread light />
           </div>
-        </NoSideBar>
+        </PageContentContainer>
       </div>
     </div>
   </main>

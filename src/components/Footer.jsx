@@ -1,10 +1,16 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import SubSection from './SubSection';
+import TechSpecs from './TechSpecs';
+import GetSocial from './GetSocial';
+import PersonalDetails from './PersonalDetails';
+import blackPaper from '../images/blackPaper.jpg';
 
 import STYLES from './footer.scss';
+import PAGE_STYLES from '../Pages/pages.scss';
 
 const getClassName = className => STYLES[className] || 'UNKNOWN';
+const getClassNamePages = className => PAGE_STYLES[className] || 'UNKNOWN';
 
 import { colorGray700 } from 'bpk-tokens/tokens/base.es6';
 
@@ -25,12 +31,18 @@ class Footer extends Component {
   // <SubSection clasName={getClassName('navigation-bar__item')} name="TEST" />
     render() {
       const { className, ...rest } = this.props;
-      const outerClassNameFinal = [getClassName('navigation-bar__bar')];
+      const outerClassNameFinal = [getClassName('footer__container')];
       if (className) { outerClassNameFinal(className); }
 
       return (
-        <footer className={outerClassNameFinal.join(' ')} {...rest}>
-          <SubSection fancy noPadding name="© copyright George Gillams 2017 - 2018" />
+        <footer className={outerClassNameFinal.join(' ')} style={{ backgroundImage: `url(${blackPaper})` }} {...rest}>
+          <GetSocial light alwaysCentered />
+          <a className={getClassNamePages('pages__link')} href="/site-map" >
+            <SubSection noPadding light name="Site map →" textClassName={getClassName('pages__link')} />
+          </a>
+          <PersonalDetails centralisedSpread light />
+          <TechSpecs light />
+          <SubSection fancy noPadding light name="© copyright George Gillams 2017 - 2018" />
         </footer>
       );
     }

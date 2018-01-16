@@ -1,6 +1,18 @@
 @import '~bpk-mixins';
 
 .footer {
+  &__container {
+    display: flex;
+    height: auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+  }
+
   &__bar {
     display: flex;
     flex-wrap: wrap;
