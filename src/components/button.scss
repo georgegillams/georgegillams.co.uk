@@ -1,4 +1,5 @@
 @import '~bpk-mixins';
+@import "../../bower_components/animatewithsass/animate.scss";
 
 .button {
   &__outer {
@@ -14,14 +15,20 @@
       padding: .1rem .5rem;
       background-color: transparent;
       color: $bpk-color-gray-700;
+      transition: all 0.1s;
 
+      &:focus,
+      &:active,
       &:hover {
         color: white;
         background-color: rgb(62,158,235);
+       @include pulse();
       }
     }
 
     &--no-bouncy {
+      &:focus,
+      &:active,
       &:hover {
         background-color: rgb(40, 102, 150);
       }
