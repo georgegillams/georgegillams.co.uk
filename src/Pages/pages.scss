@@ -2,7 +2,7 @@
 
 .pages {
   &__site-map-item {
-    padding-bottom: 1.5rem;
+      width: auto;
   }
 
   &__slider {
@@ -37,7 +37,7 @@
   &__image {
       display: inline-block;
       margin-bottom: 1rem;
-      width:80%;
+      width:65%;
 
     @include bpk-breakpoint-tablet {
       width:90%;

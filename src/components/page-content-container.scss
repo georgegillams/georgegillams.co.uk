@@ -11,8 +11,9 @@
   &__centre-column {
     display: flex;
     width: 80%;
-    max-width: 74rem;
+    max-width: 54rem;
     flex-direction: row;
+    justify-content: center;
 
     @include bpk-breakpoint-tablet {
       width: 90%;
