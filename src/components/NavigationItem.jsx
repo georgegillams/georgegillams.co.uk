@@ -18,7 +18,7 @@ class NavigationItem extends Component {
     return (
       <div className={outerClassNameFinal.join(' ')} {...rest}>
         <a href={linkUrl}>
-          <Button large bouncy >{name}</Button>
+          <Button bouncy >{name}</Button>
         </a>
       </div>
     );

@@ -3,6 +3,9 @@ import PropTypes from 'prop-types';
 import SubSection from './SubSection';
 import Logo from './Logo';
 import NavigationItem from './NavigationItem';
+import Button from './Button';
+import BpkIconClose from 'bpk-component-icon/lg/close';
+import BpkIconMenu from 'bpk-component-icon/lg/menu';
 
 import STYLES from './navigation-bar.scss';
 
@@ -27,19 +30,28 @@ class NavigationBar extends Component {
   // <SubSection clasName={getClassName('navigation-bar__item')} name="TEST" />
     render() {
       const { className, ...rest } = this.props;
-      const outerClassNameFinal = [getClassName('navigation-bar__bar')];
-      if (className) { outerClassNameFinal(className); }
+      const outerClassNameFinal = [getClassName('navigation-bar__container')];
+      const navBarClassNameFinal = [getClassName('navigation-bar__bar')];
+      if (this.state.isOpen) { navBarClassNameFinal.push(getClassName('navigation-bar__bar--open')); }
+      if (className) { outerClassNameFinal.push(className); }
 
       return (
-        <header className={outerClassNameFinal.join(' ')} {...rest}>
-          <NavigationItem className={getClassName('navigation-bar__nav-item')} name="Articles" linkUrl="/articles" />
-          <NavigationItem className={getClassName('navigation-bar__nav-item')} name="Travel" linkUrl="/travel" />
-          <NavigationItem className={getClassName('navigation-bar__nav-item')} name="Art" linkUrl="/photoshop" />
-          <Logo className={getClassName('navigation-bar__nav-item')} small />
-          <NavigationItem className={getClassName('navigation-bar__nav-item')} name="Work" linkUrl="/work" />
-          <NavigationItem className={getClassName('navigation-bar__nav-item')} name="About" linkUrl="/about" />
-          <NavigationItem className={getClassName('navigation-bar__nav-item')} name="Contact" linkUrl="/contact" />
-        </header>
+        <div className={outerClassNameFinal.join(' ')} {...rest}>
+          <div className={getClassName('navigation-bar__burger-button')}>
+            <Button bouncy onClick={this.toggle} >
+              {this.state.isOpen ? (<BpkIconClose style={{ paddingTop: '.3rem' }} />) : (<BpkIconMenu style={{ paddingTop: '.3rem' }} />)}
+            </Button>
+          </div>
+          <header className={navBarClassNameFinal.join(' ')} {...rest}>
+            <NavigationItem className={getClassName('navigation-bar__nav-item')} name="Articles" linkUrl="/articles" />
+            <NavigationItem className={getClassName('navigation-bar__nav-item')} name="Travel" linkUrl="/travel" />
+            <NavigationItem className={getClassName('navigation-bar__nav-item')} name="Art" linkUrl="/photoshop" />
+            <Logo className={getClassName('navigation-bar__nav-item')} small />
+            <NavigationItem className={getClassName('navigation-bar__nav-item')} name="Work" linkUrl="/work" />
+            <NavigationItem className={getClassName('navigation-bar__nav-item')} name="About" linkUrl="/about" />
+            <NavigationItem className={getClassName('navigation-bar__nav-item')} name="Contact" linkUrl="/contact" />
+          </header>
+        </div>
       );
     }
 }

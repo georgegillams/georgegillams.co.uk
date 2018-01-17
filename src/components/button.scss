@@ -24,6 +24,7 @@
       &:active,
       &:hover {
         color: white;
+        fill: white;
         background-color: rgb(62,158,235);
        @include pulse();
       }
