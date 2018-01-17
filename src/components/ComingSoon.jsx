@@ -17,11 +17,9 @@ const ComingSoon = (props) => {
 
   return (
     <div className={classNameFinal.join(' ')} {...rest} >
-      <a href="/">
-        <BpkText textStyle="xxl" className={largeTextClassNameFinal.join(' ')} >
-          {'Coming soon - Watch this space 🚀'}
-        </BpkText>
-      </a>
+      <BpkText textStyle="xxl" className={largeTextClassNameFinal.join(' ')} >
+        {'Coming soon - Watch this space 🚀'}
+      </BpkText>
     </div>
   );
 };
