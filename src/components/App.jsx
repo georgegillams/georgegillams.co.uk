@@ -9,6 +9,7 @@ import PageContentContainer from './PageContentContainer';
 
 // <editor-fold> Content Imports
 import HomePage from '../Pages/HomePage';
+import ComingSoon from './ComingSoon';
 import Work from '../Pages/Work';
 import Photoshop from '../Pages/Photoshop';
 import SiteMap from '../Pages/SiteMap';
@@ -59,11 +60,11 @@ class App extends React.Component {
           {/* <Route path="/documents/degree" component={Degree} /> */}
           <Route path="/net-neutrality" component={NetNeutrality} />
           <Route path="/site-map" component={SiteMap} />
-          <Route path="/work" component={Work} />
+          <Route path="/work" component={ComingSoon} />
           <Route path="/travel" component={Travel} />
           <Route path="/articles" component={Articles} />
           <Route path="/about" component={AboutMe} />
-          <Route path="/photoshop" component={Photoshop} />
+          <Route path="/photoshop" component={ComingSoon} />
           <Route path="/contact" component={Contact} />
           <Route component={ForOhFour} />
         </Switch>
