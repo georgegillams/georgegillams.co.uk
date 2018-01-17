@@ -1,5 +1,5 @@
 import React from 'react';
-import Section from '../components/Section';
+import TextLink from '../components/TextLink';
 import SubSection from '../components/SubSection';
 
 import STYLES from './pages.scss';
@@ -10,44 +10,29 @@ const getClassName = className => STYLES[className] || 'UNKNOWN';
 const SiteMap = () => (
   <div className={getClassName('pages__site-map-tree')}>
     <div>
-      <Section className={getClassName('pages__site-map-item')} name="Articles 📝">
-        <a href="/articles/vim">
-          <SubSection className={getClassName('pages__site-map-item')}noPadding link name="Switching to Vim" />
-        </a>
+      <SubSection className={getClassName('pages__site-map-item')} name="Articles 📝">
+        <TextLink href="/articles/vim">Switching to Vim</TextLink>
         <br />
-        <a href="/articles/net-neutrality">
-          <SubSection className={getClassName('pages__site-map-item')}noPadding link name="My Take on Net Neutrality" />
-        </a>
-      </Section>
-      <Section className={getClassName('pages__site-map-item')} name="Travel ✈️">
-        {/* <a  href="https://flic.kr/s/aHsm9VxHMV"> */}
-        <a href="/travel/iceland-2018">
-          <SubSection className={getClassName('pages__site-map-item')}noPadding link name="Iceland" />
-        </a>
+        <TextLink href="/articles/net-neutrality">My Take on Net Neutrality</TextLink>
+      </SubSection>
+      <SubSection className={getClassName('pages__site-map-item')} name="Travel ✈️">
+        <TextLink href="/travel/iceland-2018"> Iceland </TextLink>
         <br />
-        <a href="/travel/longleat-2017">
-          <SubSection className={getClassName('pages__site-map-item')}noPadding link name="Longleat" />
-        </a>
+        <TextLink href="/travel/longleat-2017"> Longleat </TextLink>
         <br />
-        <a href="/travel/munich-2017">
-          <SubSection className={getClassName('pages__site-map-item')}noPadding link name="Munich" />
-        </a>
-      </Section>
-      {/* <Section className={getClassName('pages__site-map-item')} name="Documents 🥇">
-        <a  href="/documents/degree">
-         <SubSection nclassName={getClassName('pages__site-map-item')}oPadding link name="Degree Certificate - 2018" />
-        </a>
+        <TextLink href="/travel/munich-2017"> Munich </TextLink>
+      </SubSection>
+      {/* <SubSection className={getClassName('pages__site-map-item')} name="Documents 🥇">
+        <TextLink  href="/documents/degree">
+         <SubSection nclassName={getClassName('pages__site-map-item')}oPadding link name="Degree Certificate - 2018
+        </TextLink>
         <br />
-      </Section> */}
-      <Section className={getClassName('pages__site-map-item')} name="Other stuff 🤷‍♂️">
-        <a href="/about">
-          <SubSection className={getClassName('pages__site-map-item')}noPadding link name="About me" />
-        </a>
+      </SubSection> */}
+      <SubSection className={getClassName('pages__site-map-item')} name="Other stuff 🤷‍♂️">
+        <TextLink href="/about"> About me </TextLink>
         <br />
-        <a href="/contact">
-          <SubSection className={getClassName('pages__site-map-item')}noPadding link name="Contact" />
-        </a>
-      </Section>
+        <TextLink href="/contact"> Contact </TextLink>
+      </SubSection>
     </div>
   </div>
 );
