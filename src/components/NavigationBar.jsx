@@ -32,7 +32,11 @@ class NavigationBar extends Component {
       const { className, ...rest } = this.props;
       const outerClassNameFinal = [getClassName('navigation-bar__container')];
       const navBarClassNameFinal = [getClassName('navigation-bar__bar')];
-      if (this.state.isOpen) { navBarClassNameFinal.push(getClassName('navigation-bar__bar--open')); }
+      const animatedContainerClassNameFinal = [getClassName('navigation-bar__animated-container')];
+      if (this.state.isOpen) {
+        animatedContainerClassNameFinal.push(getClassName('navigation-bar__animated-container--open'));
+        navBarClassNameFinal.push(getClassName('navigation-bar__bar--open'));
+      }
       if (className) { outerClassNameFinal.push(className); }
 
       return (
@@ -42,15 +46,17 @@ class NavigationBar extends Component {
               {this.state.isOpen ? (<BpkIconClose style={{ paddingTop: '.3rem' }} />) : (<BpkIconMenu style={{ paddingTop: '.3rem' }} />)}
             </Button>
           </div>
-          <header className={navBarClassNameFinal.join(' ')} {...rest}>
-            <NavigationItem className={getClassName('navigation-bar__nav-item')} name="Articles" linkUrl="/articles" />
-            <NavigationItem className={getClassName('navigation-bar__nav-item')} name="Travel" linkUrl="/travel" />
-            <NavigationItem className={getClassName('navigation-bar__nav-item')} name="Art" linkUrl="/photoshop" />
-            <Logo className={getClassName('navigation-bar__nav-item')} small />
-            <NavigationItem className={getClassName('navigation-bar__nav-item')} name="Work" linkUrl="/work" />
-            <NavigationItem className={getClassName('navigation-bar__nav-item')} name="About" linkUrl="/about" />
-            <NavigationItem className={getClassName('navigation-bar__nav-item')} name="Contact" linkUrl="/contact" />
-          </header>
+          <div className={animatedContainerClassNameFinal.join(' ')} {...rest}>
+            <header className={navBarClassNameFinal.join(' ')} {...rest}>
+              <NavigationItem className={getClassName('navigation-bar__nav-item')} name="Articles" linkUrl="/articles" />
+              <NavigationItem className={getClassName('navigation-bar__nav-item')} name="Travel" linkUrl="/travel" />
+              <NavigationItem className={getClassName('navigation-bar__nav-item')} name="Art" linkUrl="/photoshop" />
+              <Logo className={getClassName('navigation-bar__nav-item')} small />
+              <NavigationItem className={getClassName('navigation-bar__nav-item')} name="Work" linkUrl="/work" />
+              <NavigationItem className={getClassName('navigation-bar__nav-item')} name="About" linkUrl="/about" />
+              <NavigationItem className={getClassName('navigation-bar__nav-item')} name="Contact" linkUrl="/contact" />
+            </header>
+          </div>
         </div>
       );
     }
