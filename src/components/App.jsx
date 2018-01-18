@@ -44,7 +44,7 @@ class App extends React.Component {
 
   render() {
     const location = window.location.href;
-    const homePage = location === 'https://georgegillams.co.uk/' || location === 'https://georgegillams.github.io/' || location === 'http://localhost:3001/';
+    const homePage = location === 'https://georgegillams.co.uk/' || location === 'https://georgegillams.github.io/' || location === 'http://localhost:3000/' || location === 'http://localhost:3001/';
 
     const pageContent = (
       <BrowserRouter>

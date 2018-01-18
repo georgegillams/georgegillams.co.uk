@@ -11,19 +11,28 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    overflow: hidden;
 
     @include bpk-breakpoint-tablet {
-        height: 0;
-        transition: all 1s ease-out;
-        display: none;
-        padding: 1rem 0 1rem 0;
+        padding: 0 0 1rem 0;
         flex-direction: column;
     }
 
     &--open {
         display: flex;
-        height: auto;
+    }
+}
+
+  &__animated-container {
+      height: auto;
+      transition: all 1s;
+      overflow: hidden;
+
+    @include bpk-breakpoint-tablet {
+      height: 0;
+    }
+
+    &--open {
+      height: 24rem;
     }
   }
 
