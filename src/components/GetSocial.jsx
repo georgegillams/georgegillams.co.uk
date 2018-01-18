@@ -41,28 +41,28 @@ const GetSocial = (props) => {
   return (
     <div className={outerClassNameFinal.join(' ')} {...rest} >
       <div className={containerClassNameFinal.join(' ')} style={{ paddingBottom: '0.4rem' }}>
-        <a className={getClassName('get-social__link')} href="https://github.com/georgegillams/" rel="noopener noreferrer" target="_blank">
+        <a href="https://github.com/georgegillams/" rel="noopener noreferrer" target="_blank">
           <img alt="github" width={5} height={5} className={darkIconClassNameFinal.join(' ')} src={githubIcon} />
         </a>
-        {/* <a className={getClassName('get-social__link')} href="https://github.com/Skyscanner" rel="noopener noreferrer" target="_blank">
+        {/* <a  href="https://github.com/Skyscanner" rel="noopener noreferrer" target="_blank">
       <img alt="Skyscanner" width={5} height={5} className={iconClassNameFinal.join(' ')} src={skyscannerIcon} />
       </a> */}
-        <a className={getClassName('get-social__link')} href="https://www.facebook.com/george333123" rel="noopener noreferrer" target="_blank">
+        <a href="https://www.facebook.com/george333123" rel="noopener noreferrer" target="_blank">
           <img alt="facebook" width={5} height={5} className={iconClassNameFinal.join(' ')} src={facebookIcon} />
         </a>
-        <a className={getClassName('get-social__link')} href="https://www.linkedin.com/in/george-gillams-37537077" rel="noopener noreferrer" target="_blank">
+        <a href="https://www.linkedin.com/in/george-gillams-37537077" rel="noopener noreferrer" target="_blank">
           <img alt="linkedin" width={5} height={5} className={iconClassNameFinal.join(' ')} src={linkedinIcon} />
         </a>
-        <a className={getClassName('get-social__link')} href="https://www.flickr.com/people/137198167@N03/" rel="noopener noreferrer" target="_blank">
+        <a href="https://www.flickr.com/people/137198167@N03/" rel="noopener noreferrer" target="_blank">
           <img alt="flickr" width={5} height={5} className={iconClassNameFinal.join(' ')} src={flickrIcon} />
         </a>
-        <a className={getClassName('get-social__link')} href="https://www.dropbox.com/request/Xin5hG6X6zX2z94VLJJm" rel="noopener noreferrer" target="_blank">
+        <a href="https://www.dropbox.com/request/Xin5hG6X6zX2z94VLJJm" rel="noopener noreferrer" target="_blank">
           <img alt="dropbox" width={5} height={5} className={iconClassNameFinal.join(' ')} src={dropboxIcon} />
         </a>
-        <a className={getClassName('get-social__link')} href="mailto:g@georgegillams.co.uk" rel="noopener noreferrer" target="_blank">
+        <a href="mailto:g@georgegillams.co.uk" rel="noopener noreferrer" target="_blank">
           <img alt="email" width={5} height={5} className={darkIconClassNameFinal.join(' ')} src={emailIcon} />
         </a>
-        <a className={getClassName('get-social__link')} href="tel:+447867592615" rel="noopener noreferrer" target="_blank">
+        <a href="tel:+447867592615" rel="noopener noreferrer" target="_blank">
           <img alt="phone" width={5} height={5} className={darkIconClassNameFinal.join(' ')} src={phoneIcon} />
         </a>
       </div>

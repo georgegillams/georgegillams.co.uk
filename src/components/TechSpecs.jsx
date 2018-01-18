@@ -2,6 +2,13 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Section from './Section';
 import TextLink from './TextLink';
+import reactIcon from './../icons/react.png';
+import restdbIcon from './../icons/restdb.png';
+import githubIcon from './../icons/github.png';
+
+import STYLES from './tech-specs.scss';
+
+const getClassName = className => STYLES[className] || 'UNKNOWN';
 
 const TechSpecs = (props) => {
   const {
@@ -10,16 +17,26 @@ const TechSpecs = (props) => {
   const outerClassNameFinal = [];
   if (className) { outerClassNameFinal.push(className); }
 
+  const iconClassNameFinal = [getClassName('tech-specs__icon')];
+  const darkIconClassNameFinal = [getClassName('tech-specs__icon')];
+  iconClassNameFinal.push(getClassName('tech-specs__icon--no-light'));
+  darkIconClassNameFinal.push(getClassName('tech-specs__icon--light-inverted'));
+
   return (
     <div className={outerClassNameFinal.join(' ')} {...rest} >
-      <Section noPadding light={light} fancy={fancy}>
-          Built in <TextLink light={light} fancy={fancy} href="https://reactjs.org/" rel="noopener noreferrer" target="_blank">React</TextLink>
-      </Section>
-      <Section noPadding light={light} fancy={fancy}>
-          Hosted on <TextLink light={light} fancy={fancy} href="https://pages.github.com/" rel="noopener noreferrer" target="_blank">GitHub pages</TextLink>
-      </Section>
-      <Section noPadding light={light} fancy={fancy}>
-          Data on <TextLink light={light} fancy={fancy} href="https://restdb.io/" rel="noopener noreferrer" target="_blank">restdb.io</TextLink>
+      <Section className={getClassName('tech-specs__container')} noPadding light={light} fancy={fancy}>
+          Built in
+      <a href="https://reactjs.org/" rel="noopener noreferrer" target="_blank">
+        <img alt="react" width={5} height={5} className={iconClassNameFinal.join(' ')} src={reactIcon} />
+      </a>
+          Hosted on
+      <a href="https://pages.github.com/" rel="noopener noreferrer" target="_blank">
+        <img alt="react" width={5} height={5} className={darkIconClassNameFinal.join(' ')} src={githubIcon} />
+      </a>
+          Data on
+      <a href="https://restdb.io/" rel="noopener noreferrer" target="_blank">
+        <img alt="react" width={5} height={5} className={iconClassNameFinal.join(' ')} src={restdbIcon} />
+      </a>
       </Section>
     </div>
   );
