@@ -18,7 +18,7 @@ class Comments extends React.Component {
 
   render() {
     const {
-      pageId, className, ...rest
+      centered, pageId, className, ...rest
     } = this.props;
 
     const classNameFinal = [];
@@ -55,7 +55,7 @@ class Comments extends React.Component {
           :
                 (commentsLoading)
           }
-        <CommentInput pageId={pageId} />
+        <CommentInput centered={centered} pageId={pageId} />
       </Section >
     );
   }
