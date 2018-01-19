@@ -44,7 +44,7 @@ class App extends React.Component {
 
   render() {
     const location = window.location.href;
-    const homePage = location === 'https://georgegillams.co.uk/' || location === 'https://georgegillams.github.io/' || location === 'http://localhost:3000/' || location === 'http://localhost:3001/' || location === 'https://ancient-springs-77868.herokuapp.com/';
+    const homePage = location === 'https://georgegillams.co.uk/' || location === 'https://georgegillams.github.io/' || location === 'http://www.georgegillams.co.uk/' || location === 'http://localhost:5000/' || location === 'http://localhost:5001/' || location === 'http://localhost:3000/' || location === 'http://localhost:3001/' || location === 'https://ancient-springs-77868.herokuapp.com/';
 
     const pageContent = (
       <BrowserRouter>
