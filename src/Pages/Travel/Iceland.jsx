@@ -44,7 +44,7 @@ const Iceland = (props) => {
           </SubSection>
         </a>
       </Section>
-      <Comments pageId={PAGE_ID} />
+      <Comments centered pageId={PAGE_ID} />
     </main>
   );
 };

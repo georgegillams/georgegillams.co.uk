@@ -39,11 +39,14 @@ class CommentInput extends React.Component {
 
     render() {
       const {
-        pageId, className, ...rest
+        centered, pageId, className, ...rest
       } = this.props;
 
       const classNameFinal = [];
       if (className) classNameFinal.push(className);
+      const textBoxClassNameFinal=[getClassName('comments__component')];
+       textBoxClassNameFinal.push(getClassName('comments__component__text-box'))
+      if(centered) { textBoxClassNameFinal.push(getClassName('comments__component__text-box--hack'))}
 
       return (
         <div className={classNameFinal.join(' ')}>
@@ -52,7 +55,7 @@ class CommentInput extends React.Component {
                 ) : (
                   <div>
                     <BpkInput
-                      className={`${getClassName('comments__component')} ${getClassName('comments__component--text-box-hack')}`}
+                      className={textBoxClassNameFinal.join(' ')}
                       id="commenterName"
                       name="Name"
                       value={this.state.name}
@@ -60,7 +63,7 @@ class CommentInput extends React.Component {
                       placeholder="You name"
                     />
                     <BpkTextArea
-                      className={`${getClassName('comments__component')} ${getClassName('comments__component--text-box-hack')}`}
+                      className={textBoxClassNameFinal.join(' ')}
                       id="comment"
                       name="Comment"
                       values={this.state.comment}
