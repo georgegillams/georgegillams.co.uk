@@ -30,6 +30,10 @@ const HomePage = () => (
       <div><MunichBanner /></div>
     </Slider>
     <div style={{ minHeight: '15rem' }} />
+    <CardShowcase name="Articles">
+        <Card name="Net neutrality" linkUrl="/articles/net-neutrality">
+        <Card name="Vim" linkUrl="/articles/vim">
+    </CardShowcase >
   </main>
 );
 
