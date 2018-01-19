@@ -26,6 +26,16 @@ const Iceland = (props) => {
   return (
     <main className={classNameFinal.join(' ')} {...rest} >
       <Section name="Iceland  🛥 January 2018" >
+          In January we kicked off the year in style by heading to Iceland for 6 nights. We booked the whole package through Iceland Air, which
+          made it pretty easy to bolt together an action-packed trip. We stayed in a small no-frills hotel just outside Reykjavik (about a 30 min walk to
+          the city center). As well as exploring the city and trying their restuarants, we also fitted in trips to see the Northern Lights by boat, a visit to
+          Blue Lagoon, a whale-watching boat trip and a tour of the Golden Circle.
+      <br />
+        <br />
+      Iceland is an incredibly beautiful country, with a lot of natural wonders that you can't see anywhere else. Despite getting food-poinsoning on day 1, it was an awesome
+      trip and I'd definitely recommend a visit!
+        <br />
+        <br />
         <a className={getClassName('pages__link')} href="https://flic.kr/s/aHskqS4GoZ" rel="noopener noreferrer" target="_blank">
           <SubSection name="See the full album on Flickr →" link >
             <FadingLazyLoadedImage className={getClassName('pages__image')} altText="Overlooking the harbour" width={3} height={2} src={iceland2} />
