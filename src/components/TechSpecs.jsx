@@ -4,7 +4,7 @@ import Section from './Section';
 import TextLink from './TextLink';
 import reactIcon from './../icons/react.png';
 import restdbIcon from './../icons/restdb.png';
-import githubIcon from './../icons/github.png';
+import herokuIcon from './../icons/heroku.png';
 
 import STYLES from './tech-specs.scss';
 
@@ -30,12 +30,12 @@ const TechSpecs = (props) => {
         <img alt="react" width={5} height={5} className={iconClassNameFinal.join(' ')} src={reactIcon} />
       </a>
           Hosted on
-      <a href="https://pages.github.com/" rel="noopener noreferrer" target="_blank">
-        <img alt="react" width={5} height={5} className={darkIconClassNameFinal.join(' ')} src={githubIcon} />
+      <a href="https://www.heroku.com/" rel="noopener noreferrer" target="_blank">
+        <img alt="heroku" width={5} height={5} className={iconClassNameFinal.join(' ')} src={herokuIcon} />
       </a>
           Data on
       <a href="https://restdb.io/" rel="noopener noreferrer" target="_blank">
-        <img alt="react" width={5} height={5} className={iconClassNameFinal.join(' ')} src={restdbIcon} />
+        <img alt="restdb" width={5} height={5} className={iconClassNameFinal.join(' ')} src={restdbIcon} />
       </a>
       </Section>
     </div>
