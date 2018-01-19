@@ -2,6 +2,8 @@ import React from 'react';
 import Slider from 'react-slick';
 import SubSection from '../components/SubSection';
 import GetSocial from '../components/GetSocial';
+import Card from '../components/Card';
+import Showcase from '../components/Showcase';
 import PersonalDetailsBanner from './HomePageBanners/PersonalDetailsBanner';
 import IcelandBanner from './HomePageBanners/IcelandBanner';
 import NetNeutralityBanner from './HomePageBanners/NetNeutralityBanner';
@@ -30,11 +32,11 @@ const HomePage = () => (
       <div><MunichBanner /></div>
     </Slider>
     <div style={{ minHeight: '15rem' }} />
-    <CardShowcase name="Articles">
-        <Card name="Net neutrality" linkUrl="/articles/net-neutrality">
-        <Card name="Vim" linkUrl="/articles/vim">
-    </CardShowcase >
   </main>
 );
+// <Showcase name="Articles">
+//   <Card name="Net neutrality" linkUrl="/articles/net-neutrality" />
+//   <Card name="Vim" linkUrl="/articles/vim" />
+// </Showcase >
 
 export default HomePage;
