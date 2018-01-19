@@ -23,8 +23,8 @@ const Munich = (props) => {
   return (
     <main className={classNameFinal.join(' ')} {...rest} >
       <Section name="Munich ⛪️ Christmas 2017" >
-          Headed out to Munich just before Christmas to meetup with the family and drink Gluvein. Getting the gang together is always a lot of fun.
-          We tralled the Chistmas market, sampled a number of German pubs and Dbrought out British drinking games to German beer halls (which yielded some
+          Headed out to Munich just before Christmas to meet up with the family and drink Gluvein. Getting the gang together is always a lot of fun.
+          We trawled the Christmas market, sampled a number of German pubs and Dbrought out British drinking games to German beer halls (which yielded some
           strange looks)!
           <br />
         <br />
