@@ -24,6 +24,10 @@ const Longleat = (props) => {
   return (
     <main className={classNameFinal.join(' ')} {...rest} >
       <Section name="Longleat 🦁 Christmas 2017" >
+          Just after Christmas we headed out to Longleat to enjoy their safari, and then their festival of lights in the evening. We visited the festival of lights last year
+          and it was incredible so we were looking forward to checking it out again this year.
+          <br />
+        <br />
         <a href="https://flic.kr/s/aHsktEsk1b" rel="noopener noreferrer" target="_blank">
           <SubSection name="See the full album on Flickr →" link >
             <FadingLazyLoadedImage className={getClassName('pages__image')} altText="Longleat Festival of Light" width={2514} height={1676} src={longleatLight} />
