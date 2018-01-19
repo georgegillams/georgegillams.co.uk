@@ -27,15 +27,15 @@ const TechSpecs = (props) => {
       <Section className={getClassName('tech-specs__container')} noPadding light={light} fancy={fancy}>
           Built in
       <a href="https://reactjs.org/" rel="noopener noreferrer" target="_blank">
-        <img alt="react" width={5} height={5} className={iconClassNameFinal.join(' ')} src={reactIcon} />
+        <img alt="react" width={5} height={5} className={darkIconClassNameFinal.join(' ')} src={reactIcon} />
       </a>
           Hosted on
       <a href="https://www.heroku.com/" rel="noopener noreferrer" target="_blank">
-        <img alt="heroku" width={5} height={5} className={iconClassNameFinal.join(' ')} src={herokuIcon} />
+        <img alt="heroku" width={5} height={5} className={darkIconClassNameFinal.join(' ')} src={herokuIcon} />
       </a>
           Data on
       <a href="https://restdb.io/" rel="noopener noreferrer" target="_blank">
-        <img alt="restdb" width={5} height={5} className={iconClassNameFinal.join(' ')} src={restdbIcon} />
+        <img alt="restdb" width={5} height={5} className={darkIconClassNameFinal.join(' ')} src={restdbIcon} />
       </a>
       </Section>
     </div>
