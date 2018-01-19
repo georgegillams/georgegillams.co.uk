@@ -27,7 +27,7 @@ const Iceland = (props) => {
     <main className={classNameFinal.join(' ')} {...rest} >
       <Section name="Iceland  🛥 January 2018" >
           In January we kicked off the year in style by heading to Iceland for 6 nights. We booked the whole package through Iceland Air, which
-          made it pretty easy to bolt together an action-packed trip. We stayed in a small no-frills hotel just outside Reykjavik (about a 30 min walk to
+          made it pretty easy to bolt together an action-packed trip. We stayed in a small no-frills hotel just outside Reykjavík (about a 30 min walk to
           the city centre). As well as exploring the city and trying their restaurants, we also fitted in trips to see the Northern Lights by boat, a visit to
           Blue Lagoon, a whale-watching boat trip and a tour of the Golden Circle.
       <br />
