@@ -34,10 +34,11 @@ class Comments extends React.Component {
         (
           <SubSection className={getClassName('comments__component')} name="No comments yet. Be the first!" />
         ) : (
-          this.state.comments.map((c, i) =>
-            (<SubSection className={getClassName('comments__component')} name={`${c.commenter_name}`}>
-              {c.comment}
-            </SubSection >
+          this.state.comments.map(c =>
+            (
+              <SubSection className={getClassName('comments__component')} name={`${c.commenter_name}`}>
+                {c.comment}
+              </SubSection >
             )));
     }
 

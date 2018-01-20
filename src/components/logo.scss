@@ -23,15 +23,18 @@
     display: flex;
     flex-direction: column;
     padding-bottom: 1rem;
-    transition: all 0.1s;
+    transition: all 0.2s;
     // @include bounceIn(
     //   $delay: .5s
     // );
-
+&--animated {
       &:focus,
       &:active,
       &:hover {
-       @include pulse();
+       @include pulse(
+         $duration: 0.2s
+       );
+      }
       }
 
     @include bpk-breakpoint-tablet {

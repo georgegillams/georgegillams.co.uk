@@ -8,7 +8,7 @@ const getClassName = className => STYLES[className] || 'UNKNOWN';
 
 const TextLink = (props) => {
   const {
-    fancy, light, href, className, textClassName, children, ...rest
+    external, fancy, light, href, className, textClassName, children, ...rest
   } = props;
 
   const classNameFinal = [getClassName('typography__main')];
@@ -20,9 +20,12 @@ const TextLink = (props) => {
   const outerClassNameFinal = JSON.parse(JSON.stringify(classNameFinal));
   if (className) { outerClassNameFinal.push(className); }
 
+  let externalProps = {};
+  if (external) { externalProps = { rel: 'noopener noreferrer', target: '_blank' }; }
+
   return (
     <div className={outerClassNameFinal.join(' ')} {...rest}>
-      <a href={href} rel="noopener noreferrer" target="_blank" className={classNameFinal.join(' ')}>
+      <a href={href} {...externalProps} className={classNameFinal.join(' ')}>
         {children}
       </a>
     </div>
@@ -31,6 +34,7 @@ const TextLink = (props) => {
 
 TextLink.propTypes = {
   fancy: PropTypes.bool,
+  external: PropTypes.bool,
   light: PropTypes.bool,
   children: PropTypes.node,
   href: PropTypes.string,
@@ -39,6 +43,7 @@ TextLink.propTypes = {
 };
 
 TextLink.defaultProps = {
+  external: false,
   fancy: false,
   light: false,
   href: null,

@@ -8,11 +8,12 @@ const getClassName = className => STYLES[className] || 'UNKNOWN';
 
 const Logo = (props) => {
   const {
-    small, className, alwaysCentered, light, ...rest
+    animated, small, className, alwaysCentered, light, ...rest
   } = props;
   const classNameFinal = [getClassName('logo__container')];
   if (className) { classNameFinal.push(className); }
   if (alwaysCentered) { classNameFinal.push(getClassName('logo__container--centered')); }
+  if (animated) { classNameFinal.push(getClassName('logo__container--animated')); }
 
   const baseTextClassNameFinal = [getClassName('logo__logo-base')];
   if (light) { baseTextClassNameFinal.push(getClassName('logo__logo-base--light')); }
@@ -42,6 +43,7 @@ const Logo = (props) => {
 
 Logo.propTypes = {
   className: PropTypes.string,
+  animated: PropTypes.bool,
   small: PropTypes.bool,
   light: PropTypes.bool,
   alwaysCentered: PropTypes.bool,
@@ -49,6 +51,7 @@ Logo.propTypes = {
 
 Logo.defaultProps = {
   className: null,
+  animated: false,
   small: false,
   light: false,
   alwaysCentered: false,
