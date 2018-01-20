@@ -22,6 +22,22 @@ const SiteMap = () => (
         <br />
         <TextLink href="/travel/munich-2017"> Munich </TextLink>
       </SubSection>
+      <SubSection className={getClassName('pages__site-map-item')} name="Art 🎨">
+        {/* <TextLink href="/travel/iceland-2018"> Iceland </TextLink>
+          <br />
+          <TextLink href="/travel/longleat-2017"> Longleat </TextLink>
+          <br />
+          <TextLink href="/travel/munich-2017"> Munich </TextLink> */}
+      </SubSection>
+      <SubSection className={getClassName('pages__site-map-item')} name="Work 📱">
+        <TextLink href="/work">Portfolio</TextLink>
+        <br />
+        <TextLink href="/apps/password-character-extractor">Password Character Extractor</TextLink>
+        {/* <br />
+          <TextLink href="/travel/longleat-2017"> Longleat </TextLink>
+          <br />
+          <TextLink href="/travel/munich-2017"> Munich </TextLink> */}
+      </SubSection>
       {/* <SubSection className={getClassName('pages__site-map-item')} name="Documents 🥇">
         <TextLink  href="/documents/degree">
          <SubSection nclassName={getClassName('pages__site-map-item')}oPadding link name="Degree Certificate - 2018
