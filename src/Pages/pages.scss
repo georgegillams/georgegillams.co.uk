@@ -6,11 +6,12 @@
   }
 
   &__slider {
+    width: 100vw;
+    margin-right: -100%;
   }
 
   &__card {
       margin-bottom: 1rem;
-      // max-width: 45rem;
       margin-left: -.8rem;
   }
 

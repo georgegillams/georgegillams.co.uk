@@ -8,6 +8,7 @@ import PersonalDetailsBanner from './HomePageBanners/PersonalDetailsBanner';
 import IcelandBanner from './HomePageBanners/IcelandBanner';
 import NetNeutralityBanner from './HomePageBanners/NetNeutralityBanner';
 import MunichBanner from './HomePageBanners/MunichBanner';
+import PasswordCharacterExtractorBanner from './HomePageBanners/PasswordCharacterExtractorBanner';
 
 import STYLES from './pages.scss';
 
@@ -30,6 +31,7 @@ const HomePage = () => (
       <div><IcelandBanner /></div>
       <div><NetNeutralityBanner /></div>
       <div><MunichBanner /></div>
+      <div><PasswordCharacterExtractorBanner /></div>
     </Slider>
     <div style={{ minHeight: '15rem' }} />
   </main>
