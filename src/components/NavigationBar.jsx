@@ -48,13 +48,13 @@ class NavigationBar extends Component {
           </div>
           <div className={animatedContainerClassNameFinal.join(' ')} {...rest}>
             <header className={navBarClassNameFinal.join(' ')} {...rest}>
-              <NavigationItem className={getClassName('navigation-bar__nav-item')} name="Articles" linkUrl="/articles" />
-              <NavigationItem className={getClassName('navigation-bar__nav-item')} name="Travel" linkUrl="/travel" />
-              <NavigationItem className={getClassName('navigation-bar__nav-item')} name="Art" linkUrl="/photoshop" />
-              <Logo className={getClassName('navigation-bar__nav-item')} small />
-              <NavigationItem className={getClassName('navigation-bar__nav-item')} name="Work" linkUrl="/work" />
-              <NavigationItem className={getClassName('navigation-bar__nav-item')} name="About" linkUrl="/about" />
-              <NavigationItem className={getClassName('navigation-bar__nav-item')} name="Contact" linkUrl="/contact" />
+              <NavigationItem className={getClassName('navigation-bar__nav-item')} name="ARTICLES" linkUrl="/articles" />
+              <NavigationItem className={getClassName('navigation-bar__nav-item')} name="TRAVEL" linkUrl="/travel" />
+              <NavigationItem className={getClassName('navigation-bar__nav-item')} name="ART" linkUrl="/photoshop" />
+              <Logo className={getClassName('navigation-bar__nav-item')} small animated />
+              <NavigationItem className={getClassName('navigation-bar__nav-item')} name="WORK" linkUrl="/work" />
+              <NavigationItem className={getClassName('navigation-bar__nav-item')} name="ABOUT" linkUrl="/about" />
+              <NavigationItem className={getClassName('navigation-bar__nav-item')} name="CONTACT" linkUrl="/contact" />
             </header>
           </div>
         </div>

@@ -11,11 +11,14 @@
     color: white;
     font-size: 1rem;
 
+    &--dark-text {
+      color: $bpk-color-gray-700;
+    }
+
     &--bouncy {
       padding: .1rem .5rem;
       background-color: transparent;
-      color: $bpk-color-gray-700;
-      transition: all 0.1s;
+      transition: all 0.2s;
       // @include bounceIn(
       //   $delay: .5s
       // );
@@ -26,7 +29,9 @@
         color: white;
         fill: white;
         background-color: rgb(62,158,235);
-       @include pulse();
+       @include pulse(
+         $duration: 0.2s
+       );
       }
     }
 

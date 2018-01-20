@@ -1,0 +1,57 @@
+@import '~bpk-mixins';
+
+.apps {
+  &__page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+  }
+
+  &__showcase {
+    background: red;
+    box-shadow: inset 0 0 10rem .5rem darkred;
+    width: 100vw;
+    margin-left: -100%;
+    margin-right: -100%;
+    padding: 2rem;
+
+    &--padded {
+      padding: 2rem 0;
+    }
+    }
+
+  &__feature-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+    &__feature-section {
+      text-align: left;
+      max-width: 45%;
+      min-width: 25rem;
+    }
+
+  &__download-container {
+    background: rgb(52, 59, 73);
+    width: 100vw;
+    margin-left: -100%;
+    margin-right: -100%;
+    padding: 2rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+  &__image {
+      display: inline-block;
+      margin-bottom: 1rem;
+      max-width: 100%;
+  }
+}
