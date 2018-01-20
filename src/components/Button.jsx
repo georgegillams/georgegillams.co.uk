@@ -7,11 +7,12 @@ const getClassName = className => STYLES[className] || 'UNKNOWN';
 
 const Button = (props) => {
   const {
-    bouncy, onClick, className, children, ...rest
+    light, bouncy, onClick, className, children, ...rest
   } = props;
 
   const classNameFinal = [getClassName('button__outer')];
   if (bouncy) {
+    if (!light) { classNameFinal.push(getClassName('button__outer--dark-text')); }
     classNameFinal.push(getClassName('button__outer--bouncy'));
   } else {
     classNameFinal.push(getClassName('button__outer--no-bouncy'));

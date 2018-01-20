@@ -1,8 +1,12 @@
 @import '~bpk-mixins';
+@import "../../bower_components/animatewithsass/animate.scss";
 
 .navigation-bar {
   &__container {
     width: 100%;
+      @include bounceIn(
+        $delay: 1s
+      );
   }
 
   &__bar {
