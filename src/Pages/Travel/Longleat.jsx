@@ -34,7 +34,7 @@ const Longleat = (props) => {
           </SubSection>
         </a>
       </Section>
-      <Comments centered pageId={PAGE_ID} />
+      <Comments pageId={PAGE_ID} />
     </main>
   );
 };
