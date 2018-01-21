@@ -21,7 +21,7 @@ const FadingLazyLoadedImage = withLoadingBehavior(
 const DATE_WRITTEN = new Date(2017, 11, 8, 7, 1, 0);
 const PAGE_ID = 238476;
 
-/* eslint-disable max-len */
+ 
 const NetNeutrality = props => {
   const { className, ...rest } = props;
   const classNameFinal = [];

@@ -9,7 +9,7 @@ import STYLES from "./comments.scss";
 
 const getClassName = className => STYLES[className] || "UNKNOWN";
 
-/* eslint-disable max-len */
+ 
 class CommentInput extends React.Component {
   constructor(props) {
     super(props);

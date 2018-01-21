@@ -13,6 +13,8 @@ import SwitchToVim from "../Pages/Articles/SwitchToVim";
 import UkBankSecurity from "../Pages/Articles/UkBankSecurity";
 import NetNeutrality from "../Pages/Articles/NetNeutrality";
 import MarkAustinOnAnorexiaNervosa from "../Pages/Articles/MarkAustinOnAnorexiaNervosa";
+import Disneyland from "../Pages/Travel/Disneyland";
+import SerreChevalier from "../Pages/Travel/SerreChevalier";
 import Longleat from "../Pages/Travel/Longleat";
 import Travel from "../Pages/CategoryPages/Travel";
 import Articles from "../Pages/CategoryPages/Articles";
@@ -59,6 +61,11 @@ class App extends React.Component {
                 <Route path="/travel/longleat-2017" component={Longleat} />
                 <Route path="/travel/munich-2017" component={Munich} />
                 <Route path="/travel/iceland-2018" component={Iceland} />
+                <Route path="/travel/disneyland-2017" component={Disneyland} />
+                <Route
+                  path="/travel/serre-chevalier-2017"
+                  component={SerreChevalier}
+                />
                 <Route
                   path="/apps/password-character-extractor"
                   component={PasswordCharacterExtractor}
@@ -86,4 +93,4 @@ class App extends React.Component {
   }
 }
 
- export default App;
+export default App;

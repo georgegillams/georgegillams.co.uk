@@ -14,7 +14,7 @@ const getClassName = className => STYLES[className] || 'UNKNOWN';
 const documentIfExists = typeof window !== 'undefined' ? document : null;
 const FadingLazyLoadedImage = withLoadingBehavior(withLazyLoading(BpkImage, documentIfExists));
 
-/* eslint-disable max-len */
+ 
 const Munich = (props) => {
   const { className, ...rest } = props;
   const classNameFinal = [getClassName('pages__page')];

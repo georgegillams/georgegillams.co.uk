@@ -12,7 +12,7 @@ import TextLink from "../../components/TextLink";
 const DATE_WRITTEN = new Date(2017, 11, 23, 14, 3, 0);
 const PAGE_ID = 729471;
 
-/* eslint-disable max-len */
+ 
 const SwitchToVim = props => {
   const { className, ...rest } = props;
   const classNameFinal = [];

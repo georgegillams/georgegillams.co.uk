@@ -15,7 +15,7 @@ import STYLES from './pages.scss';
 
 const getClassName = className => STYLES[className] || 'UNKNOWN';
 
-/* eslint-disable max-len */
+ 
 const HomePage = () => (
   <main>
     <Slider

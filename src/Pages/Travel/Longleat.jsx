@@ -15,7 +15,7 @@ const documentIfExists = typeof window !== 'undefined' ? document : null;
 const FadingLazyLoadedImage = withLoadingBehavior(withLazyLoading(BpkImage, documentIfExists));
 const dateWritten = new Date(2017, 11, 8, 7, 1, 0);
 
-/* eslint-disable max-len */
+ 
 const Longleat = (props) => {
   const { className, ...rest } = props;
   const classNameFinal = [getClassName('pages__page')];

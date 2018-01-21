@@ -8,7 +8,7 @@ import STYLES from '../pages.scss';
 
 const getClassName = className => STYLES[className] || 'UNKNOWN';
 
-/* eslint-disable max-len */
+ 
 const Articles = () => (
   <div style={{ width: '100%' }}>
     <Card className={getClassName('pages__card')} imageSrc={netNeutrality} linkUrl="/articles/net-neutrality" title="My Take on Net Neutrality" />
