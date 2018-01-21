@@ -28,7 +28,7 @@ const AboutMe = (props) => {
         I recently got engaged whilst whale-watching in Iceland 💍 (see below)!
         <br />
         <br />
-        I enjoy getting outdoors and trying new things, and will be completeing my 5th Tough Mudder in May 2018. I also try to squeeze in as much volunteering as I can, so you may find me dressed as a Help for Heroes bear, reviewing content for Beat, or submitting PR's to Mozilla's open-source. I look forward to doing more of all that when I finish my Masters.
+        I enjoy getting outdoors and trying new things and will be completing my 5th Tough Mudder in May 2018. I also try to squeeze in as much volunteering as I can, so you may find me dressed as a Help for Heroes bear, reviewing content for Beat, or submitting PR's to Mozilla's open-source. I look forward to doing more of all that when I finish my Masters.
         <br />
         <br />
         {/* <SubSection name="Achievements">

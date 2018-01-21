@@ -30,11 +30,11 @@ const Work = (props) => {
         </SubSection>
         <br />
         <Section name="Portfolio">
-              This web-site demonstrates some of my web-development capabilities. Below I have included examples and extracts from my work on open-source products.
+              This website demonstrates some of my web-development capabilities. Below I have included examples and extracts from my work on open-source products.
               <br />
           <br />
           <SubSection name="Password Character Extractor">
-                I found the logon process for a number of sites (particularly UK bank websites) frustrating as they often require specific characters from a password or memorable word. This is something that LastPass cannot handle for me, so I created an offline tool to help.
+                I found the login process for a number of sites (particularly UK bank websites) frustrating as they often require specific characters from a password or memorable word. This is something that LastPass cannot handle for me, so I created an offline tool to help.
             <br />
             <br />
             <FadingLazyLoadedImage
