@@ -11,7 +11,7 @@ import HomePage from '../Pages/HomePage';
 import ComingSoon from './ComingSoon';
 import Work from '../Pages/Work/Work';
 import PasswordCharacterExtractor from '../Pages/Work/PasswordCharacterExtractor';
-import Photoshop from '../Pages/Photoshop';
+import Art from '../Pages/Art/Art';
 import SiteMap from '../Pages/SiteMap';
 import SwitchToVim from '../Pages/Articles/SwitchToVim';
 import UkBankSecurity from '../Pages/Articles/UkBankSecurity';
@@ -65,7 +65,8 @@ class App extends React.Component {
                 <Route path="/travel" component={Travel} />
                 <Route path="/articles" component={Articles} />
                 <Route path="/about" component={AboutMe} />
-                <Route path="/photoshop" component={ComingSoon} />
+                <Route path="/art" component={Art} />
+                <Route path="/photoshop" component={Art} />
                 <Route path="/contact" component={Contact} />
                 <Route component={ForOhFour} />
               </Switch>
