@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import BpkImage, { withLazyLoading, withLoadingBehavior } from 'bpk-component-image';
 import Section from '../../components/Section';
 import SubSection from '../../components/SubSection';
+import Comments from '../../components/Comments';
 import guinnessCake from '../Art/images/20160215.jpg';
 import tulips from '../Art/images/20160409.jpg';
 import motorway from '../Art/images/20160419.jpg';
@@ -12,6 +13,7 @@ import missSaigon from '../Art/images/20161010.jpg';
 import STYLES from '../pages.scss';
 
 const getClassName = className => STYLES[className] || 'UNKNOWN';
+const PAGE_ID = 857216;
 const documentIfExists = typeof window !== 'undefined' ? document : null;
 const FadingLazyLoadedImage = withLoadingBehavior(withLazyLoading(BpkImage, documentIfExists));
 
@@ -97,6 +99,7 @@ const Art = (props) => {
           </SubSection>
         </Section>
       </Section>
+      <Comments pageId={PAGE_ID} />
     </main>
   );
 };

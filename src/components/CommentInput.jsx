@@ -39,14 +39,13 @@ class CommentInput extends React.Component {
 
     render() {
       const {
-        centered, pageId, className, ...rest
+        pageId, className, ...rest
       } = this.props;
 
       const classNameFinal = [];
       if (className) classNameFinal.push(className);
-      const textBoxClassNameFinal=[getClassName('comments__component')];
-       textBoxClassNameFinal.push(getClassName('comments__component__text-box'))
-      if(centered) { textBoxClassNameFinal.push(getClassName('comments__component__text-box--hack'))}
+      const textBoxClassNameFinal = [getClassName('comments__component')];
+      textBoxClassNameFinal.push(getClassName('comments__component__text-box'));
 
       return (
         <div className={classNameFinal.join(' ')}>
