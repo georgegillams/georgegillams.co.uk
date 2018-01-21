@@ -7,12 +7,13 @@
 
   &__slider {
     box-sizing: border-box;
-    width: 100vw;
+     width: 100vw;
     margin-left: calc(-50vw + 50%);
+    overflow: hidden;
   }
 
   &__card {
-      margin-bottom: 1rem;
+          margin-bottom: 1rem;
   }
 
   &__site-map-tree {
