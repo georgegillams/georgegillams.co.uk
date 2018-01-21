@@ -53,4 +53,4 @@ AboutMe.defaultProps = {
   className: null,
 };
 
-export default AboutMe;
+ export default AboutMe;

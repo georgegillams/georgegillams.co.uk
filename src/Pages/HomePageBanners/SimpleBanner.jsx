@@ -21,4 +21,4 @@ const SimpleBanner = props => (
   </main>
 );
 
-export default SimpleBanner;
+ export default SimpleBanner;

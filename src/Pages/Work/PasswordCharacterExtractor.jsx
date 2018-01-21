@@ -113,4 +113,4 @@ passwordCharacterExtractor.defaultProps = {
   className: null,
 };
 
-export default passwordCharacterExtractor;
+ export default passwordCharacterExtractor;

@@ -63,4 +63,4 @@ Work.defaultProps = {
   className: null,
 };
 
-export default Work;
+ export default Work;

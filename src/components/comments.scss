@@ -1,10 +1,10 @@
 @import '~bpk-mixins';
 
 .comments {
-  &__component {
+     &__component {
     margin-bottom: 1rem;
 
-    &__text-box{
+       &__text-box {
       max-width: 45rem;
       box-sizing: border-box;
     }

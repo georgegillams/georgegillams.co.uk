@@ -1,17 +1,17 @@
 @import '~bpk-mixins';
 
 .app {
-    &__body{
-      margin: 0;
-    }
+     &__body {
+    margin: 0;
+  }
 
-  &__site {
-    min-height: 100vh;
+     &__site {
     display: flex;
+    min-height: 100vh;
     flex-direction: column;
   }
 
-  &__main {
-      flex: 1;
+     &__main {
+    flex: 1;
   }
 }

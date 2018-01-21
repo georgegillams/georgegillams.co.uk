@@ -16,5 +16,5 @@ const Articles = () => (
   </div>
 );
 
-export default Articles;
+ export default Articles;
 

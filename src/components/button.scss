@@ -1,14 +1,14 @@
 @import '~bpk-mixins';
-@import "../../bower_components/animatewithsass/animate.scss";
+@import '../../bower_components/animatewithsass/animate.scss';
 
 .button {
-  &__outer {
+     &__outer {
     padding: 0.5rem;
     border: none;
     border-radius: 0.2rem;
-    background-color: rgb(62,158,235);
-    font-family: 'Quattrocento Sans', sans-serif;
+    background-color: rgb(62, 158, 235);
     color: white;
+    font-family: 'Quattrocento Sans', sans-serif;
     font-size: 1rem;
 
     &--dark-text {
@@ -16,9 +16,9 @@
     }
 
     &--bouncy {
-      padding: .1rem .5rem;
-      background-color: transparent;
+      padding: 0.1rem 0.5rem;
       transition: all 0.2s;
+      background-color: transparent;
       // @include bounceIn(
       //   $delay: .5s
       // );
@@ -26,12 +26,13 @@
       &:focus,
       &:active,
       &:hover {
+        background-color: rgb(62, 158, 235);
         color: white;
         fill: white;
-        background-color: rgb(62,158,235);
-       @include pulse(
-         $duration: 0.2s
-       );
+
+        @include pulse(
+          $duration: 0.2s
+        );
       }
     }
 

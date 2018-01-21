@@ -30,4 +30,4 @@ const Contact = (props) => {
 };
 // <div dangerouslySetInnerHTML={{ __html: thisIsMyCopy }} />
 
-export default Contact;
+ export default Contact;

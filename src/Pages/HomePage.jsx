@@ -43,4 +43,4 @@ const HomePage = () => (
 //   <Card name="Vim" linkUrl="/articles/vim" />
 // </Showcase >
 
-export default HomePage;
+ export default HomePage;
