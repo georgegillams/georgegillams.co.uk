@@ -42,6 +42,10 @@ const router = express.Router();
 const staticFiles = express.static(path.join(__dirname, '../../client/build'));
 app.use(staticFiles);
 
+router.get('/api/greasemonkey/secureEcs_download', (req, res) => {
+  res.sendFile(path.join(__dirname, './greasemonkey', 'secure ecs.js'));
+});
+
 router.get('/api/hello', (req, res) => {
   res.send({ express: 'Hello From Express' });
 });
