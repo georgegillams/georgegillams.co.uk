@@ -23,7 +23,7 @@ const SiteMap = () => (
         <TextLink href="/travel/munich-2017"> Munich </TextLink>
       </SubSection>
       <SubSection className={getClassName('pages__site-map-item')} name="Art 🎨">
-        <TextLink href="/art">Digital creations</TextLink>
+        <TextLink href="/art">Artistic creations</TextLink>
       </SubSection>
       <SubSection className={getClassName('pages__site-map-item')} name="Work 📱">
         <TextLink href="/work">Portfolio</TextLink>
