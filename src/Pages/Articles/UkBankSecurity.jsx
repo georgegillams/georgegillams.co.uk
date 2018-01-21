@@ -22,7 +22,7 @@ const FadingLazyLoadedImage = withLoadingBehavior(
 const DATE_WRITTEN = new Date(2018, 1, 20, 14, 52, 0);
 const PAGE_ID = 827461;
 
-/* eslint-disable max-len */
+ 
 const UkBankSecurity = props => {
   const { className, ...rest } = props;
   const classNameFinal = [];

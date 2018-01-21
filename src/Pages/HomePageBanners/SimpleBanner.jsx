@@ -6,7 +6,7 @@ import STYLES from '../pages.scss';
 
 const getClassName = className => STYLES[className] || 'UNKNOWN';
 
-/* eslint-disable max-len */
+ 
 const SimpleBanner = props => (
   <main className={getClassName('pages__banner')}>
     <div className={getClassName('pages__banner-image')} style={{ backgroundImage: `url(${props.imageSrc})` }} >

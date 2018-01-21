@@ -1,34 +1,58 @@
-import React from 'react';
-import TextLink from '../components/TextLink';
-import SubSection from '../components/SubSection';
+import React from "react";
+import TextLink from "../components/TextLink";
+import SubSection from "../components/SubSection";
 
-import STYLES from './pages.scss';
+import STYLES from "./pages.scss";
 
-const getClassName = className => STYLES[className] || 'UNKNOWN';
+const getClassName = className => STYLES[className] || "UNKNOWN";
 
-/* eslint-disable max-len */
 const SiteMap = () => (
-  <div className={getClassName('pages__site-map-tree')}>
+  <div className={getClassName("pages__site-map-tree")}>
     <div>
-      <SubSection className={getClassName('pages__site-map-item')} name="Articles 📝">
+      <SubSection
+        className={getClassName("pages__site-map-item")}
+        name="Articles 📝"
+      >
+        <TextLink href="/articles/uk-bank-security">UK Bank Security</TextLink>
+        <br />
         <TextLink href="/articles/vim">Switching to Vim</TextLink>
         <br />
-        <TextLink href="/articles/net-neutrality">My Take on Net Neutrality</TextLink>
+        <TextLink href="/articles/net-neutrality">
+          My Take on Net Neutrality
+        </TextLink>
       </SubSection>
-      <SubSection className={getClassName('pages__site-map-item')} name="Travel ✈️">
+      <SubSection
+        className={getClassName("pages__site-map-item")}
+        name="Travel ✈️"
+      >
         <TextLink href="/travel/iceland-2018"> Iceland </TextLink>
         <br />
         <TextLink href="/travel/longleat-2017"> Longleat </TextLink>
         <br />
         <TextLink href="/travel/munich-2017"> Munich </TextLink>
+        <br />
+        <TextLink href="/travel/disneyland-2017">Disneyland</TextLink>
+        <br />
+        <TextLink href="/travel/serre-chevalier-2017">
+          {" "}
+          Serre Chevalier{" "}
+        </TextLink>
       </SubSection>
-      <SubSection className={getClassName('pages__site-map-item')} name="Art 🎨">
+      <SubSection
+        className={getClassName("pages__site-map-item")}
+        name="Art 🎨"
+      >
         <TextLink href="/art">Artistic creations</TextLink>
       </SubSection>
-      <SubSection className={getClassName('pages__site-map-item')} name="Work 📱">
+      <SubSection
+        className={getClassName("pages__site-map-item")}
+        name="Work 📱"
+      >
         <TextLink href="/work">Portfolio</TextLink>
         <br />
-        <TextLink href="/apps/password-character-extractor">Password Character Extractor</TextLink>
+        <TextLink href="/apps/password-character-extractor">
+          Password Character Extractor
+        </TextLink>
         {/* <br />
           <TextLink href="/travel/longleat-2017"> Longleat </TextLink>
           <br />
@@ -40,7 +64,10 @@ const SiteMap = () => (
         </TextLink>
         <br />
       </SubSection> */}
-      <SubSection className={getClassName('pages__site-map-item')} name="Other stuff 🤷‍♂️">
+      <SubSection
+        className={getClassName("pages__site-map-item")}
+        name="Other stuff 🤷‍♂️"
+      >
         <TextLink href="/about"> About me </TextLink>
         <br />
         <TextLink href="/contact"> Contact </TextLink>
@@ -49,4 +76,4 @@ const SiteMap = () => (
   </div>
 );
 
- export default SiteMap;
+export default SiteMap;
