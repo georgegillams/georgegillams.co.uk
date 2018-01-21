@@ -51,7 +51,7 @@ const UkBankSecurity = (props) => {
         <br />
         <br />
         <FadingLazyLoadedImage
-          className={getClassName('apps__image')}
+          className={getClassName('pages__image')}
           altText="Santander's Hollywood security"
           style={{ width: '30rem' }}
           width={2378}
