@@ -34,6 +34,11 @@
       text-align: left;
       max-width: 45%;
       min-width: 25rem;
+
+      @include bpk-breakpoint-tablet {
+        max-width: none;
+        min-width: auto;
+      }
     }
 
   &__download-container {

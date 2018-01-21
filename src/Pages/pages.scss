@@ -6,13 +6,13 @@
   }
 
   &__slider {
+    box-sizing: border-box;
     width: 100vw;
-    margin-right: -100%;
+    margin-left: calc(-50vw + 50%);
   }
 
   &__card {
       margin-bottom: 1rem;
-      margin-left: -.8rem;
   }
 
   &__site-map-tree {
@@ -36,11 +36,11 @@
     width: 100%;
   }
 
-
   &__image {
       display: inline-block;
       margin-bottom: 1rem;
       width: 70%;
+      max-width: 100%;
 
     @include bpk-breakpoint-tablet {
       width:90%;
