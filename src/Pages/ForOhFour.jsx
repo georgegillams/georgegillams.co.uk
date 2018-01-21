@@ -6,7 +6,7 @@ import STYLES from './for-oh-four.scss';
 
 const getClassName = className => STYLES[className] || 'UNKNOWN';
 
-/* eslint-disable max-len */
+ 
 const ForOhFour = (props) => {
   const { className, ...rest } = props;
   const classNameFinal = [getClassName('for-oh-four__container')];

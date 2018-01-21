@@ -22,7 +22,7 @@ const FadingLazyLoadedImage = withLoadingBehavior(
   withLazyLoading(BpkImage, documentIfExists)
 );
 
-/* eslint-disable max-len */
+ 
 const Art = props => {
   const { className, ...rest } = props;
   const classNameFinal = [getClassName("pages__page")];

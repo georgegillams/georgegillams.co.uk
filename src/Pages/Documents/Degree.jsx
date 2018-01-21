@@ -15,7 +15,7 @@ const FadingLazyLoadedImage = withLoadingBehavior(
   withLazyLoading(BpkImage, documentIfExists)
 );
 
-/* eslint-disable max-len */
+ 
 const Degree = props => {
   const { className, ...rest } = props;
   const classNameFinal = [getClassName("pages__page")];
