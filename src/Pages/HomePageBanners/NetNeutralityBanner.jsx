@@ -6,4 +6,4 @@ const NetNeutralityBanner = () => (
   <SimpleBanner imageSrc={netNeutrality} linkUrl="/articles/net-neutrality" title="My Take on Net Neutrality" />
 );
 
-export default NetNeutralityBanner;
+ export default NetNeutralityBanner;

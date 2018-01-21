@@ -1,8 +1,8 @@
 @import '~bpk-mixins';
 
 .article-date {
-  &__date {
+     &__date {
+    padding-bottom: 0.5rem;
     color: $bpk-color-gray-700;
-      padding-bottom: 0.5rem;
   }
 }

@@ -24,4 +24,4 @@ const PersonalDetailsBanner = () => (
   </main>
 );
 
-export default PersonalDetailsBanner;
+ export default PersonalDetailsBanner;

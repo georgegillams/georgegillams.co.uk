@@ -47,4 +47,4 @@ Munich.defaultProps = {
   className: null,
 };
 
-export default Munich;
+ export default Munich;

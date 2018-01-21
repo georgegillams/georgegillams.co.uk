@@ -1,26 +1,26 @@
-import React from 'react';
-import PropTypes from 'prop-types';
+import React from "react";
+import PropTypes from "prop-types";
 
-import STYLES from './button.scss';
+import STYLES from "./button.scss";
 
-const getClassName = className => STYLES[className] || 'UNKNOWN';
+const getClassName = className => STYLES[className] || "UNKNOWN";
 
-const Button = (props) => {
-  const {
-    light, bouncy, onClick, className, children, ...rest
-  } = props;
+const Button = props => {
+  const { light, bouncy, onClick, className, children, ...rest } = props;
 
-  const classNameFinal = [getClassName('button__outer')];
+  const classNameFinal = [getClassName("button__outer")];
   if (bouncy) {
-    if (!light) { classNameFinal.push(getClassName('button__outer--dark-text')); }
-    classNameFinal.push(getClassName('button__outer--bouncy'));
+    if (!light) {
+      classNameFinal.push(getClassName("button__outer--dark-text"));
+    }
+    classNameFinal.push(getClassName("button__outer--bouncy"));
   } else {
-    classNameFinal.push(getClassName('button__outer--no-bouncy'));
+    classNameFinal.push(getClassName("button__outer--no-bouncy"));
   }
   if (className) classNameFinal.push(className);
 
   return (
-    <button onClick={onClick} className={classNameFinal.join(' ')} {...rest}>
+    <button onClick={onClick} className={classNameFinal.join(" ")} {...rest}>
       {children}
     </button>
   );
@@ -30,14 +30,14 @@ Button.propTypes = {
   bouncy: PropTypes.bool,
   onClick: PropTypes.func,
   className: PropTypes.string,
-  children: PropTypes.node,
+  children: PropTypes.node
 };
 
 Button.defaultProps = {
   bouncy: false,
   onClick: null,
   className: null,
-  children: null,
+  children: null
 };
 
-export default Button;
+ export default Button;
