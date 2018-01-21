@@ -2,10 +2,8 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Button from './Button';
 
-const NavigationItem = (props) => {
-  const {
-    name, linkUrl, className, ...rest
-  } = props;
+const NavigationItem = props => {
+  const { name, linkUrl, className, ...rest } = props;
 
   const outerClassNameFinal = [];
   if (className) {

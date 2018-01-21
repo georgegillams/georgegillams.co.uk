@@ -31,6 +31,7 @@ import HomePage from '../Pages/HomePage';
 import Admin from '../Pages/Admin';
 import Work from '../Pages/Work/Work';
 import PasswordCharacterExtractor from '../Pages/Work/PasswordCharacterExtractor';
+import BpkComponentDemo from '../Pages/Work/BpkComponentDemoPage';
 import Art from '../Pages/Art/Art';
 import SiteMap from '../Pages/SiteMap';
 import SwitchToVim from '../Pages/Articles/SwitchToVim';
@@ -81,6 +82,7 @@ const Routes = (
     <Route path="/work" component={null}>
       <IndexRedirect to="/work/portfolio" />
       <Route path="/work/portfolio" component={Work} />
+      <Route path="/work/bpk-component-demo" component={BpkComponentDemo} />
     </Route>
 
     <Route path="/apps" component={null}>

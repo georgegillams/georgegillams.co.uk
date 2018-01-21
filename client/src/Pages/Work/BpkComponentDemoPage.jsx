@@ -1,21 +1,27 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import BpkImage, { withLazyLoading, withLoadingBehavior } from 'bpk-component-image';
+import BpkImage, {
+  withLazyLoading,
+  withLoadingBehavior,
+} from 'bpk-component-image';
+import BpkBadge from 'bpk-component-badge';
 import GitHubForkRibbon from 'react-github-fork-ribbon';
 import Section from '../../components/Section';
+import TextLink from '../../components/TextLink';
 import Button from '../../components/Button';
 import SubSection from '../../components/SubSection';
 import passwordCharacterExtractorPinEntry from './images/passwordCharacterExtractorPinEntry.gif';
-import passwordCharacterExtractorUse from './images/passwordCharacterExtractorUse.png';
 import passwordCharacterExtractorUseGif from './images/passwordCharacterExtractorUse.gif';
 
 import STYLES from './apps.scss';
 
 const getClassName = className => STYLES[className] || 'UNKNOWN';
 const documentIfExists = typeof window !== 'undefined' ? document : null;
-const FadingLazyLoadedImage = withLoadingBehavior(withLazyLoading(BpkImage, documentIfExists));
+const FadingLazyLoadedImage = withLoadingBehavior(
+  withLazyLoading(BpkImage, documentIfExists),
+);
 
-const passwordCharacterExtractor = (props) => {
+const BpkComponentDemoPage = props => {
   const { className, ...rest } = props;
   const classNameFinal = [getClassName('apps__page')];
   if (className) {
@@ -28,58 +34,62 @@ const passwordCharacterExtractor = (props) => {
         <GitHubForkRibbon
           position="right-bottom"
           color="red"
-          href="https://github.com/georgegillams/SecurePasswordCharacterExtractor/"
+          href="https://github.com/Skyscanner/Backpack/"
           target="_blank"
         >
           View on GitHub
         </GitHubForkRibbon>
-        <Section light name="Password Character Extractor">
-          <SubSection noAnchor light name="Get the characters you need. Secure and easy." />
+        <Section light name="React component demonstrator">
+          <SubSection
+            noAnchor
+            light
+            name="Unrestricted documentation of React component features"
+          />
         </Section>
         <div className={getClassName('apps__showcase--padded')}>
-          <BpkImage
-            className={getClassName('apps__image')}
-            altText="Password Character Extraction Use"
-            style={{ width: '55rem' }}
-            width={2224}
-            height={514}
-            src={passwordCharacterExtractorUse}
-          />
+          <BpkBadge className={getClassName('apps__image')}>Component</BpkBadge>
         </div>
       </div>
       <div className={getClassName('apps__download-container')}>
-        <Button
+        {/* <Button
           bouncy
           light
           onClick={() => {
             window.open(
-              'https://github.com/georgegillams/SecurePasswordCharacterExtractor/releases/download/1.0.0/SecurePasswordCharacterExtractor.jar',
+              'https://www.npmjs.com/package/bpk-component-demo/',
               '_blank',
             );
           }}
         >
-          Download for Other OSes
+          View on npmjs.com
         </Button>
-        <Button
+         <Button
           onClick={() => {
             window.open(
-              'https://github.com/georgegillams/SecurePasswordCharacterExtractor/raw/master/release/Secure_Password_Character_Extractor.zip',
+              'https://backpack.github.io/components/web/badge/',
               '_blank',
             );
           }}
         >
-          Download for macOS
-        </Button>
+          See it in action
+        </Button> */}
+        <Section noAnchor noPadding light>
+          Real world examples coming soon!
+        </Section>
       </div>
       <Section name="Features">
         <div className={getClassName('apps__feature-container')}>
-          <SubSection name="Secure" className={getClassName('apps__feature-section')}>
-            Your pin is used to encrypt all password data on disk. Characters are only decoded when
-            they are needed.
+          <SubSection
+            name="Cover all use-cases"
+            className={getClassName('apps__feature-section')}
+          >
+            Sometimes it's hard to imagine every use case a component will solve
+            throughout its lifetime. With this tool, developers and consumers
+            can see the exact behaviour of any component without writing any
+            code.
             <br />
             <br />
-            So if anyone else accesses your machine, they won&apos;t be able to use the app or see
-            the data without your pin to decrypt it.
+            So no more feature requests for things that can already be done!
             <br />
             <br />
             <FadingLazyLoadedImage
@@ -91,12 +101,16 @@ const passwordCharacterExtractor = (props) => {
               src={passwordCharacterExtractorPinEntry}
             />
           </SubSection>
-          <SubSection name="Easy" className={getClassName('apps__feature-section')}>
-            Easily extract the information you need to login without writing your whole password out
-            and then painfully counting along to get the right letter.
+          <SubSection
+            name="Easy"
+            className={getClassName('apps__feature-section')}
+          >
+            It&apos;s far easier to document your component's props like this,
+            than having to copy a list of prop-types into a Readme file.
+            It&apos;s easier for your designers and consumers too!
             <br />
             <br />
-            So you can log in safely, without making mistakes.
+            So everyone wins.
           </SubSection>
         </div>
         <FadingLazyLoadedImage
@@ -109,20 +123,24 @@ const passwordCharacterExtractor = (props) => {
         />
         <br />
         <br />
-        <Button onClick={() => window.location.replace('/articles/uk-bank-security')}>
-          More information on UK bank security →
+        <Button
+          onClick={() => {
+            window.open('https://backpack.github.io/', '_blank');
+          }}
+        >
+          More information about Backpack
         </Button>
       </Section>
     </main>
   );
 };
 
-passwordCharacterExtractor.propTypes = {
+BpkComponentDemoPage.propTypes = {
   className: PropTypes.string,
 };
 
-passwordCharacterExtractor.defaultProps = {
+BpkComponentDemoPage.defaultProps = {
   className: null,
 };
 
-export default passwordCharacterExtractor;
+export default BpkComponentDemoPage;

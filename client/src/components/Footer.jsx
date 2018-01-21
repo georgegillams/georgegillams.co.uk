@@ -10,7 +10,7 @@ import STYLES from './footer.scss';
 
 const getClassName = className => STYLES[className] || 'UNKNOWN';
 
-const Footer = (props) => {
+const Footer = props => {
   const currentYear = new Date().getFullYear();
 
   const { className, ...rest } = props;
