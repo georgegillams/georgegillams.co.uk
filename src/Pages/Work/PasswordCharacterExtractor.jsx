@@ -64,7 +64,7 @@ const passwordCharacterExtractor = (props) => {
       <Section name="Features" >
         <div className={getClassName('apps__feature-container')}>
           <SubSection name="Secure" className={getClassName('apps__feature-section')}>
-          You pin is used to encrypt all password data on disk. Characters are only decoded when they are needed.
+          Your pin is used to encrypt all password data on disk. Characters are only decoded when they are needed.
                 <br />
             <br />
           So if anyone else accesses your machine, they won&apos;t be able to use the app or see the data without your pin to decrypt it.
