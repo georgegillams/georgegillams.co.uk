@@ -1,35 +1,36 @@
 @import '~bpk-mixins';
-@import "../../bower_components/animatewithsass/animate.scss";
+@import '../../bower_components/animatewithsass/animate.scss';
 
 .navigation-bar {
-  &__container {
+     &__container {
     width: 100%;
-      @include bounceIn(
-        $delay: 1s
-      );
+
+    @include bounceIn(
+      $delay: 1s
+    );
   }
 
-  &__bar {
+     &__bar {
     display: flex;
-    flex-wrap: wrap;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
 
     @include bpk-breakpoint-tablet {
-        padding: 0 0 1rem 0;
-        flex-direction: column;
+      padding: 0 0 1rem 0;
+      flex-direction: column;
     }
 
     &--open {
-        display: flex;
+      display: flex;
     }
-}
+  }
 
-  &__animated-container {
-      height: auto;
-      transition: all 1s;
-      overflow: hidden;
+     &__animated-container {
+    height: auto;
+    transition: all 1s;
+    overflow: hidden;
 
     @include bpk-breakpoint-tablet {
       height: 0;
@@ -40,26 +41,26 @@
     }
   }
 
-  &__burger-button {
-        height: 0;
-        display: none;
+     &__burger-button {
+    display: none;
+    height: 0;
 
     @include bpk-breakpoint-tablet {
-        display: flex;
-        margin: 1rem;
-        height: auto;
+      display: flex;
+      height: auto;
+      margin: 1rem;
     }
 
     &--open {
     }
   }
 
-  &__nav-item {
-      padding: 0 1rem;
+     &__nav-item {
+    padding: 0 1rem;
 
     @include bpk-breakpoint-tablet {
-        padding-top: .5rem;
-        padding-bottom: .5rem;
+      padding-top: 0.5rem;
+      padding-bottom: 0.5rem;
     }
   }
 }

@@ -1,6 +1,6 @@
-import React, { Component } from 'react';
-import PropTypes from 'prop-types';
-import Button from './Button';
+import React, { Component } from "react";
+import PropTypes from "prop-types";
+import Button from "./Button";
 
 class NavigationItem extends Component {
   constructor(props) {
@@ -8,17 +8,17 @@ class NavigationItem extends Component {
   }
 
   render() {
-    const {
-      name, linkUrl, className, ...rest
-    } = this.props;
+    const { name, linkUrl, className, ...rest } = this.props;
 
     const outerClassNameFinal = [];
-    if (className) { outerClassNameFinal.push(className); }
+    if (className) {
+      outerClassNameFinal.push(className);
+    }
 
     return (
-      <div className={outerClassNameFinal.join(' ')} {...rest}>
+      <div className={outerClassNameFinal.join(" ")} {...rest}>
         <a href={linkUrl}>
-          <Button bouncy >{name}</Button>
+          <Button bouncy>{name}</Button>
         </a>
       </div>
     );
@@ -26,11 +26,11 @@ class NavigationItem extends Component {
 }
 
 NavigationItem.propTypes = {
-  className: PropTypes.string,
+  className: PropTypes.string
 };
 
 NavigationItem.defaultProps = {
-  className: null,
+  className: null
 };
 
-export default NavigationItem;
+ export default NavigationItem;

@@ -37,4 +37,4 @@ Photobombing.defaultProps = {
   className: null,
 };
 
-export default Photobombing;
+ export default Photobombing;

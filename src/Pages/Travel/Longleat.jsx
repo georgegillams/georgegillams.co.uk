@@ -47,4 +47,4 @@ Longleat.defaultProps = {
   className: null,
 };
 
-export default Longleat;
+ export default Longleat;

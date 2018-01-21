@@ -15,14 +15,14 @@
 @fontface {
   font-family: 'Tangerine', cursive;
   src: url('https://fonts.googleapis.com/css?family=Tangerine')
-}
+}    
 @fontface {
   font-family: 'Iceland', cursive;
   src: url('https://fonts.googleapis.com/css?family=Iceland')
 }
 
 .typography {
-  &__main {
+     &__main {
     color: $bpk-color-gray-700;
     // font-family: 'Neuton', serif;
     font-family: 'Quattrocento Sans', sans-serif;
@@ -31,7 +31,7 @@
     padding-bottom: 1rem;
 }
 
-    &__text {
+       &__text {
       color: $bpk-color-gray-700;
       font-family: 'Quattrocento Sans', sans-serif;
       text-decoration: none;

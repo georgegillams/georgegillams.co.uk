@@ -17,4 +17,4 @@ const Travel = () => (
   </div>
 );
 
-export default Travel;
+ export default Travel;

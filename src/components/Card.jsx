@@ -1,22 +1,25 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import BpkCard from 'bpk-component-card';
-import Section from './Section';
+import React from "react";
+import PropTypes from "prop-types";
+import BpkCard from "bpk-component-card";
+import Section from "./Section";
 
-import STYLES from './card.scss';
+import STYLES from "./card.scss";
 
-const getClassName = className => STYLES[className] || 'UNKNOWN';
+const getClassName = className => STYLES[className] || "UNKNOWN";
 
-const Card = (props) => {
-  const {
-    light, linkUrl, imageSrc, title, className, ...rest
-  } = props;
+const Card = props => {
+  const { light, linkUrl, imageSrc, title, className, ...rest } = props;
 
-  const classNameFinal = [getClassName('card__image')];
+  const classNameFinal = [getClassName("card__image")];
   if (className) classNameFinal.push(className);
 
   return (
-    <BpkCard className={classNameFinal.join(' ')} style={{ backgroundImage: `url(${imageSrc})` }} href={linkUrl} {...rest}>
+    <BpkCard
+      className={classNameFinal.join(" ")}
+      style={{ backgroundImage: `url(${imageSrc})` }}
+      href={linkUrl}
+      {...rest}
+    >
       <Section light={light} name={title} link />
     </BpkCard>
   );
@@ -27,7 +30,7 @@ Card.propTypes = {
   imageSrc: PropTypes.node,
   linkUrl: PropTypes.string,
   title: PropTypes.string,
-  className: PropTypes.string,
+  className: PropTypes.string
 };
 
 Card.defaultProps = {
@@ -35,7 +38,7 @@ Card.defaultProps = {
   linkUrl: null,
   imageSrc: null,
   title: null,
-  className: null,
+  className: null
 };
 
-export default Card;
+ export default Card;

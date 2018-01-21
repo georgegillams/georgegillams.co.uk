@@ -2,40 +2,42 @@
 
 @fontface {
   font-family: 'Bungee Inline', cursive;
-  src: url('https://fonts.googleapis.com/css?family=Bungee+Inline')
+  src: url('https://fonts.googleapis.com/css?family=Bungee+Inline');
 }
+
 @fontface {
   font-family: 'Neuton', serif;
-  src: url('https://fonts.googleapis.com/css?family=Neuton')
+  src: url('https://fonts.googleapis.com/css?family=Neuton');
 }
+
 @fontface {
   font-family: 'Quattrocento Sans', sans-serif;
-  src: url('https://fonts.googleapis.com/css?family=Quattrocento+Sans')
+  src: url('https://fonts.googleapis.com/css?family=Quattrocento+Sans');
 }
+
 @fontface {
   font-family: 'Iceland', cursive;
-  src: url('https://fonts.googleapis.com/css?family=Iceland')
+  src: url('https://fonts.googleapis.com/css?family=Iceland');
 }
 
 .coming-soon {
-  &__container {
+     &__container {
     display: flex;
-    flex-direction: column;
     padding-bottom: 1rem;
-      align-items: center;
+    flex-direction: column;
+    align-items: center;
   }
 
-  &__logo-large {
+     &__logo-large {
     display: inline-block;
-        font-size: 3.5rem;
-    line-height: 6rem;
-    color: rgb(62,158,235);
-    font-weight: bold;
+    color: rgb(62, 158, 235);
     font-family: 'Quattrocento Sans', sans-serif;
+    font-size: 3.5rem;
+    font-weight: bold;
+    line-height: 6rem;
 
     @include bpk-breakpoint-tablet {
-        font-size: 1.5rem;
+      font-size: 1.5rem;
     }
-
   }
 }
