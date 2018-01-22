@@ -19,7 +19,6 @@ const HomePage = () => (
   <main>
     <Slider
       className={getClassName("pages__slider")}
-      dots
       infinite
       speed={500}
       slidesToShow={1}
