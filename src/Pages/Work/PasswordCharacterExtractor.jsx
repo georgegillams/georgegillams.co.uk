@@ -77,7 +77,7 @@ const passwordCharacterExtractor = props => {
             );
           }}
         >
-          Download for MacOS
+          Download for macOS
         </Button>
       </div>
       <Section name="Features">
