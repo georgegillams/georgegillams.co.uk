@@ -1,23 +1,23 @@
-import React from "react";
-import PropTypes from "prop-types";
-import BpkImage, { withLazyLoading, withLoadingBehavior } from "bpk-component-image";
-import TextLink from "../../components/TextLink";
-import Section from "../../components/Section";
-import SubSection from "../../components/SubSection";
-import ArticleDate from "../../components/ArticleDate";
-import Comments from "../../components/Comments";
-import santanderPasswordEntry from "./images/santanderPasswordEntry.png";
-import santanderHollywood from "./images/santanderHollywood.png";
+import React from 'react';
+import PropTypes from 'prop-types';
+import BpkImage, { withLazyLoading, withLoadingBehavior } from 'bpk-component-image';
+import TextLink from '../../components/TextLink';
+import Section from '../../components/Section';
+import SubSection from '../../components/SubSection';
+import ArticleDate from '../../components/ArticleDate';
+import Comments from '../../components/Comments';
+import santanderPasswordEntry from './images/santanderPasswordEntry.png';
+import santanderHollywood from './images/santanderHollywood.png';
 
-import STYLES from "../pages.scss";
+import STYLES from '../pages.scss';
 
-const getClassName = className => STYLES[className] || "UNKNOWN";
-const documentIfExists = typeof window !== "undefined" ? document : null;
+const getClassName = className => STYLES[className] || 'UNKNOWN';
+const documentIfExists = typeof window !== 'undefined' ? document : null;
 const FadingLazyLoadedImage = withLoadingBehavior(withLazyLoading(BpkImage, documentIfExists));
 const DATE_WRITTEN = new Date(2018, 1, 20, 14, 52, 0);
 const PAGE_ID = 827461;
 
-const UkBankSecurity = props => {
+const UkBankSecurity = (props) => {
   const { className, ...rest } = props;
   const classNameFinal = [];
   if (className) {
@@ -25,7 +25,7 @@ const UkBankSecurity = props => {
   }
 
   return (
-    <main className={classNameFinal.join(" ")} {...rest}>
+    <main className={classNameFinal.join(' ')} {...rest}>
       <Section name="UK Bank Security">
         When logging into a number of UK bank websites, they ask for particular characters from a
         password or memorable word. Some banks implement this as an additional layer of security
@@ -52,9 +52,9 @@ const UkBankSecurity = props => {
         <br />
         <br />
         <FadingLazyLoadedImage
-          className={getClassName("pages__image")}
+          className={getClassName('pages__image')}
           altText="Santander's detrimental password entry form"
-          style={{ width: "30rem" }}
+          style={{ width: '30rem' }}
           width={1228}
           height={954}
           src={santanderPasswordEntry}
@@ -73,9 +73,9 @@ const UkBankSecurity = props => {
         <br />
         <br />
         <FadingLazyLoadedImage
-          className={getClassName("pages__image")}
+          className={getClassName('pages__image')}
           altText="Santander's Hollywood security"
-          style={{ width: "30rem" }}
+          style={{ width: '30rem' }}
           width={2378}
           height={811}
           src={santanderHollywood}
@@ -88,11 +88,11 @@ const UkBankSecurity = props => {
 };
 
 UkBankSecurity.propTypes = {
-  className: PropTypes.string
+  className: PropTypes.string,
 };
 
 UkBankSecurity.defaultProps = {
-  className: null
+  className: null,
 };
 
 export default UkBankSecurity;

@@ -30,7 +30,7 @@ const NetNeutrality = (props) => {
       <GoogleAds />
       <Section name="My Take on Net Neutrality">
         <ArticleDate date={DATE_WRITTEN} />
-        {/* <SubSection name="Abstract">
+        {/* <SubSection >
           TODO
         </SubSection> */}
         <SubSection name="Introduction">
@@ -257,7 +257,7 @@ const NetNeutrality = (props) => {
           Alfred A. Knopf, 2010. ISBN: 9780307269935. URL: https:\/\/books.google.co.uk/books?
           id=tKr0QwAACAAJ.
         </SubSection>
-        <SubSection name="Conclusion">
+        <SubSection >
           Throughout history, whenever a new communication technology has been invented, it has
           always become less open during a process of consolidation by organisations who want power
           over the industry [13]. In many countries, governments have greatly enjoyed these
@@ -281,7 +281,10 @@ const NetNeutrality = (props) => {
           trade, innovation and social well-being. Furthermore, abandoning NN could deny millions of
           individuals basic rights enjoyed by Internet-users around the world.
         </SubSection>
-        <SubSection name="Appendix A - Netflix download speeds on a number of American ISPs">
+        <SubSection
+          o
+          name="Appendix A - Netflix download speeds on a number of American ISPs"
+        >
           <FadingLazyLoadedImage
             className={getClassName('pages__image')}
             altText="Netflix download speeds on a number of American ISPs"
