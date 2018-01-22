@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import PropTypes from "prop-types";
 import SubSection from "./SubSection";
 import TechSpecs from "./TechSpecs";
+import TextLink from "./TextLink";
 import GetSocial from "./GetSocial";
 import PersonalDetails from "./PersonalDetails";
 import blackPaper from "../images/blackPaper.jpg";
@@ -41,20 +42,11 @@ class Footer extends Component {
         style={{ backgroundImage: `url(${blackPaper})` }}
         {...rest}
       >
-        <GetSocial
-          light
-          alwaysCentered
-          className={getClassName("footer__component")}
-        />
-        <a href="/site-map">
-          <SubSection
-            noPadding
-            light
-            name="Site map →"
-            link
-            className={getClassName("footer__component")}
-          />
-        </a>
+        <GetSocial light alwaysCentered className={getClassName("footer__component")} />
+        <TextLink light href="/site-map" className={getClassName("footer__component")}>
+          {" "}
+          Site map →{" "}
+        </TextLink>
         <PersonalDetails light className={getClassName("footer__component")} />
         <TechSpecs light className={getClassName("footer__component")} />
         <SubSection
@@ -75,4 +67,4 @@ Footer.defaultProps = {
   className: null
 };
 
- export default Footer;
+export default Footer;
