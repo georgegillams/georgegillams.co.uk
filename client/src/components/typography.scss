@@ -35,10 +35,29 @@
     text-decoration: none;
   }
 
+  &__anchor-link {
+    position: absolute;
+    margin-left: -1.75rem;
+    margin-top: .3rem;
+
+    @include bpk-breakpoint-tablet {
+      margin-left: 0;
+      position: initial;
+    }
+  }
+
   &__text {
     color: rgb(60, 68, 81);
-     font-family: 'Quattrocento Sans', sans-serif;
+    font-family: 'Quattrocento Sans', sans-serif;
     text-decoration: none;
+
+  &--with-anchor-link {
+    @include bpk-breakpoint-tablet {
+      margin-left: 1.75rem;
+      margin-top: calc(-1.75rem + .15rem);
+      position: initial;
+    }
+  }
 
     &--subsection {
       padding-bottom: 0.5rem;

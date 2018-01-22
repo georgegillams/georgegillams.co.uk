@@ -1,12 +1,12 @@
-import PropTypes from "prop-types";
-import React from "react";
-import BpkText from "bpk-component-text";
+import PropTypes from 'prop-types';
+import React from 'react';
+import BpkText from 'bpk-component-text';
 
-import STYLES from "./typography.scss";
+import STYLES from './typography.scss';
 
-const getClassName = className => STYLES[className] || "UNKNOWN";
+const getClassName = className => STYLES[className] || 'UNKNOWN';
 
-const Section = props => {
+const Section = (props) => {
   const {
     link,
     fancy,
@@ -19,26 +19,29 @@ const Section = props => {
     ...rest
   } = props;
 
-  const classNameFinal = [getClassName("typography__main")];
+  const classNameFinal = [getClassName('typography__main')];
   const textClassNameFinal = [
-    getClassName("typography__text"),
-    getClassName("typography__text--section")
+    getClassName('typography__text'),
+    getClassName('typography__text--section'),
   ];
+  if (anchorLink) {
+    textClassNameFinal.push(getClassName('typography__text--with-anchor-link'));
+  }
   if (light) {
-    classNameFinal.push(getClassName("typography--light"));
-    textClassNameFinal.push(getClassName("typography--light"));
+    classNameFinal.push(getClassName('typography--light'));
+    textClassNameFinal.push(getClassName('typography--light'));
   }
   if (link) {
-    classNameFinal.push(getClassName("typography__link"));
-    textClassNameFinal.push(getClassName("typography__link"));
+    classNameFinal.push(getClassName('typography__link'));
+    textClassNameFinal.push(getClassName('typography__link'));
   }
   if (noPadding) {
-    classNameFinal.push(getClassName("typography--no-padding"));
-    textClassNameFinal.push(getClassName("typography--no-padding"));
+    classNameFinal.push(getClassName('typography--no-padding'));
+    textClassNameFinal.push(getClassName('typography--no-padding'));
   }
   if (fancy) {
-    classNameFinal.push(getClassName("typography--fancy"));
-    textClassNameFinal.push(getClassName("typography--fancy"));
+    classNameFinal.push(getClassName('typography--fancy'));
+    textClassNameFinal.push(getClassName('typography--fancy'));
   }
   if (className) {
     classNameFinal.push(className);
@@ -47,10 +50,12 @@ const Section = props => {
     textClassNameFinal.push(textClassName);
   }
 
+  const anchorLink = (`${name}`).toLowerCase().split(' ').join('-');
+
   return (
-    <div className={classNameFinal.join(" ")} {...rest}>
+    <div className={classNameFinal.join(' ')} {...rest}>
       {name && (
-        <BpkText tagName="h2" textStyle="xxl" className={textClassNameFinal.join(" ")}>
+        <BpkText id={anchorLink} tagName="h2" textStyle="xxl" className={textClassNameFinal.join(' ')}>
           {name}
         </BpkText>
       )}
@@ -68,7 +73,7 @@ Section.propTypes = {
   className: PropTypes.string,
   textClassName: PropTypes.string,
   style: PropTypes.style,
-  children: PropTypes.node
+  children: PropTypes.node,
 };
 
 Section.defaultProps = {
@@ -80,7 +85,7 @@ Section.defaultProps = {
   className: null,
   textClassName: null,
   style: null,
-  children: null
+  children: null,
 };
 
 export default Section;
