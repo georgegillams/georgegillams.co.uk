@@ -61,6 +61,7 @@ const Routes = (
       <Route path="/articles/list" component={Articles} />
       <Route path="/articles/net-neutrality" component={NetNeutrality} />
       <Route path="/articles/vim" component={SwitchToVim} />
+      <Route path="/articles/uk-bank-security" component={UkBankSecurity} />
     </Route>
 
     <Route path="/travel" component={null}>
@@ -74,6 +75,10 @@ const Routes = (
     </Route>
 
     <Route path="/art" component={Art}>
+      {/* <IndexRedirect to={ROUTES.GETTING_STARTED} /> */}
+    </Route>
+
+    <Route path="/site-map" component={SiteMap}>
       {/* <IndexRedirect to={ROUTES.GETTING_STARTED} /> */}
     </Route>
 

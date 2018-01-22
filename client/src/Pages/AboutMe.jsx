@@ -24,7 +24,7 @@ const AboutMe = (props) => {
 
   return (
     <main className={classNameFinal.join(' ')} {...rest}>
-      <Section name="Hi! I'm George.">
+      <Section  name="Hi! I'm George.">
         I&apos;m an open-source software engineer at{' '}
         <TextLink external href="https://www.skyscanner.net/">
           Skyscanner
