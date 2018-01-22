@@ -39,6 +39,12 @@ class App extends React.Component {
   }
 
   render() {
+    const location = window.location + "";
+    const needsRedirect = !location.includes("localhost") && !location.includes("https");
+    if (needsRedirect) {
+      window.location = location.replace("http", "https");
+    }
+
     return (
       <div className={getClassName("app__site")}>
         <NavigationBar />
@@ -49,23 +55,14 @@ class App extends React.Component {
                 <Route exact path="/" component={HomePage} />
                 <Route path="/about/engagement" component={Engagement} />
                 {/* <Route path="/articles/anorexia-nervosa" component={MarkAustinOnAnorexiaNervosa} /> */}
-                <Route
-                  path="/articles/net-neutrality"
-                  component={NetNeutrality}
-                />
+                <Route path="/articles/net-neutrality" component={NetNeutrality} />
                 <Route path="/articles/vim" component={SwitchToVim} />
-                <Route
-                  path="/articles/uk-bank-security"
-                  component={UkBankSecurity}
-                />
+                <Route path="/articles/uk-bank-security" component={UkBankSecurity} />
                 <Route path="/travel/longleat-2017" component={Longleat} />
                 <Route path="/travel/munich-2017" component={Munich} />
                 <Route path="/travel/iceland-2018" component={Iceland} />
                 <Route path="/travel/disneyland-2017" component={Disneyland} />
-                <Route
-                  path="/travel/serre-chevalier-2017"
-                  component={SerreChevalier}
-                />
+                <Route path="/travel/serre-chevalier-2017" component={SerreChevalier} />
                 <Route
                   path="/apps/password-character-extractor"
                   component={PasswordCharacterExtractor}
