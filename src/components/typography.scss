@@ -2,77 +2,81 @@
 
 @fontface {
   font-family: 'Bungee Inline', cursive;
-  src: url('https://fonts.googleapis.com/css?family=Bungee+Inline')
+  src: url('https://fonts.googleapis.com/css?family=Bungee+Inline');
 }
+
 @fontface {
   font-family: 'Neuton', serif;
-  src: url('https://fonts.googleapis.com/css?family=Neuton')
+  src: url('https://fonts.googleapis.com/css?family=Neuton');
 }
+
 @fontface {
   font-family: 'Quattrocento Sans', sans-serif;
-  src: url('https://fonts.googleapis.com/css?family=Quattrocento+Sans')
+  src: url('https://fonts.googleapis.com/css?family=Quattrocento+Sans');
 }
+
 @fontface {
   font-family: 'Tangerine', cursive;
-  src: url('https://fonts.googleapis.com/css?family=Tangerine')
-}    
+  src: url('https://fonts.googleapis.com/css?family=Tangerine');
+}
+
 @fontface {
   font-family: 'Iceland', cursive;
-  src: url('https://fonts.googleapis.com/css?family=Iceland')
+  src: url('https://fonts.googleapis.com/css?family=Iceland');
 }
 
 .typography {
-     &__main {
+  &__main {
+    width: 100%;
+    padding-bottom: 1rem;
     color: $bpk-color-gray-700;
     // font-family: 'Neuton', serif;
     font-family: 'Quattrocento Sans', sans-serif;
     text-decoration: none;
-    width: 100%;
-    padding-bottom: 1rem;
-}
+  }
 
-       &__text {
-      color: $bpk-color-gray-700;
-      font-family: 'Quattrocento Sans', sans-serif;
+  &__text {
+    color: $bpk-color-gray-700;
+    font-family: 'Quattrocento Sans', sans-serif;
+    text-decoration: none;
+
+    &--subsection {
+      padding-bottom: 0.5rem;
       text-decoration: none;
+    }
 
-        &--subsection{
-      padding-bottom: .5rem;
-      text-decoration: none;
-        }
-
-        &--section {
-      padding-bottom: .4rem;
+    &--section {
+      padding-bottom: 0.4rem;
       font-size: 2.2rem;
       line-height: 2.2rem;
       text-decoration: none;
-        }
-
     }
-
-      &--fancy {
-        font-family: 'Tangerine', cursive;
-      }
-
-      &--no-padding {
-        padding:0;
-      }
-
-      &--inline {
-        width: auto;
-      }
-
-      &--link {
-        text-decoration: none;
-        display: inline-block;
-
-     &:hover {
-       color: rgb(62,158,235);
-       text-decoration: none;
-     }
-      }
-
-      &--light {
-          color: white;
-      }
   }
+
+  &--fancy {
+    font-family: 'Tangerine', cursive;
+  }
+
+  &--no-padding {
+    padding: 0;
+  }
+
+  &--inline {
+    width: auto;
+  }
+
+  &--link {
+    display: inline-block;
+    font-weight: bold;
+    text-decoration: none;
+
+    &:hover {
+      color: rgb(62, 158, 235);
+      text-decoration: none;
+    }
+  }
+
+  &--light {
+    color: white;
+  }
+}
