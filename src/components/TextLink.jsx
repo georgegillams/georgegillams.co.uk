@@ -7,19 +7,11 @@ import STYLES from "./typography.scss";
 const getClassName = className => STYLES[className] || "UNKNOWN";
 
 const TextLink = props => {
-  const {
-    external,
-    fancy,
-    light,
-    href,
-    className,
-    textClassName,
-    children,
-    ...rest
-  } = props;
+  const { external, fancy, light, href, className, textClassName, children, ...rest } = props;
 
   const classNameFinal = [getClassName("typography__main")];
-  classNameFinal.push(getClassName("typography--link"));
+  classNameFinal.push(getClassName("typography__link"));
+  classNameFinal.push(getClassName("typography__link--text-link"));
   classNameFinal.push(getClassName("typography--no-padding"));
   if (light) {
     classNameFinal.push(getClassName("typography--light"));
@@ -65,4 +57,4 @@ TextLink.defaultProps = {
   className: null
 };
 
- export default TextLink;
+export default TextLink;

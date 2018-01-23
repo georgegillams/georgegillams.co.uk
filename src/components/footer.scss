@@ -1,20 +1,45 @@
 @import '~bpk-mixins';
 
 .footer {
-     &__container {
+  &__container {
     display: flex;
     height: auto;
-    padding: 2rem;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
-    background-color: rgb(26, 33, 43);
-    background-position: center;
-    background-size: cover;
     text-align: center;
+
+    @include bpk-breakpoint-tablet {
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    &--outer {
+      padding: 2rem;
+      background-color: rgb(26, 33, 43);
+      background-position: center;
+      background-size: cover;
+    }
+
+    &--horizontal {
+      display: flex;
+      width: 100%;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center;
+
+      @include bpk-breakpoint-tablet {
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+      }
+    }
   }
 
-     &__component {
-    padding-bottom: 1rem;
+  &__component {
+    width: auto;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
   }
 }
