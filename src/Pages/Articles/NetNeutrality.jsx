@@ -7,10 +7,11 @@ import SubSection from "./../../components/SubSection";
 import netflixDownloads from "./images/netflixDownloads.png";
 import ArticleDate from "../../components/ArticleDate";
 import Comments from "../../components/Comments";
+import GoogleAds from "../../components/GoogleAds";
 
-// import STYLES from '../pages.scss';
-//
-// const getClassName = className => STYLES[className] || 'UNKNOWN';
+import STYLES from "../pages.scss";
+
+const getClassName = className => STYLES[className] || "UNKNOWN";
 const documentIfExists = typeof window !== "undefined" ? document : null;
 const FadingLazyLoadedImage = withLoadingBehavior(withLazyLoading(BpkImage, documentIfExists));
 const DATE_WRITTEN = new Date(2017, 11, 8, 7, 1, 0);
@@ -25,6 +26,7 @@ const NetNeutrality = props => {
 
   return (
     <main className={classNameFinal.join(" ")} {...rest}>
+      <GoogleAds />
       <Section name="My Take on Net Neutrality">
         <ArticleDate date={DATE_WRITTEN} />
         {/* <SubSection name="Abstract">
@@ -280,6 +282,7 @@ const NetNeutrality = props => {
         </SubSection>
         <SubSection name="Appendix A - Netflix download speeds on a number of American ISPs">
           <FadingLazyLoadedImage
+            className={getClassName("pages__image")}
             altText="Netflix download speeds on a number of American ISPs"
             width={987}
             height={575}
