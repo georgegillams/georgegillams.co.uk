@@ -16,7 +16,10 @@ const Card = props => {
   return (
     <BpkCard
       className={classNameFinal.join(" ")}
-      style={{ backgroundImage: `url(${imageSrc})` }}
+      style={{
+        backgroundColor: light ? "rgb(60, 68, 81)" : "none",
+        backgroundImage: `url(${imageSrc})`
+      }}
       href={linkUrl}
       {...rest}
     >
@@ -41,4 +44,4 @@ Card.defaultProps = {
   className: null
 };
 
- export default Card;
+export default Card;

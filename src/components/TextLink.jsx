@@ -15,6 +15,7 @@ const TextLink = props => {
   classNameFinal.push(getClassName("typography--no-padding"));
   if (light) {
     classNameFinal.push(getClassName("typography--light"));
+    classNameFinal.push(getClassName("typography--light--text-link"));
   }
   if (fancy) classNameFinal.push(getClassName("typography--fancy"));
   classNameFinal.push(getClassName("typography--inline"));
