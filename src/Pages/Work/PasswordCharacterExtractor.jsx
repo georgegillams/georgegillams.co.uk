@@ -1,9 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
-import BpkImage, {
-  withLazyLoading,
-  withLoadingBehavior
-} from "bpk-component-image";
+import BpkImage, { withLazyLoading, withLoadingBehavior } from "bpk-component-image";
 import GitHubForkRibbon from "react-github-fork-ribbon";
 import Section from "../../components/Section";
 import TextLink from "../../components/TextLink";
@@ -17,9 +14,7 @@ import STYLES from "./apps.scss";
 
 const getClassName = className => STYLES[className] || "UNKNOWN";
 const documentIfExists = typeof window !== "undefined" ? document : null;
-const FadingLazyLoadedImage = withLoadingBehavior(
-  withLazyLoading(BpkImage, documentIfExists)
-);
+const FadingLazyLoadedImage = withLoadingBehavior(withLazyLoading(BpkImage, documentIfExists));
 
 const passwordCharacterExtractor = props => {
   const { className, ...rest } = props;
@@ -40,10 +35,7 @@ const passwordCharacterExtractor = props => {
           View on GitHub
         </GitHubForkRibbon>
         <Section light name="Password Character Extractor">
-          <SubSection
-            light
-            name="Get the characters you need. Secure and easy."
-          />
+          <SubSection light name="Get the characters you need. Secure and easy." />
         </Section>
         <div className={getClassName("apps__showcase--padded")}>
           <BpkImage
@@ -82,16 +74,13 @@ const passwordCharacterExtractor = props => {
       </div>
       <Section name="Features">
         <div className={getClassName("apps__feature-container")}>
-          <SubSection
-            name="Secure"
-            className={getClassName("apps__feature-section")}
-          >
-            Your pin is used to encrypt all password data on disk. Characters
-            are only decoded when they are needed.
+          <SubSection name="Secure" className={getClassName("apps__feature-section")}>
+            Your pin is used to encrypt all password data on disk. Characters are only decoded when
+            they are needed.
             <br />
             <br />
-            So if anyone else accesses your machine, they won&apos;t be able to
-            use the app or see the data without your pin to decrypt it.
+            So if anyone else accesses your machine, they won&apos;t be able to use the app or see
+            the data without your pin to decrypt it.
             <br />
             <br />
             <FadingLazyLoadedImage
@@ -103,13 +92,9 @@ const passwordCharacterExtractor = props => {
               src={passwordCharacterExtractorPinEntry}
             />
           </SubSection>
-          <SubSection
-            name="Easy"
-            className={getClassName("apps__feature-section")}
-          >
-            Easily extract the information you need to login without writing
-            your whole password out and then painfully counting along to get the
-            right letter.
+          <SubSection name="Easy" className={getClassName("apps__feature-section")}>
+            Easily extract the information you need to login without writing your whole password out
+            and then painfully counting along to get the right letter.
             <br />
             <br />
             So you can log in safely, without making mistakes.
@@ -125,10 +110,8 @@ const passwordCharacterExtractor = props => {
         />
         <br />
         <br />
-        <Button
-          onClick={() => window.location.replace("/articles/uk-bank-security")}
-        >
-          More information on UK bank security
+        <Button onClick={() => window.location.replace("/articles/uk-bank-security")}>
+          More information on UK bank security →
         </Button>
       </Section>
     </main>
