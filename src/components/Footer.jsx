@@ -4,6 +4,7 @@ import SubSection from "./SubSection";
 import TechSpecs from "./TechSpecs";
 import TextLink from "./TextLink";
 import GetSocial from "./GetSocial";
+import Logo from "./Logo";
 import PersonalDetails from "./PersonalDetails";
 import blackPaper from "../images/blackPaper.jpg";
 
@@ -31,7 +32,10 @@ class Footer extends Component {
     const currentYear = new Date().getFullYear();
 
     const { className, ...rest } = this.props;
-    const outerClassNameFinal = [getClassName("footer__container")];
+    const outerClassNameFinal = [
+      getClassName("footer__container"),
+      getClassName("footer__container--outer")
+    ];
     if (className) {
       outerClassNameFinal.push(className);
     }
@@ -42,18 +46,27 @@ class Footer extends Component {
         style={{ backgroundImage: `url(${blackPaper})` }}
         {...rest}
       >
-        <GetSocial light alwaysCentered className={getClassName("footer__component")} />
+        <GetSocial light alwaysCentered />
         <TextLink light href="/site-map" className={getClassName("footer__component")}>
           {" "}
           Site map →{" "}
         </TextLink>
-        <PersonalDetails light className={getClassName("footer__component")} />
-        <TechSpecs light className={getClassName("footer__component")} />
-        <SubSection
-          fancy
-          noPadding
-          light
-        >{`© copyright George Gillams 2017 - ${currentYear}`}</SubSection>
+        <div className={getClassName("footer__container--horizontal")}>
+          <div className={getClassName("footer__container")}>
+            <PersonalDetails light className={getClassName("footer__component")} />
+            <TechSpecs light className={getClassName("footer__component")} />
+          </div>
+          <div className={getClassName("footer__container")}>
+            <Logo small style={{ marginTop: "-1rem" }} />
+            <SubSection
+              className={getClassName("footer__component")}
+              style={{ marginTop: "-1.7rem" }}
+              fancy
+              noPadding
+              light
+            >{`© copyright George Gillams 2017 - ${currentYear}`}</SubSection>
+          </div>
+        </div>
       </footer>
     );
   }
