@@ -1,24 +1,33 @@
-import React from 'react';
-import PageContentContainer from '../../components/PageContentContainer';
-import Section from './../../components/Section';
+import React from "react";
+import PageContentContainer from "../../components/PageContentContainer";
+import Section from "./../../components/Section";
 
-import STYLES from '../pages.scss';
+import STYLES from "../pages.scss";
 
-const getClassName = className => STYLES[className] || 'UNKNOWN';
+const getClassName = className => STYLES[className] || "UNKNOWN";
 
- 
-const SimpleBanner = props => (
-  <main className={getClassName('pages__banner')}>
-    <div className={getClassName('pages__banner-image')} style={{ backgroundImage: `url(${props.imageSrc})` }} >
-      <PageContentContainer>
-        <div className={getClassName('pages__banner-container')}>
-          <a href={props.linkUrl}>
-            <Section light={props.light} name={props.title} link />
-          </a>
-        </div>
-      </PageContentContainer>
-    </div>
-  </main>
-);
+const SimpleBanner = props => {
+  const { light, title, imageSrc, linkUrl, ...rest } = props;
 
- export default SimpleBanner;
+  return (
+    <main className={getClassName("pages__banner")}>
+      <div
+        className={getClassName("pages__banner-image")}
+        style={{
+          backgroundColor: light ? "rgb(60, 68, 81)" : "none",
+          backgroundImage: `url(${imageSrc})`
+        }}
+      >
+        <PageContentContainer>
+          <div className={getClassName("pages__banner-container")}>
+            <a href={linkUrl}>
+              <Section light={light} name={title} link />
+            </a>
+          </div>
+        </PageContentContainer>
+      </div>
+    </main>
+  );
+};
+
+export default SimpleBanner;

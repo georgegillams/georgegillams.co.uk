@@ -29,14 +29,14 @@
   &__main {
     width: 100%;
     padding-bottom: 1rem;
-    color: $bpk-color-gray-700;
+    color: rgb(60, 68, 81);
     // font-family: 'Neuton', serif;
     font-family: 'Quattrocento Sans', sans-serif;
     text-decoration: none;
   }
 
   &__text {
-    color: $bpk-color-gray-700;
+    color: rgb(60, 68, 81);
     font-family: 'Quattrocento Sans', sans-serif;
     text-decoration: none;
 
@@ -83,5 +83,10 @@
 
   &--light {
     color: white;
+
+    &--text-link {
+      font-style: italic;
+      font-weight: bold;
+    }
   }
 }
