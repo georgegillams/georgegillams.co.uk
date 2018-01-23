@@ -50,11 +50,7 @@ const Section = props => {
   return (
     <div className={classNameFinal.join(" ")} {...rest}>
       {name && (
-        <BpkText
-          tagName="h2"
-          textStyle="xxl"
-          className={textClassNameFinal.join(" ")}
-        >
+        <BpkText tagName="h2" textStyle="xxl" className={textClassNameFinal.join(" ")}>
           {name}
         </BpkText>
       )}
