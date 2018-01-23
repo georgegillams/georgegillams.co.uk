@@ -50,11 +50,7 @@ const SubSection = props => {
   return (
     <div className={classNameFinal.join(" ")} {...rest}>
       {name && (
-        <BpkText
-          tagName="h3"
-          textStyle="lg"
-          className={textClassNameFinal.join(" ")}
-        >
+        <BpkText tagName="h3" textStyle="lg" className={textClassNameFinal.join(" ")}>
           {name}
         </BpkText>
       )}
@@ -86,4 +82,4 @@ SubSection.defaultProps = {
   children: null
 };
 
- export default SubSection;
+export default SubSection;
