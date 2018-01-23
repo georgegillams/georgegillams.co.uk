@@ -65,10 +65,15 @@
     width: auto;
   }
 
-  &--link {
+  &__link {
     display: inline-block;
     font-weight: bold;
     text-decoration: none;
+
+    &--text-link {
+      color: darkorchid;
+      font-weight: normal;
+    }
 
     &:hover {
       color: rgb(62, 158, 235);
