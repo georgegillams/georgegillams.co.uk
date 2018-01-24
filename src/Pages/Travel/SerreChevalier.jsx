@@ -1,11 +1,9 @@
 import React from "react";
 import PropTypes from "prop-types";
-import BpkImage, {
-  withLazyLoading,
-  withLoadingBehavior
-} from "bpk-component-image";
+import BpkImage, { withLazyLoading, withLoadingBehavior } from "bpk-component-image";
 import Section from "./../../components/Section";
 import SubSection from "./../../components/SubSection";
+import LicenseInfo from "../../components/LicenseInfo";
 import Comments from "../../components/Comments";
 import serreChevalier from "./images/serreChevalier.jpg";
 
@@ -15,9 +13,7 @@ const PAGE_ID = 909183;
 
 const getClassName = className => STYLES[className] || "UNKNOWN";
 const documentIfExists = typeof window !== "undefined" ? document : null;
-const FadingLazyLoadedImage = withLoadingBehavior(
-  withLazyLoading(BpkImage, documentIfExists)
-);
+const FadingLazyLoadedImage = withLoadingBehavior(withLazyLoading(BpkImage, documentIfExists));
 
 const SerreChevalier = props => {
   const { className, ...rest } = props;
@@ -48,6 +44,7 @@ const SerreChevalier = props => {
           </SubSection>
         </a>
       </Section>
+      <LicenseInfo centered />
       <Comments pageId={PAGE_ID} />
     </main>
   );
