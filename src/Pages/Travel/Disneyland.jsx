@@ -1,12 +1,10 @@
 import React from "react";
 import PropTypes from "prop-types";
-import BpkImage, {
-  withLazyLoading,
-  withLoadingBehavior
-} from "bpk-component-image";
+import BpkImage, { withLazyLoading, withLoadingBehavior } from "bpk-component-image";
 import Section from "./../../components/Section";
 import SubSection from "./../../components/SubSection";
 import Comments from "../../components/Comments";
+import LicenseInfo from "../../components/LicenseInfo";
 import mickeyMouse from "./images/mickeyMouse.jpg";
 
 import STYLES from "../pages.scss";
@@ -15,9 +13,7 @@ const PAGE_ID = 904827;
 
 const getClassName = className => STYLES[className] || "UNKNOWN";
 const documentIfExists = typeof window !== "undefined" ? document : null;
-const FadingLazyLoadedImage = withLoadingBehavior(
-  withLazyLoading(BpkImage, documentIfExists)
-);
+const FadingLazyLoadedImage = withLoadingBehavior(withLazyLoading(BpkImage, documentIfExists));
 
 const Disneyland = props => {
   const { className, ...rest } = props;
@@ -29,11 +25,10 @@ const Disneyland = props => {
   return (
     <main className={classNameFinal.join(" ")} {...rest}>
       <Section name="Disneyland 🏰️ Summer 2017">
-        We went to Disneyland for the first time in the summer to experience the
-        magic of the place. The attention to detail in the park was phenomenal,
-        which I think is probably what makes the whole place seem so magical. We
-        stayed in one of the official Disneyland hotel, making for a very
-        comfortable visit!
+        We went to Disneyland for the first time in the summer to experience the magic of the place.
+        The attention to detail in the park was phenomenal, which I think is probably what makes the
+        whole place seem so magical. We stayed in one of the official Disneyland hotel, making for a
+        very comfortable visit!
         <br />
         <br />
         <a
@@ -53,6 +48,7 @@ const Disneyland = props => {
           </SubSection>
         </a>
       </Section>
+      <LicenseInfo centered />
       <Comments pageId={PAGE_ID} />
     </main>
   );
