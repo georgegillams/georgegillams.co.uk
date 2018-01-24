@@ -4,6 +4,7 @@ import BpkImage, { withLazyLoading, withLoadingBehavior } from "bpk-component-im
 import Section from "../../components/Section";
 import SubSection from "../../components/SubSection";
 import Comments from "../../components/Comments";
+import LicenseInfo from "../../components/LicenseInfo";
 import guinnessCake from "../Art/images/20160215.jpg";
 import tulips from "../Art/images/20160409.jpg";
 import motorway from "../Art/images/20160419.jpg";
@@ -56,54 +57,57 @@ const Art = props => {
             <br />
           </SubSection>
         </SubSection>
-        <Section name="Photoshop">
-          <SubSection name="Tulips exploding with light">
-            For some reason the idea of light exploding out of tulips popped into my mind, so I went
-            out to find some and made it a reality. I used a similar effect in Art that I had used
-            in the past to create beams of sunlight breaking through the clouds, and then darkened
-            the background a little.
+      </Section>
+      <br />
+      <Section name="Photoshop">
+        <SubSection name="Tulips exploding with light">
+          For some reason the idea of light exploding out of tulips popped into my mind, so I went
+          out to find some and made it a reality. I used a similar effect in Art that I had used in
+          the past to create beams of sunlight breaking through the clouds, and then darkened the
+          background a little.
+          <br />
+          <br />
+          <FadingLazyLoadedImage
+            className={getClassName("pages__image")}
+            altText="Exploding tulips"
+            width={3000}
+            height={2000}
+            src={tulips}
+          />
+          <br />
+        </SubSection>
+        <SubSection name="Miss Saigon sketch">
+          With Miss Saigon coming to cinemas soon for one day only, I was inspired to draw the
+          production logo (aka tempted to procrastinate).
+          <br />
+          <br />
+          <FadingLazyLoadedImage
+            className={getClassName("pages__image")}
+            altText="Miss Saigon"
+            width={2153}
+            height={3000}
+            src={missSaigon}
+          />
+          <br />
+          <SubSection name="Dual-carriageway light-painting (in post)">
+            One evening after leaving work at an unearthly hour, I shot this uninspired photo. In
+            Photoshop, I then used the brush tool and some layer styles to create a 'painting with
+            light' effect.
             <br />
             <br />
             <FadingLazyLoadedImage
               className={getClassName("pages__image")}
-              altText="Exploding tulips"
+              altText="Dual-carriageway light-painting"
               width={3000}
               height={2000}
-              src={tulips}
+              src={motorway}
             />
             <br />
           </SubSection>
-          <SubSection name="Miss Saigon sketch">
-            With Miss Saigon coming to cinemas soon for one day only, I was inspired to draw the
-            production logo (aka tempted to procrastinate).
-            <br />
-            <br />
-            <FadingLazyLoadedImage
-              className={getClassName("pages__image")}
-              altText="Miss Saigon"
-              width={2153}
-              height={3000}
-              src={missSaigon}
-            />
-            <br />
-            <SubSection name="Dual-carriageway light-painting (in post)">
-              One evening after leaving work at an unearthly hour, I shot this uninspired photo. In
-              Photoshop, I then used the brush tool and some layer styles to create a 'painting with
-              light' effect.
-              <br />
-              <br />
-              <FadingLazyLoadedImage
-                className={getClassName("pages__image")}
-                altText="Dual-carriageway light-painting"
-                width={3000}
-                height={2000}
-                src={motorway}
-              />
-              <br />
-            </SubSection>
-          </SubSection>
-        </Section>
+        </SubSection>
       </Section>
+      <br />
+      <LicenseInfo centered />
       <Comments pageId={PAGE_ID} />
     </main>
   );

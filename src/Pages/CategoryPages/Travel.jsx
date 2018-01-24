@@ -1,5 +1,6 @@
 import React from "react";
 import Card from "../../components/Card";
+import LicenseInfo from "../../components/LicenseInfo";
 import iceland from "../Travel/images/iceland2.jpg";
 import longleat from "../Travel/images/longleatLight.jpg";
 import munich from "../Travel/images/munich.jpg";
@@ -47,6 +48,7 @@ const Travel = () => (
       linkUrl="/travel/serre-chevalier-2017"
       title="Serre Chevalier 2017"
     />
+    <LicenseInfo centered />
   </div>
 );
 

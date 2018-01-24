@@ -6,6 +6,7 @@ import Section from "./../../components/Section";
 import SubSection from "./../../components/SubSection";
 import netflixDownloads from "./images/netflixDownloads.png";
 import ArticleDate from "../../components/ArticleDate";
+import LicenseInfo from "../../components/LicenseInfo";
 import Comments from "../../components/Comments";
 import GoogleAds from "../../components/GoogleAds";
 
@@ -290,6 +291,7 @@ const NetNeutrality = props => {
           />
         </SubSection>
       </Section>
+      <LicenseInfo />
       <Comments pageId={PAGE_ID} />
     </main>
   );
