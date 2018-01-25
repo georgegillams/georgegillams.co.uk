@@ -40,7 +40,8 @@ class App extends React.Component {
 
   render() {
     const location = window.location + "";
-    const needsRedirect = !location.includes("localhost") && !location.includes("https");
+    const isLocalhost = location.includes("localhost");
+    const needsRedirect = !isLocalhost && !location.includes("https");
     if (needsRedirect) {
       window.location = location.replace("http", "https");
     }
@@ -54,7 +55,12 @@ class App extends React.Component {
               <Switch>
                 <Route exact path="/" component={HomePage} />
                 <Route path="/about/engagement" component={Engagement} />
-                {/* <Route path="/articles/anorexia-nervosa" component={MarkAustinOnAnorexiaNervosa} /> */}
+                {isLocalhost && (
+                  <Route
+                    path="/articles/anorexia-nervosa"
+                    component={MarkAustinOnAnorexiaNervosa}
+                  />
+                )}
                 <Route path="/articles/net-neutrality" component={NetNeutrality} />
                 <Route path="/articles/vim" component={SwitchToVim} />
                 <Route path="/articles/uk-bank-security" component={UkBankSecurity} />
@@ -67,7 +73,7 @@ class App extends React.Component {
                   path="/apps/password-character-extractor"
                   component={PasswordCharacterExtractor}
                 />
-                {/* <Route path="/documents/degree" component={Degree} /> */}
+                {isLocalhost && <Route path="/documents/degree" component={Degree} />}
                 <Route path="/net-neutrality" component={NetNeutrality} />
                 <Route path="/site-map" component={SiteMap} />
                 <Route path="/work" component={Work} />
