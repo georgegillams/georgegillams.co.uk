@@ -7,7 +7,7 @@ import STYLES from "./logo.scss";
 const getClassName = className => STYLES[className] || "UNKNOWN";
 
 const Logo = props => {
-  const { animated, small, className, alwaysCentered, light, ...rest } = props;
+  const { noPadding, animated, small, className, alwaysCentered, light, ...rest } = props;
   const classNameFinal = [getClassName("logo__container")];
   if (className) {
     classNameFinal.push(className);
@@ -28,6 +28,11 @@ const Logo = props => {
   if (small) {
     largeTextClassNameFinal.push(getClassName("logo__logo-large--smaller"));
   }
+  if (noPadding) {
+    classNameFinal.push(getClassName("logo__container--no-padding"));
+    largeTextClassNameFinal.push(getClassName("logo__logo-large--no-padding"));
+    baseTextClassNameFinal.push(getClassName("logo__logo-base--no-padding"));
+  }
 
   return (
     <div className={classNameFinal.join(" ")} {...rest}>
@@ -39,10 +44,7 @@ const Logo = props => {
           <div>
             <br />
             <br />
-            <BpkText
-              textStyle="lg"
-              className={baseTextClassNameFinal.join(" ")}
-            >
+            <BpkText textStyle="lg" className={baseTextClassNameFinal.join(" ")}>
               {"George Gillams"}
             </BpkText>
           </div>
@@ -54,6 +56,7 @@ const Logo = props => {
 
 Logo.propTypes = {
   className: PropTypes.string,
+  noPadding: PropTypes.bool,
   animated: PropTypes.bool,
   small: PropTypes.bool,
   light: PropTypes.bool,
@@ -62,10 +65,11 @@ Logo.propTypes = {
 
 Logo.defaultProps = {
   className: null,
+  noPadding: false,
   animated: false,
   small: false,
   light: false,
   alwaysCentered: false
 };
 
- export default Logo;
+export default Logo;

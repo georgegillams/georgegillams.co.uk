@@ -2,44 +2,42 @@
 
 .footer {
   &__container {
-    display: flex;
+    display: grid;
     height: auto;
-    flex-direction: column;
-    justify-content: space-around;
+    padding: 2rem 4rem;
+    grid-template-areas:
+      'a'
+      'b'
+      'c'
+      'd';
+    grid-gap: 1rem;
     align-items: center;
-    text-align: center;
-
-    @include bpk-breakpoint-tablet {
-      flex-direction: column;
-      justify-content: space-between;
-      align-items: center;
-    }
-
-    &--outer {
-      padding: 2rem;
-      background-color: rgb(60, 68, 81);
-      background-position: center;
-      background-size: cover;
-    }
-
-    &--horizontal {
-      display: flex;
-      width: 100%;
-      flex-direction: row;
-      justify-content: space-around;
-      align-items: center;
-
-      @include bpk-breakpoint-tablet {
-        flex-direction: column;
-        justify-content: space-around;
-        align-items: center;
-      }
-    }
+    background-color: rgb(60, 68, 81);
+    background-position: center;
+    background-size: cover;
   }
 
-  &__component {
-    width: auto;
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
+  &__social {
+    grid-area: 'a';
+    text-align: center;
+  }
+
+  &__logo {
+    grid-area: 'b';
+    text-align: center;
+  }
+
+  &__tech {
+    grid-area: 'c';
+    text-align: center;
+  }
+
+  &__copyright {
+    grid-area: 'd';
+    text-align: center;
+  }
+
+  &__centered {
+    text-align: center;
   }
 }

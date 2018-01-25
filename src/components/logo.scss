@@ -22,7 +22,7 @@
 }
 
 .logo {
-     &__container {
+  &__container {
     display: flex;
     padding-bottom: 1rem;
     flex-direction: column;
@@ -49,9 +49,13 @@
     &--centered {
       align-items: center;
     }
+
+    &--no-padding {
+      padding: 0;
+    }
   }
 
-     &__logo-base {
+  &__logo-base {
     display: inline-block;
     color: rgb(60, 68, 81);
     font-family: 'Quattrocento Sans', sans-serif;
@@ -60,9 +64,13 @@
     &--light {
       color: $bpk-color-gray-100;
     }
+
+    &--no-padding {
+      line-height: normal;
+    }
   }
 
-     &__logo-large {
+  &__logo-large {
     display: inline-block;
     color: rgb(62, 158, 235);
     font-family: 'Quattrocento Sans', sans-serif;
@@ -72,6 +80,10 @@
 
     &--smaller {
       font-size: 3.5rem;
+    }
+
+    &--no-padding {
+      line-height: normal;
     }
   }
 }
