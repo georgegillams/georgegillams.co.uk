@@ -37,7 +37,7 @@ const PersonalDetailsBanner = () => (
           position: "relative"
         }}
       >
-        I wish this was my Aston Martin{" "}
+        I wish this were my Aston Martin{" "}
       </SubSection>
     </div>
   </main>
