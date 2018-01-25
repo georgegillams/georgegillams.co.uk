@@ -1,0 +1,24 @@
+@import '~bpk-mixins';
+
+.photo-gallery {
+  &__container {
+    display: grid;
+    height: auto;
+    padding: 2rem 4rem;
+    grid-template-areas:
+      'image1 blank0 image3'
+      'image1 image2 image3'
+      'blank1 image2 blank2'
+      'blank3 blank3 image4';
+    grid-gap: 1rem;
+    align-items: center;
+  }
+
+  &__image {
+    width: 100%;
+    height: 20rem;
+    background-position: center;
+    background-size: cover;
+    box-sizing: border-box;
+  }
+}
