@@ -6,10 +6,10 @@
     height: auto;
     padding: 2rem 4rem;
     grid-template-areas:
-      'a'
-      'b'
-      'c'
-      'd';
+      'social'
+      'logo'
+      'tech'
+      'copyright';
     grid-gap: 1rem;
     align-items: center;
     background-color: rgb(60, 68, 81);
@@ -18,22 +18,22 @@
   }
 
   &__social {
-    grid-area: 'a';
+    grid-area: social;
     text-align: center;
   }
 
   &__logo {
-    grid-area: 'b';
+    grid-area: logo;
     text-align: center;
   }
 
   &__tech {
-    grid-area: 'c';
+    grid-area: tech;
     text-align: center;
   }
 
   &__copyright {
-    grid-area: 'd';
+    grid-area: copyright;
     text-align: center;
   }
 
