@@ -16,13 +16,6 @@ const getClassNamePages = className => PAGE_STYLES[className] || "UNKNOWN";
 
 import { colorGray700 } from "bpk-tokens/tokens/base.es6";
 
-const mainLinkStyle = {
-  color: "#3e9eeb",
-  fontFamily: "Neuton",
-  fontWeight: "bold"
-};
-const linkStyle = { color: colorGray700, fontFamily: "Neuton" };
-
 class Footer extends Component {
   constructor(props) {
     super(props);
@@ -32,10 +25,7 @@ class Footer extends Component {
     const currentYear = new Date().getFullYear();
 
     const { className, ...rest } = this.props;
-    const outerClassNameFinal = [
-      getClassName("footer__container"),
-      getClassName("footer__container--outer")
-    ];
+    const outerClassNameFinal = [getClassName("footer__container")];
     if (className) {
       outerClassNameFinal.push(className);
     }
@@ -46,27 +36,31 @@ class Footer extends Component {
         style={{ backgroundImage: `url(${blackPaper})` }}
         {...rest}
       >
-        <GetSocial light alwaysCentered />
-        <TextLink light href="/site-map" className={getClassName("footer__component")}>
-          {" "}
-          Site map →{" "}
-        </TextLink>
-        <div className={getClassName("footer__container--horizontal")}>
-          <div className={getClassName("footer__container")}>
-            <PersonalDetails light className={getClassName("footer__component")} />
-            <TechSpecs light className={getClassName("footer__component")} />
-          </div>
-          <div className={getClassName("footer__container")}>
-            <Logo small style={{ marginTop: "-1rem" }} />
-            <SubSection
-              className={getClassName("footer__component")}
-              style={{ marginTop: "-1.7rem" }}
-              fancy
-              noPadding
-              light
-            >{`© copyright George Gillams 2017 - ${currentYear}`}</SubSection>
-          </div>
-        </div>
+        <GetSocial
+          light
+          alwaysCentered
+          className={getClassName("footer__centered")}
+          style={{ gridArea: "social" }}
+        />
+        <Logo
+          small
+          alwaysCentered
+          className={getClassName("footer__centered")}
+          noPadding
+          style={{ gridArea: "logo" }}
+        />
+        <TechSpecs
+          className={getClassName("footer__centered")}
+          light
+          style={{ gridArea: "tech" }}
+        />
+        <SubSection
+          style={{ gridArea: "copyright" }}
+          className={getClassName("footer__centered")}
+          fancy
+          noPadding
+          light
+        >{`© copyright George Gillams 2017 - ${currentYear}`}</SubSection>
       </footer>
     );
   }
