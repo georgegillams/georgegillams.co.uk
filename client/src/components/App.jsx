@@ -1,4 +1,5 @@
 import React from "react";
+import "whatwg-fetch";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import PageContentContainer from "./PageContentContainer";
 
@@ -34,8 +35,24 @@ import STYLES from "./app.scss";
 const getClassName = className => STYLES[className] || "UNKNOWN";
 
 class App extends React.Component {
+  state = {
+    response: "no response yet"
+  };
   componentWillMount() {
     document.getElementById("body").className = getClassName("app__body");
+  }
+
+  callApi = async () => {
+    const response = await fetch("/api/hello");
+    const body = await response.json();
+    if (response.status !== 200) throw Error(body.message);
+    return body;
+  };
+
+  componentDidMount() {
+    this.callApi()
+      .then(res => this.setState({ response: res.express }))
+      .catch(err => console.log(err));
   }
 
   render() {
@@ -48,6 +65,7 @@ class App extends React.Component {
 
     return (
       <div className={getClassName("app__site")}>
+        <p className="App-intro">{this.state.response}</p>
         <NavigationBar />
         <div className={getClassName("app__main")}>
           <PageContentContainer>
