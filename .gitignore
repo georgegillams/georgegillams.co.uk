@@ -7,4 +7,10 @@ npm-debug.*
 lerna-debug.log
 sassdoc-data.json
 backpack.iml
-yarn.lock
+npm.lock
+coverage
+build
+.yarnclean
+npm-debug.log
+yarn-error.log
+*.rdb
