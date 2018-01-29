@@ -65,7 +65,6 @@ class App extends React.Component {
 
     return (
       <div className={getClassName("app__site")}>
-        <p className="App-intro">{this.state.response}</p>
         <NavigationBar />
         <div className={getClassName("app__main")}>
           <PageContentContainer>
