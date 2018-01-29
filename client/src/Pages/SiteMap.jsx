@@ -1,0 +1,79 @@
+import React from "react";
+import TextLink from "../components/TextLink";
+import SubSection from "../components/SubSection";
+
+import STYLES from "./pages.scss";
+
+const getClassName = className => STYLES[className] || "UNKNOWN";
+
+const SiteMap = () => (
+  <div className={getClassName("pages__site-map-tree")}>
+    <div>
+      <SubSection
+        className={getClassName("pages__site-map-item")}
+        name="Articles 📝"
+      >
+        <TextLink href="/articles/uk-bank-security">UK Bank Security</TextLink>
+        <br />
+        <TextLink href="/articles/vim">Switching to Vim</TextLink>
+        <br />
+        <TextLink href="/articles/net-neutrality">
+          My Take on Net Neutrality
+        </TextLink>
+      </SubSection>
+      <SubSection
+        className={getClassName("pages__site-map-item")}
+        name="Travel ✈️"
+      >
+        <TextLink href="/travel/iceland-2018"> Iceland </TextLink>
+        <br />
+        <TextLink href="/travel/longleat-2017"> Longleat </TextLink>
+        <br />
+        <TextLink href="/travel/munich-2017"> Munich </TextLink>
+        <br />
+        <TextLink href="/travel/disneyland-2017">Disneyland</TextLink>
+        <br />
+        <TextLink href="/travel/serre-chevalier-2017">
+          {" "}
+          Serre Chevalier{" "}
+        </TextLink>
+      </SubSection>
+      <SubSection
+        className={getClassName("pages__site-map-item")}
+        name="Art 🎨"
+      >
+        <TextLink href="/art">Artistic creations</TextLink>
+      </SubSection>
+      <SubSection
+        className={getClassName("pages__site-map-item")}
+        name="Work 📱"
+      >
+        <TextLink href="/work">Portfolio</TextLink>
+        <br />
+        <TextLink href="/apps/password-character-extractor">
+          Password Character Extractor
+        </TextLink>
+        {/* <br />
+          <TextLink href="/travel/longleat-2017"> Longleat </TextLink>
+          <br />
+          <TextLink href="/travel/munich-2017"> Munich </TextLink> */}
+      </SubSection>
+      {/* <SubSection className={getClassName('pages__site-map-item')} name="Documents 🥇">
+        <TextLink  href="/documents/degree">
+         <SubSection nclassName={getClassName('pages__site-map-item')}oPadding link name="Degree Certificate - 2018
+        </TextLink>
+        <br />
+      </SubSection> */}
+      <SubSection
+        className={getClassName("pages__site-map-item")}
+        name="Other stuff 🤷‍♂️"
+      >
+        <TextLink href="/about"> About me </TextLink>
+        <br />
+        <TextLink href="/contact"> Contact </TextLink>
+      </SubSection>
+    </div>
+  </div>
+);
+
+export default SiteMap;
