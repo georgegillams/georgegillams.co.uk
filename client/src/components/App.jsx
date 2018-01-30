@@ -1,49 +1,49 @@
-import React from "react";
-import "whatwg-fetch";
-import { BrowserRouter, Route, Switch } from "react-router-dom";
-import PageContentContainer from "./PageContentContainer";
+import React from 'react';
+import 'whatwg-fetch';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import PageContentContainer from './PageContentContainer';
 
 // <editor-fold> Content Imports
-import HomePage from "../Pages/HomePage";
-import ComingSoon from "./ComingSoon";
-import Work from "../Pages/Work/Work";
-import PasswordCharacterExtractor from "../Pages/Work/PasswordCharacterExtractor";
-import Art from "../Pages/Art/Art";
-import SiteMap from "../Pages/SiteMap";
-import SwitchToVim from "../Pages/Articles/SwitchToVim";
-import UkBankSecurity from "../Pages/Articles/UkBankSecurity";
-import NetNeutrality from "../Pages/Articles/NetNeutrality";
-import MarkAustinOnAnorexiaNervosa from "../Pages/Articles/MarkAustinOnAnorexiaNervosa";
-import Disneyland from "../Pages/Travel/Disneyland";
-import SerreChevalier from "../Pages/Travel/SerreChevalier";
-import Longleat from "../Pages/Travel/Longleat";
-import Travel from "../Pages/CategoryPages/Travel";
-import Articles from "../Pages/CategoryPages/Articles";
-import Munich from "../Pages/Travel/Munich";
-import Iceland from "../Pages/Travel/Iceland";
-import Photobombing from "../Pages/Services/Photobombing";
-import Contact from "../Pages/Contact";
-import AboutMe from "../Pages/AboutMe";
-import Engagement from "../Pages/Engagement";
-import ForOhFour from "../Pages/ForOhFour";
-import Degree from "../Pages/Documents/Degree";
-import NavigationBar from "./NavigationBar";
-import Footer from "./Footer";
+import HomePage from '../Pages/HomePage';
+import ComingSoon from './ComingSoon';
+import Work from '../Pages/Work/Work';
+import PasswordCharacterExtractor from '../Pages/Work/PasswordCharacterExtractor';
+import Art from '../Pages/Art/Art';
+import SiteMap from '../Pages/SiteMap';
+import SwitchToVim from '../Pages/Articles/SwitchToVim';
+import UkBankSecurity from '../Pages/Articles/UkBankSecurity';
+import NetNeutrality from '../Pages/Articles/NetNeutrality';
+import MarkAustinOnAnorexiaNervosa from '../Pages/Articles/MarkAustinOnAnorexiaNervosa';
+import Disneyland from '../Pages/Travel/Disneyland';
+import SerreChevalier from '../Pages/Travel/SerreChevalier';
+import Longleat from '../Pages/Travel/Longleat';
+import Travel from '../Pages/CategoryPages/Travel';
+import Articles from '../Pages/CategoryPages/Articles';
+import Munich from '../Pages/Travel/Munich';
+import Iceland from '../Pages/Travel/Iceland';
+import Photobombing from '../Pages/Services/Photobombing';
+import Contact from '../Pages/Contact';
+import AboutMe from '../Pages/AboutMe';
+import Engagement from '../Pages/Engagement';
+import ForOhFour from '../Pages/ForOhFour';
+import Degree from '../Pages/Documents/Degree';
+import NavigationBar from './NavigationBar';
+import Footer from './Footer';
 
-import STYLES from "./app.scss";
+import STYLES from './app.scss';
 
-const getClassName = className => STYLES[className] || "UNKNOWN";
+const getClassName = className => STYLES[className] || 'UNKNOWN';
 
 class App extends React.Component {
   state = {
-    response: "no response yet"
+    response: 'no response yet',
   };
   componentWillMount() {
-    document.getElementById("body").className = getClassName("app__body");
+    document.getElementById('body').className = getClassName('app__body');
   }
 
   callApi = async () => {
-    const response = await fetch("/api/hello");
+    const response = await fetch('/api/two');
     const body = await response.json();
     if (response.status !== 200) throw Error(body.message);
     return body;
@@ -56,17 +56,17 @@ class App extends React.Component {
   }
 
   render() {
-    const location = window.location + "";
-    const isLocalhost = location.includes("localhost");
-    const needsRedirect = !isLocalhost && !location.includes("https");
+    const location = `${window.location}`;
+    const isLocalhost = location.includes('localhost');
+    const needsRedirect = !isLocalhost && !location.includes('https');
     if (needsRedirect) {
-      window.location = location.replace("http", "https");
+      window.location = location.replace('http', 'https');
     }
 
     return (
-      <div className={getClassName("app__site")}>
+      <div className={getClassName('app__site')}>
         <NavigationBar />
-        <div className={getClassName("app__main")}>
+        <div className={getClassName('app__main')}>
           <PageContentContainer>
             <BrowserRouter>
               <Switch>

@@ -2,6 +2,15 @@ const bodyParser = require("body-parser");
 const express = require("express");
 const path = require("path");
 const app = express();
+const redis = require("redis");
+const client = redis.createClient(); //creates a new client
+
+client.on("connect", function() {
+  console.log("connected");
+  client.set("framework", "AngularJS");
+});
+
+// API Routing:
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
@@ -13,6 +22,18 @@ app.use(staticFiles);
 
 router.get("/api/hello", (req, res) => {
   res.send({ express: "Hello From Express" });
+});
+
+router.get("/api/my-first-list", (req, res) => {
+  client.get("framework", function(err, reply) {
+    res.send({ express: reply });
+  });
+});
+
+router.post("/api/my-first-list", (req, res) => {
+  console.log(req.headers);
+  console.log(req.body);
+  client.set("framework", "AngularJS");
 });
 
 router.get("/cities", (req, res) => {
