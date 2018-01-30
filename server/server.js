@@ -37,10 +37,25 @@ router.get("/api/my-first-list", (req, res) => {
   });
 });
 
-router.post("/api/my-first-list", (req, res) => {
-  console.log(req.headers);
-  console.log(req.body);
-  client.set("framework", "AngularJS");
+router.get("/api/comments", (req, res) => {
+  const pageId = req.headers.blog_id;
+  client.lrange(`${pageId}_comments`, 0, -1, function(err, reply) {
+    res.send(reply);
+  });
+});
+
+router.post("/api/comments", (req, res) => {
+  const pageId = req.body.page_id;
+  const commenterName = req.body.commenter_name;
+  const comment = req.body.comment;
+  console.log(pageId);
+  console.log(commenterName);
+  console.log(comment);
+  client.rpush([
+    `${pageId}_comments`,
+    JSON.stringify({ commenterName: commenterName, comment: comment, timestamp: Date.now() })
+  ]);
+  res.end();
 });
 
 router.get("/cities", (req, res) => {
