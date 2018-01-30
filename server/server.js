@@ -2,8 +2,15 @@ const bodyParser = require("body-parser");
 const express = require("express");
 const path = require("path");
 const app = express();
-const redis = require("redis");
-const client = redis.createClient(); //creates a new client
+
+let client = null;
+if (process.env.REDIS_URL) {
+  // Heroku redistogo connection
+  client = require("redis").createClient(process.env.REDIS_URL);
+} else {
+  // Localhost
+  client = require("redis").createClient();
+}
 
 client.on("connect", function() {
   console.log("connected");
