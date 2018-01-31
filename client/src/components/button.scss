@@ -3,13 +3,17 @@
 
 .button {
   &__outer {
-    padding: 0.5rem;
+    padding: 0.2rem 0.5rem;
     border: none;
     border-radius: 0.2rem;
     background-color: rgb(62, 158, 235);
     color: white;
     font-family: 'Quattrocento Sans', sans-serif;
     font-size: 1rem;
+
+    &--destructive {
+      background-color: rgb(224, 38, 38);
+    }
 
     &--dark-text {
       color: rgb(60, 68, 81);
@@ -34,6 +38,14 @@
           $duration: 0.2s
         );
       }
+
+      &--destructive {
+        &:focus,
+        &:active,
+        &:hover {
+          background-color: rgb(224, 38, 38);
+        }
+      }
     }
 
     &--no-bouncy {
@@ -41,6 +53,14 @@
       &:active,
       &:hover {
         background-color: rgb(40, 102, 150);
+      }
+    }
+
+    &--no-bouncy--destructive {
+      &:focus,
+      &:active,
+      &:hover {
+        background-color: rgb(158, 0, 0);
       }
     }
   }

@@ -4,6 +4,7 @@ import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import PageContentContainer from './PageContentContainer';
 
 // <editor-fold> Content Imports
+import Admin from '../Pages/Admin';
 import HomePage from '../Pages/HomePage';
 import ComingSoon from './ComingSoon';
 import Work from '../Pages/Work/Work';
@@ -102,6 +103,7 @@ class App extends React.Component {
                 <Route path="/art" component={Art} />
                 <Route path="/photoshop" component={Art} />
                 <Route path="/contact" component={Contact} />
+                <Route path="/admin" component={Admin} />
                 <Route component={ForOhFour} />
               </Switch>
             </BrowserRouter>
