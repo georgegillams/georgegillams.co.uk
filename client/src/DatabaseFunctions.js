@@ -19,6 +19,19 @@ class DatabaseFunctions {
     });
   }
 
+  static getPageIds(cb) {
+    const options = {
+      method: 'GET',
+      url: `${url}/api/comments/page_ids`,
+      headers: {},
+    };
+
+    request(options, (error, response, body) => {
+      if (error) throw new Error(error);
+      cb(JSON.parse(body));
+    });
+  }
+
   static postNewComment(pageId, commenterName, comment, cb) {
     const options = {
       method: 'POST',
@@ -36,6 +49,30 @@ class DatabaseFunctions {
 
     request(options, (error, response, body) => {
       if (error) throw new Error(error);
+      console.log(body);
+      cb(body);
+    });
+  }
+
+  static deleteComment(privateApiKey, pageId, pattern, cb) {
+    const options = {
+      method: 'DELETE',
+      url: `${url}/api/comments`,
+      headers: {
+        'Api-Key': privateApiKey,
+      },
+      body: {
+        page_id: pageId,
+        pattern,
+      },
+      json: true,
+    };
+
+    request(options, (error, response, body) => {
+      if (error) {
+        console.log(error);
+        throw new Error(error);
+      }
       console.log(body);
       cb(body);
     });
