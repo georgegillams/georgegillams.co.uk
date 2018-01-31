@@ -2,10 +2,8 @@ import React, { Component } from "react";
 import PropTypes from "prop-types";
 import SubSection from "./SubSection";
 import TechSpecs from "./TechSpecs";
-import TextLink from "./TextLink";
 import GetSocial from "./GetSocial";
 import Logo from "./Logo";
-import PersonalDetails from "./PersonalDetails";
 import blackPaper from "../images/blackPaper.jpg";
 
 import STYLES from "./footer.scss";

@@ -1,24 +1,24 @@
-import React from "react";
-import PropTypes from "prop-types";
-import BpkText from "bpk-component-text";
-import BpkImage, { withLazyLoading, withLoadingBehavior } from "bpk-component-image";
-import Section from "./../../components/Section";
-import SubSection from "./../../components/SubSection";
-import netflixDownloads from "./images/netflixDownloads.png";
-import ArticleDate from "../../components/ArticleDate";
-import LicenseInfo from "../../components/LicenseInfo";
-import Comments from "../../components/Comments";
-import GoogleAds from "../../components/GoogleAds";
+import React from 'react';
+import PropTypes from 'prop-types';
+import BpkText from 'bpk-component-text';
+import BpkImage, { withLazyLoading, withLoadingBehavior } from 'bpk-component-image';
+import Section from './../../components/Section';
+import SubSection from './../../components/SubSection';
+import netflixDownloads from './images/netflixDownloads.png';
+import ArticleDate from '../../components/ArticleDate';
+import LicenseInfo from '../../components/LicenseInfo';
+import Comments from '../../components/Comments';
+import GoogleAds from '../../components/GoogleAds';
 
-import STYLES from "../pages.scss";
+import STYLES from '../pages.scss';
 
-const getClassName = className => STYLES[className] || "UNKNOWN";
-const documentIfExists = typeof window !== "undefined" ? document : null;
+const getClassName = className => STYLES[className] || 'UNKNOWN';
+const documentIfExists = typeof window !== 'undefined' ? document : null;
 const FadingLazyLoadedImage = withLoadingBehavior(withLazyLoading(BpkImage, documentIfExists));
 const DATE_WRITTEN = new Date(2017, 11, 8, 7, 1, 0);
-const PAGE_ID = 238476;
+const PAGE_ID = 957261;
 
-const NetNeutrality = props => {
+const NetNeutrality = (props) => {
   const { className, ...rest } = props;
   const classNameFinal = [];
   if (className) {
@@ -26,7 +26,7 @@ const NetNeutrality = props => {
   }
 
   return (
-    <main className={classNameFinal.join(" ")} {...rest}>
+    <main className={classNameFinal.join(' ')} {...rest}>
       <GoogleAds />
       <Section name="My Take on Net Neutrality">
         <ArticleDate date={DATE_WRITTEN} />
@@ -283,7 +283,7 @@ const NetNeutrality = props => {
         </SubSection>
         <SubSection name="Appendix A - Netflix download speeds on a number of American ISPs">
           <FadingLazyLoadedImage
-            className={getClassName("pages__image")}
+            className={getClassName('pages__image')}
             altText="Netflix download speeds on a number of American ISPs"
             width={987}
             height={575}
@@ -298,11 +298,11 @@ const NetNeutrality = props => {
 };
 
 NetNeutrality.propTypes = {
-  className: PropTypes.string
+  className: PropTypes.string,
 };
 
 NetNeutrality.defaultProps = {
-  className: null
+  className: null,
 };
 
 export default NetNeutrality;

@@ -1,7 +1,5 @@
 import React from "react";
 import PropTypes from "prop-types";
-import BpkCard from "bpk-component-card";
-import Section from "./Section";
 import BpkImage, { withLazyLoading, withLoadingBehavior } from "bpk-component-image";
 
 import STYLES from "./photo-gallery.scss";

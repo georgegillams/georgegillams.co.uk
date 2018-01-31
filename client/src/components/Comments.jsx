@@ -1,13 +1,13 @@
-import React from "react";
-import { BpkSpinner, SPINNER_TYPES } from "bpk-component-spinner";
-import Section from "./Section";
-import SubSection from "./SubSection";
-import CommentInput from "./CommentInput";
-import RestDbIoFunctions from "../RestDbIoFunctions";
+import React from 'react';
+import { BpkSpinner, SPINNER_TYPES } from 'bpk-component-spinner';
+import Section from './Section';
+import SubSection from './SubSection';
+import CommentInput from './CommentInput';
+import DatabaseFunctions from '../DatabaseFunctions';
 
-import STYLES from "./comments.scss";
+import STYLES from './comments.scss';
 
-const getClassName = className => STYLES[className] || "UNKNOWN";
+const getClassName = className => STYLES[className] || 'UNKNOWN';
 
 class Comments extends React.Component {
   constructor(props) {
@@ -16,30 +16,36 @@ class Comments extends React.Component {
     this.state = { comments: null };
   }
 
+  componentDidMount() {
+    const getComments = () => {
+      DatabaseFunctions.getComments(this.props.pageId, (results) => {
+        this.setState({ comments: results });
+      });
+    };
+
+    getComments();
+    setInterval(getComments, 5000);
+  }
+
   render() {
-    const { centered, pageId, className, ...rest } = this.props;
+    const {
+      centered, pageId, className, ...rest
+    } = this.props;
 
     const classNameFinal = [];
     if (className) classNameFinal.push(className);
-
-    RestDbIoFunctions.getComments(pageId, results => {
-      this.setState({ comments: results });
-    });
 
     let comments = null;
     if (this.state.comments) {
       comments =
         this.state.comments.length === 0 ? (
           <SubSection
-            className={getClassName("comments__component")}
+            className={getClassName('comments__component')}
             name="No comments yet. Be the first!"
           />
         ) : (
           this.state.comments.map(c => (
-            <SubSection
-              className={getClassName("comments__component")}
-              name={`${c.commenter_name}`}
-            >
+            <SubSection className={getClassName('comments__component')} name={`${c.commenterName}`}>
               {c.comment}
             </SubSection>
           ))
@@ -48,7 +54,7 @@ class Comments extends React.Component {
 
     const commentsLoading = (
       <SubSection
-        className={getClassName("comments__component")}
+        className={getClassName('comments__component')}
         name="Loading comments for blog..."
       >
         <BpkSpinner type={SPINNER_TYPES.dark} />
@@ -56,7 +62,7 @@ class Comments extends React.Component {
     );
 
     return (
-      <Section name="Comments" className={classNameFinal.join(" ")}>
+      <Section name="Comments" className={classNameFinal.join(' ')}>
         {this.state.comments ? comments : commentsLoading}
         <CommentInput centered={centered} pageId={pageId} />
       </Section>
@@ -64,4 +70,4 @@ class Comments extends React.Component {
   }
 }
 
- export default Comments;
+export default Comments;

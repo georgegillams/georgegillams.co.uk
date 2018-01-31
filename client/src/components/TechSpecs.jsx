@@ -1,7 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
 import Section from "./Section";
-import TextLink from "./TextLink";
 import reactIcon from "./../icons/react.png";
 import herokuIcon from "./../icons/heroku.png";
 
