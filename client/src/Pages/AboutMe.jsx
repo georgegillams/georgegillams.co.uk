@@ -1,10 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import BpkText from 'bpk-component-text';
 import BpkImage, { withLazyLoading, withLoadingBehavior } from 'bpk-component-image';
 import TextLink from './../components/TextLink';
 import Section from './../components/Section';
-import SubSection from './../components/SubSection';
 import PhotoGallery from './../components/PhotoGallery';
 import georgeAndCharlie2 from '../images/georgeAndCharlie2.jpg';
 import georgeAndCharlie3 from '../images/georgeAndCharlie3_squished.jpg';
@@ -65,8 +63,7 @@ const AboutMe = (props) => {
         />
         <br />
         <br />
-        This site is built in React and hosted on Heroku. I have a Redis database provisioned on
-        Heroku.
+        This site is built in React and hosted on Heroku where I have a Redis database provisioned.
         <br />
         I use this site to experiment with things, share stuff I've figured out, and allow people to
         reach-out to me. So if you're interested in anything I do,{' '}

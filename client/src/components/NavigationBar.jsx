@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import PropTypes from "prop-types";
-import SubSection from "./SubSection";
 import Logo from "./Logo";
 import NavigationItem from "./NavigationItem";
 import Button from "./Button";
@@ -36,9 +35,7 @@ class NavigationBar extends Component {
     const { className, ...rest } = this.props;
     const outerClassNameFinal = [getClassName("navigation-bar__container")];
     const navBarClassNameFinal = [getClassName("navigation-bar__bar")];
-    const animatedContainerClassNameFinal = [
-      getClassName("navigation-bar__animated-container")
-    ];
+    const animatedContainerClassNameFinal = [getClassName("navigation-bar__animated-container")];
     if (this.state.isOpen) {
       animatedContainerClassNameFinal.push(
         getClassName("navigation-bar__animated-container--open")
@@ -77,11 +74,7 @@ class NavigationBar extends Component {
               name="ART"
               linkUrl="/art"
             />
-            <Logo
-              className={getClassName("navigation-bar__nav-item")}
-              small
-              animated
-            />
+            <Logo className={getClassName("navigation-bar__nav-item")} small animated />
             <NavigationItem
               className={getClassName("navigation-bar__nav-item")}
               name="WORK"
@@ -112,4 +105,4 @@ NavigationBar.defaultProps = {
   className: null
 };
 
- export default NavigationBar;
+export default NavigationBar;
