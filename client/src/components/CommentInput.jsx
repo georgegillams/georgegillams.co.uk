@@ -3,7 +3,7 @@ import BpkInput from "bpk-component-input";
 import BpkTextArea from "bpk-component-textarea";
 import Button from "./Button";
 import SubSection from "./SubSection";
-import RestDbIoFunctions from "../RestDbIoFunctions";
+import DatabaseFunctions from "../DatabaseFunctions";
 
 import STYLES from "./comments.scss";
 
@@ -31,7 +31,7 @@ class CommentInput extends React.Component {
 
   submitComment = () => {
     this.setState({ result: "waiting..." });
-    RestDbIoFunctions.postNewComment(
+    DatabaseFunctions.postNewComment(
       this.props.pageId,
       this.state.name,
       this.state.comment,

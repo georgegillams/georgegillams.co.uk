@@ -42,18 +42,20 @@ class App extends React.Component {
     document.getElementById('body').className = getClassName('app__body');
   }
 
-  callApi = async () => {
-    const response = await fetch('/api/two');
-    const body = await response.json();
-    if (response.status !== 200) throw Error(body.message);
-    return body;
-  };
-
-  componentDidMount() {
-    this.callApi()
-      .then(res => this.setState({ response: res.express }))
-      .catch(err => console.log(err));
-  }
+  // callApi = async () => {
+  //   const response = await fetch('/api/hello');
+  //   const body = await response.json();
+  //   if (response.status !== 200) throw Error(body.message);
+  //   return body;
+  // };
+  //
+  // componentDidMount() {
+  //   this.callApi()
+  //     .then((res) => {
+  //       this.setState({ response: res.express });
+  //     })
+  //     .catch(err => console.log(err));
+  // }
 
   render() {
     const location = `${window.location}`;

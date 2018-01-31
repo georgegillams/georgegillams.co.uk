@@ -1,6 +1,5 @@
 import React from "react";
 import PropTypes from "prop-types";
-import BpkText from "bpk-component-text";
 import BpkImage from "bpk-component-image";
 import TextLink from "./TextLink";
 import Section from "./Section";
