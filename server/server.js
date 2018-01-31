@@ -44,12 +44,6 @@ router.get("/api/hello", (req, res) => {
   res.send({ express: "Hello From Express" });
 });
 
-router.get("/api/my-first-list", (req, res) => {
-  client.get("framework", function(err, reply) {
-    res.send({ express: reply });
-  });
-});
-
 router.get("/api/comments", (req, res) => {
   const pageId = req.headers.page_id;
   client.lrange(`${pageId}_comments`, 0, -1, function(err, reply) {
@@ -61,10 +55,13 @@ router.get("/api/comments", (req, res) => {
   });
 });
 
+router.get("/api/comments/page_ids", (req, res) => {
+  client.lrange(`pageIds`, 0, -1, function(err, reply) {
+    res.send(reply);
+  });
+});
+
 router.post("/api/comments", (req, res) => {
-  console.log(req.headers);
-  console.log(req.headers["api-key"]);
-  console.log(xApiKeyPub);
   const apiKey = req.headers["api-key"];
   if (apiKey === undefined || apiKey !== xApiKeyPub) {
     console.log("unauthenticated");
@@ -74,9 +71,8 @@ router.post("/api/comments", (req, res) => {
   const pageId = req.body.page_id;
   const commenterName = req.body.commenter_name;
   const comment = req.body.comment;
-  console.log(pageId);
-  console.log(commenterName);
-  console.log(comment);
+  client.lrem(`pageIds`, 0, pageId);
+  client.rpush([`pageIds`, pageId]);
   client.rpush([
     `${pageId}_comments`,
     JSON.stringify({ commenterName: commenterName, comment: comment, timestamp: Date.now() })
@@ -85,9 +81,6 @@ router.post("/api/comments", (req, res) => {
 });
 
 router.delete("/api/comments", (req, res) => {
-  console.log(req.headers);
-  console.log(req.headers["api-key"]);
-  console.log(xApiKeyPrivate);
   const apiKey = req.headers["api-key"];
   if (apiKey === undefined || apiKey !== xApiKeyPrivate) {
     console.log("unauthenticated");
@@ -100,18 +93,18 @@ router.delete("/api/comments", (req, res) => {
   if (pattern === "*") {
     client.del(`${pageId}_comments`);
   } else {
-    //TODO CODE
+    client.lrange(`${pageId}_comments`, 0, -1, function(err, reply) {
+      for (let i = 0; i < reply.length; i += 1) {
+        const comment = JSON.parse(reply[i]);
+        if (`${comment.commenterName}${comment.comment}`.includes(pattern)) {
+          client.lrem(`${pageId}_comments`, 1, reply[i]);
+          res.end();
+          return;
+        }
+      }
+    });
   }
   res.end();
-});
-
-router.get("/cities", (req, res) => {
-  const cities = [
-    { name: "New York City", population: 8175133 },
-    { name: "Los Angeles", population: 3792621 },
-    { name: "Chicago", population: 2695598 }
-  ];
-  res.json(cities);
 });
 
 app.use(router);
