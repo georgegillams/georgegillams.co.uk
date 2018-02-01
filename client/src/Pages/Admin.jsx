@@ -1,6 +1,6 @@
 import React from 'react';
 import { BpkSpinner, SPINNER_TYPES } from 'bpk-component-spinner';
-import BpkInput from 'bpk-component-input';
+import BpkInput, { INPUT_TYPES } from 'bpk-component-input';
 import Section from '../components/Section';
 import SubSection from '../components/SubSection';
 import Button from '../components/Button';
@@ -47,6 +47,7 @@ class Admin extends React.Component {
         <br />
         <BpkInput
           className={getClassName('pages__card')}
+          type={INPUT_TYPES.PASSWORD}
           id="apiKey"
           name="API Key"
           value={this.state.apiKey}
