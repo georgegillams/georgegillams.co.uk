@@ -54,7 +54,7 @@ class DatabaseFunctions {
     });
   }
 
-  static deleteComment(privateApiKey, pageId, pattern, cb) {
+  static deleteComment(privateApiKey, pageId, pattern, commentId, cb) {
     const options = {
       method: 'DELETE',
       url: `${url}/api/comments`,
@@ -64,6 +64,7 @@ class DatabaseFunctions {
       body: {
         page_id: pageId,
         pattern,
+        comment_id: commentId,
       },
       json: true,
     };
