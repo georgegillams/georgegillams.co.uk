@@ -69,13 +69,21 @@ router.post("/api/comments", (req, res) => {
     return;
   }
   const pageId = req.body.page_id;
+  const commentId = Math.random()
+    .toString(36)
+    .substring(7);
   const commenterName = req.body.commenter_name;
   const comment = req.body.comment;
   client.lrem(`pageIds`, 0, pageId);
   client.rpush([`pageIds`, pageId]);
   client.rpush([
     `${pageId}_comments`,
-    JSON.stringify({ commenterName: commenterName, comment: comment, timestamp: Date.now() })
+    JSON.stringify({
+      commentId: commentId,
+      commenterName: commenterName,
+      comment: comment,
+      timestamp: Date.now()
+    })
   ]);
   res.end();
 });
@@ -89,14 +97,25 @@ router.delete("/api/comments", (req, res) => {
   }
   const pageId = req.body.page_id;
   const pattern = req.body.pattern;
+  const commentId = req.body.comment_id;
   console.log(pageId);
   if (pattern === "*") {
     client.del(`${pageId}_comments`);
-  } else {
+  } else if (pattern !== undefined) {
+    client.lrange(`${pageId}_comments`, 0, -1, function(err, reply) {
+      for (let i = reply.length - 1; i > 0; i -= 1) {
+        const comment = JSON.parse(reply[i]);
+        if (`${comment.commenterName}${comment.comment}`.includes(pattern)) {
+          client.lrem(`${pageId}_comments`, 1, reply[i]);
+        }
+      }
+    });
+  }
+  if (commentId !== undefined) {
     client.lrange(`${pageId}_comments`, 0, -1, function(err, reply) {
       for (let i = 0; i < reply.length; i += 1) {
         const comment = JSON.parse(reply[i]);
-        if (`${comment.commenterName}${comment.comment}`.includes(pattern)) {
+        if (comment.commentId === commentId) {
           client.lrem(`${pageId}_comments`, 1, reply[i]);
           res.end();
           return;
