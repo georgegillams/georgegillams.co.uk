@@ -26,7 +26,7 @@ class Admin extends React.Component {
     };
 
     getPageIds();
-    setInterval(getPageIds, 5000);
+    setInterval(getPageIds, 2000);
   }
 
   render() {
@@ -77,6 +77,7 @@ class Admin extends React.Component {
                 this.state.apiKey,
                 this.state.pageIds[i],
                 this.state.pattern,
+                null,
                 (result) => {
                   console.log(result);
                 },
