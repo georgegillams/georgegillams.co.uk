@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import 'whatwg-fetch';
 
 import NavigationBar from './NavigationBar';
@@ -10,28 +11,11 @@ import STYLES from './default-layout.scss';
 const getClassName = className => STYLES[className] || 'UNKNOWN';
 
 class DefaultLayout extends React.Component {
-  state = {
-    response: 'no response yet',
-  };
-
   componentWillMount() {
-    document.getElementById('body').className = getClassName('default-layout__body');
+    document.getElementById('body').className = getClassName(
+      'default-layout__body',
+    );
   }
-
-  // callApi = async () => {
-  //   const response = await fetch('/api/hello');
-  //   const body = await response.json();
-  //   if (response.status !== 200) throw Error(body.message);
-  //   return body;
-  // };
-  //
-  // componentDidMount() {
-  //   this.callApi()
-  //     .then((res) => {
-  //       this.setState({ response: res.express });
-  //     })
-  //     .catch(err => console.log(err));
-  // }
 
   render() {
     const location = `${window.location}`;
@@ -56,5 +40,13 @@ class DefaultLayout extends React.Component {
     );
   }
 }
+
+DefaultLayout.propTypes = {
+  children: PropTypes.node,
+};
+
+DefaultLayout.defaultProps = {
+  children: null,
+};
 
 export default DefaultLayout;

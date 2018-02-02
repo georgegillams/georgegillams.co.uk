@@ -1,19 +1,21 @@
-import React from "react";
-import PropTypes from "prop-types";
-import Section from "./Section";
+import React from 'react';
+import PropTypes from 'prop-types';
+import Section from './Section';
 
-import STYLES from "./showcase.scss";
+import STYLES from './showcase.scss';
 
-const getClassName = className => STYLES[className] || "UNKNOWN";
+const getClassName = className => STYLES[className] || 'UNKNOWN';
 
-const Showcase = props => {
-  const { name, children, className, ...rest } = props;
+const Showcase = (props) => {
+  const {
+    name, children, className, ...rest
+  } = props;
 
-  const classNameFinal = [getClassName("showcase__container")];
+  const classNameFinal = [getClassName('showcase__container')];
   if (className) classNameFinal.push(className);
 
   return (
-    <div className={classNameFinal.join(" ")} {...rest}>
+    <div className={classNameFinal.join(' ')} {...rest}>
       <Section name={name} noPadding />
       {children}
     </div>
@@ -23,13 +25,13 @@ const Showcase = props => {
 Showcase.propTypes = {
   name: PropTypes.string,
   children: PropTypes.node,
-  className: PropTypes.string
+  className: PropTypes.string,
 };
 
 Showcase.defaultProps = {
   name: null,
   children: null,
-  className: null
+  className: null,
 };
 
- export default Showcase;
+export default Showcase;

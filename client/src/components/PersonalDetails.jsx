@@ -1,19 +1,21 @@
-import React from "react";
-import PropTypes from "prop-types";
-import Section from "./Section";
-import TextLink from "./TextLink";
+import React from 'react';
+import PropTypes from 'prop-types';
+import Section from './Section';
+import TextLink from './TextLink';
 
-const PersonalDetails = props => {
-  const { className, light, fancy, ...rest } = props;
+const PersonalDetails = (props) => {
+  const {
+    className, light, fancy, ...rest
+  } = props;
   const classNameFinal = [];
   if (className) {
     classNameFinal.push(className);
   }
 
   return (
-    <div className={classNameFinal.join(" ")} {...rest}>
+    <div className={classNameFinal.join(' ')} {...rest}>
       <Section noPadding light fancy={fancy}>
-        Open-source Software Engineer at{" "}
+        Open-source Software Engineer at{' '}
         <TextLink
           light={light}
           fancy={fancy}
@@ -24,7 +26,7 @@ const PersonalDetails = props => {
         </TextLink>
       </Section>
       <Section noPadding light fancy={fancy}>
-        Master student at{" "}
+        Master student at{' '}
         <TextLink
           light={light}
           fancy={fancy}
@@ -45,14 +47,14 @@ PersonalDetails.propTypes = {
   className: PropTypes.string,
   light: PropTypes.bool,
   fancy: PropTypes.bool,
-  centralisedSpread: PropTypes.bool
+  centralisedSpread: PropTypes.bool,
 };
 
 PersonalDetails.defaultProps = {
   className: null,
   light: false,
   fancy: false,
-  centralisedSpread: false
+  centralisedSpread: false,
 };
 
- export default PersonalDetails;
+export default PersonalDetails;

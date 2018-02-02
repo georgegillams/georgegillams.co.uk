@@ -1,7 +1,7 @@
 @import '~bpk-mixins';
 
 .tech-specs {
-     &__container {
+      &__container {
     display: flex;
     width: 100%;
     flex-direction: row;
@@ -9,7 +9,7 @@
     align-items: center;
   }
 
-     &__icon {
+      &__icon {
     display: inline-block;
     width: 100%;
     max-width: 1rem;
@@ -18,7 +18,7 @@
       filter: opacity(70%);
     padding: 0 .5rem;
 
-    &--light {
+     &--light {
       filter: opacity(100%);
 
 
@@ -27,7 +27,7 @@
       }
   }
 
-      &--light-inverted {
+       &--light-inverted {
         filter: brightness(0) invert(1);
 
         &:hover {
@@ -35,7 +35,7 @@
         }
       }
 
-  &--no-light {
+   &--no-light {
     &:hover {
       filter: opacity(90%);
     }

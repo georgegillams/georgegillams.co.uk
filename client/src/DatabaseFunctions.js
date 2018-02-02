@@ -49,7 +49,6 @@ class DatabaseFunctions {
 
     request(options, (error, response, body) => {
       if (error) throw new Error(error);
-      console.log(body);
       cb(body);
     });
   }
@@ -71,10 +70,8 @@ class DatabaseFunctions {
 
     request(options, (error, response, body) => {
       if (error) {
-        console.log(error);
         throw new Error(error);
       }
-      console.log(body);
       cb(body);
     });
   }

@@ -1,17 +1,17 @@
 @import '~bpk-mixins';
 
 .default-layout {
-     &__body {
+  &__body {
     margin: 0;
   }
 
-     &__site {
+  &__site {
     display: flex;
     min-height: 100vh;
     flex-direction: column;
   }
 
-     &__main {
+  &__main {
     flex: 1;
   }
 }

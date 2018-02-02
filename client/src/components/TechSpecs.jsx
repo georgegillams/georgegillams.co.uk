@@ -1,50 +1,60 @@
-import React from "react";
-import PropTypes from "prop-types";
-import Section from "./Section";
-import reactIcon from "./../icons/react.png";
-import herokuIcon from "./../icons/heroku.png";
+import React from 'react';
+import PropTypes from 'prop-types';
+import Section from './Section';
+import reactIcon from './../icons/react.png';
+import herokuIcon from './../icons/heroku.png';
 
-import STYLES from "./tech-specs.scss";
+import STYLES from './tech-specs.scss';
 
-const getClassName = className => STYLES[className] || "UNKNOWN";
+const getClassName = className => STYLES[className] || 'UNKNOWN';
 
-const TechSpecs = props => {
-  const { light, fancy, className, children, ...rest } = props;
+const TechSpecs = (props) => {
+  const {
+    light, fancy, className, children, ...rest
+  } = props;
   const outerClassNameFinal = [];
   if (className) {
     outerClassNameFinal.push(className);
   }
 
-  const iconClassNameFinal = [getClassName("tech-specs__icon")];
-  const darkIconClassNameFinal = [getClassName("tech-specs__icon")];
-  iconClassNameFinal.push(getClassName("tech-specs__icon--no-light"));
-  darkIconClassNameFinal.push(getClassName("tech-specs__icon--light-inverted"));
+  const iconClassNameFinal = [getClassName('tech-specs__icon')];
+  const darkIconClassNameFinal = [getClassName('tech-specs__icon')];
+  iconClassNameFinal.push(getClassName('tech-specs__icon--no-light'));
+  darkIconClassNameFinal.push(getClassName('tech-specs__icon--light-inverted'));
 
   return (
-    <div className={outerClassNameFinal.join(" ")} {...rest}>
+    <div className={outerClassNameFinal.join(' ')} {...rest}>
       <Section
-        className={getClassName("tech-specs__container")}
+        className={getClassName('tech-specs__container')}
         noPadding
         light={light}
         fancy={fancy}
       >
         Built in
-        <a href="https://reactjs.org/" rel="noopener noreferrer" target="_blank">
+        <a
+          href="https://reactjs.org/"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
           <img
             alt="react"
             width={5}
             height={5}
-            className={darkIconClassNameFinal.join(" ")}
+            className={darkIconClassNameFinal.join(' ')}
             src={reactIcon}
           />
         </a>
         Hosted on
-        <a href="https://www.heroku.com/" rel="noopener noreferrer" target="_blank">
+        <a
+          href="https://www.heroku.com/"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
           <img
             alt="heroku"
             width={5}
             height={5}
-            className={darkIconClassNameFinal.join(" ")}
+            className={darkIconClassNameFinal.join(' ')}
             src={herokuIcon}
           />
         </a>
@@ -56,13 +66,15 @@ const TechSpecs = props => {
 TechSpecs.propTypes = {
   light: PropTypes.bool,
   fancy: PropTypes.bool,
-  className: PropTypes.string
+  children: PropTypes.node,
+  className: PropTypes.string,
 };
 
 TechSpecs.defaultProps = {
   light: false,
   fancy: false,
-  className: null
+  children: null,
+  className: null,
 };
 
 export default TechSpecs;

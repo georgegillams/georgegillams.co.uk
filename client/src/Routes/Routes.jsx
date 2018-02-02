@@ -17,15 +17,15 @@
  */
 
 import React from 'react';
-import { Route, IndexRoute, IndexRedirect, Redirect, withRouter, NotFoundRoute } from 'react-router';
+import { Route, IndexRoute, IndexRedirect, withRouter } from 'react-router';
 
-// import * as ROUTES from './../constants/routes';
-// import redirects from './../constants/redirect-routes';
+// import * as ROUTES from  './../constants/routes';
+// import redirects from  './../constants/redirect-routes';
 //
 import DefaultLayout from '../components/DefaultLayout';
-// import UsingLayout from './../layouts/UsingLayout';
-// import TokensLayout from './../layouts/TokensLayout';
-// import DocsLayout from './../layouts/DocsLayout';
+// import UsingLayout from  './../layouts/UsingLayout';
+// import TokensLayout from  './../layouts/TokensLayout';
+// import DocsLayout from  './../layouts/DocsLayout';
 
 import HomePage from '../Pages/HomePage';
 import Admin from '../Pages/Admin';
@@ -36,7 +36,6 @@ import SiteMap from '../Pages/SiteMap';
 import SwitchToVim from '../Pages/Articles/SwitchToVim';
 import UkBankSecurity from '../Pages/Articles/UkBankSecurity';
 import NetNeutrality from '../Pages/Articles/NetNeutrality';
-import MarkAustinOnAnorexiaNervosa from '../Pages/Articles/MarkAustinOnAnorexiaNervosa';
 import Disneyland from '../Pages/Travel/Disneyland';
 import SerreChevalier from '../Pages/Travel/SerreChevalier';
 import Longleat from '../Pages/Travel/Longleat';
@@ -44,12 +43,9 @@ import Travel from '../Pages/CategoryPages/Travel';
 import Articles from '../Pages/CategoryPages/Articles';
 import Munich from '../Pages/Travel/Munich';
 import Iceland from '../Pages/Travel/Iceland';
-import Photobombing from '../Pages/Services/Photobombing';
 import Contact from '../Pages/Contact';
 import AboutMe from '../Pages/AboutMe';
-import Engagement from '../Pages/Engagement';
 import ForOhFour from '../Pages/ForOhFour';
-import Degree from '../Pages/Documents/Degree';
 
 // eslint-disable-next-line import/no-webpack-loader-syntax
 const Routes = (
@@ -89,7 +85,10 @@ const Routes = (
 
     <Route path="/apps" component={null}>
       <IndexRedirect to="/apps/list" />
-      <Route path="/apps/password-character-extractor" component={PasswordCharacterExtractor} />
+      <Route
+        path="/apps/password-character-extractor"
+        component={PasswordCharacterExtractor}
+      />
     </Route>
 
     <Route path="/about" component={AboutMe} />

@@ -1,15 +1,15 @@
-import PropTypes from "prop-types";
-import React from "react";
-import BpkText from "bpk-component-text";
+import PropTypes from 'prop-types';
+import React from 'react';
+import BpkText from 'bpk-component-text';
 
-import STYLES from "./article-date.scss";
+import STYLES from './article-date.scss';
 
-const getClassName = className => STYLES[className] || "UNKNOWN";
+const getClassName = className => STYLES[className] || 'UNKNOWN';
 
-const ArticleDate = props => {
+const ArticleDate = (props) => {
   const { date, className, ...rest } = props;
 
-  const classNameFinal = [getClassName("article-date__date")];
+  const classNameFinal = [getClassName('article-date__date')];
   if (className) {
     classNameFinal.push(className);
   }
@@ -18,8 +18,9 @@ const ArticleDate = props => {
     <BpkText
       tagName="h3"
       textStyle="base"
-      style={{ fontStyle: "italic" }}
-      className={classNameFinal.join(" ")}
+      style={{ fontStyle: 'italic' }}
+      className={classNameFinal.join(' ')}
+      {...rest}
     >
       Published {date.toString()}
     </BpkText>
@@ -28,11 +29,11 @@ const ArticleDate = props => {
 
 ArticleDate.propTypes = {
   date: PropTypes.number.isRequired,
-  className: PropTypes.string
+  className: PropTypes.string,
 };
 
 ArticleDate.defaultProps = {
-  className: null
+  className: null,
 };
 
- export default ArticleDate;
+export default ArticleDate;

@@ -3,8 +3,6 @@ import PropTypes from 'prop-types';
 import BpkImage, { withLazyLoading, withLoadingBehavior } from 'bpk-component-image';
 import TextLink from '../../components/TextLink';
 import Section from '../../components/Section';
-import SubSection from '../../components/SubSection';
-import ArticleDate from '../../components/ArticleDate';
 import Comments from '../../components/Comments';
 import santanderPasswordEntry from './images/santanderPasswordEntry.png';
 import santanderHollywood from './images/santanderHollywood.png';
@@ -14,7 +12,7 @@ import STYLES from '../pages.scss';
 const getClassName = className => STYLES[className] || 'UNKNOWN';
 const documentIfExists = typeof window !== 'undefined' ? document : null;
 const FadingLazyLoadedImage = withLoadingBehavior(withLazyLoading(BpkImage, documentIfExists));
-const DATE_WRITTEN = new Date(2018, 1, 20, 14, 52, 0);
+// const DATE_WRITTEN = new Date(2018, 1, 20, 14, 52, 0);
 const PAGE_ID = 827461;
 
 const UkBankSecurity = (props) => {
