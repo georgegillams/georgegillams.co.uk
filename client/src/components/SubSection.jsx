@@ -1,17 +1,19 @@
-import PropTypes from "prop-types";
-import React from "react";
-import BpkText from "bpk-component-text";
+import PropTypes from 'prop-types';
+import React from 'react';
+import TextLink from './TextLink';
+import BpkText from 'bpk-component-text';
 
-import STYLES from "./typography.scss";
+import STYLES from './typography.scss';
 
-const getClassName = className => STYLES[className] || "UNKNOWN";
+const getClassName = className => STYLES[className] || 'UNKNOWN';
 
-const SubSection = props => {
+const SubSection = (props) => {
   const {
     link,
     fancy,
     light,
     name,
+    noAnchor,
     className,
     noPadding,
     textClassName,
@@ -19,26 +21,29 @@ const SubSection = props => {
     ...rest
   } = props;
 
-  const classNameFinal = [getClassName("typography__main")];
+  const classNameFinal = [getClassName('typography__main')];
   const textClassNameFinal = [
-    getClassName("typography__text"),
-    getClassName("typography__text--subsection")
+    getClassName('typography__text'),
+    getClassName('typography__text--subsection'),
   ];
+  if (!noAnchor) {
+    textClassNameFinal.push(getClassName('typography__text--with-anchor-link'));
+  }
   if (light) {
-    classNameFinal.push(getClassName("typography--light"));
-    textClassNameFinal.push(getClassName("typography--light"));
+    classNameFinal.push(getClassName('typography--light'));
+    textClassNameFinal.push(getClassName('typography--light'));
   }
   if (link) {
-    classNameFinal.push(getClassName("typography__link"));
-    textClassNameFinal.push(getClassName("typography__link"));
+    classNameFinal.push(getClassName('typography__link'));
+    textClassNameFinal.push(getClassName('typography__link'));
   }
   if (noPadding) {
-    classNameFinal.push(getClassName("typography--no-padding"));
-    textClassNameFinal.push(getClassName("typography--no-padding"));
+    classNameFinal.push(getClassName('typography--no-padding'));
+    textClassNameFinal.push(getClassName('typography--no-padding'));
   }
   if (fancy) {
-    classNameFinal.push(getClassName("typography--fancy"));
-    textClassNameFinal.push(getClassName("typography--fancy"));
+    classNameFinal.push(getClassName('typography--fancy'));
+    textClassNameFinal.push(getClassName('typography--fancy'));
   }
   if (className) {
     classNameFinal.push(className);
@@ -47,10 +52,15 @@ const SubSection = props => {
     textClassNameFinal.push(textClassName);
   }
 
+  const anchorLink = (`${name}`).toLowerCase().split(' ').join('-');
+
   return (
-    <div className={classNameFinal.join(" ")} {...rest}>
+    <div className={classNameFinal.join(' ')} {...rest}>
+      {!noAnchor && (
+        <TextLink href={`#${anchorLink}`} className={getClassName('typography__anchor-link')} >🔗</TextLink>
+      )}
       {name && (
-        <BpkText tagName="h3" textStyle="lg" className={textClassNameFinal.join(" ")}>
+        <BpkText tagName="h3" id={anchorLink} textStyle="lg" className={textClassNameFinal.join(' ')}>
           {name}
         </BpkText>
       )}
@@ -63,23 +73,25 @@ SubSection.propTypes = {
   link: PropTypes.bool,
   fancy: PropTypes.bool,
   light: PropTypes.bool,
+  noAnchor: PropTypes.bool,
   noPadding: PropTypes.bool,
   name: PropTypes.string.isRequired,
   className: PropTypes.string,
   textClassName: PropTypes.string,
   style: PropTypes.style,
-  children: PropTypes.node
+  children: PropTypes.node,
 };
 
 SubSection.defaultProps = {
   link: false,
   fancy: false,
+  noAnchor: false,
   light: false,
   noPadding: false,
   className: null,
   textClassName: null,
   style: null,
-  children: null
+  children: null,
 };
 
 export default SubSection;
