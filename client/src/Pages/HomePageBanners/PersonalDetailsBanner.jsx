@@ -29,6 +29,7 @@ const PersonalDetailsBanner = () => (
         </Section>
       </div>
       <SubSection
+        noAnchor
         light
         style={{
           width: 'auto',
