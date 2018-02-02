@@ -1,18 +1,75 @@
 {
-  "extends": "skyscanner",
+  "parser": "babel-eslint",
+  "extends": [
+      "skyscanner",
+      "prettier",
+      "prettier/react",
+  ],
+  "plugins": [
+    "prettier",
+    "flowtype"
+  ],
   "env": {
     "browser": true,
     "jest": true
   },
-  "rules": {
-    "import/no-extraneous-dependencies": [0]
-  },
-  "parserOptions": {
-    "ecmaVersion": 6,
-    "sourceType": "module",
-    "ecmaFeatures": {
-       "jsx": true,
-       "experimentalObjectRestSpread": true
+  "settings": {
+    "import/resolver": {
+      "node": {
+        "extensions": [
+          ".js",
+          ".json",
+        ]
+      }
     }
+  },
+  "rules": {
+    "prettier/prettier": "error",
+    "react/jsx-filename-extension": 1,
+    "import/no-extraneous-dependencies": 0,
+    // We want to keep prop-types alongside flow types so we relax this rule to allow us to specify defaults for
+    // required flow props
+    "react/default-props-match-prop-types": [
+      2,
+      {
+        "allowRequiredDefaults": true
+      }
+    ],
+    "react/prefer-stateless-function": [
+      2,
+      {
+        "ignorePureComponents": true
+      }
+    ],
+    // See https://github.com/evcohen/eslint-plugin-jsx-a11y/issues/282
+    "jsx-a11y/label-has-for": [
+      2,
+      {
+        "components": [
+          "Label"
+        ],
+        "required": {
+          "some": [
+            "nesting",
+            "id"
+          ]
+        },
+        "allowChildren": false
+      }
+    ],
+    "react/sort-comp": ["error", {
+      "order": [
+        "type-annotations",
+        "static-methods",
+        "lifecycle",
+        "/^on.+$/",
+        "getters",
+        "setters",
+        "/^(get|set)(?!(InitialState$|DefaultProps$|ChildContext$)).+$/",
+        "everything-else",
+        "/^render.+$/",
+        "render"
+      ],
+    }],
   }
 }
