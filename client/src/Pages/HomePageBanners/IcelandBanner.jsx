@@ -1,6 +1,6 @@
-import React from "react";
-import SimpleBanner from "./SimpleBanner";
-import iceland from "../Travel/images/iceland2.jpg";
+import React from 'react';
+import SimpleBanner from './SimpleBanner';
+import iceland from '../Travel/images/iceland2.jpg';
 
 const IcelandBanner = () => (
   <SimpleBanner

@@ -15,7 +15,7 @@ const getClassName = className => STYLES[className] || 'UNKNOWN';
 const documentIfExists = typeof window !== 'undefined' ? document : null;
 const FadingLazyLoadedImage = withLoadingBehavior(withLazyLoading(BpkImage, documentIfExists));
 
- 
+
 const Engagement = (props) => {
   const { className, ...rest } = props;
   const classNameFinal = [getClassName('pages__page')];
@@ -57,4 +57,4 @@ Engagement.defaultProps = {
   className: null,
 };
 
- export default Engagement;
+export default Engagement;

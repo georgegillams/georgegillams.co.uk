@@ -1,54 +1,56 @@
-import React from "react";
-import PropTypes from "prop-types";
-// import BpkImage, { withLazyLoading, withLoadingBehavior } from 'bpk-component-image';
-import githubIcon from "./../icons/github.png";
-import facebookIcon from "./../icons/facebook.png";
-import linkedinIcon from "./../icons/linkedin.png";
-import flickrIcon from "./../icons/flickr.png";
-import emailIcon from "./../icons/email.png";
-import phoneIcon from "./../icons/phone.png";
-import dropboxIcon from "./../icons/dropbox.png";
+import React from 'react';
+import PropTypes from 'prop-types';
+// import BpkImage, { withLazyLoading, withLoadingBehavior } from  'bpk-component-image';
+import githubIcon from './../icons/github.png';
+import facebookIcon from './../icons/facebook.png';
+import linkedinIcon from './../icons/linkedin.png';
+import flickrIcon from './../icons/flickr.png';
+import emailIcon from './../icons/email.png';
+import phoneIcon from './../icons/phone.png';
+import dropboxIcon from './../icons/dropbox.png';
 
-// import skyscannerIcon from './../icons/skyscanner.png';
+// import skyscannerIcon from  './../icons/skyscanner.png';
 
-import STYLES from "./get-social.scss";
+import STYLES from './get-social.scss';
 
-const getClassName = className => STYLES[className] || "UNKNOWN";
+const getClassName = className => STYLES[className] || 'UNKNOWN';
 // const documentIfExists = typeof window !== 'undefined' ? document : null;
 // const FadingLazyLoadedImage = withLoadingBehavior(withLazyLoading(BpkImage, documentIfExists));
 
-const GetSocial = props => {
-  const { light, className, alwaysCentered, ...rest } = props;
+const GetSocial = (props) => {
+  const {
+    light, className, alwaysCentered, ...rest
+  } = props;
   const outerClassNameFinal = [];
   if (className) {
     outerClassNameFinal.push(className);
   }
 
-  const containerClassNameFinal = [getClassName("get-social__container")];
-  const iconClassNameFinal = [getClassName("get-social__icon")];
-  const darkIconClassNameFinal = [getClassName("get-social__icon")];
+  const containerClassNameFinal = [getClassName('get-social__container')];
+  const iconClassNameFinal = [getClassName('get-social__icon')];
+  const darkIconClassNameFinal = [getClassName('get-social__icon')];
 
   if (alwaysCentered) {
     containerClassNameFinal.push(
-      getClassName("get-social__container--centered")
+      getClassName('get-social__container--centered'),
     );
   }
 
   if (light) {
     darkIconClassNameFinal.push(
-      getClassName("get-social__icon--light-inverted")
+      getClassName('get-social__icon--light-inverted'),
     );
-    iconClassNameFinal.push(getClassName("get-social__icon--light"));
+    iconClassNameFinal.push(getClassName('get-social__icon--light'));
   } else {
-    darkIconClassNameFinal.push(getClassName("get-social__icon--no-light"));
-    iconClassNameFinal.push(getClassName("get-social__icon--no-light"));
+    darkIconClassNameFinal.push(getClassName('get-social__icon--no-light'));
+    iconClassNameFinal.push(getClassName('get-social__icon--no-light'));
   }
 
   return (
-    <div className={outerClassNameFinal.join(" ")} {...rest}>
+    <div className={outerClassNameFinal.join(' ')} {...rest}>
       <div
-        className={containerClassNameFinal.join(" ")}
-        style={{ paddingBottom: "0.4rem" }}
+        className={containerClassNameFinal.join(' ')}
+        style={{ paddingBottom: '0.4rem' }}
       >
         <a
           href="https://github.com/georgegillams/"
@@ -59,7 +61,7 @@ const GetSocial = props => {
             alt="github"
             width={5}
             height={5}
-            className={darkIconClassNameFinal.join(" ")}
+            className={darkIconClassNameFinal.join(' ')}
             src={githubIcon}
           />
         </a>
@@ -75,7 +77,7 @@ const GetSocial = props => {
             alt="facebook"
             width={5}
             height={5}
-            className={iconClassNameFinal.join(" ")}
+            className={iconClassNameFinal.join(' ')}
             src={facebookIcon}
           />
         </a>
@@ -88,7 +90,7 @@ const GetSocial = props => {
             alt="linkedin"
             width={5}
             height={5}
-            className={iconClassNameFinal.join(" ")}
+            className={iconClassNameFinal.join(' ')}
             src={linkedinIcon}
           />
         </a>
@@ -101,7 +103,7 @@ const GetSocial = props => {
             alt="flickr"
             width={5}
             height={5}
-            className={iconClassNameFinal.join(" ")}
+            className={iconClassNameFinal.join(' ')}
             src={flickrIcon}
           />
         </a>
@@ -114,7 +116,7 @@ const GetSocial = props => {
             alt="dropbox"
             width={5}
             height={5}
-            className={iconClassNameFinal.join(" ")}
+            className={iconClassNameFinal.join(' ')}
             src={dropboxIcon}
           />
         </a>
@@ -127,7 +129,7 @@ const GetSocial = props => {
             alt="email"
             width={5}
             height={5}
-            className={darkIconClassNameFinal.join(" ")}
+            className={darkIconClassNameFinal.join(' ')}
             src={emailIcon}
           />
         </a>
@@ -136,7 +138,7 @@ const GetSocial = props => {
             alt="phone"
             width={5}
             height={5}
-            className={darkIconClassNameFinal.join(" ")}
+            className={darkIconClassNameFinal.join(' ')}
             src={phoneIcon}
           />
         </a>
@@ -148,13 +150,13 @@ const GetSocial = props => {
 GetSocial.propTypes = {
   light: PropTypes.bool,
   className: PropTypes.string,
-  alwaysCentered: PropTypes.bool
+  alwaysCentered: PropTypes.bool,
 };
 
 GetSocial.defaultProps = {
   light: false,
   className: null,
-  alwaysCentered: false
+  alwaysCentered: false,
 };
 
- export default GetSocial;
+export default GetSocial;

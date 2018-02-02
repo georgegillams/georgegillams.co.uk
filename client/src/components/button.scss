@@ -3,9 +3,9 @@
 
 .button {
   &__outer {
-    padding: 0.2rem 0.5rem;
+    padding: .2rem .5rem;
     border: none;
-    border-radius: 0.2rem;
+    border-radius: .2rem;
     background-color: rgb(62, 158, 235);
     color: white;
     font-family: 'Quattrocento Sans', sans-serif;
@@ -20,8 +20,8 @@
     }
 
     &--bouncy {
-      padding: 0.1rem 0.5rem;
-      transition: all 0.2s;
+      padding: .1rem .5rem;
+      transition: all .2s;
       background-color: transparent;
       // @include bounceIn(
       //   $delay: .5s
@@ -35,7 +35,7 @@
         fill: white;
 
         @include pulse(
-          $duration: 0.2s
+          $duration: .2s
         );
       }
 

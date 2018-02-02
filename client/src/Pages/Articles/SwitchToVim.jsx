@@ -6,9 +6,6 @@ import ArticleDate from '../../components/ArticleDate';
 import Comments from '../../components/Comments';
 import TextLink from '../../components/TextLink';
 
-// import STYLES from '../pages.scss';
-//
-// const getClassName = className => STYLES[className] || 'UNKNOWN';
 const DATE_WRITTEN = new Date(2017, 11, 23, 14, 3, 0);
 const PAGE_ID = 729471;
 

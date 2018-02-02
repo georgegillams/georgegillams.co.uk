@@ -1,33 +1,32 @@
-import React from "react";
-import PropTypes from "prop-types";
+import React from 'react';
+import PropTypes from 'prop-types';
 import BpkImage, {
   withLazyLoading,
-  withLoadingBehavior
-} from "bpk-component-image";
-import Section from "./../../components/Section";
-import degreeCertificate from "./images/degreeCertificate.jpg";
+  withLoadingBehavior,
+} from 'bpk-component-image';
+import Section from './../../components/Section';
+import degreeCertificate from './images/degreeCertificate.jpg';
 
-import STYLES from "../pages.scss";
+import STYLES from '../pages.scss';
 
-const getClassName = className => STYLES[className] || "UNKNOWN";
-const documentIfExists = typeof window !== "undefined" ? document : null;
+const getClassName = className => STYLES[className] || 'UNKNOWN';
+const documentIfExists = typeof window !== 'undefined' ? document : null;
 const FadingLazyLoadedImage = withLoadingBehavior(
-  withLazyLoading(BpkImage, documentIfExists)
+  withLazyLoading(BpkImage, documentIfExists),
 );
 
- 
-const Degree = props => {
+const Degree = (props) => {
   const { className, ...rest } = props;
-  const classNameFinal = [getClassName("pages__page")];
+  const classNameFinal = [getClassName('pages__page')];
   if (className) {
     classNameFinal.push(className);
   }
 
   return (
-    <main className={classNameFinal.join(" ")} {...rest}>
+    <main className={classNameFinal.join(' ')} {...rest}>
       <Section name="MEng Software Engineering 🎓 2018">
         <FadingLazyLoadedImage
-          className={getClassName("pages__image")}
+          className={getClassName('pages__image')}
           altText="Degree certificate"
           width={1000}
           height={1414}
@@ -39,11 +38,11 @@ const Degree = props => {
 };
 
 Degree.propTypes = {
-  className: PropTypes.string
+  className: PropTypes.string,
 };
 
 Degree.defaultProps = {
-  className: null
+  className: null,
 };
 
 export default Degree;
