@@ -2,10 +2,10 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Button from './Button';
 
-const NavigationItem = () => {
+const NavigationItem = (props) => {
   const {
     name, linkUrl, className, ...rest
-  } = this.props;
+  } = props;
 
   const outerClassNameFinal = [];
   if (className) {
@@ -22,10 +22,14 @@ const NavigationItem = () => {
 };
 
 NavigationItem.propTypes = {
+  name: PropTypes.string,
+  linkUrl: PropTypes.string,
   className: PropTypes.string,
 };
 
 NavigationItem.defaultProps = {
+  name: null,
+  linkUrl: null,
   className: null,
 };
 
