@@ -40,12 +40,13 @@ class Comments extends React.Component {
       comments =
         this.state.comments.length === 0 ? (
           <SubSection
+            noAnchor
             className={getClassName('comments__component')}
             name="No comments yet. Be the first!"
           />
         ) : (
           this.state.comments.map(c => (
-            <SubSection className={getClassName('comments__component')} name={`${c.commenterName}`}>
+            <SubSection noAnchor className={getClassName('comments__component')} name={`${c.commenterName}`}>
               {c.comment}
             </SubSection>
           ))
@@ -54,6 +55,7 @@ class Comments extends React.Component {
 
     const commentsLoading = (
       <SubSection
+        noAnchor
         className={getClassName('comments__component')}
         name="Loading comments for blog..."
       >
