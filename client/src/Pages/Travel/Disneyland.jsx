@@ -37,7 +37,7 @@ const Disneyland = props => {
           rel="noopener noreferrer"
           target="_blank"
         >
-          <SubSection name="See the full album on Flickr →" link>
+          <SubSection noAnchor name="See the full album on Flickr →" link>
             <FadingLazyLoadedImage
               className={getClassName("pages__image")}
               altText=""

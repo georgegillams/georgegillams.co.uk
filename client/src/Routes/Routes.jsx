@@ -17,7 +17,7 @@
  */
 
 import React from 'react';
-import { Route, IndexRoute, IndexRedirect, Redirect, withRouter } from 'react-router';
+import { Route, IndexRoute, IndexRedirect, Redirect, withRouter, NotFoundRoute } from 'react-router';
 
 // import * as ROUTES from './../constants/routes';
 // import redirects from './../constants/redirect-routes';
@@ -96,9 +96,11 @@ const Routes = (
     <Route path="/contact" component={Contact} />
     <Route path="/admin" component={Admin} />
 
-    <Route component={ForOhFour} />
+    {/* <Route component={} /> */}
 
     {/* {Object.keys(redirects).map(from => <Redirect key={from} from={from} to={redirects[from]} />)} */}
+
+    <Route path="*" component={ForOhFour} />
   </Route>
 );
 
