@@ -25,7 +25,7 @@ const PersonalDetailsBanner = () => (
         )}`}
       >
         <Section light name="George Gillams">
-          <SubSection light name="Open-source Software Engineer" />
+          <SubSection noAnchor light name="Open-source Software Engineer" />
         </Section>
       </div>
       <SubSection
