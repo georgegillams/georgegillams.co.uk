@@ -1,16 +1,17 @@
-import React from "react";
-import TextLink from "../components/TextLink";
-import SubSection from "../components/SubSection";
+import React from 'react';
+import TextLink from '../components/TextLink';
+import SubSection from '../components/SubSection';
 
-import STYLES from "./pages.scss";
+import STYLES from './pages.scss';
 
-const getClassName = className => STYLES[className] || "UNKNOWN";
+const getClassName = className => STYLES[className] || 'UNKNOWN';
 
 const SiteMap = () => (
-  <div className={getClassName("pages__site-map-tree")}>
+  <div className={getClassName('pages__site-map-tree')}>
     <div>
       <SubSection
-        className={getClassName("pages__site-map-item")}
+        noAnchor
+        className={getClassName('pages__site-map-item')}
         name="Articles 📝"
       >
         <TextLink href="/articles/uk-bank-security">UK Bank Security</TextLink>
@@ -22,7 +23,8 @@ const SiteMap = () => (
         </TextLink>
       </SubSection>
       <SubSection
-        className={getClassName("pages__site-map-item")}
+        noAnchor
+        className={getClassName('pages__site-map-item')}
         name="Travel ✈️"
       >
         <TextLink href="/travel/iceland-2018"> Iceland </TextLink>
@@ -34,18 +36,20 @@ const SiteMap = () => (
         <TextLink href="/travel/disneyland-2017">Disneyland</TextLink>
         <br />
         <TextLink href="/travel/serre-chevalier-2017">
-          {" "}
-          Serre Chevalier{" "}
+          {' '}
+          Serre Chevalier{' '}
         </TextLink>
       </SubSection>
       <SubSection
-        className={getClassName("pages__site-map-item")}
+        noAnchor
+        className={getClassName('pages__site-map-item')}
         name="Art 🎨"
       >
         <TextLink href="/art">Artistic creations</TextLink>
       </SubSection>
       <SubSection
-        className={getClassName("pages__site-map-item")}
+        noAnchor
+        className={getClassName('pages__site-map-item')}
         name="Work 📱"
       >
         <TextLink href="/work">Portfolio</TextLink>
@@ -58,14 +62,15 @@ const SiteMap = () => (
           <br />
           <TextLink href="/travel/munich-2017"> Munich </TextLink> */}
       </SubSection>
-      {/* <SubSection className={getClassName('pages__site-map-item')} name="Documents 🥇">
+      {/* <SubSection noAnchor className={getClassName('pages__site-map-item')} name="Documents 🥇">
         <TextLink  href="/documents/degree">
-         <SubSection nclassName={getClassName('pages__site-map-item')}oPadding link name="Degree Certificate - 2018
+         <SubSection noAnchor nclassName={getClassName('pages__site-map-item')}oPadding link name="Degree Certificate - 2018
         </TextLink>
         <br />
       </SubSection> */}
       <SubSection
-        className={getClassName("pages__site-map-item")}
+        noAnchor
+        className={getClassName('pages__site-map-item')}
         name="Other stuff 🤷‍♂️"
       >
         <TextLink href="/about"> About me </TextLink>

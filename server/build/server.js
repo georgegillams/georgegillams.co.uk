@@ -3,6 +3,32 @@ const express = require("express");
 const path = require("path");
 const app = express();
 
+const xApiKeyPub = process.env.REST_PUBLIC_ACCESS_KEY;
+const xApiKeyPrivate = process.env.REST_PRIVATE_ACCESS_KEY;
+
+let client = null;
+if (process.env.REDIS_URL) {
+  // Heroku redistogo connection
+  client = require("redis").createClient(process.env.REDIS_URL);
+} else {
+  // Localhost
+  client = require("redis").createClient();
+}
+
+app.use(function (req, res, next) {
+  res.header("Access-Control-Allow-Origin", "*");
+  res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept, page_id, Api-Key");
+  res.header("Access-Control-Allow-Methods", "GET, POST, PUT, DELETE");
+  next();
+});
+
+client.on("connect", function () {
+  console.log("connected");
+  client.set("framework", "AngularJS");
+});
+
+// API Routing:
+
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 
@@ -15,9 +41,81 @@ router.get("/api/hello", (req, res) => {
   res.send({ express: "Hello From Express" });
 });
 
-router.get("/cities", (req, res) => {
-  const cities = [{ name: "New York City", population: 8175133 }, { name: "Los Angeles", population: 3792621 }, { name: "Chicago", population: 2695598 }];
-  res.json(cities);
+router.get("/api/comments", (req, res) => {
+  const pageId = req.headers.page_id;
+  client.lrange(`${pageId}_comments`, 0, -1, function (err, reply) {
+    const result = [];
+    for (let i = 0; i < reply.length; i += 1) {
+      result.push(JSON.parse(reply[i]));
+    }
+    res.send(result);
+  });
+});
+
+router.get("/api/comments/page_ids", (req, res) => {
+  client.lrange(`pageIds`, 0, -1, function (err, reply) {
+    res.send(reply);
+  });
+});
+
+router.post("/api/comments", (req, res) => {
+  const apiKey = req.headers["api-key"];
+  if (apiKey === undefined || apiKey !== xApiKeyPub) {
+    console.log("unauthenticated");
+    res.end();
+    return;
+  }
+  const pageId = req.body.page_id;
+  const commentId = Math.random().toString(36).substring(7);
+  const commenterName = req.body.commenter_name;
+  const comment = req.body.comment;
+  client.lrem(`pageIds`, 0, pageId);
+  client.rpush([`pageIds`, pageId]);
+  client.rpush([`${pageId}_comments`, JSON.stringify({
+    commentId: commentId,
+    commenterName: commenterName,
+    comment: comment,
+    timestamp: Date.now()
+  })]);
+  res.end();
+});
+
+router.delete("/api/comments", (req, res) => {
+  const apiKey = req.headers["api-key"];
+  if (apiKey === undefined || apiKey !== xApiKeyPrivate) {
+    console.log("unauthenticated");
+    res.end();
+    return;
+  }
+  const pageId = req.body.page_id;
+  const pattern = req.body.pattern;
+  const commentId = req.body.comment_id;
+  console.log(pageId);
+  if (pattern === "*") {
+    client.del(`${pageId}_comments`);
+  } else if (pattern !== undefined) {
+    client.lrange(`${pageId}_comments`, 0, -1, function (err, reply) {
+      for (let i = reply.length - 1; i > 0; i -= 1) {
+        const comment = JSON.parse(reply[i]);
+        if (`${comment.commenterName}${comment.comment}`.includes(pattern)) {
+          client.lrem(`${pageId}_comments`, 1, reply[i]);
+        }
+      }
+    });
+  }
+  if (commentId !== undefined) {
+    client.lrange(`${pageId}_comments`, 0, -1, function (err, reply) {
+      for (let i = 0; i < reply.length; i += 1) {
+        const comment = JSON.parse(reply[i]);
+        if (comment.commentId === commentId) {
+          client.lrem(`${pageId}_comments`, 1, reply[i]);
+          res.end();
+          return;
+        }
+      }
+    });
+  }
+  res.end();
 });
 
 app.use(router);

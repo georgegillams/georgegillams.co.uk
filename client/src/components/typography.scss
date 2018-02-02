@@ -53,8 +53,8 @@
 
   &--with-anchor-link {
     @include bpk-breakpoint-tablet {
-      margin-left: 1.75rem;
-      margin-top: calc(-1.75rem + .15rem);
+      margin-left: 1rem;
+      margin-top: -1.6rem;
       position: initial;
     }
   }

@@ -32,7 +32,7 @@ const Longleat = props => {
         <br />
         <br />
         <a href="https://flic.kr/s/aHsktEsk1b" rel="noopener noreferrer" target="_blank">
-          <SubSection name="See the full album on Flickr →" link>
+          <SubSection noAnchor name="See the full album on Flickr →" link>
             <FadingLazyLoadedImage
               className={getClassName("pages__image")}
               altText="Longleat Festival of Light"
