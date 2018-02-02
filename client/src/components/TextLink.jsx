@@ -1,5 +1,6 @@
 import PropTypes from 'prop-types';
 import React from 'react';
+import BpkSmallNewWindowIcon from 'bpk-component-icon/sm/new-window';
 
 import STYLES from './typography.scss';
 
@@ -34,6 +35,7 @@ const TextLink = (props) => {
     <div className={outerClassNameFinal.join(' ')} {...rest}>
       <a href={href} {...externalProps} className={classNameFinal.join(' ')}>
         {children}
+        {external && <BpkSmallNewWindowIcon className={getClassName('typography__icon')} /> }
       </a>
     </div>
   );
