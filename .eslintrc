@@ -2,12 +2,11 @@
   "parser": "babel-eslint",
   "extends": [
       "skyscanner",
-      "prettier",
+      "prettier", #"eslint-config-prettier",
       "prettier/react",
   ],
   "plugins": [
-    "prettier",
-    "flowtype"
+    "prettier", #"eslint-plugin-prettier",
   ],
   "env": {
     "browser": true,
@@ -18,13 +17,14 @@
       "node": {
         "extensions": [
           ".js",
+          ".jsx",
           ".json",
         ]
       }
     }
   },
   "rules": {
-    "prettier/prettier": "error",
+    # "prettier/prettier": "error",
     "react/jsx-filename-extension": 1,
     "import/no-extraneous-dependencies": 0,
     // We want to keep prop-types alongside flow types so we relax this rule to allow us to specify defaults for

@@ -1,6 +1,7 @@
-const bodyParser = require("body-parser");
-const express = require("express");
-const path = require("path");
+const bodyParser = require('body-parser');
+const express = require('express');
+const path = require('path');
+
 const app = express();
 
 const xApiKeyPub = process.env.REST_PUBLIC_ACCESS_KEY;
@@ -9,25 +10,26 @@ const xApiKeyPrivate = process.env.REST_PRIVATE_ACCESS_KEY;
 let client = null;
 if (process.env.REDIS_URL) {
   // Heroku redistogo connection
-  client = require("redis").createClient(process.env.REDIS_URL);
+  // eslint-disable-next-line global-require
+  client = require('redis').createClient(process.env.REDIS_URL);
 } else {
   // Localhost
-  client = require("redis").createClient();
+  // eslint-disable-next-line global-require
+  client = require('redis').createClient();
 }
 
-app.use(function(req, res, next) {
-  res.header("Access-Control-Allow-Origin", "*");
+app.use((req, res, next) => {
+  res.header('Access-Control-Allow-Origin', '*');
   res.header(
-    "Access-Control-Allow-Headers",
-    "Origin, X-Requested-With, Content-Type, Accept, page_id, Api-Key"
+    'Access-Control-Allow-Headers',
+    'Origin, X-Requested-With, Content-Type, Accept, page_id, Api-Key',
   );
-  res.header("Access-Control-Allow-Methods", "GET, POST, PUT, DELETE");
+  res.header('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE');
   next();
 });
 
-client.on("connect", function() {
-  console.log("connected");
-  client.set("framework", "AngularJS");
+client.on('connect', () => {
+  client.set('framework', 'AngularJS');
 });
 
 // API Routing:
@@ -37,16 +39,16 @@ app.use(bodyParser.urlencoded({ extended: false }));
 
 const router = express.Router();
 
-const staticFiles = express.static(path.join(__dirname, "../../client/build"));
+const staticFiles = express.static(path.join(__dirname, '../../client/build'));
 app.use(staticFiles);
 
-router.get("/api/hello", (req, res) => {
-  res.send({ express: "Hello From Express" });
+router.get('/api/hello', (req, res) => {
+  res.send({ express: 'Hello From Express' });
 });
 
-router.get("/api/comments", (req, res) => {
+router.get('/api/comments', (req, res) => {
   const pageId = req.headers.page_id;
-  client.lrange(`${pageId}_comments`, 0, -1, function(err, reply) {
+  client.lrange(`${pageId}_comments`, 0, -1, (err, reply) => {
     const result = [];
     for (let i = 0; i < reply.length; i += 1) {
       result.push(JSON.parse(reply[i]));
@@ -55,16 +57,15 @@ router.get("/api/comments", (req, res) => {
   });
 });
 
-router.get("/api/comments/page_ids", (req, res) => {
-  client.lrange(`pageIds`, 0, -1, function(err, reply) {
+router.get('/api/comments/page_ids', (req, res) => {
+  client.lrange('pageIds', 0, -1, (err, reply) => {
     res.send(reply);
   });
 });
 
-router.post("/api/comments", (req, res) => {
-  const apiKey = req.headers["api-key"];
+router.post('/api/comments', (req, res) => {
+  const apiKey = req.headers['api-key'];
   if (apiKey === undefined || apiKey !== xApiKeyPub) {
-    console.log("unauthenticated");
     res.end();
     return;
   }
@@ -73,36 +74,34 @@ router.post("/api/comments", (req, res) => {
     .toString(36)
     .substring(7);
   const commenterName = req.body.commenter_name;
-  const comment = req.body.comment;
-  client.lrem(`pageIds`, 0, pageId);
-  client.rpush([`pageIds`, pageId]);
+  const { comment } = req.body;
+  client.lrem('pageIds', 0, pageId);
+  client.rpush(['pageIds', pageId]);
   client.rpush([
     `${pageId}_comments`,
     JSON.stringify({
-      commentId: commentId,
-      commenterName: commenterName,
-      comment: comment,
-      timestamp: Date.now()
-    })
+      commentId,
+      commenterName,
+      comment,
+      timestamp: Date.now(),
+    }),
   ]);
   res.end();
 });
 
-router.delete("/api/comments", (req, res) => {
-  const apiKey = req.headers["api-key"];
+router.delete('/api/comments', (req, res) => {
+  const apiKey = req.headers['api-key'];
   if (apiKey === undefined || apiKey !== xApiKeyPrivate) {
-    console.log("unauthenticated");
     res.end();
     return;
   }
   const pageId = req.body.page_id;
-  const pattern = req.body.pattern;
+  const { pattern } = req.body;
   const commentId = req.body.comment_id;
-  console.log(pageId);
-  if (pattern === "*") {
+  if (pattern === '*') {
     client.del(`${pageId}_comments`);
   } else if (pattern !== undefined) {
-    client.lrange(`${pageId}_comments`, 0, -1, function(err, reply) {
+    client.lrange(`${pageId}_comments`, 0, -1, (err, reply) => {
       for (let i = reply.length - 1; i > 0; i -= 1) {
         const comment = JSON.parse(reply[i]);
         if (`${comment.commenterName}${comment.comment}`.includes(pattern)) {
@@ -112,7 +111,7 @@ router.delete("/api/comments", (req, res) => {
     });
   }
   if (commentId !== undefined) {
-    client.lrange(`${pageId}_comments`, 0, -1, function(err, reply) {
+    client.lrange(`${pageId}_comments`, 0, -1, (err, reply) => {
       for (let i = 0; i < reply.length; i += 1) {
         const comment = JSON.parse(reply[i]);
         if (comment.commentId === commentId) {
@@ -129,9 +128,7 @@ router.delete("/api/comments", (req, res) => {
 app.use(router);
 
 // any routes not picked up by the server api will be handled by the react router
-app.use("/*", staticFiles);
+app.use('/*', staticFiles);
 
-app.set("port", process.env.PORT || 3001);
-app.listen(app.get("port"), () => {
-  console.log(`Listening on ${app.get("port")}`);
-});
+app.set('port', process.env.PORT || 3001);
+app.listen(app.get('port'), () => {});

@@ -10,9 +10,7 @@ import STYLES from '../pages.scss';
 const getClassName = className => STYLES[className] || 'UNKNOWN';
 const documentIfExists = typeof window !== 'undefined' ? document : null;
 const FadingLazyLoadedImage = withLoadingBehavior(withLazyLoading(BpkImage, documentIfExists));
-const dateWritten = new Date(2017, 11, 8, 7, 1, 0);
 
- 
 const Photobombing = (props) => {
   const { className, ...rest } = props;
   const classNameFinal = [getClassName('pages__page')];
@@ -37,4 +35,4 @@ Photobombing.defaultProps = {
   className: null,
 };
 
- export default Photobombing;
+export default Photobombing;

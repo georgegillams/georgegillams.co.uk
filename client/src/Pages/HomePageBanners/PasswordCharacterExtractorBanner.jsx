@@ -1,6 +1,6 @@
-import React from "react";
-import SimpleBanner from "./SimpleBanner";
-import passwordCharacterExtractorUse from "../Work/images/passwordCharacterExtractorBanner.png";
+import React from 'react';
+import SimpleBanner from './SimpleBanner';
+import passwordCharacterExtractorUse from '../Work/images/passwordCharacterExtractorBanner.png';
 
 const PasswordCharacterExtractorBanner = () => (
   <SimpleBanner

@@ -1,24 +1,24 @@
-import React from "react";
-import Slider from "react-slick";
-import SubSection from "../components/SubSection";
-import GetSocial from "../components/GetSocial";
-import Card from "../components/Card";
-import Showcase from "../components/Showcase";
-import PersonalDetailsBanner from "./HomePageBanners/PersonalDetailsBanner";
-import IcelandBanner from "./HomePageBanners/IcelandBanner";
-import NetNeutralityBanner from "./HomePageBanners/NetNeutralityBanner";
-import MunichBanner from "./HomePageBanners/MunichBanner";
-import PasswordCharacterExtractorBanner from "./HomePageBanners/PasswordCharacterExtractorBanner";
-import ArtBanner from "./HomePageBanners/ArtBanner";
+import React from 'react';
+import Slider from 'react-slick';
+import SubSection from '../components/SubSection';
+import GetSocial from '../components/GetSocial';
+import Card from '../components/Card';
+import Showcase from '../components/Showcase';
+import PersonalDetailsBanner from './HomePageBanners/PersonalDetailsBanner';
+import IcelandBanner from './HomePageBanners/IcelandBanner';
+import NetNeutralityBanner from './HomePageBanners/NetNeutralityBanner';
+import MunichBanner from './HomePageBanners/MunichBanner';
+import PasswordCharacterExtractorBanner from './HomePageBanners/PasswordCharacterExtractorBanner';
+import ArtBanner from './HomePageBanners/ArtBanner';
 
-import STYLES from "./pages.scss";
+import STYLES from './pages.scss';
 
-const getClassName = className => STYLES[className] || "UNKNOWN";
+const getClassName = className => STYLES[className] || 'UNKNOWN';
 
 const HomePage = () => (
   <main>
     <Slider
-      className={getClassName("pages__slider")}
+      className={getClassName('pages__slider')}
       infinite
       speed={500}
       slidesToShow={1}
@@ -35,12 +35,12 @@ const HomePage = () => (
       <div>
         <NetNeutralityBanner />
       </div>
-      {/*<div>
+      {/* <div>
         <BackpackBanner />
       </div>
       <div>
         <MozillaBanner />
-      </div>*/}
+      </div> */}
       <div>
         <ArtBanner />
       </div>
@@ -51,7 +51,7 @@ const HomePage = () => (
         <PasswordCharacterExtractorBanner />
       </div>
     </Slider>
-    <div style={{ minHeight: "15rem" }} />
+    <div style={{ minHeight: '15rem' }} />
   </main>
 );
 // <Showcase name="Articles">

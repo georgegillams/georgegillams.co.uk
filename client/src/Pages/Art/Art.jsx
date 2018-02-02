@@ -27,7 +27,7 @@ const Art = (props) => {
 
   return (
     <main className={classNameFinal.join(' ')} {...rest}>
-      <Section  name="Food is art! (...sometimes)">
+      <Section name="Food is art! (...sometimes)">
         <SubSection noAnchor name="Guinness cake">
           I like spending time on food presentation when the opportunity calls for it. So I created
           this masterpiece to share with the office and celebrate a legendary drink!
@@ -59,7 +59,7 @@ const Art = (props) => {
         </SubSection>
       </Section>
       <br />
-      <Section  name="Photoshop">
+      <Section name="Photoshop">
         <SubSection noAnchor name="Tulips exploding with light">
           For some reason the idea of light exploding out of tulips popped into my mind, so I went
           out to find some and made it a reality. I used a similar effect in Art that I had used in

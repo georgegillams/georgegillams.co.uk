@@ -16,7 +16,7 @@ const Contact = (props) => {
 
   return (
     <main className={classNameFinal.join(' ')} {...rest}>
-      <Section  name="Get in touch">
+      <Section name="Get in touch">
         <br />
         <a href="tel:+447867592615" rel="noopener noreferrer" target="_blank">
           <SubSection noAnchor name="Call +44 (0) 786759 2615" link />

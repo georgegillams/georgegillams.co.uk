@@ -1,44 +1,49 @@
-import React from "react";
-import PropTypes from "prop-types";
-import BpkImage, { withLazyLoading, withLoadingBehavior } from "bpk-component-image";
+import React from 'react';
+import PropTypes from 'prop-types';
+import BpkImage, {
+  withLazyLoading,
+  withLoadingBehavior,
+} from 'bpk-component-image';
 
-import STYLES from "./photo-gallery.scss";
+import STYLES from './photo-gallery.scss';
 
-const getClassName = className => STYLES[className] || "UNKNOWN";
-const documentIfExists = typeof window !== "undefined" ? document : null;
-const FadingLazyLoadedImage = withLoadingBehavior(withLazyLoading(BpkImage, documentIfExists));
+const getClassName = className => STYLES[className] || 'UNKNOWN';
+const documentIfExists = typeof window !== 'undefined' ? document : null;
+const FadingLazyLoadedImage = withLoadingBehavior(
+  withLazyLoading(BpkImage, documentIfExists),
+);
 
-const PhotoGallery = props => {
+const PhotoGallery = (props) => {
   const { images, className, ...rest } = props;
 
-  const classNameFinal = [getClassName("photo-gallery__container")];
+  const classNameFinal = [getClassName('photo-gallery__container')];
   if (className) classNameFinal.push(className);
 
   return (
-    <div className={classNameFinal.join(" ")} {...rest}>
+    <div className={classNameFinal.join(' ')} {...rest}>
       <FadingLazyLoadedImage
-        className={getClassName("photo-gallery__image0")}
+        className={getClassName('photo-gallery__image0')}
         altText="Netflix download speeds on a number of American ISPs"
         width={970}
         height={575}
         src={images[0]}
       />
       <FadingLazyLoadedImage
-        className={getClassName("photo-gallery__image1")}
+        className={getClassName('photo-gallery__image1')}
         altText="Netflix download speeds on a number of American ISPs"
         width={970}
         height={800}
         src={images[1]}
       />
       <FadingLazyLoadedImage
-        className={getClassName("photo-gallery__image2")}
+        className={getClassName('photo-gallery__image2')}
         altText="Netflix download speeds on a number of American ISPs"
         width={970}
         height={575}
         src={images[2]}
       />
       <FadingLazyLoadedImage
-        className={getClassName("photo-gallery__image3")}
+        className={getClassName('photo-gallery__image3')}
         altText="Netflix download speeds on a number of American ISPs"
         width={970}
         height={575}
@@ -50,11 +55,11 @@ const PhotoGallery = props => {
 
 PhotoGallery.propTypes = {
   images: PropTypes.arrayOf(PropTypes.node).isRequired,
-  className: PropTypes.string
+  className: PropTypes.string,
 };
 
 PhotoGallery.defaultProps = {
-  className: null
+  className: null,
 };
 
 export default PhotoGallery;

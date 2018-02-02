@@ -2,11 +2,17 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import Helmet from 'react-helmet';
 import ReactDOMServer from 'react-dom/server';
-import { Router, RouterContext, match, browserHistory, createMemoryHistory } from 'react-router';
+import {
+  Router,
+  RouterContext,
+  match,
+  browserHistory,
+  createMemoryHistory,
+} from 'react-router';
 
 import routes from './Routes';
-// import template from './template';
-// import { extractAssets } from './webpackStats';
+// import template from  './template';
+// import { extractAssets } from  './webpackStats';
 
 if (typeof window !== 'undefined' && typeof document !== 'undefined') {
   const root = document.getElementById('root');

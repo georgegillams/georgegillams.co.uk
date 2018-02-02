@@ -1,6 +1,6 @@
-const bodyParser = require("body-parser");
-const express = require("express");
-const path = require("path");
+const bodyParser = require('body-parser');
+const express = require('express');
+const path = require('path');
 const app = express();
 
 const xApiKeyPub = process.env.REST_PUBLIC_ACCESS_KEY;
@@ -9,22 +9,22 @@ const xApiKeyPrivate = process.env.REST_PRIVATE_ACCESS_KEY;
 let client = null;
 if (process.env.REDIS_URL) {
   // Heroku redistogo connection
-  client = require("redis").createClient(process.env.REDIS_URL);
+  client = require('redis').createClient(process.env.REDIS_URL);
 } else {
   // Localhost
-  client = require("redis").createClient();
+  client = require('redis').createClient();
 }
 
 app.use(function (req, res, next) {
-  res.header("Access-Control-Allow-Origin", "*");
-  res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept, page_id, Api-Key");
-  res.header("Access-Control-Allow-Methods", "GET, POST, PUT, DELETE");
+  res.header('Access-Control-Allow-Origin', '*');
+  res.header('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept, page_id, Api-Key');
+  res.header('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE');
   next();
 });
 
-client.on("connect", function () {
-  console.log("connected");
-  client.set("framework", "AngularJS");
+client.on('connect', function () {
+  console.log('connected');
+  client.set('framework', 'AngularJS');
 });
 
 // API Routing:
@@ -34,14 +34,14 @@ app.use(bodyParser.urlencoded({ extended: false }));
 
 const router = express.Router();
 
-const staticFiles = express.static(path.join(__dirname, "../../client/build"));
+const staticFiles = express.static(path.join(__dirname, '../../client/build'));
 app.use(staticFiles);
 
-router.get("/api/hello", (req, res) => {
-  res.send({ express: "Hello From Express" });
+router.get('/api/hello', (req, res) => {
+  res.send({ express: 'Hello From Express' });
 });
 
-router.get("/api/comments", (req, res) => {
+router.get('/api/comments', (req, res) => {
   const pageId = req.headers.page_id;
   client.lrange(`${pageId}_comments`, 0, -1, function (err, reply) {
     const result = [];
@@ -52,16 +52,16 @@ router.get("/api/comments", (req, res) => {
   });
 });
 
-router.get("/api/comments/page_ids", (req, res) => {
+router.get('/api/comments/page_ids', (req, res) => {
   client.lrange(`pageIds`, 0, -1, function (err, reply) {
     res.send(reply);
   });
 });
 
-router.post("/api/comments", (req, res) => {
-  const apiKey = req.headers["api-key"];
+router.post('/api/comments', (req, res) => {
+  const apiKey = req.headers['api-key'];
   if (apiKey === undefined || apiKey !== xApiKeyPub) {
-    console.log("unauthenticated");
+    console.log('unauthenticated');
     res.end();
     return;
   }
@@ -80,10 +80,10 @@ router.post("/api/comments", (req, res) => {
   res.end();
 });
 
-router.delete("/api/comments", (req, res) => {
-  const apiKey = req.headers["api-key"];
+router.delete('/api/comments', (req, res) => {
+  const apiKey = req.headers['api-key'];
   if (apiKey === undefined || apiKey !== xApiKeyPrivate) {
-    console.log("unauthenticated");
+    console.log('unauthenticated');
     res.end();
     return;
   }
@@ -91,7 +91,7 @@ router.delete("/api/comments", (req, res) => {
   const pattern = req.body.pattern;
   const commentId = req.body.comment_id;
   console.log(pageId);
-  if (pattern === "*") {
+  if (pattern === '*') {
     client.del(`${pageId}_comments`);
   } else if (pattern !== undefined) {
     client.lrange(`${pageId}_comments`, 0, -1, function (err, reply) {
@@ -121,9 +121,9 @@ router.delete("/api/comments", (req, res) => {
 app.use(router);
 
 // any routes not picked up by the server api will be handled by the react router
-app.use("/*", staticFiles);
+app.use('/*', staticFiles);
 
-app.set("port", process.env.PORT || 3001);
-app.listen(app.get("port"), () => {
-  console.log(`Listening on ${app.get("port")}`);
+app.set('port', process.env.PORT || 3001);
+app.listen(app.get('port'), () => {
+  console.log(`Listening on ${app.get('port')}`);
 });
