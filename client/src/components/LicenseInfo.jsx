@@ -8,7 +8,7 @@ import STYLES from './license.scss';
 
 const getClassName = className => STYLES[className] || 'UNKNOWN';
 
-const LicenseInfo = (props) => {
+const LicenseInfo = props => {
   const { centered, className, ...rest } = props;
   const classNameFinal = [];
   if (centered) {
@@ -41,7 +41,7 @@ const LicenseInfo = (props) => {
           rel="license"
           href="http://creativecommons.org/licenses/by-sa/4.0/"
         >
-          Creative Commons Attribution-ShareAlike 4.0 International License
+          Creative Commons Attribution-ShareAlike 4.0 International License{' '}
         </TextLink>
       </Section>{' '}
     </div>

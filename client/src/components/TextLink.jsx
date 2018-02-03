@@ -6,9 +6,16 @@ import STYLES from './typography.scss';
 
 const getClassName = className => STYLES[className] || 'UNKNOWN';
 
-const TextLink = (props) => {
+const TextLink = props => {
   const {
-    external, fancy, light, href, className, textClassName, children, ...rest
+    external,
+    fancy,
+    light,
+    href,
+    className,
+    textClassName,
+    children,
+    ...rest
   } = props;
 
   const classNameFinal = [getClassName('typography__main')];
@@ -35,7 +42,13 @@ const TextLink = (props) => {
     <div className={outerClassNameFinal.join(' ')} {...rest}>
       <a href={href} {...externalProps} className={classNameFinal.join(' ')}>
         {children}
-        {external && <BpkSmallNewWindowIcon className={getClassName('typography__icon')} /> }
+        {external && (
+          <div className={getClassName('typography__icon')}>
+            <BpkSmallNewWindowIcon
+              className={getClassName('typography__icon--inner')}
+            />
+          </div>
+        )}
       </a>
     </div>
   );

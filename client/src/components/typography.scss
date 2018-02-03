@@ -36,8 +36,17 @@
   }
 
   &__icon {
-    max-width: 1rem;
+    display: inline-block;
+    width: .65rem;
+    height: 1rem;
     margin-left: .25rem;
+
+    &--inner {
+      position: absolute;
+      max-width: .9rem;
+      margin-top: .12rem;
+      margin-left: -.45rem;
+    }
   }
 
   &__anchor-link {
