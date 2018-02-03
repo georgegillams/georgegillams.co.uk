@@ -7,7 +7,7 @@ import STYLES from './typography.scss';
 
 const getClassName = className => STYLES[className] || 'UNKNOWN';
 
-const SubSection = (props) => {
+const SubSection = props => {
   const {
     link,
     fancy,
@@ -52,15 +52,28 @@ const SubSection = (props) => {
     textClassNameFinal.push(textClassName);
   }
 
-  const anchorLink = (`${name}`).toLowerCase().split(' ').join('-');
+  const anchorLink = `${name}`
+    .toLowerCase()
+    .split(' ')
+    .join('-');
 
   return (
     <div className={classNameFinal.join(' ')} {...rest}>
       {!noAnchor && (
-        <TextLink href={`#${anchorLink}`} className={getClassName('typography__anchor-link')} >🔗</TextLink>
+        <TextLink
+          href={`#${anchorLink}`}
+          className={getClassName('typography__anchor-link')}
+        >
+          §
+        </TextLink>
       )}
       {name && (
-        <BpkText tagName="h3" id={anchorLink} textStyle="lg" className={textClassNameFinal.join(' ')}>
+        <BpkText
+          tagName="h3"
+          id={anchorLink}
+          textStyle="lg"
+          className={textClassNameFinal.join(' ')}
+        >
           {name}
         </BpkText>
       )}

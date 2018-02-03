@@ -28,9 +28,8 @@ const TextLink = props => {
   }
   if (fancy) classNameFinal.push(getClassName('typography--fancy'));
   classNameFinal.push(getClassName('typography--inline'));
-  const outerClassNameFinal = JSON.parse(JSON.stringify(classNameFinal));
   if (className) {
-    outerClassNameFinal.push(className);
+    classNameFinal.push(className);
   }
 
   let externalProps = {};
@@ -39,18 +38,21 @@ const TextLink = props => {
   }
 
   return (
-    <div className={outerClassNameFinal.join(' ')} {...rest}>
-      <a href={href} {...externalProps} className={classNameFinal.join(' ')}>
-        {children}
-        {external && (
-          <div className={getClassName('typography__icon')}>
-            <BpkSmallNewWindowIcon
-              className={getClassName('typography__icon--inner')}
-            />
-          </div>
-        )}
-      </a>
-    </div>
+    <a
+      href={href}
+      {...externalProps}
+      className={classNameFinal.join(' ')}
+      {...rest}
+    >
+      {children}
+      {external && (
+        <div className={getClassName('typography__icon')}>
+          <BpkSmallNewWindowIcon
+            className={getClassName('typography__icon--inner')}
+          />
+        </div>
+      )}
+    </a>
   );
 };
 

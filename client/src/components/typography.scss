@@ -51,11 +51,13 @@
 
   &__anchor-link {
     position: absolute;
-    margin-top: .3rem;
-    margin-left: -1.75rem;
+    margin-top: .15rem;
+    margin-left: -1.2rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    opacity: .4;
 
     @include bpk-breakpoint-tablet {
-      position: initial;
       margin-left: 0;
     }
   }
@@ -67,9 +69,7 @@
 
     &--with-anchor-link {
       @include bpk-breakpoint-tablet {
-        position: initial;
-        margin-top: -1.6rem;
-        margin-left: 1.75rem;
+        padding-left: 1.2rem;
       }
     }
 
