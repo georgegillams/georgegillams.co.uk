@@ -67,7 +67,7 @@ const Routes = (
       <Route path="/travel/iceland-2018" component={Iceland} />
       <Route path="/travel/longleat-2017" component={Longleat} />
       <Route path="/travel/munich-2017" component={Munich} />
-      <Route path="/travel/disney-2017" component={Disneyland} />
+      <Route path="/travel/disneyland-2017" component={Disneyland} />
       <Route path="/travel/serre-chevalier-2017" component={SerreChevalier} />
     </Route>
 

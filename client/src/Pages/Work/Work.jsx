@@ -36,8 +36,8 @@ const Work = props => {
             href="http://www.leonardocompany.com/en/-/ewos-electronic_warfare_operational_support"
             external
           >
-            Leonardo
-          </TextLink>{' '}
+            Leonardo{' '}
+          </TextLink>
           where I worked for 60 weeks, mainly on a .NET analysis framework which
           supported other development teams in building powerful applications.
           <br />
@@ -45,7 +45,7 @@ const Work = props => {
           I then moved on to become a Software Engineering intern at Skyscanner,
           where I worked on their open-source design system,{' '}
           <TextLink href="https://backpack.github.io/" external>
-            Backpack
+            Backpack{' '}
           </TextLink>. I continued this work whilst completing my Masters in
           Southampton. Once my Masters is out of the way, I will be rejoining
           Skyscanner as a full-time employee.
@@ -85,34 +85,34 @@ const Work = props => {
           <SubSection name="Backpack Design System">
             My first job at Skyscanner was in the{' '}
             <TextLink external href="https://backpack.github.io/">
-              Backpack
-            </TextLink>{' '}
+              Backpack{' '}
+            </TextLink>
             squad. By combining Design and Engineering, we meet our goal of
             providing support to other teams within the business, allowing them
             to quickly construct quality front-end products with coherence. We
             released{' '}
             <TextLink external href="https://npmjs.com/">
-              NPM
-            </TextLink>{' '}
+              NPM{' '}
+            </TextLink>
             packages which allowed users to consume{' '}
             <TextLink external href="https://reactjs.org/">
-              React
-            </TextLink>{' '}
+              React{' '}
+            </TextLink>
             components, or build their own using our{' '}
             <TextLink external href="http://sass-lang.com/">
-              SASS
-            </TextLink>{' '}
+              SASS{' '}
+            </TextLink>
             mixins. Shortly after joining Backpack we went open-source, and then
             started supporting app-development through{' '}
             <TextLink external href="https://facebook.github.io/react-native/">
-              React-Native
+              React-Native{' '}
             </TextLink>. These two changes made my time with Backpack
             particularly interesting.
             <br />
             <br />
             <TextLink external href="https://reactjs.org/">
-              React
-            </TextLink>{' '}
+              React{' '}
+            </TextLink>
             components should really be stateless, meaning that often to create
             our working documentation pages we had to implement container
             components to hold state and allow interaction. This was
@@ -150,8 +150,8 @@ const Work = props => {
               href="https://addons.mozilla.org/en-US/firefox/addon/greasemonkey/"
               external
             >
-              GreaseMonkey
-            </TextLink>{' '}
+              GreaseMonkey{' '}
+            </TextLink>
             is a brilliant browser extension that allows you to add javascript
             to specific webpages when they are loaded. The ECS site we use at
             Southampton is a brilliant tool that was created ugly, so I wrote a
