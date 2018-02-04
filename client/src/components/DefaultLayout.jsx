@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import 'whatwg-fetch';
 
+import RedirectNotice from './RedirectNotice';
 import NavigationBar from './NavigationBar';
 import Footer from './Footer';
 import PageContentContainer from './PageContentContainer';
@@ -23,6 +24,7 @@ class DefaultLayout extends React.Component {
     const needsRedirect = !isLocalhost && !location.includes('https');
     if (needsRedirect) {
       window.location = location.replace('http', 'https');
+      return <RedirectNotice />;
     }
 
     const { children } = this.props;
