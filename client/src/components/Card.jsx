@@ -19,7 +19,7 @@ const Card = (props) => {
     <BpkCard
       className={classNameFinal.join(' ')}
       style={{
-        backgroundColor: light ? 'rgb(60, 68, 81)' : 'none',
+        backgroundColor: light ? '#1E1E1E' : 'none',
         backgroundImage: `url(${imageSrc})`,
       }}
       href={linkUrl}
