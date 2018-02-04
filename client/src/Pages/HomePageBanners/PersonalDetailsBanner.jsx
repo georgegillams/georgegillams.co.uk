@@ -15,7 +15,7 @@ const PersonalDetailsBanner = () => (
     <div
       className={getClassName('pages__banner-image')}
       style={{
-        backgroundColor: 'rgb(60, 68, 81)',
+        backgroundColor: '#1E1E1E',
         backgroundImage: `url(${astonMartin})`,
       }}
     >
