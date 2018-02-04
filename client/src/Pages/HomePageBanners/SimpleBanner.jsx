@@ -16,7 +16,7 @@ const SimpleBanner = (props) => {
       <div
         className={getClassName('pages__banner-image')}
         style={{
-          backgroundColor: light ? 'rgb(60, 68, 81)' : 'none',
+          backgroundColor: light ? '#1E1E1E' : 'none',
           backgroundImage: `url(${imageSrc})`,
         }}
       >

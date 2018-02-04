@@ -20,11 +20,7 @@ const Footer = props => {
   }
 
   return (
-    <footer
-      className={outerClassNameFinal.join(' ')}
-      style={{ backgroundImage: `url(${blackPaper})` }}
-      {...rest}
-    >
+    <footer className={outerClassNameFinal.join(' ')} {...rest}>
       <GetSocial
         light
         alwaysCentered
@@ -37,15 +33,6 @@ const Footer = props => {
         noPadding
       />
       <TechSpecs className={getClassName('footer__tech')} light />
-      <SubSection
-        noAnchor
-        className={getClassName('footer__copyright')}
-        fancy
-        noPadding
-        light
-      >
-        {`© copyright George Gillams 2017 - ${currentYear}`}
-      </SubSection>
     </footer>
   );
 };
