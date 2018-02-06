@@ -5,6 +5,7 @@ import SubSection from './../../components/SubSection';
 import ArticleDate from '../../components/ArticleDate';
 import Comments from '../../components/Comments';
 import TextLink from '../../components/TextLink';
+import PageSwitchScroller from '../../components/PageSwitchScroller';
 
 const DATE_WRITTEN = new Date(2017, 11, 23, 14, 3, 0);
 const PAGE_ID = 729471;
@@ -18,6 +19,7 @@ const SwitchToVim = props => {
 
   return (
     <main className={classNameFinal.join(' ')} {...rest}>
+      <PageSwitchScroller />
       <Section name="Switching to Vim">
         <ArticleDate date={DATE_WRITTEN} />
         <SubSection name="Why I did it">

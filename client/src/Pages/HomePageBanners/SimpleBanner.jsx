@@ -1,4 +1,5 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 import PageContentContainer from '../../components/PageContentContainer';
 import Section from './../../components/Section';
 
@@ -6,10 +7,8 @@ import STYLES from '../pages.scss';
 
 const getClassName = className => STYLES[className] || 'UNKNOWN';
 
-const SimpleBanner = (props) => {
-  const {
-    light, title, imageSrc, linkUrl, ...rest
-  } = props;
+const SimpleBanner = props => {
+  const { light, title, imageSrc, linkUrl, ...rest } = props;
 
   return (
     <main className={getClassName('pages__banner')}>
@@ -22,9 +21,9 @@ const SimpleBanner = (props) => {
       >
         <PageContentContainer>
           <div className={getClassName('pages__banner-container')}>
-            <a href={linkUrl}>
+            <NavLink to={linkUrl}>
               <Section light={light} name={title} link />
-            </a>
+            </NavLink>
           </div>
         </PageContentContainer>
       </div>
