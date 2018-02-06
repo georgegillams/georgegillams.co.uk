@@ -1,6 +1,7 @@
 import React from 'react';
 import Card from '../../components/Card';
 import LicenseInfo from '../../components/LicenseInfo';
+import PageSwitchScroller from '../../components/PageSwitchScroller';
 import iceland from '../Travel/images/iceland2.jpg';
 import longleat from '../Travel/images/longleatLight.jpg';
 import munich from '../Travel/images/munich.jpg';
@@ -13,6 +14,7 @@ const getClassName = className => STYLES[className] || 'UNKNOWN';
 
 const Travel = () => (
   <div style={{ width: '100%' }}>
+    <PageSwitchScroller />
     <Card
       className={getClassName('pages__card')}
       light

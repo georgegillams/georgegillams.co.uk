@@ -8,6 +8,7 @@ import Section from './../../components/Section';
 import SubSection from './../../components/SubSection';
 import Comments from '../../components/Comments';
 import LicenseInfo from '../../components/LicenseInfo';
+import PageSwitchScroller from '../../components/PageSwitchScroller';
 import longleatLight from './images/longleatLight.jpg';
 
 import STYLES from '../pages.scss';
@@ -20,7 +21,7 @@ const FadingLazyLoadedImage = withLoadingBehavior(
   withLazyLoading(BpkImage, documentIfExists),
 );
 
-const Longleat = (props) => {
+const Longleat = props => {
   const { className, ...rest } = props;
   const classNameFinal = [getClassName('pages__page')];
   if (className) {
@@ -29,6 +30,7 @@ const Longleat = (props) => {
 
   return (
     <main className={classNameFinal.join(' ')} {...rest}>
+      <PageSwitchScroller />
       <Section name="Longleat 🦁 Christmas 2017">
         Just after Christmas, we headed out to Longleat to enjoy their safari,
         and then their festival of lights in the evening. We visited the
