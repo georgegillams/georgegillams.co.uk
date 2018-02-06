@@ -9,6 +9,7 @@ import Section from '../../components/Section';
 import Comments from '../../components/Comments';
 import santanderPasswordEntry from './images/santanderPasswordEntry.png';
 import santanderHollywood from './images/santanderHollywood.png';
+import PageSwitchScroller from '../../components/PageSwitchScroller';
 
 import STYLES from '../pages.scss';
 
@@ -29,6 +30,7 @@ const UkBankSecurity = props => {
 
   return (
     <main className={classNameFinal.join(' ')} {...rest}>
+      <PageSwitchScroller />
       <Section name="UK Bank Security">
         When logging into a number of UK bank websites, they ask for particular
         characters from a password or memorable word. Some banks implement this

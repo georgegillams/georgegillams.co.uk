@@ -9,6 +9,7 @@ import SubSection from './../../components/SubSection';
 import Comments from '../../components/Comments';
 import LicenseInfo from '../../components/LicenseInfo';
 import philMunich from './images/munichPhil.jpg';
+import PageSwitchScroller from '../../components/PageSwitchScroller';
 
 import STYLES from '../pages.scss';
 
@@ -20,7 +21,7 @@ const FadingLazyLoadedImage = withLoadingBehavior(
   withLazyLoading(BpkImage, documentIfExists),
 );
 
-const Munich = (props) => {
+const Munich = props => {
   const { className, ...rest } = props;
   const classNameFinal = [getClassName('pages__page')];
   if (className) {
@@ -29,6 +30,7 @@ const Munich = (props) => {
 
   return (
     <main className={classNameFinal.join(' ')} {...rest}>
+      <PageSwitchScroller />
       <Section name="Munich ⛪️ Christmas 2017">
         Headed out to Munich just before Christmas to meet up with the family
         and drink Gluvein. Getting the gang together is always a lot of fun. We

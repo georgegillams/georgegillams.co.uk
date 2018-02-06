@@ -12,6 +12,7 @@ import ArticleDate from '../../components/ArticleDate';
 import LicenseInfo from '../../components/LicenseInfo';
 import Comments from '../../components/Comments';
 import GoogleAds from '../../components/GoogleAds';
+import PageSwitchScroller from '../../components/PageSwitchScroller';
 
 import STYLES from '../pages.scss';
 
@@ -32,6 +33,7 @@ const NetNeutrality = props => {
 
   return (
     <main className={classNameFinal.join(' ')} {...rest}>
+      <PageSwitchScroller />
       {/* <GoogleA ds /> */}
       <Section name="My Take on Net Neutrality">
         <ArticleDate date={DATE_WRITTEN} />
