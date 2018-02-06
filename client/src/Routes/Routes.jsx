@@ -17,8 +17,7 @@
  */
 
 import React from 'react';
-import { Route, IndexRoute, IndexRedirect, withRouter } from 'react-router';
-
+import { Route, BrowserRouter, Switch, Redirect } from 'react-router-dom';
 // import * as ROUTES from  './../constants/routes';
 // import redirects from  './../constants/redirect-routes';
 //
@@ -50,59 +49,50 @@ import ForOhFour from '../Pages/ForOhFour';
 
 // eslint-disable-next-line import/no-webpack-loader-syntax
 const Routes = (
-  <Route path="/" component={DefaultLayout}>
-    <IndexRoute component={withRouter(HomePage)} />
+  <BrowserRouter>
+    <DefaultLayout>
+      <Switch>
+        <Route exact path="/" component={HomePage} />
 
-    <Route path="/articles" component={null}>
-      <IndexRedirect to="/articles/list" />
-      <Route path="/articles/list" component={Articles} />
-      <Route path="/articles/net-neutrality" component={NetNeutrality} />
-      <Route path="/articles/vim" component={SwitchToVim} />
-      <Route path="/articles/uk-bank-security" component={UkBankSecurity} />
-    </Route>
+        <Route exact path="/articles" component={Articles} />
+        <Route path="/articles/net-neutrality" component={NetNeutrality} />
+        <Route path="/articles/vim" component={SwitchToVim} />
+        <Route path="/articles/uk-bank-security" component={UkBankSecurity} />
 
-    <Route path="/travel" component={null}>
-      <IndexRedirect to="/travel/list" />
-      <Route path="/travel/list" component={Travel} />
-      <Route path="/travel/iceland-2018" component={Iceland} />
-      <Route path="/travel/longleat-2017" component={Longleat} />
-      <Route path="/travel/munich-2017" component={Munich} />
-      <Route path="/travel/disneyland-2017" component={Disneyland} />
-      <Route path="/travel/serre-chevalier-2017" component={SerreChevalier} />
-    </Route>
+        <Route exact path="/travel" component={Travel} />
+        <Route path="/travel/longleat-2017" component={Longleat} />
+        <Route path="/travel/munich-2017" component={Munich} />
+        <Route path="/travel/iceland-2018" component={Iceland} />
+        <Route path="/travel/disneyland-2017" component={Disneyland} />
+        <Route path="/travel/serre-chevalier-2017" component={SerreChevalier} />
 
-    <Route path="/art" component={Art}>
-      {/* <IndexRedirect to={ROUTES.GETTING_STARTED} /> */}
-    </Route>
+        <Route exact path="/art" component={Art} />
+        <Route path="/photoshop" component={Art} />
 
-    <Route path="/site-map" component={SiteMap}>
-      {/* <IndexRedirect to={ROUTES.GETTING_STARTED} /> */}
-    </Route>
+        <Route exact path="/work" component={Work} />
+        <Route
+          path="/apps/password-character-extractor"
+          component={PasswordCharacterExtractor}
+        />
+        <Route path="/site-map" component={SiteMap} />
+        <Route path="/about" component={AboutMe} />
+        <Route path="/contact" component={Contact} />
+        <Route path="/admin" component={Admin} />
 
-    <Route path="/work" component={null}>
-      <IndexRedirect to="/work/portfolio" />
-      <Route path="/work/portfolio" component={Work} />
-      <Route path="/work/bpk-component-demo" component={BpkComponentDemo} />
-    </Route>
+        <Route
+          path="/net-neutrality"
+          render={() => <Redirect to="/articles/net-neutrality" />}
+        />
+        <Route
+          path="/articles/list"
+          render={() => <Redirect to="/articles" />}
+        />
+        <Route path="/travel/list" render={() => <Redirect to="/travel" />} />
 
-    <Route path="/apps" component={null}>
-      <IndexRedirect to="/apps/list" />
-      <Route
-        path="/apps/password-character-extractor"
-        component={PasswordCharacterExtractor}
-      />
-    </Route>
-
-    <Route path="/about" component={AboutMe} />
-    <Route path="/contact" component={Contact} />
-    <Route path="/admin" component={Admin} />
-
-    {/* <Route component={} /> */}
-
-    {/* {Object.keys(redirects).map(from => <Redirect key={from} from={from} to={redirects[from]} />)} */}
-
-    <Route path="*" component={ForOhFour} />
-  </Route>
+        <Route component={ForOhFour} />
+      </Switch>
+    </DefaultLayout>
+  </BrowserRouter>
 );
 
 export default Routes;
