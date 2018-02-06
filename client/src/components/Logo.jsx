@@ -1,12 +1,13 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import BpkText from 'bpk-component-text';
+import { NavLink } from 'react-router-dom';
 
 import STYLES from './logo.scss';
 
 const getClassName = className => STYLES[className] || 'UNKNOWN';
 
-const Logo = (props) => {
+const Logo = props => {
   const {
     noPadding,
     animated,
@@ -44,7 +45,7 @@ const Logo = (props) => {
 
   return (
     <div className={classNameFinal.join(' ')} {...rest}>
-      <a href="/">
+      <NavLink to="/">
         <BpkText textStyle="xxl" className={largeTextClassNameFinal.join(' ')}>
           {'<G/>'}
         </BpkText>
@@ -60,7 +61,7 @@ const Logo = (props) => {
             </BpkText>
           </div>
         )}
-      </a>
+      </NavLink>
     </div>
   );
 };
