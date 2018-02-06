@@ -1,12 +1,15 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { NavLink } from 'react-router-dom';
 
 import STYLES from './button.scss';
 
 const getClassName = className => STYLES[className] || 'UNKNOWN';
 
-const Button = (props) => {
+const Button = props => {
   const {
+    href,
+    hrefExternal,
     destructive,
     light,
     bouncy,
@@ -38,14 +41,26 @@ const Button = (props) => {
   }
   if (className) classNameFinal.push(className);
 
-  return (
+  const buttonComponent = (
     <button onClick={onClick} className={classNameFinal.join(' ')} {...rest}>
       {children}
     </button>
   );
+
+  if (href) {
+    if (hrefExternal) {
+      return <a href={href}>{buttonComponent}</a>;
+    } 
+      return <NavLink to={href}>{buttonComponent}</NavLink>;
+    
+  }
+
+  return buttonComponent;
 };
 
 Button.propTypes = {
+  href: PropTypes.string,
+  hrefExternal: PropTypes.bool,
   light: PropTypes.bool,
   bouncy: PropTypes.bool,
   destructive: PropTypes.bool,
@@ -55,6 +70,8 @@ Button.propTypes = {
 };
 
 Button.defaultProps = {
+  href: null,
+  hrefExternal: false,
   light: false,
   bouncy: false,
   destructive: false,

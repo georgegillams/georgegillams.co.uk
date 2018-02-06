@@ -74,11 +74,7 @@ const Work = props => {
             />
             <br />
             <br />
-            <Button
-              onClick={() =>
-                window.location.replace('/apps/password-character-extractor')
-              }
-            >
+            <Button href="/apps/password-character-extractor">
               Read more here →
             </Button>
           </SubSection>

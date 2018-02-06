@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import Button from './Button';
+import { NavLink } from 'react-router-dom';
 
 const NavigationItem = props => {
   const { name, linkUrl, className, ...rest } = props;
@@ -12,9 +13,9 @@ const NavigationItem = props => {
 
   return (
     <div className={outerClassNameFinal.join(' ')} {...rest}>
-      <a href={linkUrl}>
+      <NavLink to={linkUrl}>
         <Button bouncy>{name}</Button>
-      </a>
+      </NavLink>
     </div>
   );
 };
