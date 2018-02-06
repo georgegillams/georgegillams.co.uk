@@ -8,6 +8,7 @@ import Section from './../../components/Section';
 import SubSection from './../../components/SubSection';
 import Comments from '../../components/Comments';
 import LicenseInfo from '../../components/LicenseInfo';
+import PageSwitchScroller from '../../components/PageSwitchScroller';
 import iceland1 from './images/iceland1.jpg';
 import iceland2 from './images/iceland2.jpg';
 import iceland3 from './images/iceland3.jpg';
@@ -22,7 +23,7 @@ const FadingLazyLoadedImage = withLoadingBehavior(
   withLazyLoading(BpkImage, documentIfExists),
 );
 
-const Iceland = (props) => {
+const Iceland = props => {
   const { className, ...rest } = props;
   const classNameFinal = [getClassName('pages__page')];
   if (className) {
@@ -31,6 +32,7 @@ const Iceland = (props) => {
 
   return (
     <main className={classNameFinal.join(' ')} {...rest}>
+      <PageSwitchScroller />
       <Section name="Iceland  🛥 January 2018">
         In January we kicked off the year in style by heading to Iceland for 6
         nights. We booked the whole package through Iceland Air, which made it

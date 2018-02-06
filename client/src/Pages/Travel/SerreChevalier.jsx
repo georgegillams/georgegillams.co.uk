@@ -8,6 +8,7 @@ import Section from './../../components/Section';
 import SubSection from './../../components/SubSection';
 import LicenseInfo from '../../components/LicenseInfo';
 import Comments from '../../components/Comments';
+import PageSwitchScroller from '../../components/PageSwitchScroller';
 import serreChevalier from './images/serreChevalier.jpg';
 
 import STYLES from '../pages.scss';
@@ -20,7 +21,7 @@ const FadingLazyLoadedImage = withLoadingBehavior(
   withLazyLoading(BpkImage, documentIfExists),
 );
 
-const SerreChevalier = (props) => {
+const SerreChevalier = props => {
   const { className, ...rest } = props;
   const classNameFinal = [getClassName('pages__page')];
   if (className) {
@@ -29,6 +30,7 @@ const SerreChevalier = (props) => {
 
   return (
     <main className={classNameFinal.join(' ')} {...rest}>
+      <PageSwitchScroller />
       <Section name="Serre Chevalier ⛷ March 2017">
         <br />
         <br />

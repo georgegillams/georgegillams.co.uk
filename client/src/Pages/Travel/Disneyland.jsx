@@ -8,6 +8,7 @@ import Section from './../../components/Section';
 import SubSection from './../../components/SubSection';
 import Comments from '../../components/Comments';
 import LicenseInfo from '../../components/LicenseInfo';
+import PageSwitchScroller from '../../components/PageSwitchScroller';
 import mickeyMouse from './images/mickeyMouse.jpg';
 
 import STYLES from '../pages.scss';
@@ -20,7 +21,7 @@ const FadingLazyLoadedImage = withLoadingBehavior(
   withLazyLoading(BpkImage, documentIfExists),
 );
 
-const Disneyland = (props) => {
+const Disneyland = props => {
   const { className, ...rest } = props;
   const classNameFinal = [getClassName('pages__page')];
   if (className) {
@@ -29,6 +30,7 @@ const Disneyland = (props) => {
 
   return (
     <main className={classNameFinal.join(' ')} {...rest}>
+      <PageSwitchScroller />
       <Section name="Disneyland 🏰️ Summer 2017">
         We went to Disneyland for the first time in the summer to experience the
         magic of the place. The attention to detail in the park was phenomenal,
