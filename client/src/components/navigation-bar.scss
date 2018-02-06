@@ -5,9 +5,9 @@
       &__container {
     width: 100%;
 
-    // @include bounceIn(
-    //   $delay: 1s
-    // );
+    @include bounceIn(
+      $delay: 1s
+    );
   }
 
       &__bar {
