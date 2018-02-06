@@ -1,6 +1,7 @@
 import PropTypes from 'prop-types';
 import React from 'react';
 import BpkSmallNewWindowIcon from 'bpk-component-icon/sm/new-window';
+import { NavLink } from 'react-router-dom';
 
 import STYLES from './typography.scss';
 
@@ -32,27 +33,25 @@ const TextLink = props => {
     classNameFinal.push(className);
   }
 
-  let externalProps = {};
-  if (external) {
-    externalProps = { rel: 'noopener noreferrer', target: '_blank' };
-  }
-
-  return (
+  return external ? (
     <a
       href={href}
-      {...externalProps}
+      rel="noopener noreferrer"
+      target="_blank"
       className={classNameFinal.join(' ')}
       {...rest}
     >
       {children}
-      {external && (
-        <div className={getClassName('typography__icon')}>
-          <BpkSmallNewWindowIcon
-            className={getClassName('typography__icon--inner')}
-          />
-        </div>
-      )}
+      <div className={getClassName('typography__icon')}>
+        <BpkSmallNewWindowIcon
+          className={getClassName('typography__icon--inner')}
+        />
+      </div>
     </a>
+  ) : (
+    <NavLink to={href} className={classNameFinal.join(' ')} {...rest}>
+      {children}
+    </NavLink>
   );
 };
 
