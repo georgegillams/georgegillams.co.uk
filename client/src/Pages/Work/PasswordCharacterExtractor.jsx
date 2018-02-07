@@ -127,9 +127,7 @@ const passwordCharacterExtractor = props => {
         />
         <br />
         <br />
-        <Button
-          onClick={() => window.location.replace('/articles/uk-bank-security')}
-        >
+        <Button href="/articles/uk-bank-security">
           More information on UK bank security →
         </Button>
       </Section>

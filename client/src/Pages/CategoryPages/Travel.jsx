@@ -55,7 +55,6 @@ const Travel = () => (
       linkUrl="/travel/serre-chevalier-2017"
       title="Serre Chevalier 2017"
     />
-    <LicenseInfo centered />
   </div>
 );
 
