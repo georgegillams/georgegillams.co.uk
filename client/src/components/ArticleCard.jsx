@@ -1,13 +1,21 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import BpkCard from 'bpk-component-card';
 import { NavLink } from 'react-router-dom';
+import BpkImage, {
+  withLazyLoading,
+  withLoadingBehavior,
+} from 'bpk-component-image';
 import Section from './Section';
 import SubSection from './SubSection';
 
 import STYLES from './article-card.scss';
 
 const getClassName = className => STYLES[className] || 'UNKNOWN';
+
+const documentIfExists = typeof window !== 'undefined' ? document : null;
+const FadingLazyLoadedImage = withLoadingBehavior(
+  withLazyLoading(BpkImage, documentIfExists),
+);
 
 class ArticleCard extends Component {
   constructor(props) {
@@ -58,13 +66,19 @@ class ArticleCard extends Component {
               className={getClassName('article-card__title')}
             />
             <div
-              className={getClassName('article-card__image')}
+              className={getClassName('article-card__image-container')}
               style={{
                 border: imageBorder ? `solid ${imageBorder} 0.1rem` : 'none',
-                backgroundColor: light ? '#1E1E1E' : 'none',
-                backgroundImage: `url(${imageSrc})`,
               }}
-            />
+            >
+              <FadingLazyLoadedImage
+                className={getClassName('article-card__image')}
+                altText="Card image"
+                width={987}
+                height={575}
+                src={imageSrc}
+              />
+            </div>
           </div>
         </div>
       </NavLink>

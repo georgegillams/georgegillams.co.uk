@@ -2,7 +2,7 @@ import React from 'react';
 import ArticleCard from '../../components/ArticleCard';
 import PageSwitchScroller from '../../components/PageSwitchScroller';
 import netNeutrality from '../Articles/images/netNeutralitySm.jpg';
-import vim from '../Articles/images/vim.jpg';
+import vim from '../Articles/images/vimSm.jpg';
 
 import STYLES from '../pages.scss';
 
