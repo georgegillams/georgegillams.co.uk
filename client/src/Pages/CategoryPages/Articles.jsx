@@ -1,8 +1,7 @@
 import React from 'react';
-import Card from '../../components/Card';
+import ArticleCard from '../../components/ArticleCard';
 import PageSwitchScroller from '../../components/PageSwitchScroller';
-import iceland from '../Travel/images/iceland2.jpg';
-import netNeutrality from '../Articles/images/netNeutrality.jpg';
+import netNeutrality from '../Articles/images/netNeutralitySm.jpg';
 import vim from '../Articles/images/vim.jpg';
 
 import STYLES from '../pages.scss';
@@ -10,15 +9,21 @@ import STYLES from '../pages.scss';
 const getClassName = className => STYLES[className] || 'UNKNOWN';
 
 const Articles = () => (
-  <div style={{ width: '100%' }}>
+  <div>
     <PageSwitchScroller />
-    <Card
+    <ArticleCard
+      imageBorder="red"
+      day={8}
+      month="Dec"
       className={getClassName('pages__card')}
       imageSrc={netNeutrality}
       linkUrl="/articles/net-neutrality"
       title="My Take on Net Neutrality"
     />
-    <Card
+    <ArticleCard
+      day={23}
+      imageBorder="lightgray"
+      month="Dec"
       className={getClassName('pages__card')}
       imageSrc={vim}
       linkUrl="/articles/vim"

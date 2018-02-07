@@ -1,7 +1,7 @@
 import React from 'react';
-import Card from '../../components/Card';
 import LicenseInfo from '../../components/LicenseInfo';
 import PageSwitchScroller from '../../components/PageSwitchScroller';
+import ArticleCard from '../../components/ArticleCard';
 import iceland from '../Travel/images/iceland2.jpg';
 import longleat from '../Travel/images/longleatLight.jpg';
 import munich from '../Travel/images/munich.jpg';
@@ -13,39 +13,44 @@ import STYLES from '../pages.scss';
 const getClassName = className => STYLES[className] || 'UNKNOWN';
 
 const Travel = () => (
-  <div style={{ width: '100%' }}>
+  <div>
     <PageSwitchScroller />
-    <Card
+    <ArticleCard
+      day="01-07"
+      month="Jan"
       className={getClassName('pages__card')}
-      light
       imageSrc={iceland}
       linkUrl="/travel/iceland-2018"
       title="Iceland 2018"
     />
-    <Card
+    <ArticleCard
+      day={27}
+      month="Dec"
       className={getClassName('pages__card')}
-      light
       imageSrc={longleat}
       linkUrl="/travel/longleat-2017"
       title="Longleat 2017"
     />
-    <Card
+    <ArticleCard
+      day="15-20"
+      month="Dec"
       className={getClassName('pages__card')}
-      light
       imageSrc={munich}
       linkUrl="/travel/munich-2017"
       title="Munich 2017"
     />
-    <Card
+    <ArticleCard
+      day="19-23"
+      month="Jun"
       className={getClassName('pages__card')}
-      light
       imageSrc={mickeyMouse}
       linkUrl="/travel/disneyland-2017"
       title="Disneyland 2017"
     />
-    <Card
+    <ArticleCard
+      day="26-02"
+      month="Mar"
       className={getClassName('pages__card')}
-      light
       imageSrc={serreChevalier}
       linkUrl="/travel/serre-chevalier-2017"
       title="Serre Chevalier 2017"
