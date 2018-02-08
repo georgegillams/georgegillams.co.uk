@@ -63,7 +63,7 @@ const UkBankSecurity = props => {
         <FadingLazyLoadedImage
           className={getClassName('pages__image')}
           altText="Santander's detrimental password entry form"
-          style={{ width: '30rem' }}
+          style={{ maxWidth: '30rem' }}
           width={1228}
           height={954}
           src={santanderPasswordEntry}
@@ -89,7 +89,7 @@ const UkBankSecurity = props => {
         <FadingLazyLoadedImage
           className={getClassName('pages__image')}
           altText="Santander's Hollywood security"
-          style={{ width: '30rem' }}
+          style={{ maxWidth: '30rem' }}
           width={2378}
           height={811}
           src={santanderHollywood}
