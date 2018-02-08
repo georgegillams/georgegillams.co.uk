@@ -51,7 +51,7 @@ const passwordCharacterExtractor = props => {
           <BpkImage
             className={getClassName('apps__image')}
             altText="Password Character Extraction Use"
-            style={{ width: '55rem' }}
+            style={{ maxWidth: '55rem' }}
             width={2224}
             height={514}
             src={passwordCharacterExtractorUse}

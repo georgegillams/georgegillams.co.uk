@@ -8,6 +8,7 @@ import Section from '../../components/Section';
 import TextLink from '../../components/TextLink';
 import Button from '../../components/Button';
 import SubSection from '../../components/SubSection';
+import PageSwitchScroller from '../../components/PageSwitchScroller';
 import passwordCharacterExtractorUse from './images/passwordCharacterExtractorUse.png';
 import greasemonkeyEcsBefore from './images/greasemonkey_before.png';
 import greasemonkeyEcsAfter from './images/greasemonkey_after.png';
@@ -29,6 +30,7 @@ const Work = props => {
 
   return (
     <main className={classNameFinal.join(' ')} {...rest}>
+      <PageSwitchScroller />
       <Section name="My Work">
         <SubSection name="Where it all started">
           I started my Software Engineering career at{' '}
@@ -67,7 +69,7 @@ const Work = props => {
             <FadingLazyLoadedImage
               className={getClassName('apps__image')}
               altText="Password Character Extraction Use"
-              style={{ width: '45rem' }}
+              style={{ maxWidth: '45rem' }}
               width={2224}
               height={514}
               src={passwordCharacterExtractorUse}
@@ -157,7 +159,7 @@ const Work = props => {
             <FadingLazyLoadedImage
               className={getClassName('apps__image')}
               altText="Backpack component"
-              style={{ width: '24rem' }}
+              style={{ maxWidth: '24rem' }}
               width={2910}
               height={1920}
               src={greasemonkeyEcsBefore}
@@ -165,7 +167,7 @@ const Work = props => {
             <FadingLazyLoadedImage
               className={getClassName('apps__image')}
               altText="Backpack component"
-              style={{ width: '24rem' }}
+              style={{ maxWidth: '24rem' }}
               width={2952}
               height={1920}
               src={greasemonkeyEcsAfter}
