@@ -1,18 +1,14 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import SubSection from './SubSection';
 import TechSpecs from './TechSpecs';
 import GetSocial from './GetSocial';
 import Logo from './Logo';
-import blackPaper from '../images/blackPaper.jpg';
 
 import STYLES from './footer.scss';
 
 const getClassName = className => STYLES[className] || 'UNKNOWN';
 
 const Footer = props => {
-  const currentYear = new Date().getFullYear();
-
   const { className, ...rest } = props;
   const outerClassNameFinal = [getClassName('footer__container')];
   if (className) {
@@ -20,7 +16,7 @@ const Footer = props => {
   }
 
   return (
-    <footer className={outerClassNameFinal.join(' ')} {...rest}>
+    <footer id="footer" className={outerClassNameFinal.join(' ')} {...rest}>
       <GetSocial
         light
         alwaysCentered
