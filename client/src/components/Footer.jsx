@@ -20,7 +20,7 @@ const Footer = props => {
   }
 
   return (
-    <footer className={outerClassNameFinal.join(' ')} {...rest}>
+    <footer id="footer" className={outerClassNameFinal.join(' ')} {...rest}>
       <GetSocial
         light
         alwaysCentered
