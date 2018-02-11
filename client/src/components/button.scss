@@ -68,6 +68,18 @@
       }
     }
 
+    &--disabled {
+      background-color: lightgray;
+      background-image: none;
+
+      &:focus,
+      &:active,
+      &:hover {
+        background-color: lightgray;
+        background-image: none;
+      }
+    }
+
     &--dark-text {
       color: #3c4451;
     }
