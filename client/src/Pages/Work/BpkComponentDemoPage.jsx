@@ -7,10 +7,10 @@ import BpkImage, {
 import BpkBadge from 'bpk-component-badge';
 import GitHubForkRibbon from 'react-github-fork-ribbon';
 import Section from '../../components/Section';
-import TextLink from '../../components/TextLink';
+// import BpkDemo from 'bpk-component-demo';
+import BpkDemo from '../../components/bpk-component-demo/index';
 import Button from '../../components/Button';
 import SubSection from '../../components/SubSection';
-import passwordCharacterExtractorPinEntry from './images/passwordCharacterExtractorPinEntry.gif';
 import passwordCharacterExtractorUseGif from './images/passwordCharacterExtractorUse.gif';
 
 import STYLES from './apps.scss';
@@ -20,6 +20,8 @@ const documentIfExists = typeof window !== 'undefined' ? document : null;
 const FadingLazyLoadedImage = withLoadingBehavior(
   withLazyLoading(BpkImage, documentIfExists),
 );
+
+const ButtonDemo = BpkDemo(Button, 'Button', 'package-name-goes-here', {});
 
 const BpkComponentDemoPage = props => {
   const { className, ...rest } = props;
@@ -94,11 +96,11 @@ const BpkComponentDemoPage = props => {
             <br />
             <FadingLazyLoadedImage
               className={getClassName('apps__image')}
-              altText="Password Character Extraction Pin Entry"
+              altText="Password Character Extraction Tool"
               style={{ width: '100%' }}
-              width={512}
-              height={233}
-              src={passwordCharacterExtractorPinEntry}
+              width={1154}
+              height={422}
+              src={passwordCharacterExtractorUseGif}
             />
           </SubSection>
           <SubSection
@@ -113,13 +115,12 @@ const BpkComponentDemoPage = props => {
             So everyone wins.
           </SubSection>
         </div>
-        <FadingLazyLoadedImage
-          className={getClassName('apps__image')}
-          altText="Password Character Extraction Tool"
-          style={{ width: '100%' }}
-          width={1154}
-          height={422}
-          src={passwordCharacterExtractorUseGif}
+        <ButtonDemo
+          compact={false}
+          customPropValues={{
+            children: 'Hello!',
+            bouncy: true,
+          }}
         />
         <br />
         <br />
