@@ -74,6 +74,7 @@ const Routes = (
           path="/apps/password-character-extractor"
           component={PasswordCharacterExtractor}
         />
+        {/* <Route path="/work/bpk-component-demo" component={BpkComponentDemo} /> */}
         <Route path="/site-map" component={SiteMap} />
         <Route path="/about" component={AboutMe} />
         <Route path="/contact" component={Contact} />

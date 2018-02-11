@@ -11,6 +11,7 @@ const Button = props => {
     href,
     hrefExternal,
     destructive,
+    disabled,
     light,
     bouncy,
     onClick,
@@ -31,6 +32,9 @@ const Button = props => {
     if (destructive) {
       classNameFinal.push(getClassName('button__outer--bouncy--destructive'));
     }
+    if (disabled) {
+      classNameFinal.push(getClassName('button__outer--disabled'));
+    }
   } else {
     classNameFinal.push(getClassName('button__outer--no-bouncy'));
     if (destructive) {
@@ -38,11 +42,20 @@ const Button = props => {
         getClassName('button__outer--no-bouncy--destructive'),
       );
     }
+    if (disabled) {
+      classNameFinal.push(getClassName('button__outer--disabled'));
+    }
   }
+
   if (className) classNameFinal.push(className);
 
   const buttonComponent = (
-    <button onClick={onClick} className={classNameFinal.join(' ')} {...rest}>
+    <button
+      disabled={disabled}
+      onClick={disabled ? null : onClick}
+      className={classNameFinal.join(' ')}
+      {...rest}
+    >
       {children}
     </button>
   );
@@ -50,17 +63,17 @@ const Button = props => {
   if (href) {
     if (hrefExternal) {
       return <a href={href}>{buttonComponent}</a>;
-    } 
-      return <NavLink to={href}>{buttonComponent}</NavLink>;
-    
+    }
+    return <NavLink to={href}>{buttonComponent}</NavLink>;
   }
 
   return buttonComponent;
 };
 
 Button.propTypes = {
-  href: PropTypes.string,
+  href: PropTypes.bool,
   hrefExternal: PropTypes.bool,
+  disabled: PropTypes.bool,
   light: PropTypes.bool,
   bouncy: PropTypes.bool,
   destructive: PropTypes.bool,
@@ -73,6 +86,7 @@ Button.defaultProps = {
   href: null,
   hrefExternal: false,
   light: false,
+  disabled: false,
   bouncy: false,
   destructive: false,
   onClick: null,
