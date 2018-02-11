@@ -2,7 +2,7 @@
 @import '../../bower_components/animatewithsass/animate.scss';
 
 .navigation-bar {
-      &__container {
+  &__container {
     width: 100%;
 
     @include bounceIn(
@@ -10,7 +10,7 @@
     );
   }
 
-      &__bar {
+  &__bar {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -22,26 +22,28 @@
       flex-direction: column;
     }
 
-     &--open {
+    &--open {
       display: flex;
     }
   }
 
-      &__animated-container {
+  &__animated-container {
     height: auto;
     transition: all 1s;
     overflow: hidden;
 
     @include bpk-breakpoint-tablet {
       height: 0;
+      opacity: 0;
     }
 
-     &--open {
+    &--open {
       height: 24rem;
+      opacity: 1;
     }
   }
 
-      &__burger-button {
+  &__burger-button {
     display: none;
     height: 0;
 
@@ -51,11 +53,11 @@
       margin: 1rem;
     }
 
-     &--open {
+    &--open {
     }
   }
 
-      &__nav-item {
+  &__nav-item {
     padding: 0 1rem;
 
     @include bpk-breakpoint-tablet {

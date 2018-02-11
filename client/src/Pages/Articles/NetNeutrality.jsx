@@ -13,6 +13,7 @@ import LicenseInfo from '../../components/LicenseInfo';
 import Comments from '../../components/Comments';
 import GoogleAds from '../../components/GoogleAds';
 import PageSwitchScroller from '../../components/PageSwitchScroller';
+import ScrollIndicator from '../../components/ScrollIndicator';
 
 import STYLES from '../pages.scss';
 
@@ -33,6 +34,8 @@ const NetNeutrality = props => {
 
   return (
     <main className={classNameFinal.join(' ')} {...rest}>
+      <ScrollIndicator />
+      <br />
       <PageSwitchScroller />
       {/* <GoogleA ds /> */}
       <Section name="My Take on Net Neutrality">
