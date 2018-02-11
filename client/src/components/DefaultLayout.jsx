@@ -3,7 +3,6 @@ import PropTypes from 'prop-types';
 import 'whatwg-fetch';
 
 import RedirectNotice from './RedirectNotice';
-import ScrollIndicator from './ScrollIndicator';
 import NavigationBar from './NavigationBar';
 import Footer from './Footer';
 import PageContentContainer from './PageContentContainer';
@@ -32,8 +31,6 @@ class DefaultLayout extends React.Component {
 
     return (
       <div className={getClassName('default-layout__site')}>
-        <ScrollIndicator />
-        <br />
         <NavigationBar />
         <div className={getClassName('default-layout__main')}>
           <PageContentContainer>{children}</PageContentContainer>

@@ -6,6 +6,7 @@ import ArticleDate from '../../components/ArticleDate';
 import Comments from '../../components/Comments';
 import TextLink from '../../components/TextLink';
 import PageSwitchScroller from '../../components/PageSwitchScroller';
+import ScrollIndicator from '../../components/ScrollIndicator';
 
 const DATE_WRITTEN = new Date(2017, 11, 23, 14, 3, 0);
 const PAGE_ID = 729471;
@@ -19,6 +20,8 @@ const SwitchToVim = props => {
 
   return (
     <main className={classNameFinal.join(' ')} {...rest}>
+      <ScrollIndicator />
+      <br />
       <PageSwitchScroller />
       <Section name="Switching to Vim">
         <ArticleDate date={DATE_WRITTEN} />

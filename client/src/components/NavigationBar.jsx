@@ -21,6 +21,10 @@ class NavigationBar extends Component {
     this.setState({ isOpen: !this.state.isOpen });
   };
 
+  close = () => {
+    this.setState({ isOpen: false });
+  };
+
   render() {
     const { className, ...rest } = this.props;
     const outerClassNameFinal = [getClassName('navigation-bar__container')];
@@ -49,7 +53,11 @@ class NavigationBar extends Component {
             )}
           </Button>
         </div>
-        <div className={animatedContainerClassNameFinal.join(' ')} {...rest}>
+        <div
+          className={animatedContainerClassNameFinal.join(' ')}
+          {...rest}
+          onClick={this.close}
+        >
           <header className={navBarClassNameFinal.join(' ')} {...rest}>
             <NavigationItem
               className={getClassName('navigation-bar__nav-item')}

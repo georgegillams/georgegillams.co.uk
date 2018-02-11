@@ -9,6 +9,7 @@ import TextLink from '../../components/TextLink';
 import Button from '../../components/Button';
 import SubSection from '../../components/SubSection';
 import PageSwitchScroller from '../../components/PageSwitchScroller';
+import ScrollIndicator from '../../components/ScrollIndicator';
 import passwordCharacterExtractorUse from './images/passwordCharacterExtractorUse.png';
 import greasemonkeyEcsBefore from './images/greasemonkey_before.png';
 import greasemonkeyEcsAfter from './images/greasemonkey_after.png';
@@ -30,6 +31,8 @@ const Work = props => {
 
   return (
     <main className={classNameFinal.join(' ')} {...rest}>
+      <ScrollIndicator />
+      <br />
       <PageSwitchScroller />
       <Section name="My Work">
         <SubSection name="Where it all started">

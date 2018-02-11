@@ -39,7 +39,7 @@ class ScrollIndicator extends Component {
       html.offsetHeight,
     );
 
-    const value = document.documentElement.scrollTop;
+    const value = window.pageYOffset;
     const shouldShow = value > 90;
     this.setState({
       percentage: shouldShow

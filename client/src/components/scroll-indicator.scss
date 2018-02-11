@@ -3,10 +3,12 @@
 .scroll-indicator {
   &__outer {
     position: fixed;
+    top: 0;
+    left: 0;
     z-index: 100000;
     width: 100vw;
     height: 0.5rem;
-    transition: all 1s;
+    transition: all 0.4s;
     background-color: white;
 
     &--hidden {
@@ -16,7 +18,7 @@
 
   &__bar {
     height: 100%;
-    transition: all 1s;
+    transition: all 0.4s;
     background-color: #44aeff;
   }
 }
