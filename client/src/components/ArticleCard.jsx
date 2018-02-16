@@ -29,6 +29,7 @@ class ArticleCard extends Component {
       day,
       month,
       imageBorder,
+      fillImageSrc,
       light,
       linkUrl,
       imageSrc,
@@ -54,30 +55,51 @@ class ArticleCard extends Component {
           onMouseLeave={() => this.setState({ hovering: false })}
         >
           <div className={bannerClassNames.join(' ')} />
-          <div className={getClassName('article-card__container')}>
-            <div className={getClassName('article-card__date')}>
-              <SubSection noAnchor noPadding link light={light} name={month} />
-              <SubSection noAnchor noPadding link light={light} name={day} />
-            </div>
-            <Section
-              light={light}
-              name={title}
-              link
-              className={getClassName('article-card__title')}
-            />
+          <div className={getClassName('article-card__content-container')}>
             <div
-              className={getClassName('article-card__image-container')}
-              style={{
-                border: imageBorder ? `solid ${imageBorder} 0.1rem` : 'none',
-              }}
-            >
-              <FadingLazyLoadedImage
-                className={getClassName('article-card__image')}
-                altText="Card image"
-                width={987}
-                height={575}
-                src={imageSrc}
+              className={getClassName('article-card__background')}
+              style={{ backgroundImage: `url(${fillImageSrc})` }}
+            />
+            <div className={getClassName('article-card__inner-container')}>
+              <div className={getClassName('article-card__date')}>
+                <SubSection
+                  hover={this.state.hovering}
+                  noAnchor
+                  noPadding
+                  link
+                  light={light}
+                  name={month}
+                />
+                <SubSection
+                  hover={this.state.hovering}
+                  noAnchor
+                  noPadding
+                  link
+                  light={light}
+                  name={day}
+                />
+              </div>
+              <Section
+                hover={this.state.hovering}
+                light={light}
+                name={title}
+                link
+                className={getClassName('article-card__title')}
               />
+              <div
+                className={getClassName('article-card__image-container')}
+                style={{
+                  border: imageBorder ? `solid ${imageBorder} 0.1rem` : 'none',
+                }}
+              >
+                <FadingLazyLoadedImage
+                  className={getClassName('article-card__image')}
+                  altText="Card image"
+                  width={987}
+                  height={575}
+                  src={imageSrc}
+                />
+              </div>
             </div>
           </div>
         </div>
@@ -89,6 +111,7 @@ class ArticleCard extends Component {
 ArticleCard.propTypes = {
   light: PropTypes.bool,
   imageBorder: PropTypes.bool,
+  fillImageSrc: PropTypes.node,
   imageSrc: PropTypes.node,
   linkUrl: PropTypes.string,
   title: PropTypes.string,
@@ -99,6 +122,7 @@ ArticleCard.defaultProps = {
   light: false,
   imageBorder: null,
   linkUrl: null,
+  fillImageSrc: null,
   imageSrc: null,
   title: null,
   className: null,

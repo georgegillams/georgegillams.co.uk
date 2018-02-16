@@ -15,6 +15,7 @@ const SubSection = props => {
     name,
     noAnchor,
     className,
+    hover,
     noPadding,
     textClassName,
     children,
@@ -32,6 +33,9 @@ const SubSection = props => {
   if (light) {
     classNameFinal.push(getClassName('typography--light'));
     textClassNameFinal.push(getClassName('typography--light'));
+  }
+  if (hover) {
+    textClassNameFinal.push(getClassName('typography--hovering'));
   }
   if (link) {
     classNameFinal.push(getClassName('typography__link'));
@@ -83,6 +87,7 @@ const SubSection = props => {
 };
 
 SubSection.propTypes = {
+  hover: PropTypes.bool,
   link: PropTypes.bool,
   fancy: PropTypes.bool,
   light: PropTypes.bool,
@@ -96,6 +101,7 @@ SubSection.propTypes = {
 };
 
 SubSection.defaultProps = {
+  hover: false,
   link: false,
   fancy: false,
   noAnchor: false,
