@@ -92,4 +92,14 @@
       justify-content: space-around;
     }
   }
+
+  &__nn-background-image {
+    background-repeat: no-repeat;
+    background-position: 19rem 2.1rem !important;
+    background-size: 16rem !important;
+
+    @include bpk-breakpoint-tablet {
+      background-position: 7rem 6.1rem !important;
+    }
+  }
 }

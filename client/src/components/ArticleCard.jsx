@@ -35,6 +35,8 @@ class ArticleCard extends Component {
       imageSrc,
       title,
       className,
+      backgroundImageClassName,
+      imageClassName,
       ...rest
     } = this.props;
 
@@ -46,6 +48,18 @@ class ArticleCard extends Component {
       bannerClassNames.push(getClassName('article-card__banner--hovered'));
     }
 
+    const imageClassNames = [getClassName('article-card__image-container')];
+    if (imageClassName) {
+      imageClassNames.push(imageClassName);
+    }
+
+    const backgroundImageClassNames = [
+      getClassName('article-card__background'),
+    ];
+    if (backgroundImageClassName) {
+      backgroundImageClassNames.push(backgroundImageClassName);
+    }
+
     return (
       <NavLink to={linkUrl}>
         <div
@@ -54,10 +68,9 @@ class ArticleCard extends Component {
           onMouseEnter={() => this.setState({ hovering: true })}
           onMouseLeave={() => this.setState({ hovering: false })}
         >
-          <div className={bannerClassNames.join(' ')} />
           <div className={getClassName('article-card__content-container')}>
             <div
-              className={getClassName('article-card__background')}
+              className={backgroundImageClassNames.join(' ')}
               style={{ backgroundImage: `url(${fillImageSrc})` }}
             />
             <div className={getClassName('article-card__inner-container')}>
@@ -87,7 +100,7 @@ class ArticleCard extends Component {
                 className={getClassName('article-card__title')}
               />
               <div
-                className={getClassName('article-card__image-container')}
+                className={imageClassNames.join(' ')}
                 style={{
                   border: imageBorder ? `solid ${imageBorder} 0.1rem` : 'none',
                 }}
@@ -101,6 +114,7 @@ class ArticleCard extends Component {
                 />
               </div>
             </div>
+            <div className={bannerClassNames.join(' ')} />
           </div>
         </div>
       </NavLink>
