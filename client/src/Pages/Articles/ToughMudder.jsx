@@ -7,6 +7,7 @@ import Comments from '../../components/Comments';
 import TextLink from '../../components/TextLink';
 import Quote from '../../components/Quote';
 import PageSwitchScroller from '../../components/PageSwitchScroller';
+import ScrollIndicator from '../../components/ScrollIndicator';
 
 const DATE_WRITTEN = new Date(2018, 2, 4, 17, 16, 0);
 const PAGE_ID = 991948;
@@ -20,6 +21,8 @@ const ToughMudder = props => {
 
   return (
     <main className={classNameFinal.join(' ')} {...rest}>
+      <ScrollIndicator />
+      <br />
       <PageSwitchScroller />
       <Section name="Running 5 Tough Mudders">
         <ArticleDate date={DATE_WRITTEN} />

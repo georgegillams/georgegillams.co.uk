@@ -7,6 +7,7 @@ import vim from '../Articles/images/vim.jpg';
 import vimSm from '../Articles/images/vimSm.png';
 import toughMudder from '../Articles/images/toughMudder.jpg';
 import toughMudderSm from '../Articles/images/toughMudderSm.jpg';
+import rustSm from '../Articles/images/rustSm.jpg';
 
 import STYLES from '../pages.scss';
 
@@ -16,6 +17,16 @@ const Articles = () => (
   <div>
     <PageSwitchScroller />
     <ArticleCard
+      day={null}
+      month={null}
+      className={getClassName('pages__card')}
+      fillImageSrc={null}
+      imageSrc={rustSm}
+      linkUrl="/articles/week-of-rust"
+      title="My week of Rust"
+    />
+    <ArticleCard
+      light
       imageBorder="darkorange"
       day={null}
       month={null}
