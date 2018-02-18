@@ -33,6 +33,7 @@ import PasswordCharacterExtractor from '../Pages/Work/PasswordCharacterExtractor
 import BpkComponentDemo from '../Pages/Work/BpkComponentDemoPage';
 import Art from '../Pages/Art/Art';
 import SiteMap from '../Pages/SiteMap';
+import ToughMudder from '../Pages/Articles/ToughMudder';
 import SwitchToVim from '../Pages/Articles/SwitchToVim';
 import UkBankSecurity from '../Pages/Articles/UkBankSecurity';
 import NetNeutrality from '../Pages/Articles/NetNeutrality';
@@ -56,6 +57,7 @@ const Routes = (
         <Route exact path="/" component={HomePage} />
 
         <Route exact path="/articles" component={Articles} />
+        <Route path="/articles/tough-mudder" component={ToughMudder} />
         <Route path="/articles/net-neutrality" component={NetNeutrality} />
         <Route path="/articles/vim" component={SwitchToVim} />
         <Route path="/articles/uk-bank-security" component={UkBankSecurity} />
