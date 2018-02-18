@@ -64,10 +64,12 @@ const AboutMe = props => {
         with her and Tigger the cat.
         <br />
         <br />
-        <PhotoGallery
-          className={getClassName('pages__photo-gallery')}
-          images={[georgeAndCharlie2, georgeAndCharlie3, tiggy, toughMudder]}
-        />
+        <div className={getClassName('pages__photo-gallery-container')}>
+          <PhotoGallery
+            className={getClassName('pages__photo-gallery')}
+            images={[georgeAndCharlie2, georgeAndCharlie3, tiggy, toughMudder]}
+          />
+        </div>
         <br />
         <br />
         This site is built in React and hosted on Heroku where I have a Redis

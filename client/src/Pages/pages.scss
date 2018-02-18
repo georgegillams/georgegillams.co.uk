@@ -15,14 +15,21 @@
   &__photo-gallery {
     width: 70vw;
     max-width: 70rem;
-    margin-left: calc(-35vw + 50%);
     overflow: hidden;
     box-sizing: border-box;
 
     @include bpk-breakpoint-tablet {
-      width: auto;
-      margin-left: 0;
+      width: 90vw;
+      // width: auto;
     }
+  }
+
+  &__photo-gallery-container {
+    display: flex;
+    width: 100vw;
+    margin-left: calc(-50vw + 50%);
+    justify-content: center;
+    box-sizing: border-box;
   }
 
   &__card {
