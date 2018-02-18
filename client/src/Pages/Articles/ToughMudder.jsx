@@ -112,8 +112,9 @@ const ToughMudder = props => {
           <br />
           <br />
           <Quote>
-            I generally find that there is a strong, negative correlation
-            between how much fun something is and how prepared you are for it
+            "I generally find that there is a strong, negative correlation
+            between how much fun something is and how prepared you are for it" -
+            my brother's boss
           </Quote>
           <br />
           <br />
