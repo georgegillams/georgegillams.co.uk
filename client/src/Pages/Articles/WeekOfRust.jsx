@@ -30,7 +30,7 @@ const WeekOfRust = props => {
           I&apos;m not a low level programmer...
         </SubSection>
       </Section>
-      <Comments pageId={PAGE_ID} />
+      {/* <Comments pageId={PAGE_ID} /> */}
     </main>
   );
 };

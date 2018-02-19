@@ -101,6 +101,13 @@
     fill: rgb(62, 158, 235) !important;
   }
 
+  &--hovering-light {
+    transition: all .4s;
+    color: lightblue !important;
+    text-decoration: none;
+    fill: lightblue !important;
+  }
+
   &--inline {
     width: auto;
   }

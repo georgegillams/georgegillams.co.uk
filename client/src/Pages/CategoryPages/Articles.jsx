@@ -16,6 +16,16 @@ const getClassName = className => STYLES[className] || 'UNKNOWN';
 const Articles = () => (
   <div>
     <PageSwitchScroller />
+    {/* <ArticleCard
+      day={null}
+      month={null}
+      className={getClassName('pages__card')}
+      imageBorder="pink"
+      fillImageSrc={null}
+      imageSrc={null}
+      linkUrl="/articles/react-http-response-codes"
+      title="HTTP Response Codes in React"
+    />
     <ArticleCard
       day={null}
       month={null}
@@ -24,7 +34,7 @@ const Articles = () => (
       imageSrc={rustSm}
       linkUrl="/articles/week-of-rust"
       title="My week of Rust"
-    />
+    /> */}
     <ArticleCard
       light
       imageBorder="darkorange"

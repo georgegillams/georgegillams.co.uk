@@ -97,13 +97,13 @@ const SwitchToVim = props => {
               <TextLink external href="https://atom.io/">
                 Atom{' '}
               </TextLink>
-              for it's modern UI, powerful search features and the packages I'm
+              for its modern UI, powerful search features and the packages I'm
               already familiar with. But I'm certainly going to be keeping{' '}
               <TextLink external href="https://atom.io/packages/vim-mode-plus">
                 vim-mode-plus{' '}
               </TextLink>
               and using the mouse a lot less! My speed of work is much greater
-              now that I have all the Vim manouvers at my fingertips, and the
+              now that I have all the Vim manoeuvres at my fingertips, and the
               amount of time I will save in the coming weeks/months/years will
               definitely be worth the learning process.
             </SubSection>

@@ -99,6 +99,10 @@
     transition: all .4s;
     background-color: #44aeff;
 
+    &--light {
+      background-color: lightblue;
+    }
+
     &--hovered {
       width: 100%;
       margin-left: 0;
