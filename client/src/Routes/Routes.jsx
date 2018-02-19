@@ -46,6 +46,7 @@ import Iceland from '../Pages/Travel/Iceland';
 import Contact from '../Pages/Contact';
 import AboutMe from '../Pages/AboutMe';
 import ForOhFour from '../Pages/ForOhFour';
+import TeaPot from '../Pages/TeaPot';
 
 // eslint-disable-next-line import/no-webpack-loader-syntax
 const Routes = (
@@ -90,6 +91,8 @@ const Routes = (
         />
         <Route path="/travel/list" render={() => <Redirect to="/travel" />} />
 
+        <Route exact path="/418" component={TeaPot} />
+        <Route exact path="/teapot" component={TeaPot} />
         <Route component={ForOhFour} />
       </Switch>
     </DefaultLayout>
