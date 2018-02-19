@@ -8,6 +8,7 @@ import TextLink from '../../components/TextLink';
 import Quote from '../../components/Quote';
 import PageSwitchScroller from '../../components/PageSwitchScroller';
 import ScrollIndicator from '../../components/ScrollIndicator';
+import Strikethrough from '../../components/Strikethrough';
 
 const DATE_WRITTEN = new Date(2018, 2, 4, 17, 16, 0);
 const PAGE_ID = 991948;
@@ -43,12 +44,14 @@ const ToughMudder = props => {
         <SubSection name="Tough Mudder 1">
           Ric and I did some training together to try and prepare ourselves for
           the crazy event we'd signed up to. We ran for several hours,
-          improvised obstactles from anything we could find (playgrounds, etc)
-          and pledged to not drink beer in the ~7 days~ ~24 hours~ 12 hours
-          leading up to the event (something we both failed to stick to).
+          improvised obstacles from anything we could find (playgrounds, etc)
+          and pledged to not drink beer in the{' '}
+          <Strikethrough>7 days</Strikethrough>{' '}
+          <Strikethrough>24 hours</Strikethrough> 12 hours leading up to the
+          event (something we both failed to stick to).
           <br />
           <br />
-          Before we knew it the day had arrived. We were slightly nervous, but
+          Before we knew it the day had arrived. We were slightly nervous but
           had done enough training and eaten enough pasta sandwiches in the
           preceding week to feel ready(ish). We parked up, ate several packs of
           giant Maryland cookies, and headed for registration, bag-drop, and the
@@ -60,20 +63,20 @@ const ToughMudder = props => {
           </span>{' '}
           And there's something really refreshing about that. Within a few pages
           of his book, Will Dean (Tough Mudder founder) says that one of his
-          biggest frustrations after he completed his first marathon was his
+          biggest frustrations after he completed his first marathon, was his
           peers' obsession with his finishing time. He didn't think his time
           should be relevant. He believed that the achievement was in completing
           it. And now he's made a global event that's all about getting over the
           finish line - irrespective of how long it takes.
           <br />
           <br />
-          The sense of teamwork and comaraderie at the event was nothing but
+          The sense of teamwork and camaraderie at the event was nothing but
           exceptional. Everest 2.0 seemed impossible until I spotted a group of
-          large blokes at the top with arms hanging down ready to help. When
-          they singled me out to go next the dread I felt running up to the
-          obstacle just dissapeared and I was happily scaling the half-pipe.
-          Several obstacles are only possible with teamwork, and you can be
-          given a legup buy a randommer at any time.
+          large blokes at the top with arms hanging down ready to help. They
+          singled me out to go next, and the dread I had been feeling suddenly
+          disapeared, and I was happily scaling the half-pipe. Several obstacles
+          are only possible with teamwork, and you can be given a leg-up buy a
+          randommer at any time.
           <br />
           <br />
           The whole thing was a lot more fun than I imagined it could ever be,
@@ -82,23 +85,30 @@ const ToughMudder = props => {
           you're handed your reward pint of beer at the finish line.
           <br />
           <br />
-          After the event we headed back to base in Oxford, where we showered,
+          After the event, we headed back to base in Oxford, where we showered,
           drank, and then headed to the pub. After a half-marathon with ice, and
-          electrocution, everyone is a light-weight, so the perfect oppotunity
-          for a cheap night out! We all signed up to the next event within days.
+          electrocution, everyone is a light-weight, so the perfect opportunity
+          for a cheap night out! We all signed up for our next event within
+          days.
         </SubSection>
-        <SubSection name="Tough Mudder 2 (Half)">WRITE </SubSection>
+        <SubSection name="Tough Mudder 2 (Half)">
+          Just after my first full tough-mudder, they launched a new series of
+          half-events. The idea was much the same though - just with a larger
+          obstacle : running ratio. Tbh I felt like it was slightly lacking
+          something. Some of the more daunting obstacles had been left out, and
+          the whole thing was over far too quickly for my liking!
+        </SubSection>
         <SubSection name="Tough Mudder 3">
           Having enjoyed a couple of Tough Mudder events I wanted to get my
           mates involved. I asked my housemates, old and new to get involved,
-          and encouraged them to sign up by telling blatant lies about how it
-          it's "easier than it looks"! I also asked along someone I'd been on 1
-          date with. It can't have been that bad because she's now my Fiancé! We
+          and encouraged them to sign up by telling blatant lies about how it's
+          "easier than it looks"! I also asked along someone I'd been on 1 date
+          with. It can't have been that bad because she's now my Fiancé! We
           headed up north for the event. As luck had it, I also had an exam
           scheduled for the next day at 0900, so I was on the coach to
-          Nottingham, books in hand, to meet the team in a pub and ~do lots of
-          revision~ drink beer. We ate, drank, and preparad ourselves for
-          vistory the next day.
+          Nottingham, books in hand, to meet the team in a pub and{' '}
+          <Strikethrough>do lots of revision</Strikethrough> drink beer. We ate,
+          drank, and prepared ourselves for victory the next day.
         </SubSection>
         <SubSection name="Tough Mudder 4">
           Roll on two weeks from Tough Mudder 3, and I was back in the warm-up
@@ -117,10 +127,10 @@ const ToughMudder = props => {
         <SubSection name="Tough Mudder 5">
           Another year on and my 5th Tough Mudder is looming. Although Ric will
           probably be with us this time, he has just spent 6 months in Japan
-          eating nothing but sushi. We therefore expect him to be nothing but an
-          additional deadweight we have to carry around the course! But, not all
-          hope is lost. We have an excellent inspirational quote from his boss
-          on the other side of the world:
+          eating nothing but sushi. We, therefore, expect him to be nothing but
+          an additional deadweight we have to carry around the course! But, not
+          all hope is lost. We have an excellent inspirational quote from his
+          boss on the other side of the world:
           <br />
           <br />
           <Quote>
@@ -132,7 +142,7 @@ const ToughMudder = props => {
           <br />
         </SubSection>
       </Section>
-      {/* <Comments pageId={PAGE_ID} /> */}
+      <Comments pageId={PAGE_ID} />
     </main>
   );
 };
