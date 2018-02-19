@@ -27,7 +27,11 @@ const Section = props => {
     getClassName('typography__text--section'),
   ];
   if (hover) {
-    textClassNameFinal.push(getClassName('typography--hovering'));
+    if (light) {
+      textClassNameFinal.push(getClassName('typography--hovering-light'));
+    } else {
+      textClassNameFinal.push(getClassName('typography--hovering'));
+    }
   }
   if (!noAnchor) {
     textClassNameFinal.push(getClassName('typography__text--with-anchor-link'));

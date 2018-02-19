@@ -44,6 +44,9 @@ class ArticleCard extends Component {
     if (className) classNameFinal.push(className);
 
     const bannerClassNames = [getClassName('article-card__banner')];
+    if (light) {
+      bannerClassNames.push(getClassName('article-card__banner--light'));
+    }
     if (this.state.hovering) {
       bannerClassNames.push(getClassName('article-card__banner--hovered'));
     }

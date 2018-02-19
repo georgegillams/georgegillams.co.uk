@@ -34,7 +34,8 @@ class TeaPot extends Component {
           name="ERROR 418: I'm a Teapot"
         >
           <SubSection noAnchor>
-            Teapots cannot brew coffee. FACT!
+            Error: Attempted to brew coffee in a teapot. Cannot brew coffee in
+            borrowed tea context.
             <br />
             Maybe the <TextLink href="/site-map">sitemap</TextLink> can help
           </SubSection>
