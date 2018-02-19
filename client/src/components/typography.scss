@@ -96,9 +96,9 @@
 
   &--hovering {
     transition: all .4s;
-    color: rgb(62, 158, 235);
+    color: rgb(62, 158, 235) !important;
     text-decoration: none;
-    fill: rgb(62, 158, 235);
+    fill: rgb(62, 158, 235) !important;
   }
 
   &--inline {
