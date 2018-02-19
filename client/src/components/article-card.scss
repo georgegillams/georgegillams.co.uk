@@ -61,14 +61,18 @@
   &__background {
     position: absolute;
     z-index: -1;
-    width: calc(100% + 5rem);
-    height: calc(100% + 5rem);
-    margin-top: -5rem;
-    margin-left: -5rem;
+    width: calc(100% + 2rem);
+    height: calc(100% + 2rem);
+    margin-top: -2rem;
+    margin-left: -2rem;
     background-position: center;
     background-size: cover;
     opacity: .8;
     filter: blur(3px);
+
+    &--light {
+      background-color: #1e1e1e;
+    }
   }
 
   &__image-container {
@@ -98,6 +102,10 @@
     margin-left: 50%;
     transition: all .4s;
     background-color: #44aeff;
+
+    &--light {
+      background-color: lightblue;
+    }
 
     &--hovered {
       width: 100%;

@@ -33,6 +33,8 @@ import PasswordCharacterExtractor from '../Pages/Work/PasswordCharacterExtractor
 import BpkComponentDemo from '../Pages/Work/BpkComponentDemoPage';
 import Art from '../Pages/Art/Art';
 import SiteMap from '../Pages/SiteMap';
+import WeekOfRust from '../Pages/Articles/WeekOfRust';
+import ToughMudder from '../Pages/Articles/ToughMudder';
 import SwitchToVim from '../Pages/Articles/SwitchToVim';
 import UkBankSecurity from '../Pages/Articles/UkBankSecurity';
 import NetNeutrality from '../Pages/Articles/NetNeutrality';
@@ -54,22 +56,25 @@ const Routes = (
     <DefaultLayout>
       <Switch>
         <Route exact path="/" component={HomePage} />
-
         <Route exact path="/articles" component={Articles} />
+        //{' '}
+        {/* <Route
+          path="/articles/react-http-response-codes"
+          component={HttpResponseCodesInReact}
+        />
+        <Route path="/articles/week-of-rust" component={WeekOfRust} /> */}
+        <Route path="/articles/tough-mudder" component={ToughMudder} />
         <Route path="/articles/net-neutrality" component={NetNeutrality} />
         <Route path="/articles/vim" component={SwitchToVim} />
         <Route path="/articles/uk-bank-security" component={UkBankSecurity} />
-
         <Route exact path="/travel" component={Travel} />
         <Route path="/travel/longleat-2017" component={Longleat} />
         <Route path="/travel/munich-2017" component={Munich} />
         <Route path="/travel/iceland-2018" component={Iceland} />
         <Route path="/travel/disneyland-2017" component={Disneyland} />
         <Route path="/travel/serre-chevalier-2017" component={SerreChevalier} />
-
         <Route exact path="/art" component={Art} />
         <Route path="/photoshop" component={Art} />
-
         <Route exact path="/work" component={Work} />
         <Route
           path="/apps/password-character-extractor"
@@ -80,7 +85,6 @@ const Routes = (
         <Route path="/about" component={AboutMe} />
         <Route path="/contact" component={Contact} />
         <Route path="/admin" component={Admin} />
-
         <Route
           path="/net-neutrality"
           render={() => <Redirect to="/articles/net-neutrality" />}
@@ -90,7 +94,6 @@ const Routes = (
           render={() => <Redirect to="/articles" />}
         />
         <Route path="/travel/list" render={() => <Redirect to="/travel" />} />
-
         <Route exact path="/418" component={TeaPot} />
         <Route exact path="/teapot" component={TeaPot} />
         <Route component={ForOhFour} />
