@@ -102,11 +102,12 @@
 
   &__nn-background-image {
     background-repeat: no-repeat;
-    background-position: 19rem 2.1rem !important;
+    background-position: 16rem -1.1rem !important;
     background-size: 16rem !important;
+    filter: brightness(.5);
 
     @include bpk-breakpoint-tablet {
-      background-position: 7rem 6.1rem !important;
+      background-position: 4rem 3.1rem !important;
     }
   }
 }
