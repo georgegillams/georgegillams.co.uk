@@ -27,15 +27,15 @@ const SubSection = props => {
     getClassName('typography__text'),
     getClassName('typography__text--subsection'),
   ];
+  if (hover) {
+    textClassNameFinal.push(getClassName('typography--hovering'));
+  }
   if (!noAnchor) {
     textClassNameFinal.push(getClassName('typography__text--with-anchor-link'));
   }
   if (light) {
     classNameFinal.push(getClassName('typography--light'));
     textClassNameFinal.push(getClassName('typography--light'));
-  }
-  if (hover) {
-    textClassNameFinal.push(getClassName('typography--hovering'));
   }
   if (link) {
     classNameFinal.push(getClassName('typography__link'));
