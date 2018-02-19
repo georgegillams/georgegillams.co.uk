@@ -8,7 +8,7 @@ import STYLES from './for-oh-four.scss';
 
 const getClassName = className => STYLES[className] || 'UNKNOWN';
 
-class ForOhFour extends Component {
+class TeaPot extends Component {
   // componentDidMount() {
   //   const url = this.props.apiUrl;
   //   Request.get(url)
@@ -31,10 +31,10 @@ class ForOhFour extends Component {
       <main className={classNameFinal.join(' ')} {...rest}>
         <Section
           className={getClassName('for-oh-four__container')}
-          name="Oops."
+          name="ERROR 418: I'm a Teapot"
         >
           <SubSection noAnchor>
-            The page you&apos;re looking for just isn&apos;t here.
+            Teapots cannot brew coffee. FACT!
             <br />
             Maybe the <TextLink href="/site-map">sitemap</TextLink> can help
           </SubSection>
@@ -44,12 +44,12 @@ class ForOhFour extends Component {
   }
 }
 
-ForOhFour.propTypes = {
+TeaPot.propTypes = {
   className: PropTypes.string,
 };
 
-ForOhFour.defaultProps = {
+TeaPot.defaultProps = {
   className: null,
 };
 
-export default ForOhFour;
+export default TeaPot;
