@@ -9,13 +9,21 @@ const xApiKeyPrivate = process.env.REST_PRIVATE_ACCESS_KEY;
 
 let client = null;
 if (process.env.REDIS_URL) {
-  // Heroku redistogo connection
+  // Heroku redis connection
   // eslint-disable-next-line global-require
   client = require('redis').createClient(process.env.REDIS_URL);
 } else {
-  // Localhost
+  // running locally
   // eslint-disable-next-line global-require
   client = require('redis').createClient();
+}
+
+let staticFiles = null;
+if (process.env.ON_HEROKU) {
+  staticFiles = express.static(path.join(__dirname, '../../client/build'));
+} else {
+  // in our codebase, client and server code is structured differently to when deployed on heroku
+  staticFiles = express.static(path.join(__dirname, '../client/build'));
 }
 
 app.use((req, res, next) => {
@@ -39,7 +47,6 @@ app.use(bodyParser.urlencoded({ extended: false }));
 
 const router = express.Router();
 
-const staticFiles = express.static(path.join(__dirname, '../../client/build'));
 app.use(staticFiles);
 
 router.get('/api/greasemonkey/secureEcs_download', (req, res) => {

@@ -57,7 +57,6 @@ const Routes = (
       <Switch>
         <Route exact path="/" component={HomePage} />
         <Route exact path="/articles" component={Articles} />
-        //{' '}
         {/* <Route
           path="/articles/react-http-response-codes"
           component={HttpResponseCodesInReact}
