@@ -11,23 +11,21 @@ const SiteMap = () => (
     <SubSection
       noAnchor
       className={getClassName('pages__site-map-item')}
-      name="Articles 📝"
+      name="Blog 📝"
     >
-      <TextLink href="/articles/react-http-response-codes">
+      <TextLink href="/blog/react-http-response-codes">
         HTTP Reponse Codes in React
       </TextLink>
       <br />
-      <TextLink href="/articles/week-of-rust">My Week of Rust</TextLink>
+      <TextLink href="/blog/week-of-rust">My Week of Rust</TextLink>
       <br />
-      <TextLink href="/articles/tough-mudder">Running 5 Tough Mudders</TextLink>
+      <TextLink href="/blog/tough-mudder">Running 5 Tough Mudders</TextLink>
       <br />
-      <TextLink href="/articles/uk-bank-security">UK Bank Security</TextLink>
+      <TextLink href="/blog/uk-bank-security">UK Bank Security</TextLink>
       <br />
-      <TextLink href="/articles/vim">Switching to Vim</TextLink>
+      <TextLink href="/blog/vim">Switching to Vim</TextLink>
       <br />
-      <TextLink href="/articles/net-neutrality">
-        My Take on Net Neutrality
-      </TextLink>
+      <TextLink href="/blog/net-neutrality">My Take on Net Neutrality</TextLink>
     </SubSection>
     <SubSection
       noAnchor
@@ -47,9 +45,9 @@ const SiteMap = () => (
     <SubSection
       noAnchor
       className={getClassName('pages__site-map-item')}
-      name="Art 🎨"
+      name="Photography 🎨"
     >
-      <TextLink href="/art">Artistic creations</TextLink>
+      <TextLink href="/photography">Artistic creations</TextLink>
     </SubSection>
     <SubSection
       noAnchor
@@ -61,6 +59,10 @@ const SiteMap = () => (
       <TextLink href="/apps/password-character-extractor">
         Password Character Extractor
       </TextLink>
+      {/* <br />
+      <TextLink href="/work/bpk-component-demo">
+        Backpack Demo Component
+      </TextLink> */}
       {/* <br />
           <TextLink href="/travel/longleat-2017"> Longleat </TextLink>
           <br />

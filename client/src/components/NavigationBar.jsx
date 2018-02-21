@@ -61,8 +61,8 @@ class NavigationBar extends Component {
           <header className={navBarClassNameFinal.join(' ')} {...rest}>
             <NavigationItem
               className={getClassName('navigation-bar__nav-item')}
-              name="ARTICLES"
-              linkUrl="/articles"
+              name="BLOG"
+              linkUrl="/blog"
             />
             <NavigationItem
               className={getClassName('navigation-bar__nav-item')}
@@ -71,8 +71,8 @@ class NavigationBar extends Component {
             />
             <NavigationItem
               className={getClassName('navigation-bar__nav-item')}
-              name="ART"
-              linkUrl="/art"
+              name="PHOTOGRAPHY"
+              linkUrl="/photography"
             />
             <Logo
               className={getClassName('navigation-bar__nav-item')}
@@ -91,7 +91,7 @@ class NavigationBar extends Component {
             />
             <NavigationItem
               className={getClassName('navigation-bar__nav-item')}
-              name="CONTACT"
+              name="GET IN TOUCH"
               linkUrl="/contact"
             />
           </header>
