@@ -23,7 +23,7 @@ const Articles = () => (
       imageBorder="pink"
       fillImageSrc={null}
       imageSrc={null}
-      linkUrl="/articles/react-http-response-codes"
+      linkUrl="/blog/react-http-response-codes"
       title="HTTP Response Codes in React"
     />
     <ArticleCard
@@ -32,7 +32,7 @@ const Articles = () => (
       className={getClassName('pages__card')}
       fillImageSrc={null}
       imageSrc={rustSm}
-      linkUrl="/articles/week-of-rust"
+      linkUrl="/blog/week-of-rust"
       title="My week of Rust"
     /> */}
     <ArticleCard
@@ -43,7 +43,7 @@ const Articles = () => (
       className={getClassName('pages__card')}
       fillImageSrc={toughMudder}
       imageSrc={toughMudderSm}
-      linkUrl="/articles/tough-mudder"
+      linkUrl="/blog/tough-mudder"
       title="Running 5 Tough Mudders"
     />
     <ArticleCard
@@ -54,7 +54,7 @@ const Articles = () => (
       className={getClassName('pages__card')}
       fillImageSrc={netNeutrality}
       imageSrc={netNeutralitySm}
-      linkUrl="/articles/net-neutrality"
+      linkUrl="/blog/net-neutrality"
       title="My Take on Net Neutrality"
     />
     <ArticleCard
@@ -65,7 +65,7 @@ const Articles = () => (
       className={getClassName('pages__card')}
       fillImageSrc={vim}
       imageSrc={vimSm}
-      linkUrl="/articles/vim"
+      linkUrl="/blog/vim"
       title="Switching to Vim"
     />
   </div>

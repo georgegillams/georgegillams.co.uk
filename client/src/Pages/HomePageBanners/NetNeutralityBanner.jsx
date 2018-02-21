@@ -5,7 +5,7 @@ import netNeutrality from '../Articles/images/netNeutrality.jpg';
 const NetNeutralityBanner = () => (
   <SimpleBanner
     imageSrc={netNeutrality}
-    linkUrl="/articles/net-neutrality"
+    linkUrl="/blog/net-neutrality"
     title="My Take on Net Neutrality"
   />
 );

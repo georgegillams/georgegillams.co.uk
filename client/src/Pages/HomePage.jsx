@@ -55,8 +55,8 @@ const HomePage = () => (
   </main>
 );
 // <Showcase name="Articles">
-//   <Card name="Net neutrality" linkUrl="/articles/net-neutrality" />
-//   <Card name="Vim" linkUrl="/articles/vim" />
+//   <Card name="Net neutrality" linkUrl="/blog/net-neutrality" />
+//   <Card name="Vim" linkUrl="/blog/vim" />
 // </Showcase >
 
 export default HomePage;
