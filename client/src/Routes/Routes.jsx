@@ -50,30 +50,47 @@ import AboutMe from '../Pages/AboutMe';
 import ForOhFour from '../Pages/ForOhFour';
 import TeaPot from '../Pages/TeaPot';
 
+const redirects = [
+  { from: '/articles/tough-mudder', to: '/blog/tough-mudder' },
+  { from: '/articles/net-neutrality', to: '/blog/net-neutrality' },
+  { from: '/articles/vim', to: '/blog/vim' },
+  { from: '/articles/uk-bank-security', to: '/blog/uk-bank-security' },
+  {
+    from: '/articles/react-http-response-codes',
+    to: '/blog/react-http-response-codes',
+  },
+  { from: '/articles/week-of-rust', to: '/blog/week-of-rust' },
+  { from: '/travel/list', to: '/travel' },
+  { from: '/articles/list', to: '/blog' },
+  { from: '/articles', to: '/blog' },
+  { from: '/art', to: '/photography' },
+  { from: '/photoshop', to: '/photography' },
+  { from: '/net-neutrality', to: '/blog/net-neutrality' },
+];
+
 // eslint-disable-next-line import/no-webpack-loader-syntax
 const Routes = (
   <BrowserRouter>
     <DefaultLayout>
       <Switch>
         <Route exact path="/" component={HomePage} />
-        <Route exact path="/articles" component={Articles} />
+        <Route exact path="/blog" component={Articles} />
         {/* <Route
-          path="/articles/react-http-response-codes"
+          path="/blog/react-http-response-codes"
           component={HttpResponseCodesInReact}
         />
-        <Route path="/articles/week-of-rust" component={WeekOfRust} /> */}
-        <Route path="/articles/tough-mudder" component={ToughMudder} />
-        <Route path="/articles/net-neutrality" component={NetNeutrality} />
-        <Route path="/articles/vim" component={SwitchToVim} />
-        <Route path="/articles/uk-bank-security" component={UkBankSecurity} />
+        <Route path="/blog/week-of-rust" component={WeekOfRust} /> */}
+        <Route path="/blog/tough-mudder" component={ToughMudder} />
+        <Route path="/blog/net-neutrality" component={NetNeutrality} />
+        <Route path="/blog/vim" component={SwitchToVim} />
+        <Route path="/blog/uk-bank-security" component={UkBankSecurity} />
         <Route exact path="/travel" component={Travel} />
         <Route path="/travel/longleat-2017" component={Longleat} />
         <Route path="/travel/munich-2017" component={Munich} />
         <Route path="/travel/iceland-2018" component={Iceland} />
         <Route path="/travel/disneyland-2017" component={Disneyland} />
         <Route path="/travel/serre-chevalier-2017" component={SerreChevalier} />
-        <Route exact path="/art" component={Art} />
-        <Route path="/photoshop" component={Art} />
+        <Route path="/photography" component={Art} />
         <Route exact path="/work" component={Work} />
         <Route
           path="/apps/password-character-extractor"
@@ -84,15 +101,15 @@ const Routes = (
         <Route path="/about" component={AboutMe} />
         <Route path="/contact" component={Contact} />
         <Route path="/admin" component={Admin} />
-        <Route
-          path="/net-neutrality"
-          render={() => <Redirect to="/articles/net-neutrality" />}
-        />
-        <Route
-          path="/articles/list"
-          render={() => <Redirect to="/articles" />}
-        />
-        <Route path="/travel/list" render={() => <Redirect to="/travel" />} />
+
+        {redirects.map(redirect => (
+          <Route
+            exact
+            path={redirect.from}
+            render={() => <Redirect to={redirect.to} />}
+          />
+        ))}
+
         <Route exact path="/418" component={TeaPot} />
         <Route exact path="/teapot" component={TeaPot} />
         <Route component={ForOhFour} />
