@@ -110,8 +110,9 @@ const Routes = (
           />
         ))}
 
-        <Route exact path="/418" component={TeaPot} />
-        <Route exact path="/teapot" component={TeaPot} />
+        <Route exact path="/admin/418" component={TeaPot} />
+        <Route exact path="/admin/teapot" component={TeaPot} />
+        <Route exact path="/admin/404" component={ForOhFour} />
         <Route component={ForOhFour} />
       </Switch>
     </DefaultLayout>
