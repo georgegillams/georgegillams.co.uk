@@ -40,12 +40,9 @@ const AboutMe = props => {
         <br />
         <br />
         I enjoy getting outdoors and trying new things, and will be completing
-        my 5th{' '}
-        <TextLink external href="https://toughmudder.co.uk/">
-          Tough Mudder
-        </TextLink>{' '}
-        in May 2018. I also try to squeeze in as much volunteering as I can, so
-        you may find me dressed as a{' '}
+        my 5th <TextLink href="/blog/tough-mudder">Tough Mudder</TextLink> in
+        May 2018. I also try to squeeze in as much volunteering as I can, so you
+        may find me dressed as a{' '}
         <TextLink external href="https://helpforheroes.org.uk/">
           Help for Heroes
         </TextLink>{' '}
