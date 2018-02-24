@@ -12,6 +12,7 @@
     "body-parser": "^1.16.0",
     "connect-redis": "^3.3.3",
     "express": "^4.14.1",
+    "html-minifier": "^3.5.9",
     "redis": "^2.8.0"
   },
   "devDependencies": {
