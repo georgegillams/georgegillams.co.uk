@@ -1,6 +1,7 @@
 const bodyParser = require('body-parser');
 const express = require('express');
 const path = require('path');
+const { minify } = require('html-minifier');
 
 const app = express();
 
@@ -24,6 +25,7 @@ const FOUR_ONE_EIGHT_HTML = `
     </body>
   </html>
 `;
+const FOUR_ONE_EIGHT_HTML_MINIMIZED = minify(FOUR_ONE_EIGHT_HTML, {});
 
 let client = null;
 if (process.env.REDIS_URL) {
@@ -156,13 +158,13 @@ router.delete('/api/comments', (req, res) => {
 
 router.get('/418', (req, res) => {
   res.status(418);
-  res.send(FOUR_ONE_EIGHT_HTML);
+  res.send(FOUR_ONE_EIGHT_HTML_MINIMIZED);
   res.end();
 });
 
 router.get('/teapot', (req, res) => {
   res.status(418);
-  res.send(FOUR_ONE_EIGHT_HTML);
+  res.send(FOUR_ONE_EIGHT_HTML_MINIMIZED);
   res.end();
 });
 
