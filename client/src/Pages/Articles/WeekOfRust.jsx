@@ -9,7 +9,7 @@ import Quote from '../../components/Quote';
 import ScrollIndicator from '../../components/ScrollIndicator';
 import PageSwitchScroller from '../../components/PageSwitchScroller';
 
-const DATE_WRITTEN = new Date(2018, 2, 4, 17, 16, 0);
+const DATE_WRITTEN = new Date(0, 0, 0, 0, 0, 0);
 const PAGE_ID = 918651;
 
 const WeekOfRust = props => {

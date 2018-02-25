@@ -33,6 +33,7 @@ import PasswordCharacterExtractor from '../Pages/Work/PasswordCharacterExtractor
 import BpkComponentDemo from '../Pages/Work/BpkComponentDemoPage';
 import Art from '../Pages/Art/Art';
 import SiteMap from '../Pages/SiteMap';
+import HttpResponseCodesInReact from '../Pages/Articles/HttpResponseCodesInReact';
 import WeekOfRust from '../Pages/Articles/WeekOfRust';
 import ToughMudder from '../Pages/Articles/ToughMudder';
 import SwitchToVim from '../Pages/Articles/SwitchToVim';
@@ -75,11 +76,11 @@ const Routes = (
       <Switch>
         <Route exact path="/" component={HomePage} />
         <Route exact path="/blog" component={Articles} />
-        {/* <Route
+        <Route
           path="/blog/react-http-response-codes"
           component={HttpResponseCodesInReact}
         />
-        <Route path="/blog/week-of-rust" component={WeekOfRust} /> */}
+        {/* <Route path="/blog/week-of-rust" component={WeekOfRust} /> */}
         <Route path="/blog/tough-mudder" component={ToughMudder} />
         <Route path="/blog/net-neutrality" component={NetNeutrality} />
         <Route path="/blog/vim" component={SwitchToVim} />
@@ -109,9 +110,9 @@ const Routes = (
           />
         ))}
 
-        <Route path="/admin/418" component={TeaPot} />
-        <Route path="/admin/teapot" component={TeaPot} />
-        <Route path="/admin/404" component={ForOhFour} />
+        <Route path="/example-418" component={TeaPot} />
+        <Route path="/example-teapot" component={TeaPot} />
+        <Route path="/example-404" component={ForOhFour} />
         <Route exact path="/admin" component={Admin} />
         <Route component={ForOhFour} />
       </Switch>
