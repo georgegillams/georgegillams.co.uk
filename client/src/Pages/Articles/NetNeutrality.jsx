@@ -11,7 +11,7 @@ import netflixDownloads from './images/netflixDownloads.png';
 import ArticleDate from '../../components/ArticleDate';
 import LicenseInfo from '../../components/LicenseInfo';
 import Comments from '../../components/Comments';
-import GoogleAds from '../../components/GoogleAds';
+// import GoogleAds from '../../components/GoogleAds';
 import PageSwitchScroller from '../../components/PageSwitchScroller';
 import ScrollIndicator from '../../components/ScrollIndicator';
 
@@ -310,38 +310,7 @@ const NetNeutrality = props => {
           Empires. Borzoi Books. Alfred A. Knopf, 2010. ISBN: 9780307269935.
           URL: https:\/\/books.google.co.uk/books? id=tKr0QwAACAAJ.
         </SubSection>
-        <SubSection>
-          Throughout history, whenever a new communication technology has been
-          invented, it has always become less open during a process of
-          consolidation by organisations who want power over the industry [13].
-          In many countries, governments have greatly enjoyed these monopolies
-          is it provides them opportunities for mass intervention [13]. This is
-          evident from the nature of illegal mass-surveillance operations that
-          the US and United Kingdom (UK) carried out with the help of a number
-          of large companies including Google, Facebook, and Apple [8].
-          <br />
-          <br />
-          If we allow ISPs to become gatekeepers of traffic and content on the
-          Internet, they will be able to corrupt a system which currently allows
-          users to freely connect with vast audiences. In doing so, they will
-          gain total control over our communication, resulting in ISPs having
-          unprecedented economical, social and political influence. It is
-          important to protect NN globall, as the Internet is a global resource.
-          Failing to protect NN in one country would have a huge knock-on effect
-          for the rest of the world. For this reason, Canadian Prime Minister
-          Justin Tradeau has condemned the attack on NN.
-          <br />
-          <br />
-          The Internet is not currently broken. It fosters free-speech and
-          creativity. Fundamental changes to the architecture of the Internet
-          would risk damage to healthcare advances, trade, innovation and social
-          well-being. Furthermore, abandoning NN could deny millions of
-          individuals basic rights enjoyed by Internet-users around the world.
-        </SubSection>
-        <SubSection
-          o
-          name="Appendix A - Netflix download speeds on a number of American ISPs"
-        >
+        <SubSection name="Appendix A - Netflix download speeds on a number of American ISPs">
           <FadingLazyLoadedImage
             className={getClassName('pages__image')}
             altText="Netflix download speeds on a number of American ISPs"

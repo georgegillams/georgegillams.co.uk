@@ -39,11 +39,11 @@ const ToughMudder = props => {
           suggested it. It sounded like the sort of thing that I would
           completely steer clear of, but on my 21st Birthday, after a few pints
           in a brewery, I agreed. I thought it couldn&apos;t be that bad if I
-          had a 6ft 6" giant on-side.
+          had a 6ft 6&quot; giant on-side.
         </SubSection>
         <SubSection name="Tough Mudder 1">
           Ric and I did some training together to try and prepare ourselves for
-          the crazy event we'd signed up to. We ran for several hours,
+          the crazy event we&apos;d signed up to. We ran for several hours,
           improvised obstacles from anything we could find (playgrounds, etc)
           and pledged to not drink beer in the{' '}
           <Strikethrough>7 days</Strikethrough>{' '}
@@ -61,13 +61,14 @@ const ToughMudder = props => {
           <span style={{ fontWeight: 'bold' }}>
             Tough Mudder is a challenge, not a competition.
           </span>{' '}
-          And there's something really refreshing about that. Within a few pages
-          of his book, Will Dean (Tough Mudder founder) says that one of his
-          biggest frustrations after he completed his first marathon, was his
-          peers' obsession with his finishing time. He didn't think his time
-          should be relevant. He believed that the achievement was in completing
-          it. And now he's made a global event that's all about getting over the
-          finish line - irrespective of how long it takes.
+          And there&apos;s something really refreshing about that. Within a few
+          pages of his book, Will Dean (Tough Mudder founder) says that one of
+          his biggest frustrations after he completed his first marathon, was
+          his peers&apos; obsession with his finishing time. He didn&apos;t
+          think his time should be relevant. He believed that the achievement
+          was in completing it. And now he&apos;s made a global event
+          that&apos;s all about getting over the finish line - irrespective of
+          how long it takes.
           <br />
           <br />
           The sense of teamwork and camaraderie at the event was nothing but
@@ -82,7 +83,7 @@ const ToughMudder = props => {
           The whole thing was a lot more fun than I imagined it could ever be,
           thanks to the teamwork involved. There were uncomfortable moments,
           mentally and physically, but you soon forget about all of them when
-          you're handed your reward pint of beer at the finish line.
+          you&apos;re handed your reward pint of beer at the finish line.
           <br />
           <br />
           After the event, we headed back to base in Oxford, where we showered,
@@ -101,28 +102,28 @@ const ToughMudder = props => {
         <SubSection name="Tough Mudder 3">
           Having enjoyed a couple of Tough Mudder events I wanted to get my
           mates involved. I asked my housemates, old and new to get involved,
-          and encouraged them to sign up by telling blatant lies about how it's
-          "easier than it looks"! I also asked along someone I'd been on 1 date
-          with. It can't have been that bad because she's now my Fiancé! We
-          headed up north for the event. As luck had it, I also had an exam
-          scheduled for the next day at 0900, so I was on the coach to
-          Nottingham, books in hand, to meet the team in a pub and{' '}
-          <Strikethrough>do lots of revision</Strikethrough> drink beer. We ate,
-          drank, and prepared ourselves for victory the next day.
+          and encouraged them to sign up by telling blatant lies about how
+          it&apos;s &quot;easier than it looks&quot;! I also asked along someone
+          I&apos;d been on 1 date with. It can&apos;t have been that bad because
+          she&apos;s now my Fianc&eacute;! We headed up north for the event. As
+          luck had it, I also had an exam scheduled for the next day at 0900, so
+          I was on the coach to Nottingham, books in hand, to meet the team in a
+          pub and <Strikethrough>do lots of revision</Strikethrough> drink beer.
+          We ate, drank, and prepared ourselves for victory the next day.
         </SubSection>
         <SubSection name="Tough Mudder 4">
           Roll on two weeks from Tough Mudder 3, and I was back in the warm-up
           pen for London West. With (most) of the original team (except for my
-          6ft 6" brother, Ric, who had bailed due to now working in Tokyo!). It
-          wasn't ideal to be doing it without him. We'd actually have to get
-          over the walls ourselves instead of being thrown, but we got through
-          it. T-shirts, headbands and beer in hand, we agreed to do it again the
-          next year. My challenge wasn't over for the day, though. I was due to
-          be attending a ball in Southampton that evening, so I found a train
-          and got back to Southampton double time. The rest of my table had
-          insisted that my food could not be taken away, so when I arrived 3
-          courses and a pint of Red Bull were waiting. The dodgems made me feel
-          pretty shaken up. Who has dodgems at a ball!?
+          6ft 6&quot; brother, Ric, who had bailed due to now working in
+          Tokyo!). It wasn&apos;t ideal to be doing it without him. We&apos;d
+          actually have to get over the walls ourselves instead of being thrown,
+          but we got through it. T-shirts, headbands and beer in hand, we agreed
+          to do it again the next year. My challenge wasn&apos;t over for the
+          day, though. I was due to be attending a ball in Southampton that
+          evening, so I found a train and got back to Southampton double time.
+          The rest of my table had insisted that my food could not be taken
+          away, so when I arrived 3 courses and a pint of Red Bull were waiting.
+          The dodgems made me feel pretty shaken up. Who has dodgems at a ball!?
         </SubSection>
         <SubSection name="Tough Mudder 5">
           Another year on and my 5th Tough Mudder is looming. Although Ric will
@@ -134,9 +135,9 @@ const ToughMudder = props => {
           <br />
           <br />
           <Quote>
-            "I generally find that there is a strong, negative correlation
-            between how much fun something is and how prepared you are for it" -
-            Ric's boss
+            &quot;I generally find that there is a strong, negative correlation
+            between how much fun something is and how prepared you are for
+            it&quot; - Ric&apos;s boss
           </Quote>
           <br />
           <br />
