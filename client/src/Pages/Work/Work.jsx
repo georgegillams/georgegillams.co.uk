@@ -62,27 +62,6 @@ const Work = props => {
           open-source products.
           <br />
           <br />
-          <SubSection name="Password Character Extractor">
-            I found the login process for a number of sites (particularly UK
-            bank websites) frustrating as they often require specific characters
-            from a password or memorable word. This is something that LastPass
-            cannot handle for me, so I created an offline tool to help.
-            <br />
-            <br />
-            <FadingLazyLoadedImage
-              className={getClassName('apps__image')}
-              altText="Password Character Extraction Use"
-              style={{ maxWidth: '45rem' }}
-              width={2224}
-              height={514}
-              src={passwordCharacterExtractorUse}
-            />
-            <br />
-            <br />
-            <Button href="/apps/password-character-extractor">
-              Read more here →
-            </Button>
-          </SubSection>
           <SubSection name="Backpack Design System">
             My first job at Skyscanner was in the{' '}
             <TextLink external href="https://backpack.github.io/">
@@ -133,16 +112,52 @@ const Work = props => {
               src={backpackScreenshot}
             /> */}
             <br />
+            <Button hrefExternal href="https://backpack.github.io/">
+              Read more here →
+            </Button>
+          </SubSection>
+          {/* <SubSection name="React.js Academic References Component">
+            I was looking for a decent React Academic References Component{' '}
+            <TextLink external href="https://npmjs.org/">
+              NPM{' '}
+            </TextLink>{' '}
+            package and struggled to find one. I decided this is something
+            bloggers could really do with, so I got on with implementing an
+            open-source one.
+            <br />
+            <br />
+            I started simple (Minimum Awesome Product) and hope that I / the OS
+            community can expand on this to support more referencing formats.
+            <br />
+            <br />
+            <Button href="blog/net-neutrality">See it in action →</Button>
+            <br />
+            <br />
             <Button
-              onClick={() => {
-                window.open('https://backpack.github.io/', '_blank');
-              }}
+              hrefExternal
+              href="https://github.com/georgegillams/react-component-academic-references"
             >
-              {/* <Button
-              onClick={() =>
-                window.location.replace('/work/bpk-component-demo')
-              }
-            > */}
+              View on GitHub →
+            </Button>
+          </SubSection> */}
+          <SubSection name="Password Character Extractor">
+            I found the login process for a number of sites (particularly UK
+            bank websites) frustrating as they often require specific characters
+            from a password or memorable word. This is something that LastPass
+            cannot handle for me, so I created an offline tool to help.
+            <br />
+            <br />
+            <FadingLazyLoadedImage
+              className={getClassName('apps__image')}
+              altText="Password Character Extraction Use"
+              style={{ maxWidth: '45rem' }}
+              width={2224}
+              height={514}
+              src={passwordCharacterExtractorUse}
+            />
+            <br />
+            <br />
+            <Button href="/apps/password-character-extractor">
               Read more here →
             </Button>
           </SubSection>
@@ -176,11 +191,7 @@ const Work = props => {
               src={greasemonkeyEcsAfter}
             />
             <br />
-            <Button
-              onClick={() => {
-                window.open('/api/greasemonkey/secureEcs_download', '_blank');
-              }}
-            >
+            <Button href="/api/greasemonkey/secureEcs_download" hrefExternal>
               Donwload script
             </Button>
           </SubSection>
