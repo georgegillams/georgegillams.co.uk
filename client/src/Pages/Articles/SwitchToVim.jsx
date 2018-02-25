@@ -65,7 +65,7 @@ const SwitchToVim = props => {
           setup wasn&apos;t half bad - I was barely touching the mouse and was
           often editing more than 1 line of code at a time - but adding in vim
           features made me realise that I was actually missing out on a lot of
-          handy shortcuts. Before long I'd ditched{' '}
+          handy shortcuts. Before long I&apos;d ditched{' '}
           <TextLink external href="https://atom.io/">
             Atom{' '}
           </TextLink>
@@ -85,20 +85,21 @@ const SwitchToVim = props => {
             increasing their productivity long-term, but despite my work-load
             and approaching deadlines I stuck with it. I guess I spent around a
             week at half speed as I found my way around and configured all the
-            Plugins I wanted, and maybe I haven't yet even got back up to
-            full-speed, but I'm getting faster every day. I&apos;ve learnt a
-            new, awesome tool which has changed my outlook on how code should be
-            written. And so far I've only scratched the surface of what it is
-            capable of. So, was it worth it? Hell yes!
+            Plugins I wanted, and maybe I haven&apos;t yet even got back up to
+            full-speed, but I&apos;m getting faster every day. I&apos;ve learnt
+            a new, awesome tool which has changed my outlook on how code should
+            be written. And so far I&apos;ve only scratched the surface of what
+            it is capable of. So, was it worth it? Hell yes!
             <br />
             <br />
             <SubSection name="My new workflow">
-              As it happens, I've switched back to{' '}
+              As it happens, I&apos;ve switched back to{' '}
               <TextLink external href="https://atom.io/">
                 Atom{' '}
               </TextLink>
-              for its modern UI, powerful search features and the packages I'm
-              already familiar with. But I'm certainly going to be keeping{' '}
+              for its modern UI, powerful search features and the packages
+              I&apos;m already familiar with. But I&apos;m certainly going to be
+              keeping{' '}
               <TextLink external href="https://atom.io/packages/vim-mode-plus">
                 vim-mode-plus{' '}
               </TextLink>
