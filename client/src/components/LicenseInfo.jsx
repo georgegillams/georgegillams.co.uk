@@ -20,19 +20,13 @@ const LicenseInfo = props => {
 
   return (
     <div className={classNameFinal.join(' ')} {...rest}>
-      <TextLink
-        external
-        rel="license"
-        href="http://creativecommons.org/licenses/by-sa/4.0/"
-      >
-        <BpkImage
-          alt="Creative Commons Licence"
-          width={88}
-          height={31}
-          style={{ width: '5rem', marginBottom: '1rem' }}
-          src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png"
-        />
-      </TextLink>
+      <BpkImage
+        alt="Creative Commons Licence"
+        width={88}
+        height={31}
+        style={{ width: '5rem', marginBottom: '1rem' }}
+        src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png"
+      />
       <br />
       <Section>
         {'My works are licensed under a '}
