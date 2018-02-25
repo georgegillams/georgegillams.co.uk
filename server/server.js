@@ -1,31 +1,11 @@
 const bodyParser = require('body-parser');
 const express = require('express');
 const path = require('path');
-const { minify } = require('html-minifier');
 
 const app = express();
 
 const xApiKeyPub = process.env.REST_PUBLIC_ACCESS_KEY;
 const xApiKeyPrivate = process.env.REST_PRIVATE_ACCESS_KEY;
-
-const FOUR_ONE_EIGHT_HTML = `
-  <html>
-    <body style="height: 100vh; background-color: cornflowerblue; background-image: linear-gradient(-140deg, darkorchid, cornflowerblue)">
-      <div style="text-align: center; padding: 1rem; color: white">
-        <h1>
-          Error 418: I'm a teapot 🍵
-        </h1>
-        <h3 style="font-weight: normal">
-          Error: Attempted to brew coffee in a teapot 🤦‍♂️ Cannot brew coffee in borrowed tea context ☕
-        </h3>
-        <h3 style="font-weight: normal">
-          Maybe the <a style="color: white; text-decoration: underline" href="https://www.georgegillams.co.uk/site-map/">sitemap 🗺️</a> can help
-        </h3>
-      </div>
-    </body>
-  </html>
-`;
-const FOUR_ONE_EIGHT_HTML_MINIMIZED = minify(FOUR_ONE_EIGHT_HTML, {});
 
 let client = null;
 if (process.env.REDIS_URL) {
@@ -158,14 +138,12 @@ router.delete('/api/comments', (req, res) => {
 
 router.get('/418', (req, res) => {
   res.status(418);
-  res.send(FOUR_ONE_EIGHT_HTML_MINIMIZED);
-  res.end();
+  res.sendFile(path.join(__dirname, './pages', 'FourOneEight.html'));
 });
 
 router.get('/teapot', (req, res) => {
   res.status(418);
-  res.send(FOUR_ONE_EIGHT_HTML_MINIMIZED);
-  res.end();
+  res.sendFile(path.join(__dirname, './pages', 'FourOneEight.html'));
 });
 
 app.use(router);
