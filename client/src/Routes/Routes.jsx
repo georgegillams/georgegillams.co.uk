@@ -100,7 +100,6 @@ const Routes = (
         <Route path="/site-map" component={SiteMap} />
         <Route path="/about" component={AboutMe} />
         <Route path="/contact" component={Contact} />
-        <Route path="/admin" component={Admin} />
 
         {redirects.map(redirect => (
           <Route
@@ -110,9 +109,10 @@ const Routes = (
           />
         ))}
 
-        <Route exact path="/admin/418" component={TeaPot} />
-        <Route exact path="/admin/teapot" component={TeaPot} />
-        <Route exact path="/admin/404" component={ForOhFour} />
+        <Route path="/admin/418" component={TeaPot} />
+        <Route path="/admin/teapot" component={TeaPot} />
+        <Route path="/admin/404" component={ForOhFour} />
+        <Route exact path="/admin" component={Admin} />
         <Route component={ForOhFour} />
       </Switch>
     </DefaultLayout>

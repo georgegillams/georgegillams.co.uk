@@ -83,6 +83,15 @@ const SiteMap = () => (
       <br />
       <TextLink href="/contact"> Contact </TextLink>
     </SubSection>
+    <SubSection
+      noAnchor
+      className={getClassName('pages__site-map-item')}
+      name="Random 🐉"
+    >
+      <TextLink href="/418"> Error 418: I&apos;m a teapot </TextLink>
+      <br />
+      <TextLink href="/page-not-found"> 404 Page </TextLink>
+    </SubSection>
   </div>
 );
 
