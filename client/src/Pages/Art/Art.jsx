@@ -37,6 +37,14 @@ const Art = props => {
       <ScrollIndicator />
       <br />
       <PageSwitchScroller />
+      <a
+        className={getClassName('pages__link')}
+        href="https://www.flickr.com/people/137198167@N03/"
+        rel="noopener noreferrer"
+        target="_blank"
+      >
+        <Section noAnchor name="See my Flickr profile →" link />
+      </a>
       <Section name="Food is art! (...sometimes)">
         <SubSection noAnchor name="Guinness cake">
           I like spending time on food presentation when the opportunity calls
