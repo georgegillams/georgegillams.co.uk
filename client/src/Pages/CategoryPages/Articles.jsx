@@ -8,6 +8,7 @@ import vimSm from '../Articles/images/vimSm.png';
 import toughMudder from '../Articles/images/toughMudder.jpg';
 import toughMudderSm from '../Articles/images/toughMudderSm.jpg';
 import rustSm from '../Articles/images/rustSm.jpg';
+import teapot from '../Articles/images/teapot.gif';
 
 import STYLES from '../pages.scss';
 
@@ -17,18 +18,17 @@ const Articles = () => (
   <div>
     <PageSwitchScroller />
     {/* <ArticleCard
-      day={null}
-      month={null}
+      day={0}
+      month="NaN"
       className={getClassName('pages__card')}
-      imageBorder="pink"
-      fillImageSrc={null}
-      imageSrc={null}
+      imageBorder="cornflowerblue"
+      imageSrc={teapot}
       linkUrl="/blog/react-http-response-codes"
-      title="HTTP Response Codes in React"
+      title="Sending a 418 in React.js"
     />
     <ArticleCard
-      day={null}
-      month={null}
+      day={0}
+      month={"NaN"}
       className={getClassName('pages__card')}
       fillImageSrc={null}
       imageSrc={rustSm}
