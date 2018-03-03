@@ -44,7 +44,6 @@ const WeekOfRust = props => {
       <br />
       <PageSwitchScroller />
       <Section name="React.js and HTTP status codes">
-        <Tag type={TAG_TYPES.tech} />
         <ArticleDate date={DATE_WRITTEN} />
         <Tag type={TAG_TYPES.tech} />
         <SubSection name="TL;DR">
@@ -82,11 +81,11 @@ const WeekOfRust = props => {
             💯
           </span>⨉ better than just showing a white page). The catch, however,
           is that the react-router has no concept of a 418 or 404 error. That’s
-          because it’s simply delivering the component it&apos;s been asked to
-          for any given route, and the server thinks everything is fine. The
-          side-effect of this is that any <CodeInline>GET</CodeInline> request
-          to a non-existent page on their website will return a 200 status code.
-          We can see this when executing the two commands below:
+          because it’s simply delivering the component that matches the provided
+          URL route. Meanwhie, the server thinks everything is fine. Any{' '}
+          <CodeInline>GET</CodeInline> request to a non-existent page on their
+          website will, therefore, return a 200 status code. We can see this
+          when executing the two commands below:
           <br />
           <br />
           <Code lang="bash">
@@ -121,9 +120,9 @@ const WeekOfRust = props => {
           </Code>
           <br />
           If we are being really picky, this behaviour is a bit off. Our user is
-          seeing an
-          <CodeInline>ERROR 418</CodeInline> page (see below) whilst their
-          browser is seeing an <CodeInline>OK 200</CodeInline>.
+          seeing the
+          <CodeInline>ERROR 418</CodeInline> page below whilst their browser is
+          processing an <CodeInline>OK 200</CodeInline>.
           <br />
           <FadingLazyLoadedImage
             className={getClassName('apps__image')}
@@ -135,13 +134,14 @@ const WeekOfRust = props => {
           />
         </SubSection>
         <SubSection name="A more correct solution">
-          Due to using a front-end routing mechanism (which has many performance
-          benefits) there is no easy fix for this. We need to give the server
+          Beacause react-router is a front-end routing mechanism (which, by the
+          way, has many performance benefits and allows us to build awesome
+          SPA&apos;s) there is no easy fix for this. We need to give the server
           some understanding of our application structure so that it
-          doesn&apos;t send the same response to all routes. The only way we can
-          get requests to the server to return the correct status code is by
-          implementing a more complete server application. My solution is,
-          therefore, as follows:
+          doesn&apos;t send the same response code to every route. The only way
+          we for different server requests to return different status codes is
+          to implement a server application which has knowledge of our
+          application. My solution is, therefore, as follows:
           <br />
           &nbsp;&nbsp;1. Create an express app which runs allong side the react
           app.
@@ -259,7 +259,9 @@ const WeekOfRust = props => {
             <br />
             &nbsp;&nbsp;&nbsp;&nbsp;{`<Route exact path="/" component={HomePage} />`}
             <br />
-            &nbsp;&nbsp;&nbsp;&nbsp;{`<Route path="/example-418" component={Example418} />`}
+            &nbsp;&nbsp;&nbsp;&nbsp;{`<Route path="/example-418" component={Component418} />`}
+            <br />
+            &nbsp;&nbsp;&nbsp;&nbsp;{`<Route path="*" component={Component404} />`}
             <br />
             &nbsp;&nbsp;{`</Switch>`}
             <br />
