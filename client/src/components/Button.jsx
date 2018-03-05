@@ -49,10 +49,17 @@ const Button = props => {
 
   if (className) classNameFinal.push(className);
 
+  let onClickFinal = onClick;
+  if (href && hrefExternal) {
+    onClickFinal = () => {
+      window.open(href, '_blank');
+    };
+  }
+
   const buttonComponent = (
     <button
       disabled={disabled}
-      onClick={disabled ? null : onClick}
+      onClick={disabled ? null : onClickFinal}
       className={classNameFinal.join(' ')}
       {...rest}
     >
@@ -60,10 +67,7 @@ const Button = props => {
     </button>
   );
 
-  if (href) {
-    if (hrefExternal) {
-      return <a href={href}>{buttonComponent}</a>;
-    }
+  if (href && !hrefExternal) {
     return <NavLink to={href}>{buttonComponent}</NavLink>;
   }
 
