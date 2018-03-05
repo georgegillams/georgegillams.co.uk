@@ -9,7 +9,9 @@ import vimSm from '../Articles/images/vimSm.png';
 import toughMudder from '../Articles/images/toughMudder.jpg';
 import toughMudderSm from '../Articles/images/toughMudderSm.jpg';
 import rustSm from '../Articles/images/rustSm.jpg';
-import teapot from '../Articles/images/teapot.gif';
+import lrSm from '../Articles/images/lrSm.jpg';
+import teapotGif from '../Articles/images/teapot.gif';
+import teapot from '../Articles/images/teapot.jpg';
 
 import STYLES from '../pages.scss';
 
@@ -22,34 +24,35 @@ const Articles = () => (
       day={0}
       month="NaN"
       className={getClassName('pages__card')}
-      imageSrc={null}
+      imageSrc={lrSm}
       linkUrl="/blog/lightroom-workflow"
       title="My Lightroom Workflow"
-      >
-        <Tag type={TAG_TYPES.photography} />
-      </ArticleCard>
-      <ArticleCard
-        day={0}
-        month="NaN"
-        className={getClassName('pages__card')}
-        imageBorder="cornflowerblue"
-        imageSrc={teapot}
-        linkUrl="/blog/react-http-response-codes"
-        title="Sending a 418 in React.js"
-        >
-          <Tag type={TAG_TYPES.tech} />
-        </ArticleCard>
+    >
+      <Tag type={TAG_TYPES.photography} />
+    </ArticleCard>
+    <ArticleCard
+      light
+      day={0}
+      month="NaN"
+      className={getClassName('pages__card')}
+      imageBorder="cornflowerblue"
+      imageSrc={teapotGif}
+      fillImageSrc={teapot}
+      linkUrl="/blog/react-http-response-codes"
+      title="Sending a 418 in React.js"
+    >
+      <Tag type={TAG_TYPES.tech} />
+    </ArticleCard>
     <ArticleCard
       day={0}
-      month={"NaN"}
+      month="NaN"
       className={getClassName('pages__card')}
-      fillImageSrc={null}
       imageSrc={rustSm}
       linkUrl="/blog/week-of-rust"
       title="My week of Rust"
-      >
-        <Tag type={TAG_TYPES.tech} />
-      </ArticleCard> */}
+    >
+      <Tag type={TAG_TYPES.tech} />
+    </ArticleCard>{' '} */}
     <ArticleCard
       light
       imageBorder="darkorange"
