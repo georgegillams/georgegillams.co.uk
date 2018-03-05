@@ -4,6 +4,7 @@ import Section from './../../components/Section';
 import SubSection from './../../components/SubSection';
 import ArticleDate from '../../components/ArticleDate';
 import Comments from '../../components/Comments';
+import Tag, { TAG_TYPES } from '../../components/Tag';
 import TextLink from '../../components/TextLink';
 import Quote from '../../components/Quote';
 import PageSwitchScroller from '../../components/PageSwitchScroller';
@@ -27,6 +28,7 @@ const ToughMudder = props => {
       <PageSwitchScroller />
       <Section name="Running 5 Tough Mudders">
         <ArticleDate date={DATE_WRITTEN} />
+        <Tag type={TAG_TYPES.events} />
         <SubSection name="Why I did it">
           I&apos;d never considered doing a{' '}
           <TextLink external href="https://toughmudder.co.uk/">
