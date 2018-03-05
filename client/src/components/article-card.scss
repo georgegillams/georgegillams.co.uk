@@ -29,8 +29,8 @@
     grid-template-columns: 5rem auto 10.5rem;
     grid-template-areas:
       'date title image'
-      'date desc image'
-      'nothing desc image';
+      'date children image'
+      'nothing children image';
     grid-gap: 1rem;
     box-sizing: border-box;
 
@@ -118,8 +118,10 @@
     align-items: center;
   }
 
-  &__desc {
-    grid-area: desc;
+  &__children {
+    display: flex;
+    grid-area: children;
+    flex-direction: row;
     align-items: center;
   }
 
