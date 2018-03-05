@@ -11,6 +11,7 @@ import Comments from '../../components/Comments';
 import TextLink from '../../components/TextLink';
 import Tag, { TAG_TYPES } from '../../components/Tag';
 import Quote from '../../components/Quote';
+import Tag, { TAG_TYPES } from '../../components/Tag';
 import Code from '../../components/Code';
 import CodeInline from '../../components/CodeInline';
 import CodeBashArrow from '../../components/CodeBashArrow';
@@ -46,6 +47,7 @@ const WeekOfRust = props => {
       <Section name="React.js and HTTP status codes">
         <Tag type={TAG_TYPES.tech} />
         <ArticleDate date={DATE_WRITTEN} />
+        <Tag type={TAG_TYPES.tech} />
         <SubSection name="TL;DR">
           Out of the box, your react-router app will serve a 200 HTTP status
           code regardless of route. I made an app that can also return 404 and
