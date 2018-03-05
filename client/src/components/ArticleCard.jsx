@@ -37,6 +37,7 @@ class ArticleCard extends Component {
       className,
       backgroundImageClassName,
       imageClassName,
+      children,
       ...rest
     } = this.props;
 
@@ -107,6 +108,9 @@ class ArticleCard extends Component {
                 link
                 className={getClassName('article-card__title')}
               />
+              <div className={getClassName('article-card__children')}>
+                {children}
+              </div>
               <div
                 className={imageClassNames.join(' ')}
                 style={{
