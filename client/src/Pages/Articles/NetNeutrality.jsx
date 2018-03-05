@@ -7,6 +7,7 @@ import BpkImage, {
 } from 'bpk-component-image';
 import Section from './../../components/Section';
 import SubSection from './../../components/SubSection';
+import Tag, { TAG_TYPES } from '../../components/Tag';
 import netflixDownloads from './images/netflixDownloads.png';
 import ArticleDate from '../../components/ArticleDate';
 import LicenseInfo from '../../components/LicenseInfo';
@@ -43,6 +44,7 @@ const NetNeutrality = props => {
         {/* <SubSection >
           TODO
         </SubSection> */}
+        <Tag type={TAG_TYPES.tech} />
         <SubSection name="Introduction">
           The Internet’s unique architecture has enabled it to rapidly expand
           its influence on our world. Within a relatively short period of time

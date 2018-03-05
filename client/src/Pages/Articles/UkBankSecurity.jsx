@@ -4,6 +4,7 @@ import BpkImage, {
   withLazyLoading,
   withLoadingBehavior,
 } from 'bpk-component-image';
+import Tag, { TAG_TYPES } from '../../components/Tag';
 import TextLink from '../../components/TextLink';
 import Section from '../../components/Section';
 import Comments from '../../components/Comments';
@@ -31,6 +32,8 @@ const UkBankSecurity = props => {
   return (
     <main className={classNameFinal.join(' ')} {...rest}>
       <PageSwitchScroller />
+      <Tag type={TAG_TYPES.tech} />
+      <Tag type={TAG_TYPES.security} />
       <Section name="UK Bank Security">
         When logging into a number of UK bank websites, they ask for particular
         characters from a password or memorable word. Some banks implement this
