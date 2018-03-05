@@ -9,6 +9,7 @@ import SubSection from './../../components/SubSection';
 import ArticleDate from '../../components/ArticleDate';
 import Comments from '../../components/Comments';
 import TextLink from '../../components/TextLink';
+import Tag, { TAG_TYPES } from '../../components/Tag';
 import Quote from '../../components/Quote';
 import Code from '../../components/Code';
 import CodeInline from '../../components/CodeInline';
@@ -43,6 +44,7 @@ const WeekOfRust = props => {
       <br />
       <PageSwitchScroller />
       <Section name="React.js and HTTP status codes">
+        <Tag type={TAG_TYPES.tech} />
         <ArticleDate date={DATE_WRITTEN} />
         <SubSection name="TL;DR">
           Out of the box, your react-router app will serve a 200 HTTP status

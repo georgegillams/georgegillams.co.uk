@@ -1,6 +1,7 @@
 import React from 'react';
 import ArticleCard from '../../components/ArticleCard';
 import PageSwitchScroller from '../../components/PageSwitchScroller';
+import Tag, { TAG_TYPES } from '../../components/Tag';
 import netNeutrality from '../Articles/images/spinner.gif';
 import netNeutralitySm from '../Articles/images/netNeutralitySm.jpg';
 import vim from '../Articles/images/vim.jpg';
@@ -21,11 +22,23 @@ const Articles = () => (
       day={0}
       month="NaN"
       className={getClassName('pages__card')}
-      imageBorder="cornflowerblue"
-      imageSrc={teapot}
-      linkUrl="/blog/react-http-response-codes"
-      title="Sending a 418 in React.js"
-    />
+      imageSrc={null}
+      linkUrl="/blog/lightroom-workflow"
+      title="My Lightroom Workflow"
+      >
+        <Tag type={TAG_TYPES.photography} />
+      </ArticleCard>
+      <ArticleCard
+        day={0}
+        month="NaN"
+        className={getClassName('pages__card')}
+        imageBorder="cornflowerblue"
+        imageSrc={teapot}
+        linkUrl="/blog/react-http-response-codes"
+        title="Sending a 418 in React.js"
+        >
+          <Tag type={TAG_TYPES.tech} />
+        </ArticleCard>
     <ArticleCard
       day={0}
       month={"NaN"}
@@ -34,7 +47,9 @@ const Articles = () => (
       imageSrc={rustSm}
       linkUrl="/blog/week-of-rust"
       title="My week of Rust"
-    /> */}
+      >
+        <Tag type={TAG_TYPES.tech} />
+      </ArticleCard> */}
     <ArticleCard
       light
       imageBorder="darkorange"
@@ -45,7 +60,9 @@ const Articles = () => (
       imageSrc={toughMudderSm}
       linkUrl="/blog/tough-mudder"
       title="Running 5 Tough Mudders"
-    />
+    >
+      <Tag type={TAG_TYPES.events} />
+    </ArticleCard>
     <ArticleCard
       backgroundImageClassName={getClassName('pages__nn-background-image')}
       imageBorder="red"
@@ -56,7 +73,9 @@ const Articles = () => (
       imageSrc={netNeutralitySm}
       linkUrl="/blog/net-neutrality"
       title="My Take on Net Neutrality"
-    />
+    >
+      <Tag type={TAG_TYPES.tech} />
+    </ArticleCard>
     <ArticleCard
       light
       day={23}
@@ -67,7 +86,9 @@ const Articles = () => (
       imageSrc={vimSm}
       linkUrl="/blog/vim"
       title="Switching to Vim"
-    />
+    >
+      <Tag type={TAG_TYPES.tech} />
+    </ArticleCard>
   </div>
 );
 

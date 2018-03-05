@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import Section from './../../components/Section';
 import SubSection from './../../components/SubSection';
 import ArticleDate from '../../components/ArticleDate';
+import Tag, { TAG_TYPES } from '../../components/Tag';
 import Comments from '../../components/Comments';
 import TextLink from '../../components/TextLink';
 import PageSwitchScroller from '../../components/PageSwitchScroller';
@@ -25,6 +26,7 @@ const SwitchToVim = props => {
       <PageSwitchScroller />
       <Section name="Switching to Vim">
         <ArticleDate date={DATE_WRITTEN} />
+        <Tag type={TAG_TYPES.tech} />
         <SubSection name="Why I did it">
           It started with the classic situation of knowing someone at work who
           is some sort of Vim Jedi. I was in awe of his workflow since I arrived
