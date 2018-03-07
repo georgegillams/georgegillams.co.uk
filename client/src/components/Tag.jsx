@@ -75,7 +75,14 @@ class Tag extends Component {
     );
 
     if (link) {
-      return <NavLink to={`/blog?filter=${type}`}>{tagComponent}</NavLink>;
+      return (
+        <NavLink
+          className={getClassName('tag__inner--link')}
+          to={`/blog?filter=${type}`}
+        >
+          {tagComponent}
+        </NavLink>
+      );
     }
 
     return tagComponent;
