@@ -44,9 +44,8 @@ const WeekOfRust = props => {
       <br />
       <PageSwitchScroller />
       <Section name="React.js and HTTP status codes">
-        <Tag type={TAG_TYPES.tech} />
         <ArticleDate date={DATE_WRITTEN} />
-        <Tag type={TAG_TYPES.tech} />
+        <Tag type={TAG_TYPES.tech} link />
         <SubSection name="TL;DR">
           Out of the box, your react-router app will serve a 200 HTTP status
           code regardless of route. I made an app that can also return 404 and
