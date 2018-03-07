@@ -4,14 +4,13 @@
 .tag {
   &__outer {
     position: relative;
-    width: 5rem;
-    height: 1.55rem;
+    padding-left: .6rem;
   }
 
   &__inner-hole {
     position: absolute;
     top: .556rem;
-    left: .6rem;
+    left: .48rem;
     width: .3rem;
     height: .3rem;
     border-radius: 1rem;
@@ -21,7 +20,7 @@
   &__inner-triangle {
     position: absolute;
     top: .151rem;
-    left: .31rem;
+    left: .19rem;
     width: 1.126rem;
     height: 1.126rem;
     -webkit-transform: rotate(45deg);
@@ -38,8 +37,7 @@
   }
 
   &__inner {
-    position: absolute;
-    left: .72rem;
+    position: relative;
     height: 1rem;
     padding: .17rem .4rem .27rem;
     transition: all .3s;
@@ -50,6 +48,10 @@
     color: white;
     font-family: 'Quattrocento Sans', sans-serif;
     font-size: 1rem;
+
+    &--link {
+      text-decoration: none;
+    }
 
     &--hovered {
       filter: brightness(1.2);
@@ -74,7 +76,6 @@
   &--travel {
     background-color: #01579b;
     // background-image: linear-gradient(165deg, #fdd835, #f9a825);
-    color: #3c4451;
   }
 
   &--security {

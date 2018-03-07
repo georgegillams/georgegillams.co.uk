@@ -1,0 +1,17 @@
+@import '~bpk-mixins';
+@import '../../bower_components/animatewithsass/animate.scss';
+
+.tag-filter {
+  &__outer {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__tag {
+    margin: .2rem;
+
+    &--deselected {
+      filter: saturate(.1);
+    }
+  }
+}
