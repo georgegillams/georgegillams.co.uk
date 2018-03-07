@@ -1,12 +1,35 @@
-import React from 'react';
+import React, { Component } from 'react';
 import Tag, { TAG_TYPES } from './Tag';
 
 import STYLES from './tag-filter.scss';
 
 const getClassName = className => STYLES[className] || 'UNKNOWN';
 
-const Articles = () => (
-  <div>{Object.keys(TAG_TYPES).map(v => <Tag type={v} link />)}</div>
-);
+class TagFilter extends Component {
+  constructor(props) {
+    super(props);
 
-export default Articles;
+    this.state = {
+      selectedTags: [],
+    };
+  }
+
+  render() {
+    const { className, ...rest } = this.props;
+
+    const outerClassName = [getClassName('tag-filter__outer')];
+    if (className) {
+      outerClassName.push(className);
+    }
+
+    return (
+      <div className={outerClassName.join(' ')}>
+        {Object.keys(TAG_TYPES).map(v => (
+          <Tag className={getClassName('tag-filter__tag')} type={v} link />
+        ))}
+      </div>
+    );
+  }
+}
+
+export default TagFilter;

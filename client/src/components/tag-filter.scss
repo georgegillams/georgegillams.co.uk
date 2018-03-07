@@ -3,12 +3,13 @@
 
 .tag-filter {
   &__outer {
-    position: relative;
-    width: 5rem;
-    height: 1.55rem;
+    display: flex;
+    flex-wrap: wrap;
   }
 
-  &__inner {
+  &__tag {
+    margin: .2rem;
+
     &--deselected {
       filter: saturate(.1);
     }
