@@ -21,7 +21,7 @@ const getClassName = className => STYLES[className] || 'UNKNOWN';
 const Articles = () => (
   <div>
     <PageSwitchScroller />
-    <TagFilter />
+    {/* <TagFilter className={getClassName('pages__card')} /> */}
     {/* <ArticleCard
       day={0}
       month="NaN"
