@@ -1,0 +1,16 @@
+@import '~bpk-mixins';
+@import '../../bower_components/animatewithsass/animate.scss';
+
+.tag-filter {
+  &__outer {
+    position: relative;
+    width: 5rem;
+    height: 1.55rem;
+  }
+
+  &__inner {
+    &--deselected {
+      filter: saturate(.1);
+    }
+  }
+}
