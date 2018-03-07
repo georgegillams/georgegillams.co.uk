@@ -33,13 +33,13 @@
     // background-image: linear-gradient(165deg, #6bc1ff, #44aeff);
 
     &--hovered {
-      filter: saturate(5);
+      filter: brightness(1.2);
     }
   }
 
   &__inner {
     position: absolute;
-    left: .75rem;
+    left: .72rem;
     height: 1rem;
     padding: .17rem .4rem .27rem;
     transition: all .3s;
@@ -52,7 +52,7 @@
     font-size: 1rem;
 
     &--hovered {
-      filter: saturate(5);
+      filter: brightness(1.2);
     }
 
     &--dark-text {

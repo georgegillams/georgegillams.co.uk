@@ -38,7 +38,7 @@ class Tag extends Component {
   }
 
   render() {
-    const { className, type, children, ...rest } = this.props;
+    const { className, type, children, link, ...rest } = this.props;
 
     const outerClassNameFinal = [getClassName('tag__outer')];
     if (className) {
@@ -52,7 +52,7 @@ class Tag extends Component {
       angleClassName.push(tagTypeClassNames[type]);
     }
 
-    if (this.state.hovering) {
+    if (this.state.hovering && link) {
       tagClassName.push(getClassName('tag__inner--hovered'));
       angleClassName.push(getClassName('tag__inner-triangle--hovered'));
     }
@@ -60,8 +60,12 @@ class Tag extends Component {
     const tagComponent = (
       <div
         className={outerClassNameFinal.join(' ')}
-        onMouseEnter={() => this.setState({ hovering: true })}
-        onMouseLeave={() => this.setState({ hovering: false })}
+        onMouseEnter={() => {
+          this.setState({ hovering: true });
+        }}
+        onMouseLeave={() => {
+          this.setState({ hovering: false });
+        }}
         {...rest}
       >
         <div className={angleClassName.join(' ')} />
@@ -70,24 +74,23 @@ class Tag extends Component {
       </div>
     );
 
-    // if (href) {
-    //   if (hrefExternal) {
-    //     return <a href={href}>{buttonComponent}</a>;
-    //   }
-    //   return <NavLink to={href}>{buttonComponent}</NavLink>;
-    // }
+    if (link) {
+      return <NavLink to={`/blog?filter=${type}`}>{tagComponent}</NavLink>;
+    }
 
     return tagComponent;
   }
 }
 
 Tag.propTypes = {
+  link: PropTypes.bool,
   type: PropTypes.oneOf(TAG_TYPES),
   className: PropTypes.string,
   children: PropTypes.node,
 };
 
 Tag.defaultProps = {
+  link: false,
   tagType: null,
   className: null,
   children: null,

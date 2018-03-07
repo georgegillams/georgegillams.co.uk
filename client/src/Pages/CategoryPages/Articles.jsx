@@ -20,6 +20,9 @@ const getClassName = className => STYLES[className] || 'UNKNOWN';
 const Articles = () => (
   <div>
     <PageSwitchScroller />
+
+    {/* {Object.keys(TAG_TYPES).map(v => <Tag type={v} link />)} */}
+
     {/* <ArticleCard
       day={0}
       month="NaN"
@@ -41,7 +44,7 @@ const Articles = () => (
       linkUrl="/blog/react-http-response-codes"
       title="Sending a 418 in React.js"
     >
-      <Tag type={TAG_TYPES.tech} />
+      <Tag type={TAG_TYPES.tech}  />
     </ArticleCard>
     <ArticleCard
       day={0}
@@ -51,7 +54,7 @@ const Articles = () => (
       linkUrl="/blog/week-of-rust"
       title="My week of Rust"
     >
-      <Tag type={TAG_TYPES.tech} />
+      <Tag type={TAG_TYPES.tech}  />
     </ArticleCard>{' '} */}
     <ArticleCard
       light
