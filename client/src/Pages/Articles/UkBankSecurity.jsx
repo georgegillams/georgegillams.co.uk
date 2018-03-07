@@ -32,7 +32,7 @@ const UkBankSecurity = props => {
   return (
     <main className={classNameFinal.join(' ')} {...rest}>
       <PageSwitchScroller />
-      <Tag type={TAG_TYPES.tech} />
+      <Tag type={TAG_TYPES.tech} link />
       <Tag type={TAG_TYPES.security} />
       <Section name="UK Bank Security">
         When logging into a number of UK bank websites, they ask for particular
