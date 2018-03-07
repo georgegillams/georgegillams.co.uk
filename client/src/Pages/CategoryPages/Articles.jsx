@@ -2,6 +2,7 @@ import React from 'react';
 import ArticleCard from '../../components/ArticleCard';
 import PageSwitchScroller from '../../components/PageSwitchScroller';
 import Tag, { TAG_TYPES } from '../../components/Tag';
+import TagFilter from '../../components/TagFilter';
 import netNeutrality from '../Articles/images/spinner.gif';
 import netNeutralitySm from '../Articles/images/netNeutralitySm.jpg';
 import vim from '../Articles/images/vim.jpg';
@@ -20,9 +21,7 @@ const getClassName = className => STYLES[className] || 'UNKNOWN';
 const Articles = () => (
   <div>
     <PageSwitchScroller />
-
-    {/* {Object.keys(TAG_TYPES).map(v => <Tag type={v} link />)} */}
-
+    <TagFilter />
     {/* <ArticleCard
       day={0}
       month="NaN"
