@@ -20,8 +20,10 @@ class DefaultLayout extends React.Component {
 
   render() {
     const location = `${window.location}`;
+    const isLocalNetwork = location.includes('192.168.');
     const isLocalhost = location.includes('localhost');
-    const needsRedirect = !isLocalhost && !location.includes('https');
+    const needsRedirect =
+      !(isLocalhost || isLocalNetwork) && !location.includes('https');
     if (needsRedirect) {
       window.location = location.replace('http', 'https');
       return <RedirectNotice />;
