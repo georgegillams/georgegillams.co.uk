@@ -41,6 +41,7 @@
     height: 1rem;
     padding: .17rem .4rem .27rem;
     transition: all .3s;
+    transition: all .4s;
     border: none;
     border-radius: .2rem;
     background-color: #44aeff;
@@ -53,7 +54,13 @@
       text-decoration: none;
     }
 
+    &--disabled {
+      opacity: .5;
+      filter: saturate(.5);
+    }
+
     &--hovered {
+      cursor: pointer;
       filter: brightness(1.2);
     }
 
