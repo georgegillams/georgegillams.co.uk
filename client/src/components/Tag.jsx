@@ -38,7 +38,15 @@ class Tag extends Component {
   }
 
   render() {
-    const { className, type, children, link, ...rest } = this.props;
+    const {
+      className,
+      disabled,
+      type,
+      children,
+      onClick,
+      link,
+      ...rest
+    } = this.props;
 
     const outerClassNameFinal = [getClassName('tag__outer')];
     if (className) {
@@ -52,9 +60,13 @@ class Tag extends Component {
       angleClassName.push(tagTypeClassNames[type]);
     }
 
-    if (this.state.hovering && link) {
+    if (this.state.hovering && (link || onClick)) {
       tagClassName.push(getClassName('tag__inner--hovered'));
       angleClassName.push(getClassName('tag__inner-triangle--hovered'));
+    }
+
+    if (disabled) {
+      outerClassNameFinal.push(getClassName('tag__inner--disabled'));
     }
 
     const tagComponent = (
@@ -66,6 +78,7 @@ class Tag extends Component {
         onMouseLeave={() => {
           this.setState({ hovering: false });
         }}
+        onClick={onClick}
         {...rest}
       >
         <div className={angleClassName.join(' ')} />
@@ -91,6 +104,7 @@ class Tag extends Component {
 
 Tag.propTypes = {
   link: PropTypes.bool,
+  onClick: PropTypes.func,
   type: PropTypes.oneOf(TAG_TYPES),
   className: PropTypes.string,
   children: PropTypes.node,
@@ -98,7 +112,8 @@ Tag.propTypes = {
 
 Tag.defaultProps = {
   link: false,
-  tagType: null,
+  onClick: null,
+  type: null,
   className: null,
   children: null,
 };
