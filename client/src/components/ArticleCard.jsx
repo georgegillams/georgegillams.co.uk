@@ -29,6 +29,7 @@ class ArticleCard extends Component {
       day,
       month,
       imageBorder,
+      bannerColor,
       fillImageSrc,
       light,
       linkUrl,
@@ -126,7 +127,10 @@ class ArticleCard extends Component {
                 />
               </div>
             </div>
-            <div className={bannerClassNames.join(' ')} />
+            <div
+              className={bannerClassNames.join(' ')}
+              style={bannerColor ? { backgroundColor: bannerColor } : {}}
+            />
           </div>
         </div>
       </NavLink>
@@ -136,6 +140,7 @@ class ArticleCard extends Component {
 
 ArticleCard.propTypes = {
   light: PropTypes.bool,
+  bannerColor: PropTypes.string,
   imageBorder: PropTypes.bool,
   fillImageSrc: PropTypes.node,
   imageSrc: PropTypes.node,
@@ -146,6 +151,7 @@ ArticleCard.propTypes = {
 
 ArticleCard.defaultProps = {
   light: false,
+  bannerColor: null,
   imageBorder: null,
   linkUrl: null,
   fillImageSrc: null,

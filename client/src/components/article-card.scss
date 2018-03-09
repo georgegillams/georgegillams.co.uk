@@ -64,8 +64,8 @@
     z-index: -1;
     width: calc(100% + 2rem);
     height: calc(100% + 2rem);
-    margin-top: -2rem;
-    margin-left: -2rem;
+    margin-top: -1rem;
+    margin-left: -1rem;
     background-position: center;
     background-size: cover;
     opacity: .8;
@@ -98,9 +98,9 @@
   }
 
   &__banner {
-    width: 0;
+    width: 90%;
     height: .2rem;
-    margin-left: 50%;
+    margin-left: 5%;
     transition: all .4s;
     background-color: #44aeff;
 

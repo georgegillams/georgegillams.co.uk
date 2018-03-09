@@ -78,6 +78,7 @@ class Articles extends Component {
           this.state.selectedTags.includes('events')) && (
           <ArticleCard
             light
+            bannerColor="darkorange"
             imageBorder="darkorange"
             day={19}
             month="Feb"
@@ -97,6 +98,7 @@ class Articles extends Component {
               'pages__nn-background-image',
             )}
             imageBorder="red"
+            bannerColor="red"
             day={8}
             month="Dec"
             className={getClassName('pages__card')}
@@ -113,6 +115,7 @@ class Articles extends Component {
           <ArticleCard
             light
             day={23}
+            bannerColor="#E2344F"
             imageBorder="lightgray"
             month="Dec"
             className={getClassName('pages__card')}
