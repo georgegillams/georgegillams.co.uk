@@ -10,26 +10,49 @@ import NetNeutralityBanner from './HomePageV2Banners/NetNeutralityBanner';
 import MunichBanner from './HomePageV2Banners/MunichBanner';
 import PasswordCharacterExtractorBanner from './HomePageV2Banners/PasswordCharacterExtractorBanner';
 import ArtBanner from './HomePageV2Banners/ArtBanner';
+import LiveInSouthamptonBanner from './HomePageV2Banners/LiveInSouthamptonBanner';
+import downArrow from '../images/downArrow.png';
+import homePageBanner from './HomePageV2Banners/homePageBanner';
 
 import STYLES from './pages.scss';
 
 const getClassName = className => STYLES[className] || 'UNKNOWN';
 
-//TODO ADD DOWN ARROW TO PERSONAL BANNER
-//TODO PASS IN PROP TO SAY WHAT PERCENTAGE OF SCROLLING IS DONE
-//TODO MAKE HEIGHT 100vh FOR ALL BANNERS, except THE FIRST WHICH SHOULD BE calc(100vh - navbar height)
+const PersonalDetailsBannerH = homePageBanner(
+  PersonalDetailsBanner,
+  null,
+  '01',
+);
+const SouthamptonBannerH = homePageBanner(LiveInSouthamptonBanner, null, '02');
+
+// TODO ADD DOWN ARROW TO PERSONAL BANNER
+// TODO PASS IN PROP TO SAY WHAT PERCENTAGE OF SCROLLING IS DONE
+// TODO MAKE HEIGHT 100vh FOR ALL BANNERS, except THE FIRST WHICH SHOULD BE calc(100vh - navbar height)
 const HomePageV2 = () => (
   <main>
     <div className={getClassName('pages__slider')}>
-      <PersonalDetailsBanner />
-      {/*<LiveInSouthamptonBanner />
+      <PersonalDetailsBannerH />
+      <SouthamptonBannerH />
+      <img
+        src={downArrow}
+        style={{
+          position: 'absolute',
+          left: 'calc(50% - 1.5rem)',
+          bottom: '1rem',
+          width: '3rem',
+          // opacity: arrowOpacity,
+        }}
+      />
+      {/* <LiveInSouthamptonBanner />
       <WorkInLondonBanner />
       <OpenSourceSoftwareEngineerAtSkyscannerBanner />
-      <PassionateAboutPhotographyBanner />*/}
+      <PassionateAboutPhotographyBanner /> */}
     </div>
-    <div>{/*<BlogCard />
+    <div>
+      {/* <BlogCard />
       <PhotographyCard />
-      <ContactCard />*/}</div>
+      <ContactCard /> */}
+    </div>
   </main>
 );
 // <Showcase name="Articles">

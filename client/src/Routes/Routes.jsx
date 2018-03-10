@@ -27,6 +27,7 @@ import DefaultLayout from '../components/DefaultLayout';
 // import DocsLayout from  './../layouts/DocsLayout';
 
 import HomePage from '../Pages/HomePage';
+import HomePageV2 from '../Pages/HomePageV2';
 import Admin from '../Pages/Admin';
 import Work from '../Pages/Work/Work';
 import PasswordCharacterExtractor from '../Pages/Work/PasswordCharacterExtractor';
@@ -113,6 +114,7 @@ const Routes = (
         <Route path="/example-418" component={TeaPot} />
         <Route path="/example-teapot" component={TeaPot} />
         <Route path="/example-404" component={ForOhFour} />
+        <Route path="/beta" component={HomePageV2} />
         <Route exact path="/admin" component={Admin} />
         <Route component={ForOhFour} />
       </Switch>

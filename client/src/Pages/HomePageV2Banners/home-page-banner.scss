@@ -1,6 +1,26 @@
 @import '~bpk-mixins';
 
-.pages {
+.home-page-banner {
+  &__static-container {
+    position: relative;
+    width: 100vw;
+    height: 300vh;
+    background-color: #1e1e1e;
+  }
+
+  &__moving-container {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+  }
+
+  &__debug-percentage {
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
+
   &__site-map-item {
     width: auto;
   }
@@ -39,14 +59,9 @@
 
   &__site-map-tree {
     display: flex;
-    height: 30rem;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
-    @include bpk-breakpoint-tablet {
-      height: auto;
-    }
   }
 
   &__page {
@@ -69,24 +84,25 @@
   }
 
   &__banner {
-    height: 30rem;
   }
 
   &__banner-image {
     width: 100%;
-    height: 30rem;
+    height: 100%;
     background-position: center;
     background-size: cover;
   }
 
   &__banner-container {
     width: 100%;
-    padding-top: 2rem;
-    padding-left: 1rem;
+    height: 100%;
+
+    &--centered {
+      text-align: center;
+    }
 
     &--vertical-spread {
       display: flex;
-      height: 28rem;
       padding: 0;
       flex-direction: column;
       justify-content: space-around;
@@ -102,11 +118,12 @@
 
   &__nn-background-image {
     background-repeat: no-repeat;
-    background-position: 15rem -2.1rem !important;
+    background-position: 16rem -1.1rem !important;
     background-size: 16rem !important;
+    filter: brightness(.5);
 
     @include bpk-breakpoint-tablet {
-      background-position: 3rem 2.1rem !important;
+      background-position: 4rem 3.1rem !important;
     }
   }
 }
