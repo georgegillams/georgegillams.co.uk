@@ -1,7 +1,10 @@
 import React from 'react';
 import PersonalDetailsBanner from './HomePageV2Banners/PersonalDetailsBanner';
-import downArrow from '../images/downArrow.png';
 import homePageBanner from './HomePageV2Banners/homePageBanner';
+import ArticleCard from '../components/ArticleCard';
+import phoneIcon from '../icons/phoneIcon.png';
+import blogIcon from './../icons/blogIcon.jpg';
+import photographyIcon from './../icons/photoIcon.jpg';
 
 import STYLES from './pages.scss';
 
@@ -12,34 +15,51 @@ const PersonalDetailsBannerH = homePageBanner(
   '1200vh',
   '01',
 );
-// const SouthamptonBannerH = homePageBanner(LiveInSouthamptonBanner, null, '02');
 
-// TODO ADD DOWN ARROW TO PERSONAL BANNER
-// TODO PASS IN PROP TO SAY WHAT PERCENTAGE OF SCROLLING IS DONE
-// TODO MAKE HEIGHT 100vh FOR ALL BANNERS, except THE FIRST WHICH SHOULD BE calc(100vh - navbar height)
 const HomePageV2 = () => (
   <main>
     <div className={getClassName('pages__slider')}>
       <PersonalDetailsBannerH />
-      <img
-        src={downArrow}
-        style={{
-          position: 'absolute',
-          left: 'calc(50% - 1.5rem)',
-          bottom: '1rem',
-          width: '3rem',
-          // opacity: arrowOpacity,
-        }}
-      />
-      {/* <LiveInSouthamptonBanner />
-      <WorkInLondonBanner />
-      <OpenSourceSoftwareEngineerAtSkyscannerBanner />
-      <PassionateAboutPhotographyBanner /> */}
     </div>
-    <div>
-      {/* <BlogCard />
-      <PhotographyCard />
-      <ContactCard /> */}
+    <div
+      style={{
+        display: 'flex',
+        flexDirection: 'row',
+        marginTop: '3rem',
+        justifyContent: 'space-around',
+        width: '100vw',
+      }}
+    >
+      <ArticleCard
+        day={null}
+        month={null}
+        className={getClassName('pages__card')}
+        imageSrc={blogIcon}
+        linkUrl="/blog"
+        title="Blog"
+        style={{ maxWidth: '26%' }}
+        fixedWidth
+      />
+      <ArticleCard
+        day={null}
+        month={null}
+        className={getClassName('pages__card')}
+        imageSrc={photographyIcon}
+        linkUrl="/photography"
+        title="Photos"
+        style={{ maxWidth: '26%' }}
+        fixedWidth
+      />
+      <ArticleCard
+        day={null}
+        month={null}
+        className={getClassName('pages__card')}
+        imageSrc={phoneIcon}
+        linkUrl="/contact"
+        title="Contact"
+        style={{ maxWidth: '26%' }}
+        fixedWidth
+      />
     </div>
   </main>
 );
