@@ -1,16 +1,5 @@
 import React from 'react';
-import Slider from 'react-slick';
-import SubSection from '../components/SubSection';
-import GetSocial from '../components/GetSocial';
-import Card from '../components/Card';
-import Showcase from '../components/Showcase';
 import PersonalDetailsBanner from './HomePageV2Banners/PersonalDetailsBanner';
-import IcelandBanner from './HomePageV2Banners/IcelandBanner';
-import NetNeutralityBanner from './HomePageV2Banners/NetNeutralityBanner';
-import MunichBanner from './HomePageV2Banners/MunichBanner';
-import PasswordCharacterExtractorBanner from './HomePageV2Banners/PasswordCharacterExtractorBanner';
-import ArtBanner from './HomePageV2Banners/ArtBanner';
-import LiveInSouthamptonBanner from './HomePageV2Banners/LiveInSouthamptonBanner';
 import downArrow from '../images/downArrow.png';
 import homePageBanner from './HomePageV2Banners/homePageBanner';
 
@@ -20,10 +9,10 @@ const getClassName = className => STYLES[className] || 'UNKNOWN';
 
 const PersonalDetailsBannerH = homePageBanner(
   PersonalDetailsBanner,
-  null,
+  '1200vh',
   '01',
 );
-const SouthamptonBannerH = homePageBanner(LiveInSouthamptonBanner, null, '02');
+// const SouthamptonBannerH = homePageBanner(LiveInSouthamptonBanner, null, '02');
 
 // TODO ADD DOWN ARROW TO PERSONAL BANNER
 // TODO PASS IN PROP TO SAY WHAT PERCENTAGE OF SCROLLING IS DONE
@@ -32,7 +21,6 @@ const HomePageV2 = () => (
   <main>
     <div className={getClassName('pages__slider')}>
       <PersonalDetailsBannerH />
-      <SouthamptonBannerH />
       <img
         src={downArrow}
         style={{
