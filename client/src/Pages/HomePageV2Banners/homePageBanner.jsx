@@ -109,12 +109,10 @@ export default function homePageBanner(
                   : this.state.movingContainerOffset,
             }}
           >
-            {/* <div className={getClassName('home-page-banner__debug-percentage')}>
-              {`${this.state.percentageComplete}% complete ${
-                this.state.movingContainerOffset
-              }px offset`}
-            </div> */}
             <Component percentageComplete={this.state.percentageComplete} />
+            <div className={getClassName('home-page-banner__debug-percentage')}>
+              {`${this.state.percentageComplete}%`}
+            </div>
           </div>
         </main>
       );
