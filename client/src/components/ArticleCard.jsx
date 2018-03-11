@@ -38,6 +38,7 @@ class ArticleCard extends Component {
       className,
       backgroundImageClassName,
       imageClassName,
+      fixedWidth,
       children,
       ...rest
     } = this.props;
@@ -52,8 +53,28 @@ class ArticleCard extends Component {
     if (this.state.hovering) {
       bannerClassNames.push(getClassName('article-card__banner--hovered'));
     }
+    const innerBannerClassNames = [
+      getClassName('article-card__inner-container'),
+    ];
+    if (fixedWidth) {
+      innerBannerClassNames.push(
+        getClassName('article-card__inner-container--fixed-width'),
+      );
+    }
+    const contentContainerClassNames = [
+      getClassName('article-card__content-container'),
+    ];
+    if (fixedWidth) {
+      contentContainerClassNames.push(
+        getClassName('article-card__content-container--fixed-width'),
+      );
+    }
 
-    const imageClassNames = [getClassName('article-card__image-container')];
+    const imageContainerClassNames = [
+      getClassName('article-card__image-container'),
+    ];
+
+    const imageClassNames = [getClassName('article-card__image')];
     if (imageClassName) {
       imageClassNames.push(imageClassName);
     }
@@ -71,67 +92,66 @@ class ArticleCard extends Component {
     }
 
     return (
-      <NavLink to={linkUrl}>
-        <div
-          className={classNameFinal.join(' ')}
-          {...rest}
-          onMouseEnter={() => this.setState({ hovering: true })}
-          onMouseLeave={() => this.setState({ hovering: false })}
-        >
-          <div className={getClassName('article-card__content-container')}>
-            <div
-              className={backgroundImageClassNames.join(' ')}
-              style={{ backgroundImage: `url(${fillImageSrc})` }}
-            />
-            <div className={getClassName('article-card__inner-container')}>
-              <div className={getClassName('article-card__date')}>
-                <SubSection
-                  hover={this.state.hovering}
-                  noAnchor
-                  noPadding
-                  link
-                  light={light}
-                  name={month}
-                />
-                <SubSection
-                  hover={this.state.hovering}
-                  noAnchor
-                  noPadding
-                  link
-                  light={light}
-                  name={day}
-                />
-              </div>
-              <Section
+      <NavLink
+        to={linkUrl}
+        className={classNameFinal.join(' ')}
+        {...rest}
+        onMouseEnter={() => this.setState({ hovering: true })}
+        onMouseLeave={() => this.setState({ hovering: false })}
+      >
+        <div className={contentContainerClassNames.join(' ')}>
+          <div
+            className={backgroundImageClassNames.join(' ')}
+            style={{ backgroundImage: `url(${fillImageSrc})` }}
+          />
+          <div className={innerBannerClassNames.join(' ')}>
+            <div className={getClassName('article-card__date')}>
+              <SubSection
                 hover={this.state.hovering}
-                light={light}
-                name={title}
+                noAnchor
+                noPadding
                 link
-                className={getClassName('article-card__title')}
+                light={light}
+                name={month}
               />
-              <div className={getClassName('article-card__children')}>
-                {children}
-              </div>
-              <div
-                className={imageClassNames.join(' ')}
-                style={{
-                  border: imageBorder ? `solid ${imageBorder} 0.1rem` : 'none',
-                }}
-              >
-                <FadingLazyLoadedImage
-                  className={getClassName('article-card__image')}
-                  altText="Card image"
-                  width={987}
-                  height={575}
-                  src={imageSrc}
-                />
-              </div>
+              <SubSection
+                hover={this.state.hovering}
+                noAnchor
+                noPadding
+                link
+                light={light}
+                name={day}
+              />
+            </div>
+            <Section
+              hover={this.state.hovering}
+              light={light}
+              name={title}
+              link
+              className={getClassName('article-card__title')}
+            />
+            <div className={getClassName('article-card__children')}>
+              {children}
             </div>
             <div
-              className={bannerClassNames.join(' ')}
-              style={bannerColor ? { backgroundColor: bannerColor } : {}}
-            />
+              className={imageContainerClassNames.join(' ')}
+              style={{
+                border: imageBorder ? `solid ${imageBorder} 0.1rem` : 'none',
+              }}
+            >
+              <FadingLazyLoadedImage
+                className={imageClassNames.join(' ')}
+                altText="Card image"
+                width={987}
+                height={575}
+                src={imageSrc}
+              />
+            </div>
           </div>
+          <div
+            className={bannerClassNames.join(' ')}
+            style={bannerColor ? { backgroundColor: bannerColor } : {}}
+          />
         </div>
       </NavLink>
     );
