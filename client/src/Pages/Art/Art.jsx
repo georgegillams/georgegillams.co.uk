@@ -13,12 +13,12 @@ import tulips from '../Art/images/20160409.jpg';
 import motorway from '../Art/images/20160419.jpg';
 import ratatouille from '../Art/images/20170616.jpg';
 import missSaigon from '../Art/images/20161010.jpg';
-import photog01 from '../Art/images/photog_01.jpg';
-import photog02 from '../Art/images/photog_02.jpg';
-import photog03 from '../Art/images/photog_03.jpg';
-import photog04 from '../Art/images/photog_04.jpg';
-import photog05 from '../Art/images/photog_05.jpg';
-import photog06 from '../Art/images/photog_06.jpg';
+import photog01 from '../Art/images/photog_02.jpg';
+import photog02 from '../Art/images/photog_05.jpg';
+import photog03 from '../Art/images/photog_01.jpg';
+import photog04 from '../Art/images/photog_06.jpg';
+import photog05 from '../Art/images/photog_04.jpg';
+import photog06 from '../Art/images/photog_03.jpg';
 import PageSwitchScroller from '../../components/PageSwitchScroller';
 import ScrollIndicator from '../../components/ScrollIndicator';
 
@@ -58,7 +58,7 @@ const Art = props => {
             altText="Dog running with a Stick"
             width={3000}
             height={2000}
-            src={photog02}
+            src={photog01}
           />
         </SubSection>
         <SubSection noAnchor name="Stunt Motorcyclist">
@@ -67,7 +67,7 @@ const Art = props => {
             altText="Stunt Motorcyclist"
             width={3000}
             height={2000}
-            src={photog05}
+            src={photog02}
           />
         </SubSection>
         <SubSection noAnchor name="Longleat Festival of Light">
@@ -76,7 +76,7 @@ const Art = props => {
             altText="Longleat Festival of Light"
             width={3000}
             height={2000}
-            src={photog01}
+            src={photog03}
           />
         </SubSection>
         <SubSection noAnchor name="Serre Chevalier">
@@ -85,7 +85,7 @@ const Art = props => {
             altText="Serre Chevalier"
             width={3000}
             height={2000}
-            src={photog06}
+            src={photog04}
           />
         </SubSection>
         <SubSection
@@ -97,7 +97,7 @@ const Art = props => {
             altText="&quot;Thunder Mountain&quot; at Disneyland Paris"
             width={3000}
             height={2000}
-            src={photog04}
+            src={photog05}
           />
         </SubSection>
         <SubSection
@@ -109,7 +109,7 @@ const Art = props => {
             altText="Nick Matthew playing in the Canary Wharf Open"
             width={3000}
             height={2000}
-            src={photog03}
+            src={photog06}
           />
         </SubSection>
       </Section>
