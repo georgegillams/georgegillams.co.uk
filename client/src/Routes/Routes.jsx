@@ -68,6 +68,8 @@ const redirects = [
   { from: '/art', to: '/photography' },
   { from: '/photoshop', to: '/photography' },
   { from: '/net-neutrality', to: '/blog/net-neutrality' },
+  { from: '/phot', to: '/photography' },
+  { from: '/photo', to: '/photography' },
 ];
 
 // eslint-disable-next-line import/no-webpack-loader-syntax
