@@ -293,6 +293,7 @@ const PersonalDetailsBanner = props => {
           position: 'absolute',
           top: `${namePosition}rem`,
           opacity: nameOpacity,
+          textShadow: '.1rem .1rem .2rem #1E1E1E',
         }}
         light
         name="George Gillams"
@@ -364,7 +365,7 @@ const PersonalDetailsBanner = props => {
           height: '14rem',
           left: 'calc(50% - 7rem)',
           position: 'absolute',
-          borderRadius: '.5rem',
+          borderRadius: '.35rem',
           overflow: 'hidden',
           top: `${profilePicMarginTop}vh`,
         }}
@@ -421,7 +422,7 @@ const PersonalDetailsBanner = props => {
         style={{
           width: '50vw',
           position: 'absolute',
-          borderRadius: '.5rem',
+          borderRadius: '.35rem',
           overflow: 'hidden',
           bottom: `${cityscapeBottomPosition}vh`,
           left: `${cityscapeLeftPosition}vw`,
@@ -437,7 +438,7 @@ const PersonalDetailsBanner = props => {
         style={{
           width: '100vw',
           position: 'absolute',
-          borderRadius: '.5rem',
+          borderRadius: '.35rem',
           overflow: 'hidden',
           bottom: `${cityscapeBottomPosition}vh`,
           left: `${150 + cityscapeLeftPosition}vw`,
@@ -453,7 +454,7 @@ const PersonalDetailsBanner = props => {
         style={{
           width: '35vw',
           position: 'absolute',
-          borderRadius: '.5rem',
+          borderRadius: '.35rem',
           overflow: 'hidden',
           bottom: `${cityscapeBottomPosition}vh`,
           left: `${40 + cityscapeLeftPosition}vw`,
@@ -494,7 +495,7 @@ const PersonalDetailsBanner = props => {
         style={{
           width: '5rem',
           position: 'absolute',
-          borderRadius: '.5rem',
+          borderRadius: '.35rem',
           overflow: 'hidden',
           bottom: `${cloudBottomPosition}vh`,
           left: `${cloud2Left + cloudsLeftOffsetGradual}vw`,
@@ -506,7 +507,7 @@ const PersonalDetailsBanner = props => {
         style={{
           width: '5rem',
           position: 'absolute',
-          borderRadius: '.5rem',
+          borderRadius: '.35rem',
           overflow: 'hidden',
           bottom: `${cloudBottomPosition - 10}vh`,
           left: `${cloud3Left + cloudsLeftOffsetGradual}vw`,
@@ -533,7 +534,7 @@ const PersonalDetailsBanner = props => {
           opacity: photographyTitleOpacity,
         }}
         light
-        name="I love photography"
+        name="... and I love photography"
       />
       <div
         style={{
@@ -542,9 +543,11 @@ const PersonalDetailsBanner = props => {
           top: `calc(15vh + 3rem)`,
           left: `calc(50vw - 30vw)`,
           opacity: photogImage1Opacity * photogImage1Opacity2,
-          borderRadius: '.5rem',
+          borderRadius: '.35rem',
           overflow: 'hidden',
           height: '40vw',
+          maxWidth: '40rem',
+          maxHeight: '26.5rem',
         }}
       >
         <img
@@ -563,6 +566,8 @@ const PersonalDetailsBanner = props => {
           borderRadius: '.5rem',
           overflow: 'hidden',
           height: '40vw',
+          maxWidth: '40rem',
+          maxHeight: '26.5rem',
         }}
       >
         <img
@@ -581,6 +586,8 @@ const PersonalDetailsBanner = props => {
           borderRadius: '.5rem',
           overflow: 'hidden',
           height: '40vw',
+          maxWidth: '40rem',
+          maxHeight: '26.5rem',
         }}
       >
         <img
