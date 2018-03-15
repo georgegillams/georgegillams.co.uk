@@ -53,7 +53,7 @@ class Tag extends Component {
       outerClassNameFinal.push(className);
     }
 
-    const tagClassName = [getClassName('tag__inner')];
+    const tagClassName = [getClassName('tag__inner-tag')];
     const angleClassName = [getClassName('tag__inner-triangle')];
     if (type) {
       tagClassName.push(tagTypeClassNames[type]);
@@ -61,7 +61,7 @@ class Tag extends Component {
     }
 
     if (this.state.hovering && (link || onClick)) {
-      tagClassName.push(getClassName('tag__inner--hovered'));
+      tagClassName.push(getClassName('tag__inner-tag--hovered'));
       angleClassName.push(getClassName('tag__inner-triangle--hovered'));
     }
 
@@ -69,9 +69,9 @@ class Tag extends Component {
       outerClassNameFinal.push(getClassName('tag__inner--disabled'));
     }
 
-    const tagComponent = (
+    let tagComponent = (
       <span
-        className={outerClassNameFinal.join(' ')}
+        className={getClassName('tag__inner')}
         onMouseEnter={() => {
           this.setState({ hovering: true });
         }}
@@ -87,19 +87,21 @@ class Tag extends Component {
     );
 
     if (link) {
-      return (
-        <div {...rest}>
-          <NavLink
-            className={getClassName('tag__inner--link')}
-            to={`/blog?filter=${type}`}
-          >
-            {tagComponent}
-          </NavLink>
-        </div>
+      tagComponent = (
+        <NavLink
+          className={getClassName('tag__inner-tag--link')}
+          to={`/blog?filter=${type}`}
+        >
+          {tagComponent}
+        </NavLink>
       );
     }
 
-    return <div {...rest}>{tagComponent}</div>;
+    return (
+      <div className={outerClassNameFinal.join(' ')} {...rest}>
+        {tagComponent}
+      </div>
+    );
   }
 }
 
