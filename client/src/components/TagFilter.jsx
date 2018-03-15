@@ -13,9 +13,9 @@ class TagFilter extends Component {
   }
 
   componentDidMount = () => {
-    if ((this.props.location.search + '').includes('filter')) {
-      const valuesString = (this.props.location.search + '').split('=')[1];
-      let selectedTagsOnLoad = [];
+    if (`${this.props.location.search}`.includes('filter')) {
+      const valuesString = `${this.props.location.search}`.split('=')[1];
+      const selectedTagsOnLoad = [];
       valuesString.split('+').forEach(s => {
         selectedTagsOnLoad.push(s);
       });
