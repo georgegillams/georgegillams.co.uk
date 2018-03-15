@@ -39,7 +39,7 @@ class Articles extends Component {
           onSelectedTagsChanged={nst => {
             this.setState({ selectedTags: nst });
           }}
-          className={getClassName('pages__card')}
+          className={getClassName('pages__tag-filter')}
         />
         {/* <ArticleCard
         day={0}
