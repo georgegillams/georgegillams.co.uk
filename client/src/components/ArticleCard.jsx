@@ -38,12 +38,16 @@ class ArticleCard extends Component {
       className,
       backgroundImageClassName,
       imageClassName,
+      tallLayout,
+      autoTallLayout,
       children,
       ...rest
     } = this.props;
 
     const classNameFinal = [getClassName('article-card__outer-container')];
-    if (className) classNameFinal.push(className);
+    const contentContainerClassNames = [
+      getClassName('article-card__content-container'),
+    ];
 
     const bannerClassNames = [getClassName('article-card__banner')];
     if (light) {
@@ -52,8 +56,38 @@ class ArticleCard extends Component {
     if (this.state.hovering) {
       bannerClassNames.push(getClassName('article-card__banner--hovered'));
     }
+    const innerBannerClassNames = [
+      getClassName('article-card__inner-container'),
+    ];
+    if (tallLayout) {
+      innerBannerClassNames.push(
+        getClassName('article-card__inner-container--tall-layout'),
+      );
+      classNameFinal.push(
+        getClassName('article-card__outer-container--tall-layout'),
+      );
+      contentContainerClassNames.push(
+        getClassName('article-card__content-container--tall-layout'),
+      );
+    }
+    if (autoTallLayout) {
+      innerBannerClassNames.push(
+        getClassName('article-card__inner-container--auto-tall-layout'),
+      );
+      classNameFinal.push(
+        getClassName('article-card__outer-container--auto-tall-layout'),
+      );
+      contentContainerClassNames.push(
+        getClassName('article-card__content-container--auto-tall-layout'),
+      );
+    }
+    if (className) classNameFinal.push(className);
 
-    const imageClassNames = [getClassName('article-card__image-container')];
+    const imageContainerClassNames = [
+      getClassName('article-card__image-container'),
+    ];
+
+    const imageClassNames = [getClassName('article-card__image')];
     if (imageClassName) {
       imageClassNames.push(imageClassName);
     }
@@ -71,19 +105,19 @@ class ArticleCard extends Component {
     }
 
     return (
-      <NavLink to={linkUrl}>
-        <div
-          className={classNameFinal.join(' ')}
-          {...rest}
-          onMouseEnter={() => this.setState({ hovering: true })}
-          onMouseLeave={() => this.setState({ hovering: false })}
-        >
-          <div className={getClassName('article-card__content-container')}>
+      <div
+        className={classNameFinal.join(' ')}
+        {...rest}
+        onMouseEnter={() => this.setState({ hovering: true })}
+        onMouseLeave={() => this.setState({ hovering: false })}
+      >
+        <NavLink to={linkUrl}>
+          <div className={contentContainerClassNames.join(' ')}>
             <div
               className={backgroundImageClassNames.join(' ')}
               style={{ backgroundImage: `url(${fillImageSrc})` }}
             />
-            <div className={getClassName('article-card__inner-container')}>
+            <div className={innerBannerClassNames.join(' ')}>
               <div className={getClassName('article-card__date')}>
                 <SubSection
                   hover={this.state.hovering}
@@ -113,13 +147,13 @@ class ArticleCard extends Component {
                 {children}
               </div>
               <div
-                className={imageClassNames.join(' ')}
+                className={imageContainerClassNames.join(' ')}
                 style={{
                   border: imageBorder ? `solid ${imageBorder} 0.1rem` : 'none',
                 }}
               >
                 <FadingLazyLoadedImage
-                  className={getClassName('article-card__image')}
+                  className={imageClassNames.join(' ')}
                   altText="Card image"
                   width={987}
                   height={575}
@@ -132,8 +166,8 @@ class ArticleCard extends Component {
               style={bannerColor ? { backgroundColor: bannerColor } : {}}
             />
           </div>
-        </div>
-      </NavLink>
+        </NavLink>
+      </div>
     );
   }
 }
