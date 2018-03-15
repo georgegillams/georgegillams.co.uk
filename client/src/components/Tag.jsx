@@ -70,7 +70,7 @@ class Tag extends Component {
     }
 
     const tagComponent = (
-      <div
+      <span
         className={outerClassNameFinal.join(' ')}
         onMouseEnter={() => {
           this.setState({ hovering: true });
@@ -79,26 +79,27 @@ class Tag extends Component {
           this.setState({ hovering: false });
         }}
         onClick={onClick}
-        {...rest}
       >
-        <div className={angleClassName.join(' ')} />
-        <div className={tagClassName.join(' ')}>{`${tagText[type]}`}</div>
-        <div className={getClassName('tag__inner-hole')} />
-      </div>
+        <span className={angleClassName.join(' ')} />
+        <span className={tagClassName.join(' ')}>{`${tagText[type]}`}</span>
+        <span className={getClassName('tag__inner-hole')} />
+      </span>
     );
 
     if (link) {
       return (
-        <NavLink
-          className={getClassName('tag__inner--link')}
-          to={`/blog?filter=${type}`}
-        >
-          {tagComponent}
-        </NavLink>
+        <div {...rest}>
+          <NavLink
+            className={getClassName('tag__inner--link')}
+            to={`/blog?filter=${type}`}
+          >
+            {tagComponent}
+          </NavLink>
+        </div>
       );
     }
 
-    return tagComponent;
+    return <div {...rest}>{tagComponent}</div>;
   }
 }
 

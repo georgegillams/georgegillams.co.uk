@@ -28,7 +28,7 @@ const ToughMudder = props => {
       <PageSwitchScroller />
       <Section name="Running 5 Tough Mudders">
         <ArticleDate date={DATE_WRITTEN} />
-        <Tag type={TAG_TYPES.events} link />
+        <Tag type={TAG_TYPES.events} link style={{ marginBottom: '0.5rem' }} />
         <SubSection name="Why I did it">
           I&apos;d never considered doing a{' '}
           <TextLink external href="https://toughmudder.co.uk/">
