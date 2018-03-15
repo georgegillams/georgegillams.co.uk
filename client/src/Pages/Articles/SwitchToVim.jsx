@@ -26,7 +26,7 @@ const SwitchToVim = props => {
       <PageSwitchScroller />
       <Section name="Switching to Vim">
         <ArticleDate date={DATE_WRITTEN} />
-        <Tag type={TAG_TYPES.tech} link />
+        <Tag type={TAG_TYPES.tech} link style={{ marginBottom: '0.5rem' }} />
         <SubSection name="Why I did it">
           It started with the classic situation of knowing someone at work who
           is some sort of Vim Jedi. I was in awe of his workflow since I arrived

@@ -37,6 +37,10 @@
     box-sizing: border-box;
   }
 
+  &__tag-filter {
+    margin-bottom: .5rem;
+  }
+
   &__site-map-tree {
     display: flex;
     height: 30rem;
@@ -102,11 +106,6 @@
 
   &__nn-background-image {
     background-repeat: no-repeat;
-    background-position: 15rem -2.1rem !important;
     background-size: 16rem !important;
-
-    @include bpk-breakpoint-tablet {
-      background-position: 3rem 2.1rem !important;
-    }
   }
 }

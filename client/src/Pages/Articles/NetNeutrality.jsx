@@ -44,7 +44,7 @@ const NetNeutrality = props => {
         {/* <SubSection >
           TODO
         </SubSection> */}
-        <Tag type={TAG_TYPES.tech} link />
+        <Tag type={TAG_TYPES.tech} link style={{ marginBottom: '0.5rem' }} />
         <SubSection name="Introduction">
           The Internet’s unique architecture has enabled it to rapidly expand
           its influence on our world. Within a relatively short period of time

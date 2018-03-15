@@ -4,6 +4,7 @@
 .tag {
   &__outer {
     position: relative;
+    height: 1.57rem;
     padding-left: .6rem;
   }
 
@@ -38,6 +39,8 @@
 
   &__inner {
     position: relative;
+    top: .1rem;
+    left: .02rem;
     height: 1rem;
     padding: .17rem .4rem .27rem;
     transition: all .3s;
