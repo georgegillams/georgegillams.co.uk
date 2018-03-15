@@ -11,6 +11,11 @@ import house from '../../images/house.svg';
 import plane from '../../images/plane.svg';
 import cloud2 from '../../images/cloud2.svg';
 import cloud3 from '../../images/cloud3.svg';
+import downArrow from '../../images/downArrow.svg';
+import serreChevalier from '../../images/serreChevalierBanner.jpg';
+import photog01 from '../Art/images/photog_02.jpg';
+import photog02 from '../Art/images/photog_05.jpg';
+import photog03 from '../Art/images/photog_01.jpg';
 import BpkImage, {
   withLazyLoading,
   withLoadingBehavior,
@@ -27,6 +32,20 @@ const getClassName = className => STYLES[className] || 'UNKNOWN';
 
 const PersonalDetailsBanner = props => {
   const { percentageComplete } = props;
+  const downArrowBottom = CalculationHelpers.calculateValue(
+    percentageComplete,
+    0,
+    3.25,
+    1,
+    4,
+  );
+  const downArrowOpacity = CalculationHelpers.calculateValue(
+    percentageComplete,
+    0,
+    3.25,
+    1,
+    0,
+  );
   const disclaimerOpacity = CalculationHelpers.calculateValue(
     percentageComplete,
     0,
@@ -92,8 +111,8 @@ const PersonalDetailsBanner = props => {
   );
   const liveInTextOpacity = CalculationHelpers.calculateValue(
     percentageComplete,
-    25,
     27.5,
+    30,
     0,
     1,
   );
@@ -127,7 +146,7 @@ const PersonalDetailsBanner = props => {
   );
   const cityscapeLeftPosition = CalculationHelpers.calculateValue(
     percentageComplete,
-    42.5,
+    37.5,
     46.25,
     0,
     -150,
@@ -142,7 +161,7 @@ const PersonalDetailsBanner = props => {
 
   const workInTextOpacity = CalculationHelpers.calculateValue(
     percentageComplete,
-    42.5,
+    37.5,
     45,
     0,
     1,
@@ -150,27 +169,35 @@ const PersonalDetailsBanner = props => {
 
   const planeBottom = CalculationHelpers.calculateValue(
     percentageComplete,
-    38.75,
-    50,
+    27,
+    60,
     35,
-    50,
+    54.5,
   );
 
   const planeLeft = CalculationHelpers.calculateValue(
     percentageComplete,
-    38.75,
-    50,
+    27,
+    60,
     -5,
-    15,
+    21,
+  );
+
+  const cloudsLeftOffsetGradual = CalculationHelpers.calculateValue(
+    percentageComplete,
+    27,
+    60,
+    0,
+    -10,
   );
   const trainPosition = CalculationHelpers.calculateValue(
     percentageComplete,
-    42.5,
+    37.5,
     46.25,
     -100,
     150,
   );
-  const darkPurpleScreenOpacity = CalculationHelpers.calculateValue(
+  const photogImageBackgroundOpacity = CalculationHelpers.calculateValue(
     percentageComplete,
     55,
     60,
@@ -196,8 +223,51 @@ const PersonalDetailsBanner = props => {
     57.5,
     60,
     0,
-    -100,
+    -120,
   );
+  const photogImage1Opacity = CalculationHelpers.calculateValue(
+    percentageComplete,
+    72,
+    75,
+    0,
+    1,
+  );
+  const photogImage1Opacity2 = CalculationHelpers.calculateValue(
+    percentageComplete,
+    79,
+    80,
+    1,
+    0,
+  );
+  const photogImage2Opacity = CalculationHelpers.calculateValue(
+    percentageComplete,
+    82,
+    85,
+    0,
+    1,
+  );
+  const photogImage2Opacity2 = CalculationHelpers.calculateValue(
+    percentageComplete,
+    89,
+    90,
+    1,
+    0,
+  );
+  const photogImage3Opacity = CalculationHelpers.calculateValue(
+    percentageComplete,
+    92,
+    95,
+    0,
+    1,
+  );
+  const photographyTitleOpacity = CalculationHelpers.calculateValue(
+    percentageComplete,
+    62,
+    65,
+    0,
+    1,
+  );
+
   // const backgroundImagePosition = CalculationHelpers.calculateValue(
   //   percentageComplete,
   //   0,
@@ -214,7 +284,7 @@ const PersonalDetailsBanner = props => {
       )} ${getClassName('home-page-banner__banner-image')}`}
       style={{
         backgroundColor: '#1E1E1E',
-        backgroundImage: `url(${astonMartin})`,
+        backgroundImage: `url(${serreChevalier})`,
         // backgroundPositionY: `${backgroundImagePosition}rem`,
       }}
     >
@@ -223,6 +293,7 @@ const PersonalDetailsBanner = props => {
           position: 'absolute',
           top: `${namePosition}rem`,
           opacity: nameOpacity,
+          textShadow: '.1rem .1rem .2rem #1E1E1E',
         }}
         light
         name="George Gillams"
@@ -255,7 +326,7 @@ const PersonalDetailsBanner = props => {
           bottom: 0,
         }}
       >
-        I wish this were my Aston Martin{' '}
+        Serre Chevalier Ski Resort
       </SubSection>
 
       <div
@@ -294,7 +365,7 @@ const PersonalDetailsBanner = props => {
           height: '14rem',
           left: 'calc(50% - 7rem)',
           position: 'absolute',
-          borderRadius: '.5rem',
+          borderRadius: '.35rem',
           overflow: 'hidden',
           top: `${profilePicMarginTop}vh`,
         }}
@@ -305,6 +376,17 @@ const PersonalDetailsBanner = props => {
           src={georgegillams}
         />
       </div>
+      <img
+        src={downArrow}
+        style={{
+          position: 'fixed',
+          left: 'calc(50% - 1.5rem)',
+          bottom: `${downArrowBottom}rem`,
+          opacity: `${downArrowOpacity}`,
+          width: '3rem',
+          // opacity: arrowOpacity,
+        }}
+      />
 
       <div
         style={{
@@ -340,7 +422,7 @@ const PersonalDetailsBanner = props => {
         style={{
           width: '50vw',
           position: 'absolute',
-          borderRadius: '.5rem',
+          borderRadius: '.35rem',
           overflow: 'hidden',
           bottom: `${cityscapeBottomPosition}vh`,
           left: `${cityscapeLeftPosition}vw`,
@@ -356,7 +438,7 @@ const PersonalDetailsBanner = props => {
         style={{
           width: '100vw',
           position: 'absolute',
-          borderRadius: '.5rem',
+          borderRadius: '.35rem',
           overflow: 'hidden',
           bottom: `${cityscapeBottomPosition}vh`,
           left: `${150 + cityscapeLeftPosition}vw`,
@@ -372,7 +454,7 @@ const PersonalDetailsBanner = props => {
         style={{
           width: '35vw',
           position: 'absolute',
-          borderRadius: '.5rem',
+          borderRadius: '.35rem',
           overflow: 'hidden',
           bottom: `${cityscapeBottomPosition}vh`,
           left: `${40 + cityscapeLeftPosition}vw`,
@@ -405,19 +487,18 @@ const PersonalDetailsBanner = props => {
           position: 'absolute',
           width: '100vw',
           height: '100vh',
-          backgroundColor: '#7B5BDF',
-          opacity: darkPurpleScreenOpacity,
+          backgroundColor: '#1E1E1E',
+          opacity: photogImageBackgroundOpacity,
         }}
       />
       <div
         style={{
           width: '5rem',
           position: 'absolute',
-          borderRadius: '.5rem',
+          borderRadius: '.35rem',
           overflow: 'hidden',
           bottom: `${cloudBottomPosition}vh`,
-          left: `20vw`,
-          left: `${cloud2Left}vw`,
+          left: `${cloud2Left + cloudsLeftOffsetGradual}vw`,
         }}
       >
         <img style={{ width: '100%' }} altText="George Gillams" src={cloud2} />
@@ -426,11 +507,10 @@ const PersonalDetailsBanner = props => {
         style={{
           width: '5rem',
           position: 'absolute',
-          borderRadius: '.5rem',
+          borderRadius: '.35rem',
           overflow: 'hidden',
           bottom: `${cloudBottomPosition - 10}vh`,
-          left: `60vw`,
-          left: `${cloud3Left}vw`,
+          left: `${cloud3Left + cloudsLeftOffsetGradual}vw`,
         }}
       >
         <img style={{ width: '100%' }} altText="George Gillams" src={cloud3} />
@@ -444,6 +524,77 @@ const PersonalDetailsBanner = props => {
         }}
       >
         <img style={{ width: '100%' }} altText="George Gillams" src={plane} />
+      </div>
+
+      <SubSection
+        noAnchor
+        style={{
+          position: 'absolute',
+          top: '15vh',
+          opacity: photographyTitleOpacity,
+        }}
+        light
+        name="... and I love photography"
+      />
+      <div
+        style={{
+          width: '60vw',
+          position: 'absolute',
+          top: `calc(15vh + 3rem)`,
+          left: `calc(50vw - 30vw)`,
+          opacity: photogImage1Opacity * photogImage1Opacity2,
+          borderRadius: '.35rem',
+          overflow: 'hidden',
+          height: '40vw',
+          maxWidth: '40rem',
+          maxHeight: '26.5rem',
+        }}
+      >
+        <img
+          style={{ width: '100%' }}
+          altText="George Gillams"
+          src={photog01}
+        />
+      </div>
+      <div
+        style={{
+          width: '60vw',
+          position: 'absolute',
+          top: `calc(15vh + 3rem)`,
+          right: `calc(50vw - 30vw)`,
+          opacity: photogImage2Opacity * photogImage2Opacity2,
+          borderRadius: '.5rem',
+          overflow: 'hidden',
+          height: '40vw',
+          maxWidth: '40rem',
+          maxHeight: '26.5rem',
+        }}
+      >
+        <img
+          style={{ width: '100%' }}
+          altText="George Gillams"
+          src={photog02}
+        />
+      </div>
+      <div
+        style={{
+          width: '60vw',
+          position: 'absolute',
+          top: `calc(15vh + 3rem)`,
+          left: `calc(50vw - 30vw)`,
+          opacity: photogImage3Opacity,
+          borderRadius: '.5rem',
+          overflow: 'hidden',
+          height: '40vw',
+          maxWidth: '40rem',
+          maxHeight: '26.5rem',
+        }}
+      >
+        <img
+          style={{ width: '100%' }}
+          altText="George Gillams"
+          src={photog03}
+        />
       </div>
     </div>
   );
