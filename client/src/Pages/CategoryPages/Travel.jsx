@@ -13,7 +13,8 @@ import STYLES from '../pages.scss';
 const getClassName = className => STYLES[className] || 'UNKNOWN';
 
 const Travel = () => (
-  <div>
+  <div style={{ width: '100%' }}>
+    {' '}
     <PageSwitchScroller />
     <ArticleCard
       day="01-07"
@@ -22,6 +23,7 @@ const Travel = () => (
       imageSrc={iceland}
       linkUrl="/travel/iceland-2018"
       title="Iceland 2018"
+      autoTallLayout
     />
     <ArticleCard
       day={27}
@@ -30,6 +32,7 @@ const Travel = () => (
       imageSrc={longleat}
       linkUrl="/travel/longleat-2017"
       title="Longleat 2017"
+      autoTallLayout
     />
     <ArticleCard
       day="15-20"
@@ -38,6 +41,7 @@ const Travel = () => (
       imageSrc={munich}
       linkUrl="/travel/munich-2017"
       title="Munich 2017"
+      autoTallLayout
     />
     <ArticleCard
       day="19-23"
@@ -46,6 +50,7 @@ const Travel = () => (
       imageSrc={mickeyMouse}
       linkUrl="/travel/disneyland-2017"
       title="Disneyland 2017"
+      autoTallLayout
     />
     <ArticleCard
       day="26-02"
@@ -54,6 +59,7 @@ const Travel = () => (
       imageSrc={serreChevalier}
       linkUrl="/travel/serre-chevalier-2017"
       title="Serre Chevalier 2017"
+      autoTallLayout
     />
   </div>
 );

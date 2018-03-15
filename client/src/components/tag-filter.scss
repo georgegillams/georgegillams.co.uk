@@ -6,10 +6,6 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-
-    @include bpk-breakpoint-tablet {
-      max-width: 20rem;
-    }
   }
 
   &__tag {
