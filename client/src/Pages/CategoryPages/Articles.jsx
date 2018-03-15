@@ -41,17 +41,17 @@ class Articles extends Component {
           }}
           className={getClassName('pages__card')}
         />
+        <ArticleCard
+          day={0}
+          month="NaN"
+          className={getClassName('pages__card')}
+          imageSrc={lrSm}
+          linkUrl="/blog/lightroom-workflow"
+          title="My Lightroom Workflow"
+        >
+          <Tag type={TAG_TYPES.photography} />
+        </ArticleCard>
         {/* <ArticleCard
-        day={0}
-        month="NaN"
-        className={getClassName('pages__card')}
-        imageSrc={lrSm}
-        linkUrl="/blog/lightroom-workflow"
-        title="My Lightroom Workflow"
-      >
-        <Tag type={TAG_TYPES.photography} />
-      </ArticleCard>
-      <ArticleCard
         light
         day={0}
         month="NaN"
