@@ -2,16 +2,10 @@
 
 .article-card {
   &__outer-container {
-    width: 100vw;
-    max-width: 45rem;
+    width: 100%;
     transition: all .4s;
     border-radius: .2rem;
     box-shadow: .1rem .1rem .3rem 0 rgba(37, 32, 31, .3);
-    overflow: hidden;
-
-    @include bpk-breakpoint-tablet {
-      max-width: 20rem;
-    }
 
     &:focus,
     &:active,
@@ -34,20 +28,22 @@
     grid-gap: 1rem;
     box-sizing: border-box;
 
-    @include bpk-breakpoint-tablet {
-      height: auto;
-      padding: 2rem 1rem;
-      grid-template-columns: auto;
-      grid-template-areas:
-        'date'
-        'title'
-        'children'
-        'image';
-      justify-content: center;
-      text-align: center;
+    &--auto-tall-layout {
+      @include bpk-breakpoint-mobile {
+        height: auto;
+        padding: 2rem 1rem;
+        grid-template-columns: auto;
+        grid-template-areas:
+          'date'
+          'title'
+          'children'
+          'image';
+        justify-content: center;
+        text-align: center;
+      }
     }
 
-    &--fixed-width {
+    &--tall-layout {
       height: auto;
       padding: 2rem 1rem;
       grid-template-columns: auto;
@@ -65,13 +61,17 @@
     position: relative;
     width: 100%;
     height: 10.2rem;
+    border-radius: .35rem;
+    overflow: hidden;
     box-sizing: border-box;
 
-    @include bpk-breakpoint-tablet {
-      height: 24.2rem;
+    &--auto-tall-layout {
+      @include bpk-breakpoint-mobile {
+        height: 24.2rem;
+      }
     }
 
-    &--fixed-width {
+    &--tall-layout {
       height: 24.2rem;
     }
   }
@@ -86,7 +86,6 @@
     background-position: center;
     background-size: cover;
     opacity: .8;
-    // filter: blur(3px);
 
     &--light {
       background-color: #1e1e1e;

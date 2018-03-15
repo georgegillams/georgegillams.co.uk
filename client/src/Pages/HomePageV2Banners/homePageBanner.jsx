@@ -110,9 +110,9 @@ export default function homePageBanner(
             }}
           >
             <Component percentageComplete={this.state.percentageComplete} />
-            <div className={getClassName('home-page-banner__debug-percentage')}>
+            {/* <div className={getClassName('home-page-banner__debug-percentage')}>
               {`${this.state.percentageComplete}%`}
-            </div>
+            </div> */}
           </div>
         </main>
       );
