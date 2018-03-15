@@ -32,7 +32,7 @@ class Articles extends Component {
 
   render() {
     return (
-      <div>
+      <div style={{ width: '100%' }}>
         <PageSwitchScroller />
         <TagFilterRoutable
           selectedTags={this.state.selectedTags}
@@ -87,6 +87,7 @@ class Articles extends Component {
             imageSrc={toughMudderSm}
             linkUrl="/blog/tough-mudder"
             title="Running 5 Tough Mudders"
+            autoTallLayout
           >
             <Tag type={TAG_TYPES.events} />
           </ArticleCard>
@@ -106,6 +107,7 @@ class Articles extends Component {
             imageSrc={netNeutralitySm}
             linkUrl="/blog/net-neutrality"
             title="My Take on Net Neutrality"
+            autoTallLayout
           >
             <Tag type={TAG_TYPES.tech} />
           </ArticleCard>
@@ -123,6 +125,7 @@ class Articles extends Component {
             imageSrc={vimSm}
             linkUrl="/blog/vim"
             title="Switching to Vim"
+            autoTallLayout
           >
             <Tag type={TAG_TYPES.tech} />
           </ArticleCard>
