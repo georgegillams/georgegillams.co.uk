@@ -25,41 +25,46 @@ const HomePageV2 = () => (
       style={{
         display: 'flex',
         flexDirection: 'row',
+        flexWrap: 'wrap',
         marginTop: '3rem',
-        justifyContent: 'space-around',
-        width: '100vw',
+        justifyContent: 'space-between',
+        width: 'calc(100% + 4rem)',
+        marginLeft: '-2rem',
       }}
     >
-      <ArticleCard
-        day={null}
-        month={null}
-        className={getClassName('pages__card')}
-        imageSrc={blogIcon}
-        linkUrl="/blog"
-        title="Blog"
-        style={{ maxWidth: '26%' }}
-        fixedWidth
-      />
-      <ArticleCard
-        day={null}
-        month={null}
-        className={getClassName('pages__card')}
-        imageSrc={photographyIcon}
-        linkUrl="/photography"
-        title="Photos"
-        style={{ maxWidth: '26%' }}
-        fixedWidth
-      />
-      <ArticleCard
-        day={null}
-        month={null}
-        className={getClassName('pages__card')}
-        imageSrc={phoneIcon}
-        linkUrl="/contact"
-        title="Contact"
-        style={{ maxWidth: '26%' }}
-        fixedWidth
-      />
+      <div style={{ padding: '2rem', flex: 1, minWidth: '13rem' }}>
+        <ArticleCard
+          day={null}
+          month={null}
+          className={getClassName('pages__card')}
+          imageSrc={blogIcon}
+          linkUrl="/blog"
+          title="Blog"
+          tallLayout
+        />
+      </div>
+      <div style={{ padding: '2rem', flex: 1, minWidth: '13rem' }}>
+        <ArticleCard
+          day={null}
+          month={null}
+          className={getClassName('pages__card')}
+          imageSrc={photographyIcon}
+          linkUrl="/photography"
+          title="Photos"
+          tallLayout
+        />
+      </div>
+      <div style={{ padding: '2rem', flex: 1, minWidth: '13rem' }}>
+        <ArticleCard
+          day={null}
+          month={null}
+          className={getClassName('pages__card')}
+          imageSrc={phoneIcon}
+          linkUrl="/contact"
+          title="Contact"
+          tallLayout
+        />
+      </div>
     </div>
   </main>
 );

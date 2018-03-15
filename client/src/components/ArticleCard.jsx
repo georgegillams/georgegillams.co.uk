@@ -38,13 +38,16 @@ class ArticleCard extends Component {
       className,
       backgroundImageClassName,
       imageClassName,
-      fixedWidth,
+      tallLayout,
+      autoTallLayout,
       children,
       ...rest
     } = this.props;
 
     const classNameFinal = [getClassName('article-card__outer-container')];
-    if (className) classNameFinal.push(className);
+    const contentContainerClassNames = [
+      getClassName('article-card__content-container'),
+    ];
 
     const bannerClassNames = [getClassName('article-card__banner')];
     if (light) {
@@ -56,19 +59,29 @@ class ArticleCard extends Component {
     const innerBannerClassNames = [
       getClassName('article-card__inner-container'),
     ];
-    if (fixedWidth) {
+    if (tallLayout) {
       innerBannerClassNames.push(
-        getClassName('article-card__inner-container--fixed-width'),
+        getClassName('article-card__inner-container--tall-layout'),
       );
-    }
-    const contentContainerClassNames = [
-      getClassName('article-card__content-container'),
-    ];
-    if (fixedWidth) {
+      classNameFinal.push(
+        getClassName('article-card__outer-container--tall-layout'),
+      );
       contentContainerClassNames.push(
-        getClassName('article-card__content-container--fixed-width'),
+        getClassName('article-card__content-container--tall-layout'),
       );
     }
+    if (autoTallLayout) {
+      innerBannerClassNames.push(
+        getClassName('article-card__inner-container--auto-tall-layout'),
+      );
+      classNameFinal.push(
+        getClassName('article-card__outer-container--auto-tall-layout'),
+      );
+      contentContainerClassNames.push(
+        getClassName('article-card__content-container--auto-tall-layout'),
+      );
+    }
+    if (className) classNameFinal.push(className);
 
     const imageContainerClassNames = [
       getClassName('article-card__image-container'),
@@ -92,68 +105,69 @@ class ArticleCard extends Component {
     }
 
     return (
-      <NavLink
-        to={linkUrl}
+      <div
         className={classNameFinal.join(' ')}
         {...rest}
         onMouseEnter={() => this.setState({ hovering: true })}
         onMouseLeave={() => this.setState({ hovering: false })}
       >
-        <div className={contentContainerClassNames.join(' ')}>
-          <div
-            className={backgroundImageClassNames.join(' ')}
-            style={{ backgroundImage: `url(${fillImageSrc})` }}
-          />
-          <div className={innerBannerClassNames.join(' ')}>
-            <div className={getClassName('article-card__date')}>
-              <SubSection
-                hover={this.state.hovering}
-                noAnchor
-                noPadding
-                link
-                light={light}
-                name={month}
-              />
-              <SubSection
-                hover={this.state.hovering}
-                noAnchor
-                noPadding
-                link
-                light={light}
-                name={day}
-              />
-            </div>
-            <Section
-              hover={this.state.hovering}
-              light={light}
-              name={title}
-              link
-              className={getClassName('article-card__title')}
+        <NavLink to={linkUrl}>
+          <div className={contentContainerClassNames.join(' ')}>
+            <div
+              className={backgroundImageClassNames.join(' ')}
+              style={{ backgroundImage: `url(${fillImageSrc})` }}
             />
-            <div className={getClassName('article-card__children')}>
-              {children}
+            <div className={innerBannerClassNames.join(' ')}>
+              <div className={getClassName('article-card__date')}>
+                <SubSection
+                  hover={this.state.hovering}
+                  noAnchor
+                  noPadding
+                  link
+                  light={light}
+                  name={month}
+                />
+                <SubSection
+                  hover={this.state.hovering}
+                  noAnchor
+                  noPadding
+                  link
+                  light={light}
+                  name={day}
+                />
+              </div>
+              <Section
+                hover={this.state.hovering}
+                light={light}
+                name={title}
+                link
+                className={getClassName('article-card__title')}
+              />
+              <div className={getClassName('article-card__children')}>
+                {children}
+              </div>
+              <div
+                className={imageContainerClassNames.join(' ')}
+                style={{
+                  border: imageBorder ? `solid ${imageBorder} 0.1rem` : 'none',
+                }}
+              >
+                <FadingLazyLoadedImage
+                  className={imageClassNames.join(' ')}
+                  altText="Card image"
+                  width={987}
+                  height={575}
+                  src={imageSrc}
+                />
+              </div>
             </div>
             <div
-              className={imageContainerClassNames.join(' ')}
-              style={{
-                border: imageBorder ? `solid ${imageBorder} 0.1rem` : 'none',
-              }}
-            >
-              <FadingLazyLoadedImage
-                className={imageClassNames.join(' ')}
-                altText="Card image"
-                width={987}
-                height={575}
-                src={imageSrc}
-              />
-            </div>
+              className={bannerClassNames.join(' ')}
+              style={bannerColor ? { backgroundColor: bannerColor } : {}}
+            />
           </div>
-          <div
-            className={bannerClassNames.join(' ')}
-            style={bannerColor ? { backgroundColor: bannerColor } : {}}
-          />
-        </div>
-      </NavLink>
+        </NavLink>
+      </div>
     );
   }
 }
