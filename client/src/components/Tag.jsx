@@ -66,7 +66,7 @@ class Tag extends Component {
     }
 
     if (disabled) {
-      outerClassNameFinal.push(getClassName('tag__inner--disabled'));
+      outerClassNameFinal.push(getClassName('tag__inner-tag--disabled'));
     }
 
     let tagComponent = (
