@@ -123,11 +123,18 @@ const PersonalDetailsBanner = props => {
     1,
     0.5,
   );
+  const cityscapeBottomOpacity = CalculationHelpers.calculateValue(
+    percentageComplete,
+    23,
+    25,
+    0,
+    1,
+  );
   const cityscapeBottomPosition = CalculationHelpers.calculateValue(
     percentageComplete,
     25,
     27.5,
-    -50,
+    -100,
     0,
   );
   const cloudBottomPosition = CalculationHelpers.calculateValue(
@@ -156,7 +163,7 @@ const PersonalDetailsBanner = props => {
     40,
     46.25,
     6,
-    2,
+    4,
   );
 
   const workInTextOpacity = CalculationHelpers.calculateValue(
@@ -413,6 +420,7 @@ const PersonalDetailsBanner = props => {
             position: 'absolute',
             bottom: `${cityscapeBottomPosition}vh`,
             left: `${trainPosition}vw`,
+            opacity: cityscapeBottomOpacity,
           }}
         >
           <img style={{ width: '100%' }} altText="George Gillams" src={train} />
