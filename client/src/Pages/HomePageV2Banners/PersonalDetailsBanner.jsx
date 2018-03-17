@@ -102,13 +102,6 @@ const PersonalDetailsBanner = props => {
     0,
     1,
   );
-  const liveInTextPosition = CalculationHelpers.calculateValue(
-    percentageComplete,
-    25,
-    27.5,
-    1,
-    1,
-  );
   const liveInTextOpacity = CalculationHelpers.calculateValue(
     percentageComplete,
     27.5,
@@ -420,7 +413,6 @@ const PersonalDetailsBanner = props => {
             position: 'absolute',
             bottom: `${cityscapeBottomPosition}vh`,
             left: `${trainPosition}vw`,
-            opacity: cityscapeBottomOpacity,
           }}
         >
           <img style={{ width: '100%' }} altText="George Gillams" src={train} />
@@ -434,6 +426,7 @@ const PersonalDetailsBanner = props => {
           overflow: 'hidden',
           bottom: `${cityscapeBottomPosition}vh`,
           left: `${cityscapeLeftPosition}vw`,
+          opacity: cityscapeBottomOpacity,
         }}
       >
         <img
@@ -466,6 +459,7 @@ const PersonalDetailsBanner = props => {
           overflow: 'hidden',
           bottom: `${cityscapeBottomPosition}vh`,
           left: `${40 + cityscapeLeftPosition}vw`,
+          opacity: cityscapeBottomOpacity,
         }}
       >
         <img style={{ width: '100%' }} altText="George Gillams" src={house} />
