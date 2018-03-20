@@ -22,6 +22,7 @@ import React, { type Node } from 'react';
 import PropTypes from 'prop-types';
 import BpkInput from 'bpk-component-input';
 import BpkLabel from 'bpk-component-label';
+import jsParse from 'js.parse';
 
 // import STYLES from './bpk-button.scss';
 //

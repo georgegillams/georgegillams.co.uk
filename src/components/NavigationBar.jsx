@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import BpkIconClose from 'bpk-component-icon/lg/close';
-import BpkIconMenu from 'bpk-component-icon/lg/menu';
+import BpkIconClose from '../icons/github.png';
+import BpkIconMenu from '../icons/facebook.png';
 import Logo from './Logo';
 import NavigationItem from './NavigationItem';
 import Button from './Button';

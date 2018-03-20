@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 import React from 'react';
-import BpkSmallNewWindowIcon from 'bpk-component-icon/sm/new-window';
+import BpkSmallNewWindowIcon from '../icons/github.png';
 import { NavLink } from 'react-router-dom';
 
 import STYLES from './typography.scss';

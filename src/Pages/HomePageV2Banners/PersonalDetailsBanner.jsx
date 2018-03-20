@@ -20,13 +20,12 @@ import BpkImage, {
   withLazyLoading,
   withLoadingBehavior,
 } from 'bpk-component-image';
+import STYLES from './home-page-banner.scss';
 
 const documentIfExists = typeof window !== 'undefined' ? document : null;
 const FadingLazyLoadedImage = withLoadingBehavior(
   withLazyLoading(BpkImage, documentIfExists),
 );
-
-import STYLES from './home-page-banner.scss';
 
 const getClassName = className => STYLES[className] || 'UNKNOWN';
 

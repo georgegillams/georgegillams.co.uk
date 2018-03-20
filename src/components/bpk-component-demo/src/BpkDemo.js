@@ -27,7 +27,7 @@ import PropTypes from 'prop-types';
 import querystring from 'querystring';
 import { wrapDisplayName } from 'bpk-react-utils';
 import { BpkCodeBlock } from 'bpk-component-code';
-import EditIconSm from 'bpk-component-icon/sm/edit';
+// import EditIconSm from 'bpk-component-icon/sm/edit';
 import reactDocs from 'react-docgen';
 // import { browserHistory, PropTypes as RouterPropTypes } from 'react-router';
 import requiredDefaultProps from './requiredDefaultProps.json';
@@ -203,7 +203,7 @@ export default function bpkDemo(
               href={`?${querystring.stringify(this.state.props)}#playground`}
               className={getClassName('bpk-demo__controls')}
             >
-              <EditIconSm />
+              {/* <EditIconSm /> */}
             </a>
           )}
           {showPlayground && (
