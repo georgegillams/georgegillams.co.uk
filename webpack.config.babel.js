@@ -20,133 +20,157 @@ import fs from 'fs';
 import path from 'path';
 import webpack from 'webpack';
 import WrapperPlugin from 'wrapper-webpack-plugin';
-import ExtractTextPlugin from 'extract-text-webpack-plugin';
 import StaticSiteGeneratorPlugin from 'static-site-generator-webpack-plugin';
 import CopyWebpackPlugin from 'copy-webpack-plugin';
 
 import postCssPlugins from './scripts/webpack/postCssPlugins';
-import sassFunctions from './packages/bpk-mixins/sass-functions';
-import * as ROUTES from './packages/bpk-docs/src/constants/routes';
-import { blockComment as licenseHeader } from './packages/bpk-tokens/formatters/license-header';
-import redirects from './packages/bpk-docs/src/constants/redirect-routes';
+// import * as ROUTES from './src/Routes/index';
+const ROUTES = [];
 
 const { NODE_ENV, BPK_TOKENS, BPK_NEO, BPK_BUILT_AT } = process.env;
 const useCssModules = true;
 const isProduction = NODE_ENV === 'production';
 
 const staticSiteGeneratorConfig = {
-  paths: [
-    ...Object.keys(ROUTES).map(key => ROUTES[key]),
-    ...Object.keys(redirects),
-  ],
+  paths: [...Object.keys(ROUTES).map(key => ROUTES[key])],
 };
+
+const sassIncludePaths = [path.resolve(__dirname, 'node_modules/bpk-mixins')];
+
+// These files will be imported in every sass file
+const sassResourcesPaths = [
+  path.resolve(__dirname, 'node_modules/bpk-mixins/_index.sass'),
+];
 
 const sassOptions = {
   data: BPK_TOKENS
     ? fs.readFileSync(`packages/bpk-tokens/tokens/${BPK_TOKENS}.scss`)
     : '',
-  functions: sassFunctions,
 };
 
 const config = {
-  entry: {
-    docs: './packages/bpk-docs/src/index.js',
-  },
+  entry: './src/index.js',
 
   output: {
-    filename: `[name]${isProduction ? '_[chunkhash]' : ''}.js`,
-    path: path.resolve(__dirname, 'dist'),
-    libraryTarget: 'umd',
+    filename: 'bundle.js',
+    path: path.resolve(__dirname, 'build'),
+  },
+  resolve: {
+    extensions: ['.js', '.jsx'],
   },
 
   module: {
     rules: [
       {
         test: /\.jsx?$/,
-        use: ['babel-loader'],
+        // include: path.resolve(__dirname, 'src'),
+        // exclude: /node_modules\/(?!bpk-).*/,
+        loader: 'babel-loader',
         exclude: /node_modules\/(?!bpk-).*/,
+        // exclude: /node_modules\/(?!bpk-).*/,
+        options: {
+          // This is a feature of `babel-loader` for Webpack (not Babel itself).
+          // It enables caching results in ./node_modules/.cache/babel-loader/
+          // directory for faster rebuilds.
+          cacheDirectory: true,
+          plugins: ['react-hot-loader/babel'],
+        },
       },
       {
-        test: /base\.scss$/,
-        use: ExtractTextPlugin.extract({
-          fallback: 'style-loader',
-          use: [
-            'css-loader',
-            {
-              loader: 'postcss-loader',
-              options: {
-                plugins: postCssPlugins,
-              },
-            },
-            {
-              loader: 'sass-loader',
-              options: sassOptions,
-            },
-          ],
-        }),
-      },
-      {
-        test: /\.scss$/,
-        exclude: /base\.scss$/,
-        use: ExtractTextPlugin.extract({
-          fallback: 'style-loader',
-          use: [
-            {
-              loader: 'css-loader',
-              options: {
-                importLoaders: 1,
-                minimize: true,
-                modules: useCssModules,
-                localIdentName: '[local]-[hash:base64:5]',
-              },
-            },
-            {
-              loader: 'postcss-loader',
-              options: {
-                plugins: postCssPlugins,
-              },
-            },
-            {
-              loader: 'sass-loader',
-              options: sassOptions,
-            },
-          ],
-        }),
-      },
-      {
-        test: /\.css$/,
-        use: ExtractTextPlugin.extract({
-          fallback: 'style-loader',
-          use: [
-            {
-              loader: 'css-loader',
-              options: {
-                importLoaders: 1,
-                minimize: true,
-              },
-            },
-            {
-              loader: 'postcss-loader',
-              options: {
-                plugins: postCssPlugins,
-              },
-            },
-          ],
-        }),
-      },
-      {
-        test: /\.(jpg|png|svg)$/,
-        exclude: /node_modules/,
+        test: /\.svg(\?v=\d+\.\d+\.\d+)?$/,
+        exclude: /node_modules\/(?!bpk-).*/,
         use: [
           {
-            loader: 'file-loader',
-            query: {
+            loader: 'url-loader',
+            options: {
               limit: 10000,
-              name: '[name]_[hash].[ext]',
+              mimetype: 'image/svg+xml',
             },
           },
         ],
       },
+      {
+        test: /\.(sass|scss)$/,
+        exclude: /node_modules\/(?!bpk-).*/,
+        // exclude: /node_modules\/(?!bpk-).*/,
+        use: [
+          {
+            loader: 'style-loader',
+          },
+          {
+            loader: 'css-loader',
+            options: {
+              sourceMap: true,
+              camelCase: 'dashes',
+              importLoaders: 1,
+            },
+          },
+          {
+            loader: 'postcss-loader',
+            options: {
+              sourceMap: 'inline',
+            },
+          },
+          {
+            loader: 'sass-loader',
+            options: {
+              data: fs.readFileSync(`node_modules/bpk-tokens/tokens/base.scss`),
+              sourceMap: true,
+              outputStyle: 'expanded',
+              indentedSyntax: 'sass',
+              includePaths: sassIncludePaths,
+            },
+          },
+          {
+            loader: 'sass-resources-loader',
+            options: {
+              resources: sassResourcesPaths,
+            },
+          },
+        ],
+      },
+
+      {
+        test: /\.gif/,
+        exclude: /node_modules\/(?!bpk-).*/,
+        use: [
+          {
+            loader: 'url-loader',
+            options: {
+              limit: 10000,
+              mimetype: 'image/gif',
+            },
+          },
+        ],
+      },
+      {
+        test: /\.jpg/,
+        exclude: /node_modules\/(?!bpk-).*/,
+        use: [
+          {
+            loader: 'url-loader',
+            options: {
+              limit: 10000,
+              mimetype: 'image/jpg',
+            },
+          },
+        ],
+      },
+      {
+        test: /\.png/,
+        exclude: /node_modules\/(?!bpk-).*/,
+        use: [
+          {
+            loader: 'url-loader',
+            options: {
+              limit: 10000,
+              mimetype: 'image/png',
+              name: '[path][name].[ext]',
+            },
+          },
+        ],
+      },
+
       {
         test: /favicon\.ico$/,
         use: [
@@ -168,11 +192,6 @@ const config = {
   plugins: [
     new WrapperPlugin({
       test: /\.css$/,
-      header: licenseHeader,
-    }),
-    new ExtractTextPlugin({
-      filename: `[name]${isProduction ? '_[contenthash]' : ''}.css`,
-      allChunks: true,
     }),
   ],
 
