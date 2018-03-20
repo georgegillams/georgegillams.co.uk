@@ -18,13 +18,14 @@ if (process.env.REDIS_URL) {
   client = require('redis').createClient();
 }
 
-let staticFiles = null;
+let clientBuildDirectory = null;
 if (process.env.ON_HEROKU) {
-  staticFiles = express.static(path.join(__dirname, '../../client/build'));
+  clientBuildDirectory = '../../client/build';
 } else {
+  clientBuildDirectory = '../client/build';
   // in our codebase, client and server code is structured differently to when deployed on heroku
-  staticFiles = express.static(path.join(__dirname, '../client/build'));
 }
+const staticFiles = express.static(path.join(__dirname, clientBuildDirectory));
 
 app.use((req, res, next) => {
   res.header('Access-Control-Allow-Origin', '*');
@@ -138,12 +139,12 @@ router.delete('/api/comments', (req, res) => {
 
 router.get('/418', (req, res) => {
   res.status(418);
-  res.sendFile(path.join(__dirname, './pages', 'FourOneEight.html'));
+  res.sendFile(path.resolve(__dirname, clientBuildDirectory, 'index.html'));
 });
 
 router.get('/teapot', (req, res) => {
   res.status(418);
-  res.sendFile(path.join(__dirname, './pages', 'FourOneEight.html'));
+  res.sendFile(path.resolve(__dirname, clientBuildDirectory, 'index.html'));
 });
 
 app.use(router);
