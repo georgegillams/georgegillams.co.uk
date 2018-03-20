@@ -12,4 +12,5 @@ if (typeof window !== 'undefined' && typeof document !== 'undefined') {
 
   /* eslint-disable react/jsx-filename-extension */
   ReactDOM.render(routes, root);
+  module.hot.accept();
 }
