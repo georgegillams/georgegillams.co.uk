@@ -1,14 +1,14 @@
 const webpack = require('webpack');
 const nodeExternals = require('webpack-node-externals');
+const path = require('path');
 
 module.exports = {
   target: 'node', // in order to ignore built-in modules like path, fs, etc.
   externals: [nodeExternals()],
   entry: ['react-hot-loader/patch', './src/index.js'],
   output: {
-    path: `${__dirname}/dist`,
-    // publicPath: '/',
     filename: 'bundle.js',
+    path: path.resolve(__dirname, 'dist'),
   },
   module: {
     rules: [

@@ -25,6 +25,7 @@
     "bpk-tokens": "^26.4.5",
     "dompurify": "^1.0.3",
     "express": "^4.16.2",
+    "lodash": "^4.17.5",
     "react-github-fork-ribbon": "^0.5.1",
     "react-helmet": "^5.2.0",
     "react-responsive-carousel": "^3.1.30",
@@ -36,7 +37,7 @@
   "scripts": {
     "start":
       "webpack-dev-server --port 3000 --config ./webpack.config.js --mode development",
-    "build": "react-scripts build",
+    "build": "webpack",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
   },
