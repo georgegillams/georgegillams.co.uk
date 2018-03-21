@@ -216,7 +216,7 @@ const PersonalDetailsBanner = props => {
     57.5,
     60,
     60,
-    -50,
+    60,
   );
   const planeLeft2 = CalculationHelpers.calculateValue(
     percentageComplete,
@@ -486,21 +486,12 @@ const PersonalDetailsBanner = props => {
       />
       <div
         style={{
-          position: 'absolute',
-          width: '100vw',
-          height: '100vh',
-          backgroundColor: '#1E1E1E',
-          opacity: photogImageBackgroundOpacity,
-        }}
-      />
-      <div
-        style={{
           width: '5rem',
           position: 'absolute',
           borderRadius: '.35rem',
           overflow: 'hidden',
           bottom: `${cloudBottomPosition}vh`,
-          left: `${cloud2Left + cloudsLeftOffsetGradual}vw`,
+          left: `${20 + cloudsLeftOffsetGradual}vw`,
         }}
       >
         <img style={{ width: '100%' }} altText="George Gillams" src={cloud2} />
@@ -512,7 +503,7 @@ const PersonalDetailsBanner = props => {
           borderRadius: '.35rem',
           overflow: 'hidden',
           bottom: `${cloudBottomPosition - 10}vh`,
-          left: `${cloud3Left + cloudsLeftOffsetGradual}vw`,
+          left: `${60 + cloudsLeftOffsetGradual}vw`,
         }}
       >
         <img style={{ width: '100%' }} altText="George Gillams" src={cloud3} />
@@ -522,11 +513,20 @@ const PersonalDetailsBanner = props => {
           width: '5rem',
           position: 'absolute',
           bottom: `${planeBottom}vh`,
-          left: `calc(${planeLeft}rem + ${planeLeft2}vw)`,
+          left: `${planeLeft}rem`,
         }}
       >
         <img style={{ width: '100%' }} altText="George Gillams" src={plane} />
       </div>
+      <div
+        style={{
+          position: 'absolute',
+          width: '100vw',
+          height: '100vh',
+          backgroundColor: '#1E1E1E',
+          opacity: photogImageBackgroundOpacity,
+        }}
+      />
 
       <SubSection
         noAnchor
