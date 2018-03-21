@@ -33,7 +33,7 @@ const UkBankSecurity = props => {
     <main className={classNameFinal.join(' ')} {...rest}>
       <PageSwitchScroller />
       <Tag type={TAG_TYPES.tech} link style={{ marginBottom: '0.5rem' }} />
-      <Tag type={TAG_TYPES.security} />
+      <Tag type={TAG_TYPES.security} link style={{ marginBottom: '0.5rem' }} />
       <Section name="UK Bank Security">
         When logging into a number of UK bank websites, they ask for particular
         characters from a password or memorable word. Some banks implement this
