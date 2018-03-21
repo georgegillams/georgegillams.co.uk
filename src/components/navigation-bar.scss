@@ -1,0 +1,68 @@
+@import '~bpk-mixins';
+@import '../../bower_components/animatewithsass/animate.scss';
+
+.navigation-bar {
+  &__container {
+    width: 100%;
+
+    @include bounceInDown(
+      $delay: 1s
+    );
+  }
+
+  &__bar {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+    @include bpk-breakpoint-tablet {
+      padding: 0 0 1rem;
+      flex-direction: column;
+    }
+
+    &--open {
+      display: flex;
+    }
+  }
+
+  &__animated-container {
+    height: auto;
+    transition: all 1s;
+    overflow: hidden;
+
+    @include bpk-breakpoint-tablet {
+      height: 0;
+      opacity: 0;
+    }
+
+    &--open {
+      height: 24rem;
+      opacity: 1;
+    }
+  }
+
+  &__burger-button {
+    display: none;
+    height: 0;
+
+    @include bpk-breakpoint-tablet {
+      display: flex;
+      height: auto;
+      margin: 1rem;
+    }
+
+    &--open {
+    }
+  }
+
+  &__nav-item {
+    padding: 0 .86rem;
+
+    @include bpk-breakpoint-tablet {
+      padding-top: .5rem;
+      padding-bottom: .5rem;
+    }
+  }
+}
