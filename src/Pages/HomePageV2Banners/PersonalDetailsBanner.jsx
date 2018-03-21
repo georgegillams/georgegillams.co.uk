@@ -1,7 +1,6 @@
 import React from 'react';
 import Section from '../../components/Section';
 import SubSection from '../../components/SubSection';
-import astonMartin from '../../images/drivingExperience1.jpg';
 import CalculationHelpers from './CalculationHelpers';
 import georgegillams from '../../images/georgegillams.jpg';
 import southamptonCitySkyline from '../../images/southamptonCitySkyline.svg';
@@ -16,16 +15,6 @@ import serreChevalier from '../../images/serreChevalierBanner.jpg';
 import photog01 from '../Art/images/photog_02.jpg';
 import photog02 from '../Art/images/photog_05.jpg';
 import photog03 from '../Art/images/photog_01.jpg';
-import BpkImage, {
-  withLazyLoading,
-  withLoadingBehavior,
-} from 'bpk-component-image';
-
-const documentIfExists = typeof window !== 'undefined' ? document : null;
-const FadingLazyLoadedImage = withLoadingBehavior(
-  withLazyLoading(BpkImage, documentIfExists),
-);
-
 import STYLES from './home-page-banner.scss';
 
 const getClassName = className => STYLES[className] || 'UNKNOWN';
@@ -53,13 +42,6 @@ const PersonalDetailsBanner = props => {
     0,
     1,
   );
-  // const descLength = CalculationHelpers.calculateValue(
-  //   percentageComplete,
-  //   25,
-  //   40,
-  //   29,
-  //   29 + 4 + 10,
-  // );
   const namePosition = CalculationHelpers.calculateValue(
     percentageComplete,
     4.25,
@@ -204,20 +186,6 @@ const PersonalDetailsBanner = props => {
     0,
     1,
   );
-  const cloud2Left = CalculationHelpers.calculateValue(
-    percentageComplete,
-    57.5,
-    60,
-    20,
-    -50,
-  );
-  const cloud3Left = CalculationHelpers.calculateValue(
-    percentageComplete,
-    57.5,
-    60,
-    60,
-    60,
-  );
   const planeLeft2 = CalculationHelpers.calculateValue(
     percentageComplete,
     57.5,
@@ -268,13 +236,6 @@ const PersonalDetailsBanner = props => {
     1,
   );
 
-  // const backgroundImagePosition = CalculationHelpers.calculateValue(
-  //   percentageComplete,
-  //   0,
-  //   10,
-  //   -2,
-  //   -1,
-  // );
   return (
     <div
       className={`${getClassName(
