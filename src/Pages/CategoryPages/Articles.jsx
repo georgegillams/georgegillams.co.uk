@@ -14,6 +14,7 @@ import rustSm from '../Articles/images/rustSm.jpg';
 import lrSm from '../Articles/images/lrSm.jpg';
 import teapotGif from '../Articles/images/teapot.gif';
 import teapot from '../Articles/images/teapot.jpg';
+import HelperFunctions from '../../HelperFunctions';
 
 import STYLES from '../pages.scss';
 
@@ -75,7 +76,7 @@ class Articles extends Component {
         <Tag type={TAG_TYPES.tech}  />
       </ArticleCard>{' '} */}
         {(this.state.selectedTags.length === 0 ||
-          this.state.selectedTags.includes('events')) && (
+          HelperFunctions.includes(this.state.selectedTags, 'events')) && (
           <ArticleCard
             light
             bannerColor="darkorange"
@@ -93,7 +94,7 @@ class Articles extends Component {
           </ArticleCard>
         )}
         {(this.state.selectedTags.length === 0 ||
-          this.state.selectedTags.includes('tech')) && (
+          HelperFunctions.includes(this.state.selectedTags, 'tech')) && (
           <ArticleCard
             backgroundImageClassName={getClassName(
               'pages__nn-background-image',
@@ -113,7 +114,7 @@ class Articles extends Component {
           </ArticleCard>
         )}
         {(this.state.selectedTags.length === 0 ||
-          this.state.selectedTags.includes('tech')) && (
+          HelperFunctions.includes(this.state.selectedTags, 'tech')) && (
           <ArticleCard
             light
             day={23}

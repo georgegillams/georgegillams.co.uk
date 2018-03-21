@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { browserHistory } from 'react-router-dom';
 import Tag, { TAG_TYPES } from './Tag';
+import HelperFunctions from '../HelperFunctions';
 
 import STYLES from './tag-filter.scss';
 
@@ -13,7 +14,7 @@ class TagFilter extends Component {
   }
 
   componentDidMount = () => {
-    if (`${this.props.location.search}`.includes('filter')) {
+    if (HelperFunctions.includes(`${this.props.location.search}`, 'filter')) {
       const valuesString = `${this.props.location.search}`.split('=')[1];
       const selectedTagsOnLoad = [];
       valuesString.split('+').forEach(s => {
@@ -25,7 +26,7 @@ class TagFilter extends Component {
 
   toggle = tagType => {
     const newSelectedTags = JSON.parse(JSON.stringify(this.props.selectedTags));
-    if (newSelectedTags.includes(tagType)) {
+    if (HelperFunctions.includes(newSelectedTags, tagType)) {
       newSelectedTags.splice(newSelectedTags.indexOf(tagType), 1);
     } else {
       newSelectedTags.push(tagType);
@@ -66,7 +67,9 @@ class TagFilter extends Component {
       <div className={outerClassName.join(' ')}>
         {Object.keys(TAG_TYPES).map(v => (
           <Tag
-            disabled={filterEnabled && !selectedTags.includes(v)}
+            disabled={
+              filterEnabled && !HelperFunctions.includes(selectedTags, v)
+            }
             className={getClassName('tag-filter__tag')}
             type={v}
             onClick={() => {

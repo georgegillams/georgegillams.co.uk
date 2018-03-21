@@ -1,7 +1,8 @@
 const request = require('request');
+const HelperFunctions = require('./HelperFunctions');
 
 const apiKey = '5a5b8bd87d7ef24c5cf08c84';
-const url = `${window.location}`.includes('localhost')
+const url = HelperFunctions.includes(`${window.location}`, 'localhost')
   ? 'http://localhost:3001'
   : 'https://www.georgegillams.co.uk';
 
