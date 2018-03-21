@@ -24,69 +24,6 @@
     font-weight: bold;
     text-shadow: .1rem .1rem .2rem #282b34;
   }
-
-  &__site-map-item {
-    width: auto;
-  }
-
-  &__slider {
-    width: 100vw;
-    margin-left: calc(-50vw + 50%);
-    overflow: hidden;
-    box-sizing: border-box;
-  }
-
-  &__photo-gallery {
-    width: 70vw;
-    max-width: 70rem;
-    overflow: hidden;
-    box-sizing: border-box;
-
-    @include bpk-breakpoint-tablet {
-      width: 90vw;
-      // width: auto;
-    }
-  }
-
-  &__photo-gallery-container {
-    display: flex;
-    width: 100vw;
-    margin-left: calc(-50vw + 50%);
-    justify-content: center;
-    box-sizing: border-box;
-  }
-
-  &__card {
-    margin-bottom: 1rem;
-    box-sizing: border-box;
-  }
-
-  &__site-map-tree {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-
-  &__page {
-    display: flex;
-    width: 100%;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-  }
-
-  &__image {
-    display: inline-block;
-    width: 70%;
-    margin-bottom: 1rem;
-
-    @include bpk-breakpoint-tablet {
-      width: 90%;
-    }
-  }
-
   &__banner {
   }
 
@@ -117,17 +54,6 @@
       display: flex;
       flex-direction: row;
       justify-content: space-around;
-    }
-  }
-
-  &__nn-background-image {
-    background-repeat: no-repeat;
-    background-position: 16rem -1.1rem !important;
-    background-size: 16rem !important;
-    filter: brightness(.5);
-
-    @include bpk-breakpoint-tablet {
-      background-position: 4rem 3.1rem !important;
     }
   }
 }

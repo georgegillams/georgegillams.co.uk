@@ -33,12 +33,12 @@
   }
 
   &__card {
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
     box-sizing: border-box;
   }
 
   &__tag-filter {
-    margin-bottom: .5rem;
+    margin-bottom: 1rem;
   }
 
   &__site-map-tree {
@@ -65,7 +65,7 @@
   &__image {
     display: inline-block;
     width: 70%;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
 
     @include bpk-breakpoint-tablet {
       width: 90%;

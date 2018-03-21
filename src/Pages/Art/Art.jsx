@@ -43,15 +43,16 @@ const Art = props => {
       <ScrollIndicator />
       <br />
       <PageSwitchScroller />
-      <a
-        className={getClassName('pages__link')}
-        href="https://www.flickr.com/people/137198167@N03/"
-        rel="noopener noreferrer"
-        target="_blank"
-      >
-        <Section noAnchor name="See my full Flickr profile →" link />
-      </a>
       <Section name="Photography">
+        <br />
+        <a
+          className={getClassName('pages__link')}
+          href="https://www.flickr.com/people/137198167@N03/"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          <SubSection noAnchor name="See my full Flickr profile →" link />
+        </a>
         <SubSection noAnchor name="Dog running with a Stick">
           <FadingLazyLoadedImage
             className={getClassName('pages__image')}
