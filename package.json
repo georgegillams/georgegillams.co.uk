@@ -50,7 +50,8 @@
     "webfontloader": "^1.6.28"
   },
   "scripts": {
-    "build:server": "babel server.js --ignore node_modules,build --out-dir build && cp -R ./server_content/pages ./build/server_content/",
+    "build:server":
+      "babel server.js --ignore node_modules,build --out-dir build && mkdir build/server_content && cp -R ./server_content/* ./build/server_content/",
     "start:server": "nodemon -r babel-register server.js",
     "start:prod:server": "node build/server.js",
     "start:client": "react-scripts start",
