@@ -20,7 +20,7 @@ if (process.env.REDIS_URL) {
 
 let buildDirectory = null;
 if (process.env.ON_HEROKU) {
-  buildDirectory = '../../build';
+  buildDirectory = '../build';
 } else {
   buildDirectory = '../build';
   // in our codebase, client and server code is structured differently to when deployed on heroku
