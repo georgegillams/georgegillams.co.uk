@@ -1,7 +1,6 @@
 const bodyParser = require('body-parser');
 const express = require('express');
 const path = require('path');
-const HelperFunctions = require('./src/HelperFunctions');
 
 const app = express();
 
@@ -119,12 +118,7 @@ router.delete('/api/comments', (req, res) => {
     client.lrange(`${pageId}_comments`, 0, -1, (err, reply) => {
       for (let i = reply.length - 1; i > 0; i -= 1) {
         const comment = JSON.parse(reply[i]);
-        if (
-          HelperFunctions.includes(
-            `${comment.commenterName}${comment.comment}`,
-            pattern,
-          )
-        ) {
+        if (`${comment.commenterName}${comment.comment}`.includes(pattern)) {
           client.lrem(`${pageId}_comments`, 1, reply[i]);
         }
       }
