@@ -1,19 +1,19 @@
 import React, { ComponentType } from 'react';
-import Button from '../../components/Button';
-import Section from '../../components/Section';
-import SubSection from '../../components/SubSection';
-import PersonalDetails from '../../components/PersonalDetails';
-import PageContentContainer from '../../components/PageContentContainer';
-import astonMartin from '../../images/drivingExperience1.jpg';
+import scrollIntoView from 'scroll-into-view';
+import ScrollerButton from '../../components/ScrollerButton';
 
 import STYLES from './home-page-banner.scss';
 
 const getClassName = className => STYLES[className] || 'UNKNOWN';
 
+const SCROLL_INTO_VIEW_LIMIT = 2000;
+
 export default function homePageBanner(
   Component: ComponentType<any>,
   staticContainerHeight,
   instanceId,
+  scrollToPositions,
+  debug,
 ): ComponentType<any> {
   class HomePageBanner extends React.Component {
     constructor(props) {
@@ -36,26 +36,19 @@ export default function homePageBanner(
         `outerBanner${instanceId}`,
       );
       if (!staticContainer) return;
-      // console.log(staticContainer);
       const staticContainerRect = staticContainer.getBoundingClientRect();
-      // console.log(staticContainerRect);
 
       const movingContainer = document.getElementById(
         `innerBanner${instanceId}`,
       );
       if (!movingContainer) return;
-      // console.log(movingContainer);
       const movingContainerRect = movingContainer.getBoundingClientRect();
-      // console.log(movingContainerRect);
 
       let newPosition = 'fixed';
       let newMovingContainerOffset = 0 - staticContainerRect.y;
 
       const newMovingContainerOffsetMax =
         staticContainerRect.height - movingContainerRect.height;
-      // console.log(staticContainerRect.height);
-      // console.log(movingContainerRect.height);
-      // console.log(newMovingContainerOffsetMax);
 
       if (newMovingContainerOffset < 0) {
         newMovingContainerOffset = 0;
@@ -64,20 +57,7 @@ export default function homePageBanner(
         newMovingContainerOffset = newMovingContainerOffsetMax;
         newPosition = 'absolute';
       }
-      // const winHeight = window.innerHeight;
 
-      // Annoying to compute doc height due to browser inconsistency
-      // const { body } = document;
-      // const html = document.documentElement;
-      // const docHeight = Math.max(
-      //   body.scrollHeight,
-      //   body.offsetHeight,
-      //   html.clientHeight,
-      //   html.scrollHeight,
-      //   html.offsetHeight,
-      // );
-
-      // const value = window.pageYOffset;
       this.setState({
         percentageComplete:
           newMovingContainerOffset * 100 / newMovingContainerOffsetMax,
@@ -87,10 +67,75 @@ export default function homePageBanner(
     };
 
     render() {
-      // const {} = this.props;
-
       const outerStyle =
-        staticContainerHeight === null ? {} : { height: staticContainerHeight };
+        staticContainerHeight === null
+          ? {}
+          : { height: `${staticContainerHeight}vh` };
+      const outerStyleHeightCalc =
+        staticContainerHeight === null ? 300 : staticContainerHeight;
+
+      // WheelReact.config({
+      //   up: () => {
+      //     if (
+      //       this.state.lastScrollIntoView + SCROLL_INTO_VIEW_LIMIT >
+      //       Date.now()
+      //     ) {
+      //       return;
+      //     }
+      //     const newCurrentScrollToPositionIndex =
+      //       this.state.currentScrollToPositionIndex + 1;
+      //     this.setState({
+      //       currentScrollToPositionIndex: newCurrentScrollToPositionIndex,
+      //     });
+      //     console.log('wheel up detected.');
+      //     console.log(
+      //       `looking for scroller_${newCurrentScrollToPositionIndex}`,
+      //     );
+      //
+      //     const newCurrentScrollTo = document.getElementById(
+      //       `scroller_${newCurrentScrollToPositionIndex}`,
+      //     );
+      //     console.log(newCurrentScrollTo);
+      //     if (!newCurrentScrollTo) return;
+      //
+      //     this.setState({
+      //       lastScrollIntoView: Date.now(),
+      //     });
+      //     scrollIntoView(newCurrentScrollTo, {
+      //       time: SCROLL_INTO_VIEW_LIMIT,
+      //     });
+      //   },
+      //   down: () => {
+      //     if (
+      //       this.state.lastScrollIntoView + SCROLL_INTO_VIEW_LIMIT >
+      //       Date.now()
+      //     ) {
+      //       return;
+      //     }
+      //     const newCurrentScrollToPositionIndex =
+      //       this.state.currentScrollToPositionIndex - 1;
+      //     this.setState({
+      //       currentScrollToPositionIndex: newCurrentScrollToPositionIndex,
+      //     });
+      //     console.log('wheel down detected.');
+      //     console.log(
+      //       `looking for scroller_${newCurrentScrollToPositionIndex}`,
+      //     );
+      //
+      //     const newCurrentScrollTo = document.getElementById(
+      //       `scroller_${newCurrentScrollToPositionIndex}`,
+      //     );
+      //     console.log(newCurrentScrollTo);
+      //     if (!newCurrentScrollTo) return;
+      //
+      //     this.setState({
+      //       lastScrollIntoView: Date.now(),
+      //     });
+      //     scrollIntoView(newCurrentScrollTo, {
+      //       time: SCROLL_INTO_VIEW_LIMIT,
+      //     });
+      //   },
+      // });
 
       return (
         <main
@@ -110,10 +155,57 @@ export default function homePageBanner(
             }}
           >
             <Component percentageComplete={this.state.percentageComplete} />
-            {/* <div className={getClassName('home-page-banner__debug-percentage')}>
-              {`${this.state.percentageComplete}%`}
-            </div> */}
+            {debug && (
+              <div
+                className={getClassName('home-page-banner__debug-percentage')}
+              >
+                {`${this.state.percentageComplete}%`}
+              </div>
+            )}
           </div>
+
+          <div
+            style={{
+              position: this.state.movingContainerPosition,
+              top: 0,
+              right: '1rem',
+              height: '100vh',
+              display: 'flex',
+              flexDirection: 'column',
+              justifyContent: 'space-around',
+              alignItems: 'end',
+            }}
+          >
+            {Object.keys(scrollToPositions).map((scrollToPosition, i) => (
+              <ScrollerButton
+                onClick={() => {
+                  const newCurrentScrollTo = document.getElementById(
+                    `scroller_${i}`,
+                  );
+                  console.log(newCurrentScrollTo);
+                  if (!newCurrentScrollTo) return;
+
+                  scrollIntoView(newCurrentScrollTo, {
+                    time: SCROLL_INTO_VIEW_LIMIT,
+                  });
+                }}
+              >
+                {scrollToPosition}
+              </ScrollerButton>
+            ))}
+          </div>
+          {Object.keys(scrollToPositions).map((scrollToPosition, i) => (
+            <div
+              id={`scroller_${i}`}
+              style={{
+                position: 'absolute',
+                opacity: 0,
+                marginTop: `${scrollToPositions[scrollToPosition] *
+                  outerStyleHeightCalc /
+                  100}vh`,
+              }}
+            >{`${scrollToPosition} ${i}`}</div>
+          ))}
         </main>
       );
     }
