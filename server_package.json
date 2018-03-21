@@ -20,7 +20,8 @@
     "nodemon": "^1.11.0"
   },
   "scripts": {
-    "build": "babel . --ignore node_modules,build --out-dir build && cp -R ./pages ./build/",
+    "build":
+      "babel . --ignore node_modules,build --out-dir build && mkdir ./build/server_content && cp -R ./server_content/pages ./build/server_content/",
     "start": "nodemon -r babel-register server.js",
     "start:prod": "node build/server.js"
   }
