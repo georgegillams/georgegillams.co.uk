@@ -18,14 +18,14 @@ if (process.env.REDIS_URL) {
   client = require('redis').createClient();
 }
 
-let clientBuildDirectory = null;
+let buildDirectory = null;
 if (process.env.ON_HEROKU) {
-  clientBuildDirectory = '../../client/build';
+  buildDirectory = '../../build';
 } else {
-  clientBuildDirectory = '../client/build';
+  buildDirectory = '../build';
   // in our codebase, client and server code is structured differently to when deployed on heroku
 }
-const staticFiles = express.static(path.join(__dirname, clientBuildDirectory));
+const staticFiles = express.static(path.join(__dirname, buildDirectory));
 
 app.use((req, res, next) => {
   res.header('Access-Control-Allow-Origin', '*');
@@ -51,7 +51,9 @@ const router = express.Router();
 app.use(staticFiles);
 
 router.get('/api/greasemonkey/secureEcs_download', (req, res) => {
-  res.sendFile(path.join(__dirname, './greasemonkey', 'secure ecs.js'));
+  res.sendFile(
+    path.join(__dirname, './server_content/greasemonkey', 'secure ecs.js'),
+  );
 });
 
 router.get('/api/hello', (req, res) => {
@@ -139,12 +141,12 @@ router.delete('/api/comments', (req, res) => {
 
 router.get('/418', (req, res) => {
   res.status(418);
-  res.sendFile(path.resolve(__dirname, clientBuildDirectory, 'index.html'));
+  res.sendFile(path.resolve(__dirname, buildDirectory, 'index.html'));
 });
 
 router.get('/teapot', (req, res) => {
   res.status(418);
-  res.sendFile(path.resolve(__dirname, clientBuildDirectory, 'index.html'));
+  res.sendFile(path.resolve(__dirname, buildDirectory, 'index.html'));
 });
 
 app.use(router);
