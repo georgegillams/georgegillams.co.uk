@@ -111,7 +111,6 @@ const Work = props => {
               height={169}
               src={backpackScreenshot}
             /> */}
-            <br />
             <Button hrefExternal href="https://backpack.github.io/">
               Read more here →
             </Button>
