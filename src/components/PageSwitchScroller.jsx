@@ -1,10 +1,14 @@
 import React from 'react';
+import HelperFunctions from '../HelperFunctions';
 
 import scrollIntoView from 'scroll-into-view';
 
 class PageSwitchScroller extends React.Component {
   componentDidMount() {
-    if (this.scroller !== null && !`${window.location}`.includes('#')) {
+    if (
+      this.scroller !== null &&
+      !HelperFunctions.includes(`${window.location}`, '#')
+    ) {
       scrollIntoView(this.scroller, {
         time: 400,
       });
