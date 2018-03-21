@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import 'whatwg-fetch';
+import HelperFunctions from '../HelperFunctions';
 
 import RedirectNotice from './RedirectNotice';
 import NavigationBar from './NavigationBar';
@@ -20,10 +21,11 @@ class DefaultLayout extends React.Component {
 
   render() {
     const location = `${window.location}`;
-    const isLocalNetwork = location.includes('192.168.');
-    const isLocalhost = location.includes('localhost');
+    const isLocalNetwork = HelperFunctions.includes(location, '192.168.');
+    const isLocalhost = HelperFunctions.includes(location, 'localhost');
     const needsRedirect =
-      !(isLocalhost || isLocalNetwork) && !location.includes('https');
+      !(isLocalhost || isLocalNetwork) &&
+      !HelperFunctions.includes(location, 'https');
     if (needsRedirect) {
       window.location = location.replace('http', 'https');
       return <RedirectNotice />;
