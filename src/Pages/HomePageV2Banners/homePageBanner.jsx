@@ -173,7 +173,7 @@ export default function homePageBanner(
               display: 'flex',
               flexDirection: 'column',
               justifyContent: 'space-around',
-              alignItems: 'end',
+              alignItems: 'flex-end',
             }}
           >
             {Object.keys(scrollToPositions).map((scrollToPosition, i) => (
