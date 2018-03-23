@@ -25,8 +25,13 @@ class DefaultLayout extends React.Component {
     const ieOrEdge =
       /msie\s|trident\/|edge\//i.test(uA) &&
       !!(document.uniqueID || window.MSInputMethodContext);
+    const isIe =
+      /msie\s/i.test(uA) &&
+      !!(document.uniqueID || window.MSInputMethodContext);
 
-    if (ieOrEdge) {
+    let warningBar = null;
+
+    if (isIe) {
       return (
         <div
           style={{
@@ -46,7 +51,7 @@ class DefaultLayout extends React.Component {
               '-apple-system,BlinkMacSystemFont,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,Arial,sans-serif',
           }}
         >
-          INTERNET EXPLORER AND EDGE ARE NOT SUPPORTED
+          INTERNET EXPLORER IS NOT SUPPORTED
           <br />
           <span style={{ fontSize: '1rem', marginBottom: '30vh' }}>
             I guess it&apos;s time to get a browser fit for the 21st Century 👍
@@ -55,7 +60,7 @@ class DefaultLayout extends React.Component {
             <a href="https://www.mozilla.org/en-GB/firefox/new/">
               Mozilla Firefox
             </a>{' '}
-            to support a free, open, and healthy internet
+            to support a free, open, and healthy internet.
           </span>
           <span style={{ fontSize: '1rem' }}>
             If you&apos;re just here for my contact details, and don&apos;t need
@@ -65,6 +70,42 @@ class DefaultLayout extends React.Component {
             <a href="mailto:g@georgegillams.co.uk">
               Email g@georgegillams.co.uk
             </a>
+          </span>
+        </div>
+      );
+    }
+
+    if (ieOrEdge) {
+      warningBar = (
+        <div
+          style={{
+            width: '100vw',
+            height: '10rem',
+            backgroundColor: 'red',
+            flexDirection: 'column',
+            color: 'white',
+            display: 'flex',
+            fontSize: '2rem',
+            textAlign: 'center',
+            alignItems: 'center',
+            justifyContent: 'center',
+            backgroundImage: 'linear-gradient(180deg,red,darkred)',
+            fontWeight: 'lighter',
+            fontFamily:
+              '-apple-system,BlinkMacSystemFont,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,Arial,sans-serif',
+          }}
+        >
+          EDGE IS NOT A GOOD BROWSER TO USE
+          <br />
+          <span style={{ fontSize: '1rem', marginTop: '1rem' }}>
+            Microsoft repeatedly fail to embrace web standards, and don&apos;t
+            release timely security updates.
+            <br />
+            Download{' '}
+            <a href="https://www.mozilla.org/en-GB/firefox/new/">
+              Mozilla Firefox
+            </a>{' '}
+            to support a free, open, and healthy internet.
           </span>
         </div>
       );
@@ -85,6 +126,7 @@ class DefaultLayout extends React.Component {
 
     return (
       <div className={getClassName('default-layout__site')}>
+        {warningBar && warningBar}
         <NavigationBar />
         <div className={getClassName('default-layout__main')}>
           <PageContentContainer>{children}</PageContentContainer>
