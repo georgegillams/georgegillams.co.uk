@@ -13,14 +13,18 @@ const FadingLazyLoadedImage = withLoadingBehavior(
   withLazyLoading(BpkImage, documentIfExists),
 );
 
-const PhotoGallery = (props) => {
+const PhotoGallery = props => {
   const { images, className, ...rest } = props;
 
   const classNameFinal = [getClassName('photo-gallery__container')];
   if (className) classNameFinal.push(className);
 
   return (
-    <div className={classNameFinal.join(' ')} {...rest}>
+    <div
+      className={classNameFinal.join(' ')}
+      style={{ height: '30vw' }}
+      {...rest}
+    >
       <FadingLazyLoadedImage
         className={getClassName('photo-gallery__image0')}
         altText="Netflix download speeds on a number of American ISPs"
