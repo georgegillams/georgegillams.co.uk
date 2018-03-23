@@ -176,23 +176,32 @@ export default function homePageBanner(
               alignItems: 'flex-end',
             }}
           >
-            {Object.keys(scrollToPositions).map((scrollToPosition, i) => (
-              <ScrollerButton
-                onClick={() => {
-                  const newCurrentScrollTo = document.getElementById(
-                    `scroller_${i}`,
-                  );
-                  console.log(newCurrentScrollTo);
-                  if (!newCurrentScrollTo) return;
+            <div
+              style={{
+                display: 'flex',
+                flexDirection: 'column',
+                alignItems: 'flex-end',
+              }}
+            >
+              {Object.keys(scrollToPositions).map((scrollToPosition, i) => (
+                <ScrollerButton
+                  style={{ margin: '.5rem 0' }}
+                  onClick={() => {
+                    const newCurrentScrollTo = document.getElementById(
+                      `scroller_${i}`,
+                    );
+                    console.log(newCurrentScrollTo);
+                    if (!newCurrentScrollTo) return;
 
-                  scrollIntoView(newCurrentScrollTo, {
-                    time: SCROLL_INTO_VIEW_LIMIT,
-                  });
-                }}
-              >
-                {scrollToPosition}
-              </ScrollerButton>
-            ))}
+                    scrollIntoView(newCurrentScrollTo, {
+                      time: SCROLL_INTO_VIEW_LIMIT,
+                    });
+                  }}
+                >
+                  {scrollToPosition}
+                </ScrollerButton>
+              ))}
+            </div>
           </div>
           {Object.keys(scrollToPositions).map((scrollToPosition, i) => (
             <div
