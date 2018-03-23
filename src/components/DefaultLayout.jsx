@@ -26,8 +26,8 @@ class DefaultLayout extends React.Component {
       /msie\s|trident\/|edge\//i.test(uA) &&
       !!(document.uniqueID || window.MSInputMethodContext);
     const isIe =
-      /msie\s/i.test(uA) &&
-      !!(document.uniqueID || window.MSInputMethodContext);
+      window.navigator.userAgent.indexOf('MSIE') !== -1 ||
+      window.navigator.appVersion.indexOf('Trident/') > 0;
 
     let warningBar = null;
 
@@ -95,7 +95,7 @@ class DefaultLayout extends React.Component {
               '-apple-system,BlinkMacSystemFont,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,Arial,sans-serif',
           }}
         >
-          EDGE IS NOT A GOOD BROWSER TO USE
+          EDGE IS NOT A GREAT BROWSER TO USE
           <br />
           <span style={{ fontSize: '1rem', marginTop: '1rem' }}>
             Microsoft repeatedly fail to embrace web standards, and don&apos;t
