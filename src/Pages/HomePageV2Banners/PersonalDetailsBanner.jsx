@@ -433,7 +433,7 @@ const PersonalDetailsBanner = props => {
           opacity: liveInTextOpacity * liveInTextOpacity2,
         }}
         light
-        name="I live in Southampton with my beautiful fiancée and cat"
+        name="I live in Southampton with my wonderful fiancée and cat"
       />
       <SubSection
         noAnchor
