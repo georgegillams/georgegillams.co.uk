@@ -56,7 +56,7 @@ const AboutMe = props => {
         Masters.
         <br />
         <br />
-        I recently got engaged to my beautiful fiancée in{' '}
+        I recently got engaged to my wonderful fiancée in{' '}
         <TextLink href="/travel/iceland-2018">Iceland</TextLink> 💍, and live
         with her and Tigger the cat.
         <br />
