@@ -18,13 +18,7 @@ if (process.env.REDIS_URL) {
   client = require('redis').createClient();
 }
 
-let buildDirectory = null;
-if (process.env.ON_HEROKU) {
-  buildDirectory = '../build';
-} else {
-  buildDirectory = '../build';
-  // in our codebase, client and server code is structured differently to when deployed on heroku
-}
+const buildDirectory = '../build';
 const staticFiles = express.static(path.join(__dirname, buildDirectory));
 
 app.use((req, res, next) => {
