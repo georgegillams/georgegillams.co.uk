@@ -50,6 +50,17 @@ const router = express.Router();
 
 app.use(staticFiles);
 
+router.get('/ontologies/2018/tv-listing-ontology', (req, res) => {
+  res.sendFile(
+    path.join(
+      __dirname,
+      './server_content/ontologies',
+      'tv-listing-ontology.owl',
+    ),
+    { headers: { 'Content-Type': 'text/xml' } },
+  );
+});
+
 router.get('/api/greasemonkey/secureEcs_download', (req, res) => {
   res.sendFile(
     path.join(__dirname, './server_content/greasemonkey', 'secure ecs.js'),
