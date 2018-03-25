@@ -1,6 +1,5 @@
 import React from 'react';
 import HelperFunctions from '../HelperFunctions';
-
 import scrollIntoView from 'scroll-into-view';
 
 class PageSwitchScroller extends React.Component {
