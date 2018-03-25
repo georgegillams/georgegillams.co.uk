@@ -8,6 +8,7 @@ import flickrIcon from './../icons/flickr.png';
 import emailIcon from './../icons/email.png';
 import phoneIcon from './../icons/phone.png';
 import dropboxIcon from './../icons/dropbox.png';
+import monzoIcon from './../icons/monzoIcon.png';
 
 // import skyscannerIcon from  './../icons/skyscanner.png';
 
@@ -17,10 +18,8 @@ const getClassName = className => STYLES[className] || 'UNKNOWN';
 // const documentIfExists = typeof window !== 'undefined' ? document : null;
 // const FadingLazyLoadedImage = withLoadingBehavior(withLazyLoading(BpkImage, documentIfExists));
 
-const GetSocial = (props) => {
-  const {
-    light, className, alwaysCentered, ...rest
-  } = props;
+const GetSocial = props => {
+  const { light, className, alwaysCentered, ...rest } = props;
   const outerClassNameFinal = [];
   if (className) {
     outerClassNameFinal.push(className);
@@ -140,6 +139,19 @@ const GetSocial = (props) => {
             height={5}
             className={darkIconClassNameFinal.join(' ')}
             src={phoneIcon}
+          />
+        </a>
+        <a
+          href="https://monzo.me/georgestuartgillams"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          <img
+            alt="monzo"
+            width={5}
+            height={5}
+            className={iconClassNameFinal.join(' ')}
+            src={monzoIcon}
           />
         </a>
       </div>
