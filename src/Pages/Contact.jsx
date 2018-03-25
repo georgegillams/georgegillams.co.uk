@@ -7,7 +7,7 @@ import STYLES from './pages.scss';
 
 const getClassName = className => STYLES[className] || 'UNKNOWN';
 
-const Contact = (props) => {
+const Contact = props => {
   const { className, ...rest } = props;
   const classNameFinal = [getClassName('pages__page')];
   if (className) {
@@ -18,19 +18,30 @@ const Contact = (props) => {
     <main className={classNameFinal.join(' ')} {...rest}>
       <Section name="Get in touch">
         <br />
+        <a
+          href="https://www.fb.com/george333123"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          <SubSection noAnchor name="Facebook george333123" link />
+        </a>
+        <a
+          href="mailto:g@georgegillams.co.uk"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          <SubSection noAnchor name="Email g@georgegillams.co.uk" link />
+        </a>
         <a href="tel:+447867592615" rel="noopener noreferrer" target="_blank">
           <SubSection noAnchor name="Call +44 (0) 786759 2615" link />
         </a>
-        <a href="mailto:g@georgegillams.co.uk" rel="noopener noreferrer" target="_blank">
-          <SubSection noAnchor name="Email g@georgegillams.co.uk" link />
-        </a>
-        <a
+        {/* <a
           href="https://georgegillams.typeform.com/to/oBmiJZ"
           rel="noopener noreferrer"
           target="_blank"
         >
           <SubSection noAnchor name="Contact me online" link />
-        </a>
+        </a> */}
       </Section>
     </main>
   );
