@@ -12,23 +12,31 @@
     <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
     <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
     <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Import>http://www.w3.org/ns/org#</Import>
+    <Import>http://xmlns.com/foaf/0.1/</Import>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/contributor"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">George Gillams (gsg1g13@ecs.soton.ac.uk)</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/description"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Created in fulfilment of COMP6215</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/title"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">TV Programme Listing Ontology</Literal>
+    </Annotation>
     <Declaration>
-        <ObjectProperty IRI="#showsProgramme"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Actor"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#hasSeries"/>
+        <NamedIndividual IRI="#quentin_tarantino"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#hasBroadcast"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#shownOn"/>
+        <ObjectProperty IRI="#producerOf"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#inEpisode"/>
+        <ObjectProperty IRI="#shownOn"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#presentedBy"/>
@@ -37,10 +45,7 @@
         <Class IRI="#Broadcast"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#producedBy"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Broadcaster"/>
+        <Class IRI="#Actor_and_Director"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#broadcastOn"/>
@@ -49,19 +54,16 @@
         <Class IRI="#TV_Personality"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#catchphrase-series1"/>
-    </Declaration>
-    <Declaration>
         <ObjectProperty IRI="#episodeStars"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Director"/>
+        <Class IRI="http://schema.org/Person"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="#hasName"/>
+        <NamedIndividual IRI="#catchphrase-se1-ep1-broadcast"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Episode"/>
+        <DataProperty IRI="#hasEpisodeNumber"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#catchphrase"/>
@@ -70,64 +72,52 @@
         <ObjectProperty IRI="#broadcastBy"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#hasEpisode"/>
+        <Class IRI="#Episode"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Current_Affairs_Programme"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Format"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#includesProgramme"/>
+        <ObjectProperty IRI="#presentsEpisode"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#presentsEpisode"/>
+        <NamedIndividual IRI="#catchphrase-se1-episode1"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#directs"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#hasFormat"/>
+        <NamedIndividual IRI="#test-broadcast"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Genre"/>
+        <Class IRI="#Panopticon_Productions_episode_broadcast"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#ofProgramme"/>
+        <DataProperty IRI="#hasSeriesNumber"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Producer"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#preduces"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#inBroadcast"/>
+        <Class IRI="#Repeat_Episode"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#inSeries"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#hasGenre"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="#episodeNumber"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="#Programme"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#catchphrase-episode1"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Presenter"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#tvs"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#Channel"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#broadcastEpisode"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="#seriesNumber"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Production_Company"/>
@@ -136,11 +126,175 @@
         <Class IRI="#Series"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#ownsBroadcast"/>
+        <ObjectProperty IRI="#hasSeries"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Actor"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#showsProgramme"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#inEpisode"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#catchphrase-se16-ep1-repeat-broadcast"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#catchphrase-series16"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#producedBy"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Broadcaster"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#isHighQuality"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#catchphrase-series1"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#producedByCompany"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Director"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasName"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasEpisode"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#catchphrase-se16-ep1-broadcast"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#includesProgramme"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#High_Definition_Broadcast"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#catchphrase-se16-episode1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#News_at_1000"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasFormat"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Genre"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#game_show"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#ofProgramme"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#broadcastAt"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#current_affairs"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#companyProduces"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#inBroadcast"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Panopticon_Productions"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasGenre"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ITV"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#roy-walker"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#nick-weir"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#broadcastEpisode"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#directedBy"/>
     </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#ownsBroadcast"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Action_Time"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/contributor"/>
+    </Declaration>
+    <EquivalentClasses>
+        <Class IRI="#Actor_and_Director"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Actor"/>
+            <Class IRI="#Director"/>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Current_Affairs_Programme"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Programme"/>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasGenre"/>
+                <NamedIndividual IRI="#current_affairs"/>
+            </ObjectHasValue>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#High_Definition_Broadcast"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Broadcast"/>
+            <DataHasValue>
+                <DataProperty IRI="#isHighQuality"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+            </DataHasValue>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Panopticon_Productions_episode_broadcast"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Broadcast"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#broadcastEpisode"/>
+                <ObjectIntersectionOf>
+                    <Class IRI="#Episode"/>
+                    <ObjectSomeValuesFrom>
+                        <ObjectProperty IRI="#inSeries"/>
+                        <ObjectIntersectionOf>
+                            <Class IRI="#Series"/>
+                            <ObjectHasValue>
+                                <ObjectProperty IRI="#producedByCompany"/>
+                                <NamedIndividual IRI="#Panopticon_Productions"/>
+                            </ObjectHasValue>
+                        </ObjectIntersectionOf>
+                    </ObjectSomeValuesFrom>
+                </ObjectIntersectionOf>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Repeat_Episode"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Episode"/>
+            <ObjectMinCardinality cardinality="2">
+                <ObjectProperty IRI="#inBroadcast"/>
+                <Class IRI="#Broadcast"/>
+            </ObjectMinCardinality>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
     <SubClassOf>
         <Class IRI="#Actor"/>
         <Class IRI="#TV_Personality"/>
@@ -157,27 +311,184 @@
         <Class IRI="#Producer"/>
         <Class IRI="#TV_Personality"/>
     </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Production_Company"/>
+        <Class IRI="http://www.w3.org/ns/org#Organization"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TV_Personality"/>
+        <Class IRI="http://schema.org/Person"/>
+    </SubClassOf>
+    <ClassAssertion>
+        <Class IRI="#Production_Company"/>
+        <NamedIndividual IRI="#Action_Time"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Programme"/>
+        <NamedIndividual IRI="#News_at_1000"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Production_Company"/>
+        <NamedIndividual IRI="#Panopticon_Productions"/>
+    </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#Programme"/>
         <NamedIndividual IRI="#catchphrase"/>
     </ClassAssertion>
     <ClassAssertion>
+        <Class IRI="#Broadcast"/>
+        <NamedIndividual IRI="#catchphrase-se1-ep1-broadcast"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class IRI="#Episode"/>
-        <NamedIndividual IRI="#catchphrase-episode1"/>
+        <NamedIndividual IRI="#catchphrase-se1-episode1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Broadcast"/>
+        <NamedIndividual IRI="#catchphrase-se16-ep1-broadcast"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Broadcast"/>
+        <NamedIndividual IRI="#catchphrase-se16-ep1-repeat-broadcast"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Episode"/>
+        <NamedIndividual IRI="#catchphrase-se16-episode1"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#Series"/>
         <NamedIndividual IRI="#catchphrase-series1"/>
     </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Series"/>
+        <NamedIndividual IRI="#catchphrase-series16"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Genre"/>
+        <NamedIndividual IRI="#current_affairs"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Genre"/>
+        <NamedIndividual IRI="#game_show"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Presenter"/>
+        <NamedIndividual IRI="#nick-weir"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Actor"/>
+        <NamedIndividual IRI="#quentin_tarantino"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Director"/>
+        <NamedIndividual IRI="#quentin_tarantino"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Presenter"/>
+        <NamedIndividual IRI="#roy-walker"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Broadcast"/>
+        <NamedIndividual IRI="#test-broadcast"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Production_Company"/>
+        <NamedIndividual IRI="#tvs"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#companyProduces"/>
+        <NamedIndividual IRI="#Action_Time"/>
+        <NamedIndividual IRI="#catchphrase-series16"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#ownsBroadcast"/>
+        <NamedIndividual IRI="#ITV"/>
+        <NamedIndividual IRI="#catchphrase-se16-ep1-broadcast"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasGenre"/>
+        <NamedIndividual IRI="#News_at_1000"/>
+        <NamedIndividual IRI="#current_affairs"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasGenre"/>
+        <NamedIndividual IRI="#catchphrase"/>
+        <NamedIndividual IRI="#game_show"/>
+    </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#hasSeries"/>
         <NamedIndividual IRI="#catchphrase"/>
         <NamedIndividual IRI="#catchphrase-series1"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#broadcastBy"/>
+        <NamedIndividual IRI="#catchphrase-se1-ep1-broadcast"/>
+        <NamedIndividual IRI="#ITV"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#inBroadcast"/>
+        <NamedIndividual IRI="#catchphrase-se1-episode1"/>
+        <NamedIndividual IRI="#catchphrase-se1-ep1-broadcast"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#broadcastBy"/>
+        <NamedIndividual IRI="#catchphrase-se16-ep1-broadcast"/>
+        <NamedIndividual IRI="#ITV"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#broadcastBy"/>
+        <NamedIndividual IRI="#catchphrase-se16-ep1-repeat-broadcast"/>
+        <NamedIndividual IRI="#ITV"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#broadcastEpisode"/>
+        <NamedIndividual IRI="#catchphrase-se16-ep1-repeat-broadcast"/>
+        <NamedIndividual IRI="#catchphrase-se16-episode1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#inBroadcast"/>
+        <NamedIndividual IRI="#catchphrase-se16-episode1"/>
+        <NamedIndividual IRI="#catchphrase-se16-ep1-broadcast"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#inBroadcast"/>
+        <NamedIndividual IRI="#catchphrase-se16-episode1"/>
+        <NamedIndividual IRI="#catchphrase-se16-ep1-repeat-broadcast"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#inBroadcast"/>
+        <NamedIndividual IRI="#catchphrase-se16-episode1"/>
+        <NamedIndividual IRI="#test-broadcast"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
         <ObjectProperty IRI="#hasEpisode"/>
         <NamedIndividual IRI="#catchphrase-series1"/>
-        <NamedIndividual IRI="#catchphrase-episode1"/>
+        <NamedIndividual IRI="#catchphrase-se1-episode1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasEpisode"/>
+        <NamedIndividual IRI="#catchphrase-series16"/>
+        <NamedIndividual IRI="#catchphrase-se16-episode1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#ofProgramme"/>
+        <NamedIndividual IRI="#catchphrase-series16"/>
+        <NamedIndividual IRI="#catchphrase"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#presentsEpisode"/>
+        <NamedIndividual IRI="#nick-weir"/>
+        <NamedIndividual IRI="#catchphrase-se16-episode1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#presentsEpisode"/>
+        <NamedIndividual IRI="#roy-walker"/>
+        <NamedIndividual IRI="#catchphrase-se1-episode1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#companyProduces"/>
+        <NamedIndividual IRI="#tvs"/>
+        <NamedIndividual IRI="#catchphrase-series1"/>
     </ObjectPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#hasName"/>
@@ -185,14 +496,44 @@
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Catch Phrase</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
-        <DataProperty IRI="#episodeNumber"/>
-        <NamedIndividual IRI="#catchphrase-episode1"/>
+        <DataProperty IRI="#broadcastAt"/>
+        <NamedIndividual IRI="#catchphrase-se1-ep1-broadcast"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#dateTime">1986-01-12T00:00:00</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#isHighQuality"/>
+        <NamedIndividual IRI="#catchphrase-se1-ep1-broadcast"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">false</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasEpisodeNumber"/>
+        <NamedIndividual IRI="#catchphrase-se1-episode1"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">1</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
-        <DataProperty IRI="#seriesNumber"/>
+        <DataProperty IRI="#broadcastAt"/>
+        <NamedIndividual IRI="#catchphrase-se16-ep1-broadcast"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#dateTime">2002-11-24T00:00:00</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#isHighQuality"/>
+        <NamedIndividual IRI="#catchphrase-se16-ep1-broadcast"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasEpisodeNumber"/>
+        <NamedIndividual IRI="#catchphrase-se16-episode1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasSeriesNumber"/>
         <NamedIndividual IRI="#catchphrase-series1"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasSeriesNumber"/>
+        <NamedIndividual IRI="#catchphrase-series16"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">16</Literal>
     </DataPropertyAssertion>
     <InverseObjectProperties>
         <ObjectProperty IRI="#broadcastBy"/>
@@ -207,6 +548,10 @@
         <ObjectProperty IRI="#hasBroadcast"/>
     </InverseObjectProperties>
     <InverseObjectProperties>
+        <ObjectProperty IRI="#companyProduces"/>
+        <ObjectProperty IRI="#producedByCompany"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
         <ObjectProperty IRI="#directedBy"/>
         <ObjectProperty IRI="#directs"/>
     </InverseObjectProperties>
@@ -231,12 +576,12 @@
         <ObjectProperty IRI="#ofProgramme"/>
     </InverseObjectProperties>
     <InverseObjectProperties>
-        <ObjectProperty IRI="#preduces"/>
-        <ObjectProperty IRI="#producedBy"/>
-    </InverseObjectProperties>
-    <InverseObjectProperties>
         <ObjectProperty IRI="#presentedBy"/>
         <ObjectProperty IRI="#presentsEpisode"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#producedBy"/>
+        <ObjectProperty IRI="#producerOf"/>
     </InverseObjectProperties>
     <InverseObjectProperties>
         <ObjectProperty IRI="#shownOn"/>
@@ -253,6 +598,10 @@
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#broadcastOn"/>
         <Class IRI="#Broadcast"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#companyProduces"/>
+        <Class IRI="#Production_Company"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#directedBy"/>
@@ -323,14 +672,6 @@
         <Class IRI="#Broadcaster"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="#preduces"/>
-        <Class IRI="#Producer"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="#preduces"/>
-        <Class IRI="#Production_Company"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
         <ObjectProperty IRI="#presentedBy"/>
         <Class IRI="#Episode"/>
     </ObjectPropertyDomain>
@@ -351,6 +692,14 @@
         <Class IRI="#Series"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
+        <ObjectProperty IRI="#producedByCompany"/>
+        <Class IRI="#Series"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#producerOf"/>
+        <Class IRI="#Producer"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
         <ObjectProperty IRI="#shownOn"/>
         <Class IRI="#Programme"/>
     </ObjectPropertyDomain>
@@ -369,6 +718,10 @@
     <ObjectPropertyRange>
         <ObjectProperty IRI="#broadcastOn"/>
         <Class IRI="#Channel"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#companyProduces"/>
+        <Class IRI="#Series"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#directedBy"/>
@@ -435,18 +788,6 @@
         <Class IRI="#Broadcast"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="#preduces"/>
-        <Class IRI="#Episode"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="#preduces"/>
-        <Class IRI="#Programme"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="#preduces"/>
-        <Class IRI="#Series"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
         <ObjectProperty IRI="#presentedBy"/>
         <Class IRI="#Presenter"/>
     </ObjectPropertyRange>
@@ -459,8 +800,20 @@
         <Class IRI="#Producer"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="#producedBy"/>
+        <ObjectProperty IRI="#producedByCompany"/>
         <Class IRI="#Production_Company"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#producerOf"/>
+        <Class IRI="#Episode"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#producerOf"/>
+        <Class IRI="#Programme"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#producerOf"/>
+        <Class IRI="#Series"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#shownOn"/>
@@ -471,20 +824,44 @@
         <Class IRI="#Programme"/>
     </ObjectPropertyRange>
     <DataPropertyDomain>
-        <DataProperty IRI="#episodeNumber"/>
+        <DataProperty IRI="#broadcastAt"/>
+        <Class IRI="#Broadcast"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasEpisodeNumber"/>
         <Class IRI="#Episode"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#hasName"/>
         <Class IRI="#Programme"/>
     </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasSeriesNumber"/>
+        <Class IRI="#Series"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#isHighQuality"/>
+        <Class IRI="#Broadcast"/>
+    </DataPropertyDomain>
     <DataPropertyRange>
-        <DataProperty IRI="#episodeNumber"/>
+        <DataProperty IRI="#broadcastAt"/>
+        <Datatype abbreviatedIRI="xsd:dateTime"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasEpisodeNumber"/>
         <Datatype abbreviatedIRI="xsd:int"/>
     </DataPropertyRange>
     <DataPropertyRange>
         <DataProperty IRI="#hasName"/>
         <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasSeriesNumber"/>
+        <Datatype abbreviatedIRI="xsd:int"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#isHighQuality"/>
+        <Datatype abbreviatedIRI="xsd:boolean"/>
     </DataPropertyRange>
 </Ontology>
 
