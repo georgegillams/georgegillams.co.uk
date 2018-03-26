@@ -13,6 +13,7 @@ import ScrollIndicator from '../../components/ScrollIndicator';
 import passwordCharacterExtractorUse from './images/passwordCharacterExtractorUse.png';
 import greasemonkeyEcsBefore from './images/greasemonkey_before.png';
 import greasemonkeyEcsAfter from './images/greasemonkey_after.png';
+import reactComponentAcademicReferenceUse from './images/reactComponentAcademicReferenceUse.png';
 
 import STYLES from './apps.scss';
 
@@ -98,9 +99,9 @@ const Work = props => {
             components to hold state and allow interaction. This was
             time-consuming, and occasionally failed to reflect the real-life
             use-cases of our components. As a result, I decided to build a demo
-            HOC which would allow any component to be passed in, and would
-            automatically construct a list of HOCS, allowing them to be edited
-            through the Demo component.
+            HOC which would allow any component to be passed in and
+            automatically construct a list of props. Each prop can be edited in
+            place through the Demo component.
             <br />
             <br />
             {/* <FadingLazyLoadedImage
@@ -115,7 +116,7 @@ const Work = props => {
               Read more here →
             </Button>
           </SubSection>
-          {/* <SubSection name="React.js Academic References Component">
+          <SubSection name="React.js Academic References Component">
             I was looking for a decent React Academic References Component{' '}
             <TextLink external href="https://npmjs.org/">
               NPM{' '}
@@ -129,16 +130,26 @@ const Work = props => {
             community can expand on this to support more referencing formats.
             <br />
             <br />
+            <FadingLazyLoadedImage
+              className={getClassName('apps__image')}
+              altText="React.js Academic Reference Component Use"
+              style={{ maxWidth: '45rem' }}
+              width={2266}
+              height={1728}
+              src={reactComponentAcademicReferenceUse}
+            />
+            <br />
+            <br />
             <Button href="blog/net-neutrality">See it in action →</Button>
             <br />
             <br />
             <Button
               hrefExternal
-              href="https://github.com/georgegillams/react-component-academic-references"
+              href="https://github.com/georgegillams/react-component-academic-reference"
             >
               View on GitHub →
             </Button>
-          </SubSection> */}
+          </SubSection>
           <SubSection name="Password Character Extractor">
             I found the login process for a number of sites (particularly UK
             bank websites) frustrating as they often require specific characters

@@ -5,6 +5,10 @@
     width: auto;
   }
 
+  &__references {
+    max-width: calc(90vw - 1rem);
+  }
+
   &__slider {
     width: 100vw;
     margin-left: calc(-50vw + 50%);
