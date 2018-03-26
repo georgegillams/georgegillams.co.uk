@@ -693,6 +693,7 @@ const NetNeutrality = props => {
         </SubSection>
         <SubSection name="References">
           <References
+            className={getClassName('pages__references')}
             referenceStyle={REFERENCE_STYLES.harvard}
             references={myReferences}
           />
