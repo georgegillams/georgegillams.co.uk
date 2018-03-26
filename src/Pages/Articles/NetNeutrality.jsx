@@ -5,6 +5,11 @@ import BpkImage, {
   withLazyLoading,
   withLoadingBehavior,
 } from 'bpk-component-image';
+import {
+  citation,
+  References,
+  REFERENCE_STYLES,
+} from 'react-component-academic-reference';
 import Section from './../../components/Section';
 import SubSection from './../../components/SubSection';
 import Tag, { TAG_TYPES } from '../../components/Tag';
@@ -15,6 +20,9 @@ import Comments from '../../components/Comments';
 // import GoogleAds from '../../components/GoogleAds';
 import PageSwitchScroller from '../../components/PageSwitchScroller';
 import ScrollIndicator from '../../components/ScrollIndicator';
+import scrollIntoView from 'scroll-into-view';
+
+const bibtexParse = require('bibtex-parse-js');
 
 import STYLES from '../pages.scss';
 
@@ -25,6 +33,447 @@ const FadingLazyLoadedImage = withLoadingBehavior(
 );
 const DATE_WRITTEN = new Date(2017, 11, 8, 7, 1, 0);
 const PAGE_ID = 957261;
+
+// const myReferences = [
+//   {
+//     citationKey: 'SAMPLE1',
+//     entryType: 'ARTICLE',
+//     entryTags: { title: 'sample title', author: 'sample author' },
+//   },
+//   {
+//     citationKey: 'SAMPLE2',
+//     entryType: 'ARTICLE',
+//     entryTags: { title: 'sample title', author: 'sample author' },
+//   },
+//   {
+//     citationKey: 'SAMPLE3',
+//     entryType: 'ARTICLE',
+//     entryTags: { title: 'sample title', author: 'sample author' },
+//   },
+// ];
+
+const myReferences = bibtexParse.toJSON(`
+@book{wu2010master,
+author = {Wu, Tim},
+title = {{The Master Switch: The Rise and Fall of Information Empires}},
+publisher = {Alfred A. Knopf},
+year = {2010},
+series = {Borzoi Books},
+pmid = {2010004137},
+isbn = {9780307269935},
+rating = {0},
+date-added = {2017-11-20T17:57:27GMT},
+date-modified = {2017-11-21T11:18:46GMT},
+url = {https://books.google.co.uk/books?id=tKr0QwAACAAJ},
+uri = {url{papers3://publication/uuid/4AE35FBC-F32D-4073-ACBC-D2042A78A51A}}
+}
+
+@article{Wu:2006fm,
+author = {Wu, Tim},
+title = {{Network Neutrality: Competition, Innovation, and Nondiscriminatory Access}},
+journal = {SSRN Electronic Journal},
+year = {2006},
+doi = {10.2139/ssrn.903118},
+language = {English},
+rating = {0},
+date-added = {2017-11-20T17:26:30GMT},
+date-modified = {2017-11-20T17:26:31GMT},
+url = {http://www.ssrn.com/abstract=903118},
+uri = {url{papers3://publication/doi/10.2139/ssrn.903118}}
+}
+
+@techreport{OECD:2016bt,
+author = {{OECD}},
+title = {{Economic and Social Benefits of Internet Openness}},
+year = {2016},
+month = jun,
+publisher = {OECD Publishing},
+doi = {10.1787/5jlwqf2r97g5-en},
+issn = {2071-6826},
+language = {English},
+rating = {0},
+date-added = {2017-11-14T10:00:07GMT},
+date-modified = {2017-11-15T13:50:57GMT},
+url = {http://www.oecd-ilibrary.org/science-and-technology/economic-and-social-benefits-of-internet-openness_5jlwqf2r97g5-en},
+local-url = {file://localhost/Users/georgegillams/Dropbox/Library.papers3/Files/A0/A053FD2C-746D-4FEE-AB03-AB74B4763138.pdf},
+file = {{A053FD2C-746D-4FEE-AB03-AB74B4763138.pdf:/Users/georgegillams/Dropbox/Library.papers3/Files/A0/A053FD2C-746D-4FEE-AB03-AB74B4763138.pdf:application/pdf;A053FD2C-746D-4FEE-AB03-AB74B4763138.pdf:/Users/georgegillams/Dropbox/Library.papers3/Files/A0/A053FD2C-746D-4FEE-AB03-AB74B4763138.pdf:application/pdf}},
+uri = {url{papers3://publication/doi/10.1787/5jlwqf2r97g5-en}}
+}
+
+@book{Anonymous:2016tl,
+title = {{Net Neutrality Compendium: Human Rights, Free Competition and the Future of the Internet}},
+publisher = {Springer International Publishing},
+year = {2016},
+address = {Cham},
+isbn = {978-3-319-26425-7},
+rating = {0},
+date-added = {2017-11-21T20:18:28GMT},
+date-modified = {2017-11-21T20:18:49GMT},
+uri = {url{papers3://publication/uuid/08184EFF-970D-457A-9824-40A2D22F19C8}}
+}
+
+@techreport{Cisco:2017,
+title = {{Cisco Visual Networking Index: Forecast and Methodology, 2016-2021}},
+year = {2017},
+month = jun,
+publisher = {Cisco},
+rating = {0},
+date-added = {2017-11-21T09:50:53GMT},
+date-modified = {2017-11-21T11:18:09GMT},
+local-url = {file://localhost/Users/georgegillams/Dropbox/Library.papers3/Files/EE/EE3C19BF-7E39-46A3-8691-407D6EDB9F73.pdf},
+file = {{EE3C19BF-7E39-46A3-8691-407D6EDB9F73.pdf:/Users/georgegillams/Dropbox/Library.papers3/Files/EE/EE3C19BF-7E39-46A3-8691-407D6EDB9F73.pdf:application/pdf}},
+uri = {url{papers3://publication/uuid/66623391-5D3B-4E1F-AE38-C9DB104BE3BA}}
+}
+
+@article{Wu:2006fm,
+author = {Wu, Tim},
+title = {{Network Neutrality: Competition, Innovation, and Nondiscriminatory Access}},
+journal = {SSRN Electronic Journal},
+year = {2006},
+doi = {10.2139/ssrn.903118},
+language = {English},
+read = {Yes},
+rating = {0},
+date-added = {2017-11-15T14:29:43GMT},
+date-modified = {2017-11-21T11:37:12GMT},
+url = {http://www.ssrn.com/abstract=903118},
+local-url = {file://localhost/Users/georgegillams/Dropbox/Library.papers3/Files/B4/B4970815-E030-4F98-A230-337E18F25F58.pdf},
+file = {{B4970815-E030-4F98-A230-337E18F25F58.pdf:/Users/georgegillams/Dropbox/Library.papers3/Files/B4/B4970815-E030-4F98-A230-337E18F25F58.pdf:application/pdf}},
+uri = {url{papers3://publication/doi/10.2139/ssrn.903118}}
+}
+
+@techreport{ComcastCFO,
+title = {{Edited Transcript: CMCSA - Comcast Corp at UBS Global Media and Communications Conference}},
+year = {2016},
+month = dec,
+publisher = {Comminication Conference},
+rating = {0},
+date-added = {2017-11-23T17:19:27GMT},
+date-modified = {2017-11-23T17:21:05GMT},
+uri = {url{papers3://publication/uuid/9B7CF3CD-AC04-4DAD-A09A-837939744BAE}}
+}
+
+@book{Belli:2016fca,
+editor = {Belli, Luca and De Filippi, Primavera},
+title = {{Net Neutrality Compendium}},
+publisher = {Springer International Publishing},
+year = {2016},
+address = {Cham},
+doi = {10.1007/978-3-319-26425-7},
+isbn = {978-3-319-26424-0},
+rating = {0},
+date-added = {2017-11-20T18:00:04GMT},
+date-modified = {2017-11-20T18:01:19GMT},
+url = {http://link.springer.com/10.1007/978-3-319-26425-7},
+uri = {url{papers3://publication/doi/10.1007/978-3-319-26425-7}}
+}
+
+@incollection{McDiarmid2016,
+author = {McDiarmid, Andrew and Shears, Matthew},
+title = {{The Importance of Internet Neutrality to Protecting Human Rights Online}},
+booktitle = {Net Neutrality Compendium},
+year = {2016},
+editor = {Belli, Luca and De Filippi, Primavera},
+pages = {31--41},
+publisher = {Springer International Publishing},
+address = {Cham},
+doi = {10.1007/978-3-319-26425-7_3},
+isbn = {978-3-319-26425-7},
+read = {Yes},
+rating = {0},
+date-added = {2017-11-20T18:00:04GMT},
+date-modified = {2017-11-21T20:12:53GMT},
+url = {https://doi.org/10.1007/978-3-319-26425-7_3},
+uri = {url{papers3://publication/doi/10.1007/978-3-319-26425-7_3}}
+}
+
+@article{Lessig:2001ge,
+author = {Lessig, Lawrence},
+title = {{The Internet under Siege}},
+journal = {Foreign Policy},
+year = {2001},
+number = {127},
+pages = {56},
+month = nov,
+doi = {10.2307/3183294},
+read = {Yes},
+rating = {0},
+date-added = {2017-11-20T18:17:48GMT},
+date-modified = {2017-11-21T11:37:12GMT},
+url = {http://www.jstor.org/stable/3183294?origin=crossref},
+uri = {url{papers3://publication/doi/10.2307/3183294}}
+}
+
+@article{Lessig:1997jn,
+author = {Lessig, Lawrence},
+title = {{What Things Regulate Speech}},
+journal = {SSRN Electronic Journal},
+year = {1997},
+doi = {10.2139/ssrn.33067},
+language = {English},
+read = {Yes},
+rating = {0},
+date-added = {2017-11-20T18:22:58GMT},
+date-modified = {2017-11-21T11:37:12GMT},
+url = {http://www.ssrn.com/abstract=33067},
+local-url = {file://localhost/Users/georgegillams/Dropbox/Library.papers3/Files/B9/B95A737F-7EA1-4F14-8E14-755E12EB619D.pdf},
+file = {{B95A737F-7EA1-4F14-8E14-755E12EB619D.pdf:/Users/georgegillams/Dropbox/Library.papers3/Files/B9/B95A737F-7EA1-4F14-8E14-755E12EB619D.pdf:application/pdf;B95A737F-7EA1-4F14-8E14-755E12EB619D.pdf:/Users/georgegillams/Dropbox/Library.papers3/Files/B9/B95A737F-7EA1-4F14-8E14-755E12EB619D.pdf:application/pdf}},
+uri = {url{papers3://publication/doi/10.2139/ssrn.33067}}
+}
+
+@incollection{Musiani2016,
+author = {Musiani, Francesca and L{\"o}blich, Maria},
+title = {{Net Neutrality from a Public Sphere Perspective}},
+booktitle = {Net Neutrality Compendium: Human Rights, Free Competition and the Future of the Internet},
+year = {2016},
+editor = {Belli, Luca and De Filippi, Primavera},
+pages = {43--52},
+publisher = {Springer International Publishing},
+address = {Cham},
+doi = {10.1007/978-3-319-26425-7_4},
+isbn = {978-3-319-26425-7},
+rating = {0},
+date-added = {2017-11-21T20:18:28GMT},
+date-modified = {2017-11-21T20:18:28GMT},
+url = {https://doi.org/10.1007/978-3-319-26425-7_4},
+uri = {url{papers3://publication/doi/10.1007/978-3-319-26425-7_4}}
+}
+
+@article{Loideain:2015ii,
+author = {Loideain, Nora Ni},
+title = {{EU Law and Mass Internet Metadata Surveillance in the Post-Snowden Era}},
+journal = {Media and Communication},
+year = {2015},
+volume = {3},
+number = {2},
+pages = {53--62},
+month = sep,
+doi = {10.17645/mac.v3i2.297},
+language = {English},
+read = {Yes},
+rating = {0},
+date-added = {2017-11-21T21:41:59GMT},
+date-modified = {2017-11-23T21:05:08GMT},
+url = {http://www.cogitatiopress.com/ojs/index.php/mediaandcommunication/article/view/297},
+local-url = {file://localhost/Users/georgegillams/Dropbox/Library.papers3/Files/C9/C9B68E0B-2E8E-4F6E-A265-F6708D0822CD.pdf},
+file = {{C9B68E0B-2E8E-4F6E-A265-F6708D0822CD.pdf:/Users/georgegillams/Dropbox/Library.papers3/Files/C9/C9B68E0B-2E8E-4F6E-A265-F6708D0822CD.pdf:application/pdf;C9B68E0B-2E8E-4F6E-A265-F6708D0822CD.pdf:/Users/georgegillams/Dropbox/Library.papers3/Files/C9/C9B68E0B-2E8E-4F6E-A265-F6708D0822CD.pdf:application/pdf}},
+uri = {url{papers3://publication/doi/10.17645/mac.v3i2.297}}
+}
+
+@book{Belli:2016fc,
+editor = {Belli, Luca and De Filippi, Primavera},
+title = {{Net Neutrality Compendium}},
+publisher = {Springer International Publishing},
+year = {2016},
+address = {Cham},
+doi = {10.1007/978-3-319-26425-7},
+isbn = {978-3-319-26424-0},
+read = {Yes},
+rating = {0},
+date-added = {2017-11-14T10:35:20GMT},
+date-modified = {2017-11-15T13:53:27GMT},
+url = {http://link.springer.com/10.1007/978-3-319-26425-7},
+uri = {url{papers3://publication/doi/10.1007/978-3-319-26425-7}}
+}
+
+@article{ReiffersMasson:2015wu,
+author = {Reiffers-Masson, Alexandre and Hayel, Yezekael and Altman, Eitan},
+title = {{Pricing Agreement between Service and Content Providers: A Net Neutrality Issue}},
+journal = {arXiv.org},
+year = {2015},
+eprint = {1505.03555v1},
+eprinttype = {arxiv},
+eprintclass = {cs.CY},
+month = may,
+read = {Yes},
+rating = {0},
+date-added = {2017-11-14T10:34:09GMT},
+date-modified = {2017-11-23T21:04:53GMT},
+url = {http://arxiv.org/abs/1505.03555v1},
+local-url = {file://localhost/Users/georgegillams/Dropbox/Library.papers3/Files/AB/AB56120A-D674-4D08-9648-CCA0D43F5840.pdf},
+file = {{AB56120A-D674-4D08-9648-CCA0D43F5840.pdf:/Users/georgegillams/Dropbox/Library.papers3/Files/AB/AB56120A-D674-4D08-9648-CCA0D43F5840.pdf:application/pdf}},
+uri = {url{papers3://publication/uuid/B0A78EF9-4A62-4A34-8ABD-8EA8CA040DE6}}
+}
+
+@article{Foditsch:2016kk,
+author = {Foditsch, Nathalia},
+title = {{Zero Rating: Evil or Savior? Data Access and Competition Aspects}},
+journal = {SSRN Electronic Journal},
+year = {2016},
+doi = {10.2139/ssrn.2856003},
+language = {English},
+read = {Yes},
+rating = {0},
+date-added = {2017-11-23T21:21:33GMT},
+date-modified = {2017-11-23T21:36:35GMT},
+url = {https://www.ssrn.com/abstract=2856003},
+uri = {url{papers3://publication/doi/10.2139/ssrn.2856003}}
+}
+
+@article{Taylor:2016ei,
+author = {Taylor, Linnet},
+title = {{From Zero to Hero: How Zero-Rating Became a Debate about Human Rights}},
+journal = {IEEE Internet Computing},
+year = {2016},
+volume = {20},
+number = {4},
+pages = {79--83},
+doi = {10.1109/MIC.2016.88},
+read = {Yes},
+rating = {0},
+date-added = {2017-11-23T21:21:20GMT},
+date-modified = {2017-11-23T21:36:35GMT},
+url = {http://ieeexplore.ieee.org/document/7529037/},
+local-url = {file://localhost/Users/georgegillams/Dropbox/Library.papers3/Files/80/80D88170-744C-47E3-95F1-36A43DA03D52.pdf},
+file = {{80D88170-744C-47E3-95F1-36A43DA03D52.pdf:/Users/georgegillams/Dropbox/Library.papers3/Files/80/80D88170-744C-47E3-95F1-36A43DA03D52.pdf:application/pdf;80D88170-744C-47E3-95F1-36A43DA03D52.pdf:/Users/georgegillams/Dropbox/Library.papers3/Files/80/80D88170-744C-47E3-95F1-36A43DA03D52.pdf:application/pdf}},
+uri = {url{papers3://publication/doi/10.1109/MIC.2016.88}}
+}
+
+@article{Lemley:2000fn,
+author = {Lemley, Mark A and Lessig, Lawrence},
+title = {{The End of End-to-End: Preserving the Architecture of the Internet in the Broadband Era}},
+journal = {SSRN Electronic Journal},
+year = {2000},
+doi = {10.2139/ssrn.247737},
+language = {English},
+rating = {0},
+date-added = {2017-11-15T14:32:23GMT},
+date-modified = {2017-11-15T18:13:22GMT},
+url = {http://www.ssrn.com/abstract=247737},
+local-url = {file://localhost/Users/georgegillams/Dropbox/Library.papers3/Files/3E/3E18B3E1-62AC-44FD-8C8F-67D02C0AAEC7.pdf},
+file = {{3E18B3E1-62AC-44FD-8C8F-67D02C0AAEC7.pdf:/Users/georgegillams/Dropbox/Library.papers3/Files/3E/3E18B3E1-62AC-44FD-8C8F-67D02C0AAEC7.pdf:application/pdf}},
+uri = {url{papers3://publication/doi/10.2139/ssrn.247737}}
+}
+
+@incollection{McDiarmid2016,
+author = {McDiarmid, Andrew and Shears, Matthew},
+title = {{The Importance of Internet Neutrality to Protecting Human Rights Online}},
+booktitle = {Net Neutrality Compendium},
+year = {2016},
+editor = {Belli, Luca and De Filippi, Primavera},
+pages = {31--41},
+publisher = {Springer International Publishing},
+address = {Cham},
+doi = {10.1007/978-3-319-26425-7_3},
+isbn = {978-3-319-26424-0},
+language = {English},
+rating = {0},
+date-added = {2017-11-20T18:00:04GMT},
+date-modified = {2017-11-21T20:13:21GMT},
+url = {http://link.springer.com/10.1007/978-3-319-26425-7_3},
+uri = {url{papers3://publication/doi/10.1007/978-3-319-26425-7_3}}
+}
+
+@incollection{Belli:2015kl,
+author = {Belli, Luca},
+title = {{End-to-End, Net Neutrality and Human Rights}},
+booktitle = {Net Neutrality Compendium},
+year = {2015},
+pages = {13--29},
+publisher = {Springer International Publishing},
+address = {Cham},
+month = nov,
+doi = {10.1007/978-3-319-26425-7_2},
+isbn = {978-3-319-26424-0},
+language = {English},
+read = {Yes},
+rating = {0},
+date-added = {2017-11-14T10:35:19GMT},
+date-modified = {2017-11-15T14:33:31GMT},
+url = {http://link.springer.com/10.1007/978-3-319-26425-7_2},
+local-url = {file://localhost/Users/georgegillams/Dropbox/Library.papers3/Files/8E/8E541BDB-E080-4255-92DE-099EE82EC099.pdf},
+file = {{8E541BDB-E080-4255-92DE-099EE82EC099.pdf:/Users/georgegillams/Dropbox/Library.papers3/Files/8E/8E541BDB-E080-4255-92DE-099EE82EC099.pdf:application/pdf}},
+uri = {url{papers3://publication/doi/10.1007/978-3-319-26425-7_2}}
+}
+
+@article{Lee:2009dc,
+author = {Lee, Robin S and Wu, Tim},
+title = {{Subsidizing Creativity through Network Design: Zero-Pricing and Net Neutrality}},
+journal = {Journal of Economic Perspectives},
+year = {2009},
+volume = {23},
+number = {3},
+pages = {61--76},
+month = aug,
+annote = {Two-sided nature makes it subject to "network-effect" (the more users, the more valuable the resource)
+
+This does not mean  that both sides should be charged equally - just like credit cards, th intermediary can charge vendors and not users
+
+
+
+
+Consumers fund it difficult to know whether they want to use something until they have tried it. They tend, instead of paying up front, to not engage at all},
+doi = {10.1257/jep.23.3.61},
+language = {English},
+read = {Yes},
+rating = {0},
+date-added = {2017-11-15T14:29:24GMT},
+date-modified = {2017-11-21T11:37:12GMT},
+url = {http://pubs.aeaweb.org/doi/10.1257/jep.23.3.61},
+local-url = {file://localhost/Users/georgegillams/Dropbox/Library.papers3/Files/46/46E4909F-34D7-4516-89D9-86B52017404A.pdf},
+file = {{46E4909F-34D7-4516-89D9-86B52017404A.pdf:/Users/georgegillams/Dropbox/Library.papers3/Files/46/46E4909F-34D7-4516-89D9-86B52017404A.pdf:application/pdf}},
+uri = {url{papers3://publication/doi/10.1257/jep.23.3.61}}
+}
+
+@book{Belli:2016fcb,
+editor = {Belli, Luca and De Filippi, Primavera},
+title = {{Net Neutrality Compendium}},
+publisher = {Springer International Publishing},
+year = {2016},
+address = {Cham},
+doi = {10.1007/978-3-319-26425-7},
+isbn = {978-3-319-26424-0},
+read = {Yes},
+rating = {0},
+date-added = {2017-11-21T20:14:49GMT},
+date-modified = {2017-11-21T21:04:51GMT},
+url = {http://link.springer.com/10.1007/978-3-319-26425-7},
+local-url = {file://localhost/Users/georgegillams/Dropbox/Library.papers3/Files/56/56ECD1D5-6EF2-4563-BC90-256029A51DE7.pdf},
+file = {{56ECD1D5-6EF2-4563-BC90-256029A51DE7.pdf:/Users/georgegillams/Dropbox/Library.papers3/Files/56/56ECD1D5-6EF2-4563-BC90-256029A51DE7.pdf:application/pdf}},
+uri = {url{papers3://publication/doi/10.1007/978-3-319-26425-7}}
+}
+
+@article{Cho:2016dn,
+author = {Cho, Soohyun and Qiu, Liangfei},
+title = {{Less Than Zero? The Economic Impact of Zero Rating on Content Competition}},
+journal = {SSRN Electronic Journal},
+year = {2016},
+doi = {10.2139/ssrn.2844930},
+language = {English},
+read = {Yes},
+rating = {0},
+date-added = {2017-11-23T21:36:04GMT},
+date-modified = {2017-11-23T21:36:19GMT},
+url = {http://www.ssrn.com/abstract=2844930},
+local-url = {file://localhost/Users/georgegillams/Dropbox/Library.papers3/Files/26/2612081E-14ED-4FB2-BE31-25976BA1CA06.pdf},
+file = {{2612081E-14ED-4FB2-BE31-25976BA1CA06.pdf:/Users/georgegillams/Dropbox/Library.papers3/Files/26/2612081E-14ED-4FB2-BE31-25976BA1CA06.pdf:application/pdf;2612081E-14ED-4FB2-BE31-25976BA1CA06.pdf:/Users/georgegillams/Dropbox/Library.papers3/Files/26/2612081E-14ED-4FB2-BE31-25976BA1CA06.pdf:application/pdf}},
+uri = {url{papers3://publication/doi/10.2139/ssrn.2844930}}
+}
+
+@webpage{Economist:2013,
+author = {Economist, The},
+title = {{An ad-block shock: France V Google}},
+year = {2013},
+month = jan,
+url = {https://www.economist.com/news/business/21569414-xavier-niel-playing-rough-internet-giant-france-v-google},
+rating = {0},
+date-added = {2017-11-21T20:11:03GMT},
+date-modified = {2017-11-21T20:11:03GMT},
+uri = {url{papers3://publication/uuid/FB9A1668-C666-454F-A4BB-B5EEEF7731CF}}
+}
+`);
+
+const onSelection = (event, identifier) => {
+  const reference = document.getElementById(identifier);
+  console.log(reference);
+  if (!reference) return;
+
+  scrollIntoView(reference, {
+    time: 1000,
+  });
+};
+
+const Cite = citation(myReferences, onSelection);
 
 const NetNeutrality = props => {
   const { className, ...rest } = props;
@@ -51,13 +500,14 @@ const NetNeutrality = props => {
           it has become a vast network which gives every user instant access to
           a wealth of knowledge, opinion, debate, innovation, and choice. It has
           been able to foster ideas and drive innovation thanks to its unique
-          open and decentralised nature [7] - a model which differs greatly from
-          the architectures of traditional telecommunication networks [1]. It
-          has changed the way in which many industries and businesses operate,
-          and the way consumers live. Net Neutrality (NN) has played an
-          important part in allowing this change to come about by maintaining
-          the Internet’s openness at a time when Internet Service Providers
-          (ISPs) could controll everything at the network-level.
+          open and decentralised nature <Cite identifier="Lessig:2001ge" /> - a
+          model which differs greatly from the architectures of traditional
+          telecommunication networks <Cite identifier="Belli:2015kl" />. It has
+          changed the way in which many industries and businesses operate, and
+          the way consumers live. Net Neutrality (NN) has played an important
+          part in allowing this change to come about by maintaining the
+          Internet’s openness at a time when Internet Service Providers (ISPs)
+          could controll everything at the network-level.
           <br />
           <br />
           The Internet’s impact on the World Wide Web (WWW) itself has been no
@@ -68,7 +518,7 @@ const NetNeutrality = props => {
           our friends on Facebook, and we can create various &quot;streams&quot;
           of our own lives through Snapchat and Strava. By 2019, it is forecast
           that 80% of all traffic on the Internet will be some form of video
-          content [3].
+          content <Cite identifier="Cisco:2017" />.
         </SubSection>
         <SubSection name="The effects of NN">
           An on-line service which uses these new high-data-rate formats may
@@ -81,24 +531,25 @@ const NetNeutrality = props => {
           Content Providers (CPs) based on the bandwidth they use. The simple
           principle of NN makes the Internet a strangely level playing field
           which, according to Wu, makes it a platform where money can have a
-          limited influence on speech [12].
+          limited influence on speech <Cite identifier="Wu:2006fm" />.
           <br />
           <br />
           This simple principle makes the Internet fundamentally democratic. It
-          empowers individuals to act free of governments and organisations [7].
-          If NN laws were to be relaxed, ISPs and governments would be able to
-          control traffic on the Internet, becoming gatekeepers to the knowledge
-          and services we access. ISPs would benefit financially from such a
-          change. Governments and those who influence government decisions would
-          benefit politically. Of course, the parties interested in destroying
-          NN tell us that they just want to make the Internet safer by allowing
-          a handful of organisations to hold complete guardianship over traffic
-          on the net. In recent debates, Ajit Pai has also claimed that American
-          ISPs cannot afford to invest in the infrastructure they provide
-          without changes to NN. This is a surprising claim, given that
-          Comcast’s Chief Financial Officer (CFO) informed investors in December
-          2016 that the ISP had no concerns with Title II (which contains the
-          Net Neutrality legislation) [5].
+          empowers individuals to act free of governments and organisations{' '}
+          <Cite identifier="Lessig:2001ge" />. If NN laws were to be relaxed,
+          ISPs and governments would be able to control traffic on the Internet,
+          becoming gatekeepers to the knowledge and services we access. ISPs
+          would benefit financially from such a change. Governments and those
+          who influence government decisions would benefit politically. Of
+          course, the parties interested in destroying NN tell us that they just
+          want to make the Internet safer by allowing a handful of organisations
+          to hold complete guardianship over traffic on the net. In recent
+          debates, Ajit Pai has also claimed that American ISPs cannot afford to
+          invest in the infrastructure they provide without changes to NN. This
+          is a surprising claim, given that Comcast’s Chief Financial Officer
+          (CFO) informed investors in December 2016 that the ISP had no concerns
+          with Title II (which contains the Net Neutrality legislation){' '}
+          <Cite identifier="ComcastCFO" />.
           <br />
           <br />
           As the Internet has matured, it has become more centralised in many
@@ -113,10 +564,12 @@ const NetNeutrality = props => {
           Denial of Service (DOS) attacks and performing protocol-agnostic
           routing of traffic to keep congestion down. Thanks to the principle of
           NN, ISPs have not been able to abuse the shift towards centralisation
-          in order to interfere with end-users’ enjoyment [1]. If NN legislation
-          were relaxed, they could capitalise on their new capabilities by
-          charging users to access specific services whilst also invoicing CPs
-          for access or priority access to their customer-base [6].
+          in order to interfere with end-users’ enjoyment{' '}
+          <Cite identifier="Belli:2015kl" />. If NN legislation were relaxed,
+          they could capitalise on their new capabilities by charging users to
+          access specific services whilst also invoicing CPs for access or
+          priority access to their customer-base{' '}
+          <Cite identifier="Lee:2009dc" />.
           <br />
           <br />
           <BpkText textStyle="xs">
@@ -130,20 +583,21 @@ const NetNeutrality = props => {
           According to the models analysed by Reiffers-Masson, Hayel, and
           Altman, allowing &quot;pricing agreements&quot; between CPs and ISPs
           would benefit Internet users in providing a better-perceived cost of
-          service [11]. However, they also accept that this would come at a
-          detriment to CPs. Reiffers-Masson, Hayel, and Altman claim that the
-          charging of the two-sided market would reach an equilibrium, but also
-          accept that they have not considered the effects of ISPs interfering
-          with Quality of Service (QOS). They also, in my view, consider an
-          unrealistic model in which users and CPs are exclusive groups. As far
-          as Lee and Wu are concerned, users act as CPs in the sense that all
-          media is &quot;content&quot; [6]. I also feel it is wrong to ignore
-          the detriment that the additional costs would bring to CPs. After-all,
-          it is the absence of payments from content creators which has
-          facilitated the entry of many content creators in the first place [6].
-          Destroying NN would lead to reduced competition and innovation, and
-          ultimately will negatively affect all those who thrive on the open
-          platform.
+          service <Cite identifier="ReiffersMasson:2015wu" />. However, they
+          also accept that this would come at a detriment to CPs.
+          Reiffers-Masson, Hayel, and Altman claim that the charging of the
+          two-sided market would reach an equilibrium, but also accept that they
+          have not considered the effects of ISPs interfering with Quality of
+          Service (QOS). They also, in my view, consider an unrealistic model in
+          which users and CPs are exclusive groups. As far as Lee and Wu are
+          concerned, users act as CPs in the sense that all media is
+          &quot;content&quot; <Cite identifier="Lee:2009dc" />. I also feel it
+          is wrong to ignore the detriment that the additional costs would bring
+          to CPs. After-all, it is the absence of payments from content creators
+          which has facilitated the entry of many content creators in the first
+          place <Cite identifier="Lee:2009dc" />. Destroying NN would lead to
+          reduced competition and innovation, and ultimately will negatively
+          affect all those who thrive on the open platform.
           <br />
           <br />
           We must also remember that the Internet is a two-sided market, which
@@ -151,15 +605,16 @@ const NetNeutrality = props => {
           is more useful to users the more users there are. If users must pay to
           access specific services, the network-effects are more damaging to
           start-ups as users are often more likely to avoid a service completely
-          than pay an upfront cost to evaluate its quality [6]. If start-ups are
-          held back from gaining users in this way, then their chances of
-          disrupting an existing market through innovation could be crushed.
-          This can already be seen in some countries where certain on-line
-          services fall under a &quot;zero-rating&quot; category. Users can
-          access websites in this category without using or paying for data
-          towards them. This is often considered a grey-area in the NN debate.
-          Although some countries allow this under NN laws, several have banned
-          the practice on competition and freedom of expression grounds [2].
+          than pay an upfront cost to evaluate its quality{' '}
+          <Cite identifier="Lee:2009dc" />. If start-ups are held back from
+          gaining users in this way, then their chances of disrupting an
+          existing market through innovation could be crushed. This can already
+          be seen in some countries where certain on-line services fall under a
+          &quot;zero-rating&quot; category. Users can access websites in this
+          category without using or paying for data towards them. This is often
+          considered a grey-area in the NN debate. Although some countries allow
+          this under NN laws, several have banned the practice on competition
+          and freedom of expression grounds <Cite identifier="Cho:2016dn" />.
         </SubSection>
         <SubSection name="Conflict of Interest">
           ISPs all have some conflict of interest when it comes to the NN
@@ -182,20 +637,21 @@ const NetNeutrality = props => {
           Private Network (VPN)<sup>2</sup>. In February 2014 when Netflix
           resolved a dispute with Comcast, their speed was suddenly restored.
           This can be seen in Appendix A. Evidence of similar conduct by Free -
-          an ISP in France - was seen during negotiations with Google [4].
+          an ISP in France - was seen during negotiations with Google{' '}
+          <Cite identifier="Economist:2013" />.
           <br />
           <br />
           As well as providing millions of people with opportunities to reach
           large audiences, freedom on the Internet has broken down barriers to
           the free flow of information. This has enabled many to enjoy free
           expression, and democratic participation that would otherwise be
-          impossible [9].
+          impossible <Cite identifier="McDiarmid2016" />.
           <br />
           The openness of the Internet has enabled millions of people around the
           world to become owners in the political process of their country. The
           damaging effects of ending NN would not only harm the future of the
-          technology itself, but also the freedoms that have been won by many
-          [10].
+          technology itself, but also the freedoms that have been won by many{' '}
+          <Cite identifier="Musiani2016" />.
           <br />
           <br />
           <BpkText textStyle="xs">
@@ -208,12 +664,14 @@ const NetNeutrality = props => {
         <SubSection name="Conclusion">
           Throughout history, whenever a new communication technology has been
           invented, it has always become less open during a process of
-          consolidation by organisations who want power over the industry [13].
-          In many countries, governments have greatly enjoyed these monopolies
-          is it provides them opportunities for mass intervention [13]. This is
-          evident from the nature of illegal mass-surveillance operations that
-          the US and United Kingdom (UK) carried out with the help of a number
-          of large companies including Google, Facebook, and Apple [8].
+          consolidation by organisations who want power over the industry{' '}
+          <Cite identifier="wu2010master" />. In many countries, governments
+          have greatly enjoyed these monopolies is it provides them
+          opportunities for mass intervention <Cite identifier="wu2010master" />.
+          This is evident from the nature of illegal mass-surveillance
+          operations that the US and United Kingdom (UK) carried out with the
+          help of a number of large companies including Google, Facebook, and
+          Apple <Cite identifier="Loideain:2015ii" />.
           <br />
           <br />
           If we allow ISPs to become gatekeepers of traffic and content on the
@@ -234,83 +692,10 @@ const NetNeutrality = props => {
           individuals basic rights enjoyed by Internet-users around the world.
         </SubSection>
         <SubSection name="References">
-          [1] Luca Belli. “End-to-End, Net Neutrality and Human Rights”.
-          English. In: Net Neutrality Compendium. Cham: Springer International
-          Publishing, Nov. 2015, pp. 13–29. ISBN: 978-3-319-26424-0. DOI:
-          10.1007/978-3-319-26425-7_2. URL: http:\/\/link.
-          springer.com/10.1007/978-3-319-26425-7_2.
-          <br />
-          <br />
-          [2] Soohyun Cho and Liangfei Qiu. “Less Than Zero? The Economic Impact
-          of Zero Rating on Content Competition”. English. In: SSRN Electronic
-          Journal (2016). DOI: 10.2139/ ssrn.2844930. URL:
-          http:\/\/www.ssrn.com/abstract=2844930.
-          <br />
-          <br />
-          [3] Cisco Visual Networking Index: Forecast and Methodology,
-          2016-2021. Tech. rep. June 2017.
-          <br />
-          <br />
-          [4] The Economist. An ad-block shock: France V Google. Jan. 2013. URL:
-          https : / / www .
-          economist.com/news/business/21569414-xavier-niel-playing-rough-internet-giant-france-v-google.
-          <br />
-          <br />
-          [5] Edited Transcript: CMCSA - Comcast Corp at UBS Global Media and
-          Communications Conference. Tech. rep. Dec. 2016.
-          <br />
-          <br />
-          [6] Robin S Lee and Tim Wu. “Subsidizing Creativity through Network
-          Design: Zero-Pricing and Net Neutrality”. English. In: Journal of
-          Economic Perspectives 23.3 (Aug. 2009), pp. 61– 76. DOI:
-          10.1257/jep.23.3.61. URL: http:\/\/pubs.aeaweb.org/doi/10.1257/
-          jep.23.3.61.
-          <br />
-          <br />
-          [7] Lawrence Lessig. “The Internet under Siege”. In: Foreign Policy
-          127 (Nov. 2001), p. 56. DOI: 10.2307/3183294. URL:
-          http:\/\/www.jstor.org/stable/3183294?origin= crossref.
-          <br />
-          <br />
-          [8] Nora Ni Loideain. “EU Law and Mass Internet Metadata Surveillance
-          in the Post-Snowden Era”. English. In: Media and Communication 3.2
-          (Sept. 2015), pp. 53–62. DOI: 10.17645/ mac.v3i2.297. URL:
-          http:\/\/www.cogitatiopress.com/ojs/index.php/
-          mediaandcommunication/article/view/297.
-          <br />
-          <br />
-          [9] Andrew McDiarmid and Matthew Shears. “The Importance of Internet
-          Neutrality to Protecting Human Rights Online”. In: Net Neutrality
-          Compendium. Ed. by Luca Belli and Primavera De Filippi. Cham: Springer
-          International Publishing, 2016, pp. 31–41. ISBN: 978- 3-319-26425-7.
-          DOI: 10.1007/978-3-319-26425-7_3. URL: https:\/\/doi.org/
-          10.1007/978-3-319-26425-7_3.
-          <br />
-          <br />
-          [10] Francesca Musiani and Maria Löblich. “Net Neutrality from a
-          Public Sphere Perspective”. In: Net Neutrality Compendium: Human
-          Rights, Free Competition and the Future of the Internet. Ed. by Luca
-          Belli and Primavera De Filippi. Cham: Springer International
-          Publishing, 2016, pp. 43–52. ISBN: 978-3-319-26425-7. DOI:
-          10.1007/978-3-319-26425- 7_4. URL:
-          https:\/\/doi.org/10.1007/978-3-319-26425-7_4.
-          <br />
-          <br />
-          [11] Alexandre Reiffers-Masson, Yezekael Hayel, and Eitan Altman.
-          “Pricing Agreement between Service and Content Providers: A Net
-          Neutrality Issue”. In: arXiv.org (May 2015). arXiv: 1505.03555v1
-          [cs.CY]. URL: http:\/\/arxiv.org/abs/1505.03555v1.
-          <br />
-          <br />
-          [12] Tim Wu. “Network Neutrality: Competition, Innovation, and
-          Nondiscriminatory Access”. English. In: SSRN Electronic Journal
-          (2006). DOI: 10.2139/ssrn.903118. URL:
-          http:\/\/www.ssrn.com/abstract=903118.
-          <br />
-          <br />
-          [13] Tim Wu. The Master Switch: The Rise and Fall of Information
-          Empires. Borzoi Books. Alfred A. Knopf, 2010. ISBN: 9780307269935.
-          URL: https:\/\/books.google.co.uk/books? id=tKr0QwAACAAJ.
+          <References
+            referenceStyle={REFERENCE_STYLES.harvard}
+            references={myReferences}
+          />
         </SubSection>
         <SubSection name="Appendix A - Netflix download speeds on a number of American ISPs">
           <FadingLazyLoadedImage
