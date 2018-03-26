@@ -53,6 +53,14 @@ const Art = props => {
         >
           <SubSection noAnchor name="See my full Flickr profile →" link />
         </a>
+        <a
+          className={getClassName('pages__link')}
+          href="https://gurushots.com/georgegillams"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          <SubSection noAnchor name="See my GuruShots profile →" link />
+        </a>
         <SubSection noAnchor name="Dog running with a Stick">
           <FadingLazyLoadedImage
             className={getClassName('pages__image')}

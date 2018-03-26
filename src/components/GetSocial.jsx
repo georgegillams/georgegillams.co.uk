@@ -9,6 +9,7 @@ import emailIcon from './../icons/email.png';
 import phoneIcon from './../icons/phone.png';
 import dropboxIcon from './../icons/dropbox.png';
 import monzoIcon from './../icons/monzoIcon.png';
+import guruShotsIcon from './../icons/guruShotsIcon.png';
 
 // import skyscannerIcon from  './../icons/skyscanner.png';
 
@@ -67,6 +68,19 @@ const GetSocial = props => {
         {/* <a  href="https://github.com/Skyscanner" rel="noopener noreferrer" target="_blank">
       <img alt="Skyscanner" width={5} height={5} className={iconClassNameFinal.join(' ')} src={skyscannerIcon} />
       </a> */}
+        <a
+          href="https://gurushots.com/georgegillams"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          <img
+            alt="gurushots"
+            width={5}
+            height={5}
+            className={iconClassNameFinal.join(' ')}
+            src={guruShotsIcon}
+          />
+        </a>
         <a
           href="https://www.facebook.com/george333123"
           rel="noopener noreferrer"
