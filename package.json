@@ -47,7 +47,8 @@
     "scroll-into-view": "^1.9.1",
     "scroll-into-view-if-needed": "^1.4.0",
     "slick-carousel": "^1.8.1",
-    "webfontloader": "^1.6.28"
+    "webfontloader": "^1.6.28",
+    "youtube-embed-video": "^1.0.2"
   },
   "scripts": {
     "start:client:webpack": "webpack-dev-server --port 3000 --config ./webpack.config.babel.js",

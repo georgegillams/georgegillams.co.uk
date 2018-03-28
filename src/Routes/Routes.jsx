@@ -1,12 +1,6 @@
 import React from 'react';
 import { Route, BrowserRouter, Switch, Redirect } from 'react-router-dom';
-// import * as ROUTES from  './../constants/routes';
-// import redirects from  './../constants/redirect-routes';
-//
 import DefaultLayout from '../components/DefaultLayout';
-// import UsingLayout from  './../layouts/UsingLayout';
-// import TokensLayout from  './../layouts/TokensLayout';
-// import DocsLayout from  './../layouts/DocsLayout';
 
 import HomePage from '../Pages/HomePageV2';
 import Admin from '../Pages/Admin';
@@ -17,6 +11,7 @@ import Art from '../Pages/Art/Art';
 import SiteMap from '../Pages/SiteMap';
 import HttpResponseCodesInReact from '../Pages/Articles/HttpResponseCodesInReact';
 import WeekOfRust from '../Pages/Articles/WeekOfRust';
+import LightroomWorkflow from '../Pages/Articles/LightroomWorkflow';
 import ToughMudder from '../Pages/Articles/ToughMudder';
 import SwitchToVim from '../Pages/Articles/SwitchToVim';
 import UkBankSecurity from '../Pages/Articles/UkBankSecurity';
@@ -65,6 +60,7 @@ const Routes = (
           component={HttpResponseCodesInReact}
         />
         {/* <Route path="/blog/week-of-rust" component={WeekOfRust} /> */}
+        <Route path="/blog/lightroom-workflow" component={LightroomWorkflow} />
         <Route path="/blog/tough-mudder" component={ToughMudder} />
         <Route path="/blog/net-neutrality" component={NetNeutrality} />
         <Route path="/blog/vim" component={SwitchToVim} />
