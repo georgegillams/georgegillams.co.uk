@@ -42,17 +42,21 @@ class Articles extends Component {
           }}
           className={getClassName('pages__tag-filter')}
         />
+        {(this.state.selectedTags.length === 0 ||
+          HelperFunctions.includes(this.state.selectedTags, 'photography')) && (
+          <ArticleCard
+            day={0}
+            month="NaN"
+            className={getClassName('pages__card')}
+            imageSrc={lrSm}
+            linkUrl="/blog/lightroom-workflow"
+            title="My Lightroom Workflow"
+            autoTallLayout
+          >
+            <Tag type={TAG_TYPES.photography} />
+          </ArticleCard>
+        )}
         {/* <ArticleCard
-        day={0}
-        month="NaN"
-        className={getClassName('pages__card')}
-        imageSrc={lrSm}
-        linkUrl="/blog/lightroom-workflow"
-        title="My Lightroom Workflow"
-      >
-        <Tag type={TAG_TYPES.photography} />
-      </ArticleCard>
-      <ArticleCard
         light
         day={0}
         month="NaN"
