@@ -113,9 +113,6 @@ gsg1g13@ecs.soton.ac.uk</Literal>
         <Class IRI="#Producer"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#panopticons-programme-se1-episode1"/>
-    </Declaration>
-    <Declaration>
         <DataProperty IRI="#hasTitle"/>
     </Declaration>
     <Declaration>
@@ -125,7 +122,13 @@ gsg1g13@ecs.soton.ac.uk</Literal>
         <Class IRI="#Repeat_Episode"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#panopticons-programme-se1-episode1"/>
+    </Declaration>
+    <Declaration>
         <ObjectProperty IRI="#inSeries"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#panopticons-programme-se1-ep1-broadcast"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Programme"/>
@@ -141,9 +144,6 @@ gsg1g13@ecs.soton.ac.uk</Literal>
     </Declaration>
     <Declaration>
         <Class IRI="#Channel"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#panopticons-programme-series1"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#panopticons-programme"/>
@@ -167,9 +167,6 @@ gsg1g13@ecs.soton.ac.uk</Literal>
         <ObjectProperty IRI="#hasSeries"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#panopticons-programme-se1-ep1-broadcast"/>
-    </Declaration>
-    <Declaration>
         <NamedIndividual IRI="#News_at_1000-series2018"/>
     </Declaration>
     <Declaration>
@@ -179,10 +176,10 @@ gsg1g13@ecs.soton.ac.uk</Literal>
         <ObjectProperty IRI="#inEpisode"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Broadcaster"/>
+        <ObjectProperty IRI="#producedBy"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#producedBy"/>
+        <Class IRI="#Broadcaster"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#catchphrase-series16"/>
@@ -216,6 +213,9 @@ gsg1g13@ecs.soton.ac.uk</Literal>
     </Declaration>
     <Declaration>
         <DataProperty IRI="#hasName"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#panopticons-programme-series1"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#hasEpisode"/>
@@ -362,7 +362,6 @@ gsg1g13@ecs.soton.ac.uk</Literal>
             <Class IRI="#Episode"/>
             <ObjectMinCardinality cardinality="2">
                 <ObjectProperty IRI="#inBroadcast"/>
-                <Class IRI="#Broadcast"/>
             </ObjectMinCardinality>
         </ObjectIntersectionOf>
     </EquivalentClasses>
@@ -385,6 +384,10 @@ gsg1g13@ecs.soton.ac.uk</Literal>
     <SubClassOf>
         <Class IRI="#Production_Company"/>
         <Class IRI="http://www.w3.org/ns/org#Organization"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Repeat_Episode"/>
+        <Class IRI="#Episode"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#TV_Personality"/>
@@ -431,6 +434,10 @@ gsg1g13@ecs.soton.ac.uk</Literal>
         <NamedIndividual IRI="#Dirk_Cleftjaw"/>
     </ClassAssertion>
     <ClassAssertion>
+        <Class IRI="#Broadcaster"/>
+        <NamedIndividual IRI="#ITV"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class IRI="#Programme"/>
         <NamedIndividual IRI="#News_at_1000"/>
     </ClassAssertion>
@@ -445,6 +452,10 @@ gsg1g13@ecs.soton.ac.uk</Literal>
     <ClassAssertion>
         <Class IRI="#Broadcast"/>
         <NamedIndividual IRI="#News_at_1000-series2018-episode1-broadcast"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Broadcaster"/>
+        <NamedIndividual IRI="#Panopticon_Productions"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#Production_Company"/>
@@ -523,11 +534,11 @@ gsg1g13@ecs.soton.ac.uk</Literal>
         <NamedIndividual IRI="#panopticons-programme-se1-ep1-broadcast"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#Series"/>
+        <Class IRI="#Episode"/>
         <NamedIndividual IRI="#panopticons-programme-se1-episode1"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#Episode"/>
+        <Class IRI="#Series"/>
         <NamedIndividual IRI="#panopticons-programme-series1"/>
     </ClassAssertion>
     <ClassAssertion>
@@ -741,13 +752,33 @@ gsg1g13@ecs.soton.ac.uk</Literal>
         <NamedIndividual IRI="#catchphrase-se16-episode1"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#producedByCompany"/>
+        <ObjectProperty IRI="#hasSeries"/>
         <NamedIndividual IRI="#panopticons-programme"/>
-        <NamedIndividual IRI="#Panopticon_Productions"/>
+        <NamedIndividual IRI="#panopticons-programme-series1"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#broadcastBy"/>
         <NamedIndividual IRI="#panopticons-programme-se1-ep1-broadcast"/>
+        <NamedIndividual IRI="#Panopticon_Productions"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#broadcastEpisode"/>
+        <NamedIndividual IRI="#panopticons-programme-se1-ep1-broadcast"/>
+        <NamedIndividual IRI="#panopticons-programme-se1-episode1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#inSeries"/>
+        <NamedIndividual IRI="#panopticons-programme-se1-episode1"/>
+        <NamedIndividual IRI="#panopticons-programme-series1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#ofProgramme"/>
+        <NamedIndividual IRI="#panopticons-programme-series1"/>
+        <NamedIndividual IRI="#panopticons-programme"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#producedByCompany"/>
+        <NamedIndividual IRI="#panopticons-programme-series1"/>
         <NamedIndividual IRI="#Panopticon_Productions"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
@@ -885,6 +916,16 @@ gsg1g13@ecs.soton.ac.uk</Literal>
         <NamedIndividual IRI="#catchphrase-series16"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">16</Literal>
     </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasEpisodeNumber"/>
+        <NamedIndividual IRI="#panopticons-programme-se1-episode1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasSeriesNumber"/>
+        <NamedIndividual IRI="#panopticons-programme-series1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">1</Literal>
+    </DataPropertyAssertion>
     <InverseObjectProperties>
         <ObjectProperty IRI="#broadcastBy"/>
         <ObjectProperty IRI="#ownsBroadcast"/>
@@ -937,6 +978,63 @@ gsg1g13@ecs.soton.ac.uk</Literal>
         <ObjectProperty IRI="#shownOn"/>
         <ObjectProperty IRI="#showsProgramme"/>
     </InverseObjectProperties>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#broadcastBy"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#broadcastEpisode"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#broadcastOn"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#directedBy"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#hasGenre"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#inSeries"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#ofProgramme"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#producedBy"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#producedByCompany"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#shownOn"/>
+    </FunctionalObjectProperty>
+    <InverseFunctionalObjectProperty>
+        <ObjectProperty IRI="#companyProduces"/>
+    </InverseFunctionalObjectProperty>
+    <InverseFunctionalObjectProperty>
+        <ObjectProperty IRI="#directs"/>
+    </InverseFunctionalObjectProperty>
+    <InverseFunctionalObjectProperty>
+        <ObjectProperty IRI="#hasBroadcast"/>
+    </InverseFunctionalObjectProperty>
+    <InverseFunctionalObjectProperty>
+        <ObjectProperty IRI="#hasEpisode"/>
+    </InverseFunctionalObjectProperty>
+    <InverseFunctionalObjectProperty>
+        <ObjectProperty IRI="#hasSeries"/>
+    </InverseFunctionalObjectProperty>
+    <InverseFunctionalObjectProperty>
+        <ObjectProperty IRI="#inBroadcast"/>
+    </InverseFunctionalObjectProperty>
+    <InverseFunctionalObjectProperty>
+        <ObjectProperty IRI="#ownsBroadcast"/>
+    </InverseFunctionalObjectProperty>
+    <InverseFunctionalObjectProperty>
+        <ObjectProperty IRI="#producerOf"/>
+    </InverseFunctionalObjectProperty>
+    <InverseFunctionalObjectProperty>
+        <ObjectProperty IRI="#showsProgramme"/>
+    </InverseFunctionalObjectProperty>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#broadcastBy"/>
         <Class IRI="#Broadcast"/>
@@ -1173,6 +1271,27 @@ gsg1g13@ecs.soton.ac.uk</Literal>
         <ObjectProperty IRI="#showsProgramme"/>
         <Class IRI="#Programme"/>
     </ObjectPropertyRange>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#broadcastAt"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#hasDuration"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#hasEpisodeNumber"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#hasName"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#hasSeriesNumber"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#hasTitle"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#isHighQuality"/>
+    </FunctionalDataProperty>
     <DataPropertyDomain>
         <DataProperty IRI="#broadcastAt"/>
         <Class IRI="#Broadcast"/>
@@ -1229,8 +1348,169 @@ gsg1g13@ecs.soton.ac.uk</Literal>
         <DataProperty IRI="#isHighQuality"/>
         <Datatype abbreviatedIRI="xsd:boolean"/>
     </DataPropertyRange>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Broadcast</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">The Broadcast class represents a broadcast event for a specific episode at a specific time.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#TV_Personality</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">A person who appears on a television programme is a person, as described by the FOAF ontology</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#broadcastAt</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A given broadcast event happens at a specific time (on a specific channel)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#broadcastBy</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A particular broadcast is carried out by a specific broadcaster</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#broadcastEpisode</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A broadcast event is for exactly 1 episode entity</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#broadcastOn</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A specific broadcast can only take place on a single channel. (Although many broadcasts of the same episode could exist, on different channels or at different times)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#companyProduces</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A production company is responsible for producing a whole series of a programme. However, between series, production could move to another company (eg Top Gear, Bakeoff, Catchphrase etc)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#directedBy</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A director could be responsible (at any given time) for a single episode, a series, or even an entire programme</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#directs</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A director could be responsible (at any given time) for a single episode, a series, or even an entire programme</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#episodeStars</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A specific episode can star any number of actors</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasBroadcast</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A single broadcast entity takes place on a single channel, at a specific point in time</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasDuration</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A given episode has a specific duration</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasEpisode</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A series consists of a number of episodes</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasEpisodeNumber</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">An episode has a speciic number value</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasFormat</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A programme can have a number of formats</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasGenre</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A programme can have a number of genres</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasName</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A programme has a specific name</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasSeries</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A given programme consists of a number of series</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasSeriesNumber</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A series has a speciic number value</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasTitle</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">An episode can have a name specific to it, as well as the overall programme having a name</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#inBroadcast</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">An episode can be used in a number of broadcast events</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#inEpisode</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A specific episode can star any number of actors</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#inSeries</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A given episode appears in exactly one given series of the programme</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isHighQuality</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A broadcast can be done in high-quality or not (ie in standard quality)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#ofProgramme</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A given series belongs to a specific programme</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#ownsBroadcast</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A broadcast event is owned by a specific broadcasting company</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#presentedBy</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A specific episode is presented by a specific individual</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#presentsEpisode</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A given presented can present a number of programme episodes</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#producedByCompany</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A series of a programme is produced by a single production company</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#producerOf</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A producer (person) can produce a number of episodes, series, or even whole programmes</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#shownOn</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A given programme is shown on a specific channel</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#showsProgramme</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A channel can show a number of programmes</Literal>
+    </AnnotationAssertion>
 </Ontology>
 
 
 
 <!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
+
