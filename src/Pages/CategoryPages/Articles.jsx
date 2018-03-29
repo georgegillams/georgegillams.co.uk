@@ -45,8 +45,8 @@ class Articles extends Component {
         {(this.state.selectedTags.length === 0 ||
           HelperFunctions.includes(this.state.selectedTags, 'photography')) && (
           <ArticleCard
-            day={0}
-            month="NaN"
+            day={28}
+            month="Mar"
             className={getClassName('pages__card')}
             imageSrc={lrSm}
             linkUrl="/blog/lightroom-workflow"
