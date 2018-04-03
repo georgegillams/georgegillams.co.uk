@@ -65,7 +65,7 @@ const LightroomWorkflow = props => {
           rotation, shadows, colour etc. Sometimes if I just don’t like the
           changes I am making I remove the green-flag again (ie get rid).
           <br />
-          1. Save the metadata of the edited files (so that changes are not lost
+          6. Save the metadata of the edited files (so that changes are not lost
           forever) and export JPEGs for uploading / sharing.
         </SubSection>
         <SubSection name="A video showing the process">
