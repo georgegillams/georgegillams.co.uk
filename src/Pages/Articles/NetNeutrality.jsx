@@ -55,7 +55,7 @@ const PAGE_ID = 957261;
 const myReferences = bibtexParse.toJSON(`
 @book{wu2010master,
 author = {Wu, Tim},
-title = {{The Master Switch: The Rise and Fall of Information Empires}},
+title = {The Master Switch: The Rise and Fall of Information Empires},
 publisher = {Alfred A. Knopf},
 year = {2010},
 series = {Borzoi Books},
@@ -70,7 +70,7 @@ uri = {url{papers3://publication/uuid/4AE35FBC-F32D-4073-ACBC-D2042A78A51A}}
 
 @article{Wu:2006fm,
 author = {Wu, Tim},
-title = {{Network Neutrality: Competition, Innovation, and Nondiscriminatory Access}},
+title = {Network Neutrality: Competition, Innovation, and Nondiscriminatory Access},
 journal = {SSRN Electronic Journal},
 year = {2006},
 doi = {10.2139/ssrn.903118},
@@ -83,8 +83,8 @@ uri = {url{papers3://publication/doi/10.2139/ssrn.903118}}
 }
 
 @techreport{OECD:2016bt,
-author = {{OECD}},
-title = {{Economic and Social Benefits of Internet Openness}},
+author = {OECD},
+title = {Economic and Social Benefits of Internet Openness},
 year = {2016},
 month = jun,
 publisher = {OECD Publishing},
@@ -96,12 +96,11 @@ date-added = {2017-11-14T10:00:07GMT},
 date-modified = {2017-11-15T13:50:57GMT},
 url = {http://www.oecd-ilibrary.org/science-and-technology/economic-and-social-benefits-of-internet-openness_5jlwqf2r97g5-en},
 local-url = {file://localhost/Users/georgegillams/Dropbox/Library.papers3/Files/A0/A053FD2C-746D-4FEE-AB03-AB74B4763138.pdf},
-file = {{A053FD2C-746D-4FEE-AB03-AB74B4763138.pdf:/Users/georgegillams/Dropbox/Library.papers3/Files/A0/A053FD2C-746D-4FEE-AB03-AB74B4763138.pdf:application/pdf;A053FD2C-746D-4FEE-AB03-AB74B4763138.pdf:/Users/georgegillams/Dropbox/Library.papers3/Files/A0/A053FD2C-746D-4FEE-AB03-AB74B4763138.pdf:application/pdf}},
 uri = {url{papers3://publication/doi/10.1787/5jlwqf2r97g5-en}}
 }
 
 @book{Anonymous:2016tl,
-title = {{Net Neutrality Compendium: Human Rights, Free Competition and the Future of the Internet}},
+title = {Net Neutrality Compendium: Human Rights, Free Competition and the Future of the Internet},
 publisher = {Springer International Publishing},
 year = {2016},
 address = {Cham},
@@ -113,7 +112,7 @@ uri = {url{papers3://publication/uuid/08184EFF-970D-457A-9824-40A2D22F19C8}}
 }
 
 @techreport{Cisco:2017,
-title = {{Cisco Visual Networking Index: Forecast and Methodology, 2016-2021}},
+title = {Cisco Visual Networking Index: Forecast and Methodology, 2016-2021},
 year = {2017},
 month = jun,
 publisher = {Cisco},
@@ -121,13 +120,12 @@ rating = {0},
 date-added = {2017-11-21T09:50:53GMT},
 date-modified = {2017-11-21T11:18:09GMT},
 local-url = {file://localhost/Users/georgegillams/Dropbox/Library.papers3/Files/EE/EE3C19BF-7E39-46A3-8691-407D6EDB9F73.pdf},
-file = {{EE3C19BF-7E39-46A3-8691-407D6EDB9F73.pdf:/Users/georgegillams/Dropbox/Library.papers3/Files/EE/EE3C19BF-7E39-46A3-8691-407D6EDB9F73.pdf:application/pdf}},
 uri = {url{papers3://publication/uuid/66623391-5D3B-4E1F-AE38-C9DB104BE3BA}}
 }
 
 @article{Wu:2006fm,
 author = {Wu, Tim},
-title = {{Network Neutrality: Competition, Innovation, and Nondiscriminatory Access}},
+title = {Network Neutrality: Competition, Innovation, and Nondiscriminatory Access}},
 journal = {SSRN Electronic Journal},
 year = {2006},
 doi = {10.2139/ssrn.903118},
@@ -138,12 +136,11 @@ date-added = {2017-11-15T14:29:43GMT},
 date-modified = {2017-11-21T11:37:12GMT},
 url = {http://www.ssrn.com/abstract=903118},
 local-url = {file://localhost/Users/georgegillams/Dropbox/Library.papers3/Files/B4/B4970815-E030-4F98-A230-337E18F25F58.pdf},
-file = {{B4970815-E030-4F98-A230-337E18F25F58.pdf:/Users/georgegillams/Dropbox/Library.papers3/Files/B4/B4970815-E030-4F98-A230-337E18F25F58.pdf:application/pdf}},
 uri = {url{papers3://publication/doi/10.2139/ssrn.903118}}
 }
 
 @techreport{ComcastCFO,
-title = {{Edited Transcript: CMCSA - Comcast Corp at UBS Global Media and Communications Conference}},
+title = {Edited Transcript: CMCSA - Comcast Corp at UBS Global Media and Communications Conference}},
 year = {2016},
 month = dec,
 publisher = {Comminication Conference},
@@ -155,7 +152,7 @@ uri = {url{papers3://publication/uuid/9B7CF3CD-AC04-4DAD-A09A-837939744BAE}}
 
 @book{Belli:2016fca,
 editor = {Belli, Luca and De Filippi, Primavera},
-title = {{Net Neutrality Compendium}},
+title = {Net Neutrality Compendium}},
 publisher = {Springer International Publishing},
 year = {2016},
 address = {Cham},
@@ -170,7 +167,7 @@ uri = {url{papers3://publication/doi/10.1007/978-3-319-26425-7}}
 
 @incollection{McDiarmid2016,
 author = {McDiarmid, Andrew and Shears, Matthew},
-title = {{The Importance of Internet Neutrality to Protecting Human Rights Online}},
+title = {The Importance of Internet Neutrality to Protecting Human Rights Online}},
 booktitle = {Net Neutrality Compendium},
 year = {2016},
 editor = {Belli, Luca and De Filippi, Primavera},
@@ -189,7 +186,7 @@ uri = {url{papers3://publication/doi/10.1007/978-3-319-26425-7_3}}
 
 @article{Lessig:2001ge,
 author = {Lessig, Lawrence},
-title = {{The Internet under Siege}},
+title = {The Internet under Siege}},
 journal = {Foreign Policy},
 year = {2001},
 number = {127},
@@ -206,7 +203,7 @@ uri = {url{papers3://publication/doi/10.2307/3183294}}
 
 @article{Lessig:1997jn,
 author = {Lessig, Lawrence},
-title = {{What Things Regulate Speech}},
+title = {What Things Regulate Speech}},
 journal = {SSRN Electronic Journal},
 year = {1997},
 doi = {10.2139/ssrn.33067},
@@ -217,13 +214,12 @@ date-added = {2017-11-20T18:22:58GMT},
 date-modified = {2017-11-21T11:37:12GMT},
 url = {http://www.ssrn.com/abstract=33067},
 local-url = {file://localhost/Users/georgegillams/Dropbox/Library.papers3/Files/B9/B95A737F-7EA1-4F14-8E14-755E12EB619D.pdf},
-file = {{B95A737F-7EA1-4F14-8E14-755E12EB619D.pdf:/Users/georgegillams/Dropbox/Library.papers3/Files/B9/B95A737F-7EA1-4F14-8E14-755E12EB619D.pdf:application/pdf;B95A737F-7EA1-4F14-8E14-755E12EB619D.pdf:/Users/georgegillams/Dropbox/Library.papers3/Files/B9/B95A737F-7EA1-4F14-8E14-755E12EB619D.pdf:application/pdf}},
 uri = {url{papers3://publication/doi/10.2139/ssrn.33067}}
 }
 
 @incollection{Musiani2016,
 author = {Musiani, Francesca and L{\"o}blich, Maria},
-title = {{Net Neutrality from a Public Sphere Perspective}},
+title = {Net Neutrality from a Public Sphere Perspective}},
 booktitle = {Net Neutrality Compendium: Human Rights, Free Competition and the Future of the Internet},
 year = {2016},
 editor = {Belli, Luca and De Filippi, Primavera},
@@ -241,7 +237,7 @@ uri = {url{papers3://publication/doi/10.1007/978-3-319-26425-7_4}}
 
 @article{Loideain:2015ii,
 author = {Loideain, Nora Ni},
-title = {{EU Law and Mass Internet Metadata Surveillance in the Post-Snowden Era}},
+title = {EU Law and Mass Internet Metadata Surveillance in the Post-Snowden Era}},
 journal = {Media and Communication},
 year = {2015},
 volume = {3},
@@ -256,13 +252,12 @@ date-added = {2017-11-21T21:41:59GMT},
 date-modified = {2017-11-23T21:05:08GMT},
 url = {http://www.cogitatiopress.com/ojs/index.php/mediaandcommunication/article/view/297},
 local-url = {file://localhost/Users/georgegillams/Dropbox/Library.papers3/Files/C9/C9B68E0B-2E8E-4F6E-A265-F6708D0822CD.pdf},
-file = {{C9B68E0B-2E8E-4F6E-A265-F6708D0822CD.pdf:/Users/georgegillams/Dropbox/Library.papers3/Files/C9/C9B68E0B-2E8E-4F6E-A265-F6708D0822CD.pdf:application/pdf;C9B68E0B-2E8E-4F6E-A265-F6708D0822CD.pdf:/Users/georgegillams/Dropbox/Library.papers3/Files/C9/C9B68E0B-2E8E-4F6E-A265-F6708D0822CD.pdf:application/pdf}},
 uri = {url{papers3://publication/doi/10.17645/mac.v3i2.297}}
 }
 
 @book{Belli:2016fc,
 editor = {Belli, Luca and De Filippi, Primavera},
-title = {{Net Neutrality Compendium}},
+title = {Net Neutrality Compendium}},
 publisher = {Springer International Publishing},
 year = {2016},
 address = {Cham},
@@ -278,7 +273,7 @@ uri = {url{papers3://publication/doi/10.1007/978-3-319-26425-7}}
 
 @article{ReiffersMasson:2015wu,
 author = {Reiffers-Masson, Alexandre and Hayel, Yezekael and Altman, Eitan},
-title = {{Pricing Agreement between Service and Content Providers: A Net Neutrality Issue}},
+title = {Pricing Agreement between Service and Content Providers: A Net Neutrality Issue}},
 journal = {arXiv.org},
 year = {2015},
 eprint = {1505.03555v1},
@@ -291,13 +286,12 @@ date-added = {2017-11-14T10:34:09GMT},
 date-modified = {2017-11-23T21:04:53GMT},
 url = {http://arxiv.org/abs/1505.03555v1},
 local-url = {file://localhost/Users/georgegillams/Dropbox/Library.papers3/Files/AB/AB56120A-D674-4D08-9648-CCA0D43F5840.pdf},
-file = {{AB56120A-D674-4D08-9648-CCA0D43F5840.pdf:/Users/georgegillams/Dropbox/Library.papers3/Files/AB/AB56120A-D674-4D08-9648-CCA0D43F5840.pdf:application/pdf}},
 uri = {url{papers3://publication/uuid/B0A78EF9-4A62-4A34-8ABD-8EA8CA040DE6}}
 }
 
 @article{Foditsch:2016kk,
 author = {Foditsch, Nathalia},
-title = {{Zero Rating: Evil or Savior? Data Access and Competition Aspects}},
+title = {Zero Rating: Evil or Savior? Data Access and Competition Aspects}},
 journal = {SSRN Electronic Journal},
 year = {2016},
 doi = {10.2139/ssrn.2856003},
@@ -312,7 +306,7 @@ uri = {url{papers3://publication/doi/10.2139/ssrn.2856003}}
 
 @article{Taylor:2016ei,
 author = {Taylor, Linnet},
-title = {{From Zero to Hero: How Zero-Rating Became a Debate about Human Rights}},
+title = {From Zero to Hero: How Zero-Rating Became a Debate about Human Rights}},
 journal = {IEEE Internet Computing},
 year = {2016},
 volume = {20},
@@ -325,13 +319,12 @@ date-added = {2017-11-23T21:21:20GMT},
 date-modified = {2017-11-23T21:36:35GMT},
 url = {http://ieeexplore.ieee.org/document/7529037/},
 local-url = {file://localhost/Users/georgegillams/Dropbox/Library.papers3/Files/80/80D88170-744C-47E3-95F1-36A43DA03D52.pdf},
-file = {{80D88170-744C-47E3-95F1-36A43DA03D52.pdf:/Users/georgegillams/Dropbox/Library.papers3/Files/80/80D88170-744C-47E3-95F1-36A43DA03D52.pdf:application/pdf;80D88170-744C-47E3-95F1-36A43DA03D52.pdf:/Users/georgegillams/Dropbox/Library.papers3/Files/80/80D88170-744C-47E3-95F1-36A43DA03D52.pdf:application/pdf}},
 uri = {url{papers3://publication/doi/10.1109/MIC.2016.88}}
 }
 
 @article{Lemley:2000fn,
 author = {Lemley, Mark A and Lessig, Lawrence},
-title = {{The End of End-to-End: Preserving the Architecture of the Internet in the Broadband Era}},
+title = {The End of End-to-End: Preserving the Architecture of the Internet in the Broadband Era}},
 journal = {SSRN Electronic Journal},
 year = {2000},
 doi = {10.2139/ssrn.247737},
@@ -341,13 +334,12 @@ date-added = {2017-11-15T14:32:23GMT},
 date-modified = {2017-11-15T18:13:22GMT},
 url = {http://www.ssrn.com/abstract=247737},
 local-url = {file://localhost/Users/georgegillams/Dropbox/Library.papers3/Files/3E/3E18B3E1-62AC-44FD-8C8F-67D02C0AAEC7.pdf},
-file = {{3E18B3E1-62AC-44FD-8C8F-67D02C0AAEC7.pdf:/Users/georgegillams/Dropbox/Library.papers3/Files/3E/3E18B3E1-62AC-44FD-8C8F-67D02C0AAEC7.pdf:application/pdf}},
 uri = {url{papers3://publication/doi/10.2139/ssrn.247737}}
 }
 
 @incollection{McDiarmid2016,
 author = {McDiarmid, Andrew and Shears, Matthew},
-title = {{The Importance of Internet Neutrality to Protecting Human Rights Online}},
+title = {The Importance of Internet Neutrality to Protecting Human Rights Online}},
 booktitle = {Net Neutrality Compendium},
 year = {2016},
 editor = {Belli, Luca and De Filippi, Primavera},
@@ -366,7 +358,7 @@ uri = {url{papers3://publication/doi/10.1007/978-3-319-26425-7_3}}
 
 @incollection{Belli:2015kl,
 author = {Belli, Luca},
-title = {{End-to-End, Net Neutrality and Human Rights}},
+title = {End-to-End, Net Neutrality and Human Rights},
 booktitle = {Net Neutrality Compendium},
 year = {2015},
 pages = {13--29},
@@ -382,13 +374,12 @@ date-added = {2017-11-14T10:35:19GMT},
 date-modified = {2017-11-15T14:33:31GMT},
 url = {http://link.springer.com/10.1007/978-3-319-26425-7_2},
 local-url = {file://localhost/Users/georgegillams/Dropbox/Library.papers3/Files/8E/8E541BDB-E080-4255-92DE-099EE82EC099.pdf},
-file = {{8E541BDB-E080-4255-92DE-099EE82EC099.pdf:/Users/georgegillams/Dropbox/Library.papers3/Files/8E/8E541BDB-E080-4255-92DE-099EE82EC099.pdf:application/pdf}},
 uri = {url{papers3://publication/doi/10.1007/978-3-319-26425-7_2}}
 }
 
 @article{Lee:2009dc,
 author = {Lee, Robin S and Wu, Tim},
-title = {{Subsidizing Creativity through Network Design: Zero-Pricing and Net Neutrality}},
+title = {Subsidizing Creativity through Network Design: Zero-Pricing and Net Neutrality},
 journal = {Journal of Economic Perspectives},
 year = {2009},
 volume = {23},
@@ -411,13 +402,12 @@ date-added = {2017-11-15T14:29:24GMT},
 date-modified = {2017-11-21T11:37:12GMT},
 url = {http://pubs.aeaweb.org/doi/10.1257/jep.23.3.61},
 local-url = {file://localhost/Users/georgegillams/Dropbox/Library.papers3/Files/46/46E4909F-34D7-4516-89D9-86B52017404A.pdf},
-file = {{46E4909F-34D7-4516-89D9-86B52017404A.pdf:/Users/georgegillams/Dropbox/Library.papers3/Files/46/46E4909F-34D7-4516-89D9-86B52017404A.pdf:application/pdf}},
 uri = {url{papers3://publication/doi/10.1257/jep.23.3.61}}
 }
 
 @book{Belli:2016fcb,
 editor = {Belli, Luca and De Filippi, Primavera},
-title = {{Net Neutrality Compendium}},
+title = {Net Neutrality Compendium},
 publisher = {Springer International Publishing},
 year = {2016},
 address = {Cham},
@@ -429,13 +419,12 @@ date-added = {2017-11-21T20:14:49GMT},
 date-modified = {2017-11-21T21:04:51GMT},
 url = {http://link.springer.com/10.1007/978-3-319-26425-7},
 local-url = {file://localhost/Users/georgegillams/Dropbox/Library.papers3/Files/56/56ECD1D5-6EF2-4563-BC90-256029A51DE7.pdf},
-file = {{56ECD1D5-6EF2-4563-BC90-256029A51DE7.pdf:/Users/georgegillams/Dropbox/Library.papers3/Files/56/56ECD1D5-6EF2-4563-BC90-256029A51DE7.pdf:application/pdf}},
 uri = {url{papers3://publication/doi/10.1007/978-3-319-26425-7}}
 }
 
 @article{Cho:2016dn,
 author = {Cho, Soohyun and Qiu, Liangfei},
-title = {{Less Than Zero? The Economic Impact of Zero Rating on Content Competition}},
+title = {Less Than Zero? The Economic Impact of Zero Rating on Content Competition},
 journal = {SSRN Electronic Journal},
 year = {2016},
 doi = {10.2139/ssrn.2844930},
@@ -446,13 +435,12 @@ date-added = {2017-11-23T21:36:04GMT},
 date-modified = {2017-11-23T21:36:19GMT},
 url = {http://www.ssrn.com/abstract=2844930},
 local-url = {file://localhost/Users/georgegillams/Dropbox/Library.papers3/Files/26/2612081E-14ED-4FB2-BE31-25976BA1CA06.pdf},
-file = {{2612081E-14ED-4FB2-BE31-25976BA1CA06.pdf:/Users/georgegillams/Dropbox/Library.papers3/Files/26/2612081E-14ED-4FB2-BE31-25976BA1CA06.pdf:application/pdf;2612081E-14ED-4FB2-BE31-25976BA1CA06.pdf:/Users/georgegillams/Dropbox/Library.papers3/Files/26/2612081E-14ED-4FB2-BE31-25976BA1CA06.pdf:application/pdf}},
 uri = {url{papers3://publication/doi/10.2139/ssrn.2844930}}
 }
 
 @webpage{Economist:2013,
 author = {Economist, The},
-title = {{An ad-block shock: France V Google}},
+title = {An ad-block shock: France V Google},
 year = {2013},
 month = jan,
 url = {https://www.economist.com/news/business/21569414-xavier-niel-playing-rough-internet-giant-france-v-google},
