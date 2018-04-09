@@ -27,6 +27,7 @@ import Contact from '../Pages/Contact';
 import AboutMe from '../Pages/AboutMe';
 import ForOhFour from '../Pages/ForOhFour';
 import TeaPot from '../Pages/TeaPot';
+import Payments from '../Pages/Payments';
 
 const redirects = [
   { from: '/articles/tough-mudder', to: '/blog/tough-mudder' },
@@ -46,6 +47,7 @@ const redirects = [
   { from: '/net-neutrality', to: '/blog/net-neutrality' },
   { from: '/phot', to: '/photography' },
   { from: '/photo', to: '/photography' },
+  { from: '/payment', to: '/payments' },
 ];
 
 // eslint-disable-next-line import/no-webpack-loader-syntax
@@ -79,6 +81,7 @@ const Routes = (
         />
         {/* <Route path="/work/bpk-component-demo" component={BpkComponentDemo} /> */}
         <Route path="/site-map" component={SiteMap} />
+        <Route path="/payments" component={Payments} />
         <Route path="/about" component={AboutMe} />
         <Route path="/contact" component={Contact} />
 
