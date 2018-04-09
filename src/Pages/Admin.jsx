@@ -6,6 +6,7 @@ import SubSection from '../components/SubSection';
 import Button from '../components/Button';
 import DatabaseFunctions from '../DatabaseFunctions';
 import AdminComments from './AdminComments';
+import AdminPayment from './AdminPayment';
 
 import STYLES from './pages.scss';
 
@@ -15,17 +16,35 @@ class Admin extends React.Component {
   constructor(props) {
     super(props);
 
-    this.state = { pageIds: [], apiKey: '', pattern: '' };
+    this.state = {
+      paymentsCount: 0,
+      pageIds: [],
+      payments: [],
+      apiKey: '',
+      pattern: '',
+    };
   }
 
   componentDidMount() {
     const getPageIds = () => {
-      DatabaseFunctions.getPageIds((results) => {
+      DatabaseFunctions.getPageIds(results => {
         this.setState({ pageIds: results });
       });
     };
+    const getPayments = () => {
+      DatabaseFunctions.getPaymentRequestCount(result => {
+        this.setState({ paymentsCount: result });
+      });
+      if (this.state.apiKey !== '') {
+        DatabaseFunctions.getPayments(this.state.apiKey, result => {
+          this.setState({ payments: result });
+        });
+      }
+    };
 
+    getPayments();
     getPageIds();
+    setInterval(getPayments, 2000);
     setInterval(getPageIds, 2000);
   }
 
@@ -36,13 +55,18 @@ class Admin extends React.Component {
     if (className) classNameFinal.push(className);
 
     const pageIdList = (
-      <SubSection name="Page IDs">{this.state.pageIds.map(c => <div>{c}</div>)}</SubSection>
+      <SubSection name="Page IDs">
+        {this.state.pageIds.map(c => <div>{c}</div>)}
+      </SubSection>
     );
 
     return (
-      <Section name="So, you found my admin page!" className={classNameFinal.join(' ')}>
-        Check you out, you l33T H4cK3R. Unfortunately you're not going to get very far without my
-        private API-Key!
+      <Section
+        name="So, you found my admin page!"
+        className={classNameFinal.join(' ')}
+      >
+        Check you out, you l33T H4cK3R. Unfortunately you're not going to get
+        very far without my private API-Key!
         <br />
         <br />
         <BpkInput
@@ -58,7 +82,9 @@ class Admin extends React.Component {
         <br />
         {pageIdList}
         <br />
-        {this.state.pageIds.map(c => <AdminComments apiKey={this.state.apiKey} pageId={c} />)}
+        {this.state.pageIds.map(c => (
+          <AdminComments apiKey={this.state.apiKey} pageId={c} />
+        ))}
         <br />
         <BpkInput
           className={getClassName('pages__card')}
@@ -79,7 +105,7 @@ class Admin extends React.Component {
                 this.state.pageIds[i],
                 this.state.pattern,
                 null,
-                (result) => {
+                result => {
                   console.log(result);
                 },
               );
@@ -88,6 +114,16 @@ class Admin extends React.Component {
         >
           DO DAMAGE
         </Button>
+        <br />
+        <br />
+        <br />
+        <br />
+        <SubSection name="Payments">
+          {this.state.paymentsCount}
+          {this.state.payments.map(p => (
+            <AdminPayment apiKey={this.state.apiKey} payment={p} />
+          ))}
+        </SubSection>
       </Section>
     );
   }
