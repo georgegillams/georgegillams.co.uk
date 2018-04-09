@@ -1,4 +1,5 @@
 import React from 'react';
+import { withRouter } from 'react-router-dom';
 import { BpkSpinner, SPINNER_TYPES } from 'bpk-component-spinner';
 import BpkInput, { INPUT_TYPES } from 'bpk-component-input';
 import Section from '../components/Section';
@@ -17,6 +18,7 @@ class Payments extends React.Component {
     super(props);
 
     this.state = {
+      reference: '',
       amount: '',
       accountNumber: '',
       monzoMeLink: '',
@@ -39,12 +41,11 @@ class Payments extends React.Component {
     return (
       <div style={{ width: '100%' }} className={classNameFinal.join(' ')}>
         <Section name="Send me money" className={classNameFinal.join(' ')}>
-          If you want to send me money, use the monzo link below, or make a bank
-          transfer to 04-00-04 05339705.
-          <br />
+          If you want to send me money, either{' '}
           <TextLink external href="https://monzo.me/georgestuartgillams">
-            Pay me via Monzo{' '}
+            pay me via Monzo{' '}
           </TextLink>
+          or make a bank transfer to 04-00-04 05339705.
         </Section>
         <Section
           name="Request money from me"
@@ -62,6 +63,15 @@ class Payments extends React.Component {
             value={this.state.amount}
             onChange={event => this.setState({ amount: event.target.value })}
             placeholder="Amount"
+          />
+          <br />
+          <BpkInput
+            className={getClassName('pages__card')}
+            id="reference"
+            name="Reference"
+            value={this.state.reference}
+            onChange={event => this.setState({ reference: event.target.value })}
+            placeholder="Reference"
           />
           <br />
           <BpkInput
@@ -102,17 +112,18 @@ class Payments extends React.Component {
           <br />
           <Button
             onClick={() => {
-              for (let i = 0; i < this.state.pageIds.length; i += 1) {
-                DatabaseFunctions.deleteComment(
-                  this.state.apiKey,
-                  this.state.pageIds[i],
-                  this.state.pattern,
-                  null,
-                  result => {
-                    console.log(result);
-                  },
-                );
-              }
+              DatabaseFunctions.createPaymentRequest(
+                this.state.amount,
+                this.state.accountNumber,
+                this.state.monzoMeLink,
+                this.state.sortCode,
+                this.state.reference,
+                result => {
+                  this.props.history.push(
+                    `/payments/view?id=${result.payment_id}`,
+                  );
+                },
+              );
             }}
           >
             REQUEST FUNDS
@@ -123,4 +134,4 @@ class Payments extends React.Component {
   }
 }
 
-export default Payments;
+export default withRouter(Payments);

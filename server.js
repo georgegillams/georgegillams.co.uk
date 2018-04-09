@@ -25,7 +25,7 @@ app.use((req, res, next) => {
   res.header('Access-Control-Allow-Origin', '*');
   res.header(
     'Access-Control-Allow-Headers',
-    'Origin, X-Requested-With, Content-Type, Accept, page_id, Api-Key',
+    'Origin, X-Requested-With, Content-Type, Accept, page_id, payment_id, Api-Key',
   );
   res.header('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE');
   next();
@@ -147,6 +147,171 @@ router.delete('/api/comments', (req, res) => {
         const comment = JSON.parse(reply[i]);
         if (comment.commentId === commentId) {
           client.lrem(`${pageId}_comments`, 1, reply[i]);
+          res.end();
+          return;
+        }
+      }
+    });
+  }
+  res.end();
+});
+
+router.get('/api/payments/count', (req, res) => {
+  const apiKey = req.headers['api-key'];
+  if (apiKey === undefined || apiKey !== xApiKeyPub) {
+    res.end();
+    return;
+  }
+  client.lrange(`payments`, 0, -1, (err, reply) => {
+    res.send([reply.length]);
+  });
+});
+
+router.get('/api/payments/single', (req, res) => {
+  const apiKey = req.headers['api-key'];
+  if (apiKey === undefined || apiKey !== xApiKeyPub) {
+    res.end();
+    return;
+  }
+  const paymentId = req.headers.payment_id;
+  client.lrange(`payments`, 0, -1, (err, reply) => {
+    for (let i = 0; i < reply.length; i += 1) {
+      if (JSON.parse(reply[i]).paymentId === paymentId) {
+        res.send(JSON.parse(reply[i]));
+        return;
+      }
+    }
+    res.send(null);
+  });
+});
+
+router.get('/api/payments', (req, res) => {
+  const apiKey = req.headers['api-key'];
+  if (apiKey === undefined || apiKey !== xApiKeyPrivate) {
+    res.end();
+    return;
+  }
+  client.lrange(`payments`, 0, -1, (err, reply) => {
+    const result = [];
+    for (let i = 0; i < reply.length; i += 1) {
+      result.push(JSON.parse(reply[i]));
+    }
+    res.send(result);
+  });
+});
+
+router.post('/api/payments', (req, res) => {
+  const apiKey = req.headers['api-key'];
+  if (apiKey === undefined || apiKey !== xApiKeyPub) {
+    res.end();
+    return;
+  }
+  const { reference, amount } = req.body;
+  const monzoMeLink = req.body.monzo_me_link;
+  const accountNumber = req.body.account_number;
+  const sortCode = req.body.sort_code;
+  const paymentId = Math.random()
+    .toString(36)
+    .substring(7);
+  client.rpush([
+    `payments`,
+    JSON.stringify({
+      paymentId,
+      reference,
+      amount,
+      monzoMeLink,
+      accountNumber,
+      sortCode,
+      status: 'pending',
+      timestamp: Date.now(),
+    }),
+  ]);
+  res.send({ payment_id: paymentId });
+  res.end();
+});
+
+router.delete('/api/payments', (req, res) => {
+  const apiKey = req.headers['api-key'];
+  if (apiKey === undefined || apiKey !== xApiKeyPrivate) {
+    res.end();
+    return;
+  }
+  const paymentId = req.body.payment_id;
+  if (paymentId !== undefined) {
+    client.lrange(`payments`, 0, -1, (err, reply) => {
+      for (let i = 0; i < reply.length; i += 1) {
+        const payment = JSON.parse(reply[i]);
+        if (payment.paymentId === paymentId) {
+          client.lrem(`payments`, 1, reply[i]);
+          res.end();
+          return;
+        }
+      }
+    });
+  }
+  res.end();
+});
+
+router.post('/api/payments/status/authorise', (req, res) => {
+  const apiKey = req.headers['api-key'];
+  if (apiKey === undefined || apiKey !== xApiKeyPrivate) {
+    res.end();
+    return;
+  }
+  const paymentId = req.body.payment_id;
+  if (paymentId !== undefined) {
+    client.lrange(`payments`, 0, -1, (err, reply) => {
+      for (let i = 0; i < reply.length; i += 1) {
+        const payment = JSON.parse(reply[i]);
+        if (payment.paymentId === paymentId) {
+          payment.status = 'authorised';
+          client.lset(`payments`, i, JSON.stringify(payment));
+          res.end();
+          return;
+        }
+      }
+    });
+  }
+  res.end();
+});
+
+router.post('/api/payments/status/complete', (req, res) => {
+  const apiKey = req.headers['api-key'];
+  if (apiKey === undefined || apiKey !== xApiKeyPrivate) {
+    res.end();
+    return;
+  }
+  const paymentId = req.body.payment_id;
+  if (paymentId !== undefined) {
+    client.lrange(`payments`, 0, -1, (err, reply) => {
+      for (let i = 0; i < reply.length; i += 1) {
+        const payment = JSON.parse(reply[i]);
+        if (payment.paymentId === paymentId) {
+          payment.status = 'completed';
+          client.lset(`payments`, i, JSON.stringify(payment));
+          res.end();
+          return;
+        }
+      }
+    });
+  }
+  res.end();
+});
+
+router.post('/api/payments/status/reject', (req, res) => {
+  const apiKey = req.headers['api-key'];
+  if (apiKey === undefined || apiKey !== xApiKeyPrivate) {
+    res.end();
+    return;
+  }
+  const paymentId = req.body.payment_id;
+  if (paymentId !== undefined) {
+    client.lrange(`payments`, 0, -1, (err, reply) => {
+      for (let i = 0; i < reply.length; i += 1) {
+        const payment = JSON.parse(reply[i]);
+        if (payment.paymentId === paymentId) {
+          payment.status = 'rejected';
+          client.lset(`payments`, i, JSON.stringify(payment));
           res.end();
           return;
         }

@@ -70,7 +70,7 @@ const GetSocial = props => {
       <img alt="Skyscanner" width={5} height={5} className={iconClassNameFinal.join(' ')} src={skyscannerIcon} />
       </a> */}
         <a
-          href="https://gurushots.com/georgegillams"
+          href="https://gurushots.com/georgegillams/achievements"
           rel="noopener noreferrer"
           target="_blank"
         >
