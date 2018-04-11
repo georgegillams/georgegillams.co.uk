@@ -13,11 +13,15 @@ const SiteMap = () => (
       className={getClassName('pages__site-map-item')}
       name="Blog 📝"
     >
-      <TextLink href="/blog/react-http-response-codes">
+      {/* <TextLink href="/blog/react-http-response-codes">
         HTTP Reponse Codes in React
       </TextLink>
       <br />
       <TextLink href="/blog/week-of-rust">My Week of Rust</TextLink>
+      <br /> */}
+      <TextLink href="/blog/lightroom-workflow">
+        My Lightrooom Workflow
+      </TextLink>
       <br />
       <TextLink href="/blog/tough-mudder">Running 5 Tough Mudders</TextLink>
       <br />
@@ -59,14 +63,6 @@ const SiteMap = () => (
       <TextLink href="/apps/password-character-extractor">
         Password Character Extractor
       </TextLink>
-      {/* <br />
-      <TextLink href="/work/bpk-component-demo">
-        Backpack Demo Component
-      </TextLink> */}
-      {/* <br />
-          <TextLink href="/travel/longleat-2017"> Longleat </TextLink>
-          <br />
-          <TextLink href="/travel/munich-2017"> Munich </TextLink> */}
     </SubSection>
     {/* <SubSection noAnchor className={getClassName('pages__site-map-item')} name="Documents 🥇">
         <TextLink  href="/documents/degree">
@@ -82,6 +78,8 @@ const SiteMap = () => (
       <TextLink href="/about"> About me </TextLink>
       <br />
       <TextLink href="/contact"> Contact </TextLink>
+      <br />
+      <TextLink href="/payments"> Payments </TextLink>
     </SubSection>
     <SubSection
       noAnchor
