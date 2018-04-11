@@ -16,7 +16,11 @@ class DatabaseFunctions {
 
     request(options, (error, response, body) => {
       if (error) throw new Error(error);
-      cb(JSON.parse(body));
+      try {
+        cb(JSON.parse(body));
+      } catch (e) {
+        cb([]);
+      }
     });
   }
 
@@ -29,7 +33,11 @@ class DatabaseFunctions {
 
     request(options, (error, response, body) => {
       if (error) throw new Error(error);
-      cb(JSON.parse(body));
+      try {
+        cb(JSON.parse(body));
+      } catch (e) {
+        cb([]);
+      }
     });
   }
 
@@ -74,6 +82,149 @@ class DatabaseFunctions {
         throw new Error(error);
       }
       cb(body);
+    });
+  }
+
+  static createPaymentRequest(
+    amount,
+    accountNumber,
+    monzoMeLink,
+    sortCode,
+    reference,
+    cb,
+  ) {
+    const options = {
+      method: 'POST',
+      url: `${url}/api/payments`,
+      headers: {
+        'Api-Key': apiKey,
+      },
+      body: {
+        amount,
+        account_number: accountNumber,
+        monzo_me_link: monzoMeLink,
+        sort_code: sortCode,
+        reference,
+      },
+      json: true,
+    };
+
+    request(options, (error, response, body) => {
+      if (error) throw new Error(error);
+      cb(body);
+    });
+  }
+
+  static getPaymentRequestCount(cb) {
+    const options = {
+      method: 'GET',
+      url: `${url}/api/payments/count`,
+      headers: {
+        'Api-Key': apiKey,
+      },
+    };
+
+    request(options, (error, response, body) => {
+      if (error) throw new Error(error);
+      try {
+        cb(JSON.parse(body)[0]);
+      } catch (e) {
+        cb(null);
+      }
+    });
+  }
+
+  static getPayment(paymentId, cb) {
+    const options = {
+      method: 'GET',
+      url: `${url}/api/payments/single`,
+      headers: {
+        'Api-Key': apiKey,
+        payment_id: paymentId,
+      },
+    };
+
+    request(options, (error, response, body) => {
+      if (error) throw new Error(error);
+      try {
+        cb(JSON.parse(body));
+      } catch (e) {
+        cb(null);
+      }
+    });
+  }
+
+  static getPayments(privateApiKey, cb) {
+    const options = {
+      method: 'GET',
+      url: `${url}/api/payments`,
+      headers: {
+        'Api-Key': privateApiKey,
+      },
+    };
+
+    request(options, (error, response, body) => {
+      if (error) throw new Error(error);
+      try {
+        cb(JSON.parse(body));
+      } catch (e) {
+        cb([]);
+      }
+    });
+  }
+
+  static rejectPayment(privateApiKey, paymentId, cb) {
+    const options = {
+      method: 'POST',
+      url: `${url}/api/payments/status/reject`,
+      headers: {
+        'Api-Key': privateApiKey,
+      },
+      body: {
+        payment_id: paymentId,
+      },
+      json: true,
+    };
+
+    request(options, (error, response, body) => {
+      if (error) throw new Error(error);
+      cb(body);
+    });
+  }
+
+  static authorisePayment(privateApiKey, paymentId, cb) {
+    const options = {
+      method: 'POST',
+      url: `${url}/api/payments/status/authorise`,
+      headers: {
+        'Api-Key': privateApiKey,
+      },
+      body: {
+        payment_id: paymentId,
+      },
+      json: true,
+    };
+
+    request(options, (error, response, body) => {
+      if (error) throw new Error(error);
+    });
+  }
+
+  static completePayment(privateApiKey, paymentId, cb) {
+    const options = {
+      method: 'POST',
+      url: `${url}/api/payments/status/complete`,
+      headers: {
+        'Api-Key': privateApiKey,
+      },
+      body: {
+        payment_id: paymentId,
+      },
+      json: true,
+    };
+
+    request(options, (error, response, body) => {
+      if (error) throw new Error(error);
     });
   }
 }

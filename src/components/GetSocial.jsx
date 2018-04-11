@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { NavLink } from 'react-router-dom';
 // import BpkImage, { withLazyLoading, withLoadingBehavior } from  'bpk-component-image';
 import githubIcon from './../icons/github.png';
 import facebookIcon from './../icons/facebook.png';
@@ -69,7 +70,7 @@ const GetSocial = props => {
       <img alt="Skyscanner" width={5} height={5} className={iconClassNameFinal.join(' ')} src={skyscannerIcon} />
       </a> */}
         <a
-          href="https://gurushots.com/georgegillams"
+          href="https://gurushots.com/georgegillams/achievements"
           rel="noopener noreferrer"
           target="_blank"
         >
@@ -155,11 +156,7 @@ const GetSocial = props => {
             src={phoneIcon}
           />
         </a>
-        <a
-          href="https://monzo.me/georgestuartgillams"
-          rel="noopener noreferrer"
-          target="_blank"
-        >
+        <NavLink to="/payments">
           <img
             alt="monzo"
             width={5}
@@ -167,7 +164,7 @@ const GetSocial = props => {
             className={iconClassNameFinal.join(' ')}
             src={monzoIcon}
           />
-        </a>
+        </NavLink>
       </div>
     </div>
   );
