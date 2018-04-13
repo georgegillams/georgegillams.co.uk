@@ -1,6 +1,13 @@
 const bodyParser = require('body-parser');
 const express = require('express');
 const path = require('path');
+const {
+  DECIMAL_REGEX,
+  INT_REGEX,
+  SORT_CODE_REGEX,
+  STRING_REGEX,
+  MONZOME_LINK_REGEX,
+} = require('./src/constants');
 
 const app = express();
 
@@ -210,6 +217,30 @@ router.post('/api/payments', (req, res) => {
   const monzoMeLink = req.body.monzo_me_link;
   const accountNumber = req.body.account_number;
   const sortCode = req.body.sort_code;
+  let valid = true;
+  if (!amount.match(DECIMAL_REGEX)) {
+    valid = false;
+  }
+  if (monzoMeLink !== '' && !monzoMeLink.matches(MONZOME_LINK_REGEX)) {
+    valid = false;
+  }
+  if (!reference.match(STRING_REGEX)) {
+    valid = false;
+  }
+  if (!accountNumber.match(INT_REGEX)) {
+    valid = false;
+  }
+  if (!sortCode.match(SORT_CODE_REGEX)) {
+    valid = false;
+  }
+  if (!valid) {
+    res.send({
+      error:
+        'There was an error processing the request 😿 Please try again later.',
+    });
+    res.end();
+    return;
+  }
   const paymentId = Math.random()
     .toString(36)
     .substring(7);

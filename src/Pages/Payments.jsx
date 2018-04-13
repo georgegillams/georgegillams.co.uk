@@ -1,5 +1,6 @@
 import React from 'react';
 import { withRouter } from 'react-router-dom';
+import BpkBannerAlert, { ALERT_TYPES } from 'bpk-component-banner-alert';
 import { BpkSpinner, SPINNER_TYPES } from 'bpk-component-spinner';
 import BpkInput, { INPUT_TYPES } from 'bpk-component-input';
 import Section from '../components/Section';
@@ -8,6 +9,13 @@ import Button from '../components/Button';
 import DatabaseFunctions from '../DatabaseFunctions';
 import AdminComments from './AdminComments';
 import TextLink from '../components/TextLink';
+import {
+  DECIMAL_REGEX,
+  INT_REGEX,
+  SORT_CODE_REGEX,
+  STRING_REGEX,
+  MONZOME_LINK_REGEX,
+} from '../constants';
 
 import STYLES from './pages.scss';
 
@@ -23,6 +31,7 @@ class Payments extends React.Component {
       accountNumber: '',
       monzoMeLink: '',
       sortCode: '',
+      errorMessage: null,
     };
   }
 
@@ -31,12 +40,6 @@ class Payments extends React.Component {
 
     const classNameFinal = [];
     if (className) classNameFinal.push(className);
-
-    // const pageIdList = (
-    //   <SubSection name="Page IDs">
-    //     {this.state.pageIds.map(c => <div>{c}</div>)}
-    //   </SubSection>
-    // );
 
     return (
       <div style={{ width: '100%' }} className={classNameFinal.join(' ')}>
@@ -55,8 +58,14 @@ class Payments extends React.Component {
           <br />
           Either provide a monzo.me link, or a sort-code and account number.
           <br />
+          <BpkBannerAlert
+            message={this.state.errorMessage}
+            show={this.state.errorMessage}
+            type={ALERT_TYPES.ERROR}
+          />
           <br />
           <BpkInput
+            valid={this.state.amount.match(DECIMAL_REGEX)}
             className={getClassName('pages__card')}
             id="amount"
             name="Amount"
@@ -66,6 +75,7 @@ class Payments extends React.Component {
           />
           <br />
           <BpkInput
+            valid={this.state.reference.match(STRING_REGEX)}
             className={getClassName('pages__card')}
             id="reference"
             name="Reference"
@@ -75,6 +85,7 @@ class Payments extends React.Component {
           />
           <br />
           <BpkInput
+            valid={this.state.monzoMeLink.match(MONZOME_LINK_REGEX)}
             disabled={
               this.state.accountNumber !== '' || this.state.sortCode !== ''
             }
@@ -89,6 +100,7 @@ class Payments extends React.Component {
           />
           <br />
           <BpkInput
+            valid={this.state.accountNumber.match(INT_REGEX)}
             disabled={this.state.monzoMeLink !== ''}
             className={getClassName('pages__card')}
             id="accountNo"
@@ -101,6 +113,7 @@ class Payments extends React.Component {
           />
           <br />
           <BpkInput
+            valid={this.state.sortCode.match(SORT_CODE_REGEX)}
             disabled={this.state.monzoMeLink !== ''}
             className={getClassName('pages__card')}
             id="sortCode"
@@ -111,6 +124,15 @@ class Payments extends React.Component {
           />
           <br />
           <Button
+            disabled={
+              !(
+                this.state.amount.match(DECIMAL_REGEX) &&
+                this.state.reference.match(STRING_REGEX) &&
+                (this.state.monzoMeLink.match(MONZOME_LINK_REGEX) ||
+                  (this.state.accountNumber.match(INT_REGEX) &&
+                    this.state.sortCode.match(SORT_CODE_REGEX)))
+              )
+            }
             onClick={() => {
               DatabaseFunctions.createPaymentRequest(
                 this.state.amount,
@@ -119,9 +141,13 @@ class Payments extends React.Component {
                 this.state.sortCode,
                 this.state.reference,
                 result => {
-                  this.props.history.push(
-                    `/payments/view?id=${result.payment_id}`,
-                  );
+                  if (result.payment_id) {
+                    this.props.history.push(
+                      `/payments/view?id=${result.payment_id}`,
+                    );
+                  } else {
+                    this.setState({ errorMessage: result.error });
+                  }
                 },
               );
             }}
