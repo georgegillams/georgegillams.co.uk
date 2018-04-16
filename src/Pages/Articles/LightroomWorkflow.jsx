@@ -7,7 +7,7 @@ import Comments from '../../components/Comments';
 import Tag, { TAG_TYPES } from '../../components/Tag';
 import PageSwitchScroller from '../../components/PageSwitchScroller';
 import ScrollIndicator from '../../components/ScrollIndicator';
-import YoutubeEmbedVideo from 'george-fork-youtube-embed-video';
+import YoutubeEmbedVideo from 'youtube-embed-video';
 
 import STYLES from '../pages.scss';
 
