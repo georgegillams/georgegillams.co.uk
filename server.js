@@ -77,6 +77,18 @@ router.get('/ontologies/2018/tv-listing-ontology', (req, res) => {
 router.get('/api/greasemonkey/secureEcs_download', (req, res) => {
   res.sendFile(
     path.join(__dirname, './server_content/greasemonkey', 'secure ecs.js'),
+    {
+      headers: { 'Content-Type': 'text/plain' },
+    },
+  );
+});
+
+router.get('/api/greasemonkey/guruShotsBoost_download', (req, res) => {
+  res.sendFile(
+    path.join(__dirname, './server_content/greasemonkey', 'guruShotsBoost.js'),
+    {
+      headers: { 'Content-Type': 'text/plain' },
+    },
   );
 });
 
