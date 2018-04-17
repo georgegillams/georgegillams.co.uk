@@ -44,9 +44,9 @@ class ArticleCard extends Component {
       ...rest
     } = this.props;
 
-    const classNameFinal = [getClassName('article-card__outer-container')];
+    const classNameFinal = [getClassName('article-card')];
     const contentContainerClassNames = [
-      getClassName('article-card__content-container'),
+      getClassName('article-card__inner-container'),
     ];
 
     const bannerClassNames = [getClassName('article-card__banner')];
@@ -57,30 +57,8 @@ class ArticleCard extends Component {
       bannerClassNames.push(getClassName('article-card__banner--hovered'));
     }
     const innerBannerClassNames = [
-      getClassName('article-card__inner-container'),
+      getClassName('article-card__outer-container'),
     ];
-    if (tallLayout) {
-      innerBannerClassNames.push(
-        getClassName('article-card__inner-container--tall-layout'),
-      );
-      classNameFinal.push(
-        getClassName('article-card__outer-container--tall-layout'),
-      );
-      contentContainerClassNames.push(
-        getClassName('article-card__content-container--tall-layout'),
-      );
-    }
-    if (autoTallLayout) {
-      innerBannerClassNames.push(
-        getClassName('article-card__inner-container--auto-tall-layout'),
-      );
-      classNameFinal.push(
-        getClassName('article-card__outer-container--auto-tall-layout'),
-      );
-      contentContainerClassNames.push(
-        getClassName('article-card__content-container--auto-tall-layout'),
-      );
-    }
     if (className) classNameFinal.push(className);
 
     const imageContainerClassNames = [
@@ -136,16 +114,18 @@ class ArticleCard extends Component {
                   name={day}
                 />
               </div>
-              <Section
-                noPadding
-                hover={this.state.hovering}
-                light={light}
-                name={title}
-                link
-                className={getClassName('article-card__title')}
-              />
-              <div className={getClassName('article-card__children')}>
-                {children}
+              <div className={getClassName('article-card__center-container')}>
+                <Section
+                  noPadding
+                  hover={this.state.hovering}
+                  light={light}
+                  name={title}
+                  link
+                  className={getClassName('article-card__title')}
+                />
+                <div className={getClassName('article-card__children')}>
+                  {children}
+                </div>
               </div>
               <div
                 className={imageContainerClassNames.join(' ')}
