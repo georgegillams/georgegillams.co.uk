@@ -22,7 +22,6 @@ const SwitchToVim = props => {
   return (
     <main className={classNameFinal.join(' ')} {...rest}>
       <ScrollIndicator />
-      <br />
       <PageSwitchScroller />
       <Section name="Switching to Vim">
         <ArticleDate date={DATE_WRITTEN} />

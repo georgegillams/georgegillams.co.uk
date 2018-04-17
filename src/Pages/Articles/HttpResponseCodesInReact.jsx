@@ -41,7 +41,6 @@ const WeekOfRust = props => {
   return (
     <main className={classNameFinal.join(' ')} {...rest}>
       <ScrollIndicator />
-      <br />
       <PageSwitchScroller />
       <Section name="React.js and HTTP status codes">
         <ArticleDate date={DATE_WRITTEN} />

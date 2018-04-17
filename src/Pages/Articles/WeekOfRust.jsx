@@ -22,7 +22,6 @@ const WeekOfRust = props => {
   return (
     <main className={classNameFinal.join(' ')} {...rest}>
       <ScrollIndicator />
-      <br />
       <PageSwitchScroller />
       <Section name="A week of Rust development">
         <ArticleDate date={DATE_WRITTEN} />

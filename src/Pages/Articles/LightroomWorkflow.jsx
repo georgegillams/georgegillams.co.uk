@@ -26,7 +26,6 @@ const LightroomWorkflow = props => {
   return (
     <main className={classNameFinal.join(' ')} {...rest}>
       <ScrollIndicator />
-      <br />
       <PageSwitchScroller />
       <Section name="My Lightroom Workflow">
         <ArticleDate date={DATE_WRITTEN} />
