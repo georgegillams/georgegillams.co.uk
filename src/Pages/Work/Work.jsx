@@ -35,7 +35,6 @@ const Work = props => {
   return (
     <main className={classNameFinal.join(' ')} {...rest}>
       <ScrollIndicator />
-      <br />
       <PageSwitchScroller />
       <Section name="My Work">
         <SubSection name="Where it all started">
@@ -58,7 +57,6 @@ const Work = props => {
           Southampton. Once my Masters is out of the way, I will be rejoining
           Skyscanner as a full-time employee.
         </SubSection>
-        <br />
         <Section name="Portfolio">
           This website demonstrates some of my web-development capabilities.
           Below I have included examples and extracts from my work on

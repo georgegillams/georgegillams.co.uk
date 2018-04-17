@@ -10,7 +10,7 @@ const getClassName = className => STYLES[className] || 'UNKNOWN';
 
 const LicenseInfo = props => {
   const { centered, className, ...rest } = props;
-  const classNameFinal = [];
+  const classNameFinal = [getClassName('license')];
   if (centered) {
     classNameFinal.push(getClassName('license--centered'));
   }
