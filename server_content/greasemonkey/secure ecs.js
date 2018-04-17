@@ -4,6 +4,7 @@
 // @include     https://*.ecs.soton.ac.uk/*
 // @exclude     none
 // @version     1
+// @description:en      Replaces the grim red colour of secure.ecs.soton.ac.uk with a much nicer blue colour
 // @grant    		none
 // ==/UserScript==
 

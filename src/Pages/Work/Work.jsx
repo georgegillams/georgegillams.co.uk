@@ -13,6 +13,8 @@ import ScrollIndicator from '../../components/ScrollIndicator';
 import passwordCharacterExtractorUse from './images/passwordCharacterExtractorUse.png';
 import greasemonkeyEcsBefore from './images/greasemonkey_before.png';
 import greasemonkeyEcsAfter from './images/greasemonkey_after.png';
+import greasemonkeyGuruShotsBefore from './images/greasemonkeyGuruShots_before.png';
+import greasemonkeyGuruShotsAfter from './images/greasemonkeyGuruShots_after.png';
 import reactComponentAcademicReferenceUse from './images/reactComponentAcademicReferenceUse.png';
 
 import STYLES from './apps.scss';
@@ -140,7 +142,7 @@ const Work = props => {
             />
             <br />
             <br />
-            <Button href="blog/net-neutrality">See it in action →</Button>
+            <Button href="/blog/net-neutrality">See it in action →</Button>
             <br />
             <br />
             <Button
@@ -171,7 +173,7 @@ const Work = props => {
               Read more here →
             </Button>
           </SubSection>
-          <SubSection name="Greasemonkey">
+          <SubSection name="Greasemonkey - GuruShots">
             <TextLink
               href="https://addons.mozilla.org/en-US/firefox/addon/greasemonkey/"
               external
@@ -179,9 +181,45 @@ const Work = props => {
               GreaseMonkey{' '}
             </TextLink>
             is a brilliant browser extension that allows you to add javascript
-            to specific webpages when they are loaded. The ECS site we use at
-            Southampton is a brilliant tool that was created ugly, so I wrote a
-            GreaseMonkey script to… well… improve it.
+            to specific webpages when they are loaded.{' '}
+            <TextLink href="https://gurushots.com/" external>
+              GuruShots{' '}
+            </TextLink>
+            is an online platform for photographers to enter their work into
+            competitions. At a random point in each competition, each user is
+            given a free boost. It is easy to miss, however, so I wrote a script
+            to regularly check for free boosts and make them stand out on the
+            page.
+            <br />
+            <br />
+            <FadingLazyLoadedImage
+              className={getClassName('apps__image')}
+              altText="Backpack component"
+              style={{ maxWidth: '24rem' }}
+              width={2910}
+              height={1920}
+              src={greasemonkeyGuruShotsBefore}
+            />
+            <FadingLazyLoadedImage
+              className={getClassName('apps__image')}
+              altText="Backpack component"
+              style={{ maxWidth: '24rem' }}
+              width={2952}
+              height={1920}
+              src={greasemonkeyGuruShotsAfter}
+            />
+            <br />
+            <br />
+            <Button
+              href="/api/greasemonkey/guruShotsBoost_download"
+              hrefExternal
+            >
+              Donwload script
+            </Button>
+          </SubSection>
+          <SubSection name="Greasemonkey - ECS">
+            The ECS site we use at Southampton is a brilliant tool that was
+            created ugly, so I wrote a GreaseMonkey script to… well… improve it.
             <br />
             <br />
             <FadingLazyLoadedImage
@@ -200,6 +238,7 @@ const Work = props => {
               height={1920}
               src={greasemonkeyEcsAfter}
             />
+            <br />
             <br />
             <Button href="/api/greasemonkey/secureEcs_download" hrefExternal>
               Donwload script
