@@ -137,6 +137,7 @@ class ArticleCard extends Component {
                 />
               </div>
               <Section
+                noPadding
                 hover={this.state.hovering}
                 light={light}
                 name={title}
