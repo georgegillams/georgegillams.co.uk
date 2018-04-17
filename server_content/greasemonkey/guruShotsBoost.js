@@ -3,7 +3,7 @@
 // @namespace   urn://https://www.georgegillams.co.uk/api/greasemonkey/guruShotsBoost_download
 // @include     https://gurushots.com/*
 // @exclude     none
-// @version     3
+// @version     4
 // @description:en	Makes the boost buttons on GuruShots.com stand out more when a free boost is available.
 // @grant    		none
 // ==/UserScript==
@@ -23,7 +23,7 @@ function checkForFreeBoosts() {
         continue;
       }
       availableBoostCount += 1;
-      element.style.backgroundColor = 'red';
+      element.style.backgroundColor = 'hotpink';
       element.style.color = 'white';
       element.style.borderColor = 'black';
       element.style.opacity = '1';
@@ -37,7 +37,7 @@ function checkForFreeBoosts() {
   for (let i = 0; i < allDivElements.length; i += 1) {
     const element = allDivElements[i];
     if (element.className === 'w-max') {
-      element.style.backgroundColor = 'red';
+      element.style.backgroundColor = 'hotpink';
     }
   }
 }
