@@ -24,7 +24,6 @@ const ToughMudder = props => {
   return (
     <main className={classNameFinal.join(' ')} {...rest}>
       <ScrollIndicator />
-      <br />
       <PageSwitchScroller />
       <Section name="Running 5 Tough Mudders">
         <ArticleDate date={DATE_WRITTEN} />

@@ -473,7 +473,6 @@ const NetNeutrality = props => {
   return (
     <main className={classNameFinal.join(' ')} {...rest}>
       <ScrollIndicator />
-      <br />
       <PageSwitchScroller />
       {/* <GoogleA ds /> */}
       <Section name="My Take on Net Neutrality">

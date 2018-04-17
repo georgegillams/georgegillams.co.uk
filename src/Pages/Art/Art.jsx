@@ -41,10 +41,8 @@ const Art = props => {
   return (
     <main className={classNameFinal.join(' ')} {...rest}>
       <ScrollIndicator />
-      <br />
       <PageSwitchScroller />
       <Section name="Photography">
-        <br />
         <a
           className={getClassName('pages__link')}
           href="https://www.flickr.com/people/137198167@N03/"
@@ -55,7 +53,7 @@ const Art = props => {
         </a>
         <a
           className={getClassName('pages__link')}
-          href="https://gurushots.com/georgegillams"
+          href="https://gurushots.com/georgegillams/achievements"
           rel="noopener noreferrer"
           target="_blank"
         >
