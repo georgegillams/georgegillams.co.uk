@@ -6,6 +6,10 @@
   border-radius: .35rem;
   box-shadow: .1rem .1rem .3rem 0 rgba(37, 32, 31, .3);
 
+  &--narrow-compact {
+    max-width: 25rem;
+  }
+
   &:focus,
   &:active,
   &:hover {
@@ -21,10 +25,16 @@
     flex-wrap: wrap;
     box-sizing: border-box;
 
-    @include bpk-breakpoint-mobile {
-      height: 30rem;
+    &--narrow-compact {
       justify-content: center;
-      align-content: space-around;
+    }
+
+    &--auto {
+      @include bpk-breakpoint-mobile {
+        height: 30rem;
+        justify-content: center;
+        align-content: space-around;
+      }
     }
   }
 
@@ -46,6 +56,10 @@
     @include bpk-breakpoint-mobile {
       min-width: 100%;
       text-align: center;
+    }
+
+    &--narrow-compact {
+      justify-content: center;
     }
   }
 
