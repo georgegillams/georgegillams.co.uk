@@ -2,7 +2,7 @@ import React from 'react';
 import Section from '../../components/Section';
 import SubSection from '../../components/SubSection';
 import CalculationHelpers from './CalculationHelpers';
-import georgegillams from '../../images/georgegillams.jpg';
+import georgegillams from '../../images/georgegillams.png';
 import southamptonCitySkyline from '../../images/southamptonCitySkyline.svg';
 import londonCitySkyline from '../../images/londonCitySkyline.svg';
 import train from '../../images/train.svg';
