@@ -16,6 +16,13 @@
     box-sizing: border-box;
   }
 
+  &__compact-card-container {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
   &__photo-gallery {
     width: 70vw;
     max-width: 70rem;

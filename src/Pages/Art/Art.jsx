@@ -4,6 +4,7 @@ import BpkImage, {
   withLazyLoading,
   withLoadingBehavior,
 } from 'bpk-component-image';
+import ArticleCard, { CARD_LAYOUTS } from '../../components/ArticleCard';
 import Section from '../../components/Section';
 import SubSection from '../../components/SubSection';
 import Comments from '../../components/Comments';
@@ -19,6 +20,8 @@ import photog03 from '../Art/images/photog_01.jpg';
 import photog04 from '../Art/images/photog_06.jpg';
 import photog05 from '../Art/images/photog_04.jpg';
 import photog06 from '../Art/images/photog_03.jpg';
+import guruShotsIconLarge from '../Art/images/guruShotsSm.png';
+import flickrIconLarge from '../Art/images/flickrSm.png';
 import PageSwitchScroller from '../../components/PageSwitchScroller';
 import ScrollIndicator from '../../components/ScrollIndicator';
 
@@ -43,22 +46,29 @@ const Art = props => {
       <ScrollIndicator />
       <PageSwitchScroller />
       <Section name="Photography">
-        <a
-          className={getClassName('pages__link')}
-          href="https://www.flickr.com/people/137198167@N03/"
-          rel="noopener noreferrer"
-          target="_blank"
+        <div
+          style={{ paddingTop: '1rem' }}
+          className={getClassName('pages__compact-card-container')}
         >
-          <SubSection noAnchor name="See my full Flickr profile →" link />
-        </a>
-        <a
-          className={getClassName('pages__link')}
-          href="https://gurushots.com/georgegillams/achievements"
-          rel="noopener noreferrer"
-          target="_blank"
-        >
-          <SubSection noAnchor name="See my GuruShots profile →" link />
-        </a>
+          <ArticleCard
+            layout={CARD_LAYOUTS.narrowCompact}
+            day={null}
+            month={null}
+            className={getClassName('pages__card')}
+            imageSrc={guruShotsIconLarge}
+            href="https://gurushots.com/georgegillams/achievements"
+            title="Find me on GuruShots"
+          />
+          <ArticleCard
+            layout={CARD_LAYOUTS.narrowCompact}
+            day={null}
+            month={null}
+            className={getClassName('pages__card')}
+            imageSrc={flickrIconLarge}
+            href="https://www.flickr.com/people/137198167@N03/"
+            title="Find me on Flickr"
+          />
+        </div>
         <SubSection noAnchor name="Dog running with a Stick">
           <FadingLazyLoadedImage
             className={getClassName('pages__image')}

@@ -17,6 +17,12 @@ const FadingLazyLoadedImage = withLoadingBehavior(
   withLazyLoading(BpkImage, documentIfExists),
 );
 
+export const CARD_LAYOUTS = {
+  auto: 'auto',
+  narrow: 'narrow',
+  narrowCompact: 'narrowCompact',
+};
+
 class ArticleCard extends Component {
   constructor(props) {
     super(props);
@@ -33,18 +39,19 @@ class ArticleCard extends Component {
       fillImageSrc,
       light,
       linkUrl,
+      href,
       imageSrc,
       title,
       className,
       backgroundImageClassName,
       imageClassName,
-      tallLayout,
-      autoTallLayout,
+      layout,
       children,
       ...rest
     } = this.props;
 
     const classNameFinal = [getClassName('article-card')];
+    const centerClassNames = [getClassName('article-card__center-container')];
     const contentContainerClassNames = [
       getClassName('article-card__inner-container'),
     ];
@@ -56,9 +63,22 @@ class ArticleCard extends Component {
     if (this.state.hovering) {
       bannerClassNames.push(getClassName('article-card__banner--hovered'));
     }
-    const innerBannerClassNames = [
+    const outerBannerClassNames = [
       getClassName('article-card__outer-container'),
     ];
+    if (layout === CARD_LAYOUTS.narrowCompact) {
+      classNameFinal.push(getClassName('article-card--narrow-compact'));
+      outerBannerClassNames.push(
+        getClassName('article-card__outer-container--narrow-compact'),
+      );
+      centerClassNames.push(
+        getClassName('article-card__center-container--narrow-compact'),
+      );
+    } else if (layout === CARD_LAYOUTS.auto) {
+      outerBannerClassNames.push(
+        getClassName('article-card__outer-container--auto'),
+      );
+    }
     if (className) classNameFinal.push(className);
 
     const imageContainerClassNames = [
@@ -82,6 +102,77 @@ class ArticleCard extends Component {
       backgroundImageClassNames.push(backgroundImageClassName);
     }
 
+    let cardComponent = (
+      <div className={contentContainerClassNames.join(' ')}>
+        <div
+          className={backgroundImageClassNames.join(' ')}
+          style={{ backgroundImage: `url(${fillImageSrc})` }}
+        />
+        <div className={outerBannerClassNames.join(' ')}>
+          <div className={getClassName('article-card__date')}>
+            <SubSection
+              hover={this.state.hovering}
+              noAnchor
+              noPadding
+              link
+              light={light}
+              name={month}
+            />
+            <SubSection
+              hover={this.state.hovering}
+              noAnchor
+              noPadding
+              link
+              light={light}
+              name={day}
+            />
+          </div>
+          <div className={centerClassNames.join(' ')}>
+            <Section
+              noPadding
+              hover={this.state.hovering}
+              light={light}
+              name={title}
+              link
+              className={getClassName('article-card__title')}
+            />
+            <div className={getClassName('article-card__children')}>
+              {children}
+            </div>
+          </div>
+          <div
+            className={imageContainerClassNames.join(' ')}
+            style={{
+              border: imageBorder ? `solid ${imageBorder} 0.1rem` : 'none',
+            }}
+          >
+            <FadingLazyLoadedImage
+              className={imageClassNames.join(' ')}
+              altText="Card image"
+              width={987}
+              height={575}
+              src={imageSrc}
+            />
+          </div>
+        </div>
+        <div
+          className={bannerClassNames.join(' ')}
+          style={bannerColor ? { backgroundColor: bannerColor } : {}}
+        />
+      </div>
+    );
+
+    if (linkUrl) {
+      cardComponent = <NavLink to={linkUrl}>{cardComponent}</NavLink>;
+    }
+    if (href) {
+      cardComponent = (
+        <a rel="noopener noreferrer" target="_blank" href={href}>
+          {cardComponent}
+        </a>
+      );
+    }
+
     return (
       <div
         className={classNameFinal.join(' ')}
@@ -89,65 +180,7 @@ class ArticleCard extends Component {
         onMouseEnter={() => this.setState({ hovering: true })}
         onMouseLeave={() => this.setState({ hovering: false })}
       >
-        <NavLink to={linkUrl}>
-          <div className={contentContainerClassNames.join(' ')}>
-            <div
-              className={backgroundImageClassNames.join(' ')}
-              style={{ backgroundImage: `url(${fillImageSrc})` }}
-            />
-            <div className={innerBannerClassNames.join(' ')}>
-              <div className={getClassName('article-card__date')}>
-                <SubSection
-                  hover={this.state.hovering}
-                  noAnchor
-                  noPadding
-                  link
-                  light={light}
-                  name={month}
-                />
-                <SubSection
-                  hover={this.state.hovering}
-                  noAnchor
-                  noPadding
-                  link
-                  light={light}
-                  name={day}
-                />
-              </div>
-              <div className={getClassName('article-card__center-container')}>
-                <Section
-                  noPadding
-                  hover={this.state.hovering}
-                  light={light}
-                  name={title}
-                  link
-                  className={getClassName('article-card__title')}
-                />
-                <div className={getClassName('article-card__children')}>
-                  {children}
-                </div>
-              </div>
-              <div
-                className={imageContainerClassNames.join(' ')}
-                style={{
-                  border: imageBorder ? `solid ${imageBorder} 0.1rem` : 'none',
-                }}
-              >
-                <FadingLazyLoadedImage
-                  className={imageClassNames.join(' ')}
-                  altText="Card image"
-                  width={987}
-                  height={575}
-                  src={imageSrc}
-                />
-              </div>
-            </div>
-            <div
-              className={bannerClassNames.join(' ')}
-              style={bannerColor ? { backgroundColor: bannerColor } : {}}
-            />
-          </div>
-        </NavLink>
+        {cardComponent}
       </div>
     );
   }
@@ -162,6 +195,7 @@ ArticleCard.propTypes = {
   linkUrl: PropTypes.string,
   title: PropTypes.string,
   className: PropTypes.string,
+  layout: PropTypes.oneOf(Object.keys(CARD_LAYOUTS)),
 };
 
 ArticleCard.defaultProps = {
@@ -173,6 +207,7 @@ ArticleCard.defaultProps = {
   imageSrc: null,
   title: null,
   className: null,
+  layout: CARD_LAYOUTS.auto,
 };
 
 export default ArticleCard;
