@@ -1,0 +1,8 @@
+@import '~bpk-mixins';
+
+.blogs {
+  &__date {
+    padding-bottom: .5rem;
+    color: $bpk-color-gray-700;
+  }
+}
