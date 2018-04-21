@@ -32,7 +32,7 @@ app.use((req, res, next) => {
   res.header('Access-Control-Allow-Origin', '*');
   res.header(
     'Access-Control-Allow-Headers',
-    'Origin, X-Requested-With, Content-Type, Accept, page_id, payment_id, Api-Key',
+    'Origin, X-Requested-With, Content-Type, Accept, page_id, payment_id, blog_id, Api-Key',
   );
   res.header('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE');
   next();
@@ -295,6 +295,28 @@ router.delete('/api/payments', (req, res) => {
   res.end();
 });
 
+router.delete('/api/blog-posts', (req, res) => {
+  const apiKey = req.headers['api-key'];
+  if (apiKey === undefined || apiKey !== xApiKeyPrivate) {
+    res.end();
+    return;
+  }
+  const blogId = req.body.blog_id;
+  if (blogId !== undefined) {
+    client.lrange(`blog-posts`, 0, -1, (err, reply) => {
+      for (let i = 0; i < reply.length; i += 1) {
+        const blog = JSON.parse(reply[i]);
+        if (blog.blogId === blogId) {
+          client.lrem(`blog-posts`, 1, reply[i]);
+          res.end();
+          return;
+        }
+      }
+    });
+  }
+  res.end();
+});
+
 router.post('/api/payments/status/authorise', (req, res) => {
   const apiKey = req.headers['api-key'];
   if (apiKey === undefined || apiKey !== xApiKeyPrivate) {
@@ -355,6 +377,89 @@ router.post('/api/payments/status/reject', (req, res) => {
         if (payment.paymentId === paymentId) {
           payment.status = 'rejected';
           client.lset(`payments`, i, JSON.stringify(payment));
+          res.end();
+          return;
+        }
+      }
+    });
+  }
+  res.end();
+});
+
+router.get('/api/blog-posts', (req, res) => {
+  const apiKey = req.headers['api-key'];
+  if (apiKey === undefined || apiKey !== xApiKeyPub) {
+    res.end();
+    return;
+  }
+  client.lrange(`blog-posts`, 0, -1, (err, reply) => {
+    const result = [];
+    for (let i = 0; i < reply.length; i += 1) {
+      result.push(JSON.parse(reply[i]));
+    }
+    res.send(result);
+  });
+});
+
+router.get('/api/blog-posts/single', (req, res) => {
+  const apiKey = req.headers['api-key'];
+  if (apiKey === undefined || apiKey !== xApiKeyPub) {
+    res.end();
+    return;
+  }
+  const blogId = req.headers.blog_id;
+  client.lrange(`blog-posts`, 0, -1, (err, reply) => {
+    for (let i = 0; i < reply.length; i += 1) {
+      if (JSON.parse(reply[i]).blogId === blogId) {
+        res.send(JSON.parse(reply[i]));
+        return;
+      }
+    }
+    res.send(null);
+  });
+});
+
+router.post('/api/blog-posts', (req, res) => {
+  const apiKey = req.headers['api-key'];
+  if (apiKey === undefined || apiKey !== xApiKeyPrivate) {
+    res.end();
+    return;
+  }
+  const blogName = req.body.blog_name;
+  const blogId = Math.random()
+    .toString(36)
+    .substring(7);
+  const blogContent = req.body.blog_content;
+  client.rpush([
+    `blog-posts`,
+    JSON.stringify({
+      blogId,
+      blogName,
+      blogContent,
+      publishedTimestamp: Date.now(),
+    }),
+  ]);
+  res.send({ blog_id: blogId });
+  res.end();
+});
+
+router.post('/api/blog-posts/update', (req, res) => {
+  const apiKey = req.headers['api-key'];
+  if (apiKey === undefined || apiKey !== xApiKeyPrivate) {
+    res.end();
+    return;
+  }
+  const blogId = req.body.blog_id;
+  const blogName = req.body.blog_name;
+  const blogContent = req.body.blog_content;
+  if (blogId !== undefined) {
+    client.lrange(`blog-posts`, 0, -1, (err, reply) => {
+      for (let i = 0; i < reply.length; i += 1) {
+        const blog = JSON.parse(reply[i]);
+        if (blog.blogId === blogId) {
+          blog.blogContent = blogContent;
+          blog.blogName = blogName;
+          client.lset(`blog-posts`, i, JSON.stringify(blog));
           res.end();
           return;
         }
