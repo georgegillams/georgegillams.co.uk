@@ -1,7 +1,7 @@
 import React from 'react';
 import PersonalDetailsBanner from './HomePageV2Banners/PersonalDetailsBanner';
 import homePageBanner from './HomePageV2Banners/homePageBanner';
-import ArticleCard from '../components/ArticleCard';
+import ArticleCard, { CARD_LAYOUTS } from '../components/ArticleCard';
 import PageSwitchScroller from '../components/PageSwitchScroller';
 import phoneIcon from '../icons/phoneIcon.png';
 import blogIcon from './../icons/blogIcon.jpg';
@@ -52,8 +52,9 @@ const HomePageV2 = () => {
           marginLeft: '-2rem',
         }}
       >
-        <div style={{ padding: '2rem', flex: 1, minWidth: '13rem' }}>
+        <div className={getClassName('pages__compact-card-container')}>
           <ArticleCard
+            layout={CARD_LAYOUTS.narrowCompact}
             day={null}
             month={null}
             className={getClassName('pages__card')}
@@ -62,9 +63,8 @@ const HomePageV2 = () => {
             title="Blog"
             tallLayout
           />
-        </div>
-        <div style={{ padding: '2rem', flex: 1, minWidth: '13rem' }}>
           <ArticleCard
+            layout={CARD_LAYOUTS.narrowCompact}
             day={null}
             month={null}
             className={getClassName('pages__card')}
@@ -73,9 +73,8 @@ const HomePageV2 = () => {
             title="Photos"
             tallLayout
           />
-        </div>
-        <div style={{ padding: '2rem', flex: 1, minWidth: '13rem' }}>
           <ArticleCard
+            layout={CARD_LAYOUTS.narrowCompact}
             day={null}
             month={null}
             className={getClassName('pages__card')}
