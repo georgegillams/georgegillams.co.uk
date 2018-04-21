@@ -1,13 +1,13 @@
 import React from 'react';
 import { BpkSpinner, SPINNER_TYPES } from 'bpk-component-spinner';
 import BpkInput from 'bpk-component-input';
-import Section from '../components/Section';
-import TextLink from '../components/TextLink';
-import SubSection from '../components/SubSection';
-import Button from '../components/Button';
-import DatabaseFunctions from '../DatabaseFunctions';
+import Section from '../../components/Section';
+import TextLink from '../../components/TextLink';
+import SubSection from '../../components/SubSection';
+import Button from '../../components/Button';
+import DatabaseFunctions from '../../DatabaseFunctions';
 
-import STYLES from './pages.scss';
+import STYLES from '../pages.scss';
 
 const getClassName = className => STYLES[className] || 'UNKNOWN';
 
@@ -88,6 +88,20 @@ class AdminPayment extends React.Component {
           }}
         >
           Reject payment
+        </Button>
+        <Button
+          destructive
+          onClick={() => {
+            DatabaseFunctions.deletePayment(
+              apiKey,
+              payment.paymentId,
+              result => {
+                console.log(result);
+              },
+            );
+          }}
+        >
+          Delete payment
         </Button>
       </SubSection>
     );

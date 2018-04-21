@@ -35,6 +35,7 @@
     "express": "^4.16.2",
     "html-minifier": "^3.5.9",
     "ie-version": "^0.1.0",
+    "querystring": "^0.2.0",
     "react-component-academic-reference": "^1.0.5",
     "react-docgen": "^2.20.0",
     "react-github-fork-ribbon": "^0.5.1",
@@ -51,11 +52,9 @@
     "youtube-embed-video": "^1.0.3"
   },
   "scripts": {
-    "start:client:webpack":
-      "webpack-dev-server --port 3000 --config ./webpack.config.babel.js",
+    "start:client:webpack": "webpack-dev-server --port 3000 --config ./webpack.config.babel.js",
     "build:client:webpack": "webpack",
-    "build:server":
-      "babel server.js --ignore node_modules,build --out-dir build && babel ./src/shared/* --ignore node_modules,build --out-dir build && mkdir build/server_content && cp -R ./server_content/* ./build/server_content/",
+    "build:server": "babel server.js --ignore node_modules,build --out-dir build && babel ./src/shared/* --ignore node_modules,build --out-dir build && mkdir build/server_content && cp -R ./server_content/* ./build/server_content/",
     "start:server": "nodemon -r babel-register server.js",
     "start:prod:server": "node build/server.js",
     "start:client": "react-scripts start",
@@ -106,8 +105,7 @@
     "react-dom": "^15.6.2",
     "react-hot-loader": "^4.0.0",
     "sass-loader": "^6.0.6",
-    "static-site-generator-webpack-plugin":
-      "github:skyscanner/static-site-generator-webpack-plugin#7bac616",
+    "static-site-generator-webpack-plugin": "github:skyscanner/static-site-generator-webpack-plugin#7bac616",
     "style-loader": "^0.20.1",
     "stylelint": "^9.1.1",
     "stylelint-config-skyscanner": "^2.0.0-beta.2",
