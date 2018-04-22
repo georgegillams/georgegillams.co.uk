@@ -22,8 +22,8 @@ class Payment extends React.Component {
   }
 
   componentDidMount() {
+    const paymentId = `${window.location}`.split('?')[1].split('=')[1];
     const getPayment = () => {
-      const paymentId = `${window.location}`.split('?')[1].split('=')[1];
       DatabaseFunctions.getPayment(paymentId, result => {
         this.setState({ payment: result });
       });
