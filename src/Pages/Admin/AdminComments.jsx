@@ -1,12 +1,9 @@
 import React from 'react';
-import { BpkSpinner, SPINNER_TYPES } from 'bpk-component-spinner';
-import BpkInput from 'bpk-component-input';
-import Section from '../components/Section';
-import SubSection from '../components/SubSection';
-import Button from '../components/Button';
-import DatabaseFunctions from '../DatabaseFunctions';
+import SubSection from '../../components/SubSection';
+import Button from '../../components/Button';
+import DatabaseFunctions from '../../DatabaseFunctions';
 
-import STYLES from './pages.scss';
+import STYLES from '../pages.scss';
 
 const getClassName = className => STYLES[className] || 'UNKNOWN';
 
@@ -19,7 +16,7 @@ class AdminComments extends React.Component {
 
   componentDidMount() {
     const getComments = () => {
-      DatabaseFunctions.getComments(this.props.pageId, (results) => {
+      DatabaseFunctions.getComments(this.props.pageId, results => {
         this.setState({ comments: results });
       });
     };
@@ -29,9 +26,7 @@ class AdminComments extends React.Component {
   }
 
   render() {
-    const {
-      apiKey, pageId, className, ...rest
-    } = this.props;
+    const { apiKey, pageId, className, ...rest } = this.props;
 
     const classNameFinal = [];
     if (className) classNameFinal.push(className);
@@ -46,9 +41,15 @@ class AdminComments extends React.Component {
             <Button
               destructive
               onClick={() => {
-                DatabaseFunctions.deleteComment(apiKey, pageId, null, c.commentId, (result) => {
-                  console.log(result);
-                });
+                DatabaseFunctions.deleteComment(
+                  apiKey,
+                  pageId,
+                  null,
+                  c.commentId,
+                  result => {
+                    console.log(result);
+                  },
+                );
               }}
             >
               Delete comment

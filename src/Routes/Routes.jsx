@@ -3,7 +3,8 @@ import { Route, BrowserRouter, Switch, Redirect } from 'react-router-dom';
 import DefaultLayout from '../components/DefaultLayout';
 
 import HomePage from '../Pages/HomePageV2';
-import Admin from '../Pages/Admin';
+import Admin from '../Pages/Admin/Admin';
+import BlogEditorPage from '../Pages/Admin/BlogEditorPage';
 import Work from '../Pages/Work/Work';
 import PasswordCharacterExtractor from '../Pages/Work/PasswordCharacterExtractor';
 import BpkComponentDemo from '../Pages/Work/BpkComponentDemoPage';
@@ -99,6 +100,7 @@ const Routes = (
         <Route path="/example-teapot" component={TeaPot} />
         <Route path="/example-404" component={ForOhFour} />
         <Route exact path="/admin" component={Admin} />
+        <Route exact path="/admin/blog-editor" component={BlogEditorPage} />
         <Route component={ForOhFour} />
       </Switch>
     </DefaultLayout>

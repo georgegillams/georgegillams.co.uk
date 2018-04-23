@@ -1,14 +1,15 @@
 import React from 'react';
 import { BpkSpinner, SPINNER_TYPES } from 'bpk-component-spinner';
 import BpkInput, { INPUT_TYPES } from 'bpk-component-input';
-import Section from '../components/Section';
-import SubSection from '../components/SubSection';
-import Button from '../components/Button';
-import DatabaseFunctions from '../DatabaseFunctions';
+import Section from '../../components/Section';
+import SubSection from '../../components/SubSection';
+import Button from '../../components/Button';
+import DatabaseFunctions from '../../DatabaseFunctions';
 import AdminComments from './AdminComments';
 import AdminPayment from './AdminPayment';
+import AdminBlog from './AdminBlog';
 
-import STYLES from './pages.scss';
+import STYLES from '../pages.scss';
 
 const getClassName = className => STYLES[className] || 'UNKNOWN';
 
@@ -20,6 +21,7 @@ class Admin extends React.Component {
       paymentsCount: 0,
       pageIds: [],
       payments: [],
+      blogs: [],
       apiKey: '',
       pattern: '',
     };
@@ -41,10 +43,17 @@ class Admin extends React.Component {
         });
       }
     };
+    const getBlogs = () => {
+      DatabaseFunctions.getBlogs(result => {
+        this.setState({ blogs: result });
+      });
+    };
 
     getPayments();
     getPageIds();
+    getBlogs();
     setInterval(getPayments, 2000);
+    setInterval(getBlogs, 2000);
     setInterval(getPageIds, 2000);
   }
 
@@ -55,9 +64,9 @@ class Admin extends React.Component {
     if (className) classNameFinal.push(className);
 
     const pageIdList = (
-      <SubSection name="Page IDs">
+      <Section name="Page IDs">
         {this.state.pageIds.map(c => <div>{c}</div>)}
-      </SubSection>
+      </Section>
     );
 
     return (
@@ -118,12 +127,31 @@ class Admin extends React.Component {
         <br />
         <br />
         <br />
-        <SubSection name="Payments">
+        <Section name="Payments">
           {this.state.paymentsCount}
           {this.state.payments.map(p => (
             <AdminPayment apiKey={this.state.apiKey} payment={p} />
           ))}
-        </SubSection>
+        </Section>
+        <Section name="Blogs">
+          {this.state.blogs.map(b => (
+            <AdminBlog apiKey={this.state.apiKey} blog={b} />
+          ))}
+          <Button
+            onClick={() => {
+              DatabaseFunctions.addBlog(this.state.apiKey, result => {
+                console.log(result);
+                if (result && result.blog_id) {
+                  this.props.history.push(
+                    `/admin/blog-editor?id=${result.blog_id}`,
+                  );
+                }
+              });
+            }}
+          >
+            Add blog
+          </Button>
+        </Section>
       </Section>
     );
   }
