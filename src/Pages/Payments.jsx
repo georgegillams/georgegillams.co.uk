@@ -1,13 +1,10 @@
 import React from 'react';
 import { withRouter } from 'react-router-dom';
 import BpkBannerAlert, { ALERT_TYPES } from 'bpk-component-banner-alert';
-import { BpkSpinner, SPINNER_TYPES } from 'bpk-component-spinner';
-import BpkInput, { INPUT_TYPES } from 'bpk-component-input';
+import BpkInput from 'bpk-component-input';
 import Section from '../components/Section';
-import SubSection from '../components/SubSection';
 import Button from '../components/Button';
 import DatabaseFunctions from '../DatabaseFunctions';
-import AdminComments from './AdminComments';
 import TextLink from '../components/TextLink';
 import {
   DECIMAL_REGEX,
