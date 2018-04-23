@@ -41,6 +41,119 @@ class DatabaseFunctions {
     });
   }
 
+  static getBlogs(cb) {
+    const options = {
+      method: 'GET',
+      url: `${url}/api/blog-posts`,
+      headers: { 'Api-Key': apiKey },
+    };
+
+    request(options, (error, response, body) => {
+      if (error) throw new Error(error);
+      try {
+        cb(JSON.parse(body));
+      } catch (e) {
+        cb([]);
+      }
+    });
+  }
+
+  static getBlog(blogId, cb) {
+    const options = {
+      method: 'GET',
+      url: `${url}/api/blog-posts/single`,
+      headers: { 'Api-Key': apiKey, blog_id: blogId },
+    };
+
+    request(options, (error, response, body) => {
+      if (error) throw new Error(error);
+      try {
+        cb(JSON.parse(body));
+      } catch (e) {
+        cb([]);
+      }
+    });
+  }
+
+  static updateBlog(privateApiKey, blog, cb) {
+    const options = {
+      method: 'POST',
+      url: `${url}/api/blog-posts/update`,
+      headers: { 'Api-Key': privateApiKey },
+      body: {
+        blog_id: blog.blogId,
+        blog_name: blog.blogName,
+        blog_content: blog.blogContent,
+      },
+      json: true,
+    };
+
+    request(options, (error, response, body) => {
+      if (error) throw new Error(error);
+      cb(body);
+    });
+  }
+
+  static addBlog(privateApiKey, cb) {
+    const options = {
+      method: 'POST',
+      url: `${url}/api/blog-posts`,
+      headers: { 'Api-Key': privateApiKey },
+      body: {
+        blog_name: 'new blog',
+        blog_content: '',
+      },
+      json: true,
+    };
+
+    request(options, (error, response, body) => {
+      if (error) throw new Error(error);
+      cb(body);
+    });
+  }
+
+  static deleteBlog(privateApiKey, blogId, cb) {
+    const options = {
+      method: 'DELETE',
+      url: `${url}/api/blog-posts`,
+      headers: {
+        'Api-Key': privateApiKey,
+      },
+      body: {
+        blog_id: blogId,
+      },
+      json: true,
+    };
+
+    request(options, (error, response, body) => {
+      if (error) {
+        throw new Error(error);
+      }
+      cb(body);
+    });
+  }
+
+  static deletePayment(privateApiKey, paymentId, cb) {
+    const options = {
+      method: 'DELETE',
+      url: `${url}/api/payments`,
+      headers: {
+        'Api-Key': privateApiKey,
+      },
+      body: {
+        payment_id: paymentId,
+      },
+      json: true,
+    };
+
+    request(options, (error, response, body) => {
+      if (error) {
+        throw new Error(error);
+      }
+      cb(body);
+    });
+  }
+
   static postNewComment(pageId, commenterName, comment, cb) {
     const options = {
       method: 'POST',
