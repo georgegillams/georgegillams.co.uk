@@ -78,7 +78,7 @@ class Payments extends React.Component {
             name="Reference"
             value={this.state.reference}
             onChange={event => this.setState({ reference: event.target.value })}
-            placeholder="Reference"
+            placeholder="Reference / name"
           />
           <br />
           <BpkInput
@@ -97,6 +97,17 @@ class Payments extends React.Component {
           />
           <br />
           <BpkInput
+            valid={this.state.sortCode.match(SORT_CODE_REGEX)}
+            disabled={this.state.monzoMeLink !== ''}
+            className={getClassName('pages__card')}
+            id="sortCode"
+            name="Sort Code"
+            value={this.state.sortCode}
+            onChange={event => this.setState({ sortCode: event.target.value })}
+            placeholder="Sort Code"
+          />
+          <br />
+          <BpkInput
             valid={this.state.accountNumber.match(INT_REGEX)}
             disabled={this.state.monzoMeLink !== ''}
             className={getClassName('pages__card')}
@@ -107,17 +118,6 @@ class Payments extends React.Component {
               this.setState({ accountNumber: event.target.value })
             }
             placeholder="Account Number"
-          />
-          <br />
-          <BpkInput
-            valid={this.state.sortCode.match(SORT_CODE_REGEX)}
-            disabled={this.state.monzoMeLink !== ''}
-            className={getClassName('pages__card')}
-            id="sortCode"
-            name="Sort Code"
-            value={this.state.sortCode}
-            onChange={event => this.setState({ sortCode: event.target.value })}
-            placeholder="Sort Code"
           />
           <br />
           <Button
