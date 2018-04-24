@@ -44,7 +44,7 @@ class Admin extends React.Component {
       }
     };
     const getBlogs = () => {
-      DatabaseFunctions.getBlogs(result => {
+      DatabaseFunctions.getBlogs(this.state.apiKey, result => {
         this.setState({ blogs: result });
       });
     };

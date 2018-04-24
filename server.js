@@ -388,14 +388,20 @@ router.post('/api/payments/status/reject', (req, res) => {
 
 router.get('/api/blog-posts', (req, res) => {
   const apiKey = req.headers['api-key'];
-  if (apiKey === undefined || apiKey !== xApiKeyPub) {
+  if (
+    apiKey === undefined ||
+    !(apiKey === xApiKeyPub || apiKey === xApiKeyPrivate)
+  ) {
     res.end();
     return;
   }
   client.lrange(`blog-posts`, 0, -1, (err, reply) => {
     const result = [];
     for (let i = 0; i < reply.length; i += 1) {
-      result.push(JSON.parse(reply[i]));
+      const blog = JSON.parse(reply[i]);
+      if (apiKey === xApiKeyPrivate || blog.blogPublished) {
+        result.push(blog);
+      }
     }
     res.send(result);
   });
@@ -403,16 +409,24 @@ router.get('/api/blog-posts', (req, res) => {
 
 router.get('/api/blog-posts/single', (req, res) => {
   const apiKey = req.headers['api-key'];
-  if (apiKey === undefined || apiKey !== xApiKeyPub) {
+  if (
+    apiKey === undefined ||
+    !(apiKey === xApiKeyPub || apiKey === xApiKeyPrivate)
+  ) {
     res.end();
     return;
   }
   const blogId = req.headers.blog_id;
   client.lrange(`blog-posts`, 0, -1, (err, reply) => {
     for (let i = 0; i < reply.length; i += 1) {
-      if (JSON.parse(reply[i]).blogId === blogId) {
-        res.send(JSON.parse(reply[i]));
-        return;
+      const blog = JSON.parse(reply[i]);
+      if (blog.blogId === blogId) {
+        // TODO If private api key, return blog
+        // TODO Else if public api key, return only if published
+        if (apiKey === xApiKeyPrivate || blog.blogPublished) {
+          res.send(JSON.parse(reply[i]));
+          return;
+        }
       }
     }
     res.send(null);
@@ -431,6 +445,7 @@ router.post('/api/blog-posts', (req, res) => {
     .substring(7);
   const blogContent = req.body.blog_content;
   const blogTags = req.body.blog_tags;
+  const blogPublished = req.body.blog_published;
   client.rpush([
     `blog-posts`,
     JSON.stringify({
@@ -438,6 +453,7 @@ router.post('/api/blog-posts', (req, res) => {
       blogName,
       blogContent,
       blogTags,
+      blogPublished,
       publishedTimestamp: Date.now(),
     }),
   ]);
@@ -455,6 +471,7 @@ router.post('/api/blog-posts/update', (req, res) => {
   const blogName = req.body.blog_name;
   const blogContent = req.body.blog_content;
   const blogTags = req.body.blog_tags;
+  const blogPublished = req.body.blog_published;
   if (blogId !== undefined) {
     client.lrange(`blog-posts`, 0, -1, (err, reply) => {
       for (let i = 0; i < reply.length; i += 1) {
@@ -463,6 +480,7 @@ router.post('/api/blog-posts/update', (req, res) => {
           blog.blogContent = blogContent;
           blog.blogName = blogName;
           blog.blogTags = blogTags;
+          blog.blogPublished = blogPublished;
           client.lset(`blog-posts`, i, JSON.stringify(blog));
           return;
         }
