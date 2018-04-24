@@ -34,21 +34,21 @@ class BlogEditorPage extends React.Component {
       if (props !== undefined) {
         const blogId = props.id;
         const getBlog = () => {
-          DatabaseFunctions.getBlog(blogId, result => {
+          if (this.state.blog) {
+            return;
+          }
+          DatabaseFunctions.getBlog(this.state.apiKey, blogId, result => {
             this.setState({ blog: result });
           });
         };
 
         getBlog();
+        setInterval(getBlog, 2000);
       }
     }
   }
 
   render() {
-    if (!this.state.blog) {
-      return null;
-    }
-
     let statusMessage = '';
     if (this.state.updateResult === undefined) {
       statusMessage = 'Blog was unable to be saved. Check the private API Key';
@@ -72,49 +72,55 @@ class BlogEditorPage extends React.Component {
           id="apiKey"
           name="API Key"
           value={this.state.apiKey}
-          onChange={event => this.setState({ apiKey: event.target.value })}
+          onChange={event =>
+            this.setState({ apiKey: event.target.value, blog: null })
+          }
           placeholder="API Key"
         />
-        <Button
-          disabled={!this.state.dirty}
-          className={getClassName('pages__card')}
-          onClick={() => {
-            DatabaseFunctions.updateBlog(
-              this.state.apiKey,
-              this.state.blog,
-              result => {
-                this.setState({
-                  dirty: result ? false : this.state.dirty,
-                  updateResult: result,
-                });
-              },
-            );
-          }}
-          style={{ width: '100%' }}
-        >
-          {this.state.dirty ? 'Save changes' : 'No changes to save'}
-        </Button>
-        <div className={getClassName('blog-editor')}>
-          <BlogEditor
-            className={getClassName('blog-editor__component')}
-            elementClassName={getClassName(
-              'blog-editor__component__editor-element',
-            )}
-            blog={this.state.blog}
-            onBlogChanged={b => {
-              this.setState({ dirty: true, blog: b });
+        {this.state.blog && (
+          <Button
+            disabled={!this.state.dirty}
+            className={getClassName('pages__card')}
+            onClick={() => {
+              DatabaseFunctions.updateBlog(
+                this.state.apiKey,
+                this.state.blog,
+                result => {
+                  this.setState({
+                    dirty: result ? false : this.state.dirty,
+                    updateResult: result,
+                  });
+                },
+              );
             }}
-          />
-          <BlogPreview
-            className={getClassName('blog-editor__component')}
-            elementClassName={getClassName(
-              'blog-editor__component__preview-element',
-            )}
-            blog={this.state.blog}
-            light
-            noAnchor
-          />
-        </div>
+            style={{ width: '100%' }}
+          >
+            {this.state.dirty ? 'Save changes' : 'No changes to save'}
+          </Button>
+        )}
+        {this.state.blog && (
+          <div className={getClassName('blog-editor')}>
+            <BlogEditor
+              className={getClassName('blog-editor__component')}
+              elementClassName={getClassName(
+                'blog-editor__component__editor-element',
+              )}
+              blog={this.state.blog}
+              onBlogChanged={b => {
+                this.setState({ dirty: true, blog: b });
+              }}
+            />
+            <BlogPreview
+              className={getClassName('blog-editor__component')}
+              elementClassName={getClassName(
+                'blog-editor__component__preview-element',
+              )}
+              blog={this.state.blog}
+              light
+              noAnchor
+            />
+          </div>
+        )}
         <Prompt
           when={this.state.dirty}
           message={location =>

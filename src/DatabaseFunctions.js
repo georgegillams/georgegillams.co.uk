@@ -41,11 +41,13 @@ class DatabaseFunctions {
     });
   }
 
-  static getBlogs(cb) {
+  static getBlogs(privateApiKey, cb) {
     const options = {
       method: 'GET',
       url: `${url}/api/blog-posts`,
-      headers: { 'Api-Key': apiKey },
+      headers: {
+        'Api-Key': privateApiKey === '' ? apiKey : privateApiKey,
+      },
     };
 
     request(options, (error, response, body) => {
@@ -58,11 +60,14 @@ class DatabaseFunctions {
     });
   }
 
-  static getBlog(blogId, cb) {
+  static getBlog(privateApiKey, blogId, cb) {
     const options = {
       method: 'GET',
       url: `${url}/api/blog-posts/single`,
-      headers: { 'Api-Key': apiKey, blog_id: blogId },
+      headers: {
+        'Api-Key': privateApiKey === '' ? apiKey : privateApiKey,
+        blog_id: blogId,
+      },
     };
 
     request(options, (error, response, body) => {
@@ -85,6 +90,7 @@ class DatabaseFunctions {
         blog_name: blog.blogName,
         blog_content: blog.blogContent,
         blog_tags: blog.blogTags,
+        blog_published: blog.blogPublished,
       },
       json: true,
     };
@@ -104,6 +110,7 @@ class DatabaseFunctions {
         blog_name: 'new blog',
         blog_content: '',
         blog_tags: [],
+        blog_published: false,
       },
       json: true,
     };
