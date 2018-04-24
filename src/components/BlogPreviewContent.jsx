@@ -2,6 +2,7 @@ import PropTypes from 'prop-types';
 import React from 'react';
 import TextLink from './TextLink';
 import Strikethrough from './Strikethrough';
+import Quote from './Quote';
 import SubSection from './SubSection';
 
 import STYLES from './blog-viewer.scss';
@@ -11,6 +12,8 @@ const getClassName = className => STYLES[className] || 'UNKNOWN';
 const MD_LINK_REGEX = /(.*)\[([^\[\]]*)\]\(([^\(\)]*)\)(.*)/gi;
 const MD_LINK_BIG_REGEX = /(.*)!\[([^\[\]]*)\]\(([^\(\)]*)\)(.*)/gi;
 const MD_STRIKETHROUGH_REGEX = /(.*)~([^~]*)~(.*)/gi;
+const MD_BOLD_REGEX = /(.*)\*\*([^\*]*)\*\*(.*)/gi;
+const MD_QUOTATION_REGEX = /(.*)\>([^\>\<]*)\<(.*)/gi;
 
 // This component works recursively. Each time it checks for a feature (such as a link, stikethrough etc)
 // At each stage, if it finds one it renders the appropriate component, passing the surrounding text to
@@ -39,11 +42,37 @@ const BlogPreviewContent = props => {
     return null;
   }
 
+  // If it's bold, return a TextLink component:
+  const mdBold = content.split(MD_BOLD_REGEX);
+  if (mdBold.length > 2) {
+    console.log(content);
+    console.log(content.split(MD_BOLD_REGEX));
+    const preBoldText = `${mdBold.shift()} ${mdBold.shift()}`;
+    const boldText = mdBold.shift();
+    const postBoldText = mdBold.join('');
+    return (
+      <span className={classNameFinal.join(' ')} {...rest}>
+        <BlogPreviewContent
+          elementClassName={elementClassName}
+          content={preBoldText}
+        />
+        <span
+          style={{ fontWeight: 'bold' }}
+          className={elementClassNameFinal.join(' ')}
+        >
+          {boldText}
+        </span>
+        <BlogPreviewContent
+          elementClassName={elementClassName}
+          content={postBoldText}
+        />
+      </span>
+    );
+  }
+
   // If it's a strikethrough, return a TextLink component:
   const mdStrikethrough = content.split(MD_STRIKETHROUGH_REGEX);
   if (mdStrikethrough.length > 2) {
-    console.log(content);
-    console.log(content.split(MD_STRIKETHROUGH_REGEX));
     const preStrikeText = `${mdStrikethrough.shift()} ${mdStrikethrough.shift()}`;
     const strikenText = mdStrikethrough.shift();
     const postStrikeText = mdStrikethrough.join('');
@@ -59,6 +88,29 @@ const BlogPreviewContent = props => {
         <BlogPreviewContent
           elementClassName={elementClassName}
           content={postStrikeText}
+        />
+      </span>
+    );
+  }
+
+  // If it's a quotation, return a TextLink component:
+  const mdQuotation = content.split(MD_QUOTATION_REGEX);
+  if (mdQuotation.length > 2) {
+    const preQuotationText = `${mdQuotation.shift()} ${mdQuotation.shift()}`;
+    const quotation = mdQuotation.shift();
+    const postQuotationText = mdQuotation.join('');
+    return (
+      <span className={classNameFinal.join(' ')} {...rest}>
+        <BlogPreviewContent
+          elementClassName={elementClassName}
+          content={preQuotationText}
+        />
+        <Quote className={null /* elementClassNameFinal.join(' ') */}>
+          {quotation}
+        </Quote>
+        <BlogPreviewContent
+          elementClassName={elementClassName}
+          content={postQuotationText}
         />
       </span>
     );
