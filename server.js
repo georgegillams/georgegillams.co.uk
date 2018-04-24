@@ -430,12 +430,14 @@ router.post('/api/blog-posts', (req, res) => {
     .toString(36)
     .substring(7);
   const blogContent = req.body.blog_content;
+  const blogTags = req.body.blog_tags;
   client.rpush([
     `blog-posts`,
     JSON.stringify({
       blogId,
       blogName,
       blogContent,
+      blogTags,
       publishedTimestamp: Date.now(),
     }),
   ]);
@@ -452,6 +454,7 @@ router.post('/api/blog-posts/update', (req, res) => {
   const blogId = req.body.blog_id;
   const blogName = req.body.blog_name;
   const blogContent = req.body.blog_content;
+  const blogTags = req.body.blog_tags;
   if (blogId !== undefined) {
     client.lrange(`blog-posts`, 0, -1, (err, reply) => {
       for (let i = 0; i < reply.length; i += 1) {
@@ -459,6 +462,7 @@ router.post('/api/blog-posts/update', (req, res) => {
         if (blog.blogId === blogId) {
           blog.blogContent = blogContent;
           blog.blogName = blogName;
+          blog.blogTags = blogTags;
           client.lset(`blog-posts`, i, JSON.stringify(blog));
           return;
         }
