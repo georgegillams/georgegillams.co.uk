@@ -2,7 +2,9 @@
 
 .blog-editor {
   display: flex;
+  width: 96vw;
   margin-bottom: 2rem;
+  margin-left: calc(-48vw + 50%);
   justify-content: space-between;
 
   &__component {
