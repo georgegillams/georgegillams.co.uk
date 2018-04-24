@@ -2,12 +2,14 @@ import PropTypes from 'prop-types';
 import React from 'react';
 import TextLink from './TextLink';
 import Strikethrough from './Strikethrough';
+import SubSection from './SubSection';
 
 import STYLES from './blog-viewer.scss';
 
 const getClassName = className => STYLES[className] || 'UNKNOWN';
 
 const MD_LINK_REGEX = /(.*)\[([^\[\]]*)\]\(([^\(\)]*)\)(.*)/gi;
+const MD_LINK_BIG_REGEX = /(.*)!\[([^\[\]]*)\]\(([^\(\)]*)\)(.*)/gi;
 const MD_STRIKETHROUGH_REGEX = /(.*)~([^~]*)~(.*)/gi;
 
 // This component works recursively. Each time it checks for a feature (such as a link, stikethrough etc)
@@ -62,6 +64,41 @@ const BlogPreviewContent = props => {
     );
   }
 
+  // If it's a **BIG** hyperlink, return a TextLink component:
+  const mdBigLink = content.split(MD_LINK_BIG_REGEX);
+  if (mdBigLink.length > 3) {
+    const preLinkText = `${mdBigLink.shift()} ${mdBigLink.shift()}`;
+    const linkText = mdBigLink.shift();
+    const linkRef = mdBigLink.shift();
+    const postLinkText = mdBigLink.join('');
+    const external = linkRef.includes('.');
+    return (
+      <span className={classNameFinal.join(' ')} {...rest}>
+        <BlogPreviewContent
+          elementClassName={elementClassName}
+          content={preLinkText}
+        />
+        <a
+          className={getClassName('pages__link')}
+          href={linkRef}
+          rel={external ? 'noopener noreferrer' : ''}
+          target={external ? '_blank' : ''}
+        >
+          <SubSection
+            className={elementClassNameFinal.join(' ')}
+            noAnchor
+            name={linkText}
+            link
+          />
+        </a>
+        <BlogPreviewContent
+          elementClassName={elementClassName}
+          content={postLinkText}
+        />
+      </span>
+    );
+  }
+
   // If it's a hyperlink, return a TextLink component:
   const mdLink = content.split(MD_LINK_REGEX);
   if (mdLink.length > 3) {
@@ -69,14 +106,16 @@ const BlogPreviewContent = props => {
     const linkText = mdLink.shift();
     const linkRef = mdLink.shift();
     const postLinkText = mdLink.join('');
+    const external = linkRef.includes('.');
     return (
       <span className={classNameFinal.join(' ')} {...rest}>
         <BlogPreviewContent
           elementClassName={elementClassName}
           content={preLinkText}
         />
-        <TextLink inline href={linkRef}>
+        <TextLink external={external} inline href={linkRef}>
           {linkText}
+          {external ? ' ' : ''}
         </TextLink>
         <BlogPreviewContent
           elementClassName={elementClassName}
