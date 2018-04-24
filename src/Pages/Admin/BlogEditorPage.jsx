@@ -1,6 +1,8 @@
 import React from 'react';
 import BpkInput, { INPUT_TYPES } from 'bpk-component-input';
+import BpkBannerAlert, { ALERT_TYPES } from 'bpk-component-banner-alert';
 import querystring from 'querystring';
+import { Prompt } from 'react-router-dom';
 import BlogEditor from '../../components/BlogEditor';
 import BlogPreview from '../../components/BlogPreview';
 import Button from '../../components/Button';
@@ -19,6 +21,8 @@ class BlogEditorPage extends React.Component {
     this.state = {
       blog: null,
       apiKey: '',
+      updateResult: null,
+      dirty: false,
     };
   }
 
@@ -45,8 +49,23 @@ class BlogEditorPage extends React.Component {
       return null;
     }
 
+    let statusMessage = '';
+    if (this.state.updateResult === undefined) {
+      statusMessage = 'Blog was unable to be saved. Check the private API Key';
+    } else if (this.state.updateResult) {
+      statusMessage = `Blog ${this.state.updateResult.blog_id} saved!`;
+    }
+
     return (
       <div style={{ width: '100%' }}>
+        <BpkBannerAlert
+          message={statusMessage}
+          show={this.state.updateResult !== null}
+          type={
+            this.state.updateResult ? ALERT_TYPES.SUCCESS : ALERT_TYPES.ERROR
+          }
+          className={getClassName('pages__card')}
+        />
         <BpkInput
           className={getClassName('pages__card')}
           type={INPUT_TYPES.PASSWORD}
@@ -56,6 +75,25 @@ class BlogEditorPage extends React.Component {
           onChange={event => this.setState({ apiKey: event.target.value })}
           placeholder="API Key"
         />
+        <Button
+          disabled={!this.state.dirty}
+          className={getClassName('pages__card')}
+          onClick={() => {
+            DatabaseFunctions.updateBlog(
+              this.state.apiKey,
+              this.state.blog,
+              result => {
+                this.setState({
+                  dirty: result ? false : this.state.dirty,
+                  updateResult: result,
+                });
+              },
+            );
+          }}
+          style={{ width: '100%' }}
+        >
+          {this.state.dirty ? 'Save changes' : 'No changes to save'}
+        </Button>
         <div className={getClassName('blog-editor')}>
           <BlogEditor
             className={getClassName('blog-editor__component')}
@@ -64,7 +102,7 @@ class BlogEditorPage extends React.Component {
             )}
             blog={this.state.blog}
             onBlogChanged={b => {
-              this.setState({ blog: b });
+              this.setState({ dirty: true, blog: b });
             }}
           />
           <BlogPreview
@@ -77,20 +115,12 @@ class BlogEditorPage extends React.Component {
             noAnchor
           />
         </div>
-        <Button
-          onClick={() => {
-            DatabaseFunctions.updateBlog(
-              this.state.apiKey,
-              this.state.blog,
-              result => {
-                console.log(result);
-              },
-            );
-          }}
-          style={{ width: '100%' }}
-        >
-          Save changes
-        </Button>
+        <Prompt
+          when={this.state.dirty}
+          message={location =>
+            `Are you sure you want to go to ${location.pathname}`
+          }
+        />
       </div>
     );
   }
