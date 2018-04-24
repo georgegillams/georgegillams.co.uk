@@ -1,10 +1,10 @@
 import PropTypes from 'prop-types';
 import React, { Component } from 'react';
-import Section from './Section';
-import TagFilter from './TagFilter';
 import BpkInput from 'bpk-component-input';
 import BpkTextArea from 'bpk-component-textarea';
 import { withRouter } from 'react-router-dom';
+import BpkCheckBox from 'bpk-component-checkbox';
+import TagFilter from './TagFilter';
 
 import STYLES from './article-date.scss';
 
@@ -28,6 +28,12 @@ class BlogEditor extends Component {
   onBlogTagsChanged = event => {
     const newBlog = JSON.parse(JSON.stringify(this.props.blog));
     newBlog.blogTags = event.target.value.split(' ');
+    this.props.onBlogChanged(newBlog);
+  };
+
+  onBlogPublishedChanged = event => {
+    const newBlog = JSON.parse(JSON.stringify(this.props.blog));
+    newBlog.blogPublished = event.target.checked;
     this.props.onBlogChanged(newBlog);
   };
 
@@ -69,6 +75,13 @@ class BlogEditor extends Component {
           value={blog.blogTags ? blog.blogTags.join(' ') : 'photography'}
           onChange={this.onBlogTagsChanged}
           placeholder="Blog tags"
+        />
+        <BpkCheckBox
+          className={elementClassNameFinal.join(' ')}
+          label="published"
+          name="published"
+          checked={blog.blogPublished}
+          onChange={this.onBlogPublishedChanged}
         />
         <BpkTextArea
           style={{ minHeight: '45rem' }}
