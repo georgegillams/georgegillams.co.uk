@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 import React from 'react';
-import BlogPreviewSection from './BlogPreviewSection';
+import BlogRenderer from './BlogRenderer';
 
 import STYLES from './article-date.scss';
 
@@ -18,14 +18,9 @@ const BlogPreview = props => {
     elementClassNameFinal.push(elementClassName);
   }
 
-  const blogContent = `\n# ${blog.blogName}\n${blog.blogContent}`;
-
-  if (!blogContent || blogContent === '') {
+  if (!blog) {
     return null;
   }
-
-  const blogSections = blogContent.split('\n# ');
-  blogSections.shift();
 
   return (
     <div
@@ -33,14 +28,12 @@ const BlogPreview = props => {
       style={{ backgroundColor: 'black' }}
       {...rest}
     >
-      {blogSections.map(s => (
-        <BlogPreviewSection
-          blogSection={s}
-          elementClassName={elementClassName}
-          light={light}
-          noAnchor={noAnchor}
-        />
-      ))}
+      <BlogRenderer
+        blog={blog}
+        elementClassName={elementClassNameFinal.join(' ')}
+        light={light}
+        noAnchor={noAnchor}
+      />
     </div>
   );
 };
