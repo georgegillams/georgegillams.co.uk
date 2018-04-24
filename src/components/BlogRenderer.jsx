@@ -40,9 +40,10 @@ const BlogRenderer = props => {
       >
         <ScrollIndicator />
         <PageSwitchScroller />
-        {blog.blogTags.map(g => (
-          <Tag type={g} link style={{ marginBottom: '0.5rem' }} />
-        ))}
+        {blog.blogTags &&
+          blog.blogTags.map(g => (
+            <Tag type={g} link style={{ marginBottom: '0.5rem' }} />
+          ))}
         {blogSections.map(s => (
           <BlogPreviewSection
             blogSection={s}
