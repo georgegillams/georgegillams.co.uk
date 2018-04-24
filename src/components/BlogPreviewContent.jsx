@@ -1,12 +1,14 @@
 import PropTypes from 'prop-types';
 import React from 'react';
 import TextLink from './TextLink';
+import Strikethrough from './Strikethrough';
 
-import STYLES from './article-date.scss';
+import STYLES from './blog-viewer.scss';
 
 const getClassName = className => STYLES[className] || 'UNKNOWN';
 
-const MD_LINK_REGEX = /\[([^\[\]]*)\]\(([^\(\)]*)\)/gi;
+const MD_LINK_REGEX = /(.*)\[([^\[\]]*)\]\(([^\(\)]*)\)(.*)/gi;
+const MD_STRIKETHROUGH_REGEX = /(.*)~([^~]*)~(.*)/gi;
 
 // This component works recursively. Each time it checks for a feature (such as a link, stikethrough etc)
 // At each stage, if it finds one it renders the appropriate component, passing the surrounding text to
@@ -26,7 +28,7 @@ const BlogPreviewContent = props => {
   if (className) {
     classNameFinal.push(className);
   }
-  const elementClassNameFinal = [getClassName('pages__card')];
+  const elementClassNameFinal = [getClassName('blog-viewer__element')];
   if (elementClassName) {
     elementClassNameFinal.push(elementClassName);
   }
@@ -35,32 +37,69 @@ const BlogPreviewContent = props => {
     return null;
   }
 
-  const contentParts = content.split('\n');
+  // If it's a strikethrough, return a TextLink component:
+  const mdStrikethrough = content.split(MD_STRIKETHROUGH_REGEX);
+  if (mdStrikethrough.length > 2) {
+    console.log(content);
+    console.log(content.split(MD_STRIKETHROUGH_REGEX));
+    const preStrikeText = `${mdStrikethrough.shift()} ${mdStrikethrough.shift()}`;
+    const strikenText = mdStrikethrough.shift();
+    const postStrikeText = mdStrikethrough.join('');
+    return (
+      <span className={classNameFinal.join(' ')} {...rest}>
+        <BlogPreviewContent
+          elementClassName={elementClassName}
+          content={preStrikeText}
+        />
+        <Strikethrough className={elementClassNameFinal.join(' ')}>
+          {strikenText}
+        </Strikethrough>
+        <BlogPreviewContent
+          elementClassName={elementClassName}
+          content={postStrikeText}
+        />
+      </span>
+    );
+  }
 
+  // If it's a hyperlink, return a TextLink component:
   const mdLink = content.split(MD_LINK_REGEX);
   if (mdLink.length > 3) {
-    console.log(content);
-    console.log(content.split(MD_LINK_REGEX));
-    const preLinkText = mdLink.shift();
+    const preLinkText = `${mdLink.shift()} ${mdLink.shift()}`;
     const linkText = mdLink.shift();
     const linkRef = mdLink.shift();
     const postLinkText = mdLink.join('');
     return (
-      <div className={classNameFinal.join(' ')} {...rest}>
+      <span className={classNameFinal.join(' ')} {...rest}>
+        <BlogPreviewContent
+          elementClassName={elementClassName}
+          content={preLinkText}
+        />
         <TextLink inline href={linkRef}>
           {linkText}
         </TextLink>
-      </div>
+        <BlogPreviewContent
+          elementClassName={elementClassName}
+          content={postLinkText}
+        />
+      </span>
     );
   }
 
   // Otherwise we just return the block of text:
+  const contentParts = content.split('\n');
+
   return (
-    <div className={classNameFinal.join(' ')} {...rest}>
-      {contentParts.map(s => (
-        <p className={elementClassNameFinal.join(' ')}>{s}</p>
-      ))}
-    </div>
+    <span className={classNameFinal.join(' ')} {...rest}>
+      {contentParts.map(
+        s =>
+          s === '' ? (
+            <br />
+          ) : (
+            <p className={elementClassNameFinal.join(' ')}>{s}</p>
+          ),
+      )}
+    </span>
   );
 };
 
