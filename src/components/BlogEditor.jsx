@@ -53,6 +53,7 @@ class BlogEditor extends Component {
           placeholder="Blog name"
         />
         <BpkTextArea
+          style={{ minHeight: '45rem' }}
           className={elementClassNameFinal.join(' ')}
           id="blogContent"
           name="Blog content"
