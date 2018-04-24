@@ -8,6 +8,7 @@ import Comments from '../../components/Comments';
 import TextLink from '../../components/TextLink';
 import PageSwitchScroller from '../../components/PageSwitchScroller';
 import ScrollIndicator from '../../components/ScrollIndicator';
+import CodeInline from '../../components/CodeInline';
 
 const DATE_WRITTEN = new Date(2017, 11, 23, 14, 3, 0);
 const PAGE_ID = 729471;
@@ -70,7 +71,8 @@ const SwitchToVim = props => {
           <TextLink external href="https://atom.io/">
             Atom{' '}
           </TextLink>
-          for Neovim, enabled Vim mode in my .zshrc and installed{' '}
+          for Neovim, enabled Vim mode in my <CodeInline>.zshrc</CodeInline> and
+          installed{' '}
           <TextLink
             external
             href="https://addons.mozilla.org/en-US/firefox/addon/vimium-ff/"
