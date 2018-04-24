@@ -75,6 +75,25 @@ class BlogEditorPage extends React.Component {
           onChange={event => this.setState({ apiKey: event.target.value })}
           placeholder="API Key"
         />
+        <Button
+          disabled={!this.state.dirty}
+          className={getClassName('pages__card')}
+          onClick={() => {
+            DatabaseFunctions.updateBlog(
+              this.state.apiKey,
+              this.state.blog,
+              result => {
+                this.setState({
+                  dirty: result ? false : this.state.dirty,
+                  updateResult: result,
+                });
+              },
+            );
+          }}
+          style={{ width: '100%' }}
+        >
+          {this.state.dirty ? 'Save changes' : 'No changes to save'}
+        </Button>
         <div className={getClassName('blog-editor')}>
           <BlogEditor
             className={getClassName('blog-editor__component')}
@@ -96,24 +115,6 @@ class BlogEditorPage extends React.Component {
             noAnchor
           />
         </div>
-        <Button
-          disabled={!this.state.dirty}
-          onClick={() => {
-            DatabaseFunctions.updateBlog(
-              this.state.apiKey,
-              this.state.blog,
-              result => {
-                this.setState({
-                  dirty: result ? false : this.state.dirty,
-                  updateResult: result,
-                });
-              },
-            );
-          }}
-          style={{ width: '100%' }}
-        >
-          {this.state.dirty ? 'Save changes' : 'No changes to save'}
-        </Button>
         <Prompt
           when={this.state.dirty}
           message={location =>

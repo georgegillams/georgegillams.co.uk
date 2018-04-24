@@ -4,6 +4,7 @@ import TextLink from './TextLink';
 import Strikethrough from './Strikethrough';
 import Quote from './Quote';
 import SubSection from './SubSection';
+import CodeInline from './CodeInline';
 
 import STYLES from './blog-viewer.scss';
 
@@ -12,6 +13,7 @@ const getClassName = className => STYLES[className] || 'UNKNOWN';
 const MD_LINK_REGEX = /(.*)\[([^\[\]]*)\]\(([^\(\)]*)\)(.*)/gi;
 const MD_LINK_BIG_REGEX = /(.*)!\[([^\[\]]*)\]\(([^\(\)]*)\)(.*)/gi;
 const MD_STRIKETHROUGH_REGEX = /(.*)~([^~]*)~(.*)/gi;
+const MD_INLINE_CODE_REGEX = /(.*)`([^`]*)`(.*)/gi;
 const MD_BOLD_REGEX = /(.*)\*\*([^\*]*)\*\*(.*)/gi;
 const MD_QUOTATION_REGEX = /(.*)\>([^\>\<]*)\<(.*)/gi;
 
@@ -42,7 +44,7 @@ const BlogPreviewContent = props => {
     return null;
   }
 
-  // If it's bold, return a TextLink component:
+  // If it's bold, return a span with fontWeight: 'bold' component:
   const mdBold = content.split(MD_BOLD_REGEX);
   if (mdBold.length > 2) {
     console.log(content);
@@ -70,7 +72,7 @@ const BlogPreviewContent = props => {
     );
   }
 
-  // If it's a strikethrough, return a TextLink component:
+  // If it's a strikethrough, return a Strikethrough component:
   const mdStrikethrough = content.split(MD_STRIKETHROUGH_REGEX);
   if (mdStrikethrough.length > 2) {
     const preStrikeText = `${mdStrikethrough.shift()} ${mdStrikethrough.shift()}`;
@@ -93,7 +95,30 @@ const BlogPreviewContent = props => {
     );
   }
 
-  // If it's a quotation, return a TextLink component:
+  // If it's inline code, return a CodeInline component:
+  const mdInlineCode = content.split(MD_INLINE_CODE_REGEX);
+  if (mdInlineCode.length > 2) {
+    const preInlineCodeText = `${mdInlineCode.shift()} ${mdInlineCode.shift()}`;
+    const inlineCode = mdInlineCode.shift();
+    const postInlineCodeText = mdInlineCode.join('');
+    return (
+      <span className={classNameFinal.join(' ')} {...rest}>
+        <BlogPreviewContent
+          elementClassName={elementClassName}
+          content={preInlineCodeText}
+        />
+        <CodeInline className={elementClassNameFinal.join(' ')}>
+          {inlineCode}
+        </CodeInline>
+        <BlogPreviewContent
+          elementClassName={elementClassName}
+          content={postInlineCodeText}
+        />
+      </span>
+    );
+  }
+
+  // If it's a quotation, return a Quote component:
   const mdQuotation = content.split(MD_QUOTATION_REGEX);
   if (mdQuotation.length > 2) {
     const preQuotationText = `${mdQuotation.shift()} ${mdQuotation.shift()}`;
@@ -116,7 +141,7 @@ const BlogPreviewContent = props => {
     );
   }
 
-  // If it's a **BIG** hyperlink, return a TextLink component:
+  // If it's a **BIG** hyperlink, return a <a>-wrapped Section component:
   const mdBigLink = content.split(MD_LINK_BIG_REGEX);
   if (mdBigLink.length > 3) {
     const preLinkText = `${mdBigLink.shift()} ${mdBigLink.shift()}`;
