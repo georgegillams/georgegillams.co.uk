@@ -460,12 +460,12 @@ router.post('/api/blog-posts/update', (req, res) => {
           blog.blogContent = blogContent;
           blog.blogName = blogName;
           client.lset(`blog-posts`, i, JSON.stringify(blog));
-          res.end();
           return;
         }
       }
     });
   }
+  res.send({ blog_id: blogId });
   res.end();
 });
 
