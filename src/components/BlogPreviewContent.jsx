@@ -32,7 +32,9 @@ const BlogPreviewSection = props => {
 
   return (
     <div className={classNameFinal.join(' ')} {...rest}>
-      {contentParts.map(s => <p className={elementClassName}>{s}</p>)}
+      {contentParts.map(s => (
+        <p className={elementClassNameFinal.join(' ')}>{s}</p>
+      ))}
     </div>
   );
 };
