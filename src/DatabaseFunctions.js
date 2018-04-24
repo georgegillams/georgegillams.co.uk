@@ -84,6 +84,7 @@ class DatabaseFunctions {
         blog_id: blog.blogId,
         blog_name: blog.blogName,
         blog_content: blog.blogContent,
+        blog_tags: blog.blogTags,
       },
       json: true,
     };
@@ -102,6 +103,7 @@ class DatabaseFunctions {
       body: {
         blog_name: 'new blog',
         blog_content: '',
+        blog_tags: [],
       },
       json: true,
     };
