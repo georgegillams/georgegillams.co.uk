@@ -5,6 +5,7 @@ import Section from './Section';
 import ScrollIndicator from './ScrollIndicator';
 import PageSwitchScroller from './PageSwitchScroller';
 import Tag from './Tag';
+import ArticleDate from './ArticleDate';
 
 import STYLES from './article-date.scss';
 
@@ -32,18 +33,24 @@ const BlogRenderer = props => {
 
   return (
     <div className={classNameFinal.join(' ')} {...rest}>
+      <ScrollIndicator />
+      <PageSwitchScroller />
       <Section
         className={elementClassNameFinal.join(' ')}
         name={blog.blogName}
         light={light}
         noAnchor={noAnchor}
       >
-        <ScrollIndicator />
-        <PageSwitchScroller />
-        {blog.blogTags &&
-          blog.blogTags.map(g => (
-            <Tag type={g} link style={{ marginBottom: '0.5rem' }} />
-          ))}
+        <ArticleDate
+          className={elementClassNameFinal.join(' ')}
+          date={new Date(1000 * blog.publishedTimestamp)}
+        />
+        <div style={{ marginBottom: '1.5rem' }}>
+          {blog.blogTags &&
+            blog.blogTags.map(g => (
+              <Tag type={g} link style={{ marginBottom: '0.5rem' }} />
+            ))}
+        </div>
         {blogSections.map(s => (
           <BlogPreviewSection
             blogSection={s}
