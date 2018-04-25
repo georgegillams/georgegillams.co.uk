@@ -190,7 +190,6 @@ export default function homePageBanner(
                     const newCurrentScrollTo = document.getElementById(
                       `scroller_${i}`,
                     );
-                    console.log(newCurrentScrollTo);
                     if (!newCurrentScrollTo) return;
 
                     scrollIntoView(newCurrentScrollTo, {

@@ -23,6 +23,21 @@ export const CARD_LAYOUTS = {
   narrowCompact: 'narrowCompact',
 };
 
+const MONTH_MAPPINGS = {
+  0: 'Jan',
+  1: 'Feb',
+  2: 'Mar',
+  3: 'Apr',
+  4: 'May',
+  5: 'Jun',
+  6: 'Jul',
+  7: 'Aug',
+  8: 'Sep',
+  9: 'Oct',
+  10: 'Nov',
+  11: 'Dec',
+};
+
 class ArticleCard extends Component {
   constructor(props) {
     super(props);
@@ -116,7 +131,11 @@ class ArticleCard extends Component {
               noPadding
               link
               light={light}
-              name={month}
+              name={
+                Object.keys(MONTH_MAPPINGS).includes(`${month}`)
+                  ? MONTH_MAPPINGS[`${month}`]
+                  : month
+              }
             />
             <SubSection
               hover={this.state.hovering}
