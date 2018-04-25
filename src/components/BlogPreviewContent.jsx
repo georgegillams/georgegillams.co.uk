@@ -1,5 +1,6 @@
 import PropTypes from 'prop-types';
 import React from 'react';
+import YoutubeEmbedVideo from 'youtube-embed-video';
 import TextLink from './TextLink';
 import Strikethrough from './Strikethrough';
 import Quote from './Quote';
@@ -12,6 +13,7 @@ const getClassName = className => STYLES[className] || 'UNKNOWN';
 
 const MD_LINK_REGEX = /(.*)\[([^\[\]]*)\]\(([^\(\)]*)\)(.*)/gi;
 const MD_LINK_BIG_REGEX = /(.*)!\[([^\[\]]*)\]\(([^\(\)]*)\)(.*)/gi;
+const MD_YOUTUBE_REGEX = /(.*)!yt\[([^\[\]]*)\]\(([^\(\)]*)\)(.*)/gi;
 const MD_STRIKETHROUGH_REGEX = /(.*)~([^~]*)~(.*)/gi;
 const MD_INLINE_CODE_REGEX = /(.*)`([^`]*)`(.*)/gi;
 const MD_BOLD_REGEX = /(.*)\*\*([^\*]*)\*\*(.*)/gi;
@@ -136,6 +138,33 @@ const BlogPreviewContent = props => {
         <BlogPreviewContent
           elementClassName={elementClassName}
           content={postQuotationText}
+        />
+      </span>
+    );
+  }
+
+  // If it's a YouTube video, return a YoutubeEmbedVideo component:
+  const mdYtVideo = content.split(MD_YOUTUBE_REGEX);
+  if (mdYtVideo.length > 3) {
+    const preLinkText = `${mdYtVideo.shift()} ${mdYtVideo.shift()}`;
+    const showSuggestions = mdYtVideo.shift() === 'true';
+    const videoId = mdYtVideo.shift();
+    const postLinkText = mdYtVideo.join('');
+    return (
+      <span className={classNameFinal.join(' ')} {...rest}>
+        <BlogPreviewContent
+          elementClassName={elementClassName}
+          content={preLinkText}
+        />
+        <YoutubeEmbedVideo
+          className={getClassName('pages__image')}
+          style={{ height: '45vw', maxHeight: '23rem' }}
+          videoId={videoId}
+          suggestions={showSuggestions}
+        />
+        <BlogPreviewContent
+          elementClassName={elementClassName}
+          content={postLinkText}
         />
       </span>
     );

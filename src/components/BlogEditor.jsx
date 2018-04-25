@@ -43,9 +43,33 @@ class BlogEditor extends Component {
     this.props.onBlogChanged(newBlog);
   };
 
+  onBlogImageBorderColorChanged = event => {
+    const newBlog = JSON.parse(JSON.stringify(this.props.blog));
+    newBlog.blogImageBorderColor = event.target.value;
+    this.props.onBlogChanged(newBlog);
+  };
+
+  onBlogBannerColorChanged = event => {
+    const newBlog = JSON.parse(JSON.stringify(this.props.blog));
+    newBlog.blogBannerColor = event.target.value;
+    this.props.onBlogChanged(newBlog);
+  };
+
+  onBlogCardLinkChanged = event => {
+    const newBlog = JSON.parse(JSON.stringify(this.props.blog));
+    newBlog.blogCardLink = event.target.value;
+    this.props.onBlogChanged(newBlog);
+  };
+
   onBlogPublishedChanged = event => {
     const newBlog = JSON.parse(JSON.stringify(this.props.blog));
     newBlog.blogPublished = event.target.checked;
+    this.props.onBlogChanged(newBlog);
+  };
+
+  onBlogCardLightChanged = event => {
+    const newBlog = JSON.parse(JSON.stringify(this.props.blog));
+    newBlog.blogCardLight = event.target.checked;
     this.props.onBlogChanged(newBlog);
   };
 
@@ -96,13 +120,36 @@ class BlogEditor extends Component {
           onChange={this.onBlogHeroImageChanged}
           placeholder="Blog card hero image"
         />
+        <BpkCheckBox
+          className={elementClassNameFinal.join(' ')}
+          label="lightCard"
+          name="lightCard"
+          checked={blog.blogCardLight}
+          onChange={this.onBlogCardLightChanged}
+        />
         <BpkInput
           className={elementClassNameFinal.join(' ')}
-          id="blogTags"
-          name="Blog tags"
-          value={blog.blogTags ? blog.blogTags.join(' ') : 'photography'}
-          onChange={this.onBlogTagsChanged}
-          placeholder="Blog tags"
+          id="blogCardLink"
+          name="Blog card link"
+          value={blog.blogCardLink}
+          onChange={this.onBlogCardLinkChanged}
+          placeholder="Blog card link"
+        />
+        <BpkInput
+          className={elementClassNameFinal.join(' ')}
+          id="blogBanneColor"
+          name="Blog banner color"
+          value={blog.blogBannerColor}
+          onChange={this.onBlogBannerColorChanged}
+          placeholder="Blog banner color"
+        />
+        <BpkInput
+          className={elementClassNameFinal.join(' ')}
+          id="blogCardImageBorderColor"
+          name="Blog card image border color"
+          value={blog.blogImageBorderColor}
+          onChange={this.onBlogImageBorderColorChanged}
+          placeholder="Blog card image border color"
         />
         <BpkCheckBox
           className={elementClassNameFinal.join(' ')}
@@ -110,6 +157,14 @@ class BlogEditor extends Component {
           name="published"
           checked={blog.blogPublished}
           onChange={this.onBlogPublishedChanged}
+        />
+        <BpkInput
+          className={elementClassNameFinal.join(' ')}
+          id="blogTags"
+          name="Blog tags"
+          value={blog.blogTags ? blog.blogTags.join(' ') : 'photography'}
+          onChange={this.onBlogTagsChanged}
+          placeholder="Blog tags"
         />
         <BpkTextArea
           style={{ minHeight: '45rem' }}
