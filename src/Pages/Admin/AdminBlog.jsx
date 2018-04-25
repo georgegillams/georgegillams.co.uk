@@ -21,8 +21,6 @@ class AdminBlog extends React.Component {
   render() {
     const { apiKey, blog, className, ...rest } = this.props;
 
-    console.log(blog);
-
     const classNameFinal = [];
     if (className) classNameFinal.push(className);
 
