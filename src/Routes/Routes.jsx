@@ -5,6 +5,7 @@ import DefaultLayout from '../components/DefaultLayout';
 import HomePage from '../Pages/HomePageV2';
 import Admin from '../Pages/Admin/Admin';
 import BlogEditorPage from '../Pages/Admin/BlogEditorPage';
+import BlogViewerPage from '../Pages/BlogViewerPage';
 import Work from '../Pages/Work/Work';
 import PasswordCharacterExtractor from '../Pages/Work/PasswordCharacterExtractor';
 import BpkComponentDemo from '../Pages/Work/BpkComponentDemoPage';
@@ -22,6 +23,7 @@ import SerreChevalier from '../Pages/Travel/SerreChevalier';
 import Longleat from '../Pages/Travel/Longleat';
 import Travel from '../Pages/CategoryPages/Travel';
 import Articles from '../Pages/CategoryPages/Articles';
+import ArticlesBeta from '../Pages/CategoryPages/ArticlesBeta';
 import Munich from '../Pages/Travel/Munich';
 import Iceland from '../Pages/Travel/Iceland';
 import Contact from '../Pages/Contact';
@@ -59,11 +61,13 @@ const Routes = (
       <Switch>
         <Route exact path="/" component={HomePage} />
         <Route exact path="/blog" component={Articles} />
+        <Route exact path="/blog-beta" component={ArticlesBeta} />
         <Route
           path="/blog/react-http-response-codes"
           component={HttpResponseCodesInReact}
         />
         {/* <Route path="/blog/week-of-rust" component={WeekOfRust} /> */}
+        <Route path="/blog/view" component={BlogViewerPage} />
         <Route path="/blog/lightroom-workflow" component={LightroomWorkflow} />
         <Route path="/blog/tough-mudder" component={ToughMudder} />
         <Route path="/blog/net-neutrality" component={NetNeutrality} />

@@ -93,6 +93,10 @@ class DatabaseFunctions {
         blog_published: blog.blogPublished,
         blog_hero_image: blog.blogHeroImage,
         blog_image: blog.blogImage,
+        blog_image_border_color: blog.blogImageBorderColor,
+        blog_banner_color: blog.blogBannerColor,
+        blog_card_light: blog.blogCardLight,
+        blog_card_link: blog.blogCardLink,
       },
       json: true,
     };
@@ -111,7 +115,11 @@ class DatabaseFunctions {
       body: {
         blog_name: 'new blog',
         blog_content: '',
+        blog_image_border_color: '',
+        blog_banner_color: '',
         blog_tags: [],
+        blog_card_link: '/blog/no-blog-here',
+        blog_card_light: false,
         blog_published: false,
       },
       json: true,

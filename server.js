@@ -446,6 +446,10 @@ router.post('/api/blog-posts', (req, res) => {
   const blogContent = req.body.blog_content;
   const blogTags = req.body.blog_tags;
   const blogPublished = req.body.blog_published;
+  const blogImageBorderColor = req.body.blog_image_border_color;
+  const blogBannerColor = req.body.blog_banner_color;
+  const blogCardLight = req.body.blog_card_light;
+  const blogCardLink = req.body.blog_card_link;
   client.rpush([
     `blog-posts`,
     JSON.stringify({
@@ -454,6 +458,10 @@ router.post('/api/blog-posts', (req, res) => {
       blogContent,
       blogTags,
       blogPublished,
+      blogImageBorderColor,
+      blogBannerColor,
+      blogCardLight,
+      blogCardLink,
       publishedTimestamp: null,
     }),
   ]);
@@ -474,6 +482,10 @@ router.post('/api/blog-posts/update', (req, res) => {
   const blogPublished = req.body.blog_published;
   const blogHeroImage = req.body.blog_hero_image;
   const blogImage = req.body.blog_image;
+  const blogImageBorderColor = req.body.blog_image_border_color;
+  const blogBannerColor = req.body.blog_banner_color;
+  const blogCardLight = req.body.blog_card_light;
+  const blogCardLink = req.body.blog_card_link;
   if (blogId !== undefined) {
     client.lrange(`blog-posts`, 0, -1, (err, reply) => {
       for (let i = 0; i < reply.length; i += 1) {
@@ -490,6 +502,10 @@ router.post('/api/blog-posts/update', (req, res) => {
           blog.blogPublished = blogPublished;
           blog.blogHeroImage = blogHeroImage;
           blog.blogImage = blogImage;
+          blog.blogImageBorderColor = blogImageBorderColor;
+          blog.blogBannerColor = blogBannerColor;
+          blog.blogCardLight = blogCardLight;
+          blog.blogCardLink = blogCardLink;
           client.lset(`blog-posts`, i, JSON.stringify(blog));
           return;
         }
