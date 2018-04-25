@@ -15,6 +15,7 @@ import lrSm from '../Articles/images/lrSm.jpg';
 import teapotGif from '../Articles/images/teapot.gif';
 import teapot from '../Articles/images/teapot.jpg';
 import HelperFunctions from '../../HelperFunctions';
+import DatabaseFunctions from '../../DatabaseFunctions';
 
 import STYLES from '../pages.scss';
 
@@ -28,10 +29,27 @@ class Articles extends Component {
 
     this.state = {
       selectedTags: [],
+      blogs: null,
     };
   }
 
+  componentDidMount() {
+    const getBlogs = () => {
+      DatabaseFunctions.getBlogs('', results => {
+        this.setState({
+          blogs: results,
+        });
+      });
+    };
+
+    getBlogs();
+    setInterval(getBlogs, 2000);
+  }
+
   render() {
+    console.log('this.state.blogs');
+    console.log(this.state.blogs);
+
     return (
       <div style={{ width: '100%' }}>
         <PageSwitchScroller />
