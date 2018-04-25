@@ -145,11 +145,24 @@ class BlogEditorPage extends React.Component {
               className={getClassName('pages__card')}
               fillImageSrc={this.state.blog.blogHeroImage}
               imageSrc={this.state.blog.blogImage}
-              linkUrl="/blog/lightroom-workflow"
+              linkUrl={null}
               title={this.state.blog.blogName}
+              imageBorder={
+                this.state.blog.blogImageBorderColor
+                  ? this.state.blog.blogImageBorderColor
+                  : null
+              }
+              bannerColor={
+                this.state.blog.blogBannerColor
+                  ? this.state.blog.blogBannerColor
+                  : null
+              }
+              light={this.state.blog.blogCardLight}
               autoTallLayout
             >
-              {this.state.blog.blogTags.map(t => <Tag type={t} />)}
+              {this.state.blog &&
+                this.state.blog.blogTags &&
+                this.state.blog.blogTags.map(t => <Tag type={t} />)}{' '}
             </ArticleCard>
           </Section>
         )}
