@@ -91,6 +91,8 @@ class DatabaseFunctions {
         blog_content: blog.blogContent,
         blog_tags: blog.blogTags,
         blog_published: blog.blogPublished,
+        blog_hero_image: blog.blogHeroImage,
+        blog_image: blog.blogImage,
       },
       json: true,
     };

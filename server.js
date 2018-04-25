@@ -472,6 +472,8 @@ router.post('/api/blog-posts/update', (req, res) => {
   const blogContent = req.body.blog_content;
   const blogTags = req.body.blog_tags;
   const blogPublished = req.body.blog_published;
+  const blogHeroImage = req.body.blog_hero_image;
+  const blogImage = req.body.blog_image;
   if (blogId !== undefined) {
     client.lrange(`blog-posts`, 0, -1, (err, reply) => {
       for (let i = 0; i < reply.length; i += 1) {
@@ -486,6 +488,8 @@ router.post('/api/blog-posts/update', (req, res) => {
           blog.blogName = blogName;
           blog.blogTags = blogTags;
           blog.blogPublished = blogPublished;
+          blog.blogHeroImage = blogHeroImage;
+          blog.blogImage = blogImage;
           client.lset(`blog-posts`, i, JSON.stringify(blog));
           return;
         }
