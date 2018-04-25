@@ -47,8 +47,8 @@ const BlogPreviewContent = props => {
   // If it's bold, return a span with fontWeight: 'bold' component:
   const mdBold = content.split(MD_BOLD_REGEX);
   if (mdBold.length > 2) {
-    console.log(content);
-    console.log(content.split(MD_BOLD_REGEX));
+    // console.log(content);
+    // console.log(content.split(MD_BOLD_REGEX));
     const preBoldText = `${mdBold.shift()} ${mdBold.shift()}`;
     const boldText = mdBold.shift();
     const postBoldText = mdBold.join('');
