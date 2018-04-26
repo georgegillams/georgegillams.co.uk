@@ -5,6 +5,12 @@ import BpkImage, {
   withLazyLoading,
   withLoadingBehavior,
 } from 'bpk-component-image';
+import scrollIntoView from 'scroll-into-view';
+import {
+  citation,
+  References,
+  REFERENCE_STYLES,
+} from 'react-component-academic-reference';
 import TextLink from './TextLink';
 import Strikethrough from './Strikethrough';
 import Quote from './Quote';
@@ -33,6 +39,8 @@ const MD_STRIKETHROUGH_REGEX = /(.*)~([^~]*)~(.*)/gi;
 const MD_INLINE_CODE_REGEX = /(.*)`([^`]*)`(.*)/gi;
 const MD_BOLD_REGEX = /(.*)\*\*([^\*]*)\*\*(.*)/gi;
 const MD_QUOTATION_REGEX = /(.*)\>([^\>\<]*)\<(.*)/gi;
+const MD_CITATION_REGEX = /(.*)!cite\(([^\(\)]*)\)(.*)/gi;
+const MD_REFERENCES_REGEX = /(.*)!printReferences\(\)(.*)/gi;
 
 // This component works recursively. Each time it checks for a feature (such as a link, stikethrough etc)
 // At each stage, if it finds one it renders the appropriate component, passing the surrounding text to
@@ -45,6 +53,7 @@ const BlogPreviewContent = props => {
     elementClassName,
     light,
     noAnchor,
+    references,
     ...rest
   } = props;
 
@@ -57,9 +66,20 @@ const BlogPreviewContent = props => {
     elementClassNameFinal.push(elementClassName);
   }
 
-  if (!content || content === '') {
+  if (!content || content === '' || content === '\n') {
     return null;
   }
+
+  const onSelection = (event, identifier) => {
+    const reference = document.getElementById(identifier);
+    if (!reference) return;
+
+    scrollIntoView(reference, {
+      time: 1000,
+    });
+  };
+
+  const Cite = references ? citation(references, onSelection) : null;
 
   // If it's bold, return a span with fontWeight: 'bold' component:
   const mdBold = content.split(MD_BOLD_REGEX);
@@ -72,6 +92,7 @@ const BlogPreviewContent = props => {
     return (
       <span className={classNameFinal.join(' ')} {...rest}>
         <BlogPreviewContent
+          references={references}
           elementClassName={elementClassName}
           content={preBoldText}
         />
@@ -82,8 +103,74 @@ const BlogPreviewContent = props => {
           {boldText}
         </span>
         <BlogPreviewContent
+          references={references}
           elementClassName={elementClassName}
           content={postBoldText}
+        />
+      </span>
+    );
+  }
+
+  // If it's a reference citation, return the Citation:
+  const mdCitation = content.split(MD_CITATION_REGEX);
+  if (mdCitation.length > 2) {
+    // console.log(content);
+    // console.log(content.split(MD_BOLD_REGEX));
+    const preCitationText = `${mdCitation.shift()} ${mdCitation.shift()}`;
+    const referenceIdentifier = mdCitation.shift();
+    const postCitationText = mdCitation.join('');
+    return (
+      <span className={classNameFinal.join(' ')} {...rest}>
+        <BlogPreviewContent
+          references={references}
+          elementClassName={elementClassName}
+          content={preCitationText}
+        />
+        {Cite && <Cite identifier={referenceIdentifier} />}
+        <BlogPreviewContent
+          references={references}
+          elementClassName={elementClassName}
+          content={postCitationText}
+        />
+      </span>
+    );
+  }
+
+  // If it's reference print-out, return a references section:
+  const mdReferencesPrintout = content.split(MD_REFERENCES_REGEX);
+  if (mdReferencesPrintout.length > 1) {
+    // console.log('references');
+    // console.log(references);
+    // console.log(content.split(MD_BOLD_REGEX));
+    const preReferencesText = `${mdReferencesPrintout.shift()} ${mdReferencesPrintout.shift()}`;
+    const postReferencesText = mdReferencesPrintout.join('');
+    return (
+      <span className={classNameFinal.join(' ')} {...rest}>
+        <BlogPreviewContent
+          references={references}
+          elementClassName={elementClassName}
+          content={preReferencesText}
+        />
+        {Cite && (
+          <SubSection
+            className={elementClassNameFinal.join(' ')}
+            noAnchor={noAnchor}
+            light={light}
+            name="References"
+          >
+            <References
+              className={`${getClassName(
+                'pages__references',
+              )} ${elementClassNameFinal.join(' ')}`}
+              referenceStyle={REFERENCE_STYLES.harvard}
+              references={references}
+            />
+          </SubSection>
+        )}
+        <BlogPreviewContent
+          references={references}
+          elementClassName={elementClassName}
+          content={postReferencesText}
         />
       </span>
     );
@@ -98,6 +185,7 @@ const BlogPreviewContent = props => {
     return (
       <span className={classNameFinal.join(' ')} {...rest}>
         <BlogPreviewContent
+          references={references}
           elementClassName={elementClassName}
           content={preStrikeText}
         />
@@ -105,6 +193,7 @@ const BlogPreviewContent = props => {
           {strikenText}
         </Strikethrough>
         <BlogPreviewContent
+          references={references}
           elementClassName={elementClassName}
           content={postStrikeText}
         />
@@ -123,6 +212,7 @@ const BlogPreviewContent = props => {
     return (
       <span className={classNameFinal.join(' ')} {...rest}>
         <BlogPreviewContent
+          references={references}
           elementClassName={elementClassName}
           content={preInlineCodeText}
         />
@@ -141,6 +231,7 @@ const BlogPreviewContent = props => {
           ))}
         </Code>
         <BlogPreviewContent
+          references={references}
           elementClassName={elementClassName}
           content={postInlineCodeText}
         />
@@ -157,6 +248,7 @@ const BlogPreviewContent = props => {
     return (
       <span className={classNameFinal.join(' ')} {...rest}>
         <BlogPreviewContent
+          references={references}
           elementClassName={elementClassName}
           content={preInlineCodeText}
         />
@@ -164,6 +256,7 @@ const BlogPreviewContent = props => {
           {inlineCode}
         </CodeInline>
         <BlogPreviewContent
+          references={references}
           elementClassName={elementClassName}
           content={postInlineCodeText}
         />
@@ -180,6 +273,7 @@ const BlogPreviewContent = props => {
     return (
       <span className={classNameFinal.join(' ')} {...rest}>
         <BlogPreviewContent
+          references={references}
           elementClassName={elementClassName}
           content={preQuotationText}
         />
@@ -187,6 +281,7 @@ const BlogPreviewContent = props => {
           {quotation}
         </Quote>
         <BlogPreviewContent
+          references={references}
           elementClassName={elementClassName}
           content={postQuotationText}
         />
@@ -204,6 +299,7 @@ const BlogPreviewContent = props => {
     return (
       <span className={classNameFinal.join(' ')} {...rest}>
         <BlogPreviewContent
+          references={references}
           elementClassName={elementClassName}
           content={preImageText}
         />
@@ -213,6 +309,7 @@ const BlogPreviewContent = props => {
           src={imageSrc}
         />
         <BlogPreviewContent
+          references={references}
           elementClassName={elementClassName}
           content={postImageText}
         />
@@ -232,6 +329,7 @@ const BlogPreviewContent = props => {
     return (
       <span className={classNameFinal.join(' ')} {...rest}>
         <BlogPreviewContent
+          references={references}
           elementClassName={elementClassName}
           content={preImageText}
         />
@@ -243,6 +341,7 @@ const BlogPreviewContent = props => {
           src={imageSrc}
         />
         <BlogPreviewContent
+          references={references}
           elementClassName={elementClassName}
           content={postImageText}
         />
@@ -260,6 +359,7 @@ const BlogPreviewContent = props => {
     return (
       <span className={classNameFinal.join(' ')} {...rest}>
         <BlogPreviewContent
+          references={references}
           elementClassName={elementClassName}
           content={preLinkText}
         />
@@ -270,6 +370,7 @@ const BlogPreviewContent = props => {
           suggestions={showSuggestions}
         />
         <BlogPreviewContent
+          references={references}
           elementClassName={elementClassName}
           content={postLinkText}
         />
@@ -288,6 +389,7 @@ const BlogPreviewContent = props => {
     return (
       <span className={classNameFinal.join(' ')} {...rest}>
         <BlogPreviewContent
+          references={references}
           elementClassName={elementClassName}
           content={preLinkText}
         />
@@ -305,6 +407,7 @@ const BlogPreviewContent = props => {
           />
         </a>
         <BlogPreviewContent
+          references={references}
           elementClassName={elementClassName}
           content={postLinkText}
         />
@@ -323,6 +426,7 @@ const BlogPreviewContent = props => {
     return (
       <span className={classNameFinal.join(' ')} {...rest}>
         <BlogPreviewContent
+          references={references}
           elementClassName={elementClassName}
           content={preLinkText}
         />
@@ -331,6 +435,7 @@ const BlogPreviewContent = props => {
           {external ? ' ' : ''}
         </TextLink>
         <BlogPreviewContent
+          references={references}
           elementClassName={elementClassName}
           content={postLinkText}
         />
@@ -356,6 +461,7 @@ const BlogPreviewContent = props => {
 };
 
 BlogPreviewContent.propTypes = {
+  references: PropTypes.object,
   content: PropTypes.string.isRequired,
   className: PropTypes.string,
   elementClassName: PropTypes.string,
@@ -364,6 +470,7 @@ BlogPreviewContent.propTypes = {
 };
 
 BlogPreviewContent.defaultProps = {
+  references: null,
   className: null,
   elementClassName: null,
   light: false,
