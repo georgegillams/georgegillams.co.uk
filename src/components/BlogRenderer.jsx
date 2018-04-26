@@ -1,5 +1,8 @@
 import PropTypes from 'prop-types';
 import React from 'react';
+
+import bibtexParse from 'bibtex-parse-js';
+
 import BlogPreviewSection from './BlogPreviewSection';
 import Section from './Section';
 import ScrollIndicator from './ScrollIndicator';
@@ -23,13 +26,17 @@ const BlogRenderer = props => {
     elementClassNameFinal.push(elementClassName);
   }
 
-  const blogContent = `\n${blog.blogContent}`;
-
-  if (!blogContent || blogContent === '') {
+  if (!blog.blogContent || blog.blogContent === '') {
     return null;
   }
 
+  const blogContent = `\n${blog.blogContent}`;
+
   const blogSections = blogContent.split('\n# ');
+
+  const references = blog.blogBibtex
+    ? bibtexParse.toJSON(blog.blogBibtex)
+    : null;
 
   return (
     <div className={classNameFinal.join(' ')} {...rest}>
@@ -45,7 +52,7 @@ const BlogRenderer = props => {
           className={elementClassNameFinal.join(' ')}
           date={new Date(1000 * blog.publishedTimestamp)}
         />
-        <div style={{ marginBottom: '1.5rem' }}>
+        <div style={{ marginBottom: '1.0rem' }}>
           {blog.blogTags &&
             blog.blogTags.map(g => (
               <Tag type={g} link style={{ marginBottom: '0.5rem' }} />
@@ -53,6 +60,7 @@ const BlogRenderer = props => {
         </div>
         {blogSections.map(s => (
           <BlogPreviewSection
+            references={references}
             blogSection={s}
             elementClassName={elementClassName}
             light={light}
