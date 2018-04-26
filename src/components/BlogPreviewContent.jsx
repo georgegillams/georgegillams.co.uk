@@ -5,28 +5,42 @@ import BpkImage, {
   withLazyLoading,
   withLoadingBehavior,
 } from 'bpk-component-image';
+import scrollIntoView from 'scroll-into-view';
+import {
+  citation,
+  References,
+  REFERENCE_STYLES,
+} from 'react-component-academic-reference';
 import TextLink from './TextLink';
 import Strikethrough from './Strikethrough';
 import Quote from './Quote';
 import SubSection from './SubSection';
+import Code from './Code';
 import CodeInline from './CodeInline';
+import CodeBashArrow from './CodeBashArrow';
 
 import STYLES from './blog-viewer.scss';
+import PAGES_STYLES from './../Pages/pages.scss';
 
-const getClassName = className => STYLES[className] || 'UNKNOWN';
+const getClassName = className =>
+  STYLES[className] || PAGES_STYLES[className] || 'UNKNOWN';
 const documentIfExists = typeof window !== 'undefined' ? document : null;
 const FadingLazyLoadedImage = withLoadingBehavior(
   withLazyLoading(BpkImage, documentIfExists),
 );
 
 const MD_LINK_REGEX = /(.*)\[([^\[\]]*)\]\(([^\(\)]*)\)(.*)/gi;
-const MD_IMAGE_REGEX = /(.*)!\[([0-9]+)x([0-9]+)\]\[([^\[\]]*)\]\(([^\(\)]*)\)(.*)/gi;
+const MD_BLOCK_CODE_REGEX = /(.*)```\(([^\(\)]*)\)\(([^\(\)]*)\)\n([.\s\S]*)\n```(.*)/gi;
+const MD_IMAGE_REGEX = /(.*)!\[([^\[\]]*)\]\(([^\(\)]*)\)(.*)/gi;
+const MD_LAZY_LOAD_IMAGE_REGEX = /(.*)!\[([0-9]+)x([0-9]+)\]\[([^\[\]]*)\]\(([^\(\)]*)\)(.*)/gi;
 const MD_LINK_BIG_REGEX = /(.*)!ssLink\[([^\[\]]*)\]\(([^\(\)]*)\)(.*)/gi;
 const MD_YOUTUBE_REGEX = /(.*)!yt\[([^\[\]]*)\]\(([^\(\)]*)\)(.*)/gi;
 const MD_STRIKETHROUGH_REGEX = /(.*)~([^~]*)~(.*)/gi;
 const MD_INLINE_CODE_REGEX = /(.*)`([^`]*)`(.*)/gi;
 const MD_BOLD_REGEX = /(.*)\*\*([^\*]*)\*\*(.*)/gi;
 const MD_QUOTATION_REGEX = /(.*)\>([^\>\<]*)\<(.*)/gi;
+const MD_CITATION_REGEX = /(.*)!cite\(([^\(\)]*)\)(.*)/gi;
+const MD_REFERENCES_REGEX = /(.*)!printReferences\(\)(.*)/gi;
 
 // This component works recursively. Each time it checks for a feature (such as a link, stikethrough etc)
 // At each stage, if it finds one it renders the appropriate component, passing the surrounding text to
@@ -39,6 +53,7 @@ const BlogPreviewContent = props => {
     elementClassName,
     light,
     noAnchor,
+    references,
     ...rest
   } = props;
 
@@ -51,9 +66,20 @@ const BlogPreviewContent = props => {
     elementClassNameFinal.push(elementClassName);
   }
 
-  if (!content || content === '') {
+  if (!content || content === '' || content === '\n') {
     return null;
   }
+
+  const onSelection = (event, identifier) => {
+    const reference = document.getElementById(identifier);
+    if (!reference) return;
+
+    scrollIntoView(reference, {
+      time: 1000,
+    });
+  };
+
+  const Cite = references ? citation(references, onSelection) : null;
 
   // If it's bold, return a span with fontWeight: 'bold' component:
   const mdBold = content.split(MD_BOLD_REGEX);
@@ -66,6 +92,9 @@ const BlogPreviewContent = props => {
     return (
       <span className={classNameFinal.join(' ')} {...rest}>
         <BlogPreviewContent
+          noAnchor={noAnchor}
+          light={light}
+          references={references}
           elementClassName={elementClassName}
           content={preBoldText}
         />
@@ -76,8 +105,84 @@ const BlogPreviewContent = props => {
           {boldText}
         </span>
         <BlogPreviewContent
+          noAnchor={noAnchor}
+          light={light}
+          references={references}
           elementClassName={elementClassName}
           content={postBoldText}
+        />
+      </span>
+    );
+  }
+
+  // If it's a reference citation, return the Citation:
+  const mdCitation = content.split(MD_CITATION_REGEX);
+  if (mdCitation.length > 2) {
+    // console.log(content);
+    // console.log(content.split(MD_BOLD_REGEX));
+    const preCitationText = `${mdCitation.shift()} ${mdCitation.shift()}`;
+    const referenceIdentifier = mdCitation.shift();
+    const postCitationText = mdCitation.join('');
+    return (
+      <span className={classNameFinal.join(' ')} {...rest}>
+        <BlogPreviewContent
+          noAnchor={noAnchor}
+          light={light}
+          references={references}
+          elementClassName={elementClassName}
+          content={preCitationText}
+        />
+        {Cite && <Cite identifier={referenceIdentifier} />}
+        <BlogPreviewContent
+          noAnchor={noAnchor}
+          light={light}
+          references={references}
+          elementClassName={elementClassName}
+          content={postCitationText}
+        />
+      </span>
+    );
+  }
+
+  // If it's reference print-out, return a references section:
+  const mdReferencesPrintout = content.split(MD_REFERENCES_REGEX);
+  if (mdReferencesPrintout.length > 1) {
+    // console.log('references');
+    // console.log(references);
+    // console.log(content.split(MD_BOLD_REGEX));
+    const preReferencesText = `${mdReferencesPrintout.shift()} ${mdReferencesPrintout.shift()}`;
+    const postReferencesText = mdReferencesPrintout.join('');
+    return (
+      <span className={classNameFinal.join(' ')} {...rest}>
+        <BlogPreviewContent
+          noAnchor={noAnchor}
+          light={light}
+          references={references}
+          elementClassName={elementClassName}
+          content={preReferencesText}
+        />
+        {Cite && (
+          <SubSection
+            className={elementClassNameFinal.join(' ')}
+            noAnchor={noAnchor}
+            light={light}
+            name="References"
+          >
+            <References
+              className={`${getClassName(
+                'pages__references',
+              )} ${elementClassNameFinal.join(' ')}`}
+              referenceStyle={REFERENCE_STYLES.harvard}
+              references={references}
+            />
+          </SubSection>
+        )}
+        <BlogPreviewContent
+          noAnchor={noAnchor}
+          light={light}
+          references={references}
+          elementClassName={elementClassName}
+          content={postReferencesText}
         />
       </span>
     );
@@ -92,6 +197,9 @@ const BlogPreviewContent = props => {
     return (
       <span className={classNameFinal.join(' ')} {...rest}>
         <BlogPreviewContent
+          noAnchor={noAnchor}
+          light={light}
+          references={references}
           elementClassName={elementClassName}
           content={preStrikeText}
         />
@@ -99,8 +207,53 @@ const BlogPreviewContent = props => {
           {strikenText}
         </Strikethrough>
         <BlogPreviewContent
+          noAnchor={noAnchor}
+          light={light}
+          references={references}
           elementClassName={elementClassName}
           content={postStrikeText}
+        />
+      </span>
+    );
+  }
+
+  // If it's inline code, return a CodeInline component:
+  const mdBlockCode = content.split(MD_BLOCK_CODE_REGEX);
+  if (mdBlockCode.length > 4) {
+    const preInlineCodeText = `${mdBlockCode.shift()} ${mdBlockCode.shift()}`;
+    const language = mdBlockCode.shift();
+    const githubLink = mdBlockCode.shift();
+    const blockCode = mdBlockCode.shift();
+    const postInlineCodeText = mdBlockCode.join('');
+    return (
+      <span className={classNameFinal.join(' ')} {...rest}>
+        <BlogPreviewContent
+          noAnchor={noAnchor}
+          light={light}
+          references={references}
+          elementClassName={elementClassName}
+          content={preInlineCodeText}
+        />
+        <Code lang={language} githubUrl={githubLink}>
+          {blockCode.split('\n\n').map(b => (
+            <span>
+              <CodeBashArrow />{' '}
+              {b.split('\n').map(l => (
+                <span>
+                  {l}
+                  <br />
+                </span>
+              ))}
+              <br />
+            </span>
+          ))}
+        </Code>
+        <BlogPreviewContent
+          noAnchor={noAnchor}
+          light={light}
+          references={references}
+          elementClassName={elementClassName}
+          content={postInlineCodeText}
         />
       </span>
     );
@@ -115,6 +268,9 @@ const BlogPreviewContent = props => {
     return (
       <span className={classNameFinal.join(' ')} {...rest}>
         <BlogPreviewContent
+          noAnchor={noAnchor}
+          light={light}
+          references={references}
           elementClassName={elementClassName}
           content={preInlineCodeText}
         />
@@ -122,6 +278,9 @@ const BlogPreviewContent = props => {
           {inlineCode}
         </CodeInline>
         <BlogPreviewContent
+          noAnchor={noAnchor}
+          light={light}
+          references={references}
           elementClassName={elementClassName}
           content={postInlineCodeText}
         />
@@ -138,6 +297,9 @@ const BlogPreviewContent = props => {
     return (
       <span className={classNameFinal.join(' ')} {...rest}>
         <BlogPreviewContent
+          noAnchor={noAnchor}
+          light={light}
+          references={references}
           elementClassName={elementClassName}
           content={preQuotationText}
         />
@@ -145,6 +307,9 @@ const BlogPreviewContent = props => {
           {quotation}
         </Quote>
         <BlogPreviewContent
+          noAnchor={noAnchor}
+          light={light}
+          references={references}
           elementClassName={elementClassName}
           content={postQuotationText}
         />
@@ -152,18 +317,53 @@ const BlogPreviewContent = props => {
     );
   }
 
-  // If it's an image, return an Image component:
+  // If it's a regular image, return an Image component:
   const mdImage = content.split(MD_IMAGE_REGEX);
-  if (mdImage.length > 5) {
+  if (mdImage.length > 3) {
     const preImageText = `${mdImage.shift()} ${mdImage.shift()}`;
-    const aspectX = parseInt(mdImage.shift(), 10);
-    const aspectY = parseInt(mdImage.shift(), 10);
     const imageAltText = mdImage.shift();
     const imageSrc = mdImage.shift();
     const postImageText = mdImage.join('');
     return (
       <span className={classNameFinal.join(' ')} {...rest}>
         <BlogPreviewContent
+          noAnchor={noAnchor}
+          light={light}
+          references={references}
+          elementClassName={elementClassName}
+          content={preImageText}
+        />
+        <img
+          className={getClassName('pages__image')}
+          alt={imageAltText}
+          src={imageSrc}
+        />
+        <BlogPreviewContent
+          noAnchor={noAnchor}
+          light={light}
+          references={references}
+          elementClassName={elementClassName}
+          content={postImageText}
+        />
+      </span>
+    );
+  }
+
+  // If it's a lazy-loaded image, return an Image component:
+  const mdLazyLoadedImage = content.split(MD_LAZY_LOAD_IMAGE_REGEX);
+  if (mdLazyLoadedImage.length > 5) {
+    const preImageText = `${mdLazyLoadedImage.shift()} ${mdLazyLoadedImage.shift()}`;
+    const aspectX = parseInt(mdLazyLoadedImage.shift(), 10);
+    const aspectY = parseInt(mdLazyLoadedImage.shift(), 10);
+    const imageAltText = mdLazyLoadedImage.shift();
+    const imageSrc = mdLazyLoadedImage.shift();
+    const postImageText = mdLazyLoadedImage.join('');
+    return (
+      <span className={classNameFinal.join(' ')} {...rest}>
+        <BlogPreviewContent
+          noAnchor={noAnchor}
+          light={light}
+          references={references}
           elementClassName={elementClassName}
           content={preImageText}
         />
@@ -175,6 +375,9 @@ const BlogPreviewContent = props => {
           src={imageSrc}
         />
         <BlogPreviewContent
+          noAnchor={noAnchor}
+          light={light}
+          references={references}
           elementClassName={elementClassName}
           content={postImageText}
         />
@@ -192,6 +395,9 @@ const BlogPreviewContent = props => {
     return (
       <span className={classNameFinal.join(' ')} {...rest}>
         <BlogPreviewContent
+          noAnchor={noAnchor}
+          light={light}
+          references={references}
           elementClassName={elementClassName}
           content={preLinkText}
         />
@@ -202,6 +408,9 @@ const BlogPreviewContent = props => {
           suggestions={showSuggestions}
         />
         <BlogPreviewContent
+          noAnchor={noAnchor}
+          light={light}
+          references={references}
           elementClassName={elementClassName}
           content={postLinkText}
         />
@@ -220,6 +429,9 @@ const BlogPreviewContent = props => {
     return (
       <span className={classNameFinal.join(' ')} {...rest}>
         <BlogPreviewContent
+          noAnchor={noAnchor}
+          light={light}
+          references={references}
           elementClassName={elementClassName}
           content={preLinkText}
         />
@@ -237,6 +449,9 @@ const BlogPreviewContent = props => {
           />
         </a>
         <BlogPreviewContent
+          noAnchor={noAnchor}
+          light={light}
+          references={references}
           elementClassName={elementClassName}
           content={postLinkText}
         />
@@ -255,6 +470,9 @@ const BlogPreviewContent = props => {
     return (
       <span className={classNameFinal.join(' ')} {...rest}>
         <BlogPreviewContent
+          noAnchor={noAnchor}
+          light={light}
+          references={references}
           elementClassName={elementClassName}
           content={preLinkText}
         />
@@ -263,6 +481,9 @@ const BlogPreviewContent = props => {
           {external ? ' ' : ''}
         </TextLink>
         <BlogPreviewContent
+          noAnchor={noAnchor}
+          light={light}
+          references={references}
           elementClassName={elementClassName}
           content={postLinkText}
         />
@@ -288,6 +509,7 @@ const BlogPreviewContent = props => {
 };
 
 BlogPreviewContent.propTypes = {
+  references: PropTypes.object,
   content: PropTypes.string.isRequired,
   className: PropTypes.string,
   elementClassName: PropTypes.string,
@@ -296,6 +518,7 @@ BlogPreviewContent.propTypes = {
 };
 
 BlogPreviewContent.defaultProps = {
+  references: null,
   className: null,
   elementClassName: null,
   light: false,

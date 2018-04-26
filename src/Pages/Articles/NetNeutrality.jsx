@@ -453,7 +453,6 @@ uri = {url{papers3://publication/uuid/FB9A1668-C666-454F-A4BB-B5EEEF7731CF}}
 
 const onSelection = (event, identifier) => {
   const reference = document.getElementById(identifier);
-  console.log(reference);
   if (!reference) return;
 
   scrollIntoView(reference, {
