@@ -70,7 +70,7 @@ const LightroomWorkflow = props => {
         <SubSection name="A video showing the process">
           <YoutubeEmbedVideo
             className={getClassName('pages__image')}
-            style={{ height: '45vw', maxHeight: '23rem' }}
+            style={{ maxWidth: '100%', height: '45vw', maxHeight: '23rem' }}
             videoId="3GVO4TwRyiw"
             suggestions={false}
           />
