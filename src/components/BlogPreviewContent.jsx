@@ -1,6 +1,10 @@
 import PropTypes from 'prop-types';
 import React from 'react';
 import YoutubeEmbedVideo from 'youtube-embed-video';
+import BpkImage, {
+  withLazyLoading,
+  withLoadingBehavior,
+} from 'bpk-component-image';
 import TextLink from './TextLink';
 import Strikethrough from './Strikethrough';
 import Quote from './Quote';
@@ -10,9 +14,14 @@ import CodeInline from './CodeInline';
 import STYLES from './blog-viewer.scss';
 
 const getClassName = className => STYLES[className] || 'UNKNOWN';
+const documentIfExists = typeof window !== 'undefined' ? document : null;
+const FadingLazyLoadedImage = withLoadingBehavior(
+  withLazyLoading(BpkImage, documentIfExists),
+);
 
 const MD_LINK_REGEX = /(.*)\[([^\[\]]*)\]\(([^\(\)]*)\)(.*)/gi;
-const MD_LINK_BIG_REGEX = /(.*)!\[([^\[\]]*)\]\(([^\(\)]*)\)(.*)/gi;
+const MD_IMAGE_REGEX = /(.*)!\[([0-9]+)x([0-9]+)\]\[([^\[\]]*)\]\(([^\(\)]*)\)(.*)/gi;
+const MD_LINK_BIG_REGEX = /(.*)!ssLink\[([^\[\]]*)\]\(([^\(\)]*)\)(.*)/gi;
 const MD_YOUTUBE_REGEX = /(.*)!yt\[([^\[\]]*)\]\(([^\(\)]*)\)(.*)/gi;
 const MD_STRIKETHROUGH_REGEX = /(.*)~([^~]*)~(.*)/gi;
 const MD_INLINE_CODE_REGEX = /(.*)`([^`]*)`(.*)/gi;
@@ -143,6 +152,36 @@ const BlogPreviewContent = props => {
     );
   }
 
+  // If it's an image, return an Image component:
+  const mdImage = content.split(MD_IMAGE_REGEX);
+  if (mdImage.length > 5) {
+    const preImageText = `${mdImage.shift()} ${mdImage.shift()}`;
+    const aspectX = parseInt(mdImage.shift(), 10);
+    const aspectY = parseInt(mdImage.shift(), 10);
+    const imageAltText = mdImage.shift();
+    const imageSrc = mdImage.shift();
+    const postImageText = mdImage.join('');
+    return (
+      <span className={classNameFinal.join(' ')} {...rest}>
+        <BlogPreviewContent
+          elementClassName={elementClassName}
+          content={preImageText}
+        />
+        <FadingLazyLoadedImage
+          className={getClassName('pages__image')}
+          altText={imageAltText}
+          width={aspectX}
+          height={aspectY}
+          src={imageSrc}
+        />
+        <BlogPreviewContent
+          elementClassName={elementClassName}
+          content={postImageText}
+        />
+      </span>
+    );
+  }
+
   // If it's a YouTube video, return a YoutubeEmbedVideo component:
   const mdYtVideo = content.split(MD_YOUTUBE_REGEX);
   if (mdYtVideo.length > 3) {
@@ -158,7 +197,7 @@ const BlogPreviewContent = props => {
         />
         <YoutubeEmbedVideo
           className={getClassName('pages__image')}
-          style={{ height: '45vw', maxHeight: '23rem' }}
+          style={{ maxWidth: '100%', height: '45vw', maxHeight: '23rem' }}
           videoId={videoId}
           suggestions={showSuggestions}
         />
