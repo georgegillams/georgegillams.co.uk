@@ -15,6 +15,7 @@ const BlogPreviewSection = props => {
     elementClassName,
     light,
     noAnchor,
+    references,
     ...rest
   } = props;
 
@@ -47,11 +48,13 @@ const BlogPreviewSection = props => {
       {...rest}
     >
       <BlogPreviewContent
+        references={references}
         content={sectionTopLevelContent}
         elementClassName={elementClassName}
       />
       {blogSubSections.map(s => (
         <BlogPreviewSubSection
+          references={references}
           blogSubSection={s}
           elementClassName={elementClassName}
           light={light}
@@ -63,6 +66,7 @@ const BlogPreviewSection = props => {
 };
 
 BlogPreviewSection.propTypes = {
+  references: PropTypes.object,
   blogSection: PropTypes.string.isRequired,
   className: PropTypes.string,
   elementClassName: PropTypes.string,
@@ -71,6 +75,7 @@ BlogPreviewSection.propTypes = {
 };
 
 BlogPreviewSection.defaultProps = {
+  references: null,
   className: null,
   elementClassName: null,
   light: false,

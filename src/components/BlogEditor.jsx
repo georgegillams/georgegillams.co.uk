@@ -79,6 +79,12 @@ class BlogEditor extends Component {
     this.props.onBlogChanged(newBlog);
   };
 
+  onBlogBibtexChanged = event => {
+    const newBlog = JSON.parse(JSON.stringify(this.props.blog));
+    newBlog.blogBibtex = event.target.value;
+    this.props.onBlogChanged(newBlog);
+  };
+
   render() {
     const { blog, className, elementClassName, ...rest } = this.props;
 
@@ -174,6 +180,14 @@ class BlogEditor extends Component {
           value={blog.blogContent}
           onChange={this.onBlogContentChanged}
           placeholder="Blog content"
+        />
+        <BpkTextArea
+          className={elementClassNameFinal.join(' ')}
+          id="blogBibtex"
+          name="Blog bibtex"
+          value={blog.blogBibtex}
+          onChange={this.onBlogBibtexChanged}
+          placeholder="Blog bibtex"
         />
       </div>
     );
