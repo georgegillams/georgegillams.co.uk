@@ -14,6 +14,7 @@ const BlogPreviewSubSection = props => {
     elementClassName,
     light,
     noAnchor,
+    references,
     ...rest
   } = props;
 
@@ -44,6 +45,7 @@ const BlogPreviewSubSection = props => {
       {...rest}
     >
       <BlogPreviewContent
+        references={references}
         content={blogSubSectionContent}
         elementClassName={elementClassName}
       />
@@ -52,6 +54,7 @@ const BlogPreviewSubSection = props => {
 };
 
 BlogPreviewSubSection.propTypes = {
+  references: PropTypes.object,
   blogSubSection: PropTypes.string.isRequired,
   className: PropTypes.string,
   elementClassName: PropTypes.string,
@@ -60,6 +63,7 @@ BlogPreviewSubSection.propTypes = {
 };
 
 BlogPreviewSubSection.defaultProps = {
+  references: null,
   className: null,
   elementClassName: null,
   light: false,

@@ -97,6 +97,7 @@ class DatabaseFunctions {
         blog_banner_color: blog.blogBannerColor,
         blog_card_light: blog.blogCardLight,
         blog_card_link: blog.blogCardLink,
+        blog_bibtex: blog.blogBibtex,
       },
       json: true,
     };
