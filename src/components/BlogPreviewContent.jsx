@@ -1,5 +1,6 @@
 import PropTypes from 'prop-types';
 import React from 'react';
+import BpkText from 'bpk-component-text';
 import YoutubeEmbedVideo from 'youtube-embed-video';
 import BpkImage, {
   withLazyLoading,
@@ -41,6 +42,8 @@ const MD_BOLD_REGEX = /(.*)\*\*([^\*]*)\*\*(.*)/gi;
 const MD_QUOTATION_REGEX = /(.*)\>([^\>\<]*)\<(.*)/gi;
 const MD_CITATION_REGEX = /(.*)!cite\(([^\(\)]*)\)(.*)/gi;
 const MD_REFERENCES_REGEX = /(.*)!printReferences\(\)(.*)/gi;
+const MD_FOOTNOTE_1_REGEX = /(.*)!footnote\(([0-9]+)\)(.*)/gi;
+const MD_FOOTNOTE_2_REGEX = /(.*)!footnote\[([0-9]+)\]\(([^\(\)]+)\)(.*)/gi;
 
 // This component works recursively. Each time it checks for a feature (such as a link, stikethrough etc)
 // At each stage, if it finds one it renders the appropriate component, passing the surrounding text to
@@ -110,6 +113,72 @@ const BlogPreviewContent = props => {
           references={references}
           elementClassName={elementClassName}
           content={postBoldText}
+        />
+      </span>
+    );
+  }
+
+  // If it's a footnote ref, return a superscript number:
+  const mdFootNote1 = content.split(MD_FOOTNOTE_1_REGEX);
+  if (mdFootNote1.length > 2) {
+    // console.log(content);
+    // console.log(content.split(MD_BOLD_REGEX));
+    const preFootnoteText = `${mdFootNote1.shift()} ${mdFootNote1.shift()}`;
+    const footnoteNumber = mdFootNote1.shift();
+    // console.log('mdFootNote1');
+    // console.log(mdFootNote1);
+    const postFootnoteText = mdFootNote1.join('');
+    return (
+      <span className={classNameFinal.join(' ')} {...rest}>
+        <BlogPreviewContent
+          noAnchor={noAnchor}
+          light={light}
+          references={references}
+          elementClassName={elementClassName}
+          content={preFootnoteText}
+        />
+
+        <BpkText textStyle="xs">
+          <sup>{footnoteNumber}</sup>
+        </BpkText>
+        <BlogPreviewContent
+          noAnchor={noAnchor}
+          light={light}
+          references={references}
+          elementClassName={elementClassName}
+          content={postFootnoteText}
+        />
+      </span>
+    );
+  }
+
+  // If it's a footnote, return a superscript number:
+  const mdFootNote2 = content.split(MD_FOOTNOTE_2_REGEX);
+  if (mdFootNote2.length > 3) {
+    // console.log(content);
+    // console.log(content.split(MD_BOLD_REGEX));
+    const preFootnoteText = `${mdFootNote2.shift()} ${mdFootNote2.shift()}`;
+    const footnoteNumber = mdFootNote2.shift();
+    const footnoteValue = mdFootNote2.shift();
+    const postFootnoteText = mdFootNote2.join('');
+    return (
+      <span className={classNameFinal.join(' ')} {...rest}>
+        <BlogPreviewContent
+          noAnchor={noAnchor}
+          light={light}
+          references={references}
+          elementClassName={elementClassName}
+          content={preFootnoteText}
+        />
+        <BpkText textStyle="xs">
+          <sup>{footnoteNumber}</sup> {footnoteValue}
+        </BpkText>
+        <BlogPreviewContent
+          noAnchor={noAnchor}
+          light={light}
+          references={references}
+          elementClassName={elementClassName}
+          content={postFootnoteText}
         />
       </span>
     );
