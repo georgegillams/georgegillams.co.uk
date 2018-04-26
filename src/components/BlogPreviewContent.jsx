@@ -9,18 +9,24 @@ import TextLink from './TextLink';
 import Strikethrough from './Strikethrough';
 import Quote from './Quote';
 import SubSection from './SubSection';
+import Code from './Code';
 import CodeInline from './CodeInline';
+import CodeBashArrow from './CodeBashArrow';
 
 import STYLES from './blog-viewer.scss';
+import PAGES_STYLES from './../Pages/pages.scss';
 
-const getClassName = className => STYLES[className] || 'UNKNOWN';
+const getClassName = className =>
+  STYLES[className] || PAGES_STYLES[className] || 'UNKNOWN';
 const documentIfExists = typeof window !== 'undefined' ? document : null;
 const FadingLazyLoadedImage = withLoadingBehavior(
   withLazyLoading(BpkImage, documentIfExists),
 );
 
 const MD_LINK_REGEX = /(.*)\[([^\[\]]*)\]\(([^\(\)]*)\)(.*)/gi;
-const MD_IMAGE_REGEX = /(.*)!\[([0-9]+)x([0-9]+)\]\[([^\[\]]*)\]\(([^\(\)]*)\)(.*)/gi;
+const MD_BLOCK_CODE_REGEX = /(.*)```\(([^\(\)]*)\)\(([^\(\)]*)\)\n([.\s\S]*)\n```(.*)/gi;
+const MD_IMAGE_REGEX = /(.*)!\[([^\[\]]*)\]\(([^\(\)]*)\)(.*)/gi;
+const MD_LAZY_LOAD_IMAGE_REGEX = /(.*)!\[([0-9]+)x([0-9]+)\]\[([^\[\]]*)\]\(([^\(\)]*)\)(.*)/gi;
 const MD_LINK_BIG_REGEX = /(.*)!ssLink\[([^\[\]]*)\]\(([^\(\)]*)\)(.*)/gi;
 const MD_YOUTUBE_REGEX = /(.*)!yt\[([^\[\]]*)\]\(([^\(\)]*)\)(.*)/gi;
 const MD_STRIKETHROUGH_REGEX = /(.*)~([^~]*)~(.*)/gi;
@@ -107,6 +113,42 @@ const BlogPreviewContent = props => {
   }
 
   // If it's inline code, return a CodeInline component:
+  const mdBlockCode = content.split(MD_BLOCK_CODE_REGEX);
+  if (mdBlockCode.length > 4) {
+    const preInlineCodeText = `${mdBlockCode.shift()} ${mdBlockCode.shift()}`;
+    const language = mdBlockCode.shift();
+    const githubLink = mdBlockCode.shift();
+    const blockCode = mdBlockCode.shift();
+    const postInlineCodeText = mdBlockCode.join('');
+    return (
+      <span className={classNameFinal.join(' ')} {...rest}>
+        <BlogPreviewContent
+          elementClassName={elementClassName}
+          content={preInlineCodeText}
+        />
+        <Code lang={language} githubUrl={githubLink}>
+          {blockCode.split('\n\n').map(b => (
+            <span>
+              <CodeBashArrow />{' '}
+              {b.split('\n').map(l => (
+                <span>
+                  {l}
+                  <br />
+                </span>
+              ))}
+              <br />
+            </span>
+          ))}
+        </Code>
+        <BlogPreviewContent
+          elementClassName={elementClassName}
+          content={postInlineCodeText}
+        />
+      </span>
+    );
+  }
+
+  // If it's inline code, return a CodeInline component:
   const mdInlineCode = content.split(MD_INLINE_CODE_REGEX);
   if (mdInlineCode.length > 2) {
     const preInlineCodeText = `${mdInlineCode.shift()} ${mdInlineCode.shift()}`;
@@ -152,15 +194,41 @@ const BlogPreviewContent = props => {
     );
   }
 
-  // If it's an image, return an Image component:
+  // If it's a regular image, return an Image component:
   const mdImage = content.split(MD_IMAGE_REGEX);
-  if (mdImage.length > 5) {
+  if (mdImage.length > 3) {
     const preImageText = `${mdImage.shift()} ${mdImage.shift()}`;
-    const aspectX = parseInt(mdImage.shift(), 10);
-    const aspectY = parseInt(mdImage.shift(), 10);
     const imageAltText = mdImage.shift();
     const imageSrc = mdImage.shift();
     const postImageText = mdImage.join('');
+    return (
+      <span className={classNameFinal.join(' ')} {...rest}>
+        <BlogPreviewContent
+          elementClassName={elementClassName}
+          content={preImageText}
+        />
+        <img
+          className={getClassName('pages__image')}
+          alt={imageAltText}
+          src={imageSrc}
+        />
+        <BlogPreviewContent
+          elementClassName={elementClassName}
+          content={postImageText}
+        />
+      </span>
+    );
+  }
+
+  // If it's a lazy-loaded image, return an Image component:
+  const mdLazyLoadedImage = content.split(MD_LAZY_LOAD_IMAGE_REGEX);
+  if (mdLazyLoadedImage.length > 5) {
+    const preImageText = `${mdLazyLoadedImage.shift()} ${mdLazyLoadedImage.shift()}`;
+    const aspectX = parseInt(mdLazyLoadedImage.shift(), 10);
+    const aspectY = parseInt(mdLazyLoadedImage.shift(), 10);
+    const imageAltText = mdLazyLoadedImage.shift();
+    const imageSrc = mdLazyLoadedImage.shift();
+    const postImageText = mdLazyLoadedImage.join('');
     return (
       <span className={classNameFinal.join(' ')} {...rest}>
         <BlogPreviewContent
