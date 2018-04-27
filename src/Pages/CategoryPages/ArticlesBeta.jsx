@@ -1,10 +1,13 @@
 import React, { Component } from 'react';
 import { withRouter } from 'react-router-dom';
+import { BpkExtraLargeSpinner, SPINNER_TYPES } from 'bpk-component-spinner';
+import Funnies from 'funnies';
 import ArticleCard from '../../components/ArticleCard';
 import PageSwitchScroller from '../../components/PageSwitchScroller';
 import Tag, { TAG_TYPES } from '../../components/Tag';
 import TagFilter from '../../components/TagFilter';
 import Section from '../../components/Section';
+import SubSection from '../../components/SubSection';
 import netNeutrality from '../Articles/images/spinner.gif';
 import netNeutralitySm from '../Articles/images/netNeutralitySm.jpg';
 import vim from '../Articles/images/vim.jpg';
@@ -17,6 +20,8 @@ import teapotGif from '../Articles/images/teapot.gif';
 import teapot from '../Articles/images/teapot.jpg';
 import HelperFunctions from '../../HelperFunctions';
 import DatabaseFunctions from '../../DatabaseFunctions';
+
+const funnies = new Funnies();
 
 import STYLES from '../pages.scss';
 
@@ -61,6 +66,18 @@ class Articles extends Component {
           }}
           className={getClassName('pages__tag-filter')}
         />
+        {!this.state.blogs && (
+          <SubSection
+            noAnchor
+            style={{ textAlign: 'center' }}
+            name="Loading..."
+          >
+            {funnies.message()}
+            <br />
+            <br />
+            <BpkExtraLargeSpinner large type={SPINNER_TYPES.dark} />
+          </SubSection>
+        )}
         {this.state.blogs && (
           <Section name="Database articles (beta)">
             {this.state.blogs.map(b => (
