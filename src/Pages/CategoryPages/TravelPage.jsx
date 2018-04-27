@@ -65,7 +65,7 @@ class TravelPage extends Component {
                     className={getClassName('pages__card')}
                     fillImageSrc={b.blogHeroImage}
                     imageSrc={b.blogImage}
-                    linkUrl={`/blog/view?id=${b.blogId}`}
+                    linkUrl={`/travel/view?id=${b.blogId}`}
                     title={b.blogName}
                     imageBorder={
                       b.blogImageBorderColor ? b.blogImageBorderColor : null
