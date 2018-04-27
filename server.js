@@ -32,7 +32,7 @@ app.use((req, res, next) => {
   res.header('Access-Control-Allow-Origin', '*');
   res.header(
     'Access-Control-Allow-Headers',
-    'Origin, X-Requested-With, Content-Type, Accept, page_id, payment_id, blog_id, Api-Key',
+    'Origin, X-Requested-With, Content-Type, Accept, page_id, payment_id, blog_id, Api-Key, selected-blog-tags',
   );
   res.header('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE');
   next();
@@ -408,12 +408,25 @@ router.get('/api/blog-posts', (req, res) => {
     res.end();
     return;
   }
+  const selectedBlogTags = req.headers['selected-blog-tags']
+    ? req.headers['selected-blog-tags'].split(', ')
+    : [];
   client.lrange(`blog-posts`, 0, -1, (err, reply) => {
     const result = [];
     for (let i = 0; i < reply.length; i += 1) {
       const blog = JSON.parse(reply[i]);
       if (apiKey === xApiKeyPrivate || blog.blogPublished) {
-        result.push(blog);
+        if (selectedBlogTags.length === 0) {
+          result.push(blog);
+        } else {
+          for (let j = 0; j < blog.blogTags.length; j += 1) {
+            const tag = blog.blogTags[j];
+            if (selectedBlogTags.includes(tag)) {
+              result.push(blog);
+              break;
+            }
+          }
+        }
       }
     }
     res.send(
@@ -467,6 +480,7 @@ router.post('/api/blog-posts', (req, res) => {
   const blogCardLink = req.body.blog_card_link;
   const blogBibtex = req.body.blog_bibtex;
   const blogShowInBlogsList = req.body.blog_show_in_blogs_list;
+  const blogCardDate = req.body.blog_card_date;
   client.rpush([
     `blog-posts`,
     JSON.stringify({
@@ -481,6 +495,7 @@ router.post('/api/blog-posts', (req, res) => {
       blogCardLink,
       blogBibtex,
       blogShowInBlogsList,
+      blogCardDate,
       publishedTimestamp: null,
     }),
   ]);
@@ -507,6 +522,7 @@ router.post('/api/blog-posts/update', (req, res) => {
   const blogCardLink = req.body.blog_card_link;
   const blogBibtex = req.body.blog_bibtex;
   const blogShowInBlogsList = req.body.blog_show_in_blogs_list;
+  const blogCardDate = req.body.blog_card_date;
   if (blogId !== undefined) {
     client.lrange(`blog-posts`, 0, -1, (err, reply) => {
       for (let i = 0; i < reply.length; i += 1) {
@@ -529,6 +545,7 @@ router.post('/api/blog-posts/update', (req, res) => {
           blog.blogCardLink = blogCardLink;
           blog.blogBibtex = blogBibtex;
           blog.blogShowInBlogsList = blogShowInBlogsList;
+          blog.blogCardDate = blogCardDate;
           client.lset(`blog-posts`, i, JSON.stringify(blog));
           return;
         }
