@@ -1,8 +1,7 @@
 import React from 'react';
-import { BpkSpinner, SPINNER_TYPES } from 'bpk-component-spinner';
 import BpkInput, { INPUT_TYPES } from 'bpk-component-input';
 import Section from '../../components/Section';
-import SubSection from '../../components/SubSection';
+import Loading from '../../components/Loading';
 import Button from '../../components/Button';
 import DatabaseFunctions from '../../DatabaseFunctions';
 import AdminComments from './AdminComments';
@@ -21,7 +20,8 @@ class Admin extends React.Component {
       paymentsCount: 0,
       pageIds: [],
       payments: [],
-      blogs: [],
+      publishedBlogs: [],
+      allBlogs: [],
       apiKey: '',
       pattern: '',
     };
@@ -44,8 +44,13 @@ class Admin extends React.Component {
       }
     };
     const getBlogs = () => {
-      DatabaseFunctions.getBlogs(this.state.apiKey, result => {
-        this.setState({ blogs: result });
+      if (this.state.apiKey !== '') {
+        DatabaseFunctions.getBlogs(this.state.apiKey, [], result => {
+          this.setState({ allBlogs: result });
+        });
+      }
+      DatabaseFunctions.getBlogs('', [], result => {
+        this.setState({ publishedBlogs: result });
       });
     };
 
@@ -133,25 +138,38 @@ class Admin extends React.Component {
             <AdminPayment apiKey={this.state.apiKey} payment={p} />
           ))}
         </Section>
-        <Section name="Blogs">
-          {this.state.blogs.map(b => (
-            <AdminBlog apiKey={this.state.apiKey} blog={b} />
-          ))}
-          <Button
-            onClick={() => {
-              DatabaseFunctions.addBlog(this.state.apiKey, result => {
-                console.log(result);
-                if (result && result.blog_id) {
-                  this.props.history.push(
-                    `/admin/blog-editor?id=${result.blog_id}`,
-                  );
-                }
-              });
-            }}
-          >
-            Add blog
-          </Button>
+        <Section name="Published blogs">
+          {this.state.publishedBlogs.length > 0 ? (
+            <div>
+              {this.state.publishedBlogs.map(b => (
+                <AdminBlog apiKey={this.state.apiKey} blog={b} />
+              ))}
+            </div>
+          ) : (
+            <Loading />
+          )}
         </Section>
+        {this.state.allBlogs.length > 0 && (
+          <Section name="All blogs">
+            {this.state.allBlogs.map(b => (
+              <AdminBlog apiKey={this.state.apiKey} blog={b} />
+            ))}
+          </Section>
+        )}
+        <Button
+          onClick={() => {
+            DatabaseFunctions.addBlog(this.state.apiKey, result => {
+              console.log(result);
+              if (result && result.blog_id) {
+                this.props.history.push(
+                  `/admin/blog-editor?id=${result.blog_id}`,
+                );
+              }
+            });
+          }}
+        >
+          Add blog
+        </Button>
       </Section>
     );
   }

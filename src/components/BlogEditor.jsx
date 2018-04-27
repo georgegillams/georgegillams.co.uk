@@ -79,6 +79,12 @@ class BlogEditor extends Component {
     this.props.onBlogChanged(newBlog);
   };
 
+  onBlogCardDateChanged = event => {
+    const newBlog = JSON.parse(JSON.stringify(this.props.blog));
+    newBlog.blogCardDate = event.target.value;
+    this.props.onBlogChanged(newBlog);
+  };
+
   onBlogContentChanged = event => {
     const newBlog = JSON.parse(JSON.stringify(this.props.blog));
     newBlog.blogContent = event.target.value;
@@ -131,6 +137,14 @@ class BlogEditor extends Component {
           value={blog.blogHeroImage}
           onChange={this.onBlogHeroImageChanged}
           placeholder="Blog card hero image"
+        />
+        <BpkInput
+          className={elementClassNameFinal.join(' ')}
+          id="blogCardDate"
+          name="Blog card date"
+          value={blog.blogCardDate}
+          onChange={this.onBlogCardDateChanged}
+          placeholder="Blog card date"
         />
         <BpkCheckBox
           className={elementClassNameFinal.join(' ')}
