@@ -1,13 +1,10 @@
 import React from 'react';
 import querystring from 'querystring';
-import Funnies from 'funnies';
-import { BpkExtraLargeSpinner, SPINNER_TYPES } from 'bpk-component-spinner';
-import SubSection from './../components/SubSection';
 import BlogRenderer from './../components/BlogRenderer';
 import Comments from './../components/Comments';
+import Loading from './../components/Loading';
 import DatabaseFunctions from './../DatabaseFunctions';
 
-const funnies = new Funnies();
 import STYLES from './pages.scss';
 
 const getClassName = className => STYLES[className] || 'UNKNOWN';
@@ -51,14 +48,7 @@ class BlogEditorPage extends React.Component {
 
   render() {
     if (!this.state.blog) {
-      return (
-        <SubSection noAnchor style={{ textAlign: 'center' }} name="Loading...">
-          {funnies.message()}
-          <br />
-          <br />
-          <BpkExtraLargeSpinner large type={SPINNER_TYPES.dark} />
-        </SubSection>
-      );
+      return <Loading />;
     }
 
     return (
