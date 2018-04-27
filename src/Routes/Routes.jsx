@@ -21,9 +21,8 @@ import NetNeutrality from '../Pages/Articles/NetNeutrality';
 import Disneyland from '../Pages/Travel/Disneyland';
 import SerreChevalier from '../Pages/Travel/SerreChevalier';
 import Longleat from '../Pages/Travel/Longleat';
-import Travel from '../Pages/CategoryPages/Travel';
-import Articles from '../Pages/CategoryPages/Articles';
-import ArticlesBeta from '../Pages/CategoryPages/ArticlesBeta';
+import TravelPage from '../Pages/CategoryPages/TravelPage';
+import BlogsPage from '../Pages/CategoryPages/BlogsPage';
 import Munich from '../Pages/Travel/Munich';
 import Iceland from '../Pages/Travel/Iceland';
 import Contact from '../Pages/Contact';
@@ -65,8 +64,7 @@ const Routes = (
     <DefaultLayout>
       <Switch>
         <Route exact path="/" component={HomePage} />
-        <Route exact path="/blog" component={Articles} />
-        <Route exact path="/blog-beta" component={ArticlesBeta} />
+        <Route exact path="/blog" component={BlogsPage} />
         <Route
           path="/blog/react-http-response-codes"
           component={HttpResponseCodesInReact}
@@ -87,7 +85,7 @@ const Routes = (
           path="/blog-depreciated/uk-bank-security"
           component={UkBankSecurity}
         />
-        <Route exact path="/travel" component={Travel} />
+        <Route exact path="/travel" component={TravelPage} />
         <Route path="/travel/longleat-2017" component={Longleat} />
         <Route path="/travel/munich-2017" component={Munich} />
         <Route path="/travel/iceland-2018" component={Iceland} />
