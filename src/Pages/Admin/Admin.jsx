@@ -45,11 +45,11 @@ class Admin extends React.Component {
     };
     const getBlogs = () => {
       if (this.state.apiKey !== '') {
-        DatabaseFunctions.getBlogs(this.state.apiKey, result => {
+        DatabaseFunctions.getBlogs(this.state.apiKey, [], result => {
           this.setState({ allBlogs: result });
         });
       }
-      DatabaseFunctions.getBlogs('', result => {
+      DatabaseFunctions.getBlogs('', [], result => {
         this.setState({ publishedBlogs: result });
       });
     };
