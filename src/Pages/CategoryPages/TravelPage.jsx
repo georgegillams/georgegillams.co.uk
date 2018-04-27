@@ -12,7 +12,7 @@ import STYLES from '../pages.scss';
 
 const getClassName = className => STYLES[className] || 'UNKNOWN';
 
-const Travel = () => (
+const TravelPage = () => (
   <div style={{ width: '100%' }}>
     {' '}
     <PageSwitchScroller />
@@ -64,4 +64,4 @@ const Travel = () => (
   </div>
 );
 
-export default Travel;
+export default TravelPage;

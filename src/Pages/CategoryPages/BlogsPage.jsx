@@ -29,7 +29,7 @@ const getClassName = className => STYLES[className] || 'UNKNOWN';
 
 const TagFilterRoutable = withRouter(TagFilter);
 
-class Articles extends Component {
+class BlogsPage extends Component {
   constructor(props) {
     super(props);
 
@@ -76,7 +76,7 @@ class Articles extends Component {
           </SubSection>
         )}
         {this.state.blogs && (
-          <Section name="Database articles (beta)">
+          <div>
             {this.state.blogs.map(
               b =>
                 !b.blogShowInBlogsList ? null : (
@@ -99,109 +99,11 @@ class Articles extends Component {
                   </ArticleCard>
                 ),
             )}
-          </Section>
+          </div>
         )}
-        <Section name="Hardcoded articles (depreciated)">
-          {(this.state.selectedTags.length === 0 ||
-            HelperFunctions.includes(
-              this.state.selectedTags,
-              'photography',
-            )) && (
-            <ArticleCard
-              day={28}
-              month="Mar"
-              className={getClassName('pages__card')}
-              imageSrc={lrSm}
-              linkUrl="/blog/lightroom-workflow"
-              title="My Lightroom Workflow"
-              autoTallLayout
-            >
-              <Tag type={TAG_TYPES.photography} />
-            </ArticleCard>
-          )}
-          {/* <ArticleCard
-        light
-        day={0}
-        month="NaN"
-        className={getClassName('pages__card')}
-        imageBorder="cornflowerblue"
-        imageSrc={teapotGif}
-        fillImageSrc={teapot}
-        linkUrl="/blog/react-http-response-codes"
-        title="Sending a 418 in React.js"
-      >
-        <Tag type={TAG_TYPES.tech}  />
-      </ArticleCard>
-      <ArticleCard
-        day={0}
-        month="NaN"
-        className={getClassName('pages__card')}
-        imageSrc={rustSm}
-        linkUrl="/blog/week-of-rust"
-        title="My week of Rust"
-      >
-        <Tag type={TAG_TYPES.tech}  />
-      </ArticleCard>{' '} */}
-          {(this.state.selectedTags.length === 0 ||
-            HelperFunctions.includes(this.state.selectedTags, 'events')) && (
-            <ArticleCard
-              light
-              bannerColor="darkorange"
-              imageBorder="darkorange"
-              day={19}
-              month="Feb"
-              className={getClassName('pages__card')}
-              fillImageSrc={toughMudder}
-              imageSrc={toughMudderSm}
-              linkUrl="/blog/tough-mudder"
-              title="Running 5 Tough Mudders"
-              autoTallLayout
-            >
-              <Tag type={TAG_TYPES.events} />
-            </ArticleCard>
-          )}
-          {(this.state.selectedTags.length === 0 ||
-            HelperFunctions.includes(this.state.selectedTags, 'tech')) && (
-            <ArticleCard
-              backgroundImageClassName={getClassName(
-                'pages__nn-background-image',
-              )}
-              imageBorder="red"
-              bannerColor="red"
-              day={8}
-              month="Dec"
-              className={getClassName('pages__card')}
-              fillImageSrc={netNeutrality}
-              imageSrc={netNeutralitySm}
-              linkUrl="/blog/net-neutrality"
-              title="My Take on Net Neutrality"
-              autoTallLayout
-            >
-              <Tag type={TAG_TYPES.tech} />
-            </ArticleCard>
-          )}
-          {(this.state.selectedTags.length === 0 ||
-            HelperFunctions.includes(this.state.selectedTags, 'tech')) && (
-            <ArticleCard
-              light
-              day={23}
-              bannerColor="#E2344F"
-              imageBorder="lightgray"
-              month="Dec"
-              className={getClassName('pages__card')}
-              fillImageSrc={vim}
-              imageSrc={vimSm}
-              linkUrl="/blog/vim"
-              title="Switching to Vim"
-              autoTallLayout
-            >
-              <Tag type={TAG_TYPES.tech} />
-            </ArticleCard>
-          )}
-        </Section>
       </div>
     );
   }
 }
 
-export default Articles;
+export default BlogsPage;
