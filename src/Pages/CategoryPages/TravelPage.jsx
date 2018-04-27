@@ -18,14 +18,14 @@ class TravelPage extends Component {
     super(props);
 
     this.state = {
-      selectedTags: [],
+      selectedTags: ['travel'],
       travelBlogs: null,
     };
   }
 
   componentDidMount() {
     const getTravelBlogs = () => {
-      DatabaseFunctions.getBlogs('', results => {
+      DatabaseFunctions.getBlogs('', this.state.selectedTags, results => {
         this.setState({
           travelBlogs: results,
         });
@@ -40,13 +40,6 @@ class TravelPage extends Component {
     return (
       <div style={{ width: '100%' }}>
         <PageSwitchScroller />
-        <TagFilterRoutable
-          selectedTags={this.state.selectedTags}
-          onSelectedTagsChanged={nst => {
-            this.setState({ selectedTags: nst });
-          }}
-          className={getClassName('pages__tag-filter')}
-        />
         {!this.state.travelBlogs && <Loading />}
         {this.state.travelBlogs && (
           <div>
