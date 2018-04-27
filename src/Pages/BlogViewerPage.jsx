@@ -62,7 +62,7 @@ class BlogEditorPage extends React.Component {
     }
 
     return (
-      <div>
+      <div id="greasy_blog_handle">
         <BlogRenderer blog={this.state.blog} />
         <Comments pageId={this.state.blog.blogId} />
       </div>
