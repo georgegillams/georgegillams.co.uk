@@ -403,7 +403,9 @@ router.get('/api/blog-posts', (req, res) => {
         result.push(blog);
       }
     }
-    res.send(result);
+    res.send(
+      result.sort((a, b) => a.publishedTimestamp < b.publishedTimestamp),
+    );
   });
 });
 
