@@ -38,17 +38,22 @@ const redirects = [
   { from: '/articles/net-neutrality', to: '/blog/net-neutrality' },
   { from: '/articles/vim', to: '/blog/vim' },
   { from: '/articles/uk-bank-security', to: '/blog/uk-bank-security' },
+  { from: '/articles/week-of-rust', to: '/blog/week-of-rust' },
   {
     from: '/articles/react-http-response-codes',
     to: '/blog/react-http-response-codes',
   },
-  { from: '/articles/week-of-rust', to: '/blog/week-of-rust' },
-  { from: '/travel/list', to: '/travel' },
   { from: '/articles/list', to: '/blog' },
   { from: '/articles', to: '/blog' },
+  { from: '/net-neutrality', to: '/blog/net-neutrality' },
+  { from: '/blog/tough-mudder', to: '/blog/view?id=tg5x7po9' },
+  { from: '/blog/lightroom-workflow', to: '/blog/view?id=lqngy' },
+  { from: '/blog/net-neutrality', to: '/blog/view?id=w85aht' },
+  { from: '/blog/vim', to: '/blog/view?id=azcpjh' },
+  { from: '/blog/uk-bank-security', to: '/blog/view?id=y77dnh' },
+  { from: '/travel/list', to: '/travel' },
   { from: '/art', to: '/photography' },
   { from: '/photoshop', to: '/photography' },
-  { from: '/net-neutrality', to: '/blog/net-neutrality' },
   { from: '/phot', to: '/photography' },
   { from: '/photo', to: '/photography' },
   { from: '/payment', to: '/payments' },
@@ -68,11 +73,20 @@ const Routes = (
         />
         {/* <Route path="/blog/week-of-rust" component={WeekOfRust} /> */}
         <Route path="/blog/view" component={BlogViewerPage} />
-        <Route path="/blog/lightroom-workflow" component={LightroomWorkflow} />
-        <Route path="/blog/tough-mudder" component={ToughMudder} />
-        <Route path="/blog/net-neutrality" component={NetNeutrality} />
-        <Route path="/blog/vim" component={SwitchToVim} />
-        <Route path="/blog/uk-bank-security" component={UkBankSecurity} />
+        <Route
+          path="/blog-depreciated/lightroom-workflow"
+          component={LightroomWorkflow}
+        />
+        <Route path="/blog-depreciated/tough-mudder" component={ToughMudder} />
+        <Route
+          path="/blog-depreciated/net-neutrality"
+          component={NetNeutrality}
+        />
+        <Route path="/blog-depreciated/vim" component={SwitchToVim} />
+        <Route
+          path="/blog-depreciated/uk-bank-security"
+          component={UkBankSecurity}
+        />
         <Route exact path="/travel" component={Travel} />
         <Route path="/travel/longleat-2017" component={Longleat} />
         <Route path="/travel/munich-2017" component={Munich} />
