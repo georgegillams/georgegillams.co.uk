@@ -51,6 +51,11 @@ const redirects = [
   { from: '/blog/vim', to: '/blog/view?id=azcpjh' },
   { from: '/blog/uk-bank-security', to: '/blog/view?id=y77dnh' },
   { from: '/travel/list', to: '/travel' },
+  { from: '/travel/serre-chevalier-2017', to: '/travel/view?id=kzm87' },
+  { from: '/travel/disneyland-2017', to: '/travel/view?id=m4noe' },
+  { from: '/travel/munich-2017', to: '/travel/view?id=e0muz1' },
+  { from: '/travel/longleat-2017', to: '/travel/view?id=evrd8w' },
+  { from: '/travel/iceland-2018', to: '/travel/view?id=q03ms' },
   { from: '/art', to: '/photography' },
   { from: '/photoshop', to: '/photography' },
   { from: '/phot', to: '/photography' },
@@ -69,8 +74,8 @@ const Routes = (
           path="/blog/react-http-response-codes"
           component={HttpResponseCodesInReact}
         />
-        {/* <Route path="/blog/week-of-rust" component={WeekOfRust} /> */}
         <Route path="/blog/view" component={BlogViewerPage} />
+        <Route path="/travel/view" component={BlogViewerPage} />
         <Route
           path="/blog-depreciated/lightroom-workflow"
           component={LightroomWorkflow}
@@ -86,11 +91,6 @@ const Routes = (
           component={UkBankSecurity}
         />
         <Route exact path="/travel" component={TravelPage} />
-        <Route path="/travel/longleat-2017" component={Longleat} />
-        <Route path="/travel/munich-2017" component={Munich} />
-        <Route path="/travel/iceland-2018" component={Iceland} />
-        <Route path="/travel/disneyland-2017" component={Disneyland} />
-        <Route path="/travel/serre-chevalier-2017" component={SerreChevalier} />
         <Route path="/photography" component={Art} />
         <Route exact path="/work" component={Work} />
         <Route
