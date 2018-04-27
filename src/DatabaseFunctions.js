@@ -41,7 +41,7 @@ class DatabaseFunctions {
     });
   }
 
-  static getBlogs(privateApiKey, cb) {
+  static getBlogs(privateApiKey, selectedBlogTags, cb) {
     const options = {
       method: 'GET',
       url: `${url}/api/blog-posts`,

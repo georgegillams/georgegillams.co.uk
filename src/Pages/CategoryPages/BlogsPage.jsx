@@ -25,7 +25,7 @@ class BlogsPage extends Component {
 
   componentDidMount() {
     const getBlogs = () => {
-      DatabaseFunctions.getBlogs('', results => {
+      DatabaseFunctions.getBlogs('', this.state.selectedTags, results => {
         this.setState({
           blogs: results,
         });
