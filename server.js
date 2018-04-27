@@ -451,6 +451,7 @@ router.post('/api/blog-posts', (req, res) => {
   const blogCardLight = req.body.blog_card_light;
   const blogCardLink = req.body.blog_card_link;
   const blogBibtex = req.body.blog_bibtex;
+  const blogShowInBlogsList = req.body.blog_show_in_blogs_list;
   client.rpush([
     `blog-posts`,
     JSON.stringify({
@@ -464,6 +465,7 @@ router.post('/api/blog-posts', (req, res) => {
       blogCardLight,
       blogCardLink,
       blogBibtex,
+      blogShowInBlogsList,
       publishedTimestamp: null,
     }),
   ]);
@@ -489,6 +491,7 @@ router.post('/api/blog-posts/update', (req, res) => {
   const blogCardLight = req.body.blog_card_light;
   const blogCardLink = req.body.blog_card_link;
   const blogBibtex = req.body.blog_bibtex;
+  const blogShowInBlogsList = req.body.blog_show_in_blogs_list;
   if (blogId !== undefined) {
     client.lrange(`blog-posts`, 0, -1, (err, reply) => {
       for (let i = 0; i < reply.length; i += 1) {
@@ -510,6 +513,7 @@ router.post('/api/blog-posts/update', (req, res) => {
           blog.blogCardLight = blogCardLight;
           blog.blogCardLink = blogCardLink;
           blog.blogBibtex = blogBibtex;
+          blog.blogShowInBlogsList = blogShowInBlogsList;
           client.lset(`blog-posts`, i, JSON.stringify(blog));
           return;
         }
