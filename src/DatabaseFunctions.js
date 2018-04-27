@@ -98,6 +98,7 @@ class DatabaseFunctions {
         blog_card_light: blog.blogCardLight,
         blog_card_link: blog.blogCardLink,
         blog_bibtex: blog.blogBibtex,
+        blog_show_in_blogs_list: blog.blogShowInBlogsList,
       },
       json: true,
     };
@@ -122,6 +123,7 @@ class DatabaseFunctions {
         blog_card_link: '/blog/no-blog-here',
         blog_card_light: false,
         blog_published: false,
+        blog_show_in_blogs_list: true,
       },
       json: true,
     };

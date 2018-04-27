@@ -53,9 +53,6 @@ class Articles extends Component {
   }
 
   render() {
-    console.log('this.state.blogs');
-    console.log(this.state.blogs);
-
     return (
       <div style={{ width: '100%' }}>
         <PageSwitchScroller />
@@ -80,25 +77,28 @@ class Articles extends Component {
         )}
         {this.state.blogs && (
           <Section name="Database articles (beta)">
-            {this.state.blogs.map(b => (
-              <ArticleCard
-                day={new Date(1000 * b.publishedTimestamp).getDate()}
-                month={new Date(1000 * b.publishedTimestamp).getMonth()}
-                className={getClassName('pages__card')}
-                fillImageSrc={b.blogHeroImage}
-                imageSrc={b.blogImage}
-                linkUrl={`/blog/view?id=${b.blogId}`}
-                title={b.blogName}
-                imageBorder={
-                  b.blogImageBorderColor ? b.blogImageBorderColor : null
-                }
-                bannerColor={b.blogBannerColor ? b.blogBannerColor : null}
-                autoTallLayout
-                light={b.blogCardLight}
-              >
-                {b && b.blogTags && b.blogTags.map(t => <Tag type={t} />)}
-              </ArticleCard>
-            ))}
+            {this.state.blogs.map(
+              b =>
+                !b.blogShowInBlogsList ? null : (
+                  <ArticleCard
+                    day={new Date(1000 * b.publishedTimestamp).getDate()}
+                    month={new Date(1000 * b.publishedTimestamp).getMonth()}
+                    className={getClassName('pages__card')}
+                    fillImageSrc={b.blogHeroImage}
+                    imageSrc={b.blogImage}
+                    linkUrl={`/blog/view?id=${b.blogId}`}
+                    title={b.blogName}
+                    imageBorder={
+                      b.blogImageBorderColor ? b.blogImageBorderColor : null
+                    }
+                    bannerColor={b.blogBannerColor ? b.blogBannerColor : null}
+                    autoTallLayout
+                    light={b.blogCardLight}
+                  >
+                    {b && b.blogTags && b.blogTags.map(t => <Tag type={t} />)}
+                  </ArticleCard>
+                ),
+            )}
           </Section>
         )}
         <Section name="Hardcoded articles (depreciated)">
