@@ -30,20 +30,22 @@ const FadingLazyLoadedImage = withLoadingBehavior(
   withLazyLoading(BpkImage, documentIfExists),
 );
 
-const MD_LINK_REGEX = /(.*)\[([^\[\]]*)\]\(([^\(\)]*)\)(.*)/gi;
-const MD_BLOCK_CODE_REGEX = /(.*)```\(([^\(\)]*)\)\(([^\(\)]*)\)\n([.\s\S]*)\n```(.*)/gi;
-const MD_IMAGE_REGEX = /(.*)!\[([^\[\]]*)\]\(([^\(\)]*)\)(.*)/gi;
-const MD_LAZY_LOAD_IMAGE_REGEX = /(.*)!\[([0-9]+)x([0-9]+)\]\[([^\[\]]*)\]\(([^\(\)]*)\)(.*)/gi;
-const MD_LINK_BIG_REGEX = /(.*)!ssLink\[([^\[\]]*)\]\(([^\(\)]*)\)(.*)/gi;
-const MD_YOUTUBE_REGEX = /(.*)!yt\[([^\[\]]*)\]\(([^\(\)]*)\)(.*)/gi;
-const MD_STRIKETHROUGH_REGEX = /(.*)~([^~]*)~(.*)/gi;
-const MD_INLINE_CODE_REGEX = /(.*)`([^`]*)`(.*)/gi;
-const MD_BOLD_REGEX = /(.*)\*\*([^\*]*)\*\*(.*)/gi;
-const MD_QUOTATION_REGEX = /(.*)\>([^\>\<]*)\<(.*)/gi;
-const MD_CITATION_REGEX = /(.*)!cite\(([^\(\)]*)\)(.*)/gi;
-const MD_REFERENCES_REGEX = /(.*)!printReferences\(\)(.*)/gi;
-const MD_FOOTNOTE_1_REGEX = /(.*)!footnote\(([0-9]+)\)(.*)/gi;
-const MD_FOOTNOTE_2_REGEX = /(.*)!footnote\[([0-9]+)\]\(([^\(\)]+)\)(.*)/gi;
+const MD_LINK_REGEX = /([^]*)\[([^\[\]]*)\]\(([^\(\)]*)\)([^]*)/gi;
+const MD_SECTION_REGEX = /([^]*)# (.*\n)([^]*)/gi;
+const MD_SUBSECTION_REGEX = /([^]*)###? (.*\n)([^]*)/gi;
+const MD_BLOCK_CODE_REGEX = /([^]*)```\(([^\(\)]*)\)\(([^\(\)]*)\)\n([.\s\S]*)\n```([^]*)/gi;
+const MD_IMAGE_REGEX = /([^]*)!\[([^\[\]]*)\]\(([^\(\)]*)\)([^]*)/gi;
+const MD_LAZY_LOAD_IMAGE_REGEX = /([^]*)!\[([0-9]+)x([0-9]+)\]\[([^\[\]]*)\]\(([^\(\)]*)\)([^]*)/gi;
+const MD_LINK_BIG_REGEX = /([^]*)!ssLink\[([^\[\]]*)\]\(([^\(\)]*)\)([^]*)/gi;
+const MD_YOUTUBE_REGEX = /([^]*)!yt\[([^\[\]]*)\]\(([^\(\)]*)\)([^]*)/gi;
+const MD_STRIKETHROUGH_REGEX = /([^]*)~([^~]*)~([^]*)/gi;
+const MD_INLINE_CODE_REGEX = /([^]*)`([^`]*)`([^]*)/gi;
+const MD_BOLD_REGEX = /([^]*)\*\*([^\*]*)\*\*([^]*)/gi;
+const MD_QUOTATION_REGEX = /([^]*)\>([^\>\<]*)\<([^]*)/gi;
+const MD_CITATION_REGEX = /([^]*)!cite\(([^\(\)]*)\)([^]*)/gi;
+const MD_REFERENCES_REGEX = /([^]*)!printReferences\(\)([^]*)/gi;
+const MD_FOOTNOTE_1_REGEX = /([^]*)!footnote\(([0-9]+)\)([^]*)/gi;
+const MD_FOOTNOTE_2_REGEX = /([^]*)!footnote\[([0-9]+)\]\(([^\(\)]+)\)([^]*)/gi;
 
 // This component works recursively. Each time it checks for a feature (such as a link, stikethrough etc)
 // At each stage, if it finds one it renders the appropriate component, passing the surrounding text to
@@ -87,9 +89,7 @@ const BlogPreviewContent = props => {
   // If it's bold, return a span with fontWeight: 'bold' component:
   const mdBold = content.split(MD_BOLD_REGEX);
   if (mdBold.length > 2) {
-    // console.log(content);
-    // console.log(content.split(MD_BOLD_REGEX));
-    const preBoldText = `${mdBold.shift()} ${mdBold.shift()}`;
+    const preBoldText = `${mdBold.shift()}${mdBold.shift()}`;
     const boldText = mdBold.shift();
     const postBoldText = mdBold.join('');
     return (
@@ -121,12 +121,8 @@ const BlogPreviewContent = props => {
   // If it's a footnote ref, return a superscript number:
   const mdFootNote1 = content.split(MD_FOOTNOTE_1_REGEX);
   if (mdFootNote1.length > 2) {
-    // console.log(content);
-    // console.log(content.split(MD_BOLD_REGEX));
-    const preFootnoteText = `${mdFootNote1.shift()} ${mdFootNote1.shift()}`;
+    const preFootnoteText = `${mdFootNote1.shift()}${mdFootNote1.shift()}`;
     const footnoteNumber = mdFootNote1.shift();
-    // console.log('mdFootNote1');
-    // console.log(mdFootNote1);
     const postFootnoteText = mdFootNote1.join('');
     return (
       <span className={classNameFinal.join(' ')} {...rest}>
@@ -137,7 +133,6 @@ const BlogPreviewContent = props => {
           elementClassName={elementClassName}
           content={preFootnoteText}
         />
-
         <BpkText textStyle="xs">
           <sup>{footnoteNumber}</sup>
         </BpkText>
@@ -155,9 +150,7 @@ const BlogPreviewContent = props => {
   // If it's a footnote, return a superscript number:
   const mdFootNote2 = content.split(MD_FOOTNOTE_2_REGEX);
   if (mdFootNote2.length > 3) {
-    // console.log(content);
-    // console.log(content.split(MD_BOLD_REGEX));
-    const preFootnoteText = `${mdFootNote2.shift()} ${mdFootNote2.shift()}`;
+    const preFootnoteText = `${mdFootNote2.shift()}${mdFootNote2.shift()}`;
     const footnoteNumber = mdFootNote2.shift();
     const footnoteValue = mdFootNote2.shift();
     const postFootnoteText = mdFootNote2.join('');
@@ -187,9 +180,7 @@ const BlogPreviewContent = props => {
   // If it's a reference citation, return the Citation:
   const mdCitation = content.split(MD_CITATION_REGEX);
   if (mdCitation.length > 2) {
-    // console.log(content);
-    // console.log(content.split(MD_BOLD_REGEX));
-    const preCitationText = `${mdCitation.shift()} ${mdCitation.shift()}`;
+    const preCitationText = `${mdCitation.shift()}${mdCitation.shift()}`;
     const referenceIdentifier = mdCitation.shift();
     const postCitationText = mdCitation.join('');
     return (
@@ -216,10 +207,7 @@ const BlogPreviewContent = props => {
   // If it's reference print-out, return a references section:
   const mdReferencesPrintout = content.split(MD_REFERENCES_REGEX);
   if (mdReferencesPrintout.length > 1) {
-    // console.log('references');
-    // console.log(references);
-    // console.log(content.split(MD_BOLD_REGEX));
-    const preReferencesText = `${mdReferencesPrintout.shift()} ${mdReferencesPrintout.shift()}`;
+    const preReferencesText = `${mdReferencesPrintout.shift()}${mdReferencesPrintout.shift()}`;
     const postReferencesText = mdReferencesPrintout.join('');
     return (
       <span className={classNameFinal.join(' ')} {...rest}>
@@ -260,7 +248,7 @@ const BlogPreviewContent = props => {
   // If it's a strikethrough, return a Strikethrough component:
   const mdStrikethrough = content.split(MD_STRIKETHROUGH_REGEX);
   if (mdStrikethrough.length > 2) {
-    const preStrikeText = `${mdStrikethrough.shift()} ${mdStrikethrough.shift()}`;
+    const preStrikeText = `${mdStrikethrough.shift()}${mdStrikethrough.shift()}`;
     const strikenText = mdStrikethrough.shift();
     const postStrikeText = mdStrikethrough.join('');
     return (
@@ -289,7 +277,7 @@ const BlogPreviewContent = props => {
   // If it's inline code, return a CodeInline component:
   const mdBlockCode = content.split(MD_BLOCK_CODE_REGEX);
   if (mdBlockCode.length > 4) {
-    const preInlineCodeText = `${mdBlockCode.shift()} ${mdBlockCode.shift()}`;
+    const preInlineCodeText = `${mdBlockCode.shift()}${mdBlockCode.shift()}`;
     const language = mdBlockCode.shift();
     const githubLink = mdBlockCode.shift();
     const blockCode = mdBlockCode.shift();
@@ -331,7 +319,7 @@ const BlogPreviewContent = props => {
   // If it's inline code, return a CodeInline component:
   const mdInlineCode = content.split(MD_INLINE_CODE_REGEX);
   if (mdInlineCode.length > 2) {
-    const preInlineCodeText = `${mdInlineCode.shift()} ${mdInlineCode.shift()}`;
+    const preInlineCodeText = `${mdInlineCode.shift()}${mdInlineCode.shift()}`;
     const inlineCode = mdInlineCode.shift();
     const postInlineCodeText = mdInlineCode.join('');
     return (
@@ -360,7 +348,7 @@ const BlogPreviewContent = props => {
   // If it's a quotation, return a Quote component:
   const mdQuotation = content.split(MD_QUOTATION_REGEX);
   if (mdQuotation.length > 2) {
-    const preQuotationText = `${mdQuotation.shift()} ${mdQuotation.shift()}`;
+    const preQuotationText = `${mdQuotation.shift()}${mdQuotation.shift()}`;
     const quotation = mdQuotation.shift();
     const postQuotationText = mdQuotation.join('');
     return (
@@ -389,7 +377,7 @@ const BlogPreviewContent = props => {
   // If it's a regular image, return an Image component:
   const mdImage = content.split(MD_IMAGE_REGEX);
   if (mdImage.length > 3) {
-    const preImageText = `${mdImage.shift()} ${mdImage.shift()}`;
+    const preImageText = `${mdImage.shift()}${mdImage.shift()}`;
     const imageAltText = mdImage.shift();
     const imageSrc = mdImage.shift();
     const postImageText = mdImage.join('');
@@ -421,7 +409,7 @@ const BlogPreviewContent = props => {
   // If it's a lazy-loaded image, return an Image component:
   const mdLazyLoadedImage = content.split(MD_LAZY_LOAD_IMAGE_REGEX);
   if (mdLazyLoadedImage.length > 5) {
-    const preImageText = `${mdLazyLoadedImage.shift()} ${mdLazyLoadedImage.shift()}`;
+    const preImageText = `${mdLazyLoadedImage.shift()}${mdLazyLoadedImage.shift()}`;
     const aspectX = parseInt(mdLazyLoadedImage.shift(), 10);
     const aspectY = parseInt(mdLazyLoadedImage.shift(), 10);
     const imageAltText = mdLazyLoadedImage.shift();
@@ -457,7 +445,7 @@ const BlogPreviewContent = props => {
   // If it's a YouTube video, return a YoutubeEmbedVideo component:
   const mdYtVideo = content.split(MD_YOUTUBE_REGEX);
   if (mdYtVideo.length > 3) {
-    const preLinkText = `${mdYtVideo.shift()} ${mdYtVideo.shift()}`;
+    const preLinkText = `${mdYtVideo.shift()}${mdYtVideo.shift()}`;
     const showSuggestions = mdYtVideo.shift() === 'true';
     const videoId = mdYtVideo.shift();
     const postLinkText = mdYtVideo.join('');
@@ -490,7 +478,7 @@ const BlogPreviewContent = props => {
   // If it's a **BIG** hyperlink, return a <a>-wrapped Section component:
   const mdBigLink = content.split(MD_LINK_BIG_REGEX);
   if (mdBigLink.length > 3) {
-    const preLinkText = `${mdBigLink.shift()} ${mdBigLink.shift()}`;
+    const preLinkText = `${mdBigLink.shift()}${mdBigLink.shift()}`;
     const linkText = mdBigLink.shift();
     const linkRef = mdBigLink.shift();
     const postLinkText = mdBigLink.join('');
@@ -531,7 +519,7 @@ const BlogPreviewContent = props => {
   // If it's a hyperlink, return a TextLink component:
   const mdLink = content.split(MD_LINK_REGEX);
   if (mdLink.length > 3) {
-    const preLinkText = `${mdLink.shift()} ${mdLink.shift()}`;
+    const preLinkText = `${mdLink.shift()}${mdLink.shift()}`;
     const linkText = mdLink.shift();
     const linkRef = mdLink.shift();
     const postLinkText = mdLink.join('');
