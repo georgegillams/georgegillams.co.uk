@@ -18,22 +18,31 @@ class BlogsPage extends Component {
     super(props);
 
     this.state = {
-      selectedTags: [],
+      selectedTags: ['tech', 'photography', 'events', 'security'],
       blogs: null,
+      refreshContinuously: true,
     };
   }
 
   componentDidMount() {
     const getBlogs = () => {
-      DatabaseFunctions.getBlogs('', this.state.selectedTags, results => {
-        this.setState({
-          blogs: results,
+      if (this.state.refreshContinuously) {
+        DatabaseFunctions.getBlogs('', this.state.selectedTags, results => {
+          this.setState({
+            blogs: results,
+          });
         });
-      });
+      }
     };
 
     getBlogs();
     setInterval(getBlogs, 2000);
+  }
+
+  componentWillUnmount() {
+    this.setState({
+      refreshContinuously: false,
+    });
   }
 
   render() {
@@ -54,7 +63,11 @@ class BlogsPage extends Component {
               b =>
                 !b.blogShowInBlogsList ? null : (
                   <ArticleCard
-                    day={new Date(1000 * b.publishedTimestamp).getDate()}
+                    day={
+                      b.blogCardDate
+                        ? b.blogCardDate
+                        : new Date(1000 * b.publishedTimestamp).getDate()
+                    }
                     month={new Date(1000 * b.publishedTimestamp).getMonth()}
                     className={getClassName('pages__card')}
                     fillImageSrc={b.blogHeroImage}
