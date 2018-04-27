@@ -41,12 +41,13 @@ class DatabaseFunctions {
     });
   }
 
-  static getBlogs(privateApiKey, cb) {
+  static getBlogs(privateApiKey, selectedBlogTags, cb) {
     const options = {
       method: 'GET',
       url: `${url}/api/blog-posts`,
       headers: {
         'Api-Key': privateApiKey === '' ? apiKey : privateApiKey,
+        'selected-blog-tags': selectedBlogTags,
       },
     };
 
@@ -99,6 +100,7 @@ class DatabaseFunctions {
         blog_card_link: blog.blogCardLink,
         blog_bibtex: blog.blogBibtex,
         blog_show_in_blogs_list: blog.blogShowInBlogsList,
+        blog_card_date: blog.blogCardDate,
       },
       json: true,
     };
@@ -124,6 +126,7 @@ class DatabaseFunctions {
         blog_card_light: false,
         blog_published: false,
         blog_show_in_blogs_list: true,
+        blog_card_date: null,
       },
       json: true,
     };
