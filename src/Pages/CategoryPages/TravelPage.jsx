@@ -6,6 +6,7 @@ import Loading from '../../components/Loading';
 import Tag from '../../components/Tag';
 import TagFilter from '../../components/TagFilter';
 import DatabaseFunctions from '../../DatabaseFunctions';
+import { NON_EMOJI_REGEX } from '../../shared/constants';
 
 import STYLES from '../pages.scss';
 
@@ -66,7 +67,7 @@ class TravelPage extends Component {
                     fillImageSrc={b.blogHeroImage}
                     imageSrc={b.blogImage}
                     linkUrl={`/travel/view?id=${b.blogId}`}
-                    title={b.blogName}
+                    title={b.blogName.match(NON_EMOJI_REGEX).join('')}
                     imageBorder={
                       b.blogImageBorderColor ? b.blogImageBorderColor : null
                     }
