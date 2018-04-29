@@ -12,19 +12,8 @@ import BpkComponentDemo from '../Pages/Work/BpkComponentDemoPage';
 import Art from '../Pages/Art/Art';
 import SiteMap from '../Pages/SiteMap';
 import HttpResponseCodesInReact from '../Pages/Articles/HttpResponseCodesInReact';
-import WeekOfRust from '../Pages/Articles/WeekOfRust';
-import LightroomWorkflow from '../Pages/Articles/LightroomWorkflow';
-import ToughMudder from '../Pages/Articles/ToughMudder';
-import SwitchToVim from '../Pages/Articles/SwitchToVim';
-import UkBankSecurity from '../Pages/Articles/UkBankSecurity';
-import NetNeutrality from '../Pages/Articles/NetNeutrality';
-import Disneyland from '../Pages/Travel/Disneyland';
-import SerreChevalier from '../Pages/Travel/SerreChevalier';
-import Longleat from '../Pages/Travel/Longleat';
 import TravelPage from '../Pages/CategoryPages/TravelPage';
 import BlogsPage from '../Pages/CategoryPages/BlogsPage';
-import Munich from '../Pages/Travel/Munich';
-import Iceland from '../Pages/Travel/Iceland';
 import Contact from '../Pages/Contact';
 import AboutMe from '../Pages/AboutMe';
 import ForOhFour from '../Pages/ForOhFour';
@@ -76,20 +65,6 @@ const Routes = (
         />
         <Route path="/blog/view" component={BlogViewerPage} />
         <Route path="/travel/view" component={BlogViewerPage} />
-        <Route
-          path="/blog-depreciated/lightroom-workflow"
-          component={LightroomWorkflow}
-        />
-        <Route path="/blog-depreciated/tough-mudder" component={ToughMudder} />
-        <Route
-          path="/blog-depreciated/net-neutrality"
-          component={NetNeutrality}
-        />
-        <Route path="/blog-depreciated/vim" component={SwitchToVim} />
-        <Route
-          path="/blog-depreciated/uk-bank-security"
-          component={UkBankSecurity}
-        />
         <Route exact path="/travel" component={TravelPage} />
         <Route path="/photography" component={Art} />
         <Route exact path="/work" component={Work} />
