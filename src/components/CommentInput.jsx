@@ -21,11 +21,11 @@ class CommentInput extends React.Component {
     };
   }
 
-  onCommentChanged = (event) => {
+  onCommentChanged = event => {
     this.setState({ comment: event.target.value });
   };
 
-  onNameChanged = (event) => {
+  onNameChanged = event => {
     this.setState({ name: event.target.value });
   };
 
@@ -35,7 +35,7 @@ class CommentInput extends React.Component {
       this.props.pageId,
       this.state.name,
       this.state.comment,
-      (result) => {
+      result => {
         this.setState({ result });
       },
     );

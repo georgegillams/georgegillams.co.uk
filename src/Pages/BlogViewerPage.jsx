@@ -22,7 +22,7 @@ class BlogEditorPage extends React.Component {
   componentDidMount() {
     const location = `${window.location}`;
     if (location.split('?').length > 1) {
-      const urlPropQueryString = location.split('?')[1];
+      const urlPropQueryString = location.split('?')[1].split('#')[0];
       const props = querystring.parse(urlPropQueryString);
       if (props !== undefined) {
         const blogId = props.id;

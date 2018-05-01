@@ -16,6 +16,7 @@ const Button = props => {
     bouncy,
     onClick,
     className,
+    large,
     children,
     ...rest
   } = props;
@@ -46,6 +47,9 @@ const Button = props => {
       classNameFinal.push(getClassName('button__outer--disabled'));
     }
   }
+  if (large) {
+    classNameFinal.push(getClassName('button__outer--large'));
+  }
 
   if (className) classNameFinal.push(className);
 
@@ -75,6 +79,7 @@ const Button = props => {
 };
 
 Button.propTypes = {
+  large: PropTypes.bool,
   href: PropTypes.bool,
   hrefExternal: PropTypes.bool,
   disabled: PropTypes.bool,
@@ -87,6 +92,7 @@ Button.propTypes = {
 };
 
 Button.defaultProps = {
+  large: false,
   href: null,
   hrefExternal: false,
   light: false,
