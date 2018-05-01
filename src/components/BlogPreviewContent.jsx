@@ -96,6 +96,136 @@ const BlogPreviewContent = props => {
       content={p.content}
     />
   );
+  // If it's a quotation, return a Quote component:
+  const mdQuotation = content.split(MD_QUOTATION_REGEX);
+  if (mdQuotation.length > 2) {
+    const preQuotationText = `${mdQuotation.shift()}${mdQuotation.shift()}`;
+    const quotation = mdQuotation.shift();
+    const postQuotationText = mdQuotation.join('');
+    return (
+      <span className={classNameFinal.join(' ')} {...rest}>
+        <RecursiveWrapper content={preQuotationText} />
+        <Quote className={null /* elementClassNameFinal.join(' ') */}>
+          <RecursiveWrapper content={quotation} />
+        </Quote>
+        <RecursiveWrapper content={postQuotationText} />
+      </span>
+    );
+  }
+
+  // If it's a regular image, return an Image component:
+  const mdImage = content.split(MD_IMAGE_REGEX);
+  if (mdImage.length > 3) {
+    const preImageText = `${mdImage.shift()}${mdImage.shift()}`;
+    const imageAltText = mdImage.shift();
+    const imageSrc = mdImage.shift();
+    const postImageText = mdImage.join('');
+    return (
+      <span className={classNameFinal.join(' ')} {...rest}>
+        <RecursiveWrapper content={preImageText} />
+        <img
+          className={getClassName('pages__image')}
+          alt={imageAltText}
+          src={imageSrc}
+        />
+        <RecursiveWrapper content={postImageText} />
+      </span>
+    );
+  }
+
+  // If it's a lazy-loaded image, return an Image component:
+  const mdLazyLoadedImage = content.split(MD_LAZY_LOAD_IMAGE_REGEX);
+  if (mdLazyLoadedImage.length > 5) {
+    const preImageText = `${mdLazyLoadedImage.shift()}${mdLazyLoadedImage.shift()}`;
+    const aspectX = parseInt(mdLazyLoadedImage.shift(), 10);
+    const aspectY = parseInt(mdLazyLoadedImage.shift(), 10);
+    const imageAltText = mdLazyLoadedImage.shift();
+    const imageSrc = mdLazyLoadedImage.shift();
+    const postImageText = mdLazyLoadedImage.join('');
+    return (
+      <span className={classNameFinal.join(' ')} {...rest}>
+        <RecursiveWrapper content={preImageText} />
+        <FadingLazyLoadedImage
+          className={getClassName('pages__image')}
+          altText={imageAltText}
+          width={aspectX}
+          height={aspectY}
+          src={imageSrc}
+        />
+        <RecursiveWrapper content={postImageText} />
+      </span>
+    );
+  }
+
+  // If it's a YouTube video, return a YoutubeEmbedVideo component:
+  const mdYtVideo = content.split(MD_YOUTUBE_REGEX);
+  if (mdYtVideo.length > 3) {
+    const preLinkText = `${mdYtVideo.shift()}${mdYtVideo.shift()}`;
+    const showSuggestions = mdYtVideo.shift() === 'true';
+    const videoId = mdYtVideo.shift();
+    const postLinkText = mdYtVideo.join('');
+    return (
+      <span className={classNameFinal.join(' ')} {...rest}>
+        <RecursiveWrapper content={preLinkText} />
+        <YoutubeEmbedVideo
+          className={getClassName('pages__image')}
+          style={{ maxWidth: '100%', height: '45vw', maxHeight: '23rem' }}
+          videoId={videoId}
+          suggestions={showSuggestions}
+        />
+        <RecursiveWrapper content={postLinkText} />
+      </span>
+    );
+  }
+
+  // If it's a **BIG** hyperlink, return a <a>-wrapped Section component:
+  const mdBigLink = content.split(MD_LINK_BIG_REGEX);
+  if (mdBigLink.length > 3) {
+    const preLinkText = `${mdBigLink.shift()}${mdBigLink.shift()}`;
+    const linkText = mdBigLink.shift();
+    const linkRef = mdBigLink.shift();
+    const postLinkText = mdBigLink.join('');
+    const external = linkRef.includes('.');
+    return (
+      <span className={classNameFinal.join(' ')} {...rest}>
+        <RecursiveWrapper content={preLinkText} />
+        <a
+          className={getClassName('pages__link')}
+          href={linkRef}
+          rel={external ? 'noopener noreferrer' : ''}
+          target={external ? '_blank' : ''}
+        >
+          <SubSection
+            className={elementClassNameFinal.join(' ')}
+            noAnchor
+            name={linkText}
+            link
+          />
+        </a>
+        <RecursiveWrapper content={postLinkText} />
+      </span>
+    );
+  }
+
+  // If it's a hyperlink, return a TextLink component:
+  const mdLink = content.split(MD_LINK_REGEX);
+  if (mdLink.length > 3) {
+    const preLinkText = `${mdLink.shift()}${mdLink.shift()}`;
+    const linkText = mdLink.shift();
+    const linkRef = mdLink.shift();
+    const postLinkText = mdLink.join('');
+    const external = linkRef.includes('.');
+    return (
+      <span className={classNameFinal.join(' ')} {...rest}>
+        <RecursiveWrapper content={preLinkText} />
+        <TextLink external={external} inline href={linkRef}>
+          <RecursiveWrapper content={linkText} />
+          {external ? ' ' : ''}
+        </TextLink>
+        <RecursiveWrapper content={postLinkText} />
+      </span>
+    );
+  }
 
   // If it's a subsubsection, return a bold title component:
   const mdSubSubSection = content.split(MD_SUBSUBSECTION_REGEX);
@@ -281,137 +411,6 @@ const BlogPreviewContent = props => {
           <RecursiveWrapper content={inlineCode} />
         </CodeInline>
         <RecursiveWrapper content={postInlineCodeText} />
-      </span>
-    );
-  }
-
-  // If it's a quotation, return a Quote component:
-  const mdQuotation = content.split(MD_QUOTATION_REGEX);
-  if (mdQuotation.length > 2) {
-    const preQuotationText = `${mdQuotation.shift()}${mdQuotation.shift()}`;
-    const quotation = mdQuotation.shift();
-    const postQuotationText = mdQuotation.join('');
-    return (
-      <span className={classNameFinal.join(' ')} {...rest}>
-        <RecursiveWrapper content={preQuotationText} />
-        <Quote className={null /* elementClassNameFinal.join(' ') */}>
-          <RecursiveWrapper content={quotation} />
-        </Quote>
-        <RecursiveWrapper content={postQuotationText} />
-      </span>
-    );
-  }
-
-  // If it's a regular image, return an Image component:
-  const mdImage = content.split(MD_IMAGE_REGEX);
-  if (mdImage.length > 3) {
-    const preImageText = `${mdImage.shift()}${mdImage.shift()}`;
-    const imageAltText = mdImage.shift();
-    const imageSrc = mdImage.shift();
-    const postImageText = mdImage.join('');
-    return (
-      <span className={classNameFinal.join(' ')} {...rest}>
-        <RecursiveWrapper content={preImageText} />
-        <img
-          className={getClassName('pages__image')}
-          alt={imageAltText}
-          src={imageSrc}
-        />
-        <RecursiveWrapper content={postImageText} />
-      </span>
-    );
-  }
-
-  // If it's a lazy-loaded image, return an Image component:
-  const mdLazyLoadedImage = content.split(MD_LAZY_LOAD_IMAGE_REGEX);
-  if (mdLazyLoadedImage.length > 5) {
-    const preImageText = `${mdLazyLoadedImage.shift()}${mdLazyLoadedImage.shift()}`;
-    const aspectX = parseInt(mdLazyLoadedImage.shift(), 10);
-    const aspectY = parseInt(mdLazyLoadedImage.shift(), 10);
-    const imageAltText = mdLazyLoadedImage.shift();
-    const imageSrc = mdLazyLoadedImage.shift();
-    const postImageText = mdLazyLoadedImage.join('');
-    return (
-      <span className={classNameFinal.join(' ')} {...rest}>
-        <RecursiveWrapper content={preImageText} />
-        <FadingLazyLoadedImage
-          className={getClassName('pages__image')}
-          altText={imageAltText}
-          width={aspectX}
-          height={aspectY}
-          src={imageSrc}
-        />
-        <RecursiveWrapper content={postImageText} />
-      </span>
-    );
-  }
-
-  // If it's a YouTube video, return a YoutubeEmbedVideo component:
-  const mdYtVideo = content.split(MD_YOUTUBE_REGEX);
-  if (mdYtVideo.length > 3) {
-    const preLinkText = `${mdYtVideo.shift()}${mdYtVideo.shift()}`;
-    const showSuggestions = mdYtVideo.shift() === 'true';
-    const videoId = mdYtVideo.shift();
-    const postLinkText = mdYtVideo.join('');
-    return (
-      <span className={classNameFinal.join(' ')} {...rest}>
-        <RecursiveWrapper content={preLinkText} />
-        <YoutubeEmbedVideo
-          className={getClassName('pages__image')}
-          style={{ maxWidth: '100%', height: '45vw', maxHeight: '23rem' }}
-          videoId={videoId}
-          suggestions={showSuggestions}
-        />
-        <RecursiveWrapper content={postLinkText} />
-      </span>
-    );
-  }
-
-  // If it's a **BIG** hyperlink, return a <a>-wrapped Section component:
-  const mdBigLink = content.split(MD_LINK_BIG_REGEX);
-  if (mdBigLink.length > 3) {
-    const preLinkText = `${mdBigLink.shift()}${mdBigLink.shift()}`;
-    const linkText = mdBigLink.shift();
-    const linkRef = mdBigLink.shift();
-    const postLinkText = mdBigLink.join('');
-    const external = linkRef.includes('.');
-    return (
-      <span className={classNameFinal.join(' ')} {...rest}>
-        <RecursiveWrapper content={preLinkText} />
-        <a
-          className={getClassName('pages__link')}
-          href={linkRef}
-          rel={external ? 'noopener noreferrer' : ''}
-          target={external ? '_blank' : ''}
-        >
-          <SubSection
-            className={elementClassNameFinal.join(' ')}
-            noAnchor
-            name={linkText}
-            link
-          />
-        </a>
-        <RecursiveWrapper content={postLinkText} />
-      </span>
-    );
-  }
-
-  // If it's a hyperlink, return a TextLink component:
-  const mdLink = content.split(MD_LINK_REGEX);
-  if (mdLink.length > 3) {
-    const preLinkText = `${mdLink.shift()}${mdLink.shift()}`;
-    const linkText = mdLink.shift();
-    const linkRef = mdLink.shift();
-    const postLinkText = mdLink.join('');
-    const external = linkRef.includes('.');
-    return (
-      <span className={classNameFinal.join(' ')} {...rest}>
-        <RecursiveWrapper content={preLinkText} />
-        <TextLink external={external} inline href={linkRef}>
-          {linkText}
-          {external ? ' ' : ''}
-        </TextLink>
-        <RecursiveWrapper content={postLinkText} />
       </span>
     );
   }
