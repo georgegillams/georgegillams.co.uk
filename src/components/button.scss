@@ -38,6 +38,10 @@
       filter: saturate(2);
     }
 
+    &--large {
+      padding: .9rem 1.2rem;
+    }
+
     &--destructive {
       background-color: #a01b1b;
       background-image: linear-gradient(165deg, #e02626, #c92222);
