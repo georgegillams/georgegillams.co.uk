@@ -10,12 +10,20 @@ import PageSwitchScroller from './PageSwitchScroller';
 import Tag from './Tag';
 import ArticleDate from './ArticleDate';
 
-import STYLES from './article-date.scss';
+import STYLES from './blogs.scss';
 
 const getClassName = className => STYLES[className] || 'UNKNOWN';
 
 const BlogRenderer = props => {
-  const { blog, className, elementClassName, light, noAnchor, ...rest } = props;
+  const {
+    blog,
+    className,
+    centered,
+    elementClassName,
+    light,
+    noAnchor,
+    ...rest
+  } = props;
 
   const classNameFinal = [getClassName('article-date__date')];
   if (className) {
@@ -24,6 +32,9 @@ const BlogRenderer = props => {
   const elementClassNameFinal = [getClassName('pages__card')];
   if (elementClassName) {
     elementClassNameFinal.push(elementClassName);
+  }
+  if (centered) {
+    elementClassNameFinal.push(getClassName('blogs--centered'));
   }
 
   if (!blog.blogContent || blog.blogContent === '') {
@@ -73,6 +84,7 @@ const BlogRenderer = props => {
 };
 
 BlogRenderer.propTypes = {
+  centered: PropTypes.bool,
   blog: PropTypes.object.isRequired,
   elementClassName: PropTypes.string,
   className: PropTypes.string,
@@ -81,6 +93,7 @@ BlogRenderer.propTypes = {
 };
 
 BlogRenderer.defaultProps = {
+  centered: false,
   elementClassName: null,
   className: null,
   light: false,
