@@ -31,8 +31,9 @@ const FadingLazyLoadedImage = withLoadingBehavior(
 );
 
 const MD_LINK_REGEX = /([^]*)\[([^\[\]]*)\]\(([^\(\)]*)\)([^]*)/gi;
-const MD_SECTION_REGEX = /([^]*)# (.*\n)([^]*)/gi;
-const MD_SUBSECTION_REGEX = /([^]*)###? (.*\n)([^]*)/gi;
+const MD_SECTION_REGEX = /([^]*)# ([^\n]+)\n([^]*)/gi;
+const MD_SUBSECTION_REGEX = /([^]*)## ([^\n]+)\n([^]*)/gi;
+const MD_SUBSUBSECTION_REGEX = /([^]*)### ([^\n]+)\n([^]*)/gi;
 const MD_BLOCK_CODE_REGEX = /([^]*)```\(([^\(\)]*)\)\(([^\(\)]*)\)\n([.\s\S]*)\n```([^]*)/gi;
 const MD_IMAGE_REGEX = /([^]*)!\[([^\[\]]*)\]\(([^\(\)]*)\)([^]*)/gi;
 const MD_LAZY_LOAD_IMAGE_REGEX = /([^]*)!\[([0-9]+)x([0-9]+)\]\[([^\[\]]*)\]\(([^\(\)]*)\)([^]*)/gi;
@@ -86,6 +87,37 @@ const BlogPreviewContent = props => {
 
   const Cite = references ? citation(references, onSelection) : null;
 
+  const RecursiveWrapper = p => (
+    <BlogPreviewContent
+      noAnchor={noAnchor}
+      light={light}
+      references={references}
+      elementClassName={elementClassName}
+      content={p.content}
+    />
+  );
+
+  // If it's a subsubsection, return a bold title component:
+  const mdSubSubSection = content.split(MD_SUBSUBSECTION_REGEX);
+  if (mdSubSubSection.length > 2) {
+    const preSsSectionText = `${mdSubSubSection.shift()}${mdSubSubSection.shift()}`;
+    const SsSectionText = mdSubSubSection.shift();
+    const postSsSectionText = mdSubSubSection.join('');
+    return (
+      <span className={classNameFinal.join(' ')} {...rest}>
+        <RecursiveWrapper content={preSsSectionText} />
+        <div
+          style={{ fontWeight: 'bold' }}
+          className={elementClassNameFinal.join(' ')}
+        >
+          <RecursiveWrapper content={SsSectionText} />
+        </div>
+        <br />
+        <RecursiveWrapper content={postSsSectionText} />
+      </span>
+    );
+  }
+
   // If it's bold, return a span with fontWeight: 'bold' component:
   const mdBold = content.split(MD_BOLD_REGEX);
   if (mdBold.length > 2) {
@@ -94,26 +126,14 @@ const BlogPreviewContent = props => {
     const postBoldText = mdBold.join('');
     return (
       <span className={classNameFinal.join(' ')} {...rest}>
-        <BlogPreviewContent
-          noAnchor={noAnchor}
-          light={light}
-          references={references}
-          elementClassName={elementClassName}
-          content={preBoldText}
-        />
+        <RecursiveWrapper content={preBoldText} />
         <span
           style={{ fontWeight: 'bold' }}
           className={elementClassNameFinal.join(' ')}
         >
-          {boldText}
+          <RecursiveWrapper content={boldText} />
         </span>
-        <BlogPreviewContent
-          noAnchor={noAnchor}
-          light={light}
-          references={references}
-          elementClassName={elementClassName}
-          content={postBoldText}
-        />
+        <RecursiveWrapper content={postBoldText} />
       </span>
     );
   }
@@ -126,23 +146,11 @@ const BlogPreviewContent = props => {
     const postFootnoteText = mdFootNote1.join('');
     return (
       <span className={classNameFinal.join(' ')} {...rest}>
-        <BlogPreviewContent
-          noAnchor={noAnchor}
-          light={light}
-          references={references}
-          elementClassName={elementClassName}
-          content={preFootnoteText}
-        />
+        <RecursiveWrapper content={preFootnoteText} />
         <BpkText textStyle="xs">
           <sup>{footnoteNumber}</sup>
         </BpkText>
-        <BlogPreviewContent
-          noAnchor={noAnchor}
-          light={light}
-          references={references}
-          elementClassName={elementClassName}
-          content={postFootnoteText}
-        />
+        <RecursiveWrapper content={postFootnoteText} />
       </span>
     );
   }
@@ -156,23 +164,12 @@ const BlogPreviewContent = props => {
     const postFootnoteText = mdFootNote2.join('');
     return (
       <span className={classNameFinal.join(' ')} {...rest}>
-        <BlogPreviewContent
-          noAnchor={noAnchor}
-          light={light}
-          references={references}
-          elementClassName={elementClassName}
-          content={preFootnoteText}
-        />
+        <RecursiveWrapper content={preFootnoteText} />
         <BpkText textStyle="xs">
-          <sup>{footnoteNumber}</sup> {footnoteValue}
+          <sup>{footnoteNumber}</sup>{' '}
+          {<RecursiveWrapper content={footnoteValue} />}
         </BpkText>
-        <BlogPreviewContent
-          noAnchor={noAnchor}
-          light={light}
-          references={references}
-          elementClassName={elementClassName}
-          content={postFootnoteText}
-        />
+        <RecursiveWrapper content={postFootnoteText} />
       </span>
     );
   }
@@ -185,21 +182,9 @@ const BlogPreviewContent = props => {
     const postCitationText = mdCitation.join('');
     return (
       <span className={classNameFinal.join(' ')} {...rest}>
-        <BlogPreviewContent
-          noAnchor={noAnchor}
-          light={light}
-          references={references}
-          elementClassName={elementClassName}
-          content={preCitationText}
-        />
+        <RecursiveWrapper content={preCitationText} />
         {Cite && <Cite identifier={referenceIdentifier} />}
-        <BlogPreviewContent
-          noAnchor={noAnchor}
-          light={light}
-          references={references}
-          elementClassName={elementClassName}
-          content={postCitationText}
-        />
+        <RecursiveWrapper content={postCitationText} />
       </span>
     );
   }
@@ -211,13 +196,7 @@ const BlogPreviewContent = props => {
     const postReferencesText = mdReferencesPrintout.join('');
     return (
       <span className={classNameFinal.join(' ')} {...rest}>
-        <BlogPreviewContent
-          noAnchor={noAnchor}
-          light={light}
-          references={references}
-          elementClassName={elementClassName}
-          content={preReferencesText}
-        />
+        <RecursiveWrapper content={preReferencesText} />
         {Cite && (
           <SubSection
             className={elementClassNameFinal.join(' ')}
@@ -234,13 +213,7 @@ const BlogPreviewContent = props => {
             />
           </SubSection>
         )}
-        <BlogPreviewContent
-          noAnchor={noAnchor}
-          light={light}
-          references={references}
-          elementClassName={elementClassName}
-          content={postReferencesText}
-        />
+        <RecursiveWrapper content={postReferencesText} />
       </span>
     );
   }
@@ -253,23 +226,14 @@ const BlogPreviewContent = props => {
     const postStrikeText = mdStrikethrough.join('');
     return (
       <span className={classNameFinal.join(' ')} {...rest}>
-        <BlogPreviewContent
-          noAnchor={noAnchor}
-          light={light}
-          references={references}
-          elementClassName={elementClassName}
-          content={preStrikeText}
-        />
-        <Strikethrough className={elementClassNameFinal.join(' ')}>
-          {strikenText}
-        </Strikethrough>
-        <BlogPreviewContent
-          noAnchor={noAnchor}
-          light={light}
-          references={references}
-          elementClassName={elementClassName}
-          content={postStrikeText}
-        />
+        <RecursiveWrapper content={preStrikeText} />
+        <span
+          style={{ textDecoration: 'line-through' }}
+          className={elementClassNameFinal.join(' ')}
+        >
+          <RecursiveWrapper content={strikenText} />
+        </span>
+        <RecursiveWrapper content={postStrikeText} />
       </span>
     );
   }
@@ -284,13 +248,7 @@ const BlogPreviewContent = props => {
     const postInlineCodeText = mdBlockCode.join('');
     return (
       <span className={classNameFinal.join(' ')} {...rest}>
-        <BlogPreviewContent
-          noAnchor={noAnchor}
-          light={light}
-          references={references}
-          elementClassName={elementClassName}
-          content={preInlineCodeText}
-        />
+        <RecursiveWrapper content={preInlineCodeText} />
         <Code lang={language} githubUrl={githubLink}>
           {blockCode.split('\n\n').map(b => (
             <span>
@@ -305,13 +263,7 @@ const BlogPreviewContent = props => {
             </span>
           ))}
         </Code>
-        <BlogPreviewContent
-          noAnchor={noAnchor}
-          light={light}
-          references={references}
-          elementClassName={elementClassName}
-          content={postInlineCodeText}
-        />
+        <RecursiveWrapper content={postInlineCodeText} />
       </span>
     );
   }
@@ -324,23 +276,11 @@ const BlogPreviewContent = props => {
     const postInlineCodeText = mdInlineCode.join('');
     return (
       <span className={classNameFinal.join(' ')} {...rest}>
-        <BlogPreviewContent
-          noAnchor={noAnchor}
-          light={light}
-          references={references}
-          elementClassName={elementClassName}
-          content={preInlineCodeText}
-        />
+        <RecursiveWrapper content={preInlineCodeText} />
         <CodeInline className={elementClassNameFinal.join(' ')}>
-          {inlineCode}
+          <RecursiveWrapper content={inlineCode} />
         </CodeInline>
-        <BlogPreviewContent
-          noAnchor={noAnchor}
-          light={light}
-          references={references}
-          elementClassName={elementClassName}
-          content={postInlineCodeText}
-        />
+        <RecursiveWrapper content={postInlineCodeText} />
       </span>
     );
   }
@@ -353,23 +293,11 @@ const BlogPreviewContent = props => {
     const postQuotationText = mdQuotation.join('');
     return (
       <span className={classNameFinal.join(' ')} {...rest}>
-        <BlogPreviewContent
-          noAnchor={noAnchor}
-          light={light}
-          references={references}
-          elementClassName={elementClassName}
-          content={preQuotationText}
-        />
+        <RecursiveWrapper content={preQuotationText} />
         <Quote className={null /* elementClassNameFinal.join(' ') */}>
-          {quotation}
+          <RecursiveWrapper content={quotation} />
         </Quote>
-        <BlogPreviewContent
-          noAnchor={noAnchor}
-          light={light}
-          references={references}
-          elementClassName={elementClassName}
-          content={postQuotationText}
-        />
+        <RecursiveWrapper content={postQuotationText} />
       </span>
     );
   }
@@ -383,25 +311,13 @@ const BlogPreviewContent = props => {
     const postImageText = mdImage.join('');
     return (
       <span className={classNameFinal.join(' ')} {...rest}>
-        <BlogPreviewContent
-          noAnchor={noAnchor}
-          light={light}
-          references={references}
-          elementClassName={elementClassName}
-          content={preImageText}
-        />
+        <RecursiveWrapper content={preImageText} />
         <img
           className={getClassName('pages__image')}
           alt={imageAltText}
           src={imageSrc}
         />
-        <BlogPreviewContent
-          noAnchor={noAnchor}
-          light={light}
-          references={references}
-          elementClassName={elementClassName}
-          content={postImageText}
-        />
+        <RecursiveWrapper content={postImageText} />
       </span>
     );
   }
@@ -417,13 +333,7 @@ const BlogPreviewContent = props => {
     const postImageText = mdLazyLoadedImage.join('');
     return (
       <span className={classNameFinal.join(' ')} {...rest}>
-        <BlogPreviewContent
-          noAnchor={noAnchor}
-          light={light}
-          references={references}
-          elementClassName={elementClassName}
-          content={preImageText}
-        />
+        <RecursiveWrapper content={preImageText} />
         <FadingLazyLoadedImage
           className={getClassName('pages__image')}
           altText={imageAltText}
@@ -431,13 +341,7 @@ const BlogPreviewContent = props => {
           height={aspectY}
           src={imageSrc}
         />
-        <BlogPreviewContent
-          noAnchor={noAnchor}
-          light={light}
-          references={references}
-          elementClassName={elementClassName}
-          content={postImageText}
-        />
+        <RecursiveWrapper content={postImageText} />
       </span>
     );
   }
@@ -451,26 +355,14 @@ const BlogPreviewContent = props => {
     const postLinkText = mdYtVideo.join('');
     return (
       <span className={classNameFinal.join(' ')} {...rest}>
-        <BlogPreviewContent
-          noAnchor={noAnchor}
-          light={light}
-          references={references}
-          elementClassName={elementClassName}
-          content={preLinkText}
-        />
+        <RecursiveWrapper content={preLinkText} />
         <YoutubeEmbedVideo
           className={getClassName('pages__image')}
           style={{ maxWidth: '100%', height: '45vw', maxHeight: '23rem' }}
           videoId={videoId}
           suggestions={showSuggestions}
         />
-        <BlogPreviewContent
-          noAnchor={noAnchor}
-          light={light}
-          references={references}
-          elementClassName={elementClassName}
-          content={postLinkText}
-        />
+        <RecursiveWrapper content={postLinkText} />
       </span>
     );
   }
@@ -485,13 +377,7 @@ const BlogPreviewContent = props => {
     const external = linkRef.includes('.');
     return (
       <span className={classNameFinal.join(' ')} {...rest}>
-        <BlogPreviewContent
-          noAnchor={noAnchor}
-          light={light}
-          references={references}
-          elementClassName={elementClassName}
-          content={preLinkText}
-        />
+        <RecursiveWrapper content={preLinkText} />
         <a
           className={getClassName('pages__link')}
           href={linkRef}
@@ -505,13 +391,7 @@ const BlogPreviewContent = props => {
             link
           />
         </a>
-        <BlogPreviewContent
-          noAnchor={noAnchor}
-          light={light}
-          references={references}
-          elementClassName={elementClassName}
-          content={postLinkText}
-        />
+        <RecursiveWrapper content={postLinkText} />
       </span>
     );
   }
@@ -526,24 +406,12 @@ const BlogPreviewContent = props => {
     const external = linkRef.includes('.');
     return (
       <span className={classNameFinal.join(' ')} {...rest}>
-        <BlogPreviewContent
-          noAnchor={noAnchor}
-          light={light}
-          references={references}
-          elementClassName={elementClassName}
-          content={preLinkText}
-        />
+        <RecursiveWrapper content={preLinkText} />
         <TextLink external={external} inline href={linkRef}>
           {linkText}
           {external ? ' ' : ''}
         </TextLink>
-        <BlogPreviewContent
-          noAnchor={noAnchor}
-          light={light}
-          references={references}
-          elementClassName={elementClassName}
-          content={postLinkText}
-        />
+        <RecursiveWrapper content={postLinkText} />
       </span>
     );
   }
