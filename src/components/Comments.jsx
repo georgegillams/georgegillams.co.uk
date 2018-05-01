@@ -7,8 +7,10 @@ import CommentInput from './CommentInput';
 import DatabaseFunctions from '../DatabaseFunctions';
 
 import STYLES from './comments.scss';
+import BLOG_STYLES from './blogs.scss';
 
-const getClassName = className => STYLES[className] || 'UNKNOWN';
+const getClassName = className =>
+  STYLES[className] || BLOG_STYLES[className] || 'UNKNOWN';
 
 class Comments extends React.Component {
   constructor(props) {
@@ -19,7 +21,7 @@ class Comments extends React.Component {
 
   componentDidMount() {
     const getComments = () => {
-      DatabaseFunctions.getComments(this.props.pageId, (results) => {
+      DatabaseFunctions.getComments(this.props.pageId, results => {
         this.setState({ comments: results });
       });
     };
@@ -29,12 +31,13 @@ class Comments extends React.Component {
   }
 
   render() {
-    const {
-      centered, pageId, className, ...rest
-    } = this.props;
+    const { centered, pageId, className, ...rest } = this.props;
 
     const classNameFinal = [];
     if (className) classNameFinal.push(className);
+    if (centered) {
+      classNameFinal.push(getClassName('blogs--centered'));
+    }
 
     let comments = null;
     if (this.state.comments) {

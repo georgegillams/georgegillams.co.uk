@@ -41,7 +41,9 @@ class BlogEditorPage extends React.Component {
             return;
           }
           DatabaseFunctions.getBlog(this.state.apiKey, blogId, result => {
-            this.setState({ blog: result });
+            if (result && result.length === undefined) {
+              this.setState({ blog: result });
+            }
           });
         };
 
