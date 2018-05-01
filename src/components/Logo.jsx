@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import BpkText from 'bpk-component-text';
 import { NavLink } from 'react-router-dom';
@@ -7,64 +7,111 @@ import STYLES from './logo.scss';
 
 const getClassName = className => STYLES[className] || 'UNKNOWN';
 
-const Logo = props => {
-  const {
-    noPadding,
-    animated,
-    small,
-    className,
-    alwaysCentered,
-    light,
-    ...rest
-  } = props;
-  const classNameFinal = [getClassName('logo__container')];
-  if (className) {
-    classNameFinal.push(className);
-  }
-  if (alwaysCentered) {
-    classNameFinal.push(getClassName('logo__container--centered'));
-  }
-  if (animated) {
-    classNameFinal.push(getClassName('logo__container--animated'));
+const LONG_PRESS_DURATION = 3000;
+
+class Logo extends Component {
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      longPressCooking: false,
+      longPressAchieved: false,
+    };
   }
 
-  const baseTextClassNameFinal = [getClassName('logo__logo-base')];
-  if (light) {
-    baseTextClassNameFinal.push(getClassName('logo__logo-base--light'));
-  }
+  onLongPressStart = () => {
+    this.setState({ longPressCooking: true });
 
-  const largeTextClassNameFinal = [getClassName('logo__logo-large')];
-  if (small) {
-    largeTextClassNameFinal.push(getClassName('logo__logo-large--smaller'));
-  }
-  if (noPadding) {
-    classNameFinal.push(getClassName('logo__container--no-padding'));
-    largeTextClassNameFinal.push(getClassName('logo__logo-large--no-padding'));
-    baseTextClassNameFinal.push(getClassName('logo__logo-base--no-padding'));
-  }
+    setTimeout(() => {
+      if (this.state.longPressCooking) {
+        this.setState({ longPressAchieved: true });
+      }
+    }, LONG_PRESS_DURATION);
+  };
 
-  return (
-    <div className={classNameFinal.join(' ')} {...rest}>
-      <NavLink to="/">
-        <BpkText textStyle="xxl" className={largeTextClassNameFinal.join(' ')}>
-          {'<G/>'}
-        </BpkText>
-        {!small && (
-          <div>
-            <br />
-            <br />
-            <BpkText
-              textStyle="lg"
-              className={baseTextClassNameFinal.join(' ')}
-            >
-              {'George Gillams'}
-            </BpkText>
-          </div>
-        )}
-      </NavLink>
-    </div>
-  );
-};
+  onLongPressEnd = () => {
+    if (this.state.longPressAchieved) {
+      window.location = '/admin';
+    }
+    this.setState({ longPressCooking: false, longPressAchieved: false });
+  };
+
+  onMouseLeave = () => {
+    this.setState({ longPressCooking: false, longPressAchieved: false });
+  };
+
+  render() {
+    const {
+      noPadding,
+      animated,
+      small,
+      className,
+      alwaysCentered,
+      light,
+      ...rest
+    } = this.props;
+    const classNameFinal = [getClassName('logo__container')];
+    if (className) {
+      classNameFinal.push(className);
+    }
+    if (alwaysCentered) {
+      classNameFinal.push(getClassName('logo__container--centered'));
+    }
+    if (animated) {
+      classNameFinal.push(getClassName('logo__container--animated'));
+    }
+
+    const baseTextClassNameFinal = [getClassName('logo__logo-base')];
+    if (light) {
+      baseTextClassNameFinal.push(getClassName('logo__logo-base--light'));
+    }
+
+    const largeTextClassNameFinal = [getClassName('logo__logo-large')];
+    if (small) {
+      largeTextClassNameFinal.push(getClassName('logo__logo-large--smaller'));
+    }
+    if (noPadding) {
+      classNameFinal.push(getClassName('logo__container--no-padding'));
+      largeTextClassNameFinal.push(
+        getClassName('logo__logo-large--no-padding'),
+      );
+      baseTextClassNameFinal.push(getClassName('logo__logo-base--no-padding'));
+    }
+
+    return (
+      <div className={classNameFinal.join(' ')} {...rest}>
+        <NavLink
+          to="/"
+          onMouseDown={this.onLongPressStart}
+          onMouseUp={this.onLongPressEnd}
+          onTouchStart={this.onLongPressStart}
+          onTouchEnd={this.onLongPressEnd}
+          onMouseLeave={this.onMouseLeave}
+        >
+          <BpkText
+            textStyle="xxl"
+            className={largeTextClassNameFinal.join(' ')}
+            style={this.state.longPressAchieved ? { color: 'hotpink' } : {}}
+          >
+            {this.state.longPressAchieved ? 'ADMIN' : '<G/>'}
+          </BpkText>
+          {!small && (
+            <div>
+              <br />
+              <br />
+              <BpkText
+                textStyle="lg"
+                className={baseTextClassNameFinal.join(' ')}
+              >
+                {'George Gillams'}
+              </BpkText>
+            </div>
+          )}
+        </NavLink>
+      </div>
+    );
+  }
+}
 
 Logo.propTypes = {
   className: PropTypes.string,
