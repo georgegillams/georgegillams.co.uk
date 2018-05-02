@@ -12,9 +12,6 @@ import cloud2 from '../../images/cloud2.svg';
 import cloud3 from '../../images/cloud3.svg';
 import downArrow from '../../images/downArrow.svg';
 import serreChevalier from '../../images/serreChevalierBanner.jpg';
-import photog01 from '../Art/images/photog_02.jpg';
-import photog02 from '../Art/images/photog_05.jpg';
-import photog03 from '../Art/images/photog_01.jpg';
 import STYLES from './home-page-banner.scss';
 
 const getClassName = className => STYLES[className] || 'UNKNOWN';
@@ -516,7 +513,7 @@ const PersonalDetailsBanner = props => {
         <img
           style={{ width: '100%' }}
           altText="George Gillams"
-          src={photog01}
+          src="https://i.imgur.com/8dnCZ5D.jpg"
         />
       </div>
       <div
@@ -536,7 +533,7 @@ const PersonalDetailsBanner = props => {
         <img
           style={{ width: '100%' }}
           altText="George Gillams"
-          src={photog02}
+          src="https://i.imgur.com/WlLYxDw.jpg"
         />
       </div>
       <div
@@ -556,7 +553,7 @@ const PersonalDetailsBanner = props => {
         <img
           style={{ width: '100%' }}
           altText="George Gillams"
-          src={photog03}
+          src="https://i.imgur.com/EHF7zqM.jpg"
         />
       </div>
     </div>
