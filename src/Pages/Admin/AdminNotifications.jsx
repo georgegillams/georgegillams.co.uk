@@ -40,58 +40,64 @@ class AdminNotificationsw extends React.Component {
             <br />
             {n.notificationType}
             <br />
+            {apiKey !== '' && (
+              <Button
+                destructive
+                onClick={() => {
+                  DatabaseFunctions.deleteNotification(
+                    apiKey,
+                    n.notificationId,
+                    result => {
+                      console.log(result);
+                    },
+                  );
+                }}
+              >
+                Delete notification
+              </Button>
+            )}
+          </div>
+        ))}
+        {apiKey !== '' && (
+          <div>
+            <br />
+            <br />
+            <BpkInput
+              className={getClassName('pages__card')}
+              id="message"
+              name="Notification message"
+              value={this.state.message}
+              onChange={event => this.setState({ message: event.target.value })}
+              placeholder="Notification message"
+            />
+
+            <br />
+            <BpkInput
+              className={getClassName('pages__card')}
+              id="type"
+              name="Notification type"
+              value={this.state.type}
+              onChange={event => this.setState({ type: event.target.value })}
+              placeholder="Notification type"
+            />
+
+            <br />
             <Button
-              destructive
               onClick={() => {
-                DatabaseFunctions.deleteNotification(
+                DatabaseFunctions.createNotification(
                   apiKey,
-                  n.notificationId,
+                  this.state.message,
+                  this.state.type,
                   result => {
                     console.log(result);
                   },
                 );
               }}
             >
-              Delete notification
+              Add notification
             </Button>
           </div>
-        ))}
-        <br />
-        <br />
-        <BpkInput
-          className={getClassName('pages__card')}
-          id="message"
-          name="Notification message"
-          value={this.state.message}
-          onChange={event => this.setState({ message: event.target.value })}
-          placeholder="Notification message"
-        />
-
-        <br />
-        <BpkInput
-          className={getClassName('pages__card')}
-          id="type"
-          name="Notification type"
-          value={this.state.type}
-          onChange={event => this.setState({ type: event.target.value })}
-          placeholder="Notification type"
-        />
-
-        <br />
-        <Button
-          onClick={() => {
-            DatabaseFunctions.createNotification(
-              apiKey,
-              this.state.message,
-              this.state.type,
-              result => {
-                console.log(result);
-              },
-            );
-          }}
-        >
-          Add notification
-        </Button>
+        )}
       </div>
     );
   }
