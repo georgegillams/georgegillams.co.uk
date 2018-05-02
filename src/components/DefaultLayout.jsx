@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import 'whatwg-fetch';
 import HelperFunctions from '../HelperFunctions';
+import NotificationCenter from './NotificationCenter';
 import ie from 'ie-version';
 
 import RedirectNotice from './RedirectNotice';
@@ -128,6 +129,7 @@ class DefaultLayout extends React.Component {
       <div className={getClassName('default-layout__site')}>
         {warningBar && warningBar}
         <NavigationBar />
+        <NotificationCenter />
         <div className={getClassName('default-layout__main')}>
           <PageContentContainer>{children}</PageContentContainer>
           <br />

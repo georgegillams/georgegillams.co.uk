@@ -7,6 +7,7 @@ import DatabaseFunctions from '../../DatabaseFunctions';
 import AdminComments from './AdminComments';
 import AdminPayment from './AdminPayment';
 import AdminBlog from './AdminBlog';
+import AdminNotifications from './AdminNotifications';
 
 import STYLES from '../pages.scss';
 
@@ -53,7 +54,6 @@ class Admin extends React.Component {
         this.setState({ publishedBlogs: result });
       });
     };
-
     getPayments();
     getPageIds();
     getBlogs();
@@ -67,6 +67,12 @@ class Admin extends React.Component {
 
     const classNameFinal = [];
     if (className) classNameFinal.push(className);
+
+    const notificationList = (
+      <Section name="Notifications">
+        <AdminNotifications apiKey={this.state.apiKey} />
+      </Section>
+    );
 
     const pageIdList = (
       <Section name="Page IDs">
@@ -92,6 +98,9 @@ class Admin extends React.Component {
           onChange={event => this.setState({ apiKey: event.target.value })}
           placeholder="API Key"
         />
+        <br />
+        <br />
+        {notificationList}
         <br />
         <br />
         {pageIdList}

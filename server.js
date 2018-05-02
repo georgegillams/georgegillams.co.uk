@@ -165,7 +165,7 @@ router.delete('/api/comments', (req, res) => {
     client.del(`${pageId}_comments`);
   } else if (pattern !== undefined) {
     client.lrange(`${pageId}_comments`, 0, -1, (err, reply) => {
-      for (let i = reply.length - 1; i > 0; i -= 1) {
+      for (let i = reply.length - 1; i >= 0; i -= 1) {
         const comment = JSON.parse(reply[i]);
         if (`${comment.commenterName}${comment.comment}`.includes(pattern)) {
           client.lrem(`${pageId}_comments`, 1, reply[i]);
@@ -577,6 +577,59 @@ router.post('/api/blog-posts/override-published-timestamp', (req, res) => {
     });
   }
   res.send({ blog_id: blogId });
+  res.end();
+});
+
+router.get('/api/notifications', (req, res) => {
+  client.lrange('notifications', 0, -1, (err, reply) => {
+    const result = [];
+    for (let i = 0; i < reply.length; i += 1) {
+      result.push(JSON.parse(reply[i]));
+    }
+    res.send(result);
+  });
+});
+
+router.post('/api/notifications', (req, res) => {
+  const apiKey = req.headers['api-key'];
+  if (apiKey === undefined || apiKey !== xApiKeyPrivate) {
+    res.end();
+    return;
+  }
+  const notificationId = Math.random()
+    .toString(36)
+    .substring(7);
+  const notificationMessage = req.body.notification_message;
+  const notificationType = req.body.notification_type;
+  client.rpush([
+    `notifications`,
+    JSON.stringify({
+      notificationId,
+      notificationMessage,
+      notificationType,
+      timestamp: Date.now(),
+    }),
+  ]);
+  res.end();
+});
+
+router.delete('/api/notifications', (req, res) => {
+  const apiKey = req.headers['api-key'];
+  if (apiKey === undefined || apiKey !== xApiKeyPrivate) {
+    res.end();
+    return;
+  }
+  const notificationId = req.body.notification_id;
+  if (notificationId !== undefined) {
+    client.lrange(`notifications`, 0, -1, (err, reply) => {
+      for (let i = reply.length - 1; i >= 0; i -= 1) {
+        const notification = JSON.parse(reply[i]);
+        if (notification.notificationId === notificationId) {
+          client.lrem(`notifications`, 1, reply[i]);
+        }
+      }
+    });
+  }
   res.end();
 });
 

@@ -23,7 +23,6 @@ class DatabaseFunctions {
       }
     });
   }
-
   static getPageIds(cb) {
     const options = {
       method: 'GET',
@@ -363,6 +362,64 @@ class DatabaseFunctions {
 
     request(options, (error, response, body) => {
       if (error) throw new Error(error);
+    });
+  }
+
+  static getNotifications(cb) {
+    const options = {
+      method: 'GET',
+      url: `${url}/api/notifications`,
+      headers: {},
+    };
+
+    request(options, (error, response, body) => {
+      if (error) throw new Error(error);
+      try {
+        cb(JSON.parse(body));
+      } catch (e) {
+        cb([]);
+      }
+    });
+  }
+
+  static createNotification(privateApiKey, message, type, cb) {
+    const options = {
+      method: 'POST',
+      url: `${url}/api/notifications`,
+      headers: {
+        'Api-Key': privateApiKey,
+      },
+      body: {
+        notification_message: message,
+        notification_type: type,
+      },
+      json: true,
+    };
+
+    request(options, (error, response, body) => {
+      if (error) throw new Error(error);
+      cb(body);
+    });
+  }
+
+  static deleteNotification(privateApiKey, notificationId, cb) {
+    const options = {
+      method: 'DELETE',
+      url: `${url}/api/notifications`,
+      headers: {
+        'Api-Key': privateApiKey,
+      },
+      body: {
+        notification_id: notificationId,
+      },
+      json: true,
+    };
+
+    request(options, (error, response, body) => {
+      if (error) {
+        throw new Error(error);
+      }
+      cb(body);
     });
   }
 }
