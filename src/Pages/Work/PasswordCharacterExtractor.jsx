@@ -8,9 +8,6 @@ import GitHubForkRibbon from 'react-github-fork-ribbon';
 import Section from '../../components/Section';
 import Button from '../../components/Button';
 import SubSection from '../../components/SubSection';
-import passwordCharacterExtractorPinEntry from './images/passwordCharacterExtractorPinEntry.gif';
-import passwordCharacterExtractorUse from './images/passwordCharacterExtractorUse.png';
-import passwordCharacterExtractorUseGif from './images/passwordCharacterExtractorUse.gif';
 import PageSwitchScroller from '../../components/PageSwitchScroller';
 
 import STYLES from './apps.scss';
@@ -54,7 +51,7 @@ const passwordCharacterExtractor = props => {
             style={{ maxWidth: '55rem' }}
             width={2224}
             height={514}
-            src={passwordCharacterExtractorUse}
+            src="https://i.imgur.com/jc8QRic.png"
           />
         </div>
       </div>
@@ -102,7 +99,7 @@ const passwordCharacterExtractor = props => {
               style={{ width: '100%' }}
               width={512}
               height={233}
-              src={passwordCharacterExtractorPinEntry}
+              src="https://i.imgur.com/BUHJs6N.gif"
             />
           </SubSection>
           <SubSection
@@ -123,7 +120,7 @@ const passwordCharacterExtractor = props => {
           style={{ width: '100%' }}
           width={1154}
           height={422}
-          src={passwordCharacterExtractorUseGif}
+          src="https://i.imgur.com/L8RHzZX.gif"
         />
         <br />
         <br />

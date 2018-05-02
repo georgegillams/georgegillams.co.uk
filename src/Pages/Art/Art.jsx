@@ -9,19 +9,6 @@ import Section from '../../components/Section';
 import SubSection from '../../components/SubSection';
 import Comments from '../../components/Comments';
 import LicenseInfo from '../../components/LicenseInfo';
-import guinnessCake from '../Art/images/20160215.jpg';
-import tulips from '../Art/images/20160409.jpg';
-import motorway from '../Art/images/20160419.jpg';
-import ratatouille from '../Art/images/20170616.jpg';
-import missSaigon from '../Art/images/20161010.jpg';
-import photog01 from '../Art/images/photog_02.jpg';
-import photog02 from '../Art/images/photog_05.jpg';
-import photog03 from '../Art/images/photog_01.jpg';
-import photog04 from '../Art/images/photog_06.jpg';
-import photog05 from '../Art/images/photog_04.jpg';
-import photog06 from '../Art/images/photog_03.jpg';
-import guruShotsIconLarge from '../Art/images/guruShotsSm.png';
-import flickrIconLarge from '../Art/images/flickrSm.png';
 import PageSwitchScroller from '../../components/PageSwitchScroller';
 import ScrollIndicator from '../../components/ScrollIndicator';
 
@@ -55,7 +42,7 @@ const Art = props => {
             day={null}
             month={null}
             className={getClassName('pages__card')}
-            imageSrc={guruShotsIconLarge}
+            imageSrc="https://i.imgur.com/Jng7EhH.png"
             href="https://gurushots.com/georgegillams/achievements"
             title="Find me on GuruShots"
           />
@@ -64,7 +51,7 @@ const Art = props => {
             day={null}
             month={null}
             className={getClassName('pages__card')}
-            imageSrc={flickrIconLarge}
+            imageSrc="https://i.imgur.com/u30cQWU.png"
             href="https://www.flickr.com/people/137198167@N03/"
             title="Find me on Flickr"
           />
@@ -75,7 +62,7 @@ const Art = props => {
             altText="Dog running with a Stick"
             width={3000}
             height={2000}
-            src={photog01}
+            src="https://i.imgur.com/8dnCZ5D.jpg"
           />
         </SubSection>
         <SubSection noAnchor name="Stunt Motorcyclist">
@@ -84,7 +71,7 @@ const Art = props => {
             altText="Stunt Motorcyclist"
             width={3000}
             height={2000}
-            src={photog02}
+            src="https://i.imgur.com/WlLYxDw.jpg"
           />
         </SubSection>
         <SubSection noAnchor name="Longleat Festival of Light">
@@ -93,7 +80,7 @@ const Art = props => {
             altText="Longleat Festival of Light"
             width={3000}
             height={2000}
-            src={photog03}
+            src="https://i.imgur.com/EHF7zqM.jpg"
           />
         </SubSection>
         <SubSection noAnchor name="Serre Chevalier">
@@ -102,7 +89,7 @@ const Art = props => {
             altText="Serre Chevalier"
             width={3000}
             height={2000}
-            src={photog04}
+            src="https://i.imgur.com/gIccH4E.jpg"
           />
         </SubSection>
         <SubSection
@@ -114,7 +101,7 @@ const Art = props => {
             altText="&quot;Thunder Mountain&quot; at Disneyland Paris"
             width={3000}
             height={2000}
-            src={photog05}
+            src="https://i.imgur.com/mxmULeY.jpg"
           />
         </SubSection>
         <SubSection
@@ -126,7 +113,7 @@ const Art = props => {
             altText="Nick Matthew playing in the Canary Wharf Open"
             width={3000}
             height={2000}
-            src={photog06}
+            src="https://i.imgur.com/h4BFWqS.jpg"
           />
         </SubSection>
       </Section>
@@ -144,7 +131,7 @@ const Art = props => {
             altText="Exploding tulips"
             width={3000}
             height={2000}
-            src={tulips}
+            src="https://i.imgur.com/PIKQ2D6.jpg"
           />
         </SubSection>
         <SubSection noAnchor name="Miss Saigon sketch">
@@ -157,7 +144,7 @@ const Art = props => {
             altText="Miss Saigon"
             width={2153}
             height={3000}
-            src={missSaigon}
+            src="https://i.imgur.com/y3i2Ll1.jpg"
           />
         </SubSection>
         <SubSection noAnchor name="Dual-carriageway light-painting (in post)">
@@ -171,7 +158,7 @@ const Art = props => {
             altText="Dual-carriageway light-painting"
             width={3000}
             height={2000}
-            src={motorway}
+            src="https://i.imgur.com/T502lkX.jpg"
           />
         </SubSection>
       </Section>
@@ -187,7 +174,7 @@ const Art = props => {
             altText="Guinness cake"
             width={3000}
             height={2000}
-            src={guinnessCake}
+            src="https://i.imgur.com/oBWlSDO.jpg"
           />
         </SubSection>
         <SubSection noAnchor name="Ratatouille">
@@ -201,7 +188,7 @@ const Art = props => {
             altText="Ratatouille"
             width={3000}
             height={2000}
-            src={ratatouille}
+            src="https://i.imgur.com/kRGhYxz.jpg"
           />
         </SubSection>
       </Section>

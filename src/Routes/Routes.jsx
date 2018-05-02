@@ -11,7 +11,6 @@ import PasswordCharacterExtractor from '../Pages/Work/PasswordCharacterExtractor
 import BpkComponentDemo from '../Pages/Work/BpkComponentDemoPage';
 import Art from '../Pages/Art/Art';
 import SiteMap from '../Pages/SiteMap';
-import HttpResponseCodesInReact from '../Pages/Articles/HttpResponseCodesInReact';
 import TravelPage from '../Pages/CategoryPages/TravelPage';
 import BlogsPage from '../Pages/CategoryPages/BlogsPage';
 import Contact from '../Pages/Contact';
@@ -59,10 +58,6 @@ const Routes = (
       <Switch>
         <Route exact path="/" component={HomePage} />
         <Route exact path="/blog" component={BlogsPage} />
-        <Route
-          path="/blog/react-http-response-codes"
-          component={HttpResponseCodesInReact}
-        />
         <Route path="/blog/view" component={BlogViewerPage} />
         <Route path="/travel/view" component={BlogViewerPage} />
         <Route exact path="/travel" component={TravelPage} />

@@ -10,12 +10,6 @@ import Button from '../../components/Button';
 import SubSection from '../../components/SubSection';
 import PageSwitchScroller from '../../components/PageSwitchScroller';
 import ScrollIndicator from '../../components/ScrollIndicator';
-import passwordCharacterExtractorUse from './images/passwordCharacterExtractorUse.png';
-import greasemonkeyEcsBefore from './images/greasemonkey_before.png';
-import greasemonkeyEcsAfter from './images/greasemonkey_after.png';
-import greasemonkeyGuruShotsBefore from './images/greasemonkeyGuruShots_before.png';
-import greasemonkeyGuruShotsAfter from './images/greasemonkeyGuruShots_after.png';
-import reactComponentAcademicReferenceUse from './images/reactComponentAcademicReferenceUse.png';
 
 import STYLES from './apps.scss';
 
@@ -136,7 +130,7 @@ const Work = props => {
               style={{ maxWidth: '45rem' }}
               width={2266}
               height={1728}
-              src={reactComponentAcademicReferenceUse}
+              src="reactComponentAcademicReferenceUse"
             />
             <br />
             <br />
@@ -163,7 +157,7 @@ const Work = props => {
               style={{ maxWidth: '45rem' }}
               width={2224}
               height={514}
-              src={passwordCharacterExtractorUse}
+              src="https://i.imgur.com/jc8QRic.png"
             />
             <br />
             <br />
@@ -196,7 +190,7 @@ const Work = props => {
               style={{ maxWidth: '24rem' }}
               width={2910}
               height={1920}
-              src={greasemonkeyGuruShotsBefore}
+              src="https://i.imgur.com/8tXCwHT.png"
             />
             <FadingLazyLoadedImage
               className={getClassName('apps__image')}
@@ -204,7 +198,7 @@ const Work = props => {
               style={{ maxWidth: '24rem' }}
               width={2952}
               height={1920}
-              src={greasemonkeyGuruShotsAfter}
+              src="https://i.imgur.com/2wcCm16.png"
             />
             <br />
             <br />
@@ -226,7 +220,7 @@ const Work = props => {
               style={{ maxWidth: '24rem' }}
               width={2910}
               height={1920}
-              src={greasemonkeyEcsBefore}
+              src="https://i.imgur.com/zt3HvP1.png"
             />
             <FadingLazyLoadedImage
               className={getClassName('apps__image')}
@@ -234,7 +228,7 @@ const Work = props => {
               style={{ maxWidth: '24rem' }}
               width={2952}
               height={1920}
-              src={greasemonkeyEcsAfter}
+              src="https://i.imgur.com/t6uFEMe.png"
             />
             <br />
             <br />

@@ -11,7 +11,6 @@ import Section from '../../components/Section';
 import BpkDemo from '../../components/bpk-component-demo/index';
 import Button from '../../components/Button';
 import SubSection from '../../components/SubSection';
-import passwordCharacterExtractorUseGif from './images/passwordCharacterExtractorUse.gif';
 
 import STYLES from './apps.scss';
 
@@ -100,7 +99,7 @@ const BpkComponentDemoPage = props => {
               style={{ width: '100%' }}
               width={1154}
               height={422}
-              src={passwordCharacterExtractorUseGif}
+              src="https://i.imgur.com/L8RHzZX.gif"
             />
           </SubSection>
           <SubSection
