@@ -29,16 +29,18 @@ class AdminBlog extends React.Component {
         {`${blog.blogId} ${blog.blogName} ${blog.publishedTimestamp}`}
         <br />
         <Button href={`/admin/blog-editor?id=${blog.blogId}`}>Edit blog</Button>
-        <Button
-          destructive
-          onClick={() => {
-            DatabaseFunctions.deleteBlog(apiKey, blog.blogId, result => {
-              console.log(result);
-            });
-          }}
-        >
-          Delete blog
-        </Button>
+        {apiKey !== '' && (
+          <Button
+            destructive
+            onClick={() => {
+              DatabaseFunctions.deleteBlog(apiKey, blog.blogId, result => {
+                console.log(result);
+              });
+            }}
+          >
+            Delete blog
+          </Button>
+        )}
       </SubSection>
     );
   }

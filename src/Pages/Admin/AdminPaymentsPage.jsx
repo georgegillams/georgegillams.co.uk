@@ -1,0 +1,63 @@
+import React from 'react';
+import BpkInput, { INPUT_TYPES } from 'bpk-component-input';
+import Section from '../../components/Section';
+import Loading from '../../components/Loading';
+import Button from '../../components/Button';
+import DatabaseFunctions from '../../DatabaseFunctions';
+import AdminComments from './AdminComments';
+import AdminPayment from './AdminPayment';
+import AdminBlog from './AdminBlog';
+import AdminNotifications from './AdminNotifications';
+
+import STYLES from '../pages.scss';
+
+const getClassName = className => STYLES[className] || 'UNKNOWN';
+
+class AdminPaymentsPage extends React.Component {
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      paymentsCount: 0,
+      pageIds: [],
+      payments: [],
+      publishedBlogs: [],
+      allBlogs: [],
+      pattern: '',
+    };
+  }
+
+  componentDidMount() {
+    const getPayments = () => {
+      DatabaseFunctions.getPaymentRequestCount(result => {
+        this.setState({ paymentsCount: result });
+      });
+      if (this.props.apiKey !== '') {
+        DatabaseFunctions.getPayments(this.props.apiKey, result => {
+          this.setState({ payments: result });
+        });
+      }
+    };
+
+    getPayments();
+    setInterval(getPayments, 2000);
+  }
+
+  render() {
+    const { className, apiKey, ...rest } = this.props;
+
+    const classNameFinal = [];
+    if (className) classNameFinal.push(className);
+
+    return (
+      <Section name="Payments">
+        {this.state.paymentsCount}
+        {this.state.payments.map(p => (
+          <AdminPayment apiKey={apiKey} payment={p} />
+        ))}
+      </Section>
+    );
+  }
+}
+
+export default AdminPaymentsPage;
