@@ -3,9 +3,6 @@ import PersonalDetailsBanner from './HomePageV2Banners/PersonalDetailsBanner';
 import homePageBanner from './HomePageV2Banners/homePageBanner';
 import ArticleCard, { CARD_LAYOUTS } from '../components/ArticleCard';
 import PageSwitchScroller from '../components/PageSwitchScroller';
-import phoneIcon from '../icons/phoneIcon.png';
-import blogIcon from './../icons/blogIcon.jpg';
-import photographyIcon from './../icons/photoIcon.jpg';
 
 import STYLES from './pages.scss';
 
@@ -58,7 +55,7 @@ const HomePageV2 = () => {
             day={null}
             month={null}
             className={getClassName('pages__card')}
-            imageSrc={blogIcon}
+            imageSrc="https://i.imgur.com/3n68rkf.jpg"
             linkUrl="/blog"
             title="Blog"
             tallLayout
@@ -68,7 +65,7 @@ const HomePageV2 = () => {
             day={null}
             month={null}
             className={getClassName('pages__card')}
-            imageSrc={photographyIcon}
+            imageSrc="https://i.imgur.com/mCmmM4N.jpg"
             linkUrl="/photography"
             title="Photos"
             tallLayout
@@ -78,7 +75,7 @@ const HomePageV2 = () => {
             day={null}
             month={null}
             className={getClassName('pages__card')}
-            imageSrc={phoneIcon}
+            imageSrc="https://i.imgur.com/9hcLfgF.png"
             linkUrl="/contact"
             title="Contact"
             tallLayout
