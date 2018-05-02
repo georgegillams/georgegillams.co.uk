@@ -1,5 +1,8 @@
 import React from 'react';
 import BpkInput, { INPUT_TYPES } from 'bpk-component-input';
+import BpkHorizontalNav, {
+  BpkHorizontalNavItem,
+} from 'bpk-component-horizontal-nav';
 import Section from '../../components/Section';
 import Loading from '../../components/Loading';
 import Button from '../../components/Button';
@@ -8,6 +11,10 @@ import AdminComments from './AdminComments';
 import AdminPayment from './AdminPayment';
 import AdminBlog from './AdminBlog';
 import AdminNotifications from './AdminNotifications';
+import AdminBlogsPage from './AdminBlogsPage';
+import AdminCommentsPage from './AdminCommentsPage';
+import AdminNotificationsPage from './AdminNotificationsPage';
+import AdminPaymentsPage from './AdminPaymentsPage';
 
 import STYLES from '../pages.scss';
 
@@ -18,49 +25,16 @@ class Admin extends React.Component {
     super(props);
 
     this.state = {
-      paymentsCount: 0,
-      pageIds: [],
-      payments: [],
-      publishedBlogs: [],
-      allBlogs: [],
       apiKey: '',
-      pattern: '',
+      selected: 'blogs',
     };
   }
 
-  componentDidMount() {
-    const getPageIds = () => {
-      DatabaseFunctions.getPageIds(results => {
-        this.setState({ pageIds: results });
-      });
-    };
-    const getPayments = () => {
-      DatabaseFunctions.getPaymentRequestCount(result => {
-        this.setState({ paymentsCount: result });
-      });
-      if (this.state.apiKey !== '') {
-        DatabaseFunctions.getPayments(this.state.apiKey, result => {
-          this.setState({ payments: result });
-        });
-      }
-    };
-    const getBlogs = () => {
-      if (this.state.apiKey !== '') {
-        DatabaseFunctions.getBlogs(this.state.apiKey, [], result => {
-          this.setState({ allBlogs: result });
-        });
-      }
-      DatabaseFunctions.getBlogs('', [], result => {
-        this.setState({ publishedBlogs: result });
-      });
-    };
-    getPayments();
-    getPageIds();
-    getBlogs();
-    setInterval(getPayments, 2000);
-    setInterval(getBlogs, 2000);
-    setInterval(getPageIds, 2000);
-  }
+  onClick = e => {
+    this.setState({
+      selected: e.target.name,
+    });
+  };
 
   render() {
     const { className, ...rest } = this.props;
@@ -68,26 +42,14 @@ class Admin extends React.Component {
     const classNameFinal = [];
     if (className) classNameFinal.push(className);
 
-    const notificationList = (
-      <Section name="Notifications">
-        <AdminNotifications apiKey={this.state.apiKey} />
-      </Section>
-    );
-
-    const pageIdList = (
-      <Section name="Page IDs">
-        {this.state.pageIds.map(c => <div>{c}</div>)}
-      </Section>
-    );
-
     return (
       <Section
         name="So, you found my admin page!"
         className={classNameFinal.join(' ')}
+        {...rest}
       >
         Check you out, you l33T H4cK3R. Unfortunately you're not going to get
         very far without my private API-Key!
-        <br />
         <br />
         <BpkInput
           className={getClassName('pages__card')}
@@ -99,86 +61,48 @@ class Admin extends React.Component {
           placeholder="API Key"
         />
         <br />
-        <br />
-        {notificationList}
-        <br />
-        <br />
-        {pageIdList}
-        <br />
-        {this.state.pageIds.map(c => (
-          <AdminComments apiKey={this.state.apiKey} pageId={c} />
-        ))}
-        <br />
-        <BpkInput
-          className={getClassName('pages__card')}
-          id="pattern"
-          name="Remove all comments containing pattern"
-          value={this.state.pattern}
-          onChange={event => this.setState({ pattern: event.target.value })}
-          placeholder="Remove all comments containing pattern"
-        />
-        <br />
-        <Button
-          style={{ width: '100%' }}
-          destructive
-          onClick={() => {
-            for (let i = 0; i < this.state.pageIds.length; i += 1) {
-              DatabaseFunctions.deleteComment(
-                this.state.apiKey,
-                this.state.pageIds[i],
-                this.state.pattern,
-                null,
-                result => {
-                  console.log(result);
-                },
-              );
-            }
-          }}
-        >
-          DO DAMAGE
-        </Button>
-        <br />
-        <br />
-        <br />
-        <br />
-        <Section name="Payments">
-          {this.state.paymentsCount}
-          {this.state.payments.map(p => (
-            <AdminPayment apiKey={this.state.apiKey} payment={p} />
-          ))}
-        </Section>
-        <Section name="Published blogs">
-          {this.state.publishedBlogs.length > 0 ? (
-            <div>
-              {this.state.publishedBlogs.map(b => (
-                <AdminBlog apiKey={this.state.apiKey} blog={b} />
-              ))}
-            </div>
-          ) : (
-            <Loading />
-          )}
-        </Section>
-        {this.state.allBlogs.length > 0 && (
-          <Section name="All blogs">
-            {this.state.allBlogs.map(b => (
-              <AdminBlog apiKey={this.state.apiKey} blog={b} />
-            ))}
-          </Section>
+        <BpkHorizontalNav>
+          <BpkHorizontalNavItem
+            name="blogs"
+            selected={this.state.selected === 'blogs'}
+            onClick={this.onClick}
+          >
+            Blogs
+          </BpkHorizontalNavItem>
+          <BpkHorizontalNavItem
+            name="comments"
+            selected={this.state.selected === 'comments'}
+            onClick={this.onClick}
+          >
+            Blog comments
+          </BpkHorizontalNavItem>
+          <BpkHorizontalNavItem
+            name="notifications"
+            selected={this.state.selected === 'notifications'}
+            onClick={this.onClick}
+          >
+            Notifications
+          </BpkHorizontalNavItem>
+          <BpkHorizontalNavItem
+            name="payments"
+            selected={this.state.selected === 'payments'}
+            onClick={this.onClick}
+          >
+            Payments
+          </BpkHorizontalNavItem>
+        </BpkHorizontalNav>
+        {this.state.selected === 'blogs' && (
+          <AdminBlogsPage apiKey={this.state.apiKey} />
         )}
-        <Button
-          onClick={() => {
-            DatabaseFunctions.addBlog(this.state.apiKey, result => {
-              console.log(result);
-              if (result && result.blog_id) {
-                this.props.history.push(
-                  `/admin/blog-editor?id=${result.blog_id}`,
-                );
-              }
-            });
-          }}
-        >
-          Add blog
-        </Button>
+        {this.state.selected === 'comments' && (
+          <AdminCommentsPage apiKey={this.state.apiKey} />
+        )}
+        {this.state.selected === 'notifications' && (
+          <AdminNotificationsPage apiKey={this.state.apiKey} />
+        )}
+        {this.state.selected === 'payments' && (
+          <AdminPaymentsPage apiKey={this.state.apiKey} />
+        )}
       </Section>
     );
   }
