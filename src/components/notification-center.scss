@@ -1,0 +1,29 @@
+@import '~bpk-mixins';
+@import '../../bower_components/animatewithsass/animate.scss';
+
+.notification-center {
+  &__container {
+    width: 100%;
+  }
+
+  &__notification {
+    display: flex;
+    width: 100%;
+    margin-bottom: 1.5rem;
+    padding: .8rem;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: #1e1e1e;
+    color: white;
+
+    &--warn {
+      background-color: darkorange;
+    }
+
+    &--error {
+      background-color: red;
+    }
+  }
+}
