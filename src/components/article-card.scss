@@ -126,6 +126,9 @@
     grid-area: children;
     flex-direction: row;
     align-items: center;
+    text-decoration: none !important;
+    text-decoration-color: transparent !important;
+    text-decoration-line: none !important;
   }
 
   &__date {
