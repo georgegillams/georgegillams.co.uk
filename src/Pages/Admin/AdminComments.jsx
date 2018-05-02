@@ -38,22 +38,24 @@ class AdminComments extends React.Component {
             {c.commenterName}
             <br />
             {c.comment}
-            <Button
-              destructive
-              onClick={() => {
-                DatabaseFunctions.deleteComment(
-                  apiKey,
-                  pageId,
-                  null,
-                  c.commentId,
-                  result => {
-                    console.log(result);
-                  },
-                );
-              }}
-            >
-              Delete comment
-            </Button>
+            {apiKey !== '' && (
+              <Button
+                destructive
+                onClick={() => {
+                  DatabaseFunctions.deleteComment(
+                    apiKey,
+                    pageId,
+                    null,
+                    c.commentId,
+                    result => {
+                      console.log(result);
+                    },
+                  );
+                }}
+              >
+                Delete comment
+              </Button>
+            )}
           </div>
         ))}
       </SubSection>
