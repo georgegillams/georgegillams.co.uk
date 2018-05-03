@@ -5,6 +5,7 @@ import BpkIconMenu from 'bpk-component-icon/lg/menu';
 import Logo from './Logo';
 import NavigationItem from './NavigationItem';
 import SubSection from './SubSection';
+import BlogPreviewContent from './BlogPreviewContent';
 import DatabaseFunctions from '../DatabaseFunctions';
 
 import STYLES from './notification-center.scss';
@@ -53,11 +54,15 @@ class NotificationCenter extends Component {
     return (
       <div className={outerClassNameFinal.join(' ')} {...rest}>
         {this.state.notifications.map(n => {
-          console.log(n);
           const notificationClassName = [
             getClassName('typography__text'),
             getClassName('notification-center__notification'),
           ];
+          if (n.notificationType === 'success') {
+            notificationClassName.push(
+              getClassName('notification-center__notification--success'),
+            );
+          }
           if (n.notificationType === 'warn') {
             notificationClassName.push(
               getClassName('notification-center__notification--warn'),
@@ -70,7 +75,7 @@ class NotificationCenter extends Component {
           }
           return (
             <div className={notificationClassName.join(' ')}>
-              {n.notificationMessage}
+              <BlogPreviewContent content={n.notificationMessage} />
             </div>
           );
         })}
