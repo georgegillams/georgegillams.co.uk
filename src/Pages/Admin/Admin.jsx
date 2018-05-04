@@ -51,6 +51,7 @@ class Admin extends React.Component {
         Check you out, you l33T H4cK3R. Unfortunately you're not going to get
         very far without my private API-Key!
         <br />
+        <br />
         <BpkInput
           className={getClassName('pages__card')}
           type={INPUT_TYPES.PASSWORD}
@@ -89,6 +90,15 @@ class Admin extends React.Component {
             onClick={this.onClick}
           >
             Payments
+          </BpkHorizontalNavItem>
+          <BpkHorizontalNavItem
+            name="design"
+            selected={this.state.selected === 'design'}
+            onClick={() => {
+              window.location = '/design';
+            }}
+          >
+            Design
           </BpkHorizontalNavItem>
         </BpkHorizontalNav>
         {this.state.selected === 'blogs' && (
