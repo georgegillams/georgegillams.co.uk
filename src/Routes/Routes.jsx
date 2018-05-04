@@ -19,6 +19,7 @@ import ForOhFour from '../Pages/ForOhFour';
 import TeaPot from '../Pages/TeaPot';
 import Payments from '../Pages/Payments';
 import PaymentView from '../Pages/PaymentView';
+import Design from '../Pages/Design/Design';
 
 const redirects = [
   { from: '/articles/tough-mudder', to: '/blog/tough-mudder' },
@@ -63,6 +64,7 @@ const Routes = (
         <Route exact path="/travel" component={TravelPage} />
         <Route path="/photography" component={Art} />
         <Route exact path="/work" component={Work} />
+        <Route exact path="/design" component={Design} />
         <Route
           path="/apps/password-character-extractor"
           component={PasswordCharacterExtractor}
