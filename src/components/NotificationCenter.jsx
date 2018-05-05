@@ -7,6 +7,8 @@ import NavigationItem from './NavigationItem';
 import SubSection from './SubSection';
 import BlogPreviewContent from './BlogPreviewContent';
 import DatabaseFunctions from '../DatabaseFunctions';
+import NotificationComp from './NotificationComp';
+import Tag from './Tag';
 
 import STYLES from './notification-center.scss';
 import TYPO_STYLES from './typography.scss';
@@ -26,7 +28,6 @@ class NotificationCenter extends Component {
   componentDidMount() {
     const getNotifications = () => {
       DatabaseFunctions.getNotifications(results => {
-        console.log(results);
         this.setState({
           notifications: results,
         });
@@ -53,32 +54,11 @@ class NotificationCenter extends Component {
 
     return (
       <div className={outerClassNameFinal.join(' ')} {...rest}>
-        {this.state.notifications.map(n => {
-          const notificationClassName = [
-            getClassName('typography__text'),
-            getClassName('notification-center__notification'),
-          ];
-          if (n.notificationType === 'success') {
-            notificationClassName.push(
-              getClassName('notification-center__notification--success'),
-            );
-          }
-          if (n.notificationType === 'warn') {
-            notificationClassName.push(
-              getClassName('notification-center__notification--warn'),
-            );
-          }
-          if (n.notificationType === 'error') {
-            notificationClassName.push(
-              getClassName('notification-center__notification--error'),
-            );
-          }
-          return (
-            <div className={notificationClassName.join(' ')}>
-              <BlogPreviewContent content={n.notificationMessage} />
-            </div>
-          );
-        })}
+        {this.state.notifications.map(n => (
+          <NotificationComp type={n.notificationType}>
+            {n.notificationMessage}
+          </NotificationComp>
+        ))}
       </div>
     );
   }

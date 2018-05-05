@@ -19,7 +19,7 @@ class Design extends React.Component {
     super(props);
 
     this.state = {
-      selected: 'components',
+      selected: 'colours',
     };
   }
 
@@ -41,7 +41,7 @@ class Design extends React.Component {
         here for my benefit, but since you&apos;re here you might as well have a
         look around.
         <br />
-        <BpkHorizontalNav>
+        <BpkHorizontalNav style={{ margin: '1.2rem 0' }}>
           <BpkHorizontalNavItem
             name="colours"
             selected={this.state.selected === 'colours'}
