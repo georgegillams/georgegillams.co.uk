@@ -62,7 +62,7 @@ class Admin extends React.Component {
           placeholder="API Key"
         />
         <br />
-        <BpkHorizontalNav>
+        <BpkHorizontalNav style={{ margin: '1.2rem 0' }}>
           <BpkHorizontalNavItem
             name="blogs"
             selected={this.state.selected === 'blogs'}
