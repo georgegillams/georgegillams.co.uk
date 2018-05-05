@@ -12,7 +12,7 @@ import Loading from '../../components/Loading';
 import Quote from '../../components/Quote';
 import RedirectNotice from '../../components/RedirectNotice';
 import Tag from '../../components/Tag';
-// import Notification from '../../components/Notification';
+import NotificationComp from '../../components/NotificationComp';
 
 import STYLES from '../pages.scss';
 
@@ -82,7 +82,24 @@ class DesignComponents extends React.Component {
           <Tag type="events" />
         </SubSection>
         <SubSection noAnchor name="Notification">
-          <CodeInline>In need of refactoring 😿</CodeInline>
+          <NotificationComp type="neutral">
+            This is a `neutral` notification that supports **markdown**
+          </NotificationComp>
+          <br />
+          <br />
+          <NotificationComp type="success">
+            This is a `success` notification that supports **markdown**
+          </NotificationComp>
+          <br />
+          <br />
+          <NotificationComp type="warn">
+            This is a `warn` notification that supports **markdown**
+          </NotificationComp>
+          <br />
+          <br />
+          <NotificationComp type="error">
+            This is a `error` notification that supports **markdown**
+          </NotificationComp>
         </SubSection>
         <SubSection noAnchor name="Loading spinner">
           <Loading />

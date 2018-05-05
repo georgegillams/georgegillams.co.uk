@@ -15,7 +15,10 @@
     justify-content: center;
     align-items: center;
     background-color: #1e1e1e;
-    color: white;
+
+    &--neutral {
+      background-color: #1e1e1e;
+    }
 
     &--success {
       background-color: darkgreen;
@@ -27,6 +30,24 @@
 
     &--error {
       background-color: red;
+    }
+  }
+
+  &__element {
+    &--neutral {
+      color: white;
+    }
+
+    &--success {
+      color: white;
+    }
+
+    &--warn {
+      color: white;
+    }
+
+    &--error {
+      color: white;
     }
   }
 }
