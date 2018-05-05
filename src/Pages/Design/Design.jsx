@@ -19,7 +19,7 @@ class Design extends React.Component {
     super(props);
 
     this.state = {
-      selected: 'colours',
+      selected: 'components',
     };
   }
 
