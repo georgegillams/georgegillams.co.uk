@@ -3,9 +3,11 @@ import { withRouter } from 'react-router-dom';
 import BpkBannerAlert, { ALERT_TYPES } from 'bpk-component-banner-alert';
 import BpkInput from 'bpk-component-input';
 import Section from '../components/Section';
+import SubSection from '../components/SubSection';
 import Button from '../components/Button';
 import DatabaseFunctions from '../DatabaseFunctions';
 import TextLink from '../components/TextLink';
+import CodeInline from '../components/CodeInline';
 import {
   DECIMAL_REGEX,
   INT_REGEX,
@@ -40,12 +42,53 @@ class Payments extends React.Component {
 
     return (
       <div style={{ width: '100%' }} className={classNameFinal.join(' ')}>
-        <Section name="Send me money" className={classNameFinal.join(' ')}>
-          If you want to send me money, either{' '}
-          <TextLink external href="https://monzo.me/georgestuartgillams">
-            pay me via Monzo{' '}
-          </TextLink>
-          or make a bank transfer to 04-00-04 05339705.
+        <Section name="Send me money">
+          If you want to send me money, you can do so in a number of ways:
+          <SubSection name="Monzo">
+            If you have Monzo, you can transfer money directly using my phone
+            number (<TextLink href="tel:+447867592615">
+              +44 786759 2615
+            </TextLink>)
+            <br />
+            Otherwise,{' '}
+            <TextLink external href="https://monzo.me/georgestuartgillams">
+              pay me via Monzo{' '}
+            </TextLink>{' '}
+            online.
+          </SubSection>
+          <SubSection name="Circle">
+            If you use circle, you can send me money on there using my email (<TextLink href="mailto:g@georgegillams.co.uk">
+              g@georgegillams.co.uk
+            </TextLink>). If you don't already have Circle and you wanna get £5,
+            use this link to{' '}
+            <TextLink external href="https://www.circle.com/invite/2RH58S">
+              sign up to Circle pay{' '}
+            </TextLink>
+            😉.
+          </SubSection>
+          <SubSection name="Crypto">
+            Here are my crypto wallet addresses incase you&apos;re really hip!
+            <br />
+            <br />
+            Bitcoin: <CodeInline>3ApNpbGMWMVVhRJuBLYtZtLwaHqhW73vbw</CodeInline>
+            <br />
+            Bitcoin Cash:{' '}
+            <CodeInline>
+              {'qrg7fqthkw08yzp9ys6v7m7394lqj96dzczkhg6r77'}
+            </CodeInline>
+            <br />
+            Ethereum:{' '}
+            <CodeInline>
+              {'0x5126FD065a2d7Cf77f50f6DDF8DEd144a3e04db3'}
+            </CodeInline>
+            <br />
+            Litecoin:{' '}
+            <CodeInline>MPz6NNqU8U2nZMQX3WTwXJjZFhUA31Q1F6</CodeInline>
+          </SubSection>
+          <SubSection name="Bank transfer">
+            If you&apos;re old-fashioned, you can make a bank transfer to
+            04-00-04 05339705.
+          </SubSection>
         </Section>
         <Section
           name="Request money from me"
