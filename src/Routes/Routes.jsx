@@ -1,5 +1,6 @@
 import React from 'react';
 import { Route, BrowserRouter, Switch, Redirect } from 'react-router-dom';
+import ReactGA from 'react-ga';
 import DefaultLayout from '../components/DefaultLayout';
 
 import HomePage from '../Pages/HomePageV2';
@@ -20,6 +21,8 @@ import TeaPot from '../Pages/TeaPot';
 import Payments from '../Pages/Payments';
 import PaymentView from '../Pages/PaymentView';
 import Design from '../Pages/Design/Design';
+
+ReactGA.initialize('UA-118782053-1');
 
 const redirects = [
   { from: '/articles/tough-mudder', to: '/blog/tough-mudder' },
@@ -52,9 +55,13 @@ const redirects = [
   { from: '/payment', to: '/payments' },
 ];
 
+const fireTracking = () => {
+  ReactGA.pageview(window.location.hash);
+};
+
 // eslint-disable-next-line import/no-webpack-loader-syntax
 const Routes = (
-  <BrowserRouter>
+  <BrowserRouter onUpdate={fireTracking}>
     <DefaultLayout>
       <Switch>
         <Route exact path="/" component={HomePage} />
