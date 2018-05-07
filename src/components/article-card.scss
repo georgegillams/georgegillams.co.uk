@@ -136,5 +136,9 @@
     grid-area: date;
     align-items: center;
     text-align: center;
+
+    &--narrow-compact {
+      display: none;
+    }
   }
 }

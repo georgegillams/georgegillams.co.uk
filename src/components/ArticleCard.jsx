@@ -70,6 +70,7 @@ class ArticleCard extends Component {
     const contentContainerClassNames = [
       getClassName('article-card__inner-container'),
     ];
+    const dateContainerClassNames = [getClassName('article-card__date')];
 
     const bannerClassNames = [getClassName('article-card__banner')];
     if (light) {
@@ -88,6 +89,9 @@ class ArticleCard extends Component {
       );
       centerClassNames.push(
         getClassName('article-card__center-container--narrow-compact'),
+      );
+      dateContainerClassNames.push(
+        getClassName('article-card__date--narrow-compact'),
       );
     } else if (layout === CARD_LAYOUTS.auto) {
       outerBannerClassNames.push(
@@ -124,7 +128,7 @@ class ArticleCard extends Component {
           style={{ backgroundImage: `url(${fillImageSrc})` }}
         />
         <div className={outerBannerClassNames.join(' ')}>
-          <div className={getClassName('article-card__date')}>
+          <div className={dateContainerClassNames.join(' ')}>
             <SubSection
               hover={this.state.hovering}
               noAnchor
