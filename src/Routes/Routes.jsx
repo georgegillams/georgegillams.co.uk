@@ -16,6 +16,7 @@ import TravelPage from '../Pages/CategoryPages/TravelPage';
 import BlogsPage from '../Pages/CategoryPages/BlogsPage';
 import Contact from '../Pages/Contact';
 import AboutMe from '../Pages/AboutMe';
+import AboutDegree from '../Pages/AboutDegree';
 import ForOhFour from '../Pages/ForOhFour';
 import TeaPot from '../Pages/TeaPot';
 import Payments from '../Pages/Payments';
@@ -25,6 +26,7 @@ import Design from '../Pages/Design/Design';
 ReactGA.initialize('UA-118782053-1');
 
 const redirects = [
+  { from: '/about/degree', to: '/work/degree' },
   { from: '/articles/tough-mudder', to: '/blog/tough-mudder' },
   { from: '/articles/net-neutrality', to: '/blog/net-neutrality' },
   { from: '/articles/vim', to: '/blog/vim' },
@@ -70,6 +72,7 @@ const Routes = (
         <Route path="/travel/view" component={BlogViewerPage} />
         <Route exact path="/travel" component={TravelPage} />
         <Route path="/photography" component={Art} />
+        <Route path="/work/degree" component={AboutDegree} />
         <Route exact path="/work" component={Work} />
         <Route exact path="/design" component={Design} />
         <Route
@@ -80,7 +83,7 @@ const Routes = (
         <Route path="/site-map" component={SiteMap} />
         <Route path="/payments/view" component={PaymentView} />
         <Route path="/payments" component={Payments} />
-        <Route path="/about" component={AboutMe} />
+        <Route exact path="/about" component={AboutMe} />
         <Route path="/contact" component={Contact} />
 
         {redirects.map(redirect => (
