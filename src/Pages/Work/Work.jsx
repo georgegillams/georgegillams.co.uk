@@ -31,6 +31,13 @@ const Work = props => {
       <ScrollIndicator />
       <PageSwitchScroller />
       <Section name="My Work">
+        <SubSection name="My Degree">
+          I (nearly 🤞) have a Masters in Software Engineering from the
+          University of Southampton.
+          <br />
+          <br />
+          <Button href="/work/degree">Information about my degree →</Button>
+        </SubSection>
         <SubSection name="Where it all started">
           I started my Software Engineering career at{' '}
           <TextLink
