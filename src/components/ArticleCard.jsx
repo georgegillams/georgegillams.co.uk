@@ -7,6 +7,7 @@ import BpkImage, {
 } from 'bpk-component-image';
 import Section from './Section';
 import SubSection from './SubSection';
+import HelperFunctions from '../HelperFunctions';
 
 import STYLES from './article-card.scss';
 
@@ -136,7 +137,10 @@ class ArticleCard extends Component {
               link
               light={light}
               name={
-                Object.keys(MONTH_MAPPINGS).includes(`${month}`)
+                HelperFunctions.includes(
+                  Object.keys(MONTH_MAPPINGS),
+                  `${month}`,
+                )
                   ? MONTH_MAPPINGS[`${month}`]
                   : month
               }

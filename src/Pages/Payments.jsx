@@ -8,6 +8,7 @@ import Button from '../components/Button';
 import DatabaseFunctions from '../DatabaseFunctions';
 import TextLink from '../components/TextLink';
 import CodeInline from '../components/CodeInline';
+import PageSwitchScroller from '../components/PageSwitchScroller';
 import {
   DECIMAL_REGEX,
   INT_REGEX,
@@ -42,6 +43,7 @@ class Payments extends React.Component {
 
     return (
       <div style={{ width: '100%' }} className={classNameFinal.join(' ')}>
+        <PageSwitchScroller />
         <Section name="Send me money">
           If you want to send me money, you can do so in a number of ways:
           <SubSection name="Monzo">
