@@ -3,6 +3,7 @@ import PersonalDetailsBanner from './HomePageV2Banners/PersonalDetailsBanner';
 import homePageBanner from './HomePageV2Banners/homePageBanner';
 import ArticleCard, { CARD_LAYOUTS } from '../components/ArticleCard';
 import PageSwitchScroller from '../components/PageSwitchScroller';
+import HelperFunctions from '../HelperFunctions';
 
 import STYLES from './pages.scss';
 
@@ -25,15 +26,12 @@ const PersonalDetailsBannerH = homePageBanner(
 );
 
 const HomePageV2 = () => {
-  const uA = window.navigator.userAgent;
-  const ieOrEdge =
-    /msie\s|trident\/|edge\//i.test(uA) &&
-    !!(document.uniqueID || window.MSInputMethodContext);
+  const { ie, edge } = HelperFunctions.getBrowser(window);
 
   return (
     <main>
       <PageSwitchScroller />
-      {!ieOrEdge && (
+      {!ie && (
         <div className={getClassName('pages__slider')}>
           <PersonalDetailsBannerH />
         </div>

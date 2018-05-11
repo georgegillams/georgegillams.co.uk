@@ -18,6 +18,7 @@ const getClassName = className => STYLES[className] || 'UNKNOWN';
 
 const PersonalDetailsBanner = props => {
   const { percentageComplete } = props;
+
   const downArrowBottom = CalculationHelpers.calculateValue(
     percentageComplete,
     0,
@@ -556,6 +557,18 @@ const PersonalDetailsBanner = props => {
           src="https://i.imgur.com/EHF7zqM.jpg"
         />
       </div>
+      {/* <span
+        style={{
+          position: 'fixed',
+          top: 0,
+          left: 0,
+          color: 'white',
+          fontWeight: 'bold',
+          fontSize: '4rem',
+        }}
+      >
+        {percentageComplete}
+      </span> */}
     </div>
   );
 };

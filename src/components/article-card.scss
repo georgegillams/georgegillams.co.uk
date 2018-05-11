@@ -80,10 +80,9 @@
   }
 
   &__image-container {
-    display: grid;
+    display: block;
     width: 6rem;
     height: 6rem;
-    grid-area: image;
     justify-self: center;
     justify-content: center;
     align-items: center;
@@ -98,6 +97,8 @@
   &__image {
     width: 12rem;
     height: 7rem;
+    margin-top: -.5rem;
+    margin-left: -2.9rem;
   }
 
   &__banner {
