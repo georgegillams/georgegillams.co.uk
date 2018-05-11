@@ -57,7 +57,8 @@ const Contact = props => {
           </ArticleCard>
           <SubSection
             className={getClassName('pages__card')}
-            name="Questions about Black Panther should be emailed to me using WhatsApp 🤦‍♂️"
+            noAnchor
+            name="Questions about Black Panther should be emailed to me using WhatsApp 🤦‍"
           />
         </div>
         {/* <br />

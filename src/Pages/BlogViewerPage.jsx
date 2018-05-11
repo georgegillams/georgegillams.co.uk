@@ -4,6 +4,7 @@ import BlogRenderer from './../components/BlogRenderer';
 import Comments from './../components/Comments';
 import Loading from './../components/Loading';
 import DatabaseFunctions from './../DatabaseFunctions';
+import HelperFunctions from './../HelperFunctions';
 
 import STYLES from './pages.scss';
 
@@ -54,11 +55,17 @@ class BlogEditorPage extends React.Component {
     return (
       <div id="greasy_blog_handle">
         <BlogRenderer
-          centered={this.state.blog.blogTags.includes('travel')}
+          centered={HelperFunctions.includes(
+            this.state.blog.blogTags,
+            'travel',
+          )}
           blog={this.state.blog}
         />
         <Comments
-          centered={this.state.blog.blogTags.includes('travel')}
+          centered={HelperFunctions.includes(
+            this.state.blog.blogTags,
+            'travel',
+          )}
           pageId={this.state.blog.blogId}
         />
       </div>
