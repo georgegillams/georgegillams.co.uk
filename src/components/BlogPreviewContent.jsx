@@ -19,6 +19,7 @@ import SubSection from './SubSection';
 import Code from './Code';
 import CodeInline from './CodeInline';
 import CodeBashArrow from './CodeBashArrow';
+import HelperFunctions from '../HelperFunctions';
 
 import STYLES from './blog-viewer.scss';
 import PAGES_STYLES from './../Pages/pages.scss';
@@ -185,7 +186,7 @@ const BlogPreviewContent = props => {
     const linkText = mdBigLink.shift();
     const linkRef = mdBigLink.shift();
     const postLinkText = mdBigLink.join('');
-    const external = linkRef.includes('.');
+    const external = HelperFunctions.includes(linkRef, '.');
     return (
       <span className={classNameFinal.join(' ')} {...rest}>
         <RecursiveWrapper content={preLinkText} />
@@ -214,7 +215,7 @@ const BlogPreviewContent = props => {
     const linkText = mdLink.shift();
     const linkRef = mdLink.shift();
     const postLinkText = mdLink.join('');
-    const external = linkRef.includes('.');
+    const external = HelperFunctions.includes(linkRef, '.');
     return (
       <span className={classNameFinal.join(' ')} {...rest}>
         <RecursiveWrapper content={preLinkText} />

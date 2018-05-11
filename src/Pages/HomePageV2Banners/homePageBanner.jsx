@@ -137,6 +137,9 @@ export default function homePageBanner(
       //   },
       // });
 
+      if (isNaN(this.state.percentageComplete)) {
+        return null;
+      }
       return (
         <main
           id={`outerBanner${instanceId}`}

@@ -52,7 +52,6 @@ const BlogRenderer = props => {
   return (
     <div className={classNameFinal.join(' ')} {...rest}>
       <ScrollIndicator />
-      <PageSwitchScroller />
       <Section
         className={elementClassNameFinal.join(' ')}
         name={blog.blogName}

@@ -69,7 +69,7 @@ const GetSocial = props => {
         {/* <a  href="https://github.com/Skyscanner" rel="noopener noreferrer" target="_blank">
       <img alt="Skyscanner" width={5} height={5} className={iconClassNameFinal.join(' ')} src={skyscannerIcon} />
       </a> */}
-        <a
+        {/* <a
           href="https://gurushots.com/georgegillams/achievements"
           rel="noopener noreferrer"
           target="_blank"
@@ -81,7 +81,7 @@ const GetSocial = props => {
             className={iconClassNameFinal.join(' ')}
             src={guruShotsIcon}
           />
-        </a>
+        </a> */}
         <a
           href="https://www.facebook.com/george333123"
           rel="noopener noreferrer"
@@ -108,7 +108,7 @@ const GetSocial = props => {
             src={linkedinIcon}
           />
         </a>
-        <a
+        {/* <a
           href="https://www.flickr.com/people/137198167@N03/"
           rel="noopener noreferrer"
           target="_blank"
@@ -120,7 +120,7 @@ const GetSocial = props => {
             className={iconClassNameFinal.join(' ')}
             src={flickrIcon}
           />
-        </a>
+        </a> */}
         <a
           href="https://www.dropbox.com/request/Xin5hG6X6zX2z94VLJJm"
           rel="noopener noreferrer"
@@ -156,7 +156,7 @@ const GetSocial = props => {
             src={phoneIcon}
           />
         </a>
-        <NavLink to="/payments">
+        {/* <NavLink to="/payments">
           <img
             alt="monzo"
             width={5}
@@ -164,7 +164,7 @@ const GetSocial = props => {
             className={iconClassNameFinal.join(' ')}
             src={monzoIcon}
           />
-        </NavLink>
+        </NavLink> */}
       </div>
     </div>
   );
