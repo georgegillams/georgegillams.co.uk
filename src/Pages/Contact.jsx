@@ -1,6 +1,7 @@
 import React from 'react';
 import Section from '../components/Section';
 import ArticleCard, { CARD_LAYOUTS } from '../components/ArticleCard';
+import SubSection from '../components/SubSection';
 
 import STYLES from './pages.scss';
 
@@ -54,6 +55,10 @@ const Contact = props => {
           >
             <Section>+44 78675 92615</Section>
           </ArticleCard>
+          <SubSection
+            className={getClassName('pages__card')}
+            name="Questions about Black Panther should be emailed to me using WhatsApp 🤦‍♂️"
+          />
         </div>
         {/* <br />
         <a
