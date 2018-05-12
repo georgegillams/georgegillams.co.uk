@@ -19,7 +19,7 @@ class BlogsPage extends Component {
     super(props);
 
     this.state = {
-      selectedTags: ['tech', 'photography', 'events', 'security'],
+      selectedTags: [],
       blogs: null,
       refreshContinuously: true,
     };
@@ -28,11 +28,16 @@ class BlogsPage extends Component {
   componentDidMount() {
     const getBlogs = () => {
       if (this.state.refreshContinuously) {
-        DatabaseFunctions.getBlogs('', this.state.selectedTags, results => {
-          this.setState({
-            blogs: results,
-          });
-        });
+        DatabaseFunctions.getBlogs(
+          'blog',
+          '',
+          this.state.selectedTags,
+          results => {
+            this.setState({
+              blogs: results,
+            });
+          },
+        );
       }
     };
 
@@ -60,32 +65,29 @@ class BlogsPage extends Component {
         {!this.state.blogs && <Loading />}
         {this.state.blogs && (
           <div>
-            {this.state.blogs.map(
-              b =>
-                !b.blogShowInBlogsList ? null : (
-                  <ArticleCard
-                    day={
-                      b.blogCardDate
-                        ? b.blogCardDate
-                        : new Date(1000 * b.publishedTimestamp).getDate()
-                    }
-                    month={new Date(1000 * b.publishedTimestamp).getMonth()}
-                    className={getClassName('pages__card')}
-                    fillImageSrc={b.blogHeroImage}
-                    imageSrc={b.blogImage}
-                    linkUrl={`/blog/view?id=${b.blogId}`}
-                    title={b.blogName.match(NON_EMOJI_REGEX).join('')}
-                    imageBorder={
-                      b.blogImageBorderColor ? b.blogImageBorderColor : null
-                    }
-                    bannerColor={b.blogBannerColor ? b.blogBannerColor : null}
-                    autoTallLayout
-                    light={b.blogCardLight}
-                  >
-                    {b && b.blogTags && b.blogTags.map(t => <Tag type={t} />)}
-                  </ArticleCard>
-                ),
-            )}
+            {this.state.blogs.map(b => (
+              <ArticleCard
+                day={
+                  b.blogCardDate
+                    ? b.blogCardDate
+                    : new Date(1000 * b.publishedTimestamp).getDate()
+                }
+                month={new Date(1000 * b.publishedTimestamp).getMonth()}
+                className={getClassName('pages__card')}
+                fillImageSrc={b.blogHeroImage}
+                imageSrc={b.blogImage}
+                linkUrl={`/blog/view?id=${b.blogId}`}
+                title={b.blogName.match(NON_EMOJI_REGEX).join('')}
+                imageBorder={
+                  b.blogImageBorderColor ? b.blogImageBorderColor : null
+                }
+                bannerColor={b.blogBannerColor ? b.blogBannerColor : null}
+                autoTallLayout
+                light={b.blogCardLight}
+              >
+                {b && b.blogTags && b.blogTags.map(t => <Tag type={t} />)}
+              </ArticleCard>
+            ))}
           </div>
         )}
       </div>
