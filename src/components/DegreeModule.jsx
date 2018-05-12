@@ -10,7 +10,7 @@ import STYLES from './degree-module.scss';
 const getClassName = className => STYLES[className] || 'UNKNOWN';
 
 const DegreeModule = props => {
-  const { name, percentage, className, ...rest } = props;
+  const { name, percentage, filled, className, ...rest } = props;
 
   const classNameFinal = [getClassName('degree-module')];
   if (className) {
@@ -30,7 +30,7 @@ const DegreeModule = props => {
             small
             min={0}
             max={100}
-            value={percentage || 0}
+            value={filled ? percentage || 0 : 0}
             aria-label={`Degree percentage - ${
               percentage ? `${percentage}%` : 'pending'
             }`}
@@ -40,7 +40,7 @@ const DegreeModule = props => {
       </div>
       <span
         className={getClassName('degree-module--percentage')}
-        style={{ opacity: percentage && percentage > 0.01 ? 1 : 0 }}
+        style={{ opacity: filled && percentage && percentage > 0.01 ? 1 : 0 }}
       >{`${percentage || '00'}%`}</span>
     </span>
   );
@@ -49,10 +49,12 @@ const DegreeModule = props => {
 DegreeModule.propTypes = {
   name: PropTypes.string.isRequired,
   percentage: PropTypes.number,
+  filled: PropTypes.bool,
   className: PropTypes.string,
 };
 
 DegreeModule.defaultProps = {
+  filled: false,
   className: null,
   percentage: null,
 };
