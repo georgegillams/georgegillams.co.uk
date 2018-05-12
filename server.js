@@ -412,8 +412,6 @@ router.get('/api/blog-posts', (req, res) => {
     ? req.headers['selected-blog-tags'].split(', ')
     : [];
   const blogCollection = req.headers['blog-collection'];
-  // const blogList = true;
-  // const travelList = true;
   client.lrange(`blog-posts`, 0, -1, (err, reply) => {
     const result = [];
     for (let i = 0; i < reply.length; i += 1) {
@@ -432,8 +430,9 @@ router.get('/api/blog-posts', (req, res) => {
             const tag = blog.blogTags[j];
             if (selectedBlogTags.includes(tag)) {
               if (
-                (blogList && blog.blogShowInBlogsList) ||
-                (travelList && blog.blogShowInTravelBlogsList)
+                blogCollection === 'all' ||
+                (blogCollection === 'blog' && blog.blogShowInBlogsList) ||
+                (blogCollection === 'travel' && blog.blogShowInTravelBlogsList)
               ) {
                 result.push(blog);
               }
@@ -494,6 +493,7 @@ router.post('/api/blog-posts', (req, res) => {
   const blogCardLink = req.body.blog_card_link;
   const blogBibtex = req.body.blog_bibtex;
   const blogShowInBlogsList = req.body.blog_show_in_blogs_list;
+  const blogShowInTravelBlogsList = req.body.blog_show_in_travel_blogs_list;
   const blogCardDate = req.body.blog_card_date;
   client.rpush([
     `blog-posts`,
@@ -509,6 +509,7 @@ router.post('/api/blog-posts', (req, res) => {
       blogCardLink,
       blogBibtex,
       blogShowInBlogsList,
+      blogShowInTravelBlogsList,
       blogCardDate,
       publishedTimestamp: null,
     }),

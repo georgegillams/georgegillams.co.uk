@@ -12,8 +12,8 @@ import PasswordCharacterExtractor from '../Pages/Work/PasswordCharacterExtractor
 import BpkComponentDemo from '../Pages/Work/BpkComponentDemoPage';
 import Art from '../Pages/Art/Art';
 import SiteMap from '../Pages/SiteMap';
-import travel from '../Pages/CategoryPages/TravelPage';
-import blog from '../Pages/CategoryPages/BlogsPage';
+import TravelPage from '../Pages/CategoryPages/TravelPage';
+import BlogsPage from '../Pages/CategoryPages/BlogsPage';
 import Contact from '../Pages/Contact';
 import AboutMe from '../Pages/AboutMe';
 import AboutDegree from '../Pages/AboutDegree';
@@ -67,10 +67,10 @@ const Routes = (
     <DefaultLayout>
       <Switch>
         <Route exact path="/" component={HomePage} />
-        <Route exact path="/blog" component={blog} />
+        <Route exact path="/blog" component={BlogsPage} />
         <Route path="/blog/view" component={BlogViewerPage} />
         <Route path="/travel/view" component={BlogViewerPage} />
-        <Route exact path="/travel" component={travel} />
+        <Route exact path="/travel" component={TravelPage} />
         <Route path="/photography" component={Art} />
         <Route path="/work/degree" component={AboutDegree} />
         <Route exact path="/work" component={Work} />
