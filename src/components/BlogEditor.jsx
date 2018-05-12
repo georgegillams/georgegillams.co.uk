@@ -73,6 +73,12 @@ class BlogEditor extends Component {
     this.props.onBlogChanged(newBlog);
   };
 
+  onBlogShowInTravelBlogsListChanged = event => {
+    const newBlog = JSON.parse(JSON.stringify(this.props.blog));
+    newBlog.blogShowInTravelBlogsList = event.target.checked;
+    this.props.onBlogChanged(newBlog);
+  };
+
   onBlogCardLightChanged = event => {
     const newBlog = JSON.parse(JSON.stringify(this.props.blog));
     newBlog.blogCardLight = event.target.checked;
@@ -191,6 +197,14 @@ class BlogEditor extends Component {
           name="showInBlogsList"
           checked={blog.blogShowInBlogsList}
           onChange={this.onBlogShowInBlogsListChanged}
+        />
+        <br />
+        <BpkCheckBox
+          className={elementClassNameFinal.join(' ')}
+          label="showInTravelBlogsList"
+          name="showInTravelBlogsList"
+          checked={blog.blogShowInTravelBlogsList}
+          onChange={this.onBlogShowInTravelBlogsListChanged}
         />
         <BpkInput
           className={elementClassNameFinal.join(' ')}
