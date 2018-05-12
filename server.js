@@ -32,7 +32,7 @@ app.use((req, res, next) => {
   res.header('Access-Control-Allow-Origin', '*');
   res.header(
     'Access-Control-Allow-Headers',
-    'Origin, X-Requested-With, Content-Type, Accept, page_id, payment_id, blog_id, Api-Key, selected-blog-tags',
+    'Origin, X-Requested-With, Content-Type, Accept, page_id, payment_id, blog_id, Api-Key, selected-blog-tags, blog-collection',
   );
   res.header('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE');
   next();
@@ -411,18 +411,32 @@ router.get('/api/blog-posts', (req, res) => {
   const selectedBlogTags = req.headers['selected-blog-tags']
     ? req.headers['selected-blog-tags'].split(', ')
     : [];
+  const blogCollection = req.headers['blog-collection'];
+  // const blogList = true;
+  // const travelList = true;
   client.lrange(`blog-posts`, 0, -1, (err, reply) => {
     const result = [];
     for (let i = 0; i < reply.length; i += 1) {
       const blog = JSON.parse(reply[i]);
       if (apiKey === xApiKeyPrivate || blog.blogPublished) {
         if (selectedBlogTags.length === 0) {
-          result.push(blog);
+          if (
+            blogCollection === 'all' ||
+            (blogCollection === 'blog' && blog.blogShowInBlogsList) ||
+            (blogCollection === 'travel' && blog.blogShowInTravelBlogsList)
+          ) {
+            result.push(blog);
+          }
         } else {
           for (let j = 0; j < blog.blogTags.length; j += 1) {
             const tag = blog.blogTags[j];
             if (selectedBlogTags.includes(tag)) {
-              result.push(blog);
+              if (
+                (blogList && blog.blogShowInBlogsList) ||
+                (travelList && blog.blogShowInTravelBlogsList)
+              ) {
+                result.push(blog);
+              }
               break;
             }
           }
@@ -522,6 +536,7 @@ router.post('/api/blog-posts/update', (req, res) => {
   const blogCardLink = req.body.blog_card_link;
   const blogBibtex = req.body.blog_bibtex;
   const blogShowInBlogsList = req.body.blog_show_in_blogs_list;
+  const blogShowInTravelBlogsList = req.body.blog_show_in_travel_blogs_list;
   const blogCardDate = req.body.blog_card_date;
   if (blogId !== undefined) {
     client.lrange(`blog-posts`, 0, -1, (err, reply) => {
@@ -545,6 +560,7 @@ router.post('/api/blog-posts/update', (req, res) => {
           blog.blogCardLink = blogCardLink;
           blog.blogBibtex = blogBibtex;
           blog.blogShowInBlogsList = blogShowInBlogsList;
+          blog.blogShowInTravelBlogsList = blogShowInTravelBlogsList;
           blog.blogCardDate = blogCardDate;
           client.lset(`blog-posts`, i, JSON.stringify(blog));
           return;

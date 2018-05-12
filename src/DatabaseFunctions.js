@@ -40,13 +40,14 @@ class DatabaseFunctions {
     });
   }
 
-  static getBlogs(privateApiKey, selectedBlogTags, cb) {
+  static getBlogs(blogCollection, privateApiKey, selectedBlogTags, cb) {
     const options = {
       method: 'GET',
       url: `${url}/api/blog-posts`,
       headers: {
         'Api-Key': privateApiKey === '' ? apiKey : privateApiKey,
         'selected-blog-tags': selectedBlogTags,
+        'blog-collection': blogCollection,
       },
     };
 
