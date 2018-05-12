@@ -13,7 +13,7 @@ import STYLES from '../pages.scss';
 
 const getClassName = className => STYLES[className] || 'UNKNOWN';
 
-class Adminblog extends React.Component {
+class AdminBlogsPage extends React.Component {
   constructor(props) {
     super(props);
 
@@ -93,4 +93,4 @@ class Adminblog extends React.Component {
   }
 }
 
-export default Adminblog;
+export default AdminBlogsPage;
