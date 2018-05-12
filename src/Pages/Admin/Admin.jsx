@@ -9,9 +9,9 @@ import Button from '../../components/Button';
 import DatabaseFunctions from '../../DatabaseFunctions';
 import AdminComments from './AdminComments';
 import AdminPayment from './AdminPayment';
-import AdminBlog from './AdminBlog';
-import AdminNotifications from './AdminNotifications';
 import AdminBlogsPage from './AdminBlogsPage';
+import AdminNotifications from './AdminNotifications';
+// import AdminBlogsPage from './AdminBlogsPage';
 import AdminCommentsPage from './AdminCommentsPage';
 import AdminNotificationsPage from './AdminNotificationsPage';
 import AdminPaymentsPage from './AdminPaymentsPage';
@@ -102,7 +102,7 @@ class Admin extends React.Component {
           </BpkHorizontalNavItem>
         </BpkHorizontalNav>
         {this.state.selected === 'blogs' && (
-          <AdminBlogsPage apiKey={this.state.apiKey} />
+          <Adminblog apiKey={this.state.apiKey} />
         )}
         {this.state.selected === 'comments' && (
           <AdminCommentsPage apiKey={this.state.apiKey} />
