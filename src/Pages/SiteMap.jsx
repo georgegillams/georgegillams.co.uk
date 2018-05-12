@@ -22,16 +22,12 @@ class SiteMap extends Component {
   componentDidMount() {
     const getBlogs = () => {
       if (this.state.refreshContinuously) {
-        DatabaseFunctions.getBlogs(
-          '',
-          ['tech', 'photography', 'events', 'security'],
-          results => {
-            this.setState({
-              blogs: results,
-            });
-          },
-        );
-        DatabaseFunctions.getBlogs('', ['travel'], results => {
+        DatabaseFunctions.getBlogs('blog', '', [], results => {
+          this.setState({
+            blogs: results,
+          });
+        });
+        DatabaseFunctions.getBlogs('travel', '', [], results => {
           this.setState({
             travelBlogs: results,
           });

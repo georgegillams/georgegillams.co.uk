@@ -27,11 +27,11 @@ class AdminBlogsPage extends React.Component {
   componentDidMount() {
     const getBlogs = () => {
       if (this.props.apiKey !== '') {
-        DatabaseFunctions.getBlogs(this.props.apiKey, [], result => {
+        DatabaseFunctions.getBlogs('all', this.props.apiKey, [], result => {
           this.setState({ allBlogs: result });
         });
       }
-      DatabaseFunctions.getBlogs('', [], result => {
+      DatabaseFunctions.getBlogs('all', '', [], result => {
         this.setState({ publishedBlogs: result });
       });
     };
