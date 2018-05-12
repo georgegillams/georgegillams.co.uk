@@ -14,7 +14,7 @@ const getClassName = className => STYLES[className] || 'UNKNOWN';
 
 const TagFilterRoutable = withRouter(TagFilter);
 
-class blog extends Component {
+class BlogsPage extends Component {
   constructor(props) {
     super(props);
 
@@ -95,4 +95,4 @@ class blog extends Component {
   }
 }
 
-export default blog;
+export default BlogsPage;
