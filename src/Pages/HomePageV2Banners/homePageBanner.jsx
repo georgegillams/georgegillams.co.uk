@@ -136,9 +136,8 @@ export default function homePageBanner(
       //     });
       //   },
       // });
-
       if (isNaN(this.state.percentageComplete)) {
-        return null;
+        return <Component percentageComplete={this.state.percentageComplete} />;
       }
       return (
         <main
