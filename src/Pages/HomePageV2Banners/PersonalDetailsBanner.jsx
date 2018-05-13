@@ -19,6 +19,48 @@ const getClassName = className => STYLES[className] || 'UNKNOWN';
 const PersonalDetailsBanner = props => {
   const { percentageComplete } = props;
 
+  if (isNaN(percentageComplete)) {
+    return (
+      <div
+        className={`${getClassName('home-page-banner__banner-image')}`}
+        style={{
+          width: '100%',
+          height: '75rem',
+          backgroundColor: '#1E1E1E',
+          backgroundImage: `url(${serreChevalier})`,
+          position: 'relative',
+          textAlign: 'center',
+        }}
+      >
+        <Section
+          style={{
+            paddingTop: `5rem`,
+            textShadow: '.1rem .1rem .2rem #1E1E1E',
+          }}
+          light
+          name="George Gillams"
+        >
+          <SubSection noAnchor light name="Open-source Software Engineer" />
+        </Section>
+        <SubSection
+          noAnchor
+          light
+          style={{
+            // marginTop: `${5 - namePosition}rem`,
+            width: 'auto',
+            textAlign: 'right',
+            paddingRight: '1rem',
+            position: 'absolute',
+            right: 0,
+            bottom: 0,
+          }}
+        >
+          Serre Chevalier Ski Resort
+        </SubSection>
+      </div>
+    );
+  }
+
   const downArrowBottom = CalculationHelpers.calculateValue(
     percentageComplete,
     0,
