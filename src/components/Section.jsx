@@ -1,6 +1,7 @@
 import PropTypes from 'prop-types';
 import React from 'react';
 import BpkText from 'bpk-component-text';
+import TextLink from './TextLink';
 
 import STYLES from './typography.scss';
 
@@ -66,6 +67,16 @@ const Section = props => {
 
   return (
     <div className={classNameFinal.join(' ')} {...rest}>
+      {!noAnchor && (
+        <TextLink
+          href={`#${anchorLink}`}
+          className={`${getClassName('typography__anchor-link')} ${getClassName(
+            'typography__anchor-link--section',
+          )}`}
+        >
+          §
+        </TextLink>
+      )}
       {name && (
         <BpkText
           id={anchorLink}

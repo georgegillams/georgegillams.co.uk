@@ -44,7 +44,7 @@ const BlogPreviewSection = props => {
       className={elementClassNameFinal.join(' ')}
       name={blogSectionName}
       light={light}
-      noAnchor={noAnchor}
+      noAnchor={noAnchor || blogSectionName === ''}
       {...rest}
     >
       <BlogPreviewContent

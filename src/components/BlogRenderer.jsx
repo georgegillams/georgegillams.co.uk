@@ -69,14 +69,14 @@ const BlogRenderer = props => {
             ))}
         </div>
         {blogSections.map(s => (
-          <BlogPreviewSection
-            references={references}
-            blogSection={s}
-            elementClassName={elementClassName}
-            light={light}
-            noAnchor={noAnchor}
-          />
-        ))}
+            <BlogPreviewSection
+              references={references}
+              blogSection={s}
+              elementClassName={elementClassName}
+              light={light}
+              noAnchor={noAnchor}
+            />
+          ))}
       </Section>
     </div>
   );
