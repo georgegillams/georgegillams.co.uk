@@ -56,7 +56,7 @@ const BlogRenderer = props => {
         className={elementClassNameFinal.join(' ')}
         name={blog.blogName}
         light={light}
-        noAnchor={noAnchor}
+        noAnchor
       >
         <ArticleDate
           className={elementClassNameFinal.join(' ')}
