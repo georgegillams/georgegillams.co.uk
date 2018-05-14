@@ -2,6 +2,7 @@ import React from 'react';
 import Section from '../components/Section';
 import ArticleCard, { CARD_LAYOUTS } from '../components/ArticleCard';
 import SubSection from '../components/SubSection';
+import TextLink from '../components/TextLink';
 
 import STYLES from './pages.scss';
 
@@ -59,7 +60,11 @@ const Contact = props => {
             className={getClassName('pages__card')}
             noAnchor
             name="Questions about Black Panther should be emailed to me using WhatsApp 🤦‍"
-          />
+          >
+            <TextLink external href="https://youtu.be/0vL4HLTZQ_Q?t=29">
+              Context
+            </TextLink>
+          </SubSection>
         </div>
         {/* <br />
         <a
