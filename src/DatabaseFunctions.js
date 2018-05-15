@@ -177,6 +177,25 @@ class DatabaseFunctions {
     });
   }
 
+  static deleteAllPings(privateApiKey, cb) {
+    const options = {
+      method: 'DELETE',
+      url: `${url}/api/ping-tests`,
+      headers: {
+        'Api-Key': privateApiKey,
+      },
+      body: {},
+      json: true,
+    };
+
+    request(options, (error, response, body) => {
+      if (error) {
+        throw new Error(error);
+      }
+      cb(body);
+    });
+  }
+
   static deletePayment(privateApiKey, paymentId, cb) {
     const options = {
       method: 'DELETE',
