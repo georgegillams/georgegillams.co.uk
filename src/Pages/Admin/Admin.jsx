@@ -15,6 +15,7 @@ import AdminBlogsPage from './AdminBlogsPage';
 import AdminCommentsPage from './AdminCommentsPage';
 import AdminNotificationsPage from './AdminNotificationsPage';
 import AdminPaymentsPage from './AdminPaymentsPage';
+import AdminPingTest from './AdminPingTest';
 
 import STYLES from '../pages.scss';
 
@@ -100,6 +101,13 @@ class Admin extends React.Component {
           >
             Design
           </BpkHorizontalNavItem>
+          <BpkHorizontalNavItem
+            name="ping_pen_testing"
+            selected={this.state.selected === 'ping_pen_testing'}
+            onClick={this.onClick}
+          >
+            Ping pen-testing
+          </BpkHorizontalNavItem>
         </BpkHorizontalNav>
         {this.state.selected === 'blogs' && (
           <AdminBlogsPage apiKey={this.state.apiKey} />
@@ -112,6 +120,9 @@ class Admin extends React.Component {
         )}
         {this.state.selected === 'payments' && (
           <AdminPaymentsPage apiKey={this.state.apiKey} />
+        )}
+        {this.state.selected === 'ping_pen_testing' && (
+          <AdminPingTest apiKey={this.state.apiKey} />
         )}
       </Section>
     );
