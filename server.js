@@ -109,6 +109,16 @@ router.get('/api/hello', (req, res) => {
   res.send({ express: 'Hello From Express' });
 });
 
+router.get('/api/ping-test', (req, res) => {
+  client.rpush([
+    `pingTests`,
+    JSON.stringify({
+      timestamp: Date.now(),
+    }),
+  ]);
+  res.end();
+});
+
 router.get('/api/comments', (req, res) => {
   const pageId = req.headers.page_id;
   client.lrange(`${pageId}_comments`, 0, -1, (err, reply) => {
@@ -122,6 +132,12 @@ router.get('/api/comments', (req, res) => {
 
 router.get('/api/comments/page_ids', (req, res) => {
   client.lrange('pageIds', 0, -1, (err, reply) => {
+    res.send(reply);
+  });
+});
+
+router.get('/api/ping-tests', (req, res) => {
+  client.lrange('pingTests', 0, -1, (err, reply) => {
     res.send(reply);
   });
 });
