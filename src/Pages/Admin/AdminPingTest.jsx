@@ -33,6 +33,12 @@ class AdminPingTest extends React.Component {
     setInterval(getPings, 2000);
   }
 
+  deleteAllPings = () => {
+    DatabaseFunctions.deleteAllPings(this.props.apiKey, r => {
+      console.log(r);
+    });
+  };
+
   render() {
     const { className, apiKey, ...rest } = this.props;
 
@@ -54,6 +60,11 @@ class AdminPingTest extends React.Component {
             </div>
           );
         })}
+        {apiKey && (
+          <Button destructive onClick={this.deleteAllPings}>
+            Delete all pings
+          </Button>
+        )}
       </Section>
     );
   }

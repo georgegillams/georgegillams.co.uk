@@ -22,6 +22,7 @@ import TeaPot from '../Pages/TeaPot';
 import Payments from '../Pages/Payments';
 import PaymentView from '../Pages/PaymentView';
 import Design from '../Pages/Design/Design';
+import AdminPingTest from '../Pages/Admin/AdminPingTest';
 
 ReactGA.initialize('UA-118782053-1');
 
@@ -81,6 +82,7 @@ const Routes = (
         />
         {/* <Route path="/work/bpk-component-demo" component={BpkComponentDemo} /> */}
         <Route path="/site-map" component={SiteMap} />
+        <Route path="/santander-ping" component={AdminPingTest} />
         <Route path="/payments/view" component={PaymentView} />
         <Route path="/payments" component={Payments} />
         <Route exact path="/about" component={AboutMe} />
