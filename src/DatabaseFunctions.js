@@ -40,6 +40,23 @@ class DatabaseFunctions {
     });
   }
 
+  static getPings(cb) {
+    const options = {
+      method: 'GET',
+      url: `${url}/api/ping-tests`,
+      headers: {},
+    };
+
+    request(options, (error, response, body) => {
+      if (error) throw new Error(error);
+      try {
+        cb(JSON.parse(body));
+      } catch (e) {
+        cb([]);
+      }
+    });
+  }
+
   static getBlogs(blogCollection, privateApiKey, selectedBlogTags, cb) {
     const options = {
       method: 'GET',
