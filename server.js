@@ -204,6 +204,17 @@ router.delete('/api/comments', (req, res) => {
   res.end();
 });
 
+router.delete('/api/ping-tests', (req, res) => {
+  const apiKey = req.headers['api-key'];
+  if (apiKey === undefined || apiKey !== xApiKeyPrivate) {
+    console.log('UNAUTHORISED');
+    res.end();
+    return;
+  }
+  client.del(`pingTests`);
+  res.end();
+});
+
 router.get('/api/payments/count', (req, res) => {
   const apiKey = req.headers['api-key'];
   if (apiKey === undefined || apiKey !== xApiKeyPub) {
