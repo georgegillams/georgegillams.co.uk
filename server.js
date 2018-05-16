@@ -207,7 +207,6 @@ router.delete('/api/comments', (req, res) => {
 router.delete('/api/ping-tests', (req, res) => {
   const apiKey = req.headers['api-key'];
   if (apiKey === undefined || apiKey !== xApiKeyPrivate) {
-    console.log('UNAUTHORISED');
     res.end();
     return;
   }
