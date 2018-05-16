@@ -49,11 +49,12 @@ class Degree extends React.Component {
           <br />
           <DegreeModule
             name="Final percentage"
-            percentage={null}
+            predicted
+            percentage={67}
             filled={this.state.filled[0]}
           />
           <br />
-          Degree classification: pending
+          Degree classification: <span style={{ fontWeight: 'bold' }}>2:1</span>
         </Section>
         {/* )}
         {this.state.selected === 'breakdown' && ( */}
@@ -163,37 +164,37 @@ class Degree extends React.Component {
               className={getClassName('pages__degree-module')}
               name="Dissertation Project"
               percentage={73}
-              filled={this.state.filled[20]}
+              filled={this.state.filled[17]}
             />
             <DegreeModule
               className={getClassName('pages__degree-module')}
               name="Cyber Security"
               percentage={61}
-              filled={this.state.filled[19]}
+              filled={this.state.filled[18]}
             />
             <DegreeModule
               className={getClassName('pages__degree-module')}
               name="Machine Learning"
               percentage={67}
-              filled={this.state.filled[18]}
+              filled={this.state.filled[19]}
             />
             <DegreeModule
               className={getClassName('pages__degree-module')}
               name="Advanced Databases"
               percentage={77}
-              filled={this.state.filled[21]}
+              filled={this.state.filled[20]}
             />
             <DegreeModule
               className={getClassName('pages__degree-module')}
               name="Secure Systems"
               percentage={77}
-              filled={this.state.filled[22]}
+              filled={this.state.filled[21]}
             />
             <DegreeModule
               className={getClassName('pages__degree-module')}
               name="Engineering Law"
               percentage={62}
-              filled={this.state.filled[17]}
+              filled={this.state.filled[22]}
             />
           </SubSection>
           <SubSection name="Year 4">
@@ -211,31 +212,33 @@ class Degree extends React.Component {
             />
             <DegreeModule
               className={getClassName('pages__degree-module')}
-              name="Web Architecture"
-              percentage={52}
+              name="Automated Code Generation"
+              predicted
+              percentage={70}
               filled={this.state.filled[25]}
             />
             <DegreeModule
               className={getClassName('pages__degree-module')}
               name="Semantic Web"
-              percentage={null}
+              predicted
+              percentage={70}
               filled={this.state.filled[26]}
             />
             <DegreeModule
               className={getClassName('pages__degree-module')}
-              name="Data Mining"
-              percentage={null}
+              name="Web Architecture"
+              percentage={52}
               filled={this.state.filled[27]}
             />
             <DegreeModule
               className={getClassName('pages__degree-module')}
-              name="Automated Code Generation"
-              percentage={null}
+              name="Data Mining"
+              predicted
+              percentage={63.4}
               filled={this.state.filled[28]}
             />
           </SubSection>
         </Section>
-        {/* )} */}
       </Section>
     );
   }
