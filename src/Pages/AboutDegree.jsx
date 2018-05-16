@@ -161,15 +161,9 @@ class Degree extends React.Component {
           <SubSection name="Year 3">
             <DegreeModule
               className={getClassName('pages__degree-module')}
-              name="Engineering Law"
-              percentage={62}
-              filled={this.state.filled[17]}
-            />
-            <DegreeModule
-              className={getClassName('pages__degree-module')}
-              name="Machine Learning"
-              percentage={67}
-              filled={this.state.filled[18]}
+              name="Dissertation Project"
+              percentage={73}
+              filled={this.state.filled[20]}
             />
             <DegreeModule
               className={getClassName('pages__degree-module')}
@@ -179,9 +173,9 @@ class Degree extends React.Component {
             />
             <DegreeModule
               className={getClassName('pages__degree-module')}
-              name="Dissertation Project"
-              percentage={73}
-              filled={this.state.filled[20]}
+              name="Machine Learning"
+              percentage={67}
+              filled={this.state.filled[18]}
             />
             <DegreeModule
               className={getClassName('pages__degree-module')}
@@ -194,6 +188,12 @@ class Degree extends React.Component {
               name="Secure Systems"
               percentage={77}
               filled={this.state.filled[22]}
+            />
+            <DegreeModule
+              className={getClassName('pages__degree-module')}
+              name="Engineering Law"
+              percentage={62}
+              filled={this.state.filled[17]}
             />
           </SubSection>
           <SubSection name="Year 4">
