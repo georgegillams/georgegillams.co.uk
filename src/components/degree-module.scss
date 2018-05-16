@@ -25,6 +25,17 @@
     opacity: .5;
   }
 
+  &--21-marker {
+    position: absolute;
+    top: -.2rem;
+    width: 10%;
+    height: .36rem;
+    margin-left: 60%;
+    border-radius: .2rem;
+    background-color: #1e1e1e;
+    opacity: .15;
+  }
+
   &--percentage {
     width: 2.1rem;
     margin-left: .6rem;
