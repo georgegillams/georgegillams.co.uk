@@ -47,14 +47,20 @@ class Degree extends React.Component {
           Southampton between the years of 2013 - 2015 and 2016 - 2018
           <br />
           <br />
+          <span style={{ width: '100%', fontWeight: 'bold', color: '#e02626' }}>
+            Red values represent the minimum possible
+          </span>
+          <br />
+          <br />
           <DegreeModule
             name="Final percentage"
             predicted
-            percentage={67}
+            percentage={62.1}
             filled={this.state.filled[0]}
           />
           <br />
-          Degree classification: <span style={{ fontWeight: 'bold' }}>2:1</span>
+          Degree classification:{' '}
+          <span style={{ fontWeight: 'bold', color: '#e02626' }}>2:1</span>
         </Section>
         {/* )}
         {this.state.selected === 'breakdown' && ( */}
@@ -201,7 +207,8 @@ class Degree extends React.Component {
             <DegreeModule
               className={getClassName('pages__degree-module')}
               name="Group Design Project"
-              percentage={74}
+              predicted
+              percentage={65}
               filled={this.state.filled[23]}
             />
             <DegreeModule
@@ -214,14 +221,14 @@ class Degree extends React.Component {
               className={getClassName('pages__degree-module')}
               name="Automated Code Generation"
               predicted
-              percentage={70}
+              percentage={31}
               filled={this.state.filled[25]}
             />
             <DegreeModule
               className={getClassName('pages__degree-module')}
               name="Semantic Web"
               predicted
-              percentage={70}
+              percentage={16.75}
               filled={this.state.filled[26]}
             />
             <DegreeModule
@@ -234,7 +241,7 @@ class Degree extends React.Component {
               className={getClassName('pages__degree-module')}
               name="Data Mining"
               predicted
-              percentage={63.4}
+              percentage={31.7}
               filled={this.state.filled[28]}
             />
           </SubSection>
