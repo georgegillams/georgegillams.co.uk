@@ -2,10 +2,18 @@ import React from 'react';
 import Section from '../components/Section';
 import SubSection from '../components/SubSection';
 import DegreeModule from '../components/DegreeModule';
+import BpkImage, {
+  withLazyLoading,
+  withLoadingBehavior,
+} from 'bpk-component-image';
 
 import STYLES from './pages.scss';
 
 const getClassName = className => STYLES[className] || 'UNKNOWN';
+const documentIfExists = typeof window !== 'undefined' ? document : null;
+const FadingLazyLoadedImage = withLoadingBehavior(
+  withLazyLoading(BpkImage, documentIfExists),
+);
 
 class Degree extends React.Component {
   constructor(props) {
@@ -42,6 +50,14 @@ class Degree extends React.Component {
         className={classNameFinal.join(' ')}
         {...rest}
       >
+        <FadingLazyLoadedImage
+          className={getClassName('pages__image')}
+          style={{ maxWidth: '20rem' }}
+          altText="My degree"
+          width={1}
+          height={1}
+          src="https://i.imgur.com/ecbmWmu.jpg"
+        />
         <Section>
           I took a 4 year integrated Masters of Engineering at the University of
           Southampton between the years of 2013 - 2015 and 2016 - 2018
