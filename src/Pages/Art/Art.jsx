@@ -11,6 +11,7 @@ import Comments from '../../components/Comments';
 import LicenseInfo from '../../components/LicenseInfo';
 import PageSwitchScroller from '../../components/PageSwitchScroller';
 import ScrollIndicator from '../../components/ScrollIndicator';
+import AnimatedContent from '../../components/AnimatedContent';
 
 import STYLES from '../pages.scss';
 
@@ -20,6 +21,7 @@ const documentIfExists = typeof window !== 'undefined' ? document : null;
 const FadingLazyLoadedImage = withLoadingBehavior(
   withLazyLoading(BpkImage, documentIfExists),
 );
+const LlAnimatedContent = withLazyLoading(AnimatedContent, documentIfExists);
 
 const Art = props => {
   const { className, ...rest } = props;
@@ -33,89 +35,103 @@ const Art = props => {
       <ScrollIndicator />
       <PageSwitchScroller />
       <Section name="Photography">
-        <div
-          style={{ paddingTop: '1rem' }}
-          className={getClassName('pages__compact-card-container')}
-        >
-          <ArticleCard
-            layout={CARD_LAYOUTS.narrowCompact}
-            day={null}
-            month={null}
-            className={getClassName('pages__card')}
-            imageSrc="https://i.imgur.com/Jng7EhH.png"
-            href="https://gurushots.com/georgegillams/achievements"
-            title="Find me on GuruShots"
-          />
-          <ArticleCard
-            layout={CARD_LAYOUTS.narrowCompact}
-            day={null}
-            month={null}
-            className={getClassName('pages__card')}
-            imageSrc="https://i.imgur.com/u30cQWU.png"
-            href="https://www.flickr.com/people/137198167@N03/"
-            title="Find me on Flickr"
-          />
-        </div>
-        <SubSection noAnchor name="Dog running with a Stick">
-          <FadingLazyLoadedImage
-            className={getClassName('pages__image')}
-            altText="Dog running with a Stick"
-            width={3000}
-            height={2000}
-            src="https://i.imgur.com/8dnCZ5D.jpg"
-          />
-        </SubSection>
-        <SubSection noAnchor name="Stunt Motorcyclist">
-          <FadingLazyLoadedImage
-            className={getClassName('pages__image')}
-            altText="Stunt Motorcyclist"
-            width={3000}
-            height={2000}
-            src="https://i.imgur.com/WlLYxDw.jpg"
-          />
-        </SubSection>
-        <SubSection noAnchor name="Longleat Festival of Light">
-          <FadingLazyLoadedImage
-            className={getClassName('pages__image')}
-            altText="Longleat Festival of Light"
-            width={3000}
-            height={2000}
-            src="https://i.imgur.com/EHF7zqM.jpg"
-          />
-        </SubSection>
-        <SubSection noAnchor name="Serre Chevalier">
-          <FadingLazyLoadedImage
-            className={getClassName('pages__image')}
-            altText="Serre Chevalier"
-            width={3000}
-            height={2000}
-            src="https://i.imgur.com/gIccH4E.jpg"
-          />
-        </SubSection>
-        <SubSection
-          noAnchor
-          name="&quot;Thunder Mountain&quot; at Disneyland Paris"
-        >
-          <FadingLazyLoadedImage
-            className={getClassName('pages__image')}
-            altText="&quot;Thunder Mountain&quot; at Disneyland Paris"
-            width={3000}
-            height={2000}
-            src="https://i.imgur.com/mxmULeY.jpg"
-          />
-        </SubSection>
-        <SubSection
-          noAnchor
-          name="Nick Matthew playing in the Canary Wharf Open"
-        >
-          <FadingLazyLoadedImage
-            className={getClassName('pages__image')}
-            altText="Nick Matthew playing in the Canary Wharf Open"
-            width={3000}
-            height={2000}
-            src="https://i.imgur.com/h4BFWqS.jpg"
-          />
-        </SubSection>
+        <LlAnimatedContent>
+          <div
+            style={{ paddingTop: '1rem' }}
+            className={getClassName('pages__compact-card-container')}
+          >
+            <ArticleCard
+              layout={CARD_LAYOUTS.narrowCompact}
+              day={null}
+              month={null}
+              className={getClassName('pages__card')}
+              imageSrc="https://i.imgur.com/Jng7EhH.png"
+              href="https://gurushots.com/georgegillams/achievements"
+              title="Find me on GuruShots"
+            />
+            <ArticleCard
+              layout={CARD_LAYOUTS.narrowCompact}
+              day={null}
+              month={null}
+              className={getClassName('pages__card')}
+              imageSrc="https://i.imgur.com/u30cQWU.png"
+              href="https://www.flickr.com/people/137198167@N03/"
+              title="Find me on Flickr"
+            />
+          </div>
+        </LlAnimatedContent>
+        <LlAnimatedContent>
+          <SubSection noAnchor name="Dog running with a Stick">
+            <FadingLazyLoadedImage
+              className={getClassName('pages__image')}
+              altText="Dog running with a Stick"
+              width={3000}
+              height={2000}
+              src="https://i.imgur.com/8dnCZ5D.jpg"
+            />
+          </SubSection>
+        </LlAnimatedContent>
+        <LlAnimatedContent>
+          <SubSection noAnchor name="Stunt Motorcyclist">
+            <FadingLazyLoadedImage
+              className={getClassName('pages__image')}
+              altText="Stunt Motorcyclist"
+              width={3000}
+              height={2000}
+              src="https://i.imgur.com/WlLYxDw.jpg"
+            />
+          </SubSection>
+        </LlAnimatedContent>
+        <LlAnimatedContent>
+          <SubSection noAnchor name="Longleat Festival of Light">
+            <FadingLazyLoadedImage
+              className={getClassName('pages__image')}
+              altText="Longleat Festival of Light"
+              width={3000}
+              height={2000}
+              src="https://i.imgur.com/EHF7zqM.jpg"
+            />
+          </SubSection>
+        </LlAnimatedContent>
+        <LlAnimatedContent>
+          <SubSection noAnchor name="Serre Chevalier">
+            <FadingLazyLoadedImage
+              className={getClassName('pages__image')}
+              altText="Serre Chevalier"
+              width={3000}
+              height={2000}
+              src="https://i.imgur.com/gIccH4E.jpg"
+            />
+          </SubSection>
+        </LlAnimatedContent>
+        <LlAnimatedContent>
+          <SubSection
+            noAnchor
+            name="&quot;Thunder Mountain&quot; at Disneyland Paris"
+          >
+            <FadingLazyLoadedImage
+              className={getClassName('pages__image')}
+              altText="&quot;Thunder Mountain&quot; at Disneyland Paris"
+              width={3000}
+              height={2000}
+              src="https://i.imgur.com/mxmULeY.jpg"
+            />
+          </SubSection>
+        </LlAnimatedContent>
+        <LlAnimatedContent>
+          <SubSection
+            noAnchor
+            name="Nick Matthew playing in the Canary Wharf Open"
+          >
+            <FadingLazyLoadedImage
+              className={getClassName('pages__image')}
+              altText="Nick Matthew playing in the Canary Wharf Open"
+              width={3000}
+              height={2000}
+              src="https://i.imgur.com/h4BFWqS.jpg"
+            />
+          </SubSection>
+        </LlAnimatedContent>
       </Section>
       <Section name="Photoshop">
         <SubSection noAnchor name="Tulips exploding with light">
