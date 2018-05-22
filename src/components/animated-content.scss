@@ -1,0 +1,14 @@
+@import '~bpk-mixins';
+
+.animated-content {
+  &__outer-container {
+    padding-top: 15rem;
+    transition: all 1s ease-in-out;
+    opacity: .01;
+
+    &--in-view {
+      padding-top: 0;
+      opacity: 1;
+    }
+  }
+}
