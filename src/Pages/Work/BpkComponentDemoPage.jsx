@@ -1,11 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import BpkImage, {
-  withLazyLoading,
-  withLoadingBehavior,
-} from 'bpk-component-image';
+import BpkImage, { withLoadingBehavior } from 'bpk-component-image';
 import BpkBadge from 'bpk-component-badge';
 import GitHubForkRibbon from 'react-github-fork-ribbon';
+import withLazyLoading from '../../components/withLazyLoading';
 import Section from '../../components/Section';
 // import BpkDemo from 'bpk-component-demo';
 import BpkDemo from '../../components/bpk-component-demo/index';

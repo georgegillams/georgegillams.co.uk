@@ -1,5 +1,5 @@
 import React from 'react';
-import { withLazyLoading } from 'bpk-component-image';
+import withLazyLoading from '../../components/withLazyLoading';
 import Section from '../../components/Section';
 import TextLink from '../../components/TextLink';
 import SubSection from '../../components/SubSection';
