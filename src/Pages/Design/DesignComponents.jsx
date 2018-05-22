@@ -1,4 +1,5 @@
 import React from 'react';
+import { withLazyLoading } from 'bpk-component-image';
 import Section from '../../components/Section';
 import TextLink from '../../components/TextLink';
 import SubSection from '../../components/SubSection';
@@ -13,10 +14,14 @@ import Quote from '../../components/Quote';
 import RedirectNotice from '../../components/RedirectNotice';
 import Tag from '../../components/Tag';
 import NotificationComp from '../../components/NotificationComp';
+import AnimatedContent from '../../components/AnimatedContent';
 
 import STYLES from '../pages.scss';
 
 const getClassName = className => STYLES[className] || 'UNKNOWN';
+
+const documentIfExists = typeof window !== 'undefined' ? document : null;
+const LlAnimatedContent = withLazyLoading(AnimatedContent, documentIfExists);
 
 class DesignComponents extends React.Component {
   constructor(props) {
@@ -106,6 +111,17 @@ class DesignComponents extends React.Component {
         </SubSection>
         <SubSection noAnchor name="Redirect notice">
           <RedirectNotice />
+        </SubSection>
+        <SubSection noAnchor name="Animated container">
+          <LlAnimatedContent>
+            <div
+              style={{
+                width: '25rem',
+                height: '5rem',
+                backgroundColor: '#e02626',
+              }}
+            />
+          </LlAnimatedContent>
         </SubSection>
       </Section>
     );

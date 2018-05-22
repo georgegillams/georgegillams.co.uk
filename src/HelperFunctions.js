@@ -10,6 +10,7 @@ class HelperFunctions {
   static isLocalHost(url) {
     let returnValue = false;
     const pos =
+      url.indexOf(':3000') +
       url.indexOf('localhost') +
       url.indexOf('10.0.2.2') +
       url.indexOf('127.0.0.1');
