@@ -1,10 +1,8 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { NavLink } from 'react-router-dom';
-import BpkImage, {
-  withLazyLoading,
-  withLoadingBehavior,
-} from 'bpk-component-image';
+import BpkImage, { withLoadingBehavior } from 'bpk-component-image';
+import withLazyLoading from './withLazyLoading';
 import Section from './Section';
 import SubSection from './SubSection';
 import HelperFunctions from '../HelperFunctions';

@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { withRouter } from 'react-router-dom';
-import { withLazyLoading } from 'bpk-component-image';
+import withLazyLoading from '../../components/withLazyLoading';
 import ArticleCard from '../../components/ArticleCard';
 import PageSwitchScroller from '../../components/PageSwitchScroller';
 import Loading from '../../components/Loading';

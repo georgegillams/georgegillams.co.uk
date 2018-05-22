@@ -2,10 +2,7 @@ import PropTypes from 'prop-types';
 import React from 'react';
 import BpkText from 'bpk-component-text';
 import YoutubeEmbedVideo from 'youtube-embed-video';
-import BpkImage, {
-  withLazyLoading,
-  withLoadingBehavior,
-} from 'bpk-component-image';
+import BpkImage, { withLoadingBehavior } from 'bpk-component-image';
 import scrollIntoView from 'scroll-into-view';
 import {
   citation,
@@ -13,7 +10,7 @@ import {
   REFERENCE_STYLES,
 } from 'react-component-academic-reference';
 import TextLink from './TextLink';
-import Strikethrough from './Strikethrough';
+import withLazyLoading from './withLazyLoading';
 import Quote from './Quote';
 import SubSection from './SubSection';
 import Code from './Code';
