@@ -68,9 +68,16 @@ class Degree extends React.Component {
           </span>
           <br />
           <br />
+          <span
+            style={{ width: '100%', fontWeight: 'bold', color: 'darkorchid' }}
+          >
+            Purple values represent estimated values
+          </span>
+          <br />
+          <br />
           <DegreeModule
             name="Final percentage"
-            predicted
+            minimum
             percentage={62.1}
             filled={this.state.filled[0]}
           />
@@ -223,8 +230,7 @@ class Degree extends React.Component {
             <DegreeModule
               className={getClassName('pages__degree-module')}
               name="Group Design Project"
-              predicted
-              percentage={65}
+              percentage={71.75}
               filled={this.state.filled[23]}
             />
             <DegreeModule
@@ -237,13 +243,13 @@ class Degree extends React.Component {
               className={getClassName('pages__degree-module')}
               name="Automated Code Generation"
               predicted
-              percentage={31}
+              percentage={67}
               filled={this.state.filled[25]}
             />
             <DegreeModule
               className={getClassName('pages__degree-module')}
               name="Semantic Web"
-              predicted
+              minimum
               percentage={16.75}
               filled={this.state.filled[26]}
             />
@@ -256,7 +262,7 @@ class Degree extends React.Component {
             <DegreeModule
               className={getClassName('pages__degree-module')}
               name="Data Mining"
-              predicted
+              minimum
               percentage={31.7}
               filled={this.state.filled[28]}
             />
