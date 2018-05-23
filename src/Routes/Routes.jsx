@@ -1,6 +1,5 @@
 import React from 'react';
 import { Route, BrowserRouter, Switch, Redirect } from 'react-router-dom';
-import ReactGA from 'react-ga';
 import DefaultLayout from '../components/DefaultLayout';
 
 import HomePage from '../Pages/HomePageV2';
@@ -9,7 +8,6 @@ import BlogEditorPage from '../Pages/Admin/BlogEditorPage';
 import BlogViewerPage from '../Pages/BlogViewerPage';
 import Work from '../Pages/Work/Work';
 import PasswordCharacterExtractor from '../Pages/Work/PasswordCharacterExtractor';
-import BpkComponentDemo from '../Pages/Work/BpkComponentDemoPage';
 import Art from '../Pages/Art/Art';
 import SiteMap from '../Pages/SiteMap';
 import TravelPage from '../Pages/CategoryPages/TravelPage';
@@ -23,8 +21,6 @@ import Payments from '../Pages/Payments';
 import PaymentView from '../Pages/PaymentView';
 import Design from '../Pages/Design/Design';
 import AdminPingTest from '../Pages/Admin/AdminPingTest';
-
-ReactGA.initialize('UA-118782053-1');
 
 const redirects = [
   { from: '/about/degree', to: '/work/degree' },
@@ -58,13 +54,9 @@ const redirects = [
   { from: '/payment', to: '/payments' },
 ];
 
-const fireTracking = () => {
-  ReactGA.pageview(window.location.hash);
-};
-
 // eslint-disable-next-line import/no-webpack-loader-syntax
 const Routes = (
-  <BrowserRouter onUpdate={fireTracking}>
+  <BrowserRouter>
     <DefaultLayout>
       <Switch>
         <Route exact path="/" component={HomePage} />
