@@ -10,7 +10,15 @@ import STYLES from './degree-module.scss';
 const getClassName = className => STYLES[className] || 'UNKNOWN';
 
 const DegreeModule = props => {
-  const { name, predicted, percentage, filled, className, ...rest } = props;
+  const {
+    name,
+    minimum,
+    predicted,
+    percentage,
+    filled,
+    className,
+    ...rest
+  } = props;
 
   const classNameFinal = [getClassName('degree-module')];
   if (className) {
@@ -30,10 +38,19 @@ const DegreeModule = props => {
     />
   );
 
-  if (predicted) {
+  if (minimum) {
     progress = (
       <BpkThemeProvider
         theme={{ progressBarFillColor: '#e02626' }}
+        themeAttributes={[...progressThemeAttributes]}
+      >
+        {progress}
+      </BpkThemeProvider>
+    );
+  } else if (predicted) {
+    progress = (
+      <BpkThemeProvider
+        theme={{ progressBarFillColor: 'darkorchid' }}
         themeAttributes={[...progressThemeAttributes]}
       >
         {progress}
@@ -70,6 +87,7 @@ DegreeModule.propTypes = {
   name: PropTypes.string.isRequired,
   percentage: PropTypes.number,
   predicted: PropTypes.bool,
+  minimum: PropTypes.bool,
   filled: PropTypes.bool,
   className: PropTypes.string,
 };
@@ -77,6 +95,7 @@ DegreeModule.propTypes = {
 DegreeModule.defaultProps = {
   filled: false,
   predicted: false,
+  minimum: false,
   className: null,
   percentage: null,
 };
