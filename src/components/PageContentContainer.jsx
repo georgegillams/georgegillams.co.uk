@@ -5,7 +5,7 @@ import STYLES from './page-content-container.scss';
 
 const getClassName = className => STYLES[className] || 'UNKNOWN';
 
-const NoSideBar = (props) => {
+const PageContentContainer = props => {
   const { children, className, ...rest } = props;
   const classNameFinal = [getClassName('page-content-container__main')];
   if (className) {
@@ -21,14 +21,14 @@ const NoSideBar = (props) => {
   );
 };
 
-NoSideBar.propTypes = {
+PageContentContainer.propTypes = {
   children: PropTypes.node,
   className: PropTypes.string,
 };
 
-NoSideBar.defaultProps = {
+PageContentContainer.defaultProps = {
   children: null,
   className: null,
 };
 
-export default NoSideBar;
+export default PageContentContainer;

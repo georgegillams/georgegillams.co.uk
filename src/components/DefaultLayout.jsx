@@ -3,7 +3,6 @@ import PropTypes from 'prop-types';
 import 'whatwg-fetch';
 import HelperFunctions from '../HelperFunctions';
 import NotificationCenter from './NotificationCenter';
-import ie from 'ie-version';
 
 import RedirectNotice from './RedirectNotice';
 import NavigationBar from './NavigationBar';
