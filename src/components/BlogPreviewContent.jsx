@@ -94,6 +94,43 @@ const BlogPreviewContent = props => {
       content={p.content}
     />
   );
+
+  // If it's a footnote ref, return a superscript number:
+  const mdFootNote1 = content.split(MD_FOOTNOTE_1_REGEX);
+  if (mdFootNote1.length > 2) {
+    const preFootnoteText = `${mdFootNote1.shift()}${mdFootNote1.shift()}`;
+    const footnoteNumber = mdFootNote1.shift();
+    const postFootnoteText = mdFootNote1.join('');
+    return (
+      <span className={classNameFinal.join(' ')} {...rest}>
+        <RecursiveWrapper content={preFootnoteText} />
+        <BpkText textStyle="xs">
+          <sup>{footnoteNumber}</sup>
+        </BpkText>
+        <RecursiveWrapper content={postFootnoteText} />
+      </span>
+    );
+  }
+
+  // If it's a footnote, return a superscript number:
+  const mdFootNote2 = content.split(MD_FOOTNOTE_2_REGEX);
+  if (mdFootNote2.length > 3) {
+    const preFootnoteText = `${mdFootNote2.shift()}${mdFootNote2.shift()}`;
+    const footnoteNumber = mdFootNote2.shift();
+    const footnoteValue = mdFootNote2.shift();
+    const postFootnoteText = mdFootNote2.join('');
+    return (
+      <span className={classNameFinal.join(' ')} {...rest}>
+        <RecursiveWrapper content={preFootnoteText} />
+        <BpkText textStyle="xs">
+          <sup>{footnoteNumber}</sup>{' '}
+          {<RecursiveWrapper content={footnoteValue} />}
+        </BpkText>
+        <RecursiveWrapper content={postFootnoteText} />
+      </span>
+    );
+  }
+
   // If it's a quotation, return a Quote component:
   const mdQuotation = content.split(MD_QUOTATION_REGEX);
   if (mdQuotation.length > 2) {
@@ -262,42 +299,6 @@ const BlogPreviewContent = props => {
           <RecursiveWrapper content={boldText} />
         </span>
         <RecursiveWrapper content={postBoldText} />
-      </span>
-    );
-  }
-
-  // If it's a footnote ref, return a superscript number:
-  const mdFootNote1 = content.split(MD_FOOTNOTE_1_REGEX);
-  if (mdFootNote1.length > 2) {
-    const preFootnoteText = `${mdFootNote1.shift()}${mdFootNote1.shift()}`;
-    const footnoteNumber = mdFootNote1.shift();
-    const postFootnoteText = mdFootNote1.join('');
-    return (
-      <span className={classNameFinal.join(' ')} {...rest}>
-        <RecursiveWrapper content={preFootnoteText} />
-        <BpkText textStyle="xs">
-          <sup>{footnoteNumber}</sup>
-        </BpkText>
-        <RecursiveWrapper content={postFootnoteText} />
-      </span>
-    );
-  }
-
-  // If it's a footnote, return a superscript number:
-  const mdFootNote2 = content.split(MD_FOOTNOTE_2_REGEX);
-  if (mdFootNote2.length > 3) {
-    const preFootnoteText = `${mdFootNote2.shift()}${mdFootNote2.shift()}`;
-    const footnoteNumber = mdFootNote2.shift();
-    const footnoteValue = mdFootNote2.shift();
-    const postFootnoteText = mdFootNote2.join('');
-    return (
-      <span className={classNameFinal.join(' ')} {...rest}>
-        <RecursiveWrapper content={preFootnoteText} />
-        <BpkText textStyle="xs">
-          <sup>{footnoteNumber}</sup>{' '}
-          {<RecursiveWrapper content={footnoteValue} />}
-        </BpkText>
-        <RecursiveWrapper content={postFootnoteText} />
       </span>
     );
   }
