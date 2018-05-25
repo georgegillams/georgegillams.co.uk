@@ -30,24 +30,21 @@ class BlogsPage extends Component {
     };
   }
 
-  componentDidMount() {
-    const getBlogs = () => {
-      if (this.state.refreshContinuously) {
-        DatabaseFunctions.getBlogs(
-          'blog',
-          '',
-          this.state.selectedTags,
-          results => {
-            this.setState({
-              blogs: results,
-            });
-          },
-        );
-      }
-    };
+  getBlogs = selectedTags => {
+    if (this.state.refreshContinuously) {
+      DatabaseFunctions.getBlogs('blog', '', selectedTags, results => {
+        this.setState({
+          blogs: results,
+        });
+      });
+    }
+  };
 
-    getBlogs();
-    setInterval(getBlogs, 2000);
+  componentDidMount() {
+    this.getBlogs(this.state.selectedTags);
+    setInterval(() => {
+      this.getBlogs(this.state.selectedTags);
+    }, 2000);
   }
 
   componentWillUnmount() {
@@ -64,6 +61,7 @@ class BlogsPage extends Component {
           selectedTags={this.state.selectedTags}
           onSelectedTagsChanged={nst => {
             this.setState({ selectedTags: nst });
+            this.getBlogs(nst);
           }}
           className={getClassName('pages__tag-filter')}
         />
