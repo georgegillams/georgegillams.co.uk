@@ -63,7 +63,7 @@ class TagFilter extends Component {
     const filterEnabled = selectedTags.length !== 0;
 
     return (
-      <div className={outerClassName.join(' ')}>
+      <div className={outerClassName.join(' ')} {...rest}>
         {Object.keys(TAG_TYPES).map(v => (
           <Tag
             disabled={
