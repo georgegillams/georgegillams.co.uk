@@ -81,6 +81,19 @@ class Logo extends Component {
     return (
       <div className={classNameFinal.join(' ')} {...rest}>
         <NavLink
+          role="button"
+          onMouseEnter={() => {
+            this.setState({ hovering: true });
+          }}
+          onFocus={() => {
+            this.setState({ hovering: true });
+          }}
+          onMouseLeave={() => {
+            this.setState({ hovering: false });
+          }}
+          onBlur={() => {
+            this.setState({ hovering: false });
+          }}
           to="/"
           onMouseDown={this.onLongPressStart}
           onMouseUp={this.onLongPressEnd}

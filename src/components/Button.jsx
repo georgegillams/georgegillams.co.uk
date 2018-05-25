@@ -60,7 +60,13 @@ const Button = props => {
     };
   }
 
-  const buttonComponent = (
+  if (href && !hrefExternal) {
+    onClickFinal = () => {
+      window.location = href;
+    };
+  }
+
+  return (
     <button
       disabled={disabled}
       onClick={disabled ? null : onClickFinal}
@@ -70,12 +76,6 @@ const Button = props => {
       {children}
     </button>
   );
-
-  if (href && !hrefExternal) {
-    return <NavLink to={href}>{buttonComponent}</NavLink>;
-  }
-
-  return buttonComponent;
 };
 
 Button.propTypes = {
