@@ -69,17 +69,8 @@ class Tag extends Component {
       outerClassNameFinal.push(getClassName('tag__inner-tag--disabled'));
     }
 
-    let tagComponent = (
-      <span
-        className={getClassName('tag__inner')}
-        onMouseEnter={() => {
-          this.setState({ hovering: true });
-        }}
-        onMouseLeave={() => {
-          this.setState({ hovering: false });
-        }}
-        onClick={onClick}
-      >
+    const tagComponent = (
+      <span className={getClassName('tag__inner')}>
         <span className={angleClassName.join(' ')} />
         <span className={tagClassName.join(' ')}>{`${tagText[type]}`}</span>
         <span className={getClassName('tag__inner-hole')} />
@@ -87,13 +78,39 @@ class Tag extends Component {
     );
 
     if (link) {
-      tagComponent = (
+      return (
         <NavLink
+          role="button"
           className={getClassName('tag__inner-tag--link')}
           to={`/blog?filter=${type}`}
         >
           {tagComponent}
         </NavLink>
+      );
+    } else if (onClick) {
+      return (
+        <div
+          role="button"
+          onKeyPress={onClick}
+          onMouseEnter={() => {
+            this.setState({ hovering: true });
+          }}
+          tabIndex="0"
+          onFocus={() => {
+            this.setState({ hovering: true });
+          }}
+          onMouseLeave={() => {
+            this.setState({ hovering: false });
+          }}
+          onBlur={() => {
+            this.setState({ hovering: false });
+          }}
+          onClick={onClick}
+          className={outerClassNameFinal.join(' ')}
+          {...rest}
+        >
+          {tagComponent}
+        </div>
       );
     }
 

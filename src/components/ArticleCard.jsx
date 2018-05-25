@@ -188,11 +188,15 @@ class ArticleCard extends Component {
     );
 
     if (linkUrl) {
-      cardComponent = <NavLink to={linkUrl}>{cardComponent}</NavLink>;
+      cardComponent = (
+        <NavLink role="button" to={linkUrl}>
+          {cardComponent}
+        </NavLink>
+      );
     }
     if (href) {
       cardComponent = (
-        <a rel="noopener noreferrer" target="_blank" href={href}>
+        <a role="button" rel="noopener noreferrer" target="_blank" href={href}>
           {cardComponent}
         </a>
       );
@@ -200,10 +204,21 @@ class ArticleCard extends Component {
 
     return (
       <div
+        role="button"
+        onMouseEnter={() => {
+          this.setState({ hovering: true });
+        }}
+        onFocus={() => {
+          this.setState({ hovering: true });
+        }}
+        onMouseLeave={() => {
+          this.setState({ hovering: false });
+        }}
+        onBlur={() => {
+          this.setState({ hovering: false });
+        }}
         className={classNameFinal.join(' ')}
         {...rest}
-        onMouseEnter={() => this.setState({ hovering: true })}
-        onMouseLeave={() => this.setState({ hovering: false })}
       >
         {cardComponent}
       </div>
