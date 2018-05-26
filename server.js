@@ -8,6 +8,8 @@ const {
   STRING_REGEX,
   MONZOME_LINK_REGEX,
 } = require('./src/shared/constants');
+// const wget = require('node-wget');
+const wget = require('wget-improved');
 
 const app = express();
 
@@ -74,35 +76,56 @@ router.get('/ontologies/2018/tv-listing-ontology', (req, res) => {
   );
 });
 
-router.get('/api/greasemonkey/secureEcs_download', (req, res) => {
-  res.sendFile(
-    path.join(__dirname, './server_content/greasemonkey', 'secure ecs.js'),
-    {
-      headers: { 'Content-Type': 'text/plain' },
-    },
+function sendGreasemonkeyFile(fileName, req, res) {
+  const download = wget.download(
+    `https://raw.githubusercontent.com/georgegillams/dotfiles/master/greasemonkey/${fileName}`,
+    path.join(__dirname, './server_content/greasemonkey', fileName),
+    {},
   );
+  download.on('end', out => {
+    res.sendFile(
+      path.join(__dirname, './server_content/greasemonkey', fileName),
+      {
+        headers: { 'Content-Type': 'text/plain' },
+      },
+    );
+  });
+}
+
+router.get('/api/greasemonkey/find_backpack_components', (req, res) => {
+  sendGreasemonkeyFile('Find Backpack components.js', req, res);
 });
 
-router.get('/api/greasemonkey/george_gillams_blog_edit', (req, res) => {
-  res.sendFile(
-    path.join(
-      __dirname,
-      './server_content/greasemonkey',
-      'georgeGillamsBlogEdit.js',
-    ),
-    {
-      headers: { 'Content-Type': 'text/plain' },
-    },
-  );
+router.get('/api/greasemonkey/github_travis_new_tab', (req, res) => {
+  sendGreasemonkeyFile('GitHub Travis links new tab.js', req, res);
+});
+
+router.get('/api/greasemonkey/github_squash_reminder', (req, res) => {
+  sendGreasemonkeyFile('GitHub squash reminder.js', req, res);
+});
+
+router.get('/api/greasemonkey/gurushots_boost', (req, res) => {
+  sendGreasemonkeyFile('GuruShots boost.js', req, res);
 });
 
 router.get('/api/greasemonkey/guruShotsBoost_download', (req, res) => {
-  res.sendFile(
-    path.join(__dirname, './server_content/greasemonkey', 'guruShotsBoost.js'),
-    {
-      headers: { 'Content-Type': 'text/plain' },
-    },
-  );
+  sendGreasemonkeyFile('GuruShots boost.js', req, res);
+});
+
+router.get('/api/greasemonkey/george_gillams_blog_edit', (req, res) => {
+  sendGreasemonkeyFile('georgegillams.co.uk blog edit link.js', req, res);
+});
+
+router.get('/api/greasemonkey/secureEcs_download', (req, res) => {
+  sendGreasemonkeyFile('secure ecs.js', req, res);
+});
+
+router.get('/api/greasemonkey/skyscanner_buttons', (req, res) => {
+  sendGreasemonkeyFile('skyscanner buttons.js', req, res);
+});
+
+router.get('/api/greasemonkey/southampton_camera_club', (req, res) => {
+  sendGreasemonkeyFile('southampton camera club.js', req, res);
 });
 
 router.get('/api/hello', (req, res) => {
