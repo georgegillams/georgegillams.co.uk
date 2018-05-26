@@ -225,10 +225,7 @@ const Work = props => {
                 />
                 <br />
                 <br />
-                <Button
-                  href="/api/greasemonkey/guruShotsBoost_download"
-                  hrefExternal
-                >
+                <Button href="/api/greasemonkey/gurushots_boost" hrefExternal>
                   Donwload script
                 </Button>
               </SubSection>
