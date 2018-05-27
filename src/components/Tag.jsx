@@ -81,7 +81,7 @@ class Tag extends Component {
       return (
         <NavLink
           role="button"
-          className={getClassName('tag__inner-tag--link')}
+          className={outerClassNameFinal.join(' ')}
           to={`/blog?filter=${type}`}
         >
           {tagComponent}
