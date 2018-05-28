@@ -52,17 +52,18 @@ const Button = props => {
   }
 
   if (className) classNameFinal.push(className);
+  if (href && !hrefExternal && !disabled) {
+    return (
+      <NavLink to={href} className={classNameFinal.join(' ')} {...rest}>
+        {children}
+      </NavLink>
+    );
+  }
 
   let onClickFinal = onClick;
   if (href && hrefExternal) {
     onClickFinal = () => {
       window.open(href, '_blank');
-    };
-  }
-
-  if (href && !hrefExternal) {
-    onClickFinal = () => {
-      window.location = href;
     };
   }
 

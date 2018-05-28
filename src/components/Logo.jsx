@@ -82,6 +82,7 @@ class Logo extends Component {
       <div className={classNameFinal.join(' ')} {...rest}>
         <NavLink
           role="button"
+          aria-label="Home page"
           onMouseEnter={() => {
             this.setState({ hovering: true });
           }}

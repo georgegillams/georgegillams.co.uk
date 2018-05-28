@@ -41,6 +41,7 @@ class Tag extends Component {
     const {
       className,
       disabled,
+      ariaLabel,
       type,
       children,
       onClick,
@@ -81,6 +82,7 @@ class Tag extends Component {
       return (
         <NavLink
           role="button"
+          aria-label={ariaLabel}
           className={outerClassNameFinal.join(' ')}
           to={`/blog?filter=${type}`}
         >
@@ -91,6 +93,7 @@ class Tag extends Component {
       return (
         <div
           role="button"
+          aria-label={ariaLabel}
           onKeyPress={onClick}
           onMouseEnter={() => {
             this.setState({ hovering: true });
@@ -128,6 +131,7 @@ Tag.propTypes = {
   type: PropTypes.oneOf(TAG_TYPES),
   className: PropTypes.string,
   children: PropTypes.node,
+  ariaLabel: PropTypes.string.isRequired,
 };
 
 Tag.defaultProps = {

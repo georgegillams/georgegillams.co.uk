@@ -14,15 +14,29 @@ class NavigationBar extends Component {
   constructor(props) {
     super(props);
 
-    this.state = { isOpen: false };
+    this.state = { isOpen: false, show: false };
   }
 
   toggle = () => {
-    this.setState({ isOpen: !this.state.isOpen });
+    if (this.state.isOpen) {
+      this.close();
+    } else {
+      this.open();
+    }
   };
 
   close = () => {
     this.setState({ isOpen: false });
+    setTimeout(() => {
+      this.setState({ show: false });
+    }, 1000);
+  };
+
+  open = () => {
+    this.setState({ show: true });
+    setTimeout(() => {
+      this.setState({ isOpen: true });
+    }, 100);
   };
 
   render() {
@@ -53,49 +67,51 @@ class NavigationBar extends Component {
             )}
           </Button>
         </div>
-        <div
-          className={animatedContainerClassNameFinal.join(' ')}
-          {...rest}
-          onClick={this.close}
-        >
-          <header className={navBarClassNameFinal.join(' ')} {...rest}>
-            <NavigationItem
-              className={getClassName('navigation-bar__nav-item')}
-              name="BLOG"
-              linkUrl="/blog"
-            />
-            <NavigationItem
-              className={getClassName('navigation-bar__nav-item')}
-              name="TRAVEL"
-              linkUrl="/travel"
-            />
-            <NavigationItem
-              className={getClassName('navigation-bar__nav-item')}
-              name="PHOTOGRAPHY"
-              linkUrl="/photography"
-            />
-            <Logo
-              className={getClassName('navigation-bar__nav-item')}
-              small
-              animated
-            />
-            <NavigationItem
-              className={getClassName('navigation-bar__nav-item')}
-              name="WORK"
-              linkUrl="/work"
-            />
-            <NavigationItem
-              className={getClassName('navigation-bar__nav-item')}
-              name="ABOUT"
-              linkUrl="/about"
-            />
-            <NavigationItem
-              className={getClassName('navigation-bar__nav-item')}
-              name="GET IN TOUCH"
-              linkUrl="/contact"
-            />
-          </header>
-        </div>
+        {this.state.show && (
+          <div
+            className={animatedContainerClassNameFinal.join(' ')}
+            {...rest}
+            onClick={this.close}
+          >
+            <header className={navBarClassNameFinal.join(' ')} {...rest}>
+              <NavigationItem
+                className={getClassName('navigation-bar__nav-item')}
+                name="BLOG"
+                linkUrl="/blog"
+              />
+              <NavigationItem
+                className={getClassName('navigation-bar__nav-item')}
+                name="TRAVEL"
+                linkUrl="/travel"
+              />
+              <NavigationItem
+                className={getClassName('navigation-bar__nav-item')}
+                name="PHOTOGRAPHY"
+                linkUrl="/photography"
+              />
+              <Logo
+                className={getClassName('navigation-bar__nav-item')}
+                small
+                animated
+              />
+              <NavigationItem
+                className={getClassName('navigation-bar__nav-item')}
+                name="WORK"
+                linkUrl="/work"
+              />
+              <NavigationItem
+                className={getClassName('navigation-bar__nav-item')}
+                name="ABOUT"
+                linkUrl="/about"
+              />
+              <NavigationItem
+                className={getClassName('navigation-bar__nav-item')}
+                name="GET IN TOUCH"
+                linkUrl="/contact"
+              />
+            </header>
+          </div>
+        )}
       </div>
     );
   }
