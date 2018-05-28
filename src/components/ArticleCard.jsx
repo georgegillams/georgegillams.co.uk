@@ -56,6 +56,7 @@ class ArticleCard extends Component {
       href,
       imageSrc,
       title,
+      ariaLabel,
       className,
       backgroundImageClassName,
       imageClassName,
@@ -189,7 +190,15 @@ class ArticleCard extends Component {
 
     if (linkUrl) {
       cardComponent = (
-        <NavLink role="button" to={linkUrl}>
+        <NavLink
+          role="button"
+          aria-label={
+            day === null
+              ? title
+              : `${title}. Published on ${day} of ${MONTH_MAPPINGS[`${month}`]}`
+          }
+          to={linkUrl}
+        >
           {cardComponent}
         </NavLink>
       );
@@ -236,9 +245,11 @@ ArticleCard.propTypes = {
   title: PropTypes.string,
   className: PropTypes.string,
   layout: PropTypes.oneOf(Object.keys(CARD_LAYOUTS)),
+  ariaLabel: PropTypes.string,
 };
 
 ArticleCard.defaultProps = {
+  ariaLabel: null,
   light: false,
   bannerColor: null,
   imageBorder: null,

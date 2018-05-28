@@ -65,18 +65,23 @@ const BlogRenderer = props => {
         <div style={{ marginBottom: '1.0rem' }}>
           {blog.blogTags &&
             blog.blogTags.map(g => (
-              <Tag type={g} link style={{ marginBottom: '0.5rem' }} />
+              <Tag
+                type={g}
+                ariaLabel={`View all ${g} blogs`}
+                link
+                style={{ marginBottom: '0.5rem' }}
+              />
             ))}
         </div>
         {blogSections.map(s => (
-            <BlogPreviewSection
-              references={references}
-              blogSection={s}
-              elementClassName={elementClassName}
-              light={light}
-              noAnchor={noAnchor}
-            />
-          ))}
+          <BlogPreviewSection
+            references={references}
+            blogSection={s}
+            elementClassName={elementClassName}
+            light={light}
+            noAnchor={noAnchor}
+          />
+        ))}
       </Section>
     </div>
   );

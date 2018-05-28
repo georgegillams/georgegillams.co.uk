@@ -66,6 +66,11 @@ class TagFilter extends Component {
       <div className={outerClassName.join(' ')} {...rest}>
         {Object.keys(TAG_TYPES).map(v => (
           <Tag
+            ariaLabel={`${
+              filterEnabled && !HelperFunctions.includes(selectedTags, v)
+                ? 'Enable'
+                : 'Disable'
+            } ${v} filter`}
             disabled={
               filterEnabled && !HelperFunctions.includes(selectedTags, v)
             }
