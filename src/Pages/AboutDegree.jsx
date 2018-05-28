@@ -1,11 +1,10 @@
 import React from 'react';
+import BpkImage, { withLoadingBehavior } from 'bpk-component-image';
 import Section from '../components/Section';
 import SubSection from '../components/SubSection';
 import DegreeModule from '../components/DegreeModule';
-import BpkImage, {
-  withLazyLoading,
-  withLoadingBehavior,
-} from 'bpk-component-image';
+import withLazyLoading from '../components/withLazyLoading';
+import TextLink from '../components/TextLink';
 
 import STYLES from './pages.scss';
 
@@ -58,22 +57,52 @@ class Degree extends React.Component {
           height={1}
           src="https://i.imgur.com/ecbmWmu.jpg"
         />
+        <br />
+        <FadingLazyLoadedImage
+          className={getClassName('pages__image')}
+          style={{ maxWidth: '20rem' }}
+          altText="My degree"
+          width={2000}
+          height={442}
+          src="https://upload.wikimedia.org/wikipedia/commons/a/a7/University_of_Southampton_Logo.svg"
+        />
+        <br />
+        <TextLink
+          href="https://www.ecs.soton.ac.uk/programmes/g600-meng-software-engineering-4-yrs"
+          external
+        >
+          Degree information (current){' '}
+        </TextLink>
+        <br />
+        <TextLink
+          href="https://web.archive.org/web/20131128090133/https://www.ecs.soton.ac.uk/programmes/g600-meng-software-engineering-4-yrs#modules"
+          external
+        >
+          Degree information (archived){' '}
+        </TextLink>
+        <br />
+        <br />
         <Section>
-          I took a 4 year integrated Masters of Engineering at the University of
-          Southampton between the years of 2013 - 2015 and 2016 - 2018
+          4 year integrated Masters of Engineering (2013 - 2015, 2016 - 2018)
           <br />
           <br />
+          {/* TODO REMOVE_1 */}
           <span style={{ width: '100%', fontWeight: 'bold', color: '#e02626' }}>
             Red values represent the minimum possible
           </span>
+          {/* TODO REMOVE_1 */}
           <br />
+          {/* TODO REMOVE_1 */}
           <br />
+          {/* TODO REMOVE_2 */}
           <span
             style={{ width: '100%', fontWeight: 'bold', color: 'darkorchid' }}
           >
             Purple values represent estimated values
           </span>
+          {/* TODO REMOVE_2 */}
           <br />
+          {/* TODO REMOVE_2 */}
           <br />
           <DegreeModule
             name="Final percentage"
@@ -83,7 +112,7 @@ class Degree extends React.Component {
           />
           <br />
           Degree classification:{' '}
-          <span style={{ fontWeight: 'bold', color: '#e02626' }}>2:1</span>
+          <span style={{ fontWeight: 'bold', color: 'darkorchid' }}>2:1</span>
         </Section>
         {/* )}
         {this.state.selected === 'breakdown' && ( */}

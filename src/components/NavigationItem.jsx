@@ -13,9 +13,9 @@ const NavigationItem = props => {
 
   return (
     <div className={outerClassNameFinal.join(' ')} {...rest}>
-      <NavLink to={linkUrl}>
-        <Button bouncy>{name}</Button>
-      </NavLink>
+      <Button href={linkUrl} bouncy>
+        {name}
+      </Button>
     </div>
   );
 };
