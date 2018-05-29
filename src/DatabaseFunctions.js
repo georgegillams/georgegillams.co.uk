@@ -23,6 +23,7 @@ class DatabaseFunctions {
       }
     });
   }
+
   static getNewSessionId(cb) {
     const options = {
       method: 'GET',
@@ -37,6 +38,24 @@ class DatabaseFunctions {
       } catch (e) {
         cb(null);
       }
+    });
+  }
+
+  static login(uname, pword, cb) {
+    const options = {
+      method: 'POST',
+      url: `${url}/api/login`,
+      headers: {},
+      body: {
+        username: uname,
+        password: pword,
+      },
+      json: true,
+    };
+
+    request(options, (error, response, body) => {
+      if (error) throw new Error(error);
+      cb(body);
     });
   }
 
