@@ -32,6 +32,7 @@ const Work = props => {
       <PageSwitchScroller />
       <Section name="My Work">
         <LlAnimatedContent>
+          {/* TODO REMOVE "nearlyw" */}
           <SubSection name="My Degree">
             I (nearly 🤞) have a Masters in Software Engineering from the
             University of Southampton.
