@@ -8,6 +8,7 @@ import RedirectNotice from './RedirectNotice';
 import NavigationBar from './NavigationBar';
 import Footer from './Footer';
 import PageContentContainer from './PageContentContainer';
+import CookieBanner from './CookieBanner';
 
 import STYLES from './default-layout.scss';
 
@@ -126,6 +127,7 @@ class DefaultLayout extends React.Component {
 
     return (
       <div className={getClassName('default-layout__site')}>
+        <CookieBanner />
         {/* {warningBar && warningBar} */}
         <NavigationBar />
         <NotificationCenter />
