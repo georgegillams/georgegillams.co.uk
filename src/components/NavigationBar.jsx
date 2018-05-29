@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import BpkIconClose from 'bpk-component-icon/lg/close';
 import BpkIconMenu from 'bpk-component-icon/lg/menu';
+import BpkBreakpoint, { BREAKPOINTS } from 'bpk-component-breakpoint';
 import Logo from './Logo';
 import NavigationItem from './NavigationItem';
 import Button from './Button';
@@ -13,8 +14,8 @@ const getClassName = className => STYLES[className] || 'UNKNOWN';
 class NavigationBar extends Component {
   constructor(props) {
     super(props);
-
-    this.state = { isOpen: false, show: false };
+    // Must show at start in case on desktop
+    this.state = { isOpen: false, show: true };
   }
 
   toggle = () => {
@@ -57,62 +58,66 @@ class NavigationBar extends Component {
     }
 
     return (
-      <div className={outerClassNameFinal.join(' ')} {...rest}>
-        <div className={getClassName('navigation-bar__burger-button')}>
-          <Button bouncy onClick={this.toggle}>
-            {this.state.isOpen ? (
-              <BpkIconClose style={{ paddingTop: '.3rem' }} />
-            ) : (
-              <BpkIconMenu style={{ paddingTop: '.3rem' }} />
+      <BpkBreakpoint query={BREAKPOINTS.TABLET}>
+        {isTablet => (
+          <div className={outerClassNameFinal.join(' ')} {...rest}>
+            <div className={getClassName('navigation-bar__burger-button')}>
+              <Button bouncy onClick={this.toggle}>
+                {this.state.isOpen ? (
+                  <BpkIconClose style={{ paddingTop: '.3rem' }} />
+                ) : (
+                  <BpkIconMenu style={{ paddingTop: '.3rem' }} />
+                )}
+              </Button>
+            </div>
+            {(this.state.show || !isTablet) && (
+              <div
+                className={animatedContainerClassNameFinal.join(' ')}
+                {...rest}
+                onClick={this.close}
+              >
+                <header className={navBarClassNameFinal.join(' ')} {...rest}>
+                  <NavigationItem
+                    className={getClassName('navigation-bar__nav-item')}
+                    name="BLOG"
+                    linkUrl="/blog"
+                  />
+                  <NavigationItem
+                    className={getClassName('navigation-bar__nav-item')}
+                    name="TRAVEL"
+                    linkUrl="/travel"
+                  />
+                  <NavigationItem
+                    className={getClassName('navigation-bar__nav-item')}
+                    name="PHOTOGRAPHY"
+                    linkUrl="/photography"
+                  />
+                  <Logo
+                    className={getClassName('navigation-bar__nav-item')}
+                    small
+                    animated
+                  />
+                  <NavigationItem
+                    className={getClassName('navigation-bar__nav-item')}
+                    name="WORK"
+                    linkUrl="/work"
+                  />
+                  <NavigationItem
+                    className={getClassName('navigation-bar__nav-item')}
+                    name="ABOUT"
+                    linkUrl="/about"
+                  />
+                  <NavigationItem
+                    className={getClassName('navigation-bar__nav-item')}
+                    name="GET IN TOUCH"
+                    linkUrl="/contact"
+                  />
+                </header>
+              </div>
             )}
-          </Button>
-        </div>
-        {this.state.show && (
-          <div
-            className={animatedContainerClassNameFinal.join(' ')}
-            {...rest}
-            onClick={this.close}
-          >
-            <header className={navBarClassNameFinal.join(' ')} {...rest}>
-              <NavigationItem
-                className={getClassName('navigation-bar__nav-item')}
-                name="BLOG"
-                linkUrl="/blog"
-              />
-              <NavigationItem
-                className={getClassName('navigation-bar__nav-item')}
-                name="TRAVEL"
-                linkUrl="/travel"
-              />
-              <NavigationItem
-                className={getClassName('navigation-bar__nav-item')}
-                name="PHOTOGRAPHY"
-                linkUrl="/photography"
-              />
-              <Logo
-                className={getClassName('navigation-bar__nav-item')}
-                small
-                animated
-              />
-              <NavigationItem
-                className={getClassName('navigation-bar__nav-item')}
-                name="WORK"
-                linkUrl="/work"
-              />
-              <NavigationItem
-                className={getClassName('navigation-bar__nav-item')}
-                name="ABOUT"
-                linkUrl="/about"
-              />
-              <NavigationItem
-                className={getClassName('navigation-bar__nav-item')}
-                name="GET IN TOUCH"
-                linkUrl="/contact"
-              />
-            </header>
           </div>
         )}
-      </div>
+      </BpkBreakpoint>
     );
   }
 }
