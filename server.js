@@ -165,6 +165,19 @@ router.get('/api/ping-tests', (req, res) => {
   });
 });
 
+router.get('/api/session-id', (req, res) => {
+  const sessionId = Math.random()
+    .toString(36)
+    .substring(7);
+  client.rpush([
+    `active_sessions`,
+    JSON.stringify({
+      sessionId,
+    }),
+  ]);
+  res.send({ sessionId });
+});
+
 router.post('/api/comments', (req, res) => {
   const apiKey = req.headers['api-key'];
   if (apiKey === undefined || apiKey !== xApiKeyPub) {
