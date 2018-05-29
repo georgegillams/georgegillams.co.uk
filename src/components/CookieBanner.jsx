@@ -38,11 +38,11 @@ class CookieBanner extends Component {
             Since 25 May when GDPR came into practice, nobody’s had a bloody
             clue how to be compliant. So, henceforth, I present you yet another
             opportunity to give a website permission to eat cookies. If you
-            don't give a s**t, stop reading now!
+            don't care, stop reading now!
             <br />
             <br />
-            If you click this button, a session id cookie will be created. That
-            id will also be stored in my database indefinitely. The only
+            If you click this button, a session ID cookie will be created. That
+            ID will also be stored in my database indefinitely. The only
             personal information I will collect and store is that which you
             explicitly submit in form fields (such as the comments area of a
             blog page). No third parties yada yada.
