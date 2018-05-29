@@ -1,16 +1,11 @@
 import React from 'react';
 import BpkInput, { INPUT_TYPES } from 'bpk-component-input';
+import { NavLink } from 'react-router-dom';
 import BpkHorizontalNav, {
   BpkHorizontalNavItem,
 } from 'bpk-component-horizontal-nav';
 import Section from '../../components/Section';
-import Loading from '../../components/Loading';
-import Button from '../../components/Button';
-import DatabaseFunctions from '../../DatabaseFunctions';
-import AdminComments from './AdminComments';
-import AdminPayment from './AdminPayment';
-import AdminBlog from './AdminBlog';
-import AdminNotifications from './AdminNotifications';
+import AdminLogin from './AdminLogin';
 import AdminBlogsPage from './AdminBlogsPage';
 import AdminCommentsPage from './AdminCommentsPage';
 import AdminNotificationsPage from './AdminNotificationsPage';
@@ -27,7 +22,7 @@ class Admin extends React.Component {
 
     this.state = {
       apiKey: '',
-      selected: 'blogs',
+      selected: 'login',
     };
   }
 
@@ -65,6 +60,13 @@ class Admin extends React.Component {
         <br />
         <BpkHorizontalNav style={{ margin: '1.2rem 0' }}>
           <BpkHorizontalNavItem
+            name="login"
+            selected={this.state.selected === 'login'}
+            onClick={this.onClick}
+          >
+            Login
+          </BpkHorizontalNavItem>
+          <BpkHorizontalNavItem
             name="blogs"
             selected={this.state.selected === 'blogs'}
             onClick={this.onClick}
@@ -92,15 +94,15 @@ class Admin extends React.Component {
           >
             Payments
           </BpkHorizontalNavItem>
-          <BpkHorizontalNavItem
-            name="design"
-            selected={this.state.selected === 'design'}
-            onClick={() => {
-              window.location = '/design';
-            }}
-          >
-            Design
-          </BpkHorizontalNavItem>
+          <NavLink to="/design" style={{ textDecoration: 'none' }}>
+            <BpkHorizontalNavItem
+              name="design"
+              selected={this.state.selected === 'design'}
+              onClick={() => null}
+            >
+              Design
+            </BpkHorizontalNavItem>
+          </NavLink>
           <BpkHorizontalNavItem
             name="ping_pen_testing"
             selected={this.state.selected === 'ping_pen_testing'}
@@ -109,6 +111,7 @@ class Admin extends React.Component {
             Ping pen-testing
           </BpkHorizontalNavItem>
         </BpkHorizontalNav>
+        {this.state.selected === 'login' && <AdminLogin />}
         {this.state.selected === 'blogs' && (
           <AdminBlogsPage apiKey={this.state.apiKey} />
         )}

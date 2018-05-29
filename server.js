@@ -16,6 +16,8 @@ const app = express();
 
 const xApiKeyPub = process.env.REST_PUBLIC_ACCESS_KEY;
 const xApiKeyPrivate = process.env.REST_PRIVATE_ACCESS_KEY;
+const adminUserName = process.env.ADMIN_USERNAME;
+const adminPassword = process.env.ADMIN_PASSWORD;
 
 let client = null;
 if (process.env.REDIS_URL) {
@@ -83,7 +85,7 @@ function sendGreasemonkeyFile(fileName, req, res) {
     path.join(__dirname, './server_content/greasemonkey', fileName),
     {},
   );
-  download.on('end', out => {
+  download.on('end', () => {
     res.sendFile(
       path.join(__dirname, './server_content/greasemonkey', fileName),
       {
@@ -175,6 +177,22 @@ router.get('/api/session-id', (req, res) => {
     }),
   ]);
   res.send({ sessionId });
+});
+
+router.post('/api/login', (req, res) => {
+  const { username, password } = req.body;
+  if (username !== adminUserName || password !== adminPassword) {
+    res.send({ loggedInSessionId: null });
+  }
+  const loggedInSessionId = crypto.randomBytes(20).toString('hex');
+  client.rpush([
+    `loggedInSessionIds`,
+    JSON.stringify({
+      loggedInSessionId,
+    }),
+  ]);
+  res.send({ loggedInSessionId });
+  res.end();
 });
 
 router.post('/api/comments', (req, res) => {
