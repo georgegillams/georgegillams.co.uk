@@ -10,6 +10,7 @@ const {
 } = require('./src/shared/constants');
 // const wget = require('node-wget');
 const wget = require('wget-improved');
+const crypto = require('crypto');
 
 const app = express();
 
@@ -163,6 +164,17 @@ router.get('/api/ping-tests', (req, res) => {
   client.lrange('pingTests', 0, -1, (err, reply) => {
     res.send(reply);
   });
+});
+
+router.get('/api/session-id', (req, res) => {
+  const sessionId = crypto.randomBytes(20).toString('hex');
+  client.rpush([
+    `active_sessions`,
+    JSON.stringify({
+      sessionId,
+    }),
+  ]);
+  res.send({ sessionId });
 });
 
 router.post('/api/comments', (req, res) => {
