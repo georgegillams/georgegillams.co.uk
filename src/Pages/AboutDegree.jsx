@@ -272,14 +272,14 @@ class Degree extends React.Component {
               className={getClassName('pages__degree-module')}
               name="Automated Code Generation"
               predicted
-              percentage={67}
+              percentage={70}
               filled={this.state.filled[25]}
             />
             <DegreeModule
               className={getClassName('pages__degree-module')}
               name="Semantic Web"
-              minimum
-              percentage={16.75}
+              predicted
+              percentage={71.13}
               filled={this.state.filled[26]}
             />
             <DegreeModule
