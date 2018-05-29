@@ -23,6 +23,23 @@ class DatabaseFunctions {
       }
     });
   }
+  static getNewSessionId(cb) {
+    const options = {
+      method: 'GET',
+      url: `${url}/api/session-id`,
+      headers: {},
+    };
+
+    request(options, (error, response, body) => {
+      if (error) throw new Error(error);
+      try {
+        cb(JSON.parse(body));
+      } catch (e) {
+        cb(null);
+      }
+    });
+  }
+
   static getPageIds(cb) {
     const options = {
       method: 'GET',

@@ -1,13 +1,16 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import 'whatwg-fetch';
+import cookie from 'react-cookies';
 import HelperFunctions from '../HelperFunctions';
 import NotificationCenter from './NotificationCenter';
+import DatabaseFunctions from '../DatabaseFunctions';
 
 import RedirectNotice from './RedirectNotice';
 import NavigationBar from './NavigationBar';
 import Footer from './Footer';
 import PageContentContainer from './PageContentContainer';
+import CookieBanner from './CookieBanner';
 
 import STYLES from './default-layout.scss';
 
@@ -18,6 +21,22 @@ class DefaultLayout extends React.Component {
     document.getElementById('body').className = getClassName(
       'default-layout__body',
     );
+
+    const createSessionCookie = () => {
+      const cookiesAccepted = cookie.load('cookiesAccepted');
+      if (cookiesAccepted) {
+        const existingSessionId = cookie.load('sessionId');
+        if (!existingSessionId) {
+          DatabaseFunctions.getNewSessionId(({ sessionId }) => {
+            cookie.save('sessionId', sessionId, {
+              path: '/',
+            });
+          });
+        }
+      }
+    };
+
+    setInterval(createSessionCookie, 2000);
   }
 
   render() {
@@ -126,6 +145,7 @@ class DefaultLayout extends React.Component {
 
     return (
       <div className={getClassName('default-layout__site')}>
+        <CookieBanner />
         {/* {warningBar && warningBar} */}
         <NavigationBar />
         <NotificationCenter />
