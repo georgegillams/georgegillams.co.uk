@@ -26,7 +26,7 @@ class AdminComments extends React.Component {
   }
 
   render() {
-    const { apiKey, pageId, className, ...rest } = this.props;
+    const { loggedInSession, pageId, className, ...rest } = this.props;
 
     const classNameFinal = [];
     if (className) classNameFinal.push(className);
@@ -38,12 +38,12 @@ class AdminComments extends React.Component {
             {c.commenterName}
             <br />
             {c.comment}
-            {apiKey !== '' && (
+            {loggedInSession && (
               <Button
                 destructive
                 onClick={() => {
                   DatabaseFunctions.deleteComment(
-                    apiKey,
+                    loggedInSession,
                     pageId,
                     null,
                     c.commentId,

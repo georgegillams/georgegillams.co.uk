@@ -1,7 +1,6 @@
 const request = require('request');
 const HelperFunctions = require('./HelperFunctions');
 
-const apiKey = '5a5b8bd87d7ef24c5cf08c84';
 const url = HelperFunctions.includes(`${window.location}`, 'localhost')
   ? 'http://localhost:3001'
   : 'https://www.georgegillams.co.uk';
@@ -93,12 +92,13 @@ class DatabaseFunctions {
     });
   }
 
-  static getBlogs(blogCollection, privateApiKey, selectedBlogTags, cb) {
+  static getBlogs(blogCollection, loggedInSessionId, selectedBlogTags, cb) {
     const options = {
       method: 'GET',
       url: `${url}/api/blog-posts`,
       headers: {
-        'Api-Key': privateApiKey === '' ? apiKey : privateApiKey,
+        'Logged-In-Session-Id':
+          loggedInSessionId === '' ? null : loggedInSessionId,
         'selected-blog-tags': selectedBlogTags,
         'blog-collection': blogCollection,
       },
@@ -114,12 +114,13 @@ class DatabaseFunctions {
     });
   }
 
-  static getBlog(privateApiKey, blogId, cb) {
+  static getBlog(loggedInSessionId, blogId, cb) {
     const options = {
       method: 'GET',
       url: `${url}/api/blog-posts/single`,
       headers: {
-        'Api-Key': privateApiKey === '' ? apiKey : privateApiKey,
+        'Logged-In-Session-Id':
+          loggedInSessionId === '' ? null : loggedInSessionId,
         blog_id: blogId,
       },
     };
@@ -134,11 +135,11 @@ class DatabaseFunctions {
     });
   }
 
-  static updateBlog(privateApiKey, blog, cb) {
+  static updateBlog(loggedInSessionId, blog, cb) {
     const options = {
       method: 'POST',
       url: `${url}/api/blog-posts/update`,
-      headers: { 'Api-Key': privateApiKey },
+      headers: { 'Logged-In-Session-Id': loggedInSessionId },
       body: {
         blog_id: blog.blogId,
         blog_name: blog.blogName,
@@ -165,11 +166,11 @@ class DatabaseFunctions {
     });
   }
 
-  static addBlog(privateApiKey, cb) {
+  static addBlog(loggedInSessionId, cb) {
     const options = {
       method: 'POST',
       url: `${url}/api/blog-posts`,
-      headers: { 'Api-Key': privateApiKey },
+      headers: { 'Logged-In-Session-Id': loggedInSessionId },
       body: {
         blog_name: 'new blog',
         blog_content: '',
@@ -192,12 +193,12 @@ class DatabaseFunctions {
     });
   }
 
-  static deleteBlog(privateApiKey, blogId, cb) {
+  static deleteBlog(loggedInSessionId, blogId, cb) {
     const options = {
       method: 'DELETE',
       url: `${url}/api/blog-posts`,
       headers: {
-        'Api-Key': privateApiKey,
+        'Logged-In-Session-Id': loggedInSessionId,
       },
       body: {
         blog_id: blogId,
@@ -213,12 +214,12 @@ class DatabaseFunctions {
     });
   }
 
-  static deleteAllPings(privateApiKey, cb) {
+  static deleteAllPings(loggedInSessionId, cb) {
     const options = {
       method: 'DELETE',
       url: `${url}/api/ping-tests`,
       headers: {
-        'Api-Key': privateApiKey,
+        'Logged-In-Session-Id': loggedInSessionId,
       },
       body: {},
       json: true,
@@ -232,12 +233,12 @@ class DatabaseFunctions {
     });
   }
 
-  static deletePayment(privateApiKey, paymentId, cb) {
+  static deletePayment(loggedInSessionId, paymentId, cb) {
     const options = {
       method: 'DELETE',
       url: `${url}/api/payments`,
       headers: {
-        'Api-Key': privateApiKey,
+        'Logged-In-Session-Id': loggedInSessionId,
       },
       body: {
         payment_id: paymentId,
@@ -257,9 +258,7 @@ class DatabaseFunctions {
     const options = {
       method: 'POST',
       url: `${url}/api/comments`,
-      headers: {
-        'Api-Key': apiKey,
-      },
+      headers: {},
       body: {
         page_id: pageId,
         commenter_name: commenterName,
@@ -274,12 +273,12 @@ class DatabaseFunctions {
     });
   }
 
-  static deleteComment(privateApiKey, pageId, pattern, commentId, cb) {
+  static deleteComment(loggedInSessionId, pageId, pattern, commentId, cb) {
     const options = {
       method: 'DELETE',
       url: `${url}/api/comments`,
       headers: {
-        'Api-Key': privateApiKey,
+        'Logged-In-Session-Id': loggedInSessionId,
       },
       body: {
         page_id: pageId,
@@ -308,9 +307,7 @@ class DatabaseFunctions {
     const options = {
       method: 'POST',
       url: `${url}/api/payments`,
-      headers: {
-        'Api-Key': apiKey,
-      },
+      headers: {},
       body: {
         amount,
         account_number: accountNumber,
@@ -331,9 +328,7 @@ class DatabaseFunctions {
     const options = {
       method: 'GET',
       url: `${url}/api/payments/count`,
-      headers: {
-        'Api-Key': apiKey,
-      },
+      headers: {},
     };
 
     request(options, (error, response, body) => {
@@ -351,7 +346,6 @@ class DatabaseFunctions {
       method: 'GET',
       url: `${url}/api/payments/single`,
       headers: {
-        'Api-Key': apiKey,
         payment_id: paymentId,
       },
     };
@@ -366,12 +360,12 @@ class DatabaseFunctions {
     });
   }
 
-  static getPayments(privateApiKey, cb) {
+  static getPayments(loggedInSessionId, cb) {
     const options = {
       method: 'GET',
       url: `${url}/api/payments`,
       headers: {
-        'Api-Key': privateApiKey,
+        'Logged-In-Session-Id': loggedInSessionId,
       },
     };
 
@@ -385,12 +379,12 @@ class DatabaseFunctions {
     });
   }
 
-  static rejectPayment(privateApiKey, paymentId, cb) {
+  static rejectPayment(loggedInSessionId, paymentId, cb) {
     const options = {
       method: 'POST',
       url: `${url}/api/payments/status/reject`,
       headers: {
-        'Api-Key': privateApiKey,
+        'Logged-In-Session-Id': loggedInSessionId,
       },
       body: {
         payment_id: paymentId,
@@ -404,12 +398,12 @@ class DatabaseFunctions {
     });
   }
 
-  static authorisePayment(privateApiKey, paymentId, cb) {
+  static authorisePayment(loggedInSessionId, paymentId, cb) {
     const options = {
       method: 'POST',
       url: `${url}/api/payments/status/authorise`,
       headers: {
-        'Api-Key': privateApiKey,
+        'Logged-In-Session-Id': loggedInSessionId,
       },
       body: {
         payment_id: paymentId,
@@ -422,12 +416,12 @@ class DatabaseFunctions {
     });
   }
 
-  static completePayment(privateApiKey, paymentId, cb) {
+  static completePayment(loggedInSessionId, paymentId, cb) {
     const options = {
       method: 'POST',
       url: `${url}/api/payments/status/complete`,
       headers: {
-        'Api-Key': privateApiKey,
+        'Logged-In-Session-Id': loggedInSessionId,
       },
       body: {
         payment_id: paymentId,
@@ -457,12 +451,12 @@ class DatabaseFunctions {
     });
   }
 
-  static createNotification(privateApiKey, message, type, cb) {
+  static createNotification(loggedInSessionId, message, type, cb) {
     const options = {
       method: 'POST',
       url: `${url}/api/notifications`,
       headers: {
-        'Api-Key': privateApiKey,
+        'Logged-In-Session-Id': loggedInSessionId,
       },
       body: {
         notification_message: message,
@@ -477,12 +471,12 @@ class DatabaseFunctions {
     });
   }
 
-  static deleteNotification(privateApiKey, notificationId, cb) {
+  static deleteNotification(loggedInSessionId, notificationId, cb) {
     const options = {
       method: 'DELETE',
       url: `${url}/api/notifications`,
       headers: {
-        'Api-Key': privateApiKey,
+        'Logged-In-Session-Id': loggedInSessionId,
       },
       body: {
         notification_id: notificationId,
