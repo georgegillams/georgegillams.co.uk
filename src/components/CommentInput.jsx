@@ -2,9 +2,11 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import BpkInput from 'bpk-component-input';
 import BpkTextArea from 'bpk-component-textarea';
+import cookie from 'react-cookies';
 import Button from './Button';
 import SubSection from './SubSection';
 import DatabaseFunctions from '../DatabaseFunctions';
+import Section from './Section';
 
 import STYLES from './comments.scss';
 
@@ -16,9 +18,20 @@ class CommentInput extends React.Component {
 
     this.state = {
       name: '',
-      comment: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.',
+      comment: '',
       result: null,
+      cookiesAccepted: cookie.load('cookiesAccepted'),
     };
+  }
+
+  componentDidMount() {
+    const reloadCookiesAccepted = () => {
+      this.setState({
+        cookiesAccepted: cookie.load('cookiesAccepted'),
+      });
+    };
+
+    setInterval(reloadCookiesAccepted, 1000);
   }
 
   onCommentChanged = event => {
@@ -42,7 +55,7 @@ class CommentInput extends React.Component {
   };
 
   render() {
-    const { pageId, className, ...rest } = this.props;
+    const { pageId, className, centered, ...rest } = this.props;
 
     const classNameFinal = [];
     if (className) classNameFinal.push(className);
@@ -51,34 +64,43 @@ class CommentInput extends React.Component {
 
     return (
       <div className={classNameFinal.join(' ')} {...rest}>
-        {this.state.result ? (
-          <SubSection name="Thanks for your comment 👍" />
-        ) : (
+        {this.state.cookiesAccepted ? (
           <div>
-            <BpkInput
-              className={textBoxClassNameFinal.join(' ')}
-              id="commenterName"
-              name="Name"
-              value={this.state.name}
-              onChange={this.onNameChanged}
-              placeholder="You name"
-            />
-            <BpkTextArea
-              className={textBoxClassNameFinal.join(' ')}
-              id="comment"
-              name="Comment"
-              values={this.state.comment}
-              onChange={this.onCommentChanged}
-              placeholder="Your comment(s)"
-            />
-            <br />
-            <Button
-              className={getClassName('comments__component')}
-              onClick={this.submitComment}
-            >
-              Submit comment
-            </Button>
+            {this.state.result ? (
+              <SubSection name="Thanks for your comment 👍" />
+            ) : (
+              <div>
+                <BpkInput
+                  className={textBoxClassNameFinal.join(' ')}
+                  id="commenterName"
+                  name="Name"
+                  value={this.state.name}
+                  onChange={this.onNameChanged}
+                  placeholder="You name"
+                />
+                <BpkTextArea
+                  className={textBoxClassNameFinal.join(' ')}
+                  id="comment"
+                  name="Comment"
+                  value={this.state.comment}
+                  onChange={this.onCommentChanged}
+                  placeholder="Your comment(s)"
+                />
+                <br />
+                <Button
+                  className={getClassName('comments__component')}
+                  onClick={this.submitComment}
+                >
+                  Submit comment
+                </Button>
+              </div>
+            )}
           </div>
+        ) : (
+          <Section>
+            Before you can submit comments you must agree to the privacy and
+            cookies policy.
+          </Section>
         )}
       </div>
     );
