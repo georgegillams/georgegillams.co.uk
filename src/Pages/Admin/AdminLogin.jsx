@@ -15,28 +15,14 @@ class AdminLogin extends React.Component {
     super(props);
 
     this.state = {
-      loggedInSession: cookie.load('loggedInSession'),
       loginError: false,
       uname: '',
       pword: '',
-      cookiesAccepted: cookie.load('cookiesAccepted'),
     };
-  }
-
-  componentDidMount() {
-    const reloadLoggedInCookie = () => {
-      this.setState({
-        loggedInSession: cookie.load('loggedInSession'),
-        cookiesAccepted: cookie.load('cookiesAccepted'),
-      });
-    };
-
-    setInterval(reloadLoggedInCookie, 1000);
   }
 
   login = () => {
     DatabaseFunctions.login(this.state.uname, this.state.pword, result => {
-      console.log(result);
       if (result.loggedInSessionId === null) {
         this.setState({ loginError: true });
       } else {
@@ -47,12 +33,12 @@ class AdminLogin extends React.Component {
   };
 
   render() {
-    const { className, ...rest } = this.props;
+    const { className, loggedInSession, cookiesAccepted, ...rest } = this.props;
 
     const classNameFinal = [];
     if (className) classNameFinal.push(className);
 
-    if (!this.state.cookiesAccepted) {
+    if (!cookiesAccepted) {
       return (
         <Section name="Login">
           Please accept use of cookies to use account features on this website.
@@ -62,7 +48,7 @@ class AdminLogin extends React.Component {
 
     return (
       <Section name="Login">
-        {!this.state.loggedInSession ? (
+        {!loggedInSession ? (
           <div>
             <BpkBannerAlert
               className={getClassName('pages__card')}

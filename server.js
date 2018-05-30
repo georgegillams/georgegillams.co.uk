@@ -8,14 +8,11 @@ const {
   STRING_REGEX,
   MONZOME_LINK_REGEX,
 } = require('./src/shared/constants');
-// const wget = require('node-wget');
 const wget = require('wget-improved');
 const crypto = require('crypto');
 
 const app = express();
 
-const xApiKeyPub = process.env.REST_PUBLIC_ACCESS_KEY;
-const xApiKeyPrivate = process.env.REST_PRIVATE_ACCESS_KEY;
 const adminUserName = process.env.ADMIN_USERNAME;
 const adminPassword = process.env.ADMIN_PASSWORD;
 
@@ -37,7 +34,7 @@ app.use((req, res, next) => {
   res.header('Access-Control-Allow-Origin', '*');
   res.header(
     'Access-Control-Allow-Headers',
-    'Origin, X-Requested-With, Content-Type, Accept, page_id, payment_id, blog_id, Api-Key, selected-blog-tags, blog-collection',
+    'Origin, X-Requested-With, Content-Type, Accept, page_id, payment_id, blog_id, Api-Key, Logged-In-Session-Id, selected-blog-tags, blog-collection',
   );
   res.header('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE');
   next();
@@ -135,6 +132,18 @@ router.get('/api/hello', (req, res) => {
   res.send({ express: 'Hello From Express' });
 });
 
+const checkIsLoggedInAdmin = (loggedInSessionId, cb) => {
+  client.lrange(`loggedInSessionIds`, 0, -1, (err, reply) => {
+    for (let i = 0; i < reply.length; i += 1) {
+      if (JSON.parse(reply[i]).loggedInSessionId === loggedInSessionId) {
+        cb(true);
+        return;
+      }
+    }
+    cb(false);
+  });
+};
+
 router.get('/api/ping-test', (req, res) => {
   client.rpush([
     `pingTests`,
@@ -183,6 +192,8 @@ router.post('/api/login', (req, res) => {
   const { username, password } = req.body;
   if (username !== adminUserName || password !== adminPassword) {
     res.send({ loggedInSessionId: null });
+    res.end();
+    return;
   }
   const loggedInSessionId = crypto.randomBytes(20).toString('hex');
   client.rpush([
@@ -196,11 +207,6 @@ router.post('/api/login', (req, res) => {
 });
 
 router.post('/api/comments', (req, res) => {
-  const apiKey = req.headers['api-key'];
-  if (apiKey === undefined || apiKey !== xApiKeyPub) {
-    res.end();
-    return;
-  }
   const pageId = req.body.page_id;
   const commentId = Math.random()
     .toString(36)
@@ -222,68 +228,60 @@ router.post('/api/comments', (req, res) => {
 });
 
 router.delete('/api/comments', (req, res) => {
-  const apiKey = req.headers['api-key'];
-  if (apiKey === undefined || apiKey !== xApiKeyPrivate) {
-    res.end();
-    return;
-  }
-  const pageId = req.body.page_id;
-  const { pattern } = req.body;
-  const commentId = req.body.comment_id;
-  if (pattern === '*') {
-    client.del(`${pageId}_comments`);
-  } else if (pattern !== undefined) {
-    client.lrange(`${pageId}_comments`, 0, -1, (err, reply) => {
-      for (let i = reply.length - 1; i >= 0; i -= 1) {
-        const comment = JSON.parse(reply[i]);
-        if (`${comment.commenterName}${comment.comment}`.includes(pattern)) {
-          client.lrem(`${pageId}_comments`, 1, reply[i]);
+  checkIsLoggedInAdmin(req.headers['logged-in-session-id'], loggedInAdmin => {
+    if (!loggedInAdmin) {
+      res.end();
+      return;
+    }
+    const pageId = req.body.page_id;
+    const { pattern } = req.body;
+    const commentId = req.body.comment_id;
+    if (pattern === '*') {
+      client.del(`${pageId}_comments`);
+    } else if (pattern !== undefined) {
+      client.lrange(`${pageId}_comments`, 0, -1, (err, reply) => {
+        for (let i = reply.length - 1; i >= 0; i -= 1) {
+          const comment = JSON.parse(reply[i]);
+          if (`${comment.commenterName}${comment.comment}`.includes(pattern)) {
+            client.lrem(`${pageId}_comments`, 1, reply[i]);
+          }
         }
-      }
-    });
-  }
-  if (commentId !== undefined) {
-    client.lrange(`${pageId}_comments`, 0, -1, (err, reply) => {
-      for (let i = 0; i < reply.length; i += 1) {
-        const comment = JSON.parse(reply[i]);
-        if (comment.commentId === commentId) {
-          client.lrem(`${pageId}_comments`, 1, reply[i]);
-          res.end();
-          return;
+      });
+    }
+    if (commentId !== undefined) {
+      client.lrange(`${pageId}_comments`, 0, -1, (err, reply) => {
+        for (let i = 0; i < reply.length; i += 1) {
+          const comment = JSON.parse(reply[i]);
+          if (comment.commentId === commentId) {
+            client.lrem(`${pageId}_comments`, 1, reply[i]);
+            res.end();
+            return;
+          }
         }
-      }
-    });
-  }
+      });
+    }
+  });
   res.end();
 });
 
 router.delete('/api/ping-tests', (req, res) => {
-  const apiKey = req.headers['api-key'];
-  if (apiKey === undefined || apiKey !== xApiKeyPrivate) {
+  checkIsLoggedInAdmin(req.headers['logged-in-session-id'], loggedInAdmin => {
+    if (!loggedInAdmin) {
+      res.end();
+      return;
+    }
+    const apiKey = client.del(`pingTests`);
     res.end();
-    return;
-  }
-  client.del(`pingTests`);
-  res.end();
+  });
 });
 
 router.get('/api/payments/count', (req, res) => {
-  const apiKey = req.headers['api-key'];
-  if (apiKey === undefined || apiKey !== xApiKeyPub) {
-    res.end();
-    return;
-  }
   client.lrange(`payments`, 0, -1, (err, reply) => {
     res.send([reply.length]);
   });
 });
 
 router.get('/api/payments/single', (req, res) => {
-  const apiKey = req.headers['api-key'];
-  if (apiKey === undefined || apiKey !== xApiKeyPub) {
-    res.end();
-    return;
-  }
   const paymentId = req.headers.payment_id;
   client.lrange(`payments`, 0, -1, (err, reply) => {
     for (let i = 0; i < reply.length; i += 1) {
@@ -297,26 +295,22 @@ router.get('/api/payments/single', (req, res) => {
 });
 
 router.get('/api/payments', (req, res) => {
-  const apiKey = req.headers['api-key'];
-  if (apiKey === undefined || apiKey !== xApiKeyPrivate) {
-    res.end();
-    return;
-  }
-  client.lrange(`payments`, 0, -1, (err, reply) => {
-    const result = [];
-    for (let i = 0; i < reply.length; i += 1) {
-      result.push(JSON.parse(reply[i]));
+  checkIsLoggedInAdmin(req.headers['logged-in-session-id'], loggedInAdmin => {
+    if (!loggedInAdmin) {
+      res.end();
+      return;
     }
-    res.send(result);
+    client.lrange(`payments`, 0, -1, (err, reply) => {
+      const result = [];
+      for (let i = 0; i < reply.length; i += 1) {
+        result.push(JSON.parse(reply[i]));
+      }
+      res.send(result);
+    });
   });
 });
 
 router.post('/api/payments', (req, res) => {
-  const apiKey = req.headers['api-key'];
-  if (apiKey === undefined || apiKey !== xApiKeyPub) {
-    res.end();
-    return;
-  }
   const { reference, amount } = req.body;
   const monzoMeLink = req.body.monzo_me_link;
   const accountNumber = req.body.account_number;
@@ -366,314 +360,311 @@ router.post('/api/payments', (req, res) => {
 });
 
 router.delete('/api/payments', (req, res) => {
-  const apiKey = req.headers['api-key'];
-  if (apiKey === undefined || apiKey !== xApiKeyPrivate) {
-    res.end();
-    return;
-  }
-  const paymentId = req.body.payment_id;
-  if (paymentId !== undefined) {
-    client.lrange(`payments`, 0, -1, (err, reply) => {
-      for (let i = 0; i < reply.length; i += 1) {
-        const payment = JSON.parse(reply[i]);
-        if (payment.paymentId === paymentId) {
-          client.lrem(`payments`, 1, reply[i]);
-          res.end();
-          return;
+  checkIsLoggedInAdmin(req.headers['logged-in-session-id'], loggedInAdmin => {
+    if (!loggedInAdmin) {
+      res.end();
+      return;
+    }
+    const paymentId = req.body.payment_id;
+    if (paymentId !== undefined) {
+      client.lrange(`payments`, 0, -1, (err, reply) => {
+        for (let i = 0; i < reply.length; i += 1) {
+          const payment = JSON.parse(reply[i]);
+          if (payment.paymentId === paymentId) {
+            client.lrem(`payments`, 1, reply[i]);
+            res.end();
+            return;
+          }
         }
-      }
-    });
-  }
+      });
+    }
+  });
   res.end();
 });
 
 router.delete('/api/blog-posts', (req, res) => {
-  const apiKey = req.headers['api-key'];
-  if (apiKey === undefined || apiKey !== xApiKeyPrivate) {
-    res.end();
-    return;
-  }
-  const blogId = req.body.blog_id;
-  if (blogId !== undefined) {
-    client.lrange(`blog-posts`, 0, -1, (err, reply) => {
-      for (let i = 0; i < reply.length; i += 1) {
-        const blog = JSON.parse(reply[i]);
-        if (blog.blogId === blogId) {
-          client.lrem(`blog-posts`, 1, reply[i]);
-          res.end();
-          return;
+  checkIsLoggedInAdmin(req.headers['logged-in-session-id'], loggedInAdmin => {
+    if (!loggedInAdmin) {
+      res.end();
+      return;
+    }
+    const blogId = req.body.blog_id;
+    if (blogId !== undefined) {
+      client.lrange(`blog-posts`, 0, -1, (err, reply) => {
+        for (let i = 0; i < reply.length; i += 1) {
+          const blog = JSON.parse(reply[i]);
+          if (blog.blogId === blogId) {
+            client.lrem(`blog-posts`, 1, reply[i]);
+            res.end();
+            return;
+          }
         }
-      }
-    });
-  }
+      });
+    }
+  });
   res.end();
 });
 
 router.post('/api/payments/status/authorise', (req, res) => {
-  const apiKey = req.headers['api-key'];
-  if (apiKey === undefined || apiKey !== xApiKeyPrivate) {
-    res.end();
-    return;
-  }
-  const paymentId = req.body.payment_id;
-  if (paymentId !== undefined) {
-    client.lrange(`payments`, 0, -1, (err, reply) => {
-      for (let i = 0; i < reply.length; i += 1) {
-        const payment = JSON.parse(reply[i]);
-        if (payment.paymentId === paymentId) {
-          payment.status = 'authorised';
-          client.lset(`payments`, i, JSON.stringify(payment));
-          res.end();
-          return;
+  checkIsLoggedInAdmin(req.headers['logged-in-session-id'], loggedInAdmin => {
+    if (!loggedInAdmin) {
+      res.end();
+      return;
+    }
+    const paymentId = req.body.payment_id;
+    if (paymentId !== undefined) {
+      client.lrange(`payments`, 0, -1, (err, reply) => {
+        for (let i = 0; i < reply.length; i += 1) {
+          const payment = JSON.parse(reply[i]);
+          if (payment.paymentId === paymentId) {
+            payment.status = 'authorised';
+            client.lset(`payments`, i, JSON.stringify(payment));
+            res.end();
+            return;
+          }
         }
-      }
-    });
-  }
+      });
+    }
+  });
   res.end();
 });
 
 router.post('/api/payments/status/complete', (req, res) => {
-  const apiKey = req.headers['api-key'];
-  if (apiKey === undefined || apiKey !== xApiKeyPrivate) {
-    res.end();
-    return;
-  }
-  const paymentId = req.body.payment_id;
-  if (paymentId !== undefined) {
-    client.lrange(`payments`, 0, -1, (err, reply) => {
-      for (let i = 0; i < reply.length; i += 1) {
-        const payment = JSON.parse(reply[i]);
-        if (payment.paymentId === paymentId) {
-          payment.status = 'completed';
-          client.lset(`payments`, i, JSON.stringify(payment));
-          res.end();
-          return;
+  checkIsLoggedInAdmin(req.headers['logged-in-session-id'], loggedInAdmin => {
+    if (!loggedInAdmin) {
+      res.end();
+      return;
+    }
+    const paymentId = req.body.payment_id;
+    if (paymentId !== undefined) {
+      client.lrange(`payments`, 0, -1, (err, reply) => {
+        for (let i = 0; i < reply.length; i += 1) {
+          const payment = JSON.parse(reply[i]);
+          if (payment.paymentId === paymentId) {
+            payment.status = 'completed';
+            client.lset(`payments`, i, JSON.stringify(payment));
+            res.end();
+            return;
+          }
         }
-      }
-    });
-  }
+      });
+    }
+  });
   res.end();
 });
 
 router.post('/api/payments/status/reject', (req, res) => {
-  const apiKey = req.headers['api-key'];
-  if (apiKey === undefined || apiKey !== xApiKeyPrivate) {
-    res.end();
-    return;
-  }
-  const paymentId = req.body.payment_id;
-  if (paymentId !== undefined) {
-    client.lrange(`payments`, 0, -1, (err, reply) => {
-      for (let i = 0; i < reply.length; i += 1) {
-        const payment = JSON.parse(reply[i]);
-        if (payment.paymentId === paymentId) {
-          payment.status = 'rejected';
-          client.lset(`payments`, i, JSON.stringify(payment));
-          res.end();
-          return;
+  checkIsLoggedInAdmin(req.headers['logged-in-session-id'], loggedInAdmin => {
+    if (!loggedInAdmin) {
+      res.end();
+      return;
+    }
+    const paymentId = req.body.payment_id;
+    if (paymentId !== undefined) {
+      client.lrange(`payments`, 0, -1, (err, reply) => {
+        for (let i = 0; i < reply.length; i += 1) {
+          const payment = JSON.parse(reply[i]);
+          if (payment.paymentId === paymentId) {
+            payment.status = 'rejected';
+            client.lset(`payments`, i, JSON.stringify(payment));
+            res.end();
+            return;
+          }
         }
-      }
-    });
-  }
+      });
+    }
+  });
   res.end();
 });
 
 router.get('/api/blog-posts', (req, res) => {
-  const apiKey = req.headers['api-key'];
-  if (
-    apiKey === undefined ||
-    !(apiKey === xApiKeyPub || apiKey === xApiKeyPrivate)
-  ) {
-    res.end();
-    return;
-  }
-  const selectedBlogTags = req.headers['selected-blog-tags']
-    ? req.headers['selected-blog-tags'].split(', ')
-    : [];
-  const blogCollection = req.headers['blog-collection'];
-  client.lrange(`blog-posts`, 0, -1, (err, reply) => {
-    const result = [];
-    for (let i = 0; i < reply.length; i += 1) {
-      const blog = JSON.parse(reply[i]);
-      if (apiKey === xApiKeyPrivate || blog.blogPublished) {
-        if (selectedBlogTags.length === 0) {
-          if (
-            blogCollection === 'all' ||
-            (blogCollection === 'blog' && blog.blogShowInBlogsList) ||
-            (blogCollection === 'travel' && blog.blogShowInTravelBlogsList)
-          ) {
-            result.push(blog);
-          }
-        } else {
-          for (let j = 0; j < blog.blogTags.length; j += 1) {
-            const tag = blog.blogTags[j];
-            if (selectedBlogTags.includes(tag)) {
-              if (
-                blogCollection === 'all' ||
-                (blogCollection === 'blog' && blog.blogShowInBlogsList) ||
-                (blogCollection === 'travel' && blog.blogShowInTravelBlogsList)
-              ) {
-                result.push(blog);
+  checkIsLoggedInAdmin(req.headers['logged-in-session-id'], loggedInAdmin => {
+    const selectedBlogTags = req.headers['selected-blog-tags']
+      ? req.headers['selected-blog-tags'].split(', ')
+      : [];
+    const blogCollection = req.headers['blog-collection'];
+    client.lrange(`blog-posts`, 0, -1, (err, reply) => {
+      const result = [];
+      for (let i = 0; i < reply.length; i += 1) {
+        const blog = JSON.parse(reply[i]);
+        if (loggedInAdmin || blog.blogPublished) {
+          if (selectedBlogTags.length === 0) {
+            if (
+              blogCollection === 'all' ||
+              (blogCollection === 'blog' && blog.blogShowInBlogsList) ||
+              (blogCollection === 'travel' && blog.blogShowInTravelBlogsList)
+            ) {
+              result.push(blog);
+            }
+          } else {
+            for (let j = 0; j < blog.blogTags.length; j += 1) {
+              const tag = blog.blogTags[j];
+              if (selectedBlogTags.includes(tag)) {
+                if (
+                  blogCollection === 'all' ||
+                  (blogCollection === 'blog' && blog.blogShowInBlogsList) ||
+                  (blogCollection === 'travel' &&
+                    blog.blogShowInTravelBlogsList)
+                ) {
+                  result.push(blog);
+                }
+                break;
               }
-              break;
             }
           }
         }
       }
-    }
-    res.send(
-      result.sort((a, b) => a.publishedTimestamp < b.publishedTimestamp),
-    );
+      res.send(
+        result.sort((a, b) => a.publishedTimestamp < b.publishedTimestamp),
+      );
+    });
   });
 });
 
 router.get('/api/blog-posts/single', (req, res) => {
-  const apiKey = req.headers['api-key'];
-  if (
-    apiKey === undefined ||
-    !(apiKey === xApiKeyPub || apiKey === xApiKeyPrivate)
-  ) {
-    res.end();
-    return;
-  }
-  const blogId = req.headers.blog_id;
-  client.lrange(`blog-posts`, 0, -1, (err, reply) => {
-    for (let i = 0; i < reply.length; i += 1) {
-      const blog = JSON.parse(reply[i]);
-      if (blog.blogId === blogId) {
-        // TODO If private api key, return blog
-        // TODO Else if public api key, return only if published
-        if (apiKey === xApiKeyPrivate || blog.blogPublished) {
-          res.send(JSON.parse(reply[i]));
-          return;
+  checkIsLoggedInAdmin(req.headers['logged-in-session-id'], loggedInAdmin => {
+    const blogId = req.headers.blog_id;
+    client.lrange(`blog-posts`, 0, -1, (err, reply) => {
+      for (let i = 0; i < reply.length; i += 1) {
+        const blog = JSON.parse(reply[i]);
+        if (blog.blogId === blogId) {
+          // TODO If private api key, return blog
+          // TODO Else if public api key, return only if published
+          if (loggedInAdmin || blog.blogPublished) {
+            res.send(JSON.parse(reply[i]));
+            return;
+          }
         }
       }
-    }
-    res.send(null);
+      res.send(null);
+    });
   });
 });
 
 router.post('/api/blog-posts', (req, res) => {
-  const apiKey = req.headers['api-key'];
-  if (apiKey === undefined || apiKey !== xApiKeyPrivate) {
+  checkIsLoggedInAdmin(req.headers['logged-in-session-id'], loggedInAdmin => {
+    if (!loggedInAdmin) {
+      res.end();
+      return;
+    }
+    const blogName = req.body.blog_name;
+    const blogId = Math.random()
+      .toString(36)
+      .substring(7);
+    const blogContent = req.body.blog_content;
+    const blogTags = req.body.blog_tags;
+    const blogPublished = req.body.blog_published;
+    const blogImageBorderColor = req.body.blog_image_border_color;
+    const blogBannerColor = req.body.blog_banner_color;
+    const blogCardLight = req.body.blog_card_light;
+    const blogCardLink = req.body.blog_card_link;
+    const blogBibtex = req.body.blog_bibtex;
+    const blogShowInBlogsList = req.body.blog_show_in_blogs_list;
+    const blogShowInTravelBlogsList = req.body.blog_show_in_travel_blogs_list;
+    const blogCardDate = req.body.blog_card_date;
+    client.rpush([
+      `blog-posts`,
+      JSON.stringify({
+        blogId,
+        blogName,
+        blogContent,
+        blogTags,
+        blogPublished,
+        blogImageBorderColor,
+        blogBannerColor,
+        blogCardLight,
+        blogCardLink,
+        blogBibtex,
+        blogShowInBlogsList,
+        blogShowInTravelBlogsList,
+        blogCardDate,
+        publishedTimestamp: null,
+      }),
+    ]);
+    res.send({ blog_id: blogId });
     res.end();
-    return;
-  }
-  const blogName = req.body.blog_name;
-  const blogId = Math.random()
-    .toString(36)
-    .substring(7);
-  const blogContent = req.body.blog_content;
-  const blogTags = req.body.blog_tags;
-  const blogPublished = req.body.blog_published;
-  const blogImageBorderColor = req.body.blog_image_border_color;
-  const blogBannerColor = req.body.blog_banner_color;
-  const blogCardLight = req.body.blog_card_light;
-  const blogCardLink = req.body.blog_card_link;
-  const blogBibtex = req.body.blog_bibtex;
-  const blogShowInBlogsList = req.body.blog_show_in_blogs_list;
-  const blogShowInTravelBlogsList = req.body.blog_show_in_travel_blogs_list;
-  const blogCardDate = req.body.blog_card_date;
-  client.rpush([
-    `blog-posts`,
-    JSON.stringify({
-      blogId,
-      blogName,
-      blogContent,
-      blogTags,
-      blogPublished,
-      blogImageBorderColor,
-      blogBannerColor,
-      blogCardLight,
-      blogCardLink,
-      blogBibtex,
-      blogShowInBlogsList,
-      blogShowInTravelBlogsList,
-      blogCardDate,
-      publishedTimestamp: null,
-    }),
-  ]);
-  res.send({ blog_id: blogId });
-  res.end();
+  });
 });
 
 router.post('/api/blog-posts/update', (req, res) => {
-  const apiKey = req.headers['api-key'];
-  if (apiKey === undefined || apiKey !== xApiKeyPrivate) {
-    res.end();
-    return;
-  }
-  const blogId = req.body.blog_id;
-  const blogName = req.body.blog_name;
-  const blogContent = req.body.blog_content;
-  const blogTags = req.body.blog_tags;
-  const blogPublished = req.body.blog_published;
-  const blogHeroImage = req.body.blog_hero_image;
-  const blogImage = req.body.blog_image;
-  const blogImageBorderColor = req.body.blog_image_border_color;
-  const blogBannerColor = req.body.blog_banner_color;
-  const blogCardLight = req.body.blog_card_light;
-  const blogCardLink = req.body.blog_card_link;
-  const blogBibtex = req.body.blog_bibtex;
-  const blogShowInBlogsList = req.body.blog_show_in_blogs_list;
-  const blogShowInTravelBlogsList = req.body.blog_show_in_travel_blogs_list;
-  const blogCardDate = req.body.blog_card_date;
-  if (blogId !== undefined) {
-    client.lrange(`blog-posts`, 0, -1, (err, reply) => {
-      for (let i = 0; i < reply.length; i += 1) {
-        const blog = JSON.parse(reply[i]);
-        if (blog.blogId === blogId) {
-          if (!blog.publishedTimestamp && blogPublished) {
-            // blog has just been published for the first time:
-            // Set Published date:
-            blog.publishedTimestamp = Date.now();
+  checkIsLoggedInAdmin(req.headers['logged-in-session-id'], loggedInAdmin => {
+    if (!loggedInAdmin) {
+      res.end();
+      return;
+    }
+    const blogId = req.body.blog_id;
+    const blogName = req.body.blog_name;
+    const blogContent = req.body.blog_content;
+    const blogTags = req.body.blog_tags;
+    const blogPublished = req.body.blog_published;
+    const blogHeroImage = req.body.blog_hero_image;
+    const blogImage = req.body.blog_image;
+    const blogImageBorderColor = req.body.blog_image_border_color;
+    const blogBannerColor = req.body.blog_banner_color;
+    const blogCardLight = req.body.blog_card_light;
+    const blogCardLink = req.body.blog_card_link;
+    const blogBibtex = req.body.blog_bibtex;
+    const blogShowInBlogsList = req.body.blog_show_in_blogs_list;
+    const blogShowInTravelBlogsList = req.body.blog_show_in_travel_blogs_list;
+    const blogCardDate = req.body.blog_card_date;
+    if (blogId !== undefined) {
+      client.lrange(`blog-posts`, 0, -1, (err, reply) => {
+        for (let i = 0; i < reply.length; i += 1) {
+          const blog = JSON.parse(reply[i]);
+          if (blog.blogId === blogId) {
+            if (!blog.publishedTimestamp && blogPublished) {
+              // blog has just been published for the first time:
+              // Set Published date:
+              blog.publishedTimestamp = Date.now();
+            }
+            blog.blogContent = blogContent;
+            blog.blogName = blogName;
+            blog.blogTags = blogTags;
+            blog.blogPublished = blogPublished;
+            blog.blogHeroImage = blogHeroImage;
+            blog.blogImage = blogImage;
+            blog.blogImageBorderColor = blogImageBorderColor;
+            blog.blogBannerColor = blogBannerColor;
+            blog.blogCardLight = blogCardLight;
+            blog.blogCardLink = blogCardLink;
+            blog.blogBibtex = blogBibtex;
+            blog.blogShowInBlogsList = blogShowInBlogsList;
+            blog.blogShowInTravelBlogsList = blogShowInTravelBlogsList;
+            blog.blogCardDate = blogCardDate;
+            client.lset(`blog-posts`, i, JSON.stringify(blog));
+            return;
           }
-          blog.blogContent = blogContent;
-          blog.blogName = blogName;
-          blog.blogTags = blogTags;
-          blog.blogPublished = blogPublished;
-          blog.blogHeroImage = blogHeroImage;
-          blog.blogImage = blogImage;
-          blog.blogImageBorderColor = blogImageBorderColor;
-          blog.blogBannerColor = blogBannerColor;
-          blog.blogCardLight = blogCardLight;
-          blog.blogCardLink = blogCardLink;
-          blog.blogBibtex = blogBibtex;
-          blog.blogShowInBlogsList = blogShowInBlogsList;
-          blog.blogShowInTravelBlogsList = blogShowInTravelBlogsList;
-          blog.blogCardDate = blogCardDate;
-          client.lset(`blog-posts`, i, JSON.stringify(blog));
-          return;
         }
-      }
-    });
-  }
-  res.send({ blog_id: blogId });
-  res.end();
+      });
+    }
+    res.send({ blog_id: blogId });
+    res.end();
+  });
 });
 
 router.post('/api/blog-posts/override-published-timestamp', (req, res) => {
-  const apiKey = req.headers['api-key'];
-  if (apiKey === undefined || apiKey !== xApiKeyPrivate) {
-    res.end();
-    return;
-  }
-  const blogId = req.body.blog_id;
-  const blogPublishedTimestamp = req.body.blog_published_timestamp;
-  if (blogId !== undefined) {
-    client.lrange(`blog-posts`, 0, -1, (err, reply) => {
-      for (let i = 0; i < reply.length; i += 1) {
-        const blog = JSON.parse(reply[i]);
-        if (blog.blogId === blogId) {
-          blog.publishedTimestamp = blogPublishedTimestamp;
-          client.lset(`blog-posts`, i, JSON.stringify(blog));
-          return;
+  checkIsLoggedInAdmin(req.headers['logged-in-session-id'], loggedInAdmin => {
+    if (!loggedInAdmin) {
+      res.end();
+      return;
+    }
+    const blogId = req.body.blog_id;
+    const blogPublishedTimestamp = req.body.blog_published_timestamp;
+    if (blogId !== undefined) {
+      client.lrange(`blog-posts`, 0, -1, (err, reply) => {
+        for (let i = 0; i < reply.length; i += 1) {
+          const blog = JSON.parse(reply[i]);
+          if (blog.blogId === blogId) {
+            blog.publishedTimestamp = blogPublishedTimestamp;
+            client.lset(`blog-posts`, i, JSON.stringify(blog));
+            return;
+          }
         }
-      }
-    });
-  }
-  res.send({ blog_id: blogId });
-  res.end();
+      });
+    }
+    res.send({ blog_id: blogId });
+    res.end();
+  });
 });
 
 router.get('/api/notifications', (req, res) => {
@@ -687,45 +678,47 @@ router.get('/api/notifications', (req, res) => {
 });
 
 router.post('/api/notifications', (req, res) => {
-  const apiKey = req.headers['api-key'];
-  if (apiKey === undefined || apiKey !== xApiKeyPrivate) {
-    res.end();
-    return;
-  }
-  const notificationId = Math.random()
-    .toString(36)
-    .substring(7);
-  const notificationMessage = req.body.notification_message;
-  const notificationType = req.body.notification_type;
-  client.rpush([
-    `notifications`,
-    JSON.stringify({
-      notificationId,
-      notificationMessage,
-      notificationType,
-      timestamp: Date.now(),
-    }),
-  ]);
+  checkIsLoggedInAdmin(req.headers['logged-in-session-id'], loggedInAdmin => {
+    if (!loggedInAdmin) {
+      res.end();
+      return;
+    }
+    const notificationId = Math.random()
+      .toString(36)
+      .substring(7);
+    const notificationMessage = req.body.notification_message;
+    const notificationType = req.body.notification_type;
+    client.rpush([
+      `notifications`,
+      JSON.stringify({
+        notificationId,
+        notificationMessage,
+        notificationType,
+        timestamp: Date.now(),
+      }),
+    ]);
+  });
   res.end();
 });
 
 router.delete('/api/notifications', (req, res) => {
-  const apiKey = req.headers['api-key'];
-  if (apiKey === undefined || apiKey !== xApiKeyPrivate) {
-    res.end();
-    return;
-  }
-  const notificationId = req.body.notification_id;
-  if (notificationId !== undefined) {
-    client.lrange(`notifications`, 0, -1, (err, reply) => {
-      for (let i = reply.length - 1; i >= 0; i -= 1) {
-        const notification = JSON.parse(reply[i]);
-        if (notification.notificationId === notificationId) {
-          client.lrem(`notifications`, 1, reply[i]);
+  checkIsLoggedInAdmin(req.headers['logged-in-session-id'], loggedInAdmin => {
+    if (!loggedInAdmin) {
+      res.end();
+      return;
+    }
+    const notificationId = req.body.notification_id;
+    if (notificationId !== undefined) {
+      client.lrange(`notifications`, 0, -1, (err, reply) => {
+        for (let i = reply.length - 1; i >= 0; i -= 1) {
+          const notification = JSON.parse(reply[i]);
+          if (notification.notificationId === notificationId) {
+            client.lrem(`notifications`, 1, reply[i]);
+          }
         }
-      }
-    });
-  }
+      });
+    }
+  });
   res.end();
 });
 
