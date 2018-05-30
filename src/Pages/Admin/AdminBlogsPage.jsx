@@ -20,16 +20,20 @@ class AdminBlogsPage extends React.Component {
     this.state = {
       publishedBlogs: [],
       allBlogs: [],
-      pattern: '',
     };
   }
 
   componentDidMount() {
     const getBlogs = () => {
-      if (this.props.apiKey !== '') {
-        DatabaseFunctions.getBlogs('all', this.props.apiKey, [], result => {
-          this.setState({ allBlogs: result });
-        });
+      if (this.props.loggedInSession) {
+        DatabaseFunctions.getBlogs(
+          'all',
+          this.props.loggedInSession,
+          [],
+          result => {
+            this.setState({ allBlogs: result });
+          },
+        );
       }
       DatabaseFunctions.getBlogs('all', '', [], result => {
         this.setState({ publishedBlogs: result });
@@ -41,7 +45,7 @@ class AdminBlogsPage extends React.Component {
   }
 
   render() {
-    const { apiKey, className, ...rest } = this.props;
+    const { loggedInSession, className, ...rest } = this.props;
 
     const classNameFinal = [];
     if (className) classNameFinal.push(className);
@@ -58,7 +62,7 @@ class AdminBlogsPage extends React.Component {
           {this.state.publishedBlogs.length > 0 ? (
             <div>
               {this.state.publishedBlogs.map(b => (
-                <AdminBlog apiKey={apiKey} blog={b} />
+                <AdminBlog loggedInSession={loggedInSession} blog={b} />
               ))}
             </div>
           ) : (
@@ -68,14 +72,14 @@ class AdminBlogsPage extends React.Component {
         {this.state.allBlogs.length > 0 && (
           <Section name="All blogs">
             {this.state.allBlogs.map(b => (
-              <AdminBlog apiKey={apiKey} blog={b} />
+              <AdminBlog loggedInSession={loggedInSession} blog={b} />
             ))}
           </Section>
         )}
-        {apiKey !== '' && (
+        {loggedInSession && (
           <Button
             onClick={() => {
-              DatabaseFunctions.addBlog(apiKey, result => {
+              DatabaseFunctions.addBlog(loggedInSession, result => {
                 console.log(result);
                 if (result && result.blog_id) {
                   this.props.history.push(

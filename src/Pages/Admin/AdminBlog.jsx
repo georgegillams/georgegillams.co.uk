@@ -19,7 +19,7 @@ class AdminBlog extends React.Component {
   }
 
   render() {
-    const { apiKey, blog, className, ...rest } = this.props;
+    const { loggedInSession, blog, className, ...rest } = this.props;
 
     const classNameFinal = [];
     if (className) classNameFinal.push(className);
@@ -29,13 +29,17 @@ class AdminBlog extends React.Component {
         {`${blog.blogId} ${blog.blogName} ${blog.publishedTimestamp}`}
         <br />
         <Button href={`/admin/blog-editor?id=${blog.blogId}`}>Edit blog</Button>
-        {apiKey !== '' && (
+        {loggedInSession && (
           <Button
             destructive
             onClick={() => {
-              DatabaseFunctions.deleteBlog(apiKey, blog.blogId, result => {
-                console.log(result);
-              });
+              DatabaseFunctions.deleteBlog(
+                loggedInSession,
+                blog.blogId,
+                result => {
+                  console.log(result);
+                },
+              );
             }}
           >
             Delete blog

@@ -35,7 +35,7 @@ class AdminCommentsPage extends React.Component {
   }
 
   render() {
-    const { className, apiKey, ...rest } = this.props;
+    const { className, loggedInSession, ...rest } = this.props;
 
     const classNameFinal = [];
     if (className) classNameFinal.push(className);
@@ -54,11 +54,11 @@ class AdminCommentsPage extends React.Component {
         <br />
         <Section name="Comments">
           {this.state.pageIds.map(c => (
-            <AdminComments apiKey={apiKey} pageId={c} />
+            <AdminComments loggedInSession={loggedInSession} pageId={c} />
           ))}
         </Section>
         <br />
-        {apiKey !== '' && (
+        {loggedInSession && (
           <div>
             <BpkInput
               className={getClassName('pages__card')}
@@ -75,7 +75,7 @@ class AdminCommentsPage extends React.Component {
               onClick={() => {
                 for (let i = 0; i < this.state.pageIds.length; i += 1) {
                   DatabaseFunctions.deleteComment(
-                    apiKey,
+                    loggedInSession,
                     this.state.pageIds[i],
                     this.state.pattern,
                     null,
