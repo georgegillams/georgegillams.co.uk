@@ -61,7 +61,9 @@ const Button = props => {
   }
 
   let onClickFinal = onClick;
-  if (href && hrefExternal) {
+  if (disabled) {
+    onClickFinal = null;
+  } else if (href && hrefExternal) {
     onClickFinal = () => {
       window.open(href, '_blank');
     };
@@ -70,7 +72,7 @@ const Button = props => {
   return (
     <button
       disabled={disabled}
-      onClick={disabled ? null : onClickFinal}
+      onClick={onClickFinal}
       className={classNameFinal.join(' ')}
       {...rest}
     >
@@ -81,7 +83,7 @@ const Button = props => {
 
 Button.propTypes = {
   large: PropTypes.bool,
-  href: PropTypes.bool,
+  href: PropTypes.string,
   hrefExternal: PropTypes.bool,
   disabled: PropTypes.bool,
   light: PropTypes.bool,

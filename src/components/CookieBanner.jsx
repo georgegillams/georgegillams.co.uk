@@ -30,11 +30,22 @@ class CookieBanner extends Component {
     return (
       <div className={classNameFinal.join(' ')} {...rest}>
         <div className={getClassName('cookie-banner__inner-container')}>
-          <Section noPadding className={getClassName('cookie-banner__blurrb')}>
+          <Section
+            name="Privacy and cookies"
+            noPadding
+            className={getClassName('cookie-banner__blurrb')}
+          >
             Since 25 May when GDPR came into practice, nobody’s had a bloody
             clue how to be compliant. So, henceforth, I present you yet another
-            opportunity to give a website permission to eat cookies. Wow, are
-            you actually still reading this? Just click OK!
+            opportunity to give a website permission to eat cookies. If you
+            don't give a s**t, stop reading now!
+            <br />
+            <br />
+            If you click this button, a session id cookie will be created. That
+            id will also be stored in my database indefinitely. The only
+            personal information I will collect and store is that which you
+            explicitly submit in form fields (such as the comments area of a
+            blog page). No third parties yada yada.
           </Section>
           <Button
             className={getClassName('cookie-banner__button')}
@@ -43,7 +54,7 @@ class CookieBanner extends Component {
               this.setState({ cookiesAccepted: true });
             }}
           >
-            OK 🙈
+            I agree to my data and cookies being used in this way.
           </Button>
         </div>
       </div>
