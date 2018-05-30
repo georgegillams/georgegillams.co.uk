@@ -34,13 +34,13 @@ class AdminPingTest extends React.Component {
   }
 
   deleteAllPings = () => {
-    DatabaseFunctions.deleteAllPings(this.props.apiKey, r => {
+    DatabaseFunctions.deleteAllPings(this.props.loggedInSession, r => {
       console.log(r);
     });
   };
 
   render() {
-    const { className, apiKey, ...rest } = this.props;
+    const { className, loggedInSession, ...rest } = this.props;
 
     const classNameFinal = [];
     if (className) classNameFinal.push(className);
@@ -60,7 +60,7 @@ class AdminPingTest extends React.Component {
             </div>
           );
         })}
-        {apiKey && (
+        {loggedInSession && (
           <Button destructive onClick={this.deleteAllPings}>
             Delete all pings
           </Button>
