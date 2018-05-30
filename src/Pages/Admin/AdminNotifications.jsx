@@ -27,7 +27,7 @@ class AdminNotificationsw extends React.Component {
   }
 
   render() {
-    const { apiKey, className, ...rest } = this.props;
+    const { loggedInSession, className, ...rest } = this.props;
 
     const classNameFinal = [];
     if (className) classNameFinal.push(className);
@@ -40,12 +40,12 @@ class AdminNotificationsw extends React.Component {
             <br />
             {n.notificationType}
             <br />
-            {apiKey !== '' && (
+            {loggedInSession && (
               <Button
                 destructive
                 onClick={() => {
                   DatabaseFunctions.deleteNotification(
-                    apiKey,
+                    loggedInSession,
                     n.notificationId,
                     result => {
                       console.log(result);
@@ -58,7 +58,7 @@ class AdminNotificationsw extends React.Component {
             )}
           </div>
         ))}
-        {apiKey !== '' && (
+        {loggedInSession && (
           <div>
             <br />
             <br />
@@ -85,7 +85,7 @@ class AdminNotificationsw extends React.Component {
             <Button
               onClick={() => {
                 DatabaseFunctions.createNotification(
-                  apiKey,
+                  loggedInSession,
                   this.state.message,
                   this.state.type,
                   result => {

@@ -30,15 +30,15 @@ class AdminNotificationsPage extends React.Component {
       DatabaseFunctions.getPaymentRequestCount(result => {
         this.setState({ paymentsCount: result });
       });
-      if (this.props.apiKey !== '') {
-        DatabaseFunctions.getPayments(this.props.apiKey, result => {
+      if (this.props.loggedInSession !== '') {
+        DatabaseFunctions.getPayments(this.props.loggedInSession, result => {
           this.setState({ payments: result });
         });
       }
     };
     const getBlogs = () => {
-      if (this.props.apiKey !== '') {
-        DatabaseFunctions.getBlogs('all', this.props.apiKey, [], result => {
+      if (this.props.loggedInSession !== '') {
+        DatabaseFunctions.getBlogs('all', this.props.loggedInSession, [], result => {
           this.setState({ allBlogs: result });
         });
       }
@@ -55,14 +55,14 @@ class AdminNotificationsPage extends React.Component {
   }
 
   render() {
-    const { className, apiKey, ...rest } = this.props;
+    const { className, loggedInSession, ...rest } = this.props;
 
     const classNameFinal = [];
     if (className) classNameFinal.push(className);
 
     return (
       <Section name="Notifications" {...rest}>
-        <AdminNotifications apiKey={apiKey} />
+        <AdminNotifications loggedInSession={loggedInSession} />
       </Section>
     );
   }
