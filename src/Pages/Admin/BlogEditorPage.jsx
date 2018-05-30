@@ -1,6 +1,7 @@
 import React from 'react';
 import BpkInput, { INPUT_TYPES } from 'bpk-component-input';
 import BpkBannerAlert, { ALERT_TYPES } from 'bpk-component-banner-alert';
+import cookie from 'react-cookies';
 import querystring from 'querystring';
 import { Prompt } from 'react-router-dom';
 import BlogEditor from '../../components/BlogEditor';
@@ -23,11 +24,13 @@ class BlogEditorPage extends React.Component {
 
     this.state = {
       blog: null,
-      apiKey: '',
+      loggedInSession: cookie.load('loggedInSession'),
       updateResult: null,
       dirty: false,
     };
   }
+
+  // TODO PERIODICALLY UPDATE loggedInSession COOKIE
 
   componentDidMount() {
     const location = `${window.location}`;
@@ -40,15 +43,26 @@ class BlogEditorPage extends React.Component {
           if (this.state.blog) {
             return;
           }
-          DatabaseFunctions.getBlog(this.state.apiKey, blogId, result => {
-            if (result && result.length === undefined) {
-              this.setState({ blog: result });
-            }
+          DatabaseFunctions.getBlog(
+            this.state.loggedInSession,
+            blogId,
+            result => {
+              if (result && result.length === undefined) {
+                this.setState({ blog: result });
+              }
+            },
+          );
+        };
+
+        const reloadLoggedInCookie = () => {
+          this.setState({
+            loggedInSession: cookie.load('loggedInSession'),
           });
         };
 
         getBlog();
         setInterval(getBlog, 2000);
+        setInterval(reloadLoggedInCookie, 2000);
       }
     }
   }
@@ -56,7 +70,8 @@ class BlogEditorPage extends React.Component {
   render() {
     let statusMessage = '';
     if (this.state.updateResult === undefined) {
-      statusMessage = 'Blog was unable to be saved. Check the private API Key';
+      statusMessage =
+        'Blog was unable to be saved. Check you are logged in properly';
     } else if (this.state.updateResult) {
       statusMessage = `Blog ${this.state.updateResult.blog_id} saved!`;
     }
@@ -75,27 +90,13 @@ class BlogEditorPage extends React.Component {
           }
           className={getClassName('pages__card')}
         />
-        <BpkInput
-          className={getClassName('pages__card')}
-          type={INPUT_TYPES.PASSWORD}
-          id="apiKey"
-          name="API Key"
-          value={this.state.apiKey}
-          onChange={event =>
-            this.setState({
-              apiKey: event.target.value,
-              blog: this.state.dirty ? this.state.blog : null,
-            })
-          }
-          placeholder="API Key"
-        />
         {this.state.blog && (
           <Button
             disabled={!this.state.dirty}
             className={getClassName('pages__card')}
             onClick={() => {
               DatabaseFunctions.updateBlog(
-                this.state.apiKey,
+                this.state.loggedInSession,
                 this.state.blog,
                 result => {
                   this.setState({

@@ -1,5 +1,6 @@
 import React from 'react';
 import BpkInput, { INPUT_TYPES } from 'bpk-component-input';
+import cookie from 'react-cookies';
 import { NavLink } from 'react-router-dom';
 import BpkHorizontalNav, {
   BpkHorizontalNavItem,
@@ -23,7 +24,20 @@ class Admin extends React.Component {
     this.state = {
       apiKey: '',
       selected: 'login',
+      loggedInSession: cookie.load('loggedInSession'),
+      cookiesAccepted: cookie.load('cookiesAccepted'),
     };
+  }
+
+  componentDidMount() {
+    const reloadLoggedInCookie = () => {
+      this.setState({
+        loggedInSession: cookie.load('loggedInSession'),
+        cookiesAccepted: cookie.load('cookiesAccepted'),
+      });
+    };
+
+    setInterval(reloadLoggedInCookie, 1000);
   }
 
   onClick = e => {
@@ -44,19 +58,9 @@ class Admin extends React.Component {
         className={classNameFinal.join(' ')}
         {...rest}
       >
-        Check you out, you l33T H4cK3R. Unfortunately you're not going to get
-        very far without my private API-Key!
+        Check you out, you l33T H4cK3R. Unfortunately you&apos;re not going to
+        get very far without logging in.
         <br />
-        <br />
-        <BpkInput
-          className={getClassName('pages__card')}
-          type={INPUT_TYPES.PASSWORD}
-          id="apiKey"
-          name="API Key"
-          value={this.state.apiKey}
-          onChange={event => this.setState({ apiKey: event.target.value })}
-          placeholder="API Key"
-        />
         <br />
         <BpkHorizontalNav style={{ margin: '1.2rem 0' }}>
           <BpkHorizontalNavItem
@@ -111,21 +115,28 @@ class Admin extends React.Component {
             Ping pen-testing
           </BpkHorizontalNavItem>
         </BpkHorizontalNav>
-        {this.state.selected === 'login' && <AdminLogin />}
+        {this.state.selected === 'login' && (
+          <AdminLogin
+            loggedInSession={this.state.loggedInSession}
+            cookiesAccepted={this.state.cookiesAccepted}
+          />
+        )}
         {this.state.selected === 'blogs' && (
-          <AdminBlogsPage apiKey={this.state.apiKey} />
+          <AdminBlogsPage loggedInSession={this.state.loggedInSession} />
         )}
         {this.state.selected === 'comments' && (
-          <AdminCommentsPage apiKey={this.state.apiKey} />
+          <AdminCommentsPage loggedInSession={this.state.loggedInSession} />
         )}
         {this.state.selected === 'notifications' && (
-          <AdminNotificationsPage apiKey={this.state.apiKey} />
+          <AdminNotificationsPage
+            loggedInSession={this.state.loggedInSession}
+          />
         )}
         {this.state.selected === 'payments' && (
-          <AdminPaymentsPage apiKey={this.state.apiKey} />
+          <AdminPaymentsPage loggedInSession={this.state.loggedInSession} />
         )}
         {this.state.selected === 'ping_pen_testing' && (
-          <AdminPingTest apiKey={this.state.apiKey} />
+          <AdminPingTest loggedInSession={this.state.loggedInSession} />
         )}
       </Section>
     );

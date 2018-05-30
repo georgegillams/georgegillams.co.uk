@@ -32,8 +32,8 @@ class AdminPaymentsPage extends React.Component {
       DatabaseFunctions.getPaymentRequestCount(result => {
         this.setState({ paymentsCount: result });
       });
-      if (this.props.apiKey !== '') {
-        DatabaseFunctions.getPayments(this.props.apiKey, result => {
+      if (this.props.loggedInSession !== '') {
+        DatabaseFunctions.getPayments(this.props.loggedInSession, result => {
           this.setState({ payments: result });
         });
       }
@@ -44,7 +44,7 @@ class AdminPaymentsPage extends React.Component {
   }
 
   render() {
-    const { className, apiKey, ...rest } = this.props;
+    const { className, loggedInSession, ...rest } = this.props;
 
     const classNameFinal = [];
     if (className) classNameFinal.push(className);
@@ -53,7 +53,7 @@ class AdminPaymentsPage extends React.Component {
       <Section name="Payments">
         {this.state.paymentsCount}
         {this.state.payments.map(p => (
-          <AdminPayment apiKey={apiKey} payment={p} />
+          <AdminPayment loggedInSession={loggedInSession} payment={p} />
         ))}
       </Section>
     );
