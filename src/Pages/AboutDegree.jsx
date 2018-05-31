@@ -67,34 +67,10 @@ class Degree extends React.Component {
           src="https://upload.wikimedia.org/wikipedia/commons/a/a7/University_of_Southampton_Logo.svg"
         />
         <br />
-        <TextLink
-          href="https://www.ecs.soton.ac.uk/programmes/g600-meng-software-engineering-4-yrs"
-          external
-        >
-          Degree information (current){' '}
-        </TextLink>
-        <br />
-        <TextLink
-          href="https://web.archive.org/web/20131128090133/https://www.ecs.soton.ac.uk/programmes/g600-meng-software-engineering-4-yrs#modules"
-          external
-        >
-          Degree information (archived){' '}
-        </TextLink>
-        <br />
-        <br />
-        <Section>
+        <Section name="Summary">
           4 year integrated Masters of Engineering (2013 - 2015, 2016 - 2018)
           <br />
           <br />
-          {/* TODO REMOVE_1 */}
-          <span style={{ width: '100%', fontWeight: 'bold', color: '#e02626' }}>
-            Red values represent the minimum possible
-          </span>
-          {/* TODO REMOVE_1 */}
-          <br />
-          {/* TODO REMOVE_1 */}
-          <br />
-          {/* TODO REMOVE_2 */}
           <span
             style={{ width: '100%', fontWeight: 'bold', color: 'darkorchid' }}
           >
@@ -106,13 +82,28 @@ class Degree extends React.Component {
           <br />
           <DegreeModule
             name="Final percentage"
-            minimum
-            percentage={62.1}
+            predicted
+            percentage={67.82}
             filled={this.state.filled[0]}
           />
           <br />
           Degree classification:{' '}
           <span style={{ fontWeight: 'bold', color: 'darkorchid' }}>2:1</span>
+          <br />
+          <br />
+          <TextLink
+            href="https://www.ecs.soton.ac.uk/programmes/g600-meng-software-engineering-4-yrs"
+            external
+          >
+            Degree information (current){' '}
+          </TextLink>
+          <br />
+          <TextLink
+            href="https://web.archive.org/web/20131128090133/https://www.ecs.soton.ac.uk/programmes/g600-meng-software-engineering-4-yrs#modules"
+            external
+          >
+            Degree information (archived){' '}
+          </TextLink>
         </Section>
         {/* )}
         {this.state.selected === 'breakdown' && ( */}
@@ -279,7 +270,7 @@ class Degree extends React.Component {
               className={getClassName('pages__degree-module')}
               name="Semantic Web"
               predicted
-              percentage={71.13}
+              percentage={77.36}
               filled={this.state.filled[26]}
             />
             <DegreeModule
@@ -291,8 +282,8 @@ class Degree extends React.Component {
             <DegreeModule
               className={getClassName('pages__degree-module')}
               name="Data Mining"
-              minimum
-              percentage={31.7}
+              predicted
+              percentage={50.39}
               filled={this.state.filled[28]}
             />
           </SubSection>
