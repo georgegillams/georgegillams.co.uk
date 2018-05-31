@@ -10,6 +10,7 @@ const {
 } = require('./src/shared/constants');
 const wget = require('wget-improved');
 const crypto = require('crypto');
+const compare = require('secure-compare');
 
 const app = express();
 
@@ -135,7 +136,7 @@ router.get('/api/hello', (req, res) => {
 const checkIsLoggedInAdmin = (loggedInSessionId, cb) => {
   client.lrange(`loggedInSessionIds`, 0, -1, (err, reply) => {
     for (let i = 0; i < reply.length; i += 1) {
-      if (JSON.parse(reply[i]).loggedInSessionId === loggedInSessionId) {
+      if (compare(JSON.parse(reply[i]).loggedInSessionId, loggedInSessionId)) {
         cb(true);
         return;
       }
@@ -190,7 +191,7 @@ router.get('/api/session-id', (req, res) => {
 
 router.post('/api/login', (req, res) => {
   const { username, password } = req.body;
-  if (username !== adminUserName || password !== adminPassword) {
+  if (!compare(username, adminUserName) || !compare(password, adminPassword)) {
     res.send({ loggedInSessionId: null });
     res.end();
     return;
