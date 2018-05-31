@@ -26,6 +26,8 @@ const Work = props => {
     classNameFinal.push(className);
   }
 
+  const afterGraduation = Date.now() > new Date('2018-07-19T17:00:00');
+
   return (
     <main className={classNameFinal.join(' ')} {...rest}>
       <ScrollIndicator />
@@ -33,10 +35,9 @@ const Work = props => {
       <LlAnimatedContent>
         <Section name="My Work">
           <LlAnimatedContent>
-            {/* TODO REMOVE "nearlyw" */}
             <SubSection name="Software Engineering Masters">
-              I (nearly 🤞) have a Masters in Software Engineering from the
-              University of Southampton.
+              I {afterGraduation ? 'have' : 'will soon have'} a Masters in
+              Software Engineering from the University of Southampton.
               <br />
               <br />
               <Button href="/work/degree">Information about my degree →</Button>

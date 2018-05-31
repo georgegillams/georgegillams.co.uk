@@ -1,6 +1,5 @@
 import React from 'react';
 import BpkImage, { withLoadingBehavior } from 'bpk-component-image';
-import Countdown from 'react-countdown-now';
 import Section from '../components/Section';
 import SubSection from '../components/SubSection';
 import DegreeModule from '../components/DegreeModule';
@@ -16,6 +15,11 @@ const documentIfExists = typeof window !== 'undefined' ? document : null;
 const FadingLazyLoadedImage = withLoadingBehavior(
   withLazyLoading(BpkImage, documentIfExists),
 );
+
+const FINAL_DEGREE_PERCENTAGE = 1;
+const ACG_PERCENTAGE = 0;
+const SW_PERCENTAGE = 0;
+const DM_PERCENTAGE = 0;
 
 class Degree extends React.Component {
   constructor(props) {
@@ -74,27 +78,16 @@ class Degree extends React.Component {
           4 year integrated Masters of Engineering (2013 - 2015, 2016 - 2018)
           <br />
           <br />
-          <span
-            style={{ width: '100%', fontWeight: 'bold', color: 'darkorchid' }}
-          >
-            Purple values represent estimated values
-            <br />
-            Final results released:{' '}
-            <Countdown date={new Date('2018-06-21T16:00:00')} />
-          </span>
-          {/* TODO REMOVE_2 */}
-          <br />
-          {/* TODO REMOVE_2 */}
-          <br />
           <DegreeModule
             name="Final percentage"
-            predicted
-            percentage={68.08}
+            percentage={FINAL_DEGREE_PERCENTAGE}
             filled={this.state.filled[0]}
           />
           <br />
           Degree classification:{' '}
-          <span style={{ fontWeight: 'bold', color: 'darkorchid' }}>2:1</span>
+          <span style={{ fontWeight: 'bold' }}>
+            TODO_TODO_TODO_TODO_TODO_TODO
+          </span>
           <br />
           <br />
           <TextLink
@@ -116,48 +109,56 @@ class Degree extends React.Component {
         <Section name="Breakdown">
           <SubSection name="Year 1">
             <DegreeModule
+              markerPosition={FINAL_DEGREE_PERCENTAGE}
               className={getClassName('pages__degree-module')}
               name="Algorithmics"
               percentage={66}
               filled={this.state.filled[1]}
             />
             <DegreeModule
+              markerPosition={FINAL_DEGREE_PERCENTAGE}
               className={getClassName('pages__degree-module')}
               name="Programming I"
               percentage={69}
               filled={this.state.filled[2]}
             />
             <DegreeModule
+              markerPosition={FINAL_DEGREE_PERCENTAGE}
               className={getClassName('pages__degree-module')}
               name="Computer Systems"
               percentage={66}
               filled={this.state.filled[3]}
             />
             <DegreeModule
+              markerPosition={FINAL_DEGREE_PERCENTAGE}
               className={getClassName('pages__degree-module')}
               name="Data Management"
               percentage={67}
               filled={this.state.filled[4]}
             />
             <DegreeModule
+              markerPosition={FINAL_DEGREE_PERCENTAGE}
               className={getClassName('pages__degree-module')}
               name="Professional Development"
               percentage={65}
               filled={this.state.filled[5]}
             />
             <DegreeModule
+              markerPosition={FINAL_DEGREE_PERCENTAGE}
               className={getClassName('pages__degree-module')}
               name="Programming II"
               percentage={68}
               filled={this.state.filled[6]}
             />
             <DegreeModule
+              markerPosition={FINAL_DEGREE_PERCENTAGE}
               className={getClassName('pages__degree-module')}
               name="Foundations of Computer Science"
               percentage={71}
               filled={this.state.filled[7]}
             />
             <DegreeModule
+              markerPosition={FINAL_DEGREE_PERCENTAGE}
               className={getClassName('pages__degree-module')}
               name="Software Modelling"
               percentage={60}
@@ -166,48 +167,56 @@ class Degree extends React.Component {
           </SubSection>
           <SubSection name="Year 2">
             <DegreeModule
+              markerPosition={FINAL_DEGREE_PERCENTAGE}
               className={getClassName('pages__degree-module')}
               name="Distributed Systems"
               percentage={76}
               filled={this.state.filled[9]}
             />
             <DegreeModule
+              markerPosition={FINAL_DEGREE_PERCENTAGE}
               className={getClassName('pages__degree-module')}
               name="Intelligent Agents"
               percentage={79}
               filled={this.state.filled[10]}
             />
             <DegreeModule
+              markerPosition={FINAL_DEGREE_PERCENTAGE}
               className={getClassName('pages__degree-module')}
               name="Programming III"
               percentage={59}
               filled={this.state.filled[11]}
             />
             <DegreeModule
+              markerPosition={FINAL_DEGREE_PERCENTAGE}
               className={getClassName('pages__degree-module')}
               name="Theory of Computing"
               percentage={63}
               filled={this.state.filled[12]}
             />
             <DegreeModule
+              markerPosition={FINAL_DEGREE_PERCENTAGE}
               className={getClassName('pages__degree-module')}
               name="Group Project"
               percentage={65}
               filled={this.state.filled[13]}
             />
             <DegreeModule
+              markerPosition={FINAL_DEGREE_PERCENTAGE}
               className={getClassName('pages__degree-module')}
               name="Programming Language Concepts"
               percentage={68}
               filled={this.state.filled[14]}
             />
             <DegreeModule
+              markerPosition={FINAL_DEGREE_PERCENTAGE}
               className={getClassName('pages__degree-module')}
               name="Interaction Design"
               percentage={61}
               filled={this.state.filled[15]}
             />
             <DegreeModule
+              markerPosition={FINAL_DEGREE_PERCENTAGE}
               className={getClassName('pages__degree-module')}
               name="Advanced Software Modelling"
               percentage={60}
@@ -216,36 +225,42 @@ class Degree extends React.Component {
           </SubSection>
           <SubSection name="Year 3">
             <DegreeModule
+              markerPosition={FINAL_DEGREE_PERCENTAGE}
               className={getClassName('pages__degree-module')}
               name="Dissertation Project"
               percentage={73}
               filled={this.state.filled[17]}
             />
             <DegreeModule
+              markerPosition={FINAL_DEGREE_PERCENTAGE}
               className={getClassName('pages__degree-module')}
               name="Cyber Security"
               percentage={61}
               filled={this.state.filled[18]}
             />
             <DegreeModule
+              markerPosition={FINAL_DEGREE_PERCENTAGE}
               className={getClassName('pages__degree-module')}
               name="Machine Learning"
               percentage={67}
               filled={this.state.filled[19]}
             />
             <DegreeModule
+              markerPosition={FINAL_DEGREE_PERCENTAGE}
               className={getClassName('pages__degree-module')}
               name="Advanced Databases"
               percentage={77}
               filled={this.state.filled[20]}
             />
             <DegreeModule
+              markerPosition={FINAL_DEGREE_PERCENTAGE}
               className={getClassName('pages__degree-module')}
               name="Secure Systems"
               percentage={77}
               filled={this.state.filled[21]}
             />
             <DegreeModule
+              markerPosition={FINAL_DEGREE_PERCENTAGE}
               className={getClassName('pages__degree-module')}
               name="Engineering Law"
               percentage={62}
@@ -254,42 +269,45 @@ class Degree extends React.Component {
           </SubSection>
           <SubSection name="Year 4">
             <DegreeModule
+              markerPosition={FINAL_DEGREE_PERCENTAGE}
               className={getClassName('pages__degree-module')}
               name="Group Design Project"
               percentage={71.75}
               filled={this.state.filled[23]}
             />
             <DegreeModule
+              markerPosition={FINAL_DEGREE_PERCENTAGE}
               className={getClassName('pages__degree-module')}
               name="Web Development"
               percentage={63}
               filled={this.state.filled[24]}
             />
             <DegreeModule
+              markerPosition={FINAL_DEGREE_PERCENTAGE}
               className={getClassName('pages__degree-module')}
               name="Automated Code Generation"
-              predicted
-              percentage={70}
+              percentage={ACG_PERCENTAGE}
               filled={this.state.filled[25]}
             />
             <DegreeModule
+              markerPosition={FINAL_DEGREE_PERCENTAGE}
               className={getClassName('pages__degree-module')}
               name="Semantic Web"
-              predicted
-              percentage={77.36}
+              percentage={SW_PERCENTAGE}
               filled={this.state.filled[26]}
             />
             <DegreeModule
+              markerPosition={FINAL_DEGREE_PERCENTAGE}
               className={getClassName('pages__degree-module')}
               name="Web Architecture"
               percentage={52}
               filled={this.state.filled[27]}
             />
             <DegreeModule
+              markerPosition={FINAL_DEGREE_PERCENTAGE}
               className={getClassName('pages__degree-module')}
               name="Data Mining"
-              predicted
-              percentage={55.49}
+              percentage={DM_PERCENTAGE}
               filled={this.state.filled[28]}
             />
           </SubSection>

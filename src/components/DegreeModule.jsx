@@ -14,6 +14,7 @@ const DegreeModule = props => {
     name,
     minimum,
     predicted,
+    markerPosition,
     percentage,
     filled,
     className,
@@ -72,8 +73,12 @@ const DegreeModule = props => {
       <span className={getClassName('degree-module--module-name')}>{name}</span>
       <div className={getClassName('degree-module--module-bar')}>
         {progress}
-        <div className={getClassName('degree-module--21-marker')} />
-        {/* <div className={getClassName('degree-module--first-marker')} /> */}
+        {markerPosition && (
+          <div
+            className={getClassName('degree-module--21-marker')}
+            style={{ marginLeft: `calc(${markerPosition}% - .175rem)` }}
+          />
+        )}
       </div>
       <span
         className={getClassName('degree-module--percentage')}
@@ -90,6 +95,7 @@ DegreeModule.propTypes = {
   minimum: PropTypes.bool,
   filled: PropTypes.bool,
   className: PropTypes.string,
+  markerPosition: PropTypes.number,
 };
 
 DegreeModule.defaultProps = {
@@ -98,6 +104,7 @@ DegreeModule.defaultProps = {
   minimum: false,
   className: null,
   percentage: null,
+  markerPosition: null,
 };
 
 export default DegreeModule;
