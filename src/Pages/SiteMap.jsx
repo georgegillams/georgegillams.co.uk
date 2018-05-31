@@ -94,6 +94,8 @@ class SiteMap extends Component {
           className={getClassName('pages__site-map-item')}
           name="Work 📱"
         >
+          <TextLink href="/work/degree">Degree</TextLink>
+          <br />
           <TextLink href="/work">Portfolio</TextLink>
           <br />
           <TextLink href="/work/bpk-component-demo">
