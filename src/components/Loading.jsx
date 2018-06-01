@@ -1,6 +1,6 @@
 import React from 'react';
 import Funnies from 'funnies';
-import { BpkExtraLargeSpinner, SPINNER_TYPES } from 'bpk-component-spinner';
+import ReactLoading from 'react-loading';
 import SubSection from './SubSection';
 
 const funnies = new Funnies();
@@ -10,7 +10,15 @@ const Loading = () => (
     {funnies.message()}
     <br />
     <br />
-    <BpkExtraLargeSpinner large type={SPINNER_TYPES.dark} />
+    <div style={{ display: 'flex', justifyContent: 'space-around' }}>
+      <ReactLoading
+        style={{ width: '5rem' }}
+        type="bubbles"
+        color="#1e1e1e"
+        height={80}
+        width={56.1}
+      />
+    </div>
   </SubSection>
 );
 
