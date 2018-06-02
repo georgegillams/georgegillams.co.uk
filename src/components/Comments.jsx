@@ -1,9 +1,11 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { BpkSpinner, SPINNER_TYPES } from 'bpk-component-spinner';
+import cookie from 'react-cookies';
 import Section from './Section';
 import SubSection from './SubSection';
 import CommentInput from './CommentInput';
+import Button from './Button';
 import DatabaseFunctions from '../DatabaseFunctions';
 
 import STYLES from './comments.scss';
@@ -26,8 +28,18 @@ class Comments extends React.Component {
       });
     };
 
+    const reloadCookies = () => {
+      this.setState({
+        sessionId: cookie.load('sessionId'),
+        loggedInSession: cookie.load('loggedInSession'),
+        userComments: cookie.load('userComments') || [],
+      });
+    };
+
     getComments();
-    setInterval(getComments, 5000);
+    reloadCookies();
+    setInterval(reloadCookies, 1000);
+    setInterval(getComments, 1000);
   }
 
   render() {
@@ -56,6 +68,25 @@ class Comments extends React.Component {
               name={`${c.commenterName}`}
             >
               {c.comment}
+              <br />
+              {this.state.userComments.includes(c.commentId) && (
+                <Button
+                  className={getClassName('comments__component__button')}
+                  destructive
+                  onClick={() => {
+                    DatabaseFunctions.deleteComment(
+                      this.state.sessionId,
+                      this.state.loggedInSession,
+                      pageId,
+                      null,
+                      c.commentId,
+                      result => null,
+                    );
+                  }}
+                >
+                  Delete my comment
+                </Button>
+              )}
             </SubSection>
           ))
         );

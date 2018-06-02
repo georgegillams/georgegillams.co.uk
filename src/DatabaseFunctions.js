@@ -254,13 +254,14 @@ class DatabaseFunctions {
     });
   }
 
-  static postNewComment(pageId, commenterName, comment, cb) {
+  static postNewComment(sessionId, pageId, commenterName, comment, cb) {
     const options = {
       method: 'POST',
       url: `${url}/api/comments`,
       headers: {},
       body: {
         page_id: pageId,
+        commenter_session_id: sessionId,
         commenter_name: commenterName,
         comment,
       },
@@ -273,7 +274,14 @@ class DatabaseFunctions {
     });
   }
 
-  static deleteComment(loggedInSessionId, pageId, pattern, commentId, cb) {
+  static deleteComment(
+    regularSessionId,
+    loggedInSessionId,
+    pageId,
+    pattern,
+    commentId,
+    cb,
+  ) {
     const options = {
       method: 'DELETE',
       url: `${url}/api/comments`,
@@ -281,6 +289,7 @@ class DatabaseFunctions {
         'Logged-In-Session-Id': loggedInSessionId,
       },
       body: {
+        deleter_id: regularSessionId,
         page_id: pageId,
         pattern,
         comment_id: commentId,
