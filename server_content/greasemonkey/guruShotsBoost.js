@@ -42,4 +42,4 @@ function checkForFreeBoosts() {
   }
 }
 
-setInterval(checkForFreeBoosts, 5000);
+setInterval(checkForFreeBoosts, 1000);

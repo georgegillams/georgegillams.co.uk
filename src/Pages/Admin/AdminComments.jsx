@@ -22,7 +22,7 @@ class AdminComments extends React.Component {
     };
 
     getComments();
-    setInterval(getComments, 5000);
+    setInterval(getComments, 1000);
   }
 
   render() {
@@ -43,13 +43,12 @@ class AdminComments extends React.Component {
                 destructive
                 onClick={() => {
                   DatabaseFunctions.deleteComment(
+                    null,
                     loggedInSession,
                     pageId,
                     null,
                     c.commentId,
-                    result => {
-                      console.log(result);
-                    },
+                    result => null,
                   );
                 }}
               >
