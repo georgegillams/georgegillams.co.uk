@@ -1,5 +1,6 @@
 import React from 'react';
 import querystring from 'querystring';
+import cookie from 'react-cookies';
 import BlogRenderer from './../components/BlogRenderer';
 import Comments from './../components/Comments';
 import Loading from './../components/Loading';
@@ -42,8 +43,16 @@ class BlogEditorPage extends React.Component {
           });
         };
 
+        const reloadCookies = () => {
+          this.setState({
+            loggedInSession: cookie.load('loggedInSession'),
+          });
+        };
+
         getBlog();
+        reloadCookies();
         setInterval(getBlog, 2000);
+        setInterval(reloadCookies, 2000);
       }
     }
   }
@@ -57,6 +66,7 @@ class BlogEditorPage extends React.Component {
       <div id="greasy_blog_handle">
         <PageSwitchScroller />
         <BlogRenderer
+          showEditLink={this.state.loggedInSession}
           centered={HelperFunctions.includes(
             this.state.blog.blogTags,
             'travel',

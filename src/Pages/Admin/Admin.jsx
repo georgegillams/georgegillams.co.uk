@@ -30,14 +30,14 @@ class Admin extends React.Component {
   }
 
   componentDidMount() {
-    const reloadLoggedInCookie = () => {
+    const reloadCookies = () => {
       this.setState({
         loggedInSession: cookie.load('loggedInSession'),
         cookiesAccepted: cookie.load('cookiesAccepted'),
       });
     };
 
-    setInterval(reloadLoggedInCookie, 1000);
+    setInterval(reloadCookies, 1000);
   }
 
   onClick = e => {
