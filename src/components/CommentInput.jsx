@@ -21,17 +21,21 @@ class CommentInput extends React.Component {
       comment: '',
       result: null,
       cookiesAccepted: cookie.load('cookiesAccepted'),
+      sessionId: null,
     };
   }
 
   componentDidMount() {
-    const reloadCookiesAccepted = () => {
+    const reloadCookies = () => {
       this.setState({
         cookiesAccepted: cookie.load('cookiesAccepted'),
+        sessionId: cookie.load('sessionId'),
+        userComments: cookie.load('userComments') || [],
       });
     };
 
-    setInterval(reloadCookiesAccepted, 1000);
+    reloadCookies();
+    setInterval(reloadCookies, 1000);
   }
 
   onCommentChanged = event => {
@@ -45,11 +49,17 @@ class CommentInput extends React.Component {
   submitComment = () => {
     this.setState({ result: 'waiting...' });
     DatabaseFunctions.postNewComment(
+      this.state.sessionId,
       this.props.pageId,
       this.state.name,
       this.state.comment,
       result => {
         this.setState({ result });
+        const newUserComments = JSON.parse(
+          JSON.stringify(this.state.userComments),
+        );
+        newUserComments.push(result);
+        cookie.save('userComments', newUserComments, { path: '/' });
       },
     );
   };
