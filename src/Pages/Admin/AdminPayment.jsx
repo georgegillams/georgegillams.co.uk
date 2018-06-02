@@ -26,7 +26,7 @@ class AdminPayment extends React.Component {
     // };
     //
     // getComments();
-    // setInterval(getComments, 5000);
+    // setInterval(getComments, 1000);
   }
 
   render() {
@@ -52,9 +52,7 @@ class AdminPayment extends React.Component {
             DatabaseFunctions.authorisePayment(
               loggedInSession,
               payment.paymentId,
-              result => {
-                console.log(result);
-              },
+              result => null,
             );
           }}
         >
@@ -66,9 +64,7 @@ class AdminPayment extends React.Component {
             DatabaseFunctions.completePayment(
               loggedInSession,
               payment.paymentId,
-              result => {
-                console.log(result);
-              },
+              result => null,
             );
           }}
         >
@@ -81,9 +77,7 @@ class AdminPayment extends React.Component {
             DatabaseFunctions.rejectPayment(
               loggedInSession,
               payment.paymentId,
-              result => {
-                console.log(result);
-              },
+              result => null,
             );
           }}
         >
@@ -95,9 +89,7 @@ class AdminPayment extends React.Component {
             DatabaseFunctions.deletePayment(
               loggedInSession,
               payment.paymentId,
-              result => {
-                console.log(result);
-              },
+              result => null,
             );
           }}
         >

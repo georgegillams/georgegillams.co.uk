@@ -80,7 +80,6 @@ class AdminBlogsPage extends React.Component {
           <Button
             onClick={() => {
               DatabaseFunctions.addBlog(loggedInSession, result => {
-                console.log(result);
                 if (result && result.blog_id) {
                   this.props.history.push(
                     `/admin/blog-editor?id=${result.blog_id}`,
