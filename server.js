@@ -129,6 +129,10 @@ router.get('/api/greasemonkey/southampton_camera_club', (req, res) => {
   sendGreasemonkeyFile('southampton camera club.js', req, res);
 });
 
+router.get('/api/greasemonkey/github_highlight_name', (req, res) => {
+  sendGreasemonkeyFile('Github highlight my name.js', req, res);
+});
+
 router.get('/api/hello', (req, res) => {
   res.send({ express: 'Hello From Express' });
 });
@@ -160,7 +164,10 @@ router.get('/api/comments', (req, res) => {
   client.lrange(`${pageId}_comments`, 0, -1, (err, reply) => {
     const result = [];
     for (let i = 0; i < reply.length; i += 1) {
-      result.push(JSON.parse(reply[i]));
+      const comment = JSON.parse(reply[i]);
+      // REMOVE commenterSessionId VALUE BEFORE SENDING DATA:
+      comment.commenterSessionId = null;
+      result.push(comment);
     }
     res.send(result);
   });
@@ -213,6 +220,7 @@ router.post('/api/comments', (req, res) => {
     .toString(36)
     .substring(7);
   const commenterName = req.body.commenter_name;
+  const commenterSessionId = req.body.commenter_session_id;
   const { comment } = req.body;
   client.lrem('pageIds', 0, pageId);
   client.rpush(['pageIds', pageId]);
@@ -220,31 +228,38 @@ router.post('/api/comments', (req, res) => {
     `${pageId}_comments`,
     JSON.stringify({
       commentId,
+      commenterSessionId,
       commenterName,
       comment,
       timestamp: Date.now(),
     }),
   ]);
+  res.send(commentId);
   res.end();
 });
 
 router.delete('/api/comments', (req, res) => {
   checkIsLoggedInAdmin(req.headers['logged-in-session-id'], loggedInAdmin => {
-    if (!loggedInAdmin) {
-      res.end();
-      return;
-    }
     const pageId = req.body.page_id;
     const { pattern } = req.body;
     const commentId = req.body.comment_id;
+    const deleterId = req.body.deleter_id;
     if (pattern === '*') {
-      client.del(`${pageId}_comments`);
+      if (loggedInAdmin) {
+        client.del(`${pageId}_comments`);
+      }
     } else if (pattern !== undefined) {
       client.lrange(`${pageId}_comments`, 0, -1, (err, reply) => {
         for (let i = reply.length - 1; i >= 0; i -= 1) {
           const comment = JSON.parse(reply[i]);
           if (`${comment.commenterName}${comment.comment}`.includes(pattern)) {
-            client.lrem(`${pageId}_comments`, 1, reply[i]);
+            const deleterIsOwner = compare(
+              deleterId,
+              comment.commenterSessionId,
+            );
+            if (loggedInAdmin || deleterIsOwner) {
+              client.lrem(`${pageId}_comments`, 1, reply[i]);
+            }
           }
         }
       });
@@ -254,9 +269,15 @@ router.delete('/api/comments', (req, res) => {
         for (let i = 0; i < reply.length; i += 1) {
           const comment = JSON.parse(reply[i]);
           if (comment.commentId === commentId) {
-            client.lrem(`${pageId}_comments`, 1, reply[i]);
-            res.end();
-            return;
+            const deleterIsOwner = compare(
+              deleterId,
+              comment.commenterSessionId,
+            );
+            if (loggedInAdmin || deleterIsOwner) {
+              client.lrem(`${pageId}_comments`, 1, reply[i]);
+              res.end();
+              return;
+            }
           }
         }
       });
