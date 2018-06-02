@@ -5,8 +5,8 @@ import bibtexParse from 'bibtex-parse-js';
 
 import BlogPreviewSection from './BlogPreviewSection';
 import Section from './Section';
+import SubSection from './SubSection';
 import ScrollIndicator from './ScrollIndicator';
-import PageSwitchScroller from './PageSwitchScroller';
 import Tag from './Tag';
 import ArticleDate from './ArticleDate';
 
@@ -21,6 +21,7 @@ const BlogRenderer = props => {
     centered,
     elementClassName,
     light,
+    showEditLink,
     noAnchor,
     ...rest
   } = props;
@@ -58,6 +59,19 @@ const BlogRenderer = props => {
         light={light}
         noAnchor
       >
+        {showEditLink && (
+          <a
+            className={getClassName('pages__link')}
+            href={`/admin/blog-editor?id=${blog.blogId}`}
+          >
+            <SubSection
+              className={getClassName('blogs__edit-link')}
+              name="Edit this blog"
+              noAnchor
+              link
+            />
+          </a>
+        )}
         <ArticleDate
           className={elementClassNameFinal.join(' ')}
           date={new Date(1000 * blog.publishedTimestamp)}
@@ -90,6 +104,7 @@ const BlogRenderer = props => {
 BlogRenderer.propTypes = {
   centered: PropTypes.bool,
   blog: PropTypes.object.isRequired,
+  showEditLink: PropTypes.boolean,
   elementClassName: PropTypes.string,
   className: PropTypes.string,
   light: PropTypes.bool,
@@ -99,6 +114,7 @@ BlogRenderer.propTypes = {
 BlogRenderer.defaultProps = {
   centered: false,
   elementClassName: null,
+  showEditLink: false,
   className: null,
   light: false,
   noAnchor: false,

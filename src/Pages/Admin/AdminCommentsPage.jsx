@@ -75,13 +75,12 @@ class AdminCommentsPage extends React.Component {
               onClick={() => {
                 for (let i = 0; i < this.state.pageIds.length; i += 1) {
                   DatabaseFunctions.deleteComment(
+                    null,
                     loggedInSession,
                     this.state.pageIds[i],
                     this.state.pattern,
                     null,
-                    result => {
-                      console.log(result);
-                    },
+                    result => null,
                   );
                 }
               }}

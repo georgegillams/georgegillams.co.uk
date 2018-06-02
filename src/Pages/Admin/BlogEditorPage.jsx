@@ -54,7 +54,7 @@ class BlogEditorPage extends React.Component {
           );
         };
 
-        const reloadLoggedInCookie = () => {
+        const reloadCookies = () => {
           this.setState({
             loggedInSession: cookie.load('loggedInSession'),
           });
@@ -62,7 +62,7 @@ class BlogEditorPage extends React.Component {
 
         getBlog();
         setInterval(getBlog, 2000);
-        setInterval(reloadLoggedInCookie, 2000);
+        setInterval(reloadCookies, 2000);
       }
     }
   }

@@ -36,9 +36,7 @@ class AdminBlog extends React.Component {
               DatabaseFunctions.deleteBlog(
                 loggedInSession,
                 blog.blogId,
-                result => {
-                  console.log(result);
-                },
+                result => null,
               );
             }}
           >

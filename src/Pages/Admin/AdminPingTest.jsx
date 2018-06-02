@@ -34,9 +34,7 @@ class AdminPingTest extends React.Component {
   }
 
   deleteAllPings = () => {
-    DatabaseFunctions.deleteAllPings(this.props.loggedInSession, r => {
-      console.log(r);
-    });
+    DatabaseFunctions.deleteAllPings(this.props.loggedInSession, r => null);
   };
 
   render() {
