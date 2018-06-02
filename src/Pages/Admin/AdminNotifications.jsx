@@ -23,7 +23,7 @@ class AdminNotificationsw extends React.Component {
     };
 
     getNotifications();
-    setInterval(getNotifications, 5000);
+    setInterval(getNotifications, 1000);
   }
 
   render() {
@@ -47,9 +47,7 @@ class AdminNotificationsw extends React.Component {
                   DatabaseFunctions.deleteNotification(
                     loggedInSession,
                     n.notificationId,
-                    result => {
-                      console.log(result);
-                    },
+                    result => null,
                   );
                 }}
               >
@@ -88,9 +86,7 @@ class AdminNotificationsw extends React.Component {
                   loggedInSession,
                   this.state.message,
                   this.state.type,
-                  result => {
-                    console.log(result);
-                  },
+                  result => null,
                 );
               }}
             >

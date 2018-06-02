@@ -30,4 +30,4 @@ function fixButtons() {
 }
 
 fixButtons();
-setInterval(fixButtons, 5000);
+setInterval(fixButtons, 1000);
