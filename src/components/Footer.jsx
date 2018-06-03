@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import TechSpecs from './TechSpecs';
 import GetSocial from './GetSocial';
 import Logo from './Logo';
+import TextLink from './TextLink';
 
 import STYLES from './footer.scss';
 
@@ -28,6 +29,9 @@ const Footer = props => {
         className={getClassName('footer__logo')}
         noPadding
       />
+      <TextLink className={getClassName('footer__site-map')} href="/site-map">
+        Sitemap
+      </TextLink>
       <TechSpecs className={getClassName('footer__tech')} light />
     </footer>
   );

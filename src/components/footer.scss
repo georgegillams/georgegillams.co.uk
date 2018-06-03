@@ -8,6 +8,7 @@
     grid-template-areas:
       'social'
       'logo'
+      'siteMap'
       'tech';
     grid-gap: 1rem;
     align-items: center;
@@ -28,6 +29,11 @@
 
   &__tech {
     grid-area: tech;
+    text-align: center;
+  }
+
+  &__site-map {
+    grid-area: siteMap;
     text-align: center;
   }
 
