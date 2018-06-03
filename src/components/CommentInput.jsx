@@ -77,7 +77,7 @@ class CommentInput extends React.Component {
         {this.state.cookiesAccepted ? (
           <div>
             {this.state.result ? (
-              <SubSection name="Thanks for your comment 👍" />
+              <SubSection noAnchor name="Thanks for your comment 👍" />
             ) : (
               <div>
                 <BpkInput
