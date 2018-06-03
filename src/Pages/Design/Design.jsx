@@ -1,11 +1,8 @@
 import React from 'react';
-import BpkInput, { INPUT_TYPES } from 'bpk-component-input';
 import BpkHorizontalNav, {
   BpkHorizontalNavItem,
 } from 'bpk-component-horizontal-nav';
 import Section from '../../components/Section';
-import Loading from '../../components/Loading';
-import Button from '../../components/Button';
 import DesignColours from './DesignColours';
 import DesignComponents from './DesignComponents';
 import DesignTypography from './DesignTypography';

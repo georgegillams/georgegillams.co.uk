@@ -1,5 +1,4 @@
 @import '~bpk-mixins';
-@import '../../bower_components/animatewithsass/animate.scss';
 
 .notification-center {
   &__container {
@@ -7,47 +6,6 @@
   }
 
   &__notification {
-    display: flex;
     margin-bottom: 1.5rem;
-    padding: .8rem;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    background-color: #1e1e1e;
-
-    &--neutral {
-      background-color: #1e1e1e;
-    }
-
-    &--success {
-      background-color: darkgreen;
-    }
-
-    &--warn {
-      background-color: darkorange;
-    }
-
-    &--error {
-      background-color: red;
-    }
-  }
-
-  &__element {
-    &--neutral {
-      color: white;
-    }
-
-    &--success {
-      color: white;
-    }
-
-    &--warn {
-      color: white;
-    }
-
-    &--error {
-      color: white;
-    }
   }
 }

@@ -55,7 +55,10 @@ class NotificationCenter extends Component {
     return (
       <div className={outerClassNameFinal.join(' ')} {...rest}>
         {this.state.notifications.map(n => (
-          <NotificationComp type={n.notificationType}>
+          <NotificationComp
+            className={getClassName('notification-center__notification')}
+            type={n.notificationType}
+          >
             {n.notificationMessage}
           </NotificationComp>
         ))}
