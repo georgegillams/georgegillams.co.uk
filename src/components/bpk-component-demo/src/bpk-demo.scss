@@ -23,11 +23,13 @@
     position: relative;
     display: flex;
     padding: $bpk-spacing-base;
+    flex-wrap: wrap;
     border: solid #44aeff $bpk-border-size-sm;
     border-radius: $bpk-border-radius-sm;
   }
 
   &__inner-container {
+    max-width: 100%;
     flex: 1;
   }
 
@@ -40,11 +42,28 @@
 
   &__components-container-2 {
     display: flex;
+    flex-wrap: wrap;
+
+    &--expanded {
+      @include bpk-breakpoint-tablet {
+        margin-bottom: 3rem;
+      }
+    }
   }
 
   &__props {
-    width: 15rem;
+    min-width: 12rem;
+    max-width: 100%;
     height: 100%;
+    max-height: 25rem;
+    margin-right: $bpk-spacing-base;
+    overflow: scroll;
+
+    @include bpk-breakpoint-tablet {
+      width: 100%;
+      margin-right: 0;
+      margin-bottom: $bpk-spacing-lg;
+    }
   }
 
   &__prop-control {
@@ -62,5 +81,6 @@
 
   &__code {
     max-width: 100%;
+    margin-top: $bpk-spacing-lg;
   }
 }
