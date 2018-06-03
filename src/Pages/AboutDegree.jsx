@@ -5,10 +5,12 @@ import SubSection from '../components/SubSection';
 import DegreeModule from '../components/DegreeModule';
 import withLazyLoading from '../components/withLazyLoading';
 import TextLink from '../components/TextLink';
+import Comments from '../components/Comments';
 
 import STYLES from './pages.scss';
 
 const getClassName = className => STYLES[className] || 'UNKNOWN';
+const PAGE_ID = 633786;
 const documentIfExists = typeof window !== 'undefined' ? document : null;
 const FadingLazyLoadedImage = withLoadingBehavior(
   withLazyLoading(BpkImage, documentIfExists),
@@ -288,6 +290,7 @@ class Degree extends React.Component {
             />
           </SubSection>
         </Section>
+        <Comments pageId={PAGE_ID} />
       </Section>
     );
   }
