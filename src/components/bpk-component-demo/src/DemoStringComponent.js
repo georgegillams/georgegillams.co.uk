@@ -47,6 +47,7 @@ const DemoStringComponent = (props: Props) => {
       <BpkLabel htmlFor="input">{`${propName} (string)`}</BpkLabel>
       <BpkInput
         className={className}
+        style={{ boxSizing: 'border-box' }}
         value={value}
         onChange={event => onChange(event.target.value)}
         label={propName}

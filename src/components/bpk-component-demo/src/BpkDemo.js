@@ -34,6 +34,7 @@ import CloseIconSm from 'bpk-component-icon/sm/close';
 import requiredDefaultProps from './requiredDefaultProps.json';
 import DemoControl from './DemoControl';
 import { cssModules } from 'bpk-react-utils';
+import HelperFunctions from '../../../HelperFunctions';
 
 import STYLES from './bpk-demo.scss';
 
@@ -73,7 +74,7 @@ export default function bpkDemo(
     componentWillMount = () => {
       // TODO THIS ROUTE-CHANGE LISTENER DOESN'T WORK!
       // browserHistory.listen(location => {
-      //   if (`${location}`.includes('?')) {
+      //   if (HelperFunctions.includes(`${location}`,'?')) {
       //     this.setState({
       //       props: this.getUrlProps(),
       //     });
@@ -91,18 +92,23 @@ export default function bpkDemo(
       for (let i = 0; i < Object.keys(propTypes).length; i += 1) {
         const propName = Object.keys(propTypes)[i];
         let propValue = null;
-        if (Object.keys(defaultProps).includes(propName)) {
+        if (HelperFunctions.includes(Object.keys(defaultProps), propName)) {
           propValue = defaultProps[propName];
         }
-        if (Object.keys(defaultPropValues).includes(propName)) {
+        if (
+          HelperFunctions.includes(Object.keys(defaultPropValues), propName)
+        ) {
           propValue = defaultPropValues[propName];
         }
-        if (Object.keys(customPropValues).includes(propName)) {
+        if (HelperFunctions.includes(Object.keys(customPropValues), propName)) {
           propValue = customPropValues[propName];
         }
         if (
           !this.state.compact &&
-          Object.keys(urlParameterPropValues).includes(propName)
+          HelperFunctions.includes(
+            Object.keys(urlParameterPropValues),
+            propName,
+          )
         ) {
           propValue = urlParameterPropValues[propName];
         }
