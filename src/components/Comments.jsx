@@ -7,6 +7,7 @@ import SubSection from './SubSection';
 import CommentInput from './CommentInput';
 import Button from './Button';
 import DatabaseFunctions from '../DatabaseFunctions';
+import HelperFunctions from '../HelperFunctions';
 
 import STYLES from './comments.scss';
 import BLOG_STYLES from './blogs.scss';
@@ -69,7 +70,10 @@ class Comments extends React.Component {
             >
               {c.comment}
               <br />
-              {this.state.userComments.includes(c.commentId) && (
+              {HelperFunctions.includes(
+                this.state.userComments,
+                c.commentId,
+              ) && (
                 <Button
                   className={getClassName('comments__component__button')}
                   destructive
