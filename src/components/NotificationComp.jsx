@@ -77,10 +77,14 @@ class NotificationComp extends Component {
 
 NotificationComp.propTypes = {
   className: PropTypes.string,
+  type: PropTypes.string,
+  children: PropTypes.node,
 };
 
 NotificationComp.defaultProps = {
   className: null,
+  type: 'neutral',
+  children: null,
 };
 
 export default NotificationComp;
