@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import BpkImage, { withLoadingBehavior } from 'bpk-component-image';
 import GitHubForkRibbon from 'react-github-fork-ribbon';
 import withLazyLoading from '../../components/withLazyLoading';
+import Comments from '../../components/Comments';
 import Section from '../../components/Section';
 import Button from '../../components/Button';
 import SubSection from '../../components/SubSection';
@@ -11,6 +12,7 @@ import PageSwitchScroller from '../../components/PageSwitchScroller';
 import STYLES from './apps.scss';
 
 const getClassName = className => STYLES[className] || 'UNKNOWN';
+const PAGE_ID = 998572;
 const documentIfExists = typeof window !== 'undefined' ? document : null;
 const FadingLazyLoadedImage = withLoadingBehavior(
   withLazyLoading(BpkImage, documentIfExists),
@@ -126,6 +128,7 @@ const passwordCharacterExtractor = props => {
           More information on UK bank security →
         </Button>
       </Section>
+      <Comments pageId={PAGE_ID} />
     </main>
   );
 };
