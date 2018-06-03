@@ -8,7 +8,7 @@ import SubSection from './SubSection';
 import BlogPreviewContent from './BlogPreviewContent';
 import DatabaseFunctions from '../DatabaseFunctions';
 
-import STYLES from './notification-center.scss';
+import STYLES from './notification-comp.scss';
 import TYPO_STYLES from './typography.scss';
 
 const getClassName = className =>
@@ -25,43 +25,41 @@ class NotificationComp extends Component {
   render() {
     const { type, children, className, ...rest } = this.props;
     const notificationClassName = [
-      getClassName('notification-center__notification'),
+      getClassName('notification-comp__notification'),
     ];
-    const elementClassName = [getClassName('notification-center__element')];
+    const elementClassName = [getClassName('notification-comp__element')];
 
     if (type === 'neutral') {
       notificationClassName.push(
-        getClassName('notification-center__notification--neutral'),
+        getClassName('notification-comp__notification--neutral'),
       );
       elementClassName.push(
-        getClassName('notification-center__element--neutral'),
+        getClassName('notification-comp__element--neutral'),
       );
     }
     if (type === 'success') {
       notificationClassName.push(
-        getClassName('notification-center__notification--success'),
+        getClassName('notification-comp__notification--success'),
       );
       elementClassName.push(
-        getClassName('notification-center__element--success'),
+        getClassName('notification-comp__element--success'),
       );
     }
     if (type === 'warn') {
       notificationClassName.push(
-        getClassName('notification-center__notification--warn'),
+        getClassName('notification-comp__notification--warn'),
       );
-      elementClassName.push(getClassName('notification-center__element--warn'));
+      elementClassName.push(getClassName('notification-comp__element--warn'));
     }
     if (type === 'error') {
       notificationClassName.push(
-        getClassName('notification-center__notification--error'),
+        getClassName('notification-comp__notification--error'),
       );
-      elementClassName.push(
-        getClassName('notification-center__element--error'),
-      );
+      elementClassName.push(getClassName('notification-comp__element--error'));
     }
 
     if (className) {
-      className.push(className);
+      notificationClassName.push(className);
     }
 
     return (
@@ -77,10 +75,14 @@ class NotificationComp extends Component {
 
 NotificationComp.propTypes = {
   className: PropTypes.string,
+  type: PropTypes.string,
+  children: PropTypes.node,
 };
 
 NotificationComp.defaultProps = {
   className: null,
+  type: 'neutral',
+  children: null,
 };
 
 export default NotificationComp;
