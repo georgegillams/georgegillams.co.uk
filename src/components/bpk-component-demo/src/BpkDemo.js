@@ -28,7 +28,8 @@ import querystring from 'querystring';
 import { wrapDisplayName } from 'bpk-react-utils';
 import { BpkCodeBlock } from 'bpk-component-code';
 import EditIconSm from 'bpk-component-icon/sm/edit';
-import reactDocs from 'react-docgen';
+import CloseIconSm from 'bpk-component-icon/sm/close';
+// import reactDocs from 'react-docgen';
 // import { browserHistory, PropTypes as RouterPropTypes } from 'react-router';
 import requiredDefaultProps from './requiredDefaultProps.json';
 import DemoControl from './DemoControl';
@@ -38,7 +39,7 @@ import STYLES from './bpk-demo.scss';
 
 const getClassName = cssModules(STYLES);
 
-type BpkDemo = {
+type BpkDemoConst = {
   className: ?string,
   style: ?{},
 };
@@ -53,18 +54,19 @@ export default function bpkDemo(
   packageName: String,
   defaultPropValues: ObjectType,
 ): ComponentType<any> {
-  class BpkDemo extends React.Component<BpkDemo, BpkDemoState> {
+  class BpkDemo extends React.Component<BpkDemoConst, BpkDemoState> {
     element: ?HTMLElement;
     state: BpkDemoState;
 
     static defaultProps: {};
 
-    constructor(): void {
-      super();
+    constructor(props): void {
+      super(props);
 
       this.state = {
         props: {},
         code: 'hello!',
+        compact: this.props.compact,
       };
     }
 
@@ -99,7 +101,7 @@ export default function bpkDemo(
           propValue = customPropValues[propName];
         }
         if (
-          !this.props.compact &&
+          !this.state.compact &&
           Object.keys(urlParameterPropValues).includes(propName)
         ) {
           propValue = urlParameterPropValues[propName];
@@ -174,12 +176,10 @@ export default function bpkDemo(
     render(): Node {
       const { compact, style, className, ...rest } = this.props;
 
-      const classNameFinal = [getClassName('bpk-demo__container')];
-      if (compact)
-        classNameFinal.push(getClassName('bpk-demo__container--compact'));
+      const classNameFinal = [getClassName('bpk-demo__outer-container')];
       if (className) classNameFinal.push(className);
 
-      const showPlayground = !compact;
+      const showPlayground = !this.state.compact;
 
       return (
         <div style={style} className={classNameFinal.join(' ')}>
@@ -195,22 +195,28 @@ export default function bpkDemo(
               ))}
             </div>
           )}
-          <div className={getClassName('bpk-demo__component')}>
-            <Component {...this.state.props} {...rest} />
-          </div>
-          {compact && (
-            <a
-              href={`?${querystring.stringify(this.state.props)}#playground`}
-              className={getClassName('bpk-demo__controls')}
-            >
-              <EditIconSm />
-            </a>
-          )}
-          {showPlayground && (
-            <div className={getClassName('bpk-demo__code')}>
-              <BpkCodeBlock>{this.state.code}</BpkCodeBlock>
+          <div className={getClassName('bpk-demo__inner-container')}>
+            <div className={getClassName('bpk-demo__components-container-1')}>
+              <div className={getClassName('bpk-demo__components-container-2')}>
+                <div className={getClassName('bpk-demo__component')}>
+                  <Component {...this.state.props} {...rest} />
+                </div>
+                <button
+                  onClick={() => {
+                    this.setState({ compact: !this.state.compact });
+                  }}
+                  className={getClassName('bpk-demo__controls')}
+                >
+                  {this.state.compact ? <EditIconSm /> : <CloseIconSm />}
+                </button>
+              </div>
+              {showPlayground && (
+                <div className={getClassName('bpk-demo__code')}>
+                  <BpkCodeBlock>{this.state.code}</BpkCodeBlock>
+                </div>
+              )}
             </div>
-          )}
+          </div>
         </div>
       );
     }
