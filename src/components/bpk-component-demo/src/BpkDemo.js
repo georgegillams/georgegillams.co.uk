@@ -89,10 +89,12 @@ export default function bpkDemo(
       // For each prop, if a customPropValue is provided, that will be used.
       // Otherwise, if a defaultPropValue is provided, that will be used instead.
       // As a last resort, the defaultProp value from the component itself will be used.
-      for (let i = 0; i < Object.keys(propTypes).length; i += 1) {
-        const propName = Object.keys(propTypes)[i];
+      for (let i = 0; i < Object.keys(propTypes || {}).length; i += 1) {
+        const propName = Object.keys(propTypes || {})[i];
         let propValue = null;
-        if (HelperFunctions.includes(Object.keys(defaultProps), propName)) {
+        if (
+          HelperFunctions.includes(Object.keys(defaultProps || {}), propName)
+        ) {
           propValue = defaultProps[propName];
         }
         if (
@@ -165,7 +167,10 @@ export default function bpkDemo(
       for (let p = 0; p < Object.keys(props).length; p += 1) {
         const propName = Object.keys(props)[p];
         const propValue = props[propName];
-        if (propValue !== Component.defaultProps[propName]) {
+        if (
+          Component.defaultProps &&
+          propValue !== Component.defaultProps[propName]
+        ) {
           if (typeof propValue === 'string') {
             finalString += `      ${propName}="${propValue}"\n`;
           } else if (typeof propValue === 'boolean' && propValue === true) {

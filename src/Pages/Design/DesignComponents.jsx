@@ -15,6 +15,9 @@ import RedirectNotice from '../../components/RedirectNotice';
 import Tag from '../../components/Tag';
 import NotificationComp from '../../components/NotificationComp';
 import AnimatedContent from '../../components/AnimatedContent';
+import LicenseInfo from '../../components/LicenseInfo';
+import ColourPalleteItem from '../../components/ColourPalleteItem';
+import ArticleCard from '../../components/ArticleCard';
 import bpkDemo from '../../components/bpk-component-demo/src/BpkDemo';
 
 import STYLES from '../pages.scss';
@@ -35,6 +38,7 @@ const TextLinkDemo = bpkDemo(TextLink, 'TextLink', 'na', {
 });
 const ArticleDateDemo = bpkDemo(ArticleDate, 'ArticleDate', 'na', {
   date: new Date(Date.now()),
+  noPadding: true,
 });
 const CodeInlineDemo = bpkDemo(CodeInline, 'CodeInline', 'na', {
   children: 'inline code',
@@ -55,6 +59,19 @@ const TagDemo = bpkDemo(Tag, 'Tag', 'na', {
 const NotificationDemo = bpkDemo(NotificationComp, 'NotificationComp', 'na', {
   type: 'warn',
   children: 'This is a `warn` notification that supports **markdown**',
+});
+const LicenseInfoDemo = bpkDemo(LicenseInfo, 'LicenseInfo', 'na', {});
+const ColourPalleteItemDemo = bpkDemo(
+  ColourPalleteItem,
+  'ColourPalleteItem',
+  'na',
+  { colour: '#44aeff', colourName: 'Blue' },
+);
+const ArticleCardDemo = bpkDemo(ArticleCard, 'ArticleCard', 'na', {
+  fillImageSrc: 'http://placehold.it/1200x120/FF3F41/&text=image1',
+  imageSrc: 'http://placehold.it/200x120/ffff&text=image2',
+  title: 'Card example',
+  light: true,
 });
 
 class DesignComponents extends React.Component {
@@ -98,6 +115,15 @@ class DesignComponents extends React.Component {
         </SubSection>
         <SubSection noAnchor name="Notification">
           <NotificationDemo />
+        </SubSection>
+        <SubSection noAnchor name="License info">
+          <LicenseInfoDemo />
+        </SubSection>
+        <SubSection noAnchor name="Card">
+          <ArticleCardDemo />
+        </SubSection>
+        <SubSection noAnchor name="Colour pallete item">
+          <ColourPalleteItemDemo />
         </SubSection>
         <SubSection noAnchor name="Loading spinner">
           <Loading />
