@@ -24,6 +24,8 @@ import STYLES from '../pages.scss';
 
 const getClassName = className => STYLES[className] || 'UNKNOWN';
 
+const demoClassName = getClassName('pages__bpk-demo');
+
 const documentIfExists = typeof window !== 'undefined' ? document : null;
 const LlAnimatedContent = withLazyLoading(AnimatedContent, documentIfExists);
 
@@ -90,40 +92,40 @@ class DesignComponents extends React.Component {
     return (
       <Section name="Components">
         <SubSection noAnchor name="Logo">
-          <LogoDemo />
+          <LogoDemo className={demoClassName} />
         </SubSection>
         <SubSection noAnchor name="Button">
-          <ButtonDemo />
+          <ButtonDemo className={demoClassName} />
         </SubSection>
         <SubSection noAnchor name="Text link">
-          <TextLinkDemo />
+          <TextLinkDemo className={demoClassName} />
         </SubSection>
         <SubSection noAnchor name="Date">
-          <ArticleDateDemo />
+          <ArticleDateDemo className={demoClassName} />
         </SubSection>
         <SubSection noAnchor name="Code">
-          <CodeInlineDemo />
+          <CodeInlineDemo className={demoClassName} />
           <br />
           <br />
-          <CodeDemo />
+          <CodeDemo className={demoClassName} />
         </SubSection>
         <SubSection noAnchor name="Quote">
-          <QuoteDemo />
+          <QuoteDemo className={demoClassName} />
         </SubSection>
         <SubSection noAnchor name="Tag">
-          <TagDemo />
+          <TagDemo className={demoClassName} />
         </SubSection>
         <SubSection noAnchor name="Notification">
-          <NotificationDemo />
+          <NotificationDemo className={demoClassName} />
         </SubSection>
         <SubSection noAnchor name="License info">
-          <LicenseInfoDemo />
+          <LicenseInfoDemo className={demoClassName} />
         </SubSection>
         <SubSection noAnchor name="Card">
-          <ArticleCardDemo />
+          <ArticleCardDemo className={demoClassName} />
         </SubSection>
         <SubSection noAnchor name="Colour pallete item">
-          <ColourPalleteItemDemo />
+          <ColourPalleteItemDemo className={demoClassName} />
         </SubSection>
         <SubSection noAnchor name="Loading spinner">
           <Loading />
@@ -136,6 +138,7 @@ class DesignComponents extends React.Component {
             <div
               style={{
                 width: '25rem',
+                maxWidth: '100%',
                 height: '5rem',
                 backgroundColor: '#e02626',
               }}

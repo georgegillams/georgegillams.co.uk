@@ -21,6 +21,8 @@ import STYLES from '../pages.scss';
 
 const getClassName = className => STYLES[className] || 'UNKNOWN';
 
+const demoClassName = getClassName('pages__bpk-demo');
+
 const documentIfExists = typeof window !== 'undefined' ? document : null;
 const LlAnimatedContent = withLazyLoading(AnimatedContent, documentIfExists);
 
@@ -49,10 +51,10 @@ class DesignTypography extends React.Component {
     return (
       <Section name="Typography">
         <SubSection noAnchor name="Section">
-          <SectionDemo />
+          <SectionDemo className={demoClassName} />
         </SubSection>
         <SubSection noAnchor name="Subsection">
-          <SubSectionDemo />
+          <SubSectionDemo className={demoClassName} />
         </SubSection>
       </Section>
     );
