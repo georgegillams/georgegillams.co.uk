@@ -1,6 +1,12 @@
 @import '~bpk-mixins';
 
 .pages {
+  &__bpk-demo {
+    padding: $bpk-spacing-base;
+    border: solid #44aeff $bpk-border-size-sm;
+    border-radius: $bpk-border-radius-sm;
+  }
+
   &__site-map-item {
     width: auto;
   }
@@ -122,6 +128,6 @@
   }
 
   &__degree-module {
-    margin-bottom: 0.5rem;
+    margin-bottom: .5rem;
   }
 }

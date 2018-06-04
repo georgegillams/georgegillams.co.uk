@@ -16,7 +16,7 @@ class Design extends React.Component {
     super(props);
 
     this.state = {
-      selected: 'colours',
+      selected: `${window.location}`.split('design/')[1],
     };
   }
 
@@ -24,6 +24,7 @@ class Design extends React.Component {
     this.setState({
       selected: e.target.name,
     });
+    this.props.history.push(`/design/${e.target.name}`);
   };
 
   render() {

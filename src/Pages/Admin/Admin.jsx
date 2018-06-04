@@ -22,8 +22,7 @@ class Admin extends React.Component {
     super(props);
 
     this.state = {
-      apiKey: '',
-      selected: 'login',
+      selected: `${window.location}`.split('admin/')[1],
       loggedInSession: cookie.load('loggedInSession'),
       cookiesAccepted: cookie.load('cookiesAccepted'),
     };
@@ -44,6 +43,7 @@ class Admin extends React.Component {
     this.setState({
       selected: e.target.name,
     });
+    this.props.history.push(`/admin/${e.target.name}`);
   };
 
   render() {
@@ -78,8 +78,8 @@ class Admin extends React.Component {
             Blogs
           </BpkHorizontalNavItem>
           <BpkHorizontalNavItem
-            name="comments"
-            selected={this.state.selected === 'comments'}
+            name="blog-comments"
+            selected={this.state.selected === 'blog-comments'}
             onClick={this.onClick}
           >
             Blog comments
@@ -108,8 +108,8 @@ class Admin extends React.Component {
             </BpkHorizontalNavItem>
           </NavLink>
           <BpkHorizontalNavItem
-            name="ping_pen_testing"
-            selected={this.state.selected === 'ping_pen_testing'}
+            name="ping-pen-testing"
+            selected={this.state.selected === 'ping-pen-testing'}
             onClick={this.onClick}
           >
             Ping pen-testing
@@ -124,7 +124,7 @@ class Admin extends React.Component {
         {this.state.selected === 'blogs' && (
           <AdminBlogsPage loggedInSession={this.state.loggedInSession} />
         )}
-        {this.state.selected === 'comments' && (
+        {this.state.selected === 'blog-comments' && (
           <AdminCommentsPage loggedInSession={this.state.loggedInSession} />
         )}
         {this.state.selected === 'notifications' && (
@@ -135,7 +135,7 @@ class Admin extends React.Component {
         {this.state.selected === 'payments' && (
           <AdminPaymentsPage loggedInSession={this.state.loggedInSession} />
         )}
-        {this.state.selected === 'ping_pen_testing' && (
+        {this.state.selected === 'ping-pen-testing' && (
           <AdminPingTest loggedInSession={this.state.loggedInSession} />
         )}
       </Section>

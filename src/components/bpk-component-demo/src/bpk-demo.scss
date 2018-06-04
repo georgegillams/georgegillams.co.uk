@@ -22,10 +22,7 @@
   &__outer-container {
     position: relative;
     display: flex;
-    padding: $bpk-spacing-base;
     flex-wrap: wrap;
-    border: solid #44aeff $bpk-border-size-sm;
-    border-radius: $bpk-border-radius-sm;
   }
 
   &__inner-container {
