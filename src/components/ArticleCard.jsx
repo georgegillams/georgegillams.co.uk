@@ -246,6 +246,12 @@ ArticleCard.propTypes = {
   className: PropTypes.string,
   layout: PropTypes.oneOf(Object.keys(CARD_LAYOUTS)),
   ariaLabel: PropTypes.string,
+  day: PropTypes.number,
+  month: PropTypes.string,
+  href: PropTypes.string,
+  backgroundImageClassName: PropTypes.string,
+  imageClassName: PropTypes.string,
+  children: PropTypes.node,
 };
 
 ArticleCard.defaultProps = {
@@ -259,6 +265,12 @@ ArticleCard.defaultProps = {
   title: null,
   className: null,
   layout: CARD_LAYOUTS.auto,
+  day: null,
+  month: null,
+  href: null,
+  backgroundImageClassName: null,
+  imageClassName: null,
+  children: null,
 };
 
 export default ArticleCard;

@@ -14,7 +14,6 @@ class SiteMap extends Component {
 
     this.state = {
       blogs: null,
-      travelBlogs: null,
       refreshContinuously: true,
     };
   }
@@ -22,14 +21,9 @@ class SiteMap extends Component {
   componentDidMount() {
     const getBlogs = () => {
       if (this.state.refreshContinuously) {
-        DatabaseFunctions.getBlogs('blog', '', [], results => {
+        DatabaseFunctions.getBlogs('all', '', [], results => {
           this.setState({
             blogs: results,
-          });
-        });
-        DatabaseFunctions.getBlogs('travel', '', [], results => {
-          this.setState({
-            travelBlogs: results,
           });
         });
       }
@@ -73,14 +67,14 @@ class SiteMap extends Component {
           className={getClassName('pages__site-map-item')}
           name="Travel ✈️"
         >
-          {this.state.travelBlogs &&
-            this.state.travelBlogs.map(b => {
-              if (!b.blogShowInBlogsList) {
+          {this.state.blogs &&
+            this.state.blogs.map(b => {
+              if (!b.blogShowInTravelBlogsList) {
                 return null;
               }
               return (
                 <div>
-                  <TextLink href={`/blog/view?id=${b.blogId}`}>
+                  <TextLink href={`/travel/view?id=${b.blogId}`}>
                     {b.blogName.match(NON_EMOJI_REGEX).join('')}
                   </TextLink>
                   <br />
