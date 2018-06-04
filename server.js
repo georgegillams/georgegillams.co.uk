@@ -174,6 +174,30 @@ router.get('/api/comments', (req, res) => {
   });
 });
 
+router.get('/api/session-ids', (req, res) => {
+  checkIsLoggedInAdmin(req.headers['logged-in-session-id'], loggedInAdmin => {
+    if (!loggedInAdmin) {
+      res.end();
+      return;
+    }
+    client.lrange('active_sessions', 0, -1, (err, reply) => {
+      res.send(reply);
+    });
+  });
+});
+
+router.get('/api/logged-in-session-ids', (req, res) => {
+  checkIsLoggedInAdmin(req.headers['logged-in-session-id'], loggedInAdmin => {
+    if (!loggedInAdmin) {
+      res.end();
+      return;
+    }
+    client.lrange('loggedInSessionIds', 0, -1, (err, reply) => {
+      res.send(reply);
+    });
+  });
+});
+
 router.get('/api/comments/page_ids', (req, res) => {
   client.lrange('pageIds', 0, -1, (err, reply) => {
     res.send(reply);
@@ -188,10 +212,12 @@ router.get('/api/ping-tests', (req, res) => {
 
 router.get('/api/session-id', (req, res) => {
   const sessionId = crypto.randomBytes(20).toString('hex');
+  const ipAddress = req.connection.remoteAddress;
   client.rpush([
     `active_sessions`,
     JSON.stringify({
       sessionId,
+      ipAddress,
     }),
   ]);
   res.send({ sessionId });

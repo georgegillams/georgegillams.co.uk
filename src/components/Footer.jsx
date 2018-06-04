@@ -29,7 +29,11 @@ const Footer = props => {
         className={getClassName('footer__logo')}
         noPadding
       />
-      <TextLink className={getClassName('footer__site-map')} href="/site-map">
+      <TextLink
+        light
+        className={getClassName('footer__site-map')}
+        href="/site-map"
+      >
         Sitemap
       </TextLink>
       <TechSpecs className={getClassName('footer__tech')} light />
