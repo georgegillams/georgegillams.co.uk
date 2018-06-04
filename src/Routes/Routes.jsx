@@ -1,5 +1,11 @@
 import React from 'react';
-import { Route, BrowserRouter, Switch, Redirect } from 'react-router-dom';
+import {
+  Route,
+  BrowserRouter,
+  Switch,
+  Redirect,
+  withRouter,
+} from 'react-router-dom';
 import DefaultLayout from '../components/DefaultLayout';
 
 import HomePage from '../Pages/HomePageV2';
@@ -23,6 +29,8 @@ import Design from '../Pages/Design/Design';
 import AdminPingTest from '../Pages/Admin/AdminPingTest';
 
 const redirects = [
+  { from: '/design', to: '/design/colours' },
+  { from: '/admin', to: '/admin/login' },
   { from: '/about/degree', to: '/work/degree' },
   { from: '/articles/tough-mudder', to: '/blog/tough-mudder' },
   { from: '/articles/net-neutrality', to: '/blog/net-neutrality' },
@@ -54,6 +62,9 @@ const redirects = [
   { from: '/payment', to: '/payments' },
 ];
 
+const RoutedDesignPage = withRouter(Design);
+const RoutedAdminPage = withRouter(Admin);
+
 // eslint-disable-next-line import/no-webpack-loader-syntax
 const Routes = (
   <BrowserRouter>
@@ -67,7 +78,16 @@ const Routes = (
         <Route path="/photography" component={Art} />
         <Route path="/work/degree" component={AboutDegree} />
         <Route exact path="/work" component={Work} />
-        <Route exact path="/design" component={Design} />
+        <Route path="/design/colours" component={RoutedDesignPage} />
+        <Route path="/design/components" component={RoutedDesignPage} />
+        <Route path="/design/typography" component={RoutedDesignPage} />
+        <Route path="/admin/login" component={Admin} />
+        <Route path="/admin/blogs" component={Admin} />
+        <Route path="/admin/blog-comments" component={Admin} />
+        <Route path="/admin/notifications" component={Admin} />
+        <Route path="/admin/payments" component={Admin} />
+        <Route path="/admin/ping-pen-testing" component={Admin} />
+        <Route path="/admin/blog-editor" component={BlogEditorPage} />
         <Route
           path="/apps/password-character-extractor"
           component={PasswordCharacterExtractor}
@@ -91,8 +111,6 @@ const Routes = (
         <Route path="/example-418" component={TeaPot} />
         <Route path="/example-teapot" component={TeaPot} />
         <Route path="/example-404" component={ForOhFour} />
-        <Route exact path="/admin" component={Admin} />
-        <Route exact path="/admin/blog-editor" component={BlogEditorPage} />
         <Route component={ForOhFour} />
       </Switch>
     </DefaultLayout>
