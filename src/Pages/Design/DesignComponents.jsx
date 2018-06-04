@@ -24,7 +24,7 @@ const getClassName = className => STYLES[className] || 'UNKNOWN';
 const documentIfExists = typeof window !== 'undefined' ? document : null;
 const LlAnimatedContent = withLazyLoading(AnimatedContent, documentIfExists);
 
-const LogoDemo = bpkDemo(Logo, 'Logo', 'na', { small: true });
+const LogoDemo = bpkDemo(Logo, 'Logo', 'na', { small: true, noPadding: true });
 const ButtonDemo = bpkDemo(Button, 'Button', 'na', {
   children: 'This is a button',
 });

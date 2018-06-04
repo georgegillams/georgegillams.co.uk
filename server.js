@@ -11,11 +11,12 @@ const {
 const wget = require('wget-improved');
 const crypto = require('crypto');
 const compare = require('secure-compare');
+const bcrypt = require('bcrypt');
 
 const app = express();
 
 const adminUserName = process.env.ADMIN_USERNAME;
-const adminPassword = process.env.ADMIN_PASSWORD;
+const adminPasswordHash = process.env.ADMIN_PASSWORD_HASH;
 
 let client = null;
 if (process.env.REDIS_URL) {
@@ -198,7 +199,10 @@ router.get('/api/session-id', (req, res) => {
 
 router.post('/api/login', (req, res) => {
   const { username, password } = req.body;
-  if (!compare(username, adminUserName) || !compare(password, adminPassword)) {
+  if (
+    !compare(username, adminUserName) ||
+    !bcrypt.compareSync(password, adminPasswordHash)
+  ) {
     res.send({ loggedInSessionId: null });
     res.end();
     return;
