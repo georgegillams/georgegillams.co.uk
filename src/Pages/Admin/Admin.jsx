@@ -8,6 +8,7 @@ import BpkHorizontalNav, {
 import Section from '../../components/Section';
 import AdminLogin from './AdminLogin';
 import AdminBlogsPage from './AdminBlogsPage';
+import AdminSessionsPage from './AdminSessionsPage';
 import AdminCommentsPage from './AdminCommentsPage';
 import AdminNotificationsPage from './AdminNotificationsPage';
 import AdminPaymentsPage from './AdminPaymentsPage';
@@ -71,6 +72,13 @@ class Admin extends React.Component {
             Login
           </BpkHorizontalNavItem>
           <BpkHorizontalNavItem
+            name="sessions"
+            selected={this.state.selected === 'sessions'}
+            onClick={this.onClick}
+          >
+            Sessions
+          </BpkHorizontalNavItem>
+          <BpkHorizontalNavItem
             name="blogs"
             selected={this.state.selected === 'blogs'}
             onClick={this.onClick}
@@ -120,6 +128,9 @@ class Admin extends React.Component {
             loggedInSession={this.state.loggedInSession}
             cookiesAccepted={this.state.cookiesAccepted}
           />
+        )}
+        {this.state.selected === 'sessions' && (
+          <AdminSessionsPage loggedInSession={this.state.loggedInSession} />
         )}
         {this.state.selected === 'blogs' && (
           <AdminBlogsPage loggedInSession={this.state.loggedInSession} />

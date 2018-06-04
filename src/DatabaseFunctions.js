@@ -35,6 +35,45 @@ class DatabaseFunctions {
       try {
         cb(JSON.parse(body));
       } catch (e) {
+        cb([]);
+      }
+    });
+  }
+
+  static getSessionIds(loggedInSessionId, cb) {
+    const options = {
+      method: 'GET',
+      url: `${url}/api/session-ids`,
+      headers: {
+        'Logged-In-Session-Id':
+          loggedInSessionId === '' ? null : loggedInSessionId,
+      },
+    };
+
+    request(options, (error, response, body) => {
+      if (error) throw new Error(error);
+      try {
+        cb(JSON.parse(body));
+      } catch (e) {
+        cb(null);
+      }
+    });
+  }
+  static getLoggedInSessionIds(loggedInSessionId, cb) {
+    const options = {
+      method: 'GET',
+      url: `${url}/api/logged-in-session-ids`,
+      headers: {
+        'Logged-In-Session-Id':
+          loggedInSessionId === '' ? null : loggedInSessionId,
+      },
+    };
+
+    request(options, (error, response, body) => {
+      if (error) throw new Error(error);
+      try {
+        cb(JSON.parse(body));
+      } catch (e) {
         cb(null);
       }
     });

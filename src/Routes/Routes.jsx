@@ -29,7 +29,7 @@ import Design from '../Pages/Design/Design';
 import AdminPingTest from '../Pages/Admin/AdminPingTest';
 
 const redirects = [
-  { from: '/design', to: '/design/colours' },
+  { from: '/design', to: '/design/privacy-policy' },
   { from: '/admin', to: '/admin/login' },
   { from: '/about/degree', to: '/work/degree' },
   { from: '/articles/tough-mudder', to: '/blog/tough-mudder' },
@@ -78,11 +78,17 @@ const Routes = (
         <Route path="/photography" component={Art} />
         <Route path="/work/degree" component={AboutDegree} />
         <Route exact path="/work" component={Work} />
+        <Route
+          exact
+          path="/design/privacy-policy"
+          component={RoutedDesignPage}
+        />
         <Route path="/design/colours" component={RoutedDesignPage} />
         <Route path="/design/components" component={RoutedDesignPage} />
         <Route path="/design/typography" component={RoutedDesignPage} />
         <Route path="/admin/login" component={Admin} />
         <Route path="/admin/blogs" component={Admin} />
+        <Route path="/admin/sessions" component={Admin} />
         <Route path="/admin/blog-comments" component={Admin} />
         <Route path="/admin/notifications" component={Admin} />
         <Route path="/admin/payments" component={Admin} />

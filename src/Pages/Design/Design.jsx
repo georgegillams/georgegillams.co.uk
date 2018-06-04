@@ -6,6 +6,7 @@ import Section from '../../components/Section';
 import DesignColours from './DesignColours';
 import DesignComponents from './DesignComponents';
 import DesignTypography from './DesignTypography';
+import DesignPrivacyPolicy from './DesignPrivacyPolicy';
 
 import STYLES from '../pages.scss';
 
@@ -41,6 +42,13 @@ class Design extends React.Component {
         <br />
         <BpkHorizontalNav style={{ margin: '1.2rem 0' }}>
           <BpkHorizontalNavItem
+            name="privacy-policy"
+            selected={this.state.selected === 'privacy-policy'}
+            onClick={this.onClick}
+          >
+            Privacy policy
+          </BpkHorizontalNavItem>
+          <BpkHorizontalNavItem
             name="colours"
             selected={this.state.selected === 'colours'}
             onClick={this.onClick}
@@ -62,6 +70,7 @@ class Design extends React.Component {
             Typography
           </BpkHorizontalNavItem>
         </BpkHorizontalNav>
+        {this.state.selected === 'privacy-policy' && <DesignPrivacyPolicy />}
         {this.state.selected === 'colours' && <DesignColours />}
         {this.state.selected === 'components' && <DesignComponents />}
         {this.state.selected === 'typography' && <DesignTypography />}
