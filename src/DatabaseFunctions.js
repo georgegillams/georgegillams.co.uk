@@ -35,6 +35,45 @@ class DatabaseFunctions {
       try {
         cb(JSON.parse(body));
       } catch (e) {
+        cb([]);
+      }
+    });
+  }
+
+  static getSessionIds(loggedInSessionId, cb) {
+    const options = {
+      method: 'GET',
+      url: `${url}/api/session-ids`,
+      headers: {
+        'Logged-In-Session-Id':
+          loggedInSessionId === '' ? null : loggedInSessionId,
+      },
+    };
+
+    request(options, (error, response, body) => {
+      if (error) throw new Error(error);
+      try {
+        cb(JSON.parse(body));
+      } catch (e) {
+        cb(null);
+      }
+    });
+  }
+  static getLoggedInSessionIds(loggedInSessionId, cb) {
+    const options = {
+      method: 'GET',
+      url: `${url}/api/logged-in-session-ids`,
+      headers: {
+        'Logged-In-Session-Id':
+          loggedInSessionId === '' ? null : loggedInSessionId,
+      },
+    };
+
+    request(options, (error, response, body) => {
+      if (error) throw new Error(error);
+      try {
+        cb(JSON.parse(body));
+      } catch (e) {
         cb(null);
       }
     });
@@ -132,6 +171,48 @@ class DatabaseFunctions {
       } catch (e) {
         cb([]);
       }
+    });
+  }
+
+  static deleteSession(loggedInSessionId, sessionId, cb) {
+    const options = {
+      method: 'DELETE',
+      url: `${url}/api/session-ids`,
+      headers: {
+        'Logged-In-Session-Id': loggedInSessionId,
+      },
+      body: {
+        session_id: sessionId,
+      },
+      json: true,
+    };
+
+    request(options, (error, response, body) => {
+      if (error) {
+        throw new Error(error);
+      }
+      cb(body);
+    });
+  }
+
+  static deleteLoggedInSession(loggedInSessionId, sessionId, cb) {
+    const options = {
+      method: 'DELETE',
+      url: `${url}/api/logged-in-session-ids`,
+      headers: {
+        'Logged-In-Session-Id': loggedInSessionId,
+      },
+      body: {
+        logged_in_session_id: sessionId,
+      },
+      json: true,
+    };
+
+    request(options, (error, response, body) => {
+      if (error) {
+        throw new Error(error);
+      }
+      cb(body);
     });
   }
 

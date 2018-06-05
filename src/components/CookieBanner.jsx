@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import cookie from 'react-cookies';
 import Section from './Section';
+import TextLink from './TextLink';
 import Button from './Button';
 
 import STYLES from './cookie-banner.scss';
@@ -13,6 +14,17 @@ class CookieBanner extends Component {
     super(props);
 
     this.state = { cookiesAccepted: cookie.load('cookiesAccepted') };
+  }
+
+  componentDidMount() {
+    const reloadCookies = () => {
+      this.setState({
+        cookiesAccepted: cookie.load('cookiesAccepted'),
+      });
+    };
+
+    reloadCookies();
+    setInterval(reloadCookies, 1000);
   }
 
   render() {
@@ -31,21 +43,20 @@ class CookieBanner extends Component {
       <div className={classNameFinal.join(' ')} {...rest}>
         <div className={getClassName('cookie-banner__inner-container')}>
           <Section
+            light
             name="Privacy and cookies"
             noPadding
             className={getClassName('cookie-banner__blurrb')}
           >
-            Since 25 May when GDPR came into practice, nobody’s had a bloody
-            clue how to be compliant. So, henceforth, I present you yet another
-            opportunity to give a website permission to eat cookies. If you
-            don't care, stop reading now!
+            Since 25 May when GDPR came into practice nobody’s had a bloody clue
+            how to be compliant. So here&apos;s yet another opportunity to give
+            a website permission to eat cookies. If you don&apos;t care, stop
+            reading now!
             <br />
             <br />
-            If you click this button, a session ID cookie will be created. That
-            ID will also be stored in my database indefinitely. The only
-            personal information I will collect and store is that which you
-            explicitly submit in form fields (such as the comments area of a
-            blog page). No third parties yada yada.
+            <TextLink light href="/design/privacy-policy">
+              Privacy and cookies policy →
+            </TextLink>
           </Section>
           <Button
             className={getClassName('cookie-banner__button')}
