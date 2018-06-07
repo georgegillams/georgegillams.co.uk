@@ -134,6 +134,14 @@ router.get('/api/greasemonkey/github_highlight_name', (req, res) => {
   sendGreasemonkeyFile('Github highlight my name.js', req, res);
 });
 
+router.get('/api/greasemonkey/hackthis_coding_1', (req, res) => {
+  sendGreasemonkeyFile('Hackthis.co.uk coding level 1.js', req, res);
+});
+
+router.get('/api/greasemonkey/hackthis_coding_2', (req, res) => {
+  sendGreasemonkeyFile('Hackthis.co.uk coding level 2.js', req, res);
+});
+
 router.get('/api/hello', (req, res) => {
   res.send({ express: 'Hello From Express' });
 });
