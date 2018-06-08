@@ -55,7 +55,10 @@ class DesignPrivacyPolicy extends React.Component {
         {!this.state.cookiesAccepted && (
           <Button
             onClick={() => {
-              cookie.save('cookiesAccepted', true, { path: '/' });
+              cookie.save('cookiesAccepted', true, {
+                path: '/',
+                expires: new Date(Date.now() + 24 * 60 * 60 * 100 * 1000),
+              });
               this.setState({ cookiesAccepted: true });
             }}
           >
