@@ -36,7 +36,7 @@ app.use((req, res, next) => {
   res.header('Access-Control-Allow-Origin', '*');
   res.header(
     'Access-Control-Allow-Headers',
-    'Origin, X-Requested-With, Content-Type, Accept, page_id, payment_id, blog_id, Api-Key, Logged-In-Session-Id, selected-blog-tags, blog-collection',
+    'Origin, X-Requested-With, Content-Type, Accept, page_id, payment_id, blog_id, Api-Key, Logged-In-Session-Id, Session-Id, selected-blog-tags, blog-collection',
   );
   res.header('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE');
   next();
@@ -146,15 +146,33 @@ router.get('/api/hello', (req, res) => {
   res.send({ express: 'Hello From Express' });
 });
 
-const checkIsLoggedInAdmin = (loggedInSessionId, cb) => {
+const checkAdminSession = (loggedInSessionId, cb, cbObj) => {
+  const newCbObj = JSON.parse(JSON.stringify(cbObj));
+
   client.lrange(`loggedInSessionIds`, 0, -1, (err, reply) => {
     for (let i = 0; i < reply.length; i += 1) {
       if (compare(JSON.parse(reply[i]).loggedInSessionId, loggedInSessionId)) {
-        cb(true);
+        newCbObj.loggedInAdmin = true;
+        cb(newCbObj);
         return;
       }
     }
-    cb(false);
+    newCbObj.loggedInAdmin = false;
+    cb(newCbObj);
+  });
+};
+
+const checkSession = (sessionId, cb) => {
+  const cbObj = {};
+  client.lrange(`active_sessions`, 0, -1, (err, reply) => {
+    for (let i = 0; i < reply.length; i += 1) {
+      if (compare(JSON.parse(reply[i]).sessionId, sessionId)) {
+        cbObj.activeSession = true;
+        checkAdminSession(sessionId, cb, cbObj);
+        return;
+      }
+    }
+    cb(cbObj);
   });
 };
 
@@ -183,7 +201,8 @@ router.get('/api/comments', (req, res) => {
 });
 
 router.get('/api/session-ids', (req, res) => {
-  checkIsLoggedInAdmin(req.headers['logged-in-session-id'], loggedInAdmin => {
+  const sessId = req.headers['session-id'];
+  checkSession(sessId, ({ activeSession, loggedInAdmin }) => {
     if (!loggedInAdmin) {
       res.end();
       return;
@@ -195,7 +214,8 @@ router.get('/api/session-ids', (req, res) => {
 });
 
 router.get('/api/logged-in-session-ids', (req, res) => {
-  checkIsLoggedInAdmin(req.headers['logged-in-session-id'], loggedInAdmin => {
+  const sessId = req.headers['session-id'];
+  checkSession(sessId, ({ activeSession, loggedInAdmin }) => {
     if (!loggedInAdmin) {
       res.end();
       return;
@@ -236,34 +256,39 @@ router.get('/api/session-id', (req, res) => {
 });
 
 router.post('/api/login', (req, res) => {
-  const { username, password } = req.body;
-  const ipAddress =
-    req.headers['x-forwarded-for'] ||
-    req.connection.remoteAddress ||
-    req.socket.remoteAddress ||
-    req.connection.socket.remoteAddress;
-  if (
-    !compare(username, adminUserName) ||
-    !bcrypt.compareSync(password, adminPasswordHash)
-  ) {
-    res.send({ loggedInSessionId: null });
+  const sessId = req.headers['session-id'];
+  checkSession(sessId, ({ activeSession, loggedInAdmin }) => {
+    const { username, password } = req.body;
+    const sessionId = req.headers['session-id'];
+    const ipAddress =
+      req.headers['x-forwarded-for'] ||
+      req.connection.remoteAddress ||
+      req.socket.remoteAddress ||
+      req.connection.socket.remoteAddress;
+    if (
+      !activeSession ||
+      !compare(username, adminUserName) ||
+      !bcrypt.compareSync(password, adminPasswordHash)
+    ) {
+      res.send({ loggedInSessionId: null });
+      res.end();
+      return;
+    }
+    client.rpush([
+      `loggedInSessionIds`,
+      JSON.stringify({
+        loggedInSessionId: sessionId,
+        ipAddress,
+      }),
+    ]);
+    res.send({ loggedInSessionId: sessionId });
     res.end();
-    return;
-  }
-  const loggedInSessionId = crypto.randomBytes(20).toString('hex');
-  client.rpush([
-    `loggedInSessionIds`,
-    JSON.stringify({
-      loggedInSessionId,
-      ipAddress,
-    }),
-  ]);
-  res.send({ loggedInSessionId });
-  res.end();
+  });
 });
 
 router.delete('/api/session-ids', (req, res) => {
-  checkIsLoggedInAdmin(req.headers['logged-in-session-id'], loggedInAdmin => {
+  const sessId = req.headers['session-id'];
+  checkSession(sessId, ({ activeSession, loggedInAdmin }) => {
     if (!loggedInAdmin) {
       res.end();
       return;
@@ -286,7 +311,8 @@ router.delete('/api/session-ids', (req, res) => {
 });
 
 router.delete('/api/logged-in-session-ids', (req, res) => {
-  checkIsLoggedInAdmin(req.headers['logged-in-session-id'], loggedInAdmin => {
+  const sessId = req.headers['session-id'];
+  checkSession(sessId, ({ activeSession, loggedInAdmin }) => {
     if (!loggedInAdmin) {
       res.end();
       return;
@@ -309,35 +335,43 @@ router.delete('/api/logged-in-session-ids', (req, res) => {
 });
 
 router.post('/api/comments', (req, res) => {
-  const pageId = req.body.page_id;
-  const commentId = Math.random()
-    .toString(36)
-    .substring(7);
-  const commenterName = req.body.commenter_name;
-  const commenterSessionId = req.body.commenter_session_id;
-  const { comment } = req.body;
-  client.lrem('pageIds', 0, pageId);
-  client.rpush(['pageIds', pageId]);
-  client.rpush([
-    `${pageId}_comments`,
-    JSON.stringify({
-      commentId,
-      commenterSessionId,
-      commenterName,
-      comment,
-      timestamp: Date.now(),
-    }),
-  ]);
-  res.send(commentId);
-  res.end();
+  const sessId = req.headers['session-id'];
+  checkSession(sessId, ({ activeSession, loggedInAdmin }) => {
+    if (!activeSession) {
+      res.end();
+      return;
+    }
+    const pageId = req.body.page_id;
+    const commentId = Math.random()
+      .toString(36)
+      .substring(7);
+    const commenterName = req.body.commenter_name;
+    const commenterSessionId = sessId;
+    const { comment } = req.body;
+    client.lrem('pageIds', 0, pageId);
+    client.rpush(['pageIds', pageId]);
+    client.rpush([
+      `${pageId}_comments`,
+      JSON.stringify({
+        commentId,
+        commenterSessionId,
+        commenterName,
+        comment,
+        timestamp: Date.now(),
+      }),
+    ]);
+    res.send(commentId);
+    res.end();
+  });
 });
 
 router.delete('/api/comments', (req, res) => {
-  checkIsLoggedInAdmin(req.headers['logged-in-session-id'], loggedInAdmin => {
+  const sessId = req.headers['session-id'];
+  checkSession(sessId, ({ activeSession, loggedInAdmin }) => {
     const pageId = req.body.page_id;
     const { pattern } = req.body;
     const commentId = req.body.comment_id;
-    const deleterId = req.body.deleter_id;
+    const deleterId = sessId;
     if (pattern === '*') {
       if (loggedInAdmin) {
         client.del(`${pageId}_comments`);
@@ -381,7 +415,8 @@ router.delete('/api/comments', (req, res) => {
 });
 
 router.delete('/api/ping-tests', (req, res) => {
-  checkIsLoggedInAdmin(req.headers['logged-in-session-id'], loggedInAdmin => {
+  const sessId = req.headers['session-id'];
+  checkSession(sessId, ({ activeSession, loggedInAdmin }) => {
     if (!loggedInAdmin) {
       res.end();
       return;
@@ -411,7 +446,8 @@ router.get('/api/payments/single', (req, res) => {
 });
 
 router.get('/api/payments', (req, res) => {
-  checkIsLoggedInAdmin(req.headers['logged-in-session-id'], loggedInAdmin => {
+  const sessId = req.headers['session-id'];
+  checkSession(sessId, ({ activeSession, loggedInAdmin }) => {
     if (!loggedInAdmin) {
       res.end();
       return;
@@ -476,7 +512,8 @@ router.post('/api/payments', (req, res) => {
 });
 
 router.delete('/api/payments', (req, res) => {
-  checkIsLoggedInAdmin(req.headers['logged-in-session-id'], loggedInAdmin => {
+  const sessId = req.headers['session-id'];
+  checkSession(sessId, ({ activeSession, loggedInAdmin }) => {
     if (!loggedInAdmin) {
       res.end();
       return;
@@ -499,7 +536,8 @@ router.delete('/api/payments', (req, res) => {
 });
 
 router.delete('/api/blog-posts', (req, res) => {
-  checkIsLoggedInAdmin(req.headers['logged-in-session-id'], loggedInAdmin => {
+  const sessId = req.headers['session-id'];
+  checkSession(sessId, ({ activeSession, loggedInAdmin }) => {
     if (!loggedInAdmin) {
       res.end();
       return;
@@ -522,7 +560,8 @@ router.delete('/api/blog-posts', (req, res) => {
 });
 
 router.post('/api/payments/status/authorise', (req, res) => {
-  checkIsLoggedInAdmin(req.headers['logged-in-session-id'], loggedInAdmin => {
+  const sessId = req.headers['session-id'];
+  checkSession(sessId, ({ activeSession, loggedInAdmin }) => {
     if (!loggedInAdmin) {
       res.end();
       return;
@@ -546,7 +585,8 @@ router.post('/api/payments/status/authorise', (req, res) => {
 });
 
 router.post('/api/payments/status/complete', (req, res) => {
-  checkIsLoggedInAdmin(req.headers['logged-in-session-id'], loggedInAdmin => {
+  const sessId = req.headers['session-id'];
+  checkSession(sessId, ({ activeSession, loggedInAdmin }) => {
     if (!loggedInAdmin) {
       res.end();
       return;
@@ -570,7 +610,8 @@ router.post('/api/payments/status/complete', (req, res) => {
 });
 
 router.post('/api/payments/status/reject', (req, res) => {
-  checkIsLoggedInAdmin(req.headers['logged-in-session-id'], loggedInAdmin => {
+  const sessId = req.headers['session-id'];
+  checkSession(sessId, ({ activeSession, loggedInAdmin }) => {
     if (!loggedInAdmin) {
       res.end();
       return;
@@ -594,7 +635,8 @@ router.post('/api/payments/status/reject', (req, res) => {
 });
 
 router.get('/api/blog-posts', (req, res) => {
-  checkIsLoggedInAdmin(req.headers['logged-in-session-id'], loggedInAdmin => {
+  const sessId = req.headers['session-id'];
+  checkSession(sessId, ({ activeSession, loggedInAdmin }) => {
     const selectedBlogTags = req.headers['selected-blog-tags']
       ? req.headers['selected-blog-tags'].split(', ')
       : [];
@@ -638,7 +680,8 @@ router.get('/api/blog-posts', (req, res) => {
 });
 
 router.get('/api/blog-posts/single', (req, res) => {
-  checkIsLoggedInAdmin(req.headers['logged-in-session-id'], loggedInAdmin => {
+  const sessId = req.headers['session-id'];
+  checkSession(sessId, ({ activeSession, loggedInAdmin }) => {
     const blogId = req.headers.blog_id;
     client.lrange(`blog-posts`, 0, -1, (err, reply) => {
       for (let i = 0; i < reply.length; i += 1) {
@@ -658,7 +701,8 @@ router.get('/api/blog-posts/single', (req, res) => {
 });
 
 router.post('/api/blog-posts', (req, res) => {
-  checkIsLoggedInAdmin(req.headers['logged-in-session-id'], loggedInAdmin => {
+  const sessId = req.headers['session-id'];
+  checkSession(sessId, ({ activeSession, loggedInAdmin }) => {
     if (!loggedInAdmin) {
       res.end();
       return;
@@ -703,7 +747,8 @@ router.post('/api/blog-posts', (req, res) => {
 });
 
 router.post('/api/blog-posts/update', (req, res) => {
-  checkIsLoggedInAdmin(req.headers['logged-in-session-id'], loggedInAdmin => {
+  const sessId = req.headers['session-id'];
+  checkSession(sessId, ({ activeSession, loggedInAdmin }) => {
     if (!loggedInAdmin) {
       res.end();
       return;
@@ -759,7 +804,8 @@ router.post('/api/blog-posts/update', (req, res) => {
 });
 
 router.post('/api/blog-posts/override-published-timestamp', (req, res) => {
-  checkIsLoggedInAdmin(req.headers['logged-in-session-id'], loggedInAdmin => {
+  const sessId = req.headers['session-id'];
+  checkSession(sessId, ({ activeSession, loggedInAdmin }) => {
     if (!loggedInAdmin) {
       res.end();
       return;
@@ -794,7 +840,8 @@ router.get('/api/notifications', (req, res) => {
 });
 
 router.post('/api/notifications', (req, res) => {
-  checkIsLoggedInAdmin(req.headers['logged-in-session-id'], loggedInAdmin => {
+  const sessId = req.headers['session-id'];
+  checkSession(sessId, ({ activeSession, loggedInAdmin }) => {
     if (!loggedInAdmin) {
       res.end();
       return;
@@ -818,7 +865,8 @@ router.post('/api/notifications', (req, res) => {
 });
 
 router.delete('/api/notifications', (req, res) => {
-  checkIsLoggedInAdmin(req.headers['logged-in-session-id'], loggedInAdmin => {
+  const sessId = req.headers['session-id'];
+  checkSession(sessId, ({ activeSession, loggedInAdmin }) => {
     if (!loggedInAdmin) {
       res.end();
       return;

@@ -20,15 +20,13 @@ class CommentInput extends React.Component {
       name: '',
       comment: '',
       result: null,
-      cookiesAccepted: cookie.load('cookiesAccepted'),
-      sessionId: null,
+      sessionId: cookie.load('sessionId'),
     };
   }
 
   componentDidMount() {
     const reloadCookies = () => {
       this.setState({
-        cookiesAccepted: cookie.load('cookiesAccepted'),
         sessionId: cookie.load('sessionId'),
         userComments: cookie.load('userComments') || [],
       });
@@ -77,7 +75,7 @@ class CommentInput extends React.Component {
 
     return (
       <div className={classNameFinal.join(' ')} {...rest}>
-        {this.state.cookiesAccepted ? (
+        {this.state.sessionId ? (
           <div>
             {this.state.result ? (
               <SubSection noAnchor name="Thanks for your comment 👍" />
