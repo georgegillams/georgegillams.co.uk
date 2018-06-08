@@ -59,7 +59,10 @@ class CommentInput extends React.Component {
           JSON.stringify(this.state.userComments),
         );
         newUserComments.push(result);
-        cookie.save('userComments', newUserComments, { path: '/' });
+        cookie.save('userComments', newUserComments, {
+          path: '/',
+          expires: new Date(Date.now() + 24 * 60 * 60 * 100 * 1000),
+        });
       },
     );
   };
