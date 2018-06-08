@@ -45,7 +45,7 @@ class BlogEditorPage extends React.Component {
 
         const reloadCookies = () => {
           this.setState({
-            loggedInSession: cookie.load('loggedInSession'),
+            loggedInAdmin: cookie.load('loggedInAdmin'),
           });
         };
 
@@ -66,7 +66,7 @@ class BlogEditorPage extends React.Component {
       <div id="greasy_blog_handle">
         <PageSwitchScroller />
         <BlogRenderer
-          showEditLink={this.state.loggedInSession}
+          showEditLink={this.state.loggedInAdmin}
           centered={HelperFunctions.includes(
             this.state.blog.blogTags,
             'travel',

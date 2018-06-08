@@ -2,6 +2,7 @@ import React from 'react';
 import cookie from 'react-cookies';
 import Section from '../../components/Section';
 import Button from '../../components/Button';
+import DatabaseFunctions from '../../DatabaseFunctions';
 
 import STYLES from '../pages.scss';
 
@@ -11,19 +12,30 @@ class DesignPrivacyPolicy extends React.Component {
   constructor(props) {
     super(props);
 
-    this.state = { cookiesAccepted: cookie.load('cookiesAccepted') };
+    this.state = { sessionId: cookie.load('sessionId') };
   }
 
   componentDidMount() {
     const reloadCookies = () => {
       this.setState({
-        cookiesAccepted: cookie.load('cookiesAccepted'),
+        sessionId: cookie.load('sessionId'),
       });
     };
 
     reloadCookies();
     setInterval(reloadCookies, 1000);
   }
+  createSessionCookie = () => {
+    const existingSessionId = cookie.load('sessionId');
+    if (!existingSessionId) {
+      DatabaseFunctions.getNewSessionId(({ sessionId }) => {
+        cookie.save('sessionId', sessionId, {
+          path: '/',
+          expires: new Date(Date.now() + 24 * 60 * 60 * 100 * 1000),
+        });
+      });
+    }
+  };
 
   render() {
     const { className, ...rest } = this.props;
@@ -52,14 +64,11 @@ class DesignPrivacyPolicy extends React.Component {
         organisations.
         <br />
         <br />
-        {!this.state.cookiesAccepted && (
+        {!this.state.sessionId && (
           <Button
             onClick={() => {
-              cookie.save('cookiesAccepted', true, {
-                path: '/',
-                expires: new Date(Date.now() + 24 * 60 * 60 * 100 * 1000),
-              });
-              this.setState({ cookiesAccepted: true });
+              this.createSessionCookie();
+              this.setState({ sessionId: true });
             }}
           >
             I agree to my data and cookies being used in this way.

@@ -30,7 +30,13 @@ class AdminPayment extends React.Component {
   }
 
   render() {
-    const { loggedInSession, payment, className, ...rest } = this.props;
+    const {
+      loggedInAdmin,
+      sessionId,
+      payment,
+      className,
+      ...rest
+    } = this.props;
 
     const classNameFinal = [];
     if (className) classNameFinal.push(className);
@@ -50,7 +56,7 @@ class AdminPayment extends React.Component {
           disabled={payment.status === 'authorised'}
           onClick={() => {
             DatabaseFunctions.authorisePayment(
-              loggedInSession,
+              sessionId,
               payment.paymentId,
               result => null,
             );
@@ -62,7 +68,7 @@ class AdminPayment extends React.Component {
           disabled={payment.status === 'completed'}
           onClick={() => {
             DatabaseFunctions.completePayment(
-              loggedInSession,
+              sessionId,
               payment.paymentId,
               result => null,
             );
@@ -75,7 +81,7 @@ class AdminPayment extends React.Component {
           destructive
           onClick={() => {
             DatabaseFunctions.rejectPayment(
-              loggedInSession,
+              sessionId,
               payment.paymentId,
               result => null,
             );
@@ -87,7 +93,7 @@ class AdminPayment extends React.Component {
           destructive
           onClick={() => {
             DatabaseFunctions.deletePayment(
-              loggedInSession,
+              sessionId,
               payment.paymentId,
               result => null,
             );

@@ -1,10 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import 'whatwg-fetch';
-import cookie from 'react-cookies';
 import HelperFunctions from '../HelperFunctions';
 import NotificationCenter from './NotificationCenter';
-import DatabaseFunctions from '../DatabaseFunctions';
 
 import RedirectNotice from './RedirectNotice';
 import NavigationBar from './NavigationBar';
@@ -21,23 +19,6 @@ class DefaultLayout extends React.Component {
     document.getElementById('body').className = getClassName(
       'default-layout__body',
     );
-
-    const createSessionCookie = () => {
-      const cookiesAccepted = cookie.load('cookiesAccepted');
-      if (cookiesAccepted) {
-        const existingSessionId = cookie.load('sessionId');
-        if (!existingSessionId) {
-          DatabaseFunctions.getNewSessionId(({ sessionId }) => {
-            cookie.save('sessionId', sessionId, {
-              path: '/',
-              expires: new Date(Date.now() + 24 * 60 * 60 * 100 * 1000),
-            });
-          });
-        }
-      }
-    };
-
-    setInterval(createSessionCookie, 2000);
   }
 
   render() {

@@ -24,16 +24,16 @@ class Admin extends React.Component {
 
     this.state = {
       selected: `${window.location}`.split('admin/')[1].replace('/', ''),
-      loggedInSession: cookie.load('loggedInSession'),
-      cookiesAccepted: cookie.load('cookiesAccepted'),
+      loggedInAdmin: cookie.load('loggedInAdmin'),
+      sessionId: cookie.load('sessionId'),
     };
   }
 
   componentDidMount() {
     const reloadCookies = () => {
       this.setState({
-        loggedInSession: cookie.load('loggedInSession'),
-        cookiesAccepted: cookie.load('cookiesAccepted'),
+        loggedInAdmin: !!cookie.load('loggedInAdmin'),
+        sessionId: cookie.load('sessionId'),
       });
     };
 
@@ -125,29 +125,45 @@ class Admin extends React.Component {
         </BpkHorizontalNav>
         {this.state.selected === 'login' && (
           <AdminLogin
-            loggedInSession={this.state.loggedInSession}
-            cookiesAccepted={this.state.cookiesAccepted}
+            sessionId={this.state.sessionId}
+            loggedInAdmin={this.state.loggedInAdmin}
           />
         )}
         {this.state.selected === 'sessions' && (
-          <AdminSessionsPage loggedInSession={this.state.loggedInSession} />
+          <AdminSessionsPage
+            sessionId={this.state.sessionId}
+            loggedInAdmin={this.state.loggedInAdmin}
+          />
         )}
         {this.state.selected === 'blogs' && (
-          <AdminBlogsPage loggedInSession={this.state.loggedInSession} />
+          <AdminBlogsPage
+            sessionId={this.state.sessionId}
+            loggedInAdmin={this.state.loggedInAdmin}
+          />
         )}
         {this.state.selected === 'blog-comments' && (
-          <AdminCommentsPage loggedInSession={this.state.loggedInSession} />
+          <AdminCommentsPage
+            sessionId={this.state.sessionId}
+            loggedInAdmin={this.state.loggedInAdmin}
+          />
         )}
         {this.state.selected === 'notifications' && (
           <AdminNotificationsPage
-            loggedInSession={this.state.loggedInSession}
+            sessionId={this.state.sessionId}
+            loggedInAdmin={this.state.loggedInAdmin}
           />
         )}
         {this.state.selected === 'payments' && (
-          <AdminPaymentsPage loggedInSession={this.state.loggedInSession} />
+          <AdminPaymentsPage
+            sessionId={this.state.sessionId}
+            loggedInAdmin={this.state.loggedInAdmin}
+          />
         )}
         {this.state.selected === 'ping-pen-testing' && (
-          <AdminPingTest loggedInSession={this.state.loggedInSession} />
+          <AdminPingTest
+            sessionId={this.state.sessionId}
+            loggedInAdmin={this.state.loggedInAdmin}
+          />
         )}
       </Section>
     );
