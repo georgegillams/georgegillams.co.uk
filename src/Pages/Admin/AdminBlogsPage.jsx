@@ -25,15 +25,10 @@ class AdminBlogsPage extends React.Component {
 
   componentDidMount() {
     const getBlogs = () => {
-      if (this.props.loggedInSession) {
-        DatabaseFunctions.getBlogs(
-          'all',
-          this.props.loggedInSession,
-          [],
-          result => {
-            this.setState({ allBlogs: result });
-          },
-        );
+      if (this.props.sessionId) {
+        DatabaseFunctions.getBlogs('all', this.props.sessionId, [], result => {
+          this.setState({ allBlogs: result });
+        });
       }
       DatabaseFunctions.getBlogs('all', '', [], result => {
         this.setState({ publishedBlogs: result });
@@ -45,7 +40,7 @@ class AdminBlogsPage extends React.Component {
   }
 
   render() {
-    const { loggedInSession, className, ...rest } = this.props;
+    const { loggedInAdmin, sessionId, className, ...rest } = this.props;
 
     const classNameFinal = [];
     if (className) classNameFinal.push(className);
@@ -62,7 +57,11 @@ class AdminBlogsPage extends React.Component {
           {this.state.publishedBlogs.length > 0 ? (
             <div>
               {this.state.publishedBlogs.map(b => (
-                <AdminBlog loggedInSession={loggedInSession} blog={b} />
+                <AdminBlog
+                  sessionId={sessionId}
+                  loggedInAdmin={loggedInAdmin}
+                  blog={b}
+                />
               ))}
             </div>
           ) : (
@@ -72,14 +71,18 @@ class AdminBlogsPage extends React.Component {
         {this.state.allBlogs.length > 0 && (
           <Section name="All blogs">
             {this.state.allBlogs.map(b => (
-              <AdminBlog loggedInSession={loggedInSession} blog={b} />
+              <AdminBlog
+                sessionId={sessionId}
+                loggedInAdmin={loggedInAdmin}
+                blog={b}
+              />
             ))}
           </Section>
         )}
-        {loggedInSession && (
+        {loggedInAdmin && (
           <Button
             onClick={() => {
-              DatabaseFunctions.addBlog(loggedInSession, result => {
+              DatabaseFunctions.addBlog(sessionId, result => {
                 if (result && result.blog_id) {
                   this.props.history.push(
                     `/admin/blog-editor?id=${result.blog_id}`,

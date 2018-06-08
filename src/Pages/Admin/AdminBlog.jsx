@@ -19,7 +19,7 @@ class AdminBlog extends React.Component {
   }
 
   render() {
-    const { loggedInSession, blog, className, ...rest } = this.props;
+    const { sessionId, loggedInAdmin, blog, className, ...rest } = this.props;
 
     const classNameFinal = [];
     if (className) classNameFinal.push(className);
@@ -29,12 +29,12 @@ class AdminBlog extends React.Component {
         {`${blog.blogId} ${blog.blogName} ${blog.publishedTimestamp}`}
         <br />
         <Button href={`/admin/blog-editor?id=${blog.blogId}`}>Edit blog</Button>
-        {loggedInSession && (
+        {loggedInAdmin && (
           <Button
             destructive
             onClick={() => {
               DatabaseFunctions.deleteBlog(
-                loggedInSession,
+                sessionId,
                 blog.blogId,
                 result => null,
               );

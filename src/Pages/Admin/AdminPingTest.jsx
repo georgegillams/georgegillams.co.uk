@@ -34,11 +34,11 @@ class AdminPingTest extends React.Component {
   }
 
   deleteAllPings = () => {
-    DatabaseFunctions.deleteAllPings(this.props.loggedInSession, r => null);
+    DatabaseFunctions.deleteAllPings(this.props.sessionId, r => null);
   };
 
   render() {
-    const { className, loggedInSession, ...rest } = this.props;
+    const { className, loggedInAdmin, sessionId, ...rest } = this.props;
 
     const classNameFinal = [];
     if (className) classNameFinal.push(className);
@@ -58,7 +58,7 @@ class AdminPingTest extends React.Component {
             </div>
           );
         })}
-        {loggedInSession && (
+        {loggedInAdmin && (
           <Button destructive onClick={this.deleteAllPings}>
             Delete all pings
           </Button>
