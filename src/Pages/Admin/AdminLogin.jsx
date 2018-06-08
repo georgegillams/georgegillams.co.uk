@@ -22,23 +22,31 @@ class AdminLogin extends React.Component {
   }
 
   login = () => {
-    DatabaseFunctions.login(this.state.uname, this.state.pword, result => {
-      if (result.loggedInSessionId === null) {
-        this.setState({ loginError: true });
-      } else {
-        this.setState({ loginError: false });
-        cookie.save('loggedInSession', result.loggedInSessionId, { path: '/' });
-      }
-    });
+    DatabaseFunctions.login(
+      this.props.sessionId,
+      this.state.uname,
+      this.state.pword,
+      result => {
+        if (result.loggedInSessionId === null) {
+          this.setState({ loginError: true });
+        } else {
+          this.setState({ loginError: false });
+          cookie.save('loggedInAdmin', true, {
+            path: '/',
+            expires: new Date(Date.now() + 24 * 60 * 60 * 100 * 1000),
+          });
+        }
+      },
+    );
   };
 
   render() {
-    const { className, loggedInSession, cookiesAccepted, ...rest } = this.props;
+    const { className, loggedInAdmin, sessionId, ...rest } = this.props;
 
     const classNameFinal = [];
     if (className) classNameFinal.push(className);
 
-    if (!cookiesAccepted) {
+    if (!sessionId) {
       return (
         <Section name="Login">
           Please accept use of cookies to use account features on this website.
@@ -48,7 +56,7 @@ class AdminLogin extends React.Component {
 
     return (
       <Section name="Login">
-        {!loggedInSession ? (
+        {!loggedInAdmin ? (
           <div>
             <BpkBannerAlert
               className={getClassName('pages__card')}
@@ -84,7 +92,14 @@ class AdminLogin extends React.Component {
           <Button
             destructive
             onClick={() => {
-              cookie.remove('loggedInSession', { path: '/' });
+              DatabaseFunctions.deleteLoggedInSession(
+                sessionId,
+                sessionId,
+                result => {
+                  console.log(result);
+                },
+              );
+              cookie.remove('loggedInAdmin', { path: '/' });
             }}
           >
             Logout

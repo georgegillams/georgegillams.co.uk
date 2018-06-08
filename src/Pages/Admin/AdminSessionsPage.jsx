@@ -26,13 +26,12 @@ class AdminSessionsPage extends React.Component {
 
   componentDidMount() {
     const getSessionIds = () => {
-      if (this.props.loggedInSession) {
-        DatabaseFunctions.getSessionIds(this.props.loggedInSession, result => {
-          console.log(result);
+      if (this.props.loggedInAdmin) {
+        DatabaseFunctions.getSessionIds(this.props.sessionId, result => {
           this.setState({ sessionIds: result });
         });
         DatabaseFunctions.getLoggedInSessionIds(
-          this.props.loggedInSession,
+          this.props.sessionId,
           result => {
             this.setState({ loggedInSessionIds: result });
           },
@@ -45,14 +44,14 @@ class AdminSessionsPage extends React.Component {
   }
 
   render() {
-    const { loggedInSession, className, ...rest } = this.props;
+    const { loggedInAdmin, sessionId, className, ...rest } = this.props;
 
     const classNameFinal = [];
     if (className) classNameFinal.push(className);
 
     return (
       <div>
-        {loggedInSession ? (
+        {loggedInAdmin ? (
           <Section name="Sessions">
             {this.state.sessionIds ? (
               <SubSection name="Session IDs">
@@ -68,7 +67,7 @@ class AdminSessionsPage extends React.Component {
                         destructive
                         onClick={() =>
                           DatabaseFunctions.deleteSession(
-                            loggedInSession,
+                            sessionId,
                             session.sessionId,
                             result => {
                               console.log(result);
@@ -99,7 +98,7 @@ class AdminSessionsPage extends React.Component {
                         destructive
                         onClick={() =>
                           DatabaseFunctions.deleteLoggedInSession(
-                            loggedInSession,
+                            sessionId,
                             session.loggedInSessionId,
                             result => {
                               console.log(result);
