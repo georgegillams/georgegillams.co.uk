@@ -85,7 +85,7 @@ class Degree extends React.Component {
           <DegreeModule
             name="Final percentage"
             predicted
-            percentage={67.82}
+            percentage={68.08}
             filled={this.state.filled[0]}
           />
           <br />
@@ -285,7 +285,7 @@ class Degree extends React.Component {
               className={getClassName('pages__degree-module')}
               name="Data Mining"
               predicted
-              percentage={50.39}
+              percentage={55.49}
               filled={this.state.filled[28]}
             />
           </SubSection>
