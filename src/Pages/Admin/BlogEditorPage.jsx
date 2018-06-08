@@ -24,13 +24,13 @@ class BlogEditorPage extends React.Component {
 
     this.state = {
       blog: null,
-      loggedInSession: cookie.load('loggedInSession'),
+      sessionId: cookie.load('sessionId'),
       updateResult: null,
       dirty: false,
     };
   }
 
-  // TODO PERIODICALLY UPDATE loggedInSession COOKIE
+  // TODO PERIODICALLY UPDATE sessionId COOKIE
 
   componentDidMount() {
     const location = `${window.location}`;
@@ -43,20 +43,16 @@ class BlogEditorPage extends React.Component {
           if (this.state.blog) {
             return;
           }
-          DatabaseFunctions.getBlog(
-            this.state.loggedInSession,
-            blogId,
-            result => {
-              if (result && result.length === undefined) {
-                this.setState({ blog: result });
-              }
-            },
-          );
+          DatabaseFunctions.getBlog(this.state.sessionId, blogId, result => {
+            if (result && result.length === undefined) {
+              this.setState({ blog: result });
+            }
+          });
         };
 
         const reloadCookies = () => {
           this.setState({
-            loggedInSession: cookie.load('loggedInSession'),
+            sessionId: cookie.load('sessionId'),
           });
         };
 
@@ -96,7 +92,7 @@ class BlogEditorPage extends React.Component {
             className={getClassName('pages__card')}
             onClick={() => {
               DatabaseFunctions.updateBlog(
-                this.state.loggedInSession,
+                this.state.sessionId,
                 this.state.blog,
                 result => {
                   this.setState({

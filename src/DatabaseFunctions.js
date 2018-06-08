@@ -40,13 +40,12 @@ class DatabaseFunctions {
     });
   }
 
-  static getSessionIds(loggedInSessionId, cb) {
+  static getSessionIds(sessionId, cb) {
     const options = {
       method: 'GET',
       url: `${url}/api/session-ids`,
       headers: {
-        'Logged-In-Session-Id':
-          loggedInSessionId === '' ? null : loggedInSessionId,
+        'Session-Id': sessionId === '' ? null : sessionId,
       },
     };
 
@@ -59,13 +58,12 @@ class DatabaseFunctions {
       }
     });
   }
-  static getLoggedInSessionIds(loggedInSessionId, cb) {
+  static getLoggedInSessionIds(sessionId, cb) {
     const options = {
       method: 'GET',
       url: `${url}/api/logged-in-session-ids`,
       headers: {
-        'Logged-In-Session-Id':
-          loggedInSessionId === '' ? null : loggedInSessionId,
+        'Session-Id': sessionId === '' ? null : sessionId,
       },
     };
 
@@ -79,11 +77,13 @@ class DatabaseFunctions {
     });
   }
 
-  static login(uname, pword, cb) {
+  static login(sessionId, uname, pword, cb) {
     const options = {
       method: 'POST',
       url: `${url}/api/login`,
-      headers: {},
+      headers: {
+        'Session-Id': sessionId,
+      },
       body: {
         username: uname,
         password: pword,
@@ -131,13 +131,12 @@ class DatabaseFunctions {
     });
   }
 
-  static getBlogs(blogCollection, loggedInSessionId, selectedBlogTags, cb) {
+  static getBlogs(blogCollection, sessionId, selectedBlogTags, cb) {
     const options = {
       method: 'GET',
       url: `${url}/api/blog-posts`,
       headers: {
-        'Logged-In-Session-Id':
-          loggedInSessionId === '' ? null : loggedInSessionId,
+        'Session-Id': sessionId === '' ? null : sessionId,
         'selected-blog-tags': selectedBlogTags,
         'blog-collection': blogCollection,
       },
@@ -153,13 +152,12 @@ class DatabaseFunctions {
     });
   }
 
-  static getBlog(loggedInSessionId, blogId, cb) {
+  static getBlog(sessionId, blogId, cb) {
     const options = {
       method: 'GET',
       url: `${url}/api/blog-posts/single`,
       headers: {
-        'Logged-In-Session-Id':
-          loggedInSessionId === '' ? null : loggedInSessionId,
+        'Session-Id': sessionId === '' ? null : sessionId,
         blog_id: blogId,
       },
     };
@@ -174,15 +172,15 @@ class DatabaseFunctions {
     });
   }
 
-  static deleteSession(loggedInSessionId, sessionId, cb) {
+  static deleteSession(sessionId, sessionIdToDelete, cb) {
     const options = {
       method: 'DELETE',
       url: `${url}/api/session-ids`,
       headers: {
-        'Logged-In-Session-Id': loggedInSessionId,
+        'Session-Id': sessionId,
       },
       body: {
-        session_id: sessionId,
+        session_id: sessionIdToDelete,
       },
       json: true,
     };
@@ -195,15 +193,15 @@ class DatabaseFunctions {
     });
   }
 
-  static deleteLoggedInSession(loggedInSessionId, sessionId, cb) {
+  static deleteLoggedInSession(sessionId, sessionIdToDelete, cb) {
     const options = {
       method: 'DELETE',
       url: `${url}/api/logged-in-session-ids`,
       headers: {
-        'Logged-In-Session-Id': loggedInSessionId,
+        'Session-Id': sessionId,
       },
       body: {
-        logged_in_session_id: sessionId,
+        logged_in_session_id: sessionIdToDelete,
       },
       json: true,
     };
@@ -216,11 +214,11 @@ class DatabaseFunctions {
     });
   }
 
-  static updateBlog(loggedInSessionId, blog, cb) {
+  static updateBlog(sessionId, blog, cb) {
     const options = {
       method: 'POST',
       url: `${url}/api/blog-posts/update`,
-      headers: { 'Logged-In-Session-Id': loggedInSessionId },
+      headers: { 'Session-Id': sessionId },
       body: {
         blog_id: blog.blogId,
         blog_name: blog.blogName,
@@ -247,11 +245,11 @@ class DatabaseFunctions {
     });
   }
 
-  static addBlog(loggedInSessionId, cb) {
+  static addBlog(sessionId, cb) {
     const options = {
       method: 'POST',
       url: `${url}/api/blog-posts`,
-      headers: { 'Logged-In-Session-Id': loggedInSessionId },
+      headers: { 'Session-Id': sessionId },
       body: {
         blog_name: 'new blog',
         blog_content: '',
@@ -274,12 +272,12 @@ class DatabaseFunctions {
     });
   }
 
-  static deleteBlog(loggedInSessionId, blogId, cb) {
+  static deleteBlog(sessionId, blogId, cb) {
     const options = {
       method: 'DELETE',
       url: `${url}/api/blog-posts`,
       headers: {
-        'Logged-In-Session-Id': loggedInSessionId,
+        'Session-Id': sessionId,
       },
       body: {
         blog_id: blogId,
@@ -295,12 +293,12 @@ class DatabaseFunctions {
     });
   }
 
-  static deleteAllPings(loggedInSessionId, cb) {
+  static deleteAllPings(sessionId, cb) {
     const options = {
       method: 'DELETE',
       url: `${url}/api/ping-tests`,
       headers: {
-        'Logged-In-Session-Id': loggedInSessionId,
+        'Session-Id': sessionId,
       },
       body: {},
       json: true,
@@ -314,12 +312,12 @@ class DatabaseFunctions {
     });
   }
 
-  static deletePayment(loggedInSessionId, paymentId, cb) {
+  static deletePayment(sessionId, paymentId, cb) {
     const options = {
       method: 'DELETE',
       url: `${url}/api/payments`,
       headers: {
-        'Logged-In-Session-Id': loggedInSessionId,
+        'Session-Id': sessionId,
       },
       body: {
         payment_id: paymentId,
@@ -339,10 +337,11 @@ class DatabaseFunctions {
     const options = {
       method: 'POST',
       url: `${url}/api/comments`,
-      headers: {},
+      headers: {
+        'Session-Id': sessionId,
+      },
       body: {
         page_id: pageId,
-        commenter_session_id: sessionId,
         commenter_name: commenterName,
         comment,
       },
@@ -355,22 +354,14 @@ class DatabaseFunctions {
     });
   }
 
-  static deleteComment(
-    regularSessionId,
-    loggedInSessionId,
-    pageId,
-    pattern,
-    commentId,
-    cb,
-  ) {
+  static deleteComment(sessionId, pageId, pattern, commentId, cb) {
     const options = {
       method: 'DELETE',
       url: `${url}/api/comments`,
       headers: {
-        'Logged-In-Session-Id': loggedInSessionId,
+        'Session-Id': sessionId,
       },
       body: {
-        deleter_id: regularSessionId,
         page_id: pageId,
         pattern,
         comment_id: commentId,
@@ -450,12 +441,12 @@ class DatabaseFunctions {
     });
   }
 
-  static getPayments(loggedInSessionId, cb) {
+  static getPayments(sessionId, cb) {
     const options = {
       method: 'GET',
       url: `${url}/api/payments`,
       headers: {
-        'Logged-In-Session-Id': loggedInSessionId,
+        'Session-Id': sessionId,
       },
     };
 
@@ -469,12 +460,12 @@ class DatabaseFunctions {
     });
   }
 
-  static rejectPayment(loggedInSessionId, paymentId, cb) {
+  static rejectPayment(sessionId, paymentId, cb) {
     const options = {
       method: 'POST',
       url: `${url}/api/payments/status/reject`,
       headers: {
-        'Logged-In-Session-Id': loggedInSessionId,
+        'Session-Id': sessionId,
       },
       body: {
         payment_id: paymentId,
@@ -488,12 +479,12 @@ class DatabaseFunctions {
     });
   }
 
-  static authorisePayment(loggedInSessionId, paymentId, cb) {
+  static authorisePayment(sessionId, paymentId, cb) {
     const options = {
       method: 'POST',
       url: `${url}/api/payments/status/authorise`,
       headers: {
-        'Logged-In-Session-Id': loggedInSessionId,
+        'Session-Id': sessionId,
       },
       body: {
         payment_id: paymentId,
@@ -506,12 +497,12 @@ class DatabaseFunctions {
     });
   }
 
-  static completePayment(loggedInSessionId, paymentId, cb) {
+  static completePayment(sessionId, paymentId, cb) {
     const options = {
       method: 'POST',
       url: `${url}/api/payments/status/complete`,
       headers: {
-        'Logged-In-Session-Id': loggedInSessionId,
+        'Session-Id': sessionId,
       },
       body: {
         payment_id: paymentId,
@@ -541,12 +532,12 @@ class DatabaseFunctions {
     });
   }
 
-  static createNotification(loggedInSessionId, message, type, cb) {
+  static createNotification(sessionId, message, type, cb) {
     const options = {
       method: 'POST',
       url: `${url}/api/notifications`,
       headers: {
-        'Logged-In-Session-Id': loggedInSessionId,
+        'Session-Id': sessionId,
       },
       body: {
         notification_message: message,
@@ -561,12 +552,12 @@ class DatabaseFunctions {
     });
   }
 
-  static deleteNotification(loggedInSessionId, notificationId, cb) {
+  static deleteNotification(sessionId, notificationId, cb) {
     const options = {
       method: 'DELETE',
       url: `${url}/api/notifications`,
       headers: {
-        'Logged-In-Session-Id': loggedInSessionId,
+        'Session-Id': sessionId,
       },
       body: {
         notification_id: notificationId,

@@ -32,7 +32,7 @@ class Comments extends React.Component {
     const reloadCookies = () => {
       this.setState({
         sessionId: cookie.load('sessionId'),
-        loggedInSession: cookie.load('loggedInSession'),
+        loggedInAdmin: cookie.load('loggedInAdmin'),
         userComments: cookie.load('userComments') || [],
       });
     };
@@ -70,17 +70,17 @@ class Comments extends React.Component {
             >
               {c.comment}
               <br />
-              {HelperFunctions.includes(
+              {(HelperFunctions.includes(
                 this.state.userComments,
                 c.commentId,
-              ) && (
+              ) ||
+                this.state.loggedInAdmin) && (
                 <Button
                   className={getClassName('comments__component__button')}
                   destructive
                   onClick={() => {
                     DatabaseFunctions.deleteComment(
                       this.state.sessionId,
-                      this.state.loggedInSession,
                       pageId,
                       null,
                       c.commentId,
@@ -88,7 +88,9 @@ class Comments extends React.Component {
                     );
                   }}
                 >
-                  Delete my comment
+                  {this.state.loggedInAdmin
+                    ? 'Delete commet'
+                    : 'Delete my comment'}
                 </Button>
               )}
             </SubSection>

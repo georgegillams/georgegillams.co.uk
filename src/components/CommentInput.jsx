@@ -20,15 +20,13 @@ class CommentInput extends React.Component {
       name: '',
       comment: '',
       result: null,
-      cookiesAccepted: cookie.load('cookiesAccepted'),
-      sessionId: null,
+      sessionId: cookie.load('sessionId'),
     };
   }
 
   componentDidMount() {
     const reloadCookies = () => {
       this.setState({
-        cookiesAccepted: cookie.load('cookiesAccepted'),
         sessionId: cookie.load('sessionId'),
         userComments: cookie.load('userComments') || [],
       });
@@ -59,7 +57,10 @@ class CommentInput extends React.Component {
           JSON.stringify(this.state.userComments),
         );
         newUserComments.push(result);
-        cookie.save('userComments', newUserComments, { path: '/' });
+        cookie.save('userComments', newUserComments, {
+          path: '/',
+          expires: new Date(Date.now() + 24 * 60 * 60 * 100 * 1000),
+        });
       },
     );
   };
@@ -74,7 +75,7 @@ class CommentInput extends React.Component {
 
     return (
       <div className={classNameFinal.join(' ')} {...rest}>
-        {this.state.cookiesAccepted ? (
+        {this.state.sessionId ? (
           <div>
             {this.state.result ? (
               <SubSection noAnchor name="Thanks for your comment 👍" />

@@ -30,17 +30,22 @@ class AdminNotificationsPage extends React.Component {
       DatabaseFunctions.getPaymentRequestCount(result => {
         this.setState({ paymentsCount: result });
       });
-      if (this.props.loggedInSession !== '') {
-        DatabaseFunctions.getPayments(this.props.loggedInSession, result => {
+      if (this.props.loggedInAdmin !== '') {
+        DatabaseFunctions.getPayments(this.props.loggedInAdmin, result => {
           this.setState({ payments: result });
         });
       }
     };
     const getBlogs = () => {
-      if (this.props.loggedInSession !== '') {
-        DatabaseFunctions.getBlogs('all', this.props.loggedInSession, [], result => {
-          this.setState({ allBlogs: result });
-        });
+      if (this.props.loggedInAdmin !== '') {
+        DatabaseFunctions.getBlogs(
+          'all',
+          this.props.loggedInAdmin,
+          [],
+          result => {
+            this.setState({ allBlogs: result });
+          },
+        );
       }
       DatabaseFunctions.getBlogs('all', '', [], result => {
         this.setState({ publishedBlogs: result });
@@ -55,14 +60,17 @@ class AdminNotificationsPage extends React.Component {
   }
 
   render() {
-    const { className, loggedInSession, ...rest } = this.props;
+    const { className, loggedInAdmin, sessionId, ...rest } = this.props;
 
     const classNameFinal = [];
     if (className) classNameFinal.push(className);
 
     return (
       <Section name="Notifications" {...rest}>
-        <AdminNotifications loggedInSession={loggedInSession} />
+        <AdminNotifications
+          sessionId={sessionId}
+          loggedInAdmin={loggedInAdmin}
+        />
       </Section>
     );
   }
