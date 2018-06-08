@@ -8,7 +8,7 @@ import STYLES from '../pages.scss';
 
 const getClassName = className => STYLES[className] || 'UNKNOWN';
 
-class AdminNotificationsw extends React.Component {
+class AdminNotifications extends React.Component {
   constructor(props) {
     super(props);
 
@@ -27,7 +27,7 @@ class AdminNotificationsw extends React.Component {
   }
 
   render() {
-    const { loggedInSession, className, ...rest } = this.props;
+    const { loggedInAdmin, sessionId, className, ...rest } = this.props;
 
     const classNameFinal = [];
     if (className) classNameFinal.push(className);
@@ -40,12 +40,12 @@ class AdminNotificationsw extends React.Component {
             <br />
             {n.notificationType}
             <br />
-            {loggedInSession && (
+            {loggedInAdmin && (
               <Button
                 destructive
                 onClick={() => {
                   DatabaseFunctions.deleteNotification(
-                    loggedInSession,
+                    sessionId,
                     n.notificationId,
                     result => null,
                   );
@@ -56,7 +56,7 @@ class AdminNotificationsw extends React.Component {
             )}
           </div>
         ))}
-        {loggedInSession && (
+        {loggedInAdmin && (
           <div>
             <br />
             <br />
@@ -83,7 +83,7 @@ class AdminNotificationsw extends React.Component {
             <Button
               onClick={() => {
                 DatabaseFunctions.createNotification(
-                  loggedInSession,
+                  sessionId,
                   this.state.message,
                   this.state.type,
                   result => null,
@@ -99,4 +99,4 @@ class AdminNotificationsw extends React.Component {
   }
 }
 
-export default AdminNotificationsw;
+export default AdminNotifications;
