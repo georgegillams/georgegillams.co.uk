@@ -30,6 +30,7 @@ class DefaultLayout extends React.Component {
           DatabaseFunctions.getNewSessionId(({ sessionId }) => {
             cookie.save('sessionId', sessionId, {
               path: '/',
+              expires: new Date(Date.now() + 24 * 60 * 60 * 100 * 1000),
             });
           });
         }

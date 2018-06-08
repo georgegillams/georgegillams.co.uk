@@ -61,7 +61,10 @@ class CookieBanner extends Component {
           <Button
             className={getClassName('cookie-banner__button')}
             onClick={() => {
-              cookie.save('cookiesAccepted', true, { path: '/' });
+              cookie.save('cookiesAccepted', true, {
+                path: '/',
+                expires: new Date(Date.now() + 24 * 60 * 60 * 100 * 1000),
+              });
               this.setState({ cookiesAccepted: true });
             }}
           >

@@ -27,7 +27,10 @@ class AdminLogin extends React.Component {
         this.setState({ loginError: true });
       } else {
         this.setState({ loginError: false });
-        cookie.save('loggedInSession', result.loggedInSessionId, { path: '/' });
+        cookie.save('loggedInSession', result.loggedInSessionId, {
+          path: '/',
+          expires: new Date(Date.now() + 24 * 60 * 60 * 100 * 1000),
+        });
       }
     });
   };
