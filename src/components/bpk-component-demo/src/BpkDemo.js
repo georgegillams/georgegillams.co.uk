@@ -164,6 +164,7 @@ export default function bpkDemo(
     generateCode = props => {
       let finalString = `import ${componentName} from ${packageName};\n\n  ...\n\n`;
       finalString += `  return (\n    <${componentName}\n`;
+      let children = null;
       for (let p = 0; p < Object.keys(props).length; p += 1) {
         const propName = Object.keys(props)[p];
         const propValue = props[propName];
@@ -171,7 +172,12 @@ export default function bpkDemo(
           Component.defaultProps &&
           propValue !== Component.defaultProps[propName]
         ) {
-          if (typeof propValue === 'string') {
+          if (propName === 'children') {
+            children =
+              propValue.toString() === '[object Object]'
+                ? '{nodeValue}'
+                : propValue;
+          } else if (typeof propValue === 'string') {
             finalString += `      ${propName}="${propValue}"\n`;
           } else if (typeof propValue === 'boolean' && propValue === true) {
             finalString += `      ${propName}\n`;
@@ -180,7 +186,13 @@ export default function bpkDemo(
           }
         }
       }
-      finalString += `    />\n  );`;
+      if (children) {
+        finalString += `    >\n`;
+        finalString += `      ${children}\n`;
+        finalString += `    </${componentName}>\n  );`;
+      } else {
+        finalString += `    />\n  );`;
+      }
       return finalString;
     };
 
