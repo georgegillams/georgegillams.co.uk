@@ -146,6 +146,21 @@ router.get('/api/hello', (req, res) => {
   res.send({ express: 'Hello From Express' });
 });
 
+const setSessionLastActiveNow = sessionId => {
+  if (sessionId !== undefined) {
+    client.lrange(`active_sessions`, 0, -1, (err, reply) => {
+      for (let i = 0; i < reply.length; i += 1) {
+        const session = JSON.parse(reply[i]);
+        if (session.sessionId === sessionId) {
+          session.lastActive = Date.now();
+          client.lset(`active_sessions`, i, JSON.stringify(session));
+          return;
+        }
+      }
+    });
+  }
+};
+
 const checkAdminSession = (loggedInSessionId, cb, cbObj) => {
   const newCbObj = JSON.parse(JSON.stringify(cbObj));
 
@@ -169,6 +184,7 @@ const checkSession = (sessionId, cb) => {
       if (compare(JSON.parse(reply[i]).sessionId, sessionId)) {
         cbObj.activeSession = true;
         checkAdminSession(sessionId, cb, cbObj);
+        setSessionLastActiveNow(sessionId);
         return;
       }
     }
@@ -249,6 +265,7 @@ router.get('/api/session-id', (req, res) => {
     `active_sessions`,
     JSON.stringify({
       sessionId,
+      lastActive: Date.now(),
       ipAddress,
     }),
   ]);
