@@ -203,16 +203,19 @@ router.get('/api/ping-test', (req, res) => {
 });
 
 router.get('/api/comments', (req, res) => {
-  const pageId = req.headers.page_id;
-  client.lrange(`${pageId}_comments`, 0, -1, (err, reply) => {
-    const result = [];
-    for (let i = 0; i < reply.length; i += 1) {
-      const comment = JSON.parse(reply[i]);
-      // REMOVE commenterSessionId VALUE BEFORE SENDING DATA:
-      comment.commenterSessionId = null;
-      result.push(comment);
-    }
-    res.send(result);
+  const sessId = req.headers['session-id'];
+  checkSession(sessId, ({ activeSession, loggedInAdmin }) => {
+    const pageId = req.headers.page_id;
+    client.lrange(`${pageId}_comments`, 0, -1, (err, reply) => {
+      const result = [];
+      for (let i = 0; i < reply.length; i += 1) {
+        const comment = JSON.parse(reply[i]);
+        // REMOVE commenterSessionId VALUE BEFORE SENDING DATA:
+        comment.commenterSessionId = null;
+        result.push(comment);
+      }
+      res.send(result);
+    });
   });
 });
 
@@ -243,8 +246,11 @@ router.get('/api/logged-in-session-ids', (req, res) => {
 });
 
 router.get('/api/comments/page_ids', (req, res) => {
-  client.lrange('pageIds', 0, -1, (err, reply) => {
-    res.send(reply);
+  const sessId = req.headers['session-id'];
+  checkSession(sessId, ({ activeSession, loggedInAdmin }) => {
+    client.lrange('pageIds', 0, -1, (err, reply) => {
+      res.send(reply);
+    });
   });
 });
 
@@ -444,21 +450,27 @@ router.delete('/api/ping-tests', (req, res) => {
 });
 
 router.get('/api/payments/count', (req, res) => {
-  client.lrange(`payments`, 0, -1, (err, reply) => {
-    res.send([reply.length]);
+  const sessId = req.headers['session-id'];
+  checkSession(sessId, ({ activeSession, loggedInAdmin }) => {
+    client.lrange(`payments`, 0, -1, (err, reply) => {
+      res.send([reply.length]);
+    });
   });
 });
 
 router.get('/api/payments/single', (req, res) => {
-  const paymentId = req.headers.payment_id;
-  client.lrange(`payments`, 0, -1, (err, reply) => {
-    for (let i = 0; i < reply.length; i += 1) {
-      if (JSON.parse(reply[i]).paymentId === paymentId) {
-        res.send(JSON.parse(reply[i]));
-        return;
+  const sessId = req.headers['session-id'];
+  checkSession(sessId, ({ activeSession, loggedInAdmin }) => {
+    const paymentId = req.headers.payment_id;
+    client.lrange(`payments`, 0, -1, (err, reply) => {
+      for (let i = 0; i < reply.length; i += 1) {
+        if (JSON.parse(reply[i]).paymentId === paymentId) {
+          res.send(JSON.parse(reply[i]));
+          return;
+        }
       }
-    }
-    res.send(null);
+      res.send(null);
+    });
   });
 });
 
@@ -480,52 +492,55 @@ router.get('/api/payments', (req, res) => {
 });
 
 router.post('/api/payments', (req, res) => {
-  const { reference, amount } = req.body;
-  const monzoMeLink = req.body.monzo_me_link;
-  const accountNumber = req.body.account_number;
-  const sortCode = req.body.sort_code;
-  let valid = true;
-  if (!amount.match(DECIMAL_REGEX)) {
-    valid = false;
-  }
-  if (monzoMeLink !== '' && !monzoMeLink.matches(MONZOME_LINK_REGEX)) {
-    valid = false;
-  }
-  if (!reference.match(STRING_REGEX)) {
-    valid = false;
-  }
-  if (!accountNumber.match(INT_REGEX)) {
-    valid = false;
-  }
-  if (!sortCode.match(SORT_CODE_REGEX)) {
-    valid = false;
-  }
-  if (!valid) {
-    res.send({
-      error:
-        'There was an error processing the request 😿 Please try again later.',
-    });
+  const sessId = req.headers['session-id'];
+  checkSession(sessId, ({ activeSession, loggedInAdmin }) => {
+    const { reference, amount } = req.body;
+    const monzoMeLink = req.body.monzo_me_link;
+    const accountNumber = req.body.account_number;
+    const sortCode = req.body.sort_code;
+    let valid = true;
+    if (!amount.match(DECIMAL_REGEX)) {
+      valid = false;
+    }
+    if (monzoMeLink !== '' && !monzoMeLink.matches(MONZOME_LINK_REGEX)) {
+      valid = false;
+    }
+    if (!reference.match(STRING_REGEX)) {
+      valid = false;
+    }
+    if (!accountNumber.match(INT_REGEX)) {
+      valid = false;
+    }
+    if (!sortCode.match(SORT_CODE_REGEX)) {
+      valid = false;
+    }
+    if (!valid) {
+      res.send({
+        error:
+          'There was an error processing the request 😿 Please try again later.',
+      });
+      res.end();
+      return;
+    }
+    const paymentId = Math.random()
+      .toString(36)
+      .substring(7);
+    client.rpush([
+      `payments`,
+      JSON.stringify({
+        paymentId,
+        reference,
+        amount,
+        monzoMeLink,
+        accountNumber,
+        sortCode,
+        status: 'pending',
+        timestamp: Date.now(),
+      }),
+    ]);
+    res.send({ payment_id: paymentId });
     res.end();
-    return;
-  }
-  const paymentId = Math.random()
-    .toString(36)
-    .substring(7);
-  client.rpush([
-    `payments`,
-    JSON.stringify({
-      paymentId,
-      reference,
-      amount,
-      monzoMeLink,
-      accountNumber,
-      sortCode,
-      status: 'pending',
-      timestamp: Date.now(),
-    }),
-  ]);
-  res.send({ payment_id: paymentId });
-  res.end();
+  });
 });
 
 router.delete('/api/payments', (req, res) => {
@@ -847,12 +862,15 @@ router.post('/api/blog-posts/override-published-timestamp', (req, res) => {
 });
 
 router.get('/api/notifications', (req, res) => {
-  client.lrange('notifications', 0, -1, (err, reply) => {
-    const result = [];
-    for (let i = 0; i < reply.length; i += 1) {
-      result.push(JSON.parse(reply[i]));
-    }
-    res.send(result);
+  const sessId = req.headers['session-id'];
+  checkSession(sessId, ({ activeSession, loggedInAdmin }) => {
+    client.lrange('notifications', 0, -1, (err, reply) => {
+      const result = [];
+      for (let i = 0; i < reply.length; i += 1) {
+        result.push(JSON.parse(reply[i]));
+      }
+      res.send(result);
+    });
   });
 });
 
