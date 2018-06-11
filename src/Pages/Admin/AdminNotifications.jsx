@@ -1,6 +1,6 @@
 import React from 'react';
 import BpkInput from 'bpk-component-input';
-import SubSection from '../../components/SubSection';
+import cookie from 'react-cookies';
 import Button from '../../components/Button';
 import DatabaseFunctions from '../../DatabaseFunctions';
 
@@ -17,12 +17,20 @@ class AdminNotifications extends React.Component {
 
   componentDidMount() {
     const getNotifications = () => {
-      DatabaseFunctions.getNotifications(results => {
+      DatabaseFunctions.getNotifications(this.state.sessionId, results => {
         this.setState({ notifications: results });
       });
     };
 
+    const reloadCookies = () => {
+      this.setState({
+        sessionId: cookie.load('sessionId'),
+      });
+    };
+
+    reloadCookies();
     getNotifications();
+    setInterval(reloadCookies, 1000);
     setInterval(getNotifications, 1000);
   }
 
