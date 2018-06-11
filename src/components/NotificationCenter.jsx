@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
+import cookie from 'react-cookies';
 import BpkIconClose from 'bpk-component-icon/lg/close';
 import BpkIconMenu from 'bpk-component-icon/lg/menu';
 import Logo from './Logo';
@@ -27,15 +28,23 @@ class NotificationCenter extends Component {
 
   componentDidMount() {
     const getNotifications = () => {
-      DatabaseFunctions.getNotifications(results => {
+      DatabaseFunctions.getNotifications(this.state.sessionId, results => {
         this.setState({
           notifications: results,
         });
       });
     };
 
+    const reloadCookies = () => {
+      this.setState({
+        sessionId: cookie.load('sessionId'),
+      });
+    };
+
+    reloadCookies();
     getNotifications();
-    setInterval(getNotifications, 2000);
+    setInterval(reloadCookies, 1000);
+    setInterval(getNotifications, 1000);
   }
 
   render() {

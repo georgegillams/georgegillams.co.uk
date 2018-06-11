@@ -33,14 +33,14 @@ const Work = props => {
       <Section name="My Work">
         <LlAnimatedContent>
           {/* TODO REMOVE "nearlyw" */}
-          <SubSection name="My Degree">
+          <SubSection name="Software Engineering Masters">
             I (nearly 🤞) have a Masters in Software Engineering from the
             University of Southampton.
             <br />
             <br />
             <Button href="/work/degree">Information about my degree →</Button>
           </SubSection>
-          <SubSection name="Where it all started">
+          <SubSection name="Work">
             I started my Software Engineering career at{' '}
             <TextLink
               href="http://www.leonardocompany.com/en/-/ewos-electronic_warfare_operational_support"
@@ -48,18 +48,19 @@ const Work = props => {
             >
               Leonardo{' '}
             </TextLink>
-            where I worked for 60 weeks, mainly on a .NET analysis framework
-            which supported other development teams in building powerful
-            applications.
+            where I worked for 60 weeks, mostly on a .NET frameworks for
+            analysis tools. The frameworks enabled other development teams
+            within the company to build powerful applications for their
+            products.
             <br />
             <br />
             I then moved on to become a Software Engineering intern at
-            Skyscanner, where I worked on their open-source design system,{' '}
+            Skyscanner, where I still work on their open-source design system,{' '}
             <TextLink href="https://backpack.github.io/" external>
               Backpack{' '}
             </TextLink>. I continued this work whilst completing my Masters in
-            Southampton. Once my Masters is out of the way, I will be rejoining
-            Skyscanner as a full-time employee.
+            Southampton, and then rejoined as a full-time graduate employee this
+            summer.
           </SubSection>
         </LlAnimatedContent>
         <LlAnimatedContent>
@@ -78,27 +79,28 @@ const Work = props => {
                 squad. By combining Design and Engineering, we meet our goal of
                 providing support to other teams within the business, allowing
                 them to quickly construct quality front-end products with
-                coherence. We released{' '}
+                coherence. We release{' '}
                 <TextLink external href="https://npmjs.com/">
                   NPM{' '}
                 </TextLink>
-                packages which allowed users to consume{' '}
+                packages which allow users to consume our token values and{' '}
                 <TextLink external href="https://reactjs.org/">
                   React{' '}
                 </TextLink>
-                components, or build their own using our{' '}
-                <TextLink external href="http://sass-lang.com/">
-                  SASS{' '}
-                </TextLink>
-                mixins. Shortly after joining Backpack we went open-source, and
-                then started supporting app-development through{' '}
+                /
                 <TextLink
                   external
                   href="https://facebook.github.io/react-native/"
                 >
-                  React-Native{' '}
-                </TextLink>. These two changes made my time with Backpack
-                particularly interesting.
+                  React Native{' '}
+                </TextLink>
+                components. Our token values are available as
+                <TextLink external href="http://sass-lang.com/">
+                  SASS{' '}
+                </TextLink>
+                mixins, Swift or Objective C code. Our transition to open-source
+                happened soon after I joined Backpack making my initial
+                placement particularly interesting.
                 <br />
                 <br />
                 <TextLink external href="https://reactjs.org/">
@@ -114,15 +116,39 @@ const Work = props => {
                 edited in place through the Demo component.
                 <br />
                 <br />
-                {/* <FadingLazyLoadedImage
-              className={getClassName("apps__image")}
-              altText="Backpack component"
-              style={{ width: "45rem" }}
-              width={478}
-              height={169}
-              src={backpackScreenshot}
-            /> */}
+                This is still a WIP, but a proof-of-concept is available to use.
+                <br />
+                <br />
+                <Button href="/design/components">
+                  See the demo component POC in action →
+                </Button>
+                <br />
+                <br />
                 <Button hrefExternal href="https://backpack.github.io/">
+                  Read more here →
+                </Button>
+              </SubSection>
+            </LlAnimatedContent>
+            <LlAnimatedContent>
+              <SubSection name="Password Character Extractor">
+                I found the login process for a number of sites (particularly UK
+                bank websites) frustrating as they often require specific
+                characters from a password or memorable word. This is something
+                that LastPass cannot handle for me, so I created an offline tool
+                to help.
+                <br />
+                <br />
+                <FadingLazyLoadedImage
+                  className={getClassName('apps__image')}
+                  altText="Password Character Extraction Use"
+                  style={{ maxWidth: '45rem' }}
+                  width={2224}
+                  height={514}
+                  src="https://i.imgur.com/jc8QRic.png"
+                />
+                <br />
+                <br />
+                <Button href="/apps/password-character-extractor">
                   Read more here →
                 </Button>
               </SubSection>
@@ -149,7 +175,7 @@ const Work = props => {
                   style={{ maxWidth: '45rem' }}
                   width={2266}
                   height={1728}
-                  src="reactComponentAcademicReferenceUse"
+                  src="https://i.imgur.com/7TmJg24.png"
                 />
                 <br />
                 <br />
@@ -161,30 +187,6 @@ const Work = props => {
                   href="https://github.com/georgegillams/react-component-academic-reference"
                 >
                   View on GitHub →
-                </Button>
-              </SubSection>
-            </LlAnimatedContent>
-            <LlAnimatedContent>
-              <SubSection name="Password Character Extractor">
-                I found the login process for a number of sites (particularly UK
-                bank websites) frustrating as they often require specific
-                characters from a password or memorable word. This is something
-                that LastPass cannot handle for me, so I created an offline tool
-                to help.
-                <br />
-                <br />
-                <FadingLazyLoadedImage
-                  className={getClassName('apps__image')}
-                  altText="Password Character Extraction Use"
-                  style={{ maxWidth: '45rem' }}
-                  width={2224}
-                  height={514}
-                  src="https://i.imgur.com/jc8QRic.png"
-                />
-                <br />
-                <br />
-                <Button href="/apps/password-character-extractor">
-                  Read more here →
                 </Button>
               </SubSection>
             </LlAnimatedContent>

@@ -515,11 +515,13 @@ class DatabaseFunctions {
     });
   }
 
-  static getNotifications(cb) {
+  static getNotifications(sessionId, cb) {
     const options = {
       method: 'GET',
       url: `${url}/api/notifications`,
-      headers: {},
+      headers: {
+        'Session-Id': sessionId,
+      },
     };
 
     request(options, (error, response, body) => {
