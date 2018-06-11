@@ -63,6 +63,8 @@ class AdminSessionsPage extends React.Component {
                       <br />
                       {session.ipAddress}
                       <br />
+                      {new Date(session.lastActive).toString()}
+                      <br />
                       <Button
                         destructive
                         onClick={() =>
