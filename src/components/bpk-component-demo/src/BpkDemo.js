@@ -145,11 +145,11 @@ export default function bpkDemo(
       if (props === undefined) {
         return {};
       }
-      console.log(props);
+      // console.log(props);
       for (let p = 0; p < Object.keys(props).length; p += 1) {
         const propName = Object.keys(props)[p];
-        console.log(propName);
-        console.log(props[propName]);
+        // console.log(propName);
+        // console.log(props[propName]);
         if (props[propName] === 'true') {
           props[propName] = true;
         } else if (props[propName] === 'false') {
