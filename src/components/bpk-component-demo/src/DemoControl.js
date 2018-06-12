@@ -20,10 +20,10 @@
 
 import React, { type Node } from 'react';
 import PropTypes from 'prop-types';
-import BpkCheckBox from 'bpk-component-checkbox';
 import DemoBooleanComponent from './DemoBooleanComponent';
 import DemoStringComponent from './DemoStringComponent';
 import DemoNumberComponent from './DemoNumberComponent';
+import DemoFunctionComponent from './DemoFunctionComponent';
 
 import STYLES from './bpk-demo.scss';
 
@@ -46,6 +46,9 @@ const DemoControl = (props: Props) => {
 
   let EditorComponent = null;
   switch (typeof value) {
+    case 'function':
+      EditorComponent = DemoFunctionComponent;
+      break;
     case 'boolean':
       EditorComponent = DemoBooleanComponent;
       break;
@@ -54,9 +57,6 @@ const DemoControl = (props: Props) => {
       break;
     case 'string':
       EditorComponent = DemoStringComponent;
-      break;
-    case 'function':
-      EditorComponent = DemoFunctionComponent;
       break;
     default:
       EditorComponent = DemoStringComponent;

@@ -44,11 +44,12 @@ const DemoFunctionComponent = (props: Props) => {
 
   return (
     <div>
-      <BpkLabel htmlFor="input">{`${propName} (function)`}</BpkLabel>
+      <BpkLabel htmlFor={propName}>{`${propName} (function)`}</BpkLabel>
       <BpkInput
         className={className}
         value={value}
         onChange={event => onChange(jsParse(event.target.value))}
+        id={propName}
         label={propName}
         {...rest}
       />
