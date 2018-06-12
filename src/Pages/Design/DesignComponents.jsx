@@ -1,5 +1,7 @@
-import React from 'react';
+import React, { createElement } from 'react';
+// import createFragment from 'react-addons-create-fragment';
 import withLazyLoading from '../../components/withLazyLoading';
+import withGraphicContentBehaviour from '../../components/withGraphicContentBehaviour';
 import Section from '../../components/Section';
 import TextLink from '../../components/TextLink';
 import SubSection from '../../components/SubSection';
@@ -18,6 +20,7 @@ import AnimatedContent from '../../components/AnimatedContent';
 import LicenseInfo from '../../components/LicenseInfo';
 import ColourPalleteItem from '../../components/ColourPalleteItem';
 import ArticleCard from '../../components/ArticleCard';
+import GraphicContent from '../../components/GraphicContent';
 import bpkDemo from '../../components/bpk-component-demo/src/BpkDemo';
 
 import STYLES from '../pages.scss';
@@ -28,6 +31,8 @@ const demoClassName = getClassName('pages__bpk-demo');
 
 const documentIfExists = typeof window !== 'undefined' ? document : null;
 const LlAnimatedContent = withLazyLoading(AnimatedContent, documentIfExists);
+
+const GcbGraphicContent = withGraphicContentBehaviour(GraphicContent);
 
 const LogoDemo = bpkDemo(Logo, 'Logo', 'na', { small: true, noPadding: true });
 const ButtonDemo = bpkDemo(Button, 'Button', 'na', {
@@ -75,6 +80,12 @@ const ArticleCardDemo = bpkDemo(ArticleCard, 'ArticleCard', 'na', {
   title: 'Card example',
   light: true,
 });
+const GraphicContentDemo = bpkDemo(GraphicContent, 'GraphicContent', 'na', {
+  children: '// Child element //',
+});
+const AnimatedContentDemo = bpkDemo(AnimatedContent, 'AnimatedContent', 'na', {
+  children: '// Child element //',
+});
 
 class DesignComponents extends React.Component {
   constructor(props) {
@@ -91,60 +102,76 @@ class DesignComponents extends React.Component {
 
     return (
       <Section name="Components">
-        <SubSection noAnchor name="Logo">
-          <LogoDemo className={demoClassName} />
+        <SubSection noAnchor name="Animated content">
+          <AnimatedContentDemo className={demoClassName} />
         </SubSection>
         <SubSection noAnchor name="Button">
           <ButtonDemo className={demoClassName} />
         </SubSection>
-        <SubSection noAnchor name="Text link">
-          <TextLinkDemo className={demoClassName} />
-        </SubSection>
-        <SubSection noAnchor name="Date">
-          <ArticleDateDemo className={demoClassName} />
-        </SubSection>
-        <SubSection noAnchor name="Code">
-          <CodeInlineDemo className={demoClassName} />
-          <br />
-          <br />
-          <CodeDemo className={demoClassName} />
-        </SubSection>
-        <SubSection noAnchor name="Quote">
-          <QuoteDemo className={demoClassName} />
-        </SubSection>
-        <SubSection noAnchor name="Tag">
-          <TagDemo className={demoClassName} />
-        </SubSection>
-        <SubSection noAnchor name="Notification">
-          <NotificationDemo className={demoClassName} />
-        </SubSection>
-        <SubSection noAnchor name="License info">
-          <LicenseInfoDemo className={demoClassName} />
-        </SubSection>
         <SubSection noAnchor name="Card">
           <ArticleCardDemo className={demoClassName} />
+        </SubSection>
+        <SubSection noAnchor name="Code (block)">
+          <CodeDemo className={demoClassName} />
+        </SubSection>
+        <SubSection noAnchor name="Code (inline)">
+          <CodeInlineDemo className={demoClassName} />
         </SubSection>
         <SubSection noAnchor name="Colour pallete item">
           <ColourPalleteItemDemo className={demoClassName} />
         </SubSection>
+        <SubSection noAnchor name="Date">
+          <ArticleDateDemo className={demoClassName} />
+        </SubSection>
+        <SubSection noAnchor name="Graphic content">
+          <GraphicContentDemo className={demoClassName} />
+        </SubSection>
+        <SubSection noAnchor name="License info">
+          <LicenseInfoDemo className={demoClassName} />
+        </SubSection>
         <SubSection noAnchor name="Loading spinner">
           <Loading />
+        </SubSection>
+        <SubSection noAnchor name="Logo">
+          <LogoDemo className={demoClassName} />
+        </SubSection>
+        <SubSection noAnchor name="Notification">
+          <NotificationDemo className={demoClassName} />
+        </SubSection>
+        <SubSection noAnchor name="Quote">
+          <QuoteDemo className={demoClassName} />
         </SubSection>
         <SubSection noAnchor name="Redirect notice">
           <RedirectNotice />
         </SubSection>
-        <SubSection noAnchor name="Animated container">
-          <LlAnimatedContent>
-            <div
-              style={{
-                width: '25rem',
-                maxWidth: '100%',
-                height: '5rem',
-                backgroundColor: '#e02626',
-              }}
-            />
-          </LlAnimatedContent>
+        <SubSection noAnchor name="Tag">
+          <TagDemo className={demoClassName} />
         </SubSection>
+        <SubSection noAnchor name="Text link">
+          <TextLinkDemo className={demoClassName} />
+        </SubSection>
+        <Section name="Components with stateful HOCs">
+          <SubSection noAnchor name="Animated container with HOC">
+            <LlAnimatedContent>
+              <div
+                style={{
+                  width: '100%',
+                  maxWidth: '100%',
+                  height: '5rem',
+                  backgroundColor: '#e02626',
+                }}
+              />
+            </LlAnimatedContent>
+          </SubSection>
+          <SubSection noAnchor name="Graphic content with HOC">
+            <GcbGraphicContent>
+              <img
+                alt="test"
+                src="https://placehold.it/800x390/FF3F41/&text=image1"
+              />
+            </GcbGraphicContent>
+          </SubSection>
+        </Section>
       </Section>
     );
   }
