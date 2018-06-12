@@ -5,20 +5,23 @@ import BpkBadge from 'bpk-component-badge';
 import GitHubForkRibbon from 'react-github-fork-ribbon';
 import withLazyLoading from '../../components/withLazyLoading';
 import Section from '../../components/Section';
-// import BpkDemo from 'bpk-component-demo';
-import BpkDemo from '../../components/bpk-component-demo/index';
 import Button from '../../components/Button';
 import SubSection from '../../components/SubSection';
+import bpkDemo from '../../components/bpk-component-demo/src/BpkDemo';
+import PageSwitchScroller from '../../components/PageSwitchScroller';
+import BpkComponentDemoAnimatedButton from './BpkComponentDemoAnimatedButton';
 
 import STYLES from './apps.scss';
+import STYLES_2 from '../pages.scss';
 
-const getClassName = className => STYLES[className] || 'UNKNOWN';
+const getClassName = className =>
+  STYLES[className] || STYLES_2[className] || 'UNKNOWN';
 const documentIfExists = typeof window !== 'undefined' ? document : null;
 const FadingLazyLoadedImage = withLoadingBehavior(
   withLazyLoading(BpkImage, documentIfExists),
 );
 
-const ButtonDemo = BpkDemo(Button, 'Button', 'package-name-goes-here', {});
+const ButtonDemo = bpkDemo(Button, 'Button', 'package-name-goes-here', {});
 
 const BpkComponentDemoPage = props => {
   const { className, ...rest } = props;
@@ -29,7 +32,12 @@ const BpkComponentDemoPage = props => {
 
   return (
     <main className={classNameFinal.join(' ')} {...rest}>
-      <div className={getClassName('apps__showcase')}>
+      <PageSwitchScroller />
+      <div
+        className={`${getClassName('apps__showcase')} ${getClassName(
+          'apps__showcase--grey',
+        )}`}
+      >
         <GitHubForkRibbon
           position="right-bottom"
           color="red"
@@ -42,11 +50,11 @@ const BpkComponentDemoPage = props => {
           <SubSection
             noAnchor
             light
-            name="Unrestricted documentation of React component features"
+            name="Unrestricted documentation of stateless React components"
           />
         </Section>
         <div className={getClassName('apps__showcase--padded')}>
-          <BpkBadge className={getClassName('apps__image')}>Component</BpkBadge>
+          <BpkComponentDemoAnimatedButton />
         </div>
       </div>
       <div className={getClassName('apps__download-container')}>
@@ -77,7 +85,10 @@ const BpkComponentDemoPage = props => {
         </Section>
       </div>
       <Section name="Features">
-        <div className={getClassName('apps__feature-container')}>
+        <div
+          className={getClassName('apps__feature-container')}
+          style={{ marginBottom: '2rem' }}
+        >
           <SubSection
             name="Cover all use-cases"
             className={getClassName('apps__feature-section')}
@@ -89,16 +100,6 @@ const BpkComponentDemoPage = props => {
             <br />
             <br />
             So no more feature requests for things that can already be done!
-            <br />
-            <br />
-            <FadingLazyLoadedImage
-              className={getClassName('apps__image')}
-              altText="Password Character Extraction Tool"
-              style={{ width: '100%' }}
-              width={1154}
-              height={422}
-              src="https://i.imgur.com/L8RHzZX.gif"
-            />
           </SubSection>
           <SubSection
             name="Easy"
@@ -112,13 +113,14 @@ const BpkComponentDemoPage = props => {
             So everyone wins.
           </SubSection>
         </div>
-        <ButtonDemo
-          compact={false}
-          customPropValues={{
-            children: 'Hello!',
-            bouncy: true,
-          }}
-        />
+        <SubSection noAnchor name="Try it out">
+          <ButtonDemo
+            className={getClassName('pages__bpk-demo')}
+            customPropValues={{
+              children: 'Button',
+            }}
+          />
+        </SubSection>
         <br />
         <br />
         <Button
@@ -128,6 +130,9 @@ const BpkComponentDemoPage = props => {
         >
           More information about Backpack
         </Button>
+        <br />
+        <br />
+        <Button href="/design/components">See more examples</Button>
       </Section>
     </main>
   );

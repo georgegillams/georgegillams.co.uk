@@ -121,7 +121,7 @@ const Work = props => {
                   use.
                   <br />
                   <br />
-                  <Button href="/design/components">
+                  <Button href="/work/bpk-component-demo">
                     See the demo component POC in action →
                   </Button>
                   <br />
