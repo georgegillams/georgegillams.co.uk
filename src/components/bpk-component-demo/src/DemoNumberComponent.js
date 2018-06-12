@@ -44,11 +44,12 @@ const DemoNumberComponent = (props: Props) => {
 
   return (
     <div>
-      <BpkLabel htmlFor="input">{`${propName} (number)`}</BpkLabel>
+      <BpkLabel htmlFor={propName}>{`${propName} (number)`}</BpkLabel>
       <BpkInput
         className={className}
         value={value}
         onChange={event => onChange(parseFloat(event.target.value))}
+        id={propName}
         label={propName}
         {...rest}
       />
