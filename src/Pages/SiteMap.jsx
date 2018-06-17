@@ -117,7 +117,9 @@ class SiteMap extends Component {
           <br />
           <TextLink href="/payments">Payments</TextLink>
           <br />
-          <TextLink href="/design">Design</TextLink>
+          <TextLink href="/design/colours">Design</TextLink>
+          <br />
+          <TextLink href="/design/privacy-policy">Privacy policy</TextLink>
           <br />
           <TextLink href="/admin">Admin</TextLink>
         </SubSection>

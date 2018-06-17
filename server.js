@@ -754,6 +754,10 @@ router.post('/api/blog-posts', (req, res) => {
     const blogShowInBlogsList = req.body.blog_show_in_blogs_list;
     const blogShowInTravelBlogsList = req.body.blog_show_in_travel_blogs_list;
     const blogCardDate = req.body.blog_card_date;
+    let publishedTimestamp = req.body.blog_published_timestamp;
+    if (publishedTimestamp === '') {
+      publishedTimestamp = null;
+    }
     client.rpush([
       `blog-posts`,
       JSON.stringify({
@@ -770,7 +774,7 @@ router.post('/api/blog-posts', (req, res) => {
         blogShowInBlogsList,
         blogShowInTravelBlogsList,
         blogCardDate,
-        publishedTimestamp: null,
+        publishedTimestamp: publishedTimestamp || null,
       }),
     ]);
     res.send({ blog_id: blogId });
@@ -800,12 +804,15 @@ router.post('/api/blog-posts/update', (req, res) => {
     const blogShowInBlogsList = req.body.blog_show_in_blogs_list;
     const blogShowInTravelBlogsList = req.body.blog_show_in_travel_blogs_list;
     const blogCardDate = req.body.blog_card_date;
+    const blogPublishedTimestamp = req.body.blog_published_timestamp;
     if (blogId !== undefined) {
       client.lrange(`blog-posts`, 0, -1, (err, reply) => {
         for (let i = 0; i < reply.length; i += 1) {
           const blog = JSON.parse(reply[i]);
           if (blog.blogId === blogId) {
-            if (!blog.publishedTimestamp && blogPublished) {
+            if (blogPublishedTimestamp) {
+              blog.publishedTimestamp = blogPublishedTimestamp;
+            } else if (!blog.publishedTimestamp && blogPublished) {
               // blog has just been published for the first time:
               // Set Published date:
               blog.publishedTimestamp = Date.now();
@@ -824,32 +831,6 @@ router.post('/api/blog-posts/update', (req, res) => {
             blog.blogShowInBlogsList = blogShowInBlogsList;
             blog.blogShowInTravelBlogsList = blogShowInTravelBlogsList;
             blog.blogCardDate = blogCardDate;
-            client.lset(`blog-posts`, i, JSON.stringify(blog));
-            return;
-          }
-        }
-      });
-    }
-    res.send({ blog_id: blogId });
-    res.end();
-  });
-});
-
-router.post('/api/blog-posts/override-published-timestamp', (req, res) => {
-  const sessId = req.headers['session-id'];
-  checkSession(sessId, ({ activeSession, loggedInAdmin }) => {
-    if (!loggedInAdmin) {
-      res.end();
-      return;
-    }
-    const blogId = req.body.blog_id;
-    const blogPublishedTimestamp = req.body.blog_published_timestamp;
-    if (blogId !== undefined) {
-      client.lrange(`blog-posts`, 0, -1, (err, reply) => {
-        for (let i = 0; i < reply.length; i += 1) {
-          const blog = JSON.parse(reply[i]);
-          if (blog.blogId === blogId) {
-            blog.publishedTimestamp = blogPublishedTimestamp;
             client.lset(`blog-posts`, i, JSON.stringify(blog));
             return;
           }

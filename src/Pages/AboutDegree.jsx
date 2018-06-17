@@ -1,5 +1,6 @@
 import React from 'react';
 import BpkImage, { withLoadingBehavior } from 'bpk-component-image';
+import Countdown from 'react-countdown-now';
 import Section from '../components/Section';
 import SubSection from '../components/SubSection';
 import DegreeModule from '../components/DegreeModule';
@@ -77,6 +78,9 @@ class Degree extends React.Component {
             style={{ width: '100%', fontWeight: 'bold', color: 'darkorchid' }}
           >
             Purple values represent estimated values
+            <br />
+            Final results released:{' '}
+            <Countdown date={new Date('2018-06-21T16:00:00')} />
           </span>
           {/* TODO REMOVE_2 */}
           <br />

@@ -64,7 +64,7 @@ const AboutMe = props => {
                     'https://i.imgur.com/EPfA1yI.png', // engaged
                     'https://i.imgur.com/eldzRhk.jpg', // us
                     'https://i.imgur.com/n8JZuqv.jpg', // tiggs
-                    'https://i.imgur.com/yf9AhYh.jpg', // tm
+                    'https://i.imgur.com/mvvDmiL.jpg', // tm
                   ]}
                 />
               </div>
