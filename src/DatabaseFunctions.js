@@ -235,6 +235,7 @@ class DatabaseFunctions {
         blog_show_in_blogs_list: blog.blogShowInBlogsList,
         blog_show_in_travel_blogs_list: blog.blogShowInTravelBlogsList,
         blog_card_date: blog.blogCardDate,
+        blog_published_timestamp: blog.publishedTimestamp,
       },
       json: true,
     };
@@ -262,6 +263,7 @@ class DatabaseFunctions {
         blog_show_in_blogs_list: true,
         blog_show_in_travel_blogs_list: true,
         blog_card_date: null,
+        blog_published_timestamp: null,
       },
       json: true,
     };

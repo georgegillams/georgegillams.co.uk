@@ -67,6 +67,12 @@ class BlogEditor extends Component {
     this.props.onBlogChanged(newBlog);
   };
 
+  onBlogPublishedTimestampChanged = event => {
+    const newBlog = JSON.parse(JSON.stringify(this.props.blog));
+    newBlog.publishedTimestamp = event.target.value;
+    this.props.onBlogChanged(newBlog);
+  };
+
   onBlogShowInBlogsListChanged = event => {
     const newBlog = JSON.parse(JSON.stringify(this.props.blog));
     newBlog.blogShowInBlogsList = event.target.checked;
@@ -189,6 +195,15 @@ class BlogEditor extends Component {
           name="published"
           checked={blog.blogPublished}
           onChange={this.onBlogPublishedChanged}
+        />
+        <br />
+        <BpkInput
+          className={elementClassNameFinal.join(' ')}
+          id="blogPublishedTimestamp"
+          name="Blog published timestamp"
+          value={blog.publishedTimestamp}
+          onChange={this.onBlogPublishedTimestampChanged}
+          placeholder="Blog published timestamp"
         />
         <br />
         <BpkCheckBox
