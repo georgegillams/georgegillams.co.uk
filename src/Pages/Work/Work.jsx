@@ -95,7 +95,7 @@ const Work = props => {
                   >
                     React Native{' '}
                   </TextLink>
-                  components. Our token values are available as
+                  components. Our token values are available as{' '}
                   <TextLink external href="http://sass-lang.com/">
                     SASS{' '}
                   </TextLink>
