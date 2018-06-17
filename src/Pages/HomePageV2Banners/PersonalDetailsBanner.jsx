@@ -2,7 +2,6 @@ import React from 'react';
 import Section from '../../components/Section';
 import SubSection from '../../components/SubSection';
 import CalculationHelpers from './CalculationHelpers';
-import georgegillams from '../../images/georgegillams.png';
 import southamptonCitySkyline from '../../images/southamptonCitySkyline.svg';
 import londonCitySkyline from '../../images/londonCitySkyline.svg';
 import train from '../../images/train.svg';
@@ -11,7 +10,6 @@ import plane from '../../images/plane.svg';
 import cloud2 from '../../images/cloud2.svg';
 import cloud3 from '../../images/cloud3.svg';
 import downArrow from '../../images/downArrow.svg';
-import serreChevalier from '../../images/serreChevalierBanner.jpg';
 import STYLES from './home-page-banner.scss';
 
 const getClassName = className => STYLES[className] || 'UNKNOWN';
@@ -27,7 +25,7 @@ const PersonalDetailsBanner = props => {
           width: '100%',
           height: '75rem',
           backgroundColor: '#1E1E1E',
-          backgroundImage: `url(${serreChevalier})`,
+          backgroundImage: `url(https://i.imgur.com/gIccH4E.jpg)`,
           position: 'relative',
           textAlign: 'center',
         }}
@@ -285,7 +283,7 @@ const PersonalDetailsBanner = props => {
       )} ${getClassName('home-page-banner__banner-image')}`}
       style={{
         backgroundColor: '#1E1E1E',
-        backgroundImage: `url(${serreChevalier})`,
+        backgroundImage: `url(https://i.imgur.com/gIccH4E.jpg)`,
         // backgroundPositionY: `${backgroundImagePosition}rem`,
       }}
     >
@@ -374,7 +372,7 @@ const PersonalDetailsBanner = props => {
         <img
           style={{ width: '100%' }}
           altText="George Gillams"
-          src={georgegillams}
+          src="https://i.imgur.com/sJQ2H3u.png"
         />
       </div>
       <img

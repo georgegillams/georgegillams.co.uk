@@ -21,6 +21,7 @@ import LicenseInfo from '../../components/LicenseInfo';
 import ColourPalleteItem from '../../components/ColourPalleteItem';
 import ArticleCard from '../../components/ArticleCard';
 import GraphicContent from '../../components/GraphicContent';
+import PageSwitchScroller from '../../components/PageSwitchScroller';
 import bpkDemo from '../../components/bpk-component-demo/src/BpkDemo';
 
 import STYLES from '../pages.scss';
@@ -102,6 +103,7 @@ class DesignComponents extends React.Component {
 
     return (
       <Section name="Components">
+        <PageSwitchScroller />
         <SubSection noAnchor name="Animated content">
           <AnimatedContentDemo className={demoClassName} />
         </SubSection>
