@@ -39,23 +39,40 @@ type Props = {
   className: ?String,
 };
 
-const DemoFunctionComponent = (props: Props) => {
-  const { propName, className, onChange, value, ...rest } = props;
+class DemoFunctionComponent extends React.Component {
+  constructor(props) {
+    super(props);
 
-  return (
-    <div>
-      <BpkLabel htmlFor={propName}>{`${propName} (function)`}</BpkLabel>
-      <BpkInput
-        className={className}
-        value={value}
-        onChange={event => onChange(jsParse(event.target.value))}
-        id={propName}
-        label={propName}
-        {...rest}
-      />
-    </div>
-  );
-};
+    this.state = { functionString: `${props.value}` };
+  }
+
+  render() {
+    const { propName, className, onChange, value, ...rest } = this.props;
+
+    return (
+      <div>
+        <BpkLabel htmlFor={propName}>{`${propName} (function)`}</BpkLabel>
+        <BpkInput
+          className={className}
+          value={this.state.functionString}
+          onChange={event => {
+            this.setState({ functionString: event.target.value });
+            try {
+              onChange(eval(event.target.value));
+            } catch (e) {
+              if (e instanceof SyntaxError) {
+                console.log(e.message);
+              }
+            }
+          }}
+          id={propName}
+          label={propName}
+          {...rest}
+        />
+      </div>
+    );
+  }
+}
 
 DemoFunctionComponent.propTypes = {
   propName: PropTypes.string.isRequired,
