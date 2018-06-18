@@ -1,7 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import BpkImage, { withLoadingBehavior } from 'bpk-component-image';
-import BpkBadge from 'bpk-component-badge';
 import GitHubForkRibbon from 'react-github-fork-ribbon';
 import withLazyLoading from '../../components/withLazyLoading';
 import Section from '../../components/Section';
@@ -10,18 +9,17 @@ import SubSection from '../../components/SubSection';
 import bpkDemo from '../../components/bpk-component-demo/src/BpkDemo';
 import PageSwitchScroller from '../../components/PageSwitchScroller';
 import BpkComponentDemoAnimatedButton from './BpkComponentDemoAnimatedButton';
+import HelperFunctions from '../../HelperFunctions';
 
 import STYLES from './apps.scss';
 import STYLES_2 from '../pages.scss';
 
 const getClassName = className =>
   STYLES[className] || STYLES_2[className] || 'UNKNOWN';
-const documentIfExists = typeof window !== 'undefined' ? document : null;
-const FadingLazyLoadedImage = withLoadingBehavior(
-  withLazyLoading(BpkImage, documentIfExists),
-);
 
-const ButtonDemo = bpkDemo(Button, 'Button', 'package-name-goes-here', {});
+const ButtonDemo = bpkDemo(Button, 'Button', 'package-name-goes-here', {
+  onClick: HelperFunctions.evalCompat('() => { alert("Button clicked"); }'),
+});
 
 const BpkComponentDemoPage = props => {
   const { className, ...rest } = props;
@@ -113,7 +111,7 @@ const BpkComponentDemoPage = props => {
             So everyone wins.
           </SubSection>
         </div>
-        <SubSection noAnchor name="Try it out">
+        <SubSection style={{ textAlign: 'left' }} name="Try it out">
           <ButtonDemo
             className={getClassName('pages__bpk-demo')}
             customPropValues={{

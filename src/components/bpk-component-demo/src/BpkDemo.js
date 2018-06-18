@@ -17,6 +17,8 @@
  */
 /* @flow */
 
+/* eslint-disable react/jsx-filename-extension */
+
 import React, {
   type Node,
   type ComponentType,
@@ -66,7 +68,7 @@ export default function bpkDemo(
 
       this.state = {
         props: {},
-        code: 'hello!',
+        code: '',
         compact: this.props.compact,
       };
     }
@@ -121,10 +123,17 @@ export default function bpkDemo(
     };
 
     onPropChanged = (propName, newValue) => {
-      const newProps = JSON.parse(JSON.stringify(this.state.props));
-      newProps[propName] = newValue;
-      const newCode = this.generateCode(newProps);
-      this.setState({ props: newProps, code: newCode });
+      // Cannot use JSON.parse(JSON.stringify(oldValue)) as function values will get borked
+      const newProps = {};
+      Object.keys(this.state.props).forEach(p => {
+        if (p === propName) {
+          newProps[p] = newValue;
+        } else {
+          newProps[p] = this.state.props[p];
+        }
+        const newCode = this.generateCode(newProps);
+        this.setState({ props: newProps, code: newCode });
+      });
       // browserHistory.push(
       //   `${
       //     `${window.location}`.split('?')[0].split('#')[0]
