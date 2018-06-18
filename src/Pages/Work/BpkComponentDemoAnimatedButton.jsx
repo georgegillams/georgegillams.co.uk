@@ -28,7 +28,7 @@ const states = [
     iconOnly: false,
   },
   {
-    children: 'Imagine endless possibilites',
+    children: 'Have all the code',
     disabled: false,
     destructive: false,
     featured: false,
