@@ -14,12 +14,20 @@ export const TAG_TYPES = {
   security: 'security',
 };
 
-const tagTypeClassNames = {
-  [TAG_TYPES.tech]: getClassName('tag--tech'),
-  [TAG_TYPES.travel]: getClassName('tag--travel'),
-  [TAG_TYPES.photography]: getClassName('tag--photography'),
-  [TAG_TYPES.events]: getClassName('tag--events'),
-  [TAG_TYPES.security]: getClassName('tag--security'),
+const tagTypeInnerClassNames = {
+  [TAG_TYPES.tech]: getClassName('tag__inner-tag--tech'),
+  [TAG_TYPES.travel]: getClassName('tag__inner-tag--travel'),
+  [TAG_TYPES.photography]: getClassName('tag__inner-tag--photography'),
+  [TAG_TYPES.events]: getClassName('tag__inner-tag--events'),
+  [TAG_TYPES.security]: getClassName('tag__inner-tag--security'),
+};
+
+const tagTypeAngleClassNames = {
+  [TAG_TYPES.tech]: getClassName('tag__inner-triangle--tech'),
+  [TAG_TYPES.travel]: getClassName('tag__inner-triangle--travel'),
+  [TAG_TYPES.photography]: getClassName('tag__inner-triangle--photography'),
+  [TAG_TYPES.events]: getClassName('tag__inner-triangle--events'),
+  [TAG_TYPES.security]: getClassName('tag__inner-triangle--security'),
 };
 
 const tagText = {
@@ -57,8 +65,8 @@ class Tag extends Component {
     const tagClassName = [getClassName('tag__inner-tag')];
     const angleClassName = [getClassName('tag__inner-triangle')];
     if (type) {
-      tagClassName.push(tagTypeClassNames[type]);
-      angleClassName.push(tagTypeClassNames[type]);
+      tagClassName.push(tagTypeInnerClassNames[type]);
+      angleClassName.push(tagTypeAngleClassNames[type]);
     }
 
     if (this.state.hovering && (link || onClick)) {

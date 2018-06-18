@@ -9,7 +9,9 @@
   }
 
   &__tag {
-    margin: .5rem;
+    // position: relative;
+    display: inline-block;
+    margin: 0 .7rem .5rem 0;
 
     &--deselected {
       filter: saturate(.1);
