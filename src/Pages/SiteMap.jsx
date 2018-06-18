@@ -96,6 +96,10 @@ class SiteMap extends Component {
         >
           <TextLink href="/work">Portfolio</TextLink>
           <br />
+          <TextLink href="/work/bpk-component-demo">
+            Backpack Demo Component
+          </TextLink>
+          <br />
           <TextLink href="/apps/password-character-extractor">
             Password Character Extractor
           </TextLink>
