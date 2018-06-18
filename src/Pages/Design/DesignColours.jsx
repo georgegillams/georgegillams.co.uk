@@ -1,12 +1,6 @@
 import React from 'react';
-import { BpkSpinner, SPINNER_TYPES } from 'bpk-component-spinner';
-import BpkInput from 'bpk-component-input';
 import Section from '../../components/Section';
-import TextLink from '../../components/TextLink';
-import SubSection from '../../components/SubSection';
-import Button from '../../components/Button';
 import ColourPalleteItem from '../../components/ColourPalleteItem';
-import DatabaseFunctions from '../../DatabaseFunctions';
 
 import STYLES from '../pages.scss';
 
@@ -28,11 +22,12 @@ class DesignColours extends React.Component {
     return (
       <Section name="Colour pallete">
         <div className={getClassName('pages__compact-card-container')}>
-          <ColourPalleteItem colourName="Not black" colour="#1e1e1e" />
-          <ColourPalleteItem colourName="Blue" colour="#44aeff" />
-          <ColourPalleteItem colourName="Red" colour="#e02626" />
-          <ColourPalleteItem colourName="Dark orchid" colour="darkorchid" />
-          <ColourPalleteItem colourName="Hot pink" colour="hotpink" />
+          <ColourPalleteItem colourName="Not black" colour="#1E1E1E" />
+          <ColourPalleteItem colourName="Grey" colour="#343B49" />
+          <ColourPalleteItem colourName="Blue" colour="#44AEFF" />
+          <ColourPalleteItem colourName="Red" colour="#E02626" />
+          <ColourPalleteItem colourName="Dark orchid" colour="#9932CC" />
+          <ColourPalleteItem colourName="Hot pink" colour="#FF69B4" />
         </div>
       </Section>
     );

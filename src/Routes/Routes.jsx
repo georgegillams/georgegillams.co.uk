@@ -14,6 +14,7 @@ import BlogEditorPage from '../Pages/Admin/BlogEditorPage';
 import BlogViewerPage from '../Pages/BlogViewerPage';
 import Work from '../Pages/Work/Work';
 import PasswordCharacterExtractor from '../Pages/Work/PasswordCharacterExtractor';
+import BpkComponentDemo from '../Pages/Work/BpkComponentDemoPage';
 import Art from '../Pages/Art/Art';
 import SiteMap from '../Pages/SiteMap';
 import TravelPage from '../Pages/CategoryPages/TravelPage';
@@ -98,7 +99,7 @@ const Routes = (
           path="/apps/password-character-extractor"
           component={PasswordCharacterExtractor}
         />
-        {/* <Route path="/work/bpk-component-demo" component={BpkComponentDemo} /> */}
+        <Route path="/work/bpk-component-demo" component={BpkComponentDemo} />
         <Route path="/site-map" component={SiteMap} />
         <Route path="/santander-ping" component={AdminPingTest} />
         <Route path="/payments/view" component={PaymentView} />
