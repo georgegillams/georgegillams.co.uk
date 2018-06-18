@@ -541,7 +541,7 @@ const PersonalDetailsBanner = props => {
         style={{
           width: '60vw',
           position: 'absolute',
-          top: `calc(15vh + 3rem)`,
+          top: `calc(25vh + 3rem)`,
           left: `calc(50vw - 30vw)`,
           opacity: photogImage1Opacity * photogImage1Opacity2,
           borderRadius: '.35rem',
@@ -561,7 +561,7 @@ const PersonalDetailsBanner = props => {
         style={{
           width: '60vw',
           position: 'absolute',
-          top: `calc(15vh + 3rem)`,
+          top: `calc(25vh + 3rem)`,
           right: `calc(50vw - 30vw)`,
           opacity: photogImage2Opacity * photogImage2Opacity2,
           borderRadius: '.5rem',
@@ -581,7 +581,7 @@ const PersonalDetailsBanner = props => {
         style={{
           width: '60vw',
           position: 'absolute',
-          top: `calc(15vh + 3rem)`,
+          top: `calc(25vh + 3rem)`,
           left: `calc(50vw - 30vw)`,
           opacity: photogImage3Opacity,
           borderRadius: '.5rem',
