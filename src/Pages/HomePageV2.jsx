@@ -73,7 +73,7 @@ const HomePageV2 = () => {
             day={null}
             month={null}
             className={getClassName('pages__card')}
-            imageSrc="https://i.imgur.com/9hcLfgF.png"
+            imageSrc="https://i.imgur.com/iFbPZbn.jpg"
             linkUrl="/contact"
             title="Contact"
             tallLayout
