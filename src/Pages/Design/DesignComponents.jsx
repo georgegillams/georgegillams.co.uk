@@ -23,6 +23,7 @@ import ArticleCard from '../../components/ArticleCard';
 import GraphicContent from '../../components/GraphicContent';
 import PageSwitchScroller from '../../components/PageSwitchScroller';
 import bpkDemo from '../../components/bpk-component-demo/src/BpkDemo';
+import HelperFunctions from '../../HelperFunctions';
 
 import STYLES from '../pages.scss';
 
@@ -37,6 +38,7 @@ const GcbGraphicContent = withGraphicContentBehaviour(GraphicContent);
 
 const LogoDemo = bpkDemo(Logo, 'Logo', 'na', { small: true, noPadding: true });
 const ButtonDemo = bpkDemo(Button, 'Button', 'na', {
+  onClick: HelperFunctions.evalCompat('() => { alert("Button clicked"); }'),
   children: 'This is a button',
 });
 const TextLinkDemo = bpkDemo(TextLink, 'TextLink', 'na', {
@@ -62,6 +64,7 @@ const QuoteDemo = bpkDemo(Quote, 'Quote', 'na', {
   children: '"Make sure the world remembers your name" - anon.',
 });
 const TagDemo = bpkDemo(Tag, 'Tag', 'na', {
+  onClick: HelperFunctions.evalCompat('() => { alert("Button clicked"); }'),
   type: 'photography',
 });
 const NotificationDemo = bpkDemo(NotificationComp, 'NotificationComp', 'na', {
@@ -82,6 +85,10 @@ const ArticleCardDemo = bpkDemo(ArticleCard, 'ArticleCard', 'na', {
   light: true,
 });
 const GraphicContentDemo = bpkDemo(GraphicContent, 'GraphicContent', 'na', {
+  onClick: HelperFunctions.evalCompat('() => { alert("Button clicked"); }'),
+  onAlwaysShowChanged: HelperFunctions.evalCompat(
+    '() => { alert("Always show changed"); }',
+  ),
   children: '// Child element //',
 });
 const AnimatedContentDemo = bpkDemo(AnimatedContent, 'AnimatedContent', 'na', {
