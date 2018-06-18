@@ -50,7 +50,6 @@ export default function withGraphicContentBehaviour(
     }
 
     onClick = (): null => {
-      console.log('clicked');
       this.setState({ graphicContentInView: true });
       if (this.state.alwaysShowGraphicContent) {
         cookie.save('alwaysShowGraphicContent', true, {
@@ -58,29 +57,21 @@ export default function withGraphicContentBehaviour(
           expires: new Date(Date.now() + 24 * 60 * 60 * 100 * 1000),
         });
       }
-      console.log(this.state);
     };
 
     onToggle = (event): null => {
-      console.log('toggled');
-      console.log(event.target.checked);
       this.setState({ alwaysShowGraphicContent: event.target.checked });
-      console.log(this.state);
     };
 
     render(): Node {
-      const { style, className, ...rest } = this.props;
-
       return (
-        <div style={style} className={className}>
-          <Component
-            graphicContentInView={this.state.graphicContentInView}
-            alwaysShowGraphicContent={this.state.alwaysShowGraphicContent}
-            onClick={this.onClick}
-            onAlwaysShowChanged={this.onToggle}
-            {...rest}
-          />
-        </div>
+        <Component
+          graphicContentInView={this.state.graphicContentInView}
+          alwaysShowGraphicContent={this.state.alwaysShowGraphicContent}
+          onClick={this.onClick}
+          onAlwaysShowChanged={this.onToggle}
+          {...this.props}
+        />
       );
     }
   }

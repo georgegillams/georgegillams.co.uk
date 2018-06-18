@@ -11,8 +11,10 @@ import Tag from './Tag';
 import ArticleDate from './ArticleDate';
 
 import STYLES from './blogs.scss';
+import STYLES_2 from '../components/tag-filter.scss';
 
-const getClassName = className => STYLES[className] || 'UNKNOWN';
+const getClassName = className =>
+  STYLES[className] || STYLES_2[className] || 'UNKNOWN';
 
 const BlogRenderer = props => {
   const {
@@ -80,6 +82,7 @@ const BlogRenderer = props => {
           {blog.blogTags &&
             blog.blogTags.map(g => (
               <Tag
+                className={getClassName('tag-filter__tag')}
                 type={g}
                 ariaLabel={`View all ${g} blogs`}
                 link

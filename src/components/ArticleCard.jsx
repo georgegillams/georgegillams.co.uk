@@ -191,6 +191,7 @@ class ArticleCard extends Component {
     if (linkUrl) {
       cardComponent = (
         <NavLink
+          style={{ textDecoration: 'none' }}
           role="button"
           aria-label={
             day === null
@@ -205,7 +206,13 @@ class ArticleCard extends Component {
     }
     if (href) {
       cardComponent = (
-        <a role="button" rel="noopener noreferrer" target="_blank" href={href}>
+        <a
+          style={{ textDecoration: 'none' }}
+          role="button"
+          rel="noopener noreferrer"
+          target="_blank"
+          href={href}
+        >
           {cardComponent}
         </a>
       );

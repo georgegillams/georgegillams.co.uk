@@ -11,8 +11,10 @@ import { NON_EMOJI_REGEX } from '../../shared/constants';
 import AnimatedContent from '../../components/AnimatedContent';
 
 import STYLES from '../pages.scss';
+import STYLES_2 from '../../components/tag-filter.scss';
 
-const getClassName = className => STYLES[className] || 'UNKNOWN';
+const getClassName = className =>
+  STYLES[className] || STYLES_2[className] || 'UNKNOWN';
 const documentIfExists = typeof window !== 'undefined' ? document : null;
 const LlAnimatedContent = withLazyLoading(AnimatedContent, documentIfExists);
 
@@ -83,7 +85,14 @@ class TravelPage extends Component {
                   autoTallLayout
                   light={b.blogCardLight}
                 >
-                  {b && b.blogTags && b.blogTags.map(t => <Tag type={t} />)}
+                  {b &&
+                    b.blogTags &&
+                    b.blogTags.map(t => (
+                      <Tag
+                        className={getClassName('tag-filter__tag')}
+                        type={t}
+                      />
+                    ))}
                 </ArticleCard>
               </LlAnimatedContent>
             ))}

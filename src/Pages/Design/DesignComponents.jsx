@@ -64,7 +64,7 @@ const QuoteDemo = bpkDemo(Quote, 'Quote', 'na', {
   children: '"Make sure the world remembers your name" - anon.',
 });
 const TagDemo = bpkDemo(Tag, 'Tag', 'na', {
-  onClick: HelperFunctions.evalCompat('() => { alert("Button clicked"); }'),
+  onClick: HelperFunctions.evalCompat('() => { alert("Tag clicked"); }'),
   type: 'photography',
 });
 const NotificationDemo = bpkDemo(NotificationComp, 'NotificationComp', 'na', {
