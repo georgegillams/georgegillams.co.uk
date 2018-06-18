@@ -3,8 +3,8 @@
 .graphic-content {
   &__outer-container {
     position: relative;
-    display: flex;
-    width: fit-content;
+    // display: flex;
+    // width: fit-content;
     min-width: 15rem;
     height: auto;
     min-height: 10rem;
@@ -13,8 +13,8 @@
   }
 
   &__content-container {
-    width: fit-content;
-    transition: all 1s ease-in-out;
+    width: 100%;
+    transition: all .4s ease-in-out;
 
     &--hidden {
       opacity: .01;

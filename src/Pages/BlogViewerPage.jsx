@@ -12,7 +12,7 @@ import STYLES from './pages.scss';
 
 const getClassName = className => STYLES[className] || 'UNKNOWN';
 
-class BlogEditorPage extends React.Component {
+class BlogViewerPage extends React.Component {
   constructor() {
     super();
 
@@ -86,4 +86,4 @@ class BlogEditorPage extends React.Component {
 }
 // elementClassName={elementClassNameFinal.join(' ')}
 
-export default BlogEditorPage;
+export default BlogViewerPage;

@@ -85,22 +85,18 @@ const Art = props => {
               />
             </SubSection>
           </LlAnimatedContent>
-          {/* <LlAnimatedContent>
+          <LlAnimatedContent>
             <SubSection noAnchor name="A training scenario at EPICC 2017">
-              <GcbGraphicContent>
-                Hello there
-                <div style={{ width: '100%', position: 'relative' }}>
-                  <FadingLazyLoadedImage
-                    className={getClassName('pages__image')}
-                    altText="A training scenario at EPICC 2017"
-                    width={5184}
-                    height={3132}
-                    src="https://i.imgur.com/6B35GTV.jpg"
-                  />
-                </div>
+              <GcbGraphicContent className={getClassName('pages__image')}>
+                <FadingLazyLoadedImage
+                  altText="A training scenario at EPICC 2017"
+                  width={5184}
+                  height={3132}
+                  src="https://i.imgur.com/6B35GTV.jpg"
+                />
               </GcbGraphicContent>
             </SubSection>
-          </LlAnimatedContent> */}
+          </LlAnimatedContent>
           <LlAnimatedContent>
             <SubSection noAnchor name="Dog running with a Stick">
               <FadingLazyLoadedImage
