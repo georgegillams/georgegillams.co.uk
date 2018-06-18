@@ -132,6 +132,32 @@ const Work = props => {
                 </SubSection>
               </LlAnimatedContent>
               <LlAnimatedContent>
+                <SubSection name="Industrial Placement - EWOS, Leonardo">
+                  In 2015, I joined the EWOS (Electronic Warfare Operational
+                  Support) team at{' '}
+                  <TextLink
+                    href="http://www.leonardocompany.com/en/-/ewos-electronic_warfare_operational_support"
+                    external
+                  >
+                    Leonardo{' '}
+                  </TextLink>{' '}
+                  to experience the way in which the software teams work to
+                  deliver efficient and effective solutions. Our team was
+                  responsible for maintaining large .NET frameworks which
+                  supported feature-rich mission analysis tools. Close
+                  collaboration with the hardware team and customers was
+                  essential and demanded a strong, agile approach to
+                  development. Thorough planning, in which we were all involved,
+                  was key to our success. Throughout the year I immensely
+                  improved my ability to understand existing code and to produce
+                  readable, manageable code myself.
+                  <br />
+                  <br />
+                  I was heavily involved in STEM activities whilst working for
+                  the company.
+                </SubSection>
+              </LlAnimatedContent>
+              <LlAnimatedContent>
                 <SubSection name="Password Character Extractor">
                   I found the login process for a number of sites (particularly
                   UK bank websites) frustrating as they often require specific
