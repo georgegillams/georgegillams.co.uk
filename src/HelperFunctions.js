@@ -19,6 +19,12 @@ class HelperFunctions {
     }
     return returnValue;
   }
+  static evalCompat(code) {
+    if (this.getBrowser(window).ie) {
+      return () => null;
+    }
+    return eval(code);
+  }
   static getBrowser(w) {
     const ua = w.navigator.userAgent;
 
