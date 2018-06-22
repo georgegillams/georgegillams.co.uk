@@ -1,5 +1,5 @@
 // shared config (dev and prod)
-const {resolve} = require('path');
+const { resolve } = require('path');
 const StyleLintPlugin = require('stylelint-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
@@ -13,13 +13,13 @@ module.exports = {
       {
         test: /\.(js|jsx)$/,
         use: ['babel-loader'],
-        exclude: /node_modules/,
+        // exclude: /node_modules/,
       },
       {
         test: /\.css$/,
         use: [
           'style-loader',
-          {loader: 'css-loader', options: {importLoaders: 1}},
+          { loader: 'css-loader', options: { importLoaders: 1 } },
           'postcss-loader',
         ],
       },
@@ -27,7 +27,7 @@ module.exports = {
         test: /\.scss$/,
         loaders: [
           'style-loader',
-          {loader: 'css-loader', options: {importLoaders: 1}},
+          { loader: 'css-loader', options: { importLoaders: 1 } },
           'postcss-loader',
           'sass-loader',
         ],
@@ -43,13 +43,16 @@ module.exports = {
   },
   plugins: [
     new StyleLintPlugin(),
-    new HtmlWebpackPlugin({template: 'index.html.ejs',}),
+    new HtmlWebpackPlugin({ template: 'index.html.ejs' }),
   ],
   externals: {
-    'react': 'React',
+    react: 'React',
     'react-dom': 'ReactDOM',
   },
   performance: {
     hints: false,
   },
+  output: {
+    publicPath: '/', // if you don't put the "/" here, you get this error:
+  }, // "bundle.js:1 Uncaught SyntaxError: Unexpected token <"
 };

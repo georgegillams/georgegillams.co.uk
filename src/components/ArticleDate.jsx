@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 import React from 'react';
-// import BpkText from 'bpk-component-text';
+import BpkText from 'bpk-component-text';
 
 import STYLES from './article-date.scss';
 
@@ -18,7 +18,7 @@ const ArticleDate = props => {
   }
 
   return (
-    <span
+    <BpkText
       tagName="h3"
       textStyle="base"
       style={{ fontStyle: 'italic' }}
@@ -26,7 +26,7 @@ const ArticleDate = props => {
       {...rest}
     >
       Published {date.toString()}
-    </span>
+    </BpkText>
   );
 };
 
