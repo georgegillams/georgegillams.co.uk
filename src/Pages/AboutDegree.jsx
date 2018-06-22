@@ -80,7 +80,7 @@ class Degree extends React.Component {
             Purple values represent estimated values
             <br />
             Final results released:{' '}
-            <Countdown date={new Date('2018-06-21T16:00:00')} />
+            <Countdown date={new Date('2018-06-28T16:00:00')} />
           </span>
           {/* TODO REMOVE_2 */}
           <br />
