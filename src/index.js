@@ -1,15 +1,24 @@
-import React from 'react';
+import React from "react";
 import ReactDOM from 'react-dom';
-import Helmet from 'react-helmet';
-import ReactDOMServer from 'react-dom/server';
-import { BrowserRouter } from 'react-router-dom';
-import routes from './Routes';
-// import template from  './template';
-// import { extractAssets } from  './webpackStats';
+import {AppContainer} from "react-hot-loader";
+import App from "components/App";
 
-if (typeof window !== 'undefined' && typeof document !== 'undefined') {
-  const root = document.getElementById('root');
+const rootEl = document.getElementById("root");
 
-  /* eslint-disable react/jsx-filename-extension */
-  ReactDOM.render(routes, root);
+const renderComponent = (Component) => {
+    ReactDOM.render(
+        <AppContainer>
+            <Component/>
+        </AppContainer>,
+        rootEl
+    );
+};
+
+renderComponent(App);
+
+// Hot Module Replacement API
+if (module.hot) {
+    module.hot.accept("./components/App", () => {
+        renderComponent(App);
+    });
 }
