@@ -69,7 +69,8 @@
     "webpack-merge": "^4.1.2"
   },
   "dependencies": {
-    "bpk-component-text": "^1.0.64"
+    "bpk-component-text": "^1.0.64",
+    "bpk-mixins": "^17.10.4"
   },
   "postcss": {}
 }

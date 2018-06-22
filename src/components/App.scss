@@ -1,9 +1,10 @@
+@import '~bpk-mixins';
+
 .app {
   font-family: helvetica, arial, sans-serif;
-  padding: 2em;
-  border: 5px solid red;
+  padding: 2rem;
 
   p {
-    background-color: yellow;
+    background-color: $bpk-color-blue-400;
   }
 }
