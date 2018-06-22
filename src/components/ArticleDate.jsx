@@ -7,7 +7,7 @@ import STYLES from './article-date.scss';
 const getClassName = className => STYLES[className] || 'UNKNOWN';
 
 const ArticleDate = props => {
-  const { date, noPadding, className } = props;
+  const { date, noPadding, className, ...rest } = props;
 
   const classNameFinal = [getClassName('article-date__date')];
   if (noPadding) {
@@ -23,6 +23,7 @@ const ArticleDate = props => {
       textStyle="base"
       style={{ fontStyle: 'italic' }}
       className={classNameFinal.join(' ')}
+      {...rest}
     >
       Published {date.toString()}
     </span>
