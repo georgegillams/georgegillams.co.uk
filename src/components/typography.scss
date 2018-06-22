@@ -37,26 +37,26 @@
 
   &__icon {
     display: inline-block;
-    width: .65rem;
+    width: 0.65rem;
     height: 1rem;
-    margin-left: .25rem;
+    margin-left: 0.25rem;
 
     &--inner {
       position: absolute;
-      max-width: .9rem;
-      margin-top: .12rem;
-      margin-left: -.45rem;
+      max-width: 0.9rem;
+      margin-top: 0.12rem;
+      margin-left: -0.45rem;
     }
   }
 
   &__anchor-link {
     position: absolute;
-    margin-top: .74rem;
+    margin-top: 0.74rem;
     margin-left: -1.2rem;
     font-size: 1.5rem;
     font-weight: bold;
     text-decoration: none;
-    opacity: .4;
+    opacity: 0.4;
 
     @include bpk-breakpoint-tablet {
       margin-left: 0;
@@ -81,8 +81,8 @@
     }
 
     &--subsection {
-      padding-top: .6rem;
-      padding-bottom: .6rem;
+      padding-top: 0.6rem;
+      padding-bottom: 0.6rem;
       text-decoration: none;
     }
 
@@ -105,14 +105,14 @@
   }
 
   &--hovering {
-    transition: all .4s;
+    transition: all 0.4s;
     color: rgb(62, 158, 235) !important;
     text-decoration: none;
     fill: rgb(62, 158, 235) !important;
   }
 
   &--hovering-light {
-    transition: all .4s;
+    transition: all 0.4s;
     color: lightblue !important;
     text-decoration: none;
     fill: lightblue !important;

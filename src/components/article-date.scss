@@ -2,8 +2,9 @@
 
 .article-date {
   &__date {
-    padding-bottom: .5rem;
+    padding-bottom: 0.5rem;
     color: $bpk-color-gray-700;
+    background-color: hotpink;
 
     &--no-padding {
       padding: 0;
