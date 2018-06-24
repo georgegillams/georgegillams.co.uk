@@ -71,18 +71,32 @@
     "webpack-merge": "^4.1.2"
   },
   "dependencies": {
+    "bibtex-parse-js": "0.0.24",
+    "bpk-component-banner-alert": "^2.0.28",
+    "bpk-component-breakpoint": "^1.1.3",
+    "bpk-component-button": "^2.1.3",
+    "bpk-component-checkbox": "^1.4.31",
+    "bpk-component-code": "^1.1.8",
+    "bpk-component-horizontal-nav": "^2.3.5",
     "bpk-component-image": "^2.0.39",
     "bpk-component-input": "^3.3.22",
+    "bpk-component-label": "^3.2.72",
     "bpk-component-progress": "^1.0.70",
     "bpk-component-spinner": "^2.2.34",
     "bpk-component-text": "^1.0.64",
     "bpk-component-textarea": "^1.0.66",
     "bpk-mixins": "^17.10.4",
     "bpk-theming": "^1.1.4",
+    "funnies": "^2.0.0",
+    "react-component-academic-reference": "^1.0.5",
     "react-cookies": "^0.1.0",
     "react-countdown-now": "^1.3.0",
+    "react-github-fork-ribbon": "^0.5.1",
+    "react-loading": "^2.0.2",
     "request": "^2.87.0",
-    "stylelint-scss": "^3.1.3"
+    "scroll-into-view": "^1.9.3",
+    "stylelint-scss": "^3.1.3",
+    "youtube-embed-video": "^1.1.0"
   },
   "postcss": {}
 }
