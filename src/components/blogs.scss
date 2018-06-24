@@ -1,0 +1,22 @@
+@import '~bpk-mixins';
+
+.blogs {
+  &__date {
+    padding-bottom: .5rem;
+    color: $bpk-color-gray-700;
+  }
+
+  &--centered {
+    display: flex;
+    justify-items: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+  }
+
+  &__edit-link {
+    color: hotpink;
+  }
+}

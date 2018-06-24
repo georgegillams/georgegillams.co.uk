@@ -1,0 +1,35 @@
+@import '~bpk-mixins';
+
+.cookie-banner {
+  &__outer-container {
+    width: 100%;
+    background-color: #e02626;
+  }
+
+  &__inner-container {
+    display: flex;
+    padding: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__blurrb {
+    width: 75%;
+    margin-right: 1rem;
+
+    @include bpk-breakpoint-tablet {
+      width: 100%;
+      margin-right: 0;
+      margin-bottom: 1rem;
+    }
+  }
+
+  &__button {
+    width: 20%;
+
+    @include bpk-breakpoint-tablet {
+      width: auto;
+    }
+  }
+}

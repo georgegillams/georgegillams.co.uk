@@ -1,0 +1,48 @@
+@import '~bpk-mixins';
+
+.footer {
+  &__container {
+    display: grid;
+    height: auto;
+    padding: 2rem 4rem;
+    grid-template-areas:
+      'social'
+      'logo'
+      'siteMap'
+      'tech';
+    grid-gap: 1rem;
+    align-items: center;
+    background-color: #1e1e1e;
+    background-position: center;
+    background-size: cover;
+  }
+
+  &__social {
+    grid-area: social;
+    text-align: center;
+  }
+
+  &__logo {
+    grid-area: logo;
+    text-align: center;
+  }
+
+  &__tech {
+    grid-area: tech;
+    text-align: center;
+  }
+
+  &__site-map {
+    grid-area: siteMap;
+    text-align: center;
+  }
+
+  &__copyright {
+    grid-area: copyright;
+    text-align: center;
+  }
+
+  &__centered {
+    text-align: center;
+  }
+}

@@ -5,7 +5,7 @@ import TextLink from './TextLink';
 
 import STYLES from './typography.scss';
 
-const getClassName = className => STYLES[className] || 'UNKNOWN';
+const getClassName = className => className; //STYLES[className] || 'UNKNOWN';
 
 const Section = props => {
   const {

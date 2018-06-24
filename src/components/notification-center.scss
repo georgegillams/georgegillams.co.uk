@@ -1,0 +1,11 @@
+@import '~bpk-mixins';
+
+.notification-center {
+  &__container {
+    width: 100%;
+  }
+
+  &__notification {
+    margin-bottom: 1.5rem;
+  }
+}

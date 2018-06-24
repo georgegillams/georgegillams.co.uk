@@ -4,7 +4,7 @@ import BpkText from 'bpk-component-text';
 
 import STYLES from './article-date.scss';
 
-const getClassName = className => STYLES[className] || 'UNKNOWN';
+const getClassName = className => className; //STYLES[className] || 'UNKNOWN';
 
 const ArticleDate = props => {
   const { date, noPadding, className, ...rest } = props;

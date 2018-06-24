@@ -5,7 +5,7 @@ import { NavLink } from 'react-router-dom';
 
 import STYLES from './typography.scss';
 
-const getClassName = className => STYLES[className] || 'UNKNOWN';
+const getClassName = className => className; //STYLES[className] || 'UNKNOWN';
 
 const TextLink = props => {
   const {
