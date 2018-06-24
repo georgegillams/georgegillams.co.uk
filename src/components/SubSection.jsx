@@ -67,14 +67,6 @@ const SubSection = props => {
 
   return (
     <div className={classNameFinal.join(' ')} {...rest}>
-      {!noAnchor && (
-        <TextLink
-          href={`#${anchorLink}`}
-          className={getClassName('typography__anchor-link')}
-        >
-          §
-        </TextLink>
-      )}
       {name && (
         <BpkText
           tagName="h3"

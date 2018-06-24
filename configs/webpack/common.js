@@ -7,6 +7,11 @@ module.exports = {
   resolve: {
     extensions: ['.js', '.jsx'],
   },
+  node: {
+    fs: 'empty', // workaround for Module not found: Error: Can't resolve 'fs'
+    net: 'empty', // workaround for Module not found: Error: Can't resolve 'net'
+    tls: 'empty', // workaround for Module not found: Error: Can't resolve 'tls'
+  },
   context: resolve(__dirname, '../../src'),
   module: {
     rules: [

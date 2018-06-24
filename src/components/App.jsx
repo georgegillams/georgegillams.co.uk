@@ -6,6 +6,7 @@ import Section from './Section';
 import SubSection from './SubSection';
 import AnimatedContent from './AnimatedContent';
 import withLazyLoading from './withLazyLoading';
+import AboutDegree from '../Pages/AboutDegree';
 import reactLogo from 'assets/img/react_logo.svg';
 
 const documentIfExists = typeof window !== 'undefined' ? document : null;
@@ -15,6 +16,7 @@ class App extends React.PureComponent {
   render() {
     return (
       <div className="app">
+        <AboutDegree />
         <h1>Hello World!</h1>
         <p>Foo to the bar</p>
         <Section name="Running 5 Tough Mudders">
@@ -26,7 +28,6 @@ class App extends React.PureComponent {
           </LlAnimatedContent>
         </Section>
         <ArticleDate date={Date.now()} />
-        <img src={reactLogo} height="480" />
         <LlAnimatedContent>
           <Button>hello</Button>
         </LlAnimatedContent>

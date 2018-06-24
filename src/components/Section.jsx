@@ -67,16 +67,6 @@ const Section = props => {
 
   return (
     <div className={classNameFinal.join(' ')} {...rest}>
-      {!noAnchor && (
-        <TextLink
-          href={`#${anchorLink}`}
-          className={`${getClassName('typography__anchor-link')} ${getClassName(
-            'typography__anchor-link--section',
-          )}`}
-        >
-          §
-        </TextLink>
-      )}
       {name && (
         <BpkText
           id={anchorLink}
