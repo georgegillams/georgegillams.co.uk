@@ -6,7 +6,7 @@ import TextLink from '../components/TextLink';
 
 import STYLES from './for-oh-four.scss';
 
-const getClassName = className => STYLES[className] || 'UNKNOWN';
+const getClassName = className => className; //STYLES[className] || 'UNKNOWN';
 
 class ForOhFour extends Component {
   // componentDidMount() {

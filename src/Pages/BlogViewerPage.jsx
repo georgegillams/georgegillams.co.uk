@@ -10,7 +10,7 @@ import PageSwitchScroller from '../components/PageSwitchScroller';
 
 import STYLES from './pages.scss';
 
-const getClassName = className => STYLES[className] || 'UNKNOWN';
+const getClassName = className => className; //STYLES[className] || 'UNKNOWN';
 
 class BlogViewerPage extends React.Component {
   constructor() {

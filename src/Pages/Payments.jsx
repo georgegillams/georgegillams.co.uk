@@ -19,7 +19,7 @@ import {
 
 import STYLES from './pages.scss';
 
-const getClassName = className => STYLES[className] || 'UNKNOWN';
+const getClassName = className => className; //STYLES[className] || 'UNKNOWN';
 
 class Payments extends React.Component {
   constructor(props) {

@@ -16,7 +16,7 @@ import AdminPingTest from './AdminPingTest';
 
 import STYLES from '../pages.scss';
 
-const getClassName = className => STYLES[className] || 'UNKNOWN';
+const getClassName = className => className; //STYLES[className] || 'UNKNOWN';
 
 class Admin extends React.Component {
   constructor(props) {

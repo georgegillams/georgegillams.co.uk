@@ -12,7 +12,7 @@ import AdminNotifications from './AdminNotifications';
 
 import STYLES from '../pages.scss';
 
-const getClassName = className => STYLES[className] || 'UNKNOWN';
+const getClassName = className => className; //STYLES[className] || 'UNKNOWN';
 
 class AdminSessionsPage extends React.Component {
   constructor(props) {

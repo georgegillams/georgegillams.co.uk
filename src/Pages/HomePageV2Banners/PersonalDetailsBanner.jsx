@@ -12,7 +12,7 @@ import cloud3 from '../../images/cloud3.svg';
 import downArrow from '../../images/downArrow.svg';
 import STYLES from './home-page-banner.scss';
 
-const getClassName = className => STYLES[className] || 'UNKNOWN';
+const getClassName = className => className; //STYLES[className] || 'UNKNOWN';
 
 const PersonalDetailsBanner = props => {
   const { percentageComplete } = props;

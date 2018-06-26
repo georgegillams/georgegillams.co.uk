@@ -7,7 +7,7 @@ import HelperFunctions from '../HelperFunctions';
 
 import STYLES from './pages.scss';
 
-const getClassName = className => STYLES[className] || 'UNKNOWN';
+const getClassName = className => className; //STYLES[className] || 'UNKNOWN';
 
 const PersonalDetailsBannerH = homePageBanner(
   PersonalDetailsBanner,

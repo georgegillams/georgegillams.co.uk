@@ -4,7 +4,7 @@ import ScrollerButton from '../../components/ScrollerButton';
 
 import STYLES from './home-page-banner.scss';
 
-const getClassName = className => STYLES[className] || 'UNKNOWN';
+const getClassName = className => className; //STYLES[className] || 'UNKNOWN';
 
 const SCROLL_INTO_VIEW_LIMIT = 2000;
 

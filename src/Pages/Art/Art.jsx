@@ -17,7 +17,7 @@ import STYLES from '../pages.scss';
 
 const GcbGraphicContent = withGraphicContentBehaviour(GraphicContent);
 
-const getClassName = className => STYLES[className] || 'UNKNOWN';
+const getClassName = className => className; //STYLES[className] || 'UNKNOWN';
 const PAGE_ID = 857216;
 const documentIfExists = typeof window !== 'undefined' ? document : null;
 const FadingLazyLoadedImage = withLoadingBehavior(

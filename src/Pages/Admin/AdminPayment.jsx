@@ -9,7 +9,7 @@ import DatabaseFunctions from '../../DatabaseFunctions';
 
 import STYLES from '../pages.scss';
 
-const getClassName = className => STYLES[className] || 'UNKNOWN';
+const getClassName = className => className; //STYLES[className] || 'UNKNOWN';
 
 class AdminPayment extends React.Component {
   constructor(props) {

@@ -19,7 +19,7 @@ import bpkDemo from '../../components/bpk-component-demo/src/BpkDemo';
 
 import STYLES from '../pages.scss';
 
-const getClassName = className => STYLES[className] || 'UNKNOWN';
+const getClassName = className => className; //STYLES[className] || 'UNKNOWN';
 
 const demoClassName = getClassName('pages__bpk-demo');
 

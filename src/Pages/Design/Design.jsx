@@ -10,7 +10,7 @@ import DesignPrivacyPolicy from './DesignPrivacyPolicy';
 
 import STYLES from '../pages.scss';
 
-const getClassName = className => STYLES[className] || 'UNKNOWN';
+const getClassName = className => className; //STYLES[className] || 'UNKNOWN';
 
 class Design extends React.Component {
   constructor(props) {
