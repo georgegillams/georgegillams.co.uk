@@ -115,6 +115,7 @@ const Routes = (
           />
         ))}
 
+        <Route path="/teapot" component={TeaPot} />
         <Route path="/example-418" component={TeaPot} />
         <Route path="/example-teapot" component={TeaPot} />
         <Route path="/example-404" component={ForOhFour} />

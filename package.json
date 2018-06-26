@@ -1,7 +1,8 @@
 {
   "name": "react-webpack-babel-starter",
   "version": "0.1.0",
-  "description": "Starter kit for React, Webpack (with Hot Module Replacement) and Babel.",
+  "description":
+    "Starter kit for React, Webpack (with Hot Module Replacement) and Babel.",
   "keywords": [
     "react",
     "webpack",
@@ -28,7 +29,8 @@
     "lint:js": "jshint",
     "lint:sass": "stylelint ./src/**/*.scss",
     "start": "npm run start-dev",
-    "start-dev": "webpack-dev-server --config=configs/webpack/dev",
+    "start-dev":
+      "node express.js & webpack-dev-server --config=configs/webpack/dev",
     "start-prod": "npm run build && node express.js",
     "test": "jest --watch --coverage --config=configs/jest.json"
   },
@@ -71,6 +73,7 @@
     "webpack-merge": "^4.1.2"
   },
   "dependencies": {
+    "bcrypt": "^2.0.1",
     "bibtex-parse-js": "0.0.24",
     "bpk-component-banner-alert": "^2.0.28",
     "bpk-component-breakpoint": "^1.1.3",
@@ -87,15 +90,20 @@
     "bpk-component-textarea": "^1.0.66",
     "bpk-mixins": "^17.10.4",
     "bpk-theming": "^1.1.4",
+    "crypto": "^1.0.1",
     "funnies": "^2.0.0",
+    "path": "^0.12.7",
     "react-component-academic-reference": "^1.0.5",
     "react-cookies": "^0.1.0",
     "react-countdown-now": "^1.3.0",
     "react-github-fork-ribbon": "^0.5.1",
     "react-loading": "^2.0.2",
+    "redis": "^2.8.0",
     "request": "^2.87.0",
     "scroll-into-view": "^1.9.3",
+    "secure-compare": "^3.0.1",
     "stylelint-scss": "^3.1.3",
+    "wget-improved": "^3.0.1",
     "youtube-embed-video": "^1.1.0"
   },
   "postcss": {}
