@@ -30,7 +30,7 @@
     "lint:sass": "stylelint ./src/**/*.scss",
     "start": "npm run start-dev",
     "start-dev":
-      "DEV='true' node express.js & webpack-dev-server --config=configs/webpack/dev",
+      "DEV='true' ADMIN_USERNAME='georgegillams' ADMIN_PASSWORD_HASH='$2b$10$kZr2lkVcPiU3wsbowjNtUOpATLlf4AZpqjSYzrM0b/G/3yj5tRt1m' node express.js & webpack-dev-server --config=configs/webpack/dev",
     "start-prod": "npm run build && node express.js",
     "test": "jest --watch --coverage --config=configs/jest.json"
   },

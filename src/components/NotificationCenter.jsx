@@ -14,8 +14,8 @@ import Tag from './Tag';
 import STYLES from './notification-center.scss';
 import TYPO_STYLES from './typography.scss';
 
-const getClassName = className =>
-  STYLES[className] || TYPO_STYLES[className] || 'UNKNOWN';
+const getClassName = className => className;
+// STYLES[className] || TYPO_STYLES[className] || 'UNKNOWN';
 
 class NotificationCenter extends Component {
   constructor(props) {

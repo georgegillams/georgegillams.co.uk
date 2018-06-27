@@ -11,8 +11,8 @@ import DatabaseFunctions from '../DatabaseFunctions';
 import STYLES from './notification-comp.scss';
 import TYPO_STYLES from './typography.scss';
 
-const getClassName = className =>
-  STYLES[className] || TYPO_STYLES[className] || 'UNKNOWN';
+const getClassName = className => className;
+// STYLES[className] || TYPO_STYLES[className] || 'UNKNOWN';
 
 export const NOTIFICATION_TYPES = {
   neutral: 'neutral',

@@ -21,7 +21,7 @@ const adminUserName = process.env.ADMIN_USERNAME;
 const adminPasswordHash = process.env.ADMIN_PASSWORD_HASH;
 
 let client = null;
-if (process.env.DEV) {
+if (!process.env.DEV) {
   // Heroku redis connection
   // eslint-disable-next-line global-require
   client = require('redis').createClient(process.env.REDIS_URL);
@@ -34,6 +34,16 @@ if (process.env.DEV) {
 const buildDirectory = './dist';
 const staticFiles = express.static(path.join(__dirname, buildDirectory));
 
+app.use((req, res, next) => {
+  res.header('Access-Control-Allow-Origin', '*');
+  res.header(
+    'Access-Control-Allow-Headers',
+    'Origin, X-Requested-With, Content-Type, Accept, page_id, payment_id, blog_id, Api-Key, Logged-In-Session-Id, Session-Id, selected-blog-tags, blog-collection',
+  );
+  res.header('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE');
+  next();
+});
+
 client.on('connect', () => {
   client.set('framework', 'React');
 });
@@ -45,9 +55,863 @@ app.use(bodyParser.urlencoded({ extended: false }));
 
 const router = express.Router();
 
-app.use(staticFiles);
+if (!process.env.DEV) {
+  // +
+  app.use(staticFiles); // +
+} // +
+
+router.get('/robots.txt', (req, res) => {
+  res.sendFile(path.join(__dirname, './server_content', 'robots.txt'), {
+    headers: { 'Content-Type': 'text/plain' },
+  });
+});
+
+router.get('/sitemap.xml', (req, res) => {
+  res.sendFile(path.join(__dirname, './server_content', 'sitemap.xml'), {
+    headers: { 'Content-Type': 'text/xml' },
+  });
+});
+
+router.get('/ontologies/2018/tv-listing-ontology', (req, res) => {
+  res.sendFile(
+    path.join(
+      __dirname,
+      './server_content/ontologies',
+      'tv-listing-ontology.owl',
+    ),
+    { headers: { 'Content-Type': 'text/xml' } },
+  );
+});
+
+function sendGreasemonkeyFile(fileName, req, res) {
+  const download = wget.download(
+    `https://raw.githubusercontent.com/georgegillams/dotfiles/master/greasemonkey/${fileName}`,
+    path.join(__dirname, './server_content/greasemonkey', fileName),
+    {},
+  );
+  download.on('end', () => {
+    res.sendFile(
+      path.join(__dirname, './server_content/greasemonkey', fileName),
+      {
+        headers: { 'Content-Type': 'text/plain' },
+      },
+    );
+  });
+}
+
+router.get('/api/greasemonkey/find_backpack_components', (req, res) => {
+  sendGreasemonkeyFile('Find Backpack components.js', req, res);
+});
+
+router.get('/api/greasemonkey/github_travis_new_tab', (req, res) => {
+  sendGreasemonkeyFile('GitHub Travis links new tab.js', req, res);
+});
+
+router.get('/api/greasemonkey/github_squash_reminder', (req, res) => {
+  sendGreasemonkeyFile('GitHub squash reminder.js', req, res);
+});
+
+router.get('/api/greasemonkey/gurushots_boost', (req, res) => {
+  sendGreasemonkeyFile('GuruShots boost.js', req, res);
+});
+
+router.get('/api/greasemonkey/guruShotsBoost_download', (req, res) => {
+  sendGreasemonkeyFile('GuruShots boost.js', req, res);
+});
+
+router.get('/api/greasemonkey/george_gillams_blog_edit', (req, res) => {
+  sendGreasemonkeyFile('georgegillams.co.uk blog edit link.js', req, res);
+});
+
+router.get('/api/greasemonkey/secureEcs_download', (req, res) => {
+  sendGreasemonkeyFile('secure ecs.js', req, res);
+});
+
+router.get('/api/greasemonkey/skyscanner_buttons', (req, res) => {
+  sendGreasemonkeyFile('skyscanner buttons.js', req, res);
+});
+
+router.get('/api/greasemonkey/southampton_camera_club', (req, res) => {
+  sendGreasemonkeyFile('southampton camera club.js', req, res);
+});
+
+router.get('/api/greasemonkey/github_highlight_name', (req, res) => {
+  sendGreasemonkeyFile('Github highlight my name.js', req, res);
+});
+
+router.get('/api/greasemonkey/hackthis_coding_1', (req, res) => {
+  sendGreasemonkeyFile('Hackthis.co.uk coding level 1.js', req, res);
+});
+
+router.get('/api/greasemonkey/hackthis_coding_2', (req, res) => {
+  sendGreasemonkeyFile('Hackthis.co.uk coding level 2.js', req, res);
+});
+
+router.get('/api/hello', (req, res) => {
+  res.send({ express: 'Hello From Express' });
+});
+
+const setSessionLastActiveNow = sessionId => {
+  if (sessionId !== undefined) {
+    client.lrange(`active_sessions`, 0, -1, (err, reply) => {
+      for (let i = 0; i < reply.length; i += 1) {
+        const session = JSON.parse(reply[i]);
+        if (session.sessionId === sessionId) {
+          session.lastActive = Date.now();
+          client.lset(`active_sessions`, i, JSON.stringify(session));
+          return;
+        }
+      }
+    });
+  }
+};
+
+const checkAdminSession = (loggedInSessionId, cb, cbObj) => {
+  const newCbObj = JSON.parse(JSON.stringify(cbObj));
+
+  client.lrange(`loggedInSessionIds`, 0, -1, (err, reply) => {
+    for (let i = 0; i < reply.length; i += 1) {
+      if (compare(JSON.parse(reply[i]).loggedInSessionId, loggedInSessionId)) {
+        newCbObj.loggedInAdmin = true;
+        cb(newCbObj);
+        return;
+      }
+    }
+    newCbObj.loggedInAdmin = false;
+    cb(newCbObj);
+  });
+};
+
+const checkSession = (sessionId, cb) => {
+  const cbObj = {};
+  client.lrange(`active_sessions`, 0, -1, (err, reply) => {
+    for (let i = 0; i < reply.length; i += 1) {
+      if (compare(JSON.parse(reply[i]).sessionId, sessionId)) {
+        cbObj.activeSession = true;
+        checkAdminSession(sessionId, cb, cbObj);
+        setSessionLastActiveNow(sessionId);
+        return;
+      }
+    }
+    cb(cbObj);
+  });
+};
+
+router.get('/api/ping-test', (req, res) => {
+  client.rpush([
+    `pingTests`,
+    JSON.stringify({
+      timestamp: Date.now(),
+    }),
+  ]);
+  res.end();
+});
+
+router.get('/api/comments', (req, res) => {
+  const sessId = req.headers['session-id'];
+  checkSession(sessId, ({ activeSession, loggedInAdmin }) => {
+    const pageId = req.headers.page_id;
+    client.lrange(`${pageId}_comments`, 0, -1, (err, reply) => {
+      const result = [];
+      for (let i = 0; i < reply.length; i += 1) {
+        const comment = JSON.parse(reply[i]);
+        // REMOVE commenterSessionId VALUE BEFORE SENDING DATA:
+        comment.commenterSessionId = null;
+        result.push(comment);
+      }
+      res.send(result);
+    });
+  });
+});
+
+router.get('/api/session-ids', (req, res) => {
+  const sessId = req.headers['session-id'];
+  checkSession(sessId, ({ activeSession, loggedInAdmin }) => {
+    if (!loggedInAdmin) {
+      res.end();
+      return;
+    }
+    client.lrange('active_sessions', 0, -1, (err, reply) => {
+      res.send(reply);
+    });
+  });
+});
+
+router.get('/api/logged-in-session-ids', (req, res) => {
+  const sessId = req.headers['session-id'];
+  checkSession(sessId, ({ activeSession, loggedInAdmin }) => {
+    if (!loggedInAdmin) {
+      res.end();
+      return;
+    }
+    client.lrange('loggedInSessionIds', 0, -1, (err, reply) => {
+      res.send(reply);
+    });
+  });
+});
+
+router.get('/api/comments/page_ids', (req, res) => {
+  const sessId = req.headers['session-id'];
+  checkSession(sessId, ({ activeSession, loggedInAdmin }) => {
+    client.lrange('pageIds', 0, -1, (err, reply) => {
+      res.send(reply);
+    });
+  });
+});
+
+router.get('/api/ping-tests', (req, res) => {
+  client.lrange('pingTests', 0, -1, (err, reply) => {
+    res.send(reply);
+  });
+});
+
+router.get('/api/session-id', (req, res) => {
+  const sessionId = crypto.randomBytes(20).toString('hex');
+  const ipAddress =
+    req.headers['x-forwarded-for'] ||
+    req.connection.remoteAddress ||
+    req.socket.remoteAddress ||
+    req.connection.socket.remoteAddress;
+  client.rpush([
+    `active_sessions`,
+    JSON.stringify({
+      sessionId,
+      lastActive: Date.now(),
+      ipAddress,
+    }),
+  ]);
+  res.send({ sessionId });
+});
+
+router.post('/api/login', (req, res) => {
+  const sessId = req.headers['session-id'];
+  checkSession(sessId, ({ activeSession, loggedInAdmin }) => {
+    const { username, password } = req.body;
+    const sessionId = req.headers['session-id'];
+    const ipAddress =
+      req.headers['x-forwarded-for'] ||
+      req.connection.remoteAddress ||
+      req.socket.remoteAddress ||
+      req.connection.socket.remoteAddress;
+    if (
+      !activeSession ||
+      !compare(username, adminUserName) ||
+      !bcrypt.compareSync(password, adminPasswordHash)
+    ) {
+      res.send({ loggedInSessionId: null });
+      res.end();
+      return;
+    }
+    client.rpush([
+      `loggedInSessionIds`,
+      JSON.stringify({
+        loggedInSessionId: sessionId,
+        ipAddress,
+      }),
+    ]);
+    res.send({ loggedInSessionId: sessionId });
+    res.end();
+  });
+});
+
+router.delete('/api/session-ids', (req, res) => {
+  const sessId = req.headers['session-id'];
+  checkSession(sessId, ({ activeSession, loggedInAdmin }) => {
+    if (!loggedInAdmin) {
+      res.end();
+      return;
+    }
+    const sessionId = req.body.session_id;
+    if (sessionId !== undefined) {
+      client.lrange(`active_sessions`, 0, -1, (err, reply) => {
+        for (let i = 0; i < reply.length; i += 1) {
+          const session = JSON.parse(reply[i]);
+          if (session.sessionId === sessionId) {
+            client.lrem(`active_sessions`, 1, reply[i]);
+            res.end();
+            return;
+          }
+        }
+      });
+    }
+  });
+  res.end();
+});
+
+router.delete('/api/logged-in-session-ids', (req, res) => {
+  const sessId = req.headers['session-id'];
+  checkSession(sessId, ({ activeSession, loggedInAdmin }) => {
+    if (!loggedInAdmin) {
+      res.end();
+      return;
+    }
+    const sessionId = req.body.logged_in_session_id;
+    if (sessionId !== undefined) {
+      client.lrange(`loggedInSessionIds`, 0, -1, (err, reply) => {
+        for (let i = 0; i < reply.length; i += 1) {
+          const session = JSON.parse(reply[i]);
+          if (session.loggedInSessionId === sessionId) {
+            client.lrem(`loggedInSessionIds`, 1, reply[i]);
+            res.end();
+            return;
+          }
+        }
+      });
+    }
+  });
+  res.end();
+});
+
+router.post('/api/comments', (req, res) => {
+  const sessId = req.headers['session-id'];
+  checkSession(sessId, ({ activeSession, loggedInAdmin }) => {
+    if (!activeSession) {
+      res.end();
+      return;
+    }
+    const pageId = req.body.page_id;
+    const commentId = Math.random()
+      .toString(36)
+      .substring(7);
+    const commenterName = req.body.commenter_name;
+    const commenterSessionId = sessId;
+    const { comment } = req.body;
+    client.lrem('pageIds', 0, pageId);
+    client.rpush(['pageIds', pageId]);
+    client.rpush([
+      `${pageId}_comments`,
+      JSON.stringify({
+        commentId,
+        commenterSessionId,
+        commenterName,
+        comment,
+        timestamp: Date.now(),
+      }),
+    ]);
+    res.send(commentId);
+    res.end();
+  });
+});
+
+router.delete('/api/comments', (req, res) => {
+  const sessId = req.headers['session-id'];
+  checkSession(sessId, ({ activeSession, loggedInAdmin }) => {
+    const pageId = req.body.page_id;
+    const { pattern } = req.body;
+    const commentId = req.body.comment_id;
+    const deleterId = sessId;
+    if (pattern === '*') {
+      if (loggedInAdmin) {
+        client.del(`${pageId}_comments`);
+      }
+    } else if (pattern !== undefined) {
+      client.lrange(`${pageId}_comments`, 0, -1, (err, reply) => {
+        for (let i = reply.length - 1; i >= 0; i -= 1) {
+          const comment = JSON.parse(reply[i]);
+          if (`${comment.commenterName}${comment.comment}`.includes(pattern)) {
+            const deleterIsOwner = compare(
+              deleterId,
+              comment.commenterSessionId,
+            );
+            if (loggedInAdmin || deleterIsOwner) {
+              client.lrem(`${pageId}_comments`, 1, reply[i]);
+            }
+          }
+        }
+      });
+    }
+    if (commentId !== undefined) {
+      client.lrange(`${pageId}_comments`, 0, -1, (err, reply) => {
+        for (let i = 0; i < reply.length; i += 1) {
+          const comment = JSON.parse(reply[i]);
+          if (comment.commentId === commentId) {
+            const deleterIsOwner = compare(
+              deleterId,
+              comment.commenterSessionId,
+            );
+            if (loggedInAdmin || deleterIsOwner) {
+              client.lrem(`${pageId}_comments`, 1, reply[i]);
+              res.end();
+              return;
+            }
+          }
+        }
+      });
+    }
+  });
+  res.end();
+});
+
+router.delete('/api/ping-tests', (req, res) => {
+  const sessId = req.headers['session-id'];
+  checkSession(sessId, ({ activeSession, loggedInAdmin }) => {
+    if (!loggedInAdmin) {
+      res.end();
+      return;
+    }
+    const apiKey = client.del(`pingTests`);
+    res.end();
+  });
+});
+
+router.get('/api/payments/count', (req, res) => {
+  const sessId = req.headers['session-id'];
+  checkSession(sessId, ({ activeSession, loggedInAdmin }) => {
+    client.lrange(`payments`, 0, -1, (err, reply) => {
+      res.send([reply.length]);
+    });
+  });
+});
+
+router.get('/api/payments/single', (req, res) => {
+  const sessId = req.headers['session-id'];
+  checkSession(sessId, ({ activeSession, loggedInAdmin }) => {
+    const paymentId = req.headers.payment_id;
+    client.lrange(`payments`, 0, -1, (err, reply) => {
+      for (let i = 0; i < reply.length; i += 1) {
+        if (JSON.parse(reply[i]).paymentId === paymentId) {
+          res.send(JSON.parse(reply[i]));
+          return;
+        }
+      }
+      res.send(null);
+    });
+  });
+});
+
+router.get('/api/payments', (req, res) => {
+  const sessId = req.headers['session-id'];
+  checkSession(sessId, ({ activeSession, loggedInAdmin }) => {
+    if (!loggedInAdmin) {
+      res.end();
+      return;
+    }
+    client.lrange(`payments`, 0, -1, (err, reply) => {
+      const result = [];
+      for (let i = 0; i < reply.length; i += 1) {
+        result.push(JSON.parse(reply[i]));
+      }
+      res.send(result);
+    });
+  });
+});
+
+router.post('/api/payments', (req, res) => {
+  const sessId = req.headers['session-id'];
+  checkSession(sessId, ({ activeSession, loggedInAdmin }) => {
+    const { reference, amount } = req.body;
+    const monzoMeLink = req.body.monzo_me_link;
+    const accountNumber = req.body.account_number;
+    const sortCode = req.body.sort_code;
+    let valid = true;
+    if (!amount.match(DECIMAL_REGEX)) {
+      valid = false;
+    }
+    if (monzoMeLink !== '' && !monzoMeLink.matches(MONZOME_LINK_REGEX)) {
+      valid = false;
+    }
+    if (!reference.match(STRING_REGEX)) {
+      valid = false;
+    }
+    if (!accountNumber.match(INT_REGEX)) {
+      valid = false;
+    }
+    if (!sortCode.match(SORT_CODE_REGEX)) {
+      valid = false;
+    }
+    if (!valid) {
+      res.send({
+        error:
+          'There was an error processing the request 😿 Please try again later.',
+      });
+      res.end();
+      return;
+    }
+    const paymentId = Math.random()
+      .toString(36)
+      .substring(7);
+    client.rpush([
+      `payments`,
+      JSON.stringify({
+        paymentId,
+        reference,
+        amount,
+        monzoMeLink,
+        accountNumber,
+        sortCode,
+        status: 'pending',
+        timestamp: Date.now(),
+      }),
+    ]);
+    res.send({ payment_id: paymentId });
+    res.end();
+  });
+});
+
+router.delete('/api/payments', (req, res) => {
+  const sessId = req.headers['session-id'];
+  checkSession(sessId, ({ activeSession, loggedInAdmin }) => {
+    if (!loggedInAdmin) {
+      res.end();
+      return;
+    }
+    const paymentId = req.body.payment_id;
+    if (paymentId !== undefined) {
+      client.lrange(`payments`, 0, -1, (err, reply) => {
+        for (let i = 0; i < reply.length; i += 1) {
+          const payment = JSON.parse(reply[i]);
+          if (payment.paymentId === paymentId) {
+            client.lrem(`payments`, 1, reply[i]);
+            res.end();
+            return;
+          }
+        }
+      });
+    }
+  });
+  res.end();
+});
+
+router.delete('/api/blog-posts', (req, res) => {
+  const sessId = req.headers['session-id'];
+  checkSession(sessId, ({ activeSession, loggedInAdmin }) => {
+    if (!loggedInAdmin) {
+      res.end();
+      return;
+    }
+    const blogId = req.body.blog_id;
+    if (blogId !== undefined) {
+      client.lrange(`blog-posts`, 0, -1, (err, reply) => {
+        for (let i = 0; i < reply.length; i += 1) {
+          const blog = JSON.parse(reply[i]);
+          if (blog.blogId === blogId) {
+            client.lrem(`blog-posts`, 1, reply[i]);
+            res.end();
+            return;
+          }
+        }
+      });
+    }
+  });
+  res.end();
+});
+
+router.post('/api/payments/status/authorise', (req, res) => {
+  const sessId = req.headers['session-id'];
+  checkSession(sessId, ({ activeSession, loggedInAdmin }) => {
+    if (!loggedInAdmin) {
+      res.end();
+      return;
+    }
+    const paymentId = req.body.payment_id;
+    if (paymentId !== undefined) {
+      client.lrange(`payments`, 0, -1, (err, reply) => {
+        for (let i = 0; i < reply.length; i += 1) {
+          const payment = JSON.parse(reply[i]);
+          if (payment.paymentId === paymentId) {
+            payment.status = 'authorised';
+            client.lset(`payments`, i, JSON.stringify(payment));
+            res.end();
+            return;
+          }
+        }
+      });
+    }
+  });
+  res.end();
+});
+
+router.post('/api/payments/status/complete', (req, res) => {
+  const sessId = req.headers['session-id'];
+  checkSession(sessId, ({ activeSession, loggedInAdmin }) => {
+    if (!loggedInAdmin) {
+      res.end();
+      return;
+    }
+    const paymentId = req.body.payment_id;
+    if (paymentId !== undefined) {
+      client.lrange(`payments`, 0, -1, (err, reply) => {
+        for (let i = 0; i < reply.length; i += 1) {
+          const payment = JSON.parse(reply[i]);
+          if (payment.paymentId === paymentId) {
+            payment.status = 'completed';
+            client.lset(`payments`, i, JSON.stringify(payment));
+            res.end();
+            return;
+          }
+        }
+      });
+    }
+  });
+  res.end();
+});
+
+router.post('/api/payments/status/reject', (req, res) => {
+  const sessId = req.headers['session-id'];
+  checkSession(sessId, ({ activeSession, loggedInAdmin }) => {
+    if (!loggedInAdmin) {
+      res.end();
+      return;
+    }
+    const paymentId = req.body.payment_id;
+    if (paymentId !== undefined) {
+      client.lrange(`payments`, 0, -1, (err, reply) => {
+        for (let i = 0; i < reply.length; i += 1) {
+          const payment = JSON.parse(reply[i]);
+          if (payment.paymentId === paymentId) {
+            payment.status = 'rejected';
+            client.lset(`payments`, i, JSON.stringify(payment));
+            res.end();
+            return;
+          }
+        }
+      });
+    }
+  });
+  res.end();
+});
+
+router.get('/api/blog-posts', (req, res) => {
+  const sessId = req.headers['session-id'];
+  checkSession(sessId, ({ activeSession, loggedInAdmin }) => {
+    const selectedBlogTags = req.headers['selected-blog-tags']
+      ? req.headers['selected-blog-tags'].split(', ')
+      : [];
+    const blogCollection = req.headers['blog-collection'];
+    client.lrange(`blog-posts`, 0, -1, (err, reply) => {
+      const result = [];
+      for (let i = 0; i < reply.length; i += 1) {
+        const blog = JSON.parse(reply[i]);
+        if (loggedInAdmin || blog.blogPublished) {
+          if (selectedBlogTags.length === 0) {
+            if (
+              blogCollection === 'all' ||
+              (blogCollection === 'blog' && blog.blogShowInBlogsList) ||
+              (blogCollection === 'travel' && blog.blogShowInTravelBlogsList)
+            ) {
+              result.push(blog);
+            }
+          } else {
+            for (let j = 0; j < blog.blogTags.length; j += 1) {
+              const tag = blog.blogTags[j];
+              if (selectedBlogTags.includes(tag)) {
+                if (
+                  blogCollection === 'all' ||
+                  (blogCollection === 'blog' && blog.blogShowInBlogsList) ||
+                  (blogCollection === 'travel' &&
+                    blog.blogShowInTravelBlogsList)
+                ) {
+                  result.push(blog);
+                }
+                break;
+              }
+            }
+          }
+        }
+      }
+      res.send(
+        result.sort((a, b) => a.publishedTimestamp < b.publishedTimestamp),
+      );
+    });
+  });
+});
+
+router.get('/api/blog-posts/single', (req, res) => {
+  const sessId = req.headers['session-id'];
+  checkSession(sessId, ({ activeSession, loggedInAdmin }) => {
+    const blogId = req.headers.blog_id;
+    client.lrange(`blog-posts`, 0, -1, (err, reply) => {
+      for (let i = 0; i < reply.length; i += 1) {
+        const blog = JSON.parse(reply[i]);
+        if (blog.blogId === blogId) {
+          // TODO If private api key, return blog
+          // TODO Else if public api key, return only if published
+          if (loggedInAdmin || blog.blogPublished) {
+            res.send(JSON.parse(reply[i]));
+            return;
+          }
+        }
+      }
+      res.send(null);
+    });
+  });
+});
+
+router.post('/api/blog-posts', (req, res) => {
+  const sessId = req.headers['session-id'];
+  checkSession(sessId, ({ activeSession, loggedInAdmin }) => {
+    if (!loggedInAdmin) {
+      res.end();
+      return;
+    }
+    const blogName = req.body.blog_name;
+    const blogId = Math.random()
+      .toString(36)
+      .substring(7);
+    const blogContent = req.body.blog_content;
+    const blogTags = req.body.blog_tags;
+    const blogPublished = req.body.blog_published;
+    const blogImageBorderColor = req.body.blog_image_border_color;
+    const blogBannerColor = req.body.blog_banner_color;
+    const blogCardLight = req.body.blog_card_light;
+    const blogCardLink = req.body.blog_card_link;
+    const blogBibtex = req.body.blog_bibtex;
+    const blogShowInBlogsList = req.body.blog_show_in_blogs_list;
+    const blogShowInTravelBlogsList = req.body.blog_show_in_travel_blogs_list;
+    const blogCardDate = req.body.blog_card_date;
+    let publishedTimestamp = req.body.blog_published_timestamp;
+    if (publishedTimestamp === '') {
+      publishedTimestamp = null;
+    }
+    client.rpush([
+      `blog-posts`,
+      JSON.stringify({
+        blogId,
+        blogName,
+        blogContent,
+        blogTags,
+        blogPublished,
+        blogImageBorderColor,
+        blogBannerColor,
+        blogCardLight,
+        blogCardLink,
+        blogBibtex,
+        blogShowInBlogsList,
+        blogShowInTravelBlogsList,
+        blogCardDate,
+        publishedTimestamp: publishedTimestamp || null,
+      }),
+    ]);
+    res.send({ blog_id: blogId });
+    res.end();
+  });
+});
+
+router.post('/api/blog-posts/update', (req, res) => {
+  const sessId = req.headers['session-id'];
+  checkSession(sessId, ({ activeSession, loggedInAdmin }) => {
+    if (!loggedInAdmin) {
+      res.end();
+      return;
+    }
+    const blogId = req.body.blog_id;
+    const blogName = req.body.blog_name;
+    const blogContent = req.body.blog_content;
+    const blogTags = req.body.blog_tags;
+    const blogPublished = req.body.blog_published;
+    const blogHeroImage = req.body.blog_hero_image;
+    const blogImage = req.body.blog_image;
+    const blogImageBorderColor = req.body.blog_image_border_color;
+    const blogBannerColor = req.body.blog_banner_color;
+    const blogCardLight = req.body.blog_card_light;
+    const blogCardLink = req.body.blog_card_link;
+    const blogBibtex = req.body.blog_bibtex;
+    const blogShowInBlogsList = req.body.blog_show_in_blogs_list;
+    const blogShowInTravelBlogsList = req.body.blog_show_in_travel_blogs_list;
+    const blogCardDate = req.body.blog_card_date;
+    const blogPublishedTimestamp = req.body.blog_published_timestamp;
+    if (blogId !== undefined) {
+      client.lrange(`blog-posts`, 0, -1, (err, reply) => {
+        for (let i = 0; i < reply.length; i += 1) {
+          const blog = JSON.parse(reply[i]);
+          if (blog.blogId === blogId) {
+            if (blogPublishedTimestamp) {
+              blog.publishedTimestamp = blogPublishedTimestamp;
+            } else if (!blog.publishedTimestamp && blogPublished) {
+              // blog has just been published for the first time:
+              // Set Published date:
+              blog.publishedTimestamp = Date.now();
+            }
+            blog.blogContent = blogContent;
+            blog.blogName = blogName;
+            blog.blogTags = blogTags;
+            blog.blogPublished = blogPublished;
+            blog.blogHeroImage = blogHeroImage;
+            blog.blogImage = blogImage;
+            blog.blogImageBorderColor = blogImageBorderColor;
+            blog.blogBannerColor = blogBannerColor;
+            blog.blogCardLight = blogCardLight;
+            blog.blogCardLink = blogCardLink;
+            blog.blogBibtex = blogBibtex;
+            blog.blogShowInBlogsList = blogShowInBlogsList;
+            blog.blogShowInTravelBlogsList = blogShowInTravelBlogsList;
+            blog.blogCardDate = blogCardDate;
+            client.lset(`blog-posts`, i, JSON.stringify(blog));
+            return;
+          }
+        }
+      });
+    }
+    res.send({ blog_id: blogId });
+    res.end();
+  });
+});
+
+router.get('/api/notifications', (req, res) => {
+  const sessId = req.headers['session-id'];
+  checkSession(sessId, ({ activeSession, loggedInAdmin }) => {
+    client.lrange('notifications', 0, -1, (err, reply) => {
+      const result = [];
+      for (let i = 0; i < reply.length; i += 1) {
+        result.push(JSON.parse(reply[i]));
+      }
+      res.send(result);
+    });
+  });
+});
+
+router.post('/api/notifications', (req, res) => {
+  const sessId = req.headers['session-id'];
+  checkSession(sessId, ({ activeSession, loggedInAdmin }) => {
+    if (!loggedInAdmin) {
+      res.end();
+      return;
+    }
+    const notificationId = Math.random()
+      .toString(36)
+      .substring(7);
+    const notificationMessage = req.body.notification_message;
+    const notificationType = req.body.notification_type;
+    client.rpush([
+      `notifications`,
+      JSON.stringify({
+        notificationId,
+        notificationMessage,
+        notificationType,
+        timestamp: Date.now(),
+      }),
+    ]);
+  });
+  res.end();
+});
+
+router.delete('/api/notifications', (req, res) => {
+  const sessId = req.headers['session-id'];
+  checkSession(sessId, ({ activeSession, loggedInAdmin }) => {
+    if (!loggedInAdmin) {
+      res.end();
+      return;
+    }
+    const notificationId = req.body.notification_id;
+    if (notificationId !== undefined) {
+      client.lrange(`notifications`, 0, -1, (err, reply) => {
+        for (let i = reply.length - 1; i >= 0; i -= 1) {
+          const notification = JSON.parse(reply[i]);
+          if (notification.notificationId === notificationId) {
+            client.lrem(`notifications`, 1, reply[i]);
+          }
+        }
+      });
+    }
+  });
+  res.end();
+});
 
 if (!process.env.DEV) {
+  router.get('/418', (req, res) => {
+    res.status(418);
+    res.sendFile(path.resolve(__dirname, buildDirectory, 'index.html'));
+  });
   router.get('/teapot', (req, res) => {
     res.status(418);
     res.sendFile(path.resolve(__dirname, buildDirectory, 'index.html'));
@@ -63,5 +927,9 @@ app.use(router);
 
 app.listen(portNumber, () => {
   console.log(`Express web server started: http://localhost:${portNumber}`);
-  console.log(`Serving content from /${buildDirectory}/`);
+  if (!process.env.DEV) {
+    console.log(`Serving content from ${buildDirectory}/`);
+  } else {
+    console.log(`Content served by webpack`);
+  }
 });
