@@ -78,6 +78,18 @@ class Degree extends React.Component {
           4 year integrated Masters of Engineering (2013 - 2015, 2016 - 2018)
           <br />
           <br />
+          <span
+            style={{ width: '100%', fontWeight: 'bold', color: 'darkorchid' }}
+          >
+            Purple values represent estimated values
+            <br />
+            Final results released:{' '}
+            <Countdown date={new Date('2018-06-28T16:00:00')} />
+          </span>
+          {/* TODO REMOVE_2 */}
+          <br />
+          {/* TODO REMOVE_2 */}
+          <br />
           <DegreeModule
             name="Final percentage"
             percentage={FINAL_DEGREE_PERCENTAGE}
