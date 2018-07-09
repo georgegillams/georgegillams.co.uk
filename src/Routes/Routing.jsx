@@ -6,7 +6,9 @@ import {
   Redirect,
   withRouter,
 } from 'react-router-dom';
+import { renderRoutes } from 'react-router-config'
 import DefaultLayout from '../components/DefaultLayout';
+import routes from './routes'
 
 import HomePage from '../Pages/HomePageV2';
 import Admin from '../Pages/Admin/Admin';
@@ -70,56 +72,7 @@ const RoutedAdminPage = withRouter(Admin);
 const Routes = (
   <BrowserRouter>
     <DefaultLayout>
-      <Switch>
-        <Route exact path="/" component={HomePage} />
-        <Route exact path="/blog" component={BlogsPage} />
-        <Route path="/blog/view" component={BlogViewerPage} />
-        <Route path="/travel/view" component={BlogViewerPage} />
-        <Route exact path="/travel" component={TravelPage} />
-        <Route path="/photography" component={Art} />
-        <Route path="/work/degree" component={AboutDegree} />
-        <Route exact path="/work" component={Work} />
-        <Route
-          exact
-          path="/design/privacy-policy"
-          component={RoutedDesignPage}
-        />
-        <Route path="/design/colours" component={RoutedDesignPage} />
-        <Route path="/design/components" component={RoutedDesignPage} />
-        <Route path="/design/typography" component={RoutedDesignPage} />
-        <Route path="/admin/login" component={Admin} />
-        <Route path="/admin/blogs" component={Admin} />
-        <Route path="/admin/sessions" component={Admin} />
-        <Route path="/admin/blog-comments" component={Admin} />
-        <Route path="/admin/notifications" component={Admin} />
-        <Route path="/admin/payments" component={Admin} />
-        <Route path="/admin/ping-pen-testing" component={Admin} />
-        <Route path="/admin/blog-editor" component={BlogEditorPage} />
-        <Route
-          path="/apps/password-character-extractor"
-          component={PasswordCharacterExtractor}
-        />
-        <Route path="/work/bpk-component-demo" component={BpkComponentDemo} />
-        <Route path="/site-map" component={SiteMap} />
-        <Route path="/santander-ping" component={AdminPingTest} />
-        <Route path="/payments/view" component={PaymentView} />
-        <Route path="/payments" component={Payments} />
-        <Route exact path="/about" component={AboutMe} />
-        <Route path="/contact" component={Contact} />
-
-        {redirects.map(redirect => (
-          <Route
-            exact
-            path={redirect.from}
-            render={() => <Redirect to={redirect.to} />}
-          />
-        ))}
-
-        <Route path="/example-418" component={TeaPot} />
-        <Route path="/example-teapot" component={TeaPot} />
-        <Route path="/example-404" component={ForOhFour} />
-        <Route component={ForOhFour} />
-      </Switch>
+      {renderRoutes(routes)}
     </DefaultLayout>
   </BrowserRouter>
 );

@@ -8,10 +8,12 @@ const {
   STRING_REGEX,
   MONZOME_LINK_REGEX,
 } = require('./src/shared/constants');
+const ssr = require('react-ssr');
 const wget = require('wget-improved');
 const crypto = require('crypto');
 const compare = require('secure-compare');
 const bcrypt = require('bcrypt');
+const routes = require('./src/Routes/routes');
 
 const app = express();
 
@@ -30,7 +32,8 @@ if (process.env.REDIS_URL) {
 }
 
 const buildDirectory = '../build';
-const staticFiles = express.static(path.join(__dirname, buildDirectory));
+// const staticFiles = express.static(path.join(__dirname, buildDirectory));
+const staticFiles = ssr({routes});
 
 app.use((req, res, next) => {
   res.header('Access-Control-Allow-Origin', '*');
