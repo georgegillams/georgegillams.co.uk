@@ -6,6 +6,7 @@ import Section from './Section';
 import SubSection from './SubSection';
 import CommentInput from './CommentInput';
 import Button from './Button';
+import BlogPreviewContent from './BlogPreviewContent';
 import DatabaseFunctions from '../DatabaseFunctions';
 import HelperFunctions from '../HelperFunctions';
 
@@ -68,7 +69,7 @@ class Comments extends React.Component {
               className={getClassName('comments__component')}
               name={`${c.commenterName}`}
             >
-              {c.comment}
+              <BlogPreviewContent supportedFeatures={['code','blockCode', 'bold', 'italic', 'strikethrough', 'quotation', 'link']} content={c.comment} />
               <br />
               {(HelperFunctions.includes(
                 this.state.userComments,

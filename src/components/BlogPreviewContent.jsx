@@ -58,6 +58,7 @@ const BlogPreviewContent = props => {
     light,
     noAnchor,
     references,
+    supportedFeatures,
     ...rest
   } = props;
 
@@ -97,7 +98,7 @@ const BlogPreviewContent = props => {
 
   // If it's a footnote ref, return a superscript number:
   const mdFootNote1 = content.split(MD_FOOTNOTE_1_REGEX);
-  if (mdFootNote1.length > 2) {
+  if (HelperFunctions.includes(supportedFeatures, 'footnote') && mdFootNote1.length > 2) {
     const preFootnoteText = `${mdFootNote1.shift()}${mdFootNote1.shift()}`;
     const footnoteNumber = mdFootNote1.shift();
     const postFootnoteText = mdFootNote1.join('');
@@ -114,7 +115,7 @@ const BlogPreviewContent = props => {
 
   // If it's a footnote, return a superscript number:
   const mdFootNote2 = content.split(MD_FOOTNOTE_2_REGEX);
-  if (mdFootNote2.length > 3) {
+  if (HelperFunctions.includes(supportedFeatures, 'footnote') && mdFootNote2.length > 3) {
     const preFootnoteText = `${mdFootNote2.shift()}${mdFootNote2.shift()}`;
     const footnoteNumber = mdFootNote2.shift();
     const footnoteValue = mdFootNote2.shift();
@@ -133,7 +134,7 @@ const BlogPreviewContent = props => {
 
   // If it's a quotation, return a Quote component:
   const mdQuotation = content.split(MD_QUOTATION_REGEX);
-  if (mdQuotation.length > 2) {
+  if (HelperFunctions.includes(supportedFeatures, 'quotation') && mdQuotation.length > 2) {
     const preQuotationText = `${mdQuotation.shift()}${mdQuotation.shift()}`;
     const quotation = mdQuotation.shift();
     const postQuotationText = mdQuotation.join('');
@@ -150,7 +151,7 @@ const BlogPreviewContent = props => {
 
   // If it's a regular image, return an Image component:
   const mdImage = content.split(MD_IMAGE_REGEX);
-  if (mdImage.length > 3) {
+  if (HelperFunctions.includes(supportedFeatures, 'image') && mdImage.length > 3) {
     const preImageText = `${mdImage.shift()}${mdImage.shift()}`;
     const imageAltText = mdImage.shift();
     const imageSrc = mdImage.shift();
@@ -170,7 +171,7 @@ const BlogPreviewContent = props => {
 
   // If it's a lazy-loaded image, return an Image component:
   const mdLazyLoadedImage = content.split(MD_LAZY_LOAD_IMAGE_REGEX);
-  if (mdLazyLoadedImage.length > 5) {
+  if (HelperFunctions.includes(supportedFeatures, 'image') && mdLazyLoadedImage.length > 5) {
     const preImageText = `${mdLazyLoadedImage.shift()}${mdLazyLoadedImage.shift()}`;
     const aspectX = parseInt(mdLazyLoadedImage.shift(), 10);
     const aspectY = parseInt(mdLazyLoadedImage.shift(), 10);
@@ -194,7 +195,7 @@ const BlogPreviewContent = props => {
 
   // If it's a YouTube video, return a YoutubeEmbedVideo component:
   const mdYtVideo = content.split(MD_YOUTUBE_REGEX);
-  if (mdYtVideo.length > 3) {
+  if (HelperFunctions.includes(supportedFeatures, 'video') && mdYtVideo.length > 3) {
     const preLinkText = `${mdYtVideo.shift()}${mdYtVideo.shift()}`;
     const showSuggestions = mdYtVideo.shift() === 'true';
     const videoId = mdYtVideo.shift();
@@ -215,7 +216,7 @@ const BlogPreviewContent = props => {
 
   // If it's a **BIG** hyperlink, return a <a>-wrapped Section component:
   const mdBigLink = content.split(MD_LINK_BIG_REGEX);
-  if (mdBigLink.length > 3) {
+  if (HelperFunctions.includes(supportedFeatures, 'link') && mdBigLink.length > 3) {
     const preLinkText = `${mdBigLink.shift()}${mdBigLink.shift()}`;
     const linkText = mdBigLink.shift();
     const linkRef = mdBigLink.shift();
@@ -244,7 +245,7 @@ const BlogPreviewContent = props => {
 
   // If it's a hyperlink, return a TextLink component:
   const mdLink = content.split(MD_LINK_REGEX);
-  if (mdLink.length > 3) {
+  if (HelperFunctions.includes(supportedFeatures, 'link') && mdLink.length > 3) {
     const preLinkText = `${mdLink.shift()}${mdLink.shift()}`;
     const linkText = mdLink.shift();
     const linkRef = mdLink.shift();
@@ -264,7 +265,7 @@ const BlogPreviewContent = props => {
 
   // If it's a subsubsection, return a bold title component:
   const mdSubSubSection = content.split(MD_SUBSUBSECTION_REGEX);
-  if (mdSubSubSection.length > 2) {
+  if (HelperFunctions.includes(supportedFeatures, 'sectioning') && mdSubSubSection.length > 2) {
     const preSsSectionText = `${mdSubSubSection.shift()}${mdSubSubSection.shift()}`;
     const SsSectionText = mdSubSubSection.shift();
     const postSsSectionText = mdSubSubSection.join('');
@@ -285,7 +286,7 @@ const BlogPreviewContent = props => {
 
   // If it's bold, return a span with fontWeight: 'bold' component:
   const mdBold = content.split(MD_BOLD_REGEX);
-  if (mdBold.length > 2) {
+  if (HelperFunctions.includes(supportedFeatures, 'bold') && mdBold.length > 2) {
     const preBoldText = `${mdBold.shift()}${mdBold.shift()}`;
     const boldText = mdBold.shift();
     const postBoldText = mdBold.join('');
@@ -305,7 +306,7 @@ const BlogPreviewContent = props => {
 
   // If it's a reference citation, return the Citation:
   const mdCitation = content.split(MD_CITATION_REGEX);
-  if (mdCitation.length > 2) {
+  if (HelperFunctions.includes(supportedFeatures, 'citation') && mdCitation.length > 2) {
     const preCitationText = `${mdCitation.shift()}${mdCitation.shift()}`;
     const referenceIdentifier = mdCitation.shift();
     const postCitationText = mdCitation.join('');
@@ -320,7 +321,7 @@ const BlogPreviewContent = props => {
 
   // If it's reference print-out, return a references section:
   const mdReferencesPrintout = content.split(MD_REFERENCES_REGEX);
-  if (mdReferencesPrintout.length > 1) {
+  if (HelperFunctions.includes(supportedFeatures, 'citation') && mdReferencesPrintout.length > 1) {
     const preReferencesText = `${mdReferencesPrintout.shift()}${mdReferencesPrintout.shift()}`;
     const postReferencesText = mdReferencesPrintout.join('');
     return (
@@ -349,7 +350,7 @@ const BlogPreviewContent = props => {
 
   // If it's a strikethrough, return a Strikethrough component:
   const mdStrikethrough = content.split(MD_STRIKETHROUGH_REGEX);
-  if (mdStrikethrough.length > 2) {
+  if (HelperFunctions.includes(supportedFeatures, 'strikethrough') && mdStrikethrough.length > 2) {
     const preStrikeText = `${mdStrikethrough.shift()}${mdStrikethrough.shift()}`;
     const strikenText = mdStrikethrough.shift();
     const postStrikeText = mdStrikethrough.join('');
@@ -369,7 +370,7 @@ const BlogPreviewContent = props => {
 
   // If it's inline code, return a CodeInline component:
   const mdBlockCode = content.split(MD_BLOCK_CODE_REGEX);
-  if (mdBlockCode.length > 4) {
+  if (HelperFunctions.includes(supportedFeatures, 'blockCode') && mdBlockCode.length > 4) {
     const preInlineCodeText = `${mdBlockCode.shift()}${mdBlockCode.shift()}`;
     const language = mdBlockCode.shift();
     const githubLink = mdBlockCode.shift();
@@ -399,7 +400,7 @@ const BlogPreviewContent = props => {
 
   // If it's inline code, return a CodeInline component:
   const mdInlineCode = content.split(MD_INLINE_CODE_REGEX);
-  if (mdInlineCode.length > 2) {
+  if (HelperFunctions.includes(supportedFeatures, 'code') && mdInlineCode.length > 2) {
     const preInlineCodeText = `${mdInlineCode.shift()}${mdInlineCode.shift()}`;
     const inlineCode = mdInlineCode.shift();
     const postInlineCodeText = mdInlineCode.join('');
@@ -438,6 +439,7 @@ BlogPreviewContent.propTypes = {
   elementClassName: PropTypes.string,
   light: PropTypes.bool,
   noAnchor: PropTypes.bool,
+  supportedFeatures: PropTypes.arrayOf(PropTypes.string),
 };
 
 BlogPreviewContent.defaultProps = {
@@ -446,6 +448,7 @@ BlogPreviewContent.defaultProps = {
   elementClassName: null,
   light: false,
   noAnchor: false,
+  supportedFeatures: ['code','blockCode', 'bold', 'italic', 'strikethrough', 'quotation', 'link', 'footnote', 'image', 'video', 'citation', 'sectioning'],
 };
 
 export default BlogPreviewContent;
