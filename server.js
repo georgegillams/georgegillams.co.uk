@@ -134,6 +134,10 @@ router.get('/api/greasemonkey/github_highlight_name', (req, res) => {
   sendGreasemonkeyFile('Github highlight my name.js', req, res);
 });
 
+router.get('/api/greasemonkey/github_expand_comments', (req, res) => {
+  sendGreasemonkeyFile('Github expand all hidden comments.js', req, res);
+});
+
 router.get('/api/greasemonkey/hackthis_coding_1', (req, res) => {
   sendGreasemonkeyFile('Hackthis.co.uk coding level 1.js', req, res);
 });
