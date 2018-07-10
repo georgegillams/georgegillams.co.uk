@@ -5,6 +5,7 @@ import BpkTextArea from 'bpk-component-textarea';
 import cookie from 'react-cookies';
 import Button from './Button';
 import SubSection from './SubSection';
+import CodeInline from './CodeInline';
 import DatabaseFunctions from '../DatabaseFunctions';
 import Section from './Section';
 
@@ -97,6 +98,9 @@ class CommentInput extends React.Component {
                   onChange={this.onCommentChanged}
                   placeholder="Your comment(s)"
                 />
+                <br />
+                {`Comments support **`}<span style={{fontWeight: 'bold'}}>bold</span>{'**, _'}<span style={{fontStyle: 'italic'}}>italic</span>{'_, ~'}<span style={{textDecoration: 'line-through'}}>strikethrough</span>{'~ and `'}<CodeInline>code</CodeInline>{'`'}
+                <br />
                 <br />
                 <Button
                   className={getClassName('comments__component')}
