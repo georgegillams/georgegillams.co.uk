@@ -4,10 +4,11 @@ import BpkProgress, {
   themeAttributes as progressThemeAttributes,
 } from 'bpk-component-progress';
 import BpkThemeProvider from 'bpk-theming';
+import { cssModules } from 'bpk-react-utils';
 
 import STYLES from './degree-module.scss';
 
-const getClassName = className => className; //STYLES[className] || 'UNKNOWN';
+const getClassName = cssModules(STYLES);
 
 const DegreeModule = props => {
   const {

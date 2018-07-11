@@ -1,10 +1,11 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import BpkText from 'bpk-component-text';
+import { cssModules } from 'bpk-react-utils';
 
 import STYLES from './coming-soon.scss';
 
-const getClassName = className => className; //STYLES[className] || 'UNKNOWN';
+const getClassName = cssModules(STYLES);
 
 const ComingSoon = (props) => {
   const { className, ...rest } = props;

@@ -23,6 +23,7 @@
   "homepage": "https://github.com/vikpe/react-webpack-babel-starter",
   "scripts": {
     "build": "npm run clean-dist && webpack -p --config=configs/webpack/prod",
+    "postinstall": "npm run build",
     "clean-dist": "rm -f -r -d dist",
     "lint": "npm run lint:js && npm run lint:sass",
     "lint:js": "jshint",

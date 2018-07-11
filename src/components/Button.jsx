@@ -1,10 +1,11 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { NavLink } from 'react-router-dom';
+import { cssModules } from 'bpk-react-utils';
 
 import STYLES from './button.scss';
 
-const getClassName = className => className; //STYLES[className] || 'UNKNOWN';
+const getClassName = cssModules(STYLES);
 
 const Button = props => {
   const {

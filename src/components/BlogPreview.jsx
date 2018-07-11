@@ -1,10 +1,11 @@
 import PropTypes from 'prop-types';
 import React from 'react';
+import { cssModules } from 'bpk-react-utils';
 import BlogRenderer from './BlogRenderer';
 
 import STYLES from './article-date.scss';
 
-const getClassName = className => className; //STYLES[className] || 'UNKNOWN';
+const getClassName = cssModules(STYLES);
 
 const BlogPreview = props => {
   const { blog, className, elementClassName, light, noAnchor, ...rest } = props;

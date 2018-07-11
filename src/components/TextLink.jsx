@@ -2,10 +2,11 @@ import PropTypes from 'prop-types';
 import React from 'react';
 import BpkSmallNewWindowIcon from 'bpk-component-icon/sm/new-window';
 import { NavLink } from 'react-router-dom';
+import { cssModules } from 'bpk-react-utils';
 
 import STYLES from './typography.scss';
 
-const getClassName = className => className; //STYLES[className] || 'UNKNOWN';
+const getClassName = cssModules(STYLES);
 
 const TextLink = props => {
   const {

@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import 'whatwg-fetch';
+import { cssModules } from 'bpk-react-utils';
 import HelperFunctions from '../HelperFunctions';
 import NotificationCenter from './NotificationCenter';
 
@@ -12,7 +13,7 @@ import CookieBanner from './CookieBanner';
 
 import STYLES from './default-layout.scss';
 
-const getClassName = className => className; //STYLES[className] || 'UNKNOWN';
+const getClassName = cssModules(STYLES);
 
 class DefaultLayout extends React.Component {
   componentWillMount() {

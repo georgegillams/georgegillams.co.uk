@@ -5,11 +5,12 @@ import BpkIconMenu from 'bpk-component-icon/lg/menu';
 import BpkBreakpoint, { BREAKPOINTS } from 'bpk-component-breakpoint';
 import Logo from './Logo';
 import NavigationItem from './NavigationItem';
+import { cssModules } from 'bpk-react-utils';
 import Button from './Button';
 
 import STYLES from './navigation-bar.scss';
 
-const getClassName = className => className; //STYLES[className] || 'UNKNOWN';
+const getClassName = cssModules(STYLES);
 
 class NavigationBar extends Component {
   constructor(props) {

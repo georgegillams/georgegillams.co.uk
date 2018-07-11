@@ -1,12 +1,13 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import BpkImage from 'bpk-component-image';
+import { cssModules } from 'bpk-react-utils';
 import TextLink from './TextLink';
 import Section from './Section';
 
 import STYLES from './license.scss';
 
-const getClassName = className => className; //STYLES[className] || 'UNKNOWN';
+const getClassName = cssModules(STYLES);
 
 const LicenseInfo = props => {
   const { centered, className, ...rest } = props;

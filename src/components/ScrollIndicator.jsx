@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
+import { cssModules } from 'bpk-react-utils';
 
 import STYLES from './scroll-indicator.scss';
 
-const getClassName = className => className; //STYLES[className] || 'UNKNOWN';
+const getClassName = cssModules(STYLES);
 
 class ScrollIndicator extends Component {
   constructor(props) {

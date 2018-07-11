@@ -6,10 +6,11 @@ import withLazyLoading from './withLazyLoading';
 import Section from './Section';
 import SubSection from './SubSection';
 import HelperFunctions from '../HelperFunctions';
+import { cssModules } from 'bpk-react-utils';
 
 import STYLES from './article-card.scss';
 
-const getClassName = className => className; //STYLES[className] || 'UNKNOWN';
+const getClassName = cssModules(STYLES);
 
 const documentIfExists = typeof window !== 'undefined' ? document : null;
 const FadingLazyLoadedImage = withLoadingBehavior(

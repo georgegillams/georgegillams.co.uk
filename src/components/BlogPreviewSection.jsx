@@ -1,12 +1,13 @@
 import PropTypes from 'prop-types';
 import React from 'react';
+import { cssModules } from 'bpk-react-utils';
 import Section from './Section';
 import BlogPreviewSubSection from './BlogPreviewSubSection';
 import BlogPreviewContent from './BlogPreviewContent';
 
 import STYLES from './article-date.scss';
 
-const getClassName = className => className; //STYLES[className] || 'UNKNOWN';
+const getClassName = cssModules(STYLES);
 
 const BlogPreviewSection = props => {
   const {

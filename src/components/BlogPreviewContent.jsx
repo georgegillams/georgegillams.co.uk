@@ -21,8 +21,9 @@ import HelperFunctions from '../HelperFunctions';
 import STYLES from './blog-viewer.scss';
 import PAGES_STYLES from './../Pages/pages.scss';
 
-const getClassName = className =>
-  STYLES[className] || PAGES_STYLES[className] || 'UNKNOWN';
+import { cssModules } from 'bpk-react-utils';
+const getClassName = cssModules(STYLES);
+
 const documentIfExists = typeof window !== 'undefined' ? document : null;
 const FadingLazyLoadedImage = withLoadingBehavior(
   withLazyLoading(BpkImage, documentIfExists),

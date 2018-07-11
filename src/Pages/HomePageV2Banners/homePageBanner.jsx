@@ -4,7 +4,8 @@ import ScrollerButton from '../../components/ScrollerButton';
 
 import STYLES from './home-page-banner.scss';
 
-const getClassName = className => className; //STYLES[className] || 'UNKNOWN';
+import { cssModules } from 'bpk-react-utils';
+const getClassName = cssModules(STYLES);
 
 const SCROLL_INTO_VIEW_LIMIT = 2000;
 

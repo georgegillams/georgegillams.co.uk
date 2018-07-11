@@ -4,7 +4,8 @@ import ColourPalleteItem from '../../components/ColourPalleteItem';
 
 import STYLES from '../pages.scss';
 
-const getClassName = className => className; //STYLES[className] || 'UNKNOWN';
+import { cssModules } from 'bpk-react-utils';
+const getClassName = cssModules(STYLES);
 
 class DesignColours extends React.Component {
   constructor(props) {

@@ -1,8 +1,9 @@
 import React from 'react';
+import { cssModules } from 'bpk-react-utils';
 
 import STYLES from './redirect-notice.scss';
 
-const getClassName = className => className; //STYLES[className] || 'UNKNOWN';
+const getClassName = cssModules(STYLES);
 
 const RedirectNotice = () => (
   <div className={getClassName('redirect-notice__text')}>

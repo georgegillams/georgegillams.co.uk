@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { cssModules } from 'bpk-react-utils';
 import TechSpecs from './TechSpecs';
 import GetSocial from './GetSocial';
 import Logo from './Logo';
@@ -7,7 +8,7 @@ import TextLink from './TextLink';
 
 import STYLES from './footer.scss';
 
-const getClassName = className => className; //STYLES[className] || 'UNKNOWN';
+const getClassName = cssModules(STYLES);
 
 const Footer = props => {
   const { className, ...rest } = props;

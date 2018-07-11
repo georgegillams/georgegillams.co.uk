@@ -14,8 +14,8 @@ import HelperFunctions from '../../HelperFunctions';
 import STYLES from './apps.scss';
 import STYLES_2 from '../pages.scss';
 
-const getClassName = className =>
-  STYLES[className] || STYLES_2[className] || 'UNKNOWN';
+import { cssModules } from 'bpk-react-utils';
+const getClassName = cssModules(STYLES);
 
 const ButtonDemo = bpkDemo(Button, 'Button', 'package-name-goes-here', {
   onClick: HelperFunctions.evalCompat('() => { alert("Button clicked"); }'),

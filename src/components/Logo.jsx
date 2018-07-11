@@ -2,10 +2,11 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import BpkText from 'bpk-component-text';
 import { NavLink } from 'react-router-dom';
+import { cssModules } from 'bpk-react-utils';
 
 import STYLES from './logo.scss';
 
-const getClassName = className => className; //STYLES[className] || 'UNKNOWN';
+const getClassName = cssModules(STYLES);
 
 const LONG_PRESS_DURATION = 3000;
 

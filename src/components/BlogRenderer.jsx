@@ -13,8 +13,8 @@ import ArticleDate from './ArticleDate';
 import STYLES from './blogs.scss';
 import STYLES_2 from '../components/tag-filter.scss';
 
-const getClassName = className =>
-  STYLES[className] || STYLES_2[className] || 'UNKNOWN';
+import { cssModules } from 'bpk-react-utils';
+const getClassName = cssModules(STYLES);
 
 const BlogRenderer = props => {
   const {

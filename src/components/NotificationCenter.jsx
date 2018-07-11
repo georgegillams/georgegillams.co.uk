@@ -14,8 +14,8 @@ import Tag from './Tag';
 import STYLES from './notification-center.scss';
 import TYPO_STYLES from './typography.scss';
 
-const getClassName = className => className;
-// STYLES[className] || TYPO_STYLES[className] || 'UNKNOWN';
+import { cssModules } from 'bpk-react-utils';
+const getClassName = cssModules(STYLES);
 
 class NotificationCenter extends Component {
   constructor(props) {

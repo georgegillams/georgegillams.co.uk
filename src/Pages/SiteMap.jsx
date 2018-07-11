@@ -6,7 +6,8 @@ import { NON_EMOJI_REGEX } from '../shared/constants';
 
 import STYLES from './pages.scss';
 
-const getClassName = className => className; //STYLES[className] || 'UNKNOWN';
+import { cssModules } from 'bpk-react-utils';
+const getClassName = cssModules(STYLES);
 
 class SiteMap extends Component {
   constructor(props) {

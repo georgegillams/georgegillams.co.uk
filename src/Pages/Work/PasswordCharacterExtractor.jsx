@@ -11,7 +11,8 @@ import PageSwitchScroller from '../../components/PageSwitchScroller';
 
 import STYLES from './apps.scss';
 
-const getClassName = className => className; //STYLES[className] || 'UNKNOWN';
+import { cssModules } from 'bpk-react-utils';
+const getClassName = cssModules(STYLES);
 const PAGE_ID = 998572;
 const documentIfExists = typeof window !== 'undefined' ? document : null;
 const FadingLazyLoadedImage = withLoadingBehavior(

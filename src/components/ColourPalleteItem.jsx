@@ -1,11 +1,12 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { cssModules } from 'bpk-react-utils';
 import CodeInline from './CodeInline';
 import SubSection from './SubSection';
 
 import STYLES from './article-card.scss';
 
-const getClassName = className => className; //STYLES[className] || 'UNKNOWN';
+const getClassName = cssModules(STYLES);
 
 const ColourPalletteItem = props => {
   const { colourName, colour, ...rest } = props;

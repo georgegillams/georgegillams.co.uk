@@ -5,10 +5,11 @@ import BpkTextArea from 'bpk-component-textarea';
 import { withRouter } from 'react-router-dom';
 import BpkCheckBox from 'bpk-component-checkbox';
 import TagFilter from './TagFilter';
+import { cssModules } from 'bpk-react-utils';
 
 import STYLES from './article-date.scss';
 
-const getClassName = className => className; //STYLES[className] || 'UNKNOWN';
+const getClassName = cssModules(STYLES);
 
 const TagFilterRoutable = withRouter(TagFilter);
 

@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { NavLink } from 'react-router-dom';
+import { cssModules } from 'bpk-react-utils';
 // import BpkImage, { withLazyLoading, withLoadingBehavior } from  'bpk-component-image';
 import githubIcon from './../icons/github.png';
 import facebookIcon from './../icons/facebook.png';
@@ -16,7 +17,7 @@ import guruShotsIcon from './../icons/guruShotsIcon.png';
 
 import STYLES from './get-social.scss';
 
-const getClassName = className => className; //STYLES[className] || 'UNKNOWN';
+const getClassName = cssModules(STYLES);
 // const documentIfExists = typeof window !== 'undefined' ? document : null;
 // const FadingLazyLoadedImage = withLoadingBehavior(withLazyLoading(BpkImage, documentIfExists));
 

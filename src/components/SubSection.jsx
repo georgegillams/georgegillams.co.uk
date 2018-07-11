@@ -1,11 +1,12 @@
 import PropTypes from 'prop-types';
 import React from 'react';
+import { cssModules } from 'bpk-react-utils';
 import TextLink from './TextLink';
 import BpkText from 'bpk-component-text';
 
 import STYLES from './typography.scss';
 
-const getClassName = className => className; //STYLES[className] || 'UNKNOWN';
+const getClassName = cssModules(STYLES);
 
 const SubSection = props => {
   const {

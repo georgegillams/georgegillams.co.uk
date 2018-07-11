@@ -15,8 +15,8 @@ import DatabaseFunctions from '../../DatabaseFunctions';
 import STYLES from '../pages.scss';
 import BS_STYLES from './blog-editor.scss';
 
-const getClassName = className =>
-  STYLES[className] || BS_STYLES[className] || 'UNKNOWN';
+import { cssModules } from 'bpk-react-utils';
+const getClassName = cssModules(STYLES);
 
 class BlogEditorPage extends React.Component {
   constructor() {

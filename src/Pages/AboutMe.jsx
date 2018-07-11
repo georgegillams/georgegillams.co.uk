@@ -8,7 +8,8 @@ import AnimatedContent from './../components/AnimatedContent';
 
 import STYLES from './pages.scss';
 
-const getClassName = className => className; //STYLES[className] || 'UNKNOWN';
+import { cssModules } from 'bpk-react-utils';
+const getClassName = cssModules(STYLES);
 const documentIfExists = typeof window !== 'undefined' ? document : null;
 const LlAnimatedContent = withLazyLoading(AnimatedContent, documentIfExists);
 

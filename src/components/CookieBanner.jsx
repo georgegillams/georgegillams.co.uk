@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import cookie from 'react-cookies';
+import { cssModules } from 'bpk-react-utils';
 import Section from './Section';
 import TextLink from './TextLink';
 import Button from './Button';
@@ -8,7 +9,7 @@ import DatabaseFunctions from '../DatabaseFunctions';
 
 import STYLES from './cookie-banner.scss';
 
-const getClassName = className => className; //STYLES[className] || 'UNKNOWN';
+const getClassName = cssModules(STYLES);
 
 class CookieBanner extends Component {
   constructor(props) {

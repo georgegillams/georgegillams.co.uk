@@ -16,8 +16,8 @@ const LlAnimatedContent = withLazyLoading(AnimatedContent, documentIfExists);
 import STYLES from '../pages.scss';
 import STYLES_2 from '../../components/tag-filter.scss';
 
-const getClassName = className =>
-  STYLES[className] || STYLES_2[className] || 'UNKNOWN';
+import { cssModules } from 'bpk-react-utils';
+const getClassName = cssModules(STYLES);
 
 const TagFilterRoutable = withRouter(TagFilter);
 

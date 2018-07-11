@@ -24,7 +24,10 @@ module.exports = {
         test: /\.css$/,
         use: [
           'style-loader',
-          { loader: 'css-loader', options: { importLoaders: 1 } },
+          {
+            loader: 'css-loader',
+            options: { modules: true, importLoaders: 1 },
+          },
           'postcss-loader',
         ],
       },
@@ -32,7 +35,10 @@ module.exports = {
         test: /\.scss$/,
         loaders: [
           'style-loader',
-          { loader: 'css-loader', options: { importLoaders: 1 } },
+          {
+            loader: 'css-loader',
+            options: { modules: true, importLoaders: 1 },
+          },
           'postcss-loader',
           'sass-loader',
         ],

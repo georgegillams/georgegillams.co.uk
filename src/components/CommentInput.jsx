@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import BpkInput from 'bpk-component-input';
 import BpkTextArea from 'bpk-component-textarea';
 import cookie from 'react-cookies';
+import { cssModules } from 'bpk-react-utils';
 import Button from './Button';
 import SubSection from './SubSection';
 import DatabaseFunctions from '../DatabaseFunctions';
@@ -10,7 +11,7 @@ import Section from './Section';
 
 import STYLES from './comments.scss';
 
-const getClassName = className => className; //STYLES[className] || 'UNKNOWN';
+const getClassName = cssModules(STYLES);
 
 class CommentInput extends React.Component {
   constructor(props) {

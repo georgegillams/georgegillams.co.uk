@@ -1,10 +1,11 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { cssModules } from 'bpk-react-utils';
 import TextLink from './TextLink';
 
 import STYLES from './code.scss';
 
-const getClassName = className => className; //STYLES[className] || 'UNKNOWN';
+const getClassName = cssModules(STYLES);
 
 const Code = props => {
   const { children, lang, githubUrl, className, ...rest } = props;

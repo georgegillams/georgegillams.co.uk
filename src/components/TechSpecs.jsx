@@ -1,12 +1,13 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import Section from './Section';
+import { cssModules } from 'bpk-react-utils';
 import reactIcon from './../icons/react.png';
 import herokuIcon from './../icons/heroku.png';
 
 import STYLES from './tech-specs.scss';
 
-const getClassName = className => className; //STYLES[className] || 'UNKNOWN';
+const getClassName = cssModules(STYLES);
 
 const TechSpecs = (props) => {
   const {

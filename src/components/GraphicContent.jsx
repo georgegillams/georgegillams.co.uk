@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import BpkCheckbox from 'bpk-component-checkbox';
+import { cssModules } from 'bpk-react-utils';
 import Button from './Button';
 
 import STYLES from './graphic-content.scss';
 
-const getClassName = className => className; //STYLES[className] || 'UNKNOWN';
+const getClassName = cssModules(STYLES);
 
 const GraphicContent = props => {
   const {

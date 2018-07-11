@@ -8,7 +8,8 @@ import withLazyLoading from '../components/withLazyLoading';
 
 import STYLES from './pages.scss';
 
-const getClassName = className => className; //STYLES[className] || 'UNKNOWN';
+import { cssModules } from 'bpk-react-utils';
+const getClassName = cssModules(STYLES);
 const PAGE_ID = 633786;
 const documentIfExists = typeof window !== 'undefined' ? document : null;
 const FadingLazyLoadedImage = withLoadingBehavior(

@@ -12,8 +12,8 @@ import HelperFunctions from '../HelperFunctions';
 import STYLES from './comments.scss';
 import BLOG_STYLES from './blogs.scss';
 
-const getClassName = className =>
-  STYLES[className] || BLOG_STYLES[className] || 'UNKNOWN';
+import { cssModules } from 'bpk-react-utils';
+const getClassName = cssModules(STYLES);
 
 class Comments extends React.Component {
   constructor(props) {

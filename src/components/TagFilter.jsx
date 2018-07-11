@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
+import { cssModules } from 'bpk-react-utils';
 import Tag, { TAG_TYPES } from './Tag';
 import HelperFunctions from '../HelperFunctions';
 
 import STYLES from './tag-filter.scss';
 
-const getClassName = className => className; //STYLES[className] || 'UNKNOWN';
+const getClassName = cssModules(STYLES);
 
 class TagFilter extends Component {
   constructor(props) {
