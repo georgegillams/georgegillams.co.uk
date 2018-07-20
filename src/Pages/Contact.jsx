@@ -6,6 +6,7 @@ import Button from '../components/Button';
 import TextLink from '../components/TextLink';
 import withLazyLoading from '../components/withLazyLoading';
 import AnimatedContent from '../components/AnimatedContent';
+import contactFile from '../contact.vcf';
 
 import STYLES from './pages.scss';
 
@@ -65,9 +66,15 @@ const Contact = props => {
                 <Section>+44 78675 92615</Section>
               </ArticleCard>
               <LlAnimatedContent>
-                <Button href="https://youtu.be/0vL4HLTZQ_Q?t=29">
+                <Button
+                  onClick={() => {
+                    window.location = contactFile;
+                  }}
+                >
                   Download contact
                 </Button>
+                <br />
+                <br />
                 <SubSection
                   className={getClassName('pages__card')}
                   noAnchor
