@@ -2,6 +2,7 @@ import React from 'react';
 import Section from '../components/Section';
 import ArticleCard, { CARD_LAYOUTS } from '../components/ArticleCard';
 import SubSection from '../components/SubSection';
+import Button from '../components/Button';
 import TextLink from '../components/TextLink';
 import withLazyLoading from '../components/withLazyLoading';
 import AnimatedContent from '../components/AnimatedContent';
@@ -64,6 +65,9 @@ const Contact = props => {
                 <Section>+44 78675 92615</Section>
               </ArticleCard>
               <LlAnimatedContent>
+                <Button href="https://youtu.be/0vL4HLTZQ_Q?t=29">
+                  Download contact
+                </Button>
                 <SubSection
                   className={getClassName('pages__card')}
                   noAnchor
