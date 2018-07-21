@@ -95,7 +95,7 @@ const GetSocial = props => {
             src={facebookIcon}
           />
         </a>
-        <a
+        {/* <a
           href="https://www.linkedin.com/in/george-gillams-37537077"
           rel="noopener noreferrer"
           target="_blank"
@@ -108,7 +108,7 @@ const GetSocial = props => {
             src={linkedinIcon}
           />
         </a>
-        {/* <a
+        <a
           href="https://www.flickr.com/people/137198167@N03/"
           rel="noopener noreferrer"
           target="_blank"
@@ -120,7 +120,7 @@ const GetSocial = props => {
             className={iconClassNameFinal.join(' ')}
             src={flickrIcon}
           />
-        </a> */}
+        </a>
         <a
           href="https://www.dropbox.com/request/Xin5hG6X6zX2z94VLJJm"
           rel="noopener noreferrer"
@@ -146,8 +146,8 @@ const GetSocial = props => {
             className={darkIconClassNameFinal.join(' ')}
             src={emailIcon}
           />
-        </a>
-        <a href="tel:+447867592615" rel="noopener noreferrer" target="_blank">
+        </a> */}
+        <NavLink to="/contact">
           <img
             alt="phone"
             width={5}
@@ -155,7 +155,7 @@ const GetSocial = props => {
             className={darkIconClassNameFinal.join(' ')}
             src={phoneIcon}
           />
-        </a>
+        </NavLink>
         {/* <NavLink to="/payments">
           <img
             alt="monzo"

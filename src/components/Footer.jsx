@@ -18,24 +18,12 @@ const Footer = props => {
 
   return (
     <footer id="footer" className={outerClassNameFinal.join(' ')} {...rest}>
-      <GetSocial
-        light
-        alwaysCentered
-        className={getClassName('footer__social')}
-      />
       <Logo
         small
         alwaysCentered
         className={getClassName('footer__logo')}
         noPadding
       />
-      <TextLink
-        light
-        className={getClassName('footer__site-map')}
-        href="/site-map"
-      >
-        Sitemap
-      </TextLink>
       <TechSpecs className={getClassName('footer__tech')} light />
     </footer>
   );
