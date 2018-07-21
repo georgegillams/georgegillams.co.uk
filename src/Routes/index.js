@@ -1,3 +1,5 @@
-import routes from './Routes';
+import Routing from './Routing';
+import routes from './routes';
 
-export default routes;
+export default Routing;
+export {routes};
