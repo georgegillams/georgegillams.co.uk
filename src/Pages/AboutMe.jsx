@@ -33,11 +33,10 @@ const AboutMe = props => {
             I&apos;m based somewhere between Southampton and London.
             <br />
             <br />
-            I enjoy getting outdoors and trying new things, and will be
-            completing my 5th{' '}
-            <TextLink href="/blog/tough-mudder">Tough Mudder</TextLink> in May
-            2018. I also try to squeeze in as much volunteering as I can, so you
-            may find me dressed as a{' '}
+            I enjoy getting outdoors and trying new things, and completing my
+            5th <TextLink href="/blog/tough-mudder">Tough Mudder</TextLink> in
+            May 2018. I also try to squeeze in as much volunteering as I can, so
+            you may find me dressed as a{' '}
             <TextLink external href="https://helpforheroes.org.uk/">
               Help for Heroes
             </TextLink>{' '}
