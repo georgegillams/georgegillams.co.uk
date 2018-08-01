@@ -115,6 +115,19 @@ class SiteMap extends Component {
         <SubSection
           noAnchor
           className={getClassName('pages__site-map-item')}
+          name="Design 🎨"
+        >
+          <TextLink href="/design/privacy-policy">Privacy Policy</TextLink>
+          <br />
+          <TextLink href="/design/colours">Colours</TextLink>
+          <br />
+          <TextLink href="/design/components">Components</TextLink>
+          <br />
+          <TextLink href="/design/typography">Typograhpy</TextLink>
+        </SubSection>
+        <SubSection
+          noAnchor
+          className={getClassName('pages__site-map-item')}
           name="Other stuff 🤷‍♂️"
         >
           <TextLink href="/about">About me</TextLink>
@@ -122,21 +135,59 @@ class SiteMap extends Component {
           <TextLink href="/contact">Contact</TextLink>
           <br />
           <TextLink href="/payments">Payments</TextLink>
-          <br />
-          <TextLink href="/design/colours">Design</TextLink>
-          <br />
-          <TextLink href="/design/privacy-policy">Privacy policy</TextLink>
-          <br />
-          <TextLink href="/admin">Admin</TextLink>
         </SubSection>
         <SubSection
           noAnchor
           className={getClassName('pages__site-map-item')}
           name="Random 🐉"
         >
+          <TextLink external href="/robots.txt">
+            Robots.txt{' '}
+          </TextLink>
+          <br />
+          <TextLink external href="/sitemap.xml">
+            SiteMap.xml{' '}
+          </TextLink>
+          <br />
           <TextLink href="/418"> Error 418: I&apos;m a teapot</TextLink>
           <br />
           <TextLink href="/page-not-found"> 404 Page</TextLink>
+        </SubSection>
+        <SubSection
+          noAnchor
+          className={getClassName('pages__site-map-item')}
+          name="API"
+        >
+          <TextLink external href="/api/greasemonkey/guruShotsBoost_download">
+            /api/greasemonkey/guruShotsBoost_download{' '}
+          </TextLink>
+          <br />
+          <TextLink external href="/api/greasemonkey/secureEcs_download">
+            /api/greasemonkey/secureEcs_download{' '}
+          </TextLink>
+          <br />
+          <TextLink external href="/api/greasemonkey/github_squash_reminder">
+            /api/greasemonkey/github_squash_reminder{' '}
+          </TextLink>
+        </SubSection>
+        <SubSection
+          noAnchor
+          className={getClassName('pages__site-map-item')}
+          name="Admin 👮‍♂️"
+        >
+          <TextLink href="/admin/login">Login</TextLink>
+          <br />
+          <TextLink href="/admin/sessions">Sessions</TextLink>
+          <br />
+          <TextLink href="/admin/blogs">Blogs</TextLink>
+          <br />
+          <TextLink href="/admin/blog-comments">Blog comments</TextLink>
+          <br />
+          <TextLink href="/admin/notifications">Notifications</TextLink>
+          <br />
+          <TextLink href="/admin/payments">Payments</TextLink>
+          <br />
+          <TextLink href="/admin/ping-pen-testing">Ping pen-testing</TextLink>
         </SubSection>
       </div>
     );
