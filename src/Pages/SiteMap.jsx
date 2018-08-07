@@ -158,16 +158,44 @@ class SiteMap extends Component {
           className={getClassName('pages__site-map-item')}
           name="API"
         >
-          <TextLink external href="/api/greasemonkey/guruShotsBoost_download">
-            /api/greasemonkey/guruShotsBoost_download{' '}
+          <TextLink external href="/api/greasemonkey/find_backpack_components">
+            /api/greasemonkey/find_backpack_components{' '}
+          </TextLink>
+          <br />
+          <TextLink external href="/api/greasemonkey/github_travis_new_tab">
+            /api/greasemonkey/github_travis_new_tab{' '}
+          </TextLink>
+          <br />
+          <TextLink external href="/api/greasemonkey/github_squash_reminder">
+            /api/greasemonkey/github_squash_reminder{' '}
+          </TextLink>
+          <br />
+          <TextLink external href="/api/greasemonkey/gurushots_boost">
+            /api/greasemonkey/gurushots_boost{' '}
           </TextLink>
           <br />
           <TextLink external href="/api/greasemonkey/secureEcs_download">
             /api/greasemonkey/secureEcs_download{' '}
           </TextLink>
           <br />
-          <TextLink external href="/api/greasemonkey/github_squash_reminder">
-            /api/greasemonkey/github_squash_reminder{' '}
+          <TextLink external href="/api/greasemonkey/skyscanner_buttons">
+            /api/greasemonkey/skyscanner_buttons{' '}
+          </TextLink>
+          <br />
+          <TextLink external href="/api/greasemonkey/github_highlight_name">
+            /api/greasemonkey/github_highlight_name{' '}
+          </TextLink>
+          <br />
+          <TextLink external href="/api/greasemonkey/github_expand_comments">
+            /api/greasemonkey/github_expand_comments{' '}
+          </TextLink>
+          <br />
+          <TextLink external href="/api/greasemonkey/hackthis_coding_1">
+            /api/greasemonkey/hackthis_coding_1{' '}
+          </TextLink>
+          <br />
+          <TextLink external href="/api/greasemonkey/hackthis_coding_2">
+            /api/greasemonkey/hackthis_coding_2{' '}
           </TextLink>
         </SubSection>
         <SubSection
