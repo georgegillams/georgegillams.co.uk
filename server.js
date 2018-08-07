@@ -110,24 +110,12 @@ router.get('/api/greasemonkey/gurushots_boost', (req, res) => {
   sendGreasemonkeyFile('GuruShots boost.js', req, res);
 });
 
-router.get('/api/greasemonkey/guruShotsBoost_download', (req, res) => {
-  sendGreasemonkeyFile('GuruShots boost.js', req, res);
-});
-
-router.get('/api/greasemonkey/george_gillams_blog_edit', (req, res) => {
-  sendGreasemonkeyFile('georgegillams.co.uk blog edit link.js', req, res);
-});
-
 router.get('/api/greasemonkey/secureEcs_download', (req, res) => {
   sendGreasemonkeyFile('secure ecs.js', req, res);
 });
 
 router.get('/api/greasemonkey/skyscanner_buttons', (req, res) => {
   sendGreasemonkeyFile('skyscanner buttons.js', req, res);
-});
-
-router.get('/api/greasemonkey/southampton_camera_club', (req, res) => {
-  sendGreasemonkeyFile('southampton camera club.js', req, res);
 });
 
 router.get('/api/greasemonkey/github_highlight_name', (req, res) => {
