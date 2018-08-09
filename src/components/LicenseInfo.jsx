@@ -29,7 +29,7 @@ const LicenseInfo = props => {
       />
       <br />
       <Section>
-        {'My works are licensed under a '}
+        {'Most of my photos are licensed under a '}
         <TextLink
           external
           rel="license"
@@ -37,6 +37,9 @@ const LicenseInfo = props => {
         >
           Creative Commons Attribution-ShareAlike 4.0 International License{' '}
         </TextLink>
+        {'. If you wish to use any of them, please '}
+        <TextLink href="contact">get in touch</TextLink>
+        {'.'}
       </Section>{' '}
     </div>
   );
