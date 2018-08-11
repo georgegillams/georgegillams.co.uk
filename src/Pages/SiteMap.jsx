@@ -85,6 +85,26 @@ class SiteMap extends Component {
         <SubSection
           noAnchor
           className={getClassName('pages__site-map-item')}
+          name="Other 👻"
+        >
+          {this.state.blogs &&
+            this.state.blogs.map(b => {
+              if (b.blogShowInBlogsList || b.blogShowInTravelBlogsList) {
+                return null;
+              }
+              return (
+                <div>
+                  <TextLink href={`/blog/view?id=${b.blogId}`}>
+                    {b.blogName.match(NON_EMOJI_REGEX).join('')}
+                  </TextLink>
+                  <br />
+                </div>
+              );
+            })}
+        </SubSection>
+        <SubSection
+          noAnchor
+          className={getClassName('pages__site-map-item')}
           name="Photography 🎨"
         >
           <TextLink href="/photography">See some artistic creations</TextLink>
