@@ -1,28 +1,28 @@
 /* eslint-disable */
-import React from "react";
-import BpkImage, { withLoadingBehavior } from "bpk-component-image";
-import { asyncConnect } from "redux-async-connect";
+import React from 'react';
+import BpkImage, { withLoadingBehavior } from 'bpk-component-image';
+import { asyncConnect } from 'redux-async-connect';
 import {
   isLoaded as isCommentsLoaded,
   load as loadComments,
-  create as createComment
-} from "redux/modules/comments";
+  create as createComment,
+} from 'redux/modules/comments';
 import {
   Section,
   SubSection,
   TextLink,
   Comments,
   NotificationComp,
-  NOTIFICATION_TYPES
-} from "../../components";
-import { CommentArea } from "containers";
-import { cssModules } from "bpk-react-utils";
+  NOTIFICATION_TYPES,
+} from '../../components';
+import { CommentArea } from 'containers';
+import { cssModules } from 'bpk-react-utils';
 
-import STYLES from "../pages.scss";
+import STYLES from '../pages.scss';
 
 const getClassName = cssModules(STYLES);
 
-const PAGE_ID = "12462";
+const PAGE_ID = 'work-degree';
 
 @asyncConnect([
   {
@@ -34,8 +34,8 @@ const PAGE_ID = "12462";
       }
 
       return Promise.all(promises);
-    }
-  }
+    },
+  },
 ])
 class Degree extends React.Component {
   constructor(props) {
@@ -58,10 +58,10 @@ class Degree extends React.Component {
           title="Inline Work Degree page"
           width="100%"
           height="50rem"
-          style={{ border: "none", height: "130rem" }}
+          style={{ border: 'none', height: '130rem' }}
           src="https://georgegillams-depreciated.herokuapp.com/work/degree"
         />
-        <div className={getClassName("pages__container")}>
+        <div className={getClassName('pages__container')}>
           <CommentArea params={{ id: PAGE_ID }} />
         </div>
       </div>
