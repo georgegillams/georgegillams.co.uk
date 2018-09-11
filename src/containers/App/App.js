@@ -5,13 +5,13 @@ import Helmet from 'react-helmet';
 import { isLoaded as isInfoLoaded, load as loadInfo } from 'redux/modules/info';
 import {
   isLoaded as isNotificationsLoaded,
-  load as loadNotifications
+  load as loadNotifications,
 } from 'redux/modules/notifications';
 import {
   NotificationCentre,
-  NavigationBarNew,
+  NavigationBar,
   Footer,
-  SessionManagement
+  SessionManagement,
 } from 'components';
 import { push } from 'react-router-redux';
 import config from '../../config';
@@ -36,15 +36,15 @@ const getClassName = cssModules(STYLES);
       }
 
       return Promise.all(promises);
-    }
-  }
+    },
+  },
 ])
 @connect(
   state => ({
     newDataAvailable: PropTypes.bool.isRequired,
-    user: state.auth.user
+    user: state.auth.user,
   }),
-  dispatch => bindActionCreators({ pushState: push }, dispatch)
+  dispatch => bindActionCreators({ pushState: push }, dispatch),
 )
 export default class App extends Component {
   static propTypes = {
@@ -53,11 +53,11 @@ export default class App extends Component {
     user: PropTypes.object,
     loadAuth: PropTypes.func.isRequired,
     logout: PropTypes.func.isRequired,
-    pushState: PropTypes.func.isRequired
+    pushState: PropTypes.func.isRequired,
   };
 
   static contextTypes = {
-    store: PropTypes.object.isRequired
+    store: PropTypes.object.isRequired,
   };
 
   // componentDidMount = () => {
@@ -166,7 +166,7 @@ export default class App extends Component {
         <br />
         <br />
         <br />   */}
-        <NavigationBarNew user={user} />
+        <NavigationBar user={user} />
         <NotificationCentre />
         <div>{children}</div>
         <Footer />
