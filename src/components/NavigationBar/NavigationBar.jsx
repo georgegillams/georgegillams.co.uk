@@ -43,104 +43,131 @@ class NavigationBar extends Component {
   render() {
     const { className, user, ...rest } = this.props;
     const outerClassNameFinal = [getClassName('navigation-bar__container')];
-    const navBarClassNameFinal = [getClassName('navigation-bar__bar')];
-    const animatedContainerClassNameFinal = [
-      getClassName('navigation-bar__animated-container')
-    ];
-    if (this.state.isOpen) {
-      animatedContainerClassNameFinal.push(
-        getClassName('navigation-bar__animated-container--open')
-      );
-      navBarClassNameFinal.push(getClassName('navigation-bar__bar--open'));
-    }
     if (className) {
       outerClassNameFinal.push(className);
     }
 
+    const animatedContainerClassNameFinal = [
+      getClassName('navigation-bar__animated-container--closed'),
+    ];
+    if (this.state.isOpen) {
+      animatedContainerClassNameFinal.push(
+        getClassName('navigation-bar__animated-container--open'),
+      );
+    }
+
+    const menuItems1 = [
+      <NavigationItem
+        className={getClassName('navigation-bar__nav-item')}
+        name="Blog"
+        linkUrl="/blog"
+        onClick={this.close}
+      />,
+      <NavigationItem
+        className={getClassName('navigation-bar__nav-item')}
+        name="Travel"
+        linkUrl="/travel"
+        onClick={this.close}
+      />,
+      <NavigationItem
+        className={getClassName('navigation-bar__nav-item')}
+        name="Photography"
+        linkUrl="/photography"
+        onClick={this.close}
+      />,
+      <NavigationItem
+        className={getClassName('navigation-bar__nav-item')}
+        name="Work"
+        linkUrl="/work"
+        onClick={this.close}
+      />,
+    ];
+    const accountItem = (
+      <NavigationItem
+        className={getClassName('navigation-bar__nav-item')}
+        name={user ? 'Account' : 'Sign in'}
+        linkUrl="/account"
+        onClick={this.close}
+      />
+    );
+    const menuItems2 = [
+      <NavigationItem
+        className={getClassName('navigation-bar__nav-item')}
+        name="About"
+        linkUrl="/about"
+        onClick={this.close}
+      />,
+      <NavigationItem
+        className={getClassName('navigation-bar__nav-item')}
+        name="Contact"
+        linkUrl="/contact"
+        onClick={this.close}
+      />,
+      <NavigationItem
+        className={getClassName('navigation-bar__nav-item')}
+        name="Github"
+        linkUrl="https://github.com/georgegillams"
+        hrefExternal
+        onClick={this.close}
+      />,
+      accountItem,
+    ];
+
     return (
-      <BpkBreakpoint query={BREAKPOINTS.TABLET}>
-        {isTablet => (
-          <div className={outerClassNameFinal.join(' ')} {...rest}>
-            <div className={getClassName('navigation-bar__burger-button')}>
-              <Button bouncy onClick={this.toggle}>
-                {this.state.isOpen ? (
-                  <BpkIconClose style={{ paddingTop: '.3rem' }} />
-                ) : (
-                  <BpkIconMenu style={{ paddingTop: '.3rem' }} />
-                )}
-              </Button>
-            </div>
-            {(this.state.show || !isTablet) && (
-              <div
-                className={animatedContainerClassNameFinal.join(' ')}
-                {...rest}
-                onClick={this.close}
-              >
-                <header className={navBarClassNameFinal.join(' ')} {...rest}>
-                  <NavigationItem
-                    className={getClassName('navigation-bar__nav-item')}
-                    name="Blog"
-                    linkUrl="/blog"
-                  />
-                  <NavigationItem
-                    className={getClassName('navigation-bar__nav-item')}
-                    name="Travel"
-                    linkUrl="/travel"
-                  />
-                  <NavigationItem
-                    className={getClassName('navigation-bar__nav-item')}
-                    name="Photography"
-                    linkUrl="/photography"
-                  />
-                  <NavigationItem
-                    className={getClassName('navigation-bar__nav-item')}
-                    name="Work"
-                    linkUrl="/work"
-                  />
-                  <Logo
-                    className={getClassName('navigation-bar__nav-item')}
-                    small
-                    animated
-                  />
-                  <NavigationItem
-                    className={getClassName('navigation-bar__nav-item')}
-                    name="About"
-                    linkUrl="/about"
-                  />
-                  <NavigationItem
-                    className={getClassName('navigation-bar__nav-item')}
-                    name="Contact"
-                    linkUrl="/contact"
-                  />
-                  <NavigationItem
-                    className={getClassName('navigation-bar__nav-item')}
-                    name="Github"
-                    linkUrl="https://github.com/georgegillams"
-                    external
-                  />
-                  <NavigationItem
-                    className={getClassName('navigation-bar__nav-item')}
-                    name={user ? 'Account' : 'Sign in'}
-                    linkUrl="/account"
-                  />
-                </header>
-              </div>
-            )}
+      <div className={outerClassNameFinal.join(' ')} {...rest}>
+        <div className={getClassName('navigation-bar__bar')} {...rest}>
+          <div
+            className={getClassName('navigation-bar__mobile-container--left')}
+          >
+            <Button bouncy onClick={this.toggle}>
+              {this.state.isOpen ? (
+                <BpkIconClose style={{ paddingTop: '.3rem' }} />
+              ) : (
+                <BpkIconMenu style={{ paddingTop: '.3rem' }} />
+              )}
+            </Button>
           </div>
-        )}
-      </BpkBreakpoint>
+          <div className={getClassName('navigation-bar__desktop-container')}>
+            {menuItems1}
+          </div>
+          <div className={getClassName('navigation-bar__logo-container')}>
+            <Logo
+              className={getClassName('navigation-bar__nav-item')}
+              small
+              noPadding
+              animated
+            />
+          </div>
+          <div className={getClassName('navigation-bar__desktop-container')}>
+            {menuItems2}
+          </div>
+          <div
+            className={getClassName('navigation-bar__mobile-container--right')}
+          >
+            {accountItem}
+          </div>
+        </div>
+        <div className={animatedContainerClassNameFinal.join(' ')}>
+          <div
+            className={getClassName('navigation-bar__mobile-menu-container')}
+          >
+            {menuItems1}
+            {menuItems2}
+          </div>
+        </div>
+      </div>
     );
   }
 }
 
 NavigationBar.propTypes = {
   user: PropTypes.object,
-  className: PropTypes.string
+  className: PropTypes.string,
 };
 
 NavigationBar.defaultProps = {
   user: null,
-  className: null
+  className: null,
 };
 
 export default NavigationBar;
