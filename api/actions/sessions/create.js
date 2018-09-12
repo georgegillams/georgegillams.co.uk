@@ -1,16 +1,18 @@
-import { datumCreate } from "../datum";
-import crypto from "crypto";
-import authentication from "../../utils/authentication";
+import { datumCreate } from '../datum';
+import crypto from 'crypto';
+import authentication from '../../utils/authentication';
+import reqSecure from '../../utils/reqSecure';
 
 export default function create(req) {
+  const reqSecured = reqSecure(req, []);
   return new Promise((resolve, reject) => {
-    authentication(req).then(
+    authentication(reqSecured).then(
       user => {
-        req.body.sessionKey = crypto.randomBytes(20).toString("hex");
-        req.body.lastActive = Date.now();
-        resolve(datumCreate({ redisKey: "sessions", user: user }, req));
+        reqSecured.body.sessionKey = crypto.randomBytes(20).toString('hex');
+        reqSecured.body.lastActive = Date.now();
+        resolve(datumCreate({ redisKey: 'sessions', user: user }, reqSecured));
       },
-      err => reject(err)
+      err => reject(err),
     );
   });
 }
