@@ -1,18 +1,21 @@
-import { datumUpdate } from "../datum";
-import authentication from "../../utils/authentication";
-import { UNAUTHORISED_WRITE } from "../../../src/utils/constants";
+import { datumUpdate } from '../datum';
+import authentication from '../../utils/authentication';
+import { UNAUTHORISED_WRITE } from '../../../src/utils/constants';
+import reqSecure from '../../utils/reqSecure';
+import paymentsAllowedAttributes from './paymentsAllowedAttributes';
 
 export default function update(req) {
+  const reqSecured = reqSecure(req, paymentsAllowedAttributes);
   return new Promise((resolve, reject) => {
-    authentication(req).then(
+    authentication(reqSecured).then(
       user => {
         if (user && user.admin) {
-          resolve(datumUpdate({ redisKey: "payments" }, req));
+          resolve(datumUpdate({ redisKey: 'payments' }, reqSecured));
         } else {
           reject(UNAUTHORISED_WRITE);
         }
       },
-      err => reject(err)
+      err => reject(err),
     );
   });
 }
