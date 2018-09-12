@@ -1,21 +1,24 @@
-import { datumLoad, datumUpdate } from "../datum";
-import authentication from "../../utils/authentication";
-import { hash } from "../../utils/hash";
-import { find } from "../../utils/find";
-import { userOwnsResource } from "../../utils/userOwnsResource";
-import { sendEmailVerificationEmail } from "../../utils/emailHelpers";
-import { UNAUTHORISED_WRITE } from "../../../src/utils/constants";
+import { datumLoad, datumUpdate } from '../datum';
+import authentication from '../../utils/authentication';
+import { hash } from '../../utils/hash';
+import { find } from '../../utils/find';
+import { userOwnsResource } from '../../utils/userOwnsResource';
+import { sendEmailVerificationEmail } from '../../utils/emailHelpers';
+import { UNAUTHORISED_WRITE } from '../../../src/utils/constants';
+import reqSecure from '../../utils/reqSecure';
+import usersAllowedAttributes from './usersAllowedAttributes';
 
 export default function update(req) {
+  const reqSecured = reqSecure(req, usersAllowedAttributes);
   return new Promise((resolve, reject) => {
-    authentication(req).then(
+    authentication(reqSecured).then(
       user => {
-        userOwnsResource("users", req.body.id, user).then(
+        userOwnsResource('users', reqSecured.body.id, user).then(
           userOwnsResourceResult => {
-            datumLoad({ redisKey: "users" }).then(userData => {
+            datumLoad({ redisKey: 'users' }).then(userData => {
               const { existingValue: userBeingUpdated } = find(
                 userData,
-                req.body.id
+                reqSecured.body.id,
               );
               // TODO REMOVE userBeingUpdated FROM userData otherwise the find will return the user themselves!
               // Users should be able to update their own user
@@ -23,40 +26,45 @@ export default function update(req) {
                 // If another user already with the same username, we cannot allow it to be updated
                 const { existingValue: userWithSameUname } = find(
                   userData,
-                  req.body.uname,
-                  "uname"
+                  reqSecured.body.uname,
+                  'uname',
                 );
-                if (userWithSameUname && userWithSameUname.id !== req.body.id) {
+                if (
+                  userWithSameUname &&
+                  userWithSameUname.id !== reqSecured.body.id
+                ) {
                   reject({
-                    error: "user already exists",
-                    reason: "A user with that username already exists"
+                    error: 'user already exists',
+                    reason: 'A user with that username already exists',
                   });
                 } else {
-                  if (req.body.password) {
-                    req.body.hash = hash(req.body.password);
-                    req.body.password = null;
+                  if (reqSecured.body.password) {
+                    reqSecured.body.hash = hash(reqSecured.body.password);
+                    reqSecured.body.password = null;
                   }
                   // IF USER EMAIL HAS CHANGED, IT NEED RE-VERIFYING
                   const emailVerificationRequired =
-                    req.body.email !== userBeingUpdated.email;
+                    reqSecured.body.email !== userBeingUpdated.email;
                   if (emailVerificationRequired) {
-                    req.body.emailVerified = false;
+                    reqSecured.body.emailVerified = false;
                   }
-                  datumUpdate({ redisKey: "users" }, req).then(updatedUser => {
-                    if (emailVerificationRequired) {
-                      sendEmailVerificationEmail(updatedUser);
-                    }
-                    resolve(updatedUser);
-                  });
+                  datumUpdate({ redisKey: 'users' }, reqSecured).then(
+                    updatedUser => {
+                      if (emailVerificationRequired) {
+                        sendEmailVerificationEmail(updatedUser);
+                      }
+                      resolve(updatedUser);
+                    },
+                  );
                 }
               } else {
                 reject(UNAUTHORISED_WRITE);
               }
             });
-          }
+          },
         );
       },
-      err => reject(err)
+      err => reject(err),
     );
   });
 }
