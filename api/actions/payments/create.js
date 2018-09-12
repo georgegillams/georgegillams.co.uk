@@ -1,13 +1,16 @@
-import { datumCreate } from "../datum";
-import authentication from "../../utils/authentication";
+import { datumCreate } from '../datum';
+import authentication from '../../utils/authentication';
+import reqSecure from '../../utils/reqSecure';
+import paymentsAllowedAttributes from './paymentsAllowedAttributes';
 
 export default function create(req) {
+  const reqSecured = reqSecure(req, paymentsAllowedAttributes);
   return new Promise((resolve, reject) => {
-    authentication(req).then(
+    authentication(reqSecured).then(
       user => {
-        resolve(datumCreate({ redisKey: "payments", user: user }, req));
+        resolve(datumCreate({ redisKey: 'payments', user: user }, reqSecured));
       },
-      err => reject(err)
+      err => reject(err),
     );
   });
 }
