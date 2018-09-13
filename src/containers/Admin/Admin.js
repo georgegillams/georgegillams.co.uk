@@ -9,7 +9,7 @@ import {
   AdminOnly,
   TextLink,
   ArticleCard,
-  CARD_LAYOUTS
+  CARD_LAYOUTS,
 } from 'components';
 import { cssModules } from 'bpk-react-utils';
 
@@ -27,20 +27,20 @@ const getClassName = cssModules(STYLES);
       }
 
       return Promise.all(promises);
-    }
-  }
+    },
+  },
 ])
 @connect(
   state => ({
     newDataAvailable: state.sessions.newDataAvailable,
-    user: state.auth.user
+    user: state.auth.user,
   }),
-  dispatch => bindActionCreators({}, dispatch)
+  dispatch => bindActionCreators({}, dispatch),
 )
 export default class Admin extends Component {
   static propTypes = {
     newDataAvailable: PropTypes.bool.isRequired,
-    user: PropTypes.object.isRequired
+    user: PropTypes.object.isRequired,
   };
 
   constructor(props) {
@@ -64,6 +64,16 @@ export default class Admin extends Component {
                 fillImageSrc="https://i.imgur.com/3n68rkf.jpg"
                 linkUrl="/admin/blog"
                 title="Blogs"
+                tallLayout
+              />
+              <ArticleCard
+                layout={CARD_LAYOUTS.narrowCompact}
+                day={null}
+                month={null}
+                className={getClassName('pages__card')}
+                fillImageSrc="https://i.imgur.com/3n68rkf.jpg"
+                linkUrl="/admin/payments"
+                title="Payments"
                 tallLayout
               />
             </div>
