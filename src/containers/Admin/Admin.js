@@ -54,7 +54,7 @@ export default class Admin extends Component {
       <div className="container">
         <Helmet title="Admin" />
         <AdminOnly user={user}>
-          <Section name="Welcome to me">
+          <Section name="This is where the magic happens 😜">
             <div className={getClassName('pages__compact-card-container')}>
               <ArticleCard
                 layout={CARD_LAYOUTS.narrowCompact}
@@ -64,6 +64,36 @@ export default class Admin extends Component {
                 fillImageSrc="https://i.imgur.com/3n68rkf.jpg"
                 linkUrl="/admin/blog"
                 title="Blogs"
+                tallLayout
+              />
+              <ArticleCard
+                layout={CARD_LAYOUTS.narrowCompact}
+                day={null}
+                month={null}
+                className={getClassName('pages__card')}
+                fillImageSrc="https://i.imgur.com/3n68rkf.jpg"
+                linkUrl="/admin/sessions"
+                title="Sessions"
+                tallLayout
+              />
+              <ArticleCard
+                layout={CARD_LAYOUTS.narrowCompact}
+                day={null}
+                month={null}
+                className={getClassName('pages__card')}
+                fillImageSrc="https://i.imgur.com/3n68rkf.jpg"
+                linkUrl="/admin/comments"
+                title="Page comments"
+                tallLayout
+              />
+              <ArticleCard
+                layout={CARD_LAYOUTS.narrowCompact}
+                day={null}
+                month={null}
+                className={getClassName('pages__card')}
+                fillImageSrc="https://i.imgur.com/3n68rkf.jpg"
+                linkUrl="/admin/notifications"
+                title="Notifications"
                 tallLayout
               />
               <ArticleCard
