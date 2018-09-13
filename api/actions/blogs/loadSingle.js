@@ -1,28 +1,30 @@
-import { datumLoadSingle } from "../datum";
-import authentication from "../../utils/authentication";
+import { datumLoadSingle } from '../datum';
+import authentication from '../../utils/authentication';
+import reqSecure from '../../utils/reqSecure';
 
 export default function loadSingle(req) {
+  const reqSecured = reqSecure(req, []);
   return new Promise((resolve, reject) => {
-    authentication(req).then(
+    authentication(reqSecured).then(
       user => {
         if (user && user.admin) {
           resolve(
             datumLoadSingle({
-              redisKey: "blogs",
+              redisKey: 'blogs',
               includeDeleted: true,
-              filter: ar => ar.id === req.query.id
-            })
+              filter: ar => ar.id === reqSecured.query.id,
+            }),
           );
         } else {
           resolve(
             datumLoadSingle({
-              redisKey: "blogs",
-              filter: ar => ar.published && ar.id === req.query.id
-            })
+              redisKey: 'blogs',
+              filter: ar => ar.published && ar.id === reqSecured.query.id,
+            }),
           );
         }
       },
-      err => reject(err)
+      err => reject(err),
     );
   });
 }
