@@ -1,13 +1,13 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import BpkInput from 'bpk-component-input';
+import BpkInput, { INPUT_TYPES } from 'bpk-component-input';
 import { TextLink, Button } from '../index';
 import { cssModules } from 'bpk-react-utils';
 import {
   NAME_REGEX,
   UNAME_REGEX,
   EMAIL_REGEX,
-  PASSWORD_REGEX
+  PASSWORD_REGEX,
 } from '../../utils/constants';
 
 import STYLES from './forms.scss';
@@ -21,12 +21,12 @@ class SignUpForm extends React.Component {
     onSubmit: PropTypes.func.isRequired,
     centered: PropTypes.bool,
     pageId: PropTypes.number.isRequired,
-    className: PropTypes.string
+    className: PropTypes.string,
   };
 
   static defaultProps = {
     centered: false,
-    className: null
+    className: null,
   };
 
   constructor(props) {
@@ -94,6 +94,7 @@ class SignUpForm extends React.Component {
         />
         <BpkInput
           className={getClassName('forms__component')}
+          type={INPUT_TYPES.password}
           valid={newUser.password.match(PASSWORD_REGEX)}
           id="password"
           name="password"
