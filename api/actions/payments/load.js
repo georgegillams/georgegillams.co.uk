@@ -1,6 +1,6 @@
-import { datumLoad } from "../datum";
-import authentication from "../../utils/authentication";
-import { UNAUTHORISED_READ } from "../../../src/utils/constants";
+import { datumLoad } from '../datum';
+import authentication from '../../utils/authentication';
+import { UNAUTHORISED_READ } from '../../../src/utils/constants';
 
 export default function load(req) {
   return new Promise((resolve, reject) => {
@@ -9,16 +9,16 @@ export default function load(req) {
         if (user && user.admin) {
           resolve(
             datumLoad({
-              redisKey: "payments",
+              redisKey: 'payments',
               includeOwnerUname: true,
-              includeDeleted: user && user.admin
-            })
+              includeDeleted: user && user.admin,
+            }),
           );
         } else {
           reject(UNAUTHORISED_READ);
         }
       },
-      err => reject(err)
+      err => reject(err),
     );
   });
 }

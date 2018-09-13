@@ -1,6 +1,6 @@
-import React from "react";
-import { Route, Switch, Redirect, withRouter } from "react-router-dom";
-import { isLoaded as isAuthLoaded, load as loadAuth } from "redux/modules/auth";
+import React from 'react';
+import { Route, Switch, Redirect, withRouter } from 'react-router-dom';
+import { isLoaded as isAuthLoaded, load as loadAuth } from 'redux/modules/auth';
 import {
   App,
   Chat,
@@ -24,6 +24,7 @@ import {
   Work,
   LoginSuccess,
   Survey,
+  AdminPayments,
   AdminBlogs,
   DesignColours,
   DesignComponents,
@@ -34,20 +35,20 @@ import {
   CommentEditor,
   AdminBlogEditor,
   BlogViewer,
-  Pagination
-} from "containers";
-import redirects from "./redirects";
-import HelperFunctions from "./helpers/HelperFunctions";
+  Pagination,
+} from 'containers';
+import redirects from './redirects';
+import HelperFunctions from './helpers/HelperFunctions';
 
 export default store => {
   const requireLogin = (nextState, replace, cb) => {
     function checkAuth() {
       const {
-        auth: { user }
+        auth: { user },
       } = store.getState();
       if (!user) {
         // oops, not logged in, so can't be here!
-        replace("/");
+        replace('/');
       }
       cb();
     }
@@ -64,7 +65,7 @@ export default store => {
       nextState.location.search
     }`;
     let destination = to;
-    if (HelperFunctions.includes(exactRequestedPath, "?")) {
+    if (HelperFunctions.includes(exactRequestedPath, '?')) {
       redirects.forEach(red => {
         if (red.from === exactRequestedPath) {
           destination = red.to;
@@ -109,6 +110,7 @@ export default store => {
       <Route path="blog/:id" component={BlogViewer} />
       <Route path="travel/:id" component={BlogViewer} />
       <Route path="admin" component={Admin} />
+      <Route path="admin/payments" component={AdminPayments} />
       <Route path="admin/blog" component={AdminBlogs} />
       <Route path="admin/blog/:id" component={AdminBlogEditor} />
       <Route path="contact" component={Contact} />

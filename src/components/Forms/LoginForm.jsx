@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import BpkInput from 'bpk-component-input';
+import BpkInput, { INPUT_TYPES } from 'bpk-component-input';
 import { TextLink, Button } from '../index';
 import { cssModules } from 'bpk-react-utils';
 import { EMAIL_REGEX, PASSWORD_REGEX } from '../../utils/constants';
@@ -14,7 +14,7 @@ class LoginForm extends React.Component {
     credentials: PropTypes.object.isRequired,
     onDataChanged: PropTypes.func.isRequired,
     onSubmitMagic: PropTypes.func.isRequired,
-    onSubmit: PropTypes.func.isRequired
+    onSubmit: PropTypes.func.isRequired,
   };
 
   constructor(props) {
@@ -62,6 +62,7 @@ class LoginForm extends React.Component {
         {!this.state.useMagicLink && (
           <BpkInput
             className={getClassName('forms__component')}
+            type={INPUT_TYPES.password}
             valid={credentials.password.match(PASSWORD_REGEX)}
             id="password"
             name="password"
@@ -112,12 +113,12 @@ class LoginForm extends React.Component {
 
 LoginForm.propTypes = {
   centered: PropTypes.bool,
-  className: PropTypes.string
+  className: PropTypes.string,
 };
 
 LoginForm.defaultProps = {
   centered: false,
-  className: null
+  className: null,
 };
 
 export default LoginForm;
