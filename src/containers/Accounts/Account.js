@@ -1,4 +1,5 @@
-import React, { Component, PropTypes } from 'react';
+import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import Helmet from 'react-helmet';
 import { bindActionCreators } from 'redux';
@@ -9,7 +10,7 @@ import {
   login,
   logout,
   logoutAll,
-  requestMagicLink
+  requestMagicLink,
 } from 'redux/modules/auth';
 import { LoginForm, Section, Button } from 'components';
 import { cssModules } from 'bpk-react-utils';
@@ -28,19 +29,22 @@ const getClassName = cssModules(STYLES);
       }
 
       return Promise.all(promises);
-    }
-  }
+    },
+  },
 ])
 @connect(
   state => ({
     newDataAvailable: state.sessions.newDataAvailable,
     user: state.auth.user,
     loginError: state.auth.loginError,
-    magicLinkRequested: state.auth.magicLinkRequested
+    magicLinkRequested: state.auth.magicLinkRequested,
     // newCommentBeingCreated: state.comments.creating['newComment']
   }),
   dispatch =>
-    bindActionCreators({ logout, logoutAll, login, requestMagicLink }, dispatch)
+    bindActionCreators(
+      { logout, logoutAll, login, requestMagicLink },
+      dispatch,
+    ),
 )
 export default class Login extends Component {
   static propTypes = {
@@ -51,14 +55,14 @@ export default class Login extends Component {
     magicLinkRequested: PropTypes.object.magicLinkRequested,
     loginError: PropTypes.object.isRequired,
     login: PropTypes.func.isRequired,
-    requestMagicLink: PropTypes.func.isRequired
+    requestMagicLink: PropTypes.func.isRequired,
   };
 
   constructor(props) {
     super(props);
 
     this.state = {
-      credentials: { email: '', password: '' }
+      credentials: { email: '', password: '' },
     };
   }
 

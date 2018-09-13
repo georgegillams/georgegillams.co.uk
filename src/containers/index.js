@@ -33,7 +33,10 @@ export PasswordCharacterExtractor from './Work/PasswordCharacterExtractor';
 export BlogViewer from './Blogs/BlogViewer';
 export TravelBlogs from './Blogs/TravelBlogs';
 export CommentArea from './Aspects/CommentArea';
-export Admin from './Admin/Admin';
-export AdminPayments from './Admin/Payments';
-export AdminBlogs from './Admin/Blogs';
-export AdminBlogEditor from './Admin/BlogEditor';
+export Admin, {
+  AdminPayments,
+  AdminNotifications,
+  AdminSessions,
+  AdminComments,
+  AdminBlogs,
+} from './Admin';
