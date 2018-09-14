@@ -24,6 +24,7 @@ import {
   Work,
   LoginSuccess,
   Survey,
+  AdminUsers,
   AdminSessions,
   AdminNotifications,
   AdminComments,
@@ -114,6 +115,7 @@ export default store => {
       <Route path="travel/:id" component={BlogViewer} />
       <Route path="admin" component={Admin} />
       <Route path="admin/sessions" component={AdminSessions} />
+      <Route path="admin/users" component={AdminUsers} />
       <Route path="admin/comments" component={AdminComments} />
       <Route path="admin/notifications" component={AdminNotifications} />
       <Route path="admin/payments" component={AdminPayments} />
