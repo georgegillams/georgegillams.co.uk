@@ -23,39 +23,44 @@ export default function update(req) {
               // TODO REMOVE userBeingUpdated FROM userData otherwise the find will return the user themselves!
               // Users should be able to update their own user
               if (user && (user.admin || userOwnsResourceResult)) {
-                // If another user already with the same username, we cannot allow it to be updated
-                const { existingValue: userWithSameUname } = find(
-                  userData,
-                  reqSecured.body.uname,
-                  'uname',
-                );
-                if (
-                  userWithSameUname &&
-                  userWithSameUname.id !== reqSecured.body.id
-                ) {
-                  reject({
-                    error: 'user already exists',
-                    reason: 'A user with that username already exists',
-                  });
-                } else {
-                  if (reqSecured.body.password) {
-                    reqSecured.body.hash = hash(reqSecured.body.password);
-                    reqSecured.body.password = null;
-                  }
-                  // IF USER EMAIL HAS CHANGED, IT NEED RE-VERIFYING
-                  const emailVerificationRequired =
-                    reqSecured.body.email !== userBeingUpdated.email;
-                  if (emailVerificationRequired) {
-                    reqSecured.body.emailVerified = false;
-                  }
-                  datumUpdate({ redisKey: 'users' }, reqSecured).then(
-                    updatedUser => {
-                      if (emailVerificationRequired) {
-                        sendEmailVerificationEmail(updatedUser);
-                      }
-                      resolve(updatedUser);
-                    },
+                // Only admins can make people admins!
+                if ((user && user.admin) || !reqSecured.body.admin) {
+                  // If another user already with the same username, we cannot allow it to be updated
+                  const { existingValue: userWithSameUname } = find(
+                    userData,
+                    reqSecured.body.uname,
+                    'uname',
                   );
+                  if (
+                    userWithSameUname &&
+                    userWithSameUname.id !== reqSecured.body.id
+                  ) {
+                    reject({
+                      error: 'user already exists',
+                      reason: 'A user with that username already exists',
+                    });
+                  } else {
+                    if (reqSecured.body.password) {
+                      reqSecured.body.hash = hash(reqSecured.body.password);
+                      reqSecured.body.password = null;
+                    }
+                    // IF USER EMAIL HAS CHANGED, IT NEED RE-VERIFYING
+                    const emailVerificationRequired =
+                      reqSecured.body.email !== userBeingUpdated.email;
+                    if (emailVerificationRequired) {
+                      reqSecured.body.emailVerified = false;
+                    }
+                    datumUpdate({ redisKey: 'users' }, reqSecured).then(
+                      updatedUser => {
+                        if (emailVerificationRequired) {
+                          sendEmailVerificationEmail(updatedUser);
+                        }
+                        resolve(updatedUser);
+                      },
+                    );
+                  }
+                } else {
+                  reject(UNAUTHORISED_WRITE);
                 }
               } else {
                 reject(UNAUTHORISED_WRITE);
