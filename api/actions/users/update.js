@@ -1,7 +1,7 @@
 import { datumLoad, datumUpdate } from '../datum';
 import authentication from '../../utils/authentication';
 import { hash } from '../../utils/hash';
-import { find } from '../../utils/find';
+import { find, emailFingerprint } from '../../utils/find';
 import { userOwnsResource } from '../../utils/userOwnsResource';
 import { sendEmailVerificationEmail } from '../../utils/emailHelpers';
 import { UNAUTHORISED_WRITE } from '../../../src/utils/constants';
@@ -43,13 +43,23 @@ export default function update(req) {
                     if (reqSecured.body.password) {
                       reqSecured.body.hash = hash(reqSecured.body.password);
                       reqSecured.body.password = null;
+                    } else {
+                      reqSecured.body.hash = userBeingUpdated.hash;
                     }
                     // IF USER EMAIL HAS CHANGED, IT NEED RE-VERIFYING
                     const emailVerificationRequired =
                       reqSecured.body.email !== userBeingUpdated.email;
                     if (emailVerificationRequired) {
-                      reqSecured.body.emailVerified = false;
+                      reqSecured.body.emailFingerprint = emailFingerprint(
+                        reqSecured.body.email,
+                      );
+                    } else {
+                      reqSecured.body.emailFingerprint =
+                        userBeingUpdated.emailFingerprint;
+                      reqSecured.body.emailVerified =
+                        userBeingUpdated.emailVerified;
                     }
+
                     datumUpdate({ redisKey: 'users' }, reqSecured).then(
                       updatedUser => {
                         if (emailVerificationRequired) {

@@ -1,7 +1,7 @@
-import datumLoad from "./datumLoad";
-import redis from "../../utils/redis";
-import { find } from "../../utils/find";
-import setContentLastUpdatedTimestamp from "../../utils/setContentLastUpdatedTimestamp";
+import datumLoad from './datumLoad';
+import redis from '../../utils/redis';
+import { find } from '../../utils/find';
+import setContentLastUpdatedTimestamp from '../../utils/setContentLastUpdatedTimestamp';
 
 export default function datumUpdate(settings, req) {
   return new Promise((resolve, reject) => {
@@ -12,15 +12,19 @@ export default function datumUpdate(settings, req) {
         const { existingValue, existingValueIndex } = find(values, value.id);
 
         if (existingValue) {
+          // Persist commnon values
+          value.timestamp = existingValue.timestamp;
+          value.authorId = existingValue.authorId;
+
           values[existingValueIndex] = value;
           redis.lset(
             settings.redisKey,
             existingValueIndex,
-            JSON.stringify(value)
+            JSON.stringify(value),
           );
           if (
-            settings.redisKey !== "sessions" &&
-            settings.redisKey !== "contentUpdates"
+            settings.redisKey !== 'sessions' &&
+            settings.redisKey !== 'contentUpdates'
           ) {
             setContentLastUpdatedTimestamp();
           }
@@ -32,7 +36,7 @@ export default function datumUpdate(settings, req) {
       },
       err => {
         reject(err);
-      }
+      },
     );
   });
 }
