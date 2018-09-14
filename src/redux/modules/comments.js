@@ -23,7 +23,7 @@ const initialState = {
   deleting: {},
   saveError: {},
   deletionError: {},
-  createError: {}
+  createError: {},
 };
 
 export default function reducer(state = initialState, action = {}) {
@@ -31,7 +31,7 @@ export default function reducer(state = initialState, action = {}) {
     case SINGLE_LOAD:
       return {
         ...state,
-        singleLoading: true
+        singleLoading: true,
       };
     case SINGLE_LOAD_SUCCESS:
       return {
@@ -40,9 +40,9 @@ export default function reducer(state = initialState, action = {}) {
         singleLoaded: true,
         singleData: {
           ...state.singleData,
-          [action.id]: action.result
+          [action.id]: action.result,
         },
-        singleError: null
+        singleError: null,
       };
     case SINGLE_LOAD_FAIL:
       return {
@@ -50,12 +50,12 @@ export default function reducer(state = initialState, action = {}) {
         singleLoading: false,
         singleLoaded: false,
         singleData: null,
-        singleError: action.error
+        singleError: action.error,
       };
     case LOAD:
       return {
         ...state,
-        loading: true
+        loading: true,
       };
     case LOAD_SUCCESS:
       return {
@@ -63,13 +63,13 @@ export default function reducer(state = initialState, action = {}) {
         loading: false,
         loaded: {
           ...state.loaded,
-          [action.id]: true
+          [action.id]: true,
         },
         data: {
           ...state.data,
-          [action.id]: action.result
+          [action.id]: action.result,
         },
-        error: null
+        error: null,
       };
     case LOAD_FAIL:
       return {
@@ -77,29 +77,29 @@ export default function reducer(state = initialState, action = {}) {
         loading: false,
         loaded: {
           ...state.loaded,
-          [action.id]: false
+          [action.id]: false,
         },
         data: {
           ...state.data,
-          [action.id]: null
+          [action.id]: null,
         },
-        error: action.error
+        error: action.error,
       };
     case EDIT_START:
       return {
         ...state,
         editing: {
           ...state.editing,
-          [action.id]: true
-        }
+          [action.id]: true,
+        },
       };
     case EDIT_STOP:
       return {
         ...state,
         editing: {
           ...state.editing,
-          [action.id]: false
-        }
+          [action.id]: false,
+        },
       };
     case CREATE:
       return state; // 'saving' flag handled by redux-form
@@ -108,18 +108,18 @@ export default function reducer(state = initialState, action = {}) {
         ...state,
         creating: {
           ...state.editing,
-          [action.id]: false
-        }
+          [action.id]: false,
+        },
       };
     case CREATE_FAIL:
       return typeof action.error === 'string'
         ? {
-          ...state,
-          createError: {
-            ...state.createError,
-            [action.id]: action.error
+            ...state,
+            createError: {
+              ...state.createError,
+              [action.id]: action.error,
+            },
           }
-        }
         : state;
     case SAVE:
       return state; // 'saving' flag handled by redux-form
@@ -128,22 +128,22 @@ export default function reducer(state = initialState, action = {}) {
         ...state,
         editing: {
           ...state.editing,
-          [action.id]: false
+          [action.id]: false,
         },
         saveError: {
           ...state.saveError,
-          [action.id]: null
-        }
+          [action.id]: null,
+        },
       };
     case SAVE_FAIL:
       return typeof action.error === 'string'
         ? {
-          ...state,
-          saveError: {
-            ...state.saveError,
-            [action.id]: action.error
+            ...state,
+            saveError: {
+              ...state.saveError,
+              [action.id]: action.error,
+            },
           }
-        }
         : state;
     case DELETE:
       return state; // 'saving' flag handled by redux-form
@@ -152,22 +152,22 @@ export default function reducer(state = initialState, action = {}) {
         ...state,
         deleting: {
           ...state.deleting,
-          [action.id]: false
+          [action.id]: false,
         },
         deletionError: {
           ...state.deletionError,
-          [action.id]: null
-        }
+          [action.id]: null,
+        },
       };
     case DELETE_FAIL:
       return typeof action.error === 'string'
         ? {
-          ...state,
-          deletionError: {
-            ...state.deletionError,
-            [action.id]: action.error
+            ...state,
+            deletionError: {
+              ...state.deletionError,
+              [action.id]: action.error,
+            },
           }
-        }
         : state;
     default:
       return state;
@@ -190,8 +190,8 @@ export function load(pageId) {
   const params = pageId ? `?pageId=${pageId}` : ``;
   return {
     types: [LOAD, LOAD_SUCCESS, LOAD_FAIL],
-    id: pageId,
-    promise: client => client.get(`/comments/load${params}`)
+    id: pageId || 'ALL',
+    promise: client => client.get(`/comments/load${params}`),
   };
 }
 
@@ -199,7 +199,7 @@ export function loadSingle(commentId) {
   const params = commentId ? `?id=${commentId}` : ``;
   return {
     types: [SINGLE_LOAD, SINGLE_LOAD_SUCCESS, SINGLE_LOAD_FAIL],
-    promise: client => client.get(`/comments/loadSingle${params}`)
+    promise: client => client.get(`/comments/loadSingle${params}`),
   };
 }
 
@@ -210,8 +210,8 @@ export function create(comment) {
     promise: client =>
       client.post('/comments/create', {
         params: { 'Content-Type': 'application/json' },
-        data: comment
-      })
+        data: comment,
+      }),
   };
 }
 
@@ -222,8 +222,8 @@ export function save(comment) {
     promise: client =>
       client.post('/comments/update', {
         params: { 'Content-Type': 'application/json' },
-        data: comment
-      })
+        data: comment,
+      }),
   };
 }
 
@@ -234,8 +234,8 @@ export function remove(comment) {
     promise: client =>
       client.post('/comments/remove', {
         params: { 'Content-Type': 'application/json' },
-        data: comment
-      })
+        data: comment,
+      }),
   };
 }
 

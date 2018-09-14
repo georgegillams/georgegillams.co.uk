@@ -3,9 +3,9 @@ import Helmet from 'react-helmet';
 import { connect } from 'react-redux';
 import { isLoaded as isAuthLoaded, load as loadAuth } from 'redux/modules/auth';
 import {
-  isLoaded as isPaymentsLoaded,
-  load as loadPayments,
-} from 'redux/modules/payments';
+  isLoaded as isCommentsLoaded,
+  load as loadComments,
+} from 'redux/modules/comments';
 import { bindActionCreators } from 'redux';
 import { asyncConnect } from 'redux-async-connect';
 import { AdminOnly, Loading, TagFilter, Button } from 'components';
@@ -24,8 +24,8 @@ const getClassName = cssModules(STYLES);
     promise: ({ store: { dispatch, getState } }) => {
       const promises = [];
 
-      if (!isPaymentsLoaded(getState())) {
-        promises.push(dispatch(loadPayments()));
+      if (!isCommentsLoaded(getState(), 'ALL')) {
+        promises.push(dispatch(loadComments(null)));
       }
       if (!isAuthLoaded(getState())) {
         promises.push(dispatch(loadAuth()));
@@ -38,16 +38,19 @@ const getClassName = cssModules(STYLES);
 @connect(
   state => ({
     newDataAvailable: state.sessions.newDataAvailable,
-    payments: state.payments ? state.payments.data : null,
+    comments:
+      state.comments && state.comments.data['ALL']
+        ? state.comments.data['ALL']
+        : null,
     user: state.auth.user,
   }),
-  dispatch => bindActionCreators({ loadPayments }, dispatch),
+  dispatch => bindActionCreators({ loadComments }, dispatch),
 )
-export default class Payments extends Component {
+export default class Comments extends Component {
   static propTypes = {
     newDataAvailable: PropTypes.bool.isRequired,
-    payments: PropTypes.arrayOf(PropTypes.object),
-    loadPayments: PropTypes.func.isRequired,
+    comments: PropTypes.arrayOf(PropTypes.object),
+    loadComments: PropTypes.func.isRequired,
     className: PropTypes.string,
   };
 
@@ -63,7 +66,7 @@ export default class Payments extends Component {
 
   componentDidMount = () => {
     this.interval = setInterval(
-      this.reloadPaymentsIfNecessary,
+      this.reloadCommentsIfNecessary,
       CHECK_FOR_NEW_CONTENT_INTERVAL,
     );
   };
@@ -72,14 +75,14 @@ export default class Payments extends Component {
     clearInterval(this.interval);
   }
 
-  reloadPaymentsIfNecessary = () => {
+  reloadCommentsIfNecessary = () => {
     if (this.props.newDataAvailable) {
-      this.props.loadPayments();
+      this.props.loadComments(null);
     }
   };
 
   render() {
-    const { user, payments, loadPayments, className, ...rest } = this.props; // eslint-disable-line no-shadow
+    const { user, comments, loadComments, className, ...rest } = this.props; // eslint-disable-line no-shadow
 
     const outerClassNameFinal = [getClassName('pages__container')];
 
@@ -87,30 +90,30 @@ export default class Payments extends Component {
       outerClassNameFinal.push(className);
     }
 
-    if (!payments) {
+    if (!comments) {
       return null;
     }
 
     return (
       <div className={outerClassNameFinal.join(' ')} {...rest}>
-        <Helmet title="Payments" />
+        <Helmet title="Comments" />
         <AdminOnly user={user}>
           <div>
-            {`Payments: ${payments.length}`}
+            {`Comments: ${comments.length}`}
             <br />
             <br />
-            {payments &&
-              payments.map(payment => (
+            {comments &&
+              comments.map(comment => (
                 <div>
-                  {`Payment id ${payment.id}`}
+                  {`Comment id ${comment.id}`}
                   <br />
-                  {`Amount ${payment.amount}`}
+                  {`Page id ${comment.pageId}`}
                   <br />
-                  {`Account No ${payment.accountNumber}`}
+                  {`Comment ${comment.comment}`}
                   <br />
-                  {`Sort code ${payment.sortCode}`}
+                  {`Created ${comment.timestamp}`}
                   <br />
-                  {`Monzo link ${payment.monzoMeLink}`}
+                  {`Deleted ${comment.deleted}`}
                   <br />
                   <br />
                 </div>

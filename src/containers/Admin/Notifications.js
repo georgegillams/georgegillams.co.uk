@@ -3,9 +3,9 @@ import Helmet from 'react-helmet';
 import { connect } from 'react-redux';
 import { isLoaded as isAuthLoaded, load as loadAuth } from 'redux/modules/auth';
 import {
-  isLoaded as isPaymentsLoaded,
-  load as loadPayments,
-} from 'redux/modules/payments';
+  isLoaded as isNotificationsLoaded,
+  load as loadNotifications,
+} from 'redux/modules/notifications';
 import { bindActionCreators } from 'redux';
 import { asyncConnect } from 'redux-async-connect';
 import { AdminOnly, Loading, TagFilter, Button } from 'components';
@@ -24,8 +24,8 @@ const getClassName = cssModules(STYLES);
     promise: ({ store: { dispatch, getState } }) => {
       const promises = [];
 
-      if (!isPaymentsLoaded(getState())) {
-        promises.push(dispatch(loadPayments()));
+      if (!isNotificationsLoaded(getState())) {
+        promises.push(dispatch(loadNotifications()));
       }
       if (!isAuthLoaded(getState())) {
         promises.push(dispatch(loadAuth()));
@@ -38,16 +38,16 @@ const getClassName = cssModules(STYLES);
 @connect(
   state => ({
     newDataAvailable: state.sessions.newDataAvailable,
-    payments: state.payments ? state.payments.data : null,
+    notifications: state.notifications ? state.notifications.data : null,
     user: state.auth.user,
   }),
-  dispatch => bindActionCreators({ loadPayments }, dispatch),
+  dispatch => bindActionCreators({ loadNotifications }, dispatch),
 )
-export default class Payments extends Component {
+export default class Notifications extends Component {
   static propTypes = {
     newDataAvailable: PropTypes.bool.isRequired,
-    payments: PropTypes.arrayOf(PropTypes.object),
-    loadPayments: PropTypes.func.isRequired,
+    notifications: PropTypes.arrayOf(PropTypes.object),
+    loadNotifications: PropTypes.func.isRequired,
     className: PropTypes.string,
   };
 
@@ -63,7 +63,7 @@ export default class Payments extends Component {
 
   componentDidMount = () => {
     this.interval = setInterval(
-      this.reloadPaymentsIfNecessary,
+      this.reloadNotificationsIfNecessary,
       CHECK_FOR_NEW_CONTENT_INTERVAL,
     );
   };
@@ -72,14 +72,20 @@ export default class Payments extends Component {
     clearInterval(this.interval);
   }
 
-  reloadPaymentsIfNecessary = () => {
+  reloadNotificationsIfNecessary = () => {
     if (this.props.newDataAvailable) {
-      this.props.loadPayments();
+      this.props.loadNotifications();
     }
   };
 
   render() {
-    const { user, payments, loadPayments, className, ...rest } = this.props; // eslint-disable-line no-shadow
+    const {
+      user,
+      notifications,
+      loadNotifications,
+      className,
+      ...rest
+    } = this.props; // eslint-disable-line no-shadow
 
     const outerClassNameFinal = [getClassName('pages__container')];
 
@@ -87,30 +93,32 @@ export default class Payments extends Component {
       outerClassNameFinal.push(className);
     }
 
-    if (!payments) {
+    if (!notifications) {
       return null;
     }
 
     return (
       <div className={outerClassNameFinal.join(' ')} {...rest}>
-        <Helmet title="Payments" />
+        <Helmet title="Notifications" />
         <AdminOnly user={user}>
           <div>
-            {`Payments: ${payments.length}`}
+            {`Notifications: ${notifications.length}`}
             <br />
             <br />
-            {payments &&
-              payments.map(payment => (
+            {notifications &&
+              notifications.map(notification => (
                 <div>
-                  {`Payment id ${payment.id}`}
+                  {`Notification id ${notification.id}`}
                   <br />
-                  {`Amount ${payment.amount}`}
+                  {`Message ${notification.message}`}
                   <br />
-                  {`Account No ${payment.accountNumber}`}
+                  {`Type ${notification.type}`}
                   <br />
-                  {`Sort code ${payment.sortCode}`}
+                  {`Author ${notification.authorId}`}
                   <br />
-                  {`Monzo link ${payment.monzoMeLink}`}
+                  {`Created ${notification.timestamp}`}
+                  <br />
+                  {`Deleted ${notification.deleted}`}
                   <br />
                   <br />
                 </div>

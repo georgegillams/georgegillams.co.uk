@@ -13,20 +13,20 @@ const getClassName = cssModules(STYLES);
 @connect(
   state => ({
     newDataAvailable: state.sessions.newDataAvailable,
-    notifications: state.notifications.data
+    notifications: state.notifications.data,
   }),
-  dispatch => bindActionCreators({ load }, dispatch)
+  dispatch => bindActionCreators({ load }, dispatch),
 )
 export default class NotificationCentre extends Component {
   static propTypes = {
     newDataAvailable: PropTypes.bool.isRequired,
     notifications: PropTypes.arrayOf(PropTypes.object),
     load: PropTypes.func.isRequired,
-    className: PropTypes.string
+    className: PropTypes.string,
   };
 
   static defaultProps = {
-    className: null
+    className: null,
   };
 
   constructor(props) {
@@ -50,12 +50,14 @@ export default class NotificationCentre extends Component {
   render() {
     const { notifications, load, className, ...rest } = this.props; // eslint-disable-line no-shadow
 
-    if (!notifications || notifications.length < 1) {
+    const notificationsFiltered = notifications.filter(notif => !notif.deleted);
+
+    if (!notificationsFiltered || notificationsFiltered.length < 1) {
       return null;
     }
 
     const outerClassNameFinal = [
-      getClassName('notification-center__container')
+      getClassName('notification-center__container'),
     ];
 
     if (className) {
@@ -63,7 +65,7 @@ export default class NotificationCentre extends Component {
     }
     return (
       <div className={outerClassNameFinal.join(' ')} {...rest}>
-        {notifications.map(notif => (
+        {notificationsFiltered.map(notif => (
           <NotificationComp
             className={getClassName('notification-center__notification')}
             type={notif.type}
