@@ -1,6 +1,9 @@
 const LOAD = 'redux-example/auth/LOAD';
 const LOAD_SUCCESS = 'redux-example/auth/LOAD_SUCCESS';
 const LOAD_FAIL = 'redux-example/auth/LOAD_FAIL';
+const LOAD_ALL = 'redux-example/auth/LOAD_ALL';
+const LOAD_ALL_SUCCESS = 'redux-example/auth/LOAD_ALL_SUCCESS';
+const LOAD_ALL_FAIL = 'redux-example/auth/LOAD_ALL_FAIL';
 const REGISTER = 'redux-example/auth/REGISTER';
 const REGISTER_SUCCESS = 'redux-example/auth/REGISTER_SUCCESS';
 const REGISTER_FAIL = 'redux-example/auth/REGISTER_FAIL';
@@ -21,140 +24,160 @@ const LOGOUT_SUCCESS = 'redux-example/auth/LOGOUT_SUCCESS';
 const LOGOUT_FAIL = 'redux-example/auth/LOGOUT_FAIL';
 
 const initialState = {
-  loaded: false
+  loaded: false,
 };
 
 export default function reducer(state = initialState, action = {}) {
   switch (action.type) {
+    case LOAD_ALL:
+      return {
+        ...state,
+        loading: true,
+      };
+    case LOAD_ALL_SUCCESS:
+      return {
+        ...state,
+        loading: false,
+        loaded: true,
+        data: action.result,
+      };
+    case LOAD_ALL_FAIL:
+      return {
+        ...state,
+        loading: false,
+        loaded: false,
+        data: null,
+        error: action.error,
+      };
     case LOAD:
       return {
         ...state,
-        loading: true
+        loading: true,
       };
     case LOAD_SUCCESS:
       return {
         ...state,
         loading: false,
         loaded: true,
-        user: action.result
+        user: action.result,
       };
     case LOAD_FAIL:
       return {
         ...state,
         loading: false,
         loaded: false,
-        error: action.error
+        error: action.error,
       };
     case REGISTER:
       return {
         ...state,
         registering: true,
-        registeringError: null
+        registeringError: null,
       };
     case REGISTER_SUCCESS:
       return {
         ...state,
         registering: false,
         user: null,
-        registeringError: null
+        registeringError: null,
       };
     case REGISTER_FAIL:
       return {
         ...state,
         registering: false,
         user: null,
-        registeringError: action.error
+        registeringError: action.error,
       };
     case REQUEST_MAGIC:
       return {
         ...state,
-        loggingIn: true
+        loggingIn: true,
       };
     case REQUEST_MAGIC_SUCCESS:
       return {
         ...state,
         loggingIn: false,
-        magicLinkRequested: true
+        magicLinkRequested: true,
       };
     case REQUEST_MAGIC_FAIL:
       return {
         ...state,
         loggingIn: false,
-        loginError: action.error
+        loginError: action.error,
       };
     case VERIFY_EMAIL:
       return {
         ...state,
         verifyingEmail: true,
-        emailVerificationError: null
+        emailVerificationError: null,
       };
     case VERIFY_EMAIL_SUCCESS:
       return {
         ...state,
         verifyingEmail: false,
         user: action.result,
-        emailVerificationError: null
+        emailVerificationError: null,
       };
     case VERIFY_EMAIL_FAIL:
       return {
         ...state,
         verifyingEmail: false,
         user: null,
-        emailVerificationError: action.error
+        emailVerificationError: action.error,
       };
     case LOGIN:
       return {
         ...state,
         loggingIn: true,
-        loginError: null
+        loginError: null,
       };
     case LOGIN_SUCCESS:
       return {
         ...state,
         loggingIn: false,
         user: action.result,
-        loginError: null
+        loginError: null,
       };
     case LOGIN_FAIL:
       return {
         ...state,
         loggingIn: false,
         user: null,
-        loginError: action.error
+        loginError: action.error,
       };
     case LOGOUT:
       return {
         ...state,
-        loggingOut: true
+        loggingOut: true,
       };
     case LOGOUT_SUCCESS:
       return {
         ...state,
         loggingOut: false,
-        user: null
+        user: null,
       };
     case LOGOUT_FAIL:
       return {
         ...state,
         loggingOut: false,
-        logoutError: action.error
+        logoutError: action.error,
       };
     case LOGOUT_ALL:
       return {
         ...state,
-        loggingOut: true
+        loggingOut: true,
       };
     case LOGOUT_ALL_SUCCESS:
       return {
         ...state,
         loggingOut: false,
-        user: null
+        user: null,
       };
     case LOGOUT_ALL_FAIL:
       return {
         ...state,
         loggingOut: false,
-        logoutError: action.error
+        logoutError: action.error,
       };
     default:
       return state;
@@ -162,13 +185,24 @@ export default function reducer(state = initialState, action = {}) {
 }
 
 export function isLoaded(globalState) {
-  return globalState.auth && globalState.auth.loaded;
+  return globalState.user && globalState.user.loaded;
+}
+
+export function isAllLoaded(globalState) {
+  return globalState.users && globalState.users.loaded;
 }
 
 export function load() {
   return {
     types: [LOAD, LOAD_SUCCESS, LOAD_FAIL],
-    promise: client => client.get('/loadAuth')
+    promise: client => client.get('/loadAuth'),
+  };
+}
+
+export function loadAll() {
+  return {
+    types: [LOAD_ALL, LOAD_ALL_SUCCESS, LOAD_ALL_FAIL],
+    promise: client => client.get('/users/load'),
   };
 }
 
@@ -178,8 +212,8 @@ export function requestMagicLink(credentials) {
     promise: client =>
       client.post('/getmagiclink', {
         params: { 'Content-Type': 'application/json' },
-        data: credentials
-      })
+        data: credentials,
+      }),
   };
 }
 
@@ -189,8 +223,8 @@ export function login(credentials) {
     promise: client =>
       client.post('/login', {
         params: { 'Content-Type': 'application/json' },
-        data: credentials
-      })
+        data: credentials,
+      }),
   };
 }
 
@@ -200,8 +234,8 @@ export function loginMagic(key) {
     promise: client =>
       client.post('/loginmagiclink', {
         params: { 'Content-Type': 'application/json' },
-        data: { magicLinkKey: key }
-      })
+        data: { magicLinkKey: key },
+      }),
   };
 }
 
@@ -211,8 +245,8 @@ export function verifyEmail(key) {
     promise: client =>
       client.post('/verifyemail', {
         params: { 'Content-Type': 'application/json' },
-        data: { verificationKey: key }
-      })
+        data: { verificationKey: key },
+      }),
   };
 }
 
@@ -222,21 +256,21 @@ export function createUser(user) {
     promise: client =>
       client.post('/users/create', {
         params: { 'Content-Type': 'application/json' },
-        data: user
-      })
+        data: user,
+      }),
   };
 }
 
 export function logout() {
   return {
     types: [LOGOUT, LOGOUT_SUCCESS, LOGOUT_FAIL],
-    promise: client => client.post('/logout')
+    promise: client => client.post('/logout'),
   };
 }
 
 export function logoutAll() {
   return {
     types: [LOGOUT_ALL, LOGOUT_ALL_SUCCESS, LOGOUT_ALL_FAIL],
-    promise: client => client.post('/logoutall')
+    promise: client => client.post('/logoutall'),
   };
 }

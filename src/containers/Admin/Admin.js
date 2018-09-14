@@ -70,6 +70,15 @@ export default class Admin extends Component {
                 day={null}
                 month={null}
                 className={getClassName('pages__card')}
+                linkUrl="/admin/users"
+                title="Users"
+                tallLayout
+              />
+              <ArticleCard
+                layout={CARD_LAYOUTS.narrowCompact}
+                day={null}
+                month={null}
+                className={getClassName('pages__card')}
                 linkUrl="/admin/sessions"
                 title="Sessions"
                 tallLayout

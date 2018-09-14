@@ -3,7 +3,7 @@ import Helmet from 'react-helmet';
 import { Section, SubSection, TextLink, Button } from 'components';
 import BpkImage, {
   withLazyLoading,
-  withLoadingBehavior
+  withLoadingBehavior,
 } from 'bpk-component-image';
 import { cssModules } from 'bpk-react-utils';
 
@@ -13,12 +13,12 @@ const getClassName = cssModules(STYLES);
 
 const documentIfExists = typeof window !== 'undefined' ? document : null;
 const FadingLazyLoadedImage = withLoadingBehavior(
-  withLazyLoading(BpkImage, documentIfExists)
+  withLazyLoading(BpkImage, documentIfExists),
 );
 
 export default class Work extends Component {
   state = {
-    showKitten: false
+    showKitten: false,
   };
 
   handleToggleKitten = () =>
@@ -37,12 +37,12 @@ export default class Work extends Component {
             <Button href="/work/degree">Information about my degree →</Button>
           </SubSection>
           <SubSection name="Work">
-            I started my Software Engineering career at{" "}
+            I started my Software Engineering career at{' '}
             <TextLink
               href="http://www.leonardocompany.com/en/-/ewos-electronic_warfare_operational_support"
               external
             >
-              Leonardo{" "}
+              Leonardo{' '}
             </TextLink>
             where I worked for 60 weeks, mostly on a .NET frameworks for
             analysis tools. The frameworks enabled other development teams
@@ -50,65 +50,33 @@ export default class Work extends Component {
             products.
             <br />
             <br />I then moved on to become a Software Engineering intern at
-            Skyscanner, where I still work on their open-source design system,{" "}
+            Skyscanner. I continued working there throughtout the final year of
+            my Masters in Southampton, and now work there full-time on their
+            open-source design system,{' '}
             <TextLink href="https://backpack.github.io/" external>
-              Backpack{" "}
+              Backpack{' '}
             </TextLink>
-            . I continued this work whilst completing my Masters in Southampton,
-            and then rejoined as a full-time graduate employee this summer.
           </SubSection>
           <Section name="Portfolio">
             This website demonstrates some of my web-development capabilities.
-            Below I have included examples and extracts from my work on
-            open-source products.
+            Below I have included examples and extracts from my work on other
+            products.
             <br />
             <br />
             <SubSection name="Backpack Design System">
-              My first job at Skyscanner was in the{" "}
               <TextLink external href="https://backpack.github.io/">
-                Backpack{" "}
+                Backpack{' '}
               </TextLink>
-              squad. By combining Design and Engineering, we meet our goal of
-              providing support to other teams within the business, allowing
-              them to quickly construct quality front-end products with
-              coherence. We release{" "}
-              <TextLink external href="https://npmjs.com/">
-                NPM{" "}
-              </TextLink>
-              packages which allow users to consume our token values and{" "}
-              <TextLink external href="https://reactjs.org/">
-                React{" "}
-              </TextLink>
-              /
-              <TextLink
-                external
-                href="https://facebook.github.io/react-native/"
-              >
-                React Native{" "}
-              </TextLink>
-              components. Our token values are available as{" "}
-              <TextLink external href="http://sass-lang.com/">
-                SASS{" "}
-              </TextLink>
-              mixins, Swift or Objective C code. Our transition to open-source
-              happened soon after I joined Backpack making my initial placement
-              particularly interesting.
+              is Skyscanner's design system which supports 4 platforms (Android,
+              iOS, React Native and Web). Our work which combines Design and
+              Engineering in equal measures enables fast development and reduces
+              effort duplication.
               <br />
               <br />
-              <TextLink external href="https://reactjs.org/">
-                React{" "}
-              </TextLink>
-              components should really be stateless, meaning that often to
-              create our working documentation pages we had to implement
-              container components to hold state and allow interaction. This was
-              time-consuming, and occasionally failed to reflect the real-life
-              use-cases of our components. As a result, I decided to build a
-              demo HOC which would allow any component to be passed in and
-              automatically construct a list of props. Each prop can be edited
-              in place through the Demo component.
-              <br />
-              <br />
-              This is still a WIP, but a proof-of-concept is available to use.
+              To help debug complex stateless components, I built a demo
+              component which can automatically identify the types of props
+              accepted by a component, and provide elements for editing the
+              component in real-time.
               <br />
               <br />
               <Button href="/work/bpk-component-demo">
@@ -117,18 +85,18 @@ export default class Work extends Component {
               <br />
               <br />
               <Button hrefExternal href="https://backpack.github.io/">
-                Read more here →
+                Read more about Backpack here →
               </Button>
             </SubSection>
             <SubSection name="Industrial Placement - EWOS, Leonardo">
               In 2015, I joined the EWOS (Electronic Warfare Operational
-              Support) team at{" "}
+              Support) team at{' '}
               <TextLink
                 href="http://www.leonardocompany.com/en/-/ewos-electronic_warfare_operational_support"
                 external
               >
-                Leonardo{" "}
-              </TextLink>{" "}
+                Leonardo{' '}
+              </TextLink>{' '}
               to experience the way in which the software teams work to deliver
               efficient and effective solutions. Our team was responsible for
               maintaining large .NET frameworks which supported feature-rich
@@ -165,10 +133,10 @@ export default class Work extends Component {
               </Button>
             </SubSection>
             <SubSection name="React.js Academic References Component">
-              I was looking for a decent React Academic References Component{" "}
+              I was looking for a decent React Academic References Component{' '}
               <TextLink external href="https://npmjs.org/">
-                NPM{" "}
-              </TextLink>{" "}
+                NPM{' '}
+              </TextLink>{' '}
               package and struggled to find one. I decided this is something
               bloggers could really do with, so I got on with implementing an
               open-source one.
@@ -203,12 +171,12 @@ export default class Work extends Component {
                 href="https://addons.mozilla.org/en-US/firefox/addon/greasemonkey/"
                 external
               >
-                GreaseMonkey{" "}
+                GreaseMonkey{' '}
               </TextLink>
               is a brilliant browser extension that allows you to add javascript
-              to specific webpages when they are loaded.{" "}
+              to specific webpages when they are loaded.{' '}
               <TextLink href="https://gurushots.com/" external>
-                GuruShots{" "}
+                GuruShots{' '}
               </TextLink>
               is an online platform for photographers to enter their work into
               competitions. At a random point in each competition, each user is
