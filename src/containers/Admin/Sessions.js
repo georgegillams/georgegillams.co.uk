@@ -3,9 +3,9 @@ import Helmet from 'react-helmet';
 import { connect } from 'react-redux';
 import { isLoaded as isAuthLoaded, load as loadAuth } from 'redux/modules/auth';
 import {
-  isLoaded as isPaymentsLoaded,
-  load as loadPayments,
-} from 'redux/modules/payments';
+  isLoadedAll as isSessionsLoaded,
+  load as loadSessions,
+} from 'redux/modules/sessions';
 import { bindActionCreators } from 'redux';
 import { asyncConnect } from 'redux-async-connect';
 import { AdminOnly, Loading, TagFilter, Button } from 'components';
@@ -24,8 +24,8 @@ const getClassName = cssModules(STYLES);
     promise: ({ store: { dispatch, getState } }) => {
       const promises = [];
 
-      if (!isPaymentsLoaded(getState())) {
-        promises.push(dispatch(loadPayments()));
+      if (!isSessionsLoaded(getState())) {
+        promises.push(dispatch(loadSessions()));
       }
       if (!isAuthLoaded(getState())) {
         promises.push(dispatch(loadAuth()));
@@ -38,16 +38,16 @@ const getClassName = cssModules(STYLES);
 @connect(
   state => ({
     newDataAvailable: state.sessions.newDataAvailable,
-    payments: state.payments ? state.payments.data : null,
+    sessions: state.sessions ? state.sessions.allSessionData : null,
     user: state.auth.user,
   }),
-  dispatch => bindActionCreators({ loadPayments }, dispatch),
+  dispatch => bindActionCreators({ loadSessions }, dispatch),
 )
-export default class Payments extends Component {
+export default class Sessions extends Component {
   static propTypes = {
     newDataAvailable: PropTypes.bool.isRequired,
-    payments: PropTypes.arrayOf(PropTypes.object),
-    loadPayments: PropTypes.func.isRequired,
+    sessions: PropTypes.arrayOf(PropTypes.object),
+    loadSessions: PropTypes.func.isRequired,
     className: PropTypes.string,
   };
 
@@ -63,7 +63,7 @@ export default class Payments extends Component {
 
   componentDidMount = () => {
     this.interval = setInterval(
-      this.reloadPaymentsIfNecessary,
+      this.reloadSessionsIfNecessary,
       CHECK_FOR_NEW_CONTENT_INTERVAL,
     );
   };
@@ -72,14 +72,14 @@ export default class Payments extends Component {
     clearInterval(this.interval);
   }
 
-  reloadPaymentsIfNecessary = () => {
+  reloadSessionsIfNecessary = () => {
     if (this.props.newDataAvailable) {
-      this.props.loadPayments();
+      this.props.loadSessions();
     }
   };
 
   render() {
-    const { user, payments, loadPayments, className, ...rest } = this.props; // eslint-disable-line no-shadow
+    const { user, sessions, loadSessions, className, ...rest } = this.props; // eslint-disable-line no-shadow
 
     const outerClassNameFinal = [getClassName('pages__container')];
 
@@ -87,30 +87,30 @@ export default class Payments extends Component {
       outerClassNameFinal.push(className);
     }
 
-    if (!payments) {
+    if (!sessions) {
       return null;
     }
 
     return (
       <div className={outerClassNameFinal.join(' ')} {...rest}>
-        <Helmet title="Payments" />
+        <Helmet title="Sessions" />
         <AdminOnly user={user}>
           <div>
-            {`Payments: ${payments.length}`}
+            {`Sessions: ${sessions.length}`}
             <br />
             <br />
-            {payments &&
-              payments.map(payment => (
+            {sessions &&
+              sessions.map(session => (
                 <div>
-                  {`Payment id ${payment.id}`}
+                  {`Session id ${session.id}`}
                   <br />
-                  {`Amount ${payment.amount}`}
+                  {`Session key ${session.sessionKey}`}
                   <br />
-                  {`Account No ${payment.accountNumber}`}
+                  {`Last active ${session.lastActive}`}
                   <br />
-                  {`Sort code ${payment.sortCode}`}
+                  {`User ${session.userId}`}
                   <br />
-                  {`Monzo link ${payment.monzoMeLink}`}
+                  {`Created ${session.timestamp}`}
                   <br />
                   <br />
                 </div>

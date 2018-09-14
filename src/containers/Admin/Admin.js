@@ -61,7 +61,6 @@ export default class Admin extends Component {
                 day={null}
                 month={null}
                 className={getClassName('pages__card')}
-                fillImageSrc="https://i.imgur.com/3n68rkf.jpg"
                 linkUrl="/admin/blog"
                 title="Blogs"
                 tallLayout
@@ -71,7 +70,6 @@ export default class Admin extends Component {
                 day={null}
                 month={null}
                 className={getClassName('pages__card')}
-                fillImageSrc="https://i.imgur.com/3n68rkf.jpg"
                 linkUrl="/admin/sessions"
                 title="Sessions"
                 tallLayout
@@ -81,7 +79,6 @@ export default class Admin extends Component {
                 day={null}
                 month={null}
                 className={getClassName('pages__card')}
-                fillImageSrc="https://i.imgur.com/3n68rkf.jpg"
                 linkUrl="/admin/comments"
                 title="Page comments"
                 tallLayout
@@ -91,7 +88,6 @@ export default class Admin extends Component {
                 day={null}
                 month={null}
                 className={getClassName('pages__card')}
-                fillImageSrc="https://i.imgur.com/3n68rkf.jpg"
                 linkUrl="/admin/notifications"
                 title="Notifications"
                 tallLayout
@@ -101,7 +97,6 @@ export default class Admin extends Component {
                 day={null}
                 month={null}
                 className={getClassName('pages__card')}
-                fillImageSrc="https://i.imgur.com/3n68rkf.jpg"
                 linkUrl="/admin/payments"
                 title="Payments"
                 tallLayout
