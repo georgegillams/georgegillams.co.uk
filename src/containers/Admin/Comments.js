@@ -8,7 +8,7 @@ import {
 } from 'redux/modules/comments';
 import { bindActionCreators } from 'redux';
 import { asyncConnect } from 'redux-async-connect';
-import { AdminOnly, Loading, TagFilter, Button } from 'components';
+import { AdminOnly, Loading, TagFilter, Button, Comment } from 'components';
 import {
   NON_EMOJI_REGEX,
   CHECK_FOR_NEW_CONTENT_INTERVAL,
@@ -115,6 +115,7 @@ export default class Comments extends Component {
                   <br />
                   {`Deleted ${comment.deleted}`}
                   <br />
+                  <Comment user={user} comment={comment} />
                   <br />
                 </div>
               ))}

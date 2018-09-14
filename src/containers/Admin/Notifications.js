@@ -8,7 +8,13 @@ import {
 } from 'redux/modules/notifications';
 import { bindActionCreators } from 'redux';
 import { asyncConnect } from 'redux-async-connect';
-import { AdminOnly, Loading, TagFilter, Button } from 'components';
+import {
+  AdminOnly,
+  Loading,
+  TagFilter,
+  Button,
+  NotificationComp,
+} from 'components';
 import {
   NON_EMOJI_REGEX,
   CHECK_FOR_NEW_CONTENT_INTERVAL,
@@ -120,6 +126,9 @@ export default class Notifications extends Component {
                   <br />
                   {`Deleted ${notification.deleted}`}
                   <br />
+                  <NotificationComp type={notification.type}>
+                    {notification.message}
+                  </NotificationComp>
                   <br />
                 </div>
               ))}

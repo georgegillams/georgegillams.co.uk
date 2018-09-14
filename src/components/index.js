@@ -27,7 +27,7 @@ export InfoBar from './InfoBar/InfoBar';
 export MiniInfoBar from './MiniInfoBar/MiniInfoBar';
 export SurveyForm from './SurveyForm/SurveyForm';
 export Tag, { TagFilter } from './Tag';
-export Comments, { CommentInput } from './Comments';
+export Comments, { CommentInput, Comment } from './Comments';
 export { SignUpForm, LoginForm, BlogForm } from './Forms';
 export GraphicContent, { withGraphicContentBehaviour } from './GraphicContent';
 export WidgetForm from './WidgetForm/WidgetForm';

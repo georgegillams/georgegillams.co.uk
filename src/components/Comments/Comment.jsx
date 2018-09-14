@@ -12,12 +12,12 @@ class Comment extends React.Component {
     onCommentStartEdit: PropTypes.func.isRequired,
     onCommentDeleted: PropTypes.func.isRequired,
     user: PropTypes.object,
-    comment: PropTypes.object
+    comment: PropTypes.object,
   };
 
   static defaultProps = {
     user: null,
-    comment: null
+    comment: null,
   };
 
   constructor(props) {
@@ -62,13 +62,15 @@ class Comment extends React.Component {
             'italic',
             'strikethrough',
             'quotation',
-            'link'
+            'link',
           ]}
           content={contentFinal}
         />
         {canEdit && (
           <div>
-            <Button onClick={onCommentStartEdit}>Edit</Button>
+            {onCommentStartEdit && (
+              <Button onClick={onCommentStartEdit}>Edit</Button>
+            )}
             <Button
               onClick={() => {
                 onCommentDeleted(comment);
@@ -87,12 +89,12 @@ class Comment extends React.Component {
 Comment.propTypes = {
   centered: PropTypes.bool,
   pageId: PropTypes.number.isRequired,
-  className: PropTypes.string
+  className: PropTypes.string,
 };
 
 Comment.defaultProps = {
   centered: false,
-  className: null
+  className: null,
 };
 
 export default Comment;
