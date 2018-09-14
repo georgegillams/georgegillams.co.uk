@@ -7,3 +7,4 @@ export AdminComments from './Comments';
 export AdminPayments from './Payments';
 export AdminBlogs from './Blogs';
 export AdminBlogEditor from './BlogEditor';
+export AdminUsers from './Users';
