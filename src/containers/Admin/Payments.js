@@ -112,6 +112,8 @@ export default class Payments extends Component {
                   <br />
                   {`Monzo link ${payment.monzoMeLink}`}
                   <br />
+                  {`Deleted ${payment.deleted}`}
+                  <br />
                   <br />
                 </div>
               ))}
