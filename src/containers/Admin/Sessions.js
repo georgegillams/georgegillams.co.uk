@@ -8,7 +8,7 @@ import {
 } from 'redux/modules/sessions';
 import { bindActionCreators } from 'redux';
 import { asyncConnect } from 'redux-async-connect';
-import { AdminOnly, Loading, TagFilter, Button } from 'components';
+import { APIEntity, AdminOnly, Loading, TagFilter, Button } from 'components';
 import {
   NON_EMOJI_REGEX,
   CHECK_FOR_NEW_CONTENT_INTERVAL,
@@ -102,15 +102,12 @@ export default class Sessions extends Component {
             {sessions &&
               sessions.map(session => (
                 <div>
-                  {`Session id ${session.id}`}
-                  <br />
+                  <APIEntity entityType="Session" entity={session} />
                   {`Session key ${session.sessionKey}`}
                   <br />
                   {`Last active ${session.lastActive}`}
                   <br />
                   {`User ${session.userId}`}
-                  <br />
-                  {`Created ${session.timestamp}`}
                   <br />
                   <br />
                 </div>

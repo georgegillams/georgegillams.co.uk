@@ -110,6 +110,15 @@ export default class Admin extends Component {
                 title="Payments"
                 tallLayout
               />
+              <ArticleCard
+                layout={CARD_LAYOUTS.narrowCompact}
+                day={null}
+                month={null}
+                className={getClassName('pages__card')}
+                href="https://dashboard.heroku.com/apps/georgegillams/settings"
+                title="Heroku"
+                tallLayout
+              />
             </div>
           </Section>
         </AdminOnly>
