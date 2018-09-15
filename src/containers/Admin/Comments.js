@@ -8,7 +8,14 @@ import {
 } from 'redux/modules/comments';
 import { bindActionCreators } from 'redux';
 import { asyncConnect } from 'redux-async-connect';
-import { AdminOnly, Loading, TagFilter, Button, Comment } from 'components';
+import {
+  APIEntity,
+  AdminOnly,
+  Loading,
+  TagFilter,
+  Button,
+  Comment,
+} from 'components';
 import {
   NON_EMOJI_REGEX,
   CHECK_FOR_NEW_CONTENT_INTERVAL,
@@ -105,15 +112,10 @@ export default class Comments extends Component {
             {comments &&
               comments.map(comment => (
                 <div>
-                  {`Comment id ${comment.id}`}
-                  <br />
+                  <APIEntity entityType="Comment" entity={comment} />
                   {`Page id ${comment.pageId}`}
                   <br />
                   {`Comment ${comment.comment}`}
-                  <br />
-                  {`Created ${comment.timestamp}`}
-                  <br />
-                  {`Deleted ${comment.deleted}`}
                   <br />
                   <Comment user={user} comment={comment} />
                   <br />

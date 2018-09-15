@@ -14,6 +14,7 @@ import {
   TagFilter,
   Button,
   NotificationComp,
+  APIEntity,
 } from 'components';
 import {
   NON_EMOJI_REGEX,
@@ -114,17 +115,8 @@ export default class Notifications extends Component {
             {notifications &&
               notifications.map(notification => (
                 <div>
-                  {`Notification id ${notification.id}`}
-                  <br />
-                  {`Message ${notification.message}`}
-                  <br />
-                  {`Type ${notification.type}`}
-                  <br />
+                  <APIEntity entityType="Notification" entity={notification} />
                   {`Author ${notification.authorId}`}
-                  <br />
-                  {`Created ${notification.timestamp}`}
-                  <br />
-                  {`Deleted ${notification.deleted}`}
                   <br />
                   <NotificationComp type={notification.type}>
                     {notification.message}

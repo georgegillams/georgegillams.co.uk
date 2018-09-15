@@ -8,7 +8,7 @@ import {
 } from 'redux/modules/payments';
 import { bindActionCreators } from 'redux';
 import { asyncConnect } from 'redux-async-connect';
-import { AdminOnly, Loading, TagFilter, Button } from 'components';
+import { APIEntity, AdminOnly, Loading, TagFilter, Button } from 'components';
 import {
   NON_EMOJI_REGEX,
   CHECK_FOR_NEW_CONTENT_INTERVAL,
@@ -102,8 +102,7 @@ export default class Payments extends Component {
             {payments &&
               payments.map(payment => (
                 <div>
-                  {`Payment id ${payment.id}`}
-                  <br />
+                  <APIEntity entityType="Payment" entity={payment} />
                   {`Amount ${payment.amount}`}
                   <br />
                   {`Account No ${payment.accountNumber}`}
@@ -111,8 +110,6 @@ export default class Payments extends Component {
                   {`Sort code ${payment.sortCode}`}
                   <br />
                   {`Monzo link ${payment.monzoMeLink}`}
-                  <br />
-                  {`Deleted ${payment.deleted}`}
                   <br />
                   <br />
                 </div>
