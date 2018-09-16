@@ -8,7 +8,12 @@ import {
   load as loadAuth,
   update as updateUser,
 } from 'redux/modules/auth';
-import { SignUpForm, Section } from 'components';
+import {
+  LoggedInOnly,
+  NotificationComp,
+  SignUpForm,
+  Section,
+} from 'components';
 
 @asyncConnect([
   {
@@ -26,6 +31,7 @@ import { SignUpForm, Section } from 'components';
 @connect(
   state => ({
     user: state.auth.user,
+    updated: state.auth.updated,
     updateError: state.auth.updateError,
     // newCommentBeingCreated: state.comments.creating['newComment']
   }),
@@ -34,6 +40,7 @@ import { SignUpForm, Section } from 'components';
 export default class AccountEdit extends Component {
   static propTypes = {
     updateUser: PropTypes.func.isRequired,
+    updated: PropTypes.bool.isRequired,
     updateError: PropTypes.object.isRequired,
     user: PropTypes.func.isRequired,
   };
@@ -55,23 +62,30 @@ export default class AccountEdit extends Component {
   };
 
   render() {
-    const { updateError, updateUser, user, ...rest } = this.props;
+    const { updateError, updated, updateUser, user, ...rest } = this.props;
 
     return (
       <div className="container">
         <Section name="Edit account" />
         <Helmet title="Edit account" />
 
-        {updateError && (
-          <span style={{ color: 'red' }}>{registeringError.reason}</span>
+        {updated && (
+          <NotificationComp type="success">
+            Details successfully updated
+          </NotificationComp>
         )}
-        <SignUpForm
-          newUser={this.state.newUser}
-          onDataChanged={this.updateNewUser}
-          onSubmit={this.handleSubmit}
-          passwordNotRequired={true}
-          submitButtonText="Save"
-        />
+        {updateError && (
+          <NotificationComp type="error">{updateError.reason}</NotificationComp>
+        )}
+        <LoggedInOnly user={user}>
+          <SignUpForm
+            newUser={this.state.newUser}
+            onDataChanged={this.updateNewUser}
+            onSubmit={this.handleSubmit}
+            passwordNotRequired={true}
+            submitButtonText="Save"
+          />
+        </LoggedInOnly>
       </div>
     );
   }

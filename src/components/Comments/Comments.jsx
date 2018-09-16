@@ -1,9 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import CommentInput from './CommentInput';
-import CannotComment from './CannotComment';
 import Comment from './Comment';
-import { Section, SubSection } from '../index';
+import { LoggedInOnly, NotificationComp, Section, SubSection } from '../index';
 import { cssModules } from 'bpk-react-utils';
 
 import STYLES from './comments.scss';
@@ -22,7 +21,7 @@ class Comments extends React.Component {
     onNewCommentSubmit: PropTypes.func.isRequired,
     commentCreationError: PropTypes.string,
     pageId: PropTypes.number.isRequired,
-    className: PropTypes.string
+    className: PropTypes.string,
   };
 
   static defaultProps = {
@@ -32,7 +31,7 @@ class Comments extends React.Component {
     centered: false,
     commentCreationError: null,
     user: null,
-    className: null
+    className: null,
   };
 
   constructor(props) {
@@ -95,7 +94,7 @@ class Comments extends React.Component {
                     onCommentStartEdit(comment);
                   }}
                 />
-              )
+              ),
           )
         );
     }
@@ -103,9 +102,12 @@ class Comments extends React.Component {
     return (
       <Section name="Comments" className={classNameFinal.join(' ')}>
         {commentsComponent}
-        {!user && <CannotComment />}
-        {commentCreationError && <div>Comment creation error</div>}
-        {user && (
+        {commentCreationError && (
+          <NotificationComp type="error">
+            Comment creation error
+          </NotificationComp>
+        )}
+        <LoggedInOnly user={user} activityName="comment">
           <CommentInput
             newCommentBeingCreated={newCommentBeingCreated}
             comment={newComment}
@@ -114,7 +116,7 @@ class Comments extends React.Component {
             submitButtonText="Submit comment"
             centered={centered}
           />
-        )}
+        </LoggedInOnly>
       </Section>
     );
   }

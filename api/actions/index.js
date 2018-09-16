@@ -18,4 +18,3 @@ export * as sessions from './sessions/index';
 export * as survey from './survey/index';
 export * as users from './users/index';
 export * as widget from './widget/index';
-export * as staticfiles from './staticfiles/index';
