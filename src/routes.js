@@ -10,6 +10,7 @@ import {
   Widgets,
   About,
   Account,
+  AccountEdit,
   PaymentViewer,
   SignUp,
   Blogs,
@@ -127,6 +128,7 @@ export default store => {
       <Route path="design/components" component={DesignComponents} />
       <Route path="design/typography" component={DesignTypography} />
       <Route path="account" component={Account} />
+      <Route path="account/edit" component={AccountEdit} />
       <Route path="pagination" component={Pagination} />
       <Route path="photography" component={Photography} />
       <Route path="sign-up" component={SignUp} />

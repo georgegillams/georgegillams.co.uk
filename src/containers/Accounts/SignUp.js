@@ -3,28 +3,28 @@ import { connect } from 'react-redux';
 import Helmet from 'react-helmet';
 import { bindActionCreators } from 'redux';
 import { createUser } from 'redux/modules/auth';
-import { SignUpForm, Section } from 'components';
+import { NotificationComp, SignUpForm, Section } from 'components';
 
 @connect(
   state => ({
     newDataAvailable: state.sessions.newDataAvailable,
-    registeringError: state.auth.registeringError
+    registeringError: state.auth.registeringError,
     // newCommentBeingCreated: state.comments.creating['newComment']
   }),
-  dispatch => bindActionCreators({ createUser }, dispatch)
+  dispatch => bindActionCreators({ createUser }, dispatch),
 )
 export default class SignUp extends Component {
   static propTypes = {
     newDataAvailable: PropTypes.bool.isRequired,
     registeringError: PropTypes.object.isRequired,
-    createUser: PropTypes.func.isRequired
+    createUser: PropTypes.func.isRequired,
   };
 
   constructor(props) {
     super(props);
 
     this.state = {
-      newUser: { uname: '', name: '', email: '', password: '' }
+      newUser: { uname: '', name: '', email: '', password: '' },
     };
   }
 
@@ -45,7 +45,9 @@ export default class SignUp extends Component {
         <Helmet title="Signup" />
 
         {registeringError && (
-          <span style={{ color: 'red' }}>{registeringError.reason}</span>
+          <NotificationComp type="error">
+            {registeringError.reason}
+          </NotificationComp>
         )}
         <SignUpForm
           newUser={this.state.newUser}

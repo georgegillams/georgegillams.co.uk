@@ -9,13 +9,15 @@ class APIEntity extends Component {
 
   render() {
     const { entityType, entity } = this.props;
-    const { id, timestamp, deleted } = entity;
+    const { id, timestamp, deleted, authorId } = entity;
 
     return (
       <Section name={`${entityType || 'Entity'} ${id}`}>
         {`Created ${timestamp}`}
         <br />
         {`Deleted ${deleted}`}
+        <br />
+        {`Created by ${authorId}`}
       </Section>
     );
   }

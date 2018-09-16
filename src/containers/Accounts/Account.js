@@ -12,7 +12,7 @@ import {
   logoutAll,
   requestMagicLink,
 } from 'redux/modules/auth';
-import { LoginForm, Section, Button } from 'components';
+import { User, LoginForm, Section, NotificaitonComp, Button } from 'components';
 import { cssModules } from 'bpk-react-utils';
 
 import STYLES from '../pages.scss';
@@ -91,14 +91,14 @@ export default class Login extends Component {
 
     return (
       <div className="container">
-        <Helmet title="Log in" />
+        <Helmet title="Account" />
         {loginError && (
-          <span style={{ color: 'red' }}>{loginError.reason}</span>
+          <NotificationComp type="error">{loginError.reason}</NotificationComp>
         )}
         {magicLinkRequested && (
-          <span style={{ color: 'darkgreen' }}>
+          <NotificationComp type="success">
             A magic link has been sent to the email provided.
-          </span>
+          </NotificationComp>
         )}
 
         {!user && (
@@ -112,23 +112,32 @@ export default class Login extends Component {
           </Section>
         )}
         {user && (
-          <Section name="Log out">
+          <div>
+            <User welcomeMessage={`Your account,`} user={user} />
             <Button
               className={getClassName('pages__component')}
-              destructive
-              onClick={this.logout}
+              href={'/account/edit'}
             >
-              Logout
+              Edit account
             </Button>
-            <br />
-            <Button
-              className={getClassName('pages__component')}
-              destructive
-              onClick={this.logoutAll}
-            >
-              Logout from all devices
-            </Button>
-          </Section>
+            <Section name="Log out">
+              <Button
+                className={getClassName('pages__component')}
+                destructive
+                onClick={this.logout}
+              >
+                Logout
+              </Button>
+              <br />
+              <Button
+                className={getClassName('pages__component')}
+                destructive
+                onClick={this.logoutAll}
+              >
+                Logout from all devices
+              </Button>
+            </Section>
+          </div>
         )}
       </div>
     );

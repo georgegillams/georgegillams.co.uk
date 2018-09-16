@@ -8,7 +8,14 @@ import {
 } from 'redux/modules/auth';
 import { bindActionCreators } from 'redux';
 import { asyncConnect } from 'redux-async-connect';
-import { APIEntity, AdminOnly, Loading, TagFilter, Button } from 'components';
+import {
+  APIEntity,
+  User,
+  AdminOnly,
+  Loading,
+  TagFilter,
+  Button,
+} from 'components';
 import {
   NON_EMOJI_REGEX,
   CHECK_FOR_NEW_CONTENT_INTERVAL,
@@ -103,17 +110,7 @@ export default class Users extends Component {
               users.map(user => (
                 <div>
                   <APIEntity entityType="User" entity={user} />
-                  {`Name ${user.name}`}
-                  <br />
-                  {`Username ${user.uname}`}
-                  <br />
-                  {`Email ${user.email}`}
-                  <br />
-                  {`Email fingerprint ${user.emailFingerprint}`}
-                  <br />
-                  {`Email verified ${user.emailVerified}`}
-                  <br />
-                  <br />
+                  <User user={user} />
                 </div>
               ))}
           </div>

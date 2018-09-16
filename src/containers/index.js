@@ -12,6 +12,7 @@ export DesignComponents from './Design/DesignComponents';
 export DesignPrivacyPolicy from './Design/DesignPrivacyPolicy';
 export Home from './Home/Home';
 export Account from './Accounts/Account';
+export AccountEdit from './Accounts/AccountEdit';
 export LoginSuccess from './LoginSuccess/LoginSuccess';
 export NotFound from './NotFound/NotFound';
 export Pagination from './Pagination/Pagination';
