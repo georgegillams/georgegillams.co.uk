@@ -1,12 +1,11 @@
 import { datumCreate } from '../datum';
 import authentication from '../../utils/authentication';
-import { UNAUTHORISED_WRITE } from '../../../src/utils/constants';
 
 export default function create(req) {
   return new Promise((resolve, reject) => {
     authentication(req).then(
       user => {
-        resolve(datumCreate({ redisKey: 'blogs', user: user }, req));
+        resolve(datumCreate({ redisKey: 'profiles', user: user }, req));
       },
       err => reject(err),
     );

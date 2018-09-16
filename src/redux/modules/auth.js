@@ -1,6 +1,9 @@
 const LOAD = 'redux-example/auth/LOAD';
 const LOAD_SUCCESS = 'redux-example/auth/LOAD_SUCCESS';
 const LOAD_FAIL = 'redux-example/auth/LOAD_FAIL';
+const UPDATE = 'redux-example/auth/UPDATE';
+const UPDATE_SUCCESS = 'redux-example/auth/UPDATE_SUCCESS';
+const UPDATE_FAIL = 'redux-example/auth/UPDATE_FAIL';
 const LOAD_ALL = 'redux-example/auth/LOAD_ALL';
 const LOAD_ALL_SUCCESS = 'redux-example/auth/LOAD_ALL_SUCCESS';
 const LOAD_ALL_FAIL = 'redux-example/auth/LOAD_ALL_FAIL';
@@ -48,6 +51,26 @@ export default function reducer(state = initialState, action = {}) {
         loaded: false,
         data: null,
         error: action.error,
+      };
+    case UPDATE:
+      return {
+        ...state,
+        updating: true,
+      };
+    case UPDATE_SUCCESS:
+      return {
+        ...state,
+        updating: false,
+        updated: true,
+        data: action.result,
+      };
+    case UPDATE_FAIL:
+      return {
+        ...state,
+        updating: false,
+        updated: false,
+        data: null,
+        updateError: action.error,
       };
     case LOAD:
       return {
@@ -255,6 +278,17 @@ export function createUser(user) {
     types: [REGISTER, REGISTER_SUCCESS, REGISTER_FAIL],
     promise: client =>
       client.post('/users/create', {
+        params: { 'Content-Type': 'application/json' },
+        data: user,
+      }),
+  };
+}
+
+export function update(user) {
+  return {
+    types: [UPDATE, UPDATE_SUCCESS, UPDATE_FAIL],
+    promise: client =>
+      client.post('/users/update', {
         params: { 'Content-Type': 'application/json' },
         data: user,
       }),
