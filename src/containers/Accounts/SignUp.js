@@ -9,6 +9,7 @@ import { NotificationComp, SignUpForm, Section } from 'components';
   state => ({
     newDataAvailable: state.sessions.newDataAvailable,
     registeringError: state.auth.registeringError,
+    registered: state.auth.registered,
     // newCommentBeingCreated: state.comments.creating['newComment']
   }),
   dispatch => bindActionCreators({ createUser }, dispatch),
@@ -17,6 +18,7 @@ export default class SignUp extends Component {
   static propTypes = {
     newDataAvailable: PropTypes.bool.isRequired,
     registeringError: PropTypes.object.isRequired,
+    registered: PropTypes.object.isRequired,
     createUser: PropTypes.func.isRequired,
   };
 
@@ -37,13 +39,23 @@ export default class SignUp extends Component {
   };
 
   render() {
-    const { registeringError, newDataAvailable, ...rest } = this.props;
+    const {
+      registered,
+      registeringError,
+      newDataAvailable,
+      ...rest
+    } = this.props;
 
     return (
       <div className="container">
         <Section name="SignUp" />
         <Helmet title="Signup" />
 
+        {registered && (
+          <NotificationComp type="success">
+            {'Registration successful. [You can now login](/account)'}
+          </NotificationComp>
+        )}
         {registeringError && (
           <NotificationComp type="error">
             {registeringError.reason}

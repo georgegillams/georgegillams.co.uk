@@ -1,4 +1,4 @@
-export AdminOnly, { APIEntity, User } from './Admin';
+export AdminOnly, { APIEntity, LoggedInOnly, User } from './Auth';
 export ArticleCard, { CARD_LAYOUTS } from './Cards';
 export BlogsList from './Blogs';
 export Button from './Button';
