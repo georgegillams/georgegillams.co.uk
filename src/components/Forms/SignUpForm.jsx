@@ -19,6 +19,7 @@ class SignUpForm extends React.Component {
     newUser: PropTypes.object.isRequired,
     onDataChanged: PropTypes.func.isRequired,
     onSubmit: PropTypes.func.isRequired,
+    submitButtonText: PropTypes.string,
     centered: PropTypes.bool,
     pageId: PropTypes.number.isRequired,
     className: PropTypes.string,
@@ -26,6 +27,7 @@ class SignUpForm extends React.Component {
 
   static defaultProps = {
     centered: false,
+    submitButtonText: null,
     className: null,
   };
 
@@ -58,7 +60,15 @@ class SignUpForm extends React.Component {
   };
 
   render() {
-    const { className, newUser, onDataChanged, onSubmit, ...rest } = this.props;
+    const {
+      className,
+      newUser,
+      onDataChanged,
+      onSubmit,
+      submitButtonText,
+      passwordNotRequired,
+      ...rest
+    } = this.props;
 
     const classNameFinal = [];
     if (className) classNameFinal.push(className);
@@ -95,7 +105,7 @@ class SignUpForm extends React.Component {
         <BpkInput
           className={getClassName('forms__component')}
           type={INPUT_TYPES.password}
-          valid={newUser.password.match(PASSWORD_REGEX)}
+          valid={newUser.password && newUser.password.match(PASSWORD_REGEX)}
           id="password"
           name="password"
           value={newUser.password}
@@ -113,11 +123,11 @@ class SignUpForm extends React.Component {
             !newUser.uname.match(UNAME_REGEX) ||
             !newUser.email ||
             !newUser.email.match(EMAIL_REGEX) ||
-            !newUser.password ||
-            !newUser.password.match(PASSWORD_REGEX)
+            (!passwordNotRequired &&
+              (!newUser.password || !newUser.password.match(PASSWORD_REGEX)))
           }
         >
-          Register
+          {submitButtonText || 'Register'}
         </Button>
         <br />
         <TextLink href="/account">Login </TextLink>
