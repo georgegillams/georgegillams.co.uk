@@ -12,7 +12,7 @@ import {
   logoutAll,
   requestMagicLink,
 } from 'redux/modules/auth';
-import { User, LoginForm, Section, NotificaitonComp, Button } from 'components';
+import { User, LoginForm, Section, NotificationComp, Button } from 'components';
 import { cssModules } from 'bpk-react-utils';
 
 import STYLES from '../pages.scss';
@@ -92,17 +92,18 @@ export default class Login extends Component {
     return (
       <div className="container">
         <Helmet title="Account" />
-        {loginError && (
-          <NotificationComp type="error">{loginError.reason}</NotificationComp>
-        )}
-        {magicLinkRequested && (
-          <NotificationComp type="success">
-            A magic link has been sent to the email provided.
-          </NotificationComp>
-        )}
-
         {!user && (
           <Section name="Log in">
+            {loginError && (
+              <NotificationComp type="error">
+                {loginError.reason}
+              </NotificationComp>
+            )}
+            {magicLinkRequested && (
+              <NotificationComp type="success">
+                A magic link has been sent to the email provided.
+              </NotificationComp>
+            )}
             <LoginForm
               credentials={this.state.credentials}
               onDataChanged={this.updateCredentials}

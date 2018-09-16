@@ -56,6 +56,7 @@ export default function reducer(state = initialState, action = {}) {
       return {
         ...state,
         updating: true,
+        updated: null,
       };
     case UPDATE_SUCCESS:
       return {
@@ -101,6 +102,7 @@ export default function reducer(state = initialState, action = {}) {
       return {
         ...state,
         registering: false,
+        registered: true,
         user: null,
         registeringError: null,
       };
@@ -108,6 +110,7 @@ export default function reducer(state = initialState, action = {}) {
       return {
         ...state,
         registering: false,
+        registered: false,
         user: null,
         registeringError: action.error,
       };
@@ -115,6 +118,7 @@ export default function reducer(state = initialState, action = {}) {
       return {
         ...state,
         loggingIn: true,
+        loginError: null,
       };
     case REQUEST_MAGIC_SUCCESS:
       return {
