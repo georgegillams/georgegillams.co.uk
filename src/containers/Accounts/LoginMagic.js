@@ -6,59 +6,80 @@ import { asyncConnect } from 'redux-async-connect';
 import {
   isLoaded as isAuthLoaded,
   loginMagic,
-  load as loadAuth
+  load as loadAuth,
 } from 'redux/modules/auth';
-import { Section } from 'components';
+import { Section, SubSection } from 'components';
 
 @asyncConnect([
   {
     promise: ({ params, store: { dispatch, getState } }) => {
       const promises = [];
 
-      promises.push(dispatch(loginMagic(params.key)));
       if (!isAuthLoaded(getState())) {
         promises.push(dispatch(loadAuth()));
       }
 
       return Promise.all(promises);
-    }
-  }
+    },
+  },
 ])
 @connect(
   state => ({
     newDataAvailable: state.sessions.newDataAvailable,
     loggingIn: state.auth.loggingIn,
-    user: state.auth.user
+    user: state.auth.user,
+    session: state.sessions.session,
     // newCommentBeingCreated: state.comments.creating['newComment']
   }),
-  dispatch => bindActionCreators({}, dispatch)
+  dispatch => bindActionCreators({ loginMagic, loadAuth }, dispatch),
 )
 export default class LoginMagic extends Component {
   static propTypes = {
     newDataAvailable: PropTypes.bool.isRequired,
     loggingIn: PropTypes.bool.isRequired,
-    user: PropTypes.object
+    user: PropTypes.object,
+    session: PropTypes.string,
   };
 
   static defaultProps = {
-    user: null
+    user: null,
+    session: null,
   };
 
   constructor(props) {
     super(props);
 
-    this.state = {};
+    this.state = {
+      attemptingLogin: true,
+    };
   }
 
+  componentDidMount = () => {
+    const attemptLogin = () => {
+      if (this.props.session && this.state.attemptingLogin) {
+        this.props.loginMagic(this.props.params.key);
+        this.setState({ attemptingLogin: false });
+        clearInterval(loginInterval);
+      }
+    };
+
+    const loginInterval = setInterval(attemptLogin, 500);
+  };
+
   render() {
-    const { user, loggingIn, ...rest } = this.props;
+    const { user, session, loggingIn, ...rest } = this.props;
 
     return (
       <div className="container">
         <Section name="Magic log in" />
         <Helmet title="Magic log in" />
-        {user && <Section name="You're now logged in!" />}
-        {!loggingIn && !user && <Section name="Invalid key." />}
+        {this.state.attemptingLogin && (
+          <SubSection noAnchor name="Logging in..." />
+        )}
+        {user && <SubSection noAnchor name="You're now logged in!" />}
+        {!this.state.attemptingLogin &&
+          !loggingIn &&
+          !user && <SubSection noAnchor name="Invalid key." />}
       </div>
     );
   }

@@ -6,6 +6,7 @@ const standardAttributes = [
   { attribute: 'apiKey', pattern: PASSWORD_REGEX },
   { attribute: 'sessionKey', pattern: ID_REGEX },
   { attribute: 'timestamp', pattern: INT_REGEX },
+  { attribute: 'session', pattern: ID_REGEX },
 ];
 
 function generateNewComponent(component, req, allAllowedAttributes) {
@@ -33,5 +34,6 @@ export default function reqSecure(req, allowedAttributes) {
   req.body = generateNewComponent('body', req, allAllowedAttributes);
   req.query = generateNewComponent('query', req, allAllowedAttributes);
   req.headers = generateNewComponent('headers', req, allAllowedAttributes);
+  req.cookies = generateNewComponent('cookies', req, allAllowedAttributes);
   return req;
 }

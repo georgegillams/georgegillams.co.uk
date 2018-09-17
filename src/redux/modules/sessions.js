@@ -14,6 +14,9 @@ const SAVE_SUCCESS = 'redux-example/sessions/SAVE_SUCCESS';
 const SAVE_FAIL = 'redux-example/sessions/SAVE_FAIL';
 const UPDATE_NEW_DATA_AVAILABLE =
   'redux-example/sessions/UPDATE_NEW_DATA_AVAILABLE';
+const EXPOSE_SESSION = 'redux-example/sessions/EXPOSE_SESSION';
+const EXPOSE_SESSION_SUCCESS = 'redux-example/sessions/EXPOSE_SESSION_SUCCESS';
+const EXPOSE_SESSION_FAIL = 'redux-example/sessions/EXPOSE_SESSION_FAIL';
 
 const initialState = {
   loaded: false,
@@ -139,6 +142,11 @@ export default function reducer(state = initialState, action = {}) {
         newDataAvailable: action.newValue,
       };
       return newState;
+    case EXPOSE_SESSION:
+      return {
+        ...state,
+        session: action.session,
+      };
     default:
       return state;
   }
@@ -196,6 +204,13 @@ export function save(notification) {
       client.post('/sessions/update', {
         data: notification,
       }),
+  };
+}
+
+export function exposeSession(session) {
+  return {
+    types: [EXPOSE_SESSION, EXPOSE_SESSION_SUCCESS, EXPOSE_SESSION_FAIL],
+    session: session,
   };
 }
 

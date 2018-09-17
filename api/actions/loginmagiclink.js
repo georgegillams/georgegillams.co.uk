@@ -7,6 +7,8 @@ export default function loginmagiclink(req) {
   const reqSecured = reqSecure(req, usersAllowedAttributes);
   return new Promise((resolve, reject) => {
     const { magicLinkKey } = reqSecured.body;
+    console.log(`req.cookies.session`, req.cookies.session);
+    console.log(`magicLinkKey`, magicLinkKey);
     datumLoad({ redisKey: 'magiclinks' }).then(magicLinkData => {
       const { existingValue: magicLink } = find(
         magicLinkData,
