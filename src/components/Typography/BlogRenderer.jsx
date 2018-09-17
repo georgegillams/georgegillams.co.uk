@@ -52,7 +52,6 @@ const BlogRenderer = props => {
   } catch (error) {
     console.log(error);
   }
-  console.log(`references2`, references2);
 
   const tags = blog.tags.split ? blog.tags.split(', ') : blog.tags || [];
 
@@ -113,7 +112,7 @@ BlogRenderer.propTypes = {
   elementClassName: PropTypes.string,
   className: PropTypes.string,
   light: PropTypes.bool,
-  noAnchor: PropTypes.bool
+  noAnchor: PropTypes.bool,
 };
 
 BlogRenderer.defaultProps = {
@@ -122,7 +121,7 @@ BlogRenderer.defaultProps = {
   showEditLink: false,
   className: null,
   light: false,
-  noAnchor: false
+  noAnchor: false,
 };
 
 export default BlogRenderer;

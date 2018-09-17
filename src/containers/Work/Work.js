@@ -63,6 +63,19 @@ export default class Work extends Component {
             products.
             <br />
             <br />
+            <SubSection name="Party parrot">
+              As a developer and advocate for open source, having a contribution
+              to the{' '}
+              <TextLink href="https://cultofthepartyparrot.com/">
+                official party parrot repo
+              </TextLink>{' '}
+              was a proud moment.
+              <br />
+              <img
+                width={60}
+                src="https://cultofthepartyparrot.com/parrots/hd/opensourceparrot.gif"
+              />
+            </SubSection>
             <SubSection name="Backpack Design System">
               <TextLink external href="https://backpack.github.io/">
                 Backpack{' '}

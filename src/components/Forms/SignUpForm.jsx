@@ -129,8 +129,6 @@ class SignUpForm extends React.Component {
         >
           {submitButtonText || 'Register'}
         </Button>
-        <br />
-        <TextLink href="/account">Login </TextLink>
       </div>
     );
   }
