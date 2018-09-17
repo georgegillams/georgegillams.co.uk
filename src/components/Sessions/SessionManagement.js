@@ -59,6 +59,7 @@ const getClassName = cssModules(STYLES);
 export default class SessionManagement extends Component {
   static propTypes = {
     contentLastUpdatedTimestamp: PropTypes.number.isRequired,
+    exposeSession: PropTypes.func.isRequired,
     loadAuth: PropTypes.func.isRequired,
     updateNewDataAvailable: PropTypes.func.isRequired,
     sessions: PropTypes.arrayOf(PropTypes.object),
