@@ -7,7 +7,8 @@ import Modal from 'react-responsive-modal';
 import {
   createSession,
   keepAlive,
-  updateNewDataAvailable
+  updateNewDataAvailable,
+  exposeSession,
 } from 'redux/modules/sessions';
 import { isLoaded as isAuthLoaded, load as loadAuth } from 'redux/modules/auth';
 import { asyncConnect } from 'redux-async-connect';
@@ -15,7 +16,7 @@ import {
   COOKIE_NAMES,
   APP_VERSION,
   COMPONENT_RELOAD_INTERVAL,
-  CHECK_FOR_NEW_CONTENT_INTERVAL
+  CHECK_FOR_NEW_CONTENT_INTERVAL,
 } from '../../utils/constants';
 import Button from '../Button/Button';
 import Section from '../Typography/Section';
@@ -35,13 +36,13 @@ const getClassName = cssModules(STYLES);
       }
 
       return Promise.all(promises);
-    }
-  }
+    },
+  },
 ])
 @connect(
   state => ({
     contentLastUpdatedTimestamp: state.sessions.contentLastUpdatedTimestamp,
-    sessions: state.sessions.data
+    sessions: state.sessions.data,
   }),
   dispatch =>
     bindActionCreators(
@@ -49,10 +50,11 @@ const getClassName = cssModules(STYLES);
         loadAuth,
         keepAlive,
         createSession,
-        updateNewDataAvailable
+        updateNewDataAvailable,
+        exposeSession,
       },
-      dispatch
-    )
+      dispatch,
+    ),
 )
 export default class SessionManagement extends Component {
   static propTypes = {
@@ -62,11 +64,11 @@ export default class SessionManagement extends Component {
     sessions: PropTypes.arrayOf(PropTypes.object),
     keepAlive: PropTypes.func.isRequired,
     createSession: PropTypes.func.isRequired,
-    className: PropTypes.string
+    className: PropTypes.string,
   };
 
   static defaultProps = {
-    className: null
+    className: null,
   };
 
   constructor(props) {
@@ -78,7 +80,7 @@ export default class SessionManagement extends Component {
       cookiesAccepted: false,
       localContentRefreshedTimestamp: 0,
       serverContentUpdateTimestamp: 0,
-      shouldReloadNewData: false
+      shouldReloadNewData: false,
     };
   }
 
@@ -119,7 +121,7 @@ export default class SessionManagement extends Component {
         res => {
           resolve(res.error ? false : true);
         },
-        err => resolve(false)
+        err => resolve(false),
       );
     });
   };
@@ -138,17 +140,18 @@ export default class SessionManagement extends Component {
       const session = args.sessionKey;
       cookie.save('session', session, {
         path: '/',
-        expires: new Date(Date.now() + 24 * 60 * 60 * 100 * 1000)
+        expires: new Date(Date.now() + 24 * 60 * 60 * 100 * 1000),
       });
       cookie.save('version', APP_VERSION, {
         path: '/',
-        expires: new Date(Date.now() + 24 * 60 * 60 * 100 * 1000)
+        expires: new Date(Date.now() + 24 * 60 * 60 * 100 * 1000),
       });
       this.startKeepAlive(session);
     });
   };
 
   startKeepAlive = session => {
+    this.props.exposeSession(session);
     // set interval to ping keep-alive with sessionKey
     this.interval = setInterval(() => {
       this.props.keepAlive(session).then(serverContentUpdateTimestamp => {
@@ -162,14 +165,14 @@ export default class SessionManagement extends Component {
           // Render "Reloading notification"
           this.setState({
             shouldReloadNewData: true,
-            serverContentUpdateTimestamp: serverContentUpdateTimestamp
+            serverContentUpdateTimestamp: serverContentUpdateTimestamp,
           });
           this.props.updateNewDataAvailable(true);
           this.props.loadAuth();
           setTimeout(() => {
             this.setState({
               shouldReloadNewData: false,
-              localContentRefreshedTimestamp: serverContentUpdateTimestamp
+              localContentRefreshedTimestamp: serverContentUpdateTimestamp,
             });
             this.props.updateNewDataAvailable(false);
           }, COMPONENT_RELOAD_INTERVAL);

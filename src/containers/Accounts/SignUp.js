@@ -3,7 +3,7 @@ import { connect } from 'react-redux';
 import Helmet from 'react-helmet';
 import { bindActionCreators } from 'redux';
 import { createUser } from 'redux/modules/auth';
-import { NotificationComp, SignUpForm, Section } from 'components';
+import { TextLink, NotificationComp, SignUpForm, Section } from 'components';
 
 @connect(
   state => ({
@@ -66,6 +66,8 @@ export default class SignUp extends Component {
           onDataChanged={this.updateNewUser}
           onSubmit={this.handleSubmit}
         />
+        <br />
+        <TextLink href="/account">Login </TextLink>
       </div>
     );
   }
