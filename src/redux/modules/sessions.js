@@ -178,7 +178,6 @@ export function load() {
 export function updateNewDataAvailable(newValue) {
   // console.log(`updatingTimestamp: ${newTimestamp}`);
   return {
-    types: [UPDATE_NEW_DATA_AVAILABLE],
     type: UPDATE_NEW_DATA_AVAILABLE,
     newValue: newValue,
   };
@@ -209,7 +208,7 @@ export function save(notification) {
 
 export function exposeSession(session) {
   return {
-    types: [EXPOSE_SESSION, EXPOSE_SESSION_SUCCESS, EXPOSE_SESSION_FAIL],
+    type: EXPOSE_SESSION,
     session: session,
   };
 }

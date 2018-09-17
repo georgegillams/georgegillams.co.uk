@@ -59,7 +59,7 @@ export default class LoginMagic extends Component {
       if (this.props.session && this.state.attemptingLogin) {
         this.props.loginMagic(this.props.params.key);
         this.setState({ attemptingLogin: false });
-        clearInterval(loginInterval);
+        // clearInterval(loginInterval);
       }
     };
 
