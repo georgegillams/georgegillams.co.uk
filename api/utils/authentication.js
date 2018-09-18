@@ -1,5 +1,5 @@
-import { datumLoad } from "../actions/datum";
-import { find } from "./find";
+import { datumLoad } from '../actions/datum';
+import { find } from './find';
 const secretApiKey = process.env.SECRET_API_KEY;
 
 export default function authentication(req) {
@@ -8,23 +8,23 @@ export default function authentication(req) {
     const apiKey = req.headers.apikey;
     if (apiKey && apiKey === secretApiKey) {
       resolve({
-        id: "direct_API_invocator",
+        id: 'direct_API_invocator',
         admin: true,
-        uname: "direct_API_invocation"
+        uname: 'direct_API_invocation',
       });
     } else if (sessionKey) {
       // Using datum load as we want to avoid invoking authentication when loading users data here
-      datumLoad({ redisKey: "users" }).then(userData => {
-        datumLoad({ redisKey: "sessions" }).then(sessionData => {
+      datumLoad({ redisKey: 'users' }).then(userData => {
+        datumLoad({ redisKey: 'sessions' }).then(sessionData => {
           const { existingValue: userSession } = find(
             sessionData,
             sessionKey,
-            "sessionKey"
+            'sessionKey',
           );
           if (userSession) {
             const { existingValue: userProfile } = find(
               userData,
-              userSession.userId
+              userSession.userId,
             );
             if (userProfile) {
               resolve(userProfile);

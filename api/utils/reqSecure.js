@@ -3,8 +3,7 @@ import { INT_REGEX, ID_REGEX, PASSWORD_REGEX } from '../../src/utils/constants';
 const standardAttributes = [
   { attribute: 'deleted', pattern: 'BOOL' },
   { attribute: 'id', pattern: ID_REGEX },
-  { attribute: 'apiKey', pattern: PASSWORD_REGEX },
-  { attribute: 'sessionKey', pattern: ID_REGEX },
+  { attribute: 'apikey', pattern: PASSWORD_REGEX },
   { attribute: 'timestamp', pattern: INT_REGEX },
   { attribute: 'session', pattern: ID_REGEX },
 ];
