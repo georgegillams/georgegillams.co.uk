@@ -11,6 +11,7 @@ const paymentsAllowedAttributes = [
   { attribute: 'accountNumber', pattern: INT_REGEX },
   { attribute: 'monzoMeLink', pattern: MONZO_ME_REGEX },
   { attribute: 'reference', pattern: STRING_REGEX },
+  { attribute: 'status', pattern: STRING_REGEX },
 ];
 
 export default paymentsAllowedAttributes;
