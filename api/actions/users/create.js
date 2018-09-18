@@ -14,6 +14,7 @@ export default function create(req) {
       user => {
         datumLoad({ redisKey: 'users' }).then(userData => {
           // Only admins can create admins!
+          console.log(`user`, user);
           if ((user && user.admin) || !reqSecured.body.admin) {
             // If a user already has the username, we cannot allow a new one to be created
             const { existingValue: userWithSameUname } = find(
