@@ -5,6 +5,8 @@ import { isLoaded as isAuthLoaded, load as loadAuth } from 'redux/modules/auth';
 import {
   isLoaded as isPaymentsLoaded,
   load as loadPayments,
+  save as updatePayment,
+  remove as deletePayment,
 } from 'redux/modules/payments';
 import { bindActionCreators } from 'redux';
 import { asyncConnect } from 'redux-async-connect';
@@ -41,12 +43,18 @@ const getClassName = cssModules(STYLES);
     payments: state.payments ? state.payments.data : null,
     user: state.auth.user,
   }),
-  dispatch => bindActionCreators({ loadPayments }, dispatch),
+  dispatch =>
+    bindActionCreators(
+      { deletePayment, updatePayment, loadPayments },
+      dispatch,
+    ),
 )
 export default class Payments extends Component {
   static propTypes = {
     newDataAvailable: PropTypes.bool.isRequired,
     payments: PropTypes.arrayOf(PropTypes.object),
+    deletePayment: PropTypes.func.isRequired,
+    updatePayment: PropTypes.func.isRequired,
     loadPayments: PropTypes.func.isRequired,
     className: PropTypes.string,
   };
@@ -78,8 +86,33 @@ export default class Payments extends Component {
     }
   };
 
+  completePayment = payment => {
+    this.props.updatePayment({ ...payment, ...{ status: 'completed' } });
+  };
+
+  rejectPayment = payment => {
+    this.props.updatePayment({ ...payment, ...{ status: 'rejected' } });
+  };
+
+  authorisePayment = payment => {
+    console.log(`uthorising`);
+    this.props.updatePayment({ ...payment, ...{ status: 'authorised' } });
+  };
+
+  deletePayment = payment => {
+    this.props.deletePayment(payment);
+  };
+
   render() {
-    const { user, payments, loadPayments, className, ...rest } = this.props; // eslint-disable-line no-shadow
+    const {
+      user,
+      payments,
+      deletePayment,
+      updatePayment,
+      loadPayments,
+      className,
+      ...rest
+    } = this.props; // eslint-disable-line no-shadow
 
     const outerClassNameFinal = [getClassName('pages__container')];
 
@@ -111,6 +144,42 @@ export default class Payments extends Component {
                   <br />
                   {`Monzo link ${payment.monzoMeLink}`}
                   <br />
+                  {`Status ${payment.status}`}
+                  <br />
+                  <br />
+                  <Button
+                    disabled={payment.status === 'authorised'}
+                    onClick={() => {
+                      this.authorisePayment(payment);
+                    }}
+                  >
+                    Authorise payment
+                  </Button>
+                  <Button
+                    disabled={payment.status === 'completed'}
+                    onClick={() => {
+                      this.completePayment(payment);
+                    }}
+                  >
+                    Complete payment
+                  </Button>
+                  <Button
+                    disabled={payment.status === 'rejected'}
+                    destructive
+                    onClick={() => {
+                      this.rejectPayment(payment);
+                    }}
+                  >
+                    Reject payment
+                  </Button>
+                  <Button
+                    destructive
+                    onClick={() => {
+                      this.deletePayment(payment);
+                    }}
+                  >
+                    Delete payment
+                  </Button>
                   <br />
                 </div>
               ))}

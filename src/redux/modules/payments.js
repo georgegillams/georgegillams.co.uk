@@ -23,7 +23,7 @@ const initialState = {
   deleting: {},
   saveError: {},
   deletionError: {},
-  createError: {}
+  createError: {},
 };
 
 export default function reducer(state = initialState, action = {}) {
@@ -31,7 +31,7 @@ export default function reducer(state = initialState, action = {}) {
     case SINGLE_LOAD:
       return {
         ...state,
-        singleLoading: true
+        singleLoading: true,
       };
     case SINGLE_LOAD_SUCCESS:
       return {
@@ -39,7 +39,7 @@ export default function reducer(state = initialState, action = {}) {
         singleLoading: false,
         singleLoaded: true,
         singleData: action.result,
-        singleError: null
+        singleError: null,
       };
     case SINGLE_LOAD_FAIL:
       return {
@@ -47,12 +47,12 @@ export default function reducer(state = initialState, action = {}) {
         singleLoading: false,
         singleLoaded: false,
         singleData: null,
-        singleError: action.error
+        singleError: action.error,
       };
     case LOAD:
       return {
         ...state,
-        loading: true
+        loading: true,
       };
     case LOAD_SUCCESS:
       return {
@@ -60,7 +60,7 @@ export default function reducer(state = initialState, action = {}) {
         loading: false,
         loaded: true,
         data: action.result,
-        error: null
+        error: null,
       };
     case LOAD_FAIL:
       return {
@@ -68,23 +68,23 @@ export default function reducer(state = initialState, action = {}) {
         loading: false,
         loaded: false,
         data: null,
-        error: action.error
+        error: action.error,
       };
     case EDIT_START:
       return {
         ...state,
         editing: {
           ...state.editing,
-          [action.id]: true
-        }
+          [action.id]: true,
+        },
       };
     case EDIT_STOP:
       return {
         ...state,
         editing: {
           ...state.editing,
-          [action.id]: false
-        }
+          [action.id]: false,
+        },
       };
     case CREATE:
       return state; // 'saving' flag handled by redux-form
@@ -94,18 +94,18 @@ export default function reducer(state = initialState, action = {}) {
         latestCreated: action.result,
         creating: {
           ...state.editing,
-          [action.id]: false
-        }
+          [action.id]: false,
+        },
       };
     case CREATE_FAIL:
       return typeof action.error === 'string'
         ? {
-          ...state,
-          createError: {
-            ...state.createError,
-            [action.id]: action.error
+            ...state,
+            createError: {
+              ...state.createError,
+              [action.id]: action.error,
+            },
           }
-        }
         : state;
     case SAVE:
       return state; // 'saving' flag handled by redux-form
@@ -114,22 +114,22 @@ export default function reducer(state = initialState, action = {}) {
         ...state,
         editing: {
           ...state.editing,
-          [action.id]: false
+          [action.id]: false,
         },
         saveError: {
           ...state.saveError,
-          [action.id]: null
-        }
+          [action.id]: null,
+        },
       };
     case SAVE_FAIL:
       return typeof action.error === 'string'
         ? {
-          ...state,
-          saveError: {
-            ...state.saveError,
-            [action.id]: action.error
+            ...state,
+            saveError: {
+              ...state.saveError,
+              [action.id]: action.error,
+            },
           }
-        }
         : state;
     case DELETE:
       return state; // 'saving' flag handled by redux-form
@@ -138,22 +138,22 @@ export default function reducer(state = initialState, action = {}) {
         ...state,
         deleting: {
           ...state.deleting,
-          [action.id]: false
+          [action.id]: false,
         },
         deletionError: {
           ...state.deletionError,
-          [action.id]: null
-        }
+          [action.id]: null,
+        },
       };
     case DELETE_FAIL:
       return typeof action.error === 'string'
         ? {
-          ...state,
-          deletionError: {
-            ...state.deletionError,
-            [action.id]: action.error
+            ...state,
+            deletionError: {
+              ...state.deletionError,
+              [action.id]: action.error,
+            },
           }
-        }
         : state;
     default:
       return state;
@@ -171,7 +171,7 @@ export function isSingleLoaded(globalState) {
 export function load() {
   return {
     types: [LOAD, LOAD_SUCCESS, LOAD_FAIL],
-    promise: client => client.get(`/payments/load`)
+    promise: client => client.get(`/payments/load`),
   };
 }
 
@@ -179,7 +179,7 @@ export function loadSingle(paymentId) {
   const params = paymentId ? `?id=${paymentId}` : ``;
   return {
     types: [SINGLE_LOAD, SINGLE_LOAD_SUCCESS, SINGLE_LOAD_FAIL],
-    promise: client => client.get(`/payments/loadSingle${params}`)
+    promise: client => client.get(`/payments/loadSingle${params}`),
   };
 }
 
@@ -190,20 +190,21 @@ export function create(payment) {
     promise: client =>
       client.post('/payments/create', {
         params: { 'Content-Type': 'application/json' },
-        data: payment
-      })
+        data: payment,
+      }),
   };
 }
 
 export function save(payment) {
+  console.log(`sending payment`, payment);
   return {
     types: [SAVE, SAVE_SUCCESS, SAVE_FAIL],
     id: payment.id,
     promise: client =>
       client.post('/payments/update', {
         params: { 'Content-Type': 'application/json' },
-        data: payment
-      })
+        data: payment,
+      }),
   };
 }
 
@@ -214,8 +215,8 @@ export function remove(payment) {
     promise: client =>
       client.post('/payments/remove', {
         params: { 'Content-Type': 'application/json' },
-        data: payment
-      })
+        data: payment,
+      }),
   };
 }
 
