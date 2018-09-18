@@ -66,7 +66,7 @@ export default class Work extends Component {
             <SubSection name="Party parrot">
               As a developer and advocate for open source, having a contribution
               to the{' '}
-              <TextLink href="https://cultofthepartyparrot.com/">
+              <TextLink external href="https://cultofthepartyparrot.com/">
                 official party parrot repo
               </TextLink>{' '}
               was a proud moment.
