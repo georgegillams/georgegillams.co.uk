@@ -3,13 +3,13 @@ import Helmet from 'react-helmet';
 import { connect } from 'react-redux';
 import {
   isSingleLoaded as isSingleBlogLoaded,
-  loadSingle as loadSingleBlog
+  loadSingle as loadSingleBlog,
 } from 'redux/modules/blogs';
 import {
   isLoaded as isCommentsLoaded,
   load as loadComments,
   create as createComment,
-  save as saveComment
+  save as saveComment,
 } from 'redux/modules/comments';
 import { isLoaded as isAuthLoaded, load as loadAuth } from 'redux/modules/auth';
 import { bindActionCreators } from 'redux';
@@ -40,16 +40,16 @@ const getClassName = cssModules(STYLES);
       }
 
       return Promise.all(promises);
-    }
-  }
+    },
+  },
 ])
 @connect(
   state => ({
     user: state.auth.user,
     newDataAvailable: state.sessions.newDataAvailable,
-    blogs: state.blogs ? state.blogs.singleData : null
+    blogs: state.blogs ? state.blogs.singleData : null,
   }),
-  dispatch => bindActionCreators({ loadComments, loadSingleBlog }, dispatch)
+  dispatch => bindActionCreators({ loadComments, loadSingleBlog }, dispatch),
 )
 export default class BlogViewer extends Component {
   static propTypes = {
@@ -59,13 +59,13 @@ export default class BlogViewer extends Component {
     loadComments: PropTypes.func.isRequired,
     loadSingleBlog: PropTypes.func.isRequired,
     className: PropTypes.string,
-    params: PropTypes.object.isRequired
+    params: PropTypes.object.isRequired,
   };
 
   static defaultProps = {
     user: null,
     blogs: [],
-    className: null
+    className: null,
   };
 
   constructor(props) {
@@ -100,7 +100,6 @@ export default class BlogViewer extends Component {
 
     const blog = blogs[this.props.params.id];
 
-    // console.log(`blog`, blog);
     if (!blog) {
       return <NotFound />;
     }

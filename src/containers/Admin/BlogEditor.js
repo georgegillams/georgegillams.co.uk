@@ -5,14 +5,14 @@ import {
   isSingleLoaded as isSingleBlogLoaded,
   loadSingle as loadSingleBlog,
   save as updateBlog,
-  create as createBlog
+  create as createBlog,
 } from 'redux/modules/blogs';
 import { isLoaded as isAuthLoaded, load as loadAuth } from 'redux/modules/auth';
 import {
   isLoaded as isCommentsLoaded,
   load as loadComments,
   create as createComment,
-  save as saveComment
+  save as saveComment,
 } from 'redux/modules/comments';
 import { bindActionCreators } from 'redux';
 import { asyncConnect } from 'redux-async-connect';
@@ -42,20 +42,20 @@ const getClassName = cssModules(STYLES);
       }
 
       return Promise.all(promises);
-    }
-  }
+    },
+  },
 ])
 @connect(
   state => ({
     user: state.auth.user,
     newDataAvailable: state.sessions.newDataAvailable,
-    blogs: state.blogs ? state.blogs.singleData : null
+    blogs: state.blogs ? state.blogs.singleData : null,
   }),
   dispatch =>
     bindActionCreators(
       { updateBlog, createBlog, loadComments, loadSingleBlog },
-      dispatch
-    )
+      dispatch,
+    ),
 )
 export default class BlogEditor extends Component {
   static propTypes = {
@@ -67,13 +67,13 @@ export default class BlogEditor extends Component {
     loadComments: PropTypes.func.isRequired,
     loadSingleBlog: PropTypes.func.isRequired,
     className: PropTypes.string,
-    params: PropTypes.object.isRequired
+    params: PropTypes.object.isRequired,
   };
 
   static defaultProps = {
     user: null,
     blogs: [],
-    className: null
+    className: null,
   };
 
   constructor(props) {
@@ -124,19 +124,23 @@ export default class BlogEditor extends Component {
 
     const blog = blogs[this.props.params.id];
 
+    if (!blog) {
+      return <NotFound />;
+    }
+
     return (
       <div className={getClassName('pages__container')}>
-        <Helmet title={blog ? blog.title : 'Blog Viewer'} />
+        <Helmet title={blog ? blog.title : 'Blog editor'} />
         <AdminOnly user={user}>
           {blog && (
             <div className={getClassName('blog-editor')}>
               <BlogForm
                 className={getClassName('blog-editor__component')}
                 elementClassName={getClassName(
-                  'blog-editor__component__editor-element'
+                  'blog-editor__component__editor-element',
                 )}
                 checkBoxElementClassName={getClassName(
-                  'blog-editor__component__editor-element--checkbox'
+                  'blog-editor__component__editor-element--checkbox',
                 )}
                 blog={blog}
                 editedBlog={this.state.editedBlog}
@@ -149,7 +153,7 @@ export default class BlogEditor extends Component {
                   <BlogRenderer
                     className={getClassName('blog-editor__component')}
                     elementClassName={getClassName(
-                      'blog-editor__component__preview-element'
+                      'blog-editor__component__preview-element',
                     )}
                     blog={this.state.editedBlog}
                   />

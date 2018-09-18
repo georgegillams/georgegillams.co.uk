@@ -41,4 +41,5 @@ export Admin, {
   AdminComments,
   AdminBlogs,
   AdminUsers,
+  AdminBlogEditor,
 } from './Admin';
