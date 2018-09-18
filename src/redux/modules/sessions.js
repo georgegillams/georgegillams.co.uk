@@ -12,6 +12,8 @@ const EDIT_STOP = 'redux-example/sessions/EDIT_STOP';
 const SAVE = 'redux-example/sessions/SAVE';
 const SAVE_SUCCESS = 'redux-example/sessions/SAVE_SUCCESS';
 const SAVE_FAIL = 'redux-example/sessions/SAVE_FAIL';
+const UPDATE_SERVER_CONTENT_UPDATE_TIMESTAMP =
+  'redux-example/sessions/UPDATE_SERVER_CONTENT_UPDATE_TIMESTAMP';
 const UPDATE_NEW_DATA_AVAILABLE =
   'redux-example/sessions/UPDATE_NEW_DATA_AVAILABLE';
 const EXPOSE_SESSION = 'redux-example/sessions/EXPOSE_SESSION';
@@ -133,15 +135,22 @@ export default function reducer(state = initialState, action = {}) {
             },
           }
         : state;
+    case UPDATE_SERVER_CONTENT_UPDATE_TIMESTAMP:
+      // console.log("action:");
+      // console.log(action);
+
+      return {
+        ...state,
+        serverContentUpdateTimestamp: action.newValue,
+      };
     case UPDATE_NEW_DATA_AVAILABLE:
       // console.log("action:");
       // console.log(action);
 
-      const newState = {
+      return {
         ...state,
         newDataAvailable: action.newValue,
       };
-      return newState;
     case EXPOSE_SESSION:
       return {
         ...state,
@@ -172,6 +181,14 @@ export function load() {
   return {
     types: [LOAD, LOAD_SUCCESS, LOAD_FAIL],
     promise: client => client.get(`/sessions/load`),
+  };
+}
+
+export function updateServerContentUpdateTimestamp(newValue) {
+  // console.log(`updatingTimestamp: ${newTimestamp}`);
+  return {
+    type: UPDATE_SERVER_CONTENT_UPDATE_TIMESTAMP,
+    newValue: newValue,
   };
 }
 
