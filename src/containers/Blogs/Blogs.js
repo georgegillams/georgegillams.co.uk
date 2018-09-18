@@ -57,10 +57,9 @@ export default class Blogs extends Component {
   }
 
   componentDidMount = () => {
-    this.interval = setInterval(
-      this.reloadBlogsIfNecessary,
-      CHECK_FOR_NEW_CONTENT_INTERVAL,
-    );
+    this.interval = setInterval(() => {
+      this.reloadBlogsIfNecessary();
+    }, CHECK_FOR_NEW_CONTENT_INTERVAL);
   };
 
   componentWillUnmount() {

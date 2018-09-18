@@ -12,7 +12,7 @@ export default function datumUpdate(settings, req) {
         const { existingValue, existingValueIndex } = find(values, value.id);
 
         if (existingValue) {
-          // Persist commnon values
+          // Persist unchangeable values
           value.timestamp = existingValue.timestamp;
           value.authorId = existingValue.authorId;
 
