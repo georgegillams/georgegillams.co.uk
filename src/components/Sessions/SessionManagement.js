@@ -83,6 +83,7 @@ export default class SessionManagement extends Component {
 
     this.state = {
       selectedTags: [],
+      sessionDebugViews: false,
       cookieNotificationHidden: false,
       cookiesAccepted: false,
       serverContentUpdateTimestamp: 0,
@@ -106,7 +107,11 @@ export default class SessionManagement extends Component {
     const session = cookie.load('session');
     const cookiesAccepted =
       window.localStorage.getItem('cookiesAccepted') === 'true';
-    this.setState({ cookiesAccepted: session && cookiesAccepted });
+    this.setState({
+      cookiesAccepted: session && cookiesAccepted,
+      sessionDebugViews:
+        window.localStorage.getItem('showSessionDebugViews') === 'true',
+    });
     this.checkSessionValid(session).then(sessionValid => {
       if (session && sessionValid && cookiesAccepted) {
         this.startKeepAlive(session);
@@ -198,14 +203,17 @@ export default class SessionManagement extends Component {
 
     return (
       <div {...rest}>
-        {this.props.newDataAvailable && (
-          <div className={getClassName('cookie-banner__new-data-available')}>
-            New data has become available on the server. Reloading...
+        {this.state.sessionDebugViews &&
+          this.props.newDataAvailable && (
+            <div className={getClassName('cookie-banner__new-data-available')}>
+              New data has become available on the server. Reloading...
+            </div>
+          )}
+        {this.state.sessionDebugViews && (
+          <div className={getClassName('cookie-banner__clut-values')}>
+            serverContentUpdateTimestamp: {serverContentUpdateTimestamp}
           </div>
         )}
-        <div className={getClassName('cookie-banner__clut-values')}>
-          serverContentUpdateTimestamp: {serverContentUpdateTimestamp}
-        </div>
         {!this.state.cookiesAccepted &&
           !this.state.cookieNotificationHidden && (
             <Modal

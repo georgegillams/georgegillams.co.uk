@@ -61,6 +61,15 @@ export default class Admin extends Component {
                 day={null}
                 month={null}
                 className={getClassName('pages__card')}
+                linkUrl="/admin/site-settings"
+                title="Site settings"
+                tallLayout
+              />
+              <ArticleCard
+                layout={CARD_LAYOUTS.narrowCompact}
+                day={null}
+                month={null}
+                className={getClassName('pages__card')}
                 linkUrl="/admin/blog"
                 title="Blogs"
                 tallLayout
