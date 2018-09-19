@@ -5,6 +5,8 @@ import { isLoaded as isAuthLoaded, load as loadAuth } from 'redux/modules/auth';
 import {
   isLoaded as isNotificationsLoaded,
   load as loadNotifications,
+  remove as deleteNotification,
+  create as createNotification,
 } from 'redux/modules/notifications';
 import { bindActionCreators } from 'redux';
 import { asyncConnect } from 'redux-async-connect';
@@ -15,6 +17,7 @@ import {
   Button,
   NotificationComp,
   APIEntity,
+  CreateNotificationForm,
 } from 'components';
 import {
   NON_EMOJI_REGEX,
@@ -48,12 +51,18 @@ const getClassName = cssModules(STYLES);
     notifications: state.notifications ? state.notifications.data : null,
     user: state.auth.user,
   }),
-  dispatch => bindActionCreators({ loadNotifications }, dispatch),
+  dispatch =>
+    bindActionCreators(
+      { createNotification, deleteNotification, loadNotifications },
+      dispatch,
+    ),
 )
 export default class Notifications extends Component {
   static propTypes = {
     newDataAvailable: PropTypes.bool.isRequired,
     notifications: PropTypes.arrayOf(PropTypes.object),
+    deleteNotification: PropTypes.func.isRequired,
+    createNotification: PropTypes.func.isRequired,
     loadNotifications: PropTypes.func.isRequired,
     className: PropTypes.string,
   };
@@ -65,7 +74,10 @@ export default class Notifications extends Component {
   constructor(props) {
     super(props);
 
-    this.state = { selectedTags: [] };
+    this.state = {
+      selectedTags: [],
+      newNotification: { type: '', message: '' },
+    };
   }
 
   componentDidMount = () => {
@@ -85,10 +97,16 @@ export default class Notifications extends Component {
     }
   };
 
+  createNotification = () => {
+    this.props.createNotification(this.state.newNotification);
+  };
+
   render() {
     const {
       user,
       notifications,
+      deleteNotification,
+      createNotification,
       loadNotifications,
       className,
       ...rest
@@ -109,6 +127,13 @@ export default class Notifications extends Component {
         <Helmet title="Notifications" />
         <AdminOnly user={user}>
           <div>
+            <CreateNotificationForm
+              notification={this.state.newNotification}
+              onSubmit={this.createNotification}
+              onDataChanged={newValue => {
+                this.setState({ newNotification: newValue });
+              }}
+            />
             {`Notifications: ${notifications.length}`}
             <br />
             <br />
@@ -121,6 +146,17 @@ export default class Notifications extends Component {
                   <NotificationComp type={notification.type}>
                     {notification.message}
                   </NotificationComp>
+                  <br />
+                  {!notification.deleted && (
+                    <Button
+                      destructive
+                      onClick={() => {
+                        deleteNotification(notification);
+                      }}
+                    >
+                      Delete
+                    </Button>
+                  )}
                   <br />
                 </div>
               ))}
