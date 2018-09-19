@@ -196,7 +196,6 @@ export function create(payment) {
 }
 
 export function save(payment) {
-  console.log(`sending payment`, payment);
   return {
     types: [SAVE, SAVE_SUCCESS, SAVE_FAIL],
     id: payment.id,
