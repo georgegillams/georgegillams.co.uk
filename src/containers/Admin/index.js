@@ -8,3 +8,4 @@ export AdminPayments from './Payments';
 export AdminBlogs from './Blogs';
 export AdminBlogEditor from './BlogEditor';
 export AdminUsers from './Users';
+export AdminSiteSettings from './SiteSettings';
