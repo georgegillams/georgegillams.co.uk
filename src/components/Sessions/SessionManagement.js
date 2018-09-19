@@ -8,6 +8,7 @@ import {
   createSession,
   keepAlive,
   updateNewDataAvailable,
+  updateServerContentUpdateTimestamp,
   exposeSession,
 } from 'redux/modules/sessions';
 import { isLoaded as isAuthLoaded, load as loadAuth } from 'redux/modules/auth';
@@ -42,7 +43,9 @@ const getClassName = cssModules(STYLES);
 @connect(
   state => ({
     contentLastUpdatedTimestamp: state.sessions.contentLastUpdatedTimestamp,
+    serverContentUpdateTimestamp: state.sessions.serverContentUpdateTimestamp,
     sessions: state.sessions.data,
+    newDataAvailable: state.sessions.newDataAvailable,
   }),
   dispatch =>
     bindActionCreators(
@@ -50,6 +53,7 @@ const getClassName = cssModules(STYLES);
         loadAuth,
         keepAlive,
         createSession,
+        updateServerContentUpdateTimestamp,
         updateNewDataAvailable,
         exposeSession,
       },
@@ -59,8 +63,10 @@ const getClassName = cssModules(STYLES);
 export default class SessionManagement extends Component {
   static propTypes = {
     contentLastUpdatedTimestamp: PropTypes.number.isRequired,
+    serverContentUpdateTimestamp: PropTypes.number.isRequired,
     exposeSession: PropTypes.func.isRequired,
     loadAuth: PropTypes.func.isRequired,
+    newDataAvailable: PropTypes.bool.isRequired,
     updateNewDataAvailable: PropTypes.func.isRequired,
     sessions: PropTypes.arrayOf(PropTypes.object),
     keepAlive: PropTypes.func.isRequired,
@@ -79,9 +85,7 @@ export default class SessionManagement extends Component {
       selectedTags: [],
       cookieNotificationHidden: false,
       cookiesAccepted: false,
-      localContentRefreshedTimestamp: 0,
       serverContentUpdateTimestamp: 0,
-      shouldReloadNewData: false,
     };
   }
 
@@ -153,28 +157,28 @@ export default class SessionManagement extends Component {
 
   startKeepAlive = session => {
     this.props.exposeSession(session);
+    this.props.keepAlive(session).then(serverContentUpdateTimestamp => {
+      this.props.updateServerContentUpdateTimestamp(
+        serverContentUpdateTimestamp,
+      );
+    });
     // set interval to ping keep-alive with sessionKey
     this.interval = setInterval(() => {
       this.props.keepAlive(session).then(serverContentUpdateTimestamp => {
-        // If the session is invalid, recreate a new one
         if (
-          serverContentUpdateTimestamp >
-          this.state.localContentRefreshedTimestamp
+          this.props.serverContentUpdateTimestamp &&
+          serverContentUpdateTimestamp &&
+          serverContentUpdateTimestamp > this.props.serverContentUpdateTimestamp
         ) {
           // Set global state value NEED_TO_UPDATE_FROM_SERVER
           // UNDO after 1 second
           // Render "Reloading notification"
-          this.setState({
-            shouldReloadNewData: true,
-            serverContentUpdateTimestamp: serverContentUpdateTimestamp,
-          });
+          this.props.updateServerContentUpdateTimestamp(
+            serverContentUpdateTimestamp,
+          );
           this.props.updateNewDataAvailable(true);
           this.props.loadAuth();
           setTimeout(() => {
-            this.setState({
-              shouldReloadNewData: false,
-              localContentRefreshedTimestamp: serverContentUpdateTimestamp,
-            });
             this.props.updateNewDataAvailable(false);
           }, COMPONENT_RELOAD_INTERVAL);
         }
@@ -185,6 +189,7 @@ export default class SessionManagement extends Component {
   render() {
     const {
       contentLastUpdatedTimestamp,
+      serverContentUpdateTimestamp,
       createSession,
       keepAlive,
       className,
@@ -193,18 +198,14 @@ export default class SessionManagement extends Component {
 
     return (
       <div {...rest}>
-        {this.state.shouldReloadNewData && (
+        {this.props.newDataAvailable && (
           <div className={getClassName('cookie-banner__new-data-available')}>
             New data has become available on the server. Reloading...
           </div>
         )}
-        {/* <div className={getClassName('cookie-banner__clut-values')}>
-          localContentRefreshedTimestamp:{" "}
-          {this.state.localContentRefreshedTimestamp}
-          <br />
-          serverContentUpdateTimestamp:{" "}
-          {this.state.serverContentUpdateTimestamp}
-        </div> */}
+        <div className={getClassName('cookie-banner__clut-values')}>
+          serverContentUpdateTimestamp: {serverContentUpdateTimestamp}
+        </div>
         {!this.state.cookiesAccepted &&
           !this.state.cookieNotificationHidden && (
             <Modal
