@@ -5,6 +5,11 @@ import setContentLastUpdatedTimestamp from '../../utils/setContentLastUpdatedTim
 
 export default function datumUpdate(settings, req) {
   return new Promise((resolve, reject) => {
+    // Need to unset all of these, as alternative values will affect the index, and cause the redis update command to update the wrong entry
+    settings.includeDeleted = true;
+    settings.sortKey = null;
+    settings.filter = null;
+
     datumLoad(settings, req).then(
       data => {
         const values = data;

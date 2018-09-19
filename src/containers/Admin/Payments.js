@@ -95,7 +95,6 @@ export default class Payments extends Component {
   };
 
   authorisePayment = payment => {
-    console.log(`uthorising`);
     this.props.updatePayment({ ...payment, ...{ status: 'authorised' } });
   };
 
