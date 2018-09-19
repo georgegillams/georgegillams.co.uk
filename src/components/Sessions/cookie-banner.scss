@@ -1,4 +1,4 @@
-@import "~bpk-mixins";
+@import '~bpk-mixins';
 
 .cookie-banner {
   &__outer-container {
@@ -12,11 +12,12 @@
 
   &__clut-values {
     position: fixed;
-    margin-left: 4rem;
-    margin-top: 5rem;
     background-color: red;
     color: white;
     z-index: 10000;
+    top: 0;
+    right: 0;
+    padding: 0 1rem;
   }
 
   &__new-data-available {
