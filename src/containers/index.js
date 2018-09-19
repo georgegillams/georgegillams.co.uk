@@ -42,4 +42,5 @@ export Admin, {
   AdminBlogs,
   AdminUsers,
   AdminBlogEditor,
+  AdminSiteSettings,
 } from './Admin';

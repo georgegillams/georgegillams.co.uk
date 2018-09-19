@@ -1,11 +1,12 @@
 // TODO REMOVE UNUSED CLASSES FROM HERE
 // TODO REMOVE UNUSED CLASSES FROM HERE
 
-@import "~bpk-mixins";
+@import '~bpk-mixins';
 
 .pages {
   &__container {
     margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
     margin-right: auto;
     margin-left: auto;
     max-width: 60rem;

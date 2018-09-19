@@ -31,6 +31,7 @@ import {
   AdminComments,
   AdminPayments,
   AdminBlogs,
+  AdminSiteSettings,
   DesignColours,
   DesignComponents,
   DesignTypography,
@@ -120,6 +121,7 @@ export default store => {
       <Route path="admin/comments" component={AdminComments} />
       <Route path="admin/notifications" component={AdminNotifications} />
       <Route path="admin/payments" component={AdminPayments} />
+      <Route path="admin/site-settings" component={AdminSiteSettings} />
       <Route path="admin/blog" component={AdminBlogs} />
       <Route path="admin/blog/:id" component={AdminBlogEditor} />
       <Route path="contact" component={Contact} />
