@@ -99,7 +99,7 @@ export default class Blogs extends Component {
         {blogs && (
           <BlogsList
             blogs={blogs.filter(bx => {
-              return bx.showInBlogsList && !bx.deleted;
+              return bx.showInBlogsList && bx.published && !bx.deleted;
             })}
             linkPrefix="/blog"
           />
