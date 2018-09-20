@@ -3,14 +3,14 @@ import Helmet from 'react-helmet';
 import { connect } from 'react-redux';
 import {
   isLoaded as isBlogsLoaded,
-  load as loadBlogs
+  load as loadBlogs,
 } from 'redux/modules/blogs';
 import { bindActionCreators } from 'redux';
 import { asyncConnect } from 'redux-async-connect';
 import { BlogsList, ArticleCard, Loading, Tag } from 'components';
 import {
   NON_EMOJI_REGEX,
-  CHECK_FOR_NEW_CONTENT_INTERVAL
+  CHECK_FOR_NEW_CONTENT_INTERVAL,
 } from '../../utils/constants';
 import { cssModules } from 'bpk-react-utils';
 
@@ -28,26 +28,26 @@ const getClassName = cssModules(STYLES);
       }
 
       return Promise.all(promises);
-    }
-  }
+    },
+  },
 ])
 @connect(
   state => ({
     newDataAvailable: state.sessions.newDataAvailable,
-    blogs: state.blogs ? state.blogs.data : null
+    blogs: state.blogs ? state.blogs.data : null,
   }),
-  dispatch => bindActionCreators({ loadBlogs }, dispatch)
+  dispatch => bindActionCreators({ loadBlogs }, dispatch),
 )
 export default class Blogs extends Component {
   static propTypes = {
     newDataAvailable: PropTypes.bool.isRequired,
     blogs: PropTypes.arrayOf(PropTypes.object),
     loadBlogs: PropTypes.func.isRequired,
-    className: PropTypes.string
+    className: PropTypes.string,
   };
 
   static defaultProps = {
-    className: null
+    className: null,
   };
 
   constructor(props) {
@@ -57,7 +57,7 @@ export default class Blogs extends Component {
   componentDidMount = () => {
     this.interval = setInterval(
       this.reloadBlogsIfNecessary,
-      CHECK_FOR_NEW_CONTENT_INTERVAL
+      CHECK_FOR_NEW_CONTENT_INTERVAL,
     );
   };
 
@@ -91,7 +91,7 @@ export default class Blogs extends Component {
         {blogs && (
           <BlogsList
             blogs={blogs.filter(bx => {
-              return bx.showInTravelBlogsList && !bx.deleted;
+              return bx.showInTravelBlogsList && bx.published && !bx.deleted;
             })}
             linkPrefix="/travel"
           />
