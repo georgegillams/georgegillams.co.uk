@@ -63,17 +63,21 @@ class Comments extends React.Component {
       classNameFinal.push(getClassName('blogs--centered'));
     }
 
+    const commentsFiltered = comments
+      ? comments.filter(comment => !comment.deleted)
+      : null;
+
     let commentsComponent = null;
-    if (comments) {
+    if (commentsFiltered) {
       commentsComponent =
-        comments.length === 0 ? (
+        commentsFiltered.length === 0 ? (
           <SubSection
             noAnchor
             className={getClassName('comments__component')}
             name="No comments yet. Be the first!"
           />
         ) : (
-          comments.map(
+          commentsFiltered.map(
             comment =>
               comment.editing ? (
                 <CommentInput
