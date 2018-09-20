@@ -13,8 +13,8 @@ const rl = readline.createInterface({
 console.log('Bringing in new code'.white);
 console.log('');
 
-const gitStatus = execSync('git status');
-if (!gitStatus.includes('nothing to commit, working tree clean')) {
+const gitStatus = execSync('git status --porcelain').toString();
+if (gitStatus !== '') {
   console.log(
     'ERROR: Working tree is not clean. At risk of overwriting changes if this script is executed now.'
       .red,
