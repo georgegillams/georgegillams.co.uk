@@ -5,6 +5,7 @@ import { isLoaded as isAuthLoaded, load as loadAuth } from 'redux/modules/auth';
 import {
   isLoaded as isCommentsLoaded,
   load as loadComments,
+  remove as deleteComment,
 } from 'redux/modules/comments';
 import { bindActionCreators } from 'redux';
 import { asyncConnect } from 'redux-async-connect';
@@ -51,12 +52,13 @@ const getClassName = cssModules(STYLES);
         : null,
     user: state.auth.user,
   }),
-  dispatch => bindActionCreators({ loadComments }, dispatch),
+  dispatch => bindActionCreators({ deleteComment, loadComments }, dispatch),
 )
 export default class Comments extends Component {
   static propTypes = {
     newDataAvailable: PropTypes.bool.isRequired,
     comments: PropTypes.arrayOf(PropTypes.object),
+    deleteComment: PropTypes.func.isRequired,
     loadComments: PropTypes.func.isRequired,
     className: PropTypes.string,
   };
@@ -89,7 +91,14 @@ export default class Comments extends Component {
   };
 
   render() {
-    const { user, comments, loadComments, className, ...rest } = this.props; // eslint-disable-line no-shadow
+    const {
+      user,
+      comments,
+      deleteComment,
+      loadComments,
+      className,
+      ...rest
+    } = this.props; // eslint-disable-line no-shadow
 
     const outerClassNameFinal = [getClassName('pages__container')];
 
@@ -117,7 +126,11 @@ export default class Comments extends Component {
                   <br />
                   {`Comment ${comment.comment}`}
                   <br />
-                  <Comment user={user} comment={comment} />
+                  <Comment
+                    user={user}
+                    comment={comment}
+                    onCommentDeleted={deleteComment}
+                  />
                   <br />
                 </div>
               ))}
