@@ -19,6 +19,7 @@ export {
   TextLink,
 } from './Typography';
 
+export DegreeModule from './Degree';
 export { SessionManagement } from './Sessions';
 
 export CounterButton from './CounterButton/CounterButton';
