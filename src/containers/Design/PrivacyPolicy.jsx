@@ -1,20 +1,20 @@
 /* eslint-disable */
-import React from "react";
-import BpkImage, { withLoadingBehavior } from "bpk-component-image";
+import React from 'react';
+import BpkImage, { withLoadingBehavior } from 'bpk-component-image';
 import {
   NotificationComp,
   Section,
   SubSection,
   TextLink,
-  Comments
-} from "../../components";
-import { cssModules } from "bpk-react-utils";
+  Comments,
+} from '../../components';
+import { cssModules } from 'bpk-react-utils';
 
-import STYLES from "../pages.scss";
+import STYLES from '../pages.scss';
 
 const getClassName = cssModules(STYLES);
 
-class DesignTypography extends React.Component {
+class PrivacyPolicy extends React.Component {
   constructor(props) {
     super(props);
   }
@@ -31,16 +31,16 @@ class DesignTypography extends React.Component {
           This is a legacy page, so it may take some time to load.
         </NotificationComp>
         <iframe
-          id="designTypographyInline"
-          title="Inline DesignTypography page"
+          id="designPrivacyPolicyInline"
+          title="Inline PrivacyPolicy page"
           width="100%"
           height="50rem"
-          style={{ border: "none", height: "170rem" }}
-          src="https://georgegillams-depreciated.herokuapp.com/design/typography"
+          style={{ border: 'none', height: '170rem' }}
+          src="https://georgegillams-depreciated.herokuapp.com/design/privacy-policy"
         />
       </div>
     );
   }
 }
 
-export default DesignTypography;
+export default PrivacyPolicy;
