@@ -23,7 +23,7 @@ class Colours extends React.Component {
 
     return (
       <div className={outerClassNameFinal.join(' ')} {...rest}>
-        <Helmet title="My degree" />
+        <Helmet title="Colour pallete" />
         <Section name="Colour pallete">
           <div className={getClassName('pages__compact-card-container')}>
             <ColourPalleteItem colourName="Not black" colour="#1E1E1E" />

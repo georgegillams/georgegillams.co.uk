@@ -93,7 +93,7 @@ export default class Design extends Component {
                 day={null}
                 month={null}
                 className={getClassName('pages__card')}
-                linkUrl="/design/Typography"
+                linkUrl="/design/typography"
                 title="Typography"
                 tallLayout
               />

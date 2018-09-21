@@ -38,3 +38,4 @@ export {
 export GraphicContent, { withGraphicContentBehaviour } from './GraphicContent';
 export WidgetForm from './WidgetForm/WidgetForm';
 export PhotoGallery from './PhotoGallery/PhotoGallery';
+export bpkDemo from './bpk-component-demo';
