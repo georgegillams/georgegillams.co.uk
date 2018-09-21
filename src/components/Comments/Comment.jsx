@@ -71,14 +71,16 @@ class Comment extends React.Component {
             {onCommentStartEdit && (
               <Button onClick={onCommentStartEdit}>Edit</Button>
             )}
-            <Button
-              onClick={() => {
-                onCommentDeleted(comment);
-              }}
-              destructive
-            >
-              Delete
-            </Button>
+            {!comment.deleted && (
+              <Button
+                onClick={() => {
+                  onCommentDeleted(comment);
+                }}
+                destructive
+              >
+                Delete
+              </Button>
+            )}
           </div>
         )}
       </SubSection>
