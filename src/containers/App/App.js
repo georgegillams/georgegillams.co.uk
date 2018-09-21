@@ -166,9 +166,11 @@ export default class App extends Component {
         <br />
         <br />
         <br />   */}
-        <NavigationBar user={user} />
-        <NotificationCentre />
-        <div>{children}</div>
+        <div className={getClassName('app__content')}>
+          <NavigationBar user={user} />
+          <NotificationCentre />
+          <div>{children}</div>
+        </div>
         <Footer />
       </div>
     );
