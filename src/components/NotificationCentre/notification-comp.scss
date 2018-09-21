@@ -1,4 +1,4 @@
-@import "~bpk-mixins";
+@import '~bpk-mixins';
 
 .notification-comp {
   &__container {
@@ -28,7 +28,7 @@
     }
 
     &--error {
-      background-color: red;
+      background-color: #e02626;
     }
   }
 

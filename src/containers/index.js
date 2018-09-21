@@ -6,10 +6,12 @@ export App from './App/App';
 export Blogs from './Blogs/Blogs';
 export Chat from './Chat/Chat';
 export Contact from './Contact/Contact';
-export DesignColours from './Design/DesignColours';
-export DesignTypography from './Design/DesignTypography';
-export DesignComponents from './Design/DesignComponents';
-export DesignPrivacyPolicy from './Design/DesignPrivacyPolicy';
+export Design, {
+  DesignColours,
+  DesignTypography,
+  DesignComponents,
+  DesignPrivacyPolicy,
+} from './Design';
 export Home from './Home/Home';
 export Account from './Accounts/Account';
 export AccountEdit from './Accounts/AccountEdit';
