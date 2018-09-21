@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { CodeInline, SubSection } from '../';
+import { CodeInline, SubSection } from 'components';
 
 const ColourPalletteItem = props => {
   const { colourName, colour, ...rest } = props;
@@ -17,7 +17,7 @@ const ColourPalletteItem = props => {
           width: '5rem',
           height: '5rem',
           backgroundColor: colour,
-          borderRadius: '5rem'
+          borderRadius: '5rem',
         }}
       />
     </div>
@@ -26,7 +26,7 @@ const ColourPalletteItem = props => {
 
 ColourPalletteItem.propTypes = {
   colourName: PropTypes.string.isRequired,
-  colour: PropTypes.string.isRequired
+  colour: PropTypes.string.isRequired,
 };
 
 export default ColourPalletteItem;

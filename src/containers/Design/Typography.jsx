@@ -1,20 +1,20 @@
 /* eslint-disable */
-import React from "react";
-import BpkImage, { withLoadingBehavior } from "bpk-component-image";
+import React from 'react';
+import BpkImage, { withLoadingBehavior } from 'bpk-component-image';
 import {
   NotificationComp,
   Section,
   SubSection,
   TextLink,
-  Comments
-} from "../../components";
-import { cssModules } from "bpk-react-utils";
+  Comments,
+} from '../../components';
+import { cssModules } from 'bpk-react-utils';
 
-import STYLES from "../pages.scss";
+import STYLES from '../pages.scss';
 
 const getClassName = cssModules(STYLES);
 
-class DesignComponents extends React.Component {
+class Typography extends React.Component {
   constructor(props) {
     super(props);
   }
@@ -31,16 +31,16 @@ class DesignComponents extends React.Component {
           This is a legacy page, so it may take some time to load.
         </NotificationComp>
         <iframe
-          id="designComponentsInline"
-          title="Inline DesignComponents page"
+          id="designTypographyInline"
+          title="Inline Typography page"
           width="100%"
           height="50rem"
-          style={{ border: "none", height: "170rem" }}
-          src="https://georgegillams-depreciated.herokuapp.com/design/components"
+          style={{ border: 'none', height: '170rem' }}
+          src="https://georgegillams-depreciated.herokuapp.com/design/typography"
         />
       </div>
     );
   }
 }
 
-export default DesignComponents;
+export default Typography;
