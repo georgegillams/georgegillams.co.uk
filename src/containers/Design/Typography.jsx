@@ -1,20 +1,27 @@
 /* eslint-disable */
-import React from 'react';
-import BpkImage, { withLoadingBehavior } from 'bpk-component-image';
-import {
-  NotificationComp,
-  Section,
-  SubSection,
-  TextLink,
-  Comments,
-} from '../../components';
+import React, { Component } from 'react';
+import Helmet from 'react-helmet';
+import { Section, SubSection, bpkDemo } from 'components';
 import { cssModules } from 'bpk-react-utils';
 
 import STYLES from '../pages.scss';
 
 const getClassName = cssModules(STYLES);
 
-class Typography extends React.Component {
+const SectionDemo = bpkDemo(Section, 'Section', 'na', {
+  name: 'Section name',
+  children: 'Some section content',
+  noPadding: true,
+  noAnchor: true,
+});
+const SubSectionDemo = bpkDemo(SubSection, 'SubSection', 'na', {
+  name: 'Sub-section name',
+  children: 'Some sub-section content',
+  noPadding: true,
+  noAnchor: true,
+});
+
+class Typography extends Component {
   constructor(props) {
     super(props);
   }
@@ -22,22 +29,25 @@ class Typography extends React.Component {
   render() {
     const { className, ...rest } = this.props;
 
-    const classNameFinal = [];
-    if (className) classNameFinal.push(className);
+    const outerClassNameFinal = [getClassName('pages__container')];
+
+    if (className) {
+      outerClassNameFinal.push(className);
+    }
+
+    const demoClassName = getClassName('pages__bpk-demo');
 
     return (
-      <div>
-        <NotificationComp type="error">
-          This is a legacy page, so it may take some time to load.
-        </NotificationComp>
-        <iframe
-          id="designTypographyInline"
-          title="Inline Typography page"
-          width="100%"
-          height="50rem"
-          style={{ border: 'none', height: '170rem' }}
-          src="https://georgegillams-depreciated.herokuapp.com/design/typography"
-        />
+      <div className={outerClassNameFinal.join(' ')} {...rest}>
+        <Helmet title="Typograhpy" />
+        <Section name="Typography">
+          <SubSection noAnchor name="Section">
+            <SectionDemo className={demoClassName} />
+          </SubSection>
+          <SubSection noAnchor name="Subsection">
+            <SubSectionDemo className={demoClassName} />
+          </SubSection>
+        </Section>
       </div>
     );
   }
