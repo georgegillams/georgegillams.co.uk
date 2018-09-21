@@ -9,11 +9,14 @@ const EDIT_STOP = 'redux-example/blogs/EDIT_STOP';
 const SAVE = 'redux-example/blogs/SAVE';
 const SAVE_SUCCESS = 'redux-example/blogs/SAVE_SUCCESS';
 const SAVE_FAIL = 'redux-example/blogs/SAVE_FAIL';
+const DELETE = 'redux-example/blogs/DELETE';
+const DELETE_SUCCESS = 'redux-example/blogs/DELETE_SUCCESS';
+const DELETE_FAIL = 'redux-example/blogs/DELETE_FAIL';
 
 const initialState = {
   loaded: false,
   editing: {},
-  saveError: {}
+  saveError: {},
 };
 
 export default function reducer(state = initialState, action = {}) {
@@ -21,7 +24,7 @@ export default function reducer(state = initialState, action = {}) {
     case LOAD:
       return {
         ...state,
-        loading: true
+        loading: true,
       };
     case LOAD_SUCCESS:
       return {
@@ -29,7 +32,7 @@ export default function reducer(state = initialState, action = {}) {
         loading: false,
         loaded: true,
         data: action.result,
-        error: null
+        error: null,
       };
     case LOAD_FAIL:
       return {
@@ -37,15 +40,15 @@ export default function reducer(state = initialState, action = {}) {
         loading: false,
         loaded: false,
         data: null,
-        error: action.error
+        error: action.error,
       };
     case SINGLE_LOAD:
       return {
         ...state,
         singleLoading: {
           ...state.singleLoading,
-          [action.id]: true
-        }
+          [action.id]: true,
+        },
       };
     case SINGLE_LOAD_SUCCESS:
       return {
@@ -54,9 +57,9 @@ export default function reducer(state = initialState, action = {}) {
         singleLoaded: true,
         singleData: {
           ...state.singleData,
-          [action.id]: action.result
+          [action.id]: action.result,
         },
-        singleError: null
+        singleError: null,
       };
     case SINGLE_LOAD_FAIL:
       return {
@@ -65,25 +68,25 @@ export default function reducer(state = initialState, action = {}) {
         singleLoaded: false,
         singleData: {
           ...state.singleData,
-          [action.id]: null
+          [action.id]: null,
         },
-        singleError: action.error
+        singleError: action.error,
       };
     case EDIT_START:
       return {
         ...state,
         editing: {
           ...state.editing,
-          [action.id]: true
-        }
+          [action.id]: true,
+        },
       };
     case EDIT_STOP:
       return {
         ...state,
         editing: {
           ...state.editing,
-          [action.id]: false
-        }
+          [action.id]: false,
+        },
       };
     case SAVE:
       return state; // 'saving' flag handled by redux-form
@@ -95,22 +98,44 @@ export default function reducer(state = initialState, action = {}) {
         data: data,
         editing: {
           ...state.editing,
-          [action.id]: false
+          [action.id]: false,
         },
         saveError: {
           ...state.saveError,
-          [action.id]: null
-        }
+          [action.id]: null,
+        },
       };
     case SAVE_FAIL:
       return typeof action.error === 'string'
         ? {
-          ...state,
-          saveError: {
-            ...state.saveError,
-            [action.id]: action.error
+            ...state,
+            saveError: {
+              ...state.saveError,
+              [action.id]: action.error,
+            },
           }
-        }
+        : state;
+    case DELETE_SUCCESS:
+      return {
+        ...state,
+        deleting: {
+          ...state.deleting,
+          [action.id]: false,
+        },
+        deletionError: {
+          ...state.deletionError,
+          [action.id]: null,
+        },
+      };
+    case DELETE_FAIL:
+      return typeof action.error === 'string'
+        ? {
+            ...state,
+            deletionError: {
+              ...state.deletionError,
+              [action.id]: action.error,
+            },
+          }
         : state;
     default:
       return state;
@@ -132,7 +157,7 @@ export function isSingleLoaded(globalState, id) {
 export function load() {
   return {
     types: [LOAD, LOAD_SUCCESS, LOAD_FAIL],
-    promise: client => client.get('/blogs/load') // params not used, just shown as demonstration
+    promise: client => client.get('/blogs/load'), // params not used, just shown as demonstration
   };
 }
 
@@ -140,7 +165,7 @@ export function loadSingle(blogId) {
   return {
     types: [SINGLE_LOAD, SINGLE_LOAD_SUCCESS, SINGLE_LOAD_FAIL],
     id: blogId,
-    promise: client => client.get(`/blogs/loadSingle?id=${blogId}`) // params not used, just shown as demonstration
+    promise: client => client.get(`/blogs/loadSingle?id=${blogId}`), // params not used, just shown as demonstration
   };
 }
 
@@ -150,8 +175,8 @@ export function create(blog) {
     id: 'new_blog',
     promise: client =>
       client.post('/blogs/create', {
-        data: blog
-      })
+        data: blog,
+      }),
   };
 }
 
@@ -161,8 +186,19 @@ export function save(blog) {
     id: blog.id,
     promise: client =>
       client.post('/blogs/update', {
-        data: blog
-      })
+        data: blog,
+      }),
+  };
+}
+
+export function remove(blog) {
+  return {
+    types: [DELETE, DELETE_SUCCESS, DELETE_FAIL],
+    id: blog.id,
+    promise: client =>
+      client.post('/blogs/remove', {
+        data: blog,
+      }),
   };
 }
 
