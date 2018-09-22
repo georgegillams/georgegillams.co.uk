@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import BpkImage, {
   withLoadingBehavior,
-  withLazyLoading
+  withLazyLoading,
 } from 'bpk-component-image';
 import { Section, SubSection } from '../';
 import { Link } from 'react-router';
@@ -15,13 +15,13 @@ const getClassName = cssModules(STYLES);
 
 const documentIfExists = typeof window !== 'undefined' ? document : null;
 const FadingLazyLoadedImage = withLoadingBehavior(
-  withLazyLoading(BpkImage, documentIfExists)
+  withLazyLoading(BpkImage, documentIfExists),
 );
 
 export const CARD_LAYOUTS = {
   auto: 'auto',
   narrow: 'narrow',
-  narrowCompact: 'narrowCompact'
+  narrowCompact: 'narrowCompact',
 };
 
 const MONTH_MAPPINGS = {
@@ -36,7 +36,7 @@ const MONTH_MAPPINGS = {
   8: 'Sep',
   9: 'Oct',
   10: 'Nov',
-  11: 'Dec'
+  11: 'Dec',
 };
 
 class ArticleCard extends Component {
@@ -70,7 +70,7 @@ class ArticleCard extends Component {
     const classNameFinal = [getClassName('article-card')];
     const centerClassNames = [getClassName('article-card__center-container')];
     const contentContainerClassNames = [
-      getClassName('article-card__inner-container')
+      getClassName('article-card__inner-container'),
     ];
     const dateContainerClassNames = [getClassName('article-card__date')];
 
@@ -82,28 +82,28 @@ class ArticleCard extends Component {
       bannerClassNames.push(getClassName('article-card__banner--hovered'));
     }
     const outerBannerClassNames = [
-      getClassName('article-card__outer-container')
+      getClassName('article-card__outer-container'),
     ];
     if (layout === CARD_LAYOUTS.narrowCompact) {
       classNameFinal.push(getClassName('article-card--narrow-compact'));
       outerBannerClassNames.push(
-        getClassName('article-card__outer-container--narrow-compact')
+        getClassName('article-card__outer-container--narrow-compact'),
       );
       centerClassNames.push(
-        getClassName('article-card__center-container--narrow-compact')
+        getClassName('article-card__center-container--narrow-compact'),
       );
       dateContainerClassNames.push(
-        getClassName('article-card__date--narrow-compact')
+        getClassName('article-card__date--narrow-compact'),
       );
     } else if (layout === CARD_LAYOUTS.auto) {
       outerBannerClassNames.push(
-        getClassName('article-card__outer-container--auto')
+        getClassName('article-card__outer-container--auto'),
       );
     }
     if (className) classNameFinal.push(className);
 
     const imageContainerClassNames = [
-      getClassName('article-card__image-container')
+      getClassName('article-card__image-container'),
     ];
 
     const imageClassNames = [getClassName('article-card__image')];
@@ -112,11 +112,11 @@ class ArticleCard extends Component {
     }
 
     const backgroundImageClassNames = [
-      getClassName('article-card__background')
+      getClassName('article-card__background'),
     ];
     if (light) {
       backgroundImageClassNames.push(
-        getClassName('article-card__background--light')
+        getClassName('article-card__background--light'),
       );
     }
     if (backgroundImageClassName) {
@@ -140,7 +140,7 @@ class ArticleCard extends Component {
               name={
                 HelperFunctions.includes(
                   Object.keys(MONTH_MAPPINGS),
-                  `${month}`
+                  `${month}`,
                 )
                   ? MONTH_MAPPINGS[`${month}`]
                   : month
@@ -172,7 +172,7 @@ class ArticleCard extends Component {
             <div
               className={imageContainerClassNames.join(' ')}
               style={{
-                border: imageBorder ? `solid ${imageBorder} 0.1rem` : 'none'
+                border: imageBorder ? `solid ${imageBorder} 0.1rem` : 'none',
               }}
             >
               <FadingLazyLoadedImage
@@ -258,7 +258,7 @@ ArticleCard.propTypes = {
   href: PropTypes.string,
   backgroundImageClassName: PropTypes.string,
   imageClassName: PropTypes.string,
-  children: PropTypes.node
+  children: PropTypes.node,
 };
 
 ArticleCard.defaultProps = {
@@ -277,7 +277,7 @@ ArticleCard.defaultProps = {
   href: null,
   backgroundImageClassName: null,
   imageClassName: null,
-  children: null
+  children: null,
 };
 
 export default ArticleCard;

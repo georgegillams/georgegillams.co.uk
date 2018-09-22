@@ -4,13 +4,13 @@ import BpkText from 'bpk-component-text';
 import YoutubeEmbedVideo from 'youtube-embed-video';
 import BpkImage, {
   withLoadingBehavior,
-  withLazyLoading
+  withLazyLoading,
 } from 'bpk-component-image';
 import scrollIntoView from 'scroll-into-view';
 import {
   citation,
   References,
-  REFERENCE_STYLES
+  REFERENCE_STYLES,
 } from 'react-component-academic-reference';
 import { cssModules } from 'bpk-react-utils';
 import {
@@ -19,7 +19,7 @@ import {
   SubSection,
   Code,
   CodeInline,
-  CodeBashArrow
+  CodeBashArrow,
 } from 'components';
 import HelperFunctions from '../../helpers/HelperFunctions';
 
@@ -30,7 +30,7 @@ const getClassName = cssModules(STYLES);
 
 const documentIfExists = typeof window !== 'undefined' ? document : null;
 const FadingLazyLoadedImage = withLoadingBehavior(
-  withLazyLoading(BpkImage, documentIfExists)
+  withLazyLoading(BpkImage, documentIfExists),
 );
 
 const MD_LINK_REGEX = /([^]*)\[([^\[\]]*)\]\(([^\(\)]*)\)([^]*)/gi;
@@ -68,7 +68,7 @@ class RecursiveWrapper extends Component {
       noAnchor,
       light,
       references,
-      elementClassName
+      elementClassName,
     } = this.props;
 
     // console.log("recursing");
@@ -123,7 +123,7 @@ class BlogPreviewContent extends Component {
       if (!reference) return;
 
       scrollIntoView(reference, {
-        time: 1000
+        time: 1000,
       });
     };
 
@@ -164,7 +164,7 @@ class BlogPreviewContent extends Component {
         <span className={classNameFinal.join(' ')} {...rest}>
           <RecursiveWrapper content={preFootnoteText} />
           <BpkText textStyle="xs">
-            <sup>{footnoteNumber}</sup>{" "}
+            <sup>{footnoteNumber}</sup>{' '}
             {<RecursiveWrapper content={footnoteValue} />}
           </BpkText>
           <RecursiveWrapper content={postFootnoteText} />
@@ -409,7 +409,7 @@ class BlogPreviewContent extends Component {
             >
               <References
                 className={`${getClassName(
-                  'pages__references'
+                  'pages__references',
                 )} ${elementClassNameFinal.join(' ')}`}
                 referenceStyle={REFERENCE_STYLES.harvard}
                 references={references}
@@ -461,7 +461,7 @@ class BlogPreviewContent extends Component {
           <Code lang={language} githubUrl={githubLink}>
             {blockCode.split('\n\n').map(b => (
               <span>
-                <CodeBashArrow />{" "}
+                <CodeBashArrow />{' '}
                 {b.split('\n').map(l => (
                   <span>
                     {l}
@@ -508,7 +508,7 @@ class BlogPreviewContent extends Component {
               <br />
             ) : (
               <p className={elementClassNameFinal.join(' ')}>{s}</p>
-            )
+            ),
         )}
       </span>
     );
@@ -522,7 +522,7 @@ BlogPreviewContent.propTypes = {
   elementClassName: PropTypes.string,
   light: PropTypes.bool,
   noAnchor: PropTypes.bool,
-  supportedFeatures: PropTypes.arrayOf(PropTypes.string)
+  supportedFeatures: PropTypes.arrayOf(PropTypes.string),
 };
 
 BlogPreviewContent.defaultProps = {
@@ -543,8 +543,8 @@ BlogPreviewContent.defaultProps = {
     'image',
     'video',
     'citation',
-    'sectioning'
-  ]
+    'sectioning',
+  ],
 };
 
 export default BlogPreviewContent;
