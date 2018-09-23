@@ -9,37 +9,39 @@ const MONZOME_LINK_REGEX = /^(https?:\/\/)?monzo\.me\/[A-Za-z_-]+$/gi;
 const NON_EMOJI_REGEX = /[A-Za-z\ 0-9,]*/gi;
 const EMAIL_REGEX = /^([a-zA-Z0-9_\-\.\+]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([a-zA-Z0-9\-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$/gi;
 const PASSWORD_REGEX = /.{6,}/gi;
-const APP_VERSION = "4.0.0";
+const MD_COMPLETE_REGEX = /.*/gi; // TODO UPDATE
+const MD_PARTIAL_REGEX = /.*/gi; // TODO UPDATE
+const APP_VERSION = '4.0.0';
 const COOKIE_NAMES = [
-  "session",
-  "version",
-  "connect.sid",
-  "io",
-  "sessionId",
-  "loggedInAdmin",
-  "userComments"
+  'session',
+  'version',
+  'connect.sid',
+  'io',
+  'sessionId',
+  'loggedInAdmin',
+  'userComments',
 ];
 const INVALID_SESSION = {
-  error: "authentication",
+  error: 'authentication',
   reason:
-    "Invalid session. Try clearing cookies for this site and then re-authenticate"
+    'Invalid session. Try clearing cookies for this site and then re-authenticate',
 };
 const INVALID_CREDENTIALS = {
-  error: "authentication",
-  reason: "Error logging in. The credentials supplied are invalid."
+  error: 'authentication',
+  reason: 'Error logging in. The credentials supplied are invalid.',
 };
 const UNAUTHORISED_READ = {
-  error: "authentication",
-  reason: "You are not authorised to read this resource"
+  error: 'authentication',
+  reason: 'You are not authorised to read this resource',
 };
 const UNAUTHORISED_WRITE = {
-  error: "authentication",
-  reason: "You are not authorised to write to this resource"
+  error: 'authentication',
+  reason: 'You are not authorised to write to this resource',
 };
 const RESOURCE_NOT_FOUND = {
-  error: "404",
+  error: '404',
   reason:
-    "We looked everywhere but we couldn't find that resource. Maybe you need to sign in."
+    "We looked everywhere but we couldn't find that resource. Maybe you need to sign in.",
 };
 const CHECK_FOR_NEW_CONTENT_INTERVAL = 1000;
 const COMPONENT_RELOAD_INTERVAL = CHECK_FOR_NEW_CONTENT_INTERVAL / 2;
@@ -55,6 +57,8 @@ export {
   INT_REGEX,
   INVALID_CREDENTIALS,
   INVALID_SESSION,
+  MD_COMPLETE_REGEX,
+  MD_PARTIAL_REGEX,
   MONZOME_LINK_REGEX,
   NAME_REGEX,
   NON_EMOJI_REGEX,
@@ -64,7 +68,7 @@ export {
   STRING_REGEX,
   UNAME_REGEX,
   UNAUTHORISED_READ,
-  UNAUTHORISED_WRITE
+  UNAUTHORISED_WRITE,
 };
 export default {
   APP_VERSION,
@@ -77,6 +81,8 @@ export default {
   INT_REGEX,
   INVALID_CREDENTIALS,
   INVALID_SESSION,
+  MD_COMPLETE_REGEX,
+  MD_PARTIAL_REGEX,
   MONZOME_LINK_REGEX,
   NAME_REGEX,
   NON_EMOJI_REGEX,
@@ -86,5 +92,5 @@ export default {
   STRING_REGEX,
   UNAME_REGEX,
   UNAUTHORISED_READ,
-  UNAUTHORISED_WRITE
+  UNAUTHORISED_WRITE,
 };
