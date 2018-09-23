@@ -13,7 +13,6 @@ export * as payments from './payments/index';
 export * as comments from './comments/index';
 export * as notifications from './notifications/index';
 export * as blogs from './blogs/index';
-export * as profiles from './profiles/index';
 export * as sessions from './sessions/index';
 export * as survey from './survey/index';
 export * as users from './users/index';

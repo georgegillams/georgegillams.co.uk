@@ -12,7 +12,7 @@ class User extends Component {
     const { name, uname, email, emailFingerprint, emailVerified } = user;
 
     if (!user || !uname) {
-      return <Section name="Loading user info" />;
+      return <Section name="Loading user info..." />;
     }
 
     return (
