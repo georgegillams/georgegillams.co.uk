@@ -1,18 +1,24 @@
-import { datumCreate } from "../datum";
-import authentication from "../../utils/authentication";
-import { UNAUTHORISED_WRITE } from "../../../src/utils/constants";
+import { datumCreate } from '../datum';
+import authentication from '../../utils/authentication';
+import { UNAUTHORISED_WRITE } from '../../../src/utils/constants';
+import reqSecure from '../../utils/reqSecure';
+import notificationsAllowedAttributes from './notificationsAllowedAttributes';
 
 export default function create(req) {
+  const reqSecured = reqSecure(req, notificationsAllowedAttributes);
+  console.log(`reqSecured.body`, reqSecured.body);
   return new Promise((resolve, reject) => {
-    authentication(req).then(
+    authentication(reqSecured).then(
       user => {
         if (user && user.admin) {
-          resolve(datumCreate({ redisKey: "notifications", user: user }, req));
+          resolve(
+            datumCreate({ redisKey: 'notifications', user: user }, reqSecured),
+          );
         } else {
           reject(UNAUTHORISED_WRITE);
         }
       },
-      err => reject(err)
+      err => reject(err),
     );
   });
 }

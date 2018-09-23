@@ -1,6 +1,6 @@
 import { datumCreate } from '../datum';
 import authentication from '../../utils/authentication';
-import reqSecure from '../../utils/reqSecure';
+import reqsecure from '../../utils/reqsecure';
 import paymentsAllowedAttributes from './paymentsAllowedAttributes';
 
 export default function create(req) {
