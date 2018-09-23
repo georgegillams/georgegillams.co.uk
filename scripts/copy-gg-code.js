@@ -24,7 +24,7 @@ if (gitStatus !== '') {
 }
 
 execSync(
-  'cp -R ../georgegillams.co.uk/api/* ./api && cp -R ../georgegillams.co.uk/src/routes.js ./src/routes.js && cp -R ../georgegillams.co.uk/src/components/* ./src/components && cp -R ../georgegillams.co.uk/src/containers/* ./src/containers/ && cp -R ../georgegillams.co.uk/src/redux/* ./src/redux && cp -R ../georgegillams.co.uk/scripts/* ./scripts',
+  'cp -R ../georgegillams.co.uk/api/* ./api && cp -R ../georgegillams.co.uk/src/routes.js ./src/routes.js && cp -R ../georgegillams.co.uk/src/components/* ./src/components && cp -R ../georgegillams.co.uk/src/utils/* ./src/utils/ && cp -R ../georgegillams.co.uk/src/containers/* ./src/containers/ && cp -R ../georgegillams.co.uk/src/redux/* ./src/redux && cp -R ../georgegillams.co.uk/scripts/* ./scripts',
 );
 
 console.log('All done.  👍');
