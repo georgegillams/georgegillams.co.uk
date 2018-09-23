@@ -1,22 +1,25 @@
-import { datumLoad } from "../datum";
-import authentication from "../../utils/authentication";
+import { datumLoad } from '../datum';
+import authentication from '../../utils/authentication';
+import reqSecure from '../../utils/reqSecure';
+import commentsAllowedAttributes from './commentsAllowedAttributes';
 
 export default function load(req) {
+  const reqSecured = reqSecure(req, commentsAllowedAttributes);
   return new Promise((resolve, reject) => {
-    authentication(req).then(
+    authentication(reqSecured).then(
       user => {
         resolve(
           datumLoad({
-            redisKey: "comments",
+            redisKey: 'comments',
             includeOwnerUname: true,
             includeDeleted: user && user.admin,
-            filter: req.query.pageId
-              ? comment => comment.pageId === req.query.pageId
-              : null
-          })
+            filter: reqSecured.query.pageId
+              ? comment => comment.pageId === reqSecured.query.pageId
+              : null,
+          }),
         );
       },
-      err => reject(err)
+      err => reject(err),
     );
   });
 }
