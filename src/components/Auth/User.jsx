@@ -11,6 +11,10 @@ class User extends Component {
     const { welcomeMessage, user } = this.props;
     const { name, uname, email, emailFingerprint, emailVerified } = user;
 
+    if (!user || !uname) {
+      return <Section name="Loading user info" />;
+    }
+
     return (
       <Section name={`${welcomeMessage || 'User'} ${uname}`}>
         {`Name ${name}`}
