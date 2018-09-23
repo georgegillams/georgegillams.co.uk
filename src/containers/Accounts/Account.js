@@ -42,12 +42,13 @@ const getClassName = cssModules(STYLES);
   }),
   dispatch =>
     bindActionCreators(
-      { logout, logoutAll, login, requestMagicLink },
+      { loadAuth, logout, logoutAll, login, requestMagicLink },
       dispatch,
     ),
 )
 export default class Login extends Component {
   static propTypes = {
+    loadAuth: PropTypes.func.isRequired,
     logoutAll: PropTypes.func.isRequired,
     logout: PropTypes.func.isRequired,
     newDataAvailable: PropTypes.bool.isRequired,
@@ -72,10 +73,12 @@ export default class Login extends Component {
 
   handleSubmit = () => {
     this.props.login(this.state.credentials);
+    this.props.loadAuth();
   };
 
   handleSubmitMagic = () => {
     this.props.requestMagicLink(this.state.credentials);
+    this.props.loadAuth();
   };
 
   logoutAll = () => {
