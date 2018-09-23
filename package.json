@@ -29,7 +29,7 @@
     "start-prod-api": "better-npm-run start-prod-api",
     "build": "better-npm-run build",
     "transpile-bpk-deps": "node scripts/transpile-bpk-dependencies.js",
-    "clean-transpiled-deps": "rm -rf node_modules/bpk-*_TRANSPILED",
+    "clean-transpiled-deps": "rm -rf node_modules/*_TRANSPILED",
     "postinstall": "npm run transpile-bpk-deps && npm run build",
     "lint": "eslint -c .eslintrc src api",
     "start-dev": "better-npm-run start-dev",
