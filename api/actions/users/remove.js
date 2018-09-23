@@ -2,6 +2,7 @@ import { datumRemove } from '../datum';
 import authentication from '../../utils/authentication';
 import { userOwnsResource } from '../../utils/userOwnsResource';
 import { UNAUTHORISED_WRITE } from '../../../src/utils/constants';
+import reqSecure from '../../utils/reqSecure';
 import usersAllowedAttributes from './usersAllowedAttributes';
 
 export default function remove(req) {
