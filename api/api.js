@@ -10,7 +10,8 @@ import SocketIo from 'socket.io';
 var child_process = require('child_process');
 var cookieParser = require('cookie-parser');
 
-child_process.fork('./api/bots/sw_justice_twitter_bot.js');
+// Twitter bots:
+// child_process.fork('./api/bots/sw_justice_twitter_bot.js');
 
 const pretty = new PrettyError();
 const app = express();

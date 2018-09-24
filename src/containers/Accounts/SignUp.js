@@ -2,7 +2,7 @@ import React, { Component, PropTypes } from 'react';
 import { connect } from 'react-redux';
 import Helmet from 'react-helmet';
 import { bindActionCreators } from 'redux';
-import { createUser } from 'redux/modules/auth';
+import { createUser, checkUnameTaken } from 'redux/modules/auth';
 import { TextLink, NotificationComp, SignUpForm, Section } from 'components';
 
 @connect(
@@ -10,14 +10,16 @@ import { TextLink, NotificationComp, SignUpForm, Section } from 'components';
     newDataAvailable: state.sessions.newDataAvailable,
     registeringError: state.auth.registeringError,
     registered: state.auth.registered,
+    unameTakens: state.auth.unameTakens || {},
     // newCommentBeingCreated: state.comments.creating['newComment']
   }),
-  dispatch => bindActionCreators({ createUser }, dispatch),
+  dispatch => bindActionCreators({ checkUnameTaken, createUser }, dispatch),
 )
 export default class SignUp extends Component {
   static propTypes = {
     newDataAvailable: PropTypes.bool.isRequired,
     registeringError: PropTypes.object.isRequired,
+    unameTakens: PropTypes.arrayOf(PropTypes.object).isRequired,
     registered: PropTypes.object.isRequired,
     createUser: PropTypes.func.isRequired,
   };
@@ -32,6 +34,10 @@ export default class SignUp extends Component {
 
   updateNewUser = newValue => {
     this.setState({ newUser: newValue });
+    if (this.props.unameTakens[newValue.uname] === undefined) {
+      console.log(`checking uname`, newValue.uname);
+      this.props.checkUnameTaken(newValue.uname);
+    }
   };
 
   handleSubmit = () => {
@@ -43,8 +49,11 @@ export default class SignUp extends Component {
       registered,
       registeringError,
       newDataAvailable,
+      unameTakens,
       ...rest
     } = this.props;
+
+    console.log(`unameTakens`, unameTakens);
 
     return (
       <div className="container">
@@ -54,6 +63,11 @@ export default class SignUp extends Component {
         {registered && (
           <NotificationComp type="success">
             {'Registration successful. [You can now login](/account)'}
+          </NotificationComp>
+        )}
+        {unameTakens[this.state.newUser.uname] && (
+          <NotificationComp type="error">
+            {`Username ${this.state.newUser.uname} is already taken.`}
           </NotificationComp>
         )}
         {registeringError && (
