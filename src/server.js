@@ -1,68 +1,68 @@
-import Express from "express";
-import React from "react";
-import ReactDOM from "react-dom/server";
-import config from "./config";
-import favicon from "serve-favicon";
-import compression from "compression";
-import httpProxy from "http-proxy";
-import path from "path";
-import createStore from "./redux/create";
-import ApiClient from "./helpers/ApiClient";
-import Html from "./helpers/Html";
-import PrettyError from "pretty-error";
-import http from "http";
+import Express from 'express';
+import React from 'react';
+import ReactDOM from 'react-dom/server';
+import config from './config';
+import favicon from 'serve-favicon';
+import compression from 'compression';
+import httpProxy from 'http-proxy';
+import path from 'path';
+import createStore from './redux/create';
+import ApiClient from './helpers/ApiClient';
+import Html from './helpers/Html';
+import PrettyError from 'pretty-error';
+import http from 'http';
 
-import { match } from "react-router";
-import { syncHistoryWithStore } from "react-router-redux";
-import { ReduxAsyncConnect, loadOnServer } from "redux-async-connect";
-import createHistory from "react-router/lib/createMemoryHistory";
-import { Provider } from "react-redux";
-import getRoutes from "./routes";
+import { match } from 'react-router';
+import { syncHistoryWithStore } from 'react-router-redux';
+import { ReduxAsyncConnect, loadOnServer } from 'redux-async-connect';
+import createHistory from 'react-router/lib/createMemoryHistory';
+import { Provider } from 'react-redux';
+import getRoutes from './routes';
 
-import seo from "./seo";
-import greasemonkey from "./greasemonkey";
+import seo from './seo';
+import greasemonkey from './greasemonkey';
 
-const targetUrl = "http://" + config.apiHost + ":" + config.apiPort;
+const targetUrl = 'http://' + config.apiHost + ':' + config.apiPort;
 const pretty = new PrettyError();
 const app = new Express();
 const server = new http.Server(app);
 const proxy = httpProxy.createProxyServer({
   target: targetUrl,
-  ws: true
+  ws: true,
 });
 
 app.use(compression());
-app.use(favicon(path.join(__dirname, "..", "static", "favicon.ico")));
+app.use(favicon(path.join(__dirname, '..', 'static', 'favicon.ico')));
 
-app.use(Express.static(path.join(__dirname, "..", "static")));
+app.use(Express.static(path.join(__dirname, '..', 'static')));
 
 // Proxy to API server
-app.use("/api", (req, res) => {
+app.use('/api', (req, res) => {
   proxy.web(req, res, { target: targetUrl });
 });
 
-app.use("/ws", (req, res) => {
-  proxy.web(req, res, { target: targetUrl + "/ws" });
+app.use('/ws', (req, res) => {
+  proxy.web(req, res, { target: targetUrl + '/ws' });
 });
 
 app.use(seo);
 app.use(greasemonkey);
 
-server.on("upgrade", (req, socket, head) => {
+server.on('upgrade', (req, socket, head) => {
   proxy.ws(req, socket, head);
 });
 
 // added the error handling to avoid https://github.com/nodejitsu/node-http-proxy/issues/527
-proxy.on("error", (error, req, res) => {
+proxy.on('error', (error, req, res) => {
   let json;
-  if (error.code !== "ECONNRESET") {
-    console.error("proxy error", error);
+  if (error.code !== 'ECONNRESET') {
+    console.error('proxy error', error);
   }
   if (!res.headersSent) {
-    res.writeHead(500, { "content-type": "application/json" });
+    res.writeHead(500, { 'content-type': 'application/json' });
   }
 
-  json = { error: "proxy_error", reason: error.message };
+  json = { error: 'proxy_error', reason: error.message };
   res.end(JSON.stringify(json));
 });
 
@@ -79,10 +79,10 @@ app.use((req, res) => {
 
   function hydrateOnClient() {
     res.send(
-      "<!doctype html>\n" +
+      '<!doctype html>\n' +
         ReactDOM.renderToString(
-          <Html assets={webpackIsomorphicTools.assets()} store={store} />
-        )
+          <Html assets={webpackIsomorphicTools.assets()} store={store} />,
+        ),
     );
   }
 
@@ -97,7 +97,7 @@ app.use((req, res) => {
       if (redirectLocation) {
         res.redirect(redirectLocation.pathname + redirectLocation.search);
       } else if (error) {
-        console.error("ROUTER ERROR:", pretty.render(error));
+        console.error('ROUTER ERROR:', pretty.render(error));
         res.status(500);
         hydrateOnClient();
       } else if (renderProps) {
@@ -111,24 +111,24 @@ app.use((req, res) => {
 
             res.status(200);
 
-            global.navigator = { userAgent: req.headers["user-agent"] };
+            global.navigator = { userAgent: req.headers['user-agent'] };
 
             res.send(
-              "<!doctype html>\n" +
+              '<!doctype html>\n' +
                 ReactDOM.renderToString(
                   <Html
                     assets={webpackIsomorphicTools.assets()}
                     component={component}
                     store={store}
-                  />
-                )
+                  />,
+                ),
             );
-          }
+          },
         );
       } else {
-        res.status(404).send("Not found");
+        res.status(404).send('Not found');
       }
-    }
+    },
   );
 });
 
@@ -138,18 +138,18 @@ if (config.port) {
       console.error(err);
     }
     console.info(
-      "----\n==> ✅  %s is running, talking to API server on %s.",
+      '----\n==> ✅  %s is running, talking to API server on %s.',
       config.app.title,
-      config.apiPort
+      config.apiPort,
     );
     console.info(
-      "==> 💻  Open http://%s:%s in a browser to view the app.",
+      '==> 💻  Open http://%s:%s in a browser to view the app.',
       config.host,
-      config.port
+      config.port,
     );
   });
 } else {
   console.error(
-    "==>     ERROR: No PORT environment variable has been specified"
+    '==>     ERROR: No PORT environment variable has been specified',
   );
 }
