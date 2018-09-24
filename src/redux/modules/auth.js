@@ -25,6 +25,10 @@ const LOGOUT_ALL_FAIL = 'redux-example/auth/LOGOUT_ALL_FAIL';
 const LOGOUT = 'redux-example/auth/LOGOUT';
 const LOGOUT_SUCCESS = 'redux-example/auth/LOGOUT_SUCCESS';
 const LOGOUT_FAIL = 'redux-example/auth/LOGOUT_FAIL';
+const CHECK_UNAME_TAKEN = 'redux-example/auth/CHECK_UNAME_TAKEN';
+const CHECK_UNAME_TAKEN_SUCCESS =
+  'redux-example/auth/CHECK_UNAME_TAKEN_SUCCESS';
+const CHECK_UNAME_TAKEN_FAIL = 'redux-example/auth/CHECK_UNAME_TAKEN_FAIL';
 
 const initialState = {
   loaded: false,
@@ -206,6 +210,26 @@ export default function reducer(state = initialState, action = {}) {
         loggingOut: false,
         logoutError: action.error,
       };
+    case CHECK_UNAME_TAKEN:
+      return state; // 'saving' flag handled by redux-form
+    case CHECK_UNAME_TAKEN_SUCCESS:
+      return {
+        ...state,
+        unameTakens: {
+          ...state.unameTakens,
+          [action.id]: action.result,
+        },
+      };
+    case CHECK_UNAME_TAKEN_FAIL:
+      return typeof action.error === 'string'
+        ? {
+            ...state,
+            unameTakens: {
+              ...state.unameTakens,
+              [action.id]: null,
+            },
+          }
+        : state;
     default:
       return state;
   }
@@ -295,6 +319,22 @@ export function update(user) {
       client.post('/users/update', {
         params: { 'Content-Type': 'application/json' },
         data: user,
+      }),
+  };
+}
+
+export function checkUnameTaken(uname) {
+  return {
+    types: [
+      CHECK_UNAME_TAKEN,
+      CHECK_UNAME_TAKEN_SUCCESS,
+      CHECK_UNAME_TAKEN_FAIL,
+    ],
+    id: uname,
+    promise: client =>
+      client.post('/users/unametaken', {
+        params: { 'Content-Type': 'application/json' },
+        data: { uname: uname },
       }),
   };
 }
