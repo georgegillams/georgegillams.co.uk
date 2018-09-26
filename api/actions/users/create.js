@@ -39,10 +39,10 @@ export default function create(req) {
               reqSecured.body.emailFingerprint = emailFingerprint(
                 reqSecured.body.email,
               );
-              reqSecured.body.emailVerified = true; // TODO CHANGE TO false;
+              reqSecured.body.emailVerified = false;
               datumCreate({ redisKey: 'users', user: user }, reqSecured).then(
                 newUser => {
-                  // TODO sendEmailVerificationEmail(newUser);
+                  sendEmailVerificationEmail(newUser);
                   resolve(newUser);
                 },
               );

@@ -50,6 +50,7 @@ export default function update(req) {
                     const emailVerificationRequired =
                       reqSecured.body.email !== userBeingUpdated.email;
                     if (emailVerificationRequired) {
+                      reqSecured.body.emailVerified = false;
                       reqSecured.body.emailFingerprint = emailFingerprint(
                         reqSecured.body.email,
                       );
