@@ -1,4 +1,4 @@
-@import "~bpk-mixins";
+@import '~bpk-mixins';
 
 .navigation-bar {
   &__container {
@@ -41,6 +41,9 @@
 
   &__desktop-container {
     display: flex;
+    width: 30%;
+    align-items: center;
+    justify-content: center;
 
     @include bpk-breakpoint-tablet {
       display: none;
