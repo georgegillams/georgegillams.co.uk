@@ -39,7 +39,7 @@ class Typography extends Component {
 
     return (
       <div className={outerClassNameFinal.join(' ')} {...rest}>
-        <Helmet title="Typograhpy" />
+        <Helmet title="Typography" />
         <Section name="Typography">
           <SubSection noAnchor name="Section">
             <SectionDemo className={demoClassName} />
