@@ -26,7 +26,7 @@ const ArticleDate = props => {
       className={classNameFinal.join(' ')}
       {...rest}
     >
-      Published {date.toString()}
+      Published {date && date.toString()}
     </BpkText>
   );
 };
@@ -34,12 +34,12 @@ const ArticleDate = props => {
 ArticleDate.propTypes = {
   date: PropTypes.number.isRequired,
   className: PropTypes.string,
-  noPadding: PropTypes.bool
+  noPadding: PropTypes.bool,
 };
 
 ArticleDate.defaultProps = {
   className: null,
-  noPadding: false
+  noPadding: false,
 };
 
 export default ArticleDate;
