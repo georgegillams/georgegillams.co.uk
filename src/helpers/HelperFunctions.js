@@ -20,7 +20,7 @@ class HelperFunctions {
     return returnValue;
   }
   static evalCompat(code) {
-    if (this.getBrowser(window).ie) {
+    if (typeof window === 'undefined' || this.getBrowser(window).ie) {
       return () => null;
     }
     return eval(code); // eslint-disable-line
