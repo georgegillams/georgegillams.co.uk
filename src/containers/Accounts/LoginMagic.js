@@ -27,6 +27,7 @@ import { Section, SubSection } from 'components';
   state => ({
     newDataAvailable: state.sessions.newDataAvailable,
     loggingIn: state.auth.loggingIn,
+    loginError: state.auth.loginError,
     user: state.auth.user,
     session: state.sessions.session,
     // newCommentBeingCreated: state.comments.creating['newComment']
@@ -37,11 +38,13 @@ export default class LoginMagic extends Component {
   static propTypes = {
     newDataAvailable: PropTypes.bool.isRequired,
     loggingIn: PropTypes.bool.isRequired,
+    logginError: PropTypes.object,
     user: PropTypes.object,
     session: PropTypes.string,
   };
 
   static defaultProps = {
+    loginError: null,
     user: null,
     session: null,
   };
@@ -67,10 +70,13 @@ export default class LoginMagic extends Component {
   };
 
   render() {
-    const { user, session, loggingIn, ...rest } = this.props;
+    const { loginError, user, session, loggingIn, ...rest } = this.props;
 
     return (
       <div className="container">
+        {loginError && (
+          <NotificationComp type="error">Error loggin in</NotificationComp>
+        )}
         <Section name="Magic log in" />
         <Helmet title="Magic log in" />
         {this.state.attemptingLogin && (

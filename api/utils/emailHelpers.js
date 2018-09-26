@@ -1,6 +1,6 @@
-import { datumCreate } from "../actions/datum";
-import crypto from "crypto";
-import transporter from "./nodemailer";
+import { datumCreate } from '../actions/datum';
+import crypto from 'crypto';
+import transporter from './nodemailer';
 
 export function sendMagicLinkEmail(userProfile) {
   const now = new Date();
@@ -8,19 +8,18 @@ export function sendMagicLinkEmail(userProfile) {
   const magicLink = {
     userId: userProfile.id,
     expiry: oneHoursTime,
-    key: crypto.randomBytes(20).toString("hex")
+    key: crypto.randomBytes(20).toString('hex'),
   };
-  datumCreate({ redisKey: "magiclinks" }, { body: magicLink });
-  // TODO Change to georgegillams.co.uk
+  datumCreate({ redisKey: 'magiclinks' }, { body: magicLink });
   const magicLinkUrl = `https://www.georgegillams.co.uk/magic-login/${
     magicLink.key
   }`;
   // Send the magic link URL to the email address of the user
   transporter.sendMail(
     {
-      from: "g@georgegillams.co.ukb",
+      from: 'g@georgegillams.co.ukb',
       to: userProfile.email,
-      subject: "Your magic login link",
+      subject: 'Your magic login link',
       text: `Your magic link is:
 ${magicLinkUrl}\n\nIt will expire ${oneHoursTime.toString()}`,
       html: `<div style="text-align: center;color: #1e1e1e;">
@@ -34,13 +33,13 @@ ${magicLinkUrl}\n\nIt will expire ${oneHoursTime.toString()}`,
       This magic link will expire ${oneHoursTime.toString()}
     </p>
   </p>
-</div>`
+</div>`,
     },
     error => {
       if (error) {
         return console.log(error);
       }
-    }
+    },
   );
 }
 
@@ -50,22 +49,21 @@ export function sendEmailVerificationEmail(userProfile) {
   const verificationLink = {
     userId: userProfile.id,
     expiry: oneDaysTime,
-    key: crypto.randomBytes(20).toString("hex")
+    key: crypto.randomBytes(20).toString('hex'),
   };
   datumCreate(
-    { redisKey: "emailVerificationCodes" },
-    { body: verificationLink }
+    { redisKey: 'emailVerificationCodes' },
+    { body: verificationLink },
   );
-  // TODO Change to georgegillams.co.uk
   const emailVerificationLink = `https://www.georgegillams.co.uk/email-verification/${
     verificationLink.key
   }`;
   // Send the magic link URL to the email address of the user
   transporter.sendMail(
     {
-      from: "g@georgegillams.co.ukb",
+      from: 'g@georgegillams.co.ukb',
       to: userProfile.email,
-      subject: "Verify your email address",
+      subject: 'Verify your email address',
       text: `Your email verification link is:
 ${emailVerificationLink}\n\nIt will expire ${oneDaysTime.toString()}`,
       html: `<div style="text-align: center;color: #1e1e1e;">
@@ -79,12 +77,12 @@ ${emailVerificationLink}\n\nIt will expire ${oneDaysTime.toString()}`,
       This verification link will expire ${oneDaysTime.toString()}
     </p>
   </p>
-</div>`
+</div>`,
     },
     error => {
       if (error) {
         return console.log(error);
       }
-    }
+    },
   );
 }
