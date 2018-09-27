@@ -1,7 +1,7 @@
-import datumLoad from "./datumLoad";
-import redis from "../../utils/redis";
-import { find } from "../../utils/find";
-import setContentLastUpdatedTimestamp from "../../utils/setContentLastUpdatedTimestamp";
+import datumLoad from './datumLoad';
+import redis from '../../utils/redis';
+import { find } from '../../utils/find';
+import setContentLastUpdatedTimestamp from '../../utils/setContentLastUpdatedTimestamp';
 
 export default function datumCreate(settings, req) {
   return new Promise((resolve, reject) => {
@@ -15,7 +15,7 @@ export default function datumCreate(settings, req) {
       if (requestedId) {
         const { existingValue: entityWithSameId } = find(
           existingData,
-          requestedId
+          requestedId,
         );
         if (!entityWithSameId) {
           newValue.id = requestedId;
@@ -23,12 +23,13 @@ export default function datumCreate(settings, req) {
       }
 
       newValue.timestamp = Date.now();
+      newValue.lastUpdatedTimestamp = newValue.timestamp;
       newValue.authorId = settings.user ? settings.user.id : undefined;
       // Write to redis:
       redis.rpush([settings.redisKey, JSON.stringify(newValue)]);
       if (
-        settings.redisKey !== "sessions" &&
-        settings.redisKey !== "contentUpdates"
+        settings.redisKey !== 'sessions' &&
+        settings.redisKey !== 'contentUpdates'
       ) {
         setContentLastUpdatedTimestamp();
       }
@@ -41,7 +42,7 @@ export default function datumCreate(settings, req) {
         },
         err => {
           reject(err);
-        }
+        },
       );
     });
   });

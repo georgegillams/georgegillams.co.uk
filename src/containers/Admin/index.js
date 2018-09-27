@@ -9,3 +9,4 @@ export AdminBlogs from './Blogs';
 export AdminBlogEditor from './BlogEditor';
 export AdminUsers from './Users';
 export AdminSiteSettings from './SiteSettings';
+export AdminGTS from './GTS';
