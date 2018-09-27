@@ -23,6 +23,7 @@ import {
   Photography,
   Payments,
   Work,
+  GTS,
   LoginSuccess,
   Survey,
   AdminUsers,
@@ -32,6 +33,7 @@ import {
   AdminPayments,
   AdminBlogs,
   AdminSiteSettings,
+  AdminGTS,
   Design,
   DesignColours,
   DesignComponents,
@@ -109,6 +111,7 @@ export default store => {
       </Route>
 
       {/* Routes */}
+      <Route path="gts" component={GTS} />
       <Route path="about" component={About} />
       <Route path="comment-editor/:id" component={CommentEditor} />
       <Route path="magic-login/:key" component={LoginMagic} />
@@ -124,6 +127,7 @@ export default store => {
       <Route path="admin/payments" component={AdminPayments} />
       <Route path="admin/site-settings" component={AdminSiteSettings} />
       <Route path="admin/blog" component={AdminBlogs} />
+      <Route path="admin/gts" component={AdminGTS} />
       <Route path="admin/blog/:id" component={AdminBlogEditor} />
       <Route path="contact" component={Contact} />
       <Route path="design" component={Design} />

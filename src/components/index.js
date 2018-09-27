@@ -30,6 +30,7 @@ export SurveyForm from './SurveyForm/SurveyForm';
 export Tag, { TagFilter } from './Tag';
 export Comments, { CommentInput, Comment } from './Comments';
 export {
+  CreateGTSForm,
   CreateNotificationForm,
   SignUpForm,
   LoginForm,
@@ -38,4 +39,5 @@ export {
 export GraphicContent, { withGraphicContentBehaviour } from './GraphicContent';
 export WidgetForm from './WidgetForm/WidgetForm';
 export PhotoGallery from './PhotoGallery/PhotoGallery';
+export GTSEntity from './GTS';
 export bpkDemo from './bpk-component-demo';
