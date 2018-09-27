@@ -6,6 +6,7 @@ import { routerReducer } from 'react-router-redux';
 
 import auth from './auth';
 import blogs from './blogs';
+import gts from './gts';
 import comments from './comments';
 import payments from './payments';
 import counter from './counter';
@@ -23,14 +24,15 @@ export default combineReducers({
   multireducer: multireducer({
     counter1: counter,
     counter2: counter,
-    counter3: counter
+    counter3: counter,
   }),
   info,
   notifications,
   comments,
   blogs,
+  gts,
   payments,
   sessions,
   pagination,
-  widgets
+  widgets,
 });

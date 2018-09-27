@@ -19,6 +19,7 @@ export default function datumUpdate(settings, req) {
         if (existingValue) {
           // Persist unchangeable values
           value.timestamp = existingValue.timestamp;
+          value.lastUpdatedTimestamp = Date.now();
           value.authorId = existingValue.authorId;
 
           values[existingValueIndex] = value;
