@@ -36,6 +36,7 @@ export PasswordCharacterExtractor from './Work/PasswordCharacterExtractor';
 export BlogViewer from './Blogs/BlogViewer';
 export TravelBlogs from './Blogs/TravelBlogs';
 export CommentArea from './Aspects/CommentArea';
+export GTS from './GTS/GTS';
 export Admin, {
   AdminPayments,
   AdminNotifications,
@@ -45,4 +46,5 @@ export Admin, {
   AdminUsers,
   AdminBlogEditor,
   AdminSiteSettings,
+  AdminGTS,
 } from './Admin';

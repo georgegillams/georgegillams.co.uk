@@ -128,6 +128,15 @@ export default class Admin extends Component {
                 title="Heroku"
                 tallLayout
               />
+              <ArticleCard
+                layout={CARD_LAYOUTS.narrowCompact}
+                day={null}
+                month={null}
+                className={getClassName('pages__card')}
+                href="/admin/gts"
+                title="GTS"
+                tallLayout
+              />
             </div>
           </Section>
         </AdminOnly>
