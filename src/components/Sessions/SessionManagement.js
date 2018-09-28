@@ -257,6 +257,14 @@ export default class SessionManagement extends Component {
                   </Button>
                   <Button
                     className={getClassName('cookie-banner__component')}
+                    onClick={() => {
+                      this.setState({ cookieNotificationHidden: true });
+                    }}
+                  >
+                    Ask me later
+                  </Button>
+                  <Button
+                    className={getClassName('cookie-banner__component')}
                     small
                     destructive
                     onClick={this.rejectCookies}

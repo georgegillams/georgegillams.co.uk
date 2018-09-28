@@ -24,6 +24,7 @@ export default function reducer(state = initialState, action = {}) {
     case LOAD:
       return {
         ...state,
+        data: null,
         loading: true,
       };
     case LOAD_SUCCESS:
@@ -49,6 +50,7 @@ export default function reducer(state = initialState, action = {}) {
           ...state.singleLoading,
           [action.id]: true,
         },
+        latestData: null,
       };
     case LATEST_LOAD_SUCCESS:
       return {
@@ -63,7 +65,7 @@ export default function reducer(state = initialState, action = {}) {
         ...state,
         singleLoading: false,
         latestLoaded: false,
-        latestData: action.result,
+        latestData: null,
         singleError: action.error,
       };
     case EDIT_START:
