@@ -8,3 +8,4 @@ export Quote from './Quote';
 export LlAnimatedContent from './LlAnimatedContent';
 export BlogPreviewContent from './BlogPreviewContent';
 export BlogRenderer from './BlogRenderer';
+export ContentWidthRestrictor from './ContentWidthRestrictor';
