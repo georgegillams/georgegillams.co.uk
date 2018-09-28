@@ -6,7 +6,7 @@ import { asyncConnect } from 'redux-async-connect';
 import {
   isLoaded as isAuthLoaded,
   verifyEmail,
-  load as loadAuth
+  load as loadAuth,
 } from 'redux/modules/auth';
 import { Section } from 'components';
 
@@ -21,27 +21,29 @@ import { Section } from 'components';
       }
 
       return Promise.all(promises);
-    }
-  }
+    },
+  },
 ])
 @connect(
   state => ({
     newDataAvailable: state.sessions.newDataAvailable,
     verifyingEmail: state.auth.verifyingEmail,
-    user: state.auth.user
+    emailVerified: state.auth.emailVerified,
+    user: state.auth.user,
     // newCommentBeingCreated: state.comments.creating['newComment']
   }),
-  dispatch => bindActionCreators({}, dispatch)
+  dispatch => bindActionCreators({}, dispatch),
 )
 export default class VerifyEmail extends Component {
   static propTypes = {
     newDataAvailable: PropTypes.bool.isRequired,
     verifyingEmail: PropTypes.bool.isRequired,
-    user: PropTypes.object
+    emailVerified: PropTypes.bool.isRequired,
+    user: PropTypes.object,
   };
 
   static defaultProps = {
-    user: null
+    user: null,
   };
 
   constructor(props) {
@@ -51,18 +53,16 @@ export default class VerifyEmail extends Component {
   }
 
   render() {
-    const { user, verifyingEmail, ...rest } = this.props;
+    const { user, emailVerified, verifyingEmail, ...rest } = this.props;
 
     return (
       <div className="container">
         <Section name="Verify email" />
         <Helmet title="Verify email" />
-        {user &&
-          user.emailVerified && (
-            <Section name="Thanks - your email is verified" />
-          )}
-        {!verifyingEmail &&
-          !(user && user.emailVerified) && <Section name="Invalid key." />}
+        {emailVerified && (
+          <Section name="Thanks - Your email has been verified" />
+        )}
+        {!verifyingEmail && !emailVerified && <Section name="Invalid key." />}
       </div>
     );
   }

@@ -1,17 +1,12 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import moment from 'moment';
+import { getTimeDifference } from '../../utils/time';
 import { TextLink, Section } from '../';
 
 class GTSEntity extends Component {
   constructor(props) {
     super(props);
   }
-
-  getTimeDifference = timeStamp => {
-    const currentTime = moment();
-    return moment(timeStamp).fromNow();
-  };
 
   render() {
     const { gts } = this.props;
@@ -28,7 +23,7 @@ class GTSEntity extends Component {
         <Section name={emoji} />
         <br />
         <br />
-        {`Last updated: ${this.getTimeDifference(lastUpdatedTimestamp)}`}
+        {`Last updated: ${getTimeDifference(lastUpdatedTimestamp)}`}
       </Section>
     );
   }
