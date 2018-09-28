@@ -140,12 +140,14 @@ export default function reducer(state = initialState, action = {}) {
       return {
         ...state,
         verifyingEmail: true,
+        emailVerified: false,
         emailVerificationError: null,
       };
     case VERIFY_EMAIL_SUCCESS:
       return {
         ...state,
         verifyingEmail: false,
+        emailVerified: true,
         user: action.result,
         emailVerificationError: null,
       };
@@ -153,6 +155,7 @@ export default function reducer(state = initialState, action = {}) {
       return {
         ...state,
         verifyingEmail: false,
+        emailVerified: false,
         user: null,
         emailVerificationError: action.error,
       };

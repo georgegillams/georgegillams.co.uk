@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { TextLink, Section } from '../';
+import { getTimeDifference } from '../../utils/time';
 
 class APIEntity extends Component {
   constructor(props) {
@@ -9,7 +10,7 @@ class APIEntity extends Component {
 
   render() {
     const { entityType, entity } = this.props;
-    const { id, timestamp, deleted, authorId } = entity;
+    const { id, timestamp, lastUpdatedTimestamp, deleted, authorId } = entity;
 
     return (
       <Section name={`${entityType || 'Entity'} ${id}`}>
@@ -18,6 +19,10 @@ class APIEntity extends Component {
         {`Deleted ${deleted}`}
         <br />
         {`Created by ${authorId}`}
+        <br />
+        {`Last updated: ${getTimeDifference(
+          lastUpdatedTimestamp,
+        )} (${lastUpdatedTimestamp})`}
       </Section>
     );
   }

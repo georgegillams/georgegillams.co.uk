@@ -133,7 +133,7 @@ export default class Admin extends Component {
                 day={null}
                 month={null}
                 className={getClassName('pages__card')}
-                href="/admin/gts"
+                linkUrl="/admin/gts"
                 title="GTS"
                 tallLayout
               />
