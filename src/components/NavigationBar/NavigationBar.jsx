@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import BpkIconClose from 'bpk-component-icon/lg/close';
 import BpkIconMenu from 'bpk-component-icon/lg/menu';
 import BpkBreakpoint, { BREAKPOINTS } from 'bpk-component-breakpoint';
-import { Logo, Button } from '../';
+import { Logo, Button, ContentWidthRestrictor } from '../';
 import NavigationItem from './NavigationItem';
 import { cssModules } from 'bpk-react-utils';
 
@@ -85,7 +85,7 @@ class NavigationBar extends Component {
     const accountItem = (
       <NavigationItem
         className={getClassName('navigation-bar__nav-item')}
-        name={user ? 'Account' : 'Sign in'}
+        name={user ? 'Account' : 'Login'}
         linkUrl="/account"
         onClick={this.close}
       />
@@ -115,46 +115,50 @@ class NavigationBar extends Component {
 
     return (
       <div className={outerClassNameFinal.join(' ')} {...rest}>
-        <div className={getClassName('navigation-bar__bar')} {...rest}>
-          <div
-            className={getClassName('navigation-bar__mobile-container--left')}
-          >
-            <Button bouncy onClick={this.toggle}>
-              {this.state.isOpen ? (
-                <BpkIconClose style={{ paddingTop: '.3rem' }} />
-              ) : (
-                <BpkIconMenu style={{ paddingTop: '.3rem' }} />
+        <ContentWidthRestrictor>
+          <div className={getClassName('navigation-bar__bar')} {...rest}>
+            <div
+              className={getClassName('navigation-bar__mobile-container--left')}
+            >
+              <Button bouncy onClick={this.toggle}>
+                {this.state.isOpen ? (
+                  <BpkIconClose style={{ paddingTop: '.3rem' }} />
+                ) : (
+                  <BpkIconMenu style={{ paddingTop: '.3rem' }} />
+                )}
+              </Button>
+            </div>
+            <div className={getClassName('navigation-bar__desktop-container')}>
+              {menuItems1}
+            </div>
+            <div className={getClassName('navigation-bar__logo-container')}>
+              <Logo
+                className={getClassName('navigation-bar__nav-item')}
+                small
+                noPadding
+                animated
+              />
+            </div>
+            <div className={getClassName('navigation-bar__desktop-container')}>
+              {menuItems2}
+            </div>
+            <div
+              className={getClassName(
+                'navigation-bar__mobile-container--right',
               )}
-            </Button>
+            >
+              {accountItem}
+            </div>
           </div>
-          <div className={getClassName('navigation-bar__desktop-container')}>
-            {menuItems1}
+          <div className={animatedContainerClassNameFinal.join(' ')}>
+            <div
+              className={getClassName('navigation-bar__mobile-menu-container')}
+            >
+              {menuItems1}
+              {menuItems2}
+            </div>
           </div>
-          <div className={getClassName('navigation-bar__logo-container')}>
-            <Logo
-              className={getClassName('navigation-bar__nav-item')}
-              small
-              noPadding
-              animated
-            />
-          </div>
-          <div className={getClassName('navigation-bar__desktop-container')}>
-            {menuItems2}
-          </div>
-          <div
-            className={getClassName('navigation-bar__mobile-container--right')}
-          >
-            {accountItem}
-          </div>
-        </div>
-        <div className={animatedContainerClassNameFinal.join(' ')}>
-          <div
-            className={getClassName('navigation-bar__mobile-menu-container')}
-          >
-            {menuItems1}
-            {menuItems2}
-          </div>
-        </div>
+        </ContentWidthRestrictor>
       </div>
     );
   }
