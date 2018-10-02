@@ -2,6 +2,7 @@ import { datumLoad, datumUpdate } from '../actions/datum';
 import { find } from '../utils/find';
 import reqSecure from '../utils/reqSecure';
 import usersAllowedAttributes from './users/usersAllowedAttributes';
+import loginUser from '../utils/login';
 
 export default function loginmagiclink(req) {
   const reqSecured = reqSecure(req, usersAllowedAttributes);
@@ -18,20 +19,7 @@ export default function loginmagiclink(req) {
           // invalidate magic link (set expiry to 0)
           magicLink.expiry = 0;
           datumUpdate({ redisKey: 'magiclinks' }, { body: magicLink });
-          datumLoad({ redisKey: 'sessions' }).then(sessionData => {
-            const { existingValue: session } = find(
-              sessionData,
-              reqSecured.cookies.session,
-              'sessionKey',
-            );
-            if (session) {
-              session.userId = magicLink.userId;
-              session.userAuthenticatedTimestamp = Date.now();
-              resolve(datumUpdate({ redisKey: 'sessions' }, { body: session }));
-            } else {
-              reject({ error: 'Invalid session' });
-            }
-          });
+          loginUser(reqSecured, magicLink, resolve, reject);
         } else {
           reject({ error: 'Magic link has expired' });
         }

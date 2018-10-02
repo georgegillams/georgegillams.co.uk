@@ -6,6 +6,7 @@ import { sendEmailVerificationEmail } from '../../utils/emailHelpers';
 import { UNAUTHORISED_WRITE } from '../../../src/utils/constants';
 import reqSecure from '../../utils/reqSecure';
 import usersAllowedAttributes from './usersAllowedAttributes';
+import loginUser from '../../utils/login';
 
 export default function create(req) {
   const reqSecured = reqSecure(req, usersAllowedAttributes);
@@ -43,7 +44,7 @@ export default function create(req) {
               datumCreate({ redisKey: 'users', user: user }, reqSecured).then(
                 newUser => {
                   sendEmailVerificationEmail(newUser);
-                  resolve(newUser);
+                  loginUser(reqSecured, newUser, resolve, reject);
                 },
               );
             }
