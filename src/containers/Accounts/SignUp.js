@@ -3,7 +3,13 @@ import { connect } from 'react-redux';
 import Helmet from 'react-helmet';
 import { bindActionCreators } from 'redux';
 import { createUser, checkUnameTaken } from 'redux/modules/auth';
-import { TextLink, NotificationComp, SignUpForm, Section } from 'components';
+import {
+  CookiesOnly,
+  TextLink,
+  NotificationComp,
+  SignUpForm,
+  Section,
+} from 'components';
 
 @connect(
   state => ({
@@ -53,36 +59,36 @@ export default class SignUp extends Component {
       ...rest
     } = this.props;
 
-    console.log(`unameTakens`, unameTakens);
-
     return (
-      <div className="container">
-        <Section name="SignUp" />
-        <Helmet title="Signup" />
+      <CookiesOnly>
+        <div className="container">
+          <Section name="SignUp" />
+          <Helmet title="Signup" />
 
-        {registered && (
-          <NotificationComp type="success">
-            {'Registration successful. [You can now login](/account)'}
-          </NotificationComp>
-        )}
-        {unameTakens[this.state.newUser.uname] && (
-          <NotificationComp type="error">
-            {`Username ${this.state.newUser.uname} is already taken.`}
-          </NotificationComp>
-        )}
-        {registeringError && (
-          <NotificationComp type="error">
-            {registeringError.reason}
-          </NotificationComp>
-        )}
-        <SignUpForm
-          newUser={this.state.newUser}
-          onDataChanged={this.updateNewUser}
-          onSubmit={this.handleSubmit}
-        />
-        <br />
-        <TextLink href="/account">Login </TextLink>
-      </div>
+          {registered && (
+            <NotificationComp type="success">
+              {'Registration successful. [You can now login](/account)'}
+            </NotificationComp>
+          )}
+          {unameTakens[this.state.newUser.uname] && (
+            <NotificationComp type="error">
+              {`Username ${this.state.newUser.uname} is already taken.`}
+            </NotificationComp>
+          )}
+          {registeringError && (
+            <NotificationComp type="error">
+              {registeringError.reason}
+            </NotificationComp>
+          )}
+          <SignUpForm
+            newUser={this.state.newUser}
+            onDataChanged={this.updateNewUser}
+            onSubmit={this.handleSubmit}
+          />
+          <br />
+          <TextLink href="/account">Login </TextLink>
+        </div>
+      </CookiesOnly>
     );
   }
 }
