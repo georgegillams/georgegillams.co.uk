@@ -58,7 +58,7 @@ export default class CookiesOnly extends Component {
 
     return (
       <div {...rest}>
-        {this.state.cookiesAccepted && children}
+        {children}
         {!this.state.cookiesAccepted && (
           <Modal
             open
