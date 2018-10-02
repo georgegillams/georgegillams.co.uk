@@ -12,7 +12,14 @@ import {
   logoutAll,
   requestMagicLink,
 } from 'redux/modules/auth';
-import { User, LoginForm, Section, NotificationComp, Button } from 'components';
+import {
+  CookiesOnly,
+  User,
+  LoginForm,
+  Section,
+  NotificationComp,
+  Button,
+} from 'components';
 import { cssModules } from 'bpk-react-utils';
 
 import STYLES from '../pages.scss';
@@ -93,57 +100,59 @@ export default class Login extends Component {
     const { loginError, magicLinkRequested, user, ...rest } = this.props;
 
     return (
-      <div className="container">
-        <Helmet title="Account" />
-        {!user && (
-          <Section name="Log in">
-            {loginError && (
-              <NotificationComp type="error">
-                {loginError.reason}
-              </NotificationComp>
-            )}
-            {magicLinkRequested && (
-              <NotificationComp type="success">
-                A magic link has been sent to the email provided.
-              </NotificationComp>
-            )}
-            <LoginForm
-              credentials={this.state.credentials}
-              onDataChanged={this.updateCredentials}
-              onSubmit={this.handleSubmit}
-              onSubmitMagic={this.handleSubmitMagic}
-            />
-          </Section>
-        )}
-        {user && (
-          <div>
-            <User welcomeMessage={`Your account,`} user={user} />
-            <Button
-              className={getClassName('pages__component')}
-              href={'/account/edit'}
-            >
-              Edit account
-            </Button>
-            <Section name="Log out">
-              <Button
-                className={getClassName('pages__component')}
-                destructive
-                onClick={this.logout}
-              >
-                Logout
-              </Button>
-              <br />
-              <Button
-                className={getClassName('pages__component')}
-                destructive
-                onClick={this.logoutAll}
-              >
-                Logout from all devices
-              </Button>
+      <CookiesOnly>
+        <div className="container">
+          <Helmet title="Account" />
+          {!user && (
+            <Section name="Log in">
+              {loginError && (
+                <NotificationComp type="error">
+                  {loginError.reason}
+                </NotificationComp>
+              )}
+              {magicLinkRequested && (
+                <NotificationComp type="success">
+                  A magic link has been sent to the email provided.
+                </NotificationComp>
+              )}
+              <LoginForm
+                credentials={this.state.credentials}
+                onDataChanged={this.updateCredentials}
+                onSubmit={this.handleSubmit}
+                onSubmitMagic={this.handleSubmitMagic}
+              />
             </Section>
-          </div>
-        )}
-      </div>
+          )}
+          {user && (
+            <div>
+              <User welcomeMessage={`Your account,`} user={user} />
+              <Button
+                className={getClassName('pages__component')}
+                href={'/account/edit'}
+              >
+                Edit account
+              </Button>
+              <Section name="Log out">
+                <Button
+                  className={getClassName('pages__component')}
+                  destructive
+                  onClick={this.logout}
+                >
+                  Logout
+                </Button>
+                <br />
+                <Button
+                  className={getClassName('pages__component')}
+                  destructive
+                  onClick={this.logoutAll}
+                >
+                  Logout from all devices
+                </Button>
+              </Section>
+            </div>
+          )}
+        </div>
+      </CookiesOnly>
     );
   }
 }

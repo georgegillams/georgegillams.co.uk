@@ -214,67 +214,6 @@ export default class SessionManagement extends Component {
             serverContentUpdateTimestamp: {serverContentUpdateTimestamp}
           </div>
         )}
-        {!this.state.cookiesAccepted &&
-          !this.state.cookieNotificationHidden && (
-            <Modal
-              open
-              onClose={() => {
-                alert('no can do');
-              }}
-              center
-              closeOnEsc={false}
-              closeOnOverlayClick={false}
-              showCloseIcon={false}
-            >
-              <div className={getClassName('cookie-banner__inner-container')}>
-                <Section
-                  name="Privacy and cookies"
-                  noPadding
-                  className={getClassName('cookie-banner__blurrb')}
-                >
-                  Since 25 May when GDPR came into practice nobody’s had a
-                  bloody clue how to be compliant. So here&apos;s yet another
-                  opportunity to give a website permission to eat cookies. If
-                  you don&apos;t care, stop reading now!
-                  <br />
-                  <br />
-                  <TextLink
-                    href="/design/privacy-policy"
-                    onClick={() => {
-                      this.setState({ cookieNotificationHidden: true });
-                    }}
-                  >
-                    Privacy and cookies policy →
-                  </TextLink>
-                </Section>
-                <br />
-                <div>
-                  <Button
-                    className={getClassName('cookie-banner__component')}
-                    onClick={this.acceptCookies}
-                  >
-                    ACCEPT
-                  </Button>
-                  <Button
-                    className={getClassName('cookie-banner__component')}
-                    onClick={() => {
-                      this.setState({ cookieNotificationHidden: true });
-                    }}
-                  >
-                    Ask me later
-                  </Button>
-                  <Button
-                    className={getClassName('cookie-banner__component')}
-                    small
-                    destructive
-                    onClick={this.rejectCookies}
-                  >
-                    Nope nope nope
-                  </Button>
-                </div>
-              </div>
-            </Modal>
-          )}
       </div>
     );
   }
