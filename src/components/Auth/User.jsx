@@ -8,23 +8,23 @@ class User extends Component {
   }
 
   render() {
-    const { welcomeMessage, user } = this.props;
-    const { name, uname, email, emailFingerprint, emailVerified } = user;
+    const { welcomeMessage, user, showAdvancedInfo } = this.props;
+    const { id, name, email, emailFingerprint, emailVerified, phone } = user;
 
-    if (!user || !uname) {
+    if (!user || !name) {
       return <Section name="Loading user info..." />;
     }
 
     return (
-      <Section name={`${welcomeMessage || 'User'} ${uname}`}>
+      <Section name={`${welcomeMessage || 'User'} ${id}`}>
         {`Name ${name}`}
-        <br />
-        {`Username ${uname}`}
         <br />
         {`Email ${email}`}
         <br />
-        {`Email fingerprint ${emailFingerprint}`}
+        {`Phone ${phone}`}
         <br />
+        {showAdvancedInfo && `Email fingerprint ${emailFingerprint}`}
+        {showAdvancedInfo && <br />}
         {`Email verified ${emailVerified}`}
         <br />
         <br />
@@ -36,10 +36,12 @@ class User extends Component {
 User.propTypes = {
   user: PropTypes.object.isRequired,
   welcomMessage: PropTypes.String,
+  showAdvancedInfo: PropTypes.bool,
 };
 
 User.defaultProps = {
   welcomMessage: null,
+  showAdvancedInfo: false,
 };
 
 export default User;

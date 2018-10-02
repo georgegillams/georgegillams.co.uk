@@ -19,7 +19,7 @@ export default function loginmagiclink(req) {
           // invalidate magic link (set expiry to 0)
           magicLink.expiry = 0;
           datumUpdate({ redisKey: 'magiclinks' }, { body: magicLink });
-          loginUser(reqSecured, magicLink, resolve, reject);
+          loginUser(reqSecured, { id: magicLink.userId }, resolve, reject);
         } else {
           reject({ error: 'Magic link has expired' });
         }

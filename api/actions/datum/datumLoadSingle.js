@@ -6,7 +6,6 @@ export default function datumLoadSingle(settings) {
   return new Promise((resolve, reject) => {
     redis.lrange(settings.redisKey, 0, -1, (err, reply) => {
       if (settings.sortKey) {
-        console.log(`unsorted`, reply);
         reply.sort((itemA, itemB) => {
           itemA = JSON.parse(itemA);
           itemB = JSON.parse(itemB);
@@ -18,7 +17,6 @@ export default function datumLoadSingle(settings) {
           return 0;
         });
       }
-      console.log(`sorted`, reply);
       for (let inc = 0; inc < reply.length; inc += 1) {
         const value = JSON.parse(reply[inc]);
         if (!settings.filter || settings.filter(value)) {
