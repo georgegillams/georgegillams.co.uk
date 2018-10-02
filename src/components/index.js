@@ -21,7 +21,7 @@ export {
 } from './Typography';
 
 export DegreeModule from './Degree';
-export { SessionManagement } from './Sessions';
+export { SessionManagement, CookiesOnly } from './Sessions';
 
 export CounterButton from './CounterButton/CounterButton';
 export GithubButton from './GithubButton/GithubButton';
