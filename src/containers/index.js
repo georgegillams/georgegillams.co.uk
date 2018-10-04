@@ -11,6 +11,7 @@ export Design, {
   DesignTypography,
   DesignComponents,
   DesignPrivacyPolicy,
+  DesignLab,
 } from './Design';
 export Home from './Home/Home';
 export Account from './Accounts/Account';
