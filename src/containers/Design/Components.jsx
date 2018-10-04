@@ -2,6 +2,8 @@
 import React, { Component } from 'react';
 import Helmet from 'react-helmet';
 import {
+  Status,
+  StatusCard,
   withGraphicContentBehaviour,
   TextLink,
   Logo,
@@ -89,6 +91,18 @@ const GraphicContentDemo = bpkDemo(GraphicContent, 'GraphicContent', 'na', {
 // const AnimatedContentDemo = bpkDemo(AnimatedContent, 'AnimatedContent', 'na', {
 //   children: '// Child element //',
 // });
+const StatusDemo = bpkDemo(Status, 'Status', 'na', {
+  type: 'SUCCESS',
+  size: 'SMALL',
+});
+const StatusCardDemo = bpkDemo(StatusCard, 'StatusCard', 'na', {
+  overallStatus: 'SUCCESS',
+  data: [
+    { item: 'Account information', status: 'complete' },
+    { item: 'Professional profile', status: 'incomplete' },
+    { item: 'Photo release', status: 'not_started' },
+  ],
+});
 
 class Components extends Component {
   constructor(props) {
@@ -112,6 +126,12 @@ class Components extends Component {
         <Section name="Components">
           <SubSection noAnchor name="Button">
             <ButtonDemo className={demoClassName} />
+          </SubSection>
+          <SubSection noAnchor name="Status">
+            <StatusDemo className={demoClassName} />
+          </SubSection>
+          <SubSection noAnchor name="Status">
+            <StatusCardDemo className={demoClassName} />
           </SubSection>
           <SubSection noAnchor name="Card">
             <ArticleCardDemo className={demoClassName} />

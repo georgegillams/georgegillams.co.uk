@@ -38,6 +38,7 @@ import {
   DesignColours,
   DesignComponents,
   DesignTypography,
+  DesignLab,
   DesignPrivacyPolicy,
   SiteMap,
   NotFound,
@@ -135,6 +136,7 @@ export default store => {
       <Route path="design/colours" component={DesignColours} />
       <Route path="design/components" component={DesignComponents} />
       <Route path="design/typography" component={DesignTypography} />
+      <Route path="design/lab" component={DesignLab} />
       <Route path="account" component={Account} />
       <Route path="account/edit" component={AccountEdit} />
       <Route path="pagination" component={Pagination} />
