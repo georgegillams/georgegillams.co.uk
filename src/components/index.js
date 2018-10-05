@@ -41,4 +41,5 @@ export GraphicContent, { withGraphicContentBehaviour } from './GraphicContent';
 export WidgetForm from './WidgetForm/WidgetForm';
 export PhotoGallery from './PhotoGallery/PhotoGallery';
 export GTSEntity from './GTS';
+export Status, { StatusCard } from './Status';
 export bpkDemo from './bpk-component-demo';
