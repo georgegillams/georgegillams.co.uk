@@ -2,9 +2,9 @@
 
 .article-card {
   width: 100%;
-  transition: all .4s;
-  border-radius: .35rem;
-  box-shadow: .1rem .1rem .3rem 0 rgba(37, 32, 31, .3);
+  transition: all 0.4s;
+  border-radius: 0.35rem;
+  box-shadow: 0.1rem 0.1rem 0.3rem 0 rgba(37, 32, 31, 0.3);
 
   &--narrow-compact {
     max-width: 25rem;
@@ -13,7 +13,7 @@
   &:focus,
   &:active,
   &:hover {
-    box-shadow: .2rem .2rem .5rem 0 rgba(37, 32, 31, .3);
+    box-shadow: 0.2rem 0.2rem 0.5rem 0 rgba(37, 32, 31, 0.3);
   }
 
   &__outer-container {
@@ -24,6 +24,7 @@
     flex-direction: row;
     flex-wrap: wrap;
     box-sizing: border-box;
+    background-color: white;
 
     &--narrow-compact {
       justify-content: center;
@@ -41,7 +42,7 @@
   &__inner-container {
     position: relative;
     width: 100%;
-    border-radius: .35rem;
+    border-radius: 0.35rem;
     overflow: hidden;
     box-sizing: border-box;
   }
@@ -72,7 +73,7 @@
     margin-left: -1rem;
     background-position: center;
     background-size: cover;
-    opacity: .8;
+    opacity: 0.8;
 
     &--light {
       background-color: #1e1e1e;
@@ -97,14 +98,14 @@
   &__image {
     width: 12rem;
     height: 7rem;
-    margin-top: -.5rem;
+    margin-top: -0.5rem;
     margin-left: -3rem;
   }
 
   &__banner {
     width: 0;
-    height: .2rem;
-    transition: all .4s;
+    height: 0.2rem;
+    transition: all 0.4s;
     background-color: #44aeff;
 
     &--light {
