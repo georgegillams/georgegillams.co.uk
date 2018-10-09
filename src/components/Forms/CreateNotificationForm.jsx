@@ -48,6 +48,9 @@ class LoginForm extends React.Component {
 
     return (
       <div className={classNameFinal.join(' ')} {...rest}>
+        <label htmlFor="type" className={getClassName('forms__label')}>
+          Type
+        </label>
         <BpkInput
           className={getClassName('forms__component')}
           id="type"
@@ -56,6 +59,9 @@ class LoginForm extends React.Component {
           onChange={this.onTypeChanged}
           placeholder="type"
         />
+        <label htmlFor="message" className={getClassName('forms__label')}>
+          Message
+        </label>
         <BpkInput
           className={getClassName('forms__component')}
           id="message"

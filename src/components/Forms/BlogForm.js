@@ -16,7 +16,7 @@ export default class BlogForm extends React.Component {
     editedBlog: PropTypes.object.isRequired,
     onBlogChanged: PropTypes.func.isRequired,
     onUpdateBlog: PropTypes.func.isRequired,
-    onCreateBlog: PropTypes.func.isRequired
+    onCreateBlog: PropTypes.func.isRequired,
   };
 
   constructor(props) {
@@ -62,6 +62,9 @@ export default class BlogForm extends React.Component {
           {blog.id ? `Update blog` : `Create new blog`}
         </Button>
         <br />
+        <label htmlFor="blogId" className={getClassName('forms__label')}>
+          Blog ID
+        </label>
         <BpkInput
           className={elementClassNameFinal.join(' ')}
           id="blogId"
@@ -72,6 +75,9 @@ export default class BlogForm extends React.Component {
           }}
           placeholder="Blog ID"
         />
+        <label htmlFor="blogName" className={getClassName('forms__label')}>
+          Blog name
+        </label>
         <BpkInput
           className={elementClassNameFinal.join(' ')}
           id="blogName"
@@ -82,6 +88,9 @@ export default class BlogForm extends React.Component {
           }}
           placeholder="Blog name"
         />
+        <label htmlFor="blogCardImage" className={getClassName('forms__label')}>
+          Blog card image
+        </label>
         <BpkInput
           className={elementClassNameFinal.join(' ')}
           id="blogCardImage"
@@ -92,6 +101,12 @@ export default class BlogForm extends React.Component {
           }}
           placeholder="Blog card image"
         />
+        <label
+          htmlFor="blogCardHeroImage"
+          className={getClassName('forms__label')}
+        >
+          Blog card hero image
+        </label>
         <BpkInput
           className={elementClassNameFinal.join(' ')}
           id="blogCardHeroImage"
@@ -102,6 +117,9 @@ export default class BlogForm extends React.Component {
           }}
           placeholder="Blog card hero image"
         />
+        <label htmlFor="blogCardDate" className={getClassName('forms__label')}>
+          Blog card date
+        </label>
         <BpkInput
           className={elementClassNameFinal.join(' ')}
           id="blogCardDate"
@@ -121,6 +139,10 @@ export default class BlogForm extends React.Component {
             this.onBlogValueChanged(`light`, event);
           }}
         />
+        <br />
+        <label htmlFor="blogCardLink" className={getClassName('forms__label')}>
+          Blog card link
+        </label>
         <BpkInput
           className={elementClassNameFinal.join(' ')}
           id="blogCardLink"
@@ -131,6 +153,12 @@ export default class BlogForm extends React.Component {
           }}
           placeholder="Blog card link"
         />
+        <label
+          htmlFor="blogBannerColor"
+          className={getClassName('forms__label')}
+        >
+          Blog banner color
+        </label>
         <BpkInput
           className={elementClassNameFinal.join(' ')}
           id="blogBanneColor"
@@ -141,6 +169,12 @@ export default class BlogForm extends React.Component {
           }}
           placeholder="Blog banner color"
         />
+        <label
+          htmlFor="blogCardImageBorderColor"
+          className={getClassName('forms__label')}
+        >
+          Blog card image border color
+        </label>
         <BpkInput
           className={elementClassNameFinal.join(' ')}
           id="blogCardImageBorderColor"
@@ -161,6 +195,12 @@ export default class BlogForm extends React.Component {
           }}
         />
         <br />
+        <label
+          htmlFor="blogPublishedTimestamp"
+          className={getClassName('forms__label')}
+        >
+          Blog published timestamp
+        </label>
         <BpkInput
           className={elementClassNameFinal.join(' ')}
           id="blogPublishedTimestamp"
@@ -191,6 +231,9 @@ export default class BlogForm extends React.Component {
             this.onBlogValueChanged(`showInTravelBlogsList`, event);
           }}
         />
+        <label htmlFor="blogTags" className={getClassName('forms__label')}>
+          Blog tags
+        </label>
         <BpkInput
           className={elementClassNameFinal.join(' ')}
           id="blogTags"
@@ -202,11 +245,14 @@ export default class BlogForm extends React.Component {
           }
           onChange={event => {
             this.onBlogValueChanged(`tags`, {
-              target: { value: event.target.value.split(', ') }
+              target: { value: event.target.value.split(', ') },
             });
           }}
           placeholder="Blog tags"
         />
+        <label htmlFor="blogContent" className={getClassName('forms__label')}>
+          Blog content
+        </label>
         <BpkTextArea
           style={{ minHeight: '45rem' }}
           className={elementClassNameFinal.join(' ')}
@@ -218,6 +264,9 @@ export default class BlogForm extends React.Component {
           }}
           placeholder="Blog content"
         />
+        <label htmlFor="blogBibtex" className={getClassName('forms__label')}>
+          Blog bibtex
+        </label>
         <BpkTextArea
           className={elementClassNameFinal.join(' ')}
           id="blogBibtex"

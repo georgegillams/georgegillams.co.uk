@@ -1,4 +1,4 @@
-@import "~bpk-mixins";
+@import '~bpk-mixins';
 
 .forms {
   &__component {
@@ -12,5 +12,12 @@
     &__button {
       margin-top: 1rem;
     }
+  }
+
+  &__label {
+    margin: 0 0 0 0.1rem;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 0.8rem;
   }
 }
