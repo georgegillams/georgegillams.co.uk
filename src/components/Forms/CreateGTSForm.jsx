@@ -48,6 +48,9 @@ class GTSForm extends React.Component {
 
     return (
       <div className={classNameFinal.join(' ')} {...rest}>
+        <label htmlFor="destination" className={getClassName('forms__label')}>
+          Destination
+        </label>
         <BpkInput
           className={getClassName('forms__component')}
           id="destination"
@@ -56,6 +59,9 @@ class GTSForm extends React.Component {
           onChange={this.onDestinationChanged}
           placeholder="Destination"
         />
+        <label htmlFor="eta" className={getClassName('forms__label')}>
+          ETA
+        </label>
         <BpkInput
           className={getClassName('forms__component')}
           id="eta"
@@ -64,6 +70,9 @@ class GTSForm extends React.Component {
           onChange={this.onEtaChanged}
           placeholder="eta"
         />
+        <label htmlFor="emoji" className={getClassName('forms__label')}>
+          Emoji
+        </label>
         <BpkInput
           className={getClassName('forms__component')}
           id="emoji"
