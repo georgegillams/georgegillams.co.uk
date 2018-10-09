@@ -75,6 +75,9 @@ class SignUpForm extends React.Component {
 
     return (
       <div className={classNameFinal.join(' ')} {...rest}>
+        <label htmlFor="name" className={getClassName('forms__label')}>
+          Name
+        </label>
         <BpkInput
           className={getClassName('forms__component')}
           valid={newUser.name && newUser.name.match(NAME_REGEX)}
@@ -84,6 +87,9 @@ class SignUpForm extends React.Component {
           onChange={this.onNameChanged}
           placeholder="name"
         />
+        <label htmlFor="uname" className={getClassName('forms__label')}>
+          User name
+        </label>
         <BpkInput
           className={getClassName('forms__component')}
           valid={newUser.uname && newUser.uname.match(UNAME_REGEX)}
@@ -93,6 +99,9 @@ class SignUpForm extends React.Component {
           onChange={this.onUnameChanged}
           placeholder="user name (public)"
         />
+        <label htmlFor="email" className={getClassName('forms__label')}>
+          Email
+        </label>
         <BpkInput
           className={getClassName('forms__component')}
           valid={newUser.email && newUser.email.match(EMAIL_REGEX)}
@@ -102,6 +111,9 @@ class SignUpForm extends React.Component {
           onChange={this.onEmailChanged}
           placeholder="email"
         />
+        <label htmlFor="password" className={getClassName('forms__label')}>
+          Password
+        </label>
         <BpkInput
           className={getClassName('forms__component')}
           type={INPUT_TYPES.password}

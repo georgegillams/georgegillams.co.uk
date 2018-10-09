@@ -50,6 +50,9 @@ class LoginForm extends React.Component {
 
     return (
       <div className={classNameFinal.join(' ')} {...rest}>
+        <label htmlFor="email" className={getClassName('forms__label')}>
+          Email
+        </label>
         <BpkInput
           className={getClassName('forms__component')}
           valid={credentials.email.match(EMAIL_REGEX)}
@@ -59,6 +62,11 @@ class LoginForm extends React.Component {
           onChange={this.onEmailChanged}
           placeholder="email"
         />
+        {!this.state.useMagicLink && (
+          <label htmlFor="password" className={getClassName('forms__label')}>
+            Password
+          </label>
+        )}
         {!this.state.useMagicLink && (
           <BpkInput
             className={getClassName('forms__component')}
