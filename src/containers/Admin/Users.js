@@ -110,7 +110,7 @@ export default class Users extends Component {
               users.map(user => (
                 <div>
                   <APIEntity entityType="User" entity={user} />
-                  <User user={user} />
+                  <User user={user} showAdvancedInfo />
                 </div>
               ))}
           </div>

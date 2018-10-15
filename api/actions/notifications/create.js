@@ -6,7 +6,6 @@ import notificationsAllowedAttributes from './notificationsAllowedAttributes';
 
 export default function create(req) {
   const reqSecured = reqSecure(req, notificationsAllowedAttributes);
-  console.log(`reqSecured.body`, reqSecured.body);
   return new Promise((resolve, reject) => {
     authentication(reqSecured).then(
       user => {
