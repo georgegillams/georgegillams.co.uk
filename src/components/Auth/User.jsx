@@ -17,15 +17,15 @@ class User extends Component {
 
     return (
       <Section name={`${welcomeMessage || 'User'} ${id}`}>
-        {`Name ${name}`}
+        {`Name: ${name}`}
         <br />
-        {`Email ${email}`}
+        {`Email: ${email}`}
         <br />
-        {`Phone ${phone}`}
+        {`Phone: ${phone}`}
         <br />
-        {showAdvancedInfo && `Email fingerprint ${emailFingerprint}`}
+        {showAdvancedInfo && `Email fingerprint: ${emailFingerprint}`}
         {showAdvancedInfo && <br />}
-        {`Email verified ${emailVerified}`}
+        {`Email verified: ${emailVerified}`}
         <br />
         <br />
       </Section>
