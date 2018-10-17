@@ -7,6 +7,7 @@ export loginmagiclink from './loginmagiclink';
 export verifyemail from './verifyemail';
 export logout from './logout';
 export logoutall from './logoutall';
+export deleteEntity from './deleteEntity';
 
 // Expose non-default exports
 export * as payments from './payments/index';
