@@ -11,6 +11,7 @@ export default function load(req) {
             datumLoad({
               redisKey: 'gts',
               includeDeleted: true,
+              sortKey: 'lastUpdatedTimestamp',
             }),
           );
         } else {
