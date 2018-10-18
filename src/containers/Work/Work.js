@@ -1,10 +1,8 @@
 import React, { Component } from 'react';
 import Helmet from 'react-helmet';
 import { Section, SubSection, TextLink, Button } from 'components';
-import BpkImage, {
-  withLazyLoading,
-  withLoadingBehavior,
-} from 'bpk-component-image';
+import withScrollBehaviour from '../../components/Views';
+import BpkImage, { withLoadingBehavior } from 'bpk-component-image';
 import { cssModules } from 'bpk-react-utils';
 
 import STYLES from '../pages.scss';
@@ -13,7 +11,7 @@ const getClassName = cssModules(STYLES);
 
 const documentIfExists = typeof window !== 'undefined' ? document : null;
 const FadingLazyLoadedImage = withLoadingBehavior(
-  withLazyLoading(BpkImage, documentIfExists),
+  withScrollBehaviour(BpkImage, documentIfExists),
 );
 
 export default class Work extends Component {

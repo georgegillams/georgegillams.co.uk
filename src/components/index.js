@@ -44,3 +44,4 @@ export PhotoGallery from './PhotoGallery/PhotoGallery';
 export GTSEntity from './GTS';
 export Status, { StatusCard } from './Status';
 export bpkDemo from './bpk-component-demo';
+// TODO GET THIS WORKING export withScrollBehaviour from './Views';

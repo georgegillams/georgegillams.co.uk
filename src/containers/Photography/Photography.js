@@ -8,8 +8,9 @@ import {
   CARD_LAYOUTS,
   withGraphicContentBehaviour,
   Comments,
-  GraphicContent
+  GraphicContent,
 } from 'components';
+import withScrollBehaviour from '../../components/Views';
 import { CommentArea } from 'containers';
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
@@ -17,13 +18,10 @@ import { asyncConnect } from 'redux-async-connect';
 import {
   isLoaded as isCommentsLoaded,
   load as loadComments,
-  create as createComment
+  create as createComment,
 } from 'redux/modules/comments';
 import { isLoaded as isAuthLoaded, load as loadAuth } from 'redux/modules/auth';
-import BpkImage, {
-  withLazyLoading,
-  withLoadingBehavior
-} from 'bpk-component-image';
+import BpkImage, { withLoadingBehavior } from 'bpk-component-image';
 import { cssModules } from 'bpk-react-utils';
 import STYLES from '../pages.scss';
 
@@ -32,7 +30,7 @@ const getClassName = cssModules(STYLES);
 const PAGE_ID = '857216';
 const documentIfExists = typeof window !== 'undefined' ? document : null;
 const FadingLazyLoadedImage = withLoadingBehavior(
-  withLazyLoading(BpkImage, documentIfExists)
+  withScrollBehaviour(BpkImage, documentIfExists),
 );
 const GcbGraphicContent = withGraphicContentBehaviour(GraphicContent);
 
@@ -49,8 +47,8 @@ const GcbGraphicContent = withGraphicContentBehaviour(GraphicContent);
       }
 
       return Promise.all(promises);
-    }
-  }
+    },
+  },
 ])
 @connect(
   state => ({
@@ -58,9 +56,9 @@ const GcbGraphicContent = withGraphicContentBehaviour(GraphicContent);
     user: state.auth.user,
     newDataAvailable: state.sessions.newDataAvailable,
     comments: state.comments ? state.comments.data[PAGE_ID] : [],
-    newCommentBeingCreated: state.comments.creating.newComment
+    newCommentBeingCreated: state.comments.creating.newComment,
   }),
-  dispatch => bindActionCreators({ loadComments, createComment }, dispatch)
+  dispatch => bindActionCreators({ loadComments, createComment }, dispatch),
 )
 export default class Photography extends Component {
   static propTypes = {
@@ -71,11 +69,11 @@ export default class Photography extends Component {
     user: PropTypes.object.isRequired,
     createComment: PropTypes.func.isRequired,
     loadComments: PropTypes.func.isRequired,
-    className: PropTypes.string
+    className: PropTypes.string,
   };
 
   static defaultProps = {
-    className: null
+    className: null,
   };
 
   constructor(props) {
@@ -97,7 +95,7 @@ export default class Photography extends Component {
     return (
       <div
         className={`${getClassName('pages__container')} ${getClassName(
-          'pages__container--centered'
+          'pages__container--centered',
         )}`}
         style={{ textAlign: 'center' }}
       >

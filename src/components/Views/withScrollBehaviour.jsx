@@ -2,30 +2,26 @@ import React, { type Node, type ComponentType } from 'react';
 import PropTypes from 'prop-types';
 import { wrapDisplayName } from 'bpk-react-utils';
 
-type WithLazyLoadingProps = {
+type withScrollBehaviourProps = {
   className: ?string,
-  style: ?{}
+  style: ?{},
 };
 
-type WithLazyLoadingState = {
-  inView: boolean
+type withScrollBehaviourState = {
+  inView: boolean,
 };
 
-export default function withLazyLoading(
-  Component: ComponentType<any>,
-  documentRef: window
-): ComponentType<any> {
-  class WithLazyLoading extends React.Component<
-    WithLazyLoadingProps,
-    WithLazyLoadingState
-  > {
+const withScrollBehaviour = (Component, documentRef) => {
+  console.log(`HERE`);
+
+  class WithScrollBehaviour extends React.Component {
     static defaultProps: {};
 
     constructor(): void {
       super();
 
       this.state = {
-        inView: false
+        inView: false,
       };
     }
 
@@ -36,14 +32,14 @@ export default function withLazyLoading(
     placeholderReference: string;
     removeEventListeners: () => void;
     setInView: () => void;
-    state: WithLazyLoadingState;
+    state: withScrollBehaviourState;
     supportsPassiveEvents: () => boolean;
     /* eslint-enable */
 
     componentDidMount(): void {
       documentRef.addEventListener('scroll', this.checkInView, {
         capture: true,
-        ...this.getPassiveArgs()
+        ...this.getPassiveArgs(),
       });
       documentRef.addEventListener('resize', this.checkInView);
       documentRef.addEventListener('orientationchange', this.checkInView);
@@ -61,8 +57,8 @@ export default function withLazyLoading(
     setInView = (): void => {
       this.setState(
         (): {} => ({
-          inView: true
-        })
+          inView: true,
+        }),
       );
       this.removeEventListeners();
     };
@@ -74,7 +70,7 @@ export default function withLazyLoading(
     removeEventListeners = (): void => {
       documentRef.removeEventListener('scroll', this.checkInView, {
         capture: true,
-        ...this.getPassiveArgs()
+        ...this.getPassiveArgs(),
       });
       documentRef.removeEventListener('resize', this.checkInView);
       documentRef.removeEventListener('orientationchange', this.checkInView);
@@ -99,7 +95,7 @@ export default function withLazyLoading(
           get() {
             supportsPassiveOption = true;
             return supportsPassiveOption;
-          }
+          },
         });
         window.addEventListener('test', null, opts);
         window.removeEventListener('test');
@@ -115,11 +111,11 @@ export default function withLazyLoading(
 
       const viewPortHeight = Math.max(
         window.innerHeight,
-        documentRef.documentElement.clientHeight
+        documentRef.documentElement.clientHeight,
       );
       const viewPortWidth = Math.max(
         window.innerWidth,
-        documentRef.documentElement.clientWidth
+        documentRef.documentElement.clientWidth,
       );
 
       return (
@@ -147,17 +143,22 @@ export default function withLazyLoading(
       );
     }
   }
-  WithLazyLoading.displayName = wrapDisplayName(Component, 'withLazyLoading');
+  WithScrollBehaviour.displayName = wrapDisplayName(
+    Component,
+    'withScrollBehaviour',
+  );
 
-  WithLazyLoading.propTypes = {
+  WithScrollBehaviour.propTypes = {
     style: PropTypes.object, // eslint-disable-line react/forbid-prop-types
-    className: PropTypes.string
+    className: PropTypes.string,
   };
 
-  WithLazyLoading.defaultProps = {
+  WithScrollBehaviour.defaultProps = {
     style: null,
-    className: null
+    className: null,
   };
 
-  return WithLazyLoading;
-}
+  return WithScrollBehaviour;
+};
+
+export default withScrollBehaviour;

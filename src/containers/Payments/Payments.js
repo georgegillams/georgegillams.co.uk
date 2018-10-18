@@ -4,6 +4,7 @@ import Helmet from 'react-helmet';
 import { connect } from 'react-redux';
 import BpkInput from 'bpk-component-input';
 import { Section, SubSection, TextLink, Button, CodeInline } from 'components';
+import withScrollBehaviour from '../../components/Views';
 import { create as createPayment } from 'redux/modules/payments';
 import { bindActionCreators } from 'redux';
 import { asyncConnect } from 'redux-async-connect';
@@ -12,13 +13,10 @@ import {
   SORT_CODE_REGEX,
   INT_REGEX,
   STRING_REGEX,
-  DECIMAL_REGEX
+  DECIMAL_REGEX,
 } from '../../utils/constants';
 import { isLoaded as isAuthLoaded, load as loadAuth } from 'redux/modules/auth';
-import BpkImage, {
-  withLazyLoading,
-  withLoadingBehavior
-} from 'bpk-component-image';
+import BpkImage, { withLoadingBehavior } from 'bpk-component-image';
 import { cssModules } from 'bpk-react-utils';
 
 import STYLES from '../pages.scss';
@@ -27,7 +25,7 @@ const getClassName = cssModules(STYLES);
 
 const documentIfExists = typeof window !== 'undefined' ? document : null;
 const FadingLazyLoadedImage = withLoadingBehavior(
-  withLazyLoading(BpkImage, documentIfExists)
+  withScrollBehaviour(BpkImage, documentIfExists),
 );
 
 @asyncConnect([
@@ -40,29 +38,31 @@ const FadingLazyLoadedImage = withLoadingBehavior(
       }
 
       return Promise.all(promises);
-    }
-  }
+    },
+  },
 ])
 @connect(
   state => ({
     user: state.auth.user,
     latestCreated: state.payments ? state.payments.latestCreated : null,
-    creationError: state.payments ? state.payments.createError.newPayment : null
+    creationError: state.payments
+      ? state.payments.createError.newPayment
+      : null,
   }),
-  dispatch => bindActionCreators({ createPayment }, dispatch)
+  dispatch => bindActionCreators({ createPayment }, dispatch),
 )
 export default class Payments extends Component {
   static propTypes = {
     latestCreated: PropTypes.object,
     creationError: PropTypes.object,
     createPayment: PropTypes.func.isRequired,
-    className: PropTypes.string
+    className: PropTypes.string,
   };
 
   static defaultProps = {
     className: null,
     creationError: null,
-    latestCreated: null
+    latestCreated: null,
   };
 
   state = {
@@ -70,7 +70,7 @@ export default class Payments extends Component {
     reference: '',
     monzoMeLink: '',
     sortCode: '',
-    accountNumber: ''
+    accountNumber: '',
   };
 
   onPaymentSubmit = () => {
@@ -79,7 +79,7 @@ export default class Payments extends Component {
       reference: this.state.reference,
       monzoMeLink: this.state.monzoMeLink,
       sortCode: this.state.sortCode,
-      accountNumber: this.state.accountNumber
+      accountNumber: this.state.accountNumber,
     };
     this.props.createPayment(payment);
   };
@@ -109,10 +109,10 @@ export default class Payments extends Component {
             If you have Monzo, you can transfer money directly using my phone
             number (
             <TextLink href="tel:+447867592615">+44 786759 2615</TextLink>)<br />
-            Otherwise,{" "}
+            Otherwise,{' '}
             <TextLink external href="https://monzo.me/georgestuartgillams">
-              pay me via Monzo{" "}
-            </TextLink>{" "}
+              pay me via Monzo{' '}
+            </TextLink>{' '}
             online.
           </SubSection>
           <SubSection name="Circle">
@@ -121,9 +121,9 @@ export default class Payments extends Component {
               g@georgegillams.co.uk
             </TextLink>
             ). If you don't already have Circle and you wanna get £5, use this
-            link to{" "}
+            link to{' '}
             <TextLink external href="https://www.circle.com/invite/2RH58S">
-              sign up to Circle pay{" "}
+              sign up to Circle pay{' '}
             </TextLink>
             😉.
           </SubSection>
@@ -134,17 +134,17 @@ export default class Payments extends Component {
             <br />
             Bitcoin: <CodeInline>3ApNpbGMWMVVhRJuBLYtZtLwaHqhW73vbw</CodeInline>
             <br />
-            Bitcoin Cash:{" "}
+            Bitcoin Cash:{' '}
             <CodeInline>
-              {"qrg7fqthkw08yzp9ys6v7m7394lqj96dzczkhg6r77"}
+              {'qrg7fqthkw08yzp9ys6v7m7394lqj96dzczkhg6r77'}
             </CodeInline>
             <br />
-            Ethereum:{" "}
+            Ethereum:{' '}
             <CodeInline>
-              {"0x5126FD065a2d7Cf77f50f6DDF8DEd144a3e04db3"}
+              {'0x5126FD065a2d7Cf77f50f6DDF8DEd144a3e04db3'}
             </CodeInline>
             <br />
-            Litecoin:{" "}
+            Litecoin:{' '}
             <CodeInline>MPz6NNqU8U2nZMQX3WTwXJjZFhUA31Q1F6</CodeInline>
           </SubSection>
         </Section>
@@ -248,7 +248,7 @@ export default class Payments extends Component {
               {latestCreated && (
                 <div>
                   <br />
-                  Your payment has been created.{" "}
+                  Your payment has been created.{' '}
                   <TextLink href={`/payments/${latestCreated.id}`}>
                     View payment {latestCreated.id}.
                   </TextLink>

@@ -2,10 +2,7 @@
 import React from 'react';
 import Helmet from 'react-helmet';
 import { asyncConnect } from 'redux-async-connect';
-import BpkImage, {
-  withLazyLoading,
-  withLoadingBehavior,
-} from 'bpk-component-image';
+import BpkImage, { withLoadingBehavior } from 'bpk-component-image';
 import {
   isLoaded as isCommentsLoaded,
   load as loadComments,
@@ -20,12 +17,13 @@ import {
   NotificationComp,
   NOTIFICATION_TYPES,
 } from '../../components';
+import withScrollBehaviour from '../../components/Views';
 import { CommentArea } from 'containers';
 import { cssModules } from 'bpk-react-utils';
 
 const documentIfExists = typeof window !== 'undefined' ? document : null;
 const FadingLazyLoadedImage = withLoadingBehavior(
-  withLazyLoading(BpkImage, documentIfExists),
+  withScrollBehaviour(BpkImage, documentIfExists),
 );
 
 const FINAL_DEGREE_PERCENTAGE = 68;

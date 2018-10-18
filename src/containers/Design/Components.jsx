@@ -23,7 +23,7 @@ import {
   SubSection,
   bpkDemo,
 } from 'components';
-import { withLazyLoading } from 'bpk-component-image';
+import withScrollBehaviour from '../../components/Views';
 import HelperFunctions from '../../helpers/HelperFunctions';
 import { cssModules } from 'bpk-react-utils';
 
@@ -34,7 +34,10 @@ const getClassName = cssModules(STYLES);
 const GcbGraphicContent = withGraphicContentBehaviour(GraphicContent);
 
 const documentIfExists = typeof window !== 'undefined' ? document : null;
-const LlAnimatedContent = withLazyLoading(AnimatedContent, documentIfExists);
+const LlAnimatedContent = withScrollBehaviour(
+  AnimatedContent,
+  documentIfExists,
+);
 
 const LogoDemo = bpkDemo(Logo, 'Logo', 'na', { small: true, noPadding: true });
 const ButtonDemo = bpkDemo(Button, 'Button', 'na', {

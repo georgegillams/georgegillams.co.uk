@@ -1,10 +1,8 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import BpkImage, {
-  withLoadingBehavior,
-  withLazyLoading,
-} from 'bpk-component-image';
-import { Section, SubSection } from '../';
+import BpkImage, { withLoadingBehavior } from 'bpk-component-image';
+import { Section, SubSection } from '../../components';
+import withScrollBehaviour from '../Views';
 import { Link } from 'react-router';
 import HelperFunctions from '../../helpers/HelperFunctions';
 import { cssModules } from 'bpk-react-utils';
@@ -15,7 +13,7 @@ const getClassName = cssModules(STYLES);
 
 const documentIfExists = typeof window !== 'undefined' ? document : null;
 const FadingLazyLoadedImage = withLoadingBehavior(
-  withLazyLoading(BpkImage, documentIfExists),
+  withScrollBehaviour(BpkImage, documentIfExists),
 );
 
 export const CARD_LAYOUTS = {

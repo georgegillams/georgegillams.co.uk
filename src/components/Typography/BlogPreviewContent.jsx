@@ -2,10 +2,7 @@ import PropTypes from 'prop-types';
 import React, { Component } from 'react';
 import BpkText from 'bpk-component-text';
 import YoutubeEmbedVideo from 'youtube-embed-video';
-import BpkImage, {
-  withLoadingBehavior,
-  withLazyLoading,
-} from 'bpk-component-image';
+import BpkImage, { withLoadingBehavior } from 'bpk-component-image';
 import scrollIntoView from 'scroll-into-view';
 import {
   citation,
@@ -21,6 +18,7 @@ import {
   CodeInline,
   CodeBashArrow,
 } from 'components';
+import withScrollBehaviour from '../Views';
 import HelperFunctions from '../../helpers/HelperFunctions';
 
 import STYLES from './blog-viewer.scss';
@@ -30,7 +28,7 @@ const getClassName = cssModules(STYLES);
 
 const documentIfExists = typeof window !== 'undefined' ? document : null;
 const FadingLazyLoadedImage = withLoadingBehavior(
-  withLazyLoading(BpkImage, documentIfExists),
+  withScrollBehaviour(BpkImage, documentIfExists),
 );
 
 const MD_LINK_REGEX = /([^]*)\[([^\[\]]*)\]\(([^\(\)]*)\)([^]*)/gi;

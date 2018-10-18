@@ -1,9 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import BpkImage, {
-  withLazyLoading,
-  withLoadingBehavior
-} from 'bpk-component-image';
+import BpkImage, { withLoadingBehavior } from 'bpk-component-image';
+import withScrollBehaviour from '../Views';
 import { cssModules } from 'bpk-react-utils';
 
 import STYLES from './photo-gallery.scss';
@@ -12,7 +10,7 @@ const getClassName = cssModules(STYLES);
 
 const documentIfExists = typeof window !== 'undefined' ? document : null;
 const FadingLazyLoadedImage = withLoadingBehavior(
-  withLazyLoading(BpkImage, documentIfExists)
+  withScrollBehaviour(BpkImage, documentIfExists),
 );
 
 const PhotoGallery = props => {
@@ -61,11 +59,11 @@ const PhotoGallery = props => {
 
 PhotoGallery.propTypes = {
   images: PropTypes.arrayOf(PropTypes.node).isRequired,
-  className: PropTypes.string
+  className: PropTypes.string,
 };
 
 PhotoGallery.defaultProps = {
-  className: null
+  className: null,
 };
 
 export default PhotoGallery;
