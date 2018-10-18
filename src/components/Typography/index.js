@@ -1,3 +1,4 @@
+export AnimatedContent from './AnimatedContent';
 export TextLink from './TextLink';
 export Logo from './Logo';
 export Section from './Section';
