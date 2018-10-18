@@ -25,12 +25,15 @@ ${magicLinkUrl}\n\nIt will expire ${oneHoursTime.toString()}`,
       html: `<div style="text-align: center;color: #1e1e1e;">
   <img src="https://i.imgur.com/Fvg8HXM.png" style="width: 7rem;">
   <p>
-    Click the button below to activate your once-use magic login link
+    Tap the button below to login
     <br><br><br>
-    <a href="${magicLinkUrl}" style="background-color: #44aeff;padding: .9rem 1.2rem;color: white;border-radius: .2rem;text-decoration: none;">Click here to log in using your magic link</a>
+    <a href="${magicLinkUrl}" style="background-color: #44aeff;padding: .9rem 1.2rem;color: white;border-radius: .2rem;text-decoration: none;">Log in</a>
     <br><br><br>
     <p>
-      This magic link will expire ${oneHoursTime.toString()}
+      Once you're logged in, feel free to delete this email
+    </p>
+    <p>
+      This once-use magic-link will expire ${oneHoursTime.toString()}
     </p>
   </p>
 </div>`,
