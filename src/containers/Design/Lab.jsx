@@ -1,23 +1,17 @@
 /* eslint-disable */
 import React, { Component } from 'react';
 import Helmet from 'react-helmet';
-import { Section, StatusCard, Status, SubSection, bpkDemo } from 'components';
+import { Section, Button, SubSection, bpkDemo } from 'components';
+import HelperFunctions from '../../helpers/HelperFunctions';
 import { cssModules } from 'bpk-react-utils';
 
 import STYLES from '../pages.scss';
 
 const getClassName = cssModules(STYLES);
 
-const StatusDemo = bpkDemo(Status, 'Status', 'na', {
-  type: 'SUCCESS',
-});
-const StatusCardDemo = bpkDemo(StatusCard, 'StatusCard', 'na', {
-  overallStatus: 'SUCCESS',
-  data: [
-    { item: 'Account information', status: 'complete' },
-    { item: 'Professional profile', status: 'incomplete' },
-    { item: 'Photo release', status: 'not_started' },
-  ],
+const ButtonDemo = bpkDemo(Button, 'Button', 'na', {
+  onClick: HelperFunctions.evalCompat('() => { alert("Button clicked"); }'),
+  children: 'This is a button',
 });
 
 class Lab extends Component {

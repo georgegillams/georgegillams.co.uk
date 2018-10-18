@@ -9,6 +9,7 @@ export NavigationBar from './NavigationBar';
 export NotificationCentre, { NotificationComp } from './NotificationCentre';
 export {
   ArticleDate,
+  AnimatedContent,
   Loading,
   Logo,
   Quote,
