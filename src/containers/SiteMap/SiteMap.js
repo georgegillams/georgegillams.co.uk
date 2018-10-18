@@ -4,7 +4,7 @@ import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
 import {
   isLoaded as isBlogsLoaded,
-  load as loadBlogs
+  load as loadBlogs,
 } from 'redux/modules/blogs';
 import { asyncConnect } from 'redux-async-connect';
 import { SubSection, TextLink } from 'components';
@@ -26,26 +26,26 @@ const getClassName = cssModules(STYLES);
       }
 
       return Promise.all(promises);
-    }
-  }
+    },
+  },
 ])
 @connect(
   state => ({
     newDataAvailable: state.sessions.newDataAvailable,
-    blogs: state.blogs ? state.blogs.data : null
+    blogs: state.blogs ? state.blogs.data : null,
   }),
-  dispatch => bindActionCreators({ loadBlogs }, dispatch)
+  dispatch => bindActionCreators({ loadBlogs }, dispatch),
 )
 export default class SiteMap extends Component {
   static propTypes = {
     newDataAvailable: PropTypes.bool.isRequired,
     blogs: PropTypes.arrayOf(PropTypes.object),
     loadBlogs: PropTypes.func.isRequired,
-    className: PropTypes.string
+    className: PropTypes.string,
   };
 
   static defaultProps = {
-    className: null
+    className: null,
   };
 
   constructor(props) {
@@ -190,7 +190,9 @@ export default class SiteMap extends Component {
             <br />
             <TextLink href="/design/components">Components</TextLink>
             <br />
-            <TextLink href="/design/typography">Typograhpy</TextLink>
+            <TextLink href="/design/typography">Typography</TextLink>
+            <br />
+            <TextLink href="/design/lab">Lab</TextLink>
           </SubSection>
           <SubSection
             noAnchor
@@ -201,6 +203,8 @@ export default class SiteMap extends Component {
             <br />
             <TextLink href="/contact">Contact</TextLink>
             <br />
+            <TextLink href="/gts">Location tracing</TextLink>
+            <br />
             <TextLink href="/payments">Payments</TextLink>
           </SubSection>
           <SubSection
@@ -209,11 +213,11 @@ export default class SiteMap extends Component {
             name="Random 🐉"
           >
             <TextLink external href="/robots.txt">
-              Robots.txt{" "}
+              Robots.txt{' '}
             </TextLink>
             <br />
             <TextLink external href="/sitemap.xml">
-              SiteMap.xml{" "}
+              SiteMap.xml{' '}
             </TextLink>
             <br />
             <TextLink href="/418"> Error 418: I&apos;m a teapot</TextLink>
@@ -225,44 +229,48 @@ export default class SiteMap extends Component {
             className={getClassName('pages__site-map-item')}
             name="API"
           >
+            <TextLink external href="/api/gts/loadLatest">
+              Tracking API endpoint{' '}
+            </TextLink>
+            <br />
             <TextLink external href="/greasemonkey/find_backpack_components">
-              /greasemonkey/find_backpack_components{" "}
+              /greasemonkey/find_backpack_components{' '}
             </TextLink>
             <br />
             <TextLink external href="/greasemonkey/github_travis_new_tab">
-              /greasemonkey/github_travis_new_tab{" "}
+              /greasemonkey/github_travis_new_tab{' '}
             </TextLink>
             <br />
             <TextLink external href="/greasemonkey/github_squash_reminder">
-              /greasemonkey/github_squash_reminder{" "}
+              /greasemonkey/github_squash_reminder{' '}
             </TextLink>
             <br />
             <TextLink external href="/greasemonkey/gurushots_boost">
-              /greasemonkey/gurushots_boost{" "}
+              /greasemonkey/gurushots_boost{' '}
             </TextLink>
             <br />
             <TextLink external href="/greasemonkey/secureEcs_download">
-              /greasemonkey/secureEcs_download{" "}
+              /greasemonkey/secureEcs_download{' '}
             </TextLink>
             <br />
             <TextLink external href="/greasemonkey/skyscanner_buttons">
-              /greasemonkey/skyscanner_buttons{" "}
+              /greasemonkey/skyscanner_buttons{' '}
             </TextLink>
             <br />
             <TextLink external href="/greasemonkey/github_highlight_name">
-              /greasemonkey/github_highlight_name{" "}
+              /greasemonkey/github_highlight_name{' '}
             </TextLink>
             <br />
             <TextLink external href="/greasemonkey/github_expand_comments">
-              /greasemonkey/github_expand_comments{" "}
+              /greasemonkey/github_expand_comments{' '}
             </TextLink>
             <br />
             <TextLink external href="/greasemonkey/hackthis_coding_1">
-              /greasemonkey/hackthis_coding_1{" "}
+              /greasemonkey/hackthis_coding_1{' '}
             </TextLink>
             <br />
             <TextLink external href="/greasemonkey/hackthis_coding_2">
-              /greasemonkey/hackthis_coding_2{" "}
+              /greasemonkey/hackthis_coding_2{' '}
             </TextLink>
           </SubSection>
           <SubSection

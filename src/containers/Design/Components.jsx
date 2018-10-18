@@ -2,6 +2,7 @@
 import React, { Component } from 'react';
 import Helmet from 'react-helmet';
 import {
+  AnimatedContent,
   Status,
   StatusCard,
   withGraphicContentBehaviour,
@@ -22,6 +23,7 @@ import {
   SubSection,
   bpkDemo,
 } from 'components';
+import { withLazyLoading } from 'bpk-component-image';
 import HelperFunctions from '../../helpers/HelperFunctions';
 import { cssModules } from 'bpk-react-utils';
 
@@ -30,6 +32,9 @@ import STYLES from '../pages.scss';
 const getClassName = cssModules(STYLES);
 
 const GcbGraphicContent = withGraphicContentBehaviour(GraphicContent);
+
+const documentIfExists = typeof window !== 'undefined' ? document : null;
+const LlAnimatedContent = withLazyLoading(AnimatedContent, documentIfExists);
 
 const LogoDemo = bpkDemo(Logo, 'Logo', 'na', { small: true, noPadding: true });
 const ButtonDemo = bpkDemo(Button, 'Button', 'na', {
@@ -88,9 +93,9 @@ const GraphicContentDemo = bpkDemo(GraphicContent, 'GraphicContent', 'na', {
   ),
   children: '// Child element //',
 });
-// const AnimatedContentDemo = bpkDemo(AnimatedContent, 'AnimatedContent', 'na', {
-//   children: '// Child element //',
-// });
+const AnimatedContentDemo = bpkDemo(AnimatedContent, 'AnimatedContent', 'na', {
+  children: '// Child element //',
+});
 const StatusDemo = bpkDemo(Status, 'Status', 'na', {
   type: 'SUCCESS',
   size: 'SMALL',
@@ -124,6 +129,9 @@ class Components extends Component {
       <div className={outerClassNameFinal.join(' ')} {...rest}>
         <Helmet title="Components" />
         <Section name="Components">
+          <SubSection noAnchor name="Animated container">
+            <AnimatedContentDemo className={demoClassName} />
+          </SubSection>
           <SubSection noAnchor name="Button">
             <ButtonDemo className={demoClassName} />
           </SubSection>
@@ -167,6 +175,18 @@ class Components extends Component {
             <TextLinkDemo className={demoClassName} />
           </SubSection>
           <Section name="Components with stateful HOCs">
+            <SubSection noAnchor name="Animated container with HOC">
+              <LlAnimatedContent>
+                <div
+                  style={{
+                    width: '100%',
+                    maxWidth: '100%',
+                    height: '5rem',
+                    backgroundColor: '#e02626',
+                  }}
+                />
+              </LlAnimatedContent>
+            </SubSection>
             <SubSection noAnchor name="Graphic content with HOC">
               <GcbGraphicContent>
                 <img

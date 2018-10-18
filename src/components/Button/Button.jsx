@@ -48,7 +48,7 @@ class Button extends Component {
       classNameFinal.push(getClassName('button__outer--no-bouncy'));
       if (destructive) {
         classNameFinal.push(
-          getClassName('button__outer--no-bouncy--destructive')
+          getClassName('button__outer--no-bouncy--destructive'),
         );
       }
       if (disabled) {
@@ -59,19 +59,15 @@ class Button extends Component {
       classNameFinal.push(getClassName('button__outer--large'));
     }
 
-    if (className) classNameFinal.push(className);
     if (href && !hrefExternal && !disabled) {
       return (
-        <Link
-          to={href}
-          onClick={onClick}
-          className={classNameFinal.join(' ')}
-          {...rest}
-        >
-          {children}
+        <Link to={href} onClick={onClick} className={className} {...rest}>
+          <button className={classNameFinal.join(' ')}>{children}</button>
         </Link>
       );
     }
+
+    if (className) classNameFinal.push(className);
 
     let onClickFinal = onClick;
     if (disabled) {
@@ -118,7 +114,7 @@ Button.propTypes = {
   destructive: PropTypes.bool,
   onClick: PropTypes.func,
   className: PropTypes.string,
-  children: PropTypes.node
+  children: PropTypes.node,
 };
 
 Button.defaultProps = {
@@ -131,7 +127,7 @@ Button.defaultProps = {
   destructive: false,
   onClick: null,
   className: null,
-  children: null
+  children: null,
 };
 
 export default Button;

@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
+import { cssModules } from 'bpk-react-utils';
 
 import STYLES from './animated-content.scss';
 
-const getClassName = className => STYLES[className] || 'UNKNOWN';
+const getClassName = cssModules(STYLES);
 
 class AnimatedContent extends Component {
   constructor(props) {
