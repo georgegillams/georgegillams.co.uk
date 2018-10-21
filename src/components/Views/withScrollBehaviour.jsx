@@ -126,7 +126,7 @@ const withScrollBehaviour = (Component, documentRef) => {
       );
     };
 
-    render(): Node {
+    render() {
       const { style, className, ...rest } = this.props;
 
       return (
