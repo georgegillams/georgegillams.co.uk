@@ -408,9 +408,10 @@ class BlogPreviewContent extends Component {
               name="References"
             >
               <References
-                className={`${getClassName(
-                  'pages__references',
-                )} ${elementClassNameFinal.join(' ')}`}
+                className={[
+                  getClassName('pages__references'),
+                  elementClassNameFinal.join(' '),
+                ].join(' ')}
                 referenceStyle={REFERENCE_STYLES.harvard}
                 references={references}
               />
