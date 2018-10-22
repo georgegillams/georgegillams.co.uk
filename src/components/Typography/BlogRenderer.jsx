@@ -25,7 +25,7 @@ const BlogRenderer = props => {
     ...rest
   } = props;
 
-  const classNameFinal = [getClassName()];
+  const classNameFinal = [];
   if (className) {
     classNameFinal.push(className);
   }
