@@ -143,9 +143,7 @@ class NavigationBar extends Component {
               {menuItems2}
             </div>
             <div
-              className={getClassName(
-                'navigation-bar__mobile-container--right',
-              )}
+              className={getClassName('navigation-bar__mobile-container--rgt')}
             >
               {accountItem}
             </div>
