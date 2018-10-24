@@ -1,18 +1,7 @@
 import PropTypes from 'prop-types';
 import React, { Component } from 'react';
 import cookie from 'react-cookies';
-import { connect } from 'react-redux';
-import { bindActionCreators } from 'redux';
 import Modal from 'react-responsive-modal';
-import {
-  createSession,
-  keepAlive,
-  updateNewDataAvailable,
-  updateServerContentUpdateTimestamp,
-  exposeSession,
-} from 'redux/modules/sessions';
-import { isLoaded as isAuthLoaded, load as loadAuth } from 'redux/modules/auth';
-import { asyncConnect } from 'redux-async-connect';
 import {
   COOKIE_NAMES,
   APP_VERSION,
@@ -27,39 +16,11 @@ import STYLES from './cookie-banner.scss';
 
 const getClassName = cssModules(STYLES);
 
-@asyncConnect([
-  {
-    promise: ({ store: { dispatch, getState } }) => {
-      const promises = [];
-
-      if (!isAuthLoaded(getState())) {
-        promises.push(dispatch(loadAuth()));
-      }
-
-      return Promise.all(promises);
-    },
-  },
-])
-@connect(
-  state => ({
-    contentLastUpdatedTimestamp: state.sessions.contentLastUpdatedTimestamp,
-    serverContentUpdateTimestamp: state.sessions.serverContentUpdateTimestamp,
-    sessions: state.sessions.data,
-    newDataAvailable: state.sessions.newDataAvailable,
-  }),
-  dispatch =>
-    bindActionCreators(
-      {
-        loadAuth,
-        keepAlive,
-        createSession,
-        updateServerContentUpdateTimestamp,
-        updateNewDataAvailable,
-        exposeSession,
-      },
-      dispatch,
-    ),
-)
+// TODO Pass to me please!!
+// contentLastUpdatedTimestamp: state.sessions.contentLastUpdatedTimestamp,
+// serverContentUpdateTimestamp: state.sessions.serverContentUpdateTimestamp,
+// sessions: state.sessions.data,
+// newDataAvailable: state.sessions.newDataAvailable,
 export default class SessionManagement extends Component {
   static propTypes = {
     contentLastUpdatedTimestamp: PropTypes.number.isRequired,
@@ -195,9 +156,13 @@ export default class SessionManagement extends Component {
     const {
       contentLastUpdatedTimestamp,
       serverContentUpdateTimestamp,
-      createSession,
       keepAlive,
       className,
+      loadAuth,
+      createSession,
+      updateServerContentUpdateTimestamp,
+      updateNewDataAvailable,
+      exposeSession,
       ...rest
     } = this.props; // eslint-disable-line no-shadow
 
