@@ -1,7 +1,4 @@
 import React, { Component, PropTypes } from 'react';
-import { bindActionCreators } from 'redux';
-import { connect } from 'react-redux';
-import { load } from 'redux/modules/notifications';
 import NotificationComp from './NotificationComp';
 import { cssModules } from 'bpk-react-utils';
 
@@ -10,13 +7,6 @@ import STYLES from './notification-center.scss';
 
 const getClassName = cssModules(STYLES);
 
-@connect(
-  state => ({
-    newDataAvailable: state.sessions.newDataAvailable,
-    notifications: state.notifications.data,
-  }),
-  dispatch => bindActionCreators({ load }, dispatch),
-)
 export default class NotificationCentre extends Component {
   static propTypes = {
     newDataAvailable: PropTypes.bool.isRequired,
@@ -50,7 +40,9 @@ export default class NotificationCentre extends Component {
   render() {
     const { notifications, load, className, ...rest } = this.props; // eslint-disable-line no-shadow
 
-    const notificationsFiltered = notifications.filter(notif => !notif.deleted);
+    const notificationsFiltered = (notifications || []).filter(
+      notif => !notif.deleted,
+    );
 
     if (!notificationsFiltered || notificationsFiltered.length < 1) {
       return null;
