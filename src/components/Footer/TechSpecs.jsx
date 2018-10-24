@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Section } from '../';
+import { Section } from 'components/Typography';
 import { cssModules } from 'bpk-react-utils';
 
 import STYLES from './tech-specs.scss';
@@ -39,9 +39,9 @@ const TechSpecs = props => {
             height={5}
             className={[
               ...darkIconClassNameFinal,
-              getClassName('tech-specs__icon--wide')
+              getClassName('tech-specs__icon--wide'),
             ].join(' ')}
-            src={"https://i.imgur.com/fDwM7UC.png"}
+            src={'https://i.imgur.com/fDwM7UC.png'}
           />
         </a>
         Hosted on
@@ -55,7 +55,7 @@ const TechSpecs = props => {
             width={5}
             height={5}
             className={darkIconClassNameFinal.join(' ')}
-            src={"https://i.imgur.com/4bHAQnH.png"}
+            src={'https://i.imgur.com/4bHAQnH.png'}
           />
         </a>
       </Section>
@@ -67,14 +67,14 @@ TechSpecs.propTypes = {
   light: PropTypes.bool,
   fancy: PropTypes.bool,
   children: PropTypes.node,
-  className: PropTypes.string
+  className: PropTypes.string,
 };
 
 TechSpecs.defaultProps = {
   light: false,
   fancy: false,
   children: null,
-  className: null
+  className: null,
 };
 
 export default TechSpecs;
