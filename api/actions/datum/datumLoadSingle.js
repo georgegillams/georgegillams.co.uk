@@ -1,5 +1,5 @@
 import redis from '../../utils/redis';
-import { RESOURCE_NOT_FOUND } from '../../../src/utils/constants';
+import { RESOURCE_NOT_FOUND } from '../../../src/helpers/constants';
 
 function notFound(settings, resolve, reject) {
   if (settings.resolveIfNotFound) {

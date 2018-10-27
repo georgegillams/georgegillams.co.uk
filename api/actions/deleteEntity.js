@@ -2,7 +2,7 @@ import {
   STRING_REGEX,
   ID_REGEX,
   RESOURCE_NOT_FOUND,
-} from '../../src/utils/constants';
+} from '../../src/helpers/constants';
 import redis from '../utils/redis';
 import { datumLoad, datumUpdate } from '../actions/datum';
 import { find } from '../utils/find';

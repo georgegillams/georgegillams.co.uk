@@ -17,7 +17,7 @@ import { asyncConnect } from 'redux-async-connect';
 import { BlogRenderer, Comments } from 'components';
 import { CommentArea } from 'containers';
 import NotFound from '../NotFound/NotFound';
-import HelperFunctions from '../../helpers/HelperFunctions';
+import HelperFunctions from 'helpers/HelperFunctions';
 import { cssModules } from 'bpk-react-utils';
 
 import STYLES from '../pages.scss';

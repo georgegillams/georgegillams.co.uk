@@ -1,6 +1,6 @@
 import { datumUpdate } from '../datum';
 import authentication from '../../utils/authentication';
-import { UNAUTHORISED_WRITE } from '../../../src/utils/constants';
+import { UNAUTHORISED_WRITE } from '../../../src/helpers/constants';
 import reqSecure from '../../utils/reqSecure';
 
 export default function update(req) {

@@ -1,6 +1,6 @@
 import { datumUpdate } from '../datum';
 import authentication from '../../utils/authentication';
-import { UNAUTHORISED_WRITE } from '../../../src/utils/constants';
+import { UNAUTHORISED_WRITE } from '../../../src/helpers/constants';
 
 export default function update(req) {
   return new Promise((resolve, reject) => {

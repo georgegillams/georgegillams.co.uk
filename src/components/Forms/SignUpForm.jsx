@@ -8,7 +8,7 @@ import {
   UNAME_REGEX,
   EMAIL_REGEX,
   PASSWORD_REGEX,
-} from '../../utils/constants';
+} from 'helpers/constants';
 
 import STYLES from './forms.scss';
 

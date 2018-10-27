@@ -13,7 +13,7 @@ import {
   INT_REGEX,
   STRING_REGEX,
   DECIMAL_REGEX
-} from '../../utils/constants';
+} from 'helpers/constants';
 import { isLoaded as isAuthLoaded, load as loadAuth } from 'redux/modules/auth';
 import BpkImage, {
   withLazyLoading,

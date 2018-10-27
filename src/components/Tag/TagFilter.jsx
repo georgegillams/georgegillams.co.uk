@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import Tag, { TAG_TYPES } from './Tag';
-import HelperFunctions from '../../helpers/HelperFunctions';
+import HelperFunctions from 'helpers/HelperFunctions';
 import { cssModules } from 'bpk-react-utils';
 
 import STYLES from './tag-filter.scss';
