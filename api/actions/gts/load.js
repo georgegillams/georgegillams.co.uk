@@ -1,6 +1,6 @@
 import { datumLoad } from '../datum';
 import authentication from '../../utils/authentication';
-import { UNAUTHORISED_READ } from '../../../src/utils/constants';
+import { UNAUTHORISED_READ } from '../../../src/helpers/constants';
 
 export default function load(req) {
   return new Promise((resolve, reject) => {

@@ -3,7 +3,7 @@ import { find } from '../utils/find';
 import {
   INVALID_SESSION,
   INVALID_CREDENTIALS,
-} from '../../src/utils/constants';
+} from '../../src/helpers/constants';
 import setContentLastUpdatedTimestamp from '../utils/setContentLastUpdatedTimestamp';
 
 export default function login(reqSecured, userProfile, resolve, reject) {

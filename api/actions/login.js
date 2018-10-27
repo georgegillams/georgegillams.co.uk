@@ -3,7 +3,7 @@ import { find } from '../utils/find';
 import {
   INVALID_SESSION,
   INVALID_CREDENTIALS,
-} from '../../src/utils/constants';
+} from '../../src/helpers/constants';
 import { hash, compareHash } from '../utils/hash';
 import setContentLastUpdatedTimestamp from '../utils/setContentLastUpdatedTimestamp';
 import reqSecure from '../utils/reqSecure';

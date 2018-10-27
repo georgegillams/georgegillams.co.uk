@@ -3,7 +3,7 @@ import {
   SORT_CODE_REGEX,
   MONZO_ME_REGEX,
   STRING_REGEX,
-} from '../../../src/utils/constants';
+} from '../../../src/helpers/constants';
 
 const paymentsAllowedAttributes = [
   { attribute: 'amount', pattern: INT_REGEX },

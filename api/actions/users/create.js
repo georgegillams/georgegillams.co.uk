@@ -3,7 +3,7 @@ import authentication from '../../utils/authentication';
 import { hash } from '../../utils/hash';
 import { find, emailFingerprint } from '../../utils/find';
 import { sendEmailVerificationEmail } from '../../utils/emailHelpers';
-import { UNAUTHORISED_WRITE } from '../../../src/utils/constants';
+import { UNAUTHORISED_WRITE } from '../../../src/helpers/constants';
 import reqSecure from '../../utils/reqSecure';
 import usersAllowedAttributes from './usersAllowedAttributes';
 import loginUser from '../../utils/login';

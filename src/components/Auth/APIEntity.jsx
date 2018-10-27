@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { TextLink, Section } from '../';
-import { getTimeDifference } from '../../utils/time';
+import { getTimeDifference } from 'helpers/time';
 
 class APIEntity extends Component {
   constructor(props) {
