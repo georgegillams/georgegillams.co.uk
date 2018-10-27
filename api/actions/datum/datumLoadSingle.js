@@ -1,6 +1,14 @@
 import redis from '../../utils/redis';
 import { RESOURCE_NOT_FOUND } from '../../../src/utils/constants';
 
+function notFound(settings, resolve, reject) {
+  if (settings.resolveIfNotFound) {
+    resolve(undefined);
+  } else {
+    reject(RESOURCE_NOT_FOUND);
+  }
+}
+
 export default function datumLoadSingle(settings) {
   // load(req) {
   return new Promise((resolve, reject) => {
@@ -26,7 +34,7 @@ export default function datumLoadSingle(settings) {
           }
         }
       }
-      reject(RESOURCE_NOT_FOUND);
+      notFound(settings, resolve, reject);
     });
   });
 }
