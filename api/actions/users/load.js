@@ -1,6 +1,6 @@
 import { datumLoad } from '../datum';
 import authentication from '../../utils/authentication';
-import { UNAUTHORISED_READ } from '../../../src/utils/constants';
+import { UNAUTHORISED_READ } from '../../../src/helpers/constants';
 import reqSecure from '../../utils/reqSecure';
 import usersAllowedAttributes from './usersAllowedAttributes';
 

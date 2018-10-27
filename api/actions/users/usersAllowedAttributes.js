@@ -4,7 +4,7 @@ import {
   PASSWORD_REGEX,
   STRING_REGEX,
   ID_REGEX,
-} from '../../../src/utils/constants';
+} from '../../../src/helpers/constants';
 
 const usersAllowedAttributes = [
   { attribute: 'name', pattern: STRING_REGEX },

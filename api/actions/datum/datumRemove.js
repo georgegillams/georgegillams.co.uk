@@ -1,6 +1,6 @@
 import datumLoad from './datumLoad';
 import datumUpdate from './datumUpdate';
-import { RESOURCE_NOT_FOUND } from '../../../src/utils/constants';
+import { RESOURCE_NOT_FOUND } from '../../../src/helpers/constants';
 import redis from '../../utils/redis';
 import { find } from '../../utils/find';
 import setContentLastUpdatedTimestamp from '../../utils/setContentLastUpdatedTimestamp';

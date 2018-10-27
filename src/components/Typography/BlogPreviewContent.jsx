@@ -21,7 +21,7 @@ import {
   CodeInline,
   CodeBashArrow,
 } from 'components';
-import HelperFunctions from '../../helpers/HelperFunctions';
+import HelperFunctions from 'helpers/HelperFunctions';
 
 import STYLES from './blog-viewer.scss';
 import PAGE_STYLES from '../../containers/pages.scss';

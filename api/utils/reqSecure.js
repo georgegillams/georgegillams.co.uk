@@ -1,4 +1,4 @@
-import { INT_REGEX, ID_REGEX, PASSWORD_REGEX } from '../../src/utils/constants';
+import { INT_REGEX, ID_REGEX, PASSWORD_REGEX } from '../../src/helpers/constants';
 
 const standardAttributes = [
   { attribute: 'deleted', pattern: 'BOOL' },

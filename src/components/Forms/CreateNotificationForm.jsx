@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import BpkInput, { INPUT_TYPES } from 'bpk-component-input';
 import { TextLink, Button } from '../index';
 import { cssModules } from 'bpk-react-utils';
-import { EMAIL_REGEX, PASSWORD_REGEX } from '../../utils/constants';
+import { EMAIL_REGEX, PASSWORD_REGEX } from 'helpers/constants';
 
 import STYLES from './forms.scss';
 
