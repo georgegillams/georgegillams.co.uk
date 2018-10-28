@@ -1,5 +1,5 @@
-import redis from "../../utils/redis";
-import { find } from "../../utils/find";
+import redis from "utils/redis";
+import { find } from "utils/find";
 
 export default function datumLoad(settings) {
   // load(req) {

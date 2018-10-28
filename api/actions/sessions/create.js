@@ -1,7 +1,7 @@
 import { datumCreate } from '../datum';
 import crypto from 'crypto';
-import authentication from '../../utils/authentication';
-import reqSecure from '../../utils/reqSecure';
+import authentication from 'utils/authentication';
+import reqSecure from 'utils/reqSecure';
 
 export default function create(req) {
   const reqSecured = reqSecure(req, []);

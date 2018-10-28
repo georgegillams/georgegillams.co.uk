@@ -2,7 +2,7 @@
 import React, { Component } from 'react';
 import Helmet from 'react-helmet';
 import { Section, Button, SubSection, bpkDemo } from 'components';
-import HelperFunctions from '../../helpers/HelperFunctions';
+import HelperFunctions from 'helpers/HelperFunctions';
 import { cssModules } from 'bpk-react-utils';
 
 import STYLES from '../pages.scss';

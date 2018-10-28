@@ -1,7 +1,7 @@
 import { datumLoad, datumUpdate } from '../actions/datum';
-import { find } from '../utils/find';
-import setContentLastUpdatedTimestamp from '../utils/setContentLastUpdatedTimestamp';
-import reqSecure from '../utils/reqSecure';
+import { find } from 'utils/find';
+import setContentLastUpdatedTimestamp from 'utils/setContentLastUpdatedTimestamp';
+import reqSecure from 'utils/reqSecure';
 import usersAllowedAttributes from './users/usersAllowedAttributes';
 
 export default function logout(req) {

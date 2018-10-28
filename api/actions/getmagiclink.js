@@ -1,7 +1,7 @@
 import { datumLoad } from '../actions/datum';
-import { find } from '../utils/find';
-import { sendMagicLinkEmail } from '../utils/emailHelpers';
-import reqSecure from '../utils/reqSecure';
+import { find } from 'utils/find';
+import { sendMagicLinkEmail } from 'utils/emailHelpers';
+import reqSecure from 'utils/reqSecure';
 import usersAllowedAttributes from './users/usersAllowedAttributes';
 
 export default function getmagiclink(req) {

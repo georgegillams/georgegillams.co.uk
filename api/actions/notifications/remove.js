@@ -1,7 +1,7 @@
 import { datumRemove } from '../datum';
-import authentication from '../../utils/authentication';
-import { UNAUTHORISED_WRITE } from '../../../src/utils/constants';
-import reqSecure from '../../utils/reqSecure';
+import authentication from 'utils/authentication';
+import { UNAUTHORISED_WRITE } from '../../../src/helpers/constants';
+import reqSecure from 'utils/reqSecure';
 import notificationsAllowedAttributes from './notificationsAllowedAttributes';
 
 export default function remove(req) {

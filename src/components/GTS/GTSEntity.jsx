@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import { getTimeDifference } from '../../utils/time';
+import { getTimeDifference } from 'helpers/time';
 import { TextLink, Section } from '../';
 
 class GTSEntity extends Component {
