@@ -1,5 +1,5 @@
 import { datumLoad } from "../datum";
-import authentication from "../../utils/authentication";
+import authentication from "utils/authentication";
 
 export default function load(req) {
   return new Promise((resolve, reject) => {

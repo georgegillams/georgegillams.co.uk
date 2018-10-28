@@ -24,7 +24,7 @@ import DemoBooleanComponent from './DemoBooleanComponent';
 import DemoStringComponent from './DemoStringComponent';
 import DemoNumberComponent from './DemoNumberComponent';
 import DemoFunctionComponent from './DemoFunctionComponent';
-import HelperFunctions from '../../../helpers/HelperFunctions';
+import HelperFunctions from 'helpers/HelperFunctions';
 
 import STYLES from './bpk-demo.scss';
 

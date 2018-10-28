@@ -1,7 +1,7 @@
 import { datumUpdate } from '../datum';
-import authentication from '../../utils/authentication';
-import { UNAUTHORISED_WRITE } from '../../../src/utils/constants';
-import reqSecure from '../../utils/reqSecure';
+import authentication from 'utils/authentication';
+import { UNAUTHORISED_WRITE } from '../../../src/helpers/constants';
+import reqSecure from 'utils/reqSecure';
 import paymentsAllowedAttributes from './paymentsAllowedAttributes';
 
 export default function update(req) {

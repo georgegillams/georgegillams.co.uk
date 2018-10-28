@@ -1,4 +1,4 @@
-import { MD_PARTIAL_REGEX, ID_REGEX } from '../../../src/utils/constants';
+import { MD_PARTIAL_REGEX, ID_REGEX } from '../../../src/helpers/constants';
 
 const commentsAllowedAttributes = [
   { attribute: 'pageId', pattern: ID_REGEX },

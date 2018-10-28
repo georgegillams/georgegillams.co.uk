@@ -11,7 +11,7 @@ import { ArticleCard, BlogsList, Loading, TagFilter, Tag } from 'components';
 import {
   NON_EMOJI_REGEX,
   CHECK_FOR_NEW_CONTENT_INTERVAL,
-} from '../../utils/constants';
+} from 'helpers/constants';
 import { cssModules } from 'bpk-react-utils';
 
 import STYLES from '../pages.scss';

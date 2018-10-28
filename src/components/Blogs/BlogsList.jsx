@@ -5,8 +5,8 @@ import { Link } from 'react-router';
 import {
   NON_EMOJI_REGEX,
   CHECK_FOR_NEW_CONTENT_INTERVAL
-} from '../../utils/constants';
-import HelperFunctions from '../../helpers/HelperFunctions';
+} from 'helpers/constants';
+import HelperFunctions from 'helpers/HelperFunctions';
 import { cssModules } from 'bpk-react-utils';
 
 import STYLES from '../../containers/pages.scss';

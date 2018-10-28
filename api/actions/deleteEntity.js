@@ -2,13 +2,13 @@ import {
   STRING_REGEX,
   ID_REGEX,
   RESOURCE_NOT_FOUND,
-} from '../../src/utils/constants';
-import redis from '../utils/redis';
+} from '../../src/helpers/constants';
+import redis from 'utils/redis';
 import { datumLoad, datumUpdate } from '../actions/datum';
-import { find } from '../utils/find';
-import authentication from '../utils/authentication';
-import setContentLastUpdatedTimestamp from '../utils/setContentLastUpdatedTimestamp';
-import reqSecure from '../utils/reqSecure';
+import { find } from 'utils/find';
+import authentication from 'utils/authentication';
+import setContentLastUpdatedTimestamp from 'utils/setContentLastUpdatedTimestamp';
+import reqSecure from 'utils/reqSecure';
 const deleteEntityAllowedAttributes = [
   { attribute: 'collectionName', pattern: STRING_REGEX },
   { attribute: 'id', pattern: ID_REGEX },

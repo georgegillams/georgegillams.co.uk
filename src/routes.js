@@ -48,7 +48,7 @@ import {
   Pagination,
 } from 'containers';
 import redirects from './redirects';
-import HelperFunctions from './helpers/HelperFunctions';
+import HelperFunctions from 'helpers/HelperFunctions';
 
 export default store => {
   const requireLogin = (nextState, replace, cb) => {

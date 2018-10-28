@@ -24,7 +24,7 @@ import {
   bpkDemo,
 } from 'components';
 import { withLazyLoading } from 'bpk-component-image';
-import HelperFunctions from '../../helpers/HelperFunctions';
+import HelperFunctions from 'helpers/HelperFunctions';
 import { cssModules } from 'bpk-react-utils';
 
 import STYLES from '../pages.scss';

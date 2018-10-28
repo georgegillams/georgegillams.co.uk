@@ -8,7 +8,7 @@ import {
 } from 'redux/modules/blogs';
 import { asyncConnect } from 'redux-async-connect';
 import { SubSection, TextLink } from 'components';
-import { NON_EMOJI_REGEX } from '../../utils/constants';
+import { NON_EMOJI_REGEX } from 'helpers/constants';
 import { cssModules } from 'bpk-react-utils';
 import redirects from '../../redirects';
 
