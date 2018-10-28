@@ -1,10 +1,10 @@
 import { datumLoad, datumUpdate } from '../actions/datum';
-import { find } from '../utils/find';
+import { find } from 'utils/find';
 import {
   INVALID_SESSION,
   INVALID_CREDENTIALS,
-} from '../../src/utils/constants';
-import setContentLastUpdatedTimestamp from '../utils/setContentLastUpdatedTimestamp';
+} from '../../src/helpers/constants';
+import setContentLastUpdatedTimestamp from 'utils/setContentLastUpdatedTimestamp';
 
 export default function login(reqSecured, userProfile, resolve, reject) {
   datumLoad({ redisKey: 'sessions' }).then(sessionData => {

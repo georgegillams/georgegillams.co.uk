@@ -6,7 +6,7 @@ import BpkImage, {
 } from 'bpk-component-image';
 import { Section, SubSection } from '../';
 import { Link } from 'react-router';
-import HelperFunctions from '../../helpers/HelperFunctions';
+import HelperFunctions from 'helpers/HelperFunctions';
 import { cssModules } from 'bpk-react-utils';
 
 import STYLES from './article-card.scss';

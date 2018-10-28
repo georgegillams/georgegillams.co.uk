@@ -7,7 +7,7 @@ import {
   APP_VERSION,
   COMPONENT_RELOAD_INTERVAL,
   CHECK_FOR_NEW_CONTENT_INTERVAL,
-} from '../../utils/constants';
+} from 'helpers/constants';
 import Button from '../Button/Button';
 import Section from '../Typography/Section';
 import TextLink from '../Typography/TextLink';

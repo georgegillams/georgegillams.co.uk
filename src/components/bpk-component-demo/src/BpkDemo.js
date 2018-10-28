@@ -31,7 +31,7 @@ import CloseIconSm from 'bpk-component-icon/sm/close';
 import requiredDefaultProps from './requiredDefaultProps.json';
 import DemoControl from './DemoControl';
 import { cssModules } from 'bpk-react-utils';
-import HelperFunctions from '../../../helpers/HelperFunctions';
+import HelperFunctions from 'helpers/HelperFunctions';
 
 import STYLES from './bpk-demo.scss';
 

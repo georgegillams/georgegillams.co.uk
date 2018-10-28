@@ -1,6 +1,6 @@
 import { datumLoad } from '../datum';
-import { find } from '../../utils/find';
-import reqSecure from '../../utils/reqSecure';
+import { find } from 'utils/find';
+import reqSecure from 'utils/reqSecure';
 import usersAllowedAttributes from './usersAllowedAttributes';
 
 export default function unametaken(req) {

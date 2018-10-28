@@ -1,6 +1,6 @@
 import { datumCreate } from '../datum';
-import authentication from '../../utils/authentication';
-import { UNAUTHORISED_WRITE } from '../../../src/utils/constants';
+import authentication from 'utils/authentication';
+import { UNAUTHORISED_WRITE } from '../../../src/helpers/constants';
 
 export default function create(req) {
   return new Promise((resolve, reject) => {
