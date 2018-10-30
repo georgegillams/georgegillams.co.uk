@@ -6,7 +6,7 @@ import {
   SubSection,
   ArticleCard,
   CARD_LAYOUTS,
-  Button
+  Button,
 } from 'components';
 // import contactFile from "./contact.vcf";
 import { cssModules } from 'bpk-react-utils';
@@ -16,7 +16,7 @@ const getClassName = cssModules(STYLES);
 
 export default class Contact extends Component {
   state = {
-    showKitten: false
+    showKitten: false,
   };
 
   handleToggleKitten = () =>
@@ -27,7 +27,7 @@ export default class Contact extends Component {
       <div
         className={[
           getClassName('pages__container'),
-          getClassName('pages__container--centered')
+          getClassName('pages__container--centered'),
         ].join(' ')}
       >
         <Helmet title="Contact" />
@@ -44,6 +44,16 @@ export default class Contact extends Component {
               imageSrc="https://i.imgur.com/nmkJVkO.png"
               href="https://www.fb.com/george333123"
               title="Facebook"
+              tallLayout
+            />
+            <ArticleCard
+              layout={CARD_LAYOUTS.narrowCompact}
+              day={null}
+              month={null}
+              className={getClassName('pages__card')}
+              imageSrc="https://i.imgur.com/2x6do1x.png"
+              href="https://www.linkedin.com/in/george-gillams-37537077"
+              title="Linkedin"
               tallLayout
             />
             <ArticleCard
@@ -87,7 +97,7 @@ export default class Contact extends Component {
             name="Questions about Black Panther should be emailed to me using WhatsApp 🤦‍"
           >
             <TextLink external href="https://youtu.be/0vL4HLTZQ_Q?t=29">
-              Context{" "}
+              Context{' '}
             </TextLink>
           </SubSection>
           {/* <br />
