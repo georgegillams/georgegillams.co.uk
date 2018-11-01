@@ -28,6 +28,10 @@ module.exports = Object.assign(
             property: 'og:image',
             content: 'https://georgegillams.co.uk/favicon.ico',
           },
+          {
+            property: 'og:logo',
+            content: 'https://georgegillams.co.uk/favicon.ico',
+          },
           { property: 'og:locale', content: 'en_GB' },
           { property: 'og:title', content: 'My personal website' },
           {
