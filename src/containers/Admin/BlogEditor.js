@@ -21,6 +21,7 @@ import { CommentArea } from 'containers';
 import NotFound from '../NotFound/NotFound';
 import HelperFunctions from 'helpers/HelperFunctions';
 import { cssModules } from 'bpk-react-utils';
+import BpkCheckBox from 'bpk-component-checkbox';
 
 import STYLES from './blog-editor.scss';
 
@@ -79,7 +80,10 @@ export default class BlogEditor extends Component {
   constructor(props) {
     super(props);
 
-    this.state = { editedBlog: props.blogs[props.params.id] || {} };
+    this.state = {
+      editedBlog: props.blogs[props.params.id] || {},
+      showPreview: false,
+    };
   }
 
   componentDidMount = () => {
@@ -133,31 +137,44 @@ export default class BlogEditor extends Component {
         <Helmet title={blog ? blog.title : 'Blog editor'} />
         <AdminOnly user={user}>
           {blog && (
-            <div className={getClassName('blog-editor')}>
-              <BlogForm
-                className={getClassName('blog-editor__component')}
-                elementClassName={getClassName(
-                  'blog-editor__component__editor-element',
-                )}
-                checkBoxElementClassName={getClassName(
-                  'blog-editor__component__editor-element--checkbox',
-                )}
-                blog={blog}
-                editedBlog={this.state.editedBlog}
-                onBlogChanged={this.onBlogEdited}
-                onCreateBlog={this.onCreateBlog}
-                onUpdateBlog={this.onUpdateBlog}
+            <div>
+              <BpkCheckBox
+                label="showPreview"
+                name="Show preview"
+                checked={this.state.showPreview}
+                onChange={event => {
+                  this.setState({ showPreview: event.target.checked });
+                }}
               />
-              {this.state.editedBlog.content &&
-                this.state.editedBlog.content !== '' && (
-                  <BlogRenderer
-                    className={getClassName('blog-editor__component')}
-                    elementClassName={getClassName(
-                      'blog-editor__component__preview-element',
-                    )}
-                    blog={this.state.editedBlog}
-                  />
-                )}
+              <br />
+              <br />
+              <div className={getClassName('blog-editor')}>
+                <BlogForm
+                  className={getClassName('blog-editor__component')}
+                  elementClassName={getClassName(
+                    'blog-editor__component__editor-element',
+                  )}
+                  checkBoxElementClassName={getClassName(
+                    'blog-editor__component__editor-element--checkbox',
+                  )}
+                  blog={blog}
+                  editedBlog={this.state.editedBlog}
+                  onBlogChanged={this.onBlogEdited}
+                  onCreateBlog={this.onCreateBlog}
+                  onUpdateBlog={this.onUpdateBlog}
+                />
+                {this.state.showPreview &&
+                  this.state.editedBlog.content &&
+                  this.state.editedBlog.content !== '' && (
+                    <BlogRenderer
+                      className={getClassName('blog-editor__component')}
+                      elementClassName={getClassName(
+                        'blog-editor__component__preview-element',
+                      )}
+                      blog={this.state.editedBlog}
+                    />
+                  )}
+              </div>
             </div>
           )}
         </AdminOnly>
