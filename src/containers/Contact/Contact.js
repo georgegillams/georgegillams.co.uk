@@ -87,19 +87,23 @@ export default class Contact extends Component {
             hrefExternal
             href="https://www.dropbox.com/s/aj9wjgotkldd18j/georgegillams.vcf?dl=1"
           >
-            Download contact
+            Download contact (iOS)
+          </Button>
+          <br />
+          <br />
+          <Button
+            hrefExternal
+            href="https://www.dropbox.com/s/k8hmxeh2qpjqx66/google.csv?dl=1"
+          >
+            Download contact (Android)
           </Button>
           <br />
           <br />
           <SubSection
             className={getClassName('pages__card')}
             noAnchor
-            name="Questions about Black Panther should be emailed to me using WhatsApp 🤦‍"
-          >
-            <TextLink external href="https://youtu.be/0vL4HLTZQ_Q?t=29">
-              Context{' '}
-            </TextLink>
-          </SubSection>
+            name="Alternatively find me on WhatsApp or Signal"
+          />
           {/* <br />
         <a
           href="https://www.fb.com/george333123"
