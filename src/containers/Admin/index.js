@@ -1,6 +1,4 @@
-import Admin from './Admin';
-export default Admin;
-
+export { default } from './Admin';
 export AdminSessions from './Sessions';
 export AdminNotifications from './Notifications';
 export AdminComments from './Comments';

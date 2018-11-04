@@ -16,6 +16,4 @@
  * limitations under the License.
  */
 
-import BpkDemo from './src/BpkDemo';
-
-export default BpkDemo;
+export { default } from './src/BpkDemo';

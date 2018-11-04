@@ -1,2 +1,1 @@
-import ColourPalleteItem from './ColourPalleteItem';
-export default ColourPalleteItem;
+export { default } from './ColourPalleteItem';
