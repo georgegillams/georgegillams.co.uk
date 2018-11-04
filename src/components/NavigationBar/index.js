@@ -1,4 +1,2 @@
-import NavigationBar from './NavigationBar';
-export default NavigationBar;
-
+export { default } from './NavigationBar';
 export NavigationItem from './NavigationItem';

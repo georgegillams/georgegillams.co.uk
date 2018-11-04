@@ -1,4 +1,1 @@
-import ArticleCard, { CARD_LAYOUTS } from './ArticleCard';
-export default ArticleCard;
-
-export { CARD_LAYOUTS };
+export { default, CARD_LAYOUTS } from './ArticleCard';

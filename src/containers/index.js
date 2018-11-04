@@ -1,6 +1,3 @@
-// Expose default exports
-
-// Expose non-default exports
 export About from './About/About';
 export App from './App/App';
 export Blogs from './Blogs/Blogs';

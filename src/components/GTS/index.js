@@ -1,2 +1,1 @@
-import GTSEntity from './GTSEntity';
-export default GTSEntity;
+export { default } from './GTSEntity';
