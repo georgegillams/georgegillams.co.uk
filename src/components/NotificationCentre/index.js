@@ -1,4 +1,2 @@
-import NotificationCentre from './NotificationCentre';
-export default NotificationCentre;
-
+export { default } from './NotificationCentre';
 export NotificationComp from './NotificationComp';

@@ -1,2 +1,1 @@
-import DegreeModule from './DegreeModule';
-export default DegreeModule;
+export { default } from './DegreeModule';

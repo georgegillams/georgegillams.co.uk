@@ -1,4 +1,2 @@
-import Status from './Status';
-export default Status;
-
+export { default } from './Status';
 export StatusCard from './StatusCard';
