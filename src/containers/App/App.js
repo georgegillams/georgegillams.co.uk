@@ -52,7 +52,7 @@ const getClassName = cssModules(STYLES);
 ])
 @connect(
   state => ({
-    newDataAvailable: PropTypes.bool.isRequired,
+    newDataAvailable: state.sessions.newDataAvailable,
     notifications: state.notifications.data,
     user: state.auth.user,
     contentLastUpdatedTimestamp: state.sessions.contentLastUpdatedTimestamp,
@@ -147,22 +147,30 @@ export default class App extends Component {
       notifications,
       keepAlive,
       createSession,
+      serverContentUpdateTimestamp,
       updateServerContentUpdateTimestamp,
       updateNewDataAvailable,
       exposeSession,
+      newDataAvailable,
     } = this.props;
 
     return (
       <div className={getClassName('app__outer')}>
         <Helmet {...config.app.head} />
         <SessionManagement
+          newDataAvailable={newDataAvailable}
           keepAlive={keepAlive}
           createSession={createSession}
           updateServerContentUpdateTimestamp={
             updateServerContentUpdateTimestamp
           }
+          loadAuth={loadAuth}
           updateNewDataAvailable={updateNewDataAvailable}
           exposeSession={exposeSession}
+          serverContentUpdateTimestamp={serverContentUpdateTimestamp}
+          updateServerContentUpdateTimestamp={
+            updateServerContentUpdateTimestamp
+          }
         />
         {/*        <Navbar fixedTop>
           <Navbar.Header>
