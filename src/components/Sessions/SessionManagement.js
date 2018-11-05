@@ -163,13 +163,14 @@ export default class SessionManagement extends Component {
       updateServerContentUpdateTimestamp,
       updateNewDataAvailable,
       exposeSession,
+      newDataAvailable,
       ...rest
     } = this.props; // eslint-disable-line no-shadow
 
     return (
       <div {...rest}>
         {this.state.sessionDebugViews &&
-          this.props.newDataAvailable && (
+          newDataAvailable && (
             <div className={getClassName('cookie-banner__new-data-available')}>
               New data has become available on the server. Reloading...
             </div>
