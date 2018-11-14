@@ -1,7 +1,7 @@
-import React from 'react';
+import React, { PropTypes } from 'react';
 
-const GithubButton = (props) => {
-  const {user, repo, type, width, height, count, large} = props;
+const GithubButton = props => {
+  const { user, repo, type, width, height, count, large } = props;
   let src = `https://ghbtns.com/github-btn.html?user=${user}&repo=${repo}&type=${type}`;
   if (count) src += '&count=true';
   if (large) src += '&size=large';
@@ -14,18 +14,19 @@ const GithubButton = (props) => {
       scrolling="0"
       width={width}
       height={height}
-      style={{border: 'none', width: width, height: height}}></iframe>
+      style={{ border: 'none', width: width, height: height }}
+    />
   );
 };
 
 GithubButton.propTypes = {
-  user: React.PropTypes.string.isRequired,
-  repo: React.PropTypes.string.isRequired,
-  type: React.PropTypes.oneOf(['star', 'watch', 'fork', 'follow']).isRequired,
-  width: React.PropTypes.number.isRequired,
-  height: React.PropTypes.number.isRequired,
-  count: React.PropTypes.bool,
-  large: React.PropTypes.bool
+  user: PropTypes.string.isRequired,
+  repo: PropTypes.string.isRequired,
+  type: PropTypes.oneOf(['star', 'watch', 'fork', 'follow']).isRequired,
+  width: PropTypes.number.isRequired,
+  height: PropTypes.number.isRequired,
+  count: PropTypes.bool,
+  large: PropTypes.bool,
 };
 
 export default GithubButton;
