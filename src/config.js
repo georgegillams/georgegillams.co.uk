@@ -16,8 +16,8 @@ module.exports = Object.assign(
     apiHost: process.env.APIHOST || 'localhost',
     apiPort: process.env.APIPORT,
     app: {
-      title: 'George Gillams - open-source software engineer',
-      description: 'All the modern best practices in one example.',
+      title: 'George Gillams - open source software engineer',
+      description: 'George Gillams - open source software engineer',
       head: {
         titleTemplate: 'George Gillams: %s',
         meta: [
@@ -36,7 +36,7 @@ module.exports = Object.assign(
           { property: 'og:title', content: 'My personal website' },
           {
             property: 'og:description',
-            content: 'George Gillams - open-source software engineer',
+            content: 'George Gillams - open source software engineer',
           },
           { property: 'og:card', content: 'summary' },
           { property: 'og:site', content: '@georgegillams' },
