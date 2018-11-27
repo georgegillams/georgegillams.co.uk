@@ -31,6 +31,16 @@ const proxy = httpProxy.createProxyServer({
   ws: true,
 });
 
+app.use(function(req, res, next) {
+  res.header('Access-Control-Allow-Origin', '*');
+  res.header(
+    'Access-Control-Allow-Headers',
+    'Origin, X-Requested-With, Content-Type, Accept, Authorization, apiKey, Accept, Accept-Encoding, Accept-Language, Cache-Control, Connection, DNT, Host, If-None-Match, Upgrade-Insecure-Requests, User-Agent',
+  );
+  res.header('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE');
+  next();
+});
+
 app.use(compression());
 app.use(favicon(path.join(__dirname, '..', 'static', 'favicon.ico')));
 
