@@ -2,15 +2,7 @@
 // @name        Find Backpack components
 // @namespace   urn://https://www.georgegillams.co.uk/api/greasemonkey/find_backpack_components
 // @include     *
-// @exclude     *backpack.github.io*
-// @exclude     *skyspace*
-// @exclude     *backpack-neo.github.io*
-// @exclude     *skyscanner.net*
-// @exclude     *georgegillams.co.uk*
-// @exclude     *localhost:*
-// @exclude     *0.0.0.0:*
-// @exclude     *127.0.0.1:*
-// @version     2
+// @version     3
 // @description:en  Identifies Backpack components by making them red
 // @grant    		none
 // ==/UserScript==
