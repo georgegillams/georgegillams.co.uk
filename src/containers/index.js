@@ -46,3 +46,4 @@ export Admin, {
   AdminSiteSettings,
   AdminGTS,
 } from './Admin';
+export MonzoPots from './Monzo/MonzoPots';
