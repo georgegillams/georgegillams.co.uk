@@ -1,4 +1,5 @@
 import fetch from 'node-fetch';
+import moment from 'moment';
 
 const POTS_REVEAL = [
   'Gifts',
@@ -9,6 +10,12 @@ const POTS_REVEAL = [
   'Exercise extras',
   'Season ticket',
 ];
+
+function getMonthsElapsedPercentage() {
+  const result = moment().diff(`${moment().format('YYYY')}-01-01`, 'months');
+  console.log(`result`, result);
+  return (result * 100) / 12;
+}
 
 function monzoPots() {
   return new Promise((resolve, reject) => {
@@ -40,6 +47,10 @@ function monzoPots() {
             name: pot.name,
             balance: parseFloat(pot.balance) / 100,
             goalAmount: parseFloat(pot.goal_amount) / 100,
+            percentageTimeElapsed: getMonthsElapsedPercentage(),
+            percentageComplete: pot.goal_amount
+              ? (100 * pot.balance) / pot.goal_amount
+              : 100,
           };
         });
         resolve(reducedData);

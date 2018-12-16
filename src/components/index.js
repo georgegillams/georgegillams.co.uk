@@ -22,6 +22,7 @@ export {
 } from './Typography';
 
 export DegreeModule from './Degree';
+export MoneyPot from './MoneyPot';
 export { SessionManagement, CookiesOnly } from './Sessions';
 
 export GithubButton from './GithubButton/GithubButton';

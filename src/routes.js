@@ -46,6 +46,7 @@ import {
   AdminBlogEditor,
   BlogViewer,
   Pagination,
+  MonzoPots,
 } from 'containers';
 import redirects from './redirects';
 import HelperFunctions from 'helpers/HelperFunctions';
@@ -113,42 +114,43 @@ export default store => {
 
       {/* Routes */}
       <Route path="gts" component={GTS} />
-      <Route path="about" component={About} />
-      <Route path="comment-editor/:id" component={CommentEditor} />
-      <Route path="magic-login/:key" component={LoginMagic} />
-      <Route path="email-verification/:key" component={VerifyEmail} />
       <Route exact path="blog" component={Blogs} />
-      <Route path="blog/:id" component={BlogViewer} />
-      <Route path="travel/:id" component={BlogViewer} />
-      <Route path="admin" component={Admin} />
-      <Route path="admin/sessions" component={AdminSessions} />
-      <Route path="admin/users" component={AdminUsers} />
-      <Route path="admin/comments" component={AdminComments} />
-      <Route path="admin/notifications" component={AdminNotifications} />
-      <Route path="admin/payments" component={AdminPayments} />
-      <Route path="admin/site-settings" component={AdminSiteSettings} />
-      <Route path="admin/blog" component={AdminBlogs} />
-      <Route path="admin/gts" component={AdminGTS} />
-      <Route path="admin/blog/:id" component={AdminBlogEditor} />
-      <Route path="contact" component={Contact} />
-      <Route path="design" component={Design} />
-      <Route path="design/privacy-policy" component={DesignPrivacyPolicy} />
-      <Route path="design/colours" component={DesignColours} />
-      <Route path="design/components" component={DesignComponents} />
-      <Route path="design/typography" component={DesignTypography} />
-      <Route path="design/lab" component={DesignLab} />
+      <Route path="about" component={About} />
       <Route path="account" component={Account} />
       <Route path="account/edit" component={AccountEdit} />
+      <Route path="admin" component={Admin} />
+      <Route path="admin/blog" component={AdminBlogs} />
+      <Route path="admin/blog/:id" component={AdminBlogEditor} />
+      <Route path="admin/comments" component={AdminComments} />
+      <Route path="admin/gts" component={AdminGTS} />
+      <Route path="admin/notifications" component={AdminNotifications} />
+      <Route path="admin/payments" component={AdminPayments} />
+      <Route path="admin/sessions" component={AdminSessions} />
+      <Route path="admin/site-settings" component={AdminSiteSettings} />
+      <Route path="admin/users" component={AdminUsers} />
+      <Route path="blog/:id" component={BlogViewer} />
+      <Route path="comment-editor/:id" component={CommentEditor} />
+      <Route path="contact" component={Contact} />
+      <Route path="design" component={Design} />
+      <Route path="design/colours" component={DesignColours} />
+      <Route path="design/components" component={DesignComponents} />
+      <Route path="design/lab" component={DesignLab} />
+      <Route path="design/privacy-policy" component={DesignPrivacyPolicy} />
+      <Route path="design/typography" component={DesignTypography} />
+      <Route path="email-verification/:key" component={VerifyEmail} />
+      <Route path="magic-login/:key" component={LoginMagic} />
+      <Route path="monzoPots" component={MonzoPots} />
       <Route path="pagination" component={Pagination} />
+      <Route path="payments" component={Payments} />
+      <Route path="payments/:id" component={PaymentViewer} />
       <Route path="photography" component={Photography} />
       <Route path="sign-up" component={SignUp} />
       <Route path="site-map" component={SiteMap} />
       <Route path="sitemap" component={SiteMap} />
       <Route path="survey" component={Survey} />
       <Route path="travel" component={TravelBlogs} />
+      <Route path="travel/:id" component={BlogViewer} />
       <Route path="widgets" component={Widgets} />
-      <Route path="payments" component={Payments} />
-      <Route path="payments/:id" component={PaymentViewer} />
       <Route path="work" component={Work} />
       <Route path="work/degree" component={AboutDegree} />
       <Route
