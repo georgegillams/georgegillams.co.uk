@@ -1,5 +1,20 @@
 import fetch from 'node-fetch';
 
+const POTS_REVEAL = [
+  'Gifts',
+  'Software + Subscriptions',
+  'Travel',
+  'Emergencies',
+  'Extras',
+  'Exercise extras',
+  'Season ticket',
+];
+
+function getMonthsElapsedPercentage() {
+  const result = moment().diff(`${moment().format('YYYY')}-01-01`, 'months');
+  return Math.max(100, ((result + 1) * 100) / 12);
+}
+
 function monzoPots() {
   return new Promise((resolve, reject) => {
     const accessToken = process.env.MONZO_ACCESS_TOKEN;
@@ -23,17 +38,27 @@ function monzoPots() {
         }
 
         let reducedData = data.pots.filter(
-          pot => !pot.delted && pot.balance > 0,
+          pot => !pot.deleted && POTS_REVEAL.includes(pot.name),
         );
         reducedData = reducedData.map(pot => {
+          const goalAmount = parseFloat(pot.goal_amount) / 100;
+          const balance = parseFloat(pot.balance) / 100;
+          const monthsElapsedPercentage = getMonthsElapsedPercentage();
+          const expectedSavingsSoFar =
+            (goalAmount * monthsElapsedPercentage) / 100;
+          console.log('expectedSavingsSoFar', expectedSavingsSoFar);
+          const shortfall = expectedSavingsSoFar - balance;
           return {
             name: pot.name,
-            balance: parseFloat(pot.balance) / 100,
+            balance: balance,
             goalAmount: parseFloat(pot.goal_amount) / 100,
+            percentageTimeElapsed: monthsElapsedPercentage,
+            shortfall: shortfall < 5 ? null : shortfall,
+            percentageComplete: pot.goal_amount
+              ? (100 * pot.balance) / pot.goal_amount
+              : 100,
           };
         });
-        console.log(`data0`, data.pots);
-        console.log(`reduced`, reducedData);
         resolve(reducedData);
       });
   });
