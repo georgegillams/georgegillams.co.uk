@@ -1,5 +1,15 @@
 import fetch from 'node-fetch';
 
+const POTS_REVEAL = [
+  'Gifts',
+  'Software + Subscriptions',
+  'Travel',
+  'Emergencies',
+  'Extras',
+  'Exercise extras',
+  'Season ticket',
+];
+
 function monzoPots() {
   return new Promise((resolve, reject) => {
     const accessToken = process.env.MONZO_ACCESS_TOKEN;
@@ -23,7 +33,7 @@ function monzoPots() {
         }
 
         let reducedData = data.pots.filter(
-          pot => !pot.delted && pot.balance > 0,
+          pot => !pot.deleted && POTS_REVEAL.includes(pot.name),
         );
         reducedData = reducedData.map(pot => {
           return {
@@ -32,8 +42,6 @@ function monzoPots() {
             goalAmount: parseFloat(pot.goal_amount) / 100,
           };
         });
-        console.log(`data0`, data.pots);
-        console.log(`reduced`, reducedData);
         resolve(reducedData);
       });
   });
