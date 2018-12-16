@@ -1,4 +1,5 @@
 import fetch from 'node-fetch';
+import moment from 'moment';
 
 const POTS_REVEAL = [
   'Gifts',
@@ -59,6 +60,13 @@ function monzoPots() {
               : 100,
           };
         });
+        //        reducedData.push({
+        //          name: 'Test',
+        //          balance: 30,
+        //          goalAmount: 90,
+        //          percentageTimeElapsed: 33.333,
+        //          percentageComplete: 33.333,
+        //        });
         resolve(reducedData);
       });
   });
