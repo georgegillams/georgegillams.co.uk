@@ -6,6 +6,7 @@ import BpkImage, {
   withLazyLoading,
   withLoadingBehavior,
 } from 'bpk-component-image';
+import BpkInput, { INPUT_TYPES, CLEAR_BUTTON_MODES } from 'bpk-component-input';
 import {
   isLoaded as isCommentsLoaded,
   load as loadComments,
@@ -37,14 +38,23 @@ class MonzoPots extends React.Component {
     super(props);
 
     this.state = {
+      password: '',
       potData: null,
       lastFilled: -1,
       filled: [],
     };
   }
 
-  componentDidMount = () => {
-    fetch('https://www.georgegillams.co.uk/api/monzoPots').then(response => {
+  loadPotData = accessPassword => {
+    fetch('https://www.georgegillams.co.uk/api/monzoPots', {
+      method: 'POST',
+      body: JSON.stringify({
+        accessPassword: accessPassword,
+      }),
+      headers: {
+        'Content-Type': 'application/json',
+      },
+    }).then(response => {
       response
         .json()
         .then(data => {
@@ -54,7 +64,9 @@ class MonzoPots extends React.Component {
           console.log(error);
         });
     });
+  };
 
+  componentDidMount = () => {
     const updateNextValue = () => {
       if (!this.state.potData) {
         return;
@@ -84,17 +96,33 @@ class MonzoPots extends React.Component {
       <div className={outerClassNameFinal.join(' ')} {...rest}>
         <Helmet title="My monzo pots" />
         <Section>
-          <FadingLazyLoadedImage
-            className={getClassName('pages__image')}
-            style={{ maxWidth: '5rem' }}
-            altText="Monzo bank"
-            width={1}
-            height={1}
-            src="https://upload.wikimedia.org/wikipedia/en/thumb/a/a3/Monzo_logo.svg/200px-Monzo_logo.svg.png"
-          />
-          <br />
           <Section name="Monzo pot tracking 💳">
+            <br />
+            <FadingLazyLoadedImage
+              className={getClassName('pages__image')}
+              style={{ maxWidth: '5rem' }}
+              altText="Monzo bank"
+              width={1}
+              height={1}
+              src="https://upload.wikimedia.org/wikipedia/en/thumb/a/a3/Monzo_logo.svg/200px-Monzo_logo.svg.png"
+            />
+            <BpkInput
+              id="password"
+              type={INPUT_TYPES.password}
+              name="password"
+              value={this.state.password}
+              onChange={event => {
+                this.setState({ password: event.target.value });
+                this.loadPotData(event.target.value);
+              }}
+              placeholder="Password"
+              clearButtonMode={CLEAR_BUTTON_MODES.whileEditing}
+              clearButtonLabel="Clear"
+              onClear={() => this.setState({ password: '' })}
+            />
+            <br />
             {this.state.potData &&
+              this.state.potData.map &&
               this.state.potData.map((pot, index) => (
                 <MoneyPot
                   markerPosition={pot.percentageTimeElapsed}

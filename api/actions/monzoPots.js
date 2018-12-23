@@ -6,8 +6,8 @@ const POTS_REVEAL = [
   'Software + Subscriptions',
   'Travel',
   'Emergencies',
-  'Extras',
-  'Exercise extras',
+  'Extras (monthly)',
+  'Exercise extras (monthly)',
   'Season ticket',
 ];
 
@@ -16,12 +16,21 @@ function getMonthsElapsedPercentage() {
   return Math.max(100, ((result + 1) * 100) / 12);
 }
 
-function monzoPots() {
+function monzoPots(req) {
   return new Promise((resolve, reject) => {
+    const accessPassword = process.env.MONZO_ACCESS_PASSWORD;
     const accessToken = process.env.MONZO_ACCESS_TOKEN;
 
     if (!accessToken) {
       reject('No access token configured');
+      return;
+    }
+
+    if (
+      !req.body.accessPassword ||
+      req.body.accessPassword !== accessPassword
+    ) {
+      reject('Access password incorrect');
       return;
     }
 
@@ -47,7 +56,6 @@ function monzoPots() {
           const monthsElapsedPercentage = getMonthsElapsedPercentage();
           const expectedSavingsSoFar =
             (goalAmount * monthsElapsedPercentage) / 100;
-          console.log('expectedSavingsSoFar', expectedSavingsSoFar);
           const shortfall = expectedSavingsSoFar - balance;
           return {
             name: pot.name,
