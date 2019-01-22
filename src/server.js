@@ -47,6 +47,7 @@ app.use(favicon(path.join(__dirname, '..', 'static', 'favicon.ico')));
 app.use(Express.static(path.join(__dirname, '..', 'static')));
 
 // Proxy to API server
+app.use(greasemonkey);
 app.use('/api', (req, res) => {
   proxy.web(req, res, { target: targetUrl });
 });
@@ -56,7 +57,6 @@ app.use('/ws', (req, res) => {
 });
 
 app.use(seo);
-app.use(greasemonkey);
 
 server.on('upgrade', (req, socket, head) => {
   proxy.ws(req, socket, head);
