@@ -315,7 +315,12 @@ class BlogPreviewContent extends Component {
       return (
         <span className={classNameFinal.join(' ')} {...rest}>
           <RecursiveWrapper {...this.props} content={preLinkText} />
-          <TextLink external={external} inline href={linkRef}>
+          <TextLink
+            className={elementClassNameFinal.join(' ')}
+            external={external}
+            inline
+            href={linkRef}
+          >
             <RecursiveWrapper {...this.props} content={linkText} />
             {external ? ' ' : ''}
           </TextLink>
