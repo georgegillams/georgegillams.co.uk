@@ -1,7 +1,7 @@
-import React, { Component, PropTypes } from "react";
-import ReactDOM from "react-dom/server";
-import serialize from "serialize-javascript";
-import Helmet from "react-helmet";
+import React, { Component, PropTypes } from 'react';
+import ReactDOM from 'react-dom/server';
+import serialize from 'serialize-javascript';
+import Helmet from 'react-helmet';
 
 /**
  * Wrapper component containing HTML metadata and boilerplate tags.
@@ -16,16 +16,16 @@ export default class Html extends Component {
   static propTypes = {
     assets: PropTypes.object,
     component: PropTypes.node,
-    store: PropTypes.object
+    store: PropTypes.object,
   };
 
   render() {
     const { assets, component, store } = this.props;
-    const content = component ? ReactDOM.renderToString(component) : "";
+    const content = component ? ReactDOM.renderToString(component) : '';
     const head = Helmet.rewind();
 
     return (
-      <html style={{ fontSize: "16px" }} lang="en-us">
+      <html style={{ fontSize: '16px' }} lang="en-us">
         <head>
           {head.base.toComponent()}
           {head.title.toComponent()}
@@ -35,7 +35,7 @@ export default class Html extends Component {
 
           <link rel="shortcut icon" href="/favicon.ico" />
           <link
-            href="https://fonts.googleapis.com/css?family=Iceland|Quattrocento+Sans|Tangerine"
+            href="https://fonts.googleapis.com/css?family=Iceland|Quattrocento+Sans:400,700|Tangerine"
             rel="stylesheet"
           />
           <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -59,8 +59,8 @@ export default class Html extends Component {
             <style
               dangerouslySetInnerHTML={{
                 __html:
-                  require("../theme/bootstrap.config.js") +
-                  require("../containers/App/app.scss")._style
+                  require('../theme/bootstrap.config.js') +
+                  require('../containers/App/app.scss')._style,
               }}
             />
           ) : null}
@@ -69,7 +69,7 @@ export default class Html extends Component {
           <div id="content" dangerouslySetInnerHTML={{ __html: content }} />
           <script
             dangerouslySetInnerHTML={{
-              __html: `window.__data=${serialize(store.getState())};`
+              __html: `window.__data=${serialize(store.getState())};`,
             }}
             charSet="UTF-8"
           />
