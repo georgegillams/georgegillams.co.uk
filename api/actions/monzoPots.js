@@ -13,7 +13,7 @@ const POTS_REVEAL = [
 
 function getMonthsElapsedPercentage() {
   const result = moment().diff(`${moment().format('YYYY')}-01-01`, 'months');
-  return Math.max(100, ((result + 1) * 100) / 12);
+  return Math.min(100, ((result + 1) * 100) / 12);
 }
 
 function monzoPots(req) {
