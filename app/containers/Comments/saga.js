@@ -1,11 +1,21 @@
 import { call, put, select, takeLatest } from 'redux-saga/effects';
-import { RELOAD_COMMENTS, LOAD_COMMENTS, CREATE_COMMENT } from './constants';
+import {
+  RELOAD_COMMENTS,
+  LOAD_COMMENTS,
+  CREATE_COMMENT,
+  UPDATE_COMMENT,
+  DELETE_COMMENT,
+} from './constants';
 import {
   reloadComments,
   commentsLoaded,
   commentsLoadingError,
   commentCreateSuccess,
   commentCreateError,
+  commentUpdateSuccess,
+  commentUpdateError,
+  commentDeleteSuccess,
+  commentDeleteError,
 } from './actions';
 import { pushMessage } from 'containers/RequestStatusWrapper/actions';
 import { makeSelectComment, makeSelectPageId } from './selectors';
@@ -48,8 +58,52 @@ export function* createComment() {
   }
 }
 
+export function* updateComment() {
+  const comment = yield select(makeSelectComment());
+  const pageId = yield select(makeSelectPageId());
+  const requestURL = `${API_ENDPOINT}/comments/update`;
+
+  try {
+    const commentResult = yield call(request, requestURL, {
+      method: 'POST',
+      body: JSON.stringify(comment),
+      headers: {
+        'Content-Type': 'application/json',
+      },
+    });
+    yield put(commentUpdateSuccess(commentResult));
+    yield put(reloadComments(pageId));
+  } catch (err) {
+    yield put(commentUpdateError(err));
+    yield put(pushMessage(COMMUNICATION_ERROR_MESSAGE));
+  }
+}
+
+export function* deleteComment() {
+  const comment = yield select(makeSelectComment());
+  const pageId = yield select(makeSelectPageId());
+  const requestURL = `${API_ENDPOINT}/comments/remove`;
+
+  try {
+    const commentResult = yield call(request, requestURL, {
+      method: 'POST',
+      body: JSON.stringify(comment),
+      headers: {
+        'Content-Type': 'application/json',
+      },
+    });
+    yield put(commentDeleteSuccess(commentResult));
+    yield put(reloadComments(pageId));
+  } catch (err) {
+    yield put(commentDeleteError(err));
+    yield put(pushMessage(COMMUNICATION_ERROR_MESSAGE));
+  }
+}
+
 export default function* saga() {
   yield takeLatest(LOAD_COMMENTS, loadComments);
   yield takeLatest(RELOAD_COMMENTS, loadComments);
   yield takeLatest(CREATE_COMMENT, createComment);
+  yield takeLatest(UPDATE_COMMENT, updateComment);
+  yield takeLatest(DELETE_COMMENT, deleteComment);
 }
