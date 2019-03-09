@@ -16,7 +16,12 @@ const blacklistedIdStatements_RETURN_TRUE = [
   "return input != null && input.children instanceof Node && typeof input.alternate === 'boolean' && (input.className == null || typeof input.className === 'string');",
 ];
 
+const verboseOutput =
+  process.argv.includes('--verbose') || process.argv.includes('-v');
+const verboseLog = verboseOutput ? console.log : null;
+
 const removeBlacklistedIfStatements = srcPath => {
+  verboseLog(`reading file`, srcPath);
   const data = fs.readFileSync(srcPath, 'utf8');
   let res = '';
   let lineExcludeCount = 0;
@@ -26,12 +31,14 @@ const removeBlacklistedIfStatements = srcPath => {
     lineNumber += 1;
     blacklistedIdStatements_RETURN_TRUE.forEach(bt => {
       if (ln.includes(bt)) {
+        verboseLog(`excluding 1 line`);
         lineExcludeCount = 1;
         res += 'return true;\n';
       }
     });
     blacklistedIdStatements_THREE.forEach(bt => {
       if (ln.includes(bt)) {
+        verboseLog(`excluding 3 lines`);
         lineExcludeCount = 3;
       }
     });
@@ -42,6 +49,7 @@ const removeBlacklistedIfStatements = srcPath => {
       console.log(`removing line ${lineNumber} ${ln}`);
     }
   });
+  verboseLog(`writing result`, srcPath);
   fs.writeFileSync(srcPath, res);
 };
 
@@ -50,11 +58,17 @@ const transpileDirToSelf = dir => {
   if (!fs.existsSync(`${dir}${TRANSPILED_POSTFIX}`)) {
     console.log('NEEDS TRANSPILING');
     if (fs.existsSync(`./${dir}/stories.js`)) {
+      verboseLog(`deleting file`, `./${dir}/stories.js`);
       execSync(`rm ./${dir}/stories.js`);
     }
+    verboseLog(`executing babel-cli`);
+    verboseLog(
+      `NODE_ENV=development npx babel-cli --plugins transform-flow-strip-types ${dir} --out-dir ${dir}${TRANSPILED_POSTFIX}`,
+    );
     execSync(
       `NODE_ENV=development npx babel-cli --plugins transform-flow-strip-types ${dir} --out-dir ${dir}${TRANSPILED_POSTFIX}`,
     );
+    verboseLog(`babel-cli finished`);
     let transpiledSrcFiles = execSync(
       `find . -path "./${dir}${TRANSPILED_POSTFIX}/*.js"`,
     )
