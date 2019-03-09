@@ -1,0 +1,130 @@
+import React, { Fragment } from 'react';
+import PropTypes from 'prop-types';
+import BpkInput, { INPUT_TYPES } from 'bpk-component-input';
+import GGButton from 'components/GGButton';
+import { Section } from 'components/Typography';
+import {
+  injectStripe,
+  CardElement,
+  CardNumberElement,
+  CardExpiryElement,
+  CardCVCElement,
+  PostalCodeElement,
+  PaymentRequestGGButtonElement,
+  IbanElement,
+  IdealBankElement,
+} from 'react-stripe-elements';
+
+import {
+  STRING_REGEX,
+  INT_REGEX,
+  EMAIL_REGEX,
+  PASSWORD_REGEX,
+  DECIMAL_REGEX,
+  CARD_NUMBER_REGEX,
+  CVV_REGEX,
+  EXPIRY_REGEX,
+  NAME_REGEX,
+  TICKET_COST,
+} from 'helpers/constants';
+
+import FormBuilder from './FormBuilder';
+
+import './forms.scss';
+
+class SignUpContinueFormPayment extends React.Component {
+  static propTypes = {
+    user: PropTypes.object,
+    userDetails: PropTypes.object.isRequired,
+    onDataChanged: PropTypes.func.isRequired,
+    onSubmit: PropTypes.func.isRequired,
+    disabled: PropTypes.bool,
+  };
+
+  constructor(props) {
+    super(props);
+
+    this.state = {};
+  }
+
+  submit = () => {
+    this.props.stripe
+      .createToken({
+        name: 'Payment_token',
+      })
+      .then(result => {
+        const { token } = result;
+        this.props.onSubmit(token);
+      });
+  };
+
+  render() {
+    const {
+      className,
+      disabled,
+      user,
+      userDetails,
+      presubmitText,
+      onSubmit,
+      balance,
+      ...rest
+    } = this.props;
+
+    const classNameFinal = [];
+    if (className) classNameFinal.push(className);
+
+    if (balance <= 0) {
+      return (
+        <Fragment>
+          <div className="forms__component">
+            {'You can view and edit your details via your EPICC account.'}
+          </div>
+          <GGButton
+            disabled={disabled}
+            className="forms__component"
+            large
+            href="/account"
+          >
+            {'View/edit details'}
+          </GGButton>
+        </Fragment>
+      );
+    }
+
+    return (
+      <div>
+        <label htmlFor="cardNumber" className="forms__label">
+          Card number
+        </label>
+        <CardNumberElement className="forms__component forms__bpk-input" />
+        <label htmlFor="expiry" className="forms__label">
+          Expiry date
+        </label>
+        <CardExpiryElement className="forms__component forms__bpk-input" />
+        <label htmlFor="cvc" className="forms__label">
+          CVC code
+        </label>
+        <CardCVCElement className="forms__component forms__bpk-input" />
+        <label htmlFor="postCode" className="forms__label">
+          Post code
+        </label>
+        <PostalCodeElement className="forms__component forms__bpk-input" />
+        {presubmitText && (
+          <Fragment>
+            <div className="forms__component">{presubmitText}</div>
+          </Fragment>
+        )}
+        <GGButton
+          disabled={disabled}
+          className="forms__component"
+          large
+          onClick={this.submit}
+        >
+          {`Make payment for £${balance / 100}`}
+        </GGButton>
+      </div>
+    );
+  }
+}
+
+export default injectStripe(SignUpContinueFormPayment);
