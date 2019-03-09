@@ -1,5 +1,6 @@
 import React from 'react';
 import NavigationBar, { NavigationItem } from 'components/NavigationBar';
+import { Logo } from 'components/Logo';
 import { SmallButtonSkeleton } from 'components/Skeletons';
 
 const NavigationBarWrapper = props => {
@@ -38,13 +39,11 @@ const NavigationBarWrapper = props => {
     accountItem,
   ];
 
-  const logo = null;
-
   return (
     <NavigationBar
       menuItems1={menuItems1}
       menuItems2={menuItems2}
-      logo={logo}
+      logo={<Logo noPadding small animated />}
       accountMenuItem={accountItem}
       {...rest}
     />
