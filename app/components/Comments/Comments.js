@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import CommentInput from './CommentInput';
 import Comment from './Comment';
-import { LoggedInOnly } from 'components/Auth';
+import { DebugObject, LoggedInOnly } from 'components/Auth';
 import { NotificationComp } from 'components/Notifications';
 import { Section, SubSection } from 'components/Typography';
 
@@ -47,12 +47,17 @@ class Comments extends React.Component {
       newComment,
       onNewCommentChanged,
       onCommentSubmit,
-      onCommentStartEdit,
       newCommentBeingCreated,
       createComment,
       commentCreationError,
       updateComment,
-      onCommentDeleted,
+      updatingComment,
+      updateCommentSuccess,
+      updateCommentError,
+      deleteComment,
+      deletingComment,
+      deleteCommentSuccess,
+      deleteCommentError,
       ...rest
     } = this.props;
 
@@ -77,7 +82,18 @@ class Comments extends React.Component {
           />
         ) : (
           commentsFiltered.map(comment => (
-            <Comment user={user} comment={comment} />
+            <Comment
+              user={user}
+              comment={comment}
+              updateComment={updateComment}
+              updatingComment={updatingComment}
+              updateCommentError={updateCommentError}
+              updateCommentSuccess={updateCommentSuccess}
+              deleteComment={deleteComment}
+              deletingComment={deletingComment}
+              deleteCommentError={deleteCommentError}
+              deleteCommentSuccess={deleteCommentSuccess}
+            />
           ))
         );
     }
@@ -85,6 +101,30 @@ class Comments extends React.Component {
     return (
       <Section name="Comments" className={classNameFinal.join(' ')}>
         {commentsComponent}
+        <DebugObject
+          debugTitle="Comments"
+          debugObject={{
+            user,
+            comments,
+            centered,
+            pageId,
+            className,
+            newComment,
+            onNewCommentChanged,
+            onCommentSubmit,
+            newCommentBeingCreated,
+            createComment,
+            commentCreationError,
+            updateComment,
+            updatingComment,
+            updateCommentSuccess,
+            updateCommentError,
+            deleteComment,
+            deletingComment,
+            deleteCommentSuccess,
+            deleteCommentError,
+          }}
+        />
       </Section>
     );
   }

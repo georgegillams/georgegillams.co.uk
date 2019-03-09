@@ -28,6 +28,16 @@ export default class CommentsContainer extends React.Component {
       creatingComment,
       createCommentSuccess,
       createCommentError,
+
+      updateComment,
+      updatingComment,
+      updateCommentSuccess,
+      updateCommentError,
+
+      deleteComment,
+      deletingComment,
+      deleteCommentSuccess,
+      deleteCommentError,
       ...rest
     } = this.props;
 
@@ -53,6 +63,14 @@ export default class CommentsContainer extends React.Component {
             creatingComment,
             createCommentSuccess,
             createCommentError,
+            updateComment,
+            updatingComment,
+            updateCommentSuccess,
+            updateCommentError,
+            deleteComment,
+            deletingComment,
+            deleteCommentSuccess,
+            deleteCommentError,
           }}
         />
         <LoadingCover
@@ -66,6 +84,14 @@ export default class CommentsContainer extends React.Component {
               user={user}
               centered={false}
               pageId={pageId}
+              updateComment={updateComment}
+              updatingComment={updatingComment}
+              updateCommentError={updateCommentError}
+              updateCommentSuccess={updateCommentSuccess}
+              deleteComment={deleteComment}
+              deletingComment={deletingComment}
+              deleteCommentError={deleteCommentError}
+              deleteCommentSuccess={deleteCommentSuccess}
             />
           )}
           {comments && (
@@ -78,6 +104,10 @@ export default class CommentsContainer extends React.Component {
               creatingComment={creatingComment}
               createCommentError={createCommentError}
               createCommentSuccess={createCommentSuccess}
+              updateComment={updateComment}
+              updatingComment={updatingComment}
+              updateCommentError={updateCommentError}
+              updateCommentSuccess={updateCommentSuccess}
             />
           )}
         </LoadingCover>
