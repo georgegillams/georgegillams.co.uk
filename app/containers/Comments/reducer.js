@@ -11,6 +11,9 @@ import {
   UPDATE_COMMENT,
   UPDATE_COMMENT_ERROR,
   UPDATE_COMMENT_SUCCESS,
+  DELETE_COMMENT,
+  DELETE_COMMENT_ERROR,
+  DELETE_COMMENT_SUCCESS,
 } from './constants';
 
 const initialState = fromJS({
@@ -60,11 +63,22 @@ function appReducer(state = initialState, action) {
         .set('updateCommentError', false)
         .set('comment', action.comment);
     case UPDATE_COMMENT_SUCCESS:
-      return state.set('updating', false);
+      return state.set('updating', false).set('updateCommentSuccess', true);
     case UPDATE_COMMENT_ERROR:
       return state
         .set('updateCommentError', action.error)
         .set('updating', false);
+    case DELETE_COMMENT:
+      return state
+        .set('deleting', true)
+        .set('deleteCommentError', false)
+        .set('comment', action.comment);
+    case DELETE_COMMENT_SUCCESS:
+      return state.set('deleting', false).set('deleteCommentSuccess', true);
+    case DELETE_COMMENT_ERROR:
+      return state
+        .set('deleteCommentError', action.error)
+        .set('deleting', false);
     default:
       return state;
   }

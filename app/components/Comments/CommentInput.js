@@ -22,7 +22,7 @@ class CommentInput extends React.Component {
 
   constructor(props) {
     super(props);
-    this.state = { comment: { name: '', comment: '' } };
+    this.state = { comment: this.props.comment || { name: '', comment: '' } };
   }
 
   onCommentChanged = newValue => {
@@ -38,6 +38,10 @@ class CommentInput extends React.Component {
       creatingComment,
       createCommentSuccess,
       createCommentError,
+      updateComment,
+      updatingComment,
+      updateCommentError,
+      updateCommentSuccess,
       submitLabel,
       ...rest
     } = this.props;
@@ -75,7 +79,7 @@ class CommentInput extends React.Component {
             onSubmit={() => onSubmit(this.state.comment)}
             onDataChanged={this.onCommentChanged}
             centered={centered}
-            disabled={creatingComment}
+            disabled={creatingComment || updatingComment}
             presubmitText={
               <Fragment>
                 {'Comments support **'}

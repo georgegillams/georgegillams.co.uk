@@ -75,6 +75,24 @@ const makeSelectUpdateCommentSuccess = () =>
     commentsState => commentsState.get('updateCommentSuccess'),
   );
 
+const makeSelectDeletingComment = () =>
+  createSelector(
+    selectComments,
+    commentsState => commentsState.get('deleting'),
+  );
+
+const makeSelectDeleteCommentError = () =>
+  createSelector(
+    selectComments,
+    commentsState => commentsState.get('deleteCommentError'),
+  );
+
+const makeSelectDeleteCommentSuccess = () =>
+  createSelector(
+    selectComments,
+    commentsState => commentsState.get('deleteCommentSuccess'),
+  );
+
 export {
   selectComments,
   makeSelectPageId,
@@ -88,5 +106,8 @@ export {
   makeSelectCreateCommentSuccess,
   makeSelectUpdatingComment,
   makeSelectUpdateCommentError,
+  makeSelectDeletingComment,
+  makeSelectDeleteCommentError,
+  makeSelectDeleteCommentSuccess,
   makeSelectUpdateCommentSuccess,
 };
