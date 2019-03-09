@@ -1,0 +1,18 @@
+@import '~bpk-mixins';
+
+.loading-cover {
+  &__outer-container {
+    //opacity: 0.6;
+  }
+
+  &__overlay {
+    //opacity: 0.6;
+    background-color: white;
+    z-index: 2;
+    min-height: 3rem;
+
+    &--content {
+      // width: auto !important;
+    }
+  }
+}
