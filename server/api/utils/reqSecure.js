@@ -9,6 +9,9 @@ const standardAttributes = [
 ];
 
 function generateNewComponent(component, req, allAllowedAttributes) {
+  if (!req[component]) {
+    return undefined;
+  }
   const newComponent = {};
   for (let i = 0; i < allAllowedAttributes.length; i += 1) {
     const name = allAllowedAttributes[i].attribute;
