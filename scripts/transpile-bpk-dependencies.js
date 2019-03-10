@@ -18,7 +18,7 @@ const blacklistedIdStatements_RETURN_TRUE = [
 
 const verboseOutput =
   process.argv.includes('--verbose') || process.argv.includes('-v');
-const verboseLog = verboseOutput ? console.log : null;
+const verboseLog = verboseOutput ? console.log : () => null;
 
 const removeBlacklistedIfStatements = srcPath => {
   verboseLog(`reading file`, srcPath);
