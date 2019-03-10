@@ -1,5 +1,6 @@
 module.exports = {
   collectCoverageFrom: [
+    'server/**/*.{js,jsx}',
     'app/**/*.{js,jsx}',
     '!app/**/*.test.{js,jsx}',
     '!app/*/RbGenerated*/*.{js,jsx}',
@@ -23,5 +24,4 @@ module.exports = {
       '<rootDir>/config/jest-mocks/image.js',
   },
   setupTestFrameworkScriptFile: '<rootDir>/config/test-setup.js',
-  testRegex: 'tests/.*\\.test\\.js$',
 };
