@@ -11,9 +11,20 @@ import {
   makeSelectCreatingComment,
   makeSelectCreateCommentError,
   makeSelectCreateCommentSuccess,
+  makeSelectUpdatingComment,
+  makeSelectUpdateCommentError,
+  makeSelectUpdateCommentSuccess,
+  makeSelectDeletingComment,
+  makeSelectDeleteCommentError,
+  makeSelectDeleteCommentSuccess,
 } from './selectors';
 import { makeSelectUser } from 'containers/App/selectors';
-import { updateComment, loadComments, createComment } from './actions';
+import {
+  updateComment,
+  deleteComment,
+  loadComments,
+  createComment,
+} from './actions';
 import reducer from './reducer';
 import saga from './saga';
 import Comments from './Comments';
@@ -22,6 +33,7 @@ const mapDispatchToProps = dispatch => ({
   loadComments: pageId => dispatch(loadComments(pageId)),
   createComment: comment => dispatch(createComment(comment)),
   updateComment: comment => dispatch(updateComment(comment)),
+  deleteComment: comment => dispatch(deleteComment(comment)),
 });
 
 const mapStateToProps = createStructuredSelector({
@@ -35,6 +47,14 @@ const mapStateToProps = createStructuredSelector({
   creatingComment: makeSelectCreatingComment(),
   createCommentSuccess: makeSelectCreateCommentSuccess(),
   createCommentError: makeSelectCreateCommentError(),
+
+  updatingComment: makeSelectUpdatingComment(),
+  updateCommentSuccess: makeSelectUpdateCommentSuccess(),
+  updateCommentError: makeSelectUpdateCommentError(),
+
+  deletingComment: makeSelectDeletingComment(),
+  deleteCommentSuccess: makeSelectDeleteCommentSuccess(),
+  deleteCommentError: makeSelectDeleteCommentError(),
 });
 
 const withConnect = connect(

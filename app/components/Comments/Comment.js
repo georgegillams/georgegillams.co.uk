@@ -2,34 +2,58 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import GGButton from 'components/GGButton';
 import { BlogPreviewContent, SubSection } from 'components/Typography';
+import CommentInput from './CommentInput';
 
 import './comments.scss';
 
 class Comment extends React.Component {
   static propTypes = {
-    onCommentStartEdit: PropTypes.func.isRequired,
-    onCommentDeleted: PropTypes.func.isRequired,
     user: PropTypes.object,
     comment: PropTypes.object,
+    updateComment: PropTypes.func.isRequired,
+    updatingComment: PropTypes.bool,
+    updateCommentError: PropTypes.bool,
+    updateCommentSuccess: PropTypes.bool,
   };
 
   static defaultProps = {
     user: null,
     comment: null,
+    updatingComment: false,
+    updateCommentError: false,
+    updateCommentSuccess: false,
   };
 
   constructor(props) {
     super(props);
+
+    this.state = { editing: false };
   }
+
+  componentWillReceiveProps = newProps => {
+    if (
+      this.props.updatingComment &&
+      !newProps.updatingComment &&
+      !newProps.updateCommentError
+    ) {
+      this.setState({ editing: false });
+    }
+  };
 
   render() {
     const {
-      onCommentStartEdit,
       user,
       className,
       centered,
       comment,
-      onCommentDeleted,
+      updateComment,
+      updatingComment,
+      updateCommentError,
+      updateCommentSuccess,
+      deleteComment,
+      deletingComment,
+      deleteCommentSuccess,
+      deleteCommentError,
       ...rest
     } = this.props;
 
@@ -57,12 +81,10 @@ class Comment extends React.Component {
     ];
 
     let displayName = 'Anon';
-    if (comment.ownerUname && comment.ownerUname !== 'Anon') {
+    if (comment.ownerUname) {
       displayName = comment.ownerUname;
     } else if (comment.displayName) {
       displayName = comment.displayName;
-    } else if (comment.authorId) {
-      displayName = `User ${comment.authorId}`;
     }
 
     return (
@@ -71,10 +93,42 @@ class Comment extends React.Component {
         className="comments__component"
         name={`${displayName}`}
       >
-        <BlogPreviewContent
-          supportedFeatures={supportedFeatures}
-          content={contentFinal}
-        />
+        {!this.state.editing && (
+          <BlogPreviewContent
+            supportedFeatures={supportedFeatures}
+            content={contentFinal}
+          />
+        )}
+        {this.state.editing && (
+          <CommentInput
+            comment={comment}
+            user={user}
+            centered={centered}
+            submitLabel="Update comment"
+            onSubmit={updateComment}
+            updatingComment={updatingComment}
+            updateCommentError={updateCommentError}
+            updateCommentSuccess={updateCommentSuccess}
+          />
+        )}
+        {canEdit && !this.state.editing && (
+          <div>
+            <GGButton onClick={() => this.setState({ editing: true })}>
+              Edit
+            </GGButton>
+            {!comment.deleted && (
+              <GGButton
+                disabled={deletingComment}
+                onClick={() => {
+                  deleteComment(comment);
+                }}
+                destructive
+              >
+                Delete
+              </GGButton>
+            )}
+          </div>
+        )}
       </SubSection>
     );
   }
