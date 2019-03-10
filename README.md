@@ -1,7 +1,6 @@
+# [https://www.georgegillams.co.uk/](https://www.georgegillams.co.uk/)
 
-[comment]: <> # [georgegillams.co.uk](https://www.georgegillams.co.uk/)
-
-# [https://georgegillams-boilerplate.herokuapp.com/](https://georgegillams-boilerplate.herokuapp.com/)
+![Travis status](https://api.travis-ci.org/georgegillams/georgegillams.co.uk.svg?branch=master)
 
 This repo was originally a fork of [Dinesh Pandiyan's React Redux Boilerplate app](https://github.com/flexdinesh/react-redux-boilerplate).
 
@@ -17,7 +16,7 @@ npm i
 npm run dev
 ```
 
-Note that a postinstall script is used to transpile some dependencies. It will therefore take longer on first run.
+Note that a prebuild script is used to transpile some dependencies. It will therefore take longer the first time you build it.
 
 `npm run dev` will set all necessary environment variables needed to run the application.
 
