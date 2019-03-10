@@ -1,5 +1,7 @@
 let redis = null;
-if (process.env.REDIS_URL) {
+if (process.env.NODE_ENV === 'test') {
+  redis = {};
+} else if (process.env.REDIS_URL) {
   redis = require('redis').createClient(process.env.REDIS_URL);
 } else {
   redis = require('redis').createClient();
