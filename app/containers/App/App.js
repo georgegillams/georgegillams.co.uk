@@ -39,9 +39,7 @@ const cleanWindowLocation = location => {
 };
 
 const getFullRedirect = destination => {
-  console.log(`getFullRedirect`);
   if (window && window.location && window.location.toString().includes('?')) {
-    console.log(`window.location`, window.loacation);
     const fullPath = cleanWindowLocation(window.location.toString());
     for (let i = 0; i < redirects.length; i += 1) {
       if (redirects[i].from === fullPath) {
@@ -89,7 +87,11 @@ const App = () => (
         exact
         path="/blog"
         component={() => (
-          <BlogsPage linkPrefix="blog" filter={b => b.showInBlogsList} />
+          <BlogsPage
+            linkPrefix="blog"
+            selectedNav="Writing"
+            filter={b => b.showInBlogsList}
+          />
         )}
       />
       <Route path="/blog/:id" component={BlogViewer} />
@@ -107,6 +109,7 @@ const App = () => (
         component={() => (
           <BlogsPage
             linkPrefix="travel"
+            selectedNav="Travel"
             filter={b => b.showInTravelBlogsList}
           />
         )}
