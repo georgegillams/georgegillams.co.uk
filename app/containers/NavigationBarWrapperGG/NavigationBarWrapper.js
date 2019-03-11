@@ -8,7 +8,6 @@ const NavigationBarWrapper = props => {
 
   const menuItems1 = [
     <NavigationItem name="Blog" linkUrl="/blog" />,
-    <NavigationItem name="Travel" linkUrl="/travel" />,
     <NavigationItem name="Photography" linkUrl="/photography" />,
     <NavigationItem name="Work" linkUrl="/work" />,
   ];
@@ -28,7 +27,6 @@ const NavigationBarWrapper = props => {
     ) : null;
 
   const menuItems2 = [
-    <NavigationItem name="About" linkUrl="/about" />,
     <NavigationItem name="Contact" linkUrl="/contact" />,
     <NavigationItem
       name="Github"
