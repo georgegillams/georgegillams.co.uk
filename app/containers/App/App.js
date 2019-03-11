@@ -1,7 +1,6 @@
 import React from 'react';
 import { Helmet } from 'react-helmet';
 import { Switch, Route, Redirect } from 'react-router-dom';
-import AboutPage from 'containers/About/About';
 import AccountPage from 'containers/Account/Loadable';
 import AdminPage from 'containers/Admin/Loadable';
 import AdminUsersPage from 'containers/AdminUsers/Loadable';
@@ -79,7 +78,6 @@ const App = () => (
       <Route exact path="/admin" component={AdminPage} />
       <Route exact path="/photography" component={Photography} />
       <Route exact path="/work" component={Work} />
-      <Route path="/about" component={AboutPage} />
       <Route path="/account" component={AccountPage} />
       <Route path="/monzoPots" component={MonzoPots} />
       <Route path="/admin/users" component={AdminUsersPage} />

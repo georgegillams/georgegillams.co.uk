@@ -1,5 +1,6 @@
 const redirects = [
   { from: '/wp-admin', to: '/admin/login' },
+  { from: '/about', to: '/' },
   { from: '/site-map', to: '/sitemap' },
   { from: '/about/degree', to: '/work/degree' },
   { from: '/articles/tough-mudder', to: '/blog/tough-mudder' },

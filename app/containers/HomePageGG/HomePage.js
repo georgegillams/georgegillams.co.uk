@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Helmet } from 'react-helmet';
 import ArticleCard, { CARD_LAYOUTS } from 'components/Cards';
+import AboutPage from 'containers/About/About';
 import 'containers/pages.scss';
 
 const getClassName = c => c;
@@ -13,9 +14,14 @@ export default class HomePage extends React.PureComponent {
     const { user } = this.props;
 
     return (
-      <div className={getClassName('pages__container')}>
+      <div
+        className={`${getClassName('pages__container')} ${getClassName(
+          'pages__container--centered',
+        )}`}
+      >
+        <Helmet title="Home" />
+        <AboutPage />
         <div className={getClassName('pages__compact-card-container')}>
-          <Helmet title="Home" />
           <ArticleCard
             layout={CARD_LAYOUTS.narrowCompact}
             day={null}
