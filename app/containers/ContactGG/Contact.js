@@ -30,7 +30,7 @@ export default class Contact extends Component {
               month={null}
               className={getClassName('pages__card')}
               imageSrc="https://i.imgur.com/nmkJVkO.png"
-              href="https://www.fb.com/george333123"
+              href="https://www.fb.com/georgegillams"
               title="Facebook"
               tallLayout
             />
