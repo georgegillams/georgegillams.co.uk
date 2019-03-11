@@ -69,7 +69,10 @@ const SITE_URL =
   process.env.NODE_ENV === 'development'
     ? 'http://localhost:3000'
     : 'https://www.georgegillams.co.uk';
-const API_ENDPOINT = `${SITE_URL}/api`;
+const TEST_WITH_REAL_API = false;
+const API_ENDPOINT = TEST_WITH_REAL_API
+  ? 'https://www.georgegillams.co.uk/api'
+  : `${SITE_URL}/api`;
 const COMMUNICATION_ERROR_MESSAGE = {
   type: 'error',
   message: 'Our servers are poorly. Please try again later.',
@@ -112,6 +115,7 @@ export {
   SORT_CODE_REGEX,
   STRING_REGEX,
   STRIPE_PUBLIC_API_KEY,
+  TEST_WITH_REAL_API,
   TICKET_COST_EB_ONE_DAY,
   TICKET_COST_EB_TWO_DAY,
   TICKET_COST_R_ONE_DAY,
@@ -156,6 +160,7 @@ export default {
   SORT_CODE_REGEX,
   STRING_REGEX,
   STRIPE_PUBLIC_API_KEY,
+  TEST_WITH_REAL_API,
   TICKET_COST_EB_ONE_DAY,
   TICKET_COST_EB_TWO_DAY,
   TICKET_COST_R_ONE_DAY,

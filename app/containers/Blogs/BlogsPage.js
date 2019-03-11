@@ -1,11 +1,14 @@
 import React from 'react';
+import { withRouter } from 'react-router';
 import PropTypes from 'prop-types';
 import { Helmet } from 'react-helmet';
 import { LoadingCover } from 'components/Auth';
 import BlogsList from 'components/Blogs';
 import BlogListSkeleton from './BlogListSkeleton';
+import BlogsNav from './BlogsNav';
 import 'containers/pages.scss';
 
+const BlogsNavWR = withRouter(BlogsNav);
 const getClassName = c => c;
 
 export default class BlogsPage extends React.Component {
@@ -30,6 +33,7 @@ export default class BlogsPage extends React.Component {
       error,
       blogs,
       loadBlogs,
+      selectedNav,
       filter,
       linkPrefix,
       className,
@@ -44,6 +48,7 @@ export default class BlogsPage extends React.Component {
     return (
       <div className={outerClassNameFinal.join(' ')} {...rest}>
         <Helmet title="Blog" />
+        <BlogsNavWR className="pages__component" selected={selectedNav} />
         <LoadingCover
           loadingSkeleton={BlogListSkeleton}
           loading={loading}
