@@ -9,6 +9,7 @@ export function sendMagicLinkEmail(
   buttonStyle,
   senderEmail,
   divertToAdmin,
+  loginRedirect,
 ) {
   const now = new Date();
   const oneHoursTime = new Date(now.getTime() + 1 * 1000 * 60 * 60);
@@ -18,7 +19,10 @@ export function sendMagicLinkEmail(
     key: crypto.randomBytes(20).toString('hex'),
   };
   datumCreate({ redisKey: 'magiclinks' }, { body: magicLink });
-  const magicLinkUrl = `${SITE_URL}/magic-login?token=${magicLink.key}`;
+  let magicLinkUrl = `${SITE_URL}/magic-login?token=${magicLink.key}`;
+  if (loginRedirect) {
+    magicLinkUrl += `&redirect=${loginRedirect}`;
+  }
   // Send the magic link URL to the email address of the user
   transporter.sendMail(
     {
