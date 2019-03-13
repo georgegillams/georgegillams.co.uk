@@ -10,13 +10,13 @@ import { LoginForm } from 'components/Forms';
 import { CookiesOnly } from 'components/Sessions';
 import Redirect from 'components/Redirect';
 import {
-  MONZOME_LINK_REGEX,
+  REDIRECT_REGEX,
   SORT_CODE_REGEX,
   INT_REGEX,
   STRING_REGEX,
   DECIMAL_REGEX,
+  SITE_URL,
 } from 'helpers/constants';
-import { getPostLoginRedirectAndRemove } from 'helpers/storageHelpers';
 import BpkImage, {
   withLazyLoading,
   withLoadingBehavior,
@@ -58,11 +58,20 @@ export default class Login extends React.Component {
     }
 
     if (loginSuccessful) {
-      const redirectLocation = getPostLoginRedirectAndRemove() || '/account';
+      let redirectLocation = new URL(window.location).searchParams.get(
+        'redirect',
+      );
+      if (
+        !redirectLocation ||
+        redirectLocation === '' ||
+        !redirectLocation.match(REDIRECT_REGEX)
+      ) {
+        redirectLocation = '/account';
+      }
       return (
         <Redirect
           className={outerClassNameFinal.join(' ')}
-          to={redirectLocation}
+          to={`${SITE_URL}/${redirectLocation}`}
           name="Logged in"
         />
       );
