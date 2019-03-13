@@ -1,10 +1,9 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { TextLink, Section } from 'components/Typography';
-import { redirectToCurrentPageAfterLogin } from 'helpers/storageHelpers';
 
 const AdminOnly = props => {
-  const { user, children } = props;
+  const { user, children, setLoginRedirect } = props;
 
   if (!user || !user.admin) {
     return (
@@ -13,7 +12,7 @@ const AdminOnly = props => {
           You need to be logged in with an admin account to view this content.
         </span>
         <br />
-        <TextLink onClick={redirectToCurrentPageAfterLogin} to="/login">
+        <TextLink onClick={setLoginRedirect} to="/login">
           Got a different admin account? Log in here.
         </TextLink>
       </Section>
