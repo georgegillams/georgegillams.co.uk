@@ -9,6 +9,7 @@ import {
   makeSelectLoadingAvailableTickets,
   makeSelectLoadAvailableTicketsError,
 } from './selectors';
+import { setLoginRedirect } from 'containers/App/actions';
 import {
   makeSelectUser,
   makeSelectError as makeSelectUserLoadError,
@@ -21,6 +22,7 @@ import saga from './saga';
 import SwapTicket from './SwapTicket';
 
 const mapDispatchToProps = dispatch => ({
+  setLoginRedirect: lr => dispatch(setLoginRedirect(lr)),
   selectTicketType: value => dispatch(setSelectedTicketType(value)),
   swapTickets: value => dispatch(swapTickets()),
 });

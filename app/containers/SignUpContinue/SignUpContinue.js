@@ -65,6 +65,7 @@ export default class SignUpContinue extends React.Component {
 
   render() {
     const {
+      setLoginRedirect,
       cookiesAllowed,
       user,
       onCookiesAccepted,
@@ -128,7 +129,12 @@ export default class SignUpContinue extends React.Component {
 
     const page = (
       <div className={outerClassNameFinal.join(' ')} {...rest}>
-        <LoggedInOnly user={user}>
+        <LoggedInOnly
+          user={user}
+          setLoginRedirect={() => {
+            setLoginRedirect('sign-up/continue');
+          }}
+        >
           <TicketStatus />
           <Section name={title}>
             <BpkThemeProvider

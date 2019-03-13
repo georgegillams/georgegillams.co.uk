@@ -29,6 +29,7 @@ const getClassName = c => c;
 export default class SwapTickets extends React.Component {
   render() {
     const {
+      setLoginRedirect,
       user,
       userLoading,
       swapTickets,
@@ -47,7 +48,10 @@ export default class SwapTickets extends React.Component {
 
     const page = (
       <div className={outerClassNameFinal.join(' ')} {...rest}>
-        <LoggedInOnly user={user}>
+        <LoggedInOnly
+          user={user}
+          setLoginRedirect={() => setLoginRedirect('swap-ticket')}
+        >
           <TicketStatus linkToSwap={false} />
           <LoadingCover
             loadingSkeleton={LowerPageSkeleton}
