@@ -16,6 +16,7 @@ import {
   makeSelectUser,
   makeSelectCookiesAllowed,
 } from 'containers/App/selectors';
+import { setLoginRedirect } from 'containers/App/actions';
 import {
   loadUserDetails,
   userDetailsChanged,
@@ -27,6 +28,7 @@ import saga from './saga';
 import SignUpContinue from './SignUpContinue';
 
 const mapDispatchToProps = dispatch => ({
+  setLoginRedirect: lr => dispatch(setLoginRedirect(lr)),
   userDetailsChanged: newValue => dispatch(userDetailsChanged(newValue)),
   loadUserDetails: () => dispatch(loadUserDetails()),
   updateUserDetails: () => dispatch(updateUserDetails()),
