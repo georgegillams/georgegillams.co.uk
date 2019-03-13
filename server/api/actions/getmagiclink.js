@@ -18,7 +18,11 @@ export default function getmagiclink(req) {
         if (userProfile) {
           const divertToAdmin =
             user && user.admin && reqSecured.body.divertToAdmin;
-          sendMagicLinkEmail(userProfile, divertToAdmin);
+          sendMagicLinkEmail(
+            userProfile,
+            divertToAdmin,
+            reqSecured.body.loginRedirect,
+          );
         }
         resolve({
           success:

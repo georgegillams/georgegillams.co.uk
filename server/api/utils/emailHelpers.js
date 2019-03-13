@@ -19,17 +19,17 @@ let senderEmail = EMAIL_ADDRESS;
 
 if (PROJECT_NAME === 'EPICC') {
   imageHtml = EMAIL_IMAGE_HTML;
-  console.log(`imageHtml`, imageHtml);
   buttonStyle = EMAIL_HTML_BUTTON_STYLE;
 }
 
-export function sendMagicLinkEmail(userProfile, divertToAdmin) {
+export function sendMagicLinkEmail(userProfile, divertToAdmin, loginRedirect) {
   return sendMLE(
     userProfile,
     imageHtml,
     buttonStyle,
     senderEmail,
     divertToAdmin,
+    loginRedirect,
   );
 }
 
