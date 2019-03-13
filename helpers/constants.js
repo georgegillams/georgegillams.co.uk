@@ -5,6 +5,7 @@ const SORT_CODE_REGEX = /^[0-9\.-]*$/gi;
 const STRING_REGEX = /^[A-Za-z0-9\.\ ]*$/gi;
 const ID_REGEX = /^[A-Za-z0-9\-]*$/gi;
 const UNAME_REGEX = /^[A-Za-z0-9\.\ ]*$/gi;
+const REDIRECT_REGEX = /^[A-Za-z0-9\.\ \-\_#]*$/gi;
 const NAME_REGEX = /^[A-Za-z\ ]*$/gi;
 const MONZOME_LINK_REGEX = /^(https?:\/\/)?monzo\.me\/[A-Za-z_-]+(\/.*)?$/gi;
 const NON_EMOJI_REGEX = /[A-Za-z\ 0-9,]*/gi;
@@ -110,6 +111,7 @@ export {
   NON_EMOJI_REGEX,
   PASSWORD_REGEX,
   PROJECT_NAME,
+  REDIRECT_REGEX,
   RESOURCE_NOT_FOUND,
   SITE_URL,
   SORT_CODE_REGEX,
@@ -155,6 +157,7 @@ export default {
   NON_EMOJI_REGEX,
   PASSWORD_REGEX,
   PROJECT_NAME,
+  REDIRECT_REGEX,
   RESOURCE_NOT_FOUND,
   SITE_URL,
   SORT_CODE_REGEX,
