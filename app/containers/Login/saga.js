@@ -4,6 +4,7 @@ import { loginSuccessful, loginError } from './actions';
 import { setUser } from 'containers/App/actions';
 import { pushMessage } from 'containers/RequestStatusWrapper/actions';
 import { API_ENDPOINT, COMMUNICATION_ERROR_MESSAGE } from 'helpers/constants';
+import { makeSelectLoginRedirect } from 'containers/App/selectors';
 import { makeSelectCredentials } from './selectors';
 
 import request from 'utils/request';
@@ -17,6 +18,7 @@ const logInErrorMessage = {
 
 export function* doLogin() {
   const credentials = yield select(makeSelectCredentials());
+  const loginRedirect = yield select(makeSelectLoginRedirect());
   const requestURL = `${API_ENDPOINT}${
     credentials.useMagicLink ? '/getmagiclink' : '/login'
   }`;
@@ -24,7 +26,7 @@ export function* doLogin() {
   try {
     const loginResult = yield call(request, requestURL, {
       method: 'POST',
-      body: JSON.stringify(credentials),
+      body: JSON.stringify({ ...credentials, loginRedirect }),
       headers: {
         'Content-Type': 'application/json',
       },

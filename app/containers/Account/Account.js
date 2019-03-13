@@ -32,6 +32,7 @@ export default class Account extends React.Component {
 
   render() {
     const {
+      setLoginRedirect,
       cookiesAllowed,
       onCookiesAccepted,
       logout,
@@ -55,7 +56,10 @@ export default class Account extends React.Component {
 
     const page = (
       <div className={outerClassNameFinal.join(' ')} {...rest}>
-        <LoggedInOnly user={user}>
+        <LoggedInOnly
+          user={user}
+          setLoginRedirect={() => setLoginRedirect('account')}
+        >
           <Section name="Account">
             {user && user.email && <div>{`Email: ${user.email}`}</div>}
             {user && user.uname && <div>{`Display name: ${user.uname}`}</div>}
