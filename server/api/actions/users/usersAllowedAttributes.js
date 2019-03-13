@@ -4,6 +4,7 @@ import {
   PASSWORD_REGEX,
   STRING_REGEX,
   ID_REGEX,
+  REDIRECT_REGEX,
 } from 'helpers/constants';
 
 const usersAllowedAttributes = [
@@ -15,6 +16,7 @@ const usersAllowedAttributes = [
   { attribute: 'divertToAdmin', pattern: 'BOOL' },
   { attribute: 'password', pattern: PASSWORD_REGEX },
   { attribute: 'ticketType', pattern: PASSWORD_REGEX },
+  { attribute: 'loginRedirect', pattern: REDIRECT_REGEX },
 ];
 
 export default usersAllowedAttributes;
