@@ -11,6 +11,7 @@ import {
   makeSelectRequestVerificationEmailSuccess,
   makeSelectRequestingVerificationEmail,
 } from './selectors';
+import { setLoginRedirect } from 'containers/App/actions';
 import {
   makeSelectUser,
   makeSelectUserLoading,
@@ -23,6 +24,7 @@ import saga from './saga';
 import Account from './Account';
 
 const mapDispatchToProps = dispatch => ({
+  setLoginRedirect: lr => dispatch(setLoginRedirect(lr)),
   logout: () => dispatch(logout()),
   requestVerificationEmail: () => dispatch(requestVerificationEmail()),
   onCookiesAccepted: () => dispatch(setCookiesAllowed(true)),

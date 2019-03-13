@@ -1,7 +1,12 @@
 import { fromJS } from 'immutable';
 import cookie from 'react-cookies';
 
-import { SET_USER, SET_USER_LOADING, SET_COOKIES_ALLOWED } from './constants';
+import {
+  SET_LOGIN_REDIRECT,
+  SET_USER,
+  SET_USER_LOADING,
+  SET_COOKIES_ALLOWED,
+} from './constants';
 
 const initialState = fromJS({
   loading: false,
@@ -36,6 +41,8 @@ function appReducer(state = initialState, action) {
         });
       }
       return state.set('cookiesAllowed', action.cookiesAllowed);
+    case SET_LOGIN_REDIRECT:
+      return state.set('loginRedirect', action.loginRedirect);
     default:
       return state;
   }

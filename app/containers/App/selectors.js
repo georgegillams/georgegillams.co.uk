@@ -4,6 +4,14 @@ const selectGlobal = state => state.get('global');
 
 const selectRoute = state => state.get('route');
 
+const makeSelectLoginRedirect = () => {
+  console.log(`getting the login redirect`);
+  return createSelector(
+    selectGlobal,
+    globalState => globalState.get('loginRedirect'),
+  );
+};
+
 const makeSelectUser = () =>
   createSelector(
     selectGlobal,
@@ -48,6 +56,7 @@ const makeSelectLocation = () =>
 
 export {
   selectGlobal,
+  makeSelectLoginRedirect,
   makeSelectUser,
   makeSelectUserLoading,
   makeSelectCookiesAllowed,
