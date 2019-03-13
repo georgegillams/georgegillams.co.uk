@@ -1,10 +1,9 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { TextLink, Section } from 'components/Typography';
-import { redirectToCurrentPageAfterLogin } from 'helpers/storageHelpers';
 
 const LoggedInOnly = props => {
-  const { user, activityName, children } = props;
+  const { user, activityName, children, setLoginRedirect } = props;
 
   if (!user) {
     return (
@@ -17,7 +16,7 @@ const LoggedInOnly = props => {
           Register here - it&apos;s quick and easy.
         </TextLink>
         <br />
-        <TextLink onClick={redirectToCurrentPageAfterLogin} to="/login">
+        <TextLink onClick={setLoginRedirect} to="/login">
           Already got an account? Log in here.
         </TextLink>
       </Section>
