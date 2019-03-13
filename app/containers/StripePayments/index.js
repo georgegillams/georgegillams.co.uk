@@ -12,6 +12,7 @@ import {
   makeSelectUser,
   makeSelectCookiesAllowed,
 } from 'containers/App/selectors';
+import { setLoginRedirect } from 'containers/App/actions';
 import {
   makeSelectLoadingBalance,
   makeSelectBalance,
@@ -34,6 +35,7 @@ import saga from './saga';
 import StripePayments from './StripePayments';
 
 const mapDispatchToProps = dispatch => ({
+  setLoginRedirect: lr => dispatch(setLoginRedirect(lr)),
   paymentTokenChanged: newValue => dispatch(paymentTokenChanged(newValue)),
   makePayment: () => dispatch(makePayment()),
 });
