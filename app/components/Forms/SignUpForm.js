@@ -4,7 +4,7 @@ import BpkInput, { INPUT_TYPES } from 'bpk-component-input';
 import GGButton from 'components/GGButton';
 import { TextLink } from 'components/Typography';
 
-import { PROJECT_NAME, UNAME_REGEX, EMAIL_REGEX } from 'helpers/constants';
+import { USERNAMES_ENABLED, UNAME_REGEX, EMAIL_REGEX } from 'helpers/constants';
 import FormBuilder from './FormBuilder';
 
 import './forms.scss';
@@ -37,7 +37,7 @@ class Login extends React.Component {
             id: 'uname',
             name: 'Display name',
             validationRegex: UNAME_REGEX,
-            show: PROJECT_NAME !== 'EPICC',
+            show: USERNAMES_ENABLED,
           },
           {
             id: 'email',
