@@ -14,6 +14,7 @@ const getClassName = c => c;
 export default class Admin extends React.Component {
   render() {
     const {
+      setLoginRedirect,
       user,
       userLoading,
       userLoadError,
@@ -30,7 +31,10 @@ export default class Admin extends React.Component {
 
     const page = (
       <div className={outerClassNameFinal.join(' ')} {...rest}>
-        <AdminOnly user={user}>
+        <AdminOnly
+          user={user}
+          setLoginRedirect={() => setLoginRedirect('admin')}
+        >
           <Section name="Admin">
             <div className={getClassName('pages__compact-card-container')}>
               <ArticleCard

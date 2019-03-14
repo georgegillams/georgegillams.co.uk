@@ -36,6 +36,7 @@ const getClassName = c => c;
 export default class StripePayments extends React.Component {
   render() {
     const {
+      setLoginRedirect,
       cookiesAllowed,
       user,
       loadingBalance,
@@ -70,7 +71,12 @@ export default class StripePayments extends React.Component {
 
     const page = (
       <div className={outerClassNameFinal.join(' ')} {...rest}>
-        <LoggedInOnly user={user}>
+        <LoggedInOnly
+          user={user}
+          setLoginRedirect={() => {
+            setLoginRedirect('Pay');
+          }}
+        >
           <TicketStatus linkToPay={false} />
           <LoadingCover
             loadingSkeleton={LowerPageSkeleton}

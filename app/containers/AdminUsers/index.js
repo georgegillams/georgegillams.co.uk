@@ -8,6 +8,7 @@ import {
   makeSelectUserLoading,
   makeSelectCookiesAllowed,
 } from 'containers/App/selectors';
+import { setLoginRedirect } from 'containers/App/actions';
 import {
   makeSelectUsers,
   makeSelectUsersLoading,
@@ -15,15 +16,13 @@ import {
   makeSelectUsersLoadedError,
 } from './selectors';
 import { setCookiesAllowed } from 'containers/App/actions';
-import {
-  loadUsers,
-  requestMagicLinkForUser,
-} from './actions';
+import { loadUsers, requestMagicLinkForUser } from './actions';
 import reducer from './reducer';
 import saga from './saga';
 import AdminUsers from './AdminUsers';
 
 const mapDispatchToProps = dispatch => ({
+  setLoginRedirect: lr => dispatch(setLoginRedirect(lr)),
   requestMagicLinkForUser: user => dispatch(requestMagicLinkForUser(user)),
   onCookiesAccepted: () => dispatch(setCookiesAllowed(true)),
   loadUsers: () => dispatch(loadUsers()),

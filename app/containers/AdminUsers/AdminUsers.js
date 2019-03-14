@@ -44,6 +44,7 @@ export default class AdminUsers extends React.Component {
 
   render() {
     const {
+      setLoginRedirect,
       user,
       userLoading,
       cookiesAllowed,
@@ -65,7 +66,10 @@ export default class AdminUsers extends React.Component {
 
     const page = (
       <div className={outerClassNameFinal.join(' ')} {...rest}>
-        <AdminOnly user={user}>
+        <AdminOnly
+          user={user}
+          setLoginRedirect={() => setLoginRedirect('admin/users')}
+        >
           <Section name="Admin - users">
             <span>Users: </span>
             {users && users.length && <span>{users.length}</span>}
@@ -73,9 +77,9 @@ export default class AdminUsers extends React.Component {
             <br />
             {users && users.length && (
               <Fragment>
-              <GGButton onClick={() => downloadData(users)} large>
-                Download user data
-              </GGButton>
+                <GGButton onClick={() => downloadData(users)} large>
+                  Download user data
+                </GGButton>
                 <br />
                 <br />
                 <GGButton onClick={this.expandAll} large>
