@@ -82,7 +82,7 @@ export default class Photography extends Component {
               month={null}
               className={getClassName('pages__card')}
               imageSrc="https://i.imgur.com/u30cQWU.png"
-              href="https://www.flickr.com/people/137198167@N03/"
+              href="https://www.flickr.com/people/georgegillams/"
               title="Find me on Flickr"
             />
           </div>
