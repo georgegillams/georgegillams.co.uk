@@ -4,7 +4,7 @@ import {
   INVALID_SESSION,
   EMAIL_TAKEN,
   INVALID_CREDENTIALS,
-  PROJECT_NAME,
+  USERNAMES_ENABLED,
 } from 'helpers/constants';
 import { hash, compareHash } from 'utils/hash';
 import setContentLastUpdatedTimestamp from 'utils/setContentLastUpdatedTimestamp';
@@ -34,7 +34,7 @@ export default function signUp(req) {
       );
       if (userWithSameEmail) {
         resolve(EMAIL_TAKEN);
-      } else if (userWithSameUname && PROJECT_NAME !== 'EPICC') {
+      } else if (userWithSameUname && USERNAMES_ENABLED) {
         resolve(usernameTakenErrorMessage);
       } else {
         datumCreate({ redisKey: 'users' }, reqSecured).then(createdUser => {
