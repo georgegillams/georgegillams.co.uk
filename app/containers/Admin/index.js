@@ -9,12 +9,14 @@ import {
   makeSelectUserLoading,
   makeSelectCookiesAllowed,
 } from 'containers/App/selectors';
+import { setLoginRedirect } from 'containers/App/actions';
 import { setCookiesAllowed } from 'containers/App/actions';
 import reducer from './reducer';
 import saga from './saga';
 import Admin from './Admin';
 
 const mapDispatchToProps = dispatch => ({
+  setLoginRedirect: lr => dispatch(setLoginRedirect(lr)),
   onCookiesAccepted: () => dispatch(setCookiesAllowed(true)),
 });
 
