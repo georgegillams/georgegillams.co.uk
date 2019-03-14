@@ -66,7 +66,7 @@ export default class Login extends React.Component {
         redirectLocation === '' ||
         !redirectLocation.match(REDIRECT_REGEX)
       ) {
-        redirectLocation = '/account';
+        redirectLocation = 'account';
       }
       return (
         <Redirect
