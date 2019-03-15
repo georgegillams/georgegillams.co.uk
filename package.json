@@ -20,7 +20,7 @@
     "build:server": "cross-env NODE_ENV=development babel -d ./build/server ./server -s",
     "build:client": "cross-env NODE_PATH=./app NODE_ENV=production webpack --config config/webpack.prod.babel.js --color -p --progress --hide-modules --display-optimization-bailout",
     "build:clean": "rimraf ./build",
-    "cleanup-package-lock": "sed -i -e 's/http:\\/\\//https:\\/\\//g' $(find . -name 'package-lock.json')",
+    "cleanup-package-lock": "sed -i '' -e 's/http:\\/\\//https:\\/\\//g' $(find . -name 'package-lock.json')",
     "postinstall": "npm run cleanup-package-lock && npm run link-helpers",
     "link-helpers": "ln -Ffs $(pwd)/helpers $(pwd)/app/helpers && ln -Ffs $(pwd)/helpers $(pwd)/server/api/helpers",
     "start:dev": "cross-env NODE_PATH=./server/api:./app NODE_ENV=development nodemon --ignore 'app/*' --exec babel-node server",
