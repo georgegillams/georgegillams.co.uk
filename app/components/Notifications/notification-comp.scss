@@ -1,4 +1,10 @@
 @import '~bpk-mixins';
+@import 'helpers/tokens';
+
+@fontface {
+  font-family: 'Quattrocento Sans', sans-serif;
+  src: url('https://fonts.googleapis.com/css?family=Quattrocento+Sans');
+}
 
 .notification-comp {
   &__container {
@@ -12,11 +18,12 @@
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    background-color: #1e1e1e;
+    background-color: $not-black;
     color: white;
+    font-family: 'Quattrocento Sans', sans-serif;
 
     &--neutral {
-      background-color: #1e1e1e;
+      background-color: $not-black;
     }
 
     &--success {
