@@ -19,7 +19,7 @@
     "build:server": "cross-env NODE_ENV=development babel -d ./build/server ./server -s",
     "clean": "npm run test:clean && npm run build:clean",
     "dev": "cross-env redis-server & SECRET_API_KEY=asdfghjkl MONZO_ACCESS_PASSWORD=asdfghjkl npm run start:dev",
-    "fix:package-lock": "git status -s | grep package-lock.json | awk '{print $2}' | xargs replace --silent 'http://' 'https://'",
+    "fix:package-lock": "(git rev-parse --is-inside-work-tree && git status -s | grep package-lock.json | awk '{print $2}' | xargs replace --silent 'http://' 'https://') || true",
     "link-helpers": "ln -Ffs $(pwd)/helpers $(pwd)/app/helpers && ln -Ffs $(pwd)/helpers $(pwd)/server/api/helpers",
     "lint": "npm run lint:js && npm run lint:scss",
     "lint:js": "eslint . --ext .js,.jsx",
