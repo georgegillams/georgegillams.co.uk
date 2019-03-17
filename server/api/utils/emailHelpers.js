@@ -6,6 +6,7 @@ import {
   EMAIL_SENDER_EMAIL,
 } from 'helpers/constants';
 import {
+  sendMagicLinkTicketEmail as sendMLTE,
   sendMagicLinkEmail as sendMLE,
   sendEmailVerificationEmail as sendEVE,
   sendPaymentReceiptEmail as sendPRE,
@@ -30,6 +31,21 @@ export function sendMagicLinkEmail(userProfile, divertToAdmin, loginRedirect) {
     senderEmail,
     divertToAdmin,
     loginRedirect,
+  );
+}
+
+export function sendMagicLinkTicketEmail(
+  userProfile,
+  ticketData,
+  divertToAdmin,
+) {
+  return sendMLTE(
+    userProfile,
+    imageHtml,
+    buttonStyle,
+    senderEmail,
+    ticketData,
+    divertToAdmin,
   );
 }
 

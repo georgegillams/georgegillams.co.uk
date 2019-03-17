@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Status,  TextLink } from 'components/Typography';
-import ArticleCard, {CARD_LAYOUTS} from 'components/Cards';
+import Status from './Status';
+import ArticleCard, { CARD_LAYOUTS } from 'components/Cards';
 
 import './status-card.scss';
 
@@ -21,24 +21,10 @@ const StatusCard = props => {
           {data &&
             data.map(dataItem => (
               <div className="status-card__content-item">
-                {dataItem.status === 'complete' && (
-                  <Status
-                    type="SUCCESS"
-                    className="status-card__content-item-status"
-                  />
-                )}
-                {dataItem.status === 'incomplete' && (
-                  <Status
-                    type="WARN"
-                    className="status-card__content-item-status"
-                  />
-                )}
-                {dataItem.status === 'not_started' && (
-                  <Status
-                    type="ERROR"
-                    className="status-card__content-item-status"
-                  />
-                )}
+                <Status
+                  type={dataItem.status}
+                  className="status-card__content-item-status"
+                />
                 {dataItem.item}
                 <br />
                 <br />

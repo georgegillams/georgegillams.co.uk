@@ -8,6 +8,18 @@ const makeSelectMagicLinkUser = () =>
     adminUsersState => adminUsersState.get('magicLinkUser'),
   );
 
+const makeSelectPaymentReceiptUser = () =>
+  createSelector(
+    selectAdminUsers,
+    adminUsersState => adminUsersState.get('paymentReceiptUser'),
+  );
+
+const makeSelectEmailTicketUser = () =>
+  createSelector(
+    selectAdminUsers,
+    adminUsersState => adminUsersState.get('emailTicketUser'),
+  );
+
 const makeSelectUsers = () =>
   createSelector(
     selectAdminUsers,
@@ -38,4 +50,6 @@ export {
   makeSelectUsersLoadedSuccess,
   makeSelectUsersLoadedError,
   makeSelectMagicLinkUser,
+  makeSelectPaymentReceiptUser,
+  makeSelectEmailTicketUser,
 };

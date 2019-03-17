@@ -2,11 +2,14 @@ import { call, put, select, takeLatest } from 'redux-saga/effects';
 import {
   LOAD_USERS,
   REQUEST_MAGIC_LINK_FOR_USER,
+  RESEND_PAYMENT_RECEIPT,
+  SEND_TICKET_EMAIL,
 } from './constants';
 import { loadUsersSuccess, loadUsersError } from './actions';
 import {
   makeSelectMagicLinkUser,
   makeSelectPaymentReceiptUser,
+  makeSelectEmailTicketUser,
 } from './selectors';
 import { pushMessage } from 'containers/RequestStatusWrapper/actions';
 import { API_ENDPOINT, COMMUNICATION_ERROR_MESSAGE } from 'helpers/constants';
@@ -20,6 +23,69 @@ const usersLoadedErrorMessage = {
   type: 'error',
   message: 'Could not load users.',
 };
+const magicLinkSuccessMessage = {
+  type: 'success',
+  message: 'Magic link for user sent!',
+};
+const magicLinkErrorMessage = {
+  type: 'error',
+  message: 'Could not generate magic link.',
+};
+
+const ticketSuccessMessage = {
+  type: 'success',
+  message: 'Ticket for user sent!',
+};
+const ticketErrorMessage = {
+  type: 'error',
+  message: 'Could not send ticket.',
+};
+
+export function* doSendTicketEmail() {
+  const user = yield select(makeSelectEmailTicketUser());
+  console.log(`doSendTicketEmail user`, user);
+  const sendTicketEmailUrl = `${API_ENDPOINT}/stripePayments/resendTicketEmail`;
+
+  try {
+    const resendResult = yield call(request, sendTicketEmailUrl, {
+      method: 'POST',
+      body: JSON.stringify({ resendId: user.id }),
+      headers: {
+        'Content-Type': 'application/json',
+      },
+    });
+    if (resendResult.error) {
+      yield put(pushMessage(ticketErrorMessage));
+    } else {
+      yield put(pushMessage(ticketSuccessMessage));
+    }
+  } catch (err) {
+    yield put(pushMessage(COMMUNICATION_ERROR_MESSAGE));
+  }
+}
+
+export function* doResendPaymentReceipt() {
+  const user = yield select(makeSelectPaymentReceiptUser());
+  const resentPaymentReceiptLink = `${API_ENDPOINT}/stripePayments/resendPaymentReceipt`;
+
+  try {
+    const resendResult = yield call(request, resentPaymentReceiptLink, {
+      method: 'POST',
+      body: JSON.stringify({ resendId: user.id }),
+      headers: {
+        'Content-Type': 'application/json',
+      },
+    });
+    if (resendResult.error) {
+      yield put(pushMessage(magicLinkErrorMessage));
+    } else {
+      yield put(pushMessage(magicLinkSuccessMessage));
+    }
+  } catch (err) {
+    yield put(pushMessage(COMMUNICATION_ERROR_MESSAGE));
+  }
+}
+
 export function* doRequestMagicLink() {
   const user = yield select(makeSelectMagicLinkUser());
   const magicLinkUrl = `${API_ENDPOINT}/getmagiclink`;
@@ -43,17 +109,100 @@ export function* doRequestMagicLink() {
 }
 
 export function* doLoadUsers() {
-  const requestURL = `${API_ENDPOINT}/users/load`;
+  const usersRequestURL = `${API_ENDPOINT}/users/load`;
+  const userDetailsRequestURL = `${API_ENDPOINT}/userDetails/loadAll`;
+  const ticketsRequestURL = `${API_ENDPOINT}/tickets/loadAll`;
+  const paymentsRequestURL = `${API_ENDPOINT}/stripePayments/loadAll`;
+  const registrationStatusRequestURL = `${API_ENDPOINT}/registrationStatus/loadAll`;
 
   try {
-    const usersResult = yield call(request, requestURL, {
+    const usersResult = yield call(request, usersRequestURL, {
       method: 'GET',
-    }); // Can add third arg for options
+    });
+    const userDetailsResult = yield call(request, userDetailsRequestURL, {
+      method: 'GET',
+    });
+    const ticketsResult = yield call(request, ticketsRequestURL, {
+      method: 'GET',
+    });
+    const paymentsResult = yield call(request, paymentsRequestURL, {
+      method: 'GET',
+    });
+    const registrationStatusResult = yield call(
+      request,
+      registrationStatusRequestURL,
+      {
+        method: 'GET',
+      },
+    );
     if (usersResult.error) {
       yield put(loadUsersError(usersResult));
       yield put(pushMessage(usersLoadedErrorMessage));
+    } else if (userDetailsResult.error) {
+      yield put(loadUsersError(userDetailsResult));
+      yield put(pushMessage(usersLoadedErrorMessage));
+    } else if (ticketsResult.error) {
+      yield put(loadUsersError(ticketsResult));
+      yield put(pushMessage(ticketsResult.error));
+    } else if (paymentsResult.error) {
+      yield put(loadUsersError(paymentsResult));
+      yield put(pushMessage(paymentsResult.error));
+    } else if (registrationStatusResult.error) {
+      yield put(loadUsersError(registrationStatusResult));
+      yield put(pushMessage(registrationStatusResult.error));
     } else {
-      yield put(loadUsersSuccess(usersResult));
+      console.log(`no errors - proceeding`);
+      let associatedData = associate(
+        usersResult,
+        userDetailsResult,
+        'id',
+        'authorId',
+        'userDetails',
+      );
+      console.log(`user profiles associated`);
+      associatedData = associate(
+        associatedData,
+        ticketsResult,
+        'id',
+        'reservedTo',
+        'ticketReservation',
+      );
+      console.log(`ticket reservations associated`);
+      associatedData = associate(
+        associatedData,
+        paymentsResult,
+        'id',
+        'userId',
+        'payments',
+        true,
+      );
+      console.log(`payments associated`);
+      associatedData = associate(
+        associatedData,
+        registrationStatusResult,
+        'id',
+        'userId',
+        'registrationStatus',
+      );
+      console.log(`registration statuses associated`);
+      associatedData = associatedData.map(u => {
+        const newU = JSON.parse(JSON.stringify(u));
+        if (newU && newU.ticketReservation) {
+          newU.ticketReservation.outstandingBalance = calculateOutstandingBalance(
+            newU.ticketReservation,
+            newU.payments,
+          );
+        }
+        if (newU && newU.registrationStatus) {
+          newU.overallRegistrationStatus = newU.registrationStatus.overall;
+        }
+        if (newU && newU.moneysReceived) {
+          delete newU.moneysReceived;
+        }
+        return newU;
+      });
+      console.log(`outstandingBalances calculated`);
+      yield put(loadUsersSuccess(associatedData));
       yield put(pushMessage(usersLoadedMessage));
     }
   } catch (err) {
@@ -65,4 +214,6 @@ export function* doLoadUsers() {
 export default function* adminUsers() {
   yield takeLatest(LOAD_USERS, () => doLoadUsers());
   yield takeLatest(REQUEST_MAGIC_LINK_FOR_USER, () => doRequestMagicLink());
+  yield takeLatest(SEND_TICKET_EMAIL, () => doSendTicketEmail());
+  yield takeLatest(RESEND_PAYMENT_RECEIPT, () => doResendPaymentReceipt());
 }
