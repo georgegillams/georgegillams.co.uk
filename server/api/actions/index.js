@@ -12,11 +12,13 @@ export monzoPots from './monzoPots';
 export logout from './logout';
 export logoutall from './logoutall';
 export deleteEntity from './deleteEntity';
+export deleteSet from './deleteSet';
 export requestVerificationEmail from './requestVerificationEmail';
 
 // Expose non-default exports
 export * as magiclinks from './magiclinks/index';
 export * as stripePayments from './stripePayments/index';
+export * as registrationStatus from './registrationStatus/index';
 export * as payments from './payments/index';
 export * as comments from './comments/index';
 export * as tickets from './tickets/index';

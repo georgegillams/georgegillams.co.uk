@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { TextLink } from 'components/Typography';
+import STATUS_TYPES from './StatusTypes';
 
 import './status.scss';
 
@@ -14,13 +15,13 @@ const Status = props => {
   if (large) {
     statusClassName.push('status__container--large');
   }
-  if (type === 'SUCCESS') {
+  if (type === STATUS_TYPES.SUCCESS) {
     statusClassName.push('status__container--success');
   }
-  if (type === 'WARN') {
+  if (type === STATUS_TYPES.WARN) {
     statusClassName.push('status__container--warn');
   }
-  if (type === 'ERROR') {
+  if (type === STATUS_TYPES.ERROR) {
     statusClassName.push('status__container--error');
   }
 
@@ -32,9 +33,9 @@ const Status = props => {
         </div>
       )}
       <div className={statusClassName.join(' ')}>
-        {type === 'SUCCESS' && '✔'}
-        {type === 'WARN' && '!'}
-        {type === 'ERROR' && large && '✘'}
+        {type === STATUS_TYPES.SUCCESS && '✔'}
+        {type === STATUS_TYPES.WARN && '!'}
+        {type === STATUS_TYPES.ERROR && large && '✘'}
       </div>
     </div>
   );

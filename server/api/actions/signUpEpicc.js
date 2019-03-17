@@ -26,7 +26,9 @@ export default function signUp(req) {
             reqSecured.body.ticketType,
             'ticketType',
           );
-          if (!ticket) {
+          if (Date.now() > new Date(2019, 2, 20, 21, 0, 0).getTime()) {
+            resolve({ error: 'Ticket sales are now closed.' });
+          } else if (!ticket) {
             resolve({ error: 'Ticket type is sold out.' });
           } else {
             reqSecured.body.email = reqSecured.body.email.toLowerCase();

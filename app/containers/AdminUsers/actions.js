@@ -1,6 +1,7 @@
 import {
   REQUEST_MAGIC_LINK_FOR_USER,
   RESEND_PAYMENT_RECEIPT,
+  SEND_TICKET_EMAIL,
   LOAD_USERS,
   LOAD_USERS_SUCCESS,
   LOAD_USERS_ERROR,
@@ -23,6 +24,13 @@ export function resendPaymentReceipt(user) {
   return {
     type: RESEND_PAYMENT_RECEIPT,
     paymentReceiptUser: user,
+  };
+}
+
+export function sendTicketEmail(user) {
+  return {
+    type: SEND_TICKET_EMAIL,
+    emailTicketUser: user,
   };
 }
 
