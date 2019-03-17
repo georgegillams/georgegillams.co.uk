@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Helmet } from 'react-helmet';
 import ArticleCard, { CARD_LAYOUTS } from 'components/Cards';
+import { REG_EMAIL } from 'helpers/constants';
 import 'containers/pages.scss';
 
 const getClassName = c => c;
@@ -16,6 +17,18 @@ export default class HomePage extends React.PureComponent {
       <div className={getClassName('pages__container')}>
         <div className={getClassName('pages__compact-card-container')}>
           <Helmet title="Home" />
+          {Date.now() > new Date(2019, 2, 22, 1, 0, 0).getTime() && (
+            <ArticleCard
+              layout={CARD_LAYOUTS.narrowCompact}
+              day={null}
+              month={null}
+              className={getClassName('pages__card')}
+              // fillImageSrc="https://i.imgur.com/iFbPZbn.jpg"
+              linkUrl="/ticket"
+              title="My ticket"
+              tallLayout
+            />
+          )}
           <ArticleCard
             layout={CARD_LAYOUTS.narrowCompact}
             day={null}
@@ -46,6 +59,18 @@ export default class HomePage extends React.PureComponent {
             title="Contact"
             tallLayout
           />
+          {user && user.email === REG_EMAIL && (
+            <ArticleCard
+              layout={CARD_LAYOUTS.narrowCompact}
+              day={null}
+              month={null}
+              className={getClassName('pages__card')}
+              // fillImageSrc="https://i.imgur.com/iFbPZbn.jpg"
+              linkUrl="/registration"
+              title="Ticket scanner"
+              tallLayout
+            />
+          )}
           {user && user.admin && (
             <ArticleCard
               layout={CARD_LAYOUTS.narrowCompact}

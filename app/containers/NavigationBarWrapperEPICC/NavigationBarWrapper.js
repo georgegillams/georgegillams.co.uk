@@ -1,5 +1,5 @@
 import React from 'react';
-import { WessexCCPLogo } from 'components/Typography';
+import { WessexCCPLogo } from 'components/Logo';
 import NavigationBar, { NavigationItem } from 'components/NavigationBar';
 import { SmallButtonSkeleton } from 'components/Skeletons';
 
@@ -22,17 +22,18 @@ const NavigationBarWrapper = props => {
 
   const menuItems2 = [
     adminItem,
+    Date.now() > new Date(2019, 2, 22, 1, 0, 0).getTime() ? (
+      <NavigationItem name="Ticket" linkUrl="/ticket" />
+    ) : null,
     <NavigationItem name="Contact" linkUrl="/contact" />,
     accountItem,
   ];
-
-  const logo = null;
 
   return (
     <NavigationBar
       menuItems1={null}
       menuItems2={menuItems2}
-      logo={logo}
+      logo={<WessexCCPLogo small animated noPadding />}
       accountMenuItem={accountItem}
       {...rest}
     />
