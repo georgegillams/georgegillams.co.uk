@@ -32,8 +32,8 @@ test('allows a user to be created', done => {
       expect(dbResult.uname).toBe(result.uname);
 
       expect(dbResult.timestamp).toBe(result.timestamp);
+      done();
     });
-    done();
   });
 });
 
