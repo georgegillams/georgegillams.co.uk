@@ -6,6 +6,8 @@ import ArticleCard, { CARD_LAYOUTS } from 'components/Cards';
 import GGButton from 'components/GGButton';
 import { Section, SubSection, TextLink } from 'components/Typography';
 import CodeInline from 'components/Code';
+import Ticket from 'components/Ticket';
+import AdminUsersAPIEntity from './AdminUsersAPIEntity';
 import {
   DebugObject,
   APIEntity,
@@ -28,6 +30,12 @@ const downloadData = data => {
 };
 
 export default class AdminUsers extends React.Component {
+  constructor(props) {
+    super(props);
+
+    this.state = { showTickets: false };
+  }
+
   componentDidMount = () => {
     this.props.loadUsers();
   };
@@ -49,6 +57,7 @@ export default class AdminUsers extends React.Component {
       userLoading,
       cookiesAllowed,
       onCookiesAccepted,
+      sendTicketEmail,
       className,
       loadUsers,
       users,
@@ -56,6 +65,7 @@ export default class AdminUsers extends React.Component {
       usersLoadedSuccess,
       usersLoadedError,
       requestMagicLinkForUser,
+      resendPaymentReceipt,
       ...rest
     } = this.props;
     const outerClassNameFinal = [getClassName('pages__container')];
@@ -75,6 +85,16 @@ export default class AdminUsers extends React.Component {
             {users && users.length && <span>{users.length}</span>}
             <br />
             <br />
+            <GGButton
+              onClick={() =>
+                this.setState({ showTickets: !this.state.showTickets })
+              }
+              large
+            >
+              {`${this.state.showTickets ? 'Hide' : 'Show'} tickets`}
+            </GGButton>
+            <br />
+            <br />
             {users && users.length && (
               <Fragment>
                 <GGButton onClick={() => downloadData(users)} large>
@@ -92,13 +112,48 @@ export default class AdminUsers extends React.Component {
             {users &&
               users.map &&
               users.map(u => (
-                <APIEntity name="more" entityType="User" entity={u}>
+                <AdminUsersAPIEntity name="more" entityType="User" entity={u}>
                   <br />
                   <br />
-                  <GGButton large onClick={() => requestMagicLinkForUser(u)}>
+                  {u && u.registrationStatus && u.registrationStatus.ticket && (
+                    <Fragment>
+                      {this.state.showTickets && (
+                        <Ticket
+                          email={u.email}
+                          ticket={u.registrationStatus.ticket}
+                        />
+                      )}
+                      {!this.state.showTickets && <span>Ticket hidden</span>}
+                      <br />
+                      <br />
+                      <GGButton
+                        destructive
+                        large
+                        onClick={() => sendTicketEmail(u)}
+                      >
+                        Send e-ticket email
+                      </GGButton>
+                      <br />
+                      <br />
+                    </Fragment>
+                  )}
+                  <GGButton
+                    destructive
+                    large
+                    onClick={() => requestMagicLinkForUser(u)}
+                  >
                     Login as user
                   </GGButton>
-                </APIEntity>
+                  <br />
+                  <br />
+                  <GGButton
+                    destructive
+                    large
+                    onClick={() => resendPaymentReceipt(u)}
+                  >
+                    Resend payment receipt
+                  </GGButton>
+                </AdminUsersAPIEntity>
               ))}
           </Section>
         </AdminOnly>

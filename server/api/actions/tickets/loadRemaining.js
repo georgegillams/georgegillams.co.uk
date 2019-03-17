@@ -32,6 +32,20 @@ export default function loadRemaining(req) {
           }
         }
       });
+      if (Date.now() > new Date(2019, 2, 20, 21, 0, 0).getTime()) {
+        ticketCounts.EB_ONE_DAY = 0;
+        ticketCounts.EB_TWO_DAY = 0;
+        ticketCounts.R_ONE_DAY = 0;
+        ticketCounts.R_TWO_DAY = 0;
+        ticketCounts.EB_ONE_DAY_UNSOLD = ticketCounts.EB_ONE_DAY_UNPAID;
+        ticketCounts.EB_TWO_DAY_UNSOLD = ticketCounts.EB_TWO_DAY_UNPAID;
+        ticketCounts.R_ONE_DAY_UNSOLD = ticketCounts.R_ONE_DAY_UNPAID;
+        ticketCounts.R_TWO_DAY_UNSOLD = ticketCounts.R_TWO_DAY_UNPAID;
+        ticketCounts.EB_ONE_DAY_UNPAID = 0;
+        ticketCounts.EB_TWO_DAY_UNPAID = 0;
+        ticketCounts.R_ONE_DAY_UNPAID = 0;
+        ticketCounts.R_TWO_DAY_UNPAID = 0;
+      }
       resolve(ticketCounts);
     });
   });
