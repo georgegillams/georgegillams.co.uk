@@ -57,6 +57,66 @@ ${magicLinkUrl}\n\nIt will expire ${oneHoursTime.toString()}`,
   );
 }
 
+export function sendMagicLinkTicketEmail(
+  userProfile,
+  imageHtml,
+  buttonStyle,
+  senderEmail,
+  ticketData,
+  divertToAdmin,
+) {
+  const now = new Date();
+  const twentyFourHoursTime = new Date(now.getTime() + 24 * 1000 * 60 * 60);
+  const magicLink = {
+    userId: userProfile.id,
+    expiry: twentyFourHoursTime,
+    key: crypto.randomBytes(20).toString('hex'),
+  };
+  datumCreate({ redisKey: 'magiclinks' }, { body: magicLink });
+  let magicLinkUrl = `${SITE_URL}/magic-login?token=${magicLink.key}`;
+  magicLinkUrl += `&redirect=ticket`;
+  // Send the magic link URL to the email address of the user
+  transporter.sendMail(
+    {
+      from: senderEmail,
+      to: divertToAdmin
+        ? 'g+diverted-to-admin@georgegillams.co.uk'
+        : userProfile.email,
+      subject: 'Your EPICC 2019 ticket',
+      text: `Your ticket link is:
+${magicLinkUrl}\n\nIt will expire ${twentyFourHoursTime.toString()}`,
+      html: `<div style="text-align: center;color: #1e1e1e;">
+      ${imageHtml}
+  <p>
+    Tap the button below to login and access your EPICC 2019 ticket
+    <br><br><br>
+    <a href="${magicLinkUrl}" style="${buttonStyle}">Log in</a>
+    <br><br><br>
+    <p>
+      Once you're logged in, feel free to delete this email.
+    </p>
+    <p>
+      This link will only work once, but if you need to login again, you can do so at <a href="https://www.epicc-tickets.org/ticket">epicc-tickets.org/ticket</a>.
+    </p>
+    <p>
+      Your single-use login link will expire ${twentyFourHoursTime.toString()}
+    </p>
+  </p>
+  <a href="https://qrcode.online/img/?type=text&size=10&data=${JSON.stringify(
+    ticketData,
+  )
+    .split('"')
+    .join("'")}">Alternative ticket code</a>
+</div>`,
+    },
+    error => {
+      if (error) {
+        return console.log(error);
+      }
+    },
+  );
+}
+
 export function sendEmailVerificationEmail(
   userProfile,
   imageHtml,
