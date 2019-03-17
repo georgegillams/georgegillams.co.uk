@@ -41,7 +41,7 @@ export default function deleteEntity(req) {
                   );
                   setContentLastUpdatedTimestamp();
                 } else {
-                  reject({
+                  resolve({
                     error: 'Only deleted entities can be permanently removed.',
                   });
                 }
