@@ -16,14 +16,21 @@ import {
   makeSelectUsersLoadedError,
 } from './selectors';
 import { setCookiesAllowed } from 'containers/App/actions';
-import { loadUsers, requestMagicLinkForUser } from './actions';
+import {
+  loadUsers,
+  requestMagicLinkForUser,
+  resendPaymentReceipt,
+  sendTicketEmail,
+} from './actions';
 import reducer from './reducer';
 import saga from './saga';
 import AdminUsers from './AdminUsers';
 
 const mapDispatchToProps = dispatch => ({
   setLoginRedirect: lr => dispatch(setLoginRedirect(lr)),
+  sendTicketEmail: user => dispatch(sendTicketEmail(user)),
   requestMagicLinkForUser: user => dispatch(requestMagicLinkForUser(user)),
+  resendPaymentReceipt: user => dispatch(resendPaymentReceipt(user)),
   onCookiesAccepted: () => dispatch(setCookiesAllowed(true)),
   loadUsers: () => dispatch(loadUsers()),
 });

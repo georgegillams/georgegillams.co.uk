@@ -8,7 +8,6 @@ export default function load(req) {
   return new Promise((resolve, reject) => {
     authentication(reqSecured).then(
       user => {
-        console.log(`loadingComments with id`, reqSecured.query.pageId);
         resolve(
           datumLoad({
             redisKey: 'comments',
