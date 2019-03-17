@@ -7,30 +7,26 @@ import authentication from 'utils/authentication';
 import setContentLastUpdatedTimestamp from 'utils/setContentLastUpdatedTimestamp';
 import reqSecure from 'utils/reqSecure';
 
-const deleteEntityAllowedAttributes = [
+const deleteSetAllowedAttributes = [
   { attribute: 'collectionName', pattern: STRING_REGEX },
-  { attribute: 'id', pattern: ID_REGEX },
 ];
 
-export default function deleteEntity(req) {
-  const reqSecured = reqSecure(req, deleteEntityAllowedAttributes);
+export default function deleteSet(req) {
+  const reqSecured = reqSecure(req, deleteSetAllowedAttributes);
   return new Promise((resolve, reject) => {
     authentication(reqSecured).then(
       user => {
         if (user && user.admin) {
-          const { collectionName, id } = reqSecured.body;
-          datumLoad({ redisKey: collectionName, includeDeleted: true }).then(
-            collectionData => {
-              const { existingValue, existingValueIndex } = find(
-                collectionData,
-                id,
-              );
-              if (existingValue) {
-                if (existingValue.deleted) {
+          const { collectionName } = reqSecured.body;
+          if (!collectionName) {
+            resolve({ error: 'CollectionName must be provided' });
+          } else {
+            datumLoad({ redisKey: collectionName, includeDeleted: true }).then(
+              collectionData => {
+                for (let i = 0; i < collectionData.length; i += 1) {
+                  let existingValue = collectionData[i];
                   console.log(
-                    `Permanently removing ${
-                      existingValue.id
-                    } at index ${existingValueIndex}`,
+                    `Permanently removing ${existingValue.id} at index ${i}`,
                   );
                   resolve(
                     redis.lrem(
@@ -40,16 +36,10 @@ export default function deleteEntity(req) {
                     ),
                   );
                   setContentLastUpdatedTimestamp();
-                } else {
-                  reject({
-                    error: 'Only deleted entities can be permanently removed.',
-                  });
                 }
-              } else {
-                reject(RESOURCE_NOT_FOUND);
-              }
-            },
-          );
+              },
+            );
+          }
         } else {
           resolve(UNAUTHORISED_WRITE);
         }
