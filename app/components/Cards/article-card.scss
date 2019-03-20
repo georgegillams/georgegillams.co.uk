@@ -7,6 +7,10 @@
   border-radius: 0.35rem;
   box-shadow: 0.1rem 0.1rem 0.3rem 0 $shadow-color;
 
+  @media (prefers-color-scheme: dark) {
+    box-shadow: 0.1rem 0.1rem 0.3rem 0 $shadow-color-invert;
+  }
+
   &--narrow-compact {
     max-width: 25rem;
   }
@@ -15,6 +19,10 @@
   &:active,
   &:hover {
     box-shadow: 0.2rem 0.2rem 0.5rem 0 $shadow-color;
+
+    @media (prefers-color-scheme: dark) {
+      box-shadow: 0.2rem 0.2rem 0.5rem 0 $shadow-color-invert;
+    }
   }
 
   &__outer-container {

@@ -1,4 +1,5 @@
-@import "~bpk-mixins";
+@import '~bpk-mixins';
+@import 'helpers/tokens';
 
 .footer {
   &__container {
@@ -7,9 +8,14 @@
     display: flex;
     flex-direction: column;
     padding: 2rem 4rem;
-    background-color: #1e1e1e;
+    color: $not-black-invert;
+    background-color: $not-black;
     background-position: center;
     background-size: cover;
+
+    @media (prefers-color-scheme: dark) {
+      background-color: black;
+    }
   }
 
   &__social {

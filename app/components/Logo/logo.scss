@@ -87,6 +87,10 @@
     font-weight: bold;
     line-height: 6rem;
 
+    @media (prefers-color-scheme: dark) {
+      color: $primary-color-invert;
+    }
+
     &--smaller {
       font-size: 3.5rem;
 

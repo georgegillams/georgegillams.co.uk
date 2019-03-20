@@ -23,8 +23,12 @@
       padding: 0.1rem 0.3rem;
       border-radius: 0.2rem;
       background-color: rgba(173, 174, 178, 0.2);
-      color: #1e1d1e;
+      color: $not-black;
       font-size: inherit;
+
+      @media (prefers-color-scheme: dark) {
+        color: $not-black-invert;
+      }
     }
   }
 
