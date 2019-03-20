@@ -1,8 +1,23 @@
+@import '~bpk-mixins';
+@import 'helpers/tokens';
+
 .app-wrapper {
-  max-width: calc(768px + 16px * 2);
-  margin: 0 auto;
+  width: 100vw;
+  min-height: 100vh;
   display: flex;
-  min-height: 100%;
-  padding: 0 16px;
+  top: 0;
+  left: 0;
   flex-direction: column;
+
+  color: $not-black;
+  background-color: white;
+
+  @media (prefers-color-scheme: dark) {
+    color: $not-black-invert;
+    background-color: $not-black;
+  }
+
+  &--inner {
+    flex: 1;
+  }
 }
