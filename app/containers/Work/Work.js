@@ -6,7 +6,7 @@ import BpkImage, {
   withLazyLoading,
   withLoadingBehavior,
 } from 'bpk-component-image';
-import STYLES from '../pages.scss';
+import '../pages.scss';
 
 const getClassName = c => c;
 
@@ -40,30 +40,18 @@ export default class Work extends Component {
             >
               Leonardo{' '}
             </TextLink>
-            where I worked for 60 weeks, mostly on a .NET frameworks for
-            analysis tools. The frameworks enabled other development teams
-            within the company to build powerful applications for their
-            products.
-            <br />
-            <br />I then moved on to become a Software Engineering intern at
-            Skyscanner. I continued working there throughtout the final year of
-            my Masters in Southampton, and now work there full-time on their
-            open-source design system,{' '}
+            working on .NET frameworks for analysis tools.
+            <br />I now work at Skyscanner, on their open-source design system,{' '}
             <TextLink href="https://backpack.github.io/" external>
               Backpack{' '}
             </TextLink>
           </SubSection>
           <Section name="Portfolio">
-            This website demonstrates some of my web-development capabilities.
-            Below I have included examples and extracts from my work on other
-            products.
-            <br />
-            <br />
-            <SubSection name="Party parrot">
+            <SubSection name="Party Parrot">
               As a developer and advocate for open source, having a contribution
               to the{' '}
               <TextLink external href="https://cultofthepartyparrot.com/">
-                official party parrot repo
+                official Party Parrot repo{' '}
               </TextLink>{' '}
               was a proud moment.
               <br />
@@ -72,32 +60,38 @@ export default class Work extends Component {
                 src="https://cultofthepartyparrot.com/parrots/hd/opensourceparrot.gif"
               />
             </SubSection>
-            <SubSection name="Backpack Design System">
+            <SubSection name="EPICC Conference">
+              For a non-profit conference running in Southampton, I developed a
+              website where delegates could reserve and pay for tickets. The
+              website also allowed us to collect information needed from
+              delegates, and a QR-code based ticket system was implemented to
+              quickly register delegates when arriving at the conference.
+              <br />
+              <br />
+              The stack was as follows: React front-end, Node backend, Redis DB,
+              Stripe payment handling, Travis CI and Heroku deployment.
+              <br />
+              <br />
+              The custom built solution allowed us to sell nearly 120 tickets,
+              allowing delegates to manage their own tickets and allowing the
+              conference committee to instantly admit users with valid tickets
+              to the conference.
+            </SubSection>
+            <SubSection name="Backpack">
               <TextLink external href="https://backpack.github.io/">
                 Backpack{' '}
               </TextLink>
-              is Skyscanner's design system which supports 4 platforms (Android,
-              iOS, React Native and Web). Our work which combines Design and
-              Engineering in equal measures enables fast development and reduces
-              effort duplication.
-              <br />
-              <br />
-              To help debug complex stateless components, I built a demo
-              component which can automatically identify the types of props
-              accepted by a component, and provide elements for editing the
-              component in real-time.
-              <br />
-              <br />
-              <GGButton href="/work/bpk-component-demo">
-                See the demo component POC in action →
-              </GGButton>
+              is Skyscanner's open-source design system which supports 4
+              platforms (Android, iOS, React Native and Web). Our work which
+              combines Design and Engineering in equal measures enables fast
+              development and reduces effort duplication.
               <br />
               <br />
               <GGButton hrefExternal href="https://backpack.github.io/">
                 Read more about Backpack here →
               </GGButton>
             </SubSection>
-            <SubSection name="Industrial Placement - EWOS, Leonardo">
+            <SubSection name="EWOS">
               In 2015, I joined the EWOS (Electronic Warfare Operational
               Support) team at{' '}
               <TextLink
@@ -105,146 +99,15 @@ export default class Work extends Component {
                 external
               >
                 Leonardo{' '}
-              </TextLink>{' '}
-              to experience the way in which the software teams work to deliver
-              efficient and effective solutions. Our team was responsible for
-              maintaining large .NET frameworks which supported feature-rich
-              mission analysis tools. Close collaboration with the hardware team
-              and customers was essential and demanded a strong, agile approach
-              to development. Thorough planning, in which we were all involved,
-              was key to our success. Throughout the year I immensely improved
-              my ability to understand existing code and to produce readable,
-              manageable code myself.
-              <br />
-              <br />I was heavily involved in STEM activities whilst working for
-              the company.
-            </SubSection>
-            <SubSection name="Password Character Extractor">
-              I found the login process for a number of sites (particularly UK
-              bank websites) frustrating as they often require specific
-              characters from a password or memorable word. This is something
-              that LastPass cannot handle for me, so I created an offline tool
-              to help.
-              <br />
-              <br />
-              <FadingLazyLoadedImage
-                className={getClassName('apps__image')}
-                altText="Password Character Extraction Use"
-                style={{ maxWidth: '45rem' }}
-                width={2224}
-                height={514}
-                src="https://i.imgur.com/jc8QRic.png"
-              />
-              <br />
-              <br />
-              <GGButton href="/apps/password-character-extractor">
-                Read more here →
-              </GGButton>
-            </SubSection>
-            <SubSection name="React.js Academic References Component">
-              I was looking for a decent React Academic References Component{' '}
-              <TextLink external href="https://npmjs.org/">
-                NPM{' '}
-              </TextLink>{' '}
-              package and struggled to find one. I decided this is something
-              bloggers could really do with, so I got on with implementing an
-              open-source one.
-              <br />
-              <br />I started simple (Minimum Awesome Product) and hope that I /
-              the OS community can expand on this to support more referencing
-              formats.
-              <br />
-              <br />
-              <FadingLazyLoadedImage
-                className={getClassName('apps__image')}
-                altText="React.js Academic Reference Component Use"
-                style={{ maxWidth: '45rem' }}
-                width={2266}
-                height={1728}
-                src="https://i.imgur.com/7TmJg24.png"
-              />
-              <br />
-              <br />
-              <GGButton href="/blog/net-neutrality">
-                See it in action →
-              </GGButton>
-              <br />
-              <br />
-              <GGButton
-                hrefExternal
-                href="https://github.com/georgegillams/react-component-academic-reference"
-              >
-                View on GitHub →
-              </GGButton>
-            </SubSection>
-            <SubSection name="Greasemonkey - GuruShots">
-              <TextLink
-                href="https://addons.mozilla.org/en-US/firefox/addon/greasemonkey/"
-                external
-              >
-                GreaseMonkey{' '}
               </TextLink>
-              is a brilliant browser extension that allows you to add javascript
-              to specific webpages when they are loaded.{' '}
-              <TextLink href="https://gurushots.com/" external>
-                GuruShots{' '}
-              </TextLink>
-              is an online platform for photographers to enter their work into
-              competitions. At a random point in each competition, each user is
-              given a free boost. It is easy to miss, however, so I wrote a
-              script to regularly check for free boosts and make them stand out
-              on the page.
-              <br />
-              <br />
-              <FadingLazyLoadedImage
-                className={getClassName('apps__image')}
-                altText="Backpack component"
-                style={{ maxWidth: '24rem' }}
-                width={2910}
-                height={1920}
-                src="https://i.imgur.com/8tXCwHT.png"
-              />
-              <FadingLazyLoadedImage
-                className={getClassName('apps__image')}
-                altText="Backpack component"
-                style={{ maxWidth: '24rem' }}
-                width={2952}
-                height={1920}
-                src="https://i.imgur.com/2wcCm16.png"
-              />
-              <br />
-              <br />
-              <GGButton href="/greasemonkey/gurushots_boost" hrefExternal>
-                Download script
-              </GGButton>
-            </SubSection>
-            <SubSection name="Greasemonkey - ECS">
-              The ECS site we use at Southampton is a brilliant tool that was
-              created ugly, so I wrote a GreaseMonkey script to… well… improve
-              it.
-              <br />
-              <br />
-              <FadingLazyLoadedImage
-                className={getClassName('apps__image')}
-                altText="Backpack component"
-                style={{ maxWidth: '24rem' }}
-                width={2910}
-                height={1920}
-                src="https://i.imgur.com/zt3HvP1.png"
-              />
-              <FadingLazyLoadedImage
-                className={getClassName('apps__image')}
-                altText="Backpack component"
-                style={{ maxWidth: '24rem' }}
-                width={2952}
-                height={1920}
-                src="https://i.imgur.com/t6uFEMe.png"
-              />
-              <br />
-              <br />
-              <GGButton href="/greasemonkey/secureEcs_download" hrefExternal>
-                Download script
-              </GGButton>
+              . My work there involved maintaining large .NET frameworks which
+              supported feature-rich mission analysis tools. Close collaboration
+              with the hardware team and our consumers was essential and
+              demanded a strong, agile approach to development. Thorough
+              planning, in which we were all involved, was key to our success.
+              Throughout some 60 weeks there, I immensely improved my ability to
+              navigate large codebases and to produce readable, manageable code
+              myself.
             </SubSection>
           </Section>
         </Section>
