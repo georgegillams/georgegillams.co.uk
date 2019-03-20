@@ -1,8 +1,15 @@
 @import '~bpk-mixins';
+@import 'helpers/tokens';
 
 .forms {
   &__component {
     margin-bottom: 1rem !important;
+    color: $not-black;
+
+    @media (prefers-color-scheme: dark) {
+      color: $not-black-invert;
+      background-color: $not-black;
+    }
 
     &__text-box {
       max-width: 45rem;
@@ -26,6 +33,11 @@
     font-style: italic;
     font-size: 0.8rem;
     font-family: 'Quattrocento Sans', sans-serif;
+    color: $not-black;
+
+    @media (prefers-color-scheme: dark) {
+      color: $not-black-invert;
+    }
   }
 
   &__bpk-input {
