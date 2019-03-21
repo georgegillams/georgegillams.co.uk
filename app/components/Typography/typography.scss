@@ -23,6 +23,10 @@
     color: $not-black;
     font-family: 'Quattrocento Sans', sans-serif;
     text-decoration: none;
+
+    @media (prefers-color-scheme: dark) {
+      color: $not-black-invert;
+    }
   }
 
   &__icon {
@@ -48,6 +52,10 @@
     text-decoration: none;
     opacity: 0.4;
 
+    @media (prefers-color-scheme: dark) {
+      opacity: 1;
+    }
+
     @include bpk-breakpoint-tablet {
       margin-left: 0;
     }
@@ -60,9 +68,13 @@
   }
 
   &__text {
-    color: #1e1e1e;
+    color: $not-black;
     font-family: 'Quattrocento Sans', sans-serif;
     text-decoration: none;
+
+    @media (prefers-color-scheme: dark) {
+      color: $not-black-invert;
+    }
 
     &--with-anchor-link {
       @include bpk-breakpoint-tablet {
@@ -121,6 +133,11 @@
       color: darkorchid;
       font-weight: normal;
       fill: darkorchid;
+
+      @media (prefers-color-scheme: dark) {
+        color: orchid;
+        fill: orchid;
+      }
     }
 
     &:hover {
@@ -131,6 +148,10 @@
   }
 
   &--light {
-    color: white;
+    color: $not-black-invert;
+
+    @media (prefers-color-scheme: dark) {
+      color: $not-black;
+    }
   }
 }
