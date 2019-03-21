@@ -1,5 +1,7 @@
 import React from 'react';
 import { withRouter } from 'react-router';
+import BpkThemeProvider from 'bpk-theming';
+import { themeAttributes as hnThemeAttributes } from 'bpk-component-horizontal-nav';
 import PropTypes from 'prop-types';
 import { Helmet } from 'react-helmet';
 import { LoadingCover } from 'components/Auth';
@@ -12,10 +14,24 @@ const BlogsNavWR = withRouter(BlogsNav);
 const getClassName = c => c;
 
 export default class BlogsPage extends React.Component {
+  constructor(props) {
+    super(props);
+
+    this.state = { textColor: '#1e1e1e' };
+  }
+
   filteredBlogs = null;
 
   componentWillMount = () => {
     this.props.loadBlogs();
+  };
+
+  componentDidMount = () => {
+    var element = document.getElementById('app-wrapper'),
+      style = window.getComputedStyle(element),
+      textColor = style.getPropertyValue('color');
+    console.log(`textColor`, textColor);
+    this.setState({ textColor });
   };
 
   componentWillReceiveProps = newProps => {
@@ -45,10 +61,23 @@ export default class BlogsPage extends React.Component {
       outerClassNameFinal.push(className);
     }
 
+    const theme = {
+      horizontalNavLinkColor: this.state.textColor,
+      horizontalNavLinkHoverColor: this.state.textColor,
+      horizontalNavLinkActiveColor: '#44aeff',
+      horizontalNavLinkSelectedColor: '#44aeff',
+      horizontalNavBarSelectedColor: '#44aeff',
+    };
+
     return (
       <div className={outerClassNameFinal.join(' ')} {...rest}>
         <Helmet title="Blog" />
-        <BlogsNavWR className="pages__component" selected={selectedNav} />
+        <BpkThemeProvider
+          theme={theme}
+          themeAttributes={[...hnThemeAttributes]}
+        >
+          <BlogsNavWR className="pages__component" selected={selectedNav} />
+        </BpkThemeProvider>
         <LoadingCover
           loadingSkeleton={BlogListSkeleton}
           loading={loading}
