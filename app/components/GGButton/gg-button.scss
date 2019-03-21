@@ -96,6 +96,11 @@
       transition: all 0.2s;
       background-color: transparent;
       background-image: none;
+      color: $not-black;
+
+      @media (prefers-color-scheme: dark) {
+        color: $not-black-invert;
+      }
 
       &:focus,
       &:active,
