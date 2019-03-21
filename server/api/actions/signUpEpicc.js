@@ -1,6 +1,6 @@
 import { datumLoad, datumCreate, datumUpdate } from '../actions/datum';
 import { find } from 'utils/find';
-import { EMAIL_TAKEN } from 'helpers/constants';
+import { EMAIL_TAKEN, TICKET_SALE_END } from 'helpers/constants';
 import { ticketCanBeReserved, reserveTicket } from 'helpers/ticketing';
 import reqSecure from 'utils/reqSecure';
 import usersAllowedAttributes from './users/usersAllowedAttributes';
@@ -26,7 +26,7 @@ export default function signUp(req) {
             reqSecured.body.ticketType,
             'ticketType',
           );
-          if (Date.now() > new Date(2019, 2, 20, 21, 0, 0).getTime()) {
+          if (Date.now() > TICKET_SALE_END) {
             resolve({ error: 'Ticket sales are now closed.' });
           } else if (!ticket) {
             resolve({ error: 'Ticket type is sold out.' });
