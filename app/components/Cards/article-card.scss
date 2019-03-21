@@ -83,7 +83,7 @@
 
   &__background {
     position: absolute;
-    z-index: 0;
+    z-index: -1;
     width: calc(100% + 2rem);
     height: calc(100% + 2rem);
     margin-top: -1rem;
