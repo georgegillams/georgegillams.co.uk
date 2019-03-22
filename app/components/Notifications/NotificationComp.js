@@ -39,7 +39,7 @@ class NotificationComp extends Component {
     }
 
     return (
-      <div className={notificationClassName.join(' ')}>
+      <div className={notificationClassName.join(' ')} {...rest}>
         <BlogPreviewContent
           elementClassName={elementClassName.join(' ')}
           content={`${children}${deleted ? ' (deleted)' : ''}`}
