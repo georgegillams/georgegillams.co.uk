@@ -10,6 +10,7 @@ import CodeInline from 'components/Code';
 
 import Skeleton from './Skeleton';
 import { getTimeDifference } from 'helpers/time';
+import { getJsonFromScannedData } from 'helpers/qrCodes';
 import { beautifyTicketType } from 'helpers/ticketing';
 import { DebugObject, LoadingCover, LoggedInOnly } from 'components/Auth';
 import QrReader from 'react-qr-reader';
@@ -46,18 +47,19 @@ export default class TicketScanner extends React.Component {
   constructor(props) {
     super(props);
 
-    this.state = { scanning: true };
+    this.state = { scanning: true, localError: null };
   }
 
   handleScan = data => {
     if (data) {
-      this.setState({ scanning: false });
-      this.props.registerUser(JSON.parse(data.split("'").join('"')));
+      this.setState({ scanning: false, localError: null });
+      this.props.registerUser(getJsonFromScannedData(data));
     }
   };
 
   handleError = err => {
     console.error(err);
+    this.setState({ scanning: false, localError: null });
   };
 
   render() {
@@ -81,11 +83,9 @@ export default class TicketScanner extends React.Component {
 
     const messageClassname = [];
     let displayType = 'error';
-    if (error) {
+    if (error || this.state.localError) {
       messageClassname.push('ticket-scanner__error');
-    }
-
-    if (this.state.scanning) {
+    } else if (this.state.scanning) {
       displayType = 'scanning';
     } else if (registering) {
       displayType = 'registering';
@@ -130,17 +130,23 @@ export default class TicketScanner extends React.Component {
             {displayType === 'perfect' && (
               <Section className={messageClassname.join(' ')} name="Registered">
                 Registration successful.
+                <br />
+                {registration && registration.name}
               </Section>
             )}
             {displayType === 'no-photo-release' && (
               <Section className={messageClassname.join(' ')} name="Registered">
                 Registration successful. Photo release is not complete. Issue a
                 Yellow lanyard.
+                <br />
+                {registration && registration.name}
               </Section>
             )}
             {displayType === 'error' && (
               <Section className={messageClassname.join(' ')} name="Error">
                 Ticket is not valid.
+                <br />
+                {registration && registration.name}
               </Section>
             )}
             {displayType === 'registering' && <SectionSkeleton />}

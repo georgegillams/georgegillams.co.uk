@@ -23,7 +23,7 @@ const getTicketDataItem = (u, attribute) => {
 
 const generateCsv = userData => {
   let csv =
-    'userId,forename,surname,email,returningDelegate,university,degree,yearOfStudy,dietaryRequirements,alergies,otherRequirements,photoReleaseConsented,ticketReservation,outstandingBalance,ticketValid, hasArrivedAtConference';
+    'userId,forename,surname,email,returningDelegate,university,degree,yearOfStudy,dietaryRequirements,alergies,otherRequirements,photoReleaseConsented,ticketReservation,outstandingBalance,ticketValid, hasArrivedAtConferenceDay1, hasArrivedAtConferenceDay2';
   userData.forEach(u => {
     const id = u.id;
     const forename = getAdditionalDataItem(u, 'name');
@@ -45,19 +45,29 @@ const generateCsv = userData => {
       ? '✓'
       : '✘';
     const outstandingBalance = getTicketDataItem(u, 'outstandingBalance');
-    const ticketValid = u.ticketReservation
-      ? ticketReservationIsValid(u.ticketReservation)
-      : 'false';
+    const ticketValid =
+      u.ticketReservation &&
+      ticketReservationIsValid(u.ticketReservation) &&
+      outstandingBalance <= 0;
     const ticketValidText = ticketValid ? '✓' : '';
     const reservedTicketType = ticketValid
       ? getTicketDataItem(u, 'ticketType')
-      : '';
-    const hasArrivedAtConference = getRegStatusItem(u, 'hasArrivedAtConference')
+      : '✘';
+    const hasArrivedAtConferenceDay1 = getRegStatusItem(
+      u,
+      'hasArrivedAtConferenceDay1',
+    )
       ? '✓'
-      : '';
+      : '✘';
+    const hasArrivedAtConferenceDay2 = getRegStatusItem(
+      u,
+      'hasArrivedAtConferenceDay2',
+    )
+      ? '✓'
+      : '✘';
 
     if (ticketValid) {
-      csv += `\n${id},${forename},${surname},${email},${returningDelegate},${university},${degreeCourse},${yearOfStudy},${dietaryRequirements},${alergies},${otherRequirements},${photoReleaseConsented},${reservedTicketType},${outstandingBalance},${ticketValidText},${hasArrivedAtConference}`;
+      csv += `\n${id},${forename},${surname},${email},${returningDelegate},${university},${degreeCourse},${yearOfStudy},${dietaryRequirements},${alergies},${otherRequirements},${photoReleaseConsented},${reservedTicketType},${outstandingBalance},${ticketValidText},${hasArrivedAtConferenceDay1},${hasArrivedAtConferenceDay2}`;
     }
   });
   return csv;

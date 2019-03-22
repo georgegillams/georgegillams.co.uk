@@ -1,5 +1,6 @@
 import { datumLoad } from '../datum';
 import { ticketCanBeReserved } from 'helpers/ticketing';
+import { TICKET_SALE_END } from 'helpers/constants';
 
 export default function loadRemaining(req) {
   return new Promise((resolve, reject) => {
@@ -32,7 +33,7 @@ export default function loadRemaining(req) {
           }
         }
       });
-      if (Date.now() > new Date(2019, 2, 20, 21, 0, 0).getTime()) {
+      if (Date.now() > TICKET_SALE_END) {
         ticketCounts.EB_ONE_DAY = 0;
         ticketCounts.EB_TWO_DAY = 0;
         ticketCounts.R_ONE_DAY = 0;

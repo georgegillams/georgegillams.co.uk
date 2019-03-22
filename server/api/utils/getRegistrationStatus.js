@@ -39,9 +39,13 @@ export default function getRegistrationStatus(user) {
                 let userDetails = 'NOT STARTED';
                 let photoRelease = 'NOT STARTED';
                 let validTicket = 'NOT STARTED';
-                let hasArrivedAtConference = false;
+                let hasArrivedAtConferenceDay1 = false;
+                let hasArrivedAtConferenceDay2 = false;
                 if (loadedRegistration) {
-                  hasArrivedAtConference = true;
+                  hasArrivedAtConferenceDay1 =
+                    loadedRegistration.hasArrivedAtConferenceDay1;
+                  hasArrivedAtConferenceDay2 =
+                    loadedRegistration.hasArrivedAtConferenceDay2;
                 }
 
                 if (loadedUserDetails) {
@@ -92,7 +96,8 @@ export default function getRegistrationStatus(user) {
                   photoRelease,
                   validTicket,
                   ticket,
-                  hasArrivedAtConference,
+                  hasArrivedAtConferenceDay1,
+                  hasArrivedAtConferenceDay2,
                 });
               });
             });
