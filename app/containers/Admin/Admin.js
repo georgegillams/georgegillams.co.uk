@@ -46,6 +46,15 @@ export default class Admin extends React.Component {
                 title="Users"
                 tallLayout
               />
+              <ArticleCard
+                layout={CARD_LAYOUTS.narrowCompact}
+                day={null}
+                month={null}
+                className={getClassName('pages__card')}
+                linkUrl="/admin/register"
+                title="Register"
+                tallLayout
+              />
             </div>
           </Section>
         </AdminOnly>

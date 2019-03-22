@@ -4,6 +4,7 @@ import { Helmet } from 'react-helmet';
 import LoadingIndicator from 'components/LoadingIndicator';
 import GGButton from 'components/GGButton';
 import { Section, SubSection, TextLink } from 'components/Typography';
+import { NotificationComp } from 'components/Notifications';
 import CodeInline from 'components/Code';
 import { SignUpForm } from 'components/Forms';
 import { CookiesOnly } from 'components/Sessions';
@@ -66,7 +67,18 @@ export default class SignUp extends React.Component {
       <div className={outerClassNameFinal.join(' ')} {...rest}>
         <LoggedOutOnly user={user}>
           <Section name="Sign up">
-            {!ticketSelectionConfirmed && (
+            {true && (
+              <NotificationComp
+                style={{
+                  width: '100vw',
+                  marginLeft: 'calc(-50vw + 50%)',
+                }}
+                type="error"
+              >
+                {'**Ticket reservations are now closed.**'}
+              </NotificationComp>
+            )}
+            {false && !ticketSelectionConfirmed && (
               <Fragment>
                 <TicketOptions
                   selectedTicketType={selectedTicketType}
@@ -83,7 +95,7 @@ export default class SignUp extends React.Component {
                 <br />
               </Fragment>
             )}
-            {ticketSelectionConfirmed && (
+            {false && ticketSelectionConfirmed && (
               <SignUpForm
                 submitLabel="Continue"
                 disabled={signingUp || !selectedTicketType}
