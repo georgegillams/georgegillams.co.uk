@@ -67,18 +67,7 @@ export default class SignUp extends React.Component {
       <div className={outerClassNameFinal.join(' ')} {...rest}>
         <LoggedOutOnly user={user}>
           <Section name="Sign up">
-            {true && (
-              <NotificationComp
-                style={{
-                  width: '100vw',
-                  marginLeft: 'calc(-50vw + 50%)',
-                }}
-                type="error"
-              >
-                {'**Ticket reservations are now closed.**'}
-              </NotificationComp>
-            )}
-            {false && !ticketSelectionConfirmed && (
+            {!ticketSelectionConfirmed && (
               <Fragment>
                 <TicketOptions
                   selectedTicketType={selectedTicketType}
@@ -95,7 +84,7 @@ export default class SignUp extends React.Component {
                 <br />
               </Fragment>
             )}
-            {false && ticketSelectionConfirmed && (
+            {ticketSelectionConfirmed && (
               <SignUpForm
                 submitLabel="Continue"
                 disabled={signingUp || !selectedTicketType}

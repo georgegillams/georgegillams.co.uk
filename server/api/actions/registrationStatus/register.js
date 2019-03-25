@@ -57,13 +57,15 @@ export default function register(req) {
                           Date.now() > CONFERENCE_DAY_1_START &&
                           Date.now() < CONFERENCE_DAY_1_END
                         ) {
-                          hasArrivedAtConferenceDay1 = true;
+                          hasArrivedAtConferenceDay1 = !reqSecured.body
+                            .unregister;
                         }
                         if (
                           Date.now() > CONFERENCE_DAY_2_START &&
                           Date.now() < CONFERENCE_DAY_2_END
                         ) {
-                          hasArrivedAtConferenceDay2 = true;
+                          hasArrivedAtConferenceDay2 = !reqSecured.body
+                            .unregister;
                         }
 
                         if (loadedRegistration) {
