@@ -13,7 +13,7 @@ const monzoLoadSuccessMessage = {
 
 export function* doLoadMonzo() {
   const password = yield select(makeSelectPassword());
-  const requestURL = `${API_ENDPOINT}/monzoPots`;
+  const requestURL = `${API_ENDPOINT}/monzo/loadPots`;
 
   try {
     const monzoResult = yield call(request, requestURL, {

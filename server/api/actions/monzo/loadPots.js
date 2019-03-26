@@ -19,7 +19,7 @@ function getMonthsElapsedPercentage() {
   return Math.min(100, ((result + 1) * 100) / 12);
 }
 
-function monzoPots(req) {
+function loadPots(req) {
   return new Promise((resolve, reject) => {
     const accessPassword = process.env.MONZO_ACCESS_PASSWORD;
     const accessToken = process.env.MONZO_ACCESS_TOKEN;
@@ -76,4 +76,4 @@ function monzoPots(req) {
   });
 }
 
-export default monzoPots;
+export default loadPots;
