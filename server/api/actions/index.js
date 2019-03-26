@@ -8,7 +8,6 @@ export signUpEpicc from './signUpEpicc';
 export loginmagiclink from './loginmagiclink';
 export verifyemail from './verifyemail';
 export ghOrgData from './ghOrgData';
-export monzoPots from './monzoPots';
 export logout from './logout';
 export logoutall from './logoutall';
 export deleteEntity from './deleteEntity';
@@ -16,6 +15,7 @@ export deleteSet from './deleteSet';
 export requestVerificationEmail from './requestVerificationEmail';
 
 // Expose non-default exports
+export * as monzo from './monzo';
 export * as magiclinks from './magiclinks/index';
 export * as stripePayments from './stripePayments/index';
 export * as registrationStatus from './registrationStatus/index';
