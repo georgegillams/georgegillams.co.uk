@@ -16,8 +16,6 @@ const getClassName = c => c;
 export default class BlogsPage extends React.Component {
   constructor(props) {
     super(props);
-
-    this.state = { textColor: '#1e1e1e' };
   }
 
   filteredBlogs = null;
@@ -26,12 +24,10 @@ export default class BlogsPage extends React.Component {
     this.props.loadBlogs();
   };
 
-  componentDidMount = () => {
-    var element = document.getElementById('app-wrapper'),
-      style = window.getComputedStyle(element),
-      textColor = style.getPropertyValue('color');
-    console.log(`textColor`, textColor);
-    this.setState({ textColor });
+  getTextColor = () => {
+    const element = document.getElementById('app-wrapper');
+    const style = window.getComputedStyle(element);
+    return style.getPropertyValue('color');
   };
 
   componentWillReceiveProps = newProps => {
@@ -61,9 +57,11 @@ export default class BlogsPage extends React.Component {
       outerClassNameFinal.push(className);
     }
 
+    const textColor = this.getTextColor();
+
     const theme = {
-      horizontalNavLinkColor: this.state.textColor,
-      horizontalNavLinkHoverColor: this.state.textColor,
+      horizontalNavLinkColor: textColor,
+      horizontalNavLinkHoverColor: textColor,
       horizontalNavLinkActiveColor: '#44aeff',
       horizontalNavLinkSelectedColor: '#44aeff',
       horizontalNavBarSelectedColor: '#44aeff',
