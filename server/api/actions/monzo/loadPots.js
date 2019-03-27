@@ -1,3 +1,4 @@
+import { datumLoad, datumLoadSingle, datumCreate } from '../../actions/datum';
 import fetch from 'node-fetch';
 import moment from 'moment';
 
@@ -20,59 +21,64 @@ function getMonthsElapsedPercentage() {
 }
 
 function loadPots(req) {
-  return new Promise((resolve, reject) => {
-    const accessPassword = process.env.MONZO_ACCESS_PASSWORD;
-    const accessToken = process.env.MONZO_ACCESS_TOKEN;
+  return new Promise(resolve => {
+    datumLoadSingle({
+      redisKey: 'monzoApiKeys',
+      resolveIfNotFound: true,
+      sortKey: 'lastUpdatedTimestamp',
+    }).then(accessToken => {
+      const accessPassword = process.env.MONZO_ACCESS_PASSWORD;
 
-    if (!accessToken) {
-      reject('No access token configured');
-      return;
-    }
+      if (!accessToken) {
+        resolve({ error: 'No access token configured' });
+        return;
+      }
 
-    if (!req.body.password || req.body.password !== accessPassword) {
-      resolve({ warning: 'Access password incorrect' });
-      return;
-    }
+      if (!req.body.password || req.body.password !== accessPassword) {
+        resolve({ warning: 'Access password incorrect' });
+        return;
+      }
 
-    fetch('https://api.monzo.com/pots', {
-      method: 'get',
-      headers: {
-        Authorization: `Bearer ${accessToken}`,
-      },
-    })
-      .then(res => res.json())
-      .then(data => {
-        if (!data || !data.pots) {
-          resolve({
-            error:
-              'The Monzo token has expired. Tell George to generate a new one.',
+      fetch('https://api.monzo.com/pots', {
+        method: 'get',
+        headers: {
+          Authorization: `Bearer ${accessToken.key}`,
+        },
+      })
+        .then(res => res.json())
+        .then(data => {
+          if (!data || !data.pots) {
+            resolve({
+              error:
+                'The Monzo token has expired. Tell George to generate a new one.',
+            });
+            return;
+          }
+
+          let reducedData = data.pots.filter(
+            pot => !pot.deleted && POTS_REVEAL.includes(pot.name),
+          );
+          reducedData = reducedData.map(pot => {
+            const goalAmount = parseFloat(pot.goal_amount) / 100;
+            const balance = parseFloat(pot.balance) / 100;
+            const monthsElapsedPercentage = getMonthsElapsedPercentage();
+            const expectedSavingsSoFar =
+              (goalAmount * monthsElapsedPercentage) / 100;
+            const shortfall = expectedSavingsSoFar - balance;
+            return {
+              name: pot.name,
+              balance,
+              goalAmount: parseFloat(pot.goal_amount) / 100,
+              percentageTimeElapsed: monthsElapsedPercentage,
+              shortfall: shortfall < 5 ? null : shortfall,
+              percentageComplete: pot.goal_amount
+                ? Math.ceil((100 * pot.balance) / pot.goal_amount)
+                : 100,
+            };
           });
-          return;
-        }
-
-        let reducedData = data.pots.filter(
-          pot => !pot.deleted && POTS_REVEAL.includes(pot.name),
-        );
-        reducedData = reducedData.map(pot => {
-          const goalAmount = parseFloat(pot.goal_amount) / 100;
-          const balance = parseFloat(pot.balance) / 100;
-          const monthsElapsedPercentage = getMonthsElapsedPercentage();
-          const expectedSavingsSoFar =
-            (goalAmount * monthsElapsedPercentage) / 100;
-          const shortfall = expectedSavingsSoFar - balance;
-          return {
-            name: pot.name,
-            balance,
-            goalAmount: parseFloat(pot.goal_amount) / 100,
-            percentageTimeElapsed: monthsElapsedPercentage,
-            shortfall: shortfall < 5 ? null : shortfall,
-            percentageComplete: pot.goal_amount
-              ? Math.ceil((100 * pot.balance) / pot.goal_amount)
-              : 100,
-          };
+          resolve(reducedData);
         });
-        resolve(reducedData);
-      });
+    });
   });
 }
 
