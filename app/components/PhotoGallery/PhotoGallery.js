@@ -19,11 +19,7 @@ const PhotoGallery = props => {
   if (className) classNameFinal.push(className);
 
   return (
-    <div
-      className={classNameFinal.join(' ')}
-      style={{ height: '30vw' }}
-      {...rest}
-    >
+    <div className={classNameFinal.join(' ')} {...rest}>
       <FadingLazyLoadedImage
         className="photo-gallery__image0"
         altText="Netflix download speeds on a number of American ISPs"

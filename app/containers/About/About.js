@@ -47,17 +47,15 @@ export default class Contact extends Component {
         with her and Tigger the cat.
         <br />
         <br />
-        <div className={getClassName('pages__photo-gallery-container')}>
-          <PhotoGallery
-            className={getClassName('pages__photo-gallery')}
-            images={[
-              'https://i.imgur.com/EPfA1yI.png', // engaged
-              'https://i.imgur.com/eldzRhk.jpg', // us
-              'https://i.imgur.com/n8JZuqv.jpg', // tiggs
-              'https://i.imgur.com/mvvDmiL.jpg', // tm
-            ]}
-          />
-        </div>
+        <PhotoGallery
+          className={getClassName('pages__photo-gallery')}
+          images={[
+            'https://i.imgur.com/EPfA1yI.png', // engaged
+            'https://i.imgur.com/eldzRhk.jpg', // us
+            'https://i.imgur.com/n8JZuqv.jpg', // tiggs
+            'https://i.imgur.com/mvvDmiL.jpg', // tm
+          ]}
+        />
         <br />
         <br />
         This site is built in React and hosted on Heroku where I have a Redis
