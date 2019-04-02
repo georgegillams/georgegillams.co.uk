@@ -58,19 +58,12 @@
   }
 
   &__photo-gallery {
-    width: 70vw;
-    max-width: 70rem;
-    height: 35vw;
+    width: 100%;
     overflow: hidden;
     box-sizing: border-box;
-
-    @include bpk-breakpoint-tablet {
-      width: 90vw;
-      // width: auto;
-    }
   }
 
-  &__photo-gallery-container {
+  &__full-width-container {
     display: flex;
     width: 100vw;
     margin-left: calc(-50vw + 50%);
