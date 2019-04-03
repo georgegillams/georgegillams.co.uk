@@ -92,11 +92,14 @@ class FormBuilder extends React.Component {
             </Fragment>
           ) : (
             <Fragment>
-              <label htmlFor={formField.id} className="forms__label">
+              <label
+                htmlFor={formField.id}
+                className="forms__component forms__component__label"
+              >
                 {formField.name}
               </label>
               <BpkInput
-                className="forms__component"
+                className="forms__component forms__component__text-box"
                 id={formField.id}
                 name={formField.name}
                 value={entity[formField.id]}
@@ -116,7 +119,7 @@ class FormBuilder extends React.Component {
           </Fragment>
         )}
         <GGButton
-          className="forms__component"
+          className="forms__component forms__component__button"
           large
           onClick={onSubmit}
           disabled={disabled || !validity.every(v => v)}
