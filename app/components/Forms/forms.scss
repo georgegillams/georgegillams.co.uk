@@ -4,16 +4,16 @@
 .forms {
   &__component {
     margin-bottom: 1rem !important;
-    color: $not-black;
-
-    @media (prefers-color-scheme: dark) {
-      color: $not-black-invert;
-      background-color: $not-black;
-    }
 
     &__text-box {
-      max-width: 45rem;
+      width: 100%;
       box-sizing: border-box;
+      color: $not-black;
+
+      @media (prefers-color-scheme: dark) {
+        color: $not-black-invert;
+        background-color: $not-black;
+      }
     }
 
     &__button {
@@ -25,18 +25,18 @@
       margin-left: 1rem;
       margin-right: 1rem;
     }
-  }
 
-  &__label {
-    margin: 0 0 0 0.1rem;
-    font-weight: bold;
-    font-style: italic;
-    font-size: 0.8rem;
-    font-family: 'Quattrocento Sans', sans-serif;
-    color: $not-black;
+    &__label {
+      margin: 0 0 0 0.1rem;
+      font-weight: bold;
+      font-style: italic;
+      font-size: 0.8rem;
+      font-family: 'Quattrocento Sans', sans-serif;
+      color: $not-black;
 
-    @media (prefers-color-scheme: dark) {
-      color: $not-black-invert;
+      @media (prefers-color-scheme: dark) {
+        color: $not-black-invert;
+      }
     }
   }
 
