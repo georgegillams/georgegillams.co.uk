@@ -1,3 +1,6 @@
+@import '~bpk-mixins';
+@import 'helpers/tokens';
+
 html,
 body {
   height: 100%;
@@ -5,13 +8,21 @@ body {
 }
 
 body {
-  font-family: "Quattrocento Sans", sans-serif;
-  src: url("https://fonts.googleapis.com/css?family=Quattrocento+Sans");
+  font-family: 'Quattrocento Sans', sans-serif;
+  src: url('https://fonts.googleapis.com/css?family=Quattrocento+Sans');
+
+  color: $not-black;
+  background-color: $background-color;
+
+  @media (prefers-color-scheme: dark) {
+    color: $not-black-invert;
+    background-color: $background-color-invert;
+  }
 }
 
 body.fontLoaded {
-  font-family: "Quattrocento Sans", sans-serif;
-  src: url("https://fonts.googleapis.com/css?family=Quattrocento+Sans");
+  font-family: 'Quattrocento Sans', sans-serif;
+  src: url('https://fonts.googleapis.com/css?family=Quattrocento+Sans');
 }
 
 #app {

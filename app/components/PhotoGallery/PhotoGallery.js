@@ -5,7 +5,7 @@ import BpkImage, {
   withLoadingBehavior,
 } from 'bpk-component-image';
 
-import './photo-gallery.scss';
+import STYLES from './photo-gallery.scss'; import {cssModules} from 'bpk-react-utils';  const getClassName = cssModules(STYLES); // REGEX_REPLACED
 
 const documentIfExists = typeof window !== 'undefined' ? document : null;
 const FadingLazyLoadedImage = withLoadingBehavior(
@@ -15,34 +15,34 @@ const FadingLazyLoadedImage = withLoadingBehavior(
 const PhotoGallery = props => {
   const { images, className, ...rest } = props;
 
-  const classNameFinal = ['photo-gallery__container'];
+  const classNameFinal = [getClassName('photo-gallery__container')];
   if (className) classNameFinal.push(className);
 
   return (
     <div className={classNameFinal.join(' ')} {...rest}>
       <FadingLazyLoadedImage
-        className="photo-gallery__image0"
+        className={getClassName("photo-gallery__image0")}
         altText="Netflix download speeds on a number of American ISPs"
         width={970}
         height={575}
         src={images[0]}
       />
       <FadingLazyLoadedImage
-        className="photo-gallery__image1"
+        className={getClassName("photo-gallery__image1")}
         altText="Netflix download speeds on a number of American ISPs"
         width={970}
         height={800}
         src={images[1]}
       />
       <FadingLazyLoadedImage
-        className="photo-gallery__image2"
+        className={getClassName("photo-gallery__image2")}
         altText="Netflix download speeds on a number of American ISPs"
         width={970}
         height={575}
         src={images[2]}
       />
       <FadingLazyLoadedImage
-        className="photo-gallery__image3"
+        className={getClassName("photo-gallery__image3")}
         altText="Netflix download speeds on a number of American ISPs"
         width={970}
         height={575}

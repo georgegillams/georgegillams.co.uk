@@ -7,22 +7,13 @@ export default function loadSingle(req) {
   return new Promise((resolve, reject) => {
     authentication(reqSecured).then(
       user => {
-        if (user && user.admin) {
-          resolve(
-            datumLoadSingle({
-              redisKey: 'blogs',
-              includeDeleted: true,
-              filter: ar => ar.id === reqSecured.query.id,
-            }),
-          );
-        } else {
-          resolve(
-            datumLoadSingle({
-              redisKey: 'blogs',
-              filter: ar => ar.published && ar.id === reqSecured.query.id,
-            }),
-          );
-        }
+        resolve(
+          datumLoadSingle({
+            redisKey: 'blogs',
+            includeDeleted: user && user.admin,
+            filter: ar => ar.id === reqSecured.query.id,
+          }),
+        );
       },
       err => reject(err),
     );

@@ -1,11 +1,12 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import GGButton  from 'components/GGButton';
+import GGButton from 'components/GGButton';
+import STYLES from 'containers/pages.scss'; import {cssModules} from 'bpk-react-utils'; const getClassName = cssModules(STYLES);
 
 const NavigationItem = props => {
   const { name, linkUrl, className, ...rest } = props;
 
-  const outerClassNameFinal = ['navigation-bar__nav-item'];
+  const outerClassNameFinal = [getClassName('navigation-bar__nav-item')];
   if (className) {
     outerClassNameFinal.push(className);
   }

@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 
-import './tag.scss';
+import STYLES from './tag.scss'; import {cssModules} from 'bpk-react-utils';  const getClassName = cssModules(STYLES); // REGEX_REPLACED
 
 export const TAG_TYPES = {
   tech: 'tech',
@@ -46,22 +46,22 @@ class Tag extends Component {
       ...rest
     } = this.props;
 
-    const outerClassNameFinal = ['tag__outer'];
+    const outerClassNameFinal = [getClassName('tag__outer')];
     if (className) {
       outerClassNameFinal.push(className);
     }
 
-    const tagClassName = ['tag'];
+    const tagClassName = [getClassName('tag')];
     if (type) {
       tagClassName.push(tagTypeClassNames[type]);
     }
 
     if (this.state.hovering && (link || onClick)) {
-      tagClassName.push('tag--hovered');
+      tagClassName.push(getClassName('tag--hovered'));
     }
 
     if (disabled) {
-      outerClassNameFinal.push('tag--disabled');
+      outerClassNameFinal.push(getClassName('tag--disabled'));
     }
 
     const tagComponent = (

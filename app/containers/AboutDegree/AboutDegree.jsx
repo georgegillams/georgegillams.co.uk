@@ -7,7 +7,7 @@ import BpkImage, {
 import { Section, SubSection, TextLink } from 'components/Typography';
 import DegreeModule from 'components/Degree';
 
-import STYLES from '../pages.scss';
+import STYLES from '../pages.scss'; import {cssModules} from 'bpk-react-utils';  const getClassName = cssModules(STYLES); // REGEX_REPLACED
 import Comments from 'containers/Comments';
 
 const documentIfExists = typeof window !== 'undefined' ? document : null;
@@ -17,7 +17,7 @@ const FadingLazyLoadedImage = withLoadingBehavior(
 
 const FINAL_DEGREE_PERCENTAGE = 68;
 
-const getClassName = c => c;
+
 
 const PAGE_ID = 'work-degree';
 

@@ -17,7 +17,7 @@ import CodeInline, { Code, CodeBashArrow } from 'components/Code';
 import { TextLink, Quote, SubSection } from 'components/Typography';
 import HelperFunctions from 'helpers/HelperFunctions';
 
-import './blog-viewer.scss';
+import STYLES from './blog-viewer.scss'; import {cssModules} from 'bpk-react-utils';  const getClassName = cssModules(STYLES); // REGEX_REPLACED
 
 const documentIfExists = typeof window !== 'undefined' ? document : null;
 const FadingLazyLoadedImage = withLoadingBehavior(
@@ -100,7 +100,7 @@ class BlogPreviewContent extends Component {
       classNameFinal.push(className);
     }
 
-    const elementClassNameFinal = ['blog-viewer__element'];
+    const elementClassNameFinal = [getClassName('blog-viewer__element')];
     if (elementClassName) {
       elementClassNameFinal.push(elementClassName);
     }
@@ -198,7 +198,7 @@ class BlogPreviewContent extends Component {
       return (
         <span className={classNameFinal.join(' ')} {...rest}>
           <RecursiveWrapper {...this.props} content={preImageText} />
-          <img className="pages__image" alt={imageAltText} src={imageSrc} />
+          <img className={getClassName("pages__image")} alt={imageAltText} src={imageSrc} />
           <RecursiveWrapper {...this.props} content={postImageText} />
         </span>
       );
@@ -220,7 +220,7 @@ class BlogPreviewContent extends Component {
         <span className={classNameFinal.join(' ')} {...rest}>
           <RecursiveWrapper {...this.props} content={preImageText} />
           <FadingLazyLoadedImage
-            className="pages__image"
+            className={getClassName("pages__image")}
             altText={imageAltText}
             width={aspectX}
             height={aspectY}
@@ -245,7 +245,7 @@ class BlogPreviewContent extends Component {
         <span className={classNameFinal.join(' ')} {...rest}>
           <RecursiveWrapper {...this.props} content={preLinkText} />
           <YoutubeEmbedVideo
-            className="pages__image"
+            className={getClassName("pages__image")}
             style={{ maxWidth: '100%', height: '45vw', maxHeight: '23rem' }}
             videoId={videoId}
             suggestions={showSuggestions}
@@ -271,7 +271,7 @@ class BlogPreviewContent extends Component {
         <span className={classNameFinal.join(' ')} {...rest}>
           <RecursiveWrapper {...this.props} content={preLinkText} />
           <a
-            className="pages__link"
+            className={getClassName("pages__link")}
             href={linkRef}
             rel={external ? 'noopener noreferrer' : ''}
             target={external ? '_blank' : ''}

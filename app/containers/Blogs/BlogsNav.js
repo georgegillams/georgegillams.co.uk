@@ -7,10 +7,10 @@ import BpkHorizontalNav, {
 import { LoadingCover } from 'components/Auth';
 import BlogsList from 'components/Blogs';
 import BlogListSkeleton from './BlogListSkeleton';
-import 'containers/pages.scss';
-import './blogs-page.scss';
-
-const getClassName = c => c;
+import PAGE_STYLES from 'containers/pages.scss';
+import STYLES from './blogs-page.scss';
+import { cssModules } from 'bpk-react-utils';
+const getClassName = cssModules({ ...PAGE_STYLES, ...STYLES }); // REGEX_REPLACED
 
 export default class BlogsNav extends React.Component {
   render() {
@@ -22,7 +22,7 @@ export default class BlogsNav extends React.Component {
       history,
       ...rest
     } = this.props;
-    const outerClassNameFinal = ['blogs-page__navigation'];
+    const outerClassNameFinal = [getClassName('blogs-page__navigation')];
 
     if (className) {
       outerClassNameFinal.push(className);

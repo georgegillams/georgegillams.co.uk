@@ -24,9 +24,9 @@ import BpkImage, {
   withLoadingBehavior,
 } from 'bpk-component-image';
 
-import 'containers/pages.scss';
+import STYLES from 'containers/pages.scss'; import {cssModules} from 'bpk-react-utils';  const getClassName = cssModules(STYLES); // REGEX_REPLACED
 
-const getClassName = c => c;
+
 
 export default class SignUp extends React.Component {
   render() {

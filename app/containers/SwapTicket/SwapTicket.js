@@ -22,9 +22,9 @@ import {
   DECIMAL_REGEX,
 } from 'helpers/constants';
 
-import 'containers/pages.scss';
+import STYLES from 'containers/pages.scss'; import {cssModules} from 'bpk-react-utils';  const getClassName = cssModules(STYLES); // REGEX_REPLACED
 
-const getClassName = c => c;
+
 
 export default class SwapTickets extends React.Component {
   render() {

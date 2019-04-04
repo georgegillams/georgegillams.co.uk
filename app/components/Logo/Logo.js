@@ -3,7 +3,9 @@ import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 import BpkText from 'bpk-component-text';
 
-import './logo.scss';
+import STYLES from './logo.scss';
+import { cssModules } from 'bpk-react-utils';
+const getClassName = cssModules(STYLES); // REGEX_REPLACED
 
 const Logo = props => {
   const {
@@ -15,30 +17,30 @@ const Logo = props => {
     light,
     ...rest
   } = props;
-  const classNameFinal = ['logo__container'];
+  const classNameFinal = [getClassName('logo__container')];
   if (className) {
     classNameFinal.push(className);
   }
   if (alwaysCentered) {
-    classNameFinal.push('logo__container--centered');
+    classNameFinal.push(getClassName('logo__container--centered'));
   }
   if (animated) {
-    classNameFinal.push('logo__container--animated');
+    classNameFinal.push(getClassName('logo__container--animated'));
   }
 
-  const baseTextClassNameFinal = ['logo__logo-base'];
+  const baseTextClassNameFinal = [getClassName('logo__logo-base')];
   if (light) {
-    baseTextClassNameFinal.push('logo__logo-base--light');
+    baseTextClassNameFinal.push(getClassName('logo__logo-base--light'));
   }
 
-  const largeTextClassNameFinal = ['logo__logo-large'];
+  const largeTextClassNameFinal = [getClassName('logo__logo-large')];
   if (small) {
-    largeTextClassNameFinal.push('logo__logo-large--smaller');
+    largeTextClassNameFinal.push(getClassName('logo__logo-large--smaller'));
   }
   if (noPadding) {
-    classNameFinal.push('logo__container--no-padding');
-    largeTextClassNameFinal.push('logo__logo-large--no-padding');
-    baseTextClassNameFinal.push('logo__logo-base--no-padding');
+    classNameFinal.push(getClassName('logo__container--no-padding'));
+    largeTextClassNameFinal.push(getClassName('logo__logo-large--no-padding'));
+    baseTextClassNameFinal.push(getClassName('logo__logo-base--no-padding'));
   }
 
   return (

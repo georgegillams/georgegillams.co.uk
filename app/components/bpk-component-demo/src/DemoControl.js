@@ -26,7 +26,7 @@ import DemoNumberComponent from './DemoNumberComponent';
 import DemoFunctionComponent from './DemoFunctionComponent';
 import HelperFunctions from 'helpers/HelperFunctions';
 
-import './bpk-demo.scss';
+import STYLES from './bpk-demo.scss'; import {cssModules} from 'bpk-react-utils';  const getClassName = cssModules(STYLES); // REGEX_REPLACED
 
 // This was originally depended upon from the bpk-react-utils package, however
 // we decided to inline it in this particular component so as not to bloat the

@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 
-import './tag-complex.scss';
+import STYLES from './tag-complex.scss'; import {cssModules} from 'bpk-react-utils';  const getClassName = cssModules(STYLES); // REGEX_REPLACED
 
 export const TAG_TYPES = {
   tech: 'tech',
@@ -54,32 +54,32 @@ class Tag extends Component {
       ...rest
     } = this.props;
 
-    const outerClassNameFinal = ['tag__outer'];
+    const outerClassNameFinal = [getClassName('tag__outer')];
     if (className) {
       outerClassNameFinal.push(className);
     }
 
-    const tagClassName = ['tag__inner-tag'];
-    const angleClassName = ['tag__inner-triangle'];
+    const tagClassName = [getClassName('tag__inner-tag')];
+    const angleClassName = [getClassName('tag__inner-triangle')];
     if (type) {
       tagClassName.push(tagTypeInnerClassNames[type]);
       angleClassName.push(tagTypeAngleClassNames[type]);
     }
 
     if (this.state.hovering && (link || onClick)) {
-      tagClassName.push('tag__inner-tag--hovered');
-      angleClassName.push('tag__inner-triangle--hovered');
+      tagClassName.push(getClassName('tag__inner-tag--hovered'));
+      angleClassName.push(getClassName('tag__inner-triangle--hovered'));
     }
 
     if (disabled) {
-      outerClassNameFinal.push('tag__inner-tag--disabled');
+      outerClassNameFinal.push(getClassName('tag__inner-tag--disabled'));
     }
 
     const tagComponent = (
-      <span className="tag__inner">
+      <span className={getClassName("tag__inner")}>
         <span className={angleClassName.join(' ')} />
         <span className={tagClassName.join(' ')}>{`${tagText[type]}`}</span>
-        <span className="tag__inner-hole" />
+        <span className={getClassName("tag__inner-hole")} />
       </span>
     );
 

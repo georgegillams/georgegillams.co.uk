@@ -15,7 +15,7 @@ import {
 } from 'helpers/constants';
 import FormBuilder from './FormBuilder';
 
-import './forms.scss';
+import STYLES from './forms.scss'; import {cssModules} from 'bpk-react-utils';  const getClassName = cssModules(STYLES); // REGEX_REPLACED
 
 class Login extends React.Component {
   static propTypes = {

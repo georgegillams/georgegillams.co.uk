@@ -5,9 +5,9 @@ import { SubSection, TextLink } from 'components/Typography';
 import LoadingIndicator from 'components/LoadingIndicator';
 import { NON_EMOJI_REGEX } from 'helpers/constants';
 import redirects from 'helpers/redirects';
-import 'containers/pages.scss';
+import STYLES from 'containers/pages.scss'; import {cssModules} from 'bpk-react-utils';  const getClassName = cssModules(STYLES); // REGEX_REPLACED
 
-const getClassName = c => c;
+
 
 export default class SiteMap extends React.Component {
   componentWillMount = () => {

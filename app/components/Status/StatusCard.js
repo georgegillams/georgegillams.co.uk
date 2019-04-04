@@ -3,27 +3,27 @@ import PropTypes from 'prop-types';
 import Status from './Status';
 import ArticleCard, { CARD_LAYOUTS } from 'components/Cards';
 
-import './status-card.scss';
+import STYLES from './status-card.scss'; import {cssModules} from 'bpk-react-utils';  const getClassName = cssModules(STYLES); // REGEX_REPLACED
 
 const StatusCard = props => {
   const { data, overallStatus, className, ...rest } = props;
 
-  const classNameFinal = ['status-card__container'];
+  const classNameFinal = [getClassName('status-card__container')];
   if (className) classNameFinal.push(className);
 
   return (
     <div className={classNameFinal.join(' ')} {...rest}>
       <ArticleCard
         layout={CARD_LAYOUTS.narrowCompact}
-        className="status-card__card"
+        className={getClassName("status-card__card")}
       >
-        <div className="status-card__content-items">
+        <div className={getClassName("status-card__content-items")}>
           {data &&
             data.map(dataItem => (
-              <div className="status-card__content-item">
+              <div className={getClassName("status-card__content-item")}>
                 <Status
                   type={dataItem.status}
-                  className="status-card__content-item-status"
+                  className={getClassName("status-card__content-item-status")}
                 />
                 {dataItem.item}
                 <br />
@@ -36,7 +36,7 @@ const StatusCard = props => {
         shadow
         type={overallStatus}
         large
-        className="status-card__status"
+        className={getClassName("status-card__status")}
       />
     </div>
   );

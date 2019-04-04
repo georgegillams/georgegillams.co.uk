@@ -2,8 +2,10 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { QRCode } from 'react-qr-svg';
 
-import './ticket.scss';
-import 'containers/pages.scss';
+import PAGE_STYLES from 'containers/pages.scss';
+import STYLES from './ticket.scss';
+import { cssModules } from 'bpk-react-utils';
+const getClassName = cssModules({ ...PAGE_STYLES, ...STYLES }); // REGEX_REPLACED
 
 class Ticket extends Component {
   constructor(props) {
@@ -13,7 +15,7 @@ class Ticket extends Component {
   render() {
     const { className, email, ticket, ...rest } = this.props;
 
-    const outerClassNameFinal = ['ticket__outer'];
+    const outerClassNameFinal = [getClassName('ticket__outer')];
     if (className) {
       outerClassNameFinal.push(className);
     }
@@ -29,7 +31,7 @@ class Ticket extends Component {
         <br />
         <br />
         <QRCode
-          className="ticket__qr"
+          className={getClassName("ticket__qr")}
           bgColor="#FFFFFF"
           fgColor="#1e1e1e"
           level="Q"

@@ -27,13 +27,13 @@ import BpkProgressBar, {
   themeAttributes as progressThemeAttributes,
 } from 'bpk-component-progress';
 
-import 'containers/pages.scss';
+import STYLES from 'containers/pages.scss'; import {cssModules} from 'bpk-react-utils';  const getClassName = cssModules(STYLES); // REGEX_REPLACED
 
 const MIN_PAGE_NUMBER = 1;
 const MAX_PAGE_NUMBER = 5;
 const PAYMENT_PAGE_NUMBER = MAX_PAGE_NUMBER;
 
-const getClassName = c => c;
+
 
 export default class SignUpContinue extends React.Component {
   constructor(props) {
@@ -142,7 +142,7 @@ export default class SignUpContinue extends React.Component {
               themeAttributes={[...progressThemeAttributes]}
             >
               <BpkProgressBar
-                className="pages__component"
+                className={getClassName("pages__component")}
                 small
                 min={MIN_PAGE_NUMBER}
                 max={MAX_PAGE_NUMBER + 1}
