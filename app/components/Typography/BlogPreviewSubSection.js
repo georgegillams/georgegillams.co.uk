@@ -2,6 +2,10 @@ import PropTypes from 'prop-types';
 import React from 'react';
 import SubSection from './SubSection';
 import BlogPreviewContent from './BlogPreviewContent';
+import STYLES from 'containers/pages.scss';
+import { cssModules } from 'bpk-react-utils';
+
+const getClassName = cssModules(STYLES);
 
 const BlogPreviewSubSection = props => {
   const {
@@ -18,7 +22,7 @@ const BlogPreviewSubSection = props => {
   if (className) {
     classNameFinal.push(className);
   }
-  const elementClassNameFinal = ['pages__card'];
+  const elementClassNameFinal = [getClassName('pages__card')];
   if (elementClassName) {
     elementClassNameFinal.push(elementClassName);
   }

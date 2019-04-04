@@ -20,9 +20,9 @@ import { CookiesOnly } from 'components/Sessions';
 import generateCsv from './generateCsv';
 import { downloadStringAsCsv } from 'helpers/clientOperations';
 
-import 'containers/pages.scss';
+import STYLES from 'containers/pages.scss'; import {cssModules} from 'bpk-react-utils';  const getClassName = cssModules(STYLES); // REGEX_REPLACED
 
-const getClassName = c => c;
+
 
 const downloadData = data => {
   const csv = generateCsv(data);

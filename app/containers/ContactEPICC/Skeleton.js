@@ -4,6 +4,10 @@ import {
   SectionSkeleton,
   CompactCardSkeleton,
 } from 'components/Skeletons';
+import STYLES from 'containers/pages.scss';
+import { cssModules } from 'bpk-react-utils';
+
+const getClassName = cssModules(STYLES);
 
 const AccountSkeleton = props => {
   const { className, ...rest } = props; // eslint-disable-line no-shadow

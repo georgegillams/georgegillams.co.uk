@@ -8,10 +8,12 @@ import { LoadingCover } from 'components/Auth';
 import BlogsList from 'components/Blogs';
 import BlogListSkeleton from './BlogListSkeleton';
 import BlogsNav from './BlogsNav';
-import 'containers/pages.scss';
+import STYLES from 'containers/pages.scss';
+import { cssModules } from 'bpk-react-utils';
+
+const getClassName = cssModules(STYLES);
 
 const BlogsNavWR = withRouter(BlogsNav);
-const getClassName = c => c;
 
 export default class BlogsPage extends React.Component {
   constructor(props) {
@@ -74,7 +76,7 @@ export default class BlogsPage extends React.Component {
           theme={theme}
           themeAttributes={[...hnThemeAttributes]}
         >
-          <BlogsNavWR className="pages__component" selected={selectedNav} />
+          <BlogsNavWR className={getClassName("pages__component")} selected={selectedNav} />
         </BpkThemeProvider>
         <LoadingCover
           loadingSkeleton={BlogListSkeleton}

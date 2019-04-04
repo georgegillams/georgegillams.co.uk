@@ -32,7 +32,17 @@ module.exports = options => ({
         // Preprocess our own .scss files
         test: /\.scss$/,
         exclude: /node_modules\/(?!(bpk-|react-component-academic-reference)).*/,
-        use: ['style-loader', 'css-loader', 'sass-loader'],
+        use: [
+          'style-loader',
+          {
+            loader: 'css-loader',
+            options: {
+              modules: true,
+              localIdentName: '[name]__[local]___[hash:base64:5]',
+            },
+          },
+          'sass-loader',
+        ],
       },
       {
         // Preprocess 3rd party .css files located in node_modules

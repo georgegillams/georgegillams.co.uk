@@ -1,12 +1,12 @@
 import React from 'react';
 import Skeleton from './Skeleton';
 
-import './skeleton.scss';
+import STYLES from './skeleton.scss'; import {cssModules} from 'bpk-react-utils';  const getClassName = cssModules(STYLES); // REGEX_REPLACED
 
 const SmallProgressSkeleton = props => {
   const { className, ...rest } = props;
 
-  const classNames = ['skeleton__progress--small'];
+  const classNames = [getClassName('skeleton__progress--small')];
   if (className) {
     classNames.push(className);
   }

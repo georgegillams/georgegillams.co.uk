@@ -7,7 +7,7 @@ import BpkProgress, {
 } from 'bpk-component-progress';
 import BpkThemeProvider from 'bpk-theming';
 
-import './degree-module.scss';
+import STYLES from './degree-module.scss'; import {cssModules} from 'bpk-react-utils';  const getClassName = cssModules(STYLES); // REGEX_REPLACED
 
 const DegreeModule = props => {
   const {
@@ -21,7 +21,7 @@ const DegreeModule = props => {
     ...rest
   } = props;
 
-  const classNameFinal = ['degree-module'];
+  const classNameFinal = [getClassName('degree-module')];
   if (className) {
     classNameFinal.push(className);
   }
@@ -70,18 +70,18 @@ const DegreeModule = props => {
 
   return (
     <span className={classNameFinal.join(' ')} {...rest}>
-      <span className="degree-module--module-name">{name}</span>
-      <div className="degree-module--module-bar">
+      <span className={getClassName("degree-module--module-name")}>{name}</span>
+      <div className={getClassName("degree-module--module-bar")}>
         {progress}
         {markerPosition && (
           <div
-            className="degree-module--21-marker"
+            className={getClassName("degree-module--21-marker")}
             style={{ marginLeft: `calc(${markerPosition}% - .175rem)` }}
           />
         )}
       </div>
       <span
-        className="degree-module--percentage"
+        className={getClassName("degree-module--percentage")}
         style={{ opacity: filled && percentage && percentage > 0.01 ? 1 : 0 }}
       >
         {`${percentage || '00'}%`}
