@@ -6,7 +6,7 @@ import GGButton from 'components/GGButton';
 // import contactFile from "./contact.vcf";
 import { cssModules } from 'bpk-react-utils';
 import { EPICC_EMAIL } from 'helpers/constants';
-import STYLES from '../pages.scss';
+import STYLES from '../pages.scss'; import {cssModules} from 'bpk-react-utils';  const getClassName = cssModules(STYLES); // REGEX_REPLACED
 
 const getClassName = cssModules(STYLES);
 

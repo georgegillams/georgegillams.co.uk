@@ -30,7 +30,9 @@ import MonzoPots from 'containers/MonzoPots/Loadable';
 import PasswordCharacterExtractor from 'containers/PasswordCharacterExtractor/Loadable';
 import { SITE_URL } from 'helpers/constants';
 import redirects from 'helpers/redirects';
-import './style.scss';
+import STYLES from './style.scss';
+import { cssModules } from 'bpk-react-utils';
+const getClassName = cssModules(STYLES); // REGEX_REPLACED
 
 const cleanWindowLocation = location => {
   let result = location;
@@ -52,8 +54,8 @@ const getFullRedirect = destination => {
 };
 
 const App = () => (
-  <div className="app-wrapper" id="app-wrapper">
-    <div className="app-wrapper--inner">
+  <div className={getClassName('app-wrapper')} id="app-wrapper">
+    <div className={getClassName('app-wrapper--inner')}>
       <Helmet titleTemplate="%s - George Gillams" defaultTitle="George Gillams">
         <meta
           name="description"

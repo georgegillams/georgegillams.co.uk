@@ -33,7 +33,7 @@ import DemoControl from './DemoControl';
 
 import HelperFunctions from 'helpers/HelperFunctions';
 
-import './bpk-demo.scss';
+import STYLES from './bpk-demo.scss'; import {cssModules} from 'bpk-react-utils';  const getClassName = cssModules(STYLES); // REGEX_REPLACED
 
 export default function bpkDemo(
   Component,
@@ -178,7 +178,7 @@ export default function bpkDemo(
     render() {
       const { compact, style, className, ...rest } = this.props;
 
-      const classNameFinal = ['bpk-demo__outer-container'];
+      const classNameFinal = [getClassName('bpk-demo__outer-container')];
       if (className) classNameFinal.push(className);
 
       const showPlayground = !this.state.compact;
@@ -186,10 +186,10 @@ export default function bpkDemo(
       return (
         <div style={style} className={classNameFinal.join(' ')}>
           {showPlayground && (
-            <div className="bpk-demo__props">
+            <div className={getClassName("bpk-demo__props")}>
               {Object.keys(this.state.props).map(p => (
                 <DemoControl
-                  className="bpk-demo__prop-control"
+                  className={getClassName("bpk-demo__prop-control")}
                   onChange={this.onPropChanged}
                   value={this.state.props[p]}
                   propName={p}
@@ -197,23 +197,23 @@ export default function bpkDemo(
               ))}
             </div>
           )}
-          <div className="bpk-demo__inner-container">
-            <div className="bpk-demo__components-container-1">
-              <div className="bpk-demo__components-container-2">
-                <div className="bpk-demo__component">
+          <div className={getClassName("bpk-demo__inner-container")}>
+            <div className={getClassName("bpk-demo__components-container-1")}>
+              <div className={getClassName("bpk-demo__components-container-2")}>
+                <div className={getClassName("bpk-demo__component")}>
                   <Component {...this.state.props} {...rest} />
                 </div>
                 <button
                   onClick={() => {
                     this.setState({ compact: !this.state.compact });
                   }}
-                  className="bpk-demo__controls"
+                  className={getClassName("bpk-demo__controls")}
                 >
                   {this.state.compact ? <EditIconSm /> : <CloseIconSm />}
                 </button>
               </div>
               {showPlayground && (
-                <div className="bpk-demo__code">
+                <div className={getClassName("bpk-demo__code")}>
                   <BpkCodeBlock>{this.state.code}</BpkCodeBlock>
                 </div>
               )}

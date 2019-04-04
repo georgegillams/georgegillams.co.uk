@@ -7,7 +7,7 @@ const LowerPageSkeleton = props => {
   return (
     <Fragment>
       <SectionSkeleton />
-      <div className="pages__compact-card-container">
+      <div className={getClassName("pages__compact-card-container")}>
         <CompactCardSkeleton />
         <CompactCardSkeleton />
         <CompactCardSkeleton />

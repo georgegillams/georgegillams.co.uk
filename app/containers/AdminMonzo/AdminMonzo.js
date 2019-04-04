@@ -18,9 +18,9 @@ import { LoginForm } from 'components/Forms';
 import Skeleton from './Skeleton';
 import { CookiesOnly } from 'components/Sessions';
 
-import 'containers/pages.scss';
+import STYLES from 'containers/pages.scss'; import {cssModules} from 'bpk-react-utils';  const getClassName = cssModules(STYLES); // REGEX_REPLACED
 
-const getClassName = c => c;
+
 
 export default class AdminMonzo extends React.Component {
   constructor(props) {
@@ -52,12 +52,12 @@ export default class AdminMonzo extends React.Component {
           setLoginRedirect={() => setLoginRedirect('admin/monzo')}
         >
           <Section name="Admin - Monzo">
-            <label htmlFor="key" className="forms__label">
+            <label htmlFor="key" className={getClassName("forms__label")}>
               Key
             </label>
             <BpkInput
               type={INPUT_TYPES.password}
-              className="forms__component"
+              className={getClassName("forms__component")}
               id="key"
               name="key"
               value={keyValue}

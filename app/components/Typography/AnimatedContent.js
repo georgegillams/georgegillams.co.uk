@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 
-import './animated-content.scss';
+import STYLES from './animated-content.scss'; import {cssModules} from 'bpk-react-utils';  const getClassName = cssModules(STYLES); // REGEX_REPLACED
 
 class AnimatedContent extends Component {
   constructor(props) {
@@ -12,9 +12,9 @@ class AnimatedContent extends Component {
 
   render() {
     const { inView, className, children, ...rest } = this.props;
-    const classNameFinal = ['animated-content__outer-container'];
+    const classNameFinal = [getClassName('animated-content__outer-container')];
     if (inView) {
-      classNameFinal.push('animated-content__outer-container--in-view');
+      classNameFinal.push(getClassName('animated-content__outer-container--in-view'));
     }
     if (className) {
       classNameFinal.push(className);

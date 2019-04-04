@@ -12,14 +12,14 @@ import MoneyPot from 'components/MoneyPot';
 import { Section } from 'components/Typography';
 import { LoadingCover } from 'components/Auth';
 
-import 'containers/pages.scss';
+import STYLES from 'containers/pages.scss';
+import { cssModules } from 'bpk-react-utils';
+const getClassName = cssModules(STYLES); // REGEX_REPLACED
 
 const documentIfExists = typeof window !== 'undefined' ? document : null;
 const FadingLazyLoadedImage = withLoadingBehavior(
   withLazyLoading(BpkImage, documentIfExists),
 );
-
-const getClassName = c => c;
 
 export default class MonzoPots extends React.Component {
   loadPotData = password => {
@@ -59,7 +59,7 @@ export default class MonzoPots extends React.Component {
             />
             <BpkInput
               id="password"
-              className="pages__component"
+              className={getClassName("pages__component")}
               type={INPUT_TYPES.password}
               name="password"
               value={password}

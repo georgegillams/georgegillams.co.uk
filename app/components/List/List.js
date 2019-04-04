@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import './style.scss';
+import STYLES from './style.scss'; import {cssModules} from 'bpk-react-utils';  const getClassName = cssModules(STYLES); // REGEX_REPLACED
 
 const List = props => {
   const ComponentToRender = props.component;
@@ -17,7 +17,7 @@ const List = props => {
   }
 
   return (
-    <div className="list-wrapper">
+    <div className={getClassName("list-wrapper")}>
       <ul>{content}</ul>
     </div>
   );

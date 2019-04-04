@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import Tag, { TAG_TYPES } from './Tag';
 import HelperFunctions from 'helpers/HelperFunctions';
 
-import './tag-filter.scss';
+import STYLES from './tag-filter.scss'; import {cssModules} from 'bpk-react-utils';  const getClassName = cssModules(STYLES); // REGEX_REPLACED
 
 class TagFilter extends Component {
   static propTypes = { location: PropTypes.object };
@@ -57,7 +57,7 @@ class TagFilter extends Component {
       ...rest
     } = this.props;
 
-    const outerClassName = ['tag-filter__outer'];
+    const outerClassName = [getClassName('tag-filter__outer')];
     if (className) {
       outerClassName.push(className);
     }
@@ -76,7 +76,7 @@ class TagFilter extends Component {
             disabled={
               filterEnabled && !HelperFunctions.includes(selectedTags, tagType)
             }
-            className="tag-filter__tag"
+            className={getClassName("tag-filter__tag")}
             type={tagType}
             onClick={() => {
               this.toggle(tagType);

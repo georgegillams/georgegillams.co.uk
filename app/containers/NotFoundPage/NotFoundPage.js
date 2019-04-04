@@ -2,9 +2,9 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { Section, SubSection, TextLink } from 'components/Typography';
 
-import STYLES from './not-found.scss';
+import STYLES from './not-found.scss'; import {cssModules} from 'bpk-react-utils';  const getClassName = cssModules(STYLES); // REGEX_REPLACED
 
-const getClassName = c => c;
+
 
 class NotFoundPage extends Component {
   render() {

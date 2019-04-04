@@ -1,12 +1,12 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import './quote.scss';
+import STYLES from './quote.scss'; import {cssModules} from 'bpk-react-utils';  const getClassName = cssModules(STYLES); // REGEX_REPLACED
 
 const Quote = props => {
   const { children, className, ...rest } = props;
 
-  const classNameFinal = ['quote__container'];
+  const classNameFinal = [getClassName('quote__container')];
   if (className) classNameFinal.push(className);
 
   return (
