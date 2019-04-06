@@ -1,12 +1,12 @@
 import React from 'react';
 import Skeleton from './Skeleton';
 
-import './skeleton.scss';
+import STYLES from './skeleton.scss'; import {cssModules} from 'bpk-react-utils';  const getClassName = cssModules(STYLES); // REGEX_REPLACED
 
 const TextLinkSkeleton = props => {
   const { className, ...rest } = props;
 
-  const classNames = ['skeleton__text-link'];
+  const classNames = [getClassName('skeleton__text-link')];
   if (className) {
     classNames.push(className);
   }

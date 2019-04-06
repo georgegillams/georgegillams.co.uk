@@ -4,7 +4,7 @@ import GGButton from 'components/GGButton';
 import { BlogPreviewContent, SubSection } from 'components/Typography';
 import CommentInput from './CommentInput';
 
-import './comments.scss';
+import STYLES from './comments.scss'; import {cssModules} from 'bpk-react-utils';  const getClassName = cssModules(STYLES); // REGEX_REPLACED
 
 class Comment extends React.Component {
   static propTypes = {
@@ -59,8 +59,8 @@ class Comment extends React.Component {
 
     const classNameFinal = [];
     if (className) classNameFinal.push(className);
-    const textBoxClassNameFinal = ['comments__component'];
-    textBoxClassNameFinal.push('comments__component__text-box');
+    const textBoxClassNameFinal = [getClassName('comments__component')];
+    textBoxClassNameFinal.push(getClassName('comments__component__text-box'));
 
     const canEdit = user && (user.id === comment.authorId || user.admin);
     const contentFinal = `${comment.comment}${
@@ -92,7 +92,7 @@ class Comment extends React.Component {
     return (
       <SubSection
         noAnchor
-        className="comments__component"
+        className={getClassName("comments__component")}
         name={`${displayName}`}
       >
         {!this.state.editing && (

@@ -6,9 +6,9 @@ import { BlogRenderer } from 'components/Typography';
 import HelperFunctions from 'helpers/HelperFunctions';
 import Skeleton from './Skeleton';
 import Comments from 'containers/Comments';
-import 'containers/pages.scss';
+import STYLES from 'containers/pages.scss'; import {cssModules} from 'bpk-react-utils';  const getClassName = cssModules(STYLES); // REGEX_REPLACED
 
-const getClassName = c => c;
+
 
 export default class BlogViewer extends React.Component {
   componentWillMount = () => {

@@ -34,14 +34,14 @@ import BpkProgressBar, {
 } from 'bpk-component-progress';
 import { Elements, StripeProvider } from 'react-stripe-elements';
 
-import 'containers/pages.scss';
-import './ticket-scanner.scss';
+import STYLES from 'containers/pages.scss'; import {cssModules} from 'bpk-react-utils';  const getClassName = cssModules(STYLES); // REGEX_REPLACED
+import STYLES from './ticket-scanner.scss'; import {cssModules} from 'bpk-react-utils';  const getClassName = cssModules(STYLES); // REGEX_REPLACED
 
 const MIN_PAGE_NUMBER = 1;
 const MAX_PAGE_NUMBER = 5;
 const PAYMENT_PAGE_NUMBER = MAX_PAGE_NUMBER;
 
-const getClassName = c => c;
+
 
 export default class TicketScanner extends React.Component {
   constructor(props) {
@@ -75,7 +75,7 @@ export default class TicketScanner extends React.Component {
       ...rest
     } = this.props; // eslint-disable-line no-shadow
 
-    const outerClassNameFinal = ['pages__container'];
+    const outerClassNameFinal = [getClassName('pages__container')];
 
     if (className) {
       outerClassNameFinal.push(className);
@@ -84,7 +84,7 @@ export default class TicketScanner extends React.Component {
     const messageClassname = [];
     let displayType = 'error';
     if (error || this.state.localError) {
-      messageClassname.push('ticket-scanner__error');
+      messageClassname.push(getClassName('ticket-scanner__error'));
     } else if (this.state.scanning) {
       displayType = 'scanning';
     } else if (registering) {
@@ -95,13 +95,13 @@ export default class TicketScanner extends React.Component {
       registration.photoRelease === 'COMPLETE'
     ) {
       displayType = 'perfect';
-      messageClassname.push('ticket-scanner__all-good');
+      messageClassname.push(getClassName('ticket-scanner__all-good'));
     } else if (registration && registration.overall === 'COMPLETE') {
       displayType = 'no-photo-release';
-      messageClassname.push('ticket-scanner__no-photo-release');
+      messageClassname.push(getClassName('ticket-scanner__no-photo-release'));
     } else if (registration) {
       displayType = 'error';
-      messageClassname.push('ticket-scanner__error');
+      messageClassname.push(getClassName('ticket-scanner__error'));
     }
 
     return (

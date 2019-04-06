@@ -11,7 +11,7 @@ import {
 import GGButton from 'components/GGButton';
 import {Section, TextLink} from 'components/Typography';
 
-import './cookie-banner.scss';
+import STYLES from './cookie-banner.scss'; import {cssModules} from 'bpk-react-utils';  const getClassName = cssModules(STYLES); // REGEX_REPLACED
 
 // TODO Pass to me please!!
 // contentLastUpdatedTimestamp: state.sessions.contentLastUpdatedTimestamp,
@@ -166,12 +166,12 @@ export default class SessionManagement extends Component {
     return (
       <div {...rest}>
         {this.state.sessionDebugViews && newDataAvailable && (
-          <div className="cookie-banner__new-data-available">
+          <div className={getClassName("cookie-banner__new-data-available")}>
             New data has become available on the server. Reloading...
           </div>
         )}
         {this.state.sessionDebugViews && (
-          <div className="cookie-banner__clut-values">
+          <div className={getClassName("cookie-banner__clut-values")}>
             serverContentUpdateTimestamp: {serverContentUpdateTimestamp}
           </div>
         )}

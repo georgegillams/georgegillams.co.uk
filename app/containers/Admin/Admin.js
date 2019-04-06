@@ -7,9 +7,9 @@ import { DebugObject, AdminOnly, LoadingCover } from 'components/Auth';
 import Skeleton from './Skeleton';
 import { CookiesOnly } from 'components/Sessions';
 
-import 'containers/pages.scss';
+import STYLES from 'containers/pages.scss'; import {cssModules} from 'bpk-react-utils';  const getClassName = cssModules(STYLES); // REGEX_REPLACED
 
-const getClassName = c => c;
+
 
 export default class Admin extends React.Component {
   render() {

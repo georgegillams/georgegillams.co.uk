@@ -3,10 +3,9 @@ import Helmet from 'react-helmet';
 import { TextLink, Section } from 'components/Typography';
 import PhotoGallery from 'components/PhotoGallery';
 // import contactFile from "./contact.vcf";
-import { cssModules } from 'bpk-react-utils';
 import STYLES from '../pages.scss';
-
-const getClassName = c => c;
+import { cssModules } from 'bpk-react-utils';
+const getClassName = cssModules(STYLES); // REGEX_REPLACED
 
 export default class Contact extends Component {
   state = {};

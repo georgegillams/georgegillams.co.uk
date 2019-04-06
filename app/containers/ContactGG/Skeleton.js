@@ -4,6 +4,7 @@ import {
   ButtonSkeleton,
   SectionSkeleton,
 } from 'components/Skeletons';
+import STYLES from 'containers/pages.scss'; import {cssModules} from 'bpk-react-utils'; const getClassName = cssModules(STYLES);
 
 const ContactSkeleton = props => {
   const { className, ...rest } = props;
@@ -20,7 +21,7 @@ const ContactSkeleton = props => {
   return (
     <div className={outerClassNameFinal.join(' ')} {...rest}>
       <SectionSkeleton />
-      <div className="pages__compact-card-container">
+      <div className={getClassName('pages__compact-card-container')}>
         <CompactCardSkeleton />
         <CompactCardSkeleton />
         <CompactCardSkeleton />

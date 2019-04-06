@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import BpkCheckbox from 'bpk-component-checkbox';
 import GGButton from 'components/GGButton';
 
-import './graphic-content.scss';
+import STYLES from './graphic-content.scss'; import {cssModules} from 'bpk-react-utils';  const getClassName = cssModules(STYLES); // REGEX_REPLACED
 
 const GraphicContent = props => {
   const {
@@ -16,12 +16,12 @@ const GraphicContent = props => {
     ...rest
   } = props;
 
-  const classNameFinal = ['graphic-content__outer-container'];
+  const classNameFinal = [getClassName('graphic-content__outer-container')];
   if (className) {
     classNameFinal.push(className);
   }
 
-  const contentContainerClassNames = ['graphic-content__content-container'];
+  const contentContainerClassNames = [getClassName('graphic-content__content-container')];
   if (!graphicContentInView) {
     contentContainerClassNames.push([
       'graphic-content__content-container--hidden',
@@ -32,18 +32,18 @@ const GraphicContent = props => {
     <div className={classNameFinal.join(' ')} {...rest}>
       <div className={contentContainerClassNames.join(' ')}>{children}</div>
       {!graphicContentInView && (
-        <div className="graphic-content__warning-container">
-          <div className="graphic-content__warning-container__inner">
-            <div className="graphic-content__text">
+        <div className={getClassName("graphic-content__warning-container")}>
+          <div className={getClassName("graphic-content__warning-container__inner")}>
+            <div className={getClassName("graphic-content__text")}>
               This image contains graphic content
             </div>
             <br />
-            <GGButton onClick={onClick} className="graphic-content__text">
+            <GGButton onClick={onClick} className={getClassName("graphic-content__text")}>
               Show graphic content
             </GGButton>
             <br />
             <BpkCheckbox
-              className="graphic-content__text"
+              className={getClassName("graphic-content__text")}
               name="Always show graphic content"
               label="Always show graphic content"
               checked={alwaysShowGraphicContent}

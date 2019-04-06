@@ -2,9 +2,9 @@ import React from 'react';
 import { Section, SubSection, TextLink } from 'components/Typography';
 import { NotificationComp } from 'components/Notifications';
 
-import STYLES from 'containers/pages.scss';
+import STYLES from 'containers/pages.scss'; import {cssModules} from 'bpk-react-utils';  const getClassName = cssModules(STYLES); // REGEX_REPLACED
 
-const getClassName = c => c;
+
 
 class PasswordCharacterExtractor extends React.Component {
   constructor(props) {

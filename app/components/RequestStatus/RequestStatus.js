@@ -1,22 +1,22 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import './request-status.scss';
+import STYLES from './request-status.scss'; import {cssModules} from 'bpk-react-utils';  const getClassName = cssModules(STYLES); // REGEX_REPLACED
 
 const RequestStatus = props => {
   const { status, className, ...rest } = props;
   const { type, message } = status;
 
-  const classNameFinal = ['request-status__status'];
+  const classNameFinal = [getClassName('request-status__status')];
 
   if (type === 'success') {
-    classNameFinal.push('request-status__status--success');
+    classNameFinal.push(getClassName('request-status__status--success'));
   }
   if (type === 'warn') {
-    classNameFinal.push('request-status__status--warn');
+    classNameFinal.push(getClassName('request-status__status--warn'));
   }
   if (type === 'error') {
-    classNameFinal.push('request-status__status--error');
+    classNameFinal.push(getClassName('request-status__status--error'));
   }
 
   if (className) {

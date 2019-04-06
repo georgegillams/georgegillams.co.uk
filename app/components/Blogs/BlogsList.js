@@ -9,6 +9,10 @@ import {
   CHECK_FOR_NEW_CONTENT_INTERVAL,
 } from 'helpers/constants';
 import HelperFunctions from 'helpers/HelperFunctions';
+import STYLES from 'containers/pages.scss';
+import { cssModules } from 'bpk-react-utils';
+
+const getClassName = cssModules(STYLES);
 
 class BlogsList extends Component {
   constructor(props) {
@@ -31,7 +35,7 @@ class BlogsList extends Component {
                   : new Date(1000 * blog.publishedTimestamp).getDate()
               }
               month={new Date(1000 * blog.publishedTimestamp).getMonth()}
-              className="pages__card"
+              className={getClassName('pages__card')}
               fillImageSrc={blog.blogHeroImage}
               imageSrc={blog.blogImage}
               linkUrl={`${linkPrefix}/${blog.id}`}
@@ -53,7 +57,7 @@ class BlogsList extends Component {
                 blog.tags &&
                 !blog.tags.split &&
                 blog.tags.map(tag => (
-                  <Tag className="tag-filter__tag" type={tag} />
+                  <Tag className={getClassName('tag-filter__tag')} type={tag} />
                 ))}
             </ArticleCard>
           ): null),

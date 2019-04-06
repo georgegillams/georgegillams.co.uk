@@ -2,14 +2,14 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import RequestStatus from './RequestStatus';
 
-import './request-status.scss';
+import STYLES from './request-status.scss'; import {cssModules} from 'bpk-react-utils';  const getClassName = cssModules(STYLES); // REGEX_REPLACED
 
 const RequestStatusContainer = props => {
   const { statuses } = props;
 
-  const classNameFinal = ['request-status__outer-container'];
+  const classNameFinal = [getClassName('request-status__outer-container')];
   if (statuses && statuses.length > 0) {
-    classNameFinal.push('request-status__outer-container--statuses-showing');
+    classNameFinal.push(getClassName('request-status__outer-container--statuses-showing'));
   }
 
   return (

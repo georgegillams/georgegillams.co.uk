@@ -3,9 +3,9 @@ import Helmet from 'react-helmet';
 import ArticleCard, { CARD_LAYOUTS } from 'components/Cards';
 import { Section, SubSection } from 'components/Typography';
 import GGButton from 'components/GGButton';
-import { cssModules } from 'bpk-react-utils';
 import { GG_EMAIL } from 'helpers/constants';
 import STYLES from '../pages.scss';
+import { cssModules } from 'bpk-react-utils';
 
 const getClassName = cssModules(STYLES);
 

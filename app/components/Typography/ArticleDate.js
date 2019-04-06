@@ -2,14 +2,14 @@ import PropTypes from 'prop-types';
 import React from 'react';
 import BpkText from 'bpk-component-text';
 
-import './article-date.scss';
+import STYLES from './article-date.scss'; import {cssModules} from 'bpk-react-utils';  const getClassName = cssModules(STYLES); // REGEX_REPLACED
 
 const ArticleDate = props => {
   const { date, noPadding, className, ...rest } = props;
 
-  const classNameFinal = ['article-date__date'];
+  const classNameFinal = [getClassName('article-date__date')];
   if (noPadding) {
-    classNameFinal.push('article-date__date--no-padding');
+    classNameFinal.push(getClassName('article-date__date--no-padding'));
   }
   if (className) {
     classNameFinal.push(className);

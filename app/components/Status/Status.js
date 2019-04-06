@@ -3,33 +3,33 @@ import PropTypes from 'prop-types';
 import { TextLink } from 'components/Typography';
 import STATUS_TYPES from './StatusTypes';
 
-import './status.scss';
+import STYLES from './status.scss'; import {cssModules} from 'bpk-react-utils';  const getClassName = cssModules(STYLES); // REGEX_REPLACED
 
 const Status = props => {
   const { shadow, type, large, className, ...rest } = props;
 
-  const classNameFinal = ['status__outer-container'];
+  const classNameFinal = [getClassName('status__outer-container')];
   if (className) classNameFinal.push(className);
 
-  const statusClassName = ['status__container'];
+  const statusClassName = [getClassName('status__container')];
   if (large) {
-    statusClassName.push('status__container--large');
+    statusClassName.push(getClassName('status__container--large'));
   }
   if (type === STATUS_TYPES.SUCCESS) {
-    statusClassName.push('status__container--success');
+    statusClassName.push(getClassName('status__container--success'));
   }
   if (type === STATUS_TYPES.WARN) {
-    statusClassName.push('status__container--warn');
+    statusClassName.push(getClassName('status__container--warn'));
   }
   if (type === STATUS_TYPES.ERROR) {
-    statusClassName.push('status__container--error');
+    statusClassName.push(getClassName('status__container--error'));
   }
 
   return (
     <div className={classNameFinal.join(' ')} {...rest}>
       {large && shadow && (
-        <div className="status__shadow-container">
-          <div className="status__shadow" />
+        <div className={getClassName("status__shadow-container")}>
+          <div className={getClassName("status__shadow")} />
         </div>
       )}
       <div className={statusClassName.join(' ')}>
