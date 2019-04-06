@@ -31,13 +31,13 @@ import BpkProgressBar, {
 } from 'bpk-component-progress';
 import { Elements, StripeProvider } from 'react-stripe-elements';
 
-import 'containers/pages.scss';
+import STYLES from 'containers/pages.scss'; import {cssModules} from 'bpk-react-utils';  const getClassName = cssModules(STYLES); // REGEX_REPLACED
 
 const MIN_PAGE_NUMBER = 1;
 const MAX_PAGE_NUMBER = 5;
 const PAYMENT_PAGE_NUMBER = MAX_PAGE_NUMBER;
 
-const getClassName = c => c;
+
 
 export default class TicketStatus extends React.Component {
   componentDidMount = () => {
@@ -57,7 +57,7 @@ export default class TicketStatus extends React.Component {
       ...rest
     } = this.props; // eslint-disable-line no-shadow
 
-    const outerClassNameFinal = ['pages__container'];
+    const outerClassNameFinal = [getClassName('pages__container')];
 
     if (className) {
       outerClassNameFinal.push(className);

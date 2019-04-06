@@ -1,10 +1,10 @@
 import React from 'react';
 
-import './skeleton.scss';
+import STYLES from './skeleton.scss'; import {cssModules} from 'bpk-react-utils';  const getClassName = cssModules(STYLES); // REGEX_REPLACED
 
 const MS = props => (
   <div {...props}>
-    <div className="skeleton__shimmer" />
+    <div className={getClassName("skeleton__shimmer")} />
   </div>
 );
 

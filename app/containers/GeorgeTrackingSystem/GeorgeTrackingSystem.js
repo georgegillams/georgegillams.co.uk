@@ -4,9 +4,9 @@ import { Helmet } from 'react-helmet';
 import { Section, SubSection } from 'components/Typography';
 import GTSEntity from 'components/GTS';
 import LoadingIndicator from 'components/LoadingIndicator';
-import 'containers/pages.scss';
+import STYLES from 'containers/pages.scss'; import {cssModules} from 'bpk-react-utils';  const getClassName = cssModules(STYLES); // REGEX_REPLACED
 
-const getClassName = c => c;
+
 
 export default class GeorgeTrackingSystem extends React.Component {
   componentWillMount = () => {

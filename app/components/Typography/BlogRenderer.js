@@ -9,7 +9,7 @@ import SubSection from './SubSection';
 import Tag from 'components/Tag';
 import { ArticleDate } from 'components/Typography';
 
-import './blog-viewer.scss';
+import STYLES from './blog-viewer.scss'; import {cssModules} from 'bpk-react-utils';  const getClassName = cssModules(STYLES); // REGEX_REPLACED
 
 const BlogRenderer = props => {
   const {
@@ -27,12 +27,12 @@ const BlogRenderer = props => {
   if (className) {
     classNameFinal.push(className);
   }
-  const elementClassNameFinal = ['pages__card'];
+  const elementClassNameFinal = [getClassName('pages__card')];
   if (elementClassName) {
     elementClassNameFinal.push(elementClassName);
   }
   if (centered) {
-    elementClassNameFinal.push('blogs--centered');
+    elementClassNameFinal.push(getClassName('blogs--centered'));
   }
 
   if (!blog.content || blog.content === '') {
@@ -61,9 +61,9 @@ const BlogRenderer = props => {
         noAnchor
       >
         {showEditLink && (
-          <a className="pages__link" href={`/admin/blog/${blog.id}`}>
+          <a className={getClassName("pages__link")} href={`/admin/blog/${blog.id}`}>
             <SubSection
-              textClassName="blogs__edit-link"
+              textclassName={getClassName("blogs__edit-link")}
               name="Edit this blog"
               noAnchor
               link
@@ -77,7 +77,7 @@ const BlogRenderer = props => {
         <div style={{ marginBottom: '1rem' }}>
           {tags.map(tagType => (
             <Tag
-              className="tag-filter__tag"
+              className={getClassName("tag-filter__tag")}
               type={tagType}
               ariaLabel={`View all ${tagType} blogs`}
               link

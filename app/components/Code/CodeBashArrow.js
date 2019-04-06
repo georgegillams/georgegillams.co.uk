@@ -1,10 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import './code.scss';
+import STYLES from './code.scss'; import {cssModules} from 'bpk-react-utils';  const getClassName = cssModules(STYLES); // REGEX_REPLACED
 
 const CodeBashArrow = props => (
-  <span {...props} className="code__bash-arrow">
+  <span {...props} className={getClassName("code__bash-arrow")}>
     {'▶ '}
   </span>
 );

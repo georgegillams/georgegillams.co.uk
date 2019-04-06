@@ -1,12 +1,12 @@
 import React from 'react';
 import Skeleton from './Skeleton';
 
-import './skeleton.scss';
+import STYLES from './skeleton.scss'; import {cssModules} from 'bpk-react-utils';  const getClassName = cssModules(STYLES); // REGEX_REPLACED
 
 const ButtonSkeleton = props => {
   const { className, ...rest } = props;
 
-  const classNames = ['skeleton__button'];
+  const classNames = [getClassName('skeleton__button')];
   if (className) {
     classNames.push(className);
   }

@@ -1,17 +1,17 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import './content-width-restrictor.scss';
+import STYLES from './content-width-restrictor.scss'; import {cssModules} from 'bpk-react-utils';  const getClassName = cssModules(STYLES); // REGEX_REPLACED
 
 const ContentWidthRestrictor = props => {
   const { children, className, ...rest } = props;
 
-  const classNameFinal = ['content-width-restrictor__outer'];
+  const classNameFinal = [getClassName('content-width-restrictor__outer')];
   if (className) classNameFinal.push(className);
 
   return (
     <div className={classNameFinal.join(' ')} {...rest}>
-      <div className="content-width-restrictor__content">{children}</div>
+      <div className={getClassName("content-width-restrictor__content")}>{children}</div>
     </div>
   );
 };

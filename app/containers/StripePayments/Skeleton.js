@@ -5,7 +5,7 @@ import LowerPageSkeleton from './LowerPageSkeleton';
 const LoginFormSkeleton = props => {
   const { className, ...rest } = props; // eslint-disable-line no-shadow
 
-  const outerClassNameFinal = ['pages__container'];
+  const outerClassNameFinal = [getClassName('pages__container')];
 
   if (className) {
     outerClassNameFinal.push(className);

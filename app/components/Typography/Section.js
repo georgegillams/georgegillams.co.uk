@@ -3,7 +3,7 @@ import React from 'react';
 import BpkText from 'bpk-component-text';
 import TextLink from './TextLink';
 
-import './typography.scss';
+import STYLES from './typography.scss'; import {cssModules} from 'bpk-react-utils';  const getClassName = cssModules(STYLES); // REGEX_REPLACED
 
 const Section = props => {
   const {
@@ -20,33 +20,33 @@ const Section = props => {
     ...rest
   } = props;
 
-  const classNameFinal = ['typography__main'];
-  const textClassNameFinal = ['typography__text', 'typography__text--section'];
+  const classNameFinal = [getClassName('typography__main')];
+  const textClassNameFinal = [getClassName('typography__text', 'typography__text--section')];
   if (hover) {
     if (light) {
-      textClassNameFinal.push('typography--hovering-light');
+      textClassNameFinal.push(getClassName('typography--hovering-light'));
     } else {
-      textClassNameFinal.push('typography--hovering');
+      textClassNameFinal.push(getClassName('typography--hovering'));
     }
   }
   if (!noAnchor) {
-    textClassNameFinal.push('typography__text--with-anchor-link');
+    textClassNameFinal.push(getClassName('typography__text--with-anchor-link'));
   }
   if (light) {
-    classNameFinal.push('typography--light');
-    textClassNameFinal.push('typography--light');
+    classNameFinal.push(getClassName('typography--light'));
+    textClassNameFinal.push(getClassName('typography--light'));
   }
   if (link) {
-    classNameFinal.push('typography__link');
-    textClassNameFinal.push('typography__link');
+    classNameFinal.push(getClassName('typography__link'));
+    textClassNameFinal.push(getClassName('typography__link'));
   }
   if (noPadding) {
-    classNameFinal.push('typography--no-padding');
-    textClassNameFinal.push('typography--no-padding');
+    classNameFinal.push(getClassName('typography--no-padding'));
+    textClassNameFinal.push(getClassName('typography--no-padding'));
   }
   if (fancy) {
-    classNameFinal.push('typography--fancy');
-    textClassNameFinal.push('typography--fancy');
+    classNameFinal.push(getClassName('typography--fancy'));
+    textClassNameFinal.push(getClassName('typography--fancy'));
   }
   if (className) {
     classNameFinal.push(className);
@@ -65,7 +65,7 @@ const Section = props => {
       {!noAnchor && (
         <a
           href={`#${anchorLink}`}
-          className="typography__anchor-link typography__anchor-link--section"
+          className={getClassName("typography__anchor-link typography__anchor-link--section")}
         >
           §
         </a>

@@ -5,9 +5,9 @@ import { Section, SubSection, TextLink } from 'components/Typography';
 import { DebugObject } from 'components/Auth';
 import cookie from 'react-cookies';
 
-import 'containers/pages.scss';
+import STYLES from 'containers/pages.scss'; import {cssModules} from 'bpk-react-utils';  const getClassName = cssModules(STYLES); // REGEX_REPLACED
 
-const getClassName = c => c;
+
 
 export default class Authenticator extends React.Component {
   componentDidMount = () => {

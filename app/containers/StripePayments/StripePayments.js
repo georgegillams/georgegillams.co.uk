@@ -29,9 +29,9 @@ import BpkProgressBar, {
 } from 'bpk-component-progress';
 import { Elements, StripeProvider } from 'react-stripe-elements';
 
-import 'containers/pages.scss';
+import STYLES from 'containers/pages.scss'; import {cssModules} from 'bpk-react-utils';  const getClassName = cssModules(STYLES); // REGEX_REPLACED
 
-const getClassName = c => c;
+
 
 export default class StripePayments extends React.Component {
   render() {

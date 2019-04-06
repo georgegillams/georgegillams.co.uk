@@ -3,6 +3,10 @@ import React, { Component } from 'react';
 import Section from './Section';
 import BlogPreviewSubSection from './BlogPreviewSubSection';
 import BlogPreviewContent from './BlogPreviewContent';
+import STYLES from 'containers/pages.scss';
+import { cssModules } from 'bpk-react-utils';
+
+const getClassName = cssModules(STYLES);
 
 class BlogPreviewSection extends Component {
   render() {
@@ -20,7 +24,7 @@ class BlogPreviewSection extends Component {
     if (className) {
       classNameFinal.push(className);
     }
-    const elementClassNameFinal = ['pages__card'];
+    const elementClassNameFinal = [getClassName('pages__card')];
     if (elementClassName) {
       elementClassNameFinal.push(elementClassName);
     }

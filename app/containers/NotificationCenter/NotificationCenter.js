@@ -5,9 +5,9 @@ import { Section, SubSection } from 'components/Typography';
 import NotificationCollection from 'components/Notifications';
 import { DebugObject, LoadingCover } from 'components/Auth';
 import Skeleton from './Skeleton';
-import 'containers/pages.scss';
+import STYLES from 'containers/pages.scss'; import {cssModules} from 'bpk-react-utils';  const getClassName = cssModules(STYLES); // REGEX_REPLACED
 
-const getClassName = c => c;
+
 
 export default class NotificationCenter extends React.Component {
   componentWillMount = () => {
