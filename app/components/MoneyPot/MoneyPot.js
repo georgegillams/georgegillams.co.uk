@@ -1,15 +1,14 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { Link } from 'react-router';
-import { cssModules } from 'bpk-react-utils';
 import BpkProgress, {
   themeAttributes as progressThemeAttributes,
 } from 'bpk-component-progress';
 import BpkThemeProvider from 'bpk-theming';
 
 import STYLES from './money-pot.scss';
-
-const getClassName = cssModules(STYLES);
+import { cssModules } from 'bpk-react-utils';
+const getClassName = cssModules(STYLES); // REGEX_REPLACED
 
 const MoneyPot = props => {
   const {

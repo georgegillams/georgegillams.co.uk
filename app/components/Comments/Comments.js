@@ -6,7 +6,7 @@ import { DebugObject, LoggedInOnly } from 'components/Auth';
 import { NotificationComp } from 'components/Notifications';
 import { Section, SubSection } from 'components/Typography';
 
-import './comments.scss';
+import STYLES from './comments.scss'; import {cssModules} from 'bpk-react-utils';  const getClassName = cssModules(STYLES); // REGEX_REPLACED
 
 class Comments extends React.Component {
   static propTypes = {
@@ -64,7 +64,7 @@ class Comments extends React.Component {
     const classNameFinal = [];
     if (className) classNameFinal.push(className);
     if (centered) {
-      classNameFinal.push('blogs--centered');
+      classNameFinal.push(getClassName('blogs--centered'));
     }
 
     const commentsFiltered = comments
@@ -77,7 +77,7 @@ class Comments extends React.Component {
         commentsFiltered.length === 0 ? (
           <SubSection
             noAnchor
-            className="comments__component"
+            className={getClassName("comments__component")}
             name="No comments yet. Be the first!"
           />
         ) : (

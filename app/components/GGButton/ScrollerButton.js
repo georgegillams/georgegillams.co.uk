@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 
-import './scroller-button.scss';
+import STYLES from './scroller-button.scss'; import {cssModules} from 'bpk-react-utils';  const getClassName = cssModules(STYLES); // REGEX_REPLACED
 
 class ScrollerButton extends Component {
   constructor(props) {
@@ -13,15 +13,15 @@ class ScrollerButton extends Component {
   render() {
     const { onClick, className, children, ...rest } = this.props;
 
-    const outerClassName = ['scroller-button__outer'];
-    const textClassName = ['scroller-button__text'];
-    const dotClassName = ['scroller-button__dot'];
+    const outerClassName = [getClassName('scroller-button__outer')];
+    const textClassName = [getClassName('scroller-button__text')];
+    const dotClassName = [getClassName('scroller-button__dot')];
 
     if (className) className.push(outerClassName);
 
     if (this.state.hovering) {
-      textClassName.push('scroller-button__text--hovered');
-      dotClassName.push('scroller-button__dot--hovered');
+      textClassName.push(getClassName('scroller-button__text--hovered'));
+      dotClassName.push(getClassName('scroller-button__dot--hovered'));
     }
 
     const buttonComponent = (

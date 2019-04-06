@@ -8,7 +8,7 @@ import { Section, SubSection } from 'components/Typography';
 import { Link } from 'react-router-dom';
 import HelperFunctions from 'helpers/HelperFunctions';
 
-import './article-card.scss';
+import STYLES from './article-card.scss'; import {cssModules} from 'bpk-react-utils';  const getClassName = cssModules(STYLES); // REGEX_REPLACED
 
 const documentIfExists = typeof window !== 'undefined' ? document : null;
 const FadingLazyLoadedImage = withLoadingBehavior(
@@ -67,10 +67,10 @@ class ArticleCard extends Component {
       ...rest
     } = this.props;
 
-    const classNameFinal = ['article-card'];
-    const centerClassNames = ['article-card__center-container'];
-    const contentContainerClassNames = ['article-card__inner-container'];
-    const dateContainerClassNames = ['article-card__date'];
+    const classNameFinal = [getClassName('article-card')];
+    const centerClassNames = [getClassName('article-card__center-container')];
+    const contentContainerClassNames = [getClassName('article-card__inner-container')];
+    const dateContainerClassNames = [getClassName('article-card__date')];
 
     if (highlighted) {
       contentContainerClassNames.push(
@@ -84,36 +84,36 @@ class ArticleCard extends Component {
       );
     }
 
-    const bannerClassNames = ['article-card__banner'];
+    const bannerClassNames = [getClassName('article-card__banner')];
     if (light) {
-      bannerClassNames.push('article-card__banner--light');
+      bannerClassNames.push(getClassName('article-card__banner--light'));
     }
     if (this.state.hovering && !disabled) {
-      bannerClassNames.push('article-card__banner--hovered');
+      bannerClassNames.push(getClassName('article-card__banner--hovered'));
     }
-    const outerBannerClassNames = ['article-card__outer-container'];
+    const outerBannerClassNames = [getClassName('article-card__outer-container')];
     if (layout === CARD_LAYOUTS.narrowCompact) {
-      classNameFinal.push('article-card--narrow-compact');
+      classNameFinal.push(getClassName('article-card--narrow-compact'));
       outerBannerClassNames.push(
         'article-card__outer-container--narrow-compact',
       );
-      centerClassNames.push('article-card__center-container--narrow-compact');
-      dateContainerClassNames.push('article-card__date--narrow-compact');
+      centerClassNames.push(getClassName('article-card__center-container--narrow-compact'));
+      dateContainerClassNames.push(getClassName('article-card__date--narrow-compact'));
     } else if (layout === CARD_LAYOUTS.auto) {
-      outerBannerClassNames.push('article-card__outer-container--auto');
+      outerBannerClassNames.push(getClassName('article-card__outer-container--auto'));
     }
     if (className) classNameFinal.push(className);
 
-    const imageContainerClassNames = ['article-card__image-container'];
+    const imageContainerClassNames = [getClassName('article-card__image-container')];
 
-    const imageClassNames = ['article-card__image'];
+    const imageClassNames = [getClassName('article-card__image')];
     if (imageClassName) {
       imageClassNames.push(imageClassName);
     }
 
-    const backgroundImageClassNames = ['article-card__background'];
+    const backgroundImageClassNames = [getClassName('article-card__background')];
     if (light) {
-      backgroundImageClassNames.push('article-card__background--light');
+      backgroundImageClassNames.push(getClassName('article-card__background--light'));
     }
     if (backgroundImageClassName) {
       backgroundImageClassNames.push(backgroundImageClassName);
@@ -158,9 +158,9 @@ class ArticleCard extends Component {
               light={light}
               name={title}
               link={!disabled}
-              className="article-card__title"
+              className={getClassName("article-card__title")}
             />
-            <div className="article-card__children">{children}</div>
+            <div className={getClassName("article-card__children")}>{children}</div>
           </div>
           {imageSrc && (
             <div

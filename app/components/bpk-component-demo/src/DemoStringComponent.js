@@ -23,7 +23,7 @@ import PropTypes from 'prop-types';
 import BpkInput from 'bpk-component-input';
 import BpkLabel from 'bpk-component-label';
 
-// import STYLES from './bpk-button.scss';
+// import STYLES from './bpk-button.scss'; import {cssModules} from 'bpk-react-utils';  const getClassName = cssModules(STYLES); // REGEX_REPLACED
 //
 // // This was originally depended upon from the bpk-react-utils package, however
 // // we decided to inline it in this particular component so as not to bloat the

@@ -15,7 +15,9 @@ import {
   SORT_CODE_REGEX,
 } from 'helpers/constants';
 
-import './forms.scss';
+import STYLES from './forms.scss';
+import { cssModules } from 'bpk-react-utils';
+const getClassName = cssModules(STYLES); // REGEX_REPLACED
 
 class FormBuilder extends React.Component {
   static propTypes = {
@@ -79,7 +81,7 @@ class FormBuilder extends React.Component {
           formField.type === 'CHECKBOX' ? (
             <Fragment>
               <BpkCheckBox
-                className="forms__component"
+                className={getClassName('forms__component')}
                 name={formField.name}
                 label={formField.name}
                 checked={entity[formField.id]}
@@ -94,12 +96,18 @@ class FormBuilder extends React.Component {
             <Fragment>
               <label
                 htmlFor={formField.id}
-                className="forms__component forms__component__label"
+                className={getClassName(
+                  'forms__component',
+                  'forms__component__label',
+                )}
               >
                 {formField.name}
               </label>
               <BpkInput
-                className="forms__component forms__component__text-box"
+                className={getClassName(
+                  'forms__component',
+                  'forms__component__text-box',
+                )}
                 id={formField.id}
                 name={formField.name}
                 value={entity[formField.id]}
@@ -115,11 +123,16 @@ class FormBuilder extends React.Component {
         )}
         {presubmitText && (
           <Fragment>
-            <div className="forms__component">{presubmitText}</div>
+            <div className={getClassName('forms__component')}>
+              {presubmitText}
+            </div>
           </Fragment>
         )}
         <GGButton
-          className="forms__component forms__component__button"
+          className={getClassName(
+            'forms__component',
+            'forms__component__button',
+          )}
           large
           onClick={onSubmit}
           disabled={disabled || !validity.every(v => v)}

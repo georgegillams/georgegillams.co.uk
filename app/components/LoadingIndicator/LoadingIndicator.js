@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { SubSection } from 'components/Typography';
-import './style.scss';
+import STYLES from './style.scss'; import {cssModules} from 'bpk-react-utils';  const getClassName = cssModules(STYLES); // REGEX_REPLACED
 
 const LoadingIndicator = props => {
   const { loading, error, children, ...rest } = props;
@@ -11,8 +11,8 @@ const LoadingIndicator = props => {
   }
 
   return (
-    <div className="loading-indicator__outer" {...rest}>
-      <div className="loading-indicator">
+    <div className={getClassName("loading-indicator__outer")} {...rest}>
+      <div className={getClassName("loading-indicator")}>
         <div />
         <div />
         <div />

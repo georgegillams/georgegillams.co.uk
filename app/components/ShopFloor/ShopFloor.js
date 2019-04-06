@@ -31,7 +31,7 @@ const ShopFloor = props => {
   const unpaidTickets = unpaidTicketCount > 0;
 
   return (
-    <div className="pages__container" {...rest}>
+    <div className={getClassName("pages__container")} {...rest}>
       {allTicketsReserved && unpaidTickets && (
         <SubSection noAnchor name="All tickets are sold or reserved." />
       )}
@@ -48,14 +48,14 @@ const ShopFloor = props => {
           } may be re-released for purchase within the next hour. Please check back regularly.`}
         />
       )}
-      <div className="pages__compact-card-container">
+      <div className={getClassName("pages__compact-card-container")}>
         <ArticleCard
           disabled={ebOneDayCount <= 0}
           highlighted={selectedTicket === 'EB_ONE_DAY'}
           layout={CARD_LAYOUTS.narrowCompact}
           day={null}
           month={null}
-          className="pages__card"
+          className={getClassName("pages__card")}
           // fillImageSrc="https://i.imgur.com/3n68rkf.jpg"
           onClick={() => {
             onSelect('EB_ONE_DAY');
@@ -73,7 +73,7 @@ const ShopFloor = props => {
           highlighted={selectedTicket === 'EB_TWO_DAY'}
           day={null}
           month={null}
-          className="pages__card"
+          className={getClassName("pages__card")}
           // fillImageSrc="https://i.imgur.com/3n68rkf.jpg"
           onClick={() => {
             onSelect('EB_TWO_DAY');
@@ -91,7 +91,7 @@ const ShopFloor = props => {
           layout={CARD_LAYOUTS.narrowCompact}
           day={null}
           month={null}
-          className="pages__card"
+          className={getClassName("pages__card")}
           // fillImageSrc="https://i.imgur.com/3n68rkf.jpg"
           onClick={() => {
             onSelect('R_ONE_DAY');
@@ -111,7 +111,7 @@ const ShopFloor = props => {
           layout={CARD_LAYOUTS.narrowCompact}
           day={null}
           month={null}
-          className="pages__card"
+          className={getClassName("pages__card")}
           // fillImageSrc="https://i.imgur.com/3n68rkf.jpg"
           onClick={() => {
             onSelect('R_TWO_DAY');

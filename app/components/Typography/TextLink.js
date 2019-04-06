@@ -3,7 +3,9 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import BpkSmallNewWindowIcon from 'bpk-component-icon/sm/new-window';
 
-import './typography.scss';
+import STYLES from './typography.scss';
+import { cssModules } from 'bpk-react-utils';
+const getClassName = cssModules(STYLES); // REGEX_REPLACED
 
 const TextLink = props => {
   const {
@@ -18,16 +20,16 @@ const TextLink = props => {
     ...rest
   } = props;
 
-  const classNameFinal = ['typography__main'];
-  classNameFinal.push('typography__link');
-  classNameFinal.push('typography__link--text-link');
-  classNameFinal.push('typography--no-padding');
+  const classNameFinal = [getClassName('typography__main')];
+  classNameFinal.push(getClassName('typography__link'));
+  classNameFinal.push(getClassName('typography__link--text-link'));
+  classNameFinal.push(getClassName('typography--no-padding'));
   if (light) {
-    classNameFinal.push('typography--light');
-    classNameFinal.push('typography--light--text-link');
+    classNameFinal.push(getClassName('typography--light'));
+    classNameFinal.push(getClassName('typography--light--text-link'));
   }
-  if (fancy) classNameFinal.push('typography--fancy');
-  classNameFinal.push('typography--inline');
+  if (fancy) classNameFinal.push(getClassName('typography--fancy'));
+  classNameFinal.push(getClassName('typography--inline'));
   if (className) {
     classNameFinal.push(className);
   }
@@ -42,8 +44,10 @@ const TextLink = props => {
       {...rest}
     >
       {children}
-      <div className="typography__icon">
-        <BpkSmallNewWindowIcon className="typography__icon--inner" />
+      <div className={getClassName('typography__icon')}>
+        <BpkSmallNewWindowIcon
+          className={getClassName('typography__icon--inner')}
+        />
       </div>
     </a>
   ) : (

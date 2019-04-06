@@ -2,12 +2,12 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { TextLink } from 'components/Typography';
 
-import './code.scss';
+import STYLES from './code.scss'; import {cssModules} from 'bpk-react-utils';  const getClassName = cssModules(STYLES); // REGEX_REPLACED
 
 const Code = props => {
   const { children, lang, githubUrl, className, ...rest } = props;
 
-  const classNameFinal = ['code__outer-container'];
+  const classNameFinal = [getClassName('code__outer-container')];
   if (className) classNameFinal.push(className);
 
   const showTag = lang || githubUrl;
@@ -18,7 +18,7 @@ const Code = props => {
       {/* <div className={"code__inner-container"}>{children}</div> */}
       {children}
       {showTag && (
-        <span className="code__lang">
+        <span className={getClassName("code__lang")}>
           {lang && lang}
           {showSpace && <span>&nbsp;</span>}
           {githubUrl && (
