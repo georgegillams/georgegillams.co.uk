@@ -1,46 +1,41 @@
-import React, { Component } from 'react';
+import React from 'react';
 import PropTypes from 'prop-types';
-import { TextLink, Section } from 'components/Typography';
+import { Section } from 'components/Typography';
 
-class User extends Component {
-  constructor(props) {
-    super(props);
+const User = props => {
+  const { welcomeMessage, user, showAdvancedInfo } = props;
+  const { id, name, email, emailFingerprint, emailVerified, phone } = user;
+
+  if (!user || !name) {
+    return <Section name="Loading user info..." />;
   }
 
-  render() {
-    const { welcomeMessage, user, showAdvancedInfo } = this.props;
-    const { id, name, email, emailFingerprint, emailVerified, phone } = user;
-
-    if (!user || !name) {
-      return <Section name="Loading user info..." />;
-    }
-
-    return (
-      <Section name={`${welcomeMessage || 'User'} ${id}`}>
-        {`Name: ${name}`}
-        <br />
-        {`Email: ${email}`}
-        <br />
-        {`Phone: ${phone}`}
-        <br />
-        {showAdvancedInfo && `Email fingerprint: ${emailFingerprint}`}
-        {showAdvancedInfo && <br />}
-        {`Email verified: ${emailVerified}`}
-        <br />
-        <br />
-      </Section>
-    );
-  }
-}
+  return (
+    <Section name={`${welcomeMessage || 'User'} ${id}`}>
+      {`Name: ${name}`}
+      <br />
+      {`Email: ${email}`}
+      <br />
+      {`Phone: ${phone}`}
+      <br />
+      {showAdvancedInfo && `Email fingerprint: ${emailFingerprint}`}
+      {showAdvancedInfo && <br />}
+      {`Email verified: ${emailVerified}`}
+      <br />
+      <br />
+    </Section>
+  );
+};
 
 User.propTypes = {
+  // eslint-disable-next-line react/forbid-prop-types
   user: PropTypes.object.isRequired,
-  welcomMessage: PropTypes.String,
+  welcomeMessage: PropTypes.String,
   showAdvancedInfo: PropTypes.bool,
 };
 
 User.defaultProps = {
-  welcomMessage: null,
+  welcomeMessage: null,
   showAdvancedInfo: false,
 };
 

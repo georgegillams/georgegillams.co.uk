@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import { getTimeDifference } from 'helpers/time';
 import { Section } from 'components/Typography';
 import ObjectAsList from './ObjectAsList';
 
@@ -37,6 +36,7 @@ class DebugObject extends Component {
 }
 
 DebugObject.propTypes = {
+  // eslint-disable-next-line react/forbid-prop-types
   debugObject: PropTypes.object.isRequired,
   debugTitle: PropTypes.string,
 };

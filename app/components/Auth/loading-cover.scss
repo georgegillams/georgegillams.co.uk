@@ -2,22 +2,13 @@
 @import 'helpers/tokens';
 
 .loading-cover {
-  &__outer-container {
-    //opacity: 0.6;
-  }
-
   &__overlay {
-    //opacity: 0.6;
     background-color: $not-black-invert;
     z-index: 2;
     min-height: 3rem;
 
     @media (prefers-color-scheme: dark) {
       background-color: $not-black;
-    }
-
-    &--content {
-      // width: auto !important;
     }
   }
 }

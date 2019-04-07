@@ -1,106 +1,66 @@
-import React, { Component } from 'react';
+import React from 'react';
 import PropTypes from 'prop-types';
 import ArticleCard from 'components/Cards';
 import Tag from 'components/Tag';
-import { Section } from 'components/Typography';
-import { Link } from 'react-router-dom';
-import {
-  NON_EMOJI_REGEX,
-  CHECK_FOR_NEW_CONTENT_INTERVAL,
-} from 'helpers/constants';
-import HelperFunctions from 'helpers/HelperFunctions';
+import { NON_EMOJI_REGEX } from 'helpers/constants';
 import STYLES from 'containers/pages.scss';
 import { cssModules } from 'bpk-react-utils';
 
 const getClassName = cssModules(STYLES);
 
-class BlogsList extends Component {
-  constructor(props) {
-    super(props);
+const BlogsList = props => {
+  const { className, blogs, linkPrefix, ...rest } = props;
 
-    this.state = { hovering: false };
-  }
-
-  render() {
-    const { className, blogs, linkPrefix, ...rest } = this.props;
-
-    return (
-      <div>
-        {blogs.map(
-          (blog => (
-            <ArticleCard
-              day={
-                blog.blogCardDate
-                  ? blog.blogCardDate
-                  : new Date(1000 * blog.publishedTimestamp).getDate()
-              }
-              month={new Date(1000 * blog.publishedTimestamp).getMonth()}
-              className={getClassName('pages__card')}
-              fillImageSrc={blog.blogHeroImage}
-              imageSrc={blog.blogImage}
-              linkUrl={`${linkPrefix}/${blog.id}`}
-              title={
-                blog.title
-                  ? `${blog.title.match(NON_EMOJI_REGEX).join('')}${
-                      blog.deleted ? ' (deleted)' : ''
-                    }`
-                  : 'TITLE ERROR'
-              }
-              imageBorder={
-                blog.blogImageBorderColor ? blog.blogImageBorderColor : null
-              }
-              bannerColor={blog.blogBannerColor ? blog.blogBannerColor : null}
-              autoTallLayout
-              light={blog.light}
-            >
-              {blog &&
-                blog.tags &&
-                !blog.tags.split &&
-                blog.tags.map(tag => (
-                  <Tag className={getClassName('tag-filter__tag')} type={tag} />
-                ))}
-            </ArticleCard>
-          ): null),
-        )}
-      </div>
-    );
-  }
-}
+  return (
+    <div {...rest}>
+      {blogs.map(
+        (blog => (
+          <ArticleCard
+            day={
+              blog.blogCardDate
+                ? blog.blogCardDate
+                : new Date(1000 * blog.publishedTimestamp).getDate()
+            }
+            month={new Date(1000 * blog.publishedTimestamp).getMonth()}
+            className={getClassName('pages__card')}
+            fillImageSrc={blog.blogHeroImage}
+            imageSrc={blog.blogImage}
+            linkUrl={`${linkPrefix}/${blog.id}`}
+            title={
+              blog.title
+                ? `${blog.title.match(NON_EMOJI_REGEX).join('')}${
+                    blog.deleted ? ' (deleted)' : ''
+                  }`
+                : 'TITLE ERROR'
+            }
+            imageBorder={
+              blog.blogImageBorderColor ? blog.blogImageBorderColor : null
+            }
+            bannerColor={blog.blogBannerColor ? blog.blogBannerColor : null}
+            autoTallLayout
+            light={blog.light}
+          >
+            {blog &&
+              blog.tags &&
+              !blog.tags.split &&
+              blog.tags.map(tag => (
+                <Tag className={getClassName('tag-filter__tag')} type={tag} />
+              ))}
+          </ArticleCard>
+        ): null),
+      )}
+    </div>
+  );
+};
 
 BlogsList.propTypes = {
-  light: PropTypes.bool,
-  bannerColor: PropTypes.string,
-  imageBorder: PropTypes.bool,
-  fillImageSrc: PropTypes.node,
-  imageSrc: PropTypes.node,
-  linkUrl: PropTypes.string,
-  title: PropTypes.string,
+  blogs: PropTypes.arrayOf(PropTypes.object).isRequired,
+  linkPrefix: PropTypes.string.isRequired,
   className: PropTypes.string,
-  ariaLabel: PropTypes.string,
-  day: PropTypes.number,
-  month: PropTypes.string,
-  href: PropTypes.string,
-  backgroundImageClassName: PropTypes.string,
-  imageClassName: PropTypes.string,
-  children: PropTypes.node,
 };
 
 BlogsList.defaultProps = {
-  ariaLabel: null,
-  light: false,
-  bannerColor: null,
-  imageBorder: null,
-  linkUrl: null,
-  fillImageSrc: null,
-  imageSrc: null,
-  title: null,
   className: null,
-  day: null,
-  month: null,
-  href: null,
-  backgroundImageClassName: null,
-  imageClassName: null,
-  children: null,
 };
 
 export default BlogsList;

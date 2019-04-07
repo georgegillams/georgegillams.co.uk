@@ -39,7 +39,9 @@ class ObjectAsList extends Component {
 }
 
 ObjectAsList.propTypes = {
+  // eslint-disable-next-line react/forbid-prop-types
   value: PropTypes.object.isRequired,
+  name: PropTypes.string.isRequired,
   depth: PropTypes.number,
 };
 
