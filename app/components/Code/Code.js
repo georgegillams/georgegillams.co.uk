@@ -1,8 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { TextLink } from 'components/Typography';
+import { cssModules } from 'bpk-react-utils';
+import STYLES from './code.scss';
 
-import STYLES from './code.scss'; import {cssModules} from 'bpk-react-utils';  const getClassName = cssModules(STYLES); // REGEX_REPLACED
+const getClassName = cssModules(STYLES);
 
 const Code = props => {
   const { children, lang, githubUrl, className, ...rest } = props;
@@ -18,7 +20,7 @@ const Code = props => {
       {/* <div className={"code__inner-container"}>{children}</div> */}
       {children}
       {showTag && (
-        <span className={getClassName("code__lang")}>
+        <span className={getClassName('code__lang')}>
           {lang && lang}
           {showSpace && <span>&nbsp;</span>}
           {githubUrl && (
