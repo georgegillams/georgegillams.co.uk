@@ -1,14 +1,16 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { cssModules } from 'bpk-react-utils';
+import STYLES from './code.scss';
 
-import STYLES from './code.scss'; import {cssModules} from 'bpk-react-utils';  const getClassName = cssModules(STYLES); // REGEX_REPLACED
+const getClassName = cssModules(STYLES);
 
 const CodeInline = props => {
   const { children, className, ...rest } = props;
 
   const classNameFinal = [
-    'code__outer-container',
-    'code__outer-container--light',
+    getClassName('code__outer-container'),
+    getClassName('code__outer-container--light'),
   ];
   if (className) classNameFinal.push(className);
 

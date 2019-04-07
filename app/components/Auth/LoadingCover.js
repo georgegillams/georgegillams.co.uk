@@ -1,9 +1,11 @@
-import React, { Component } from 'react';
+import React from 'react';
 import PropTypes from 'prop-types';
-import { TextLink, SubSection } from 'components/Typography';
+import { SubSection } from 'components/Typography';
 import DefaultSkeleton from 'components/Skeletons';
+import STYLES from './loading-cover.scss';
+import { cssModules } from 'bpk-react-utils';
 
-import STYLES from './loading-cover.scss'; import {cssModules} from 'bpk-react-utils';  const getClassName = cssModules(STYLES); // REGEX_REPLACED
+const getClassName = cssModules(STYLES);
 
 const LoadingCover = props => {
   const { loadingSkeleton: LoadingSkeleton, loading, error, children } = props;
@@ -15,15 +17,15 @@ const LoadingCover = props => {
   }
 
   return (
-    <div className={getClassName("loading-cover__outer-container")}>
-      <div className={getClassName("loading-cover__overlay")}>
+    <div className={getClassName('loading-cover__outer-container')}>
+      <div className={getClassName('loading-cover__overlay')}>
         {LoadingSkeleton && <LoadingSkeleton />}
         {error && (
           <SubSection
             name="This is taking a while. Maybe something isn't quite right..."
             noPadding
             noAnchor
-            className={getClassName("loading-cover__overlay--content")}
+            className={getClassName('loading-cover__overlay--content')}
           />
         )}
       </div>

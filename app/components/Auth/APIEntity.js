@@ -38,12 +38,16 @@ const APIEntity = props => {
 };
 
 APIEntity.propTypes = {
+  // eslint-disable-next-line react/forbid-prop-types
   entity: PropTypes.object.isRequired,
   entityType: PropTypes.String,
+  name: PropTypes.String.isRequired,
+  children: PropTypes.node,
 };
 
 APIEntity.defaultProps = {
   entityType: null,
+  children: null,
 };
 
 export default APIEntity;
