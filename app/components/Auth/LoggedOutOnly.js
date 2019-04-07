@@ -1,9 +1,9 @@
-import React, { Component } from 'react';
+import React from 'react';
 import PropTypes from 'prop-types';
 import { TextLink, Section } from 'components/Typography';
 
 const LoggedOutOnly = props => {
-  const { user, activityName, children } = props;
+  const { user, children } = props;
 
   if (user) {
     return (
@@ -17,13 +17,9 @@ const LoggedOutOnly = props => {
 };
 
 LoggedOutOnly.propTypes = {
+  // eslint-disable-next-line react/forbid-prop-types
   user: PropTypes.object.isRequired,
-  activityName: PropTypes.string,
   children: PropTypes.node.isRequired,
-};
-
-LoggedOutOnly.propTypes = {
-  activityName: null,
 };
 
 export default LoggedOutOnly;

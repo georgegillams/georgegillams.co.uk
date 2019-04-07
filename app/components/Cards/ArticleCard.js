@@ -7,8 +7,10 @@ import BpkImage, {
 import { Section, SubSection } from 'components/Typography';
 import { Link } from 'react-router-dom';
 import HelperFunctions from 'helpers/HelperFunctions';
+import { cssModules } from 'bpk-react-utils';
+import STYLES from './article-card.scss';
 
-import STYLES from './article-card.scss'; import {cssModules} from 'bpk-react-utils';  const getClassName = cssModules(STYLES); // REGEX_REPLACED
+const getClassName = cssModules(STYLES);
 
 const documentIfExists = typeof window !== 'undefined' ? document : null;
 const FadingLazyLoadedImage = withLoadingBehavior(
@@ -69,7 +71,9 @@ class ArticleCard extends Component {
 
     const classNameFinal = [getClassName('article-card')];
     const centerClassNames = [getClassName('article-card__center-container')];
-    const contentContainerClassNames = [getClassName('article-card__inner-container')];
+    const contentContainerClassNames = [
+      getClassName('article-card__inner-container'),
+    ];
     const dateContainerClassNames = [getClassName('article-card__date')];
 
     if (highlighted) {
@@ -91,29 +95,43 @@ class ArticleCard extends Component {
     if (this.state.hovering && !disabled) {
       bannerClassNames.push(getClassName('article-card__banner--hovered'));
     }
-    const outerBannerClassNames = [getClassName('article-card__outer-container')];
+    const outerBannerClassNames = [
+      getClassName('article-card__outer-container'),
+    ];
     if (layout === CARD_LAYOUTS.narrowCompact) {
       classNameFinal.push(getClassName('article-card--narrow-compact'));
       outerBannerClassNames.push(
         'article-card__outer-container--narrow-compact',
       );
-      centerClassNames.push(getClassName('article-card__center-container--narrow-compact'));
-      dateContainerClassNames.push(getClassName('article-card__date--narrow-compact'));
+      centerClassNames.push(
+        getClassName('article-card__center-container--narrow-compact'),
+      );
+      dateContainerClassNames.push(
+        getClassName('article-card__date--narrow-compact'),
+      );
     } else if (layout === CARD_LAYOUTS.auto) {
-      outerBannerClassNames.push(getClassName('article-card__outer-container--auto'));
+      outerBannerClassNames.push(
+        getClassName('article-card__outer-container--auto'),
+      );
     }
     if (className) classNameFinal.push(className);
 
-    const imageContainerClassNames = [getClassName('article-card__image-container')];
+    const imageContainerClassNames = [
+      getClassName('article-card__image-container'),
+    ];
 
     const imageClassNames = [getClassName('article-card__image')];
     if (imageClassName) {
       imageClassNames.push(imageClassName);
     }
 
-    const backgroundImageClassNames = [getClassName('article-card__background')];
+    const backgroundImageClassNames = [
+      getClassName('article-card__background'),
+    ];
     if (light) {
-      backgroundImageClassNames.push(getClassName('article-card__background--light'));
+      backgroundImageClassNames.push(
+        getClassName('article-card__background--light'),
+      );
     }
     if (backgroundImageClassName) {
       backgroundImageClassNames.push(backgroundImageClassName);
@@ -158,9 +176,11 @@ class ArticleCard extends Component {
               light={light}
               name={title}
               link={!disabled}
-              className={getClassName("article-card__title")}
+              className={getClassName('article-card__title')}
             />
-            <div className={getClassName("article-card__children")}>{children}</div>
+            <div className={getClassName('article-card__children')}>
+              {children}
+            </div>
           </div>
           {imageSrc && (
             <div
@@ -238,41 +258,47 @@ class ArticleCard extends Component {
 }
 
 ArticleCard.propTypes = {
-  light: PropTypes.bool,
-  bannerColor: PropTypes.string,
-  imageBorder: PropTypes.bool,
-  fillImageSrc: PropTypes.node,
-  imageSrc: PropTypes.node,
-  linkUrl: PropTypes.string,
-  title: PropTypes.string,
-  className: PropTypes.string,
-  layout: PropTypes.oneOf(Object.keys(CARD_LAYOUTS)),
   ariaLabel: PropTypes.string,
-  day: PropTypes.number,
-  month: PropTypes.string,
-  href: PropTypes.string,
   backgroundImageClassName: PropTypes.string,
-  imageClassName: PropTypes.string,
+  bannerColor: PropTypes.string,
   children: PropTypes.node,
+  className: PropTypes.string,
+  day: PropTypes.number,
+  disabled: PropTypes.bool,
+  fillImageSrc: PropTypes.node,
+  highlighted: PropTypes.bool,
+  href: PropTypes.string,
+  imageBorder: PropTypes.bool,
+  imageClassName: PropTypes.string,
+  imageSrc: PropTypes.node,
+  layout: PropTypes.oneOf(Object.keys(CARD_LAYOUTS)),
+  light: PropTypes.bool,
+  linkUrl: PropTypes.string,
+  month: PropTypes.string,
+  onClick: PropTypes.func,
+  title: PropTypes.string,
 };
 
 ArticleCard.defaultProps = {
   ariaLabel: null,
-  light: false,
-  bannerColor: null,
-  imageBorder: null,
-  linkUrl: null,
-  fillImageSrc: null,
-  imageSrc: null,
-  title: null,
-  className: null,
-  layout: CARD_LAYOUTS.auto,
-  day: null,
-  month: null,
-  href: null,
   backgroundImageClassName: null,
-  imageClassName: null,
+  bannerColor: null,
   children: null,
+  className: null,
+  day: null,
+  disabled: false,
+  fillImageSrc: null,
+  highlighted: false,
+  href: null,
+  imageBorder: null,
+  imageClassName: null,
+  imageSrc: null,
+  layout: CARD_LAYOUTS.auto,
+  light: false,
+  linkUrl: null,
+  month: null,
+  onClick: null,
+  title: null,
 };
 
 export default ArticleCard;
