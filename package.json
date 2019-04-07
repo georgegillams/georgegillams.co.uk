@@ -13,7 +13,7 @@
   "author": "George Gillams",
   "license": "MIT",
   "scripts": {
-    "build": "npm run transpile-bpk-dependencies && npm run build:client && npm run build:server",
+    "build": "npm run build:client && npm run build:server",
     "build:clean": "rimraf ./build",
     "build:client": "cross-env NODE_PATH=./app NODE_ENV=production webpack --config config/webpack.prod.babel.js --color -p --progress --hide-modules --display-optimization-bailout",
     "build:server": "cross-env NODE_ENV=development babel -d ./build/server ./server -s",
@@ -36,8 +36,7 @@
     "start:production": "npm run test && npm run build && npm run start:prod",
     "test": "cross-env NODE_ENV=test SECRET_API_KEY=asdfghjkl NODE_PATH=./server/api:./app jest --coverage",
     "test:clean": "rimraf ./coverage",
-    "test:watch": "cross-env NODE_ENV=test jest --watchAll",
-    "transpile-bpk-dependencies": "node ./scripts/transpile-bpk-dependencies.js"
+    "test:watch": "cross-env NODE_ENV=test jest --watchAll"
   },
   "lint-staged": {
     "*.js": [
