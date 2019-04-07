@@ -17,15 +17,11 @@
   &__outer {
     padding: 0.2rem 0.8rem;
     min-width: 5rem;
+    font-weight: bold;
     transition: all 0.3s;
     border: none;
     border-radius: 3rem;
     background-color: $primary-color;
-    background-image: linear-gradient(
-      180deg,
-      $primary-color,
-      $primary-color-dark
-    );
     color: white;
     font-family: 'Quattrocento Sans', sans-serif;
     font-size: 1rem;
@@ -46,27 +42,19 @@
     &--secondary {
       background-color: transparent;
       color: $not-black;
-      background-image: none;
 
       &--disabled {
-        background-image: none;
         color: gray;
 
         &:focus,
         &:active,
         &:hover {
-          background-image: none;
         }
       }
     }
 
     &--destructive {
       background-color: $destructive-color;
-      background-image: linear-gradient(
-        180deg,
-        $destructive-color,
-        $destructive-color-dark
-      );
 
       &:focus,
       &:active,
@@ -77,13 +65,11 @@
 
     &--disabled {
       background-color: lightgray;
-      background-image: none;
 
       &:focus,
       &:active,
       &:hover {
         background-color: lightgray;
-        background-image: none;
       }
     }
 
@@ -95,8 +81,8 @@
       padding: 0.2rem 0.8rem;
       transition: all 0.2s;
       background-color: transparent;
-      background-image: none;
       color: $not-black;
+      font-weight: normal;
 
       @media (prefers-color-scheme: dark) {
         color: $not-black-invert;
@@ -111,6 +97,7 @@
         color: white;
         fill: white;
         filter: saturate(1) brightness(1);
+        font-weight: bold;
       }
 
       &--destructive {
@@ -118,11 +105,6 @@
         &:active,
         &:hover {
           background-color: $destructive-color;
-          background-image: linear-gradient(
-            180deg,
-            $destructive-color,
-            $destructive-color-dark
-          );
         }
       }
     }
