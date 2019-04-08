@@ -15,20 +15,22 @@ import {
   LoadingCover,
 } from 'components/Auth';
 import Skeleton from './Skeleton';
+import { CreateBlogForm } from 'components/Forms';
 import STYLES from 'containers/pages.scss';
 import { cssModules } from 'bpk-react-utils';
 
 const getClassName = cssModules(STYLES);
 
-export default class AdminUsers extends React.Component {
+export default class AdminBlogEdit extends React.Component {
   constructor(props) {
     super(props);
 
-    this.state = { showTickets: false };
+    this.state = { newBlog: null };
   }
 
   componentDidMount = () => {
-    this.props.loadBlogs();
+    const blogId = this.props.match.params.id;
+    this.props.loadBlog(blogId);
   };
 
   render() {
@@ -37,11 +39,15 @@ export default class AdminUsers extends React.Component {
       user,
       userLoading,
       className,
-      loadBlogs,
-      blogs,
-      blogsLoading,
-      blogsLoadedSuccess,
-      blogsLoadedError,
+      loadBlog,
+      updateBlog,
+      blog,
+      blogLoading,
+      blogLoadedSuccess,
+      blogLoadedError,
+      blogUpdating,
+      blogUpdatedSuccess,
+      blogUpdatedError,
       ...rest
     } = this.props;
     const outerClassNameFinal = [getClassName('pages__container')];
@@ -57,16 +63,15 @@ export default class AdminUsers extends React.Component {
           setLoginRedirect={() => setLoginRedirect('admin/blog')}
         >
           <Section name="Admin - blog">
-            {blogs &&
-              blogs.map &&
-              blogs.map(b => (
-                <Fragment>
-                  <APIEntity name="more" entityType="Blog" entity={b}>
-                    {' '}
-                  </APIEntity>
-                  <BlogsList linkPrefix="/admin/blog/edit" blogs={[b]} />
-                </Fragment>
-              ))}
+            {blog && (
+              <CreateBlogForm
+                disabled={blogUpdating || !this.state.newBlog}
+                blog={this.state.newBlog || blog}
+                onDataChanged={n => this.setState({ newBlog: n })}
+                onSubmit={() => updateBlog(this.state.newBlog)}
+                submitLabel="Update blog"
+              />
+            )}
           </Section>
         </AdminOnly>
       </div>
@@ -74,25 +79,25 @@ export default class AdminUsers extends React.Component {
 
     return (
       <Fragment>
-        <Helmet title="Admin - blogs" />
+        <Helmet title="Admin - blog" />
         <LoadingCover
           loadingSkeleton={Skeleton}
-          loading={userLoading || blogsLoading}
+          loading={userLoading || blogLoading}
         >
           {page}
         </LoadingCover>
         <DebugObject
-          debugTitle="Admin blogs"
+          debugTitle="Admin blog"
           debugObject={{
             setLoginRedirect,
             user,
             userLoading,
             className,
-            loadBlogs,
-            blogs,
-            blogsLoading,
-            blogsLoadedSuccess,
-            blogsLoadedError,
+            loadBlog,
+            blog,
+            blogLoading,
+            blogLoadedSuccess,
+            blogLoadedError,
           }}
         />
       </Fragment>
@@ -100,7 +105,7 @@ export default class AdminUsers extends React.Component {
   }
 }
 
-AdminUsers.propTypes = {
+AdminBlogEdit.propTypes = {
   loggingIn: PropTypes.bool,
   error: PropTypes.oneOfType([PropTypes.object, PropTypes.bool]),
   createdPayment: PropTypes.object,

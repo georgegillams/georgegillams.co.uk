@@ -7,9 +7,9 @@ import { DebugObject, AdminOnly, LoadingCover } from 'components/Auth';
 import Skeleton from './Skeleton';
 import { CookiesOnly } from 'components/Sessions';
 
-import STYLES from 'containers/pages.scss'; import {cssModules} from 'bpk-react-utils';  const getClassName = cssModules(STYLES); // REGEX_REPLACED
-
-
+import STYLES from 'containers/pages.scss';
+import { cssModules } from 'bpk-react-utils';
+const getClassName = cssModules(STYLES); // REGEX_REPLACED
 
 export default class Admin extends React.Component {
   render() {
@@ -62,6 +62,15 @@ export default class Admin extends React.Component {
                 className={getClassName('pages__card')}
                 linkUrl="/admin/register"
                 title="Register"
+                tallLayout
+              />
+              <ArticleCard
+                layout={CARD_LAYOUTS.narrowCompact}
+                day={null}
+                month={null}
+                className={getClassName('pages__card')}
+                linkUrl="/admin/blog"
+                title="Blogs"
                 tallLayout
               />
             </div>
