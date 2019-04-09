@@ -6,9 +6,9 @@ import { BlogRenderer } from 'components/Typography';
 import HelperFunctions from 'helpers/HelperFunctions';
 import Skeleton from './Skeleton';
 import Comments from 'containers/Comments';
-import STYLES from 'containers/pages.scss'; import {cssModules} from 'bpk-react-utils';  const getClassName = cssModules(STYLES); // REGEX_REPLACED
-
-
+import STYLES from 'containers/pages.scss';
+import { cssModules } from 'bpk-react-utils';
+const getClassName = cssModules(STYLES); // REGEX_REPLACED
 
 export default class BlogViewer extends React.Component {
   componentWillMount = () => {
@@ -29,7 +29,10 @@ export default class BlogViewer extends React.Component {
       className,
       ...rest
     } = this.props;
-    const outerClassNameFinal = [getClassName('pages__container')];
+    const outerClassNameFinal = [
+      getClassName('pages__container'),
+      getClassName('pages__container--prose'),
+    ];
 
     if (className) {
       outerClassNameFinal.push(className);

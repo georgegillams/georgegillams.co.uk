@@ -8,7 +8,10 @@ const getClassName = cssModules(STYLES);
 const AccountSkeleton = props => {
   const { className, ...rest } = props; // eslint-disable-line no-shadow
 
-  const outerClassNameFinal = [getClassName('pages__container')];
+  const outerClassNameFinal = [
+    getClassName('pages__container'),
+    getClassName('pages__container--prose'),
+  ];
 
   if (className) {
     outerClassNameFinal.push(className);

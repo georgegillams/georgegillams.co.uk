@@ -6,9 +6,9 @@ import BpkImage, {
   withLazyLoading,
   withLoadingBehavior,
 } from 'bpk-component-image';
-import STYLES from '../pages.scss'; import {cssModules} from 'bpk-react-utils';  const getClassName = cssModules(STYLES); // REGEX_REPLACED
-
-
+import STYLES from '../pages.scss';
+import { cssModules } from 'bpk-react-utils';
+const getClassName = cssModules(STYLES); // REGEX_REPLACED
 
 const documentIfExists = typeof window !== 'undefined' ? document : null;
 const FadingLazyLoadedImage = withLoadingBehavior(
@@ -20,7 +20,11 @@ export default class Work extends Component {
 
   render() {
     return (
-      <div className={getClassName('pages__container')}>
+      <div
+        className={['pages__container', 'pages__container--prose']
+          .map(getClassName)
+          .join(' ')}
+      >
         <Helmet title="Work" />
         <Section name="My Work">
           <SubSection name="Software Engineering Masters">
