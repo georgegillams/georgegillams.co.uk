@@ -23,6 +23,10 @@
     &--centered {
       text-align: center;
     }
+
+    &--prose {
+      max-width: 45rem;
+    }
   }
 
   &__component {
