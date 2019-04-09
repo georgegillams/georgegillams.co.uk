@@ -42,9 +42,9 @@
 
   &__desktop-container {
     display: flex;
-    width: 30%;
+    width: 35%;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
 
     @include bpk-breakpoint-tablet {
       display: none;
