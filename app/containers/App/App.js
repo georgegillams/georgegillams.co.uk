@@ -4,6 +4,7 @@ import { Switch, Route, Redirect } from 'react-router-dom';
 import AccountPage from 'containers/Account/Loadable';
 import AdminPage from 'containers/Admin/Loadable';
 import AdminBlogs from 'containers/AdminBlogs/Loadable';
+import AdminBlogEdit from 'containers/AdminBlogEdit/Loadable';
 import AdminUsersPage from 'containers/AdminUsers/Loadable';
 import AdminMonzo from 'containers/AdminMonzo/Loadable';
 import Authenticator from 'containers/Authenticator';
@@ -84,6 +85,7 @@ const App = () => (
         <Route path="/account" component={AccountPage} />
         <Route path="/monzoPots" component={MonzoPots} />
         <Route path="/admin/users" component={AdminUsersPage} />
+        <Route path="/admin/blog/edit/:id" component={AdminBlogEdit} />
         <Route path="/admin/blog" component={AdminBlogs} />
         <Route path="/admin/monzo" component={AdminMonzo} />
         <Route
