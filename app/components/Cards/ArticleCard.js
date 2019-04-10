@@ -78,13 +78,13 @@ class ArticleCard extends Component {
 
     if (highlighted) {
       contentContainerClassNames.push(
-        'article-card__inner-container--highlighted',
+        getClassName('article-card__inner-container--highlighted'),
       );
     }
 
     if (disabled) {
       contentContainerClassNames.push(
-        'article-card__inner-container--disabled',
+        getClassName('article-card__inner-container--disabled'),
       );
     }
 
@@ -101,7 +101,7 @@ class ArticleCard extends Component {
     if (layout === CARD_LAYOUTS.narrowCompact) {
       classNameFinal.push(getClassName('article-card--narrow-compact'));
       outerBannerClassNames.push(
-        'article-card__outer-container--narrow-compact',
+        getClassName('article-card__outer-container--narrow-compact'),
       );
       centerClassNames.push(
         getClassName('article-card__center-container--narrow-compact'),
