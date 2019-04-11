@@ -250,9 +250,7 @@ class ArticleCard extends Component {
           this.setState({ hovering: false });
         }}
         className={classNameFinal.join(' ')}
-        onClick={() => {
-          alert('hi');
-        }}
+        onClick={disabled ? null : onClick}
         onKeyDown={disabled ? null : onClick}
         {...rest}
       >
