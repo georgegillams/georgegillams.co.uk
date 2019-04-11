@@ -4,10 +4,11 @@ import BpkImage, {
   withLoadingBehavior,
   withLazyLoading,
 } from 'bpk-component-image';
-import { Section, SubSection } from 'components/Typography';
 import { Link } from 'react-router-dom';
-import HelperFunctions from 'helpers/HelperFunctions';
 import { cssModules } from 'bpk-react-utils';
+import { Section, SubSection } from 'components/Typography';
+import HelperFunctions from 'helpers/HelperFunctions';
+
 import STYLES from './article-card.scss';
 
 const getClassName = cssModules(STYLES);
@@ -218,14 +219,14 @@ class ArticleCard extends Component {
         </Link>
       );
     }
-    if (href) {
+    if (href && !disabled) {
       cardComponent = (
         <a
           style={{ textDecoration: 'none' }}
           role="button"
           rel="noopener noreferrer"
           target="_blank"
-          href={disabled ? null : href}
+          href={href}
         >
           {cardComponent}
         </a>
@@ -234,6 +235,7 @@ class ArticleCard extends Component {
 
     return (
       <div
+        tabIndex="0"
         role="button"
         onMouseEnter={() => {
           this.setState({ hovering: true });
@@ -248,7 +250,10 @@ class ArticleCard extends Component {
           this.setState({ hovering: false });
         }}
         className={classNameFinal.join(' ')}
-        onClick={disabled ? null : onClick}
+        onClick={() => {
+          alert('hi');
+        }}
+        onKeyDown={disabled ? null : onClick}
         {...rest}
       >
         {cardComponent}
