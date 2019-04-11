@@ -9,7 +9,9 @@ import SubSection from './SubSection';
 import Tag from 'components/Tag';
 import { ArticleDate } from 'components/Typography';
 
-import STYLES from './blog-viewer.scss'; import {cssModules} from 'bpk-react-utils';  const getClassName = cssModules(STYLES); // REGEX_REPLACED
+import STYLES from './blog-viewer.scss';
+import { cssModules } from 'bpk-react-utils';
+const getClassName = cssModules(STYLES); // REGEX_REPLACED
 
 const BlogRenderer = props => {
   const {
@@ -50,7 +52,8 @@ const BlogRenderer = props => {
     console.log(error);
   }
 
-  const tags = blog.tags.split ? blog.tags.split(', ') : blog.tags || [];
+  const tags =
+    blog.tags && blog.tags.split ? blog.tags.split(', ') : blog.tags || [];
 
   return (
     <div className={classNameFinal.join(' ')} {...rest}>
@@ -61,9 +64,12 @@ const BlogRenderer = props => {
         noAnchor
       >
         {showEditLink && (
-          <a className={getClassName("pages__link")} href={`/admin/blog/${blog.id}`}>
+          <a
+            className={getClassName('pages__link')}
+            href={`/admin/blog/${blog.id}`}
+          >
             <SubSection
-              textclassName={getClassName("blogs__edit-link")}
+              textclassName={getClassName('blogs__edit-link')}
               name="Edit this blog"
               noAnchor
               link
@@ -77,7 +83,7 @@ const BlogRenderer = props => {
         <div style={{ marginBottom: '1rem' }}>
           {tags.map(tagType => (
             <Tag
-              className={getClassName("tag-filter__tag")}
+              className={getClassName('tag-filter__tag')}
               type={tagType}
               ariaLabel={`View all ${tagType} blogs`}
               link
