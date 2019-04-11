@@ -2,7 +2,7 @@ import React, { Fragment } from 'react';
 import PropTypes from 'prop-types';
 import { Helmet } from 'react-helmet';
 import LoadingIndicator from 'components/LoadingIndicator';
-import BlogsList from 'components/Blogs';
+import { BlogCard } from 'components/Blogs';
 import ArticleCard, { CARD_LAYOUTS } from 'components/Cards';
 import GGButton from 'components/GGButton';
 import { Section, SubSection, TextLink } from 'components/Typography';
@@ -64,7 +64,7 @@ export default class AdminUsers extends React.Component {
                   <APIEntity name="more" entityType="Blog" entity={b}>
                     {' '}
                   </APIEntity>
-                  <BlogsList linkPrefix="/admin/blog/edit" blogs={[b]} />
+                  <BlogCard linkPrefix="/admin/blog/edit" blog={b} />
                 </Fragment>
               ))}
           </Section>
