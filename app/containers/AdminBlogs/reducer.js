@@ -1,5 +1,15 @@
 import { fromJS } from 'immutable';
-import { LOAD_BLOGS, LOAD_BLOGS_ERROR, LOAD_BLOGS_SUCCESS } from './constants';
+import {
+  LOAD_BLOGS,
+  LOAD_BLOGS_ERROR,
+  LOAD_BLOGS_SUCCESS,
+  DELETE_BLOG,
+  DELETE_BLOG_SUCCESS,
+  DELETE_BLOG_ERROR,
+  CREATE_BLOG,
+  CREATE_BLOG_SUCCESS,
+  CREATE_BLOG_ERROR,
+} from './constants';
 
 const initialState = fromJS({});
 
@@ -14,6 +24,24 @@ function appReducer(state = initialState, action) {
         .set('blogs', action.blogs);
     case LOAD_BLOGS_ERROR:
       return state.set('loading', false).set('error', action.error);
+    case DELETE_BLOG:
+      return state
+        .set('blogToDelete', action.blog)
+        .set('deleting', true)
+        .set('deleteError', false);
+    case DELETE_BLOG_SUCCESS:
+      return state.set('deleting', false).set('deleteSuccess', true);
+    case DELETE_BLOG_ERROR:
+      return state.set('deleting', false).set('deleteError', action.error);
+    case CREATE_BLOG:
+      return state
+        .set('id', action.id)
+        .set('creating', true)
+        .set('createError', false);
+    case CREATE_BLOG_SUCCESS:
+      return state.set('creating', false).set('createSuccess', true);
+    case CREATE_BLOG_ERROR:
+      return state.set('creating', false).set('createError', action.error);
     default:
       return state;
   }

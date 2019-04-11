@@ -26,9 +26,65 @@ const makeSelectBlogsLoadedError = () =>
     adminUsersState => adminUsersState.get('error'),
   );
 
+const makeSelectBlogToDelete = () =>
+  createSelector(
+    selectAdminBlogs,
+    adminUsersState => adminUsersState.get('blogToDelete'),
+  );
+
+const makeSelectDeletingBlog = () =>
+  createSelector(
+    selectAdminBlogs,
+    adminUsersState => adminUsersState.get('deleting'),
+  );
+
+const makeSelectDeleteBlogSuccess = () =>
+  createSelector(
+    selectAdminBlogs,
+    adminUsersState => adminUsersState.get('deleteSuccess'),
+  );
+
+const makeSelectDeleteBlogError = () =>
+  createSelector(
+    selectAdminBlogs,
+    adminUsersState => adminUsersState.get('deleteError'),
+  );
+
+const makeSelectCreateBlogId = () =>
+  createSelector(
+    selectAdminBlogs,
+    adminUsersState => adminUsersState.get('id'),
+  );
+
+const makeSelectCreatingBlog = () =>
+  createSelector(
+    selectAdminBlogs,
+    adminUsersState => adminUsersState.get('creating'),
+  );
+
+const makeSelectCreateBlogSuccess = () =>
+  createSelector(
+    selectAdminBlogs,
+    adminUsersState => adminUsersState.get('createSuccess'),
+  );
+
+const makeSelectCreateBlogError = () =>
+  createSelector(
+    selectAdminBlogs,
+    adminUsersState => adminUsersState.get('createError'),
+  );
+
 export {
   makeSelectBlogs,
   makeSelectBlogsLoading,
   makeSelectBlogsLoadedSuccess,
   makeSelectBlogsLoadedError,
+  makeSelectBlogToDelete,
+  makeSelectDeletingBlog,
+  makeSelectDeleteBlogSuccess,
+  makeSelectDeleteBlogError,
+  makeSelectCreateBlogId,
+  makeSelectCreatingBlog,
+  makeSelectCreateBlogSuccess,
+  makeSelectCreateBlogError,
 };
