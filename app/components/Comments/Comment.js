@@ -4,24 +4,39 @@ import GGButton from 'components/GGButton';
 import { BlogPreviewContent, SubSection } from 'components/Typography';
 import CommentInput from './CommentInput';
 
-import STYLES from './comments.scss'; import {cssModules} from 'bpk-react-utils';  const getClassName = cssModules(STYLES); // REGEX_REPLACED
+import STYLES from './comments.scss';
+import { cssModules } from 'bpk-react-utils';
+const getClassName = cssModules(STYLES); // REGEX_REPLACED
 
 class Comment extends React.Component {
   static propTypes = {
+    className: PropTypes.string,
+    centered: PropTypes.bool,
+    // eslint-disable-next-line react/forbid-prop-types
     user: PropTypes.object,
+    // eslint-disable-next-line react/forbid-prop-types
     comment: PropTypes.object,
     updateComment: PropTypes.func.isRequired,
     updatingComment: PropTypes.bool,
     updateCommentError: PropTypes.bool,
     updateCommentSuccess: PropTypes.bool,
+    deleteComment: PropTypes.func.isRequired,
+    deletingComment: PropTypes.bool,
+    deleteCommentError: PropTypes.bool,
+    deleteCommentSuccess: PropTypes.bool,
   };
 
   static defaultProps = {
+    className: null,
+    centered: false,
     user: null,
     comment: null,
     updatingComment: false,
     updateCommentError: false,
     updateCommentSuccess: false,
+    deletingComment: false,
+    deleteCommentError: false,
+    deleteCommentSuccess: false,
   };
 
   constructor(props) {
@@ -92,8 +107,9 @@ class Comment extends React.Component {
     return (
       <SubSection
         noAnchor
-        className={getClassName("comments__component")}
+        className={getClassName('comments__component')}
         name={`${displayName}`}
+        {...rest}
       >
         {!this.state.editing && (
           <BlogPreviewContent
@@ -135,16 +151,5 @@ class Comment extends React.Component {
     );
   }
 }
-
-Comment.propTypes = {
-  centered: PropTypes.bool,
-  pageId: PropTypes.number.isRequired,
-  className: PropTypes.string,
-};
-
-Comment.defaultProps = {
-  centered: false,
-  className: null,
-};
 
 export default Comment;
