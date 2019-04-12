@@ -1,9 +1,10 @@
 import PropTypes from 'prop-types';
 import React from 'react';
 import BpkText from 'bpk-component-text';
-import TextLink from './TextLink';
+import STYLES from './typography.scss';
+import { cssModules } from 'bpk-react-utils';
 
-import STYLES from './typography.scss'; import {cssModules} from 'bpk-react-utils';  const getClassName = cssModules(STYLES); // REGEX_REPLACED
+const getClassName = cssModules(STYLES); // REGEX_REPLACED
 
 const Section = props => {
   const {
@@ -21,7 +22,9 @@ const Section = props => {
   } = props;
 
   const classNameFinal = [getClassName('typography__main')];
-  const textClassNameFinal = [getClassName('typography__text', 'typography__text--section')];
+  const textClassNameFinal = [
+    getClassName('typography__text', 'typography__text--section'),
+  ];
   if (hover) {
     if (light) {
       textClassNameFinal.push(getClassName('typography--hovering-light'));
@@ -65,7 +68,10 @@ const Section = props => {
       {!noAnchor && (
         <a
           href={`#${anchorLink}`}
-          className={getClassName("typography__anchor-link typography__anchor-link--section")}
+          className={getClassName(
+            'typography__anchor-link',
+            'typography__anchor-link--section',
+          )}
         >
           §
         </a>

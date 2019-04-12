@@ -3,9 +3,9 @@ import PropTypes from 'prop-types';
 import { Helmet } from 'react-helmet';
 import ArticleCard, { CARD_LAYOUTS } from 'components/Cards';
 import { REG_EMAIL } from 'helpers/constants';
-import STYLES from 'containers/pages.scss'; import {cssModules} from 'bpk-react-utils';  const getClassName = cssModules(STYLES); // REGEX_REPLACED
-
-
+import STYLES from 'containers/pages.scss';
+import { cssModules } from 'bpk-react-utils';
+const getClassName = cssModules(STYLES); // REGEX_REPLACED
 
 export default class HomePage extends React.PureComponent {
   componentDidMount() {}
@@ -26,7 +26,6 @@ export default class HomePage extends React.PureComponent {
               // fillImageSrc="https://i.imgur.com/iFbPZbn.jpg"
               linkUrl="/ticket"
               title="My ticket"
-              tallLayout
             />
           )}
           <ArticleCard
@@ -37,7 +36,6 @@ export default class HomePage extends React.PureComponent {
             // fillImageSrc="https://i.imgur.com/3n68rkf.jpg"
             linkUrl="/login"
             title="Log in"
-            tallLayout
           />
           <ArticleCard
             layout={CARD_LAYOUTS.narrowCompact}
@@ -47,7 +45,6 @@ export default class HomePage extends React.PureComponent {
             // fillImageSrc="https://i.imgur.com/3n68rkf.jpg"
             linkUrl="/sign-up"
             title="Sign up"
-            tallLayout
           />
           <ArticleCard
             layout={CARD_LAYOUTS.narrowCompact}
@@ -57,7 +54,6 @@ export default class HomePage extends React.PureComponent {
             // fillImageSrc="https://i.imgur.com/iFbPZbn.jpg"
             linkUrl="/contact"
             title="Contact"
-            tallLayout
           />
           {user && user.email === REG_EMAIL && (
             <ArticleCard
@@ -68,7 +64,6 @@ export default class HomePage extends React.PureComponent {
               // fillImageSrc="https://i.imgur.com/iFbPZbn.jpg"
               linkUrl="/registration"
               title="Ticket scanner"
-              tallLayout
             />
           )}
           {user && user.admin && (
@@ -80,7 +75,6 @@ export default class HomePage extends React.PureComponent {
               // fillImageSrc="https://i.imgur.com/iFbPZbn.jpg"
               linkUrl="/admin"
               title="Admin area"
-              tallLayout
             />
           )}
         </div>

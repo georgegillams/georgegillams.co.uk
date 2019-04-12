@@ -91,7 +91,7 @@ class NavigationBar extends Component {
             <div
               className={getClassName('navigation-bar__mobile-container--left')}
             >
-              <GGButton bouncy onClick={this.toggle}>
+              <GGButton aria-label="Menu" bouncy onClick={this.toggle}>
                 {this.state.isOpen ? (
                   <BpkIconClose style={{ height: '1rem' }} />
                 ) : (

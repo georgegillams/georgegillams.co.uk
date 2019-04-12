@@ -16,10 +16,6 @@ const getClassName = cssModules(STYLES);
 const BlogsNavWR = withRouter(BlogsNav);
 
 export default class BlogsPage extends React.Component {
-  constructor(props) {
-    super(props);
-  }
-
   filteredBlogs = null;
 
   componentWillMount = () => {
@@ -28,7 +24,13 @@ export default class BlogsPage extends React.Component {
 
   getTextColor = () => {
     const element = document.getElementById('app-wrapper');
+    if (!window || !window.getComputedStyle) {
+      return 'black';
+    }
     const style = window.getComputedStyle(element);
+    if (!style || !style.getPropertyValue) {
+      return 'black';
+    }
     return style.getPropertyValue('color');
   };
 
@@ -76,7 +78,10 @@ export default class BlogsPage extends React.Component {
           theme={theme}
           themeAttributes={[...hnThemeAttributes]}
         >
-          <BlogsNavWR className={getClassName("pages__component")} selected={selectedNav} />
+          <BlogsNavWR
+            className={getClassName('pages__component')}
+            selected={selectedNav}
+          />
         </BpkThemeProvider>
         <LoadingCover
           loadingSkeleton={BlogListSkeleton}

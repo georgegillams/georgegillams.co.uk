@@ -32,7 +32,6 @@ export default class Contact extends Component {
               imageSrc="https://i.imgur.com/nmkJVkO.png"
               href="https://www.fb.com/georgegillams"
               title="Facebook"
-              tallLayout
             />
             <ArticleCard
               layout={CARD_LAYOUTS.narrowCompact}
@@ -42,7 +41,6 @@ export default class Contact extends Component {
               imageSrc="https://i.imgur.com/2x6do1x.png"
               href="https://www.linkedin.com/in/george-gillams-37537077"
               title="Linkedin"
-              tallLayout
             />
             <ArticleCard
               layout={CARD_LAYOUTS.narrowCompact}
@@ -52,7 +50,6 @@ export default class Contact extends Component {
               imageSrc="https://i.imgur.com/54unoGD.png"
               href={`mailto:${GG_EMAIL}`}
               title="Email"
-              tallLayout
             >
               <Section>{GG_EMAIL}</Section>
             </ArticleCard>
@@ -64,7 +61,6 @@ export default class Contact extends Component {
               imageSrc="https://i.imgur.com/9hcLfgF.png"
               href="tel:+447867592615"
               title="Phone"
-              tallLayout
             >
               <Section>+44 78675 92615</Section>
             </ArticleCard>
