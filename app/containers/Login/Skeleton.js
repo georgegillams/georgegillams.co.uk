@@ -5,7 +5,9 @@ import {
   CheckboxSkeleton,
   ButtonSkeleton,
 } from 'components/Skeletons';
-import STYLES from 'containers/pages.scss'; import {cssModules} from 'bpk-react-utils'; const getClassName = cssModules(STYLES);
+import STYLES from 'containers/pages.scss';
+import { cssModules } from 'bpk-react-utils';
+const getClassName = cssModules(STYLES);
 
 const LoginFormSkeleton = props => {
   const { className, ...rest } = props;

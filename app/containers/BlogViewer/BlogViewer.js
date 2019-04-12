@@ -26,6 +26,7 @@ export default class BlogViewer extends React.Component {
       error,
       blog,
       loadBlog,
+      linkPrefix,
       className,
       ...rest
     } = this.props;

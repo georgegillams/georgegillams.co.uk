@@ -44,7 +44,6 @@ export default class Admin extends React.Component {
                 className={getClassName('pages__card')}
                 linkUrl="/admin/users"
                 title="Users"
-                tallLayout
               />
               <ArticleCard
                 layout={CARD_LAYOUTS.narrowCompact}
@@ -53,7 +52,6 @@ export default class Admin extends React.Component {
                 className={getClassName('pages__card')}
                 linkUrl="/admin/monzo"
                 title="Monzo"
-                tallLayout
               />
               <ArticleCard
                 layout={CARD_LAYOUTS.narrowCompact}
@@ -62,7 +60,6 @@ export default class Admin extends React.Component {
                 className={getClassName('pages__card')}
                 linkUrl="/admin/register"
                 title="Register"
-                tallLayout
               />
               <ArticleCard
                 layout={CARD_LAYOUTS.narrowCompact}
@@ -71,7 +68,6 @@ export default class Admin extends React.Component {
                 className={getClassName('pages__card')}
                 linkUrl="/admin/blog"
                 title="Blogs"
-                tallLayout
               />
             </div>
           </Section>

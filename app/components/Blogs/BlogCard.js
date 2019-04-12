@@ -32,7 +32,6 @@ const BlogCard = props => {
       }
       imageBorder={blog.blogImageBorderColor ? blog.blogImageBorderColor : null}
       bannerColor={blog.blogBannerColor ? blog.blogBannerColor : null}
-      autoTallLayout
       light={blog.light}
       {...rest}
     >

@@ -35,8 +35,12 @@ export default function withGraphicContentBehaviour(Component) {
       };
 
       reloadCookies();
-      setInterval(reloadCookies, 1000);
+      this.interval = setInterval(reloadCookies, 1000);
     }
+
+    componentWillUnmount = () => {
+      clearInterval(this.interval);
+    };
 
     onClick = (): null => {
       this.graphicContentInView = true;

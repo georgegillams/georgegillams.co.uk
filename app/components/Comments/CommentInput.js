@@ -5,7 +5,9 @@ import CodeInline from 'components/Code';
 import { SubSection } from 'components/Typography';
 import { MD_PARTIAL_REGEX, UNAME_REGEX } from 'helpers/constants';
 
-import STYLES from './comments.scss'; import {cssModules} from 'bpk-react-utils';  const getClassName = cssModules(STYLES); // REGEX_REPLACED
+import STYLES from './comments.scss';
+import { cssModules } from 'bpk-react-utils';
+const getClassName = cssModules(STYLES); // REGEX_REPLACED
 
 class CommentInput extends React.Component {
   static propTypes = {
@@ -43,6 +45,7 @@ class CommentInput extends React.Component {
       updateCommentError,
       updateCommentSuccess,
       submitLabel,
+      pageId,
       ...rest
     } = this.props;
 

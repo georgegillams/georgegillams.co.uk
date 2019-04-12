@@ -11,9 +11,9 @@ import BpkImage, {
   withLazyLoading,
   withLoadingBehavior,
 } from 'bpk-component-image';
-import STYLES from '../pages.scss'; import {cssModules} from 'bpk-react-utils';  const getClassName = cssModules(STYLES); // REGEX_REPLACED
-
-
+import STYLES from '../pages.scss';
+import { cssModules } from 'bpk-react-utils';
+const getClassName = cssModules(STYLES); // REGEX_REPLACED
 
 const PAGE_ID = '857216';
 const documentIfExists = typeof window !== 'undefined' ? document : null;
@@ -62,7 +62,7 @@ export default class Photography extends Component {
         style={{ textAlign: 'center' }}
       >
         <Helmet title="Photography" />
-        <Section centered name="Photography">
+        <Section noAnchor name="Photography">
           <div
             style={{ paddingTop: '1rem' }}
             className={getClassName('pages__compact-card-container')}

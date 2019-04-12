@@ -28,12 +28,14 @@ class FormBuilder extends React.Component {
     presubmitText: PropTypes.string,
     formFields: PropTypes.arrayOf(PropTypes.object).isRequired,
     disabled: PropTypes.bool,
+    centered: PropTypes.bool,
     className: PropTypes.string,
   };
 
   static defaultProps = {
     className: null,
     disabled: false,
+    centered: false,
     presubmitText: null,
   };
 
@@ -46,6 +48,7 @@ class FormBuilder extends React.Component {
   render() {
     const {
       className,
+      centered,
       disabled,
       entity,
       onDataChanged,
@@ -143,15 +146,5 @@ class FormBuilder extends React.Component {
     );
   }
 }
-
-FormBuilder.propTypes = {
-  centered: PropTypes.bool,
-  className: PropTypes.string,
-};
-
-FormBuilder.defaultProps = {
-  centered: false,
-  className: null,
-};
 
 export default FormBuilder;
