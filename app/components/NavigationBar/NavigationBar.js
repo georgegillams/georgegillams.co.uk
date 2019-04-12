@@ -16,7 +16,7 @@ class NavigationBar extends Component {
   constructor(props) {
     super(props);
     // Must show at start in case on desktop
-    this.state = { isOpen: false, show: true };
+    this.state = { isOpen: false, show: false };
   }
 
   toggle = () => {
@@ -122,7 +122,10 @@ class NavigationBar extends Component {
               {accountMenuItem}
             </div>
           </div>
-          <div className={animatedContainerClassNameFinal.join(' ')}>
+          <div
+            aria-hidden={this.state.show ? null : 'true'}
+            className={animatedContainerClassNameFinal.join(' ')}
+          >
             <div
               className={getClassName('navigation-bar__mobile-menu-container')}
             >
