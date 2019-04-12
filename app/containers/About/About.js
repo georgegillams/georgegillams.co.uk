@@ -49,10 +49,22 @@ export default class Contact extends Component {
         <PhotoGallery
           className={getClassName('pages__photo-gallery')}
           images={[
-            'https://i.imgur.com/EPfA1yI.png', // engaged
-            'https://i.imgur.com/eldzRhk.jpg', // us
-            'https://i.imgur.com/n8JZuqv.jpg', // tiggs
-            'https://i.imgur.com/mvvDmiL.jpg', // tm
+            {
+              src: 'https://i.imgur.com/EPfA1yI.png',
+              altText: 'My fianceé and I',
+            },
+            {
+              src: 'https://i.imgur.com/eldzRhk.jpg',
+              altText: 'My fianceé and I',
+            },
+            {
+              src: 'https://i.imgur.com/n8JZuqv.jpg',
+              altText: 'Our cat, Tigger',
+            },
+            {
+              src: 'https://i.imgur.com/mvvDmiL.jpg',
+              altText: 'Group photo at Tough Mudder',
+            },
           ]}
         />
         <br />

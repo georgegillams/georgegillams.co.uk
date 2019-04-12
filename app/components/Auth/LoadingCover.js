@@ -19,7 +19,7 @@ const LoadingCover = props => {
   return (
     <div className={getClassName('loading-cover__outer-container')}>
       <div className={getClassName('loading-cover__overlay')}>
-        {LoadingSkeleton && <LoadingSkeleton />}
+        {LoadingSkeleton && <LoadingSkeleton aria-label="Loading" />}
         {error && (
           <SubSection
             name="This is taking a while. Maybe something isn't quite right..."
