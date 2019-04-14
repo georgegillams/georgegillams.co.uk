@@ -13,8 +13,6 @@ import { cssModules } from 'bpk-react-utils';
 
 const getClassName = cssModules(STYLES);
 
-const BlogsNavWR = withRouter(BlogsNav);
-
 export default class BlogsPage extends React.Component {
   filteredBlogs = null;
 
@@ -23,15 +21,13 @@ export default class BlogsPage extends React.Component {
   };
 
   getTextColor = () => {
-    const element = document.getElementById('app-wrapper');
-    if (!window || !window.getComputedStyle) {
-      return 'black';
+    try {
+      const element = document.getElementById('app-wrapper');
+      const style = window.getComputedStyle(element);
+      return style.getPropertyValue('color');
+    } catch (err) {
+      return '#1e1e1e';
     }
-    const style = window.getComputedStyle(element);
-    if (!style || !style.getPropertyValue) {
-      return 'black';
-    }
-    return style.getPropertyValue('color');
   };
 
   componentWillReceiveProps = newProps => {
@@ -78,7 +74,7 @@ export default class BlogsPage extends React.Component {
           theme={theme}
           themeAttributes={[...hnThemeAttributes]}
         >
-          <BlogsNavWR
+          <BlogsNav
             className={getClassName('pages__component')}
             selected={selectedNav}
           />
