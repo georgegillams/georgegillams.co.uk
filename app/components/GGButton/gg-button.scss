@@ -39,6 +39,20 @@
       min-width: 7rem;
     }
 
+    &--white {
+      background-color: white;
+      color: $not-black;
+
+      &--disabled {
+        color: gray;
+
+        &:focus,
+        &:active,
+        &:hover {
+        }
+      }
+    }
+
     &--secondary {
       background-color: transparent;
       color: $not-black;

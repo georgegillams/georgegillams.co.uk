@@ -2,7 +2,9 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 
-import STYLES from './gg-button.scss'; import {cssModules} from 'bpk-react-utils';  const getClassName = cssModules(STYLES); // REGEX_REPLACED
+import STYLES from './gg-button.scss';
+import { cssModules } from 'bpk-react-utils';
+const getClassName = cssModules(STYLES); // REGEX_REPLACED
 
 class GGButton extends Component {
   constructor(props) {
@@ -24,6 +26,7 @@ class GGButton extends Component {
       large,
       children,
       secondary,
+      white,
       ...rest
     } = this.props;
 
@@ -37,7 +40,9 @@ class GGButton extends Component {
       }
       classNameFinal.push(getClassName('smooth-button__outer--bouncy'));
       if (destructive) {
-        classNameFinal.push(getClassName('smooth-button__outer--bouncy--destructive'));
+        classNameFinal.push(
+          getClassName('smooth-button__outer--bouncy--destructive'),
+        );
       }
       if (disabled) {
         classNameFinal.push(getClassName('smooth-button__outer--disabled'));
@@ -45,7 +50,9 @@ class GGButton extends Component {
     } else {
       classNameFinal.push(getClassName('smooth-button__outer--no-bouncy'));
       if (destructive) {
-        classNameFinal.push(getClassName('smooth-button__outer--no-bouncy--destructive'));
+        classNameFinal.push(
+          getClassName('smooth-button__outer--no-bouncy--destructive'),
+        );
       }
       if (disabled) {
         classNameFinal.push(getClassName('smooth-button__outer--disabled'));
@@ -57,7 +64,18 @@ class GGButton extends Component {
     if (secondary) {
       classNameFinal.push(getClassName('smooth-button__outer--secondary'));
       if (disabled) {
-        classNameFinal.push(getClassName('smooth-button__outer--secondary--disabled'));
+        classNameFinal.push(
+          getClassName('smooth-button__outer--secondary--disabled'),
+        );
+      }
+    }
+
+    if (white) {
+      classNameFinal.push(getClassName('smooth-button__outer--white'));
+      if (disabled) {
+        classNameFinal.push(
+          getClassName('smooth-button__outer--white--disabled'),
+        );
       }
     }
 
