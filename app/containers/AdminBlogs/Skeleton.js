@@ -2,7 +2,7 @@ import React from 'react';
 import { CompactCardSkeleton, SectionSkeleton } from 'components/Skeletons';
 const getClassName = c => c;
 
-const AdminUsersSkeleton = props => {
+const AdminBlogsSkeleton = props => {
   const { className, ...rest } = props;
 
   const outerClassNameFinal = [getClassName('pages__container')];
@@ -21,4 +21,4 @@ const AdminUsersSkeleton = props => {
   );
 };
 
-export default AdminUsersSkeleton;
+export default AdminBlogsSkeleton;

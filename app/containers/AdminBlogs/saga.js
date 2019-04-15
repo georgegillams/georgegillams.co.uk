@@ -12,7 +12,6 @@ import {
 import { makeSelectBlogToDelete, makeSelectCreateBlogId } from './selectors';
 import { pushMessage } from 'containers/RequestStatusWrapper/actions';
 import { API_ENDPOINT, COMMUNICATION_ERROR_MESSAGE } from 'helpers/constants';
-import { associate } from 'helpers/objects';
 
 import request from 'utils/request';
 

@@ -2,14 +2,11 @@ import React, { Fragment } from 'react';
 import PropTypes from 'prop-types';
 import { Helmet } from 'react-helmet';
 import Card from 'bpk-component-card';
-import LoadingIndicator from 'components/LoadingIndicator';
+import { cssModules } from 'bpk-react-utils';
 import { BlogCard } from 'components/Blogs';
-import ArticleCard, { CARD_LAYOUTS } from 'components/Cards';
 import GGButton from 'components/GGButton';
-import { Section, SubSection, TextLink } from 'components/Typography';
-import CodeInline from 'components/Code';
+import { Section } from 'components/Typography';
 import FormBuilder from 'components/Forms';
-import Ticket from 'components/Ticket';
 import { ID_REGEX } from 'helpers/constants';
 import {
   DebugObject,
@@ -19,11 +16,10 @@ import {
 } from 'components/Auth';
 import Skeleton from './Skeleton';
 import STYLES from 'containers/pages.scss';
-import { cssModules } from 'bpk-react-utils';
 
 const getClassName = cssModules(STYLES);
 
-export default class AdminUsers extends React.Component {
+export default class AdminBlogs extends React.Component {
   constructor(props) {
     super(props);
 
@@ -75,7 +71,7 @@ export default class AdminUsers extends React.Component {
                 },
               ]}
               entity={this.state.newBlog}
-              submitLabel={'Create blog'}
+              submitLabel="Create blog"
               onSubmit={() => createBlog(this.state.newBlog.requestedId)}
               onDataChanged={newValue => {
                 this.setState({ newBlog: newValue });
@@ -85,9 +81,7 @@ export default class AdminUsers extends React.Component {
               blogs.map &&
               blogs.map(b => (
                 <Card style={{ marginBottom: '2rem' }}>
-                  <APIEntity name="more" entityType="Blog" entity={b}>
-                    {' '}
-                  </APIEntity>
+                  <APIEntity name="more" entityType="Blog" entity={b} />
                   <BlogCard linkPrefix="/admin/blog/edit" blog={b} />
                   <GGButton
                     large
@@ -132,10 +126,37 @@ export default class AdminUsers extends React.Component {
   }
 }
 
-AdminUsers.propTypes = {
-  loggingIn: PropTypes.bool,
-  error: PropTypes.oneOfType([PropTypes.object, PropTypes.bool]),
-  createdPayment: PropTypes.object,
+AdminBlogs.propTypes = {
+  createBlog: PropTypes.func.isRequired,
+  deleteBlog: PropTypes.func.isRequired,
+  loadBlogs: PropTypes.func.isRequired,
   login: PropTypes.func.isRequired,
+  setLoginRedirect: PropTypes.func.isRequired,
+  blogs: PropTypes.arrayOf(PropTypes.object),
+  // eslint-disable-next-line react/forbid-prop-types
+  blogsLoadedError: PropTypes.object,
+  blogsLoadedSuccess: PropTypes.bool,
+  blogsLoading: PropTypes.bool,
   className: PropTypes.string,
+  creatingBlog: PropTypes.bool,
+  deletingBlog: PropTypes.bool,
+  error: PropTypes.oneOfType([PropTypes.object, PropTypes.bool]),
+  loggingIn: PropTypes.bool,
+  // eslint-disable-next-line react/forbid-prop-types
+  user: PropTypes.object,
+  userLoading: PropTypes.bool,
+};
+
+AdminBlogs.defaultProps = {
+  blogs: null,
+  blogsLoadedError: null,
+  blogsLoadedSuccess: false,
+  blogsLoading: false,
+  className: null,
+  creatingBlog: false,
+  deletingBlog: false,
+  error: null,
+  loggingIn: false,
+  user: null,
+  userLoading: false,
 };
