@@ -4,6 +4,3 @@ export const LOAD_BLOGS_ERROR = 'boilerplate/adminblogs/LOAD_BLOGS_ERROR';
 export const DELETE_BLOG = 'boilerplate/adminblogs/DELETE_BLOG';
 export const DELETE_BLOG_SUCCESS = 'boilerplate/adminblogs/DELETE_BLOG_SUCCESS';
 export const DELETE_BLOG_ERROR = 'boilerplate/adminblogs/DELETE_BLOG_ERROR';
-export const CREATE_BLOG = 'boilerplate/adminblogs/CREATE_BLOG';
-export const CREATE_BLOG_SUCCESS = 'boilerplate/adminblogs/CREATE_BLOG_SUCCESS';
-export const CREATE_BLOG_ERROR = 'boilerplate/adminblogs/CREATE_BLOG_ERROR';

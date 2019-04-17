@@ -6,9 +6,6 @@ import {
   DELETE_BLOG,
   DELETE_BLOG_SUCCESS,
   DELETE_BLOG_ERROR,
-  CREATE_BLOG,
-  CREATE_BLOG_SUCCESS,
-  CREATE_BLOG_ERROR,
 } from './constants';
 
 const initialState = fromJS({});
@@ -33,15 +30,6 @@ function appReducer(state = initialState, action) {
       return state.set('deleting', false).set('deleteSuccess', true);
     case DELETE_BLOG_ERROR:
       return state.set('deleting', false).set('deleteError', action.error);
-    case CREATE_BLOG:
-      return state
-        .set('id', action.id)
-        .set('creating', true)
-        .set('createError', false);
-    case CREATE_BLOG_SUCCESS:
-      return state.set('creating', false).set('createSuccess', true);
-    case CREATE_BLOG_ERROR:
-      return state.set('creating', false).set('createError', action.error);
     default:
       return state;
   }

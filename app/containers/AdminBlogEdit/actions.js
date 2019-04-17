@@ -5,6 +5,9 @@ import {
   UPDATE_BLOG,
   UPDATE_BLOG_SUCCESS,
   UPDATE_BLOG_ERROR,
+  CREATE_BLOG,
+  CREATE_BLOG_ERROR,
+  CREATE_BLOG_SUCCESS,
 } from './constants';
 
 export function loadBlog(blogId) {
@@ -46,4 +49,16 @@ export function updateBlogError(error) {
     type: UPDATE_BLOG_ERROR,
     error,
   };
+}
+
+export function createBlog(newBlog) {
+  return { type: CREATE_BLOG, newBlog };
+}
+
+export function createBlogSuccess() {
+  return { type: CREATE_BLOG_SUCCESS };
+}
+
+export function createBlogError(error) {
+  return { type: CREATE_BLOG_ERROR, error };
 }

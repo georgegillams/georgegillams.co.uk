@@ -85,6 +85,7 @@ const App = () => (
         <Route path="/account" component={AccountPage} />
         <Route path="/monzoPots" component={MonzoPots} />
         <Route path="/admin/users" component={AdminUsersPage} />
+        <Route path="/admin/blog/create" component={AdminBlogEdit} />
         <Route path="/admin/blog/edit/:id" component={AdminBlogEdit} />
         <Route path="/admin/blog" component={AdminBlogs} />
         <Route path="/admin/monzo" component={AdminMonzo} />

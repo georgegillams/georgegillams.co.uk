@@ -41,8 +41,6 @@ export default class AdminBlogs extends React.Component {
       blogsLoading,
       blogsLoadedSuccess,
       blogsLoadedError,
-      createBlog,
-      creatingBlog,
       deleteBlog,
       deletingBlog,
       ...rest
@@ -60,27 +58,22 @@ export default class AdminBlogs extends React.Component {
           setLoginRedirect={() => setLoginRedirect('admin/blog')}
         >
           <Section name="Admin - blog">
-            <FormBuilder
-              formFields={[
-                {
-                  id: 'requestedId',
-                  name: 'Desired ID',
-                  validationRegex: ID_REGEX,
-                  show: true,
-                  disabled: creatingBlog,
-                },
-              ]}
-              entity={this.state.newBlog}
-              submitLabel="Create blog"
-              onSubmit={() => createBlog(this.state.newBlog.requestedId)}
-              onDataChanged={newValue => {
-                this.setState({ newBlog: newValue });
-              }}
-            />
+            <GGButton
+              className={getClassName('pages__component')}
+              large
+              href="/admin/blog/create"
+            >
+              Create blog
+            </GGButton>
             {blogs &&
               blogs.map &&
               blogs.map(b => (
-                <Card style={{ marginBottom: '2rem' }}>
+                <Card
+                  className={getClassName(
+                    'pages__component',
+                    'pages__bpk-card',
+                  )}
+                >
                   <APIEntity name="more" entityType="Blog" entity={b} />
                   <BlogCard linkPrefix="/admin/blog/edit" blog={b} />
                   <GGButton

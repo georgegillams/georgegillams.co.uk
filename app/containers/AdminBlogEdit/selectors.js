@@ -5,55 +5,79 @@ const selectAdminBlogs = state => state.get('adminblogedit');
 const makeSelectBlog = () =>
   createSelector(
     selectAdminBlogs,
-    adminUsersState => adminUsersState.get('blog'),
+    adminBlogsState => adminBlogsState.get('blog'),
   );
 
 const makeSelectBlogLoading = () =>
   createSelector(
     selectAdminBlogs,
-    adminUsersState => adminUsersState.get('loading'),
+    adminBlogsState => adminBlogsState.get('loading'),
   );
 
 const makeSelectBlogLoadedSuccess = () =>
   createSelector(
     selectAdminBlogs,
-    adminUsersState => adminUsersState.get('success'),
+    adminBlogsState => adminBlogsState.get('success'),
   );
 
 const makeSelectBlogLoadedError = () =>
   createSelector(
     selectAdminBlogs,
-    adminUsersState => adminUsersState.get('error'),
+    adminBlogsState => adminBlogsState.get('error'),
   );
 
 const makeSelectBlogUpdating = () =>
   createSelector(
     selectAdminBlogs,
-    adminUsersState => adminUsersState.get('updating'),
+    adminBlogsState => adminBlogsState.get('updating'),
   );
 
 const makeSelectBlogUpdatedSuccess = () =>
   createSelector(
     selectAdminBlogs,
-    adminUsersState => adminUsersState.get('updateSuccess'),
+    adminBlogsState => adminBlogsState.get('updateSuccess'),
   );
 
 const makeSelectBlogUpdatedError = () =>
   createSelector(
     selectAdminBlogs,
-    adminUsersState => adminUsersState.get('updateError'),
+    adminBlogsState => adminBlogsState.get('updateError'),
   );
 
 const makeSelectBlogId = () =>
   createSelector(
     selectAdminBlogs,
-    adminUsersState => adminUsersState.get('blogId'),
+    adminBlogsState => adminBlogsState.get('blogId'),
   );
 
 const makeSelectNewBlog = () =>
   createSelector(
     selectAdminBlogs,
-    adminUsersState => adminUsersState.get('newBlog'),
+    adminBlogsState => adminBlogsState.get('newBlog'),
+  );
+
+const makeSelectCreateBlogId = () =>
+  createSelector(
+    selectAdminBlogs,
+    adminBlogsState => adminBlogsState.get('id'),
+  );
+
+const makeSelectCreatingBlog = () =>
+  createSelector(
+    selectAdminBlogs,
+    adminBlogsState => adminBlogsState.get('creating'),
+  );
+
+const makeSelectCreateBlogSuccess = () =>
+  createSelector(
+    selectAdminBlogs,
+    adminBlogsState => adminBlogsState.get('createSuccess'),
+  );
+
+const makeSelectCreateBlogError = () =>
+  createSelector(
+    selectAdminBlogs,
+    adminBlogsState => adminBlogsState.get('createError'),
   );
 
 export {
@@ -66,4 +90,8 @@ export {
   makeSelectBlogLoading,
   makeSelectBlogLoadedSuccess,
   makeSelectBlogLoadedError,
+  makeSelectCreateBlogId,
+  makeSelectCreatingBlog,
+  makeSelectCreateBlogSuccess,
+  makeSelectCreateBlogError,
 };

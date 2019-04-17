@@ -16,8 +16,9 @@ import {
   makeSelectBlogUpdating,
   makeSelectBlogUpdatedSuccess,
   makeSelectBlogUpdatedError,
+  makeSelectCreatingBlog,
 } from './selectors';
-import { loadBlog, updateBlog } from './actions';
+import { loadBlog, updateBlog, createBlog } from './actions';
 import reducer from './reducer';
 import saga from './saga';
 import AdminBlogEdit from './AdminBlogEdit';
@@ -25,6 +26,7 @@ import AdminBlogEdit from './AdminBlogEdit';
 const mapDispatchToProps = dispatch => ({
   setLoginRedirect: lr => dispatch(setLoginRedirect(lr)),
   loadBlog: id => dispatch(loadBlog(id)),
+  createBlog: newValue => dispatch(createBlog(newValue)),
   updateBlog: newValue => dispatch(updateBlog(newValue)),
 });
 
@@ -38,6 +40,7 @@ const mapStateToProps = createStructuredSelector({
   blogUpdating: makeSelectBlogUpdating(),
   blogUpdatedSuccess: makeSelectBlogUpdatedSuccess(),
   blogUpdatedError: makeSelectBlogUpdatedError(),
+  creatingBlog: makeSelectCreatingBlog(),
 });
 
 const withConnect = connect(

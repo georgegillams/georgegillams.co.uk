@@ -5,9 +5,6 @@ import {
   DELETE_BLOG,
   DELETE_BLOG_ERROR,
   DELETE_BLOG_SUCCESS,
-  CREATE_BLOG,
-  CREATE_BLOG_ERROR,
-  CREATE_BLOG_SUCCESS,
 } from './constants';
 
 export function loadBlogs() {
@@ -48,16 +45,4 @@ export function deleteBlogError(error) {
     type: DELETE_BLOG_ERROR,
     error,
   };
-}
-
-export function createBlog(id) {
-  return { type: CREATE_BLOG, id };
-}
-
-export function createBlogSuccess() {
-  return { type: CREATE_BLOG_SUCCESS };
-}
-
-export function createBlogError(error) {
-  return { type: CREATE_BLOG_ERROR, error };
 }
