@@ -30,7 +30,9 @@ export default class AdminBlogEdit extends React.Component {
 
   componentDidMount = () => {
     const blogId = this.props.match.params.id;
-    this.props.loadBlog(blogId);
+    if (blogId) {
+      this.props.loadBlog(blogId);
+    }
   };
 
   render() {
@@ -41,6 +43,7 @@ export default class AdminBlogEdit extends React.Component {
       className,
       loadBlog,
       updateBlog,
+      createBlog,
       blog,
       blogLoading,
       blogLoadedSuccess,
@@ -48,6 +51,9 @@ export default class AdminBlogEdit extends React.Component {
       blogUpdating,
       blogUpdatedSuccess,
       blogUpdatedError,
+      blogCreating,
+      blogCreatedSuccess,
+      blogCreatedError,
       ...rest
     } = this.props;
     const outerClassNameFinal = [getClassName('pages__container')];
@@ -63,15 +69,19 @@ export default class AdminBlogEdit extends React.Component {
           setLoginRedirect={() => setLoginRedirect('admin/blog')}
         >
           <Section name="Admin - blog">
-            {blog && (
-              <CreateBlogForm
-                disabled={blogUpdating || !this.state.newBlog}
-                blog={this.state.newBlog || blog}
-                onDataChanged={n => this.setState({ newBlog: n })}
-                onSubmit={() => updateBlog(this.state.newBlog)}
-                submitLabel="Update blog"
-              />
-            )}
+            <CreateBlogForm
+              disabled={blogUpdating || blogCreating || !this.state.newBlog}
+              blog={this.state.newBlog || blog || {}}
+              onDataChanged={n => this.setState({ newBlog: n })}
+              onSubmit={() => {
+                if (blog) {
+                  updateBlog(this.state.newBlog);
+                } else {
+                  createBlog(this.state.newBlog);
+                }
+              }}
+              submitLabel={blog ? 'Update blog' : 'Create blog'}
+            />
           </Section>
         </AdminOnly>
       </div>
@@ -94,10 +104,18 @@ export default class AdminBlogEdit extends React.Component {
             userLoading,
             className,
             loadBlog,
+            updateBlog,
+            createBlog,
             blog,
             blogLoading,
             blogLoadedSuccess,
             blogLoadedError,
+            blogUpdating,
+            blogUpdatedSuccess,
+            blogUpdatedError,
+            blogCreating,
+            blogCreatedSuccess,
+            blogCreatedError,
           }}
         />
       </Fragment>

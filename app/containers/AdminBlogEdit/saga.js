@@ -1,18 +1,24 @@
 import { call, put, select, takeLatest } from 'redux-saga/effects';
-import { LOAD_BLOG, UPDATE_BLOG } from './constants';
+import { LOAD_BLOG, UPDATE_BLOG, CREATE_BLOG } from './constants';
 import {
   loadBlogSuccess,
   loadBlogError,
   updateBlogError,
   updateBlogSuccess,
+  createBlogSuccess,
+  createBlogError,
 } from './actions';
 import { pushMessage } from 'containers/RequestStatusWrapper/actions';
 import { API_ENDPOINT, COMMUNICATION_ERROR_MESSAGE } from 'helpers/constants';
-import { associate } from 'helpers/objects';
 import { makeSelectBlogId, makeSelectNewBlog } from './selectors';
 
 import request from 'utils/request';
 
+const blogCreatedMessage = { type: 'success', message: 'Blog created!' };
+const blogCreateErrorMessage = {
+  type: 'error',
+  message: 'Could not create blog.',
+};
 const blogLoadedMessage = { type: 'success', message: 'Blog loaded!' };
 const blogLoadErrorMessage = {
   type: 'error',
@@ -71,7 +77,33 @@ export function* doUpdateBlog() {
   }
 }
 
+export function* doCreateBlog() {
+  const blog = yield select(makeSelectNewBlog());
+  const blogDeleteUrl = `${API_ENDPOINT}/blogs/create`;
+
+  try {
+    const blogCreateResult = yield call(request, blogDeleteUrl, {
+      method: 'POST',
+      body: JSON.stringify(blog),
+      headers: {
+        'Content-Type': 'application/json',
+      },
+    });
+    if (blogCreateResult.error) {
+      yield put(createBlogError(blogCreateResult));
+      yield put(pushMessage(blogCreateErrorMessage));
+    } else {
+      yield put(createBlogSuccess(blogCreateResult));
+      yield put(pushMessage(blogCreatedMessage));
+    }
+  } catch (err) {
+    yield put(createBlogError(err));
+    yield put(pushMessage(COMMUNICATION_ERROR_MESSAGE));
+  }
+}
+
 export default function* adminUsers() {
   yield takeLatest(LOAD_BLOG, () => doLoadBlog());
   yield takeLatest(UPDATE_BLOG, () => doUpdateBlog());
+  yield takeLatest(CREATE_BLOG, () => doCreateBlog());
 }

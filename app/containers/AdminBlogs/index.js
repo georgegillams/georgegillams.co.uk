@@ -14,10 +14,8 @@ import {
   makeSelectBlogsLoadedSuccess,
   makeSelectBlogsLoadedError,
   makeSelectDeletingBlog,
-  makeSelectCreatingBlog,
 } from './selectors';
-import { setCookiesAllowed } from 'containers/App/actions';
-import { loadBlogs, deleteBlog, createBlog } from './actions';
+import { loadBlogs, deleteBlog } from './actions';
 import reducer from './reducer';
 import saga from './saga';
 import AdminBlogs from './AdminBlogs';
@@ -25,7 +23,6 @@ import AdminBlogs from './AdminBlogs';
 const mapDispatchToProps = dispatch => ({
   setLoginRedirect: lr => dispatch(setLoginRedirect(lr)),
   loadBlogs: () => dispatch(loadBlogs()),
-  createBlog: id => dispatch(createBlog(id)),
   deleteBlog: blog => dispatch(deleteBlog(blog)),
 });
 
@@ -36,7 +33,6 @@ const mapStateToProps = createStructuredSelector({
   blogsLoading: makeSelectBlogsLoading(),
   blogsLoadedSuccess: makeSelectBlogsLoadedSuccess(),
   blogsLoadedError: makeSelectBlogsLoadedError(),
-  creatingBlog: makeSelectCreatingBlog(),
   deletingblog: makeSelectDeletingBlog(),
 });
 

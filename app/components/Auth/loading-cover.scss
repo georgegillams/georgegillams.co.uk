@@ -3,12 +3,12 @@
 
 .loading-cover {
   &__overlay {
-    background-color: $not-black-invert;
+    background-color: $background-color;
     z-index: 2;
     min-height: 3rem;
 
     @media (prefers-color-scheme: dark) {
-      background-color: $not-black;
+      background-color: $background-color-invert;
     }
   }
 }

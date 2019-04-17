@@ -50,30 +50,6 @@ const makeSelectDeleteBlogError = () =>
     adminUsersState => adminUsersState.get('deleteError'),
   );
 
-const makeSelectCreateBlogId = () =>
-  createSelector(
-    selectAdminBlogs,
-    adminUsersState => adminUsersState.get('id'),
-  );
-
-const makeSelectCreatingBlog = () =>
-  createSelector(
-    selectAdminBlogs,
-    adminUsersState => adminUsersState.get('creating'),
-  );
-
-const makeSelectCreateBlogSuccess = () =>
-  createSelector(
-    selectAdminBlogs,
-    adminUsersState => adminUsersState.get('createSuccess'),
-  );
-
-const makeSelectCreateBlogError = () =>
-  createSelector(
-    selectAdminBlogs,
-    adminUsersState => adminUsersState.get('createError'),
-  );
-
 export {
   makeSelectBlogs,
   makeSelectBlogsLoading,
@@ -83,8 +59,4 @@ export {
   makeSelectDeletingBlog,
   makeSelectDeleteBlogSuccess,
   makeSelectDeleteBlogError,
-  makeSelectCreateBlogId,
-  makeSelectCreatingBlog,
-  makeSelectCreateBlogSuccess,
-  makeSelectCreateBlogError,
 };

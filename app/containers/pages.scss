@@ -39,6 +39,12 @@
     border-radius: $bpk-border-radius-sm;
   }
 
+  &__bpk-card {
+    @media (prefers-color-scheme: dark) {
+      background-color: $not-black !important;
+    }
+  }
+
   &__site-map-item {
     width: auto;
   }
