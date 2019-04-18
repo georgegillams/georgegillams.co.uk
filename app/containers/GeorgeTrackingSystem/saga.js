@@ -1,6 +1,6 @@
 import { call, put, select, takeLatest } from 'redux-saga/effects';
 import { LOAD_GTS_LATEST } from './constants';
-import { gtsLatestLoaded, gtsLatestLoadingError } from './actions';
+import { loadGtsLatestSuccess, loadGtsLatestError } from './actions';
 import { API_ENDPOINT } from 'helpers/constants';
 
 import request from 'utils/request';
@@ -10,12 +10,12 @@ export function* getGtsLatest() {
 
   try {
     const gtsLatest = yield call(request, requestURL);
-    yield put(gtsLatestLoaded(gtsLatest));
+    yield put(loadGtsLatestSuccess(gtsLatest));
   } catch (err) {
-    yield put(gtsLatestLoadingError(err));
+    yield put(loadGtsLatestError(err));
   }
 }
 
-export default function* gtsDataLatest() {
+export default function* gtsgtsLatest() {
   yield takeLatest(LOAD_GTS_LATEST, getGtsLatest);
 }

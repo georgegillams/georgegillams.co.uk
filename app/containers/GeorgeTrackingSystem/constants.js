@@ -1,6 +1,7 @@
-export const LOAD_GTS_LATEST =
-  'boilerplate/GeorgeTrackingSystem/LOAD_GTS_LATEST';
-export const LOAD_GTS_LATEST_ERROR =
-  'boilerplate/GeorgeTrackingSystem/LOAD_GTS_LATEST_ERROR';
-export const LOAD_GTS_LATEST_SUCCESS =
-  'boilerplate/GeorgeTrackingSystem/LOAD_GTS_LATEST_SUCCESS';
+import defineConstants from 'helpers/redux/constants';
+
+module.exports = defineConstants(
+  'LOAD_GTS_LATEST',
+  'LOAD_GTS_LATEST_ERROR',
+  'LOAD_GTS_LATEST_SUCCESS',
+);

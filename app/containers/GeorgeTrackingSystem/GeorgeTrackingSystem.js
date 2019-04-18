@@ -4,9 +4,9 @@ import { Helmet } from 'react-helmet';
 import { Section, SubSection } from 'components/Typography';
 import GTSEntity from 'components/GTS';
 import LoadingIndicator from 'components/LoadingIndicator';
-import STYLES from 'containers/pages.scss'; import {cssModules} from 'bpk-react-utils';  const getClassName = cssModules(STYLES); // REGEX_REPLACED
-
-
+import STYLES from 'containers/pages.scss';
+import { cssModules } from 'bpk-react-utils';
+const getClassName = cssModules(STYLES); // REGEX_REPLACED
 
 export default class GeorgeTrackingSystem extends React.Component {
   componentWillMount = () => {
@@ -17,7 +17,7 @@ export default class GeorgeTrackingSystem extends React.Component {
     const {
       loading,
       error,
-      gtsData,
+      gtsLatest,
       loadGtsLatest,
       className,
       ...rest
@@ -35,12 +35,12 @@ export default class GeorgeTrackingSystem extends React.Component {
       <div className={outerClassNameFinal.join(' ')} {...rest}>
         <Helmet title="Tracking" />
         <LoadingIndicator loading={loading} error={error}>
-          {!gtsData && (
+          {!gtsLatest && (
             <Section name="No live tracking currently available">
               <Section name="🗺" />
             </Section>
           )}
-          {gtsData && <GTSEntity gts={gtsData} />}
+          {gtsLatest && <GTSEntity gts={gtsLatest} />}
         </LoadingIndicator>
       </div>
     );
@@ -50,7 +50,7 @@ export default class GeorgeTrackingSystem extends React.Component {
 GeorgeTrackingSystem.propTypes = {
   loading: PropTypes.bool,
   error: PropTypes.oneOfType([PropTypes.object, PropTypes.bool]),
-  gtsData: PropTypes.object,
+  gtsLatest: PropTypes.object,
   loadGtsLatest: PropTypes.func.isRequired,
   className: PropTypes.string,
 };
