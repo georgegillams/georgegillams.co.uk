@@ -91,6 +91,7 @@ class CreateBlogForm extends React.Component {
           {
             id: 'content',
             name: 'Content',
+            long: true,
             validationRegex: ANYTHING_REGEX,
             show: true,
           },

@@ -4,6 +4,7 @@ import BpkInput, { INPUT_TYPES } from 'bpk-component-input';
 import BpkCheckBox from 'bpk-component-checkbox';
 import GGButton from 'components/GGButton';
 import { TextLink } from 'components/Typography';
+import BpkTextarea from 'bpk-component-textarea';
 
 import { EMAIL_REGEX, PASSWORD_REGEX } from 'helpers/constants';
 import { formValueChanged } from 'helpers/objects';
@@ -80,50 +81,81 @@ class FormBuilder extends React.Component {
 
     return (
       <div className={classNameFinal.join(' ')} {...rest}>
-        {filteredFormFields.map((formField, index) =>
-          formField.type === 'CHECKBOX' ? (
-            <Fragment>
-              <BpkCheckBox
-                className={getClassName('forms__component')}
-                name={formField.name}
-                label={formField.name}
-                checked={entity[formField.id]}
-                onChange={event =>
-                  formValueChanged(entity, formField.id, event, onDataChanged)
-                }
-                disabled={formField.disabled}
-              />
-              <br />
-            </Fragment>
-          ) : (
-            <Fragment>
-              <label
-                htmlFor={formField.id}
-                className={getClassName(
-                  'forms__component',
-                  'forms__component__label',
-                )}
-              >
-                {formField.name}
-              </label>
-              <BpkInput
-                className={getClassName(
-                  'forms__component',
-                  'forms__component__text-box',
-                )}
-                id={formField.id}
-                name={formField.name}
-                value={entity[formField.id]}
-                valid={validity[index]}
-                onChange={event =>
-                  formValueChanged(entity, formField.id, event, onDataChanged)
-                }
-                disabled={formField.disabled}
-                placeholder={formField.name}
-              />
-            </Fragment>
-          ),
-        )}
+        {filteredFormFields.map((formField, index) => (
+          <Fragment>
+            {formField.type === 'CHECKBOX' && (
+              <Fragment>
+                <BpkCheckBox
+                  className={getClassName('forms__component')}
+                  name={formField.name}
+                  label={formField.name}
+                  checked={entity[formField.id]}
+                  onChange={event =>
+                    formValueChanged(entity, formField.id, event, onDataChanged)
+                  }
+                  disabled={formField.disabled}
+                />
+                <br />
+              </Fragment>
+            )}
+            {!formField.long && formField.type !== 'CHECKBOX' && (
+              <Fragment>
+                <label
+                  htmlFor={formField.id}
+                  className={getClassName(
+                    'forms__component',
+                    'forms__component__label',
+                  )}
+                >
+                  {formField.name}
+                </label>
+                <BpkInput
+                  className={getClassName(
+                    'forms__component',
+                    'forms__component__text-box',
+                  )}
+                  id={formField.id}
+                  name={formField.name}
+                  value={entity[formField.id]}
+                  valid={validity[index]}
+                  onChange={event =>
+                    formValueChanged(entity, formField.id, event, onDataChanged)
+                  }
+                  disabled={formField.disabled}
+                  placeholder={formField.name}
+                />
+              </Fragment>
+            )}
+            {formField.long && formField.type !== 'CHECKBOX' && (
+              <Fragment>
+                <label
+                  htmlFor={formField.id}
+                  className={getClassName(
+                    'forms__component',
+                    'forms__component__label',
+                  )}
+                >
+                  {formField.name}
+                </label>
+                <BpkTextarea
+                  className={getClassName(
+                    'forms__component',
+                    'forms__component__text-box',
+                  )}
+                  id={formField.id}
+                  name={formField.name}
+                  value={entity[formField.id]}
+                  valid={validity[index]}
+                  onChange={event =>
+                    formValueChanged(entity, formField.id, event, onDataChanged)
+                  }
+                  disabled={formField.disabled}
+                  placeholder={formField.name}
+                />
+              </Fragment>
+            )}
+          </Fragment>
+        ))}
         {presubmitText && (
           <Fragment>
             <div className={getClassName('forms__component')}>
