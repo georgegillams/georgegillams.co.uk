@@ -5,9 +5,9 @@ import { Section, SubSection, TextLink } from 'components/Typography';
 import RequestStatusContainer from 'components/RequestStatus';
 import cookie from 'react-cookies';
 
-import STYLES from 'containers/pages.scss'; import {cssModules} from 'bpk-react-utils';  const getClassName = cssModules(STYLES); // REGEX_REPLACED
-
-
+import STYLES from 'containers/pages.scss';
+import { cssModules } from 'bpk-react-utils';
+const getClassName = cssModules(STYLES); // REGEX_REPLACED
 
 export default class RequestStatusWrapper extends React.Component {
   componentDidMount = () => {
