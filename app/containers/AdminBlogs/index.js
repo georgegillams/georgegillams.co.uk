@@ -3,38 +3,22 @@ import { compose } from 'redux';
 import { createStructuredSelector } from 'reselect';
 import injectReducer from 'utils/injectReducer';
 import injectSaga from 'utils/injectSaga';
-import {
-  makeSelectUser,
-  makeSelectUserLoading,
-} from 'containers/App/selectors';
-import { setLoginRedirect } from 'containers/App/actions';
-import {
-  makeSelectBlogs,
-  makeSelectBlogsLoading,
-  makeSelectBlogsLoadedSuccess,
-  makeSelectBlogsLoadedError,
-  makeSelectDeletingBlog,
-} from './selectors';
-import { loadBlogs, deleteBlog } from './actions';
+import appSelectors from 'containers/App/selectors';
+import appActions from 'containers/App/actions';
+import { mapSelectors } from 'helpers/redux/selectors';
+import { mapActions } from 'helpers/redux/actions';
+import selectors from './selectors';
+import actions from './actions';
 import reducer from './reducer';
 import saga from './saga';
-import AdminBlogs from './AdminBlogs';
+import Comp from './AdminBlogs';
 
-const mapDispatchToProps = dispatch => ({
-  setLoginRedirect: lr => dispatch(setLoginRedirect(lr)),
-  loadBlogs: () => dispatch(loadBlogs()),
-  deleteBlog: blog => dispatch(deleteBlog(blog)),
-});
+const mapDispatchToProps = dispatch =>
+  mapActions(dispatch, { ...appActions, ...actions });
 
-const mapStateToProps = createStructuredSelector({
-  user: makeSelectUser(),
-  userLoading: makeSelectUserLoading(),
-  blogs: makeSelectBlogs(),
-  blogsLoading: makeSelectBlogsLoading(),
-  blogsLoadedSuccess: makeSelectBlogsLoadedSuccess(),
-  blogsLoadedError: makeSelectBlogsLoadedError(),
-  deletingblog: makeSelectDeletingBlog(),
-});
+const mapStateToProps = createStructuredSelector(
+  mapSelectors({ ...appSelectors, ...selectors }),
+);
 
 const withConnect = connect(
   mapStateToProps,
@@ -48,5 +32,5 @@ export default compose(
   withReducer,
   withSaga,
   withConnect,
-)(AdminBlogs);
+)(Comp);
 export { mapDispatchToProps };

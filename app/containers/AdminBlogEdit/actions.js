@@ -1,3 +1,4 @@
+import defineActions from 'helpers/redux/actions';
 import {
   LOAD_BLOG,
   LOAD_BLOG_SUCCESS,
@@ -10,55 +11,41 @@ import {
   CREATE_BLOG_SUCCESS,
 } from './constants';
 
-export function loadBlog(blogId) {
-  return {
-    type: LOAD_BLOG,
-    blogId,
-  };
-}
-
-export function loadBlogSuccess(blog) {
-  return {
-    type: LOAD_BLOG_SUCCESS,
-    blog,
-  };
-}
-
-export function loadBlogError(error) {
-  return {
-    type: LOAD_BLOG_ERROR,
-    error,
-  };
-}
-
-export function updateBlog(newBlog) {
-  return {
-    type: UPDATE_BLOG,
-    newBlog,
-  };
-}
-
-export function updateBlogSuccess() {
-  return {
-    type: UPDATE_BLOG_SUCCESS,
-  };
-}
-
-export function updateBlogError(error) {
-  return {
-    type: UPDATE_BLOG_ERROR,
-    error,
-  };
-}
-
-export function createBlog(newBlog) {
-  return { type: CREATE_BLOG, newBlog };
-}
-
-export function createBlogSuccess() {
-  return { type: CREATE_BLOG_SUCCESS };
-}
-
-export function createBlogError(error) {
-  return { type: CREATE_BLOG_ERROR, error };
-}
+module.exports = defineActions([
+  {
+    name: LOAD_BLOG,
+    attributes: ['blogId'],
+  },
+  {
+    name: LOAD_BLOG_SUCCESS,
+    attributes: ['blog'],
+  },
+  {
+    name: LOAD_BLOG_ERROR,
+    attributes: ['error'],
+  },
+  {
+    name: UPDATE_BLOG,
+    attributes: ['newBlog'],
+  },
+  {
+    name: UPDATE_BLOG_SUCCESS,
+    attributes: [],
+  },
+  {
+    name: UPDATE_BLOG_ERROR,
+    attributes: ['error'],
+  },
+  {
+    name: CREATE_BLOG,
+    attributes: ['newBlog'],
+  },
+  {
+    name: CREATE_BLOG_SUCCESS,
+    attributes: [],
+  },
+  {
+    name: CREATE_BLOG_ERROR,
+    attributes: ['error'],
+  },
+]);

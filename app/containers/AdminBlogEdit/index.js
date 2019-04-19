@@ -3,45 +3,22 @@ import { compose } from 'redux';
 import { createStructuredSelector } from 'reselect';
 import injectReducer from 'utils/injectReducer';
 import injectSaga from 'utils/injectSaga';
-import {
-  makeSelectUser,
-  makeSelectUserLoading,
-} from 'containers/App/selectors';
-import { setLoginRedirect } from 'containers/App/actions';
-import {
-  makeSelectBlog,
-  makeSelectBlogLoading,
-  makeSelectBlogLoadedSuccess,
-  makeSelectBlogLoadedError,
-  makeSelectBlogUpdating,
-  makeSelectBlogUpdatedSuccess,
-  makeSelectBlogUpdatedError,
-  makeSelectCreatingBlog,
-} from './selectors';
-import { loadBlog, updateBlog, createBlog } from './actions';
+import appSelectors from 'containers/App/selectors';
+import appActions from 'containers/App/actions';
+import { mapSelectors } from 'helpers/redux/selectors';
+import { mapActions } from 'helpers/redux/actions';
+import selectors from './selectors';
+import actions from './actions';
 import reducer from './reducer';
 import saga from './saga';
 import AdminBlogEdit from './AdminBlogEdit';
 
-const mapDispatchToProps = dispatch => ({
-  setLoginRedirect: lr => dispatch(setLoginRedirect(lr)),
-  loadBlog: id => dispatch(loadBlog(id)),
-  createBlog: newValue => dispatch(createBlog(newValue)),
-  updateBlog: newValue => dispatch(updateBlog(newValue)),
-});
+const mapDispatchToProps = dispatch =>
+  mapActions(dispatch, { ...appActions, ...actions });
 
-const mapStateToProps = createStructuredSelector({
-  user: makeSelectUser(),
-  userLoading: makeSelectUserLoading(),
-  blog: makeSelectBlog(),
-  blogLoading: makeSelectBlogLoading(),
-  blogLoadedSuccess: makeSelectBlogLoadedSuccess(),
-  blogLoadedError: makeSelectBlogLoadedError(),
-  blogUpdating: makeSelectBlogUpdating(),
-  blogUpdatedSuccess: makeSelectBlogUpdatedSuccess(),
-  blogUpdatedError: makeSelectBlogUpdatedError(),
-  creatingBlog: makeSelectCreatingBlog(),
-});
+const mapStateToProps = createStructuredSelector(
+  mapSelectors({ ...appSelectors, ...selectors }),
+);
 
 const withConnect = connect(
   mapStateToProps,
