@@ -3,25 +3,17 @@ import { compose } from 'redux';
 import { createStructuredSelector } from 'reselect';
 import injectReducer from 'utils/injectReducer';
 import injectSaga from 'utils/injectSaga';
-import {
-  makeSelectGtsLatest,
-  makeSelectGtsLoading,
-  makeSelectGtsError,
-} from './selectors';
-import { loadGtsLatest } from './actions';
+import selectors from './selectors';
+import actions from './actions';
 import reducer from './reducer';
 import saga from './saga';
-import GeorgeTrackingSystem from './GeorgeTrackingSystem';
+import { mapSelectors } from 'helpers/redux/selectors';
+import { mapActions } from 'helpers/redux/actions';
+import Component from './GeorgeTrackingSystem';
 
-const mapDispatchToProps = dispatch => ({
-  loadGtsLatest: () => dispatch(loadGtsLatest()),
-});
+const mapDispatchToProps = dispatch => mapActions(dispatch, actions);
 
-const mapStateToProps = createStructuredSelector({
-  gtsData: makeSelectGtsLatest(),
-  loading: makeSelectGtsLoading(),
-  error: makeSelectGtsError(),
-});
+const mapStateToProps = createStructuredSelector(mapSelectors(selectors));
 
 const withConnect = connect(
   mapStateToProps,
@@ -35,5 +27,5 @@ export default compose(
   withReducer,
   withSaga,
   withConnect,
-)(GeorgeTrackingSystem);
+)(Component);
 export { mapDispatchToProps };

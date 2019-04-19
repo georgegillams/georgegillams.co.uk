@@ -6,18 +6,14 @@ import {
   LOAD_GTS_LATEST_SUCCESS,
 } from './constants';
 
-const initialState = fromJS({
-  dataLatest: null,
-  loading: false,
-  error: false,
-});
+const initialState = fromJS({});
 
 function appReducer(state = initialState, action) {
   switch (action.type) {
     case LOAD_GTS_LATEST:
       return state.set('loading', true).set('error', false);
     case LOAD_GTS_LATEST_SUCCESS:
-      return state.set('loading', false).set('dataLatest', action.gtsLatest);
+      return state.set('loading', false).set('gtsLatest', action.gtsLatest);
     case LOAD_GTS_LATEST_ERROR:
       return state.set('error', action.error).set('loading', false);
     default:

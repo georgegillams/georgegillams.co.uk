@@ -1,28 +1,3 @@
-import { createSelector } from 'reselect';
+import createSelectors from 'helpers/redux/selectors';
 
-const selectGts = state => state.get('gts');
-
-const makeSelectGtsLatest = () =>
-  createSelector(
-    selectGts,
-    gtsState => gtsState.get('dataLatest'),
-  );
-
-const makeSelectGtsLoading = () =>
-  createSelector(
-    selectGts,
-    gtsState => gtsState.get('loading'),
-  );
-
-const makeSelectGtsError = () =>
-  createSelector(
-    selectGts,
-    gtsState => gtsState.get('error'),
-  );
-
-export {
-  selectGts,
-  makeSelectGtsLatest,
-  makeSelectGtsLoading,
-  makeSelectGtsError,
-};
+module.exports = createSelectors('gts', ['gtsLatest', 'loading', 'error']);
