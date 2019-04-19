@@ -17,14 +17,11 @@ const defineActions = actionDefinitions => {
   const result = {};
 
   for (let i = 0; i < actionDefinitions.length; i += 1) {
-    const action = defineAction(
-      actionDefinitions[i].name,
-      actionDefinitions[i].attributes,
-    );
-    // TODO We shouldn't rely on inferring the method name from the unique id, as this is very closely coupled to our constants generator
-    let actionName = actionDefinitions[i].name.split('-')[0];
-    actionName = camelCase(actionName);
-    result[actionName] = action;
+    let name = Object.keys(actionDefinitions[i])[0];
+    const actionName = actionDefinitions[i][name];
+    const action = defineAction(actionName, actionDefinitions[i].attributes);
+    name = camelCase(name);
+    result[name] = action;
   }
 
   return result;

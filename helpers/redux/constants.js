@@ -1,5 +1,7 @@
-// TODO Actually create a unique hash
-const generateConstantValue = constantName => `${constantName}-hash`;
+import crypto from 'crypto';
+
+const generateConstantValue = constantName =>
+  `${constantName}-${crypto.randomBytes(6).toString('hex')}`;
 
 const defineConstants = (...constantNames) => {
   const result = {};

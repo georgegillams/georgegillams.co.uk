@@ -7,15 +7,15 @@ import {
 
 module.exports = defineActions([
   {
-    name: LOAD_GTS_LATEST,
+    LOAD_GTS_LATEST,
     attributes: [],
   },
   {
-    name: LOAD_GTS_LATEST_SUCCESS,
+    LOAD_GTS_LATEST_SUCCESS,
     attributes: ['gtsLatest'],
   },
   {
-    name: LOAD_GTS_LATEST_ERROR,
+    LOAD_GTS_LATEST_ERROR,
     attributes: ['error'],
   },
 ]);
