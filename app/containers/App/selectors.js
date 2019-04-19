@@ -54,8 +54,7 @@ const makeSelectLocation = () =>
     routeState => routeState.get('location').toJS(),
   );
 
-export {
-  selectGlobal,
+module.exports = {
   makeSelectLoginRedirect,
   makeSelectUser,
   makeSelectUserLoading,

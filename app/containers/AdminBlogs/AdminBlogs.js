@@ -20,12 +20,6 @@ import STYLES from 'containers/pages.scss';
 const getClassName = cssModules(STYLES);
 
 export default class AdminBlogs extends React.Component {
-  constructor(props) {
-    super(props);
-
-    this.state = { newBlog: {} };
-  }
-
   componentDidMount = () => {
     this.props.loadBlogs();
   };
@@ -38,11 +32,11 @@ export default class AdminBlogs extends React.Component {
       className,
       loadBlogs,
       blogs,
-      blogsLoading,
-      blogsLoadedSuccess,
-      blogsLoadedError,
+      loading,
+      success,
+      error,
       deleteBlog,
-      deletingBlog,
+      deleting,
       ...rest
     } = this.props;
     const outerClassNameFinal = [getClassName('pages__container')];
@@ -79,7 +73,7 @@ export default class AdminBlogs extends React.Component {
                   <GGButton
                     large
                     destructive
-                    disabled={deletingBlog}
+                    disabled={deleting}
                     onClick={() => deleteBlog(b)}
                   >
                     Delete
@@ -96,7 +90,7 @@ export default class AdminBlogs extends React.Component {
         <Helmet title="Admin - blogs" />
         <LoadingCover
           loadingSkeleton={Skeleton}
-          loading={userLoading || (!blogs && blogsLoading)}
+          loading={userLoading || (!blogs && loading)}
         >
           {page}
         </LoadingCover>
@@ -109,9 +103,9 @@ export default class AdminBlogs extends React.Component {
             className,
             loadBlogs,
             blogs,
-            blogsLoading,
-            blogsLoadedSuccess,
-            blogsLoadedError,
+            loading,
+            success,
+            error,
           }}
         />
       </Fragment>
@@ -127,13 +121,12 @@ AdminBlogs.propTypes = {
   setLoginRedirect: PropTypes.func.isRequired,
   blogs: PropTypes.arrayOf(PropTypes.object),
   // eslint-disable-next-line react/forbid-prop-types
-  blogsLoadedError: PropTypes.object,
-  blogsLoadedSuccess: PropTypes.bool,
-  blogsLoading: PropTypes.bool,
+  error: PropTypes.object,
+  success: PropTypes.bool,
+  loading: PropTypes.bool,
   className: PropTypes.string,
   creatingBlog: PropTypes.bool,
-  deletingBlog: PropTypes.bool,
-  error: PropTypes.oneOfType([PropTypes.object, PropTypes.bool]),
+  deleting: PropTypes.bool,
   loggingIn: PropTypes.bool,
   // eslint-disable-next-line react/forbid-prop-types
   user: PropTypes.object,
@@ -142,13 +135,12 @@ AdminBlogs.propTypes = {
 
 AdminBlogs.defaultProps = {
   blogs: null,
-  blogsLoadedError: null,
-  blogsLoadedSuccess: false,
-  blogsLoading: false,
+  error: null,
+  success: false,
+  loading: false,
   className: null,
   creatingBlog: false,
-  deletingBlog: false,
-  error: null,
+  deleting: false,
   loggingIn: false,
   user: null,
   userLoading: false,

@@ -45,15 +45,15 @@ export default class AdminBlogEdit extends React.Component {
       updateBlog,
       createBlog,
       blog,
-      blogLoading,
-      blogLoadedSuccess,
-      blogLoadedError,
-      blogUpdating,
-      blogUpdatedSuccess,
-      blogUpdatedError,
-      blogCreating,
-      blogCreatedSuccess,
-      blogCreatedError,
+      loading,
+      success,
+      error,
+      updating,
+      updateSuccess,
+      updateError,
+      creating,
+      createSuccess,
+      createError,
       ...rest
     } = this.props;
     const outerClassNameFinal = [getClassName('pages__container')];
@@ -70,7 +70,7 @@ export default class AdminBlogEdit extends React.Component {
         >
           <Section name="Admin - blog">
             <CreateBlogForm
-              disabled={blogUpdating || blogCreating || !this.state.newBlog}
+              disabled={updating || creating || !this.state.newBlog}
               blog={this.state.newBlog || blog || {}}
               onDataChanged={n => this.setState({ newBlog: n })}
               onSubmit={() => {
@@ -92,7 +92,7 @@ export default class AdminBlogEdit extends React.Component {
         <Helmet title="Admin - blog" />
         <LoadingCover
           loadingSkeleton={Skeleton}
-          loading={userLoading || blogLoading}
+          loading={userLoading || loading}
         >
           {page}
         </LoadingCover>
@@ -107,15 +107,15 @@ export default class AdminBlogEdit extends React.Component {
             updateBlog,
             createBlog,
             blog,
-            blogLoading,
-            blogLoadedSuccess,
-            blogLoadedError,
-            blogUpdating,
-            blogUpdatedSuccess,
-            blogUpdatedError,
-            blogCreating,
-            blogCreatedSuccess,
-            blogCreatedError,
+            loading,
+            success,
+            error,
+            updating,
+            updateSuccess,
+            updateError,
+            creating,
+            createSuccess,
+            createError,
           }}
         />
       </Fragment>

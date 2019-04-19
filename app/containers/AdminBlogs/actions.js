@@ -1,3 +1,4 @@
+import defineActions from 'helpers/redux/actions';
 import {
   LOAD_BLOGS,
   LOAD_BLOGS_SUCCESS,
@@ -7,42 +8,29 @@ import {
   DELETE_BLOG_SUCCESS,
 } from './constants';
 
-export function loadBlogs() {
-  return {
-    type: LOAD_BLOGS,
-  };
-}
-
-export function loadBlogsSuccess(blogs) {
-  return {
-    type: LOAD_BLOGS_SUCCESS,
-    blogs,
-  };
-}
-
-export function loadBlogsError(error) {
-  return {
-    type: LOAD_BLOGS_ERROR,
-    error,
-  };
-}
-
-export function deleteBlog(blog) {
-  return {
-    type: DELETE_BLOG,
-    blog,
-  };
-}
-
-export function deleteBlogSuccess() {
-  return {
-    type: DELETE_BLOG_SUCCESS,
-  };
-}
-
-export function deleteBlogError(error) {
-  return {
-    type: DELETE_BLOG_ERROR,
-    error,
-  };
-}
+module.exports = defineActions([
+  {
+    name: LOAD_BLOGS,
+    attributes: [],
+  },
+  {
+    name: LOAD_BLOGS_SUCCESS,
+    attributes: ['blogs'],
+  },
+  {
+    name: LOAD_BLOGS_ERROR,
+    attributes: ['error'],
+  },
+  {
+    name: DELETE_BLOG,
+    attributes: ['blog'],
+  },
+  {
+    name: DELETE_BLOG_SUCCESS,
+    attributes: [],
+  },
+  {
+    name: DELETE_BLOG_ERROR,
+    attributes: ['error'],
+  },
+]);
