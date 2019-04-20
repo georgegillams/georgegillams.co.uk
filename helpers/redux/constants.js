@@ -12,5 +12,13 @@ const defineConstants = (...constantNames) => {
   return result;
 };
 
-export { generateConstantValue };
+const inferConstantsFromActionDefinitions = defs => {
+  const result = [];
+  for (let i = 0; i < defs.length; i += 1) {
+    result.push(Object.keys(defs[i])[0]);
+  }
+  return result;
+};
+
+export { generateConstantValue, inferConstantsFromActionDefinitions };
 export default defineConstants;
