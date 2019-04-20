@@ -1,17 +1,8 @@
 import createSelectors from 'helpers/redux/selectors';
+import { inferPropertiesFromInitialState } from 'helpers/redux/reducers';
+import { initialState } from './reducer';
 
-module.exports = createSelectors('adminblogedit', [
-  'blog',
-  'loading',
-  'success',
-  'error',
-  'updating',
-  'updateSuccess',
-  'updateError',
-  'blogId',
-  'newBlog',
-  'id',
-  'creating',
-  'createSuccess',
-  'createError',
-]);
+module.exports = createSelectors(
+  'adminblogedit',
+  inferPropertiesFromInitialState(initialState),
+);

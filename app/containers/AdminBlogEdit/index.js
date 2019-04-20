@@ -11,7 +11,7 @@ import selectors from './selectors';
 import actions from './actions';
 import reducer from './reducer';
 import saga from './saga';
-import AdminBlogEdit from './AdminBlogEdit';
+import Comp from './AdminBlogEdit';
 
 const mapDispatchToProps = dispatch =>
   mapActions(dispatch, { ...appActions, ...actions });
@@ -32,5 +32,5 @@ export default compose(
   withReducer,
   withSaga,
   withConnect,
-)(AdminBlogEdit);
+)(Comp);
 export { mapDispatchToProps };

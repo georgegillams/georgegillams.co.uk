@@ -40,5 +40,16 @@ const mapActions = (dispatch, actions) => {
   return result;
 };
 
-export { mapActions, defineAction };
+const populateConstants = (defs, constants) => {
+  const result = [];
+  for (let i = 0; i < defs.length; i += 1) {
+    const newDef = JSON.parse(JSON.stringify(defs[i]));
+    const newDefId = Object.keys(newDef)[0];
+    newDef[newDefId] = constants[newDefId];
+    result.push(newDef);
+  }
+  return result;
+};
+
+export { populateConstants, mapActions, defineAction };
 export default defineActions;

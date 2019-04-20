@@ -11,7 +11,20 @@ import {
   CREATE_BLOG_SUCCESS,
 } from './constants';
 
-const initialState = fromJS({});
+const initialState = fromJS({
+  loading: false,
+  error: null,
+  blogId: null,
+  success: false,
+  blog: null,
+  updating: false,
+  updateError: null,
+  newBlog: null,
+  updateSuccess: false,
+  creating: false,
+  createError: null,
+  createSuccess: false,
+});
 
 function appReducer(state = initialState, action) {
   switch (action.type) {
@@ -35,7 +48,9 @@ function appReducer(state = initialState, action) {
     case UPDATE_BLOG_SUCCESS:
       return state.set('updating', false).set('updateSuccess', true);
     case UPDATE_BLOG_ERROR:
-      return state.set('updating', false).set('updateErrorrror', action.error);
+      return state
+        .set('updating', false)
+        .set('updateError', action.updateError);
     case CREATE_BLOG:
       return state
         .set('newBlog', action.newBlog)
@@ -44,10 +59,13 @@ function appReducer(state = initialState, action) {
     case CREATE_BLOG_SUCCESS:
       return state.set('creating', false).set('createSuccess', true);
     case CREATE_BLOG_ERROR:
-      return state.set('creating', false).set('createError', action.error);
+      return state
+        .set('creating', false)
+        .set('createError', action.createError);
     default:
       return state;
   }
 }
 
+export { initialState };
 export default appReducer;
