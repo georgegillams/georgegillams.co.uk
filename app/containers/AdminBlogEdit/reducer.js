@@ -67,5 +67,4 @@ function appReducer(state = initialState, action) {
   }
 }
 
-export { initialState };
 export default appReducer;

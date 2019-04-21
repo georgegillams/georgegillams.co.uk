@@ -10,7 +10,6 @@ const inferPropertiesFromInitialState = s => {
     if (nodes && nodes.length) {
       for (let j = 0; j < nodes.length; j += 1) {
         const res = nodes[j].entry[0];
-        console.log(`res`, res);
         result.push(res);
       }
     }
@@ -18,5 +17,7 @@ const inferPropertiesFromInitialState = s => {
   return result;
 };
 
-export { inferPropertiesFromInitialState };
+const initialState = reducer => reducer(undefined, {});
+
+export { inferPropertiesFromInitialState, initialState };
 export default inferPropertiesFromInitialState;
