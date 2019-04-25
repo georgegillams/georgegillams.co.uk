@@ -3,10 +3,9 @@ import Helmet from 'react-helmet';
 import { Section, TextLink } from 'components/Typography';
 import ArticleCard, { CARD_LAYOUTS } from 'components/Cards';
 import GGButton from 'components/GGButton';
-// import contactFile from "./contact.vcf";
-import { cssModules } from 'bpk-react-utils';
 import { EPICC_EMAIL } from 'helpers/constants';
-import STYLES from '../pages.scss'; import {cssModules} from 'bpk-react-utils';  const getClassName = cssModules(STYLES); // REGEX_REPLACED
+import STYLES from '../pages.scss';
+import { cssModules } from 'bpk-react-utils';
 
 const getClassName = cssModules(STYLES);
 

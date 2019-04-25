@@ -26,14 +26,9 @@ import DemoNumberComponent from './DemoNumberComponent';
 import DemoFunctionComponent from './DemoFunctionComponent';
 import HelperFunctions from 'helpers/HelperFunctions';
 
-import STYLES from './bpk-demo.scss'; import {cssModules} from 'bpk-react-utils';  const getClassName = cssModules(STYLES); // REGEX_REPLACED
-
-// This was originally depended upon from the bpk-react-utils package, however
-// we decided to inline it in this particular component so as not to bloat the
-// the bundles of consumers who are not yet on webpack 2
-// We'll revisit this again soon.
-const cssModules = (styles = {}) => className =>
-  styles[className] ? styles[className] : className;
+import STYLES from './bpk-demo.scss';
+import { cssModules } from 'bpk-react-utils';
+const getClassName = cssModules(STYLES); // REGEX_REPLACED
 
 type Props = {
   propName: Node,
