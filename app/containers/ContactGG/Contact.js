@@ -90,11 +90,11 @@ export default class Contact extends Component {
           />
           {/* <br />
         <a
-          href="https://www.fb.com/george333123"
+          href="https://www.fb.com/georgegillams"
           rel="noopener noreferrer"
           target="_blank"
         >
-          <SubSection noAnchor name="Facebook george333123" link />
+          <SubSection noAnchor name="Facebook georgegillams" link />
         </a>
         <a
           href={`mailto:${GG_EMAIL}`}
