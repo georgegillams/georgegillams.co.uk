@@ -1,6 +1,6 @@
 import React from 'react';
 import { Helmet } from 'react-helmet';
-import { Switch, Route, Redirect } from 'react-router-dom';
+import { Switch, Route } from 'react-router-dom';
 import AccountPage from 'containers/Account/Loadable';
 import AdminPage from 'containers/Admin/Loadable';
 import AdminBlogs from 'containers/AdminBlogs/Loadable';
@@ -29,6 +29,7 @@ import Work from 'containers/Work/Loadable';
 import AboutDegree from 'containers/AboutDegree/Loadable';
 import BpkDemoPage from 'containers/BpkDemoPage/Loadable';
 import MonzoPots from 'containers/MonzoPots/Loadable';
+import Redirect from 'components/Redirect';
 import PasswordCharacterExtractor from 'containers/PasswordCharacterExtractor/Loadable';
 import { SITE_URL } from 'helpers/constants';
 import redirects from 'helpers/redirects';

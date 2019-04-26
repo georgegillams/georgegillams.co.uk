@@ -1,5 +1,10 @@
 const redirects = [
-  { from: '/wp-admin', to: '/admin/login' },
+  { from: '/flickr', to: 'https://www.flickr.com/people/georgegillams' },
+  { from: '/gurushots ', to: 'https://gurushots.com/georgegillams/photos' },
+  { from: '/facebook ', to: 'https://www.facebook.com/georgegillams' },
+  { from: '/twitter ', to: 'https://twitter.com/georgegillams' },
+
+  { from: '/wp-admin', to: '/admin' },
   { from: '/about', to: '/' },
   { from: '/site-map', to: '/sitemap' },
   { from: '/about/degree', to: '/work/degree' },
@@ -34,11 +39,6 @@ const redirects = [
   { from: '/phot', to: '/photography' },
   { from: '/photo', to: '/photography' },
   { from: '/payment', to: '/payments' },
-
-  { from: '/gurushots ', to: 'https://gurushots.com/georgegillams/photos' },
-  { from: '/facebook ', to: 'https://www.facebook.com/georgegillams' },
-  { from: '/twitter ', to: 'https://twitter.com/georgegillams' },
-  { from: '/flickr ', to: 'https://www.flickr.com/people/georgegillams/' },
 ];
 
 export default redirects;

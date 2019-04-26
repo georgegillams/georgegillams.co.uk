@@ -1,13 +1,19 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { Redirect } from 'react-router-dom';
 import { Section, TextLink } from 'components/Typography';
 
-const Redirect = props => {
+const GGRedirect = props => {
   const { name, to, ...rest } = props;
 
-  window.location = to;
+  if (to.includes('http')) {
+    document.location = to;
+    return null;
+  }
+
   return (
     <div {...rest}>
+      <Redirect to={to} />
       <Section name={props.name || 'Redirecting...'}>
         <TextLink to={props.to}>Not been redirected? Click here.</TextLink>
       </Section>
@@ -15,13 +21,13 @@ const Redirect = props => {
   );
 };
 
-Redirect.propTypes = {
+GGRedirect.propTypes = {
   to: PropTypes.string.isRequired,
   name: PropTypes.string,
 };
 
-Redirect.defaultProps = {
+GGRedirect.defaultProps = {
   name: null,
 };
 
-export default Redirect;
+export default GGRedirect;
