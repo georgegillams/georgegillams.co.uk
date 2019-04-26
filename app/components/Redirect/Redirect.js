@@ -6,14 +6,15 @@ import { Section, TextLink } from 'components/Typography';
 const GGRedirect = props => {
   const { name, to, ...rest } = props;
 
-  if (to.includes('http')) {
+  const externalRedirect = to.includes('http');
+
+  if (externalRedirect) {
     document.location = to;
-    return null;
   }
 
   return (
     <div {...rest}>
-      <Redirect to={to} />
+      {!externalRedirect && <Redirect to={to} />}
       <Section name={props.name || 'Redirecting...'}>
         <TextLink to={props.to}>Not been redirected? Click here.</TextLink>
       </Section>
