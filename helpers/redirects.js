@@ -2,6 +2,10 @@ const redirects = [
   { from: '/facebook', to: 'https://www.facebook.com/georgegillams' },
   { from: '/flickr', to: 'https://www.flickr.com/people/georgegillams' },
   { from: '/gurushots', to: 'https://gurushots.com/georgegillams/photos' },
+  {
+    from: '/linkedin',
+    to: 'https://www.linkedin.com/in/george-gillams-37537077',
+  },
   { from: '/twitter', to: 'https://twitter.com/georgegillams' },
 
   { from: '/wp-admin', to: '/admin' },
