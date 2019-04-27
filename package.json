@@ -36,7 +36,7 @@
     "start:production": "npm run test && npm run build && npm run start:prod",
     "test": "cross-env NODE_ENV=test SECRET_API_KEY=asdfghjkl NODE_PATH=./server/api:./app jest --coverage",
     "test:clean": "rimraf ./coverage",
-    "test:watch": "cross-env NODE_ENV=test jest --watchAll"
+    "test:watch": "cross-env NODE_ENV=test SECRET_API_KEY=asdfghjkl NODE_PATH=./server/api:./app jest --watchAll"
   },
   "lint-staged": {
     "*.js": [
