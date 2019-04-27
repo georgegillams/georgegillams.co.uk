@@ -1,8 +1,8 @@
 const redirects = [
+  { from: '/facebook', to: 'https://www.facebook.com/georgegillams' },
   { from: '/flickr', to: 'https://www.flickr.com/people/georgegillams' },
-  { from: '/gurushots ', to: 'https://gurushots.com/georgegillams/photos' },
-  { from: '/facebook ', to: 'https://www.facebook.com/georgegillams' },
-  { from: '/twitter ', to: 'https://twitter.com/georgegillams' },
+  { from: '/gurushots', to: 'https://gurushots.com/georgegillams/photos' },
+  { from: '/twitter', to: 'https://twitter.com/georgegillams' },
 
   { from: '/wp-admin', to: '/admin' },
   { from: '/about', to: '/' },

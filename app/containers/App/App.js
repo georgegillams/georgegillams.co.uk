@@ -73,6 +73,7 @@ const App = () => (
         {redirects.map(red => (
           <Route
             exact
+            key={red.from}
             path={red.from}
             render={() => <Redirect to={getFullRedirect(red.to)} />}
             status={301}
