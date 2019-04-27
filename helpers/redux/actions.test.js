@@ -53,28 +53,39 @@ test('correctly populates action definition constants', done => {
 });
 
 test('correctly maps actions for prop dispatching', done => {
-  // TODO This test ain't right!
   const calledArgs = [];
-  const dispatchMock = (...args) => {
-    for (let i = 0; i < args.length; i += 1) {
-      calledArgs.push(args[i]);
-    }
+  const dispatchMock = functionReturnedValue => {
+    calledArgs.push(functionReturnedValue);
   };
 
   const testActions = {
-    actionOne: () => 'test1',
-    actionTwo: () => 'test2',
+    actionOne: (...args) => {
+      let result = 'action1';
+      for (let i = 0; i < args.length; i += 1) {
+        result += `_${args[i]}`;
+      }
+      return result;
+    },
+    actionTwo: (...args) => {
+      let result = 'action2';
+      for (let i = 0; i < args.length; i += 1) {
+        result += `_${args[i]}`;
+      }
+      return result;
+    },
   };
 
   const mappedActions = mapActions(dispatchMock, testActions);
 
   const actionMethodNames = Object.keys(mappedActions);
   expect(actionMethodNames.length).toBe(2);
+  expect(actionMethodNames[0]).toBe('actionOne');
+  expect(actionMethodNames[1]).toBe('actionTwo');
   expect(calledArgs).toEqual([]);
 
-  mappedActions.actionOne();
-  expect(calledArgs).toEqual(['test1']);
-  mappedActions.actionTwo();
-  expect(calledArgs).toEqual(['test1', 'test2']);
+  mappedActions.actionOne('a', 'b');
+  expect(calledArgs).toEqual(['action1_a_b']);
+  mappedActions.actionTwo('c', 'd');
+  expect(calledArgs).toEqual(['action1_a_b', 'action2_c_d']);
   done();
 });
