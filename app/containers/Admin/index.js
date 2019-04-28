@@ -3,29 +3,19 @@ import { compose } from 'redux';
 import { createStructuredSelector } from 'reselect';
 import injectReducer from 'utils/injectReducer';
 import injectSaga from 'utils/injectSaga';
-import {
-  makeSelectUser,
-  makeSelectError as makeSelectUserLoadError,
-  makeSelectUserLoading,
-  makeSelectCookiesAllowed,
-} from 'containers/App/selectors';
-import { setLoginRedirect } from 'containers/App/actions';
-import { setCookiesAllowed } from 'containers/App/actions';
+import appSelectors from 'containers/App/selectors';
+import appActions from 'containers/App/actions';
+import { mapSelectors } from 'helpers/redux/selectors';
+import { mapActions } from 'helpers/redux/actions';
 import reducer from './reducer';
 import saga from './saga';
 import Admin from './Admin';
 
-const mapDispatchToProps = dispatch => ({
-  setLoginRedirect: lr => dispatch(setLoginRedirect(lr)),
-  onCookiesAccepted: () => dispatch(setCookiesAllowed(true)),
-});
+const mapDispatchToProps = dispatch => mapActions(dispatch, { ...appActions });
 
-const mapStateToProps = createStructuredSelector({
-  cookiesAllowed: makeSelectCookiesAllowed(),
-  user: makeSelectUser(),
-  userLoading: makeSelectUserLoading(),
-  userLoadError: makeSelectUserLoadError(),
-});
+const mapStateToProps = createStructuredSelector(
+  mapSelectors({ ...appSelectors }),
+);
 
 const withConnect = connect(
   mapStateToProps,
