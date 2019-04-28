@@ -8,7 +8,16 @@ import {
   DELETE_BLOG_ERROR,
 } from './constants';
 
-const initialState = fromJS({});
+const initialState = fromJS({
+  blogs: null,
+  loading: false,
+  success: false,
+  error: null,
+  blogToDelete: null,
+  deleting: false,
+  deleteSuccess: false,
+  deleteError: null,
+});
 
 function appReducer(state = initialState, action) {
   switch (action.type) {
