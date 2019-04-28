@@ -20,9 +20,9 @@ import { CookiesOnly } from 'components/Sessions';
 import generateCsv from './generateCsv';
 import { downloadStringAsCsv } from 'helpers/clientOperations';
 
-import STYLES from 'containers/pages.scss'; import {cssModules} from 'bpk-react-utils';  const getClassName = cssModules(STYLES); // REGEX_REPLACED
-
-
+import STYLES from 'containers/pages.scss';
+import { cssModules } from 'bpk-react-utils';
+const getClassName = cssModules(STYLES); // REGEX_REPLACED
 
 const downloadData = data => {
   const csv = generateCsv(data);
@@ -57,15 +57,13 @@ export default class AdminUsers extends React.Component {
       userLoading,
       cookiesAllowed,
       onCookiesAccepted,
-      sendTicketEmail,
       className,
       loadUsers,
       users,
-      usersLoading,
-      usersLoadedSuccess,
-      usersLoadedError,
+      loading,
+      success,
+      error,
       requestMagicLinkForUser,
-      resendPaymentReceipt,
       ...rest
     } = this.props;
     const outerClassNameFinal = [getClassName('pages__container')];
@@ -126,15 +124,6 @@ export default class AdminUsers extends React.Component {
                       {!this.state.showTickets && <span>Ticket hidden</span>}
                       <br />
                       <br />
-                      <GGButton
-                        destructive
-                        large
-                        onClick={() => sendTicketEmail(u)}
-                      >
-                        Send e-ticket email
-                      </GGButton>
-                      <br />
-                      <br />
                     </Fragment>
                   )}
                   <GGButton
@@ -143,15 +132,6 @@ export default class AdminUsers extends React.Component {
                     onClick={() => requestMagicLinkForUser(u)}
                   >
                     Login as user
-                  </GGButton>
-                  <br />
-                  <br />
-                  <GGButton
-                    destructive
-                    large
-                    onClick={() => resendPaymentReceipt(u)}
-                  >
-                    Resend payment receipt
                   </GGButton>
                 </AdminUsersAPIEntity>
               ))}
@@ -169,11 +149,27 @@ export default class AdminUsers extends React.Component {
         />
         <LoadingCover
           loadingSkeleton={Skeleton}
-          loading={!cookiesAllowed || userLoading || usersLoading}
+          loading={!cookiesAllowed || userLoading || loading}
         >
           {page}
         </LoadingCover>
-        <DebugObject debugTitle="Admin users" debugObject={{}} />
+        <DebugObject
+          debugTitle="Admin users"
+          debugObject={{
+            setLoginRedirect,
+            user,
+            userLoading,
+            cookiesAllowed,
+            onCookiesAccepted,
+            className,
+            loadUsers,
+            users,
+            loading,
+            success,
+            error,
+            requestMagicLinkForUser,
+          }}
+        />
       </Fragment>
     );
   }

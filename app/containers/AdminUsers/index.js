@@ -3,47 +3,22 @@ import { compose } from 'redux';
 import { createStructuredSelector } from 'reselect';
 import injectReducer from 'utils/injectReducer';
 import injectSaga from 'utils/injectSaga';
-import {
-  makeSelectUser,
-  makeSelectUserLoading,
-  makeSelectCookiesAllowed,
-} from 'containers/App/selectors';
-import { setLoginRedirect } from 'containers/App/actions';
-import {
-  makeSelectUsers,
-  makeSelectUsersLoading,
-  makeSelectUsersLoadedSuccess,
-  makeSelectUsersLoadedError,
-} from './selectors';
-import { setCookiesAllowed } from 'containers/App/actions';
-import {
-  loadUsers,
-  requestMagicLinkForUser,
-  resendPaymentReceipt,
-  sendTicketEmail,
-} from './actions';
+import appSelectors from 'containers/App/selectors';
+import appActions from 'containers/App/actions';
+import { mapSelectors } from 'helpers/redux/selectors';
+import { mapActions } from 'helpers/redux/actions';
+import selectors from './selectors';
+import actions from './actions';
 import reducer from './reducer';
 import saga from './saga';
 import AdminUsers from './AdminUsers';
 
-const mapDispatchToProps = dispatch => ({
-  setLoginRedirect: lr => dispatch(setLoginRedirect(lr)),
-  sendTicketEmail: user => dispatch(sendTicketEmail(user)),
-  requestMagicLinkForUser: user => dispatch(requestMagicLinkForUser(user)),
-  resendPaymentReceipt: user => dispatch(resendPaymentReceipt(user)),
-  onCookiesAccepted: () => dispatch(setCookiesAllowed(true)),
-  loadUsers: () => dispatch(loadUsers()),
-});
+const mapDispatchToProps = dispatch =>
+  mapActions(dispatch, { ...appActions, ...actions });
 
-const mapStateToProps = createStructuredSelector({
-  cookiesAllowed: makeSelectCookiesAllowed(),
-  user: makeSelectUser(),
-  userLoading: makeSelectUserLoading(),
-  users: makeSelectUsers(),
-  usersLoading: makeSelectUsersLoading(),
-  usersLoadedSuccess: makeSelectUsersLoadedSuccess(),
-  usersLoadedError: makeSelectUsersLoadedError(),
-});
+const mapStateToProps = createStructuredSelector(
+  mapSelectors({ ...appSelectors, ...selectors }),
+);
 
 const withConnect = connect(
   mapStateToProps,

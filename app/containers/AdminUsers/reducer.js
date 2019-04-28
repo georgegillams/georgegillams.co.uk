@@ -8,7 +8,13 @@ import {
   LOAD_USERS_SUCCESS,
 } from './constants';
 
-const initialState = fromJS({});
+const initialState = fromJS({
+  magicLinkUser: null,
+  loading: false,
+  error: null,
+  success: false,
+  users: null,
+});
 
 function appReducer(state = initialState, action) {
   switch (action.type) {

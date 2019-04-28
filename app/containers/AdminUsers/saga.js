@@ -1,16 +1,7 @@
 import { call, put, select, takeLatest } from 'redux-saga/effects';
-import {
-  LOAD_USERS,
-  REQUEST_MAGIC_LINK_FOR_USER,
-  RESEND_PAYMENT_RECEIPT,
-  SEND_TICKET_EMAIL,
-} from './constants';
+import { LOAD_USERS, REQUEST_MAGIC_LINK_FOR_USER } from './constants';
 import { loadUsersSuccess, loadUsersError } from './actions';
-import {
-  makeSelectMagicLinkUser,
-  makeSelectPaymentReceiptUser,
-  makeSelectEmailTicketUser,
-} from './selectors';
+import { makeSelectMagicLinkUser } from './selectors';
 import { pushMessage } from 'containers/RequestStatusWrapper/actions';
 import { API_ENDPOINT, COMMUNICATION_ERROR_MESSAGE } from 'helpers/constants';
 import { calculateOutstandingBalance } from 'helpers/ticketing';
@@ -40,51 +31,6 @@ const ticketErrorMessage = {
   type: 'error',
   message: 'Could not send ticket.',
 };
-
-export function* doSendTicketEmail() {
-  const user = yield select(makeSelectEmailTicketUser());
-  console.log(`doSendTicketEmail user`, user);
-  const sendTicketEmailUrl = `${API_ENDPOINT}/stripePayments/resendTicketEmail`;
-
-  try {
-    const resendResult = yield call(request, sendTicketEmailUrl, {
-      method: 'POST',
-      body: JSON.stringify({ resendId: user.id }),
-      headers: {
-        'Content-Type': 'application/json',
-      },
-    });
-    if (resendResult.error) {
-      yield put(pushMessage(ticketErrorMessage));
-    } else {
-      yield put(pushMessage(ticketSuccessMessage));
-    }
-  } catch (err) {
-    yield put(pushMessage(COMMUNICATION_ERROR_MESSAGE));
-  }
-}
-
-export function* doResendPaymentReceipt() {
-  const user = yield select(makeSelectPaymentReceiptUser());
-  const resentPaymentReceiptLink = `${API_ENDPOINT}/stripePayments/resendPaymentReceipt`;
-
-  try {
-    const resendResult = yield call(request, resentPaymentReceiptLink, {
-      method: 'POST',
-      body: JSON.stringify({ resendId: user.id }),
-      headers: {
-        'Content-Type': 'application/json',
-      },
-    });
-    if (resendResult.error) {
-      yield put(pushMessage(magicLinkErrorMessage));
-    } else {
-      yield put(pushMessage(magicLinkSuccessMessage));
-    }
-  } catch (err) {
-    yield put(pushMessage(COMMUNICATION_ERROR_MESSAGE));
-  }
-}
 
 export function* doRequestMagicLink() {
   const user = yield select(makeSelectMagicLinkUser());
@@ -214,6 +160,4 @@ export function* doLoadUsers() {
 export default function* adminUsers() {
   yield takeLatest(LOAD_USERS, () => doLoadUsers());
   yield takeLatest(REQUEST_MAGIC_LINK_FOR_USER, () => doRequestMagicLink());
-  yield takeLatest(SEND_TICKET_EMAIL, () => doSendTicketEmail());
-  yield takeLatest(RESEND_PAYMENT_RECEIPT, () => doResendPaymentReceipt());
 }
