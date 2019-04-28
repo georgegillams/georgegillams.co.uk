@@ -1,21 +1,5 @@
-import { SET_KEY, SET_KEY_SUCCESS, SET_KEY_ERROR } from './constants';
+import defineActions, { populateConstants } from 'helpers/redux/actions';
+import constants from './constants';
+import actionDefinitions from './actionDefinitions';
 
-export function setKey(key) {
-  return {
-    type: SET_KEY,
-    keyValue: key,
-  };
-}
-
-export function setKeySuccess() {
-  return {
-    type: SET_KEY_SUCCESS,
-  };
-}
-
-export function setKeyError(error) {
-  return {
-    type: SET_KEY_ERROR,
-    error,
-  };
-}
+module.exports = defineActions(populateConstants(actionDefinitions, constants));

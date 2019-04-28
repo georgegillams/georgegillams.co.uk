@@ -3,33 +3,22 @@ import { compose } from 'redux';
 import { createStructuredSelector } from 'reselect';
 import injectReducer from 'utils/injectReducer';
 import injectSaga from 'utils/injectSaga';
-import {
-  makeSelectUser,
-  makeSelectUserLoading,
-} from 'containers/App/selectors';
-import { setLoginRedirect } from 'containers/App/actions';
-import {
-  makeSelectKey,
-  makeSelectSetKeySuccess,
-  makeSelectSetKeyError,
-} from './selectors';
-import { setKey } from './actions';
+import appSelectors from 'containers/App/selectors';
+import appActions from 'containers/App/actions';
+import { mapSelectors } from 'helpers/redux/selectors';
+import { mapActions } from 'helpers/redux/actions';
+import actions from './actions';
+import selectors from './selectors';
 import reducer from './reducer';
 import saga from './saga';
 import AdminMonzo from './AdminMonzo';
 
-const mapDispatchToProps = dispatch => ({
-  setLoginRedirect: lr => dispatch(setLoginRedirect(lr)),
-  setKey: key => dispatch(setKey(key)),
-});
+const mapDispatchToProps = dispatch =>
+  mapActions(dispatch, { ...appActions, ...actions });
 
-const mapStateToProps = createStructuredSelector({
-  user: makeSelectUser(),
-  userLoading: makeSelectUserLoading(),
-  keyValue: makeSelectKey(),
-  setKeySuccess: makeSelectSetKeySuccess(),
-  setKeyError: makeSelectSetKeyError(),
-});
+const mapStateToProps = createStructuredSelector(
+  mapSelectors({ ...appSelectors, ...selectors }),
+);
 
 const withConnect = connect(
   mapStateToProps,

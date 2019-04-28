@@ -1,28 +1,11 @@
-import { createSelector } from 'reselect';
+import createSelectors from 'helpers/redux/selectors';
+import {
+  inferPropertiesFromInitialState,
+  initialState,
+} from 'helpers/redux/reducers';
+import reducer from './reducer';
 
-const selectAdminMonzo = state => state.get('adminmonzo');
-
-const makeSelectKey = () =>
-  createSelector(
-    selectAdminMonzo,
-    adminMonzoState => adminMonzoState.get('keyValue'),
-  );
-
-const makeSelectSetKeySuccess = () =>
-  createSelector(
-    selectAdminMonzo,
-    adminMonzoState => adminMonzoState.get('success'),
-  );
-
-const makeSelectSetKeyError = () =>
-  createSelector(
-    selectAdminMonzo,
-    adminMonzoState => adminMonzoState.get('error'),
-  );
-
-export {
-  selectAdminMonzo,
-  makeSelectKey,
-  makeSelectSetKeySuccess,
-  makeSelectSetKeyError,
-};
+module.exports = createSelectors(
+  'adminmonzo',
+  inferPropertiesFromInitialState(initialState(reducer)),
+);

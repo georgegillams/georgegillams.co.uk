@@ -1,7 +1,7 @@
 import { call, put, select, takeLatest } from 'redux-saga/effects';
 import { SET_KEY } from './constants';
 import { setKeySuccess, setKeyError } from './actions';
-import { makeSelectKey } from './selectors';
+import { makeSelectKeyValue } from './selectors';
 import { pushMessage } from 'containers/RequestStatusWrapper/actions';
 import { API_ENDPOINT, COMMUNICATION_ERROR_MESSAGE } from 'helpers/constants';
 import request from 'utils/request';
@@ -16,13 +16,13 @@ const setKeyErrorMessage = {
 };
 
 export function* doSetKey() {
-  const key = yield select(makeSelectKey());
+  const keyValue = yield select(makeSelectKeyValue());
   const magicLinkUrl = `${API_ENDPOINT}/monzo/setKey`;
 
   try {
     const setKeyResult = yield call(request, magicLinkUrl, {
       method: 'POST',
-      body: JSON.stringify({ key }),
+      body: JSON.stringify({ key: keyValue }),
       headers: {
         'Content-Type': 'application/json',
       },

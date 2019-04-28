@@ -1,7 +1,7 @@
 import { fromJS } from 'immutable';
 import { SET_KEY, SET_KEY_ERROR, SET_KEY_SUCCESS } from './constants';
 
-const initialState = fromJS({});
+const initialState = fromJS({ keyValue: null, setting: false, error: false });
 
 function appReducer(state = initialState, action) {
   switch (action.type) {
