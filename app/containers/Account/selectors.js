@@ -1,49 +1,11 @@
-import { createSelector } from 'reselect';
+import createSelectors from 'helpers/redux/selectors';
+import {
+  inferPropertiesFromInitialState,
+  initialState,
+} from 'helpers/redux/reducers';
+import reducer from './reducer';
 
-const selectLogout = state => state.get('account');
-
-const makeSelectLoggingOut = () =>
-  createSelector(
-    selectLogout,
-    logoutState => logoutState.get('loggingOut'),
-  );
-
-const makeSelectLogoutSuccess = () =>
-  createSelector(
-    selectLogout,
-    logoutState => logoutState.get('success'),
-  );
-
-const makeSelectLogoutError = () =>
-  createSelector(
-    selectLogout,
-    logoutState => logoutState.get('error'),
-  );
-
-const makeSelectRequestingVerificationEmail = () =>
-  createSelector(
-    selectLogout,
-    logoutState => logoutState.get('requestingVerificationEmail'),
-  );
-
-const makeSelectRequestVerificationEmailSuccess = () =>
-  createSelector(
-    selectLogout,
-    logoutState => logoutState.get('requestingSuccess'),
-  );
-
-const makeSelectRequestVerificationEmailError = () =>
-  createSelector(
-    selectLogout,
-    logoutState => logoutState.get('requestingError'),
-  );
-
-export {
-  selectLogout,
-  makeSelectLoggingOut,
-  makeSelectLogoutSuccess,
-  makeSelectLogoutError,
-  makeSelectRequestingVerificationEmail,
-  makeSelectRequestVerificationEmailSuccess,
-  makeSelectRequestVerificationEmailError,
-};
+module.exports = createSelectors(
+  'account',
+  inferPropertiesFromInitialState(initialState(reducer)),
+);

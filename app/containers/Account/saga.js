@@ -1,7 +1,7 @@
 import { call, put, select, takeLatest } from 'redux-saga/effects';
 import { LOGOUT, REQUEST_VERIFICATION_EMAIL } from './constants';
 import {
-  logoutSuccessful,
+  logoutSuccess,
   logoutError,
   requestVerificationEmailError,
   requestVerificationEmailSuccess,
@@ -63,7 +63,7 @@ export function* doLogout() {
       yield put(logoutError(logoutResult));
       yield put(pushMessage(logoutErrorMessage));
     } else {
-      yield put(logoutSuccessful());
+      yield put(logoutSuccess());
       yield put(setUser(null));
       yield put(pushMessage(logoutMessage));
     }

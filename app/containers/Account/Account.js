@@ -23,9 +23,9 @@ import BpkImage, {
   withLoadingBehavior,
 } from 'bpk-component-image';
 
-import STYLES from 'containers/pages.scss'; import {cssModules} from 'bpk-react-utils';  const getClassName = cssModules(STYLES); // REGEX_REPLACED
-
-
+import STYLES from 'containers/pages.scss';
+import { cssModules } from 'bpk-react-utils';
+const getClassName = cssModules(STYLES); // REGEX_REPLACED
 
 export default class Account extends React.Component {
   componentWillMount = () => {};
@@ -39,12 +39,12 @@ export default class Account extends React.Component {
       user,
       userLoading,
       loggingOut,
-      logoutSuccess,
-      logoutError,
+      success,
+      error,
       requestVerificationEmail,
       requestingVerificationEmail,
-      requestVerificationEmailSuccess,
-      requestVerificationEmailError,
+      requestingSuccess,
+      requestingError,
       className,
       ...rest
     } = this.props; // eslint-disable-line no-shadow
@@ -112,12 +112,12 @@ export default class Account extends React.Component {
             user,
             userLoading,
             loggingOut,
-            logoutSuccess,
-            logoutError,
+            success,
+            error,
             requestVerificationEmail,
             requestingVerificationEmail,
-            requestVerificationEmailSuccess,
-            requestVerificationEmailError,
+            requestingSuccess,
+            requestingError,
           }}
         />
       </Fragment>
