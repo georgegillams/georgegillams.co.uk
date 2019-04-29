@@ -66,7 +66,7 @@ const BlogRenderer = props => {
         {showEditLink && (
           <a
             className={getClassName('pages__link')}
-            href={`/admin/blog/${blog.id}`}
+            href={`/admin/blog/edit/${blog.id}`}
           >
             <SubSection
               textclassName={getClassName('blogs__edit-link')}

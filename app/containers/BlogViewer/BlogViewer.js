@@ -13,7 +13,7 @@ const getClassName = cssModules(STYLES); // REGEX_REPLACED
 export default class BlogViewer extends React.Component {
   componentWillMount = () => {
     const blogId = this.props.match.params.id;
-    this.props.setBlogId(blogId);
+    this.props.blogIdChanged(blogId);
     this.props.loadBlog();
   };
 
@@ -21,7 +21,7 @@ export default class BlogViewer extends React.Component {
     const {
       user,
       match,
-      setBlogId,
+      blogIdChanged,
       loading,
       error,
       blog,

@@ -3,26 +3,22 @@ import { compose } from 'redux';
 import { createStructuredSelector } from 'reselect';
 import injectReducer from 'utils/injectReducer';
 import injectSaga from 'utils/injectSaga';
-import {
-  makeSelectBlog,
-  makeSelectBlogLoading,
-  makeSelectBlogError,
-} from './selectors';
-import { loadBlog, blogIdChanged } from './actions';
+import appSelectors from 'containers/App/selectors';
+import appActions from 'containers/App/actions';
+import { mapSelectors } from 'helpers/redux/selectors';
+import { mapActions } from 'helpers/redux/actions';
+import selectors from './selectors';
+import actions from './actions';
 import reducer from './reducer';
 import saga from './saga';
 import BlogViewer from './BlogViewer';
 
-const mapDispatchToProps = dispatch => ({
-  loadBlog: () => dispatch(loadBlog()),
-  setBlogId: newValue => dispatch(blogIdChanged(newValue)),
-});
+const mapDispatchToProps = dispatch =>
+  mapActions(dispatch, { ...appActions, ...actions });
 
-const mapStateToProps = createStructuredSelector({
-  blog: makeSelectBlog(),
-  loading: makeSelectBlogLoading(),
-  error: makeSelectBlogError(),
-});
+const mapStateToProps = createStructuredSelector(
+  mapSelectors({ ...appSelectors, ...selectors }),
+);
 
 const withConnect = connect(
   mapStateToProps,

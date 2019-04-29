@@ -8,7 +8,8 @@ import {
 } from './constants';
 
 const initialState = fromJS({
-  data: null,
+  blogId: null,
+  blog: null,
   loading: false,
   error: false,
 });
@@ -23,7 +24,7 @@ function appReducer(state = initialState, action) {
     case LOAD_BLOG:
       return state.set('loading', true).set('error', false);
     case LOAD_BLOG_SUCCESS:
-      return state.set('loading', false).set('data', action.blog);
+      return state.set('loading', false).set('blog', action.blog);
     case LOAD_BLOG_ERROR:
       return state.set('error', action.error).set('loading', false);
     default:

@@ -1,35 +1,11 @@
-import { createSelector } from 'reselect';
+import createSelectors from 'helpers/redux/selectors';
+import {
+  inferPropertiesFromInitialState,
+  initialState,
+} from 'helpers/redux/reducers';
+import reducer from './reducer';
 
-const selectBlog = state => state.get('blog');
-
-const makeSelectBlog = () =>
-  createSelector(
-    selectBlog,
-    blogState => blogState.get('data'),
-  );
-
-const makeSelectBlogId = () =>
-  createSelector(
-    selectBlog,
-    blogState => blogState.get('blogId'),
-  );
-
-const makeSelectBlogLoading = () =>
-  createSelector(
-    selectBlog,
-    blogState => blogState.get('loading'),
-  );
-
-const makeSelectBlogError = () =>
-  createSelector(
-    selectBlog,
-    blogState => blogState.get('error'),
-  );
-
-export {
-  selectBlog,
-  makeSelectBlogId,
-  makeSelectBlog,
-  makeSelectBlogLoading,
-  makeSelectBlogError,
-};
+module.exports = createSelectors(
+  'blog',
+  inferPropertiesFromInitialState(initialState(reducer)),
+);

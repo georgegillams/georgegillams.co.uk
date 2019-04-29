@@ -1,6 +1,6 @@
 import { call, put, select, takeLatest } from 'redux-saga/effects';
 import { LOAD_BLOG } from './constants';
-import { blogLoaded, blogLoadingError } from './actions';
+import { loadBlogSuccess, loadBlogError } from './actions';
 import { API_ENDPOINT } from 'helpers/constants';
 import { makeSelectBlogId } from './selectors';
 
@@ -12,9 +12,9 @@ export function* loadBlog() {
 
   try {
     const blog = yield call(request, requestURL);
-    yield put(blogLoaded(blog));
+    yield put(loadBlogSuccess(blog));
   } catch (err) {
-    yield put(blogLoadingError(err));
+    yield put(loadBlogError(err));
   }
 }
 
