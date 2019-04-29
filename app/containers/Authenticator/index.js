@@ -3,36 +3,22 @@ import { compose } from 'redux';
 import { createStructuredSelector } from 'reselect';
 import injectReducer from 'utils/injectReducer';
 import injectSaga from 'utils/injectSaga';
-import {
-  makeSelectReauthenticating,
-  makeSelectReauthenticatingSuccess,
-  makeSelectReauthenticatingError,
-} from './selectors';
-import {
-  makeSelectUser,
-  makeSelectUserLoading,
-  makeSelectCookiesAllowed,
-} from 'containers/App/selectors';
-import { reauthenticate, sessionKeyChanged } from './actions';
-import { setCookiesAllowed } from 'containers/App/actions';
+import appSelectors from 'containers/App/selectors';
+import appActions from 'containers/App/actions';
+import { mapSelectors } from 'helpers/redux/selectors';
+import { mapActions } from 'helpers/redux/actions';
+import selectors from './selectors';
+import actions from './actions';
 import reducer from './reducer';
 import saga from './saga';
 import Authenticator from './Authenticator';
 
-const mapDispatchToProps = dispatch => ({
-  sessionKeyChanged: newValue => dispatch(sessionKeyChanged(newValue)),
-  setCookiesAllowed: () => dispatch(setCookiesAllowed(true)),
-  reauthenticate: () => dispatch(reauthenticate()),
-});
+const mapDispatchToProps = dispatch =>
+  mapActions(dispatch, { ...appActions, ...actions });
 
-const mapStateToProps = createStructuredSelector({
-  cookiesAllowed: makeSelectCookiesAllowed(),
-  user: makeSelectUser(),
-  userLoading: makeSelectUserLoading(),
-  reauthenticating: makeSelectReauthenticating(),
-  reauthenticatingSuccess: makeSelectReauthenticatingSuccess(),
-  reauthenticatingError: makeSelectReauthenticatingError(),
-});
+const mapStateToProps = createStructuredSelector(
+  mapSelectors({ ...appSelectors, ...selectors }),
+);
 
 const withConnect = connect(
   mapStateToProps,

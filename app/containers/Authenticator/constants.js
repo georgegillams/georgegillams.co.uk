@@ -1,7 +1,8 @@
-export const REAUTHENTICATE = 'boilerplate/authentication/REAUTHENTICATE';
-export const REAUTHENTICATE_ERROR =
-  'boilerplate/authentication/REAUTHENTICATE_ERROR';
-export const REAUTHENTICATE_SUCCESS =
-  'boilerplate/authentication/REAUTHENTICATE_SUCCESS';
-export const SESSION_KEY_CHANGED =
-  'boilerplate/authentication/SESSION_KEY_CHANGED';
+import defineConstants, {
+  inferConstantsFromActionDefinitions,
+} from 'helpers/redux/constants';
+import actionDefinitions from './actionDefinitions';
+
+module.exports = defineConstants(
+  ...inferConstantsFromActionDefinitions(actionDefinitions),
+);

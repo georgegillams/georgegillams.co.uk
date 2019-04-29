@@ -1,6 +1,6 @@
 import { call, put, select, takeLatest } from 'redux-saga/effects';
 import { REAUTHENTICATE } from './constants';
-import { reauthenticationSuccessful, reauthenticationError } from './actions';
+import { reauthenticateSuccess, reauthenticateError } from './actions';
 import { setUser, setUserLoading } from 'containers/App/actions';
 import { API_ENDPOINT } from 'helpers/constants';
 
@@ -16,14 +16,14 @@ export function* doReauthentication() {
       method: 'POST',
     });
     if (loginResult.error) {
-      yield put(reauthenticationError(loginResult));
+      yield put(reauthenticateError(loginResult));
       yield put(setUser(null));
     } else {
-      yield put(reauthenticationSuccessful());
+      yield put(reauthenticateSuccess());
       yield put(setUser(loginResult));
     }
   } catch (err) {
-    yield put(reauthenticationError(err));
+    yield put(reauthenticateError(err));
     yield put(setUser(null));
   }
 }

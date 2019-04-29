@@ -5,31 +5,31 @@ import { Section, SubSection, TextLink } from 'components/Typography';
 import { DebugObject } from 'components/Auth';
 import cookie from 'react-cookies';
 
-import STYLES from 'containers/pages.scss'; import {cssModules} from 'bpk-react-utils';  const getClassName = cssModules(STYLES); // REGEX_REPLACED
-
-
+import STYLES from 'containers/pages.scss';
+import { cssModules } from 'bpk-react-utils';
+const getClassName = cssModules(STYLES);
 
 export default class Authenticator extends React.Component {
   componentDidMount = () => {
-    this.props.setCookiesAllowed();
+    this.props.setCookiesAllowed(true);
     const sessionCookie = cookie.load('session');
     if (sessionCookie) {
-      // this.props.setCookiesAllowed();
+      // this.props.setCookiesAllowed(true);
       this.props.reauthenticate();
     }
   };
 
   render() {
     const {
-      reauthenticate,
-      reauthenticating,
-      reauthenticatingSuccess,
-      reauthenticatingError,
-      sessionKeyChanged,
       cookiesAllowed,
       setCookiesAllowed,
       user,
       userLoading,
+      reauthenticate,
+      reauthenticating,
+      success,
+      error,
+      sessionKeyChanged,
       className,
       ...rest
     } = this.props;
@@ -44,12 +44,16 @@ export default class Authenticator extends React.Component {
         <DebugObject
           debugTitle="Authenticator"
           debugObject={{
+            cookiesAllowed,
+            setCookiesAllowed,
             user,
             userLoading,
-            cookiesAllowed,
+            reauthenticate,
             reauthenticating,
-            reauthenticatingError,
-            reauthenticatingSuccess,
+            success,
+            error,
+            sessionKeyChanged,
+            className,
           }}
         />
       </div>
@@ -60,10 +64,7 @@ export default class Authenticator extends React.Component {
 Authenticator.propTypes = {
   cookiesAllowed: PropTypes.bool,
   reauthenticating: PropTypes.bool,
-  reauthenticatingError: PropTypes.oneOfType([
-    PropTypes.object,
-    PropTypes.bool,
-  ]),
+  error: PropTypes.oneOfType([PropTypes.object, PropTypes.bool]),
   createdPayment: PropTypes.object,
   login: PropTypes.func.isRequired,
   className: PropTypes.string,

@@ -1,35 +1,11 @@
-import { createSelector } from 'reselect';
+import createSelectors from 'helpers/redux/selectors';
+import {
+  inferPropertiesFromInitialState,
+  initialState,
+} from 'helpers/redux/reducers';
+import reducer from './reducer';
 
-const selectAuthenticator = state => state.get('authenticator');
-
-const makeSelectSessionKey = () =>
-  createSelector(
-    selectAuthenticator,
-    authenticatorState => authenticatorState.get('sessionKey'),
-  );
-
-const makeSelectReauthenticating = () =>
-  createSelector(
-    selectAuthenticator,
-    authenticatorState => authenticatorState.get('reauthenticating'),
-  );
-
-const makeSelectReauthenticatingSuccess = () =>
-  createSelector(
-    selectAuthenticator,
-    authenticatorState => authenticatorState.get('success'),
-  );
-
-const makeSelectReauthenticatingError = () =>
-  createSelector(
-    selectAuthenticator,
-    authenticatorState => authenticatorState.get('error'),
-  );
-
-export {
-  selectAuthenticator,
-  makeSelectSessionKey,
-  makeSelectReauthenticating,
-  makeSelectReauthenticatingSuccess,
-  makeSelectReauthenticatingError,
-};
+module.exports = createSelectors(
+  'authenticator',
+  inferPropertiesFromInitialState(initialState(reducer)),
+);
