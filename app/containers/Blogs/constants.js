@@ -1,3 +1,8 @@
-export const LOAD_BLOGS = 'boilerplate/Blogs/LOAD_BLOGS';
-export const LOAD_BLOGS_ERROR = 'boilerplate/Blogs/LOAD_BLOGS_ERROR';
-export const LOAD_BLOGS_SUCCESS = 'boilerplate/Blogs/LOAD_BLOGS_SUCCESS';
+import defineConstants, {
+  inferConstantsFromActionDefinitions,
+} from 'helpers/redux/constants';
+import actionDefinitions from './actionDefinitions';
+
+module.exports = defineConstants(
+  ...inferConstantsFromActionDefinitions(actionDefinitions),
+);
