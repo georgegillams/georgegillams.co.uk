@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import Helmet from 'react-helmet';
 import ArticleCard, { CARD_LAYOUTS } from 'components/Cards';
+import CreativeCommons from 'components/CreativeCommons';
 import { Section, SubSection } from 'components/Typography';
 import GraphicContent, {
   withGraphicContentBehaviour,
@@ -241,6 +242,7 @@ export default class Photography extends Component {
         <br />
         {/* <LicenseInfo centered /> */}
         <Comments pageId={PAGE_ID} />
+        <CreativeCommons />
       </div>
     );
   }

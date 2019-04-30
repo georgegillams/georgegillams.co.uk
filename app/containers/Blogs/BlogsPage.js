@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import { withRouter } from 'react-router';
 import BpkThemeProvider from 'bpk-theming';
 import { themeAttributes as hnThemeAttributes } from 'bpk-component-horizontal-nav';
@@ -6,6 +6,7 @@ import PropTypes from 'prop-types';
 import { Helmet } from 'react-helmet';
 import { DebugObject, LoadingCover } from 'components/Auth';
 import BlogsList from 'components/Blogs';
+import CreativeCommons from 'components/CreativeCommons';
 import BlogListSkeleton from './BlogListSkeleton';
 import BlogsNav from './BlogsNav';
 import STYLES from 'containers/pages.scss';
@@ -97,9 +98,12 @@ export default class BlogsPage extends React.Component {
           loading={loading}
           error={error}
         >
-          {this.filteredBlogs && (
-            <BlogsList blogs={this.filteredBlogs} linkPrefix={linkPrefix} />
-          )}
+          <Fragment>
+            {this.filteredBlogs && (
+              <BlogsList blogs={this.filteredBlogs} linkPrefix={linkPrefix} />
+            )}
+            <CreativeCommons />
+          </Fragment>
         </LoadingCover>
       </div>
     );

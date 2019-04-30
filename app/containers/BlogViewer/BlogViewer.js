@@ -2,6 +2,7 @@ import React, { Fragment } from 'react';
 import PropTypes from 'prop-types';
 import { Helmet } from 'react-helmet';
 import { LoadingCover } from 'components/Auth';
+import CreativeCommons from 'components/CreativeCommons';
 import { BlogRenderer } from 'components/Typography';
 import HelperFunctions from 'helpers/HelperFunctions';
 import Skeleton from './Skeleton';
@@ -59,6 +60,7 @@ export default class BlogViewer extends React.Component {
                 blog={blog}
               />
               <Comments pageId={blog.id} />
+              <CreativeCommons />
             </Fragment>
           )}
         </LoadingCover>

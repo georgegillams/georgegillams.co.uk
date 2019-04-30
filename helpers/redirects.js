@@ -1,4 +1,5 @@
 const redirects = [
+  { from: '/copyright', to: 'https://creativecommons.org/licenses/by-sa/3.0/' },
   { from: '/facebook', to: 'https://www.facebook.com/georgegillams' },
   { from: '/flickr', to: 'https://www.flickr.com/people/georgegillams' },
   { from: '/gurushots', to: 'https://gurushots.com/georgegillams/photos' },
