@@ -95,6 +95,7 @@ export function* doCreateBlog() {
     } else {
       yield put(createBlogSuccess(blogCreateResult));
       yield put(pushMessage(blogCreatedMessage));
+      window.location = `/admin/blog/edit/${blogCreateResult.id}`;
     }
   } catch (err) {
     yield put(createBlogError(err));

@@ -11,7 +11,15 @@ export default function loadSingle(req) {
           datumLoadSingle({
             redisKey: 'blogs',
             includeDeleted: user && user.admin,
-            filter: ar => ar.id === reqSecured.query.id,
+            filter: ar => {
+              if (ar.id !== reqSecured.query.id) {
+                return false;
+              }
+              if (!ar.published && (!user || !user.admin)) {
+                return false;
+              }
+              return true;
+            },
           }),
         );
       },

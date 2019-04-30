@@ -50,7 +50,19 @@ class CreateBlogForm extends React.Component {
           },
           {
             id: 'blogImage',
-            name: 'BlogImage',
+            name: 'Blog image',
+            validationRegex: ANYTHING_REGEX,
+            show: true,
+          },
+          {
+            id: 'publishedTimestamp',
+            name: 'Published timestamp',
+            validationRegex: ANYTHING_REGEX,
+            show: true,
+          },
+          {
+            id: 'blogCardDate',
+            name: 'Blog card date override',
             validationRegex: ANYTHING_REGEX,
             show: true,
           },

@@ -10,6 +10,7 @@ export default function load(req) {
             redisKey: 'blogs',
             sortKey: 'publishedTimestamp',
             includeDeleted: user && user.admin,
+            filter: b => b.published || (user && user.admin),
           }),
         );
       },
