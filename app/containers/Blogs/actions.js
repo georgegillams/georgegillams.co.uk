@@ -6,14 +6,14 @@ export function loadBlogs() {
   };
 }
 
-export function blogsLoaded(blogs) {
+export function loadBlogsSuccess(blogs) {
   return {
     type: LOAD_BLOGS_SUCCESS,
     blogs,
   };
 }
 
-export function blogsLoadingError(error) {
+export function loadBlogsError(error) {
   return {
     type: LOAD_BLOGS_ERROR,
     error,

@@ -5,8 +5,8 @@ import injectReducer from 'utils/injectReducer';
 import injectSaga from 'utils/injectSaga';
 import {
   makeSelectBlogs,
-  makeSelectBlogsLoading,
-  makeSelectBlogsError,
+  makeSelectLoading,
+  makeSelectError,
 } from './selectors';
 import { loadBlogs } from './actions';
 import reducer from './reducer';
@@ -19,8 +19,8 @@ const mapDispatchToProps = dispatch => ({
 
 const mapStateToProps = createStructuredSelector({
   blogs: makeSelectBlogs(),
-  loading: makeSelectBlogsLoading(),
-  error: makeSelectBlogsError(),
+  loading: makeSelectLoading(),
+  error: makeSelectError(),
 });
 
 const withConnect = connect(

@@ -4,7 +4,7 @@ import BpkThemeProvider from 'bpk-theming';
 import { themeAttributes as hnThemeAttributes } from 'bpk-component-horizontal-nav';
 import PropTypes from 'prop-types';
 import { Helmet } from 'react-helmet';
-import { LoadingCover } from 'components/Auth';
+import { DebugObject, LoadingCover } from 'components/Auth';
 import BlogsList from 'components/Blogs';
 import BlogListSkeleton from './BlogListSkeleton';
 import BlogsNav from './BlogsNav';
@@ -69,6 +69,19 @@ export default class BlogsPage extends React.Component {
 
     return (
       <div className={outerClassNameFinal.join(' ')} {...rest}>
+        <DebugObject
+          debugTitle="Blogs"
+          debugObject={{
+            loading,
+            error,
+            blogs,
+            loadBlogs,
+            selectedNav,
+            filter,
+            linkPrefix,
+            className,
+          }}
+        />
         <Helmet title="Blog" />
         <BpkThemeProvider
           theme={theme}

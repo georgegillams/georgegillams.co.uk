@@ -8,13 +8,13 @@ const makeSelectBlogs = () =>
     siteMapState => siteMapState.get('data'),
   );
 
-const makeSelectBlogsLoading = () =>
+const makeSelectLoading = () =>
   createSelector(
     selectSiteMap,
     siteMapState => siteMapState.get('loading'),
   );
 
-const makeSelectBlogsError = () =>
+const makeSelectError = () =>
   createSelector(
     selectSiteMap,
     siteMapState => siteMapState.get('error'),
@@ -23,6 +23,6 @@ const makeSelectBlogsError = () =>
 export {
   selectSiteMap,
   makeSelectBlogs,
-  makeSelectBlogsLoading,
-  makeSelectBlogsError,
+  makeSelectLoading,
+  makeSelectError,
 };

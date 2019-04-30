@@ -1,6 +1,6 @@
 import { call, put, select, takeLatest } from 'redux-saga/effects';
 import { LOAD_BLOGS } from './constants';
-import { blogsLoaded, blogsLoadingError } from './actions';
+import { loadBlogsSuccess, loadBlogsError } from './actions';
 import { API_ENDPOINT } from 'helpers/constants';
 
 import request from 'utils/request';
@@ -10,9 +10,9 @@ export function* loadBlogs() {
 
   try {
     const blogs = yield call(request, requestURL); // Can add third arg for options
-    yield put(blogsLoaded(blogs));
+    yield put(loadBlogsSuccess(blogs));
   } catch (err) {
-    yield put(blogsLoadingError(err));
+    yield put(loadBlogsError(err));
   }
 }
 

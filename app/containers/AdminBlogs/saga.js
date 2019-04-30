@@ -13,7 +13,7 @@ import { API_ENDPOINT, COMMUNICATION_ERROR_MESSAGE } from 'helpers/constants';
 
 import request from 'utils/request';
 
-const blogsLoadedMessage = { type: 'success', message: 'Blogs loaded!' };
+const loadBlogsSuccessMessage = { type: 'success', message: 'Blogs loaded!' };
 const blogsLoadErrorMessage = {
   type: 'error',
   message: 'Could not load blogs.',
@@ -37,7 +37,7 @@ export function* doLoadBlogs() {
       yield put(pushMessage(blogsLoadErrorMessage));
     } else {
       yield put(loadBlogsSuccess(blogsResult));
-      yield put(pushMessage(blogsLoadedMessage));
+      yield put(pushMessage(loadBlogsSuccessMessage));
     }
   } catch (err) {
     yield put(loadBlogsError(err));

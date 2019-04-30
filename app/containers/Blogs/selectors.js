@@ -1,28 +1,23 @@
 import { createSelector } from 'reselect';
 
-const selectBlogs = state => state.get('blogs');
+const selectBlogs = state => state.get('blogspage');
 
 const makeSelectBlogs = () =>
   createSelector(
     selectBlogs,
-    blogsState => blogsState.get('data'),
+    blogsState => blogsState.get('blogs'),
   );
 
-const makeSelectBlogsLoading = () =>
+const makeSelectLoading = () =>
   createSelector(
     selectBlogs,
     blogsState => blogsState.get('loading'),
   );
 
-const makeSelectBlogsError = () =>
+const makeSelectError = () =>
   createSelector(
     selectBlogs,
     blogsState => blogsState.get('error'),
   );
 
-export {
-  selectBlogs,
-  makeSelectBlogs,
-  makeSelectBlogsLoading,
-  makeSelectBlogsError,
-};
+export { selectBlogs, makeSelectBlogs, makeSelectLoading, makeSelectError };
