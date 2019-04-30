@@ -2,7 +2,7 @@ import React from 'react';
 import { Helmet } from 'react-helmet';
 import { Switch, Route } from 'react-router-dom';
 import AccountPage from 'containers/Account/Loadable';
-import AdminPage from 'containers/Admin/Loadable';
+import AdminPage from 'containers/Admin';
 import AdminBlogs from 'containers/AdminBlogs/Loadable';
 import AdminBlogEdit from 'containers/AdminBlogEdit/Loadable';
 import AdminUsersPage from 'containers/AdminUsers/Loadable';
