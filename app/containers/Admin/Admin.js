@@ -58,6 +58,14 @@ export default class Admin extends React.Component {
                 day={null}
                 month={null}
                 className={getClassName('pages__card')}
+                linkUrl="/admin/notifications"
+                title="Notifications"
+              />
+              <ArticleCard
+                layout={CARD_LAYOUTS.narrowCompact}
+                day={null}
+                month={null}
+                className={getClassName('pages__card')}
                 linkUrl="/admin/blog"
                 title="Blogs"
               />
