@@ -1,5 +1,7 @@
 import redis from 'utils/redis';
 import { find } from 'utils/find';
+import sortBy from 'lodash/sortBy';
+import reverse from 'lodash/reverse';
 
 export default function datumLoad(settings) {
   // load(req) {
@@ -7,7 +9,7 @@ export default function datumLoad(settings) {
     if (settings.includeOwnerUname && settings.redisKey !== 'users') {
       datumLoad({ redisKey: 'users' }).then(userData => {
         redis.lrange(settings.redisKey, 0, -1, (err, reply) => {
-          const result = [];
+          let result = [];
           for (let inc = 0; inc < reply.length; inc += 1) {
             const value = JSON.parse(reply[inc]);
 
@@ -37,14 +39,7 @@ export default function datumLoad(settings) {
           }
 
           if (settings.sortKey) {
-            result.sort((itemA, itemB) => {
-              if (itemA[settings.sortKey] < itemB[settings.sortKey]) {
-                return 1;
-              } else if (itemA[settings.sortKey] > itemB[settings.sortKey]) {
-                return -1;
-              }
-              return 0;
-            });
+            result = reverse(sortBy(result, [settings.sortKey]));
           }
 
           resolve(result);
@@ -52,7 +47,7 @@ export default function datumLoad(settings) {
       });
     } else {
       redis.lrange(settings.redisKey, 0, -1, (err, reply) => {
-        const result = [];
+        let result = [];
         for (let inc = 0; inc < reply.length; inc += 1) {
           const value = JSON.parse(reply[inc]);
           if (!settings.filter || settings.filter(value)) {
@@ -68,14 +63,7 @@ export default function datumLoad(settings) {
         }
 
         if (settings.sortKey) {
-          result.sort((itemA, itemB) => {
-            if (itemA[settings.sortKey] < itemB[settings.sortKey]) {
-              return 1;
-            } else if (itemA[settings.sortKey] > itemB[settings.sortKey]) {
-              return -1;
-            }
-            return 0;
-          });
+          result = reverse(sortBy(result, [settings.sortKey]));
         }
 
         resolve(result);
