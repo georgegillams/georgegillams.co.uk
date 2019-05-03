@@ -30,6 +30,7 @@ function register(scriptId, fileName) {
   });
 }
 
+register('github_WIP_reminder', 'Github WIP Reminder.js');
 register('jira_github_links', 'Jira Github Links.js');
 register('geektastic_identifiers', 'Geektastic identifiers.js');
 register('github_travis_new_tab', 'GitHub Travis links new tab.js');
