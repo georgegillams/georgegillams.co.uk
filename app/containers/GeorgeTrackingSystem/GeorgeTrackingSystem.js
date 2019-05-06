@@ -4,6 +4,7 @@ import { Helmet } from 'react-helmet';
 import { Section, SubSection } from 'components/Typography';
 import GTSEntity from 'components/GTS';
 import LoadingIndicator from 'components/LoadingIndicator';
+import DeprecationNotice from 'containers/DeprecationNotice';
 import STYLES from 'containers/pages.scss';
 import { cssModules } from 'bpk-react-utils';
 const getClassName = cssModules(STYLES); // REGEX_REPLACED
@@ -34,14 +35,15 @@ export default class GeorgeTrackingSystem extends React.Component {
     return (
       <div className={outerClassNameFinal.join(' ')} {...rest}>
         <Helmet title="Tracking" />
-        <LoadingIndicator loading={loading} error={error}>
+        <DeprecationNotice />
+        {/* <LoadingIndicator loading={loading} error={error}>
           {!gtsLatest && (
             <Section name="No live tracking currently available">
               <Section name="🗺" />
             </Section>
           )}
           {gtsLatest && <GTSEntity gts={gtsLatest} />}
-        </LoadingIndicator>
+        </LoadingIndicator>*/}
       </div>
     );
   }
