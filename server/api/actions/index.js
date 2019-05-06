@@ -23,6 +23,7 @@ export * as payments from './payments/index';
 export * as comments from './comments/index';
 export * as tickets from './tickets/index';
 export * as userDetails from './userDetails/index';
+export * as grammarML from './grammarML/index';
 export * as notifications from './notifications/index';
 export * as blogs from './blogs/index';
 export * as sessions from './sessions/index';
