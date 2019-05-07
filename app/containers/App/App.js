@@ -5,6 +5,7 @@ import AccountPage from 'containers/Account/Loadable';
 import AdminPage from 'containers/Admin';
 import AdminBlogs from 'containers/AdminBlogs/Loadable';
 import AdminNotifications from 'containers/AdminNotifications/Loadable';
+import GrammarML from 'containers/GrammarML/Loadable';
 import AdminBlogEdit from 'containers/AdminBlogEdit/Loadable';
 import AdminUsersPage from 'containers/AdminUsers/Loadable';
 import AdminMonzo from 'containers/AdminMonzo/Loadable';
@@ -130,6 +131,7 @@ const App = () => (
         />
         <Route path="/travel/:id" component={BlogViewer} />
         <Route path="/work/bpk-component-demo" component={BpkDemoPage} />
+        <Route path="/ml/grammar" component={GrammarML} />
         <Route path="/work/degree" component={AboutDegree} />
         <Route path="" component={NotFoundPage} />
       </Switch>

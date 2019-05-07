@@ -28,6 +28,7 @@ class FormBuilder extends React.Component {
     submitLabel: PropTypes.string.isRequired,
     presubmitText: PropTypes.string,
     formFields: PropTypes.arrayOf(PropTypes.object).isRequired,
+    submitOnChange: PropTypes.bool,
     disabled: PropTypes.bool,
     centered: PropTypes.bool,
     className: PropTypes.string,
@@ -35,6 +36,7 @@ class FormBuilder extends React.Component {
 
   static defaultProps = {
     className: null,
+    submitOnChange: false,
     disabled: false,
     centered: false,
     presubmitText: null,
@@ -53,6 +55,7 @@ class FormBuilder extends React.Component {
       disabled,
       entity,
       onDataChanged,
+      submitOnChange,
       onSubmit,
       presubmitText,
       submitLabel,
@@ -90,9 +93,17 @@ class FormBuilder extends React.Component {
                   name={formField.name}
                   label={formField.name}
                   checked={entity[formField.id]}
-                  onChange={event =>
-                    formValueChanged(entity, formField.id, event, onDataChanged)
-                  }
+                  onChange={event => {
+                    formValueChanged(
+                      entity,
+                      formField.id,
+                      event,
+                      onDataChanged,
+                    );
+                    if (submitOnChange) {
+                      onSubmit();
+                    }
+                  }}
                   disabled={formField.disabled}
                 />
                 <br />
@@ -118,9 +129,17 @@ class FormBuilder extends React.Component {
                   name={formField.name}
                   value={entity[formField.id]}
                   valid={validity[index]}
-                  onChange={event =>
-                    formValueChanged(entity, formField.id, event, onDataChanged)
-                  }
+                  onChange={event => {
+                    formValueChanged(
+                      entity,
+                      formField.id,
+                      event,
+                      onDataChanged,
+                    );
+                    if (submitOnChange) {
+                      onSubmit();
+                    }
+                  }}
                   disabled={formField.disabled}
                   placeholder={formField.name}
                 />
@@ -146,9 +165,17 @@ class FormBuilder extends React.Component {
                   name={formField.name}
                   value={entity[formField.id]}
                   valid={validity[index]}
-                  onChange={event =>
-                    formValueChanged(entity, formField.id, event, onDataChanged)
-                  }
+                  onChange={event => {
+                    formValueChanged(
+                      entity,
+                      formField.id,
+                      event,
+                      onDataChanged,
+                    );
+                    if (submitOnChange) {
+                      onSubmit();
+                    }
+                  }}
                   disabled={formField.disabled}
                   placeholder={formField.name}
                 />
@@ -163,17 +190,19 @@ class FormBuilder extends React.Component {
             </div>
           </Fragment>
         )}
-        <GGButton
-          className={getClassName(
-            'forms__component',
-            'forms__component__button',
-          )}
-          large
-          onClick={onSubmit}
-          disabled={disabled || !validity.every(v => v)}
-        >
-          {submitLabel}
-        </GGButton>
+        {!submitOnChange && (
+          <GGButton
+            className={getClassName(
+              'forms__component',
+              'forms__component__button',
+            )}
+            large
+            onClick={onSubmit}
+            disabled={disabled || !validity.every(v => v)}
+          >
+            {submitLabel}
+          </GGButton>
+        )}
       </div>
     );
   }
