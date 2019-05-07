@@ -75,6 +75,19 @@ export default class GrammarML extends React.Component {
     const page = (
       <div className={outerClassNameFinal.join(' ')} {...rest}>
         <Section name="Machine learning - grammar">
+          <SubSection name="Current limitations">
+            Can only detect errors based on usage of &quot;there&quot; or
+            &quot;their&quot;.
+            <br />
+            Can only handle sentences that end in &quot;!&quot;, &quot;?&quot;
+            or &quot;.&quot;.
+            <br />
+            Can only handle sentences that contain a single instance of
+            &quot;there&quot; or &quot;their&quot;.
+          </SubSection>
+          <SubSection name="Some test data">
+            {`Put your coat down over there. There is something to be said for telling the truth. What is over there? That is neither here nor there. There is always another opportunity to be had down the road. The book is right over there. The remote is over there on the couch. Why don't you go over there and tell me what is inside? There are two people in the room right now. There is supposed to be rain tomorrow. I know there is truth to what you are saying. There are so many stores in this little village. I did not know there was milk in the refrigerator. Who knew there was going to be a sequel to the movie? I hope there is no snow tomorrow. I always wondered what was in there. The red one is their house. The beagle is their dog. Going to the store was their idea. They're in over their heads. Joe and Sue always want things their way. I didn't know that it was their cat. Their dog is always barking. Why don't you ask them what their plans are? I never forgot that it was their suggestion that started the company. Is that their boat? You should stay out of their business. You should stop by their lemonade stand for a drink. Do not take their word at face value. Did you know their house is for sale? Their car goes way faster than your car does. Did you know their new business has taken off?`}
+          </SubSection>
           <SubSection name="Live test">
             <FormBuilder
               entity={this.state.testData}
@@ -96,12 +109,10 @@ export default class GrammarML extends React.Component {
                 test(this.state.testData);
               }}
             />
-            {result && result.result && (
-              <span>RESULT: The sentence is valid</span>
+            {result && testSuccess && result.result && (
+              <span>{result.result}</span>
             )}
-            {result && !result.result && (
-              <span>RESULT: The sentence is invalid</span>
-            )}
+            {testError && <span>{testError.error}</span>}
           </SubSection>
           <SubSection name="Training data">
             <FormBuilder

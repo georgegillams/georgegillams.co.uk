@@ -5,9 +5,9 @@ import { SubSection, TextLink } from 'components/Typography';
 import LoadingIndicator from 'components/LoadingIndicator';
 import { NON_EMOJI_REGEX } from 'helpers/constants';
 import redirects from 'helpers/redirects';
-import STYLES from 'containers/pages.scss'; import {cssModules} from 'bpk-react-utils';  const getClassName = cssModules(STYLES); // REGEX_REPLACED
-
-
+import STYLES from 'containers/pages.scss';
+import { cssModules } from 'bpk-react-utils';
+const getClassName = cssModules(STYLES); // REGEX_REPLACED
 
 export default class SiteMap extends React.Component {
   componentWillMount = () => {
@@ -120,6 +120,15 @@ export default class SiteMap extends React.Component {
               <br />
               <TextLink href="/apps/password-character-extractor">
                 Password Character Extractor
+              </TextLink>
+            </SubSection>
+            <SubSection
+              noAnchor
+              className={getClassName('pages__site-map-item')}
+              name="Machine learning 🤖"
+            >
+              <TextLink href="/ml/grammar">
+                Using ML to predict grammatical correctness.
               </TextLink>
             </SubSection>
             {/* <SubSection noAnchor className={getClassName('pages__site-map-item')} name="Documents 🥇">
