@@ -99,10 +99,8 @@ class FormBuilder extends React.Component {
                       formField.id,
                       event,
                       onDataChanged,
+                      submitOnChange ? onSubmit : null,
                     );
-                    if (submitOnChange) {
-                      onSubmit();
-                    }
                   }}
                   disabled={formField.disabled}
                 />
@@ -135,10 +133,8 @@ class FormBuilder extends React.Component {
                       formField.id,
                       event,
                       onDataChanged,
+                      submitOnChange ? onSubmit : null,
                     );
-                    if (submitOnChange) {
-                      onSubmit();
-                    }
                   }}
                   disabled={formField.disabled}
                   placeholder={formField.name}
@@ -171,10 +167,8 @@ class FormBuilder extends React.Component {
                       formField.id,
                       event,
                       onDataChanged,
+                      submitOnChange ? onSubmit : null,
                     );
-                    if (submitOnChange) {
-                      onSubmit();
-                    }
                   }}
                   disabled={formField.disabled}
                   placeholder={formField.name}
