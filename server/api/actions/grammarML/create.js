@@ -19,7 +19,12 @@ export default function create(req) {
           .split('SPLIT_HERE');
 
         const tasks = sentences
-          .filter(s => s !== '')
+          .filter(
+            s =>
+              s !== '' &&
+              (s.toLowerCase().includes('there') ||
+                s.toLowerCase().includes('their')),
+          )
           .map(
             s =>
               new Promise(res => {
@@ -33,7 +38,6 @@ export default function create(req) {
         Promise.all(tasks).then(result => {
           resolve(result);
         });
-        // TODO Retrain
       },
       err => reject(err),
     );
