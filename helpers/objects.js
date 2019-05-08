@@ -1,8 +1,17 @@
-const formValueChanged = (object, attributeName, event, action) => {
+const formValueChanged = (
+  object,
+  attributeName,
+  event,
+  action,
+  callback = null,
+) => {
   const newValue = JSON.parse(JSON.stringify(object));
   newValue[attributeName] =
     event.target.value === 'on' ? event.target.checked : event.target.value;
   action(newValue);
+  if (callback) {
+    callback(newValue);
+  }
 };
 
 const createDictionary = (data, keyProperty) => {

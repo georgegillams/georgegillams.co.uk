@@ -105,8 +105,8 @@ export default class GrammarML extends React.Component {
               onDataChanged={testData => {
                 this.setState({ testData });
               }}
-              onSubmit={() => {
-                test(this.state.testData);
+              onSubmit={testData => {
+                test(testData);
               }}
             />
             {result && testSuccess && result.result && (
