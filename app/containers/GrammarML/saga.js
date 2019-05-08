@@ -85,7 +85,7 @@ export function* doLoadData() {
 
 export function* doTestData() {
   const testData = yield select(makeSelectTestData());
-  const testUrl = `${API_ENDPOINT}/grammarML/test`;
+  const testUrl = `${API_ENDPOINT}/grammarML/testSentence`;
 
   try {
     const testResult = yield call(request, testUrl, {
