@@ -158,7 +158,11 @@ export default class GrammarML extends React.Component {
                     justifyContent: 'space-between',
                   }}
                 >
-                  <span>{b.text}</span>
+                  <span>
+                    <Section noPadding noAnchor>
+                      {b.text}
+                    </Section>
+                  </span>
                   <GGButton
                     large
                     destructive

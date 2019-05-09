@@ -1,12 +1,13 @@
 import { datumUpdate, datumLoad } from '../datum';
 import jsregression from 'js-regression';
+import winkPerceptron from 'wink-perceptron';
 import authentication from 'utils/authentication';
 import { UNAUTHORISED_WRITE } from 'helpers/constants';
 import reqSecure from 'utils/reqSecure';
 import grammarMLAllowedAttributes from './grammarMLAllowedAttributes';
 
-const THEIR_VALUE = 100;
-const THERE_VALUE = 200;
+const THEIR_VALUE = 'THEIR';
+const THERE_VALUE = 'THERE';
 
 const annotateSentences = data => {
   return data.map(d => {
@@ -17,42 +18,47 @@ const annotateSentences = data => {
     res.wordLength = d.text.split(' ').length;
     res.charLength = d.text.length;
     res.endingCharacter = d.text.charCodeAt(res.charLength - 1);
-    res.theireType = 0;
-    res.theireType += d.text.toLowerCase().includes(`their`) ? THEIR_VALUE : 0;
-    res.theireType += d.text.toLowerCase().includes(`there`) ? THERE_VALUE : 0;
+    res.label = '';
+    res.label += d.text.toLowerCase().includes(`their`) ? THEIR_VALUE : '';
+    res.label += d.text.toLowerCase().includes(`there`) ? THERE_VALUE : '';
     return res;
   });
 };
 
 const extractDataMatrix = data => {
-  const result = [];
-  data.forEach(d => {
-    if (d) {
-      const row = [];
-      row.push(d.wordLength);
-      row.push(d.charLength);
-      row.push(d.endingCharacter);
-      row.push(d.theireType);
-      result.push(row);
+  const final = data.map(d => {
+    if (!d) {
+      return null;
     }
+    const resX = JSON.parse(JSON.stringify(d));
+    delete resX.text;
+    delete resX.label;
+    delete resX.id;
+    delete resX.timestamp;
+    delete resX.lastUpdatedTimestamp;
+    delete resX.authorId;
+    const resY = { label: d.label };
+    return [resX, resY];
   });
-  return result;
+  return final;
+};
+
+const getDataNormaliser = dataMatrix => {
+  // TODO - IMPLEMENT
+  return d => {
+    return d;
+  };
 };
 
 const trainModel = data => {
-  var classifier = new jsregression.MultiClassLogistic({
-    alpha: 0.001,
-    iterations: 1000,
-    lambda: 0.0,
-  });
-  const predictor = classifier.fit(data);
-  // console.log(`predictor`, predictor);
-  return classifier;
+  const perceptron = winkPerceptron();
+  perceptron.defineConfig({ shuffleData: true, maxIterations: 21 });
+  perceptron.learn(data);
+  return perceptron;
 };
 
 const useClassifier = (classifier, testData) => {
-  const prediction = classifier.transform(testData);
-  // console.log(`prediction`, prediction);
+  const prediction = classifier.predict(testData);
   return prediction;
 };
 
@@ -68,12 +74,17 @@ export default function test(req) {
           const testData = [reqSecured.body];
           const annotatedData = annotateSentences(trainingData);
           const annotatedTestData = annotateSentences(testData);
-          const dataMatrix = extractDataMatrix(annotatedData);
-          const testDataMatrix = extractDataMatrix(annotatedTestData);
+          let dataMatrix = extractDataMatrix(annotatedData);
+          let testDataMatrix = extractDataMatrix(annotatedTestData);
+          const normaliser = getDataNormaliser(dataMatrix);
+          dataMatrix = dataMatrix.map(normaliser);
+          testDataMatrix = dataMatrix.map(normaliser);
+          testDataMatrix = testDataMatrix[0][0];
+
           // console.log(`dataMatrix`, dataMatrix);
           // console.log(`testDataMatrix`, testDataMatrix);
           const classifier = trainModel(dataMatrix);
-          const result = useClassifier(classifier, testDataMatrix[0]);
+          const result = useClassifier(classifier, testDataMatrix);
           let correctResult = "Sentence does not contain 'there' or 'their'";
           if (
             text.toLowerCase().includes('there') ||
@@ -95,6 +106,7 @@ export default function test(req) {
               .split(`there`)
               .join('their');
           }
+          // console.log(`correctResult`, correctResult);
           resolve({ result: correctResult });
         });
       },
