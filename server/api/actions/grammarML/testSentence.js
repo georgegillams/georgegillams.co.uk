@@ -15,12 +15,27 @@ const annotateSentences = data => {
     if (!d || !d.text || d.text.length < 5) {
       return null;
     }
+    const lowerCaseText = d.text.toLowerCase();
     res.wordLength = d.text.split(' ').length;
     res.charLength = d.text.length;
     res.endingCharacter = d.text.charCodeAt(res.charLength - 1);
     res.label = '';
-    res.label += d.text.toLowerCase().includes(`their`) ? THEIR_VALUE : '';
-    res.label += d.text.toLowerCase().includes(`there`) ? THERE_VALUE : '';
+    res.label += lowerCaseText.includes(`their`) ? THEIR_VALUE : '';
+    res.label += lowerCaseText.includes(`there`) ? THERE_VALUE : '';
+    res.charPositionOfTheire = 0;
+    res.charPositionOfTheire += lowerCaseText.includes(`there`)
+      ? lowerCaseText.split('there')[0].length
+      : 0;
+    res.charPositionOfTheire += lowerCaseText.includes(`their`)
+      ? lowerCaseText.split('their')[0].length
+      : 0;
+    res.wordPositionOfTheire = 0;
+    res.wordPositionOfTheire += lowerCaseText.includes(`there`)
+      ? lowerCaseText.split('there')[0].split(' ').length
+      : 0;
+    res.wordPositionOfTheire += lowerCaseText.includes(`their`)
+      ? lowerCaseText.split('their')[0].split(' ').length
+      : 0;
     return res;
   });
 };
