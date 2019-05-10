@@ -22,20 +22,11 @@ const annotateSentences = data => {
     res.label = '';
     res.label += lowerCaseText.includes(`their`) ? THEIR_VALUE : '';
     res.label += lowerCaseText.includes(`there`) ? THERE_VALUE : '';
-    res.charPositionOfTheire = 0;
-    res.charPositionOfTheire += lowerCaseText.includes(`there`)
-      ? lowerCaseText.split('there')[0].length
-      : 0;
-    res.charPositionOfTheire += lowerCaseText.includes(`their`)
-      ? lowerCaseText.split('their')[0].length
-      : 0;
-    res.wordPositionOfTheire = 0;
-    res.wordPositionOfTheire += lowerCaseText.includes(`there`)
-      ? lowerCaseText.split('there')[0].split(' ').length
-      : 0;
-    res.wordPositionOfTheire += lowerCaseText.includes(`their`)
-      ? lowerCaseText.split('their')[0].split(' ').length
-      : 0;
+
+    const preTheireText = lowerCaseText.split(`there`)[0].split('their')[0];
+    res.charPositionOfTheire = preTheireText.length;
+    res.wordPositionOfTheire = preTheireText.split(' ').length;
+
     return res;
   });
 };
@@ -58,12 +49,44 @@ const extractDataMatrix = data => {
   return final;
 };
 
-const getDataNormaliser = dataMatrix => {
-  // TODO - IMPLEMENT
-  return d => {
-    return d;
-  };
-};
+// const scanData = dataMatrix => {
+//   const mins = {};
+//   const maxs = {};
+//   const averages = {};
+//
+//   dataMatrix.forEach(data => {
+//     const dataX = data[0];
+//     Object.keys(dataX).forEach(k => {
+//       if (!mins[k]) {
+//         mins[k] = 100000000;
+//       }
+//       if (!maxs[k]) {
+//         maxs[k] = -100000000;
+//       }
+//       if (!averages[k]) {
+//         averages[k] = 0;
+//       }
+//       console.log(`k`, k);
+//       mins[k] = Math.min(dataX[k], mins[k]);
+//       maxs[k] = Math.max(dataX[k], maxs[k]);
+//       averages[k] += dataX[k] / dataMatrix.length;
+//     });
+//   });
+//
+//   return { mins, maxs, averages };
+// };
+//
+// const getDataNormaliser = dataMatrix => {
+//   const { mins, maxs, averages } = scanData(dataMatrix);
+//   console.log(`mins`, mins);
+//   console.log(`maxs`, maxs);
+//   console.log(`averages`, averages);
+//   // TODO - IMPLEMENT
+//
+//   return d => {
+//     return d;
+//   };
+// };
 
 const trainModel = data => {
   const perceptron = winkPerceptron();
@@ -91,9 +114,9 @@ export default function test(req) {
           const annotatedTestData = annotateSentences(testData);
           let dataMatrix = extractDataMatrix(annotatedData);
           let testDataMatrix = extractDataMatrix(annotatedTestData);
-          const normaliser = getDataNormaliser(dataMatrix);
-          dataMatrix = dataMatrix.map(normaliser);
-          testDataMatrix = dataMatrix.map(normaliser);
+          // const normaliser = getDataNormaliser(dataMatrix);
+          // dataMatrix = dataMatrix.map(normaliser);
+          // testDataMatrix = dataMatrix.map(normaliser);
           testDataMatrix = testDataMatrix[0][0];
 
           // console.log(`dataMatrix`, dataMatrix);
