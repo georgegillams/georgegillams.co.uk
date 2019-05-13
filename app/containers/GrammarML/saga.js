@@ -1,6 +1,7 @@
 import { call, put, select, takeLatest } from 'redux-saga/effects';
 import {
   TEST,
+  TEST_PERFORMANCE,
   LOAD_DATA,
   CREATE_DATA,
   DELETE_DATA,
@@ -16,8 +17,11 @@ import {
   loadDataError,
   testSuccess,
   testError,
+  testPerformanceSuccess,
+  testPerformanceError,
 } from './actions';
 import {
+  makeSelectTestParameters,
   makeSelectTestData,
   makeSelectDataToDelete,
   makeSelectNewData,
@@ -79,6 +83,31 @@ export function* doLoadData() {
     }
   } catch (err) {
     yield put(loadDataError(err));
+    yield put(pushMessage(COMMUNICATION_ERROR_MESSAGE));
+  }
+}
+
+export function* doMeasurePerformance() {
+  const testParameters = yield select(makeSelectTestParameters());
+  const testUrl = `${API_ENDPOINT}/grammarML/testPerformance`;
+
+  try {
+    const testResult = yield call(request, testUrl, {
+      method: 'POST',
+      body: JSON.stringify(testParameters),
+      headers: {
+        'Content-Type': 'application/json',
+      },
+    });
+    if (testResult.error) {
+      yield put(testPerformanceError(testResult));
+      yield put(pushMessage(testErrorMessage));
+    } else {
+      yield put(testPerformanceSuccess(testResult));
+      yield put(pushMessage(testSuccessMessage));
+    }
+  } catch (err) {
+    yield put(testPerformanceError(err));
     yield put(pushMessage(COMMUNICATION_ERROR_MESSAGE));
   }
 }
@@ -187,6 +216,7 @@ export function* doCreateData() {
 
 export default function* adminUsers() {
   yield takeLatest(TEST, () => doTestData());
+  yield takeLatest(TEST_PERFORMANCE, () => doMeasurePerformance());
   yield takeLatest(LOAD_DATA, () => doLoadData());
   yield takeLatest(DELETE_DATA, () => doDeleteData());
   yield takeLatest(DELETE_ALL, () => doDeleteAllData());
