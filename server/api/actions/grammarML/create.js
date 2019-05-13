@@ -10,7 +10,7 @@ export default function create(req) {
       user => {
         const { text } = reqSecured.body;
         const sentences = text
-          .split('. ')
+          .split('.')
           .join('.SPLIT_HERE')
           .split('?')
           .join('?SPLIT_HERE')
@@ -30,7 +30,7 @@ export default function create(req) {
               new Promise(res => {
                 datumCreate(
                   { redisKey: 'grammarML', user },
-                  { body: { text: s } },
+                  { body: { text: s.trim() } },
                 ).then(r => res(r));
               }),
           );

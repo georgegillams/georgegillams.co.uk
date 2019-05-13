@@ -11,6 +11,9 @@ const actionDefinitions = [
     LOAD_DATA_ERROR: 'tbd',
     attributes: ['error'],
   },
+  { TEST_PERFORMANCE: 'tbd', attributes: ['testParameters'] },
+  { TEST_PERFORMANCE_SUCCESS: 'tbd', attributes: ['performance'] },
+  { TEST_PERFORMANCE_ERROR: 'tbd', attributes: ['testPerformanceError'] },
   {
     TEST: 'tbd',
     attributes: ['testData'],

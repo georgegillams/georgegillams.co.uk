@@ -10,8 +10,7 @@ import {
   extractDataMatrix,
   trainModel,
   useClassifier,
-  THERE_VALUE,
-  THEIR_VALUE,
+  splitData,
 } from './helpers';
 
 export default function test(req) {
@@ -19,11 +18,14 @@ export default function test(req) {
   return new Promise((resolve, reject) => {
     authentication(reqSecured).then(
       user => {
-        const { text } = reqSecured.body;
+        const { ratio } = reqSecured.body;
         datumLoad({
           redisKey: 'grammarML',
-        }).then(trainingData => {
-          const testData = [reqSecured.body];
+        }).then(allData => {
+          const { trainingData, testData } = splitData(
+            allData,
+            parseFloat(ratio),
+          );
           const annotatedData = annotateSentences(trainingData);
           const annotatedTestData = annotateSentences(testData);
           const dataMatrix = extractDataMatrix(annotatedData);
@@ -31,35 +33,26 @@ export default function test(req) {
           // const normaliser = getDataNormaliser(dataMatrix);
           // dataMatrix = dataMatrix.map(normaliser);
           // testDataMatrix = dataMatrix.map(normaliser);
-          testDataMatrix = testDataMatrix[0][0];
 
           // console.log(`dataMatrix`, dataMatrix);
           // console.log(`testDataMatrix`, testDataMatrix);
+
+          let predictionsMade = 0;
+          let correctPredictions = 0;
+
           const classifier = trainModel(dataMatrix);
-          const result = useClassifier(classifier, testDataMatrix);
-          let correctResult = "Sentence does not contain 'there' or 'their'";
-          if (
-            text.toLowerCase().includes('there') ||
-            text.toLowerCase().includes('their')
-          ) {
-            correctResult = 'Sentence is correct';
-          }
-          if (result === THERE_VALUE && text.toLowerCase().includes('their')) {
-            correctResult = 'Sentence is incorrect. Should read: ';
-            correctResult += text
-              .toLowerCase()
-              .split(`their`)
-              .join('there');
-          }
-          if (result === THEIR_VALUE && text.toLowerCase().includes('there')) {
-            correctResult = 'Sentence is incorrect. Should read: ';
-            correctResult += text
-              .toLowerCase()
-              .split(`there`)
-              .join('their');
-          }
+          testDataMatrix.forEach(td => {
+            const testItem = td[0];
+            // console.log(`testItem`, testItem);
+            const result = useClassifier(classifier, testItem);
+            // console.log(`label`, td[1].label);
+            predictionsMade += 1;
+            if (result === td[1].label) {
+              correctPredictions += 1;
+            }
+          });
           // console.log(`correctResult`, correctResult);
-          resolve({ result: correctResult });
+          resolve({ result: correctPredictions / predictionsMade });
         });
       },
       err => reject(err),

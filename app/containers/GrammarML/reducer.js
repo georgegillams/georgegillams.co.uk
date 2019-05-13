@@ -3,6 +3,9 @@ import {
   TEST,
   TEST_ERROR,
   TEST_SUCCESS,
+  TEST_PERFORMANCE,
+  TEST_PERFORMANCE_ERROR,
+  TEST_PERFORMANCE_SUCCESS,
   LOAD_DATA,
   LOAD_DATA_ERROR,
   LOAD_DATA_SUCCESS,
@@ -35,9 +38,14 @@ const initialState = fromJS({
   creating: false,
   createSuccess: false,
   createError: null,
+  testingPerformance: false,
   testing: false,
   testSuccess: false,
   testError: null,
+  testPerformanceSuccess: false,
+  testPerformanceError: null,
+  testParameters: null,
+  performance: null,
 });
 
 function appReducer(state = initialState, action) {
@@ -55,6 +63,21 @@ function appReducer(state = initialState, action) {
         .set('result', action.result);
     case TEST_ERROR:
       return state.set('testing', false).set('testError', action.testError);
+    case TEST_PERFORMANCE:
+      return state
+        .set('testParameters', action.testParameters)
+        .set('testingPerformance', true)
+        .set('testPerformanceError', false)
+        .set('performance', null);
+    case TEST_PERFORMANCE_SUCCESS:
+      return state
+        .set('testingPerformance', false)
+        .set('testPerformanceSuccess', true)
+        .set('performance', action.performance);
+    case TEST_PERFORMANCE_ERROR:
+      return state
+        .set('testingPerformance', false)
+        .set('testPerformanceError', action.testPerformanceError);
     case LOAD_DATA:
       return state.set('loading', true).set('error', false);
     case LOAD_DATA_SUCCESS:
