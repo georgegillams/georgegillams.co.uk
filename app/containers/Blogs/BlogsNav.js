@@ -28,10 +28,17 @@ export default class BlogsNav extends React.Component {
           white={selected !== 'Writing'}
           href="/blog"
           style={{ marginRight: '1rem' }}
+          aria-selected={selected === 'Writing' ? 'true' : null}
+          role="tab"
         >
           Writing
         </GGButton>
-        <GGButton white={selected !== 'Travel'} href="/travel">
+        <GGButton
+          aria-selected={selected === 'Travel' ? 'true' : null}
+          role="tab"
+          white={selected !== 'Travel'}
+          href="/travel"
+        >
           Travel
         </GGButton>
       </div>
