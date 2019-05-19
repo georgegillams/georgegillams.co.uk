@@ -3,16 +3,18 @@ import fetch from 'node-fetch';
 import moment from 'moment';
 
 const POTS_REVEAL = [
-  'Bills (monthly)',
-  'Clothing (monthly)',
-  'Emergencies',
-  'Exercise extras (monthly)',
-  'Extras (monthly)',
-  'Gifts',
-  'Groceries and transport (monthly)',
   'Season ticket',
-  'Software + Subscriptions',
+  'Exercise extras (monthly)',
   'Travel',
+  'Emergencies',
+  'Gifts',
+  'Charlie',
+  'Software + subscriptions',
+  'Health',
+  'Dropbox',
+  'Domains',
+  'Clothing (monthly)',
+  'Groceries (monthly)',
 ];
 
 function getMonthsElapsedPercentage() {
