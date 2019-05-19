@@ -13,8 +13,9 @@ const POTS_REVEAL = [
   'Health',
   'Dropbox',
   'Domains',
-  'Clothing (monthly)',
+  'Extras',
   'Groceries (monthly)',
+  'Social (monthly)',
 ];
 
 function getMonthsElapsedPercentage() {
