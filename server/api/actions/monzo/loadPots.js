@@ -18,8 +18,24 @@ const POTS_REVEAL = [
   'Social (monthly)',
 ];
 
-function getMonthsElapsedPercentage() {
-  const result = moment().diff(`${moment().format('YYYY')}-01-01`, 'months');
+const POTS_BEHIND = [
+  'Exercise extras (monthly)',
+  'Travel',
+  'Emergencies',
+  'Gifts',
+  'Charlie',
+  'Software + subscriptions',
+  'Health',
+  'Dropbox',
+  'Domains',
+  'Extras',
+];
+
+function getMonthsElapsedPercentage(potName) {
+  let result = moment().diff(`${moment().format('YYYY')}-01-01`, 'months');
+  if (POTS_BEHIND.includes(potName)) {
+    result = moment().diff(`${moment().format('YYYY')}-05-01`, 'months');
+  }
   return Math.min(100, ((result + 1) * 100) / 12);
 }
 
@@ -64,7 +80,9 @@ function loadPots(req) {
           reducedData = reducedData.map(pot => {
             const goalAmount = parseFloat(pot.goal_amount) / 100;
             const balance = parseFloat(pot.balance) / 100;
-            const monthsElapsedPercentage = getMonthsElapsedPercentage();
+            const monthsElapsedPercentage = getMonthsElapsedPercentage(
+              pot.name,
+            );
             const expectedSavingsSoFar =
               (goalAmount * monthsElapsedPercentage) / 100;
             const shortfall = expectedSavingsSoFar - balance;
