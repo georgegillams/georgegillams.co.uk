@@ -4,7 +4,6 @@ import moment from 'moment';
 
 const POTS_REVEAL = [
   'Season ticket',
-  'Exercise extras (monthly)',
   'Travel',
   'Emergencies',
   'Gifts',
@@ -14,12 +13,12 @@ const POTS_REVEAL = [
   'Dropbox',
   'Domains',
   'Extras',
+  'Exercise extras (monthly)',
   'Groceries (monthly)',
   'Social (monthly)',
 ];
 
 const POTS_BEHIND = [
-  'Exercise extras (monthly)',
   'Travel',
   'Emergencies',
   'Gifts',
@@ -32,9 +31,13 @@ const POTS_BEHIND = [
 ];
 
 function getMonthsElapsedPercentage(potName) {
+  if (potName.includes('(monthly)')) {
+    return 0;
+  }
+
   let result = moment().diff(`${moment().format('YYYY')}-01-01`, 'months');
   if (POTS_BEHIND.includes(potName)) {
-    result = moment().diff(`${moment().format('YYYY')}-05-01`, 'months');
+    result = moment().diff(`${moment().format('YYYY')}-06-01`, 'months');
   }
   return Math.min(100, ((result + 1) * 100) / 12);
 }
