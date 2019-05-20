@@ -35,11 +35,11 @@ function getMonthsElapsedPercentage(potName) {
     return 0;
   }
 
-  let result = moment().diff(`${moment().format('YYYY')}-01-01`, 'months');
+  let result = moment().diff(`${moment().format('YYYY') - 1}-12-01`, 'months');
   if (POTS_BEHIND.includes(potName)) {
     result = moment().diff(`${moment().format('YYYY')}-06-01`, 'months');
   }
-  return Math.min(100, ((result + 1) * 100) / 12);
+  return Math.min(100, (result * 100) / 12);
 }
 
 function loadPots(req) {

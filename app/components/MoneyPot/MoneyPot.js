@@ -74,7 +74,7 @@ const MoneyPot = props => {
       )}
       <div className={getClassName('money-pot--module-bar')}>
         {progress}
-        {markerPosition && (
+        {markerPosition !== undefined && (
           <div
             className={getClassName('money-pot--21-marker')}
             style={{ marginLeft: `calc(${markerPosition}% - .175rem)` }}
