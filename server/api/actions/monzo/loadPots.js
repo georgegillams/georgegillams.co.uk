@@ -2,32 +2,63 @@ import { datumLoad, datumLoadSingle, datumCreate } from '../../actions/datum';
 import fetch from 'node-fetch';
 import moment from 'moment';
 
-const POTS_REVEAL = [
-  'Season ticket',
-  'Travel',
-  'Emergencies',
-  'Gifts',
-  'Charlie',
-  'Software + subscriptions',
-  'Health',
-  'Dropbox',
-  'Domains',
-  'Extras',
-  'Exercise extras (monthly)',
-  'Groceries (monthly)',
-  'Social (monthly)',
-];
+const thisYear = moment().format('YYYY');
+const lastYear = thisYear - 1;
 
-const POTS_BEHIND = [
-  'Travel',
-  'Emergencies',
-  'Gifts',
-  'Charlie',
-  'Software + subscriptions',
-  'Health',
-  'Dropbox',
-  'Domains',
-  'Extras',
+const POT_CONFIGS = [
+  {
+    name: 'Season ticket',
+    startDate: `${lastYear}-12-01`,
+  },
+  {
+    name: 'Travel',
+    startDate: `${thisYear}-05-01`,
+  },
+  {
+    name: 'Emergencies',
+    startDate: `${thisYear}-05-01`,
+  },
+  {
+    name: 'Gifts',
+    startDate: `${thisYear}-05-01`,
+  },
+  {
+    name: 'Charlie',
+    startDate: `${thisYear}-05-01`,
+  },
+  {
+    name: 'Software + subscriptions',
+    startDate: `${thisYear}-05-01`,
+  },
+  {
+    name: 'Health',
+    startDate: `${thisYear}-05-01`,
+  },
+  {
+    name: 'Todoist and Lastpass',
+    startDate: `${lastYear}-08-01`,
+  },
+  {
+    name: 'Dropbox',
+    startDate: `${thisYear}-05-01`,
+  },
+  {
+    name: 'Domains',
+    startDate: `${thisYear}-05-01`,
+  },
+  {
+    name: 'Extras',
+    startDate: `${thisYear}-05-01`,
+  },
+  {
+    name: 'Exercise extras (monthly)',
+  },
+  {
+    name: 'Groceries (monthly)',
+  },
+  {
+    name: 'Social (monthly)',
+  },
 ];
 
 function getMonthsElapsedPercentage(potName) {
@@ -35,10 +66,9 @@ function getMonthsElapsedPercentage(potName) {
     return 0;
   }
 
-  let result = moment().diff(`${moment().format('YYYY') - 1}-12-01`, 'months');
-  if (POTS_BEHIND.includes(potName)) {
-    result = moment().diff(`${moment().format('YYYY')}-06-01`, 'months');
-  }
+  const config = POT_CONFIGS.filter(p => p.name === potName)[0];
+
+  let result = moment().diff(config.startDate, 'months');
   return Math.min(100, (result * 100) / 12);
 }
 
@@ -78,7 +108,9 @@ function loadPots(req) {
           }
 
           let reducedData = data.pots.filter(
-            pot => !pot.deleted && POTS_REVEAL.includes(pot.name),
+            pot =>
+              !pot.deleted &&
+              POT_CONFIGS.filter(p => p.name === pot.name).length > 0,
           );
           reducedData = reducedData.map(pot => {
             const goalAmount = parseFloat(pot.goal_amount) / 100;
