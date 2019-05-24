@@ -35,7 +35,7 @@ const POT_CONFIGS = [
     startDate: `${thisYear}-05-01`,
   },
   {
-    name: 'Todoist and Lastpass',
+    name: 'Todoist',
     startDate: `${lastYear}-08-01`,
   },
   {
