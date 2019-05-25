@@ -11,7 +11,7 @@ const POT_CONFIGS = [
     startDate: `${lastYear}-12-01`,
   },
   {
-    name: 'Travel',
+    name: 'Holiday',
     startDate: `${thisYear}-05-01`,
   },
   {
@@ -27,34 +27,38 @@ const POT_CONFIGS = [
     startDate: `${thisYear}-05-01`,
   },
   {
-    name: 'Software + subscriptions',
-    startDate: `${thisYear}-05-01`,
-  },
-  {
-    name: 'Health',
-    startDate: `${thisYear}-05-01`,
-  },
-  {
-    name: 'Dropbox, Todoist and Domains',
-    startDate: `${thisYear}-05-01`,
-  },
-  {
     name: 'Extras',
     startDate: `${thisYear}-05-01`,
   },
   {
-    name: 'Hoop (monthly)',
+    name: 'Subscriptions (yearly) - Dropbox, Todoist and Domains',
+    startDate: `${thisYear}-05-01`,
   },
   {
-    name: 'Groceries (monthly)',
+    name: 'Dentist and prescriptions',
+    startDate: `${thisYear}-05-01`,
   },
   {
-    name: 'Social (monthly)',
+    name: 'Buffer',
+    startDate: `${thisYear}-05-01`,
+  },
+  {
+    name: 'Aerial (monthly)',
+  },
+  {
+    name: 'Weekly',
+  },
+  {
+    name: 'Leftover',
   },
 ];
 
 function getMonthsElapsedPercentage(potName) {
-  if (potName.includes('(monthly)')) {
+  if (
+    potName.includes('(monthly)') ||
+    potName === 'Weekly' ||
+    potName === 'Leftover'
+  ) {
     return 0;
   }
 
