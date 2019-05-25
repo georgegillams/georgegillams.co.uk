@@ -35,15 +35,7 @@ const POT_CONFIGS = [
     startDate: `${thisYear}-05-01`,
   },
   {
-    name: 'Todoist',
-    startDate: `${lastYear}-08-01`,
-  },
-  {
-    name: 'Dropbox',
-    startDate: `${thisYear}-05-01`,
-  },
-  {
-    name: 'Domains',
+    name: 'Dropbox, Todoist and Domains',
     startDate: `${thisYear}-05-01`,
   },
   {
@@ -51,7 +43,7 @@ const POT_CONFIGS = [
     startDate: `${thisYear}-05-01`,
   },
   {
-    name: 'Exercise extras (monthly)',
+    name: 'Hoop (monthly)',
   },
   {
     name: 'Groceries (monthly)',
