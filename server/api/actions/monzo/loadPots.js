@@ -103,12 +103,14 @@ function loadPots(req) {
             return;
           }
 
-          let reducedData = data.pots.filter(
-            pot =>
-              !pot.deleted &&
-              POT_CONFIGS.filter(p => p.name === pot.name).length > 0,
-          );
-          reducedData = reducedData.map(pot => {
+          const processedData = POT_CONFIGS.map(potConfig => {
+            const pot = data.pots.filter(
+              p => p.name === potConfig.name && !p.deleted,
+            )[0];
+            if (!pot) {
+              return null;
+            }
+
             const goalAmount = parseFloat(pot.goal_amount) / 100;
             const balance = parseFloat(pot.balance) / 100;
             const monthsElapsedPercentage = getMonthsElapsedPercentage(
@@ -128,7 +130,7 @@ function loadPots(req) {
                 : 100,
             };
           });
-          resolve(reducedData);
+          resolve(processedData);
         });
     });
   });
