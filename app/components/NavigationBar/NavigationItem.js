@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+
 import GGButton from 'components/GGButton';
 
 const NavigationItem = props => {

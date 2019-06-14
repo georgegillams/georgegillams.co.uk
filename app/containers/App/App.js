@@ -1,6 +1,10 @@
 import React from 'react';
 import { Helmet } from 'react-helmet';
 import { Switch, Route } from 'react-router-dom';
+import { cssModules } from 'bpk-react-utils';
+
+import STYLES from './style.scss';
+
 import AccountPage from 'containers/Account/Loadable';
 import AdminPage from 'containers/Admin';
 import AdminBlogs from 'containers/AdminBlogs/Loadable';
@@ -35,8 +39,7 @@ import Redirect from 'components/Redirect';
 import PasswordCharacterExtractor from 'containers/PasswordCharacterExtractor/Loadable';
 import { SITE_URL } from 'helpers/constants';
 import redirects from 'helpers/redirects';
-import STYLES from './style.scss';
-import { cssModules } from 'bpk-react-utils';
+
 const getClassName = cssModules(STYLES); // REGEX_REPLACED
 
 const cleanWindowLocation = location => {

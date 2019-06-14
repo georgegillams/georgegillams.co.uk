@@ -5,9 +5,10 @@ import BpkProgress, {
   themeAttributes as progressThemeAttributes,
 } from 'bpk-component-progress';
 import BpkThemeProvider from 'bpk-theming';
+import { cssModules } from 'bpk-react-utils';
 
 import STYLES from './money-pot.scss';
-import { cssModules } from 'bpk-react-utils';
+
 const getClassName = cssModules(STYLES); // REGEX_REPLACED
 
 const MoneyPot = props => {

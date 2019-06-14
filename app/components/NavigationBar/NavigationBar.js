@@ -3,7 +3,9 @@ import PropTypes from 'prop-types';
 import Burger from '@animated-burgers/burger-rotate';
 import '@animated-burgers/burger-rotate/dist/styles.css';
 import { cssModules } from 'bpk-react-utils';
+
 import STYLES from './navigation-bar.scss';
+
 import PAGE_STYLES from 'containers/pages.scss';
 
 const getClassName = cssModules({ ...STYLES, ...PAGE_STYLES });

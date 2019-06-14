@@ -1,6 +1,7 @@
-import { datumLoad, datumLoadSingle, datumCreate } from '../../actions/datum';
 import fetch from 'node-fetch';
 import moment from 'moment';
+
+import { datumLoad, datumLoadSingle, datumCreate } from '../../actions/datum';
 
 const thisYear = moment().format('YYYY');
 const lastYear = thisYear - 1;
@@ -64,7 +65,7 @@ function getMonthsElapsedPercentage(potName) {
 
   const config = POT_CONFIGS.filter(p => p.name === potName)[0];
 
-  let result = moment().diff(config.startDate, 'months');
+  const result = moment().diff(config.startDate, 'months');
   return Math.min(100, (result * 100) / 12);
 }
 
