@@ -1,11 +1,8 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import NavigationBar, { NavigationItem } from 'components/NavigationBar';
 import { Logo } from 'components/Logo';
 import { SmallButtonSkeleton } from 'components/Skeletons';
-
-import STYLES from 'containers/pages.scss';
-import { cssModules } from 'bpk-react-utils';
-const getClassName = cssModules(STYLES);
 
 const NavigationBarWrapper = props => {
   const { user, userLoading, ...rest } = props;
@@ -48,6 +45,11 @@ const NavigationBarWrapper = props => {
       {...rest}
     />
   );
+};
+
+NavigationBarWrapper.propTypes = {
+  user: PropTypes.object.isRequired, // eslint-disable-line react/forbid-prop-types
+  userLoading: PropTypes.boolean.isRequired,
 };
 
 export default NavigationBarWrapper;
