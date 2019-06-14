@@ -23,6 +23,7 @@ class GGButton extends Component {
       bouncy,
       onClick,
       className,
+      buttonClassName,
       large,
       children,
       secondary,
@@ -78,6 +79,8 @@ class GGButton extends Component {
         );
       }
     }
+
+    if (buttonClassName) classNameFinal.push(buttonClassName);
 
     if (href && !hrefExternal && !disabled) {
       return (

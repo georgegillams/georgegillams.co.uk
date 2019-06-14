@@ -3,14 +3,12 @@ import NavigationBar, { NavigationItem } from 'components/NavigationBar';
 import { Logo } from 'components/Logo';
 import { SmallButtonSkeleton } from 'components/Skeletons';
 
+import STYLES from 'containers/pages.scss';
+import { cssModules } from 'bpk-react-utils';
+const getClassName = cssModules(STYLES);
+
 const NavigationBarWrapper = props => {
   const { user, userLoading, ...rest } = props;
-
-  const menuItems1 = [
-    <NavigationItem name="Blog" linkUrl="/blog" />,
-    <NavigationItem name="Photography" linkUrl="/photography" />,
-    <NavigationItem name="Work" linkUrl="/work" />,
-  ];
 
   const accountItem = userLoading ? (
     <SmallButtonSkeleton />
@@ -26,7 +24,11 @@ const NavigationBarWrapper = props => {
       <NavigationItem name="Admin" linkUrl="/admin" />
     ) : null;
 
-  const menuItems2 = [
+  const menuItems = [
+    <NavigationItem name="Home" linkUrl="/" />,
+    <NavigationItem name="Blog" linkUrl="/blog" />,
+    <NavigationItem name="Photography" linkUrl="/photography" />,
+    <NavigationItem name="Work" linkUrl="/work" />,
     <NavigationItem name="Contact" linkUrl="/contact" />,
     <NavigationItem
       name="Github"
@@ -35,12 +37,12 @@ const NavigationBarWrapper = props => {
     />,
     adminItem,
     accountItem,
+    <NavigationItem name="Site map" linkUrl="/sitemap" />,
   ];
 
   return (
     <NavigationBar
-      menuItems1={menuItems1}
-      menuItems2={menuItems2}
+      menuItems={menuItems}
       logo={<Logo noPadding small animated />}
       accountMenuItem={accountItem}
       {...rest}
