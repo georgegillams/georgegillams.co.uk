@@ -15,7 +15,7 @@
   "scripts": {
     "build": "npm run build:client && npm run build:server",
     "build:clean": "rimraf ./build",
-    "build:client": "cross-env NODE_PATH=./app NODE_ENV=production webpack --config config/webpack.prod.babel.js --color -p --progress --hide-modules --display-optimization-bailout",
+    "build:client": "cross-env NODE_PATH=./server/api:./app NODE_ENV=production webpack --config config/webpack.prod.babel.js --color -p --progress --hide-modules --display-optimization-bailout",
     "build:server": "cross-env NODE_ENV=development babel -d ./build/server ./server -s",
     "clean": "npm run test:clean && npm run build:clean",
     "dev": "cross-env redis-server & SECRET_API_KEY=asdfghjkl MONZO_ACCESS_PASSWORD=asdfghjkl npm run start:dev",
@@ -149,7 +149,7 @@
     "eslint": "^4.19.1",
     "eslint-config-airbnb": "^16.1.0",
     "eslint-config-airbnb-base": "^12.1.0",
-    "eslint-config-skyscanner-with-prettier": "^0.5.0",
+    "eslint-config-skyscanner-with-prettier": "^0.8.0",
     "eslint-import-resolver-webpack": "^0.10.0",
     "eslint-plugin-flowtype": "^3.2.1",
     "eslint-plugin-import": "^2.12.0",
