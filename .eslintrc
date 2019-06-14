@@ -14,7 +14,7 @@
   "settings": {
     "import/resolver": {
       "node": {
-        "paths": ["./server/api","./app"]
+        "paths": ["./server/api","./app"],
         "extensions": [
           ".js",
           ".jsx",
