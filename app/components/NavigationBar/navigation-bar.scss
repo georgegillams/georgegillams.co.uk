@@ -7,7 +7,7 @@
     position: fixed;
     width: 100%;
     background-color: $background-color;
-    z-index: 1000;
+    z-index: $navigation-bar-z-index;
     left: 0;
     top: 0;
     box-shadow: 0 0.05rem 0.5rem lightgray;
@@ -55,7 +55,7 @@
     width: 25rem;
     transition: left 0.4s;
     overflow: hidden;
-    z-index: 999;
+    z-index: $navigation-bar-menu-z-index;
     display: flex;
     justify-content: center;
 
@@ -82,7 +82,7 @@
     width: 100vw;
     opacity: 0;
     transition: opacity 0.4s;
-    z-index: 998;
+    z-index: $navigation-bar-scrim-z-index;
 
     @media (prefers-color-scheme: dark) {
       background-color: black;
@@ -107,7 +107,7 @@
   }
 
   &__burger-button {
-    z-index: 1000;
+    z-index: $navigation-bar-z-index;
     background-color: $primary-color;
     border-radius: 0.5rem;
 
