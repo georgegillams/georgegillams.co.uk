@@ -108,12 +108,8 @@
 
   &__burger-button {
     z-index: $navigation-bar-z-index;
-    background-color: $primary-color;
-    border-radius: 0.5rem;
-
-    @media (prefers-color-scheme: dark) {
-      background-color: transparent;
-    }
+    width: 2rem;
+    height: 2rem;
 
     &__line {
       background-color: $not-black;

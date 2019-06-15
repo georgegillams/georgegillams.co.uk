@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import Burger from '@animated-burgers/burger-rotate';
-import '@animated-burgers/burger-rotate/dist/styles.css';
+import { BurgerButton } from 'components/GGButton';
 import { cssModules } from 'bpk-react-utils';
 
 import STYLES from './navigation-bar.scss';
@@ -103,11 +102,9 @@ class NavigationBar extends Component {
                 'navigation-bar__mobile-container--left',
               )}
             >
-              <Burger
-                Component="button"
-                type="button"
+              <BurgerButton
                 className={burgerClassNames.join(' ')}
-                barClassName={getClassName(
+                lineClassName={getClassName(
                   'navigation-bar__burger-button__line',
                 )}
                 isOpen={this.state.isOpen}
