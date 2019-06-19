@@ -44,6 +44,10 @@ const POT_CONFIGS = [
     startDate: `${thisYear}-05-01`,
   },
   {
+    name: 'Eating out',
+    startDate: `${thisYear}-07-01`,
+  },
+  {
     name: 'Aerial (monthly)',
   },
   {
