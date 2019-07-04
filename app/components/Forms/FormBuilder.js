@@ -7,7 +7,7 @@ import { cssModules } from 'bpk-react-utils';
 
 import STYLES from './forms.scss';
 
-import GGButton from 'components/GGButton';
+import GGButton from 'gg-components/components/GGButton';
 import { TextLink } from 'components/Typography';
 import { EMAIL_REGEX, PASSWORD_REGEX } from 'helpers/constants';
 import { formValueChanged } from 'helpers/objects';
@@ -19,7 +19,9 @@ import {
   SORT_CODE_REGEX,
 } from 'helpers/constants';
 
-const getClassName = cssModules(STYLES); // REGEX_REPLACED
+console.log(`GGButton`, GGButton);
+
+const getClassName = cssModules(STYLES);
 
 class FormBuilder extends React.Component {
   static propTypes = {
