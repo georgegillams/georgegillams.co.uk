@@ -1,14 +1,22 @@
 import React, { Component } from 'react';
 import Helmet from 'react-helmet';
+import BpkImage, {
+  withLazyLoading,
+  withLoadingBehavior,
+} from 'bpk-component-image';
 import { cssModules } from 'bpk-react-utils';
 
 import STYLES from '../pages.scss';
 
 import { TextLink, Section } from 'components/Typography';
-import PhotoGallery from 'components/PhotoGallery';
-// import contactFile from "./contact.vcf";
+import imageOfMe from './me.jpg';
 
-const getClassName = cssModules(STYLES); // REGEX_REPLACED
+const getClassName = cssModules(STYLES);
+
+const documentIfExists = typeof window !== 'undefined' ? document : null;
+const FadingLazyLoadedImage = withLoadingBehavior(
+  withLazyLoading(BpkImage, documentIfExists),
+);
 
 export default class Contact extends Component {
   state = {};
@@ -49,26 +57,12 @@ export default class Contact extends Component {
         with her and Tigger the cat.
         <br />
         <br />
-        <PhotoGallery
-          className={getClassName('pages__photo-gallery')}
-          images={[
-            {
-              src: 'https://i.imgur.com/EPfA1yI.png',
-              altText: 'My fianceé and I',
-            },
-            {
-              src: 'https://i.imgur.com/eldzRhk.jpg',
-              altText: 'My fianceé and I',
-            },
-            {
-              src: 'https://i.imgur.com/n8JZuqv.jpg',
-              altText: 'Our cat, Tigger',
-            },
-            {
-              src: 'https://i.imgur.com/mvvDmiL.jpg',
-              altText: 'Group photo at Tough Mudder',
-            },
-          ]}
+        <FadingLazyLoadedImage
+          className={getClassName('pages__image')}
+          altText="Me"
+          width={4032}
+          height={2353}
+          src={imageOfMe}
         />
         <br />
         <br />
