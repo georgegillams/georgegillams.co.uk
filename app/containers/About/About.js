@@ -9,8 +9,6 @@ import { cssModules } from 'bpk-react-utils';
 import STYLES from '../pages.scss';
 
 import { TextLink, Section } from 'components/Typography';
-import imageOfMe from './me.jpg';
-
 const getClassName = cssModules(STYLES);
 
 const documentIfExists = typeof window !== 'undefined' ? document : null;
@@ -62,7 +60,7 @@ export default class Contact extends Component {
           altText="Me"
           width={4032}
           height={2353}
-          src={imageOfMe}
+          src="https://i.imgur.com/3YpZvvE.jpg"
         />
         <br />
         <br />
