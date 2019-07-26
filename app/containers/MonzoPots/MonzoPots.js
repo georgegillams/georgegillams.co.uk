@@ -21,19 +21,23 @@ const getClassName = cssModules(STYLES); // REGEX_REPLACED
 
 export default class MonzoPots extends React.Component {
   loadPotData = password => {
-    console.log(`this.props.loadMonzo`, this.props.loadMonzo);
-    debugger;
     this.props.loadMonzo(password);
+    this.props.loadTransactions(password);
   };
 
   render() {
     console.log(`this.props`, this.props);
     const {
       loadMonzo,
+      loadTransactions,
       password,
       monzoPots,
       loading,
+      transactionsLoading,
       success,
+      transactions,
+      loadTransactionsSuccess,
+      loadTransactionsError,
       error,
       className,
       ...rest
