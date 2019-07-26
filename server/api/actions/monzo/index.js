@@ -1,3 +1,3 @@
-export loadLatestDeposits from './loadLatestDeposits';
+export loadLatestTransactions from './loadLatestTransactions';
 export loadPots from './loadPots';
 export setKey from './setKey';

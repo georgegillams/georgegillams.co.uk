@@ -6,7 +6,7 @@ import { datumLoadSingle } from '../../actions/datum';
 
 import POT_CONFIGS from './potConfigs';
 
-function loadLatestDeposits(req) {
+function loadLatestTransactions(req) {
   return new Promise(resolve => {
     datumLoadSingle({
       redisKey: 'monzoApiKeys',
@@ -56,7 +56,9 @@ function loadLatestDeposits(req) {
                 return;
               }
               const potConfigsAnnotated = POT_CONFIGS.map(pc => {
-                const pot = potData.pots.find(p => p.name === pc.name);
+                const pot = potData.pots.find(
+                  p => p.name === pc.name && !p.deleted,
+                );
                 if (!pot) {
                   return pc;
                 }
@@ -74,35 +76,39 @@ function loadLatestDeposits(req) {
               })
                 .then(res => res.json())
                 .then(transactionData => {
-                  let potWithdrawals = transactionData.transactions.filter(
-                    t => {
-                      let potOfInterest = false;
-                      potConfigsAnnotated.forEach(pc => {
-                        if (pc.potId === t.metadata.pot_id) {
-                          potOfInterest = true;
-                        }
-                      });
-                      return (
-                        t.scheme === 'uk_retail_pot' &&
-                        t.amount > 0 &&
-                        potOfInterest
-                      );
-                    },
-                  );
-                  potWithdrawals = potWithdrawals.map(p => {
+                  let potTransfers = transactionData.transactions.filter(t => {
+                    let potOfInterest = false;
+                    potConfigsAnnotated.forEach(pc => {
+                      if (pc.potId === t.metadata.pot_id) {
+                        potOfInterest = true;
+                      }
+                    });
+                    return t.scheme === 'uk_retail_pot' && potOfInterest;
+                  });
+                  potTransfers = potTransfers.reverse().map(p => {
                     const potName = potConfigsAnnotated.find(
                       pc => pc.potId === p.metadata.pot_id,
                     ).name;
                     return { amount: p.amount, potName };
                   });
+                  const potWithdrawals = potTransfers.filter(
+                    pt => pt.amount > 0,
+                  );
+                  const potDeposits = potTransfers.filter(pt => pt.amount < 0);
                   const processedData = POT_CONFIGS.map(pc => {
-                    const matchingTransaction = potWithdrawals
-                      .reverse()
-                      .find(pw => pw.potName === pc.name);
+                    const matchingWithdrawal = potWithdrawals.find(
+                      pw => pw.potName === pc.name,
+                    );
+                    const matchingDeposit = potDeposits.find(
+                      pw => pw.potName === pc.name,
+                    );
                     return {
                       name: pc.name,
-                      amount: matchingTransaction
-                        ? matchingTransaction.amount
+                      lastDepositAmount: matchingDeposit
+                        ? -matchingDeposit.amount
+                        : 0,
+                      lastWithdrawalAmount: matchingWithdrawal
+                        ? matchingWithdrawal.amount
                         : 0,
                     };
                   });
@@ -114,4 +120,4 @@ function loadLatestDeposits(req) {
   });
 }
 
-export default loadLatestDeposits;
+export default loadLatestTransactions;
