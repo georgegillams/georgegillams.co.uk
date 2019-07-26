@@ -12,16 +12,12 @@ import Skeleton from './Skeleton';
 
 import HelperFunctions from 'helpers/HelperFunctions';
 import MoneyPot from 'components/MoneyPot';
+import GGButton from 'components/GGButton';
 import { Section } from 'components/Typography';
 import { LoadingCover } from 'components/Auth';
 import STYLES from 'containers/pages.scss';
 
 const getClassName = cssModules(STYLES); // REGEX_REPLACED
-
-const documentIfExists = typeof window !== 'undefined' ? document : null;
-const FadingLazyLoadedImage = withLoadingBehavior(
-  withLazyLoading(BpkImage, documentIfExists),
-);
 
 export default class MonzoPots extends React.Component {
   loadPotData = password => {
@@ -53,29 +49,32 @@ export default class MonzoPots extends React.Component {
         <Helmet title="My monzo pots" />
         <Section>
           <Section name="Monzo pot tracking 💳">
+            {!monzoPots && (
+              <BpkInput
+                id="password"
+                className={getClassName('pages__component')}
+                type={INPUT_TYPES.password}
+                name="password"
+                value={password}
+                onChange={event => {
+                  this.loadPotData(event.target.value);
+                }}
+                placeholder="Password"
+                clearButtonMode={CLEAR_BUTTON_MODES.whileEditing}
+                clearButtonLabel="Clear"
+                onClear={() => this.setState({ password: '' })}
+              />
+            )}
+            {monzoPots && monzoPots.map && (
+              <GGButton
+                onClick={() => {
+                  this.loadPotData(password);
+                }}
+              >
+                Reload
+              </GGButton>
+            )}
             <br />
-            <FadingLazyLoadedImage
-              className={getClassName('pages__image')}
-              style={{ maxWidth: '5rem' }}
-              altText="Monzo bank"
-              width={1}
-              height={1}
-              src="https://upload.wikimedia.org/wikipedia/en/thumb/a/a3/Monzo_logo.svg/200px-Monzo_logo.svg.png"
-            />
-            <BpkInput
-              id="password"
-              className={getClassName('pages__component')}
-              type={INPUT_TYPES.password}
-              name="password"
-              value={password}
-              onChange={event => {
-                this.loadPotData(event.target.value);
-              }}
-              placeholder="Password"
-              clearButtonMode={CLEAR_BUTTON_MODES.whileEditing}
-              clearButtonLabel="Clear"
-              onClear={() => this.setState({ password: '' })}
-            />
             <br />
             {monzoPots &&
               monzoPots.map &&
