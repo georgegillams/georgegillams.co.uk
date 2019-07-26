@@ -25,10 +25,13 @@ const FadingLazyLoadedImage = withLoadingBehavior(
 
 export default class MonzoPots extends React.Component {
   loadPotData = password => {
+    console.log(`this.props.loadMonzo`, this.props.loadMonzo);
+    debugger;
     this.props.loadMonzo(password);
   };
 
   render() {
+    console.log(`this.props`, this.props);
     const {
       loadMonzo,
       password,

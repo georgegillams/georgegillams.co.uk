@@ -1,42 +1,12 @@
-import { createSelector } from 'reselect';
+import reducer from './reducer';
 
-const selectMonzo = state => state.get('monzo');
+import createSelectors from 'helpers/redux/selectors';
+import {
+  inferPropertiesFromInitialState,
+  initialState,
+} from 'helpers/redux/reducers';
 
-const makeSelectMonzoPots = () =>
-  createSelector(
-    selectMonzo,
-    monzoState => monzoState.get('monzoPots'),
-  );
-
-const makeSelectPassword = () =>
-  createSelector(
-    selectMonzo,
-    monzoState => monzoState.get('password'),
-  );
-
-const makeSelectMonzoLoading = () =>
-  createSelector(
-    selectMonzo,
-    monzoState => monzoState.get('loading'),
-  );
-
-const makeSelectMonzoSuccess = () =>
-  createSelector(
-    selectMonzo,
-    monzoState => monzoState.get('success'),
-  );
-
-const makeSelectMonzoError = () =>
-  createSelector(
-    selectMonzo,
-    monzoState => monzoState.get('error'),
-  );
-
-export {
-  makeSelectMonzoError,
-  makeSelectMonzoLoading,
-  makeSelectMonzoPots,
-  makeSelectMonzoSuccess,
-  makeSelectPassword,
-  selectMonzo,
-};
+module.exports = createSelectors(
+  'monzo',
+  inferPropertiesFromInitialState(initialState(reducer)),
+);

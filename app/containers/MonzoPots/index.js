@@ -2,32 +2,22 @@ import { connect } from 'react-redux';
 import { compose } from 'redux';
 import { createStructuredSelector } from 'reselect';
 
-import {
-  makeSelectMonzoError,
-  makeSelectMonzoLoading,
-  makeSelectMonzoPots,
-  makeSelectMonzoSuccess,
-  makeSelectPassword,
-} from './selectors';
-import { loadMonzo } from './actions';
+import selectors from './selectors';
+import actions from './actions';
 import reducer from './reducer';
 import saga from './saga';
 import MonzoPots from './MonzoPots';
+import { mapSelectors } from 'helpers/redux/selectors';
+import { mapActions } from 'helpers/redux/actions';
 
 import injectSaga from 'utils/injectSaga';
 import injectReducer from 'utils/injectReducer';
 
-const mapDispatchToProps = dispatch => ({
-  loadMonzo: password => dispatch(loadMonzo(password)),
-});
+const mapDispatchToProps = dispatch => mapActions(dispatch, { ...actions });
 
-const mapStateToProps = createStructuredSelector({
-  password: makeSelectPassword(),
-  monzoPots: makeSelectMonzoPots(),
-  loading: makeSelectMonzoLoading(),
-  success: makeSelectMonzoSuccess(),
-  error: makeSelectMonzoError(),
-});
+const mapStateToProps = createStructuredSelector(
+  mapSelectors({ ...selectors }),
+);
 
 const withConnect = connect(
   mapStateToProps,
