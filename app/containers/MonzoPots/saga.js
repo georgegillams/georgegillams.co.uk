@@ -1,5 +1,5 @@
 import { LOAD_MONZO } from './constants';
-import { monzoLoadSuccess, monzoLoadError } from './actions';
+import { loadMonzoSuccess, loadMonzoError } from './actions';
 import { makeSelectPassword } from './selectors';
 
 import { call, put, select, takeLatest } from 'redux-saga/effects';
@@ -25,16 +25,16 @@ export function* doLoadMonzo() {
       },
     });
     if (monzoResult.error) {
-      yield put(monzoLoadError(monzoResult));
+      yield put(loadMonzoError(monzoResult));
       yield put(pushMessage({ type: 'error', message: monzoResult.error }));
     } else if (monzoResult.warning) {
       yield put(pushMessage({ type: 'warn', message: monzoResult.warning }));
     } else {
-      yield put(monzoLoadSuccess(monzoResult));
+      yield put(loadMonzoSuccess(monzoResult));
       yield put(pushMessage(monzoLoadSuccessMessage));
     }
   } catch (err) {
-    yield put(monzoLoadError(err));
+    yield put(loadMonzoError(err));
     yield put(pushMessage(COMMUNICATION_ERROR_MESSAGE));
   }
 }
