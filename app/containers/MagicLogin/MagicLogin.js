@@ -8,7 +8,7 @@ import BpkImage, {
 import { cssModules } from 'bpk-react-utils';
 
 import LoadingIndicator from 'components/LoadingIndicator';
-import GGButton from 'components/GGButton';
+import GGButton from 'gg-components/dist/GGButton';
 import { Section, SubSection, TextLink } from 'components/Typography';
 import CodeInline from 'components/Code';
 import { DebugObject } from 'components/Auth';

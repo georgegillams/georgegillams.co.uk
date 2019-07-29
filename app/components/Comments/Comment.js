@@ -5,7 +5,7 @@ import { cssModules } from 'bpk-react-utils';
 import CommentInput from './CommentInput';
 import STYLES from './comments.scss';
 
-import GGButton from 'components/GGButton';
+import GGButton from 'gg-components/dist/GGButton';
 import { BlogPreviewContent, SubSection } from 'components/Typography';
 
 const getClassName = cssModules(STYLES); // REGEX_REPLACED

@@ -13,7 +13,7 @@ import Skeleton from './Skeleton';
 
 import HelperFunctions from 'helpers/HelperFunctions';
 import MoneyPot from 'components/MoneyPot';
-import GGButton from 'components/GGButton';
+import GGButton from 'gg-components/dist/GGButton';
 import { Section, SubSection } from 'components/Typography';
 import { LoadingCover } from 'components/Auth';
 import STYLES from 'containers/pages.scss';
