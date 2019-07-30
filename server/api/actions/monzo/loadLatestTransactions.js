@@ -2,7 +2,7 @@ import { URLSearchParams } from 'url';
 
 import fetch from 'node-fetch';
 
-import { authMonzo, loadPotData } from './helpers';
+import { authMonzo, loadPotData, formatTransaction } from './helpers';
 import POT_CONFIGS from './potConfigs';
 
 function loadLatestTransactions(req) {
@@ -65,7 +65,7 @@ function loadLatestTransactions(req) {
                   const potName = potConfigsAnnotated.find(
                     pc => pc.potId === p.metadata.pot_id,
                   ).name;
-                  return { amount: p.amount, potName };
+                  return { amount: p.amount, potName, created: p.created };
                 });
                 const potWithdrawals = potTransfers.filter(pt => pt.amount > 0);
                 const potDeposits = potTransfers.filter(pt => pt.amount < 0);
@@ -78,12 +78,8 @@ function loadLatestTransactions(req) {
                   );
                   return {
                     name: pc.name,
-                    lastDepositAmount: matchingDeposit
-                      ? -matchingDeposit.amount
-                      : 0,
-                    lastWithdrawalAmount: matchingWithdrawal
-                      ? matchingWithdrawal.amount
-                      : 0,
+                    lastDeposit: formatTransaction(matchingDeposit),
+                    lastWithdrawal: formatTransaction(matchingWithdrawal),
                   };
                 });
                 resolve(processedData);

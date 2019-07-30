@@ -108,16 +108,18 @@ export default class MonzoPots extends React.Component {
                   />
                   <SubSection noPadding noAnchor>
                     Last deposit:{' '}
-                    {pot.transactionalData &&
-                    pot.transactionalData.lastDepositAmount
-                      ? `£${pot.transactionalData.lastDepositAmount / 100}`
+                    {pot.transactionalData && pot.transactionalData.lastDeposit
+                      ? `£${pot.transactionalData.lastDeposit.amount / 100} - ${
+                          pot.transactionalData.lastDeposit.time
+                        }`
                       : 'loading...'}
                   </SubSection>
                   <SubSection noPadding noAnchor>
                     Last withdrawal:{' '}
                     {pot.transactionalData &&
-                    pot.transactionalData.lastWithdrawalAmount
-                      ? `£${pot.transactionalData.lastWithdrawalAmount / 100}`
+                    pot.transactionalData.lastWithdrawal
+                      ? `£${pot.transactionalData.lastWithdrawal.amount /
+                          100} - ${pot.transactionalData.lastWithdrawal.time}`
                       : 'loading...'}
                   </SubSection>
                   <br />
