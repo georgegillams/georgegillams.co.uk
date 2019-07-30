@@ -2,8 +2,20 @@ import fetch from 'node-fetch';
 import moment from 'moment';
 
 import { datumLoadSingle } from '../../actions/datum';
+import { getTimeDifference } from 'helpers/time';
 
 import POT_CONFIGS from './potConfigs';
+
+function formatTransaction(transaction) {
+  if (!transaction) {
+    return null;
+  }
+
+  return {
+    amount: Math.abs(transaction.amount),
+    time: getTimeDifference(transaction.created),
+  };
+}
 
 function getMonthsElapsedPercentage(potName) {
   if (
@@ -94,4 +106,9 @@ function loadPotData(password) {
 }
 
 export default authMonzo;
-export { loadPotData, getMonthsElapsedPercentage, authMonzo };
+export {
+  loadPotData,
+  getMonthsElapsedPercentage,
+  authMonzo,
+  formatTransaction,
+};
