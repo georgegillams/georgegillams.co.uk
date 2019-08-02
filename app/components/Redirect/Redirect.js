@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import HelperFunctions from 'helpers/HelperFunctions';
 import { Redirect } from 'react-router-dom';
 
 import { Section, TextLink } from 'components/Typography';
@@ -7,7 +8,7 @@ import { Section, TextLink } from 'components/Typography';
 const GGRedirect = props => {
   const { name, to, ...rest } = props;
 
-  const externalRedirect = to.includes('http');
+  const externalRedirect = HelperFunctions.includes(to, 'http');
 
   if (externalRedirect) {
     document.location = to;

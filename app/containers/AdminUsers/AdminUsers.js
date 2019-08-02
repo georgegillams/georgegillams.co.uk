@@ -6,6 +6,7 @@ import { cssModules } from 'bpk-react-utils';
 import AdminUsersAPIEntity from './AdminUsersAPIEntity';
 import Skeleton from './Skeleton';
 import generateCsv from './generateCsv';
+import HelperFunctions from 'helpers/HelperFunctions';
 
 import LoadingIndicator from 'components/LoadingIndicator';
 import ArticleCard, { CARD_LAYOUTS } from 'components/Cards';
@@ -46,7 +47,7 @@ export default class AdminUsers extends React.Component {
     const allElements = document.getElementsByTagName('DIV');
     for (let i = 0; i < allElements.length; i += 1) {
       const element = allElements[i];
-      if (element.textContent.includes('▶️ ')) {
+      if (HelperFunctions.includes(element.textContent, '▶️ ')) {
         element.click();
       }
     }

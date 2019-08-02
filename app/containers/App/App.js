@@ -4,6 +4,7 @@ import { Switch, Route } from 'react-router-dom';
 import { cssModules } from 'bpk-react-utils';
 
 import STYLES from './style.scss';
+import HelperFunctions from 'helpers/HelperFunctions';
 
 import AccountPage from 'containers/Account/Loadable';
 import AdminPage from 'containers/Admin';
@@ -50,7 +51,11 @@ const cleanWindowLocation = location => {
 };
 
 const getFullRedirect = destination => {
-  if (window && window.location && window.location.toString().includes('?')) {
+  if (
+    window &&
+    window.location &&
+    HelperFunctions.includes(window.location.toString(), '?')
+  ) {
     const fullPath = cleanWindowLocation(window.location.toString());
     for (let i = 0; i < redirects.length; i += 1) {
       if (redirects[i].from === fullPath) {
