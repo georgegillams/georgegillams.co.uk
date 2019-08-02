@@ -4,7 +4,7 @@ import { cssModules } from 'bpk-react-utils';
 
 import STYLES from './code.scss';
 
-import { TextLink } from 'components/Typography';
+import { TextLink } from 'gg-components/dist/Typography';
 
 const getClassName = cssModules(STYLES);
 

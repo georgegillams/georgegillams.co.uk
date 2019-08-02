@@ -8,8 +8,8 @@ import { cssModules } from 'bpk-react-utils';
 
 import STYLES from '../pages.scss';
 
-import GGButton from 'components/GGButton';
-import { Section, SubSection, TextLink } from 'components/Typography';
+import GGButton from 'gg-components/dist/GGButton';
+import { Section, SubSection, TextLink } from 'gg-components/dist/Typography';
 
 const getClassName = cssModules(STYLES); // REGEX_REPLACED
 
@@ -86,8 +86,8 @@ export default class Work extends Component {
             </SubSection>
             <SubSection name="Backpack">
               <TextLink external href="https://backpack.github.io/">
-                Backpack{' '}
-              </TextLink>
+                Backpack
+              </TextLink>{' '}
               is Skyscanner's open-source design system which supports 4
               platforms (Android, iOS, React Native and Web). Our work which
               combines Design and Engineering in equal measures enables fast

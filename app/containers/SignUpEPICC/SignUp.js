@@ -12,8 +12,8 @@ import TicketOptions from '../TicketOptions';
 import Skeleton from './Skeleton';
 
 import LoadingIndicator from 'components/LoadingIndicator';
-import GGButton from 'components/GGButton';
-import { Section, SubSection, TextLink } from 'components/Typography';
+import GGButton from 'gg-components/dist/GGButton';
+import { Section, SubSection, TextLink } from 'gg-components/dist/Typography';
 import { NotificationComp } from 'components/Notifications';
 import CodeInline from 'components/Code';
 import { SignUpForm } from 'components/Forms';

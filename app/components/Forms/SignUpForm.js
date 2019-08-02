@@ -7,7 +7,7 @@ import FormBuilder from './FormBuilder';
 import STYLES from './forms.scss';
 
 import GGButton from 'gg-components/dist/GGButton';
-import { TextLink } from 'components/Typography';
+import { TextLink } from 'gg-components/dist/Typography';
 import { USERNAMES_ENABLED, UNAME_REGEX, EMAIL_REGEX } from 'helpers/constants';
 
 const getClassName = cssModules(STYLES); // REGEX_REPLACED

@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 import React from 'react';
 import { cssModules } from 'bpk-react-utils';
 
-import SubSection from './SubSection';
+import { SubSection } from 'gg-components/dist/Typography';
 import BlogPreviewContent from './BlogPreviewContent';
 
 import STYLES from 'containers/pages.scss';
@@ -15,7 +15,7 @@ const BlogPreviewSubSection = props => {
     className,
     elementClassName,
     light,
-    noAnchor,
+    anchor,
     references,
     ...rest
   } = props;
@@ -43,7 +43,7 @@ const BlogPreviewSubSection = props => {
       className={elementClassNameFinal.join(' ')}
       name={blogSubSectionName}
       light={light}
-      noAnchor={noAnchor}
+      anchor={anchor}
       {...rest}
     >
       <BlogPreviewContent
@@ -61,7 +61,7 @@ BlogPreviewSubSection.propTypes = {
   className: PropTypes.string,
   elementClassName: PropTypes.string,
   light: PropTypes.bool,
-  noAnchor: PropTypes.bool,
+  anchor: PropTypes.bool,
 };
 
 BlogPreviewSubSection.defaultProps = {
@@ -69,7 +69,7 @@ BlogPreviewSubSection.defaultProps = {
   className: null,
   elementClassName: null,
   light: false,
-  noAnchor: false,
+  anchor: true,
 };
 
 export default BlogPreviewSubSection;

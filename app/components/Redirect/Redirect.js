@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import HelperFunctions from 'helpers/HelperFunctions';
 import { Redirect } from 'react-router-dom';
 
-import { Section, TextLink } from 'components/Typography';
+import { Section, TextLink } from 'gg-components/dist/Typography';
 
 const GGRedirect = props => {
   const { name, to, ...rest } = props;

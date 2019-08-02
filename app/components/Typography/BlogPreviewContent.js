@@ -17,7 +17,7 @@ import { cssModules } from 'bpk-react-utils';
 import STYLES from './blog-viewer.scss';
 
 import CodeInline, { Code, CodeBashArrow } from 'components/Code';
-import { TextLink, Quote, SubSection } from 'components/Typography';
+import { TextLink, Quote, SubSection } from 'gg-components/dist/Typography';
 import HelperFunctions from 'helpers/HelperFunctions';
 
 const getClassName = cssModules(STYLES); // REGEX_REPLACED
@@ -59,7 +59,7 @@ class RecursiveWrapper extends Component {
     const {
       depth,
       content,
-      noAnchor,
+      anchor,
       light,
       references,
       elementClassName,
@@ -70,7 +70,7 @@ class RecursiveWrapper extends Component {
     return (
       <BlogPreviewContent
         depth={depth ? depth + 1 : 1}
-        noAnchor={noAnchor}
+        anchor={anchor}
         light={light}
         references={references}
         elementClassName={elementClassName}
@@ -92,7 +92,7 @@ class BlogPreviewContent extends Component {
       className,
       elementClassName,
       light,
-      noAnchor,
+      anchor,
       references,
       supportedFeatures,
       ...rest
@@ -285,7 +285,7 @@ class BlogPreviewContent extends Component {
           >
             <SubSection
               className={elementClassNameFinal.join(' ')}
-              noAnchor
+              anchor={false}
               name={linkText}
               link
             />
@@ -409,7 +409,7 @@ class BlogPreviewContent extends Component {
           {Cite && (
             <SubSection
               className={elementClassNameFinal.join(' ')}
-              noAnchor={noAnchor}
+              anchor={anchor}
               light={light}
               name="References"
             >
@@ -527,7 +527,7 @@ BlogPreviewContent.propTypes = {
   className: PropTypes.string,
   elementClassName: PropTypes.string,
   light: PropTypes.bool,
-  noAnchor: PropTypes.bool,
+  anchor: PropTypes.bool,
   supportedFeatures: PropTypes.arrayOf(PropTypes.string),
 };
 
@@ -536,7 +536,7 @@ BlogPreviewContent.defaultProps = {
   className: null,
   elementClassName: null,
   light: false,
-  noAnchor: false,
+  anchor: true,
   supportedFeatures: [
     'code',
     'blockCode',

@@ -1,7 +1,7 @@
 import React from 'react';
 import { cssModules } from 'bpk-react-utils';
 
-import { Section, SubSection, TextLink } from 'components/Typography';
+import { Section, SubSection, TextLink } from 'gg-components/dist/Typography';
 import { NotificationComp } from 'components/Notifications';
 import STYLES from 'containers/pages.scss';
 

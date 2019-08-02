@@ -10,8 +10,8 @@ import HelperFunctions from 'helpers/HelperFunctions';
 
 import LoadingIndicator from 'components/LoadingIndicator';
 import ArticleCard, { CARD_LAYOUTS } from 'components/Cards';
-import GGButton from 'components/GGButton';
-import { Section, SubSection, TextLink } from 'components/Typography';
+import GGButton from 'gg-components/dist/GGButton';
+import { Section, SubSection, TextLink } from 'gg-components/dist/Typography';
 import CodeInline from 'components/Code';
 import Ticket from 'components/Ticket';
 import {

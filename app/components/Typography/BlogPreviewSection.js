@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 import React, { Component } from 'react';
 import { cssModules } from 'bpk-react-utils';
 
-import Section from './Section';
+import { Section } from 'gg-components/dist/Typography';
 import BlogPreviewSubSection from './BlogPreviewSubSection';
 import BlogPreviewContent from './BlogPreviewContent';
 
@@ -17,7 +17,7 @@ class BlogPreviewSection extends Component {
       className,
       elementClassName,
       light,
-      noAnchor,
+      anchor,
       references,
       ...rest
     } = this.props;
@@ -47,7 +47,7 @@ class BlogPreviewSection extends Component {
         className={elementClassNameFinal.join(' ')}
         name={blogSectionName}
         light={light}
-        noAnchor={noAnchor || blogSectionName === ''}
+        anchor={anchor && blogSectionName !== ''}
         {...rest}
       >
         <BlogPreviewContent
@@ -61,7 +61,7 @@ class BlogPreviewSection extends Component {
             blogSubSection={ss}
             elementClassName={elementClassName}
             light={light}
-            noAnchor={noAnchor}
+            anchor={anchor}
           />
         ))}
       </Section>
@@ -75,7 +75,7 @@ BlogPreviewSection.propTypes = {
   className: PropTypes.string,
   elementClassName: PropTypes.string,
   light: PropTypes.bool,
-  noAnchor: PropTypes.bool,
+  anchor: PropTypes.bool,
 };
 
 BlogPreviewSection.defaultProps = {
@@ -83,7 +83,7 @@ BlogPreviewSection.defaultProps = {
   className: null,
   elementClassName: null,
   light: false,
-  noAnchor: false,
+  anchor: true,
 };
 
 export default BlogPreviewSection;

@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import { Helmet } from 'react-helmet';
 import { cssModules } from 'bpk-react-utils';
 
-import { Section, SubSection } from 'components/Typography';
+import { Section, SubSection } from 'gg-components/dist/Typography';
 import GTSEntity from 'components/GTS';
 import LoadingIndicator from 'components/LoadingIndicator';
 import DeprecationNotice from 'containers/DeprecationNotice';

@@ -6,8 +6,8 @@ import { cssModules } from 'bpk-react-utils';
 
 import Skeleton from './Skeleton';
 
-import GGButton from 'components/GGButton';
-import { Section, SubSection } from 'components/Typography';
+import GGButton from 'gg-components/dist/GGButton';
+import { Section, SubSection } from 'gg-components/dist/Typography';
 import FormBuilder from 'components/Forms';
 import { ANYTHING_REGEX } from 'helpers/constants';
 import {
@@ -196,7 +196,7 @@ export default class GrammarML extends React.Component {
                   }}
                 >
                   <span>
-                    <Section noPadding noAnchor>
+                    <Section noPadding anchor={false}>
                       {b.text}
                     </Section>
                   </span>
