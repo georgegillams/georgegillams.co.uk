@@ -58,9 +58,9 @@ export default class Contact extends Component {
         <FadingLazyLoadedImage
           className={getClassName('pages__image')}
           altText="Me"
-          width={4032}
-          height={2353}
-          src="https://i.imgur.com/3YpZvvE.jpg"
+          width={3829}
+          height={2872}
+          src="https://i.imgur.com/0jz5elM.jpg"
         />
         <br />
         <br />
