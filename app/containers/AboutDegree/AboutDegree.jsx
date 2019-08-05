@@ -8,7 +8,7 @@ import { cssModules } from 'bpk-react-utils'; // REGEX_REPLACED
 
 import STYLES from '../pages.scss';
 
-import { Section, SubSection, TextLink } from 'components/Typography';
+import { Section, SubSection, TextLink } from 'gg-components/dist/Typography';
 import DegreeModule from 'components/Degree';
 import Comments from 'containers/Comments';
 

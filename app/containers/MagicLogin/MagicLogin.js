@@ -9,7 +9,7 @@ import { cssModules } from 'bpk-react-utils';
 
 import LoadingIndicator from 'components/LoadingIndicator';
 import GGButton from 'gg-components/dist/GGButton';
-import { Section, SubSection, TextLink } from 'components/Typography';
+import { Section, SubSection, TextLink } from 'gg-components/dist/Typography';
 import CodeInline from 'components/Code';
 import { DebugObject } from 'components/Auth';
 import { LoginForm } from 'components/Forms';

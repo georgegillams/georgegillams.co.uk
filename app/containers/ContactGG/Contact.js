@@ -5,8 +5,8 @@ import { cssModules } from 'bpk-react-utils';
 import STYLES from '../pages.scss';
 
 import ArticleCard, { CARD_LAYOUTS } from 'components/Cards';
-import { Section, SubSection } from 'components/Typography';
-import GGButton from 'components/GGButton';
+import { Section, SubSection } from 'gg-components/dist/Typography';
+import GGButton from 'gg-components/dist/GGButton';
 import { GG_EMAIL } from 'helpers/constants';
 
 const getClassName = cssModules(STYLES);
@@ -87,7 +87,7 @@ export default class Contact extends Component {
           <br />
           <SubSection
             className={getClassName('pages__card')}
-            noAnchor
+            anchor={false}
             name="Alternatively find me on WhatsApp or Signal"
           />
           {/* <br />
@@ -96,24 +96,24 @@ export default class Contact extends Component {
           rel="noopener noreferrer"
           target="_blank"
         >
-          <SubSection noAnchor name="Facebook georgegillams" link />
+          <SubSection anchor={false} name="Facebook georgegillams" link />
         </a>
         <a
           href={`mailto:${GG_EMAIL}`}
           rel="noopener noreferrer"
           target="_blank"
         >
-          <SubSection noAnchor name={`Email ${GG_EMAIL}`} link />
+          <SubSection anchor={false} name={`Email ${GG_EMAIL}`} link />
         </a>
         <a href="tel:+447867592615" rel="noopener noreferrer" target="_blank">
-          <SubSection noAnchor name="Call +44 (0) 786759 2615" link />
+          <SubSection anchor={false} name="Call +44 (0) 786759 2615" link />
         </a>
       <a
           href="https://georgegillams.typeform.com/to/oBmiJZ"
           rel="noopener noreferrer"
           target="_blank"
         >
-          <SubSection noAnchor name="Contact me online" link />
+          <SubSection anchor={false} name="Contact me online" link />
         </a>   */}
         </Section>
       </div>

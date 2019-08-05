@@ -10,8 +10,8 @@ import { cssModules } from 'bpk-react-utils';
 import Skeleton from './Skeleton';
 
 import LoadingIndicator from 'components/LoadingIndicator';
-import GGButton from 'components/GGButton';
-import { Section, SubSection, TextLink } from 'components/Typography';
+import GGButton from 'gg-components/dist/GGButton';
+import { Section, SubSection, TextLink } from 'gg-components/dist/Typography';
 import CodeInline from 'components/Code';
 import { SignUpForm } from 'components/Forms';
 import { CookiesOnly } from 'components/Sessions';

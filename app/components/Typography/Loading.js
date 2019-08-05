@@ -2,12 +2,12 @@ import React from 'react';
 import Funnies from 'funnies';
 import ReactLoading from 'react-loading';
 
-import { SubSection } from './';
+import { SubSection } from 'gg-components/dist/Typography';
 
 const funnies = new Funnies();
 
 const Loading = () => (
-  <SubSection noAnchor style={{ textAlign: 'center' }} name="Loading...">
+  <SubSection anchor={false} style={{ textAlign: 'center' }} name="Loading...">
     {funnies.message()}
     <br />
     <br />

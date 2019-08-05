@@ -14,7 +14,7 @@ import Skeleton from './Skeleton';
 import HelperFunctions from 'helpers/HelperFunctions';
 import MoneyPot from 'components/MoneyPot';
 import GGButton from 'gg-components/dist/GGButton';
-import { Section, SubSection } from 'components/Typography';
+import { Section, SubSection } from 'gg-components/dist/Typography';
 import { LoadingCover } from 'components/Auth';
 import STYLES from 'containers/pages.scss';
 
@@ -106,7 +106,7 @@ export default class MonzoPots extends React.Component {
                     percentage={pot.percentageComplete}
                     filled
                   />
-                  <SubSection noPadding noAnchor>
+                  <SubSection noPadding anchor={false}>
                     Last deposit:{' '}
                     {pot.transactionalData && pot.transactionalData.lastDeposit
                       ? `£${pot.transactionalData.lastDeposit.amount / 100} - ${
@@ -114,7 +114,7 @@ export default class MonzoPots extends React.Component {
                         }`
                       : 'loading...'}
                   </SubSection>
-                  <SubSection noPadding noAnchor>
+                  <SubSection noPadding anchor={false}>
                     Last withdrawal:{' '}
                     {pot.transactionalData &&
                     pot.transactionalData.lastWithdrawal

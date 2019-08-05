@@ -8,7 +8,7 @@ const ColourPalletteItem = props => {
 
   return (
     <div style={{ margin: '0 1rem', textAlign: 'center' }} {...rest}>
-      <SubSection noAnchor>
+      <SubSection anchor={false}>
         {colourName}
         <br />
         <CodeInline>{colour}</CodeInline>

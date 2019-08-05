@@ -11,7 +11,7 @@ import STYLES from '../pages.scss';
 
 import ArticleCard, { CARD_LAYOUTS } from 'components/Cards';
 import CreativeCommons from 'components/CreativeCommons';
-import { Section, SubSection } from 'components/Typography';
+import { Section, SubSection } from 'gg-components/dist/Typography';
 import GraphicContent, {
   withGraphicContentBehaviour,
 } from 'components/GraphicContent';
@@ -66,7 +66,7 @@ export default class Photography extends Component {
         style={{ textAlign: 'center' }}
       >
         <Helmet title="Photography" />
-        <Section noAnchor name="Photography">
+        <Section anchor={false} name="Photography">
           <div
             style={{ paddingTop: '1rem' }}
             className={getClassName('pages__compact-card-container')}
@@ -90,7 +90,7 @@ export default class Photography extends Component {
               title="Find me on Flickr"
             />
           </div>
-          <SubSection noAnchor name="Harlequins vs Worcester Rugby Match">
+          <SubSection anchor={false} name="Harlequins vs Worcester Rugby Match">
             <FadingLazyLoadedImage
               className={getClassName('pages__image')}
               altText="Harlequins vs Worcester Rugby Match"
@@ -99,7 +99,7 @@ export default class Photography extends Component {
               src="https://i.imgur.com/OsFI23z.jpg"
             />
           </SubSection>
-          <SubSection noAnchor name="The cat looking handsome as ever!">
+          <SubSection anchor={false} name="The cat looking handsome as ever!">
             <FadingLazyLoadedImage
               className={getClassName('pages__image')}
               altText="The cat looking handsome as ever!"
@@ -108,7 +108,7 @@ export default class Photography extends Component {
               src="https://i.imgur.com/Aqy3tuA.jpg"
             />
           </SubSection>
-          <SubSection noAnchor name="A training scenario at EPICC 2017">
+          <SubSection anchor={false} name="A training scenario at EPICC 2017">
             <GcbGraphicContent className={getClassName('pages__image')}>
               <FadingLazyLoadedImage
                 altText="A training scenario at EPICC 2017"
@@ -118,7 +118,7 @@ export default class Photography extends Component {
               />
             </GcbGraphicContent>
           </SubSection>
-          <SubSection noAnchor name="Dog running with a Stick">
+          <SubSection anchor={false} name="Dog running with a Stick">
             <FadingLazyLoadedImage
               className={getClassName('pages__image')}
               altText="Dog running with a Stick"
@@ -127,7 +127,7 @@ export default class Photography extends Component {
               src="https://i.imgur.com/8dnCZ5D.jpg"
             />
           </SubSection>
-          <SubSection noAnchor name="Stunt Motorcyclist">
+          <SubSection anchor={false} name="Stunt Motorcyclist">
             <FadingLazyLoadedImage
               className={getClassName('pages__image')}
               altText="Stunt Motorcyclist"
@@ -136,7 +136,7 @@ export default class Photography extends Component {
               src="https://i.imgur.com/WlLYxDw.jpg"
             />
           </SubSection>
-          <SubSection noAnchor name="Longleat Festival of Light">
+          <SubSection anchor={false} name="Longleat Festival of Light">
             <FadingLazyLoadedImage
               className={getClassName('pages__image')}
               altText="Longleat Festival of Light"
@@ -145,7 +145,7 @@ export default class Photography extends Component {
               src="https://i.imgur.com/EHF7zqM.jpg"
             />
           </SubSection>
-          <SubSection noAnchor name="Serre Chevalier">
+          <SubSection anchor={false} name="Serre Chevalier">
             <FadingLazyLoadedImage
               className={getClassName('pages__image')}
               altText="Serre Chevalier"
@@ -155,7 +155,7 @@ export default class Photography extends Component {
             />
           </SubSection>
           <SubSection
-            noAnchor
+            anchor={false}
             name="Nick Matthew playing in the Canary Wharf Open"
           >
             <FadingLazyLoadedImage
@@ -168,7 +168,7 @@ export default class Photography extends Component {
           </SubSection>
         </Section>
         <Section name="Photoshop">
-          <SubSection noAnchor name="Tulips exploding with light">
+          <SubSection anchor={false} name="Tulips exploding with light">
             For some reason the idea of light exploding out of tulips popped
             into my mind, so I went out to find some and made it a reality. I
             used a similar effect in Art that I had used in the past to create
@@ -184,7 +184,7 @@ export default class Photography extends Component {
               src="https://i.imgur.com/PIKQ2D6.jpg"
             />
           </SubSection>
-          <SubSection noAnchor name="Miss Saigon sketch">
+          <SubSection anchor={false} name="Miss Saigon sketch">
             With Miss Saigon coming to cinemas soon for one day only, I was
             inspired to draw the production logo (aka tempted to procrastinate).
             <br />
@@ -197,7 +197,7 @@ export default class Photography extends Component {
               src="https://i.imgur.com/y3i2Ll1.jpg"
             />
           </SubSection>
-          <SubSection noAnchor name="Dual-carriageway light-painting (in post)">
+          <SubSection anchor={false} name="Dual-carriageway light-painting (in post)">
             One evening after leaving work at an unearthly hour, I shot this
             uninspired photo. In Photoshop, I then used the brush tool and some
             layer styles to create a 'painting with light' effect.
@@ -213,7 +213,7 @@ export default class Photography extends Component {
           </SubSection>
         </Section>
         <Section name="Food is art! (...sometimes)">
-          <SubSection noAnchor name="Guinness cake">
+          <SubSection anchor={false} name="Guinness cake">
             I like spending time on food presentation when the opportunity calls
             for it. So I created this masterpiece to share with the office and
             celebrate a legendary drink!
@@ -227,7 +227,7 @@ export default class Photography extends Component {
               src="https://i.imgur.com/oBWlSDO.jpg"
             />
           </SubSection>
-          <SubSection noAnchor name="Ratatouille">
+          <SubSection anchor={false} name="Ratatouille">
             To get us in the mood for Disneyland, I cooked up this Ratatouille
             in the style of the dish served in the film. It came out better than
             I expected... Pretty pleased with the result!

@@ -18,9 +18,9 @@ import Skeleton from './Skeleton';
 import STYLES from './ticket-scanner.scss';
 
 import LoadingIndicator from 'components/LoadingIndicator';
-import GGButton from 'components/GGButton';
+import GGButton from 'gg-components/dist/GGButton';
 import { SectionSkeleton } from 'components/Skeletons';
-import { Section, SubSection, TextLink } from 'components/Typography';
+import { Section, SubSection, TextLink } from 'gg-components/dist/Typography';
 import Ticket from 'components/Ticket';
 import CodeInline from 'components/Code';
 import { getTimeDifference } from 'helpers/time';

@@ -2,14 +2,14 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 import { CodeInline } from 'components/Code';
-import { SubSection } from 'components/Typography';
+import { SubSection } from 'gg-components/dist/Typography';
 import ArticleCard, { CARD_LAYOUTS } from 'components/Cards';
 import { getPriceForTicketType, beautifyTicketType } from 'helpers/ticketing';
 
 const ShopFloor = props => {
   const { ticketTypes, selectedTicket, onSelect, ...rest } = props;
   if (!ticketTypes) {
-    return <SubSection noAnchor name="All tickets sold out. Sorry 😢" />;
+    return <SubSection anchor={false} name="All tickets sold out. Sorry 😢" />;
   }
   const {
     EB_ONE_DAY: ebOneDayCount,
@@ -34,14 +34,14 @@ const ShopFloor = props => {
   return (
     <div className={getClassName('pages__container')} {...rest}>
       {allTicketsReserved && unpaidTickets && (
-        <SubSection noAnchor name="All tickets are sold or reserved." />
+        <SubSection anchor={false} name="All tickets are sold or reserved." />
       )}
       {allTicketsReserved && !unpaidTickets && (
-        <SubSection noAnchor name="All tickets have now been purchased." />
+        <SubSection anchor={false} name="All tickets have now been purchased." />
       )}
       {allTicketsReserved && unpaidTickets && (
         <SubSection
-          noAnchor
+          anchor={false}
           name={`Note that ${
             unpaidTicketCount < 2
               ? '1 ticket'

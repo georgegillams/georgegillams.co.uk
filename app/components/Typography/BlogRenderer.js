@@ -4,12 +4,11 @@ import bibtexParse from 'bibtex-parse-js';
 import { cssModules } from 'bpk-react-utils';
 
 import BlogPreviewSection from './BlogPreviewSection';
-import Section from './Section';
-import SubSection from './SubSection';
+import { Section, SubSection } from 'gg-components/dist/Typography';
 import STYLES from './blog-viewer.scss';
 
 import Tag from 'components/Tag';
-import { ArticleDate } from 'components/Typography';
+import { ArticleDate } from 'gg-components/dist/Typography';
 
 const getClassName = cssModules(STYLES); // REGEX_REPLACED
 
@@ -21,7 +20,7 @@ const BlogRenderer = props => {
     elementClassName,
     light,
     showEditLink,
-    noAnchor,
+    anchor,
     ...rest
   } = props;
 
@@ -61,7 +60,7 @@ const BlogRenderer = props => {
         className={elementClassNameFinal.join(' ')}
         name={blog.title}
         light={light}
-        noAnchor
+        anchor={false}
       >
         {showEditLink && (
           <a
@@ -71,7 +70,7 @@ const BlogRenderer = props => {
             <SubSection
               textclassName={getClassName('blogs__edit-link')}
               name="Edit this blog"
-              noAnchor
+              anchor={false}
               link
             />
           </a>
@@ -97,7 +96,7 @@ const BlogRenderer = props => {
             blogSection={section}
             elementClassName={elementClassName}
             light={light}
-            noAnchor={noAnchor}
+            anchor={anchor}
           />
         ))}
       </Section>
@@ -112,7 +111,7 @@ BlogRenderer.propTypes = {
   elementClassName: PropTypes.string,
   className: PropTypes.string,
   light: PropTypes.bool,
-  noAnchor: PropTypes.bool,
+  anchor: PropTypes.bool,
 };
 
 BlogRenderer.defaultProps = {
@@ -121,7 +120,7 @@ BlogRenderer.defaultProps = {
   showEditLink: false,
   className: null,
   light: false,
-  noAnchor: false,
+  anchor: true,
 };
 
 export default BlogRenderer;

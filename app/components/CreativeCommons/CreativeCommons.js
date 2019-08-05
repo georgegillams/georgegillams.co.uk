@@ -3,7 +3,7 @@ import { cssModules } from 'bpk-react-utils';
 
 import STYLES from './creative-commons.scss';
 
-import { TextLink, SubSection } from 'components/Typography';
+import { TextLink, SubSection } from 'gg-components/dist/Typography';
 
 const getClassName = cssModules(STYLES);
 
@@ -17,7 +17,7 @@ const CreativeCommons = props => {
     >
       <SubSection
         className={getClassName('creative-commons__inner')}
-        noAnchor
+        anchor={false}
         name="Copyright"
       >
         <span>

@@ -4,9 +4,9 @@ import { cssModules } from 'bpk-react-utils';
 
 import STYLES from '../pages.scss';
 
-import { Section, TextLink } from 'components/Typography';
+import { Section, TextLink } from 'gg-components/dist/Typography';
 import ArticleCard, { CARD_LAYOUTS } from 'components/Cards';
-import GGButton from 'components/GGButton';
+import GGButton from 'gg-components/dist/GGButton';
 import { EPICC_EMAIL } from 'helpers/constants';
 
 const getClassName = cssModules(STYLES);
