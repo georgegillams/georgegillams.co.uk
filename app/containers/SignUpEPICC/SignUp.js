@@ -11,7 +11,7 @@ import TicketOptions from '../TicketOptions';
 
 import Skeleton from './Skeleton';
 
-import LoadingIndicator from 'components/LoadingIndicator';
+import LoadingIndicator from 'gg-components/dist/LoadingIndicator';
 import GGButton from 'gg-components/dist/GGButton';
 import { Section, SubSection, TextLink } from 'gg-components/dist/Typography';
 import { NotificationComp } from 'components/Notifications';

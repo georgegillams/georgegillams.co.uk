@@ -8,7 +8,7 @@ import Skeleton from './Skeleton';
 import generateCsv from './generateCsv';
 import HelperFunctions from 'helpers/HelperFunctions';
 
-import LoadingIndicator from 'components/LoadingIndicator';
+import LoadingIndicator from 'gg-components/dist/LoadingIndicator';
 import ArticleCard, { CARD_LAYOUTS } from 'components/Cards';
 import GGButton from 'gg-components/dist/GGButton';
 import { Section, SubSection, TextLink } from 'gg-components/dist/Typography';

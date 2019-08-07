@@ -4,7 +4,7 @@ import RepoListItem from 'containers/RepoListItem';
 
 import List from 'components/List';
 import ListItem from 'components/ListItem';
-import LoadingIndicator from 'components/LoadingIndicator';
+import LoadingIndicator from 'gg-components/dist/LoadingIndicator';
 
 const ReposList = ({ loading, error, repos }) => {
   if (loading) {
