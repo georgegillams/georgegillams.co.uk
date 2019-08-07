@@ -10,7 +10,7 @@ import { cssModules } from 'bpk-react-utils';
 import STYLES from '../pages.scss';
 
 import ArticleCard, { CARD_LAYOUTS } from 'components/Cards';
-import CreativeCommons from 'components/CreativeCommons';
+import CreativeCommons from 'gg-components/dist/CreativeCommons';
 import { Section, SubSection } from 'gg-components/dist/Typography';
 import GraphicContent, {
   withGraphicContentBehaviour,
@@ -197,7 +197,10 @@ export default class Photography extends Component {
               src="https://i.imgur.com/y3i2Ll1.jpg"
             />
           </SubSection>
-          <SubSection anchor={false} name="Dual-carriageway light-painting (in post)">
+          <SubSection
+            anchor={false}
+            name="Dual-carriageway light-painting (in post)"
+          >
             One evening after leaving work at an unearthly hour, I shot this
             uninspired photo. In Photoshop, I then used the brush tool and some
             layer styles to create a 'painting with light' effect.

@@ -17,7 +17,7 @@ import { cssModules } from 'bpk-react-utils';
 import Skeleton from './Skeleton';
 import STYLES from './ticket-scanner.scss';
 
-import LoadingIndicator from 'components/LoadingIndicator';
+import LoadingIndicator from 'gg-components/dist/LoadingIndicator';
 import GGButton from 'gg-components/dist/GGButton';
 import { SectionSkeleton } from 'components/Skeletons';
 import { Section, SubSection, TextLink } from 'gg-components/dist/Typography';
