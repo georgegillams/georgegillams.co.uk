@@ -9,7 +9,7 @@ import LowerPageSkeleton from './LowerPageSkeleton';
 import LoadingIndicator from 'gg-components/dist/LoadingIndicator';
 import GGButton from 'gg-components/dist/GGButton';
 import { Section, SubSection, TextLink } from 'gg-components/dist/Typography';
-import CodeInline from 'components/Code';
+import CodeInline from 'gg-components/dist/Code';
 import { SignUpForm } from 'components/Forms';
 import { CookiesOnly } from 'components/Sessions';
 import Redirect from 'components/Redirect';

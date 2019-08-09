@@ -22,7 +22,7 @@ import GGButton from 'gg-components/dist/GGButton';
 import { SectionSkeleton } from 'components/Skeletons';
 import { Section, SubSection, TextLink } from 'gg-components/dist/Typography';
 import Ticket from 'components/Ticket';
-import CodeInline from 'components/Code';
+import CodeInline from 'gg-components/dist/Code';
 import { getTimeDifference } from 'helpers/time';
 import { getJsonFromScannedData } from 'helpers/qrCodes';
 import { beautifyTicketType } from 'helpers/ticketing';

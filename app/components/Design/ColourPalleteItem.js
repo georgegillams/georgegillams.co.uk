@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import { CodeInline, SubSection } from 'components/Code';
+import { CodeInline, SubSection } from 'gg-components/dist/Code';
 
 const ColourPalletteItem = props => {
   const { colourName, colour, ...rest } = props;

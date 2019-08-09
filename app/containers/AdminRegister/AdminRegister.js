@@ -9,7 +9,7 @@ import LoadingIndicator from 'gg-components/dist/LoadingIndicator';
 import ArticleCard, { CARD_LAYOUTS } from 'components/Cards';
 import GGButton from 'gg-components/dist/GGButton';
 import { Section, SubSection, TextLink } from 'gg-components/dist/Typography';
-import CodeInline from 'components/Code';
+import CodeInline from 'gg-components/dist/Code';
 import Ticket from 'components/Ticket';
 import {
   DebugObject,
