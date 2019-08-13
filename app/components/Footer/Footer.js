@@ -5,7 +5,7 @@ import { cssModules } from 'bpk-react-utils';
 import TechSpecs from './TechSpecs';
 import STYLES from './footer.scss';
 
-import { Logo } from 'components/Logo';
+import { Logo } from 'gg-components/dist/Logo';
 
 const getClassName = cssModules(STYLES); // REGEX_REPLACED
 
