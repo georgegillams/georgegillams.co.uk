@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 import NavigationBar, { NavigationItem } from 'components/NavigationBar';
-import { Logo } from 'components/Logo';
+import { Logo } from 'gg-components/dist/Logo';
 import { SmallButtonSkeleton } from 'components/Skeletons';
 
 const NavigationBarWrapper = props => {
