@@ -41,7 +41,7 @@ const NavigationBarWrapper = props => {
   return (
     <NavigationBar
       menuItems={menuItems}
-      logo={<Logo noPadding small animated />}
+      logo={<Logo padding={false} small animated />}
       accountMenuItem={accountItem}
       {...rest}
     />

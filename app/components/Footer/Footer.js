@@ -22,7 +22,7 @@ const Footer = props => {
         small
         alwaysCentered
         className={getClassName('footer__logo')}
-        noPadding
+        padding={false}
       />
       <TechSpecs className={getClassName('footer__tech')} light />
     </footer>
