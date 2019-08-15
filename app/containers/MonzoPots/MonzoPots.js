@@ -12,7 +12,7 @@ import { associate } from 'helpers/objects';
 import Skeleton from './Skeleton';
 
 import HelperFunctions from 'helpers/HelperFunctions';
-import MoneyPot from 'components/MoneyPot';
+import MoneyPot from 'gg-components/dist/MoneyPot';
 import GGButton from 'gg-components/dist/GGButton';
 import { Section, SubSection } from 'gg-components/dist/Typography';
 import { LoadingCover } from 'components/Auth';
@@ -97,14 +97,12 @@ export default class MonzoPots extends React.Component {
               monzoPotDisplayData.map(pot => (
                 <Fragment>
                   <MoneyPot
-                    markerPosition={pot.percentageTimeElapsed}
-                    className={getClassName('pages__degree-module')}
                     name={pot.name}
-                    shortfall={pot.shortfall}
                     balance={pot.balance}
                     goalAmount={pot.goalAmount}
-                    percentage={pot.percentageComplete}
-                    filled
+                    markerPosition={pot.percentageTimeElapsed}
+                    shortfall={pot.shortfall}
+                    className={getClassName('pages__degree-module')}
                   />
                   <SubSection noPadding anchor={false}>
                     Last deposit:{' '}
