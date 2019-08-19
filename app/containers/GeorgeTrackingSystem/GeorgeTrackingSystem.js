@@ -4,7 +4,6 @@ import { Helmet } from 'react-helmet';
 import { cssModules } from 'bpk-react-utils';
 
 import { Section, SubSection } from 'gg-components/dist/Typography';
-import GTSEntity from 'components/GTS';
 import LoadingIndicator from 'gg-components/dist/LoadingIndicator';
 import DeprecationNotice from 'containers/DeprecationNotice';
 import STYLES from 'containers/pages.scss';
