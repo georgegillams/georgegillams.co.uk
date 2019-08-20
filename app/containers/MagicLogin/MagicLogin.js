@@ -14,7 +14,7 @@ import CodeInline from 'gg-components/dist/Code';
 import { DebugObject } from 'components/Auth';
 import { LoginForm } from 'components/Forms';
 import { CookiesOnly } from 'components/Sessions';
-import Redirect from 'components/Redirect';
+import Redirect from 'gg-components/dist/Redirect';
 import {
   REDIRECT_REGEX,
   SORT_CODE_REGEX,
