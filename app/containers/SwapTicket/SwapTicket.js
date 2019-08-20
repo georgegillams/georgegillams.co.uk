@@ -12,7 +12,7 @@ import { Section, SubSection, TextLink } from 'gg-components/dist/Typography';
 import CodeInline from 'gg-components/dist/Code';
 import { SignUpForm } from 'components/Forms';
 import { CookiesOnly } from 'components/Sessions';
-import Redirect from 'components/Redirect';
+import Redirect from 'gg-components/dist/Redirect';
 import TicketOptions from 'containers/TicketOptions';
 import TicketStatus from 'containers/TicketStatus';
 import { LoggedInOnly, LoadingCover } from 'components/Auth';
