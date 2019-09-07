@@ -4,7 +4,7 @@ import { cssModules } from 'bpk-react-utils';
 
 import { Section, SubSection, TextLink } from 'gg-components/dist/Typography';
 import { Comments } from 'gg-components/dist/Typography';
-import { NotificationComp } from 'components/Notifications';
+import { NotificationComp } from 'gg-components/dist/Notifications';
 import STYLES from 'containers/pages.scss';
 
 const getClassName = cssModules(STYLES); // REGEX_REPLACED
