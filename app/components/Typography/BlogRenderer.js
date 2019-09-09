@@ -7,7 +7,7 @@ import BlogPreviewSection from './BlogPreviewSection';
 import { Section, SubSection } from 'gg-components/dist/Typography';
 import STYLES from './blog-viewer.scss';
 
-import Tag from 'components/Tag';
+import Tag from 'gg-components/dist/Tag';
 import { ArticleDate } from 'gg-components/dist/Typography';
 
 const getClassName = cssModules(STYLES); // REGEX_REPLACED
