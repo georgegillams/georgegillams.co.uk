@@ -2,7 +2,7 @@ import React, { Fragment } from 'react';
 
 import TicketOptionsSkeleton from '../TicketOptions/Skeleton';
 
-import { CompactCardSkeleton, ButtonSkeleton } from 'components/Skeletons';
+import { CompactCardSkeleton, ButtonSkeleton } from 'gg-components/dist/Skeletons';
 
 const Skeleton = props => {
   const { className, ...rest } = props; // eslint-disable-line no-shadow

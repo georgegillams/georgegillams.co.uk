@@ -5,7 +5,7 @@ import NavigationBar, {
   NavigationItem,
 } from 'gg-components/dist/NavigationBar';
 import { Logo } from 'gg-components/dist/Logo';
-import { SmallButtonSkeleton } from 'components/Skeletons';
+import { SmallButtonSkeleton } from 'gg-components/dist/Skeletons';
 
 const NavigationBarWrapper = props => {
   const { user, userLoading, ...rest } = props;

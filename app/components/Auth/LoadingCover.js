@@ -5,7 +5,7 @@ import { cssModules } from 'bpk-react-utils';
 import STYLES from './loading-cover.scss';
 
 import { SubSection } from 'gg-components/dist/Typography';
-import DefaultSkeleton from 'components/Skeletons';
+import DefaultSkeleton from 'gg-components/dist/Skeletons';
 
 const getClassName = cssModules(STYLES);
 

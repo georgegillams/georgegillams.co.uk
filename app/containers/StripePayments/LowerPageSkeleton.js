@@ -4,7 +4,7 @@ import {
   SectionSkeleton,
   InputSkeleton,
   ButtonSkeleton,
-} from 'components/Skeletons';
+} from 'gg-components/dist/Skeletons';
 
 const LoginFormSkeleton = props => (
   <Fragment>

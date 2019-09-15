@@ -1,6 +1,6 @@
 import React, { Fragment } from 'react';
 
-import { SectionSkeleton, CardSkeleton } from 'components/Skeletons';
+import { SectionSkeleton, CardSkeleton } from 'gg-components/dist/Skeletons';
 
 const CommentsListSkeleton = props => (
   <Fragment>
