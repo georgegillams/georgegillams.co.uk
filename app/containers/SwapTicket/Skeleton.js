@@ -2,7 +2,7 @@ import React, { Fragment } from 'react';
 
 import LowerPageSkeleton from './LowerPageSkeleton';
 
-import { CompactCardSkeleton, SectionSkeleton } from 'components/Skeletons';
+import { CompactCardSkeleton, SectionSkeleton } from 'gg-components/dist/Skeletons';
 import TicketStatusSkeleton from 'containers/TicketStatus/Skeleton';
 
 const Skeleton = props => {

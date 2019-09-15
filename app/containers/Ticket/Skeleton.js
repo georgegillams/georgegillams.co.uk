@@ -1,7 +1,7 @@
 import React from 'react';
 import { cssModules } from 'bpk-react-utils';
 
-import { TicketStatusSkeleton } from 'components/Skeletons';
+import { TicketStatusSkeleton } from 'gg-components/dist/Skeletons';
 import STYLES from 'containers/pages.scss';
 
 const getClassName = cssModules(STYLES);

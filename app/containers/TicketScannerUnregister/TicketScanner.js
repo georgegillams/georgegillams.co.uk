@@ -19,7 +19,7 @@ import STYLES from './ticket-scanner.scss';
 
 import LoadingIndicator from 'gg-components/dist/LoadingIndicator';
 import GGButton from 'gg-components/dist/GGButton';
-import { SectionSkeleton } from 'components/Skeletons';
+import { SectionSkeleton } from 'gg-components/dist/Skeletons';
 import { Section, SubSection, TextLink } from 'gg-components/dist/Typography';
 import Ticket from 'components/Ticket';
 import CodeInline from 'gg-components/dist/Code';
