@@ -31,6 +31,7 @@ function register(scriptId, fileName) {
   });
 }
 
+register('countdown_spakles', 'Countdown sparkles.js');
 register('github_WIP_reminder', 'Github WIP Reminder.js');
 register('jira_github_links', 'Jira Github Links.js');
 register('geektastic_identifiers', 'Geektastic identifiers.js');
