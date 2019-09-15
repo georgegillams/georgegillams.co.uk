@@ -31,6 +31,7 @@ function register(scriptId, fileName) {
   });
 }
 
+register('jira_hide_legend', 'Jira hide links.js');
 register('countdown_sparkles', 'Countdown sparkles.js');
 register('github_WIP_reminder', 'Github WIP Reminder.js');
 register('jira_github_links', 'Jira Github Links.js');
