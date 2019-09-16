@@ -57,7 +57,6 @@ export default class MonzoPots extends React.Component {
         'name',
         'transactionalData',
       );
-      console.log(`monzoPotDisplayData`, monzoPotDisplayData);
     }
 
     return (
@@ -100,7 +99,9 @@ export default class MonzoPots extends React.Component {
                     name={pot.name}
                     balance={pot.balance}
                     goalAmount={pot.goalAmount}
-                    markerPosition={pot.percentageTimeElapsed}
+                    markerPosition={
+                      pot.percentageExpected > 0 ? pot.percentageExpected : null
+                    }
                     shortfall={pot.shortfall}
                     className={getClassName('pages__degree-module')}
                   />

@@ -21,13 +21,14 @@ function loadPots(req) {
         const balance = parseFloat(pot.balance) / 100;
         const monthsElapsedPercentage = getMonthsElapsedPercentage(pot.name);
         const expectedSavingsSoFar =
+          (potConfig.startAmount || 0) +
           (goalAmount * monthsElapsedPercentage) / 100;
         const shortfall = expectedSavingsSoFar - balance;
         return {
           name: pot.name,
           balance,
           goalAmount: parseFloat(pot.goal_amount) / 100,
-          percentageTimeElapsed: monthsElapsedPercentage,
+          percentageExpected: (100.0 * expectedSavingsSoFar) / goalAmount,
           shortfall: shortfall < 5 ? null : shortfall,
           percentageComplete: pot.goal_amount
             ? Math.ceil((100 * pot.balance) / pot.goal_amount)

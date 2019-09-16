@@ -10,7 +10,8 @@ const POT_CONFIGS = [
   },
   {
     name: 'Holiday',
-    startDate: `${thisYear}-05-01`,
+    startDate: `${thisYear}-10-01`,
+    startAmount: '215.49',
   },
   {
     name: 'Emergencies',
@@ -38,11 +39,9 @@ const POT_CONFIGS = [
   },
   {
     name: 'Buffer',
-    startDate: `${thisYear}-05-01`,
   },
   {
     name: 'Eating out',
-    startDate: `${thisYear}-07-01`,
   },
   {
     name: 'Aerial (monthly)',
