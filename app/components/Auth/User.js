@@ -31,7 +31,7 @@ const User = props => {
 User.propTypes = {
   // eslint-disable-next-line react/forbid-prop-types
   user: PropTypes.object.isRequired,
-  welcomeMessage: PropTypes.String,
+  welcomeMessage: PropTypes.string,
   showAdvancedInfo: PropTypes.bool,
 };
 
