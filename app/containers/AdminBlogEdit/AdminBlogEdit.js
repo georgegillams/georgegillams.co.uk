@@ -17,7 +17,7 @@ import {
   APIEntity,
   AdminOnly,
   LoadingCover,
-} from 'components/Auth';
+} from 'gg-components/dist/Auth';
 import { CreateBlogForm } from 'components/Forms';
 import STYLES from 'containers/pages.scss';
 

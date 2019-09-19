@@ -17,7 +17,7 @@ import {
   APIEntity,
   AdminOnly,
   LoadingCover,
-} from 'components/Auth';
+} from 'gg-components/dist/Auth';
 import { LoginForm } from 'components/Forms';
 import { CookiesOnly } from 'components/Sessions';
 import STYLES from 'containers/pages.scss';

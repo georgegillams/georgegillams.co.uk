@@ -17,7 +17,7 @@ import { SignUpForm } from 'components/Forms';
 import { CookiesOnly } from 'components/Sessions';
 import Redirect from 'gg-components/dist/Redirect';
 import ShopFloor from 'components/ShopFloor';
-import { LoggedOutOnly, LoadingCover } from 'components/Auth';
+import { LoggedOutOnly, LoadingCover } from 'gg-components/dist/Auth';
 import {
   MONZOME_LINK_REGEX,
   SORT_CODE_REGEX,

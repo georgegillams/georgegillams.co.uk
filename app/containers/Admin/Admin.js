@@ -7,7 +7,7 @@ import Skeleton from './Skeleton';
 
 import ArticleCard, { CARD_LAYOUTS } from 'components/Cards';
 import { Section } from 'gg-components/dist/Typography';
-import { DebugObject, AdminOnly, LoadingCover } from 'components/Auth';
+import { DebugObject, AdminOnly, LoadingCover } from 'gg-components/dist/Auth';
 import { CookiesOnly } from 'components/Sessions';
 import STYLES from 'containers/pages.scss';
 

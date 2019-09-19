@@ -5,7 +5,7 @@ import cookie from 'react-cookies';
 import { cssModules } from 'bpk-react-utils';
 
 import { Section, SubSection, TextLink } from 'gg-components/dist/Typography';
-import { DebugObject } from 'components/Auth';
+import { DebugObject } from 'gg-components/dist/Auth';
 import STYLES from 'containers/pages.scss';
 
 const getClassName = cssModules(STYLES);

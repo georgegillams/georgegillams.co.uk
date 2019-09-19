@@ -15,7 +15,7 @@ import { CookiesOnly } from 'components/Sessions';
 import Redirect from 'gg-components/dist/Redirect';
 import TicketOptions from 'containers/TicketOptions';
 import TicketStatus from 'containers/TicketStatus';
-import { LoggedInOnly, LoadingCover } from 'components/Auth';
+import { LoggedInOnly, LoadingCover } from 'gg-components/dist/Auth';
 import {
   MONZOME_LINK_REGEX,
   SORT_CODE_REGEX,
