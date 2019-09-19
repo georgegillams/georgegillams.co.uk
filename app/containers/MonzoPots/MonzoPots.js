@@ -15,7 +15,7 @@ import HelperFunctions from 'helpers/HelperFunctions';
 import MoneyPot from 'gg-components/dist/MoneyPot';
 import GGButton from 'gg-components/dist/GGButton';
 import { Section, SubSection } from 'gg-components/dist/Typography';
-import { LoadingCover } from 'components/Auth';
+import { LoadingCover } from 'gg-components/dist/Auth';
 import STYLES from 'containers/pages.scss';
 
 const getClassName = cssModules(STYLES); // REGEX_REPLACED

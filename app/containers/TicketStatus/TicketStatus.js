@@ -21,7 +21,7 @@ import { Section, SubSection, TextLink } from 'gg-components/dist/Typography';
 import CodeInline from 'gg-components/dist/Code';
 import { getTimeDifference } from 'helpers/time';
 import { beautifyTicketType } from 'helpers/ticketing';
-import { DebugObject, LoadingCover, LoggedInOnly } from 'components/Auth';
+import { DebugObject, LoadingCover, LoggedInOnly } from 'gg-components/dist/Auth';
 import {
   SignUpContinueFormAboutYou,
   SignUpContinueFormYourDegree,

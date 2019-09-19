@@ -15,7 +15,7 @@ import {
   APIEntity,
   AdminOnly,
   LoadingCover,
-} from 'components/Auth';
+} from 'gg-components/dist/Auth';
 import STYLES from 'containers/pages.scss';
 
 const getClassName = cssModules(STYLES);

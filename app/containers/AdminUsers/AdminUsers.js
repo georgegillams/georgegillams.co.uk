@@ -19,7 +19,7 @@ import {
   APIEntity,
   AdminOnly,
   LoadingCover,
-} from 'components/Auth';
+} from 'gg-components/dist/Auth';
 import { LoginForm } from 'components/Forms';
 import { CookiesOnly } from 'components/Sessions';
 import { downloadStringAsCsv } from 'helpers/clientOperations';

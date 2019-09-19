@@ -12,7 +12,7 @@ import GGButton from 'gg-components/dist/GGButton';
 import { Section, SubSection, TextLink } from 'gg-components/dist/Typography';
 import CodeInline from 'gg-components/dist/Code';
 import { LoginForm } from 'components/Forms';
-import { DebugObject } from 'components/Auth';
+import { DebugObject } from 'gg-components/dist/Auth';
 import { CookiesOnly } from 'components/Sessions';
 import Redirect from 'gg-components/dist/Redirect';
 import {
