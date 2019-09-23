@@ -4,7 +4,7 @@ import { cssModules } from 'bpk-react-utils';
 
 import STYLES from '../pages.scss';
 
-import ArticleCard, { CARD_LAYOUTS } from 'components/Cards';
+import { ArticleCard, ARTICLE_CARD_LAYOUTS } from 'gg-components/dist/Cards';
 import { Section, SubSection } from 'gg-components/dist/Typography';
 import GGButton from 'gg-components/dist/GGButton';
 import { GG_EMAIL } from 'helpers/constants';
@@ -27,7 +27,7 @@ export default class Contact extends Component {
             className={getClassName('pages__compact-card-container')}
           >
             <ArticleCard
-              layout={CARD_LAYOUTS.narrowCompact}
+              layout={ARTICLE_CARD_LAYOUTS.narrowCompact}
               day={null}
               month={null}
               className={getClassName('pages__card')}
@@ -36,7 +36,7 @@ export default class Contact extends Component {
               title="Facebook"
             />
             <ArticleCard
-              layout={CARD_LAYOUTS.narrowCompact}
+              layout={ARTICLE_CARD_LAYOUTS.narrowCompact}
               day={null}
               month={null}
               className={getClassName('pages__card')}
@@ -45,7 +45,7 @@ export default class Contact extends Component {
               title="Linkedin"
             />
             <ArticleCard
-              layout={CARD_LAYOUTS.narrowCompact}
+              layout={ARTICLE_CARD_LAYOUTS.narrowCompact}
               day={null}
               month={null}
               className={getClassName('pages__card')}
@@ -56,7 +56,7 @@ export default class Contact extends Component {
               <Section>{GG_EMAIL}</Section>
             </ArticleCard>
             <ArticleCard
-              layout={CARD_LAYOUTS.narrowCompact}
+              layout={ARTICLE_CARD_LAYOUTS.narrowCompact}
               day={null}
               month={null}
               className={getClassName('pages__card')}
