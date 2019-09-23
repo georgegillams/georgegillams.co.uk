@@ -9,7 +9,7 @@ import { cssModules } from 'bpk-react-utils';
 
 import STYLES from '../pages.scss';
 
-import ArticleCard, { CARD_LAYOUTS } from 'components/Cards';
+import { ArticleCard, ARTICLE_ARTICLE_CARD_LAYOUTS } from 'gg-components/dist/Cards';
 import CreativeCommons from 'gg-components/dist/CreativeCommons';
 import { Section, SubSection } from 'gg-components/dist/Typography';
 import GraphicContent, {
@@ -72,7 +72,7 @@ export default class Photography extends Component {
             className={getClassName('pages__compact-card-container')}
           >
             <ArticleCard
-              layout={CARD_LAYOUTS.narrowCompact}
+              layout={ARTICLE_CARD_LAYOUTS.narrowCompact}
               day={null}
               month={null}
               className={getClassName('pages__card')}
@@ -81,7 +81,7 @@ export default class Photography extends Component {
               title="Find me on GuruShots"
             />
             <ArticleCard
-              layout={CARD_LAYOUTS.narrowCompact}
+              layout={ARTICLE_CARD_LAYOUTS.narrowCompact}
               day={null}
               month={null}
               className={getClassName('pages__card')}

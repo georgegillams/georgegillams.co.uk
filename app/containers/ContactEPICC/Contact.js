@@ -5,7 +5,7 @@ import { cssModules } from 'bpk-react-utils';
 import STYLES from '../pages.scss';
 
 import { Section, TextLink } from 'gg-components/dist/Typography';
-import ArticleCard, { CARD_LAYOUTS } from 'components/Cards';
+import { ArticleCard, ARTICLE_ARTICLE_CARD_LAYOUTS } from 'gg-components/dist/Cards';
 import GGButton from 'gg-components/dist/GGButton';
 import { EPICC_EMAIL } from 'helpers/constants';
 

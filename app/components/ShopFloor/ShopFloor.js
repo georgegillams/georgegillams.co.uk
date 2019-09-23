@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 import { CodeInline } from 'gg-components/dist/Code';
 import { SubSection } from 'gg-components/dist/Typography';
-import ArticleCard, { CARD_LAYOUTS } from 'components/Cards';
+import { ArticleCard, ARTICLE_ARTICLE_CARD_LAYOUTS } from 'gg-components/dist/Cards';
 import { getPriceForTicketType, beautifyTicketType } from 'helpers/ticketing';
 
 const ShopFloor = props => {
@@ -53,7 +53,7 @@ const ShopFloor = props => {
         <ArticleCard
           disabled={ebOneDayCount <= 0}
           highlighted={selectedTicket === 'EB_ONE_DAY'}
-          layout={CARD_LAYOUTS.narrowCompact}
+          layout={ARTICLE_CARD_LAYOUTS.narrowCompact}
           day={null}
           month={null}
           className={getClassName('pages__card')}
@@ -69,7 +69,7 @@ const ShopFloor = props => {
         </ArticleCard>
         <ArticleCard
           disabled={ebTwoDayCount <= 0}
-          layout={CARD_LAYOUTS.narrowCompact}
+          layout={ARTICLE_CARD_LAYOUTS.narrowCompact}
           highlighted={selectedTicket === 'EB_TWO_DAY'}
           day={null}
           month={null}
@@ -87,7 +87,7 @@ const ShopFloor = props => {
         <ArticleCard
           disabled={regularOneDayCount <= 0 || ebOneDayCount > 0}
           highlighted={selectedTicket === 'R_ONE_DAY'}
-          layout={CARD_LAYOUTS.narrowCompact}
+          layout={ARTICLE_CARD_LAYOUTS.narrowCompact}
           day={null}
           month={null}
           className={getClassName('pages__card')}
@@ -106,7 +106,7 @@ const ShopFloor = props => {
         <ArticleCard
           disabled={regularTwoDayCount <= 0 || ebTwoDayCount > 0}
           highlighted={selectedTicket === 'R_TWO_DAY'}
-          layout={CARD_LAYOUTS.narrowCompact}
+          layout={ARTICLE_CARD_LAYOUTS.narrowCompact}
           day={null}
           month={null}
           className={getClassName('pages__card')}

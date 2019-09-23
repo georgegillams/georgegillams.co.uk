@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import { Helmet } from 'react-helmet';
 import { cssModules } from 'bpk-react-utils';
 
-import ArticleCard, { CARD_LAYOUTS } from 'components/Cards';
+import { ArticleCard, ARTICLE_ARTICLE_CARD_LAYOUTS } from 'gg-components/dist/Cards';
 import { REG_EMAIL } from 'helpers/constants';
 import STYLES from 'containers/pages.scss';
 
@@ -21,7 +21,7 @@ export default class HomePage extends React.PureComponent {
           <Helmet title="Home" />
           {Date.now() > new Date(2019, 2, 22, 1, 0, 0).getTime() && (
             <ArticleCard
-              layout={CARD_LAYOUTS.narrowCompact}
+              layout={ARTICLE_CARD_LAYOUTS.narrowCompact}
               day={null}
               month={null}
               className={getClassName('pages__card')}
@@ -31,7 +31,7 @@ export default class HomePage extends React.PureComponent {
             />
           )}
           <ArticleCard
-            layout={CARD_LAYOUTS.narrowCompact}
+            layout={ARTICLE_CARD_LAYOUTS.narrowCompact}
             day={null}
             month={null}
             className={getClassName('pages__card')}
@@ -40,7 +40,7 @@ export default class HomePage extends React.PureComponent {
             title="Log in"
           />
           <ArticleCard
-            layout={CARD_LAYOUTS.narrowCompact}
+            layout={ARTICLE_CARD_LAYOUTS.narrowCompact}
             day={null}
             month={null}
             className={getClassName('pages__card')}
@@ -49,7 +49,7 @@ export default class HomePage extends React.PureComponent {
             title="Sign up"
           />
           <ArticleCard
-            layout={CARD_LAYOUTS.narrowCompact}
+            layout={ARTICLE_CARD_LAYOUTS.narrowCompact}
             day={null}
             month={null}
             className={getClassName('pages__card')}
@@ -59,7 +59,7 @@ export default class HomePage extends React.PureComponent {
           />
           {user && user.email === REG_EMAIL && (
             <ArticleCard
-              layout={CARD_LAYOUTS.narrowCompact}
+              layout={ARTICLE_CARD_LAYOUTS.narrowCompact}
               day={null}
               month={null}
               className={getClassName('pages__card')}
@@ -70,7 +70,7 @@ export default class HomePage extends React.PureComponent {
           )}
           {user && user.admin && (
             <ArticleCard
-              layout={CARD_LAYOUTS.narrowCompact}
+              layout={ARTICLE_CARD_LAYOUTS.narrowCompact}
               day={null}
               month={null}
               className={getClassName('pages__card')}

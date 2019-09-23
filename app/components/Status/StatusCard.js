@@ -5,7 +5,7 @@ import { cssModules } from 'bpk-react-utils';
 import Status from './Status';
 import STYLES from './status-card.scss';
 
-import ArticleCard, { CARD_LAYOUTS } from 'components/Cards';
+import { ArticleCard, ARTICLE_ARTICLE_CARD_LAYOUTS } from 'gg-components/dist/Cards';
 
 const getClassName = cssModules(STYLES); // REGEX_REPLACED
 
@@ -18,7 +18,7 @@ const StatusCard = props => {
   return (
     <div className={classNameFinal.join(' ')} {...rest}>
       <ArticleCard
-        layout={CARD_LAYOUTS.narrowCompact}
+        layout={ARTICLE_CARD_LAYOUTS.narrowCompact}
         className={getClassName('status-card__card')}
       >
         <div className={getClassName('status-card__content-items')}>
