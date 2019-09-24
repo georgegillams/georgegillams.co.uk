@@ -1,3 +1,4 @@
+const fs = require('fs');
 const path = require('path');
 
 const express = require('express');
@@ -5,48 +6,55 @@ const wget = require('wget-improved');
 
 const router = express.Router();
 
-function sendGreasemonkeyFile(fileName, req, res) {
+function getMeta(cb) {
   const download = wget.download(
-    `https://raw.githubusercontent.com/georgegillams/dotfiles/master/greasemonkey/${fileName}`,
-    path.join(__dirname, './server_content/greasemonkey', fileName),
+    'https://raw.githubusercontent.com/georgegillams/browser-scripts/master/scripts.json',
+    path.join(__dirname, './server_content/greasemonkey', 'scripts.json'),
     {},
   );
   download.on('end', () => {
-    res.sendFile(
-      path.join(__dirname, './server_content/greasemonkey', fileName),
-      {
-        headers: { 'Content-Type': 'text/plain' },
-      },
+    const metaData = JSON.parse(
+      fs.readFileSync(
+        path.join(__dirname, './server_content/greasemonkey', 'scripts.json'),
+        'utf8',
+      ),
     );
+    cb(metaData);
   });
 }
 
-function register(scriptId, fileName) {
-  router.get(`/greasemonkey/${scriptId}`, (req, res) => {
-    sendGreasemonkeyFile(fileName, req, res);
-  });
-
-  router.get(`/api/greasemonkey/${scriptId}`, (req, res) => {
-    sendGreasemonkeyFile(fileName, req, res);
+function sendGreasemonkeyFile(scriptId, req, res) {
+  getMeta(metaData => {
+    const matchingScripts = metaData.filter(m => m.id === scriptId);
+    if (matchingScripts.length > 0) {
+      const { fileName } = matchingScripts[0];
+      const download = wget.download(
+        `https://raw.githubusercontent.com/georgegillams/browser-scripts/master/src/${fileName}`,
+        path.join(__dirname, './server_content/greasemonkey', fileName),
+        {},
+      );
+      download.on('end', () => {
+        res.sendFile(
+          path.join(__dirname, './server_content/greasemonkey', fileName),
+          {
+            headers: { 'Content-Type': 'text/plain' },
+          },
+        );
+      });
+    }
   });
 }
 
-register('jira_hide_legend', 'Jira hide links.js');
-register('countdown_sparkles', 'Countdown sparkles.js');
-register('github_WIP_reminder', 'Github WIP Reminder.js');
-register('jira_github_links', 'Jira Github Links.js');
-register('geektastic_identifiers', 'Geektastic identifiers.js');
-register('github_auto_merge', 'GitHub auto merge.js');
-register('github_expand_rich_diffs', 'Github expand rich diffs.js');
-register('github_travis_new_tab', 'GitHub Travis links new tab.js');
-register('find_backpack_components', 'Find Backpack components.js');
-register('github_squash_reminder', 'GitHub squash reminder.js');
-register('gurushots_boost', 'GuruShots boost.js');
-register('secureEcs_download', 'secure ecs.js');
-register('skyscanner_buttons', 'skyscanner buttons.js');
-register('github_highlight_name', 'Github highlight my name.js');
-register('github_expand_comments', 'Github expand all hidden comments.js');
-register('hackthis_coding_1', 'Hackthis.co.uk coding level 1.js');
-register('hackthis_coding_2', 'Hackthis.co.uk coding level 2.js');
+router.get(`/greasemonkey/*`, (req, res) => {
+  const pathValues = req.path.split('/');
+  const scriptId = pathValues[pathValues.length - 1];
+  sendGreasemonkeyFile(scriptId, req, res);
+});
+
+router.get(`/api/greasemonkey/*`, (req, res) => {
+  const pathValues = req.path.split('/');
+  const scriptId = pathValues[pathValues.length - 1];
+  sendGreasemonkeyFile(scriptId, req, res);
+});
 
 export default router;
