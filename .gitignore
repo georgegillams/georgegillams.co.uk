@@ -23,6 +23,9 @@ app/helpers
 helpers/helpers
 server/api/helpers
 
+# runtime stuff
+server/server_content
+
 # redis
 dump.rdb
 

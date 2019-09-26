@@ -31,7 +31,7 @@
     "pretest": "npm run test:clean",
     "prettier": "prettier --config .prettierrc --write \"**/*.js\"",
     "start": "npm run start:prod",
-    "start:dev": "cross-env NODE_PATH=./server/api:./app NODE_ENV=development nodemon --ignore 'app/*' --exec babel-node server",
+    "start:dev": "cross-env NODE_PATH=./server/api:./app NODE_ENV=development nodemon --ignore 'server/server_content' --ignore 'app/*' --exec babel-node server",
     "start:prod": "cross-env NODE_PATH=./build/server/api NODE_ENV=production node ./build/server",
     "start:production": "npm run test && npm run build && npm run start:prod",
     "test": "cross-env NODE_ENV=test SECRET_API_KEY=asdfghjkl NODE_PATH=./server/api:./app jest --coverage",

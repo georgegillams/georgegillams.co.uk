@@ -23,26 +23,47 @@ function getMeta(cb) {
   });
 }
 
+function createWorkingDirectories() {
+  var serverContentDir = path.join(__dirname, './server_content');
+  var greasemonkeyDir = path.join(__dirname, './server_content/greasemonkey');
+
+  if (!fs.existsSync(serverContentDir)) {
+    fs.mkdirSync(serverContentDir);
+  }
+  if (!fs.existsSync(greasemonkeyDir)) {
+    fs.mkdirSync(greasemonkeyDir);
+  }
+}
+
 function sendGreasemonkeyFile(scriptId, req, res) {
-  getMeta(metaData => {
-    const matchingScripts = metaData.filter(m => m.id === scriptId);
-    if (matchingScripts.length > 0) {
-      const { fileName } = matchingScripts[0];
-      const download = wget.download(
-        `https://raw.githubusercontent.com/georgegillams/browser-scripts/master/src/${fileName}`,
-        path.join(__dirname, './server_content/greasemonkey', fileName),
-        {},
-      );
-      download.on('end', () => {
-        res.sendFile(
+  try {
+    createWorkingDirectories();
+    getMeta(metaData => {
+      const matchingScripts = metaData.filter(m => m.id === scriptId);
+      if (matchingScripts.length > 0) {
+        const { fileName } = matchingScripts[0];
+        const download = wget.download(
+          `https://raw.githubusercontent.com/georgegillams/browser-scripts/master/src/${fileName}`,
           path.join(__dirname, './server_content/greasemonkey', fileName),
-          {
-            headers: { 'Content-Type': 'text/plain' },
-          },
+          {},
         );
-      });
-    }
-  });
+        download.on('end', () => {
+          res.sendFile(
+            path.join(__dirname, './server_content/greasemonkey', fileName),
+            {
+              headers: { 'Content-Type': 'text/plain' },
+            },
+          );
+        });
+      } else {
+        res
+          .status(500)
+          .send({ error: 'An error occured fetching resources from GitHub.' });
+      }
+    });
+  } catch (e) {
+    console.err(`An error occured fetching resources from GitHub`, err);
+  }
 }
 
 router.get(`/greasemonkey/*`, (req, res) => {
