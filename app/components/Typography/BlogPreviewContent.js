@@ -16,7 +16,7 @@ import { cssModules } from 'bpk-react-utils';
 
 import STYLES from './blog-viewer.scss';
 
-import CodeInline, { Code, CodeBashArrow } from 'gg-components/dist/Code';
+import { CodeInline, Code, CodeBashArrow } from 'gg-components/dist/Code';
 import { TextLink, Quote, SubSection } from 'gg-components/dist/Typography';
 import HelperFunctions from 'helpers/HelperFunctions';
 

@@ -7,10 +7,10 @@ import BpkImage, {
 } from 'bpk-component-image';
 import { cssModules } from 'bpk-react-utils';
 
-import LoadingIndicator from 'gg-components/dist/LoadingIndicator';
-import GGButton from 'gg-components/dist/GGButton';
+import {LoadingIndicator} from 'gg-components/dist/LoadingIndicator';
+import {GGButton} from 'gg-components/dist/GGButton';
 import { Section, SubSection, TextLink } from 'gg-components/dist/Typography';
-import CodeInline from 'gg-components/dist/Code';
+import {CodeInline} from 'gg-components/dist/Code';
 import { CreatePaymentForm } from 'components/Forms';
 import {
   MONZOME_LINK_REGEX,

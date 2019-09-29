@@ -6,7 +6,7 @@ import { cssModules } from 'bpk-react-utils';
 import Skeleton from './Skeleton';
 
 import { LoadingCover } from 'gg-components/dist/Auth';
-import CreativeCommons from 'gg-components/dist/CreativeCommons';
+import {CreativeCommons} from 'gg-components/dist/CreativeCommons';
 import { BlogRenderer } from 'components/Typography';
 import HelperFunctions from 'helpers/HelperFunctions';
 import Comments from 'containers/Comments';

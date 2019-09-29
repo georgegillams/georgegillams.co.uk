@@ -5,7 +5,7 @@ import { cssModules } from 'bpk-react-utils';
 import CommentInput from './CommentInput';
 import STYLES from './comments.scss';
 
-import GGButton from 'gg-components/dist/GGButton';
+import {GGButton} from 'gg-components/dist/GGButton';
 import { SubSection } from 'gg-components/dist/Typography';
 import { BlogPreviewContent } from 'components/Typography';
 

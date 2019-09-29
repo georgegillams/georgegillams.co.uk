@@ -6,13 +6,13 @@ import { cssModules } from 'bpk-react-utils';
 import Skeleton from './Skeleton';
 import LowerPageSkeleton from './LowerPageSkeleton';
 
-import LoadingIndicator from 'gg-components/dist/LoadingIndicator';
-import GGButton from 'gg-components/dist/GGButton';
+import {LoadingIndicator} from 'gg-components/dist/LoadingIndicator';
+import {GGButton} from 'gg-components/dist/GGButton';
 import { Section, SubSection, TextLink } from 'gg-components/dist/Typography';
-import CodeInline from 'gg-components/dist/Code';
+import {CodeInline} from 'gg-components/dist/Code';
 import { SignUpForm } from 'components/Forms';
 import { CookiesOnly } from 'components/Sessions';
-import Redirect from 'gg-components/dist/Redirect';
+import {Redirect} from 'gg-components/dist/Redirect';
 import TicketOptions from 'containers/TicketOptions';
 import TicketStatus from 'containers/TicketStatus';
 import { LoggedInOnly, LoadingCover } from 'gg-components/dist/Auth';

@@ -6,7 +6,7 @@ import { cssModules } from 'bpk-react-utils';
 
 import Skeleton from './Skeleton';
 
-import GGButton from 'gg-components/dist/GGButton';
+import {GGButton} from 'gg-components/dist/GGButton';
 import { Section, SubSection } from 'gg-components/dist/Typography';
 import FormBuilder from 'components/Forms';
 import { ANYTHING_REGEX } from 'helpers/constants';

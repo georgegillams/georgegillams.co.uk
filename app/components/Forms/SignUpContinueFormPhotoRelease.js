@@ -8,7 +8,7 @@ import FormBuilder from './FormBuilder';
 import STYLES from './forms.scss';
 
 import { TextLink } from 'gg-components/dist/Typography';
-import GGButton from 'gg-components/dist/GGButton';
+import {GGButton} from 'gg-components/dist/GGButton';
 import {
   STRING_REGEX,
   INT_REGEX,
