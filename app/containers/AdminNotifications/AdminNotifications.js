@@ -7,7 +7,7 @@ import { cssModules } from 'bpk-react-utils';
 import Skeleton from './Skeleton';
 
 import { NotificationComp } from 'gg-components/dist/Notifications';
-import GGButton from 'gg-components/dist/GGButton';
+import {GGButton} from 'gg-components/dist/GGButton';
 import { Section } from 'gg-components/dist/Typography';
 import FormBuilder from 'components/Forms';
 import {

@@ -17,12 +17,12 @@ import { cssModules } from 'bpk-react-utils';
 import Skeleton from './Skeleton';
 import STYLES from './ticket-scanner.scss';
 
-import LoadingIndicator from 'gg-components/dist/LoadingIndicator';
-import GGButton from 'gg-components/dist/GGButton';
+import {LoadingIndicator} from 'gg-components/dist/LoadingIndicator';
+import {GGButton} from 'gg-components/dist/GGButton';
 import { SectionSkeleton } from 'gg-components/dist/Skeletons';
 import { Section, SubSection, TextLink } from 'gg-components/dist/Typography';
 import Ticket from 'components/Ticket';
-import CodeInline from 'gg-components/dist/Code';
+import {CodeInline} from 'gg-components/dist/Code';
 import { getTimeDifference } from 'helpers/time';
 import { getJsonFromScannedData } from 'helpers/qrCodes';
 import { beautifyTicketType } from 'helpers/ticketing';

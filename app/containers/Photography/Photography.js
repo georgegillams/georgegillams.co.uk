@@ -10,7 +10,7 @@ import { cssModules } from 'bpk-react-utils';
 import STYLES from '../pages.scss';
 
 import { ArticleCard, ARTICLE_CARD_LAYOUTS } from 'gg-components/dist/Cards';
-import CreativeCommons from 'gg-components/dist/CreativeCommons';
+import {CreativeCommons} from 'gg-components/dist/CreativeCommons';
 import { Section, SubSection } from 'gg-components/dist/Typography';
 import GraphicContent, {
   withGraphicContentBehaviour,

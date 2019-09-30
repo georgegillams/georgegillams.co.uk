@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import { cssModules } from 'bpk-react-utils';
 
 import { ArticleCard } from 'gg-components/dist/Cards';
-import Tag from 'gg-components/dist/Tag';
+import {Tag} from 'gg-components/dist/Tag';
 import { NON_EMOJI_REGEX } from 'helpers/constants';
 import STYLES from 'containers/pages.scss';
 

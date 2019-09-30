@@ -12,8 +12,8 @@ import { associate } from 'helpers/objects';
 import Skeleton from './Skeleton';
 
 import HelperFunctions from 'helpers/HelperFunctions';
-import MoneyPot from 'gg-components/dist/MoneyPot';
-import GGButton from 'gg-components/dist/GGButton';
+import {MoneyPot} from 'gg-components/dist/MoneyPot';
+import {GGButton} from 'gg-components/dist/GGButton';
 import { Section, SubSection } from 'gg-components/dist/Typography';
 import { LoadingCover } from 'gg-components/dist/Auth';
 import STYLES from 'containers/pages.scss';

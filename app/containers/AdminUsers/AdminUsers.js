@@ -8,11 +8,11 @@ import Skeleton from './Skeleton';
 import generateCsv from './generateCsv';
 import HelperFunctions from 'helpers/HelperFunctions';
 
-import LoadingIndicator from 'gg-components/dist/LoadingIndicator';
+import {LoadingIndicator} from 'gg-components/dist/LoadingIndicator';
 import { ArticleCard, ARTICLE_CARD_LAYOUTS } from 'gg-components/dist/Cards';
-import GGButton from 'gg-components/dist/GGButton';
+import {GGButton} from 'gg-components/dist/GGButton';
 import { Section, SubSection, TextLink } from 'gg-components/dist/Typography';
-import CodeInline from 'gg-components/dist/Code';
+import {CodeInline} from 'gg-components/dist/Code';
 import Ticket from 'components/Ticket';
 import {
   DebugObject,

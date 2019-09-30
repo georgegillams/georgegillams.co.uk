@@ -6,7 +6,7 @@ import STYLES from '../pages.scss';
 
 import { Section, TextLink } from 'gg-components/dist/Typography';
 import { ArticleCard, ARTICLE_CARD_LAYOUTS } from 'gg-components/dist/Cards';
-import GGButton from 'gg-components/dist/GGButton';
+import {GGButton} from 'gg-components/dist/GGButton';
 import { EPICC_EMAIL } from 'helpers/constants';
 
 const getClassName = cssModules(STYLES);

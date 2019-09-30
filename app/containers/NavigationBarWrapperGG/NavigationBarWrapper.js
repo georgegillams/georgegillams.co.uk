@@ -1,7 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import NavigationBar, {
+import {
+  NavigationBar,
   NavigationItem,
 } from 'gg-components/dist/NavigationBar';
 import { Logo } from 'gg-components/dist/Logo';

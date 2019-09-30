@@ -9,7 +9,7 @@ import { cssModules } from 'bpk-react-utils'; // REGEX_REPLACED
 import STYLES from '../pages.scss';
 
 import { Section, SubSection, TextLink } from 'gg-components/dist/Typography';
-import DegreeModule from 'gg-components/dist/Degree';
+import {DegreeModule} from 'gg-components/dist/Degree';
 import Comments from 'containers/Comments';
 
 const getClassName = cssModules(STYLES);

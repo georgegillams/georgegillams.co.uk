@@ -6,7 +6,7 @@ import STYLES from '../pages.scss';
 
 import { ArticleCard, ARTICLE_CARD_LAYOUTS } from 'gg-components/dist/Cards';
 import { Section, SubSection } from 'gg-components/dist/Typography';
-import GGButton from 'gg-components/dist/GGButton';
+import {GGButton} from 'gg-components/dist/GGButton';
 import { GG_EMAIL } from 'helpers/constants';
 
 const getClassName = cssModules(STYLES);

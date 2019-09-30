@@ -9,10 +9,10 @@ import { cssModules } from 'bpk-react-utils';
 
 import Skeleton from './Skeleton';
 
-import LoadingIndicator from 'gg-components/dist/LoadingIndicator';
-import GGButton from 'gg-components/dist/GGButton';
+import {LoadingIndicator} from 'gg-components/dist/LoadingIndicator';
+import {GGButton} from 'gg-components/dist/GGButton';
 import { Section, SubSection, TextLink } from 'gg-components/dist/Typography';
-import CodeInline from 'gg-components/dist/Code';
+import {CodeInline} from 'gg-components/dist/Code';
 import { DebugObject, LoggedInOnly, LoadingCover } from 'gg-components/dist/Auth';
 import { LoginForm } from 'components/Forms';
 import { CookiesOnly } from 'components/Sessions';

@@ -10,7 +10,7 @@ import BlogListSkeleton from './BlogListSkeleton';
 import STYLES from './blogs-page.scss';
 
 import { LoadingCover } from 'gg-components/dist/Auth';
-import GGButton from 'gg-components/dist/GGButton';
+import {GGButton} from 'gg-components/dist/GGButton';
 import BlogsList from 'components/Blogs';
 import PAGE_STYLES from 'containers/pages.scss';
 
