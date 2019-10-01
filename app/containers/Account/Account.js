@@ -10,7 +10,7 @@ import { cssModules } from 'bpk-react-utils';
 import Skeleton from './Skeleton';
 
 import {LoadingIndicator} from 'gg-components/dist/LoadingIndicator';
-import {GGButton} from 'gg-components/dist/GGButton';
+import {Button} from 'gg-components/dist/Button';
 import { Section, SubSection, TextLink } from 'gg-components/dist/Typography';
 import {CodeInline} from 'gg-components/dist/Code';
 import { DebugObject, LoggedInOnly, LoadingCover } from 'gg-components/dist/Auth';
@@ -68,25 +68,25 @@ export default class Account extends React.Component {
             <br />
             {user && !user.emailVerified && EMAIL_VERIFICATION_ENABLED && (
               <Fragment>
-                <GGButton large onClick={requestVerificationEmail}>
+                <Button large onClick={requestVerificationEmail}>
                   Request new verification email
-                </GGButton>
+                </Button>
                 <br />
                 <br />
               </Fragment>
             )}
             {PROJECT_NAME === 'EPICC' && (
               <Fragment>
-                <GGButton large href="/sign-up/continue?page=1">
+                <Button large href="/sign-up/continue?page=1">
                   {'View/edit details'}
-                </GGButton>
+                </Button>
                 <br />
                 <br />
               </Fragment>
             )}
-            <GGButton large onClick={logout}>
+            <Button large onClick={logout}>
               Logout
-            </GGButton>
+            </Button>
           </Section>
         </LoggedInOnly>
       </div>

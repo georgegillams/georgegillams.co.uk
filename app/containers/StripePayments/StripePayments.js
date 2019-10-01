@@ -16,7 +16,7 @@ import Skeleton from './Skeleton';
 import LowerPageSkeleton from './LowerPageSkeleton';
 
 import {LoadingIndicator} from 'gg-components/dist/LoadingIndicator';
-import {GGButton} from 'gg-components/dist/GGButton';
+import {Button} from 'gg-components/dist/Button';
 import { Section, SubSection, TextLink } from 'gg-components/dist/Typography';
 import {CodeInline} from 'gg-components/dist/Code';
 import { getTimeDifference } from 'helpers/time';

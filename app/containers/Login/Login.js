@@ -10,7 +10,7 @@ import { cssModules } from 'bpk-react-utils';
 import Skeleton from './Skeleton';
 
 import {LoadingIndicator} from 'gg-components/dist/LoadingIndicator';
-import {GGButton} from 'gg-components/dist/GGButton';
+import {Button} from 'gg-components/dist/Button';
 import { Section, SubSection, TextLink } from 'gg-components/dist/Typography';
 import {CodeInline} from 'gg-components/dist/Code';
 import { DebugObject, LoggedOutOnly, LoadingCover } from 'gg-components/dist/Auth';

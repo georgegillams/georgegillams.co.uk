@@ -7,7 +7,7 @@ import { cssModules } from 'bpk-react-utils';
 
 import STYLES from './forms.scss';
 
-import {GGButton} from 'gg-components/dist/GGButton';
+import {Button} from 'gg-components/dist/Button';
 import { TextLink } from 'gg-components/dist/Typography';
 import { EMAIL_REGEX, PASSWORD_REGEX } from 'helpers/constants';
 import { formValueChanged } from 'helpers/objects';
@@ -186,7 +186,7 @@ class FormBuilder extends React.Component {
           </Fragment>
         )}
         {!submitOnChange && (
-          <GGButton
+          <Button
             className={getClassName(
               'forms__component',
               'forms__component__button',
@@ -196,7 +196,7 @@ class FormBuilder extends React.Component {
             disabled={disabled || !validity.every(v => v)}
           >
             {submitLabel}
-          </GGButton>
+          </Button>
         )}
       </div>
     );

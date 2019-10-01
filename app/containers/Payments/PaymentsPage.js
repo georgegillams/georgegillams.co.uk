@@ -8,7 +8,7 @@ import BpkImage, {
 import { cssModules } from 'bpk-react-utils';
 
 import {LoadingIndicator} from 'gg-components/dist/LoadingIndicator';
-import {GGButton} from 'gg-components/dist/GGButton';
+import {Button} from 'gg-components/dist/Button';
 import { Section, SubSection, TextLink } from 'gg-components/dist/Typography';
 import {CodeInline} from 'gg-components/dist/Code';
 import { CreatePaymentForm } from 'components/Forms';

@@ -7,7 +7,7 @@ import { cssModules } from 'bpk-react-utils';
 import Skeleton from './Skeleton';
 
 import { BlogCard } from 'components/Blogs';
-import {GGButton} from 'gg-components/dist/GGButton';
+import {Button} from 'gg-components/dist/Button';
 import { Section } from 'gg-components/dist/Typography';
 import FormBuilder from 'components/Forms';
 import { ID_REGEX } from 'helpers/constants';
@@ -54,13 +54,13 @@ export default class AdminBlogs extends React.Component {
           setLoginRedirect={() => setLoginRedirect('admin/blog')}
         >
           <Section name="Admin - blog">
-            <GGButton
+            <Button
               className={getClassName('pages__component')}
               large
               href="/admin/blog/create"
             >
               Create blog
-            </GGButton>
+            </Button>
             {blogs &&
               blogs.map &&
               blogs.map(b => (
@@ -72,14 +72,14 @@ export default class AdminBlogs extends React.Component {
                 >
                   <APIEntity name="more" entityType="Blog" entity={b} />
                   <BlogCard linkPrefix="/admin/blog/edit" blog={b} />
-                  <GGButton
+                  <Button
                     large
                     destructive
                     disabled={deleting}
                     onClick={() => deleteBlog(b)}
                   >
                     Delete
-                  </GGButton>
+                  </Button>
                 </Card>
               ))}
           </Section>
