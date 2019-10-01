@@ -8,7 +8,7 @@ import Skeleton from './Skeleton';
 import {LoadingIndicator} from 'gg-components/dist/LoadingIndicator';
 import BlogsList from 'components/Blogs';
 import { ArticleCard, ARTICLE_CARD_LAYOUTS } from 'gg-components/dist/Cards';
-import {GGButton} from 'gg-components/dist/GGButton';
+import {Button} from 'gg-components/dist/Button';
 import { Section, SubSection, TextLink } from 'gg-components/dist/Typography';
 import {CodeInline} from 'gg-components/dist/Code';
 import Ticket from 'components/Ticket';

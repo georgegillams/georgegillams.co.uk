@@ -7,7 +7,7 @@ import Skeleton from './Skeleton';
 import LowerPageSkeleton from './LowerPageSkeleton';
 
 import {LoadingIndicator} from 'gg-components/dist/LoadingIndicator';
-import {GGButton} from 'gg-components/dist/GGButton';
+import {Button} from 'gg-components/dist/Button';
 import { Section, SubSection, TextLink } from 'gg-components/dist/Typography';
 import {CodeInline} from 'gg-components/dist/Code';
 import { SignUpForm } from 'components/Forms';
@@ -64,13 +64,13 @@ export default class SwapTickets extends React.Component {
                 onSelect={selectTicketType}
                 selectedTicketType={selectedTicketType}
               />
-              <GGButton
+              <Button
                 disabled={!selectedTicketType}
                 large
                 onClick={swapTickets}
               >
                 Confirm selection
-              </GGButton>
+              </Button>
               <br />
             </Section>
           </LoadingCover>

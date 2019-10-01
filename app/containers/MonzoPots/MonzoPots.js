@@ -13,7 +13,7 @@ import Skeleton from './Skeleton';
 
 import HelperFunctions from 'helpers/HelperFunctions';
 import {MoneyPot} from 'gg-components/dist/MoneyPot';
-import {GGButton} from 'gg-components/dist/GGButton';
+import {Button} from 'gg-components/dist/Button';
 import { Section, SubSection } from 'gg-components/dist/Typography';
 import { LoadingCover } from 'gg-components/dist/Auth';
 import STYLES from 'containers/pages.scss';
@@ -81,13 +81,13 @@ export default class MonzoPots extends React.Component {
               />
             )}
             {monzoPotDisplayData && monzoPotDisplayData.map && (
-              <GGButton
+              <Button
                 onClick={() => {
                   this.loadPotData(password);
                 }}
               >
                 Reload
-              </GGButton>
+              </Button>
             )}
             <br />
             <br />

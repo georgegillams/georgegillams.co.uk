@@ -7,7 +7,7 @@ import { cssModules } from 'bpk-react-utils';
 import Skeleton from './Skeleton';
 
 import { NotificationComp } from 'gg-components/dist/Notifications';
-import {GGButton} from 'gg-components/dist/GGButton';
+import {Button} from 'gg-components/dist/Button';
 import { Section } from 'gg-components/dist/Typography';
 import FormBuilder from 'components/Forms';
 import {
@@ -107,14 +107,14 @@ export default class AdminNotifications extends React.Component {
                   <NotificationComp type={b.type} deleted={b.deleted}>
                     {b.message}
                   </NotificationComp>
-                  <GGButton
+                  <Button
                     large
                     destructive
                     disabled={deleting}
                     onClick={() => deleteNotification(b)}
                   >
                     Delete
-                  </GGButton>
+                  </Button>
                 </Card>
               ))}
           </Section>

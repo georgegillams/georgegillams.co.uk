@@ -16,7 +16,7 @@ import { cssModules } from 'bpk-react-utils';
 import Skeleton from './Skeleton';
 
 import {LoadingIndicator} from 'gg-components/dist/LoadingIndicator';
-import {GGButton} from 'gg-components/dist/GGButton';
+import {Button} from 'gg-components/dist/Button';
 import { Section, SubSection, TextLink } from 'gg-components/dist/Typography';
 import {CodeInline} from 'gg-components/dist/Code';
 import { getTimeDifference } from 'helpers/time';
@@ -115,9 +115,9 @@ export default class TicketStatus extends React.Component {
             )}
             {(!userTicket || balanceOnAccount) && linkToSwap && (
               <Fragment>
-                <GGButton href="/swap-ticket" large>
+                <Button href="/swap-ticket" large>
                   {userTicket ? 'Change ticket type' : 'Reserve a ticket'}
-                </GGButton>
+                </Button>
               </Fragment>
             )}
           </BpkCard>

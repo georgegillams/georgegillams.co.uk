@@ -6,7 +6,7 @@ import STYLES from '../pages.scss';
 
 import { ArticleCard, ARTICLE_CARD_LAYOUTS } from 'gg-components/dist/Cards';
 import { Section, SubSection } from 'gg-components/dist/Typography';
-import {GGButton} from 'gg-components/dist/GGButton';
+import {Button} from 'gg-components/dist/Button';
 import { GG_EMAIL } from 'helpers/constants';
 
 const getClassName = cssModules(STYLES);
@@ -69,20 +69,20 @@ export default class Contact extends Component {
           </div>
           <br />
           <br />
-          <GGButton
+          <Button
             hrefExternal
             href="https://www.dropbox.com/s/aj9wjgotkldd18j/georgegillams.vcf?dl=1"
           >
             Download contact (iOS)
-          </GGButton>
+          </Button>
           <br />
           <br />
-          <GGButton
+          <Button
             hrefExternal
             href="https://www.dropbox.com/s/k8hmxeh2qpjqx66/google.csv?dl=1"
           >
             Download contact (Android)
-          </GGButton>
+          </Button>
           <br />
           <br />
           <SubSection

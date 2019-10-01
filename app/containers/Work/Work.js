@@ -8,7 +8,7 @@ import { cssModules } from 'bpk-react-utils';
 
 import STYLES from '../pages.scss';
 
-import {GGButton} from 'gg-components/dist/GGButton';
+import {Button} from 'gg-components/dist/Button';
 import { Section, SubSection, TextLink } from 'gg-components/dist/Typography';
 
 const getClassName = cssModules(STYLES); // REGEX_REPLACED
@@ -35,9 +35,9 @@ export default class Work extends Component {
             University of Southampton.
             <br />
             <br />
-            <GGButton href="/work/degree">
+            <Button href="/work/degree">
               Information about my degree →
-            </GGButton>
+            </Button>
           </SubSection>
           <SubSection name="Work">
             I started my Software Engineering career at{' '}
@@ -94,9 +94,9 @@ export default class Work extends Component {
               development and reduces effort duplication.
               <br />
               <br />
-              <GGButton hrefExternal href="https://backpack.github.io/">
+              <Button hrefExternal href="https://backpack.github.io/">
                 Read more about Backpack here →
-              </GGButton>
+              </Button>
             </SubSection>
             <SubSection name="EWOS">
               In 2015, I joined the EWOS (Electronic Warfare Operational

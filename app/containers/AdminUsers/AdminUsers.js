@@ -10,7 +10,7 @@ import HelperFunctions from 'helpers/HelperFunctions';
 
 import {LoadingIndicator} from 'gg-components/dist/LoadingIndicator';
 import { ArticleCard, ARTICLE_CARD_LAYOUTS } from 'gg-components/dist/Cards';
-import {GGButton} from 'gg-components/dist/GGButton';
+import {Button} from 'gg-components/dist/Button';
 import { Section, SubSection, TextLink } from 'gg-components/dist/Typography';
 import {CodeInline} from 'gg-components/dist/Code';
 import Ticket from 'components/Ticket';
@@ -86,26 +86,26 @@ export default class AdminUsers extends React.Component {
             {users && users.length && <span>{users.length}</span>}
             <br />
             <br />
-            <GGButton
+            <Button
               onClick={() =>
                 this.setState({ showTickets: !this.state.showTickets })
               }
               large
             >
               {`${this.state.showTickets ? 'Hide' : 'Show'} tickets`}
-            </GGButton>
+            </Button>
             <br />
             <br />
             {users && users.length && (
               <Fragment>
-                <GGButton onClick={() => downloadData(users)} large>
+                <Button onClick={() => downloadData(users)} large>
                   Download user data
-                </GGButton>
+                </Button>
                 <br />
                 <br />
-                <GGButton onClick={this.expandAll} large>
+                <Button onClick={this.expandAll} large>
                   Expand all entities
-                </GGButton>
+                </Button>
               </Fragment>
             )}
             <br />
@@ -129,13 +129,13 @@ export default class AdminUsers extends React.Component {
                       <br />
                     </Fragment>
                   )}
-                  <GGButton
+                  <Button
                     destructive
                     large
                     onClick={() => requestMagicLinkForUser(u)}
                   >
                     Login as user
-                  </GGButton>
+                  </Button>
                 </AdminUsersAPIEntity>
               ))}
           </Section>

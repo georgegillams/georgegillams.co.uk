@@ -18,7 +18,7 @@ import Skeleton from './Skeleton';
 import STYLES from './ticket-scanner.scss';
 
 import {LoadingIndicator} from 'gg-components/dist/LoadingIndicator';
-import {GGButton} from 'gg-components/dist/GGButton';
+import {Button} from 'gg-components/dist/Button';
 import { SectionSkeleton } from 'gg-components/dist/Skeletons';
 import { Section, SubSection, TextLink } from 'gg-components/dist/Typography';
 import Ticket from 'components/Ticket';
@@ -151,14 +151,14 @@ export default class TicketScanner extends React.Component {
             )}
             {displayType === 'registering' && <SectionSkeleton />}
             {!this.state.scanning && (
-              <GGButton
+              <Button
                 large
                 onClick={() => {
                   this.setState({ scanning: true });
                 }}
               >
                 Scan another
-              </GGButton>
+              </Button>
             )}
           </LoadingCover>
         </LoggedInOnly>

@@ -6,7 +6,7 @@ import { cssModules } from 'bpk-react-utils';
 
 import Skeleton from './Skeleton';
 
-import {GGButton} from 'gg-components/dist/GGButton';
+import {Button} from 'gg-components/dist/Button';
 import { Section, SubSection } from 'gg-components/dist/Typography';
 import FormBuilder from 'components/Forms';
 import { ANYTHING_REGEX } from 'helpers/constants';
@@ -172,7 +172,7 @@ export default class GrammarML extends React.Component {
                 createData(this.state.newData);
               }}
             />
-            <GGButton
+            <Button
               large
               destructive
               disabled={deleting}
@@ -180,7 +180,7 @@ export default class GrammarML extends React.Component {
               onClick={() => deleteAll()}
             >
               Reset training
-            </GGButton>
+            </Button>
             {data &&
               data.map &&
               data.map(b => (
@@ -200,14 +200,14 @@ export default class GrammarML extends React.Component {
                       {b.text}
                     </Section>
                   </span>
-                  <GGButton
+                  <Button
                     large
                     destructive
                     disabled={deleting}
                     onClick={() => deleteData(b)}
                   >
                     Delete
-                  </GGButton>
+                  </Button>
                 </Card>
               ))}
           </SubSection>

@@ -10,7 +10,7 @@ import BlogListSkeleton from './BlogListSkeleton';
 import STYLES from './blogs-page.scss';
 
 import { LoadingCover } from 'gg-components/dist/Auth';
-import {GGButton} from 'gg-components/dist/GGButton';
+import {Button} from 'gg-components/dist/Button';
 import BlogsList from 'components/Blogs';
 import PAGE_STYLES from 'containers/pages.scss';
 
@@ -27,7 +27,7 @@ export default class BlogsNav extends React.Component {
 
     return (
       <div className={outerClassNameFinal.join(' ')}>
-        <GGButton
+        <Button
           white={selected !== 'Writing'}
           href="/blog"
           style={{ marginRight: '1rem' }}
@@ -35,15 +35,15 @@ export default class BlogsNav extends React.Component {
           role="tab"
         >
           Writing
-        </GGButton>
-        <GGButton
+        </Button>
+        <Button
           aria-selected={selected === 'Travel' ? 'true' : null}
           role="tab"
           white={selected !== 'Travel'}
           href="/travel"
         >
           Travel
-        </GGButton>
+        </Button>
       </div>
     );
   }
