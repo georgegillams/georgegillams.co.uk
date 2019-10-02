@@ -14,13 +14,13 @@ I use my site to experiment with things, share stuff I've figured out, and allow
 Ensure a redis-instance is running.
 
 ```
-npm i
-npm run dev
+yarn
+yarn run dev
 ```
 
 Note that a prebuild script is used to transpile some dependencies. It will therefore take longer the first time you build it.
 
-`npm run dev` will set all necessary environment variables needed to run the application.
+`yarn run dev` will set all necessary environment variables needed to run the application.
 
 The front-end app is server-side rendered with React and interacts with the API via Redux middleware.
 

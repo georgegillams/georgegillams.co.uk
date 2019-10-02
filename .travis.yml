@@ -4,18 +4,18 @@ node_js:
   - 10
 
 install:
-  - npm install
-  - npm run build
+  - yarn
+  - yarn run build
 
 script:
-  - npm test
+  - yarn test
 
 notifications:
   email:
     on_failure: change
 
 cache:
-  npm: true
+  yarn: true
   directories:
     - node_modules
 
