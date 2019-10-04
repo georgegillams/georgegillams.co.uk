@@ -6,7 +6,7 @@ import STYLES from '../pages.scss';
 
 import { ArticleCard, ARTICLE_CARD_LAYOUTS } from 'gg-components/dist/Cards';
 import { Section, SubSection } from 'gg-components/dist/Typography';
-import {Button} from 'gg-components/dist/Button';
+import { Button } from 'gg-components/dist/Button';
 import { GG_EMAIL } from 'helpers/constants';
 
 const getClassName = cssModules(STYLES);
@@ -55,17 +55,6 @@ export default class Contact extends Component {
             >
               <Section>{GG_EMAIL}</Section>
             </ArticleCard>
-            <ArticleCard
-              layout={ARTICLE_CARD_LAYOUTS.narrowCompact}
-              day={null}
-              month={null}
-              className={getClassName('pages__card')}
-              imageSrc="https://i.imgur.com/9hcLfgF.png"
-              href="tel:+447867592615"
-              title="Phone"
-            >
-              <Section>+44 78675 92615</Section>
-            </ArticleCard>
           </div>
           <br />
           <br />
@@ -90,31 +79,6 @@ export default class Contact extends Component {
             anchor={false}
             name="Alternatively find me on WhatsApp or Signal"
           />
-          {/* <br />
-        <a
-          href="https://www.fb.com/georgegillams"
-          rel="noopener noreferrer"
-          target="_blank"
-        >
-          <SubSection anchor={false} name="Facebook georgegillams" link />
-        </a>
-        <a
-          href={`mailto:${GG_EMAIL}`}
-          rel="noopener noreferrer"
-          target="_blank"
-        >
-          <SubSection anchor={false} name={`Email ${GG_EMAIL}`} link />
-        </a>
-        <a href="tel:+447867592615" rel="noopener noreferrer" target="_blank">
-          <SubSection anchor={false} name="Call +44 (0) 786759 2615" link />
-        </a>
-      <a
-          href="https://georgegillams.typeform.com/to/oBmiJZ"
-          rel="noopener noreferrer"
-          target="_blank"
-        >
-          <SubSection anchor={false} name="Contact me online" link />
-        </a>   */}
         </Section>
       </div>
     );
