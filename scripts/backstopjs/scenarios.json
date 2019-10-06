@@ -1,6 +1,4 @@
 {
-  "scenarioIds": [
-    "",
-    "contact"
-  ]
+  "scenarioIds": ["", "account", "admin", "contact", "work"],
+  "globallyHiddenSelectors": ["img"]
 }

@@ -10,12 +10,13 @@ scenarioData.scenarioIds.forEach(sI => {
   scenarios.push({
     label: sI,
     url: `${BASE_URL}${sI}`,
+    hideSelectors: scenarioData.globallyHiddenSelectors,
   });
 });
 
 const config = {
   id: 'georgegillams-co-uk-default',
-  misMatchThreshold: process.env.CI ? 10 : 3,
+  misMatchThreshold: process.env.CI ? 11 : 3,
   viewports: [
     {
       label: 'phone',
