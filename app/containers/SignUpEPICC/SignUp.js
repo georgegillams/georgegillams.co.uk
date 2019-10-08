@@ -18,7 +18,7 @@ import { NotificationComp } from 'components/Notifications';
 import CodeInline from 'gg-components/dist/Code';
 import { SignUpForm } from 'components/Forms';
 import { CookiesOnly } from 'components/Sessions';
-import Redirect from 'gg-components/dist/Redirect';
+import GGRedirect from 'gg-components/dist/Redirect';
 import { LoggedOutOnly, LoadingCover } from 'components/Auth';
 import {
   MONZOME_LINK_REGEX,
@@ -59,7 +59,7 @@ export default class SignUp extends React.Component {
 
     if (signUpSuccess) {
       return (
-        <Redirect
+        <GGRedirect
           className={outerClassNameFinal.join(' ')}
           to="/sign-up/continue?page=1"
         />

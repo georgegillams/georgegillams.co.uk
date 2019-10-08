@@ -9,13 +9,13 @@ import { cssModules } from 'bpk-react-utils';
 
 import Skeleton from './Skeleton';
 
-import {LoadingIndicator} from 'gg-components/dist/LoadingIndicator';
-import {Button} from 'gg-components/dist/Button';
+import { LoadingIndicator } from 'gg-components/dist/LoadingIndicator';
+import { Button } from 'gg-components/dist/Button';
 import { Section, SubSection, TextLink } from 'gg-components/dist/Typography';
-import {CodeInline} from 'gg-components/dist/Code';
+import { CodeInline } from 'gg-components/dist/Code';
 import { SignUpForm } from 'components/Forms';
 import { CookiesOnly } from 'components/Sessions';
-import {Redirect} from 'gg-components/dist/Redirect';
+import { GGRedirect } from 'gg-components/dist/Redirect';
 import { LoggedOutOnly, LoadingCover } from 'gg-components/dist/Auth';
 import {
   MONZOME_LINK_REGEX,
@@ -52,7 +52,7 @@ export default class SignUp extends React.Component {
 
     if (signUpSuccess) {
       return (
-        <Redirect className={outerClassNameFinal.join(' ')} to="/account" />
+        <GGRedirect className={outerClassNameFinal.join(' ')} to="/account" />
       );
     }
 
