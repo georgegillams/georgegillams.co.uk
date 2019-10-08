@@ -7,10 +7,10 @@ import BpkImage, {
 } from 'bpk-component-image';
 import { cssModules } from 'bpk-react-utils';
 
-import {LoadingIndicator} from 'gg-components/dist/LoadingIndicator';
-import {Button} from 'gg-components/dist/Button';
+import { LoadingIndicator } from 'gg-components/dist/LoadingIndicator';
+import { Button } from 'gg-components/dist/Button';
 import { Section, SubSection, TextLink } from 'gg-components/dist/Typography';
-import {CodeInline} from 'gg-components/dist/Code';
+import { CodeInline } from 'gg-components/dist/Code';
 import { CreatePaymentForm } from 'components/Forms';
 import {
   MONZOME_LINK_REGEX,
@@ -48,16 +48,11 @@ export default class PaymentsPage extends React.Component {
         <Section name="Send me money">
           If you want to send me money, you can do so in a number of ways:
           <SubSection name="Bank transfer">
-            A simple bank transfer to
-            <CodeInline>04-00-04</CodeInline>
-            <CodeInline>05339705</CodeInline>
-            would do.
+            A simple bank transfer to <CodeInline>04-00-04</CodeInline>{' '}
+            <CodeInline>05339705</CodeInline> would do.
           </SubSection>
           <SubSection name="Monzo">
-            If you have Monzo, you can transfer money directly using my phone
-            number (
-            <TextLink href="tel:+447867592615">+44 786759 2615</TextLink>)<br />
-            Otherwise,{' '}
+            You can send me money directly on Monzo:{' '}
             <TextLink external href="https://monzo.me/georgestuartgillams">
               pay me via Monzo{' '}
             </TextLink>{' '}
