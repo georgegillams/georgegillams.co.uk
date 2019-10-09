@@ -6,6 +6,7 @@ module.exports = {
     '!app/*/RbGenerated*/*.{js,jsx}',
     '!app/app.js',
     '!app/*/*/Loadable.{js,jsx}',
+    '!build/**/*',
   ],
   coverageThreshold: {
     global: {
