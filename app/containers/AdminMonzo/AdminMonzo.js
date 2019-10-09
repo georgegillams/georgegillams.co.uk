@@ -6,11 +6,11 @@ import { cssModules } from 'bpk-react-utils';
 
 import Skeleton from './Skeleton';
 
-import {LoadingIndicator} from 'gg-components/dist/LoadingIndicator';
+import { LoadingIndicator } from 'gg-components/dist/LoadingIndicator';
 import { ArticleCard, ARTICLE_CARD_LAYOUTS } from 'gg-components/dist/Cards';
-import {Button} from 'gg-components/dist/Button';
+import { Button } from 'gg-components/dist/Button';
 import { Section, SubSection, TextLink } from 'gg-components/dist/Typography';
-import {CodeInline} from 'gg-components/dist/Code';
+import { CodeInline } from 'gg-components/dist/Code';
 import Ticket from 'components/Ticket';
 import {
   DebugObject,
@@ -42,7 +42,7 @@ export default class AdminMonzo extends React.Component {
       className,
       ...rest
     } = this.props;
-    const outerClassNameFinal = [getClassName('pages__container')];
+    const outerClassNameFinal = [];
 
     if (className) {
       outerClassNameFinal.push(className);

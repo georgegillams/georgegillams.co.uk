@@ -7,7 +7,7 @@ import { cssModules } from 'bpk-react-utils';
 import Skeleton from './Skeleton';
 
 import { BlogCard } from 'components/Blogs';
-import {Button} from 'gg-components/dist/Button';
+import { Button } from 'gg-components/dist/Button';
 import { Section } from 'gg-components/dist/Typography';
 import FormBuilder from 'components/Forms';
 import { ID_REGEX } from 'helpers/constants';
@@ -41,7 +41,7 @@ export default class AdminBlogs extends React.Component {
       deleting,
       ...rest
     } = this.props;
-    const outerClassNameFinal = [getClassName('pages__container')];
+    const outerClassNameFinal = [];
 
     if (className) {
       outerClassNameFinal.push(className);

@@ -6,6 +6,7 @@ import { cssModules } from 'bpk-react-utils';
 import STYLES from './style.scss';
 import HelperFunctions from 'helpers/HelperFunctions';
 
+import PageContainer from 'containers/PageContainer';
 import AccountPage from 'containers/Account/Loadable';
 import AdminPage from 'containers/Admin';
 import AdminBlogs from 'containers/AdminBlogs/Loadable';
@@ -79,70 +80,72 @@ const App = () => (
       <NavigationBarWrapper />
       <Authenticator />
       <NotificationCenter />
-      <Switch>
-        {redirects.map(red => (
+      <PageContainer>
+        <Switch>
+          {redirects.map(red => (
+            <Route
+              exact
+              key={red.from}
+              path={red.from}
+              render={() => <GGRedirect to={getFullRedirect(red.to)} />}
+              status={301}
+            />
+          ))}
+
+          <Route exact path="/" component={HomePage} />
+          <Route exact path="/admin" component={AdminPage} />
+          <Route exact path="/photography" component={Photography} />
+          <Route exact path="/work" component={Work} />
+          <Route path="/account" component={AccountPage} />
+          <Route path="/monzoPots" component={MonzoPots} />
+          <Route path="/admin/users" component={AdminUsersPage} />
+          <Route path="/admin/blog/create" component={AdminBlogEdit} />
+          <Route path="/admin/blog/edit/:id" component={AdminBlogEdit} />
+          <Route path="/admin/blog" component={AdminBlogs} />
+          <Route path="/admin/notifications" component={AdminNotifications} />
+          <Route path="/admin/monzo" component={AdminMonzo} />
+          <Route
+            path="/apps/password-character-extractor"
+            component={PasswordCharacterExtractor}
+          />
           <Route
             exact
-            key={red.from}
-            path={red.from}
-            render={() => <GGRedirect to={getFullRedirect(red.to)} />}
-            status={301}
+            path="/blog"
+            component={() => (
+              <BlogsPage
+                linkPrefix="blog"
+                selectedNav="Writing"
+                filter={b => b.showInBlogsList}
+              />
+            )}
           />
-        ))}
-
-        <Route exact path="/" component={HomePage} />
-        <Route exact path="/admin" component={AdminPage} />
-        <Route exact path="/photography" component={Photography} />
-        <Route exact path="/work" component={Work} />
-        <Route path="/account" component={AccountPage} />
-        <Route path="/monzoPots" component={MonzoPots} />
-        <Route path="/admin/users" component={AdminUsersPage} />
-        <Route path="/admin/blog/create" component={AdminBlogEdit} />
-        <Route path="/admin/blog/edit/:id" component={AdminBlogEdit} />
-        <Route path="/admin/blog" component={AdminBlogs} />
-        <Route path="/admin/notifications" component={AdminNotifications} />
-        <Route path="/admin/monzo" component={AdminMonzo} />
-        <Route
-          path="/apps/password-character-extractor"
-          component={PasswordCharacterExtractor}
-        />
-        <Route
-          exact
-          path="/blog"
-          component={() => (
-            <BlogsPage
-              linkPrefix="blog"
-              selectedNav="Writing"
-              filter={b => b.showInBlogsList}
-            />
-          )}
-        />
-        <Route path="/blog/:id" component={BlogViewer} />
-        <Route path="/contact" component={ContactPage} />
-        <Route path="/email-verification" component={EmailVerificationPage} />
-        <Route path="/gts" component={GtsPage} />
-        <Route path="/login" component={LoginPage} />
-        <Route path="/magic-login" component={MagicLoginPage} />
-        <Route path="/payments" component={PaymentsPage} />
-        <Route path="/sign-up" component={SignUpPage} />
-        <Route path="/sitemap" component={SiteMap} />
-        <Route
-          exact
-          path="/travel"
-          component={() => (
-            <BlogsPage
-              linkPrefix="travel"
-              selectedNav="Travel"
-              filter={b => b.showInTravelBlogsList}
-            />
-          )}
-        />
-        <Route path="/travel/:id" component={BlogViewer} />
-        <Route path="/work/bpk-component-demo" component={BpkDemoPage} />
-        <Route path="/ml/grammar" component={GrammarML} />
-        <Route path="/work/degree" component={AboutDegree} />
-        <Route path="" component={NotFoundPage} />
-      </Switch>
+          <Route path="/blog/:id" component={BlogViewer} />
+          <Route path="/contact" component={ContactPage} />
+          <Route path="/email-verification" component={EmailVerificationPage} />
+          <Route path="/gts" component={GtsPage} />
+          <Route path="/login" component={LoginPage} />
+          <Route path="/magic-login" component={MagicLoginPage} />
+          <Route path="/payments" component={PaymentsPage} />
+          <Route path="/sign-up" component={SignUpPage} />
+          <Route path="/sitemap" component={SiteMap} />
+          <Route
+            exact
+            path="/travel"
+            component={() => (
+              <BlogsPage
+                linkPrefix="travel"
+                selectedNav="Travel"
+                filter={b => b.showInTravelBlogsList}
+              />
+            )}
+          />
+          <Route path="/travel/:id" component={BlogViewer} />
+          <Route path="/work/bpk-component-demo" component={BpkDemoPage} />
+          <Route path="/ml/grammar" component={GrammarML} />
+          <Route path="/work/degree" component={AboutDegree} />
+          <Route path="" component={NotFoundPage} />
+        </Switch>
+      </PageContainer>
     </div>
     <Footer />
   </div>

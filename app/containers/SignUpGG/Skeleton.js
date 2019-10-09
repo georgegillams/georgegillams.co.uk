@@ -13,7 +13,7 @@ const getClassName = cssModules(STYLES);
 const SignUpSkeleton = props => {
   const { className, ...rest } = props;
 
-  const outerClassNameFinal = [getClassName('pages__container')];
+  const outerClassNameFinal = [];
 
   if (className) {
     outerClassNameFinal.push(className);

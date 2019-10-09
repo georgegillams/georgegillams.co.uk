@@ -4,7 +4,7 @@ import { Helmet } from 'react-helmet';
 import { cssModules } from 'bpk-react-utils';
 
 import { Section, SubSection } from 'gg-components/dist/Typography';
-import {LoadingIndicator} from 'gg-components/dist/LoadingIndicator';
+import { LoadingIndicator } from 'gg-components/dist/LoadingIndicator';
 import DeprecationNotice from 'containers/DeprecationNotice';
 import STYLES from 'containers/pages.scss';
 
@@ -24,10 +24,7 @@ export default class GeorgeTrackingSystem extends React.Component {
       className,
       ...rest
     } = this.props;
-    const outerClassNameFinal = [
-      getClassName('pages__container'),
-      getClassName('pages__container--centered'),
-    ];
+    const outerClassNameFinal = [getClassName('pages__container--centered')];
 
     if (className) {
       outerClassNameFinal.push(className);

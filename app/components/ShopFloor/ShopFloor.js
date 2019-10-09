@@ -32,12 +32,15 @@ const ShopFloor = props => {
   const unpaidTickets = unpaidTicketCount > 0;
 
   return (
-    <div className={getClassName('pages__container')} {...rest}>
+    <div {...rest}>
       {allTicketsReserved && unpaidTickets && (
         <SubSection anchor={false} name="All tickets are sold or reserved." />
       )}
       {allTicketsReserved && !unpaidTickets && (
-        <SubSection anchor={false} name="All tickets have now been purchased." />
+        <SubSection
+          anchor={false}
+          name="All tickets have now been purchased."
+        />
       )}
       {allTicketsReserved && unpaidTickets && (
         <SubSection

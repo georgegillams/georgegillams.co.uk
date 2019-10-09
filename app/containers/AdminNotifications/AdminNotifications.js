@@ -7,7 +7,7 @@ import { cssModules } from 'bpk-react-utils';
 import Skeleton from './Skeleton';
 
 import { NotificationComp } from 'gg-components/dist/Notifications';
-import {Button} from 'gg-components/dist/Button';
+import { Button } from 'gg-components/dist/Button';
 import { Section } from 'gg-components/dist/Typography';
 import FormBuilder from 'components/Forms';
 import {
@@ -56,7 +56,7 @@ export default class AdminNotifications extends React.Component {
       deleting,
       ...rest
     } = this.props;
-    const outerClassNameFinal = [getClassName('pages__container')];
+    const outerClassNameFinal = [];
 
     if (className) {
       outerClassNameFinal.push(className);

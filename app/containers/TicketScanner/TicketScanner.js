@@ -17,16 +17,20 @@ import { cssModules } from 'bpk-react-utils';
 import Skeleton from './Skeleton';
 import STYLES from './ticket-scanner.scss';
 
-import {LoadingIndicator} from 'gg-components/dist/LoadingIndicator';
-import {Button} from 'gg-components/dist/Button';
+import { LoadingIndicator } from 'gg-components/dist/LoadingIndicator';
+import { Button } from 'gg-components/dist/Button';
 import { SectionSkeleton } from 'gg-components/dist/Skeletons';
 import { Section, SubSection, TextLink } from 'gg-components/dist/Typography';
 import Ticket from 'components/Ticket';
-import {CodeInline} from 'gg-components/dist/Code';
+import { CodeInline } from 'gg-components/dist/Code';
 import { getTimeDifference } from 'helpers/time';
 import { getJsonFromScannedData } from 'helpers/qrCodes';
 import { beautifyTicketType } from 'helpers/ticketing';
-import { DebugObject, LoadingCover, LoggedInOnly } from 'gg-components/dist/Auth';
+import {
+  DebugObject,
+  LoadingCover,
+  LoggedInOnly,
+} from 'gg-components/dist/Auth';
 import {
   SignUpContinueFormAboutYou,
   SignUpContinueFormYourDegree,
@@ -75,7 +79,7 @@ export default class TicketScanner extends React.Component {
       ...rest
     } = this.props; // eslint-disable-line no-shadow
 
-    const outerClassNameFinal = [getClassName('pages__container')];
+    const outerClassNameFinal = [];
 
     if (className) {
       outerClassNameFinal.push(className);

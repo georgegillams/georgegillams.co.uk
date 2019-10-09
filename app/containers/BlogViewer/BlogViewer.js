@@ -6,7 +6,7 @@ import { cssModules } from 'bpk-react-utils';
 import Skeleton from './Skeleton';
 
 import { LoadingCover } from 'gg-components/dist/Auth';
-import {CreativeCommons} from 'gg-components/dist/CreativeCommons';
+import { CreativeCommons } from 'gg-components/dist/CreativeCommons';
 import { BlogRenderer } from 'components/Typography';
 import HelperFunctions from 'helpers/HelperFunctions';
 import Comments from 'containers/Comments';
@@ -34,10 +34,7 @@ export default class BlogViewer extends React.Component {
       className,
       ...rest
     } = this.props;
-    const outerClassNameFinal = [
-      getClassName('pages__container'),
-      getClassName('pages__container--prose'),
-    ];
+    const outerClassNameFinal = [getClassName('pages__container--prose')];
 
     if (className) {
       outerClassNameFinal.push(className);

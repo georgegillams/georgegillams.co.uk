@@ -13,10 +13,7 @@ const getClassName = cssModules(STYLES);
 const ContactSkeleton = props => {
   const { className, ...rest } = props;
 
-  const outerClassNameFinal = [
-    'pages__container',
-    'pages__container--centered',
-  ];
+  const outerClassNameFinal = ['pages__container--centered'];
 
   if (className) {
     outerClassNameFinal.push(className);

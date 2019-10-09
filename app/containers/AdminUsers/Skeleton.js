@@ -7,7 +7,7 @@ const getClassName = c => c;
 const AdminUsersSkeleton = props => {
   const { className, ...rest } = props;
 
-  const outerClassNameFinal = [getClassName('pages__container')];
+  const outerClassNameFinal = [];
 
   if (className) {
     outerClassNameFinal.push(className);

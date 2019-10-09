@@ -10,7 +10,7 @@ import { cssModules } from 'bpk-react-utils';
 import STYLES from '../pages.scss';
 
 import { ArticleCard, ARTICLE_CARD_LAYOUTS } from 'gg-components/dist/Cards';
-import {CreativeCommons} from 'gg-components/dist/CreativeCommons';
+import { CreativeCommons } from 'gg-components/dist/CreativeCommons';
 import { Section, SubSection } from 'gg-components/dist/Typography';
 import GraphicContent, {
   withGraphicContentBehaviour,
@@ -60,9 +60,7 @@ export default class Photography extends Component {
 
     return (
       <div
-        className={`${getClassName('pages__container')} ${getClassName(
-          'pages__container--centered',
-        )}`}
+        className={getClassName('pages__container--centered')}
         style={{ textAlign: 'center' }}
       >
         <Helmet title="Photography" />

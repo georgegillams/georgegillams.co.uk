@@ -16,11 +16,7 @@ export default class HomePage extends React.PureComponent {
     const { user } = this.props;
 
     return (
-      <div
-        className={`${getClassName('pages__container')} ${getClassName(
-          'pages__container--centered',
-        )}`}
-      >
+      <div className={getClassName('pages__container--centered')}>
         <Helmet title="Home" />
         <AboutPage />
         <div className={getClassName('pages__compact-card-container')}>
