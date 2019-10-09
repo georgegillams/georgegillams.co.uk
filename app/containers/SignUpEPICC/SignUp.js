@@ -51,7 +51,7 @@ export default class SignUp extends React.Component {
       className,
       ...rest
     } = this.props; // eslint-disable-line no-shadow
-    const outerClassNameFinal = [getClassName('pages__container')];
+    const outerClassNameFinal = [];
 
     if (className) {
       outerClassNameFinal.push(className);

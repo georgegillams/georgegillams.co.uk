@@ -98,7 +98,7 @@ export default class SignUpContinue extends React.Component {
       window.location = '/pay';
     }
 
-    const outerClassNameFinal = [getClassName('pages__container')];
+    const outerClassNameFinal = [];
 
     if (className) {
       outerClassNameFinal.push(className);

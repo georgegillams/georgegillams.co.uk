@@ -36,7 +36,7 @@ export default class PaymentsPage extends React.Component {
       className,
       ...rest
     } = this.props;
-    const outerClassNameFinal = [getClassName('pages__container')];
+    const outerClassNameFinal = [];
 
     if (className) {
       outerClassNameFinal.push(className);

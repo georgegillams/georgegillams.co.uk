@@ -4,7 +4,7 @@ import { Helmet } from 'react-helmet';
 import { cssModules } from 'bpk-react-utils';
 
 import { SubSection, TextLink } from 'gg-components/dist/Typography';
-import {LoadingIndicator} from 'gg-components/dist/LoadingIndicator';
+import { LoadingIndicator } from 'gg-components/dist/LoadingIndicator';
 import { NON_EMOJI_REGEX } from 'helpers/constants';
 import redirects from 'helpers/redirects';
 import STYLES from 'containers/pages.scss';
@@ -18,10 +18,7 @@ export default class SiteMap extends React.Component {
 
   render() {
     const { loading, error, blogs, loadBlogs, className, ...rest } = this.props;
-    const outerClassNameFinal = [
-      getClassName('pages__container'),
-      getClassName('pages__container--centered'),
-    ];
+    const outerClassNameFinal = [getClassName('pages__container--centered')];
 
     if (className) {
       outerClassNameFinal.push(className);

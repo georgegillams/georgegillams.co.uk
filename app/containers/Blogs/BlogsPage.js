@@ -11,7 +11,7 @@ import BlogsNav from './BlogsNav';
 
 import { DebugObject, LoadingCover } from 'gg-components/dist/Auth';
 import BlogsList from 'components/Blogs';
-import {CreativeCommons} from 'gg-components/dist/CreativeCommons';
+import { CreativeCommons } from 'gg-components/dist/CreativeCommons';
 import STYLES from 'containers/pages.scss';
 
 const getClassName = cssModules(STYLES);
@@ -54,7 +54,7 @@ export default class BlogsPage extends React.Component {
       className,
       ...rest
     } = this.props;
-    const outerClassNameFinal = [getClassName('pages__container')];
+    const outerClassNameFinal = [];
 
     if (className) {
       outerClassNameFinal.push(className);

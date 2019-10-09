@@ -13,10 +13,10 @@ export default class HomePage extends React.PureComponent {
   componentDidMount() {}
 
   render() {
-    const { user } = this.props;
+    const { user, ...rest } = this.props;
 
     return (
-      <div className={getClassName('pages__container')}>
+      <div {...rest}>
         <div className={getClassName('pages__compact-card-container')}>
           <Helmet title="Home" />
           {Date.now() > new Date(2019, 2, 22, 1, 0, 0).getTime() && (

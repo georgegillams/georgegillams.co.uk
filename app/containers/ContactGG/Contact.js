@@ -29,12 +29,7 @@ const getClassName = cssModules({ ...PAGES_STYLES, ...STYLES });
 export default class Contact extends Component {
   render() {
     return (
-      <div
-        className={[
-          getClassName('pages__container'),
-          getClassName('pages__container--centered'),
-        ].join(' ')}
-      >
+      <div className={[getClassName('pages__container--centered')].join(' ')}>
         <Helmet title="Contact" />
         <Section name="Get in touch">
           <div className={getClassName('pages__full-width-container')}>

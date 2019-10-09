@@ -8,7 +8,7 @@ import { cssModules } from 'bpk-react-utils';
 
 import STYLES from '../pages.scss';
 
-import {Button} from 'gg-components/dist/Button';
+import { Button } from 'gg-components/dist/Button';
 import { Section, SubSection, TextLink } from 'gg-components/dist/Typography';
 
 const getClassName = cssModules(STYLES); // REGEX_REPLACED
@@ -23,11 +23,7 @@ export default class Work extends Component {
 
   render() {
     return (
-      <div
-        className={['pages__container', 'pages__container--prose']
-          .map(getClassName)
-          .join(' ')}
-      >
+      <div className={getClassName('pages__container--prose')}>
         <Helmet title="Work" />
         <Section name="My Work">
           <SubSection name="Software Engineering Masters">
@@ -35,9 +31,7 @@ export default class Work extends Component {
             University of Southampton.
             <br />
             <br />
-            <Button href="/work/degree">
-              Information about my degree →
-            </Button>
+            <Button href="/work/degree">Information about my degree →</Button>
           </SubSection>
           <SubSection name="Work">
             I started my Software Engineering career at{' '}

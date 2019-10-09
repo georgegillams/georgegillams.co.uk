@@ -58,7 +58,7 @@ export default class TicketStatus extends React.Component {
       ...rest
     } = this.props; // eslint-disable-line no-shadow
 
-    const outerClassNameFinal = [getClassName('pages__container')];
+    const outerClassNameFinal = [];
 
     if (className) {
       outerClassNameFinal.push(className);

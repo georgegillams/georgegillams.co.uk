@@ -15,7 +15,7 @@ const getClassName = cssModules(STYLES);
 const LoginFormSkeleton = props => {
   const { className, ...rest } = props; // eslint-disable-line no-shadow
 
-  const outerClassNameFinal = [getClassName('pages__container')];
+  const outerClassNameFinal = [];
 
   if (className) {
     outerClassNameFinal.push(className);

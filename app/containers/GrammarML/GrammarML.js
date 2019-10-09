@@ -6,7 +6,7 @@ import { cssModules } from 'bpk-react-utils';
 
 import Skeleton from './Skeleton';
 
-import {Button} from 'gg-components/dist/Button';
+import { Button } from 'gg-components/dist/Button';
 import { Section, SubSection } from 'gg-components/dist/Typography';
 import FormBuilder from 'components/Forms';
 import { ANYTHING_REGEX } from 'helpers/constants';
@@ -78,7 +78,7 @@ export default class GrammarML extends React.Component {
       testPerformanceError,
       ...rest
     } = this.props;
-    const outerClassNameFinal = [getClassName('pages__container')];
+    const outerClassNameFinal = [];
 
     if (className) {
       outerClassNameFinal.push(className);
