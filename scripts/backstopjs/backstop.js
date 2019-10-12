@@ -11,7 +11,7 @@ scenarioData.scenarioIds.forEach(sI => {
     label: sI,
     url: `${BASE_URL}${sI}`,
     hideSelectors: scenarioData.globallyHiddenSelectors,
-    delay: 1000,
+    delay: 1500,
   });
 });
 
