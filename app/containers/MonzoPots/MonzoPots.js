@@ -12,8 +12,8 @@ import { associate } from 'helpers/objects';
 import Skeleton from './Skeleton';
 
 import HelperFunctions from 'helpers/HelperFunctions';
-import {MoneyPot} from 'gg-components/dist/MoneyPot';
-import {Button} from 'gg-components/dist/Button';
+import { MoneyPot } from 'gg-components/dist/MoneyPot';
+import { Button } from 'gg-components/dist/Button';
 import { Section, SubSection } from 'gg-components/dist/Typography';
 import { LoadingCover } from 'gg-components/dist/Auth';
 import STYLES from 'containers/pages.scss';
@@ -86,7 +86,7 @@ export default class MonzoPots extends React.Component {
                   this.loadPotData(password);
                 }}
               >
-                Reload
+                Refresh
               </Button>
             )}
             <br />

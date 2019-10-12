@@ -8,6 +8,7 @@ import BpkImage, {
 import BpkInput, { INPUT_TYPES, CLEAR_BUTTON_MODES } from 'bpk-component-input';
 import { cssModules } from 'bpk-react-utils';
 import { associate } from 'helpers/objects';
+import FormBuilder from 'components/Forms';
 
 import Skeleton from './Skeleton';
 
@@ -21,13 +22,28 @@ import STYLES from 'containers/pages.scss';
 const getClassName = cssModules(STYLES); // REGEX_REPLACED
 
 export default class Support extends React.Component {
+  constructor(props) {
+    super(props);
+
+    this.state = {};
+  }
+
   componentDidMount() {
-    console.log(`calling loadLinks`);
     this.props.loadLinks();
+    this.interval = setInterval(() => {
+      // TODO this.props.loadLinks();
+    }, 3000);
+  }
+
+  componentWillUnmount() {
+    if (this.interval) {
+      clearInterval(this.interval);
+    }
   }
 
   render() {
     const {
+      user,
       links,
       loadLinks,
       loadingLinks,
@@ -45,9 +61,6 @@ export default class Support extends React.Component {
       ...rest
     } = this.props;
 
-    console.log(`loadLinksSuccess`, loadLinksSuccess);
-    console.log(`loadLinksError`, loadLinksError);
-    console.log(`links`, links);
     const outerClassNameFinal = [];
 
     if (className) {
@@ -56,6 +69,7 @@ export default class Support extends React.Component {
 
     const noSupport = loadLinksSuccess && (links && links.length === 0);
     const showLinks = links && links.length > 0;
+    const isAdmin = user && user.admin;
 
     return (
       <div className={outerClassNameFinal.join(' ')} {...rest}>
@@ -68,7 +82,7 @@ export default class Support extends React.Component {
               }}
               disabled={loadingLinks}
             >
-              Reload
+              Refresh
             </Button>
             <br />
             <br />
@@ -87,8 +101,39 @@ export default class Support extends React.Component {
                       {l.description}
                     </Fragment>
                   )}
+                  {isAdmin && (
+                    <Fragment>
+                      <br />
+                      <Button
+                        destructive
+                        onClick={() => {
+                          deleteLink(l);
+                        }}
+                      >
+                        Delete
+                      </Button>
+                    </Fragment>
+                  )}
                 </SubSection>
               ))}
+            {isAdmin && (
+              <FormBuilder
+                disabled={addLinkLoading}
+                entity={this.state.newLink || {}}
+                submitLabel="Add link"
+                formFields={[
+                  { id: 'name', name: 'Name', show: true },
+                  { id: 'description', name: 'Description', show: true },
+                  { id: 'url', name: 'URL', show: true },
+                ]}
+                onDataChanged={newLink => {
+                  this.setState({ newLink });
+                }}
+                onSubmit={() => {
+                  addLink(this.state.newLink);
+                }}
+              />
+            )}
           </Section>
         </Section>
       </div>
