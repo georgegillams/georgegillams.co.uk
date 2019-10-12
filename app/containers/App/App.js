@@ -22,6 +22,7 @@ import ContactPage from 'containers/ContactGG/Loadable';
 import EmailVerificationPage from 'containers/EmailVerification/Loadable';
 import { Footer } from 'gg-components/dist/Footer';
 import GtsPage from 'containers/GeorgeTrackingSystem/Loadable';
+import SupportPage from 'containers/Support/Loadable';
 import HomePage from 'containers/HomePageGG/Loadable';
 import LoginPage from 'containers/Login/Loadable';
 import MagicLoginPage from 'containers/MagicLogin/Loadable';
@@ -97,6 +98,7 @@ const App = () => (
           <Route exact path="/photography" component={Photography} />
           <Route exact path="/work" component={Work} />
           <Route path="/account" component={AccountPage} />
+          <Route path="/support" component={SupportPage} />
           <Route path="/monzoPots" component={MonzoPots} />
           <Route path="/admin/users" component={AdminUsersPage} />
           <Route path="/admin/blog/create" component={AdminBlogEdit} />
