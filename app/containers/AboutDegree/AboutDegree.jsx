@@ -69,7 +69,10 @@ class Degree extends React.Component {
           />
           <br />
           <FadingLazyLoadedImage
-            className={getClassName('pages__image')}
+            className={getClassName(
+              'pages__image',
+              'pages__image--dark-invert',
+            )}
             style={{ maxWidth: '20rem' }}
             altText="My degree"
             width={2000}
