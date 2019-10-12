@@ -10,19 +10,31 @@ This is the code for my personal website. The project uses React, Redux, and has
 
 I use my site to experiment with things, share stuff I've figured out, and allow people to reach-out to me. So if you're interested in anything I do, [get in touch](https://www.georgegillams.co.uk/contact)!
 
-## Running
-Ensure a redis-instance is running.
+## Developing
+
+### Prerequisites
+
+Ensure redis is installed (`brew install redis`).
+
+### Running locally
 
 ```
 npm i
 npm run dev
 ```
 
-Note that a prebuild script is used to transpile some dependencies. It will therefore take longer the first time you build it.
-
 `npm run dev` will set all necessary environment variables needed to run the application.
 
 The front-end app is server-side rendered with React and interacts with the API via Redux middleware.
+
+### Testing
+
+If components have changed, snapshot tests may need to be updated. Backstop js visual regression tests may also need to be updated.
+
+To update jest snapshots: `npx jest -u`.
+To update backstopJS snapshots: `npm run build && npm run backstopjs:test`.
+
+Any changes resulting from these commands should be verified and checked in.
 
 ## API
 
