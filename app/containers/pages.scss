@@ -125,6 +125,12 @@
     @include bpk-breakpoint-tablet {
       width: 90%;
     }
+
+    &--dark-invert {
+      @media (prefers-color-scheme: dark) {
+        filter: contrast(0) brightness(20);
+      }
+    }
   }
 
   &__banner {
