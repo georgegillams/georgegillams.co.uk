@@ -1,6 +1,7 @@
 import { connect } from 'react-redux';
 import { compose } from 'redux';
 import { createStructuredSelector } from 'reselect';
+import actionMeta from './actionMeta';
 
 import selectors from './selectors';
 import actions from './actions';
@@ -24,8 +25,8 @@ const withConnect = connect(
   mapDispatchToProps,
 );
 
-const withReducer = injectReducer({ key: 'support', reducer });
-const withSaga = injectSaga({ key: 'support', saga });
+const withReducer = injectReducer({ key: actionMeta.key, reducer });
+const withSaga = injectSaga({ key: actionMeta.key, saga });
 
 export default compose(
   withReducer,
