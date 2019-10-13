@@ -1,4 +1,5 @@
 import reducer from './reducer';
+import actionMeta from './actionMeta';
 
 import createSelectors from 'helpers/redux/selectors';
 import {
@@ -7,6 +8,6 @@ import {
 } from 'helpers/redux/reducers';
 
 module.exports = createSelectors(
-  'support',
+  actionMeta.key,
   inferPropertiesFromInitialState(initialState(reducer)),
 );

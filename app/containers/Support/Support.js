@@ -22,6 +22,7 @@ const getClassName = cssModules(STYLES); // REGEX_REPLACED
 
 export default class Support extends React.Component {
   componentDidMount() {
+    console.log(`calling loadLinks`);
     this.props.loadLinks();
   }
 
@@ -35,7 +36,7 @@ export default class Support extends React.Component {
       addLink,
       addLinkLoading,
       addLinkSuccess,
-      addLinkError,
+      addLinkErrored,
       deleteLink,
       deleteLinkLoading,
       deleteLinkSuccess,
@@ -45,6 +46,7 @@ export default class Support extends React.Component {
     } = this.props;
 
     console.log(`loadLinksSuccess`, loadLinksSuccess);
+    console.log(`loadLinksError`, loadLinksError);
     console.log(`links`, links);
     const outerClassNameFinal = [];
 

@@ -1,11 +1,11 @@
 import { LOAD_LINKS, ADD_LINK, DELETE_LINK } from './constants';
 import {
-  loadLinksSuccess,
-  loadLinksError,
-  addLinkSuccess,
-  addLinkError,
-  deleteLinkSuccess,
-  deleteLinkError,
+  loadLinksRegisterSuccess,
+  loadLinksRegisterError,
+  addLinkRegisterSuccess,
+  addLinkRegisterError,
+  deleteLinkRegisterSuccess,
+  deleteLinkRegisterError,
 } from './actions';
 import { makeSelectLinks, makeSelectLinkId } from './selectors';
 
@@ -36,17 +36,17 @@ export function* doLoadLinks() {
     } else if (linksResult.warning) {
       yield put(pushMessage({ type: 'warn', message: linksResult.warning }));
     } else {
-      yield put(loadLinksSuccess(linksResult));
+      yield put(loadLinksRegisterSuccess(linksResult));
       yield put(pushMessage(linkLoadSuccessMessage));
     }
   } catch (err) {
-    yield put(loadLinksError(err));
+    yield put(loadLinksRegisterError(err));
     yield put(pushMessage(COMMUNICATION_ERROR_MESSAGE));
   }
 }
 
 export default function* saga() {
   yield takeLatest(LOAD_LINKS, doLoadLinks);
-  //   yield takeLatest(ADD_LINK, doAddLink);
+  // yield takeLatest(ADD_LINK, doAddLink);
   //   yield takeLatest(DELETE_LINK, doDeleteLink);
 }
