@@ -55,15 +55,29 @@ const actionMeta = {
     },
     {
       DELETE_LINK: 'tbd',
-      attributes: ['linkId'],
+      attributes: ['linkToDelete'],
+      stateMutations: {
+        linkToDelete: action => action.linkToDelete,
+        deleteLinkLoading: true,
+        deleteLinkError: null,
+      },
     },
     {
       DELETE_LINK_REGISTER_SUCCESS: 'tbd',
       attributes: [],
+      stateMutations: {
+        deleteLinkLoading: false,
+        deleteLinkSuccess: true,
+      },
     },
     {
       DELETE_LINK_REGISTER_ERROR: 'tbd',
       attributes: ['deleteLinkError'],
+      stateMutations: {
+        delteLinkError: action => action.addLinkError,
+        delteLinkLoading: false,
+        delteLinkSuccess: false,
+      },
     },
   ],
 };

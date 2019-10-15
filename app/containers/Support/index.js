@@ -4,6 +4,7 @@ import { createStructuredSelector } from 'reselect';
 import actionMeta from './actionMeta';
 
 import selectors from './selectors';
+import appSelectors from 'containers/App/selectors';
 import actions from './actions';
 import reducer from './reducer';
 import saga from './saga';
@@ -17,7 +18,7 @@ import injectReducer from 'utils/injectReducer';
 const mapDispatchToProps = dispatch => mapActions(dispatch, { ...actions });
 
 const mapStateToProps = createStructuredSelector(
-  mapSelectors({ ...selectors }),
+  mapSelectors({ ...selectors, ...appSelectors }),
 );
 
 const withConnect = connect(
