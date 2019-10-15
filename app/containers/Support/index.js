@@ -3,14 +3,11 @@ import { compose } from 'redux';
 import { createStructuredSelector } from 'reselect';
 import actionMeta from './actionMeta';
 
-import selectors from './selectors';
+import { selectors, actions, reducer } from './redux-definitions';
+import { mapSelectors, mapActions } from 'helpers/redux';
 import appSelectors from 'containers/App/selectors';
-import actions from './actions';
-import reducer from './reducer';
 import saga from './saga';
 import Support from './Support';
-import { mapSelectors } from 'helpers/redux/selectors';
-import { mapActions } from 'helpers/redux/actions';
 
 import injectSaga from 'utils/injectSaga';
 import injectReducer from 'utils/injectReducer';
