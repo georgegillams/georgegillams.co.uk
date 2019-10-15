@@ -1,5 +1,12 @@
-import { LOAD_LINKS, ADD_LINK, DELETE_LINK } from './constants';
-import {
+import { actions, selectors, constants } from './redux-definitions';
+
+import { call, put, select, takeLatest } from 'redux-saga/effects';
+import { API_ENDPOINT, COMMUNICATION_ERROR_MESSAGE } from 'helpers/constants';
+import { pushMessage } from 'containers/RequestStatusWrapper/actions';
+import request from 'utils/request';
+
+const { LOAD_LINKS, ADD_LINK, DELETE_LINK } = constants;
+const {
   loadLinks,
   loadLinksRegisterSuccess,
   loadLinksRegisterError,
@@ -7,17 +14,12 @@ import {
   addLinkRegisterError,
   deleteLinkRegisterSuccess,
   deleteLinkRegisterError,
-} from './actions';
-import {
+} = actions;
+const {
   makeSelectLinks,
   makeSelectLinkDefinition,
   makeSelectLinkToDelete,
-} from './selectors';
-
-import { call, put, select, takeLatest } from 'redux-saga/effects';
-import { API_ENDPOINT, COMMUNICATION_ERROR_MESSAGE } from 'helpers/constants';
-import { pushMessage } from 'containers/RequestStatusWrapper/actions';
-import request from 'utils/request';
+} = selectors;
 
 const linkAddSuccessMessage = {
   type: 'success',

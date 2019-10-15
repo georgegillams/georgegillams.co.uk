@@ -23,7 +23,6 @@ function appReducer(state = initialState, action) {
     case LOAD_BALANCE:
       return state.set('loadingBalance', true).set('loadBalanceError', false);
     case LOAD_BALANCE_SUCCESS:
-      console.log(`red, loadB_SUCCESS`);
       return state
         .set('loadingBalance', false)
         .set('loadBalanceSuccess', true)
