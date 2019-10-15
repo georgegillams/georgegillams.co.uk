@@ -19,11 +19,6 @@ import { API_ENDPOINT, COMMUNICATION_ERROR_MESSAGE } from 'helpers/constants';
 import { pushMessage } from 'containers/RequestStatusWrapper/actions';
 import request from 'utils/request';
 
-const linkLoadSuccessMessage = {
-  type: 'success',
-  message: 'Links loaded.',
-};
-
 const linkAddSuccessMessage = {
   type: 'success',
   message: 'Link added.',
@@ -52,7 +47,6 @@ export function* doLoadLinks() {
       yield put(pushMessage({ type: 'warn', message: linksResult.warning }));
     } else {
       yield put(loadLinksRegisterSuccess(linksResult));
-      yield put(pushMessage(linkLoadSuccessMessage));
     }
   } catch (err) {
     yield put(loadLinksRegisterError(err));

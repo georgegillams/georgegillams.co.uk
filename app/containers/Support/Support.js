@@ -31,7 +31,7 @@ export default class Support extends React.Component {
   componentDidMount() {
     this.props.loadLinks();
     this.interval = setInterval(() => {
-      // TODO this.props.loadLinks();
+      this.props.loadLinks();
     }, 3000);
   }
 
@@ -80,7 +80,6 @@ export default class Support extends React.Component {
               onClick={() => {
                 loadLinks();
               }}
-              disabled={loadingLinks}
             >
               Refresh
             </Button>
