@@ -49,7 +49,7 @@ const inferPropertiesFromInitialState = s => {
   return inferPropertiesFromInitialStateRecursive(s._root);
 };
 
-const initialState = reducer => reducer(undefined, {});
+const getInitialState = reducer => reducer(undefined, {});
 
 // TODO Write tests for this:
 const createInitialState = actionDefinitions => {
@@ -101,7 +101,7 @@ const createAppReducer = (actionDefinitions, constants, initialState) => {
 
 export {
   inferPropertiesFromInitialState,
-  initialState,
+  getInitialState,
   createInitialState,
   createAppReducer,
 };
