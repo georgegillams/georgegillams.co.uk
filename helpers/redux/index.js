@@ -16,6 +16,7 @@ import {
   createInitialState,
   createAppReducer,
 } from './reducers';
+import { composeContainer } from './containers';
 
 import { createSelectors, mapSelectors } from './selectors';
 
@@ -54,5 +55,5 @@ const createReduxComponents = actionMeta => {
   };
 };
 
-export { createReduxComponents, mapSelectors, mapActions };
+export { createReduxComponents, mapSelectors, mapActions, composeContainer };
 export default createReduxComponents;
