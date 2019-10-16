@@ -7,7 +7,7 @@ import { cssModules } from 'bpk-react-utils';
 
 import STYLES from './forms.scss';
 
-import {Button} from 'gg-components/dist/Button';
+import { Button } from 'gg-components/dist/Button';
 import { TextLink } from 'gg-components/dist/Typography';
 import { EMAIL_REGEX, PASSWORD_REGEX } from 'helpers/constants';
 import { formValueChanged } from 'helpers/objects';
@@ -128,6 +128,7 @@ class FormBuilder extends React.Component {
                   name={formField.name}
                   value={entity[formField.id]}
                   valid={validity[index]}
+                  type={formField.type === 'password' ? 'password' : null}
                   onChange={event => {
                     formValueChanged(
                       entity,

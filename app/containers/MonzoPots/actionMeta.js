@@ -55,6 +55,32 @@ const actionMeta = {
         loadTransactionsError: action => action.loadTransactionsError,
       },
     },
+    {
+      ADD_KEY: 'tbd',
+      attributes: ['key'],
+      stateMutations: {
+        key: action => action.key,
+        addKeyLoading: true,
+        addKeyError: null,
+      },
+    },
+    {
+      ADD_KEY_REGISTER_SUCCESS: 'tbd',
+      attributes: [],
+      stateMutations: {
+        addKeyLoading: false,
+        addKeySuccess: true,
+      },
+    },
+    {
+      ADD_KEY_REGISTER_ERROR: 'tbd',
+      attributes: ['setKeyError'],
+      stateMutations: {
+        addKeyError: action => action.addKeyError,
+        addKeyLoading: false,
+        addKeySuccess: false,
+      },
+    },
   ],
 };
 

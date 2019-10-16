@@ -16,11 +16,18 @@ import { MoneyPot } from 'gg-components/dist/MoneyPot';
 import { Button } from 'gg-components/dist/Button';
 import { Section, SubSection } from 'gg-components/dist/Typography';
 import { LoadingCover } from 'gg-components/dist/Auth';
+import FormBuilder from 'components/Forms';
 import STYLES from 'containers/pages.scss';
 
 const getClassName = cssModules(STYLES); // REGEX_REPLACED
 
 export default class MonzoPots extends React.Component {
+  constructor(props) {
+    super(props);
+
+    this.state = {};
+  }
+
   loadPotData = password => {
     this.props.loadPots(password);
     this.props.loadTransactions(password);
@@ -34,15 +41,22 @@ export default class MonzoPots extends React.Component {
       password,
       pots,
       loadingPots,
-      loadingTransactions,
       loadPotsSuccess,
       loadPotsError,
       transactions,
+      loadingTransactions,
       loadTransactionsSuccess,
       loadTransactionsError,
+      addKey,
+      addKeyLoading,
+      addKeySuccess,
+      addKeyError,
       className,
       ...rest
     } = this.props;
+
+    const isAdmin = user && user.admin;
+
     const outerClassNameFinal = [];
 
     if (className) {
@@ -126,6 +140,22 @@ export default class MonzoPots extends React.Component {
                   <br />
                 </Fragment>
               ))}
+            {isAdmin && (
+              <FormBuilder
+                disabled={addKeyLoading}
+                entity={this.state.keyData || {}}
+                submitLabel="Set key"
+                formFields={[
+                  { id: 'key', name: 'Key', show: true, type: 'password' },
+                ]}
+                onDataChanged={keyData => {
+                  this.setState({ keyData });
+                }}
+                onSubmit={() => {
+                  addKey(this.state.keyData.key);
+                }}
+              />
+            )}
           </Section>
         </Section>
       </div>

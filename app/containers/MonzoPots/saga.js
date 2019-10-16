@@ -10,19 +10,32 @@ const {
   loadPotsRegisterError,
   loadTransactionsRegisterSuccess,
   loadTransactionsRegisterError,
+  addKeyRegisterSuccess,
+  addKeyRegisterError,
 } = actions;
-const { LOAD_POTS, LOAD_TRANSACTIONS } = constants;
-const { makeSelectPassword } = selectors;
+const { LOAD_POTS, LOAD_TRANSACTIONS, ADD_KEY } = constants;
+const { makeSelectPassword, makeSelectKey } = selectors;
 
 const monzoLoadSuccessMessage = {
   type: 'success',
   message: 'Monzo pot data loaded.',
 };
+const setKeySuccessMessage = {
+  type: 'success',
+  message: 'Key set!',
+};
+const setKeyErrorMessage = {
+  type: 'error',
+  message: 'Could not set key.',
+};
 
 export function* doLoadTransactions() {
   const password = yield select(makeSelectPassword());
-  console.log(`password`, password);
   const requestURL = `${API_ENDPOINT}/monzo/loadLatestTransactions`;
+
+  if (password.length < 5) {
+    return;
+  }
 
   try {
     const monzoResult = yield call(request, requestURL, {
@@ -48,8 +61,11 @@ export function* doLoadTransactions() {
 
 export function* doLoadPots() {
   const password = yield select(makeSelectPassword());
-  console.log(`password`, password);
   const requestURL = `${API_ENDPOINT}/monzo/loadPots`;
+
+  if (password.length < 5) {
+    return;
+  }
 
   try {
     const monzoResult = yield call(request, requestURL, {
@@ -74,7 +90,32 @@ export function* doLoadPots() {
   }
 }
 
+export function* doAddKey() {
+  const keyValue = yield select(makeSelectKey());
+  const magicLinkUrl = `${API_ENDPOINT}/monzo/setKey`;
+
+  try {
+    const setKeyResult = yield call(request, magicLinkUrl, {
+      method: 'POST',
+      body: JSON.stringify({ key: keyValue }),
+      headers: {
+        'Content-Type': 'application/json',
+      },
+    });
+    if (setKeyResult.error) {
+      yield put(pushMessage(setKeyErrorMessage));
+      yield put(addKeyRegisterError(setKeyResult));
+    } else {
+      yield put(pushMessage(setKeySuccessMessage));
+      yield put(addKeyRegisterSuccess(setKeyResult));
+    }
+  } catch (err) {
+    yield put(pushMessage(COMMUNICATION_ERROR_MESSAGE));
+  }
+}
+
 export default function* saga() {
   yield takeLatest(LOAD_POTS, doLoadPots);
   yield takeLatest(LOAD_TRANSACTIONS, doLoadTransactions);
+  yield takeLatest(ADD_KEY, doAddKey);
 }
