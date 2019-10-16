@@ -22,23 +22,24 @@ const getClassName = cssModules(STYLES); // REGEX_REPLACED
 
 export default class MonzoPots extends React.Component {
   loadPotData = password => {
-    this.props.loadMonzo(password);
+    this.props.loadPots(password);
     this.props.loadTransactions(password);
   };
 
   render() {
     const {
-      loadMonzo,
+      user,
+      loadPots,
       loadTransactions,
       password,
-      monzoPots,
-      loading,
-      transactionsLoading,
-      success,
+      pots,
+      loadingPots,
+      loadingTransactions,
+      loadPotsSuccess,
+      loadPotsError,
       transactions,
       loadTransactionsSuccess,
       loadTransactionsError,
-      error,
       className,
       ...rest
     } = this.props;
@@ -48,10 +49,10 @@ export default class MonzoPots extends React.Component {
       outerClassNameFinal.push(className);
     }
 
-    let monzoPotDisplayData = monzoPots;
-    if (monzoPots && monzoPots.map && transactions && transactions.map) {
+    let monzoPotDisplayData = pots;
+    if (pots && pots.map && transactions && transactions.map) {
       monzoPotDisplayData = associate(
-        monzoPots,
+        pots,
         transactions,
         'name',
         'name',
@@ -70,7 +71,7 @@ export default class MonzoPots extends React.Component {
                 className={getClassName('pages__component')}
                 type={INPUT_TYPES.password}
                 name="password"
-                value={password}
+                value={password || ''}
                 onChange={event => {
                   this.loadPotData(event.target.value);
                 }}
@@ -135,7 +136,7 @@ export default class MonzoPots extends React.Component {
 MonzoPots.propTypes = {
   user: PropTypes.object,
   loading: PropTypes.bool,
-  error: PropTypes.oneOfType([PropTypes.object, PropTypes.bool]),
+  loadPotsError: PropTypes.oneOfType([PropTypes.object, PropTypes.bool]),
   blog: PropTypes.object,
   filter: PropTypes.func,
   linkPrefix: PropTypes.string,
@@ -146,7 +147,7 @@ MonzoPots.propTypes = {
 MonzoPots.defaultProps = {
   user: null,
   loading: false,
-  error: null,
+  loadPotsError: null,
   blog: null,
   filter: null,
   linkPrefix: '',
