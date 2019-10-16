@@ -14,7 +14,6 @@ import AdminNotifications from 'containers/AdminNotifications/Loadable';
 import GrammarML from 'containers/GrammarML/Loadable';
 import AdminBlogEdit from 'containers/AdminBlogEdit/Loadable';
 import AdminUsersPage from 'containers/AdminUsers/Loadable';
-import AdminMonzo from 'containers/AdminMonzo/Loadable';
 import Authenticator from 'containers/Authenticator';
 import BlogViewer from 'containers/BlogViewer/Loadable';
 import BlogsPage from 'containers/Blogs/Loadable';
@@ -105,7 +104,6 @@ const App = () => (
           <Route path="/admin/blog/edit/:id" component={AdminBlogEdit} />
           <Route path="/admin/blog" component={AdminBlogs} />
           <Route path="/admin/notifications" component={AdminNotifications} />
-          <Route path="/admin/monzo" component={AdminMonzo} />
           <Route
             path="/apps/password-character-extractor"
             component={PasswordCharacterExtractor}

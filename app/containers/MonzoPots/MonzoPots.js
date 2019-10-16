@@ -16,42 +16,57 @@ import { MoneyPot } from 'gg-components/dist/MoneyPot';
 import { Button } from 'gg-components/dist/Button';
 import { Section, SubSection } from 'gg-components/dist/Typography';
 import { LoadingCover } from 'gg-components/dist/Auth';
+import FormBuilder from 'components/Forms';
 import STYLES from 'containers/pages.scss';
 
 const getClassName = cssModules(STYLES); // REGEX_REPLACED
 
 export default class MonzoPots extends React.Component {
+  constructor(props) {
+    super(props);
+
+    this.state = {};
+  }
+
   loadPotData = password => {
-    this.props.loadMonzo(password);
+    this.props.loadPots(password);
     this.props.loadTransactions(password);
   };
 
   render() {
     const {
-      loadMonzo,
+      user,
+      loadPots,
       loadTransactions,
       password,
-      monzoPots,
-      loading,
-      transactionsLoading,
-      success,
+      pots,
+      loadingPots,
+      loadPotsSuccess,
+      loadPotsError,
       transactions,
+      loadingTransactions,
       loadTransactionsSuccess,
       loadTransactionsError,
-      error,
+      addKey,
+      addKeyLoading,
+      addKeySuccess,
+      addKeyError,
       className,
       ...rest
     } = this.props;
+
+    const isAdmin = user && user.admin;
+
     const outerClassNameFinal = [];
 
     if (className) {
       outerClassNameFinal.push(className);
     }
 
-    let monzoPotDisplayData = monzoPots;
-    if (monzoPots && monzoPots.map && transactions && transactions.map) {
+    let monzoPotDisplayData = pots;
+    if (pots && pots.map && transactions && transactions.map) {
       monzoPotDisplayData = associate(
-        monzoPots,
+        pots,
         transactions,
         'name',
         'name',
@@ -70,7 +85,7 @@ export default class MonzoPots extends React.Component {
                 className={getClassName('pages__component')}
                 type={INPUT_TYPES.password}
                 name="password"
-                value={password}
+                value={password || ''}
                 onChange={event => {
                   this.loadPotData(event.target.value);
                 }}
@@ -125,6 +140,22 @@ export default class MonzoPots extends React.Component {
                   <br />
                 </Fragment>
               ))}
+            {isAdmin && (
+              <FormBuilder
+                disabled={addKeyLoading}
+                entity={this.state.keyData || {}}
+                submitLabel="Set key"
+                formFields={[
+                  { id: 'key', name: 'Key', show: true, type: 'password' },
+                ]}
+                onDataChanged={keyData => {
+                  this.setState({ keyData });
+                }}
+                onSubmit={() => {
+                  addKey(this.state.keyData.key);
+                }}
+              />
+            )}
           </Section>
         </Section>
       </div>
@@ -135,7 +166,7 @@ export default class MonzoPots extends React.Component {
 MonzoPots.propTypes = {
   user: PropTypes.object,
   loading: PropTypes.bool,
-  error: PropTypes.oneOfType([PropTypes.object, PropTypes.bool]),
+  loadPotsError: PropTypes.oneOfType([PropTypes.object, PropTypes.bool]),
   blog: PropTypes.object,
   filter: PropTypes.func,
   linkPrefix: PropTypes.string,
@@ -146,7 +177,7 @@ MonzoPots.propTypes = {
 MonzoPots.defaultProps = {
   user: null,
   loading: false,
-  error: null,
+  loadPotsError: null,
   blog: null,
   filter: null,
   linkPrefix: '',

@@ -1,35 +1,16 @@
-import { connect } from 'react-redux';
-import { compose } from 'redux';
-import { createStructuredSelector } from 'reselect';
+import appSelectors from 'containers/App/selectors';
 
-import selectors from './selectors';
-import actions from './actions';
-import reducer from './reducer';
+import { composeContainer } from 'helpers/redux';
+import actionMeta from './actionMeta';
+import { selectors, actions, reducer } from './redux-definitions';
 import saga from './saga';
 import MonzoPots from './MonzoPots';
-import { mapSelectors } from 'helpers/redux/selectors';
-import { mapActions } from 'helpers/redux/actions';
 
-import injectSaga from 'utils/injectSaga';
-import injectReducer from 'utils/injectReducer';
-
-const mapDispatchToProps = dispatch => mapActions(dispatch, { ...actions });
-
-const mapStateToProps = createStructuredSelector(
-  mapSelectors({ ...selectors }),
+module.exports = composeContainer(
+  MonzoPots,
+  actionMeta.key,
+  { ...selectors, ...appSelectors },
+  { ...actions },
+  reducer,
+  saga,
 );
-
-const withConnect = connect(
-  mapStateToProps,
-  mapDispatchToProps,
-);
-
-const withReducer = injectReducer({ key: 'monzo', reducer });
-const withSaga = injectSaga({ key: 'monzo', saga });
-
-export default compose(
-  withReducer,
-  withSaga,
-  withConnect,
-)(MonzoPots);
-export { mapDispatchToProps };
