@@ -114,7 +114,7 @@ export default class Contact extends Component {
             <InfoCellWithScroll
               title="Email"
               content={
-                <TextLink href="mailto:g@georgegillams.co.uk" external>
+                <TextLink href="mailto:hello@georgegillams.co.uk" external>
                   Email {GG_EMAIL}
                 </TextLink>
               }
