@@ -13,7 +13,6 @@ import request from 'utils/request';
 
 export function* doRegisterUser() {
   const ticketData = yield select(makeSelectTicketData());
-  console.log(`sendingTicketData`, ticketData);
   const registrationStatusUrl = `${API_ENDPOINT}/registrationStatus/register`;
 
   try {
