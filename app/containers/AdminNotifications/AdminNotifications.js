@@ -45,15 +45,15 @@ export default class AdminNotifications extends React.Component {
       user,
       userLoading,
       className,
-      loadNotifications,
       notifications,
-      loading,
-      success,
-      error,
+      loadNotifications,
+      loadingNotifications,
+      loadNotificationsSuccess,
+      loadNotificationsError,
       createNotification,
-      creating,
+      creatingNotification,
       deleteNotification,
-      deleting,
+      deletingNotification,
       ...rest
     } = this.props;
     const outerClassNameFinal = [];
@@ -86,7 +86,7 @@ export default class AdminNotifications extends React.Component {
                   show: true,
                 },
               ]}
-              disabled={creating}
+              disabled={creatingNotification}
               onDataChanged={newNotification => {
                 this.setState({ newNotification });
               }}
@@ -110,7 +110,7 @@ export default class AdminNotifications extends React.Component {
                   <Button
                     large
                     destructive
-                    disabled={deleting}
+                    disabled={deletingNotification}
                     onClick={() => deleteNotification(b)}
                   >
                     Delete
@@ -127,7 +127,9 @@ export default class AdminNotifications extends React.Component {
         <Helmet title="Admin - notifications" />
         <LoadingCover
           loadingSkeleton={Skeleton}
-          loading={userLoading || (!notifications && loading)}
+          loadingNotifications={
+            userLoading || (!notifications && loadingNotifications)
+          }
         >
           {page}
         </LoadingCover>
@@ -140,9 +142,9 @@ export default class AdminNotifications extends React.Component {
             className,
             loadNotifications,
             notifications,
-            loading,
-            success,
-            error,
+            loadingNotifications,
+            loadNotificationsSuccess,
+            loadNotificationsError,
           }}
         />
       </Fragment>
@@ -158,12 +160,12 @@ AdminNotifications.propTypes = {
   setLoginRedirect: PropTypes.func.isRequired,
   notifications: PropTypes.arrayOf(PropTypes.object),
   // eslint-disable-next-line react/forbid-prop-types
-  error: PropTypes.object,
-  success: PropTypes.bool,
-  loading: PropTypes.bool,
+  loadNotificationsError: PropTypes.object,
+  loadNotificationsSuccess: PropTypes.bool,
+  loadingNotifications: PropTypes.bool,
   className: PropTypes.string,
   creatingNotification: PropTypes.bool,
-  deleting: PropTypes.bool,
+  deletingNotification: PropTypes.bool,
   loggingIn: PropTypes.bool,
   // eslint-disable-next-line react/forbid-prop-types
   user: PropTypes.object,
@@ -172,12 +174,12 @@ AdminNotifications.propTypes = {
 
 AdminNotifications.defaultProps = {
   notifications: null,
-  error: null,
-  success: false,
-  loading: false,
+  loadNotificationsError: null,
+  loadNotificationsSuccess: false,
+  loadingNotifications: false,
   className: null,
   creatingNotification: false,
-  deleting: false,
+  deletingNotification: false,
   loggingIn: false,
   user: null,
   userLoading: false,
