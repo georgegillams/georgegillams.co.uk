@@ -20,8 +20,7 @@ import {
   makeSelectUserLoading,
   makeSelectCookiesAllowed,
 } from 'containers/App/selectors';
-import { setLoginRedirect } from 'containers/App/actions';
-import { setCookiesAllowed } from 'containers/App/actions';
+import { setLoginRedirect, setCookiesAllowed } from 'containers/App/actions';
 
 const mapDispatchToProps = dispatch => ({
   setLoginRedirect: lr => dispatch(setLoginRedirect(lr)),

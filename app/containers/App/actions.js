@@ -1,34 +1,8 @@
-import {
-  SET_LOGIN_REDIRECT,
-  SET_USER,
-  SET_USER_LOADING,
-  SET_COOKIES_ALLOWED,
-} from './constants';
+import constants from './constants';
+import actionMeta from './actionMeta';
 
-const setUserLoading = () => ({
-  type: SET_USER_LOADING,
-});
+const { actionDefinitions } = actionMeta;
 
-const setUser = user => ({
-  type: SET_USER,
-  user,
-});
+import defineActions, { populateConstants } from 'helpers/redux/actions';
 
-const setLoginRedirect = loginRedirect => {
-  return {
-    type: SET_LOGIN_REDIRECT,
-    loginRedirect,
-  };
-};
-
-const setCookiesAllowed = cookiesAllowed => ({
-  type: SET_COOKIES_ALLOWED,
-  cookiesAllowed,
-});
-
-module.exports = {
-  setUserLoading,
-  setUser,
-  setLoginRedirect,
-  setCookiesAllowed,
-};
+module.exports = defineActions(populateConstants(actionDefinitions, constants));

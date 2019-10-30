@@ -1,65 +1,13 @@
-import { createSelector } from 'reselect';
+import actionMeta from './actionMeta';
+import reducer from './reducer';
 
-const selectGlobal = state => state.get('global');
+import createSelectors from 'helpers/redux/selectors';
+import {
+  inferPropertiesFromInitialState,
+  getInitialState,
+} from 'helpers/redux/reducers';
 
-const selectRoute = state => state.get('route');
-
-const makeSelectLoginRedirect = () => {
-  return createSelector(
-    selectGlobal,
-    globalState => globalState.get('loginRedirect'),
-  );
-};
-
-const makeSelectUser = () =>
-  createSelector(
-    selectGlobal,
-    globalState => globalState.get('user'),
-  );
-
-const makeSelectUserLoading = () =>
-  createSelector(
-    selectGlobal,
-    globalState => globalState.get('userLoading'),
-  );
-
-const makeSelectCookiesAllowed = () =>
-  createSelector(
-    selectGlobal,
-    globalState => globalState.get('cookiesAllowed'),
-  );
-
-const makeSelectLoading = () =>
-  createSelector(
-    selectGlobal,
-    globalState => globalState.get('loading'),
-  );
-
-const makeSelectError = () =>
-  createSelector(
-    selectGlobal,
-    globalState => globalState.get('error'),
-  );
-
-const makeSelectRepos = () =>
-  createSelector(
-    selectGlobal,
-    globalState => globalState.getIn(['userData', 'repositories']),
-  );
-
-const makeSelectLocation = () =>
-  createSelector(
-    selectRoute,
-    routeState => routeState.get('location').toJS(),
-  );
-
-module.exports = {
-  makeSelectLoginRedirect,
-  makeSelectUser,
-  makeSelectUserLoading,
-  makeSelectCookiesAllowed,
-  makeSelectLoading,
-  makeSelectError,
-  makeSelectRepos,
-  makeSelectLocation,
-};
+module.exports = createSelectors(
+  actionMeta.key,
+  inferPropertiesFromInitialState(getInitialState(reducer)),
+);

@@ -8,9 +8,10 @@ import {
   SET_COOKIES_ALLOWED,
 } from './constants';
 
+// TODO `loading` and `error` are no longer required
 const initialState = fromJS({
   loading: false,
-  error: false,
+  error: null,
   user: null,
   userLoading: false,
   cookiesAllowed: false,

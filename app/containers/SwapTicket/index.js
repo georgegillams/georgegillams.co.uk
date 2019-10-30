@@ -18,7 +18,6 @@ import injectSaga from 'utils/injectSaga';
 import { setLoginRedirect } from 'containers/App/actions';
 import {
   makeSelectUser,
-  makeSelectError as makeSelectUserLoadError,
   makeSelectUserLoading,
 } from 'containers/App/selectors';
 import { setCookiesAllowed } from 'containers/App/actions';
@@ -35,7 +34,6 @@ const mapStateToProps = createStructuredSelector({
   selectedTicketType: makeSelectSelectedTicketType(),
   loadingAvailableTickets: makeSelectLoadingAvailableTickets(),
   loadTicketsError: makeSelectLoadAvailableTicketsError(),
-  userLoadError: makeSelectUserLoadError(),
 });
 
 const withConnect = connect(
