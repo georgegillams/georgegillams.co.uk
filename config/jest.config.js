@@ -17,6 +17,7 @@ module.exports = {
     },
   },
   coverageReporters: ['json', 'lcov', 'text-summary'],
+  testPathIgnorePatterns: ['<rootDir>/build/', '<rootDir>/node_modules/'],
   moduleDirectories: ['node_modules', 'app'],
   moduleNameMapper: {
     '.*\\.(css|less|styl|scss|sass)$':
