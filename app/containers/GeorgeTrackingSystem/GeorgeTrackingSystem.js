@@ -10,20 +10,9 @@ import STYLES from 'containers/pages.scss';
 
 const getClassName = cssModules(STYLES); // REGEX_REPLACED
 
-export default class GeorgeTrackingSystem extends React.Component {
-  componentWillMount = () => {
-    this.props.loadGtsLatest();
-  };
-
+class GeorgeTrackingSystem extends React.Component {
   render() {
-    const {
-      loading,
-      error,
-      gtsLatest,
-      loadGtsLatest,
-      className,
-      ...rest
-    } = this.props;
+    const { className, ...rest } = this.props;
     const outerClassNameFinal = [getClassName('pages__container--centered')];
 
     if (className) {
@@ -34,23 +23,17 @@ export default class GeorgeTrackingSystem extends React.Component {
       <div className={outerClassNameFinal.join(' ')} {...rest}>
         <Helmet title="Tracking" />
         <DeprecationNotice />
-        {/* <LoadingIndicator loading={loading} error={error}>
-          {!gtsLatest && (
-            <Section name="No live tracking currently available">
-              <Section name="🗺" />
-            </Section>
-          )}
-          {gtsLatest && <GTSEntity gts={gtsLatest} />}
-        </LoadingIndicator> */}
       </div>
     );
   }
 }
 
 GeorgeTrackingSystem.propTypes = {
-  loading: PropTypes.bool,
-  error: PropTypes.oneOfType([PropTypes.object, PropTypes.bool]),
-  gtsLatest: PropTypes.object,
-  loadGtsLatest: PropTypes.func.isRequired,
   className: PropTypes.string,
 };
+
+GeorgeTrackingSystem.defaultProps = {
+  className: null,
+};
+
+export default GeorgeTrackingSystem;
