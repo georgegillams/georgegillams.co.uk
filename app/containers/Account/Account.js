@@ -45,8 +45,8 @@ export default class Account extends React.Component {
       user,
       userLoading,
       loggingOut,
-      success,
-      error,
+      loggingOutSuccess,
+      loggingOutError,
       requestVerificationEmail,
       requestingVerificationEmail,
       requestingSuccess,
@@ -118,8 +118,8 @@ export default class Account extends React.Component {
             user,
             userLoading,
             loggingOut,
-            success,
-            error,
+            loggingOutSuccess,
+            loggingOutError,
             requestVerificationEmail,
             requestingVerificationEmail,
             requestingSuccess,
@@ -133,7 +133,7 @@ export default class Account extends React.Component {
 
 Account.propTypes = {
   loggingIn: PropTypes.bool,
-  error: PropTypes.oneOfType([PropTypes.object, PropTypes.bool]),
+  loggingOutError: PropTypes.oneOfType([PropTypes.object, PropTypes.bool]),
   createdPayment: PropTypes.object,
   login: PropTypes.func.isRequired,
   className: PropTypes.string,
@@ -141,7 +141,7 @@ Account.propTypes = {
 
 Account.defaultProps = {
   loggingIn: false,
-  error: null,
+  loggingOutError: null,
   createdPayment: null,
   className: null,
 };
