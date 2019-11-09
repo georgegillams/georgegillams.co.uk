@@ -7,7 +7,6 @@ import {
   CardSkeleton,
   SectionSkeleton,
 } from 'gg-components/dist/Skeletons';
-import TicketStatusSkeleton from 'containers/TicketStatus/Skeleton';
 import STYLES from 'containers/pages.scss';
 
 const getClassName = cssModules(STYLES);
