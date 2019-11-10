@@ -36,7 +36,7 @@ export default class AdminUsers extends React.Component {
   constructor(props) {
     super(props);
 
-    this.state = { showTickets: false };
+    this.state = {};
   }
 
   componentDidMount = () => {
@@ -64,8 +64,8 @@ export default class AdminUsers extends React.Component {
       loadUsers,
       users,
       loading,
-      success,
-      error,
+      loadUserSuccess,
+      loadUserError,
       requestMagicLinkForUser,
       ...rest
     } = this.props;
@@ -84,16 +84,6 @@ export default class AdminUsers extends React.Component {
           <Section name="Admin - users">
             <span>Users: </span>
             {users && users.length && <span>{users.length}</span>}
-            <br />
-            <br />
-            <Button
-              onClick={() =>
-                this.setState({ showTickets: !this.state.showTickets })
-              }
-              large
-            >
-              {`${this.state.showTickets ? 'Hide' : 'Show'} tickets`}
-            </Button>
             <br />
             <br />
             {users && users.length && (
@@ -116,19 +106,6 @@ export default class AdminUsers extends React.Component {
                 <AdminUsersAPIEntity name="more" entityType="User" entity={u}>
                   <br />
                   <br />
-                  {u && u.registrationStatus && u.registrationStatus.ticket && (
-                    <Fragment>
-                      {this.state.showTickets && (
-                        <Ticket
-                          email={u.email}
-                          ticket={u.registrationStatus.ticket}
-                        />
-                      )}
-                      {!this.state.showTickets && <span>Ticket hidden</span>}
-                      <br />
-                      <br />
-                    </Fragment>
-                  )}
                   <Button
                     destructive
                     large
@@ -168,8 +145,8 @@ export default class AdminUsers extends React.Component {
             loadUsers,
             users,
             loading,
-            success,
-            error,
+            loadUserSuccess,
+            loadUserError,
             requestMagicLinkForUser,
           }}
         />
@@ -180,7 +157,7 @@ export default class AdminUsers extends React.Component {
 
 AdminUsers.propTypes = {
   loggingIn: PropTypes.bool,
-  error: PropTypes.oneOfType([PropTypes.object, PropTypes.bool]),
+  loadUserError: PropTypes.oneOfType([PropTypes.object, PropTypes.bool]),
   createdPayment: PropTypes.object,
   login: PropTypes.func.isRequired,
   className: PropTypes.string,
