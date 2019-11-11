@@ -1,44 +1,45 @@
-import {
-  RELOAD_COMMENTS,
+import { constants, selectors, actions } from './redux-definitions';
+
+const {
   LOAD_COMMENTS,
   CREATE_COMMENT,
   UPDATE_COMMENT,
   DELETE_COMMENT,
-} from './constants';
-import {
-  reloadComments,
-  commentsLoaded,
-  commentsLoadingError,
-  commentCreateSuccess,
-  commentCreateError,
-  commentUpdateSuccess,
-  commentUpdateError,
-  commentDeleteSuccess,
-  commentDeleteError,
-} from './actions';
-import { makeSelectComment, makeSelectPageId } from './selectors';
+} = constants;
+const {
+  loadComments,
+  loadCommentsRegisterSuccess,
+  loadCommentsRegisterError,
+  createCommentRegisterSuccess,
+  createCommentRegisterError,
+  updateCommentRegisterSuccess,
+  updateCommentRegisterError,
+  deleteCommentRegisterSuccess,
+  deleteCommentRegisterError,
+} = actions;
+const { makeSelectComment, makeSelectCurrentPageId } = selectors;
 
 import { pushMessage } from 'containers/RequestStatusWrapper/actions';
 import { call, put, select, takeLatest } from 'redux-saga/effects';
 import { COMMUNICATION_ERROR_MESSAGE, API_ENDPOINT } from 'helpers/constants';
 import request from 'utils/request';
 
-export function* loadComments() {
-  const pageId = yield select(makeSelectPageId());
+export function* doLoadComments() {
+  const pageId = yield select(makeSelectCurrentPageId());
   const requestURL = `${API_ENDPOINT}/comments/load?pageId=${pageId}`;
 
   try {
     const comments = yield call(request, requestURL);
-    yield put(commentsLoaded(comments));
+    yield put(loadCommentsRegisterSuccess(comments));
   } catch (err) {
-    yield put(commentsLoadingError(err));
+    yield put(loadCommentsRegisterError(err));
     yield put(pushMessage(COMMUNICATION_ERROR_MESSAGE));
   }
 }
 
-export function* createComment() {
+export function* doCreateComment() {
   const comment = yield select(makeSelectComment());
-  const pageId = yield select(makeSelectPageId());
+  const pageId = yield select(makeSelectCurrentPageId());
   comment.pageId = pageId;
   const requestURL = `${API_ENDPOINT}/comments/create`;
 
@@ -50,17 +51,17 @@ export function* createComment() {
         'Content-Type': 'application/json',
       },
     });
-    yield put(commentCreateSuccess(commentResult));
-    yield put(reloadComments(pageId));
+    yield put(createCommentRegisterSuccess(commentResult));
+    yield put(loadComments(pageId));
   } catch (err) {
-    yield put(commentCreateError(err));
+    yield put(createCommentRegisterError(err));
     yield put(pushMessage(COMMUNICATION_ERROR_MESSAGE));
   }
 }
 
-export function* updateComment() {
+export function* doUpdateComment() {
   const comment = yield select(makeSelectComment());
-  const pageId = yield select(makeSelectPageId());
+  const pageId = yield select(makeSelectCurrentPageId());
   const requestURL = `${API_ENDPOINT}/comments/update`;
 
   try {
@@ -71,17 +72,17 @@ export function* updateComment() {
         'Content-Type': 'application/json',
       },
     });
-    yield put(commentUpdateSuccess(commentResult));
-    yield put(reloadComments(pageId));
+    yield put(updateCommentRegisterSuccess(commentResult));
+    yield put(loadComments(pageId));
   } catch (err) {
-    yield put(commentUpdateError(err));
+    yield put(updateCommentRegisterError(err));
     yield put(pushMessage(COMMUNICATION_ERROR_MESSAGE));
   }
 }
 
-export function* deleteComment() {
+export function* doDeleteComment() {
   const comment = yield select(makeSelectComment());
-  const pageId = yield select(makeSelectPageId());
+  const pageId = yield select(makeSelectCurrentPageId());
   const requestURL = `${API_ENDPOINT}/comments/remove`;
 
   try {
@@ -92,18 +93,17 @@ export function* deleteComment() {
         'Content-Type': 'application/json',
       },
     });
-    yield put(commentDeleteSuccess(commentResult));
-    yield put(reloadComments(pageId));
+    yield put(deleteCommentRegisterSuccess(commentResult));
+    yield put(loadComments(pageId));
   } catch (err) {
-    yield put(commentDeleteError(err));
+    yield put(deleteCommentRegisterError(err));
     yield put(pushMessage(COMMUNICATION_ERROR_MESSAGE));
   }
 }
 
 export default function* saga() {
-  yield takeLatest(LOAD_COMMENTS, loadComments);
-  yield takeLatest(RELOAD_COMMENTS, loadComments);
-  yield takeLatest(CREATE_COMMENT, createComment);
-  yield takeLatest(UPDATE_COMMENT, updateComment);
-  yield takeLatest(DELETE_COMMENT, deleteComment);
+  yield takeLatest(LOAD_COMMENTS, doLoadComments);
+  yield takeLatest(CREATE_COMMENT, doCreateComment);
+  yield takeLatest(UPDATE_COMMENT, doUpdateComment);
+  yield takeLatest(DELETE_COMMENT, doDeleteComment);
 }
