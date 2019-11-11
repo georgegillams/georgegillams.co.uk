@@ -22,9 +22,10 @@ export default class CommentsContainer extends React.Component {
       className,
       user,
 
+      currentPageId,
       loadComments,
-      loading,
-      error,
+      loadingComments,
+      loadCommentsError,
       comments,
 
       createComment,
@@ -55,12 +56,13 @@ export default class CommentsContainer extends React.Component {
           debugTitle="Comments"
           debugObject={{
             pageId,
+            currentPageId,
             comment,
             className,
             user,
             loadComments,
-            loading,
-            error,
+            loadingComments,
+            loadCommentsError,
             comments,
             createComment,
             creatingComment,
@@ -78,8 +80,8 @@ export default class CommentsContainer extends React.Component {
         />
         <LoadingCover
           loadingSkeleton={CommentsListSkeleton}
-          loading={loading}
-          error={error}
+          loadingComments={loadingComments}
+          loadCommentsError={loadCommentsError}
         >
           {comments && (
             <Comments
@@ -120,8 +122,8 @@ export default class CommentsContainer extends React.Component {
 }
 
 CommentsContainer.propTypes = {
-  loading: PropTypes.bool,
-  error: PropTypes.oneOfType([PropTypes.object, PropTypes.bool]),
+  loadingComments: PropTypes.bool,
+  loadCommentsError: PropTypes.oneOfType([PropTypes.object, PropTypes.bool]),
   comments: PropTypes.object,
   filter: PropTypes.func,
   linkPrefix: PropTypes.string,
