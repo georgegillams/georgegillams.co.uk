@@ -30,10 +30,9 @@ const getClassName = cssModules(STYLES); // REGEX_REPLACED
 export default class Login extends React.Component {
   componentDidMount = () => {
     const interval = setInterval(() => {
-      const tokenValue = new URL(window.location).searchParams.get('token');
-      this.props.tokenChanged(tokenValue);
+      const token = new URL(window.location).searchParams.get('token');
       if (this.props.cookiesAllowed) {
-        this.props.login();
+        this.props.login(token);
         clearInterval(interval);
       }
     }, 200);
@@ -43,12 +42,11 @@ export default class Login extends React.Component {
     const {
       cookiesAllowed,
       onCookiesAccepted,
-      tokenChanged,
       login,
       user,
       loggingIn,
-      loginSuccessful,
-      loginError,
+      logInSuccess,
+      logInError,
       className,
       ...rest
     } = this.props;
@@ -58,7 +56,7 @@ export default class Login extends React.Component {
       outerClassNameFinal.push(className);
     }
 
-    if (loginSuccessful) {
+    if (logInSuccess) {
       let redirectLocation = new URL(window.location).searchParams.get(
         'redirect',
       );
@@ -93,12 +91,11 @@ export default class Login extends React.Component {
           debugObject={{
             cookiesAllowed,
             onCookiesAccepted,
-            tokenChanged,
             login,
             user,
             loggingIn,
-            loginSuccessful,
-            loginError,
+            logInSuccess,
+            logInError,
           }}
         />
       </div>
