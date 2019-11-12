@@ -30,9 +30,8 @@ export default class EmailVerification extends React.Component {
   componentDidMount = () => {
     const interval = setInterval(() => {
       const tokenValue = new URL(window.location).searchParams.get('token');
-      this.props.tokenChanged(tokenValue);
       if (this.props.cookiesAllowed) {
-        this.props.verify();
+        this.props.verifyEmail(tokenValue);
         clearInterval(interval);
       }
     }, 200);
@@ -42,9 +41,8 @@ export default class EmailVerification extends React.Component {
     const {
       cookiesAllowed,
       onCookiesAccepted,
-      tokenChanged,
-      verify,
       user,
+      verifyEmail,
       verifying,
       verifySuccess,
       verifyError,
@@ -84,8 +82,7 @@ export default class EmailVerification extends React.Component {
           debugObject={{
             cookiesAllowed,
             onCookiesAccepted,
-            tokenChanged,
-            verify,
+            verifyEmail,
             user,
             verifying,
             verifySuccess,
@@ -101,6 +98,6 @@ EmailVerification.propTypes = {
   verifying: PropTypes.bool,
   error: PropTypes.oneOfType([PropTypes.object, PropTypes.bool]),
   createdPayment: PropTypes.object,
-  verify: PropTypes.func.isRequired,
+  verifyEmail: PropTypes.func.isRequired,
   className: PropTypes.string,
 };

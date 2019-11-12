@@ -48,6 +48,7 @@ export default function create(req) {
                 newUser => {
                   sendEmailVerificationEmail(newUser);
                   loginUser(reqSecured, newUser, resolve, reject);
+                  resolve({ message: 'User created' });
                 },
               );
             }
