@@ -1,41 +1,14 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Helmet } from 'react-helmet';
-import BpkImage, {
-  withLazyLoading,
-  withLoadingBehavior,
-} from 'bpk-component-image';
-import { cssModules } from 'bpk-react-utils';
 
-import { LoadingIndicator } from 'gg-components/dist/LoadingIndicator';
-import { Button } from 'gg-components/dist/Button';
 import { Section, SubSection, TextLink } from 'gg-components/dist/Typography';
 import { CodeInline } from 'gg-components/dist/Code';
-import { CreatePaymentForm } from 'components/Forms';
-import {
-  MONZOME_LINK_REGEX,
-  SORT_CODE_REGEX,
-  INT_REGEX,
-  STRING_REGEX,
-  DECIMAL_REGEX,
-  GG_EMAIL,
-} from 'helpers/constants';
-import STYLES from 'containers/pages.scss';
-
-const getClassName = cssModules(STYLES); // REGEX_REPLACED
+import { GG_EMAIL } from 'helpers/constants';
 
 export default class PaymentsPage extends React.Component {
   render() {
-    const {
-      paymentChanged,
-      payment,
-      createPayment,
-      createdPayment,
-      paymentCreating,
-      createPaymentError,
-      className,
-      ...rest
-    } = this.props;
+    const { className, ...rest } = this.props;
     const outerClassNameFinal = [];
 
     if (className) {
@@ -89,31 +62,11 @@ export default class PaymentsPage extends React.Component {
             <CodeInline>MPz6NNqU8U2nZMQX3WTwXJjZFhUA31Q1F6</CodeInline>
           </SubSection>
         </Section>
-        <Section name="Request money from me">
-          If I owe you money, you can request it below.
-          <br />
-          Either provide a monzo.me link, or a sort-code and account number.
-          <br />
-          <CreatePaymentForm
-            payment={payment}
-            onDataChanged={paymentChanged}
-            onSubmit={createPayment}
-          />
-          {paymentCreating && <text>paymentCreating</text>}
-          <br />
-          {createdPayment && <text>createdPayment</text>}
-          <br />
-          {createPaymentError && <text>createPaymentError</text>}
-        </Section>
       </div>
     );
   }
 }
 
 PaymentsPage.propTypes = {
-  paymentCreating: PropTypes.bool,
-  error: PropTypes.oneOfType([PropTypes.object, PropTypes.bool]),
-  createdPayment: PropTypes.object,
-  createPayment: PropTypes.func.isRequired,
   className: PropTypes.string,
 };
