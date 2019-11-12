@@ -6,7 +6,7 @@ import { cssModules } from 'bpk-react-utils';
 import Skeleton from './Skeleton';
 
 import { Section, SubSection } from 'gg-components/dist/Typography';
-import {NotificationCollection} from 'gg-components/dist/Notifications';
+import { NotificationCollection } from 'gg-components/dist/Notifications';
 import { DebugObject, LoadingCover } from 'gg-components/dist/Auth';
 import STYLES from 'containers/pages.scss';
 
@@ -19,10 +19,10 @@ export default class NotificationCenter extends React.Component {
 
   render() {
     const {
-      loading,
-      error,
-      notifications,
       loadNotifications,
+      notifications,
+      loadingNotifications,
+      loadNotificationsError,
       className,
       ...rest
     } = this.props;
@@ -32,12 +32,12 @@ export default class NotificationCenter extends React.Component {
       outerClassNameFinal.push(className);
     }
 
-    if (loading) {
+    if (loadingNotifications) {
       return (
         <LoadingCover
           loadingSkeleton={Skeleton}
-          loading={loading}
-          error={error}
+          loadingNotifications={loadingNotifications}
+          loadNotificationsError={loadNotificationsError}
         />
       );
     }
@@ -48,8 +48,8 @@ export default class NotificationCenter extends React.Component {
         <DebugObject
           debugTitle="Notifications"
           debugObject={{
-            loading,
-            error,
+            loadingNotifications,
+            loadNotificationsError,
             notifications,
             loadNotifications,
           }}
@@ -60,8 +60,11 @@ export default class NotificationCenter extends React.Component {
 }
 
 NotificationCenter.propTypes = {
-  loading: PropTypes.bool,
-  error: PropTypes.oneOfType([PropTypes.object, PropTypes.bool]),
+  loadingNotifications: PropTypes.bool,
+  loadNotificationsError: PropTypes.oneOfType([
+    PropTypes.object,
+    PropTypes.bool,
+  ]),
   notifications: PropTypes.object,
   loadNotifications: PropTypes.func.isRequired,
   className: PropTypes.string,
