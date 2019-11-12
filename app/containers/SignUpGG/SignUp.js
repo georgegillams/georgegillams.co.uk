@@ -17,13 +17,7 @@ import { SignUpForm } from 'components/Forms';
 import { CookiesOnly } from 'components/Sessions';
 import { GGRedirect } from 'gg-components/dist/Redirect';
 import { LoggedOutOnly, LoadingCover } from 'gg-components/dist/Auth';
-import {
-  MONZOME_LINK_REGEX,
-  SORT_CODE_REGEX,
-  INT_REGEX,
-  STRING_REGEX,
-  DECIMAL_REGEX,
-} from 'helpers/constants';
+import { STRING_REGEX } from 'helpers/constants';
 import STYLES from 'containers/pages.scss';
 
 const getClassName = cssModules(STYLES); // REGEX_REPLACED
@@ -33,11 +27,11 @@ export default class SignUp extends React.Component {
     const {
       cookiesAllowed,
       onCookiesAccepted,
-      credentialsChanged,
-      credentials,
-      signUp,
       user,
       userLoading,
+      signUp,
+      credentials,
+      setCredentials,
       signingUp,
       signUpSuccess,
       signUpError,
@@ -62,8 +56,8 @@ export default class SignUp extends React.Component {
           <Section name="Sign up">
             <SignUpForm
               disabled={signingUp}
-              credentials={credentials}
-              onDataChanged={credentialsChanged}
+              credentials={credentials || {}}
+              onDataChanged={setCredentials}
               onSubmit={signUp}
             />
             <br />

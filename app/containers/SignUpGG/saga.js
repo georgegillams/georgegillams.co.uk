@@ -1,18 +1,16 @@
-import { SIGN_UP } from './constants';
-import { signUpSuccessful, signUpError } from './actions';
-import { makeSelectCredentials } from './selectors';
+import { constants, actions, selectors } from './redux-definitions';
+
+const { SIGN_UP } = constants;
+const { signUpRegisterSuccess, signUpRegisterError } = actions;
+const { makeSelectCredentials } = selectors;
 
 import { call, put, select, takeLatest } from 'redux-saga/effects';
 import { setUser } from 'containers/App/actions';
-import { pushMessage } from 'containers/RequestStatusWrapper/actions';
 import { API_ENDPOINT, COMMUNICATION_ERROR_MESSAGE } from 'helpers/constants';
+import { pushMessage } from 'containers/RequestStatusWrapper/actions';
 import request from 'utils/request';
 
-const signUpMessage = { type: 'success', message: 'Sign up successful!' };
-const signUpErrorMessage = {
-  type: 'error',
-  message: 'Error creating account.',
-};
+const signUpSuccessMessage = { type: 'success', message: 'Account created!' };
 
 export function* doSignUp() {
   const credentials = yield select(makeSelectCredentials());
@@ -27,19 +25,19 @@ export function* doSignUp() {
       },
     });
     if (signUpResult.error) {
-      yield put(signUpError(signUpResult));
+      yield put(signUpRegisterError(signUpResult));
       yield put(pushMessage({ type: 'error', message: signUpResult.error }));
     } else {
-      yield put(signUpSuccessful());
+      yield put(signUpRegisterSuccess());
       yield put(setUser(signUpResult));
-      yield put(pushMessage(signUpMessage));
+      yield put(pushMessage(signUpSuccessMessage));
     }
   } catch (err) {
-    yield put(signUpError(err));
+    yield put(loginRegisterError(err));
     yield put(pushMessage(COMMUNICATION_ERROR_MESSAGE));
   }
 }
 
-export default function* signUp() {
+export default function* saga() {
   yield takeLatest(SIGN_UP, () => doSignUp());
 }
