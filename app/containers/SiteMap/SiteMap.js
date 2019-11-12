@@ -17,7 +17,14 @@ export default class SiteMap extends React.Component {
   };
 
   render() {
-    const { loading, error, blogs, loadBlogs, className, ...rest } = this.props;
+    const {
+      loadingBlogs,
+      loadBlogsError,
+      blogs,
+      loadBlogs,
+      className,
+      ...rest
+    } = this.props;
     const outerClassNameFinal = [getClassName('pages__container--centered')];
 
     if (className) {
@@ -27,7 +34,7 @@ export default class SiteMap extends React.Component {
     return (
       <div className={outerClassNameFinal.join(' ')} {...rest}>
         <Helmet title="SiteMap" />
-        <LoadingIndicator loading={loading} error={error}>
+        <LoadingIndicator loading={loadingBlogs} error={loadBlogsError}>
           <div>
             <SubSection
               anchor={false}
@@ -284,8 +291,8 @@ export default class SiteMap extends React.Component {
 }
 
 SiteMap.propTypes = {
-  loading: PropTypes.bool,
-  error: PropTypes.oneOfType([PropTypes.object, PropTypes.bool]),
+  loadingBlogs: PropTypes.bool,
+  loadBlogsError: PropTypes.oneOfType([PropTypes.object, PropTypes.bool]),
   blogs: PropTypes.object,
   filter: PropTypes.func,
   linkPrefix: PropTypes.string,
