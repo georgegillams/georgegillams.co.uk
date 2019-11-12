@@ -9,11 +9,15 @@ import { cssModules } from 'bpk-react-utils';
 
 import Skeleton from './Skeleton';
 
-import {LoadingIndicator} from 'gg-components/dist/LoadingIndicator';
-import {Button} from 'gg-components/dist/Button';
+import { LoadingIndicator } from 'gg-components/dist/LoadingIndicator';
+import { Button } from 'gg-components/dist/Button';
 import { Section, SubSection, TextLink } from 'gg-components/dist/Typography';
-import {CodeInline} from 'gg-components/dist/Code';
-import { DebugObject, LoggedOutOnly, LoadingCover } from 'gg-components/dist/Auth';
+import { CodeInline } from 'gg-components/dist/Code';
+import {
+  DebugObject,
+  LoggedOutOnly,
+  LoadingCover,
+} from 'gg-components/dist/Auth';
 import { LoginForm } from 'components/Forms';
 import { CookiesOnly } from 'components/Sessions';
 import {
@@ -32,15 +36,15 @@ export default class Login extends React.Component {
     const {
       cookiesAllowed,
       onCookiesAccepted,
-      credentialsChanged,
+      setCredentials,
       credentials,
       login,
       user,
       userLoading,
       userLoadError,
       loggingIn,
-      loginSuccess,
-      loginError,
+      logInSuccess,
+      logInError,
       className,
       ...rest
     } = this.props;
@@ -55,12 +59,12 @@ export default class Login extends React.Component {
         <LoggedOutOnly user={user}>
           <Section name="Login">
             <LoginForm
-              disabled={loggingIn || loginSuccess}
-              credentials={credentials}
-              onDataChanged={credentialsChanged}
+              disabled={loggingIn || logInSuccess}
+              credentials={credentials || { useMagicLink: true }}
+              onDataChanged={setCredentials}
               onSubmit={login}
               presubmitText={
-                loginSuccess
+                logInSuccess
                   ? 'A magic login link has been sent to your email address. Please check your junk folder before requesting another.'
                   : null
               }
@@ -93,14 +97,14 @@ export default class Login extends React.Component {
           debugObject={{
             cookiesAllowed,
             onCookiesAccepted,
-            credentialsChanged,
+            setCredentials,
             credentials,
             login,
             user,
             userLoading,
             loggingIn,
-            loginSuccess,
-            loginError,
+            logInSuccess,
+            logInError,
           }}
         />
       </Fragment>
