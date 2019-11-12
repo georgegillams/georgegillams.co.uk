@@ -45,7 +45,7 @@ export default class BlogsPage extends React.Component {
   render() {
     const {
       loading,
-      error,
+      loadBlogsError,
       blogs,
       loadBlogs,
       selectedNav,
@@ -76,9 +76,9 @@ export default class BlogsPage extends React.Component {
           debugTitle="Blogs"
           debugObject={{
             loading,
-            error,
             blogs,
             loadBlogs,
+            loadBlogsError,
             selectedNav,
             filter,
             linkPrefix,
@@ -98,7 +98,7 @@ export default class BlogsPage extends React.Component {
         <LoadingCover
           loadingSkeleton={BlogListSkeleton}
           loading={loading}
-          error={error}
+          error={loadBlogsError}
         >
           <Fragment>
             {this.filteredBlogs && (
@@ -114,7 +114,7 @@ export default class BlogsPage extends React.Component {
 
 BlogsPage.propTypes = {
   loading: PropTypes.bool,
-  error: PropTypes.oneOfType([PropTypes.object, PropTypes.bool]),
+  loadBlogsError: PropTypes.oneOfType([PropTypes.object, PropTypes.bool]),
   blogs: PropTypes.object,
   filter: PropTypes.func,
   linkPrefix: PropTypes.string,

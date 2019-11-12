@@ -15,6 +15,13 @@ export function* doLoadNotifications() {
 
   try {
     const notifications = yield call(request, requestURL);
+    if (notifications.error) {
+      yield put(pushMessage(setKeyErrorMessage));
+      yield put(addKeyRegisterError(setKeyResult));
+    } else {
+      yield put(pushMessage(setKeySuccessMessage));
+      yield put(addKeyRegisterSuccess(setKeyResult));
+    }
     yield put(loadNotificationsRegisterSuccess(notifications));
   } catch (err) {
     yield put(loadNotificationsRegisterError(err));
