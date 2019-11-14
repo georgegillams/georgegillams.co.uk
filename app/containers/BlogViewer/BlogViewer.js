@@ -17,18 +17,16 @@ const getClassName = cssModules(STYLES); // REGEX_REPLACED
 export default class BlogViewer extends React.Component {
   componentWillMount = () => {
     const blogId = this.props.match.params.id;
-    this.props.blogIdChanged(blogId);
-    this.props.loadBlog();
+    this.props.loadBlog(blogId);
   };
 
   render() {
     const {
       user,
       match,
-      blogIdChanged,
-      loading,
-      error,
       blog,
+      loading,
+      loadBlogError,
       loadBlog,
       linkPrefix,
       className,
@@ -46,7 +44,7 @@ export default class BlogViewer extends React.Component {
         <LoadingCover
           loadingSkeleton={Skeleton}
           loading={loading}
-          error={error}
+          error={loadBlogError}
         >
           {blog && (
             <Fragment>
@@ -72,7 +70,7 @@ export default class BlogViewer extends React.Component {
 BlogViewer.propTypes = {
   user: PropTypes.object,
   loading: PropTypes.bool,
-  error: PropTypes.oneOfType([PropTypes.object, PropTypes.bool]),
+  loadBlogError: PropTypes.oneOfType([PropTypes.object, PropTypes.bool]),
   blog: PropTypes.object,
   filter: PropTypes.func,
   linkPrefix: PropTypes.string,
@@ -83,7 +81,7 @@ BlogViewer.propTypes = {
 BlogViewer.defaultProps = {
   user: null,
   loading: false,
-  error: null,
+  loadBlogError: null,
   blog: null,
   filter: null,
   linkPrefix: '',

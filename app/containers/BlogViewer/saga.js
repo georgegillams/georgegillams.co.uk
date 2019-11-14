@@ -1,23 +1,28 @@
-import { LOAD_BLOG } from './constants';
-import { loadBlogSuccess, loadBlogError } from './actions';
-import { makeSelectBlogId } from './selectors';
+import { constants, actions, selectors } from './redux-definitions';
+
+const { LOAD_BLOG } = constants;
+const { loadBlogRegisterSuccess, loadBlogRegisterError } = actions;
+const { makeSelectBlogId } = selectors;
 
 import { API_ENDPOINT } from 'helpers/constants';
 import { call, put, select, takeLatest } from 'redux-saga/effects';
 import request from 'utils/request';
 
-export function* loadBlog() {
+export function* doLoadBlog() {
   const blogId = yield select(makeSelectBlogId());
   const requestURL = `${API_ENDPOINT}/blogs/loadSingle?id=${blogId}`;
 
   try {
     const blog = yield call(request, requestURL);
-    yield put(loadBlogSuccess(blog));
+    if (blog.error) {
+      yield put(loadBlogRegisterError(blog.error));
+    }
+    yield put(loadBlogRegisterSuccess(blog));
   } catch (err) {
-    yield put(loadBlogError(err));
+    yield put(loadBlogRegisterError(err));
   }
 }
 
 export default function* getBlog() {
-  yield takeLatest(LOAD_BLOG, loadBlog);
+  yield takeLatest(LOAD_BLOG, doLoadBlog);
 }
