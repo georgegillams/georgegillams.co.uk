@@ -17,7 +17,7 @@ scenarioData.scenarioIds.forEach(sI => {
 
 const config = {
   id: 'georgegillams-co-uk-default',
-  misMatchThreshold: process.env.CI ? 12 : 3,
+  misMatchThreshold: 3,
   viewports: [
     {
       label: 'phone',
