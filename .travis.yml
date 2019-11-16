@@ -4,10 +4,10 @@ services:
   - docker
 
 install:
-  - docker build -t backstopjs-test -f Dockerfile.backstopjstest .
+  - docker build -t georgegillams-test -f Dockerfile.backstopjstest .
 
 script:
-  - docker run --rm backstopjs-test
+  - docker run --rm georgegillams-test
 
 notifications:
   email:

@@ -38,8 +38,8 @@ npx jest -u
 
 To update backstopJS snapshots:
 ```
-docker build -t backstopjs-test -f Dockerfile.backstopjstest .
-docker run backstopjs-test
+docker build -t georgegillams-test -f Dockerfile.backstopjstest .
+docker run georgegillams-test
 docker cp DOCKER_CONTAINER_ID:/usr/src/tmp/backstop_data ./
 ```
 
