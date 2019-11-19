@@ -42,20 +42,22 @@ export default class AdminBlogEdit extends React.Component {
       setLoginRedirect,
       user,
       userLoading,
+
       className,
+
       loadBlog,
       updateBlog,
       createBlog,
       blog,
-      loading,
-      success,
-      error,
-      updating,
-      updateSuccess,
-      updateError,
-      creating,
-      createSuccess,
-      createError,
+      loadingBlog,
+      loadBlogSuccess,
+      loadBlogError,
+      updatingBlog,
+      updateBlogSuccess,
+      updateBlogError,
+      creatingBlog,
+      createBlogSuccess,
+      createBlogError,
       ...rest
     } = this.props;
     const outerClassNameFinal = [];
@@ -72,7 +74,7 @@ export default class AdminBlogEdit extends React.Component {
         >
           <Section name="Admin - blog">
             <CreateBlogForm
-              disabled={updating || creating || !this.state.newBlog}
+              disabled={updatingBlog || creatingBlog || !this.state.newBlog}
               blog={this.state.newBlog || blog || {}}
               onDataChanged={n => this.setState({ newBlog: n })}
               onSubmit={() => {
@@ -94,7 +96,7 @@ export default class AdminBlogEdit extends React.Component {
         <Helmet title="Admin - blog" />
         <LoadingCover
           loadingSkeleton={Skeleton}
-          loading={userLoading || loading}
+          loading={userLoading || loadingBlog}
         >
           {page}
         </LoadingCover>
@@ -109,15 +111,15 @@ export default class AdminBlogEdit extends React.Component {
             updateBlog,
             createBlog,
             blog,
-            loading,
-            success,
-            error,
-            updating,
-            updateSuccess,
-            updateError,
-            creating,
-            createSuccess,
-            createError,
+            loadingBlog,
+            loadBlogSuccess,
+            loadBlogError,
+            updatingBlog,
+            updateBlogSuccess,
+            updateBlogError,
+            creatingBlog,
+            createBlogSuccess,
+            createBlogError,
           }}
         />
       </Fragment>
