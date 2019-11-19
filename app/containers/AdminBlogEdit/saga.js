@@ -1,13 +1,15 @@
-import { LOAD_BLOG, UPDATE_BLOG, CREATE_BLOG } from './constants';
-import {
-  loadBlogSuccess,
-  loadBlogError,
-  updateBlogError,
-  updateBlogSuccess,
-  createBlogSuccess,
-  createBlogError,
-} from './actions';
-import { makeSelectBlogId, makeSelectNewBlog } from './selectors';
+import { selectors, constants, actions } from './redux-definitions';
+
+const { LOAD_BLOG, UPDATE_BLOG, CREATE_BLOG } = constants;
+const {
+  loadBlogRegisterSuccess,
+  loadBlogRegisterError,
+  updateBlogRegisterError,
+  updateBlogRegisterSuccess,
+  createBlogRegisterSuccess,
+  createBlogRegisterError,
+} = actions;
+const { makeSelectBlogId, makeSelectNewBlog } = selectors;
 
 import { call, put, select, takeLatest } from 'redux-saga/effects';
 import { pushMessage } from 'containers/RequestStatusWrapper/actions';
@@ -40,14 +42,14 @@ export function* doLoadBlog() {
       method: 'GET',
     });
     if (blogResult.error) {
-      yield put(loadBlogError(blogResult));
+      yield put(loadBlogRegisterError(blogResult));
       yield put(pushMessage(blogLoadErrorMessage));
     } else {
-      yield put(loadBlogSuccess(blogResult));
+      yield put(loadBlogRegisterSuccess(blogResult));
       yield put(pushMessage(blogLoadedMessage));
     }
   } catch (err) {
-    yield put(loadBlogError(err));
+    yield put(loadBlogRegisterError(err));
     yield put(pushMessage(COMMUNICATION_ERROR_MESSAGE));
   }
 }
@@ -65,14 +67,14 @@ export function* doUpdateBlog() {
       },
     });
     if (updateResult.error) {
-      yield put(updateBlogError(updateResult));
+      yield put(updateBlogRegisterError(updateResult));
       yield put(pushMessage(blogUpdatedErrorMessage));
     } else {
-      yield put(updateBlogSuccess(updateResult));
+      yield put(updateBlogRegisterSuccess(updateResult));
       yield put(pushMessage(blogUpdatedMessage));
     }
   } catch (err) {
-    yield put(updateBlogError(err));
+    yield put(updateBlogRegisterError(err));
     yield put(pushMessage(COMMUNICATION_ERROR_MESSAGE));
   }
 }
@@ -90,15 +92,15 @@ export function* doCreateBlog() {
       },
     });
     if (blogCreateResult.error) {
-      yield put(createBlogError(blogCreateResult));
+      yield put(createBlogRegisterError(blogCreateResult));
       yield put(pushMessage(blogCreateErrorMessage));
     } else {
-      yield put(createBlogSuccess(blogCreateResult));
+      yield put(createBlogRegisterSuccess(blogCreateResult));
       yield put(pushMessage(blogCreatedMessage));
       window.location = `/admin/blog/edit/${blogCreateResult.id}`;
     }
   } catch (err) {
-    yield put(createBlogError(err));
+    yield put(createBlogRegisterError(err));
     yield put(pushMessage(COMMUNICATION_ERROR_MESSAGE));
   }
 }
