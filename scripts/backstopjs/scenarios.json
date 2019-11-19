@@ -1,4 +1,17 @@
 {
-  "scenarioIds": ["", "account", "admin", "contact", "work"],
+  "scenarioIds": [
+    "",
+    "account",
+    "admin",
+    "contact",
+    "greasemonkey/github_auto_merge",
+    "monzoPots",
+    "photography",
+    "sign-up",
+    "sitemap",
+    "work",
+    "work",
+    "work/degree"
+  ],
   "globallyHiddenSelectors": ["img"]
 }
