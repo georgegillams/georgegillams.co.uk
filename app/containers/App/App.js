@@ -36,6 +36,7 @@ import SiteMap from 'containers/SiteMap/Loadable';
 import Work from 'containers/Work/Loadable';
 import AboutDegree from 'containers/AboutDegree/Loadable';
 import BpkDemoPage from 'containers/BpkDemoPage/Loadable';
+import Konami from 'containers/Konami';
 import MonzoPots from 'containers/MonzoPots/Loadable';
 import { GGRedirect } from 'gg-components/dist/Redirect';
 import PasswordCharacterExtractor from 'containers/PasswordCharacterExtractor/Loadable';
@@ -80,6 +81,7 @@ const App = () => (
       <NavigationBarWrapper />
       <Authenticator />
       <NotificationCenter />
+      <Konami />
       <PageContainer>
         <Switch>
           {redirects.map(red => (
