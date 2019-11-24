@@ -6,7 +6,7 @@ import selectors from './selectors';
 import actions from './actions';
 import reducer from './reducer';
 import saga from './saga';
-import Comp from './AdminBlogs';
+import Container from './Container';
 
 import injectReducer from 'utils/injectReducer';
 import injectSaga from 'utils/injectSaga';
@@ -34,5 +34,5 @@ export default compose(
   withReducer,
   withSaga,
   withConnect,
-)(Comp);
+)(Container);
 export { mapDispatchToProps };

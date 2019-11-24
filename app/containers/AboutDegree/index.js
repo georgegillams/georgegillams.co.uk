@@ -1,1 +1,1 @@
-export { default } from './AboutDegree';
+export { default } from './Container';

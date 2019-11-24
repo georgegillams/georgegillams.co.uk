@@ -4,10 +4,10 @@ import { composeContainer } from 'helpers/redux';
 import actionMeta from './actionMeta';
 import { selectors, actions, reducer } from './redux-definitions';
 import saga from './saga';
-import BlogViewer from './BlogViewer';
+import Container from './Container';
 
 module.exports = composeContainer(
-  BlogViewer,
+  Container,
   actionMeta.key,
   { ...selectors, ...appSelectors },
   { ...actions },

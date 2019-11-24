@@ -5,10 +5,10 @@ import { composeContainer } from 'helpers/redux';
 import actionMeta from './actionMeta';
 import { selectors, actions, reducer } from './redux-definitions';
 import saga from './saga';
-import Login from './Login';
+import Container from './Container';
 
 module.exports = composeContainer(
-  Login,
+  Container,
   actionMeta.key,
   { ...selectors, ...appSelectors },
   { ...actions, appActions },
