@@ -1,1 +1,1 @@
-export { default } from './DeprecationNotice';
+export { default } from './Container';

@@ -4,10 +4,10 @@ import { composeContainer } from 'helpers/redux';
 import actionMeta from './actionMeta';
 import { selectors, actions, reducer } from './redux-definitions';
 import saga from './saga';
-import SiteMap from './SiteMap';
+import Container from './Container';
 
 module.exports = composeContainer(
-  SiteMap,
+  Container,
   actionMeta.key,
   { ...selectors, ...appSelectors },
   { ...actions },

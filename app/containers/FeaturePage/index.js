@@ -1,1 +1,1 @@
-export { default } from './FeaturePage';
+export { default } from './Container';

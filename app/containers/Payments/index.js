@@ -1,3 +1,3 @@
-import PaymentsPage from './PaymentsPage';
+import Container from './Container';
 
-export default PaymentsPage;
+export default Container;

@@ -1,1 +1,1 @@
-export { default } from './PasswordCharacterExtractor';
+export { default } from './Container';
