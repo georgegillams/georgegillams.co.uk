@@ -5,7 +5,7 @@ import BpkImage, {
   withLazyLoading,
   withLoadingBehavior,
 } from 'bpk-component-image';
-import BpkInput, { INPUT_TYPES, CLEAR_BUTTON_MODES } from 'bpk-component-input';
+import Input, { INPUT_TYPES, CLEAR_BUTTON_MODES } from 'bpk-component-input';
 import { cssModules } from 'bpk-react-utils';
 import { associate } from 'helpers/objects';
 
@@ -80,7 +80,7 @@ export default class MonzoPots extends React.Component {
         <Section>
           <Section name="Monzo pot tracking 💳">
             {!monzoPotDisplayData && (
-              <BpkInput
+              <Input
                 id="password"
                 className={getClassName('pages__component')}
                 type={INPUT_TYPES.password}
