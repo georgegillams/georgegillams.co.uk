@@ -20,7 +20,7 @@
 
 import React, { type Node } from 'react';
 import PropTypes from 'prop-types';
-import BpkInput from 'bpk-component-input';
+import { Input } from 'gg-components/dist/Input';
 import BpkLabel from 'bpk-component-label';
 
 // import STYLES from './bpk-button.scss'; import {cssModules} from 'bpk-react-utils';  const getClassName = cssModules(STYLES); // REGEX_REPLACED
@@ -45,7 +45,7 @@ const DemoNumberComponent = props => {
   return (
     <div>
       <BpkLabel htmlFor={propName}>{`${propName} (number)`}</BpkLabel>
-      <BpkInput
+      <Input
         className={className}
         value={value}
         onChange={event => onChange(parseFloat(event.target.value))}

@@ -20,7 +20,7 @@
 
 import React, { type Node } from 'react';
 import PropTypes from 'prop-types';
-import BpkInput from 'bpk-component-input';
+import { Input } from 'gg-components/dist/Input';
 import BpkLabel from 'bpk-component-label';
 
 // import STYLES from './bpk-button.scss'; import {cssModules} from 'bpk-react-utils';  const getClassName = cssModules(STYLES); // REGEX_REPLACED
@@ -52,7 +52,7 @@ class DemoFunctionComponent extends React.Component {
     return (
       <div>
         <BpkLabel htmlFor={propName}>{`${propName} (function)`}</BpkLabel>
-        <BpkInput
+        <Input
           className={className}
           value={this.state.functionString}
           onChange={event => {
