@@ -4,7 +4,7 @@ import { Helmet } from 'react-helmet';
 import { cssModules } from 'bpk-react-utils';
 
 import { ArticleCard, ARTICLE_CARD_LAYOUTS } from 'gg-components/dist/Cards';
-import AboutPage from 'containers/About/About';
+import AboutPage from 'containers/About';
 import STYLES from 'containers/pages.scss';
 
 const getClassName = cssModules(STYLES); // REGEX_REPLACED
