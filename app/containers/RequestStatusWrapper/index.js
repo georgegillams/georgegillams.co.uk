@@ -8,8 +8,8 @@ import reducer from './reducer';
 import saga from './saga';
 import Container from './Container';
 
-import injectSaga from 'utils/injectSaga';
-import injectReducer from 'utils/injectReducer';
+import injectSaga from 'meta-redux/dist/utils/injectSaga';
+import injectReducer from 'meta-redux/dist/utils/injectReducer';
 
 const mapDispatchToProps = dispatch => ({
   purgeMessages: () => dispatch(purgeMessages()),

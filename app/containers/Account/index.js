@@ -9,12 +9,12 @@ import reducer from './reducer';
 import saga from './saga';
 import Container from './Container';
 
-import injectReducer from 'utils/injectReducer';
-import injectSaga from 'utils/injectSaga';
+import injectReducer from 'meta-redux/dist/utils/injectReducer';
+import injectSaga from 'meta-redux/dist/utils/injectSaga';
 import appSelectors from 'containers/App/selectors';
 import appActions from 'containers/App/actions';
-import { mapSelectors } from 'helpers/redux/selectors';
-import { mapActions } from 'helpers/redux/actions';
+import { mapSelectors } from 'meta-redux/dist/selectors';
+import { mapActions } from 'meta-redux/dist/actions';
 
 const mapDispatchToProps = dispatch =>
   mapActions(dispatch, { ...appActions, ...actions });

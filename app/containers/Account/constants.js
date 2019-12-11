@@ -4,7 +4,7 @@ const { actionDefinitions } = actionMeta;
 
 import defineConstants, {
   inferConstantsFromActionDefinitions,
-} from 'helpers/redux/constants';
+} from 'meta-redux/dist/constants';
 
 module.exports = defineConstants(
   ...inferConstantsFromActionDefinitions(actionDefinitions),
