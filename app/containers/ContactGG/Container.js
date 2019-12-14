@@ -92,10 +92,7 @@ export default class Contact extends Component {
               title="GitHub"
               cellStyle={INFO_CELL_STYLES.dark}
               content={
-                <TextLink
-                  href="https://github.com/people/georgegillams"
-                  external
-                >
+                <TextLink href="https://github.com/georgegillams" external>
                   See my profile on GitHub
                 </TextLink>
               }
