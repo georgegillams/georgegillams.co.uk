@@ -10,32 +10,38 @@ const POT_CONFIGS = [
   },
   {
     name: 'Holiday',
-    startDate: `${thisYear}-10-01`,
-    startAmount: '215.49',
+    startDate: `${thisYear}-12-01`,
+    startAmount: 291.67,
   },
   {
     name: 'Emergencies',
-    startDate: `${thisYear}-05-01`,
+    startDate: `${thisYear}-12-01`,
+    startAmount: 291.67,
   },
   {
     name: 'Gifts',
-    startDate: `${thisYear}-05-01`,
+    startDate: `${thisYear}-12-01`,
   },
   {
     name: 'Charlie',
-    startDate: `${thisYear}-05-01`,
+    startDate: `${thisYear}-12-01`,
+  },
+  {
+    name: 'Rents',
+    startDate: `${thisYear}-12-01`,
   },
   {
     name: 'Extras',
-    startDate: `${thisYear}-05-01`,
+    startDate: `${thisYear}-12-01`,
+    startAmount: 291.67,
   },
   {
     name: 'Subscriptions (yearly) - Dropbox, Todoist and Domains',
-    startDate: `${thisYear}-05-01`,
+    startDate: `${thisYear}-12-01`,
   },
   {
     name: 'Dentist and prescriptions',
-    startDate: `${thisYear}-05-01`,
+    startDate: `${thisYear}-12-01`,
   },
   {
     name: 'Buffer',
