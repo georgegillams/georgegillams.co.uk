@@ -1,8 +1,7 @@
 # [https://www.georgegillams.co.uk/](https://www.georgegillams.co.uk/)
 
+![Build status](https://api.travis-ci.org/georgegillams/georgegillams.co.uk.svg?branch=master)
 [![Greenkeeper badge](https://badges.greenkeeper.io/georgegillams/georgegillams.co.uk.svg)](https://greenkeeper.io/)
-
-![Travis status](https://api.travis-ci.org/georgegillams/georgegillams.co.uk.svg?branch=master)
 
 This repo was originally a fork of [Dinesh Pandiyan's React Redux Boilerplate app](https://github.com/flexdinesh/react-redux-boilerplate).
 
