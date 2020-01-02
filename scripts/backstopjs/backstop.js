@@ -4,6 +4,8 @@ const scenarioData = require('./scenarios.json');
 const PORT = 9001;
 const BASE_URL = `http://127.0.0.1:${PORT}/`;
 
+const allowFailure = process.argv.includes('--allowFailure');
+
 let scenarios = [];
 
 scenarioData.scenarioIds.forEach(sI => {
@@ -59,5 +61,7 @@ backstop('test', { config: config })
   })
   .catch(() => {
     //       // test failed
-    backstop('approve', { config: config }).then(() => process.exit(1));
+    backstop('approve', { config: config }).then(() =>
+      process.exit(allowFailure ? 0 : 1),
+    );
   });
