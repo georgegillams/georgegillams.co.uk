@@ -8,6 +8,8 @@ const webpack = require('webpack');
 
 process.noDeprecation = true;
 
+const { NODE_ENV, BUILT_AT, STARTED_AT } = process.env;
+
 module.exports = options => ({
   mode: options.mode,
   entry: options.entry,
@@ -119,7 +121,9 @@ module.exports = options => ({
     // drop any unreachable code.
     new webpack.DefinePlugin({
       'process.env': {
-        NODE_ENV: JSON.stringify(process.env.NODE_ENV),
+        NODE_ENV: JSON.stringify(NODE_ENV),
+        BUILT_AT,
+        STARTED_AT,
       },
     }),
   ]),
