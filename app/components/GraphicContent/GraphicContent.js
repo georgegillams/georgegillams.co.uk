@@ -1,11 +1,11 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import BpkCheckbox from 'bpk-component-checkbox';
+import { Checkbox } from 'gg-components/dist/Checkbox';
 import { cssModules } from 'bpk-react-utils';
 
 import STYLES from './graphic-content.scss';
 
-import {Button} from 'gg-components/dist/Button';
+import { Button } from 'gg-components/dist/Button';
 
 const getClassName = cssModules(STYLES); // REGEX_REPLACED
 
@@ -55,7 +55,7 @@ const GraphicContent = props => {
               Show graphic content
             </Button>
             <br />
-            <BpkCheckbox
+            <Checkbox
               className={getClassName('graphic-content__text')}
               name="Always show graphic content"
               label="Always show graphic content"

@@ -1,7 +1,7 @@
 import React, { Fragment } from 'react';
 import PropTypes from 'prop-types';
 import { Input } from 'gg-components/dist/Input';
-import BpkCheckBox from 'bpk-component-checkbox';
+import { Checkbox } from 'gg-components/dist/Checkbox';
 import BpkTextarea from 'bpk-component-textarea';
 import { cssModules } from 'bpk-react-utils';
 
@@ -89,7 +89,7 @@ class FormBuilder extends React.Component {
           <Fragment>
             {formField.type === 'CHECKBOX' && (
               <Fragment>
-                <BpkCheckBox
+                <Checkbox
                   className={getClassName('forms__component')}
                   name={formField.name}
                   label={formField.name}
@@ -103,7 +103,7 @@ class FormBuilder extends React.Component {
                       submitOnChange ? onSubmit : null,
                     );
                   }}
-                  disabled={formField.disabled}
+                  enabled={formField.disabled !== null && !formField.disabled}
                 />
                 <br />
               </Fragment>

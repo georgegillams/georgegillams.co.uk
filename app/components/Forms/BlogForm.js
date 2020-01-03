@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Input } from 'gg-components/dist/Input';
-import BpkCheckBox from 'bpk-component-checkbox';
+import { Checkbox } from 'gg-components/dist/Checkbox';
 import BpkTextArea from 'bpk-component-textarea';
 import { cssModules } from 'bpk-react-utils';
 
@@ -132,7 +132,7 @@ export default class BlogForm extends React.Component {
           }}
           placeholder="Blog card date"
         />
-        <BpkCheckBox
+        <Checkbox
           className={checkboxElementClassNameFinal.join(' ')}
           label="lightCard"
           name="lightCard"
@@ -187,7 +187,7 @@ export default class BlogForm extends React.Component {
           }}
           placeholder="Blog card image border color"
         />
-        <BpkCheckBox
+        <Checkbox
           className={checkboxElementClassNameFinal.join(' ')}
           label="published"
           name="published"
@@ -214,7 +214,7 @@ export default class BlogForm extends React.Component {
           placeholder="Blog published timestamp"
         />
         <br />
-        <BpkCheckBox
+        <Checkbox
           className={checkboxElementClassNameFinal.join(' ')}
           label="showInBlogsList"
           name="showInBlogsList"
@@ -224,7 +224,7 @@ export default class BlogForm extends React.Component {
           }}
         />
         <br />
-        <BpkCheckBox
+        <Checkbox
           className={checkboxElementClassNameFinal.join(' ')}
           label="showInTravelBlogsList"
           name="showInTravelBlogsList"

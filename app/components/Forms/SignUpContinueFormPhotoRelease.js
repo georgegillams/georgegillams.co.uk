@@ -1,14 +1,14 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Input } from 'gg-components/dist/Input';
-import BpkCheckBox from 'bpk-component-checkbox';
+import { Checkbox } from 'gg-components/dist/Checkbox';
 import { cssModules } from 'bpk-react-utils';
 
 import FormBuilder from './FormBuilder';
 import STYLES from './forms.scss';
 
 import { TextLink } from 'gg-components/dist/Typography';
-import {Button} from 'gg-components/dist/Button';
+import { Button } from 'gg-components/dist/Button';
 import {
   STRING_REGEX,
   INT_REGEX,
@@ -63,7 +63,7 @@ class SignUpContinueFormPhotoRelease extends React.Component {
         the discretion of Wessex CCP EPICC Conference 2019 and/or Wessex CCP.
         <br />
         <br />
-        <BpkCheckBox
+        <Checkox
           className={getClassName('forms__component')}
           name="photoReleaseConsented"
           label="I have read and understood, and agree to the above photo release terms."
