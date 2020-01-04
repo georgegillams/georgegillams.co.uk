@@ -1,14 +1,8 @@
 @import '~bpk-mixins';
 @import '~gg-components/dist/Tokens/common';
 
-@fontface {
-  font-family: 'Quattrocento Sans', sans-serif;
-  src: url('https://fonts.googleapis.com/css?family=Quattrocento+Sans');
-}
-
 .blog-viewer {
   &__element {
     display: inline;
-    font-family: 'Quattrocento Sans', sans-serif;
   }
 }

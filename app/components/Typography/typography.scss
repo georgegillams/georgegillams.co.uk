@@ -1,27 +1,11 @@
 @import '~bpk-mixins';
 @import '~gg-components/dist/Tokens/common';
 
-@fontface {
-  font-family: 'Quattrocento Sans', sans-serif;
-  src: url('https://fonts.googleapis.com/css?family=Quattrocento+Sans');
-}
-
-@fontface {
-  font-family: 'Tangerine', cursive;
-  src: url('https://fonts.googleapis.com/css?family=Tangerine');
-}
-
-@fontface {
-  font-family: 'Iceland', cursive;
-  src: url('https://fonts.googleapis.com/css?family=Iceland');
-}
-
 .typography {
   &__main {
     width: 100%;
     padding-bottom: 1rem;
     color: $not-black;
-    font-family: 'Quattrocento Sans', sans-serif;
     text-decoration: none;
 
     @media (prefers-color-scheme: dark) {
@@ -69,7 +53,6 @@
 
   &__text {
     color: $not-black;
-    font-family: 'Quattrocento Sans', sans-serif;
     text-decoration: none;
 
     @media (prefers-color-scheme: dark) {
