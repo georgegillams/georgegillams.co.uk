@@ -9,7 +9,7 @@ import Skeleton from './Skeleton';
 import { BlogCard } from 'components/Blogs';
 import { Button } from 'gg-components/dist/Button';
 import { Section } from 'gg-components/dist/Typography';
-import FormBuilder from 'components/Forms';
+import { FormBuilder } from 'gg-components/dist/FormBuilder';
 import { ID_REGEX } from 'helpers/constants';
 import {
   DebugObject,

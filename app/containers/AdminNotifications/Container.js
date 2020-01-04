@@ -9,7 +9,7 @@ import Skeleton from './Skeleton';
 import { NotificationComp } from 'gg-components/dist/Notifications';
 import { Button } from 'gg-components/dist/Button';
 import { Section } from 'gg-components/dist/Typography';
-import FormBuilder from 'components/Forms';
+import { FormBuilder } from 'gg-components/dist/FormBuilder';
 import {
   STRING_REGEX,
   INT_REGEX,

@@ -8,7 +8,7 @@ import BpkImage, {
 import Input, { INPUT_TYPES, CLEAR_BUTTON_MODES } from 'bpk-component-input';
 import { cssModules } from 'bpk-react-utils';
 import { associate } from 'helpers/objects';
-import FormBuilder from 'components/Forms';
+import { FormBuilder } from 'gg-components/dist/FormBuilder';
 
 import Skeleton from './Skeleton';
 

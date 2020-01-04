@@ -4,7 +4,7 @@ import { Input } from 'gg-components/dist/Input';
 import { Checkbox } from 'gg-components/dist/Checkbox';
 import { cssModules } from 'bpk-react-utils';
 
-import FormBuilder from './FormBuilder';
+import { FormBuilder } from 'gg-components/dist/FormBuilder';
 import STYLES from './forms.scss';
 
 import { TextLink } from 'gg-components/dist/Typography';
