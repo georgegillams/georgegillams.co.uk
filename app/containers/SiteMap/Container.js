@@ -174,6 +174,8 @@ export default class SiteMap extends React.Component {
               <TextLink href="/monzoPots">Monzo savings tracking</TextLink>
               <br />
               <TextLink href="/support">Support</TextLink>
+              <br />
+              <TextLink href="/status">Status</TextLink>
             </SubSection>
             <SubSection
               anchor={false}
