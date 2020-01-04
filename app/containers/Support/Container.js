@@ -5,7 +5,6 @@ import BpkImage, {
   withLazyLoading,
   withLoadingBehavior,
 } from 'bpk-component-image';
-import Input, { INPUT_TYPES, CLEAR_BUTTON_MODES } from 'bpk-component-input';
 import { cssModules } from 'bpk-react-utils';
 import { associate } from 'helpers/objects';
 import { FormBuilder } from 'gg-components/dist/FormBuilder';
@@ -67,7 +66,7 @@ export default class Support extends React.Component {
       outerClassNameFinal.push(className);
     }
 
-    const noSupport = loadLinksSuccess && (links && links.length === 0);
+    const noSupport = loadLinksSuccess && links && links.length === 0;
     const showLinks = links && links.length > 0;
     const isAdmin = user && user.admin;
 

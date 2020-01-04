@@ -1,7 +1,7 @@
 import React, { Fragment } from 'react';
 import PropTypes from 'prop-types';
 import { Helmet } from 'react-helmet';
-import Card from 'bpk-component-card';
+import { Card } from 'gg-components/dist/Cards';
 import { cssModules } from 'bpk-react-utils';
 
 import Skeleton from './Skeleton';

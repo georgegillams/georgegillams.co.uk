@@ -1,7 +1,6 @@
 import React, { Fragment } from 'react';
 import { withRouter } from 'react-router';
 import BpkThemeProvider from 'bpk-theming';
-import { themeAttributes as hnThemeAttributes } from 'bpk-component-horizontal-nav';
 import PropTypes from 'prop-types';
 import { Helmet } from 'react-helmet';
 import { cssModules } from 'bpk-react-utils';

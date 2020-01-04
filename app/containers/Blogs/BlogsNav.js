@@ -1,16 +1,13 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Helmet } from 'react-helmet';
-import BpkHorizontalNav, {
-  BpkHorizontalNavItem,
-} from 'bpk-component-horizontal-nav';
 import { cssModules } from 'bpk-react-utils';
 
 import BlogListSkeleton from './BlogListSkeleton';
 import STYLES from './blogs-page.scss';
 
 import { LoadingCover } from 'gg-components/dist/Auth';
-import {Button} from 'gg-components/dist/Button';
+import { Button } from 'gg-components/dist/Button';
 import BlogsList from 'components/Blogs';
 import PAGE_STYLES from 'containers/pages.scss';
 
