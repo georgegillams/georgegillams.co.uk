@@ -1,8 +1,7 @@
 import React, { Fragment } from 'react';
 import PropTypes from 'prop-types';
-import { Input } from 'gg-components/dist/Input';
+import { Input, TextArea } from 'gg-components/dist/Input';
 import { Checkbox } from 'gg-components/dist/Checkbox';
-import BpkTextarea from 'bpk-component-textarea';
 import { cssModules } from 'bpk-react-utils';
 
 import STYLES from './forms.scss';
@@ -154,7 +153,7 @@ class FormBuilder extends React.Component {
                 >
                   {formField.name}
                 </label>
-                <BpkTextarea
+                <TextArea
                   className={getClassName(
                     'forms__component',
                     'forms__component__text-box',

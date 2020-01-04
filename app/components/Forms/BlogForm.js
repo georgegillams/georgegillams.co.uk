@@ -1,8 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Input } from 'gg-components/dist/Input';
+import { Input, TextArea } from 'gg-components/dist/Input';
 import { Checkbox } from 'gg-components/dist/Checkbox';
-import BpkTextArea from 'bpk-component-textarea';
 import { cssModules } from 'bpk-react-utils';
 
 import STYLES from './forms.scss';
@@ -255,7 +254,7 @@ export default class BlogForm extends React.Component {
         <label htmlFor="blogContent" className={getClassName('forms__label')}>
           Blog content
         </label>
-        <BpkTextArea
+        <TextArea
           style={{ minHeight: '45rem' }}
           className={elementClassNameFinal.join(' ')}
           id="blogContent"
@@ -269,7 +268,7 @@ export default class BlogForm extends React.Component {
         <label htmlFor="blogBibtex" className={getClassName('forms__label')}>
           Blog bibtex
         </label>
-        <BpkTextArea
+        <TextArea
           className={elementClassNameFinal.join(' ')}
           id="blogBibtex"
           name="Blog bibtex"
