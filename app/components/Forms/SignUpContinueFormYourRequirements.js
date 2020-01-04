@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import { Input } from 'gg-components/dist/Input';
 import { cssModules } from 'bpk-react-utils';
 
-import FormBuilder from './FormBuilder';
+import { FormBuilder } from 'gg-components/dist/FormBuilder';
 import STYLES from './forms.scss';
 
 import {Button} from 'gg-components/dist/Button';

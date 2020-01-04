@@ -8,7 +8,7 @@ import Skeleton from './Skeleton';
 
 import { Button } from 'gg-components/dist/Button';
 import { Section, SubSection } from 'gg-components/dist/Typography';
-import FormBuilder from 'components/Forms';
+import { FormBuilder } from 'gg-components/dist/FormBuilder';
 import { ANYTHING_REGEX } from 'helpers/constants';
 import {
   DebugObject,

@@ -1,4 +1,3 @@
-export { default } from './FormBuilder';
 export SignUpForm from './SignUpForm';
 export BlogForm from './BlogForm';
 export LoginForm from './LoginForm';

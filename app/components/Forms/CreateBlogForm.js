@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { cssModules } from 'bpk-react-utils';
 
-import FormBuilder from './FormBuilder';
+import { FormBuilder } from 'gg-components/dist/FormBuilder';
 import STYLES from './forms.scss';
 
 import { STRING_REGEX, ID_REGEX, ANYTHING_REGEX } from 'helpers/constants';
