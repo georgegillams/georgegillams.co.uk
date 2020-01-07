@@ -8,7 +8,12 @@ import { cssModules } from 'bpk-react-utils'; // REGEX_REPLACED
 
 import STYLES from '../pages.scss';
 
-import { Section, SubSection, TextLink } from 'gg-components/dist/Typography';
+import {
+  Paragraph,
+  Section,
+  SubSection,
+  TextLink,
+} from 'gg-components/dist/Typography';
 import { DegreeModule } from 'gg-components/dist/Degree';
 import Comments from 'containers/Comments';
 
@@ -79,34 +84,35 @@ class Degree extends React.Component {
             height={442}
             src="https://upload.wikimedia.org/wikipedia/commons/a/a7/University_of_Southampton_Logo.svg"
           />
-          <br />
           <Section name="Summary">
-            4 year integrated Masters of Engineering (2013 - 2015, 2016 - 2018)
-            <br />
-            <br />
+            <Paragraph>
+              4 year integrated Masters of Engineering (2013 - 2015, 2016 -
+              2018)
+            </Paragraph>
             <DegreeModule
               name="Final percentage"
               percentage={FINAL_DEGREE_PERCENTAGE}
               filled={this.state.filled[0]}
             />
-            <br />
-            Degree classification:{' '}
-            <span style={{ fontWeight: 'bold' }}>1st class honours</span>
-            <br />
-            <br />
-            <TextLink
-              href="https://www.ecs.soton.ac.uk/programmes/g600-meng-software-engineering-4-yrs"
-              external
-            >
-              Degree information (current){' '}
-            </TextLink>
-            <br />
-            <TextLink
-              href="https://web.archive.org/web/20131128090133/https://www.ecs.soton.ac.uk/programmes/g600-meng-software-engineering-4-yrs#modules"
-              external
-            >
-              Degree information (archived){' '}
-            </TextLink>
+            <Paragraph>
+              Degree classification:{' '}
+              <span style={{ fontWeight: 'bold' }}>1st class honours</span>
+              <br />
+              <br />
+              <TextLink
+                href="https://www.ecs.soton.ac.uk/programmes/g600-meng-software-engineering-4-yrs"
+                external
+              >
+                Degree information (current){' '}
+              </TextLink>
+              <br />
+              <TextLink
+                href="https://web.archive.org/web/20131128090133/https://www.ecs.soton.ac.uk/programmes/g600-meng-software-engineering-4-yrs#modules"
+                external
+              >
+                Degree information (archived){' '}
+              </TextLink>
+            </Paragraph>
           </Section>
           <Section name="Breakdown">
             <SubSection name="Year 1">

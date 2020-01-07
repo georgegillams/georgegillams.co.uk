@@ -15,7 +15,12 @@ import Skeleton from './Skeleton';
 import HelperFunctions from 'helpers/HelperFunctions';
 import { MoneyPot } from 'gg-components/dist/MoneyPot';
 import { Button } from 'gg-components/dist/Button';
-import { Section, SubSection, TextLink } from 'gg-components/dist/Typography';
+import {
+  Paragraph,
+  Section,
+  SubSection,
+  TextLink,
+} from 'gg-components/dist/Typography';
 import { LoadingCover } from 'gg-components/dist/Auth';
 import STYLES from 'containers/pages.scss';
 
@@ -67,7 +72,7 @@ export default class Support extends React.Component {
       outerClassNameFinal.push(className);
     }
 
-    const noSupport = loadLinksSuccess && (links && links.length === 0);
+    const noSupport = loadLinksSuccess && links && links.length === 0;
     const showLinks = links && links.length > 0;
     const isAdmin = user && user.admin;
 
@@ -85,7 +90,9 @@ export default class Support extends React.Component {
             </Button>
             <br />
             <br />
-            {noSupport && <span>No support session is currently active.</span>}
+            {noSupport && (
+              <Paragraph>No support session is currently active.</Paragraph>
+            )}
             {showLinks &&
               links.map(l => (
                 <SubSection anchor={false} name={l.name || 'untitled'}>

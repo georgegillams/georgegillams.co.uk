@@ -11,7 +11,12 @@ import Skeleton from './Skeleton';
 
 import { LoadingIndicator } from 'gg-components/dist/LoadingIndicator';
 import { Button } from 'gg-components/dist/Button';
-import { Section, SubSection, TextLink } from 'gg-components/dist/Typography';
+import {
+  Paragraph,
+  Section,
+  SubSection,
+  TextLink,
+} from 'gg-components/dist/Typography';
 import { CodeInline } from 'gg-components/dist/Code';
 import {
   DebugObject,
@@ -67,9 +72,11 @@ export default class Account extends React.Component {
           setLoginRedirect={() => setLoginRedirect('account')}
         >
           <Section name="Account">
-            {user && user.email && <div>{`Email: ${user.email}`}</div>}
-            {user && user.uname && <div>{`Display name: ${user.uname}`}</div>}
-            <br />
+            <Paragraph>
+              {user && user.email && <div>{`Email: ${user.email}`}</div>}
+              {user && user.uname && <div>{`Display name: ${user.uname}`}</div>}
+              <br />
+            </Paragraph>
             {user && !user.emailVerified && EMAIL_VERIFICATION_ENABLED && (
               <Fragment>
                 <Button large onClick={requestVerificationEmail}>
