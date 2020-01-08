@@ -56,7 +56,7 @@ const GraphicContent = props => {
             </Button>
             <br />
             <Checkbox
-              className={getClassName('graphic-content__text')}
+              labelClassName={getClassName('graphic-content__text')}
               name="Always show graphic content"
               label="Always show graphic content"
               checked={alwaysShowGraphicContent}
