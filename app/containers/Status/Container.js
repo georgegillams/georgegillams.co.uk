@@ -6,7 +6,7 @@ import { getTimeDifference } from 'helpers/time';
 
 import STYLES from '../pages.scss';
 
-import { Section, SubSection } from 'gg-components/dist/Typography';
+import { Paragraph, Section, SubSection } from 'gg-components/dist/Typography';
 const getClassName = cssModules(STYLES);
 
 const Status = props => {
@@ -26,8 +26,23 @@ const Status = props => {
           src="https://badges.greenkeeper.io/georgegillams/georgegillams.co.uk.svg"
         />
         <SubSection className={getClassName('pages__component')} anchor={false}>
-          Built {getTimeDifference(new Date(process.env.BUILT_AT * 1000))}
+          <Paragraph>
+            Built {getTimeDifference(new Date(process.env.BUILT_AT * 1000))}
+          </Paragraph>
         </SubSection>
+      </Section>
+      <Section anchor={false} name="gg-components">
+        <img
+          className={getClassName('pages__component')}
+          alt="Build status"
+          src="https://api.travis-ci.org/georgegillams/gg-components.svg?branch=master"
+        />
+        <br />
+        <img
+          className={getClassName('pages__component')}
+          alt="Greenkeeper status"
+          src="https://badges.greenkeeper.io/georgegillams/gg-components.svg"
+        />
       </Section>
     </div>
   );

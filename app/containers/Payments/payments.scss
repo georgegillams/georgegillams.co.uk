@@ -1,0 +1,8 @@
+@import '~bpk-mixins';
+
+.payments {
+  &__inline {
+    display: flex;
+    align-items: center;
+  }
+}
