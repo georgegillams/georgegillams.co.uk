@@ -13,6 +13,7 @@ import { CodeInline } from 'gg-components/dist/Code';
 import { CopyButton } from 'gg-components/dist/Button';
 import { GG_EMAIL } from 'helpers/constants';
 import STYLES from './payments.scss';
+import PaymentForm from 'containers/PaymentForm';
 
 const getClassName = cssModules(STYLES);
 
@@ -31,12 +32,13 @@ export default class PaymentsPage extends React.Component {
         <Section name="Send me money">
           <SubSection name="Bank transfer">
             <Paragraph className={getClassName('payments__inline')}>
-              <CodeInline>04-00-04</CodeInline>
+              <CodeInline>00-00-00</CodeInline>
               <CopyButton style={{ display: 'inline' }} text="040004" />{' '}
-              <CodeInline>05339705</CodeInline>
+              <CodeInline>00000000</CodeInline>
               <CopyButton style={{ display: 'inline' }} text="05339705" />
             </Paragraph>
           </SubSection>
+          <PaymentForm />
         </Section>
       </div>
     );

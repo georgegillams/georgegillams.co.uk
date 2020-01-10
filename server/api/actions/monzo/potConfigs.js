@@ -22,19 +22,20 @@ const POT_CONFIGS = [
     startDate: `${lastYear}-12-01`,
   },
   {
-    name: 'Charlie',
-    startDate: `${lastYear}-12-01`,
-    startAmount: 291,
+    name: 'Charlie birthday',
+    startDate: `${thisYear}-01-01`,
+  },
+  {
+    name: 'Charlie Christmas',
+    startDate: `${thisYear}-01-01`,
   },
   {
     name: 'Rents',
     startDate: `${lastYear}-12-01`,
-    startAmount: 170,
   },
   {
     name: 'Extras',
     startDate: `${lastYear}-12-01`,
-    startAmount: 100,
   },
   {
     name: 'Yearly Subscriptions',
@@ -43,8 +44,7 @@ const POT_CONFIGS = [
   },
   {
     name: 'Dentist and prescriptions',
-    startDate: `${lastYear}-12-01`,
-    startAmount: 30,
+    startDate: `${thisYear}-01-01`,
   },
   {
     name: 'Buffer',

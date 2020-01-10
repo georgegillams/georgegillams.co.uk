@@ -1,26 +1,25 @@
-import { datumLoad } from '../datum';
-
-import paymentsAllowedAttributes from './paymentsAllowedAttributes';
-
+import { datumLoad, datumLoadSingle, datumCreate } from '../datum';
 import authentication from 'utils/authentication';
-import { UNAUTHORISED_READ } from 'helpers/constants';
 import reqSecure from 'utils/reqSecure';
+import { UNAUTHORISED_READ } from 'helpers/constants';
+import stripePaymentsAllowedAttributes from './stripePaymentsAllowedAttributes';
+import { find } from 'utils/find';
 
 export default function load(req) {
-  const reqSecured = reqSecure(req, paymentsAllowedAttributes);
+  const reqSecured = reqSecure(req, stripePaymentsAllowedAttributes);
   return new Promise((resolve, reject) => {
     authentication(reqSecured).then(
       user => {
-        if (user && user.admin) {
-          resolve(
-            datumLoad({
-              redisKey: 'payments',
-              includeOwnerUname: true,
-              includeDeleted: user && user.admin,
-            }),
-          );
+        if (user) {
+          datumLoad({ redisKey: 'stripepayments' }).then(stripePaymentsData => {
+            if (!stripePaymentsData) {
+              resolve([]);
+            }
+            const result = stripePaymentsData.filter(p => p.userId === user.id);
+            resolve(result);
+          });
         } else {
-          reject(UNAUTHORISED_READ);
+          resolve(UNAUTHORISED_READ);
         }
       },
       err => reject(err),
