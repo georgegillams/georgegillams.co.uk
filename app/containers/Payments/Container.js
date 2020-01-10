@@ -29,9 +29,6 @@ export default class PaymentsPage extends React.Component {
       <div className={classNames.join(' ')} {...rest}>
         <Helmet title="Payments" />
         <Section name="Send me money">
-          <Paragraph>
-            If you want to send me money, you can do so in a number of ways:
-          </Paragraph>
           <SubSection name="Bank transfer">
             <Paragraph className={getClassName('payments__inline')}>
               <CodeInline>04-00-04</CodeInline>

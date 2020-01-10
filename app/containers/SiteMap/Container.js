@@ -255,19 +255,15 @@ export default class SiteMap extends React.Component {
               className={getClassName('pages__site-map-item')}
               name="Admin 👮‍♂️"
             >
-              <TextLink href="/admin/sessions">Sessions</TextLink>
+              <TextLink href="/admin/users">Users</TextLink>
               <br />
-              <TextLink href="/admin/blogs">Blogs</TextLink>
-              <br />
-              <TextLink href="/admin/blog-comments">Blog comments</TextLink>
+              <TextLink href="/monzoPots">Monzo</TextLink>
               <br />
               <TextLink href="/admin/notifications">Notifications</TextLink>
               <br />
-              <TextLink href="/admin/payments">Payments</TextLink>
+              <TextLink href="/admin/blogs">Blogs</TextLink>
               <br />
-              <TextLink href="/admin/ping-pen-testing">
-                Ping pen-testing
-              </TextLink>
+              <TextLink href="/payments">Payments</TextLink>
             </SubSection>
             <SubSection
               anchor={false}
