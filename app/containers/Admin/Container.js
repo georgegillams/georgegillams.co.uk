@@ -52,7 +52,7 @@ export default class Admin extends React.Component {
                 day={null}
                 month={null}
                 className={getClassName('pages__card')}
-                linkUrl="/admin/monzo"
+                linkUrl="/monzoPots"
                 title="Monzo"
               />
               <ArticleCard
@@ -70,6 +70,14 @@ export default class Admin extends React.Component {
                 className={getClassName('pages__card')}
                 linkUrl="/admin/blog"
                 title="Blogs"
+              />
+              <ArticleCard
+                layout={ARTICLE_CARD_LAYOUTS.narrowCompact}
+                day={null}
+                month={null}
+                className={getClassName('pages__card')}
+                linkUrl="/payments"
+                title="Payments"
               />
             </div>
           </Section>
