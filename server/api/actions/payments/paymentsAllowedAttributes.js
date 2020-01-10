@@ -1,17 +1,8 @@
-import {
-  INT_REGEX,
-  SORT_CODE_REGEX,
-  MONZO_ME_REGEX,
-  STRING_REGEX,
-} from 'helpers/constants';
+import { EMAIL_REGEX, DECIMAL_REGEX } from 'helpers/constants';
 
-const paymentsAllowedAttributes = [
-  { attribute: 'amount', pattern: INT_REGEX },
-  { attribute: 'sortCode', pattern: SORT_CODE_REGEX },
-  { attribute: 'accountNumber', pattern: INT_REGEX },
-  { attribute: 'monzoMeLink', pattern: MONZO_ME_REGEX },
-  { attribute: 'reference', pattern: STRING_REGEX },
-  { attribute: 'status', pattern: STRING_REGEX },
+const commentsAllowedAttributes = [
+  { attribute: 'amount', pattern: DECIMAL_REGEX },
+  { attribute: 'email', pattern: EMAIL_REGEX },
 ];
 
-export default paymentsAllowedAttributes;
+export default commentsAllowedAttributes;

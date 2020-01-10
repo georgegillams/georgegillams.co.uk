@@ -30,6 +30,7 @@ import NavigationBarWrapper from 'containers/NavigationBarWrapperGG';
 import NotFoundPage from 'containers/NotFoundPage/Loadable';
 import NotificationCenter from 'containers/NotificationCenter';
 import PaymentsPage from 'containers/Payments/Loadable';
+import MakePaymentPage from 'containers/MakePayment/Loadable';
 import Photography from 'containers/Photography';
 import RequestStatusWrapper from 'containers/RequestStatusWrapper';
 import SignUpPage from 'containers/SignUpGG/Loadable';
@@ -129,7 +130,11 @@ const App = () => (
           <Route path="/gts" component={GtsPage} />
           <Route path="/login" component={LoginPage} />
           <Route path="/magic-login" component={MagicLoginPage} />
-          <Route path="/payments" component={PaymentsPage} />
+          <Route exact path="/payments" component={PaymentsPage} />
+          <Route
+            path="/payments/make-payment/:id"
+            component={MakePaymentPage}
+          />
           <Route path="/sign-up" component={SignUpPage} />
           <Route path="/sitemap" component={SiteMap} />
           <Route

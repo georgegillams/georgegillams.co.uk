@@ -1,12 +1,10 @@
 import { datumLoad } from '../datum';
-
+import authentication from 'utils/authentication';
+import reqSecure from 'utils/reqSecure';
+import { UNAUTHORISED_READ } from 'helpers/constants';
 import paymentsAllowedAttributes from './paymentsAllowedAttributes';
 
-import authentication from 'utils/authentication';
-import { UNAUTHORISED_READ } from 'helpers/constants';
-import reqSecure from 'utils/reqSecure';
-
-export default function load(req) {
+export default function loadAll(req) {
   const reqSecured = reqSecure(req, paymentsAllowedAttributes);
   return new Promise((resolve, reject) => {
     authentication(reqSecured).then(
@@ -15,12 +13,11 @@ export default function load(req) {
           resolve(
             datumLoad({
               redisKey: 'payments',
-              includeOwnerUname: true,
-              includeDeleted: user && user.admin,
+              includeDeleted: true,
             }),
           );
         } else {
-          reject(UNAUTHORISED_READ);
+          resolve(UNAUTHORISED_READ);
         }
       },
       err => reject(err),
