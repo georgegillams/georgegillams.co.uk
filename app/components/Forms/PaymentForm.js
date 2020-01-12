@@ -1,6 +1,8 @@
 import React, { Fragment } from 'react';
 import PropTypes from 'prop-types';
 import { Input } from 'gg-components/dist/Input';
+import { Button } from 'gg-components/dist/Button';
+import { Section } from 'gg-components/dist/Typography';
 import {
   injectStripe,
   CardElement,
@@ -12,13 +14,7 @@ import {
   IbanElement,
   IdealBankElement,
 } from 'react-stripe-elements';
-import { cssModules } from 'bpk-react-utils';
 
-import { FormBuilder } from 'gg-components/dist/FormBuilder';
-import STYLES from './forms.scss';
-
-import {Button} from 'gg-components/dist/Button';
-import { Section } from 'gg-components/dist/Typography';
 import {
   STRING_REGEX,
   INT_REGEX,
@@ -32,7 +28,9 @@ import {
   TICKET_COST,
 } from 'helpers/constants';
 
-const getClassName = cssModules(STYLES); // REGEX_REPLACED
+import { FormBuilder } from 'gg-components/dist/FormBuilder';
+
+import './forms.scss';
 
 class SignUpContinueFormPayment extends React.Component {
   static propTypes = {
@@ -78,12 +76,12 @@ class SignUpContinueFormPayment extends React.Component {
     if (balance <= 0) {
       return (
         <Fragment>
-          <div className={getClassName('forms__component')}>
+          <div className="forms__component">
             {'You can view and edit your details via your EPICC account.'}
           </div>
           <Button
             disabled={disabled}
-            className={getClassName('forms__component')}
+            className="forms__component"
             large
             href="/account"
           >
@@ -95,40 +93,30 @@ class SignUpContinueFormPayment extends React.Component {
 
     return (
       <div>
-        <label htmlFor="cardNumber" className={getClassName('forms__label')}>
+        <label htmlFor="cardNumber" className="forms__label">
           Card number
         </label>
-        <CardNumberElement
-          className={getClassName('forms__component forms__bpk-input')}
-        />
-        <label htmlFor="expiry" className={getClassName('forms__label')}>
+        <CardNumberElement className="forms__component forms__bpk-input" />
+        <label htmlFor="expiry" className="forms__label">
           Expiry date
         </label>
-        <CardExpiryElement
-          className={getClassName('forms__component forms__bpk-input')}
-        />
-        <label htmlFor="cvc" className={getClassName('forms__label')}>
+        <CardExpiryElement className="forms__component forms__bpk-input" />
+        <label htmlFor="cvc" className="forms__label">
           CVC code
         </label>
-        <CardCVCElement
-          className={getClassName('forms__component forms__bpk-input')}
-        />
-        <label htmlFor="postCode" className={getClassName('forms__label')}>
+        <CardCVCElement className="forms__component forms__bpk-input" />
+        <label htmlFor="postCode" className="forms__label">
           Post code
         </label>
-        <PostalCodeElement
-          className={getClassName('forms__component forms__bpk-input')}
-        />
+        <PostalCodeElement className="forms__component forms__bpk-input" />
         {presubmitText && (
           <Fragment>
-            <div className={getClassName('forms__component')}>
-              {presubmitText}
-            </div>
+            <div className="forms__component">{presubmitText}</div>
           </Fragment>
         )}
         <Button
           disabled={disabled}
-          className={getClassName('forms__component')}
+          className="forms__component"
           large
           onClick={this.submit}
         >
