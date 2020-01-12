@@ -35,7 +35,7 @@ import RequestStatusWrapper from 'containers/RequestStatusWrapper';
 import SignUpPage from 'containers/SignUpGG/Loadable';
 import SiteMap from 'containers/SiteMap/Loadable';
 import Work from 'containers/Work/Loadable';
-import AboutDegree from 'containers/AboutDegree/Loadable';
+import WorkDegreePage from 'containers/WorkDegree/Loadable';
 import BpkDemoPage from 'containers/BpkDemoPage/Loadable';
 import Konami from 'containers/Konami';
 import MonzoPots from 'containers/MonzoPots/Loadable';
@@ -146,7 +146,7 @@ const App = () => (
           <Route path="/travel/:id" component={BlogViewer} />
           <Route path="/work/bpk-component-demo" component={BpkDemoPage} />
           <Route path="/ml/grammar" component={GrammarML} />
-          <Route path="/work/degree" component={AboutDegree} />
+          <Route path="/work/degree" component={WorkDegreePage} />
           <Route path="" component={NotFoundPage} />
         </Switch>
       </PageContainer>
