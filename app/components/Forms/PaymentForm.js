@@ -2,17 +2,12 @@ import React, { Fragment } from 'react';
 import PropTypes from 'prop-types';
 import { Input } from 'gg-components/dist/Input';
 import { Button } from 'gg-components/dist/Button';
-import { Section } from 'gg-components/dist/Typography';
+import { Paragraph, Section } from 'gg-components/dist/Typography';
 import {
   injectStripe,
-  CardElement,
   CardNumberElement,
   CardExpiryElement,
   CardCVCElement,
-  PostalCodeElement,
-  PaymentRequestGGButtonElement,
-  IbanElement,
-  IdealBankElement,
 } from 'react-stripe-elements';
 
 import {
@@ -28,16 +23,18 @@ import {
   TICKET_COST,
 } from 'helpers/constants';
 
+import { cssModules } from 'bpk-react-utils';
+
 import { FormBuilder } from 'gg-components/dist/FormBuilder';
 
-import './forms.scss';
+import STYLES from './forms.scss';
+const getClassName = cssModules(STYLES);
 
-class SignUpContinueFormPayment extends React.Component {
+class PaymentForm extends React.Component {
   static propTypes = {
     user: PropTypes.object,
-    userDetails: PropTypes.object.isRequired,
-    onDataChanged: PropTypes.func.isRequired,
     onSubmit: PropTypes.func.isRequired,
+    balance: PropTypes.number.isRequired,
     disabled: PropTypes.bool,
   };
 
@@ -63,7 +60,6 @@ class SignUpContinueFormPayment extends React.Component {
       className,
       disabled,
       user,
-      userDetails,
       presubmitText,
       onSubmit,
       balance,
@@ -76,47 +72,48 @@ class SignUpContinueFormPayment extends React.Component {
     if (balance <= 0) {
       return (
         <Fragment>
-          <div className="forms__component">
-            {'You can view and edit your details via your EPICC account.'}
-          </div>
+          <Paragraph>This payment has been completed.</Paragraph>
           <Button
             disabled={disabled}
-            className="forms__component"
+            className={getClassName('forms__component')}
             large
-            href="/account"
+            href="/payments"
           >
-            {'View/edit details'}
+            {'Start another payment'}
           </Button>
         </Fragment>
       );
     }
 
+    const inputClassName = [
+      getClassName('forms__component'),
+      getClassName('forms__bpk-input'),
+    ].join(' ');
+
     return (
       <div>
-        <label htmlFor="cardNumber" className="forms__label">
+        <label htmlFor="cardNumber" className={getClassName('forms__label')}>
           Card number
         </label>
-        <CardNumberElement className="forms__component forms__bpk-input" />
-        <label htmlFor="expiry" className="forms__label">
+        <CardNumberElement className={inputClassName} />
+        <label htmlFor="expiry" className={getClassName('forms__label')}>
           Expiry date
         </label>
-        <CardExpiryElement className="forms__component forms__bpk-input" />
-        <label htmlFor="cvc" className="forms__label">
+        <CardExpiryElement className={inputClassName} />
+        <label htmlFor="cvc" className={getClassName('forms__label')}>
           CVC code
         </label>
-        <CardCVCElement className="forms__component forms__bpk-input" />
-        <label htmlFor="postCode" className="forms__label">
-          Post code
-        </label>
-        <PostalCodeElement className="forms__component forms__bpk-input" />
+        <CardCVCElement className={inputClassName} />
         {presubmitText && (
           <Fragment>
-            <div className="forms__component">{presubmitText}</div>
+            <div className={getClassName('forms__component')}>
+              {presubmitText}
+            </div>
           </Fragment>
         )}
         <Button
           disabled={disabled}
-          className="forms__component"
+          className={getClassName('forms__component')}
           large
           onClick={this.submit}
         >
@@ -127,4 +124,4 @@ class SignUpContinueFormPayment extends React.Component {
   }
 }
 
-export default injectStripe(SignUpContinueFormPayment);
+export default injectStripe(PaymentForm);

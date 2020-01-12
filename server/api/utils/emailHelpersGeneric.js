@@ -171,8 +171,8 @@ ${emailVerificationLink}\n\nIt will expire ${oneDaysTime.toString()}`,
 }
 
 export function sendPaymentReceiptEmail(
-  userProfile,
   payment,
+  charge,
   imageHtml,
   buttonStyle,
   senderEmail,
@@ -181,13 +181,13 @@ export function sendPaymentReceiptEmail(
   transporter.sendMail(
     {
       from: senderEmail,
-      to: userProfile.email,
+      to: payment.email,
       subject: 'Payment received',
-      text: `Thank you for your recent payment of £${payment.amount / 100}.`,
+      text: `Thank you for your recent payment of £${charge.amount / 100}.`,
       html: `<div style="text-align: center;color: #1e1e1e;">
       ${imageHtml}
   <p>
-    Thank you for purchasing a ticket to EPICC 2019.
+    Thank you for making an online payment.
     <br><br>
     Please find the receipt for this transaction below.
     <br><br>
@@ -195,13 +195,15 @@ export function sendPaymentReceiptEmail(
     <p style="text-align: left;margin-left: 1rem;">
     TRANSACTION RECEIPT FOR YOUR RECORDS:
     <br>
-Payment amount: £${payment.amount / 100}
+Payment name: George Gillams - online payment ${payment.id}
     <br>
-Payment method: ${payment.source.brand}-${payment.source.last4}
+Payment amount: £${charge.amount / 100}
     <br>
-Transaction ID: ${payment.source.id}
+Payment method: ${charge.source.brand}-${charge.source.last4}
     <br>
-Timestamp: ${new Date(payment.timestamp).toString()}
+Transaction ID: ${charge.source.id}
+    <br>
+Timestamp: ${new Date(charge.timestamp).toString()}
     </p>
   </p>
 </div>`,

@@ -7,6 +7,7 @@ import { APIEntity } from 'gg-components/dist/Auth';
 import { Button } from 'gg-components/dist/Button';
 import { Paragraph, Section, SubSection } from 'gg-components/dist/Typography';
 import STYLES from 'containers/pages.scss';
+import { EMAIL_REGEX, DECIMAL_REGEX } from 'helpers/constants';
 
 const getClassName = cssModules(STYLES);
 
@@ -57,12 +58,23 @@ export default class PaymentForm extends React.Component {
       <div className={outerClassNameFinal.join(' ')} {...rest}>
         <Section name="Pay online">
           <FormBuilder
+            presubmitText="Your email will be used only to send a payment receipt."
             disabled={addPaymentLoading}
             entity={this.state.newPayment || {}}
             submitLabel="Continue to payment"
             formFields={[
-              { id: 'amount', name: 'Amount (GBP)', show: true },
-              { id: 'email', name: 'Email', show: true },
+              {
+                id: 'amount',
+                name: 'Amount (GBP)',
+                show: true,
+                validationRegex: DECIMAL_REGEX,
+              },
+              {
+                id: 'email',
+                name: 'Email',
+                show: true,
+                validationRegex: EMAIL_REGEX,
+              },
             ]}
             onDataChanged={newPayment => {
               this.setState({ newPayment });

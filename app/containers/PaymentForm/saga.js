@@ -39,20 +39,23 @@ export function* doLoadPayments() {
       },
     });
     if (paymentsResult.error) {
-      yield put(loadPaymentsError(paymentsResult));
+      yield put(loadPaymentsRegisterError(paymentsResult));
     } else {
       yield put(loadPaymentsRegisterSuccess(paymentsResult));
     }
   } catch (err) {
-    console.err(err);
+    console.error(err);
     yield put(loadPaymentsRegisterError(err));
     yield put(pushMessage(COMMUNICATION_ERROR_MESSAGE));
   }
 }
 
 export function* doAddPayment() {
-  const paymentDefinition = yield select(makeSelectPaymentDefinition());
+  const paymentDefinition = JSON.parse(
+    JSON.stringify(yield select(makeSelectPaymentDefinition())),
+  );
   const requestURL = `${API_ENDPOINT}/payments/create`;
+  paymentDefinition.amount = paymentDefinition.amount * 100;
 
   try {
     const paymentsResult = yield call(request, requestURL, {
@@ -63,7 +66,7 @@ export function* doAddPayment() {
       },
     });
     if (paymentsResult.error) {
-      yield put(addPaymentError(paymentsResult));
+      yield put(addPaymentRegisterError(paymentsResult));
       yield put(pushMessage({ type: 'error', message: paymentsResult.error }));
     } else if (paymentsResult.warning) {
       yield put(pushMessage({ type: 'warn', message: paymentsResult.warning }));
