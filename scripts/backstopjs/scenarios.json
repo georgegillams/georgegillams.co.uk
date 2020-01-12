@@ -12,7 +12,7 @@
     "sitemap",
     "work",
     "work",
-    "work/degree"
+    { "url": "work/degree", "delay": 7200 }
   ],
   "globallyHiddenSelectors": ["img"]
 }

@@ -9,11 +9,17 @@ const allowFailure = process.argv.includes('--allowFailure');
 let scenarios = [];
 
 scenarioData.scenarioIds.forEach(sI => {
+  let delay = 1500;
+  let urlExt = sI;
+  if (typeof sI === 'object') {
+    urlExt = sI.url;
+    delay = sI.delay;
+  }
   scenarios.push({
-    label: sI,
-    url: `${BASE_URL}${sI}`,
+    label: urlExt,
+    url: `${BASE_URL}${urlExt}`,
     hideSelectors: scenarioData.globallyHiddenSelectors,
-    delay: 1500,
+    delay: delay,
   });
 });
 

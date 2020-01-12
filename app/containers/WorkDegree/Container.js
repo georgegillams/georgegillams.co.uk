@@ -34,7 +34,37 @@ class Degree extends React.Component {
 
     this.state = {
       lastFilled: -1,
-      filled: [],
+      filled: [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+      ],
     };
   }
 
