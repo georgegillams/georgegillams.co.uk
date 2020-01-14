@@ -88,8 +88,10 @@ export default class Work extends Component {
               </TextLink>{' '}
               was a proud moment.
             </Paragraph>
-            <img
+            <FadingLazyLoadedImage
               width={60}
+              height={60}
+              style={{ width: '4rem' }}
               src="https://cultofthepartyparrot.com/parrots/hd/opensourceparrot.gif"
             />
           </SubSection>
@@ -131,6 +133,7 @@ export default class Work extends Component {
               the entire ecosystem. And now we’re applying our learnings to
               rollout Dark Mode support too. 🎉
             </Paragraph>
+            <br />
             <Button
               className={getClassName('pages__component--upper-margin')}
               hrefExternal

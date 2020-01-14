@@ -174,6 +174,7 @@ export default class Photography extends Component {
               beams of sunlight breaking through the clouds, and then darkened
               the background a little.
             </Paragraph>
+            <br />
             <FadingLazyLoadedImage
               className={getClassName('pages__image')}
               altText="Exploding tulips"
@@ -188,6 +189,7 @@ export default class Photography extends Component {
               inspired to draw the production logo (aka tempted to
               procrastinate).
             </Paragraph>
+            <br />
             <FadingLazyLoadedImage
               className={getClassName('pages__image')}
               altText="Miss Saigon"
@@ -205,6 +207,7 @@ export default class Photography extends Component {
               uninspired photo. In Photoshop, I then used the brush tool and
               some layer styles to create a 'painting with light' effect.
             </Paragraph>
+            <br />
             <FadingLazyLoadedImage
               className={getClassName('pages__image')}
               altText="Dual-carriageway light-painting"
@@ -221,6 +224,7 @@ export default class Photography extends Component {
               calls for it. So I created this masterpiece to share with the
               office and celebrate a legendary drink!
             </Paragraph>
+            <br />
             <FadingLazyLoadedImage
               className={getClassName('pages__image')}
               altText="Guinness cake"
@@ -235,6 +239,7 @@ export default class Photography extends Component {
               in the style of the dish served in the film. It came out better
               than I expected... Pretty pleased with the result!
             </Paragraph>
+            <br />
             <FadingLazyLoadedImage
               className={getClassName('pages__image')}
               altText="Ratatouille"
