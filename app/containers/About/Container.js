@@ -62,6 +62,7 @@ export default class Contact extends Component {
           height={2872}
           src="https://i.imgur.com/0jz5elM.jpg"
         />
+        <br />
         <Paragraph>
           This site is built in React and hosted on Heroku where I have a Redis
           database provisioned. Redux is used to invoke API functions when pages
