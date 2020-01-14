@@ -80,8 +80,8 @@ export default class CommentsContainer extends React.Component {
         />
         <LoadingCover
           loadingSkeleton={CommentsListSkeleton}
-          loadingComments={loadingComments}
-          loadCommentsError={loadCommentsError}
+          loading={loadingComments}
+          error={loadCommentsError}
         >
           {comments && (
             <Comments

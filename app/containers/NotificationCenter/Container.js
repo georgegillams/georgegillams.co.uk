@@ -36,8 +36,8 @@ export default class NotificationCenter extends React.Component {
       return (
         <LoadingCover
           loadingSkeleton={Skeleton}
-          loadingNotifications={loadingNotifications}
-          loadNotificationsError={loadNotificationsError}
+          loading={loadingNotifications}
+          error={loadNotificationsError}
         />
       );
     }

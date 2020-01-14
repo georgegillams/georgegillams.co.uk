@@ -127,9 +127,7 @@ export default class AdminNotifications extends React.Component {
         <Helmet title="Admin - notifications" />
         <LoadingCover
           loadingSkeleton={Skeleton}
-          loadingNotifications={
-            userLoading || (!notifications && loadingNotifications)
-          }
+          loading={userLoading || (!notifications && loadingNotifications)}
         >
           {page}
         </LoadingCover>
