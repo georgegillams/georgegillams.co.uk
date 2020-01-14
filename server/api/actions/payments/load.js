@@ -31,7 +31,7 @@ export default function loadAll(req) {
             });
           });
         } else {
-          resolve(UNAUTHORISED_READ);
+          reject(UNAUTHORISED_READ);
         }
       },
       err => reject(err),

@@ -27,12 +27,11 @@ import { cssModules } from 'bpk-react-utils';
 
 import { FormBuilder } from 'gg-components/dist/FormBuilder';
 
-import STYLES from './forms.scss';
+import STYLES from 'components/Forms/forms.scss';
 const getClassName = cssModules(STYLES);
 
 class PaymentForm extends React.Component {
   static propTypes = {
-    user: PropTypes.object,
     onSubmit: PropTypes.func.isRequired,
     balance: PropTypes.number.isRequired,
     disabled: PropTypes.bool,
@@ -44,46 +43,55 @@ class PaymentForm extends React.Component {
     this.state = {};
   }
 
-  submit = () => {
-    this.props.stripe
-      .createToken({
-        name: 'Payment_token',
+  componentWillReceiveProps(newProps) {
+    if (!newProps.paymentIntentReady) {
+      return;
+    }
+
+    if (!newProps.paymentIntentClientSecret) {
+      return;
+    }
+
+    // This is an additional fail-sage to ensure that we do not make a payment twice using the same paymentIntentSecret
+    if (this.state.lastPICSUsed === newProps.paymentIntentClientSecret) {
+      return;
+    }
+    this.setState({ lastPICSUsed: newProps.paymentIntentClientSecret });
+
+    newProps.onStartPayment();
+    newProps.stripe
+      .confirmCardPayment(newProps.paymentIntentClientSecret, {
+        payment_method: {
+          card: newProps.elements.getElement('cardNumber'),
+          billing_details: {
+            name: 'NAME',
+          },
+        },
       })
       .then(result => {
-        const { token } = result;
-        this.props.onSubmit(token);
+        newProps.onSuccess();
+      })
+      .catch(err => {
+        newProps.onError(err);
       });
-  };
+  }
 
   render() {
     const {
       className,
       disabled,
-      user,
+      paymentIntentClientSecret,
       presubmitText,
       onSubmit,
+      onStartPayment,
+      onSuccess,
+      onError,
       balance,
       ...rest
     } = this.props;
 
     const classNameFinal = [];
     if (className) classNameFinal.push(className);
-
-    if (balance <= 0) {
-      return (
-        <Fragment>
-          <Paragraph>This payment has been completed.</Paragraph>
-          <Button
-            disabled={disabled}
-            className={getClassName('forms__component')}
-            large
-            href="/payments"
-          >
-            {'Start another payment'}
-          </Button>
-        </Fragment>
-      );
-    }
 
     const inputClassName = [
       getClassName('forms__component'),
@@ -115,7 +123,7 @@ class PaymentForm extends React.Component {
           disabled={disabled}
           className={getClassName('forms__component')}
           large
-          onClick={this.submit}
+          onClick={this.props.onSubmit}
         >
           {`Make payment for £${balance / 100}`}
         </Button>

@@ -8,7 +8,7 @@ const webpack = require('webpack');
 
 process.noDeprecation = true;
 
-const { NODE_ENV, BUILT_AT, STRIPE_API_KEY } = process.env;
+const { NODE_ENV, BUILT_AT, STRIPE_PUBLIC_API_KEY } = process.env;
 
 module.exports = options => ({
   mode: options.mode,
@@ -123,7 +123,7 @@ module.exports = options => ({
       'process.env': {
         NODE_ENV: JSON.stringify(NODE_ENV),
         BUILT_AT,
-        STRIPE_API_KEY,
+        STRIPE_PUBLIC_API_KEY,
       },
     }),
   ]),
