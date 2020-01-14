@@ -19,6 +19,14 @@
       padding-right: 15px;
     }
 
+    &--debug {
+      background-color: orange;
+
+      @media (prefers-color-scheme: dark) {
+        background-color: darkorange;
+      }
+    }
+
     &--centered {
       text-align: center;
     }
