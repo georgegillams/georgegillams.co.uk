@@ -30,14 +30,6 @@ export default class PaymentsPage extends React.Component {
       <div className={classNames.join(' ')} {...rest}>
         <Helmet title="Payments" />
         <Section name="Send me money">
-          <SubSection name="Bank transfer">
-            <Paragraph className={getClassName('payments__inline')}>
-              <CodeInline>04-00-04</CodeInline>
-              <CopyButton style={{ display: 'inline' }} text="040004" />{' '}
-              <CodeInline>05339705</CodeInline>
-              <CopyButton style={{ display: 'inline' }} text="05339705" />
-            </Paragraph>
-          </SubSection>
           <PaymentForm />
         </Section>
       </div>

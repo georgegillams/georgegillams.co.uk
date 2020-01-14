@@ -85,7 +85,6 @@ export function* doLoadUsers() {
       yield put(pushMessage(usersLoadedMessage));
     }
   } catch (err) {
-    debugger;
     yield put(loadUsersRegisterError(err));
     yield put(pushMessage(COMMUNICATION_ERROR_MESSAGE));
   }

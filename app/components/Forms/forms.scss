@@ -32,4 +32,13 @@
       }
     }
   }
+  &__bpk-input {
+    cursor: auto;
+    border: 1px #b2b2bf solid;
+    border-radius: 0.25rem;
+    height: 2rem;
+    font-size: 1rem;
+    padding: 0.5rem;
+    background-color: white;
+  }
 }

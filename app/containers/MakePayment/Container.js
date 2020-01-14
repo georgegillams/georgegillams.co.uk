@@ -12,7 +12,7 @@ import {
 import { CodeInline } from 'gg-components/dist/Code';
 import Skeleton from './Skeleton';
 import { getTimeDifference } from 'helpers/time';
-import { DebugObject } from 'gg-components/dist/Auth';
+import { DebugObject, LoadingCover } from 'gg-components/dist/Auth';
 import { PaymentForm } from 'components/Forms';
 import { STRIPE_PUBLIC_API_KEY } from 'helpers/constants';
 import { Elements, StripeProvider } from 'react-stripe-elements';
@@ -22,17 +22,33 @@ import 'containers/pages.scss';
 const getClassName = c => c;
 
 export default class StripePayments extends React.Component {
+  componentDidMount = () => {
+    const paymentId = this.props.match.params.id;
+    if (paymentId) {
+      this.props.loadPayment(paymentId);
+    }
+  };
+
   render() {
     const {
       user,
+
       paymentTokenChanged,
+
+      loadPayment,
+      payment,
+      loadPaymentLoading,
+      loadPaymentSuccess,
+      loadPaymentError,
+
       makePayment,
       makePaymentLoading,
-      makePaymentRegisterSuccess,
-      makePaymentRegisterError,
+      makePaymentSuccess,
+      makePaymentError,
+
       className,
       ...rest
-    } = this.props; // eslint-disable-line no-shadow
+    } = this.props;
 
     const outerClassNameFinal = [getClassName('pages__container')];
 
@@ -40,28 +56,30 @@ export default class StripePayments extends React.Component {
       outerClassNameFinal.push(className);
     }
 
-    const pageTemp = (
-      <Paragraph>
-        THIS PAGE IS NOT YET READY. PLEASE RETURN IN ≅ 1 WEEK
-      </Paragraph>
-    );
+    let name = '';
+    if (payment) {
+      name = `Pay £${payment && payment.outstandingBalance / 100}`;
+
+      if (payment.outstandingBalance === 0) {
+        name = `Payment of £${payment.amount / 100}`;
+      } else if (payment.outstandingBalance !== payment.amount) {
+        name += ` (remaining balance on payment of £${payment.amount / 100})`;
+      }
+    }
 
     const page = (
-      <div className={outerClassNameFinal.join(' ')} {...rest}>
-        <StripeProvider apiKey={STRIPE_PUBLIC_API_KEY}>
-          {/* TODO - Show loading until stripe is loaded. See https://github.com/stripe/react-stripe-elements#advanced-integrations */}
-          {/* TODO - Add amount and email to form - email used to send a receipt for payment and nothing else. */}
-          <Elements>
-            <span>STRIPE COMPONENTS GO HERE</span>
-            {/*     <PaymentForm
-                presubmitText="Please note, all EPICC tickets are non-refundable."
-                disabled={makePaymentLoading}
+      <Section name={name} {...rest}>
+        {makePaymentSuccess && (
+          <Paragraph>Your payment has been taken successfully.</Paragraph>
+        )}
+        {!makePaymentSuccess && (
+          <StripeProvider apiKey={STRIPE_PUBLIC_API_KEY}>
+            {/* TODO - Show loading until stripe is loaded. See https://github.com/stripe/react-stripe-elements#advanced-integrations */}
+            <Elements>
+              <PaymentForm
+                disabled={makePaymentLoading || makePaymentSuccess}
                 user={user}
-                balance={balance}
-                userDetails={{
-                  ...userDetails,
-                  email: user ? user.email : '',
-                }}
+                balance={payment ? payment.outstandingBalance : 0}
                 onDataChanged={newValue => {
                   userDetailsChanged(newValue);
                 }}
@@ -70,15 +88,22 @@ export default class StripePayments extends React.Component {
                   paymentTokenChanged(tokenId);
                   makePayment();
                 }}
-              />*/}
-          </Elements>
-        </StripeProvider>
-      </div>
+              />
+            </Elements>
+          </StripeProvider>
+        )}
+      </Section>
     );
 
     return (
       <Fragment>
-        {pageTemp}
+        <LoadingCover
+          loadingSkeleton={Skeleton}
+          loading={loadPaymentLoading}
+          error={loadPaymentError}
+        >
+          {page}
+        </LoadingCover>
         <DebugObject
           debugTitle="Pay"
           debugObject={{
@@ -86,8 +111,8 @@ export default class StripePayments extends React.Component {
             paymentTokenChanged,
             makePayment,
             makePaymentLoading,
-            makePaymentRegisterSuccess,
-            makePaymentRegisterError,
+            makePaymentSuccess,
+            makePaymentError,
             className,
           }}
         />

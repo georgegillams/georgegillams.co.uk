@@ -19,6 +19,7 @@ export * as monzo from './monzo';
 export * as support from './support';
 export * as magiclinks from './magiclinks/index';
 export * as payments from './payments/index';
+export * as makePayment from './make-payment/index';
 export * as comments from './comments/index';
 export * as userDetails from './userDetails/index';
 export * as grammarML from './grammarML/index';
