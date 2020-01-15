@@ -55,16 +55,11 @@ export function* doLoadNotifications() {
     const notificationsResult = yield call(request, notificationsRequestURL, {
       method: 'GET',
     });
-    if (notificationsResult.error) {
-      yield put(loadNotificationsRegisterError(notificationsResult));
-      yield put(pushMessage(notificationsLoadErrorMessage));
-    } else {
-      yield put(loadNotificationsRegisterSuccess(notificationsResult));
-      yield put(pushMessage(loadNotificationsSuccessMessage));
-    }
+    yield put(loadNotificationsRegisterSuccess(notificationsResult));
+    yield put(pushMessage(loadNotificationsSuccessMessage));
   } catch (err) {
     yield put(loadNotificationsRegisterError(err));
-    yield put(pushMessage(COMMUNICATION_ERROR_MESSAGE));
+    yield put(pushMessage(notificationsLoadErrorMessage));
   }
 }
 
@@ -84,17 +79,12 @@ export function* doDeleteNotification() {
         },
       },
     );
-    if (notificationDeleteResult.error) {
-      yield put(deleteNotificationRegisterError(notificationDeleteResult));
-      yield put(pushMessage(notificationDeleteErrorMessage));
-    } else {
-      yield put(deleteNotificationRegisterSuccess(notificationDeleteResult));
-      yield put(pushMessage(notificationDeletedMessage));
-      yield put(loadNotifications());
-    }
+    yield put(deleteNotificationRegisterSuccess(notificationDeleteResult));
+    yield put(pushMessage(notificationDeletedMessage));
+    yield put(loadNotifications());
   } catch (err) {
     yield put(deleteNotificationRegisterError(err));
-    yield put(pushMessage(COMMUNICATION_ERROR_MESSAGE));
+    yield put(pushMessage(notificationDeleteErrorMessage));
   }
 }
 
@@ -114,17 +104,12 @@ export function* doCreateNotification() {
         },
       },
     );
-    if (notificationCreateResult.error) {
-      yield put(createNotificationRegisterError(notificationCreateResult));
-      yield put(pushMessage(notificationCreateErrorMessage));
-    } else {
-      yield put(createNotificationRegisterSuccess());
-      yield put(pushMessage(notificationCreatedMessage));
-      yield put(loadNotifications());
-    }
+    yield put(createNotificationRegisterSuccess());
+    yield put(pushMessage(notificationCreatedMessage));
+    yield put(loadNotifications());
   } catch (err) {
     yield put(createNotificationRegisterError(err));
-    yield put(pushMessage(COMMUNICATION_ERROR_MESSAGE));
+    yield put(pushMessage(notificationCreateErrorMessage));
   }
 }
 
