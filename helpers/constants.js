@@ -39,28 +39,29 @@ const COOKIE_NAMES = [
   'userComments',
 ];
 const EMAIL_TAKEN = {
-  error: 'Email already taken.',
+  error: 'invalid-request',
+  errorMessage: 'Email already taken.',
 };
 const INVALID_SESSION = {
-  error: 'authentication',
-  reason:
+  error: 'auth',
+  errorMessage:
     'Invalid session. Try clearing cookies for this site and then re-authenticate',
 };
 const INVALID_CREDENTIALS = {
-  error: 'authentication',
-  reason: 'Error logging in. The credentials supplied are invalid.',
+  error: 'wrong-input',
+  errorMessage: 'Error logging in. The credentials supplied are invalid.',
 };
 const UNAUTHORISED_READ = {
-  error: 'authentication',
-  reason: 'You are not authorised to read this resource',
+  error: 'auth',
+  errorMessage: 'You are not authorised to read this resource',
 };
 const UNAUTHORISED_WRITE = {
-  error: 'authentication',
-  reason: 'You are not authorised to write to this resource',
+  error: 'auth',
+  errorMessage: 'You are not authorised to write to this resource',
 };
 const RESOURCE_NOT_FOUND = {
-  error: '404',
-  reason:
+  error: 'not-found',
+  errorMessage:
     "We looked everywhere but we couldn't find that resource. Maybe you need to sign in.",
 };
 const CHECK_FOR_NEW_CONTENT_INTERVAL = 1000;
@@ -78,6 +79,10 @@ const SITE_URL =
     ? 'http://localhost:3000'
     : 'https://www.georgegillams.co.uk';
 const API_ENDPOINT = `${SITE_URL}/api`;
+const GENERIC_ERROR_MESSAGE = {
+  type: 'error',
+  message: 'Something went wrong. Please try again later.',
+};
 const COMMUNICATION_ERROR_MESSAGE = {
   type: 'error',
   message: 'Our servers are poorly. Please try again later.',
@@ -91,6 +96,7 @@ export {
   APP_VERSION,
   CARD_NUMBER_REGEX,
   CHECK_FOR_NEW_CONTENT_INTERVAL,
+  GENERIC_ERROR_MESSAGE,
   COMMUNICATION_ERROR_MESSAGE,
   COMPONENT_RELOAD_INTERVAL,
   CONFERENCE_DAY_1_END,
@@ -144,6 +150,7 @@ export default {
   APP_VERSION,
   CARD_NUMBER_REGEX,
   CHECK_FOR_NEW_CONTENT_INTERVAL,
+  GENERIC_ERROR_MESSAGE,
   COMMUNICATION_ERROR_MESSAGE,
   COMPONENT_RELOAD_INTERVAL,
   CONFERENCE_DAY_1_END,

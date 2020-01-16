@@ -23,12 +23,14 @@ const appFunc = (req, res) => {
           res.json(result);
         }
       },
-      reason => {
-        if (reason && reason.redirect) {
-          res.redirect(reason.redirect);
+      err => {
+        if (err && err.redirect) {
+          res.redirect(err.redirect);
         } else {
-          console.error('API ERROR:', pretty.render(reason));
-          res.status(reason.status || 500).json(reason);
+          // Return a valid response even if there has been some server-side error.
+          // This gives us greater control over how we handle errors.
+          // Due to a limitation in our `react-saga` exception handling mechanism.
+          res.json(err);
         }
       },
     );
