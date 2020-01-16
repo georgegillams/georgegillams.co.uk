@@ -28,4 +28,3 @@ export * as blogs from './blogs/index';
 export * as sessions from './sessions/index';
 export * as users from './users/index';
 export * as widget from './widget/index';
-export * as gts from './gts/index';
