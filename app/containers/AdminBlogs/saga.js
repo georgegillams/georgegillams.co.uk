@@ -32,16 +32,11 @@ export function* doLoadBlogs() {
     const blogsResult = yield call(request, blogsRequestURL, {
       method: 'GET',
     });
-    if (blogsResult.error) {
-      yield put(loadBlogsError(blogsResult));
-      yield put(pushMessage(blogsLoadErrorMessage));
-    } else {
-      yield put(loadBlogsSuccess(blogsResult));
-      yield put(pushMessage(loadBlogsSuccessMessage));
-    }
+    yield put(loadBlogsSuccess(blogsResult));
+    yield put(pushMessage(loadBlogsSuccessMessage));
   } catch (err) {
     yield put(loadBlogsError(err));
-    yield put(pushMessage(COMMUNICATION_ERROR_MESSAGE));
+    yield put(pushMessage(blogsLoadErrorMessage));
   }
 }
 
@@ -57,17 +52,12 @@ export function* doDeleteBlog() {
         'Content-Type': 'application/json',
       },
     });
-    if (blogDeleteResult.error) {
-      yield put(deleteBlogError(blogDeleteResult));
-      yield put(pushMessage(blogDeleteErrorMessage));
-    } else {
-      yield put(deleteBlogSuccess(blogDeleteResult));
-      yield put(pushMessage(blogDeletedMessage));
-      yield put(loadBlogs());
-    }
+    yield put(deleteBlogSuccess(blogDeleteResult));
+    yield put(pushMessage(blogDeletedMessage));
+    yield put(loadBlogs());
   } catch (err) {
     yield put(deleteBlogError(err));
-    yield put(pushMessage(COMMUNICATION_ERROR_MESSAGE));
+    yield put(pushMessage(blogDeleteErrorMessage));
   }
 }
 

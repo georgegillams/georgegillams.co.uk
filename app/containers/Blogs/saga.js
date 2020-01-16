@@ -18,16 +18,11 @@ export function* doLoadBlogs() {
 
   try {
     const blogsResult = yield call(request, requestURL);
-    if (blogsResult.error) {
-      yield put(loadBlogsRegisterError(blogsResult));
-      yield put(pushMessage({ type: 'error', message: blogsResult.error }));
-    } else {
-      yield put(loadBlogsRegisterSuccess(blogsResult));
-      yield put(pushMessage(blogsLoadSuccessMessage));
-    }
+    yield put(loadBlogsRegisterSuccess(blogsResult));
+    yield put(pushMessage(blogsLoadSuccessMessage));
   } catch (err) {
     yield put(loadBlogsRegisterError(err));
-    yield put(pushMessage(COMMUNICATION_ERROR_MESSAGE));
+    yield put(pushMessage(err));
   }
 }
 
