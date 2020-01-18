@@ -5,7 +5,7 @@ import BpkImage, {
   withLazyLoading,
   withLoadingBehavior,
 } from 'bpk-component-image';
-import Input, { INPUT_TYPES, CLEAR_BUTTON_MODES } from 'bpk-component-input';
+import { Input } from 'gg-components/dist/Input';
 import { cssModules } from 'bpk-react-utils';
 import { associate } from 'helpers/objects';
 
@@ -80,20 +80,25 @@ export default class MonzoPots extends React.Component {
         <Section>
           <Section name="Monzo pot tracking 💳">
             {!monzoPotDisplayData && (
-              <Input
-                id="password"
-                className={getClassName('pages__component')}
-                type={INPUT_TYPES.password}
-                name="password"
-                value={password || ''}
-                onChange={event => {
-                  this.loadPotData(event.target.value);
-                }}
-                placeholder="Password"
-                clearButtonMode={CLEAR_BUTTON_MODES.whileEditing}
-                clearButtonLabel="Clear"
-                onClear={() => this.setState({ password: '' })}
-              />
+              <Fragment>
+                <label
+                  htmlFor="password"
+                  className={getClassName('forms__label')}
+                >
+                  Password
+                </label>
+                <Input
+                  id="password"
+                  className={getClassName('pages__component')}
+                  type="password"
+                  name="password"
+                  value={password || ''}
+                  onChange={event => {
+                    this.loadPotData(event.target.value);
+                  }}
+                  placeholder="Password"
+                />
+              </Fragment>
             )}
             {monzoPotDisplayData && monzoPotDisplayData.map && (
               <Button
