@@ -20,7 +20,7 @@ export default function deleteSet(req) {
         if (user && user.admin) {
           const { collectionName } = reqSecured.body;
           if (!collectionName) {
-            resolve({ error: 'CollectionName must be provided' });
+            reject({ error: `wrong-input`, errorMessage: 'CollectionName must be provided' });
           } else {
             datumLoad({ redisKey: collectionName, includeDeleted: true }).then(
               collectionData => {
@@ -42,7 +42,7 @@ export default function deleteSet(req) {
             );
           }
         } else {
-          resolve(UNAUTHORISED_WRITE);
+          reject(UNAUTHORISED_WRITE);
         }
       },
       err => reject(err),

@@ -29,14 +29,14 @@ export default function verifyemail(req) {
                 user.emailVerified = true;
                 resolve(datumUpdate({ redisKey: 'users' }, { body: user }));
               } else {
-                resolve({ error: 'Invalid user' });
+                reject({ error: 'wrong-input', errorMessage: 'Invalid user' });
               }
             });
           } else {
-            resolve({ error: 'Email verification link has expired' });
+            reject({ error: 'wrong-input', errorMessage: 'Email verification link has expired' });
           }
         } else {
-          resolve({ error: 'Invalid verification link' });
+          reject({ error: 'wrong-input', errorMessage: 'Invalid verification link' });
         }
       },
     );

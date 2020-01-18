@@ -13,7 +13,7 @@ function loadPots(req) {
           p => p.name === potConfig.name && !p.deleted,
         )[0];
         if (!pot) {
-          resolve({ error: 'An unknown error occured' });
+          reject({ error: 'unknown', errorMessage: 'An unknown error occured' });
           return null;
         }
 

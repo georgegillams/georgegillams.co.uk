@@ -28,11 +28,11 @@ export default function loadSingle(req) {
             });
           })
           .catch(err => {
-            resolve(err);
+            reject(err);
           });
       })
       .catch(err => {
-        resolve(err);
+        reject(err);
       });
   });
 }

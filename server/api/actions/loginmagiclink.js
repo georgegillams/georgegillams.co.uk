@@ -25,10 +25,10 @@ export default function loginmagiclink(req) {
             datumUpdate({ redisKey: 'magiclinks' }, { body: magicLink });
             resolve(loginUser(reqSecured, user));
           } else {
-            resolve({ error: 'Magic link has expired' });
+            reject({ error:'wrong-input', errorMessage: 'Magic link has expired' });
           }
         } else {
-          resolve({ error: 'Invalid magic link' });
+          reject({ error:'wrong-input', errorMessage: 'Invalid magic link' });
         }
       });
     });
