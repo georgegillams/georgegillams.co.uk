@@ -16,7 +16,8 @@ import loginUser from 'utils/login';
 import { sendEmailVerificationEmail } from 'utils/emailHelpers';
 
 const usernameTakenErrorMessage = {
-  error: 'Username already taken.',
+  ...EMAIL_TAKEN,
+  errorMessage: 'Username already taken.',
 };
 
 export default function signUp(req) {
@@ -35,9 +36,9 @@ export default function signUp(req) {
         'uname',
       );
       if (userWithSameEmail) {
-        resolve(EMAIL_TAKEN);
+        reject(EMAIL_TAKEN);
       } else if (userWithSameUname && USERNAMES_ENABLED) {
-        resolve(usernameTakenErrorMessage);
+        reject(usernameTakenErrorMessage);
       } else {
         datumCreate({ redisKey: 'users' }, reqSecured).then(createdUser => {
           loginUser(reqSecured, createdUser).then(loginResult => {

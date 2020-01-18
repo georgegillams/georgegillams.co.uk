@@ -16,18 +16,23 @@ test('returns error if not admin', done => {
         id: 'user5',
       },
     };
-    deleteEntity(req).then(result => {
-      expect(result.error).toBe('authentication');
+    deleteEntity(req)
+      .then(result => {})
+      .catch(result => {
+        expect(result.error).toBe('auth');
+        expect(result.errorMessage).toBe(
+          'You are not authorised to write to this resource',
+        );
 
-      datumLoadSingle({
-        redisKey: 'users',
-        filter: u => u.id === 'user5',
-      }).then(dbResult => {
-        expect(dbResult).toBeTruthy();
-        expect(dbResult.name).toBe('George');
-        done();
+        datumLoadSingle({
+          redisKey: 'users',
+          filter: u => u.id === 'user5',
+        }).then(dbResult => {
+          expect(dbResult).toBeTruthy();
+          expect(dbResult.name).toBe('George');
+          done();
+        });
       });
-    });
   });
 });
 
@@ -46,28 +51,31 @@ test('returns error if item is not already marked for deletion', done => {
         id: 'user5',
       },
     };
-    deleteEntity(req).then(result => {
-      expect(result.error).toBe(
-        'Only deleted entities can be permanently removed.',
-      );
+    deleteEntity(req)
+      .then(result => {})
+      .catch(result => {
+        expect(result.error).toBe('wrong-input');
+        expect(result.errorMessage).toBe(
+          'Only deleted entities can be permanently removed.',
+        );
 
-      datumLoadSingle({
-        redisKey: 'users',
-        filter: u => u.id === 'user5',
-      }).then(userDbResult => {
-        expect(userDbResult).toBeTruthy();
-        expect(userDbResult.name).toBe('George');
         datumLoadSingle({
-          redisKey: 'emails',
-          resolveIfNotFound: true,
-          filter: u => u.id === 'email2',
-        }).then(emailDbResult => {
-          expect(emailDbResult).toBeTruthy();
-          expect(emailDbResult.message).toBe('Hi');
-          done();
+          redisKey: 'users',
+          filter: u => u.id === 'user5',
+        }).then(userDbResult => {
+          expect(userDbResult).toBeTruthy();
+          expect(userDbResult.name).toBe('George');
+          datumLoadSingle({
+            redisKey: 'emails',
+            resolveIfNotFound: true,
+            filter: u => u.id === 'email2',
+          }).then(emailDbResult => {
+            expect(emailDbResult).toBeTruthy();
+            expect(emailDbResult.message).toBe('Hi');
+            done();
+          });
         });
       });
-    });
   });
 });
 

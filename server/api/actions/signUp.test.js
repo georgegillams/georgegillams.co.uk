@@ -12,6 +12,7 @@ test('allows a user to be created', done => {
   };
   signUp(req).then(result => {
     expect(result.error).toBe(undefined);
+    expect(result.errorMessage).toBe(undefined);
     expect(result.authorId).toBe(undefined);
 
     expect(result.email).toBe('test-user1@georgegillams.co.uk');
@@ -44,18 +45,21 @@ test('returns error if username is taken', done => {
       email: 'test-user2@georgegillams.co.uk',
     },
   };
-  signUp(req).then(result => {
-    expect(result.error).toBe(`Username already taken.`);
+  signUp(req)
+    .then(result => {})
+    .catch(result => {
+      expect(result.error).toBe(`invalid-request`);
+      expect(result.errorMessage).toBe(`Username already taken.`);
 
-    expect(result.authorId).toBe(undefined);
-    expect(result.email).toBe(undefined);
-    expect(result.uname).toBe(undefined);
-    expect(result.id).toBe(undefined);
-    expect(result.lastUpdatedTimestamp).toBe(undefined);
-    expect(result.session).toBe(undefined);
-    expect(result.timestamp).toBe(undefined);
-    done();
-  });
+      expect(result.authorId).toBe(undefined);
+      expect(result.email).toBe(undefined);
+      expect(result.uname).toBe(undefined);
+      expect(result.id).toBe(undefined);
+      expect(result.lastUpdatedTimestamp).toBe(undefined);
+      expect(result.session).toBe(undefined);
+      expect(result.timestamp).toBe(undefined);
+      done();
+    });
 });
 
 test('returns error if email is taken', done => {
@@ -65,16 +69,19 @@ test('returns error if email is taken', done => {
       email: 'test-user1@georgegillams.co.uk',
     },
   };
-  signUp(req).then(result => {
-    expect(result.error).toBe(`Email already taken.`);
+  signUp(req)
+    .then(result => {})
+    .catch(result => {
+      expect(result.error).toBe(`invalid-request`);
+      expect(result.errorMessage).toBe(`Email already taken.`);
 
-    expect(result.authorId).toBe(undefined);
-    expect(result.email).toBe(undefined);
-    expect(result.uname).toBe(undefined);
-    expect(result.id).toBe(undefined);
-    expect(result.lastUpdatedTimestamp).toBe(undefined);
-    expect(result.session).toBe(undefined);
-    expect(result.timestamp).toBe(undefined);
-    done();
-  });
+      expect(result.authorId).toBe(undefined);
+      expect(result.email).toBe(undefined);
+      expect(result.uname).toBe(undefined);
+      expect(result.id).toBe(undefined);
+      expect(result.lastUpdatedTimestamp).toBe(undefined);
+      expect(result.session).toBe(undefined);
+      expect(result.timestamp).toBe(undefined);
+      done();
+    });
 });
