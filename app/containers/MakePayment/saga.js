@@ -39,7 +39,7 @@ export function* doLoadPayment() {
     });
     if (paymentResult.error) {
       yield put(loadPaymentRegisterError(paymentResult));
-      yield put(pushMessage({ type: 'error', message: paymentResult.error }));
+      yield put(pushMessage({ type: 'error', message: paymentResult.errorMessage }));
     } else {
       yield put(loadPaymentRegisterSuccess(paymentResult));
     }
@@ -68,7 +68,7 @@ export function* doMakePayment() {
     });
     if (paymentResult.error) {
       yield put(makePaymentRegisterError(paymentResult));
-      yield put(pushMessage({ type: 'error', message: paymentResult.error }));
+      yield put(pushMessage({ type: 'error', message: paymentResult.errorMessage }));
     } else {
       yield put(makePaymentRegisterSuccess());
       yield put(loadPayment(payment.id));

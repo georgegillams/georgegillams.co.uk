@@ -40,8 +40,10 @@ export default function deleteEntity(req) {
                   );
                   setContentLastUpdatedTimestamp();
                 } else {
-                  resolve({
-                    error: 'Only deleted entities can be permanently removed.',
+                  reject({
+                    error: 'wrong-input',
+                    errorMessage:
+                      'Only deleted entities can be permanently removed.',
                   });
                 }
               } else {
@@ -50,7 +52,7 @@ export default function deleteEntity(req) {
             },
           );
         } else {
-          resolve(UNAUTHORISED_WRITE);
+          reject(UNAUTHORISED_WRITE);
         }
       },
       err => reject(err),

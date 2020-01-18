@@ -24,14 +24,14 @@ export default function login(req) {
           !userProfile.hash ||
           !compareHash(reqSecured.body.password, userProfile.hash)
         ) {
-          resolve(INVALID_CREDENTIALS);
+          reject(INVALID_CREDENTIALS);
         } else {
           loginUser(reqSecured, userProfile).then(loginResult => {
             resolve(loginResult);
           });
         }
       } else {
-        resolve(INVALID_CREDENTIALS);
+        reject(INVALID_CREDENTIALS);
       }
     });
   });

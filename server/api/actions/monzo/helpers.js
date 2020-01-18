@@ -33,7 +33,7 @@ function getMonthsElapsedPercentage(potName) {
 }
 
 function authMonzo(password) {
-  return new Promise(resolve => {
+  return new Promise((resolve, reject) => {
     datumLoadSingle({
       redisKey: 'monzoApiKeys',
       resolveIfNotFound: true,
@@ -42,15 +42,17 @@ function authMonzo(password) {
       const accessPassword = process.env.MONZO_ACCESS_PASSWORD;
 
       if (!accessToken) {
-        resolve({
-          error: 'No access token configured',
+        reject({
+          error: 'auth',
+          errorMessage: 'No access token configured',
         });
         return;
       }
 
       if (!password || password !== accessPassword) {
-        resolve({
-          warning: 'Access password incorrect.',
+        reject({
+          error: 'auth',
+          errorMessage: 'Access password incorrect.',
         });
         return;
       }
@@ -77,31 +79,35 @@ function authMonzo(password) {
 }
 
 function loadPotData(password) {
-  return new Promise(resolve => {
-    authMonzo(password).then(authResult => {
-      if (authResult.error || authResult.warning) {
-        resolve(authResult);
-        return;
-      }
+  return new Promise((resolve, reject) => {
+    authMonzo(password).then(
+      authResult => {
+        if (authResult.error || authResult.warning) {
+          resolve(authResult);
+          return;
+        }
 
-      fetch('https://api.monzo.com/pots', {
-        method: 'get',
-        headers: {
-          Authorization: `Bearer ${authResult.accessToken.key}`,
-        },
-      })
-        .then(res => res.json())
-        .then(data => {
-          if (!data || !data.pots) {
-            resolve({
-              error:
-                'The Monzo token has expired. Tell George to generate a new one.',
-            });
-            return;
-          }
-          resolve(data.pots);
-        });
-    });
+        fetch('https://api.monzo.com/pots', {
+          method: 'get',
+          headers: {
+            Authorization: `Bearer ${authResult.accessToken.key}`,
+          },
+        })
+          .then(res => res.json())
+          .then(data => {
+            if (!data || !data.pots) {
+              reject({
+                error: 'auth',
+                errorMessage:
+                  'The Monzo token has expired. Tell George to generate a new one.',
+              });
+              return;
+            }
+            resolve(data.pots);
+          });
+      },
+      err => reject(err),
+    );
   });
 }
 

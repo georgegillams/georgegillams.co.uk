@@ -67,9 +67,9 @@ export function* doAddPayment() {
     });
     if (paymentsResult.error) {
       yield put(addPaymentRegisterError(paymentsResult));
-      yield put(pushMessage({ type: 'error', message: paymentsResult.error }));
+      yield put(pushMessage({ type: 'error', message: paymentsResult.errorMessage }));
     } else if (paymentsResult.warning) {
-      yield put(pushMessage({ type: 'warn', message: paymentsResult.warning }));
+      yield put(pushMessage({ type: 'warn', message: paymentsResult.warningMessage }));
     } else {
       yield put(addPaymentRegisterSuccess(paymentsResult));
       yield put(pushMessage(paymentAddSuccessMessage));
@@ -95,9 +95,9 @@ export function* doDeletePayment() {
     });
     if (paymentsResult.error) {
       yield put(addPaymentRegisterError(paymentsResult));
-      yield put(pushMessage({ type: 'error', message: paymentsResult.error }));
+      yield put(pushMessage({ type: 'error', message: paymentsResult.errorMessage }));
     } else if (paymentsResult.warning) {
-      yield put(pushMessage({ type: 'warn', message: paymentsResult.warning }));
+      yield put(pushMessage({ type: 'warn', message: paymentsResult.warningMessage }));
     } else {
       yield put(deletePaymentRegisterSuccess(paymentsResult));
       yield put(pushMessage(paymentDeleteSuccessMessage));

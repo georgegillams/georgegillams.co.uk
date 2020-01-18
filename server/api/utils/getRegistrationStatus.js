@@ -106,7 +106,7 @@ export default function getRegistrationStatus(user) {
         });
       },
       err => {
-        resolve({ error: `No user found with id ${user.id}` });
+        reject({ error: 'not-found', errorMessage: `No user found with id ${user.id}` });
       },
     );
   });

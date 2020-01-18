@@ -26,7 +26,7 @@ export function* doSignUp() {
     });
     if (signUpResult.error) {
       yield put(signUpRegisterError(signUpResult));
-      yield put(pushMessage({ type: 'error', message: signUpResult.error }));
+      yield put(pushMessage({ type: 'error', message: signUpResult.errorMessage }));
     } else {
       yield put(signUpRegisterSuccess());
       yield put(setUser(signUpResult));

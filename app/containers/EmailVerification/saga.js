@@ -27,7 +27,7 @@ export function* doVerification() {
     if (verificationResult.error) {
       yield put(verifyEmailRegisterError(verificationResult));
       yield put(
-        pushMessage({ type: 'error', message: verificationResult.error }),
+        pushMessage({ type: 'error', message: verificationResult.errorMessage }),
       );
     } else {
       yield put(verifyEmailRegisterSuccess());

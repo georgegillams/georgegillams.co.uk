@@ -26,7 +26,7 @@ export function* doLogin() {
     });
     if (loginResult.error) {
       yield put(loginRegisterError(loginResult));
-      yield put(pushMessage({ type: 'error', message: loginResult.error }));
+      yield put(pushMessage({ type: 'error', message: loginResult.errorMessage }));
     } else {
       yield put(loginRegisterSuccess());
       yield put(setUser(loginResult));
