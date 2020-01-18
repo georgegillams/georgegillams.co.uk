@@ -20,7 +20,7 @@ export function* doLoadBlogs() {
     const blogsResult = yield call(request, requestURL);
     if (blogsResult.error) {
       yield put(loadBlogsRegisterError(blogsResult));
-      yield put(pushMessage({ type: 'error', message: blogsResult.error }));
+      yield put(pushMessage({ type: 'error', message: blogsResult.errorMessage }));
     } else {
       yield put(loadBlogsRegisterSuccess(blogsResult));
       yield put(pushMessage(blogsLoadSuccessMessage));

@@ -47,9 +47,9 @@ export function* doLoadTransactions() {
     });
     if (monzoResult.error) {
       yield put(loadTransactionsRegisterError(monzoResult));
-      yield put(pushMessage({ type: 'error', message: monzoResult.error }));
+      yield put(pushMessage({ type: 'error', message: monzoResult.errorMessage }));
     } else if (monzoResult.warning) {
-      yield put(pushMessage({ type: 'warn', message: monzoResult.warning }));
+      yield put(pushMessage({ type: 'warn', message: monzoResult.warningMessage }));
     } else {
       yield put(loadTransactionsRegisterSuccess(monzoResult));
     }
@@ -77,9 +77,9 @@ export function* doLoadPots() {
     });
     if (monzoResult.error) {
       yield put(loadPotsRegisterError(monzoResult));
-      yield put(pushMessage({ type: 'error', message: monzoResult.error }));
+      yield put(pushMessage({ type: 'error', message: monzoResult.errorMessage }));
     } else if (monzoResult.warning) {
-      yield put(pushMessage({ type: 'warn', message: monzoResult.warning }));
+      yield put(pushMessage({ type: 'warn', message: monzoResult.warningMessage }));
     } else {
       yield put(loadPotsRegisterSuccess(monzoResult));
       yield put(pushMessage(monzoLoadSuccessMessage));
