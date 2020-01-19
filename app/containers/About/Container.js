@@ -30,9 +30,9 @@ export default class Contact extends Component {
           . I am passionate about design,{' '}
           <TextLink href="/travel">travel</TextLink> and{' '}
           <TextLink href="/photography">photography</TextLink>, for which I have
-          an unsatisfiable hunger. When I&apos;m not internationally
-          photobombing unsuspecting strangers I&apos;m based somewhere between
-          Portsmouth and London.
+          an insatiable hunger. When I&apos;m not internationally photobombing
+          unsuspecting strangers I&apos;m based somewhere between Portsmouth and
+          London.
           <br />
           <br />I enjoy getting outdoors and trying new things, and completed my
           5th <TextLink href="/blog/tough-mudder">Tough Mudder</TextLink> in May
