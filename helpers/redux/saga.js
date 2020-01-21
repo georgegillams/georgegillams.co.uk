@@ -15,11 +15,11 @@ export function* sagaHelper(
     const result = yield call(request, requestURL, requestParams);
     if (result.error) {
       yield put(registerErrorAction(result));
-      yield put(pushMessage({ type: 'error', message: result.errorMessageMessage }));
+      yield put(pushMessage({ type: 'error', message: result.errorMessage }));
     } else {
       if (result.warning) {
         yield put(
-          pushMessage({ type: 'warn', message: result.warningMessageMessage }),
+          pushMessage({ type: 'warn', message: result.warningMessage }),
         );
       }
       if (successMessage) {
