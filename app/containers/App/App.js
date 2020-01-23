@@ -19,6 +19,7 @@ import BlogViewer from 'containers/BlogViewer/Loadable';
 import BlogsPage from 'containers/Blogs/Loadable';
 import ContactPage from 'containers/ContactGG/Loadable';
 import StatusPage from 'containers/Status/Loadable';
+import DebugPage from 'containers/Debug/Loadable';
 import EmailVerificationPage from 'containers/EmailVerification/Loadable';
 import { Footer } from 'gg-components/dist/Footer';
 import GtsPage from 'containers/GeorgeTrackingSystem/Loadable';
@@ -125,6 +126,7 @@ const App = () => (
           />
           <Route path="/blog/:id" component={BlogViewer} />
           <Route path="/status" component={StatusPage} />
+          <Route path="/debug" component={DebugPage} />
           <Route path="/contact" component={ContactPage} />
           <Route path="/email-verification" component={EmailVerificationPage} />
           <Route path="/gts" component={GtsPage} />
