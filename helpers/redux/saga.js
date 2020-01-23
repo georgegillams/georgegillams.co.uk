@@ -9,13 +9,17 @@ export function* sagaHelper(
   registerErrorAction,
   registerSuccessAction,
   successMessage,
-  postSuccessCallback,
+  postSuccessCallback = null,
+  postFailureCallback = null,
 ) {
   try {
     const result = yield call(request, requestURL, requestParams);
     if (result.error) {
       yield put(registerErrorAction(result));
       yield put(pushMessage({ type: 'error', message: result.errorMessage }));
+      if (postFailureCallback) {
+        yield postFailureCallback(result);
+      }
     } else {
       if (result.warning) {
         yield put(
@@ -27,11 +31,14 @@ export function* sagaHelper(
       }
       yield put(registerSuccessAction(result));
       if (postSuccessCallback) {
-        yield postSuccessCallback();
+        yield postSuccessCallback(result);
       }
     }
   } catch (err) {
     yield put(registerErrorAction(err));
     yield put(pushMessage(COMMUNICATION_ERROR_MESSAGE));
+    if (postFailureCallback) {
+      yield postFailureCallback(err);
+    }
   }
 }
