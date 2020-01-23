@@ -13,7 +13,7 @@ const PageContainer = props => {
   useEffect(
     () =>
       setShowDebug(
-        window.localStorage.getItem('showSessionDebugViews') === 'true',
+        window.localStorage.getItem('showPageContainerDebugColor') === 'true',
       ),
     [],
   );
