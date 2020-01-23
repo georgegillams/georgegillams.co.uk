@@ -2,7 +2,7 @@ import React, { Fragment } from 'react';
 import { cssModules } from 'bpk-react-utils';
 
 import {
-  CompactCardSkeleton,
+  InfoCellSkeleton,
   ButtonSkeleton,
   SectionSkeleton,
 } from 'gg-components/dist/Skeletons';
@@ -22,11 +22,13 @@ const ContactSkeleton = props => {
   return (
     <div className={outerClassNameFinal.join(' ')} {...rest}>
       <SectionSkeleton />
-      <div className={getClassName('pages__compact-card-container')}>
-        <CompactCardSkeleton />
-        <CompactCardSkeleton />
-        <CompactCardSkeleton />
-        <CompactCardSkeleton />
+      <div className={getClassName('pages__full-width-container')}>
+        <InfoCellSkeleton style={{ opacity: 0.5 }} />
+        <InfoCellSkeleton />
+        <InfoCellSkeleton style={{ opacity: 0.5 }} />
+        <InfoCellSkeleton />
+        <InfoCellSkeleton style={{ opacity: 0.5 }} />
+        <InfoCellSkeleton />
       </div>
       <ButtonSkeleton />
       <ButtonSkeleton />
