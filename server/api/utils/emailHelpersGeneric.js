@@ -199,11 +199,13 @@ Payment name: George Gillams - online payment ${payment.id}
     <br>
 Payment amount: £${charge.amount / 100}
     <br>
-Payment method: ${charge.source.brand}-${charge.source.last4}
+Payment method: ${charge.payment_method_details.card.brand}-${
+        charge.payment_method_details.card.last4
+      }
     <br>
-Transaction ID: ${charge.source.id}
+Transaction ID: ${charge.id}
     <br>
-Timestamp: ${new Date(charge.timestamp).toString()}
+Timestamp: ${new Date(charge.created).toString()}
     </p>
   </p>
 </div>`,

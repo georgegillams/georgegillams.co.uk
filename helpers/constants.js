@@ -87,9 +87,9 @@ const COMMUNICATION_ERROR_MESSAGE = {
   type: 'error',
   message: 'Our servers are poorly. Please try again later.',
 };
-const STRIPE_PUBLIC_API_KEY =
-  process.env.STRIPE_PUBLIC_API_KEY ||
-  'pk_test_cgQazYLEKCzNFGFuRfq0TL8N00Cj3LIfai';
+const STRIPE_PUBLIC_API_KEY = process.env.STRIPE_PUBLIC_API_KEY
+  ? process.env.STRIPE_PUBLIC_API_KEY
+  : 'pk_test_cgQazYLEKCzNFGFuRfq0TL8N00Cj3LIfai';
 const STRIPE_SECRET_API_KEY = process.env.STRIPE_SECRET_API_KEY;
 const USERNAMES_ENABLED = PROJECT_NAME !== 'EPICC';
 

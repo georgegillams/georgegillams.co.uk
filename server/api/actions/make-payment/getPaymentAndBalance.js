@@ -1,15 +1,5 @@
 import { datumLoad, datumLoadSingle } from '../datum';
-import stripeInstance from './stripe';
-import formatStripeError from './formatStripeError';
-
-const getPaymentIntent = paymentIntentId =>
-  new Promise((resolve, reject) => {
-    if (paymentIntentId) {
-      resolve(stripeInstance.paymentIntents.retrieve(paymentIntentId));
-    } else {
-      resolve(null);
-    }
-  });
+import fetchPaymentDataFromStripe from './fetchPaymentDataFromStripe';
 
 export default function getPaymentAndBalance(paymentId) {
   return new Promise((resolve, reject) => {
@@ -24,21 +14,7 @@ export default function getPaymentAndBalance(paymentId) {
         })
           .then(stripePayments => {
             let outstandingBalance = payment.amount;
-
-            const stripePaymentIntentPromises = stripePayments.map(sp => {
-              return new Promise((res, rej) => {
-                // get paid amount from stripe's server
-                getPaymentIntent(sp.paymentIntentId)
-                  .then(paymentIntent => {
-                    res(paymentIntent);
-                  })
-                  .catch(err => {
-                    rej(formatStripeError(err));
-                  });
-              });
-            });
-
-            Promise.all(stripePaymentIntentPromises)
+            fetchPaymentDataFromStripe(stripePayments)
               .then(stripePaymentIntents => {
                 stripePaymentIntents.forEach(paymentIntent => {
                   if (paymentIntent) {

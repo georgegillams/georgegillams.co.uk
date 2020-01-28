@@ -1,7 +1,5 @@
-import { datumCreate, datumLoad, datumLoadSingle } from '../datum';
-import authentication from 'utils/authentication';
+import { datumCreate } from '../datum';
 import reqSecure from 'utils/reqSecure';
-import { UNAUTHORISED_READ } from 'helpers/constants';
 import stripePaymentsAllowedAttributes from './stripePaymentsAllowedAttributes';
 import stripeInstance from './stripe';
 import load from './load';
