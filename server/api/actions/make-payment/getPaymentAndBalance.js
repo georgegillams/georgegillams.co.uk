@@ -1,6 +1,4 @@
 import { datumLoad, datumLoadSingle } from '../datum';
-import stripeInstance from './stripe';
-import formatStripeError from './formatStripeError';
 import fetchPaymentDataFromStripe from './fetchPaymentDataFromStripe';
 
 export default function getPaymentAndBalance(paymentId) {

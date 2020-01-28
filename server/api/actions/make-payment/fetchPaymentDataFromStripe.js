@@ -1,4 +1,3 @@
-import { datumLoad, datumLoadSingle } from '../datum';
 import stripeInstance from './stripe';
 import formatStripeError from './formatStripeError';
 

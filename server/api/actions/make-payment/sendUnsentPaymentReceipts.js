@@ -1,60 +1,64 @@
-import { datumLoad, datumUpdate } from '../datum';
-import authentication from 'utils/authentication';
+import { datumLoad, datumLoadSingle, datumUpdate } from '../datum';
 import { sendPaymentReceiptEmail } from 'utils/emailHelpers';
-import reqSecure from 'utils/reqSecure';
-import { find } from 'utils/find';
-import { UNAUTHORISED_READ } from 'helpers/constants';
-import stripePaymentsAllowedAttributes from './stripePaymentsAllowedAttributes';
+import fetchPaymentDataFromStripe from './fetchPaymentDataFromStripe';
+
+const markPaymentIntentEmailSent = paymentId =>
+  new Promise((resolve, reject) => {
+    datumLoadSingle({
+      redisKey: 'stripepayments',
+      filter: sp => sp.paymentId === paymentId,
+    })
+      .then(payment => {
+        resolve(
+          datumUpdate(
+            { redisKey: 'stripepayments' },
+            { body: { ...payment, emailSent: true } },
+          ),
+        );
+      })
+      .catch(err => {
+        reject(err);
+      });
+  });
 
 export default function sendUnsentPaymentReceipts(payment) {
-  console.log(`sendUnsentPaymentReceipts`);
   return new Promise((resolve, reject) => {
-    resolve();
-    return;
-    //datumLoad({
-    //  redisKey: 'stripepayments',
-    //  filter: sp => sp.paymentId === payment.id && !sp.emailSent,
-    //})
-    //  .then(stripePayments => {
-    //    console.log(`stripePayments`, stripePayments);
+    datumLoad({
+      redisKey: 'stripepayments',
+      filter: sp => sp.paymentId === payment.id && !sp.emailSent,
+    })
+      .then(stripePayments => {
+        fetchPaymentDataFromStripe(stripePayments)
+          .then(paymentIntents => {
+            const sendEmailPromises = [];
 
-    //    fetchPaymentDataFromStripe(stripePayments)
-    //      .then(paymentIntents => {
-    //        const sendEmailPromises = paymentIntents.map(
-    //          sPD =>
-    //            new Promise((res, rej) => {
-    //              console.log(`sPD`, sPD);
-    //              if (sPD && sPD.charges && sPD.charges.data) {
-    //                sPD.charges.data.forEach(d => {
-    //                  if (d.amount > 0) {
-    //                    console.log(`SEND EMAIL HERE!`);
-    //                    //TODO sendPaymentReceiptEmail(payment, sPD);
-    //                  }
-    //                });
-    //              }
-    //              res(
-    //                datumUpdate(
-    //                  { redisKey: 'stripepayments' },
-    //                  { body: { ...sPD, emailSent: true } },
-    //                ),
-    //              );
-    //            }),
-    //        );
+            paymentIntents.forEach(pI => {
+              if (pI) {
+                pI.charges.data.forEach(pICD => {
+                  if (pICD.amount > 0) {
+                    sendPaymentReceiptEmail(payment, pICD);
+                  }
+                });
+                sendEmailPromises.push(
+                  markPaymentIntentEmailSent(pI.stripepayment.paymentId),
+                );
+              }
+            });
 
-    //        Promise.all(sendEmailPromises)
-    //          .then(() => {
-    //            resolve();
-    //          })
-    //          .error(err => {
-    //            reject(err);
-    //          });
-    //      })
-    //      .error(err => {
-    //        reject(err);
-    //      });
-    //  })
-    //  .catch(err => {
-    //    reject(err);
-    //  });
+            Promise.all(sendEmailPromises)
+              .then(() => {
+                resolve();
+              })
+              .catch(err => {
+                reject(err);
+              });
+          })
+          .catch(err => {
+            reject(err);
+          });
+      })
+      .catch(err => {
+        reject(err);
+      });
   });
 }
