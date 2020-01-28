@@ -4,4 +4,3 @@ export LoginForm from './LoginForm';
 export CreateNotificationForm from './CreateNotificationForm';
 export CreateBlogForm from './CreateBlogForm';
 export CreateGTSForm from './CreateGTSForm';
-export PaymentForm from './PaymentForm';

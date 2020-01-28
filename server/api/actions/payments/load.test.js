@@ -9,11 +9,13 @@ test('returns error if not authenticated', done => {
     headers: {},
     body: {},
   };
-  load(req).then(result => {
-    expect(result.error).toBe('auth');
-    expect(result.errorMessage).toBe(
-      'You are not authorised to read this resource',
-    );
-    done();
-  });
+  load(req)
+    .then(result => {})
+    .catch(result => {
+      expect(result.error).toBe('auth');
+      expect(result.errorMessage).toBe(
+        'You are not authorised to read this resource',
+      );
+      done();
+    });
 });

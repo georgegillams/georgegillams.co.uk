@@ -3,20 +3,25 @@ import { API_ENDPOINT, COMMUNICATION_ERROR_MESSAGE } from 'helpers/constants';
 import { pushMessage } from 'containers/RequestStatusWrapper/actions';
 
 import { constants, actions, selectors } from './redux-definitions';
-const { MAKE_PAYMENT, LOAD_PAYMENT } = constants;
+const {
+  MAKE_PAYMENT,
+  MAKE_PAYMENT_INTENT,
+  LOAD_PAYMENT,
+  MAKE_PAYMENT_REGISTER_SUCCESS,
+  MAKE_PAYMENT_REGISTER_ERROR,
+} = constants;
 const {
   makePaymentRegisterError,
   makePaymentRegisterSuccess,
+
+  makePaymentIntentRegisterError,
+  makePaymentIntentRegisterSuccess,
 
   loadPayment,
   loadPaymentRegisterError,
   loadPaymentRegisterSuccess,
 } = actions;
-const {
-  makeSelectPaymentToken,
-  makeSelectPaymentId,
-  makeSelectPayment,
-} = selectors;
+const { makeSelectPaymentId, makeSelectPayment } = selectors;
 
 import request from 'utils/request';
 
@@ -39,7 +44,9 @@ export function* doLoadPayment() {
     });
     if (paymentResult.error) {
       yield put(loadPaymentRegisterError(paymentResult));
-      yield put(pushMessage({ type: 'error', message: paymentResult.errorMessage }));
+      yield put(
+        pushMessage({ type: 'error', message: paymentResult.errorMessage }),
+      );
     } else {
       yield put(loadPaymentRegisterSuccess(paymentResult));
     }
@@ -49,38 +56,38 @@ export function* doLoadPayment() {
   }
 }
 
-export function* doMakePayment() {
-  const payment = yield select(makeSelectPayment());
-  const paymentToken = yield select(makeSelectPaymentToken());
-  const requestURL = `${API_ENDPOINT}/makePayment/pay`;
+export function* doMakePaymentIntent() {
+  const paymentId = yield select(makeSelectPaymentId());
+  const requestURL = `${API_ENDPOINT}/makePayment/createIntent`;
 
   try {
     const paymentResult = yield call(request, requestURL, {
       method: 'POST',
-      body: JSON.stringify({
-        paymentToken,
-        paymentAmount: payment.outstandingBalance,
-        paymentId: payment.id,
-      }),
+      body: JSON.stringify({ paymentId }),
       headers: {
         'Content-Type': 'application/json',
       },
     });
     if (paymentResult.error) {
-      yield put(makePaymentRegisterError(paymentResult));
-      yield put(pushMessage({ type: 'error', message: paymentResult.errorMessage }));
+      yield put(makePaymentIntentRegisterError(paymentResult));
+      yield put(
+        pushMessage({ type: 'error', message: paymentResult.errorMessage }),
+      );
     } else {
-      yield put(makePaymentRegisterSuccess());
-      yield put(loadPayment(payment.id));
-      yield put(pushMessage(paymentSuccessMessage));
+      yield put(makePaymentIntentRegisterSuccess(paymentResult));
     }
   } catch (err) {
-    yield put(makePaymentRegisterError(err));
+    yield put(makePaymentIntentRegisterError(err));
     yield put(pushMessage(COMMUNICATION_ERROR_MESSAGE));
   }
 }
 
 export default function* updateUserDetails() {
   yield takeLatest(LOAD_PAYMENT, () => doLoadPayment());
-  yield takeLatest(MAKE_PAYMENT, () => doMakePayment());
+  yield takeLatest(MAKE_PAYMENT_INTENT, () => doMakePaymentIntent());
+
+  // The saga doesn't actually handle these interactions as they have to be performed by the stripe library.
+  // However, when the actions have completed we'll reload the payment to ensure that the UI is up to date.
+  yield takeLatest(MAKE_PAYMENT_REGISTER_SUCCESS, () => doLoadPayment());
+  yield takeLatest(MAKE_PAYMENT_REGISTER_ERROR, () => doLoadPayment());
 }

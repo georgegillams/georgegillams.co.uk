@@ -13,7 +13,7 @@ import { CodeInline } from 'gg-components/dist/Code';
 import Skeleton from './Skeleton';
 import { getTimeDifference } from 'helpers/time';
 import { DebugObject, LoadingCover } from 'gg-components/dist/Auth';
-import { PaymentForm } from 'components/Forms';
+import PaymentForm from './PaymentForm';
 import { STRIPE_PUBLIC_API_KEY } from 'helpers/constants';
 import { Elements, StripeProvider } from 'react-stripe-elements';
 
@@ -32,8 +32,7 @@ export default class StripePayments extends React.Component {
   render() {
     const {
       user,
-
-      paymentTokenChanged,
+      stripe,
 
       loadPayment,
       payment,
@@ -45,6 +44,16 @@ export default class StripePayments extends React.Component {
       makePaymentLoading,
       makePaymentSuccess,
       makePaymentError,
+
+      paymentIntentReady,
+      makePaymentIntent,
+      paymentIntent,
+      makePaymentIntentLoading,
+      makePaymentIntentSuccess,
+      makePaymentIntentError,
+
+      makePaymentRegisterSuccess,
+      makePaymentRegisterError,
 
       className,
       ...rest
@@ -67,26 +76,49 @@ export default class StripePayments extends React.Component {
       }
     }
 
+    const paymentIsComplete = payment && payment.outstandingBalance <= 0;
+
     const page = (
       <Section name={name} {...rest}>
-        {makePaymentSuccess && (
-          <Paragraph>Your payment has been taken successfully.</Paragraph>
+        {paymentIsComplete && (
+          <Fragment>
+            <Paragraph>This payment has been completed.</Paragraph>
+            <br />
+            <Button
+              className={getClassName('forms__component')}
+              large
+              href="/payments"
+            >
+              {'Start another payment'}
+            </Button>
+          </Fragment>
         )}
-        {!makePaymentSuccess && (
+        {!paymentIsComplete && (
           <StripeProvider apiKey={STRIPE_PUBLIC_API_KEY}>
             {/* TODO - Show loading until stripe is loaded. See https://github.com/stripe/react-stripe-elements#advanced-integrations */}
             <Elements>
               <PaymentForm
-                disabled={makePaymentLoading || makePaymentSuccess}
-                user={user}
+                disabled={
+                  makePaymentIntentLoading ||
+                  makePaymentLoading ||
+                  makePaymentSuccess
+                }
                 balance={payment ? payment.outstandingBalance : 0}
-                onDataChanged={newValue => {
-                  userDetailsChanged(newValue);
-                }}
+                paymentIntentReady={paymentIntentReady}
+                paymentIntentClientSecret={
+                  paymentIntent && paymentIntent.paymentIntentClientSecret
+                }
                 onSubmit={arg => {
-                  const tokenId = arg.id;
-                  paymentTokenChanged(tokenId);
+                  makePaymentIntent();
+                }}
+                onStartPayment={arg => {
                   makePayment();
+                }}
+                onError={arg => {
+                  makePaymentRegisterError(arg);
+                }}
+                onSuccess={arg => {
+                  makePaymentRegisterSuccess();
                 }}
               />
             </Elements>
@@ -108,7 +140,6 @@ export default class StripePayments extends React.Component {
           debugTitle="Pay"
           debugObject={{
             user,
-            paymentTokenChanged,
             makePayment,
             makePaymentLoading,
             makePaymentSuccess,
