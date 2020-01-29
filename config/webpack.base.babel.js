@@ -122,8 +122,8 @@ module.exports = options => ({
     new webpack.DefinePlugin({
       'process.env': {
         NODE_ENV: JSON.stringify(NODE_ENV),
-        BUILT_AT,
-        STRIPE_PUBLIC_API_KEY,
+        BUILT_AT: JSON.stringify(BUILT_AT),
+        STRIPE_PUBLIC_API_KEY: JSON.stringify(STRIPE_PUBLIC_API_KEY),
       },
     }),
   ]),
