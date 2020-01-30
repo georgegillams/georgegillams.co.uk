@@ -2,7 +2,7 @@ import { datumLoad, datumLoadSingle, datumUpdate } from '../datum';
 import { sendPaymentReceiptEmail } from 'utils/emailHelpers';
 import fetchPaymentDataFromStripe from './fetchPaymentDataFromStripe';
 
-const markStripePaymentEmailSent = id =>
+const markStripePaymentEmailSent = (id, newValue) =>
   new Promise((resolve, reject) => {
     datumLoadSingle({
       redisKey: 'stripepayments',
@@ -12,7 +12,7 @@ const markStripePaymentEmailSent = id =>
         resolve(
           datumUpdate(
             { redisKey: 'stripepayments' },
-            { body: { ...stripepayment, emailSent: true } },
+            { body: { ...stripepayment, emailSent: newValue } },
           ),
         );
       })
@@ -34,13 +34,17 @@ export default function sendUnsentPaymentReceipts(payment) {
 
             paymentIntents.forEach(pI => {
               if (pI) {
+                let emailSentNewValue = true;
                 pI.charges.data.forEach(pICD => {
                   if (pICD.amount > 0) {
-                    sendPaymentReceiptEmail(payment, pICD);
+                    emailSentNewValue = sendPaymentReceiptEmail(payment, pICD);
                   }
                 });
                 sendEmailPromises.push(
-                  markStripePaymentEmailSent(pI.stripepayment.id),
+                  markStripePaymentEmailSent(
+                    pI.stripepayment.id,
+                    emailSentNewValue,
+                  ),
                 );
               }
             });

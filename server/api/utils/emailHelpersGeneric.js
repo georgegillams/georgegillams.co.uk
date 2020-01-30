@@ -178,6 +178,7 @@ export function sendPaymentReceiptEmail(
   senderEmail,
 ) {
   console.log(`sending payment receipt email`);
+  let success = true;
   transporter.sendMail(
     {
       from: senderEmail,
@@ -205,15 +206,17 @@ Payment method: ${charge.payment_method_details.card.brand}-${
     <br>
 Transaction ID: ${charge.id}
     <br>
-Timestamp: ${new Date(charge.created).toString()}
+Timestamp: ${new Date(charge.created * 1000).toString()}
     </p>
   </p>
 </div>`,
     },
     error => {
       if (error) {
+        success = false;
         return console.log(error);
       }
     },
   );
+  return success;
 }
