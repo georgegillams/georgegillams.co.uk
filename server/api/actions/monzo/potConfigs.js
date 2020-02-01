@@ -38,28 +38,37 @@ const POT_CONFIGS = [
     startDate: `${lastYear}-12-01`,
   },
   {
-    name: 'Yearly Subscriptions',
+    name: 'Yearly subscriptions',
     startDate: `${lastYear}-12-01`,
     startAmount: 60,
   },
   {
-    name: 'Dentist and prescriptions',
+    name: 'Health and hair',
     startDate: `${thisYear}-01-01`,
   },
   {
+    name: 'Monthly subscriptions',
+    monthly: true,
+  },
+  {
     name: 'Buffer',
+    monthly: true,
   },
   {
     name: 'Eating out',
+    monthly: true,
   },
   {
-    name: 'Aerial (monthly)',
+    name: 'Aerial',
+    monthly: true,
   },
   {
     name: 'Weekly',
+    monthly: true,
   },
   {
     name: 'Leftover',
+    monthly: true,
   },
 ];
 

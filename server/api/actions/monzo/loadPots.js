@@ -23,7 +23,7 @@ function loadPots(req) {
 
           const goalAmount = parseFloat(pot.goal_amount) / 100;
           const balance = parseFloat(pot.balance) / 100;
-          const monthsElapsedPercentage = getMonthsElapsedPercentage(pot.name);
+          const monthsElapsedPercentage = getMonthsElapsedPercentage(potConfig);
           const expectedSavingsSoFar =
             (potConfig.startAmount || 0) +
             (goalAmount * monthsElapsedPercentage) / 100;

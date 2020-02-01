@@ -17,12 +17,8 @@ function formatTransaction(transaction) {
   };
 }
 
-function getMonthsElapsedPercentage(potName) {
-  if (
-    potName.includes('(monthly)') ||
-    potName === 'Weekly' ||
-    potName === 'Leftover'
-  ) {
+function getMonthsElapsedPercentage(potConfig) {
+  if (potConfig.monthly) {
     return 0;
   }
 
