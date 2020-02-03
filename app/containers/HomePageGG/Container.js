@@ -13,31 +13,13 @@ export default class HomePage extends React.PureComponent {
   componentDidMount() {}
 
   render() {
-    const { user } = this.props;
+    const { user, userLoading } = this.props;
 
     return (
       <div className={getClassName('pages__container--centered')}>
         <Helmet title="Home" />
         <AboutPage />
         <div className={getClassName('pages__compact-card-container')}>
-          <ArticleCard
-            layout={ARTICLE_CARD_LAYOUTS.narrowCompact}
-            day={null}
-            month={null}
-            className={getClassName('pages__card')}
-            // fillImageSrc="https://i.imgur.com/3n68rkf.jpg"
-            linkUrl="/login"
-            title="Sign in"
-          />
-          <ArticleCard
-            layout={ARTICLE_CARD_LAYOUTS.narrowCompact}
-            day={null}
-            month={null}
-            className={getClassName('pages__card')}
-            // fillImageSrc="https://i.imgur.com/3n68rkf.jpg"
-            linkUrl="/account"
-            title="Account"
-          />
           <ArticleCard
             layout={ARTICLE_CARD_LAYOUTS.narrowCompact}
             day={null}
@@ -92,7 +74,29 @@ export default class HomePage extends React.PureComponent {
             linkUrl="/contact"
             title="Contact"
           />
-          {user && user.admin && (
+          {!user && !userLoading && (
+            <ArticleCard
+              layout={ARTICLE_CARD_LAYOUTS.narrowCompact}
+              day={null}
+              month={null}
+              className={getClassName('pages__card')}
+              // fillImageSrc="https://i.imgur.com/3n68rkf.jpg"
+              linkUrl="/login"
+              title="Sign in"
+            />
+          )}
+          {user && !userLoading && (
+            <ArticleCard
+              layout={ARTICLE_CARD_LAYOUTS.narrowCompact}
+              day={null}
+              month={null}
+              className={getClassName('pages__card')}
+              // fillImageSrc="https://i.imgur.com/3n68rkf.jpg"
+              linkUrl="/account"
+              title="Account"
+            />
+          )}
+          {user && !userLoading && user.admin && (
             <ArticleCard
               layout={ARTICLE_CARD_LAYOUTS.narrowCompact}
               day={null}
