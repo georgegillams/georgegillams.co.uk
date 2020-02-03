@@ -14,6 +14,7 @@ import AdminNotifications from 'containers/AdminNotifications/Loadable';
 import GrammarML from 'containers/GrammarML/Loadable';
 import AdminBlogEdit from 'containers/AdminBlogEdit/Loadable';
 import AdminUsersPage from 'containers/AdminUsers/Loadable';
+import AdminUsersEdit from 'containers/AdminUserEdit/Loadable';
 import Authenticator from 'containers/Authenticator';
 import BlogViewer from 'containers/BlogViewer/Loadable';
 import BlogsPage from 'containers/Blogs/Loadable';
@@ -104,6 +105,7 @@ const App = () => (
           <Route path="/account" component={AccountPage} />
           <Route path="/support" component={SupportPage} />
           <Route path="/monzoPots" component={MonzoPots} />
+          <Route path="/admin/users/:id" component={AdminUsersEdit} />
           <Route path="/admin/users" component={AdminUsersPage} />
           <Route path="/admin/blog/create" component={AdminBlogEdit} />
           <Route path="/admin/blog/edit/:id" component={AdminBlogEdit} />

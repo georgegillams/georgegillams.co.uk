@@ -106,6 +106,11 @@ export default class AdminUsers extends React.Component {
                 <AdminUsersAPIEntity name="more" entityType="User" entity={u}>
                   <br />
                   <br />
+                  <Button large href={`/admin/users/${u.id}`}>
+                    Edit user
+                  </Button>
+                  <br />
+                  <br />
                   <Button
                     destructive
                     large
