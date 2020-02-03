@@ -40,6 +40,9 @@ export default class AdminUsertoeditEdit extends React.Component {
 
   render() {
     const {
+      match,
+      onChangeComplete,
+
       setLoginRedirect,
       user,
       userLoading,
@@ -58,6 +61,8 @@ export default class AdminUsertoeditEdit extends React.Component {
       ...rest
     } = this.props;
     const outerClassNameFinal = [];
+
+    console.log(`onChangeComplete 1`, onChangeComplete);
 
     if (className) {
       outerClassNameFinal.push(className);
@@ -105,7 +110,9 @@ export default class AdminUsertoeditEdit extends React.Component {
                 },
               ]}
               submitLabel="Update user"
-              onSubmit={() => updateUsertoedit(this.state.usertoedit)}
+              onSubmit={() =>
+                updateUsertoedit(this.state.usertoedit, onChangeComplete)
+              }
               onDataChanged={newValue => {
                 this.setState({ usertoedit: newValue });
               }}
