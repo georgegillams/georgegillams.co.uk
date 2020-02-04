@@ -14,6 +14,7 @@ export default function loadSingle(req) {
           datumLoadSingle({
             redisKey: 'notifications',
             includeDeleted: user && user.admin,
+            filter: ar => ar.id === reqSecured.query.id,
           }),
         );
       },

@@ -55,6 +55,5 @@ export function sendEmailVerificationEmail(userProfile) {
 }
 
 export function sendPaymentReceiptEmail(payment, charge) {
-  console.log(`ere`);
   return sendPRE(payment, charge, imageHtml, buttonStyle, senderEmail);
 }

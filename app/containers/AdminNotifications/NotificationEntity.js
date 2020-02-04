@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import AdminNotificationEdit from 'containers/AdminNotificationEdit/Loadable';
 import { Card } from 'gg-components/dist/Cards';
 
 import { NotificationComp } from 'gg-components/dist/Notifications';
@@ -35,7 +36,17 @@ const NotificationEntity = props => {
       </NotificationComp>
       <br />
       <br />
-      {editing && 'EDITOR HERE'}
+      {editing && (
+        <AdminNotificationEdit
+          id={entity.id}
+          onNotificationUpdateSuccess={() => {
+            onNotificationUpdateSuccess();
+            setTimeout(() => {
+              setEditing(false);
+            }, 500);
+          }}
+        />
+      )}
       <br />
       <br />
       <Button
