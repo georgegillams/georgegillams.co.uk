@@ -11,6 +11,7 @@ import AccountPage from 'containers/Account/Loadable';
 import AdminPage from 'containers/Admin';
 import AdminBlogs from 'containers/AdminBlogs/Loadable';
 import AdminNotifications from 'containers/AdminNotifications/Loadable';
+import AdminNotificationEdit from 'containers/AdminNotificationEdit/Loadable';
 import GrammarML from 'containers/GrammarML/Loadable';
 import AdminBlogEdit from 'containers/AdminBlogEdit/Loadable';
 import AdminUsersPage from 'containers/AdminUsers/Loadable';
@@ -110,6 +111,10 @@ const App = () => (
           <Route path="/admin/blog/create" component={AdminBlogEdit} />
           <Route path="/admin/blog/edit/:id" component={AdminBlogEdit} />
           <Route path="/admin/blog" component={AdminBlogs} />
+          <Route
+            path="/admin/notifications/:id"
+            component={AdminNotificationEdit}
+          />
           <Route path="/admin/notifications" component={AdminNotifications} />
           <Route
             path="/apps/password-character-extractor"

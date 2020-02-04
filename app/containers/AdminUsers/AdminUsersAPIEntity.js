@@ -22,16 +22,9 @@ const AdminUsersAPIEntity = props => {
     backgroundColor = '#FFB964'; // orange
   }
 
-  const ApiElement = (
-    <APIEntity style={{ backgroundColor }} entity={entity} {...rest} />
-  );
   return (
-    <Card
-      style={{
-        marginBottom: '2rem',
-      }}
-    >
-      {ApiElement}
+    <Card {...rest}>
+      <APIEntity style={{ backgroundColor }} entity={entity} />
       {editing && entity && (
         <AdminUserEdit
           style={{

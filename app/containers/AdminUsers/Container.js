@@ -115,6 +115,7 @@ export default class AdminUsers extends React.Component {
                   onUserUpdateSuccess={() => {
                     loadUsers();
                   }}
+                  className={getClassName('pages__component')}
                 >
                   <br />
                   <br />
