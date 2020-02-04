@@ -32,7 +32,10 @@ const AdminUsersAPIEntity = props => {
       {editing && entity && (
         <AdminUserEdit
           match={{ params: { id: entity.id } }}
-          onChangeComplete={onChangeComplete}
+          onChangeComplete={() => {
+            setEditing(false);
+            onChangeComplete();
+          }}
         />
       )}
       <br />
