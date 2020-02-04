@@ -1,12 +1,11 @@
 import React, { Fragment } from 'react';
 import PropTypes from 'prop-types';
 import { Helmet } from 'react-helmet';
-import Card from 'bpk-component-card';
 import { cssModules } from 'bpk-react-utils';
 
 import Skeleton from './Skeleton';
+import NotificationEntity from './NotificationEntity';
 
-import { NotificationComp } from 'gg-components/dist/Notifications';
 import { Button } from 'gg-components/dist/Button';
 import { Section } from 'gg-components/dist/Typography';
 import { FormBuilder } from 'gg-components/dist/FormBuilder';
@@ -69,6 +68,11 @@ export default class AdminNotifications extends React.Component {
           setLoginRedirect={() => setLoginRedirect('admin/notification')}
         >
           <Section name="Admin - notifications">
+            <Button onClick={() => loadNotifications()} large>
+              Reload notifications
+            </Button>
+            <br />
+            <br />
             <FormBuilder
               entity={this.state.newNotification}
               submitLabel="Create notification"
@@ -96,26 +100,30 @@ export default class AdminNotifications extends React.Component {
             />
             {notifications &&
               notifications.map &&
-              notifications.map(b => (
-                <Card
-                  className={getClassName(
-                    'pages__component',
-                    'pages__bpk-card',
-                  )}
+              notifications.map(n => (
+                <NotificationEntity
+                  entity={n}
+                  className={getClassName('pages__component')}
                 >
-                  <APIEntity name="more" entityType="Notification" entity={b} />
-                  <NotificationComp type={b.type} deleted={b.deleted}>
-                    {b.message}
-                  </NotificationComp>
                   <Button
                     large
                     destructive
                     disabled={deletingNotification}
-                    onClick={() => deleteNotification(b)}
+                    href={`/admin/notifications/${n.id}`}
+                  >
+                    Edit notification on dedicated page
+                  </Button>
+                  <br />
+                  <br />
+                  <Button
+                    large
+                    destructive
+                    disabled={deletingNotification}
+                    onClick={() => deleteNotification(n)}
                   >
                     Delete
                   </Button>
-                </Card>
+                </NotificationEntity>
               ))}
           </Section>
         </AdminOnly>

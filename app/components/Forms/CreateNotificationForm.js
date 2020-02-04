@@ -42,6 +42,7 @@ class LoginForm extends React.Component {
       notification,
       onDataChanged,
       onSubmit,
+      submitLabel,
       ...rest
     } = this.props;
 
@@ -74,10 +75,11 @@ class LoginForm extends React.Component {
         />
         <br />
         <Button
+          large
           className={getClassName('forms__component')}
           onClick={onSubmit}
         >
-          Create notification
+          {submitLabel || 'Create notification'}
         </Button>
       </div>
     );
