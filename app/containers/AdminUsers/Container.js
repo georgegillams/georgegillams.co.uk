@@ -86,6 +86,11 @@ export default class AdminUsers extends React.Component {
             {users && users.length && <span>{users.length}</span>}
             <br />
             <br />
+            <Button onClick={() => loadUsers()} large>
+              Reload users
+            </Button>
+            <br />
+            <br />
             {users && users.length && (
               <Fragment>
                 <Button onClick={() => downloadData(users)} large>
@@ -103,11 +108,18 @@ export default class AdminUsers extends React.Component {
             {users &&
               users.map &&
               users.map(u => (
-                <AdminUsersAPIEntity name="more" entityType="User" entity={u}>
+                <AdminUsersAPIEntity
+                  name="more"
+                  entityType="User"
+                  entity={u}
+                  onChangeComplete={() => {
+                    loadUsers();
+                  }}
+                >
                   <br />
                   <br />
                   <Button large href={`/admin/users/${u.id}`}>
-                    Edit user
+                    Edit user on dedicated page
                   </Button>
                   <br />
                   <br />

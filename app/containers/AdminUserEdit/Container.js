@@ -40,6 +40,9 @@ export default class AdminUsertoeditEdit extends React.Component {
 
   render() {
     const {
+      match,
+      onChangeComplete,
+
       setLoginRedirect,
       user,
       userLoading,
@@ -59,6 +62,8 @@ export default class AdminUsertoeditEdit extends React.Component {
     } = this.props;
     const outerClassNameFinal = [];
 
+    console.log(`onChangeComplete 1`, onChangeComplete);
+
     if (className) {
       outerClassNameFinal.push(className);
     }
@@ -71,7 +76,7 @@ export default class AdminUsertoeditEdit extends React.Component {
         >
           <Section name={`Admin - user ${usertoedit && usertoedit.id}`}>
             <FormBuilder
-              entity={this.state.usertoedit || usertoedit || {}}
+              entity={this.state.newUsertoedit || usertoedit || {}}
               formFields={[
                 {
                   id: 'name',
@@ -105,11 +110,13 @@ export default class AdminUsertoeditEdit extends React.Component {
                 },
               ]}
               submitLabel="Update user"
-              onSubmit={() => updateUsertoedit(this.state.usertoedit)}
+              onSubmit={() =>
+                updateUsertoedit(this.state.newUsertoedit, onChangeComplete)
+              }
               onDataChanged={newValue => {
-                this.setState({ usertoedit: newValue });
+                this.setState({ newUsertoedit: newValue });
               }}
-              disabled={updatingUsertoedit || !this.state.usertoedit}
+              disabled={updatingUsertoedit || !this.state.newUsertoedit}
             />
           </Section>
         </AdminOnly>

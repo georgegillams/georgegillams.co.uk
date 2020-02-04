@@ -9,7 +9,11 @@ const {
   createUsertoeditRegisterSuccess,
   createUsertoeditRegisterError,
 } = actions;
-const { makeSelectUsertoeditId, makeSelectNewUsertoedit } = selectors;
+const {
+  makeSelectUsertoeditId,
+  makeSelectNewUsertoedit,
+  makeSelectOnChangeComplete,
+} = selectors;
 
 import { call, put, select, takeLatest } from 'redux-saga/effects';
 import { pushMessage } from 'containers/RequestStatusWrapper/actions';
@@ -67,7 +71,8 @@ export function* doLoadUsertoedit() {
 
 export function* doUpdateUsertoedit() {
   const usertoedit = yield select(makeSelectNewUsertoedit());
-  console.log(`usertoedit`, usertoedit);
+  const onChangeComplete = yield select(makeSelectOnChangeComplete());
+  console.log(`onChangeComplete`, onChangeComplete);
   const usertoeditsRequestURL = `${API_ENDPOINT}/users/update`;
 
   try {
@@ -85,6 +90,9 @@ export function* doUpdateUsertoedit() {
       );
     } else {
       yield put(updateUsertoeditRegisterSuccess(updateResult));
+      if (onChangeComplete) {
+        onChangeComplete();
+      }
       yield put(pushMessage(usertoeditUpdatedMessage));
     }
   } catch (err) {
