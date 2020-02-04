@@ -104,10 +104,10 @@ export default class AdminNotifications extends React.Component {
                 <NotificationEntity
                   entity={n}
                   className={getClassName('pages__component')}
+                  onNotificationUpdateSuccess={loadNotifications}
                 >
                   <Button
                     large
-                    destructive
                     disabled={deletingNotification}
                     href={`/admin/notifications/${n.id}`}
                   >
