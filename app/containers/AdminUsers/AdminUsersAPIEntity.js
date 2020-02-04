@@ -43,7 +43,7 @@ const AdminUsersAPIEntity = props => {
           setEditing(!editing);
         }}
       >
-        Edit user
+        {editing ? 'Cancel edit' : 'Edit user'}
       </Button>
       {children && children}
     </div>

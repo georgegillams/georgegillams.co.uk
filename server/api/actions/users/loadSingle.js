@@ -13,7 +13,7 @@ export default function loadSingle(req) {
           resolve(
             datumLoadSingle({
               redisKey: 'users',
-              filter: ar => ar.id !== reqSecured.query.id,
+              filter: ar => ar.id === reqSecured.query.id,
             }),
           );
         } else {
