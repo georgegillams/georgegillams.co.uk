@@ -32,7 +32,7 @@ export default class AdminUsertoeditEdit extends React.Component {
   }
 
   componentDidMount = () => {
-    const usertoeditId = this.props.match.params.id;
+    const usertoeditId = this.props.id || this.props.match.params.id;
     if (usertoeditId) {
       this.props.loadUsertoedit(usertoeditId);
     }
@@ -40,8 +40,9 @@ export default class AdminUsertoeditEdit extends React.Component {
 
   render() {
     const {
+      id,
       match,
-      onChangeComplete,
+      onUserUpdateSuccess,
 
       setLoginRedirect,
       user,
@@ -62,8 +63,6 @@ export default class AdminUsertoeditEdit extends React.Component {
     } = this.props;
     const outerClassNameFinal = [];
 
-    console.log(`onChangeComplete 1`, onChangeComplete);
-
     if (className) {
       outerClassNameFinal.push(className);
     }
@@ -74,7 +73,7 @@ export default class AdminUsertoeditEdit extends React.Component {
           user={user}
           setLoginRedirect={() => setLoginRedirect('admin/usertoedit')}
         >
-          <Section name={`Admin - user ${usertoedit && usertoedit.id}`}>
+          <Section name={`Edit user ${usertoedit && usertoedit.id}`}>
             <FormBuilder
               entity={this.state.newUsertoedit || usertoedit || {}}
               formFields={[
@@ -111,7 +110,7 @@ export default class AdminUsertoeditEdit extends React.Component {
               ]}
               submitLabel="Update user"
               onSubmit={() =>
-                updateUsertoedit(this.state.newUsertoedit, onChangeComplete)
+                updateUsertoedit(this.state.newUsertoedit, onUserUpdateSuccess)
               }
               onDataChanged={newValue => {
                 this.setState({ newUsertoedit: newValue });
@@ -125,7 +124,7 @@ export default class AdminUsertoeditEdit extends React.Component {
 
     return (
       <Fragment>
-        <Helmet title="Admin - usertoedit" />
+        <Helmet title="Admin - edit user" />
         <LoadingCover
           loadingSkeleton={Skeleton}
           loading={userLoading || loadingUsertoedit}
@@ -135,6 +134,9 @@ export default class AdminUsertoeditEdit extends React.Component {
         <DebugObject
           debugTitle="Admin usertoedit"
           debugObject={{
+            id,
+            match,
+            onUserUpdateSuccess,
             setLoginRedirect,
             user,
             userLoading,

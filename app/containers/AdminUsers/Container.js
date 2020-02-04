@@ -112,7 +112,7 @@ export default class AdminUsers extends React.Component {
                   name="more"
                   entityType="User"
                   entity={u}
-                  onChangeComplete={() => {
+                  onUserUpdateSuccess={() => {
                     loadUsers();
                   }}
                 >
