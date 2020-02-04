@@ -29,12 +29,13 @@ const actionMeta = {
     },
     {
       UPDATE_USERTOEDIT: 'tbd',
-      attributes: ['newUsertoedit', 'onChangeComplete'],
+      attributes: ['newUsertoedit', 'onUpdateUsertoeditRegisterSuccess'],
       stateMutations: {
         updatingUsertoedit: true,
         updateUsertoeditError: null,
         newUsertoedit: action => action.newUsertoedit,
-        onChangeComplete: action => action.onChangeComplete,
+        onUpdateUsertoeditRegisterSuccess: action =>
+          action.onUpdateUsertoeditRegisterSuccess,
       },
     },
     {
@@ -43,7 +44,7 @@ const actionMeta = {
       stateMutations: {
         updatingUsertoedit: false,
         updateUsertoeditSuccess: true,
-        onChangeComplete: null,
+        onUpdateUsertoeditRegisterSuccess: null,
       },
     },
     {
@@ -52,7 +53,7 @@ const actionMeta = {
       stateMutations: {
         updatingUsertoedit: false,
         updateUsertoeditError: action => action.updateUsertoeditError,
-        onChangeComplete: null,
+        onUpdateUsertoeditRegisterSuccess: null,
       },
     },
   ],

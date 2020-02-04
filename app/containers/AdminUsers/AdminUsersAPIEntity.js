@@ -3,14 +3,14 @@ import PropTypes from 'prop-types';
 
 import { APIEntity } from 'gg-components/dist/Auth';
 import { Button } from 'gg-components/dist/Button';
+import { Card } from 'gg-components/dist/Cards';
 import AdminUserEdit from 'containers/AdminUserEdit/Loadable';
 
 const AdminUsersAPIEntity = props => {
-  const { entity, onChangeComplete, children, ...rest } = props;
+  const { entity, onUserUpdateSuccess, children, ...rest } = props;
   const [editing, setEditing] = useState(false);
-  console.log(`entity`, entity);
 
-  let backgroundColor = '#fcb4b4'; // red
+  let backgroundColor = null; // red
   if (
     entity.overallRegistrationStatus === 'COMPLETE' &&
     entity.registrationStatus.photoRelease !== 'COMPLETE'
@@ -25,16 +25,25 @@ const AdminUsersAPIEntity = props => {
   const ApiElement = (
     <APIEntity style={{ backgroundColor }} entity={entity} {...rest} />
   );
-  console.log(`onChangeComplete 0`, onChangeComplete);
   return (
-    <div>
+    <Card
+      style={{
+        marginBottom: '2rem',
+      }}
+    >
       {ApiElement}
       {editing && entity && (
         <AdminUserEdit
-          match={{ params: { id: entity.id } }}
-          onChangeComplete={() => {
-            setEditing(false);
-            onChangeComplete();
+          style={{
+            width: '100%',
+          }}
+          id={entity.id}
+          testProp="testProp"
+          onUserUpdateSuccess={() => {
+            onUserUpdateSuccess();
+            setTimeout(() => {
+              setEditing(false);
+            }, 500);
           }}
         />
       )}
@@ -49,7 +58,7 @@ const AdminUsersAPIEntity = props => {
         {editing ? 'Cancel edit' : 'Edit user'}
       </Button>
       {children && children}
-    </div>
+    </Card>
   );
 };
 
