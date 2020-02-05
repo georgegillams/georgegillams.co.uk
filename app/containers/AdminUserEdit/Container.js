@@ -101,12 +101,6 @@ export default class AdminUsertoeditEdit extends React.Component {
                   type: 'CHECKBOX',
                   show: true,
                 },
-                {
-                  id: 'emailVerified',
-                  name: 'Email verified',
-                  type: 'CHECKBOX',
-                  show: true,
-                },
               ]}
               submitLabel="Update user"
               onSubmit={() =>
