@@ -14,9 +14,11 @@ import AdminNotifications from 'containers/AdminNotifications/Loadable';
 import AdminNotificationEdit from 'containers/AdminNotificationEdit/Loadable';
 import GrammarML from 'containers/GrammarML/Loadable';
 import AdminBlogEdit from 'containers/AdminBlogEdit/Loadable';
+import AdminAnalyticsPage from 'containers/AdminAnalytics/Loadable';
 import AdminUsersPage from 'containers/AdminUsers/Loadable';
 import AdminUsersEdit from 'containers/AdminUserEdit/Loadable';
 import Authenticator from 'containers/Authenticator';
+import Analytics from 'containers/Analytics';
 import BlogViewer from 'containers/BlogViewer/Loadable';
 import BlogsPage from 'containers/Blogs/Loadable';
 import ContactPage from 'containers/ContactGG/Loadable';
@@ -84,6 +86,7 @@ const App = () => (
       </Helmet>
       <RequestStatusWrapper />
       <NavigationBarWrapper />
+      <Analytics />
       <Authenticator />
       <NotificationCenter />
       <Konami />
@@ -107,6 +110,7 @@ const App = () => (
           <Route path="/support" component={SupportPage} />
           <Route path="/monzoPots" component={MonzoPots} />
           <Route path="/admin/users/:id" component={AdminUsersEdit} />
+          <Route path="/admin/analytics" component={AdminAnalyticsPage} />
           <Route path="/admin/users" component={AdminUsersPage} />
           <Route path="/admin/blog/create" component={AdminBlogEdit} />
           <Route path="/admin/blog/edit/:id" component={AdminBlogEdit} />
