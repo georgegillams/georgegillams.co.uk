@@ -52,6 +52,14 @@ export default class Admin extends React.Component {
                 day={null}
                 month={null}
                 className={getClassName('pages__card')}
+                linkUrl="/admin/analytics"
+                title="Analytics"
+              />
+              <ArticleCard
+                layout={ARTICLE_CARD_LAYOUTS.narrowCompact}
+                day={null}
+                month={null}
+                className={getClassName('pages__card')}
                 linkUrl="/monzoPots"
                 title="Monzo"
               />
