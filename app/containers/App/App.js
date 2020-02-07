@@ -85,12 +85,12 @@ const App = () => (
         />
       </Helmet>
       <RequestStatusWrapper />
-      <NavigationBarWrapper />
-      <Analytics />
-      <Authenticator />
-      <NotificationCenter />
-      <Konami />
       <PageContainer>
+        <NavigationBarWrapper />
+        <Analytics />
+        <Authenticator />
+        <NotificationCenter />
+        <Konami />
         <Switch>
           {redirects.map(red => (
             <Route
