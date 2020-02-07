@@ -5,11 +5,14 @@
 @import '~gg-components/dist/Tokens/common';
 
 .pages {
+  // margin-top 8 rem allows the page container to run behind the nav bar
+  // padding-top 8 rem ensures that all page content is visible before scrolling
   &__container {
-    margin-top: 1.5rem;
+    margin-top: -8rem;
     margin-right: auto;
     margin-left: auto;
     max-width: 60rem;
+    padding-top: 8rem;
     padding-left: 30px;
     padding-right: 30px;
     width: 100%;
