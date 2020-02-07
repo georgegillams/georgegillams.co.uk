@@ -9,3 +9,9 @@ jobs:
       # run the tests
       - run: docker run --rm georgegillams-test
 
+      - run: containerId=$(docker ps -a | grep georgegillams-test | awk '{print $1}')
+      - run: echo "container $containerId"
+        #   docker cp $containerId:/usr/src/tmp/backstop_data ./
+
+        # - store_artifacts:
+        #    path
