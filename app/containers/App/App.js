@@ -85,8 +85,8 @@ const App = () => (
         />
       </Helmet>
       <RequestStatusWrapper />
+      <NavigationBarWrapper />
       <PageContainer>
-        <NavigationBarWrapper />
         <Analytics />
         <Authenticator />
         <NotificationCenter />
