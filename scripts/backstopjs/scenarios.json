@@ -5,7 +5,7 @@
     "admin",
     "contact",
     "debug",
-    "greasemonkey/github_auto_merge",
+    { "url": "greasemonkey/github_auto_merge", "delay": 10000 },
     "monzoPots",
     "not-found-page",
     "photography",
