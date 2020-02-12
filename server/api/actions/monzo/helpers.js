@@ -1,3 +1,4 @@
+import safeCompare from 'safe-compare';
 import fetch from 'node-fetch';
 import moment from 'moment';
 
@@ -45,7 +46,7 @@ function authMonzo(password) {
         return;
       }
 
-      if (!password || password !== accessPassword) {
+      if (!password || !safeCompare(password, accessPassword)) {
         reject({
           error: 'auth',
           errorMessage: 'Access password incorrect.',
