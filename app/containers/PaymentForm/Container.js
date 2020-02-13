@@ -5,6 +5,7 @@ import { FormBuilder } from 'gg-components/dist/FormBuilder';
 
 import { APIEntity } from 'gg-components/dist/Auth';
 import { Button } from 'gg-components/dist/Button';
+import { Checkbox } from 'gg-components/dist/Checkbox';
 import { Paragraph, Section, SubSection } from 'gg-components/dist/Typography';
 import STYLES from 'containers/pages.scss';
 import { EMAIL_REGEX, DECIMAL_REGEX } from 'helpers/constants';
@@ -15,7 +16,7 @@ export default class PaymentForm extends React.Component {
   constructor(props) {
     super(props);
 
-    this.state = {};
+    this.state = { filterDeleted: true };
   }
 
   componentDidMount() {
@@ -54,36 +55,41 @@ export default class PaymentForm extends React.Component {
     const isAdmin = user && user.admin;
     const showPayments = isAdmin && payments && payments.length > 0;
 
+    let filteredPayments = payments;
+    if (filteredPayments) {
+      if (this.state.filterDeleted) {
+        filteredPayments = filteredPayments.filter(x => !x.deleted);
+      }
+    }
+
     return (
       <div className={outerClassNameFinal.join(' ')} {...rest}>
-        <Section name="Pay online">
-          <FormBuilder
-            presubmitText="Your email will be used only to send a payment receipt."
-            disabled={addPaymentLoading}
-            entity={this.state.newPayment || {}}
-            submitLabel="Continue to payment"
-            formFields={[
-              {
-                id: 'amount',
-                name: 'Amount (GBP)',
-                show: true,
-                validationRegex: DECIMAL_REGEX,
-              },
-              {
-                id: 'email',
-                name: 'Email',
-                show: true,
-                validationRegex: EMAIL_REGEX,
-              },
-            ]}
-            onDataChanged={newPayment => {
-              this.setState({ newPayment });
-            }}
-            onSubmit={() => {
-              addPayment(this.state.newPayment);
-            }}
-          />
-        </Section>
+        <FormBuilder
+          presubmitText="Your email will be used only to send a payment receipt."
+          disabled={addPaymentLoading}
+          entity={this.state.newPayment || {}}
+          submitLabel="Continue to payment"
+          formFields={[
+            {
+              id: 'amount',
+              name: 'Amount (GBP)',
+              show: true,
+              validationRegex: DECIMAL_REGEX,
+            },
+            {
+              id: 'email',
+              name: 'Email',
+              show: true,
+              validationRegex: EMAIL_REGEX,
+            },
+          ]}
+          onDataChanged={newPayment => {
+            this.setState({ newPayment });
+          }}
+          onSubmit={() => {
+            addPayment(this.state.newPayment);
+          }}
+        />
         {isAdmin && (
           <Section name="Admin - payments">
             <Button
@@ -93,8 +99,22 @@ export default class PaymentForm extends React.Component {
             >
               Reload
             </Button>
+            <br />
+            <br />
+            <Checkbox
+              label="Show deleted"
+              name="filterDeleted"
+              checked={!this.state.filterDeleted}
+              onChange={event => {
+                this.setState({
+                  filterDeleted: !event.target.checked,
+                });
+              }}
+            />
+            <br />
+            <br />
             {showPayments &&
-              payments.map(p => (
+              filteredPayments.map(p => (
                 <Fragment>
                   <APIEntity name="more" entityType="Payment" entity={p} />
                   <Button
