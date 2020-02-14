@@ -1,4 +1,5 @@
 import React from 'react';
+import appConfig from '../../../config/app-config';
 import { Helmet } from 'react-helmet';
 import { Switch, Route } from 'react-router-dom';
 import { cssModules } from 'bpk-react-utils';
@@ -78,11 +79,11 @@ const getFullRedirect = destination => {
 const App = () => (
   <div className={getClassName('app-wrapper')} id="app-wrapper">
     <div className={getClassName('app-wrapper--inner')}>
-      <Helmet titleTemplate="%s - George Gillams" defaultTitle="George Gillams">
-        <meta
-          name="description"
-          content="George Gillams - open source software engineer"
-        />
+      <Helmet
+        titleTemplate={`%s - ${appConfig.app.title}`}
+        defaultTitle={appConfig.app.title}
+      >
+        <meta name="description" content={appConfig.app.description} />
       </Helmet>
       <RequestStatusWrapper />
       <NavigationBarWrapper />
