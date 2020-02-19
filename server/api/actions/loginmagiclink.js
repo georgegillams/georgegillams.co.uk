@@ -12,6 +12,7 @@ export default function loginmagiclink(req) {
     const { magicLinkKey } = reqSecured.body;
     datumLoad({ redisKey: 'magiclinks' }).then(magicLinkData => {
       datumLoad({ redisKey: 'users' }).then(userData => {
+        // `find` uses `safeCompare` so it is safe to use for finding the entry that matches the key
         const { existingValue: magicLink } = find(
           magicLinkData,
           magicLinkKey,
@@ -25,10 +26,13 @@ export default function loginmagiclink(req) {
             datumUpdate({ redisKey: 'magiclinks' }, { body: magicLink });
             resolve(loginUser(reqSecured, user));
           } else {
-            reject({ error:'wrong-input', errorMessage: 'Magic link has expired' });
+            reject({
+              error: 'wrong-input',
+              errorMessage: 'Magic link has expired',
+            });
           }
         } else {
-          reject({ error:'wrong-input', errorMessage: 'Invalid magic link' });
+          reject({ error: 'wrong-input', errorMessage: 'Invalid magic link' });
         }
       });
     });

@@ -10,6 +10,7 @@ export default function emailtaken(req) {
   return new Promise(resolve => {
     setTimeout(() => {
       datumLoad({ redisKey: 'users' }).then(userData => {
+        // `find` uses `safeCompare` so it protects against user-enumeration
         const { existingValue: userWithEmail } = find(
           userData,
           emailFingerprint(reqSecured.body.email),

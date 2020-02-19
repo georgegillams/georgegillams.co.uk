@@ -7,6 +7,7 @@ export default function verifyemail(req) {
     const { verificationKey } = req.body;
     datumLoad({ redisKey: 'emailVerificationCodes' }).then(
       emailVerificationData => {
+        // `find` uses `safeCompare` so it is safe to use for finding the entry that matches the key
         const { existingValue: emailVerification } = find(
           emailVerificationData,
           verificationKey,
@@ -33,10 +34,16 @@ export default function verifyemail(req) {
               }
             });
           } else {
-            reject({ error: 'wrong-input', errorMessage: 'Email verification link has expired' });
+            reject({
+              error: 'wrong-input',
+              errorMessage: 'Email verification link has expired',
+            });
           }
         } else {
-          reject({ error: 'wrong-input', errorMessage: 'Invalid verification link' });
+          reject({
+            error: 'wrong-input',
+            errorMessage: 'Invalid verification link',
+          });
         }
       },
     );
