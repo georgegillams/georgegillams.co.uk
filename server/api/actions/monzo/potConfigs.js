@@ -15,23 +15,19 @@ const POT_CONFIGS = [
   {
     name: 'Emergencies',
     startDate: `${lastYear}-12-01`,
-    startAmount: 100,
   },
   {
     name: 'Gifts',
     startDate: `${lastYear}-12-01`,
   },
   {
-    name: 'Charlie birthday',
-    startDate: `${thisYear}-01-01`,
-  },
-  {
-    name: 'Charlie Christmas',
-    startDate: `${thisYear}-01-01`,
+    name: 'Charlie',
+    startDate: `${lastYear}-12-01`,
   },
   {
     name: 'Rents',
     startDate: `${lastYear}-12-01`,
+    startAmount: 169.99,
   },
   {
     name: 'Extras',
@@ -40,19 +36,11 @@ const POT_CONFIGS = [
   {
     name: 'Yearly subscriptions',
     startDate: `${lastYear}-12-01`,
-    startAmount: 60,
+    startAmount: 88.76,
   },
   {
-    name: 'Health and hair',
-    startDate: `${thisYear}-01-01`,
-  },
-  {
-    name: 'Monthly subscriptions',
-    monthly: true,
-  },
-  {
-    name: 'Buffer',
-    monthly: true,
+    name: 'Health',
+    startDate: `${lastYear}-01-01`,
   },
   {
     name: 'Eating out',
@@ -67,7 +55,7 @@ const POT_CONFIGS = [
     monthly: true,
   },
   {
-    name: 'Leftover',
+    name: 'Spare',
     monthly: true,
   },
 ];
