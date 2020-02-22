@@ -61,29 +61,36 @@ function loadLatestTransactions(req) {
                     .then(res => res.json())
                     .then(
                       transactionData => {
-                        let potTransfers = transactionData.transactions.filter(
-                          t => {
-                            let potOfInterest = false;
-                            potConfigsAnnotated.forEach(pc => {
-                              if (pc.potId === t.metadata.pot_id) {
-                                potOfInterest = true;
-                              }
-                            });
-                            return (
-                              t.scheme === 'uk_retail_pot' && potOfInterest
-                            );
-                          },
-                        );
-                        potTransfers = potTransfers.reverse().map(p => {
-                          const potName = potConfigsAnnotated.find(
-                            pc => pc.potId === p.metadata.pot_id,
-                          ).name;
-                          return {
-                            amount: p.amount,
-                            potName,
-                            created: p.created,
-                          };
-                        });
+                        let potTransfers = [];
+                        if (
+                          transactionData &&
+                          transactionData.transactions &&
+                          transactionData.transactions.filter
+                        ) {
+                          potTransfers = transactionData.transactions.filter(
+                            t => {
+                              let potOfInterest = false;
+                              potConfigsAnnotated.forEach(pc => {
+                                if (pc.potId === t.metadata.pot_id) {
+                                  potOfInterest = true;
+                                }
+                              });
+                              return (
+                                t.scheme === 'uk_retail_pot' && potOfInterest
+                              );
+                            },
+                          );
+                          potTransfers = potTransfers.reverse().map(p => {
+                            const potName = potConfigsAnnotated.find(
+                              pc => pc.potId === p.metadata.pot_id,
+                            ).name;
+                            return {
+                              amount: p.amount,
+                              potName,
+                              created: p.created,
+                            };
+                          });
+                        }
                         const potWithdrawals = potTransfers.filter(
                           pt => pt.amount > 0,
                         );
