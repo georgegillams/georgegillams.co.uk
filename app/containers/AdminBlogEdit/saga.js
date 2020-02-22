@@ -105,8 +105,8 @@ export function* doCreateBlog() {
   }
 }
 
-export default function* adminUsers() {
-  yield takeLatest(LOAD_BLOG, () => doLoadBlog());
-  yield takeLatest(UPDATE_BLOG, () => doUpdateBlog());
-  yield takeLatest(CREATE_BLOG, () => doCreateBlog());
+export default function* saga() {
+  yield takeLatest(LOAD_BLOG, doLoadBlog);
+  yield takeLatest(UPDATE_BLOG, doUpdateBlog);
+  yield takeLatest(CREATE_BLOG, doCreateBlog);
 }

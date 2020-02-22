@@ -18,6 +18,6 @@ export function* doLoadBlogs() {
   }
 }
 
-export default function* getBlogs() {
+export default function* saga() {
   yield takeLatest(LOAD_BLOGS, doLoadBlogs);
 }

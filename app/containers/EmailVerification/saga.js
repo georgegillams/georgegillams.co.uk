@@ -35,6 +35,6 @@ export function* doVerification() {
   );
 }
 
-export default function* verify() {
-  yield takeLatest(VERIFY_EMAIL, () => doVerification());
+export default function* saga() {
+  yield takeLatest(VERIFY_EMAIL, doVerification);
 }

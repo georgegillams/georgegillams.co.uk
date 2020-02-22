@@ -71,7 +71,7 @@ export function* doDeleteBlog() {
   }
 }
 
-export default function* adminUsers() {
-  yield takeLatest(LOAD_BLOGS, () => doLoadBlogs());
-  yield takeLatest(DELETE_BLOG, () => doDeleteBlog());
+export default function* saga() {
+  yield takeLatest(LOAD_BLOGS, doLoadBlogs);
+  yield takeLatest(DELETE_BLOG, doDeleteBlog);
 }

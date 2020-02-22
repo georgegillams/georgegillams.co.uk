@@ -128,8 +128,8 @@ export function* doCreateNotification() {
   }
 }
 
-export default function* adminNotifications() {
-  yield takeLatest(LOAD_NOTIFICATIONS, () => doLoadNotifications());
-  yield takeLatest(DELETE_NOTIFICATION, () => doDeleteNotification());
-  yield takeLatest(CREATE_NOTIFICATION, () => doCreateNotification());
+export default function* saga() {
+  yield takeLatest(LOAD_NOTIFICATIONS, doLoadNotifications);
+  yield takeLatest(DELETE_NOTIFICATION, doDeleteNotification);
+  yield takeLatest(CREATE_NOTIFICATION, doCreateNotification);
 }

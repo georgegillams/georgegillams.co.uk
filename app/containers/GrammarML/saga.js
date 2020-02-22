@@ -214,11 +214,11 @@ export function* doCreateData() {
   }
 }
 
-export default function* adminUsers() {
-  yield takeLatest(TEST, () => doTestData());
-  yield takeLatest(TEST_PERFORMANCE, () => doMeasurePerformance());
-  yield takeLatest(LOAD_DATA, () => doLoadData());
-  yield takeLatest(DELETE_DATA, () => doDeleteData());
-  yield takeLatest(DELETE_ALL, () => doDeleteAllData());
-  yield takeLatest(CREATE_DATA, () => doCreateData());
+export default function* saga() {
+  yield takeLatest(TEST, doTestData);
+  yield takeLatest(TEST_PERFORMANCE, doMeasurePerformance);
+  yield takeLatest(LOAD_DATA, doLoadData);
+  yield takeLatest(DELETE_DATA, doDeleteData);
+  yield takeLatest(DELETE_ALL, doDeleteAllData);
+  yield takeLatest(CREATE_DATA, doCreateData);
 }

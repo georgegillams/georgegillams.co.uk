@@ -90,7 +90,7 @@ export function* doLoadUsers() {
   }
 }
 
-export default function* adminUsers() {
-  yield takeLatest(LOAD_USERS, () => doLoadUsers());
-  yield takeLatest(REQUEST_MAGIC_LINK_FOR_USER, () => doRequestMagicLink());
+export default function* saga() {
+  yield takeLatest(LOAD_USERS, doLoadUsers);
+  yield takeLatest(REQUEST_MAGIC_LINK_FOR_USER, doRequestMagicLink);
 }

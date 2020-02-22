@@ -28,6 +28,6 @@ export function* doLoadNotifications() {
   }
 }
 
-export default function* getNotifications() {
+export default function* saga() {
   yield takeLatest(LOAD_NOTIFICATIONS, doLoadNotifications);
 }
