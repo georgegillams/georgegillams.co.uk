@@ -40,7 +40,7 @@ const POT_CONFIGS = [
   },
   {
     name: 'Health',
-    startDate: `${lastYear}-01-01`,
+    startDate: `${lastYear}-12-01`,
   },
   {
     name: 'Eating out',

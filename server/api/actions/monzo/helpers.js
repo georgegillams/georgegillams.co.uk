@@ -23,7 +23,7 @@ function getMonthsElapsedPercentage(potConfig) {
     return 0;
   }
 
-  const config = POT_CONFIGS.filter(p => p.name === potName)[0];
+  const config = POT_CONFIGS.filter(p => p.name === potConfig.name)[0];
 
   const result = moment().diff(config.startDate, 'months');
   return Math.min(100, (result * 100) / 12);
