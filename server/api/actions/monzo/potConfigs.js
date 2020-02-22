@@ -27,7 +27,7 @@ const POT_CONFIGS = [
   {
     name: 'Rents',
     startDate: `${lastYear}-12-01`,
-    startAmount: 169.99,
+    startAmount: 125,
   },
   {
     name: 'Extras',
