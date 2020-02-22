@@ -53,6 +53,6 @@ export function* doLogin() {
   }
 }
 
-export default function* login() {
-  yield takeLatest(LOGIN, () => doLogin());
+export default function* saga() {
+  yield takeLatest(LOGIN, doLogin);
 }

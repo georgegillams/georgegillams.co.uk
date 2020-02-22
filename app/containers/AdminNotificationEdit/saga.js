@@ -95,6 +95,6 @@ export function* doUpdateNotification() {
 }
 
 export default function* saga() {
-  yield takeLatest(LOAD_NOTIFICATION, () => doLoadNotification());
-  yield takeLatest(UPDATE_NOTIFICATION, () => doUpdateNotification());
+  yield takeLatest(LOAD_NOTIFICATION, doLoadNotification);
+  yield takeLatest(UPDATE_NOTIFICATION, doUpdateNotification);
 }

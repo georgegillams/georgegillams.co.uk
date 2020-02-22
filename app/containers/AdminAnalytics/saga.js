@@ -61,5 +61,5 @@ export function* doLoadAnalytics() {
 }
 
 export default function* adminAnalytics() {
-  yield takeLatest(LOAD_ANALYTICS, () => doLoadAnalytics());
+  yield takeLatest(LOAD_ANALYTICS, doLoadAnalytics);
 }

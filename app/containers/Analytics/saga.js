@@ -29,6 +29,6 @@ export function* doSend() {
   }
 }
 
-export default function* send() {
-  yield takeLatest(SEND, () => doSend());
+export default function* saga() {
+  yield takeLatest(SEND, doSend);
 }

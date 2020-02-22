@@ -102,7 +102,7 @@ export function* doUpdateUsertoedit() {
   }
 }
 
-export default function* adminUsers() {
-  yield takeLatest(LOAD_USERTOEDIT, () => doLoadUsertoedit());
-  yield takeLatest(UPDATE_USERTOEDIT, () => doUpdateUsertoedit());
+export default function* saga() {
+  yield takeLatest(LOAD_USERTOEDIT, doLoadUsertoedit);
+  yield takeLatest(UPDATE_USERTOEDIT, doUpdateUsertoedit);
 }

@@ -82,12 +82,12 @@ export function* doMakePaymentIntent() {
   }
 }
 
-export default function* updateUserDetails() {
-  yield takeLatest(LOAD_PAYMENT, () => doLoadPayment());
-  yield takeLatest(MAKE_PAYMENT_INTENT, () => doMakePaymentIntent());
+export default function* saga() {
+  yield takeLatest(LOAD_PAYMENT, doLoadPayment);
+  yield takeLatest(MAKE_PAYMENT_INTENT, doMakePaymentIntent);
 
   // The saga doesn't actually handle these interactions as they have to be performed by the stripe library.
   // However, when the actions have completed we'll reload the payment to ensure that the UI is up to date.
-  yield takeLatest(MAKE_PAYMENT_REGISTER_SUCCESS, () => doLoadPayment());
-  yield takeLatest(MAKE_PAYMENT_REGISTER_ERROR, () => doLoadPayment());
+  yield takeLatest(MAKE_PAYMENT_REGISTER_SUCCESS, doLoadPayment);
+  yield takeLatest(MAKE_PAYMENT_REGISTER_ERROR, doLoadPayment);
 }

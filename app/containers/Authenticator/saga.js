@@ -29,6 +29,6 @@ export function* doReauthentication() {
   }
 }
 
-export default function* reauthenticate() {
-  yield takeLatest(REAUTHENTICATE, () => doReauthentication());
+export default function* saga() {
+  yield takeLatest(REAUTHENTICATE, doReauthentication);
 }
