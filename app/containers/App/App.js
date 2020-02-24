@@ -87,7 +87,7 @@ const App = () => (
       </Helmet>
       <RequestStatusWrapper />
       <NavigationBarWrapper />
-      <PageContainer>
+      <PageContainer id="mainScrollView">
         <Analytics />
         <Authenticator />
         <NotificationCenter />
