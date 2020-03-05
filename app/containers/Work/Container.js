@@ -8,13 +8,13 @@ import { cssModules } from 'bpk-react-utils';
 
 import STYLES from '../pages.scss';
 
-import { Button } from 'gg-components/dist/Button';
+import { Button } from 'gg-components/Button';
 import {
   Paragraph,
   Section,
   SubSection,
   TextLink,
-} from 'gg-components/dist/Typography';
+} from 'gg-components/Typography';
 
 const getClassName = cssModules(STYLES); // REGEX_REPLACED
 

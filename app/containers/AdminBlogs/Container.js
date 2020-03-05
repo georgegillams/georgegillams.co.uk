@@ -7,16 +7,16 @@ import { cssModules } from 'bpk-react-utils';
 import Skeleton from './Skeleton';
 
 import { BlogCard } from 'components/Blogs';
-import { Button } from 'gg-components/dist/Button';
-import { Section } from 'gg-components/dist/Typography';
-import { FormBuilder } from 'gg-components/dist/FormBuilder';
+import { Button } from 'gg-components/Button';
+import { Section } from 'gg-components/Typography';
+import { FormBuilder } from 'gg-components/FormBuilder';
 import { ID_REGEX } from 'helpers/constants';
 import {
   DebugObject,
   APIEntity,
   AdminOnly,
   LoadingCover,
-} from 'gg-components/dist/Auth';
+} from 'gg-components/Auth';
 import STYLES from 'containers/pages.scss';
 
 const getClassName = cssModules(STYLES);

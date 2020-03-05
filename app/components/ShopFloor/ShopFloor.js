@@ -1,9 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import { CodeInline } from 'gg-components/dist/Code';
-import { SubSection } from 'gg-components/dist/Typography';
-import { ArticleCard, ARTICLE_CARD_LAYOUTS } from 'gg-components/dist/Cards';
+import { CodeInline } from 'gg-components/Code';
+import { SubSection } from 'gg-components/Typography';
+import { ArticleCard, ARTICLE_CARD_LAYOUTS } from 'gg-components/Cards';
 import { getPriceForTicketType, beautifyTicketType } from 'helpers/ticketing';
 
 const ShopFloor = props => {

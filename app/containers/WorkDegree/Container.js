@@ -13,8 +13,8 @@ import {
   Section,
   SubSection,
   TextLink,
-} from 'gg-components/dist/Typography';
-import { DegreeModule } from 'gg-components/dist/Degree';
+} from 'gg-components/Typography';
+import { DegreeModule } from 'gg-components/Degree';
 import Comments from 'containers/Comments';
 
 const getClassName = cssModules(STYLES);

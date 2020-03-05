@@ -16,8 +16,8 @@ import { cssModules } from 'bpk-react-utils';
 
 import STYLES from './blog-viewer.scss';
 
-import { CodeInline, Code, CodeBashArrow } from 'gg-components/dist/Code';
-import { TextLink, Quote, SubSection } from 'gg-components/dist/Typography';
+import { CodeInline, Code, CodeBashArrow } from 'gg-components/Code';
+import { TextLink, Quote, SubSection } from 'gg-components/Typography';
 import HelperFunctions from 'helpers/HelperFunctions';
 
 const getClassName = cssModules(STYLES); // REGEX_REPLACED

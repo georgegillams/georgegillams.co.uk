@@ -1,8 +1,8 @@
 import React, { Fragment, useState } from 'react';
-import { Card } from 'gg-components/dist/Cards';
-import { Paragraph, Section } from 'gg-components/dist/Typography';
+import { Card } from 'gg-components/Cards';
+import { Paragraph, Section } from 'gg-components/Typography';
 
-import { Button } from 'gg-components/dist/Button';
+import { Button } from 'gg-components/Button';
 import {
   STRING_REGEX,
   INT_REGEX,
@@ -16,7 +16,7 @@ import {
   APIEntity,
   AdminOnly,
   LoadingCover,
-} from 'gg-components/dist/Auth';
+} from 'gg-components/Auth';
 import STYLES from 'containers/pages.scss';
 
 const AnalyticEntity = props => {

@@ -1,6 +1,6 @@
 import React, { Component, Fragment } from 'react';
 import konami from 'konami';
-import { DebugObject } from 'gg-components/dist/Auth';
+import { DebugObject } from 'gg-components/Auth';
 import ConfettiGenerator from 'confetti-js';
 
 class Konami extends Component {

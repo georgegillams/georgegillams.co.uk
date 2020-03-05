@@ -1,15 +1,15 @@
 import React, { Fragment } from 'react';
 import PropTypes from 'prop-types';
-import { Input } from 'gg-components/dist/Input';
+import { Input } from 'gg-components/Input';
 import { Helmet } from 'react-helmet';
 import { cssModules } from 'bpk-react-utils';
 
 import Skeleton from './Skeleton';
 import AnalyticEntity from './AnalyticEntity';
 
-import { Button } from 'gg-components/dist/Button';
-import { Card } from 'gg-components/dist/Cards';
-import { Paragraph, Section } from 'gg-components/dist/Typography';
+import { Button } from 'gg-components/Button';
+import { Card } from 'gg-components/Cards';
+import { Paragraph, Section } from 'gg-components/Typography';
 import {
   STRING_REGEX,
   INT_REGEX,
@@ -23,9 +23,9 @@ import {
   APIEntity,
   AdminOnly,
   LoadingCover,
-} from 'gg-components/dist/Auth';
+} from 'gg-components/Auth';
 import HelperFunctions from 'helpers/HelperFunctions';
-import { Checkbox } from 'gg-components/dist/Checkbox';
+import { Checkbox } from 'gg-components/Checkbox';
 import STYLES from 'containers/pages.scss';
 
 const getClassName = cssModules(STYLES);

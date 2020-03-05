@@ -5,7 +5,7 @@ import { cssModules } from 'bpk-react-utils';
 import STATUS_TYPES from './StatusTypes';
 import STYLES from './status.scss';
 
-import { TextLink } from 'gg-components/dist/Typography';
+import { TextLink } from 'gg-components/Typography';
 
 const getClassName = cssModules(STYLES); // REGEX_REPLACED
 

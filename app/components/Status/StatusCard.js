@@ -5,7 +5,7 @@ import { cssModules } from 'bpk-react-utils';
 import Status from './Status';
 import STYLES from './status-card.scss';
 
-import { ArticleCard, ARTICLE_CARD_LAYOUTS } from 'gg-components/dist/Cards';
+import { ArticleCard, ARTICLE_CARD_LAYOUTS } from 'gg-components/Cards';
 
 const getClassName = cssModules(STYLES); // REGEX_REPLACED
 

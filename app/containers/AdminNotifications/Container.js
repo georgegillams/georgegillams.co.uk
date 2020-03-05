@@ -6,9 +6,9 @@ import { cssModules } from 'bpk-react-utils';
 import Skeleton from './Skeleton';
 import NotificationEntity from './NotificationEntity';
 
-import { Button } from 'gg-components/dist/Button';
-import { Section } from 'gg-components/dist/Typography';
-import { FormBuilder } from 'gg-components/dist/FormBuilder';
+import { Button } from 'gg-components/Button';
+import { Section } from 'gg-components/Typography';
+import { FormBuilder } from 'gg-components/FormBuilder';
 import {
   STRING_REGEX,
   INT_REGEX,
@@ -22,7 +22,7 @@ import {
   APIEntity,
   AdminOnly,
   LoadingCover,
-} from 'gg-components/dist/Auth';
+} from 'gg-components/Auth';
 import STYLES from 'containers/pages.scss';
 
 const getClassName = cssModules(STYLES);

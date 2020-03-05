@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 
-import { APIEntity } from 'gg-components/dist/Auth';
-import { Button } from 'gg-components/dist/Button';
-import { Card } from 'gg-components/dist/Cards';
+import { APIEntity } from 'gg-components/Auth';
+import { Button } from 'gg-components/Button';
+import { Card } from 'gg-components/Cards';
 import AdminUserEdit from 'containers/AdminUserEdit/Loadable';
 
 const AdminUsersAPIEntity = props => {

@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 import React from 'react';
 import { cssModules } from 'bpk-react-utils';
 
-import { SubSection } from 'gg-components/dist/Typography';
+import { SubSection } from 'gg-components/Typography';
 import BlogPreviewContent from './BlogPreviewContent';
 
 import STYLES from 'containers/pages.scss';

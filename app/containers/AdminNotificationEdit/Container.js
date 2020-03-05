@@ -5,19 +5,19 @@ import { cssModules } from 'bpk-react-utils';
 
 import Skeleton from './Skeleton';
 
-import { LoadingIndicator } from 'gg-components/dist/LoadingIndicator';
-import { ArticleCard, ARTICLE_CARD_LAYOUTS } from 'gg-components/dist/Cards';
-import { Button } from 'gg-components/dist/Button';
-import { Section, SubSection, TextLink } from 'gg-components/dist/Typography';
-import { FormBuilder } from 'gg-components/dist/FormBuilder';
-import { CodeInline } from 'gg-components/dist/Code';
+import { LoadingIndicator } from 'gg-components/LoadingIndicator';
+import { ArticleCard, ARTICLE_CARD_LAYOUTS } from 'gg-components/Cards';
+import { Button } from 'gg-components/Button';
+import { Section, SubSection, TextLink } from 'gg-components/Typography';
+import { FormBuilder } from 'gg-components/FormBuilder';
+import { CodeInline } from 'gg-components/Code';
 import Ticket from 'components/Ticket';
 import {
   DebugObject,
   APIEntity,
   AdminOnly,
   LoadingCover,
-} from 'gg-components/dist/Auth';
+} from 'gg-components/Auth';
 import { CreateNotificationForm } from 'components/Forms';
 import STYLES from 'containers/pages.scss';
 import { EMAIL_REGEX, UNAME_REGEX } from 'helpers/constants';

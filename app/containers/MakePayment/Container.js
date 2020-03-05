@@ -1,18 +1,18 @@
 import React, { Fragment } from 'react';
 import PropTypes from 'prop-types';
 import { Helmet } from 'react-helmet';
-import { LoadingIndicator } from 'gg-components/dist/LoadingIndicator';
-import { Button } from 'gg-components/dist/Button';
+import { LoadingIndicator } from 'gg-components/LoadingIndicator';
+import { Button } from 'gg-components/Button';
 import {
   Paragraph,
   Section,
   SubSection,
   TextLink,
-} from 'gg-components/dist/Typography';
-import { CodeInline } from 'gg-components/dist/Code';
+} from 'gg-components/Typography';
+import { CodeInline } from 'gg-components/Code';
 import Skeleton from './Skeleton';
 import { getTimeDifference } from 'helpers/time';
-import { DebugObject, LoadingCover } from 'gg-components/dist/Auth';
+import { DebugObject, LoadingCover } from 'gg-components/Auth';
 import PaymentForm from './PaymentForm';
 import { STRIPE_PUBLIC_API_KEY } from 'helpers/constants';
 import { Elements, StripeProvider } from 'react-stripe-elements';
