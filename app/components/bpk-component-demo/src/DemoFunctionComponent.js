@@ -20,7 +20,7 @@
 
 import React, { type Node } from 'react';
 import PropTypes from 'prop-types';
-import { Input } from 'gg-components/dist/Input';
+import { Input } from 'gg-components/Input';
 import BpkLabel from 'bpk-component-label';
 
 // import STYLES from './bpk-button.scss'; import {cssModules} from 'bpk-react-utils';  const getClassName = cssModules(STYLES); // REGEX_REPLACED

@@ -3,7 +3,7 @@ import {
   InputSkeleton,
   ButtonSkeleton,
   SectionSkeleton,
-} from 'gg-components/dist/Skeletons';
+} from 'gg-components/Skeletons';
 
 const Skeleton = props => {
   const { className, ...rest } = props; // eslint-disable-line no-shadow

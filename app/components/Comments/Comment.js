@@ -5,8 +5,8 @@ import { cssModules } from 'bpk-react-utils';
 import CommentInput from './CommentInput';
 import STYLES from './comments.scss';
 
-import {Button} from 'gg-components/dist/Button';
-import { SubSection } from 'gg-components/dist/Typography';
+import {Button} from 'gg-components/Button';
+import { SubSection } from 'gg-components/Typography';
 import { BlogPreviewContent } from 'components/Typography';
 
 const getClassName = cssModules(STYLES); // REGEX_REPLACED

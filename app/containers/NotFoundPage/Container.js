@@ -9,7 +9,7 @@ import {
   Section,
   SubSection,
   TextLink,
-} from 'gg-components/dist/Typography';
+} from 'gg-components/Typography';
 
 const getClassName = cssModules(STYLES); // REGEX_REPLACED
 

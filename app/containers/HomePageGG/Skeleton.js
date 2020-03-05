@@ -5,7 +5,7 @@ import AboutSkeleton from 'containers/About/Skeleton';
 import {
   CompactCardSkeleton,
   SectionSkeleton,
-} from 'gg-components/dist/Skeletons';
+} from 'gg-components/Skeletons';
 import STYLES from 'containers/pages.scss';
 
 const getClassName = cssModules(STYLES);

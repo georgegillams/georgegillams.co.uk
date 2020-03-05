@@ -4,9 +4,9 @@ import { cssModules } from 'bpk-react-utils';
 
 import STYLES from './comments.scss';
 
-import { FormBuilder } from 'gg-components/dist/FormBuilder';
-import { CodeInline } from 'gg-components/dist/Code';
-import { SubSection } from 'gg-components/dist/Typography';
+import { FormBuilder } from 'gg-components/FormBuilder';
+import { CodeInline } from 'gg-components/Code';
+import { SubSection } from 'gg-components/Typography';
 import { MD_PARTIAL_REGEX, UNAME_REGEX } from 'helpers/constants';
 
 const getClassName = cssModules(STYLES); // REGEX_REPLACED

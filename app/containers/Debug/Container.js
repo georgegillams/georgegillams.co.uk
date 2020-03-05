@@ -3,11 +3,11 @@ import PropTypes from 'prop-types';
 import Helmet from 'react-helmet';
 import { cssModules } from 'bpk-react-utils';
 import { getTimeDifference } from 'helpers/time';
-import { Checkbox } from 'gg-components/dist/Checkbox';
+import { Checkbox } from 'gg-components/Checkbox';
 
 import STYLES from '../pages.scss';
 
-import { Paragraph, Section, SubSection } from 'gg-components/dist/Typography';
+import { Paragraph, Section, SubSection } from 'gg-components/Typography';
 const getClassName = cssModules(STYLES);
 
 const StatusControl = props => {

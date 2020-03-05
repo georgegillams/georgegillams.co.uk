@@ -1,12 +1,12 @@
 import React, { Fragment } from 'react';
 import PropTypes from 'prop-types';
 import { cssModules } from 'bpk-react-utils';
-import { FormBuilder } from 'gg-components/dist/FormBuilder';
+import { FormBuilder } from 'gg-components/FormBuilder';
 
-import { APIEntity } from 'gg-components/dist/Auth';
-import { Button } from 'gg-components/dist/Button';
-import { Checkbox } from 'gg-components/dist/Checkbox';
-import { Paragraph, Section, SubSection } from 'gg-components/dist/Typography';
+import { APIEntity } from 'gg-components/Auth';
+import { Button } from 'gg-components/Button';
+import { Checkbox } from 'gg-components/Checkbox';
+import { Paragraph, Section, SubSection } from 'gg-components/Typography';
 import STYLES from 'containers/pages.scss';
 import { EMAIL_REGEX, DECIMAL_REGEX } from 'helpers/constants';
 

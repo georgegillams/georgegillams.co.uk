@@ -6,7 +6,7 @@ import { getTimeDifference } from 'helpers/time';
 
 import STYLES from '../pages.scss';
 
-import { Paragraph, Section, SubSection } from 'gg-components/dist/Typography';
+import { Paragraph, Section, SubSection } from 'gg-components/Typography';
 const getClassName = cssModules(STYLES);
 
 const Status = props => {

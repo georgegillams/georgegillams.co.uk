@@ -7,8 +7,8 @@ import { cssModules } from 'bpk-react-utils';
 import { detect } from 'detect-browser';
 const queryString = require('query-string');
 
-import { Section, SubSection, TextLink } from 'gg-components/dist/Typography';
-import { DebugObject } from 'gg-components/dist/Auth';
+import { Section, SubSection, TextLink } from 'gg-components/Typography';
+import { DebugObject } from 'gg-components/Auth';
 import STYLES from 'containers/pages.scss';
 
 const getClassName = cssModules(STYLES);

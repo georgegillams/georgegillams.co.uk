@@ -4,11 +4,11 @@ import bibtexParse from 'bibtex-parse-js';
 import { cssModules } from 'bpk-react-utils';
 
 import BlogPreviewSection from './BlogPreviewSection';
-import { Section, SubSection } from 'gg-components/dist/Typography';
+import { Section, SubSection } from 'gg-components/Typography';
 import STYLES from './blog-viewer.scss';
 
-import {Tag} from 'gg-components/dist/Tag';
-import { ArticleDate } from 'gg-components/dist/Typography';
+import {Tag} from 'gg-components/Tag';
+import { ArticleDate } from 'gg-components/Typography';
 
 const getClassName = cssModules(STYLES); // REGEX_REPLACED
 

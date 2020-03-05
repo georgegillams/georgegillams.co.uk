@@ -1,8 +1,8 @@
 import React, { Fragment } from 'react';
 import PropTypes from 'prop-types';
-import { Input } from 'gg-components/dist/Input';
-import { Button } from 'gg-components/dist/Button';
-import { Paragraph, Section } from 'gg-components/dist/Typography';
+import { Input } from 'gg-components/Input';
+import { Button } from 'gg-components/Button';
+import { Paragraph, Section } from 'gg-components/Typography';
 import {
   injectStripe,
   CardNumberElement,
@@ -25,7 +25,7 @@ import {
 
 import { cssModules } from 'bpk-react-utils';
 
-import { FormBuilder } from 'gg-components/dist/FormBuilder';
+import { FormBuilder } from 'gg-components/FormBuilder';
 
 import STYLES from 'components/Forms/forms.scss';
 const getClassName = cssModules(STYLES);

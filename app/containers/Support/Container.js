@@ -8,20 +8,20 @@ import BpkImage, {
 import Input, { INPUT_TYPES, CLEAR_BUTTON_MODES } from 'bpk-component-input';
 import { cssModules } from 'bpk-react-utils';
 import { associate } from 'helpers/objects';
-import { FormBuilder } from 'gg-components/dist/FormBuilder';
+import { FormBuilder } from 'gg-components/FormBuilder';
 
 import Skeleton from './Skeleton';
 
 import HelperFunctions from 'helpers/HelperFunctions';
-import { MoneyPot } from 'gg-components/dist/MoneyPot';
-import { Button } from 'gg-components/dist/Button';
+import { MoneyPot } from 'gg-components/MoneyPot';
+import { Button } from 'gg-components/Button';
 import {
   Paragraph,
   Section,
   SubSection,
   TextLink,
-} from 'gg-components/dist/Typography';
-import { LoadingCover } from 'gg-components/dist/Auth';
+} from 'gg-components/Typography';
+import { LoadingCover } from 'gg-components/Auth';
 import STYLES from 'containers/pages.scss';
 
 const getClassName = cssModules(STYLES); // REGEX_REPLACED

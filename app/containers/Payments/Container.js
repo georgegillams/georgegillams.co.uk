@@ -8,9 +8,9 @@ import {
   Section,
   SubSection,
   TextLink,
-} from 'gg-components/dist/Typography';
-import { CodeInline } from 'gg-components/dist/Code';
-import { CopyButton } from 'gg-components/dist/Button';
+} from 'gg-components/Typography';
+import { CodeInline } from 'gg-components/Code';
+import { CopyButton } from 'gg-components/Button';
 import { GG_EMAIL } from 'helpers/constants';
 import STYLES from './payments.scss';
 import PaymentForm from 'containers/PaymentForm';

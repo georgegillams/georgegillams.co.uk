@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import AdminNotificationEdit from 'containers/AdminNotificationEdit/Loadable';
-import { Card } from 'gg-components/dist/Cards';
+import { Card } from 'gg-components/Cards';
 
-import { NotificationComp } from 'gg-components/dist/Notifications';
-import { Button } from 'gg-components/dist/Button';
+import { NotificationComp } from 'gg-components/Notifications';
+import { Button } from 'gg-components/Button';
 import {
   STRING_REGEX,
   INT_REGEX,
@@ -17,7 +17,7 @@ import {
   APIEntity,
   AdminOnly,
   LoadingCover,
-} from 'gg-components/dist/Auth';
+} from 'gg-components/Auth';
 import STYLES from 'containers/pages.scss';
 
 const NotificationEntity = props => {

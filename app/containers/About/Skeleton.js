@@ -1,7 +1,7 @@
 import React, { Fragment } from 'react';
 import { cssModules } from 'bpk-react-utils';
 
-import { CardSkeleton, SectionSkeleton } from 'gg-components/dist/Skeletons';
+import { CardSkeleton, SectionSkeleton } from 'gg-components/Skeletons';
 import STYLES from 'containers/pages.scss';
 
 const getClassName = cssModules(STYLES);

@@ -8,7 +8,7 @@ import { cssModules } from 'bpk-react-utils';
 
 import STYLES from '../pages.scss';
 
-import { Paragraph, TextLink, Section } from 'gg-components/dist/Typography';
+import { Paragraph, TextLink, Section } from 'gg-components/Typography';
 const getClassName = cssModules(STYLES);
 
 const documentIfExists = typeof window !== 'undefined' ? document : null;
