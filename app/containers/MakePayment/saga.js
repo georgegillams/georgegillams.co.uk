@@ -21,7 +21,11 @@ const {
   loadPaymentRegisterError,
   loadPaymentRegisterSuccess,
 } = actions;
-const { makeSelectPaymentId, makeSelectPayment } = selectors;
+const {
+  makeSelectPaymentId,
+  makeSelectPayment,
+  makeSelectOnMakePaymentIntentRegisterSuccess,
+} = selectors;
 
 import request from 'utils/request';
 
@@ -59,6 +63,9 @@ export function* doLoadPayment() {
 export function* doMakePaymentIntent() {
   const paymentId = yield select(makeSelectPaymentId());
   const requestURL = `${API_ENDPOINT}/makePayment/createIntent`;
+  const onMakePaymentIntentRegisterSuccess = yield select(
+    makeSelectOnMakePaymentIntentRegisterSuccess(),
+  );
 
   try {
     const paymentResult = yield call(request, requestURL, {
@@ -75,6 +82,11 @@ export function* doMakePaymentIntent() {
       );
     } else {
       yield put(makePaymentIntentRegisterSuccess(paymentResult));
+      if (onMakePaymentIntentRegisterSuccess) {
+        onMakePaymentIntentRegisterSuccess(
+          paymentResult.paymentIntentClientSecret,
+        );
+      }
     }
   } catch (err) {
     yield put(makePaymentIntentRegisterError(err));
