@@ -43,38 +43,28 @@ class PaymentForm extends React.Component {
     this.state = {};
   }
 
-  componentWillReceiveProps(newProps) {
-    if (!newProps.paymentIntentReady) {
+  sendPaymentToStripe = paymentIntentClientSecret => {
+    if (!paymentIntentClientSecret) {
       return;
     }
 
-    if (!newProps.paymentIntentClientSecret) {
-      return;
-    }
-
-    // This is an additional fail-sage to ensure that we do not make a payment twice using the same paymentIntentSecret
-    if (this.state.lastPICSUsed === newProps.paymentIntentClientSecret) {
-      return;
-    }
-    this.setState({ lastPICSUsed: newProps.paymentIntentClientSecret });
-
-    newProps.onStartPayment();
-    newProps.stripe
-      .confirmCardPayment(newProps.paymentIntentClientSecret, {
+    this.props.onStartPayment();
+    this.props.stripe
+      .confirmCardPayment(paymentIntentClientSecret, {
         payment_method: {
-          card: newProps.elements.getElement('cardNumber'),
+          card: this.props.elements.getElement('cardNumber'),
           billing_details: {
             name: 'NAME',
           },
         },
       })
       .then(result => {
-        newProps.onSuccess();
+        this.props.onSuccess();
       })
       .catch(err => {
-        newProps.onError(err);
+        this.props.onError(err);
       });
-  }
+  };
 
   render() {
     const {
@@ -123,7 +113,7 @@ class PaymentForm extends React.Component {
           disabled={disabled}
           className={getClassName('forms__component')}
           large
-          onClick={this.props.onSubmit}
+          onClick={e => this.props.onSubmit(this.sendPaymentToStripe)}
         >
           {`Make payment for £${balance / 100}`}
         </Button>

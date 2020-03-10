@@ -30,9 +30,10 @@ const actionMeta = {
     },
     {
       MAKE_PAYMENT_INTENT: 'tbd',
-      attributes: [],
+      attributes: ['onMakePaymentIntentRegisterSuccess'],
       stateMutations: {
-        paymentIntentReady: false,
+        onMakePaymentIntentRegisterSuccess: action =>
+          action.onMakePaymentIntentRegisterSuccess,
         makePaymentIntentLoading: true,
         makePaymentIntentError: null,
       },
@@ -41,7 +42,6 @@ const actionMeta = {
       MAKE_PAYMENT_INTENT_REGISTER_SUCCESS: 'tbd',
       attributes: ['paymentIntent'],
       stateMutations: {
-        paymentIntentReady: true, // signals that the payment should now be attempted
         paymentIntent: action => action.paymentIntent,
         makePaymentIntentLoading: false,
         makePaymentIntentSuccess: true,
@@ -60,7 +60,6 @@ const actionMeta = {
       MAKE_PAYMENT: 'tbd',
       attributes: [],
       stateMutations: {
-        paymentIntentReady: false, // signals that the ready payment intent is used
         makePaymentLoading: true,
         makePaymentError: null,
       },

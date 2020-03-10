@@ -12,7 +12,6 @@ const getClassName = cssModules(STYLES);
 
 const StatusControl = props => {
   const { name, storageKey, ...rest } = props;
-  console.log(`storageKey`, storageKey);
   const [isEnabled, setIsEnabled] = useState(false);
   useEffect(() => {
     const isEnabled = window.localStorage.getItem(storageKey) === 'true';

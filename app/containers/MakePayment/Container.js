@@ -108,8 +108,8 @@ export default class StripePayments extends React.Component {
                 paymentIntentClientSecret={
                   paymentIntent && paymentIntent.paymentIntentClientSecret
                 }
-                onSubmit={arg => {
-                  makePaymentIntent();
+                onSubmit={onSuccessCallback => {
+                  makePaymentIntent(onSuccessCallback);
                 }}
                 onStartPayment={arg => {
                   makePayment();

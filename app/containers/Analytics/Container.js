@@ -22,7 +22,6 @@ class Analytics extends React.Component {
       browserVersion = detectResult.version;
       os = detectResult.os;
     }
-    console.log(`detectResult`, detectResult);
     const location = this.props.location;
     if (location) {
       url = location.pathname;
@@ -33,7 +32,6 @@ class Analytics extends React.Component {
         utm_source = parsedSearch.utm_source;
       }
     }
-    console.log(`this.props`, this.props);
     this.props.send({
       type: 'SPA_LOAD',
       url,
