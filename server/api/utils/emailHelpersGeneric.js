@@ -6,6 +6,8 @@ import transporter from './nodemailer';
 
 import { SITE_URL, EMAIL_VERIFICATION_ENABLED } from 'helpers/constants';
 
+const emailWidth = '600px';
+
 export function sendMagicLinkEmail(
   userProfile,
   imageHtml,
@@ -185,31 +187,52 @@ export function sendPaymentReceiptEmail(
       to: payment.email,
       subject: 'Payment received',
       text: `Thank you for your recent payment of £${charge.amount / 100}.`,
-      html: `<div style="text-align: center;color: #1e1e1e;">
-      ${imageHtml}
-  <p>
-    Thank you for making an online payment.
-    <br><br>
-    Please find the receipt for this transaction below.
-    <br><br>
-    <hr>
-    <p style="text-align: left;margin-left: 1rem;">
-    TRANSACTION RECEIPT FOR YOUR RECORDS:
-    <br>
-Payment name: George Gillams - online payment ${payment.id}
-    <br>
-Payment amount: £${charge.amount / 100}
-    <br>
-Payment method: ${charge.payment_method_details.card.brand}-${
+      html: `<body style="width: 100% !important; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; margin: -1px 0 0; padding: 0;">
+  <table border="0" cellpadding="0" cellspacing="0" width="100%" height="100%" style="border: 0; border-collapse: collapse; font-size: 24px; width: 100%; margin: 0 auto;>
+    <tr style="align: center;">
+      <td bgcolor="#E5F4FF">
+        <table border="0" cellpadding="0" cellspacing="0" style="border: 0; border-collapse: collapse; align: left; color: #1e1e1e; font-size: 24px; width: 100%; max-width: ${emailWidth}; margin: 0 auto;">
+          <tr>
+            <td bgcolor="#44AEFF" style="padding: 24px; color: white; font-size: 32px;">
+              <div style="text-align: center;">
+                ${imageHtml}
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td bgcolor="white" style="padding: 24px;">
+              <p>
+                Thank you for making an online payment.
+                <br><br>
+                Please find the receipt for this transaction below.
+                <br><br>
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td bgcolor="white" style="padding: 24px; font-size: 18px;">
+              <p>
+                TRANSACTION RECEIPT FOR YOUR RECORDS:
+                <br>
+                Payment name: George Gillams - online payment ${payment.id}
+                <br>
+                Payment amount: £${charge.amount / 100}
+                <br>
+                Payment method: ${charge.payment_method_details.card.brand}-${
         charge.payment_method_details.card.last4
       }
-    <br>
-Transaction ID: ${charge.id}
-    <br>
-Timestamp: ${new Date(charge.created * 1000).toString()}
-    </p>
-  </p>
-</div>`,
+                <br>
+                Transaction ID: ${charge.id}
+                <br>
+                Timestamp: ${new Date(charge.created * 1000).toString()}
+              </p>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+</body>`,
     },
     error => {
       if (error) {
