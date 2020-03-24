@@ -28,7 +28,7 @@ if (PROJECT_NAME === 'EPICC') {
 export function sendMagicLinkEmail(userProfile, divertToAdmin, loginRedirect) {
   return sendMLE(
     userProfile,
-    imageHtml,
+    whiteImageHtml,
     buttonStyle,
     senderEmail,
     divertToAdmin,
