@@ -6,21 +6,29 @@ import transporter from './nodemailer';
 
 import { SITE_URL, EMAIL_VERIFICATION_ENABLED } from 'helpers/constants';
 
+const PRIMARY_COLOR = '#44AEFF';
+const PRIMARY_COLOR_FADED = '#E5F4FF';
 const EMAIL_WIDTH = '600px';
 const FONT_SIZE_SM = '18px';
 const FONT_SIZE_BASE = '24px';
-const EMAIL_OUTER = `<body style="width: 100% !important; height: 100vh !important; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; margin: -1px 0 0; padding: 0;">
-  <table border="0" cellpadding="0" cellspacing="0" width="100%" height="100%" style="border: 0; border-collapse: collapse; font-size: ${FONT_SIZE_BASE}; width: 100%; margin: 0 auto;>
-    <tr style="align: center;">
-      <td bgcolor="#E5F4FF">
-        <table border="0" cellpadding="0" cellspacing="0" style="border: 0; border-collapse: collapse; align: left; color: #1e1e1e; font-size: ${FONT_SIZE_BASE}; width: 100%; max-width: ${EMAIL_WIDTH}; margin: 0 auto;">`;
+const EMAIL_OUTER = `<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css?family=Quattrocento+Sans:400,700" rel="stylesheet" />
+  </head>
+  <body style="font-family: 'Quattrocento Sans', sans-serif; width: 100% !important; height: 100vh !important; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; margin: -1px 0 0; padding: 0;">
+    <table border="0" cellpadding="0" cellspacing="0" width="100%" height="100%" style="border: 0; border-collapse: collapse; font-size: ${FONT_SIZE_BASE}; width: 100%; margin: 0 auto;>
+      <tr style="align: center;">
+        <td bgcolor="${PRIMARY_COLOR_FADED}">
+          <table border="0" cellpadding="0" cellspacing="0" style="border: 0; border-collapse: collapse; align: left; color: #1e1e1e; font-size: ${FONT_SIZE_BASE}; width: 100%; max-width: ${EMAIL_WIDTH}; margin: 0 auto;">`;
 const EMAIL_OUTER_END = `</table>
-      </td>
-    </tr>
-  </table>
-</body>`;
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>`;
 const emailLogoHeader = imageHtml => `<tr>
-          <td bgcolor="#44AEFF" style="padding: 24px; color: white; font-size: 32px;">
+          <td bgcolor="${PRIMARY_COLOR}" style="padding: 24px; color: white; font-size: 32px;">
             <div style="text-align: center;">
               ${imageHtml}
             </div>
@@ -59,8 +67,8 @@ export function sendMagicLinkEmail(
 ${magicLinkUrl}\n\nIt will expire ${oneHoursTime.toString()}`,
       html: `${EMAIL_OUTER}
   ${emailLogoHeader(imageHtml)}
-    <tr>
-      <td bgcolor="white" style="padding: 24px; text-align: center;">
+  <tr>
+    <td bgcolor="white" style="padding: 24px; text-align: center;">
       <p>
         Tap the button below to login
         <br><br><br>
@@ -76,66 +84,6 @@ ${magicLinkUrl}\n\nIt will expire ${oneHoursTime.toString()}`,
     </td>
   </tr>
 ${EMAIL_OUTER_END}`,
-    },
-    error => {
-      if (error) {
-        return console.log(error);
-      }
-    },
-  );
-}
-
-export function sendMagicLinkTicketEmail(
-  userProfile,
-  imageHtml,
-  buttonStyle,
-  senderEmail,
-  ticketData,
-  divertToAdmin,
-) {
-  const now = new Date();
-  const twentyFourHoursTime = new Date(now.getTime() + 24 * 1000 * 60 * 60);
-  const magicLink = {
-    userId: userProfile.id,
-    expiry: twentyFourHoursTime,
-    key: crypto.randomBytes(20).toString('hex'),
-  };
-  datumCreate({ redisKey: 'magiclinks' }, { body: magicLink });
-  let magicLinkUrl = `${SITE_URL}/magic-login?token=${magicLink.key}`;
-  magicLinkUrl += `&redirect=ticket`;
-  // Send the magic link URL to the email address of the user
-  transporter.sendMail(
-    {
-      from: senderEmail,
-      to: divertToAdmin
-        ? 'g+diverted-to-admin@georgegillams.co.uk'
-        : userProfile.email,
-      subject: 'Your EPICC 2019 ticket',
-      text: `Your ticket link is:
-${magicLinkUrl}\n\nIt will expire ${twentyFourHoursTime.toString()}`,
-      html: `<div style="text-align: center;color: #1e1e1e;">
-      ${imageHtml}
-  <p>
-    Tap the button below to login and access your EPICC 2019 ticket
-    <br><br><br>
-    <a href="${magicLinkUrl}" style="${buttonStyle}">Log in</a>
-    <br><br><br>
-    <p>
-      Once you're logged in, feel free to delete this email.
-    </p>
-    <p>
-      This link will only work once, but if you need to login again, you can do so at <a href="https://www.epicc-tickets.org/ticket">epicc-tickets.org/ticket</a>.
-    </p>
-    <p>
-      Your single-use login link will expire ${twentyFourHoursTime.toString()}
-    </p>
-  </p>
-  <a href="https://qrcode.online/img/?type=text&size=10&data=${JSON.stringify(
-    ticketData,
-  )
-    .split('"')
-    .join("'")}">Alternative ticket code</a>
-</div>`,
     },
     error => {
       if (error) {
@@ -174,18 +122,22 @@ export function sendEmailVerificationEmail(
       subject: 'Verify your email address',
       text: `Your email verification link is:
 ${emailVerificationLink}\n\nIt will expire ${oneDaysTime.toString()}`,
-      html: `<div style="text-align: center;color: #1e1e1e;">
-      ${imageHtml}
-  <p>
-    Please verify your email address using the button below.
-    <br><br><br>
-    <a href="${emailVerificationLink}" style="${buttonStyle}">Click here to verify your email address.</a>
-    <br><br><br>
-    <p>
-      This verification link will expire ${oneDaysTime.toString()}
-    </p>
-  </p>
-</div>`,
+      html: `${EMAIL_OUTER}
+  ${emailLogoHeader(imageHtml)}
+  <tr>
+    <td bgcolor="white" style="padding: 24px; text-align: center;">
+      <p>
+        Please verify your email address using the button below.
+        <br><br><br>
+        <a href="${emailVerificationLink}" style="${buttonStyle}">Click here to verify your email address.</a>
+        <br><br><br>
+        <p>
+          This verification link will expire ${oneDaysTime.toString()}
+        </p>
+      </p>
+    </td>
+  </tr>
+${EMAIL_OUTER_END}`,
     },
     error => {
       if (error) {

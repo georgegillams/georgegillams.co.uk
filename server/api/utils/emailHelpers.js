@@ -13,8 +13,6 @@ import {
 } from 'helpers/constants';
 
 let imageHtml =
-  '<img src="https://i.imgur.com/Fvg8HXM.png" style="width: 7rem;">';
-let whiteImageHtml =
   '<img src="https://i.imgur.com/EBMKBux.png" style="width: 7rem;">';
 let buttonStyle =
   'background-color: #025ca2;padding: 0.6rem 1.2rem;color: white;border-radius: 0.25rem;text-decoration: none;';
@@ -28,7 +26,7 @@ if (PROJECT_NAME === 'EPICC') {
 export function sendMagicLinkEmail(userProfile, divertToAdmin, loginRedirect) {
   return sendMLE(
     userProfile,
-    whiteImageHtml,
+    imageHtml,
     buttonStyle,
     senderEmail,
     divertToAdmin,
@@ -56,5 +54,5 @@ export function sendEmailVerificationEmail(userProfile) {
 }
 
 export function sendPaymentReceiptEmail(payment, charge) {
-  return sendPRE(payment, charge, whiteImageHtml, buttonStyle, senderEmail);
+  return sendPRE(payment, charge, imageHtml, buttonStyle, senderEmail);
 }
