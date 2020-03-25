@@ -5,7 +5,7 @@ const actionMeta = {
       LOAD_USERS: 'tbd',
       attributes: [],
       stateMutations: {
-        loading: true,
+        loadingUsers: true,
         loadUserError: null,
       },
     },
@@ -13,7 +13,7 @@ const actionMeta = {
       LOAD_USERS_REGISTER_SUCCESS: 'tbd',
       attributes: ['users'],
       stateMutations: {
-        loading: false,
+        loadingUsers: false,
         loadUserSuccess: true,
         users: action => action.users,
       },
@@ -22,7 +22,7 @@ const actionMeta = {
       LOAD_USERS_REGISTER_ERROR: 'tbd',
       attributes: ['loadUserError'],
       stateMutations: {
-        loading: false,
+        loadingUsers: false,
         loadUserSuccess: false,
         loadUserError: action => action.loadUserError,
       },
