@@ -32,7 +32,7 @@ jobs:
       run: npm run backstopjs:test
 
     - name: save snapshots
-      if: always()
+      if: failure()
       uses: actions/upload-artifact@v1
       with:
         name: bitmaps_reference
