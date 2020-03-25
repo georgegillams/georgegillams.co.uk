@@ -33,9 +33,8 @@ export default class AdminUsertoeditEdit extends React.Component {
 
   componentDidMount = () => {
     const usertoeditId = this.props.id || this.props.match.params.id;
-    if (usertoeditId) {
-      this.props.loadUsertoedit(usertoeditId);
-    }
+    this.props.loadUsers();
+    this.setState({ usertoeditId });
   };
 
   render() {
@@ -50,12 +49,13 @@ export default class AdminUsertoeditEdit extends React.Component {
 
       className,
 
-      loadUsertoedit,
+      loadUsers,
+      users,
+      loadingUsers,
+      loadUserSuccess,
+      loadUserError,
+
       updateUsertoedit,
-      usertoedit,
-      loadingUsertoedit,
-      loadUsertoeditSuccess,
-      loadUsertoeditError,
       updatingUsertoedit,
       updateUsertoeditSuccess,
       updateUsertoeditError,
@@ -67,11 +67,14 @@ export default class AdminUsertoeditEdit extends React.Component {
       outerClassNameFinal.push(className);
     }
 
+    const usertoedit =
+      users && users.filter(u => u.id === this.state.usertoeditId)[0];
+
     const page = (
       <div className={outerClassNameFinal.join(' ')} {...rest}>
         <AdminOnly
           user={user}
-          setLoginRedirect={() => setLoginRedirect('admin/usertoedit')}
+          setLoginRedirect={() => setLoginRedirect('admin/users')}
         >
           <Section name={`Edit user ${usertoedit && usertoedit.id}`}>
             <FormBuilder
@@ -121,7 +124,7 @@ export default class AdminUsertoeditEdit extends React.Component {
         <Helmet title="Admin - edit user" />
         <LoadingCover
           loadingSkeleton={Skeleton}
-          loading={userLoading || loadingUsertoedit}
+          loading={userLoading || !users}
         >
           {page}
         </LoadingCover>
@@ -135,12 +138,12 @@ export default class AdminUsertoeditEdit extends React.Component {
             user,
             userLoading,
             className,
-            loadUsertoedit,
+            users,
+            loadUsers,
+            loadingUsers,
+            loadUserSuccess,
+            loadUserError,
             updateUsertoedit,
-            usertoedit,
-            loadingUsertoedit,
-            loadUsertoeditSuccess,
-            loadUsertoeditError,
             updatingUsertoedit,
             updateUsertoeditSuccess,
             updateUsertoeditError,

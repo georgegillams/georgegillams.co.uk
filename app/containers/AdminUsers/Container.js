@@ -63,7 +63,7 @@ export default class AdminUsers extends React.Component {
       className,
       loadUsers,
       users,
-      loading,
+      loadingUsers,
       loadUserSuccess,
       loadUserError,
       requestMagicLinkForUser,
@@ -147,7 +147,7 @@ export default class AdminUsers extends React.Component {
         />
         <LoadingCover
           loadingSkeleton={Skeleton}
-          loading={!cookiesAllowed || userLoading || loading}
+          loading={!cookiesAllowed || userLoading || !users}
         >
           {page}
         </LoadingCover>
@@ -162,7 +162,7 @@ export default class AdminUsers extends React.Component {
             className,
             loadUsers,
             users,
-            loading,
+            loadingUsers,
             loadUserSuccess,
             loadUserError,
             requestMagicLinkForUser,
