@@ -6,12 +6,10 @@ import transporter from './nodemailer';
 
 import { SITE_URL, EMAIL_VERIFICATION_ENABLED } from 'helpers/constants';
 
-const PRIMARY_COLOR = '#44AEFF';
-const PRIMARY_COLOR_FADED = '#E5F4FF';
 const EMAIL_WIDTH = '600px';
 const FONT_SIZE_SM = '18px';
 const FONT_SIZE_BASE = '24px';
-const EMAIL_OUTER = `<html lang="en">
+const emailOuter = branding => `<html lang="en">
   <head>
     <meta charset="utf-8">
     <link href="https://fonts.googleapis.com/css?family=Quattrocento+Sans:400,700" rel="stylesheet" />
@@ -19,7 +17,7 @@ const EMAIL_OUTER = `<html lang="en">
   <body style="font-family: 'Quattrocento Sans', sans-serif; width: 100% !important; height: 100vh !important; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; margin: -1px 0 0; padding: 0;">
     <table border="0" cellpadding="0" cellspacing="0" width="100%" height="100%" style="border: 0; border-collapse: collapse; font-size: ${FONT_SIZE_BASE}; width: 100%; margin: 0 auto;>
       <tr style="align: center;">
-        <td bgcolor="${PRIMARY_COLOR_FADED}">
+        <td bgcolor="${branding.primaryColorFaded}">
           <table border="0" cellpadding="0" cellspacing="0" style="border: 0; border-collapse: collapse; align: left; color: #1e1e1e; font-size: ${FONT_SIZE_BASE}; width: 100%; max-width: ${EMAIL_WIDTH}; margin: 0 auto;">`;
 const EMAIL_OUTER_END = `</table>
         </td>
@@ -27,17 +25,17 @@ const EMAIL_OUTER_END = `</table>
     </table>
   </body>
 </html>`;
-const emailLogoHeader = imageHtml => `<tr>
-          <td bgcolor="${PRIMARY_COLOR}" style="padding: 24px; color: white; font-size: 32px;">
+const emailLogoHeader = branding => `<tr>
+          <td bgcolor="${branding.primaryColor}" style="padding: 24px; color: white; font-size: 32px;">
             <div style="text-align: center;">
-              ${imageHtml}
+              ${branding.imageHtml}
             </div>
           </td>
         </tr>`;
 
 export function sendMagicLinkEmail(
   userProfile,
-  imageHtml,
+  branding,
   buttonStyle,
   senderEmail,
   divertToAdmin,
@@ -65,8 +63,8 @@ export function sendMagicLinkEmail(
       subject: 'Your magic login link',
       text: `Your magic link is:
 ${magicLinkUrl}\n\nIt will expire ${oneHoursTime.toString()}`,
-      html: `${EMAIL_OUTER}
-  ${emailLogoHeader(imageHtml)}
+      html: `${emailOuter(branding)}
+  ${emailLogoHeader(branding)}
   <tr>
     <td bgcolor="white" style="padding: 24px; text-align: center;">
       <p>
@@ -95,7 +93,7 @@ ${EMAIL_OUTER_END}`,
 
 export function sendEmailVerificationEmail(
   userProfile,
-  imageHtml,
+  branding,
   buttonStyle,
   senderEmail,
 ) {
@@ -122,8 +120,8 @@ export function sendEmailVerificationEmail(
       subject: 'Verify your email address',
       text: `Your email verification link is:
 ${emailVerificationLink}\n\nIt will expire ${oneDaysTime.toString()}`,
-      html: `${EMAIL_OUTER}
-  ${emailLogoHeader(imageHtml)}
+      html: `${emailOuter(branding)}
+  ${emailLogoHeader(branding)}
   <tr>
     <td bgcolor="white" style="padding: 24px; text-align: center;">
       <p>
@@ -131,7 +129,7 @@ ${emailVerificationLink}\n\nIt will expire ${oneDaysTime.toString()}`,
         <br><br><br>
         <a href="${emailVerificationLink}" style="${buttonStyle}">Click here to verify your email address.</a>
         <br><br><br>
-        <p>
+        <p style="font-size: ${FONT_SIZE_SM};">
           This verification link will expire ${oneDaysTime.toString()}
         </p>
       </p>
@@ -150,7 +148,7 @@ ${EMAIL_OUTER_END}`,
 export function sendPaymentReceiptEmail(
   payment,
   charge,
-  imageHtml,
+  branding,
   buttonStyle,
   senderEmail,
 ) {
@@ -161,8 +159,8 @@ export function sendPaymentReceiptEmail(
       to: payment.email,
       subject: 'Payment received',
       text: `Thank you for your recent payment of £${charge.amount / 100}.`,
-      html: `${EMAIL_OUTER}
-        ${emailLogoHeader(imageHtml)}
+      html: `${emailOuter(branding)}
+        ${emailLogoHeader(branding)}
         <tr>
           <td bgcolor="white" style="padding: 24px 24px 0 24px;">
             <p>
