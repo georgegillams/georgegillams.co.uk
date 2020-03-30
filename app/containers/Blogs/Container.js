@@ -1,7 +1,5 @@
 import React, { Fragment } from 'react';
 import { withRouter } from 'react-router';
-import BpkThemeProvider from 'bpk-theming';
-import { themeAttributes as hnThemeAttributes } from 'bpk-component-horizontal-nav';
 import PropTypes from 'prop-types';
 import { Helmet } from 'react-helmet';
 import { cssModules } from 'bpk-react-utils';
@@ -44,7 +42,7 @@ export default class BlogsPage extends React.Component {
 
   render() {
     const {
-      loading,
+      loadingBlogs,
       loadBlogsError,
       blogs,
       loadBlogs,
@@ -62,20 +60,12 @@ export default class BlogsPage extends React.Component {
 
     const textColor = this.getTextColor();
 
-    const theme = {
-      horizontalNavLinkColor: textColor,
-      horizontalNavLinkHoverColor: textColor,
-      horizontalNavLinkActiveColor: '#44aeff',
-      horizontalNavLinkSelectedColor: '#44aeff',
-      horizontalNavBarSelectedColor: '#44aeff',
-    };
-
     return (
       <div className={outerClassNameFinal.join(' ')} {...rest}>
         <DebugObject
           debugTitle="Blogs"
           debugObject={{
-            loading,
+            loadingBlogs,
             blogs,
             loadBlogs,
             loadBlogsError,
@@ -86,18 +76,14 @@ export default class BlogsPage extends React.Component {
           }}
         />
         <Helmet title="Blog" />
-        <BpkThemeProvider
-          theme={theme}
-          themeAttributes={[...hnThemeAttributes]}
-        >
-          <BlogsNav
-            className={getClassName('pages__component')}
-            selected={selectedNav}
-          />
-        </BpkThemeProvider>
+        <BlogsNav
+          className={getClassName('pages__component')}
+          style={{ marginTop: '1rem' }}
+          selected={selectedNav}
+        />
         <LoadingCover
           loadingSkeleton={BlogListSkeleton}
-          loading={loading}
+          loading={loadingBlogs || !blogs}
           error={loadBlogsError}
         >
           <Fragment>
@@ -113,7 +99,7 @@ export default class BlogsPage extends React.Component {
 }
 
 BlogsPage.propTypes = {
-  loading: PropTypes.bool,
+  loadingBlogs: PropTypes.bool,
   loadBlogsError: PropTypes.oneOfType([PropTypes.object, PropTypes.bool]),
   blogs: PropTypes.object,
   filter: PropTypes.func,

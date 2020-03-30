@@ -1,5 +1,6 @@
 import React, { Fragment } from 'react';
 import { cssModules } from 'bpk-react-utils';
+import { SmallButtonSkeleton } from 'gg-components/Skeletons';
 
 import BlogListSkeleton from './BlogListSkeleton';
 
@@ -18,6 +19,9 @@ const AccountSkeleton = props => {
 
   return (
     <div className={outerClassNameFinal.join(' ')}>
+      <SmallButtonSkeleton
+        style={{ marginTop: '1rem', marginBottom: '1rem' }}
+      />
       <BlogListSkeleton />
     </div>
   );
