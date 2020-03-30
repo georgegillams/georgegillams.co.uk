@@ -5,10 +5,12 @@ import { resolve } from 'path';
 
 import express from 'express';
 import session from 'express-session';
+import cors from 'cors';
 import bodyParser from 'body-parser';
 import SocketIo from 'socket.io';
 import cookieParser from 'cookie-parser';
 import sslRedirect from 'heroku-ssl-redirect';
+import { SITE_URL } from 'helpers/constants';
 
 import logger from './util//logger';
 import seo from './seo';
@@ -27,6 +29,13 @@ io.path('/ws');
 if (process.env.NODE_ENV === 'production' && !process.env.ALLOW_NON_SSL) {
   app.use(sslRedirect());
 }
+
+app.use(
+  cors({
+    origin: SITE_URL,
+  }),
+);
+
 app.use(greasemonkey);
 app.use(
   session({
