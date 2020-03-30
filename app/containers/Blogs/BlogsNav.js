@@ -10,7 +10,7 @@ import BlogListSkeleton from './BlogListSkeleton';
 import STYLES from './blogs-page.scss';
 
 import { LoadingCover } from 'gg-components/Auth';
-import {Button} from 'gg-components/Button';
+import { Button } from 'gg-components/Button';
 import BlogsList from 'components/Blogs';
 import PAGE_STYLES from 'containers/pages.scss';
 
@@ -26,7 +26,7 @@ export default class BlogsNav extends React.Component {
     }
 
     return (
-      <div className={outerClassNameFinal.join(' ')}>
+      <div className={outerClassNameFinal.join(' ')} {...rest}>
         <Button
           white={selected !== 'Writing'}
           href="/blog"

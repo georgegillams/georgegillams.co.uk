@@ -5,7 +5,7 @@ const actionMeta = {
       LOAD_BLOGS: 'tbd',
       attributes: [],
       stateMutations: {
-        loading: true,
+        loadingBlogs: true,
         loadBlogsError: false,
       },
     },
@@ -13,7 +13,7 @@ const actionMeta = {
       LOAD_BLOGS_REGISTER_SUCCESS: 'tbd',
       attributes: ['blogs'],
       stateMutations: {
-        loading: false,
+        loadingBlogs: false,
         blogs: action => action.blogs,
       },
     },
@@ -21,7 +21,7 @@ const actionMeta = {
       LOAD_BLOGS_REGISTER_ERROR: 'tbd',
       attributes: ['loadBlogsError'],
       stateMutations: {
-        loading: false,
+        loadingBlogs: false,
         loadBlogsError: action => action.loadBlogsError,
       },
     },
