@@ -5,29 +5,36 @@ const lastYear = thisYear - 1;
 
 const POT_CONFIGS = [
   {
-    name: 'Season ticket',
+    name: 'Weekly',
+    monthly: true,
+  },
+  {
+    name: 'Eating out',
+    monthly: true,
+  },
+  {
+    name: 'Buffer',
+    monthly: true,
+  },
+  {
+    name: 'Spare',
+    monthly: true,
+  },
+  {
+    name: 'Emergency',
     startDate: `${lastYear}-12-01`,
   },
   {
-    name: 'Holiday',
+    name: 'Holidays',
     startDate: `${lastYear}-12-01`,
   },
   {
-    name: 'Emergencies',
-    startDate: `${lastYear}-12-01`,
-  },
-  {
-    name: 'Gifts',
+    name: 'Presents',
     startDate: `${lastYear}-12-01`,
   },
   {
     name: 'Charlie',
     startDate: `${lastYear}-12-01`,
-  },
-  {
-    name: 'Rents',
-    startDate: `${lastYear}-12-01`,
-    startAmount: 125,
   },
   {
     name: 'Extras',
@@ -43,20 +50,17 @@ const POT_CONFIGS = [
     startDate: `${lastYear}-12-01`,
   },
   {
-    name: 'Eating out',
+    name: 'Monthly subscriptions',
     monthly: true,
   },
   {
-    name: 'Aerial',
-    monthly: true,
+    name: 'Health',
+    startDate: `${lastYear}-12-01`,
   },
   {
-    name: 'Weekly',
-    monthly: true,
-  },
-  {
-    name: 'Spare',
-    monthly: true,
+    name: 'Season ticket',
+    startDate: `${lastYear}-12-01`,
+    startAmount: 4484.1,
   },
 ];
 
