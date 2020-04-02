@@ -60,7 +60,7 @@ export default class Contact extends Component {
           altText="Me"
           width={3829}
           height={2872}
-          src="https://i.imgur.com/0jz5elM.jpg"
+          src="https://i.imgur.com/FLA0jkg.jpg"
         />
         <br />
         <Paragraph>
