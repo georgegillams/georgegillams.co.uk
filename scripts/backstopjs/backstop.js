@@ -1,7 +1,7 @@
 const backstop = require('backstopjs');
 const scenarioData = require('./scenarios.json');
 
-const PORT = 9001;
+const PORT = process.env.PORT || 9001;
 const BASE_URL = `http://127.0.0.1:${PORT}/`;
 
 const allowFailure = process.argv.includes('--allowFailure');
