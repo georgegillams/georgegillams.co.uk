@@ -58,7 +58,7 @@ export default class Work extends Component {
             </Button>
           </SubSection>
 
-          <SubSection name="Redux definitions">
+          {/* <SubSection name="Redux definitions">
             <Paragraph>
               After a while using Redux, I became frustrated with the
               overly-verbose and repetitive nature of its components. I,
@@ -77,7 +77,7 @@ export default class Work extends Component {
             >
               Check out redux-definitions on GitHub →
             </Button>
-          </SubSection>
+          </SubSection> */}
 
           <SubSection name="Party Parrot">
             <Paragraph>
