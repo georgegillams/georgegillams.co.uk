@@ -24,7 +24,8 @@ export default class BlogViewer extends React.Component {
     const {
       user,
       match,
-      blog,
+      blogId,
+      blogs,
       loading,
       loadBlogError,
       loadBlog,
@@ -37,6 +38,8 @@ export default class BlogViewer extends React.Component {
     if (className) {
       outerClassNameFinal.push(className);
     }
+
+    const blog = blogs && blogs[blogId];
 
     return (
       <div className={outerClassNameFinal.join(' ')} {...rest}>
@@ -71,7 +74,7 @@ BlogViewer.propTypes = {
   user: PropTypes.object,
   loading: PropTypes.bool,
   loadBlogError: PropTypes.oneOfType([PropTypes.object, PropTypes.bool]),
-  blog: PropTypes.object,
+  blogs: PropTypes.arrayOf(PropTypes.object),
   filter: PropTypes.func,
   linkPrefix: PropTypes.string,
   loadBlogs: PropTypes.func.isRequired,
@@ -82,7 +85,7 @@ BlogViewer.defaultProps = {
   user: null,
   loading: false,
   loadBlogError: null,
-  blog: null,
+  blogs: null,
   filter: null,
   linkPrefix: '',
   className: null,
