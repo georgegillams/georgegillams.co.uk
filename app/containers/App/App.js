@@ -7,6 +7,8 @@ import { cssModules } from 'bpk-react-utils';
 import STYLES from './style.scss';
 import HelperFunctions from 'helpers/HelperFunctions';
 
+import ScrollToTop from 'components/ScrollToTop';
+
 import PageContainer from 'containers/PageContainer';
 import AccountPage from 'containers/Account/Loadable';
 import AdminPage from 'containers/Admin';
@@ -85,6 +87,7 @@ const App = () => (
       >
         <meta name="description" content={appConfig.app.description} />
       </Helmet>
+      <ScrollToTop />
       <RequestStatusWrapper />
       <NavigationBarWrapper />
       <PageContainer id="mainScrollView">
