@@ -15,7 +15,10 @@ const actionMeta = {
       attributes: ['blog'],
       stateMutations: {
         loading: false,
-        blog: action => action.blog,
+        blogs: (action, prevValue) => ({
+          ...prevValue,
+          [action.blog.id]: action.blog,
+        }),
       },
     },
     {
