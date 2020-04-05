@@ -35,7 +35,7 @@
     "start": "npm run start:prod",
     "start:dev": "cross-env NODE_PATH=./server/api:./app NODE_ENV=development BUILT_AT=$( date -u +%s ) nodemon --ignore 'server/server_content' --ignore 'app/*' --exec babel-node server",
     "start:prod": "cross-env NODE_PATH=./build/server/api NODE_ENV=production node ./build/server",
-    "start:test": "cross-env PORT=9001 PROJECT_UNDER_TEST=true REDIS_MOCK=true NODE_PATH=./build/server/api NODE_ENV=production node ./build/server",
+    "start:test": "cross-env PORT=9001 NODE_PATH=./build/server/api NODE_ENV=production PROJECT_UNDER_TEST=true REDIS_MOCK=true node ./build/server",
     "start:production": "npm run test && npm run build && npm run start:prod",
     "backstopjs:test": "npm run start:test & (sleep 5 && node ./scripts/backstopjs/backstop.js)",
     "backstopjs:test:allow-failure": "npm run start:test & (sleep 5 && node ./scripts/backstopjs/backstop.js --allowFailure)",

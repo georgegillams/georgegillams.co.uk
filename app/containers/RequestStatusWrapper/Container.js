@@ -4,8 +4,9 @@ import { Helmet } from 'react-helmet';
 import cookie from 'react-cookies';
 import { cssModules } from 'bpk-react-utils';
 
+import { PROJECT_UNDER_TEST } from 'helpers/constants';
 import { Section, SubSection, TextLink } from 'gg-components/Typography';
-import {RequestStatusContainer} from 'gg-components/RequestStatus';
+import { RequestStatusContainer } from 'gg-components/RequestStatus';
 import STYLES from 'containers/pages.scss';
 
 const getClassName = cssModules(STYLES); // REGEX_REPLACED
@@ -23,6 +24,10 @@ export default class RequestStatusWrapper extends React.Component {
 
   render() {
     const { messages, ...rest } = this.props;
+
+    if (PROJECT_UNDER_TEST) {
+      return null;
+    }
 
     return <RequestStatusContainer statuses={messages} />;
   }
