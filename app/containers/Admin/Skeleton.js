@@ -20,6 +20,11 @@ const AccountSkeleton = props => {
       <SectionSkeleton />
       <div className={getClassName('pages__compact-card-container')}>
         <CompactCardSkeleton />
+        <CompactCardSkeleton />
+        <CompactCardSkeleton />
+        <CompactCardSkeleton />
+        <CompactCardSkeleton />
+        <CompactCardSkeleton />
       </div>
     </div>
   );

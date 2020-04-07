@@ -61,15 +61,6 @@ export default class HomePage extends React.PureComponent {
             day={null}
             month={null}
             className={getClassName('pages__card')}
-            // fillImageSrc="https://i.imgur.com/mCmmM4N.jpg"
-            linkUrl="/about"
-            title="About"
-          />
-          <ArticleCard
-            layout={ARTICLE_CARD_LAYOUTS.narrowCompact}
-            day={null}
-            month={null}
-            className={getClassName('pages__card')}
             // fillImageSrc="https://i.imgur.com/iFbPZbn.jpg"
             linkUrl="/contact"
             title="Contact"

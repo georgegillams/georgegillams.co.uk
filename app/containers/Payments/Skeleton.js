@@ -11,18 +11,17 @@ import STYLES from 'containers/pages.scss';
 
 const getClassName = cssModules(STYLES);
 
-const MakePaymentSkeleton = props => {
+const PaymentsSkeleton = props => {
   const { ...rest } = props;
 
   return (
     <div {...rest}>
       <SectionSkeleton style={{ marginTop: '3rem' }} />
-      <InputSkeleton style={{ marginTop: '2rem' }} />
-      <InputSkeleton style={{ marginTop: '2rem' }} />
-      <InputSkeleton style={{ marginTop: '2rem' }} />
-      <ButtonSkeleton />
+      <InputSkeleton style={{ marginTop: '3.4rem' }} />
+      <InputSkeleton style={{ marginTop: '2.4rem' }} />
+      <ButtonSkeleton style={{ marginTop: '3rem' }} />
     </div>
   );
 };
 
-export default MakePaymentSkeleton;
+export default PaymentsSkeleton;

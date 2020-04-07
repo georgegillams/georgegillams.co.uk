@@ -2,18 +2,15 @@ import React, { Fragment } from 'react';
 import { cssModules } from 'bpk-react-utils';
 
 import AboutSkeleton from 'containers/About/Skeleton';
-import {
-  CompactCardSkeleton,
-  SectionSkeleton,
-} from 'gg-components/Skeletons';
+import { CompactCardSkeleton } from 'gg-components/Skeletons';
 import STYLES from 'containers/pages.scss';
 
 const getClassName = cssModules(STYLES);
 
 const AccountSkeleton = props => {
-  const { className, ...rest } = props; // eslint-disable-line no-shadow
+  const { className, ...rest } = props;
 
-  const outerClassNameFinal = [];
+  const outerClassNameFinal = [getClassName('pages__container--centered')];
 
   if (className) {
     outerClassNameFinal.push(className);
@@ -21,10 +18,8 @@ const AccountSkeleton = props => {
 
   return (
     <div className={outerClassNameFinal.join(' ')} {...rest}>
-      <AboutSkeleton />
-      <SectionSkeleton />
+      <AboutSkeleton style={{ width: '100%' }} />
       <div className={getClassName('pages__compact-card-container')}>
-        <CompactCardSkeleton />
         <CompactCardSkeleton />
         <CompactCardSkeleton />
         <CompactCardSkeleton />
