@@ -46,7 +46,7 @@ export default class BlogViewer extends React.Component {
         <Helmet title="Blog" />
         <LoadingCover
           loadingSkeleton={Skeleton}
-          loading={loading}
+          loading={loading || !blog}
           error={loadBlogError}
         >
           {blog && (

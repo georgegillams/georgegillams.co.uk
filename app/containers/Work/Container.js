@@ -49,6 +49,7 @@ export default class Work extends Component {
               </TextLink>
               .
             </Paragraph>
+            <br />
             <Button
               className={getClassName('pages__component--upper-margin')}
               hrefExternal
@@ -70,6 +71,7 @@ export default class Work extends Component {
               that it can be adopted gradually in an existing codebase using
               redux.
             </Paragraph>
+            <br />
             <Button
               className={getClassName('pages__component--upper-margin')}
               hrefExternal
@@ -148,6 +150,7 @@ export default class Work extends Component {
               I have a 1st class Masters in Software Engineering from the
               University of Southampton.
             </Paragraph>
+            <br />
             <Button
               className={getClassName('pages__component--upper-margin')}
               href="/work/degree"

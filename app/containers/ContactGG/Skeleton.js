@@ -13,7 +13,7 @@ const getClassName = cssModules(STYLES);
 const ContactSkeleton = props => {
   const { className, ...rest } = props;
 
-  const outerClassNameFinal = ['pages__container--centered'];
+  const outerClassNameFinal = [getClassName('pages__container--centered')];
 
   if (className) {
     outerClassNameFinal.push(className);
@@ -21,8 +21,8 @@ const ContactSkeleton = props => {
 
   return (
     <div className={outerClassNameFinal.join(' ')} {...rest}>
-      <SectionSkeleton />
-      <div className={getClassName('pages__full-width-container')}>
+      <SectionSkeleton style={{ marginTop: '3rem', width: '20rem' }} />
+      <div style={{ width: '100vw' }}>
         <InfoCellSkeleton style={{ opacity: 0.5 }} />
         <InfoCellSkeleton />
         <InfoCellSkeleton style={{ opacity: 0.5 }} />
@@ -32,7 +32,6 @@ const ContactSkeleton = props => {
       </div>
       <ButtonSkeleton />
       <ButtonSkeleton />
-      <SectionSkeleton />
     </div>
   );
 };

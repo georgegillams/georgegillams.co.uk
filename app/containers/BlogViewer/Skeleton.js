@@ -17,8 +17,8 @@ const AccountSkeleton = props => {
 
   return (
     <div className={outerClassNameFinal.join(' ')}>
-      <SectionSkeleton />
-      <CardSkeleton />
+      <SectionSkeleton style={{ width: '15rem' }} />
+      <CardSkeleton style={{ height: '50rem' }} />
     </div>
   );
 };
