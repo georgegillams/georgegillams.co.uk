@@ -1,3 +1,3 @@
-. ./1_install_nvm.sh
-. ./2_setup_pm2.sh
-. ./3_configure_nginx.sh
+. ./config/aws/1_install_nvm.sh
+. ./config/aws/2_setup_pm2.sh
+. ./config/aws/3_configure_nginx.sh
