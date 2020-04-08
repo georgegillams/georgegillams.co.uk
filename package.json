@@ -13,7 +13,7 @@
   "author": "George Gillams",
   "license": "MIT",
   "scripts": {
-    "build": "npm run build:client && npm run build:server",
+    "build": "NODE_ENV=production npm run build:client && NODE_ENV=production npm run build:server",
     "build:test": "PORT=9001 PROJECT_UNDER_TEST=true npm run build:client && PORT=9001 PROJECT_UNDER_TEST=true npm run build:server",
     "build:clean": "rimraf ./build",
     "build:client": "cross-env NODE_PATH=./server/api:./app NODE_ENV=production BUILT_AT=$( date -u +%s ) webpack --config config/webpack.prod.babel.js --color -p --progress --hide-modules --display-optimization-bailout",
