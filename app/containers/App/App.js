@@ -173,7 +173,7 @@ const App = () => (
         </Switch>
       </PageContainer>
     </div>
-    <Footer />
+    <Footer aws={process.env.AWS} />
   </div>
 );
 
