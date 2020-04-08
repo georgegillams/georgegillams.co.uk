@@ -13,7 +13,7 @@
   "author": "George Gillams",
   "license": "MIT",
   "scripts": {
-    "build": "NODE_ENV=production npm run build:client && NODE_ENV=production npm run build:server",
+    "build": "npm run build:client && npm run build:server",
     "build:test": "PORT=9001 PROJECT_UNDER_TEST=true npm run build:client && PORT=9001 PROJECT_UNDER_TEST=true npm run build:server",
     "build:clean": "rimraf ./build",
     "build:client": "cross-env NODE_PATH=./server/api:./app NODE_ENV=production BUILT_AT=$( date -u +%s ) webpack --config config/webpack.prod.babel.js --color -p --progress --hide-modules --display-optimization-bailout",
@@ -184,7 +184,7 @@
     "style-loader": "^1.0.0",
     "stylelint": "^13.1.0",
     "stylelint-config-skyscanner": "^2.0.0-beta.3",
-    "url-loader": "2.3.0",
+    "url-loader": "4.1.0",
     "webpack": "^4.41.2",
     "webpack-cli": "^3.3.10",
     "webpack-dev-middleware": "^3.7.2",
