@@ -1,0 +1,2 @@
+45 00 * * * . ~/georgegillams.co.uk/config/aws/renew_certificate.sh
+00 01 * * 1 . ~/georgegillams.co.uk/config/aws/redeploy.sh

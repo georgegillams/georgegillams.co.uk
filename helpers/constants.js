@@ -75,9 +75,12 @@ const EMAIL_HTML_BUTTON_STYLE =
 const EMAIL_SENDER_EMAIL = 'g@georgegillams.co.uk';
 const PROJECT_UNDER_TEST = process.env.PROJECT_UNDER_TEST;
 const PORT = process.env.PORT || 3000;
+const AWS = process.env.AWS === 'true';
 const SITE_URL =
   process.env.NODE_ENV === 'development' || PROJECT_UNDER_TEST
     ? `http://localhost:${PORT}`
+    : AWS
+    ? 'https://ec2-35-178-176-57.eu-west-2.compute.amazonaws.com'
     : 'https://www.georgegillams.co.uk';
 const API_ENDPOINT = `${SITE_URL}/api`;
 const GENERIC_ERROR_MESSAGE = {
@@ -98,6 +101,7 @@ export {
   ANYTHING_REGEX,
   API_ENDPOINT,
   APP_VERSION,
+  AWS,
   CARD_NUMBER_REGEX,
   CHECK_FOR_NEW_CONTENT_INTERVAL,
   COMMUNICATION_ERROR_MESSAGE,
@@ -154,6 +158,7 @@ export default {
   ANYTHING_REGEX,
   API_ENDPOINT,
   APP_VERSION,
+  AWS,
   CARD_NUMBER_REGEX,
   CHECK_FOR_NEW_CONTENT_INTERVAL,
   COMMUNICATION_ERROR_MESSAGE,
