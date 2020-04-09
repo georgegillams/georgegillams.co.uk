@@ -10,7 +10,7 @@ import bodyParser from 'body-parser';
 import SocketIo from 'socket.io';
 import cookieParser from 'cookie-parser';
 import sslRedirect from 'heroku-ssl-redirect';
-import { SITE_URL, PROJECT_UNDER_TEST } from 'helpers/constants';
+import { AWS, SITE_URL, PROJECT_UNDER_TEST } from 'helpers/constants';
 
 import logger from './util//logger';
 import seo from './seo';
@@ -27,7 +27,9 @@ const io = new SocketIo(server);
 io.path('/ws');
 
 if (process.env.NODE_ENV === 'production' && !PROJECT_UNDER_TEST) {
-  app.use(sslRedirect());
+  if (!AWS) {
+    app.use(sslRedirect());
+  }
   app.use(
     cors({
       origin: SITE_URL,

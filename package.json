@@ -14,6 +14,7 @@
   "license": "MIT",
   "scripts": {
     "build": "NODE_ENV=production npm run build:client && NODE_ENV=production npm run build:server",
+    "build:aws": "AWS=true NODE_ENV=production npm run build:client && AWS=true NODE_ENV=production npm run build:server",
     "build:test": "PORT=9001 PROJECT_UNDER_TEST=true npm run build:client && PORT=9001 PROJECT_UNDER_TEST=true npm run build:server",
     "build:clean": "rimraf ./build",
     "build:client": "cross-env NODE_PATH=./server/api:./app NODE_ENV=production BUILT_AT=$( date -u +%s ) webpack --config config/webpack.prod.babel.js --color -p --progress --hide-modules --display-optimization-bailout",
@@ -33,6 +34,7 @@
     "pretest": "npm run test:clean",
     "prettier": "prettier --config .prettierrc --write \"**/*.js\"",
     "start": "npm run start:prod",
+    "start:aws": "AWS=true npm run start:prod",
     "start:dev": "cross-env NODE_PATH=./server/api:./app NODE_ENV=development BUILT_AT=$( date -u +%s ) nodemon --ignore 'server/server_content' --ignore 'app/*' --exec babel-node server",
     "start:prod": "cross-env NODE_PATH=./build/server/api NODE_ENV=production node ./build/server",
     "start:test": "cross-env PORT=9001 NODE_PATH=./build/server/api NODE_ENV=production PROJECT_UNDER_TEST=true REDIS_MOCK=true node ./build/server",
