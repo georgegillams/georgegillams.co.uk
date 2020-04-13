@@ -5,19 +5,15 @@ import BpkImage, {
   withLazyLoading,
   withLoadingBehavior,
 } from 'bpk-component-image';
-import { cssModules } from 'bpk-react-utils';
 
-import STYLES from '../pages.scss';
-
-import { ArticleCard, ARTICLE_CARD_LAYOUTS } from 'gg-components/Cards';
 import { CreativeCommons } from 'gg-components/CreativeCommons';
+import { ArticleCard, ARTICLE_CARD_LAYOUTS } from 'gg-components/Cards';
 import { Paragraph, Section, SubSection } from 'gg-components/Typography';
 import GraphicContent, {
   withGraphicContentBehaviour,
 } from 'components/GraphicContent';
 import Comments from 'containers/Comments';
-
-const getClassName = cssModules(STYLES); // REGEX_REPLACED
+import { cssModules } from 'bpk-react-utils';
 
 const PAGE_ID = '857216';
 const documentIfExists = typeof window !== 'undefined' ? document : null;
@@ -25,6 +21,10 @@ const FadingLazyLoadedImage = withLoadingBehavior(
   withLazyLoading(BpkImage, documentIfExists),
 );
 const GcbGraphicContent = withGraphicContentBehaviour(GraphicContent);
+
+import STYLES from '../pages.scss';
+
+const getClassName = cssModules(STYLES);
 
 export default class Photography extends Component {
   static propTypes = {
@@ -261,7 +261,12 @@ export default class Photography extends Component {
         <br />
         {/* <LicenseInfo centered /> */}
         <Comments pageId={PAGE_ID} />
-        <CreativeCommons />
+        <CreativeCommons
+          className={getClassName(
+            'pages__full-width-container',
+            'pages__full-width-container--centered',
+          )}
+        />
       </div>
     );
   }

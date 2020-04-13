@@ -93,6 +93,10 @@
     margin-left: calc(-50vw + 50%);
     justify-content: center;
     box-sizing: border-box;
+
+    &--centered {
+      margin-left: 0 !important;
+    }
   }
 
   &__card {
