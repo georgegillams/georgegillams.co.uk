@@ -1,16 +1,6 @@
 const { execSync } = require('child_process');
 const prompt = require('prompt');
 
-const entities = [
-  'blogs',
-  'comments',
-  'notifications',
-  'support',
-  'payments',
-  'users',
-  'profiles',
-];
-
 // Create backup
 let defaultBackupName = Date.now().toString();
 const schema = {
@@ -39,11 +29,9 @@ const performBackup = async (err, { backupName, apiKey }) => {
 
   execSync(`mkdir ~/Dropbox/georgegillams.co.uk/backups/${backupName}`);
 
-  for (let i = 0; i < entities.length; i += 1) {
-    execSync(
-      `curl -i --raw https://www.georgegillams.co.uk/api/${entities[i]}/load --header "apiKey: ${apiKey}" > ~/Dropbox/georgegillams.co.uk/backups/${backupName}/${entities[i]}.txt`,
-    );
-  }
+  execSync(
+    `wget https://www.georgegillams.co.uk/api/dataManagement/backup --header "apiKey: ${apiKey}" -O ~/Dropbox/georgegillams.co.uk/backups/${backupName}/data.json`,
+  );
 };
 
 prompt.start();
