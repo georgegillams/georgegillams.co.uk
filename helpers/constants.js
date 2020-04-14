@@ -96,6 +96,24 @@ const STRIPE_PUBLIC_API_KEY = process.env.STRIPE_PUBLIC_API_KEY
   : 'pk_test_cgQazYLEKCzNFGFuRfq0TL8N00Cj3LIfai';
 const STRIPE_SECRET_API_KEY = process.env.STRIPE_SECRET_API_KEY;
 const USERNAMES_ENABLED = PROJECT_NAME !== 'EPICC';
+const REDIS_INFORMATION_STORES = [
+  'analytics',
+  'blogs',
+  'comments',
+  'notifications',
+  'payments',
+  'profiles',
+  'stripepayments',
+  'support',
+  'userDetails',
+  'users',
+];
+const REDIS_STORES = [
+  ...REDIS_INFORMATION_STORES,
+  'emailVerificationCodes',
+  'magicLinks',
+  'sessions',
+];
 
 export {
   ANYTHING_REGEX,
@@ -143,6 +161,8 @@ export {
   STRIPE_SECRET_API_KEY,
   PORT,
   PROJECT_UNDER_TEST,
+  REDIS_INFORMATION_STORES,
+  REDIS_STORES,
   TICKET_COST_EB_ONE_DAY,
   TICKET_COST_EB_TWO_DAY,
   TICKET_COST_R_ONE_DAY,
@@ -200,6 +220,8 @@ export default {
   STRIPE_SECRET_API_KEY,
   PORT,
   PROJECT_UNDER_TEST,
+  REDIS_INFORMATION_STORES,
+  REDIS_STORES,
   TICKET_COST_EB_ONE_DAY,
   TICKET_COST_EB_TWO_DAY,
   TICKET_COST_R_ONE_DAY,
