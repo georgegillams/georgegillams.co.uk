@@ -80,7 +80,7 @@ const SITE_URL =
   process.env.NODE_ENV === 'development' || PROJECT_UNDER_TEST
     ? `http://localhost:${PORT}`
     : AWS
-    ? 'https://ec2-35-178-176-57.eu-west-2.compute.amazonaws.com'
+    ? 'https://ec2-3-10-224-23.eu-west-2.compute.amazonaws.com'
     : 'https://www.georgegillams.co.uk';
 const API_ENDPOINT = `${SITE_URL}/api`;
 const GENERIC_ERROR_MESSAGE = {
