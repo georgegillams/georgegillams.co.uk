@@ -7,6 +7,7 @@ import express from 'express';
 import session from 'express-session';
 import cors from 'cors';
 import bodyParser from 'body-parser';
+import fileupload from 'express-fileupload';
 import SocketIo from 'socket.io';
 import cookieParser from 'cookie-parser';
 import sslRedirect from 'heroku-ssl-redirect';
@@ -36,6 +37,8 @@ if (process.env.NODE_ENV === 'production' && !PROJECT_UNDER_TEST) {
     }),
   );
 }
+
+app.use(fileupload());
 
 app.use(greasemonkey);
 app.use(

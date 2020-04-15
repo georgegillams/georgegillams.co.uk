@@ -20,26 +20,13 @@ export default function deleteSet(req) {
         if (user && user.admin) {
           const { collectionName } = reqSecured.body;
           if (!collectionName) {
-            reject({ error: `wrong-input`, errorMessage: 'CollectionName must be provided' });
+            reject({
+              error: `wrong-input`,
+              errorMessage: 'CollectionName must be provided',
+            });
           } else {
-            datumLoad({ redisKey: collectionName, includeDeleted: true }).then(
-              collectionData => {
-                for (let i = 0; i < collectionData.length; i += 1) {
-                  const existingValue = collectionData[i];
-                  console.log(
-                    `Permanently removing ${existingValue.id} at index ${i}`,
-                  );
-                  resolve(
-                    redis.lrem(
-                      collectionName,
-                      1,
-                      JSON.stringify(existingValue),
-                    ),
-                  );
-                  setContentLastUpdatedTimestamp();
-                }
-              },
-            );
+            resolve(redis.del(collectionName));
+            setContentLastUpdatedTimestamp();
           }
         } else {
           reject(UNAUTHORISED_WRITE);
