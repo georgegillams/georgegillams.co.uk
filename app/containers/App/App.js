@@ -6,7 +6,6 @@ import { cssModules } from 'bpk-react-utils';
 
 import STYLES from './style.scss';
 import HelperFunctions from 'helpers/HelperFunctions';
-import { AWS } from 'helpers/constants';
 
 import ScrollToTop from 'components/ScrollToTop';
 
@@ -174,7 +173,7 @@ const App = () => (
         </Switch>
       </PageContainer>
     </div>
-    <Footer aws={AWS} />
+    <Footer aws={true} />
   </div>
 );
 

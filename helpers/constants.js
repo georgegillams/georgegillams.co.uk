@@ -76,11 +76,10 @@ const EMAIL_SENDER_EMAIL = 'g@georgegillams.co.uk';
 const PROJECT_UNDER_TEST = process.env.PROJECT_UNDER_TEST;
 const PORT = process.env.PORT || 3000;
 const AWS = process.env.AWS === 'true';
+const NODE_ENV = process.env.NODE_ENV;
 const SITE_URL =
-  process.env.NODE_ENV === 'development' || PROJECT_UNDER_TEST
+  NODE_ENV === 'development' || PROJECT_UNDER_TEST
     ? `http://localhost:${PORT}`
-    : AWS
-    ? 'https://ec2-3-10-224-23.eu-west-2.compute.amazonaws.com'
     : 'https://www.georgegillams.co.uk';
 const API_ENDPOINT = `${SITE_URL}/api`;
 const GENERIC_ERROR_MESSAGE = {
@@ -149,6 +148,7 @@ export {
   MD_PARTIAL_REGEX,
   MONZOME_LINK_REGEX,
   NAME_REGEX,
+  NODE_ENV,
   NON_EMOJI_REGEX,
   PASSWORD_REGEX,
   PROJECT_NAME,
@@ -208,6 +208,7 @@ export default {
   MD_PARTIAL_REGEX,
   MONZOME_LINK_REGEX,
   NAME_REGEX,
+  NODE_ENV,
   NON_EMOJI_REGEX,
   PASSWORD_REGEX,
   PROJECT_NAME,
