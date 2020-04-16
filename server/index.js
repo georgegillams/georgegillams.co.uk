@@ -11,12 +11,13 @@ import fileupload from 'express-fileupload';
 import SocketIo from 'socket.io';
 import cookieParser from 'cookie-parser';
 import sslRedirect from 'heroku-ssl-redirect';
-import { AWS, SITE_URL, PROJECT_UNDER_TEST } from 'helpers/constants';
+import { SITE_URL, PROJECT_UNDER_TEST } from 'helpers/constants';
 
 import logger from './util//logger';
 import seo from './seo';
 import api from './api/api';
 import greasemonkey from './greasemonkey';
+import redirectNonWWW from './redirectNonWWW';
 import argv from './util/argv';
 import port from './util//port';
 import setup from './middlewares/frontendMiddleware';
@@ -28,9 +29,6 @@ const io = new SocketIo(server);
 io.path('/ws');
 
 if (process.env.NODE_ENV === 'production' && !PROJECT_UNDER_TEST) {
-  if (!AWS) {
-    app.use(sslRedirect());
-  }
   app.use(
     cors({
       origin: SITE_URL,
@@ -40,6 +38,7 @@ if (process.env.NODE_ENV === 'production' && !PROJECT_UNDER_TEST) {
 
 app.use(fileupload());
 
+app.use(redirectNonWWW);
 app.use(greasemonkey);
 app.use(
   session({
