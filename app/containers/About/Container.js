@@ -64,13 +64,9 @@ export default class Contact extends Component {
         />
         <br />
         <Paragraph>
-          This site is built in React and hosted on Heroku where I have a Redis
-          database provisioned. Redux is used to invoke API functions when pages
-          are server-side rendered, and also when calls are made from the
-          browser.
-          <br />I use this site to experiment with things, share stuff I've
-          figured out, and allow people to reach-out to me. So if you're
-          interested in anything I do,{' '}
+          This site is built in React and hosted on AWS. I use it to experiment
+          with things, share stuff I've figured out, and allow people to
+          reach-out to me. So if you're interested in anything I do,{' '}
           <TextLink href="/contact">get in touch</TextLink>!
         </Paragraph>
       </Section>
