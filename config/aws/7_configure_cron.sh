@@ -1,1 +1,1 @@
-sudo cp ./config/aws/cron /var/spool/cron/crontabs/ubuntu
+sudo crontab -u ubuntu ./config/aws/cron
