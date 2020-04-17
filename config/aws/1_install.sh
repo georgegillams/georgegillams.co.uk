@@ -12,3 +12,5 @@ npm install pm2 -g
 wget https://dl.eff.org/certbot-auto
 chmod a+x certbot-auto
 sudo mv certbot-auto /usr/bin/
+sudo chown root /usr/bin/certbot-auto
+sudo chmod 0755 /usr/bin/certbot-auto
