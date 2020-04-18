@@ -1,15 +1,18 @@
 cd ~/georgegillams.co.uk
-rm -rf tmp || true
-mkdir tmp
-cd tmp
-git clone https://github.com/georgegillams/georgegillams.co.uk.git
-cd georgegillams.co.uk
-cp -R ../../node_modules ./
+git fetch && git reset --hard origin/master && git pull
 PUPPETEER_SKIP_CHROMIUM_DOWNLOAD=true npm ci
+
+cd ~/
+rm -rf tmp_build || true
+cp -R ./georgegillams.co.uk tmp_build
+cd tmp_build
 npm run build:aws
+
 cd ~/georgegillams.co.uk
 pm2 stop all
 rm -rf build || true
-mv ./tmp/georgegillams.co.uk/build ./
+mv ../tmp_build/build ./
 pm2 restart all
-rm -rf tmp || true
+
+cd ~/
+rm -rf tmp_build || true
