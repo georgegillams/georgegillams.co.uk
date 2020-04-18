@@ -1,3 +1,5 @@
+# #!/bin/bash
+
 # . ./config/aws/0_git_clone.sh # By definition this is done if we have the script
 . ./config/aws/1_install.sh
 . ./config/aws/2_configure_nginx.sh

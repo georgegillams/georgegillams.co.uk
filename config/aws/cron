@@ -1,3 +1,6 @@
+#!/bin/bash
+PATH=/opt/someApp/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+
 # Edit this file to introduce tasks to be run by cron.
 #
 # Each task to run has to be defined through a single line
@@ -20,6 +23,6 @@
 # For more information see the manual pages of crontab(5) and cron(8)
 #
 # m h  dom mon dow   command
-45 00 * * * . date >> ~/renew_log.txt && cd ~/georgegillams.co.uk && . ./config/aws/renew_certificate.sh >> ~/renew_log.txt
-00 01 * * * . date >> ~/redeploy_log.txt && cd ~/georgegillams.co.uk && . ./config/aws/redeploy.sh >> ~/redeploy_log.txt
+45 00 * * * date >> /home/ubuntu/renew_log.txt && cd /home/ubuntu/georgegillams.co.uk && . ./config/aws/renew_certificate.sh >> /home/ubuntu/renew_log.txt
+00 01 * * * date >> /home/ubuntu/redeploy_log.txt && cd /home/ubuntu/georgegillams.co.uk && . ./config/aws/redeploy.sh >> /home/ubuntu/redeploy_log.txt
 #

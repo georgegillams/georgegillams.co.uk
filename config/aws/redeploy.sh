@@ -1,3 +1,5 @@
+# #!/bin/bash
+
 cd ~/georgegillams.co.uk
 git fetch && git reset --hard origin/master && git pull
 PUPPETEER_SKIP_CHROMIUM_DOWNLOAD=true npm ci
