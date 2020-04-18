@@ -1,2 +1,3 @@
 sudo service cron start
-sudo crontab -u ubuntu ./config/aws/cron
+chmod g+s /usr/bin/crontab
+sudo crontab ./config/aws/cron

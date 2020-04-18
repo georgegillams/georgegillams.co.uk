@@ -1,1 +1,3 @@
-redis-server /etc/redis/redis.conf && sleep 5 && npm run start:aws
+# #!/bin/bash
+
+redis-server /etc/redis/redis.conf && npm run start:aws
