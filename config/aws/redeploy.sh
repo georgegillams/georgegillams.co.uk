@@ -8,7 +8,7 @@ cd ~/
 rm -rf tmp_build || true
 cp -R ./georgegillams.co.uk tmp_build
 cd tmp_build
-npm run build:aws
+nice -n 14 npm run build:aws
 
 cd ~/georgegillams.co.uk
 pm2 stop all
