@@ -1,0 +1,1 @@
+{"version":3,"sources":["../../../server/util/argv.js"],"names":["module","exports","require","process","argv","slice"],"mappings":";;AAAAA,MAAM,CAACC,OAAP,GAAiBC,OAAO,CAAC,UAAD,CAAP,CAAoBC,OAAO,CAACC,IAAR,CAAaC,KAAb,CAAmB,CAAnB,CAApB,CAAjB","sourcesContent":["module.exports = require('minimist')(process.argv.slice(2));\n"],"file":"argv.js"}
