@@ -1,20 +1,15 @@
 # #!/bin/bash
 
-cd ~/georgegillams.co.uk
-git fetch && git reset --hard origin/master && git pull
-PUPPETEER_SKIP_CHROMIUM_DOWNLOAD=true npm ci
-
 cd ~/
-rm -rf tmp_build || true
-cp -R ./georgegillams.co.uk tmp_build
-cd tmp_build
-nice -n 14 npm run build:aws
+if [ -d build ]; then
+  sleep 10 # wait to ensure the file transfer is complete
+  cd georgegillams.co.uk
+  git fetch && git reset --hard origin/master && git pull
+  PUPPETEER_SKIP_CHROMIUM_DOWNLOAD=true npm ci
+  pm2 stop all
+  rm -rf build && cp -R ../build ./
+  pm2 start all
+else
+  echo "No new version to deploy"
+fi
 
-cd ~/georgegillams.co.uk
-pm2 stop all
-rm -rf build || true
-mv ../tmp_build/build ./
-pm2 restart all
-
-cd ~/
-rm -rf tmp_build || true

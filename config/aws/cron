@@ -24,5 +24,5 @@ PATH=/opt/someApp/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/b
 #
 # m h  dom mon dow   command
 45 00 * * * date >> /home/ubuntu/renew_log.txt && cd /home/ubuntu/georgegillams.co.uk && . ./config/aws/renew_certificate.sh >> /home/ubuntu/renew_log.txt
-00 01 * * * date >> /home/ubuntu/redeploy_log.txt && cd /home/ubuntu/georgegillams.co.uk && . ./config/aws/redeploy.sh >> /home/ubuntu/redeploy_log.txt
+* * * * * date >> /home/ubuntu/redeploy_log.txt && cd /home/ubuntu/georgegillams.co.uk && . ./config/aws/redeploy.sh >> /home/ubuntu/redeploy_log.txt
 #
