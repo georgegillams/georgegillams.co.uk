@@ -37,3 +37,16 @@ jobs:
       with:
         name: bitmaps_reference
         path: backstop_data/bitmaps_reference
+
+    - name: build AWS
+      if: success()
+      run: npm run build:aws
+
+    - name: deploy
+      if: success()
+      on:
+        branches: [ master ]
+      run: |
+        echo "${{ secrets.EC2_RSA }}" > ./identityFile.txt
+        chmod 400 ./identityFile.txt
+      scp -o "StrictHostKeyChecking=no" -i ./identityFile.txt -r ./build ubuntu@ec2-3-10-224-23.eu-west-2.compute.amazonaws.com:/home/ubuntu/:wqa
