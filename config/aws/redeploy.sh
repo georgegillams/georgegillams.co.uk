@@ -1,6 +1,6 @@
 # #!/bin/bash
 
-cd ~/
+cd /home/ubuntu
 if [ -d build ]; then
   sleep 10 # wait to ensure the file transfer is complete
   cd georgegillams.co.uk

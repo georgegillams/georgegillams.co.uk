@@ -54,5 +54,5 @@ jobs:
         if [ "${{ github.ref }}" == "refs/heads/master" ] && [ "${{ github.event_name }}" != "pull_request" ]; then
           echo "${{ secrets.EC2_RSA }}" > ./identityFile.txt
           chmod 400 ./identityFile.txt
-          scp -o "StrictHostKeyChecking=no" -i ./identityFile.txt -r ./build ubuntu@ec2-3-10-224-23.eu-west-2.compute.amazonaws.com:/home/ubuntu/:wqa
+          scp -o "StrictHostKeyChecking=no" -i ./identityFile.txt -r ./build ubuntu@ec2-3-10-224-23.eu-west-2.compute.amazonaws.com:/home/ubuntu/
         fi;
