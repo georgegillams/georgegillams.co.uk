@@ -7,6 +7,8 @@ nvm install 12.14.0
 sudo apt-get update
 sudo apt-get install redis
 sudo apt-get install nginx
+sudo apt-get install zip
+sudo apt-get install unzip
 npm install pm2 -g
 
 wget https://dl.eff.org/certbot-auto
