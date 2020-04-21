@@ -6,6 +6,7 @@ if [ -d build ]; then
   mv build buildInProgress
   cd georgegillams.co.uk
   git fetch && git reset --hard origin/master && git pull
+  sudo cp -R ./config/aws/errors /var/www/html/
   PUPPETEER_SKIP_CHROMIUM_DOWNLOAD=true npm ci
   pm2 stop all
   rm -rf build && mv ../buildInProgress ./build
