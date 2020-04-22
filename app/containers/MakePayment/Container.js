@@ -1,14 +1,10 @@
 import React, { Fragment } from 'react';
 import PropTypes from 'prop-types';
 import { Helmet } from 'react-helmet';
+import { PageTitle } from 'gg-components/Typography';
 import { LoadingIndicator } from 'gg-components/LoadingIndicator';
 import { Button } from 'gg-components/Button';
-import {
-  Paragraph,
-  Section,
-  SubSection,
-  TextLink,
-} from 'gg-components/Typography';
+import { Paragraph, SubSection, TextLink } from 'gg-components/Typography';
 import { CodeInline } from 'gg-components/Code';
 import Skeleton from './Skeleton';
 import { getTimeDifference } from 'helpers/time';
@@ -79,7 +75,7 @@ export default class StripePayments extends React.Component {
     const paymentIsComplete = payment && payment.outstandingBalance <= 0;
 
     const page = (
-      <Section name={name} {...rest}>
+      <PageTitle name={name} {...rest}>
         {paymentIsComplete && (
           <Fragment>
             <Paragraph>This payment has been completed.</Paragraph>
@@ -124,7 +120,7 @@ export default class StripePayments extends React.Component {
             </Elements>
           </StripeProvider>
         )}
-      </Section>
+      </PageTitle>
     );
 
     return (

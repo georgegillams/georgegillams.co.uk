@@ -3,12 +3,7 @@ import PropTypes from 'prop-types';
 import { Helmet } from 'react-helmet';
 import { cssModules } from 'bpk-react-utils';
 
-import {
-  Paragraph,
-  Section,
-  SubSection,
-  TextLink,
-} from 'gg-components/Typography';
+import { Paragraph, SubSection, TextLink, PageTitle } from 'gg-components/Typography';
 import { CodeInline } from 'gg-components/Code';
 import { CopyButton } from 'gg-components/Button';
 import { GG_EMAIL } from 'helpers/constants';
@@ -29,9 +24,9 @@ export default class PaymentsPage extends React.Component {
     return (
       <div className={classNames.join(' ')} {...rest}>
         <Helmet title="Payments" />
-        <Section name="Send me money">
+        <PageTitle name="Send me money">
           <PaymentForm />
-        </Section>
+        </PageTitle>
       </div>
     );
   }

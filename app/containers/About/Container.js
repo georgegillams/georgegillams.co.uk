@@ -8,7 +8,7 @@ import { cssModules } from 'bpk-react-utils';
 
 import STYLES from '../pages.scss';
 
-import { Paragraph, TextLink, Section } from 'gg-components/Typography';
+import { Paragraph, TextLink, PageTitle } from 'gg-components/Typography';
 const getClassName = cssModules(STYLES);
 
 const documentIfExists = typeof window !== 'undefined' ? document : null;
@@ -21,7 +21,7 @@ export default class Contact extends Component {
 
   render() {
     return (
-      <Section name="Hey! I'm George.">
+      <PageTitle name="Hey! I'm George.">
         <Paragraph>
           I&apos;m an open-source software engineer at{' '}
           <TextLink external href="https://www.skyscanner.net/">
@@ -69,7 +69,7 @@ export default class Contact extends Component {
           reach-out to me. So if you're interested in anything I do,{' '}
           <TextLink href="/contact">get in touch</TextLink>!
         </Paragraph>
-      </Section>
+      </PageTitle>
     );
   }
 }

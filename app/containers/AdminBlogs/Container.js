@@ -6,9 +6,9 @@ import { cssModules } from 'bpk-react-utils';
 
 import Skeleton from './Skeleton';
 
+import { PageTitle } from 'gg-components/Typography';
 import { BlogCard } from 'components/Blogs';
 import { Button } from 'gg-components/Button';
-import { Section } from 'gg-components/Typography';
 import { FormBuilder } from 'gg-components/FormBuilder';
 import { ID_REGEX } from 'helpers/constants';
 import {
@@ -53,7 +53,7 @@ export default class AdminBlogs extends React.Component {
           user={user}
           setLoginRedirect={() => setLoginRedirect('admin/blog')}
         >
-          <Section name="Admin - blog">
+          <PageTitle link={{ to: '/admin', text: 'Admin' }} name="Admin - blog">
             <Button
               className={getClassName('pages__component')}
               large
@@ -82,7 +82,7 @@ export default class AdminBlogs extends React.Component {
                   </Button>
                 </Card>
               ))}
-          </Section>
+          </PageTitle>
         </AdminOnly>
       </div>
     );

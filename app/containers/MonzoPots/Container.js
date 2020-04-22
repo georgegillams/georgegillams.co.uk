@@ -14,7 +14,7 @@ import Skeleton from './Skeleton';
 import HelperFunctions from 'helpers/HelperFunctions';
 import { MoneyPot } from 'gg-components/MoneyPot';
 import { Button } from 'gg-components/Button';
-import { Section, SubSection } from 'gg-components/Typography';
+import { SubSection, PageTitle } from 'gg-components/Typography';
 import { LoadingCover } from 'gg-components/Auth';
 import { FormBuilder } from 'gg-components/FormBuilder';
 import STYLES from 'containers/pages.scss';
@@ -77,92 +77,89 @@ export default class MonzoPots extends React.Component {
     return (
       <div className={outerClassNameFinal.join(' ')} {...rest}>
         <Helmet title="My monzo pots" />
-        <Section>
-          <Section name="Monzo pot tracking 💳">
-            {!monzoPotDisplayData && (
-              <Fragment>
-                <label
-                  htmlFor="password"
-                  className={getClassName('forms__label')}
-                >
-                  Password
-                </label>
-                <Input
-                  id="password"
-                  className={getClassName('pages__component')}
-                  type="password"
-                  name="password"
-                  value={password || ''}
-                  onChange={event => {
-                    this.loadPotData(event.target.value);
-                  }}
-                  placeholder="Password"
-                />
-              </Fragment>
-            )}
-            {monzoPotDisplayData && monzoPotDisplayData.map && (
-              <Button
-                onClick={() => {
-                  this.loadPotData(password);
-                }}
+        <PageTitle name="Monzo pot tracking 💳">
+          {!monzoPotDisplayData && (
+            <Fragment>
+              <label
+                htmlFor="password"
+                className={getClassName('forms__label')}
               >
-                Refresh
-              </Button>
-            )}
-            <br />
-            <br />
-            {monzoPotDisplayData &&
-              monzoPotDisplayData.map &&
-              monzoPotDisplayData.map(pot => (
-                <Fragment>
-                  <MoneyPot
-                    name={pot.name}
-                    balance={pot.balance}
-                    goalAmount={pot.goalAmount}
-                    markerPosition={
-                      pot.percentageExpected > 0 ? pot.percentageExpected : null
-                    }
-                    shortfall={pot.shortfall}
-                    className={getClassName('pages__degree-module')}
-                  />
-                  <SubSection noPadding anchor={false}>
-                    Last deposit:{' '}
-                    {pot.transactionalData && pot.transactionalData.lastDeposit
-                      ? `£${pot.transactionalData.lastDeposit.amount / 100} - ${
-                          pot.transactionalData.lastDeposit.time
-                        }`
-                      : 'loading...'}
-                  </SubSection>
-                  <SubSection noPadding anchor={false}>
-                    Last withdrawal:{' '}
-                    {pot.transactionalData &&
-                    pot.transactionalData.lastWithdrawal
-                      ? `£${pot.transactionalData.lastWithdrawal.amount /
-                          100} - ${pot.transactionalData.lastWithdrawal.time}`
-                      : 'loading...'}
-                  </SubSection>
-                  <br />
-                  <br />
-                </Fragment>
-              ))}
-            {isAdmin && (
-              <FormBuilder
-                disabled={addKeyLoading}
-                entity={this.state.keyData || {}}
-                submitLabel="Set key"
-                formFields={[
-                  { id: 'key', name: 'Key', show: true, type: 'password' },
-                ]}
-                onDataChanged={keyData => {
-                  this.setState({ keyData });
+                Password
+              </label>
+              <Input
+                id="password"
+                className={getClassName('pages__component')}
+                type="password"
+                name="password"
+                value={password || ''}
+                onChange={event => {
+                  this.loadPotData(event.target.value);
                 }}
-                onSubmit={() => {
-                  addKey(this.state.keyData.key);
-                }}
+                placeholder="Password"
               />
-            )}
-          </Section>
-        </Section>
+            </Fragment>
+          )}
+          {monzoPotDisplayData && monzoPotDisplayData.map && (
+            <Button
+              onClick={() => {
+                this.loadPotData(password);
+              }}
+            >
+              Refresh
+            </Button>
+          )}
+          <br />
+          <br />
+          {monzoPotDisplayData &&
+            monzoPotDisplayData.map &&
+            monzoPotDisplayData.map(pot => (
+              <Fragment>
+                <MoneyPot
+                  name={pot.name}
+                  balance={pot.balance}
+                  goalAmount={pot.goalAmount}
+                  markerPosition={
+                    pot.percentageExpected > 0 ? pot.percentageExpected : null
+                  }
+                  shortfall={pot.shortfall}
+                  className={getClassName('pages__degree-module')}
+                />
+                <SubSection noPadding anchor={false}>
+                  Last deposit:{' '}
+                  {pot.transactionalData && pot.transactionalData.lastDeposit
+                    ? `£${pot.transactionalData.lastDeposit.amount / 100} - ${
+                        pot.transactionalData.lastDeposit.time
+                      }`
+                    : 'loading...'}
+                </SubSection>
+                <SubSection noPadding anchor={false}>
+                  Last withdrawal:{' '}
+                  {pot.transactionalData && pot.transactionalData.lastWithdrawal
+                    ? `£${pot.transactionalData.lastWithdrawal.amount /
+                        100} - ${pot.transactionalData.lastWithdrawal.time}`
+                    : 'loading...'}
+                </SubSection>
+                <br />
+                <br />
+              </Fragment>
+            ))}
+          {isAdmin && (
+            <FormBuilder
+              disabled={addKeyLoading}
+              entity={this.state.keyData || {}}
+              submitLabel="Set key"
+              formFields={[
+                { id: 'key', name: 'Key', show: true, type: 'password' },
+              ]}
+              onDataChanged={keyData => {
+                this.setState({ keyData });
+              }}
+              onSubmit={() => {
+                addKey(this.state.keyData.key);
+              }}
+            />
+          )}
+        </PageTitle>
       </div>
     );
   }

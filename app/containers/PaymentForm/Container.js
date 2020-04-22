@@ -3,10 +3,10 @@ import PropTypes from 'prop-types';
 import { cssModules } from 'bpk-react-utils';
 import { FormBuilder } from 'gg-components/FormBuilder';
 
+import { PageTitle } from 'gg-components/Typography';
 import { APIEntity } from 'gg-components/Auth';
 import { Button } from 'gg-components/Button';
 import { Checkbox } from 'gg-components/Checkbox';
-import { Paragraph, Section, SubSection } from 'gg-components/Typography';
 import STYLES from 'containers/pages.scss';
 import { EMAIL_REGEX, DECIMAL_REGEX } from 'helpers/constants';
 
@@ -91,7 +91,7 @@ export default class PaymentForm extends React.Component {
           }}
         />
         {isAdmin && (
-          <Section name="Admin - payments">
+          <PageTitle name="Admin - payments">
             <Button
               onClick={() => {
                 loadPayments();
@@ -127,7 +127,7 @@ export default class PaymentForm extends React.Component {
                   </Button>
                 </Fragment>
               ))}
-          </Section>
+          </PageTitle>
         )}
       </div>
     );

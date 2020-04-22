@@ -11,7 +11,7 @@ import HelperFunctions from 'helpers/HelperFunctions';
 import { LoadingIndicator } from 'gg-components/LoadingIndicator';
 import { ArticleCard, ARTICLE_CARD_LAYOUTS } from 'gg-components/Cards';
 import { Button } from 'gg-components/Button';
-import { Section, SubSection, TextLink } from 'gg-components/Typography';
+import { SubSection, TextLink, PageTitle } from 'gg-components/Typography';
 import { CodeInline } from 'gg-components/Code';
 import Ticket from 'components/Ticket';
 import {
@@ -81,7 +81,10 @@ export default class AdminUsers extends React.Component {
           user={user}
           setLoginRedirect={() => setLoginRedirect('admin/users')}
         >
-          <Section name="Admin - users">
+          <PageTitle
+            link={{ to: '/admin', text: 'Admin' }}
+            name="Admin - users"
+          >
             <span>Users: </span>
             {users && users.length && <span>{users.length}</span>}
             <br />
@@ -133,7 +136,7 @@ export default class AdminUsers extends React.Component {
                   </Button>
                 </AdminUsersAPIEntity>
               ))}
-          </Section>
+          </PageTitle>
         </AdminOnly>
       </div>
     );

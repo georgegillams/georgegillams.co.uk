@@ -1,7 +1,7 @@
 import React, { Fragment, useState } from 'react';
-import { Card } from 'gg-components/Cards';
-import { Paragraph, Section } from 'gg-components/Typography';
 
+import { Card } from 'gg-components/Cards';
+import { Paragraph, PageTitle } from 'gg-components/Typography';
 import { Button } from 'gg-components/Button';
 import {
   STRING_REGEX,
@@ -24,7 +24,7 @@ const AnalyticEntity = props => {
 
   return (
     <Card {...rest}>
-      <Section name={entity.url}>
+      <PageTitle name={entity.url}>
         {entity.id && (
           <Fragment>
             <Paragraph>{entity.id}</Paragraph>
@@ -45,7 +45,7 @@ const AnalyticEntity = props => {
         )}
         <DebugObject debugTitle="Analytic" debugObject={entity} />
         {children && children}
-      </Section>
+      </PageTitle>
     </Card>
   );
 };

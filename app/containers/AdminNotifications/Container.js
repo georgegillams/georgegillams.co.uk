@@ -6,8 +6,8 @@ import { cssModules } from 'bpk-react-utils';
 import Skeleton from './Skeleton';
 import NotificationEntity from './NotificationEntity';
 
+import { PageTitle } from 'gg-components/Typography';
 import { Button } from 'gg-components/Button';
-import { Section } from 'gg-components/Typography';
 import { FormBuilder } from 'gg-components/FormBuilder';
 import {
   STRING_REGEX,
@@ -67,7 +67,10 @@ export default class AdminNotifications extends React.Component {
           user={user}
           setLoginRedirect={() => setLoginRedirect('admin/notification')}
         >
-          <Section name="Admin - notifications">
+          <PageTitle
+            link={{ to: '/admin', text: 'Admin' }}
+            name="Admin - notifications"
+          >
             <Button onClick={() => loadNotifications()} large>
               Reload notifications
             </Button>
@@ -125,7 +128,7 @@ export default class AdminNotifications extends React.Component {
                   </Button>
                 </NotificationEntity>
               ))}
-          </Section>
+          </PageTitle>
         </AdminOnly>
       </div>
     );

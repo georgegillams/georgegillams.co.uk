@@ -7,7 +7,7 @@ import { Checkbox } from 'gg-components/Checkbox';
 
 import STYLES from '../pages.scss';
 
-import { Paragraph, Section, SubSection } from 'gg-components/Typography';
+import { Paragraph, PageTitle } from 'gg-components/Typography';
 const getClassName = cssModules(STYLES);
 
 const StatusControl = props => {
@@ -39,7 +39,7 @@ const Debug = props => {
   return (
     <div {...props}>
       <Helmet title="Debug" />
-      <Section anchor={false} name="Debug">
+      <PageTitle anchor={false} name="Debug">
         <StatusControl
           name="Show session debug views"
           storageKey="showSessionDebugViews"
@@ -54,7 +54,7 @@ const Debug = props => {
         <Paragraph>
           Note that changes will not take effect until you reload the page.
         </Paragraph>
-      </Section>
+      </PageTitle>
     </div>
   );
 };

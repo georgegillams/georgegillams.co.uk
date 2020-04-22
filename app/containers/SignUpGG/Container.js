@@ -11,7 +11,7 @@ import Skeleton from './Skeleton';
 
 import { LoadingIndicator } from 'gg-components/LoadingIndicator';
 import { Button } from 'gg-components/Button';
-import { Section, SubSection, TextLink } from 'gg-components/Typography';
+import { TextLink, PageTitle } from 'gg-components/Typography';
 import { CodeInline } from 'gg-components/Code';
 import { SignUpForm } from 'components/Forms';
 import { CookiesOnly } from 'components/Sessions';
@@ -53,7 +53,7 @@ export default class SignUp extends React.Component {
     const page = (
       <div className={outerClassNameFinal.join(' ')} {...rest}>
         <LoggedOutOnly user={user}>
-          <Section name="Sign up">
+          <PageTitle name="Sign up">
             <SignUpForm
               disabled={signingUp}
               credentials={credentials || {}}
@@ -62,7 +62,7 @@ export default class SignUp extends React.Component {
             />
             <br />
             <TextLink to="/login">Already got an account? Login here.</TextLink>
-          </Section>
+          </PageTitle>
         </LoggedOutOnly>
       </div>
     );

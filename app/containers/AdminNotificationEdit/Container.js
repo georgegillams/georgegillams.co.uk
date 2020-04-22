@@ -5,10 +5,10 @@ import { cssModules } from 'bpk-react-utils';
 
 import Skeleton from './Skeleton';
 
+import { PageTitle } from 'gg-components/Typography';
 import { LoadingIndicator } from 'gg-components/LoadingIndicator';
 import { ArticleCard, ARTICLE_CARD_LAYOUTS } from 'gg-components/Cards';
 import { Button } from 'gg-components/Button';
-import { Section, SubSection, TextLink } from 'gg-components/Typography';
 import { FormBuilder } from 'gg-components/FormBuilder';
 import { CodeInline } from 'gg-components/Code';
 import Ticket from 'components/Ticket';
@@ -73,7 +73,8 @@ export default class AdminNotificationEdit extends React.Component {
           user={user}
           setLoginRedirect={() => setLoginRedirect('admin/notification')}
         >
-          <Section
+          <PageTitle
+            link={{ to: '/admin/notifications', text: 'Notifications' }}
             name={`Edit notification ${notification && notification.id}`}
           >
             <CreateNotificationForm
@@ -90,7 +91,7 @@ export default class AdminNotificationEdit extends React.Component {
               }}
               disabled={updatingNotification || !this.state.newNotification}
             />
-          </Section>
+          </PageTitle>
         </AdminOnly>
       </div>
     );

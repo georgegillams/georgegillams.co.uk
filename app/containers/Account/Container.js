@@ -11,18 +11,9 @@ import Skeleton from './Skeleton';
 
 import { LoadingIndicator } from 'gg-components/LoadingIndicator';
 import { Button } from 'gg-components/Button';
-import {
-  Paragraph,
-  Section,
-  SubSection,
-  TextLink,
-} from 'gg-components/Typography';
+import { Paragraph, SubSection, TextLink, PageTitle } from 'gg-components/Typography';
 import { CodeInline } from 'gg-components/Code';
-import {
-  DebugObject,
-  LoggedInOnly,
-  LoadingCover,
-} from 'gg-components/Auth';
+import { DebugObject, LoggedInOnly, LoadingCover } from 'gg-components/Auth';
 import { LoginForm } from 'components/Forms';
 import { CookiesOnly } from 'components/Sessions';
 import {
@@ -71,7 +62,7 @@ export default class Account extends React.Component {
           user={user}
           setLoginRedirect={() => setLoginRedirect('account')}
         >
-          <Section name="Account">
+          <PageTitle name="Account">
             <Paragraph>
               {user && user.email && <div>{`Email: ${user.email}`}</div>}
               {user && user.uname && <div>{`Display name: ${user.uname}`}</div>}
@@ -98,7 +89,7 @@ export default class Account extends React.Component {
             <Button large onClick={logout}>
               Logout
             </Button>
-          </Section>
+          </PageTitle>
         </LoggedInOnly>
       </div>
     );

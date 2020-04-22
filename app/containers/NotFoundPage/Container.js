@@ -4,12 +4,7 @@ import { cssModules } from 'bpk-react-utils';
 
 import STYLES from './not-found.scss';
 
-import {
-  Paragraph,
-  Section,
-  SubSection,
-  TextLink,
-} from 'gg-components/Typography';
+import { Paragraph, SubSection, TextLink, PageTitle } from 'gg-components/Typography';
 
 const getClassName = cssModules(STYLES); // REGEX_REPLACED
 
@@ -23,7 +18,10 @@ class NotFoundPage extends Component {
 
     return (
       <main className={classNameFinal.join(' ')} {...rest}>
-        <Section className={getClassName('not-found__container')} name="Oops.">
+        <PageTitle
+          className={getClassName('not-found__container')}
+          name="Oops."
+        >
           <SubSection anchor={false}>
             <Paragraph>
               The page you&apos;re looking for doesn&apos;t exist, or you
@@ -32,7 +30,7 @@ class NotFoundPage extends Component {
               Maybe the <TextLink href="/site-map">sitemap</TextLink> can help
             </Paragraph>
           </SubSection>
-        </Section>
+        </PageTitle>
       </main>
     );
   }
