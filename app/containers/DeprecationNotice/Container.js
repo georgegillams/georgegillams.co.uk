@@ -4,12 +4,7 @@ import { cssModules } from 'bpk-react-utils';
 
 import STYLES from './deprecation-notice.scss';
 
-import {
-  Paragraph,
-  Section,
-  SubSection,
-  TextLink,
-} from 'gg-components/Typography';
+import { Paragraph, SubSection, TextLink, PageTitle } from 'gg-components/Typography';
 
 const getClassName = cssModules(STYLES);
 
@@ -23,7 +18,7 @@ class DeprecationNotice extends Component {
 
     return (
       <main className={classNameFinal.join(' ')} {...rest}>
-        <Section
+        <PageTitle
           className={getClassName('not-found__container')}
           name="This feature has been deprecated"
         >
@@ -34,7 +29,7 @@ class DeprecationNotice extends Component {
               <TextLink href="/site-map">sitemap</TextLink>.
             </Paragrah>
           </SubSection>
-        </Section>
+        </PageTitle>
       </main>
     );
   }

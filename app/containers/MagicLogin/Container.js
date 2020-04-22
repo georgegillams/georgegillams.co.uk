@@ -7,9 +7,9 @@ import BpkImage, {
 } from 'bpk-component-image';
 import { cssModules } from 'bpk-react-utils';
 
+import { PageTitle } from 'gg-components/Typography';
 import { LoadingIndicator } from 'gg-components/LoadingIndicator';
 import { Button } from 'gg-components/Button';
-import { Section, SubSection, TextLink } from 'gg-components/Typography';
 import { CodeInline } from 'gg-components/Code';
 import { DebugObject } from 'gg-components/Auth';
 import { LoginForm } from 'components/Forms';
@@ -85,7 +85,9 @@ export default class Login extends React.Component {
             onCookiesAccepted();
           }}
         />
-        <Section name="Magic login">{user && <text>Logged in!</text>}</Section>
+        <PageTitle name="Magic login">
+          {user && <text>Logged in!</text>}
+        </PageTitle>
         <DebugObject
           debugTitle="Magic login"
           debugObject={{

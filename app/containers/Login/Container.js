@@ -11,13 +11,9 @@ import Skeleton from './Skeleton';
 
 import { LoadingIndicator } from 'gg-components/LoadingIndicator';
 import { Button } from 'gg-components/Button';
-import { Section, SubSection, TextLink } from 'gg-components/Typography';
+import { TextLink, PageTitle } from 'gg-components/Typography';
 import { CodeInline } from 'gg-components/Code';
-import {
-  DebugObject,
-  LoggedOutOnly,
-  LoadingCover,
-} from 'gg-components/Auth';
+import { DebugObject, LoggedOutOnly, LoadingCover } from 'gg-components/Auth';
 import { LoginForm } from 'components/Forms';
 import { CookiesOnly } from 'components/Sessions';
 import {
@@ -57,7 +53,7 @@ export default class Login extends React.Component {
     const page = (
       <div className={outerClassNameFinal.join(' ')} {...rest}>
         <LoggedOutOnly user={user}>
-          <Section name="Login">
+          <PageTitle name="Login">
             <LoginForm
               disabled={loggingIn || logInSuccess}
               credentials={credentials || { useMagicLink: true }}
@@ -73,7 +69,7 @@ export default class Login extends React.Component {
             <TextLink to="/sign-up">
               Not yet got an account? Sign up here.
             </TextLink>
-          </Section>
+          </PageTitle>
         </LoggedOutOnly>
       </div>
     );

@@ -7,9 +7,9 @@ import BpkImage, {
 } from 'bpk-component-image';
 import { cssModules } from 'bpk-react-utils';
 
+import { PageTitle } from 'gg-components/Typography';
 import { LoadingIndicator } from 'gg-components/LoadingIndicator';
 import { Button } from 'gg-components/Button';
-import { Section, SubSection, TextLink } from 'gg-components/Typography';
 import { CodeInline } from 'gg-components/Code';
 import { LoginForm } from 'components/Forms';
 import { DebugObject } from 'gg-components/Auth';
@@ -74,9 +74,9 @@ export default class EmailVerification extends React.Component {
             onCookiesAccepted();
           }}
         />
-        <Section name="Email verification">
+        <PageTitle name="Email verification">
           {verifySuccess && <span>Thanks for verifying your email!</span>}
-        </Section>
+        </PageTitle>
         <DebugObject
           debugTitle="Email verification"
           debugObject={{

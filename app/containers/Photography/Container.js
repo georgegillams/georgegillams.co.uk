@@ -8,7 +8,7 @@ import BpkImage, {
 
 import { CreativeCommons } from 'gg-components/CreativeCommons';
 import { ArticleCard, ARTICLE_CARD_LAYOUTS } from 'gg-components/Cards';
-import { Paragraph, Section, SubSection } from 'gg-components/Typography';
+import { Paragraph, Section, SubSection, PageTitle } from 'gg-components/Typography';
 import GraphicContent, {
   withGraphicContentBehaviour,
 } from 'components/GraphicContent';
@@ -64,7 +64,7 @@ export default class Photography extends Component {
         style={{ textAlign: 'center' }}
       >
         <Helmet title="Photography" />
-        <Section anchor={false} name="Photography">
+        <PageTitle anchor={false} name="Photography">
           <div
             style={{ paddingTop: '1rem' }}
             className={getClassName('pages__compact-card-container')}
@@ -173,7 +173,7 @@ export default class Photography extends Component {
               src="https://i.imgur.com/h4BFWqS.jpg"
             />
           </SubSection>
-        </Section>
+        </PageTitle>
         <Section name="Photoshop">
           <SubSection anchor={false} name="Tulips exploding with light">
             <Paragraph>

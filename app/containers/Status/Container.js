@@ -6,14 +6,14 @@ import { getTimeDifference } from 'helpers/time';
 
 import STYLES from '../pages.scss';
 
-import { Paragraph, Section, SubSection } from 'gg-components/Typography';
+import { Paragraph, Section, SubSection, PageTitle } from 'gg-components/Typography';
 const getClassName = cssModules(STYLES);
 
 const Status = props => {
   return (
     <div {...props}>
       <Helmet title="Status" />
-      <Section anchor={false} name="Status">
+      <PageTitle anchor={false} name="Status">
         <img
           className={getClassName('pages__component')}
           alt="Build status"
@@ -30,7 +30,7 @@ const Status = props => {
             Built {getTimeDifference(new Date(process.env.BUILT_AT * 1000))}
           </Paragraph>
         </SubSection>
-      </Section>
+      </PageTitle>
       <Section anchor={false} name="gg-components">
         <img
           className={getClassName('pages__component')}

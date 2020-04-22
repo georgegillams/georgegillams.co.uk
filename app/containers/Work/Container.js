@@ -9,12 +9,7 @@ import { cssModules } from 'bpk-react-utils';
 import STYLES from '../pages.scss';
 
 import { Button } from 'gg-components/Button';
-import {
-  Paragraph,
-  Section,
-  SubSection,
-  TextLink,
-} from 'gg-components/Typography';
+import { Paragraph, SubSection, TextLink, PageTitle } from 'gg-components/Typography';
 
 const getClassName = cssModules(STYLES); // REGEX_REPLACED
 
@@ -30,7 +25,7 @@ export default class Work extends Component {
     return (
       <div className={getClassName('pages__container--prose')}>
         <Helmet title="Work" />
-        <Section name="Work">
+        <PageTitle name="Work">
           <SubSection name="Fundamentally open-source">
             <Paragraph>
               I believe that when we share, we all get more out of the code we
@@ -179,7 +174,7 @@ export default class Work extends Component {
               myself.
             </Paragraph>
           </SubSection>
-        </Section>
+        </PageTitle>
       </div>
     );
   }

@@ -5,11 +5,11 @@ import { cssModules } from 'bpk-react-utils';
 
 import Skeleton from './Skeleton';
 
+import { PageTitle } from 'gg-components/Typography';
 import { LoadingIndicator } from 'gg-components/LoadingIndicator';
 import BlogsList from 'components/Blogs';
 import { ArticleCard, ARTICLE_CARD_LAYOUTS } from 'gg-components/Cards';
 import { Button } from 'gg-components/Button';
-import { Section, SubSection, TextLink } from 'gg-components/Typography';
 import { CodeInline } from 'gg-components/Code';
 import Ticket from 'components/Ticket';
 import {
@@ -72,7 +72,10 @@ export default class AdminBlogEdit extends React.Component {
           user={user}
           setLoginRedirect={() => setLoginRedirect('admin/blog')}
         >
-          <Section name="Admin - blog">
+          <PageTitle
+            link={{ to: '/admin/blog', text: 'Blogs' }}
+            name="Admin - blog"
+          >
             <CreateBlogForm
               disabled={updatingBlog || creatingBlog || !this.state.newBlog}
               blog={this.state.newBlog || blog || {}}
@@ -86,7 +89,7 @@ export default class AdminBlogEdit extends React.Component {
               }}
               submitLabel={blog ? 'Update blog' : 'Create blog'}
             />
-          </Section>
+          </PageTitle>
         </AdminOnly>
       </div>
     );

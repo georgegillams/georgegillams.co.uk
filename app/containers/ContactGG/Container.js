@@ -7,7 +7,7 @@ import STYLES from './contact.scss';
 
 import { InfoCell, INFO_CELL_STYLES } from 'gg-components/InfoCell';
 import withScroll from 'gg-components/ScrollContainer/withScroll.js';
-import { Section, SubSection, TextLink } from 'gg-components/Typography';
+import { SubSection, TextLink, PageTitle } from 'gg-components/Typography';
 import { Button } from 'gg-components/Button';
 import { GG_EMAIL } from 'helpers/constants';
 import facebookLogo from './facebook.svg';
@@ -31,7 +31,7 @@ export default class Contact extends Component {
     return (
       <div className={[getClassName('pages__container--centered')].join(' ')}>
         <Helmet title="Contact" />
-        <Section name="Get in touch">
+        <PageTitle name="Get in touch">
           <div className={getClassName('pages__full-width-container')}>
             <InfoCellWithScroll
               title="Twitter"
@@ -163,7 +163,7 @@ export default class Contact extends Component {
               Download contact (Android)
             </Button>
           </div>
-        </Section>
+        </PageTitle>
       </div>
     );
   }

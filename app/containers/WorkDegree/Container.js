@@ -13,6 +13,7 @@ import {
   Section,
   SubSection,
   TextLink,
+  PageTitle,
 } from 'gg-components/Typography';
 import { DegreeModule } from 'gg-components/Degree';
 import Comments from 'containers/Comments';
@@ -93,7 +94,10 @@ class Degree extends React.Component {
     return (
       <div className={outerClassNameFinal.join(' ')} {...rest}>
         <Helmet title="My degree" />
-        <Section name="MEng Software Engineering 👨‍🎓">
+        <PageTitle
+          link={{ to: '/work', text: 'Work' }}
+          name="MEng Software Engineering 👨‍🎓"
+        >
           <FadingLazyLoadedImage
             className={getClassName('pages__image')}
             style={{ maxWidth: '20rem' }}
@@ -350,7 +354,7 @@ class Degree extends React.Component {
               />
             </SubSection>
           </Section>
-        </Section>
+        </PageTitle>
         <Comments pageId={PAGE_ID} />
       </div>
     );

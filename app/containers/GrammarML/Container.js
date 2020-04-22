@@ -7,7 +7,7 @@ import { cssModules } from 'bpk-react-utils';
 import Skeleton from './Skeleton';
 
 import { Button } from 'gg-components/Button';
-import { Section, SubSection } from 'gg-components/Typography';
+import { Section, SubSection, PageTitle } from 'gg-components/Typography';
 import { FormBuilder } from 'gg-components/FormBuilder';
 import { ANYTHING_REGEX } from 'helpers/constants';
 import {
@@ -86,7 +86,7 @@ export default class GrammarML extends React.Component {
 
     const page = (
       <div className={outerClassNameFinal.join(' ')} {...rest}>
-        <Section name="Machine learning - grammar">
+        <PageTitle name="Machine learning - grammar">
           <SubSection name="Current limitations">
             Can only detect errors based on usage of &quot;there&quot; or
             &quot;their&quot;.
@@ -211,7 +211,7 @@ export default class GrammarML extends React.Component {
                 </Card>
               ))}
           </SubSection>
-        </Section>
+        </PageTitle>
       </div>
     );
 

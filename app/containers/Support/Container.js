@@ -15,12 +15,7 @@ import Skeleton from './Skeleton';
 import HelperFunctions from 'helpers/HelperFunctions';
 import { MoneyPot } from 'gg-components/MoneyPot';
 import { Button } from 'gg-components/Button';
-import {
-  Paragraph,
-  Section,
-  SubSection,
-  TextLink,
-} from 'gg-components/Typography';
+import { Paragraph, SubSection, TextLink, PageTitle } from 'gg-components/Typography';
 import { LoadingCover } from 'gg-components/Auth';
 import STYLES from 'containers/pages.scss';
 
@@ -79,69 +74,67 @@ export default class Support extends React.Component {
     return (
       <div className={outerClassNameFinal.join(' ')} {...rest}>
         <Helmet title="Support" />
-        <Section>
-          <Section name="Support">
-            <Button
-              onClick={() => {
-                loadLinks();
+        <PageTitle name="Support">
+          <Button
+            onClick={() => {
+              loadLinks();
+            }}
+          >
+            Refresh
+          </Button>
+          <br />
+          <br />
+          {noSupport && (
+            <Paragraph>No support session is currently active.</Paragraph>
+          )}
+          {showLinks &&
+            links.map(l => (
+              <SubSection anchor={false} name={l.name || 'untitled'}>
+                {l.url && (
+                  <TextLink external href={l.url}>
+                    {l.url}
+                  </TextLink>
+                )}
+                {l.description && (
+                  <Fragment>
+                    <br />
+                    {l.description}
+                  </Fragment>
+                )}
+                {isAdmin && (
+                  <Fragment>
+                    <br />
+                    <Button
+                      destructive
+                      onClick={() => {
+                        deleteLink(l);
+                      }}
+                    >
+                      Delete
+                    </Button>
+                  </Fragment>
+                )}
+              </SubSection>
+            ))}
+          {isAdmin && (
+            <FormBuilder
+              disabled={addLinkLoading}
+              entity={this.state.newLink || {}}
+              submitLabel="Add link"
+              formFields={[
+                { id: 'name', name: 'Name', show: true },
+                { id: 'description', name: 'Description', show: true },
+                { id: 'url', name: 'URL', show: true },
+              ]}
+              onDataChanged={newLink => {
+                this.setState({ newLink });
               }}
-            >
-              Refresh
-            </Button>
-            <br />
-            <br />
-            {noSupport && (
-              <Paragraph>No support session is currently active.</Paragraph>
-            )}
-            {showLinks &&
-              links.map(l => (
-                <SubSection anchor={false} name={l.name || 'untitled'}>
-                  {l.url && (
-                    <TextLink external href={l.url}>
-                      {l.url}
-                    </TextLink>
-                  )}
-                  {l.description && (
-                    <Fragment>
-                      <br />
-                      {l.description}
-                    </Fragment>
-                  )}
-                  {isAdmin && (
-                    <Fragment>
-                      <br />
-                      <Button
-                        destructive
-                        onClick={() => {
-                          deleteLink(l);
-                        }}
-                      >
-                        Delete
-                      </Button>
-                    </Fragment>
-                  )}
-                </SubSection>
-              ))}
-            {isAdmin && (
-              <FormBuilder
-                disabled={addLinkLoading}
-                entity={this.state.newLink || {}}
-                submitLabel="Add link"
-                formFields={[
-                  { id: 'name', name: 'Name', show: true },
-                  { id: 'description', name: 'Description', show: true },
-                  { id: 'url', name: 'URL', show: true },
-                ]}
-                onDataChanged={newLink => {
-                  this.setState({ newLink });
-                }}
-                onSubmit={() => {
-                  addLink(this.state.newLink);
-                }}
-              />
-            )}
-          </Section>
-        </Section>
+              onSubmit={() => {
+                addLink(this.state.newLink);
+              }}
+            />
+          )}
+        </PageTitle>
       </div>
     );
   }

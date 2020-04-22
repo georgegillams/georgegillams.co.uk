@@ -5,8 +5,8 @@ import { cssModules } from 'bpk-react-utils';
 
 import Skeleton from './Skeleton';
 
+import { PageTitle } from 'gg-components/Typography';
 import { ArticleCard, ARTICLE_CARD_LAYOUTS } from 'gg-components/Cards';
-import { Section } from 'gg-components/Typography';
 import { DebugObject, AdminOnly, LoadingCover } from 'gg-components/Auth';
 import { CookiesOnly } from 'components/Sessions';
 import STYLES from 'containers/pages.scss';
@@ -37,7 +37,7 @@ export default class Admin extends React.Component {
           user={user}
           setLoginRedirect={() => setLoginRedirect('admin')}
         >
-          <Section name="Admin">
+          <PageTitle name="Admin">
             <div className={getClassName('pages__compact-card-container')}>
               <ArticleCard
                 layout={ARTICLE_CARD_LAYOUTS.narrowCompact}
@@ -88,7 +88,7 @@ export default class Admin extends React.Component {
                 title="Payments"
               />
             </div>
-          </Section>
+          </PageTitle>
         </AdminOnly>
       </div>
     );

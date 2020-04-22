@@ -9,7 +9,7 @@ import AnalyticEntity from './AnalyticEntity';
 
 import { Button } from 'gg-components/Button';
 import { Card } from 'gg-components/Cards';
-import { Paragraph, Section } from 'gg-components/Typography';
+import { Paragraph, PageTitle } from 'gg-components/Typography';
 import {
   STRING_REGEX,
   INT_REGEX,
@@ -121,7 +121,10 @@ export default class AdminAnalytics extends React.Component {
           user={user}
           setLoginRedirect={() => setLoginRedirect('admin/analytic')}
         >
-          <Section name="Admin - analytics">
+          <PageTitle
+            link={{ to: '/admin', text: 'Admin' }}
+            name="Admin - analytics"
+          >
             <Button onClick={() => loadAnalytics()} large>
               Reload analytics
             </Button>
@@ -193,7 +196,7 @@ export default class AdminAnalytics extends React.Component {
                   ))}
               </Fragment>
             )}
-          </Section>
+          </PageTitle>
         </AdminOnly>
       </div>
     );
