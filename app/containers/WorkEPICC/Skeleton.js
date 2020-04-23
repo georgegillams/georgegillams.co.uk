@@ -14,7 +14,7 @@ const getClassName = cssModules(STYLES);
 const LoginFormSkeleton = props => {
   const { className, ...rest } = props; // eslint-disable-line no-shadow
 
-  const outerClassNameFinal = [];
+  const outerClassNameFinal = [getClassName('pages__container--prose')];
 
   if (className) {
     outerClassNameFinal.push(className);
@@ -22,7 +22,7 @@ const LoginFormSkeleton = props => {
 
   return (
     <div className={outerClassNameFinal.join(' ')} {...rest}>
-      <SectionSkeleton />
+      <SectionSkeleton style={{ marginTop: '3rem' }} />
       <SubSectionSkeleton />
       <SmallButtonSkeleton />
       <CardSkeleton />
