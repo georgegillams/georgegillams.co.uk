@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import { Helmet } from 'react-helmet';
 import { cssModules } from 'bpk-react-utils';
 
-import { SubSection, TextLink } from 'gg-components/Typography';
+import { SubSection, TextLink, PageTitle } from 'gg-components/Typography';
 import { LoadingIndicator } from 'gg-components/LoadingIndicator';
 import { NON_EMOJI_REGEX } from 'helpers/constants';
 import redirects from 'helpers/redirects';
@@ -25,7 +25,7 @@ export default class SiteMap extends React.Component {
       className,
       ...rest
     } = this.props;
-    const outerClassNameFinal = [getClassName('pages__container--centered')];
+    const outerClassNameFinal = [];
 
     if (className) {
       outerClassNameFinal.push(className);
@@ -35,7 +35,7 @@ export default class SiteMap extends React.Component {
       <div className={outerClassNameFinal.join(' ')} {...rest}>
         <Helmet title="SiteMap" />
         <LoadingIndicator loading={loadingBlogs} error={loadBlogsError}>
-          <div>
+          <PageTitle style={{ lineHeight: '1.5rem' }} name="Site map">
             <SubSection
               anchor={false}
               className={getClassName('pages__site-map-item')}
@@ -116,17 +116,15 @@ export default class SiteMap extends React.Component {
               className={getClassName('pages__site-map-item')}
               name="Work 📱"
             >
+              <TextLink href="/work">Overview</TextLink>
+              <br />
+              <TextLink href="/work/backpack">Backpack</TextLink>
+              <br />
               <TextLink href="/work/degree">Degree</TextLink>
               <br />
-              <TextLink href="/work">Portfolio</TextLink>
+              <TextLink href="/work/epicc">EPICC</TextLink>
               <br />
-              <TextLink href="/work/bpk-component-demo">
-                Backpack Demo Component
-              </TextLink>
-              <br />
-              <TextLink href="/apps/password-character-extractor">
-                Password Character Extractor
-              </TextLink>
+              <TextLink href="/work/side-projects">Side projects</TextLink>
             </SubSection>
             <SubSection
               anchor={false}
@@ -167,8 +165,6 @@ export default class SiteMap extends React.Component {
               <br />
               <TextLink href="/contact">Contact</TextLink>
               <br />
-              <TextLink href="/gts">Location tracking</TextLink>
-              <br />
               <TextLink href="/payments">Payments</TextLink>
               <br />
               <TextLink href="/monzoPots">Monzo savings tracking</TextLink>
@@ -190,8 +186,6 @@ export default class SiteMap extends React.Component {
                 SiteMap.xml{' '}
               </TextLink>
               <br />
-              <TextLink href="/418"> Error 418: I&apos;m a teapot</TextLink>
-              <br />
               <TextLink href="/page-not-found"> 404 Page</TextLink>
             </SubSection>
             <SubSection
@@ -199,10 +193,6 @@ export default class SiteMap extends React.Component {
               className={getClassName('pages__site-map-item')}
               name="API"
             >
-              <TextLink external href="/api/gts/loadLatest">
-                Tracking API endpoint{' '}
-              </TextLink>
-              <br />
               <TextLink external href="/greasemonkey/find_backpack_components">
                 /greasemonkey/find_backpack_components{' '}
               </TextLink>
@@ -259,6 +249,8 @@ export default class SiteMap extends React.Component {
             >
               <TextLink href="/admin/users">Users</TextLink>
               <br />
+              <TextLink href="/admin/analytics">Analytics</TextLink>
+              <br />
               <TextLink href="/monzoPots">Monzo</TextLink>
               <br />
               <TextLink href="/admin/notifications">Notifications</TextLink>
@@ -281,7 +273,7 @@ export default class SiteMap extends React.Component {
                 </div>
               ))}
             </SubSection>
-          </div>
+          </PageTitle>
         </LoadingIndicator>
       </div>
     );

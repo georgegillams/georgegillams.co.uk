@@ -22,7 +22,7 @@ const LoginFormSkeleton = props => {
 
   return (
     <div className={outerClassNameFinal.join(' ')} {...rest}>
-      <SectionSkeleton />
+      <SectionSkeleton style={{ marginTop: '3rem' }} />
       <SubSectionSkeleton />
       <SmallButtonSkeleton />
       <CardSkeleton />

@@ -85,7 +85,7 @@ class Degree extends React.Component {
   render() {
     const { className, ...rest } = this.props;
 
-    const outerClassNameFinal = [];
+    const outerClassNameFinal = [getClassName('pages__container--prose')];
 
     if (className) {
       outerClassNameFinal.push(className);

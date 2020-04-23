@@ -29,7 +29,6 @@ import StatusPage from 'containers/Status/Loadable';
 import DebugPage from 'containers/Debug/Loadable';
 import EmailVerificationPage from 'containers/EmailVerification/Loadable';
 import { Footer } from 'gg-components/Footer';
-import GtsPage from 'containers/GeorgeTrackingSystem/Loadable';
 import SupportPage from 'containers/Support/Loadable';
 import HomePage from 'containers/HomePageGG/Loadable';
 import LoginPage from 'containers/Login/Loadable';
@@ -44,12 +43,13 @@ import RequestStatusWrapper from 'containers/RequestStatusWrapper';
 import SignUpPage from 'containers/SignUpGG/Loadable';
 import SiteMap from 'containers/SiteMap/Loadable';
 import Work from 'containers/Work/Loadable';
+import WorkBackpackPage from 'containers/WorkBackpack/Loadable';
 import WorkDegreePage from 'containers/WorkDegree/Loadable';
-import BpkDemoPage from 'containers/BpkDemoPage/Loadable';
+import WorkEPICCPage from 'containers/WorkEPICC/Loadable';
+import WorkSideProjectsPage from 'containers/WorkSideProjects/Loadable';
 import Konami from 'containers/Konami';
 import MonzoPots from 'containers/MonzoPots/Loadable';
 import { GGRedirect } from 'gg-components/Redirect';
-import PasswordCharacterExtractor from 'containers/PasswordCharacterExtractor/Loadable';
 import { SITE_URL } from 'helpers/constants';
 import redirects from 'helpers/redirects';
 
@@ -110,6 +110,10 @@ const App = () => (
           <Route exact path="/admin" component={AdminPage} />
           <Route exact path="/photography" component={Photography} />
           <Route exact path="/work" component={Work} />
+          <Route path="/work/backpack" component={WorkBackpackPage} />
+          <Route path="/work/degree" component={WorkDegreePage} />
+          <Route path="/work/epicc" component={WorkEPICCPage} />
+          <Route path="/work/side-projects" component={WorkSideProjectsPage} />
           <Route path="/account" component={AccountPage} />
           <Route path="/support" component={SupportPage} />
           <Route path="/monzoPots" component={MonzoPots} />
@@ -124,10 +128,6 @@ const App = () => (
             component={AdminNotificationEdit}
           />
           <Route path="/admin/notifications" component={AdminNotifications} />
-          <Route
-            path="/apps/password-character-extractor"
-            component={PasswordCharacterExtractor}
-          />
           <Route
             exact
             path="/blog"
@@ -144,7 +144,6 @@ const App = () => (
           <Route path="/debug" component={DebugPage} />
           <Route path="/contact" component={ContactPage} />
           <Route path="/email-verification" component={EmailVerificationPage} />
-          <Route path="/gts" component={GtsPage} />
           <Route path="/login" component={LoginPage} />
           <Route path="/magic-login" component={MagicLoginPage} />
           <Route exact path="/payments" component={PaymentsPage} />
@@ -166,9 +165,7 @@ const App = () => (
             )}
           />
           <Route path="/travel/:id" component={BlogViewer} />
-          <Route path="/work/bpk-component-demo" component={BpkDemoPage} />
           <Route path="/ml/grammar" component={GrammarML} />
-          <Route path="/work/degree" component={WorkDegreePage} />
           <Route path="" component={NotFoundPage} />
         </Switch>
       </PageContainer>

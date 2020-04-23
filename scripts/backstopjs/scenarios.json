@@ -12,7 +12,10 @@
     "sign-up",
     "sitemap",
     "work",
-    { "url": "work/degree", "delay": 7200 }
+    "work/backpack",
+    { "url": "work/degree", "delay": 7200 },
+    "work/epicc",
+    "work/side-projects"
   ],
   "globallyHiddenSelectors": ["img"]
 }
