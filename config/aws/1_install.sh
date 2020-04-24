@@ -5,10 +5,10 @@ export NVM_DIR="$HOME/.nvm"
 nvm install 12.14.0
 
 sudo apt-get update
-sudo apt-get install redis
-sudo apt-get install nginx
-sudo apt-get install zip
-sudo apt-get install unzip
+sudo apt-get --yes --force-yes install redis
+sudo apt-get --yes --force-yes install nginx
+sudo apt-get --yes --force-yes install zip
+sudo apt-get --yes --force-yes install unzip
 npm install pm2 -g
 
 wget https://dl.eff.org/certbot-auto
