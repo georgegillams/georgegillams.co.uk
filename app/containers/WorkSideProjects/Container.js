@@ -67,7 +67,7 @@ export default class WorkSideProjects extends Component {
             <Button
               className={getClassName('pages__component--upper-margin')}
               hrefExternal
-              href="https://github.com/georgegillams/browser-scripts/"
+              href="https://github.com/georgegillams/browser-scripts/#browser-scripts"
             >
               Browser scripts →
             </Button>
