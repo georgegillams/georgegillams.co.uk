@@ -5,6 +5,7 @@ import { datumCreate } from '../actions/datum';
 import transporter from './nodemailer';
 
 import { SITE_URL, EMAIL_VERIFICATION_ENABLED } from 'helpers/constants';
+import lockPromise from 'utils/lock';
 
 const EMAIL_WIDTH = '600px';
 const FONT_SIZE_SM = '18px';
@@ -48,7 +49,9 @@ export function sendMagicLinkEmail(
     expiry: oneHoursTime,
     key: crypto.randomBytes(20).toString('hex'),
   };
-  datumCreate({ redisKey: 'magiclinks' }, { body: magicLink });
+  lockPromise('magiclinks', () =>
+    datumCreate({ redisKey: 'magiclinks' }, { body: magicLink }),
+  );
   let magicLinkUrl = `${SITE_URL}/magic-login?token=${magicLink.key}`;
   if (loginRedirect) {
     magicLinkUrl += `&redirect=${loginRedirect}`;
@@ -107,9 +110,11 @@ export function sendEmailVerificationEmail(
     expiry: oneDaysTime,
     key: crypto.randomBytes(20).toString('hex'),
   };
-  datumCreate(
-    { redisKey: 'emailVerificationCodes' },
-    { body: verificationLink },
+  lockPromise('emailVerificationCodes', () =>
+    datumCreate(
+      { redisKey: 'emailVerificationCodes' },
+      { body: verificationLink },
+    ),
   );
   const emailVerificationLink = `${SITE_URL}/email-verification?token=${verificationLink.key}`;
   // Send the magic link URL to the email address of the user

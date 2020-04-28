@@ -110,7 +110,7 @@ const REDIS_INFORMATION_STORES = [
 const REDIS_STORES = [
   ...REDIS_INFORMATION_STORES,
   'emailVerificationCodes',
-  'magicLinks',
+  'magiclinks',
   'sessions',
 ];
 

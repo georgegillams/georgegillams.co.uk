@@ -1,5 +1,6 @@
 import { datumCreate } from '../datum';
 import reqSecure from 'utils/reqSecure';
+import lockPromise from 'utils/lock';
 import stripePaymentsAllowedAttributes from './stripePaymentsAllowedAttributes';
 import stripeInstance from './stripe';
 import load from './load';
@@ -24,37 +25,41 @@ const createNewPaymentIntent = payment =>
 
 export default function createIntent(req) {
   const reqSecured = reqSecure(req, stripePaymentsAllowedAttributes);
-  return new Promise((resolve, reject) => {
-    load(reqSecured)
-      .then(payment => {
-        createNewPaymentIntent(payment)
-          .then(paymentIntent => {
-            datumCreate(
-              { redisKey: 'stripepayments' },
-              {
-                body: {
-                  paymentId: payment.id,
-                  paymentIntentId: paymentIntent.id,
-                  paymentIntentClientSecret: paymentIntent.client_secret,
-                },
-              },
-            )
-              .then(() => {
-                resolve({
-                  ...payment,
-                  paymentIntentClientSecret: paymentIntent.client_secret,
-                });
+  return lockPromise(
+    'stripepayments',
+    () =>
+      new Promise((resolve, reject) => {
+        load(reqSecured)
+          .then(payment => {
+            createNewPaymentIntent(payment)
+              .then(paymentIntent => {
+                datumCreate(
+                  { redisKey: 'stripepayments' },
+                  {
+                    body: {
+                      paymentId: payment.id,
+                      paymentIntentId: paymentIntent.id,
+                      paymentIntentClientSecret: paymentIntent.client_secret,
+                    },
+                  },
+                )
+                  .then(() => {
+                    resolve({
+                      ...payment,
+                      paymentIntentClientSecret: paymentIntent.client_secret,
+                    });
+                  })
+                  .catch(err => {
+                    reject(err);
+                  });
               })
               .catch(err => {
-                reject(err);
+                reject(formatStripeError(err));
               });
           })
           .catch(err => {
-            reject(formatStripeError(err));
+            reject(err);
           });
-      })
-      .catch(err => {
-        reject(err);
-      });
-  });
+      }),
+  );
 }
