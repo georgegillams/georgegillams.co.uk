@@ -6,7 +6,7 @@ if [ -f build.zip ]; then
   unzip build
   rm build.zip
   cd georgegillams.co.uk
-  git fetch && git reset --hard origin/master && git pull
+  sudo git fetch && sudo git reset --hard origin/master && sudo git pull
   sudo cp -R ./config/aws/errors /var/www/html/
   PUPPETEER_SKIP_CHROMIUM_DOWNLOAD=true npm ci
   pm2 stop all
