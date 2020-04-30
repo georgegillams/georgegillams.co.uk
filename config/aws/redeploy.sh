@@ -8,9 +8,12 @@ if [ -f build.zip ]; then
   cd georgegillams.co.uk
   sudo git fetch && sudo git reset --hard origin/master && sudo git pull
   sudo cp -R ./config/aws/errors /var/www/html/
+  echo "updating dependencies"
   PUPPETEER_SKIP_CHROMIUM_DOWNLOAD=true npm ci
+  echo "stopping pm2 jobs"
   pm2 stop all
   rm -rf build && mv ../build ./
+  echo "starting pm2 jobs"
   pm2 start all
 else
   echo "No new version to deploy"

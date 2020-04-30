@@ -46,7 +46,7 @@ jobs:
     - name: build AWS
       run: |
         if [ "${{ github.ref }}" == "refs/heads/master" ] && [ "${{ github.event_name }}" != "pull_request" ]; then
-          npm run build:aws
+          STRIPE_PUBLIC_API_KEY=${{ secrets.STRIPE_PUBLIC_API_KEY }} npm run build:aws
           zip -r build build
         fi;
 
