@@ -255,7 +255,7 @@ export default class SiteMap extends React.Component {
               <br />
               <TextLink href="/admin/notifications">Notifications</TextLink>
               <br />
-              <TextLink href="/admin/blogs">Blogs</TextLink>
+              <TextLink href="/admin/blog">Blogs</TextLink>
               <br />
               <TextLink href="/payments">Payments</TextLink>
             </SubSection>

@@ -1,6 +1,6 @@
 import { datumLoad, datumUpdate } from '../datum';
 
-import usersAllowedAttributes from './usersAllowedAttributes';
+import usersAllowedAttributes from './private/usersAllowedAttributes';
 
 import lockPromise from 'utils/lock';
 import authentication from 'utils/authentication';

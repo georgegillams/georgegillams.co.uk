@@ -22,7 +22,7 @@ export function* doLogin() {
   const credentials = yield select(makeSelectCredentials());
   const loginRedirect = yield select(makeSelectLoginRedirect());
   const requestURL = `${API_ENDPOINT}${
-    credentials.useMagicLink ? '/getmagiclink' : '/login'
+    credentials.useMagicLink ? '/magicLinks/load' : '/auth/login'
   }`;
 
   try {

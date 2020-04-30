@@ -1,6 +1,6 @@
 import { datumLoad } from '../datum';
 
-import usersAllowedAttributes from './usersAllowedAttributes';
+import usersAllowedAttributes from './private/usersAllowedAttributes';
 
 import { find, emailFingerprint } from 'utils/find';
 import reqSecure from 'utils/reqSecure';

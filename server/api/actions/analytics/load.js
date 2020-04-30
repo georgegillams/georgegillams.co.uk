@@ -1,6 +1,6 @@
 import { datumLoad } from '../datum';
 
-import analyticsAllowedAttributes from './analyticsAllowedAttributes';
+import analyticsAllowedAttributes from './private/analyticsAllowedAttributes';
 
 import authentication from 'utils/authentication';
 import reqSecure from 'utils/reqSecure';
