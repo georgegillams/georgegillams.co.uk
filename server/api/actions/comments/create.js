@@ -1,6 +1,6 @@
 import { datumCreate } from '../datum';
 
-import commentsAllowedAttributes from './commentsAllowedAttributes';
+import commentsAllowedAttributes from './private/commentsAllowedAttributes';
 
 import lockPromise from 'utils/lock';
 import authentication from 'utils/authentication';

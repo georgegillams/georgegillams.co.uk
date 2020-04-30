@@ -1,6 +1,6 @@
 import { datumCreate } from '../datum';
 
-import analyticsAllowedAttributes from './analyticsAllowedAttributes';
+import analyticsAllowedAttributes from './private/analyticsAllowedAttributes';
 
 import lockPromise from 'utils/lock';
 import authentication from 'utils/authentication';

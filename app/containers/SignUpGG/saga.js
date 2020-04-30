@@ -14,7 +14,7 @@ const signUpSuccessMessage = { type: 'success', message: 'Account created!' };
 
 export function* doSignUp() {
   const credentials = yield select(makeSelectCredentials());
-  const requestURL = `${API_ENDPOINT}/signUp`;
+  const requestURL = `${API_ENDPOINT}/users/signUp`;
 
   try {
     const signUpResult = yield call(request, requestURL, {

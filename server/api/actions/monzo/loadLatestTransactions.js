@@ -2,8 +2,8 @@ import { URLSearchParams } from 'url';
 
 import fetch from 'node-fetch';
 
-import { authMonzo, loadPotData, formatTransaction } from './helpers';
-import POT_CONFIGS from './potConfigs';
+import { authMonzo, loadPotData, formatTransaction } from './private/helpers';
+import POT_CONFIGS from './private/potConfigs';
 
 function loadLatestTransactions(req) {
   return new Promise((resolve, reject) => {

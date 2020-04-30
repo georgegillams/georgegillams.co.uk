@@ -21,7 +21,7 @@ const verificationEmailMessage = {
 };
 
 export function* doRequestVerificationEmail() {
-  const requestURL = `${API_ENDPOINT}/requestVerificationEmail`;
+  const requestURL = `${API_ENDPOINT}/auth/requestVerificationEmail`;
 
   const requestParams = {
     method: 'POST',
@@ -41,7 +41,7 @@ export function* doRequestVerificationEmail() {
 }
 
 export function* doLogout() {
-  const requestURL = `${API_ENDPOINT}/logout`;
+  const requestURL = `${API_ENDPOINT}/auth/logout`;
 
   const requestParams = {
     method: 'POST',

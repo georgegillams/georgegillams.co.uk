@@ -14,7 +14,7 @@ const loggedInMessage = { type: 'success', message: 'Logged in!' };
 
 export function* doLogin() {
   const token = yield select(makeSelectToken());
-  const requestURL = `${API_ENDPOINT}/loginmagiclink`;
+  const requestURL = `${API_ENDPOINT}/magicLinks/login`;
 
   try {
     const loginResult = yield call(request, requestURL, {

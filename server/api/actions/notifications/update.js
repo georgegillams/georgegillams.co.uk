@@ -1,6 +1,6 @@
 import { datumUpdate } from '../datum';
 
-import notificationsAllowedAttributes from './notificationsAllowedAttributes';
+import notificationsAllowedAttributes from './private/notificationsAllowedAttributes';
 
 import lockPromise from 'utils/lock';
 import authentication from 'utils/authentication';

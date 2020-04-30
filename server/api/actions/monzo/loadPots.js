@@ -1,5 +1,5 @@
-import { loadPotData, getMonthsElapsedPercentage } from './helpers';
-import POT_CONFIGS from './potConfigs';
+import { loadPotData, getMonthsElapsedPercentage } from './private/helpers';
+import POT_CONFIGS from './private/potConfigs';
 
 function loadPots(req) {
   return new Promise((resolve, reject) => {

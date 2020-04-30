@@ -15,7 +15,7 @@ const emailVerifiedMessage = { type: 'success', message: 'Email verified!' };
 
 export function* doVerification() {
   const token = yield select(makeSelectToken());
-  const requestURL = `${API_ENDPOINT}/verifyemail`;
+  const requestURL = `${API_ENDPOINT}/auth/verifyEmail`;
 
   const requestParams = {
     method: 'POST',

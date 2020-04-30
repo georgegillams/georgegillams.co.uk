@@ -10,7 +10,7 @@ const { reauthenticateRegisterSuccess, reauthenticateRegisterError } = actions;
 export function* doReauthentication() {
   yield put(setUserLoading());
 
-  const requestURL = `${API_ENDPOINT}/loadAuth`;
+  const requestURL = `${API_ENDPOINT}/auth/load`;
 
   try {
     const loginResult = yield call(request, requestURL, {
