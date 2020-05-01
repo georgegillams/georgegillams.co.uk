@@ -1,8 +1,8 @@
 # #!/bin/bash
 
 cd /home/ubuntu
-if [ -f build.zip ]; then
-  if [ ! -f buildInProgress ]; then
+if [ ! -f buildInProgress ]; then
+  if [ -f build.zip ]; then
     touch buildInProgress
     sleep 5 # wait to ensure the file transfer is complete
     unzip build
@@ -21,9 +21,8 @@ if [ -f build.zip ]; then
     echo "completing deploy"
     rm ../buildInProgress
   else
-    echo "Waiting for existing deploy to complete"
+    echo "No new version to deploy"
   fi
 else
-  echo "No new version to deploy"
+  echo "Waiting for existing deploy to complete"
 fi
-
