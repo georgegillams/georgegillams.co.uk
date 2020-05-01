@@ -2,8 +2,8 @@
 
 cd /home/ubuntu
 if [ -f build.zip ]; then
-  if [ ! -d build ]; then
-    mkdir -p build
+  if [ ! -f buildInProgress ]; then
+    touch buildInProgress
     sleep 5 # wait to ensure the file transfer is complete
     unzip build
     rm build.zip
@@ -17,6 +17,9 @@ if [ -f build.zip ]; then
     rm -rf build && mv ../build ./
     echo "starting pm2 jobs"
     pm2 start all
+    sleep 5
+    echo "completing deploy"
+    rm ../buildInProgress
   else
     echo "Waiting for existing deploy to complete"
   fi
