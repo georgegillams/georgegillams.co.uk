@@ -3,7 +3,7 @@ import { datumLoad, datumUpdate } from '../datum';
 import { STRING_REGEX, ID_REGEX, RESOURCE_NOT_FOUND } from 'helpers/constants';
 import redis from 'utils/redis';
 import { find } from 'utils/find';
-import { UNAUTHORISED_WRITE } from 'helpers/constants';
+import { PROJECT_NAME, UNAUTHORISED_WRITE } from 'helpers/constants';
 import authentication from 'utils/authentication';
 import setContentLastUpdatedTimestamp from 'utils/setContentLastUpdatedTimestamp';
 import reqSecure from 'utils/reqSecure';
@@ -33,7 +33,7 @@ export default function deleteEntity(req) {
                   );
                   resolve(
                     redis.lrem(
-                      collectionName,
+                      `${PROJECT_NAME}_${collectionName}`,
                       1,
                       JSON.stringify(existingValue),
                     ),

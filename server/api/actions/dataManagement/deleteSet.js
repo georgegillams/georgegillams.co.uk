@@ -3,7 +3,7 @@ import { datumLoad, datumUpdate } from '../datum';
 import { STRING_REGEX, ID_REGEX, RESOURCE_NOT_FOUND } from 'helpers/constants';
 import redis from 'utils/redis';
 import { find } from 'utils/find';
-import { UNAUTHORISED_WRITE } from 'helpers/constants';
+import { PROJECT_NAME, UNAUTHORISED_WRITE } from 'helpers/constants';
 import authentication from 'utils/authentication';
 import setContentLastUpdatedTimestamp from 'utils/setContentLastUpdatedTimestamp';
 import reqSecure from 'utils/reqSecure';
@@ -25,7 +25,7 @@ export default function deleteSet(req) {
               errorMessage: 'CollectionName must be provided',
             });
           } else {
-            resolve(redis.del(collectionName));
+            resolve(redis.del(`${PROJECT_NAME}_${collectionName}`));
             setContentLastUpdatedTimestamp();
           }
         } else {
