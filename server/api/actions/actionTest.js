@@ -1,5 +1,5 @@
 export default function load(req) {
   return new Promise((resolve, reject) => {
-    resolve({ testValue: '12' });
+    resolve({ testValue: '15' });
   });
 }
