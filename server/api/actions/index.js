@@ -1,4 +1,4 @@
-export test from './test';
+export test from './actionTest';
 export * as analytics from './analytics/index';
 export * as auth from './auth/index';
 export * as blogs from './blogs/index';
