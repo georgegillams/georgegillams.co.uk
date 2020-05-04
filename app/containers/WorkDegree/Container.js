@@ -5,6 +5,7 @@ import BpkImage, {
   withLoadingBehavior,
 } from 'bpk-component-image';
 import { cssModules } from 'bpk-react-utils'; // REGEX_REPLACED
+import MyDegreeImage from './degree_bitmoji.png';
 
 import STYLES from '../pages.scss';
 
@@ -104,7 +105,7 @@ class Degree extends React.Component {
             altText="My degree"
             width={1}
             height={1}
-            src="https://i.imgur.com/ecbmWmu.jpg"
+            src={MyDegreeImage}
           />
           <br />
           <FadingLazyLoadedImage
