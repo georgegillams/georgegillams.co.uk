@@ -6,7 +6,7 @@ import { cssModules } from 'bpk-react-utils';
 import { FormBuilder } from 'gg-components/FormBuilder';
 import STYLES from './forms.scss';
 
-import {Button} from 'gg-components/Button';
+import { Button } from 'gg-components/Button';
 import { TextLink } from 'gg-components/Typography';
 import { USERNAMES_ENABLED, UNAME_REGEX, EMAIL_REGEX } from 'helpers/constants';
 
@@ -41,12 +41,19 @@ class Login extends React.Component {
             name: 'Display name',
             validationRegex: UNAME_REGEX,
             show: USERNAMES_ENABLED,
+            inputProps: {
+              autofill: 'username',
+            },
           },
           {
             id: 'email',
             name: 'Email',
             validationRegex: EMAIL_REGEX,
             show: true,
+            inputProps: {
+              spellcheck: false,
+              autofill: 'email',
+            },
           },
         ]}
         {...rest}

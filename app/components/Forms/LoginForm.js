@@ -50,6 +50,10 @@ class Login extends React.Component {
             name: 'Email',
             validationRegex: EMAIL_REGEX,
             show: true,
+            inputProps: {
+              spellcheck: false,
+              autofill: 'email',
+            },
           },
           {
             id: 'password',
