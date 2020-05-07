@@ -4,6 +4,9 @@ import BpkImage, {
   withLazyLoading,
   withLoadingBehavior,
 } from 'bpk-component-image';
+import Image from 'components/Image';
+import VPNWarning_dark from './VPNWarning_dark.png';
+import VPNWarning_light from './VPNWarning_light.png';
 import { cssModules } from 'bpk-react-utils';
 
 import STYLES from '../pages.scss';
@@ -50,6 +53,14 @@ export default class WorkSideProjects extends Component {
               </TextLink>
               .
             </Paragraph>
+            <Image
+              className={getClassName('pages__image')}
+              altText={'VPN Zoom warning notification'}
+              width={462}
+              height={122}
+              lightSrc={VPNWarning_light}
+              darkSrc={VPNWarning_dark}
+            />
           </SubSection>
 
           <SubSection name="Browser scripts">
