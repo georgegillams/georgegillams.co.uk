@@ -51,7 +51,7 @@ class Login extends React.Component {
             validationRegex: EMAIL_REGEX,
             show: true,
             inputProps: {
-              spellcheck: false,
+              spellcheck: "false",
               autofill: 'email',
             },
           },
