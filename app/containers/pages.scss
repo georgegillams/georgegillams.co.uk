@@ -2,7 +2,7 @@
 // TODO REMOVE UNUSED CLASSES FROM HERE
 
 @import '~bpk-mixins';
-@import '~gg-components/Tokens/common';
+@import 'helpers/tokens';
 
 .pages {
   &__container {
