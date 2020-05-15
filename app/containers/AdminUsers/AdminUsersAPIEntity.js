@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { Fragment, useState } from 'react';
 import PropTypes from 'prop-types';
 
 import { APIEntity } from 'gg-components/Auth';
@@ -7,7 +7,7 @@ import { Card } from 'gg-components/Cards';
 import AdminUserEdit from 'containers/AdminUserEdit/Loadable';
 
 const AdminUsersAPIEntity = props => {
-  const { entity, onUserUpdateSuccess, children, ...rest } = props;
+  const { compact, entity, onUserUpdateSuccess, children, ...rest } = props;
   const [editing, setEditing] = useState(false);
 
   let backgroundColor = null; // red
@@ -22,10 +22,10 @@ const AdminUsersAPIEntity = props => {
     backgroundColor = '#FFB964'; // orange
   }
 
-  return (
-    <Card {...rest}>
+  const content = (
+    <Fragment>
       <APIEntity style={{ backgroundColor }} entity={entity} />
-      {editing && entity && (
+      {editing && entity && !compact && (
         <AdminUserEdit
           style={{
             width: '100%',
@@ -40,19 +40,29 @@ const AdminUsersAPIEntity = props => {
           }}
         />
       )}
-      <br />
-      <br />
-      <Button
-        large
-        onClick={() => {
-          setEditing(!editing);
-        }}
-      >
-        {editing ? 'Cancel edit' : 'Edit user'}
-      </Button>
-      {children && children}
-    </Card>
+      {!compact && (
+        <Fragment>
+          <br />
+          <br />
+          <Button
+            large
+            onClick={() => {
+              setEditing(!editing);
+            }}
+          >
+            {editing ? 'Cancel edit' : 'Edit user'}
+          </Button>
+        </Fragment>
+      )}
+      {!compact && children && children}
+    </Fragment>
   );
+
+  if (compact) {
+    return <Card {...rest}>{content}</Card>;
+  } else {
+    return <div {...rest}>{content}</div>;
+  }
 };
 
 AdminUsersAPIEntity.propTypes = {

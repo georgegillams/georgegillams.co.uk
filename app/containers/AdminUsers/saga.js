@@ -1,8 +1,13 @@
 import { selectors, actions, constants } from './redux-definitions';
 
-const { LOAD_USERS, REQUEST_MAGIC_LINK_FOR_USER } = constants;
-const { loadUsersRegisterSuccess, loadUsersRegisterError } = actions;
-const { makeSelectMagicLinkUser } = selectors;
+const { LOAD_USERS, REQUEST_MAGIC_LINK_FOR_USER, DELETE_USER } = constants;
+const {
+  loadUsersRegisterSuccess,
+  loadUsersRegisterError,
+  deleteUserRegisterError,
+  deleteUserRegisterSuccess,
+} = actions;
+const { makeSelectMagicLinkUser, makeSelectUserToDelete } = selectors;
 
 import { call, put, select, takeLatest } from 'redux-saga/effects';
 import { pushMessage } from 'containers/RequestStatusWrapper/actions';
@@ -25,6 +30,16 @@ const magicLinkErrorMessage = {
   message: 'Could not generate magic link.',
 };
 
+const deleteUserSuccessMessage = {
+  type: 'success',
+  message: 'User deleted.',
+};
+
+const deleteUserErrorMessage = {
+  type: 'error',
+  message: 'Could not delete user.',
+};
+
 const ticketSuccessMessage = {
   type: 'success',
   message: 'Ticket for user sent!',
@@ -34,9 +49,34 @@ const ticketErrorMessage = {
   message: 'Could not send ticket.',
 };
 
+export function* doDeleteUser() {
+  const userToDelete = yield select(makeSelectUserToDelete());
+  const deleteUrl = `${API_ENDPOINT}/users/remove`;
+
+  try {
+    const deleteRequest = yield call(request, deleteUrl, {
+      method: 'POST',
+      body: JSON.stringify(userToDelete),
+      headers: {
+        'Content-Type': 'application/json',
+      },
+    });
+    if (deleteRequest.error) {
+      yield put(deleteUserRegisterError(deleteRequest));
+      yield put(pushMessage(deleteUserErrorMessage));
+    } else {
+      yield put(deleteUserRegisterSuccess(deleteRequest));
+      yield put(pushMessage(deleteUserSuccessMessage));
+    }
+  } catch (err) {
+    yield put(pushMessage(COMMUNICATION_ERROR_MESSAGE));
+    yield put(deleteUserRegisterError(deleteRequest));
+  }
+}
+
 export function* doRequestMagicLink() {
   const user = yield select(makeSelectMagicLinkUser());
-  const magicLinkUrl = `${API_ENDPOINT}/getmagiclink`;
+  const magicLinkUrl = `${API_ENDPOINT}/magicLinks/load`;
 
   try {
     const magicLinkResult = yield call(request, magicLinkUrl, {
@@ -93,4 +133,5 @@ export function* doLoadUsers() {
 export default function* saga() {
   yield takeLatest(LOAD_USERS, doLoadUsers);
   yield takeLatest(REQUEST_MAGIC_LINK_FOR_USER, doRequestMagicLink);
+  yield takeLatest(DELETE_USER, doDeleteUser);
 }
