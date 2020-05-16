@@ -8,7 +8,7 @@ import STYLES from './forms.scss';
 
 import { Button } from 'gg-components/Button';
 
-const getClassName = cssModules(STYLES); // REGEX_REPLACED
+const getClassName = cssModules(STYLES);
 
 export default class BlogForm extends React.Component {
   static propTypes = {

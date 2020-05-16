@@ -1,79 +1,62 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Input } from 'gg-components/Input';
-import { cssModules } from 'gg-components/helpers/cssModules';
-
 import { FormBuilder } from 'gg-components/FormBuilder';
-import STYLES from './forms.scss';
+import { EMAIL_REGEX, PASSWORD_REGEX } from 'helpers/constants';
 
-import { Button } from 'gg-components/Button';
-import { TextLink } from 'gg-components/Typography';
-import {
-  STRING_REGEX,
-  INT_REGEX,
-  EMAIL_REGEX,
-  PASSWORD_REGEX,
-  DECIMAL_REGEX,
-  SORT_CODE_REGEX,
-  MONZOME_LINK_REGEX,
-} from 'helpers/constants';
+const LoginForm = props => {
+  const { className, credentials, onDataChanged, ...rest } = props;
 
-const getClassName = cssModules(STYLES); // REGEX_REPLACED
+  const classNameFinal = [];
+  if (className) classNameFinal.push(className);
 
-class Login extends React.Component {
-  static propTypes = {
-    credentials: PropTypes.object.isRequired,
-    onDataChanged: PropTypes.func.isRequired,
-    onSubmit: PropTypes.func.isRequired,
+  const onDataChangedCustom = newValue => {
+    if (newValue.email) {
+      newValue.email = newValue.email.split(' ').join('');
+    }
+    onDataChanged(newValue);
   };
 
-  constructor(props) {
-    super(props);
-
-    this.state = {};
-  }
-
-  render() {
-    const { className, credentials, ...rest } = this.props;
-
-    const classNameFinal = [];
-    if (className) classNameFinal.push(className);
-
-    return (
-      <FormBuilder
-        entity={credentials}
-        submitLabel={credentials.useMagicLink ? 'Request magic link' : 'Login'}
-        presubmitText="An email containing a login link will be sent to you. To access your account, follow the link in the email."
-        formFields={[
-          {
-            id: 'email',
-            name: 'Email',
-            validationRegex: EMAIL_REGEX,
-            show: true,
-            inputProps: {
-              spellcheck: "false",
-              autofill: 'email',
-            },
+  return (
+    <FormBuilder
+      onDataChanged={onDataChangedCustom}
+      entity={credentials}
+      submitLabel={credentials.useMagicLink ? 'Request magic link' : 'Login'}
+      presubmitText="An email containing a login link will be sent to you. To access your account, follow the link in the email."
+      formFields={[
+        {
+          id: 'email',
+          name: 'Email',
+          validationRegex: EMAIL_REGEX,
+          show: true,
+          inputProps: {
+            spellcheck: 'false',
+            autofill: 'email',
           },
-          {
-            id: 'password',
-            name: 'Password',
-            validationRegex: PASSWORD_REGEX,
-            showCondition: !credentials.useMagicLogin,
-            show: !credentials.useMagicLink,
-          },
-          {
-            id: 'useMagicLink',
-            name: 'Use magic link',
-            type: 'CHECKBOX',
-            validationRegex: null,
-            show: false,
-          },
-        ]}
-        {...rest}
-      />
-    );
-  }
-}
+        },
+        {
+          id: 'password',
+          name: 'Password',
+          validationRegex: PASSWORD_REGEX,
+          showCondition: !credentials.useMagicLogin,
+          show: !credentials.useMagicLink,
+        },
+        {
+          id: 'useMagicLink',
+          name: 'Use magic link',
+          type: 'CHECKBOX',
+          validationRegex: null,
+          show: false,
+        },
+      ]}
+      {...rest}
+    />
+  );
+};
 
-export default Login;
+LoginForm.propTypes = {
+  credentials: PropTypes.object.isRequired,
+  onDataChanged: PropTypes.func.isRequired,
+  onSubmit: PropTypes.func.isRequired,
+};
+
+export default LoginForm;

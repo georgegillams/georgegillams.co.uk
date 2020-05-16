@@ -5,11 +5,11 @@ import { cssModules } from 'gg-components/helpers/cssModules';
 import CommentInput from './CommentInput';
 import STYLES from './comments.scss';
 
-import {Button} from 'gg-components/Button';
+import { Button } from 'gg-components/Button';
 import { SubSection } from 'gg-components/Typography';
 import { BlogPreviewContent } from 'components/Typography';
 
-const getClassName = cssModules(STYLES); // REGEX_REPLACED
+const getClassName = cssModules(STYLES);
 
 class Comment extends React.Component {
   static propTypes = {
@@ -78,7 +78,7 @@ class Comment extends React.Component {
     const classNameFinal = [];
     if (className) classNameFinal.push(className);
     const textBoxClassNameFinal = [getClassName('comments__component')];
-    textBoxClassNameFinal.push(getClassName('comments__component__text-box'));
+    textBoxClassNameFinal.push(getClassName('comments__text-box'));
 
     const canEdit = user && (user.id === comment.authorId || user.admin);
     const contentFinal = `${comment.comment}${
