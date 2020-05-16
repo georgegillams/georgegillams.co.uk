@@ -2,7 +2,7 @@ import React from 'react';
 import appConfig from '../../../config/app-config';
 import { Helmet } from 'react-helmet';
 import { Switch, Route } from 'react-router-dom';
-import { cssModules } from 'bpk-react-utils';
+import { cssModules } from 'gg-components/helpers/cssModules';
 
 import STYLES from './style.scss';
 import HelperFunctions from 'helpers/HelperFunctions';

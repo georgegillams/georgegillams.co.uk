@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 import React from 'react';
 import bibtexParse from 'bibtex-parse-js';
-import { cssModules } from 'bpk-react-utils';
+import { cssModules } from 'gg-components/helpers/cssModules';
 
 import BlogPreviewSection from './BlogPreviewSection';
 import { Section, SubSection } from 'gg-components/Typography';

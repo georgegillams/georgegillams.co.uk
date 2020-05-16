@@ -5,7 +5,7 @@ import PropTypes from 'prop-types';
 import { Section } from 'gg-components/Typography';
 import { Select, Input } from 'gg-components/Input';
 import { Helmet } from 'react-helmet';
-import { cssModules } from 'bpk-react-utils';
+import { cssModules } from 'gg-components/helpers/cssModules';
 import queryString from 'query-string';
 
 import Skeleton from './Skeleton';

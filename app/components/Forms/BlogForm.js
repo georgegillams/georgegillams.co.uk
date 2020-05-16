@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Input, TextArea } from 'gg-components/Input';
 import { Checkbox } from 'gg-components/Checkbox';
-import { cssModules } from 'bpk-react-utils';
+import { cssModules } from 'gg-components/helpers/cssModules';
 
 import STYLES from './forms.scss';
 

@@ -7,7 +7,7 @@ import BpkImage, {
 import Image from 'components/Image';
 import VPNWarning_dark from './VPNWarning_dark.png';
 import VPNWarning_light from './VPNWarning_light.png';
-import { cssModules } from 'bpk-react-utils';
+import { cssModules } from 'gg-components/helpers/cssModules';
 
 import STYLES from '../pages.scss';
 
