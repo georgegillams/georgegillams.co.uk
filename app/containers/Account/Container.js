@@ -11,7 +11,12 @@ import Skeleton from './Skeleton';
 
 import { LoadingIndicator } from 'gg-components/LoadingIndicator';
 import { Button } from 'gg-components/Button';
-import { Paragraph, SubSection, TextLink, PageTitle } from 'gg-components/Typography';
+import {
+  Paragraph,
+  SubSection,
+  TextLink,
+  PageTitle,
+} from 'gg-components/Typography';
 import { CodeInline } from 'gg-components/Code';
 import { DebugObject, LoggedInOnly, LoadingCover } from 'gg-components/Auth';
 import { LoginForm } from 'components/Forms';
@@ -72,6 +77,20 @@ export default class Account extends React.Component {
               <Fragment>
                 <Button large onClick={requestVerificationEmail}>
                   Request new verification email
+                </Button>
+                <br />
+                <br />
+              </Fragment>
+            )}
+            {user && user.admin && (
+              <Fragment>
+                <Button large href="/admin">
+                  Admin
+                </Button>
+                <br />
+                <br />
+                <Button large href="/status">
+                  Site status
                 </Button>
                 <br />
                 <br />
