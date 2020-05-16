@@ -1,22 +1,11 @@
 import React, { Fragment } from 'react';
 import PropTypes from 'prop-types';
 import { Helmet } from 'react-helmet';
-import BpkImage, {
-  withLazyLoading,
-  withLoadingBehavior,
-} from 'bpk-component-image';
-import Input, { INPUT_TYPES, CLEAR_BUTTON_MODES } from 'bpk-component-input';
-import { cssModules } from 'bpk-react-utils';
-import { associate } from 'helpers/objects';
+import { cssModules } from 'gg-components/helpers/cssModules';
 import { FormBuilder } from 'gg-components/FormBuilder';
 
-import Skeleton from './Skeleton';
-
-import HelperFunctions from 'helpers/HelperFunctions';
-import { MoneyPot } from 'gg-components/MoneyPot';
 import { Button } from 'gg-components/Button';
 import { Paragraph, SubSection, TextLink, PageTitle } from 'gg-components/Typography';
-import { LoadingCover } from 'gg-components/Auth';
 import STYLES from 'containers/pages.scss';
 
 const getClassName = cssModules(STYLES); // REGEX_REPLACED

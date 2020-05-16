@@ -23,14 +23,14 @@ import querystring from 'querystring';
 
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import { wrapDisplayName } from 'bpk-react-utils';
+import wrapDisplayName from 'recompose/wrapDisplayName';
 import { BpkCodeBlock } from 'bpk-component-code';
 import EditIconSm from 'bpk-component-icon/sm/edit';
 import CloseIconSm from 'bpk-component-icon/sm/close';
 
 // import reactDocs from 'react-docgen';
 // import { browserHistory, PropTypes as RouterPropTypes } from 'react-router';
-import { cssModules } from 'bpk-react-utils';
+import { cssModules } from 'gg-components/helpers/cssModules';
 
 import requiredDefaultProps from './requiredDefaultProps.json';
 import DemoControl from './DemoControl';

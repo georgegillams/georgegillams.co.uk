@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 import React, { Component } from 'react';
-import { cssModules } from 'bpk-react-utils';
+import { cssModules } from 'gg-components/helpers/cssModules';
 
 import { Section } from 'gg-components/Typography';
 import BlogPreviewSubSection from './BlogPreviewSubSection';

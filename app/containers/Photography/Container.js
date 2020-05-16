@@ -13,7 +13,7 @@ import GraphicContent, {
   withGraphicContentBehaviour,
 } from 'components/GraphicContent';
 import Comments from 'containers/Comments';
-import { cssModules } from 'bpk-react-utils';
+import { cssModules } from 'gg-components/helpers/cssModules';
 
 const PAGE_ID = '857216';
 const documentIfExists = typeof window !== 'undefined' ? document : null;

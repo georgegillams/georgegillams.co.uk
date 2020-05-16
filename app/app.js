@@ -28,7 +28,7 @@ import '!file-loader?name=[name].[ext]!./images/favicon.ico';
 // Import CSS reset and Global Styles
 import STYLES from 'styles/theme.scss';
 
-import { cssModules } from 'bpk-react-utils'; // REGEX_REPLACED
+import { cssModules } from 'gg-components/helpers/cssModules'; // REGEX_REPLACED
 
 import configureStore from './configureStore';
 

@@ -2,7 +2,7 @@
 
 import React from 'react';
 import PropTypes from 'prop-types';
-import { wrapDisplayName } from 'bpk-react-utils';
+import wrapDisplayName from 'recompose/wrapDisplayName';
 import cookie from 'react-cookies';
 
 type WithGraphicContentBehaviourProps = {

@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Helmet } from 'react-helmet';
 import cookie from 'react-cookies';
-import { cssModules } from 'bpk-react-utils';
+import { cssModules } from 'gg-components/helpers/cssModules';
 
 import { Section, SubSection, TextLink } from 'gg-components/Typography';
 import { DebugObject } from 'gg-components/Auth';

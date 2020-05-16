@@ -1,5 +1,5 @@
 import React, { Fragment } from 'react';
-import { cssModules } from 'bpk-react-utils';
+import { cssModules } from 'gg-components/helpers/cssModules';
 
 import { SectionSkeleton, CardSkeleton } from 'gg-components/Skeletons';
 import STYLES from 'containers/pages.scss';
