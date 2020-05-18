@@ -11,7 +11,6 @@ import BlogsList from 'components/Blogs';
 import { ArticleCard, ARTICLE_CARD_LAYOUTS } from 'gg-components/Cards';
 import { Button } from 'gg-components/Button';
 import { CodeInline } from 'gg-components/Code';
-import Ticket from 'components/Ticket';
 import {
   DebugObject,
   APIEntity,

@@ -69,11 +69,6 @@ const CreateNotificationForm = props => {
   );
 };
 
-CreateNotificationForm.propTypes = {
-  centered: PropTypes.bool,
-  className: PropTypes.string,
-};
-
 CreateNotificationForm.defaultProps = {
   centered: false,
   className: null,
@@ -83,6 +78,8 @@ CreateNotificationForm.propTypes = {
   notification: PropTypes.object.isRequired,
   onDataChanged: PropTypes.func.isRequired,
   onSubmit: PropTypes.func.isRequired,
+  centered: PropTypes.bool,
+  className: PropTypes.string,
 };
 
 export default CreateNotificationForm;

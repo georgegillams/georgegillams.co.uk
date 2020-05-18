@@ -11,7 +11,6 @@ import { Button } from 'gg-components/Button';
 import { Section, SubSection, TextLink } from 'gg-components/Typography';
 import { FormBuilder } from 'gg-components/FormBuilder';
 import { CodeInline } from 'gg-components/Code';
-import Ticket from 'components/Ticket';
 import {
   DebugObject,
   APIEntity,
