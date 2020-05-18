@@ -3,111 +3,103 @@ import PropTypes from 'prop-types';
 import { FormBuilder } from 'gg-components/FormBuilder';
 import { STRING_REGEX, ID_REGEX, ANYTHING_REGEX } from 'helpers/constants';
 
-class CreateBlogForm extends React.Component {
-  static propTypes = {
-    blog: PropTypes.object.isRequired,
-    onDataChanged: PropTypes.func.isRequired,
-    onSubmit: PropTypes.func.isRequired,
-  };
+const CreateBlogForm = props => {
+  const { className, blog, ...rest } = props;
 
-  constructor(props) {
-    super(props);
+  const classNameFinal = [];
+  if (className) classNameFinal.push(className);
 
-    this.state = {};
-  }
+  return (
+    <FormBuilder
+      entity={blog}
+      formFields={[
+        {
+          id: 'requestedId',
+          name: 'Requested ID',
+          validationRegex: ID_REGEX,
+          show: true,
+        },
+        {
+          id: 'title',
+          name: 'Title',
+          validationRegex: ANYTHING_REGEX,
+          show: true,
+        },
+        {
+          id: 'tags',
+          name: 'Tags',
+          validationRegex: ANYTHING_REGEX,
+          show: true,
+        },
+        {
+          id: 'blogImage',
+          name: 'Blog image',
+          validationRegex: ANYTHING_REGEX,
+          show: true,
+        },
+        {
+          id: 'publishedTimestamp',
+          name: 'Published timestamp',
+          validationRegex: ANYTHING_REGEX,
+          show: true,
+        },
+        {
+          id: 'blogCardDate',
+          name: 'Blog card date override',
+          validationRegex: ANYTHING_REGEX,
+          show: true,
+        },
+        {
+          id: 'light',
+          name: 'Light',
+          validationRegex: null,
+          type: 'CHECKBOX',
+          show: true,
+        },
+        {
+          id: 'published',
+          name: 'Published',
+          validationRegex: null,
+          type: 'CHECKBOX',
+          show: true,
+        },
+        {
+          id: 'showInBlogsList',
+          name: 'Show in blogs list',
+          validationRegex: null,
+          type: 'CHECKBOX',
+          show: true,
+        },
+        {
+          id: 'showInTravelBlogsList',
+          name: 'Show in travel blogs list',
+          validationRegex: null,
+          type: 'CHECKBOX',
+          show: true,
+        },
+        {
+          id: 'blogImageBorderColor',
+          name: 'Blog image border color',
+          validationRegex: STRING_REGEX,
+          show: true,
+        },
+        {
+          id: 'content',
+          name: 'Content',
+          long: true,
+          validationRegex: ANYTHING_REGEX,
+          show: true,
+        },
+      ]}
+      {...rest}
+    />
+  );
+};
 
-  render() {
-    const { className, blog, ...rest } = this.props;
-
-    const classNameFinal = [];
-    if (className) classNameFinal.push(className);
-
-    return (
-      <FormBuilder
-        entity={blog}
-        formFields={[
-          {
-            id: 'requestedId',
-            name: 'Requested ID',
-            validationRegex: ID_REGEX,
-            show: true,
-          },
-          {
-            id: 'title',
-            name: 'Title',
-            validationRegex: ANYTHING_REGEX,
-            show: true,
-          },
-          {
-            id: 'tags',
-            name: 'Tags',
-            validationRegex: ANYTHING_REGEX,
-            show: true,
-          },
-          {
-            id: 'blogImage',
-            name: 'Blog image',
-            validationRegex: ANYTHING_REGEX,
-            show: true,
-          },
-          {
-            id: 'publishedTimestamp',
-            name: 'Published timestamp',
-            validationRegex: ANYTHING_REGEX,
-            show: true,
-          },
-          {
-            id: 'blogCardDate',
-            name: 'Blog card date override',
-            validationRegex: ANYTHING_REGEX,
-            show: true,
-          },
-          {
-            id: 'light',
-            name: 'Light',
-            validationRegex: null,
-            type: 'CHECKBOX',
-            show: true,
-          },
-          {
-            id: 'published',
-            name: 'Published',
-            validationRegex: null,
-            type: 'CHECKBOX',
-            show: true,
-          },
-          {
-            id: 'showInBlogsList',
-            name: 'Show in blogs list',
-            validationRegex: null,
-            type: 'CHECKBOX',
-            show: true,
-          },
-          {
-            id: 'showInTravelBlogsList',
-            name: 'Show in travel blogs list',
-            validationRegex: null,
-            type: 'CHECKBOX',
-            show: true,
-          },
-          {
-            id: 'blogImageBorderColor',
-            name: 'Blog image border color',
-            validationRegex: STRING_REGEX,
-            show: true,
-          },
-          {
-            id: 'content',
-            name: 'Content',
-            long: true,
-            validationRegex: ANYTHING_REGEX,
-            show: true,
-          },
-        ]}
-        {...rest}
-      />
-    );
-  }
-}
+CreateBlogForm.propTypes = {
+  blog: PropTypes.object.isRequired,
+  onDataChanged: PropTypes.func.isRequired,
+  onSubmit: PropTypes.func.isRequired,
+};
 
 export default CreateBlogForm;
