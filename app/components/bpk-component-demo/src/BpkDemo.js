@@ -32,7 +32,6 @@ import CloseIconSm from 'bpk-component-icon/sm/close';
 // import { browserHistory, PropTypes as RouterPropTypes } from 'react-router';
 import { cssModules } from 'gg-components/helpers/cssModules';
 
-import requiredDefaultProps from './requiredDefaultProps.json';
 import DemoControl from './DemoControl';
 import STYLES from './bpk-demo.scss';
 

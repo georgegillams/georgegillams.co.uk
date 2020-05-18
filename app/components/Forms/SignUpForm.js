@@ -1,65 +1,60 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Input } from 'gg-components/Input';
-import { cssModules } from 'gg-components/helpers/cssModules';
-
+import {
+  USERNAMES_ENABLED,
+  USERNAME_REGEX,
+  EMAIL_REGEX,
+} from 'helpers/constants';
 import { FormBuilder } from 'gg-components/FormBuilder';
-import STYLES from './forms.scss';
 
-import { Button } from 'gg-components/Button';
-import { TextLink } from 'gg-components/Typography';
-import { USERNAMES_ENABLED, UNAME_REGEX, EMAIL_REGEX } from 'helpers/constants';
+const SignUpForm = props => {
+  const { onDataChanged, className, credentials, submitLabel, ...rest } = props;
 
-const getClassName = cssModules(STYLES); // REGEX_REPLACED
+  const classNameFinal = [];
+  if (className) classNameFinal.push(className);
 
-class Login extends React.Component {
-  static propTypes = {
-    credentials: PropTypes.object.isRequired,
-    onDataChanged: PropTypes.func.isRequired,
-    onSubmit: PropTypes.func.isRequired,
+  const onDataChangedCustom = newValue => {
+    if (newValue.email) {
+      newValue.email = newValue.email.split(' ').join('');
+    }
+    onDataChanged(newValue);
   };
 
-  constructor(props) {
-    super(props);
-
-    this.state = {};
-  }
-
-  render() {
-    const { className, credentials, submitLabel, ...rest } = this.props;
-
-    const classNameFinal = [];
-    if (className) classNameFinal.push(className);
-
-    return (
-      <FormBuilder
-        entity={credentials}
-        submitLabel={submitLabel || 'Sign up'}
-        formFields={[
-          {
-            id: 'uname',
-            name: 'Display name',
-            validationRegex: UNAME_REGEX,
-            show: USERNAMES_ENABLED,
-            inputProps: {
-              autofill: 'username',
-            },
+  return (
+    <FormBuilder
+      onDataChanged={onDataChangedCustom}
+      entity={credentials}
+      submitLabel={submitLabel || 'Sign up'}
+      formFields={[
+        {
+          id: 'uname',
+          name: 'Display name',
+          validationRegex: USERNAME_REGEX,
+          show: USERNAMES_ENABLED,
+          inputProps: {
+            autofill: 'username',
           },
-          {
-            id: 'email',
-            name: 'Email',
-            validationRegex: EMAIL_REGEX,
-            show: true,
-            inputProps: {
-              spellcheck: "false",
-              autofill: 'email',
-            },
+        },
+        {
+          id: 'email',
+          name: 'Email',
+          validationRegex: EMAIL_REGEX,
+          show: true,
+          inputProps: {
+            spellcheck: 'false',
+            autofill: 'email',
           },
-        ]}
-        {...rest}
-      />
-    );
-  }
-}
+        },
+      ]}
+      {...rest}
+    />
+  );
+};
 
-export default Login;
+SignUpForm.propTypes = {
+  credentials: PropTypes.object.isRequired,
+  onDataChanged: PropTypes.func.isRequired,
+  onSubmit: PropTypes.func.isRequired,
+};
+
+export default SignUpForm;

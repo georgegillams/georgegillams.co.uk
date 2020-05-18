@@ -20,7 +20,7 @@ import {
 } from 'gg-components/Auth';
 import { CreateNotificationForm } from 'components/Forms';
 import STYLES from 'containers/pages.scss';
-import { EMAIL_REGEX, UNAME_REGEX } from 'helpers/constants';
+import { EMAIL_REGEX, USERNAME_REGEX } from 'helpers/constants';
 
 const getClassName = cssModules(STYLES);
 

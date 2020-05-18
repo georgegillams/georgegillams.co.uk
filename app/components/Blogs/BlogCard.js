@@ -3,14 +3,11 @@ import PropTypes from 'prop-types';
 import { cssModules } from 'gg-components/helpers/cssModules';
 
 import { ArticleCard } from 'gg-components/Cards';
-import {Tag} from 'gg-components/Tag';
+import { Tag } from 'gg-components/Tag';
 import { NON_EMOJI_REGEX } from 'helpers/constants';
-import STYLES from 'containers/pages.scss';
-
-const getClassName = cssModules(STYLES);
 
 const BlogCard = props => {
-  const { className, blog, linkPrefix, ...rest } = props;
+  const { blog, linkPrefix, ...rest } = props;
 
   return (
     <ArticleCard
@@ -20,7 +17,6 @@ const BlogCard = props => {
           : new Date(1000 * blog.publishedTimestamp).getDate()
       }
       month={new Date(1000 * blog.publishedTimestamp).getMonth()}
-      className={getClassName('pages__card')}
       fillImageSrc={blog.blogHeroImage}
       imageSrc={blog.blogImage}
       linkUrl={`${linkPrefix}/${blog.id}`}
@@ -39,9 +35,7 @@ const BlogCard = props => {
       {blog &&
         blog.tags &&
         !blog.tags.split &&
-        blog.tags.map(tag => (
-          <Tag className={getClassName('tag-filter__tag')} type={tag} />
-        ))}
+        blog.tags.map(tag => <Tag type={tag} />)}
     </ArticleCard>
   );
 };
@@ -50,11 +44,6 @@ BlogCard.propTypes = {
   // eslint-disable-next-line react/forbid-prop-types
   blog: PropTypes.object.isRequired,
   linkPrefix: PropTypes.string.isRequired,
-  className: PropTypes.string,
-};
-
-BlogCard.defaultProps = {
-  className: null,
 };
 
 export default BlogCard;

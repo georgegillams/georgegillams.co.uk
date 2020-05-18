@@ -20,7 +20,7 @@ import {
 } from 'gg-components/Auth';
 import { CreateUsertoeditForm } from 'components/Forms';
 import STYLES from 'containers/pages.scss';
-import { EMAIL_REGEX, UNAME_REGEX } from 'helpers/constants';
+import { EMAIL_REGEX, USERNAME_REGEX } from 'helpers/constants';
 
 const getClassName = cssModules(STYLES);
 
@@ -83,13 +83,13 @@ export default class AdminUsertoeditEdit extends React.Component {
                 {
                   id: 'name',
                   name: 'Name',
-                  validationRegex: UNAME_REGEX,
+                  validationRegex: USERNAME_REGEX,
                   show: true,
                 },
                 {
                   id: 'uname',
                   name: 'Display name',
-                  validationRegex: UNAME_REGEX,
+                  validationRegex: USERNAME_REGEX,
                   show: true,
                 },
                 {

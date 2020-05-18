@@ -1,13 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { cssModules } from 'gg-components/helpers/cssModules';
-
 import { FormBuilder } from 'gg-components/FormBuilder';
-import STYLES from './forms.scss';
-
 import { STRING_REGEX, ID_REGEX, ANYTHING_REGEX } from 'helpers/constants';
-
-const getClassName = cssModules(STYLES); // REGEX_REPLACED
 
 class CreateBlogForm extends React.Component {
   static propTypes = {

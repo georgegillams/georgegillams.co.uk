@@ -7,7 +7,7 @@ import STYLES from './comments.scss';
 import { FormBuilder } from 'gg-components/FormBuilder';
 import { CodeInline } from 'gg-components/Code';
 import { SubSection } from 'gg-components/Typography';
-import { MD_PARTIAL_REGEX, UNAME_REGEX } from 'helpers/constants';
+import { MD_PARTIAL_REGEX, USERNAME_REGEX } from 'helpers/constants';
 
 const getClassName = cssModules(STYLES); // REGEX_REPLACED
 
@@ -69,7 +69,7 @@ class CommentInput extends React.Component {
               {
                 id: 'displayName',
                 name: 'Display name',
-                validationRegex: user ? /.*/gi : UNAME_REGEX,
+                validationRegex: user ? /.*/gi : USERNAME_REGEX,
                 show: true,
                 disabled: !!user,
               },
