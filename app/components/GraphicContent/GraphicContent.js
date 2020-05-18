@@ -7,7 +7,7 @@ import STYLES from './graphic-content.scss';
 
 import { Button } from 'gg-components/Button';
 
-const getClassName = cssModules(STYLES); // REGEX_REPLACED
+const getClassName = cssModules(STYLES);
 
 const GraphicContent = props => {
   const {
@@ -30,7 +30,7 @@ const GraphicContent = props => {
   ];
   if (!graphicContentInView) {
     contentContainerClassNames.push([
-      'graphic-content__content-container--hidden',
+      getClassName('graphic-content__content-container--hidden'),
     ]);
   }
 
