@@ -36,9 +36,10 @@ const SplitDetailView = props => {
 };
 
 SplitDetailView.propTypes = {
+  closeLink: PropTypes.string.isRequired,
   listView: PropTypes.node.isRequired,
-  detailView: PropTypes.node.isRequired,
   className: PropTypes.string,
+  detailView: PropTypes.node,
 };
 
 SplitDetailView.defaultProps = {

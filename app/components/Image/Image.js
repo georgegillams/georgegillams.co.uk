@@ -1,4 +1,5 @@
 import React, { Fragment } from 'react';
+import PropTypes from 'prop-types';
 import { cssModules } from 'gg-components/helpers/cssModules';
 import BpkImage, {
   withLazyLoading,
@@ -31,6 +32,16 @@ const Image = props => {
       />
     </Fragment>
   );
+};
+
+Image.propTypes = {
+  className: PropTypes.string,
+  darkSrc: PropTypes.string.isRequired,
+  lightSrc: PropTypes.string.isRequired,
+};
+
+Image.defaultProps = {
+  className: null,
 };
 
 export default Image;
