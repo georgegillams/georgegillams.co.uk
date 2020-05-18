@@ -1,6 +1,5 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { cssModules } from 'gg-components/helpers/cssModules';
 
 import { ArticleCard } from 'gg-components/Cards';
 import { Tag } from 'gg-components/Tag';

@@ -1,10 +1,8 @@
-@import '~bpk-mixins';
+@import 'helpers/tokens';
 
 .graphic-content {
   &__outer-container {
     position: relative;
-    // display: flex;
-    // width: fit-content;
     min-width: 15rem;
     height: auto;
     min-height: 10rem;
@@ -14,10 +12,10 @@
 
   &__content-container {
     width: 100%;
-    transition: all .4s ease-in-out;
+    transition: all 0.4s ease-in-out;
 
     &--hidden {
-      opacity: .01;
+      opacity: 0.2;
       filter: blur(10px);
     }
   }

@@ -1,4 +1,4 @@
-import React, { Fragment, Component } from 'react';
+import React, { Fragment } from 'react';
 import { cssModules } from 'gg-components/helpers/cssModules';
 import BpkImage, {
   withLazyLoading,
@@ -14,23 +14,23 @@ const FadingLazyLoadedImage = withLoadingBehavior(
   withLazyLoading(BpkImage, documentIfExists),
 );
 
-export default class Image extends Component {
-  render() {
-    const { className, lightSrc, darkSrc, ...rest } = this.props;
+const Image = props => {
+  const { className, lightSrc, darkSrc, ...rest } = props;
 
-    return (
-      <Fragment>
-        <FadingLazyLoadedImage
-          className={getClassName(`image`, 'image--light', className)}
-          src={lightSrc}
-          {...rest}
-        />
-        <FadingLazyLoadedImage
-          className={getClassName(`image`, 'image--dark', className)}
-          src={darkSrc}
-          {...rest}
-        />
-      </Fragment>
-    );
-  }
-}
+  return (
+    <Fragment>
+      <FadingLazyLoadedImage
+        className={getClassName(`image`, 'image--light', className)}
+        src={lightSrc}
+        {...rest}
+      />
+      <FadingLazyLoadedImage
+        className={getClassName(`image`, 'image--dark', className)}
+        src={darkSrc}
+        {...rest}
+      />
+    </Fragment>
+  );
+};
+
+export default Image;
