@@ -52,7 +52,6 @@ export default class StripePayments extends React.Component {
       makePaymentRegisterError,
 
       className,
-      ...rest
     } = this.props;
 
     const outerClassNameFinal = [getClassName('pages__container')];
@@ -75,7 +74,7 @@ export default class StripePayments extends React.Component {
     const paymentIsComplete = payment && payment.outstandingBalance <= 0;
 
     const page = (
-      <PageTitle name={name} {...rest}>
+      <PageTitle name={name}>
         {paymentIsComplete && (
           <Fragment>
             <Paragraph>This payment has been completed.</Paragraph>

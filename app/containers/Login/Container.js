@@ -42,7 +42,6 @@ export default class Login extends React.Component {
       logInSuccess,
       logInError,
       className,
-      ...rest
     } = this.props;
     const outerClassNameFinal = [];
 
@@ -51,7 +50,7 @@ export default class Login extends React.Component {
     }
 
     const page = (
-      <div className={outerClassNameFinal.join(' ')} {...rest}>
+      <div className={outerClassNameFinal.join(' ')}>
         <LoggedOutOnly user={user}>
           <PageTitle name="Login">
             <LoginForm

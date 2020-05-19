@@ -20,10 +20,10 @@ import {
 import STYLES from 'containers/pages.scss';
 
 const AnalyticEntity = props => {
-  const { entity, children, ...rest } = props;
+  const { entity, children } = props;
 
   return (
-    <Card {...rest}>
+    <Card>
       <PageTitle name={entity.url}>
         {entity.id && (
           <Fragment>

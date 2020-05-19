@@ -7,7 +7,7 @@ import STYLES from 'containers/pages.scss';
 const getClassName = cssModules(STYLES);
 
 const AccountSkeleton = props => {
-  const { className, ...rest } = props; // eslint-disable-line no-shadow
+  const { className } = props;
 
   const outerClassNameFinal = [getClassName('pages__container--centered')];
 
@@ -16,7 +16,7 @@ const AccountSkeleton = props => {
   }
 
   return (
-    <div className={outerClassNameFinal.join(' ')} {...rest}>
+    <div className={outerClassNameFinal.join(' ')}>
       <SectionSkeleton style={{ marginTop: '3rem' }} />
       <CardSkeleton style={{ height: '13rem' }} />
       <CardSkeleton style={{ height: '30rem', maxWidth: '40rem' }} />

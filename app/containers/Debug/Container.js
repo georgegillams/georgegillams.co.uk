@@ -11,7 +11,7 @@ import { Paragraph, PageTitle } from 'gg-components/Typography';
 const getClassName = cssModules(STYLES);
 
 const StatusControl = props => {
-  const { name, storageKey, ...rest } = props;
+  const { name, storageKey } = props;
   const [isEnabled, setIsEnabled] = useState(false);
   useEffect(() => {
     const isEnabled = window.localStorage.getItem(storageKey) === 'true';
@@ -30,7 +30,6 @@ const StatusControl = props => {
       onChange={event => {
         onValueChanged(event.target.checked);
       }}
-      {...rest}
     />
   );
 };

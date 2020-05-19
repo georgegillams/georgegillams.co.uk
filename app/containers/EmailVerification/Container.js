@@ -47,7 +47,6 @@ export default class EmailVerification extends React.Component {
       verifySuccess,
       verifyError,
       className,
-      ...rest
     } = this.props;
     const outerClassNameFinal = [];
 
@@ -66,7 +65,7 @@ export default class EmailVerification extends React.Component {
     }
 
     return (
-      <div className={outerClassNameFinal.join(' ')} {...rest}>
+      <div className={outerClassNameFinal.join(' ')}>
         <Helmet title="Email verification" />
         <CookiesOnly
           cookiesAccepted={cookiesAllowed}

@@ -3,7 +3,12 @@ import PropTypes from 'prop-types';
 import { Helmet } from 'react-helmet';
 import { cssModules } from 'gg-components/helpers/cssModules';
 
-import { Paragraph, SubSection, TextLink, PageTitle } from 'gg-components/Typography';
+import {
+  Paragraph,
+  SubSection,
+  TextLink,
+  PageTitle,
+} from 'gg-components/Typography';
 import { CodeInline } from 'gg-components/Code';
 import { CopyButton } from 'gg-components/Button';
 import { GG_EMAIL } from 'helpers/constants';
@@ -14,7 +19,7 @@ const getClassName = cssModules(STYLES);
 
 export default class PaymentsPage extends React.Component {
   render() {
-    const { className, ...rest } = this.props;
+    const { className } = this.props;
     const classNames = [];
 
     if (className) {
@@ -22,7 +27,7 @@ export default class PaymentsPage extends React.Component {
     }
 
     return (
-      <div className={classNames.join(' ')} {...rest}>
+      <div className={classNames.join(' ')}>
         <Helmet title="Payments" />
         <PageTitle name="Send me money">
           <PaymentForm />

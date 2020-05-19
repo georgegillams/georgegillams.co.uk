@@ -43,7 +43,6 @@ export default class PaymentForm extends React.Component {
       deletePaymentError,
 
       className,
-      ...rest
     } = this.props;
 
     const outerClassNameFinal = [];
@@ -63,7 +62,7 @@ export default class PaymentForm extends React.Component {
     }
 
     return (
-      <div className={outerClassNameFinal.join(' ')} {...rest}>
+      <div className={outerClassNameFinal.join(' ')}>
         <FormBuilder
           presubmitText="Your email will be used only to send a payment receipt."
           disabled={addPaymentLoading}

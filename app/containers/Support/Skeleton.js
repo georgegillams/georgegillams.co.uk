@@ -7,7 +7,7 @@ import STYLES from 'containers/pages.scss';
 const getClassName = cssModules(STYLES);
 
 const AccountSkeleton = props => {
-  const { className, ...rest } = props; // eslint-disable-line no-shadow
+  const { className } = props;
 
   const outerClassNameFinal = [];
 

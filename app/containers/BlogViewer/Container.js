@@ -31,7 +31,6 @@ export default class BlogViewer extends React.Component {
       loadBlog,
       linkPrefix,
       className,
-      ...rest
     } = this.props;
     const outerClassNameFinal = [getClassName('pages__container--prose')];
 
@@ -42,7 +41,7 @@ export default class BlogViewer extends React.Component {
     const blog = blogs && blogs[blogId];
 
     return (
-      <div className={outerClassNameFinal.join(' ')} {...rest}>
+      <div className={outerClassNameFinal.join(' ')}>
         <Helmet title="Blog" />
         <LoadingCover
           loadingSkeleton={Skeleton}

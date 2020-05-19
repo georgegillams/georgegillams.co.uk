@@ -84,7 +84,7 @@ class Degree extends React.Component {
   };
 
   render() {
-    const { className, ...rest } = this.props;
+    const { className } = this.props;
 
     const outerClassNameFinal = [getClassName('pages__container--prose')];
 
@@ -93,7 +93,7 @@ class Degree extends React.Component {
     }
 
     return (
-      <div className={outerClassNameFinal.join(' ')} {...rest}>
+      <div className={outerClassNameFinal.join(' ')}>
         <Helmet title="My degree" />
         <PageTitle
           link={{ to: '/work', text: 'Work' }}

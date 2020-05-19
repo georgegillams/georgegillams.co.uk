@@ -72,7 +72,6 @@ export default class AdminAnalytics extends React.Component {
       creatingAnalytic,
       deleteAnalytic,
       deletingAnalytic,
-      ...rest
     } = this.props;
     const outerClassNameFinal = [];
 
@@ -116,7 +115,7 @@ export default class AdminAnalytics extends React.Component {
       !!filteredAnalytics.map;
 
     const page = (
-      <div className={outerClassNameFinal.join(' ')} {...rest}>
+      <div className={outerClassNameFinal.join(' ')}>
         <AdminOnly
           user={user}
           setLoginRedirect={() => setLoginRedirect('admin/analytic')}

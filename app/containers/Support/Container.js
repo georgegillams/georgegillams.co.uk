@@ -5,7 +5,12 @@ import { cssModules } from 'gg-components/helpers/cssModules';
 import { FormBuilder } from 'gg-components/FormBuilder';
 
 import { Button } from 'gg-components/Button';
-import { Paragraph, SubSection, TextLink, PageTitle } from 'gg-components/Typography';
+import {
+  Paragraph,
+  SubSection,
+  TextLink,
+  PageTitle,
+} from 'gg-components/Typography';
 import STYLES from 'containers/pages.scss';
 
 const getClassName = cssModules(STYLES); // REGEX_REPLACED
@@ -47,7 +52,6 @@ export default class Support extends React.Component {
       deleteLinkSuccess,
       deleteLinkError,
       className,
-      ...rest
     } = this.props;
 
     const outerClassNameFinal = [];
@@ -61,7 +65,7 @@ export default class Support extends React.Component {
     const isAdmin = user && user.admin;
 
     return (
-      <div className={outerClassNameFinal.join(' ')} {...rest}>
+      <div className={outerClassNameFinal.join(' ')}>
         <Helmet title="Support" />
         <PageTitle name="Support">
           <Button

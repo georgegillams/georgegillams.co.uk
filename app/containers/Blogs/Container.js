@@ -50,7 +50,6 @@ export default class BlogsPage extends React.Component {
       filter,
       linkPrefix,
       className,
-      ...rest
     } = this.props;
     const outerClassNameFinal = [];
 
@@ -61,7 +60,7 @@ export default class BlogsPage extends React.Component {
     const textColor = this.getTextColor();
 
     return (
-      <div className={outerClassNameFinal.join(' ')} {...rest}>
+      <div className={outerClassNameFinal.join(' ')}>
         <DebugObject
           debugTitle="Blogs"
           debugObject={{

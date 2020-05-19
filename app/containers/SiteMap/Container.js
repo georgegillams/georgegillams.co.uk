@@ -23,7 +23,6 @@ export default class SiteMap extends React.Component {
       blogs,
       loadBlogs,
       className,
-      ...rest
     } = this.props;
     const outerClassNameFinal = [];
 
@@ -32,7 +31,7 @@ export default class SiteMap extends React.Component {
     }
 
     return (
-      <div className={outerClassNameFinal.join(' ')} {...rest}>
+      <div className={outerClassNameFinal.join(' ')}>
         <Helmet title="SiteMap" />
         <LoadingIndicator loading={loadingBlogs} error={loadBlogsError}>
           <PageTitle style={{ lineHeight: '1.5rem' }} name="Site map">

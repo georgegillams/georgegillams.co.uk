@@ -53,7 +53,6 @@ export default class AdminNotifications extends React.Component {
       creatingNotification,
       deleteNotification,
       deletingNotification,
-      ...rest
     } = this.props;
     const outerClassNameFinal = [];
 
@@ -62,7 +61,7 @@ export default class AdminNotifications extends React.Component {
     }
 
     const page = (
-      <div className={outerClassNameFinal.join(' ')} {...rest}>
+      <div className={outerClassNameFinal.join(' ')}>
         <AdminOnly
           user={user}
           setLoginRedirect={() => setLoginRedirect('admin/notification')}

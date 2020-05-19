@@ -32,8 +32,8 @@ export default class Authenticator extends React.Component {
       reauthenticationError,
       sessionKeyChanged,
       className,
-      ...rest
     } = this.props;
+
     const outerClassNameFinal = [];
 
     if (className) {
@@ -41,7 +41,7 @@ export default class Authenticator extends React.Component {
     }
 
     return (
-      <div className={outerClassNameFinal.join(' ')} {...rest}>
+      <div className={outerClassNameFinal.join(' ')}>
         <DebugObject
           debugTitle="Authenticator"
           debugObject={{

@@ -21,11 +21,11 @@ import {
 import STYLES from 'containers/pages.scss';
 
 const NotificationEntity = props => {
-  const { entity, onNotificationUpdateSuccess, children, ...rest } = props;
+  const { entity, onNotificationUpdateSuccess, children } = props;
   const [editing, setEditing] = useState(false);
 
   return (
-    <Card {...rest}>
+    <Card>
       <APIEntity name="more" entityType="Notification" entity={entity} />
       <NotificationComp
         style={{ width: '100%' }}
