@@ -22,10 +22,11 @@ export default class NotificationCenter extends React.Component {
       loadNotifications,
       notifications,
       loadingNotifications,
+      loadNotificationsSuccess,
       loadNotificationsError,
       className,
-      ...rest
     } = this.props;
+
     const outerClassNameFinal = [];
 
     if (className) {
@@ -43,7 +44,7 @@ export default class NotificationCenter extends React.Component {
     }
 
     return (
-      <div className={outerClassNameFinal.join(' ')} {...rest}>
+      <div className={outerClassNameFinal.join(' ')}>
         <NotificationCollection notifications={notifications} />
         <DebugObject
           debugTitle="Notifications"

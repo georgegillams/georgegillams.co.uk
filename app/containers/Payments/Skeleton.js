@@ -12,10 +12,8 @@ import STYLES from 'containers/pages.scss';
 const getClassName = cssModules(STYLES);
 
 const PaymentsSkeleton = props => {
-  const { ...rest } = props;
-
   return (
-    <div {...rest}>
+    <div>
       <SectionSkeleton style={{ marginTop: '3rem' }} />
       <InputSkeleton style={{ marginTop: '3.4rem' }} />
       <InputSkeleton style={{ marginTop: '2.4rem' }} />

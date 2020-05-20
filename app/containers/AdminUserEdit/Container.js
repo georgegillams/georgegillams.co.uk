@@ -58,7 +58,6 @@ export default class AdminUsertoeditEdit extends React.Component {
       updatingUsertoedit,
       updateUsertoeditSuccess,
       updateUsertoeditError,
-      ...rest
     } = this.props;
     const outerClassNameFinal = [];
 
@@ -70,7 +69,7 @@ export default class AdminUsertoeditEdit extends React.Component {
       users && users.filter(u => u.id === this.state.usertoeditId)[0];
 
     const page = (
-      <div className={outerClassNameFinal.join(' ')} {...rest}>
+      <div className={outerClassNameFinal.join(' ')}>
         <AdminOnly
           user={user}
           setLoginRedirect={() => setLoginRedirect('admin/users')}

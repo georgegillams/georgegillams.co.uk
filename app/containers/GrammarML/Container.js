@@ -10,10 +10,7 @@ import { Card } from 'gg-components/Cards';
 import { Section, SubSection, PageTitle } from 'gg-components/Typography';
 import { FormBuilder } from 'gg-components/FormBuilder';
 import { ANYTHING_REGEX } from 'helpers/constants';
-import {
-  DebugObject,
-  LoadingCover,
-} from 'gg-components/Auth';
+import { DebugObject, LoadingCover } from 'gg-components/Auth';
 import STYLES from 'containers/pages.scss';
 
 const getClassName = cssModules(STYLES);
@@ -74,7 +71,6 @@ export default class GrammarML extends React.Component {
       testingPerformance,
       testPerformanceSuccess,
       testPerformanceError,
-      ...rest
     } = this.props;
     const outerClassNameFinal = [];
 
@@ -83,7 +79,7 @@ export default class GrammarML extends React.Component {
     }
 
     const page = (
-      <div className={outerClassNameFinal.join(' ')} {...rest}>
+      <div className={outerClassNameFinal.join(' ')}>
         <PageTitle name="Machine learning - grammar">
           <SubSection name="Current limitations">
             Can only detect errors based on usage of &quot;there&quot; or

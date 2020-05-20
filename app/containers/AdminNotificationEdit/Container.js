@@ -58,7 +58,6 @@ export default class AdminNotificationEdit extends React.Component {
       updatingNotification,
       updateNotificationSuccess,
       updateNotificationError,
-      ...rest
     } = this.props;
     const outerClassNameFinal = [];
 
@@ -67,7 +66,7 @@ export default class AdminNotificationEdit extends React.Component {
     }
 
     const page = (
-      <div className={outerClassNameFinal.join(' ')} {...rest}>
+      <div className={outerClassNameFinal.join(' ')}>
         <AdminOnly
           user={user}
           setLoginRedirect={() => setLoginRedirect('admin/notification')}

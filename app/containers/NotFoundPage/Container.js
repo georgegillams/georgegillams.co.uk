@@ -4,20 +4,25 @@ import { cssModules } from 'gg-components/helpers/cssModules';
 
 import STYLES from './not-found.scss';
 
-import { Paragraph, SubSection, TextLink, PageTitle } from 'gg-components/Typography';
+import {
+  Paragraph,
+  SubSection,
+  TextLink,
+  PageTitle,
+} from 'gg-components/Typography';
 
 const getClassName = cssModules(STYLES); // REGEX_REPLACED
 
 class NotFoundPage extends Component {
   render() {
-    const { className, ...rest } = this.props;
+    const { className } = this.props;
     const classNameFinal = [getClassName('not-found__container')];
     if (className) {
       classNameFinal.push(className);
     }
 
     return (
-      <main className={classNameFinal.join(' ')} {...rest}>
+      <main className={classNameFinal.join(' ')}>
         <PageTitle
           className={getClassName('not-found__container')}
           name="Oops."

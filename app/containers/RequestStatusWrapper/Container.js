@@ -23,7 +23,7 @@ export default class RequestStatusWrapper extends React.Component {
   };
 
   render() {
-    const { messages, ...rest } = this.props;
+    const { messages } = this.props;
 
     if (PROJECT_UNDER_TEST) {
       return null;

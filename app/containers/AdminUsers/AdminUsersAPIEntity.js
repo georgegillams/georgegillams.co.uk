@@ -7,7 +7,7 @@ import { Card } from 'gg-components/Cards';
 import AdminUserEdit from 'containers/AdminUserEdit/Loadable';
 
 const AdminUsersAPIEntity = props => {
-  const { compact, entity, onUserUpdateSuccess, children, ...rest } = props;
+  const { compact, entity, onUserUpdateSuccess, children } = props;
   const [editing, setEditing] = useState(false);
 
   let backgroundColor = null; // red
@@ -59,9 +59,9 @@ const AdminUsersAPIEntity = props => {
   );
 
   if (compact) {
-    return <Card {...rest}>{content}</Card>;
+    return <Card>{content}</Card>;
   } else {
-    return <div {...rest}>{content}</div>;
+    return <div>{content}</div>;
   }
 };
 

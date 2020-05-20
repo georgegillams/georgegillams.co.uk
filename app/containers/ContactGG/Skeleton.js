@@ -11,7 +11,7 @@ import STYLES from 'containers/pages.scss';
 const getClassName = cssModules(STYLES);
 
 const ContactSkeleton = props => {
-  const { className, ...rest } = props;
+  const { className } = props;
 
   const outerClassNameFinal = [getClassName('pages__container--centered')];
 
@@ -20,7 +20,7 @@ const ContactSkeleton = props => {
   }
 
   return (
-    <div className={outerClassNameFinal.join(' ')} {...rest}>
+    <div className={outerClassNameFinal.join(' ')}>
       <SectionSkeleton style={{ marginTop: '3rem', width: '20rem' }} />
       <div style={{ width: '100vw' }}>
         <InfoCellSkeleton style={{ opacity: 0.5 }} />

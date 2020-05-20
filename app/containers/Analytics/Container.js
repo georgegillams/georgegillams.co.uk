@@ -53,9 +53,11 @@ class Analytics extends React.Component {
       sending,
       sendSuccess,
       sendError,
+      sendRegisterSuccess,
+      sendRegisterError,
       className,
-      ...rest
     } = this.props;
+
     const outerClassNameFinal = [];
 
     if (className) {
@@ -63,7 +65,7 @@ class Analytics extends React.Component {
     }
 
     return (
-      <div className={outerClassNameFinal.join(' ')} {...rest}>
+      <div className={outerClassNameFinal.join(' ')}>
         <DebugObject
           debugTitle="Analytics"
           debugObject={{

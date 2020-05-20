@@ -53,8 +53,7 @@ export default class Account extends React.Component {
       requestingSuccess,
       requestingError,
       className,
-      ...rest
-    } = this.props; // eslint-disable-line no-shadow
+    } = this.props;
     const outerClassNameFinal = [];
 
     if (className) {
@@ -62,7 +61,7 @@ export default class Account extends React.Component {
     }
 
     const page = (
-      <div className={outerClassNameFinal.join(' ')} {...rest}>
+      <div className={outerClassNameFinal.join(' ')}>
         <LoggedInOnly
           user={user}
           setLoginRedirect={() => setLoginRedirect('account')}

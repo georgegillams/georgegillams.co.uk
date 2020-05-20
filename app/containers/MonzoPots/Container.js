@@ -52,7 +52,6 @@ export default class MonzoPots extends React.Component {
       addKeySuccess,
       addKeyError,
       className,
-      ...rest
     } = this.props;
 
     const isAdmin = user && user.admin;
@@ -75,7 +74,7 @@ export default class MonzoPots extends React.Component {
     }
 
     return (
-      <div className={outerClassNameFinal.join(' ')} {...rest}>
+      <div className={outerClassNameFinal.join(' ')}>
         <Helmet title="My monzo pots" />
         <PageTitle name="Monzo pot tracking 💳">
           {!monzoPotDisplayData && (

@@ -7,7 +7,7 @@ import STYLES from 'containers/pages.scss';
 const getClassName = cssModules(STYLES);
 
 const AccountSkeleton = props => {
-  const { className, ...rest } = props;
+  const { className } = props;
 
   const outerClassNameFinal = [];
 
@@ -16,7 +16,7 @@ const AccountSkeleton = props => {
   }
 
   return (
-    <div className={outerClassNameFinal.join(' ')} {...rest}>
+    <div className={outerClassNameFinal.join(' ')}>
       <SectionSkeleton />
       <div className={getClassName('pages__compact-card-container')}>
         <CompactCardSkeleton />

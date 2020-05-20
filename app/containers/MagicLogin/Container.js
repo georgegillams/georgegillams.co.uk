@@ -48,7 +48,6 @@ export default class Login extends React.Component {
       logInSuccess,
       logInError,
       className,
-      ...rest
     } = this.props;
     const outerClassNameFinal = [];
 
@@ -77,7 +76,7 @@ export default class Login extends React.Component {
     }
 
     return (
-      <div className={outerClassNameFinal.join(' ')} {...rest}>
+      <div className={outerClassNameFinal.join(' ')}>
         <Helmet title="Login" />
         <CookiesOnly
           cookiesAccepted={cookiesAllowed}

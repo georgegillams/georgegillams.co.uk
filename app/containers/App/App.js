@@ -11,7 +11,7 @@ import ScrollToTop from 'components/ScrollToTop';
 
 import PageContainer from 'containers/PageContainer';
 import AccountPage from 'containers/Account/Loadable';
-import AdminPage from 'containers/Admin';
+import AdminPage from 'containers/Admin/Loadable';
 import AdminBlogs from 'containers/AdminBlogs/Loadable';
 import AdminNotifications from 'containers/AdminNotifications/Loadable';
 import AdminNotificationEdit from 'containers/AdminNotificationEdit/Loadable';
@@ -38,7 +38,7 @@ import NotFoundPage from 'containers/NotFoundPage/Loadable';
 import NotificationCenter from 'containers/NotificationCenter';
 import PaymentsPage from 'containers/Payments/Loadable';
 import MakePaymentPage from 'containers/MakePayment/Loadable';
-import Photography from 'containers/Photography';
+import Photography from 'containers/Photography/Loadable';
 import RequestStatusWrapper from 'containers/RequestStatusWrapper';
 import SignUpPage from 'containers/SignUpGG/Loadable';
 import SiteMap from 'containers/SiteMap/Loadable';
@@ -170,7 +170,7 @@ const App = () => (
         </Switch>
       </PageContainer>
     </div>
-    <Footer aws={true} />
+    <Footer />
   </div>
 );
 

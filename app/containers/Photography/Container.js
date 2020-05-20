@@ -8,7 +8,12 @@ import BpkImage, {
 
 import { CreativeCommons } from 'gg-components/CreativeCommons';
 import { ArticleCard, ARTICLE_CARD_LAYOUTS } from 'gg-components/Cards';
-import { Paragraph, Section, SubSection, PageTitle } from 'gg-components/Typography';
+import {
+  Paragraph,
+  Section,
+  SubSection,
+  PageTitle,
+} from 'gg-components/Typography';
 import GraphicContent, {
   withGraphicContentBehaviour,
 } from 'components/GraphicContent';
@@ -55,7 +60,6 @@ export default class Photography extends Component {
       loadComments,
       createComment,
       className,
-      ...rest
     } = this.props;
 
     return (

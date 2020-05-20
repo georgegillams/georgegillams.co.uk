@@ -113,7 +113,6 @@ export default class AdminUsers extends React.Component {
       deleteUser,
       deletingUser,
       requestMagicLinkForUser,
-      ...rest
     } = this.props;
     const outerClassNameFinal = [getClassName('pages__split-view-container')];
 
@@ -247,7 +246,7 @@ export default class AdminUsers extends React.Component {
 
     const showFilters = users && this.state.showFilters;
     const page = (
-      <div className={outerClassNameFinal.join(' ')} {...rest}>
+      <div className={outerClassNameFinal.join(' ')}>
         <AdminOnly
           user={user}
           setLoginRedirect={() => setLoginRedirect('admin/users')}

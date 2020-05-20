@@ -42,7 +42,6 @@ export default class CommentsContainer extends React.Component {
       deletingComment,
       deleteCommentSuccess,
       deleteCommentError,
-      ...rest
     } = this.props;
 
     const outerClassNameFinal = [];
@@ -51,7 +50,7 @@ export default class CommentsContainer extends React.Component {
     }
 
     return (
-      <div className={outerClassNameFinal.join(' ')} {...rest}>
+      <div className={outerClassNameFinal.join(' ')}>
         <DebugObject
           debugTitle="Comments"
           debugObject={{

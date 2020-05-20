@@ -15,7 +15,7 @@ const getClassName = cssModules({ ...PAGE_STYLES, ...STYLES }); // REGEX_REPLACE
 
 export default class BlogsNav extends React.Component {
   render() {
-    const { selected, className, ...rest } = this.props;
+    const { selected, className } = this.props;
     const outerClassNameFinal = [getClassName('blogs-page__navigation')];
 
     if (className) {
@@ -23,7 +23,7 @@ export default class BlogsNav extends React.Component {
     }
 
     return (
-      <div className={outerClassNameFinal.join(' ')} {...rest}>
+      <div className={outerClassNameFinal.join(' ')}>
         <Button
           white={selected !== 'Writing'}
           href="/blog"

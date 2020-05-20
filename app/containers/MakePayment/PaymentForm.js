@@ -77,7 +77,6 @@ class PaymentForm extends React.Component {
       onSuccess,
       onError,
       balance,
-      ...rest
     } = this.props;
 
     const classNameFinal = [];
