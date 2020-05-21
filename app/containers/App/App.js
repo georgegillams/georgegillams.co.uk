@@ -49,7 +49,7 @@ import WorkEPICCPage from 'containers/WorkEPICC/Loadable';
 import WorkSideProjectsPage from 'containers/WorkSideProjects/Loadable';
 import Konami from 'containers/Konami';
 import MonzoPots from 'containers/MonzoPots/Loadable';
-import { GGRedirect } from 'gg-components/Redirect';
+import { Redirect } from 'gg-components/Redirect';
 import { SITE_URL } from 'helpers/constants';
 import redirects from 'helpers/redirects';
 
@@ -101,7 +101,7 @@ const App = () => (
               exact
               key={red.from}
               path={red.from}
-              render={() => <GGRedirect to={getFullRedirect(red.to)} />}
+              render={() => <Redirect to={getFullRedirect(red.to)} />}
               status={301}
             />
           ))}
