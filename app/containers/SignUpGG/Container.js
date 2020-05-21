@@ -15,7 +15,7 @@ import { TextLink, PageTitle } from 'gg-components/Typography';
 import { CodeInline } from 'gg-components/Code';
 import { SignUpForm } from 'components/Forms';
 import { CookiesOnly } from 'components/Sessions';
-import { GGRedirect } from 'gg-components/Redirect';
+import { Redirect } from 'gg-components/Redirect';
 import { LoggedOutOnly, LoadingCover } from 'gg-components/Auth';
 import { STRING_REGEX } from 'helpers/constants';
 import STYLES from 'containers/pages.scss';
@@ -45,7 +45,7 @@ export default class SignUp extends React.Component {
 
     if (signUpSuccess) {
       return (
-        <GGRedirect className={outerClassNameFinal.join(' ')} to="/account" />
+        <Redirect className={outerClassNameFinal.join(' ')} to="/account" />
       );
     }
 
