@@ -64,7 +64,7 @@ export default class PaymentForm extends React.Component {
     return (
       <div className={outerClassNameFinal.join(' ')}>
         <FormBuilder
-          presubmitText="Your email will be used only to send a payment receipt."
+          preSubmitText="Your email will be used only to send a payment receipt."
           disabled={addPaymentLoading}
           entity={this.state.newPayment || {}}
           submitLabel="Continue to payment"

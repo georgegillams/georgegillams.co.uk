@@ -58,7 +58,7 @@ export default class Login extends React.Component {
               credentials={credentials || { useMagicLink: true }}
               onDataChanged={setCredentials}
               onSubmit={login}
-              presubmitText={
+              preSubmitText={
                 logInSuccess
                   ? 'A magic login link has been sent to your email address. Please check your junk folder before requesting another.'
                   : null

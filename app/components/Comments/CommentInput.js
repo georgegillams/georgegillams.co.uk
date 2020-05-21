@@ -85,7 +85,7 @@ class CommentInput extends React.Component {
             onDataChanged={this.onCommentChanged}
             centered={centered}
             disabled={creatingComment || updatingComment}
-            presubmitText={
+            preSubmitText={
               <Fragment>
                 {'Comments support **'}
                 <span style={{ fontWeight: 'bold' }}>bold</span>

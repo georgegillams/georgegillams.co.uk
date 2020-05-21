@@ -21,7 +21,7 @@ const LoginForm = props => {
       onDataChanged={onDataChangedCustom}
       entity={credentials}
       submitLabel={credentials.useMagicLink ? 'Request magic link' : 'Login'}
-      presubmitText="An email containing a login link will be sent to you. To access your account, follow the link in the email."
+      preSubmitText="An email containing a login link will be sent to you. To access your account, follow the link in the email."
       formFields={[
         {
           id: 'email',
