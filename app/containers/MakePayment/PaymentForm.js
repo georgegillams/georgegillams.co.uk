@@ -71,7 +71,7 @@ class PaymentForm extends React.Component {
       className,
       disabled,
       paymentIntentClientSecret,
-      presubmitText,
+      preSubmitText,
       onSubmit,
       onStartPayment,
       onSuccess,
@@ -101,10 +101,10 @@ class PaymentForm extends React.Component {
           CVC code
         </label>
         <CardCVCElement className={inputClassName} />
-        {presubmitText && (
+        {preSubmitText && (
           <Fragment>
             <div className={getClassName('forms__component')}>
-              {presubmitText}
+              {preSubmitText}
             </div>
           </Fragment>
         )}
