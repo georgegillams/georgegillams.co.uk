@@ -117,9 +117,7 @@ export default class MonzoPots extends React.Component {
                   name={pot.name}
                   balance={pot.balance}
                   goalAmount={pot.goalAmount}
-                  markerPosition={
-                    pot.percentageExpected > 0 ? pot.percentageExpected : null
-                  }
+                  markerPosition={pot.expected > 0 ? pot.expected : null}
                   shortfall={pot.shortfall}
                   className={getClassName('pages__degree-module')}
                 />

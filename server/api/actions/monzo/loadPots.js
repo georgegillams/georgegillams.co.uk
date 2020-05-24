@@ -1,5 +1,6 @@
 import { loadPotData, getMonthsElapsedPercentage } from './private/helpers';
 import POT_CONFIGS from './private/potConfigs';
+import { CardExpiryElement } from 'react-stripe-elements';
 
 function loadPots(req) {
   return new Promise((resolve, reject) => {
@@ -16,7 +17,7 @@ function loadPots(req) {
           if (!pot) {
             reject({
               error: 'unknown',
-              errorMessage: 'An unknown error occured',
+              errorMessage: `Pot ${potConfig.name} doesn't seem to exist`,
             });
             return null;
           }
@@ -31,8 +32,8 @@ function loadPots(req) {
           return {
             name: pot.name,
             balance,
-            goalAmount: parseFloat(pot.goal_amount) / 100,
-            percentageExpected: (100.0 * expectedSavingsSoFar) / goalAmount,
+            goalAmount,
+            expected: expectedSavingsSoFar,
             shortfall: shortfall < 5 ? null : shortfall,
             percentageComplete: pot.goal_amount
               ? Math.ceil((100 * pot.balance) / pot.goal_amount)
