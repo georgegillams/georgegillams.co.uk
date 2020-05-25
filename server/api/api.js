@@ -1,14 +1,26 @@
-import * as actions from './actions/index';
+import apiStructure from './apiStructureWithActions';
 
 import { mapUrl } from 'utils/url.js';
+
+const getAction = (apiStruct, path) => {
+  let result = { action: null, params: [] };
+  Object.keys(apiStructure).forEach(key => {
+    const apiCapability = apiStructure[key];
+    if (apiCapability.path.toLowerCase() === path.toLowerCase()) {
+      result = { action: apiCapability.action, params: [] };
+    }
+  });
+  return result;
+};
 
 const appFunc = (req, res) => {
   const splittedUrlPath = req.url
     .split('?')[0]
     .split('/')
-    .slice(1);
+    .slice(1)
+    .join('/');
 
-  const { action, params } = mapUrl(actions, splittedUrlPath);
+  const { action, params } = getAction(apiStructure, `/${splittedUrlPath}`);
 
   try {
     if (action) {

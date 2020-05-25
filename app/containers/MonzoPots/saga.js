@@ -1,7 +1,9 @@
+import { call, put, select, takeLatest } from 'redux-saga/effects';
+
 import { actions, selectors, constants } from './redux-definitions';
 
-import { call, put, select, takeLatest } from 'redux-saga/effects';
-import { API_ENDPOINT, COMMUNICATION_ERROR_MESSAGE } from 'helpers/constants';
+import { COMMUNICATION_ERROR_MESSAGE } from 'helpers/constants';
+import apiStructure from 'helpers/apiStructure';
 import { pushMessage } from 'containers/RequestStatusWrapper/actions';
 import request from 'utils/request';
 
@@ -31,7 +33,7 @@ const setKeyErrorMessage = {
 
 export function* doLoadTransactions() {
   const password = yield select(makeSelectPassword());
-  const requestURL = `${API_ENDPOINT}/monzo/loadLatestTransactions`;
+  const requestURL = apiStructure.loadMonzoTransactions.fullPath;
 
   if (password.length < 5) {
     return;
@@ -65,7 +67,7 @@ export function* doLoadTransactions() {
 
 export function* doLoadPots() {
   const password = yield select(makeSelectPassword());
-  const requestURL = `${API_ENDPOINT}/monzo/loadPots`;
+  const requestURL = apiStructure.loadMonzoPots.fullPath;
 
   if (password.length < 5) {
     return;
@@ -100,10 +102,10 @@ export function* doLoadPots() {
 
 export function* doAddKey() {
   const keyValue = yield select(makeSelectKey());
-  const magicLinkUrl = `${API_ENDPOINT}/monzo/setKey`;
+  const requestURL = apiStructure.setMonzoAPIKey.fullPath;
 
   try {
-    const setKeyResult = yield call(request, magicLinkUrl, {
+    const setKeyResult = yield call(request, requestURL, {
       method: 'POST',
       body: JSON.stringify({ key: keyValue }),
       headers: {

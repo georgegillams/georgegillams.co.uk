@@ -1,7 +1,9 @@
+import { call, put, select, takeLatest } from 'redux-saga/effects';
+
 import { actions, selectors, constants } from './redux-definitions';
 
-import { call, put, select, takeLatest } from 'redux-saga/effects';
-import { API_ENDPOINT, COMMUNICATION_ERROR_MESSAGE } from 'helpers/constants';
+import { COMMUNICATION_ERROR_MESSAGE } from 'helpers/constants';
+import apiStructure from 'helpers/apiStructure';
 import { sagaHelper } from 'helpers/redux/saga';
 import { pushMessage } from 'containers/RequestStatusWrapper/actions';
 import request from 'utils/request';
@@ -33,7 +35,7 @@ const linkDeleteSuccessMessage = {
 };
 
 export function* doLoadLinks() {
-  const requestURL = `${API_ENDPOINT}/support/load`;
+  const requestURL = apiStructure.loadSupport.fullPath;
 
   const requestParams = {
     method: 'GET',
@@ -54,7 +56,7 @@ export function* doLoadLinks() {
 
 export function* doAddLink() {
   const linkDefinition = yield select(makeSelectLinkDefinition());
-  const requestURL = `${API_ENDPOINT}/support/create`;
+  const requestURL = apiStructure.createSupport.fullPath;
 
   const requestParams = {
     method: 'POST',
@@ -77,7 +79,7 @@ export function* doAddLink() {
 
 export function* doDeleteLink() {
   const linkToDelete = yield select(makeSelectLinkToDelete());
-  const requestURL = `${API_ENDPOINT}/support/remove`;
+  const requestURL = apiStructure.deleteSupport.fullPath;
 
   const requestParams = {
     method: 'POST',

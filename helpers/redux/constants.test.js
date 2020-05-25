@@ -2,7 +2,6 @@
 
 // eslint-disable-next-line
 import defineConstants, {
-  generateConstantValue,
   inferConstantsFromActionDefinitions,
 } from './constants';
 

@@ -1,4 +1,13 @@
+import { call, put, select, takeLatest } from 'redux-saga/effects';
+
 import { selectors, actions, constants } from './redux-definitions';
+
+import { pushMessage } from 'containers/RequestStatusWrapper/actions';
+import { COMMUNICATION_ERROR_MESSAGE } from 'helpers/constants';
+import apiStructure from 'helpers/apiStructure';
+import { calculateOutstandingBalance } from 'helpers/ticketing';
+import { associate } from 'helpers/objects';
+import request from 'utils/request';
 
 const { LOAD_USERS, REQUEST_MAGIC_LINK_FOR_USER, DELETE_USER } = constants;
 const {
@@ -8,13 +17,6 @@ const {
   deleteUserRegisterSuccess,
 } = actions;
 const { makeSelectMagicLinkUser, makeSelectUserToDelete } = selectors;
-
-import { call, put, select, takeLatest } from 'redux-saga/effects';
-import { pushMessage } from 'containers/RequestStatusWrapper/actions';
-import { API_ENDPOINT, COMMUNICATION_ERROR_MESSAGE } from 'helpers/constants';
-import { calculateOutstandingBalance } from 'helpers/ticketing';
-import { associate } from 'helpers/objects';
-import request from 'utils/request';
 
 const usersLoadedMessage = { type: 'success', message: 'Users loaded!' };
 const usersLoadedErrorMessage = {
@@ -51,10 +53,10 @@ const ticketErrorMessage = {
 
 export function* doDeleteUser() {
   const userToDelete = yield select(makeSelectUserToDelete());
-  const deleteUrl = `${API_ENDPOINT}/users/remove`;
+  const requestURL = apiStructure.removeUser.fullPath;
 
   try {
-    const deleteRequest = yield call(request, deleteUrl, {
+    const deleteRequest = yield call(request, requestURL, {
       method: 'POST',
       body: JSON.stringify(userToDelete),
       headers: {
@@ -70,16 +72,16 @@ export function* doDeleteUser() {
     }
   } catch (err) {
     yield put(pushMessage(COMMUNICATION_ERROR_MESSAGE));
-    yield put(deleteUserRegisterError(deleteRequest));
+    yield put(deleteUserRegisterError({}));
   }
 }
 
 export function* doRequestMagicLink() {
   const user = yield select(makeSelectMagicLinkUser());
-  const magicLinkUrl = `${API_ENDPOINT}/magicLinks/load`;
+  const requestURL = apiStructure.requestMagicLink.fullPath;
 
   try {
-    const magicLinkResult = yield call(request, magicLinkUrl, {
+    const magicLinkResult = yield call(request, requestURL, {
       method: 'POST',
       body: JSON.stringify({ email: user.email, divertToAdmin: true }),
       headers: {
@@ -97,31 +99,17 @@ export function* doRequestMagicLink() {
 }
 
 export function* doLoadUsers() {
-  const usersRequestURL = `${API_ENDPOINT}/users/load`;
-  const userDetailsRequestURL = `${API_ENDPOINT}/userDetails/loadAll`;
+  const requestURL = apiStructure.loadUsers.fullPath;
 
   try {
-    const usersResult = yield call(request, usersRequestURL, {
-      method: 'GET',
-    });
-    const userDetailsResult = yield call(request, userDetailsRequestURL, {
+    const usersResult = yield call(request, requestURL, {
       method: 'GET',
     });
     if (usersResult.error) {
       yield put(loadUsersRegisterError(usersResult));
       yield put(pushMessage(usersLoadedErrorMessage));
-    } else if (userDetailsResult.error) {
-      yield put(loadUsersRegisterError(userDetailsResult));
-      yield put(pushMessage(usersLoadedErrorMessage));
     } else {
-      let associatedData = associate(
-        usersResult,
-        userDetailsResult,
-        'id',
-        'authorId',
-        'userDetails',
-      );
-      yield put(loadUsersRegisterSuccess(associatedData));
+      yield put(loadUsersRegisterSuccess(usersResult));
       yield put(pushMessage(usersLoadedMessage));
     }
   } catch (err) {

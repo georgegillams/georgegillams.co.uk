@@ -1,3 +1,5 @@
+import { call, put, select, takeLatest } from 'redux-saga/effects';
+
 import {
   TEST,
   TEST_PERFORMANCE,
@@ -26,9 +28,9 @@ import {
   makeSelectNewData,
 } from './selectors';
 
-import { call, put, select, takeLatest } from 'redux-saga/effects';
 import { pushMessage } from 'containers/RequestStatusWrapper/actions';
-import { API_ENDPOINT, COMMUNICATION_ERROR_MESSAGE } from 'helpers/constants';
+import { COMMUNICATION_ERROR_MESSAGE } from 'helpers/constants';
+import apiStructure from 'helpers/apiStructure';
 import request from 'utils/request';
 
 const loadDataSuccessMessage = {

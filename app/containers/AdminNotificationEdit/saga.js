@@ -1,4 +1,11 @@
+import { call, put, select, takeLatest } from 'redux-saga/effects';
+
 import { selectors, constants, actions } from './redux-definitions';
+
+import { pushMessage } from 'containers/RequestStatusWrapper/actions';
+import { COMMUNICATION_ERROR_MESSAGE } from 'helpers/constants';
+import apiStructure from 'helpers/apiStructure';
+import request from 'utils/request';
 
 const { LOAD_NOTIFICATION, UPDATE_NOTIFICATION } = constants;
 const {
@@ -14,11 +21,6 @@ const {
   makeSelectNewNotification,
   makeSelectOnUpdateNotificationRegisterSuccess,
 } = selectors;
-
-import { call, put, select, takeLatest } from 'redux-saga/effects';
-import { pushMessage } from 'containers/RequestStatusWrapper/actions';
-import { API_ENDPOINT, COMMUNICATION_ERROR_MESSAGE } from 'helpers/constants';
-import request from 'utils/request';
 
 const notificationLoadedMessage = {
   type: 'success',
@@ -40,16 +42,19 @@ const notificationUpdatedErrorMessage = {
 
 export function* doLoadNotification() {
   const notificationId = yield select(makeSelectNotificationId());
-  const notificationsRequestURL = `${API_ENDPOINT}/notifications/loadSingle?id=${notificationId}`;
+  const requestURL = `${apiStructure.loadNotification.fullPath}?id=${notificationId}`;
 
   try {
-    const notificationResult = yield call(request, notificationsRequestURL, {
+    const notificationResult = yield call(request, requestURL, {
       method: 'GET',
     });
     if (notificationResult.error) {
       yield put(loadNotificationRegisterError(notificationResult));
       yield put(
-        pushMessage({ type: error, message: notificationResult.errorMessage }),
+        pushMessage({
+          type: 'error',
+          message: notificationResult.errorMessage,
+        }),
       );
     } else {
       yield put(loadNotificationRegisterSuccess(notificationResult));
@@ -66,10 +71,10 @@ export function* doUpdateNotification() {
   const onUpdateNotificationRegisterSuccess = yield select(
     makeSelectOnUpdateNotificationRegisterSuccess(),
   );
-  const notificationsRequestURL = `${API_ENDPOINT}/notifications/update`;
+  const requestURL = apiStructure.updateNotification.fullPath;
 
   try {
-    const updateResult = yield call(request, notificationsRequestURL, {
+    const updateResult = yield call(request, requestURL, {
       method: 'POST',
       body: JSON.stringify(notification),
       headers: {

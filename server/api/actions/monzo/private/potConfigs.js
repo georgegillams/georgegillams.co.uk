@@ -21,6 +21,15 @@ const POT_CONFIGS = [
     monthly: true,
   },
   {
+    name: 'Monthly subscriptions',
+    monthly: true,
+  },
+  {
+    name: 'Yearly subscriptions',
+    startDate: `${lastYear}-12-01`,
+    startAmount: 88.76,
+  },
+  {
     name: 'Emergency',
     startDate: `${lastYear}-12-01`,
   },
@@ -39,19 +48,6 @@ const POT_CONFIGS = [
   {
     name: 'Extras',
     startDate: `${lastYear}-12-01`,
-  },
-  {
-    name: 'Yearly subscriptions',
-    startDate: `${lastYear}-12-01`,
-    startAmount: 88.76,
-  },
-  {
-    name: 'Health',
-    startDate: `${lastYear}-12-01`,
-  },
-  {
-    name: 'Monthly subscriptions',
-    monthly: true,
   },
   {
     name: 'Health',

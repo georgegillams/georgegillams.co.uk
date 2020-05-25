@@ -1,4 +1,11 @@
+import { call, put, select, takeLatest } from 'redux-saga/effects';
+
 import { actions, constants, selectors } from './redux-definitions';
+
+import { pushMessage } from 'containers/RequestStatusWrapper/actions';
+import { COMMUNICATION_ERROR_MESSAGE } from 'helpers/constants';
+import apiStructure from 'helpers/apiStructure';
+import request from 'utils/request';
 
 const { LOAD_ANALYTICS } = constants;
 const {
@@ -7,11 +14,6 @@ const {
   loadAnalyticsRegisterError,
 } = actions;
 const { makeSelectAnalyticToDelete, makeSelectNewAnalytic } = selectors;
-
-import { call, put, select, takeLatest } from 'redux-saga/effects';
-import { pushMessage } from 'containers/RequestStatusWrapper/actions';
-import { API_ENDPOINT, COMMUNICATION_ERROR_MESSAGE } from 'helpers/constants';
-import request from 'utils/request';
 
 const loadAnalyticsSuccessMessage = {
   type: 'success',
@@ -41,7 +43,7 @@ const analyticCreateErrorMessage = {
 };
 
 export function* doLoadAnalytics() {
-  const requestURL = `${API_ENDPOINT}/analytics/load`;
+  const requestURL = apiStructure.loadAnalytics.fullPath;
 
   try {
     const analyticsResult = yield call(request, requestURL, {
@@ -60,6 +62,6 @@ export function* doLoadAnalytics() {
   }
 }
 
-export default function* adminAnalytics() {
+export default function* saga() {
   yield takeLatest(LOAD_ANALYTICS, doLoadAnalytics);
 }

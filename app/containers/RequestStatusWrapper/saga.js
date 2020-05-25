@@ -1,1 +1,1 @@
-export default function* createPayment() {}
+export default function* saga() {}

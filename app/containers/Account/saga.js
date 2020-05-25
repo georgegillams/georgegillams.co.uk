@@ -1,3 +1,5 @@
+import { put, takeLatest } from 'redux-saga/effects';
+
 import { LOGOUT, REQUEST_VERIFICATION_EMAIL } from './constants';
 import {
   logoutRegisterSuccess,
@@ -5,14 +7,10 @@ import {
   requestVerificationEmailRegisterError,
   requestVerificationEmailRegisterSuccess,
 } from './actions';
-import { makeSelectCredentials } from './selectors';
 
-import { call, put, select, takeLatest } from 'redux-saga/effects';
 import { setUser } from 'containers/App/actions';
-import { pushMessage } from 'containers/RequestStatusWrapper/actions';
-import { API_ENDPOINT, COMMUNICATION_ERROR_MESSAGE } from 'helpers/constants';
+import apiStructure from 'helpers/apiStructure';
 import { sagaHelper } from 'helpers/redux/saga';
-import request from 'utils/request';
 
 const logoutMessage = { type: 'success', message: 'Logged out!' };
 const verificationEmailMessage = {
@@ -21,8 +19,6 @@ const verificationEmailMessage = {
 };
 
 export function* doRequestVerificationEmail() {
-  const requestURL = `${API_ENDPOINT}/auth/requestVerificationEmail`;
-
   const requestParams = {
     method: 'POST',
     body: '',
@@ -31,7 +27,7 @@ export function* doRequestVerificationEmail() {
     },
   };
   yield sagaHelper(
-    requestURL,
+    apiStructure.requestVerificationEmail.fullPath,
     requestParams,
     requestVerificationEmailRegisterError,
     requestVerificationEmailRegisterSuccess,
@@ -41,8 +37,6 @@ export function* doRequestVerificationEmail() {
 }
 
 export function* doLogout() {
-  const requestURL = `${API_ENDPOINT}/auth/logout`;
-
   const requestParams = {
     method: 'POST',
     body: '',
@@ -51,7 +45,7 @@ export function* doLogout() {
     },
   };
   yield sagaHelper(
-    requestURL,
+    apiStructure.logout.fullPath,
     requestParams,
     logoutRegisterError,
     logoutRegisterSuccess,
@@ -62,7 +56,7 @@ export function* doLogout() {
   );
 }
 
-export default function* logout() {
+export default function* saga() {
   yield takeLatest(LOGOUT, () => doLogout());
   yield takeLatest(REQUEST_VERIFICATION_EMAIL, () =>
     doRequestVerificationEmail(),

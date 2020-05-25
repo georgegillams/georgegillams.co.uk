@@ -1,7 +1,10 @@
+import { API_ENDPOINT } from './constants';
+
 const GET = 'get';
 const POST = 'post';
 
 const apiStructure = {
+  // Analytics
   createAnalytic: { method: POST, path: '/analytics/create' },
   loadAnalytics: { method: POST, path: '/analytics/load' },
 
@@ -17,22 +20,22 @@ const apiStructure = {
   verifyEmail: { method: POST, path: '/auth/verify-email' },
 
   // Login
-  getMagicLinks: { method: GET, path: '/magic-links/load-all' },
+  loadMagicLinks: { method: GET, path: '/magic-links/load-all' },
   loginWithMagicLink: { method: POST, path: '/magic-links/login' },
   requestMagicLink: { method: POST, path: '/magic-links/request' },
 
   // Blogs
   createBlog: { method: POST, path: '/blogs/create' },
   deleteBlog: { method: POST, path: '/blogs/delete' },
-  getBlogs: { method: GET, path: '/blogs/load-all' },
-  getBlog: { method: GET, path: '/blogs/load' },
+  loadBlogs: { method: GET, path: '/blogs/load-all' },
+  loadBlog: { method: GET, path: '/blogs/load' },
   updateBlog: { method: POST, path: '/blogs/update' },
 
   // Comments
   createComment: { method: POST, path: '/comments/create' },
   deleteComment: { method: POST, path: '/comments/delete' },
-  getComments: { method: GET, path: '/comments/load-all' },
-  getComment: { method: GET, path: '/comments/load' },
+  loadComments: { method: GET, path: '/comments/load-all' },
+  loadComment: { method: GET, path: '/comments/load' },
   updateComment: { method: POST, path: '/comments/update' },
 
   // Data
@@ -69,12 +72,17 @@ const apiStructure = {
   loadSupport: { method: GET, path: '/support/load' },
 
   // Users
+  // TODO Why do we have create vs signUp?
   createUser: { method: POST, path: '/users/create' },
   deleteUser: { method: POST, path: '/users/delete' },
   loadUser: { method: GET, path: '/users/load' },
   loadUsers: { method: GET, path: '/users/load-all' },
   signUp: { method: POST, path: '/users/sign-up' },
-  update: { method: POST, path: '/users/update' },
+  updateUser: { method: POST, path: '/users/update' },
 };
+
+Object.keys(apiStructure).forEach(key => {
+  apiStructure[key].fullPath = `${API_ENDPOINT}${apiStructure[key].path}`;
+});
 
 export default apiStructure;
