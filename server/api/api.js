@@ -1,9 +1,6 @@
-import PrettyError from 'pretty-error';
-import { mapUrl } from 'utils/url.js';
-
 import * as actions from './actions/index';
 
-const pretty = new PrettyError();
+import { mapUrl } from 'utils/url.js';
 
 const appFunc = (req, res) => {
   const splittedUrlPath = req.url
