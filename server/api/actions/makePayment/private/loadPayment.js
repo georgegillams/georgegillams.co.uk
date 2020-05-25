@@ -1,4 +1,5 @@
 import lockPromise from 'utils/lock';
+
 import getPaymentAndBalance from './getPaymentAndBalance';
 import sendUnsentPaymentReceipts from './sendUnsentPaymentReceipts';
 

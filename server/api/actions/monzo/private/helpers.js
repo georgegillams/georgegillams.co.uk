@@ -1,9 +1,9 @@
 import safeCompare from 'safe-compare';
 import fetch from 'node-fetch';
 import moment from 'moment';
+import { getTimeDifference } from 'helpers/time';
 
 import { datumLoadSingle } from '../../datum';
-import { getTimeDifference } from 'helpers/time';
 
 import POT_CONFIGS from './potConfigs';
 

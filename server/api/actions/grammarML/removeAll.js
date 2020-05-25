@@ -1,11 +1,11 @@
-import { datumRemove, datumLoad } from '../datum';
-
-import grammarMLAllowedAttributes from './grammarMLAllowedAttributes';
-
 import redis from 'utils/redis';
 import authentication from 'utils/authentication';
 import { PROJECT_NAME, UNAUTHORISED_WRITE } from 'helpers/constants';
 import reqSecure from 'utils/reqSecure';
+
+import { datumRemove, datumLoad } from '../datum';
+
+import grammarMLAllowedAttributes from './grammarMLAllowedAttributes';
 
 export default function removeAll(req) {
   const reqSecured = reqSecure(req, grammarMLAllowedAttributes);

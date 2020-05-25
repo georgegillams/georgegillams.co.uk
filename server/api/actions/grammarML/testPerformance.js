@@ -1,5 +1,8 @@
 import jsregression from 'js-regression';
 import winkPerceptron from 'wink-perceptron';
+import authentication from 'utils/authentication';
+import { UNAUTHORISED_WRITE } from 'helpers/constants';
+import reqSecure from 'utils/reqSecure';
 
 import { datumUpdate, datumLoad } from '../datum';
 
@@ -11,10 +14,6 @@ import {
   useClassifier,
   splitData,
 } from './helpers';
-
-import authentication from 'utils/authentication';
-import { UNAUTHORISED_WRITE } from 'helpers/constants';
-import reqSecure from 'utils/reqSecure';
 
 export default function test(req) {
   const reqSecured = reqSecure(req, grammarMLAllowedAttributes);

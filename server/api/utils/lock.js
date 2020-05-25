@@ -2,8 +2,8 @@ import AsyncLock from 'async-lock';
 
 const lock = new AsyncLock();
 
-const lockPromise = (keys, thunkedPromise) => {
-  return new Promise((resolve, reject) => {
+const lockPromise = (keys, thunkedPromise) =>
+  new Promise((resolve, reject) => {
     lock
       .acquire(
         keys,
@@ -28,6 +28,5 @@ const lockPromise = (keys, thunkedPromise) => {
         reject(err);
       });
   });
-};
 
 export default lockPromise;

@@ -1,12 +1,12 @@
-import { datumLoad, datumLoadSingle, datumCreate } from '../datum';
-
-import userDetailsAllowedAttributes from './private/userDetailsAllowedAttributes';
-
 import lockPromise from 'utils/lock';
 import authentication from 'utils/authentication';
 import reqSecure from 'utils/reqSecure';
 import { UNAUTHORISED_READ } from 'helpers/constants';
 import { find } from 'utils/find';
+
+import { datumLoad, datumLoadSingle, datumCreate } from '../datum';
+
+import userDetailsAllowedAttributes from './private/userDetailsAllowedAttributes';
 
 export default function load(req) {
   const reqSecured = reqSecure(req, userDetailsAllowedAttributes);

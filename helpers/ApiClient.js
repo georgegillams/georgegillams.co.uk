@@ -40,6 +40,7 @@ export default class ApiClient {
           })),
     );
   }
+
   /*
    * There's a V8 bug where, when using Babel, exporting classes with only
    * constructors sometimes fails. Until it's patched, this is a solution to

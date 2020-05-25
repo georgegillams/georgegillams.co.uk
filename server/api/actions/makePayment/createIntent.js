@@ -1,6 +1,8 @@
-import { datumCreate } from '../datum';
 import reqSecure from 'utils/reqSecure';
 import lockPromise from 'utils/lock';
+
+import { datumCreate } from '../datum';
+
 import loadPayment from './private/loadPayment';
 import stripeInstance from './private/stripe';
 import formatStripeError from './private/formatStripeError';

@@ -1,8 +1,8 @@
-import { datumUpdate } from '../datum';
-
 import lockPromise from 'utils/lock';
 import authentication from 'utils/authentication';
 import { UNAUTHORISED_WRITE } from 'helpers/constants';
+
+import { datumUpdate } from '../datum';
 
 export default function update(req) {
   return lockPromise(

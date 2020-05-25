@@ -1,7 +1,8 @@
 #!/usr/bin/env node
 
-import deleteEntity from './deleteEntity.js';
 import { datumLoadSingle, datumCreate, datumUpdate } from '../datum';
+
+import deleteEntity from './deleteEntity.js';
 
 test('returns error if not admin', done => {
   datumCreate(

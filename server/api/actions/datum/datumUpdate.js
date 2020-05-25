@@ -1,9 +1,9 @@
-import datumLoad from './datumLoad';
-
 import redis from 'utils/redis';
 import { find } from 'utils/find';
 import setContentLastUpdatedTimestamp from 'utils/setContentLastUpdatedTimestamp';
 import { PROJECT_NAME } from 'helpers/constants';
+
+import datumLoad from './datumLoad';
 
 export default function datumUpdate(settings, req) {
   return new Promise((resolve, reject) => {

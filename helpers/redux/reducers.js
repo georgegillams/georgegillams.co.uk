@@ -83,7 +83,7 @@ const createAppReducer = (actionDefinitions, constants, initialState) => {
 
     // For each stateMutator on the actionDefinition, call `state.set(...)`
     if (actionDefinition && actionDefinition.stateMutations) {
-      const stateMutations = actionDefinition.stateMutations;
+      const { stateMutations } = actionDefinition;
       Object.keys(stateMutations).forEach(smKey => {
         let newValue = stateMutations[smKey];
         if (typeof newValue === 'function') {

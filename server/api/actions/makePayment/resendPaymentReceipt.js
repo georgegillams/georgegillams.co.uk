@@ -1,10 +1,11 @@
-import { datumLoad } from '../datum';
-
 import authentication from 'utils/authentication';
 import { sendPaymentReceiptEmail } from 'utils/emailHelpers';
 import reqSecure from 'utils/reqSecure';
 import { find } from 'utils/find';
 import { UNAUTHORISED_READ } from 'helpers/constants';
+
+import { datumLoad } from '../datum';
+
 import stripePaymentsAllowedAttributes from './private/stripePaymentsAllowedAttributes';
 
 export default function resendPaymentReceipt(req) {

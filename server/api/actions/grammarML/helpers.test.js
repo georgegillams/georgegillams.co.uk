@@ -3,6 +3,9 @@
 // eslint-disable-next-line
 import jsregression from 'js-regression';
 import winkPerceptron from 'wink-perceptron';
+import authentication from 'utils/authentication';
+import { UNAUTHORISED_WRITE } from 'helpers/constants';
+import reqSecure from 'utils/reqSecure';
 
 import { datumUpdate, datumLoad } from '../datum';
 
@@ -16,10 +19,6 @@ import {
   THEIR_VALUE,
   THERE_VALUE,
 } from './helpers';
-
-import authentication from 'utils/authentication';
-import { UNAUTHORISED_WRITE } from 'helpers/constants';
-import reqSecure from 'utils/reqSecure';
 
 test('correctly annotates sentences', done => {
   const testData = [{ text: 'Put their stuff away.' }];

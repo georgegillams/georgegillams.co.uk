@@ -1,6 +1,5 @@
 import sortBy from 'lodash/sortBy';
 import reverse from 'lodash/reverse';
-
 import redis from 'utils/redis';
 import { find } from 'utils/find';
 import { PROJECT_NAME } from 'helpers/constants';

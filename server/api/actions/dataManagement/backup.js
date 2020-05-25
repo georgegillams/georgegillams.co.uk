@@ -1,9 +1,10 @@
-import loadAllData from './private/loadAllData';
 import fs from 'fs';
 
 import authentication from 'utils/authentication';
 import { UNAUTHORISED_READ, PROJECT_NAME } from 'helpers/constants';
 import reqSecure from 'utils/reqSecure';
+
+import loadAllData from './private/loadAllData';
 
 const dataFilePath = 'server/server_content/data.json';
 
@@ -16,7 +17,7 @@ export default function load(req) {
             const dataAnnotated = {
               projectName: PROJECT_NAME,
               timestamp: Date.now(),
-              data: data,
+              data,
             };
             resolve(res => {
               fs.writeFileSync(dataFilePath, JSON.stringify(dataAnnotated));

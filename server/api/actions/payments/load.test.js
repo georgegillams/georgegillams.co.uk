@@ -1,7 +1,8 @@
 #!/usr/bin/env node
 
-import load from './load.js';
 import { datumLoadSingle, datumCreate, datumUpdate } from '../datum';
+
+import load from './load.js';
 
 test('returns error if not authenticated', done => {
   const req = {

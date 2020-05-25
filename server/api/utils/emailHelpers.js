@@ -1,16 +1,16 @@
 import {
-  sendMagicLinkTicketEmail as sendMLTE,
-  sendMagicLinkEmail as sendMLE,
-  sendEmailVerificationEmail as sendEVE,
-  sendPaymentReceiptEmail as sendPRE,
-} from './emailHelpersGeneric';
-
-import {
   PROJECT_NAME,
   EMAIL_IMAGE_HTML,
   EMAIL_HTML_BUTTON_STYLE,
   EMAIL_SENDER_EMAIL,
 } from 'helpers/constants';
+
+import {
+  sendMagicLinkTicketEmail as sendMLTE,
+  sendMagicLinkEmail as sendMLE,
+  sendEmailVerificationEmail as sendEVE,
+  sendPaymentReceiptEmail as sendPRE,
+} from './emailHelpersGeneric';
 
 let primaryColor = '#44AEFF';
 let primaryColorFaded = '#E5F4FF';

@@ -1,12 +1,12 @@
-import { datumUpdate } from '../datum';
-
-import commentsAllowedAttributes from './private/commentsAllowedAttributes';
-
 import lockPromise from 'utils/lock';
 import authentication from 'utils/authentication';
 import { userOwnsResource } from 'utils/userOwnsResource';
 import { UNAUTHORISED_WRITE } from 'helpers/constants';
 import reqSecure from 'utils/reqSecure';
+
+import { datumUpdate } from '../datum';
+
+import commentsAllowedAttributes from './private/commentsAllowedAttributes';
 
 export default function update(req) {
   const reqSecured = reqSecure(req, commentsAllowedAttributes);

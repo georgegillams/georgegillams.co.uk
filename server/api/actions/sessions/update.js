@@ -1,8 +1,8 @@
-import { datumUpdate } from '../datum';
-
 import authentication from 'utils/authentication';
 import { UNAUTHORISED_WRITE } from 'helpers/constants';
 import reqSecure from 'utils/reqSecure';
+
+import { datumUpdate } from '../datum';
 
 export default function update(req) {
   const reqSecured = reqSecure(req, []);

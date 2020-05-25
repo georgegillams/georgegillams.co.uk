@@ -10,9 +10,7 @@ export default function performRestoration(data) {
           redis.del(key); // This line is legacy
           redis.del(`${PROJECT_NAME}_${key}`);
           if (data[key].length > 0) {
-            const newData = data[key].map(d => {
-              return JSON.stringify(d);
-            });
+            const newData = data[key].map(d => JSON.stringify(d));
             redis.rpush([`${PROJECT_NAME}_${key}`, ...newData]);
           }
           res(true);

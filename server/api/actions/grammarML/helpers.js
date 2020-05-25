@@ -1,13 +1,12 @@
 import jsregression from 'js-regression';
 import winkPerceptron from 'wink-perceptron';
+import authentication from 'utils/authentication';
+import { UNAUTHORISED_WRITE } from 'helpers/constants';
+import reqSecure from 'utils/reqSecure';
 
 import { datumUpdate, datumLoad } from '../datum';
 
 import grammarMLAllowedAttributes from './grammarMLAllowedAttributes';
-
-import authentication from 'utils/authentication';
-import { UNAUTHORISED_WRITE } from 'helpers/constants';
-import reqSecure from 'utils/reqSecure';
 
 const THEIR_VALUE = 'THEIR';
 const THERE_VALUE = 'THERE';

@@ -1,10 +1,10 @@
-import { datumLoad } from '../datum';
-
-import usersAllowedAttributes from './private/usersAllowedAttributes';
-
 import authentication from 'utils/authentication';
 import { UNAUTHORISED_READ } from 'helpers/constants';
 import reqSecure from 'utils/reqSecure';
+
+import { datumLoad } from '../datum';
+
+import usersAllowedAttributes from './private/usersAllowedAttributes';
 
 export default function load(req) {
   const reqSecured = reqSecure(req, usersAllowedAttributes);

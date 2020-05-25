@@ -1,11 +1,11 @@
-import { datumCreate } from '../datum';
-
-import notificationsAllowedAttributes from './private/notificationsAllowedAttributes';
-
 import lockPromise from 'utils/lock';
 import authentication from 'utils/authentication';
 import { UNAUTHORISED_WRITE } from 'helpers/constants';
 import reqSecure from 'utils/reqSecure';
+
+import { datumCreate } from '../datum';
+
+import notificationsAllowedAttributes from './private/notificationsAllowedAttributes';
 
 export default function create(req) {
   const reqSecured = reqSecure(req, notificationsAllowedAttributes);

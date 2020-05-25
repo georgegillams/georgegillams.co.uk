@@ -1,10 +1,10 @@
-import { datumLoad, datumCreate } from '../actions/datum';
 import lockPromise from 'utils/lock';
-
 import { find } from 'utils/find';
 import { INVALID_SESSION, INVALID_CREDENTIALS } from 'helpers/constants';
 import { generateKey } from 'utils/hash';
 import setContentLastUpdatedTimestamp from 'utils/setContentLastUpdatedTimestamp';
+
+import { datumLoad, datumCreate } from '../actions/datum';
 
 export default function login(reqSecured, userProfile) {
   return lockPromise(
