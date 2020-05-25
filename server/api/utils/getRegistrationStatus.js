@@ -1,5 +1,3 @@
-import { datumLoad, datumLoadSingle } from '../actions/datum';
-
 import { find } from 'utils/find';
 import { INVALID_SESSION, INVALID_CREDENTIALS } from 'helpers/constants';
 import {
@@ -8,6 +6,8 @@ import {
 } from 'helpers/ticketing';
 import { generateKey } from 'utils/hash';
 import setContentLastUpdatedTimestamp from 'utils/setContentLastUpdatedTimestamp';
+
+import { datumLoad, datumLoadSingle } from '../actions/datum';
 
 export default function getRegistrationStatus(user) {
   return new Promise((resolve, reject) => {

@@ -24,8 +24,8 @@ function getMeta(cb) {
 }
 
 function createWorkingDirectories() {
-  var serverContentDir = path.join(__dirname, './server_content');
-  var greasemonkeyDir = path.join(__dirname, './server_content/greasemonkey');
+  const serverContentDir = path.join(__dirname, './server_content');
+  const greasemonkeyDir = path.join(__dirname, './server_content/greasemonkey');
 
   if (!fs.existsSync(serverContentDir)) {
     fs.mkdirSync(serverContentDir);

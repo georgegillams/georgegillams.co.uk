@@ -1,7 +1,8 @@
 #!/usr/bin/env node
 
-import signUp from './signUp.js';
 import { datumLoadSingle } from '../datum';
+
+import signUp from './signUp.js';
 
 test('allows a user to be created', done => {
   const req = {

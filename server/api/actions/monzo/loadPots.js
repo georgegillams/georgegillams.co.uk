@@ -1,6 +1,7 @@
+import { CardExpiryElement } from 'react-stripe-elements';
+
 import { loadPotData, getMonthsElapsedPercentage } from './private/helpers';
 import POT_CONFIGS from './private/potConfigs';
-import { CardExpiryElement } from 'react-stripe-elements';
 
 function loadPots(req) {
   return new Promise((resolve, reject) => {

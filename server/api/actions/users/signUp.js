@@ -1,7 +1,3 @@
-import { datumLoad, datumCreate } from '../datum';
-
-import usersAllowedAttributes from './private/usersAllowedAttributes';
-
 import lockPromise from 'utils/lock';
 import { find } from 'utils/find';
 import {
@@ -15,6 +11,10 @@ import setContentLastUpdatedTimestamp from 'utils/setContentLastUpdatedTimestamp
 import reqSecure from 'utils/reqSecure';
 import loginUser from 'utils/login';
 import { sendEmailVerificationEmail } from 'utils/emailHelpers';
+
+import { datumLoad, datumCreate } from '../datum';
+
+import usersAllowedAttributes from './private/usersAllowedAttributes';
 
 const usernameTakenErrorMessage = {
   ...EMAIL_TAKEN,

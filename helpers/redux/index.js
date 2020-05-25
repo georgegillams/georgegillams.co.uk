@@ -1,4 +1,5 @@
 import { fromJS } from 'immutable';
+
 import {
   populateConstants,
   mapActions,
@@ -17,7 +18,6 @@ import {
   createAppReducer,
 } from './reducers';
 import { composeContainer } from './containers';
-
 import { createSelectors, mapSelectors } from './selectors';
 
 // TODO TEST THIS FILE
@@ -48,10 +48,10 @@ const createReduxComponents = actionMeta => {
   );
 
   return {
-    reducer: reducer,
-    actions: actions,
-    selectors: selectors,
-    constants: constants,
+    reducer,
+    actions,
+    selectors,
+    constants,
   };
 };
 

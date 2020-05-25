@@ -1,8 +1,8 @@
-import { datumRemove } from '../datum';
-
 import authentication from 'utils/authentication';
 import { UNAUTHORISED_WRITE } from 'helpers/constants';
 import reqSecure from 'utils/reqSecure';
+
+import { datumRemove } from '../datum';
 
 export default function remove(req) {
   const reqSecured = reqSecure(req, []);

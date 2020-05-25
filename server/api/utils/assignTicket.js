@@ -1,9 +1,9 @@
-import { datumLoad, datumCreate } from '../actions/datum';
-
 import { find } from 'utils/find';
 import { INVALID_SESSION, INVALID_CREDENTIALS } from 'helpers/constants';
 import { generateKey } from 'utils/hash';
 import setContentLastUpdatedTimestamp from 'utils/setContentLastUpdatedTimestamp';
+
+import { datumLoad, datumCreate } from '../actions/datum';
 
 export default function assignTicket(user, ticket) {
   return new Promise((resolve, reject) => {

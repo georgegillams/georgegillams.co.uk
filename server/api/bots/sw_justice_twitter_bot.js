@@ -1,4 +1,4 @@
-const TwitterBot = require('node-twitterbot').TwitterBot;
+const { TwitterBot } = require('node-twitterbot');
 const moment = require('moment');
 
 const Bot = process.env.BOT_CONSUMER_KEY

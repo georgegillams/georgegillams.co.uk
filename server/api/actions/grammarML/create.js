@@ -1,10 +1,10 @@
-import { datumCreate } from '../datum';
-
-import grammarMLAllowedAttributes from './grammarMLAllowedAttributes';
-
 import lockPromise from 'utils/lock';
 import authentication from 'utils/authentication';
 import reqSecure from 'utils/reqSecure';
+
+import { datumCreate } from '../datum';
+
+import grammarMLAllowedAttributes from './grammarMLAllowedAttributes';
 
 export default function create(req) {
   const reqSecured = reqSecure(req, grammarMLAllowedAttributes);

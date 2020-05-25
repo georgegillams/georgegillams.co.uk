@@ -20,19 +20,12 @@ const composeContainer = (
 
   const mapStateToProps = createStructuredSelector(mapSelectors(selectors));
 
-  const withConnect = connect(
-    mapStateToProps,
-    mapDispatchToProps,
-  );
+  const withConnect = connect(mapStateToProps, mapDispatchToProps);
 
   const withReducer = injectReducer({ key, reducer });
   const withSaga = injectSaga({ key, saga });
 
-  const composed = compose(
-    withReducer,
-    withSaga,
-    withConnect,
-  )(PageComponent);
+  const composed = compose(withReducer, withSaga, withConnect)(PageComponent);
 
   return { __esModule: true, mapDispatchToProps, default: composed };
 };

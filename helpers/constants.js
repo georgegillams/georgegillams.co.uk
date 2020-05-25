@@ -73,10 +73,10 @@ const EMAIL_IMAGE_HTML =
 const EMAIL_HTML_BUTTON_STYLE =
   'background-color: #e02626;padding: .9rem 1.2rem;color: white;border-radius: 2rem;text-decoration: none;';
 const EMAIL_SENDER_EMAIL = 'g@georgegillams.co.uk';
-const PROJECT_UNDER_TEST = process.env.PROJECT_UNDER_TEST;
+const { PROJECT_UNDER_TEST } = process.env;
 const PORT = process.env.PORT || 3000;
 const AWS = process.env.AWS === 'true';
-const NODE_ENV = process.env.NODE_ENV;
+const { NODE_ENV } = process.env;
 const SESSION_SECRET =
   NODE_ENV === 'development' || PROJECT_UNDER_TEST
     ? 'TEST'
@@ -98,7 +98,7 @@ const COMMUNICATION_ERROR_MESSAGE = {
 const STRIPE_PUBLIC_API_KEY = process.env.STRIPE_PUBLIC_API_KEY
   ? process.env.STRIPE_PUBLIC_API_KEY
   : 'pk_test_cgQazYLEKCzNFGFuRfq0TL8N00Cj3LIfai';
-const STRIPE_SECRET_API_KEY = process.env.STRIPE_SECRET_API_KEY;
+const { STRIPE_SECRET_API_KEY } = process.env;
 const USERNAMES_ENABLED = PROJECT_NAME !== 'EPICC';
 const REDIS_INFORMATION_STORES = [
   'analytics',

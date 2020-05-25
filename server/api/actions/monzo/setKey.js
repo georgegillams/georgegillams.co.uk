@@ -1,8 +1,8 @@
-import { datumCreate } from '../datum';
-
 import lockPromise from 'utils/lock';
 import authentication from 'utils/authentication';
 import { UNAUTHORISED_WRITE } from 'helpers/constants';
+
+import { datumCreate } from '../datum';
 
 export default function setKey(req) {
   return lockPromise(

@@ -1,14 +1,14 @@
-import datumLoad from './datumLoad';
-
 import redis from 'utils/redis';
 import { find } from 'utils/find';
 import { PROJECT_NAME } from 'helpers/constants';
 import setContentLastUpdatedTimestamp from 'utils/setContentLastUpdatedTimestamp';
 
+import datumLoad from './datumLoad';
+
 export default function datumCreate(settings, req) {
   return new Promise((resolve, reject) => {
     const newValue = req.body;
-    const requestedId = newValue.requestedId;
+    const { requestedId } = newValue;
     newValue.id = Math.random()
       .toString(36)
       .substring(7);

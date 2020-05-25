@@ -1,11 +1,11 @@
-import { datumRemove } from '../datum';
-
-import usersAllowedAttributes from './private/usersAllowedAttributes';
-
 import authentication from 'utils/authentication';
 import { userOwnsResource } from 'utils/userOwnsResource';
 import { UNAUTHORISED_WRITE } from 'helpers/constants';
 import reqSecure from 'utils/reqSecure';
+
+import { datumRemove } from '../datum';
+
+import usersAllowedAttributes from './private/usersAllowedAttributes';
 
 export default function remove(req) {
   const reqSecured = reqSecure(req, usersAllowedAttributes);

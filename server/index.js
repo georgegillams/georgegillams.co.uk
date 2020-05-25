@@ -19,13 +19,13 @@ import {
   PROJECT_UNDER_TEST,
 } from 'helpers/constants';
 
-import logger from './util//logger';
+import logger from './util/logger';
 import seo from './seo';
 import api from './api/api';
 import greasemonkey from './greasemonkey';
 import redirectNonWWW from './redirectNonWWW';
 import argv from './util/argv';
-import port from './util//port';
+import port from './util/port';
 import setup from './middlewares/frontendMiddleware';
 
 const app = express();

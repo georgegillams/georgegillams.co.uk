@@ -1,4 +1,5 @@
 import { REDIS_INFORMATION_STORES } from 'helpers/constants';
+
 import { datumLoad } from '../../datum';
 
 export default function loadAllData() {
@@ -9,7 +10,7 @@ export default function loadAllData() {
       loadPromises.push(
         new Promise(res => {
           datumLoad({
-            redisKey: redisKey,
+            redisKey,
             includeDeleted: true,
           }).then(loadedData => {
             data[redisKey] = loadedData;

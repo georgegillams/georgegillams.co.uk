@@ -16,7 +16,7 @@ function generateNewComponent(component, req, allAllowedAttributes) {
   const newComponent = {};
   for (let i = 0; i < allAllowedAttributes.length; i += 1) {
     const name = allAllowedAttributes[i].attribute;
-    const pattern = allAllowedAttributes[i].pattern;
+    const { pattern } = allAllowedAttributes[i];
     if (req[component][name]) {
       if (pattern === 'BOOL') {
         newComponent[name] = !!req[component][name];

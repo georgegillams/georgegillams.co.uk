@@ -1,7 +1,7 @@
-import { datumLoad, datumUpdate } from '../datum';
-
 import lockPromise from 'utils/lock';
 import { find } from 'utils/find';
+
+import { datumLoad, datumUpdate } from '../datum';
 
 export default function verifyemail(req) {
   return lockPromise(

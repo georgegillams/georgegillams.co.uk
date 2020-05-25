@@ -1,8 +1,8 @@
-import datumLoad from './datumLoad';
-import datumUpdate from './datumUpdate';
-
 import { RESOURCE_NOT_FOUND } from 'helpers/constants';
 import { find } from 'utils/find';
+
+import datumLoad from './datumLoad';
+import datumUpdate from './datumUpdate';
 
 export default function datumRemove(settings, req) {
   return new Promise((resolve, reject) => {

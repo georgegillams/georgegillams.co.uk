@@ -1,11 +1,11 @@
-import { datumLoad, datumUpdate } from '../datum';
-
-import authAllowedAttributes from './private/authAllowedAttributes';
-
 import lockPromise from 'utils/lock';
 import authentication from 'utils/authentication';
 import setContentLastUpdatedTimestamp from 'utils/setContentLastUpdatedTimestamp';
 import reqSecure from 'utils/reqSecure';
+
+import { datumLoad, datumUpdate } from '../datum';
+
+import authAllowedAttributes from './private/authAllowedAttributes';
 
 export default function logoutall(req) {
   const reqSecured = reqSecure(req, authAllowedAttributes);

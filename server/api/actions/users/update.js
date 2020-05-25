@@ -1,7 +1,3 @@
-import { datumLoad, datumUpdate } from '../datum';
-
-import usersAllowedAttributes from './private/usersAllowedAttributes';
-
 import lockPromise from 'utils/lock';
 import authentication from 'utils/authentication';
 import { hash } from 'utils/hash';
@@ -10,6 +6,10 @@ import { userOwnsResource } from 'utils/userOwnsResource';
 import { sendEmailVerificationEmail } from 'utils/emailHelpers';
 import { UNAUTHORISED_WRITE, RESOURCE_NOT_FOUND } from 'helpers/constants';
 import reqSecure from 'utils/reqSecure';
+
+import { datumLoad, datumUpdate } from '../datum';
+
+import usersAllowedAttributes from './private/usersAllowedAttributes';
 
 export default function update(req) {
   const reqSecured = reqSecure(req, usersAllowedAttributes);

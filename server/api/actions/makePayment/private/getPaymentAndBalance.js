@@ -1,4 +1,5 @@
 import { datumLoad, datumLoadSingle } from '../../datum';
+
 import fetchPaymentDataFromStripe from './fetchPaymentDataFromStripe';
 
 export default function getPaymentAndBalance(paymentId) {

@@ -1,9 +1,10 @@
-import { datumCreate } from '../datum';
-
 import lockPromise from 'utils/lock';
 import authentication from 'utils/authentication';
 import { UNAUTHORISED_WRITE } from 'helpers/constants';
 import reqSecure from 'utils/reqSecure';
+
+import { datumCreate } from '../datum';
+
 import paymentsAllowedAttributes from './private/paymentsAllowedAttributes';
 
 export default function create(req) {

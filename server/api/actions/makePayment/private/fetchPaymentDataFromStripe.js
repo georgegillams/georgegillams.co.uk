@@ -12,18 +12,19 @@ const getPaymentIntent = paymentIntentId =>
 
 export default function fetchPaymentDataFromStripe(stripePayments) {
   return new Promise((resolve, reject) => {
-    const stripePaymentIntentPromises = stripePayments.map(sp => {
-      return new Promise((res, rej) => {
-        // get paid amount from stripe's server
-        getPaymentIntent(sp.paymentIntentId)
-          .then(paymentIntent => {
-            res({ ...paymentIntent, stripepayment: sp });
-          })
-          .catch(err => {
-            rej(formatStripeError(err));
-          });
-      });
-    });
+    const stripePaymentIntentPromises = stripePayments.map(
+      sp =>
+        new Promise((res, rej) => {
+          // get paid amount from stripe's server
+          getPaymentIntent(sp.paymentIntentId)
+            .then(paymentIntent => {
+              res({ ...paymentIntent, stripepayment: sp });
+            })
+            .catch(err => {
+              rej(formatStripeError(err));
+            });
+        }),
+    );
 
     Promise.all(stripePaymentIntentPromises)
       .then(stripePaymentIntents => {
