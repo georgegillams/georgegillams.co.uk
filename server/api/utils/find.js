@@ -22,7 +22,7 @@ export function find(values, id, matchOn = 'id') {
 export function emailFingerprint(emailAddress) {
   const emailSplit = emailAddress.split('@');
   let user = emailSplit[0].split('.').join('');
-  user = user.split('+')[0];
+  [user] = user.split('+');
   const emailDomain = emailSplit[1];
 
   return `${user}@${emailDomain}`;

@@ -2,8 +2,8 @@ import { datumLoad } from '../actions/datum';
 
 import { find } from './find';
 
-export function userOwnsResource(redisKey, resourceId, user) {
-  return new Promise(resolve => {
+const userOwnsResource = (redisKey, resourceId, user) =>
+  new Promise(resolve => {
     if (!user) {
       resolve(false);
       // Users should be honary owners of themselves:
@@ -20,4 +20,6 @@ export function userOwnsResource(redisKey, resourceId, user) {
       });
     }
   });
-}
+
+export default userOwnsResource;
+export { userOwnsResource };

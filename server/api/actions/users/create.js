@@ -1,3 +1,8 @@
+import loginUser from '../auth/private/login';
+import { datumCreate, datumLoad } from '../datum';
+
+import usersAllowedAttributes from './private/usersAllowedAttributes';
+
 import lockPromise from 'utils/lock';
 import authentication from 'utils/authentication';
 import { hash } from 'utils/hash';
@@ -5,11 +10,6 @@ import { find, emailFingerprint } from 'utils/find';
 import { sendEmailVerificationEmail } from 'utils/emailHelpers';
 import { UNAUTHORISED_WRITE } from 'helpers/constants';
 import reqSecure from 'utils/reqSecure';
-import loginUser from 'utils/login';
-
-import { datumCreate, datumLoad } from '../datum';
-
-import usersAllowedAttributes from './private/usersAllowedAttributes';
 
 export default function create(req) {
   const reqSecured = reqSecure(req, usersAllowedAttributes);
