@@ -1,14 +1,16 @@
 import React from 'react';
-import appConfig from '../../../config/app-config';
 import { Helmet } from 'react-helmet';
 import { Switch, Route } from 'react-router-dom';
 import { cssModules } from 'gg-components/helpers/cssModules';
+import { Footer } from 'gg-components/Footer';
+import { Redirect } from 'gg-components/Redirect';
+
+import appConfig from '../../../config/app-config';
 
 import STYLES from './style.scss';
+
 import HelperFunctions from 'helpers/HelperFunctions';
-
 import ScrollToTop from 'components/ScrollToTop';
-
 import PageContainer from 'containers/PageContainer';
 import AccountPage from 'containers/Account/Loadable';
 import AdminPage from 'containers/Admin/Loadable';
@@ -28,7 +30,6 @@ import ContactPage from 'containers/ContactGG/Loadable';
 import StatusPage from 'containers/Status/Loadable';
 import DebugPage from 'containers/Debug/Loadable';
 import EmailVerificationPage from 'containers/EmailVerification/Loadable';
-import { Footer } from 'gg-components/Footer';
 import SupportPage from 'containers/Support/Loadable';
 import HomePage from 'containers/HomePageGG/Loadable';
 import LoginPage from 'containers/Login/Loadable';
@@ -49,7 +50,6 @@ import WorkEPICCPage from 'containers/WorkEPICC/Loadable';
 import WorkSideProjectsPage from 'containers/WorkSideProjects/Loadable';
 import Konami from 'containers/Konami';
 import MonzoPots from 'containers/MonzoPots/Loadable';
-import { Redirect } from 'gg-components/Redirect';
 import { SITE_URL } from 'helpers/constants';
 import redirects from 'helpers/redirects';
 
@@ -85,7 +85,9 @@ const App = () => (
         titleTemplate={`%s - ${appConfig.app.title}`}
         defaultTitle={appConfig.app.title}
       >
-        <meta name="description" content={appConfig.app.description} />
+        {appConfig.app.head.meta.map(m => (
+          <meta name={m.property} content={m.content} />
+        ))}
       </Helmet>
       <ScrollToTop />
       <RequestStatusWrapper />
