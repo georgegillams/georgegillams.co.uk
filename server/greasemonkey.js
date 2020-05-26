@@ -1,8 +1,9 @@
-const fs = require('fs');
-const path = require('path');
+/* eslint-disable no-console */
+import fs from 'fs';
+import path from 'path';
 
-const express = require('express');
-const wget = require('wget-improved');
+import express from 'express';
+import wget from 'wget-improved';
 
 const router = express.Router();
 

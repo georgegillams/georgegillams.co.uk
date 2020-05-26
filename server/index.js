@@ -12,12 +12,6 @@ import SocketIo from 'socket.io';
 import cookieParser from 'cookie-parser';
 import helmet from 'helmet';
 import slowDown from 'express-slow-down';
-import {
-  DOMAIN,
-  SESSION_SECRET,
-  SITE_URL,
-  PROJECT_UNDER_TEST,
-} from 'helpers/constants';
 
 import logger from './util/logger';
 import seo from './seo';
@@ -25,19 +19,38 @@ import api from './api/api';
 import greasemonkey from './greasemonkey';
 import redirectNonWWW from './redirectNonWWW';
 import argv from './util/argv';
-import port from './util/port';
 import setup from './middlewares/frontendMiddleware';
+
+import {
+  PORT,
+  DOMAIN,
+  NODE_ENV,
+  SESSION_SECRET,
+  SITE_URL,
+  PROJECT_UNDER_TEST,
+} from 'helpers/constants';
 
 const app = express();
 const server = new http.Server(app);
 
+// Enable web-socket use
 const io = new SocketIo(server);
 io.path('/ws');
 
 // trust the first proxy, as this will be nginx forwarding requests to us.
 app.set('trust proxy', 1);
 
-// Rate limiting:
+// Production security - helmet
+app.use(helmet());
+
+// Production security - cors
+app.use(
+  cors({
+    origin: SITE_URL,
+  }),
+);
+
+// Production security - rate limiting
 app.use(
   slowDown({
     windowMs: 15 * 60 * 1000, // 15 minutes
@@ -62,19 +75,14 @@ app.use(
   }),
 );
 
-if (process.env.NODE_ENV === 'production' && !PROJECT_UNDER_TEST) {
-  app.use(helmet());
-  app.use(
-    cors({
-      origin: SITE_URL,
-    }),
-  );
-}
-
+// enable sending API requests with files in form-data
 app.use(fileupload());
 
+// Redirect naked domain to include `www`
 app.use(redirectNonWWW);
+
 app.use(greasemonkey);
+
 app.use(
   session({
     secret: SESSION_SECRET,
@@ -86,13 +94,11 @@ app.use(
 app.use(bodyParser.json());
 app.use(cookieParser());
 
+// Exposes robots.txt and sitemap.xml
 app.use(seo);
 
-// If you need a backend, e.g. an API, add your custom backend-specific middleware here
+// Hook up API
 app.use('/api', api);
-
-// Add static projects (eg pecha kucha etc)
-// app.use('/', express.static(__dirname + '/../public')); // ← adjust
 
 // In production we need to pass these values in instead of relying on webpack
 setup(app, {
@@ -106,9 +112,9 @@ const host = customHost || null; // Let http.Server use its default IPv6/4 host
 const prettyHost = customHost || 'localhost';
 
 // Start your app.
-app.listen(port, host, err => {
+app.listen(PORT, host, err => {
   if (err) {
     return logger.error(err.message);
   }
-  logger.appStarted(port, prettyHost);
+  logger.appStarted(PORT, prettyHost);
 });
