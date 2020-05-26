@@ -1,11 +1,12 @@
 import { connect } from 'react-redux';
 import { compose } from 'redux';
 import { createStructuredSelector } from 'reselect';
-import injectSaga from 'utils/injectSaga';
-import injectReducer from 'utils/injectReducer';
 
 import { mapSelectors } from './selectors';
 import { mapActions } from './actions';
+
+import injectSaga from 'utils/injectSaga';
+import injectReducer from 'utils/injectReducer';
 
 // TODO Write tests for this:
 const composeContainer = (

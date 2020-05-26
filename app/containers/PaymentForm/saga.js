@@ -1,7 +1,9 @@
+import { call, put, select, takeLatest } from 'redux-saga/effects';
+
 import { actions, selectors, constants } from './redux-definitions';
 
-import { call, put, select, takeLatest } from 'redux-saga/effects';
-import { API_ENDPOINT, COMMUNICATION_ERROR_MESSAGE } from 'helpers/constants';
+import { COMMUNICATION_ERROR_MESSAGE } from 'helpers/constants';
+import apiStructure from 'helpers/apiStructure';
 import { pushMessage } from 'containers/RequestStatusWrapper/actions';
 import request from 'utils/request';
 
@@ -28,7 +30,7 @@ const paymentDeleteSuccessMessage = {
 };
 
 export function* doLoadPayments() {
-  const requestURL = `${API_ENDPOINT}/payments/load`;
+  const requestURL = apiStructure.loadPayments.fullPath;
 
   try {
     const paymentsResult = yield call(request, requestURL, {
@@ -54,8 +56,8 @@ export function* doAddPayment() {
   const paymentDefinition = JSON.parse(
     JSON.stringify(yield select(makeSelectPaymentDefinition())),
   );
-  const requestURL = `${API_ENDPOINT}/payments/create`;
-  paymentDefinition.amount = paymentDefinition.amount * 100;
+  const requestURL = apiStructure.createPayment.fullPath;
+  paymentDefinition.amount *= 100;
 
   try {
     const paymentsResult = yield call(request, requestURL, {
@@ -67,9 +69,13 @@ export function* doAddPayment() {
     });
     if (paymentsResult.error) {
       yield put(addPaymentRegisterError(paymentsResult));
-      yield put(pushMessage({ type: 'error', message: paymentsResult.errorMessage }));
+      yield put(
+        pushMessage({ type: 'error', message: paymentsResult.errorMessage }),
+      );
     } else if (paymentsResult.warning) {
-      yield put(pushMessage({ type: 'warn', message: paymentsResult.warningMessage }));
+      yield put(
+        pushMessage({ type: 'warn', message: paymentsResult.warningMessage }),
+      );
     } else {
       yield put(addPaymentRegisterSuccess(paymentsResult));
       yield put(pushMessage(paymentAddSuccessMessage));
@@ -83,7 +89,7 @@ export function* doAddPayment() {
 
 export function* doDeletePayment() {
   const paymentToDelete = yield select(makeSelectPaymentToDelete());
-  const requestURL = `${API_ENDPOINT}/payments/remove`;
+  const requestURL = apiStructure.deletePayment.fullPath;
 
   try {
     const paymentsResult = yield call(request, requestURL, {
@@ -95,9 +101,13 @@ export function* doDeletePayment() {
     });
     if (paymentsResult.error) {
       yield put(addPaymentRegisterError(paymentsResult));
-      yield put(pushMessage({ type: 'error', message: paymentsResult.errorMessage }));
+      yield put(
+        pushMessage({ type: 'error', message: paymentsResult.errorMessage }),
+      );
     } else if (paymentsResult.warning) {
-      yield put(pushMessage({ type: 'warn', message: paymentsResult.warningMessage }));
+      yield put(
+        pushMessage({ type: 'warn', message: paymentsResult.warningMessage }),
+      );
     } else {
       yield put(deletePaymentRegisterSuccess(paymentsResult));
       yield put(pushMessage(paymentDeleteSuccessMessage));

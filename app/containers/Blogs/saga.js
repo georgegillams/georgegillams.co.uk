@@ -1,7 +1,9 @@
+import { call, put, select, takeLatest } from 'redux-saga/effects';
+
 import { actions, constants } from './redux-definitions';
 
-import { call, put, select, takeLatest } from 'redux-saga/effects';
-import { API_ENDPOINT, COMMUNICATION_ERROR_MESSAGE } from 'helpers/constants';
+import { COMMUNICATION_ERROR_MESSAGE } from 'helpers/constants';
+import apiStructure from 'helpers/apiStructure';
 import { pushMessage } from 'containers/RequestStatusWrapper/actions';
 import request from 'utils/request';
 
@@ -14,13 +16,15 @@ const blogsLoadSuccessMessage = {
 };
 
 export function* doLoadBlogs() {
-  const requestURL = `${API_ENDPOINT}/blogs/load`;
+  const requestURL = apiStructure.loadBlogs.fullPath;
 
   try {
     const blogsResult = yield call(request, requestURL);
     if (blogsResult.error) {
       yield put(loadBlogsRegisterError(blogsResult));
-      yield put(pushMessage({ type: 'error', message: blogsResult.errorMessage }));
+      yield put(
+        pushMessage({ type: 'error', message: blogsResult.errorMessage }),
+      );
     } else {
       yield put(loadBlogsRegisterSuccess(blogsResult));
       yield put(pushMessage(blogsLoadSuccessMessage));

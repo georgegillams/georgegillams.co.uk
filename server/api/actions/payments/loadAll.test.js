@@ -2,7 +2,7 @@
 
 import { datumLoadSingle, datumCreate, datumUpdate } from '../datum';
 
-import load from './load.js';
+import load from './loadAll.js';
 
 test('returns error if not authenticated', done => {
   const req = {

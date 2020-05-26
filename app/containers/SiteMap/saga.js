@@ -1,14 +1,15 @@
+import { call, put, select, takeLatest } from 'redux-saga/effects';
+
 import { constants, actions } from './redux-definitions';
+
+import apiStructure from 'helpers/apiStructure';
+import request from 'utils/request';
 
 const { LOAD_BLOGS } = constants;
 const { loadBlogsRegisterSuccess, loadBlogsRegisterError } = actions;
 
-import { call, put, select, takeLatest } from 'redux-saga/effects';
-import { API_ENDPOINT } from 'helpers/constants';
-import request from 'utils/request';
-
 export function* doLoadBlogs() {
-  const requestURL = `${API_ENDPOINT}/blogs/load`;
+  const requestURL = apiStructure.loadBlogs.fullPath;
 
   try {
     const blogs = yield call(request, requestURL); // Can add third arg for options

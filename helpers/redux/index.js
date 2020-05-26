@@ -1,14 +1,8 @@
 import { fromJS } from 'immutable';
 
-import {
-  populateConstants,
-  mapActions,
-  defineAction,
-  defineActions,
-} from './actions';
+import { populateConstants, mapActions, defineActions } from './actions';
 import {
   defineConstants,
-  generateConstantValue,
   inferConstantsFromActionDefinitions,
 } from './constants';
 import {

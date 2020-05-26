@@ -1,7 +1,9 @@
-import { actions, constants } from './redux-definitions';
 import { call, put, select, takeLatest } from 'redux-saga/effects';
+
+import { actions, constants } from './redux-definitions';
+
 import { setUser, setUserLoading } from 'containers/App/actions';
-import { API_ENDPOINT } from 'helpers/constants';
+import apiStructure from 'helpers/apiStructure';
 import request from 'utils/request';
 
 const { REAUTHENTICATE } = constants;
@@ -10,7 +12,7 @@ const { reauthenticateRegisterSuccess, reauthenticateRegisterError } = actions;
 export function* doReauthentication() {
   yield put(setUserLoading());
 
-  const requestURL = `${API_ENDPOINT}/auth/load`;
+  const requestURL = apiStructure.loadAuth.fullPath;
 
   try {
     const loginResult = yield call(request, requestURL, {

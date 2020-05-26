@@ -1,1 +1,1 @@
-export default function* admin() {}
+export default function* saga() {}

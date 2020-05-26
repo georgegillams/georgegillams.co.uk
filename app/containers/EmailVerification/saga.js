@@ -1,21 +1,23 @@
+import { call, put, select, takeLatest } from 'redux-saga/effects';
+
 import { constants, selectors, actions } from './redux-definitions';
+
+import { setUser } from 'containers/App/actions';
+import { COMMUNICATION_ERROR_MESSAGE } from 'helpers/constants';
+import apiStructure from 'helpers/apiStructure';
+import { pushMessage } from 'containers/RequestStatusWrapper/actions';
+import { sagaHelper } from 'helpers/redux/saga';
+import request from 'utils/request';
 
 const { VERIFY_EMAIL } = constants;
 const { verifyEmailRegisterSuccess, verifyEmailRegisterError } = actions;
 const { makeSelectToken } = selectors;
 
-import { call, put, select, takeLatest } from 'redux-saga/effects';
-import { setUser } from 'containers/App/actions';
-import { API_ENDPOINT, COMMUNICATION_ERROR_MESSAGE } from 'helpers/constants';
-import { pushMessage } from 'containers/RequestStatusWrapper/actions';
-import { sagaHelper } from 'helpers/redux/saga';
-import request from 'utils/request';
-
 const emailVerifiedMessage = { type: 'success', message: 'Email verified!' };
 
 export function* doVerification() {
   const token = yield select(makeSelectToken());
-  const requestURL = `${API_ENDPOINT}/auth/verifyEmail`;
+  const requestURL = apiStructure.verifyEmail.fullPath;
 
   const requestParams = {
     method: 'POST',

@@ -1,15 +1,17 @@
+import { call, put, select, takeLatest } from 'redux-saga/effects';
+
 import { selectors, actions, constants } from './redux-definitions';
+
+import { setUser } from 'containers/App/actions';
+import { pushMessage } from 'containers/RequestStatusWrapper/actions';
+import { COMMUNICATION_ERROR_MESSAGE } from 'helpers/constants';
+import apiStructure from 'helpers/apiStructure';
+import { makeSelectLoginRedirect } from 'containers/App/selectors';
+import request from 'utils/request';
 
 const { LOGIN } = constants;
 const { loginRegisterSuccess, loginRegisterError } = actions;
 const { makeSelectCredentials } = selectors;
-
-import { call, put, select, takeLatest } from 'redux-saga/effects';
-import { setUser } from 'containers/App/actions';
-import { pushMessage } from 'containers/RequestStatusWrapper/actions';
-import { API_ENDPOINT, COMMUNICATION_ERROR_MESSAGE } from 'helpers/constants';
-import { makeSelectLoginRedirect } from 'containers/App/selectors';
-import request from 'utils/request';
 
 const magicLinkSentMessage = { type: 'success', message: 'Magic link sent!' };
 const loggedInMessage = { type: 'success', message: 'Login successful!' };
@@ -21,9 +23,9 @@ const logInErrorMessage = {
 export function* doLogin() {
   const credentials = yield select(makeSelectCredentials());
   const loginRedirect = yield select(makeSelectLoginRedirect());
-  const requestURL = `${API_ENDPOINT}${
-    credentials.useMagicLink ? '/magicLinks/load' : '/auth/login'
-  }`;
+  const requestURL = credentials.useMagicLink
+    ? apiStructure.requestMagicLink.fullPath
+    : apiStructure.login.fullPath;
 
   try {
     const loginResult = yield call(request, requestURL, {

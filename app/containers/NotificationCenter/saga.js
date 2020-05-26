@@ -1,4 +1,9 @@
+import { call, put, select, takeLatest } from 'redux-saga/effects';
+
 import { constants, actions } from './redux-definitions';
+
+import apiStructure from 'helpers/apiStructure';
+import request from 'utils/request';
 
 const { LOAD_NOTIFICATIONS } = constants;
 const {
@@ -6,12 +11,8 @@ const {
   loadNotificationsRegisterError,
 } = actions;
 
-import { call, put, select, takeLatest } from 'redux-saga/effects';
-import { API_ENDPOINT } from 'helpers/constants';
-import request from 'utils/request';
-
 export function* doLoadNotifications() {
-  const requestURL = `${API_ENDPOINT}/notifications/load`;
+  const requestURL = apiStructure.loadNotifications.fullPath;
 
   try {
     const notifications = yield call(request, requestURL);

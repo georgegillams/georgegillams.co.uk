@@ -1,4 +1,11 @@
+import { call, put, select, takeLatest } from 'redux-saga/effects';
+
 import { selectors, constants, actions } from './redux-definitions';
+
+import { pushMessage } from 'containers/RequestStatusWrapper/actions';
+import { COMMUNICATION_ERROR_MESSAGE } from 'helpers/constants';
+import apiStructure from 'helpers/apiStructure';
+import request from 'utils/request';
 
 const { LOAD_USERTOEDIT, UPDATE_USERTOEDIT } = constants;
 const {
@@ -9,11 +16,6 @@ const {
   makeSelectNewUsertoedit,
   makeSelectOnUpdateUsertoeditRegisterSuccess,
 } = selectors;
-
-import { call, put, select, takeLatest } from 'redux-saga/effects';
-import { pushMessage } from 'containers/RequestStatusWrapper/actions';
-import { API_ENDPOINT, COMMUNICATION_ERROR_MESSAGE } from 'helpers/constants';
-import request from 'utils/request';
 
 const usertoeditCreatedMessage = {
   type: 'success',
@@ -38,10 +40,10 @@ export function* doUpdateUsertoedit() {
   const onUpdateUsertoeditRegisterSuccess = yield select(
     makeSelectOnUpdateUsertoeditRegisterSuccess(),
   );
-  const usertoeditsRequestURL = `${API_ENDPOINT}/users/update`;
+  const requestURL = apiStructure.updateUser.fullPath;
 
   try {
-    const updateResult = yield call(request, usertoeditsRequestURL, {
+    const updateResult = yield call(request, requestURL, {
       method: 'POST',
       body: JSON.stringify(usertoedit),
       headers: {

@@ -1,8 +1,12 @@
 import { call, put, select, takeLatest } from 'redux-saga/effects';
-import { API_ENDPOINT, COMMUNICATION_ERROR_MESSAGE } from 'helpers/constants';
-import { pushMessage } from 'containers/RequestStatusWrapper/actions';
 
 import { constants, actions, selectors } from './redux-definitions';
+
+import { COMMUNICATION_ERROR_MESSAGE } from 'helpers/constants';
+import apiStructure from 'helpers/apiStructure';
+import { pushMessage } from 'containers/RequestStatusWrapper/actions';
+import request from 'utils/request';
+
 const {
   MAKE_PAYMENT,
   MAKE_PAYMENT_INTENT,
@@ -27,8 +31,6 @@ const {
   makeSelectOnMakePaymentIntentRegisterSuccess,
 } = selectors;
 
-import request from 'utils/request';
-
 const paymentSuccessMessage = {
   type: 'success',
   message: 'Payment recieved',
@@ -36,7 +38,7 @@ const paymentSuccessMessage = {
 
 export function* doLoadPayment() {
   const paymentId = yield select(makeSelectPaymentId());
-  const requestURL = `${API_ENDPOINT}/makePayment/load`;
+  const requestURL = apiStructure.loadPayment.fullPath;
 
   try {
     const paymentResult = yield call(request, requestURL, {
@@ -62,7 +64,7 @@ export function* doLoadPayment() {
 
 export function* doMakePaymentIntent() {
   const paymentId = yield select(makeSelectPaymentId());
-  const requestURL = `${API_ENDPOINT}/makePayment/createIntent`;
+  const requestURL = apiStructure.createPaymentIntent.fullPath;
   const onMakePaymentIntentRegisterSuccess = yield select(
     makeSelectOnMakePaymentIntentRegisterSuccess(),
   );
