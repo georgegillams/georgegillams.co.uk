@@ -11,7 +11,8 @@ const { makeSelectBlogId } = selectors;
 
 export function* doLoadBlog() {
   const blogId = yield select(makeSelectBlogId());
-  const requestURL = `${apiStructure.loadBlog.fullPath}?id=${blogId}`;
+  const requestURL = apiStructure.loadBlog.fullPath.split(':id').join(blogId);
+  console.log(`requestURL`, requestURL);
 
   try {
     const blog = yield call(request, requestURL);

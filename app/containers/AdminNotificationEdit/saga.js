@@ -42,7 +42,9 @@ const notificationUpdatedErrorMessage = {
 
 export function* doLoadNotification() {
   const notificationId = yield select(makeSelectNotificationId());
-  const requestURL = `${apiStructure.loadNotification.fullPath}?id=${notificationId}`;
+  const requestURL = apiStructure.loadNotification.fullPath
+    .split(':id')
+    .join(notificationId);
 
   try {
     const notificationResult = yield call(request, requestURL, {

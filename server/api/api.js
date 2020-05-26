@@ -1,26 +1,15 @@
+/* eslint-disable no-console */
 import apiStructure from './apiStructureWithActions';
 
-import { mapUrl } from 'utils/url.js';
-
-const getAction = (apiStruct, path) => {
-  let result = { action: null, params: [] };
-  Object.keys(apiStructure).forEach(key => {
-    const apiCapability = apiStructure[key];
-    if (apiCapability.path.toLowerCase() === path.toLowerCase()) {
-      result = { action: apiCapability.action, params: [] };
-    }
-  });
-  return result;
-};
+import { mapPathToAction } from 'utils/mapPathToAction.js';
 
 const appFunc = (req, res) => {
-  const splittedUrlPath = req.url
+  const splitUrlPath = req.url
     .split('?')[0]
     .split('/')
-    .slice(1)
-    .join('/');
+    .slice(1);
 
-  const { action, params } = getAction(apiStructure, `/${splittedUrlPath}`);
+  const { action, params } = mapPathToAction(apiStructure, splitUrlPath);
 
   try {
     if (action) {

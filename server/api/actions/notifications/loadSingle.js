@@ -1,11 +1,11 @@
-import authentication from 'utils/authentication';
-import reqSecure from 'utils/reqSecure';
-
 import { datumLoadSingle } from '../datum';
 
 import notificationsAllowedAttributes from './private/notificationsAllowedAttributes';
 
-export default function loadSingle(req) {
+import authentication from 'utils/authentication';
+import reqSecure from 'utils/reqSecure';
+
+export default function loadSingle(req, params) {
   const reqSecured = reqSecure(req, notificationsAllowedAttributes);
   return new Promise((resolve, reject) => {
     authentication(reqSecured).then(
@@ -14,7 +14,7 @@ export default function loadSingle(req) {
           datumLoadSingle({
             redisKey: 'notifications',
             includeDeleted: user && user.admin,
-            filter: ar => ar.id === reqSecured.query.id,
+            filter: ar => ar.id === params.id,
           }),
         );
       },
