@@ -37,7 +37,7 @@ const blogUpdatedErrorMessage = {
 
 export function* doLoadBlog() {
   const blogId = yield select(makeSelectBlogId());
-  const requestURL = `${apiStructure.loadBlog.fullPath}?id=${blogId}`;
+  const requestURL = apiStructure.loadBlog.fullPath.split(':id').join(blogId);
 
   try {
     const blogResult = yield call(request, requestURL, {

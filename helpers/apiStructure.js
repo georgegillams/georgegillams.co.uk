@@ -28,7 +28,7 @@ const apiStructure = {
   createBlog: { method: POST, path: '/blogs/create' },
   deleteBlog: { method: POST, path: '/blogs/delete' },
   loadBlogs: { method: GET, path: '/blogs/load-all' },
-  loadBlog: { method: GET, path: '/blogs/load' },
+  loadBlog: { method: GET, path: '/blogs/load/:id' },
   updateBlog: { method: POST, path: '/blogs/update' },
 
   // Comments
@@ -58,7 +58,7 @@ const apiStructure = {
   createNotification: { method: POST, path: '/notifications/create' },
   deleteNotification: { method: POST, path: '/notifications/delete' },
   loadNotifications: { method: GET, path: '/notifications/load-all' },
-  loadNotification: { method: GET, path: '/notifications/load' },
+  loadNotification: { method: GET, path: '/notifications/load/:id' },
   updateNotification: { method: POST, path: '/notifications/update' },
 
   // Payments
