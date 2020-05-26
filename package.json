@@ -18,7 +18,7 @@
     "build:test": "PORT=9001 PROJECT_UNDER_TEST=true npm run build:client && PORT=9001 PROJECT_UNDER_TEST=true npm run build:server",
     "build:clean": "rimraf ./build",
     "build:client": "cross-env NODE_PATH=./server/api:./app NODE_ENV=production BUILT_AT=$( date -u +%s ) webpack --config config/webpack.prod.babel.js --color -p --progress --hide-modules --display-optimization-bailout",
-    "build:server": "cross-env NODE_ENV=development babel -d ./build/server ./server -s",
+    "build:server": "cross-env NODE_ENV=development babel -d ./build/server ./server -s --copy-files",
     "clean": "npm run test:clean && npm run build:clean",
     "dev": "cross-env redis-server & SECRET_API_KEY=asdfghjkl MONZO_ACCESS_PASSWORD=asdfghjkl npm run start:dev",
     "fix:adapter-core-5": "cp ./scripts/adapter_core5.js node_modules/webrtc-adapter/src/js/adapter_core5.js",
