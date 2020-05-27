@@ -1,13 +1,12 @@
-import { find } from 'utils/find';
-import { INVALID_SESSION, INVALID_CREDENTIALS } from 'helpers/constants';
-import { hash, compareHash } from 'utils/hash';
-import setContentLastUpdatedTimestamp from 'utils/setContentLastUpdatedTimestamp';
-import reqSecure from 'utils/reqSecure';
-import loginUser from 'utils/login';
+import { datumLoad } from '../datum';
 
-import { datumLoad, datumUpdate } from '../datum';
-
+import loginUser from './private/login';
 import authAllowedAttributes from './private/authAllowedAttributes';
+
+import { find } from 'utils/find';
+import { INVALID_CREDENTIALS } from 'helpers/constants';
+import { compareHash } from 'utils/hash';
+import reqSecure from 'utils/reqSecure';
 
 export default function login(req) {
   const reqSecured = reqSecure(req, authAllowedAttributes);

@@ -1,11 +1,11 @@
-import lockPromise from 'utils/lock';
-import { find } from 'utils/find';
-import reqSecure from 'utils/reqSecure';
-import loginUser from 'utils/login';
-
+import loginUser from '../auth/private/login';
 import { datumLoad, datumUpdate } from '../datum';
 
 import magicLinksAllowedAttributes from './private/magicLinksAllowedAttributes';
+
+import lockPromise from 'utils/lock';
+import { find } from 'utils/find';
+import reqSecure from 'utils/reqSecure';
 
 export default function loginmagiclink(req) {
   const reqSecured = reqSecure(req, magicLinksAllowedAttributes);

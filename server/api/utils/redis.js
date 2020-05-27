@@ -1,3 +1,5 @@
+/* eslint-disable no-console */
+/* eslint-disable global-require */
 let redis = null;
 
 const onError = err => {
