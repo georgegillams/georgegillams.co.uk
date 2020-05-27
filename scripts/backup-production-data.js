@@ -30,7 +30,7 @@ const performBackup = async (err, { backupName, apiKey }) => {
   execSync(`mkdir ~/Dropbox/georgegillams.co.uk/backups/${backupName}`);
 
   execSync(
-    `wget https://www.georgegillams.co.uk/api/dataManagement/backup --header "apiKey: ${apiKey}" -O ~/Dropbox/georgegillams.co.uk/backups/${backupName}/data.json`,
+    `wget https://www.georgegillams.co.uk/api/data-management/backup --header "apiKey: ${apiKey}" -O ~/Dropbox/georgegillams.co.uk/backups/${backupName}/data.json`,
   );
 };
 
