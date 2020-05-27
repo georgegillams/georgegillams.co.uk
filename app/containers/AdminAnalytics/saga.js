@@ -53,7 +53,7 @@ export function* doLoadAnalytics() {
       yield put(loadAnalyticsRegisterError(analyticsResult));
       yield put(pushMessage(analyticsLoadErrorMessage));
     } else {
-      yield put(loadAnalyticsRegisterSuccess(analyticsResult));
+      yield put(loadAnalyticsRegisterSuccess(analyticsResult.analytics));
       yield put(pushMessage(loadAnalyticsSuccessMessage));
     }
   } catch (err) {

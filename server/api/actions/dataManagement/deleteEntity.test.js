@@ -18,10 +18,14 @@ test('returns error if not admin', done => {
       },
     };
     deleteEntity(req)
-      .then(result => {})
-      .catch(result => {
-        expect(result.error).toBe('auth');
-        expect(result.errorMessage).toBe(
+      .then(() => {
+        // The promise should not resolve
+        expect(true).toBe(false);
+        done();
+      })
+      .catch(err => {
+        expect(err.category).toBe('auth_error');
+        expect(err.message).toBe(
           'You are not authorised to write to this resource',
         );
 
@@ -53,7 +57,11 @@ test('returns error if item is not already marked for deletion', done => {
       },
     };
     deleteEntity(req)
-      .then(result => {})
+      .then(() => {
+        // The promise should not resolve
+        expect(true).toBe(false);
+        done();
+      })
       .catch(result => {
         expect(result.error).toBe('wrong-input');
         expect(result.errorMessage).toBe(
@@ -96,7 +104,6 @@ test('allows permanent deletion of deletedItem if admin', done => {
       },
     };
     deleteEntity(req).then(result => {
-      console.log(`result`, result);
       expect(result).toBe(undefined);
 
       datumLoadSingle({

@@ -23,7 +23,7 @@ export function* doReauthentication() {
       yield put(setUser(null));
     } else {
       yield put(reauthenticateRegisterSuccess());
-      yield put(setUser(loginResult));
+      yield put(setUser(loginResult.user));
     }
   } catch (err) {
     yield put(reauthenticateRegisterError(err));

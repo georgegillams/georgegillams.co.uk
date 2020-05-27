@@ -22,7 +22,7 @@ export default function create(req) {
               { redisKey: 'analytics', user },
               { ...reqSecured, ipAddress },
             )
-              .then(() => resolve({}))
+              .then(() => resolve({ result: true }))
               .catch(err => reject(err));
           })
           .catch(err => reject(err));
