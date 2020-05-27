@@ -6,7 +6,8 @@ const POST = 'post';
 const apiStructure = {
   // Analytics
   createAnalytic: { method: POST, path: '/analytics/create' },
-  loadAnalytics: { method: POST, path: '/analytics/load' },
+  loadAnalytics: { method: POST, path: '/analytics/load-all' },
+  loadAnalyticsSummary: { method: POST, path: '/analytics/load' },
 
   // Auth
   loadAuth: { method: GET, path: '/auth/load' },
