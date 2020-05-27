@@ -5,6 +5,9 @@
 const path = require('path');
 
 const webpack = require('webpack');
+const {
+  WebpackBundleSizeAnalyzerPlugin,
+} = require('webpack-bundle-size-analyzer');
 
 process.noDeprecation = true;
 
@@ -20,14 +23,12 @@ const {
 module.exports = options => ({
   mode: options.mode,
   entry: options.entry,
-  output: Object.assign(
-    {
-      // Compile into js/build.js
-      path: path.resolve(process.cwd(), 'build'),
-      publicPath: '/',
-    },
-    options.output,
-  ), // Merge with env dependent settings
+  output: {
+    // Compile into js/build.js
+    path: path.resolve(process.cwd(), 'build'),
+    publicPath: '/',
+    ...options.output,
+  }, // Merge with env dependent settings
   module: {
     rules: [
       {
@@ -118,6 +119,7 @@ module.exports = options => ({
     ],
   },
   plugins: options.plugins.concat([
+    new WebpackBundleSizeAnalyzerPlugin('./plain-report.txt'),
     new webpack.ProvidePlugin({
       // make fetch available
       fetch: 'exports-loader?self.fetch!whatwg-fetch',
