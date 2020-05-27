@@ -43,7 +43,7 @@ const analyticCreateErrorMessage = {
 };
 
 export function* doLoadAnalytics() {
-  const requestURL = apiStructure.loadAnalytics.fullPath;
+  const requestURL = apiStructure.loadAnalyticsSummary.fullPath;
 
   try {
     const analyticsResult = yield call(request, requestURL, {

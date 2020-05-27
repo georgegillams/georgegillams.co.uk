@@ -1,8 +1,14 @@
 import React, { Fragment, useState } from 'react';
-
 import { Card } from 'gg-components/Cards';
 import { Paragraph, PageTitle } from 'gg-components/Typography';
 import { Button } from 'gg-components/Button';
+import {
+  DebugObject,
+  APIEntity,
+  AdminOnly,
+  LoadingCover,
+} from 'gg-components/Auth';
+
 import {
   STRING_REGEX,
   INT_REGEX,
@@ -11,12 +17,6 @@ import {
   PASSWORD_REGEX,
   DECIMAL_REGEX,
 } from 'helpers/constants';
-import {
-  DebugObject,
-  APIEntity,
-  AdminOnly,
-  LoadingCover,
-} from 'gg-components/Auth';
 import STYLES from 'containers/pages.scss';
 
 const AnalyticEntity = props => {
@@ -25,23 +25,41 @@ const AnalyticEntity = props => {
   return (
     <Card>
       <PageTitle name={entity.url}>
-        {entity.id && (
-          <Fragment>
-            <Paragraph>{entity.id}</Paragraph>
+        {entity.count && (
+          <>
+            <Paragraph>Matches: {entity.count}</Paragraph>
             <br />
-          </Fragment>
+          </>
+        )}
+        {entity.browser && (
+          <>
+            <Paragraph>Browser {entity.browser}</Paragraph>
+            <br />
+          </>
+        )}
+        {entity.os && (
+          <>
+            <Paragraph>os {entity.os}</Paragraph>
+            <br />
+          </>
+        )}
+        {entity.url && (
+          <>
+            <Paragraph>Path {entity.url}</Paragraph>
+            <br />
+          </>
         )}
         {entity.utm_source && (
-          <Fragment>
-            <Paragraph>{entity.utm_source}</Paragraph>
+          <>
+            <Paragraph>Source {entity.utm_source}</Paragraph>
             <br />
-          </Fragment>
+          </>
         )}
         {entity.utm_medium && (
-          <Fragment>
-            <Paragraph>{entity.utm_medium}</Paragraph>
+          <>
+            <Paragraph>Medium {entity.utm_medium}</Paragraph>
             <br />
-          </Fragment>
+          </>
         )}
         <DebugObject debugTitle="Analytic" debugObject={entity} />
         {children && children}

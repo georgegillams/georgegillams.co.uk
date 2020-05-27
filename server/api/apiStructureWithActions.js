@@ -4,7 +4,8 @@ const apiStructure = JSON.parse(JSON.stringify(originalApiStructure));
 
 // Analytics
 apiStructure.createAnalytic.action = require('./actions/analytics/create');
-apiStructure.loadAnalytics.action = require('./actions/analytics/load');
+apiStructure.loadAnalytics.action = require('./actions/analytics/loadAll');
+apiStructure.loadAnalyticsSummary.action = require('./actions/analytics/loadSummary');
 
 // Auth
 apiStructure.loadAuth.action = require('./actions/auth/load');
