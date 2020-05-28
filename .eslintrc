@@ -1,7 +1,11 @@
 {
   "parser": "babel-eslint",
-  "extends": ["skyscanner-with-prettier", "plugin:flowtype/recommended"],
-  "plugins": ["flowtype"],
+  "extends": [
+    "skyscanner-with-prettier",
+    "plugin:flowtype/recommended",
+    "plugin:promise/recommended"
+  ],
+  "plugins": ["flowtype", "promise"],
   "env": {
     "browser": true,
     "jest": true
