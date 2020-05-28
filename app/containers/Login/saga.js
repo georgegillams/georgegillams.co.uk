@@ -23,9 +23,7 @@ const logInErrorMessage = {
 export function* doLogin() {
   const credentials = yield select(makeSelectCredentials());
   const loginRedirect = yield select(makeSelectLoginRedirect());
-  const requestURL = credentials.useMagicLink
-    ? apiStructure.requestMagicLink.fullPath
-    : apiStructure.login.fullPath;
+  const requestURL = apiStructure.requestMagicLink.fullPath;
 
   try {
     const loginResult = yield call(request, requestURL, {

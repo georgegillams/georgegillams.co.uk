@@ -6,8 +6,7 @@ export default function performRestoration(data) {
     const promises = [];
     Object.keys(data).forEach(key => {
       promises.push(
-        new Promise((res, rej) => {
-          redis.del(key); // This line is legacy
+        new Promise(res => {
           redis.del(`${PROJECT_NAME}_${key}`);
           if (data[key].length > 0) {
             const newData = data[key].map(d => JSON.stringify(d));

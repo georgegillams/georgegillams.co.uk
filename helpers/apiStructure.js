@@ -11,9 +11,7 @@ const apiStructure = {
 
   // Auth
   loadAuth: { method: GET, path: '/auth/load' },
-  login: { method: POST, path: '/auth/login' },
   logout: { method: POST, path: '/auth/logout' },
-  logoutFromAllDevices: { method: POST, path: '/auth/logout-all' },
   requestVerificationEmail: {
     method: POST,
     path: '/auth/request-verification-email',

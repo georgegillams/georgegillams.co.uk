@@ -1,3 +1,5 @@
+import { AuthError, NotFoundError } from './Errors';
+
 const PROJECT_NAME = 'GEORGEGILLAMS';
 const DECIMAL_REGEX = /^[0-9\.]*$/gi;
 const INT_REGEX = /^[0-9]*$/gi;
@@ -42,28 +44,22 @@ const EMAIL_TAKEN = {
   error: 'invalid-request',
   errorMessage: 'Email already taken.',
 };
-const INVALID_SESSION = {
-  error: 'auth',
-  errorMessage:
-    'Invalid session. Try clearing cookies for this site and then re-authenticate',
-};
+const INVALID_SESSION = new AuthError(
+  'Invalid session. Try clearing cookies for this site and then re-authenticate',
+);
 const INVALID_CREDENTIALS = {
   error: 'wrong-input',
   errorMessage: 'Error logging in. The credentials supplied are invalid.',
 };
-const UNAUTHORISED_READ = {
-  error: 'auth',
-  errorMessage: 'You are not authorised to read this resource',
-};
-const UNAUTHORISED_WRITE = {
-  error: 'auth',
-  errorMessage: 'You are not authorised to write to this resource',
-};
-const RESOURCE_NOT_FOUND = {
-  error: 'not-found',
-  errorMessage:
-    "We looked everywhere but we couldn't find that resource. Maybe you need to sign in.",
-};
+const UNAUTHORISED_READ = new AuthError(
+  'You are not authorised to read this resource',
+);
+const UNAUTHORISED_WRITE = new AuthError(
+  'You are not authorised to write to this resource',
+);
+const RESOURCE_NOT_FOUND = new NotFoundError(
+  "We looked everywhere but we couldn't find that resource. Maybe you need to sign in.",
+);
 const CHECK_FOR_NEW_CONTENT_INTERVAL = 1000;
 const COMPONENT_RELOAD_INTERVAL = CHECK_FOR_NEW_CONTENT_INTERVAL / 2;
 const EMAIL_VERIFICATION_ENABLED = true;

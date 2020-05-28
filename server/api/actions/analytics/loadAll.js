@@ -17,7 +17,7 @@ export default function load(req) {
             includeOwnerUname: true,
             includeDeleted: true,
           }).then(result => {
-            resolve(result);
+            resolve({ analytics: result });
           });
         } else {
           reject(UNAUTHORISED_READ);

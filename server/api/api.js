@@ -1,6 +1,11 @@
 /* eslint-disable no-console */
 import apiStructure from './apiStructureWithActions';
 
+import {
+  CategorisedError,
+  InternalServerError,
+  NotImplementedError,
+} from 'helpers/Errors';
 import { mapPathToAction } from 'utils/mapPathToAction.js';
 
 const appFunc = (req, res) => {
@@ -10,6 +15,8 @@ const appFunc = (req, res) => {
     .slice(1);
 
   const { action, params } = mapPathToAction(apiStructure, splitUrlPath);
+  // TODO - verify that action `method` matches req method.
+  // If not, return 405 error
 
   try {
     if (action) {
@@ -24,16 +31,31 @@ const appFunc = (req, res) => {
         err => {
           if (err && err.redirect) {
             res.redirect(err.redirect);
+          } else if (err instanceof CategorisedError) {
+            res.status(err.httpStatus);
+            res.json({ error: err.category, errorMessage: err.message });
+          } else if (err instanceof Error) {
+            // An error that we haven't created. Maybe created by redis or something
+            const isError = new InternalServerError(err.message);
+            res.status(isError.httpStatus);
+            res.json({
+              error: isError.category,
+              errorMessage: isError.message,
+            });
           } else {
+            // THIS IS LEGACY, FOR OLD API ACTIONS WHICH REJECT NON-ERROR VALUES
             // Return a valid response even if there has been some server-side error.
-            // This gives us greater control over how we handle errors.
-            // Due to a limitation in our `react-saga` exception handling mechanism.
+            // TODO - update to return an internal server error instead
             res.json(err);
           }
         },
       );
     } else {
-      res.status(404).end('NOT FOUND');
+      const err = new NotImplementedError(
+        'This method has not been implemented',
+      );
+      res.status(err.httpStatus);
+      res.json({ error: err.category, errorMessage: err.message });
     }
   } catch (err) {
     console.error(err);

@@ -9,9 +9,7 @@ apiStructure.loadAnalyticsSummary.action = require('./actions/analytics/loadSumm
 
 // Auth
 apiStructure.loadAuth.action = require('./actions/auth/load');
-apiStructure.login.action = require('./actions/auth/login');
 apiStructure.logout.action = require('./actions/auth/logout');
-apiStructure.logoutFromAllDevices.action = require('./actions/auth/logoutAll');
 apiStructure.requestVerificationEmail.action = require('./actions/auth/requestVerificationEmail');
 apiStructure.verifyEmail.action = require('./actions/auth/verifyEmail');
 
