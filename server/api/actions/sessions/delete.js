@@ -1,16 +1,16 @@
+import { datumRemove } from '../datum';
+
 import authentication from 'utils/authentication';
 import { UNAUTHORISED_WRITE } from 'helpers/constants';
 import reqSecure from 'utils/reqSecure';
 
-import { datumRemove } from '../datum';
-
 export default function remove(req) {
-  const reqSecured = reqSecure(req, []);
+  reqSecure(req, []);
   return new Promise((resolve, reject) => {
-    authentication(reqSecured).then(
+    authentication(req).then(
       user => {
         if (user && user.admin) {
-          resolve(datumRemove({ redisKey: 'sessions' }, reqSecured));
+          resolve(datumRemove({ redisKey: 'sessions' }, req));
         } else {
           reject(UNAUTHORISED_WRITE);
         }

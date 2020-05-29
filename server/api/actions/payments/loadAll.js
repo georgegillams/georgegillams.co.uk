@@ -1,16 +1,16 @@
+import { datumLoad } from '../datum';
+
+import paymentsAllowedAttributes from './private/paymentsAllowedAttributes';
+
 import authentication from 'utils/authentication';
 import reqSecure from 'utils/reqSecure';
 import { UNAUTHORISED_READ } from 'helpers/constants';
 import { associate } from 'helpers/objects';
 
-import { datumLoad } from '../datum';
-
-import paymentsAllowedAttributes from './private/paymentsAllowedAttributes';
-
 export default function loadAll(req) {
-  const reqSecured = reqSecure(req, paymentsAllowedAttributes);
+  reqSecure(req, paymentsAllowedAttributes);
   return new Promise((resolve, reject) => {
-    authentication(reqSecured).then(
+    authentication(req).then(
       user => {
         if (user && user.admin) {
           datumLoad({

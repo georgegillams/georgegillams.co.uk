@@ -1,3 +1,7 @@
+import { datumLoad, datumUpdate } from '../datum';
+
+import usersAllowedAttributes from './private/usersAllowedAttributes';
+
 import lockPromise from 'utils/lock';
 import authentication from 'utils/authentication';
 import { hash } from 'utils/hash';
@@ -7,24 +11,20 @@ import { sendEmailVerificationEmail } from 'utils/emailHelpers';
 import { UNAUTHORISED_WRITE, RESOURCE_NOT_FOUND } from 'helpers/constants';
 import reqSecure from 'utils/reqSecure';
 
-import { datumLoad, datumUpdate } from '../datum';
-
-import usersAllowedAttributes from './private/usersAllowedAttributes';
-
 export default function update(req) {
-  const reqSecured = reqSecure(req, usersAllowedAttributes);
+  reqSecure(req, usersAllowedAttributes);
   return lockPromise(
     'users',
     () =>
       new Promise((resolve, reject) => {
-        authentication(reqSecured).then(
+        authentication(req).then(
           user => {
-            userOwnsResource('users', reqSecured.body.id, user).then(
+            userOwnsResource('users', req.body.id, user).then(
               userOwnsResourceResult => {
                 datumLoad({ redisKey: 'users' }).then(userData => {
                   const { existingValue: userBeingUpdated } = find(
                     userData,
-                    reqSecured.body.id,
+                    req.body.id,
                   );
                   // Users should be able to update their own user
                   if (!userBeingUpdated) {
@@ -44,15 +44,13 @@ export default function update(req) {
                   }
 
                   // Only admins can upgrade someone to being admins!
-                  if (reqSecured.body.admin && (!user || !user.admin)) {
+                  if (req.body.admin && (!user || !user.admin)) {
                     reject(UNAUTHORISED_WRITE);
                     return;
                   }
 
                   const otherUsersWithSameUname = userData.filter(
-                    u =>
-                      u.uname === reqSecured.body.uname &&
-                      u.id !== reqSecured.body.id,
+                    u => u.uname === req.body.uname && u.id !== req.body.id,
                   );
 
                   // If another user already with the same username, we cannot allow it to be updated, as usernames must be unique
@@ -64,37 +62,34 @@ export default function update(req) {
                     return;
                   }
 
-                  if (reqSecured.body.password) {
-                    reqSecured.body.hash = hash(reqSecured.body.password);
-                    reqSecured.body.password = null;
+                  if (req.body.password) {
+                    req.body.hash = hash(req.body.password);
+                    req.body.password = null;
                   } else {
-                    reqSecured.body.hash = userBeingUpdated.hash;
+                    req.body.hash = userBeingUpdated.hash;
                   }
 
                   // IF USER EMAIL HAS CHANGED, IT NEED RE-VERIFYING
                   const emailVerificationRequired =
-                    reqSecured.body.email !== userBeingUpdated.email;
+                    req.body.email !== userBeingUpdated.email;
                   if (emailVerificationRequired) {
-                    reqSecured.body.email = reqSecured.body.email.toLowerCase();
-                    reqSecured.body.emailVerified = false;
-                    reqSecured.body.emailFingerprint = emailFingerprint(
-                      reqSecured.body.email,
+                    req.body.email = req.body.email.toLowerCase();
+                    req.body.emailVerified = false;
+                    req.body.emailFingerprint = emailFingerprint(
+                      req.body.email,
                     );
                   } else {
-                    reqSecured.body.emailFingerprint =
+                    req.body.emailFingerprint =
                       userBeingUpdated.emailFingerprint;
-                    reqSecured.body.emailVerified =
-                      userBeingUpdated.emailVerified;
+                    req.body.emailVerified = userBeingUpdated.emailVerified;
                   }
 
-                  datumUpdate({ redisKey: 'users' }, reqSecured).then(
-                    updatedUser => {
-                      if (emailVerificationRequired) {
-                        sendEmailVerificationEmail(updatedUser);
-                      }
-                      resolve(updatedUser);
-                    },
-                  );
+                  datumUpdate({ redisKey: 'users' }, req).then(updatedUser => {
+                    if (emailVerificationRequired) {
+                      sendEmailVerificationEmail(updatedUser);
+                    }
+                    resolve(updatedUser);
+                  });
                 });
               },
             );

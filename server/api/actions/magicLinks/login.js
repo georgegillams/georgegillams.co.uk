@@ -8,12 +8,12 @@ import { find } from 'utils/find';
 import reqSecure from 'utils/reqSecure';
 
 export default function loginmagiclink(req) {
-  const reqSecured = reqSecure(req, magicLinksAllowedAttributes);
+  reqSecure(req, magicLinksAllowedAttributes);
   return lockPromise(
     'magiclinks',
     () =>
       new Promise((resolve, reject) => {
-        const { magicLinkKey } = reqSecured.body;
+        const { magicLinkKey } = req.body;
         datumLoad({ redisKey: 'magiclinks' }).then(magicLinkData => {
           datumLoad({ redisKey: 'users' }).then(userData => {
             // `find` uses `safeCompare` so it is safe to use for finding the entry that matches the key
@@ -28,7 +28,7 @@ export default function loginmagiclink(req) {
                 // invalidate magic link (set expiry to 0)
                 magicLink.expiry = 0;
                 datumUpdate({ redisKey: 'magiclinks' }, { body: magicLink });
-                resolve(loginUser(reqSecured, user));
+                resolve(loginUser(req, user));
               } else {
                 reject({
                   error: 'wrong-input',

@@ -1,15 +1,15 @@
-import authentication from 'utils/authentication';
-import { UNAUTHORISED_READ } from 'helpers/constants';
-import reqSecure from 'utils/reqSecure';
-
 import { datumLoad } from '../datum';
 
 import usersAllowedAttributes from './private/usersAllowedAttributes';
 
+import authentication from 'utils/authentication';
+import { UNAUTHORISED_READ } from 'helpers/constants';
+import reqSecure from 'utils/reqSecure';
+
 export default function load(req) {
-  const reqSecured = reqSecure(req, usersAllowedAttributes);
+  reqSecure(req, usersAllowedAttributes);
   return new Promise((resolve, reject) => {
-    authentication(reqSecured).then(
+    authentication(req).then(
       user => {
         if (user && user.admin) {
           resolve(datumLoad({ includeDeleted: true, redisKey: 'users' }));

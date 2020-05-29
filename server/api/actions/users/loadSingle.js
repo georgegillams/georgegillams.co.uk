@@ -1,19 +1,19 @@
+import { datumLoadSingle } from '../datum';
+
 import { UNAUTHORISED_READ } from 'helpers/constants';
 import authentication from 'utils/authentication';
 import reqSecure from 'utils/reqSecure';
 
-import { datumLoadSingle } from '../datum';
-
 export default function loadSingle(req) {
-  const reqSecured = reqSecure(req, []);
+  reqSecure(req, []);
   return new Promise((resolve, reject) => {
-    authentication(reqSecured).then(
+    authentication(req).then(
       user => {
         if (user && user.admin) {
           resolve(
             datumLoadSingle({
               redisKey: 'users',
-              filter: ar => ar.id === reqSecured.query.id,
+              filter: ar => ar.id === req.query.id,
             }),
           );
         } else {

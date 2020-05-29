@@ -1,20 +1,20 @@
-import authentication from 'utils/authentication';
-import reqSecure from 'utils/reqSecure';
-
 import { datumLoadSingle } from '../datum';
 
 import commentsAllowedAttributes from './private/commentsAllowedAttributes';
 
+import authentication from 'utils/authentication';
+import reqSecure from 'utils/reqSecure';
+
 export default function loadSingle(req) {
-  const reqSecured = reqSecure(req, commentsAllowedAttributes);
+  reqSecure(req, commentsAllowedAttributes);
   return new Promise((resolve, reject) => {
-    authentication(reqSecured).then(
+    authentication(req).then(
       user => {
         resolve(
           datumLoadSingle({
             redisKey: 'comments',
             includeDeleted: user && user.admin,
-            filter: ar => ar.id === reqSecured.query.id,
+            filter: ar => ar.id === req.query.id,
           }),
         );
       },

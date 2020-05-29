@@ -10,9 +10,9 @@ import { sendEmailVerificationEmail } from 'utils/emailHelpers';
 import { UNAUTHORISED_WRITE } from 'helpers/constants';
 
 export default function requestVerificationEmail(req) {
-  const reqSecured = reqSecure(req, authAllowedAttributes);
+  reqSecure(req, authAllowedAttributes);
   return new Promise((resolve, reject) => {
-    authentication(reqSecured).then(user => {
+    authentication(req).then(user => {
       if (user) {
         sendEmailVerificationEmail(user);
         resolve({ success: 'Verification email resent' });

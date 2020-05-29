@@ -1,20 +1,20 @@
-import lockPromise from 'utils/lock';
-import authentication from 'utils/authentication';
-import reqSecure from 'utils/reqSecure';
-
 import { datumCreate } from '../datum';
 
 import grammarMLAllowedAttributes from './grammarMLAllowedAttributes';
 
+import lockPromise from 'utils/lock';
+import authentication from 'utils/authentication';
+import reqSecure from 'utils/reqSecure';
+
 export default function create(req) {
-  const reqSecured = reqSecure(req, grammarMLAllowedAttributes);
+  reqSecure(req, grammarMLAllowedAttributes);
   return lockPromise(
     'grammarML',
     () =>
       new Promise((resolve, reject) => {
-        authentication(reqSecured).then(
+        authentication(req).then(
           user => {
-            const { text } = reqSecured.body;
+            const { text } = req.body;
             const sentences = text
               .split('.')
               .join('.SPLIT_HERE')
