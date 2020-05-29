@@ -44,7 +44,7 @@
     "backstopjs:test:allow-failure": "npm run start:test & (sleep 5 && node ./scripts/backstopjs/backstop.js --allowFailure)",
     "test": "cross-env NODE_ENV=test SECRET_API_KEY=asdfghjkl NODE_PATH=./server/api:./app jest --coverage",
     "test:clean": "rimraf ./coverage",
-    "test:watch": "cross-env NODE_ENV=test SECRET_API_KEY=asdfghjkl NODE_PATH=./server/api:./app jest --watchAll"
+    "test:watch": "cross-env NODE_ENV=test SECRET_API_KEY=asdfghjkl NODE_PATH=./server/api:./app node --inspect node_modules/.bin/jest --runInBand --watchAll"
   },
   "lint-staged": {
     "*.js": [
@@ -160,6 +160,7 @@
     "eslint-plugin-flowtype": "^5.1.0",
     "eslint-plugin-import": "^2.18.2",
     "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-promise": "^4.2.1",
     "eslint-plugin-react": "^7.20.0",
     "eslint-plugin-redux-saga": "^1.1.1",
     "eslint_d": "^8.0.0",

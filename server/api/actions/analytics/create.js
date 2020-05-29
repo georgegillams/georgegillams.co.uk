@@ -7,25 +7,15 @@ import authentication from 'utils/authentication';
 import reqSecure from 'utils/reqSecure';
 
 export default function create(req) {
-  const reqSecured = reqSecure(req, analyticsAllowedAttributes);
-  return lockPromise(
-    'analytics',
-    () =>
-      new Promise((resolve, reject) => {
-        authentication(reqSecured)
-          .then(user => {
-            let ipAddress = req.connection.remoteAddress;
-            if (req.headers['x-forwarded-for']) {
-              ipAddress = req.headers['x-forwarded-for'];
-            }
-            datumCreate(
-              { redisKey: 'analytics', user },
-              { ...reqSecured, ipAddress },
-            )
-              .then(() => resolve({ result: true }))
-              .catch(err => reject(err));
-          })
-          .catch(err => reject(err));
-      }),
+  reqSecure(req, analyticsAllowedAttributes);
+  return lockPromise('analytics', () =>
+    authentication(req).then(user => {
+      let ipAddress = req.connection.remoteAddress;
+      if (req.headers['x-forwarded-for']) {
+        ipAddress = req.headers['x-forwarded-for'];
+      }
+      req.body.ipAddress = ipAddress;
+      return datumCreate({ redisKey: 'analytics', user }, req);
+    }),
   );
 }
