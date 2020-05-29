@@ -49,7 +49,7 @@ export default function create(req) {
                   datumCreate({ redisKey: 'users', user }, req).then(
                     newUser => {
                       sendEmailVerificationEmail(newUser);
-                      loginUser(req, newUser, resolve, reject);
+                      loginUser(newUser);
                       resolve({ message: 'User created' });
                     },
                   );

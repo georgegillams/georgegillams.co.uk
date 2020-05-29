@@ -15,7 +15,7 @@ export default function loadAuth(req) {
           },
         });
       } else {
-        resolve();
+        resolve({ user: null });
       }
     });
   });

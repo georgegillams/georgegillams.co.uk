@@ -28,7 +28,9 @@ export default function loginmagiclink(req) {
                 // invalidate magic link (set expiry to 0)
                 magicLink.expiry = 0;
                 datumUpdate({ redisKey: 'magiclinks' }, { body: magicLink });
-                resolve(loginUser(req, user));
+                loginUser(user).then(sessionKey => {
+                  resolve({ ...user, session: sessionKey });
+                });
               } else {
                 reject({
                   error: 'wrong-input',
