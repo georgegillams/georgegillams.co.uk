@@ -1,21 +1,21 @@
+import { datumLoad } from '../datum';
+
+import stripePaymentsAllowedAttributes from './private/stripePaymentsAllowedAttributes';
+
 import authentication from 'utils/authentication';
 import { sendPaymentReceiptEmail } from 'utils/emailHelpers';
 import reqSecure from 'utils/reqSecure';
 import { find } from 'utils/find';
 import { UNAUTHORISED_READ } from 'helpers/constants';
 
-import { datumLoad } from '../datum';
-
-import stripePaymentsAllowedAttributes from './private/stripePaymentsAllowedAttributes';
-
 export default function resendPaymentReceipt(req) {
   // TODO rewrite to use payment email
-  const reqSecured = reqSecure(req, stripePaymentsAllowedAttributes);
+  reqSecure(req, stripePaymentsAllowedAttributes);
   return new Promise((resolve, reject) => {
-    authentication(reqSecured).then(
+    authentication(req).then(
       user => {
         if (user && user.admin) {
-          const userIdToResendTo = reqSecured.body.resendId;
+          const userIdToResendTo = req.body.resendId;
           datumLoad({
             redisKey: 'users',
           }).then(userData => {

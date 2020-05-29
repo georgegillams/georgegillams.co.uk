@@ -3,9 +3,9 @@ import lockPromise from 'utils/lock';
 import getPaymentAndBalance from './getPaymentAndBalance';
 import sendUnsentPaymentReceipts from './sendUnsentPaymentReceipts';
 
-export default function loadSingle(reqSecured) {
+export default function loadSingle(req) {
   return new Promise((resolve, reject) => {
-    getPaymentAndBalance(reqSecured.body.paymentId)
+    getPaymentAndBalance(req.body.paymentId)
       .then(payment => {
         sendUnsentPaymentReceipts(payment)
           .then(() => {

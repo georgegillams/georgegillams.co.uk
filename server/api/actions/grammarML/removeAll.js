@@ -1,16 +1,16 @@
+import { datumRemove, datumLoad } from '../datum';
+
+import grammarMLAllowedAttributes from './grammarMLAllowedAttributes';
+
 import redis from 'utils/redis';
 import authentication from 'utils/authentication';
 import { PROJECT_NAME, UNAUTHORISED_WRITE } from 'helpers/constants';
 import reqSecure from 'utils/reqSecure';
 
-import { datumRemove, datumLoad } from '../datum';
-
-import grammarMLAllowedAttributes from './grammarMLAllowedAttributes';
-
 export default function removeAll(req) {
-  const reqSecured = reqSecure(req, grammarMLAllowedAttributes);
+  reqSecure(req, grammarMLAllowedAttributes);
   return new Promise((resolve, reject) => {
-    authentication(reqSecured).then(
+    authentication(req).then(
       user => {
         datumLoad({ redisKey: 'grammarML', includeDeleted: true }).then(
           collectionData => {

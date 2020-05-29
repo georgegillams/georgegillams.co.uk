@@ -6,7 +6,7 @@ import { INVALID_SESSION, INVALID_CREDENTIALS } from 'helpers/constants';
 import { generateKey } from 'utils/hash';
 import setContentLastUpdatedTimestamp from 'utils/setContentLastUpdatedTimestamp';
 
-export default function login(reqSecured, userProfile) {
+export default function login(req, userProfile) {
   return lockPromise(
     'sessions',
     () =>

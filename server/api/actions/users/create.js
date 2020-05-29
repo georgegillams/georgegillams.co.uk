@@ -12,25 +12,25 @@ import { UNAUTHORISED_WRITE } from 'helpers/constants';
 import reqSecure from 'utils/reqSecure';
 
 export default function create(req) {
-  const reqSecured = reqSecure(req, usersAllowedAttributes);
+  reqSecure(req, usersAllowedAttributes);
   return lockPromise(
     'users',
     () =>
       new Promise((resolve, reject) => {
-        authentication(reqSecured).then(
+        authentication(req).then(
           user => {
             datumLoad({ redisKey: 'users' }).then(userData => {
               // Only admins can create admins!
-              if ((user && user.admin) || !reqSecured.body.admin) {
+              if ((user && user.admin) || !req.body.admin) {
                 // If a user already has the username, we cannot allow a new one to be created
                 const { existingValue: userWithSameUname } = find(
                   userData,
-                  reqSecured.body.uname,
+                  req.body.uname,
                   'uname',
                 );
                 const { existingValue: userWithSameEmail } = find(
                   userData,
-                  emailFingerprint(reqSecured.body.email),
+                  emailFingerprint(req.body.email),
                   'emailFingerprint',
                 );
                 if (userWithSameUname || userWithSameEmail) {
@@ -39,19 +39,17 @@ export default function create(req) {
                     reason: 'A user with that username already exists',
                   });
                 } else {
-                  if (reqSecured.body.password) {
-                    reqSecured.body.hash = hash(reqSecured.body.password);
-                    reqSecured.body.password = null;
+                  if (req.body.password) {
+                    req.body.hash = hash(req.body.password);
+                    req.body.password = null;
                   }
-                  reqSecured.body.emailFingerprint = emailFingerprint(
-                    reqSecured.body.email,
-                  );
-                  reqSecured.body.email = reqSecured.body.email.toLowerCase();
-                  reqSecured.body.emailVerified = false;
-                  datumCreate({ redisKey: 'users', user }, reqSecured).then(
+                  req.body.emailFingerprint = emailFingerprint(req.body.email);
+                  req.body.email = req.body.email.toLowerCase();
+                  req.body.emailVerified = false;
+                  datumCreate({ redisKey: 'users', user }, req).then(
                     newUser => {
                       sendEmailVerificationEmail(newUser);
-                      loginUser(reqSecured, newUser, resolve, reject);
+                      loginUser(req, newUser, resolve, reject);
                       resolve({ message: 'User created' });
                     },
                   );

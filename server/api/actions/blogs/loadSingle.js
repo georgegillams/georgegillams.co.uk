@@ -4,9 +4,9 @@ import authentication from 'utils/authentication';
 import reqSecure from 'utils/reqSecure';
 
 export default function loadSingle(req, params) {
-  const reqSecured = reqSecure(req, []);
+  reqSecure(req, []);
   return new Promise((resolve, reject) => {
-    authentication(reqSecured).then(
+    authentication(req).then(
       user => {
         resolve(
           datumLoadSingle({

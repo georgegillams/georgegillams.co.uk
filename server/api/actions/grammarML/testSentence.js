@@ -1,8 +1,5 @@
 import jsregression from 'js-regression';
 import winkPerceptron from 'wink-perceptron';
-import authentication from 'utils/authentication';
-import { UNAUTHORISED_WRITE } from 'helpers/constants';
-import reqSecure from 'utils/reqSecure';
 
 import { datumUpdate, datumLoad } from '../datum';
 
@@ -16,16 +13,20 @@ import {
   THEIR_VALUE,
 } from './helpers';
 
+import authentication from 'utils/authentication';
+import { UNAUTHORISED_WRITE } from 'helpers/constants';
+import reqSecure from 'utils/reqSecure';
+
 export default function test(req) {
-  const reqSecured = reqSecure(req, grammarMLAllowedAttributes);
+  reqSecure(req, grammarMLAllowedAttributes);
   return new Promise((resolve, reject) => {
-    authentication(reqSecured).then(
+    authentication(req).then(
       user => {
-        const { text } = reqSecured.body;
+        const { text } = req.body;
         datumLoad({
           redisKey: 'grammarML',
         }).then(trainingData => {
-          const testData = [reqSecured.body];
+          const testData = [req.body];
           const annotatedData = annotateSentences(trainingData);
           const annotatedTestData = annotateSentences(testData);
           const dataMatrix = extractDataMatrix(annotatedData);

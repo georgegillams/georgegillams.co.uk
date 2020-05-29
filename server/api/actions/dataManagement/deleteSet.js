@@ -1,3 +1,5 @@
+import { datumLoad, datumUpdate } from '../datum';
+
 import {
   STRING_REGEX,
   ID_REGEX,
@@ -11,19 +13,17 @@ import authentication from 'utils/authentication';
 import setContentLastUpdatedTimestamp from 'utils/setContentLastUpdatedTimestamp';
 import reqSecure from 'utils/reqSecure';
 
-import { datumLoad, datumUpdate } from '../datum';
-
 const deleteSetAllowedAttributes = [
   { attribute: 'collectionName', pattern: STRING_REGEX },
 ];
 
 export default function deleteSet(req) {
-  const reqSecured = reqSecure(req, deleteSetAllowedAttributes);
+  reqSecure(req, deleteSetAllowedAttributes);
   return new Promise((resolve, reject) => {
-    authentication(reqSecured).then(
+    authentication(req).then(
       user => {
         if (user && user.admin) {
-          const { collectionName } = reqSecured.body;
+          const { collectionName } = req.body;
           if (!collectionName) {
             reject({
               error: `wrong-input`,

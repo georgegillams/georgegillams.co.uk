@@ -1,12 +1,12 @@
-import reqSecure from 'utils/reqSecure';
-import lockPromise from 'utils/lock';
-
 import { datumCreate } from '../datum';
 
 import loadPayment from './private/loadPayment';
 import stripeInstance from './private/stripe';
 import formatStripeError from './private/formatStripeError';
 import stripePaymentsAllowedAttributes from './private/stripePaymentsAllowedAttributes';
+
+import lockPromise from 'utils/lock';
+import reqSecure from 'utils/reqSecure';
 
 const createNewPaymentIntent = payment =>
   new Promise((resolve, reject) => {
@@ -26,12 +26,12 @@ const createNewPaymentIntent = payment =>
   });
 
 export default function createIntent(req) {
-  const reqSecured = reqSecure(req, stripePaymentsAllowedAttributes);
+  reqSecure(req, stripePaymentsAllowedAttributes);
   return lockPromise(
     'stripepayments',
     () =>
       new Promise((resolve, reject) => {
-        loadPayment(reqSecured)
+        loadPayment(req)
           .then(payment => {
             createNewPaymentIntent(payment)
               .then(paymentIntent => {

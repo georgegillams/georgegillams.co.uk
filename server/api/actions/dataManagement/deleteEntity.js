@@ -1,3 +1,5 @@
+import { datumLoad, datumUpdate } from '../datum';
+
 import {
   STRING_REGEX,
   ID_REGEX,
@@ -11,20 +13,18 @@ import authentication from 'utils/authentication';
 import setContentLastUpdatedTimestamp from 'utils/setContentLastUpdatedTimestamp';
 import reqSecure from 'utils/reqSecure';
 
-import { datumLoad, datumUpdate } from '../datum';
-
 const deleteEntityAllowedAttributes = [
   { attribute: 'collectionName', pattern: STRING_REGEX },
   { attribute: 'id', pattern: ID_REGEX },
 ];
 
 export default function deleteEntity(req) {
-  const reqSecured = reqSecure(req, deleteEntityAllowedAttributes);
+  reqSecure(req, deleteEntityAllowedAttributes);
   return new Promise((resolve, reject) => {
-    authentication(reqSecured).then(
+    authentication(req).then(
       user => {
         if (user && user.admin) {
-          const { collectionName, id } = reqSecured.body;
+          const { collectionName, id } = req.body;
           datumLoad({ redisKey: collectionName, includeDeleted: true }).then(
             collectionData => {
               const { existingValue, existingValueIndex } = find(

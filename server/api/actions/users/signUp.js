@@ -22,7 +22,7 @@ const usernameTakenErrorMessage = {
 };
 
 export default function signUp(req) {
-  const reqSecured = reqSecure(req, usersAllowedAttributes);
+  reqSecure(req, usersAllowedAttributes);
   return lockPromise(
     'users',
     () =>
@@ -31,12 +31,12 @@ export default function signUp(req) {
         datumLoad({ redisKey: 'users' }).then(userData => {
           const { existingValue: userWithSameEmail } = find(
             userData,
-            reqSecured.body.email.toLowerCase(),
+            req.body.email.toLowerCase(),
             'email',
           );
           const { existingValue: userWithSameUname } = find(
             userData,
-            reqSecured.body.uname,
+            req.body.uname,
             'uname',
           );
           if (userWithSameEmail) {
@@ -44,8 +44,8 @@ export default function signUp(req) {
           } else if (userWithSameUname && USERNAMES_ENABLED) {
             reject(usernameTakenErrorMessage);
           } else {
-            datumCreate({ redisKey: 'users' }, reqSecured).then(createdUser => {
-              loginUser(reqSecured, createdUser).then(loginResult => {
+            datumCreate({ redisKey: 'users' }, req).then(createdUser => {
+              loginUser(req, createdUser).then(loginResult => {
                 sendEmailVerificationEmail(loginResult);
                 resolve(loginResult);
               });

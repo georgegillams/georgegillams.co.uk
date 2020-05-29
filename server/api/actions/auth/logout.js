@@ -9,7 +9,7 @@ import setContentLastUpdatedTimestamp from 'utils/setContentLastUpdatedTimestamp
 import reqSecure from 'utils/reqSecure';
 
 export default function logout(req) {
-  const reqSecured = reqSecure(req, authAllowedAttributes);
+  reqSecure(req, authAllowedAttributes);
   return lockPromise(
     'sessions',
     () =>
@@ -17,7 +17,7 @@ export default function logout(req) {
         datumLoad({ redisKey: 'sessions' }).then(sessionData => {
           const { existingValue: session } = find(
             sessionData,
-            reqSecured.cookies.session,
+            req.cookies.session,
             'sessionKey',
           );
           if (session) {
