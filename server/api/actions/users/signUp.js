@@ -45,9 +45,9 @@ export default function signUp(req) {
             reject(usernameTakenErrorMessage);
           } else {
             datumCreate({ redisKey: 'users' }, req).then(createdUser => {
-              loginUser(req, createdUser).then(loginResult => {
-                sendEmailVerificationEmail(loginResult);
-                resolve(loginResult);
+              loginUser(createdUser).then(sessionKey => {
+                sendEmailVerificationEmail(createdUser);
+                resolve({ ...createdUser, session: sessionKey });
               });
             });
           }
