@@ -42,9 +42,9 @@
     "start:production": "npm run test && npm run build && npm run start:prod",
     "backstopjs:test": "npm run start:test & (sleep 5 && node ./scripts/backstopjs/backstop.js)",
     "backstopjs:test:allow-failure": "npm run start:test & (sleep 5 && node ./scripts/backstopjs/backstop.js --allowFailure)",
-    "test": "cross-env NODE_ENV=test SECRET_API_KEY=asdfghjkl NODE_PATH=./server/api:./app jest --coverage",
+    "test": "jest --coverage",
     "test:clean": "rimraf ./coverage",
-    "test:watch": "cross-env NODE_ENV=test SECRET_API_KEY=asdfghjkl NODE_PATH=./server/api:./app node --inspect node_modules/.bin/jest --runInBand --watchAll"
+    "test:watch": "node --inspect node_modules/.bin/jest --runInBand --watchAll"
   },
   "lint-staged": {
     "*.js": [
