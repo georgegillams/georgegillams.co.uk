@@ -34,14 +34,14 @@ const createSomeValues = () => {
     .then(createdUser =>
       datumCreate(
         { redisKey: 'sessions' },
-        { body: { userId: createdUser.id, sessionKey: '2nvo74' } },
+        { body: { userId: createdUser.id, sessionKey: 'sessionKey1' } },
       ),
     )
     .then(() => datumCreate({ redisKey: 'users' }, { body: user2 }))
     .then(createdUser =>
       datumCreate(
         { redisKey: 'sessions' },
-        { body: { userId: createdUser.id, sessionKey: '4hca3r' } },
+        { body: { userId: createdUser.id, sessionKey: 'sessionKey2' } },
       ),
     );
 };
@@ -66,12 +66,12 @@ test('load auth with no session', () => {
 
 test('load auth with session', () => {
   const req1 = {
-    cookies: { session: '2nvo74' },
+    cookies: { session: 'sessionKey1' },
     headers: {},
     body: {},
   };
   const req2 = {
-    cookies: { session: '4hca3r' },
+    cookies: { session: 'sessionKey2' },
     headers: {},
     body: {},
   };
