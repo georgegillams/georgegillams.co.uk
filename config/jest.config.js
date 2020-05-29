@@ -18,7 +18,7 @@ module.exports = {
   },
   coverageReporters: ['json', 'lcov', 'text-summary'],
   testPathIgnorePatterns: ['<rootDir>/build/', '<rootDir>/node_modules/'],
-  moduleDirectories: ['node_modules', 'app'],
+  moduleDirectories: ['node_modules', 'app', 'server/api'],
   moduleNameMapper: {
     '.*\\.(css|less|styl|scss|sass)$':
       '<rootDir>/config/jest-mocks/cssModule.js',
