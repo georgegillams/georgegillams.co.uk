@@ -12,13 +12,19 @@ const clearDatabaseCollection = collectionName => {
 const createUsersWithSessions = () => {
   const user1 = {
     requestedId: 'adminUser1',
+    name: 'Admin User One',
     uname: 'adminUser1',
+    email: 'adminUser1@example.com',
+    emailVerified: true,
     admin: true,
   };
 
   const user2 = {
     requestedId: 'nonAdminUser1',
+    name: 'Non Admin User One',
     uname: 'nonAdminUser1',
+    email: 'nonAdminUser1@example.com',
+    emailVerified: true,
     admin: false,
   };
 

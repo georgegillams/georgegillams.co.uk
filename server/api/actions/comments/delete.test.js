@@ -2,7 +2,7 @@
 
 import { datumCreate, datumLoad } from '../datum';
 
-import deleteBlog from './delete.js';
+import deleteComment from './delete.js';
 
 import { AuthError, NotFoundError } from 'helpers/Errors';
 import {
@@ -13,58 +13,67 @@ import {
 beforeEach(() => {
   clearDatabaseCollection('users');
   clearDatabaseCollection('sessions');
-  clearDatabaseCollection('blogs');
+  clearDatabaseCollection('comments');
 });
 
 const createSomeValues = () => {
-  const blog1 = {
-    requestedId: 'blog1',
+  const comment1 = {
+    requestedId: 'comment1',
   };
-  const blog2 = {
-    requestedId: 'blog2',
+  const comment2 = {
+    requestedId: 'comment2',
+  };
+  const comment3 = {
+    requestedId: 'comment3',
   };
 
-  return datumCreate({ redisKey: 'blogs' }, { body: blog1 }).then(() =>
-    datumCreate({ redisKey: 'blogs' }, { body: blog2 }),
-  );
+  return datumCreate({ redisKey: 'comments' }, { body: comment1 })
+    .then(() => datumCreate({ redisKey: 'comments' }, { body: comment2 }))
+    .then(() =>
+      datumCreate(
+        { redisKey: 'comments', user: { id: 'nonAdminUser1' } },
+        { body: comment3 },
+      ),
+    );
 };
 
-test('delete blog as admin', () => {
+test('delete comment as admin', () => {
   const req = {
     cookies: { session: 'adminSessionKey1' },
     headers: {},
     body: {
-      id: 'blog1',
+      id: 'comment1',
     },
   };
 
   return createUsersWithSessions()
     .then(() => createSomeValues())
-    .then(() => deleteBlog(req))
+    .then(() => deleteComment(req))
     .then(result => {
       expect(result).toBeTruthy();
       return true;
     })
-    .then(() => datumLoad({ redisKey: 'blogs' }))
-    .then(blogs => {
-      expect(blogs.length).toBe(1);
-      expect(blogs[0].id).toBe('blog2');
+    .then(() => datumLoad({ redisKey: 'comments' }))
+    .then(comments => {
+      expect(comments.length).toBe(2);
+      expect(comments[0].id).toBe('comment2');
+      expect(comments[1].id).toBe('comment3');
       return true;
     });
 });
 
-test('delete non-existent blog as admin', () => {
+test('delete non-existent comment as admin', () => {
   const req = {
     cookies: { session: 'adminSessionKey1' },
     headers: {},
     body: {
-      id: 'blogNotExists',
+      id: 'commentNotExists',
     },
   };
 
   return createUsersWithSessions()
     .then(() => createSomeValues())
-    .then(() => deleteBlog(req))
+    .then(() => deleteComment(req))
     .then(() => {
       // The action should have thrown an error
       throw new Error('Should have thrown an error already');
@@ -74,18 +83,39 @@ test('delete non-existent blog as admin', () => {
     });
 });
 
-test('delete blog non-admin', () => {
+test('delete own comment non-admin', () => {
   const req = {
     cookies: { session: 'nonAdminSessionKey1' },
     headers: {},
     body: {
-      id: 'blog1',
+      id: 'comment3',
     },
   };
 
   return createUsersWithSessions()
     .then(() => createSomeValues())
-    .then(() => deleteBlog(req))
+    .then(() => deleteComment(req))
+    .then(() => datumLoad({ redisKey: 'comments' }))
+    .then(comments => {
+      expect(comments.length).toBe(2);
+      expect(comments[0].id).toBe('comment1');
+      expect(comments[1].id).toBe('comment2');
+      return true;
+    });
+});
+
+test('delete other comment non-admin', () => {
+  const req = {
+    cookies: { session: 'nonAdminSessionKey2' },
+    headers: {},
+    body: {
+      id: 'comment2',
+    },
+  };
+
+  return createUsersWithSessions()
+    .then(() => createSomeValues())
+    .then(() => deleteComment(req))
     .then(() => {
       // The action should have thrown an error
       throw new Error('Should have thrown an error already');
@@ -95,17 +125,17 @@ test('delete blog non-admin', () => {
     });
 });
 
-test('delete blog unauthenticated', () => {
+test('delete comment unauthenticated', () => {
   const req = {
     cookies: {},
     headers: {},
     body: {
-      id: 'blog1',
+      id: 'comment1',
     },
   };
 
   return createSomeValues()
-    .then(() => deleteBlog(req))
+    .then(() => deleteComment(req))
     .then(() => {
       // The action should have thrown an error
       throw new Error('Should have thrown an error already');

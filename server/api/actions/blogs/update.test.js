@@ -113,7 +113,8 @@ test('update blog unauthenticated throws error', () => {
     },
   };
 
-  return updateBlog(req)
+  return createSomeValues()
+    .then(() => updateBlog(req))
     .then(() => {
       // The action should have thrown an error
       throw new Error('Should have thrown an error already');
