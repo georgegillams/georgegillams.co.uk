@@ -1,6 +1,6 @@
 import authentication from 'utils/authentication';
 
-export default function loadAuth(req) {
+export default function load(req) {
   return authentication(req).then(user => {
     if (user) {
       return {
