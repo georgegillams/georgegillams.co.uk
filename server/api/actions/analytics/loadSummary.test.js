@@ -71,7 +71,7 @@ test('load summary analytics admin', () => {
     });
 });
 
-test('load summary analytics authenticated non-admin', () => {
+test('load summary analytics non-admin', () => {
   const req = {
     cookies: { session: 'nonAdminSessionKey1' },
     headers: {},
