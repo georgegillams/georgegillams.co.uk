@@ -1,7 +1,8 @@
+import { datumLoad, datumUpdate } from '../datum';
+
 import lockPromise from 'utils/lock';
 import { find } from 'utils/find';
-
-import { datumLoad, datumUpdate } from '../datum';
+import { AuthError } from 'helpers/Errors';
 
 export default function verifyemail(req) {
   return lockPromise(
@@ -18,7 +19,7 @@ export default function verifyemail(req) {
               'key',
             );
             if (emailVerification) {
-              if (Date.now() < new Date(emailVerification.expiry).getTime()) {
+              if (Date.now() < emailVerification.expiry) {
                 // invalidate magic link (set expiry to 0)
                 emailVerification.expiry = 0;
                 datumUpdate(
@@ -34,23 +35,14 @@ export default function verifyemail(req) {
                     user.emailVerified = true;
                     resolve(datumUpdate({ redisKey: 'users' }, { body: user }));
                   } else {
-                    reject({
-                      error: 'wrong-input',
-                      errorMessage: 'Invalid user',
-                    });
+                    reject(new AuthError('Invalid user'));
                   }
                 });
               } else {
-                reject({
-                  error: 'wrong-input',
-                  errorMessage: 'Email verification link has expired',
-                });
+                reject(new AuthError('Email verification link has expired'));
               }
             } else {
-              reject({
-                error: 'wrong-input',
-                errorMessage: 'Invalid verification link',
-              });
+              reject(new AuthError('Invalid verification link'));
             }
           },
         );
