@@ -4,7 +4,10 @@ import { datumCreate, datumLoad } from '../datum';
 
 import verifyEmail from './verifyEmail.js';
 
-import { clearDatabaseCollection } from 'utils/testUtils';
+import {
+  clearDatabaseCollection,
+  createUsersWithSessions,
+} from 'utils/testUtils';
 import { AuthError } from 'helpers/Errors';
 
 beforeEach(() => {
@@ -13,33 +16,15 @@ beforeEach(() => {
 });
 
 const createSomeValues = () => {
-  const user1 = {
-    requestedId: 'test1',
-    name: 'Test One',
-    uname: 'test1',
-    email: 'test1@example.com',
-    emailVerified: true,
-    admin: false,
-  };
-
-  const user2 = {
-    requestedId: 'test2',
-    name: 'Test Two',
-    uname: 'test2',
-    email: 'test2@example.com',
-    emailVerified: true,
-    admin: true,
-  };
-
   const emailVerificationCode1 = {
     key: 'emailVerificationKey1',
-    userId: 'test1',
+    userId: 'adminUser1',
     expiry: new Date(Date.now() + 60 * 60),
   };
 
   const emailVerificationCode2 = {
     key: 'emailVerificationKey2',
-    userId: 'test2',
+    userId: 'nonAdminUser1',
     expiry: new Date(Date.now() + 60 * 60),
   };
 
@@ -49,14 +34,10 @@ const createSomeValues = () => {
     expiry: new Date(Date.now() + 60 * 60),
   };
 
-  return datumCreate({ redisKey: 'users' }, { body: user1 })
-    .then(() => datumCreate({ redisKey: 'users' }, { body: user2 }))
-    .then(() =>
-      datumCreate(
-        { redisKey: 'emailVerificationCodes' },
-        { body: emailVerificationCode1 },
-      ),
-    )
+  return datumCreate(
+    { redisKey: 'emailVerificationCodes' },
+    { body: emailVerificationCode1 },
+  )
     .then(() =>
       datumCreate(
         { redisKey: 'emailVerificationCodes' },
@@ -78,7 +59,8 @@ test('verify email with non-existent code', () => {
     body: { verificationKey: 'emailVerificationKeyDoesNotExist' },
   };
 
-  return createSomeValues()
+  return createUsersWithSessions()
+    .then(() => createSomeValues())
     .then(() => verifyEmail(req))
     .then(() => {
       // The action should have thrown an error
@@ -97,7 +79,8 @@ test('verification sets code expiry to 0', () => {
     body: { verificationKey: 'emailVerificationKey2' },
   };
 
-  return createSomeValues()
+  return createUsersWithSessions()
+    .then(() => createSomeValues())
     .then(() => verifyEmail(req))
     .then(() => datumLoad({ redisKey: 'emailVerificationCodes' }))
     .then(codes => {
@@ -120,7 +103,8 @@ test('verify email with expired code', () => {
     body: { verificationKey: 'emailVerificationKey1' },
   };
 
-  return createSomeValues()
+  return createUsersWithSessions()
+    .then(() => createSomeValues())
     .then(() => verifyEmail(req))
     .then(() => verifyEmail(req))
     .then(() => {
@@ -140,7 +124,8 @@ test('verify email with code not matching user', () => {
     body: { verificationKey: 'emailVerificationKey3' },
   };
 
-  return createSomeValues()
+  return createUsersWithSessions()
+    .then(() => createSomeValues())
     .then(() => verifyEmail(req))
     .then(() => {
       // The action should have thrown an error

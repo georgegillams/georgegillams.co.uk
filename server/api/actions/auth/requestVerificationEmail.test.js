@@ -2,7 +2,10 @@
 
 import requestVerificationEmail from './requestVerificationEmail.js';
 
-import { clearDatabaseCollection } from 'utils/testUtils';
+import {
+  clearDatabaseCollection,
+  createUsersWithSessions,
+} from 'utils/testUtils';
 import { AuthError } from 'helpers/Errors';
 import { UNAUTHORISED_WRITE } from 'helpers/constants';
 
@@ -18,7 +21,8 @@ test('request verification email unauthenticated', () => {
     body: {},
   };
 
-  return requestVerificationEmail(req)
+  return createUsersWithSessions()
+    .then(() => requestVerificationEmail(req))
     .then(() => {
       // The action should have thrown an error
       throw new Error('Should have thrown an error already');
@@ -31,14 +35,16 @@ test('request verification email unauthenticated', () => {
 
 test('request verification email authenticated', () => {
   const req = {
-    cookies: {},
-    headers: { apikey: 'asdfghjkl' },
+    cookies: { session: 'nonAdminSessionKey1' },
+    headers: {},
     body: {},
   };
 
-  return requestVerificationEmail(req).then(result => {
-    expect(result.success).toBeTruthy();
-    expect(result.success).toBe('Verification email resent');
-    return true;
-  });
+  return createUsersWithSessions()
+    .then(() => requestVerificationEmail(req))
+    .then(result => {
+      expect(result.success).toBeTruthy();
+      expect(result.success).toBe('Verification email resent');
+      return true;
+    });
 });
