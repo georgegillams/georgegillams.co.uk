@@ -38,7 +38,7 @@ export function* doLoadBlogs() {
       yield put(loadBlogsError(blogsResult));
       yield put(pushMessage(blogsLoadErrorMessage));
     } else {
-      yield put(loadBlogsSuccess(blogsResult));
+      yield put(loadBlogsSuccess(blogsResult.blogs));
       yield put(pushMessage(loadBlogsSuccessMessage));
     }
   } catch (err) {

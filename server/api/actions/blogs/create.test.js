@@ -34,7 +34,7 @@ test('create blog as admin', () => {
     });
 });
 
-test('create blog authenticated non-admin', () => {
+test('create blog non-admin', () => {
   const req = {
     cookies: { session: 'nonAdminSessionKey1' },
     headers: {},

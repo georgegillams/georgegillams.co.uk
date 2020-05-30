@@ -1,9 +1,9 @@
+import datumLoad from './datumLoad';
+
 import redis from 'utils/redis';
 import { find } from 'utils/find';
 import setContentLastUpdatedTimestamp from 'utils/setContentLastUpdatedTimestamp';
-import { PROJECT_NAME } from 'helpers/constants';
-
-import datumLoad from './datumLoad';
+import { PROJECT_NAME, RESOURCE_NOT_FOUND } from 'helpers/constants';
 
 export default function datumUpdate(settings, req) {
   return new Promise((resolve, reject) => {
@@ -36,6 +36,8 @@ export default function datumUpdate(settings, req) {
           ) {
             setContentLastUpdatedTimestamp();
           }
+        } else {
+          reject(RESOURCE_NOT_FOUND);
         }
         if (req.session) {
           req.session[settings.redisKey] = values;

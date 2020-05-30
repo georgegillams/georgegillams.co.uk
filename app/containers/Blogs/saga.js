@@ -26,7 +26,7 @@ export function* doLoadBlogs() {
         pushMessage({ type: 'error', message: blogsResult.errorMessage }),
       );
     } else {
-      yield put(loadBlogsRegisterSuccess(blogsResult));
+      yield put(loadBlogsRegisterSuccess(blogsResult.blogs));
       yield put(pushMessage(blogsLoadSuccessMessage));
     }
   } catch (err) {

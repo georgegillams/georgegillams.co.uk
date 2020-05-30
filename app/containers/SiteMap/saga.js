@@ -12,8 +12,8 @@ export function* doLoadBlogs() {
   const requestURL = apiStructure.loadBlogs.fullPath;
 
   try {
-    const blogs = yield call(request, requestURL); // Can add third arg for options
-    yield put(loadBlogsRegisterSuccess(blogs));
+    const result = yield call(request, requestURL); // Can add third arg for options
+    yield put(loadBlogsRegisterSuccess(result.blogs));
   } catch (err) {
     yield put(loadBlogsRegisterError(err));
   }

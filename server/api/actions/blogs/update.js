@@ -1,24 +1,16 @@
+import { datumUpdate } from '../datum';
+
 import lockPromise from 'utils/lock';
 import authentication from 'utils/authentication';
 import { UNAUTHORISED_WRITE } from 'helpers/constants';
 
-import { datumUpdate } from '../datum';
-
 export default function update(req) {
-  return lockPromise(
-    'blogs',
-    () =>
-      new Promise((resolve, reject) => {
-        authentication(req).then(
-          user => {
-            if (user && user.admin) {
-              resolve(datumUpdate({ redisKey: 'blogs' }, req));
-            } else {
-              reject(UNAUTHORISED_WRITE);
-            }
-          },
-          err => reject(err),
-        );
-      }),
+  return lockPromise('blogs', () =>
+    authentication(req).then(user => {
+      if (user && user.admin) {
+        return datumUpdate({ redisKey: 'blogs' }, req);
+      }
+      throw UNAUTHORISED_WRITE;
+    }),
   );
 }
