@@ -5,7 +5,10 @@ import { datumCreate } from '../datum';
 import loadAll from './loadAll.js';
 
 import { AuthError } from 'helpers/Errors';
-import { clearDatabaseCollection } from 'utils/testUtils';
+import {
+  clearDatabaseCollection,
+  createUsersWithSessions,
+} from 'utils/testUtils';
 
 beforeEach(() => {
   clearDatabaseCollection('analytics');
@@ -52,21 +55,38 @@ const createSomeValues = () => {
 
 test('load all analytics admin', () => {
   const req = {
-    cookies: {},
-    headers: { apikey: 'asdfghjkl' },
+    cookies: { session: 'adminSessionKey1' },
+    headers: {},
     body: {},
   };
 
-  return createSomeValues()
+  return createUsersWithSessions()
+    .then(() => createSomeValues())
     .then(() => loadAll(req))
     .then(results => {
       expect(results.analytics.length).toBe(3);
       expect(results.analytics[0].browser).toBe('browser1');
       expect(results.analytics[0].url).toBe('url1');
       return true;
+    });
+});
+
+test('load all analytics authenticated non-admin', () => {
+  const req = {
+    cookies: { session: 'nonAdminSessionKey1' },
+    headers: {},
+    body: {},
+  };
+
+  return createUsersWithSessions()
+    .then(() => createSomeValues())
+    .then(() => loadAll(req))
+    .then(() => {
+      // The action should have thrown an error
+      throw new Error('Should have thrown an error already');
     })
     .catch(err => {
-      throw err;
+      expect(err instanceof AuthError).toBe(true);
     });
 });
 
@@ -78,7 +98,11 @@ test('load all analytics unauthenticated', () => {
   };
 
   return createSomeValues()
-    .then(loadAll(req))
+    .then(() => loadAll(req))
+    .then(() => {
+      // The action should have thrown an error
+      throw new Error('Should have thrown an error already');
+    })
     .catch(err => {
       expect(err instanceof AuthError).toBe(true);
     });

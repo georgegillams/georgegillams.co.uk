@@ -18,10 +18,15 @@ test('request verification email unauthenticated', () => {
     body: {},
   };
 
-  return requestVerificationEmail(req).catch(err => {
-    expect(err instanceof AuthError).toBe(true);
-    expect(err).toBe(UNAUTHORISED_WRITE);
-  });
+  return requestVerificationEmail(req)
+    .then(() => {
+      // The action should have thrown an error
+      throw new Error('Should have thrown an error already');
+    })
+    .catch(err => {
+      expect(err instanceof AuthError).toBe(true);
+      expect(err).toBe(UNAUTHORISED_WRITE);
+    });
 });
 
 test('request verification email authenticated', () => {
