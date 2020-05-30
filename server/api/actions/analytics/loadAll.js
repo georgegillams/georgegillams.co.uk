@@ -6,7 +6,7 @@ import authentication from 'utils/authentication';
 import reqSecure from 'utils/reqSecure';
 import { UNAUTHORISED_READ } from 'helpers/constants';
 
-export default function load(req) {
+export default function loadAll(req) {
   reqSecure(req, analyticsAllowedAttributes);
   return authentication(req)
     .then(user => {
