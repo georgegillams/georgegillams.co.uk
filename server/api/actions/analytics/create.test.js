@@ -37,9 +37,6 @@ test('create analytics unauthenticated', () => {
       expect(results[0].authorId).toBe(undefined);
       expect(results[0].disallowedAttribute).toBe(undefined);
       return true;
-    })
-    .catch(err => {
-      throw err;
     });
 });
 
@@ -72,9 +69,6 @@ test('create analytics unauthenticated with forwarded header', () => {
       expect(results[0].authorId).toBe(undefined);
       expect(results[0].disallowedAttribute).toBe(undefined);
       return true;
-    })
-    .catch(err => {
-      throw err;
     });
 });
 
@@ -106,8 +100,5 @@ test('create analytics authenticated', () => {
       expect(results[0].authorId).toBe('direct_API_invocator');
       expect(results[0].disallowedAttribute).toBe(undefined);
       return true;
-    })
-    .catch(err => {
-      throw err;
     });
 });

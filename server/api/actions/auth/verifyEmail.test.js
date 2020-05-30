@@ -1,10 +1,5 @@
 #!/usr/bin/env node
 
-// TODO Test no such emailCode (code4)
-// TODO Code expired (try code 1 twice)
-// TODO valid code, no such user (code3)
-// TODO valid code, valid user (code 2)
-
 import { datumCreate, datumLoad } from '../datum';
 
 import verifyEmail from './verifyEmail.js';
@@ -39,19 +34,19 @@ const createSomeValues = () => {
   const emailVerificationCode1 = {
     key: 'emailVerificationKey1',
     userId: 'test1',
-    expiry: Number.MAX_SAFE_INTEGER,
+    expiry: new Date(Date.now() + 60 * 60),
   };
 
   const emailVerificationCode2 = {
     key: 'emailVerificationKey2',
     userId: 'test2',
-    expiry: Number.MAX_SAFE_INTEGER,
+    expiry: new Date(Date.now() + 60 * 60),
   };
 
   const emailVerificationCode3 = {
     key: 'emailVerificationKey3',
     userId: 'test3',
-    expiry: Number.MAX_SAFE_INTEGER,
+    expiry: new Date(Date.now() + 60 * 60),
   };
 
   return datumCreate({ redisKey: 'users' }, { body: user1 })
@@ -85,6 +80,10 @@ test('verify email with non-existent code', () => {
 
   return createSomeValues()
     .then(() => verifyEmail(req))
+    .then(() => {
+      // The action should have thrown an error
+      throw new Error('Should have thrown an error already');
+    })
     .catch(err => {
       expect(err instanceof AuthError).toBe(true);
       expect(err.message).toBe('Invalid verification link');
@@ -124,6 +123,10 @@ test('verify email with expired code', () => {
   return createSomeValues()
     .then(() => verifyEmail(req))
     .then(() => verifyEmail(req))
+    .then(() => {
+      // The action should have thrown an error
+      throw new Error('Should have thrown an error already');
+    })
     .catch(err => {
       expect(err instanceof AuthError).toBe(true);
       expect(err.message).toBe('Email verification link has expired');
@@ -139,6 +142,10 @@ test('verify email with code not matching user', () => {
 
   return createSomeValues()
     .then(() => verifyEmail(req))
+    .then(() => {
+      // The action should have thrown an error
+      throw new Error('Should have thrown an error already');
+    })
     .catch(err => {
       expect(err instanceof AuthError).toBe(true);
       expect(err.message).toBe('Invalid user');

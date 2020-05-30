@@ -69,6 +69,10 @@ test('logout with no valid session throws error', () => {
 
   return createSomeValues()
     .then(() => logout(req))
+    .then(() => {
+      // The action should have thrown an error
+      throw new Error('Should have thrown an error already');
+    })
     .catch(err => {
       expect(err instanceof AuthError).toBe(true);
       expect(err).toBe(INVALID_SESSION);

@@ -58,9 +58,6 @@ test('load auth with no session', () => {
     .then(result => {
       expect(result.user).toBe(null);
       return true;
-    })
-    .catch(err => {
-      throw err;
     });
 });
 
@@ -88,8 +85,5 @@ test('load auth with session', () => {
       expect(result.user).toBeTruthy();
       expect(result.user.id).toBe('test2');
       return true;
-    })
-    .catch(err => {
-      throw err;
     });
 });
