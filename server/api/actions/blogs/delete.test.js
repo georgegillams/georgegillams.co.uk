@@ -92,7 +92,16 @@ test('delete blog non-admin - throws auth error', () => {
     })
     .catch(err => {
       expect(err instanceof AuthError).toBeTruthy();
-    });
+    })
+    .finally(() =>
+      datumLoad({
+        redisKey: 'blogs',
+      }).then(dbResult => {
+        expect(dbResult.length).toBe(2);
+        expect(dbResult[0].id).toBe('blog1');
+        return true;
+      }),
+    );
 });
 
 test('delete blog unauthenticated - throws auth error', () => {
@@ -112,5 +121,14 @@ test('delete blog unauthenticated - throws auth error', () => {
     })
     .catch(err => {
       expect(err instanceof AuthError).toBeTruthy();
-    });
+    })
+    .finally(() =>
+      datumLoad({
+        redisKey: 'blogs',
+      }).then(dbResult => {
+        expect(dbResult.length).toBe(2);
+        expect(dbResult[0].id).toBe('blog1');
+        return true;
+      }),
+    );
 });

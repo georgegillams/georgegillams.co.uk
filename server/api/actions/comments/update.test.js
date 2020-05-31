@@ -121,6 +121,7 @@ test('update other comment non-admin - throws auth error', () => {
     headers: {},
     body: {
       id: 'comment2',
+      comment: 'Edited comment 2',
     },
   };
 
@@ -133,7 +134,16 @@ test('update other comment non-admin - throws auth error', () => {
     })
     .catch(err => {
       expect(err instanceof AuthError).toBeTruthy();
-    });
+    })
+    .finally(() =>
+      datumLoad({
+        redisKey: 'comments',
+      }).then(dbResult => {
+        expect(dbResult[1].id).toBe('comment2');
+        expect(dbResult[1].comment).toBe('Some comment 2');
+        return true;
+      }),
+    );
 });
 
 test('update comment unauthenticated - throws auth error', () => {
@@ -142,6 +152,7 @@ test('update comment unauthenticated - throws auth error', () => {
     headers: {},
     body: {
       id: 'comment1',
+      comment: 'Edited comment 1',
     },
   };
 
@@ -153,5 +164,14 @@ test('update comment unauthenticated - throws auth error', () => {
     })
     .catch(err => {
       expect(err instanceof AuthError).toBeTruthy();
-    });
+    })
+    .finally(() =>
+      datumLoad({
+        redisKey: 'comments',
+      }).then(dbResult => {
+        expect(dbResult[0].id).toBe('comment1');
+        expect(dbResult[0].comment).toBe('Some comment 1');
+        return true;
+      }),
+    );
 });

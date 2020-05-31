@@ -1,44 +1,44 @@
 #!/usr/bin/env node
 
-import { datumLoadSingle, datumCreate, datumUpdate } from '../datum';
+import { datumLoadSingle, datumCreate } from '../datum';
 
 import deleteEntity from './deleteEntity.js';
 
-test('returns error if not admin', done => {
-  datumCreate(
+test('returns error if not admin', () => {
+  const req = {
+    cookies: {},
+    headers: {},
+    body: {
+      collectionName: 'users',
+      id: 'user5',
+    },
+  };
+
+  return datumCreate(
     { redisKey: 'users' },
     { body: { requestedId: 'user5', name: 'George' } },
-  ).then(() => {
-    const req = {
-      cookies: {},
-      headers: {},
-      body: {
-        collectionName: 'users',
-        id: 'user5',
-      },
-    };
-    deleteEntity(req)
-      .then(() => {
-        // The promise should not resolve
-        expect(true).toBe(false);
-        done();
-      })
-      .catch(err => {
-        expect(err.category).toBe('auth_error');
-        expect(err.message).toBe(
-          'You are not authorised to write to this resource',
-        );
-
-        datumLoadSingle({
-          redisKey: 'users',
-          filter: u => u.id === 'user5',
-        }).then(dbResult => {
-          expect(dbResult).toBeTruthy();
-          expect(dbResult.name).toBe('George');
-          done();
-        });
-      });
-  });
+  )
+    .then(() => deleteEntity(req))
+    .then(() => {
+      // The action should have thrown an error
+      throw new Error('Should have thrown an error already');
+    })
+    .catch(err => {
+      expect(err.category).toBe('auth_error');
+      expect(err.message).toBe(
+        'You are not authorised to write to this resource',
+      );
+    })
+    .finally(() =>
+      datumLoadSingle({
+        redisKey: 'users',
+        filter: u => u.id === 'user5',
+      }).then(dbResult => {
+        expect(dbResult).toBeTruthy();
+        expect(dbResult.name).toBe('George');
+        return true;
+      }),
+    );
 });
 
 test('returns error if item is not already marked for deletion', done => {

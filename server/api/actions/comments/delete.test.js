@@ -122,7 +122,16 @@ test('delete other comment non-admin - throws auth error', () => {
     })
     .catch(err => {
       expect(err instanceof AuthError).toBeTruthy();
-    });
+    })
+    .finally(() =>
+      datumLoad({
+        redisKey: 'comments',
+      }).then(dbResult => {
+        expect(dbResult.length).toBe(3);
+        expect(dbResult[1].id).toBe('comment2');
+        return true;
+      }),
+    );
 });
 
 test('delete comment unauthenticated - throws auth error', () => {
@@ -142,5 +151,14 @@ test('delete comment unauthenticated - throws auth error', () => {
     })
     .catch(err => {
       expect(err instanceof AuthError).toBeTruthy();
-    });
+    })
+    .finally(() =>
+      datumLoad({
+        redisKey: 'comments',
+      }).then(dbResult => {
+        expect(dbResult.length).toBe(3);
+        expect(dbResult[0].id).toBe('comment1');
+        return true;
+      }),
+    );
 });
