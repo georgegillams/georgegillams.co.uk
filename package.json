@@ -45,7 +45,7 @@
     "backstopjs:test:allow-failure": "npm run start:test & (sleep 5 && node ./scripts/backstopjs/backstop.js --allowFailure)",
     "test": "npm run test:jest && npm run test:lint",
     "test:jest": "jest --coverage",
-    "test:lint": "echo \"Lint checks coming soon!\"",
+    "test:lint": "npm run lint:js:server-only",
     "test:clean": "rimraf ./coverage",
     "test:watch": "node --inspect node_modules/.bin/jest --runInBand --watchAll"
   },

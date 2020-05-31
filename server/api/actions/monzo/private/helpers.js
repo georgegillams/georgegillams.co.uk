@@ -1,3 +1,4 @@
+/* eslint-disable */
 import safeCompare from 'safe-compare';
 import fetch from 'node-fetch';
 import moment from 'moment';

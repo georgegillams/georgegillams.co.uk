@@ -1,3 +1,4 @@
+/* eslint-disable */
 import { CardExpiryElement } from 'react-stripe-elements';
 
 import { loadPotData, getMonthsElapsedPercentage } from './private/helpers';

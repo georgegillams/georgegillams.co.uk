@@ -1,3 +1,4 @@
+/* eslint-disable */
 import { datumLoad } from '../datum';
 
 import sendPaymentReceiptEmail from './private/sendPaymentReceiptEmail';
