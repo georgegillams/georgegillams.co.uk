@@ -25,6 +25,7 @@ server/api/helpers
 
 # runtime stuff
 server/server_content/greasemonkey
+server/server_content/data.json
 
 # redis
 dump.rdb

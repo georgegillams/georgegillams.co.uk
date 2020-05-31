@@ -100,7 +100,16 @@ test('update blog non-admin - throws auth error', () => {
     })
     .catch(err => {
       expect(err instanceof AuthError).toBeTruthy();
-    });
+    })
+    .finally(() =>
+      datumLoad({
+        redisKey: 'blogs',
+      }).then(dbResult => {
+        expect(dbResult[0].id).toBe('blog1');
+        expect(dbResult[0].content).toBe('Blog 1 content');
+        return true;
+      }),
+    );
 });
 
 test('update blog unauthenticated - throws auth error', () => {
@@ -121,5 +130,14 @@ test('update blog unauthenticated - throws auth error', () => {
     })
     .catch(err => {
       expect(err instanceof AuthError).toBeTruthy();
-    });
+    })
+    .finally(() =>
+      datumLoad({
+        redisKey: 'blogs',
+      }).then(dbResult => {
+        expect(dbResult[0].id).toBe('blog1');
+        expect(dbResult[0].content).toBe('Blog 1 content');
+        return true;
+      }),
+    );
 });
