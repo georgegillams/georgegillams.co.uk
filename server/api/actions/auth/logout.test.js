@@ -60,7 +60,7 @@ const createSomeValues = () => {
     );
 };
 
-test('logout with no valid session throws error', () => {
+test('logout with no valid session - throws error', () => {
   const req = {
     cookies: {},
     headers: {},
@@ -79,7 +79,7 @@ test('logout with no valid session throws error', () => {
     });
 });
 
-test('logout self works properly', () => {
+test('logout with session - removes user from session', () => {
   const req = {
     cookies: { session: 'sessionKey2' },
     headers: {},
@@ -113,7 +113,7 @@ test('logout self works properly', () => {
     });
 });
 
-test('duplicate logout', () => {
+test('duplicate logout - returns OK', () => {
   const req = {
     cookies: { session: 'sessionKey2' },
     headers: {},

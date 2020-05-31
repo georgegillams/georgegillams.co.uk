@@ -10,7 +10,7 @@ beforeEach(() => {
   clearDatabaseCollection('analytics');
 });
 
-test('create analytics unauthenticated', () => {
+test('create analytics unauthenticated - adds data to collection', () => {
   const req = {
     cookies: {},
     headers: {},
@@ -40,7 +40,7 @@ test('create analytics unauthenticated', () => {
     });
 });
 
-test('create analytics unauthenticated with forwarded header', () => {
+test('create analytics unauthenticated with forwarded header - uses correct IP address', () => {
   const req = {
     cookies: {},
     headers: {
@@ -72,7 +72,7 @@ test('create analytics unauthenticated with forwarded header', () => {
     });
 });
 
-test('create analytics authenticated', () => {
+test('create analytics authenticated - adds data to collection', () => {
   const req = {
     cookies: {},
     headers: {

@@ -14,7 +14,7 @@ beforeEach(() => {
   clearDatabaseCollection('users');
 });
 
-test('request verification email unauthenticated', () => {
+test('request verification email unauthenticated - throws error', () => {
   const req = {
     cookies: {},
     headers: {},
@@ -33,7 +33,7 @@ test('request verification email unauthenticated', () => {
     });
 });
 
-test('request verification email authenticated', () => {
+test('request verification email authenticated - returns OK', () => {
   const req = {
     cookies: { session: 'nonAdminSessionKey1' },
     headers: {},

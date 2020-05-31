@@ -10,7 +10,7 @@ beforeEach(() => {
   clearDatabaseCollection('sessions');
 });
 
-test('perform login', () => {
+test('login - creates session and assigns user', () => {
   const userProfile = {
     id: 'testUserId1',
     uname: 'testUser',
@@ -34,7 +34,7 @@ test('perform login', () => {
     });
 });
 
-test('sessionKeys are random', () => {
+test('login - creates random sessionKey', () => {
   const userProfile1 = {
     id: 'testUserId1',
     uname: 'testUser1',

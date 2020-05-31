@@ -31,7 +31,7 @@ const createSomeValues = () => {
   );
 };
 
-test('update blog as admin', () => {
+test('update blog as admin - updates data', () => {
   const req = {
     cookies: { session: 'adminSessionKey1' },
     headers: {},
@@ -59,7 +59,7 @@ test('update blog as admin', () => {
     });
 });
 
-test('update non-existent blog as admin', () => {
+test('update non-existent blog as admin - throws not found error', () => {
   const req = {
     cookies: { session: 'adminSessionKey1' },
     headers: {},
@@ -81,7 +81,7 @@ test('update non-existent blog as admin', () => {
     });
 });
 
-test('update blog non-admin', () => {
+test('update blog non-admin - throws auth error', () => {
   const req = {
     cookies: { session: 'nonAdminSessionKey1' },
     headers: {},
@@ -103,7 +103,7 @@ test('update blog non-admin', () => {
     });
 });
 
-test('update blog unauthenticated throws error', () => {
+test('update blog unauthenticated - throws auth error', () => {
   const req = {
     cookies: {},
     headers: {},

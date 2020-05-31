@@ -2,6 +2,7 @@ module.exports = {
   collectCoverageFrom: [
     'server/**/*.{js,jsx}',
     'app/**/*.{js,jsx}',
+    '!server/**/*.test.{js,jsx}',
     '!app/**/*.test.{js,jsx}',
     '!app/*/RbGenerated*/*.{js,jsx}',
     '!app/app.js',
@@ -10,10 +11,10 @@ module.exports = {
   ],
   coverageThreshold: {
     global: {
-      statements: 0.1,
-      branches: 0.1,
-      functions: 0,
-      lines: 0.1,
+      statements: 10,
+      branches: 10,
+      functions: 10,
+      lines: 10,
     },
   },
   coverageReporters: ['json', 'lcov', 'text-summary'],

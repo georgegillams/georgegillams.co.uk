@@ -33,8 +33,7 @@ const apiStructure = {
   // Comments
   createComment: { method: POST, path: '/comments/create' },
   deleteComment: { method: POST, path: '/comments/delete' },
-  loadComments: { method: GET, path: '/comments/load-all' },
-  loadComment: { method: GET, path: '/comments/load' },
+  loadComments: { method: GET, path: '/comments/load-all/:pageId' },
   updateComment: { method: POST, path: '/comments/update' },
 
   // Data

@@ -29,7 +29,7 @@ const createSomeValues = () => {
   );
 };
 
-test('delete blog as admin', () => {
+test('delete blog as admin - removes data from collection', () => {
   const req = {
     cookies: { session: 'adminSessionKey1' },
     headers: {},
@@ -53,7 +53,7 @@ test('delete blog as admin', () => {
     });
 });
 
-test('delete non-existent blog as admin', () => {
+test('delete non-existent blog as admin - throws not found error', () => {
   const req = {
     cookies: { session: 'adminSessionKey1' },
     headers: {},
@@ -74,7 +74,7 @@ test('delete non-existent blog as admin', () => {
     });
 });
 
-test('delete blog non-admin', () => {
+test('delete blog non-admin - throws auth error', () => {
   const req = {
     cookies: { session: 'nonAdminSessionKey1' },
     headers: {},
@@ -95,7 +95,7 @@ test('delete blog non-admin', () => {
     });
 });
 
-test('delete blog unauthenticated', () => {
+test('delete blog unauthenticated - throws auth error', () => {
   const req = {
     cookies: {},
     headers: {},
