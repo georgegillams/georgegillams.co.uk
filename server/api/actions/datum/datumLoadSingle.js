@@ -1,11 +1,12 @@
 import sortBy from 'lodash/sortBy';
 import reverse from 'lodash/reverse';
+
 import redis from 'utils/redis';
 import { PROJECT_NAME, RESOURCE_NOT_FOUND } from 'helpers/constants';
 
 function notFound(settings, resolve, reject) {
   if (settings.resolveIfNotFound) {
-    resolve(undefined);
+    resolve(null);
   } else {
     reject(RESOURCE_NOT_FOUND);
   }

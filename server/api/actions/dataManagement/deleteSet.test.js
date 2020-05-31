@@ -6,9 +6,9 @@ import {
   createUsersWithSessions,
 } from '../../utils/testUtils';
 
-import deleteEntity from './deleteEntity.js';
+import deleteSet from './deleteSet.js';
 
-import { AuthError, NotFoundError } from 'helpers/Errors';
+import { AuthError, InvalidInputError } from 'helpers/Errors';
 
 beforeEach(() => {
   clearDatabaseCollection('users');
@@ -33,19 +33,18 @@ const createSomeValues = () => {
   );
 };
 
-test('remove deleted entity non-admin - throws auth error', () => {
+test('remove set non-admin - throws auth error', () => {
   const req = {
     cookies: { session: 'nonAdminSessionKey1' },
     headers: {},
     body: {
       collectionName: 'users',
-      id: 'user5',
     },
   };
 
   return createUsersWithSessions()
     .then(() => createSomeValues())
-    .then(() => deleteEntity(req))
+    .then(() => deleteSet(req))
     .then(() => {
       // The action should have thrown an error
       throw new Error('Should have thrown an error already');
@@ -71,19 +70,51 @@ test('remove deleted entity non-admin - throws auth error', () => {
     );
 });
 
+test('remove undefined admin - throws input error', () => {
+  const req = {
+    cookies: { session: 'adminSessionKey1' },
+    headers: {},
+    body: {},
+  };
+
+  return createUsersWithSessions()
+    .then(() => createSomeValues())
+    .then(() => deleteSet(req))
+    .then(() => {
+      // The action should have thrown an error
+      throw new Error('Should have thrown an error already');
+    })
+    .catch(err => {
+      expect(err instanceof InvalidInputError).toBeTruthy();
+      expect(err.message).toBe('collectionName must be provided');
+    })
+    .finally(() =>
+      // ensure the attempted deletion has not changed data
+      datumLoadSingle({
+        redisKey: 'users',
+        filter: x => x.id === 'user5',
+        includeDeleted: true,
+      }).then(dbResult => {
+        expect(dbResult).toBeTruthy();
+        expect(dbResult.id).toBe('user5');
+        expect(dbResult.name).toBe('User Five');
+        return true;
+      }),
+    );
+});
+
 test('remove non-deleted entity admin - throws auth error', () => {
   const req = {
     cookies: { session: 'nonAdminSessionKey1' },
     headers: {},
     body: {
       collectionName: 'emails',
-      id: 'email2',
     },
   };
 
   return createUsersWithSessions()
     .then(() => createSomeValues())
-    .then(() => deleteEntity(req))
+    .then(() => deleteSet(req))
     .then(() => {
       // The action should have thrown an error
       throw new Error('Should have thrown an error already');
@@ -107,54 +138,18 @@ test('remove non-deleted entity admin - throws auth error', () => {
     );
 });
 
-test('remove non-existent entity admin - throws invalid input error', () => {
-  const req = {
-    cookies: { session: 'adminSessionKey1' },
-    headers: {},
-    body: {
-      collectionName: 'nonExistentCollection',
-    },
-  };
-
-  return createUsersWithSessions()
-    .then(() => createSomeValues())
-    .then(() => deleteEntity(req))
-    .then(() => {
-      // The action should have thrown an error
-      throw new Error('Should have thrown an error already');
-    })
-    .catch(err => {
-      expect(err instanceof NotFoundError).toBeTruthy();
-      expect(err.message).toBe(
-        "We looked everywhere but we couldn't find that resource. Maybe you need to sign in.",
-      );
-    })
-    .finally(() =>
-      // ensure the attempted deletion has not changed data
-      datumLoadSingle({
-        redisKey: 'emails',
-        filter: u => u.id === 'email2',
-      }).then(dbResult => {
-        expect(dbResult).toBeTruthy();
-        expect(dbResult.id).toBe('email2');
-        return true;
-      }),
-    );
-});
-
-test('remove deleted entity admin', () => {
+test('remove set entity admin', () => {
   const req = {
     cookies: { session: 'adminSessionKey1' },
     headers: {},
     body: {
       collectionName: 'users',
-      id: 'user5',
     },
   };
 
   return createUsersWithSessions()
     .then(() => createSomeValues())
-    .then(() => deleteEntity(req))
+    .then(() => deleteSet(req))
     .then(() =>
       datumLoadSingle({
         redisKey: 'users',

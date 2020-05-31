@@ -1,4 +1,4 @@
-import { datumLoad, datumUpdate } from '../datum';
+import { datumLoad } from '../datum';
 
 import {
   STRING_REGEX,
@@ -7,6 +7,7 @@ import {
   PROJECT_NAME,
   UNAUTHORISED_WRITE,
 } from 'helpers/constants';
+import { AuthError } from 'helpers/Errors';
 import redis from 'utils/redis';
 import { find } from 'utils/find';
 import authentication from 'utils/authentication';
@@ -20,47 +21,44 @@ const deleteEntityAllowedAttributes = [
 
 export default function deleteEntity(req) {
   reqSecure(req, deleteEntityAllowedAttributes);
-  return new Promise((resolve, reject) => {
-    authentication(req).then(
-      user => {
-        if (user && user.admin) {
-          const { collectionName, id } = req.body;
-          datumLoad({ redisKey: collectionName, includeDeleted: true }).then(
-            collectionData => {
-              const { existingValue, existingValueIndex } = find(
-                collectionData,
-                id,
-              );
-              if (existingValue) {
-                if (existingValue.deleted) {
-                  console.log(
-                    `Permanently removing ${existingValue.id} at index ${existingValueIndex}`,
-                  );
-                  resolve(
-                    redis.lrem(
-                      `${PROJECT_NAME}_${collectionName}`,
-                      1,
-                      JSON.stringify(existingValue),
-                    ),
-                  );
-                  setContentLastUpdatedTimestamp();
-                } else {
-                  reject({
-                    error: 'wrong-input',
-                    errorMessage:
-                      'Only deleted entities can be permanently removed.',
-                  });
-                }
-              } else {
-                reject(RESOURCE_NOT_FOUND);
-              }
-            },
-          );
-        } else {
-          reject(UNAUTHORISED_WRITE);
-        }
-      },
-      err => reject(err),
-    );
-  });
+  let collectionToDeleteFrom = null;
+  let idToDelete = null;
+  return authentication(req)
+    .then(user => {
+      if (!user || !user.admin) {
+        throw UNAUTHORISED_WRITE;
+      }
+      const { collectionName, id } = req.body;
+      collectionToDeleteFrom = collectionName;
+      idToDelete = id;
+      return datumLoad({
+        redisKey: collectionToDeleteFrom,
+        includeDeleted: true,
+      });
+    })
+    .then(collectionData => {
+      const { existingValue, existingValueIndex } = find(
+        collectionData,
+        idToDelete,
+      );
+      if (!existingValue) {
+        throw RESOURCE_NOT_FOUND;
+      }
+      if (!existingValue.deleted) {
+        throw new AuthError(
+          'Only deleted entities can be permanently removed.',
+        );
+      }
+      console.log(
+        `Permanently removing ${existingValue.id} at index ${existingValueIndex}`,
+      );
+      redis.lrem(
+        `${PROJECT_NAME}_${collectionToDeleteFrom}`,
+        1,
+        JSON.stringify(existingValue),
+      );
+      return true;
+    })
+    .then(() => setContentLastUpdatedTimestamp())
+    .then(() => true);
 }
