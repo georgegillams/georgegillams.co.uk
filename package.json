@@ -27,6 +27,7 @@
     "link-helpers": "npm run link-helpers:clean && ln -Ffs $(pwd)/helpers $(pwd)/app/helpers && ln -Ffs $(pwd)/helpers $(pwd)/server/api/helpers",
     "lint": "npm run lint:js && npm run lint:scss",
     "lint:js": "eslint . --ext .js,.jsx",
+    "lint:js:server-only": "eslint server --ext .js,.jsx",
     "lint:js:fix": "eslint . --ext .js,.jsx --fix",
     "lint:scss": "stylelint 'packages/**/*.scss' --syntax scss",
     "postinstall": "npm run fix:adapter-core-5 && npm run link-helpers",
@@ -42,7 +43,9 @@
     "start:production": "npm run test && npm run build && npm run start:prod",
     "backstopjs:test": "npm run start:test & (sleep 5 && node ./scripts/backstopjs/backstop.js)",
     "backstopjs:test:allow-failure": "npm run start:test & (sleep 5 && node ./scripts/backstopjs/backstop.js --allowFailure)",
-    "test": "jest --coverage",
+    "test": "npm run test:jest && npm run test:lint",
+    "test:jest": "jest --coverage",
+    "test:lint": "echo \"Lint checks coming soon!\"",
     "test:clean": "rimraf ./coverage",
     "test:watch": "node --inspect node_modules/.bin/jest --runInBand --watchAll"
   },
