@@ -1,5 +1,10 @@
 const groupingProperties = ['browser', 'os', 'url', 'utm_source', 'utm_medium'];
 
+/**
+ * Creates a key for a data point
+ * @param {object} dataPoint: The data point to consider
+ * @returns {string} The key for the data point
+ */
 const keyForData = dataPoint => {
   const values = [];
   groupingProperties.forEach(gp => {
@@ -8,6 +13,12 @@ const keyForData = dataPoint => {
   return values.join('_');
 };
 
+/**
+ * Inserts the new data point into the list, or if it exists increments the count for the matching entry
+ * @param {array} list: The list to update
+ * @param {object} dataPoint: The data point to consider
+ * @returns {null} none
+ */
 const insertOrUpdateCount = (list, dataPoint) => {
   const dataPointKey = keyForData(dataPoint);
   const matchingEntries = list.filter(l => l.key === dataPointKey);
@@ -22,6 +33,11 @@ const insertOrUpdateCount = (list, dataPoint) => {
   }
 };
 
+/**
+ * Processes analytic data to group analytics by characteristics and count instances of each
+ * @param {array} data: The data point to consider
+ * @returns {array} The unique analytics with counts of how many times they occur
+ */
 const processAnalytics = data => {
   const uniqueDataPoints = [];
   data.forEach(d => {
