@@ -28,11 +28,13 @@ const { makeSelectComment, makeSelectCurrentPageId } = selectors;
 
 export function* doLoadComments() {
   const pageId = yield select(makeSelectCurrentPageId());
-  const requestURL = `${apiStructure.loadComments.fullPath}?pageId=${pageId}`;
+  const requestURL = apiStructure.loadComments.fullPath
+    .split(':pageId')
+    .join(pageId);
 
   try {
-    const comments = yield call(request, requestURL);
-    yield put(loadCommentsRegisterSuccess(comments));
+    const result = yield call(request, requestURL);
+    yield put(loadCommentsRegisterSuccess(result.comments));
   } catch (err) {
     yield put(loadCommentsRegisterError(err));
     yield put(pushMessage(COMMUNICATION_ERROR_MESSAGE));

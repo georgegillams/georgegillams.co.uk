@@ -53,7 +53,7 @@ const createSomeValues = () => {
     .then(() => datumCreate({ redisKey: 'analytics' }, { body: analytic3 }));
 };
 
-test('load all analytics admin', () => {
+test('load all analytics admin - returns all values', () => {
   const req = {
     cookies: { session: 'adminSessionKey1' },
     headers: {},
@@ -71,7 +71,7 @@ test('load all analytics admin', () => {
     });
 });
 
-test('load all analytics non-admin', () => {
+test('load all analytics non-admin - throws auth error', () => {
   const req = {
     cookies: { session: 'nonAdminSessionKey1' },
     headers: {},
@@ -90,7 +90,7 @@ test('load all analytics non-admin', () => {
     });
 });
 
-test('load all analytics unauthenticated', () => {
+test('load all analytics unauthenticated - throws auth error', () => {
   const req = {
     cookies: {},
     headers: {},

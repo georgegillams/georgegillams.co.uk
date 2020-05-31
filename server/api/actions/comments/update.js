@@ -10,25 +10,19 @@ import reqSecure from 'utils/reqSecure';
 
 export default function update(req) {
   reqSecure(req, commentsAllowedAttributes);
-  return lockPromise(
-    'comments',
-    () =>
-      new Promise((resolve, reject) => {
-        authentication(req).then(
-          user => {
-            userOwnsResource('comments', req.body.id, user).then(
-              userOwnsResourceResult => {
-                // Users should be able to update comments that they own
-                if (user && (user.admin || userOwnsResourceResult)) {
-                  resolve(datumUpdate({ redisKey: 'comments' }, req));
-                } else {
-                  reject(UNAUTHORISED_WRITE);
-                }
-              },
-            );
-          },
-          err => reject(err),
-        );
-      }),
-  );
+  return lockPromise('comments', () => {
+    let user = null;
+    return authentication(req)
+      .then(userResult => {
+        user = userResult;
+        return userOwnsResource('comments', req.body.id, user);
+      })
+      .then(userOwnsResourceResult => {
+        // Users should be able to update comments that they own
+        if (user && (user.admin || userOwnsResourceResult)) {
+          return datumUpdate({ redisKey: 'comments' }, req);
+        }
+        throw UNAUTHORISED_WRITE;
+      });
+  });
 }

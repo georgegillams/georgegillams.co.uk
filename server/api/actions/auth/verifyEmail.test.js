@@ -52,7 +52,7 @@ const createSomeValues = () => {
     );
 };
 
-test('verify email with non-existent code', () => {
+test('verify email with non-existent code - throws error', () => {
   const req = {
     cookies: {},
     headers: {},
@@ -72,7 +72,7 @@ test('verify email with non-existent code', () => {
     });
 });
 
-test('verification sets code expiry to 0', () => {
+test('successful verification - sets code expiry to 0', () => {
   const req = {
     cookies: {},
     headers: {},
@@ -96,7 +96,7 @@ test('verification sets code expiry to 0', () => {
     });
 });
 
-test('verify email with expired code', () => {
+test('verify email with expired code - throws auth error', () => {
   const req = {
     cookies: {},
     headers: {},
@@ -117,7 +117,7 @@ test('verify email with expired code', () => {
     });
 });
 
-test('verify email with code not matching user', () => {
+test('verify email with code not matching user - throws auth error', () => {
   const req = {
     cookies: {},
     headers: {},

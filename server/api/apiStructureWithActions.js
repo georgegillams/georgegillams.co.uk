@@ -29,7 +29,6 @@ apiStructure.updateBlog.action = require('./actions/blogs/update');
 apiStructure.createComment.action = require('./actions/comments/create');
 apiStructure.deleteComment.action = require('./actions/comments/delete');
 apiStructure.loadComments.action = require('./actions/comments/loadAll');
-apiStructure.loadComment.action = require('./actions/comments/loadSingle');
 apiStructure.updateComment.action = require('./actions/comments/update');
 
 // Data

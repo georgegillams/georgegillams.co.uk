@@ -15,7 +15,7 @@ beforeEach(() => {
   clearDatabaseCollection('comments');
 });
 
-test('create comment authenticated', () => {
+test('create comment authenticated - adds data to collection with uname as displayName', () => {
   const req = {
     cookies: { session: 'nonAdminSessionKey1' },
     headers: {},
@@ -38,7 +38,7 @@ test('create comment authenticated', () => {
     });
 });
 
-test('create comment unauthenticated', () => {
+test('create comment unauthenticated - adds data to collection with provided displayName', () => {
   const req = {
     cookies: { session: 'noSuchSession' },
     headers: {},

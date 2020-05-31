@@ -46,7 +46,7 @@ const createSomeValues = () => {
     );
 };
 
-test('load auth with no session', () => {
+test('load auth with no session - returns null user', () => {
   const req = {
     cookies: {},
     headers: {},
@@ -61,7 +61,7 @@ test('load auth with no session', () => {
     });
 });
 
-test('load auth with session', () => {
+test('load auth with session - returns authenticated user', () => {
   const req1 = {
     cookies: { session: 'sessionKey1' },
     headers: {},

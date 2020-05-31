@@ -14,7 +14,7 @@ beforeEach(() => {
   clearDatabaseCollection('blogs');
 });
 
-test('create blog as admin', () => {
+test('create blog as admin - adds data to collection', () => {
   const req = {
     cookies: { session: 'adminSessionKey1' },
     headers: {},
@@ -34,7 +34,7 @@ test('create blog as admin', () => {
     });
 });
 
-test('create blog non-admin', () => {
+test('create blog non-admin - throws auth error', () => {
   const req = {
     cookies: { session: 'nonAdminSessionKey1' },
     headers: {},
@@ -55,7 +55,7 @@ test('create blog non-admin', () => {
     });
 });
 
-test('create blog unauthenticated', () => {
+test('create blog unauthenticated - throws auth error', () => {
   const req = {
     cookies: {},
     headers: {},

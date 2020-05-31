@@ -31,7 +31,7 @@ const createSomeValues = () => {
   );
 };
 
-test('load unpublished blog as admin', () => {
+test('load unpublished blog as admin - returns value', () => {
   const req = {
     cookies: { session: 'adminSessionKey1' },
     headers: {},
@@ -48,7 +48,7 @@ test('load unpublished blog as admin', () => {
     });
 });
 
-test('load unpublished blog non-admin', () => {
+test('load unpublished blog non-admin - throws not found error', () => {
   const req = {
     cookies: { session: 'nonAdminSessionKey1' },
     headers: {},
@@ -67,7 +67,7 @@ test('load unpublished blog non-admin', () => {
     });
 });
 
-test('load unpublished blog unauthenticated', () => {
+test('load unpublished blog unauthenticated - throws not found error', () => {
   const req = {
     cookies: {},
     headers: {},
@@ -86,7 +86,7 @@ test('load unpublished blog unauthenticated', () => {
     });
 });
 
-test('load published blog as admin', () => {
+test('load published blog as admin - returns value', () => {
   const req = {
     cookies: { session: 'adminSessionKey1' },
     headers: {},
@@ -103,7 +103,7 @@ test('load published blog as admin', () => {
     });
 });
 
-test('load published blog non-admin', () => {
+test('load published blog non-admin - returns value', () => {
   const req = {
     cookies: { session: 'nonAdminSessionKey1' },
     headers: {},
@@ -120,7 +120,7 @@ test('load published blog non-admin', () => {
     });
 });
 
-test('load published blog unauthenticated', () => {
+test('load published blog unauthenticated - returns value', () => {
   const req = {
     cookies: {},
     headers: {},
