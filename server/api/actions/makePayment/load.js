@@ -1,7 +1,5 @@
 import loadPayment from './private/loadPayment';
 import stripePaymentsAllowedAttributes from './private/stripePaymentsAllowedAttributes';
-import getPaymentAndBalance from './private/getPaymentAndBalance';
-import sendUnsentPaymentReceipts from './private/sendUnsentPaymentReceipts';
 
 import reqSecure from 'utils/reqSecure';
 import lockPromise from 'utils/lock';

@@ -19,7 +19,6 @@ const apiStructure = {
   verifyEmail: { method: POST, path: '/auth/verify-email' },
 
   // Login
-  loadMagicLinks: { method: GET, path: '/magic-links/load-all' },
   loginWithMagicLink: { method: POST, path: '/magic-links/login' },
   requestMagicLink: { method: POST, path: '/magic-links/request' },
 
