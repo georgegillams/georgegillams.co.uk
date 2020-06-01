@@ -1,11 +1,11 @@
 import crypto from 'crypto';
 
-import { SITE_URL, EMAIL_VERIFICATION_ENABLED } from 'helpers/constants';
-import lockPromise from 'utils/lock';
-
 import { datumCreate } from '../actions/datum';
 
 import transporter from './nodemailer';
+
+import { SITE_URL, EMAIL_VERIFICATION_ENABLED } from 'helpers/constants';
+import lockPromise from 'utils/lock';
 
 const EMAIL_WIDTH = '600px';
 const FONT_SIZE_SM = '18px';
@@ -57,16 +57,15 @@ export function sendMagicLinkEmail(
     magicLinkUrl += `&redirect=${loginRedirect}`;
   }
   // Send the magic link URL to the email address of the user
-  transporter.sendMail(
-    {
-      from: senderEmail,
-      to: divertToAdmin
-        ? 'g+diverted-to-admin@georgegillams.co.uk'
-        : userProfile.email,
-      subject: 'Your magic login link',
-      text: `Your magic link is:
+  const email = {
+    from: senderEmail,
+    to: divertToAdmin
+      ? 'g+diverted-to-admin@georgegillams.co.uk'
+      : userProfile.email,
+    subject: 'Your magic login link',
+    text: `Your magic link is:
 ${magicLinkUrl}\n\nIt will expire ${oneHoursTime.toString()}`,
-      html: `${emailOuter(branding)}
+    html: `${emailOuter(branding)}
   ${emailLogoHeader(branding)}
   <tr>
     <td bgcolor="white" style="padding: 24px; text-align: center;">
@@ -85,13 +84,15 @@ ${magicLinkUrl}\n\nIt will expire ${oneHoursTime.toString()}`,
     </td>
   </tr>
 ${EMAIL_OUTER_END}`,
-    },
-    error => {
-      if (error) {
-        return console.log(error);
-      }
-    },
+  };
+  lockPromise('emails', () =>
+    datumCreate({ redisKey: 'emails' }, { body: email }),
   );
+  transporter.sendMail(email, error => {
+    if (error) {
+      return console.log(error);
+    }
+  });
 }
 
 export function sendEmailVerificationEmail(
@@ -118,14 +119,13 @@ export function sendEmailVerificationEmail(
   );
   const emailVerificationLink = `${SITE_URL}/email-verification?token=${verificationLink.key}`;
   // Send the magic link URL to the email address of the user
-  transporter.sendMail(
-    {
-      from: senderEmail,
-      to: userProfile.email,
-      subject: 'Verify your email address',
-      text: `Your email verification link is:
+  const email = {
+    from: senderEmail,
+    to: userProfile.email,
+    subject: 'Verify your email address',
+    text: `Your email verification link is:
 ${emailVerificationLink}\n\nIt will expire ${oneDaysTime.toString()}`,
-      html: `${emailOuter(branding)}
+    html: `${emailOuter(branding)}
   ${emailLogoHeader(branding)}
   <tr>
     <td bgcolor="white" style="padding: 24px; text-align: center;">
@@ -141,13 +141,15 @@ ${emailVerificationLink}\n\nIt will expire ${oneDaysTime.toString()}`,
     </td>
   </tr>
 ${EMAIL_OUTER_END}`,
-    },
-    error => {
-      if (error) {
-        return console.log(error);
-      }
-    },
+  };
+  lockPromise('emails', () =>
+    datumCreate({ redisKey: 'emails' }, { body: email }),
   );
+  transporter.sendMail(email, error => {
+    if (error) {
+      return console.log(error);
+    }
+  });
 }
 
 export function sendPaymentReceiptEmail(

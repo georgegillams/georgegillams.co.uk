@@ -14,7 +14,6 @@ apiStructure.requestVerificationEmail.action = require('./actions/auth/requestVe
 apiStructure.verifyEmail.action = require('./actions/auth/verifyEmail');
 
 // login
-apiStructure.loadMagicLinks.action = require('./actions/magicLinks/loadAll');
 apiStructure.loginWithMagicLink.action = require('./actions/magicLinks/login');
 apiStructure.requestMagicLink.action = require('./actions/magicLinks/requestMagicLink');
 

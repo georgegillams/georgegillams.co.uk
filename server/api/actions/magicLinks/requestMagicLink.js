@@ -2,6 +2,7 @@ import { datumLoad } from '../datum';
 
 import magicLinksAllowedAttributes from './private/magicLinksAllowedAttributes';
 
+import { AuthError, NotFoundError } from 'helpers/Errors';
 import { find } from 'utils/find';
 import authentication from 'utils/authentication';
 import { sendMagicLinkEmail } from 'utils/emailHelpers';
@@ -9,27 +10,34 @@ import reqSecure from 'utils/reqSecure';
 
 export default function getmagiclink(req) {
   reqSecure(req, magicLinksAllowedAttributes);
-  return new Promise(resolve => {
-    authentication(req).then(user => {
-      datumLoad({ redisKey: 'users' }).then(userData => {
-        const { existingValue: userProfile } = find(
-          userData,
-          req.body.email.toLowerCase(),
-          'email',
+  let authenticatedUser = null;
+  return authentication(req)
+    .then(user => {
+      authenticatedUser = user;
+      return datumLoad({ redisKey: 'users' });
+    })
+    .then(userData => {
+      const { existingValue: userProfile } = find(
+        userData,
+        req.body.email.toLowerCase(),
+        'email',
+      );
+      if (!userProfile) {
+        throw new NotFoundError(
+          "We couldn't find a profile matching that email",
         );
-        if (userProfile) {
-          const divertToAdmin = user && user.admin && req.body.divertToAdmin;
-          sendMagicLinkEmail(
-            userProfile,
-            divertToAdmin,
-            req.body.loginRedirect,
-          );
-        }
-        resolve({
-          success:
-            'A magic link has been generated and sent to the email associated with your account',
-        });
-      });
+      }
+      const { divertToAdmin } = req.body;
+      if (divertToAdmin && (!authenticatedUser || !authenticatedUser.admin)) {
+        throw new AuthError(
+          'Only an admin user can request a login link for another user',
+        );
+      }
+      // Sent emails should be stored in a DB so that we can verify this has been called:
+      sendMagicLinkEmail(userProfile, divertToAdmin, req.body.loginRedirect);
+      return {
+        success:
+          'A magic link has been generated and sent to the email associated with your account',
+      };
     });
-  });
 }

@@ -53,10 +53,10 @@ app.use(
 // Production security - rate limiting
 app.use(
   slowDown({
-    windowMs: 15 * 60 * 1000, // 15 minutes
-    delayAfter: 100, // allow 100 requests per 15 minutes, then...
-    delayMs: 500, // begin adding 500ms of delay per request above 100:
-    maxDelayMs: 20000, // begin adding 500ms of delay per request above 100:
+    windowMs: 60 * 60 * 1000, // 60 minutes
+    delayAfter: 100, // allow 100 requests per hour without limiting...
+    delayMs: 500, // begin adding 500ms of delay per request above 100...
+    maxDelayMs: 20000, // with a maximum delay of 20 seconds
     // request # 1 no delay
     // ...
     // request # 100 no delay
@@ -66,6 +66,8 @@ app.use(
     // ...
     // request # 140 is delayed by 20s
     // request # 141 is delayed by 20s <-- won't exceed 20s delay
+    //
+    // The max request rate is 100 in 0s + 40 in 400s + 160 in 3200s = 300 in 1 hour
     skip: req => {
       if (req.originalUrl.includes('api')) {
         return false;
