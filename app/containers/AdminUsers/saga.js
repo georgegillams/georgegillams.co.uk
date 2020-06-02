@@ -53,7 +53,7 @@ const ticketErrorMessage = {
 
 export function* doDeleteUser() {
   const userToDelete = yield select(makeSelectUserToDelete());
-  const requestURL = apiStructure.removeUser.fullPath;
+  const requestURL = apiStructure.deleteUser.fullPath;
 
   try {
     const deleteRequest = yield call(request, requestURL, {
