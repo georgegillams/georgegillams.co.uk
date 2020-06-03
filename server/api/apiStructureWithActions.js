@@ -61,7 +61,7 @@ apiStructure.loadPayments.action = require('./actions/payments/loadAll');
 // Support
 apiStructure.createSupport.action = require('./actions/support/create');
 apiStructure.deleteSupport.action = require('./actions/support/delete');
-apiStructure.loadSupport.action = require('./actions/support/load');
+apiStructure.loadSupport.action = require('./actions/support/loadAll');
 
 // Users
 apiStructure.createUser.action = require('./actions/users/create');

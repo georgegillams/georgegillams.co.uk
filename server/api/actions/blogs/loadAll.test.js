@@ -33,10 +33,9 @@ const createSomeValues = () => {
     publishedTimestamp: 1,
   };
 
-  return datumCreate({ redisKey: 'blogs' }, { body: blog1 }).then(
-    () => datumCreate({ redisKey: 'blogs' }, { body: blog2 }),
-    datumCreate({ redisKey: 'blogs' }, { body: blog3 }),
-  );
+  return datumCreate({ redisKey: 'blogs' }, { body: blog1 })
+    .then(() => datumCreate({ redisKey: 'blogs' }, { body: blog2 }))
+    .then(() => datumCreate({ redisKey: 'blogs' }, { body: blog3 }));
 };
 
 test('load blogs as admin - returns all values', () => {
