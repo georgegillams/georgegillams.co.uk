@@ -69,7 +69,7 @@ const apiStructure = {
   loadSupport: { method: GET, path: '/support/load' },
 
   // Users
-  // TODO Why do we have create vs signUp?
+  // TODO createUser is for admins only
   createUser: { method: POST, path: '/users/create' },
   deleteUser: { method: POST, path: '/users/delete' },
   loadUser: { method: GET, path: '/users/load' },

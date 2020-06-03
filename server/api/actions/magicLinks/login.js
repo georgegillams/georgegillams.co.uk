@@ -32,6 +32,11 @@ export default function loginMagicLink(req) {
         }
         const { existingValue: user } = find(userData, magicLink.userId);
         matchingUser = user;
+        if (!matchingUser) {
+          throw new InvalidInputError(
+            'The user who requested this magic link could not be found',
+          );
+        }
         if (Date.now() < new Date(magicLink.expiry).getTime()) {
           // invalidate magic link (set expiry to 0)
           magicLink.expiry = 0;

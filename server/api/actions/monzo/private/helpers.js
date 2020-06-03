@@ -1,11 +1,12 @@
 import safeCompare from 'safe-compare';
 import fetch from 'node-fetch';
 import moment from 'moment';
-import { getTimeDifference } from 'helpers/time';
 
 import { datumLoadSingle } from '../../datum';
 
 import POT_CONFIGS from './potConfigs';
+
+import { getTimeDifference } from 'helpers/time';
 
 function formatTransaction(transaction) {
   if (!transaction) {
@@ -32,7 +33,7 @@ function getMonthsElapsedPercentage(potConfig) {
 function authMonzo(password) {
   return new Promise((resolve, reject) => {
     datumLoadSingle({
-      redisKey: 'monzoApiKeys',
+      redisKey: 'monzoapikeys',
       resolveIfNotFound: true,
       sortKey: 'lastUpdatedTimestamp',
     }).then(accessToken => {
