@@ -1,15 +1,14 @@
-import React, { Fragment } from 'react';
-import { withRouter } from 'react-router';
+import React from 'react';
 import PropTypes from 'prop-types';
 import { Helmet } from 'react-helmet';
 import { cssModules } from 'gg-components/helpers/cssModules';
+import { DebugObject, LoadingCover } from 'gg-components/Auth';
+import { CreativeCommons } from 'gg-components/CreativeCommons';
 
 import BlogListSkeleton from './BlogListSkeleton';
 import BlogsNav from './BlogsNav';
 
-import { DebugObject, LoadingCover } from 'gg-components/Auth';
 import BlogsList from 'components/Blogs';
-import { CreativeCommons } from 'gg-components/CreativeCommons';
 import STYLES from 'containers/pages.scss';
 
 const getClassName = cssModules(STYLES);
@@ -42,10 +41,11 @@ export default class BlogsPage extends React.Component {
 
   render() {
     const {
-      loadingBlogs,
-      loadBlogsError,
-      blogs,
       loadBlogs,
+
+      blogsLoadError,
+      blogs,
+
       selectedNav,
       filter,
       linkPrefix,
@@ -57,17 +57,14 @@ export default class BlogsPage extends React.Component {
       outerClassNameFinal.push(className);
     }
 
-    const textColor = this.getTextColor();
-
     return (
       <div className={outerClassNameFinal.join(' ')}>
         <DebugObject
           debugTitle="Blogs"
           debugObject={{
-            loadingBlogs,
             blogs,
             loadBlogs,
-            loadBlogsError,
+            blogsLoadError,
             selectedNav,
             filter,
             linkPrefix,
@@ -82,15 +79,15 @@ export default class BlogsPage extends React.Component {
         />
         <LoadingCover
           loadingSkeleton={BlogListSkeleton}
-          loading={loadingBlogs || !blogs}
-          error={loadBlogsError}
+          loading={!blogs}
+          error={blogsLoadError}
         >
-          <Fragment>
+          <>
             {this.filteredBlogs && (
               <BlogsList blogs={this.filteredBlogs} linkPrefix={linkPrefix} />
             )}
             <CreativeCommons />
-          </Fragment>
+          </>
         </LoadingCover>
       </div>
     );
@@ -98,11 +95,21 @@ export default class BlogsPage extends React.Component {
 }
 
 BlogsPage.propTypes = {
-  loadingBlogs: PropTypes.bool,
-  loadBlogsError: PropTypes.oneOfType([PropTypes.object, PropTypes.bool]),
+  blogsLoadError: PropTypes.oneOfType([PropTypes.object, PropTypes.bool]),
+  // eslint-disable-next-line react/forbid-prop-types
   blogs: PropTypes.object,
   filter: PropTypes.func,
   linkPrefix: PropTypes.string,
   loadBlogs: PropTypes.func.isRequired,
   className: PropTypes.string,
+  selectedNav: PropTypes.string,
+};
+
+BlogsPage.defaultProps = {
+  blogsLoadError: false,
+  blogs: null,
+  filter: null,
+  linkPrefix: null,
+  className: null,
+  selectedNav: null,
 };

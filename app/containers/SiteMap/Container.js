@@ -2,9 +2,9 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Helmet } from 'react-helmet';
 import { cssModules } from 'gg-components/helpers/cssModules';
-
 import { SubSection, TextLink, PageTitle } from 'gg-components/Typography';
 import { LoadingIndicator } from 'gg-components/LoadingIndicator';
+
 import { NON_EMOJI_REGEX } from 'helpers/constants';
 import redirects from 'helpers/redirects';
 import STYLES from 'containers/pages.scss';
@@ -17,13 +17,7 @@ export default class SiteMap extends React.Component {
   };
 
   render() {
-    const {
-      loadingBlogs,
-      loadBlogsError,
-      blogs,
-      loadBlogs,
-      className,
-    } = this.props;
+    const { blogsLoadError, blogs, loadBlogs, className } = this.props;
     const outerClassNameFinal = [];
 
     if (className) {
@@ -33,7 +27,7 @@ export default class SiteMap extends React.Component {
     return (
       <div className={outerClassNameFinal.join(' ')}>
         <Helmet title="SiteMap" />
-        <LoadingIndicator loading={loadingBlogs} error={loadBlogsError}>
+        <LoadingIndicator loading={!blogs} error={blogsLoadError}>
           <PageTitle style={{ lineHeight: '1.5rem' }} name="Site map">
             <SubSection
               anchor={false}
@@ -280,8 +274,7 @@ export default class SiteMap extends React.Component {
 }
 
 SiteMap.propTypes = {
-  loadingBlogs: PropTypes.bool,
-  loadBlogsError: PropTypes.oneOfType([PropTypes.object, PropTypes.bool]),
+  blogsLoadError: PropTypes.oneOfType([PropTypes.object, PropTypes.bool]),
   blogs: PropTypes.object,
   filter: PropTypes.func,
   linkPrefix: PropTypes.string,
