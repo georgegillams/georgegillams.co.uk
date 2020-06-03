@@ -49,7 +49,7 @@ apiStructure.setMonzoAPIKey.action = require('./actions/monzo/setKey');
 // Notifications
 apiStructure.createNotification.action = require('./actions/notifications/create');
 apiStructure.deleteNotification.action = require('./actions/notifications/delete');
-apiStructure.loadNotifications.action = require('./actions/notifications/load');
+apiStructure.loadNotifications.action = require('./actions/notifications/loadAll');
 apiStructure.loadNotification.action = require('./actions/notifications/loadSingle');
 apiStructure.updateNotification.action = require('./actions/notifications/update');
 

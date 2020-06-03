@@ -8,16 +8,10 @@ import reqSecure from 'utils/reqSecure';
 
 export default function remove(req) {
   reqSecure(req, notificationsAllowedAttributes);
-  return new Promise((resolve, reject) => {
-    authentication(req).then(
-      user => {
-        if (user && user.admin) {
-          resolve(datumRemove({ redisKey: 'notifications' }, req));
-        } else {
-          reject(UNAUTHORISED_WRITE);
-        }
-      },
-      err => reject(err),
-    );
+  return authentication(req).then(user => {
+    if (user && user.admin) {
+      return datumRemove({ redisKey: 'notifications' }, req);
+    }
+    throw UNAUTHORISED_WRITE;
   });
 }
