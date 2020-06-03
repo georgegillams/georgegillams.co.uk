@@ -9,20 +9,12 @@ import reqSecure from 'utils/reqSecure';
 
 export default function update(req) {
   reqSecure(req, notificationsAllowedAttributes);
-  return lockPromise(
-    'notifications',
-    () =>
-      new Promise((resolve, reject) => {
-        authentication(req).then(
-          user => {
-            if (user && user.admin) {
-              resolve(datumUpdate({ redisKey: 'notifications' }, req));
-            } else {
-              reject(UNAUTHORISED_WRITE);
-            }
-          },
-          err => reject(err),
-        );
-      }),
+  return lockPromise('notifications', () =>
+    authentication(req).then(user => {
+      if (user && user.admin) {
+        return datumUpdate({ redisKey: 'notifications' }, req);
+      }
+      throw UNAUTHORISED_WRITE;
+    }),
   );
 }

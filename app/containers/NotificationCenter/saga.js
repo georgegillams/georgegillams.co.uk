@@ -1,4 +1,4 @@
-import { call, put, select, takeLatest } from 'redux-saga/effects';
+import { call, put, takeLatest } from 'redux-saga/effects';
 
 import { constants, actions } from './redux-definitions';
 
@@ -15,15 +15,12 @@ export function* doLoadNotifications() {
   const requestURL = apiStructure.loadNotifications.fullPath;
 
   try {
-    const notifications = yield call(request, requestURL);
-    if (notifications.error) {
-      yield put(pushMessage(setKeyErrorMessage));
-      yield put(addKeyRegisterError(setKeyResult));
+    const result = yield call(request, requestURL);
+    if (result.error) {
+      yield put(loadNotificationsRegisterError(result));
     } else {
-      yield put(pushMessage(setKeySuccessMessage));
-      yield put(addKeyRegisterSuccess(setKeyResult));
+      yield put(loadNotificationsRegisterSuccess(result.notifications));
     }
-    yield put(loadNotificationsRegisterSuccess(notifications));
   } catch (err) {
     yield put(loadNotificationsRegisterError(err));
   }

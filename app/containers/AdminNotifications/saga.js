@@ -61,7 +61,9 @@ export function* doLoadNotifications() {
       yield put(loadNotificationsRegisterError(notificationsResult));
       yield put(pushMessage(notificationsLoadErrorMessage));
     } else {
-      yield put(loadNotificationsRegisterSuccess(notificationsResult));
+      yield put(
+        loadNotificationsRegisterSuccess(notificationsResult.notifications),
+      );
       yield put(pushMessage(loadNotificationsSuccessMessage));
     }
   } catch (err) {
