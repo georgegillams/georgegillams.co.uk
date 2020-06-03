@@ -20,17 +20,20 @@ const createSomeValues = () => {
     requestedId: 'blog1',
     published: true,
     publishedTimestamp: 3,
+    content: 'blog 1 content',
   };
   const blog2 = {
     requestedId: 'blog2',
     published: false,
     publishedTimestamp: 2,
+    content: 'blog 2 content',
   };
   const blog3 = {
     requestedId: 'blog3',
     published: true,
     deleted: true,
     publishedTimestamp: 1,
+    content: 'blog 3 content',
   };
 
   return datumCreate({ redisKey: 'blogs' }, { body: blog1 })
@@ -54,6 +57,9 @@ test('load blogs as admin - returns all values', () => {
       expect(result.blogs[0].id).toBe('blog1');
       expect(result.blogs[1].id).toBe('blog2');
       expect(result.blogs[2].id).toBe('blog3');
+      expect(result.blogs[0].content).toBe(undefined);
+      expect(result.blogs[1].content).toBe(undefined);
+      expect(result.blogs[2].content).toBe(undefined);
       return true;
     });
 });

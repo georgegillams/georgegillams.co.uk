@@ -2,11 +2,11 @@ import React, { Fragment } from 'react';
 import PropTypes from 'prop-types';
 import { Helmet } from 'react-helmet';
 import { cssModules } from 'gg-components/helpers/cssModules';
+import { LoadingCover } from 'gg-components/Auth';
+import { CreativeCommons } from 'gg-components/CreativeCommons';
 
 import Skeleton from './Skeleton';
 
-import { LoadingCover } from 'gg-components/Auth';
-import { CreativeCommons } from 'gg-components/CreativeCommons';
 import { BlogRenderer } from 'components/Typography';
 import HelperFunctions from 'helpers/HelperFunctions';
 import Comments from 'containers/Comments';
@@ -26,8 +26,8 @@ export default class BlogViewer extends React.Component {
       match,
       blogId,
       blogs,
-      loading,
-      loadBlogError,
+      blogLoading,
+      blogLoadError,
       loadBlog,
       linkPrefix,
       className,
@@ -38,18 +38,21 @@ export default class BlogViewer extends React.Component {
       outerClassNameFinal.push(className);
     }
 
-    const blog = blogs && blogs[blogId];
+    let blog = null;
+    if (blogs && blogs[blogId]) {
+      blog = blogs[blogId];
+    }
 
     return (
       <div className={outerClassNameFinal.join(' ')}>
         <Helmet title="Blog" />
         <LoadingCover
           loadingSkeleton={Skeleton}
-          loading={loading || !blog}
-          error={loadBlogError}
+          loading={!blog}
+          error={blogLoadError}
         >
           {blog && (
-            <Fragment>
+            <>
               <BlogRenderer
                 showEditLink={user && user.admin}
                 centered={
@@ -61,7 +64,7 @@ export default class BlogViewer extends React.Component {
               />
               <Comments pageId={blog.id} />
               <CreativeCommons />
-            </Fragment>
+            </>
           )}
         </LoadingCover>
       </div>
@@ -70,22 +73,20 @@ export default class BlogViewer extends React.Component {
 }
 
 BlogViewer.propTypes = {
+  // eslint-disable-next-line react/forbid-prop-types
   user: PropTypes.object,
-  loading: PropTypes.bool,
-  loadBlogError: PropTypes.oneOfType([PropTypes.object, PropTypes.bool]),
+  blogLoading: PropTypes.bool,
+  blogLoadError: PropTypes.oneOfType([PropTypes.object, PropTypes.bool]),
   blogs: PropTypes.arrayOf(PropTypes.object),
-  filter: PropTypes.func,
   linkPrefix: PropTypes.string,
-  loadBlogs: PropTypes.func.isRequired,
   className: PropTypes.string,
 };
 
 BlogViewer.defaultProps = {
   user: null,
-  loading: false,
-  loadBlogError: null,
+  blogLoading: false,
+  blogLoadError: null,
   blogs: null,
-  filter: null,
   linkPrefix: '',
   className: null,
 };

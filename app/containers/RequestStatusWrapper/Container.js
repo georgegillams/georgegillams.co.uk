@@ -3,10 +3,10 @@ import PropTypes from 'prop-types';
 import { Helmet } from 'react-helmet';
 import cookie from 'react-cookies';
 import { cssModules } from 'gg-components/helpers/cssModules';
-
-import { PROJECT_UNDER_TEST } from 'helpers/constants';
 import { Section, SubSection, TextLink } from 'gg-components/Typography';
 import { RequestStatusContainer } from 'gg-components/RequestStatus';
+
+import { PROJECT_UNDER_TEST } from 'helpers/constants';
 import STYLES from 'containers/pages.scss';
 
 const getClassName = cssModules(STYLES); // REGEX_REPLACED
@@ -14,7 +14,9 @@ const getClassName = cssModules(STYLES); // REGEX_REPLACED
 export default class RequestStatusWrapper extends React.Component {
   componentDidMount = () => {
     this.interval = setInterval(() => {
-      this.props.purgeMessages();
+      if (this.props.messages && this.props.messages.length > 0) {
+        this.props.purgeMessages();
+      }
     }, 500);
   };
 

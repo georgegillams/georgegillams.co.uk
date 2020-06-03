@@ -15,12 +15,14 @@ export function* doLoadBlog() {
   console.log(`requestURL`, requestURL);
 
   try {
-    const blog = yield call(request, requestURL);
-    if (blog.error) {
-      yield put(loadBlogRegisterError(blog.error));
+    const result = yield call(request, requestURL);
+    console.log(`result`, result);
+    if (result.error) {
+      yield put(loadBlogRegisterError(result.error));
     }
-    yield put(loadBlogRegisterSuccess(blog));
+    yield put(loadBlogRegisterSuccess(result));
   } catch (err) {
+    console.log('err', err);
     yield put(loadBlogRegisterError(err));
   }
 }

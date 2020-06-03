@@ -2,13 +2,11 @@ import PropTypes from 'prop-types';
 import React from 'react';
 import bibtexParse from 'bibtex-parse-js';
 import { cssModules } from 'gg-components/helpers/cssModules';
+import { Section, SubSection, ArticleDate } from 'gg-components/Typography';
+import { Tag } from 'gg-components/Tag';
 
-import BlogPreviewSection from './BlogPreviewSection';
-import { Section, SubSection } from 'gg-components/Typography';
 import STYLES from './blog-viewer.scss';
-
-import {Tag} from 'gg-components/Tag';
-import { ArticleDate } from 'gg-components/Typography';
+import BlogPreviewSection from './BlogPreviewSection';
 
 const getClassName = cssModules(STYLES); // REGEX_REPLACED
 
@@ -68,7 +66,7 @@ const BlogRenderer = props => {
             href={`/admin/blog/edit/${blog.id}`}
           >
             <SubSection
-              textclassName={getClassName('blogs__edit-link')}
+              textClassName={getClassName('blogs__edit-link')}
               name="Edit this blog"
               anchor={false}
               link

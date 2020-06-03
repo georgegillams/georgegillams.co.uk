@@ -1,11 +1,7 @@
 {
   "parser": "babel-eslint",
-  "extends": [
-    "skyscanner-with-prettier",
-    "plugin:flowtype/recommended",
-    "plugin:promise/recommended"
-  ],
-  "plugins": ["flowtype", "promise"],
+  "extends": ["skyscanner-with-prettier", "plugin:flowtype/recommended"],
+  "plugins": ["flowtype"],
   "env": {
     "browser": true,
     "jest": true
@@ -22,8 +18,11 @@
     "import/extensions": ["off", "never"],
     "prettier/prettier": "error",
     "react/jsx-filename-extension": 0,
+    "react/jsx-props-no-spreading": "off",
+    "backpack/use-components": "off",
+    "backpack/use-tokens": "off",
     "import/no-extraneous-dependencies": "off",
-    // This is superceded by jsx-a11y/label-has-associated-control
+    // This is superseded by jsx-a11y/label-has-associated-control
     "jsx-a11y/label-has-for": "off",
     // We want to keep prop-types alongside flow types so we relax this rule to allow us to specify defaults for
     // required flow props
@@ -39,12 +38,7 @@
         "forbidDefaultForRequired": false
       }
     ],
-    "react/prefer-stateless-function": [
-      "error",
-      {
-        "ignorePureComponents": true
-      }
-    ],
+    "react/prefer-stateless-function": ["error", {}],
     "react/sort-comp": [
       "error",
       {
