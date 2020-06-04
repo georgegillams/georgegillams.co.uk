@@ -4,7 +4,7 @@ import { datumCreate } from '../datum';
 
 import loadSingle from './loadSingle.js';
 
-import { NotFoundError } from 'helpers/Errors';
+import { NotFoundError } from 'utils/errors';
 import {
   clearDatabaseCollection,
   createUsersWithSessions,

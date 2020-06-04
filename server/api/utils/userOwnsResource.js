@@ -6,7 +6,7 @@ const userOwnsResource = (redisKey, resourceId, user) =>
   new Promise(resolve => {
     if (!user) {
       resolve(false);
-      // Users should be honary owners of themselves:
+      // Users should be honorary owners of themselves:
     } else if (redisKey === 'users' && resourceId === user.id) {
       resolve(true);
     } else {

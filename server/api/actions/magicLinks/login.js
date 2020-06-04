@@ -3,7 +3,7 @@ import { datumLoad, datumUpdate } from '../datum';
 
 import magicLinksAllowedAttributes from './private/magicLinksAllowedAttributes';
 
-import { InvalidInputError } from 'helpers/Errors';
+import { InvalidInputError } from 'utils/errors';
 import lockPromise from 'utils/lock';
 import { find } from 'utils/find';
 import reqSecure from 'utils/reqSecure';

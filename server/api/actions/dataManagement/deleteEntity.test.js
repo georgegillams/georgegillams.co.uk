@@ -8,7 +8,7 @@ import {
 
 import deleteEntity from './deleteEntity.js';
 
-import { AuthError, NotFoundError } from 'helpers/Errors';
+import { AuthError, NotFoundError } from 'utils/errors';
 
 beforeEach(() => {
   clearDatabaseCollection('users');

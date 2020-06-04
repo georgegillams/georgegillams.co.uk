@@ -4,7 +4,7 @@ import { datumCreate, datumLoad } from '../datum';
 
 import deleteComment from './delete.js';
 
-import { AuthError, NotFoundError } from 'helpers/Errors';
+import { AuthError, NotFoundError } from 'utils/errors';
 import {
   clearDatabaseCollection,
   createUsersWithSessions,

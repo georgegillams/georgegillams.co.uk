@@ -8,7 +8,7 @@ import {
 
 import deleteSet from './deleteSet.js';
 
-import { AuthError, InvalidInputError } from 'helpers/Errors';
+import { AuthError, InvalidInputError } from 'utils/errors';
 
 beforeEach(() => {
   clearDatabaseCollection('users');

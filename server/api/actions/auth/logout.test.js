@@ -5,7 +5,7 @@ import { datumCreate, datumLoad } from '../datum';
 import logout from './logout.js';
 
 import { clearDatabaseCollection } from 'utils/testUtils';
-import { AuthError } from 'helpers/Errors';
+import { AuthError } from 'utils/errors';
 import { INVALID_SESSION } from 'helpers/constants';
 
 beforeEach(() => {

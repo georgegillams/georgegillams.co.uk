@@ -1,4 +1,4 @@
-@import 'helpers/tokens';
+@import '~utils/tokens';
 
 :root {
   --segmented-control-selected-color: #{$primary-color};

@@ -1,5 +1,3 @@
-import { AuthError, NotFoundError } from './Errors';
-
 const PROJECT_NAME = 'GEORGEGILLAMS';
 const DECIMAL_REGEX = /^[0-9\.]*$/gi;
 const INT_REGEX = /^[0-9]*$/gi;
@@ -40,26 +38,6 @@ const COOKIE_NAMES = [
   'loggedInAdmin',
   'userComments',
 ];
-const EMAIL_TAKEN = {
-  error: 'invalid-request',
-  errorMessage: 'Email already taken.',
-};
-const INVALID_SESSION = new AuthError(
-  'Invalid session. Try clearing cookies for this site and then re-authenticate',
-);
-const INVALID_CREDENTIALS = {
-  error: 'wrong-input',
-  errorMessage: 'Error logging in. The credentials supplied are invalid.',
-};
-const UNAUTHORISED_READ = new AuthError(
-  'You are not authorised to read this resource',
-);
-const UNAUTHORISED_WRITE = new AuthError(
-  'You are not authorised to write to this resource',
-);
-const RESOURCE_NOT_FOUND = new NotFoundError(
-  "We looked everywhere but we couldn't find that resource. Maybe you need to sign in.",
-);
 const CHECK_FOR_NEW_CONTENT_INTERVAL = 1000;
 const COMPONENT_RELOAD_INTERVAL = CHECK_FOR_NEW_CONTENT_INTERVAL / 2;
 const EMAIL_VERIFICATION_ENABLED = true;
@@ -83,14 +61,6 @@ const SITE_URL =
     ? `http://localhost:${PORT}`
     : `https://www.${DOMAIN}`;
 const API_ENDPOINT = `${SITE_URL}/api`;
-const GENERIC_ERROR_MESSAGE = {
-  type: 'error',
-  message: 'Something went wrong. Please try again later.',
-};
-const COMMUNICATION_ERROR_MESSAGE = {
-  type: 'error',
-  message: 'Our servers are poorly. Please try again later.',
-};
 const STRIPE_PUBLIC_API_KEY = process.env.STRIPE_PUBLIC_API_KEY
   ? process.env.STRIPE_PUBLIC_API_KEY
   : 'pk_test_cgQazYLEKCzNFGFuRfq0TL8N00Cj3LIfai';
@@ -122,7 +92,6 @@ export {
   AWS,
   CARD_NUMBER_REGEX,
   CHECK_FOR_NEW_CONTENT_INTERVAL,
-  COMMUNICATION_ERROR_MESSAGE,
   COMPONENT_RELOAD_INTERVAL,
   CONFERENCE_DAY_1_END,
   CONFERENCE_DAY_1_START,
@@ -137,15 +106,11 @@ export {
   EMAIL_IMAGE_HTML,
   EMAIL_REGEX,
   EMAIL_SENDER_EMAIL,
-  EMAIL_TAKEN,
   EMAIL_VERIFICATION_ENABLED,
   EXPIRY_REGEX,
-  GENERIC_ERROR_MESSAGE,
   GG_EMAIL,
   ID_REGEX,
   INT_REGEX,
-  INVALID_CREDENTIALS,
-  INVALID_SESSION,
   MD_COMPLETE_REGEX,
   MD_PARTIAL_REGEX,
   MONZOME_LINK_REGEX,
@@ -159,7 +124,6 @@ export {
   REDIRECT_REGEX,
   REDIS_INFORMATION_STORES,
   REDIS_STORES,
-  RESOURCE_NOT_FOUND,
   SESSION_SECRET,
   SITE_URL,
   SORT_CODE_REGEX,
@@ -173,8 +137,6 @@ export {
   TICKET_RESERVATION_LENGTH,
   TICKET_SALE_END,
   USERNAME_REGEX,
-  UNAUTHORISED_READ,
-  UNAUTHORISED_WRITE,
   USERNAMES_ENABLED,
 };
 export default {
@@ -184,7 +146,6 @@ export default {
   AWS,
   CARD_NUMBER_REGEX,
   CHECK_FOR_NEW_CONTENT_INTERVAL,
-  COMMUNICATION_ERROR_MESSAGE,
   COMPONENT_RELOAD_INTERVAL,
   CONFERENCE_DAY_1_END,
   CONFERENCE_DAY_1_START,
@@ -199,15 +160,11 @@ export default {
   EMAIL_IMAGE_HTML,
   EMAIL_REGEX,
   EMAIL_SENDER_EMAIL,
-  EMAIL_TAKEN,
   EMAIL_VERIFICATION_ENABLED,
   EXPIRY_REGEX,
-  GENERIC_ERROR_MESSAGE,
   GG_EMAIL,
   ID_REGEX,
   INT_REGEX,
-  INVALID_CREDENTIALS,
-  INVALID_SESSION,
   MD_COMPLETE_REGEX,
   MD_PARTIAL_REGEX,
   MONZOME_LINK_REGEX,
@@ -221,7 +178,6 @@ export default {
   REDIRECT_REGEX,
   REDIS_INFORMATION_STORES,
   REDIS_STORES,
-  RESOURCE_NOT_FOUND,
   SESSION_SECRET,
   SITE_URL,
   SORT_CODE_REGEX,
@@ -235,7 +191,5 @@ export default {
   TICKET_RESERVATION_LENGTH,
   TICKET_SALE_END,
   USERNAME_REGEX,
-  UNAUTHORISED_READ,
-  UNAUTHORISED_WRITE,
   USERNAMES_ENABLED,
 };

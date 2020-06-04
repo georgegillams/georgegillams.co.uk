@@ -26,11 +26,9 @@ function generateNewComponent(component, req, allAllowedAttributes) {
     if (req[component][name]) {
       if (pattern === 'BOOL') {
         newComponent[name] = !!req[component][name];
-      } else {
+      } else if (pattern && req[component][name].toString().match(pattern)) {
         // pattern is a regex:
-        if (pattern && req[component][name].toString().match(pattern)) {
-          newComponent[name] = req[component][name];
-        }
+        newComponent[name] = req[component][name];
       }
     }
   }

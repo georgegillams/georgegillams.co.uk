@@ -4,7 +4,7 @@ import { datumLoad } from '../datum';
 
 import setKey from './setKey.js';
 
-import { AuthError } from 'helpers/Errors';
+import { AuthError } from 'utils/errors';
 import {
   clearDatabaseCollection,
   createUsersWithSessions,

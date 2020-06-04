@@ -10,7 +10,7 @@ import {
 
 import { setUser } from 'containers/App/actions';
 import apiStructure from 'helpers/apiStructure';
-import { sagaHelper } from 'helpers/redux/saga';
+import { sagaHelper } from 'utils/redux-definitions/saga';
 
 const logoutMessage = { type: 'success', message: 'Logged out!' };
 const verificationEmailMessage = {

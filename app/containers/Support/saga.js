@@ -4,7 +4,7 @@ import { actions, selectors, constants } from './redux-definitions';
 
 import { COMMUNICATION_ERROR_MESSAGE } from 'helpers/constants';
 import apiStructure from 'helpers/apiStructure';
-import { sagaHelper } from 'helpers/redux/saga';
+import { sagaHelper } from 'utils/redux-definitions/saga';
 import { pushMessage } from 'containers/RequestStatusWrapper/actions';
 import request from 'utils/request';
 

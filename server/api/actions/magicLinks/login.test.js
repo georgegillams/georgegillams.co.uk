@@ -8,7 +8,7 @@ import {
   clearDatabaseCollection,
   createUsersWithSessions,
 } from 'utils/testUtils';
-import { InvalidInputError } from 'helpers/Errors';
+import { InvalidInputError } from 'utils/errors';
 
 beforeEach(() => {
   clearDatabaseCollection('magiclinks');

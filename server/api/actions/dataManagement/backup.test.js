@@ -2,7 +2,7 @@
 
 import backup from './backup.js';
 
-import { AuthError } from 'helpers/Errors';
+import { AuthError } from 'utils/errors';
 import {
   clearDatabaseCollection,
   createUsersWithSessions,

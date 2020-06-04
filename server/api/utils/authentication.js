@@ -40,6 +40,7 @@ export default function authentication(req) {
           'sessionKey',
         );
         if (userSession) {
+          // `find` uses `safeCompare` so it is safe to use for authentication
           const { existingValue: userProfile } = find(
             users,
             userSession.userId,

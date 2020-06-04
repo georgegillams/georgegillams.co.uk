@@ -4,7 +4,7 @@ import {
   UNAUTHORISED_WRITE,
 } from 'helpers/constants';
 import redis from 'utils/redis';
-import { InvalidInputError } from 'helpers/Errors';
+import { InvalidInputError } from 'utils/errors';
 import authentication from 'utils/authentication';
 import setContentLastUpdatedTimestamp from 'utils/setContentLastUpdatedTimestamp';
 import reqSecure from 'utils/reqSecure';

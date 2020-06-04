@@ -6,7 +6,7 @@ import {
   clearDatabaseCollection,
   createUsersWithSessions,
 } from 'utils/testUtils';
-import { AuthError } from 'helpers/Errors';
+import { AuthError } from 'utils/errors';
 import { UNAUTHORISED_WRITE } from 'helpers/constants';
 
 beforeEach(() => {

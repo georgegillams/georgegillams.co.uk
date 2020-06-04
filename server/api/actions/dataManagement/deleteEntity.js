@@ -7,7 +7,7 @@ import {
   PROJECT_NAME,
   UNAUTHORISED_WRITE,
 } from 'helpers/constants';
-import { AuthError } from 'helpers/Errors';
+import { AuthError } from 'utils/errors';
 import redis from 'utils/redis';
 import { find } from 'utils/find';
 import authentication from 'utils/authentication';

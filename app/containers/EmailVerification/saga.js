@@ -6,7 +6,7 @@ import { setUser } from 'containers/App/actions';
 import { COMMUNICATION_ERROR_MESSAGE } from 'helpers/constants';
 import apiStructure from 'helpers/apiStructure';
 import { pushMessage } from 'containers/RequestStatusWrapper/actions';
-import { sagaHelper } from 'helpers/redux/saga';
+import { sagaHelper } from 'utils/redux-definitions/saga';
 import request from 'utils/request';
 
 const { VERIFY_EMAIL } = constants;
