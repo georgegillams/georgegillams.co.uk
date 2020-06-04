@@ -11,18 +11,16 @@ const { makeSelectBlogId } = selectors;
 
 export function* doLoadBlog() {
   const blogId = yield select(makeSelectBlogId());
-  const requestURL = apiStructure.loadBlog.fullPath.split(':id').join(blogId);
-  console.log(`requestURL`, requestURL);
+  const apiCapability = apiStructure.loadBlog;
+  const requestURL = apiCapability.fullPath.split(':id').join(blogId);
 
   try {
     const result = yield call(request, requestURL);
-    console.log(`result`, result);
     if (result.error) {
       yield put(loadBlogRegisterError(result.error));
     }
     yield put(loadBlogRegisterSuccess(result));
   } catch (err) {
-    console.log('err', err);
     yield put(loadBlogRegisterError(err));
   }
 }

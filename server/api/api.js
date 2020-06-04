@@ -14,9 +14,35 @@ const appFunc = (req, res) => {
     .split('/')
     .slice(1);
 
-  const { action, params } = mapPathToAction(apiStructure, splitUrlPath);
-  // TODO - verify that action `method` matches req method.
-  // If not, return 405 error
+  const pathMatches = mapPathToAction(apiStructure, splitUrlPath);
+  const pathMatchesForMethod = pathMatches.filter(
+    c => c.apiCapability.method === req.method,
+  );
+
+  let action = null;
+  let params = [];
+
+  if (pathMatchesForMethod.length === 0 && pathMatches.length > 0) {
+    res.status(405);
+    res.json({
+      error: 'method_not_allowed',
+      errorMessage: `This API function cannot be called with HTTP method ${req.method}`,
+    });
+  }
+  if (pathMatchesForMethod.length === 1) {
+    action = pathMatchesForMethod[0].apiCapability.action;
+    params = pathMatchesForMethod[0].params;
+  }
+  if (pathMatchesForMethod.length > 1) {
+    const isError = new InternalServerError(
+      'Ambiguous request - the API has multiple functions matching the request',
+    );
+    res.status(isError.httpStatus);
+    res.json({
+      error: isError.category,
+      errorMessage: isError.message,
+    });
+  }
 
   try {
     if (action) {

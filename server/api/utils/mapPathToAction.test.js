@@ -26,29 +26,31 @@ const testAPIStructure = {
 };
 
 test('correctly gets path exactly matching URL', () => {
-  const { action, params } = mapPathToActions(testAPIStructure, [
+  const results = mapPathToActions(testAPIStructure, [
     'action1',
     'thing',
     'random',
   ]);
 
-  expect(action).toEqual('DUMMY_ACTION_1');
-  expect(params).toEqual({});
+  expect(results.length).toEqual(1);
+  expect(results[0].apiCapability.action).toEqual('DUMMY_ACTION_1');
+  expect(results[0].params).toEqual({});
 });
 
 test('correctly gets path exactly matching URL with arg', () => {
-  const { action, params } = mapPathToActions(testAPIStructure, [
+  const results = mapPathToActions(testAPIStructure, [
     'action3',
     'with',
     'this-is-my-parameter',
   ]);
 
-  expect(action).toEqual('DUMMY_ACTION_3');
-  expect(params).toEqual({ arg: 'this-is-my-parameter' });
+  expect(results.length).toEqual(1);
+  expect(results[0].apiCapability.action).toEqual('DUMMY_ACTION_3');
+  expect(results[0].params).toEqual({ arg: 'this-is-my-parameter' });
 });
 
 test('correctly gets path exactly matching URL with multiple args', () => {
-  const { action, params } = mapPathToActions(testAPIStructure, [
+  const results = mapPathToActions(testAPIStructure, [
     'action4',
     'with',
     'this-is-my-first-parameter',
@@ -57,8 +59,9 @@ test('correctly gets path exactly matching URL with multiple args', () => {
     'about',
   ]);
 
-  expect(action).toEqual('DUMMY_ACTION_4');
-  expect(params).toEqual({
+  expect(results.length).toEqual(1);
+  expect(results[0].apiCapability.action).toEqual('DUMMY_ACTION_4');
+  expect(results[0].params).toEqual({
     multiple: 'this-is-my-first-parameter',
     spread: 'this-is-my-second-parameter',
   });
