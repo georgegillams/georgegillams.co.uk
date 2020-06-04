@@ -1,13 +1,13 @@
 import { API_ENDPOINT } from './constants';
 
-const GET = 'get';
-const POST = 'post';
+const GET = 'GET';
+const POST = 'POST';
 
 const apiStructure = {
   // Analytics
   createAnalytic: { method: POST, path: '/analytics/create' },
-  loadAnalytics: { method: POST, path: '/analytics/load-all' },
-  loadAnalyticsSummary: { method: POST, path: '/analytics/load' },
+  loadAnalytics: { method: GET, path: '/analytics/load-all' },
+  loadAnalyticsSummary: { method: GET, path: '/analytics/load' },
 
   // Auth
   loadAuth: { method: GET, path: '/auth/load' },
@@ -42,7 +42,7 @@ const apiStructure = {
   restoreBackup: { method: POST, path: '/data-management/restore' },
 
   // Make payment
-  loadPayment: { method: POST, path: '/make-payment/load' },
+  loadPayment: { method: GET, path: '/make-payment/load' },
   createPaymentIntent: { method: POST, path: '/make-payment/create-intent' },
   resendPaymentReceipt: { method: POST, path: '/make-payment/resend-receipt' },
 

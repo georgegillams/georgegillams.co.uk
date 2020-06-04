@@ -12,11 +12,12 @@ const { reauthenticateRegisterSuccess, reauthenticateRegisterError } = actions;
 export function* doReauthentication() {
   yield put(setUserLoading());
 
-  const requestURL = apiStructure.loadAuth.fullPath;
+  const apiCapability = apiStructure.loadAuth;
+  const requestURL = apiCapability.fullPath;
 
   try {
     const loginResult = yield call(request, requestURL, {
-      method: 'POST',
+      method: apiCapability.method,
     });
     if (loginResult.error) {
       yield put(reauthenticateRegisterError(loginResult));

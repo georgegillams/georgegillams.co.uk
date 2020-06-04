@@ -18,7 +18,7 @@ const pathMatchesTemplate = (splitPath, template) => {
 };
 
 const mapPathToAction = (apiStructure, splitPath) => {
-  let result = { action: null, params: [] };
+  const results = [];
   Object.keys(apiStructure).forEach(key => {
     const apiCapability = apiStructure[key];
     const apiCapabilityPathTemplate = apiCapability.path.split('/').slice(1);
@@ -28,10 +28,10 @@ const mapPathToAction = (apiStructure, splitPath) => {
       apiCapabilityPathTemplate,
     );
     if (matches) {
-      result = { action: apiCapability.action, params };
+      results.push({ apiCapability, params });
     }
   });
-  return result;
+  return results;
 };
 
 export default mapPathToAction;

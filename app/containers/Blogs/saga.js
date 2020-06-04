@@ -16,7 +16,8 @@ const blogsLoadSuccessMessage = {
 };
 
 export function* doLoadBlogs() {
-  const requestURL = apiStructure.loadBlogs.fullPath;
+  const apiCapability = apiStructure.loadBlogs;
+  const requestURL = apiCapability.fullPath;
 
   try {
     const blogsResult = yield call(request, requestURL);
