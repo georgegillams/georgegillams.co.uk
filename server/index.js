@@ -18,7 +18,6 @@ import seo from './seo';
 import api from './api/api';
 import greasemonkey from './greasemonkey';
 import redirectNonWWW from './redirectNonWWW';
-import argv from './util/argv';
 import setup from './middlewares/frontendMiddleware';
 
 import {
@@ -108,7 +107,7 @@ setup(app, {
 });
 
 // get the intended host and port number, use localhost and port 3000 if not provided
-const customHost = argv.host || process.env.HOST;
+const customHost = process.env.HOST;
 const host = customHost || null; // Let http.Server use its default IPv6/4 host
 const prettyHost = customHost || 'localhost';
 
