@@ -7,17 +7,17 @@ const COMMUNICATION_ERROR_MESSAGE = {
   message: 'Our servers are poorly. Please try again later.',
 };
 const PROJECT_NAME = 'GEORGEGILLAMS';
-const DECIMAL_REGEX = /^[0-9\.]*$/gi;
+const DECIMAL_REGEX = /^[0-9\\.]*$/gi;
 const INT_REGEX = /^[0-9]*$/gi;
-const SORT_CODE_REGEX = /^[0-9\.-]*$/gi;
-const STRING_REGEX = /^[A-Za-z0-9\.\ ]*$/gi;
-const ID_REGEX = /^[A-Za-z0-9\-]*$/gi;
-const USERNAME_REGEX = /^[A-Za-z0-9\.\ ]*$/gi;
-const REDIRECT_REGEX = /^[A-Za-z0-9\.\ \-\_#\/]*$/gi;
-const NAME_REGEX = /^[A-Za-z\ ]*$/gi;
+const SORT_CODE_REGEX = /^[0-9\\.-]*$/gi;
+const STRING_REGEX = /^[A-Za-z0-9\\.\\ ]*$/gi;
+const ID_REGEX = /^[A-Za-z0-9\\-]*$/gi;
+const USERNAME_REGEX = /^[A-Za-z0-9\\.\\ ]*$/gi;
+const REDIRECT_REGEX = /^[A-Za-z0-9\\.\\ \-\\_#\\/]*$/gi;
+const NAME_REGEX = /^[A-Za-z\\ ]*$/gi;
 const MONZOME_LINK_REGEX = /^(https?:\/\/)?monzo\.me\/[A-Za-z_-]+(\/.*)?$/gi;
-const NON_EMOJI_REGEX = /[A-Za-zä\ 0-9,]*/gi;
-const EMAIL_REGEX = /^([a-zA-Z0-9_\-\.\+]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([a-zA-Z0-9\-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$/gi;
+const NON_EMOJI_REGEX = /[A-Za-zä\\ 0-9,]*/gi;
+const EMAIL_REGEX = /^([a-zA-Z0-9_\-\\.\\+]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([a-zA-Z0-9\\-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$/gi;
 const PASSWORD_REGEX = /.{6,}/gi;
 const MD_COMPLETE_REGEX = /.*/gi; // TODO UPDATE
 const MD_PARTIAL_REGEX = /.*/gi; // TODO UPDATE

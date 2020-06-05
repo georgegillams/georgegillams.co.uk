@@ -1,8 +1,10 @@
+/* eslint-disable no-console */
 const { execSync } = require('child_process');
+
 const prompt = require('prompt');
 
 // Create backup
-let defaultBackupName = Date.now().toString();
+const defaultBackupName = Date.now().toString();
 const schema = {
   properties: {
     backupName: {
