@@ -1,7 +1,8 @@
 import performRestoration from './private/performRestoration';
 
 import authentication from 'utils/authentication';
-import { UNAUTHORISED_WRITE, PROJECT_NAME } from 'helpers/constants';
+import { PROJECT_NAME } from 'helpers/constants';
+import { UNAUTHORISED_WRITE } from 'utils/errorConstants';
 
 export default function create(req) {
   return new Promise((resolve, reject) => {

@@ -6,7 +6,7 @@ import logout from './logout.js';
 
 import { clearDatabaseCollection } from 'utils/testUtils';
 import { AuthError } from 'utils/errors';
-import { INVALID_SESSION } from 'helpers/constants';
+import { INVALID_SESSION } from 'utils/errorConstants';
 
 beforeEach(() => {
   clearDatabaseCollection('sessions');

@@ -4,7 +4,7 @@ import notificationsAllowedAttributes from './private/notificationsAllowedAttrib
 
 import lockPromise from 'utils/lock';
 import authentication from 'utils/authentication';
-import { UNAUTHORISED_WRITE } from 'helpers/constants';
+import { UNAUTHORISED_WRITE } from 'utils/errorConstants';
 import reqSecure from 'utils/reqSecure';
 
 export default function create(req) {

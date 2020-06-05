@@ -20,19 +20,9 @@ const UNAUTHORISED_WRITE = new AuthError(
 const RESOURCE_NOT_FOUND = new NotFoundError(
   "We looked everywhere but we couldn't find that resource. Maybe you need to sign in.",
 );
-const GENERIC_ERROR_MESSAGE = {
-  type: 'error',
-  message: 'Something went wrong. Please try again later.',
-};
-const COMMUNICATION_ERROR_MESSAGE = {
-  type: 'error',
-  message: 'Our servers are poorly. Please try again later.',
-};
 
 export {
-  COMMUNICATION_ERROR_MESSAGE,
   EMAIL_TAKEN,
-  GENERIC_ERROR_MESSAGE,
   INVALID_CREDENTIALS,
   INVALID_SESSION,
   RESOURCE_NOT_FOUND,
@@ -40,9 +30,7 @@ export {
   UNAUTHORISED_WRITE,
 };
 export default {
-  COMMUNICATION_ERROR_MESSAGE,
   EMAIL_TAKEN,
-  GENERIC_ERROR_MESSAGE,
   INVALID_CREDENTIALS,
   INVALID_SESSION,
   RESOURCE_NOT_FOUND,

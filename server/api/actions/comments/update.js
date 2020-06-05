@@ -5,7 +5,7 @@ import commentsAllowedAttributes from './private/commentsAllowedAttributes';
 import lockPromise from 'utils/lock';
 import authentication from 'utils/authentication';
 import { userOwnsResource } from 'utils/userOwnsResource';
-import { UNAUTHORISED_WRITE } from 'helpers/constants';
+import { UNAUTHORISED_WRITE } from 'utils/errorConstants';
 import reqSecure from 'utils/reqSecure';
 
 export default function update(req) {

@@ -4,7 +4,7 @@ import analyticsAllowedAttributes from './private/analyticsAllowedAttributes';
 
 import authentication from 'utils/authentication';
 import reqSecure from 'utils/reqSecure';
-import { UNAUTHORISED_READ } from 'helpers/constants';
+import { UNAUTHORISED_READ } from 'utils/errorConstants';
 
 export default function loadAll(req) {
   reqSecure(req, analyticsAllowedAttributes);

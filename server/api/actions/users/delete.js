@@ -4,7 +4,7 @@ import usersAllowedAttributes from './private/usersAllowedAttributes';
 
 import authentication from 'utils/authentication';
 import { userOwnsResource } from 'utils/userOwnsResource';
-import { UNAUTHORISED_WRITE } from 'helpers/constants';
+import { UNAUTHORISED_WRITE } from 'utils/errorConstants';
 import reqSecure from 'utils/reqSecure';
 
 export default function remove(req) {

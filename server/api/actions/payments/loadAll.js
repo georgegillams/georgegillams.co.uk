@@ -4,7 +4,7 @@ import paymentsAllowedAttributes from './private/paymentsAllowedAttributes';
 
 import authentication from 'utils/authentication';
 import reqSecure from 'utils/reqSecure';
-import { UNAUTHORISED_READ } from 'helpers/constants';
+import { UNAUTHORISED_READ } from 'utils/errorConstants';
 import { associate } from 'helpers/objects';
 
 export default function loadAll(req) {

@@ -8,7 +8,7 @@ import authentication from 'utils/authentication';
 import { hash } from 'utils/hash';
 import { find, emailFingerprint } from 'utils/find';
 import { sendEmailVerificationEmail } from 'utils/emailHelpers';
-import { UNAUTHORISED_WRITE } from 'helpers/constants';
+import { UNAUTHORISED_WRITE } from 'utils/errorConstants';
 import reqSecure from 'utils/reqSecure';
 
 export default function create(req) {

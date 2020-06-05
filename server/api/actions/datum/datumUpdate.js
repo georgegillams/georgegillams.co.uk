@@ -3,7 +3,8 @@ import datumLoad from './datumLoad';
 import redis from 'utils/redis';
 import { find } from 'utils/find';
 import setContentLastUpdatedTimestamp from 'utils/setContentLastUpdatedTimestamp';
-import { PROJECT_NAME, RESOURCE_NOT_FOUND } from 'helpers/constants';
+import { PROJECT_NAME } from 'helpers/constants';
+import { RESOURCE_NOT_FOUND } from 'utils/errorConstants';
 
 export default function datumUpdate(settings, req) {
   return new Promise((resolve, reject) => {

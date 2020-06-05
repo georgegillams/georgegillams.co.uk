@@ -2,8 +2,8 @@ import { call, put, select, takeLatest } from 'redux-saga/effects';
 
 import { actions, constants, selectors } from './redux-definitions';
 
-import { pushMessage } from 'containers/RequestStatusWrapper/actions';
 import { COMMUNICATION_ERROR_MESSAGE } from 'helpers/constants';
+import { pushMessage } from 'containers/RequestStatusWrapper/actions';
 import apiStructure from 'helpers/apiStructure';
 import request from 'utils/request';
 

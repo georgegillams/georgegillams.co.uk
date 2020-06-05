@@ -2,7 +2,7 @@ import { datumLoad, datumUpdate } from '../datum';
 
 import authAllowedAttributes from './private/authAllowedAttributes';
 
-import { INVALID_SESSION } from 'helpers/constants';
+import { INVALID_SESSION } from 'utils/errorConstants';
 import lockPromise from 'utils/lock';
 import { find } from 'utils/find';
 import setContentLastUpdatedTimestamp from 'utils/setContentLastUpdatedTimestamp';

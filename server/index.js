@@ -27,7 +27,6 @@ import {
   NODE_ENV,
   SESSION_SECRET,
   SITE_URL,
-  PROJECT_UNDER_TEST,
 } from 'helpers/constants';
 
 const app = express();
