@@ -59,11 +59,14 @@ function sendGreasemonkeyFile(scriptId, req, res) {
       } else {
         res
           .status(500)
-          .send({ error: 'An error occured fetching resources from GitHub.' });
+          .send({ error: 'An error occurred fetching resources from GitHub.' });
       }
     });
-  } catch (e) {
-    console.error(`An error occured fetching resources from GitHub`, err);
+  } catch (err) {
+    res
+      .status(500)
+      .send({ error: 'An error occurred fetching resources from GitHub.' });
+    console.error(`Error`, err);
   }
 }
 

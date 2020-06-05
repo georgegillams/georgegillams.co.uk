@@ -18,7 +18,11 @@ const normaliseArray = ar => {
   const arClone = JSON.parse(JSON.stringify(ar));
   const result = {};
   arClone.forEach((item, index) => {
-    result[item.id] = arClone[index];
+    let newObjectKey = `${index}`;
+    if (item.id) {
+      newObjectKey = item.id;
+    }
+    result[newObjectKey] = arClone[index];
   });
   return result;
 };
@@ -45,6 +49,7 @@ const deArrayitise = array => {
   return array;
 };
 
+// TODO TEST THIS
 const associate = (
   data,
   additionalData,
