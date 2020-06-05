@@ -5,14 +5,8 @@ import usersAllowedAttributes from './private/usersAllowedAttributes';
 
 import lockPromise from 'utils/lock';
 import { find } from 'utils/find';
-import {
-  INVALID_SESSION,
-  EMAIL_TAKEN,
-  INVALID_CREDENTIALS,
-  USERNAMES_ENABLED,
-} from 'helpers/constants';
-import { hash, compareHash } from 'utils/hash';
-import setContentLastUpdatedTimestamp from 'utils/setContentLastUpdatedTimestamp';
+import { USERNAMES_ENABLED } from 'helpers/constants';
+import { EMAIL_TAKEN } from 'utils/errorConstants';
 import reqSecure from 'utils/reqSecure';
 import { sendEmailVerificationEmail } from 'utils/emailHelpers';
 

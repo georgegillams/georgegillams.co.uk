@@ -3,7 +3,8 @@ import fs from 'fs';
 import loadAllData from './private/loadAllData';
 
 import authentication from 'utils/authentication';
-import { UNAUTHORISED_READ, PROJECT_NAME } from 'helpers/constants';
+import { PROJECT_NAME } from 'helpers/constants';
+import { UNAUTHORISED_READ } from 'utils/errorConstants';
 
 const dataFilePath = 'server/server_content/data.json';
 

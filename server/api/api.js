@@ -5,7 +5,7 @@ import {
   CategorisedError,
   InternalServerError,
   NotImplementedError,
-} from 'helpers/Errors';
+} from 'utils/errors';
 import { mapPathToAction } from 'utils/mapPathToAction.js';
 
 const appFunc = (req, res) => {

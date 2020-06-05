@@ -5,7 +5,6 @@ import { selectors, actions, constants } from './redux-definitions';
 import { pushMessage } from 'containers/RequestStatusWrapper/actions';
 import { COMMUNICATION_ERROR_MESSAGE } from 'helpers/constants';
 import apiStructure from 'helpers/apiStructure';
-import { calculateOutstandingBalance } from 'helpers/ticketing';
 import { associate } from 'helpers/objects';
 import request from 'utils/request';
 

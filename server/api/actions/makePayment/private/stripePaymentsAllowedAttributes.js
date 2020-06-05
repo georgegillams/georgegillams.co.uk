@@ -1,12 +1,4 @@
-import {
-  MD_PARTIAL_REGEX,
-  ID_REGEX,
-  NAME_REGEX,
-  STRING_REGEX,
-  DATE_REGEX,
-  INT_REGEX,
-  PASSWORD_REGEX,
-} from 'helpers/constants';
+import { ID_REGEX, INT_REGEX, PASSWORD_REGEX } from 'helpers/constants';
 
 const commentsAllowedAttributes = [
   { attribute: 'paymentToken', pattern: PASSWORD_REGEX },

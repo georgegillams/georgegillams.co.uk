@@ -2,7 +2,7 @@ import { datumLoad } from '../datum';
 
 import magicLinksAllowedAttributes from './private/magicLinksAllowedAttributes';
 
-import { AuthError, NotFoundError } from 'helpers/Errors';
+import { AuthError, NotFoundError } from 'utils/errors';
 import { find } from 'utils/find';
 import authentication from 'utils/authentication';
 import { sendMagicLinkEmail } from 'utils/emailHelpers';

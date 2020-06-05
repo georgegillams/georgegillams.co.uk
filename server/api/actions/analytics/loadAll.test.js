@@ -4,7 +4,7 @@ import { datumCreate } from '../datum';
 
 import loadAll from './loadAll.js';
 
-import { AuthError } from 'helpers/Errors';
+import { AuthError } from 'utils/errors';
 import {
   clearDatabaseCollection,
   createUsersWithSessions,

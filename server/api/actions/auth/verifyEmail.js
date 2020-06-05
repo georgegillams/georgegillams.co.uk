@@ -2,7 +2,7 @@ import { datumLoad, datumUpdate } from '../datum';
 
 import lockPromise from 'utils/lock';
 import { find } from 'utils/find';
-import { AuthError } from 'helpers/Errors';
+import { AuthError } from 'utils/errors';
 
 export default function verifyEmail(req) {
   return lockPromise('emailVerificationCodes', () => {

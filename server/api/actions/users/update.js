@@ -8,7 +8,7 @@ import { hash } from 'utils/hash';
 import { find, emailFingerprint } from 'utils/find';
 import { userOwnsResource } from 'utils/userOwnsResource';
 import { sendEmailVerificationEmail } from 'utils/emailHelpers';
-import { UNAUTHORISED_WRITE, RESOURCE_NOT_FOUND } from 'helpers/constants';
+import { UNAUTHORISED_WRITE, RESOURCE_NOT_FOUND } from 'utils/errorConstants';
 import reqSecure from 'utils/reqSecure';
 
 export default function update(req) {

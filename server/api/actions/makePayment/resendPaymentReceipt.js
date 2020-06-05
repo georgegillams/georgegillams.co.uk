@@ -6,7 +6,7 @@ import authentication from 'utils/authentication';
 import { sendPaymentReceiptEmail } from 'utils/emailHelpers';
 import reqSecure from 'utils/reqSecure';
 import { find } from 'utils/find';
-import { UNAUTHORISED_READ } from 'helpers/constants';
+import { UNAUTHORISED_READ } from 'utils/errorConstants';
 
 export default function resendPaymentReceipt(req) {
   // TODO rewrite to use payment email

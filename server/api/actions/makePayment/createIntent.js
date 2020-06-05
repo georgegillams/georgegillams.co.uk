@@ -9,20 +9,17 @@ import lockPromise from 'utils/lock';
 import reqSecure from 'utils/reqSecure';
 
 const createNewPaymentIntent = payment =>
-  new Promise((resolve, reject) => {
+  Promise.resolve().then(() => {
     if (
       payment.outstandingBalance < 30 &&
       payment.outstandingBalance > 1000000
     ) {
-      resolve({ id: null, client_secret: null });
-    } else {
-      resolve(
-        stripeInstance.paymentIntents.create({
-          amount: payment.outstandingBalance,
-          currency: 'gbp',
-        }),
-      );
+      return { id: null, client_secret: null };
     }
+    return stripeInstance.paymentIntents.create({
+      amount: payment.outstandingBalance,
+      currency: 'gbp',
+    });
   });
 
 export default function createIntent(req) {

@@ -5,7 +5,7 @@ import processAnalytics from './private/processAnalytics';
 
 import authentication from 'utils/authentication';
 import reqSecure from 'utils/reqSecure';
-import { UNAUTHORISED_READ } from 'helpers/constants';
+import { UNAUTHORISED_READ } from 'utils/errorConstants';
 
 export default function loadSummary(req) {
   reqSecure(req, analyticsAllowedAttributes);

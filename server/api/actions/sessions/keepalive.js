@@ -1,9 +1,9 @@
+import { datumLoad, datumUpdate } from '../datum';
+
 import lockPromise from 'utils/lock';
-import { INVALID_SESSION } from 'helpers/constants';
+import { INVALID_SESSION } from 'utils/errorConstants';
 import getContentLastUpdatedTimestamp from 'utils/getContentLastUpdatedTimestamp';
 import { find } from 'utils/find';
-
-import { datumLoad, datumUpdate } from '../datum';
 
 export default function keepalive(req) {
   return lockPromise(

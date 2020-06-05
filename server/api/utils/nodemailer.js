@@ -1,4 +1,4 @@
-const nodemailer = require('nodemailer');
+import nodemailer from 'nodemailer';
 
 let mailConfig = null;
 let transporter = null;
@@ -13,7 +13,8 @@ if (process.env.GSUITE_EMAIL && process.env.GSUITE_APP_PASSWORD) {
   transporter = nodemailer.createTransport(mailConfig);
 } else {
   transporter = {};
-  transporter.sendMail = function(obj) {
+  transporter.sendMail = obj => {
+    // eslint-disable-next-line no-console
     console.log(obj);
   };
 }

@@ -4,7 +4,7 @@ import { datumLoad } from '../datum';
 
 import requestMagicLink from './requestMagicLink.js';
 
-import { AuthError, NotFoundError } from 'helpers/Errors';
+import { AuthError, NotFoundError } from 'utils/errors';
 import {
   clearDatabaseCollection,
   createUsersWithSessions,

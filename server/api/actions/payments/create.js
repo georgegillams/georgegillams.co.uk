@@ -4,7 +4,6 @@ import paymentsAllowedAttributes from './private/paymentsAllowedAttributes';
 
 import lockPromise from 'utils/lock';
 import authentication from 'utils/authentication';
-import { UNAUTHORISED_WRITE } from 'helpers/constants';
 import reqSecure from 'utils/reqSecure';
 
 export default function create(req) {

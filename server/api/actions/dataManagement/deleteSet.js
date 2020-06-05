@@ -1,10 +1,7 @@
-import {
-  STRING_REGEX,
-  PROJECT_NAME,
-  UNAUTHORISED_WRITE,
-} from 'helpers/constants';
+import { STRING_REGEX, PROJECT_NAME } from 'helpers/constants';
+import { UNAUTHORISED_WRITE } from 'utils/errorConstants';
 import redis from 'utils/redis';
-import { InvalidInputError } from 'helpers/Errors';
+import { InvalidInputError } from 'utils/errors';
 import authentication from 'utils/authentication';
 import setContentLastUpdatedTimestamp from 'utils/setContentLastUpdatedTimestamp';
 import reqSecure from 'utils/reqSecure';

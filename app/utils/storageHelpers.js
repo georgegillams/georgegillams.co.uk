@@ -1,14 +1,12 @@
-import moment from 'moment';
-
 const POST_LOGIN_REDIRECT_LOCATION = 'post-login-redirect-location';
+
+const setPostLoginRedirect = location => {
+  localStorage.setItem(POST_LOGIN_REDIRECT_LOCATION, location);
+};
 
 const redirectToCurrentPageAfterLogin = () => {
   const currentLocation = window.location;
   setPostLoginRedirect(currentLocation);
-};
-
-const setPostLoginRedirect = location => {
-  localStorage.setItem(POST_LOGIN_REDIRECT_LOCATION, location);
 };
 
 const clearPostLoginRedirect = () => {

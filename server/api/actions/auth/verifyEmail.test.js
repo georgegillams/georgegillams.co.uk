@@ -8,7 +8,7 @@ import {
   clearDatabaseCollection,
   createUsersWithSessions,
 } from 'utils/testUtils';
-import { AuthError } from 'helpers/Errors';
+import { AuthError } from 'utils/errors';
 
 beforeEach(() => {
   clearDatabaseCollection('emailVerificationCodes');

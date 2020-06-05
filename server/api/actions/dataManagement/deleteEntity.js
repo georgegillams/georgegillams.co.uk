@@ -1,13 +1,8 @@
 import { datumLoad } from '../datum';
 
-import {
-  STRING_REGEX,
-  ID_REGEX,
-  RESOURCE_NOT_FOUND,
-  PROJECT_NAME,
-  UNAUTHORISED_WRITE,
-} from 'helpers/constants';
-import { AuthError } from 'helpers/Errors';
+import { STRING_REGEX, ID_REGEX, PROJECT_NAME } from 'helpers/constants';
+import { RESOURCE_NOT_FOUND, UNAUTHORISED_WRITE } from 'utils/errorConstants';
+import { AuthError } from 'utils/errors';
 import redis from 'utils/redis';
 import { find } from 'utils/find';
 import authentication from 'utils/authentication';

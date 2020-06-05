@@ -1,6 +1,6 @@
 import appActions from 'containers/App/actions';
 
-import { composeContainer } from 'helpers/redux';
+import { composeContainer } from 'utils/redux-definitions';
 import actionMeta from './actionMeta';
 import { selectors, actions, reducer } from './redux-definitions';
 import saga from './saga';
