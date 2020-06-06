@@ -1,4 +1,3 @@
-/* eslint-disable no-console */
 import apiStructure from './apiStructureWithActions';
 
 import {
@@ -87,7 +86,7 @@ const appFunc = (req, res) => {
       res.json({ error: err.category, errorMessage: err.message });
     }
   } catch (err) {
-    console.error(err);
+    logger.error(err);
   }
 };
 

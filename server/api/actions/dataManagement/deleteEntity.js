@@ -8,6 +8,7 @@ import { find } from 'utils/find';
 import authentication from 'utils/authentication';
 import setContentLastUpdatedTimestamp from 'utils/setContentLastUpdatedTimestamp';
 import reqSecure from 'utils/reqSecure';
+import logger from 'utils/logger';
 
 const deleteEntityAllowedAttributes = [
   { attribute: 'collectionName', pattern: STRING_REGEX },
@@ -44,7 +45,7 @@ export default function deleteEntity(req) {
           'Only deleted entities can be permanently removed.',
         );
       }
-      console.log(
+      logger.log(
         `Permanently removing ${existingValue.id} at index ${existingValueIndex}`,
       );
       redis.lrem(

@@ -1,9 +1,7 @@
 #!/usr/bin/env node
 
 import redis from 'utils/redis';
-
-import { datumCreate } from '../api/actions/datum';
-
+import { datumCreate } from 'api/actions/datum';
 import { PROJECT_NAME } from 'helpers/constants';
 
 const clearDatabaseCollection = collectionName => {

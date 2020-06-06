@@ -1,9 +1,10 @@
-/* eslint-disable no-console */
 import fs from 'fs';
 import path from 'path';
 
 import express from 'express';
 import wget from 'wget-improved';
+
+import logger from 'utils/logger';
 
 const router = express.Router();
 
@@ -66,7 +67,7 @@ function sendGreasemonkeyFile(scriptId, req, res) {
     res
       .status(500)
       .send({ error: 'An error occurred fetching resources from GitHub.' });
-    console.error(`Error`, err);
+    logger.error(`Error`, err);
   }
 }
 

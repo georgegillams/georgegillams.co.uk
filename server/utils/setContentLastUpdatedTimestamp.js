@@ -1,6 +1,5 @@
+import { datumLoad, datumCreate, datumUpdate } from 'api/actions/datum';
 import lockPromise from 'utils/lock';
-
-import { datumLoad, datumCreate, datumUpdate } from '../api/actions/datum';
 
 export default function setContentLastUpdatedTimestamp() {
   let newContentUpdateData = {};

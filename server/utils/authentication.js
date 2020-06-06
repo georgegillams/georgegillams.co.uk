@@ -1,8 +1,8 @@
 import safeCompare from 'safe-compare';
 
-import { datumLoad } from '../api/actions/datum';
-
 import { find } from './find';
+
+import { datumLoad } from 'api/actions/datum';
 
 const secretApiKey = process.env.SECRET_API_KEY;
 
