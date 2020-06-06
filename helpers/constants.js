@@ -50,11 +50,6 @@ const CHECK_FOR_NEW_CONTENT_INTERVAL = 1000;
 const COMPONENT_RELOAD_INTERVAL = CHECK_FOR_NEW_CONTENT_INTERVAL / 2;
 const EMAIL_VERIFICATION_ENABLED = true;
 const GG_EMAIL = 'hello@georgegillams.co.uk';
-const EMAIL_IMAGE_HTML =
-  '<img src="https://i.imgur.com/h5zmNwn.png" style="width: 20rem;">';
-const EMAIL_HTML_BUTTON_STYLE =
-  'background-color: #e02626;padding: .9rem 1.2rem;color: white;border-radius: 2rem;text-decoration: none;';
-const EMAIL_SENDER_EMAIL = 'g@georgegillams.co.uk';
 const { PROJECT_UNDER_TEST } = process.env;
 const PORT = process.env.PORT || 3000;
 const AWS = process.env.AWS === 'true';
@@ -78,6 +73,7 @@ const REDIS_INFORMATION_STORES = [
   'analytics',
   'blogs',
   'comments',
+  'emails',
   'notifications',
   'payments',
   'profiles',
@@ -111,10 +107,7 @@ export {
   DATE_REGEX,
   DECIMAL_REGEX,
   DOMAIN,
-  EMAIL_HTML_BUTTON_STYLE,
-  EMAIL_IMAGE_HTML,
   EMAIL_REGEX,
-  EMAIL_SENDER_EMAIL,
   EMAIL_VERIFICATION_ENABLED,
   EXPIRY_REGEX,
   GENERIC_ERROR_MESSAGE,
@@ -167,10 +160,7 @@ export default {
   DATE_REGEX,
   DECIMAL_REGEX,
   DOMAIN,
-  EMAIL_HTML_BUTTON_STYLE,
-  EMAIL_IMAGE_HTML,
   EMAIL_REGEX,
-  EMAIL_SENDER_EMAIL,
   EMAIL_VERIFICATION_ENABLED,
   EXPIRY_REGEX,
   GENERIC_ERROR_MESSAGE,

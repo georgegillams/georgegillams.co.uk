@@ -1,8 +1,8 @@
+import sendEmailVerificationEmail from './private/sendEmailVerificationEmail';
 import authAllowedAttributes from './private/authAllowedAttributes';
 
 import authentication from 'utils/authentication';
 import reqSecure from 'utils/reqSecure';
-import { sendEmailVerificationEmail } from 'utils/emailHelpers';
 import { UNAUTHORISED_WRITE } from 'utils/errorConstants';
 
 export default function requestVerificationEmail(req) {

@@ -14,10 +14,24 @@ if (process.env.GSUITE_EMAIL && process.env.GSUITE_APP_PASSWORD) {
   };
   transporter = nodemailer.createTransport(mailConfig);
 } else {
-  transporter = {};
-  transporter.sendMail = obj => {
-    logger.log(obj);
+  transporter = {
+    sendMail: (obj, cb) => {
+      logger.log(obj);
+      cb();
+    },
   };
 }
 
-module.exports = transporter;
+const sendMailPromise = email =>
+  new Promise((resolve, reject) => {
+    transporter.sendMail(email, err => {
+      if (err) {
+        reject(err);
+      } else {
+        resolve(true);
+      }
+    });
+  });
+
+export default sendMailPromise;
+export { transporter, sendMailPromise };

@@ -1,5 +1,6 @@
 import loginUser from '../auth/private/login';
 import { datumLoad, datumCreate } from '../datum';
+import sendEmailVerificationEmail from '../auth/private/sendEmailVerificationEmail';
 
 import usersAllowedAttributes from './private/usersAllowedAttributes';
 
@@ -8,7 +9,6 @@ import { find } from 'utils/find';
 import { USERNAMES_ENABLED } from 'helpers/constants';
 import { EMAIL_TAKEN } from 'utils/errorConstants';
 import reqSecure from 'utils/reqSecure';
-import { sendEmailVerificationEmail } from 'utils/emailHelpers';
 
 const usernameTakenErrorMessage = {
   ...EMAIL_TAKEN,
@@ -40,8 +40,9 @@ export default function signUp(req) {
           } else {
             datumCreate({ redisKey: 'users' }, req).then(createdUser => {
               loginUser(createdUser).then(sessionKey => {
-                sendEmailVerificationEmail(createdUser);
-                resolve({ ...createdUser, session: sessionKey });
+                sendEmailVerificationEmail(createdUser).then(() => {
+                  resolve({ ...createdUser, session: sessionKey });
+                });
               });
             });
           }

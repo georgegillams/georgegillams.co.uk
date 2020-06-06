@@ -42,8 +42,9 @@ const apiStructure = {
   restoreBackup: { method: POST, path: '/data-management/restore' },
 
   // Make payment
-  loadPayment: { method: GET, path: '/make-payment/load' },
+  loadPayment: { method: POST, path: '/make-payment/load' },
   createPaymentIntent: { method: POST, path: '/make-payment/create-intent' },
+  // TODO for admins to resent receipt
   resendPaymentReceipt: { method: POST, path: '/make-payment/resend-receipt' },
 
   // Monzo

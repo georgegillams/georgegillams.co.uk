@@ -1,11 +1,11 @@
 import { datumLoad } from '../datum';
 
+import sendMagicLinkEmail from './private/sendMagicLinkEmail';
 import magicLinksAllowedAttributes from './private/magicLinksAllowedAttributes';
 
 import { AuthError, NotFoundError } from 'utils/errors';
 import { find } from 'utils/find';
 import authentication from 'utils/authentication';
-import { sendMagicLinkEmail } from 'utils/emailHelpers';
 import reqSecure from 'utils/reqSecure';
 
 export default function getmagiclink(req) {
@@ -34,10 +34,14 @@ export default function getmagiclink(req) {
         );
       }
       // Sent emails should be stored in a DB so that we can verify this has been called:
-      sendMagicLinkEmail(userProfile, divertToAdmin, req.body.loginRedirect);
-      return {
-        success:
-          'A magic link has been generated and sent to the email associated with your account',
-      };
-    });
+      return sendMagicLinkEmail(
+        userProfile,
+        divertToAdmin,
+        req.body.loginRedirect,
+      );
+    })
+    .then(() => ({
+      success:
+        'A magic link has been generated and sent to the email associated with your account',
+    }));
 }
