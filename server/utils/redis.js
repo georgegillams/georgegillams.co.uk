@@ -1,9 +1,10 @@
-/* eslint-disable no-console */
 /* eslint-disable global-require */
+import logger from 'utils/logger';
+
 let redis = null;
 
 const onError = err => {
-  console.error(`Redis error`, err);
+  logger.error(`Redis error`, err);
 };
 
 if (process.env.REDIS_MOCK === 'true' || process.env.NODE_ENV === 'test') {

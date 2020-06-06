@@ -1,6 +1,6 @@
-import { datumLoad } from '../api/actions/datum';
-
 import { find } from './find';
+
+import { datumLoad } from 'api/actions/datum';
 
 const userOwnsResource = (redisKey, resourceId, user) =>
   new Promise(resolve => {

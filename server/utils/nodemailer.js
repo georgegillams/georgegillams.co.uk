@@ -1,5 +1,7 @@
 import nodemailer from 'nodemailer';
 
+import logger from 'utils/logger';
+
 let mailConfig = null;
 let transporter = null;
 if (process.env.GSUITE_EMAIL && process.env.GSUITE_APP_PASSWORD) {
@@ -14,8 +16,7 @@ if (process.env.GSUITE_EMAIL && process.env.GSUITE_APP_PASSWORD) {
 } else {
   transporter = {};
   transporter.sendMail = obj => {
-    // eslint-disable-next-line no-console
-    console.log(obj);
+    logger.log(obj);
   };
 }
 

@@ -1,11 +1,10 @@
 import crypto from 'crypto';
 
-import lockPromise from 'utils/lock';
-
-import { datumCreate } from '../api/actions/datum';
-
 import transporter from './nodemailer';
 
+import { datumCreate } from 'api/actions/datum';
+import logger from 'utils/logger';
+import lockPromise from 'utils/lock';
 import { SITE_URL, EMAIL_VERIFICATION_ENABLED } from 'helpers/constants';
 
 const EMAIL_WIDTH = '600px';
@@ -91,7 +90,7 @@ ${EMAIL_OUTER_END}`,
   );
   transporter.sendMail(email, error => {
     if (error) {
-      return console.log(error);
+      return logger.error(error);
     }
   });
 }
@@ -148,7 +147,7 @@ ${EMAIL_OUTER_END}`,
   );
   transporter.sendMail(email, error => {
     if (error) {
-      return console.log(error);
+      return logger.error(error);
     }
   });
 }
@@ -203,7 +202,7 @@ export function sendPaymentReceiptEmail(
     error => {
       if (error) {
         success = false;
-        return console.log(error);
+        return logger.error(error);
       }
     },
   );
