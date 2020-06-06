@@ -13,7 +13,6 @@ import cookieParser from 'cookie-parser';
 import helmet from 'helmet';
 import slowDown from 'express-slow-down';
 
-import logger from './util/logger';
 import seo from './seo';
 import api from './api/api';
 import greasemonkey from './greasemonkey';
@@ -27,6 +26,7 @@ import {
   SESSION_SECRET,
   SITE_URL,
 } from 'helpers/constants';
+import logger from 'utils/logger';
 
 const app = express();
 const server = new http.Server(app);

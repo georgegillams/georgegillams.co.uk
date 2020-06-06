@@ -7,6 +7,7 @@ import {
   NotImplementedError,
 } from 'utils/errors';
 import { mapPathToAction } from 'utils/mapPathToAction.js';
+import logger from 'utils/logger';
 
 const appFunc = (req, res) => {
   const splitUrlPath = req.url
@@ -61,6 +62,7 @@ const appFunc = (req, res) => {
             res.status(err.httpStatus);
             res.json({ error: err.category, errorMessage: err.message });
           } else if (err instanceof Error) {
+            logger.error(`Uncategorised error`, err);
             // An error that we haven't created. Maybe created by redis or something
             const isError = new InternalServerError(err.message);
             res.status(isError.httpStatus);
@@ -69,6 +71,7 @@ const appFunc = (req, res) => {
               errorMessage: isError.message,
             });
           } else {
+            logger.error(`LEGACY ERROR`, err);
             // THIS IS LEGACY, FOR OLD API ACTIONS WHICH REJECT NON-ERROR VALUES
             // Return a valid response even if there has been some server-side error.
             // TODO - update to return an internal server error instead

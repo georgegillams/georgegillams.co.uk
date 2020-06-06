@@ -1,11 +1,12 @@
 import crypto from 'crypto';
 
-import { datumCreate } from '../actions/datum';
+import lockPromise from 'utils/lock';
+
+import { datumCreate } from '../api/actions/datum';
 
 import transporter from './nodemailer';
 
 import { SITE_URL, EMAIL_VERIFICATION_ENABLED } from 'helpers/constants';
-import lockPromise from 'utils/lock';
 
 const EMAIL_WIDTH = '600px';
 const FONT_SIZE_SM = '18px';

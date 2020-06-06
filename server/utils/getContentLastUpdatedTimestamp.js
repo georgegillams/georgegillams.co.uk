@@ -1,4 +1,4 @@
-import { datumLoad } from '../actions/datum';
+import { datumLoad } from '../api/actions/datum';
 
 export default function getContentLastUpdatedTimestamp() {
   datumLoad({ redisKey: 'contentUpdates' }).then(contentUpdateData => {

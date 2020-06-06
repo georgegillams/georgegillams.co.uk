@@ -1,13 +1,13 @@
 #!/usr/bin/env node
 
 import { datumLoadSingle, datumCreate } from '../datum';
-import {
-  clearDatabaseCollection,
-  createUsersWithSessions,
-} from '../../utils/testUtils';
 
 import deleteEntity from './deleteEntity.js';
 
+import {
+  clearDatabaseCollection,
+  createUsersWithSessions,
+} from 'utils/testUtils';
 import { AuthError, NotFoundError } from 'utils/errors';
 
 beforeEach(() => {

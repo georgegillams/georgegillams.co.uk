@@ -9,7 +9,7 @@
   "settings": {
     "import/resolver": {
       "node": {
-        "paths": ["./server/api", "./app"],
+        "paths": ["./server", "./app"],
         "extensions": [".js", ".jsx", ".json", ".android.js", ".ios.js"]
       }
     }
