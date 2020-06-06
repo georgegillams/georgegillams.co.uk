@@ -1,6 +1,6 @@
 import safeCompare from 'safe-compare';
 
-import { datumLoad } from '../actions/datum';
+import { datumLoad } from '../api/actions/datum';
 
 import { find } from './find';
 
