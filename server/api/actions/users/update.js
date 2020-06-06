@@ -1,3 +1,4 @@
+import sendEmailVerificationEmail from '../auth/private/sendEmailVerificationEmail';
 import { datumLoad, datumUpdate } from '../datum';
 
 import usersAllowedAttributes from './private/usersAllowedAttributes';
@@ -7,7 +8,6 @@ import authentication from 'utils/authentication';
 import { hash } from 'utils/hash';
 import { find, emailFingerprint } from 'utils/find';
 import { userOwnsResource } from 'utils/userOwnsResource';
-import { sendEmailVerificationEmail } from 'utils/emailHelpers';
 import { UNAUTHORISED_WRITE, RESOURCE_NOT_FOUND } from 'utils/errorConstants';
 import reqSecure from 'utils/reqSecure';
 
@@ -86,9 +86,12 @@ export default function update(req) {
 
                   datumUpdate({ redisKey: 'users' }, req).then(updatedUser => {
                     if (emailVerificationRequired) {
-                      sendEmailVerificationEmail(updatedUser);
+                      sendEmailVerificationEmail(updatedUser).then(() => {
+                        resolve(updatedUser);
+                      });
+                    } else {
+                      resolve(updatedUser);
                     }
-                    resolve(updatedUser);
                   });
                 });
               },

@@ -1,9 +1,9 @@
 import { datumLoad } from '../datum';
 
+import sendPaymentReceiptEmail from './private/sendPaymentReceiptEmail';
 import stripePaymentsAllowedAttributes from './private/stripePaymentsAllowedAttributes';
 
 import authentication from 'utils/authentication';
-import { sendPaymentReceiptEmail } from 'utils/emailHelpers';
 import reqSecure from 'utils/reqSecure';
 import { find } from 'utils/find';
 import { UNAUTHORISED_READ } from 'utils/errorConstants';
@@ -32,7 +32,10 @@ export default function resendPaymentReceipt(req) {
                 userIdToResendTo,
               );
               if (existingUser && paymentToResend) {
-                sendPaymentReceiptEmail(existingUser, paymentToResend);
+                sendPaymentReceiptEmail(
+                  existingUser,
+                  paymentToResend,
+                ).then(() => resolve());
               }
             });
           });

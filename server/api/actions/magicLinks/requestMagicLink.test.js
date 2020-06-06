@@ -31,11 +31,6 @@ test('request magic link for user - should succeed', () => {
       expect(result.success).toBeTruthy();
       return true;
     })
-    .then(
-      () =>
-        // Until the email helper is rewritten, emails are sent async and we do not wait
-        new Promise(resolve => setTimeout(resolve, 200)),
-    )
     .then(() => datumLoad({ redisKey: 'magiclinks' }))
     .then(magicLinks => {
       expect(magicLinks.length).toBe(1);
@@ -64,11 +59,6 @@ test('request diverted magic link admin - should send email to admin account', (
       expect(result.success).toBeTruthy();
       return true;
     })
-    .then(
-      () =>
-        // Until the email helper is rewritten, emails are sent async and we do not wait
-        new Promise(resolve => setTimeout(resolve, 200)),
-    )
     .then(() => datumLoad({ redisKey: 'magiclinks' }))
     .then(magicLinks => {
       expect(magicLinks.length).toBe(1);
@@ -100,9 +90,7 @@ test('request diverted magic link non-admin - should throw auth error', () => {
       expect(err instanceof AuthError).toBeTruthy();
     })
     .finally(() =>
-      // Until the email helper is rewritten, emails are sent async and we do not wait
-      new Promise(resolve => setTimeout(resolve, 200))
-        .then(() => datumLoad({ redisKey: 'magiclinks' }))
+      datumLoad({ redisKey: 'magiclinks' })
         .then(magicLinks => {
           expect(magicLinks.length).toBe(0);
           return true;
@@ -132,9 +120,7 @@ test('request magic link non-existent-user - should throw error', () => {
       expect(err instanceof NotFoundError).toBeTruthy();
     })
     .finally(() =>
-      // Until the email helper is rewritten, emails are sent async and we do not wait
-      new Promise(resolve => setTimeout(resolve, 200))
-        .then(() => datumLoad({ redisKey: 'magiclinks' }))
+      datumLoad({ redisKey: 'magiclinks' })
         .then(magicLinks => {
           expect(magicLinks.length).toBe(0);
           return true;

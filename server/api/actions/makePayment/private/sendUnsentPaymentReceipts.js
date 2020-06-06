@@ -1,7 +1,6 @@
-import { sendPaymentReceiptEmail } from 'utils/emailHelpers';
-
 import { datumLoad, datumLoadSingle, datumUpdate } from '../../datum';
 
+import sendPaymentReceiptEmail from './sendPaymentReceiptEmail';
 import fetchPaymentDataFromStripe from './fetchPaymentDataFromStripe';
 
 const markStripePaymentEmailSent = (id, newValue) =>
