@@ -1,3 +1,4 @@
+/* eslint-disable promise/no-callback-in-promise */
 import AsyncLock from 'async-lock';
 
 const lock = new AsyncLock();
@@ -12,7 +13,7 @@ const lockPromise = (keys, thunkedPromise) =>
           thunkedPromise()
             .then(result => {
               resolve(result);
-              done();
+              return done();
             })
             .catch(err => {
               reject(err);
@@ -21,9 +22,11 @@ const lockPromise = (keys, thunkedPromise) =>
         },
         {},
       )
-      .then(() => {
-        // lock released
-      })
+      .then(
+        () =>
+          // lock released
+          true,
+      )
       .catch(err => {
         reject(err);
       });

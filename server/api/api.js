@@ -46,15 +46,16 @@ const appFunc = (req, res) => {
 
   try {
     if (action) {
-      action(req, params).then(
-        result => {
+      action(req, params)
+        .then(result => {
           if (result instanceof Function) {
             result(res);
           } else {
             res.json(result);
           }
-        },
-        err => {
+          return true;
+        })
+        .catch(err => {
           if (err && err.redirect) {
             res.redirect(err.redirect);
           } else if (err instanceof CategorisedError) {
@@ -63,11 +64,11 @@ const appFunc = (req, res) => {
           } else if (err instanceof Error) {
             logger.error(`Uncategorised error`, err);
             // An error that we haven't created. Maybe created by redis or something
-            const isError = new InternalServerError(err.message);
-            res.status(isError.httpStatus);
+            const internalServerError = new InternalServerError(err.message);
+            res.status(internalServerError.httpStatus);
             res.json({
-              error: isError.category,
-              errorMessage: isError.message,
+              error: internalServerError.category,
+              errorMessage: internalServerError.message,
             });
           } else {
             logger.error(`LEGACY ERROR`, err);
@@ -76,8 +77,7 @@ const appFunc = (req, res) => {
             // TODO - update to return an internal server error instead
             res.json(err);
           }
-        },
-      );
+        });
     } else {
       const err = new NotImplementedError(
         'This method has not been implemented',
