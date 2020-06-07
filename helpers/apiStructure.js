@@ -44,7 +44,7 @@ const apiStructure = {
   // Make payment
   loadPayment: { method: POST, path: '/make-payment/load' },
   createPaymentIntent: { method: POST, path: '/make-payment/create-intent' },
-  // TODO for admins to resent receipt
+  // TODO for admins to resend receipt
   resendPaymentReceipt: { method: POST, path: '/make-payment/resend-receipt' },
 
   // Monzo
@@ -70,7 +70,6 @@ const apiStructure = {
   loadSupport: { method: GET, path: '/support/load' },
 
   // Users
-  // TODO createUser and signUp serve the same purpose - should be combined
   createUser: { method: POST, path: '/users/create' },
   deleteUser: { method: POST, path: '/users/delete' },
   loadUser: { method: GET, path: '/users/load' },
