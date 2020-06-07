@@ -8,16 +8,15 @@ export default function setContentLastUpdatedTimestamp() {
       if (contentUpdateData && contentUpdateData.length > 0) {
         [newContentUpdateData] = contentUpdateData;
         newContentUpdateData.lastUpdatedTimestamp = Date.now().toString();
-        datumUpdate(
+        return datumUpdate(
           { redisKey: 'contentUpdates' },
           { body: newContentUpdateData },
         );
-      } else {
-        datumCreate(
-          { redisKey: 'contentUpdates' },
-          { body: { lastUpdatedTimestamp: Date.now() } },
-        );
       }
+      return datumCreate(
+        { redisKey: 'contentUpdates' },
+        { body: { lastUpdatedTimestamp: Date.now() } },
+      );
     }),
   );
 }
