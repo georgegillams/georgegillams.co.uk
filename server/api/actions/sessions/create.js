@@ -1,5 +1,3 @@
-import crypto from 'crypto';
-
 import { datumCreate } from '../datum';
 
 import lockPromise from 'utils/lock';
@@ -9,18 +7,11 @@ import { generateKey } from 'utils/hash';
 
 export default function create(req) {
   reqSecure(req, []);
-  return lockPromise(
-    'sessions',
-    () =>
-      new Promise((resolve, reject) => {
-        authentication(req).then(
-          user => {
-            req.body.sessionKey = generateKey();
-            req.body.lastActive = Date.now();
-            resolve(datumCreate({ redisKey: 'sessions', user }, req));
-          },
-          err => reject(err),
-        );
-      }),
+  return lockPromise('sessions', () =>
+    authentication(req).then(user => {
+      req.body.sessionKey = generateKey();
+      req.body.lastActive = Date.now();
+      return datumCreate({ redisKey: 'sessions', user }, req);
+    }),
   );
 }
