@@ -34,4 +34,4 @@ const sendMailPromise = email =>
   });
 
 export default sendMailPromise;
-export { transporter, sendMailPromise };
+export { sendMailPromise };

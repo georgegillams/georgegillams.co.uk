@@ -5,7 +5,8 @@ import sendEmailVerificationEmail from '../auth/private/sendEmailVerificationEma
 import usersAllowedAttributes from './private/usersAllowedAttributes';
 
 import lockPromise from 'utils/lock';
-import { find } from 'utils/find';
+import { hash } from 'utils/hash';
+import { find, emailFingerprint } from 'utils/find';
 import { USERNAMES_ENABLED } from 'helpers/constants';
 import { EMAIL_TAKEN } from 'utils/errorConstants';
 import reqSecure from 'utils/reqSecure';
@@ -38,6 +39,13 @@ export default function signUp(req) {
           } else if (userWithSameUname && USERNAMES_ENABLED) {
             reject(usernameTakenErrorMessage);
           } else {
+            if (req.body.password) {
+              req.body.hash = hash(req.body.password);
+              req.body.password = null;
+            }
+            req.body.emailFingerprint = emailFingerprint(req.body.email);
+            req.body.email = req.body.email.toLowerCase();
+            req.body.emailVerified = false;
             datumCreate({ redisKey: 'users' }, req).then(createdUser => {
               loginUser(createdUser).then(sessionKey => {
                 sendEmailVerificationEmail(createdUser).then(() => {

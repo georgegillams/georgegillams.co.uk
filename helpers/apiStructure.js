@@ -70,7 +70,7 @@ const apiStructure = {
   loadSupport: { method: GET, path: '/support/load' },
 
   // Users
-  // TODO createUser is for admins only
+  // TODO createUser and signUp serve the same purpose - should be combined
   createUser: { method: POST, path: '/users/create' },
   deleteUser: { method: POST, path: '/users/delete' },
   loadUser: { method: GET, path: '/users/load' },

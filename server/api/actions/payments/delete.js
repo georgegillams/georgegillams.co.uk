@@ -1,19 +1,13 @@
+import { datumRemove } from '../datum';
+
 import authentication from 'utils/authentication';
 import { UNAUTHORISED_WRITE } from 'utils/errorConstants';
 
-import { datumRemove } from '../datum';
-
 export default function remove(req) {
-  return new Promise((resolve, reject) => {
-    authentication(req).then(
-      user => {
-        if (user && user.admin) {
-          resolve(datumRemove({ redisKey: 'payments' }, req));
-        } else {
-          reject(UNAUTHORISED_WRITE);
-        }
-      },
-      err => reject(err),
-    );
+  return authentication(req).then(user => {
+    if (user && user.admin) {
+      return datumRemove({ redisKey: 'payments' }, req);
+    }
+    throw UNAUTHORISED_WRITE;
   });
 }
