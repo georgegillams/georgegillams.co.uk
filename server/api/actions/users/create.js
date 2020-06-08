@@ -1,4 +1,3 @@
-import loginUser from '../auth/private/login';
 import { datumCreate, datumLoad } from '../datum';
 import sendEmailVerificationEmail from '../auth/private/sendEmailVerificationEmail';
 import { InvalidInputError } from '../../../utils/errors';
@@ -56,7 +55,6 @@ export default function create(req) {
         newUser = result;
         return sendEmailVerificationEmail(newUser);
       })
-      .then(() => loginUser(newUser))
-      .then(() => ({ message: 'User created' })),
+      .then(() => ({ message: 'User created', newUser })),
   );
 }
