@@ -85,7 +85,7 @@ export default function update(req) {
         if (emailVerificationRequired) {
           return sendEmailVerificationEmail(updatedUser);
         }
-        return Promise.resolve();
+        return true;
       })
       .then(() => updatedUser),
   );

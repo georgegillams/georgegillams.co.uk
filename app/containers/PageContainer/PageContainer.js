@@ -10,13 +10,11 @@ const PageContainer = props => {
   const { className, ...rest } = props;
   const [showDebug, setShowDebug] = useState(false);
 
-  useEffect(
-    () =>
-      setShowDebug(
-        window.localStorage.getItem('showPageContainerDebugColor') === 'true',
-      ),
-    [],
-  );
+  useEffect(() => {
+    setShowDebug(
+      window.localStorage.getItem('showPageContainerDebugColor') === 'true',
+    );
+  }, []);
 
   const outerClassNames = [getClassName('pages__container')];
   if (showDebug) {
