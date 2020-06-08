@@ -49,6 +49,7 @@ test('allows a user to be created', () => {
       expect(dbResult.timestamp).toBe(result.timestamp);
       return true;
     });
+  // TODO Test that new session is created too
 });
 
 test('returns error if username is taken', () => {

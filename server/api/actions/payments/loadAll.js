@@ -9,34 +9,39 @@ import { associate } from 'helpers/objects';
 
 export default function loadAll(req) {
   reqSecure(req, paymentsAllowedAttributes);
-  return new Promise((resolve, reject) => {
-    authentication(req).then(
-      user => {
-        if (user && user.admin) {
-          datumLoad({
-            redisKey: 'payments',
-            includeDeleted: true,
-          }).then(paymentData => {
-            datumLoad({
-              redisKey: 'stripepayments',
-              includeDeleted: true,
-            }).then(charges => {
-              const result = associate(
-                paymentData,
-                charges,
-                'id',
-                'paymentId',
-                'charge',
-                false,
-              );
-              resolve(result);
-            });
-          });
-        } else {
-          reject(UNAUTHORISED_READ);
-        }
-      },
-      err => reject(err),
-    );
-  });
+  let paymentData = null;
+  return authentication(req)
+    .then(user => {
+      if (!user || !user.admin) {
+        throw UNAUTHORISED_READ;
+      }
+      return true;
+    })
+    .then(() =>
+      datumLoad({
+        redisKey: 'payments',
+        includeDeleted: true,
+      }),
+    )
+    .then(result => {
+      paymentData = result;
+      return true;
+    })
+    .then(() =>
+      datumLoad({
+        redisKey: 'stripepayments',
+        includeDeleted: true,
+      }),
+    )
+    .then(charges => {
+      const result = associate(
+        paymentData,
+        charges,
+        'id',
+        'paymentId',
+        'charge',
+        false,
+      );
+      return result;
+    });
 }

@@ -9,21 +9,18 @@ import reqSecure from 'utils/reqSecure';
 
 export default function remove(req) {
   reqSecure(req, usersAllowedAttributes);
-  return new Promise((resolve, reject) => {
-    authentication(req).then(
-      user => {
-        userOwnsResource('users', req.body.id, user).then(
-          userOwnsResourceResult => {
-            // Users should be able to delete their own user
-            if (user && (user.admin || userOwnsResourceResult)) {
-              resolve(datumRemove({ redisKey: 'users' }, req));
-            } else {
-              reject(UNAUTHORISED_WRITE);
-            }
-          },
-        );
-      },
-      err => reject(err),
-    );
-  });
+  let user = null;
+  return authentication(req)
+    .then(authenticatedUser => {
+      user = authenticatedUser;
+      return true;
+    })
+    .then(() => userOwnsResource('users', req.body.id, user))
+    .then(userOwnsResourceResult => {
+      // Users should be able to delete their own user
+      if (user && (user.admin || userOwnsResourceResult)) {
+        return datumRemove({ redisKey: 'users' }, req);
+      }
+      throw UNAUTHORISED_WRITE;
+    });
 }

@@ -6,21 +6,13 @@ import reqSecure from 'utils/reqSecure';
 
 export default function loadSingle(req) {
   reqSecure(req, []);
-  return new Promise((resolve, reject) => {
-    authentication(req).then(
-      user => {
-        if (user && user.admin) {
-          resolve(
-            datumLoadSingle({
-              redisKey: 'users',
-              filter: ar => ar.id === req.query.id,
-            }),
-          );
-        } else {
-          reject(UNAUTHORISED_READ);
-        }
-      },
-      err => reject(err),
-    );
+  return authentication(req).then(user => {
+    if (user && user.admin) {
+      return datumLoadSingle({
+        redisKey: 'users',
+        filter: ar => ar.id === req.query.id,
+      });
+    }
+    throw UNAUTHORISED_READ;
   });
 }
