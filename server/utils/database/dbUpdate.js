@@ -5,7 +5,7 @@ import { find } from 'utils/find';
 import { PROJECT_NAME } from 'helpers/constants';
 import { RESOURCE_NOT_FOUND } from 'utils/errorConstants';
 
-export default function datumUpdate(settings, req) {
+export default function dbUpdate(settings, req) {
   // finds matching element - should use redis method directly
   // if no matching, throw RESOURCE_NOT_FOUND
   // if matching value, writes (persisting un-writable values)

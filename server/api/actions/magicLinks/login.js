@@ -1,8 +1,8 @@
 import loginUser from '../auth/private/login';
-import { datumLoad, datumUpdate } from '../datum';
 
 import magicLinksAllowedAttributes from './private/magicLinksAllowedAttributes';
 
+import { dbLoad, dbUpdate } from 'utils/database';
 import { InvalidInputError } from 'utils/errors';
 import lockPromise from 'utils/lock';
 import { find } from 'utils/find';
@@ -14,12 +14,12 @@ export default function loginMagicLink(req) {
   return lockPromise('magiclinks', () => {
     let magicLinkData = null;
     let matchingUser = null;
-    return datumLoad({ redisKey: 'magiclinks' })
+    return dbLoad({ redisKey: 'magiclinks' })
       .then(mld => {
         magicLinkData = mld;
         return true;
       })
-      .then(() => datumLoad({ redisKey: 'users' }))
+      .then(() => dbLoad({ redisKey: 'users' }))
       .then(userData => {
         // `find` uses `safeCompare` so it is safe to use for finding the entry that matches the key
         const { existingValue: magicLink } = find(
@@ -40,7 +40,7 @@ export default function loginMagicLink(req) {
         if (Date.now() < new Date(magicLink.expiry).getTime()) {
           // invalidate magic link (set expiry to 0)
           magicLink.expiry = 0;
-          return datumUpdate({ redisKey: 'magiclinks' }, { body: magicLink });
+          return dbUpdate({ redisKey: 'magiclinks' }, { body: magicLink });
         }
         throw new InvalidInputError('Magic link has expired');
       })

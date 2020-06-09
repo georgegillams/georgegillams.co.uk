@@ -1,7 +1,6 @@
-import { datumUpdate } from '../datum';
-
 import commentsAllowedAttributes from './private/commentsAllowedAttributes';
 
+import { dbUpdate } from 'utils/database';
 import lockPromise from 'utils/lock';
 import authentication from 'utils/authentication';
 import { userOwnsResource } from 'utils/userOwnsResource';
@@ -20,7 +19,7 @@ export default function update(req) {
       .then(userOwnsResourceResult => {
         // Users should be able to update comments that they own
         if (user && (user.admin || userOwnsResourceResult)) {
-          return datumUpdate({ redisKey: 'comments' }, req);
+          return dbUpdate({ redisKey: 'comments' }, req);
         }
         throw UNAUTHORISED_WRITE;
       });

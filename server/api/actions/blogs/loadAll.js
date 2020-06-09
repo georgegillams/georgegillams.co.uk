@@ -1,11 +1,10 @@
-import { datumLoad } from '../datum';
-
+import { dbLoad } from 'utils/database';
 import authentication from 'utils/authentication';
 
 export default function loadAll(req) {
   return authentication(req)
     .then(user =>
-      datumLoad({
+      dbLoad({
         redisKey: 'blogs',
         sortKey: 'publishedTimestamp',
         includeDeleted: user && user.admin,

@@ -1,9 +1,8 @@
 #!/usr/bin/env node
 
-import { datumCreate, datumLoad } from '../datum';
-
 import update from './update.js';
 
+import { dbCreate, dbLoad } from 'utils/database';
 import { AuthError, NotFoundError } from 'utils/errors';
 import {
   clearDatabaseCollection,
@@ -26,11 +25,11 @@ const createSomeValues = () => {
     message: 'notification 2 message',
   };
 
-  return datumCreate(
+  return dbCreate(
     { redisKey: 'notifications' },
     { body: notification1 },
   ).then(() =>
-    datumCreate({ redisKey: 'notifications' }, { body: notification2 }),
+    dbCreate({ redisKey: 'notifications' }, { body: notification2 }),
   );
 };
 
@@ -51,7 +50,7 @@ test('update notification as admin - updates data', () => {
       expect(result).toBeTruthy();
       return true;
     })
-    .then(() => datumLoad({ redisKey: 'notifications' }))
+    .then(() => dbLoad({ redisKey: 'notifications' }))
     .then(notifications => {
       expect(notifications.length).toBe(2);
       expect(notifications[0].id).toBe('notification1');
@@ -105,7 +104,7 @@ test('update notification non-admin - throws auth error', () => {
       expect(err instanceof AuthError).toBeTruthy();
     })
     .finally(() =>
-      datumLoad({
+      dbLoad({
         redisKey: 'notifications',
       }).then(dbResult => {
         expect(dbResult[0].id).toBe('notification1');
@@ -135,7 +134,7 @@ test('update notification unauthenticated - throws auth error', () => {
       expect(err instanceof AuthError).toBeTruthy();
     })
     .finally(() =>
-      datumLoad({
+      dbLoad({
         redisKey: 'notifications',
       }).then(dbResult => {
         expect(dbResult[0].id).toBe('notification1');

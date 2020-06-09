@@ -1,9 +1,8 @@
 #!/usr/bin/env node
 
-import { datumLoad } from '../datum';
-
 import requestMagicLink from './requestMagicLink.js';
 
+import { dbLoad } from 'utils/database';
 import { AuthError, NotFoundError } from 'utils/errors';
 import {
   clearDatabaseCollection,
@@ -31,13 +30,13 @@ test('request magic link for user - should succeed', () => {
       expect(result.success).toBeTruthy();
       return true;
     })
-    .then(() => datumLoad({ redisKey: 'magiclinks' }))
+    .then(() => dbLoad({ redisKey: 'magiclinks' }))
     .then(magicLinks => {
       expect(magicLinks.length).toBe(1);
       expect(magicLinks[0].userId).toBe('nonAdminUser1');
       return true;
     })
-    .then(() => datumLoad({ redisKey: 'emails' }))
+    .then(() => dbLoad({ redisKey: 'emails' }))
     .then(emails => {
       expect(emails.length).toBe(1);
       expect(emails[0].to).toBe('nonAdminUser1@example.com');
@@ -59,13 +58,13 @@ test('request diverted magic link admin - should send email to admin account', (
       expect(result.success).toBeTruthy();
       return true;
     })
-    .then(() => datumLoad({ redisKey: 'magiclinks' }))
+    .then(() => dbLoad({ redisKey: 'magiclinks' }))
     .then(magicLinks => {
       expect(magicLinks.length).toBe(1);
       expect(magicLinks[0].userId).toBe('nonAdminUser1');
       return true;
     })
-    .then(() => datumLoad({ redisKey: 'emails' }))
+    .then(() => dbLoad({ redisKey: 'emails' }))
     .then(emails => {
       expect(emails.length).toBe(1);
       expect(emails[0].to).toBe('g+diverted-to-admin@georgegillams.co.uk');
@@ -90,12 +89,12 @@ test('request diverted magic link non-admin - should throw auth error', () => {
       expect(err instanceof AuthError).toBeTruthy();
     })
     .finally(() =>
-      datumLoad({ redisKey: 'magiclinks' })
+      dbLoad({ redisKey: 'magiclinks' })
         .then(magicLinks => {
           expect(magicLinks.length).toBe(0);
           return true;
         })
-        .then(() => datumLoad({ redisKey: 'emails' }))
+        .then(() => dbLoad({ redisKey: 'emails' }))
         .then(emails => {
           expect(emails.length).toBe(0);
           return true;
@@ -120,12 +119,12 @@ test('request magic link non-existent-user - should throw error', () => {
       expect(err instanceof NotFoundError).toBeTruthy();
     })
     .finally(() =>
-      datumLoad({ redisKey: 'magiclinks' })
+      dbLoad({ redisKey: 'magiclinks' })
         .then(magicLinks => {
           expect(magicLinks.length).toBe(0);
           return true;
         })
-        .then(() => datumLoad({ redisKey: 'emails' }))
+        .then(() => dbLoad({ redisKey: 'emails' }))
         .then(emails => {
           expect(emails.length).toBe(0);
           return true;

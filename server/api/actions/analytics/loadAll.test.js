@@ -1,9 +1,8 @@
 #!/usr/bin/env node
 
-import { datumCreate } from '../datum';
-
 import loadAll from './loadAll.js';
 
+import { dbCreate } from 'utils/database';
 import { AuthError } from 'utils/errors';
 import {
   clearDatabaseCollection,
@@ -48,9 +47,9 @@ const createSomeValues = () => {
     disallowedAttribute: 'disallowed',
   };
 
-  return datumCreate({ redisKey: 'analytics' }, { body: analytic1 })
-    .then(() => datumCreate({ redisKey: 'analytics' }, { body: analytic2 }))
-    .then(() => datumCreate({ redisKey: 'analytics' }, { body: analytic3 }));
+  return dbCreate({ redisKey: 'analytics' }, { body: analytic1 })
+    .then(() => dbCreate({ redisKey: 'analytics' }, { body: analytic2 }))
+    .then(() => dbCreate({ redisKey: 'analytics' }, { body: analytic3 }));
 };
 
 test('load all analytics admin - returns all values', () => {

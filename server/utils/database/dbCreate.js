@@ -20,7 +20,7 @@ const idForNewEntity = (redisKey, requestedId) =>
       .substring(7);
   });
 
-export default function datumCreate(settings, req) {
+export default function dbCreate(settings, req) {
   const newValue = req.body;
   const { requestedId } = newValue;
 

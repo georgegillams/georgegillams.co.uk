@@ -1,9 +1,8 @@
 #!/usr/bin/env node
 
-import { datumCreate, datumLoad } from '../datum';
-
 import deleteSupport from './delete.js';
 
+import { dbCreate, dbLoad } from 'utils/database';
 import { AuthError, NotFoundError } from 'utils/errors';
 import {
   clearDatabaseCollection,
@@ -24,8 +23,8 @@ const createSomeValues = () => {
     requestedId: 'support2',
   };
 
-  return datumCreate({ redisKey: 'support' }, { body: support1 }).then(() =>
-    datumCreate({ redisKey: 'support' }, { body: support2 }),
+  return dbCreate({ redisKey: 'support' }, { body: support1 }).then(() =>
+    dbCreate({ redisKey: 'support' }, { body: support2 }),
   );
 };
 
@@ -45,7 +44,7 @@ test('delete support as admin - removes data from collection', () => {
       expect(result).toBeTruthy();
       return true;
     })
-    .then(() => datumLoad({ redisKey: 'support' }))
+    .then(() => dbLoad({ redisKey: 'support' }))
     .then(results => {
       expect(results.length).toBe(1);
       expect(results[0].id).toBe('support2');
@@ -94,7 +93,7 @@ test('delete support non-admin - throws auth error', () => {
       expect(err instanceof AuthError).toBeTruthy();
     })
     .finally(() =>
-      datumLoad({
+      dbLoad({
         redisKey: 'support',
       }).then(dbResult => {
         expect(dbResult.length).toBe(2);
@@ -123,7 +122,7 @@ test('delete support unauthenticated - throws auth error', () => {
       expect(err instanceof AuthError).toBeTruthy();
     })
     .finally(() =>
-      datumLoad({
+      dbLoad({
         redisKey: 'support',
       }).then(dbResult => {
         expect(dbResult.length).toBe(2);

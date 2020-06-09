@@ -1,9 +1,8 @@
 #!/usr/bin/env node
 
-import { datumCreate, datumLoad } from '../datum';
-
 import verifyEmail from './verifyEmail.js';
 
+import { dbCreate, dbLoad } from 'utils/database';
 import {
   clearDatabaseCollection,
   createUsersWithSessions,
@@ -34,18 +33,18 @@ const createSomeValues = () => {
     expiry: new Date(Date.now() + 60 * 60),
   };
 
-  return datumCreate(
+  return dbCreate(
     { redisKey: 'emailVerificationCodes' },
     { body: emailVerificationCode1 },
   )
     .then(() =>
-      datumCreate(
+      dbCreate(
         { redisKey: 'emailVerificationCodes' },
         { body: emailVerificationCode2 },
       ),
     )
     .then(() =>
-      datumCreate(
+      dbCreate(
         { redisKey: 'emailVerificationCodes' },
         { body: emailVerificationCode3 },
       ),
@@ -82,13 +81,13 @@ test('successful verification - sets code expiry to 0', () => {
   return createUsersWithSessions()
     .then(() => createSomeValues())
     .then(() => verifyEmail(req))
-    .then(() => datumLoad({ redisKey: 'emailVerificationCodes' }))
+    .then(() => dbLoad({ redisKey: 'emailVerificationCodes' }))
     .then(codes => {
       expect(codes.length).toBe(3);
       expect(codes[1].expiry).toBe(0);
       return true;
     })
-    .then(() => datumLoad({ redisKey: 'users' }))
+    .then(() => dbLoad({ redisKey: 'users' }))
     .then(users => {
       expect(users.length).toBe(2);
       expect(users[1].emailVerified).toBe(true);

@@ -1,7 +1,6 @@
-import { datumRemove } from '../datum';
-
 import usersAllowedAttributes from './private/usersAllowedAttributes';
 
+import { dbRemove } from 'utils/database';
 import authentication from 'utils/authentication';
 import { userOwnsResource } from 'utils/userOwnsResource';
 import { UNAUTHORISED_WRITE } from 'utils/errorConstants';
@@ -19,7 +18,7 @@ export default function remove(req) {
     .then(userOwnsResourceResult => {
       // Users should be able to delete their own user
       if (user && (user.admin || userOwnsResourceResult)) {
-        return datumRemove({ redisKey: 'users' }, req);
+        return dbRemove({ redisKey: 'users' }, req);
       }
       throw UNAUTHORISED_WRITE;
     });

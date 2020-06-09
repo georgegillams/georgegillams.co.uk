@@ -1,9 +1,9 @@
 import { find } from './find';
 
-import { datumLoad } from 'api/actions/datum';
+import { dbLoad } from 'utils/database';
 
 const determineIfUserOwnsResource = (redisKey, resourceId, user) =>
-  datumLoad({ redisKey }).then(data => {
+  dbLoad({ redisKey }).then(data => {
     const { existingValue } = find(data, resourceId);
     if (existingValue) {
       return existingValue.authorId === user.id;

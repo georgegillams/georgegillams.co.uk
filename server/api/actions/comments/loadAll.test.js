@@ -1,9 +1,8 @@
 #!/usr/bin/env node
 
-import { datumCreate } from '../datum';
-
 import loadAll from './loadAll.js';
 
+import { dbCreate } from 'utils/database';
 import {
   clearDatabaseCollection,
   createUsersWithSessions,
@@ -47,11 +46,11 @@ const createSomeValues = () => {
     deleted: true,
   };
 
-  return datumCreate({ redisKey: 'comments' }, { body: comment1 })
-    .then(() => datumCreate({ redisKey: 'comments' }, { body: comment2 }))
-    .then(() => datumCreate({ redisKey: 'comments' }, { body: comment3 }))
-    .then(() => datumCreate({ redisKey: 'comments' }, { body: comment4 }))
-    .then(() => datumCreate({ redisKey: 'comments' }, { body: comment5 }));
+  return dbCreate({ redisKey: 'comments' }, { body: comment1 })
+    .then(() => dbCreate({ redisKey: 'comments' }, { body: comment2 }))
+    .then(() => dbCreate({ redisKey: 'comments' }, { body: comment3 }))
+    .then(() => dbCreate({ redisKey: 'comments' }, { body: comment4 }))
+    .then(() => dbCreate({ redisKey: 'comments' }, { body: comment5 }));
 };
 
 test('load comments as admin - returns all values', () => {

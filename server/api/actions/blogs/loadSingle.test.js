@@ -1,9 +1,8 @@
 #!/usr/bin/env node
 
-import { datumCreate } from '../datum';
-
 import loadSingle from './loadSingle.js';
 
+import { dbCreate } from 'utils/database';
 import { NotFoundError } from 'utils/errors';
 import {
   clearDatabaseCollection,
@@ -26,8 +25,8 @@ const createSomeValues = () => {
     published: false,
   };
 
-  return datumCreate({ redisKey: 'blogs' }, { body: blog1 }).then(() =>
-    datumCreate({ redisKey: 'blogs' }, { body: blog2 }),
+  return dbCreate({ redisKey: 'blogs' }, { body: blog1 }).then(() =>
+    dbCreate({ redisKey: 'blogs' }, { body: blog2 }),
   );
 };
 

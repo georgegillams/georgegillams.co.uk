@@ -1,9 +1,8 @@
 #!/usr/bin/env node
 
-import { datumCreate, datumLoad } from '../datum';
-
 import logout from './logout.js';
 
+import { dbCreate, dbLoad } from 'utils/database';
 import { clearDatabaseCollection } from 'utils/testUtils';
 import { AuthError } from 'utils/errors';
 import { INVALID_SESSION } from 'utils/errorConstants';
@@ -32,9 +31,9 @@ const createSomeValues = () => {
     admin: true,
   };
 
-  return datumCreate({ redisKey: 'users' }, { body: user1 })
+  return dbCreate({ redisKey: 'users' }, { body: user1 })
     .then(createdUser =>
-      datumCreate(
+      dbCreate(
         { redisKey: 'sessions' },
         {
           body: {
@@ -45,9 +44,9 @@ const createSomeValues = () => {
         },
       ),
     )
-    .then(() => datumCreate({ redisKey: 'users' }, { body: user2 }))
+    .then(() => dbCreate({ redisKey: 'users' }, { body: user2 }))
     .then(createdUser =>
-      datumCreate(
+      dbCreate(
         { redisKey: 'sessions' },
         {
           body: {
@@ -87,7 +86,7 @@ test('logout with session - removes user from session', () => {
   };
 
   return createSomeValues()
-    .then(() => datumLoad({ redisKey: 'sessions' }))
+    .then(() => dbLoad({ redisKey: 'sessions' }))
     .then(sessions => {
       expect(sessions.length).toBe(2);
       expect(sessions[0].userId).toBe('test1');
@@ -102,7 +101,7 @@ test('logout with session - removes user from session', () => {
       expect(result.success).toBe('You are now logged out');
       return true;
     })
-    .then(() => datumLoad({ redisKey: 'sessions' }))
+    .then(() => dbLoad({ redisKey: 'sessions' }))
     .then(sessions => {
       expect(sessions.length).toBe(2);
       expect(sessions[0].userId).toBe('test1');
@@ -121,7 +120,7 @@ test('duplicate logout - returns OK', () => {
   };
 
   return createSomeValues()
-    .then(() => datumLoad({ redisKey: 'sessions' }))
+    .then(() => dbLoad({ redisKey: 'sessions' }))
     .then(() => logout(req))
     .then(() => logout(req))
     .then(result => {
@@ -129,7 +128,7 @@ test('duplicate logout - returns OK', () => {
       expect(result.success).toBe('You are now logged out');
       return true;
     })
-    .then(() => datumLoad({ redisKey: 'sessions' }))
+    .then(() => dbLoad({ redisKey: 'sessions' }))
     .then(sessions => {
       expect(sessions.length).toBe(2);
       expect(sessions[1].userId).toBe(null);

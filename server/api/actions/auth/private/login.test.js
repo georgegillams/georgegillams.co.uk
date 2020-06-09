@@ -1,9 +1,8 @@
 #!/usr/bin/env node
 
-import { datumLoad } from '../../datum';
-
 import login from './login.js';
 
+import { dbLoad } from 'utils/database';
 import { clearDatabaseCollection } from 'utils/testUtils';
 
 beforeEach(() => {
@@ -22,7 +21,7 @@ test('login - creates session and assigns user', () => {
       expect(result).toBeTruthy();
       return true;
     })
-    .then(() => datumLoad({ redisKey: 'sessions', includeOwnerUname: true }))
+    .then(() => dbLoad({ redisKey: 'sessions', includeOwnerUname: true }))
     .then(results => {
       expect(results.length).toBe(1);
       expect(results[0].userId).toBe('testUserId1');
@@ -57,7 +56,7 @@ test('login - creates random sessionKey', () => {
       expect(result).toBeTruthy();
       return true;
     })
-    .then(() => datumLoad({ redisKey: 'sessions', includeOwnerUname: true }))
+    .then(() => dbLoad({ redisKey: 'sessions', includeOwnerUname: true }))
     .then(results => {
       expect(results.length).toBe(2);
       expect(results[0].userId).toBe('testUserId1');

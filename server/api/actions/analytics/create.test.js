@@ -1,9 +1,8 @@
 #!/usr/bin/env node
 
-import { datumLoad } from '../datum';
-
 import create from './create.js';
 
+import { dbLoad } from 'utils/database';
 import { clearDatabaseCollection } from 'utils/testUtils';
 
 beforeEach(() => {
@@ -28,7 +27,7 @@ test('create analytics unauthenticated - adds data to collection', () => {
   };
 
   return create(req)
-    .then(() => datumLoad({ redisKey: 'analytics', includeOwnerUname: true }))
+    .then(() => dbLoad({ redisKey: 'analytics', includeOwnerUname: true }))
     .then(results => {
       expect(results.length).toBe(1);
       expect(results[0].ipAddress).toBe('remoteAddress1');
@@ -60,7 +59,7 @@ test('create analytics unauthenticated with forwarded header - uses correct IP a
   };
 
   return create(req)
-    .then(() => datumLoad({ redisKey: 'analytics', includeOwnerUname: true }))
+    .then(() => dbLoad({ redisKey: 'analytics', includeOwnerUname: true }))
     .then(results => {
       expect(results.length).toBe(1);
       expect(results[0].ipAddress).toBe('remoteAddress2');
@@ -92,7 +91,7 @@ test('create analytics authenticated - adds data to collection', () => {
   };
 
   return create(req)
-    .then(() => datumLoad({ redisKey: 'analytics', includeOwnerUname: true }))
+    .then(() => dbLoad({ redisKey: 'analytics', includeOwnerUname: true }))
     .then(results => {
       expect(results.length).toBe(1);
       expect(results[0].browser).toBe('browser3');

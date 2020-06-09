@@ -1,9 +1,8 @@
 #!/usr/bin/env node
 
-import { datumLoad } from '../datum';
-
 import create from './create.js';
 
+import { dbLoad } from 'utils/database';
 import { AuthError } from 'utils/errors';
 import {
   clearDatabaseCollection,
@@ -30,7 +29,7 @@ test('create support as admin - adds data to collection', () => {
 
   return createUsersWithSessions()
     .then(() => create(req))
-    .then(() => datumLoad({ redisKey: 'support' }))
+    .then(() => dbLoad({ redisKey: 'support' }))
     .then(results => {
       expect(results).toBeTruthy();
       expect(results.length).toBe(1);
@@ -63,7 +62,7 @@ test('create support non-admin - throws auth error', () => {
       expect(err instanceof AuthError).toBeTruthy();
     })
     .finally(() =>
-      datumLoad({ redisKey: 'support' }).then(results => {
+      dbLoad({ redisKey: 'support' }).then(results => {
         expect(results).toBeTruthy();
         expect(results.length).toBe(0);
         return true;
@@ -92,7 +91,7 @@ test('create support unauthenticated - throws auth error', () => {
       expect(err instanceof AuthError).toBeTruthy();
     })
     .finally(() =>
-      datumLoad({ redisKey: 'support' }).then(results => {
+      dbLoad({ redisKey: 'support' }).then(results => {
         expect(results).toBeTruthy();
         expect(results.length).toBe(0);
         return true;

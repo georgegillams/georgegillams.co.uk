@@ -1,5 +1,5 @@
 /* eslint-disable */
-import { datumLoad } from '../datum';
+import { dbLoad } from 'utils/database';
 
 import sendPaymentReceiptEmail from './private/sendPaymentReceiptEmail';
 import stripePaymentsAllowedAttributes from './private/stripePaymentsAllowedAttributes';
@@ -17,10 +17,10 @@ export default function resendPaymentReceipt(req) {
       user => {
         if (user && user.admin) {
           const userIdToResendTo = req.body.resendId;
-          datumLoad({
+          dbLoad({
             redisKey: 'users',
           }).then(userData => {
-            datumLoad({
+            dbLoad({
               redisKey: 'stripepayments',
             }).then(paymentData => {
               const { existingValue: paymentToResend } = find(

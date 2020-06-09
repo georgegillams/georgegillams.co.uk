@@ -1,9 +1,8 @@
 #!/usr/bin/env node
 
-import { datumCreate } from '../datum';
-
 import loadAll from './loadAll.js';
 
+import { dbCreate } from 'utils/database';
 import {
   clearDatabaseCollection,
   createUsersWithSessions,
@@ -36,9 +35,9 @@ const createSomeValues = () => {
     content: 'blog 3 content',
   };
 
-  return datumCreate({ redisKey: 'blogs' }, { body: blog1 })
-    .then(() => datumCreate({ redisKey: 'blogs' }, { body: blog2 }))
-    .then(() => datumCreate({ redisKey: 'blogs' }, { body: blog3 }));
+  return dbCreate({ redisKey: 'blogs' }, { body: blog1 })
+    .then(() => dbCreate({ redisKey: 'blogs' }, { body: blog2 }))
+    .then(() => dbCreate({ redisKey: 'blogs' }, { body: blog3 }));
 };
 
 test('load blogs as admin - returns all values', () => {

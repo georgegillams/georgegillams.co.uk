@@ -1,6 +1,6 @@
 import { sendMailPromise } from './nodemailer';
 
-import { datumCreate } from 'api/actions/datum';
+import { dbCreate } from 'utils/database';
 import lockPromise from 'utils/lock';
 import { PROJECT_NAME } from 'helpers/constants';
 
@@ -49,7 +49,7 @@ const EMAIL_LOGO_HEADER = `<tr>
 
 function sendEmail(email) {
   return lockPromise('emails', () =>
-    datumCreate({ redisKey: 'emails' }, { body: email }).then(() =>
+    dbCreate({ redisKey: 'emails' }, { body: email }).then(() =>
       sendMailPromise(email),
     ),
   );

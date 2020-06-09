@@ -1,12 +1,11 @@
-import { datumLoadSingle } from '../datum';
-
+import { dbLoadSingle } from 'utils/database';
 import authentication from 'utils/authentication';
 import reqSecure from 'utils/reqSecure';
 
 export default function loadSingle(req, params) {
   reqSecure(req, []);
   return authentication(req).then(user =>
-    datumLoadSingle({
+    dbLoadSingle({
       redisKey: 'blogs',
       includeDeleted: user && user.admin,
       filter: ar => {

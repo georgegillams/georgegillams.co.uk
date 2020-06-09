@@ -1,9 +1,8 @@
 #!/usr/bin/env node
 
-import { datumCreate, datumLoad } from '../datum';
-
 import deleteBlog from './delete.js';
 
+import { dbCreate, dbLoad } from 'utils/database';
 import { AuthError, NotFoundError } from 'utils/errors';
 import {
   clearDatabaseCollection,
@@ -24,8 +23,8 @@ const createSomeValues = () => {
     requestedId: 'blog2',
   };
 
-  return datumCreate({ redisKey: 'blogs' }, { body: blog1 }).then(() =>
-    datumCreate({ redisKey: 'blogs' }, { body: blog2 }),
+  return dbCreate({ redisKey: 'blogs' }, { body: blog1 }).then(() =>
+    dbCreate({ redisKey: 'blogs' }, { body: blog2 }),
   );
 };
 
@@ -45,7 +44,7 @@ test('delete blog as admin - removes data from collection', () => {
       expect(result).toBeTruthy();
       return true;
     })
-    .then(() => datumLoad({ redisKey: 'blogs' }))
+    .then(() => dbLoad({ redisKey: 'blogs' }))
     .then(blogs => {
       expect(blogs.length).toBe(1);
       expect(blogs[0].id).toBe('blog2');
@@ -94,7 +93,7 @@ test('delete blog non-admin - throws auth error', () => {
       expect(err instanceof AuthError).toBeTruthy();
     })
     .finally(() =>
-      datumLoad({
+      dbLoad({
         redisKey: 'blogs',
       }).then(dbResult => {
         expect(dbResult.length).toBe(2);
@@ -123,7 +122,7 @@ test('delete blog unauthenticated - throws auth error', () => {
       expect(err instanceof AuthError).toBeTruthy();
     })
     .finally(() =>
-      datumLoad({
+      dbLoad({
         redisKey: 'blogs',
       }).then(dbResult => {
         expect(dbResult.length).toBe(2);

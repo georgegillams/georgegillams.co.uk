@@ -1,9 +1,8 @@
 #!/usr/bin/env node
 
-import { datumLoad } from '../datum';
-
 import setKey from './setKey.js';
 
+import { dbLoad } from 'utils/database';
 import { AuthError } from 'utils/errors';
 import {
   clearDatabaseCollection,
@@ -27,7 +26,7 @@ test('create monzo API key as admin - adds data to collection', () => {
 
   return createUsersWithSessions()
     .then(() => setKey(req))
-    .then(() => datumLoad({ redisKey: 'monzoapikeys' }))
+    .then(() => dbLoad({ redisKey: 'monzoapikeys' }))
     .then(apiKeys => {
       expect(apiKeys.length).toBe(1);
       expect(apiKeys[0].key).toBe('monzoApiKey1');

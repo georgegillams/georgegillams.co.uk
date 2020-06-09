@@ -11,7 +11,7 @@ import {
   FONT_SIZE_SM,
 } from 'utils/emails';
 import lockPromise from 'utils/lock';
-import { datumCreate } from 'api/actions/datum';
+import { dbCreate } from 'utils/database';
 
 export default function sendEmailVerificationEmail(user) {
   if (!EMAIL_VERIFICATION_ENABLED) {
@@ -51,7 +51,7 @@ ${EMAIL_OUTER_END}`,
   };
 
   return lockPromise('emailVerificationCodes', () =>
-    datumCreate(
+    dbCreate(
       { redisKey: 'emailVerificationCodes' },
       { body: verificationLink },
     ).then(() => sendEmail(email)),

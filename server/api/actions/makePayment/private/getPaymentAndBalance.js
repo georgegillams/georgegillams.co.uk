@@ -1,16 +1,16 @@
 /* eslint-disable */
-import { datumLoad, datumLoadSingle } from '../../datum';
+import { dbLoad, dbLoadSingle } from 'utils/database';
 
 import fetchPaymentDataFromStripe from './fetchPaymentDataFromStripe';
 
 export default function getPaymentAndBalance(paymentId) {
   return new Promise((resolve, reject) => {
-    datumLoadSingle({
+    dbLoadSingle({
       redisKey: 'payments',
       filter: p => p.id === paymentId,
     })
       .then(payment => {
-        datumLoad({
+        dbLoad({
           redisKey: 'stripepayments',
           filter: sp => sp.paymentId === payment.id,
         })

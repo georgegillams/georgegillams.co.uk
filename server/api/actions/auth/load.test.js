@@ -1,9 +1,8 @@
 #!/usr/bin/env node
 
-import { datumCreate } from '../datum';
-
 import load from './load.js';
 
+import { dbCreate } from 'utils/database';
 import { clearDatabaseCollection } from 'utils/testUtils';
 
 beforeEach(() => {
@@ -30,16 +29,16 @@ const createSomeValues = () => {
     admin: true,
   };
 
-  return datumCreate({ redisKey: 'users' }, { body: user1 })
+  return dbCreate({ redisKey: 'users' }, { body: user1 })
     .then(createdUser =>
-      datumCreate(
+      dbCreate(
         { redisKey: 'sessions' },
         { body: { userId: createdUser.id, sessionKey: 'sessionKey1' } },
       ),
     )
-    .then(() => datumCreate({ redisKey: 'users' }, { body: user2 }))
+    .then(() => dbCreate({ redisKey: 'users' }, { body: user2 }))
     .then(createdUser =>
-      datumCreate(
+      dbCreate(
         { redisKey: 'sessions' },
         { body: { userId: createdUser.id, sessionKey: 'sessionKey2' } },
       ),

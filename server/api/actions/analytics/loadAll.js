@@ -1,7 +1,6 @@
-import { datumLoad } from '../datum';
-
 import analyticsAllowedAttributes from './private/analyticsAllowedAttributes';
 
+import { dbLoad } from 'utils/database';
 import authentication from 'utils/authentication';
 import reqSecure from 'utils/reqSecure';
 import { UNAUTHORISED_READ } from 'utils/errorConstants';
@@ -11,7 +10,7 @@ export default function loadAll(req) {
   return authentication(req)
     .then(user => {
       if (user && user.admin) {
-        return datumLoad({
+        return dbLoad({
           redisKey: 'analytics',
           includeOwnerUname: true,
           includeDeleted: true,

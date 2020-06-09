@@ -1,9 +1,9 @@
-import { datumCreate, datumLoad } from '../datum';
 import sendEmailVerificationEmail from '../auth/private/sendEmailVerificationEmail';
 import { InvalidInputError } from '../../../utils/errors';
 
 import usersAllowedAttributes from './private/usersAllowedAttributes';
 
+import { dbCreate, dbLoad } from 'utils/database';
 import lockPromise from 'utils/lock';
 import authentication from 'utils/authentication';
 import { hash } from 'utils/hash';
@@ -19,7 +19,7 @@ export default function create(req) {
     authentication(req)
       .then(user => {
         authenticatedUser = user;
-        return datumLoad({ redisKey: 'users' });
+        return dbLoad({ redisKey: 'users' });
       })
       .then(userData => {
         // Only admin can create an admin!
@@ -47,7 +47,7 @@ export default function create(req) {
           req.body.emailFingerprint = emailFingerprint(req.body.email);
           req.body.email = req.body.email.toLowerCase();
           req.body.emailVerified = false;
-          return datumCreate({ redisKey: 'users', authenticatedUser }, req);
+          return dbCreate({ redisKey: 'users', authenticatedUser }, req);
         }
         throw UNAUTHORISED_WRITE;
       })

@@ -1,5 +1,5 @@
 /* eslint-disable */
-import { datumCreate } from '../datum';
+import { dbCreate } from 'utils/database';
 
 import loadPayment from './private/loadPayment';
 import stripeInstance from './private/stripe';
@@ -33,7 +33,7 @@ export default function createIntent(req) {
           .then(payment => {
             createNewPaymentIntent(payment)
               .then(paymentIntent => {
-                datumCreate(
+                dbCreate(
                   { redisKey: 'stripepayments' },
                   {
                     body: {

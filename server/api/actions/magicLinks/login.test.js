@@ -1,9 +1,8 @@
 #!/usr/bin/env node
 
-import { datumCreate, datumLoad } from '../datum';
-
 import login from './login.js';
 
+import { dbCreate, dbLoad } from 'utils/database';
 import {
   clearDatabaseCollection,
   createUsersWithSessions,
@@ -35,9 +34,9 @@ const createSomeValues = () => {
     expiry: new Date(Date.now() + 60 * 60),
   };
 
-  return datumCreate({ redisKey: 'magiclinks' }, { body: magicLink1 })
-    .then(() => datumCreate({ redisKey: 'magiclinks' }, { body: magicLink2 }))
-    .then(() => datumCreate({ redisKey: 'magiclinks' }, { body: magicLink3 }));
+  return dbCreate({ redisKey: 'magiclinks' }, { body: magicLink1 })
+    .then(() => dbCreate({ redisKey: 'magiclinks' }, { body: magicLink2 }))
+    .then(() => dbCreate({ redisKey: 'magiclinks' }, { body: magicLink3 }));
 };
 
 test('login with non-existent code - throws error', () => {
@@ -70,13 +69,13 @@ test('successful login - sets code expiry to 0 and creates session', () => {
   return createUsersWithSessions()
     .then(() => createSomeValues())
     .then(() => login(req))
-    .then(() => datumLoad({ redisKey: 'magiclinks' }))
+    .then(() => dbLoad({ redisKey: 'magiclinks' }))
     .then(codes => {
       expect(codes.length).toBe(3);
       expect(codes[1].expiry).toBe(0);
       return true;
     })
-    .then(() => datumLoad({ redisKey: 'sessions' }))
+    .then(() => dbLoad({ redisKey: 'sessions' }))
     .then(sessions => {
       expect(sessions.length).toBe(3);
       expect(sessions[2].userId).toBe('nonAdminUser1');
