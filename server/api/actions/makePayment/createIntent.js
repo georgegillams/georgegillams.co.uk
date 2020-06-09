@@ -1,3 +1,4 @@
+/* eslint-disable */
 import { datumCreate } from '../datum';
 
 import loadPayment from './private/loadPayment';

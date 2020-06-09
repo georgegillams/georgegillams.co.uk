@@ -1,3 +1,4 @@
+/* eslint-disable */
 import { datumLoad, datumLoadSingle } from '../../datum';
 
 import fetchPaymentDataFromStripe from './fetchPaymentDataFromStripe';

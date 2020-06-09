@@ -1,3 +1,4 @@
+/* eslint-disable */
 import { datumLoad, datumLoadSingle, datumUpdate } from '../../datum';
 
 import sendPaymentReceiptEmail from './sendPaymentReceiptEmail';

@@ -1,3 +1,4 @@
+/* eslint-disable */
 import lockPromise from 'utils/lock';
 
 import getPaymentAndBalance from './getPaymentAndBalance';

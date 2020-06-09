@@ -1,3 +1,4 @@
+/* eslint-disable */
 import { URLSearchParams } from 'url';
 
 import fetch from 'node-fetch';
