@@ -1,7 +1,9 @@
 const inferPropertiesFromInitialStateRecursive = (s, result = []) => {
+  /* eslint-disable no-underscore-dangle */
   if (s && s._root) {
     return inferPropertiesFromInitialStateRecursive(s._root);
   }
+  /* eslint-enable */
 
   if (s && s[0] && typeof s[0] === 'string') {
     result.push(s[0]);
@@ -43,10 +45,12 @@ const inferPropertiesFromInitialStateRecursive = (s, result = []) => {
 };
 
 const inferPropertiesFromInitialState = s => {
+  /* eslint-disable no-underscore-dangle */
   if (!s || !s._root) {
     return [];
   }
   return inferPropertiesFromInitialStateRecursive(s._root);
+  /* eslint-enable */
 };
 
 const getInitialState = reducer => reducer(undefined, {});
@@ -89,6 +93,7 @@ const createAppReducer = (actionDefinitions, constants, initialState) => {
         if (typeof newValue === 'function') {
           newValue = newValue(action, state.get(smKey));
         }
+        // eslint-disable-next-line no-param-reassign
         state = state.set(smKey, newValue);
       });
     }
