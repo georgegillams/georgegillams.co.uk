@@ -1,4 +1,5 @@
-import { STRING_REGEX, PROJECT_NAME } from 'helpers/constants';
+import { STRING_REGEX } from 'helpers/constants';
+import appConfig from 'helpers/appConfig';
 import { UNAUTHORISED_WRITE } from 'utils/errorConstants';
 import redis from 'utils/redis';
 import { InvalidInputError } from 'utils/errors';
@@ -21,7 +22,7 @@ export default function deleteSet(req) {
       if (!collectionName) {
         throw new InvalidInputError('collectionName must be provided');
       } else {
-        redis.del(`${PROJECT_NAME}_${collectionName}`);
+        redis.del(`${appConfig.projectName}_${collectionName}`);
         return setContentLastUpdatedTimestamp();
       }
     })

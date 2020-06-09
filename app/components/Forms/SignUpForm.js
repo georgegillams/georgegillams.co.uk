@@ -1,11 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import {
-  USERNAMES_ENABLED,
-  USERNAME_REGEX,
-  EMAIL_REGEX,
-} from 'helpers/constants';
 import { FormBuilder } from 'gg-components/FormBuilder';
+
+import { USERNAME_REGEX, EMAIL_REGEX } from 'helpers/constants';
 
 const SignUpForm = props => {
   const { onDataChanged, className, credentials, submitLabel, ...rest } = props;
@@ -30,7 +27,7 @@ const SignUpForm = props => {
           id: 'uname',
           name: 'Display name',
           validationRegex: USERNAME_REGEX,
-          show: USERNAMES_ENABLED,
+          show: true,
           inputProps: {
             autofill: 'username',
           },

@@ -1,4 +1,4 @@
-import { PROJECT_NAME } from 'helpers/constants';
+import appConfig from 'helpers/appConfig';
 import redis from 'utils/redis';
 
 /**
@@ -8,10 +8,10 @@ import redis from 'utils/redis';
  */
 export default function performRestoration(data) {
   Object.keys(data).forEach(key => {
-    redis.del(`${PROJECT_NAME}_${key}`);
+    redis.del(`${appConfig.projectName}_${key}`);
     if (data[key].length > 0) {
       const newData = data[key].map(d => JSON.stringify(d));
-      redis.rpush([`${PROJECT_NAME}_${key}`, ...newData]);
+      redis.rpush([`${appConfig.projectName}_${key}`, ...newData]);
     }
   });
 }
