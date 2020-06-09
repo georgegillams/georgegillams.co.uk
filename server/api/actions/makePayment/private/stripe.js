@@ -1,7 +1,6 @@
 import stripe from 'stripe';
 
-import { STRIPE_SECRET_API_KEY } from 'helpers/constants';
-
+const { STRIPE_SECRET_API_KEY } = process.env;
 const stripeInstance = stripe(STRIPE_SECRET_API_KEY);
 
 export default stripeInstance;
