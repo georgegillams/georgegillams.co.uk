@@ -3,7 +3,7 @@ import fs from 'fs';
 import loadAllData from './private/loadAllData';
 
 import authentication from 'utils/authentication';
-import { PROJECT_NAME } from 'helpers/constants';
+import appConfig from 'helpers/appConfig';
 import { UNAUTHORISED_READ } from 'utils/errorConstants';
 
 const dataFilePath = 'server/server_content/data.json';
@@ -18,7 +18,7 @@ export default function load(req) {
     })
     .then(data => {
       const dataAnnotated = {
-        projectName: PROJECT_NAME,
+        projectName: appConfig.projectName,
         timestamp: Date.now(),
         data,
       };

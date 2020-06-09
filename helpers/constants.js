@@ -6,7 +6,6 @@ const COMMUNICATION_ERROR_MESSAGE = {
   type: 'error',
   message: 'Our servers are poorly. Please try again later.',
 };
-const PROJECT_NAME = 'GEORGEGILLAMS';
 const DECIMAL_REGEX = /^[0-9\\.]*$/gi;
 const INT_REGEX = /^[0-9]*$/gi;
 const SORT_CODE_REGEX = /^[0-9\\.-]*$/gi;
@@ -59,7 +58,6 @@ const SESSION_SECRET =
 const STRIPE_PUBLIC_API_KEY = process.env.STRIPE_PUBLIC_API_KEY
   ? process.env.STRIPE_PUBLIC_API_KEY
   : 'pk_test_cgQazYLEKCzNFGFuRfq0TL8N00Cj3LIfai';
-const USERNAMES_ENABLED = PROJECT_NAME !== 'EPICC';
 const REDIS_INFORMATION_STORES = [
   'analytics',
   'blogs',
@@ -110,7 +108,6 @@ export {
   NODE_ENV,
   NON_EMOJI_REGEX,
   PASSWORD_REGEX,
-  PROJECT_NAME,
   PROJECT_UNDER_TEST,
   REDIRECT_REGEX,
   REDIS_INFORMATION_STORES,
@@ -126,7 +123,6 @@ export {
   TICKET_COST_R_TWO_DAY,
   TICKET_RESERVATION_LENGTH,
   TICKET_SALE_END,
-  USERNAMES_ENABLED,
   USERNAME_REGEX,
 };
 export default {
@@ -159,7 +155,6 @@ export default {
   NODE_ENV,
   NON_EMOJI_REGEX,
   PASSWORD_REGEX,
-  PROJECT_NAME,
   PROJECT_UNDER_TEST,
   REDIRECT_REGEX,
   REDIS_INFORMATION_STORES,
@@ -175,6 +170,5 @@ export default {
   TICKET_COST_R_TWO_DAY,
   TICKET_RESERVATION_LENGTH,
   TICKET_SALE_END,
-  USERNAMES_ENABLED,
   USERNAME_REGEX,
 };

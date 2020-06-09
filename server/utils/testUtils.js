@@ -2,10 +2,10 @@
 
 import { dbCreate } from 'utils/database';
 import redis from 'utils/redis';
-import { PROJECT_NAME } from 'helpers/constants';
+import appConfig from 'helpers/appConfig';
 
 const clearDatabaseCollection = collectionName => {
-  redis.del(`${PROJECT_NAME}_${collectionName}`);
+  redis.del(`${appConfig.projectName}_${collectionName}`);
 };
 
 const createUsersWithSessions = () => {

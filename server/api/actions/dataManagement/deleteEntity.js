@@ -1,5 +1,6 @@
 import { dbLoad } from 'utils/database';
-import { STRING_REGEX, ID_REGEX, PROJECT_NAME } from 'helpers/constants';
+import { STRING_REGEX, ID_REGEX } from 'helpers/constants';
+import appConfig from 'helpers/appConfig';
 import { RESOURCE_NOT_FOUND, UNAUTHORISED_WRITE } from 'utils/errorConstants';
 import { AuthError } from 'utils/errors';
 import redis from 'utils/redis';
@@ -48,7 +49,7 @@ export default function deleteEntity(req) {
         `Permanently removing ${existingValue.id} at index ${existingValueIndex}`,
       );
       redis.lrem(
-        `${PROJECT_NAME}_${collectionToDeleteFrom}`,
+        `${appConfig.projectName}_${collectionToDeleteFrom}`,
         1,
         JSON.stringify(existingValue),
       );

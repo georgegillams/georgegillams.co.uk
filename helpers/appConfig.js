@@ -11,6 +11,7 @@ const environment = {
   },
 }[NODE_ENV || 'development'];
 
+const projectName = 'GEORGEGILLAMS';
 const domain = 'georgegillams.co.uk';
 const port = PORT || 3000;
 const siteUrl =
@@ -22,6 +23,7 @@ const apiEndpoint = `${siteUrl}/api`;
 module.exports = {
   host: process.env.HOST || 'localhost',
   port,
+  projectName,
   domain,
   siteUrl,
   apiEndpoint,

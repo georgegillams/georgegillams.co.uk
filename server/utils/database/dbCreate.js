@@ -2,7 +2,7 @@ import loadAllValues from './private/loadAllValues';
 
 import redis from 'utils/redis';
 import { find } from 'utils/find';
-import { PROJECT_NAME } from 'helpers/constants';
+import appConfig from 'helpers/appConfig';
 
 const idForNewEntity = (redisKey, requestedId) =>
   loadAllValues(redisKey).then(existingData => {
@@ -36,7 +36,7 @@ export default function dbCreate(settings, req) {
       newValue.authorId = settings.user ? settings.user.id : undefined;
       // Write to redis:
       redis.rpush([
-        `${PROJECT_NAME}_${settings.redisKey}`,
+        `${appConfig.projectName}_${settings.redisKey}`,
         JSON.stringify(newValue),
       ]);
       return newValue;

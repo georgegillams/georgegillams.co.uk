@@ -2,7 +2,7 @@ import loadAllValues from './private/loadAllValues';
 
 import redis from 'utils/redis';
 import { find } from 'utils/find';
-import { PROJECT_NAME } from 'helpers/constants';
+import appConfig from 'helpers/appConfig';
 import { RESOURCE_NOT_FOUND } from 'utils/errorConstants';
 
 export default function dbUpdate(settings, req) {
@@ -22,7 +22,7 @@ export default function dbUpdate(settings, req) {
     value.requestedId = existingValue.requestedId;
 
     redis.lset(
-      `${PROJECT_NAME}_${settings.redisKey}`,
+      `${appConfig.projectName}_${settings.redisKey}`,
       existingValueIndex,
       JSON.stringify(value),
     );

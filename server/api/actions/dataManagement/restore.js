@@ -3,7 +3,7 @@ import { InvalidInputError } from '../../../utils/errors';
 import performRestoration from './private/performRestoration';
 
 import authentication from 'utils/authentication';
-import { PROJECT_NAME } from 'helpers/constants';
+import appConfig from 'helpers/appConfig';
 import { UNAUTHORISED_WRITE } from 'utils/errorConstants';
 
 export default function create(req) {
@@ -18,7 +18,7 @@ export default function create(req) {
     }
     const dataBuffer = req.files.backupFile.data;
     const restorationObject = JSON.parse(dataBuffer.toString());
-    if (restorationObject.projectName !== PROJECT_NAME) {
+    if (restorationObject.projectName !== appConfig.projectName) {
       throw new InvalidInputError(
         'The backup was taken from a different project.',
       );

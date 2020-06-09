@@ -2,7 +2,7 @@ import { sendMailPromise } from './nodemailer';
 
 import { dbCreate } from 'utils/database';
 import lockPromise from 'utils/lock';
-import { PROJECT_NAME } from 'helpers/constants';
+import appConfig from 'helpers/appConfig';
 
 let primaryColor = '#44AEFF';
 let primaryColorFaded = '#E5F4FF';
@@ -10,7 +10,7 @@ let logoHtml =
   '<img src="https://i.imgur.com/EBMKBux.png" style="width: 7rem;">';
 let buttonColor = '#025ca2';
 
-if (PROJECT_NAME === 'CGWEDDING') {
+if (appConfig.projectName === 'CGWEDDING') {
   primaryColor = '#008080';
   primaryColorFaded = '#BFDCDC';
   logoHtml = '<img src="https://i.imgur.com/ISUf6bC.png" style="width: 7rem;">';
