@@ -1,41 +1,18 @@
-import sortBy from 'lodash/sortBy';
-import reverse from 'lodash/reverse';
+import datumLoad from './datumLoad';
 
-import redis from 'utils/redis';
-import { PROJECT_NAME } from 'helpers/constants';
 import { RESOURCE_NOT_FOUND } from 'utils/errorConstants';
 
-function notFound(settings, resolve, reject) {
-  if (settings.resolveIfNotFound) {
-    resolve(null);
-  } else {
-    reject(RESOURCE_NOT_FOUND);
-  }
-}
-
 export default function datumLoadSingle(settings) {
-  // load(req) {
-  return new Promise((resolve, reject) => {
-    redis.lrange(
-      `${PROJECT_NAME}_${settings.redisKey}`,
-      0,
-      -1,
-      (err, reply) => {
-        let orderedReply = reply;
-        if (settings.sortKey) {
-          orderedReply = reverse(sortBy(orderedReply, [settings.sortKey]));
-        }
-        for (let inc = 0; inc < orderedReply.length; inc += 1) {
-          const value = JSON.parse(orderedReply[inc]);
-          if (!settings.filter || settings.filter(value)) {
-            if (settings.includeDeleted || !value.deleted) {
-              resolve(value);
-              return;
-            }
-          }
-        }
-        notFound(settings, resolve, reject);
-      },
-    );
+  // loads values using settings
+  // returns first result
+  // if no result, throws error OR returns null
+  return datumLoad(settings).then(values => {
+    if (values.length > 0) {
+      return values[0];
+    }
+    if (settings.resolveIfNotFound) {
+      return null;
+    }
+    throw RESOURCE_NOT_FOUND;
   });
 }

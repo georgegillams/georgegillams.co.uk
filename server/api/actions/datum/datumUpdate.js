@@ -1,53 +1,31 @@
-import datumLoad from './datumLoad';
+import loadAllValues from './private/loadAllValues';
 
 import redis from 'utils/redis';
 import { find } from 'utils/find';
-import setContentLastUpdatedTimestamp from 'utils/setContentLastUpdatedTimestamp';
 import { PROJECT_NAME } from 'helpers/constants';
 import { RESOURCE_NOT_FOUND } from 'utils/errorConstants';
 
 export default function datumUpdate(settings, req) {
-  return new Promise((resolve, reject) => {
-    // Need to unset all of these, as alternative values will affect the index, and cause the redis update command to update the wrong entry
-    settings.includeDeleted = true;
-    settings.sortKey = null;
-    settings.filter = null;
+  // finds matching element - should use redis method directly
+  // if no matching, throw RESOURCE_NOT_FOUND
+  // if matching value, writes (persisting un-writable values)
 
-    datumLoad(settings, req).then(
-      data => {
-        const values = data;
-        const value = req.body;
-        const { existingValue, existingValueIndex } = find(values, value.id);
+  const value = req.body;
+  return loadAllValues(settings.redisKey).then(existingData => {
+    const { existingValue, existingValueIndex } = find(existingData, value.id);
+    if (!existingValue || existingValue.deleted) {
+      throw RESOURCE_NOT_FOUND;
+    }
+    value.timestamp = existingValue.timestamp;
+    value.lastUpdatedTimestamp = Date.now();
+    value.authorId = existingValue.authorId;
+    value.requestedId = existingValue.requestedId;
 
-        if (existingValue) {
-          // Persist unchangeable values
-          value.timestamp = existingValue.timestamp;
-          value.lastUpdatedTimestamp = Date.now();
-          value.authorId = existingValue.authorId;
-
-          values[existingValueIndex] = value;
-          redis.lset(
-            `${PROJECT_NAME}_${settings.redisKey}`,
-            existingValueIndex,
-            JSON.stringify(value),
-          );
-          if (
-            settings.redisKey !== 'sessions' &&
-            settings.redisKey !== 'contentUpdates'
-          ) {
-            setContentLastUpdatedTimestamp();
-          }
-        } else {
-          reject(RESOURCE_NOT_FOUND);
-        }
-        if (req.session) {
-          req.session[settings.redisKey] = values;
-        }
-        resolve(value);
-      },
-      err => {
-        reject(err);
-      },
+    redis.lset(
+      `${PROJECT_NAME}_${settings.redisKey}`,
+      existingValueIndex,
+      JSON.stringify(value),
     );
+    return true;
   });
 }
