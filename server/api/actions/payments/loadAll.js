@@ -1,7 +1,6 @@
-import { datumLoad } from '../datum';
-
 import paymentsAllowedAttributes from './private/paymentsAllowedAttributes';
 
+import { dbLoad } from 'utils/database';
 import authentication from 'utils/authentication';
 import reqSecure from 'utils/reqSecure';
 import { UNAUTHORISED_READ } from 'utils/errorConstants';
@@ -18,7 +17,7 @@ export default function loadAll(req) {
       return true;
     })
     .then(() =>
-      datumLoad({
+      dbLoad({
         redisKey: 'payments',
         includeDeleted: true,
       }),
@@ -28,7 +27,7 @@ export default function loadAll(req) {
       return true;
     })
     .then(() =>
-      datumLoad({
+      dbLoad({
         redisKey: 'stripepayments',
         includeDeleted: true,
       }),

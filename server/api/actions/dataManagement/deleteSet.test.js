@@ -1,9 +1,8 @@
 #!/usr/bin/env node
 
-import { datumLoadSingle, datumCreate } from '../datum';
-
 import deleteSet from './deleteSet.js';
 
+import { dbLoadSingle, dbCreate } from 'utils/database';
 import {
   clearDatabaseCollection,
   createUsersWithSessions,
@@ -28,8 +27,8 @@ const createSomeValues = () => {
     message: 'Hi',
   };
 
-  return datumCreate({ redisKey: 'users' }, { body: user5 }).then(() =>
-    datumCreate({ redisKey: 'emails' }, { body: email2 }),
+  return dbCreate({ redisKey: 'users' }, { body: user5 }).then(() =>
+    dbCreate({ redisKey: 'emails' }, { body: email2 }),
   );
 };
 
@@ -57,7 +56,7 @@ test('remove set non-admin - throws auth error', () => {
     })
     .finally(() =>
       // ensure the attempted deletion has not changed data
-      datumLoadSingle({
+      dbLoadSingle({
         redisKey: 'users',
         filter: x => x.id === 'user5',
         includeDeleted: true,
@@ -90,7 +89,7 @@ test('remove undefined admin - throws input error', () => {
     })
     .finally(() =>
       // ensure the attempted deletion has not changed data
-      datumLoadSingle({
+      dbLoadSingle({
         redisKey: 'users',
         filter: x => x.id === 'user5',
         includeDeleted: true,
@@ -127,7 +126,7 @@ test('remove non-deleted entity admin - throws auth error', () => {
     })
     .finally(() =>
       // ensure the attempted deletion has not changed data
-      datumLoadSingle({
+      dbLoadSingle({
         redisKey: 'emails',
         filter: u => u.id === 'email2',
       }).then(dbResult => {
@@ -151,7 +150,7 @@ test('remove set entity admin', () => {
     .then(() => createSomeValues())
     .then(() => deleteSet(req))
     .then(() =>
-      datumLoadSingle({
+      dbLoadSingle({
         redisKey: 'users',
         filter: u => u.id === 'user5',
         resolveIfNotFound: true,

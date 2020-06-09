@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 
+import { dbCreate } from 'utils/database';
 import redis from 'utils/redis';
-import { datumCreate } from 'api/actions/datum';
 import { PROJECT_NAME } from 'helpers/constants';
 
 const clearDatabaseCollection = collectionName => {
@@ -37,10 +37,10 @@ const createUsersWithSessions = () => {
     userId: 'nonAdminUser1',
   };
 
-  return datumCreate({ redisKey: 'users' }, { body: user1 })
-    .then(() => datumCreate({ redisKey: 'users' }, { body: user2 }))
-    .then(() => datumCreate({ redisKey: 'sessions' }, { body: session1 }))
-    .then(() => datumCreate({ redisKey: 'sessions' }, { body: session2 }));
+  return dbCreate({ redisKey: 'users' }, { body: user1 })
+    .then(() => dbCreate({ redisKey: 'users' }, { body: user2 }))
+    .then(() => dbCreate({ redisKey: 'sessions' }, { body: session1 }))
+    .then(() => dbCreate({ redisKey: 'sessions' }, { body: session2 }));
 };
 
 export { clearDatabaseCollection, createUsersWithSessions };

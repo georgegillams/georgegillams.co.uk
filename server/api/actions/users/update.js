@@ -1,8 +1,8 @@
 import sendEmailVerificationEmail from '../auth/private/sendEmailVerificationEmail';
-import { datumLoad, datumUpdate } from '../datum';
 
 import usersAllowedAttributes from './private/usersAllowedAttributes';
 
+import { dbLoad, dbUpdate } from 'utils/database';
 import { InvalidInputError } from 'utils/errors';
 import lockPromise from 'utils/lock';
 import authentication from 'utils/authentication';
@@ -32,7 +32,7 @@ export default function update(req) {
         userOwnsResourceResult = result;
         return userOwnsResourceResult;
       })
-      .then(() => datumLoad({ redisKey: 'users' }))
+      .then(() => dbLoad({ redisKey: 'users' }))
       .then(userData => {
         const { existingValue: userBeingUpdated } = find(userData, req.body.id);
         if (!userBeingUpdated) {
@@ -79,7 +79,7 @@ export default function update(req) {
         }
         return true;
       })
-      .then(() => datumUpdate({ redisKey: 'users' }, req))
+      .then(() => dbUpdate({ redisKey: 'users' }, req))
       .then(updateResult => {
         updatedUser = updateResult;
         if (emailVerificationRequired) {

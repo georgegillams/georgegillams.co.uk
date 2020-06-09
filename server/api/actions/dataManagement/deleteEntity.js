@@ -1,5 +1,4 @@
-import { datumLoad } from '../datum';
-
+import { dbLoad } from 'utils/database';
 import { STRING_REGEX, ID_REGEX, PROJECT_NAME } from 'helpers/constants';
 import { RESOURCE_NOT_FOUND, UNAUTHORISED_WRITE } from 'utils/errorConstants';
 import { AuthError } from 'utils/errors';
@@ -27,7 +26,7 @@ export default function deleteEntity(req) {
       const { collectionName, id } = req.body;
       collectionToDeleteFrom = collectionName;
       idToDelete = id;
-      return datumLoad({
+      return dbLoad({
         redisKey: collectionToDeleteFrom,
         includeDeleted: true,
       });

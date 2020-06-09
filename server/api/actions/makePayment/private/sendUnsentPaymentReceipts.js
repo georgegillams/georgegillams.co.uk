@@ -1,18 +1,18 @@
 /* eslint-disable */
-import { datumLoad, datumLoadSingle, datumUpdate } from '../../datum';
+import { dbLoad, dbLoadSingle, dbUpdate } from 'utils/database';
 
 import sendPaymentReceiptEmail from './sendPaymentReceiptEmail';
 import fetchPaymentDataFromStripe from './fetchPaymentDataFromStripe';
 
 const markStripePaymentEmailSent = (id, newValue) =>
   new Promise((resolve, reject) => {
-    datumLoadSingle({
+    dbLoadSingle({
       redisKey: 'stripepayments',
       filter: sp => sp.id === id,
     })
       .then(stripepayment => {
         resolve(
-          datumUpdate(
+          dbUpdate(
             { redisKey: 'stripepayments' },
             { body: { ...stripepayment, emailSent: newValue } },
           ),
@@ -25,7 +25,7 @@ const markStripePaymentEmailSent = (id, newValue) =>
 
 export default function sendUnsentPaymentReceipts(payment) {
   return new Promise((resolve, reject) => {
-    datumLoad({
+    dbLoad({
       redisKey: 'stripepayments',
       filter: sp => sp.paymentId === payment.id && !sp.emailSent,
     })

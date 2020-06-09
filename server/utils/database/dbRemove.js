@@ -1,10 +1,10 @@
 import loadAllValues from './private/loadAllValues';
-import datumUpdate from './datumUpdate';
+import dbUpdate from './dbUpdate';
 
 import { RESOURCE_NOT_FOUND } from 'utils/errorConstants';
 import { find } from 'utils/find';
 
-export default function datumRemove(settings, req) {
+export default function dbRemove(settings, req) {
   return loadAllValues(settings.redisKey).then(data => {
     const { existingValue } = find(data, req.body.id);
 
@@ -15,6 +15,6 @@ export default function datumRemove(settings, req) {
     const value = JSON.parse(JSON.stringify(existingValue));
     value.deleted = true;
 
-    return datumUpdate(settings, { body: value });
+    return dbUpdate(settings, { body: value });
   });
 }

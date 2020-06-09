@@ -1,7 +1,6 @@
-import { datumCreate } from '../datum';
-
 import commentsAllowedAttributes from './private/commentsAllowedAttributes';
 
+import { dbCreate } from 'utils/database';
 import lockPromise from 'utils/lock';
 import authentication from 'utils/authentication';
 import reqSecure from 'utils/reqSecure';
@@ -13,7 +12,7 @@ export default function create(req) {
       if (user && user.uname) {
         req.body.displayName = user.uname;
       }
-      return datumCreate({ redisKey: 'comments', user }, req);
+      return dbCreate({ redisKey: 'comments', user }, req);
     }),
   );
 }

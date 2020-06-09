@@ -1,9 +1,8 @@
 #!/usr/bin/env node
 
-import { datumCreate } from '../datum';
-
 import loadSingle from './loadSingle.js';
 
+import { dbCreate } from 'utils/database';
 import { NotFoundError } from 'utils/errors';
 import {
   clearDatabaseCollection,
@@ -25,11 +24,11 @@ const createSomeValues = () => {
     deleted: true,
   };
 
-  return datumCreate(
+  return dbCreate(
     { redisKey: 'notifications' },
     { body: notification1 },
   ).then(() =>
-    datumCreate({ redisKey: 'notifications' }, { body: notification2 }),
+    dbCreate({ redisKey: 'notifications' }, { body: notification2 }),
   );
 };
 

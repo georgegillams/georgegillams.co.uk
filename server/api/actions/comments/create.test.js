@@ -1,9 +1,8 @@
 #!/usr/bin/env node
 
-import { datumLoad } from '../datum';
-
 import create from './create.js';
 
+import { dbLoad } from 'utils/database';
 import {
   clearDatabaseCollection,
   createUsersWithSessions,
@@ -28,7 +27,7 @@ test('create comment authenticated - adds data to collection with uname as displ
 
   return createUsersWithSessions()
     .then(() => create(req))
-    .then(() => datumLoad({ redisKey: 'comments' }))
+    .then(() => dbLoad({ redisKey: 'comments' }))
     .then(comments => {
       expect(comments.length).toBe(1);
       expect(comments[0].displayName).toBe('nonAdminUser1');
@@ -51,7 +50,7 @@ test('create comment unauthenticated - adds data to collection with provided dis
 
   return createUsersWithSessions()
     .then(() => create(req))
-    .then(() => datumLoad({ redisKey: 'comments' }))
+    .then(() => dbLoad({ redisKey: 'comments' }))
     .then(comments => {
       expect(comments.length).toBe(1);
       expect(comments[0].displayName).toBe('displayName1');

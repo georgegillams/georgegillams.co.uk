@@ -2,7 +2,7 @@ import safeCompare from 'safe-compare';
 
 import { find } from './find';
 
-import { datumLoad } from 'api/actions/datum';
+import { dbLoad } from 'utils/database';
 
 const secretApiKey = process.env.SECRET_API_KEY;
 
@@ -22,12 +22,12 @@ export default function authentication(req) {
   }
   if (sessionKey) {
     return Promise.resolve()
-      .then(() => datumLoad({ redisKey: 'users' }))
+      .then(() => dbLoad({ redisKey: 'users' }))
       .then(userData => {
         users = userData;
         return true;
       })
-      .then(() => datumLoad({ redisKey: 'sessions' }))
+      .then(() => dbLoad({ redisKey: 'sessions' }))
       .then(sessionData => {
         sessions = sessionData;
         return true;

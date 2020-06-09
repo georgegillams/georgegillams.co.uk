@@ -1,12 +1,11 @@
-import { datumRemove } from '../datum';
-
+import { dbRemove } from 'utils/database';
 import authentication from 'utils/authentication';
 import { UNAUTHORISED_WRITE } from 'utils/errorConstants';
 
 export default function remove(req) {
   return authentication(req).then(user => {
     if (user && user.admin) {
-      return datumRemove({ redisKey: 'payments' }, req);
+      return dbRemove({ redisKey: 'payments' }, req);
     }
     throw UNAUTHORISED_WRITE;
   });

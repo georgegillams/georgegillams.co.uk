@@ -1,7 +1,6 @@
-import { datumRemove } from '../datum';
-
 import commentsAllowedAttributes from './private/commentsAllowedAttributes';
 
+import { dbRemove } from 'utils/database';
 import authentication from 'utils/authentication';
 import { userOwnsResource } from 'utils/userOwnsResource';
 import { UNAUTHORISED_WRITE } from 'utils/errorConstants';
@@ -19,7 +18,7 @@ export default function remove(req) {
     .then(userOwnsResourceResult => {
       // Users should be able to delete comments that they own
       if (user && (user.admin || userOwnsResourceResult)) {
-        return datumRemove({ redisKey: 'comments' }, req);
+        return dbRemove({ redisKey: 'comments' }, req);
       }
       throw UNAUTHORISED_WRITE;
     });

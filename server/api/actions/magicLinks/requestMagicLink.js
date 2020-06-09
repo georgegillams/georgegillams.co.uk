@@ -1,8 +1,7 @@
-import { datumLoad } from '../datum';
-
 import sendMagicLinkEmail from './private/sendMagicLinkEmail';
 import magicLinksAllowedAttributes from './private/magicLinksAllowedAttributes';
 
+import { dbLoad } from 'utils/database';
 import { AuthError, NotFoundError } from 'utils/errors';
 import { find } from 'utils/find';
 import authentication from 'utils/authentication';
@@ -14,7 +13,7 @@ export default function getmagiclink(req) {
   return authentication(req)
     .then(user => {
       authenticatedUser = user;
-      return datumLoad({ redisKey: 'users' });
+      return dbLoad({ redisKey: 'users' });
     })
     .then(userData => {
       const { existingValue: userProfile } = find(

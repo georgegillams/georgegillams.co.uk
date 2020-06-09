@@ -11,7 +11,7 @@ import {
   FONT_SIZE_SM,
 } from 'utils/emails';
 import lockPromise from 'utils/lock';
-import { datumCreate } from 'api/actions/datum';
+import { dbCreate } from 'utils/database';
 
 export default function sendMagicLinkEmail(
   userProfile,
@@ -60,7 +60,7 @@ ${EMAIL_OUTER_END}`,
   };
 
   return lockPromise('magicLinks', () =>
-    datumCreate({ redisKey: 'magiclinks' }, { body: magicLink }).then(() =>
+    dbCreate({ redisKey: 'magiclinks' }, { body: magicLink }).then(() =>
       sendEmail(email),
     ),
   );

@@ -1,7 +1,7 @@
-import { datumLoad } from '../datum';
+import { dbLoad } from 'utils/database';
 
 export default function load() {
-  return datumLoad({
+  return dbLoad({
     redisKey: 'support',
     sortKey: 'lastUpdatedTimestamp',
   }).then(result => ({

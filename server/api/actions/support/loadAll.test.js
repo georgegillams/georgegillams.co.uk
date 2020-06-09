@@ -1,9 +1,8 @@
 #!/usr/bin/env node
 
-import { datumCreate } from '../datum';
-
 import loadAll from './loadAll.js';
 
+import { dbCreate } from 'utils/database';
 import {
   clearDatabaseCollection,
   createUsersWithSessions,
@@ -27,9 +26,9 @@ const createSomeValues = () => {
     deleted: true,
   };
 
-  return datumCreate({ redisKey: 'support' }, { body: support1 })
-    .then(() => datumCreate({ redisKey: 'support' }, { body: support2 }))
-    .then(() => datumCreate({ redisKey: 'support' }, { body: support3 }));
+  return dbCreate({ redisKey: 'support' }, { body: support1 })
+    .then(() => dbCreate({ redisKey: 'support' }, { body: support2 }))
+    .then(() => dbCreate({ redisKey: 'support' }, { body: support3 }));
 };
 
 test('load support unauthenticated - returns non-deleted values', () => {

@@ -1,9 +1,8 @@
 #!/usr/bin/env node
 
-import { datumLoad, datumCreate } from '../../datum';
-
 import performRestoration from './performRestoration.js';
 
+import { dbLoad, dbCreate } from 'utils/database';
 import {
   clearDatabaseCollection,
   createUsersWithSessions,
@@ -21,7 +20,7 @@ const createSomeValues = () => {
     browser: 'firefox',
   };
 
-  return datumCreate({ redisKey: 'analytics' }, { body: analytic1 });
+  return dbCreate({ redisKey: 'analytics' }, { body: analytic1 });
 };
 
 test('restore data - overwrites analytics without touching users', () => {
@@ -37,14 +36,14 @@ test('restore data - overwrites analytics without touching users', () => {
   return createUsersWithSessions()
     .then(() => createSomeValues())
     .then(() => performRestoration(testRestoreData))
-    .then(() => datumLoad({ redisKey: 'users' }))
+    .then(() => dbLoad({ redisKey: 'users' }))
     .then(users => {
       expect(users.length).toBe(2);
       expect(users[0].id).toBe('adminUser1');
       expect(users[1].id).toBe('nonAdminUser1');
       return true;
     })
-    .then(() => datumLoad({ redisKey: 'analytics' }))
+    .then(() => dbLoad({ redisKey: 'analytics' }))
     .then(analytics => {
       expect(analytics.length).toBe(1);
       expect(analytics[0].id).toBe('analytic1');

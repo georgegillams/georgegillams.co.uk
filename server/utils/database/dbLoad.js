@@ -21,7 +21,7 @@ const attachUNames = results =>
     return attachedResults;
   });
 
-export default function datumLoad(settings) {
+export default function dbLoad(settings) {
   // load all values
   // remove deleted
   // filter
@@ -62,7 +62,7 @@ export default function datumLoad(settings) {
 /*
   return new Promise(resolve => {
     if (settings.includeOwnerUname && settings.redisKey !== 'users') {
-      datumLoad({ redisKey: 'users' }).then(userData => {
+      dbLoad({ redisKey: 'users' }).then(userData => {
         redis.lrange(
           `${PROJECT_NAME}_${settings.redisKey}`,
           0,

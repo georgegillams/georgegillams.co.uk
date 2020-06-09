@@ -1,9 +1,8 @@
 #!/usr/bin/env node
 
-import { datumCreate, datumLoad } from '../datum';
-
 import update from './update.js';
 
+import { dbCreate, dbLoad } from 'utils/database';
 import { AuthError, NotFoundError } from 'utils/errors';
 import {
   clearDatabaseCollection,
@@ -30,10 +29,10 @@ const createSomeValues = () => {
     comment: 'Some comment 3',
   };
 
-  return datumCreate({ redisKey: 'comments' }, { body: comment1 })
-    .then(() => datumCreate({ redisKey: 'comments' }, { body: comment2 }))
+  return dbCreate({ redisKey: 'comments' }, { body: comment1 })
+    .then(() => dbCreate({ redisKey: 'comments' }, { body: comment2 }))
     .then(() =>
-      datumCreate(
+      dbCreate(
         { redisKey: 'comments', user: { id: 'nonAdminUser1' } },
         { body: comment3 },
       ),
@@ -57,7 +56,7 @@ test('update comment as admin - updates data', () => {
       expect(result).toBeTruthy();
       return true;
     })
-    .then(() => datumLoad({ redisKey: 'comments' }))
+    .then(() => dbLoad({ redisKey: 'comments' }))
     .then(comments => {
       expect(comments.length).toBe(3);
       expect(comments[0].id).toBe('comment1');
@@ -102,7 +101,7 @@ test('update own comment non-admin - updates data', () => {
   return createUsersWithSessions()
     .then(() => createSomeValues())
     .then(() => update(req))
-    .then(() => datumLoad({ redisKey: 'comments' }))
+    .then(() => dbLoad({ redisKey: 'comments' }))
     .then(comments => {
       expect(comments.length).toBe(3);
       expect(comments[0].id).toBe('comment1');
@@ -136,7 +135,7 @@ test('update other comment non-admin - throws auth error', () => {
       expect(err instanceof AuthError).toBeTruthy();
     })
     .finally(() =>
-      datumLoad({
+      dbLoad({
         redisKey: 'comments',
       }).then(dbResult => {
         expect(dbResult[1].id).toBe('comment2');
@@ -166,7 +165,7 @@ test('update comment unauthenticated - throws auth error', () => {
       expect(err instanceof AuthError).toBeTruthy();
     })
     .finally(() =>
-      datumLoad({
+      dbLoad({
         redisKey: 'comments',
       }).then(dbResult => {
         expect(dbResult[0].id).toBe('comment1');

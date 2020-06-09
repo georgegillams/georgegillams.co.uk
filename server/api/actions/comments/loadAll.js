@@ -1,7 +1,6 @@
-import { datumLoad } from '../datum';
-
 import commentsAllowedAttributes from './private/commentsAllowedAttributes';
 
+import { dbLoad } from 'utils/database';
 import authentication from 'utils/authentication';
 import reqSecure from 'utils/reqSecure';
 
@@ -9,7 +8,7 @@ export default function loadAll(req, params = {}) {
   reqSecure(req, commentsAllowedAttributes);
   return authentication(req)
     .then(user =>
-      datumLoad({
+      dbLoad({
         redisKey: 'comments',
         includeOwnerUname: true,
         includeDeleted: user && user.admin,

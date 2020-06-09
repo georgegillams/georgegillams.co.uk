@@ -1,8 +1,8 @@
-import { datumCreate } from '../datum';
 import { InvalidInputError } from '../../../utils/errors';
 
 import paymentsAllowedAttributes from './private/paymentsAllowedAttributes';
 
+import { dbCreate } from 'utils/database';
 import lockPromise from 'utils/lock';
 import authentication from 'utils/authentication';
 import reqSecure from 'utils/reqSecure';
@@ -17,7 +17,7 @@ export default function create(req) {
       if (req.body.amount > 1000000) {
         throw new InvalidInputError('Payments over £10,000 are not possible.');
       }
-      return datumCreate({ redisKey: 'payments', user }, req);
+      return dbCreate({ redisKey: 'payments', user }, req);
     }),
   );
 }

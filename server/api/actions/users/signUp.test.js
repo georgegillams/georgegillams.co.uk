@@ -1,9 +1,8 @@
 #!/usr/bin/env node
 
-import { datumLoadSingle } from '../datum';
-
 import signUp from './signUp.js';
 
+import { dbLoadSingle } from 'utils/database';
 import { InvalidInputError } from 'utils/errors.js';
 
 test('allows a user to be created', () => {
@@ -35,7 +34,7 @@ test('allows a user to be created', () => {
       return true;
     })
     .then(() =>
-      datumLoadSingle({
+      dbLoadSingle({
         redisKey: 'users',
         filter: u => u.id === result.id,
       }),

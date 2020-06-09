@@ -1,7 +1,6 @@
-import { datumCreate } from '../datum';
-
 import analyticsAllowedAttributes from './private/analyticsAllowedAttributes';
 
+import { dbCreate } from 'utils/database';
 import lockPromise from 'utils/lock';
 import authentication from 'utils/authentication';
 import reqSecure from 'utils/reqSecure';
@@ -15,7 +14,7 @@ export default function create(req) {
         ipAddress = req.headers['x-forwarded-for'];
       }
       req.body.ipAddress = ipAddress;
-      return datumCreate({ redisKey: 'analytics', user }, req);
+      return dbCreate({ redisKey: 'analytics', user }, req);
     }),
   );
 }

@@ -1,5 +1,4 @@
-import { datumCreate } from '../../datum';
-
+import { dbCreate } from 'utils/database';
 import lockPromise from 'utils/lock';
 import { generateKey } from 'utils/hash';
 import setContentLastUpdatedTimestamp from 'utils/setContentLastUpdatedTimestamp';
@@ -21,7 +20,7 @@ export default function login(userProfile) {
         return session;
       })
       .then(createdSession =>
-        datumCreate({ redisKey: 'sessions' }, { body: createdSession }),
+        dbCreate({ redisKey: 'sessions' }, { body: createdSession }),
       )
       .then(() => setContentLastUpdatedTimestamp())
       .then(() => session.sessionKey);
