@@ -1,5 +1,7 @@
 require('babel-polyfill');
 
+const { NODE_ENV, PROJECT_UNDER_TEST, PORT } = process.env;
+
 const environment = {
   development: {
     isProduction: false,
@@ -7,13 +9,22 @@ const environment = {
   production: {
     isProduction: true,
   },
-}[process.env.NODE_ENV || 'development'];
+}[NODE_ENV || 'development'];
+
+const domain = 'georgegillams.co.uk';
+const port = PORT || 3000;
+const siteUrl =
+  NODE_ENV === 'development' || PROJECT_UNDER_TEST
+    ? `http://localhost:${port}`
+    : `https://www.${domain}`;
+const apiEndpoint = `${siteUrl}/api`;
 
 module.exports = {
   host: process.env.HOST || 'localhost',
-  port: process.env.PORT || 3000,
-  apiHost: process.env.APIHOST || 'localhost',
-  apiPort: process.env.APIPORT,
+  port,
+  domain,
+  siteUrl,
+  apiEndpoint,
   app: {
     title: 'George Gillams - open source software engineer',
     head: {

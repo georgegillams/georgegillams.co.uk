@@ -1,6 +1,7 @@
 import crypto from 'crypto';
 
-import { SITE_URL, EMAIL_VERIFICATION_ENABLED } from 'helpers/constants';
+import { EMAIL_VERIFICATION_ENABLED } from 'helpers/constants';
+import appConfig from 'helpers/appConfig';
 import {
   EMAIL_OUTER,
   EMAIL_LOGO_HEADER,
@@ -24,7 +25,7 @@ export default function sendEmailVerificationEmail(user) {
     expiry: oneDaysTime,
     key: crypto.randomBytes(20).toString('hex'),
   };
-  const emailVerificationLink = `${SITE_URL}/email-verification?token=${verificationLink.key}`;
+  const emailVerificationLink = `${appConfig.siteUrl}/email-verification?token=${verificationLink.key}`;
   // Send the magic link URL to the email address of the user
   const email = {
     from: EMAIL_SENDER_ADDRESS,

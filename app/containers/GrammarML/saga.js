@@ -28,9 +28,9 @@ import {
   makeSelectNewData,
 } from './selectors';
 
+import appConfig from 'helpers/appConfig';
 import { pushMessage } from 'containers/RequestStatusWrapper/actions';
 import { COMMUNICATION_ERROR_MESSAGE } from 'helpers/constants';
-import apiStructure from 'helpers/apiStructure';
 import request from 'utils/request';
 
 const loadDataSuccessMessage = {
@@ -70,7 +70,7 @@ const dataCreateErrorMessage = {
 };
 
 export function* doLoadData() {
-  const dataRequestURL = `${API_ENDPOINT}/grammarML/load`;
+  const dataRequestURL = `${appConfig.apiEndpoint}/grammarML/load`;
 
   try {
     const dataResult = yield call(request, dataRequestURL, {
@@ -91,7 +91,7 @@ export function* doLoadData() {
 
 export function* doMeasurePerformance() {
   const testParameters = yield select(makeSelectTestParameters());
-  const testUrl = `${API_ENDPOINT}/grammarML/testPerformance`;
+  const testUrl = `${appConfig.apiEndpoint}/grammarML/testPerformance`;
 
   try {
     const testResult = yield call(request, testUrl, {
@@ -116,7 +116,7 @@ export function* doMeasurePerformance() {
 
 export function* doTestData() {
   const testData = yield select(makeSelectTestData());
-  const testUrl = `${API_ENDPOINT}/grammarML/testSentence`;
+  const testUrl = `${appConfig.apiEndpoint}/grammarML/testSentence`;
 
   try {
     const testResult = yield call(request, testUrl, {
@@ -141,7 +141,7 @@ export function* doTestData() {
 
 export function* doDeleteData() {
   const dataToDelete = yield select(makeSelectDataToDelete());
-  const dataDeleteUrl = `${API_ENDPOINT}/grammarML/remove`;
+  const dataDeleteUrl = `${appConfig.apiEndpoint}/grammarML/remove`;
 
   try {
     const dataDeleteResult = yield call(request, dataDeleteUrl, {
@@ -166,7 +166,7 @@ export function* doDeleteData() {
 }
 
 export function* doDeleteAllData() {
-  const dataDeleteUrl = `${API_ENDPOINT}/grammarML/removeAll`;
+  const dataDeleteUrl = `${appConfig.apiEndpoint}/grammarML/removeAll`;
 
   try {
     const dataDeleteResult = yield call(request, dataDeleteUrl, {
@@ -192,7 +192,7 @@ export function* doDeleteAllData() {
 
 export function* doCreateData() {
   const newData = yield select(makeSelectNewData());
-  const dataDeleteUrl = `${API_ENDPOINT}/grammarML/create`;
+  const dataDeleteUrl = `${appConfig.apiEndpoint}/grammarML/create`;
 
   try {
     const dataCreateResult = yield call(request, dataDeleteUrl, {

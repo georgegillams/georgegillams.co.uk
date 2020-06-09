@@ -6,24 +6,24 @@ import BpkImage, {
   withLoadingBehavior,
 } from 'bpk-component-image';
 import { cssModules } from 'gg-components/helpers/cssModules';
-
 import { PageTitle } from 'gg-components/Typography';
 import { LoadingIndicator } from 'gg-components/LoadingIndicator';
 import { Button } from 'gg-components/Button';
 import { CodeInline } from 'gg-components/Code';
 import { DebugObject } from 'gg-components/Auth';
+import { Redirect } from 'gg-components/Redirect';
+
 import { LoginForm } from 'components/Forms';
 import { CookiesOnly } from 'components/Sessions';
-import { Redirect } from 'gg-components/Redirect';
 import {
   REDIRECT_REGEX,
   SORT_CODE_REGEX,
   INT_REGEX,
   STRING_REGEX,
   DECIMAL_REGEX,
-  SITE_URL,
 } from 'helpers/constants';
 import STYLES from 'containers/pages.scss';
+import appConfig from 'helpers/appConfig';
 
 const getClassName = cssModules(STYLES); // REGEX_REPLACED
 
@@ -69,7 +69,7 @@ export default class Login extends React.Component {
       return (
         <Redirect
           className={outerClassNameFinal.join(' ')}
-          to={`${SITE_URL}/${redirectLocation}`}
+          to={`${appConfig.siteUrl}/${redirectLocation}`}
           name="Logged in"
         />
       );

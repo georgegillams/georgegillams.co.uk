@@ -75,7 +75,7 @@ test('create analytics authenticated - adds data to collection', () => {
   const req = {
     cookies: {},
     headers: {
-      apikey: 'asdfghjkl',
+      apikey: 'secret_api_key',
     },
     connection: { remoteAddress: 'remoteAddress3' },
     body: {

@@ -1,6 +1,6 @@
 import crypto from 'crypto';
 
-import { SITE_URL } from 'helpers/constants';
+import appConfig from 'helpers/appConfig';
 import {
   EMAIL_OUTER,
   EMAIL_LOGO_HEADER,
@@ -25,7 +25,7 @@ export default function sendMagicLinkEmail(
     expiry: oneHoursTime,
     key: crypto.randomBytes(20).toString('hex'),
   };
-  let magicLinkUrl = `${SITE_URL}/magic-login?token=${magicLink.key}`;
+  let magicLinkUrl = `${appConfig.siteUrl}/magic-login?token=${magicLink.key}`;
   if (loginRedirect) {
     magicLinkUrl += `&redirect=${loginRedirect}`;
   }
