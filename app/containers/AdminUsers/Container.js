@@ -1,19 +1,29 @@
 import React, { Fragment } from 'react';
 import { Link } from 'react-router-dom';
-
 import PropTypes from 'prop-types';
-import { Section } from 'gg-components/Typography';
+import {
+  Section,
+  Paragraph,
+  PageTitle,
+  SubSection,
+} from 'gg-components/Typography';
 import { Select, Input } from 'gg-components/Input';
 import { Helmet } from 'react-helmet';
 import { cssModules } from 'gg-components/helpers/cssModules';
 import queryString from 'query-string';
+import { Button } from 'gg-components/Button';
+import { Card } from 'gg-components/Cards';
+import {
+  DebugObject,
+  APIEntity,
+  AdminOnly,
+  LoadingCover,
+} from 'gg-components/Auth';
+import { Checkbox } from 'gg-components/Checkbox';
 
 import Skeleton from './Skeleton';
 import AdminUsersAPIEntity from './AdminUsersAPIEntity';
 
-import { Button } from 'gg-components/Button';
-import { Card } from 'gg-components/Cards';
-import { Paragraph, PageTitle, SubSection } from 'gg-components/Typography';
 import { SplitDetailView } from 'components/SplitDetailView';
 import {
   STRING_REGEX,
@@ -22,16 +32,9 @@ import {
   NAME_REGEX,
   PASSWORD_REGEX,
   DECIMAL_REGEX,
-  API_ENDPOINT,
 } from 'helpers/constants';
-import {
-  DebugObject,
-  APIEntity,
-  AdminOnly,
-  LoadingCover,
-} from 'gg-components/Auth';
+import appConfig from 'helpers/appConfig';
 import HelperFunctions from 'helpers/HelperFunctions';
-import { Checkbox } from 'gg-components/Checkbox';
 import STYLES from 'containers/pages.scss';
 
 const getClassName = cssModules(STYLES);
@@ -75,9 +78,9 @@ export default class AdminUsers extends React.Component {
   };
 
   componentWillReceiveProps(newProps) {
-    const location = newProps.location;
+    const { location } = newProps;
     if (location) {
-      const search = location.search;
+      const { search } = location;
       if (search) {
         const parsedSearch = queryString.parse(search);
         const highlightId = parsedSearch.highlight;
@@ -173,7 +176,7 @@ export default class AdminUsers extends React.Component {
 
     const listView = (
       <div>
-        <Link to={`/admin/users?highlight=new`}>
+        <Link to="/admin/users?highlight=new">
           <Card className={getClassName('pages__component')}>
             <SubSection name="New +" anchor={false} noPadding />
           </Card>
@@ -186,7 +189,7 @@ export default class AdminUsers extends React.Component {
                 entity={n}
                 highlighted={this.state.highlightId === n.id}
                 className={getClassName('pages__component')}
-              ></AdminUsersAPIEntity>
+              />
             </Link>
           ))}
       </div>
@@ -276,7 +279,7 @@ export default class AdminUsers extends React.Component {
             <br />
             <br />
             {showFilters && (
-              <Fragment>
+              <>
                 <Checkbox
                   label="Show deleted"
                   name="filterDeleted"
@@ -330,20 +333,19 @@ export default class AdminUsers extends React.Component {
                   id="filterName"
                   value={this.state.filterName}
                   onChange={event =>
-                    this.setState({ filterName: event.target.value })
-                  }
+                    this.setState({ filterName: event.target.value })}
                 />
-              </Fragment>
+              </>
             )}
             {users && (
-              <Fragment>
+              <>
                 <br />
                 <Paragraph>
                   Showing {filteredUsers.length} of {users.length} users
                 </Paragraph>
                 <br />
                 <br />
-              </Fragment>
+              </>
             )}
           </PageTitle>
           <SplitDetailView
@@ -357,7 +359,7 @@ export default class AdminUsers extends React.Component {
     );
 
     return (
-      <Fragment>
+      <>
         <Helmet title="Admin - users" />
         <LoadingCover
           loadingSkeleton={Skeleton}
@@ -379,7 +381,7 @@ export default class AdminUsers extends React.Component {
             loadUserError,
           }}
         />
-      </Fragment>
+      </>
     );
   }
 }

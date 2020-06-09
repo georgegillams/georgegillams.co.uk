@@ -50,24 +50,15 @@ const CHECK_FOR_NEW_CONTENT_INTERVAL = 1000;
 const COMPONENT_RELOAD_INTERVAL = CHECK_FOR_NEW_CONTENT_INTERVAL / 2;
 const EMAIL_VERIFICATION_ENABLED = true;
 const GG_EMAIL = 'hello@georgegillams.co.uk';
-const { PROJECT_UNDER_TEST } = process.env;
-const PORT = process.env.PORT || 3000;
+const { PROJECT_UNDER_TEST, STRIPE_SECRET_API_KEY, NODE_ENV } = process.env;
 const AWS = process.env.AWS === 'true';
-const { NODE_ENV } = process.env;
 const SESSION_SECRET =
   NODE_ENV === 'development' || PROJECT_UNDER_TEST
     ? 'TEST'
     : process.env.SESSION_SECRET;
-const DOMAIN = 'georgegillams.co.uk';
-const SITE_URL =
-  NODE_ENV === 'development' || PROJECT_UNDER_TEST
-    ? `http://localhost:${PORT}`
-    : `https://www.${DOMAIN}`;
-const API_ENDPOINT = `${SITE_URL}/api`;
 const STRIPE_PUBLIC_API_KEY = process.env.STRIPE_PUBLIC_API_KEY
   ? process.env.STRIPE_PUBLIC_API_KEY
   : 'pk_test_cgQazYLEKCzNFGFuRfq0TL8N00Cj3LIfai';
-const { STRIPE_SECRET_API_KEY } = process.env;
 const USERNAMES_ENABLED = PROJECT_NAME !== 'EPICC';
 const REDIS_INFORMATION_STORES = [
   'analytics',
@@ -91,7 +82,6 @@ const REDIS_STORES = [
 
 export {
   ANYTHING_REGEX,
-  API_ENDPOINT,
   APP_VERSION,
   AWS,
   CARD_NUMBER_REGEX,
@@ -106,7 +96,6 @@ export {
   CVV_REGEX,
   DATE_REGEX,
   DECIMAL_REGEX,
-  DOMAIN,
   EMAIL_REGEX,
   EMAIL_VERIFICATION_ENABLED,
   EXPIRY_REGEX,
@@ -121,14 +110,12 @@ export {
   NODE_ENV,
   NON_EMOJI_REGEX,
   PASSWORD_REGEX,
-  PORT,
   PROJECT_NAME,
   PROJECT_UNDER_TEST,
   REDIRECT_REGEX,
   REDIS_INFORMATION_STORES,
   REDIS_STORES,
   SESSION_SECRET,
-  SITE_URL,
   SORT_CODE_REGEX,
   STRING_REGEX,
   STRIPE_PUBLIC_API_KEY,
@@ -144,7 +131,6 @@ export {
 };
 export default {
   ANYTHING_REGEX,
-  API_ENDPOINT,
   APP_VERSION,
   AWS,
   CARD_NUMBER_REGEX,
@@ -159,7 +145,6 @@ export default {
   CVV_REGEX,
   DATE_REGEX,
   DECIMAL_REGEX,
-  DOMAIN,
   EMAIL_REGEX,
   EMAIL_VERIFICATION_ENABLED,
   EXPIRY_REGEX,
@@ -174,14 +159,12 @@ export default {
   NODE_ENV,
   NON_EMOJI_REGEX,
   PASSWORD_REGEX,
-  PORT,
   PROJECT_NAME,
   PROJECT_UNDER_TEST,
   REDIRECT_REGEX,
   REDIS_INFORMATION_STORES,
   REDIS_STORES,
   SESSION_SECRET,
-  SITE_URL,
   SORT_CODE_REGEX,
   STRING_REGEX,
   STRIPE_PUBLIC_API_KEY,

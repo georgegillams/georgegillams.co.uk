@@ -1,4 +1,4 @@
-import { API_ENDPOINT } from './constants';
+import appConfig from 'helpers/appConfig';
 
 const GET = 'GET';
 const POST = 'POST';
@@ -79,7 +79,9 @@ const apiStructure = {
 };
 
 Object.keys(apiStructure).forEach(key => {
-  apiStructure[key].fullPath = `${API_ENDPOINT}${apiStructure[key].path}`;
+  apiStructure[
+    key
+  ].fullPath = `${appConfig.apiEndpoint}${apiStructure[key].path}`;
 });
 
 export default apiStructure;

@@ -19,14 +19,9 @@ import greasemonkey from './greasemonkey';
 import redirectNonWWW from './redirectNonWWW';
 import setup from './middlewares/frontendMiddleware';
 
-import {
-  PORT,
-  DOMAIN,
-  NODE_ENV,
-  SESSION_SECRET,
-  SITE_URL,
-} from 'helpers/constants';
+import { NODE_ENV, SESSION_SECRET } from 'helpers/constants';
 import logger from 'utils/logger';
+import appConfig from 'helpers/appConfig';
 
 const app = express();
 const server = new http.Server(app);
@@ -44,7 +39,7 @@ app.use(helmet());
 // Production security - cors
 app.use(
   cors({
-    origin: SITE_URL,
+    origin: appConfig.siteUrl,
   }),
 );
 
@@ -88,7 +83,12 @@ app.use(
     secret: SESSION_SECRET,
     resave: false,
     saveUninitialized: false,
-    cookie: { secure: true, httpOnly: true, domain: DOMAIN, maxAge: 60000 },
+    cookie: {
+      secure: true,
+      httpOnly: true,
+      domain: appConfig.domain,
+      maxAge: 60000,
+    },
   }),
 );
 app.use(bodyParser.json());
@@ -112,9 +112,9 @@ const host = customHost || null; // Let http.Server use its default IPv6/4 host
 const prettyHost = customHost || 'localhost';
 
 // Start your app.
-app.listen(PORT, host, err => {
+app.listen(appConfig.port, host, err => {
   if (err) {
     return logger.error(err.message);
   }
-  logger.appStarted(PORT, prettyHost);
+  logger.appStarted(appConfig.port, prettyHost);
 });

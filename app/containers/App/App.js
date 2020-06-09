@@ -5,10 +5,9 @@ import { cssModules } from 'gg-components/helpers/cssModules';
 import { Footer } from 'gg-components/Footer';
 import { Redirect } from 'gg-components/Redirect';
 
-import appConfig from '../../../config/app-config';
-
 import STYLES from './style.scss';
 
+import appConfig from 'helpers/appConfig';
 import HelperFunctions from 'helpers/HelperFunctions';
 import ScrollToTop from 'components/ScrollToTop';
 import PageContainer from 'containers/PageContainer';
@@ -51,7 +50,6 @@ import WorkEPICCPage from 'containers/WorkEPICC/Loadable';
 import WorkSideProjectsPage from 'containers/WorkSideProjects/Loadable';
 import Konami from 'containers/Konami';
 import MonzoPots from 'containers/MonzoPots/Loadable';
-import { SITE_URL } from 'helpers/constants';
 import redirects from 'helpers/redirects';
 
 const getClassName = cssModules(STYLES); // REGEX_REPLACED
@@ -59,7 +57,7 @@ const getClassName = cssModules(STYLES); // REGEX_REPLACED
 const cleanWindowLocation = location => {
   let result = location;
   result = location.split('http://localhost:3000')[1];
-  result = location.split(SITE_URL)[1];
+  result = location.split(appConfig.siteUrl)[1];
   return result;
 };
 
