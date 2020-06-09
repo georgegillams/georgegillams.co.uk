@@ -1,3 +1,4 @@
+// TODO Move to message
 const GENERIC_ERROR_MESSAGE = {
   type: 'error',
   message: 'Something went wrong. Please try again later.',
@@ -6,6 +7,9 @@ const COMMUNICATION_ERROR_MESSAGE = {
   type: 'error',
   message: 'Our servers are poorly. Please try again later.',
 };
+// TODO end
+
+// TODO Move to client constants
 const DECIMAL_REGEX = /^[0-9\\.]*$/gi;
 const INT_REGEX = /^[0-9]*$/gi;
 const SORT_CODE_REGEX = /^[0-9\\.-]*$/gi;
@@ -25,39 +29,20 @@ const CVV_REGEX = /.*/gi; // TODO UPDATE
 const EXPIRY_REGEX = /.*/gi; // TODO UPDATE
 const DATE_REGEX = /.*/gi; // TODO UPDATE
 const ANYTHING_REGEX = /.*/gi;
-const TICKET_COST_EB_ONE_DAY = 2000;
-const TICKET_COST_R_ONE_DAY = 2500;
-const TICKET_COST_EB_TWO_DAY = 4500;
-const TICKET_COST_R_TWO_DAY = 5000;
-const TICKET_SALE_END = new Date(2019, 2, 20, 21, 0, 0).getTime();
-const CONFERENCE_DAY_1_START = new Date(2019, 2, 23, 1, 0, 0).getTime();
-const CONFERENCE_DAY_1_END = new Date(2019, 2, 23, 23, 0, 0).getTime();
-const CONFERENCE_DAY_2_START = new Date(2019, 2, 24, 1, 0, 0).getTime();
-const CONFERENCE_DAY_2_END = new Date(2019, 2, 24, 23, 0, 0).getTime();
-const APP_VERSION = '4.0.0';
-const TICKET_RESERVATION_LENGTH = 1; // 1 hour
-const COOKIE_NAMES = [
-  'session',
-  'version',
-  'connect.sid',
-  'io',
-  'sessionId',
-  'loggedInAdmin',
-  'userComments',
-];
+// TODO end
+
+// TODO Move to client constants
 const CHECK_FOR_NEW_CONTENT_INTERVAL = 1000;
 const COMPONENT_RELOAD_INTERVAL = CHECK_FOR_NEW_CONTENT_INTERVAL / 2;
-const EMAIL_VERIFICATION_ENABLED = true;
-const GG_EMAIL = 'hello@georgegillams.co.uk';
-const { PROJECT_UNDER_TEST, STRIPE_SECRET_API_KEY, NODE_ENV } = process.env;
-const AWS = process.env.AWS === 'true';
+// TODO end
+
+// TODO Move to server constants
+const { NODE_ENV, PROJECT_UNDER_TEST } = process.env;
 const SESSION_SECRET =
   NODE_ENV === 'development' || PROJECT_UNDER_TEST
     ? 'TEST'
     : process.env.SESSION_SECRET;
-const STRIPE_PUBLIC_API_KEY = process.env.STRIPE_PUBLIC_API_KEY
-  ? process.env.STRIPE_PUBLIC_API_KEY
-  : 'pk_test_cgQazYLEKCzNFGFuRfq0TL8N00Cj3LIfai';
+
 const REDIS_INFORMATION_STORES = [
   'analytics',
   'blogs',
@@ -77,28 +62,24 @@ const REDIS_STORES = [
   'magiclinks',
   'sessions',
 ];
+// TODO end
+
+const STRIPE_PUBLIC_API_KEY = process.env.STRIPE_PUBLIC_API_KEY
+  ? process.env.STRIPE_PUBLIC_API_KEY
+  : 'pk_test_cgQazYLEKCzNFGFuRfq0TL8N00Cj3LIfai';
 
 export {
   ANYTHING_REGEX,
-  APP_VERSION,
-  AWS,
   CARD_NUMBER_REGEX,
   CHECK_FOR_NEW_CONTENT_INTERVAL,
   COMMUNICATION_ERROR_MESSAGE,
   COMPONENT_RELOAD_INTERVAL,
-  CONFERENCE_DAY_1_END,
-  CONFERENCE_DAY_1_START,
-  CONFERENCE_DAY_2_END,
-  CONFERENCE_DAY_2_START,
-  COOKIE_NAMES,
   CVV_REGEX,
   DATE_REGEX,
   DECIMAL_REGEX,
   EMAIL_REGEX,
-  EMAIL_VERIFICATION_ENABLED,
   EXPIRY_REGEX,
   GENERIC_ERROR_MESSAGE,
-  GG_EMAIL,
   ID_REGEX,
   INT_REGEX,
   MD_COMPLETE_REGEX,
@@ -116,36 +97,20 @@ export {
   SORT_CODE_REGEX,
   STRING_REGEX,
   STRIPE_PUBLIC_API_KEY,
-  STRIPE_SECRET_API_KEY,
-  TICKET_COST_EB_ONE_DAY,
-  TICKET_COST_EB_TWO_DAY,
-  TICKET_COST_R_ONE_DAY,
-  TICKET_COST_R_TWO_DAY,
-  TICKET_RESERVATION_LENGTH,
-  TICKET_SALE_END,
   USERNAME_REGEX,
 };
 export default {
   ANYTHING_REGEX,
-  APP_VERSION,
-  AWS,
   CARD_NUMBER_REGEX,
   CHECK_FOR_NEW_CONTENT_INTERVAL,
   COMMUNICATION_ERROR_MESSAGE,
   COMPONENT_RELOAD_INTERVAL,
-  CONFERENCE_DAY_1_END,
-  CONFERENCE_DAY_1_START,
-  CONFERENCE_DAY_2_END,
-  CONFERENCE_DAY_2_START,
-  COOKIE_NAMES,
   CVV_REGEX,
   DATE_REGEX,
   DECIMAL_REGEX,
   EMAIL_REGEX,
-  EMAIL_VERIFICATION_ENABLED,
   EXPIRY_REGEX,
   GENERIC_ERROR_MESSAGE,
-  GG_EMAIL,
   ID_REGEX,
   INT_REGEX,
   MD_COMPLETE_REGEX,
@@ -163,12 +128,5 @@ export default {
   SORT_CODE_REGEX,
   STRING_REGEX,
   STRIPE_PUBLIC_API_KEY,
-  STRIPE_SECRET_API_KEY,
-  TICKET_COST_EB_ONE_DAY,
-  TICKET_COST_EB_TWO_DAY,
-  TICKET_COST_R_ONE_DAY,
-  TICKET_COST_R_TWO_DAY,
-  TICKET_RESERVATION_LENGTH,
-  TICKET_SALE_END,
   USERNAME_REGEX,
 };

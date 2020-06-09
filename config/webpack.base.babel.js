@@ -17,7 +17,6 @@ const {
   STRIPE_PUBLIC_API_KEY,
   PROJECT_UNDER_TEST,
   PORT,
-  AWS,
 } = process.env;
 
 module.exports = options => ({
@@ -135,7 +134,6 @@ module.exports = options => ({
         STRIPE_PUBLIC_API_KEY: JSON.stringify(STRIPE_PUBLIC_API_KEY),
         PROJECT_UNDER_TEST: JSON.stringify(PROJECT_UNDER_TEST),
         PORT: JSON.stringify(PORT),
-        AWS: JSON.stringify(AWS),
       },
     }),
   ]),

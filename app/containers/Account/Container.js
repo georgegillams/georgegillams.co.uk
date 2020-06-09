@@ -8,7 +8,6 @@ import { DebugObject, LoggedInOnly, LoadingCover } from 'gg-components/Auth';
 import Skeleton from './Skeleton';
 
 import { CookiesOnly } from 'components/Sessions';
-import { EMAIL_VERIFICATION_ENABLED } from 'helpers/constants';
 
 export default class Account extends React.Component {
   render() {
@@ -46,7 +45,7 @@ export default class Account extends React.Component {
               {user && user.uname && <div>{`Display name: ${user.uname}`}</div>}
               <br />
             </Paragraph>
-            {user && !user.emailVerified && EMAIL_VERIFICATION_ENABLED && (
+            {user && !user.emailVerified && (
               <>
                 <Button large onClick={requestVerificationEmail}>
                   Request new verification email

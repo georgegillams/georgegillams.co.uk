@@ -9,6 +9,8 @@ import {
   CardExpiryElement,
   CardCVCElement,
 } from 'react-stripe-elements';
+import { cssModules } from 'gg-components/helpers/cssModules';
+import { FormBuilder } from 'gg-components/FormBuilder';
 
 import {
   STRING_REGEX,
@@ -22,12 +24,8 @@ import {
   NAME_REGEX,
   TICKET_COST,
 } from 'helpers/constants';
-
-import { cssModules } from 'gg-components/helpers/cssModules';
-
-import { FormBuilder } from 'gg-components/FormBuilder';
-
 import STYLES from 'components/Forms/forms.scss';
+
 const getClassName = cssModules(STYLES);
 
 class PaymentForm extends React.Component {
@@ -102,11 +100,11 @@ class PaymentForm extends React.Component {
         </label>
         <CardCVCElement className={inputClassName} />
         {preSubmitText && (
-          <Fragment>
+          <>
             <div className={getClassName('forms__component')}>
               {preSubmitText}
             </div>
-          </Fragment>
+          </>
         )}
         <Button
           disabled={disabled}

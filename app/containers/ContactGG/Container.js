@@ -1,15 +1,14 @@
 import React, { Component } from 'react';
 import Helmet from 'react-helmet';
 import { cssModules } from 'gg-components/helpers/cssModules';
-
-import PAGES_STYLES from '../pages.scss';
-import STYLES from './contact.scss';
-
 import { InfoCell, INFO_CELL_STYLES } from 'gg-components/InfoCell';
 import withScroll from 'gg-components/ScrollContainer/withScroll.js';
 import { SubSection, TextLink, PageTitle } from 'gg-components/Typography';
 import { Button } from 'gg-components/Button';
-import { GG_EMAIL } from 'helpers/constants';
+
+import PAGES_STYLES from '../pages.scss';
+
+import STYLES from './contact.scss';
 import facebookLogo from './facebook.svg';
 import twitterLogo from './twitter.svg';
 import linkedinLogo from './linkedin.svg';
@@ -93,7 +92,7 @@ export default class Contact extends Component {
               title="Email"
               content={
                 <TextLink href="mailto:hello@georgegillams.co.uk" external>
-                  Email {GG_EMAIL}
+                  Email hello@georgegillams.co.uk
                 </TextLink>
               }
               aux={

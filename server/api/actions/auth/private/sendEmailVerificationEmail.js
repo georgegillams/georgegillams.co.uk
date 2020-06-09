@@ -1,6 +1,5 @@
 import crypto from 'crypto';
 
-import { EMAIL_VERIFICATION_ENABLED } from 'helpers/constants';
 import appConfig from 'helpers/appConfig';
 import {
   EMAIL_OUTER,
@@ -15,9 +14,6 @@ import lockPromise from 'utils/lock';
 import { dbCreate } from 'utils/database';
 
 export default function sendEmailVerificationEmail(user) {
-  if (!EMAIL_VERIFICATION_ENABLED) {
-    return Promise.resolve();
-  }
   const now = new Date();
   const oneDaysTime = new Date(now.getTime() + 24 * 1000 * 60 * 60);
   const verificationLink = {
