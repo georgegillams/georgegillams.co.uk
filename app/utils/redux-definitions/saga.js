@@ -4,7 +4,7 @@ import { pushMessage } from 'containers/RequestStatusWrapper/actions';
 import request from 'utils/request';
 import { COMMUNICATION_ERROR_MESSAGE } from 'helpers/constants';
 
-export function* sagaHelper(
+function* sagaHelper(
   requestURL,
   requestParams,
   registerErrorAction,
@@ -36,3 +36,6 @@ export function* sagaHelper(
     yield put(pushMessage(COMMUNICATION_ERROR_MESSAGE));
   }
 }
+
+export default sagaHelper;
+export { sagaHelper };

@@ -2,7 +2,8 @@
 
 // eslint-disable-next-line
 import { fromJS } from 'immutable';
-import inferPropertiesFromInitialState, {
+import {
+  inferPropertiesFromInitialState,
   getInitialState,
 } from './reducers.js';
 

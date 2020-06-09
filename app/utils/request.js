@@ -8,18 +8,15 @@ import 'whatwg-fetch';
  * @return {object}          The parsed JSON from the request
  */
 function parseJSON(response) {
-  return new Promise(res =>
-    response.json().then(result => {
-      if (result.length !== undefined) {
-        // LEGACY
-        // result is array, so we can't extend it with additional data
-        res(result);
-        // TODO res({ data: result, status: response.status });
-      } else {
-        res({ ...result, status: response.status });
-      }
-    }),
-  );
+  return response.json().then(result => {
+    if (result.length !== undefined) {
+      // LEGACY
+      // result is array, so we can't extend it with additional data
+      return result;
+      // TODO res({ data: result, status: response.status });
+    }
+    return { ...result, status: response.status };
+  });
 }
 
 /**
