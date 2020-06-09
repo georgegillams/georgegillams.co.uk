@@ -13,6 +13,7 @@ import HelperFunctions from 'helpers/HelperFunctions';
 import ScrollToTop from 'components/ScrollToTop';
 import PageContainer from 'containers/PageContainer';
 import AccountPage from 'containers/Account/Loadable';
+import ApiDocsPage from 'containers/ApiDocs/Loadable';
 import AdminPage from 'containers/Admin/Loadable';
 import AdminBlogs from 'containers/AdminBlogs/Loadable';
 import AdminNotifications from 'containers/AdminNotifications/Loadable';
@@ -168,6 +169,7 @@ const App = () => (
           />
           <Route path="/travel/:id" component={BlogViewer} />
           <Route path="/ml/grammar" component={GrammarML} />
+          <Route path="/api-docs" component={ApiDocsPage} />
           <Route path="" component={NotFoundPage} />
         </Switch>
       </PageContainer>
