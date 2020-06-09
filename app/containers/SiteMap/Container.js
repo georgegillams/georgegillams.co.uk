@@ -186,6 +186,8 @@ export default class SiteMap extends React.Component {
               className={getClassName('pages__site-map-item')}
               name="API"
             >
+              <TextLink href="/api-docs">API docs</TextLink>
+              <br />
               <TextLink external href="/greasemonkey/find_backpack_components">
                 /greasemonkey/find_backpack_components{' '}
               </TextLink>
