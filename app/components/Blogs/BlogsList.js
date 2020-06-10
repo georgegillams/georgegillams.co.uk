@@ -3,7 +3,6 @@ import PropTypes from 'prop-types';
 import { cssModules } from 'gg-components/helpers/cssModules';
 
 import BlogCard from './BlogCard';
-
 import STYLES from './blogs-list.scss';
 
 const getClassName = cssModules(STYLES);

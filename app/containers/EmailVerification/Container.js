@@ -1,23 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Helmet } from 'react-helmet';
-import BpkImage, {
-  withLazyLoading,
-  withLoadingBehavior,
-} from 'bpk-component-image';
-import { cssModules } from 'gg-components/helpers/cssModules';
 import { PageTitle } from 'gg-components/Typography';
-import { LoadingIndicator } from 'gg-components/LoadingIndicator';
-import { Button } from 'gg-components/Button';
-import { CodeInline } from 'gg-components/Code';
 import { DebugObject } from 'gg-components/Auth';
 import { Redirect } from 'gg-components/Redirect';
-
-import { LoginForm } from 'components/Forms';
-import { CookiesOnly } from 'components/Sessions';
-import STYLES from 'containers/pages.scss';
-
-const getClassName = cssModules(STYLES);
 
 export default class EmailVerification extends React.Component {
   componentDidMount = () => {

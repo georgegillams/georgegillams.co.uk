@@ -1,13 +1,9 @@
-import React, { Fragment } from 'react';
+import React from 'react';
 import PropTypes from 'prop-types';
 import { Helmet } from 'react-helmet';
 import { cssModules } from 'gg-components/helpers/cssModules';
-
-import Skeleton from './Skeleton';
-
 import { PageTitle } from 'gg-components/Typography';
 import { Card } from 'gg-components/Cards';
-import { BlogCard } from 'components/Blogs';
 import { Button } from 'gg-components/Button';
 import {
   DebugObject,
@@ -15,6 +11,10 @@ import {
   AdminOnly,
   LoadingCover,
 } from 'gg-components/Auth';
+
+import Skeleton from './Skeleton';
+
+import { BlogCard } from 'components/Blogs';
 import STYLES from 'containers/pages.scss';
 
 const getClassName = cssModules(STYLES);
@@ -85,7 +85,7 @@ export default class AdminBlogs extends React.Component {
     );
 
     return (
-      <Fragment>
+      <>
         <Helmet title="Admin - blogs" />
         <LoadingCover
           loadingSkeleton={Skeleton}
@@ -107,7 +107,7 @@ export default class AdminBlogs extends React.Component {
             error,
           }}
         />
-      </Fragment>
+      </>
     );
   }
 }

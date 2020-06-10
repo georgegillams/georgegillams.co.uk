@@ -98,9 +98,14 @@ const CreateBlogForm = props => {
 };
 
 CreateBlogForm.propTypes = {
+  // eslint-disable-next-line react/forbid-prop-types
   blog: PropTypes.object.isRequired,
   onDataChanged: PropTypes.func.isRequired,
   onSubmit: PropTypes.func.isRequired,
+  className: PropTypes.string,
+};
+CreateBlogForm.defaultProps = {
+  className: null,
 };
 
 export default CreateBlogForm;

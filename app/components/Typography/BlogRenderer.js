@@ -1,3 +1,4 @@
+/* eslint-disable */
 import PropTypes from 'prop-types';
 import React from 'react';
 import bibtexParse from 'bibtex-parse-js';

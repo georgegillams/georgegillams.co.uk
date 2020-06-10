@@ -1,13 +1,9 @@
-import { call, put, select, takeLatest } from 'redux-saga/effects';
+import { select, takeLatest } from 'redux-saga/effects';
 
 import { constants, selectors, actions } from './redux-definitions';
 
-import { setUser } from 'containers/App/actions';
-import { COMMUNICATION_ERROR_MESSAGE } from 'helpers/messageConstants';
 import apiStructure from 'helpers/apiStructure';
-import { pushMessage } from 'containers/RequestStatusWrapper/actions';
 import { sagaHelper } from 'utils/redux-definitions/saga';
-import request from 'utils/request';
 
 const { VERIFY_EMAIL } = constants;
 const { verifyEmailRegisterSuccess, verifyEmailRegisterError } = actions;

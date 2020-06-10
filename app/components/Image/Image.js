@@ -1,4 +1,4 @@
-import React, { Fragment } from 'react';
+import React from 'react';
 import PropTypes from 'prop-types';
 import { cssModules } from 'gg-components/helpers/cssModules';
 import BpkImage, {
@@ -19,7 +19,7 @@ const Image = props => {
   const { className, lightSrc, darkSrc, ...rest } = props;
 
   return (
-    <Fragment>
+    <>
       <FadingLazyLoadedImage
         className={getClassName(`image`, 'image--light', className)}
         src={lightSrc}
@@ -30,7 +30,7 @@ const Image = props => {
         src={darkSrc}
         {...rest}
       />
-    </Fragment>
+    </>
   );
 };
 

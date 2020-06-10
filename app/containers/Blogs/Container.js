@@ -8,7 +8,7 @@ import { CreativeCommons } from 'gg-components/CreativeCommons';
 import BlogListSkeleton from './BlogListSkeleton';
 import BlogsNav from './BlogsNav';
 
-import BlogsList from 'components/Blogs';
+import { BlogsList } from 'components/Blogs';
 import STYLES from 'containers/pages.scss';
 
 const getClassName = cssModules(STYLES);

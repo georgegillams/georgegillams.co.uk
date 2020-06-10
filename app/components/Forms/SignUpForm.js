@@ -11,10 +11,11 @@ const SignUpForm = props => {
   if (className) classNameFinal.push(className);
 
   const onDataChangedCustom = newValue => {
-    if (newValue.email) {
-      newValue.email = newValue.email.split(' ').join('');
+    if (!newValue.email) {
+      onDataChanged(newValue);
     }
-    onDataChanged(newValue);
+    const newEmail = newValue.email.split(' ').join('');
+    onDataChanged({ ...newValue, email: newEmail });
   };
 
   return (
@@ -49,9 +50,17 @@ const SignUpForm = props => {
 };
 
 SignUpForm.propTypes = {
+  // eslint-disable-next-line react/forbid-prop-types
   credentials: PropTypes.object.isRequired,
   onDataChanged: PropTypes.func.isRequired,
   onSubmit: PropTypes.func.isRequired,
+  submitLabel: PropTypes.string,
+  className: PropTypes.string,
+};
+
+SignUpForm.defaultProps = {
+  submitLabel: null,
+  className: null,
 };
 
 export default SignUpForm;
