@@ -2,15 +2,9 @@ import React, { useState } from 'react';
 import { Card } from 'gg-components/Cards';
 import { NotificationComp } from 'gg-components/Notifications';
 import { Button } from 'gg-components/Button';
-import {
-  DebugObject,
-  APIEntity,
-  AdminOnly,
-  LoadingCover,
-} from 'gg-components/Auth';
+import { APIEntity } from 'gg-components/Auth';
 
 import AdminNotificationEdit from 'containers/AdminNotificationEdit/Loadable';
-import STYLES from 'containers/pages.scss';
 
 const NotificationEntity = props => {
   const { entity, onNotificationUpdateSuccess, children } = props;

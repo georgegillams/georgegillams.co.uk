@@ -1,14 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Helmet } from 'react-helmet';
 import cookie from 'react-cookies';
-import { cssModules } from 'gg-components/helpers/cssModules';
-
-import { Section, SubSection, TextLink } from 'gg-components/Typography';
 import { DebugObject } from 'gg-components/Auth';
-import STYLES from 'containers/pages.scss';
-
-const getClassName = cssModules(STYLES);
 
 export default class Authenticator extends React.Component {
   componentDidMount = () => {
@@ -62,14 +55,4 @@ export default class Authenticator extends React.Component {
   }
 }
 
-Authenticator.propTypes = {
-  cookiesAllowed: PropTypes.bool,
-  reauthenticating: PropTypes.bool,
-  reauthenticationError: PropTypes.oneOfType([
-    PropTypes.object,
-    PropTypes.bool,
-  ]),
-  createdPayment: PropTypes.object,
-  login: PropTypes.func.isRequired,
-  className: PropTypes.string,
-};
+Authenticator.propTypes = {};

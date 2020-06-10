@@ -1,15 +1,14 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { cssModules } from 'gg-components/helpers/cssModules';
-
-import STYLES from './not-found.scss';
-
 import {
   Paragraph,
   SubSection,
   TextLink,
   PageTitle,
 } from 'gg-components/Typography';
+
+import STYLES from './not-found.scss';
 
 const getClassName = cssModules(STYLES);
 

@@ -7,7 +7,7 @@ import { COMMUNICATION_ERROR_MESSAGE } from 'helpers/messageConstants';
 import apiStructure from 'helpers/apiStructure';
 import request from 'utils/request';
 
-const { LOAD_USERTOEDIT, UPDATE_USERTOEDIT } = constants;
+const { UPDATE_USERTOEDIT } = constants;
 const {
   updateUsertoeditRegisterError,
   updateUsertoeditRegisterSuccess,
@@ -17,22 +17,9 @@ const {
   makeSelectOnUpdateUsertoeditRegisterSuccess,
 } = selectors;
 
-const usertoeditCreatedMessage = {
-  type: 'success',
-  message: 'User created!',
-};
-const usertoeditCreateErrorMessage = {
-  type: 'error',
-  message: 'Could not create user.',
-};
-
 const usertoeditUpdatedMessage = {
   type: 'success',
   message: 'User updated!',
-};
-const usertoeditUpdatedErrorMessage = {
-  type: 'error',
-  message: 'Could not save user.',
 };
 
 export function* doUpdateUsertoedit() {

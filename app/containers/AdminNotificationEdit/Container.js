@@ -1,26 +1,12 @@
-import React, { Fragment } from 'react';
+import React from 'react';
 import PropTypes from 'prop-types';
 import { Helmet } from 'react-helmet';
-import { cssModules } from 'gg-components/helpers/cssModules';
+import { PageTitle } from 'gg-components/Typography';
+import { DebugObject, AdminOnly, LoadingCover } from 'gg-components/Auth';
 
 import Skeleton from './Skeleton';
 
-import { PageTitle } from 'gg-components/Typography';
-import { LoadingIndicator } from 'gg-components/LoadingIndicator';
-import { ArticleCard, ARTICLE_CARD_LAYOUTS } from 'gg-components/Cards';
-import { Button } from 'gg-components/Button';
-import { FormBuilder } from 'gg-components/FormBuilder';
-import { CodeInline } from 'gg-components/Code';
-import {
-  DebugObject,
-  APIEntity,
-  AdminOnly,
-  LoadingCover,
-} from 'gg-components/Auth';
 import { CreateNotificationForm } from 'components/Forms';
-import STYLES from 'containers/pages.scss';
-
-const getClassName = cssModules(STYLES);
 
 export default class AdminNotificationEdit extends React.Component {
   constructor(props) {
@@ -94,7 +80,7 @@ export default class AdminNotificationEdit extends React.Component {
     );
 
     return (
-      <Fragment>
+      <>
         <Helmet title="Admin - edit notification" />
         <LoadingCover
           loadingSkeleton={Skeleton}
@@ -123,7 +109,7 @@ export default class AdminNotificationEdit extends React.Component {
             updateNotificationError,
           }}
         />
-      </Fragment>
+      </>
     );
   }
 }

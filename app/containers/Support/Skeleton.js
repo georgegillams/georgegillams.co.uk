@@ -1,12 +1,8 @@
-import React, { Fragment } from 'react';
-import { cssModules } from 'gg-components/helpers/cssModules';
-
+import React from 'react';
+import PropTypes from 'prop-types';
 import { SectionSkeleton, CardSkeleton } from 'gg-components/Skeletons';
-import STYLES from 'containers/pages.scss';
 
-const getClassName = cssModules(STYLES);
-
-const AccountSkeleton = props => {
+const Skeleton = props => {
   const { className } = props;
 
   const outerClassNameFinal = [];
@@ -23,4 +19,12 @@ const AccountSkeleton = props => {
   );
 };
 
-export default AccountSkeleton;
+Skeleton.propTypes = {
+  className: PropTypes.string,
+};
+
+Skeleton.defaultProps = {
+  className: null,
+};
+
+export default Skeleton;

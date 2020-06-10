@@ -1,15 +1,8 @@
-import React, { Fragment, useState } from 'react';
+import React from 'react';
+import PropTypes from 'prop-types';
 import { Card } from 'gg-components/Cards';
 import { Paragraph, PageTitle } from 'gg-components/Typography';
-import { Button } from 'gg-components/Button';
-import {
-  DebugObject,
-  APIEntity,
-  AdminOnly,
-  LoadingCover,
-} from 'gg-components/Auth';
-
-import STYLES from 'containers/pages.scss';
+import { DebugObject } from 'gg-components/Auth';
 
 const AnalyticEntity = props => {
   const { entity, children } = props;
@@ -58,6 +51,17 @@ const AnalyticEntity = props => {
       </PageTitle>
     </Card>
   );
+};
+
+AnalyticEntity.propTypes = {
+  // eslint-disable-next-line react/forbid-prop-types
+  entity: PropTypes.object,
+  children: PropTypes.node,
+};
+
+AnalyticEntity.defaultProps = {
+  entity: null,
+  children: null,
 };
 
 export default AnalyticEntity;

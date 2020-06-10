@@ -1,4 +1,3 @@
-import React, { Fragment } from 'react';
 import Loadable from 'react-loadable';
 
 import Skeleton from './Skeleton';

@@ -1,4 +1,4 @@
-import React, { Fragment } from 'react';
+import React from 'react';
 import PropTypes from 'prop-types';
 import { Helmet } from 'react-helmet';
 import { cssModules } from 'gg-components/helpers/cssModules';
@@ -21,17 +21,7 @@ export default class BlogViewer extends React.Component {
   };
 
   render() {
-    const {
-      user,
-      match,
-      blogId,
-      blogs,
-      blogLoading,
-      blogLoadError,
-      loadBlog,
-      linkPrefix,
-      className,
-    } = this.props;
+    const { user, blogId, blogs, blogLoadError, className } = this.props;
     const outerClassNameFinal = [getClassName('pages__container--prose')];
 
     if (className) {
@@ -74,19 +64,18 @@ export default class BlogViewer extends React.Component {
 
 BlogViewer.propTypes = {
   // eslint-disable-next-line react/forbid-prop-types
-  user: PropTypes.object,
-  blogLoading: PropTypes.bool,
+  blogId: PropTypes.string,
   blogLoadError: PropTypes.oneOfType([PropTypes.object, PropTypes.bool]),
   blogs: PropTypes.arrayOf(PropTypes.object),
-  linkPrefix: PropTypes.string,
   className: PropTypes.string,
+  // eslint-disable-next-line react/forbid-prop-types
+  user: PropTypes.object,
 };
 
 BlogViewer.defaultProps = {
-  user: null,
-  blogLoading: false,
+  blogId: null,
   blogLoadError: null,
   blogs: null,
-  linkPrefix: '',
   className: null,
+  user: null,
 };

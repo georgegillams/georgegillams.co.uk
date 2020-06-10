@@ -36,6 +36,7 @@ const Skeleton = props => {
 Skeleton.propTypes = {
   className: PropTypes.string,
 };
+
 Skeleton.defaultProps = {
   className: null,
 };

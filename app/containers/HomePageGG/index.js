@@ -1,5 +1,5 @@
 import actionMeta from './actionMeta';
-import { selectors, actions, reducer } from './redux-definitions';
+import { actions, reducer } from './redux-definitions';
 import saga from './saga';
 import Container from './Container';
 

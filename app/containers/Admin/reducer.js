@@ -1,10 +1,11 @@
 import { fromJS } from 'immutable';
+
+import actionMeta from './actionMeta';
+
 import {
   createInitialState,
   createAppReducer,
 } from 'utils/redux-definitions/reducers';
-
-import actionMeta from './actionMeta';
 
 const constants = {};
 const initialStateObj = createInitialState(actionMeta.actionDefinitions);

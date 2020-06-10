@@ -13,8 +13,6 @@ const {
   loadNotificationRegisterError,
   updateNotificationRegisterError,
   updateNotificationRegisterSuccess,
-  createNotificationRegisterSuccess,
-  createNotificationRegisterError,
 } = actions;
 const {
   makeSelectNotificationId,
@@ -26,18 +24,10 @@ const notificationLoadedMessage = {
   type: 'success',
   message: 'Notification loaded!',
 };
-const notificationLoadErrorMessage = {
-  type: 'error',
-  message: 'Could not load notification.',
-};
 
 const notificationUpdatedMessage = {
   type: 'success',
   message: 'Notification updated!',
-};
-const notificationUpdatedErrorMessage = {
-  type: 'error',
-  message: 'Could not save notification.',
 };
 
 export function* doLoadNotification() {

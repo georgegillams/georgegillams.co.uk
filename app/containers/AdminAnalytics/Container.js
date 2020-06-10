@@ -1,18 +1,11 @@
-import React, { Fragment } from 'react';
+import React from 'react';
 import PropTypes from 'prop-types';
 import { Input } from 'gg-components/Input';
 import { Helmet } from 'react-helmet';
 import { cssModules } from 'gg-components/helpers/cssModules';
 import { Button } from 'gg-components/Button';
-import { Card } from 'gg-components/Cards';
 import { Paragraph, PageTitle } from 'gg-components/Typography';
-import {
-  DebugObject,
-  APIEntity,
-  AdminOnly,
-  LoadingCover,
-} from 'gg-components/Auth';
-import { Checkbox } from 'gg-components/Checkbox';
+import { DebugObject, AdminOnly, LoadingCover } from 'gg-components/Auth';
 
 import AnalyticEntity from './AnalyticEntity';
 import Skeleton from './Skeleton';
@@ -37,7 +30,6 @@ export default class AdminAnalytics extends React.Component {
     super(props);
 
     this.state = {
-      newAnalytic: {},
       filterURL: null,
       filterUTMSource: null,
       filterUTMMedium: null,
@@ -60,10 +52,6 @@ export default class AdminAnalytics extends React.Component {
       loadingAnalytics,
       loadAnalyticsSuccess,
       loadAnalyticsError,
-      createAnalytic,
-      creatingAnalytic,
-      deleteAnalytic,
-      deletingAnalytic,
     } = this.props;
     const outerClassNameFinal = [];
 
@@ -221,10 +209,7 @@ export default class AdminAnalytics extends React.Component {
 }
 
 AdminAnalytics.propTypes = {
-  createAnalytic: PropTypes.func.isRequired,
-  deleteAnalytic: PropTypes.func.isRequired,
   loadAnalytics: PropTypes.func.isRequired,
-  login: PropTypes.func.isRequired,
   setLoginRedirect: PropTypes.func.isRequired,
   analytics: PropTypes.arrayOf(PropTypes.object),
   // eslint-disable-next-line react/forbid-prop-types
@@ -232,9 +217,6 @@ AdminAnalytics.propTypes = {
   loadAnalyticsSuccess: PropTypes.bool,
   loadingAnalytics: PropTypes.bool,
   className: PropTypes.string,
-  creatingAnalytic: PropTypes.bool,
-  deletingAnalytic: PropTypes.bool,
-  loggingIn: PropTypes.bool,
   // eslint-disable-next-line react/forbid-prop-types
   user: PropTypes.object,
   userLoading: PropTypes.bool,
@@ -246,9 +228,6 @@ AdminAnalytics.defaultProps = {
   loadAnalyticsSuccess: false,
   loadingAnalytics: false,
   className: null,
-  creatingAnalytic: false,
-  deletingAnalytic: false,
-  loggingIn: false,
   user: null,
   userLoading: false,
 };

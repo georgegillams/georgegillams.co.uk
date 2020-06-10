@@ -8,33 +8,22 @@ import { pushMessage } from 'containers/RequestStatusWrapper/actions';
 import request from 'utils/request';
 
 const {
-  MAKE_PAYMENT,
   MAKE_PAYMENT_INTENT,
   LOAD_PAYMENT,
   MAKE_PAYMENT_REGISTER_SUCCESS,
   MAKE_PAYMENT_REGISTER_ERROR,
 } = constants;
 const {
-  makePaymentRegisterError,
-  makePaymentRegisterSuccess,
-
   makePaymentIntentRegisterError,
   makePaymentIntentRegisterSuccess,
 
-  loadPayment,
   loadPaymentRegisterError,
   loadPaymentRegisterSuccess,
 } = actions;
 const {
   makeSelectPaymentId,
-  makeSelectPayment,
   makeSelectOnMakePaymentIntentRegisterSuccess,
 } = selectors;
-
-const paymentSuccessMessage = {
-  type: 'success',
-  message: 'Payment recieved',
-};
 
 export function* doLoadPayment() {
   const paymentId = yield select(makeSelectPaymentId());

@@ -5,7 +5,6 @@ import BpkImage, {
   withLazyLoading,
   withLoadingBehavior,
 } from 'bpk-component-image';
-
 import { CreativeCommons } from 'gg-components/CreativeCommons';
 import { ArticleCard, ARTICLE_CARD_LAYOUTS } from 'gg-components/Cards';
 import {
@@ -14,11 +13,14 @@ import {
   SubSection,
   PageTitle,
 } from 'gg-components/Typography';
+import { cssModules } from 'gg-components/helpers/cssModules';
+
+import STYLES from '../pages.scss';
+
 import GraphicContent, {
   withGraphicContentBehaviour,
 } from 'components/GraphicContent';
 import Comments from 'containers/Comments';
-import { cssModules } from 'gg-components/helpers/cssModules';
 
 const PAGE_ID = '857216';
 const documentIfExists = typeof window !== 'undefined' ? document : null;
@@ -26,8 +28,6 @@ const FadingLazyLoadedImage = withLoadingBehavior(
   withLazyLoading(BpkImage, documentIfExists),
 );
 const GcbGraphicContent = withGraphicContentBehaviour(GraphicContent);
-
-import STYLES from '../pages.scss';
 
 const getClassName = cssModules(STYLES);
 

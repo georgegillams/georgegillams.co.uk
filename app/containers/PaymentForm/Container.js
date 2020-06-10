@@ -1,16 +1,12 @@
-import React, { Fragment } from 'react';
+import React from 'react';
 import PropTypes from 'prop-types';
-import { cssModules } from 'gg-components/helpers/cssModules';
 import { FormBuilder } from 'gg-components/FormBuilder';
 import { PageTitle } from 'gg-components/Typography';
 import { APIEntity } from 'gg-components/Auth';
 import { Button } from 'gg-components/Button';
 import { Checkbox } from 'gg-components/Checkbox';
 
-import STYLES from 'containers/pages.scss';
 import { EMAIL_REGEX, DECIMAL_REGEX } from 'helpers/regexConstants';
-
-const getClassName = cssModules(STYLES);
 
 export default class PaymentForm extends React.Component {
   constructor(props) {
@@ -29,18 +25,10 @@ export default class PaymentForm extends React.Component {
 
       addPayment,
       addPaymentLoading,
-      addPaymentSuccess,
-      addPaymentErrored,
 
       payments,
       loadPayments,
-      loadingPayments,
-      loadPaymentsSuccess,
-      loadPaymentsError,
       deletePayment,
-      deletePaymentLoading,
-      deletePaymentSuccess,
-      deletePaymentError,
 
       className,
     } = this.props;

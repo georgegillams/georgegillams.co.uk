@@ -1,17 +1,14 @@
-import React, { Fragment } from 'react';
+import React from 'react';
 import PropTypes from 'prop-types';
-import { Helmet } from 'react-helmet';
-import { PageTitle } from 'gg-components/Typography';
-import { LoadingIndicator } from 'gg-components/LoadingIndicator';
+import { PageTitle, Paragraph } from 'gg-components/Typography';
 import { Button } from 'gg-components/Button';
-import { Paragraph, SubSection, TextLink } from 'gg-components/Typography';
-import { CodeInline } from 'gg-components/Code';
-import Skeleton from './Skeleton';
-import { getTimeDifference } from 'helpers/time';
 import { DebugObject, LoadingCover } from 'gg-components/Auth';
-import PaymentForm from './PaymentForm';
-import { STRIPE_PUBLIC_API_KEY } from 'helpers/constants';
 import { Elements, StripeProvider } from 'react-stripe-elements';
+
+import Skeleton from './Skeleton';
+import PaymentForm from './PaymentForm';
+
+import { STRIPE_PUBLIC_API_KEY } from 'helpers/constants';
 
 import 'containers/pages.scss';
 
@@ -76,7 +73,7 @@ export default class StripePayments extends React.Component {
     const page = (
       <PageTitle name={name}>
         {paymentIsComplete && (
-          <Fragment>
+          <>
             <Paragraph>This payment has been completed.</Paragraph>
             <br />
             <Button
@@ -84,9 +81,9 @@ export default class StripePayments extends React.Component {
               large
               href="/payments"
             >
-              {'Start another payment'}
+              Start another payment
             </Button>
-          </Fragment>
+          </>
         )}
         {!paymentIsComplete && (
           <StripeProvider apiKey={STRIPE_PUBLIC_API_KEY}>
@@ -123,7 +120,7 @@ export default class StripePayments extends React.Component {
     );
 
     return (
-      <Fragment>
+      <>
         <LoadingCover
           loadingSkeleton={Skeleton}
           loading={loadPaymentLoading}
@@ -142,7 +139,7 @@ export default class StripePayments extends React.Component {
             className,
           }}
         />
-      </Fragment>
+      </>
     );
   }
 }

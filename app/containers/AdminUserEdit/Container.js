@@ -1,27 +1,13 @@
-import React, { Fragment } from 'react';
+import React from 'react';
 import PropTypes from 'prop-types';
 import { Helmet } from 'react-helmet';
-import { cssModules } from 'gg-components/helpers/cssModules';
-import { LoadingIndicator } from 'gg-components/LoadingIndicator';
-import { ArticleCard, ARTICLE_CARD_LAYOUTS } from 'gg-components/Cards';
-import { Button } from 'gg-components/Button';
-import { Section, SubSection, TextLink } from 'gg-components/Typography';
+import { Section } from 'gg-components/Typography';
 import { FormBuilder } from 'gg-components/FormBuilder';
-import { CodeInline } from 'gg-components/Code';
-import {
-  DebugObject,
-  APIEntity,
-  AdminOnly,
-  LoadingCover,
-} from 'gg-components/Auth';
+import { DebugObject, AdminOnly, LoadingCover } from 'gg-components/Auth';
 
 import Skeleton from './Skeleton';
 
-import { CreateUsertoeditForm } from 'components/Forms';
-import STYLES from 'containers/pages.scss';
 import { EMAIL_REGEX, USERNAME_REGEX } from 'helpers/regexConstants';
-
-const getClassName = cssModules(STYLES);
 
 export default class AdminUsertoeditEdit extends React.Component {
   constructor(props) {

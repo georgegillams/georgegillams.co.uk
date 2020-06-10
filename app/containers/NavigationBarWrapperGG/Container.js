@@ -1,12 +1,11 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-
 import { NavigationBar, NavigationItem } from 'gg-components/NavigationBar';
 import { Logo } from 'gg-components/Logo';
 import { SmallButtonSkeleton } from 'gg-components/Skeletons';
 
 const NavigationBarWrapper = props => {
-  const { user, userLoading, loginRedirect, cookiesAllowed, loading } = props;
+  const { user, userLoading } = props;
 
   const accountItem = userLoading ? (
     <SmallButtonSkeleton />

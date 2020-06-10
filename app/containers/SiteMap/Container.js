@@ -17,7 +17,7 @@ export default class SiteMap extends React.Component {
   };
 
   render() {
-    const { blogsLoadError, blogs, loadBlogs, className } = this.props;
+    const { blogsLoadError, blogs, className } = this.props;
     const outerClassNameFinal = [];
 
     if (className) {

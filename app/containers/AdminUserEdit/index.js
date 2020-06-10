@@ -1,14 +1,15 @@
-import appSelectors from 'containers/App/selectors';
-
-import { composeContainer } from 'utils/redux-definitions';
-import actionMeta from './actionMeta';
-import { selectors, actions, reducer } from './redux-definitions';
 import {
   selectors as usersSelectors,
   actions as usersActions,
 } from '../AdminUsers/redux-definitions';
+
+import { selectors, actions, reducer } from './redux-definitions';
+import actionMeta from './actionMeta';
 import saga from './saga';
 import Container from './Container';
+
+import { composeContainer } from 'utils/redux-definitions';
+import appSelectors from 'containers/App/selectors';
 
 module.exports = composeContainer(
   Container,

@@ -113,10 +113,8 @@ export default class AdminBlogs extends React.Component {
 }
 
 AdminBlogs.propTypes = {
-  createBlog: PropTypes.func.isRequired,
   deleteBlog: PropTypes.func.isRequired,
   loadBlogs: PropTypes.func.isRequired,
-  login: PropTypes.func.isRequired,
   setLoginRedirect: PropTypes.func.isRequired,
   blogs: PropTypes.arrayOf(PropTypes.object),
   // eslint-disable-next-line react/forbid-prop-types
@@ -124,9 +122,7 @@ AdminBlogs.propTypes = {
   success: PropTypes.bool,
   loading: PropTypes.bool,
   className: PropTypes.string,
-  creatingBlog: PropTypes.bool,
   deleting: PropTypes.bool,
-  loggingIn: PropTypes.bool,
   // eslint-disable-next-line react/forbid-prop-types
   user: PropTypes.object,
   userLoading: PropTypes.bool,
@@ -138,9 +134,7 @@ AdminBlogs.defaultProps = {
   success: false,
   loading: false,
   className: null,
-  creatingBlog: false,
   deleting: false,
-  loggingIn: false,
   user: null,
   userLoading: false,
 };
