@@ -15,10 +15,6 @@ const { makeSelectCredentials } = selectors;
 
 const magicLinkSentMessage = { type: 'success', message: 'Magic link sent!' };
 const loggedInMessage = { type: 'success', message: 'Login successful!' };
-const logInErrorMessage = {
-  type: 'error',
-  message: 'Login failed. Please check entered details.',
-};
 
 export function* doLogin() {
   const credentials = yield select(makeSelectCredentials());

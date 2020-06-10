@@ -1,4 +1,5 @@
-import React, { Fragment } from 'react';
+/* eslint-disable */
+import React from 'react';
 import PropTypes from 'prop-types';
 import { cssModules } from 'gg-components/helpers/cssModules';
 import { FormBuilder } from 'gg-components/FormBuilder';

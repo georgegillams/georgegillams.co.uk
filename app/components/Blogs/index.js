@@ -1,2 +1,5 @@
-export { default } from './BlogsList';
-export BlogCard from './BlogCard';
+import BlogsList from './BlogsList';
+import BlogCard from './BlogCard';
+
+export default BlogsList;
+export { BlogsList, BlogCard };

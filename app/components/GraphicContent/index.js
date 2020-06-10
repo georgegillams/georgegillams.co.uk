@@ -1,2 +1,5 @@
-export { default } from './GraphicContent';
-export withGraphicContentBehaviour from './withGraphicContentBehaviour';
+import GraphicContent from './GraphicContent';
+import withGraphicContentBehaviour from './withGraphicContentBehaviour';
+
+export default GraphicContent;
+export { GraphicContent, withGraphicContentBehaviour };

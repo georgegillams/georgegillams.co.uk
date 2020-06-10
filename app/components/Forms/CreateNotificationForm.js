@@ -69,17 +69,20 @@ const CreateNotificationForm = props => {
   );
 };
 
-CreateNotificationForm.defaultProps = {
-  centered: false,
-  className: null,
-};
-
 CreateNotificationForm.propTypes = {
+  // eslint-disable-next-line react/forbid-prop-types
   notification: PropTypes.object.isRequired,
   onDataChanged: PropTypes.func.isRequired,
   onSubmit: PropTypes.func.isRequired,
   centered: PropTypes.bool,
   className: PropTypes.string,
+  submitLabel: PropTypes.string,
+};
+
+CreateNotificationForm.defaultProps = {
+  centered: false,
+  className: null,
+  submitLabel: null,
 };
 
 export default CreateNotificationForm;

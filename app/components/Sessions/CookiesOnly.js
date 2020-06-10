@@ -66,10 +66,12 @@ CookiesOnly.propTypes = {
   onAccept: PropTypes.func.isRequired,
   cookiesAccepted: PropTypes.bool.isRequired,
   className: PropTypes.string,
+  children: PropTypes.node,
 };
 
 CookiesOnly.defaultProps = {
   className: null,
+  children: null,
 };
 
 export default CookiesOnly;
