@@ -1,5 +1,5 @@
 import React from 'react';
-import { Paragraph, PageTitle } from 'gg-components/Typography';
+import { Paragraph, TextLink, PageTitle } from 'gg-components/Typography';
 import { cssModules } from 'gg-components/helpers/cssModules';
 
 import STYLES from './style.scss';
@@ -36,7 +36,9 @@ const Container = () => (
         return (
           <tr>
             <td>
-              <Paragraph>{apiCapability.path}</Paragraph>
+              <TextLink href={apiCapability.fullPath} external>
+                {apiCapability.path}
+              </TextLink>
             </td>
             <td>
               <Paragraph className={getClassName('api-docs__method')}>
