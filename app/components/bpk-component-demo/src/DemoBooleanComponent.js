@@ -22,7 +22,7 @@ import React, { type Node } from 'react';
 import PropTypes from 'prop-types';
 import BpkCheckBox from 'bpk-component-checkbox';
 
-// import STYLES from './bpk-button.scss'; import {cssModules} from 'bpk-react-utils';  const getClassName = cssModules(STYLES); // REGEX_REPLACED
+// import STYLES from './bpk-button.scss'; import {cssModules} from 'bpk-react-utils';  const getClassName = cssModules(STYLES);
 //
 // // This was originally depended upon from the bpk-react-utils package, however
 // // we decided to inline it in this particular component so as not to bloat the

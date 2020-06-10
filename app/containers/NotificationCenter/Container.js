@@ -10,7 +10,7 @@ import { NotificationCollection } from 'gg-components/Notifications';
 import { DebugObject, LoadingCover } from 'gg-components/Auth';
 import STYLES from 'containers/pages.scss';
 
-const getClassName = cssModules(STYLES); // REGEX_REPLACED
+const getClassName = cssModules(STYLES);
 
 export default class NotificationCenter extends React.Component {
   componentWillMount = () => {

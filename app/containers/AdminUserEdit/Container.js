@@ -2,9 +2,6 @@ import React, { Fragment } from 'react';
 import PropTypes from 'prop-types';
 import { Helmet } from 'react-helmet';
 import { cssModules } from 'gg-components/helpers/cssModules';
-
-import Skeleton from './Skeleton';
-
 import { LoadingIndicator } from 'gg-components/LoadingIndicator';
 import { ArticleCard, ARTICLE_CARD_LAYOUTS } from 'gg-components/Cards';
 import { Button } from 'gg-components/Button';
@@ -17,9 +14,12 @@ import {
   AdminOnly,
   LoadingCover,
 } from 'gg-components/Auth';
+
+import Skeleton from './Skeleton';
+
 import { CreateUsertoeditForm } from 'components/Forms';
 import STYLES from 'containers/pages.scss';
-import { EMAIL_REGEX, USERNAME_REGEX } from 'helpers/constants';
+import { EMAIL_REGEX, USERNAME_REGEX } from 'helpers/regexConstants';
 
 const getClassName = cssModules(STYLES);
 
@@ -118,7 +118,7 @@ export default class AdminUsertoeditEdit extends React.Component {
     );
 
     return (
-      <Fragment>
+      <>
         <Helmet title="Admin - edit user" />
         <LoadingCover
           loadingSkeleton={Skeleton}
@@ -147,7 +147,7 @@ export default class AdminUsertoeditEdit extends React.Component {
             updateUsertoeditError,
           }}
         />
-      </Fragment>
+      </>
     );
   }
 }

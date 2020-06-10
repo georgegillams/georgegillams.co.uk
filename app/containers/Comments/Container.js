@@ -8,7 +8,7 @@ import { DebugObject, LoadingCover } from 'gg-components/Auth';
 import Comments, { CommentInput } from 'components/Comments';
 import STYLES from 'containers/pages.scss';
 
-const getClassName = cssModules(STYLES); // REGEX_REPLACED
+const getClassName = cssModules(STYLES);
 
 export default class CommentsContainer extends React.Component {
   componentWillMount = () => {

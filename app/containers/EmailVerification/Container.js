@@ -6,25 +6,18 @@ import BpkImage, {
   withLoadingBehavior,
 } from 'bpk-component-image';
 import { cssModules } from 'gg-components/helpers/cssModules';
-
 import { PageTitle } from 'gg-components/Typography';
 import { LoadingIndicator } from 'gg-components/LoadingIndicator';
 import { Button } from 'gg-components/Button';
 import { CodeInline } from 'gg-components/Code';
-import { LoginForm } from 'components/Forms';
 import { DebugObject } from 'gg-components/Auth';
-import { CookiesOnly } from 'components/Sessions';
 import { Redirect } from 'gg-components/Redirect';
-import {
-  MONZOME_LINK_REGEX,
-  SORT_CODE_REGEX,
-  INT_REGEX,
-  STRING_REGEX,
-  DECIMAL_REGEX,
-} from 'helpers/constants';
+
+import { LoginForm } from 'components/Forms';
+import { CookiesOnly } from 'components/Sessions';
 import STYLES from 'containers/pages.scss';
 
-const getClassName = cssModules(STYLES); // REGEX_REPLACED
+const getClassName = cssModules(STYLES);
 
 export default class EmailVerification extends React.Component {
   componentDidMount = () => {

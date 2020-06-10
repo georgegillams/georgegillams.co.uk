@@ -8,7 +8,7 @@ import { Tag } from 'gg-components/Tag';
 import STYLES from './blog-viewer.scss';
 import BlogPreviewSection from './BlogPreviewSection';
 
-const getClassName = cssModules(STYLES); // REGEX_REPLACED
+const getClassName = cssModules(STYLES);
 
 const BlogRenderer = props => {
   const {

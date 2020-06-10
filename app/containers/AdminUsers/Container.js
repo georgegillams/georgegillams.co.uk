@@ -25,14 +25,6 @@ import Skeleton from './Skeleton';
 import AdminUsersAPIEntity from './AdminUsersAPIEntity';
 
 import { SplitDetailView } from 'components/SplitDetailView';
-import {
-  STRING_REGEX,
-  INT_REGEX,
-  EMAIL_REGEX,
-  NAME_REGEX,
-  PASSWORD_REGEX,
-  DECIMAL_REGEX,
-} from 'helpers/constants';
 import appConfig from 'helpers/appConfig';
 import HelperFunctions from 'helpers/HelperFunctions';
 import STYLES from 'containers/pages.scss';

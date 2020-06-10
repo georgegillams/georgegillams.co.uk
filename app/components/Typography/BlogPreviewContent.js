@@ -20,7 +20,7 @@ import { CodeInline, Code, CodeBashArrow } from 'gg-components/Code';
 import { TextLink, Quote, SubSection } from 'gg-components/Typography';
 import HelperFunctions from 'helpers/HelperFunctions';
 
-const getClassName = cssModules(STYLES); // REGEX_REPLACED
+const getClassName = cssModules(STYLES);
 
 const documentIfExists = typeof window !== 'undefined' ? document : null;
 const FadingLazyLoadedImage = withLoadingBehavior(

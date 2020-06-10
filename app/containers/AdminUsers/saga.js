@@ -3,7 +3,7 @@ import { call, put, select, takeLatest } from 'redux-saga/effects';
 import { selectors, actions, constants } from './redux-definitions';
 
 import { pushMessage } from 'containers/RequestStatusWrapper/actions';
-import { COMMUNICATION_ERROR_MESSAGE } from 'helpers/constants';
+import { COMMUNICATION_ERROR_MESSAGE } from 'helpers/messageConstants';
 import apiStructure from 'helpers/apiStructure';
 import { associate } from 'helpers/objects';
 import request from 'utils/request';

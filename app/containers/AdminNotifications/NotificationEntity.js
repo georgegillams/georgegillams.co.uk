@@ -1,23 +1,15 @@
 import React, { useState } from 'react';
-import AdminNotificationEdit from 'containers/AdminNotificationEdit/Loadable';
 import { Card } from 'gg-components/Cards';
-
 import { NotificationComp } from 'gg-components/Notifications';
 import { Button } from 'gg-components/Button';
-import {
-  STRING_REGEX,
-  INT_REGEX,
-  EMAIL_REGEX,
-  NAME_REGEX,
-  PASSWORD_REGEX,
-  DECIMAL_REGEX,
-} from 'helpers/constants';
 import {
   DebugObject,
   APIEntity,
   AdminOnly,
   LoadingCover,
 } from 'gg-components/Auth';
+
+import AdminNotificationEdit from 'containers/AdminNotificationEdit/Loadable';
 import STYLES from 'containers/pages.scss';
 
 const NotificationEntity = props => {

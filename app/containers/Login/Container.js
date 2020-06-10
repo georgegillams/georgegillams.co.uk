@@ -6,26 +6,19 @@ import BpkImage, {
   withLoadingBehavior,
 } from 'bpk-component-image';
 import { cssModules } from 'gg-components/helpers/cssModules';
-
-import Skeleton from './Skeleton';
-
 import { LoadingIndicator } from 'gg-components/LoadingIndicator';
 import { Button } from 'gg-components/Button';
 import { TextLink, PageTitle } from 'gg-components/Typography';
 import { CodeInline } from 'gg-components/Code';
 import { DebugObject, LoggedOutOnly, LoadingCover } from 'gg-components/Auth';
+
+import Skeleton from './Skeleton';
+
 import { LoginForm } from 'components/Forms';
 import { CookiesOnly } from 'components/Sessions';
-import {
-  MONZOME_LINK_REGEX,
-  SORT_CODE_REGEX,
-  INT_REGEX,
-  STRING_REGEX,
-  DECIMAL_REGEX,
-} from 'helpers/constants';
 import STYLES from 'containers/pages.scss';
 
-const getClassName = cssModules(STYLES); // REGEX_REPLACED
+const getClassName = cssModules(STYLES);
 
 export default class Login extends React.Component {
   render() {
@@ -74,7 +67,7 @@ export default class Login extends React.Component {
     );
 
     return (
-      <Fragment>
+      <>
         <Helmet title="Login" />
         <CookiesOnly
           cookiesAccepted={cookiesAllowed}
@@ -102,7 +95,7 @@ export default class Login extends React.Component {
             logInError,
           }}
         />
-      </Fragment>
+      </>
     );
   }
 }

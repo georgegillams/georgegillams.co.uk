@@ -3,7 +3,7 @@ import {
   ID_REGEX,
   PASSWORD_REGEX,
   ANYTHING_REGEX,
-} from 'helpers/constants';
+} from 'helpers/regexConstants';
 
 const standardAttributes = [
   { attribute: 'deleted', pattern: 'BOOL' },

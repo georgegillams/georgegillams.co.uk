@@ -1,7 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { FormBuilder } from 'gg-components/FormBuilder';
-import { STRING_REGEX, ID_REGEX, ANYTHING_REGEX } from 'helpers/constants';
+
+import { STRING_REGEX, ID_REGEX, ANYTHING_REGEX } from 'helpers/regexConstants';
 
 const CreateBlogForm = props => {
   const { className, blog, ...rest } = props;

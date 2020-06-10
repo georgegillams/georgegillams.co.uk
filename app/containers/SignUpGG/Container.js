@@ -6,21 +6,20 @@ import BpkImage, {
   withLoadingBehavior,
 } from 'bpk-component-image';
 import { cssModules } from 'gg-components/helpers/cssModules';
-
-import Skeleton from './Skeleton';
-
 import { LoadingIndicator } from 'gg-components/LoadingIndicator';
 import { Button } from 'gg-components/Button';
 import { TextLink, PageTitle } from 'gg-components/Typography';
 import { CodeInline } from 'gg-components/Code';
-import { SignUpForm } from 'components/Forms';
-import { CookiesOnly } from 'components/Sessions';
 import { Redirect } from 'gg-components/Redirect';
 import { LoggedOutOnly, LoadingCover } from 'gg-components/Auth';
-import { STRING_REGEX } from 'helpers/constants';
+
+import Skeleton from './Skeleton';
+
+import { CookiesOnly } from 'components/Sessions';
+import { SignUpForm } from 'components/Forms';
 import STYLES from 'containers/pages.scss';
 
-const getClassName = cssModules(STYLES); // REGEX_REPLACED
+const getClassName = cssModules(STYLES);
 
 export default class SignUp extends React.Component {
   render() {
@@ -67,7 +66,7 @@ export default class SignUp extends React.Component {
     );
 
     return (
-      <Fragment>
+      <>
         <Helmet title="Sign up" />
         <CookiesOnly
           cookiesAccepted={cookiesAllowed}
@@ -79,7 +78,7 @@ export default class SignUp extends React.Component {
         >
           {page}
         </LoadingCover>
-      </Fragment>
+      </>
     );
   }
 }

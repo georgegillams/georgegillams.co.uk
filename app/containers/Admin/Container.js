@@ -11,7 +11,7 @@ import { DebugObject, AdminOnly, LoadingCover } from 'gg-components/Auth';
 import { CookiesOnly } from 'components/Sessions';
 import STYLES from 'containers/pages.scss';
 
-const getClassName = cssModules(STYLES); // REGEX_REPLACED
+const getClassName = cssModules(STYLES);
 
 export default class Admin extends React.Component {
   render() {

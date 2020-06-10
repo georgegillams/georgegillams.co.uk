@@ -2,7 +2,7 @@ import { call, put } from 'redux-saga/effects';
 
 import { pushMessage } from 'containers/RequestStatusWrapper/actions';
 import request from 'utils/request';
-import { COMMUNICATION_ERROR_MESSAGE } from 'helpers/constants';
+import { COMMUNICATION_ERROR_MESSAGE } from 'helpers/messageConstants';
 
 function* sagaHelper(
   requestURL,

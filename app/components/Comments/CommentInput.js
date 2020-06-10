@@ -1,15 +1,15 @@
 import React, { Fragment } from 'react';
 import PropTypes from 'prop-types';
 import { cssModules } from 'gg-components/helpers/cssModules';
-
-import STYLES from './comments.scss';
-
 import { FormBuilder } from 'gg-components/FormBuilder';
 import { CodeInline } from 'gg-components/Code';
 import { SubSection } from 'gg-components/Typography';
-import { MD_PARTIAL_REGEX, USERNAME_REGEX } from 'helpers/constants';
 
-const getClassName = cssModules(STYLES); // REGEX_REPLACED
+import STYLES from './comments.scss';
+
+import { MD_PARTIAL_REGEX, USERNAME_REGEX } from 'helpers/regexConstants';
+
+const getClassName = cssModules(STYLES);
 
 class CommentInput extends React.Component {
   static propTypes = {
@@ -86,20 +86,18 @@ class CommentInput extends React.Component {
             centered={centered}
             disabled={creatingComment || updatingComment}
             preSubmitText={
-              <Fragment>
-                {'Comments support **'}
+              <>
+                Comments support **
                 <span style={{ fontWeight: 'bold' }}>bold</span>
-                {'**, _'}
-                <span style={{ fontStyle: 'italic' }}>italic</span>
-                {'_, ~'}
+                **, _<span style={{ fontStyle: 'italic' }}>italic</span>
+                _, ~
                 <span style={{ textDecoration: 'line-through' }}>
                   strikethrough
                 </span>
                 {'~, [links](http://www.example.com/), > "quotes" <'}
                 {' and `'}
-                <CodeInline>code</CodeInline>
-                {'`'}
-              </Fragment>
+                <CodeInline>code</CodeInline>`
+              </>
             }
           />
         )}

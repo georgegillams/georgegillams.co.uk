@@ -7,7 +7,7 @@ import STYLES from './blogs-page.scss';
 
 import PAGE_STYLES from 'containers/pages.scss';
 
-const getClassName = cssModules({ ...PAGE_STYLES, ...STYLES }); // REGEX_REPLACED
+const getClassName = cssModules({ ...PAGE_STYLES, ...STYLES });
 
 const BlogsNav = props => {
   const { selected, className } = props;

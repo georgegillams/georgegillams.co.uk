@@ -9,7 +9,7 @@ import { RequestStatusContainer } from 'gg-components/RequestStatus';
 import { PROJECT_UNDER_TEST } from 'helpers/constants';
 import STYLES from 'containers/pages.scss';
 
-const getClassName = cssModules(STYLES); // REGEX_REPLACED
+const getClassName = cssModules(STYLES);
 
 export default class RequestStatusWrapper extends React.Component {
   componentDidMount = () => {

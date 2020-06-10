@@ -9,14 +9,6 @@ import {
   LoadingCover,
 } from 'gg-components/Auth';
 
-import {
-  STRING_REGEX,
-  INT_REGEX,
-  EMAIL_REGEX,
-  NAME_REGEX,
-  PASSWORD_REGEX,
-  DECIMAL_REGEX,
-} from 'helpers/constants';
 import STYLES from 'containers/pages.scss';
 
 const AnalyticEntity = props => {

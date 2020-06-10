@@ -12,7 +12,7 @@ import HelperFunctions from 'helpers/HelperFunctions';
 import Comments from 'containers/Comments';
 import STYLES from 'containers/pages.scss';
 
-const getClassName = cssModules(STYLES); // REGEX_REPLACED
+const getClassName = cssModules(STYLES);
 
 export default class BlogViewer extends React.Component {
   componentWillMount = () => {

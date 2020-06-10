@@ -2,15 +2,15 @@ import React, { Fragment } from 'react';
 import PropTypes from 'prop-types';
 import { Helmet } from 'react-helmet';
 import { cssModules } from 'gg-components/helpers/cssModules';
-
-import Skeleton from './Skeleton';
-
 import { Button } from 'gg-components/Button';
 import { Card } from 'gg-components/Cards';
 import { Section, SubSection, PageTitle } from 'gg-components/Typography';
 import { FormBuilder } from 'gg-components/FormBuilder';
-import { ANYTHING_REGEX } from 'helpers/constants';
 import { DebugObject, LoadingCover } from 'gg-components/Auth';
+
+import Skeleton from './Skeleton';
+
+import { ANYTHING_REGEX } from 'helpers/regexConstants';
 import STYLES from 'containers/pages.scss';
 
 const getClassName = cssModules(STYLES);
@@ -92,7 +92,26 @@ export default class GrammarML extends React.Component {
             &quot;there&quot; or &quot;their&quot;.
           </SubSection>
           <SubSection name="Some test data">
-            {`Put your coat down over there. There is something to be said for telling the truth. What is over there? That is neither here nor there. There is always another opportunity to be had down the road. The book is right over there. The remote is over there on the couch. Why don't you go over there and tell me what is inside? There are two people in the room right now. There is supposed to be rain tomorrow. I know there is truth to what you are saying. There are so many stores in this little village. I did not know there was milk in the refrigerator. Who knew there was going to be a sequel to the movie? I hope there is no snow tomorrow. I always wondered what was in there. The red one is their house. The beagle is their dog. Going to the store was their idea. They're in over their heads. Joe and Sue always want things their way. I didn't know that it was their cat. Their dog is always barking. Why don't you ask them what their plans are? I never forgot that it was their suggestion that started the company. Is that their boat? You should stay out of their business. You should stop by their lemonade stand for a drink. Do not take their word at face value. Did you know their house is for sale? Their car goes way faster than your car does. Did you know their new business has taken off?`}
+            Put your coat down over there. There is something to be said for
+            telling the truth. What is over there? That is neither here nor
+            there. There is always another opportunity to be had down the road.
+            The book is right over there. The remote is over there on the couch.
+            Why don't you go over there and tell me what is inside? There are
+            two people in the room right now. There is supposed to be rain
+            tomorrow. I know there is truth to what you are saying. There are so
+            many stores in this little village. I did not know there was milk in
+            the refrigerator. Who knew there was going to be a sequel to the
+            movie? I hope there is no snow tomorrow. I always wondered what was
+            in there. The red one is their house. The beagle is their dog. Going
+            to the store was their idea. They're in over their heads. Joe and
+            Sue always want things their way. I didn't know that it was their
+            cat. Their dog is always barking. Why don't you ask them what their
+            plans are? I never forgot that it was their suggestion that started
+            the company. Is that their boat? You should stay out of their
+            business. You should stop by their lemonade stand for a drink. Do
+            not take their word at face value. Did you know their house is for
+            sale? Their car goes way faster than your car does. Did you know
+            their new business has taken off?
           </SubSection>
           <SubSection name="Performance analysis">
             <FormBuilder
@@ -210,7 +229,7 @@ export default class GrammarML extends React.Component {
     );
 
     return (
-      <Fragment>
+      <>
         <Helmet title="Machine Learning - Grammar" />
         <LoadingCover
           loadingSkeleton={Skeleton}
@@ -232,7 +251,7 @@ export default class GrammarML extends React.Component {
             error,
           }}
         />
-      </Fragment>
+      </>
     );
   }
 }

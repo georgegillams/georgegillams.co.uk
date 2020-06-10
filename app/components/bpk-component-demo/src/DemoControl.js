@@ -30,7 +30,7 @@ import STYLES from './bpk-demo.scss';
 
 import HelperFunctions from 'helpers/HelperFunctions';
 
-const getClassName = cssModules(STYLES); // REGEX_REPLACED
+const getClassName = cssModules(STYLES);
 
 type Props = {
   propName: Node,

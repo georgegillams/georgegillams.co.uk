@@ -3,29 +3,21 @@ import PropTypes from 'prop-types';
 import { Input } from 'gg-components/Input';
 import { Helmet } from 'react-helmet';
 import { cssModules } from 'gg-components/helpers/cssModules';
-
-import Skeleton from './Skeleton';
-import AnalyticEntity from './AnalyticEntity';
-
 import { Button } from 'gg-components/Button';
 import { Card } from 'gg-components/Cards';
 import { Paragraph, PageTitle } from 'gg-components/Typography';
-import {
-  STRING_REGEX,
-  INT_REGEX,
-  EMAIL_REGEX,
-  NAME_REGEX,
-  PASSWORD_REGEX,
-  DECIMAL_REGEX,
-} from 'helpers/constants';
 import {
   DebugObject,
   APIEntity,
   AdminOnly,
   LoadingCover,
 } from 'gg-components/Auth';
-import HelperFunctions from 'helpers/HelperFunctions';
 import { Checkbox } from 'gg-components/Checkbox';
+
+import AnalyticEntity from './AnalyticEntity';
+import Skeleton from './Skeleton';
+
+import HelperFunctions from 'helpers/HelperFunctions';
 import STYLES from 'containers/pages.scss';
 
 const getClassName = cssModules(STYLES);
@@ -130,7 +122,7 @@ export default class AdminAnalytics extends React.Component {
             <br />
             <br />
             {analytics && (
-              <Fragment>
+              <>
                 <label htmlFor="filterURL">Filter by URL</label>
                 <Input
                   id="filterURL"
@@ -193,7 +185,7 @@ export default class AdminAnalytics extends React.Component {
                       className={getClassName('pages__component')}
                     />
                   ))}
-              </Fragment>
+              </>
             )}
           </PageTitle>
         </AdminOnly>
@@ -201,7 +193,7 @@ export default class AdminAnalytics extends React.Component {
     );
 
     return (
-      <Fragment>
+      <>
         <Helmet title="Admin - analytics" />
         <LoadingCover
           loadingSkeleton={Skeleton}
@@ -223,7 +215,7 @@ export default class AdminAnalytics extends React.Component {
             loadAnalyticsError,
           }}
         />
-      </Fragment>
+      </>
     );
   }
 }
