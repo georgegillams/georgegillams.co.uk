@@ -1,4 +1,4 @@
-import { EMAIL_REGEX, DECIMAL_REGEX, ID_REGEX } from 'helpers/constants';
+import { EMAIL_REGEX, DECIMAL_REGEX, ID_REGEX } from 'helpers/regexConstants';
 
 const commentsAllowedAttributes = [
   { attribute: 'amount', pattern: DECIMAL_REGEX },

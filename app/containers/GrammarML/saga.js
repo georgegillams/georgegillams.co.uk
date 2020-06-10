@@ -30,7 +30,7 @@ import {
 
 import appConfig from 'helpers/appConfig';
 import { pushMessage } from 'containers/RequestStatusWrapper/actions';
-import { COMMUNICATION_ERROR_MESSAGE } from 'helpers/constants';
+import { COMMUNICATION_ERROR_MESSAGE } from 'helpers/messageConstants';
 import request from 'utils/request';
 
 const loadDataSuccessMessage = {

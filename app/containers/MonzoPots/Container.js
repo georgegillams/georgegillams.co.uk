@@ -19,7 +19,7 @@ import { LoadingCover } from 'gg-components/Auth';
 import { FormBuilder } from 'gg-components/FormBuilder';
 import STYLES from 'containers/pages.scss';
 
-const getClassName = cssModules(STYLES); // REGEX_REPLACED
+const getClassName = cssModules(STYLES);
 
 export default class MonzoPots extends React.Component {
   constructor(props) {

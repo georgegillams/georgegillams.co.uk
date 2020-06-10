@@ -9,7 +9,7 @@ import STYLES from './comments.scss';
 import { DebugObject, LoggedInOnly } from 'gg-components/Auth';
 import { Section, SubSection } from 'gg-components/Typography';
 
-const getClassName = cssModules(STYLES); // REGEX_REPLACED
+const getClassName = cssModules(STYLES);
 
 class Comments extends React.Component {
   static propTypes = {

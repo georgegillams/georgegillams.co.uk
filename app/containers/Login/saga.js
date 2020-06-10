@@ -4,7 +4,7 @@ import { selectors, actions, constants } from './redux-definitions';
 
 import { setUser } from 'containers/App/actions';
 import { pushMessage } from 'containers/RequestStatusWrapper/actions';
-import { COMMUNICATION_ERROR_MESSAGE } from 'helpers/constants';
+import { COMMUNICATION_ERROR_MESSAGE } from 'helpers/messageConstants';
 import apiStructure from 'helpers/apiStructure';
 import { makeSelectLoginRedirect } from 'containers/App/selectors';
 import request from 'utils/request';

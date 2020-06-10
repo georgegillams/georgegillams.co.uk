@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { FormBuilder } from 'gg-components/FormBuilder';
 
-import { USERNAME_REGEX, EMAIL_REGEX } from 'helpers/constants';
+import { USERNAME_REGEX, EMAIL_REGEX } from 'helpers/regexConstants';
 
 const SignUpForm = props => {
   const { onDataChanged, className, credentials, submitLabel, ...rest } = props;

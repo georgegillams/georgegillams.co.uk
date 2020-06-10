@@ -8,7 +8,7 @@ import { LoadingIndicator } from 'gg-components/LoadingIndicator';
 import DeprecationNotice from 'containers/DeprecationNotice';
 import STYLES from 'containers/pages.scss';
 
-const getClassName = cssModules(STYLES); // REGEX_REPLACED
+const getClassName = cssModules(STYLES);
 
 class GeorgeTrackingSystem extends React.Component {
   render() {

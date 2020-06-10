@@ -11,7 +11,7 @@ import {
   PageTitle,
 } from 'gg-components/Typography';
 
-const getClassName = cssModules(STYLES); // REGEX_REPLACED
+const getClassName = cssModules(STYLES);
 
 class NotFoundPage extends Component {
   render() {

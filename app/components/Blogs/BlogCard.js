@@ -1,9 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-
 import { ArticleCard } from 'gg-components/Cards';
 import { Tag } from 'gg-components/Tag';
-import { NON_EMOJI_REGEX } from 'helpers/constants';
+
+import { NON_EMOJI_REGEX } from 'helpers/regexConstants';
 
 const BlogCard = props => {
   const { blog, linkPrefix, ...rest } = props;

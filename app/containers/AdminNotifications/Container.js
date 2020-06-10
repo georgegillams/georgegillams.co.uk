@@ -2,27 +2,20 @@ import React, { Fragment } from 'react';
 import PropTypes from 'prop-types';
 import { Helmet } from 'react-helmet';
 import { cssModules } from 'gg-components/helpers/cssModules';
-
-import Skeleton from './Skeleton';
-import NotificationEntity from './NotificationEntity';
-
 import { PageTitle } from 'gg-components/Typography';
 import { Button } from 'gg-components/Button';
 import { FormBuilder } from 'gg-components/FormBuilder';
-import {
-  STRING_REGEX,
-  INT_REGEX,
-  EMAIL_REGEX,
-  NAME_REGEX,
-  PASSWORD_REGEX,
-  DECIMAL_REGEX,
-} from 'helpers/constants';
 import {
   DebugObject,
   APIEntity,
   AdminOnly,
   LoadingCover,
 } from 'gg-components/Auth';
+
+import NotificationEntity from './NotificationEntity';
+import Skeleton from './Skeleton';
+
+import { STRING_REGEX } from 'helpers/regexConstants';
 import STYLES from 'containers/pages.scss';
 
 const getClassName = cssModules(STYLES);
@@ -133,7 +126,7 @@ export default class AdminNotifications extends React.Component {
     );
 
     return (
-      <Fragment>
+      <>
         <Helmet title="Admin - notifications" />
         <LoadingCover
           loadingSkeleton={Skeleton}
@@ -155,7 +148,7 @@ export default class AdminNotifications extends React.Component {
             loadNotificationsError,
           }}
         />
-      </Fragment>
+      </>
     );
   }
 }

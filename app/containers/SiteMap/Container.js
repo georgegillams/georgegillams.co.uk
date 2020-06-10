@@ -5,11 +5,11 @@ import { cssModules } from 'gg-components/helpers/cssModules';
 import { SubSection, TextLink, PageTitle } from 'gg-components/Typography';
 import { LoadingIndicator } from 'gg-components/LoadingIndicator';
 
-import { NON_EMOJI_REGEX } from 'helpers/constants';
+import { NON_EMOJI_REGEX } from 'helpers/regexConstants';
 import redirects from 'helpers/redirects';
 import STYLES from 'containers/pages.scss';
 
-const getClassName = cssModules(STYLES); // REGEX_REPLACED
+const getClassName = cssModules(STYLES);
 
 export default class SiteMap extends React.Component {
   componentWillMount = () => {

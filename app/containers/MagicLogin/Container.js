@@ -15,17 +15,11 @@ import { Redirect } from 'gg-components/Redirect';
 
 import { LoginForm } from 'components/Forms';
 import { CookiesOnly } from 'components/Sessions';
-import {
-  REDIRECT_REGEX,
-  SORT_CODE_REGEX,
-  INT_REGEX,
-  STRING_REGEX,
-  DECIMAL_REGEX,
-} from 'helpers/constants';
+import { REDIRECT_REGEX } from 'helpers/regexConstants';
 import STYLES from 'containers/pages.scss';
 import appConfig from 'helpers/appConfig';
 
-const getClassName = cssModules(STYLES); // REGEX_REPLACED
+const getClassName = cssModules(STYLES);
 
 export default class Login extends React.Component {
   componentDidMount = () => {

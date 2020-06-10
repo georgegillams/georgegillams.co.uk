@@ -11,7 +11,7 @@ import {
 import { makeSelectBlogToDelete } from './selectors';
 
 import { pushMessage } from 'containers/RequestStatusWrapper/actions';
-import { COMMUNICATION_ERROR_MESSAGE } from 'helpers/constants';
+import { COMMUNICATION_ERROR_MESSAGE } from 'helpers/messageConstants';
 import apiStructure from 'helpers/apiStructure';
 import request from 'utils/request';
 

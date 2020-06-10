@@ -12,18 +12,6 @@ import {
 import { cssModules } from 'gg-components/helpers/cssModules';
 import { FormBuilder } from 'gg-components/FormBuilder';
 
-import {
-  STRING_REGEX,
-  INT_REGEX,
-  EMAIL_REGEX,
-  PASSWORD_REGEX,
-  DECIMAL_REGEX,
-  CARD_NUMBER_REGEX,
-  CVV_REGEX,
-  EXPIRY_REGEX,
-  NAME_REGEX,
-  TICKET_COST,
-} from 'helpers/constants';
 import STYLES from 'components/Forms/forms.scss';
 
 const getClassName = cssModules(STYLES);

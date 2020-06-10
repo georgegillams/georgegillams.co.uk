@@ -1,5 +1,5 @@
 import { dbLoad } from 'utils/database';
-import { STRING_REGEX, ID_REGEX } from 'helpers/constants';
+import { STRING_REGEX, ID_REGEX } from 'helpers/regexConstants';
 import appConfig from 'helpers/appConfig';
 import { RESOURCE_NOT_FOUND, UNAUTHORISED_WRITE } from 'utils/errorConstants';
 import { AuthError } from 'utils/errors';

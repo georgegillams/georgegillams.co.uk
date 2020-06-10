@@ -1,7 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { FormBuilder } from 'gg-components/FormBuilder';
-import { EMAIL_REGEX, PASSWORD_REGEX } from 'helpers/constants';
+
+import { EMAIL_REGEX, PASSWORD_REGEX } from 'helpers/regexConstants';
 
 const LoginForm = props => {
   const { className, credentials, onDataChanged, ...rest } = props;

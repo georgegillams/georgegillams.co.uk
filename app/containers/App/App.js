@@ -52,7 +52,7 @@ import Konami from 'containers/Konami';
 import MonzoPots from 'containers/MonzoPots/Loadable';
 import redirects from 'helpers/redirects';
 
-const getClassName = cssModules(STYLES); // REGEX_REPLACED
+const getClassName = cssModules(STYLES);
 
 const cleanWindowLocation = location => {
   let result = location;

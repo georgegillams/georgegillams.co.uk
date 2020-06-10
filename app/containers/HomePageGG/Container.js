@@ -7,7 +7,7 @@ import { ArticleCard, ARTICLE_CARD_LAYOUTS } from 'gg-components/Cards';
 import AboutPage from 'containers/About';
 import STYLES from 'containers/pages.scss';
 
-const getClassName = cssModules(STYLES); // REGEX_REPLACED
+const getClassName = cssModules(STYLES);
 
 export default class HomePage extends React.PureComponent {
   componentDidMount() {}

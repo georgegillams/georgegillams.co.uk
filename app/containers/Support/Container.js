@@ -13,7 +13,7 @@ import {
 } from 'gg-components/Typography';
 import STYLES from 'containers/pages.scss';
 
-const getClassName = cssModules(STYLES); // REGEX_REPLACED
+const getClassName = cssModules(STYLES);
 
 export default class Support extends React.Component {
   constructor(props) {

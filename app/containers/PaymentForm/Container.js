@@ -2,13 +2,13 @@ import React, { Fragment } from 'react';
 import PropTypes from 'prop-types';
 import { cssModules } from 'gg-components/helpers/cssModules';
 import { FormBuilder } from 'gg-components/FormBuilder';
-
 import { PageTitle } from 'gg-components/Typography';
 import { APIEntity } from 'gg-components/Auth';
 import { Button } from 'gg-components/Button';
 import { Checkbox } from 'gg-components/Checkbox';
+
 import STYLES from 'containers/pages.scss';
-import { EMAIL_REGEX, DECIMAL_REGEX } from 'helpers/constants';
+import { EMAIL_REGEX, DECIMAL_REGEX } from 'helpers/regexConstants';
 
 const getClassName = cssModules(STYLES);
 
@@ -114,7 +114,7 @@ export default class PaymentForm extends React.Component {
             <br />
             {showPayments &&
               filteredPayments.map(p => (
-                <Fragment>
+                <>
                   <APIEntity name="more" entityType="Payment" entity={p} />
                   <Button
                     destructive
@@ -124,7 +124,7 @@ export default class PaymentForm extends React.Component {
                   >
                     Delete
                   </Button>
-                </Fragment>
+                </>
               ))}
           </PageTitle>
         )}
