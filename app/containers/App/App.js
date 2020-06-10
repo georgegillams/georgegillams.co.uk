@@ -55,10 +55,12 @@ import redirects from 'helpers/redirects';
 const getClassName = cssModules(STYLES);
 
 const cleanWindowLocation = location => {
+  /* eslint-disable prefer-destructuring */
   let result = location;
   result = location.split('http://localhost:3000')[1];
   result = location.split(appConfig.siteUrl)[1];
   return result;
+  /* eslint-enable */
 };
 
 const getFullRedirect = destination => {

@@ -115,9 +115,46 @@ export default class AdminBlogEdit extends React.Component {
 }
 
 AdminBlogEdit.propTypes = {
-  loggingIn: PropTypes.bool,
-  error: PropTypes.oneOfType([PropTypes.object, PropTypes.bool]),
-  createdPayment: PropTypes.object,
-  login: PropTypes.func.isRequired,
+  setLoginRedirect: PropTypes.func,
+  // eslint-disable-next-line react/forbid-prop-types
+  user: PropTypes.object,
+  userLoading: PropTypes.bool,
   className: PropTypes.string,
+  loadBlog: PropTypes.func,
+  updateBlog: PropTypes.func,
+  createBlog: PropTypes.func,
+  // eslint-disable-next-line react/forbid-prop-types
+  blog: PropTypes.object,
+  loadingBlog: PropTypes.bool,
+  loadBlogSuccess: PropTypes.bool,
+  // eslint-disable-next-line react/forbid-prop-types
+  loadBlogError: PropTypes.object,
+  updatingBlog: PropTypes.bool,
+  updateBlogSuccess: PropTypes.bool,
+  // eslint-disable-next-line react/forbid-prop-types
+  updateBlogError: PropTypes.object,
+  creatingBlog: PropTypes.bool,
+  createBlogSuccess: PropTypes.bool,
+  // eslint-disable-next-line react/forbid-prop-types
+  createBlogError: PropTypes.object,
+};
+
+AdminBlogEdit.defaultProps = {
+  setLoginRedirect: null,
+  user: null,
+  userLoading: false,
+  className: null,
+  loadBlog: null,
+  updateBlog: null,
+  createBlog: null,
+  blog: null,
+  loadingBlog: false,
+  loadBlogSuccess: false,
+  loadBlogError: null,
+  updatingBlog: false,
+  updateBlogSuccess: false,
+  updateBlogError: null,
+  creatingBlog: false,
+  createBlogSuccess: false,
+  createBlogError: null,
 };

@@ -1,15 +1,7 @@
-import React, { Fragment } from 'react';
+import React from 'react';
 import PropTypes from 'prop-types';
 import { Helmet } from 'react-helmet';
-import BpkImage, {
-  withLazyLoading,
-  withLoadingBehavior,
-} from 'bpk-component-image';
-import { cssModules } from 'gg-components/helpers/cssModules';
-import { LoadingIndicator } from 'gg-components/LoadingIndicator';
-import { Button } from 'gg-components/Button';
 import { TextLink, PageTitle } from 'gg-components/Typography';
-import { CodeInline } from 'gg-components/Code';
 import { Redirect } from 'gg-components/Redirect';
 import { LoggedOutOnly, LoadingCover } from 'gg-components/Auth';
 
@@ -17,9 +9,6 @@ import Skeleton from './Skeleton';
 
 import { CookiesOnly } from 'components/Sessions';
 import { SignUpForm } from 'components/Forms';
-import STYLES from 'containers/pages.scss';
-
-const getClassName = cssModules(STYLES);
 
 export default class SignUp extends React.Component {
   render() {

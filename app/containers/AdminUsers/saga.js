@@ -5,7 +5,6 @@ import { selectors, actions, constants } from './redux-definitions';
 import { pushMessage } from 'containers/RequestStatusWrapper/actions';
 import { COMMUNICATION_ERROR_MESSAGE } from 'helpers/messageConstants';
 import apiStructure from 'helpers/apiStructure';
-import { associate } from 'helpers/objects';
 import request from 'utils/request';
 
 const { LOAD_USERS, REQUEST_MAGIC_LINK_FOR_USER, DELETE_USER } = constants;
@@ -39,15 +38,6 @@ const deleteUserSuccessMessage = {
 const deleteUserErrorMessage = {
   type: 'error',
   message: 'Could not delete user.',
-};
-
-const ticketSuccessMessage = {
-  type: 'success',
-  message: 'Ticket for user sent!',
-};
-const ticketErrorMessage = {
-  type: 'error',
-  message: 'Could not send ticket.',
 };
 
 export function* doDeleteUser() {

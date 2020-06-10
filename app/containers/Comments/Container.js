@@ -1,14 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { cssModules } from 'gg-components/helpers/cssModules';
+import { DebugObject, LoadingCover } from 'gg-components/Auth';
 
 import CommentsListSkeleton from './CommentsListSkeleton';
 
-import { DebugObject, LoadingCover } from 'gg-components/Auth';
 import Comments, { CommentInput } from 'components/Comments';
-import STYLES from 'containers/pages.scss';
-
-const getClassName = cssModules(STYLES);
 
 export default class CommentsContainer extends React.Component {
   componentWillMount = () => {

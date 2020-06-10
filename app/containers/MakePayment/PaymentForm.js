@@ -1,8 +1,6 @@
-import React, { Fragment } from 'react';
+import React from 'react';
 import PropTypes from 'prop-types';
-import { Input } from 'gg-components/Input';
 import { Button } from 'gg-components/Button';
-import { Paragraph, Section } from 'gg-components/Typography';
 import {
   injectStripe,
   CardNumberElement,
@@ -10,7 +8,6 @@ import {
   CardCVCElement,
 } from 'react-stripe-elements';
 import { cssModules } from 'gg-components/helpers/cssModules';
-import { FormBuilder } from 'gg-components/FormBuilder';
 
 import STYLES from 'components/Forms/forms.scss';
 

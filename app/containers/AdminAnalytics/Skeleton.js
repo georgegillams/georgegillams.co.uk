@@ -1,10 +1,10 @@
 import React from 'react';
-
+import PropTypes from 'prop-types';
 import { CompactCardSkeleton, SectionSkeleton } from 'gg-components/Skeletons';
 
 const getClassName = c => c;
 
-const AdminAnalyticsSkeleton = props => {
+const Skeleton = props => {
   const { className } = props;
 
   const outerClassNameFinal = [];
@@ -23,4 +23,12 @@ const AdminAnalyticsSkeleton = props => {
   );
 };
 
-export default AdminAnalyticsSkeleton;
+Skeleton.propTypes = {
+  className: PropTypes.string,
+};
+
+Skeleton.defaultProps = {
+  className: null,
+};
+
+export default Skeleton;

@@ -1,22 +1,14 @@
-import React, { Fragment } from 'react';
+import React from 'react';
 import PropTypes from 'prop-types';
 import { Helmet } from 'react-helmet';
-import BpkImage, {
-  withLazyLoading,
-  withLoadingBehavior,
-} from 'bpk-component-image';
 import { Input } from 'gg-components/Input';
 import { cssModules } from 'gg-components/helpers/cssModules';
-import { associate } from 'helpers/objects';
-
-import Skeleton from './Skeleton';
-
-import HelperFunctions from 'helpers/HelperFunctions';
 import { MoneyPot } from 'gg-components/MoneyPot';
 import { Button } from 'gg-components/Button';
 import { SubSection, PageTitle } from 'gg-components/Typography';
-import { LoadingCover } from 'gg-components/Auth';
 import { FormBuilder } from 'gg-components/FormBuilder';
+
+import { associate } from 'helpers/objects';
 import STYLES from 'containers/pages.scss';
 
 const getClassName = cssModules(STYLES);
@@ -78,7 +70,7 @@ export default class MonzoPots extends React.Component {
         <Helmet title="My monzo pots" />
         <PageTitle name="Monzo pot tracking 💳">
           {!monzoPotDisplayData && (
-            <Fragment>
+            <>
               <label
                 htmlFor="password"
                 className={getClassName('forms__label')}
@@ -96,7 +88,7 @@ export default class MonzoPots extends React.Component {
                 }}
                 placeholder="Password"
               />
-            </Fragment>
+            </>
           )}
           {monzoPotDisplayData && monzoPotDisplayData.map && (
             <Button
@@ -112,7 +104,7 @@ export default class MonzoPots extends React.Component {
           {monzoPotDisplayData &&
             monzoPotDisplayData.map &&
             monzoPotDisplayData.map(pot => (
-              <Fragment>
+              <>
                 <MoneyPot
                   name={pot.name}
                   balance={pot.balance}
@@ -138,7 +130,7 @@ export default class MonzoPots extends React.Component {
                 </SubSection>
                 <br />
                 <br />
-              </Fragment>
+              </>
             ))}
           {isAdmin && (
             <FormBuilder

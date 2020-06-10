@@ -3,13 +3,12 @@ import Helmet from 'react-helmet';
 import { cssModules } from 'gg-components/helpers/cssModules';
 import { InfoCell, INFO_CELL_STYLES } from 'gg-components/InfoCell';
 import withScroll from 'gg-components/ScrollContainer/withScroll.js';
-import { SubSection, TextLink, PageTitle } from 'gg-components/Typography';
+import { TextLink, PageTitle } from 'gg-components/Typography';
 import { Button } from 'gg-components/Button';
 
 import PAGES_STYLES from '../pages.scss';
 
 import STYLES from './contact.scss';
-import facebookLogo from './facebook.svg';
 import twitterLogo from './twitter.svg';
 import linkedinLogo from './linkedin.svg';
 import gurushotsLogo from './gurushots.svg';

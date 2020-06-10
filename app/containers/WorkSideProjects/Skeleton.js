@@ -1,17 +1,18 @@
-import React, { Fragment } from 'react';
+import React from 'react';
+import PropTypes from 'prop-types';
 import { cssModules } from 'gg-components/helpers/cssModules';
-
 import {
   SmallButtonSkeleton,
   SubSectionSkeleton,
   CardSkeleton,
   SectionSkeleton,
 } from 'gg-components/Skeletons';
+
 import STYLES from 'containers/pages.scss';
 
 const getClassName = cssModules(STYLES);
 
-const LoginFormSkeleton = props => {
+const Skeleton = props => {
   const { className } = props;
 
   const outerClassNameFinal = [getClassName('pages__container--prose')];
@@ -30,4 +31,12 @@ const LoginFormSkeleton = props => {
   );
 };
 
-export default LoginFormSkeleton;
+Skeleton.propTypes = {
+  className: PropTypes.string,
+};
+
+Skeleton.defaultProps = {
+  className: null,
+};
+
+export default Skeleton;

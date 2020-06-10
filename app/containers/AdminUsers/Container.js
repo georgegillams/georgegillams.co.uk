@@ -1,4 +1,4 @@
-import React, { Fragment } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import {
@@ -13,20 +13,13 @@ import { cssModules } from 'gg-components/helpers/cssModules';
 import queryString from 'query-string';
 import { Button } from 'gg-components/Button';
 import { Card } from 'gg-components/Cards';
-import {
-  DebugObject,
-  APIEntity,
-  AdminOnly,
-  LoadingCover,
-} from 'gg-components/Auth';
+import { DebugObject, AdminOnly, LoadingCover } from 'gg-components/Auth';
 import { Checkbox } from 'gg-components/Checkbox';
 
 import Skeleton from './Skeleton';
 import AdminUsersAPIEntity from './AdminUsersAPIEntity';
 
 import { SplitDetailView } from 'components/SplitDetailView';
-import appConfig from 'helpers/appConfig';
-import HelperFunctions from 'helpers/HelperFunctions';
 import STYLES from 'containers/pages.scss';
 
 const getClassName = cssModules(STYLES);

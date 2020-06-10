@@ -1,9 +1,7 @@
-import React, { Fragment } from 'react';
+import React from 'react';
 import PropTypes from 'prop-types';
 import { Helmet } from 'react-helmet';
-import { cssModules } from 'gg-components/helpers/cssModules';
 import { FormBuilder } from 'gg-components/FormBuilder';
-
 import { Button } from 'gg-components/Button';
 import {
   Paragraph,
@@ -11,9 +9,6 @@ import {
   TextLink,
   PageTitle,
 } from 'gg-components/Typography';
-import STYLES from 'containers/pages.scss';
-
-const getClassName = cssModules(STYLES);
 
 export default class Support extends React.Component {
   constructor(props) {
@@ -89,13 +84,13 @@ export default class Support extends React.Component {
                   </TextLink>
                 )}
                 {l.description && (
-                  <Fragment>
+                  <>
                     <br />
                     {l.description}
-                  </Fragment>
+                  </>
                 )}
                 {isAdmin && (
-                  <Fragment>
+                  <>
                     <br />
                     <Button
                       destructive
@@ -105,7 +100,7 @@ export default class Support extends React.Component {
                     >
                       Delete
                     </Button>
-                  </Fragment>
+                  </>
                 )}
               </SubSection>
             ))}

@@ -5,10 +5,6 @@ import BpkImage, {
   withLoadingBehavior,
 } from 'bpk-component-image';
 import { cssModules } from 'gg-components/helpers/cssModules';
-import MyDegreeImage from './degree_bitmoji.png';
-
-import STYLES from '../pages.scss';
-
 import {
   Paragraph,
   Section,
@@ -17,6 +13,11 @@ import {
   PageTitle,
 } from 'gg-components/Typography';
 import { DegreeModule } from 'gg-components/Degree';
+
+import STYLES from '../pages.scss';
+
+import MyDegreeImage from './degree_bitmoji.png';
+
 import Comments from 'containers/Comments';
 
 const getClassName = cssModules(STYLES);
