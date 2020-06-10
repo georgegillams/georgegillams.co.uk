@@ -8,6 +8,7 @@ import { dbLoadSingle } from 'utils/database';
 import POT_CONFIGS from './potConfigs';
 
 import { getTimeDifference } from 'helpers/time';
+import { AuthError } from 'utils/errors';
 
 function formatTransaction(transaction) {
   if (!transaction) {
@@ -41,18 +42,12 @@ function authMonzo(password) {
       const accessPassword = process.env.MONZO_ACCESS_PASSWORD;
 
       if (!accessToken) {
-        reject({
-          error: 'auth',
-          errorMessage: 'No access token configured',
-        });
+        reject(new AuthError('No access token configured'));
         return;
       }
 
       if (!password || !safeCompare(password, accessPassword)) {
-        reject({
-          error: 'auth',
-          errorMessage: 'Access password incorrect.',
-        });
+        reject(new AuthError('Access password incorrect'));
         return;
       }
 
@@ -96,11 +91,9 @@ function loadPotData(password) {
           .then(res => res.json())
           .then(data => {
             if (!data || !data.pots) {
-              reject({
-                error: 'auth',
-                errorMessage:
-                  'The Monzo token has expired. Tell George to generate a new one.',
-              });
+              reject(new AuthError(
+                  'The Monzo token has expired. Tell George to generate a new one.'
+              ))
               return;
             }
             resolve(data.pots);

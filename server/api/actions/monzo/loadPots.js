@@ -1,5 +1,6 @@
 /* eslint-disable */
 import { CardExpiryElement } from 'react-stripe-elements';
+import { NotFoundError } from 'utils/errors';
 
 import { loadPotData, getMonthsElapsedPercentage } from './private/helpers';
 import POT_CONFIGS from './private/potConfigs';
@@ -17,10 +18,7 @@ function loadPots(req) {
             p => p.name === potConfig.name && !p.deleted,
           )[0];
           if (!pot) {
-            reject({
-              error: 'unknown',
-              errorMessage: `Pot ${potConfig.name} doesn't seem to exist`,
-            });
+            reject(new NotFoundError(`Pot ${potConfig.name} doesn't seem to exist`));
             return null;
           }
 

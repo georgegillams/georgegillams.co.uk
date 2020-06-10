@@ -62,8 +62,8 @@ const appFunc = (req, res) => {
             res.status(err.httpStatus);
             res.json({ error: err.category, errorMessage: err.message });
           } else if (err instanceof Error) {
-            logger.error(`Uncategorised error`, err);
             // An error that we haven't created. Maybe created by redis or something
+            logger.error(`Uncategorised error`, err);
             const internalServerError = new InternalServerError(err.message);
             res.status(internalServerError.httpStatus);
             res.json({
@@ -71,11 +71,17 @@ const appFunc = (req, res) => {
               errorMessage: internalServerError.message,
             });
           } else {
-            logger.error(`LEGACY ERROR`, err);
-            // THIS IS LEGACY, FOR OLD API ACTIONS WHICH REJECT NON-ERROR VALUES
-            // Return a valid response even if there has been some server-side error.
-            // TODO - update to return an internal server error instead
-            res.json(err);
+            // The error is an invalid object format, instead of being an instance of Error
+            logger.error(
+              `LEGACY ERROR - a promise rejected an object instead of an actual Error`,
+              err,
+            );
+            const internalServerError = new InternalServerError(err.message);
+            res.status(internalServerError.httpStatus);
+            res.json({
+              error: internalServerError.category,
+              errorMessage: internalServerError.message,
+            });
           }
         });
     } else {
