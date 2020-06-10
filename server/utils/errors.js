@@ -19,6 +19,12 @@ class AuthError extends CategorisedError {
   }
 }
 
+class NetworkError extends CategorisedError {
+  constructor(message = '', ...args) {
+    super(503, 'network_error', message, ...args);
+  }
+}
+
 class InvalidInputError extends CategorisedError {
   constructor(message = '', ...args) {
     super(403, 'invalid_input', message, ...args);
@@ -44,18 +50,20 @@ class NotImplementedError extends CategorisedError {
 }
 
 export {
-  CategorisedError,
   AuthError,
-  NotFoundError,
-  NotImplementedError,
+  CategorisedError,
   InternalServerError,
   InvalidInputError,
+  NetworkError,
+  NotFoundError,
+  NotImplementedError,
 };
 export default {
-  CategorisedError,
   AuthError,
-  NotFoundError,
-  NotImplementedError,
+  CategorisedError,
   InternalServerError,
   InvalidInputError,
+  NetworkError,
+  NotFoundError,
+  NotImplementedError,
 };

@@ -48,8 +48,8 @@ const apiStructure = {
   resendPaymentReceipt: { method: POST, path: '/make-payment/resend-receipt' },
 
   // Monzo
-  loadMonzoPots: { method: GET, path: '/monzo/load-pots' },
-  loadMonzoTransactions: { method: GET, path: '/monzo/load-transactions' },
+  loadMonzoPots: { method: POST, path: '/monzo/load-pots' },
+  loadMonzoTransactions: { method: POST, path: '/monzo/load-transactions' },
   setMonzoAPIKey: { method: POST, path: '/monzo/set-key' },
 
   // Notifications
