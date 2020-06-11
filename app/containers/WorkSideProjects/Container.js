@@ -15,8 +15,10 @@ import {
 
 import STYLES from '../pages.scss';
 
-import VPNWarning_light from './VPNWarning_light.png';
-import VPNWarning_dark from './VPNWarning_dark.png';
+import VPNWarningLight from './VPNWarning_light.png';
+import VPNWarningDark from './VPNWarning_dark.png';
+import SraLevelLight from './SraLevel_light.png';
+import SraLevelDark from './SraLevel_dark.png';
 
 import Image from 'components/Image';
 
@@ -55,9 +57,32 @@ const WorkSideProjects = () => (
           altText="VPN Zoom warning notification"
           width={462}
           height={122}
-          lightSrc={VPNWarning_light}
-          darkSrc={VPNWarning_dark}
+          lightSrc={VPNWarningLight}
+          darkSrc={VPNWarningDark}
         />
+      </SubSection>
+
+      <SubSection name="Screen Reader Adventures">
+        <Paragraph>
+          Using VoiceOver on macOS is not trivial. The keyboard commands are not
+          intuitive, so I created an online game that gradually introduces new
+          commands and VO concepts.
+        </Paragraph>
+        <Image
+          className={getClassName('pages__image')}
+          altText="Screen Reader Adventures level"
+          width={1041}
+          height={999}
+          lightSrc={SraLevelLight}
+          darkSrc={SraLevelDark}
+        />
+        <Button
+          className={getClassName('pages__component--upper-margin')}
+          hrefExternal
+          href="https://www.screen-reader-adventures.com/"
+        >
+          Screen Reader Adventures →
+        </Button>
       </SubSection>
 
       <SubSection name="Browser scripts">
