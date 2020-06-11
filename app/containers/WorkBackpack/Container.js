@@ -20,7 +20,7 @@ const WorkBackpack = () => (
         <TextLink external href="https://backpack.github.io/">
           Backpack
         </TextLink>{' '}
-        is Skyscanner's open-source design system which supports 4 platforms
+        is Skyscanner&#39;s open-source design system which supports 4 platforms
         (Android, iOS, React Native and Web). Our work which combines Design and
         Engineering in equal measures enables fast development and reduces
         effort duplication.
@@ -37,10 +37,11 @@ const WorkBackpack = () => (
           products, leveraging the coverage of Backpack libraries to enable
           seamless experimentation and roll-out across the entire ecosystem. We
           made use of CSS variables for web and Appearance proxies for iOS) to
-          allow us to swap "themes" at runtime. This allowed teams to test every
-          part of their UI was responding to theming long before the new brand
-          was finalised. When the new brand was signed off, we were able to
-          easily add a new theme and control its rollout to users remotely.
+          allow us to swap &quot;themes&quot; at runtime. This allowed teams to
+          test every part of their UI was responding to theming long before the
+          new brand was finalised. When the new brand was signed off, we were
+          able to easily add a new theme and control its rollout to users
+          remotely.
           <br />
           <br />A colleague wrote a great{' '}
           <TextLink

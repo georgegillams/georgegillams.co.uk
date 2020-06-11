@@ -47,20 +47,20 @@ app.use(
 app.use(
   slowDown({
     windowMs: 15 * 60 * 1000, // 15 minutes
-    delayAfter: NODE_ENV === 'production' ? 50 : 10000, // allow 50 requests per window without limiting...
-    delayMs: 1000, // add 1s delay per request above 50...
-    maxDelayMs: 20000, // with a maximum delay of 20 seconds
+    delayAfter: NODE_ENV === 'production' ? 100 : 10000, // allow 50 requests per window without limiting...
+    delayMs: 500, // add 1s delay per request above 50...
+    maxDelayMs: 10000, // with a maximum delay of 10 seconds
     // request # 1 no delay
     // ...
-    // request # 50 no delay
-    // request # 51 is delayed by 1000ms
-    // request # 52 is delayed by 2000ms
-    // request # 53 is delayed by 3000ms
+    // request # 100 no delay
+    // request # 101 is delayed by 500ms
+    // request # 102 is delayed by 1000ms
+    // request # 103 is delayed by 1500ms
     // ...
-    // request # 70 is delayed by 20s
-    // request # 71 is delayed by 20s <-- won't exceed 20s delay
+    // request # 120 is delayed by 10s
+    // request # 121 is delayed by 10s <-- won't exceed 10s delay
     //
-    // The max request rate is 50 in 0s + 20 in 210s + 34 in 680s = 104 in 15 minutes = 416 in 1 hour
+    // The max request rate is 100 in 0s + 20 in 105s + 85 in 850s = 205 in 15 minutes = 820 in 1 hour
     skip: req => {
       if (req.originalUrl.includes('api')) {
         return false;

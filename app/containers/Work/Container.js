@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import Helmet from 'react-helmet';
 import { cssModules } from 'gg-components/helpers/cssModules';
 import { Button } from 'gg-components/Button';
@@ -24,15 +24,15 @@ const Work = () => (
         </Paragraph>
       </SubSection>
 
-      <SubSection name="Backpack">
+      <SubSection name="Skyscanner">
         <Paragraph>
           <TextLink external href="https://backpack.github.io/">
             Backpack
           </TextLink>{' '}
-          is Skyscanner's open-source design system which supports 4 platforms
-          (Android, iOS, React Native and Web). Our work which combines Design
-          and Engineering in equal measures enables fast development and reduces
-          effort duplication.
+          is Skyscanner&#39;s open-source design system which supports 4
+          platforms (Android, iOS, React Native and Web). Our work which
+          combines Design and Engineering in equal measures enables fast
+          development and reduces effort duplication.
         </Paragraph>
         <br />
         <Button
@@ -71,7 +71,7 @@ const Work = () => (
         </Button>
       </SubSection>
 
-      <SubSection name="EWOS">
+      <SubSection name="Leonardo Company">
         <Paragraph>
           In 2015, I joined the EWOS (Electronic Warfare Operational Support)
           team at{' '}
@@ -88,13 +88,19 @@ const Work = () => (
           were all involved, was key to our success. Throughout some 60 weeks
           there, I immensely improved my ability to navigate large codebases and
           to produce readable, manageable code myself.
+          <br />
+          <br />
+          Whilst working at Leonardo, I also got involved in a number of STEM
+          activities. These included talking about industry opportunities at
+          careers events, helping with local school projects, and delivering
+          workshops.
         </Paragraph>
       </SubSection>
 
       <SubSection name="Side projects">
         <Paragraph>
-          There's some other stuff I've built over the years, including this
-          website.
+          There&#39;s some other stuff I&#39;ve built over the years, including
+          this website.
         </Paragraph>
         <br />
         <Button
@@ -103,6 +109,23 @@ const Work = () => (
         >
           My side projects →
         </Button>
+      </SubSection>
+
+      <SubSection name="Videography">
+        <Paragraph>
+          Before turning to Software Engineering, I was involved in professional
+          film and TV production. From filming dance-shows to Weddings and
+          University graduation ceremonies.
+        </Paragraph>
+      </SubSection>
+
+      <SubSection name="Stage work">
+        <Paragraph>
+          I was involved in a number of stage performances. I was involved in
+          Tosca at the Royal Opera House in 2008, and the Glyndebourne Carmen
+          tour in 2009. I also sang in a modern-day adaptation of Handel&#39;s
+          Semele in the Edinburgh Fringe Festival in 2017.
+        </Paragraph>
       </SubSection>
     </PageTitle>
   </div>
