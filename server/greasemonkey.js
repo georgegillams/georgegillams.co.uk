@@ -58,9 +58,7 @@ function sendGreasemonkeyFile(scriptId, req, res) {
           );
         });
       } else {
-        res
-          .status(500)
-          .send({ error: 'An error occurred fetching resources from GitHub.' });
+        res.status(404).send({ error: `Script ${scriptId} not found` });
       }
     });
   } catch (err) {
