@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import PropTypes from 'prop-types';
 import { Helmet } from 'react-helmet';
 import { cssModules } from 'gg-components/helpers/cssModules';
@@ -14,55 +14,56 @@ import STYLES from 'containers/pages.scss';
 
 const getClassName = cssModules(STYLES);
 
-export default class BlogViewer extends React.Component {
-  componentWillMount = () => {
-    const blogId = this.props.match.params.id;
-    this.props.loadBlog(blogId);
-  };
+const BlogViewer = props => {
+  useEffect(() => {
+    const blogId = props.match.params.id;
+    props.loadBlog(blogId);
+  }, []);
 
-  render() {
-    const { user, blogId, blogs, blogLoadError, className } = this.props;
-    const outerClassNameFinal = [getClassName('pages__container--prose')];
+  const { user, blogId, blogs, blogLoadError, className } = props;
+  const outerClassNameFinal = [getClassName('pages__container--prose')];
 
-    if (className) {
-      outerClassNameFinal.push(className);
-    }
-
-    let blog = null;
-    if (blogs && blogs[blogId]) {
-      blog = blogs[blogId];
-    }
-
-    return (
-      <div className={outerClassNameFinal.join(' ')}>
-        <Helmet title="Blog" />
-        <LoadingCover
-          loadingSkeleton={Skeleton}
-          loading={!blog}
-          error={blogLoadError}
-        >
-          {blog && (
-            <>
-              <BlogRenderer
-                showEditLink={user && user.admin}
-                centered={
-                  blog.tags
-                    ? HelperFunctions.includes(blog.tags, 'travel')
-                    : false
-                }
-                blog={blog}
-              />
-              <Comments pageId={blog.id} />
-              <CreativeCommons />
-            </>
-          )}
-        </LoadingCover>
-      </div>
-    );
+  if (className) {
+    outerClassNameFinal.push(className);
   }
-}
+
+  let blog = null;
+  if (blogs && blogs[blogId]) {
+    blog = blogs[blogId];
+  }
+
+  return (
+    <div className={outerClassNameFinal.join(' ')}>
+      <Helmet title={blog ? blog.title : 'Blog loading'} />
+      <LoadingCover
+        loadingSkeleton={Skeleton}
+        loading={!blog}
+        error={blogLoadError}
+      >
+        {blog && (
+          <>
+            <BlogRenderer
+              showEditLink={user && user.admin}
+              centered={
+                blog.tags
+                  ? HelperFunctions.includes(blog.tags, 'travel')
+                  : false
+              }
+              blog={blog}
+            />
+            <Comments pageId={blog.id} />
+            <CreativeCommons />
+          </>
+        )}
+      </LoadingCover>
+    </div>
+  );
+};
 
 BlogViewer.propTypes = {
+  // eslint-disable-next-line react/forbid-prop-types
+  match: PropTypes.object.isRequired,
+  loadBlog: PropTypes.func.isRequired,
   // eslint-disable-next-line react/forbid-prop-types
   blogId: PropTypes.string,
   blogLoadError: PropTypes.oneOfType([PropTypes.object, PropTypes.bool]),
@@ -79,3 +80,5 @@ BlogViewer.defaultProps = {
   className: null,
   user: null,
 };
+
+export default BlogViewer;
