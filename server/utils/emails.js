@@ -4,6 +4,7 @@ import { dbCreate } from 'utils/database';
 import lockPromise from 'utils/lock';
 import appConfig from 'helpers/appConfig';
 
+// eslint-disable-next-line import/no-mutable-exports
 let primaryColor = '#44AEFF';
 let primaryColorFaded = '#E5F4FF';
 let logoHtml =
@@ -64,4 +65,6 @@ export {
   FONT_SIZE_SM,
   FONT_SIZE_BASE,
   EMAIL_SENDER_ADDRESS,
+  EMAIL_WIDTH,
+  primaryColor as PRIMARY_COLOR,
 };
