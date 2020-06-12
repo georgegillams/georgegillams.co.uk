@@ -7,7 +7,7 @@ import { Card } from 'gg-components/Cards';
 import AdminUserEdit from 'containers/AdminUserEdit/Loadable';
 
 const AdminUsersAPIEntity = props => {
-  const { compact, entity, onUserUpdateSuccess, children } = props;
+  const { compact, entity, onUserUpdateSuccess, children, ...rest } = props;
   const [editing, setEditing] = useState(false);
 
   let backgroundColor = null; // red
@@ -59,13 +59,23 @@ const AdminUsersAPIEntity = props => {
   );
 
   if (compact) {
-    return <Card>{content}</Card>;
+    return <Card {...rest}>{content}</Card>;
   }
-  return <div>{content}</div>;
+  return <div {...rest}>{content}</div>;
 };
 
 AdminUsersAPIEntity.propTypes = {
+  // eslint-disable-next-line react/forbid-prop-types
   entity: PropTypes.object.isRequired,
+  compact: PropTypes.boolean,
+  onUserUpdateSuccess: PropTypes.func,
+  children: PropTypes.node,
+};
+
+AdminUsersAPIEntity.defaultProps = {
+  compact: false,
+  onUserUpdateSuccess: null,
+  children: null,
 };
 
 export default AdminUsersAPIEntity;

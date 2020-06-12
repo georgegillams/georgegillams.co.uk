@@ -5,10 +5,10 @@ import { Paragraph, PageTitle } from 'gg-components/Typography';
 import { DebugObject } from 'gg-components/Auth';
 
 const AnalyticEntity = props => {
-  const { entity, children } = props;
+  const { entity, children, ...rest } = props;
 
   return (
-    <Card>
+    <Card {...rest}>
       <PageTitle name={entity.url}>
         {entity.count && (
           <>
