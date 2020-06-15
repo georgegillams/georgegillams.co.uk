@@ -37,10 +37,13 @@ const NavigationBarWrapper = props => {
     <NavigationItem name="Site map" linkUrl="/sitemap" />,
   ];
 
+  const date = new Date();
+  const isPride = date.getMonth() === 5;
+
   return (
     <NavigationBar
       menuItems={menuItems}
-      logo={<Logo padding={false} small animated />}
+      logo={<Logo padding={false} pride={isPride} small animated />}
       accountMenuItem={accountItem}
     />
   );
