@@ -5,7 +5,6 @@ import BpkImage, {
   withLazyLoading,
   withLoadingBehavior,
 } from 'bpk-component-image';
-import { CreativeCommons } from 'gg-components/CreativeCommons';
 import { ArticleCard, ARTICLE_CARD_LAYOUTS } from 'gg-components/Cards';
 import {
   Paragraph,
@@ -17,6 +16,7 @@ import { cssModules } from 'gg-components/helpers/cssModules';
 
 import STYLES from '../pages.scss';
 
+import { CreativeCommons } from 'components/CreativeCommons';
 import GraphicContent, {
   withGraphicContentBehaviour,
 } from 'components/GraphicContent';

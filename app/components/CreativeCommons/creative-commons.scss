@@ -1,0 +1,30 @@
+@import '~utils/tokens';
+
+.creative-commons {
+  &__wrapper {
+    display: flex;
+    width: 100vw;
+    margin-top: 2rem;
+    margin-left: calc(-50vw + 50%);
+    padding-top: 1rem;
+    justify-content: center;
+    background-color: $alternating-background-color-1;
+
+    @media (prefers-color-scheme: dark) {
+      background-color: $alternating-background-color-1-invert;
+    }
+  }
+
+  &__inner {
+    width: auto;
+    max-width: 60rem;
+    padding-right: 1.875rem;
+    padding-bottom: 3rem;
+    padding-left: 1.865rem;
+
+    @include bpk-breakpoint-tablet {
+      padding-right: 0.9375rem;
+      padding-left: 0.9375rem;
+    }
+  }
+}

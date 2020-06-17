@@ -3,10 +3,11 @@ import PropTypes from 'prop-types';
 import { Helmet } from 'react-helmet';
 import { Section } from 'gg-components/Typography';
 import { FormBuilder } from 'gg-components/FormBuilder';
-import { DebugObject, AdminOnly, LoadingCover } from 'gg-components/Auth';
+import { DebugObject, LoadingCover } from 'gg-components/Auth';
 
 import Skeleton from './Skeleton';
 
+import { AdminOnly } from 'components/Walls';
 import { EMAIL_REGEX, USERNAME_REGEX } from 'helpers/regexConstants';
 
 export default class AdminUsertoeditEdit extends React.Component {

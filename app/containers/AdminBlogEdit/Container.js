@@ -2,10 +2,11 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Helmet } from 'react-helmet';
 import { PageTitle } from 'gg-components/Typography';
-import { DebugObject, AdminOnly, LoadingCover } from 'gg-components/Auth';
+import { DebugObject, LoadingCover } from 'gg-components/Auth';
 
 import Skeleton from './Skeleton';
 
+import { AdminOnly } from 'components/Walls';
 import { CreateBlogForm } from 'components/Forms';
 
 export default class AdminBlogEdit extends React.Component {

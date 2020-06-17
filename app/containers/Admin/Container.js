@@ -4,10 +4,11 @@ import { Helmet } from 'react-helmet';
 import { cssModules } from 'gg-components/helpers/cssModules';
 import { PageTitle } from 'gg-components/Typography';
 import { ArticleCard, ARTICLE_CARD_LAYOUTS } from 'gg-components/Cards';
-import { DebugObject, AdminOnly, LoadingCover } from 'gg-components/Auth';
+import { DebugObject, LoadingCover } from 'gg-components/Auth';
 
 import Skeleton from './Skeleton';
 
+import { AdminOnly } from 'components/Walls';
 import { CookiesOnly } from 'components/Sessions';
 import STYLES from 'containers/pages.scss';
 

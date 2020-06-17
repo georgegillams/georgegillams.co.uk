@@ -3,10 +3,11 @@ import PropTypes from 'prop-types';
 import { Helmet } from 'react-helmet';
 import { TextLink, PageTitle } from 'gg-components/Typography';
 import { Redirect } from 'gg-components/Redirect';
-import { LoggedOutOnly, LoadingCover } from 'gg-components/Auth';
+import { LoadingCover } from 'gg-components/Auth';
 
 import Skeleton from './Skeleton';
 
+import { LoggedOutOnly } from 'components/Walls';
 import { CookiesOnly } from 'components/Sessions';
 import { SignUpForm } from 'components/Forms';
 

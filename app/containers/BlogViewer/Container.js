@@ -3,10 +3,10 @@ import PropTypes from 'prop-types';
 import { Helmet } from 'react-helmet';
 import { cssModules } from 'gg-components/helpers/cssModules';
 import { LoadingCover } from 'gg-components/Auth';
-import { CreativeCommons } from 'gg-components/CreativeCommons';
 
 import Skeleton from './Skeleton';
 
+import { CreativeCommons } from 'components/CreativeCommons';
 import { BlogRenderer } from 'components/Typography';
 import HelperFunctions from 'helpers/HelperFunctions';
 import Comments from 'containers/Comments';

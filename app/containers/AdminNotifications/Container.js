@@ -5,11 +5,12 @@ import { cssModules } from 'gg-components/helpers/cssModules';
 import { PageTitle } from 'gg-components/Typography';
 import { Button } from 'gg-components/Button';
 import { FormBuilder } from 'gg-components/FormBuilder';
-import { DebugObject, AdminOnly, LoadingCover } from 'gg-components/Auth';
+import { DebugObject, LoadingCover } from 'gg-components/Auth';
 
 import NotificationEntity from './NotificationEntity';
 import Skeleton from './Skeleton';
 
+import { AdminOnly } from 'components/Walls';
 import { STRING_REGEX } from 'helpers/regexConstants';
 import STYLES from 'containers/pages.scss';
 

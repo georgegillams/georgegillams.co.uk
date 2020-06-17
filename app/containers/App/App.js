@@ -2,14 +2,14 @@ import React from 'react';
 import { Helmet } from 'react-helmet';
 import { Switch, Route } from 'react-router-dom';
 import { cssModules } from 'gg-components/helpers/cssModules';
-import { Footer } from 'gg-components/Footer';
 import { Redirect } from 'gg-components/Redirect';
-import appConfig from 'helpers/appConfig';
-import HelperFunctions from 'helpers/HelperFunctions';
-import redirects from 'helpers/redirects';
 
 import STYLES from './style.scss';
 
+import { Footer } from 'components/Footer';
+import appConfig from 'helpers/appConfig';
+import HelperFunctions from 'helpers/HelperFunctions';
+import redirects from 'helpers/redirects';
 import ScrollToTop from 'components/ScrollToTop';
 import PageContainer from 'containers/PageContainer';
 import AccountPage from 'containers/Account/Loadable';
