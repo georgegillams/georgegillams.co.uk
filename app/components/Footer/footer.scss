@@ -1,0 +1,28 @@
+@import '~utils/tokens';
+
+.footer {
+  &__container {
+    display: flex;
+    height: 13rem;
+    padding: 2rem 4rem;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: $not-black;
+    background-position: center;
+    background-size: cover;
+    color: $not-black-invert;
+
+    @media (prefers-color-scheme: dark) {
+      border-top: solid white 0.15rem;
+      background-color: $background-color-elevated-colored-invert;
+    }
+  }
+
+  &__logo {
+    text-align: center;
+  }
+
+  &__tech {
+    text-align: center;
+  }
+}

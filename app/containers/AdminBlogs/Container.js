@@ -5,15 +5,11 @@ import { cssModules } from 'gg-components/helpers/cssModules';
 import { PageTitle } from 'gg-components/Typography';
 import { Card } from 'gg-components/Cards';
 import { Button } from 'gg-components/Button';
-import {
-  DebugObject,
-  APIEntity,
-  AdminOnly,
-  LoadingCover,
-} from 'gg-components/Auth';
+import { DebugObject, APIEntity, LoadingCover } from 'gg-components/Auth';
 
 import Skeleton from './Skeleton';
 
+import { AdminOnly } from 'components/Walls';
 import { BlogCard } from 'components/Blogs';
 import STYLES from 'containers/pages.scss';
 

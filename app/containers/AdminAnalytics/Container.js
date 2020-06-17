@@ -5,11 +5,12 @@ import { Helmet } from 'react-helmet';
 import { cssModules } from 'gg-components/helpers/cssModules';
 import { Button } from 'gg-components/Button';
 import { Paragraph, PageTitle } from 'gg-components/Typography';
-import { DebugObject, AdminOnly, LoadingCover } from 'gg-components/Auth';
+import { DebugObject, LoadingCover } from 'gg-components/Auth';
 
 import AnalyticEntity from './AnalyticEntity';
 import Skeleton from './Skeleton';
 
+import { AdminOnly } from 'components/Walls';
 import HelperFunctions from 'helpers/HelperFunctions';
 import STYLES from 'containers/pages.scss';
 

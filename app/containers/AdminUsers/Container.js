@@ -13,12 +13,13 @@ import { cssModules } from 'gg-components/helpers/cssModules';
 import queryString from 'query-string';
 import { Button } from 'gg-components/Button';
 import { Card } from 'gg-components/Cards';
-import { DebugObject, AdminOnly, LoadingCover } from 'gg-components/Auth';
+import { DebugObject, LoadingCover } from 'gg-components/Auth';
 import { Checkbox } from 'gg-components/Checkbox';
 
 import Skeleton from './Skeleton';
 import AdminUsersAPIEntity from './AdminUsersAPIEntity';
 
+import { AdminOnly } from 'components/Walls';
 import { SplitDetailView } from 'components/SplitDetailView';
 import STYLES from 'containers/pages.scss';
 

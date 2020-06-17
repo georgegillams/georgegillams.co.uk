@@ -2,10 +2,11 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Helmet } from 'react-helmet';
 import { TextLink, PageTitle } from 'gg-components/Typography';
-import { DebugObject, LoggedOutOnly, LoadingCover } from 'gg-components/Auth';
+import { DebugObject, LoadingCover } from 'gg-components/Auth';
 
 import Skeleton from './Skeleton';
 
+import { LoggedOutOnly } from 'components/Walls';
 import { LoginForm } from 'components/Forms';
 import { CookiesOnly } from 'components/Sessions';
 

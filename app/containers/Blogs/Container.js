@@ -3,11 +3,11 @@ import PropTypes from 'prop-types';
 import { Helmet } from 'react-helmet';
 import { cssModules } from 'gg-components/helpers/cssModules';
 import { DebugObject, LoadingCover } from 'gg-components/Auth';
-import { CreativeCommons } from 'gg-components/CreativeCommons';
 
 import BlogListSkeleton from './BlogListSkeleton';
 import BlogsNav from './BlogsNav';
 
+import { CreativeCommons } from 'components/CreativeCommons';
 import { BlogsList } from 'components/Blogs';
 import STYLES from 'containers/pages.scss';
 

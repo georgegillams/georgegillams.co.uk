@@ -3,10 +3,11 @@ import PropTypes from 'prop-types';
 import { Helmet } from 'react-helmet';
 import { Button } from 'gg-components/Button';
 import { Paragraph, PageTitle } from 'gg-components/Typography';
-import { DebugObject, LoggedInOnly, LoadingCover } from 'gg-components/Auth';
+import { DebugObject, LoadingCover } from 'gg-components/Auth';
 
 import Skeleton from './Skeleton';
 
+import { LoggedInOnly } from 'components/Walls';
 import { CookiesOnly } from 'components/Sessions';
 
 export default class Account extends React.Component {

@@ -7,7 +7,8 @@ import CommentInput from './CommentInput';
 import Comment from './Comment';
 import STYLES from './comments.scss';
 
-import { DebugObject, LoggedInOnly } from 'gg-components/Auth';
+import {  LoggedInOnly } from 'components/Walls';
+import { DebugObject } from 'gg-components/Auth';
 import { Section, SubSection } from 'gg-components/Typography';
 
 const getClassName = cssModules(STYLES);
