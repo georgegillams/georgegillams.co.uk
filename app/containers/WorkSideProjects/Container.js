@@ -12,7 +12,6 @@ import {
   TextLink,
   PageTitle,
 } from 'gg-components/Typography';
-import Image from 'components/Image';
 
 import STYLES from '../pages.scss';
 
@@ -20,6 +19,8 @@ import VPNWarningLight from './VPNWarning_light.png';
 import VPNWarningDark from './VPNWarning_dark.png';
 import SraLevelLight from './SraLevel_light.png';
 import SraLevelDark from './SraLevel_dark.png';
+
+import Image from 'components/Image';
 
 const getClassName = cssModules(STYLES);
 
@@ -58,10 +59,11 @@ const WorkSideProjects = () => (
           , or modify webpack config. It will work out of the box with a fresh
           create react app.
           <br />
+          <br />
           <Button
             className={getClassName('work-side-projects__component')}
             hrefExternal
-            href="github.com/georgegillams/backpack-transpiled/"
+            href="https://github.com/georgegillams/backpack-transpiled/"
           >
             backpack-transpiled →
           </Button>
