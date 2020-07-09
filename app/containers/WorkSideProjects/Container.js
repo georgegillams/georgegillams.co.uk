@@ -12,6 +12,7 @@ import {
   TextLink,
   PageTitle,
 } from 'gg-components/Typography';
+import Image from 'components/Image';
 
 import STYLES from '../pages.scss';
 
@@ -19,8 +20,6 @@ import VPNWarningLight from './VPNWarning_light.png';
 import VPNWarningDark from './VPNWarning_dark.png';
 import SraLevelLight from './SraLevel_light.png';
 import SraLevelDark from './SraLevel_dark.png';
-
-import Image from 'components/Image';
 
 const getClassName = cssModules(STYLES);
 
@@ -33,6 +32,42 @@ const WorkSideProjects = () => (
   <div className={getClassName('pages__container--prose')}>
     <Helmet title="Side projects" />
     <PageTitle link={{ to: '/work', text: 'Work' }} name="Side projects">
+      <SubSection name="Backpack transpiled">
+        <Paragraph>
+          At Skyscanner, we publish{' '}
+          <TextLink href="https://backpack.github.io/" external>
+            Backpack
+          </TextLink>{' '}
+          web libraries untranspiled, as several different packages.
+          <br />
+          <br />
+          backpack-transpiled is a single package, containing all the web
+          components available in Backpack. Thanks to modern code-splitting and
+          tree-shaking techniques, it&#39;s possible to import a single
+          component from this package without negatively affecting bundle size.
+          <br />
+          <br />
+          Because backpack-transpiled is completely transpiled, there&#39;s no
+          need to use{' '}
+          <TextLink
+            external
+            href="https://www.npmjs.com/package/backpack-react-scripts"
+          >
+            backpack-react-scripts
+          </TextLink>
+          , or modify webpack config. It will work out of the box with a fresh
+          create react app.
+          <br />
+          <Button
+            className={getClassName('work-side-projects__component')}
+            hrefExternal
+            href="github.com/georgegillams/backpack-transpiled/"
+          >
+            backpack-transpiled →
+          </Button>
+        </Paragraph>
+      </SubSection>
+
       <SubSection name="VPN Video Checker">
         <Paragraph>
           While we&apos;re in lockdown, many of us are relying on video calls
