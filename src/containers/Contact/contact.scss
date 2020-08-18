@@ -1,0 +1,24 @@
+@import '~utils/tokens';
+
+.contact {
+  &__icon-image-container {
+    display: flex;
+    height: 100%;
+    align-items: center;
+  }
+
+  &__icon-image {
+    width: 6rem;
+    height: 6rem;
+
+    &--dark-invert {
+      @media (prefers-color-scheme: dark) {
+        filter: invert(100%);
+      }
+    }
+  }
+
+  &__button {
+    margin: $spacing-base $spacing-base 0.5rem $spacing-base;
+  }
+}

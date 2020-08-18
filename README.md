@@ -61,7 +61,7 @@ The following environment variables should be set up
 
 ### Hosting on Heroku
 
-To host this on Heroku, you will need to add the [Heroku-redis Add-on](https://devcenter.heroku.com/articles/heroku-redis). Doing so will create a the REDIS_URL environment variable required to connect to the DB.
+To host this on Heroku, you will need to add the [Heroku-redis Add-on](https://devcenter.heroku.com/articles/heroku-redis). Doing so will create a the REDIS_URL environment variable required to connect to the DB. The server code will automatically use this connection if present instead of connecting to a local instance.
 
 ## Contributing
 

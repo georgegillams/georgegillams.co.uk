@@ -1,4 +1,4 @@
-import { dbLoad } from 'utils/database';
+import { dbLoad } from 'utils/common/database';
 
 export default function load() {
   return dbLoad({

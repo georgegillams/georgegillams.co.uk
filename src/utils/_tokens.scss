@@ -1,0 +1,20 @@
+@import '~gg-components/Tokens/common';
+
+// Override or define new tokens here:
+
+$page-max-width: 60rem;
+$page-max-width-prose: 41.25rem;
+
+@mixin card-container {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+@mixin centred {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}

@@ -2,11 +2,9 @@
 
 import loadAll from './loadAll.js';
 
-import { dbCreate } from 'utils/database';
-import {
-  clearDatabaseCollection,
-  createUsersWithSessions,
-} from 'utils/testUtils';
+import { SESSION_COOKIE_KEY } from 'helpers/storageConstants';
+import { dbCreate } from 'utils/common/database';
+import { clearDatabaseCollection, createUsersWithSessions } from 'utils/common/testUtils';
 
 beforeEach(() => {
   clearDatabaseCollection('users');
@@ -42,7 +40,7 @@ const createSomeValues = () => {
 
 test('load blogs as admin - returns all values', () => {
   const req = {
-    cookies: { session: 'adminSessionKey1' },
+    cookies: { [SESSION_COOKIE_KEY]: 'adminSessionKey1' },
     headers: {},
     body: {},
   };
@@ -65,7 +63,7 @@ test('load blogs as admin - returns all values', () => {
 
 test('load blogs as non-admin - returns published, non-deleted values', () => {
   const req = {
-    cookies: { session: 'nonAdminSessionKey1' },
+    cookies: { [SESSION_COOKIE_KEY]: 'nonAdminSessionKey1' },
     headers: {},
     body: {},
   };

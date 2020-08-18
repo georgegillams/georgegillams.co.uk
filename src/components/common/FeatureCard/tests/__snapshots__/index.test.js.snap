@@ -1,0 +1,165 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<NavigationItem /> Should render correctly 1`] = `
+<div>
+  <div
+    class="feature-card"
+    role="button"
+    style="cursor: pointer;"
+    tabindex="0"
+  >
+    <div
+      class="card"
+    >
+      <div
+        class="card__background"
+        style="background-image: url(null);"
+      />
+      <div
+        class="card__outer-container card__outer-container--padded"
+      >
+        <div
+          class="feature-card__outer-container feature-card__outer-container--auto"
+        >
+          <div
+            class="feature-card__date"
+          />
+          <div
+            class="feature-card__center-container"
+          >
+            <div
+              class="typography__main typography--no-padding feature-card__title"
+            />
+          </div>
+        </div>
+      </div>
+      <div
+        class="card__banner"
+      />
+    </div>
+  </div>
+</div>
+`;
+
+exports[`<NavigationItem /> Should render correctly hrefExternal 1`] = `
+<div>
+  <a
+    class="feature-card"
+    href="https://duckduckgo.com/"
+    role="button"
+    style="text-decoration: none;"
+  >
+    <div
+      class="card"
+    >
+      <div
+        class="card__background"
+        style="background-image: url(null);"
+      />
+      <div
+        class="card__outer-container card__outer-container--padded"
+      >
+        <div
+          class="feature-card__outer-container feature-card__outer-container--auto"
+        >
+          <div
+            class="feature-card__date"
+          />
+          <div
+            class="feature-card__center-container"
+          >
+            <div
+              class="typography__main typography--no-padding feature-card__title"
+            />
+          </div>
+        </div>
+      </div>
+      <div
+        class="card__banner"
+      />
+    </div>
+  </a>
+</div>
+`;
+
+exports[`<NavigationItem /> Should render correctly with custom className 1`] = `
+<div>
+  <div
+    class="feature-card test-custom-classname"
+    role="button"
+    style="cursor: pointer;"
+    tabindex="0"
+  >
+    <div
+      class="card"
+    >
+      <div
+        class="card__background"
+        style="background-image: url(null);"
+      />
+      <div
+        class="card__outer-container card__outer-container--padded"
+      >
+        <div
+          class="feature-card__outer-container feature-card__outer-container--auto"
+        >
+          <div
+            class="feature-card__date"
+          />
+          <div
+            class="feature-card__center-container"
+          >
+            <div
+              class="typography__main typography--no-padding feature-card__title"
+            />
+          </div>
+        </div>
+      </div>
+      <div
+        class="card__banner"
+      />
+    </div>
+  </div>
+</div>
+`;
+
+exports[`<NavigationItem /> Should render with nextified href 1`] = `
+<div>
+  <div
+    class="feature-card"
+    role="button"
+    style="cursor: pointer;"
+    tabindex="0"
+  >
+    <div
+      class="card"
+    >
+      <div
+        class="card__background"
+        style="background-image: url(null);"
+      />
+      <div
+        class="card__outer-container card__outer-container--padded"
+      >
+        <div
+          class="feature-card__outer-container feature-card__outer-container--auto"
+        >
+          <div
+            class="feature-card__date"
+          />
+          <div
+            class="feature-card__center-container"
+          >
+            <div
+              class="typography__main typography--no-padding feature-card__title"
+            />
+          </div>
+        </div>
+      </div>
+      <div
+        class="card__banner"
+      />
+    </div>
+  </div>
+</div>
+`;

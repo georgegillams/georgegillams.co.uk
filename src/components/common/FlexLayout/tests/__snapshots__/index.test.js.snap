@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Layout /> Should render correctly 1`] = `
+<div>
+  <main
+    class="flex-layout__grow"
+  >
+    <div>
+      some text
+    </div>
+  </main>
+</div>
+`;

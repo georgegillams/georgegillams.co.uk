@@ -2,12 +2,10 @@
 
 import loadSingle from './loadSingle.js';
 
-import { dbCreate } from 'utils/database';
-import { NotFoundError } from 'utils/errors';
-import {
-  clearDatabaseCollection,
-  createUsersWithSessions,
-} from 'utils/testUtils';
+import { SESSION_COOKIE_KEY } from 'helpers/storageConstants';
+import { dbCreate } from 'utils/common/database';
+import { NotFoundError } from 'utils/common/errors';
+import { clearDatabaseCollection, createUsersWithSessions } from 'utils/common/testUtils';
 
 beforeEach(() => {
   clearDatabaseCollection('users');
@@ -25,14 +23,12 @@ const createSomeValues = () => {
     published: false,
   };
 
-  return dbCreate({ redisKey: 'blogs' }, { body: blog1 }).then(() =>
-    dbCreate({ redisKey: 'blogs' }, { body: blog2 }),
-  );
+  return dbCreate({ redisKey: 'blogs' }, { body: blog1 }).then(() => dbCreate({ redisKey: 'blogs' }, { body: blog2 }));
 };
 
 test('load unpublished blog as admin - returns value', () => {
   const req = {
-    cookies: { session: 'adminSessionKey1' },
+    cookies: { [SESSION_COOKIE_KEY]: 'adminSessionKey1' },
     headers: {},
     body: {},
   };
@@ -49,7 +45,7 @@ test('load unpublished blog as admin - returns value', () => {
 
 test('load unpublished blog non-admin - throws not found error', () => {
   const req = {
-    cookies: { session: 'nonAdminSessionKey1' },
+    cookies: { [SESSION_COOKIE_KEY]: 'nonAdminSessionKey1' },
     headers: {},
     body: {},
   };
@@ -87,7 +83,7 @@ test('load unpublished blog unauthenticated - throws not found error', () => {
 
 test('load published blog as admin - returns value', () => {
   const req = {
-    cookies: { session: 'adminSessionKey1' },
+    cookies: { [SESSION_COOKIE_KEY]: 'adminSessionKey1' },
     headers: {},
     body: {},
   };
@@ -104,7 +100,7 @@ test('load published blog as admin - returns value', () => {
 
 test('load published blog non-admin - returns value', () => {
   const req = {
-    cookies: { session: 'nonAdminSessionKey1' },
+    cookies: { [SESSION_COOKIE_KEY]: 'nonAdminSessionKey1' },
     headers: {},
     body: {},
   };

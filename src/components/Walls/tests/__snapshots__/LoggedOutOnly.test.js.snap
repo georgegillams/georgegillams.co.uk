@@ -1,0 +1,28 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<LoggedOutOnly /> Should render correctly 1`] = `
+<div>
+  Test
+</div>
+`;
+
+exports[`<LoggedOutOnly /> Should render correctly with user 1`] = `
+<div>
+  <div
+    class="typography__main"
+  >
+    <h1
+      class="typography__text typography__text--section"
+      id="you're-logged-in"
+    >
+      You're logged in
+    </h1>
+    <a
+      class="text-link text-link--text-link text-link--no-padding text-link--inline"
+      href="/account"
+    >
+      Go to your account.
+    </a>
+  </div>
+</div>
+`;

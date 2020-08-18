@@ -1,6 +1,6 @@
-import { dbRemove } from 'utils/database';
-import authentication from 'utils/authentication';
-import { UNAUTHORISED_WRITE } from 'utils/errorConstants';
+import { dbRemove } from 'utils/common/database';
+import authentication from 'utils/common/authentication';
+import { UNAUTHORISED_WRITE } from 'utils/common/errorConstants';
 
 export default function remove(req) {
   return authentication(req).then(user => {

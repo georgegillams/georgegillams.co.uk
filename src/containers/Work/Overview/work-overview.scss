@@ -1,0 +1,8 @@
+@import '~utils/tokens';
+
+.work-overview {
+  &__component {
+    margin-top: $spacing-base;
+    margin-bottom: 0;
+  }
+}

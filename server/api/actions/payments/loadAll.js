@@ -1,10 +1,10 @@
 import paymentsAllowedAttributes from './private/paymentsAllowedAttributes';
 
-import { dbLoad } from 'utils/database';
-import authentication from 'utils/authentication';
-import reqSecure from 'utils/reqSecure';
-import { UNAUTHORISED_READ } from 'utils/errorConstants';
-import { associate } from 'helpers/objects';
+import { dbLoad } from 'utils/common/database';
+import authentication from 'utils/common/authentication';
+import reqSecure from 'utils/common/reqSecure';
+import { UNAUTHORISED_READ } from 'utils/common/errorConstants';
+import { associate } from 'helpers/common/objects';
 
 export default function loadAll(req) {
   reqSecure(req, paymentsAllowedAttributes);
@@ -20,7 +20,7 @@ export default function loadAll(req) {
       dbLoad({
         redisKey: 'payments',
         includeDeleted: true,
-      }),
+      })
     )
     .then(result => {
       paymentData = result;
@@ -30,17 +30,10 @@ export default function loadAll(req) {
       dbLoad({
         redisKey: 'stripepayments',
         includeDeleted: true,
-      }),
+      })
     )
     .then(charges => {
-      const result = associate(
-        paymentData,
-        charges,
-        'id',
-        'paymentId',
-        'charge',
-        false,
-      );
+      const result = associate(paymentData, charges, 'id', 'paymentId', 'charge', false);
       return result;
     });
 }

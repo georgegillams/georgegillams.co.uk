@@ -2,12 +2,10 @@
 
 import updateBlog from './update.js';
 
-import { dbCreate, dbLoad } from 'utils/database';
-import { AuthError, NotFoundError } from 'utils/errors';
-import {
-  clearDatabaseCollection,
-  createUsersWithSessions,
-} from 'utils/testUtils';
+import { SESSION_COOKIE_KEY } from 'helpers/storageConstants';
+import { dbCreate, dbLoad } from 'utils/common/database';
+import { AuthError, NotFoundError } from 'utils/common/errors';
+import { clearDatabaseCollection, createUsersWithSessions } from 'utils/common/testUtils';
 
 beforeEach(() => {
   clearDatabaseCollection('users');
@@ -25,14 +23,12 @@ const createSomeValues = () => {
     content: 'Blog 2 content',
   };
 
-  return dbCreate({ redisKey: 'blogs' }, { body: blog1 }).then(() =>
-    dbCreate({ redisKey: 'blogs' }, { body: blog2 }),
-  );
+  return dbCreate({ redisKey: 'blogs' }, { body: blog1 }).then(() => dbCreate({ redisKey: 'blogs' }, { body: blog2 }));
 };
 
 test('update blog as admin - updates data', () => {
   const req = {
-    cookies: { session: 'adminSessionKey1' },
+    cookies: { [SESSION_COOKIE_KEY]: 'adminSessionKey1' },
     headers: {},
     body: {
       id: 'blog1',
@@ -60,7 +56,7 @@ test('update blog as admin - updates data', () => {
 
 test('update non-existent blog as admin - throws not found error', () => {
   const req = {
-    cookies: { session: 'adminSessionKey1' },
+    cookies: { [SESSION_COOKIE_KEY]: 'adminSessionKey1' },
     headers: {},
     body: {
       id: 'blogNotExists',
@@ -82,7 +78,7 @@ test('update non-existent blog as admin - throws not found error', () => {
 
 test('update blog non-admin - throws auth error', () => {
   const req = {
-    cookies: { session: 'nonAdminSessionKey1' },
+    cookies: { [SESSION_COOKIE_KEY]: 'nonAdminSessionKey1' },
     headers: {},
     body: {
       id: 'blog1',
@@ -107,7 +103,7 @@ test('update blog non-admin - throws auth error', () => {
         expect(dbResult[0].id).toBe('blog1');
         expect(dbResult[0].content).toBe('Blog 1 content');
         return true;
-      }),
+      })
     );
 });
 
@@ -137,6 +133,6 @@ test('update blog unauthenticated - throws auth error', () => {
         expect(dbResult[0].id).toBe('blog1');
         expect(dbResult[0].content).toBe('Blog 1 content');
         return true;
-      }),
+      })
     );
 });

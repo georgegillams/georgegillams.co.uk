@@ -1,5 +1,5 @@
 /* eslint-disable */
-import lockPromise from 'utils/lock';
+import lockPromise from 'utils/common/lock';
 
 import getPaymentAndBalance from './getPaymentAndBalance';
 import sendUnsentPaymentReceipts from './sendUnsentPaymentReceipts';

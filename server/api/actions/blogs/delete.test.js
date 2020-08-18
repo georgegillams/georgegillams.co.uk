@@ -2,12 +2,10 @@
 
 import deleteBlog from './delete.js';
 
-import { dbCreate, dbLoad } from 'utils/database';
-import { AuthError, NotFoundError } from 'utils/errors';
-import {
-  clearDatabaseCollection,
-  createUsersWithSessions,
-} from 'utils/testUtils';
+import { SESSION_COOKIE_KEY } from 'helpers/storageConstants';
+import { dbCreate, dbLoad } from 'utils/common/database';
+import { AuthError, NotFoundError } from 'utils/common/errors';
+import { clearDatabaseCollection, createUsersWithSessions } from 'utils/common/testUtils';
 
 beforeEach(() => {
   clearDatabaseCollection('users');
@@ -23,14 +21,12 @@ const createSomeValues = () => {
     requestedId: 'blog2',
   };
 
-  return dbCreate({ redisKey: 'blogs' }, { body: blog1 }).then(() =>
-    dbCreate({ redisKey: 'blogs' }, { body: blog2 }),
-  );
+  return dbCreate({ redisKey: 'blogs' }, { body: blog1 }).then(() => dbCreate({ redisKey: 'blogs' }, { body: blog2 }));
 };
 
 test('delete blog as admin - removes data from collection', () => {
   const req = {
-    cookies: { session: 'adminSessionKey1' },
+    cookies: { [SESSION_COOKIE_KEY]: 'adminSessionKey1' },
     headers: {},
     body: {
       id: 'blog1',
@@ -54,7 +50,7 @@ test('delete blog as admin - removes data from collection', () => {
 
 test('delete non-existent blog as admin - throws not found error', () => {
   const req = {
-    cookies: { session: 'adminSessionKey1' },
+    cookies: { [SESSION_COOKIE_KEY]: 'adminSessionKey1' },
     headers: {},
     body: {
       id: 'blogNotExists',
@@ -75,7 +71,7 @@ test('delete non-existent blog as admin - throws not found error', () => {
 
 test('delete blog non-admin - throws auth error', () => {
   const req = {
-    cookies: { session: 'nonAdminSessionKey1' },
+    cookies: { [SESSION_COOKIE_KEY]: 'nonAdminSessionKey1' },
     headers: {},
     body: {
       id: 'blog1',
@@ -99,7 +95,7 @@ test('delete blog non-admin - throws auth error', () => {
         expect(dbResult.length).toBe(2);
         expect(dbResult[0].id).toBe('blog1');
         return true;
-      }),
+      })
     );
 });
 
@@ -128,6 +124,6 @@ test('delete blog unauthenticated - throws auth error', () => {
         expect(dbResult.length).toBe(2);
         expect(dbResult[0].id).toBe('blog1');
         return true;
-      }),
+      })
     );
 });

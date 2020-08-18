@@ -1,0 +1,7 @@
+@import '~utils/tokens';
+
+.account {
+  &__button {
+    margin-bottom: $spacing-base;
+  }
+}

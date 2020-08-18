@@ -1,0 +1,395 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Account /> should render correctly - index 1`] = `
+<div>
+  <div
+    class=""
+  >
+    <div
+      class="skeleton__outer skeleton__section"
+    >
+      <div
+        class="skeleton__shimmer"
+        style="margin-left: -0px;"
+      />
+    </div>
+    <div
+      class="skeleton__outer skeleton__button"
+    >
+      <div
+        class="skeleton__shimmer"
+        style="margin-left: -0px;"
+      />
+    </div>
+    <div
+      class="skeleton__outer skeleton__button"
+    >
+      <div
+        class="skeleton__shimmer"
+        style="margin-left: -0px;"
+      />
+    </div>
+  </div>
+</div>
+`;
+
+exports[`<Account /> should render correctly with initial state 1`] = `
+<div>
+  <div
+    class=""
+  >
+    <div
+      class="typography__main"
+    >
+      <h1
+        class="typography__text typography__text--section page-title__section"
+        id="account"
+      >
+        Account
+      </h1>
+      <span
+        class="paragraph"
+      >
+        <br />
+      </span>
+      <button
+        class="button__outer button__outer--regular button__outer--no-bouncy button__outer--large account__button"
+        type="button"
+      >
+        Get a new verification email
+      </button>
+      <br />
+      <button
+        class="button__outer button__outer--regular button__outer--no-bouncy button__outer--large"
+        type="button"
+      >
+        Logout
+      </button>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`<Account /> should render correctly with initial state 2`] = `
+<div>
+  <div
+    class=""
+  >
+    <div
+      class="typography__main"
+    >
+      <h1
+        class="typography__text typography__text--section page-title__section"
+        id="account"
+      >
+        Account
+      </h1>
+      <span
+        class="paragraph"
+      >
+        <br />
+      </span>
+      <button
+        class="button__outer button__outer--regular button__outer--no-bouncy button__outer--large account__button"
+        type="button"
+      >
+        Get a new verification email
+      </button>
+      <br />
+      <button
+        class="button__outer button__outer--regular button__outer--no-bouncy button__outer--large"
+        type="button"
+      >
+        Logout
+      </button>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`<Account /> should render correctly with logOutError 1`] = `
+<div>
+  <div
+    class=""
+  >
+    <div
+      class="typography__main"
+    >
+      <h1
+        class="typography__text typography__text--section page-title__section"
+        id="account"
+      >
+        Account
+      </h1>
+      <span
+        class="paragraph"
+      >
+        <br />
+      </span>
+      <button
+        class="button__outer button__outer--regular button__outer--no-bouncy button__outer--large account__button"
+        type="button"
+      >
+        Get a new verification email
+      </button>
+      <br />
+      <button
+        class="button__outer button__outer--regular button__outer--no-bouncy button__outer--large"
+        type="button"
+      >
+        Logout
+      </button>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`<Account /> should render correctly with logOutResult 1`] = `
+<div>
+  <div
+    class=""
+  >
+    <div
+      class="typography__main"
+    >
+      <h1
+        class="typography__text typography__text--section page-title__section"
+        id="account"
+      >
+        Account
+      </h1>
+      <span
+        class="paragraph"
+      >
+        <br />
+      </span>
+      <button
+        class="button__outer button__outer--regular button__outer--no-bouncy button__outer--large account__button"
+        type="button"
+      >
+        Get a new verification email
+      </button>
+      <br />
+      <button
+        class="button__outer button__outer--regular button__outer--no-bouncy button__outer--large"
+        type="button"
+      >
+        Logout
+      </button>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`<Account /> should render correctly with loggingOut=true 1`] = `
+<div>
+  <div
+    class=""
+  >
+    <div
+      class="typography__main"
+    >
+      <h1
+        class="typography__text typography__text--section page-title__section"
+        id="account"
+      >
+        Account
+      </h1>
+      <span
+        class="paragraph"
+      >
+        <br />
+      </span>
+      <button
+        class="button__outer button__outer--regular button__outer--no-bouncy button__outer--large account__button"
+        type="button"
+      >
+        Get a new verification email
+      </button>
+      <br />
+      <button
+        class="button__outer button__outer--regular button__outer--no-bouncy button__outer--disabled button__outer--large"
+        disabled=""
+        type="button"
+      >
+        Logout
+      </button>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`<Account /> should render correctly with no user 1`] = `
+<div>
+  <div
+    class=""
+  >
+    <div
+      class="skeleton__outer skeleton__section"
+    >
+      <div
+        class="skeleton__shimmer"
+        style="margin-left: -0px;"
+      />
+    </div>
+    <div
+      class="skeleton__outer skeleton__button"
+    >
+      <div
+        class="skeleton__shimmer"
+        style="margin-left: -0px;"
+      />
+    </div>
+    <div
+      class="skeleton__outer skeleton__button"
+    >
+      <div
+        class="skeleton__shimmer"
+        style="margin-left: -0px;"
+      />
+    </div>
+  </div>
+</div>
+`;
+
+exports[`<Account /> should render correctly with requestVerificationEmailError 1`] = `
+<div>
+  <div
+    class=""
+  >
+    <div
+      class="typography__main"
+    >
+      <h1
+        class="typography__text typography__text--section page-title__section"
+        id="account"
+      >
+        Account
+      </h1>
+      <span
+        class="paragraph"
+      >
+        <br />
+      </span>
+      <button
+        class="button__outer button__outer--regular button__outer--no-bouncy button__outer--large account__button"
+        type="button"
+      >
+        Get a new verification email
+      </button>
+      <br />
+      <button
+        class="button__outer button__outer--regular button__outer--no-bouncy button__outer--large"
+        type="button"
+      >
+        Logout
+      </button>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`<Account /> should render correctly with requestVerificationEmailResult 1`] = `
+<div>
+  <div
+    class=""
+  >
+    <div
+      class="typography__main"
+    >
+      <h1
+        class="typography__text typography__text--section page-title__section"
+        id="account"
+      >
+        Account
+      </h1>
+      <span
+        class="paragraph"
+      >
+        <br />
+      </span>
+      <button
+        class="button__outer button__outer--regular button__outer--no-bouncy button__outer--large account__button"
+        type="button"
+      >
+        Get a new verification email
+      </button>
+      <br />
+      <button
+        class="button__outer button__outer--regular button__outer--no-bouncy button__outer--large"
+        type="button"
+      >
+        Logout
+      </button>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`<Account /> should render correctly with requestingVerificationEmail=true 1`] = `
+<div>
+  <div
+    class=""
+  >
+    <div
+      class="typography__main"
+    >
+      <h1
+        class="typography__text typography__text--section page-title__section"
+        id="account"
+      >
+        Account
+      </h1>
+      <span
+        class="paragraph"
+      >
+        <br />
+      </span>
+      <button
+        class="button__outer button__outer--regular button__outer--no-bouncy button__outer--disabled button__outer--large account__button"
+        disabled=""
+        type="button"
+      >
+        Get a new verification email
+      </button>
+      <br />
+      <button
+        class="button__outer button__outer--regular button__outer--no-bouncy button__outer--large"
+        type="button"
+      >
+        Logout
+      </button>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`<Account /> should render correctly with user with emailVerified=true 1`] = `
+<div>
+  <div
+    class=""
+  >
+    <div
+      class="typography__main"
+    >
+      <h1
+        class="typography__text typography__text--section page-title__section"
+        id="account"
+      >
+        Account
+      </h1>
+      <span
+        class="paragraph"
+      >
+        <br />
+      </span>
+      <button
+        class="button__outer button__outer--regular button__outer--no-bouncy button__outer--large"
+        type="button"
+      >
+        Logout
+      </button>
+    </div>
+  </div>
+</div>
+`;

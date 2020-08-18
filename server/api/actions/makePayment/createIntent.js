@@ -1,20 +1,17 @@
 /* eslint-disable */
-import { dbCreate } from 'utils/database';
+import { dbCreate } from 'utils/common/database';
 
 import loadPayment from './private/loadPayment';
 import stripeInstance from './private/stripe';
 import formatStripeError from './private/formatStripeError';
 import stripePaymentsAllowedAttributes from './private/stripePaymentsAllowedAttributes';
 
-import lockPromise from 'utils/lock';
-import reqSecure from 'utils/reqSecure';
+import lockPromise from 'utils/common/lock';
+import reqSecure from 'utils/common/reqSecure';
 
 const createNewPaymentIntent = payment =>
   Promise.resolve().then(() => {
-    if (
-      payment.outstandingBalance < 30 &&
-      payment.outstandingBalance > 1000000
-    ) {
+    if (payment.outstandingBalance < 30 && payment.outstandingBalance > 1000000) {
       return { id: null, client_secret: null };
     }
     return stripeInstance.paymentIntents.create({
@@ -41,7 +38,7 @@ export default function createIntent(req) {
                       paymentIntentId: paymentIntent.id,
                       paymentIntentClientSecret: paymentIntent.client_secret,
                     },
-                  },
+                  }
                 )
                   .then(() => {
                     resolve({
@@ -60,6 +57,6 @@ export default function createIntent(req) {
           .catch(err => {
             reject(err);
           });
-      }),
+      })
   );
 }

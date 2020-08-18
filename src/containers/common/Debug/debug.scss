@@ -1,0 +1,7 @@
+@import '~utils/tokens';
+
+.debug {
+  &__checkbox {
+    margin-bottom: $spacing-base;
+  }
+}

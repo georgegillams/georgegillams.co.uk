@@ -1,0 +1,55 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<CreateNotificationForm /> Should render correctly 1`] = `
+<div>
+  <div
+    class=""
+  >
+    <label
+      class="forms__label"
+      for="type"
+    >
+      Type
+    </label>
+    <div
+      class="input__outer forms__component"
+      placeholder="type"
+    >
+      <input
+        aria-disabled="false"
+        aria-invalid="false"
+        class="input__inner"
+        id="type"
+        name="type"
+        value=""
+      />
+    </div>
+    <label
+      class="forms__label"
+      for="message"
+    >
+      Message
+    </label>
+    <div
+      class="input__outer forms__component"
+      placeholder="message"
+    >
+      <input
+        aria-disabled="false"
+        aria-invalid="false"
+        class="input__inner"
+        id="message"
+        name="message"
+        value=""
+      />
+    </div>
+    <br />
+    <button
+      class="button__outer button__outer--regular button__outer--no-bouncy button__outer--large forms__component"
+      type="button"
+    >
+      Create notification
+    </button>
+  </div>
+</div>
+`;
