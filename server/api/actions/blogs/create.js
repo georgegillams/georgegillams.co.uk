@@ -1,7 +1,7 @@
-import { dbCreate } from 'utils/database';
-import lockPromise from 'utils/lock';
-import authentication from 'utils/authentication';
-import { UNAUTHORISED_WRITE } from 'utils/errorConstants';
+import { dbCreate } from 'utils/common/database';
+import lockPromise from 'utils/common/lock';
+import authentication from 'utils/common/authentication';
+import { UNAUTHORISED_WRITE } from 'utils/common/errorConstants';
 
 export default function create(req) {
   return lockPromise('blogs', () =>
@@ -10,6 +10,6 @@ export default function create(req) {
         return dbCreate({ redisKey: 'blogs', user }, req);
       }
       throw UNAUTHORISED_WRITE;
-    }),
+    })
   );
 }

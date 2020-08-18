@@ -15,42 +15,19 @@ const apiStructure = {
   requestVerificationEmail: {
     method: POST,
     path: '/auth/request-verification-email',
+    isSensitive: true,
   },
-  verifyEmail: { method: POST, path: '/auth/verify-email' },
+  verifyEmail: { method: POST, path: '/auth/verify-email', isSensitive: true },
 
   // Login
-  loginWithMagicLink: { method: POST, path: '/magic-links/login' },
-  requestMagicLink: { method: POST, path: '/magic-links/request' },
-
-  // Blogs
-  createBlog: { method: POST, path: '/blogs/create' },
-  deleteBlog: { method: POST, path: '/blogs/delete' },
-  loadBlogs: { method: GET, path: '/blogs/load-all' },
-  loadBlog: { method: GET, path: '/blogs/load/:id' },
-  updateBlog: { method: POST, path: '/blogs/update' },
-
-  // Comments
-  createComment: { method: POST, path: '/comments/create' },
-  deleteComment: { method: POST, path: '/comments/delete' },
-  loadComments: { method: GET, path: '/comments/load-all/:pageId' },
-  updateComment: { method: POST, path: '/comments/update' },
+  loginWithMagicLink: { method: POST, path: '/magic-links/login', isSensitive: true },
+  requestMagicLink: { method: POST, path: '/magic-links/request', isSensitive: true },
 
   // Data
-  backupAllData: { method: GET, path: '/data-management/backup' },
-  deleteEntity: { method: POST, path: '/data-management/delete-entity' },
-  deleteSet: { method: POST, path: '/data-management/delete-set' },
-  restoreBackup: { method: POST, path: '/data-management/restore' },
-
-  // Make payment
-  loadPayment: { method: POST, path: '/make-payment/load' },
-  createPaymentIntent: { method: POST, path: '/make-payment/create-intent' },
-  // TODO for admins to resend receipt
-  resendPaymentReceipt: { method: POST, path: '/make-payment/resend-receipt' },
-
-  // Monzo
-  loadMonzoPots: { method: POST, path: '/monzo/load-pots' },
-  loadMonzoTransactions: { method: POST, path: '/monzo/load-transactions' },
-  setMonzoAPIKey: { method: POST, path: '/monzo/set-key' },
+  backupAllData: { method: GET, path: '/data-management/backup', isSensitive: true },
+  deleteEntity: { method: POST, path: '/data-management/delete-entity', isSensitive: true },
+  deleteSet: { method: POST, path: '/data-management/delete-set', isSensitive: true },
+  restoreBackup: { method: POST, path: '/data-management/restore', isSensitive: true },
 
   // Notifications
   createNotification: { method: POST, path: '/notifications/create' },
@@ -58,6 +35,28 @@ const apiStructure = {
   loadNotifications: { method: GET, path: '/notifications/load-all' },
   loadNotification: { method: GET, path: '/notifications/load/:id' },
   updateNotification: { method: POST, path: '/notifications/update' },
+
+  // Users
+  createUser: { method: POST, path: '/users/create' },
+  deleteUser: { method: POST, path: '/users/delete' },
+  loadUser: { method: GET, path: '/users/load' },
+  loadUsers: { method: GET, path: '/users/load-all' },
+  signUp: { method: POST, path: '/users/sign-up', isSensitive: true },
+  updateUser: { method: POST, path: '/users/update' },
+
+  // #region app-specific
+  // Blogs
+  createBlog: { method: POST, path: '/blogs/create' },
+  deleteBlog: { method: POST, path: '/blogs/delete' },
+  loadBlogs: { method: GET, path: '/blogs/load-all' },
+  loadBlog: { method: GET, path: '/blogs/load/:id' },
+  updateBlog: { method: POST, path: '/blogs/update' },
+
+  // Make payment
+  loadPayment: { method: POST, path: '/make-payment/load' },
+  createPaymentIntent: { method: POST, path: '/make-payment/create-intent' },
+  // TODO for admins to resend receipt
+  resendPaymentReceipt: { method: POST, path: '/make-payment/resend-receipt' },
 
   // Payments
   createPayment: { method: POST, path: '/payments/create' },
@@ -68,20 +67,11 @@ const apiStructure = {
   createSupport: { method: POST, path: '/support/create' },
   deleteSupport: { method: POST, path: '/support/delete' },
   loadSupport: { method: GET, path: '/support/load' },
-
-  // Users
-  createUser: { method: POST, path: '/users/create' },
-  deleteUser: { method: POST, path: '/users/delete' },
-  loadUser: { method: GET, path: '/users/load' },
-  loadUsers: { method: GET, path: '/users/load-all' },
-  signUp: { method: POST, path: '/users/sign-up' },
-  updateUser: { method: POST, path: '/users/update' },
+  // #endregion app-specific
 };
 
 Object.keys(apiStructure).forEach(key => {
-  apiStructure[
-    key
-  ].fullPath = `${appConfig.apiEndpoint}${apiStructure[key].path}`;
+  apiStructure[key].fullPath = `${appConfig.apiEndpoint}${apiStructure[key].path}`;
 });
 
 export default apiStructure;

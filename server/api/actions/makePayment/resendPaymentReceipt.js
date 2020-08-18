@@ -1,13 +1,13 @@
 /* eslint-disable */
-import { dbLoad } from 'utils/database';
+import { dbLoad } from 'utils/common/database';
 
 import sendPaymentReceiptEmail from './private/sendPaymentReceiptEmail';
 import stripePaymentsAllowedAttributes from './private/stripePaymentsAllowedAttributes';
 
-import authentication from 'utils/authentication';
-import reqSecure from 'utils/reqSecure';
-import { find } from 'utils/find';
-import { UNAUTHORISED_READ } from 'utils/errorConstants';
+import authentication from 'utils/common/authentication';
+import reqSecure from 'utils/common/reqSecure';
+import { find } from 'utils/common/find';
+import { UNAUTHORISED_READ } from 'utils/common/errorConstants';
 
 export default function resendPaymentReceipt(req) {
   // TODO rewrite to use payment email
@@ -23,20 +23,10 @@ export default function resendPaymentReceipt(req) {
             dbLoad({
               redisKey: 'stripepayments',
             }).then(paymentData => {
-              const { existingValue: paymentToResend } = find(
-                paymentData,
-                userIdToResendTo,
-                'authorId',
-              );
-              const { existingValue: existingUser } = find(
-                userData,
-                userIdToResendTo,
-              );
+              const { existingValue: paymentToResend } = find(paymentData, userIdToResendTo, 'authorId');
+              const { existingValue: existingUser } = find(userData, userIdToResendTo);
               if (existingUser && paymentToResend) {
-                sendPaymentReceiptEmail(
-                  existingUser,
-                  paymentToResend,
-                ).then(() => resolve());
+                sendPaymentReceiptEmail(existingUser, paymentToResend).then(() => resolve());
               }
             });
           });
@@ -44,7 +34,7 @@ export default function resendPaymentReceipt(req) {
           reject(UNAUTHORISED_READ);
         }
       },
-      err => reject(err),
+      err => reject(err)
     );
   });
 }

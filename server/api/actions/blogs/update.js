@@ -1,7 +1,7 @@
-import { dbUpdate } from 'utils/database';
-import lockPromise from 'utils/lock';
-import authentication from 'utils/authentication';
-import { UNAUTHORISED_WRITE } from 'utils/errorConstants';
+import { dbUpdate } from 'utils/common/database';
+import lockPromise from 'utils/common/lock';
+import authentication from 'utils/common/authentication';
+import { UNAUTHORISED_WRITE } from 'utils/common/errorConstants';
 
 export default function update(req) {
   return lockPromise('blogs', () =>
@@ -10,6 +10,6 @@ export default function update(req) {
         return dbUpdate({ redisKey: 'blogs' }, req);
       }
       throw UNAUTHORISED_WRITE;
-    }),
+    })
   );
 }

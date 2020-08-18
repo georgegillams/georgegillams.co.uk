@@ -1,0 +1,134 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<MagicLogin /> should render correctly - index 1`] = `
+<div>
+  <div
+    class=""
+  >
+    <div
+      class="typography__main"
+    >
+      <h1
+        class="typography__text typography__text--section page-title__section"
+        id="logging-in"
+      >
+        Logging in
+      </h1>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`<MagicLogin /> should render correctly with initial state 1`] = `
+<div>
+  <div
+    class=""
+  >
+    <div
+      class="typography__main"
+    >
+      <h1
+        class="typography__text typography__text--section page-title__section"
+        id="logging-in"
+      >
+        Logging in
+      </h1>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`<MagicLogin /> should render correctly with logInError 1`] = `
+<div>
+  <div
+    class=""
+  >
+    <div
+      class="typography__main"
+    >
+      <h1
+        class="typography__text typography__text--section page-title__section"
+        id="logging-in"
+      >
+        Logging in
+      </h1>
+      <span
+        class="paragraph"
+      >
+        Something went wrong logging you in
+      </span>
+      <br />
+      <span
+        class="paragraph"
+      >
+        Invalid session
+      </span>
+      <br />
+      <a
+        class="text-link text-link--text-link text-link--no-padding text-link--inline"
+        href="/login"
+      >
+        Try logging in again
+      </a>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`<MagicLogin /> should render correctly with loggingIn=true 1`] = `
+<div>
+  <div
+    class=""
+  >
+    <div
+      class="typography__main"
+    >
+      <h1
+        class="typography__text typography__text--section page-title__section"
+        id="logging-in"
+      >
+        Logging in
+      </h1>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`<MagicLogin /> should render correctly with user 1`] = `
+<div>
+  <div
+    class=""
+  >
+    <div
+      class="typography__main"
+    >
+      <h1
+        class="typography__text typography__text--section page-title__section"
+        id="logged-in"
+      >
+        Logged in
+      </h1>
+      <span
+        class="paragraph"
+      >
+        Logged in!
+      </span>
+      <br />
+      <span
+        class="paragraph"
+      >
+        You will now be redirected to the 
+        account
+         page
+      </span>
+      <br />
+      <a
+        class="text-link text-link--text-link text-link--no-padding text-link--inline"
+        href="account"
+      >
+        Not been redirected? Click here
+      </a>
+    </div>
+  </div>
+</div>
+`;

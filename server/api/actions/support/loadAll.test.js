@@ -2,11 +2,8 @@
 
 import loadAll from './loadAll.js';
 
-import { dbCreate } from 'utils/database';
-import {
-  clearDatabaseCollection,
-  createUsersWithSessions,
-} from 'utils/testUtils';
+import { dbCreate } from 'utils/common/database';
+import { clearDatabaseCollection, createUsersWithSessions } from 'utils/common/testUtils';
 
 beforeEach(() => {
   clearDatabaseCollection('users');

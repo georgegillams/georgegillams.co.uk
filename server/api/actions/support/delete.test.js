@@ -2,12 +2,10 @@
 
 import deleteSupport from './delete.js';
 
-import { dbCreate, dbLoad } from 'utils/database';
-import { AuthError, NotFoundError } from 'utils/errors';
-import {
-  clearDatabaseCollection,
-  createUsersWithSessions,
-} from 'utils/testUtils';
+import { SESSION_COOKIE_KEY } from 'helpers/storageConstants';
+import { dbCreate, dbLoad } from 'utils/common/database';
+import { AuthError, NotFoundError } from 'utils/common/errors';
+import { clearDatabaseCollection, createUsersWithSessions } from 'utils/common/testUtils';
 
 beforeEach(() => {
   clearDatabaseCollection('users');
@@ -24,13 +22,13 @@ const createSomeValues = () => {
   };
 
   return dbCreate({ redisKey: 'support' }, { body: support1 }).then(() =>
-    dbCreate({ redisKey: 'support' }, { body: support2 }),
+    dbCreate({ redisKey: 'support' }, { body: support2 })
   );
 };
 
 test('delete support as admin - removes data from collection', () => {
   const req = {
-    cookies: { session: 'adminSessionKey1' },
+    cookies: { [SESSION_COOKIE_KEY]: 'adminSessionKey1' },
     headers: {},
     body: {
       id: 'support1',
@@ -54,7 +52,7 @@ test('delete support as admin - removes data from collection', () => {
 
 test('delete non-existent support as admin - throws not found error', () => {
   const req = {
-    cookies: { session: 'adminSessionKey1' },
+    cookies: { [SESSION_COOKIE_KEY]: 'adminSessionKey1' },
     headers: {},
     body: {
       id: 'supportNotExists',
@@ -75,7 +73,7 @@ test('delete non-existent support as admin - throws not found error', () => {
 
 test('delete support non-admin - throws auth error', () => {
   const req = {
-    cookies: { session: 'nonAdminSessionKey1' },
+    cookies: { [SESSION_COOKIE_KEY]: 'nonAdminSessionKey1' },
     headers: {},
     body: {
       id: 'support1',
@@ -99,7 +97,7 @@ test('delete support non-admin - throws auth error', () => {
         expect(dbResult.length).toBe(2);
         expect(dbResult[0].id).toBe('support1');
         return true;
-      }),
+      })
     );
 });
 
@@ -128,6 +126,6 @@ test('delete support unauthenticated - throws auth error', () => {
         expect(dbResult.length).toBe(2);
         expect(dbResult[0].id).toBe('support1');
         return true;
-      }),
+      })
     );
 });

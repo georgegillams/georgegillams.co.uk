@@ -1,5 +1,5 @@
 /* eslint-disable */
-import { dbLoad, dbLoadSingle, dbUpdate } from 'utils/database';
+import { dbLoad, dbLoadSingle, dbUpdate } from 'utils/common/database';
 
 import sendPaymentReceiptEmail from './sendPaymentReceiptEmail';
 import fetchPaymentDataFromStripe from './fetchPaymentDataFromStripe';
@@ -11,12 +11,7 @@ const markStripePaymentEmailSent = (id, newValue) =>
       filter: sp => sp.id === id,
     })
       .then(stripepayment => {
-        resolve(
-          dbUpdate(
-            { redisKey: 'stripepayments' },
-            { body: { ...stripepayment, emailSent: newValue } },
-          ),
-        );
+        resolve(dbUpdate({ redisKey: 'stripepayments' }, { body: { ...stripepayment, emailSent: newValue } }));
       })
       .catch(err => {
         reject(err);
@@ -42,12 +37,7 @@ export default function sendUnsentPaymentReceipts(payment) {
                     emailSentNewValue = sendPaymentReceiptEmail(payment, pICD);
                   }
                 });
-                sendEmailPromises.push(
-                  markStripePaymentEmailSent(
-                    pI.stripepayment.id,
-                    emailSentNewValue,
-                  ),
-                );
+                sendEmailPromises.push(markStripePaymentEmailSent(pI.stripepayment.id, emailSentNewValue));
               }
             });
 

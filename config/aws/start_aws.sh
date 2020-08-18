@@ -1,3 +1,3 @@
 # #!/bin/bash
 
-npm run start:aws
+PORT=3005 npm run start:aws

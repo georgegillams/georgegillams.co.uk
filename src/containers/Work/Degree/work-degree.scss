@@ -1,0 +1,20 @@
+@import '~utils/tokens';
+
+.work-degree {
+  &__module {
+    margin-bottom: 0.5rem;
+  }
+
+  &__image {
+    width: 70%;
+    max-width: 20rem;
+    margin-top: $spacing-lg;
+    margin-bottom: $spacing-lg;
+  }
+
+  &__img-dark-invert {
+    @media (prefers-color-scheme: dark) {
+      filter: contrast(0) brightness(20);
+    }
+  }
+}

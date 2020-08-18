@@ -1,0 +1,17 @@
+@import '~utils/tokens';
+
+.blogs-list {
+  &__card {
+    margin-bottom: 2rem;
+    box-sizing: border-box;
+
+    &--with-controls {
+      margin-bottom: 0.5rem;
+    }
+  }
+
+  &__control {
+    margin-bottom: 2rem;
+    box-sizing: border-box;
+  }
+}

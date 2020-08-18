@@ -4,7 +4,8 @@ const backstop = require('backstopjs');
 const scenarioData = require('./scenarios.json');
 
 const PORT = process.env.PORT || 9001;
-const BASE_URL = `http://127.0.0.1:${PORT}/`;
+// We must use `localhost` instead of `127.0.0.1` to ensure that CORS won't be a problem
+const BASE_URL = `http://localhost:${PORT}/`;
 
 const allowFailure = process.argv.includes('--allowFailure');
 
@@ -26,7 +27,7 @@ scenarioData.scenarioIds.forEach(sI => {
 });
 
 const config = {
-  id: 'georgegillams-co-uk-default',
+  id: 'uk.co.georgegillams',
   misMatchThreshold: 3,
   viewports: [
     {
@@ -69,7 +70,5 @@ backstop('test', { config })
   })
   .catch(() => {
     //       // test failed
-    backstop('approve', { config }).then(() =>
-      process.exit(allowFailure ? 0 : 1),
-    );
+    backstop('approve', { config }).then(() => process.exit(allowFailure ? 0 : 1));
   });

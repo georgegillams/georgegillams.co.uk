@@ -1,0 +1,73 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`BlogRenderer saga loadBlog actions Should call loadBlog.failure if API returns error 1`] = `
+Object {
+  "@@redux-saga/IO": true,
+  "combinator": false,
+  "payload": Object {
+    "args": Array [],
+    "selector": [Function],
+  },
+  "type": "SELECT",
+}
+`;
+
+exports[`BlogRenderer saga loadBlog actions Should call loadBlog.failure if an exception occurs 1`] = `
+Object {
+  "@@redux-saga/IO": true,
+  "combinator": false,
+  "payload": Object {
+    "args": Array [],
+    "selector": [Function],
+  },
+  "type": "SELECT",
+}
+`;
+
+exports[`BlogRenderer saga loadBlog actions Should call loadBlog.success on successful API call 1`] = `
+Object {
+  "@@redux-saga/IO": true,
+  "combinator": false,
+  "payload": Object {
+    "args": Array [],
+    "selector": [Function],
+  },
+  "type": "SELECT",
+}
+`;
+
+exports[`BlogRenderer saga updateBlog actions Should call updateBlog.failure if API returns error 1`] = `
+Object {
+  "@@redux-saga/IO": true,
+  "combinator": false,
+  "payload": Object {
+    "args": Array [],
+    "selector": [Function],
+  },
+  "type": "SELECT",
+}
+`;
+
+exports[`BlogRenderer saga updateBlog actions Should call updateBlog.failure if an exception occurs 1`] = `
+Object {
+  "@@redux-saga/IO": true,
+  "combinator": false,
+  "payload": Object {
+    "args": Array [],
+    "selector": [Function],
+  },
+  "type": "SELECT",
+}
+`;
+
+exports[`BlogRenderer saga updateBlog actions Should call updateBlog.success on successful API call 1`] = `
+Object {
+  "@@redux-saga/IO": true,
+  "combinator": false,
+  "payload": Object {
+    "args": Array [],
+    "selector": [Function],
+  },
+  "type": "SELECT",
+}
+`;

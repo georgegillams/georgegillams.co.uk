@@ -1,8 +1,8 @@
 import loadPayment from './private/loadPayment';
 import stripePaymentsAllowedAttributes from './private/stripePaymentsAllowedAttributes';
 
-import reqSecure from 'utils/reqSecure';
-import lockPromise from 'utils/lock';
+import reqSecure from 'utils/common/reqSecure';
+import lockPromise from 'utils/common/lock';
 
 export default function loadSingle(req) {
   reqSecure(req, stripePaymentsAllowedAttributes);

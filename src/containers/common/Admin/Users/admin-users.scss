@@ -1,0 +1,13 @@
+@import '~utils/tokens';
+
+.admin-users {
+  &__card {
+    display: block;
+    margin-bottom: 1rem;
+  }
+
+  &__split-view {
+    flex: 1;
+    overflow: hidden;
+  }
+}

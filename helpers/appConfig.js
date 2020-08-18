@@ -1,6 +1,10 @@
-require('babel-polyfill');
-
-const { NODE_ENV, PROJECT_UNDER_TEST, PORT } = process.env;
+// Note that these values are fixed for the client at build-time.
+// They are populated at build-time by babel, so destructuring syntax is not supported
+const NODE_ENV = process.env.NODE_ENV;
+const PROJECT_UNDER_TEST = process.env.PROJECT_UNDER_TEST;
+const PORT = process.env.PORT;
+const BUILT_AT = process.env.BUILT_AT;
+const HOST = process.env.HOST;
 
 const environment = {
   development: {
@@ -12,54 +16,67 @@ const environment = {
 }[NODE_ENV || 'development'];
 
 const projectName = 'GEORGEGILLAMS';
-const domain = 'georgegillams.co.uk';
+const projectTitle = 'George Gillams';
+const projectDescription = 'Open-source Software Engineer';
+const projectDescriptionShort = 'My personal website';
+const githubRepo = 'georgegillams/georgegillams.co.uk';
+const githubRepoUrl = `https://github.com/${githubRepo}`;
 const port = PORT || 3000;
-const siteUrl =
-  NODE_ENV === 'development' || PROJECT_UNDER_TEST
-    ? `http://localhost:${port}`
-    : `https://www.${domain}`;
+const useLocalhost = NODE_ENV === 'development' || PROJECT_UNDER_TEST;
+const domain = useLocalhost ? `localhost:${port}` : 'www.georgegillams.co.uk';
+const siteUrl = useLocalhost ? `http://${domain}` : `https://${domain}`;
 const apiEndpoint = `${siteUrl}/api`;
 
 module.exports = {
-  host: process.env.HOST || 'localhost',
+  host: HOST || 'localhost',
   port,
+  builtAt: BUILT_AT,
+  nodeEnv: NODE_ENV,
+  projectUnderTest: !!PROJECT_UNDER_TEST,
   projectName,
+  projectTitle,
+  projectDescription,
+  projectDescriptionShort,
   domain,
   siteUrl,
   apiEndpoint,
+  githubRepo,
+  githubRepoUrl,
   app: {
-    title: 'George Gillams - open source software engineer',
+    title: `${projectTitle} ${projectDescription}`,
     head: {
-      titleTemplate: 'George Gillams: %s',
+      titleTemplate: `${projectTitle}: %s`,
       meta: [
         { property: 'theme-color', content: '#025ca2' },
         {
           property: 'description',
-          content:
-            "I'm an open-source software engineer at Skyscanner, passionate about design, travel and photography. I mainly work on web (React) and iOS products.",
+          content: projectDescriptionShort,
         },
-        { property: 'og:site_name', content: 'George Gillams' },
+        { property: 'og:site_name', content: projectTitle },
         {
           property: 'og:image',
-          content: 'https://i.imgur.com/FLA0jkg.jpg',
+          content: `${siteUrl}/static/images/social-preview.png`,
+        },
+        {
+          property: 'twitter:image',
+          content: `${siteUrl}/static/images/social-preview.png`,
         },
         {
           property: 'og:url',
-          content: 'https://georgegillams.co.uk/',
+          content: `${siteUrl}/`,
         },
         {
           property: 'og:logo',
-          content: 'https://georgegillams.co.uk/favicon.ico',
+          content: `${siteUrl}/static/favicon/favicon-180x180.png`,
         },
         { property: 'og:locale', content: 'en_GB' },
         {
           property: 'og:title',
-          content: 'George Gillams - open source software engineer',
+          content: `${projectTitle} ${projectDescriptionShort}`,
         },
         {
           property: 'og:description',
-          content:
-            'Open source software engineer, passionate about design, travel and photography.',
+          content: projectDescription,
         },
         { property: 'og:card', content: 'summary' },
         { property: 'twitter:card', content: 'summary_large_image' },

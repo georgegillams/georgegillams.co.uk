@@ -1,0 +1,19 @@
+@import '~utils/tokens';
+
+.blog-renderer {
+  &__body-skeleton {
+    height: 50rem;
+  }
+
+  &__date {
+    margin-bottom: 1rem;
+  }
+
+  &__tag-list {
+    margin-bottom: 1.5rem;
+  }
+
+  &__tag {
+    margin: 0 0.5rem 0.5rem 0;
+  }
+}

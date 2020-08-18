@@ -1,5 +1,5 @@
 /* eslint-disable */
-import { dbLoad, dbLoadSingle } from 'utils/database';
+import { dbLoad, dbLoadSingle } from 'utils/common/database';
 
 import fetchPaymentDataFromStripe from './fetchPaymentDataFromStripe';
 

@@ -1,5 +1,5 @@
-import { dbLoad } from 'utils/database';
-import authentication from 'utils/authentication';
+import { dbLoad } from 'utils/common/database';
+import authentication from 'utils/common/authentication';
 
 export default function loadAll(req) {
   return authentication(req)
@@ -9,7 +9,7 @@ export default function loadAll(req) {
         sortKey: 'publishedTimestamp',
         includeDeleted: user && user.admin,
         filter: b => b.published || (user && user.admin),
-      }),
+      })
     )
     .then(blogs => {
       const blogMeta = JSON.parse(JSON.stringify(blogs));

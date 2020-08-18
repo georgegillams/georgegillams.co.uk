@@ -1,0 +1,372 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<AdminNavigation /> should render correctly - index 1`] = `
+<div>
+  <div
+    class=""
+  >
+    <div
+      class="skeleton__outer skeleton__section"
+    >
+      <div
+        class="skeleton__shimmer"
+        style="margin-left: -0px;"
+      />
+    </div>
+    <div
+      class="admin-navigation__card-container"
+    >
+      <div
+        class="skeleton__outer skeleton__card--compact"
+      >
+        <div
+          class="skeleton__shimmer"
+          style="margin-left: -0px;"
+        />
+      </div>
+      <div
+        class="skeleton__outer skeleton__card--compact"
+      >
+        <div
+          class="skeleton__shimmer"
+          style="margin-left: -0px;"
+        />
+      </div>
+      <div
+        class="skeleton__outer skeleton__card--compact"
+      >
+        <div
+          class="skeleton__shimmer"
+          style="margin-left: -0px;"
+        />
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`<AdminNavigation /> should render correctly with admin user 1`] = `
+<div>
+  <div
+    class=""
+  >
+    <div
+      class="typography__main"
+    >
+      <h1
+        class="typography__text typography__text--section page-title__section"
+        id="admin"
+      >
+        Admin
+      </h1>
+      <div
+        class="admin-navigation__card-container"
+      >
+        <div
+          class="feature-card feature-card--narrow-compact admin-navigation__card"
+          role="button"
+          style="cursor: pointer;"
+          tabindex="0"
+        >
+          <div
+            class="card"
+          >
+            <div
+              class="card__background"
+              style="background-image: url(null);"
+            />
+            <div
+              class="card__outer-container card__outer-container--padded"
+            >
+              <div
+                class="feature-card__outer-container feature-card__outer-container--narrow-compact"
+              >
+                <div
+                  class="feature-card__date feature-card__date--narrow-compact"
+                />
+                <div
+                  class="feature-card__center-container feature-card__center-container--narrow-compact"
+                >
+                  <div
+                    class="typography__main typography--no-padding feature-card__title"
+                  >
+                    <h1
+                      class="typography__text typography__text--section typography__link typography--no-padding"
+                      id="debug"
+                    >
+                      Debug
+                    </h1>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="card__banner"
+            />
+          </div>
+        </div>
+        <div
+          class="feature-card feature-card--narrow-compact admin-navigation__card"
+          role="button"
+          style="cursor: pointer;"
+          tabindex="0"
+        >
+          <div
+            class="card"
+          >
+            <div
+              class="card__background"
+              style="background-image: url(null);"
+            />
+            <div
+              class="card__outer-container card__outer-container--padded"
+            >
+              <div
+                class="feature-card__outer-container feature-card__outer-container--narrow-compact"
+              >
+                <div
+                  class="feature-card__date feature-card__date--narrow-compact"
+                />
+                <div
+                  class="feature-card__center-container feature-card__center-container--narrow-compact"
+                >
+                  <div
+                    class="typography__main typography--no-padding feature-card__title"
+                  >
+                    <h1
+                      class="typography__text typography__text--section typography__link typography--no-padding"
+                      id="analytics"
+                    >
+                      Analytics
+                    </h1>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="card__banner"
+            />
+          </div>
+        </div>
+        <div
+          class="feature-card feature-card--narrow-compact admin-navigation__card"
+          role="button"
+          style="cursor: pointer;"
+          tabindex="0"
+        >
+          <div
+            class="card"
+          >
+            <div
+              class="card__background"
+              style="background-image: url(null);"
+            />
+            <div
+              class="card__outer-container card__outer-container--padded"
+            >
+              <div
+                class="feature-card__outer-container feature-card__outer-container--narrow-compact"
+              >
+                <div
+                  class="feature-card__date feature-card__date--narrow-compact"
+                />
+                <div
+                  class="feature-card__center-container feature-card__center-container--narrow-compact"
+                >
+                  <div
+                    class="typography__main typography--no-padding feature-card__title"
+                  >
+                    <h1
+                      class="typography__text typography__text--section typography__link typography--no-padding"
+                      id="notifications"
+                    >
+                      Notifications
+                    </h1>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="card__banner"
+            />
+          </div>
+        </div>
+        <div
+          class="feature-card feature-card--narrow-compact admin-navigation__card"
+          role="button"
+          style="cursor: pointer;"
+          tabindex="0"
+        >
+          <div
+            class="card"
+          >
+            <div
+              class="card__background"
+              style="background-image: url(null);"
+            />
+            <div
+              class="card__outer-container card__outer-container--padded"
+            >
+              <div
+                class="feature-card__outer-container feature-card__outer-container--narrow-compact"
+              >
+                <div
+                  class="feature-card__date feature-card__date--narrow-compact"
+                />
+                <div
+                  class="feature-card__center-container feature-card__center-container--narrow-compact"
+                >
+                  <div
+                    class="typography__main typography--no-padding feature-card__title"
+                  >
+                    <h1
+                      class="typography__text typography__text--section typography__link typography--no-padding"
+                      id="users"
+                    >
+                      Users
+                    </h1>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="card__banner"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`<AdminNavigation /> should render correctly with auth error 1`] = `
+<div>
+  <div
+    class=""
+  >
+    <div
+      class="skeleton__outer skeleton__section"
+    >
+      <div
+        class="skeleton__shimmer"
+        style="margin-left: -0px;"
+      />
+    </div>
+    <div
+      class="admin-navigation__card-container"
+    >
+      <div
+        class="skeleton__outer skeleton__card--compact"
+      >
+        <div
+          class="skeleton__shimmer"
+          style="margin-left: -0px;"
+        />
+      </div>
+      <div
+        class="skeleton__outer skeleton__card--compact"
+      >
+        <div
+          class="skeleton__shimmer"
+          style="margin-left: -0px;"
+        />
+      </div>
+      <div
+        class="skeleton__outer skeleton__card--compact"
+      >
+        <div
+          class="skeleton__shimmer"
+          style="margin-left: -0px;"
+        />
+      </div>
+    </div>
+  </div>
+  <div
+    class="typography__main typography--no-padding loading-cover__overlay--content"
+  >
+    <h2
+      class="typography__text typography__text--subsection typography--no-padding"
+      id="this-is-taking-a-while.-maybe-something-isn't-quite-right..."
+    >
+      This is taking a while. Maybe something isn't quite right...
+    </h2>
+  </div>
+</div>
+`;
+
+exports[`<AdminNavigation /> should render correctly with initial state 1`] = `
+<div>
+  <div
+    class=""
+  >
+    <div
+      class="skeleton__outer skeleton__section"
+    >
+      <div
+        class="skeleton__shimmer"
+        style="margin-left: -0px;"
+      />
+    </div>
+    <div
+      class="admin-navigation__card-container"
+    >
+      <div
+        class="skeleton__outer skeleton__card--compact"
+      >
+        <div
+          class="skeleton__shimmer"
+          style="margin-left: -0px;"
+        />
+      </div>
+      <div
+        class="skeleton__outer skeleton__card--compact"
+      >
+        <div
+          class="skeleton__shimmer"
+          style="margin-left: -0px;"
+        />
+      </div>
+      <div
+        class="skeleton__outer skeleton__card--compact"
+      >
+        <div
+          class="skeleton__shimmer"
+          style="margin-left: -0px;"
+        />
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`<AdminNavigation /> should render correctly with user 1`] = `
+<div>
+  <div
+    class=""
+  >
+    <div
+      class="typography__main"
+    >
+      <h1
+        class="typography__text typography__text--section"
+        id="admin-only"
+      >
+        Admin only
+      </h1>
+      <span
+        class="paragraph"
+      >
+        You need to be logged in with an admin account to view this content.
+        <br />
+        <a
+          class="text-link text-link--text-link text-link--no-padding text-link--inline"
+          href="/login"
+        >
+          Got a different admin account? Log in here.
+        </a>
+      </span>
+    </div>
+  </div>
+</div>
+`;

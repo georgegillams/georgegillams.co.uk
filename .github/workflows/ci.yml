@@ -29,14 +29,14 @@ jobs:
       - name: npm install
         run: npm ci
 
-      - name: build
+      - name: build for snapshot testing
         run: npm run build:test
 
       - name: lint
-        run: npm run test:lint
+        run: npm run lint
 
       - name: jest
-        run: npm run test:jest
+        run: npm run test
 
       - name: snapshot test
         run: npm run backstopjs:test
@@ -55,17 +55,12 @@ jobs:
           commit_message: Snapshot changes
           push_options: --force
 
-      - name: build AWS
-        run: |
-          if [ "${{ github.ref }}" == "refs/heads/main" ] && [ "${{ github.event_name }}" != "pull_request" ]; then
-            STRIPE_PUBLIC_API_KEY=${{ secrets.STRIPE_PUBLIC_API_KEY }} npm run build:aws
-            zip -r build build
-          fi;
-
       - name: deploy
         run: |
           if [ "${{ github.ref }}" == "refs/heads/main" ] && [ "${{ github.event_name }}" != "pull_request" ]; then
             echo "${{ secrets.EC2_RSA }}" > ./identityFile.txt
             chmod 400 ./identityFile.txt
+            npm run build
+            zip -r build build
             scp -o "StrictHostKeyChecking=no" -i ./identityFile.txt -r ./build.zip ubuntu@ec2-35-178-235-11.eu-west-2.compute.amazonaws.com:/home/ubuntu/georgegillams.co.uk/
           fi;

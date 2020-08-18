@@ -2,12 +2,10 @@
 
 import create from './create.js';
 
-import { dbLoad } from 'utils/database';
-import { AuthError } from 'utils/errors';
-import {
-  clearDatabaseCollection,
-  createUsersWithSessions,
-} from 'utils/testUtils';
+import { SESSION_COOKIE_KEY } from 'helpers/storageConstants';
+import { dbLoad } from 'utils/common/database';
+import { AuthError } from 'utils/common/errors';
+import { clearDatabaseCollection, createUsersWithSessions } from 'utils/common/testUtils';
 
 beforeEach(() => {
   clearDatabaseCollection('users');
@@ -17,7 +15,7 @@ beforeEach(() => {
 
 test('create support as admin - adds data to collection', () => {
   const req = {
-    cookies: { session: 'adminSessionKey1' },
+    cookies: { [SESSION_COOKIE_KEY]: 'adminSessionKey1' },
     headers: {},
     body: {
       requestedId: 'supportLink1',
@@ -42,7 +40,7 @@ test('create support as admin - adds data to collection', () => {
 
 test('create support non-admin - throws auth error', () => {
   const req = {
-    cookies: { session: 'nonAdminSessionKey1' },
+    cookies: { [SESSION_COOKIE_KEY]: 'nonAdminSessionKey1' },
     headers: {},
     body: {
       requestedId: 'supportLink1',
@@ -66,7 +64,7 @@ test('create support non-admin - throws auth error', () => {
         expect(results).toBeTruthy();
         expect(results.length).toBe(0);
         return true;
-      }),
+      })
     );
 });
 
@@ -95,6 +93,6 @@ test('create support unauthenticated - throws auth error', () => {
         expect(results).toBeTruthy();
         expect(results.length).toBe(0);
         return true;
-      }),
+      })
     );
 });

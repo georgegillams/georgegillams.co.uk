@@ -1,11 +1,11 @@
-import { InvalidInputError } from '../../../utils/errors';
+import { InvalidInputError } from 'utils/common/errors';
 
 import paymentsAllowedAttributes from './private/paymentsAllowedAttributes';
 
-import { dbCreate } from 'utils/database';
-import lockPromise from 'utils/lock';
-import authentication from 'utils/authentication';
-import reqSecure from 'utils/reqSecure';
+import { dbCreate } from 'utils/common/database';
+import lockPromise from 'utils/common/lock';
+import authentication from 'utils/common/authentication';
+import reqSecure from 'utils/common/reqSecure';
 
 export default function create(req) {
   reqSecure(req, paymentsAllowedAttributes);
@@ -18,6 +18,6 @@ export default function create(req) {
         throw new InvalidInputError('Payments over £10,000 are not possible.');
       }
       return dbCreate({ redisKey: 'payments', user }, req);
-    }),
+    })
   );
 }

@@ -1,13 +1,15 @@
+import appConfig from './appConfig';
+
 const redirects = [
+  {
+    from: '/codebase',
+    to: appConfig.githubRepoUrl,
+  },
   { from: '/copyright', to: 'https://creativecommons.org/licenses/by-sa/3.0/' },
   { from: '/facebook', to: 'https://www.facebook.com/georgegillams' },
   { from: '/flickr', to: 'https://www.flickr.com/people/georgegillams' },
   { from: '/monzo', to: 'https://join.monzo.com/r/vjd3d74' },
   { from: '/github', to: 'https://github.com/georgegillams' },
-  {
-    from: '/codebase',
-    to: 'https://github.com/georgegillams/georgegillams.co.uk',
-  },
   { from: '/gurushots', to: 'https://gurushots.com/georgegillams/photos' },
   {
     from: '/linkedin',
