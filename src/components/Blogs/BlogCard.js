@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import FeatureCard from 'components/common/FeatureCard';
 import { Tag } from 'gg-components/Tag';
+import FeatureCard from 'components/common/FeatureCard';
 
 import { NON_EMOJI_REGEX } from 'helpers/regexConstants';
 

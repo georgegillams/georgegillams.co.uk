@@ -1,17 +1,19 @@
 import React, { useEffect, useState } from 'react';
 import PropTypes from 'prop-types';
 import { cssModules } from 'gg-components/helpers/cssModules';
-import DebugObject from 'components/common/DebugObject';
 import { LoadingCover } from 'gg-components/LoadingCover';
+
+import Head from 'next/head';
+import appConfig from 'helpers/appConfig';
+
+import DebugObject from 'components/common/DebugObject';
+import { CreativeCommons } from 'components/CreativeCommons';
+import { BlogsList } from 'components/Blogs';
 
 import BlogListSkeleton from './BlogListSkeleton';
 import BlogsNav from './BlogsNav';
 
-import { CreativeCommons } from 'components/CreativeCommons';
-import { BlogsList } from 'components/Blogs';
 import STYLES from './blogs-page.scss';
-import Head from 'next/head';
-import appConfig from 'helpers/appConfig';
 
 const getClassName = cssModules(STYLES);
 
