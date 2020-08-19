@@ -44,7 +44,7 @@
     ]
   },
   "dependencies": {
-    "@next/bundle-analyzer": "^9.5.1",
+    "@next/bundle-analyzer": "^9.5.2",
     "@zeit/next-css": "^1.0.1",
     "@zeit/next-sass": "^1.0.1",
     "async-lock": "^1.2.4",
@@ -70,9 +70,9 @@
     "ip-parse": "^1.0.5",
     "konami": "^1.6.2",
     "lodash": "^4.17.19",
-    "next": "^9.4.4",
-    "next-images": "^1.4.0",
-    "next-transpile-modules": "^4.0.2",
+    "next": "^9.5.2",
+    "next-images": "^1.4.1",
+    "next-transpile-modules": "^4.1.0",
     "nodemailer": "^6.4.11",
     "prop-types": "^15.7.2",
     "react": "^16.13.1",
