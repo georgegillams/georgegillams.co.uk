@@ -1,0 +1,212 @@
+@import '../Tokens/common';
+
+.typography {
+  &__main {
+    width: 100%;
+    padding-bottom: $spacing-base;
+    color: $not-black;
+    font-family: 'Quattrocento Sans', sans-serif;
+    text-decoration: none;
+
+    @media (prefers-color-scheme: dark) {
+      color: $not-black-invert;
+    }
+  }
+
+  &__paragraph {
+    margin-bottom: 0;
+    padding-bottom: 0;
+    line-height: 1.5;
+  }
+
+  &__icon {
+    display: inline-flex;
+    width: 0.4rem;
+    height: $spacing-base;
+    margin-left: 0.55rem;
+
+    &--inner {
+      position: absolute;
+      max-width: 0.9rem;
+      margin-top: 0.12rem;
+      margin-left: -0.45rem;
+    }
+  }
+
+  &__anchor-link {
+    position: absolute;
+    margin-top: 0.6rem;
+    margin-left: -1.2rem;
+    border-radius: 0.25rem;
+    color: $link-color;
+    color: var(--link-color, $link-color);
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-decoration: none;
+    opacity: 0.4;
+
+    @include bpk-breakpoint-tablet {
+      margin-left: 0;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      opacity: 1;
+    }
+
+    &:active,
+    &:focus {
+      box-shadow: $focus-indicator;
+
+      @media (prefers-color-scheme: dark) {
+        box-shadow: $focus-indicator-invert;
+      }
+    }
+
+    &--no-padding {
+      margin-top: -0.16rem;
+    }
+
+    &--section {
+      margin-top: 1.7rem;
+      font-size: 2.2rem;
+      line-height: 2.8rem;
+      line-height: 2.2rem;
+
+      &--no-padding {
+        margin-top: 0.1rem;
+      }
+    }
+  }
+
+  &__text {
+    color: $not-black;
+    font-family: 'Quattrocento Sans', sans-serif;
+    text-decoration: none;
+
+    @media (prefers-color-scheme: dark) {
+      color: $not-black-invert;
+    }
+
+    &--with-anchor-link {
+      @include bpk-breakpoint-tablet {
+        padding-left: 1.2rem;
+      }
+    }
+
+    &--subsection {
+      padding-top: 0.6rem;
+      padding-bottom: 0.6rem;
+      line-height: 1.6rem;
+      text-decoration: none;
+    }
+
+    &--section {
+      padding-top: 1.5rem;
+      padding-bottom: $spacing-base;
+      border-radius: 1rem;
+      font-size: 2.2rem;
+      font-weight: bold;
+      line-height: 2.8rem;
+      text-decoration: none;
+    }
+  }
+
+  &--disabled {
+    color: $disabled-color;
+
+    @media (prefers-color-scheme: dark) {
+      color: $disabled-color-invert;
+    }
+  }
+
+  &--fancy {
+    font-family: Tangerine, cursive;
+  }
+
+  &--no-padding {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  &--hovering {
+    transition: all 0.4s;
+    /* stylelint-disable-next-line declaration-no-important */
+    color: $primary-color !important;
+    /* stylelint-disable-next-line declaration-no-important */
+    color: var(--primary-color, $primary-color) !important;
+    text-decoration: none;
+    /* stylelint-disable-next-line declaration-no-important */
+    fill: $primary-color !important;
+    /* stylelint-disable-next-line declaration-no-important */
+    fill: var(--primary-color, $primary-color) !important;
+  }
+
+  &--hovering-light {
+    transition: all 0.4s;
+    /* stylelint-disable-next-line declaration-no-important */
+    color: $primary-color-light !important;
+    /* stylelint-disable-next-line declaration-no-important */
+    color: var(--primary-color-light, $primary-color-light) !important;
+    text-decoration: none;
+    /* stylelint-disable-next-line declaration-no-important */
+    fill: $primary-color-light !important;
+    /* stylelint-disable-next-line declaration-no-important */
+    fill: var(--primary-color-light, $primary-color-light) !important;
+  }
+
+  &--inline {
+    width: auto;
+  }
+
+  &__link {
+    display: inline-block;
+    border-radius: 0.25rem;
+    font-weight: bold;
+    text-decoration: none;
+
+    &--text-link {
+      color: $link-color;
+      color: var(--link-color, $link-color);
+      fill: $link-color;
+      fill: var(--link-color, $link-color);
+
+      @media (prefers-color-scheme: dark) {
+        color: $link-color-invert;
+        color: var(--link-color-invert, $link-color-invert);
+        fill: $link-color-invert;
+        fill: var(--link-color-invert, $link-color-invert);
+      }
+
+      &--all-white {
+        color: white;
+        fill: white;
+      }
+    }
+
+    &:focus,
+    &:active,
+    &:hover {
+      color: $link-color-hover;
+      color: var(--link-color-hover, $link-color-hover);
+      text-decoration: none;
+      fill: $link-color-hover;
+      fill: var(--link-color-hover, $link-color-hover);
+    }
+    &:active,
+    &:focus {
+      box-shadow: $focus-indicator;
+
+      @media (prefers-color-scheme: dark) {
+        box-shadow: $focus-indicator-invert;
+      }
+    }
+  }
+
+  &--light {
+    color: $not-black-invert;
+
+    @media (prefers-color-scheme: dark) {
+      color: $not-black;
+    }
+  }
+}

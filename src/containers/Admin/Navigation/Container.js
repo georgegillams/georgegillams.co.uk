@@ -2,11 +2,11 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import PageTitle from 'components/common/PageTitle';
 import { DebugObject } from 'components/common/DebugObject';
-import { LoadingCover } from 'gg-components/LoadingCover';
-import { FEATURE_CARD_LAYOUTS } from 'gg-components/FeatureCard';
+import { LoadingCover } from 'ggComponents/LoadingCover';
+import { FEATURE_CARD_LAYOUTS } from 'ggComponents/FeatureCard';
 import FeatureCard from 'components/common/FeatureCard';
-import STYLES from './admin-navigation.scss';
-import { cssModules } from 'gg-components/helpers/cssModules';
+import STYLES from './admin-navigation.module.scss';
+import { cssModules } from 'ggComponents/helpers/cssModules';
 import { setPostLoginRedirect } from 'utils/common/storageHelpers';
 
 import Skeleton from './Skeleton';

@@ -1,12 +1,12 @@
 import React from 'react';
-import { cssModules } from 'gg-components/helpers/cssModules';
-import { InfoCell, INFO_CELL_STYLES } from 'gg-components/InfoCell';
-import withScroll from 'gg-components/ScrollContainer/withScroll.js';
+import { cssModules } from 'ggComponents/helpers/cssModules';
+import { InfoCell, INFO_CELL_STYLES } from 'ggComponents/InfoCell';
+import withScroll from 'ggComponents/ScrollContainer/withScroll.js';
 import TextLink from 'components/common/TextLink';
 import PageTitle from 'components/common/PageTitle';
 import Button from 'components/common/Button';
 
-import STYLES from './contact.scss';
+import STYLES from './contact.module.scss';
 import twitterLogo from './twitter.svg';
 import linkedInLogo from './linkedin.svg';
 import gurushotsLogo from './gurushots.svg';

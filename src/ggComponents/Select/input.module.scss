@@ -1,0 +1,86 @@
+@import '../Tokens/common';
+
+.input {
+  &__outer {
+    display: flex;
+    align-items: center;
+    border: 1px #b2b2bf solid;
+    border-radius: 0.25rem;
+    background-color: $background-color;
+
+    @media (prefers-color-scheme: dark) {
+      border-color: white;
+      background-color: $background-color-invert;
+    }
+
+    &--hovering {
+      box-shadow: $focus-indicator;
+
+      @media (prefers-color-scheme: dark) {
+        box-shadow: $focus-indicator-invert;
+      }
+    }
+
+    &--disabled {
+      border-color: #f1f2f8;
+
+      @media (prefers-color-scheme: dark) {
+        border-color: #6a6a6a;
+      }
+    }
+  }
+
+  &__inner {
+    padding: 0.375rem 0.75rem;
+    flex-grow: 1;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    color: $not-black;
+    font-size: $spacing-base;
+
+    @media (prefers-color-scheme: dark) {
+      color: $not-black-invert;
+    }
+
+    &--disabled {
+      color: #b2b2bf;
+
+      @media (prefers-color-scheme: dark) {
+        color: #7b7b86;
+      }
+    }
+
+    &--select {
+      border-radius: 0.25rem;
+      background: #0000
+        url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgd2lkdGg9IjE4IiBoZWlnaHQ9IjE4Ij48c3R5bGU+PC9zdHlsZT48cGF0aCBkPSJNMTkuNyAxMC4zTDEyIDE3LjRsLTcuNy03LjFjLS42LS42LS4yLTEuNy43LTEuN2gxNGMuOSAwIDEuMyAxLjEuNyAxLjd6IiBmaWxsPSIjNDQ0NTYwIi8+PC9zdmc+')
+        no-repeat right 0.75rem center;
+      /* stylelint-disable-next-line property-no-vendor-prefix */
+      -webkit-appearance: none;
+      /* stylelint-disable-next-line property-no-vendor-prefix */
+      -moz-appearance: none;
+      appearance: none;
+
+      @media (prefers-color-scheme: dark) {
+        background: #0000
+          url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgd2lkdGg9IjE4IiBoZWlnaHQ9IjE4Ij48c3R5bGU+PC9zdHlsZT48cGF0aCBkPSJNMTkuNyAxMC4zTDEyIDE3LjRsLTcuNy03LjFjLS42LS42LS4yLTEuNy43LTEuN2gxNGMuOSAwIDEuMyAxLjEuNyAxLjd6IiBmaWxsPSIjZmZmIi8+PC9zdmc+')
+          no-repeat right 0.75rem center;
+      }
+    }
+  }
+
+  &__icon {
+    margin-right: 0.5rem;
+
+    &--valid {
+      color: $bpk-color-monteverde;
+      fill: $bpk-color-monteverde;
+    }
+
+    &--invalid {
+      color: $bpk-color-panjin;
+      fill: $bpk-color-panjin;
+    }
+  }
+}

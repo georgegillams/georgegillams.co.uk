@@ -1,10 +1,10 @@
 import React from 'react';
-import { Paragraph } from 'gg-components/Paragraph';
+import { Paragraph } from 'ggComponents/Paragraph';
 import PageTitle from 'components/common/PageTitle';
 import TextLink from 'components/common/TextLink';
-import { cssModules } from 'gg-components/helpers/cssModules';
+import { cssModules } from 'ggComponents/helpers/cssModules';
 
-import STYLES from './api-docs.scss';
+import STYLES from './api-docs.module.scss';
 import apiStructure from './apiStructureWithDescriptions';
 
 const getClassName = cssModules(STYLES);

@@ -1,11 +1,11 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { cssModules } from 'gg-components/helpers/cssModules';
+import { cssModules } from 'ggComponents/helpers/cssModules';
 import FeatureCard, { FEATURE_CARD_LAYOUTS } from 'components/common/FeatureCard';
 
 import AboutPage from 'containers/About';
-import STYLES from './home.scss';
-import CompactCardSkeleton from 'gg-components/Skeletons/CompactCardSkeleton';
+import STYLES from './home.module.scss';
+import CompactCardSkeleton from 'ggComponents/Skeletons/CompactCardSkeleton';
 
 const getClassName = cssModules(STYLES);
 

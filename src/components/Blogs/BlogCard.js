@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Tag } from 'gg-components/Tag';
+import { Tag } from 'ggComponents/Tag';
 import FeatureCard from 'components/common/FeatureCard';
 
 import { NON_EMOJI_REGEX } from 'helpers/regexConstants';

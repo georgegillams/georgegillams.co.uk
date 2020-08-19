@@ -1,9 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { cssModules } from 'gg-components/helpers/cssModules';
+import { cssModules } from 'ggComponents/helpers/cssModules';
 import Card from 'components/common/Card';
 
-import STYLES from './split-detail-item.scss';
+import STYLES from './split-detail-item.module.scss';
 
 const getClassName = cssModules(STYLES);
 

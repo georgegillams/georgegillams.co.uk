@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
-import { Card as GGCard } from 'gg-components/Card';
+import { Card as GGCard } from 'ggComponents/Card';
 import HelperFunctions from 'helpers/common/HelperFunctions';
 import Router, { useRouter } from 'next/router';
 import nextifyHref from 'utils/nextifyHref';

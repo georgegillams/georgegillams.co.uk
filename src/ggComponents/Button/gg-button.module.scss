@@ -1,0 +1,150 @@
+@import '../Tokens/common';
+
+.button {
+  &__outer {
+    min-width: 5rem;
+    padding: 0.2rem 0.8rem;
+    transition: filter 0.3s;
+    border: none;
+    border-radius: 0.25rem;
+    color: white;
+    font-family: 'Quattrocento Sans', sans-serif;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-decoration-color: transparent;
+    text-decoration-line: none;
+
+    &:active,
+    &:focus {
+      box-shadow: $focus-indicator;
+
+      @media (prefers-color-scheme: dark) {
+        box-shadow: $focus-indicator-invert;
+      }
+    }
+
+    &--regular {
+      background-color: $cta-color;
+      background-color: var(--cta-color, $cta-color);
+
+      @media (prefers-color-scheme: dark) {
+        background-color: $cta-color-invert;
+        background-color: var(--cta-color-invert, $cta-color-invert);
+      }
+
+      &:focus,
+      &:active,
+      &:hover {
+        background-color: $cta-color-dark;
+        background-color: var(--cta-color-dark, $cta-color-dark);
+
+        @media (prefers-color-scheme: dark) {
+          background-color: $cta-color-dark-invert;
+          background-color: var(--cta-color-dark-invert, $cta-color-dark-invert);
+        }
+      }
+    }
+
+    &--large {
+      min-width: 7rem;
+      padding: 0.6rem 1.2rem;
+    }
+
+    &--white {
+      background-color: white;
+      color: $not-black;
+
+      &:focus,
+      &:active,
+      &:hover {
+        background-color: white;
+      }
+    }
+
+    &--secondary {
+      background-color: transparent;
+      color: $not-black;
+
+      @media (prefers-color-scheme: dark) {
+        color: $not-black-invert;
+      }
+
+      &:focus,
+      &:active,
+      &:hover {
+        background-color: transparent;
+        color: $not-black;
+
+        @media (prefers-color-scheme: dark) {
+          color: $not-black-invert;
+        }
+      }
+    }
+
+    &--destructive {
+      background-color: $destructive-color;
+
+      &:focus,
+      &:active,
+      &:hover {
+        background-color: $destructive-color-dark;
+      }
+    }
+
+    &--disabled {
+      background-color: $disabled-background-color;
+      color: $disabled-color;
+
+      @media (prefers-color-scheme: dark) {
+        background-color: $disabled-background-color-invert;
+        color: $disabled-color-invert;
+      }
+
+      &:focus,
+      &:active,
+      &:hover {
+        background-color: $disabled-background-color;
+        box-shadow: none;
+
+        @media (prefers-color-scheme: dark) {
+          background-color: $disabled-background-color-invert;
+        }
+      }
+    }
+
+    &--dark-text {
+      color: #3c4451;
+    }
+
+    &--bouncy {
+      padding: 0.2rem 0.8rem;
+      background-color: transparent;
+      color: $not-black;
+      font-weight: normal;
+
+      @media (prefers-color-scheme: dark) {
+        color: $not-black-invert;
+      }
+
+      &:focus,
+      &:active,
+      &:hover {
+        background-color: $cta-color-dark;
+        background-color: var(--cta-color-dark, $cta-color-dark);
+        color: white;
+        font-weight: bold;
+        animation-duration: 0.4s;
+        animation-name: gg-bounce-hover-effect;
+        fill: white;
+      }
+    }
+
+    &--link {
+      cursor: pointer;
+    }
+  }
+
+  &__a {
+    display: inline-block;
+  }
+}

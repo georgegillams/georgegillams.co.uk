@@ -1,0 +1,95 @@
+@import '../Tokens/common';
+
+.card {
+  position: relative;
+  z-index: 3;
+  width: 100%;
+  transition: all 0.4s;
+  border-radius: 0.35rem;
+  box-shadow: 0.2rem 0.2rem 0.5rem 0 $shadow-color;
+  overflow: hidden;
+  box-sizing: border-box;
+
+  @media (prefers-color-scheme: dark) {
+    box-shadow: 0.44rem 0.44rem 1rem 0 $shadow-color-invert;
+  }
+
+  &:focus,
+  &:active,
+  &:hover {
+    box-shadow: 0.4rem 0.4rem 1rem 0 $shadow-color;
+
+    @media (prefers-color-scheme: dark) {
+      box-shadow: 0.2rem 0.2rem 0.5rem 0 $shadow-color-invert;
+    }
+  }
+
+  &__outer-container {
+    &--padded {
+      padding: $spacing-lg;
+    }
+  }
+
+  &__background {
+    position: absolute;
+    z-index: -1;
+    width: calc(100% + 2rem);
+    height: calc(100% + 2rem);
+    margin-top: -1rem;
+    margin-left: -1rem;
+    background-color: $not-black-invert;
+    background-position: center;
+    background-size: cover;
+
+    @media (prefers-color-scheme: dark) {
+      background-color: $not-black;
+    }
+
+    &--highlighted {
+      background-color: $primary-color-light;
+      background-color: var(--primary-color-light, $primary-color-light);
+
+      @media (prefers-color-scheme: dark) {
+        background-color: $primary-color-really-dark;
+        background-color: var(--primary-color-really-dark, $primary-color-really-dark);
+      }
+    }
+
+    &--light {
+      background-color: $background-color-elevated;
+
+      @media (prefers-color-scheme: dark) {
+        background-color: $background-color-elevated-invert;
+      }
+    }
+
+    &--disabled {
+      background-color: $disabled-background-color;
+      color: $disabled-color;
+
+      @media (prefers-color-scheme: dark) {
+        background-color: $disabled-background-color-invert;
+        color: $disabled-color-invert;
+      }
+    }
+  }
+
+  &__banner {
+    z-index: 3;
+    width: 0;
+    height: 0.4rem;
+    transition: all 0.4s;
+    background-color: $primary-color;
+    background-color: var(--primary-color, $primary-color);
+
+    &--light {
+      background-color: $primary-color-light;
+      background-color: var(--primary-color-light, $primary-color-light);
+    }
+
+    &--hovered {
+      width: 100%;
+      margin-left: 0;
+    }
+  }
+}

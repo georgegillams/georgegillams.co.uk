@@ -1,0 +1,29 @@
+@import '../Tokens/common';
+
+.copy-button {
+  &__outer {
+    display: flex;
+    width: 1.5rem;
+    height: 1.5rem;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    background: none;
+    cursor: copy;
+  }
+
+  &__icon {
+    color: $primary-color;
+    color: var(--primary-color, $primary-color);
+    fill: $primary-color;
+    fill: var(--primary-color, $primary-color);
+
+    @media (prefers-color-scheme: dark) {
+      color: $link-color-invert;
+      color: var(--link-color-invert, $link-color-invert);
+      fill: $link-color-invert;
+      fill: var(--link-color-invert, $link-color-invert);
+    }
+  }
+}

@@ -1,10 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Input } from 'gg-components/Input';
-import { cssModules } from 'gg-components/helpers/cssModules';
-import { Button } from 'gg-components/Button';
+import { Input } from 'ggComponents/Input';
+import { cssModules } from 'ggComponents/helpers/cssModules';
+import { Button } from 'ggComponents/Button';
 
-import STYLES from './forms.scss';
+import STYLES from './forms.module.scss';
 
 const getClassName = cssModules(STYLES);
 

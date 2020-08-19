@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
-import { Button } from 'gg-components/Button';
-import { Paragraph } from 'gg-components/Paragraph';
-import { Subsection } from 'gg-components/Subsection';
+import { Button } from 'ggComponents/Button';
+import { Paragraph } from 'ggComponents/Paragraph';
+import { Subsection } from 'ggComponents/Subsection';
 import { SplitDetailItem } from 'components/common/SplitDetailView';
 import { UserEditForm } from 'components/common/Forms';
-import { Error } from 'gg-components/Error';
+import { Error } from 'ggComponents/Error';
 
 const AdminUsersAPIEntity = props => {
   const { compact, entity, updateUser, adminUserState, children, ...rest } = props;

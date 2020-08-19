@@ -1,0 +1,62 @@
+@import '../Tokens/common';
+
+.countdown {
+  &__outer {
+    display: flex;
+    height: 17rem;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    @include bpk-breakpoint-mobile {
+      height: 10rem;
+    }
+  }
+
+  &__clockOuter {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  &__divider {
+    width: auto;
+    font-size: 8rem;
+
+    @include bpk-breakpoint-mobile {
+      font-size: 4rem;
+    }
+  }
+
+  &__itemNumber {
+    width: auto;
+    font-size: 8rem;
+
+    @include bpk-breakpoint-mobile {
+      font-size: 4rem;
+    }
+  }
+
+  &__pausedLabel {
+    width: auto;
+    margin-top: $spacing-lg;
+    font-size: 6rem;
+
+    @include bpk-breakpoint-mobile {
+      font-size: 2rem;
+    }
+  }
+
+  &__itemName {
+    width: auto;
+
+    @include bpk-breakpoint-mobile {
+      font-size: 0.8rem;
+    }
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}

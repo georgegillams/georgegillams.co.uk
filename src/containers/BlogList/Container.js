@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import PropTypes from 'prop-types';
-import { cssModules } from 'gg-components/helpers/cssModules';
-import { LoadingCover } from 'gg-components/LoadingCover';
+import { cssModules } from 'ggComponents/helpers/cssModules';
+import { LoadingCover } from 'ggComponents/LoadingCover';
 
 import Head from 'next/head';
 import appConfig from 'helpers/appConfig';
@@ -13,7 +13,7 @@ import { BlogsList } from 'components/Blogs';
 import BlogListSkeleton from './BlogListSkeleton';
 import BlogsNav from './BlogsNav';
 
-import STYLES from './blogs-page.scss';
+import STYLES from './blogs-page.module.scss';
 
 const getClassName = cssModules(STYLES);
 

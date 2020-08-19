@@ -1,0 +1,7 @@
+@import '../Tokens/common';
+
+.stories {
+  &__themed {
+    --primary-color: red;
+  }
+}

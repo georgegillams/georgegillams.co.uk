@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import PropTypes from 'prop-types';
 import PageTitle from 'components/common/PageTitle';
 import { DebugObject } from 'components/common/DebugObject';
-import { Paragraph } from 'gg-components/Paragraph';
+import { Paragraph } from 'ggComponents/Paragraph';
 
 import TextLink from 'components/common/TextLink';
 import CookiesRequired from 'containers/common/CookiesRequired';

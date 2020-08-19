@@ -1,9 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { withRouter } from 'next/router';
-import { Input } from 'gg-components/Input';
-import { Select } from 'gg-components/Select';
-import { Checkbox } from 'gg-components/Checkbox';
+import { Input } from 'ggComponents/Input';
+import { Select } from 'ggComponents/Select';
+import { Checkbox } from 'ggComponents/Checkbox';
 
 const UserFilter = props => {
   const {

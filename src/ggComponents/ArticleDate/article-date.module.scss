@@ -1,0 +1,16 @@
+@import '../Tokens/common';
+
+.article-date {
+  &__date {
+    padding-bottom: 0.5rem;
+    color: $not-black;
+
+    @media (prefers-color-scheme: dark) {
+      color: $not-black-invert;
+    }
+
+    &--no-padding {
+      padding: 0;
+    }
+  }
+}

@@ -1,12 +1,12 @@
 import React from 'react';
-import { cssModules } from 'gg-components/helpers/cssModules';
+import { cssModules } from 'ggComponents/helpers/cssModules';
 import Button from 'components/common/Button';
-import { Paragraph } from 'gg-components/Paragraph';
-import { Subsection } from 'gg-components/Subsection';
+import { Paragraph } from 'ggComponents/Paragraph';
+import { Subsection } from 'ggComponents/Subsection';
 import TextLink from 'components/common/TextLink';
 import PageTitle from 'components/common/PageTitle';
 
-import STYLES from './work-overview.scss';
+import STYLES from './work-overview.module.scss';
 
 const getClassName = cssModules(STYLES);
 

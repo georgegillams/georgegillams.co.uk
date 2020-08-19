@@ -1,0 +1,15 @@
+@import '../Tokens/common';
+
+.blur-effect {
+  &__outer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    pointer-events: none;
+
+    @media (prefers-reduced-transparency: reduce) {
+      display: none;
+    }
+  }
+}

@@ -1,9 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { cssModules } from 'gg-components/helpers/cssModules';
+import { cssModules } from 'ggComponents/helpers/cssModules';
 import Button from 'components/common/Button';
 
-import STYLES from './blogs-nav.scss';
+import STYLES from './blogs-nav.module.scss';
 
 const getClassName = cssModules(STYLES);
 

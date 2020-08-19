@@ -1,0 +1,67 @@
+@import '../Tokens/common';
+
+.burger-button {
+  &__outer {
+    width: 2rem;
+    height: 2rem;
+    padding: 0.5rem;
+    border: none;
+    border-radius: 0.5rem;
+    background-color: transparent;
+
+    &:active,
+    &:focus {
+      box-shadow: $focus-indicator;
+
+      @media (prefers-color-scheme: dark) {
+        box-shadow: $focus-indicator-invert;
+      }
+    }
+  }
+
+  &__inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+
+  &__line {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 0.1rem;
+    transition: all 0.4s ease;
+    background-color: $not-black;
+
+    @media (prefers-color-scheme: dark) {
+      background-color: $not-black-invert;
+    }
+
+    &__one {
+      top: calc(25% - 0.05rem);
+
+      &--open {
+        top: calc(50% - 0.05rem);
+        transform: rotate(45deg);
+      }
+    }
+
+    &__two {
+      top: calc(50% - 0.05rem);
+
+      &--open {
+        left: -5rem;
+        opacity: 0;
+      }
+    }
+
+    &__three {
+      top: calc(75% - 0.05rem);
+
+      &--open {
+        top: calc(50% - 0.05rem);
+        transform: rotate(-45deg);
+      }
+    }
+  }
+}

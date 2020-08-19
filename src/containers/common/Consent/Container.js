@@ -8,14 +8,14 @@ import {
   CONSENT_STATE_DEFERRED_CLIENT_VALUE,
 } from './constants';
 import Button from 'components/common/Button';
-import { Paragraph } from 'gg-components/Paragraph';
+import { Paragraph } from 'ggComponents/Paragraph';
 import Modal from 'react-modal';
-import { cssModules } from 'gg-components/helpers/cssModules';
-import STYLES from './consent.scss';
+import { cssModules } from 'ggComponents/helpers/cssModules';
+import STYLES from './consent.module.scss';
 import { getPrivacyPreferences, setPrivacyPreferences } from 'utils/common/storageHelpers';
 import TextLink from 'components/common/TextLink';
 import Banner from './Banner';
-import { Section } from 'gg-components/Section';
+import { Section } from 'ggComponents/Section';
 
 const getClassName = cssModules(STYLES);
 

@@ -1,10 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { cssModules } from 'gg-components/helpers/cssModules';
+import { cssModules } from 'ggComponents/helpers/cssModules';
 
 import TextLink from 'components/common/TextLink';
 
-import STYLES from './footer-nav.scss';
+import STYLES from './footer-nav.module.scss';
 
 const getClassName = cssModules(STYLES);
 

@@ -1,12 +1,12 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { cssModules } from 'gg-components/helpers/cssModules';
-import { Subsection } from 'gg-components/Subsection';
-import { Paragraph } from 'gg-components/Paragraph';
+import { cssModules } from 'ggComponents/helpers/cssModules';
+import { Subsection } from 'ggComponents/Subsection';
+import { Paragraph } from 'ggComponents/Paragraph';
 import PageTitle from 'components/common/PageTitle';
 import TextLink from 'components/common/TextLink';
 
-import STYLES from './not-found.scss';
+import STYLES from './not-found.module.scss';
 
 const getClassName = cssModules(STYLES);
 

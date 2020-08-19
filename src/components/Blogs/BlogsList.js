@@ -1,9 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { cssModules } from 'gg-components/helpers/cssModules';
+import { cssModules } from 'ggComponents/helpers/cssModules';
 
 import BlogCard from './BlogCard';
-import STYLES from './blogs-list.scss';
+import STYLES from './blogs-list.module.scss';
 import Button from 'components/common/Button';
 import FeatureCard from 'components/common/FeatureCard';
 

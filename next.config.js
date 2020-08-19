@@ -1,4 +1,3 @@
-const nextTranspileModules = require('next-transpile-modules');
 const withImages = require('next-images');
 const bundleAnalyzer = require('@next/bundle-analyzer');
 
@@ -17,8 +16,6 @@ const nextConfig = {
   },
 };
 
-const withTM = nextTranspileModules(['gg-components']);
-
 const withBundleAnalyzer = bundleAnalyzer({
   enabled: process.env.ANALYZE === 'true',
 });
@@ -26,9 +23,7 @@ const withBundleAnalyzer = bundleAnalyzer({
 module.exports = withBundleAnalyzer({});
 
 module.exports = withBundleAnalyzer(
-  withImages(
-    withTM({
-      ...nextConfig,
-    })
-  )
+  withImages({
+    ...nextConfig,
+  })
 );

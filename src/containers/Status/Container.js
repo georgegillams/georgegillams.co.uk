@@ -1,12 +1,12 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { cssModules } from 'gg-components/helpers/cssModules';
-import { Subsection } from 'gg-components/Subsection';
-import { Paragraph } from 'gg-components/Paragraph';
+import { cssModules } from 'ggComponents/helpers/cssModules';
+import { Subsection } from 'ggComponents/Subsection';
+import { Paragraph } from 'ggComponents/Paragraph';
 import PageTitle from 'components/common/PageTitle';
-import { DebugObject } from 'gg-components/DebugObject';
+import { DebugObject } from 'ggComponents/DebugObject';
 
-import STYLES from './style.scss';
+import STYLES from './style.module.scss';
 
 import { getTimeDifference } from 'helpers/common/time';
 

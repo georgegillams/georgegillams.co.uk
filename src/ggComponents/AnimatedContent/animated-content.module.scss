@@ -1,0 +1,12 @@
+.animated-content {
+  &__outer-container {
+    padding-top: 4rem;
+    transition: all 0.4s ease-in-out;
+    opacity: 0.01;
+
+    &--in-view {
+      padding-top: 0;
+      opacity: 1;
+    }
+  }
+}

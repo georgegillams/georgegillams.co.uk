@@ -1,0 +1,129 @@
+@import '../Tokens/common';
+
+.navigation-bar {
+  &__container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: $navigation-bar-z-index;
+    width: 100%;
+    padding: 0.8rem 0.2rem;
+    background-color: $background-color-elevated-colored;
+    box-shadow: 0 0.05rem 0.5rem rgba(0, 0, 0, 0.173);
+
+    @media (prefers-color-scheme: dark) {
+      border-bottom: 0.1rem white solid;
+      background-color: $background-color-elevated-colored-invert;
+      box-shadow: unset;
+    }
+  }
+
+  &__bar {
+    @include page-container;
+    @include page-container-centered;
+
+    /* stylelint-disable-next-line order/order */
+    display: flex;
+    width: 100%;
+    margin-top: 0;
+    margin-bottom: 0;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__bar-placeholder {
+    width: 100%;
+    height: 5.53rem;
+
+    @include bpk-breakpoint-mobile {
+      height: 5rem;
+    }
+  }
+
+  &__mobile-container {
+    display: flex;
+    width: 30%;
+
+    &--left {
+      justify-content: flex-start;
+    }
+
+    &--rgt {
+      justify-content: flex-end;
+    }
+  }
+
+  &__animated-container {
+    position: fixed;
+    top: 0;
+    left: -50rem;
+    display: flex;
+    z-index: $navigation-bar-menu-z-index;
+    width: 25rem;
+    height: 100vh;
+    justify-content: center;
+    transition: left 0.4s;
+    background-color: $background-color-elevated-colored;
+    overflow: hidden;
+
+    @include bpk-breakpoint-mobile {
+      width: 100vw;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      border-right: 0.1rem white solid;
+      background-color: $background-color-elevated-colored-invert;
+    }
+
+    &--open {
+      left: 0;
+    }
+  }
+
+  &__scrim {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: $navigation-bar-scrim-z-index;
+    width: 100vw;
+    height: 100vh;
+    transition: opacity 0.4s;
+    background-color: $background-color-invert;
+    opacity: 0;
+
+    @media (prefers-color-scheme: dark) {
+      background-color: black;
+    }
+
+    &--open {
+      opacity: 0.5;
+    }
+  }
+
+  &__mobile-menu-container {
+    display: flex;
+    margin: 8rem 0 0 0;
+    flex-direction: column;
+    align-items: start;
+    text-align: left;
+  }
+
+  &__sidebar-menu-item {
+    min-width: 0;
+    margin-bottom: $spacing-base;
+  }
+
+  &__burger-button {
+    z-index: $navigation-bar-z-index;
+    width: 2rem;
+    height: 2rem;
+
+    &__line {
+      background-color: $not-black;
+
+      @media (prefers-color-scheme: dark) {
+        background-color: $not-black-invert;
+      }
+    }
+  }
+}

@@ -1,0 +1,42 @@
+@import '../Tokens/common';
+
+.marker {
+  &__outer {
+    position: absolute;
+    top: -1.2rem;
+    width: 2rem;
+    height: 2.5rem;
+  }
+
+  &__inner {
+    width: 0.2rem;
+    height: 0.5rem;
+    margin-top: $spacing-base;
+    margin-left: 0.9rem;
+    background-color: $not-black;
+    opacity: 0.15;
+
+    @media (prefers-color-scheme: dark) {
+      background-color: $not-black-invert;
+      opacity: 0.8;
+    }
+  }
+  &__popover {
+    position: absolute;
+    top: $spacing-lg;
+    display: flex;
+    width: 12rem;
+
+    &--label {
+      padding: 0.2rem 0.5rem;
+      border-radius: 0.25rem;
+      background-color: $not-black;
+      color: $not-black-invert;
+
+      @media (prefers-color-scheme: dark) {
+        background-color: $not-black-invert;
+        color: $not-black;
+      }
+    }
+  }
+}

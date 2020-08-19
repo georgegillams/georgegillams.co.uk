@@ -1,0 +1,241 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`parses paragraphs containing styled text 1`] = `
+Array [
+  Object {
+    "children": Array [
+      "Line containing ",
+      Object {
+        "children": Array [
+          "emphasized",
+        ],
+        "type": "bold",
+      },
+      " text",
+    ],
+    "type": "paragraph",
+  },
+  Object {
+    "children": Array [
+      "Line containing ",
+      Object {
+        "children": Array [
+          "wonky",
+        ],
+        "type": "italic",
+      },
+      " text",
+    ],
+    "type": "paragraph",
+  },
+  Object {
+    "children": Array [
+      "Line containing ",
+      Object {
+        "children": Array [
+          "link to DDG",
+        ],
+        "href": "https://duckduckgo.com/",
+        "hrefExternal": true,
+        "type": "link",
+      },
+      "",
+    ],
+    "type": "paragraph",
+  },
+]
+`;
+
+exports[`parses text containing 3-star bold italic 1`] = `
+Array [
+  "forFurtherProcessing: \\"Line containing \\"",
+  Object {
+    "children": Array [
+      Object {
+        "children": Array [
+          "emphasized",
+        ],
+        "type": "italic",
+      },
+    ],
+    "type": "bold",
+  },
+  "forFurtherProcessing: \\" text\\"",
+]
+`;
+
+exports[`parses text containing big link 1`] = `
+Array [
+  Object {
+    "href": "https://duckduckgo.com/",
+    "hrefExternal": true,
+    "text": "Big link to DDG",
+    "type": "bigLink",
+  },
+]
+`;
+
+exports[`parses text containing bold 1`] = `
+Array [
+  "forFurtherProcessing: \\"Line containing \\"",
+  Object {
+    "children": Array [
+      "emphasized",
+    ],
+    "type": "bold",
+  },
+  "forFurtherProcessing: \\" text\\"",
+]
+`;
+
+exports[`parses text containing bold italic 1`] = `
+Array [
+  "forFurtherProcessing: \\"Line containing \\"",
+  Object {
+    "children": Array [
+      "_emphasized_",
+    ],
+    "type": "bold",
+  },
+  "forFurtherProcessing: \\" text\\"",
+]
+`;
+
+exports[`parses text containing citation 1`] = `
+Array [
+  "forFurtherProcessing: \\"This points to some citation\\"",
+  Object {
+    "identifier": "7",
+    "type": "citation",
+  },
+  "forFurtherProcessing: \\" that will appear further down!cite(10) the page.\\"",
+]
+`;
+
+exports[`parses text containing code 1`] = `
+Array [
+  "forFurtherProcessing: \\"Line containing \\"",
+  Object {
+    "text": "some inline code",
+    "type": "code",
+  },
+  "forFurtherProcessing: \\" just like that\\"",
+]
+`;
+
+exports[`parses text containing footnote 1`] = `
+Array [
+  Object {
+    "children": Array [
+      "This is **the** footnote",
+    ],
+    "number": "1",
+    "type": "footnote",
+  },
+]
+`;
+
+exports[`parses text containing footnote reference 1`] = `
+Array [
+  "forFurtherProcessing: \\"This footnote\\"",
+  Object {
+    "number": "1",
+    "type": "footnoteReference",
+  },
+  "forFurtherProcessing: \\" points to something under the paragraph.
+This is the end of the paragraph
+[^1]: This is **the** footnote\\"",
+]
+`;
+
+exports[`parses text containing image 1`] = `
+Array [
+  "forFurtherProcessing: \\"Line containing \\"",
+  Object {
+    "caption": "imageCaption",
+    "src": "imageSrc",
+    "type": "image",
+  },
+  "forFurtherProcessing: \\" text\\"",
+]
+`;
+
+exports[`parses text containing italic 1`] = `
+Array [
+  "forFurtherProcessing: \\"Line containing \\"",
+  Object {
+    "children": Array [
+      "wonky",
+    ],
+    "type": "italic",
+  },
+  "forFurtherProcessing: \\" text
+And this is *some more*.\\"",
+]
+`;
+
+exports[`parses text containing link 1`] = `
+Array [
+  "forFurtherProcessing: \\"This contains a \\"",
+  Object {
+    "children": Array [
+      "link to DDG",
+    ],
+    "href": "https://duckduckgo.com/",
+    "hrefExternal": true,
+    "type": "link",
+  },
+  "forFurtherProcessing: \\" text.\\"",
+]
+`;
+
+exports[`parses text containing reference 1`] = `
+Array [
+  Object {
+    "identifier": "4",
+    "reference": "This is the forth reference
+!reference(5): This is the fifth reference",
+    "type": "reference",
+  },
+]
+`;
+
+exports[`parses text containing smart image 1`] = `
+Array [
+  "forFurtherProcessing: \\"Line containing \\"",
+  Object {
+    "aspectX": "1",
+    "aspectY": "2",
+    "caption": "imageCaption",
+    "darkSrc": "darkImageSrc",
+    "lightSrc": "lightImageSrc",
+    "type": "smartImage",
+  },
+  "forFurtherProcessing: \\" followed by some **emphasized** text\\"",
+]
+`;
+
+exports[`parses text containing strikethrough 1`] = `
+Array [
+  "forFurtherProcessing: \\"This contains some \\"",
+  Object {
+    "children": Array [
+      "stricken",
+    ],
+    "type": "strikethrough",
+  },
+  "forFurtherProcessing: \\" text.\\"",
+]
+`;
+
+exports[`parses text containing video 1`] = `
+Array [
+  "forFurtherProcessing: \\"Line containing \\"",
+  Object {
+    "showSuggestions": true,
+    "type": "youtube",
+    "videoID": "jofNR_WkoCE",
+  },
+  "forFurtherProcessing: \\" followed by some **emphasized** text\\"",
+]
+`;

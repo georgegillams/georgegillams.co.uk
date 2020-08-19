@@ -1,13 +1,13 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { cssModules } from 'gg-components/helpers/cssModules';
-import { Section } from 'gg-components/Section';
+import { cssModules } from 'ggComponents/helpers/cssModules';
+import { Section } from 'ggComponents/Section';
 
 import reactLogo from './react-logo.svg';
 import reduxLogo from './redux-logo.svg';
 import awsLogo from './aws-logo.svg';
 
-import STYLES from './tech-specs.scss';
+import STYLES from './tech-specs.module.scss';
 
 const getClassName = cssModules(STYLES);
 

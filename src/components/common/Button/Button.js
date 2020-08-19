@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Button as GGButton } from 'gg-components/Button';
+import { Button as GGButton } from 'ggComponents/Button';
 import nextifyHref from 'utils/nextifyHref';
 import Link from 'next/link';
 

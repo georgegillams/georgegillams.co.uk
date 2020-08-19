@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import TextLink from 'components/common/TextLink';
 import PageTitle from 'components/common/PageTitle';
 import { DebugObject } from 'components/common/DebugObject';
-import { LoadingCover } from 'gg-components/LoadingCover';
+import { LoadingCover } from 'ggComponents/LoadingCover';
 
 import Skeleton from './Skeleton';
 

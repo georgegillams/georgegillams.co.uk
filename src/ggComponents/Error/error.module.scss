@@ -1,0 +1,11 @@
+@import '../Tokens/common';
+
+.error {
+  color: $destructive-color;
+  fill: $destructive-color;
+
+  @media (prefers-color-scheme: dark) {
+    color: $destructive-color-dark;
+    fill: $destructive-color-dark;
+  }
+}

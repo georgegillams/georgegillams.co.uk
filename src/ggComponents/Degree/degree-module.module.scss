@@ -1,0 +1,54 @@
+@import '../Tokens/common';
+
+.degree-module {
+  display: flex;
+  align-items: center;
+
+  &--module-name {
+    width: 9rem;
+    margin-right: $spacing-base;
+  }
+
+  &--module-bar {
+    position: relative;
+    flex: 1;
+  }
+
+  &--first-marker {
+    position: absolute;
+    top: -0.2rem;
+    width: 0.2rem;
+    height: 0.5rem;
+    margin-left: calc(70% - 0.175rem);
+    background-color: $not-black;
+    opacity: 0.5;
+
+    @media (prefers-color-scheme: dark) {
+      background-color: $not-black-invert;
+      opacity: 0.8;
+    }
+  }
+
+  &--21-marker {
+    position: absolute;
+    top: -0.2rem;
+    width: 0.2rem;
+    height: 0.5rem;
+    margin-left: calc(70% - 0.175rem);
+    background-color: $not-black;
+    opacity: 0.5;
+
+    @media (prefers-color-scheme: dark) {
+      background-color: $not-black-invert;
+      opacity: 0.8;
+    }
+  }
+
+  &--percentage {
+    width: 2.1rem;
+    margin-left: 0.6rem;
+    transition: all 0.4s;
+    color: $primary-color;
+    font-weight: bold;
+  }
+}

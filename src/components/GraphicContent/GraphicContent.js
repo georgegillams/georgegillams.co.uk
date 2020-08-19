@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
-import { Checkbox } from 'gg-components/Checkbox';
-import { cssModules } from 'gg-components/helpers/cssModules';
+import { Checkbox } from 'ggComponents/Checkbox';
+import { cssModules } from 'ggComponents/helpers/cssModules';
 import Button from 'components/common/Button';
 
-import STYLES from './graphic-content.scss';
+import STYLES from './graphic-content.module.scss';
 
 const getClassName = cssModules(STYLES);
 

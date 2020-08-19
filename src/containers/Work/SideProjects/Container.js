@@ -1,13 +1,13 @@
 import React from 'react';
-import { cssModules } from 'gg-components/helpers/cssModules';
-import { Button } from 'gg-components/Button';
-import { Paragraph } from 'gg-components/Paragraph';
-import { Subsection } from 'gg-components/Subsection';
-import { Image } from 'gg-components/Image';
+import { cssModules } from 'ggComponents/helpers/cssModules';
+import { Button } from 'ggComponents/Button';
+import { Paragraph } from 'ggComponents/Paragraph';
+import { Subsection } from 'ggComponents/Subsection';
+import { Image } from 'ggComponents/Image';
 import TextLink from 'components/common/TextLink';
 import PageTitle from 'components/common/PageTitle';
 
-import STYLES from './work-side-projects.scss';
+import STYLES from './work-side-projects.module.scss';
 
 import VPNWarningLight from './VPNWarning_light.png';
 import VPNWarningDark from './VPNWarning_dark.png';

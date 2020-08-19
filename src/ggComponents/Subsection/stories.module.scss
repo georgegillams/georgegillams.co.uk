@@ -1,0 +1,9 @@
+@import '../Tokens/common';
+
+.stories {
+  &__themed {
+    --link-hover-color: blue;
+    --link-color: red;
+    --link-color-invert: purple;
+  }
+}

@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
-import { cssModules } from 'gg-components/helpers/cssModules';
+import { cssModules } from 'ggComponents/helpers/cssModules';
 
-import STYLES from './page-container.scss';
+import STYLES from './page-container.module.scss';
 import { DEBUG_SHOW_PAGE_CONTAINER_KEY } from 'helpers/storageConstants';
 
 export const LAYOUT_STYLES = {

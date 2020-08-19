@@ -1,0 +1,20 @@
+@import '../Tokens/common';
+
+.quote {
+  &__container {
+    padding: $spacing-base 0 $spacing-base 2rem;
+    border-left: solid 0.3rem $primary-color;
+    border-left: solid 0.3rem var(--primary-color, $primary-color);
+    border-top-right-radius: 0.4rem;
+    border-bottom-right-radius: 0.4rem;
+    color: $bpk-color-sky-gray-tint-01;
+    font-style: italic;
+    font-weight: bold;
+    box-shadow: 1rem 1rem 1rem #f3f2f5;
+
+    @media (prefers-color-scheme: dark) {
+      color: $not-black-invert;
+      box-shadow: 1rem 1rem 1rem black;
+    }
+  }
+}

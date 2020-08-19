@@ -1,0 +1,8 @@
+@import '../Tokens/common';
+
+.stories {
+  &__themed {
+    --checkbox-tick-color: red;
+    --checkbox-tick-invert: purple;
+  }
+}

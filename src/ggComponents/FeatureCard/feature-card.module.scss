@@ -1,0 +1,137 @@
+@import '../Tokens/common';
+
+.feature-card {
+  &--narrow-compact {
+    width: 25rem;
+    max-width: 25rem;
+  }
+
+  &__outer-container {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    box-sizing: border-box;
+
+    &--narrow-compact {
+      justify-content: center;
+    }
+
+    &--auto {
+      @include bpk-breakpoint-mobile {
+        justify-content: center;
+        align-content: space-around;
+      }
+    }
+  }
+
+  &__inner-container {
+    position: relative;
+    z-index: 3;
+    width: 100%;
+    border-radius: 0.35rem;
+    overflow: hidden;
+    box-sizing: border-box;
+
+    &--disabled {
+      background-color: gray;
+    }
+  }
+
+  &__center-container {
+    display: flex;
+    z-index: 3;
+    min-width: 10rem;
+    flex-direction: column;
+    justify-content: space-around;
+    flex: 1;
+
+    @include bpk-breakpoint-mobile {
+      min-width: 100%;
+      text-align: center;
+    }
+
+    &--narrow-compact {
+      min-width: unset;
+      justify-content: center;
+    }
+  }
+
+  &__image-container {
+    display: block;
+    z-index: 3;
+    width: 6rem;
+    height: 6rem;
+    justify-self: center;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    align-self: center;
+    border-radius: 50rem;
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+  }
+
+  &__annotation {
+    &:not(:last-child) {
+      margin-bottom: 0.5rem;
+    }
+
+    &--tablet {
+      @include bpk-breakpoint-mobile {
+        display: none;
+      }
+    }
+
+    &--mobile {
+      display: none;
+
+      @include bpk-breakpoint-mobile {
+        display: unset;
+      }
+    }
+  }
+
+  &__image {
+    z-index: 3;
+    width: 100%;
+    height: 100%;
+
+    &--disabled {
+      opacity: 0.5;
+    }
+  }
+
+  &__title {
+    grid-area: title;
+    align-items: center;
+  }
+
+  &__children {
+    display: flex;
+    grid-area: children;
+    flex-direction: row;
+    align-items: center;
+    /* stylelint-disable-next-line declaration-no-important */
+    text-decoration: none !important;
+    /* stylelint-disable-next-line declaration-no-important */
+    text-decoration-color: transparent !important;
+    /* stylelint-disable-next-line declaration-no-important */
+    text-decoration-line: none !important;
+  }
+
+  &__date {
+    z-index: 3;
+    width: 6.5rem;
+    grid-area: date;
+    align-items: center;
+    text-align: center;
+
+    &--narrow-compact {
+      display: none;
+    }
+  }
+}

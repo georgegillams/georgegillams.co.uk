@@ -1,0 +1,23 @@
+@import '../Tokens/common';
+
+.markdown-renderer {
+  &__outer {
+    display: inline;
+    color: $not-black;
+    font-family: 'Quattrocento Sans', sans-serif;
+
+    @media (prefers-color-scheme: dark) {
+      color: $not-black-invert;
+    }
+  }
+
+  &__element {
+    display: inline;
+    max-width: 100%;
+    font-family: 'Quattrocento Sans', sans-serif;
+  }
+
+  &__paragraph {
+    width: 100%;
+  }
+}

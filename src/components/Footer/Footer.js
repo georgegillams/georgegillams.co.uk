@@ -1,12 +1,12 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { cssModules } from 'gg-components/helpers/cssModules';
+import { cssModules } from 'ggComponents/helpers/cssModules';
 
 import Logo from '../Logo';
 
 import TechSpecs from './TechSpecs';
 import FooterNav from './FooterNav';
-import STYLES from './footer.scss';
+import STYLES from './footer.module.scss';
 
 const getClassName = cssModules(STYLES); // REGEX_REPLACED
 

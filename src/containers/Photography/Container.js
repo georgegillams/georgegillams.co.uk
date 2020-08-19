@@ -1,13 +1,13 @@
 import React from 'react';
 import FeatureCard, { FEATURE_CARD_LAYOUTS } from 'components/common/FeatureCard';
-import { Image } from 'gg-components/Image';
-import { Paragraph } from 'gg-components/Paragraph';
-import { Section } from 'gg-components/Section';
-import { Subsection } from 'gg-components/Subsection';
+import { Image } from 'ggComponents/Image';
+import { Paragraph } from 'ggComponents/Paragraph';
+import { Section } from 'ggComponents/Section';
+import { Subsection } from 'ggComponents/Subsection';
 import PageTitle from 'components/common/PageTitle';
-import { cssModules } from 'gg-components/helpers/cssModules';
+import { cssModules } from 'ggComponents/helpers/cssModules';
 
-import STYLES from './photography.scss';
+import STYLES from './photography.module.scss';
 
 import { CreativeCommons } from 'components/CreativeCommons';
 import GraphicContent, { withGraphicContentBehaviour } from 'components/GraphicContent';

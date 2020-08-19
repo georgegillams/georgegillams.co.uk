@@ -1,0 +1,60 @@
+@import '../Tokens/common';
+
+.text-link {
+  display: inline-block;
+  border-radius: 0.25rem;
+  font-weight: bold;
+  text-decoration: none;
+
+  &--text-link {
+    color: $link-color;
+    color: var(--link-color, $link-color);
+    fill: $link-color;
+    fill: var(--link-color, $link-color);
+
+    @media (prefers-color-scheme: dark) {
+      color: $link-color-invert;
+      color: var(--link-color-invert, $link-color-invert);
+      fill: $link-color-invert;
+      fill: var(--link-color-invert, $link-color-invert);
+    }
+
+    &--all-white {
+      color: white;
+      fill: white;
+    }
+  }
+
+  &:focus,
+  &:active,
+  &:hover {
+    color: $link-color-hover;
+    color: var(--link-color-hover, $link-color-hover);
+    text-decoration: none;
+    fill: $link-color-hover;
+    fill: var(--link-color-hover, $link-color-hover);
+  }
+  &:active,
+  &:focus {
+    box-shadow: $focus-indicator;
+
+    @media (prefers-color-scheme: dark) {
+      box-shadow: $focus-indicator-invert;
+    }
+  }
+
+  &__icon-container {
+    display: inline-flex;
+    width: 0.4rem;
+    height: 1rem;
+    margin-left: 0.55rem;
+  }
+
+  &__icon {
+    position: absolute;
+    width: 1rem;
+    height: 1rem;
+    margin-top: 0.12rem;
+    margin-left: -0.45rem;
+  }
+}

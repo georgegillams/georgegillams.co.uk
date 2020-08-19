@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { SectionSkeleton, ButtonSkeleton } from 'gg-components/Skeletons';
+import { SectionSkeleton, ButtonSkeleton } from 'ggComponents/Skeletons';
 
 const Skeleton = props => {
   const { className } = props;

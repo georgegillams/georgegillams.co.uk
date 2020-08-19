@@ -1,14 +1,14 @@
 import React, { useEffect } from 'react';
 import PropTypes from 'prop-types';
-import { cssModules } from 'gg-components/helpers/cssModules';
-import { Subsection } from 'gg-components/Subsection';
-import { Paragraph } from 'gg-components/Paragraph';
-import TextLinkSkeleton from 'gg-components/Skeletons/TextLinkSkeleton';
+import { cssModules } from 'ggComponents/helpers/cssModules';
+import { Subsection } from 'ggComponents/Subsection';
+import { Paragraph } from 'ggComponents/Paragraph';
+import TextLinkSkeleton from 'ggComponents/Skeletons/TextLinkSkeleton';
 import TextLink from 'components/common/TextLink';
 import PageTitle from 'components/common/PageTitle';
 
 import redirects from 'helpers/redirects';
-import STYLES from './site-map.scss';
+import STYLES from './site-map.module.scss';
 import DebugObject from 'components/common/DebugObject';
 
 const getClassName = cssModules(STYLES);

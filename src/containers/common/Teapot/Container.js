@@ -1,11 +1,11 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { cssModules } from 'gg-components/helpers/cssModules';
-import { Subsection } from 'gg-components/Subsection';
-import { Paragraph } from 'gg-components/Paragraph';
+import { cssModules } from 'ggComponents/helpers/cssModules';
+import { Subsection } from 'ggComponents/Subsection';
+import { Paragraph } from 'ggComponents/Paragraph';
 import PageTitle from 'components/common/PageTitle';
 
-import STYLES from './teapot.scss';
+import STYLES from './teapot.module.scss';
 
 const getClassName = cssModules(STYLES);
 

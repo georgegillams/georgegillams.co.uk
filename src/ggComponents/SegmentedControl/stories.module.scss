@@ -1,0 +1,7 @@
+@import '../Tokens/common';
+
+.stories {
+  &__themed {
+    --segmented-control-selected-color: red;
+  }
+}

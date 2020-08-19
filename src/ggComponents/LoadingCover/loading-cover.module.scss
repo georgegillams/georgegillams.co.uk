@@ -1,0 +1,13 @@
+@import '../Tokens/common';
+
+.loading-cover {
+  &__overlay {
+    z-index: 2;
+    min-height: 3rem;
+    background-color: $background-color;
+
+    @media (prefers-color-scheme: dark) {
+      background-color: $background-color-invert;
+    }
+  }
+}

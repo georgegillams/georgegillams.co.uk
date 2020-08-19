@@ -1,11 +1,11 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { cssModules } from 'gg-components/helpers/cssModules';
-import { Paragraph } from 'gg-components/Paragraph';
-import { Subsection } from 'gg-components/Subsection';
+import { cssModules } from 'ggComponents/helpers/cssModules';
+import { Paragraph } from 'ggComponents/Paragraph';
+import { Subsection } from 'ggComponents/Subsection';
 import TextLink from 'components/common/TextLink';
 
-import STYLES from './creative-commons.scss';
+import STYLES from './creative-commons.module.scss';
 
 const getClassName = cssModules(STYLES);
 

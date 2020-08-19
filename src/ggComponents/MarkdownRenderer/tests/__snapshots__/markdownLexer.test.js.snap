@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`parses big link 1`] = `"[{\\"type\\":\\"paragraph\\",\\"children\\":[{\\"type\\":\\"bigLink\\",\\"href\\":\\"https://www.google.com/\\",\\"hrefExternal\\":true,\\"text\\":\\"Big link\\"}]}]"`;
+
+exports[`parses bold 1`] = `"[{\\"type\\":\\"paragraph\\",\\"children\\":[\\"This is a test which contains a \\",{\\"type\\":\\"bold\\",\\"children\\":[\\"boldified\\"]},\\" chunk of text.\\"]}]"`;
+
+exports[`parses inline code 1`] = `"[{\\"type\\":\\"paragraph\\",\\"children\\":[\\"This is a test which contains some \\",{\\"type\\":\\"code\\",\\"text\\":\\"inline code\\"},\\".\\"]}]"`;
+
+exports[`parses link 1`] = `"[{\\"type\\":\\"paragraph\\",\\"children\\":[\\"This is a test which contains a \\",{\\"type\\":\\"link\\",\\"href\\":\\"https://www.google.com/\\",\\"hrefExternal\\":true,\\"children\\":[\\"link\\"]},\\" to Google.\\"]}]"`;
+
+exports[`parses whitespace 1`] = `"[]"`;

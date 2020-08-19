@@ -1,0 +1,345 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ignores comment block if feature is unsupported 1`] = `
+Array [
+  Object {
+    "children": Array [
+      "Line 1",
+    ],
+    "type": "paragraph",
+  },
+  Object {
+    "children": Array [
+      "Line 2",
+    ],
+    "type": "paragraph",
+  },
+  Object {
+    "children": Array [
+      "> Unsupported quote line 1",
+    ],
+    "type": "paragraph",
+  },
+  Object {
+    "children": Array [
+      "> Unsupported quote line 2",
+    ],
+    "type": "paragraph",
+  },
+  Object {
+    "children": Array [
+      "> Unsupported quote line 3",
+    ],
+    "type": "paragraph",
+  },
+  Object {
+    "children": Array [
+      "Line 3",
+    ],
+    "type": "paragraph",
+  },
+]
+`;
+
+exports[`parses comment block inside section 1`] = `
+Array [
+  Object {
+    "children": Array [
+      "Line 1",
+    ],
+    "type": "paragraph",
+  },
+  Object {
+    "children": Array [
+      Object {
+        "children": Array [
+          "Line 2",
+        ],
+        "type": "paragraph",
+      },
+      Object {
+        "children": Array [
+          Object {
+            "children": Array [
+              "Quote line 1",
+            ],
+            "type": "paragraph",
+          },
+          Object {
+            "children": Array [
+              "Quote line 2",
+            ],
+            "type": "paragraph",
+          },
+          Object {
+            "children": Array [
+              "Quote line 3",
+            ],
+            "type": "paragraph",
+          },
+        ],
+        "type": "quotation",
+      },
+      Object {
+        "children": Array [
+          "Line 3",
+        ],
+        "type": "paragraph",
+      },
+    ],
+    "type": "section",
+  },
+  Object {
+    "children": Array [
+      "Line 4",
+    ],
+    "type": "paragraph",
+  },
+]
+`;
+
+exports[`parses lines containing no comment block 1`] = `
+Array [
+  Object {
+    "content": "Line 1",
+    "type": "line",
+  },
+  Object {
+    "content": "Line 2",
+    "type": "line",
+  },
+  Object {
+    "content": "Line 3",
+    "type": "line",
+  },
+  Object {
+    "content": "Line 4",
+    "type": "line",
+  },
+]
+`;
+
+exports[`parses lines to insert bullet-list 1`] = `
+Array [
+  Object {
+    "content": "Line 1",
+    "type": "line",
+  },
+  Object {
+    "children": Array [
+      Object {
+        "children": Array [
+          "Bullet 1",
+        ],
+        "type": "paragraph",
+      },
+      Object {
+        "children": Array [
+          "Bullet 2",
+        ],
+        "type": "paragraph",
+      },
+      Object {
+        "children": Array [
+          "Bullet 3",
+        ],
+        "type": "paragraph",
+      },
+    ],
+    "type": "bulletList",
+  },
+  Object {
+    "content": "Line 2",
+    "type": "line",
+  },
+  Object {
+    "content": "Line 3",
+    "type": "line",
+  },
+]
+`;
+
+exports[`parses lines to insert code-block 1`] = `
+Array [
+  Object {
+    "content": "Line 1",
+    "type": "line",
+  },
+  Object {
+    "codeLines": Array [
+      " - Some code",
+      " - Some code with a [link](https://duckduckgo.com)",
+    ],
+    "language": "",
+    "type": "blockCode",
+  },
+  Object {
+    "content": "Line 2",
+    "type": "line",
+  },
+  Object {
+    "content": "Line 3",
+    "type": "line",
+  },
+]
+`;
+
+exports[`parses lines to insert code-block 2`] = `
+Array [
+  Object {
+    "content": "Line 1",
+    "type": "line",
+  },
+  Object {
+    "codeLines": Array [
+      " - Some code",
+      " - Some code with a [link](https://duckduckgo.com)",
+    ],
+    "language": "js",
+    "type": "blockCode",
+    "url": "https://github.com/",
+  },
+  Object {
+    "content": "Line 2",
+    "type": "line",
+  },
+  Object {
+    "content": "Line 3",
+    "type": "line",
+  },
+]
+`;
+
+exports[`parses lines to insert code-block with language 1`] = `
+Array [
+  Object {
+    "content": "Line 1",
+    "type": "line",
+  },
+  Object {
+    "codeLines": Array [
+      " - Some code",
+      " - Some code with a [link](https://duckduckgo.com)",
+    ],
+    "language": "js",
+    "type": "blockCode",
+  },
+  Object {
+    "content": "Line 2",
+    "type": "line",
+  },
+  Object {
+    "content": "Line 3",
+    "type": "line",
+  },
+]
+`;
+
+exports[`parses lines to insert comment block at start 1`] = `
+Array [
+  Object {
+    "children": Array [
+      Object {
+        "children": Array [
+          "Quote line 1",
+        ],
+        "type": "paragraph",
+      },
+      Object {
+        "children": Array [
+          "Quote line 2",
+        ],
+        "type": "paragraph",
+      },
+      Object {
+        "children": Array [
+          "Quote line 3",
+        ],
+        "type": "paragraph",
+      },
+    ],
+    "type": "quotation",
+  },
+  Object {
+    "content": "Line 1",
+    "type": "line",
+  },
+  Object {
+    "content": "Line 2",
+    "type": "line",
+  },
+  Object {
+    "content": "Line 3",
+    "type": "line",
+  },
+]
+`;
+
+exports[`parses lines to insert comment block in middle 1`] = `
+Array [
+  Object {
+    "content": "Line 1",
+    "type": "line",
+  },
+  Object {
+    "content": "Line 2",
+    "type": "line",
+  },
+  Object {
+    "children": Array [
+      Object {
+        "children": Array [
+          "Quote line 1",
+        ],
+        "type": "paragraph",
+      },
+      Object {
+        "children": Array [
+          "Quote line 2",
+        ],
+        "type": "paragraph",
+      },
+      Object {
+        "children": Array [
+          "Quote line 3",
+        ],
+        "type": "paragraph",
+      },
+    ],
+    "type": "quotation",
+  },
+  Object {
+    "content": "Line 3",
+    "type": "line",
+  },
+]
+`;
+
+exports[`parses lines to insert numbered-list 1`] = `
+Array [
+  Object {
+    "content": "Line 1",
+    "type": "line",
+  },
+  Object {
+    "content": " 1. Numbered item 1",
+    "type": "line",
+  },
+  Object {
+    "content": " 2. Numbered item 2",
+    "type": "line",
+  },
+  Object {
+    "content": " 3. Numbered item 3",
+    "type": "line",
+  },
+  Object {
+    "content": "Line 2",
+    "type": "line",
+  },
+  Object {
+    "content": "Line 3",
+    "type": "line",
+  },
+]
+`;

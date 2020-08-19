@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { cssModules } from 'gg-components/helpers/cssModules';
-import STYLES from './banner.scss';
+import { cssModules } from 'ggComponents/helpers/cssModules';
+import STYLES from './banner.module.scss';
 
 const getClassName = cssModules(STYLES);
 

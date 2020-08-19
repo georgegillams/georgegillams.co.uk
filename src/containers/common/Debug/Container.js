@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
-import { Checkbox } from 'gg-components/Checkbox';
-import { Paragraph } from 'gg-components/Paragraph';
+import { Checkbox } from 'ggComponents/Checkbox';
+import { Paragraph } from 'ggComponents/Paragraph';
 import PageTitle from 'components/common/PageTitle';
-import STYLES from './debug.scss';
-import { cssModules } from 'gg-components/helpers/cssModules';
+import STYLES from './debug.module.scss';
+import { cssModules } from 'ggComponents/helpers/cssModules';
 import { DEBUG_SHOW_PAGE_CONTAINER_KEY, DEBUG_SHOW_DEBUG_INFORMATION_KEY } from 'helpers/storageConstants';
 
 const getClassName = cssModules(STYLES);

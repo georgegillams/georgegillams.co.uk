@@ -1,5 +1,5 @@
 import React from 'react';
-import CardSkeleton from 'gg-components/Skeletons/CardSkeleton';
+import CardSkeleton from 'ggComponents/Skeletons/CardSkeleton';
 
 const BlogsSkeleton = () => (
   <>
