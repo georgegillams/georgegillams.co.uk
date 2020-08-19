@@ -1,5 +1,3 @@
-const withSass = require('@zeit/next-sass');
-const withCSS = require('@zeit/next-css');
 const nextTranspileModules = require('next-transpile-modules');
 const withImages = require('next-images');
 const bundleAnalyzer = require('@next/bundle-analyzer');
@@ -29,18 +27,8 @@ module.exports = withBundleAnalyzer({});
 
 module.exports = withBundleAnalyzer(
   withImages(
-    withTM(
-      withSass(
-        withCSS({
-          cssModules: true,
-          cssLoaderOptions: {
-            importLoaders: 1,
-            url: false,
-            localIdentName: '[local]___[hash:base64:5]',
-          },
-          ...nextConfig,
-        })
-      )
-    )
+    withTM({
+      ...nextConfig,
+    })
   )
 );
