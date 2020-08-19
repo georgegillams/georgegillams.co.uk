@@ -4,8 +4,8 @@
 @import '~utils/tokens';
 @import './quattrocento';
 @import './hackImportThirdPartyCSS';
-// @import './hackImportProjectComponentSASS';
-// @import './hackImportProjectContainerSASS';
+@import './hackImportProjectComponentSASS';
+@import './hackImportProjectContainerSASS';
 
 :root {
   --checkbox-tick-color: #{$checkbox-tick-color};
