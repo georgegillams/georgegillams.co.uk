@@ -34,11 +34,7 @@ exports[`<Layout /> Should render correctly 1`] = `
       <div
         class="typography__main typography--no-padding tech-specs__container"
       >
-        <span
-          class="tech-specs__text"
-        >
-          Built in
-        </span>
+        Built in
         <a
           href="https://reactjs.org/"
           rel="noopener noreferrer"
@@ -52,11 +48,7 @@ exports[`<Layout /> Should render correctly 1`] = `
             width="5"
           />
         </a>
-        <span
-          class="tech-specs__text"
-        >
-          and
-        </span>
+        and
         <a
           href="https://redux.js.org/"
           rel="noopener noreferrer"
@@ -70,11 +62,7 @@ exports[`<Layout /> Should render correctly 1`] = `
             width="5"
           />
         </a>
-        <span
-          class="tech-specs__text"
-        >
-          Hosted on
-        </span>
+        Hosted on
         <a
           href="https://aws.amazon.com/"
           rel="noopener noreferrer"
@@ -157,11 +145,7 @@ exports[`<Layout /> Should render correctly with spread props 1`] = `
       <div
         class="typography__main typography--no-padding tech-specs__container"
       >
-        <span
-          class="tech-specs__text"
-        >
-          Built in
-        </span>
+        Built in
         <a
           href="https://reactjs.org/"
           rel="noopener noreferrer"
@@ -175,11 +159,7 @@ exports[`<Layout /> Should render correctly with spread props 1`] = `
             width="5"
           />
         </a>
-        <span
-          class="tech-specs__text"
-        >
-          and
-        </span>
+        and
         <a
           href="https://redux.js.org/"
           rel="noopener noreferrer"
@@ -193,11 +173,7 @@ exports[`<Layout /> Should render correctly with spread props 1`] = `
             width="5"
           />
         </a>
-        <span
-          class="tech-specs__text"
-        >
-          Hosted on
-        </span>
+        Hosted on
         <a
           href="https://aws.amazon.com/"
           rel="noopener noreferrer"

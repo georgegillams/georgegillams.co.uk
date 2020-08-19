@@ -24,15 +24,15 @@ const TechSpecs = props => {
   return (
     <div className={outerClassNames.join(' ')} {...rest}>
       <Section className={getClassName('tech-specs__container')} noPadding>
-        <span className={getClassName('tech-specs__text')}>Built in</span>
+        Built in
         <a href="https://reactjs.org/" rel="noopener noreferrer" target="_blank">
           <img alt="React" width={5} height={5} className={iconClassName} src={reactLogo} />
         </a>
-        <span className={getClassName('tech-specs__text')}>and</span>
+        and
         <a href="https://redux.js.org/" rel="noopener noreferrer" target="_blank">
           <img alt="Redux" width={5} height={5} className={iconClassName} src={reduxLogo} />
         </a>
-        <span className={getClassName('tech-specs__text')}>Hosted on</span>
+        Hosted on
         <a href="https://aws.amazon.com/" rel="noopener noreferrer" target="_blank">
           <img
             alt="Amazon Web Services"
