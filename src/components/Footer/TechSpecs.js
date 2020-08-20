@@ -24,14 +24,20 @@ const TechSpecs = props => {
   return (
     <div className={outerClassNames.join(' ')} {...rest}>
       <Section className={getClassName('tech-specs__container')} noPadding>
+        {/* Note we're using an additional span here to apply the className
+        due to an issue with className ordering in next.js */}
         <span className={getClassName('tech-specs__text')}>Built in</span>
         <a href="https://reactjs.org/" rel="noopener noreferrer" target="_blank">
           <img alt="React" width={5} height={5} className={iconClassName} src={reactLogo} />
         </a>
+        {/* Note we're using an additional span here to apply the className
+        due to an issue with className ordering in next.js */}
         <span className={getClassName('tech-specs__text')}>and</span>
         <a href="https://redux.js.org/" rel="noopener noreferrer" target="_blank">
           <img alt="Redux" width={5} height={5} className={iconClassName} src={reduxLogo} />
         </a>
+        {/* Note we're using an additional span here to apply the className
+        due to an issue with className ordering in next.js */}
         <span className={getClassName('tech-specs__text')}>Hosted on</span>
         <a href="https://aws.amazon.com/" rel="noopener noreferrer" target="_blank">
           <img

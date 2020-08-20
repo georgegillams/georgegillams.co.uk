@@ -11,7 +11,7 @@ class MyDocument extends Document {
 
   render() {
     return (
-      <Html>
+      <Html lang="en-GB">
         <Head>
           <link rel="apple-touch-icon" sizes="180x180" href="/static/favicon/favicon-180x180.png" />
 

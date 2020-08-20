@@ -1,6 +1,6 @@
 import React from 'react';
 
-import Status from 'containers/Status';
+import Status from 'containers/common/Status';
 import CommonLayout from 'components/common/CommonLayout';
 import appConfig from 'helpers/appConfig';
 import getConfig from 'next/config';
