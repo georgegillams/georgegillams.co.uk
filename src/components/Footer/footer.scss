@@ -7,6 +7,7 @@
     padding: $spacing-lg $spacing-lg;
     flex-direction: column;
     justify-content: space-around;
+    border-top: solid $not-black 0.15rem;
     background-color: $not-black;
     background-position: center;
     background-size: cover;
