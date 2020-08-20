@@ -20,7 +20,7 @@ const Photography = () => {
   return (
     <>
       <PageTitle anchor={false} name="Photography"></PageTitle>
-      <div style={{ paddingTop: '1rem' }} className={getClassName('photography__card-container')}>
+      <div className={getClassName('photography__card-container')}>
         <FeatureCard
           layout={FEATURE_CARD_LAYOUTS.narrowCompact}
           day={null}

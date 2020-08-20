@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
-import { Checkbox } from 'gg-components/Checkbox';
 import { cssModules } from 'gg-components/helpers/cssModules';
 import Button from 'components/common/Button';
 
@@ -9,15 +8,7 @@ import STYLES from './graphic-content.scss';
 const getClassName = cssModules(STYLES);
 
 const GraphicContent = props => {
-  const {
-    className,
-    children,
-    graphicContentInView,
-    alwaysShowGraphicContent,
-    onAlwaysShowChanged,
-    onClick,
-    ...rest
-  } = props;
+  const { className, children, graphicContentInView, onClick, ...rest } = props;
 
   const classNameFinal = [getClassName('graphic-content__outer-container')];
   if (className) {
@@ -47,19 +38,9 @@ const GraphicContent = props => {
               <div className={getClassName('graphic-content__text')}>Enable JavaScript to view this content</div>
             )}
             {!isServer && (
-              <>
-                <Button onClick={onClick} className={getClassName('graphic-content__text')}>
-                  Show graphic content
-                </Button>
-                <br />
-                <Checkbox
-                  labelClassName={getClassName('graphic-content__text')}
-                  name="Always show graphic content"
-                  label="Always show graphic content"
-                  checked={alwaysShowGraphicContent}
-                  onChange={onAlwaysShowChanged}
-                />
-              </>
+              <Button onClick={onClick} className={getClassName('graphic-content__text')}>
+                Show graphic content
+              </Button>
             )}
           </div>
         </div>
