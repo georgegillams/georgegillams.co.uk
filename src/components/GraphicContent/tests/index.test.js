@@ -25,16 +25,6 @@ describe('<GraphicContent />', () => {
     expect(container).toMatchSnapshot();
   });
 
-  it('Should render correctly with alwaysShow', () => {
-    const { container } = render(
-      <GraphicContent alwaysShowGraphicContent>
-        <span>Test</span>
-      </GraphicContent>
-    );
-
-    expect(container).toMatchSnapshot();
-  });
-
   it('Should render correctly with custom className', () => {
     const { container } = render(
       <GraphicContent className="test-custom-className">

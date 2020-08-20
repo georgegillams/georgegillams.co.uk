@@ -17,7 +17,6 @@
 
   &__image {
     width: 70%;
-    margin-top: $spacing-lg;
     margin-bottom: $spacing-lg;
 
     @include bpk-breakpoint-mobile {
