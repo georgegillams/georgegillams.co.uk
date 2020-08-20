@@ -8,7 +8,7 @@ import TechSpecs from './TechSpecs';
 import FooterNav from './FooterNav';
 import STYLES from './footer.scss';
 
-const getClassName = cssModules(STYLES); // REGEX_REPLACED
+const getClassName = cssModules(STYLES);
 
 const Footer = props => {
   const { className, ...rest } = props;
