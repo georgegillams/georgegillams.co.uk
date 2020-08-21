@@ -1,7 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { cssModules } from 'gg-components/helpers/cssModules';
-import { Section } from 'gg-components/Section';
+import { Paragraph } from 'gg-components/Paragraph';
+import { THEMES } from 'gg-components/Theming';
 
 import reactLogo from './react-logo.svg';
 import reduxLogo from './redux-logo.svg';
@@ -23,22 +24,16 @@ const TechSpecs = props => {
 
   return (
     <div className={outerClassNames.join(' ')} {...rest}>
-      <Section className={getClassName('tech-specs__container')} noPadding>
-        {/* Note we're using an additional span here to apply the className
-        due to an issue with className ordering in next.js */}
-        <span className={getClassName('tech-specs__text')}>Built in</span>
+      <Paragraph theme={THEMES.allWhite} className={getClassName('tech-specs__container')}>
+        Built in
         <a href="https://reactjs.org/" rel="noopener noreferrer" target="_blank">
           <img alt="React" width={5} height={5} className={iconClassName} src={reactLogo} />
         </a>
-        {/* Note we're using an additional span here to apply the className
-        due to an issue with className ordering in next.js */}
-        <span className={getClassName('tech-specs__text')}>and</span>
+        and
         <a href="https://redux.js.org/" rel="noopener noreferrer" target="_blank">
           <img alt="Redux" width={5} height={5} className={iconClassName} src={reduxLogo} />
         </a>
-        {/* Note we're using an additional span here to apply the className
-        due to an issue with className ordering in next.js */}
-        <span className={getClassName('tech-specs__text')}>Hosted on</span>
+        Hosted on
         <a href="https://aws.amazon.com/" rel="noopener noreferrer" target="_blank">
           <img
             alt="Amazon Web Services"
@@ -49,7 +44,7 @@ const TechSpecs = props => {
             src={awsLogo}
           />
         </a>
-      </Section>
+      </Paragraph>
     </div>
   );
 };

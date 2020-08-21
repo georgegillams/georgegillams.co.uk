@@ -428,14 +428,10 @@ exports[`<HomePage /> should render correctly 1`] = `
     <div
       class="footer__tech"
     >
-      <div
-        class="typography__main typography--no-padding tech-specs__container"
+      <span
+        class="paragraph paragraph--all-white tech-specs__container"
       >
-        <span
-          class="tech-specs__text"
-        >
-          Built in
-        </span>
+        Built in
         <a
           href="https://reactjs.org/"
           rel="noopener noreferrer"
@@ -449,11 +445,7 @@ exports[`<HomePage /> should render correctly 1`] = `
             width="5"
           />
         </a>
-        <span
-          class="tech-specs__text"
-        >
-          and
-        </span>
+        and
         <a
           href="https://redux.js.org/"
           rel="noopener noreferrer"
@@ -467,11 +459,7 @@ exports[`<HomePage /> should render correctly 1`] = `
             width="5"
           />
         </a>
-        <span
-          class="tech-specs__text"
-        >
-          Hosted on
-        </span>
+        Hosted on
         <a
           href="https://aws.amazon.com/"
           rel="noopener noreferrer"
@@ -486,31 +474,31 @@ exports[`<HomePage /> should render correctly 1`] = `
             width="8.28"
           />
         </a>
-      </div>
+      </span>
     </div>
     <div
       class="footer-nav__container footer__nav"
     >
       <a
-        class="text-link text-link--text-link text-link--no-padding text-link--light text-link--light--text-link text-link--inline footer-nav__link"
+        class="text-link text-link--text-link text-link--no-padding text-link--text-link--all-white text-link--inline footer-nav__link"
         href="/photography"
       >
         Photo
       </a>
       <a
-        class="text-link text-link--text-link text-link--no-padding text-link--light text-link--light--text-link text-link--inline footer-nav__link"
+        class="text-link text-link--text-link text-link--no-padding text-link--text-link--all-white text-link--inline footer-nav__link"
         href="/work"
       >
         Work
       </a>
       <a
-        class="text-link text-link--text-link text-link--no-padding text-link--light text-link--light--text-link text-link--inline footer-nav__link"
+        class="text-link text-link--text-link text-link--no-padding text-link--text-link--all-white text-link--inline footer-nav__link"
         href="/contact"
       >
         Contact
       </a>
       <a
-        class="text-link text-link--text-link text-link--no-padding text-link--light text-link--light--text-link text-link--inline footer-nav__link"
+        class="text-link text-link--text-link text-link--no-padding text-link--text-link--all-white text-link--inline footer-nav__link"
         href="/privacy-policy"
       >
         Privacy
