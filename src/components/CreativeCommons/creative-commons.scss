@@ -8,6 +8,7 @@
     margin-top: $spacing-lg;
     margin-left: 0;
     padding-top: $spacing-base;
+    padding-bottom: $spacing-lg;
     justify-content: center;
   }
 
@@ -28,7 +29,6 @@
   &__inner {
     width: 100%;
     padding-right: 1.875rem;
-    padding-bottom: 3rem;
     padding-left: 1.865rem;
     text-align: center;
 
