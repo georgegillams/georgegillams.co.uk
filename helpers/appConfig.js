@@ -26,6 +26,7 @@ const useLocalhost = NODE_ENV === 'development' || PROJECT_UNDER_TEST;
 const domain = useLocalhost ? `localhost:${port}` : 'www.georgegillams.co.uk';
 const siteUrl = useLocalhost ? `http://${domain}` : `https://${domain}`;
 const apiEndpoint = `${siteUrl}/api`;
+const themeColor = '#025ca2';
 
 module.exports = {
   host: HOST || 'localhost',
@@ -42,12 +43,13 @@ module.exports = {
   apiEndpoint,
   githubRepo,
   githubRepoUrl,
+  themeColor,
   app: {
     title: `${projectTitle} ${projectDescription}`,
     head: {
       titleTemplate: `${projectTitle}: %s`,
       meta: [
-        { property: 'theme-color', content: '#025ca2' },
+        { property: 'theme-color', content: themeColor },
         {
           property: 'description',
           content: projectDescriptionShort,

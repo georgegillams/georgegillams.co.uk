@@ -1,5 +1,6 @@
 import React from 'react';
 import Document, { Html, Head, Main, NextScript } from 'next/document';
+import appConfig from 'helpers/appConfig';
 
 class MyDocument extends Document {
   static async getInitialProps(ctx) {
@@ -24,7 +25,7 @@ class MyDocument extends Document {
 
           <link rel="manifest" href="/static/favicon/site.webmanifest" />
 
-          <link rel="mask-icon" href="/static/favicon/favicon.svg" color="#1894E5" />
+          <link rel="mask-icon" href="/static/favicon/favicon.svg" color={appConfig.themeColor} />
           <link rel="shortcut icon" href="/static/favicon/favicon.png" />
 
           <meta name="msapplication-config" content="/static/favicon/browserconfig.xml" />
