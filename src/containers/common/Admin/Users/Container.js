@@ -12,7 +12,7 @@ import { SplitDetailView } from 'components/common/SplitDetailView';
 import { setPostLoginRedirect } from 'utils/common/storageHelpers';
 import Skeleton from './Skeleton';
 import { withRouter } from 'next/router';
-import UserFilter, { filterUsers } from './UserFilter';
+import UserFilter, { filterUsers, defaultFilters } from './UserFilter';
 import { UserEditForm } from 'components/common/Forms';
 import { Error } from 'gg-components/Error';
 
@@ -28,7 +28,7 @@ const AdminUsers = props => {
   const [highlightId, setHighlightId] = useState(null);
   const [highlightToScrollTo, setHighlightToScrollTo] = useState(null);
   const [showFilters, setShowFilters] = useState(false);
-  const [filters, setFilters] = useState({});
+  const [filters, setFilters] = useState(defaultFilters);
   const [newUser, setNewUser] = useState({});
 
   const {
