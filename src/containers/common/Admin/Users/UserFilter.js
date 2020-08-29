@@ -5,17 +5,60 @@ import { Input } from 'gg-components/Input';
 import { Select } from 'gg-components/Select';
 import { Checkbox } from 'gg-components/Checkbox';
 
+const filterUsers = (users, filters) => {
+  let filteredUsers = users;
+  if (filteredUsers && filteredUsers.filter) {
+    if (filters.filterDeleted) {
+      filteredUsers = filteredUsers.filter(x => !x.deleted);
+    }
+    if (filters.filterAdminStatus && filters.filterAdminStatus !== 'all') {
+      filteredUsers = filteredUsers.filter(x => {
+        if (x.admin && filters.filterAdminStatus === 'admin') {
+          return true;
+        }
+        if (!x.admin && filters.filterAdminStatus === 'nonAdmin') {
+          return true;
+        }
+        return false;
+      });
+    }
+    if (filters.filterEmailVerified && filters.filterEmailVerified !== 'all') {
+      filteredUsers = filteredUsers.filter(x => {
+        if (x.emailVerified && filters.filterEmailVerified === 'verified') {
+          return true;
+        }
+        if (!x.emailVerified && filters.filterEmailVerified === 'notVerified') {
+          return true;
+        }
+        return false;
+      });
+    }
+    if (filters.filterName) {
+      filteredUsers = filteredUsers.filter(x => x.name && x.name.includes(filters.filterName));
+    }
+  }
+  return filteredUsers;
+};
+
 const UserFilter = props => {
-  const {
-    filterDeleted,
-    onDeletedFilterChanged,
-    filterAdminStatus,
-    onAdminStatusFilterChanged,
-    filterEmailVerified,
-    onEmailVerifiedFilterChanged,
-    filterName,
-    onNameFilterChanged,
-  } = props;
+  const { filters, onFiltersChanged } = props;
+  const { filterDeleted, filterAdminStatus, filterEmailVerified, filterName } = filters;
+
+  const onDeletedFilterChanged = event => {
+    onFiltersChanged({ ...filters, filterDeleted: !event.target.checked });
+  };
+
+  const onAdminStatusFilterChanged = event => {
+    onFiltersChanged({ ...filters, filterAdminStatus: event.target.value });
+  };
+
+  const onEmailVerifiedFilterChanged = event => {
+    onFiltersChanged({ ...filters, filterEmailVerified: event.target.value });
+  };
+
+  const onNameFilterChanged = event => {
+    onFiltersChanged({ ...filters, filterName: event.target.value });
+  };
 
   return (
     <div>
@@ -57,14 +100,9 @@ const UserFilter = props => {
 };
 
 UserFilter.propTypes = {
-  filterDeleted: PropTypes.bool.isRequired,
-  onDeletedFilterChanged: PropTypes.func.isRequired,
-  filterAdminStatus: PropTypes.string.isRequired,
-  onAdminStatusFilterChanged: PropTypes.func.isRequired,
-  filterEmailVerified: PropTypes.string.isRequired,
-  onEmailVerifiedFilterChanged: PropTypes.func.isRequired,
-  filterName: PropTypes.string.isRequired,
-  onNameFilterChanged: PropTypes.func.isRequired,
+  filters: PropTypes.object.isRequired,
+  onFiltersChanged: PropTypes.func.isRequired,
 };
 
 export default withRouter(UserFilter);
+export { filterUsers };

@@ -12,7 +12,7 @@ import { SplitDetailView } from 'components/common/SplitDetailView';
 import { setPostLoginRedirect } from 'utils/common/storageHelpers';
 import Skeleton from './Skeleton';
 import { withRouter } from 'next/router';
-import UserFilter from './UserFilter';
+import UserFilter, { filterUsers } from './UserFilter';
 import { UserEditForm } from 'components/common/Forms';
 import { Error } from 'gg-components/Error';
 
@@ -28,10 +28,7 @@ const AdminUsers = props => {
   const [highlightId, setHighlightId] = useState(null);
   const [highlightToScrollTo, setHighlightToScrollTo] = useState(null);
   const [showFilters, setShowFilters] = useState(false);
-  const [filterDeleted, setFilterDeleted] = useState(true);
-  const [filterAdminStatus, setFilterAdminStatus] = useState('all');
-  const [filterEmailVerified, setFilterEmailVerified] = useState('all');
-  const [filterName, setFilterName] = useState('');
+  const [filters, setFilters] = useState({});
   const [newUser, setNewUser] = useState({});
 
   const {
@@ -85,37 +82,7 @@ const AdminUsers = props => {
     scrollToHighlightedId();
   });
 
-  let filteredUsers = users;
-  if (filteredUsers && filteredUsers.filter) {
-    if (filterDeleted) {
-      filteredUsers = filteredUsers.filter(x => !x.deleted);
-    }
-    if (filterAdminStatus && filterAdminStatus !== 'all') {
-      filteredUsers = filteredUsers.filter(x => {
-        if (x.admin && filterAdminStatus === 'admin') {
-          return true;
-        }
-        if (!x.admin && filterAdminStatus === 'nonAdmin') {
-          return true;
-        }
-        return false;
-      });
-    }
-    if (filterEmailVerified && filterEmailVerified !== 'all') {
-      filteredUsers = filteredUsers.filter(x => {
-        if (x.emailVerified && filterEmailVerified === 'verified') {
-          return true;
-        }
-        if (!x.emailVerified && filterEmailVerified === 'notVerified') {
-          return true;
-        }
-        return false;
-      });
-    }
-    if (filterName) {
-      filteredUsers = filteredUsers.filter(x => x.name && x.name.includes(filterName));
-    }
-  }
+  let filteredUsers = filterUsers(users, filters);
 
   const showUsers = !!filteredUsers && !!filteredUsers.length && !!filteredUsers.map;
 
@@ -218,24 +185,7 @@ const AdminUsers = props => {
     </div>
   );
 
-  const filterControls = (
-    <UserFilter
-      filterDeleted={filterDeleted}
-      onDeletedFilterChanged={event => {
-        setFilterDeleted(!event.target.checked);
-      }}
-      filterAdminStatus={filterAdminStatus}
-      onAdminStatusFilterChanged={event => {
-        setFilterAdminStatus(event.target.value);
-      }}
-      filterEmailVerified={filterEmailVerified}
-      onEmailVerifiedFilterChanged={event => {
-        setFilterEmailVerified(event.target.value);
-      }}
-      filterName={filterName}
-      onNameFilterChanged={event => setFilterName(event.target.value)}
-    />
-  );
+  const filterControls = <UserFilter filters={filters} onFiltersChanged={setFilters} />;
 
   return (
     <>
