@@ -5,36 +5,38 @@ import { Input } from 'gg-components/Input';
 import { Select } from 'gg-components/Select';
 import { Checkbox } from 'gg-components/Checkbox';
 
+const defaultFilters = { deleted: true };
+
 const filterUsers = (users, filters) => {
   let filteredUsers = users;
   if (filteredUsers && filteredUsers.filter) {
-    if (filters.filterDeleted) {
+    if (filters.deleted) {
       filteredUsers = filteredUsers.filter(x => !x.deleted);
     }
-    if (filters.filterAdminStatus && filters.filterAdminStatus !== 'all') {
+    if (filters.adminStatus && filters.adminStatus !== 'all') {
       filteredUsers = filteredUsers.filter(x => {
-        if (x.admin && filters.filterAdminStatus === 'admin') {
+        if (x.admin && filters.adminStatus === 'admin') {
           return true;
         }
-        if (!x.admin && filters.filterAdminStatus === 'nonAdmin') {
+        if (!x.admin && filters.adminStatus === 'nonAdmin') {
           return true;
         }
         return false;
       });
     }
-    if (filters.filterEmailVerified && filters.filterEmailVerified !== 'all') {
+    if (filters.emailVerified && filters.emailVerified !== 'all') {
       filteredUsers = filteredUsers.filter(x => {
-        if (x.emailVerified && filters.filterEmailVerified === 'verified') {
+        if (x.emailVerified && filters.emailVerified === 'verified') {
           return true;
         }
-        if (!x.emailVerified && filters.filterEmailVerified === 'notVerified') {
+        if (!x.emailVerified && filters.emailVerified === 'notVerified') {
           return true;
         }
         return false;
       });
     }
-    if (filters.filterName) {
-      filteredUsers = filteredUsers.filter(x => x.name && x.name.includes(filters.filterName));
+    if (filters.name) {
+      filteredUsers = filteredUsers.filter(x => x.name && x.name.includes(filters.name));
     }
   }
   return filteredUsers;
@@ -42,34 +44,34 @@ const filterUsers = (users, filters) => {
 
 const UserFilter = props => {
   const { filters, onFiltersChanged } = props;
-  const { filterDeleted, filterAdminStatus, filterEmailVerified, filterName } = filters;
+  const { deleted, adminStatus, emailVerified, name } = filters;
 
   const onDeletedFilterChanged = event => {
-    onFiltersChanged({ ...filters, filterDeleted: !event.target.checked });
+    onFiltersChanged({ ...filters, deleted: !event.target.checked });
   };
 
   const onAdminStatusFilterChanged = event => {
-    onFiltersChanged({ ...filters, filterAdminStatus: event.target.value });
+    onFiltersChanged({ ...filters, adminStatus: event.target.value });
   };
 
   const onEmailVerifiedFilterChanged = event => {
-    onFiltersChanged({ ...filters, filterEmailVerified: event.target.value });
+    onFiltersChanged({ ...filters, emailVerified: event.target.value });
   };
 
   const onNameFilterChanged = event => {
-    onFiltersChanged({ ...filters, filterName: event.target.value });
+    onFiltersChanged({ ...filters, name: event.target.value });
   };
 
   return (
     <div>
-      <Checkbox label="Show deleted" name="filterDeleted" checked={!filterDeleted} onChange={onDeletedFilterChanged} />
+      <Checkbox label="Show deleted" name="deleted" checked={!deleted} onChange={onDeletedFilterChanged} />
       <br />
       <br />
-      <label htmlFor="filterAdminStatus">Filter by admin status</label>
+      <label htmlFor="adminStatus">Filter by admin status</label>
       <Select
-        id="filterAdminStatus"
+        id="adminStatus"
         name="Filter by admin status"
-        value={filterAdminStatus}
+        value={adminStatus}
         options={[
           { value: 'all', name: 'All' },
           { value: 'admin', name: 'Admin' },
@@ -79,11 +81,11 @@ const UserFilter = props => {
       />
       <br />
       <br />
-      <label htmlFor="filterEmailVerified">Filter by email verification status</label>
+      <label htmlFor="emailVerified">Filter by email verification status</label>
       <Select
-        id="filterEmailVerified"
+        id="emailVerified"
         name="Filter by email verification status"
-        value={filterEmailVerified}
+        value={emailVerified}
         options={[
           { value: 'all', name: 'All' },
           { value: 'verified', name: 'Verified' },
@@ -93,8 +95,8 @@ const UserFilter = props => {
       />
       <br />
       <br />
-      <label htmlFor="filterName">Filter by name</label>
-      <Input id="filterName" value={filterName} onChange={onNameFilterChanged} />
+      <label htmlFor="name">Filter by name</label>
+      <Input id="name" value={name} onChange={onNameFilterChanged} />
     </div>
   );
 };
@@ -105,4 +107,4 @@ UserFilter.propTypes = {
 };
 
 export default withRouter(UserFilter);
-export { filterUsers };
+export { defaultFilters, filterUsers };
