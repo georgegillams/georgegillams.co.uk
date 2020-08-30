@@ -121,8 +121,8 @@ const AdminUsers = props => {
       {showUsers &&
         filteredUsers.map(n => (
           <AdminUsersAPIEntity
-            scroll={false}
             key={n.id}
+            scroll={false}
             href={`/admin/users?highlight=${n.id}`}
             compact
             entity={n}
@@ -141,6 +141,7 @@ const AdminUsers = props => {
 
     detailView = !detailUser ? null : (
       <AdminUsersAPIEntity
+        key={detailUser.id}
         adminUserState={adminUsersState}
         updateUser={update}
         entity={detailUser}
