@@ -18,6 +18,7 @@ exports[`<Authenticator /> should render correctly - index 1`] = `
           class="navigation-bar__mobile-container navigation-bar__mobile-container--left"
         >
           <button
+            aria-expanded="false"
             aria-label="Menu"
             class="burger-button__outer navigation-bar__burger-button"
             type="button"
@@ -92,6 +93,7 @@ exports[`<Authenticator /> should render correctly with default state 1`] = `
           class="navigation-bar__mobile-container navigation-bar__mobile-container--left"
         >
           <button
+            aria-expanded="false"
             aria-label="Menu"
             class="burger-button__outer navigation-bar__burger-button"
             type="button"
@@ -166,6 +168,7 @@ exports[`<Authenticator /> should render correctly with null user 1`] = `
           class="navigation-bar__mobile-container navigation-bar__mobile-container--left"
         >
           <button
+            aria-expanded="false"
             aria-label="Menu"
             class="burger-button__outer navigation-bar__burger-button"
             type="button"
@@ -245,6 +248,7 @@ exports[`<Authenticator /> should render correctly with user 1`] = `
           class="navigation-bar__mobile-container navigation-bar__mobile-container--left"
         >
           <button
+            aria-expanded="false"
             aria-label="Menu"
             class="burger-button__outer navigation-bar__burger-button"
             type="button"
