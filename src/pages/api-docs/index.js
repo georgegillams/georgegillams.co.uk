@@ -1,6 +1,6 @@
 import React from 'react';
 
-import ApiDocs from 'containers/ApiDocs';
+import ApiDocs from 'containers/common/ApiDocs';
 import CommonLayout from 'components/common/CommonLayout';
 
 const Page = props => {

@@ -543,6 +543,13 @@ exports[`<SiteMap /> should render correctly - index 1`] = `
         <br />
         <a
           class="text-link text-link--text-link text-link--no-padding text-link--inline"
+          href="/admin/emails"
+        >
+          Emails
+        </a>
+        <br />
+        <a
+          class="text-link text-link--text-link text-link--no-padding text-link--inline"
           href="/admin/notifications"
         >
           Notifications
@@ -1468,6 +1475,13 @@ exports[`<SiteMap /> should render correctly 1`] = `
         <br />
         <a
           class="text-link text-link--text-link text-link--no-padding text-link--inline"
+          href="/admin/emails"
+        >
+          Emails
+        </a>
+        <br />
+        <a
+          class="text-link text-link--text-link text-link--no-padding text-link--inline"
           href="/admin/notifications"
         >
           Notifications
@@ -2316,6 +2330,13 @@ exports[`<SiteMap /> should render correctly with blogs 1`] = `
           href="/admin/analytics"
         >
           Analytics
+        </a>
+        <br />
+        <a
+          class="text-link text-link--text-link text-link--no-padding text-link--inline"
+          href="/admin/emails"
+        >
+          Emails
         </a>
         <br />
         <a
@@ -3212,6 +3233,13 @@ exports[`<SiteMap /> should render correctly with blogs and admin user 1`] = `
           href="/admin/analytics"
         >
           Analytics
+        </a>
+        <br />
+        <a
+          class="text-link text-link--text-link text-link--no-padding text-link--inline"
+          href="/admin/emails"
+        >
+          Emails
         </a>
         <br />
         <a

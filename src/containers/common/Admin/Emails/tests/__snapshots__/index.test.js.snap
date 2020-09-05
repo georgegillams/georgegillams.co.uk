@@ -1,0 +1,497 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<AdminEmails /> should render correctly - index 1`] = `
+<div>
+  <div
+    class=""
+  >
+    <div
+      class="skeleton__outer skeleton__section"
+    >
+      <div
+        class="skeleton__shimmer"
+        style="margin-left: -0px;"
+      />
+    </div>
+    <div
+      class="skeleton__outer skeleton__card--compact"
+    >
+      <div
+        class="skeleton__shimmer"
+        style="margin-left: -0px;"
+      />
+    </div>
+  </div>
+</div>
+`;
+
+exports[`<AdminEmails /> should render correctly with admin user 1`] = `
+<div>
+  <div>
+    <a
+      class="text-link text-link--text-link text-link--no-padding text-link--inline page-title__link"
+      href="/admin"
+    >
+      ⇠ Admin
+    </a>
+    <div
+      class="typography__main"
+    >
+      <h1
+        class="typography__text typography__text--section page-title__section page-title__section--with-link"
+        id="admin-emails"
+      >
+        Admin emails
+      </h1>
+    </div>
+  </div>
+  <div>
+    <button
+      class="button__outer button__outer--regular button__outer--no-bouncy button__outer--large"
+      style="margin-right: 1rem; margin-bottom: 1rem;"
+      type="button"
+    >
+      Reload emails
+    </button>
+    <br />
+    <br />
+  </div>
+  <div
+    class="split-detail-view__outer admin-emails__split-view"
+  >
+    <div
+      class="split-detail-view__list-view"
+    >
+      <div />
+    </div>
+  </div>
+</div>
+`;
+
+exports[`<AdminEmails /> should render correctly with emails 1`] = `
+<div>
+  <div>
+    <a
+      class="text-link text-link--text-link text-link--no-padding text-link--inline page-title__link"
+      href="/admin"
+    >
+      ⇠ Admin
+    </a>
+    <div
+      class="typography__main"
+    >
+      <h1
+        class="typography__text typography__text--section page-title__section page-title__section--with-link"
+        id="admin-emails"
+      >
+        Admin emails
+      </h1>
+    </div>
+  </div>
+  <div>
+    <button
+      class="button__outer button__outer--regular button__outer--no-bouncy button__outer--large"
+      style="margin-right: 1rem; margin-bottom: 1rem;"
+      type="button"
+    >
+      Reload emails
+    </button>
+    <br />
+    <br />
+  </div>
+  <br />
+  <span
+    class="paragraph"
+  >
+    Showing 
+    3
+     of 
+    3
+     emails
+  </span>
+  <br />
+  <br />
+  <div
+    class="split-detail-view__outer admin-emails__split-view"
+  >
+    <div
+      class="split-detail-view__list-view"
+    >
+      <div>
+        <div
+          class="admin-emails__card"
+          id="1"
+          role="button"
+          style="cursor: pointer;"
+          tabindex="0"
+        >
+          <div
+            class="card"
+          >
+            <div
+              class="card__background"
+              style="background-image: url(null);"
+            />
+            <div
+              class="card__outer-container"
+            >
+              <div
+                class="split-detail-item__content"
+              >
+                <div
+                  class="typography__main typography--no-padding"
+                >
+                  <h2
+                    class="typography__text typography__text--subsection typography--no-padding"
+                    id="email-1"
+                  >
+                    Email 1
+                  </h2>
+                  <span
+                    class="paragraph"
+                  >
+                    <br />
+                    id: 
+                    1
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div
+              class="card__banner"
+            />
+          </div>
+        </div>
+        <div
+          class="admin-emails__card"
+          id="2"
+          role="button"
+          style="cursor: pointer;"
+          tabindex="0"
+        >
+          <div
+            class="card"
+          >
+            <div
+              class="card__background"
+              style="background-image: url(null);"
+            />
+            <div
+              class="card__outer-container"
+            >
+              <div
+                class="split-detail-item__content"
+              >
+                <div
+                  class="typography__main typography--no-padding"
+                >
+                  <h2
+                    class="typography__text typography__text--subsection typography--no-padding"
+                    id="email-2"
+                  >
+                    Email 2
+                  </h2>
+                  <span
+                    class="paragraph"
+                  >
+                    <br />
+                    id: 
+                    2
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div
+              class="card__banner"
+            />
+          </div>
+        </div>
+        <div
+          class="admin-emails__card"
+          id="3"
+          role="button"
+          style="cursor: pointer;"
+          tabindex="0"
+        >
+          <div
+            class="card"
+          >
+            <div
+              class="card__background"
+              style="background-image: url(null);"
+            />
+            <div
+              class="card__outer-container"
+            >
+              <div
+                class="split-detail-item__content"
+              >
+                <div
+                  class="typography__main typography--no-padding"
+                >
+                  <h2
+                    class="typography__text typography__text--subsection typography--no-padding"
+                    id="email-3"
+                  >
+                    Email 3
+                  </h2>
+                  <span
+                    class="paragraph"
+                  >
+                    <br />
+                    id: 
+                    3
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div
+              class="card__banner"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`<AdminEmails /> should render correctly with initial state 1`] = `
+<div>
+  <div
+    class=""
+  >
+    <div
+      class="skeleton__outer skeleton__section"
+    >
+      <div
+        class="skeleton__shimmer"
+        style="margin-left: -0px;"
+      />
+    </div>
+    <div
+      class="skeleton__outer skeleton__card--compact"
+    >
+      <div
+        class="skeleton__shimmer"
+        style="margin-left: -0px;"
+      />
+    </div>
+  </div>
+</div>
+`;
+
+exports[`<AdminEmails /> should render correctly with loadError 1`] = `
+<div>
+  <div>
+    <a
+      class="text-link text-link--text-link text-link--no-padding text-link--inline page-title__link"
+      href="/admin"
+    >
+      ⇠ Admin
+    </a>
+    <div
+      class="typography__main"
+    >
+      <h1
+        class="typography__text typography__text--section page-title__section page-title__section--with-link"
+        id="admin-emails"
+      >
+        Admin emails
+      </h1>
+    </div>
+  </div>
+  <div>
+    <button
+      class="button__outer button__outer--regular button__outer--no-bouncy button__outer--large"
+      style="margin-right: 1rem; margin-bottom: 1rem;"
+      type="button"
+    >
+      Reload emails
+    </button>
+    <br />
+    <br />
+  </div>
+  <span
+    class="paragraph"
+  >
+    Could not load emails
+  </span>
+  <br />
+  <span
+    class="paragraph"
+  >
+    <span
+      class="error"
+    >
+      Something went wrong
+    </span>
+  </span>
+  <div
+    class="split-detail-view__outer admin-emails__split-view"
+  >
+    <div
+      class="split-detail-view__list-view"
+    >
+      <div />
+    </div>
+  </div>
+</div>
+`;
+
+exports[`<AdminEmails /> should render correctly with loading=true 1`] = `
+<div>
+  <div>
+    <a
+      class="text-link text-link--text-link text-link--no-padding text-link--inline page-title__link"
+      href="/admin"
+    >
+      ⇠ Admin
+    </a>
+    <div
+      class="typography__main"
+    >
+      <h1
+        class="typography__text typography__text--section page-title__section page-title__section--with-link"
+        id="admin-emails"
+      >
+        Admin emails
+      </h1>
+    </div>
+  </div>
+  <div>
+    <button
+      class="button__outer button__outer--regular button__outer--no-bouncy button__outer--disabled button__outer--large"
+      disabled=""
+      style="margin-right: 1rem; margin-bottom: 1rem;"
+      type="button"
+    >
+      Reload emails
+    </button>
+    <br />
+    <br />
+  </div>
+  <div
+    class="split-detail-view__outer admin-emails__split-view"
+  >
+    <div
+      class="split-detail-view__list-view"
+    >
+      <div />
+    </div>
+  </div>
+</div>
+`;
+
+exports[`<AdminEmails /> should render correctly with resendError 1`] = `
+<div>
+  <div>
+    <a
+      class="text-link text-link--text-link text-link--no-padding text-link--inline page-title__link"
+      href="/admin"
+    >
+      ⇠ Admin
+    </a>
+    <div
+      class="typography__main"
+    >
+      <h1
+        class="typography__text typography__text--section page-title__section page-title__section--with-link"
+        id="admin-emails"
+      >
+        Admin emails
+      </h1>
+    </div>
+  </div>
+  <div>
+    <button
+      class="button__outer button__outer--regular button__outer--no-bouncy button__outer--large"
+      style="margin-right: 1rem; margin-bottom: 1rem;"
+      type="button"
+    >
+      Reload emails
+    </button>
+    <br />
+    <br />
+  </div>
+  <div
+    class="split-detail-view__outer admin-emails__split-view"
+  >
+    <div
+      class="split-detail-view__list-view"
+    >
+      <div />
+    </div>
+  </div>
+</div>
+`;
+
+exports[`<AdminEmails /> should render correctly with resending=true 1`] = `
+<div>
+  <div>
+    <a
+      class="text-link text-link--text-link text-link--no-padding text-link--inline page-title__link"
+      href="/admin"
+    >
+      ⇠ Admin
+    </a>
+    <div
+      class="typography__main"
+    >
+      <h1
+        class="typography__text typography__text--section page-title__section page-title__section--with-link"
+        id="admin-emails"
+      >
+        Admin emails
+      </h1>
+    </div>
+  </div>
+  <div>
+    <button
+      class="button__outer button__outer--regular button__outer--no-bouncy button__outer--large"
+      style="margin-right: 1rem; margin-bottom: 1rem;"
+      type="button"
+    >
+      Reload emails
+    </button>
+    <br />
+    <br />
+  </div>
+  <div
+    class="split-detail-view__outer admin-emails__split-view"
+  >
+    <div
+      class="split-detail-view__list-view"
+    >
+      <div />
+    </div>
+  </div>
+</div>
+`;
+
+exports[`<AdminEmails /> should render correctly with user 1`] = `
+<div>
+  <div
+    class="typography__main"
+  >
+    <h1
+      class="typography__text typography__text--section"
+      id="admin-only"
+    >
+      Admin only
+    </h1>
+    <span
+      class="paragraph"
+    >
+      You need to be logged in with an admin account to view this content.
+      <br />
+      <a
+        class="text-link text-link--text-link text-link--no-padding text-link--inline"
+        href="/login"
+      >
+        Got a different admin account? Log in here.
+      </a>
+    </span>
+  </div>
+</div>
+`;

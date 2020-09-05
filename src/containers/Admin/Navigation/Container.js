@@ -59,6 +59,14 @@ const AdminNavigation = props => {
               day={null}
               month={null}
               className={getClassName('admin-navigation__card')}
+              href="/admin/emails"
+              title="Emails"
+            />
+            <FeatureCard
+              layout={FEATURE_CARD_LAYOUTS.narrowCompact}
+              day={null}
+              month={null}
+              className={getClassName('admin-navigation__card')}
               href="/admin/notifications"
               title="Notifications"
             />

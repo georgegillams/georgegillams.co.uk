@@ -2,7 +2,7 @@ import appConfig from 'helpers/appConfig';
 import cors from 'cors';
 import helmet from 'helmet';
 import slowDown from 'express-slow-down';
-import apiStructure from 'helpers/apiStructure';
+import apiStructure from 'helpers/common/apiStructure';
 
 const sensitiveApiRoutes = [];
 Object.keys(apiStructure).forEach(k => {

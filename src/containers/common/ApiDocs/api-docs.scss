@@ -1,10 +1,6 @@
 @import '~utils/tokens';
 
 .api-docs {
-  &__table-wrapper {
-    overflow-x: scroll;
-  }
-
   &__table {
     width: 100%;
     border-collapse: collapse;
