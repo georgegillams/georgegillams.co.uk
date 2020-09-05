@@ -1,4 +1,4 @@
-import apiStructure from './apiStructureWithActions';
+import apiStructure from './actions/common/apiStructureWithActions';
 
 import { CategorisedError, InternalServerError, NotImplementedError } from 'utils/common/errors';
 import { mapPathToAction } from 'utils/common/mapPathToAction.js';

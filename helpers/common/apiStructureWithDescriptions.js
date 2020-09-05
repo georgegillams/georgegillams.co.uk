@@ -1,4 +1,5 @@
-import apiStructure from 'helpers/apiStructure';
+import apiStructure from 'helpers/common/apiStructure';
+import { apiStructureWithDescriptionsExtensions } from '../apiStructureWithDescriptions_Extensions';
 
 // Analytics
 apiStructure.createAnalytic.description = 'Registers information about the page navigated to';
@@ -17,6 +18,12 @@ apiStructure.requestVerificationEmail.description = 'Resends an email verificati
 apiStructure.requestVerificationEmail.authorisation = 'Any user';
 apiStructure.verifyEmail.description = 'Verify an email address with a secret verification key';
 apiStructure.verifyEmail.authorisation = 'None';
+
+// Auth
+apiStructure.loadEmails.description = 'Loads emails that have been sent';
+apiStructure.loadEmails.authorisation = 'Admin only';
+apiStructure.resendEmail.description = "Resends an email that's stored in the database";
+apiStructure.resendEmail.authorisation = 'Admin only';
 
 // Login
 apiStructure.loginWithMagicLink.description = 'Login using a secret magic-link key';
@@ -59,43 +66,6 @@ apiStructure.signUp.authorisation = 'None';
 apiStructure.updateUser.description = 'Update a given user';
 apiStructure.updateUser.authorisation = 'Any user - only an admin can promote other users to admin';
 
-// #region app-specific
-// Blogs
-apiStructure.createBlog.description = 'Create a new blog';
-apiStructure.createBlog.authorisation = 'Admin only';
-apiStructure.deleteBlog.description = 'Remove a blog';
-apiStructure.deleteBlog.authorisation = 'Admin only';
-apiStructure.loadBlogs.description = 'Load all blogs. If not admin, only non-deleted, published blogs will be loaded';
-apiStructure.loadBlogs.authorisation = 'None';
-apiStructure.loadBlog.description = 'Load a single blog. If not admin, will fail if deleted or not published';
-apiStructure.loadBlog.authorisation = 'None';
-apiStructure.loadBlog.arguments = 'id: the blog ID to load';
-apiStructure.updateBlog.description = 'Update a blog';
-apiStructure.updateBlog.authorisation = 'Admin only';
-
-// Make payment
-apiStructure.loadPayment.description = 'TODO';
-apiStructure.loadPayment.authorisation = 'TODO';
-apiStructure.createPaymentIntent.description = 'TODO';
-apiStructure.createPaymentIntent.authorisation = 'TODO';
-apiStructure.resendPaymentReceipt.description = 'TODO';
-apiStructure.resendPaymentReceipt.authorisation = 'Admin only';
-
-// Payments
-apiStructure.createPayment.description = 'TODO';
-apiStructure.createPayment.authorisation = 'TODO';
-apiStructure.deletePayment.description = 'TODO';
-apiStructure.deletePayment.authorisation = 'TODO';
-apiStructure.loadPayments.description = 'TODO';
-apiStructure.loadPayments.authorisation = 'TODO';
-
-// Support
-apiStructure.createSupport.description = 'TODO';
-apiStructure.createSupport.authorisation = 'Admin only';
-apiStructure.deleteSupport.description = 'TODO';
-apiStructure.deleteSupport.authorisation = 'Admin only';
-apiStructure.loadSupport.description = 'TODO';
-apiStructure.loadSupport.authorisation = 'None';
-// #endregion app-specific
+apiStructureWithDescriptionsExtensions(apiStructure);
 
 export default apiStructure;
