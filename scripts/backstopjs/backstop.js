@@ -12,7 +12,7 @@ const allowFailure = process.argv.includes('--allowFailure');
 const scenarios = [];
 
 scenarioData.scenarioIds.forEach(sI => {
-  let delay = 1500;
+  let delay = 500;
   let urlExt = sI;
   if (typeof sI === 'object') {
     urlExt = sI.url;

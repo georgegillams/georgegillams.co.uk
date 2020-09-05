@@ -11,7 +11,7 @@ const Card = props => {
 
   const hrefExternal = href && HelperFunctions.includes(href, 'http');
 
-  const [isServer, setIsServer] = useState(true);
+  const [isServer, setIsServer] = useState(typeof window === 'undefined');
 
   const renderNormalLink = !href || hrefExternal;
 

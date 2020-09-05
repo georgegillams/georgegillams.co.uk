@@ -20,7 +20,7 @@ const GraphicContent = props => {
     contentContainerClassNames.push([getClassName('graphic-content__content-container--hidden')]);
   }
 
-  const [isServer, setIsServer] = useState(true);
+  const [isServer, setIsServer] = useState(typeof window === 'undefined');
 
   useEffect(() => {
     setIsServer(false);
