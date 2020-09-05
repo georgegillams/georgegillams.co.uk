@@ -186,6 +186,8 @@ const SiteMap = props => {
           <br />
           <TextLink href="/admin/analytics">Analytics</TextLink>
           <br />
+          <TextLink href="/admin/emails">Emails</TextLink>
+          <br />
           <TextLink href="/admin/notifications">Notifications</TextLink>
         </Paragraph>
       </Subsection>
