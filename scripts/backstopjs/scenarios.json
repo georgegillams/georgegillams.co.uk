@@ -19,5 +19,5 @@
     "work/epicc",
     "work/side-projects"
   ],
-  "globallyHiddenSelectors": ["img"]
+  "globallyHiddenSelectors": ["img", "[class^=image__outer__]"]
 }
