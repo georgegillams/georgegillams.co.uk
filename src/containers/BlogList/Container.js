@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect } from 'react';
 import PropTypes from 'prop-types';
 import { cssModules } from 'gg-components/helpers/cssModules';
 import DebugObject from 'components/common/DebugObject';
@@ -27,22 +27,14 @@ const BlogList = props => {
     className,
   } = props;
 
-  const [filteredBlogs, setFilteredBlogs] = useState(null);
-
   useEffect(() => {
     loadBlogs();
   }, []);
 
-  useEffect(() => {
-    if (!blogListState.blogs) {
-      return;
-    }
-    if (filter) {
-      setFilteredBlogs(blogListState.blogs.filter(filter));
-    } else {
-      setFilteredBlogs(blogListState.blogs);
-    }
-  }, [blogListState, filter]);
+  let filteredBlogs = blogListState.blogs;
+  if (filter && filteredBlogs && filteredBlogs.filter) {
+    filteredBlogs = filteredBlogs.filter(filter);
+  }
 
   const outerClassNameFinal = [getClassName('blogs-page__wrapper')];
 

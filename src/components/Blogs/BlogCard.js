@@ -16,6 +16,15 @@ const BlogCard = props => {
   const day = blog.blogCardDate ? blog.blogCardDate : '' + new Date(1000 * blog.publishedTimestamp).getDate();
   const month = '' + new Date(1000 * blog.publishedTimestamp).toLocaleString('default', { month: 'short' });
 
+  let blogTags = null;
+
+  if (blog && blog.tags && blog.tags.split) {
+    blogTags = blog.tags.split(',');
+  }
+  if (blog && blog.tags && blog.tags.map) {
+    blogTags = blog.tags;
+  }
+
   return (
     <FeatureCard
       annotations={[day, month]}
@@ -27,10 +36,7 @@ const BlogCard = props => {
       bannerColor={blog.blogBannerColor ? blog.blogBannerColor : null}
       light={blog.light}
       {...rest}>
-      {blog &&
-        blog.tags &&
-        !blog.tags.split &&
-        blog.tags.map(tag => <Tag key={tag} ariaLabel={`${tag} tag`} type={tag} />)}
+      {blogTags && blogTags.map(tag => <Tag key={tag} ariaLabel={`${tag} tag`} type={tag} />)}
     </FeatureCard>
   );
 };
