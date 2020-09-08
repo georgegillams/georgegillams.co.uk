@@ -43,7 +43,7 @@ const signale = new Signale(options);
   server.use(greasemonkey);
   server.use(seo);
   server.use('/api', api);
-  server.use('/static', express.static('public/static'));
+  server.use('/static', express.static(dev ? 'public/static' : 'build/public/static'));
 
   redirects.forEach(redirect => {
     server.get(redirect.from, (req, res) => {
