@@ -22,6 +22,7 @@ describe('injectReducer decorator', () => {
   let ComponentWithReducer;
 
   beforeAll(() => {
+    // eslint-disable-next-line no-import-assign
     reducerInjectors.default = jest.fn().mockImplementation(() => injectors);
   });
 
@@ -74,6 +75,7 @@ describe('useInjectReducer hook', () => {
     injectors = {
       injectReducer: jest.fn(),
     };
+    // eslint-disable-next-line no-import-assign
     reducerInjectors.default = jest.fn().mockImplementation(() => injectors);
     store = configureStore({});
     ComponentWithReducer = () => {

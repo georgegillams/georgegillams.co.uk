@@ -95,6 +95,7 @@ exports[`<BlogList /> should render correctly - index 1`] = `
         Most of my photos are licensed under
          
         <a
+          aria-label="Creative Commons BY-SA 3.0 (opens in a new tab)"
           class="text-link text-link--text-link text-link--no-padding text-link--inline"
           href="https://creativecommons.org/licenses/by-sa/3.0/"
           rel="noopener noreferrer"
@@ -608,6 +609,7 @@ exports[`<BlogList /> should render correctly authenticated with blogs 1`] = `
         Most of my photos are licensed under
          
         <a
+          aria-label="Creative Commons BY-SA 3.0 (opens in a new tab)"
           class="text-link text-link--text-link text-link--no-padding text-link--inline"
           href="https://creativecommons.org/licenses/by-sa/3.0/"
           rel="noopener noreferrer"
@@ -751,6 +753,7 @@ exports[`<BlogList /> should render correctly with blog load error 1`] = `
         Most of my photos are licensed under
          
         <a
+          aria-label="Creative Commons BY-SA 3.0 (opens in a new tab)"
           class="text-link text-link--text-link text-link--no-padding text-link--inline"
           href="https://creativecommons.org/licenses/by-sa/3.0/"
           rel="noopener noreferrer"
@@ -1202,6 +1205,7 @@ exports[`<BlogList /> should render correctly with blogs 1`] = `
         Most of my photos are licensed under
          
         <a
+          aria-label="Creative Commons BY-SA 3.0 (opens in a new tab)"
           class="text-link text-link--text-link text-link--no-padding text-link--inline"
           href="https://creativecommons.org/licenses/by-sa/3.0/"
           rel="noopener noreferrer"
@@ -1335,6 +1339,7 @@ exports[`<BlogList /> should render correctly with initial state 1`] = `
         Most of my photos are licensed under
          
         <a
+          aria-label="Creative Commons BY-SA 3.0 (opens in a new tab)"
           class="text-link text-link--text-link text-link--no-padding text-link--inline"
           href="https://creativecommons.org/licenses/by-sa/3.0/"
           rel="noopener noreferrer"

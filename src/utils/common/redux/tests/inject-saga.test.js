@@ -25,6 +25,7 @@ describe('injectSaga decorator', () => {
   let ComponentWithSaga;
 
   beforeAll(() => {
+    // eslint-disable-next-line no-import-assign
     sagaInjectors.default = jest.fn().mockImplementation(() => injectors);
   });
 
@@ -92,6 +93,7 @@ describe('useInjectSaga hook', () => {
   let ComponentWithSaga;
 
   beforeAll(() => {
+    // eslint-disable-next-line no-import-assign
     sagaInjectors.default = jest.fn().mockImplementation(() => injectors);
   });
 

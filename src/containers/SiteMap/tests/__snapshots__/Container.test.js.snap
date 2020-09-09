@@ -264,6 +264,7 @@ exports[`<SiteMap /> should render correctly - index 1`] = `
         class="paragraph"
       >
         <a
+          aria-label="Robots.txt (opens in a new tab)"
           class="text-link text-link--text-link text-link--no-padding text-link--inline"
           href="/robots.txt"
           rel="noopener noreferrer"
@@ -288,6 +289,7 @@ exports[`<SiteMap /> should render correctly - index 1`] = `
         </a>
         <br />
         <a
+          aria-label="SiteMap.xml (opens in a new tab)"
           class="text-link text-link--text-link text-link--no-padding text-link--inline"
           href="/sitemap.xml"
           rel="noopener noreferrer"
@@ -346,6 +348,7 @@ exports[`<SiteMap /> should render correctly - index 1`] = `
         </a>
         <br />
         <a
+          aria-label="/browser-scripts/disney_plus_play_pause (opens in a new tab)"
           class="text-link text-link--text-link text-link--no-padding text-link--inline"
           href="/browser-scripts/disney_plus_play_pause"
           rel="noopener noreferrer"
@@ -370,6 +373,7 @@ exports[`<SiteMap /> should render correctly - index 1`] = `
         </a>
         <br />
         <a
+          aria-label="/browser-scripts/github_actual-time (opens in a new tab)"
           class="text-link text-link--text-link text-link--no-padding text-link--inline"
           href="/browser-scripts/github_actual-time"
           rel="noopener noreferrer"
@@ -394,6 +398,7 @@ exports[`<SiteMap /> should render correctly - index 1`] = `
         </a>
         <br />
         <a
+          aria-label="/browser-scripts/github_auto_merge (opens in a new tab)"
           class="text-link text-link--text-link text-link--no-padding text-link--inline"
           href="/browser-scripts/github_auto_merge"
           rel="noopener noreferrer"
@@ -418,6 +423,7 @@ exports[`<SiteMap /> should render correctly - index 1`] = `
         </a>
         <br />
         <a
+          aria-label="/browser-scripts/github_expand_rich_diffs (opens in a new tab)"
           class="text-link text-link--text-link text-link--no-padding text-link--inline"
           href="/browser-scripts/github_expand_rich_diffs"
           rel="noopener noreferrer"
@@ -442,6 +448,7 @@ exports[`<SiteMap /> should render correctly - index 1`] = `
         </a>
         <br />
         <a
+          aria-label="More scripts on GitHub (opens in a new tab)"
           class="text-link text-link--text-link text-link--no-padding text-link--inline"
           href="https://github.com/georgegillams/browser-scripts/#browser-scripts"
           rel="noopener noreferrer"
@@ -1196,6 +1203,7 @@ exports[`<SiteMap /> should render correctly 1`] = `
         class="paragraph"
       >
         <a
+          aria-label="Robots.txt (opens in a new tab)"
           class="text-link text-link--text-link text-link--no-padding text-link--inline"
           href="/robots.txt"
           rel="noopener noreferrer"
@@ -1220,6 +1228,7 @@ exports[`<SiteMap /> should render correctly 1`] = `
         </a>
         <br />
         <a
+          aria-label="SiteMap.xml (opens in a new tab)"
           class="text-link text-link--text-link text-link--no-padding text-link--inline"
           href="/sitemap.xml"
           rel="noopener noreferrer"
@@ -1278,6 +1287,7 @@ exports[`<SiteMap /> should render correctly 1`] = `
         </a>
         <br />
         <a
+          aria-label="/browser-scripts/disney_plus_play_pause (opens in a new tab)"
           class="text-link text-link--text-link text-link--no-padding text-link--inline"
           href="/browser-scripts/disney_plus_play_pause"
           rel="noopener noreferrer"
@@ -1302,6 +1312,7 @@ exports[`<SiteMap /> should render correctly 1`] = `
         </a>
         <br />
         <a
+          aria-label="/browser-scripts/github_actual-time (opens in a new tab)"
           class="text-link text-link--text-link text-link--no-padding text-link--inline"
           href="/browser-scripts/github_actual-time"
           rel="noopener noreferrer"
@@ -1326,6 +1337,7 @@ exports[`<SiteMap /> should render correctly 1`] = `
         </a>
         <br />
         <a
+          aria-label="/browser-scripts/github_auto_merge (opens in a new tab)"
           class="text-link text-link--text-link text-link--no-padding text-link--inline"
           href="/browser-scripts/github_auto_merge"
           rel="noopener noreferrer"
@@ -1350,6 +1362,7 @@ exports[`<SiteMap /> should render correctly 1`] = `
         </a>
         <br />
         <a
+          aria-label="/browser-scripts/github_expand_rich_diffs (opens in a new tab)"
           class="text-link text-link--text-link text-link--no-padding text-link--inline"
           href="/browser-scripts/github_expand_rich_diffs"
           rel="noopener noreferrer"
@@ -1374,6 +1387,7 @@ exports[`<SiteMap /> should render correctly 1`] = `
         </a>
         <br />
         <a
+          aria-label="More scripts on GitHub (opens in a new tab)"
           class="text-link text-link--text-link text-link--no-padding text-link--inline"
           href="https://github.com/georgegillams/browser-scripts/#browser-scripts"
           rel="noopener noreferrer"
@@ -2055,6 +2069,7 @@ exports[`<SiteMap /> should render correctly with blogs 1`] = `
         class="paragraph"
       >
         <a
+          aria-label="Robots.txt (opens in a new tab)"
           class="text-link text-link--text-link text-link--no-padding text-link--inline"
           href="/robots.txt"
           rel="noopener noreferrer"
@@ -2079,6 +2094,7 @@ exports[`<SiteMap /> should render correctly with blogs 1`] = `
         </a>
         <br />
         <a
+          aria-label="SiteMap.xml (opens in a new tab)"
           class="text-link text-link--text-link text-link--no-padding text-link--inline"
           href="/sitemap.xml"
           rel="noopener noreferrer"
@@ -2137,6 +2153,7 @@ exports[`<SiteMap /> should render correctly with blogs 1`] = `
         </a>
         <br />
         <a
+          aria-label="/browser-scripts/disney_plus_play_pause (opens in a new tab)"
           class="text-link text-link--text-link text-link--no-padding text-link--inline"
           href="/browser-scripts/disney_plus_play_pause"
           rel="noopener noreferrer"
@@ -2161,6 +2178,7 @@ exports[`<SiteMap /> should render correctly with blogs 1`] = `
         </a>
         <br />
         <a
+          aria-label="/browser-scripts/github_actual-time (opens in a new tab)"
           class="text-link text-link--text-link text-link--no-padding text-link--inline"
           href="/browser-scripts/github_actual-time"
           rel="noopener noreferrer"
@@ -2185,6 +2203,7 @@ exports[`<SiteMap /> should render correctly with blogs 1`] = `
         </a>
         <br />
         <a
+          aria-label="/browser-scripts/github_auto_merge (opens in a new tab)"
           class="text-link text-link--text-link text-link--no-padding text-link--inline"
           href="/browser-scripts/github_auto_merge"
           rel="noopener noreferrer"
@@ -2209,6 +2228,7 @@ exports[`<SiteMap /> should render correctly with blogs 1`] = `
         </a>
         <br />
         <a
+          aria-label="/browser-scripts/github_expand_rich_diffs (opens in a new tab)"
           class="text-link text-link--text-link text-link--no-padding text-link--inline"
           href="/browser-scripts/github_expand_rich_diffs"
           rel="noopener noreferrer"
@@ -2233,6 +2253,7 @@ exports[`<SiteMap /> should render correctly with blogs 1`] = `
         </a>
         <br />
         <a
+          aria-label="More scripts on GitHub (opens in a new tab)"
           class="text-link text-link--text-link text-link--no-padding text-link--inline"
           href="https://github.com/georgegillams/browser-scripts/#browser-scripts"
           rel="noopener noreferrer"
@@ -2958,6 +2979,7 @@ exports[`<SiteMap /> should render correctly with blogs and admin user 1`] = `
         class="paragraph"
       >
         <a
+          aria-label="Robots.txt (opens in a new tab)"
           class="text-link text-link--text-link text-link--no-padding text-link--inline"
           href="/robots.txt"
           rel="noopener noreferrer"
@@ -2982,6 +3004,7 @@ exports[`<SiteMap /> should render correctly with blogs and admin user 1`] = `
         </a>
         <br />
         <a
+          aria-label="SiteMap.xml (opens in a new tab)"
           class="text-link text-link--text-link text-link--no-padding text-link--inline"
           href="/sitemap.xml"
           rel="noopener noreferrer"
@@ -3040,6 +3063,7 @@ exports[`<SiteMap /> should render correctly with blogs and admin user 1`] = `
         </a>
         <br />
         <a
+          aria-label="/browser-scripts/disney_plus_play_pause (opens in a new tab)"
           class="text-link text-link--text-link text-link--no-padding text-link--inline"
           href="/browser-scripts/disney_plus_play_pause"
           rel="noopener noreferrer"
@@ -3064,6 +3088,7 @@ exports[`<SiteMap /> should render correctly with blogs and admin user 1`] = `
         </a>
         <br />
         <a
+          aria-label="/browser-scripts/github_actual-time (opens in a new tab)"
           class="text-link text-link--text-link text-link--no-padding text-link--inline"
           href="/browser-scripts/github_actual-time"
           rel="noopener noreferrer"
@@ -3088,6 +3113,7 @@ exports[`<SiteMap /> should render correctly with blogs and admin user 1`] = `
         </a>
         <br />
         <a
+          aria-label="/browser-scripts/github_auto_merge (opens in a new tab)"
           class="text-link text-link--text-link text-link--no-padding text-link--inline"
           href="/browser-scripts/github_auto_merge"
           rel="noopener noreferrer"
@@ -3112,6 +3138,7 @@ exports[`<SiteMap /> should render correctly with blogs and admin user 1`] = `
         </a>
         <br />
         <a
+          aria-label="/browser-scripts/github_expand_rich_diffs (opens in a new tab)"
           class="text-link text-link--text-link text-link--no-padding text-link--inline"
           href="/browser-scripts/github_expand_rich_diffs"
           rel="noopener noreferrer"
@@ -3136,6 +3163,7 @@ exports[`<SiteMap /> should render correctly with blogs and admin user 1`] = `
         </a>
         <br />
         <a
+          aria-label="More scripts on GitHub (opens in a new tab)"
           class="text-link text-link--text-link text-link--no-padding text-link--inline"
           href="https://github.com/georgegillams/browser-scripts/#browser-scripts"
           rel="noopener noreferrer"

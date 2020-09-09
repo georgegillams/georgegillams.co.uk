@@ -15,6 +15,14 @@
         }
       }
     ],
+    "unit-disallowed-list": [
+      ["px"],
+      {
+        "ignoreProperties": {
+          "px": ["box-shadow", "border"]
+        }
+      }
+    ],
     "selector-pseudo-class-no-unknown": [
       true,
       {
