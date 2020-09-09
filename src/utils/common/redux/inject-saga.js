@@ -4,7 +4,7 @@ import { ReactReduxContext } from 'react-redux';
 
 import getInjectors from './saga-injectors';
 
-const sagaInjector = ({ key, saga, mode }) => WrappedComponent => {
+export default ({ key, saga, mode }) => WrappedComponent => {
   class InjectSaga extends React.Component {
     static WrappedComponent = WrappedComponent;
 
@@ -44,5 +44,4 @@ const useInjectSaga = ({ key, saga, mode }) => {
   }, []);
 };
 
-export default sagaInjector;
 export { useInjectSaga };

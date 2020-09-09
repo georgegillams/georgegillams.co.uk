@@ -284,6 +284,7 @@ exports[`<Support /> should render correctly with links 1`] = `
         class="paragraph support-link__link"
       >
         <a
+          aria-label="URL_1 (opens in a new tab)"
           class="text-link text-link--text-link text-link--no-padding text-link--inline"
           href="URL_1"
           rel="noopener noreferrer"
@@ -323,6 +324,7 @@ exports[`<Support /> should render correctly with links 1`] = `
         class="paragraph support-link__link"
       >
         <a
+          aria-label="URL_2 (opens in a new tab)"
           class="text-link text-link--text-link text-link--no-padding text-link--inline"
           href="URL_2"
           rel="noopener noreferrer"

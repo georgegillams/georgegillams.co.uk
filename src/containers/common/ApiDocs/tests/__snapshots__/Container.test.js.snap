@@ -71,6 +71,7 @@ exports[`<ApiDocs /> should render correctly 1`] = `
             class="api-docs__cell"
           >
             <a
+              aria-label="/analytics/create (opens in a new tab)"
               class="text-link text-link--text-link text-link--no-padding text-link--inline"
               href="https://www.georgegillams.co.uk/api/analytics/create"
               rel="noopener noreferrer"
@@ -134,6 +135,7 @@ exports[`<ApiDocs /> should render correctly 1`] = `
             class="api-docs__cell"
           >
             <a
+              aria-label="/analytics/load-all (opens in a new tab)"
               class="text-link text-link--text-link text-link--no-padding text-link--inline"
               href="https://www.georgegillams.co.uk/api/analytics/load-all"
               rel="noopener noreferrer"
@@ -197,6 +199,7 @@ exports[`<ApiDocs /> should render correctly 1`] = `
             class="api-docs__cell"
           >
             <a
+              aria-label="/analytics/load (opens in a new tab)"
               class="text-link text-link--text-link text-link--no-padding text-link--inline"
               href="https://www.georgegillams.co.uk/api/analytics/load"
               rel="noopener noreferrer"
@@ -260,6 +263,7 @@ exports[`<ApiDocs /> should render correctly 1`] = `
             class="api-docs__cell"
           >
             <a
+              aria-label="/auth/load (opens in a new tab)"
               class="text-link text-link--text-link text-link--no-padding text-link--inline"
               href="https://www.georgegillams.co.uk/api/auth/load"
               rel="noopener noreferrer"
@@ -323,6 +327,7 @@ exports[`<ApiDocs /> should render correctly 1`] = `
             class="api-docs__cell"
           >
             <a
+              aria-label="/auth/logout (opens in a new tab)"
               class="text-link text-link--text-link text-link--no-padding text-link--inline"
               href="https://www.georgegillams.co.uk/api/auth/logout"
               rel="noopener noreferrer"
@@ -386,6 +391,7 @@ exports[`<ApiDocs /> should render correctly 1`] = `
             class="api-docs__cell"
           >
             <a
+              aria-label="/auth/request-verification-email (opens in a new tab)"
               class="text-link text-link--text-link text-link--no-padding text-link--inline"
               href="https://www.georgegillams.co.uk/api/auth/request-verification-email"
               rel="noopener noreferrer"
@@ -449,6 +455,7 @@ exports[`<ApiDocs /> should render correctly 1`] = `
             class="api-docs__cell"
           >
             <a
+              aria-label="/auth/verify-email (opens in a new tab)"
               class="text-link text-link--text-link text-link--no-padding text-link--inline"
               href="https://www.georgegillams.co.uk/api/auth/verify-email"
               rel="noopener noreferrer"
@@ -512,6 +519,7 @@ exports[`<ApiDocs /> should render correctly 1`] = `
             class="api-docs__cell"
           >
             <a
+              aria-label="/emails/load (opens in a new tab)"
               class="text-link text-link--text-link text-link--no-padding text-link--inline"
               href="https://www.georgegillams.co.uk/api/emails/load"
               rel="noopener noreferrer"
@@ -575,6 +583,7 @@ exports[`<ApiDocs /> should render correctly 1`] = `
             class="api-docs__cell"
           >
             <a
+              aria-label="/emails/resend (opens in a new tab)"
               class="text-link text-link--text-link text-link--no-padding text-link--inline"
               href="https://www.georgegillams.co.uk/api/emails/resend"
               rel="noopener noreferrer"
@@ -638,6 +647,7 @@ exports[`<ApiDocs /> should render correctly 1`] = `
             class="api-docs__cell"
           >
             <a
+              aria-label="/magic-links/login (opens in a new tab)"
               class="text-link text-link--text-link text-link--no-padding text-link--inline"
               href="https://www.georgegillams.co.uk/api/magic-links/login"
               rel="noopener noreferrer"
@@ -701,6 +711,7 @@ exports[`<ApiDocs /> should render correctly 1`] = `
             class="api-docs__cell"
           >
             <a
+              aria-label="/magic-links/request (opens in a new tab)"
               class="text-link text-link--text-link text-link--no-padding text-link--inline"
               href="https://www.georgegillams.co.uk/api/magic-links/request"
               rel="noopener noreferrer"
@@ -764,6 +775,7 @@ exports[`<ApiDocs /> should render correctly 1`] = `
             class="api-docs__cell"
           >
             <a
+              aria-label="/data-management/backup (opens in a new tab)"
               class="text-link text-link--text-link text-link--no-padding text-link--inline"
               href="https://www.georgegillams.co.uk/api/data-management/backup"
               rel="noopener noreferrer"
@@ -827,6 +839,7 @@ exports[`<ApiDocs /> should render correctly 1`] = `
             class="api-docs__cell"
           >
             <a
+              aria-label="/data-management/delete-entity (opens in a new tab)"
               class="text-link text-link--text-link text-link--no-padding text-link--inline"
               href="https://www.georgegillams.co.uk/api/data-management/delete-entity"
               rel="noopener noreferrer"
@@ -890,6 +903,7 @@ exports[`<ApiDocs /> should render correctly 1`] = `
             class="api-docs__cell"
           >
             <a
+              aria-label="/data-management/delete-set (opens in a new tab)"
               class="text-link text-link--text-link text-link--no-padding text-link--inline"
               href="https://www.georgegillams.co.uk/api/data-management/delete-set"
               rel="noopener noreferrer"
@@ -953,6 +967,7 @@ exports[`<ApiDocs /> should render correctly 1`] = `
             class="api-docs__cell"
           >
             <a
+              aria-label="/data-management/restore (opens in a new tab)"
               class="text-link text-link--text-link text-link--no-padding text-link--inline"
               href="https://www.georgegillams.co.uk/api/data-management/restore"
               rel="noopener noreferrer"
@@ -1016,6 +1031,7 @@ exports[`<ApiDocs /> should render correctly 1`] = `
             class="api-docs__cell"
           >
             <a
+              aria-label="/notifications/create (opens in a new tab)"
               class="text-link text-link--text-link text-link--no-padding text-link--inline"
               href="https://www.georgegillams.co.uk/api/notifications/create"
               rel="noopener noreferrer"
@@ -1079,6 +1095,7 @@ exports[`<ApiDocs /> should render correctly 1`] = `
             class="api-docs__cell"
           >
             <a
+              aria-label="/notifications/delete (opens in a new tab)"
               class="text-link text-link--text-link text-link--no-padding text-link--inline"
               href="https://www.georgegillams.co.uk/api/notifications/delete"
               rel="noopener noreferrer"
@@ -1142,6 +1159,7 @@ exports[`<ApiDocs /> should render correctly 1`] = `
             class="api-docs__cell"
           >
             <a
+              aria-label="/notifications/load-all (opens in a new tab)"
               class="text-link text-link--text-link text-link--no-padding text-link--inline"
               href="https://www.georgegillams.co.uk/api/notifications/load-all"
               rel="noopener noreferrer"
@@ -1205,6 +1223,7 @@ exports[`<ApiDocs /> should render correctly 1`] = `
             class="api-docs__cell"
           >
             <a
+              aria-label="/notifications/load/:id (opens in a new tab)"
               class="text-link text-link--text-link text-link--no-padding text-link--inline"
               href="https://www.georgegillams.co.uk/api/notifications/load/:id"
               rel="noopener noreferrer"
@@ -1264,6 +1283,7 @@ exports[`<ApiDocs /> should render correctly 1`] = `
             class="api-docs__cell"
           >
             <a
+              aria-label="/notifications/update (opens in a new tab)"
               class="text-link text-link--text-link text-link--no-padding text-link--inline"
               href="https://www.georgegillams.co.uk/api/notifications/update"
               rel="noopener noreferrer"
@@ -1327,6 +1347,7 @@ exports[`<ApiDocs /> should render correctly 1`] = `
             class="api-docs__cell"
           >
             <a
+              aria-label="/users/create (opens in a new tab)"
               class="text-link text-link--text-link text-link--no-padding text-link--inline"
               href="https://www.georgegillams.co.uk/api/users/create"
               rel="noopener noreferrer"
@@ -1390,6 +1411,7 @@ exports[`<ApiDocs /> should render correctly 1`] = `
             class="api-docs__cell"
           >
             <a
+              aria-label="/users/delete (opens in a new tab)"
               class="text-link text-link--text-link text-link--no-padding text-link--inline"
               href="https://www.georgegillams.co.uk/api/users/delete"
               rel="noopener noreferrer"
@@ -1453,6 +1475,7 @@ exports[`<ApiDocs /> should render correctly 1`] = `
             class="api-docs__cell"
           >
             <a
+              aria-label="/users/load (opens in a new tab)"
               class="text-link text-link--text-link text-link--no-padding text-link--inline"
               href="https://www.georgegillams.co.uk/api/users/load"
               rel="noopener noreferrer"
@@ -1516,6 +1539,7 @@ exports[`<ApiDocs /> should render correctly 1`] = `
             class="api-docs__cell"
           >
             <a
+              aria-label="/users/load-all (opens in a new tab)"
               class="text-link text-link--text-link text-link--no-padding text-link--inline"
               href="https://www.georgegillams.co.uk/api/users/load-all"
               rel="noopener noreferrer"
@@ -1579,6 +1603,7 @@ exports[`<ApiDocs /> should render correctly 1`] = `
             class="api-docs__cell"
           >
             <a
+              aria-label="/users/sign-up (opens in a new tab)"
               class="text-link text-link--text-link text-link--no-padding text-link--inline"
               href="https://www.georgegillams.co.uk/api/users/sign-up"
               rel="noopener noreferrer"
@@ -1642,6 +1667,7 @@ exports[`<ApiDocs /> should render correctly 1`] = `
             class="api-docs__cell"
           >
             <a
+              aria-label="/users/update (opens in a new tab)"
               class="text-link text-link--text-link text-link--no-padding text-link--inline"
               href="https://www.georgegillams.co.uk/api/users/update"
               rel="noopener noreferrer"
@@ -1705,6 +1731,7 @@ exports[`<ApiDocs /> should render correctly 1`] = `
             class="api-docs__cell"
           >
             <a
+              aria-label="/blogs/create (opens in a new tab)"
               class="text-link text-link--text-link text-link--no-padding text-link--inline"
               href="https://www.georgegillams.co.uk/api/blogs/create"
               rel="noopener noreferrer"
@@ -1768,6 +1795,7 @@ exports[`<ApiDocs /> should render correctly 1`] = `
             class="api-docs__cell"
           >
             <a
+              aria-label="/blogs/delete (opens in a new tab)"
               class="text-link text-link--text-link text-link--no-padding text-link--inline"
               href="https://www.georgegillams.co.uk/api/blogs/delete"
               rel="noopener noreferrer"
@@ -1831,6 +1859,7 @@ exports[`<ApiDocs /> should render correctly 1`] = `
             class="api-docs__cell"
           >
             <a
+              aria-label="/blogs/load-all (opens in a new tab)"
               class="text-link text-link--text-link text-link--no-padding text-link--inline"
               href="https://www.georgegillams.co.uk/api/blogs/load-all"
               rel="noopener noreferrer"
@@ -1894,6 +1923,7 @@ exports[`<ApiDocs /> should render correctly 1`] = `
             class="api-docs__cell"
           >
             <a
+              aria-label="/blogs/load/:id (opens in a new tab)"
               class="text-link text-link--text-link text-link--no-padding text-link--inline"
               href="https://www.georgegillams.co.uk/api/blogs/load/:id"
               rel="noopener noreferrer"
@@ -1959,6 +1989,7 @@ exports[`<ApiDocs /> should render correctly 1`] = `
             class="api-docs__cell"
           >
             <a
+              aria-label="/blogs/update (opens in a new tab)"
               class="text-link text-link--text-link text-link--no-padding text-link--inline"
               href="https://www.georgegillams.co.uk/api/blogs/update"
               rel="noopener noreferrer"
@@ -2022,6 +2053,7 @@ exports[`<ApiDocs /> should render correctly 1`] = `
             class="api-docs__cell"
           >
             <a
+              aria-label="/make-payment/load (opens in a new tab)"
               class="text-link text-link--text-link text-link--no-padding text-link--inline"
               href="https://www.georgegillams.co.uk/api/make-payment/load"
               rel="noopener noreferrer"
@@ -2085,6 +2117,7 @@ exports[`<ApiDocs /> should render correctly 1`] = `
             class="api-docs__cell"
           >
             <a
+              aria-label="/make-payment/create-intent (opens in a new tab)"
               class="text-link text-link--text-link text-link--no-padding text-link--inline"
               href="https://www.georgegillams.co.uk/api/make-payment/create-intent"
               rel="noopener noreferrer"
@@ -2148,6 +2181,7 @@ exports[`<ApiDocs /> should render correctly 1`] = `
             class="api-docs__cell"
           >
             <a
+              aria-label="/make-payment/resend-receipt (opens in a new tab)"
               class="text-link text-link--text-link text-link--no-padding text-link--inline"
               href="https://www.georgegillams.co.uk/api/make-payment/resend-receipt"
               rel="noopener noreferrer"
@@ -2211,6 +2245,7 @@ exports[`<ApiDocs /> should render correctly 1`] = `
             class="api-docs__cell"
           >
             <a
+              aria-label="/payments/create (opens in a new tab)"
               class="text-link text-link--text-link text-link--no-padding text-link--inline"
               href="https://www.georgegillams.co.uk/api/payments/create"
               rel="noopener noreferrer"
@@ -2274,6 +2309,7 @@ exports[`<ApiDocs /> should render correctly 1`] = `
             class="api-docs__cell"
           >
             <a
+              aria-label="/payments/delete (opens in a new tab)"
               class="text-link text-link--text-link text-link--no-padding text-link--inline"
               href="https://www.georgegillams.co.uk/api/payments/delete"
               rel="noopener noreferrer"
@@ -2337,6 +2373,7 @@ exports[`<ApiDocs /> should render correctly 1`] = `
             class="api-docs__cell"
           >
             <a
+              aria-label="/payments/load-all (opens in a new tab)"
               class="text-link text-link--text-link text-link--no-padding text-link--inline"
               href="https://www.georgegillams.co.uk/api/payments/load-all"
               rel="noopener noreferrer"
@@ -2400,6 +2437,7 @@ exports[`<ApiDocs /> should render correctly 1`] = `
             class="api-docs__cell"
           >
             <a
+              aria-label="/support/create (opens in a new tab)"
               class="text-link text-link--text-link text-link--no-padding text-link--inline"
               href="https://www.georgegillams.co.uk/api/support/create"
               rel="noopener noreferrer"
@@ -2463,6 +2501,7 @@ exports[`<ApiDocs /> should render correctly 1`] = `
             class="api-docs__cell"
           >
             <a
+              aria-label="/support/delete (opens in a new tab)"
               class="text-link text-link--text-link text-link--no-padding text-link--inline"
               href="https://www.georgegillams.co.uk/api/support/delete"
               rel="noopener noreferrer"
@@ -2526,6 +2565,7 @@ exports[`<ApiDocs /> should render correctly 1`] = `
             class="api-docs__cell"
           >
             <a
+              aria-label="/support/load (opens in a new tab)"
               class="text-link text-link--text-link text-link--no-padding text-link--inline"
               href="https://www.georgegillams.co.uk/api/support/load"
               rel="noopener noreferrer"

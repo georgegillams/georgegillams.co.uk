@@ -105,6 +105,7 @@ exports[`<PrivacyPolicy /> should render correctly - index 1`] = `
         To enable payments on the site, we use Stripe. Data you enter when making a payment will be handled in accordance with
          
         <a
+          aria-label="Stripe's policy (opens in a new tab)"
           class="text-link text-link--text-link text-link--no-padding text-link--inline"
           href="https://stripe.com/privacy"
           rel="noopener noreferrer"

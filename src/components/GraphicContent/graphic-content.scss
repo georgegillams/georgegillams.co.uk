@@ -16,9 +16,8 @@
 
     &--hidden {
       opacity: 0.2;
-      /* stylelint-disable unit-blacklist */
+      /* stylelint-disable-next-line unit-blacklist, unit-disallowed-list */
       filter: blur(10px);
-      /* stylelint-enable unit-blacklist */
     }
   }
 

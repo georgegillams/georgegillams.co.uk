@@ -17,6 +17,7 @@ exports[`<Home /> should render correctly 1`] = `
       I'm an open-source software engineer at
        
       <a
+        aria-label="Skyscanner (opens in a new tab)"
         class="text-link text-link--text-link text-link--no-padding text-link--inline"
         href="https://www.skyscanner.net/"
         rel="noopener noreferrer"
@@ -68,6 +69,7 @@ exports[`<Home /> should render correctly 1`] = `
        in May 2018. I also try to squeeze in as much volunteering as I can, so you may find me dressed as a
        
       <a
+        aria-label="Help for Heroes (opens in a new tab)"
         class="text-link text-link--text-link text-link--no-padding text-link--inline"
         href="https://helpforheroes.org.uk/"
         rel="noopener noreferrer"
@@ -94,6 +96,7 @@ exports[`<Home /> should render correctly 1`] = `
       bear, reviewing content for
        
       <a
+        aria-label="Beat (opens in a new tab)"
         class="text-link text-link--text-link text-link--no-padding text-link--inline"
         href="https://b-eat.co.uk/"
         rel="noopener noreferrer"
@@ -422,6 +425,7 @@ exports[`<Home /> should render correctly with admin user 1`] = `
       I'm an open-source software engineer at
        
       <a
+        aria-label="Skyscanner (opens in a new tab)"
         class="text-link text-link--text-link text-link--no-padding text-link--inline"
         href="https://www.skyscanner.net/"
         rel="noopener noreferrer"
@@ -473,6 +477,7 @@ exports[`<Home /> should render correctly with admin user 1`] = `
        in May 2018. I also try to squeeze in as much volunteering as I can, so you may find me dressed as a
        
       <a
+        aria-label="Help for Heroes (opens in a new tab)"
         class="text-link text-link--text-link text-link--no-padding text-link--inline"
         href="https://helpforheroes.org.uk/"
         rel="noopener noreferrer"
@@ -499,6 +504,7 @@ exports[`<Home /> should render correctly with admin user 1`] = `
       bear, reviewing content for
        
       <a
+        aria-label="Beat (opens in a new tab)"
         class="text-link text-link--text-link text-link--no-padding text-link--inline"
         href="https://b-eat.co.uk/"
         rel="noopener noreferrer"
@@ -905,6 +911,7 @@ exports[`<Home /> should render correctly with no user 1`] = `
       I'm an open-source software engineer at
        
       <a
+        aria-label="Skyscanner (opens in a new tab)"
         class="text-link text-link--text-link text-link--no-padding text-link--inline"
         href="https://www.skyscanner.net/"
         rel="noopener noreferrer"
@@ -956,6 +963,7 @@ exports[`<Home /> should render correctly with no user 1`] = `
        in May 2018. I also try to squeeze in as much volunteering as I can, so you may find me dressed as a
        
       <a
+        aria-label="Help for Heroes (opens in a new tab)"
         class="text-link text-link--text-link text-link--no-padding text-link--inline"
         href="https://helpforheroes.org.uk/"
         rel="noopener noreferrer"
@@ -982,6 +990,7 @@ exports[`<Home /> should render correctly with no user 1`] = `
       bear, reviewing content for
        
       <a
+        aria-label="Beat (opens in a new tab)"
         class="text-link text-link--text-link text-link--no-padding text-link--inline"
         href="https://b-eat.co.uk/"
         rel="noopener noreferrer"
@@ -1345,6 +1354,7 @@ exports[`<Home /> should render correctly with user 1`] = `
       I'm an open-source software engineer at
        
       <a
+        aria-label="Skyscanner (opens in a new tab)"
         class="text-link text-link--text-link text-link--no-padding text-link--inline"
         href="https://www.skyscanner.net/"
         rel="noopener noreferrer"
@@ -1396,6 +1406,7 @@ exports[`<Home /> should render correctly with user 1`] = `
        in May 2018. I also try to squeeze in as much volunteering as I can, so you may find me dressed as a
        
       <a
+        aria-label="Help for Heroes (opens in a new tab)"
         class="text-link text-link--text-link text-link--no-padding text-link--inline"
         href="https://helpforheroes.org.uk/"
         rel="noopener noreferrer"
@@ -1422,6 +1433,7 @@ exports[`<Home /> should render correctly with user 1`] = `
       bear, reviewing content for
        
       <a
+        aria-label="Beat (opens in a new tab)"
         class="text-link text-link--text-link text-link--no-padding text-link--inline"
         href="https://b-eat.co.uk/"
         rel="noopener noreferrer"
