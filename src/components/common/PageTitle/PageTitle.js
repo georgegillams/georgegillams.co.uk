@@ -28,10 +28,13 @@ const PageTitle = props => {
     );
   }
 
+  const pageTitleFinal = `${pageTitle || name} - ${appConfig.projectTitle}`;
+
   return (
     <>
       <Head>
-        <title>{`${pageTitle || name} - ${appConfig.projectTitle}`}</title>
+        <title>{pageTitleFinal}</title>
+        <meta key="og:title" name="og:title" content={pageTitleFinal} />
       </Head>
       {result}
     </>

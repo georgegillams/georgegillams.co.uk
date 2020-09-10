@@ -17,8 +17,7 @@ const environment = {
 
 const projectName = 'GEORGEGILLAMS';
 const projectTitle = 'George Gillams';
-const projectDescription = 'Open-source Software Engineer';
-const projectDescriptionShort = 'My personal website';
+const projectDescription = 'Personal website of George Gillams - open-source Software Engineer';
 const githubRepo = 'georgegillams/georgegillams.co.uk';
 const githubRepoUrl = `https://github.com/${githubRepo}`;
 const port = PORT || 3000;
@@ -37,7 +36,6 @@ module.exports = {
   projectName,
   projectTitle,
   projectDescription,
-  projectDescriptionShort,
   domain,
   siteUrl,
   apiEndpoint,
@@ -45,14 +43,13 @@ module.exports = {
   githubRepoUrl,
   themeColor,
   app: {
-    title: `${projectTitle} ${projectDescription}`,
+    title: projectTitle,
     head: {
-      titleTemplate: `${projectTitle}: %s`,
       meta: [
         { property: 'theme-color', content: themeColor },
         {
           property: 'description',
-          content: projectDescriptionShort,
+          content: projectDescription,
         },
         { property: 'og:site_name', content: projectTitle },
         {
@@ -74,7 +71,7 @@ module.exports = {
         { property: 'og:locale', content: 'en_GB' },
         {
           property: 'og:title',
-          content: `${projectTitle} ${projectDescriptionShort}`,
+          content: projectTitle,
         },
         {
           property: 'og:description',
