@@ -41,8 +41,9 @@ test('load all emails admin - returns all values', () => {
     .then(() => loadAll(req))
     .then(results => {
       expect(results.emails.length).toBe(2);
-      expect(results.emails[0].from).toBe('from@example.com');
-      expect(results.emails[0].to).toBe('to@example.com');
+      // Remembering that loaded emails are reversed:
+      expect(results.emails[1].from).toBe('from@example.com');
+      expect(results.emails[1].to).toBe('to@example.com');
       return true;
     });
 });

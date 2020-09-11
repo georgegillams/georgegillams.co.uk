@@ -20,6 +20,7 @@ import AdminUsersAPIEntity from './AdminUsersAPIEntity';
 
 import { cssModules } from 'gg-components/helpers/cssModules';
 import STYLES from './admin-users.scss';
+import useTabMadeVisible from 'utils/common/useTabMadeVisible';
 
 const getClassName = cssModules(STYLES);
 
@@ -46,6 +47,8 @@ const AdminUsers = props => {
 
   const { loadError, users, removing, requesting } = adminUsersState;
   const { user } = authenticatorState;
+
+  useTabMadeVisible(load);
 
   useEffect(() => {
     load();
