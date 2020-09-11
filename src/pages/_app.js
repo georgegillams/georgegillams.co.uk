@@ -6,6 +6,7 @@ import App from 'next/app';
 import Consent from 'containers/common/Consent';
 import Analytics from 'containers/common/Analytics';
 import Authenticator from 'containers/common/Authenticator';
+import Konami from 'containers/common/Konami';
 
 import withReduxStore from 'utils/common/redux/with-redux-store';
 import appConfig from 'helpers/appConfig';
@@ -33,6 +34,7 @@ class Srr extends App {
         <Provider store={reduxStore}>
           <AppWrapper>
             <Navigation />
+            <Konami />
             <Consent />
             <Analytics />
             <Authenticator />
