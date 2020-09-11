@@ -12,12 +12,40 @@ Object.keys(apiStructure).forEach(k => {
   }
 });
 
+const applyProductionSecurity = appConfig.isProduction && !appConfig.projectUnderTest;
+
 const applySecurityPractises = server => {
+  const cspDirectives = {
+    defaultSrc: ["'self'"],
+    baseUri: ["'self'"],
+    fontSrc: ["'self'", 'https:', 'data:'],
+    frameAncestors: ["'self'"],
+    imgSrc: ["'self'", 'https:', 'data:'],
+    objectSrc: ["'none'"],
+    scriptSrc: ["'self'"],
+    scriptSrcAttributes: ["'none'"],
+    styleSrc: ["'self'", 'https:', "'unsafe-inline'"],
+  };
+
+  if (applyProductionSecurity) {
+    cspDirectives.blockAllMixedContent = [];
+    cspDirectives.upgradeInsecureRequests = [];
+  } else {
+    cspDirectives.scriptSrc.push("'unsafe-inline'");
+    cspDirectives.scriptSrc.push("'unsafe-eval'");
+  }
+
   // Helmet
-  server.use(helmet());
+  server.use(
+    helmet({
+      contentSecurityPolicy: {
+        directives: cspDirectives,
+      },
+    })
+  );
 
   // Cors
-  if (appConfig.isProduction && !appConfig.projectUnderTest) {
+  if (applyProductionSecurity) {
     server.use(
       cors({
         origin: appConfig.siteUrl,
