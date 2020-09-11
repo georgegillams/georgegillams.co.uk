@@ -15,6 +15,7 @@ import { enableES5 } from 'immer';
 
 import 'global-styles.scss';
 
+// Ensures that `immer` will work inside Internet Explorer
 enableES5();
 
 class Srr extends App {
