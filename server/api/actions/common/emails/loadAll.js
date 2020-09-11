@@ -13,5 +13,5 @@ export default function loadAll(req) {
       }
       throw UNAUTHORISED_READ;
     })
-    .then(result => ({ emails: result }));
+    .then(result => ({ emails: result.reverse() }));
 }

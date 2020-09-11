@@ -16,6 +16,7 @@ import AdminEmailAPIEntity from './AdminEmailAPIEntity';
 
 import { cssModules } from 'gg-components/helpers/cssModules';
 import STYLES from './admin-emails.scss';
+import useTabMadeVisible from 'utils/common/useTabMadeVisible';
 
 const getClassName = cssModules(STYLES);
 
@@ -36,6 +37,8 @@ const AdminEmails = props => {
 
   const { loadError, emails } = adminEmailsState;
   const { user } = authenticatorState;
+
+  useTabMadeVisible(load);
 
   useEffect(() => {
     load();
