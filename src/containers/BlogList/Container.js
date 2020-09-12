@@ -17,6 +17,7 @@ const getClassName = cssModules(STYLES);
 
 const BlogList = props => {
   const {
+    ssrBlogs,
     loadBlogs,
     deleteBlog,
     filter,
@@ -31,7 +32,7 @@ const BlogList = props => {
     loadBlogs();
   }, []);
 
-  let filteredBlogs = blogListState.blogs;
+  let filteredBlogs = blogListState.blogs || ssrBlogs;
   if (filter && filteredBlogs && filteredBlogs.filter) {
     filteredBlogs = filteredBlogs.filter(filter);
   }
@@ -62,10 +63,7 @@ const BlogList = props => {
         <title>{`${selectedNav} - ${appConfig.projectTitle}`}</title>
       </Head>
       <BlogsNav className={getClassName('blogs-page__navigation')} selected={selectedNav} />
-      <LoadingCover
-        loadingSkeleton={BlogListSkeleton}
-        loading={!blogListState.blogs}
-        error={!!blogListState.blogsLoadError}>
+      <LoadingCover loadingSkeleton={BlogListSkeleton} loading={!filteredBlogs} error={!!blogListState.blogsLoadError}>
         <>
           {filteredBlogs && (
             <BlogsList
@@ -85,6 +83,7 @@ const BlogList = props => {
 BlogList.propTypes = {
   blogsLoadError: PropTypes.oneOfType([PropTypes.object, PropTypes.bool]),
   // eslint-disable-next-line react/forbid-prop-types
+  ssrBlogs: PropTypes.arrayOf(PropTypes.object),
   blogListState: PropTypes.shape({
     blogs: PropTypes.arrayOf(PropTypes.object),
     blogsLoadError: PropTypes.object,
@@ -102,7 +101,7 @@ BlogList.propTypes = {
 
 BlogList.defaultProps = {
   blogsLoadError: false,
-  blogs: null,
+  ssrBlogs: null,
   filter: null,
   linkPrefix: null,
   className: null,

@@ -2,6 +2,7 @@ import React from 'react';
 
 import BlogRenderer from 'containers/BlogRenderer';
 import CommonLayout, { LAYOUT_STYLES } from 'components/common/CommonLayout';
+import apiStructure from 'helpers/common/apiStructure';
 
 const Page = props => {
   return (
@@ -22,11 +23,10 @@ Page.getInitialProps = async context => {
     return { blogId };
   }
 
-  // TODO Load blog from API and pass to props.
-  // TODO There is no need to worry about authentication, as any robots
-  // that see the initial page will be unauthenticated
-  console.log(`blogId`, blogId);
-  return { blogId }; // will be passed to the page component as props
+  // Load blog from API and pass to props.
+  const requestUrl = apiStructure.loadBlog.fullPath.split(':id').join(blogId);
+  const ssrBlog = await fetch(requestUrl).then(data => data.json());
+  return { ssrBlog, blogId }; // will be passed to the page component as props
 };
 
 Page.propTypes = {};
