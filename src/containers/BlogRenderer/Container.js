@@ -15,6 +15,7 @@ import Tag from 'gg-components/Tag/Tag';
 import Paragraph from 'gg-components/Paragraph/Paragraph';
 import LoadableBlogForm from './LoadableBlogForm';
 import Section from 'gg-components/Section/Section';
+import Head from 'next/head';
 
 const getClassName = cssModules(STYLES);
 
@@ -68,6 +69,16 @@ const BlogRenderer = props => {
 
   return (
     <>
+      {blog && (
+        <Head>
+          {blog.blogImage && (
+            <>
+              <meta key="og:image" name="og:image" content={blog.blogImage} />
+              <meta key="twitter:image" name="twitter:image" content={blog.blogImage} />
+            </>
+          )}
+        </Head>
+      )}
       <DebugObject
         debugTitle="Blog"
         debugObject={{
@@ -134,6 +145,7 @@ const BlogRenderer = props => {
 };
 
 BlogRenderer.propTypes = {
+  ssrBlog: PropTypes.object,
   blogRenderState: PropTypes.shape({
     blogs: PropTypes.object,
     blogLoadError: PropTypes.object,
@@ -149,7 +161,6 @@ BlogRenderer.propTypes = {
   blogSubcategory: PropTypes.string.isRequired,
   blogId: PropTypes.string.isRequired,
   // eslint-disable-next-line react/forbid-prop-types
-  ssrBlog: PropTypes.object,
   className: PropTypes.string,
 };
 
