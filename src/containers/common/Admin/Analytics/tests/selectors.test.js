@@ -11,11 +11,11 @@ describe('selectAdminEmails', () => {
   it('should select the admin-emails state', () => {
     const state = {
       ...initialState,
-      emails: ['email1', 'email2'],
+      analytics: ['email1', 'email2'],
     };
 
     const mockedState = {
-      ['admin-emails']: state,
+      ['admin-analytics']: state,
     };
 
     const selectStateMock = selectState();

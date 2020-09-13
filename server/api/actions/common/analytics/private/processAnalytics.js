@@ -1,4 +1,4 @@
-const groupingProperties = ['browser', 'os', 'url', 'utm_source', 'utm_medium'];
+const groupingProperties = ['browser', 'os', 'url', 'utm_source', 'utm_medium', 'ipAddressPrefix', 'browserVersion'];
 
 /**
  * Creates a key for a data point

@@ -1,6 +1,5 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { withRouter } from 'next/router';
 import { Input } from 'gg-components/Input';
 import { Select } from 'gg-components/Select';
 import { Checkbox } from 'gg-components/Checkbox';
@@ -106,5 +105,5 @@ UserFilter.propTypes = {
   onFiltersChanged: PropTypes.func.isRequired,
 };
 
-export default withRouter(UserFilter);
+export default UserFilter;
 export { defaultFilters, filterUsers };
