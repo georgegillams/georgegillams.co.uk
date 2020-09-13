@@ -22,6 +22,7 @@ const githubRepo = 'georgegillams/georgegillams.co.uk';
 const githubRepoUrl = `https://github.com/${githubRepo}`;
 const port = PORT || 3000;
 const useLocalhost = NODE_ENV === 'development' || PROJECT_UNDER_TEST;
+const emailDomain = 'georgegillams.co.uk';
 const domain = useLocalhost ? `localhost:${port}` : 'www.georgegillams.co.uk';
 const siteUrl = useLocalhost ? `http://${domain}` : `https://${domain}`;
 const apiEndpoint = `${siteUrl}/api`;
@@ -37,6 +38,7 @@ module.exports = {
   projectTitle,
   projectDescription,
   domain,
+  emailDomain,
   siteUrl,
   apiEndpoint,
   githubRepo,

@@ -6,7 +6,6 @@ import {
   EMAIL_LOGO_HEADER,
   EMAIL_HTML_BUTTON_STYLE,
   sendEmail,
-  EMAIL_SENDER_ADDRESS,
   EMAIL_OUTER_END,
   FONT_SIZE_SM,
 } from 'utils/emails';
@@ -24,7 +23,7 @@ export default function sendEmailVerificationEmail(user) {
   const emailVerificationLink = `${appConfig.siteUrl}/email-verification?token=${verificationLink.key}`;
   // Send the magic link URL to the email address of the user
   const email = {
-    from: EMAIL_SENDER_ADDRESS,
+    from: `auth@${appConfig.emailDomain}`,
     to: user.email,
     subject: 'Verify your email address',
     text: `Your email verification link is: 

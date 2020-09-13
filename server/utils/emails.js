@@ -17,7 +17,6 @@ if (appConfig.projectName === 'CGWEDDING') {
   buttonColor = '#025ca2';
 }
 
-const EMAIL_SENDER_ADDRESS = 'g@georgegillams.co.uk';
 const EMAIL_HTML_BUTTON_STYLE = `background-color: ${buttonColor};padding: 0.6rem 1.2rem;color: white;border-radius: 0.25rem;text-decoration: none;`;
 
 const EMAIL_WIDTH = '600px';
@@ -61,7 +60,6 @@ export {
   EMAIL_HTML_BUTTON_STYLE,
   FONT_SIZE_SM,
   FONT_SIZE_BASE,
-  EMAIL_SENDER_ADDRESS,
   EMAIL_WIDTH,
   primaryColor as PRIMARY_COLOR,
 };
