@@ -19,5 +19,9 @@ export default function loadSummary(req) {
       }
       throw UNAUTHORISED_READ;
     })
-    .then(result => ({ analytics: processAnalytics(result) }));
+    .then(result => {
+      const bags = processAnalytics(result);
+      const sortedBags = bags.sort((a, b) => b.count - a.count);
+      return { analytics: sortedBags };
+    });
 }
