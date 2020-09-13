@@ -1,15 +1,9 @@
-import {
-  EMAIL_OUTER,
-  EMAIL_LOGO_HEADER,
-  sendEmail,
-  EMAIL_SENDER_ADDRESS,
-  EMAIL_OUTER_END,
-  FONT_SIZE_SM,
-} from 'utils/emails';
+import { EMAIL_OUTER, EMAIL_LOGO_HEADER, sendEmail, EMAIL_OUTER_END, FONT_SIZE_SM } from 'utils/emails';
+import appConfig from 'helpers/appConfig';
 
 export default function sendPaymentReceiptEmail(payment, charge) {
   const email = {
-    from: EMAIL_SENDER_ADDRESS,
+    from: `payments@${appConfig.emailDomain}`,
     to: payment.email,
     subject: 'Payment received',
     text: `Thank you for your recent payment of £${charge.amount / 100}.`,

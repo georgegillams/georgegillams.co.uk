@@ -6,7 +6,6 @@ import {
   EMAIL_LOGO_HEADER,
   EMAIL_HTML_BUTTON_STYLE,
   sendEmail,
-  EMAIL_SENDER_ADDRESS,
   EMAIL_OUTER_END,
   FONT_SIZE_SM,
 } from 'utils/emails';
@@ -27,8 +26,8 @@ export default function sendMagicLinkEmail(userProfile, divertToAdmin, loginRedi
   }
   // Send the magic link URL to the email address of the user
   const email = {
-    from: EMAIL_SENDER_ADDRESS,
-    to: divertToAdmin ? 'g+diverted-to-admin@georgegillams.co.uk' : userProfile.email,
+    from: `auth@${appConfig.emailDomain}`,
+    to: divertToAdmin ? `auth+diverted-to-admin@${appConfig.emailDomain}` : userProfile.email,
     subject: 'Your magic login link',
     text: `Your magic link is: 
 ${magicLinkUrl}\n\nIt will expire ${oneHoursTime.toString()}`,
