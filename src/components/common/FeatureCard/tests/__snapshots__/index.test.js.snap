@@ -13,7 +13,6 @@ exports[`<NavigationItem /> Should render correctly 1`] = `
     >
       <div
         class="card__background"
-        style="background-image: url(null);"
       />
       <div
         class="card__outer-container card__outer-container--padded"
@@ -54,7 +53,6 @@ exports[`<NavigationItem /> Should render correctly hrefExternal 1`] = `
     >
       <div
         class="card__background"
-        style="background-image: url(null);"
       />
       <div
         class="card__outer-container card__outer-container--padded"
@@ -95,7 +93,6 @@ exports[`<NavigationItem /> Should render correctly with custom className 1`] = 
     >
       <div
         class="card__background"
-        style="background-image: url(null);"
       />
       <div
         class="card__outer-container card__outer-container--padded"
@@ -136,7 +133,6 @@ exports[`<NavigationItem /> Should render with nextified href 1`] = `
     >
       <div
         class="card__background"
-        style="background-image: url(null);"
       />
       <div
         class="card__outer-container card__outer-container--padded"

@@ -13,7 +13,6 @@ exports[`<BlogCard /> Should render correctly 1`] = `
     >
       <div
         class="card__background"
-        style="background-image: url(null);"
       />
       <div
         class="card__outer-container card__outer-container--padded"
@@ -104,7 +103,6 @@ exports[`<BlogCard /> Should render correctly when deleted 1`] = `
     >
       <div
         class="card__background"
-        style="background-image: url(null);"
       />
       <div
         class="card__outer-container card__outer-container--padded"
@@ -244,7 +242,6 @@ exports[`<BlogCard /> Should render correctly with all parameters supplied 1`] =
     >
       <div
         class="card__background"
-        style="background-image: url(null);"
       />
       <div
         class="card__outer-container card__outer-container--padded"
@@ -384,7 +381,6 @@ exports[`<BlogCard /> Should render correctly with custom className 1`] = `
     >
       <div
         class="card__background"
-        style="background-image: url(null);"
       />
       <div
         class="card__outer-container card__outer-container--padded"
@@ -476,7 +472,6 @@ exports[`<BlogsList /> Should render correctly 1`] = `
       >
         <div
           class="card__background"
-          style="background-image: url(null);"
         />
         <div
           class="card__outer-container card__outer-container--padded"
@@ -562,7 +557,6 @@ exports[`<BlogsList /> Should render correctly 1`] = `
       >
         <div
           class="card__background"
-          style="background-image: url(null);"
         />
         <div
           class="card__outer-container card__outer-container--padded"
@@ -697,7 +691,6 @@ exports[`<BlogsList /> Should render correctly 1`] = `
       >
         <div
           class="card__background"
-          style="background-image: url(null);"
         />
         <div
           class="card__outer-container card__outer-container--padded"
@@ -841,7 +834,6 @@ exports[`<BlogsList /> Should render correctly with custom className 1`] = `
       >
         <div
           class="card__background"
-          style="background-image: url(null);"
         />
         <div
           class="card__outer-container card__outer-container--padded"
@@ -927,7 +919,6 @@ exports[`<BlogsList /> Should render correctly with custom className 1`] = `
       >
         <div
           class="card__background"
-          style="background-image: url(null);"
         />
         <div
           class="card__outer-container card__outer-container--padded"
@@ -1062,7 +1053,6 @@ exports[`<BlogsList /> Should render correctly with custom className 1`] = `
       >
         <div
           class="card__background"
-          style="background-image: url(null);"
         />
         <div
           class="card__outer-container card__outer-container--padded"
@@ -1204,7 +1194,6 @@ exports[`<BlogsList /> Should render correctly with deleteBlog function 1`] = `
       >
         <div
           class="card__background"
-          style="background-image: url(null);"
         />
         <div
           class="card__outer-container card__outer-container--padded"
@@ -1296,7 +1285,6 @@ exports[`<BlogsList /> Should render correctly with deleteBlog function 1`] = `
       >
         <div
           class="card__background"
-          style="background-image: url(null);"
         />
         <div
           class="card__outer-container card__outer-container--padded"
@@ -1437,7 +1425,6 @@ exports[`<BlogsList /> Should render correctly with deleteBlog function 1`] = `
       >
         <div
           class="card__background"
-          style="background-image: url(null);"
         />
         <div
           class="card__outer-container card__outer-container--padded"

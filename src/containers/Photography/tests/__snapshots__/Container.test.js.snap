@@ -26,7 +26,6 @@ exports[`<Photography /> should render correctly 1`] = `
       >
         <div
           class="card__background"
-          style="background-image: url(null);"
         />
         <div
           class="card__outer-container card__outer-container--padded"
@@ -104,7 +103,6 @@ exports[`<Photography /> should render correctly 1`] = `
       >
         <div
           class="card__background"
-          style="background-image: url(null);"
         />
         <div
           class="card__outer-container card__outer-container--padded"
@@ -182,7 +180,6 @@ exports[`<Photography /> should render correctly 1`] = `
       >
         <div
           class="card__background"
-          style="background-image: url(null);"
         />
         <div
           class="card__outer-container card__outer-container--padded"
