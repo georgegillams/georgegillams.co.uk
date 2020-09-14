@@ -7,7 +7,7 @@ import { cssModules } from 'gg-components/helpers/cssModules';
 
 const getClassName = cssModules(FORM_BUILDER_STYLES);
 
-const defaultFilters = { deleted: true };
+const defaultFilters = {};
 
 const filterAnalytics = (analytics, filters) => {
   let filteredAnalytics = analytics;

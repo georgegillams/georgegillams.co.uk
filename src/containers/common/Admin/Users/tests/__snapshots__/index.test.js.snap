@@ -55,7 +55,7 @@ exports[`<AdminUsers /> should render correctly with admin user 1`] = `
     </button>
     <button
       class="button__outer button__outer--regular button__outer--no-bouncy button__outer--large"
-      style="margin-bottom: 1rem;"
+      style="margin-right: 1rem; margin-bottom: 1rem;"
       type="button"
     >
       Show filters
@@ -141,7 +141,7 @@ exports[`<AdminUsers /> should render correctly with createError 1`] = `
     </button>
     <button
       class="button__outer button__outer--regular button__outer--no-bouncy button__outer--large"
-      style="margin-bottom: 1rem;"
+      style="margin-right: 1rem; margin-bottom: 1rem;"
       type="button"
     >
       Show filters
@@ -227,7 +227,7 @@ exports[`<AdminUsers /> should render correctly with creating=true 1`] = `
     </button>
     <button
       class="button__outer button__outer--regular button__outer--no-bouncy button__outer--large"
-      style="margin-bottom: 1rem;"
+      style="margin-right: 1rem; margin-bottom: 1rem;"
       type="button"
     >
       Show filters
@@ -338,7 +338,7 @@ exports[`<AdminUsers /> should render correctly with loadError 1`] = `
     </button>
     <button
       class="button__outer button__outer--regular button__outer--no-bouncy button__outer--large"
-      style="margin-bottom: 1rem;"
+      style="margin-right: 1rem; margin-bottom: 1rem;"
       type="button"
     >
       Show filters
@@ -440,7 +440,7 @@ exports[`<AdminUsers /> should render correctly with loading=true 1`] = `
     </button>
     <button
       class="button__outer button__outer--regular button__outer--no-bouncy button__outer--large"
-      style="margin-bottom: 1rem;"
+      style="margin-right: 1rem; margin-bottom: 1rem;"
       type="button"
     >
       Show filters
@@ -526,7 +526,7 @@ exports[`<AdminUsers /> should render correctly with removeError 1`] = `
     </button>
     <button
       class="button__outer button__outer--regular button__outer--no-bouncy button__outer--large"
-      style="margin-bottom: 1rem;"
+      style="margin-right: 1rem; margin-bottom: 1rem;"
       type="button"
     >
       Show filters
@@ -612,7 +612,7 @@ exports[`<AdminUsers /> should render correctly with removing=true 1`] = `
     </button>
     <button
       class="button__outer button__outer--regular button__outer--no-bouncy button__outer--large"
-      style="margin-bottom: 1rem;"
+      style="margin-right: 1rem; margin-bottom: 1rem;"
       type="button"
     >
       Show filters
@@ -698,7 +698,7 @@ exports[`<AdminUsers /> should render correctly with requestError 1`] = `
     </button>
     <button
       class="button__outer button__outer--regular button__outer--no-bouncy button__outer--large"
-      style="margin-bottom: 1rem;"
+      style="margin-right: 1rem; margin-bottom: 1rem;"
       type="button"
     >
       Show filters
@@ -784,7 +784,7 @@ exports[`<AdminUsers /> should render correctly with requesting=true 1`] = `
     </button>
     <button
       class="button__outer button__outer--regular button__outer--no-bouncy button__outer--large"
-      style="margin-bottom: 1rem;"
+      style="margin-right: 1rem; margin-bottom: 1rem;"
       type="button"
     >
       Show filters
@@ -870,7 +870,7 @@ exports[`<AdminUsers /> should render correctly with updateError 1`] = `
     </button>
     <button
       class="button__outer button__outer--regular button__outer--no-bouncy button__outer--large"
-      style="margin-bottom: 1rem;"
+      style="margin-right: 1rem; margin-bottom: 1rem;"
       type="button"
     >
       Show filters
@@ -956,7 +956,7 @@ exports[`<AdminUsers /> should render correctly with updating=true 1`] = `
     </button>
     <button
       class="button__outer button__outer--regular button__outer--no-bouncy button__outer--large"
-      style="margin-bottom: 1rem;"
+      style="margin-right: 1rem; margin-bottom: 1rem;"
       type="button"
     >
       Show filters
@@ -1069,7 +1069,7 @@ exports[`<AdminUsers /> should render correctly with users 1`] = `
     </button>
     <button
       class="button__outer button__outer--regular button__outer--no-bouncy button__outer--large"
-      style="margin-bottom: 1rem;"
+      style="margin-right: 1rem; margin-bottom: 1rem;"
       type="button"
     >
       Show filters

@@ -64,6 +64,7 @@ const AdminAnalytics = props => {
     </div>
   );
 
+  const filtersApplied = filters !== defaultFilters;
   const mainControls = (
     <div>
       <Button
@@ -76,6 +77,11 @@ const AdminAnalytics = props => {
       <Button className={getClassName('admin-analytics__control')} onClick={() => setShowFilters(!showFilters)} large>
         {showFilters ? 'Hide filters' : 'Show filters'}
       </Button>
+      {filtersApplied && (
+        <Button className={getClassName('admin-analytics__control')} onClick={() => setFilters(defaultFilters)} large>
+          Clear filters
+        </Button>
+      )}
     </div>
   );
 
