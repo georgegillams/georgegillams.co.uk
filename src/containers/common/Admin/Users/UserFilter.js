@@ -4,7 +4,7 @@ import { Input } from 'gg-components/Input';
 import { Select } from 'gg-components/Select';
 import { Checkbox } from 'gg-components/Checkbox';
 
-const defaultFilters = { deleted: true };
+const defaultFilters = { deleted: true, adminStatus: 'all', emailVerified: 'all' };
 
 const filterUsers = (users, filters) => {
   let filteredUsers = users;

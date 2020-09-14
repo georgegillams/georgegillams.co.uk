@@ -172,6 +172,7 @@ const AdminUsers = props => {
     );
   }
 
+  const filtersApplied = filters !== defaultFilters;
   const mainControls = (
     <div>
       <Button
@@ -181,9 +182,14 @@ const AdminUsers = props => {
         large>
         Reload users
       </Button>
-      <Button style={{ marginBottom: '1rem' }} onClick={() => setShowFilters(!showFilters)} large>
+      <Button style={{ marginRight: '1rem', marginBottom: '1rem' }} onClick={() => setShowFilters(!showFilters)} large>
         {showFilters ? 'Hide filters' : 'Show filters'}
       </Button>
+      {filtersApplied && (
+        <Button style={{ marginBottom: '1rem' }} onClick={() => setFilters(defaultFilters)} large>
+          Clear filters
+        </Button>
+      )}
       <br />
       <br />
     </div>
