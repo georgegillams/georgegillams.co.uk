@@ -109,6 +109,27 @@ describe('<BlogList />', () => {
     expect(container).toMatchSnapshot();
   });
 
+  it('should render correctly with ssrBlogs', () => {
+    const { container } = render(
+      <Provider store={store}>
+        <BlogList
+          logout={spy}
+          loadBlogs={spy}
+          deleteBlog={spy}
+          linkPrefix="/blog"
+          ssrBlogs={testBlogs}
+          blogListState={{
+            ...initialState,
+          }}
+          authenticatorState={{
+            ...initialAuthenticatorState,
+          }}
+        />
+      </Provider>
+    );
+
+    expect(container).toMatchSnapshot();
+  });
   it('should render correctly with blogs', () => {
     const { container } = render(
       <Provider store={store}>

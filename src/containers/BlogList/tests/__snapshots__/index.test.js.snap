@@ -1370,3 +1370,452 @@ exports[`<BlogList /> should render correctly with initial state 1`] = `
   </div>
 </div>
 `;
+
+exports[`<BlogList /> should render correctly with ssrBlogs 1`] = `
+<div>
+  <div
+    class="blogs-page__navigation"
+  >
+    <a
+      aria-label="Writing"
+      class="button__a blogs-nav__writing"
+      href="/blog"
+      role="tab"
+    >
+      <button
+        aria-hidden="true"
+        class="button__outer button__outer--regular button__outer--no-bouncy button__outer--white button__outer--link"
+        type="button"
+      >
+        Writing
+      </button>
+    </a>
+    <a
+      aria-label="Travel"
+      class="button__a"
+      href="/travel"
+      role="tab"
+    >
+      <button
+        aria-hidden="true"
+        class="button__outer button__outer--regular button__outer--no-bouncy button__outer--white button__outer--link"
+        type="button"
+      >
+        Travel
+      </button>
+    </a>
+  </div>
+  <div>
+    <div
+      class="feature-card blogs-list__card"
+      role="button"
+      style="cursor: pointer;"
+      tabindex="0"
+    >
+      <div
+        class="card"
+      >
+        <div
+          class="card__background"
+        />
+        <div
+          class="card__outer-container card__outer-container--padded"
+        >
+          <div
+            class="feature-card__outer-container feature-card__outer-container--auto"
+          >
+            <div
+              class="feature-card__date"
+            >
+              <div
+                class="feature-card__annotation feature-card__annotation--mobile"
+              >
+                <div
+                  class="typography__main typography__link typography--no-padding"
+                >
+                  <h2
+                    class="typography__text typography__text--subsection typography__link typography--no-padding"
+                    id="nan-invalid-date"
+                  >
+                    NaN Invalid Date
+                  </h2>
+                </div>
+              </div>
+              <div
+                class="feature-card__annotation feature-card__annotation--tablet"
+              >
+                <div
+                  class="typography__main typography__link typography--no-padding"
+                >
+                  <h2
+                    class="typography__text typography__text--subsection typography__link typography--no-padding"
+                    id="nan"
+                  >
+                    NaN
+                  </h2>
+                </div>
+              </div>
+              <div
+                class="feature-card__annotation feature-card__annotation--tablet"
+              >
+                <div
+                  class="typography__main typography__link typography--no-padding"
+                >
+                  <h2
+                    class="typography__text typography__text--subsection typography__link typography--no-padding"
+                    id="invalid-date"
+                  >
+                    Invalid Date
+                  </h2>
+                </div>
+              </div>
+            </div>
+            <div
+              class="feature-card__center-container"
+            >
+              <div
+                class="typography__main typography--no-padding feature-card__title"
+              >
+                <h1
+                  class="typography__text typography__text--section typography__link typography--no-padding"
+                  id="blog-1-"
+                >
+                  Blog 1 
+                </h1>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="card__banner"
+        />
+      </div>
+    </div>
+    <div
+      class="feature-card blogs-list__card"
+      role="button"
+      style="cursor: pointer;"
+      tabindex="0"
+    >
+      <div
+        class="card"
+      >
+        <div
+          class="card__background"
+        />
+        <div
+          class="card__outer-container card__outer-container--padded"
+        >
+          <div
+            class="feature-card__outer-container feature-card__outer-container--auto"
+          >
+            <div
+              class="feature-card__date"
+            >
+              <div
+                class="feature-card__annotation feature-card__annotation--mobile"
+              >
+                <div
+                  class="typography__main typography__link typography--no-padding"
+                >
+                  <h2
+                    class="typography__text typography__text--subsection typography__link typography--no-padding"
+                    id="23-30-dec"
+                  >
+                    23-30 Dec
+                  </h2>
+                </div>
+              </div>
+              <div
+                class="feature-card__annotation feature-card__annotation--tablet"
+              >
+                <div
+                  class="typography__main typography__link typography--no-padding"
+                >
+                  <h2
+                    class="typography__text typography__text--subsection typography__link typography--no-padding"
+                    id="23-30"
+                  >
+                    23-30
+                  </h2>
+                </div>
+              </div>
+              <div
+                class="feature-card__annotation feature-card__annotation--tablet"
+              >
+                <div
+                  class="typography__main typography__link typography--no-padding"
+                >
+                  <h2
+                    class="typography__text typography__text--subsection typography__link typography--no-padding"
+                    id="dec"
+                  >
+                    Dec
+                  </h2>
+                </div>
+              </div>
+            </div>
+            <div
+              class="feature-card__center-container"
+            >
+              <div
+                class="typography__main typography--no-padding feature-card__title"
+              >
+                <h1
+                  class="typography__text typography__text--section typography__link typography--no-padding"
+                  id="st-ives--2018"
+                >
+                  St Ives  2018
+                </h1>
+              </div>
+              <div
+                class="feature-card__children"
+              >
+                <div
+                  class="tag__outer"
+                >
+                  <span
+                    class="tag tag--travel"
+                  >
+                    Travel
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div
+              class="feature-card__image-container"
+            >
+              <div
+                class="image__outer feature-card__image"
+              >
+                <div
+                  class="image__placeholder"
+                  style="padding-bottom: 100%;"
+                >
+                  <div
+                    class="image__spinner-container"
+                  >
+                    <div
+                      class="skeleton__outer image__skeleton"
+                    >
+                      <div
+                        class="skeleton__shimmer"
+                        style="margin-left: -0px;"
+                      />
+                    </div>
+                  </div>
+                  <img
+                    alt="card"
+                    class="image__img image__img--hidden image__img--light"
+                    src="https://i.imgur.com/ppPEuDs.jpg"
+                  />
+                  <img
+                    alt="card"
+                    class="image__img image__img--hidden image__img--dark"
+                    src="https://i.imgur.com/ppPEuDs.jpg"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="card__banner"
+          style="background-color: rgb(1, 87, 155);"
+        />
+      </div>
+    </div>
+    <div
+      class="feature-card blogs-list__card"
+      role="button"
+      style="cursor: pointer;"
+      tabindex="0"
+    >
+      <div
+        class="card"
+      >
+        <div
+          class="card__background"
+        />
+        <div
+          class="card__outer-container card__outer-container--padded"
+        >
+          <div
+            class="feature-card__outer-container feature-card__outer-container--auto"
+          >
+            <div
+              class="feature-card__date"
+            >
+              <div
+                class="feature-card__annotation feature-card__annotation--mobile"
+              >
+                <div
+                  class="typography__main typography__link typography--no-padding"
+                >
+                  <h2
+                    class="typography__text typography__text--subsection typography__link typography--no-padding"
+                    id="23-30-dec"
+                  >
+                    23-30 Dec
+                  </h2>
+                </div>
+              </div>
+              <div
+                class="feature-card__annotation feature-card__annotation--tablet"
+              >
+                <div
+                  class="typography__main typography__link typography--no-padding"
+                >
+                  <h2
+                    class="typography__text typography__text--subsection typography__link typography--no-padding"
+                    id="23-30"
+                  >
+                    23-30
+                  </h2>
+                </div>
+              </div>
+              <div
+                class="feature-card__annotation feature-card__annotation--tablet"
+              >
+                <div
+                  class="typography__main typography__link typography--no-padding"
+                >
+                  <h2
+                    class="typography__text typography__text--subsection typography__link typography--no-padding"
+                    id="dec"
+                  >
+                    Dec
+                  </h2>
+                </div>
+              </div>
+            </div>
+            <div
+              class="feature-card__center-container"
+            >
+              <div
+                class="typography__main typography--no-padding feature-card__title"
+              >
+                <h1
+                  class="typography__text typography__text--section typography__link typography--no-padding"
+                  id="untitled-blog-(deleted)"
+                >
+                  Untitled blog (DELETED)
+                </h1>
+              </div>
+              <div
+                class="feature-card__children"
+              >
+                <div
+                  class="tag__outer"
+                >
+                  <span
+                    class="tag tag--travel"
+                  >
+                    Travel
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div
+              class="feature-card__image-container"
+            >
+              <div
+                class="image__outer feature-card__image"
+              >
+                <div
+                  class="image__placeholder"
+                  style="padding-bottom: 100%;"
+                >
+                  <div
+                    class="image__spinner-container"
+                  >
+                    <div
+                      class="skeleton__outer image__skeleton"
+                    >
+                      <div
+                        class="skeleton__shimmer"
+                        style="margin-left: -0px;"
+                      />
+                    </div>
+                  </div>
+                  <img
+                    alt="card"
+                    class="image__img image__img--hidden image__img--light"
+                    src="https://i.imgur.com/ppPEuDs.jpg"
+                  />
+                  <img
+                    alt="card"
+                    class="image__img image__img--hidden image__img--dark"
+                    src="https://i.imgur.com/ppPEuDs.jpg"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="card__banner"
+          style="background-color: rgb(1, 87, 155);"
+        />
+      </div>
+    </div>
+  </div>
+  <div
+    class="creative-commons__wrapper"
+  >
+    <div
+      class="creative-commons__background"
+    />
+    <div
+      class="typography__main creative-commons__inner"
+    >
+      <h2
+        class="typography__text typography__text--subsection"
+        id="copyright"
+      >
+        Copyright
+      </h2>
+      <span
+        class="paragraph"
+      >
+        Most of my photos are licensed under
+         
+        <a
+          aria-label="Creative Commons BY-SA 3.0 (opens in a new tab)"
+          class="text-link text-link--text-link text-link--no-padding text-link--inline"
+          href="https://creativecommons.org/licenses/by-sa/3.0/"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          Creative Commons BY-SA 3.0
+          <div
+            class="text-link__icon-container"
+          >
+            <svg
+              class="icon text-link__icon"
+              height="18"
+              viewBox="0 0 24 24"
+              width="18"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M12.5 11.3c.4.4 1 .4 1.4 0L19 6.2V9c0 .6.4 1 1 1s1-.4 1-1V4c0-.6-.4-1-1-1h-5c-.6 0-1 .4-1 1s.4 1 1 1h2.4l-4.9 4.9c-.4.4-.4 1 0 1.4zM19 19c0 1.1-.9 2-2 2H5c-1.1 0-2-.9-2-2V7c0-1.1.9-2 2-2h7v2H5v12h12v-7h2"
+              />
+            </svg>
+          </div>
+        </a>
+        .
+        <br />
+        If you are unsure about your right to use them please 
+        <a
+          class="text-link text-link--text-link text-link--no-padding text-link--inline"
+          href="/contact"
+        >
+          contact me
+        </a>
+        .
+      </span>
+    </div>
+  </div>
+</div>
+`;

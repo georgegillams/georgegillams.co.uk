@@ -14,7 +14,7 @@ import DebugObject from 'components/common/DebugObject';
 const getClassName = cssModules(STYLES);
 
 const SiteMap = props => {
-  const { loadBlogs, blogListState, authenticatorState } = props;
+  const { ssrBlogs, loadBlogs, blogListState, authenticatorState } = props;
 
   useEffect(() => {
     loadBlogs();
@@ -25,6 +25,11 @@ const SiteMap = props => {
   let travelBlogList = null;
   if (blogListState && blogListState.blogs) {
     blogList = blogListState.blogs;
+  } else if (ssrBlogs) {
+    blogList = ssrBlogs;
+  }
+
+  if (blogList) {
     writingBlogList = blogList.filter(b => !b.deleted && b.title && b.published && b.showInBlogsList);
     travelBlogList = blogList.filter(b => !b.deleted && b.title && b.published && b.showInTravelBlogsList);
   }
@@ -206,6 +211,7 @@ const SiteMap = props => {
 };
 
 SiteMap.propTypes = {
+  ssrBlogs: PropTypes.arrayOf(PropTypes.object),
   loadBlogs: PropTypes.func.isRequired,
   blogListState: PropTypes.shape({
     blogs: PropTypes.arrayOf(PropTypes.object),
@@ -214,6 +220,10 @@ SiteMap.propTypes = {
   authenticatorState: PropTypes.shape({
     user: PropTypes.object,
   }).isRequired,
+};
+
+SiteMap.defaultProps = {
+  ssrBlogs: null,
 };
 
 export default SiteMap;
