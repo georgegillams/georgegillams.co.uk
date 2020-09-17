@@ -78,6 +78,14 @@ describe('<SiteMap />', () => {
     expect(container).toMatchSnapshot();
   });
 
+  it('should render correctly with ssrBlogs', () => {
+    const { container } = render(
+      <SiteMap loadBlogs={spy} ssrBlogs={testBlogs} blogListState={{ ...initialBlogListState }} />
+    );
+
+    expect(container).toMatchSnapshot();
+  });
+
   it('should render correctly with blogs', () => {
     const { container } = render(
       <SiteMap loadBlogs={spy} blogListState={{ ...initialBlogListState, blogs: testBlogs }} />
