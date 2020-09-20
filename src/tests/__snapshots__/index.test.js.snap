@@ -186,7 +186,7 @@ exports[`<HomePage /> should render correctly 1`] = `
     >
       <div
         class="feature-card feature-card--narrow-compact home__card"
-        role="button"
+        role="link"
         style="cursor: pointer;"
         tabindex="0"
       >
@@ -228,7 +228,7 @@ exports[`<HomePage /> should render correctly 1`] = `
       </div>
       <div
         class="feature-card feature-card--narrow-compact home__card"
-        role="button"
+        role="link"
         style="cursor: pointer;"
         tabindex="0"
       >
@@ -270,7 +270,7 @@ exports[`<HomePage /> should render correctly 1`] = `
       </div>
       <div
         class="feature-card feature-card--narrow-compact home__card"
-        role="button"
+        role="link"
         style="cursor: pointer;"
         tabindex="0"
       >
@@ -312,7 +312,7 @@ exports[`<HomePage /> should render correctly 1`] = `
       </div>
       <div
         class="feature-card feature-card--narrow-compact home__card"
-        role="button"
+        role="link"
         style="cursor: pointer;"
         tabindex="0"
       >
@@ -354,7 +354,7 @@ exports[`<HomePage /> should render correctly 1`] = `
       </div>
       <div
         class="feature-card feature-card--narrow-compact home__card"
-        role="button"
+        role="link"
         style="cursor: pointer;"
         tabindex="0"
       >

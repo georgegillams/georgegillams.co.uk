@@ -183,7 +183,7 @@ exports[`<Home /> should render correctly 1`] = `
   >
     <div
       class="feature-card feature-card--narrow-compact home__card"
-      role="button"
+      role="link"
       style="cursor: pointer;"
       tabindex="0"
     >
@@ -225,7 +225,7 @@ exports[`<Home /> should render correctly 1`] = `
     </div>
     <div
       class="feature-card feature-card--narrow-compact home__card"
-      role="button"
+      role="link"
       style="cursor: pointer;"
       tabindex="0"
     >
@@ -267,7 +267,7 @@ exports[`<Home /> should render correctly 1`] = `
     </div>
     <div
       class="feature-card feature-card--narrow-compact home__card"
-      role="button"
+      role="link"
       style="cursor: pointer;"
       tabindex="0"
     >
@@ -309,7 +309,7 @@ exports[`<Home /> should render correctly 1`] = `
     </div>
     <div
       class="feature-card feature-card--narrow-compact home__card"
-      role="button"
+      role="link"
       style="cursor: pointer;"
       tabindex="0"
     >
@@ -351,7 +351,7 @@ exports[`<Home /> should render correctly 1`] = `
     </div>
     <div
       class="feature-card feature-card--narrow-compact home__card"
-      role="button"
+      role="link"
       style="cursor: pointer;"
       tabindex="0"
     >
@@ -586,7 +586,7 @@ exports[`<Home /> should render correctly with admin user 1`] = `
   >
     <div
       class="feature-card feature-card--narrow-compact home__card"
-      role="button"
+      role="link"
       style="cursor: pointer;"
       tabindex="0"
     >
@@ -628,7 +628,7 @@ exports[`<Home /> should render correctly with admin user 1`] = `
     </div>
     <div
       class="feature-card feature-card--narrow-compact home__card"
-      role="button"
+      role="link"
       style="cursor: pointer;"
       tabindex="0"
     >
@@ -670,7 +670,7 @@ exports[`<Home /> should render correctly with admin user 1`] = `
     </div>
     <div
       class="feature-card feature-card--narrow-compact home__card"
-      role="button"
+      role="link"
       style="cursor: pointer;"
       tabindex="0"
     >
@@ -712,7 +712,7 @@ exports[`<Home /> should render correctly with admin user 1`] = `
     </div>
     <div
       class="feature-card feature-card--narrow-compact home__card"
-      role="button"
+      role="link"
       style="cursor: pointer;"
       tabindex="0"
     >
@@ -754,7 +754,7 @@ exports[`<Home /> should render correctly with admin user 1`] = `
     </div>
     <div
       class="feature-card feature-card--narrow-compact home__card"
-      role="button"
+      role="link"
       style="cursor: pointer;"
       tabindex="0"
     >
@@ -796,7 +796,7 @@ exports[`<Home /> should render correctly with admin user 1`] = `
     </div>
     <div
       class="feature-card feature-card--narrow-compact home__card"
-      role="button"
+      role="link"
       style="cursor: pointer;"
       tabindex="0"
     >
@@ -838,7 +838,7 @@ exports[`<Home /> should render correctly with admin user 1`] = `
     </div>
     <div
       class="feature-card feature-card--narrow-compact home__card"
-      role="button"
+      role="link"
       style="cursor: pointer;"
       tabindex="0"
     >
@@ -1065,7 +1065,7 @@ exports[`<Home /> should render correctly with no user 1`] = `
   >
     <div
       class="feature-card feature-card--narrow-compact home__card"
-      role="button"
+      role="link"
       style="cursor: pointer;"
       tabindex="0"
     >
@@ -1107,7 +1107,7 @@ exports[`<Home /> should render correctly with no user 1`] = `
     </div>
     <div
       class="feature-card feature-card--narrow-compact home__card"
-      role="button"
+      role="link"
       style="cursor: pointer;"
       tabindex="0"
     >
@@ -1149,7 +1149,7 @@ exports[`<Home /> should render correctly with no user 1`] = `
     </div>
     <div
       class="feature-card feature-card--narrow-compact home__card"
-      role="button"
+      role="link"
       style="cursor: pointer;"
       tabindex="0"
     >
@@ -1191,7 +1191,7 @@ exports[`<Home /> should render correctly with no user 1`] = `
     </div>
     <div
       class="feature-card feature-card--narrow-compact home__card"
-      role="button"
+      role="link"
       style="cursor: pointer;"
       tabindex="0"
     >
@@ -1233,7 +1233,7 @@ exports[`<Home /> should render correctly with no user 1`] = `
     </div>
     <div
       class="feature-card feature-card--narrow-compact home__card"
-      role="button"
+      role="link"
       style="cursor: pointer;"
       tabindex="0"
     >
@@ -1275,7 +1275,7 @@ exports[`<Home /> should render correctly with no user 1`] = `
     </div>
     <div
       class="feature-card feature-card--narrow-compact home__card"
-      role="button"
+      role="link"
       style="cursor: pointer;"
       tabindex="0"
     >
@@ -1502,7 +1502,7 @@ exports[`<Home /> should render correctly with user 1`] = `
   >
     <div
       class="feature-card feature-card--narrow-compact home__card"
-      role="button"
+      role="link"
       style="cursor: pointer;"
       tabindex="0"
     >
@@ -1544,7 +1544,7 @@ exports[`<Home /> should render correctly with user 1`] = `
     </div>
     <div
       class="feature-card feature-card--narrow-compact home__card"
-      role="button"
+      role="link"
       style="cursor: pointer;"
       tabindex="0"
     >
@@ -1586,7 +1586,7 @@ exports[`<Home /> should render correctly with user 1`] = `
     </div>
     <div
       class="feature-card feature-card--narrow-compact home__card"
-      role="button"
+      role="link"
       style="cursor: pointer;"
       tabindex="0"
     >
@@ -1628,7 +1628,7 @@ exports[`<Home /> should render correctly with user 1`] = `
     </div>
     <div
       class="feature-card feature-card--narrow-compact home__card"
-      role="button"
+      role="link"
       style="cursor: pointer;"
       tabindex="0"
     >
@@ -1670,7 +1670,7 @@ exports[`<Home /> should render correctly with user 1`] = `
     </div>
     <div
       class="feature-card feature-card--narrow-compact home__card"
-      role="button"
+      role="link"
       style="cursor: pointer;"
       tabindex="0"
     >
@@ -1712,7 +1712,7 @@ exports[`<Home /> should render correctly with user 1`] = `
     </div>
     <div
       class="feature-card feature-card--narrow-compact home__card"
-      role="button"
+      role="link"
       style="cursor: pointer;"
       tabindex="0"
     >

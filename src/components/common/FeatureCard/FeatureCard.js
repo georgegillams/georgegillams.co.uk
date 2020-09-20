@@ -12,8 +12,30 @@ const FeatureCard = props => {
   const hrefExternal = href && HelperFunctions.includes(href, 'http');
 
   const [isServer, setIsServer] = useState(typeof window === 'undefined');
+  const [altKeyDown, setAltKeyDown] = useState(false);
 
-  const renderNormalLink = !href || hrefExternal;
+  useEffect(() => {
+    const onKeyDown = e => {
+      if (e.key === 'Meta') {
+        setAltKeyDown(true);
+      }
+    };
+    const onKeyUp = e => {
+      if (e.key === 'Meta') {
+        setAltKeyDown(false);
+      }
+    };
+
+    document.addEventListener('keydown', onKeyDown);
+    document.addEventListener('keyup', onKeyUp);
+
+    return () => {
+      document.removeEventListener('keydown', onKeyDown);
+      document.removeEventListener('keyup', onKeyUp);
+    };
+  }, []);
+
+  const renderNormalLink = !href || hrefExternal || altKeyDown;
 
   const destination = nextifyHref(href);
 
@@ -39,7 +61,7 @@ const FeatureCard = props => {
     return true;
   };
 
-  return <GGFeatureCard style={{ cursor: 'pointer' }} onClick={onClickFinal} {...rest} />;
+  return <GGFeatureCard role="link" style={{ cursor: 'pointer' }} onClick={onClickFinal} {...rest} />;
 };
 
 FeatureCard.propTypes = {
