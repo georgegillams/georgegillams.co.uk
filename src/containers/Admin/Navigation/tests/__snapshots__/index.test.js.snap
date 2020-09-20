@@ -64,7 +64,7 @@ exports[`<AdminNavigation /> should render correctly with admin user 1`] = `
       >
         <div
           class="feature-card feature-card--narrow-compact admin-navigation__card"
-          role="button"
+          role="link"
           style="cursor: pointer;"
           tabindex="0"
         >
@@ -106,7 +106,7 @@ exports[`<AdminNavigation /> should render correctly with admin user 1`] = `
         </div>
         <div
           class="feature-card feature-card--narrow-compact admin-navigation__card"
-          role="button"
+          role="link"
           style="cursor: pointer;"
           tabindex="0"
         >
@@ -148,7 +148,7 @@ exports[`<AdminNavigation /> should render correctly with admin user 1`] = `
         </div>
         <div
           class="feature-card feature-card--narrow-compact admin-navigation__card"
-          role="button"
+          role="link"
           style="cursor: pointer;"
           tabindex="0"
         >
@@ -190,7 +190,7 @@ exports[`<AdminNavigation /> should render correctly with admin user 1`] = `
         </div>
         <div
           class="feature-card feature-card--narrow-compact admin-navigation__card"
-          role="button"
+          role="link"
           style="cursor: pointer;"
           tabindex="0"
         >
@@ -232,7 +232,7 @@ exports[`<AdminNavigation /> should render correctly with admin user 1`] = `
         </div>
         <div
           class="feature-card feature-card--narrow-compact admin-navigation__card"
-          role="button"
+          role="link"
           style="cursor: pointer;"
           tabindex="0"
         >

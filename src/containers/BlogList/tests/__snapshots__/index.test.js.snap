@@ -171,7 +171,7 @@ exports[`<BlogList /> should render correctly authenticated with blogs 1`] = `
   <div>
     <div
       class="feature-card blogs-list__card"
-      role="button"
+      role="link"
       style="cursor: pointer;"
       tabindex="0"
     >
@@ -213,7 +213,7 @@ exports[`<BlogList /> should render correctly authenticated with blogs 1`] = `
     </div>
     <div
       class="feature-card blogs-list__card blogs-list__card--with-controls"
-      role="button"
+      role="link"
       style="cursor: pointer;"
       tabindex="0"
     >
@@ -304,7 +304,7 @@ exports[`<BlogList /> should render correctly authenticated with blogs 1`] = `
     </button>
     <div
       class="feature-card blogs-list__card blogs-list__card--with-controls"
-      role="button"
+      role="link"
       style="cursor: pointer;"
       tabindex="0"
     >
@@ -444,7 +444,7 @@ exports[`<BlogList /> should render correctly authenticated with blogs 1`] = `
     </button>
     <div
       class="feature-card blogs-list__card blogs-list__card--with-controls"
-      role="button"
+      role="link"
       style="cursor: pointer;"
       tabindex="0"
     >
@@ -825,7 +825,7 @@ exports[`<BlogList /> should render correctly with blogs 1`] = `
   <div>
     <div
       class="feature-card blogs-list__card"
-      role="button"
+      role="link"
       style="cursor: pointer;"
       tabindex="0"
     >
@@ -910,7 +910,7 @@ exports[`<BlogList /> should render correctly with blogs 1`] = `
     </div>
     <div
       class="feature-card blogs-list__card"
-      role="button"
+      role="link"
       style="cursor: pointer;"
       tabindex="0"
     >
@@ -1044,7 +1044,7 @@ exports[`<BlogList /> should render correctly with blogs 1`] = `
     </div>
     <div
       class="feature-card blogs-list__card"
-      role="button"
+      role="link"
       style="cursor: pointer;"
       tabindex="0"
     >
@@ -1408,7 +1408,7 @@ exports[`<BlogList /> should render correctly with ssrBlogs 1`] = `
   <div>
     <div
       class="feature-card blogs-list__card"
-      role="button"
+      role="link"
       style="cursor: pointer;"
       tabindex="0"
     >
@@ -1493,7 +1493,7 @@ exports[`<BlogList /> should render correctly with ssrBlogs 1`] = `
     </div>
     <div
       class="feature-card blogs-list__card"
-      role="button"
+      role="link"
       style="cursor: pointer;"
       tabindex="0"
     >
@@ -1627,7 +1627,7 @@ exports[`<BlogList /> should render correctly with ssrBlogs 1`] = `
     </div>
     <div
       class="feature-card blogs-list__card"
-      role="button"
+      role="link"
       style="cursor: pointer;"
       tabindex="0"
     >

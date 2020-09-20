@@ -2,6 +2,8 @@
 
 .blogs-list {
   &__card {
+    display: inline-block;
+    width: 100%;
     margin-bottom: 2rem;
     box-sizing: border-box;
 
