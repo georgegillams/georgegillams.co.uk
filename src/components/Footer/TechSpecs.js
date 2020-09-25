@@ -2,7 +2,6 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { cssModules } from 'gg-components/helpers/cssModules';
 import { Paragraph } from 'gg-components/Paragraph';
-import { THEMES } from 'gg-components/Theming';
 
 import reactLogo from './react-logo.svg';
 import reduxLogo from './redux-logo.svg';
@@ -24,7 +23,7 @@ const TechSpecs = props => {
 
   return (
     <div className={outerClassNames.join(' ')} {...rest}>
-      <Paragraph theme={THEMES.allWhite} className={getClassName('tech-specs__container')}>
+      <Paragraph className={getClassName('tech-specs__container')}>
         Built in
         <a href="https://reactjs.org/" rel="noopener noreferrer" target="_blank">
           <img alt="React" width={5} height={5} className={iconClassName} src={reactLogo} />
