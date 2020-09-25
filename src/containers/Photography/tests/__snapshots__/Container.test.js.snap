@@ -18,7 +18,6 @@ exports[`<Photography /> should render correctly 1`] = `
     <a
       class="feature-card feature-card--narrow-compact photography__card"
       href="https://gurushots.com/georgegillams/achievements"
-      role="button"
       style="text-decoration: none;"
     >
       <div
@@ -95,7 +94,6 @@ exports[`<Photography /> should render correctly 1`] = `
     <a
       class="feature-card feature-card--narrow-compact photography__card"
       href="https://www.flickr.com/people/georgegillams/"
-      role="button"
       style="text-decoration: none;"
     >
       <div
@@ -172,7 +170,6 @@ exports[`<Photography /> should render correctly 1`] = `
     <a
       class="feature-card feature-card--narrow-compact photography__card"
       href="https://unsplash.com/@georgegillams"
-      role="button"
       style="text-decoration: none;"
     >
       <div
@@ -395,7 +392,11 @@ exports[`<Photography /> should render correctly 1`] = `
               class="button__outer button__outer--regular button__outer--no-bouncy graphic-content__text"
               type="button"
             >
-              Show graphic content
+              <span
+                class="button__child"
+              >
+                Show graphic content
+              </span>
             </button>
           </div>
         </div>

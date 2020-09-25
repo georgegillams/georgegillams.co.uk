@@ -56,14 +56,22 @@ exports[`<Account /> should render correctly with initial state 1`] = `
         class="button__outer button__outer--regular button__outer--no-bouncy button__outer--large account__button"
         type="button"
       >
-        Get a new verification email
+        <span
+          class="button__child"
+        >
+          Get a new verification email
+        </span>
       </button>
       <br />
       <button
         class="button__outer button__outer--regular button__outer--no-bouncy button__outer--large"
         type="button"
       >
-        Logout
+        <span
+          class="button__child"
+        >
+          Logout
+        </span>
       </button>
     </div>
   </div>
@@ -93,14 +101,22 @@ exports[`<Account /> should render correctly with initial state 2`] = `
         class="button__outer button__outer--regular button__outer--no-bouncy button__outer--large account__button"
         type="button"
       >
-        Get a new verification email
+        <span
+          class="button__child"
+        >
+          Get a new verification email
+        </span>
       </button>
       <br />
       <button
         class="button__outer button__outer--regular button__outer--no-bouncy button__outer--large"
         type="button"
       >
-        Logout
+        <span
+          class="button__child"
+        >
+          Logout
+        </span>
       </button>
     </div>
   </div>
@@ -130,14 +146,22 @@ exports[`<Account /> should render correctly with logOutError 1`] = `
         class="button__outer button__outer--regular button__outer--no-bouncy button__outer--large account__button"
         type="button"
       >
-        Get a new verification email
+        <span
+          class="button__child"
+        >
+          Get a new verification email
+        </span>
       </button>
       <br />
       <button
         class="button__outer button__outer--regular button__outer--no-bouncy button__outer--large"
         type="button"
       >
-        Logout
+        <span
+          class="button__child"
+        >
+          Logout
+        </span>
       </button>
     </div>
   </div>
@@ -167,14 +191,22 @@ exports[`<Account /> should render correctly with logOutResult 1`] = `
         class="button__outer button__outer--regular button__outer--no-bouncy button__outer--large account__button"
         type="button"
       >
-        Get a new verification email
+        <span
+          class="button__child"
+        >
+          Get a new verification email
+        </span>
       </button>
       <br />
       <button
         class="button__outer button__outer--regular button__outer--no-bouncy button__outer--large"
         type="button"
       >
-        Logout
+        <span
+          class="button__child"
+        >
+          Logout
+        </span>
       </button>
     </div>
   </div>
@@ -204,7 +236,11 @@ exports[`<Account /> should render correctly with loggingOut=true 1`] = `
         class="button__outer button__outer--regular button__outer--no-bouncy button__outer--large account__button"
         type="button"
       >
-        Get a new verification email
+        <span
+          class="button__child"
+        >
+          Get a new verification email
+        </span>
       </button>
       <br />
       <button
@@ -212,7 +248,11 @@ exports[`<Account /> should render correctly with loggingOut=true 1`] = `
         disabled=""
         type="button"
       >
-        Logout
+        <span
+          class="button__child"
+        >
+          Logout
+        </span>
       </button>
     </div>
   </div>
@@ -275,14 +315,22 @@ exports[`<Account /> should render correctly with requestVerificationEmailError 
         class="button__outer button__outer--regular button__outer--no-bouncy button__outer--large account__button"
         type="button"
       >
-        Get a new verification email
+        <span
+          class="button__child"
+        >
+          Get a new verification email
+        </span>
       </button>
       <br />
       <button
         class="button__outer button__outer--regular button__outer--no-bouncy button__outer--large"
         type="button"
       >
-        Logout
+        <span
+          class="button__child"
+        >
+          Logout
+        </span>
       </button>
     </div>
   </div>
@@ -312,14 +360,22 @@ exports[`<Account /> should render correctly with requestVerificationEmailResult
         class="button__outer button__outer--regular button__outer--no-bouncy button__outer--large account__button"
         type="button"
       >
-        Get a new verification email
+        <span
+          class="button__child"
+        >
+          Get a new verification email
+        </span>
       </button>
       <br />
       <button
         class="button__outer button__outer--regular button__outer--no-bouncy button__outer--large"
         type="button"
       >
-        Logout
+        <span
+          class="button__child"
+        >
+          Logout
+        </span>
       </button>
     </div>
   </div>
@@ -350,14 +406,22 @@ exports[`<Account /> should render correctly with requestingVerificationEmail=tr
         disabled=""
         type="button"
       >
-        Get a new verification email
+        <span
+          class="button__child"
+        >
+          Get a new verification email
+        </span>
       </button>
       <br />
       <button
         class="button__outer button__outer--regular button__outer--no-bouncy button__outer--large"
         type="button"
       >
-        Logout
+        <span
+          class="button__child"
+        >
+          Logout
+        </span>
       </button>
     </div>
   </div>
@@ -387,7 +451,11 @@ exports[`<Account /> should render correctly with user with emailVerified=true 1
         class="button__outer button__outer--regular button__outer--no-bouncy button__outer--large"
         type="button"
       >
-        Logout
+        <span
+          class="button__child"
+        >
+          Logout
+        </span>
       </button>
     </div>
   </div>

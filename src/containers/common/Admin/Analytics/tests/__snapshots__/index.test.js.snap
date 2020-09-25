@@ -50,13 +50,21 @@ exports[`<AdminAnalytics /> should render correctly with admin user 1`] = `
       class="button__outer button__outer--regular button__outer--no-bouncy button__outer--large admin-analytics__control"
       type="button"
     >
-      Reload analytics
+      <span
+        class="button__child"
+      >
+        Reload analytics
+      </span>
     </button>
     <button
       class="button__outer button__outer--regular button__outer--no-bouncy button__outer--large admin-analytics__control"
       type="button"
     >
-      Show filters
+      <span
+        class="button__child"
+      >
+        Show filters
+      </span>
     </button>
   </div>
   <div
@@ -90,13 +98,21 @@ exports[`<AdminAnalytics /> should render correctly with analytics 1`] = `
       class="button__outer button__outer--regular button__outer--no-bouncy button__outer--large admin-analytics__control"
       type="button"
     >
-      Reload analytics
+      <span
+        class="button__child"
+      >
+        Reload analytics
+      </span>
     </button>
     <button
       class="button__outer button__outer--regular button__outer--no-bouncy button__outer--large admin-analytics__control"
       type="button"
     >
-      Show filters
+      <span
+        class="button__child"
+      >
+        Show filters
+      </span>
     </button>
   </div>
   <div
@@ -155,13 +171,21 @@ exports[`<AdminAnalytics /> should render correctly with loadError 1`] = `
       class="button__outer button__outer--regular button__outer--no-bouncy button__outer--large admin-analytics__control"
       type="button"
     >
-      Reload analytics
+      <span
+        class="button__child"
+      >
+        Reload analytics
+      </span>
     </button>
     <button
       class="button__outer button__outer--regular button__outer--no-bouncy button__outer--large admin-analytics__control"
       type="button"
     >
-      Show filters
+      <span
+        class="button__child"
+      >
+        Show filters
+      </span>
     </button>
   </div>
   <span
@@ -215,13 +239,21 @@ exports[`<AdminAnalytics /> should render correctly with loading=true 1`] = `
       disabled=""
       type="button"
     >
-      Reload analytics
+      <span
+        class="button__child"
+      >
+        Reload analytics
+      </span>
     </button>
     <button
       class="button__outer button__outer--regular button__outer--no-bouncy button__outer--large admin-analytics__control"
       type="button"
     >
-      Show filters
+      <span
+        class="button__child"
+      >
+        Show filters
+      </span>
     </button>
   </div>
   <div

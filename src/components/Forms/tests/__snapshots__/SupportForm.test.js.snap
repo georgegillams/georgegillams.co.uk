@@ -69,7 +69,11 @@ exports[`<SupportForm /> Should render correctly 1`] = `
       class="button__outer button__outer--regular button__outer--no-bouncy button__outer--large forms__component forms__component__button"
       type="button"
     >
-      Add link
+      <span
+        class="button__child"
+      >
+        Add link
+      </span>
     </button>
   </div>
 </div>
@@ -174,7 +178,11 @@ exports[`<SupportForm /> Should render correctly with no link id 1`] = `
       class="button__outer button__outer--regular button__outer--no-bouncy button__outer--large forms__component forms__component__button"
       type="button"
     >
-      Add link
+      <span
+        class="button__child"
+      >
+        Add link
+      </span>
     </button>
   </div>
 </div>

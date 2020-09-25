@@ -7,31 +7,27 @@ exports[`<BlogList /> should render correctly - index 1`] = `
   >
     <a
       aria-label="Writing"
-      class="button__a blogs-nav__writing"
+      class="button__a button__outer button__outer--regular button__outer--no-bouncy button__outer--white button__outer--link blogs-nav__writing"
       href="/blog"
       role="tab"
     >
-      <button
-        aria-hidden="true"
-        class="button__outer button__outer--regular button__outer--no-bouncy button__outer--white button__outer--link"
-        type="button"
+      <span
+        class="button__child"
       >
         Writing
-      </button>
+      </span>
     </a>
     <a
       aria-label="Travel"
-      class="button__a"
+      class="button__a button__outer button__outer--regular button__outer--no-bouncy button__outer--white button__outer--link"
       href="/travel"
       role="tab"
     >
-      <button
-        aria-hidden="true"
-        class="button__outer button__outer--regular button__outer--no-bouncy button__outer--white button__outer--link"
-        type="button"
+      <span
+        class="button__child"
       >
         Travel
-      </button>
+      </span>
     </a>
   </div>
   <div
@@ -141,31 +137,27 @@ exports[`<BlogList /> should render correctly authenticated with blogs 1`] = `
   >
     <a
       aria-label="Writing"
-      class="button__a blogs-nav__writing"
+      class="button__a button__outer button__outer--regular button__outer--no-bouncy button__outer--white button__outer--link blogs-nav__writing"
       href="/blog"
       role="tab"
     >
-      <button
-        aria-hidden="true"
-        class="button__outer button__outer--regular button__outer--no-bouncy button__outer--white button__outer--link"
-        type="button"
+      <span
+        class="button__child"
       >
         Writing
-      </button>
+      </span>
     </a>
     <a
       aria-label="Travel"
-      class="button__a"
+      class="button__a button__outer button__outer--regular button__outer--no-bouncy button__outer--white button__outer--link"
       href="/travel"
       role="tab"
     >
-      <button
-        aria-hidden="true"
-        class="button__outer button__outer--regular button__outer--no-bouncy button__outer--white button__outer--link"
-        type="button"
+      <span
+        class="button__child"
       >
         Travel
-      </button>
+      </span>
     </a>
   </div>
   <div>
@@ -300,7 +292,11 @@ exports[`<BlogList /> should render correctly authenticated with blogs 1`] = `
       class="button__outer button__outer--destructive button__outer--no-bouncy button__outer--no-bouncy--destructive blogs-list__control"
       type="button"
     >
-      Delete blog
+      <span
+        class="button__child"
+      >
+        Delete blog
+      </span>
     </button>
     <div
       class="feature-card blogs-list__card blogs-list__card--with-controls"
@@ -440,7 +436,11 @@ exports[`<BlogList /> should render correctly authenticated with blogs 1`] = `
       class="button__outer button__outer--destructive button__outer--no-bouncy button__outer--no-bouncy--destructive blogs-list__control"
       type="button"
     >
-      Delete blog
+      <span
+        class="button__child"
+      >
+        Delete blog
+      </span>
     </button>
     <div
       class="feature-card blogs-list__card blogs-list__card--with-controls"
@@ -581,7 +581,11 @@ exports[`<BlogList /> should render correctly authenticated with blogs 1`] = `
       disabled=""
       type="button"
     >
-      Delete blog
+      <span
+        class="button__child"
+      >
+        Delete blog
+      </span>
     </button>
   </div>
   <div
@@ -651,31 +655,27 @@ exports[`<BlogList /> should render correctly with blog load error 1`] = `
   >
     <a
       aria-label="Writing"
-      class="button__a blogs-nav__writing"
+      class="button__a button__outer button__outer--regular button__outer--no-bouncy button__outer--white button__outer--link blogs-nav__writing"
       href="/blog"
       role="tab"
     >
-      <button
-        aria-hidden="true"
-        class="button__outer button__outer--regular button__outer--no-bouncy button__outer--white button__outer--link"
-        type="button"
+      <span
+        class="button__child"
       >
         Writing
-      </button>
+      </span>
     </a>
     <a
       aria-label="Travel"
-      class="button__a"
+      class="button__a button__outer button__outer--regular button__outer--no-bouncy button__outer--white button__outer--link"
       href="/travel"
       role="tab"
     >
-      <button
-        aria-hidden="true"
-        class="button__outer button__outer--regular button__outer--no-bouncy button__outer--white button__outer--link"
-        type="button"
+      <span
+        class="button__child"
       >
         Travel
-      </button>
+      </span>
     </a>
   </div>
   <div
@@ -795,31 +795,27 @@ exports[`<BlogList /> should render correctly with blogs 1`] = `
   >
     <a
       aria-label="Writing"
-      class="button__a blogs-nav__writing"
+      class="button__a button__outer button__outer--regular button__outer--no-bouncy button__outer--white button__outer--link blogs-nav__writing"
       href="/blog"
       role="tab"
     >
-      <button
-        aria-hidden="true"
-        class="button__outer button__outer--regular button__outer--no-bouncy button__outer--white button__outer--link"
-        type="button"
+      <span
+        class="button__child"
       >
         Writing
-      </button>
+      </span>
     </a>
     <a
       aria-label="Travel"
-      class="button__a"
+      class="button__a button__outer button__outer--regular button__outer--no-bouncy button__outer--white button__outer--link"
       href="/travel"
       role="tab"
     >
-      <button
-        aria-hidden="true"
-        class="button__outer button__outer--regular button__outer--no-bouncy button__outer--white button__outer--link"
-        type="button"
+      <span
+        class="button__child"
       >
         Travel
-      </button>
+      </span>
     </a>
   </div>
   <div>
@@ -1244,31 +1240,27 @@ exports[`<BlogList /> should render correctly with initial state 1`] = `
   >
     <a
       aria-label="Writing"
-      class="button__a blogs-nav__writing"
+      class="button__a button__outer button__outer--regular button__outer--no-bouncy button__outer--white button__outer--link blogs-nav__writing"
       href="/blog"
       role="tab"
     >
-      <button
-        aria-hidden="true"
-        class="button__outer button__outer--regular button__outer--no-bouncy button__outer--white button__outer--link"
-        type="button"
+      <span
+        class="button__child"
       >
         Writing
-      </button>
+      </span>
     </a>
     <a
       aria-label="Travel"
-      class="button__a"
+      class="button__a button__outer button__outer--regular button__outer--no-bouncy button__outer--white button__outer--link"
       href="/travel"
       role="tab"
     >
-      <button
-        aria-hidden="true"
-        class="button__outer button__outer--regular button__outer--no-bouncy button__outer--white button__outer--link"
-        type="button"
+      <span
+        class="button__child"
       >
         Travel
-      </button>
+      </span>
     </a>
   </div>
   <div
@@ -1378,31 +1370,27 @@ exports[`<BlogList /> should render correctly with ssrBlogs 1`] = `
   >
     <a
       aria-label="Writing"
-      class="button__a blogs-nav__writing"
+      class="button__a button__outer button__outer--regular button__outer--no-bouncy button__outer--white button__outer--link blogs-nav__writing"
       href="/blog"
       role="tab"
     >
-      <button
-        aria-hidden="true"
-        class="button__outer button__outer--regular button__outer--no-bouncy button__outer--white button__outer--link"
-        type="button"
+      <span
+        class="button__child"
       >
         Writing
-      </button>
+      </span>
     </a>
     <a
       aria-label="Travel"
-      class="button__a"
+      class="button__a button__outer button__outer--regular button__outer--no-bouncy button__outer--white button__outer--link"
       href="/travel"
       role="tab"
     >
-      <button
-        aria-hidden="true"
-        class="button__outer button__outer--regular button__outer--no-bouncy button__outer--white button__outer--link"
-        type="button"
+      <span
+        class="button__child"
       >
         Travel
-      </button>
+      </span>
     </a>
   </div>
   <div>

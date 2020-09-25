@@ -1272,7 +1272,11 @@ exports[`<BlogsList /> Should render correctly with deleteBlog function 1`] = `
       class="button__outer button__outer--destructive button__outer--no-bouncy button__outer--no-bouncy--destructive blogs-list__control"
       type="button"
     >
-      Delete blog
+      <span
+        class="button__child"
+      >
+        Delete blog
+      </span>
     </button>
     <div
       class="feature-card blogs-list__card blogs-list__card--with-controls"
@@ -1412,7 +1416,11 @@ exports[`<BlogsList /> Should render correctly with deleteBlog function 1`] = `
       class="button__outer button__outer--destructive button__outer--no-bouncy button__outer--no-bouncy--destructive blogs-list__control"
       type="button"
     >
-      Delete blog
+      <span
+        class="button__child"
+      >
+        Delete blog
+      </span>
     </button>
     <div
       class="feature-card blogs-list__card blogs-list__card--with-controls"
@@ -1553,7 +1561,11 @@ exports[`<BlogsList /> Should render correctly with deleteBlog function 1`] = `
       disabled=""
       type="button"
     >
-      Delete blog
+      <span
+        class="button__child"
+      >
+        Delete blog
+      </span>
     </button>
   </div>
 </div>

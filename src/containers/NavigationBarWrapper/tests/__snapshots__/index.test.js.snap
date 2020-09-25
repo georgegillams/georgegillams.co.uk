@@ -212,16 +212,14 @@ exports[`<Authenticator /> should render correctly with null user 1`] = `
         >
           <a
             aria-label="Login"
-            class="button__a"
+            class="button__a button__outer button__outer--dark-text button__outer--bouncy button__outer--link"
             href="/login"
           >
-            <button
-              aria-hidden="true"
-              class="button__outer button__outer--dark-text button__outer--bouncy button__outer--link"
-              type="button"
+            <span
+              class="button__child"
             >
               Login
-            </button>
+            </span>
           </a>
         </div>
       </div>
@@ -292,16 +290,14 @@ exports[`<Authenticator /> should render correctly with user 1`] = `
         >
           <a
             aria-label="Account"
-            class="button__a"
+            class="button__a button__outer button__outer--dark-text button__outer--bouncy button__outer--link"
             href="/account"
           >
-            <button
-              aria-hidden="true"
-              class="button__outer button__outer--dark-text button__outer--bouncy button__outer--link"
-              type="button"
+            <span
+              class="button__child"
             >
               Account
-            </button>
+            </span>
           </a>
         </div>
       </div>

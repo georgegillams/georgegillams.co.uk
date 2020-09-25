@@ -51,7 +51,11 @@ exports[`<AdminEmails /> should render correctly with admin user 1`] = `
       style="margin-right: 1rem; margin-bottom: 1rem;"
       type="button"
     >
-      Reload emails
+      <span
+        class="button__child"
+      >
+        Reload emails
+      </span>
     </button>
     <br />
     <br />
@@ -94,7 +98,11 @@ exports[`<AdminEmails /> should render correctly with emails 1`] = `
       style="margin-right: 1rem; margin-bottom: 1rem;"
       type="button"
     >
-      Reload emails
+      <span
+        class="button__child"
+      >
+        Reload emails
+      </span>
     </button>
     <br />
     <br />
@@ -304,7 +312,11 @@ exports[`<AdminEmails /> should render correctly with loadError 1`] = `
       style="margin-right: 1rem; margin-bottom: 1rem;"
       type="button"
     >
-      Reload emails
+      <span
+        class="button__child"
+      >
+        Reload emails
+      </span>
     </button>
     <br />
     <br />
@@ -363,7 +375,11 @@ exports[`<AdminEmails /> should render correctly with loading=true 1`] = `
       style="margin-right: 1rem; margin-bottom: 1rem;"
       type="button"
     >
-      Reload emails
+      <span
+        class="button__child"
+      >
+        Reload emails
+      </span>
     </button>
     <br />
     <br />
@@ -406,7 +422,11 @@ exports[`<AdminEmails /> should render correctly with resendError 1`] = `
       style="margin-right: 1rem; margin-bottom: 1rem;"
       type="button"
     >
-      Reload emails
+      <span
+        class="button__child"
+      >
+        Reload emails
+      </span>
     </button>
     <br />
     <br />
@@ -449,7 +469,11 @@ exports[`<AdminEmails /> should render correctly with resending=true 1`] = `
       style="margin-right: 1rem; margin-bottom: 1rem;"
       type="button"
     >
-      Reload emails
+      <span
+        class="button__child"
+      >
+        Reload emails
+      </span>
     </button>
     <br />
     <br />

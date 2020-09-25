@@ -357,7 +357,11 @@ exports[`<BlogForm /> Should render correctly 1`] = `
     <button
       class="button__outer button__outer--regular button__outer--no-bouncy button__outer--large forms__component forms__component__button"
       type="button"
-    />
+    >
+      <span
+        class="button__child"
+      />
+    </button>
   </div>
 </div>
 `;
@@ -749,7 +753,11 @@ exports[`<BlogForm /> Should render correctly with no blog id 1`] = `
     <button
       class="button__outer button__outer--regular button__outer--no-bouncy button__outer--large forms__component forms__component__button"
       type="button"
-    />
+    >
+      <span
+        class="button__child"
+      />
+    </button>
   </div>
 </div>
 `;

@@ -48,7 +48,11 @@ exports[`<CreateNotificationForm /> Should render correctly 1`] = `
       class="button__outer button__outer--regular button__outer--no-bouncy button__outer--large forms__component"
       type="button"
     >
-      Create notification
+      <span
+        class="button__child"
+      >
+        Create notification
+      </span>
     </button>
   </div>
 </div>
