@@ -43,7 +43,7 @@ exports[`<LoginForm /> Should render correctly 1`] = `
       An email containing a login link will be sent to you. To access your account, follow the link in the email.
     </div>
     <button
-      class="button__outer button__outer--regular button__outer--no-bouncy button__outer--large forms__component forms__component__button"
+      class="button__outer button__outer--regular button__outer--no-bouncy forms__component forms__component__button"
       type="button"
     >
       <span

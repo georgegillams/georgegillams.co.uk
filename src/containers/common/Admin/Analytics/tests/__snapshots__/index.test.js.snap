@@ -47,7 +47,7 @@ exports[`<AdminAnalytics /> should render correctly with admin user 1`] = `
   </div>
   <div>
     <button
-      class="button__outer button__outer--regular button__outer--no-bouncy button__outer--large admin-analytics__control"
+      class="button__outer button__outer--regular button__outer--no-bouncy admin-analytics__control"
       type="button"
     >
       <span
@@ -57,7 +57,7 @@ exports[`<AdminAnalytics /> should render correctly with admin user 1`] = `
       </span>
     </button>
     <button
-      class="button__outer button__outer--regular button__outer--no-bouncy button__outer--large admin-analytics__control"
+      class="button__outer button__outer--regular button__outer--no-bouncy admin-analytics__control"
       type="button"
     >
       <span
@@ -95,7 +95,7 @@ exports[`<AdminAnalytics /> should render correctly with analytics 1`] = `
   </div>
   <div>
     <button
-      class="button__outer button__outer--regular button__outer--no-bouncy button__outer--large admin-analytics__control"
+      class="button__outer button__outer--regular button__outer--no-bouncy admin-analytics__control"
       type="button"
     >
       <span
@@ -105,7 +105,7 @@ exports[`<AdminAnalytics /> should render correctly with analytics 1`] = `
       </span>
     </button>
     <button
-      class="button__outer button__outer--regular button__outer--no-bouncy button__outer--large admin-analytics__control"
+      class="button__outer button__outer--regular button__outer--no-bouncy admin-analytics__control"
       type="button"
     >
       <span
@@ -168,7 +168,7 @@ exports[`<AdminAnalytics /> should render correctly with loadError 1`] = `
   </div>
   <div>
     <button
-      class="button__outer button__outer--regular button__outer--no-bouncy button__outer--large admin-analytics__control"
+      class="button__outer button__outer--regular button__outer--no-bouncy admin-analytics__control"
       type="button"
     >
       <span
@@ -178,7 +178,7 @@ exports[`<AdminAnalytics /> should render correctly with loadError 1`] = `
       </span>
     </button>
     <button
-      class="button__outer button__outer--regular button__outer--no-bouncy button__outer--large admin-analytics__control"
+      class="button__outer button__outer--regular button__outer--no-bouncy admin-analytics__control"
       type="button"
     >
       <span
@@ -235,7 +235,7 @@ exports[`<AdminAnalytics /> should render correctly with loading=true 1`] = `
   </div>
   <div>
     <button
-      class="button__outer button__outer--regular button__outer--no-bouncy button__outer--disabled button__outer--large admin-analytics__control"
+      class="button__outer button__outer--regular button__outer--no-bouncy button__outer--disabled admin-analytics__control"
       disabled=""
       type="button"
     >
@@ -246,7 +246,7 @@ exports[`<AdminAnalytics /> should render correctly with loading=true 1`] = `
       </span>
     </button>
     <button
-      class="button__outer button__outer--regular button__outer--no-bouncy button__outer--large admin-analytics__control"
+      class="button__outer button__outer--regular button__outer--no-bouncy admin-analytics__control"
       type="button"
     >
       <span

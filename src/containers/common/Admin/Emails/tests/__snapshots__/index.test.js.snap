@@ -47,7 +47,7 @@ exports[`<AdminEmails /> should render correctly with admin user 1`] = `
   </div>
   <div>
     <button
-      class="button__outer button__outer--regular button__outer--no-bouncy button__outer--large"
+      class="button__outer button__outer--regular button__outer--no-bouncy"
       style="margin-right: 1rem; margin-bottom: 1rem;"
       type="button"
     >
@@ -94,7 +94,7 @@ exports[`<AdminEmails /> should render correctly with emails 1`] = `
   </div>
   <div>
     <button
-      class="button__outer button__outer--regular button__outer--no-bouncy button__outer--large"
+      class="button__outer button__outer--regular button__outer--no-bouncy"
       style="margin-right: 1rem; margin-bottom: 1rem;"
       type="button"
     >
@@ -308,7 +308,7 @@ exports[`<AdminEmails /> should render correctly with loadError 1`] = `
   </div>
   <div>
     <button
-      class="button__outer button__outer--regular button__outer--no-bouncy button__outer--large"
+      class="button__outer button__outer--regular button__outer--no-bouncy"
       style="margin-right: 1rem; margin-bottom: 1rem;"
       type="button"
     >
@@ -370,7 +370,7 @@ exports[`<AdminEmails /> should render correctly with loading=true 1`] = `
   </div>
   <div>
     <button
-      class="button__outer button__outer--regular button__outer--no-bouncy button__outer--disabled button__outer--large"
+      class="button__outer button__outer--regular button__outer--no-bouncy button__outer--disabled"
       disabled=""
       style="margin-right: 1rem; margin-bottom: 1rem;"
       type="button"
@@ -418,7 +418,7 @@ exports[`<AdminEmails /> should render correctly with resendError 1`] = `
   </div>
   <div>
     <button
-      class="button__outer button__outer--regular button__outer--no-bouncy button__outer--large"
+      class="button__outer button__outer--regular button__outer--no-bouncy"
       style="margin-right: 1rem; margin-bottom: 1rem;"
       type="button"
     >
@@ -465,7 +465,7 @@ exports[`<AdminEmails /> should render correctly with resending=true 1`] = `
   </div>
   <div>
     <button
-      class="button__outer button__outer--regular button__outer--no-bouncy button__outer--large"
+      class="button__outer button__outer--regular button__outer--no-bouncy"
       style="margin-right: 1rem; margin-bottom: 1rem;"
       type="button"
     >
