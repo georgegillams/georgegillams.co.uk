@@ -51,7 +51,7 @@ const CreateNotificationForm = props => {
         placeholder="message"
       />
       <br />
-      <Button large className={getClassName('forms__component')} onClick={onSubmit}>
+      <Button className={getClassName('forms__component')} onClick={onSubmit}>
         {submitLabel || 'Create notification'}
       </Button>
     </div>

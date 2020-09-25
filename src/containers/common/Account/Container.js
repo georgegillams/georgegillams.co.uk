@@ -50,7 +50,6 @@ const Account = props => {
             <>
               <Button
                 className={getClassName('account__button')}
-                large
                 disabled={accountState && accountState.requestingVerificationEmail}
                 onClick={requestVerificationEmail}>
                 Get a new verification email
@@ -60,17 +59,17 @@ const Account = props => {
           )}
           {user && user.admin && (
             <>
-              <Button className={getClassName('account__button')} large href="/admin">
+              <Button className={getClassName('account__button')} href="/admin">
                 Admin
               </Button>
               <br />
-              <Button className={getClassName('account__button')} large href="/status">
+              <Button className={getClassName('account__button')} href="/status">
                 Site status
               </Button>
               <br />
             </>
           )}
-          <Button large disabled={accountState && accountState.loggingOut} onClick={logout}>
+          <Button disabled={accountState && accountState.loggingOut} onClick={logout}>
             Logout
           </Button>
         </PageTitle>

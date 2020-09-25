@@ -66,7 +66,7 @@ exports[`<SupportForm /> Should render correctly 1`] = `
       </svg>
     </div>
     <button
-      class="button__outer button__outer--regular button__outer--no-bouncy button__outer--large forms__component forms__component__button"
+      class="button__outer button__outer--regular button__outer--no-bouncy forms__component forms__component__button"
       type="button"
     >
       <span
@@ -175,7 +175,7 @@ exports[`<SupportForm /> Should render correctly with no link id 1`] = `
       </svg>
     </div>
     <button
-      class="button__outer button__outer--regular button__outer--no-bouncy button__outer--large forms__component forms__component__button"
+      class="button__outer button__outer--regular button__outer--no-bouncy forms__component forms__component__button"
       type="button"
     >
       <span

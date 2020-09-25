@@ -70,15 +70,14 @@ const AdminAnalytics = props => {
       <Button
         className={getClassName('admin-analytics__control')}
         disabled={adminAnalyticsState.loading}
-        onClick={() => load()}
-        large>
+        onClick={() => load()}>
         Reload analytics
       </Button>
-      <Button className={getClassName('admin-analytics__control')} onClick={() => setShowFilters(!showFilters)} large>
+      <Button className={getClassName('admin-analytics__control')} onClick={() => setShowFilters(!showFilters)}>
         {showFilters ? 'Hide filters' : 'Show filters'}
       </Button>
       {filtersApplied && (
-        <Button className={getClassName('admin-analytics__control')} onClick={() => setFilters(defaultFilters)} large>
+        <Button className={getClassName('admin-analytics__control')} onClick={() => setFilters(defaultFilters)}>
           Clear filters
         </Button>
       )}

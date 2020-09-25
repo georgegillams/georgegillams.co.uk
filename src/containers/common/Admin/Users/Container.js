@@ -155,7 +155,6 @@ const AdminUsers = props => {
         <br />
         <br />
         <Button
-          large
           destructive
           disabled={requesting || removing}
           onClick={() => {
@@ -165,7 +164,7 @@ const AdminUsers = props => {
         </Button>
         <br />
         <br />
-        <Button large destructive disabled={removing} onClick={() => remove(detailUser)}>
+        <Button destructive disabled={removing} onClick={() => remove(detailUser)}>
           Delete
         </Button>
       </AdminUsersAPIEntity>
@@ -178,15 +177,14 @@ const AdminUsers = props => {
       <Button
         style={{ marginRight: '1rem', marginBottom: '1rem' }}
         disabled={adminUsersState.loading}
-        onClick={() => load()}
-        large>
+        onClick={() => load()}>
         Reload users
       </Button>
-      <Button style={{ marginRight: '1rem', marginBottom: '1rem' }} onClick={() => setShowFilters(!showFilters)} large>
+      <Button style={{ marginRight: '1rem', marginBottom: '1rem' }} onClick={() => setShowFilters(!showFilters)}>
         {showFilters ? 'Hide filters' : 'Show filters'}
       </Button>
       {filtersApplied && (
-        <Button style={{ marginBottom: '1rem' }} onClick={() => setFilters(defaultFilters)} large>
+        <Button style={{ marginBottom: '1rem' }} onClick={() => setFilters(defaultFilters)}>
           Clear filters
         </Button>
       )}

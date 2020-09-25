@@ -53,7 +53,7 @@ exports[`<Account /> should render correctly with initial state 1`] = `
         <br />
       </span>
       <button
-        class="button__outer button__outer--regular button__outer--no-bouncy button__outer--large account__button"
+        class="button__outer button__outer--regular button__outer--no-bouncy account__button"
         type="button"
       >
         <span
@@ -64,7 +64,7 @@ exports[`<Account /> should render correctly with initial state 1`] = `
       </button>
       <br />
       <button
-        class="button__outer button__outer--regular button__outer--no-bouncy button__outer--large"
+        class="button__outer button__outer--regular button__outer--no-bouncy"
         type="button"
       >
         <span
@@ -98,7 +98,7 @@ exports[`<Account /> should render correctly with initial state 2`] = `
         <br />
       </span>
       <button
-        class="button__outer button__outer--regular button__outer--no-bouncy button__outer--large account__button"
+        class="button__outer button__outer--regular button__outer--no-bouncy account__button"
         type="button"
       >
         <span
@@ -109,7 +109,7 @@ exports[`<Account /> should render correctly with initial state 2`] = `
       </button>
       <br />
       <button
-        class="button__outer button__outer--regular button__outer--no-bouncy button__outer--large"
+        class="button__outer button__outer--regular button__outer--no-bouncy"
         type="button"
       >
         <span
@@ -143,7 +143,7 @@ exports[`<Account /> should render correctly with logOutError 1`] = `
         <br />
       </span>
       <button
-        class="button__outer button__outer--regular button__outer--no-bouncy button__outer--large account__button"
+        class="button__outer button__outer--regular button__outer--no-bouncy account__button"
         type="button"
       >
         <span
@@ -154,7 +154,7 @@ exports[`<Account /> should render correctly with logOutError 1`] = `
       </button>
       <br />
       <button
-        class="button__outer button__outer--regular button__outer--no-bouncy button__outer--large"
+        class="button__outer button__outer--regular button__outer--no-bouncy"
         type="button"
       >
         <span
@@ -188,7 +188,7 @@ exports[`<Account /> should render correctly with logOutResult 1`] = `
         <br />
       </span>
       <button
-        class="button__outer button__outer--regular button__outer--no-bouncy button__outer--large account__button"
+        class="button__outer button__outer--regular button__outer--no-bouncy account__button"
         type="button"
       >
         <span
@@ -199,7 +199,7 @@ exports[`<Account /> should render correctly with logOutResult 1`] = `
       </button>
       <br />
       <button
-        class="button__outer button__outer--regular button__outer--no-bouncy button__outer--large"
+        class="button__outer button__outer--regular button__outer--no-bouncy"
         type="button"
       >
         <span
@@ -233,7 +233,7 @@ exports[`<Account /> should render correctly with loggingOut=true 1`] = `
         <br />
       </span>
       <button
-        class="button__outer button__outer--regular button__outer--no-bouncy button__outer--large account__button"
+        class="button__outer button__outer--regular button__outer--no-bouncy account__button"
         type="button"
       >
         <span
@@ -244,7 +244,7 @@ exports[`<Account /> should render correctly with loggingOut=true 1`] = `
       </button>
       <br />
       <button
-        class="button__outer button__outer--regular button__outer--no-bouncy button__outer--disabled button__outer--large"
+        class="button__outer button__outer--regular button__outer--no-bouncy button__outer--disabled"
         disabled=""
         type="button"
       >
@@ -312,7 +312,7 @@ exports[`<Account /> should render correctly with requestVerificationEmailError 
         <br />
       </span>
       <button
-        class="button__outer button__outer--regular button__outer--no-bouncy button__outer--large account__button"
+        class="button__outer button__outer--regular button__outer--no-bouncy account__button"
         type="button"
       >
         <span
@@ -323,7 +323,7 @@ exports[`<Account /> should render correctly with requestVerificationEmailError 
       </button>
       <br />
       <button
-        class="button__outer button__outer--regular button__outer--no-bouncy button__outer--large"
+        class="button__outer button__outer--regular button__outer--no-bouncy"
         type="button"
       >
         <span
@@ -357,7 +357,7 @@ exports[`<Account /> should render correctly with requestVerificationEmailResult
         <br />
       </span>
       <button
-        class="button__outer button__outer--regular button__outer--no-bouncy button__outer--large account__button"
+        class="button__outer button__outer--regular button__outer--no-bouncy account__button"
         type="button"
       >
         <span
@@ -368,7 +368,7 @@ exports[`<Account /> should render correctly with requestVerificationEmailResult
       </button>
       <br />
       <button
-        class="button__outer button__outer--regular button__outer--no-bouncy button__outer--large"
+        class="button__outer button__outer--regular button__outer--no-bouncy"
         type="button"
       >
         <span
@@ -402,7 +402,7 @@ exports[`<Account /> should render correctly with requestingVerificationEmail=tr
         <br />
       </span>
       <button
-        class="button__outer button__outer--regular button__outer--no-bouncy button__outer--disabled button__outer--large account__button"
+        class="button__outer button__outer--regular button__outer--no-bouncy button__outer--disabled account__button"
         disabled=""
         type="button"
       >
@@ -414,7 +414,7 @@ exports[`<Account /> should render correctly with requestingVerificationEmail=tr
       </button>
       <br />
       <button
-        class="button__outer button__outer--regular button__outer--no-bouncy button__outer--large"
+        class="button__outer button__outer--regular button__outer--no-bouncy"
         type="button"
       >
         <span
@@ -448,7 +448,7 @@ exports[`<Account /> should render correctly with user with emailVerified=true 1
         <br />
       </span>
       <button
-        class="button__outer button__outer--regular button__outer--no-bouncy button__outer--large"
+        class="button__outer button__outer--regular button__outer--no-bouncy"
         type="button"
       >
         <span

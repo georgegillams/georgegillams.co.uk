@@ -41,7 +41,6 @@ const AdminUsersAPIEntity = props => {
           <br />
           <br />
           <Button
-            large
             onClick={() => {
               setEditing(!editing);
             }}>

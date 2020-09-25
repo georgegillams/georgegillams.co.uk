@@ -101,7 +101,7 @@ exports[`<UserEditForm /> Should render correctly 1`] = `
       </svg>
     </div>
     <button
-      class="button__outer button__outer--regular button__outer--no-bouncy button__outer--large forms__component forms__component__button"
+      class="button__outer button__outer--regular button__outer--no-bouncy forms__component forms__component__button"
       type="button"
     >
       <span
@@ -250,7 +250,7 @@ exports[`<UserEditForm /> Should render correctly with admin controls shown 1`] 
     </label>
     <br />
     <button
-      class="button__outer button__outer--regular button__outer--no-bouncy button__outer--large forms__component forms__component__button"
+      class="button__outer button__outer--regular button__outer--no-bouncy forms__component forms__component__button"
       type="button"
     >
       <span
