@@ -19,7 +19,11 @@ exports[`<Support /> should render correctly - index 1`] = `
         disabled=""
         type="button"
       >
-        Reload
+        <span
+          class="button__child"
+        >
+          Reload
+        </span>
       </button>
     </div>
     <div
@@ -53,7 +57,11 @@ exports[`<Support /> should render correctly when loading 1`] = `
         disabled=""
         type="button"
       >
-        Reload
+        <span
+          class="button__child"
+        >
+          Reload
+        </span>
       </button>
     </div>
     <div
@@ -86,7 +94,11 @@ exports[`<Support /> should render correctly with admin 1`] = `
         class="button__outer button__outer--regular button__outer--no-bouncy"
         type="button"
       >
-        Reload
+        <span
+          class="button__child"
+        >
+          Reload
+        </span>
       </button>
     </div>
     <div
@@ -132,7 +144,11 @@ exports[`<Support /> should render correctly with admin and createLinkError 1`] 
         class="button__outer button__outer--regular button__outer--no-bouncy"
         type="button"
       >
-        Reload
+        <span
+          class="button__child"
+        >
+          Reload
+        </span>
       </button>
     </div>
     <div
@@ -184,7 +200,11 @@ exports[`<Support /> should render correctly with admin and deleteLinkError 1`] 
         class="button__outer button__outer--regular button__outer--no-bouncy"
         type="button"
       >
-        Reload
+        <span
+          class="button__child"
+        >
+          Reload
+        </span>
       </button>
     </div>
     <div
@@ -235,7 +255,11 @@ exports[`<Support /> should render correctly with initial state 1`] = `
         class="button__outer button__outer--regular button__outer--no-bouncy"
         type="button"
       >
-        Reload
+        <span
+          class="button__child"
+        >
+          Reload
+        </span>
       </button>
     </div>
     <div
@@ -268,7 +292,11 @@ exports[`<Support /> should render correctly with links 1`] = `
         class="button__outer button__outer--regular button__outer--no-bouncy"
         type="button"
       >
-        Reload
+        <span
+          class="button__child"
+        >
+          Reload
+        </span>
       </button>
     </div>
     <div
@@ -373,7 +401,11 @@ exports[`<Support /> should render correctly with loadError 1`] = `
         class="button__outer button__outer--regular button__outer--no-bouncy"
         type="button"
       >
-        Reload
+        <span
+          class="button__child"
+        >
+          Reload
+        </span>
       </button>
     </div>
     <span

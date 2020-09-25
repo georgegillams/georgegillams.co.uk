@@ -104,7 +104,11 @@ exports[`<UserEditForm /> Should render correctly 1`] = `
       class="button__outer button__outer--regular button__outer--no-bouncy button__outer--large forms__component forms__component__button"
       type="button"
     >
-      Update
+      <span
+        class="button__child"
+      >
+        Update
+      </span>
     </button>
   </div>
 </div>
@@ -249,7 +253,11 @@ exports[`<UserEditForm /> Should render correctly with admin controls shown 1`] 
       class="button__outer button__outer--regular button__outer--no-bouncy button__outer--large forms__component forms__component__button"
       type="button"
     >
-      Update
+      <span
+        class="button__child"
+      >
+        Update
+      </span>
     </button>
   </div>
 </div>

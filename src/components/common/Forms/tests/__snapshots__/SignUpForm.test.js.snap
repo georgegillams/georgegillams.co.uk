@@ -72,7 +72,11 @@ exports[`<SignUpForm /> Should render correctly 1`] = `
       class="button__outer button__outer--regular button__outer--no-bouncy button__outer--large forms__component forms__component__button"
       type="button"
     >
-      Sign up
+      <span
+        class="button__child"
+      >
+        Sign up
+      </span>
     </button>
   </div>
 </div>

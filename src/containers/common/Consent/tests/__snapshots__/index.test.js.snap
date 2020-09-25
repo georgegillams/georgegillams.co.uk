@@ -37,13 +37,21 @@ exports[`<Consent /> should render correctly - index 1`] = `
             class="button__outer button__outer--regular button__outer--no-bouncy consent__button"
             type="button"
           >
-            Accept
+            <span
+              class="button__child"
+            >
+              Accept
+            </span>
           </button>
           <button
             class="button__outer button__outer--regular button__outer--no-bouncy consent__button"
             type="button"
           >
-            Dismiss
+            <span
+              class="button__child"
+            >
+              Dismiss
+            </span>
           </button>
         </div>
       </div>
