@@ -15,7 +15,9 @@ const Konami = () => {
   return (
     <>
       {konamiActivated && <ConfettiCanvas />}
-      <DebugObject debugTitle="Konami" debugObject={{ konamiActivated }} />
+      <div>
+        <DebugObject debugTitle="Konami" debugObject={{ konamiActivated }} />
+      </div>
     </>
   );
 };

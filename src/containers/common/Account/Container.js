@@ -69,7 +69,7 @@ const Account = props => {
               <br />
             </>
           )}
-          <Button disabled={accountState && accountState.loggingOut} onClick={logout}>
+          <Button destructive disabled={accountState && accountState.loggingOut} onClick={logout}>
             Logout
           </Button>
         </PageTitle>

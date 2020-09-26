@@ -64,7 +64,7 @@ exports[`<Account /> should render correctly with initial state 1`] = `
       </button>
       <br />
       <button
-        class="button__outer button__outer--regular button__outer--no-bouncy"
+        class="button__outer button__outer--destructive button__outer--no-bouncy button__outer--no-bouncy--destructive"
         type="button"
       >
         <span
@@ -109,7 +109,7 @@ exports[`<Account /> should render correctly with initial state 2`] = `
       </button>
       <br />
       <button
-        class="button__outer button__outer--regular button__outer--no-bouncy"
+        class="button__outer button__outer--destructive button__outer--no-bouncy button__outer--no-bouncy--destructive"
         type="button"
       >
         <span
@@ -154,7 +154,7 @@ exports[`<Account /> should render correctly with logOutError 1`] = `
       </button>
       <br />
       <button
-        class="button__outer button__outer--regular button__outer--no-bouncy"
+        class="button__outer button__outer--destructive button__outer--no-bouncy button__outer--no-bouncy--destructive"
         type="button"
       >
         <span
@@ -199,7 +199,7 @@ exports[`<Account /> should render correctly with logOutResult 1`] = `
       </button>
       <br />
       <button
-        class="button__outer button__outer--regular button__outer--no-bouncy"
+        class="button__outer button__outer--destructive button__outer--no-bouncy button__outer--no-bouncy--destructive"
         type="button"
       >
         <span
@@ -244,7 +244,7 @@ exports[`<Account /> should render correctly with loggingOut=true 1`] = `
       </button>
       <br />
       <button
-        class="button__outer button__outer--regular button__outer--no-bouncy button__outer--disabled"
+        class="button__outer button__outer--destructive button__outer--no-bouncy button__outer--no-bouncy--destructive button__outer--disabled"
         disabled=""
         type="button"
       >
@@ -323,7 +323,7 @@ exports[`<Account /> should render correctly with requestVerificationEmailError 
       </button>
       <br />
       <button
-        class="button__outer button__outer--regular button__outer--no-bouncy"
+        class="button__outer button__outer--destructive button__outer--no-bouncy button__outer--no-bouncy--destructive"
         type="button"
       >
         <span
@@ -368,7 +368,7 @@ exports[`<Account /> should render correctly with requestVerificationEmailResult
       </button>
       <br />
       <button
-        class="button__outer button__outer--regular button__outer--no-bouncy"
+        class="button__outer button__outer--destructive button__outer--no-bouncy button__outer--no-bouncy--destructive"
         type="button"
       >
         <span
@@ -414,7 +414,7 @@ exports[`<Account /> should render correctly with requestingVerificationEmail=tr
       </button>
       <br />
       <button
-        class="button__outer button__outer--regular button__outer--no-bouncy"
+        class="button__outer button__outer--destructive button__outer--no-bouncy button__outer--no-bouncy--destructive"
         type="button"
       >
         <span
@@ -448,7 +448,7 @@ exports[`<Account /> should render correctly with user with emailVerified=true 1
         <br />
       </span>
       <button
-        class="button__outer button__outer--regular button__outer--no-bouncy"
+        class="button__outer button__outer--destructive button__outer--no-bouncy button__outer--no-bouncy--destructive"
         type="button"
       >
         <span
