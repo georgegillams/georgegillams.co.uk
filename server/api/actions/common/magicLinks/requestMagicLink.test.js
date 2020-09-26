@@ -65,7 +65,7 @@ test('request diverted magic link admin - should send email to admin account', (
     .then(() => dbLoad({ redisKey: 'emails' }))
     .then(emails => {
       expect(emails.length).toBe(1);
-      expect(emails[0].to).toBe('auth+diverted-to-admin@georgegillams.co.uk');
+      expect(emails[0].to.startsWith(`auth+diverted-to-admin@`)).toBeTruthy();
       return true;
     });
 });

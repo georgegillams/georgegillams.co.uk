@@ -47,7 +47,7 @@ const PrivacyPolicy = () => {
         <Subsection name="Consent">
           <Paragraph>
             By clicking &quot;Accept&quot; on the cookie popup, you consent to cookies being stored on your machine, and
-            data being handled as outlined on this page. You can revoke your permission at any time by clearing your
+            data being handled as outlined on this page. You may revoke your permission at any time by clearing your
             local-storage.
           </Paragraph>
         </Subsection>

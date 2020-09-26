@@ -1,15 +1,20 @@
+import appConfig from 'helpers/appConfig';
 import nodemailer from 'nodemailer';
 
 import logger from 'utils/common/logger';
 
 let mailConfig = null;
 let transporter = null;
-if (process.env.GSUITE_EMAIL && process.env.GSUITE_APP_PASSWORD) {
+
+const user = process.env[`${appConfig.projectName}_GSUITE_EMAIL`];
+const pass = process.env[`${appConfig.projectName}_GSUITE_APP_PASSWORD`];
+
+if (user && pass) {
   mailConfig = {
     service: 'gmail',
     auth: {
-      user: process.env.GSUITE_EMAIL,
-      pass: process.env.GSUITE_APP_PASSWORD,
+      user,
+      pass,
     },
   };
   transporter = nodemailer.createTransport(mailConfig);
