@@ -7,6 +7,7 @@ import Consent from 'containers/common/Consent';
 import Analytics from 'containers/common/Analytics';
 import Authenticator from 'containers/common/Authenticator';
 import Konami from 'containers/common/Konami';
+import Notifications from 'containers/common/Notifications';
 
 import withReduxStore from 'utils/common/redux/with-redux-store';
 import appConfig from 'helpers/appConfig';
@@ -34,6 +35,7 @@ class Srr extends App {
         <Provider store={reduxStore}>
           <AppWrapper>
             <Navigation />
+            <Notifications />
             <Konami />
             <Consent />
             <Analytics />

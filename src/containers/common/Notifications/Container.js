@@ -1,15 +1,21 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import PropTypes from 'prop-types';
 import DebugObject from 'components/common/DebugObject';
 import Notification from 'gg-components/Notification/Notification';
 import STYLES from './notifications.scss';
 import { cssModules } from 'gg-components/helpers/cssModules';
+import useTabMadeVisible from 'utils/common/useTabMadeVisible';
 
 const getClassName = cssModules(STYLES);
 
 const Notifications = props => {
   const { load, notificationsState } = props;
   const { notifications } = notificationsState;
+
+  useTabMadeVisible(load);
+  useEffect(() => {
+    load();
+  }, []);
 
   const filteredNotifications =
     notifications &&
