@@ -16,232 +16,217 @@ exports[`<Photography /> should render correctly 1`] = `
     class="photography__card-container"
   >
     <a
-      class="feature-card feature-card--narrow-compact photography__card"
+      class="card feature-card feature-card--narrow-compact photography__card"
       href="https://gurushots.com/georgegillams/achievements"
-      style="text-decoration: none;"
     >
       <div
-        class="card"
+        class="card__background"
+      />
+      <div
+        class="card__outer-container card__outer-container--padded"
       >
         <div
-          class="card__background"
-        />
-        <div
-          class="card__outer-container card__outer-container--padded"
+          class="feature-card__outer-container feature-card__outer-container--narrow-compact"
         >
           <div
-            class="feature-card__outer-container feature-card__outer-container--narrow-compact"
+            class="feature-card__date feature-card__date--narrow-compact"
+          />
+          <div
+            class="feature-card__center-container feature-card__center-container--narrow-compact"
           >
             <div
-              class="feature-card__date feature-card__date--narrow-compact"
-            />
-            <div
-              class="feature-card__center-container feature-card__center-container--narrow-compact"
+              class="typography__main typography--no-padding feature-card__title"
             >
-              <div
-                class="typography__main typography--no-padding feature-card__title"
+              <h1
+                class="typography__text typography__text--section typography__link typography--no-padding"
+                id="find-me-on-gurushots"
               >
-                <h1
-                  class="typography__text typography__text--section typography__link typography--no-padding"
-                  id="find-me-on-gurushots"
-                >
-                  Find me on GuruShots
-                </h1>
-              </div>
+                Find me on GuruShots
+              </h1>
             </div>
+          </div>
+          <div
+            class="feature-card__image-container"
+          >
             <div
-              class="feature-card__image-container"
+              class="image__outer feature-card__image"
             >
               <div
-                class="image__outer feature-card__image"
+                class="image__placeholder"
+                style="padding-bottom: 100%;"
               >
                 <div
-                  class="image__placeholder"
-                  style="padding-bottom: 100%;"
+                  class="image__spinner-container"
                 >
                   <div
-                    class="image__spinner-container"
+                    class="skeleton__outer image__skeleton"
                   >
                     <div
-                      class="skeleton__outer image__skeleton"
-                    >
-                      <div
-                        class="skeleton__shimmer"
-                        style="margin-left: -0px;"
-                      />
-                    </div>
+                      class="skeleton__shimmer"
+                      style="margin-left: -0px;"
+                    />
                   </div>
-                  <img
-                    alt="card"
-                    class="image__img image__img--hidden image__img--light"
-                    src="https://i.imgur.com/Jng7EhH.png"
-                  />
-                  <img
-                    alt="card"
-                    class="image__img image__img--hidden image__img--dark"
-                    src="https://i.imgur.com/Jng7EhH.png"
-                  />
                 </div>
+                <img
+                  alt="card"
+                  class="image__img image__img--hidden image__img--light"
+                  src="https://i.imgur.com/Jng7EhH.png"
+                />
+                <img
+                  alt="card"
+                  class="image__img image__img--hidden image__img--dark"
+                  src="https://i.imgur.com/Jng7EhH.png"
+                />
               </div>
             </div>
           </div>
         </div>
-        <div
-          class="card__banner"
-        />
       </div>
+      <div
+        class="card__banner"
+      />
     </a>
     <a
-      class="feature-card feature-card--narrow-compact photography__card"
+      class="card feature-card feature-card--narrow-compact photography__card"
       href="https://www.flickr.com/people/georgegillams/"
-      style="text-decoration: none;"
     >
       <div
-        class="card"
+        class="card__background"
+      />
+      <div
+        class="card__outer-container card__outer-container--padded"
       >
         <div
-          class="card__background"
-        />
-        <div
-          class="card__outer-container card__outer-container--padded"
+          class="feature-card__outer-container feature-card__outer-container--narrow-compact"
         >
           <div
-            class="feature-card__outer-container feature-card__outer-container--narrow-compact"
+            class="feature-card__date feature-card__date--narrow-compact"
+          />
+          <div
+            class="feature-card__center-container feature-card__center-container--narrow-compact"
           >
             <div
-              class="feature-card__date feature-card__date--narrow-compact"
-            />
-            <div
-              class="feature-card__center-container feature-card__center-container--narrow-compact"
+              class="typography__main typography--no-padding feature-card__title"
             >
-              <div
-                class="typography__main typography--no-padding feature-card__title"
+              <h1
+                class="typography__text typography__text--section typography__link typography--no-padding"
+                id="find-me-on-flickr"
               >
-                <h1
-                  class="typography__text typography__text--section typography__link typography--no-padding"
-                  id="find-me-on-flickr"
-                >
-                  Find me on Flickr
-                </h1>
-              </div>
+                Find me on Flickr
+              </h1>
             </div>
+          </div>
+          <div
+            class="feature-card__image-container"
+          >
             <div
-              class="feature-card__image-container"
+              class="image__outer feature-card__image"
             >
               <div
-                class="image__outer feature-card__image"
+                class="image__placeholder"
+                style="padding-bottom: 100%;"
               >
                 <div
-                  class="image__placeholder"
-                  style="padding-bottom: 100%;"
+                  class="image__spinner-container"
                 >
                   <div
-                    class="image__spinner-container"
+                    class="skeleton__outer image__skeleton"
                   >
                     <div
-                      class="skeleton__outer image__skeleton"
-                    >
-                      <div
-                        class="skeleton__shimmer"
-                        style="margin-left: -0px;"
-                      />
-                    </div>
+                      class="skeleton__shimmer"
+                      style="margin-left: -0px;"
+                    />
                   </div>
-                  <img
-                    alt="card"
-                    class="image__img image__img--hidden image__img--light"
-                    src="https://i.imgur.com/u30cQWU.png"
-                  />
-                  <img
-                    alt="card"
-                    class="image__img image__img--hidden image__img--dark"
-                    src="https://i.imgur.com/u30cQWU.png"
-                  />
                 </div>
+                <img
+                  alt="card"
+                  class="image__img image__img--hidden image__img--light"
+                  src="https://i.imgur.com/u30cQWU.png"
+                />
+                <img
+                  alt="card"
+                  class="image__img image__img--hidden image__img--dark"
+                  src="https://i.imgur.com/u30cQWU.png"
+                />
               </div>
             </div>
           </div>
         </div>
-        <div
-          class="card__banner"
-        />
       </div>
+      <div
+        class="card__banner"
+      />
     </a>
     <a
-      class="feature-card feature-card--narrow-compact photography__card"
+      class="card feature-card feature-card--narrow-compact photography__card"
       href="https://unsplash.com/@georgegillams"
-      style="text-decoration: none;"
     >
       <div
-        class="card"
+        class="card__background"
+      />
+      <div
+        class="card__outer-container card__outer-container--padded"
       >
         <div
-          class="card__background"
-        />
-        <div
-          class="card__outer-container card__outer-container--padded"
+          class="feature-card__outer-container feature-card__outer-container--narrow-compact"
         >
           <div
-            class="feature-card__outer-container feature-card__outer-container--narrow-compact"
+            class="feature-card__date feature-card__date--narrow-compact"
+          />
+          <div
+            class="feature-card__center-container feature-card__center-container--narrow-compact"
           >
             <div
-              class="feature-card__date feature-card__date--narrow-compact"
-            />
-            <div
-              class="feature-card__center-container feature-card__center-container--narrow-compact"
+              class="typography__main typography--no-padding feature-card__title"
             >
-              <div
-                class="typography__main typography--no-padding feature-card__title"
+              <h1
+                class="typography__text typography__text--section typography__link typography--no-padding"
+                id="find-me-on-unsplash"
               >
-                <h1
-                  class="typography__text typography__text--section typography__link typography--no-padding"
-                  id="find-me-on-unsplash"
-                >
-                  Find me on Unsplash
-                </h1>
-              </div>
+                Find me on Unsplash
+              </h1>
             </div>
+          </div>
+          <div
+            class="feature-card__image-container"
+          >
             <div
-              class="feature-card__image-container"
+              class="image__outer feature-card__image"
             >
               <div
-                class="image__outer feature-card__image"
+                class="image__placeholder"
+                style="padding-bottom: 100%;"
               >
                 <div
-                  class="image__placeholder"
-                  style="padding-bottom: 100%;"
+                  class="image__spinner-container"
                 >
                   <div
-                    class="image__spinner-container"
+                    class="skeleton__outer image__skeleton"
                   >
                     <div
-                      class="skeleton__outer image__skeleton"
-                    >
-                      <div
-                        class="skeleton__shimmer"
-                        style="margin-left: -0px;"
-                      />
-                    </div>
+                      class="skeleton__shimmer"
+                      style="margin-left: -0px;"
+                    />
                   </div>
-                  <img
-                    alt="card"
-                    class="image__img image__img--hidden image__img--light"
-                    src="https://i.imgur.com/obBqvqK.png"
-                  />
-                  <img
-                    alt="card"
-                    class="image__img image__img--hidden image__img--dark"
-                    src="https://i.imgur.com/obBqvqK.png"
-                  />
                 </div>
+                <img
+                  alt="card"
+                  class="image__img image__img--hidden image__img--light"
+                  src="https://i.imgur.com/obBqvqK.png"
+                />
+                <img
+                  alt="card"
+                  class="image__img image__img--hidden image__img--dark"
+                  src="https://i.imgur.com/obBqvqK.png"
+                />
               </div>
             </div>
           </div>
         </div>
-        <div
-          class="card__banner"
-        />
       </div>
+      <div
+        class="card__banner"
+      />
     </a>
   </div>
   <div

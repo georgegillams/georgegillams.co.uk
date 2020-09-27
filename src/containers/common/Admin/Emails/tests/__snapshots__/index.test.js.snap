@@ -126,135 +126,120 @@ exports[`<AdminEmails /> should render correctly with emails 1`] = `
       class="split-detail-view__list-view"
     >
       <div>
-        <div
-          class="admin-emails__card"
+        <button
+          class="card admin-emails__card"
           id="1"
-          role="button"
           style="cursor: pointer;"
-          tabindex="0"
+          type="button"
         >
           <div
-            class="card"
+            class="card__background"
+          />
+          <div
+            class="card__outer-container"
           >
             <div
-              class="card__background"
-            />
-            <div
-              class="card__outer-container"
+              class="split-detail-item__content"
             >
               <div
-                class="split-detail-item__content"
+                class="typography__main typography--no-padding"
               >
-                <div
-                  class="typography__main typography--no-padding"
+                <h2
+                  class="typography__text typography__text--subsection typography--no-padding"
+                  id="email-1"
                 >
-                  <h2
-                    class="typography__text typography__text--subsection typography--no-padding"
-                    id="email-1"
-                  >
-                    Email 1
-                  </h2>
-                  <span
-                    class="paragraph"
-                  >
-                    <br />
-                    id: 
-                    1
-                  </span>
-                </div>
+                  Email 1
+                </h2>
+                <span
+                  class="paragraph"
+                >
+                  <br />
+                  id: 
+                  1
+                </span>
               </div>
             </div>
-            <div
-              class="card__banner"
-            />
           </div>
-        </div>
-        <div
-          class="admin-emails__card"
+          <div
+            class="card__banner"
+          />
+        </button>
+        <button
+          class="card admin-emails__card"
           id="2"
-          role="button"
           style="cursor: pointer;"
-          tabindex="0"
+          type="button"
         >
           <div
-            class="card"
+            class="card__background"
+          />
+          <div
+            class="card__outer-container"
           >
             <div
-              class="card__background"
-            />
-            <div
-              class="card__outer-container"
+              class="split-detail-item__content"
             >
               <div
-                class="split-detail-item__content"
+                class="typography__main typography--no-padding"
               >
-                <div
-                  class="typography__main typography--no-padding"
+                <h2
+                  class="typography__text typography__text--subsection typography--no-padding"
+                  id="email-2"
                 >
-                  <h2
-                    class="typography__text typography__text--subsection typography--no-padding"
-                    id="email-2"
-                  >
-                    Email 2
-                  </h2>
-                  <span
-                    class="paragraph"
-                  >
-                    <br />
-                    id: 
-                    2
-                  </span>
-                </div>
+                  Email 2
+                </h2>
+                <span
+                  class="paragraph"
+                >
+                  <br />
+                  id: 
+                  2
+                </span>
               </div>
             </div>
-            <div
-              class="card__banner"
-            />
           </div>
-        </div>
-        <div
-          class="admin-emails__card"
+          <div
+            class="card__banner"
+          />
+        </button>
+        <button
+          class="card admin-emails__card"
           id="3"
-          role="button"
           style="cursor: pointer;"
-          tabindex="0"
+          type="button"
         >
           <div
-            class="card"
+            class="card__background"
+          />
+          <div
+            class="card__outer-container"
           >
             <div
-              class="card__background"
-            />
-            <div
-              class="card__outer-container"
+              class="split-detail-item__content"
             >
               <div
-                class="split-detail-item__content"
+                class="typography__main typography--no-padding"
               >
-                <div
-                  class="typography__main typography--no-padding"
+                <h2
+                  class="typography__text typography__text--subsection typography--no-padding"
+                  id="email-3"
                 >
-                  <h2
-                    class="typography__text typography__text--subsection typography--no-padding"
-                    id="email-3"
-                  >
-                    Email 3
-                  </h2>
-                  <span
-                    class="paragraph"
-                  >
-                    <br />
-                    id: 
-                    3
-                  </span>
-                </div>
+                  Email 3
+                </h2>
+                <span
+                  class="paragraph"
+                >
+                  <br />
+                  id: 
+                  3
+                </span>
               </div>
             </div>
-            <div
-              class="card__banner"
-            />
           </div>
-        </div>
+          <div
+            class="card__banner"
+          />
+        </button>
       </div>
     </div>
   </div>
