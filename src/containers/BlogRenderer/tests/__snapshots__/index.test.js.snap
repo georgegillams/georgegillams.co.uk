@@ -109,18 +109,15 @@ exports[`<BlogRenderer /> should render correctly with blog 1`] = `
     <div
       class="blog-renderer__tag-list"
     >
-      <a
-        aria-label="travel"
+      <div
         class="tag__outer blog-renderer__tag"
-        role="button"
-        to="/blog?filter=travel"
       >
         <span
           class="tag tag--travel"
         >
           Travel
         </span>
-      </a>
+      </div>
     </div>
     <div
       class="markdown-renderer__outer"
@@ -248,18 +245,15 @@ exports[`<BlogRenderer /> should render correctly with blog and admin 1`] = `
     <div
       class="blog-renderer__tag-list"
     >
-      <a
-        aria-label="travel"
+      <div
         class="tag__outer blog-renderer__tag"
-        role="button"
-        to="/blog?filter=travel"
       >
         <span
           class="tag tag--travel"
         >
           Travel
         </span>
-      </a>
+      </div>
     </div>
     <div
       class="markdown-renderer__outer"
@@ -577,18 +571,15 @@ exports[`<BlogRenderer /> should render correctly with ssrBlog 1`] = `
     <div
       class="blog-renderer__tag-list"
     >
-      <a
-        aria-label="travel"
+      <div
         class="tag__outer blog-renderer__tag"
-        role="button"
-        to="/blog?filter=travel"
       >
         <span
           class="tag tag--travel"
         >
           Travel
         </span>
-      </a>
+      </div>
     </div>
     <div
       class="markdown-renderer__outer"

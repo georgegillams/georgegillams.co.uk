@@ -181,216 +181,196 @@ exports[`<Home /> should render correctly 1`] = `
   <div
     class="home__card-container"
   >
-    <div
-      class="feature-card feature-card--narrow-compact home__card"
+    <button
+      class="card feature-card feature-card--narrow-compact home__card"
       role="link"
       style="cursor: pointer;"
-      tabindex="0"
+      type="button"
     >
       <div
-        class="card"
+        class="card__background"
+      />
+      <div
+        class="card__outer-container card__outer-container--padded"
       >
         <div
-          class="card__background"
-        />
-        <div
-          class="card__outer-container card__outer-container--padded"
+          class="feature-card__outer-container feature-card__outer-container--narrow-compact"
         >
           <div
-            class="feature-card__outer-container feature-card__outer-container--narrow-compact"
+            class="feature-card__date feature-card__date--narrow-compact"
+          />
+          <div
+            class="feature-card__center-container feature-card__center-container--narrow-compact"
           >
             <div
-              class="feature-card__date feature-card__date--narrow-compact"
-            />
-            <div
-              class="feature-card__center-container feature-card__center-container--narrow-compact"
+              class="typography__main typography--no-padding feature-card__title"
             >
-              <div
-                class="typography__main typography--no-padding feature-card__title"
+              <h1
+                class="typography__text typography__text--section typography__link typography--no-padding"
+                id="blog"
               >
-                <h1
-                  class="typography__text typography__text--section typography__link typography--no-padding"
-                  id="blog"
-                >
-                  Blog
-                </h1>
-              </div>
+                Blog
+              </h1>
             </div>
           </div>
         </div>
-        <div
-          class="card__banner"
-        />
       </div>
-    </div>
-    <div
-      class="feature-card feature-card--narrow-compact home__card"
+      <div
+        class="card__banner"
+      />
+    </button>
+    <button
+      class="card feature-card feature-card--narrow-compact home__card"
       role="link"
       style="cursor: pointer;"
-      tabindex="0"
+      type="button"
     >
       <div
-        class="card"
+        class="card__background"
+      />
+      <div
+        class="card__outer-container card__outer-container--padded"
       >
         <div
-          class="card__background"
-        />
-        <div
-          class="card__outer-container card__outer-container--padded"
+          class="feature-card__outer-container feature-card__outer-container--narrow-compact"
         >
           <div
-            class="feature-card__outer-container feature-card__outer-container--narrow-compact"
+            class="feature-card__date feature-card__date--narrow-compact"
+          />
+          <div
+            class="feature-card__center-container feature-card__center-container--narrow-compact"
           >
             <div
-              class="feature-card__date feature-card__date--narrow-compact"
-            />
-            <div
-              class="feature-card__center-container feature-card__center-container--narrow-compact"
+              class="typography__main typography--no-padding feature-card__title"
             >
-              <div
-                class="typography__main typography--no-padding feature-card__title"
+              <h1
+                class="typography__text typography__text--section typography__link typography--no-padding"
+                id="travel"
               >
-                <h1
-                  class="typography__text typography__text--section typography__link typography--no-padding"
-                  id="travel"
-                >
-                  Travel
-                </h1>
-              </div>
+                Travel
+              </h1>
             </div>
           </div>
         </div>
-        <div
-          class="card__banner"
-        />
       </div>
-    </div>
-    <div
-      class="feature-card feature-card--narrow-compact home__card"
+      <div
+        class="card__banner"
+      />
+    </button>
+    <button
+      class="card feature-card feature-card--narrow-compact home__card"
       role="link"
       style="cursor: pointer;"
-      tabindex="0"
+      type="button"
     >
       <div
-        class="card"
+        class="card__background"
+      />
+      <div
+        class="card__outer-container card__outer-container--padded"
       >
         <div
-          class="card__background"
-        />
-        <div
-          class="card__outer-container card__outer-container--padded"
+          class="feature-card__outer-container feature-card__outer-container--narrow-compact"
         >
           <div
-            class="feature-card__outer-container feature-card__outer-container--narrow-compact"
+            class="feature-card__date feature-card__date--narrow-compact"
+          />
+          <div
+            class="feature-card__center-container feature-card__center-container--narrow-compact"
           >
             <div
-              class="feature-card__date feature-card__date--narrow-compact"
-            />
-            <div
-              class="feature-card__center-container feature-card__center-container--narrow-compact"
+              class="typography__main typography--no-padding feature-card__title"
             >
-              <div
-                class="typography__main typography--no-padding feature-card__title"
+              <h1
+                class="typography__text typography__text--section typography__link typography--no-padding"
+                id="photography"
               >
-                <h1
-                  class="typography__text typography__text--section typography__link typography--no-padding"
-                  id="photography"
-                >
-                  Photography
-                </h1>
-              </div>
+                Photography
+              </h1>
             </div>
           </div>
         </div>
-        <div
-          class="card__banner"
-        />
       </div>
-    </div>
-    <div
-      class="feature-card feature-card--narrow-compact home__card"
+      <div
+        class="card__banner"
+      />
+    </button>
+    <button
+      class="card feature-card feature-card--narrow-compact home__card"
       role="link"
       style="cursor: pointer;"
-      tabindex="0"
+      type="button"
     >
       <div
-        class="card"
+        class="card__background"
+      />
+      <div
+        class="card__outer-container card__outer-container--padded"
       >
         <div
-          class="card__background"
-        />
-        <div
-          class="card__outer-container card__outer-container--padded"
+          class="feature-card__outer-container feature-card__outer-container--narrow-compact"
         >
           <div
-            class="feature-card__outer-container feature-card__outer-container--narrow-compact"
+            class="feature-card__date feature-card__date--narrow-compact"
+          />
+          <div
+            class="feature-card__center-container feature-card__center-container--narrow-compact"
           >
             <div
-              class="feature-card__date feature-card__date--narrow-compact"
-            />
-            <div
-              class="feature-card__center-container feature-card__center-container--narrow-compact"
+              class="typography__main typography--no-padding feature-card__title"
             >
-              <div
-                class="typography__main typography--no-padding feature-card__title"
+              <h1
+                class="typography__text typography__text--section typography__link typography--no-padding"
+                id="work"
               >
-                <h1
-                  class="typography__text typography__text--section typography__link typography--no-padding"
-                  id="work"
-                >
-                  Work
-                </h1>
-              </div>
+                Work
+              </h1>
             </div>
           </div>
         </div>
-        <div
-          class="card__banner"
-        />
       </div>
-    </div>
-    <div
-      class="feature-card feature-card--narrow-compact home__card"
+      <div
+        class="card__banner"
+      />
+    </button>
+    <button
+      class="card feature-card feature-card--narrow-compact home__card"
       role="link"
       style="cursor: pointer;"
-      tabindex="0"
+      type="button"
     >
       <div
-        class="card"
+        class="card__background"
+      />
+      <div
+        class="card__outer-container card__outer-container--padded"
       >
         <div
-          class="card__background"
-        />
-        <div
-          class="card__outer-container card__outer-container--padded"
+          class="feature-card__outer-container feature-card__outer-container--narrow-compact"
         >
           <div
-            class="feature-card__outer-container feature-card__outer-container--narrow-compact"
+            class="feature-card__date feature-card__date--narrow-compact"
+          />
+          <div
+            class="feature-card__center-container feature-card__center-container--narrow-compact"
           >
             <div
-              class="feature-card__date feature-card__date--narrow-compact"
-            />
-            <div
-              class="feature-card__center-container feature-card__center-container--narrow-compact"
+              class="typography__main typography--no-padding feature-card__title"
             >
-              <div
-                class="typography__main typography--no-padding feature-card__title"
+              <h1
+                class="typography__text typography__text--section typography__link typography--no-padding"
+                id="contact"
               >
-                <h1
-                  class="typography__text typography__text--section typography__link typography--no-padding"
-                  id="contact"
-                >
-                  Contact
-                </h1>
-              </div>
+                Contact
+              </h1>
             </div>
           </div>
         </div>
-        <div
-          class="card__banner"
-        />
       </div>
-    </div>
+      <div
+        class="card__banner"
+      />
+    </button>
     <div
       class="skeleton__outer skeleton__card--compact"
     >
@@ -584,300 +564,272 @@ exports[`<Home /> should render correctly with admin user 1`] = `
   <div
     class="home__card-container"
   >
-    <div
-      class="feature-card feature-card--narrow-compact home__card"
+    <button
+      class="card feature-card feature-card--narrow-compact home__card"
       role="link"
       style="cursor: pointer;"
-      tabindex="0"
+      type="button"
     >
       <div
-        class="card"
+        class="card__background"
+      />
+      <div
+        class="card__outer-container card__outer-container--padded"
       >
         <div
-          class="card__background"
-        />
-        <div
-          class="card__outer-container card__outer-container--padded"
+          class="feature-card__outer-container feature-card__outer-container--narrow-compact"
         >
           <div
-            class="feature-card__outer-container feature-card__outer-container--narrow-compact"
+            class="feature-card__date feature-card__date--narrow-compact"
+          />
+          <div
+            class="feature-card__center-container feature-card__center-container--narrow-compact"
           >
             <div
-              class="feature-card__date feature-card__date--narrow-compact"
-            />
-            <div
-              class="feature-card__center-container feature-card__center-container--narrow-compact"
+              class="typography__main typography--no-padding feature-card__title"
             >
-              <div
-                class="typography__main typography--no-padding feature-card__title"
+              <h1
+                class="typography__text typography__text--section typography__link typography--no-padding"
+                id="blog"
               >
-                <h1
-                  class="typography__text typography__text--section typography__link typography--no-padding"
-                  id="blog"
-                >
-                  Blog
-                </h1>
-              </div>
+                Blog
+              </h1>
             </div>
           </div>
         </div>
-        <div
-          class="card__banner"
-        />
       </div>
-    </div>
-    <div
-      class="feature-card feature-card--narrow-compact home__card"
+      <div
+        class="card__banner"
+      />
+    </button>
+    <button
+      class="card feature-card feature-card--narrow-compact home__card"
       role="link"
       style="cursor: pointer;"
-      tabindex="0"
+      type="button"
     >
       <div
-        class="card"
+        class="card__background"
+      />
+      <div
+        class="card__outer-container card__outer-container--padded"
       >
         <div
-          class="card__background"
-        />
-        <div
-          class="card__outer-container card__outer-container--padded"
+          class="feature-card__outer-container feature-card__outer-container--narrow-compact"
         >
           <div
-            class="feature-card__outer-container feature-card__outer-container--narrow-compact"
+            class="feature-card__date feature-card__date--narrow-compact"
+          />
+          <div
+            class="feature-card__center-container feature-card__center-container--narrow-compact"
           >
             <div
-              class="feature-card__date feature-card__date--narrow-compact"
-            />
-            <div
-              class="feature-card__center-container feature-card__center-container--narrow-compact"
+              class="typography__main typography--no-padding feature-card__title"
             >
-              <div
-                class="typography__main typography--no-padding feature-card__title"
+              <h1
+                class="typography__text typography__text--section typography__link typography--no-padding"
+                id="travel"
               >
-                <h1
-                  class="typography__text typography__text--section typography__link typography--no-padding"
-                  id="travel"
-                >
-                  Travel
-                </h1>
-              </div>
+                Travel
+              </h1>
             </div>
           </div>
         </div>
-        <div
-          class="card__banner"
-        />
       </div>
-    </div>
-    <div
-      class="feature-card feature-card--narrow-compact home__card"
+      <div
+        class="card__banner"
+      />
+    </button>
+    <button
+      class="card feature-card feature-card--narrow-compact home__card"
       role="link"
       style="cursor: pointer;"
-      tabindex="0"
+      type="button"
     >
       <div
-        class="card"
+        class="card__background"
+      />
+      <div
+        class="card__outer-container card__outer-container--padded"
       >
         <div
-          class="card__background"
-        />
-        <div
-          class="card__outer-container card__outer-container--padded"
+          class="feature-card__outer-container feature-card__outer-container--narrow-compact"
         >
           <div
-            class="feature-card__outer-container feature-card__outer-container--narrow-compact"
+            class="feature-card__date feature-card__date--narrow-compact"
+          />
+          <div
+            class="feature-card__center-container feature-card__center-container--narrow-compact"
           >
             <div
-              class="feature-card__date feature-card__date--narrow-compact"
-            />
-            <div
-              class="feature-card__center-container feature-card__center-container--narrow-compact"
+              class="typography__main typography--no-padding feature-card__title"
             >
-              <div
-                class="typography__main typography--no-padding feature-card__title"
+              <h1
+                class="typography__text typography__text--section typography__link typography--no-padding"
+                id="photography"
               >
-                <h1
-                  class="typography__text typography__text--section typography__link typography--no-padding"
-                  id="photography"
-                >
-                  Photography
-                </h1>
-              </div>
+                Photography
+              </h1>
             </div>
           </div>
         </div>
-        <div
-          class="card__banner"
-        />
       </div>
-    </div>
-    <div
-      class="feature-card feature-card--narrow-compact home__card"
+      <div
+        class="card__banner"
+      />
+    </button>
+    <button
+      class="card feature-card feature-card--narrow-compact home__card"
       role="link"
       style="cursor: pointer;"
-      tabindex="0"
+      type="button"
     >
       <div
-        class="card"
+        class="card__background"
+      />
+      <div
+        class="card__outer-container card__outer-container--padded"
       >
         <div
-          class="card__background"
-        />
-        <div
-          class="card__outer-container card__outer-container--padded"
+          class="feature-card__outer-container feature-card__outer-container--narrow-compact"
         >
           <div
-            class="feature-card__outer-container feature-card__outer-container--narrow-compact"
+            class="feature-card__date feature-card__date--narrow-compact"
+          />
+          <div
+            class="feature-card__center-container feature-card__center-container--narrow-compact"
           >
             <div
-              class="feature-card__date feature-card__date--narrow-compact"
-            />
-            <div
-              class="feature-card__center-container feature-card__center-container--narrow-compact"
+              class="typography__main typography--no-padding feature-card__title"
             >
-              <div
-                class="typography__main typography--no-padding feature-card__title"
+              <h1
+                class="typography__text typography__text--section typography__link typography--no-padding"
+                id="work"
               >
-                <h1
-                  class="typography__text typography__text--section typography__link typography--no-padding"
-                  id="work"
-                >
-                  Work
-                </h1>
-              </div>
+                Work
+              </h1>
             </div>
           </div>
         </div>
-        <div
-          class="card__banner"
-        />
       </div>
-    </div>
-    <div
-      class="feature-card feature-card--narrow-compact home__card"
+      <div
+        class="card__banner"
+      />
+    </button>
+    <button
+      class="card feature-card feature-card--narrow-compact home__card"
       role="link"
       style="cursor: pointer;"
-      tabindex="0"
+      type="button"
     >
       <div
-        class="card"
+        class="card__background"
+      />
+      <div
+        class="card__outer-container card__outer-container--padded"
       >
         <div
-          class="card__background"
-        />
-        <div
-          class="card__outer-container card__outer-container--padded"
+          class="feature-card__outer-container feature-card__outer-container--narrow-compact"
         >
           <div
-            class="feature-card__outer-container feature-card__outer-container--narrow-compact"
+            class="feature-card__date feature-card__date--narrow-compact"
+          />
+          <div
+            class="feature-card__center-container feature-card__center-container--narrow-compact"
           >
             <div
-              class="feature-card__date feature-card__date--narrow-compact"
-            />
-            <div
-              class="feature-card__center-container feature-card__center-container--narrow-compact"
+              class="typography__main typography--no-padding feature-card__title"
             >
-              <div
-                class="typography__main typography--no-padding feature-card__title"
+              <h1
+                class="typography__text typography__text--section typography__link typography--no-padding"
+                id="contact"
               >
-                <h1
-                  class="typography__text typography__text--section typography__link typography--no-padding"
-                  id="contact"
-                >
-                  Contact
-                </h1>
-              </div>
+                Contact
+              </h1>
             </div>
           </div>
         </div>
-        <div
-          class="card__banner"
-        />
       </div>
-    </div>
-    <div
-      class="feature-card feature-card--narrow-compact home__card"
+      <div
+        class="card__banner"
+      />
+    </button>
+    <button
+      class="card feature-card feature-card--narrow-compact home__card"
       role="link"
       style="cursor: pointer;"
-      tabindex="0"
+      type="button"
     >
       <div
-        class="card"
+        class="card__background"
+      />
+      <div
+        class="card__outer-container card__outer-container--padded"
       >
         <div
-          class="card__background"
-        />
-        <div
-          class="card__outer-container card__outer-container--padded"
+          class="feature-card__outer-container feature-card__outer-container--narrow-compact"
         >
           <div
-            class="feature-card__outer-container feature-card__outer-container--narrow-compact"
+            class="feature-card__date feature-card__date--narrow-compact"
+          />
+          <div
+            class="feature-card__center-container feature-card__center-container--narrow-compact"
           >
             <div
-              class="feature-card__date feature-card__date--narrow-compact"
-            />
-            <div
-              class="feature-card__center-container feature-card__center-container--narrow-compact"
+              class="typography__main typography--no-padding feature-card__title"
             >
-              <div
-                class="typography__main typography--no-padding feature-card__title"
+              <h1
+                class="typography__text typography__text--section typography__link typography--no-padding"
+                id="account"
               >
-                <h1
-                  class="typography__text typography__text--section typography__link typography--no-padding"
-                  id="account"
-                >
-                  Account
-                </h1>
-              </div>
+                Account
+              </h1>
             </div>
           </div>
         </div>
-        <div
-          class="card__banner"
-        />
       </div>
-    </div>
-    <div
-      class="feature-card feature-card--narrow-compact home__card"
+      <div
+        class="card__banner"
+      />
+    </button>
+    <button
+      class="card feature-card feature-card--narrow-compact home__card"
       role="link"
       style="cursor: pointer;"
-      tabindex="0"
+      type="button"
     >
       <div
-        class="card"
+        class="card__background"
+      />
+      <div
+        class="card__outer-container card__outer-container--padded"
       >
         <div
-          class="card__background"
-        />
-        <div
-          class="card__outer-container card__outer-container--padded"
+          class="feature-card__outer-container feature-card__outer-container--narrow-compact"
         >
           <div
-            class="feature-card__outer-container feature-card__outer-container--narrow-compact"
+            class="feature-card__date feature-card__date--narrow-compact"
+          />
+          <div
+            class="feature-card__center-container feature-card__center-container--narrow-compact"
           >
             <div
-              class="feature-card__date feature-card__date--narrow-compact"
-            />
-            <div
-              class="feature-card__center-container feature-card__center-container--narrow-compact"
+              class="typography__main typography--no-padding feature-card__title"
             >
-              <div
-                class="typography__main typography--no-padding feature-card__title"
+              <h1
+                class="typography__text typography__text--section typography__link typography--no-padding"
+                id="admin-area"
               >
-                <h1
-                  class="typography__text typography__text--section typography__link typography--no-padding"
-                  id="admin-area"
-                >
-                  Admin area
-                </h1>
-              </div>
+                Admin area
+              </h1>
             </div>
           </div>
         </div>
-        <div
-          class="card__banner"
-        />
       </div>
-    </div>
+      <div
+        class="card__banner"
+      />
+    </button>
   </div>
 </div>
 `;
@@ -1063,258 +1015,234 @@ exports[`<Home /> should render correctly with no user 1`] = `
   <div
     class="home__card-container"
   >
-    <div
-      class="feature-card feature-card--narrow-compact home__card"
+    <button
+      class="card feature-card feature-card--narrow-compact home__card"
       role="link"
       style="cursor: pointer;"
-      tabindex="0"
+      type="button"
     >
       <div
-        class="card"
+        class="card__background"
+      />
+      <div
+        class="card__outer-container card__outer-container--padded"
       >
         <div
-          class="card__background"
-        />
-        <div
-          class="card__outer-container card__outer-container--padded"
+          class="feature-card__outer-container feature-card__outer-container--narrow-compact"
         >
           <div
-            class="feature-card__outer-container feature-card__outer-container--narrow-compact"
+            class="feature-card__date feature-card__date--narrow-compact"
+          />
+          <div
+            class="feature-card__center-container feature-card__center-container--narrow-compact"
           >
             <div
-              class="feature-card__date feature-card__date--narrow-compact"
-            />
-            <div
-              class="feature-card__center-container feature-card__center-container--narrow-compact"
+              class="typography__main typography--no-padding feature-card__title"
             >
-              <div
-                class="typography__main typography--no-padding feature-card__title"
+              <h1
+                class="typography__text typography__text--section typography__link typography--no-padding"
+                id="blog"
               >
-                <h1
-                  class="typography__text typography__text--section typography__link typography--no-padding"
-                  id="blog"
-                >
-                  Blog
-                </h1>
-              </div>
+                Blog
+              </h1>
             </div>
           </div>
         </div>
-        <div
-          class="card__banner"
-        />
       </div>
-    </div>
-    <div
-      class="feature-card feature-card--narrow-compact home__card"
+      <div
+        class="card__banner"
+      />
+    </button>
+    <button
+      class="card feature-card feature-card--narrow-compact home__card"
       role="link"
       style="cursor: pointer;"
-      tabindex="0"
+      type="button"
     >
       <div
-        class="card"
+        class="card__background"
+      />
+      <div
+        class="card__outer-container card__outer-container--padded"
       >
         <div
-          class="card__background"
-        />
-        <div
-          class="card__outer-container card__outer-container--padded"
+          class="feature-card__outer-container feature-card__outer-container--narrow-compact"
         >
           <div
-            class="feature-card__outer-container feature-card__outer-container--narrow-compact"
+            class="feature-card__date feature-card__date--narrow-compact"
+          />
+          <div
+            class="feature-card__center-container feature-card__center-container--narrow-compact"
           >
             <div
-              class="feature-card__date feature-card__date--narrow-compact"
-            />
-            <div
-              class="feature-card__center-container feature-card__center-container--narrow-compact"
+              class="typography__main typography--no-padding feature-card__title"
             >
-              <div
-                class="typography__main typography--no-padding feature-card__title"
+              <h1
+                class="typography__text typography__text--section typography__link typography--no-padding"
+                id="travel"
               >
-                <h1
-                  class="typography__text typography__text--section typography__link typography--no-padding"
-                  id="travel"
-                >
-                  Travel
-                </h1>
-              </div>
+                Travel
+              </h1>
             </div>
           </div>
         </div>
-        <div
-          class="card__banner"
-        />
       </div>
-    </div>
-    <div
-      class="feature-card feature-card--narrow-compact home__card"
+      <div
+        class="card__banner"
+      />
+    </button>
+    <button
+      class="card feature-card feature-card--narrow-compact home__card"
       role="link"
       style="cursor: pointer;"
-      tabindex="0"
+      type="button"
     >
       <div
-        class="card"
+        class="card__background"
+      />
+      <div
+        class="card__outer-container card__outer-container--padded"
       >
         <div
-          class="card__background"
-        />
-        <div
-          class="card__outer-container card__outer-container--padded"
+          class="feature-card__outer-container feature-card__outer-container--narrow-compact"
         >
           <div
-            class="feature-card__outer-container feature-card__outer-container--narrow-compact"
+            class="feature-card__date feature-card__date--narrow-compact"
+          />
+          <div
+            class="feature-card__center-container feature-card__center-container--narrow-compact"
           >
             <div
-              class="feature-card__date feature-card__date--narrow-compact"
-            />
-            <div
-              class="feature-card__center-container feature-card__center-container--narrow-compact"
+              class="typography__main typography--no-padding feature-card__title"
             >
-              <div
-                class="typography__main typography--no-padding feature-card__title"
+              <h1
+                class="typography__text typography__text--section typography__link typography--no-padding"
+                id="photography"
               >
-                <h1
-                  class="typography__text typography__text--section typography__link typography--no-padding"
-                  id="photography"
-                >
-                  Photography
-                </h1>
-              </div>
+                Photography
+              </h1>
             </div>
           </div>
         </div>
-        <div
-          class="card__banner"
-        />
       </div>
-    </div>
-    <div
-      class="feature-card feature-card--narrow-compact home__card"
+      <div
+        class="card__banner"
+      />
+    </button>
+    <button
+      class="card feature-card feature-card--narrow-compact home__card"
       role="link"
       style="cursor: pointer;"
-      tabindex="0"
+      type="button"
     >
       <div
-        class="card"
+        class="card__background"
+      />
+      <div
+        class="card__outer-container card__outer-container--padded"
       >
         <div
-          class="card__background"
-        />
-        <div
-          class="card__outer-container card__outer-container--padded"
+          class="feature-card__outer-container feature-card__outer-container--narrow-compact"
         >
           <div
-            class="feature-card__outer-container feature-card__outer-container--narrow-compact"
+            class="feature-card__date feature-card__date--narrow-compact"
+          />
+          <div
+            class="feature-card__center-container feature-card__center-container--narrow-compact"
           >
             <div
-              class="feature-card__date feature-card__date--narrow-compact"
-            />
-            <div
-              class="feature-card__center-container feature-card__center-container--narrow-compact"
+              class="typography__main typography--no-padding feature-card__title"
             >
-              <div
-                class="typography__main typography--no-padding feature-card__title"
+              <h1
+                class="typography__text typography__text--section typography__link typography--no-padding"
+                id="work"
               >
-                <h1
-                  class="typography__text typography__text--section typography__link typography--no-padding"
-                  id="work"
-                >
-                  Work
-                </h1>
-              </div>
+                Work
+              </h1>
             </div>
           </div>
         </div>
-        <div
-          class="card__banner"
-        />
       </div>
-    </div>
-    <div
-      class="feature-card feature-card--narrow-compact home__card"
+      <div
+        class="card__banner"
+      />
+    </button>
+    <button
+      class="card feature-card feature-card--narrow-compact home__card"
       role="link"
       style="cursor: pointer;"
-      tabindex="0"
+      type="button"
     >
       <div
-        class="card"
+        class="card__background"
+      />
+      <div
+        class="card__outer-container card__outer-container--padded"
       >
         <div
-          class="card__background"
-        />
-        <div
-          class="card__outer-container card__outer-container--padded"
+          class="feature-card__outer-container feature-card__outer-container--narrow-compact"
         >
           <div
-            class="feature-card__outer-container feature-card__outer-container--narrow-compact"
+            class="feature-card__date feature-card__date--narrow-compact"
+          />
+          <div
+            class="feature-card__center-container feature-card__center-container--narrow-compact"
           >
             <div
-              class="feature-card__date feature-card__date--narrow-compact"
-            />
-            <div
-              class="feature-card__center-container feature-card__center-container--narrow-compact"
+              class="typography__main typography--no-padding feature-card__title"
             >
-              <div
-                class="typography__main typography--no-padding feature-card__title"
+              <h1
+                class="typography__text typography__text--section typography__link typography--no-padding"
+                id="contact"
               >
-                <h1
-                  class="typography__text typography__text--section typography__link typography--no-padding"
-                  id="contact"
-                >
-                  Contact
-                </h1>
-              </div>
+                Contact
+              </h1>
             </div>
           </div>
         </div>
-        <div
-          class="card__banner"
-        />
       </div>
-    </div>
-    <div
-      class="feature-card feature-card--narrow-compact home__card"
+      <div
+        class="card__banner"
+      />
+    </button>
+    <button
+      class="card feature-card feature-card--narrow-compact home__card"
       role="link"
       style="cursor: pointer;"
-      tabindex="0"
+      type="button"
     >
       <div
-        class="card"
+        class="card__background"
+      />
+      <div
+        class="card__outer-container card__outer-container--padded"
       >
         <div
-          class="card__background"
-        />
-        <div
-          class="card__outer-container card__outer-container--padded"
+          class="feature-card__outer-container feature-card__outer-container--narrow-compact"
         >
           <div
-            class="feature-card__outer-container feature-card__outer-container--narrow-compact"
+            class="feature-card__date feature-card__date--narrow-compact"
+          />
+          <div
+            class="feature-card__center-container feature-card__center-container--narrow-compact"
           >
             <div
-              class="feature-card__date feature-card__date--narrow-compact"
-            />
-            <div
-              class="feature-card__center-container feature-card__center-container--narrow-compact"
+              class="typography__main typography--no-padding feature-card__title"
             >
-              <div
-                class="typography__main typography--no-padding feature-card__title"
+              <h1
+                class="typography__text typography__text--section typography__link typography--no-padding"
+                id="sign-in"
               >
-                <h1
-                  class="typography__text typography__text--section typography__link typography--no-padding"
-                  id="sign-in"
-                >
-                  Sign in
-                </h1>
-              </div>
+                Sign in
+              </h1>
             </div>
           </div>
         </div>
-        <div
-          class="card__banner"
-        />
       </div>
-    </div>
+      <div
+        class="card__banner"
+      />
+    </button>
   </div>
 </div>
 `;
@@ -1500,258 +1428,234 @@ exports[`<Home /> should render correctly with user 1`] = `
   <div
     class="home__card-container"
   >
-    <div
-      class="feature-card feature-card--narrow-compact home__card"
+    <button
+      class="card feature-card feature-card--narrow-compact home__card"
       role="link"
       style="cursor: pointer;"
-      tabindex="0"
+      type="button"
     >
       <div
-        class="card"
+        class="card__background"
+      />
+      <div
+        class="card__outer-container card__outer-container--padded"
       >
         <div
-          class="card__background"
-        />
-        <div
-          class="card__outer-container card__outer-container--padded"
+          class="feature-card__outer-container feature-card__outer-container--narrow-compact"
         >
           <div
-            class="feature-card__outer-container feature-card__outer-container--narrow-compact"
+            class="feature-card__date feature-card__date--narrow-compact"
+          />
+          <div
+            class="feature-card__center-container feature-card__center-container--narrow-compact"
           >
             <div
-              class="feature-card__date feature-card__date--narrow-compact"
-            />
-            <div
-              class="feature-card__center-container feature-card__center-container--narrow-compact"
+              class="typography__main typography--no-padding feature-card__title"
             >
-              <div
-                class="typography__main typography--no-padding feature-card__title"
+              <h1
+                class="typography__text typography__text--section typography__link typography--no-padding"
+                id="blog"
               >
-                <h1
-                  class="typography__text typography__text--section typography__link typography--no-padding"
-                  id="blog"
-                >
-                  Blog
-                </h1>
-              </div>
+                Blog
+              </h1>
             </div>
           </div>
         </div>
-        <div
-          class="card__banner"
-        />
       </div>
-    </div>
-    <div
-      class="feature-card feature-card--narrow-compact home__card"
+      <div
+        class="card__banner"
+      />
+    </button>
+    <button
+      class="card feature-card feature-card--narrow-compact home__card"
       role="link"
       style="cursor: pointer;"
-      tabindex="0"
+      type="button"
     >
       <div
-        class="card"
+        class="card__background"
+      />
+      <div
+        class="card__outer-container card__outer-container--padded"
       >
         <div
-          class="card__background"
-        />
-        <div
-          class="card__outer-container card__outer-container--padded"
+          class="feature-card__outer-container feature-card__outer-container--narrow-compact"
         >
           <div
-            class="feature-card__outer-container feature-card__outer-container--narrow-compact"
+            class="feature-card__date feature-card__date--narrow-compact"
+          />
+          <div
+            class="feature-card__center-container feature-card__center-container--narrow-compact"
           >
             <div
-              class="feature-card__date feature-card__date--narrow-compact"
-            />
-            <div
-              class="feature-card__center-container feature-card__center-container--narrow-compact"
+              class="typography__main typography--no-padding feature-card__title"
             >
-              <div
-                class="typography__main typography--no-padding feature-card__title"
+              <h1
+                class="typography__text typography__text--section typography__link typography--no-padding"
+                id="travel"
               >
-                <h1
-                  class="typography__text typography__text--section typography__link typography--no-padding"
-                  id="travel"
-                >
-                  Travel
-                </h1>
-              </div>
+                Travel
+              </h1>
             </div>
           </div>
         </div>
-        <div
-          class="card__banner"
-        />
       </div>
-    </div>
-    <div
-      class="feature-card feature-card--narrow-compact home__card"
+      <div
+        class="card__banner"
+      />
+    </button>
+    <button
+      class="card feature-card feature-card--narrow-compact home__card"
       role="link"
       style="cursor: pointer;"
-      tabindex="0"
+      type="button"
     >
       <div
-        class="card"
+        class="card__background"
+      />
+      <div
+        class="card__outer-container card__outer-container--padded"
       >
         <div
-          class="card__background"
-        />
-        <div
-          class="card__outer-container card__outer-container--padded"
+          class="feature-card__outer-container feature-card__outer-container--narrow-compact"
         >
           <div
-            class="feature-card__outer-container feature-card__outer-container--narrow-compact"
+            class="feature-card__date feature-card__date--narrow-compact"
+          />
+          <div
+            class="feature-card__center-container feature-card__center-container--narrow-compact"
           >
             <div
-              class="feature-card__date feature-card__date--narrow-compact"
-            />
-            <div
-              class="feature-card__center-container feature-card__center-container--narrow-compact"
+              class="typography__main typography--no-padding feature-card__title"
             >
-              <div
-                class="typography__main typography--no-padding feature-card__title"
+              <h1
+                class="typography__text typography__text--section typography__link typography--no-padding"
+                id="photography"
               >
-                <h1
-                  class="typography__text typography__text--section typography__link typography--no-padding"
-                  id="photography"
-                >
-                  Photography
-                </h1>
-              </div>
+                Photography
+              </h1>
             </div>
           </div>
         </div>
-        <div
-          class="card__banner"
-        />
       </div>
-    </div>
-    <div
-      class="feature-card feature-card--narrow-compact home__card"
+      <div
+        class="card__banner"
+      />
+    </button>
+    <button
+      class="card feature-card feature-card--narrow-compact home__card"
       role="link"
       style="cursor: pointer;"
-      tabindex="0"
+      type="button"
     >
       <div
-        class="card"
+        class="card__background"
+      />
+      <div
+        class="card__outer-container card__outer-container--padded"
       >
         <div
-          class="card__background"
-        />
-        <div
-          class="card__outer-container card__outer-container--padded"
+          class="feature-card__outer-container feature-card__outer-container--narrow-compact"
         >
           <div
-            class="feature-card__outer-container feature-card__outer-container--narrow-compact"
+            class="feature-card__date feature-card__date--narrow-compact"
+          />
+          <div
+            class="feature-card__center-container feature-card__center-container--narrow-compact"
           >
             <div
-              class="feature-card__date feature-card__date--narrow-compact"
-            />
-            <div
-              class="feature-card__center-container feature-card__center-container--narrow-compact"
+              class="typography__main typography--no-padding feature-card__title"
             >
-              <div
-                class="typography__main typography--no-padding feature-card__title"
+              <h1
+                class="typography__text typography__text--section typography__link typography--no-padding"
+                id="work"
               >
-                <h1
-                  class="typography__text typography__text--section typography__link typography--no-padding"
-                  id="work"
-                >
-                  Work
-                </h1>
-              </div>
+                Work
+              </h1>
             </div>
           </div>
         </div>
-        <div
-          class="card__banner"
-        />
       </div>
-    </div>
-    <div
-      class="feature-card feature-card--narrow-compact home__card"
+      <div
+        class="card__banner"
+      />
+    </button>
+    <button
+      class="card feature-card feature-card--narrow-compact home__card"
       role="link"
       style="cursor: pointer;"
-      tabindex="0"
+      type="button"
     >
       <div
-        class="card"
+        class="card__background"
+      />
+      <div
+        class="card__outer-container card__outer-container--padded"
       >
         <div
-          class="card__background"
-        />
-        <div
-          class="card__outer-container card__outer-container--padded"
+          class="feature-card__outer-container feature-card__outer-container--narrow-compact"
         >
           <div
-            class="feature-card__outer-container feature-card__outer-container--narrow-compact"
+            class="feature-card__date feature-card__date--narrow-compact"
+          />
+          <div
+            class="feature-card__center-container feature-card__center-container--narrow-compact"
           >
             <div
-              class="feature-card__date feature-card__date--narrow-compact"
-            />
-            <div
-              class="feature-card__center-container feature-card__center-container--narrow-compact"
+              class="typography__main typography--no-padding feature-card__title"
             >
-              <div
-                class="typography__main typography--no-padding feature-card__title"
+              <h1
+                class="typography__text typography__text--section typography__link typography--no-padding"
+                id="contact"
               >
-                <h1
-                  class="typography__text typography__text--section typography__link typography--no-padding"
-                  id="contact"
-                >
-                  Contact
-                </h1>
-              </div>
+                Contact
+              </h1>
             </div>
           </div>
         </div>
-        <div
-          class="card__banner"
-        />
       </div>
-    </div>
-    <div
-      class="feature-card feature-card--narrow-compact home__card"
+      <div
+        class="card__banner"
+      />
+    </button>
+    <button
+      class="card feature-card feature-card--narrow-compact home__card"
       role="link"
       style="cursor: pointer;"
-      tabindex="0"
+      type="button"
     >
       <div
-        class="card"
+        class="card__background"
+      />
+      <div
+        class="card__outer-container card__outer-container--padded"
       >
         <div
-          class="card__background"
-        />
-        <div
-          class="card__outer-container card__outer-container--padded"
+          class="feature-card__outer-container feature-card__outer-container--narrow-compact"
         >
           <div
-            class="feature-card__outer-container feature-card__outer-container--narrow-compact"
+            class="feature-card__date feature-card__date--narrow-compact"
+          />
+          <div
+            class="feature-card__center-container feature-card__center-container--narrow-compact"
           >
             <div
-              class="feature-card__date feature-card__date--narrow-compact"
-            />
-            <div
-              class="feature-card__center-container feature-card__center-container--narrow-compact"
+              class="typography__main typography--no-padding feature-card__title"
             >
-              <div
-                class="typography__main typography--no-padding feature-card__title"
+              <h1
+                class="typography__text typography__text--section typography__link typography--no-padding"
+                id="account"
               >
-                <h1
-                  class="typography__text typography__text--section typography__link typography--no-padding"
-                  id="account"
-                >
-                  Account
-                </h1>
-              </div>
+                Account
+              </h1>
             </div>
           </div>
         </div>
-        <div
-          class="card__banner"
-        />
       </div>
-    </div>
+      <div
+        class="card__banner"
+      />
+    </button>
   </div>
 </div>
 `;

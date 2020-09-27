@@ -2,159 +2,142 @@
 
 exports[`<NavigationItem /> Should render correctly 1`] = `
 <div>
-  <div
-    class="feature-card"
+  <button
+    class="card feature-card"
     role="link"
     style="cursor: pointer;"
-    tabindex="0"
+    type="button"
   >
     <div
-      class="card"
+      class="card__background"
+    />
+    <div
+      class="card__outer-container card__outer-container--padded"
     >
       <div
-        class="card__background"
-      />
-      <div
-        class="card__outer-container card__outer-container--padded"
+        class="feature-card__outer-container feature-card__outer-container--auto"
       >
         <div
-          class="feature-card__outer-container feature-card__outer-container--auto"
+          class="feature-card__date"
+        />
+        <div
+          class="feature-card__center-container"
         >
           <div
-            class="feature-card__date"
+            class="typography__main typography--no-padding feature-card__title"
           />
-          <div
-            class="feature-card__center-container"
-          >
-            <div
-              class="typography__main typography--no-padding feature-card__title"
-            />
-          </div>
         </div>
       </div>
-      <div
-        class="card__banner"
-      />
     </div>
-  </div>
+    <div
+      class="card__banner"
+    />
+  </button>
 </div>
 `;
 
 exports[`<NavigationItem /> Should render correctly hrefExternal 1`] = `
 <div>
   <a
-    class="feature-card"
+    class="card feature-card"
     href="https://duckduckgo.com/"
-    style="text-decoration: none;"
   >
     <div
-      class="card"
+      class="card__background"
+    />
+    <div
+      class="card__outer-container card__outer-container--padded"
     >
       <div
-        class="card__background"
-      />
-      <div
-        class="card__outer-container card__outer-container--padded"
+        class="feature-card__outer-container feature-card__outer-container--auto"
       >
         <div
-          class="feature-card__outer-container feature-card__outer-container--auto"
+          class="feature-card__date"
+        />
+        <div
+          class="feature-card__center-container"
         >
           <div
-            class="feature-card__date"
+            class="typography__main typography--no-padding feature-card__title"
           />
-          <div
-            class="feature-card__center-container"
-          >
-            <div
-              class="typography__main typography--no-padding feature-card__title"
-            />
-          </div>
         </div>
       </div>
-      <div
-        class="card__banner"
-      />
     </div>
+    <div
+      class="card__banner"
+    />
   </a>
 </div>
 `;
 
 exports[`<NavigationItem /> Should render correctly with custom className 1`] = `
 <div>
-  <div
-    class="feature-card test-custom-classname"
+  <button
+    class="card feature-card test-custom-classname"
     role="link"
     style="cursor: pointer;"
-    tabindex="0"
+    type="button"
   >
     <div
-      class="card"
+      class="card__background"
+    />
+    <div
+      class="card__outer-container card__outer-container--padded"
     >
       <div
-        class="card__background"
-      />
-      <div
-        class="card__outer-container card__outer-container--padded"
+        class="feature-card__outer-container feature-card__outer-container--auto"
       >
         <div
-          class="feature-card__outer-container feature-card__outer-container--auto"
+          class="feature-card__date"
+        />
+        <div
+          class="feature-card__center-container"
         >
           <div
-            class="feature-card__date"
+            class="typography__main typography--no-padding feature-card__title"
           />
-          <div
-            class="feature-card__center-container"
-          >
-            <div
-              class="typography__main typography--no-padding feature-card__title"
-            />
-          </div>
         </div>
       </div>
-      <div
-        class="card__banner"
-      />
     </div>
-  </div>
+    <div
+      class="card__banner"
+    />
+  </button>
 </div>
 `;
 
 exports[`<NavigationItem /> Should render with nextified href 1`] = `
 <div>
-  <div
-    class="feature-card"
+  <button
+    class="card feature-card"
     role="link"
     style="cursor: pointer;"
-    tabindex="0"
+    type="button"
   >
     <div
-      class="card"
+      class="card__background"
+    />
+    <div
+      class="card__outer-container card__outer-container--padded"
     >
       <div
-        class="card__background"
-      />
-      <div
-        class="card__outer-container card__outer-container--padded"
+        class="feature-card__outer-container feature-card__outer-container--auto"
       >
         <div
-          class="feature-card__outer-container feature-card__outer-container--auto"
+          class="feature-card__date"
+        />
+        <div
+          class="feature-card__center-container"
         >
           <div
-            class="feature-card__date"
+            class="typography__main typography--no-padding feature-card__title"
           />
-          <div
-            class="feature-card__center-container"
-          >
-            <div
-              class="typography__main typography--no-padding feature-card__title"
-            />
-          </div>
         </div>
       </div>
-      <div
-        class="card__banner"
-      />
     </div>
-  </div>
+    <div
+      class="card__banner"
+    />
+  </button>
 </div>
 `;

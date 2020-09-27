@@ -45,6 +45,7 @@ exports[`<Authenticator /> should render correctly - index 1`] = `
             class="logo__container logo__container--no-padding"
           >
             <a
+              class="logo__a"
               href="/"
             >
               <h1
@@ -120,6 +121,7 @@ exports[`<Authenticator /> should render correctly with default state 1`] = `
             class="logo__container logo__container--no-padding"
           >
             <a
+              class="logo__a"
               href="/"
             >
               <h1
@@ -195,6 +197,7 @@ exports[`<Authenticator /> should render correctly with null user 1`] = `
             class="logo__container logo__container--no-padding"
           >
             <a
+              class="logo__a"
               href="/"
             >
               <h1
@@ -273,6 +276,7 @@ exports[`<Authenticator /> should render correctly with user 1`] = `
             class="logo__container logo__container--no-padding"
           >
             <a
+              class="logo__a"
               href="/"
             >
               <h1

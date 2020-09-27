@@ -2,96 +2,79 @@
 
 exports[`<Card /> Should render correctly 1`] = `
 <div>
-  <div
-    role="button"
+  <button
+    class="card"
     style="cursor: pointer;"
-    tabindex="0"
+    type="button"
   >
     <div
-      class="card"
-    >
-      <div
-        class="card__background"
-      />
-      <div
-        class="card__outer-container card__outer-container--padded"
-      />
-      <div
-        class="card__banner"
-      />
-    </div>
-  </div>
+      class="card__background"
+    />
+    <div
+      class="card__outer-container card__outer-container--padded"
+    />
+    <div
+      class="card__banner"
+    />
+  </button>
 </div>
 `;
 
 exports[`<Card /> Should render correctly hrefExternal 1`] = `
 <div>
   <a
+    class="card"
     href="https://duckduckgo.com/"
-    style="text-decoration: none;"
   >
     <div
-      class="card"
-    >
-      <div
-        class="card__background"
-      />
-      <div
-        class="card__outer-container card__outer-container--padded"
-      />
-      <div
-        class="card__banner"
-      />
-    </div>
+      class="card__background"
+    />
+    <div
+      class="card__outer-container card__outer-container--padded"
+    />
+    <div
+      class="card__banner"
+    />
   </a>
 </div>
 `;
 
 exports[`<Card /> Should render correctly with custom className 1`] = `
 <div>
-  <div
-    class="test-custom-classname"
-    role="button"
+  <button
+    class="card test-custom-classname"
     style="cursor: pointer;"
-    tabindex="0"
+    type="button"
   >
     <div
-      class="card"
-    >
-      <div
-        class="card__background"
-      />
-      <div
-        class="card__outer-container card__outer-container--padded"
-      />
-      <div
-        class="card__banner"
-      />
-    </div>
-  </div>
+      class="card__background"
+    />
+    <div
+      class="card__outer-container card__outer-container--padded"
+    />
+    <div
+      class="card__banner"
+    />
+  </button>
 </div>
 `;
 
 exports[`<Card /> Should render with nextified href 1`] = `
 <div>
-  <div
-    role="button"
+  <button
+    class="card"
     style="cursor: pointer;"
-    tabindex="0"
+    type="button"
   >
     <div
-      class="card"
-    >
-      <div
-        class="card__background"
-      />
-      <div
-        class="card__outer-container card__outer-container--padded"
-      />
-      <div
-        class="card__banner"
-      />
-    </div>
-  </div>
+      class="card__background"
+    />
+    <div
+      class="card__outer-container card__outer-container--padded"
+    />
+    <div
+      class="card__banner"
+    />
+  </button>
 </div>
 `;
