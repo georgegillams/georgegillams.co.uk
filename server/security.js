@@ -16,14 +16,13 @@ const applyProductionSecurity = appConfig.isProduction && !appConfig.projectUnde
 
 const applySecurityPractises = server => {
   const cspDirectives = {
-    defaultSrc: ["'self'"],
+    defaultSrc: ["'self'", 'www.youtube.com'],
     baseUri: ["'self'"],
     fontSrc: ["'self'", 'https:', 'data:'],
     frameAncestors: ["'self'"],
     imgSrc: ["'self'", 'https:', 'data:'],
     objectSrc: ["'none'"],
     scriptSrc: ["'self'"],
-    scriptSrcAttributes: ["'none'"],
     styleSrc: ["'self'", 'https:', "'unsafe-inline'"],
   };
 
@@ -58,7 +57,7 @@ const applySecurityPractises = server => {
     slowDown({
       windowMs: 15 * 60 * 1000, // 15 minutes
       delayAfter: 5, // allow 5 requests per window without limiting...
-      delayMs: 500, // add 1s delay per request above 50...
+      delayMs: 500, // add 1s delay per request above 5...
       maxDelayMs: 10000, // with a maximum delay of 10 seconds
       // request # 1 no delay
       // ...
