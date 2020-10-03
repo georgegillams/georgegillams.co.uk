@@ -10,6 +10,10 @@ import Skeleton from './Skeleton';
 import CookiesRequired from 'containers/common/CookiesRequired';
 import { LoggedOutOnly } from 'components/common/Walls';
 import { LoginForm } from 'components/common/Forms';
+import STYLES from './login.scss';
+import { cssModules } from 'gg-components/helpers/cssModules';
+
+const getClassName = cssModules(STYLES);
 
 const Login = props => {
   const [credentials, setCredentials] = useState({});
@@ -49,8 +53,9 @@ const Login = props => {
             }}
             preSubmitText={preSubmitText}
           />
-          <br />
-          <TextLink href="/sign-up">Not yet got an account? Sign up here.</TextLink>
+          <TextLink className={getClassName('login__sign-up-link')} href="/sign-up">
+            Not yet got an account? Sign up here.
+          </TextLink>
         </PageTitle>
       </LoggedOutOnly>
     </div>

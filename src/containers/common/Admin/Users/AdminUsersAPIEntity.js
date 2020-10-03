@@ -6,6 +6,10 @@ import { Subsection } from 'gg-components/Subsection';
 import { SplitDetailItem } from 'components/common/SplitDetailView';
 import { UserEditForm } from 'components/common/Forms';
 import { Error } from 'gg-components/Error';
+import STYLES from './admin-users.scss';
+import { cssModules } from 'gg-components/helpers/cssModules';
+
+const getClassName = cssModules(STYLES);
 
 const AdminUsersAPIEntity = props => {
   const { compact, entity, updateUser, adminUserState, children, ...rest } = props;
@@ -37,42 +41,36 @@ const AdminUsersAPIEntity = props => {
         )}
       </Paragraph>
       {!compact && (
-        <>
-          <br />
-          <br />
+        <div className={getClassName('admin-users__control-panel')}>
           <Button
+            className={getClassName('admin-users__edit-button')}
             onClick={() => {
               setEditing(!editing);
             }}>
             {editing ? 'Cancel edit' : 'Edit user'}
           </Button>
-        </>
+        </div>
       )}
       {editing && (
-        <>
-          <br />
-          <br />
-          <UserEditForm
-            showAdminControls
-            user={updatedUser || entity}
-            onDataChanged={setUpdatedUser}
-            onSubmit={() => {
-              if (updateUser) {
-                updateUser({
-                  userToUpdate: updatedUser,
-                  onUpdateSuccessCb: () => {
-                    setEditing(false);
-                  },
-                });
-              }
-            }}
-            disabled={adminUserState.updating}
-          />
-        </>
+        <UserEditForm
+          showAdminControls
+          user={updatedUser || entity}
+          onDataChanged={setUpdatedUser}
+          onSubmit={() => {
+            if (updateUser) {
+              updateUser({
+                userToUpdate: updatedUser,
+                onUpdateSuccessCb: () => {
+                  setEditing(false);
+                },
+              });
+            }
+          }}
+          disabled={adminUserState.updating}
+        />
       )}
       {!compact && adminUserState && adminUserState.updateError && (
         <>
-          <br />
           <Error>
             <Paragraph>{adminUserState.updateError.errorMessage || 'Something went wrong'}</Paragraph>
           </Error>

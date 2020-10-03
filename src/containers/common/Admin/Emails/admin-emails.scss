@@ -18,4 +18,9 @@
   &__control {
     margin-bottom: $spacing-base;
   }
+
+  &__count {
+    display: inline-block;
+    margin: 0 0 $spacing-base 0;
+  }
 }

@@ -112,22 +112,18 @@ exports[`<MagicLogin /> should render correctly with user 1`] = `
         class="paragraph"
       >
         Logged in!
-      </span>
-      <br />
-      <span
-        class="paragraph"
-      >
+        <br />
         You will now be redirected to the 
         account
          page
+        <br />
+        <a
+          class="text-link text-link--text-link text-link--no-padding text-link--inline"
+          href="/account"
+        >
+          Not been redirected? Click here
+        </a>
       </span>
-      <br />
-      <a
-        class="text-link text-link--text-link text-link--no-padding text-link--inline"
-        href="/account"
-      >
-        Not been redirected? Click here
-      </a>
     </div>
   </div>
 </div>

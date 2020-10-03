@@ -49,13 +49,11 @@ const Debug = props => (
         name="Show session debug views"
         storageKey={DEBUG_SHOW_DEBUG_INFORMATION_KEY}
       />
-      <br />
       <StatusControl
         className={getClassName('debug__checkbox')}
         name="Show page container debug colours"
         storageKey={DEBUG_SHOW_PAGE_CONTAINER_KEY}
       />
-      <br />
       <Paragraph>Note that changes will not take effect until you reload the page.</Paragraph>
     </PageTitle>
   </div>

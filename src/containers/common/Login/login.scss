@@ -1,0 +1,7 @@
+@import '~utils/tokens';
+
+.login {
+  &__sign-up-link {
+    margin-top: $spacing-base;
+  }
+}

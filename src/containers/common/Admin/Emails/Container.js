@@ -117,8 +117,6 @@ const AdminEmails = props => {
         onClick={() => load()}>
         Reload emails
       </Button>
-      <br />
-      <br />
     </div>
   );
 
@@ -141,24 +139,16 @@ const AdminEmails = props => {
             <>
               <Paragraph>Could not load emails</Paragraph>
               {loadError.errorMessage && (
-                <>
-                  <br />
-                  <Paragraph>
-                    <Error>{loadError.errorMessage}</Error>
-                  </Paragraph>
-                </>
+                <Paragraph>
+                  <Error>{loadError.errorMessage}</Error>
+                </Paragraph>
               )}
             </>
           )}
           {emails && (
-            <>
-              <br />
-              <Paragraph>
-                Showing {emails.length} of {emails.length} emails
-              </Paragraph>
-              <br />
-              <br />
-            </>
+            <Paragraph className={getClassName('admin-analytics__count')}>
+              Showing {emails.length} of {emails.length} emails
+            </Paragraph>
           )}
           <SplitDetailView
             className={getClassName('admin-emails__split-view')}
