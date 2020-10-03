@@ -67,13 +67,13 @@ const MagicLogin = props => {
       <CookiesRequired reason={'log in'} />
       <PageTitle name={success ? 'Logged in' : 'Logging in'}>
         {success && (
-          <>
-            <Paragraph>Logged in!</Paragraph>
+          <Paragraph>
+            Logged in!
             <br />
-            <Paragraph>You will now be redirected to the {redirectLocation} page</Paragraph>
+            You will now be redirected to the {redirectLocation} page
             <br />
             <TextLink href={redirectLocation}>Not been redirected? Click here</TextLink>
-          </>
+          </Paragraph>
         )}
         {logInError && (
           <>

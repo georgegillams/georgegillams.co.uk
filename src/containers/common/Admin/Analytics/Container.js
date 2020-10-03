@@ -107,7 +107,6 @@ const AdminAnalytics = props => {
               </Paragraph>
               {loadError.errorMessage && (
                 <>
-                  <br />
                   <Paragraph>
                     <Error>{loadError.errorMessage}</Error>
                   </Paragraph>
@@ -116,14 +115,9 @@ const AdminAnalytics = props => {
             </>
           )}
           {analytics && (
-            <>
-              <br />
-              <Paragraph>
-                Showing {filteredAnalyticsCount} of {analyticsCount} analytics
-              </Paragraph>
-              <br />
-              <br />
-            </>
+            <Paragraph className={getClassName('admin-analytics__count')}>
+              Showing {filteredAnalyticsCount} of {analyticsCount} analytics
+            </Paragraph>
           )}
           {analyticsList && analyticsList}
         </AdminOnly>

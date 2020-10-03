@@ -3,7 +3,9 @@ import { getTimeDifference, getTimeDifferenceFromMilliseconds } from '../time';
 describe('time', () => {
   // #region getTimeDifference
   it('should getTimeDifference - 0', () => {
-    expect(getTimeDifference(0)).toBe('over 50 years ago');
+    expect(getTimeDifference(Date.now() - 1583401616934)).toBe(
+      'about 50 years ago',
+    );
   });
 
   it('should getTimeDifference - - 1 second', () => {

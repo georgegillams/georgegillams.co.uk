@@ -11,6 +11,10 @@ import { LoggedOutOnly } from 'components/common/Walls';
 import { SignUpForm } from 'components/common/Forms';
 import CookiesRequired from 'containers/common/CookiesRequired';
 import { CONSENT_STATE_ALLOWED } from 'containers/common/Consent/constants';
+import STYLES from './sign-up.scss';
+import { cssModules } from 'gg-components/helpers/cssModules';
+
+const getClassName = cssModules(STYLES);
 
 const SignUp = props => {
   const [credentials, setCredentials] = useState({});
@@ -54,8 +58,9 @@ const SignUp = props => {
             }}
             preSubmitText={preSubmitText}
           />
-          <br />
-          <TextLink href="/login">Already got an account? Login here.</TextLink>
+          <TextLink className={getClassName('sign-up__login-link')} href="/login">
+            Already got an account? Login here.
+          </TextLink>
         </PageTitle>
       </LoggedOutOnly>
     </div>

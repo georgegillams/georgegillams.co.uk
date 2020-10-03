@@ -3,6 +3,10 @@ import PropTypes from 'prop-types';
 import { Input } from 'gg-components/Input';
 import { Select } from 'gg-components/Select';
 import { Checkbox } from 'gg-components/Checkbox';
+import FORM_BUILDER_STYLES from 'gg-components/FormBuilder/forms.css';
+import { cssModules } from 'gg-components/helpers/cssModules';
+
+const getClassName = cssModules(FORM_BUILDER_STYLES);
 
 const defaultFilters = { deleted: true, adminStatus: 'all', emailVerified: 'all' };
 
@@ -63,12 +67,19 @@ const UserFilter = props => {
 
   return (
     <div>
-      <Checkbox label="Show deleted" name="deleted" checked={!deleted} onChange={onDeletedFilterChanged} />
-      <br />
-      <br />
-      <label htmlFor="adminStatus">Filter by admin status</label>
+      <Checkbox
+        className={getClassName('forms__component')}
+        label="Show deleted"
+        name="deleted"
+        checked={!deleted}
+        onChange={onDeletedFilterChanged}
+      />
+      <label className={getClassName('forms__component__label')} htmlFor="adminStatus">
+        Filter by admin status
+      </label>
       <Select
         id="adminStatus"
+        className={getClassName('forms__component')}
         name="Filter by admin status"
         value={adminStatus}
         options={[
@@ -78,11 +89,12 @@ const UserFilter = props => {
         ]}
         onChange={onAdminStatusFilterChanged}
       />
-      <br />
-      <br />
-      <label htmlFor="emailVerified">Filter by email verification status</label>
+      <label className={getClassName('forms__component__label')} htmlFor="emailVerified">
+        Filter by email verification status
+      </label>
       <Select
         id="emailVerified"
+        className={getClassName('forms__component')}
         name="Filter by email verification status"
         value={emailVerified}
         options={[
@@ -92,10 +104,10 @@ const UserFilter = props => {
         ]}
         onChange={onEmailVerifiedFilterChanged}
       />
-      <br />
-      <br />
-      <label htmlFor="name">Filter by name</label>
-      <Input id="name" value={name} onChange={onNameFilterChanged} />
+      <label className={getClassName('forms__component__label')} htmlFor="name">
+        Filter by name
+      </label>
+      <Input id="name" className={getClassName('forms__component')} value={name} onChange={onNameFilterChanged} />
     </div>
   );
 };

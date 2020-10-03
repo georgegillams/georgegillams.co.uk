@@ -17,4 +17,9 @@
     display: inline-block;
     margin: 0 $spacing-base $spacing-base 0;
   }
+
+  &__count {
+    display: inline-block;
+    margin: 0 0 $spacing-base 0;
+  }
 }

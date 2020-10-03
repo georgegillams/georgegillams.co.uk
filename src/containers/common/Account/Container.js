@@ -33,6 +33,10 @@ const Account = props => {
     outerClassNames.push(className);
   }
 
+  const showEmail = user && user.email;
+  const showUname = user && user.uname;
+  const showUserDetails = showEmail || showUname;
+
   const page = (
     <div className={outerClassNames.join(' ')}>
       <LoggedInOnly
@@ -41,37 +45,37 @@ const Account = props => {
           setPostLoginRedirect('account');
         }}>
         <PageTitle name="Account">
-          <Paragraph>
-            {user && user.email && <div>{`Email: ${user.email}`}</div>}
-            {user && user.uname && <div>{`Display name: ${user.uname}`}</div>}
-            <br />
-          </Paragraph>
-          {user && !user.emailVerified && (
-            <>
-              <Button
-                className={getClassName('account__button')}
-                disabled={accountState && accountState.requestingVerificationEmail}
-                onClick={requestVerificationEmail}>
-                Get a new verification email
-              </Button>
-              <br />
-            </>
+          {showUserDetails && (
+            <Paragraph className={getClassName('account__details')}>
+              {showEmail && <div>{`Email: ${user.email}`}</div>}
+              {showUname && <div>{`Display name: ${user.uname}`}</div>}
+            </Paragraph>
           )}
-          {user && user.admin && (
-            <>
-              <Button className={getClassName('account__button')} href="/admin">
-                Admin
-              </Button>
-              <br />
-              <Button className={getClassName('account__button')} href="/status">
-                Site status
-              </Button>
-              <br />
-            </>
-          )}
-          <Button destructive disabled={accountState && accountState.loggingOut} onClick={logout}>
-            Logout
-          </Button>
+          <div className={getClassName('account__control-panel')}>
+            {user && !user.emailVerified && (
+              <>
+                <Button
+                  className={getClassName('account__button')}
+                  disabled={accountState && accountState.requestingVerificationEmail}
+                  onClick={requestVerificationEmail}>
+                  Get a new verification email
+                </Button>
+              </>
+            )}
+            {user && user.admin && (
+              <>
+                <Button className={getClassName('account__button')} href="/admin">
+                  Admin
+                </Button>
+                <Button className={getClassName('account__button')} href="/status">
+                  Site status
+                </Button>
+              </>
+            )}
+            <Button destructive disabled={accountState && accountState.loggingOut} onClick={logout}>
+              Logout
+            </Button>
+          </div>
         </PageTitle>
       </LoggedInOnly>
     </div>

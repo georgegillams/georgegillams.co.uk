@@ -45,7 +45,6 @@ exports[`<Debug /> should render correctly 1`] = `
            
         </span>
       </label>
-      <br />
       <label
         class="checkbox debug__checkbox"
       >
@@ -79,7 +78,6 @@ exports[`<Debug /> should render correctly 1`] = `
            
         </span>
       </label>
-      <br />
       <span
         class="paragraph"
       >
