@@ -150,8 +150,8 @@ exports[`<BlogRenderer /> should render correctly with blog 1`] = `
             </svg>
           </div>
         </a>
+        <br />
       </span>
-      <br />
     </div>
   </div>
   <div
@@ -286,8 +286,8 @@ exports[`<BlogRenderer /> should render correctly with blog and admin 1`] = `
             </svg>
           </div>
         </a>
+        <br />
       </span>
-      <br />
     </div>
   </div>
   <div
@@ -612,8 +612,8 @@ exports[`<BlogRenderer /> should render correctly with ssrBlog 1`] = `
             </svg>
           </div>
         </a>
+        <br />
       </span>
-      <br />
     </div>
   </div>
   <div
