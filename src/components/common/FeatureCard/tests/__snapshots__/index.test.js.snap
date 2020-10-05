@@ -15,6 +15,7 @@ exports[`<NavigationItem /> Should render correctly 1`] = `
       class="card__outer-container card__outer-container--padded"
     >
       <div
+        aria-hidden="true"
         class="feature-card__outer-container feature-card__outer-container--auto"
       >
         <div
@@ -49,6 +50,7 @@ exports[`<NavigationItem /> Should render correctly hrefExternal 1`] = `
       class="card__outer-container card__outer-container--padded"
     >
       <div
+        aria-hidden="true"
         class="feature-card__outer-container feature-card__outer-container--auto"
       >
         <div
@@ -85,6 +87,7 @@ exports[`<NavigationItem /> Should render correctly with custom className 1`] = 
       class="card__outer-container card__outer-container--padded"
     >
       <div
+        aria-hidden="true"
         class="feature-card__outer-container feature-card__outer-container--auto"
       >
         <div
@@ -121,6 +124,7 @@ exports[`<NavigationItem /> Should render with nextified href 1`] = `
       class="card__outer-container card__outer-container--padded"
     >
       <div
+        aria-hidden="true"
         class="feature-card__outer-container feature-card__outer-container--auto"
       >
         <div

@@ -25,8 +25,20 @@ const BlogCard = props => {
     blogTags = blog.tags;
   }
 
+  let ariaLabel = 'Blog';
+  if (title) {
+    ariaLabel = title;
+  }
+  if (day && month) {
+    ariaLabel = `${ariaLabel}, ${day.split('-').join('to')} ${month}`;
+  }
+  if (blogTags) {
+    ariaLabel = `${ariaLabel}, Tagged ${blogTags.join(', ')}`;
+  }
+
   return (
     <FeatureCard
+      ariaLabel={ariaLabel}
       annotations={[day, month]}
       fillImageSrc={blog.blogHeroImage}
       imageSrc={blog.blogImage}

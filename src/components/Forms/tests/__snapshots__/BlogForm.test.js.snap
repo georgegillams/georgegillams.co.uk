@@ -189,7 +189,6 @@ exports[`<BlogForm /> Should render correctly 1`] = `
          
       </span>
     </label>
-    <br />
     <label
       class="checkbox forms__component"
       id="published_FORM_ID"
@@ -224,7 +223,6 @@ exports[`<BlogForm /> Should render correctly 1`] = `
          
       </span>
     </label>
-    <br />
     <label
       class="checkbox forms__component"
       id="showInBlogsList_FORM_ID"
@@ -259,7 +257,6 @@ exports[`<BlogForm /> Should render correctly 1`] = `
          
       </span>
     </label>
-    <br />
     <label
       class="checkbox forms__component"
       id="showInTravelBlogsList_FORM_ID"
@@ -294,7 +291,6 @@ exports[`<BlogForm /> Should render correctly 1`] = `
          
       </span>
     </label>
-    <br />
     <label
       class="forms__component forms__component__label"
       for="blogImageBorderColor_FORM_ID"
@@ -585,7 +581,6 @@ exports[`<BlogForm /> Should render correctly with no blog id 1`] = `
          
       </span>
     </label>
-    <br />
     <label
       class="checkbox forms__component"
       id="published_FORM_ID"
@@ -620,7 +615,6 @@ exports[`<BlogForm /> Should render correctly with no blog id 1`] = `
          
       </span>
     </label>
-    <br />
     <label
       class="checkbox forms__component"
       id="showInBlogsList_FORM_ID"
@@ -655,7 +649,6 @@ exports[`<BlogForm /> Should render correctly with no blog id 1`] = `
          
       </span>
     </label>
-    <br />
     <label
       class="checkbox forms__component"
       id="showInTravelBlogsList_FORM_ID"
@@ -690,7 +683,6 @@ exports[`<BlogForm /> Should render correctly with no blog id 1`] = `
          
       </span>
     </label>
-    <br />
     <label
       class="forms__component forms__component__label"
       for="blogImageBorderColor_FORM_ID"
