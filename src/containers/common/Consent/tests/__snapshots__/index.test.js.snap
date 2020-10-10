@@ -10,14 +10,14 @@ exports[`<Consent /> should render correctly - index 1`] = `
         class="banner__inner"
       >
         <div
-          class="typography__main typography--no-padding consent__section consent__section--banner"
+          class="section__outer consent__section consent__section--banner"
         >
-          <h1
-            class="typography__text typography__text--section typography--no-padding consent__section-text"
+          <h2
+            class="section__heading section__heading--no-padding consent__section-text"
             id="privacy-and-cookies"
           >
             Privacy and cookies
-          </h1>
+          </h2>
           <span
             class="paragraph"
           >

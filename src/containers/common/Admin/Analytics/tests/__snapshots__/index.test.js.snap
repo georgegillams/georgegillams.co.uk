@@ -34,16 +34,11 @@ exports[`<AdminAnalytics /> should render correctly with admin user 1`] = `
     >
       ⇠ Admin
     </a>
-    <div
-      class="typography__main"
+    <h1
+      class="page-title__heading page-title__heading--with-link"
     >
-      <h1
-        class="typography__text typography__text--section page-title__section page-title__section--with-link"
-        id="admin-analytics"
-      >
-        Admin analytics
-      </h1>
-    </div>
+      Admin analytics
+    </h1>
   </div>
   <div>
     <button
@@ -82,16 +77,11 @@ exports[`<AdminAnalytics /> should render correctly with analytics 1`] = `
     >
       ⇠ Admin
     </a>
-    <div
-      class="typography__main"
+    <h1
+      class="page-title__heading page-title__heading--with-link"
     >
-      <h1
-        class="typography__text typography__text--section page-title__section page-title__section--with-link"
-        id="admin-analytics"
-      >
-        Admin analytics
-      </h1>
-    </div>
+      Admin analytics
+    </h1>
   </div>
   <div>
     <button
@@ -155,16 +145,11 @@ exports[`<AdminAnalytics /> should render correctly with loadError 1`] = `
     >
       ⇠ Admin
     </a>
-    <div
-      class="typography__main"
+    <h1
+      class="page-title__heading page-title__heading--with-link"
     >
-      <h1
-        class="typography__text typography__text--section page-title__section page-title__section--with-link"
-        id="admin-analytics"
-      >
-        Admin analytics
-      </h1>
-    </div>
+      Admin analytics
+    </h1>
   </div>
   <div>
     <button
@@ -221,16 +206,11 @@ exports[`<AdminAnalytics /> should render correctly with loading=true 1`] = `
     >
       ⇠ Admin
     </a>
-    <div
-      class="typography__main"
+    <h1
+      class="page-title__heading page-title__heading--with-link"
     >
-      <h1
-        class="typography__text typography__text--section page-title__section page-title__section--with-link"
-        id="admin-analytics"
-      >
-        Admin analytics
-      </h1>
-    </div>
+      Admin analytics
+    </h1>
   </div>
   <div>
     <button
@@ -264,14 +244,14 @@ exports[`<AdminAnalytics /> should render correctly with loading=true 1`] = `
 exports[`<AdminAnalytics /> should render correctly with user 1`] = `
 <div>
   <div
-    class="typography__main"
+    class="section__outer"
   >
-    <h1
-      class="typography__text typography__text--section"
+    <h2
+      class="section__heading"
       id="admin-only"
     >
       Admin only
-    </h1>
+    </h2>
     <span
       class="paragraph"
     >

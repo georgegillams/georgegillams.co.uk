@@ -5,16 +5,11 @@ exports[`<EmailVerification /> should render correctly - index 1`] = `
   <div
     class=""
   >
-    <div
-      class="typography__main"
+    <h1
+      class="page-title__heading"
     >
-      <h1
-        class="typography__text typography__text--section page-title__section"
-        id="confirming-email"
-      >
-        Confirming email
-      </h1>
-    </div>
+      Confirming email
+    </h1>
   </div>
 </div>
 `;
@@ -24,16 +19,11 @@ exports[`<EmailVerification /> should render correctly with initial state 1`] = 
   <div
     class=""
   >
-    <div
-      class="typography__main"
+    <h1
+      class="page-title__heading"
     >
-      <h1
-        class="typography__text typography__text--section page-title__section"
-        id="confirming-email"
-      >
-        Confirming email
-      </h1>
-    </div>
+      Confirming email
+    </h1>
   </div>
 </div>
 `;
@@ -43,21 +33,16 @@ exports[`<EmailVerification /> should render correctly with user 1`] = `
   <div
     class=""
   >
-    <div
-      class="typography__main"
+    <h1
+      class="page-title__heading"
     >
-      <h1
-        class="typography__text typography__text--section page-title__section"
-        id="email-confirmed"
-      >
-        Email confirmed
-      </h1>
-      <span
-        class="paragraph"
-      >
-        Thank you for confirming your email address
-      </span>
-    </div>
+      Email confirmed
+    </h1>
+    <span
+      class="paragraph"
+    >
+      Thank you for confirming your email address
+    </span>
   </div>
 </div>
 `;
@@ -67,27 +52,22 @@ exports[`<EmailVerification /> should render correctly with verifyError 1`] = `
   <div
     class=""
   >
-    <div
-      class="typography__main"
+    <h1
+      class="page-title__heading"
     >
-      <h1
-        class="typography__text typography__text--section page-title__section"
-        id="confirming-email"
-      >
-        Confirming email
-      </h1>
-      <span
-        class="paragraph"
-      >
-        Something went wrong whilst confirming your email
-      </span>
-      <br />
-      <span
-        class="paragraph"
-      >
-        Invalid verification link
-      </span>
-    </div>
+      Confirming email
+    </h1>
+    <span
+      class="paragraph"
+    >
+      Something went wrong whilst confirming your email
+    </span>
+    <br />
+    <span
+      class="paragraph"
+    >
+      Invalid verification link
+    </span>
   </div>
 </div>
 `;
@@ -97,16 +77,11 @@ exports[`<EmailVerification /> should render correctly with verifying=true 1`] =
   <div
     class=""
   >
-    <div
-      class="typography__main"
+    <h1
+      class="page-title__heading"
     >
-      <h1
-        class="typography__text typography__text--section page-title__section"
-        id="confirming-email"
-      >
-        Confirming email
-      </h1>
-    </div>
+      Confirming email
+    </h1>
   </div>
 </div>
 `;

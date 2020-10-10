@@ -211,14 +211,14 @@ exports[`<Login /> should render correctly with user 1`] = `
     class=""
   >
     <div
-      class="typography__main"
+      class="section__outer"
     >
-      <h1
-        class="typography__text typography__text--section"
+      <h2
+        class="section__heading"
         id="you're-logged-in"
       >
         You're logged in
-      </h1>
+      </h2>
       <a
         class="text-link text-link--text-link text-link--no-padding text-link--inline"
         href="/account"

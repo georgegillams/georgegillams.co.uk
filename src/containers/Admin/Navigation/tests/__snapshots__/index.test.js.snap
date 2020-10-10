@@ -50,214 +50,209 @@ exports[`<AdminNavigation /> should render correctly with admin user 1`] = `
   <div
     class=""
   >
-    <div
-      class="typography__main"
+    <h1
+      class="page-title__heading"
     >
-      <h1
-        class="typography__text typography__text--section page-title__section"
-        id="admin"
+      Admin
+    </h1>
+    <div
+      class="admin-navigation__card-container"
+    >
+      <button
+        class="card feature-card feature-card--narrow-compact admin-navigation__card"
+        role="link"
+        style="cursor: pointer;"
+        type="button"
       >
-        Admin
-      </h1>
-      <div
-        class="admin-navigation__card-container"
+        <div
+          class="card__background"
+        />
+        <div
+          class="card__outer-container card__outer-container--padded"
+        >
+          <div
+            aria-hidden="true"
+            class="feature-card__outer-container feature-card__outer-container--narrow-compact"
+          >
+            <div
+              class="feature-card__date feature-card__date--narrow-compact"
+            />
+            <div
+              class="feature-card__center-container feature-card__center-container--narrow-compact"
+            >
+              <div
+                class="section__outer feature-card__title"
+              >
+                <h2
+                  class="section__heading section__heading--link section__heading--no-padding"
+                  id="debug"
+                >
+                  Debug
+                </h2>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="card__banner"
+        />
+      </button>
+      <button
+        class="card feature-card feature-card--narrow-compact admin-navigation__card"
+        role="link"
+        style="cursor: pointer;"
+        type="button"
       >
-        <button
-          class="card feature-card feature-card--narrow-compact admin-navigation__card"
-          role="link"
-          style="cursor: pointer;"
-          type="button"
+        <div
+          class="card__background"
+        />
+        <div
+          class="card__outer-container card__outer-container--padded"
         >
           <div
-            class="card__background"
-          />
-          <div
-            class="card__outer-container card__outer-container--padded"
+            aria-hidden="true"
+            class="feature-card__outer-container feature-card__outer-container--narrow-compact"
           >
             <div
-              aria-hidden="true"
-              class="feature-card__outer-container feature-card__outer-container--narrow-compact"
+              class="feature-card__date feature-card__date--narrow-compact"
+            />
+            <div
+              class="feature-card__center-container feature-card__center-container--narrow-compact"
             >
               <div
-                class="feature-card__date feature-card__date--narrow-compact"
-              />
-              <div
-                class="feature-card__center-container feature-card__center-container--narrow-compact"
+                class="section__outer feature-card__title"
               >
-                <div
-                  class="typography__main typography--no-padding feature-card__title"
+                <h2
+                  class="section__heading section__heading--link section__heading--no-padding"
+                  id="analytics"
                 >
-                  <h1
-                    class="typography__text typography__text--section typography__link typography--no-padding"
-                    id="debug"
-                  >
-                    Debug
-                  </h1>
-                </div>
+                  Analytics
+                </h2>
               </div>
             </div>
           </div>
-          <div
-            class="card__banner"
-          />
-        </button>
-        <button
-          class="card feature-card feature-card--narrow-compact admin-navigation__card"
-          role="link"
-          style="cursor: pointer;"
-          type="button"
+        </div>
+        <div
+          class="card__banner"
+        />
+      </button>
+      <button
+        class="card feature-card feature-card--narrow-compact admin-navigation__card"
+        role="link"
+        style="cursor: pointer;"
+        type="button"
+      >
+        <div
+          class="card__background"
+        />
+        <div
+          class="card__outer-container card__outer-container--padded"
         >
           <div
-            class="card__background"
-          />
-          <div
-            class="card__outer-container card__outer-container--padded"
+            aria-hidden="true"
+            class="feature-card__outer-container feature-card__outer-container--narrow-compact"
           >
             <div
-              aria-hidden="true"
-              class="feature-card__outer-container feature-card__outer-container--narrow-compact"
+              class="feature-card__date feature-card__date--narrow-compact"
+            />
+            <div
+              class="feature-card__center-container feature-card__center-container--narrow-compact"
             >
               <div
-                class="feature-card__date feature-card__date--narrow-compact"
-              />
-              <div
-                class="feature-card__center-container feature-card__center-container--narrow-compact"
+                class="section__outer feature-card__title"
               >
-                <div
-                  class="typography__main typography--no-padding feature-card__title"
+                <h2
+                  class="section__heading section__heading--link section__heading--no-padding"
+                  id="emails"
                 >
-                  <h1
-                    class="typography__text typography__text--section typography__link typography--no-padding"
-                    id="analytics"
-                  >
-                    Analytics
-                  </h1>
-                </div>
+                  Emails
+                </h2>
               </div>
             </div>
           </div>
-          <div
-            class="card__banner"
-          />
-        </button>
-        <button
-          class="card feature-card feature-card--narrow-compact admin-navigation__card"
-          role="link"
-          style="cursor: pointer;"
-          type="button"
+        </div>
+        <div
+          class="card__banner"
+        />
+      </button>
+      <button
+        class="card feature-card feature-card--narrow-compact admin-navigation__card"
+        role="link"
+        style="cursor: pointer;"
+        type="button"
+      >
+        <div
+          class="card__background"
+        />
+        <div
+          class="card__outer-container card__outer-container--padded"
         >
           <div
-            class="card__background"
-          />
-          <div
-            class="card__outer-container card__outer-container--padded"
+            aria-hidden="true"
+            class="feature-card__outer-container feature-card__outer-container--narrow-compact"
           >
             <div
-              aria-hidden="true"
-              class="feature-card__outer-container feature-card__outer-container--narrow-compact"
+              class="feature-card__date feature-card__date--narrow-compact"
+            />
+            <div
+              class="feature-card__center-container feature-card__center-container--narrow-compact"
             >
               <div
-                class="feature-card__date feature-card__date--narrow-compact"
-              />
-              <div
-                class="feature-card__center-container feature-card__center-container--narrow-compact"
+                class="section__outer feature-card__title"
               >
-                <div
-                  class="typography__main typography--no-padding feature-card__title"
+                <h2
+                  class="section__heading section__heading--link section__heading--no-padding"
+                  id="notifications"
                 >
-                  <h1
-                    class="typography__text typography__text--section typography__link typography--no-padding"
-                    id="emails"
-                  >
-                    Emails
-                  </h1>
-                </div>
+                  Notifications
+                </h2>
               </div>
             </div>
           </div>
-          <div
-            class="card__banner"
-          />
-        </button>
-        <button
-          class="card feature-card feature-card--narrow-compact admin-navigation__card"
-          role="link"
-          style="cursor: pointer;"
-          type="button"
+        </div>
+        <div
+          class="card__banner"
+        />
+      </button>
+      <button
+        class="card feature-card feature-card--narrow-compact admin-navigation__card"
+        role="link"
+        style="cursor: pointer;"
+        type="button"
+      >
+        <div
+          class="card__background"
+        />
+        <div
+          class="card__outer-container card__outer-container--padded"
         >
           <div
-            class="card__background"
-          />
-          <div
-            class="card__outer-container card__outer-container--padded"
+            aria-hidden="true"
+            class="feature-card__outer-container feature-card__outer-container--narrow-compact"
           >
             <div
-              aria-hidden="true"
-              class="feature-card__outer-container feature-card__outer-container--narrow-compact"
+              class="feature-card__date feature-card__date--narrow-compact"
+            />
+            <div
+              class="feature-card__center-container feature-card__center-container--narrow-compact"
             >
               <div
-                class="feature-card__date feature-card__date--narrow-compact"
-              />
-              <div
-                class="feature-card__center-container feature-card__center-container--narrow-compact"
+                class="section__outer feature-card__title"
               >
-                <div
-                  class="typography__main typography--no-padding feature-card__title"
+                <h2
+                  class="section__heading section__heading--link section__heading--no-padding"
+                  id="users"
                 >
-                  <h1
-                    class="typography__text typography__text--section typography__link typography--no-padding"
-                    id="notifications"
-                  >
-                    Notifications
-                  </h1>
-                </div>
+                  Users
+                </h2>
               </div>
             </div>
           </div>
-          <div
-            class="card__banner"
-          />
-        </button>
-        <button
-          class="card feature-card feature-card--narrow-compact admin-navigation__card"
-          role="link"
-          style="cursor: pointer;"
-          type="button"
-        >
-          <div
-            class="card__background"
-          />
-          <div
-            class="card__outer-container card__outer-container--padded"
-          >
-            <div
-              aria-hidden="true"
-              class="feature-card__outer-container feature-card__outer-container--narrow-compact"
-            >
-              <div
-                class="feature-card__date feature-card__date--narrow-compact"
-              />
-              <div
-                class="feature-card__center-container feature-card__center-container--narrow-compact"
-              >
-                <div
-                  class="typography__main typography--no-padding feature-card__title"
-                >
-                  <h1
-                    class="typography__text typography__text--section typography__link typography--no-padding"
-                    id="users"
-                  >
-                    Users
-                  </h1>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div
-            class="card__banner"
-          />
-        </button>
-      </div>
+        </div>
+        <div
+          class="card__banner"
+        />
+      </button>
     </div>
   </div>
 </div>
@@ -306,14 +301,14 @@ exports[`<AdminNavigation /> should render correctly with auth error 1`] = `
     </div>
   </div>
   <div
-    class="typography__main typography--no-padding loading-cover__overlay--content"
+    class="subsection__outer loading-cover__overlay--content"
   >
-    <h2
-      class="typography__text typography__text--subsection typography--no-padding"
+    <h3
+      class="subsection__heading subsection__heading--no-padding"
       id="this-is-taking-a-while.-maybe-something-isn't-quite-right..."
     >
       This is taking a while. Maybe something isn't quite right...
-    </h2>
+    </h3>
   </div>
 </div>
 `;
@@ -369,14 +364,14 @@ exports[`<AdminNavigation /> should render correctly with user 1`] = `
     class=""
   >
     <div
-      class="typography__main"
+      class="section__outer"
     >
-      <h1
-        class="typography__text typography__text--section"
+      <h2
+        class="section__heading"
         id="admin-only"
       >
         Admin only
-      </h1>
+      </h2>
       <span
         class="paragraph"
       >

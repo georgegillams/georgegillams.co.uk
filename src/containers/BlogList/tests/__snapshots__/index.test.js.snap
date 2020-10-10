@@ -77,14 +77,14 @@ exports[`<BlogList /> should render correctly - index 1`] = `
       class="creative-commons__background"
     />
     <div
-      class="typography__main creative-commons__inner"
+      class="subsection__outer creative-commons__inner"
     >
-      <h2
-        class="typography__text typography__text--subsection"
+      <h3
+        class="subsection__heading"
         id="copyright"
       >
         Copyright
-      </h2>
+      </h3>
       <span
         class="paragraph"
       >
@@ -184,14 +184,14 @@ exports[`<BlogList /> should render correctly authenticated with blogs 1`] = `
             class="feature-card__center-container"
           >
             <div
-              class="typography__main typography--no-padding feature-card__title"
+              class="section__outer feature-card__title"
             >
-              <h1
-                class="typography__text typography__text--section typography__link typography--no-padding"
+              <h2
+                class="section__heading section__heading--link section__heading--no-padding"
                 id="add-a-new-blog"
               >
                 Add a new blog
-              </h1>
+              </h2>
             </div>
           </div>
         </div>
@@ -224,42 +224,42 @@ exports[`<BlogList /> should render correctly authenticated with blogs 1`] = `
               class="feature-card__annotation feature-card__annotation--mobile"
             >
               <div
-                class="typography__main typography__link typography--no-padding"
+                class="subsection__outer"
               >
-                <h2
-                  class="typography__text typography__text--subsection typography__link typography--no-padding"
+                <h3
+                  class="subsection__heading subsection__heading--link subsection__heading--no-padding"
                   id="nan-invalid-date"
                 >
                   NaN Invalid Date
-                </h2>
+                </h3>
               </div>
             </div>
             <div
               class="feature-card__annotation feature-card__annotation--tablet"
             >
               <div
-                class="typography__main typography__link typography--no-padding"
+                class="subsection__outer"
               >
-                <h2
-                  class="typography__text typography__text--subsection typography__link typography--no-padding"
+                <h3
+                  class="subsection__heading subsection__heading--link subsection__heading--no-padding"
                   id="nan"
                 >
                   NaN
-                </h2>
+                </h3>
               </div>
             </div>
             <div
               class="feature-card__annotation feature-card__annotation--tablet"
             >
               <div
-                class="typography__main typography__link typography--no-padding"
+                class="subsection__outer"
               >
-                <h2
-                  class="typography__text typography__text--subsection typography__link typography--no-padding"
+                <h3
+                  class="subsection__heading subsection__heading--link subsection__heading--no-padding"
                   id="invalid-date"
                 >
                   Invalid Date
-                </h2>
+                </h3>
               </div>
             </div>
           </div>
@@ -267,14 +267,14 @@ exports[`<BlogList /> should render correctly authenticated with blogs 1`] = `
             class="feature-card__center-container"
           >
             <div
-              class="typography__main typography--no-padding feature-card__title"
+              class="section__outer feature-card__title"
             >
-              <h1
-                class="typography__text typography__text--section typography__link typography--no-padding"
+              <h2
+                class="section__heading section__heading--link section__heading--no-padding"
                 id="blog-1-"
               >
                 Blog 1 
-              </h1>
+              </h2>
             </div>
           </div>
         </div>
@@ -317,42 +317,42 @@ exports[`<BlogList /> should render correctly authenticated with blogs 1`] = `
               class="feature-card__annotation feature-card__annotation--mobile"
             >
               <div
-                class="typography__main typography__link typography--no-padding"
+                class="subsection__outer"
               >
-                <h2
-                  class="typography__text typography__text--subsection typography__link typography--no-padding"
+                <h3
+                  class="subsection__heading subsection__heading--link subsection__heading--no-padding"
                   id="23-30-dec"
                 >
                   23-30 Dec
-                </h2>
+                </h3>
               </div>
             </div>
             <div
               class="feature-card__annotation feature-card__annotation--tablet"
             >
               <div
-                class="typography__main typography__link typography--no-padding"
+                class="subsection__outer"
               >
-                <h2
-                  class="typography__text typography__text--subsection typography__link typography--no-padding"
+                <h3
+                  class="subsection__heading subsection__heading--link subsection__heading--no-padding"
                   id="23-30"
                 >
                   23-30
-                </h2>
+                </h3>
               </div>
             </div>
             <div
               class="feature-card__annotation feature-card__annotation--tablet"
             >
               <div
-                class="typography__main typography__link typography--no-padding"
+                class="subsection__outer"
               >
-                <h2
-                  class="typography__text typography__text--subsection typography__link typography--no-padding"
+                <h3
+                  class="subsection__heading subsection__heading--link subsection__heading--no-padding"
                   id="dec"
                 >
                   Dec
-                </h2>
+                </h3>
               </div>
             </div>
           </div>
@@ -360,14 +360,14 @@ exports[`<BlogList /> should render correctly authenticated with blogs 1`] = `
             class="feature-card__center-container"
           >
             <div
-              class="typography__main typography--no-padding feature-card__title"
+              class="section__outer feature-card__title"
             >
-              <h1
-                class="typography__text typography__text--section typography__link typography--no-padding"
+              <h2
+                class="section__heading section__heading--link section__heading--no-padding"
                 id="st-ives--2018"
               >
                 St Ives  2018
-              </h1>
+              </h2>
             </div>
             <div
               class="feature-card__children"
@@ -459,42 +459,42 @@ exports[`<BlogList /> should render correctly authenticated with blogs 1`] = `
               class="feature-card__annotation feature-card__annotation--mobile"
             >
               <div
-                class="typography__main typography__link typography--no-padding"
+                class="subsection__outer"
               >
-                <h2
-                  class="typography__text typography__text--subsection typography__link typography--no-padding"
+                <h3
+                  class="subsection__heading subsection__heading--link subsection__heading--no-padding"
                   id="23-30-dec"
                 >
                   23-30 Dec
-                </h2>
+                </h3>
               </div>
             </div>
             <div
               class="feature-card__annotation feature-card__annotation--tablet"
             >
               <div
-                class="typography__main typography__link typography--no-padding"
+                class="subsection__outer"
               >
-                <h2
-                  class="typography__text typography__text--subsection typography__link typography--no-padding"
+                <h3
+                  class="subsection__heading subsection__heading--link subsection__heading--no-padding"
                   id="23-30"
                 >
                   23-30
-                </h2>
+                </h3>
               </div>
             </div>
             <div
               class="feature-card__annotation feature-card__annotation--tablet"
             >
               <div
-                class="typography__main typography__link typography--no-padding"
+                class="subsection__outer"
               >
-                <h2
-                  class="typography__text typography__text--subsection typography__link typography--no-padding"
+                <h3
+                  class="subsection__heading subsection__heading--link subsection__heading--no-padding"
                   id="dec"
                 >
                   Dec
-                </h2>
+                </h3>
               </div>
             </div>
           </div>
@@ -502,14 +502,14 @@ exports[`<BlogList /> should render correctly authenticated with blogs 1`] = `
             class="feature-card__center-container"
           >
             <div
-              class="typography__main typography--no-padding feature-card__title"
+              class="section__outer feature-card__title"
             >
-              <h1
-                class="typography__text typography__text--section typography__link typography--no-padding"
+              <h2
+                class="section__heading section__heading--link section__heading--no-padding"
                 id="untitled-blog-(deleted)"
               >
                 Untitled blog (DELETED)
-              </h1>
+              </h2>
             </div>
             <div
               class="feature-card__children"
@@ -586,14 +586,14 @@ exports[`<BlogList /> should render correctly authenticated with blogs 1`] = `
       class="creative-commons__background"
     />
     <div
-      class="typography__main creative-commons__inner"
+      class="subsection__outer creative-commons__inner"
     >
-      <h2
-        class="typography__text typography__text--subsection"
+      <h3
+        class="subsection__heading"
         id="copyright"
       >
         Copyright
-      </h2>
+      </h3>
       <span
         class="paragraph"
       >
@@ -710,14 +710,14 @@ exports[`<BlogList /> should render correctly with blog load error 1`] = `
     />
   </div>
   <div
-    class="typography__main typography--no-padding loading-cover__overlay--content"
+    class="subsection__outer loading-cover__overlay--content"
   >
-    <h2
-      class="typography__text typography__text--subsection typography--no-padding"
+    <h3
+      class="subsection__heading subsection__heading--no-padding"
       id="this-is-taking-a-while.-maybe-something-isn't-quite-right..."
     >
       This is taking a while. Maybe something isn't quite right...
-    </h2>
+    </h3>
   </div>
   <div
     class="creative-commons__wrapper"
@@ -726,14 +726,14 @@ exports[`<BlogList /> should render correctly with blog load error 1`] = `
       class="creative-commons__background"
     />
     <div
-      class="typography__main creative-commons__inner"
+      class="subsection__outer creative-commons__inner"
     >
-      <h2
-        class="typography__text typography__text--subsection"
+      <h3
+        class="subsection__heading"
         id="copyright"
       >
         Copyright
-      </h2>
+      </h3>
       <span
         class="paragraph"
       >
@@ -834,42 +834,42 @@ exports[`<BlogList /> should render correctly with blogs 1`] = `
               class="feature-card__annotation feature-card__annotation--mobile"
             >
               <div
-                class="typography__main typography__link typography--no-padding"
+                class="subsection__outer"
               >
-                <h2
-                  class="typography__text typography__text--subsection typography__link typography--no-padding"
+                <h3
+                  class="subsection__heading subsection__heading--link subsection__heading--no-padding"
                   id="nan-invalid-date"
                 >
                   NaN Invalid Date
-                </h2>
+                </h3>
               </div>
             </div>
             <div
               class="feature-card__annotation feature-card__annotation--tablet"
             >
               <div
-                class="typography__main typography__link typography--no-padding"
+                class="subsection__outer"
               >
-                <h2
-                  class="typography__text typography__text--subsection typography__link typography--no-padding"
+                <h3
+                  class="subsection__heading subsection__heading--link subsection__heading--no-padding"
                   id="nan"
                 >
                   NaN
-                </h2>
+                </h3>
               </div>
             </div>
             <div
               class="feature-card__annotation feature-card__annotation--tablet"
             >
               <div
-                class="typography__main typography__link typography--no-padding"
+                class="subsection__outer"
               >
-                <h2
-                  class="typography__text typography__text--subsection typography__link typography--no-padding"
+                <h3
+                  class="subsection__heading subsection__heading--link subsection__heading--no-padding"
                   id="invalid-date"
                 >
                   Invalid Date
-                </h2>
+                </h3>
               </div>
             </div>
           </div>
@@ -877,14 +877,14 @@ exports[`<BlogList /> should render correctly with blogs 1`] = `
             class="feature-card__center-container"
           >
             <div
-              class="typography__main typography--no-padding feature-card__title"
+              class="section__outer feature-card__title"
             >
-              <h1
-                class="typography__text typography__text--section typography__link typography--no-padding"
+              <h2
+                class="section__heading section__heading--link section__heading--no-padding"
                 id="blog-1-"
               >
                 Blog 1 
-              </h1>
+              </h2>
             </div>
           </div>
         </div>
@@ -917,42 +917,42 @@ exports[`<BlogList /> should render correctly with blogs 1`] = `
               class="feature-card__annotation feature-card__annotation--mobile"
             >
               <div
-                class="typography__main typography__link typography--no-padding"
+                class="subsection__outer"
               >
-                <h2
-                  class="typography__text typography__text--subsection typography__link typography--no-padding"
+                <h3
+                  class="subsection__heading subsection__heading--link subsection__heading--no-padding"
                   id="23-30-dec"
                 >
                   23-30 Dec
-                </h2>
+                </h3>
               </div>
             </div>
             <div
               class="feature-card__annotation feature-card__annotation--tablet"
             >
               <div
-                class="typography__main typography__link typography--no-padding"
+                class="subsection__outer"
               >
-                <h2
-                  class="typography__text typography__text--subsection typography__link typography--no-padding"
+                <h3
+                  class="subsection__heading subsection__heading--link subsection__heading--no-padding"
                   id="23-30"
                 >
                   23-30
-                </h2>
+                </h3>
               </div>
             </div>
             <div
               class="feature-card__annotation feature-card__annotation--tablet"
             >
               <div
-                class="typography__main typography__link typography--no-padding"
+                class="subsection__outer"
               >
-                <h2
-                  class="typography__text typography__text--subsection typography__link typography--no-padding"
+                <h3
+                  class="subsection__heading subsection__heading--link subsection__heading--no-padding"
                   id="dec"
                 >
                   Dec
-                </h2>
+                </h3>
               </div>
             </div>
           </div>
@@ -960,14 +960,14 @@ exports[`<BlogList /> should render correctly with blogs 1`] = `
             class="feature-card__center-container"
           >
             <div
-              class="typography__main typography--no-padding feature-card__title"
+              class="section__outer feature-card__title"
             >
-              <h1
-                class="typography__text typography__text--section typography__link typography--no-padding"
+              <h2
+                class="section__heading section__heading--link section__heading--no-padding"
                 id="st-ives--2018"
               >
                 St Ives  2018
-              </h1>
+              </h2>
             </div>
             <div
               class="feature-card__children"
@@ -1049,42 +1049,42 @@ exports[`<BlogList /> should render correctly with blogs 1`] = `
               class="feature-card__annotation feature-card__annotation--mobile"
             >
               <div
-                class="typography__main typography__link typography--no-padding"
+                class="subsection__outer"
               >
-                <h2
-                  class="typography__text typography__text--subsection typography__link typography--no-padding"
+                <h3
+                  class="subsection__heading subsection__heading--link subsection__heading--no-padding"
                   id="23-30-dec"
                 >
                   23-30 Dec
-                </h2>
+                </h3>
               </div>
             </div>
             <div
               class="feature-card__annotation feature-card__annotation--tablet"
             >
               <div
-                class="typography__main typography__link typography--no-padding"
+                class="subsection__outer"
               >
-                <h2
-                  class="typography__text typography__text--subsection typography__link typography--no-padding"
+                <h3
+                  class="subsection__heading subsection__heading--link subsection__heading--no-padding"
                   id="23-30"
                 >
                   23-30
-                </h2>
+                </h3>
               </div>
             </div>
             <div
               class="feature-card__annotation feature-card__annotation--tablet"
             >
               <div
-                class="typography__main typography__link typography--no-padding"
+                class="subsection__outer"
               >
-                <h2
-                  class="typography__text typography__text--subsection typography__link typography--no-padding"
+                <h3
+                  class="subsection__heading subsection__heading--link subsection__heading--no-padding"
                   id="dec"
                 >
                   Dec
-                </h2>
+                </h3>
               </div>
             </div>
           </div>
@@ -1092,14 +1092,14 @@ exports[`<BlogList /> should render correctly with blogs 1`] = `
             class="feature-card__center-container"
           >
             <div
-              class="typography__main typography--no-padding feature-card__title"
+              class="section__outer feature-card__title"
             >
-              <h1
-                class="typography__text typography__text--section typography__link typography--no-padding"
+              <h2
+                class="section__heading section__heading--link section__heading--no-padding"
                 id="untitled-blog-(deleted)"
               >
                 Untitled blog (DELETED)
-              </h1>
+              </h2>
             </div>
             <div
               class="feature-card__children"
@@ -1165,14 +1165,14 @@ exports[`<BlogList /> should render correctly with blogs 1`] = `
       class="creative-commons__background"
     />
     <div
-      class="typography__main creative-commons__inner"
+      class="subsection__outer creative-commons__inner"
     >
-      <h2
-        class="typography__text typography__text--subsection"
+      <h3
+        class="subsection__heading"
         id="copyright"
       >
         Copyright
-      </h2>
+      </h3>
       <span
         class="paragraph"
       >
@@ -1295,14 +1295,14 @@ exports[`<BlogList /> should render correctly with initial state 1`] = `
       class="creative-commons__background"
     />
     <div
-      class="typography__main creative-commons__inner"
+      class="subsection__outer creative-commons__inner"
     >
-      <h2
-        class="typography__text typography__text--subsection"
+      <h3
+        class="subsection__heading"
         id="copyright"
       >
         Copyright
-      </h2>
+      </h3>
       <span
         class="paragraph"
       >
@@ -1403,42 +1403,42 @@ exports[`<BlogList /> should render correctly with ssrBlogs 1`] = `
               class="feature-card__annotation feature-card__annotation--mobile"
             >
               <div
-                class="typography__main typography__link typography--no-padding"
+                class="subsection__outer"
               >
-                <h2
-                  class="typography__text typography__text--subsection typography__link typography--no-padding"
+                <h3
+                  class="subsection__heading subsection__heading--link subsection__heading--no-padding"
                   id="nan-invalid-date"
                 >
                   NaN Invalid Date
-                </h2>
+                </h3>
               </div>
             </div>
             <div
               class="feature-card__annotation feature-card__annotation--tablet"
             >
               <div
-                class="typography__main typography__link typography--no-padding"
+                class="subsection__outer"
               >
-                <h2
-                  class="typography__text typography__text--subsection typography__link typography--no-padding"
+                <h3
+                  class="subsection__heading subsection__heading--link subsection__heading--no-padding"
                   id="nan"
                 >
                   NaN
-                </h2>
+                </h3>
               </div>
             </div>
             <div
               class="feature-card__annotation feature-card__annotation--tablet"
             >
               <div
-                class="typography__main typography__link typography--no-padding"
+                class="subsection__outer"
               >
-                <h2
-                  class="typography__text typography__text--subsection typography__link typography--no-padding"
+                <h3
+                  class="subsection__heading subsection__heading--link subsection__heading--no-padding"
                   id="invalid-date"
                 >
                   Invalid Date
-                </h2>
+                </h3>
               </div>
             </div>
           </div>
@@ -1446,14 +1446,14 @@ exports[`<BlogList /> should render correctly with ssrBlogs 1`] = `
             class="feature-card__center-container"
           >
             <div
-              class="typography__main typography--no-padding feature-card__title"
+              class="section__outer feature-card__title"
             >
-              <h1
-                class="typography__text typography__text--section typography__link typography--no-padding"
+              <h2
+                class="section__heading section__heading--link section__heading--no-padding"
                 id="blog-1-"
               >
                 Blog 1 
-              </h1>
+              </h2>
             </div>
           </div>
         </div>
@@ -1486,42 +1486,42 @@ exports[`<BlogList /> should render correctly with ssrBlogs 1`] = `
               class="feature-card__annotation feature-card__annotation--mobile"
             >
               <div
-                class="typography__main typography__link typography--no-padding"
+                class="subsection__outer"
               >
-                <h2
-                  class="typography__text typography__text--subsection typography__link typography--no-padding"
+                <h3
+                  class="subsection__heading subsection__heading--link subsection__heading--no-padding"
                   id="23-30-dec"
                 >
                   23-30 Dec
-                </h2>
+                </h3>
               </div>
             </div>
             <div
               class="feature-card__annotation feature-card__annotation--tablet"
             >
               <div
-                class="typography__main typography__link typography--no-padding"
+                class="subsection__outer"
               >
-                <h2
-                  class="typography__text typography__text--subsection typography__link typography--no-padding"
+                <h3
+                  class="subsection__heading subsection__heading--link subsection__heading--no-padding"
                   id="23-30"
                 >
                   23-30
-                </h2>
+                </h3>
               </div>
             </div>
             <div
               class="feature-card__annotation feature-card__annotation--tablet"
             >
               <div
-                class="typography__main typography__link typography--no-padding"
+                class="subsection__outer"
               >
-                <h2
-                  class="typography__text typography__text--subsection typography__link typography--no-padding"
+                <h3
+                  class="subsection__heading subsection__heading--link subsection__heading--no-padding"
                   id="dec"
                 >
                   Dec
-                </h2>
+                </h3>
               </div>
             </div>
           </div>
@@ -1529,14 +1529,14 @@ exports[`<BlogList /> should render correctly with ssrBlogs 1`] = `
             class="feature-card__center-container"
           >
             <div
-              class="typography__main typography--no-padding feature-card__title"
+              class="section__outer feature-card__title"
             >
-              <h1
-                class="typography__text typography__text--section typography__link typography--no-padding"
+              <h2
+                class="section__heading section__heading--link section__heading--no-padding"
                 id="st-ives--2018"
               >
                 St Ives  2018
-              </h1>
+              </h2>
             </div>
             <div
               class="feature-card__children"
@@ -1618,42 +1618,42 @@ exports[`<BlogList /> should render correctly with ssrBlogs 1`] = `
               class="feature-card__annotation feature-card__annotation--mobile"
             >
               <div
-                class="typography__main typography__link typography--no-padding"
+                class="subsection__outer"
               >
-                <h2
-                  class="typography__text typography__text--subsection typography__link typography--no-padding"
+                <h3
+                  class="subsection__heading subsection__heading--link subsection__heading--no-padding"
                   id="23-30-dec"
                 >
                   23-30 Dec
-                </h2>
+                </h3>
               </div>
             </div>
             <div
               class="feature-card__annotation feature-card__annotation--tablet"
             >
               <div
-                class="typography__main typography__link typography--no-padding"
+                class="subsection__outer"
               >
-                <h2
-                  class="typography__text typography__text--subsection typography__link typography--no-padding"
+                <h3
+                  class="subsection__heading subsection__heading--link subsection__heading--no-padding"
                   id="23-30"
                 >
                   23-30
-                </h2>
+                </h3>
               </div>
             </div>
             <div
               class="feature-card__annotation feature-card__annotation--tablet"
             >
               <div
-                class="typography__main typography__link typography--no-padding"
+                class="subsection__outer"
               >
-                <h2
-                  class="typography__text typography__text--subsection typography__link typography--no-padding"
+                <h3
+                  class="subsection__heading subsection__heading--link subsection__heading--no-padding"
                   id="dec"
                 >
                   Dec
-                </h2>
+                </h3>
               </div>
             </div>
           </div>
@@ -1661,14 +1661,14 @@ exports[`<BlogList /> should render correctly with ssrBlogs 1`] = `
             class="feature-card__center-container"
           >
             <div
-              class="typography__main typography--no-padding feature-card__title"
+              class="section__outer feature-card__title"
             >
-              <h1
-                class="typography__text typography__text--section typography__link typography--no-padding"
+              <h2
+                class="section__heading section__heading--link section__heading--no-padding"
                 id="untitled-blog-(deleted)"
               >
                 Untitled blog (DELETED)
-              </h1>
+              </h2>
             </div>
             <div
               class="feature-card__children"
@@ -1734,14 +1734,14 @@ exports[`<BlogList /> should render correctly with ssrBlogs 1`] = `
       class="creative-commons__background"
     />
     <div
-      class="typography__main creative-commons__inner"
+      class="subsection__outer creative-commons__inner"
     >
-      <h2
-        class="typography__text typography__text--subsection"
+      <h3
+        class="subsection__heading"
         id="copyright"
       >
         Copyright
-      </h2>
+      </h3>
       <span
         class="paragraph"
       >

@@ -25,7 +25,7 @@ exports[`<NavigationItem /> Should render correctly 1`] = `
           class="feature-card__center-container"
         >
           <div
-            class="typography__main typography--no-padding feature-card__title"
+            class="section__outer feature-card__title"
           />
         </div>
       </div>
@@ -60,7 +60,7 @@ exports[`<NavigationItem /> Should render correctly hrefExternal 1`] = `
           class="feature-card__center-container"
         >
           <div
-            class="typography__main typography--no-padding feature-card__title"
+            class="section__outer feature-card__title"
           />
         </div>
       </div>
@@ -97,7 +97,7 @@ exports[`<NavigationItem /> Should render correctly with custom className 1`] = 
           class="feature-card__center-container"
         >
           <div
-            class="typography__main typography--no-padding feature-card__title"
+            class="section__outer feature-card__title"
           />
         </div>
       </div>
@@ -134,7 +134,7 @@ exports[`<NavigationItem /> Should render with nextified href 1`] = `
           class="feature-card__center-container"
         >
           <div
-            class="typography__main typography--no-padding feature-card__title"
+            class="section__outer feature-card__title"
           />
         </div>
       </div>

@@ -38,39 +38,34 @@ exports[`<Account /> should render correctly with initial state 1`] = `
   <div
     class=""
   >
-    <div
-      class="typography__main"
+    <h1
+      class="page-title__heading"
     >
-      <h1
-        class="typography__text typography__text--section page-title__section"
-        id="account"
+      Account
+    </h1>
+    <div
+      class="account__control-panel"
+    >
+      <button
+        class="button__outer button__outer--regular button__outer--no-bouncy account__button"
+        type="button"
       >
-        Account
-      </h1>
-      <div
-        class="account__control-panel"
+        <span
+          class="button__child"
+        >
+          Get a new verification email
+        </span>
+      </button>
+      <button
+        class="button__outer button__outer--destructive button__outer--no-bouncy button__outer--no-bouncy--destructive"
+        type="button"
       >
-        <button
-          class="button__outer button__outer--regular button__outer--no-bouncy account__button"
-          type="button"
+        <span
+          class="button__child"
         >
-          <span
-            class="button__child"
-          >
-            Get a new verification email
-          </span>
-        </button>
-        <button
-          class="button__outer button__outer--destructive button__outer--no-bouncy button__outer--no-bouncy--destructive"
-          type="button"
-        >
-          <span
-            class="button__child"
-          >
-            Logout
-          </span>
-        </button>
-      </div>
+          Logout
+        </span>
+      </button>
     </div>
   </div>
 </div>
@@ -81,39 +76,34 @@ exports[`<Account /> should render correctly with initial state 2`] = `
   <div
     class=""
   >
-    <div
-      class="typography__main"
+    <h1
+      class="page-title__heading"
     >
-      <h1
-        class="typography__text typography__text--section page-title__section"
-        id="account"
+      Account
+    </h1>
+    <div
+      class="account__control-panel"
+    >
+      <button
+        class="button__outer button__outer--regular button__outer--no-bouncy account__button"
+        type="button"
       >
-        Account
-      </h1>
-      <div
-        class="account__control-panel"
+        <span
+          class="button__child"
+        >
+          Get a new verification email
+        </span>
+      </button>
+      <button
+        class="button__outer button__outer--destructive button__outer--no-bouncy button__outer--no-bouncy--destructive"
+        type="button"
       >
-        <button
-          class="button__outer button__outer--regular button__outer--no-bouncy account__button"
-          type="button"
+        <span
+          class="button__child"
         >
-          <span
-            class="button__child"
-          >
-            Get a new verification email
-          </span>
-        </button>
-        <button
-          class="button__outer button__outer--destructive button__outer--no-bouncy button__outer--no-bouncy--destructive"
-          type="button"
-        >
-          <span
-            class="button__child"
-          >
-            Logout
-          </span>
-        </button>
-      </div>
+          Logout
+        </span>
+      </button>
     </div>
   </div>
 </div>
@@ -124,39 +114,34 @@ exports[`<Account /> should render correctly with logOutError 1`] = `
   <div
     class=""
   >
-    <div
-      class="typography__main"
+    <h1
+      class="page-title__heading"
     >
-      <h1
-        class="typography__text typography__text--section page-title__section"
-        id="account"
+      Account
+    </h1>
+    <div
+      class="account__control-panel"
+    >
+      <button
+        class="button__outer button__outer--regular button__outer--no-bouncy account__button"
+        type="button"
       >
-        Account
-      </h1>
-      <div
-        class="account__control-panel"
+        <span
+          class="button__child"
+        >
+          Get a new verification email
+        </span>
+      </button>
+      <button
+        class="button__outer button__outer--destructive button__outer--no-bouncy button__outer--no-bouncy--destructive"
+        type="button"
       >
-        <button
-          class="button__outer button__outer--regular button__outer--no-bouncy account__button"
-          type="button"
+        <span
+          class="button__child"
         >
-          <span
-            class="button__child"
-          >
-            Get a new verification email
-          </span>
-        </button>
-        <button
-          class="button__outer button__outer--destructive button__outer--no-bouncy button__outer--no-bouncy--destructive"
-          type="button"
-        >
-          <span
-            class="button__child"
-          >
-            Logout
-          </span>
-        </button>
-      </div>
+          Logout
+        </span>
+      </button>
     </div>
   </div>
 </div>
@@ -167,39 +152,34 @@ exports[`<Account /> should render correctly with logOutResult 1`] = `
   <div
     class=""
   >
-    <div
-      class="typography__main"
+    <h1
+      class="page-title__heading"
     >
-      <h1
-        class="typography__text typography__text--section page-title__section"
-        id="account"
+      Account
+    </h1>
+    <div
+      class="account__control-panel"
+    >
+      <button
+        class="button__outer button__outer--regular button__outer--no-bouncy account__button"
+        type="button"
       >
-        Account
-      </h1>
-      <div
-        class="account__control-panel"
+        <span
+          class="button__child"
+        >
+          Get a new verification email
+        </span>
+      </button>
+      <button
+        class="button__outer button__outer--destructive button__outer--no-bouncy button__outer--no-bouncy--destructive"
+        type="button"
       >
-        <button
-          class="button__outer button__outer--regular button__outer--no-bouncy account__button"
-          type="button"
+        <span
+          class="button__child"
         >
-          <span
-            class="button__child"
-          >
-            Get a new verification email
-          </span>
-        </button>
-        <button
-          class="button__outer button__outer--destructive button__outer--no-bouncy button__outer--no-bouncy--destructive"
-          type="button"
-        >
-          <span
-            class="button__child"
-          >
-            Logout
-          </span>
-        </button>
-      </div>
+          Logout
+        </span>
+      </button>
     </div>
   </div>
 </div>
@@ -210,40 +190,35 @@ exports[`<Account /> should render correctly with loggingOut=true 1`] = `
   <div
     class=""
   >
-    <div
-      class="typography__main"
+    <h1
+      class="page-title__heading"
     >
-      <h1
-        class="typography__text typography__text--section page-title__section"
-        id="account"
+      Account
+    </h1>
+    <div
+      class="account__control-panel"
+    >
+      <button
+        class="button__outer button__outer--regular button__outer--no-bouncy account__button"
+        type="button"
       >
-        Account
-      </h1>
-      <div
-        class="account__control-panel"
+        <span
+          class="button__child"
+        >
+          Get a new verification email
+        </span>
+      </button>
+      <button
+        class="button__outer button__outer--destructive button__outer--no-bouncy button__outer--no-bouncy--destructive button__outer--disabled"
+        disabled=""
+        type="button"
       >
-        <button
-          class="button__outer button__outer--regular button__outer--no-bouncy account__button"
-          type="button"
+        <span
+          class="button__child"
         >
-          <span
-            class="button__child"
-          >
-            Get a new verification email
-          </span>
-        </button>
-        <button
-          class="button__outer button__outer--destructive button__outer--no-bouncy button__outer--no-bouncy--destructive button__outer--disabled"
-          disabled=""
-          type="button"
-        >
-          <span
-            class="button__child"
-          >
-            Logout
-          </span>
-        </button>
-      </div>
+          Logout
+        </span>
+      </button>
     </div>
   </div>
 </div>
@@ -287,39 +262,34 @@ exports[`<Account /> should render correctly with requestVerificationEmailError 
   <div
     class=""
   >
-    <div
-      class="typography__main"
+    <h1
+      class="page-title__heading"
     >
-      <h1
-        class="typography__text typography__text--section page-title__section"
-        id="account"
+      Account
+    </h1>
+    <div
+      class="account__control-panel"
+    >
+      <button
+        class="button__outer button__outer--regular button__outer--no-bouncy account__button"
+        type="button"
       >
-        Account
-      </h1>
-      <div
-        class="account__control-panel"
+        <span
+          class="button__child"
+        >
+          Get a new verification email
+        </span>
+      </button>
+      <button
+        class="button__outer button__outer--destructive button__outer--no-bouncy button__outer--no-bouncy--destructive"
+        type="button"
       >
-        <button
-          class="button__outer button__outer--regular button__outer--no-bouncy account__button"
-          type="button"
+        <span
+          class="button__child"
         >
-          <span
-            class="button__child"
-          >
-            Get a new verification email
-          </span>
-        </button>
-        <button
-          class="button__outer button__outer--destructive button__outer--no-bouncy button__outer--no-bouncy--destructive"
-          type="button"
-        >
-          <span
-            class="button__child"
-          >
-            Logout
-          </span>
-        </button>
-      </div>
+          Logout
+        </span>
+      </button>
     </div>
   </div>
 </div>
@@ -330,39 +300,34 @@ exports[`<Account /> should render correctly with requestVerificationEmailResult
   <div
     class=""
   >
-    <div
-      class="typography__main"
+    <h1
+      class="page-title__heading"
     >
-      <h1
-        class="typography__text typography__text--section page-title__section"
-        id="account"
+      Account
+    </h1>
+    <div
+      class="account__control-panel"
+    >
+      <button
+        class="button__outer button__outer--regular button__outer--no-bouncy account__button"
+        type="button"
       >
-        Account
-      </h1>
-      <div
-        class="account__control-panel"
+        <span
+          class="button__child"
+        >
+          Get a new verification email
+        </span>
+      </button>
+      <button
+        class="button__outer button__outer--destructive button__outer--no-bouncy button__outer--no-bouncy--destructive"
+        type="button"
       >
-        <button
-          class="button__outer button__outer--regular button__outer--no-bouncy account__button"
-          type="button"
+        <span
+          class="button__child"
         >
-          <span
-            class="button__child"
-          >
-            Get a new verification email
-          </span>
-        </button>
-        <button
-          class="button__outer button__outer--destructive button__outer--no-bouncy button__outer--no-bouncy--destructive"
-          type="button"
-        >
-          <span
-            class="button__child"
-          >
-            Logout
-          </span>
-        </button>
-      </div>
+          Logout
+        </span>
+      </button>
     </div>
   </div>
 </div>
@@ -373,40 +338,35 @@ exports[`<Account /> should render correctly with requestingVerificationEmail=tr
   <div
     class=""
   >
-    <div
-      class="typography__main"
+    <h1
+      class="page-title__heading"
     >
-      <h1
-        class="typography__text typography__text--section page-title__section"
-        id="account"
+      Account
+    </h1>
+    <div
+      class="account__control-panel"
+    >
+      <button
+        class="button__outer button__outer--regular button__outer--no-bouncy button__outer--disabled account__button"
+        disabled=""
+        type="button"
       >
-        Account
-      </h1>
-      <div
-        class="account__control-panel"
+        <span
+          class="button__child"
+        >
+          Get a new verification email
+        </span>
+      </button>
+      <button
+        class="button__outer button__outer--destructive button__outer--no-bouncy button__outer--no-bouncy--destructive"
+        type="button"
       >
-        <button
-          class="button__outer button__outer--regular button__outer--no-bouncy button__outer--disabled account__button"
-          disabled=""
-          type="button"
+        <span
+          class="button__child"
         >
-          <span
-            class="button__child"
-          >
-            Get a new verification email
-          </span>
-        </button>
-        <button
-          class="button__outer button__outer--destructive button__outer--no-bouncy button__outer--no-bouncy--destructive"
-          type="button"
-        >
-          <span
-            class="button__child"
-          >
-            Logout
-          </span>
-        </button>
-      </div>
+          Logout
+        </span>
+      </button>
     </div>
   </div>
 </div>
@@ -417,29 +377,24 @@ exports[`<Account /> should render correctly with user with emailVerified=true 1
   <div
     class=""
   >
-    <div
-      class="typography__main"
+    <h1
+      class="page-title__heading"
     >
-      <h1
-        class="typography__text typography__text--section page-title__section"
-        id="account"
+      Account
+    </h1>
+    <div
+      class="account__control-panel"
+    >
+      <button
+        class="button__outer button__outer--destructive button__outer--no-bouncy button__outer--no-bouncy--destructive"
+        type="button"
       >
-        Account
-      </h1>
-      <div
-        class="account__control-panel"
-      >
-        <button
-          class="button__outer button__outer--destructive button__outer--no-bouncy button__outer--no-bouncy--destructive"
-          type="button"
+        <span
+          class="button__child"
         >
-          <span
-            class="button__child"
-          >
-            Logout
-          </span>
-        </button>
-      </div>
+          Logout
+        </span>
+      </button>
     </div>
   </div>
 </div>

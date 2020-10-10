@@ -2,33 +2,23 @@
 
 exports[`<PageTitle /> Should render correctly 1`] = `
 <div>
-  <div
-    class="typography__main"
+  <h1
+    class="page-title__heading"
   >
-    <h1
-      class="typography__text typography__text--section page-title__section"
-      id="test"
-    >
-      Test
-    </h1>
-    some text
-  </div>
+    Test
+  </h1>
+  some text
 </div>
 `;
 
 exports[`<PageTitle /> Should render correctly with custom className 1`] = `
 <div>
-  <div
-    class="typography__main test-custom-classname"
+  <h1
+    class="page-title__heading test-custom-classname"
   >
-    <h1
-      class="typography__text typography__text--section page-title__section"
-      id="test"
-    >
-      Test
-    </h1>
-    some text
-  </div>
+    Test
+  </h1>
+  some text
 </div>
 `;
 
@@ -40,16 +30,11 @@ exports[`<PageTitle /> Should render correctly with other props 1`] = `
   >
     ⇠ test
   </a>
-  <div
-    class="typography__main"
+  <h1
+    class="page-title__heading page-title__heading--with-link"
   >
-    <h1
-      class="typography__text typography__text--section page-title__section page-title__section--with-link"
-      id="test"
-    >
-      Test
-    </h1>
-    some text
-  </div>
+    Test
+  </h1>
+  some text
 </div>
 `;
