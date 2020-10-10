@@ -2,16 +2,11 @@
 
 exports[`<Photography /> should render correctly 1`] = `
 <div>
-  <div
-    class="typography__main"
+  <h1
+    class="page-title__heading"
   >
-    <h1
-      class="typography__text typography__text--section page-title__section"
-      id="photography"
-    >
-      Photography
-    </h1>
-  </div>
+    Photography
+  </h1>
   <div
     class="photography__card-container"
   >
@@ -36,14 +31,14 @@ exports[`<Photography /> should render correctly 1`] = `
             class="feature-card__center-container feature-card__center-container--narrow-compact"
           >
             <div
-              class="typography__main typography--no-padding feature-card__title"
+              class="section__outer feature-card__title"
             >
-              <h1
-                class="typography__text typography__text--section typography__link typography--no-padding"
+              <h2
+                class="section__heading section__heading--link section__heading--no-padding"
                 id="find-me-on-gurushots"
               >
                 Find me on GuruShots
-              </h1>
+              </h2>
             </div>
           </div>
           <div
@@ -108,14 +103,14 @@ exports[`<Photography /> should render correctly 1`] = `
             class="feature-card__center-container feature-card__center-container--narrow-compact"
           >
             <div
-              class="typography__main typography--no-padding feature-card__title"
+              class="section__outer feature-card__title"
             >
-              <h1
-                class="typography__text typography__text--section typography__link typography--no-padding"
+              <h2
+                class="section__heading section__heading--link section__heading--no-padding"
                 id="find-me-on-flickr"
               >
                 Find me on Flickr
-              </h1>
+              </h2>
             </div>
           </div>
           <div
@@ -180,14 +175,14 @@ exports[`<Photography /> should render correctly 1`] = `
             class="feature-card__center-container feature-card__center-container--narrow-compact"
           >
             <div
-              class="typography__main typography--no-padding feature-card__title"
+              class="section__outer feature-card__title"
             >
-              <h1
-                class="typography__text typography__text--section typography__link typography--no-padding"
+              <h2
+                class="section__heading section__heading--link section__heading--no-padding"
                 id="find-me-on-unsplash"
               >
                 Find me on Unsplash
-              </h1>
+              </h2>
             </div>
           </div>
           <div
@@ -233,17 +228,17 @@ exports[`<Photography /> should render correctly 1`] = `
     </a>
   </div>
   <div
-    class="typography__main"
+    class="section__outer"
   >
     <div
-      class="typography__main photography__subsection"
+      class="subsection__outer photography__subsection"
     >
-      <h2
-        class="typography__text typography__text--subsection"
+      <h3
+        class="subsection__heading"
         id="harlequins-vs-worcester-rugby-match"
       >
         Harlequins vs Worcester Rugby Match
-      </h2>
+      </h3>
       <div
         class="image__outer photography__image"
       >
@@ -277,14 +272,14 @@ exports[`<Photography /> should render correctly 1`] = `
       </div>
     </div>
     <div
-      class="typography__main photography__subsection"
+      class="subsection__outer photography__subsection"
     >
-      <h2
-        class="typography__text typography__text--subsection"
+      <h3
+        class="subsection__heading"
         id="the-cat-looking-handsome-as-ever!"
       >
         The cat looking handsome as ever!
-      </h2>
+      </h3>
       <div
         class="image__outer photography__image"
       >
@@ -318,14 +313,14 @@ exports[`<Photography /> should render correctly 1`] = `
       </div>
     </div>
     <div
-      class="typography__main photography__subsection"
+      class="subsection__outer photography__subsection"
     >
-      <h2
-        class="typography__text typography__text--subsection"
+      <h3
+        class="subsection__heading"
         id="a-training-scenario-at-epicc-2017"
       >
         A training scenario at EPICC 2017
-      </h2>
+      </h3>
       <div
         class="graphic-content__outer-container photography__image"
       >
@@ -391,14 +386,14 @@ exports[`<Photography /> should render correctly 1`] = `
       </div>
     </div>
     <div
-      class="typography__main photography__subsection"
+      class="subsection__outer photography__subsection"
     >
-      <h2
-        class="typography__text typography__text--subsection"
+      <h3
+        class="subsection__heading"
         id="dog-running-with-a-stick"
       >
         Dog running with a Stick
-      </h2>
+      </h3>
       <div
         class="image__outer photography__image"
       >
@@ -432,14 +427,14 @@ exports[`<Photography /> should render correctly 1`] = `
       </div>
     </div>
     <div
-      class="typography__main photography__subsection"
+      class="subsection__outer photography__subsection"
     >
-      <h2
-        class="typography__text typography__text--subsection"
+      <h3
+        class="subsection__heading"
         id="stunt-motorcyclist"
       >
         Stunt Motorcyclist
-      </h2>
+      </h3>
       <div
         class="image__outer photography__image"
       >
@@ -473,14 +468,14 @@ exports[`<Photography /> should render correctly 1`] = `
       </div>
     </div>
     <div
-      class="typography__main photography__subsection"
+      class="subsection__outer photography__subsection"
     >
-      <h2
-        class="typography__text typography__text--subsection"
+      <h3
+        class="subsection__heading"
         id="longleat-festival-of-light"
       >
         Longleat Festival of Light
-      </h2>
+      </h3>
       <div
         class="image__outer photography__image"
       >
@@ -514,14 +509,14 @@ exports[`<Photography /> should render correctly 1`] = `
       </div>
     </div>
     <div
-      class="typography__main photography__subsection"
+      class="subsection__outer photography__subsection"
     >
-      <h2
-        class="typography__text typography__text--subsection"
+      <h3
+        class="subsection__heading"
         id="serre-chevalier"
       >
         Serre Chevalier
-      </h2>
+      </h3>
       <div
         class="image__outer photography__image"
       >
@@ -555,14 +550,14 @@ exports[`<Photography /> should render correctly 1`] = `
       </div>
     </div>
     <div
-      class="typography__main photography__subsection"
+      class="subsection__outer photography__subsection"
     >
-      <h2
-        class="typography__text typography__text--subsection"
+      <h3
+        class="subsection__heading"
         id="nick-matthew-playing-in-the-canary-wharf-open"
       >
         Nick Matthew playing in the Canary Wharf Open
-      </h2>
+      </h3>
       <div
         class="image__outer photography__image"
       >
@@ -597,23 +592,23 @@ exports[`<Photography /> should render correctly 1`] = `
     </div>
   </div>
   <div
-    class="typography__main"
+    class="section__outer"
   >
-    <h1
-      class="typography__text typography__text--section"
+    <h2
+      class="section__heading"
       id="photoshop"
     >
       Photoshop
-    </h1>
+    </h2>
     <div
-      class="typography__main photography__subsection"
+      class="subsection__outer photography__subsection"
     >
-      <h2
-        class="typography__text typography__text--subsection"
+      <h3
+        class="subsection__heading"
         id="tulips-exploding-with-light"
       >
         Tulips exploding with light
-      </h2>
+      </h3>
       <span
         class="paragraph"
       >
@@ -653,14 +648,14 @@ exports[`<Photography /> should render correctly 1`] = `
       </div>
     </div>
     <div
-      class="typography__main photography__subsection"
+      class="subsection__outer photography__subsection"
     >
-      <h2
-        class="typography__text typography__text--subsection"
+      <h3
+        class="subsection__heading"
         id="miss-saigon-sketch"
       >
         Miss Saigon sketch
-      </h2>
+      </h3>
       <span
         class="paragraph"
       >
@@ -700,14 +695,14 @@ exports[`<Photography /> should render correctly 1`] = `
       </div>
     </div>
     <div
-      class="typography__main photography__subsection"
+      class="subsection__outer photography__subsection"
     >
-      <h2
-        class="typography__text typography__text--subsection"
+      <h3
+        class="subsection__heading"
         id="dual-carriageway-light-painting-(in-post)"
       >
         Dual-carriageway light-painting (in post)
-      </h2>
+      </h3>
       <span
         class="paragraph"
       >
@@ -748,23 +743,23 @@ exports[`<Photography /> should render correctly 1`] = `
     </div>
   </div>
   <div
-    class="typography__main"
+    class="section__outer"
   >
-    <h1
-      class="typography__text typography__text--section"
+    <h2
+      class="section__heading"
       id="food-is-art!-(...sometimes)"
     >
       Food is art! (...sometimes)
-    </h1>
+    </h2>
     <div
-      class="typography__main photography__subsection"
+      class="subsection__outer photography__subsection"
     >
-      <h2
-        class="typography__text typography__text--subsection"
+      <h3
+        class="subsection__heading"
         id="guinness-cake"
       >
         Guinness cake
-      </h2>
+      </h3>
       <span
         class="paragraph"
       >
@@ -804,14 +799,14 @@ exports[`<Photography /> should render correctly 1`] = `
       </div>
     </div>
     <div
-      class="typography__main photography__subsection"
+      class="subsection__outer photography__subsection"
     >
-      <h2
-        class="typography__text typography__text--subsection"
+      <h3
+        class="subsection__heading"
         id="ratatouille"
       >
         Ratatouille
-      </h2>
+      </h3>
       <span
         class="paragraph"
       >
@@ -858,14 +853,14 @@ exports[`<Photography /> should render correctly 1`] = `
       class="creative-commons__background"
     />
     <div
-      class="typography__main creative-commons__inner"
+      class="subsection__outer creative-commons__inner"
     >
-      <h2
-        class="typography__text typography__text--subsection"
+      <h3
+        class="subsection__heading"
         id="copyright"
       >
         Copyright
-      </h2>
+      </h3>
       <span
         class="paragraph"
       >

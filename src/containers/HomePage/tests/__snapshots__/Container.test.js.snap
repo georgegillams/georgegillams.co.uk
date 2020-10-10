@@ -2,182 +2,177 @@
 
 exports[`<Home /> should render correctly 1`] = `
 <div>
-  <div
-    class="typography__main about__unpadded about__centred home__about"
+  <h1
+    class="page-title__heading about__unpadded about__centred home__about"
   >
-    <h1
-      class="typography__text typography__text--section page-title__section"
-      id="hey!-i'm-george."
+    Hey! I'm George.
+  </h1>
+  <span
+    class="paragraph"
+  >
+    I'm an open-source software engineer at
+     
+    <a
+      aria-label="Skyscanner (opens in a new tab)"
+      class="text-link text-link--text-link text-link--no-padding text-link--inline"
+      href="https://www.skyscanner.net/"
+      rel="noopener noreferrer"
+      target="_blank"
     >
-      Hey! I'm George.
-    </h1>
-    <span
-      class="paragraph"
+      Skyscanner
+      <div
+        class="text-link__icon-container"
+      >
+        <svg
+          class="icon text-link__icon"
+          height="18"
+          viewBox="0 0 24 24"
+          width="18"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M12.5 11.3c.4.4 1 .4 1.4 0L19 6.2V9c0 .6.4 1 1 1s1-.4 1-1V4c0-.6-.4-1-1-1h-5c-.6 0-1 .4-1 1s.4 1 1 1h2.4l-4.9 4.9c-.4.4-.4 1 0 1.4zM19 19c0 1.1-.9 2-2 2H5c-1.1 0-2-.9-2-2V7c0-1.1.9-2 2-2h7v2H5v12h12v-7h2"
+          />
+        </svg>
+      </div>
+    </a>
+    . I am passionate about design, 
+    <a
+      class="text-link text-link--text-link text-link--no-padding text-link--inline"
+      href="/travel"
     >
-      I'm an open-source software engineer at
-       
-      <a
-        aria-label="Skyscanner (opens in a new tab)"
-        class="text-link text-link--text-link text-link--no-padding text-link--inline"
-        href="https://www.skyscanner.net/"
-        rel="noopener noreferrer"
-        target="_blank"
+      travel
+    </a>
+     and
+     
+    <a
+      class="text-link text-link--text-link text-link--no-padding text-link--inline"
+      href="/photography"
+    >
+      photography
+    </a>
+    , for which I have an insatiable hunger. When I'm not internationally photobombing unsuspecting strangers I'm based somewhere between Portsmouth and London.
+    <br />
+    <br />
+    I enjoy getting outdoors and trying new things, and completed my 5th
+     
+    <a
+      class="text-link text-link--text-link text-link--no-padding text-link--inline"
+      href="/blog/tough-mudder"
+    >
+      Tough Mudder
+    </a>
+     in May 2018. I also try to squeeze in as much volunteering as I can, so you may find me dressed as a
+     
+    <a
+      aria-label="Help for Heroes (opens in a new tab)"
+      class="text-link text-link--text-link text-link--no-padding text-link--inline"
+      href="https://helpforheroes.org.uk/"
+      rel="noopener noreferrer"
+      target="_blank"
+    >
+      Help for Heroes
+      <div
+        class="text-link__icon-container"
       >
-        Skyscanner
-        <div
-          class="text-link__icon-container"
+        <svg
+          class="icon text-link__icon"
+          height="18"
+          viewBox="0 0 24 24"
+          width="18"
+          xmlns="http://www.w3.org/2000/svg"
         >
-          <svg
-            class="icon text-link__icon"
-            height="18"
-            viewBox="0 0 24 24"
-            width="18"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M12.5 11.3c.4.4 1 .4 1.4 0L19 6.2V9c0 .6.4 1 1 1s1-.4 1-1V4c0-.6-.4-1-1-1h-5c-.6 0-1 .4-1 1s.4 1 1 1h2.4l-4.9 4.9c-.4.4-.4 1 0 1.4zM19 19c0 1.1-.9 2-2 2H5c-1.1 0-2-.9-2-2V7c0-1.1.9-2 2-2h7v2H5v12h12v-7h2"
-            />
-          </svg>
-        </div>
-      </a>
-      . I am passionate about design, 
-      <a
-        class="text-link text-link--text-link text-link--no-padding text-link--inline"
-        href="/travel"
+          <path
+            d="M12.5 11.3c.4.4 1 .4 1.4 0L19 6.2V9c0 .6.4 1 1 1s1-.4 1-1V4c0-.6-.4-1-1-1h-5c-.6 0-1 .4-1 1s.4 1 1 1h2.4l-4.9 4.9c-.4.4-.4 1 0 1.4zM19 19c0 1.1-.9 2-2 2H5c-1.1 0-2-.9-2-2V7c0-1.1.9-2 2-2h7v2H5v12h12v-7h2"
+          />
+        </svg>
+      </div>
+    </a>
+     
+    bear, reviewing content for
+     
+    <a
+      aria-label="Beat (opens in a new tab)"
+      class="text-link text-link--text-link text-link--no-padding text-link--inline"
+      href="https://b-eat.co.uk/"
+      rel="noopener noreferrer"
+      target="_blank"
+    >
+      Beat
+      <div
+        class="text-link__icon-container"
       >
-        travel
-      </a>
-       and
-       
-      <a
-        class="text-link text-link--text-link text-link--no-padding text-link--inline"
-        href="/photography"
-      >
-        photography
-      </a>
-      , for which I have an insatiable hunger. When I'm not internationally photobombing unsuspecting strangers I'm based somewhere between Portsmouth and London.
-      <br />
-      <br />
-      I enjoy getting outdoors and trying new things, and completed my 5th
-       
-      <a
-        class="text-link text-link--text-link text-link--no-padding text-link--inline"
-        href="/blog/tough-mudder"
-      >
-        Tough Mudder
-      </a>
-       in May 2018. I also try to squeeze in as much volunteering as I can, so you may find me dressed as a
-       
-      <a
-        aria-label="Help for Heroes (opens in a new tab)"
-        class="text-link text-link--text-link text-link--no-padding text-link--inline"
-        href="https://helpforheroes.org.uk/"
-        rel="noopener noreferrer"
-        target="_blank"
-      >
-        Help for Heroes
-        <div
-          class="text-link__icon-container"
+        <svg
+          class="icon text-link__icon"
+          height="18"
+          viewBox="0 0 24 24"
+          width="18"
+          xmlns="http://www.w3.org/2000/svg"
         >
-          <svg
-            class="icon text-link__icon"
-            height="18"
-            viewBox="0 0 24 24"
-            width="18"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M12.5 11.3c.4.4 1 .4 1.4 0L19 6.2V9c0 .6.4 1 1 1s1-.4 1-1V4c0-.6-.4-1-1-1h-5c-.6 0-1 .4-1 1s.4 1 1 1h2.4l-4.9 4.9c-.4.4-.4 1 0 1.4zM19 19c0 1.1-.9 2-2 2H5c-1.1 0-2-.9-2-2V7c0-1.1.9-2 2-2h7v2H5v12h12v-7h2"
-            />
-          </svg>
-        </div>
-      </a>
-       
-      bear, reviewing content for
-       
-      <a
-        aria-label="Beat (opens in a new tab)"
-        class="text-link text-link--text-link text-link--no-padding text-link--inline"
-        href="https://b-eat.co.uk/"
-        rel="noopener noreferrer"
-        target="_blank"
-      >
-        Beat
-        <div
-          class="text-link__icon-container"
-        >
-          <svg
-            class="icon text-link__icon"
-            height="18"
-            viewBox="0 0 24 24"
-            width="18"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M12.5 11.3c.4.4 1 .4 1.4 0L19 6.2V9c0 .6.4 1 1 1s1-.4 1-1V4c0-.6-.4-1-1-1h-5c-.6 0-1 .4-1 1s.4 1 1 1h2.4l-4.9 4.9c-.4.4-.4 1 0 1.4zM19 19c0 1.1-.9 2-2 2H5c-1.1 0-2-.9-2-2V7c0-1.1.9-2 2-2h7v2H5v12h12v-7h2"
-            />
-          </svg>
-        </div>
-      </a>
-      .
-      <br />
-      <br />
-      I recently got engaged to my wonderful fiancée while we were in
-       
-      <a
-        class="text-link text-link--text-link text-link--no-padding text-link--inline"
-        href="/travel/iceland-2018"
-      >
-        Iceland
-      </a>
-       💍, and live with her and Tigger the cat.
-    </span>
+          <path
+            d="M12.5 11.3c.4.4 1 .4 1.4 0L19 6.2V9c0 .6.4 1 1 1s1-.4 1-1V4c0-.6-.4-1-1-1h-5c-.6 0-1 .4-1 1s.4 1 1 1h2.4l-4.9 4.9c-.4.4-.4 1 0 1.4zM19 19c0 1.1-.9 2-2 2H5c-1.1 0-2-.9-2-2V7c0-1.1.9-2 2-2h7v2H5v12h12v-7h2"
+          />
+        </svg>
+      </div>
+    </a>
+    .
+    <br />
+    <br />
+    I recently got engaged to my wonderful fiancée while we were in
+     
+    <a
+      class="text-link text-link--text-link text-link--no-padding text-link--inline"
+      href="/travel/iceland-2018"
+    >
+      Iceland
+    </a>
+     💍, and live with her and Tigger the cat.
+  </span>
+  <div
+    class="image__outer about__image"
+  >
     <div
-      class="image__outer about__image"
+      class="image__placeholder"
+      style="padding-bottom: 75.00652911987464%;"
     >
       <div
-        class="image__placeholder"
-        style="padding-bottom: 75.00652911987464%;"
+        class="image__spinner-container"
       >
         <div
-          class="image__spinner-container"
+          class="skeleton__outer image__skeleton"
         >
           <div
-            class="skeleton__outer image__skeleton"
-          >
-            <div
-              class="skeleton__shimmer"
-              style="margin-left: -0px;"
-            />
-          </div>
+            class="skeleton__shimmer"
+            style="margin-left: -0px;"
+          />
         </div>
-        <img
-          alt="Me"
-          class="image__img image__img--hidden image__img--light"
-          src="https://i.imgur.com/FLA0jkg.jpg"
-        />
-        <img
-          alt="Me"
-          class="image__img image__img--hidden image__img--dark"
-          src="https://i.imgur.com/FLA0jkg.jpg"
-        />
       </div>
+      <img
+        alt="Me"
+        class="image__img image__img--hidden image__img--light"
+        src="https://i.imgur.com/FLA0jkg.jpg"
+      />
+      <img
+        alt="Me"
+        class="image__img image__img--hidden image__img--dark"
+        src="https://i.imgur.com/FLA0jkg.jpg"
+      />
     </div>
-    <br />
-    <span
-      class="paragraph"
-    >
-      This site is built in React and hosted on AWS. I use it to experiment with things, share stuff I've figured out, and allow people to reach-out to me. So if you're interested in anything I do,
-       
-      <a
-        class="text-link text-link--text-link text-link--no-padding text-link--inline"
-        href="/contact"
-      >
-        get in touch
-      </a>
-      !
-    </span>
   </div>
+  <br />
+  <span
+    class="paragraph"
+  >
+    This site is built in React and hosted on AWS. I use it to experiment with things, share stuff I've figured out, and allow people to reach-out to me. So if you're interested in anything I do,
+     
+    <a
+      class="text-link text-link--text-link text-link--no-padding text-link--inline"
+      href="/contact"
+    >
+      get in touch
+    </a>
+    !
+  </span>
   <div
     class="home__card-container"
   >
@@ -204,14 +199,14 @@ exports[`<Home /> should render correctly 1`] = `
             class="feature-card__center-container feature-card__center-container--narrow-compact"
           >
             <div
-              class="typography__main typography--no-padding feature-card__title"
+              class="section__outer feature-card__title"
             >
-              <h1
-                class="typography__text typography__text--section typography__link typography--no-padding"
+              <h2
+                class="section__heading section__heading--link section__heading--no-padding"
                 id="blog"
               >
                 Blog
-              </h1>
+              </h2>
             </div>
           </div>
         </div>
@@ -243,14 +238,14 @@ exports[`<Home /> should render correctly 1`] = `
             class="feature-card__center-container feature-card__center-container--narrow-compact"
           >
             <div
-              class="typography__main typography--no-padding feature-card__title"
+              class="section__outer feature-card__title"
             >
-              <h1
-                class="typography__text typography__text--section typography__link typography--no-padding"
+              <h2
+                class="section__heading section__heading--link section__heading--no-padding"
                 id="travel"
               >
                 Travel
-              </h1>
+              </h2>
             </div>
           </div>
         </div>
@@ -282,14 +277,14 @@ exports[`<Home /> should render correctly 1`] = `
             class="feature-card__center-container feature-card__center-container--narrow-compact"
           >
             <div
-              class="typography__main typography--no-padding feature-card__title"
+              class="section__outer feature-card__title"
             >
-              <h1
-                class="typography__text typography__text--section typography__link typography--no-padding"
+              <h2
+                class="section__heading section__heading--link section__heading--no-padding"
                 id="photography"
               >
                 Photography
-              </h1>
+              </h2>
             </div>
           </div>
         </div>
@@ -321,14 +316,14 @@ exports[`<Home /> should render correctly 1`] = `
             class="feature-card__center-container feature-card__center-container--narrow-compact"
           >
             <div
-              class="typography__main typography--no-padding feature-card__title"
+              class="section__outer feature-card__title"
             >
-              <h1
-                class="typography__text typography__text--section typography__link typography--no-padding"
+              <h2
+                class="section__heading section__heading--link section__heading--no-padding"
                 id="work"
               >
                 Work
-              </h1>
+              </h2>
             </div>
           </div>
         </div>
@@ -360,14 +355,14 @@ exports[`<Home /> should render correctly 1`] = `
             class="feature-card__center-container feature-card__center-container--narrow-compact"
           >
             <div
-              class="typography__main typography--no-padding feature-card__title"
+              class="section__outer feature-card__title"
             >
-              <h1
-                class="typography__text typography__text--section typography__link typography--no-padding"
+              <h2
+                class="section__heading section__heading--link section__heading--no-padding"
                 id="contact"
               >
                 Contact
-              </h1>
+              </h2>
             </div>
           </div>
         </div>
@@ -390,182 +385,177 @@ exports[`<Home /> should render correctly 1`] = `
 
 exports[`<Home /> should render correctly with admin user 1`] = `
 <div>
-  <div
-    class="typography__main about__unpadded about__centred home__about"
+  <h1
+    class="page-title__heading about__unpadded about__centred home__about"
   >
-    <h1
-      class="typography__text typography__text--section page-title__section"
-      id="hey!-i'm-george."
+    Hey! I'm George.
+  </h1>
+  <span
+    class="paragraph"
+  >
+    I'm an open-source software engineer at
+     
+    <a
+      aria-label="Skyscanner (opens in a new tab)"
+      class="text-link text-link--text-link text-link--no-padding text-link--inline"
+      href="https://www.skyscanner.net/"
+      rel="noopener noreferrer"
+      target="_blank"
     >
-      Hey! I'm George.
-    </h1>
-    <span
-      class="paragraph"
+      Skyscanner
+      <div
+        class="text-link__icon-container"
+      >
+        <svg
+          class="icon text-link__icon"
+          height="18"
+          viewBox="0 0 24 24"
+          width="18"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M12.5 11.3c.4.4 1 .4 1.4 0L19 6.2V9c0 .6.4 1 1 1s1-.4 1-1V4c0-.6-.4-1-1-1h-5c-.6 0-1 .4-1 1s.4 1 1 1h2.4l-4.9 4.9c-.4.4-.4 1 0 1.4zM19 19c0 1.1-.9 2-2 2H5c-1.1 0-2-.9-2-2V7c0-1.1.9-2 2-2h7v2H5v12h12v-7h2"
+          />
+        </svg>
+      </div>
+    </a>
+    . I am passionate about design, 
+    <a
+      class="text-link text-link--text-link text-link--no-padding text-link--inline"
+      href="/travel"
     >
-      I'm an open-source software engineer at
-       
-      <a
-        aria-label="Skyscanner (opens in a new tab)"
-        class="text-link text-link--text-link text-link--no-padding text-link--inline"
-        href="https://www.skyscanner.net/"
-        rel="noopener noreferrer"
-        target="_blank"
+      travel
+    </a>
+     and
+     
+    <a
+      class="text-link text-link--text-link text-link--no-padding text-link--inline"
+      href="/photography"
+    >
+      photography
+    </a>
+    , for which I have an insatiable hunger. When I'm not internationally photobombing unsuspecting strangers I'm based somewhere between Portsmouth and London.
+    <br />
+    <br />
+    I enjoy getting outdoors and trying new things, and completed my 5th
+     
+    <a
+      class="text-link text-link--text-link text-link--no-padding text-link--inline"
+      href="/blog/tough-mudder"
+    >
+      Tough Mudder
+    </a>
+     in May 2018. I also try to squeeze in as much volunteering as I can, so you may find me dressed as a
+     
+    <a
+      aria-label="Help for Heroes (opens in a new tab)"
+      class="text-link text-link--text-link text-link--no-padding text-link--inline"
+      href="https://helpforheroes.org.uk/"
+      rel="noopener noreferrer"
+      target="_blank"
+    >
+      Help for Heroes
+      <div
+        class="text-link__icon-container"
       >
-        Skyscanner
-        <div
-          class="text-link__icon-container"
+        <svg
+          class="icon text-link__icon"
+          height="18"
+          viewBox="0 0 24 24"
+          width="18"
+          xmlns="http://www.w3.org/2000/svg"
         >
-          <svg
-            class="icon text-link__icon"
-            height="18"
-            viewBox="0 0 24 24"
-            width="18"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M12.5 11.3c.4.4 1 .4 1.4 0L19 6.2V9c0 .6.4 1 1 1s1-.4 1-1V4c0-.6-.4-1-1-1h-5c-.6 0-1 .4-1 1s.4 1 1 1h2.4l-4.9 4.9c-.4.4-.4 1 0 1.4zM19 19c0 1.1-.9 2-2 2H5c-1.1 0-2-.9-2-2V7c0-1.1.9-2 2-2h7v2H5v12h12v-7h2"
-            />
-          </svg>
-        </div>
-      </a>
-      . I am passionate about design, 
-      <a
-        class="text-link text-link--text-link text-link--no-padding text-link--inline"
-        href="/travel"
+          <path
+            d="M12.5 11.3c.4.4 1 .4 1.4 0L19 6.2V9c0 .6.4 1 1 1s1-.4 1-1V4c0-.6-.4-1-1-1h-5c-.6 0-1 .4-1 1s.4 1 1 1h2.4l-4.9 4.9c-.4.4-.4 1 0 1.4zM19 19c0 1.1-.9 2-2 2H5c-1.1 0-2-.9-2-2V7c0-1.1.9-2 2-2h7v2H5v12h12v-7h2"
+          />
+        </svg>
+      </div>
+    </a>
+     
+    bear, reviewing content for
+     
+    <a
+      aria-label="Beat (opens in a new tab)"
+      class="text-link text-link--text-link text-link--no-padding text-link--inline"
+      href="https://b-eat.co.uk/"
+      rel="noopener noreferrer"
+      target="_blank"
+    >
+      Beat
+      <div
+        class="text-link__icon-container"
       >
-        travel
-      </a>
-       and
-       
-      <a
-        class="text-link text-link--text-link text-link--no-padding text-link--inline"
-        href="/photography"
-      >
-        photography
-      </a>
-      , for which I have an insatiable hunger. When I'm not internationally photobombing unsuspecting strangers I'm based somewhere between Portsmouth and London.
-      <br />
-      <br />
-      I enjoy getting outdoors and trying new things, and completed my 5th
-       
-      <a
-        class="text-link text-link--text-link text-link--no-padding text-link--inline"
-        href="/blog/tough-mudder"
-      >
-        Tough Mudder
-      </a>
-       in May 2018. I also try to squeeze in as much volunteering as I can, so you may find me dressed as a
-       
-      <a
-        aria-label="Help for Heroes (opens in a new tab)"
-        class="text-link text-link--text-link text-link--no-padding text-link--inline"
-        href="https://helpforheroes.org.uk/"
-        rel="noopener noreferrer"
-        target="_blank"
-      >
-        Help for Heroes
-        <div
-          class="text-link__icon-container"
+        <svg
+          class="icon text-link__icon"
+          height="18"
+          viewBox="0 0 24 24"
+          width="18"
+          xmlns="http://www.w3.org/2000/svg"
         >
-          <svg
-            class="icon text-link__icon"
-            height="18"
-            viewBox="0 0 24 24"
-            width="18"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M12.5 11.3c.4.4 1 .4 1.4 0L19 6.2V9c0 .6.4 1 1 1s1-.4 1-1V4c0-.6-.4-1-1-1h-5c-.6 0-1 .4-1 1s.4 1 1 1h2.4l-4.9 4.9c-.4.4-.4 1 0 1.4zM19 19c0 1.1-.9 2-2 2H5c-1.1 0-2-.9-2-2V7c0-1.1.9-2 2-2h7v2H5v12h12v-7h2"
-            />
-          </svg>
-        </div>
-      </a>
-       
-      bear, reviewing content for
-       
-      <a
-        aria-label="Beat (opens in a new tab)"
-        class="text-link text-link--text-link text-link--no-padding text-link--inline"
-        href="https://b-eat.co.uk/"
-        rel="noopener noreferrer"
-        target="_blank"
-      >
-        Beat
-        <div
-          class="text-link__icon-container"
-        >
-          <svg
-            class="icon text-link__icon"
-            height="18"
-            viewBox="0 0 24 24"
-            width="18"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M12.5 11.3c.4.4 1 .4 1.4 0L19 6.2V9c0 .6.4 1 1 1s1-.4 1-1V4c0-.6-.4-1-1-1h-5c-.6 0-1 .4-1 1s.4 1 1 1h2.4l-4.9 4.9c-.4.4-.4 1 0 1.4zM19 19c0 1.1-.9 2-2 2H5c-1.1 0-2-.9-2-2V7c0-1.1.9-2 2-2h7v2H5v12h12v-7h2"
-            />
-          </svg>
-        </div>
-      </a>
-      .
-      <br />
-      <br />
-      I recently got engaged to my wonderful fiancée while we were in
-       
-      <a
-        class="text-link text-link--text-link text-link--no-padding text-link--inline"
-        href="/travel/iceland-2018"
-      >
-        Iceland
-      </a>
-       💍, and live with her and Tigger the cat.
-    </span>
+          <path
+            d="M12.5 11.3c.4.4 1 .4 1.4 0L19 6.2V9c0 .6.4 1 1 1s1-.4 1-1V4c0-.6-.4-1-1-1h-5c-.6 0-1 .4-1 1s.4 1 1 1h2.4l-4.9 4.9c-.4.4-.4 1 0 1.4zM19 19c0 1.1-.9 2-2 2H5c-1.1 0-2-.9-2-2V7c0-1.1.9-2 2-2h7v2H5v12h12v-7h2"
+          />
+        </svg>
+      </div>
+    </a>
+    .
+    <br />
+    <br />
+    I recently got engaged to my wonderful fiancée while we were in
+     
+    <a
+      class="text-link text-link--text-link text-link--no-padding text-link--inline"
+      href="/travel/iceland-2018"
+    >
+      Iceland
+    </a>
+     💍, and live with her and Tigger the cat.
+  </span>
+  <div
+    class="image__outer about__image"
+  >
     <div
-      class="image__outer about__image"
+      class="image__placeholder"
+      style="padding-bottom: 75.00652911987464%;"
     >
       <div
-        class="image__placeholder"
-        style="padding-bottom: 75.00652911987464%;"
+        class="image__spinner-container"
       >
         <div
-          class="image__spinner-container"
+          class="skeleton__outer image__skeleton"
         >
           <div
-            class="skeleton__outer image__skeleton"
-          >
-            <div
-              class="skeleton__shimmer"
-              style="margin-left: -0px;"
-            />
-          </div>
+            class="skeleton__shimmer"
+            style="margin-left: -0px;"
+          />
         </div>
-        <img
-          alt="Me"
-          class="image__img image__img--hidden image__img--light"
-          src="https://i.imgur.com/FLA0jkg.jpg"
-        />
-        <img
-          alt="Me"
-          class="image__img image__img--hidden image__img--dark"
-          src="https://i.imgur.com/FLA0jkg.jpg"
-        />
       </div>
+      <img
+        alt="Me"
+        class="image__img image__img--hidden image__img--light"
+        src="https://i.imgur.com/FLA0jkg.jpg"
+      />
+      <img
+        alt="Me"
+        class="image__img image__img--hidden image__img--dark"
+        src="https://i.imgur.com/FLA0jkg.jpg"
+      />
     </div>
-    <br />
-    <span
-      class="paragraph"
-    >
-      This site is built in React and hosted on AWS. I use it to experiment with things, share stuff I've figured out, and allow people to reach-out to me. So if you're interested in anything I do,
-       
-      <a
-        class="text-link text-link--text-link text-link--no-padding text-link--inline"
-        href="/contact"
-      >
-        get in touch
-      </a>
-      !
-    </span>
   </div>
+  <br />
+  <span
+    class="paragraph"
+  >
+    This site is built in React and hosted on AWS. I use it to experiment with things, share stuff I've figured out, and allow people to reach-out to me. So if you're interested in anything I do,
+     
+    <a
+      class="text-link text-link--text-link text-link--no-padding text-link--inline"
+      href="/contact"
+    >
+      get in touch
+    </a>
+    !
+  </span>
   <div
     class="home__card-container"
   >
@@ -592,14 +582,14 @@ exports[`<Home /> should render correctly with admin user 1`] = `
             class="feature-card__center-container feature-card__center-container--narrow-compact"
           >
             <div
-              class="typography__main typography--no-padding feature-card__title"
+              class="section__outer feature-card__title"
             >
-              <h1
-                class="typography__text typography__text--section typography__link typography--no-padding"
+              <h2
+                class="section__heading section__heading--link section__heading--no-padding"
                 id="blog"
               >
                 Blog
-              </h1>
+              </h2>
             </div>
           </div>
         </div>
@@ -631,14 +621,14 @@ exports[`<Home /> should render correctly with admin user 1`] = `
             class="feature-card__center-container feature-card__center-container--narrow-compact"
           >
             <div
-              class="typography__main typography--no-padding feature-card__title"
+              class="section__outer feature-card__title"
             >
-              <h1
-                class="typography__text typography__text--section typography__link typography--no-padding"
+              <h2
+                class="section__heading section__heading--link section__heading--no-padding"
                 id="travel"
               >
                 Travel
-              </h1>
+              </h2>
             </div>
           </div>
         </div>
@@ -670,14 +660,14 @@ exports[`<Home /> should render correctly with admin user 1`] = `
             class="feature-card__center-container feature-card__center-container--narrow-compact"
           >
             <div
-              class="typography__main typography--no-padding feature-card__title"
+              class="section__outer feature-card__title"
             >
-              <h1
-                class="typography__text typography__text--section typography__link typography--no-padding"
+              <h2
+                class="section__heading section__heading--link section__heading--no-padding"
                 id="photography"
               >
                 Photography
-              </h1>
+              </h2>
             </div>
           </div>
         </div>
@@ -709,14 +699,14 @@ exports[`<Home /> should render correctly with admin user 1`] = `
             class="feature-card__center-container feature-card__center-container--narrow-compact"
           >
             <div
-              class="typography__main typography--no-padding feature-card__title"
+              class="section__outer feature-card__title"
             >
-              <h1
-                class="typography__text typography__text--section typography__link typography--no-padding"
+              <h2
+                class="section__heading section__heading--link section__heading--no-padding"
                 id="work"
               >
                 Work
-              </h1>
+              </h2>
             </div>
           </div>
         </div>
@@ -748,14 +738,14 @@ exports[`<Home /> should render correctly with admin user 1`] = `
             class="feature-card__center-container feature-card__center-container--narrow-compact"
           >
             <div
-              class="typography__main typography--no-padding feature-card__title"
+              class="section__outer feature-card__title"
             >
-              <h1
-                class="typography__text typography__text--section typography__link typography--no-padding"
+              <h2
+                class="section__heading section__heading--link section__heading--no-padding"
                 id="contact"
               >
                 Contact
-              </h1>
+              </h2>
             </div>
           </div>
         </div>
@@ -787,14 +777,14 @@ exports[`<Home /> should render correctly with admin user 1`] = `
             class="feature-card__center-container feature-card__center-container--narrow-compact"
           >
             <div
-              class="typography__main typography--no-padding feature-card__title"
+              class="section__outer feature-card__title"
             >
-              <h1
-                class="typography__text typography__text--section typography__link typography--no-padding"
+              <h2
+                class="section__heading section__heading--link section__heading--no-padding"
                 id="account"
               >
                 Account
-              </h1>
+              </h2>
             </div>
           </div>
         </div>
@@ -826,14 +816,14 @@ exports[`<Home /> should render correctly with admin user 1`] = `
             class="feature-card__center-container feature-card__center-container--narrow-compact"
           >
             <div
-              class="typography__main typography--no-padding feature-card__title"
+              class="section__outer feature-card__title"
             >
-              <h1
-                class="typography__text typography__text--section typography__link typography--no-padding"
+              <h2
+                class="section__heading section__heading--link section__heading--no-padding"
                 id="admin-area"
               >
                 Admin area
-              </h1>
+              </h2>
             </div>
           </div>
         </div>
@@ -848,182 +838,177 @@ exports[`<Home /> should render correctly with admin user 1`] = `
 
 exports[`<Home /> should render correctly with no user 1`] = `
 <div>
-  <div
-    class="typography__main about__unpadded about__centred home__about"
+  <h1
+    class="page-title__heading about__unpadded about__centred home__about"
   >
-    <h1
-      class="typography__text typography__text--section page-title__section"
-      id="hey!-i'm-george."
+    Hey! I'm George.
+  </h1>
+  <span
+    class="paragraph"
+  >
+    I'm an open-source software engineer at
+     
+    <a
+      aria-label="Skyscanner (opens in a new tab)"
+      class="text-link text-link--text-link text-link--no-padding text-link--inline"
+      href="https://www.skyscanner.net/"
+      rel="noopener noreferrer"
+      target="_blank"
     >
-      Hey! I'm George.
-    </h1>
-    <span
-      class="paragraph"
+      Skyscanner
+      <div
+        class="text-link__icon-container"
+      >
+        <svg
+          class="icon text-link__icon"
+          height="18"
+          viewBox="0 0 24 24"
+          width="18"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M12.5 11.3c.4.4 1 .4 1.4 0L19 6.2V9c0 .6.4 1 1 1s1-.4 1-1V4c0-.6-.4-1-1-1h-5c-.6 0-1 .4-1 1s.4 1 1 1h2.4l-4.9 4.9c-.4.4-.4 1 0 1.4zM19 19c0 1.1-.9 2-2 2H5c-1.1 0-2-.9-2-2V7c0-1.1.9-2 2-2h7v2H5v12h12v-7h2"
+          />
+        </svg>
+      </div>
+    </a>
+    . I am passionate about design, 
+    <a
+      class="text-link text-link--text-link text-link--no-padding text-link--inline"
+      href="/travel"
     >
-      I'm an open-source software engineer at
-       
-      <a
-        aria-label="Skyscanner (opens in a new tab)"
-        class="text-link text-link--text-link text-link--no-padding text-link--inline"
-        href="https://www.skyscanner.net/"
-        rel="noopener noreferrer"
-        target="_blank"
+      travel
+    </a>
+     and
+     
+    <a
+      class="text-link text-link--text-link text-link--no-padding text-link--inline"
+      href="/photography"
+    >
+      photography
+    </a>
+    , for which I have an insatiable hunger. When I'm not internationally photobombing unsuspecting strangers I'm based somewhere between Portsmouth and London.
+    <br />
+    <br />
+    I enjoy getting outdoors and trying new things, and completed my 5th
+     
+    <a
+      class="text-link text-link--text-link text-link--no-padding text-link--inline"
+      href="/blog/tough-mudder"
+    >
+      Tough Mudder
+    </a>
+     in May 2018. I also try to squeeze in as much volunteering as I can, so you may find me dressed as a
+     
+    <a
+      aria-label="Help for Heroes (opens in a new tab)"
+      class="text-link text-link--text-link text-link--no-padding text-link--inline"
+      href="https://helpforheroes.org.uk/"
+      rel="noopener noreferrer"
+      target="_blank"
+    >
+      Help for Heroes
+      <div
+        class="text-link__icon-container"
       >
-        Skyscanner
-        <div
-          class="text-link__icon-container"
+        <svg
+          class="icon text-link__icon"
+          height="18"
+          viewBox="0 0 24 24"
+          width="18"
+          xmlns="http://www.w3.org/2000/svg"
         >
-          <svg
-            class="icon text-link__icon"
-            height="18"
-            viewBox="0 0 24 24"
-            width="18"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M12.5 11.3c.4.4 1 .4 1.4 0L19 6.2V9c0 .6.4 1 1 1s1-.4 1-1V4c0-.6-.4-1-1-1h-5c-.6 0-1 .4-1 1s.4 1 1 1h2.4l-4.9 4.9c-.4.4-.4 1 0 1.4zM19 19c0 1.1-.9 2-2 2H5c-1.1 0-2-.9-2-2V7c0-1.1.9-2 2-2h7v2H5v12h12v-7h2"
-            />
-          </svg>
-        </div>
-      </a>
-      . I am passionate about design, 
-      <a
-        class="text-link text-link--text-link text-link--no-padding text-link--inline"
-        href="/travel"
+          <path
+            d="M12.5 11.3c.4.4 1 .4 1.4 0L19 6.2V9c0 .6.4 1 1 1s1-.4 1-1V4c0-.6-.4-1-1-1h-5c-.6 0-1 .4-1 1s.4 1 1 1h2.4l-4.9 4.9c-.4.4-.4 1 0 1.4zM19 19c0 1.1-.9 2-2 2H5c-1.1 0-2-.9-2-2V7c0-1.1.9-2 2-2h7v2H5v12h12v-7h2"
+          />
+        </svg>
+      </div>
+    </a>
+     
+    bear, reviewing content for
+     
+    <a
+      aria-label="Beat (opens in a new tab)"
+      class="text-link text-link--text-link text-link--no-padding text-link--inline"
+      href="https://b-eat.co.uk/"
+      rel="noopener noreferrer"
+      target="_blank"
+    >
+      Beat
+      <div
+        class="text-link__icon-container"
       >
-        travel
-      </a>
-       and
-       
-      <a
-        class="text-link text-link--text-link text-link--no-padding text-link--inline"
-        href="/photography"
-      >
-        photography
-      </a>
-      , for which I have an insatiable hunger. When I'm not internationally photobombing unsuspecting strangers I'm based somewhere between Portsmouth and London.
-      <br />
-      <br />
-      I enjoy getting outdoors and trying new things, and completed my 5th
-       
-      <a
-        class="text-link text-link--text-link text-link--no-padding text-link--inline"
-        href="/blog/tough-mudder"
-      >
-        Tough Mudder
-      </a>
-       in May 2018. I also try to squeeze in as much volunteering as I can, so you may find me dressed as a
-       
-      <a
-        aria-label="Help for Heroes (opens in a new tab)"
-        class="text-link text-link--text-link text-link--no-padding text-link--inline"
-        href="https://helpforheroes.org.uk/"
-        rel="noopener noreferrer"
-        target="_blank"
-      >
-        Help for Heroes
-        <div
-          class="text-link__icon-container"
+        <svg
+          class="icon text-link__icon"
+          height="18"
+          viewBox="0 0 24 24"
+          width="18"
+          xmlns="http://www.w3.org/2000/svg"
         >
-          <svg
-            class="icon text-link__icon"
-            height="18"
-            viewBox="0 0 24 24"
-            width="18"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M12.5 11.3c.4.4 1 .4 1.4 0L19 6.2V9c0 .6.4 1 1 1s1-.4 1-1V4c0-.6-.4-1-1-1h-5c-.6 0-1 .4-1 1s.4 1 1 1h2.4l-4.9 4.9c-.4.4-.4 1 0 1.4zM19 19c0 1.1-.9 2-2 2H5c-1.1 0-2-.9-2-2V7c0-1.1.9-2 2-2h7v2H5v12h12v-7h2"
-            />
-          </svg>
-        </div>
-      </a>
-       
-      bear, reviewing content for
-       
-      <a
-        aria-label="Beat (opens in a new tab)"
-        class="text-link text-link--text-link text-link--no-padding text-link--inline"
-        href="https://b-eat.co.uk/"
-        rel="noopener noreferrer"
-        target="_blank"
-      >
-        Beat
-        <div
-          class="text-link__icon-container"
-        >
-          <svg
-            class="icon text-link__icon"
-            height="18"
-            viewBox="0 0 24 24"
-            width="18"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M12.5 11.3c.4.4 1 .4 1.4 0L19 6.2V9c0 .6.4 1 1 1s1-.4 1-1V4c0-.6-.4-1-1-1h-5c-.6 0-1 .4-1 1s.4 1 1 1h2.4l-4.9 4.9c-.4.4-.4 1 0 1.4zM19 19c0 1.1-.9 2-2 2H5c-1.1 0-2-.9-2-2V7c0-1.1.9-2 2-2h7v2H5v12h12v-7h2"
-            />
-          </svg>
-        </div>
-      </a>
-      .
-      <br />
-      <br />
-      I recently got engaged to my wonderful fiancée while we were in
-       
-      <a
-        class="text-link text-link--text-link text-link--no-padding text-link--inline"
-        href="/travel/iceland-2018"
-      >
-        Iceland
-      </a>
-       💍, and live with her and Tigger the cat.
-    </span>
+          <path
+            d="M12.5 11.3c.4.4 1 .4 1.4 0L19 6.2V9c0 .6.4 1 1 1s1-.4 1-1V4c0-.6-.4-1-1-1h-5c-.6 0-1 .4-1 1s.4 1 1 1h2.4l-4.9 4.9c-.4.4-.4 1 0 1.4zM19 19c0 1.1-.9 2-2 2H5c-1.1 0-2-.9-2-2V7c0-1.1.9-2 2-2h7v2H5v12h12v-7h2"
+          />
+        </svg>
+      </div>
+    </a>
+    .
+    <br />
+    <br />
+    I recently got engaged to my wonderful fiancée while we were in
+     
+    <a
+      class="text-link text-link--text-link text-link--no-padding text-link--inline"
+      href="/travel/iceland-2018"
+    >
+      Iceland
+    </a>
+     💍, and live with her and Tigger the cat.
+  </span>
+  <div
+    class="image__outer about__image"
+  >
     <div
-      class="image__outer about__image"
+      class="image__placeholder"
+      style="padding-bottom: 75.00652911987464%;"
     >
       <div
-        class="image__placeholder"
-        style="padding-bottom: 75.00652911987464%;"
+        class="image__spinner-container"
       >
         <div
-          class="image__spinner-container"
+          class="skeleton__outer image__skeleton"
         >
           <div
-            class="skeleton__outer image__skeleton"
-          >
-            <div
-              class="skeleton__shimmer"
-              style="margin-left: -0px;"
-            />
-          </div>
+            class="skeleton__shimmer"
+            style="margin-left: -0px;"
+          />
         </div>
-        <img
-          alt="Me"
-          class="image__img image__img--hidden image__img--light"
-          src="https://i.imgur.com/FLA0jkg.jpg"
-        />
-        <img
-          alt="Me"
-          class="image__img image__img--hidden image__img--dark"
-          src="https://i.imgur.com/FLA0jkg.jpg"
-        />
       </div>
+      <img
+        alt="Me"
+        class="image__img image__img--hidden image__img--light"
+        src="https://i.imgur.com/FLA0jkg.jpg"
+      />
+      <img
+        alt="Me"
+        class="image__img image__img--hidden image__img--dark"
+        src="https://i.imgur.com/FLA0jkg.jpg"
+      />
     </div>
-    <br />
-    <span
-      class="paragraph"
-    >
-      This site is built in React and hosted on AWS. I use it to experiment with things, share stuff I've figured out, and allow people to reach-out to me. So if you're interested in anything I do,
-       
-      <a
-        class="text-link text-link--text-link text-link--no-padding text-link--inline"
-        href="/contact"
-      >
-        get in touch
-      </a>
-      !
-    </span>
   </div>
+  <br />
+  <span
+    class="paragraph"
+  >
+    This site is built in React and hosted on AWS. I use it to experiment with things, share stuff I've figured out, and allow people to reach-out to me. So if you're interested in anything I do,
+     
+    <a
+      class="text-link text-link--text-link text-link--no-padding text-link--inline"
+      href="/contact"
+    >
+      get in touch
+    </a>
+    !
+  </span>
   <div
     class="home__card-container"
   >
@@ -1050,14 +1035,14 @@ exports[`<Home /> should render correctly with no user 1`] = `
             class="feature-card__center-container feature-card__center-container--narrow-compact"
           >
             <div
-              class="typography__main typography--no-padding feature-card__title"
+              class="section__outer feature-card__title"
             >
-              <h1
-                class="typography__text typography__text--section typography__link typography--no-padding"
+              <h2
+                class="section__heading section__heading--link section__heading--no-padding"
                 id="blog"
               >
                 Blog
-              </h1>
+              </h2>
             </div>
           </div>
         </div>
@@ -1089,14 +1074,14 @@ exports[`<Home /> should render correctly with no user 1`] = `
             class="feature-card__center-container feature-card__center-container--narrow-compact"
           >
             <div
-              class="typography__main typography--no-padding feature-card__title"
+              class="section__outer feature-card__title"
             >
-              <h1
-                class="typography__text typography__text--section typography__link typography--no-padding"
+              <h2
+                class="section__heading section__heading--link section__heading--no-padding"
                 id="travel"
               >
                 Travel
-              </h1>
+              </h2>
             </div>
           </div>
         </div>
@@ -1128,14 +1113,14 @@ exports[`<Home /> should render correctly with no user 1`] = `
             class="feature-card__center-container feature-card__center-container--narrow-compact"
           >
             <div
-              class="typography__main typography--no-padding feature-card__title"
+              class="section__outer feature-card__title"
             >
-              <h1
-                class="typography__text typography__text--section typography__link typography--no-padding"
+              <h2
+                class="section__heading section__heading--link section__heading--no-padding"
                 id="photography"
               >
                 Photography
-              </h1>
+              </h2>
             </div>
           </div>
         </div>
@@ -1167,14 +1152,14 @@ exports[`<Home /> should render correctly with no user 1`] = `
             class="feature-card__center-container feature-card__center-container--narrow-compact"
           >
             <div
-              class="typography__main typography--no-padding feature-card__title"
+              class="section__outer feature-card__title"
             >
-              <h1
-                class="typography__text typography__text--section typography__link typography--no-padding"
+              <h2
+                class="section__heading section__heading--link section__heading--no-padding"
                 id="work"
               >
                 Work
-              </h1>
+              </h2>
             </div>
           </div>
         </div>
@@ -1206,14 +1191,14 @@ exports[`<Home /> should render correctly with no user 1`] = `
             class="feature-card__center-container feature-card__center-container--narrow-compact"
           >
             <div
-              class="typography__main typography--no-padding feature-card__title"
+              class="section__outer feature-card__title"
             >
-              <h1
-                class="typography__text typography__text--section typography__link typography--no-padding"
+              <h2
+                class="section__heading section__heading--link section__heading--no-padding"
                 id="contact"
               >
                 Contact
-              </h1>
+              </h2>
             </div>
           </div>
         </div>
@@ -1245,14 +1230,14 @@ exports[`<Home /> should render correctly with no user 1`] = `
             class="feature-card__center-container feature-card__center-container--narrow-compact"
           >
             <div
-              class="typography__main typography--no-padding feature-card__title"
+              class="section__outer feature-card__title"
             >
-              <h1
-                class="typography__text typography__text--section typography__link typography--no-padding"
+              <h2
+                class="section__heading section__heading--link section__heading--no-padding"
                 id="sign-in"
               >
                 Sign in
-              </h1>
+              </h2>
             </div>
           </div>
         </div>
@@ -1267,182 +1252,177 @@ exports[`<Home /> should render correctly with no user 1`] = `
 
 exports[`<Home /> should render correctly with user 1`] = `
 <div>
-  <div
-    class="typography__main about__unpadded about__centred home__about"
+  <h1
+    class="page-title__heading about__unpadded about__centred home__about"
   >
-    <h1
-      class="typography__text typography__text--section page-title__section"
-      id="hey!-i'm-george."
+    Hey! I'm George.
+  </h1>
+  <span
+    class="paragraph"
+  >
+    I'm an open-source software engineer at
+     
+    <a
+      aria-label="Skyscanner (opens in a new tab)"
+      class="text-link text-link--text-link text-link--no-padding text-link--inline"
+      href="https://www.skyscanner.net/"
+      rel="noopener noreferrer"
+      target="_blank"
     >
-      Hey! I'm George.
-    </h1>
-    <span
-      class="paragraph"
+      Skyscanner
+      <div
+        class="text-link__icon-container"
+      >
+        <svg
+          class="icon text-link__icon"
+          height="18"
+          viewBox="0 0 24 24"
+          width="18"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M12.5 11.3c.4.4 1 .4 1.4 0L19 6.2V9c0 .6.4 1 1 1s1-.4 1-1V4c0-.6-.4-1-1-1h-5c-.6 0-1 .4-1 1s.4 1 1 1h2.4l-4.9 4.9c-.4.4-.4 1 0 1.4zM19 19c0 1.1-.9 2-2 2H5c-1.1 0-2-.9-2-2V7c0-1.1.9-2 2-2h7v2H5v12h12v-7h2"
+          />
+        </svg>
+      </div>
+    </a>
+    . I am passionate about design, 
+    <a
+      class="text-link text-link--text-link text-link--no-padding text-link--inline"
+      href="/travel"
     >
-      I'm an open-source software engineer at
-       
-      <a
-        aria-label="Skyscanner (opens in a new tab)"
-        class="text-link text-link--text-link text-link--no-padding text-link--inline"
-        href="https://www.skyscanner.net/"
-        rel="noopener noreferrer"
-        target="_blank"
+      travel
+    </a>
+     and
+     
+    <a
+      class="text-link text-link--text-link text-link--no-padding text-link--inline"
+      href="/photography"
+    >
+      photography
+    </a>
+    , for which I have an insatiable hunger. When I'm not internationally photobombing unsuspecting strangers I'm based somewhere between Portsmouth and London.
+    <br />
+    <br />
+    I enjoy getting outdoors and trying new things, and completed my 5th
+     
+    <a
+      class="text-link text-link--text-link text-link--no-padding text-link--inline"
+      href="/blog/tough-mudder"
+    >
+      Tough Mudder
+    </a>
+     in May 2018. I also try to squeeze in as much volunteering as I can, so you may find me dressed as a
+     
+    <a
+      aria-label="Help for Heroes (opens in a new tab)"
+      class="text-link text-link--text-link text-link--no-padding text-link--inline"
+      href="https://helpforheroes.org.uk/"
+      rel="noopener noreferrer"
+      target="_blank"
+    >
+      Help for Heroes
+      <div
+        class="text-link__icon-container"
       >
-        Skyscanner
-        <div
-          class="text-link__icon-container"
+        <svg
+          class="icon text-link__icon"
+          height="18"
+          viewBox="0 0 24 24"
+          width="18"
+          xmlns="http://www.w3.org/2000/svg"
         >
-          <svg
-            class="icon text-link__icon"
-            height="18"
-            viewBox="0 0 24 24"
-            width="18"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M12.5 11.3c.4.4 1 .4 1.4 0L19 6.2V9c0 .6.4 1 1 1s1-.4 1-1V4c0-.6-.4-1-1-1h-5c-.6 0-1 .4-1 1s.4 1 1 1h2.4l-4.9 4.9c-.4.4-.4 1 0 1.4zM19 19c0 1.1-.9 2-2 2H5c-1.1 0-2-.9-2-2V7c0-1.1.9-2 2-2h7v2H5v12h12v-7h2"
-            />
-          </svg>
-        </div>
-      </a>
-      . I am passionate about design, 
-      <a
-        class="text-link text-link--text-link text-link--no-padding text-link--inline"
-        href="/travel"
+          <path
+            d="M12.5 11.3c.4.4 1 .4 1.4 0L19 6.2V9c0 .6.4 1 1 1s1-.4 1-1V4c0-.6-.4-1-1-1h-5c-.6 0-1 .4-1 1s.4 1 1 1h2.4l-4.9 4.9c-.4.4-.4 1 0 1.4zM19 19c0 1.1-.9 2-2 2H5c-1.1 0-2-.9-2-2V7c0-1.1.9-2 2-2h7v2H5v12h12v-7h2"
+          />
+        </svg>
+      </div>
+    </a>
+     
+    bear, reviewing content for
+     
+    <a
+      aria-label="Beat (opens in a new tab)"
+      class="text-link text-link--text-link text-link--no-padding text-link--inline"
+      href="https://b-eat.co.uk/"
+      rel="noopener noreferrer"
+      target="_blank"
+    >
+      Beat
+      <div
+        class="text-link__icon-container"
       >
-        travel
-      </a>
-       and
-       
-      <a
-        class="text-link text-link--text-link text-link--no-padding text-link--inline"
-        href="/photography"
-      >
-        photography
-      </a>
-      , for which I have an insatiable hunger. When I'm not internationally photobombing unsuspecting strangers I'm based somewhere between Portsmouth and London.
-      <br />
-      <br />
-      I enjoy getting outdoors and trying new things, and completed my 5th
-       
-      <a
-        class="text-link text-link--text-link text-link--no-padding text-link--inline"
-        href="/blog/tough-mudder"
-      >
-        Tough Mudder
-      </a>
-       in May 2018. I also try to squeeze in as much volunteering as I can, so you may find me dressed as a
-       
-      <a
-        aria-label="Help for Heroes (opens in a new tab)"
-        class="text-link text-link--text-link text-link--no-padding text-link--inline"
-        href="https://helpforheroes.org.uk/"
-        rel="noopener noreferrer"
-        target="_blank"
-      >
-        Help for Heroes
-        <div
-          class="text-link__icon-container"
+        <svg
+          class="icon text-link__icon"
+          height="18"
+          viewBox="0 0 24 24"
+          width="18"
+          xmlns="http://www.w3.org/2000/svg"
         >
-          <svg
-            class="icon text-link__icon"
-            height="18"
-            viewBox="0 0 24 24"
-            width="18"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M12.5 11.3c.4.4 1 .4 1.4 0L19 6.2V9c0 .6.4 1 1 1s1-.4 1-1V4c0-.6-.4-1-1-1h-5c-.6 0-1 .4-1 1s.4 1 1 1h2.4l-4.9 4.9c-.4.4-.4 1 0 1.4zM19 19c0 1.1-.9 2-2 2H5c-1.1 0-2-.9-2-2V7c0-1.1.9-2 2-2h7v2H5v12h12v-7h2"
-            />
-          </svg>
-        </div>
-      </a>
-       
-      bear, reviewing content for
-       
-      <a
-        aria-label="Beat (opens in a new tab)"
-        class="text-link text-link--text-link text-link--no-padding text-link--inline"
-        href="https://b-eat.co.uk/"
-        rel="noopener noreferrer"
-        target="_blank"
-      >
-        Beat
-        <div
-          class="text-link__icon-container"
-        >
-          <svg
-            class="icon text-link__icon"
-            height="18"
-            viewBox="0 0 24 24"
-            width="18"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M12.5 11.3c.4.4 1 .4 1.4 0L19 6.2V9c0 .6.4 1 1 1s1-.4 1-1V4c0-.6-.4-1-1-1h-5c-.6 0-1 .4-1 1s.4 1 1 1h2.4l-4.9 4.9c-.4.4-.4 1 0 1.4zM19 19c0 1.1-.9 2-2 2H5c-1.1 0-2-.9-2-2V7c0-1.1.9-2 2-2h7v2H5v12h12v-7h2"
-            />
-          </svg>
-        </div>
-      </a>
-      .
-      <br />
-      <br />
-      I recently got engaged to my wonderful fiancée while we were in
-       
-      <a
-        class="text-link text-link--text-link text-link--no-padding text-link--inline"
-        href="/travel/iceland-2018"
-      >
-        Iceland
-      </a>
-       💍, and live with her and Tigger the cat.
-    </span>
+          <path
+            d="M12.5 11.3c.4.4 1 .4 1.4 0L19 6.2V9c0 .6.4 1 1 1s1-.4 1-1V4c0-.6-.4-1-1-1h-5c-.6 0-1 .4-1 1s.4 1 1 1h2.4l-4.9 4.9c-.4.4-.4 1 0 1.4zM19 19c0 1.1-.9 2-2 2H5c-1.1 0-2-.9-2-2V7c0-1.1.9-2 2-2h7v2H5v12h12v-7h2"
+          />
+        </svg>
+      </div>
+    </a>
+    .
+    <br />
+    <br />
+    I recently got engaged to my wonderful fiancée while we were in
+     
+    <a
+      class="text-link text-link--text-link text-link--no-padding text-link--inline"
+      href="/travel/iceland-2018"
+    >
+      Iceland
+    </a>
+     💍, and live with her and Tigger the cat.
+  </span>
+  <div
+    class="image__outer about__image"
+  >
     <div
-      class="image__outer about__image"
+      class="image__placeholder"
+      style="padding-bottom: 75.00652911987464%;"
     >
       <div
-        class="image__placeholder"
-        style="padding-bottom: 75.00652911987464%;"
+        class="image__spinner-container"
       >
         <div
-          class="image__spinner-container"
+          class="skeleton__outer image__skeleton"
         >
           <div
-            class="skeleton__outer image__skeleton"
-          >
-            <div
-              class="skeleton__shimmer"
-              style="margin-left: -0px;"
-            />
-          </div>
+            class="skeleton__shimmer"
+            style="margin-left: -0px;"
+          />
         </div>
-        <img
-          alt="Me"
-          class="image__img image__img--hidden image__img--light"
-          src="https://i.imgur.com/FLA0jkg.jpg"
-        />
-        <img
-          alt="Me"
-          class="image__img image__img--hidden image__img--dark"
-          src="https://i.imgur.com/FLA0jkg.jpg"
-        />
       </div>
+      <img
+        alt="Me"
+        class="image__img image__img--hidden image__img--light"
+        src="https://i.imgur.com/FLA0jkg.jpg"
+      />
+      <img
+        alt="Me"
+        class="image__img image__img--hidden image__img--dark"
+        src="https://i.imgur.com/FLA0jkg.jpg"
+      />
     </div>
-    <br />
-    <span
-      class="paragraph"
-    >
-      This site is built in React and hosted on AWS. I use it to experiment with things, share stuff I've figured out, and allow people to reach-out to me. So if you're interested in anything I do,
-       
-      <a
-        class="text-link text-link--text-link text-link--no-padding text-link--inline"
-        href="/contact"
-      >
-        get in touch
-      </a>
-      !
-    </span>
   </div>
+  <br />
+  <span
+    class="paragraph"
+  >
+    This site is built in React and hosted on AWS. I use it to experiment with things, share stuff I've figured out, and allow people to reach-out to me. So if you're interested in anything I do,
+     
+    <a
+      class="text-link text-link--text-link text-link--no-padding text-link--inline"
+      href="/contact"
+    >
+      get in touch
+    </a>
+    !
+  </span>
   <div
     class="home__card-container"
   >
@@ -1469,14 +1449,14 @@ exports[`<Home /> should render correctly with user 1`] = `
             class="feature-card__center-container feature-card__center-container--narrow-compact"
           >
             <div
-              class="typography__main typography--no-padding feature-card__title"
+              class="section__outer feature-card__title"
             >
-              <h1
-                class="typography__text typography__text--section typography__link typography--no-padding"
+              <h2
+                class="section__heading section__heading--link section__heading--no-padding"
                 id="blog"
               >
                 Blog
-              </h1>
+              </h2>
             </div>
           </div>
         </div>
@@ -1508,14 +1488,14 @@ exports[`<Home /> should render correctly with user 1`] = `
             class="feature-card__center-container feature-card__center-container--narrow-compact"
           >
             <div
-              class="typography__main typography--no-padding feature-card__title"
+              class="section__outer feature-card__title"
             >
-              <h1
-                class="typography__text typography__text--section typography__link typography--no-padding"
+              <h2
+                class="section__heading section__heading--link section__heading--no-padding"
                 id="travel"
               >
                 Travel
-              </h1>
+              </h2>
             </div>
           </div>
         </div>
@@ -1547,14 +1527,14 @@ exports[`<Home /> should render correctly with user 1`] = `
             class="feature-card__center-container feature-card__center-container--narrow-compact"
           >
             <div
-              class="typography__main typography--no-padding feature-card__title"
+              class="section__outer feature-card__title"
             >
-              <h1
-                class="typography__text typography__text--section typography__link typography--no-padding"
+              <h2
+                class="section__heading section__heading--link section__heading--no-padding"
                 id="photography"
               >
                 Photography
-              </h1>
+              </h2>
             </div>
           </div>
         </div>
@@ -1586,14 +1566,14 @@ exports[`<Home /> should render correctly with user 1`] = `
             class="feature-card__center-container feature-card__center-container--narrow-compact"
           >
             <div
-              class="typography__main typography--no-padding feature-card__title"
+              class="section__outer feature-card__title"
             >
-              <h1
-                class="typography__text typography__text--section typography__link typography--no-padding"
+              <h2
+                class="section__heading section__heading--link section__heading--no-padding"
                 id="work"
               >
                 Work
-              </h1>
+              </h2>
             </div>
           </div>
         </div>
@@ -1625,14 +1605,14 @@ exports[`<Home /> should render correctly with user 1`] = `
             class="feature-card__center-container feature-card__center-container--narrow-compact"
           >
             <div
-              class="typography__main typography--no-padding feature-card__title"
+              class="section__outer feature-card__title"
             >
-              <h1
-                class="typography__text typography__text--section typography__link typography--no-padding"
+              <h2
+                class="section__heading section__heading--link section__heading--no-padding"
                 id="contact"
               >
                 Contact
-              </h1>
+              </h2>
             </div>
           </div>
         </div>
@@ -1664,14 +1644,14 @@ exports[`<Home /> should render correctly with user 1`] = `
             class="feature-card__center-container feature-card__center-container--narrow-compact"
           >
             <div
-              class="typography__main typography--no-padding feature-card__title"
+              class="section__outer feature-card__title"
             >
-              <h1
-                class="typography__text typography__text--section typography__link typography--no-padding"
+              <h2
+                class="section__heading section__heading--link section__heading--no-padding"
                 id="account"
               >
                 Account
-              </h1>
+              </h2>
             </div>
           </div>
         </div>

@@ -34,16 +34,11 @@ exports[`<AdminUsers /> should render correctly with admin user 1`] = `
     >
       ⇠ Admin
     </a>
-    <div
-      class="typography__main"
+    <h1
+      class="page-title__heading page-title__heading--with-link"
     >
-      <h1
-        class="typography__text typography__text--section page-title__section page-title__section--with-link"
-        id="admin-users"
-      >
-        Admin users
-      </h1>
-    </div>
+      Admin users
+    </h1>
   </div>
   <div>
     <button
@@ -89,14 +84,14 @@ exports[`<AdminUsers /> should render correctly with admin user 1`] = `
               class="split-detail-item__content"
             >
               <div
-                class="typography__main typography--no-padding"
+                class="subsection__outer"
               >
-                <h2
-                  class="typography__text typography__text--subsection typography--no-padding"
+                <h3
+                  class="subsection__heading subsection__heading--no-padding"
                   id="new-+"
                 >
                   New +
-                </h2>
+                </h3>
               </div>
             </div>
           </div>
@@ -119,16 +114,11 @@ exports[`<AdminUsers /> should render correctly with createError 1`] = `
     >
       ⇠ Admin
     </a>
-    <div
-      class="typography__main"
+    <h1
+      class="page-title__heading page-title__heading--with-link"
     >
-      <h1
-        class="typography__text typography__text--section page-title__section page-title__section--with-link"
-        id="admin-users"
-      >
-        Admin users
-      </h1>
-    </div>
+      Admin users
+    </h1>
   </div>
   <div>
     <button
@@ -174,14 +164,14 @@ exports[`<AdminUsers /> should render correctly with createError 1`] = `
               class="split-detail-item__content"
             >
               <div
-                class="typography__main typography--no-padding"
+                class="subsection__outer"
               >
-                <h2
-                  class="typography__text typography__text--subsection typography--no-padding"
+                <h3
+                  class="subsection__heading subsection__heading--no-padding"
                   id="new-+"
                 >
                   New +
-                </h2>
+                </h3>
               </div>
             </div>
           </div>
@@ -204,16 +194,11 @@ exports[`<AdminUsers /> should render correctly with creating=true 1`] = `
     >
       ⇠ Admin
     </a>
-    <div
-      class="typography__main"
+    <h1
+      class="page-title__heading page-title__heading--with-link"
     >
-      <h1
-        class="typography__text typography__text--section page-title__section page-title__section--with-link"
-        id="admin-users"
-      >
-        Admin users
-      </h1>
-    </div>
+      Admin users
+    </h1>
   </div>
   <div>
     <button
@@ -259,14 +244,14 @@ exports[`<AdminUsers /> should render correctly with creating=true 1`] = `
               class="split-detail-item__content"
             >
               <div
-                class="typography__main typography--no-padding"
+                class="subsection__outer"
               >
-                <h2
-                  class="typography__text typography__text--subsection typography--no-padding"
+                <h3
+                  class="subsection__heading subsection__heading--no-padding"
                   id="new-+"
                 >
                   New +
-                </h2>
+                </h3>
               </div>
             </div>
           </div>
@@ -314,16 +299,11 @@ exports[`<AdminUsers /> should render correctly with loadError 1`] = `
     >
       ⇠ Admin
     </a>
-    <div
-      class="typography__main"
+    <h1
+      class="page-title__heading page-title__heading--with-link"
     >
-      <h1
-        class="typography__text typography__text--section page-title__section page-title__section--with-link"
-        id="admin-users"
-      >
-        Admin users
-      </h1>
-    </div>
+      Admin users
+    </h1>
   </div>
   <div>
     <button
@@ -384,14 +364,14 @@ exports[`<AdminUsers /> should render correctly with loadError 1`] = `
               class="split-detail-item__content"
             >
               <div
-                class="typography__main typography--no-padding"
+                class="subsection__outer"
               >
-                <h2
-                  class="typography__text typography__text--subsection typography--no-padding"
+                <h3
+                  class="subsection__heading subsection__heading--no-padding"
                   id="new-+"
                 >
                   New +
-                </h2>
+                </h3>
               </div>
             </div>
           </div>
@@ -414,16 +394,11 @@ exports[`<AdminUsers /> should render correctly with loading=true 1`] = `
     >
       ⇠ Admin
     </a>
-    <div
-      class="typography__main"
+    <h1
+      class="page-title__heading page-title__heading--with-link"
     >
-      <h1
-        class="typography__text typography__text--section page-title__section page-title__section--with-link"
-        id="admin-users"
-      >
-        Admin users
-      </h1>
-    </div>
+      Admin users
+    </h1>
   </div>
   <div>
     <button
@@ -470,14 +445,14 @@ exports[`<AdminUsers /> should render correctly with loading=true 1`] = `
               class="split-detail-item__content"
             >
               <div
-                class="typography__main typography--no-padding"
+                class="subsection__outer"
               >
-                <h2
-                  class="typography__text typography__text--subsection typography--no-padding"
+                <h3
+                  class="subsection__heading subsection__heading--no-padding"
                   id="new-+"
                 >
                   New +
-                </h2>
+                </h3>
               </div>
             </div>
           </div>
@@ -500,16 +475,11 @@ exports[`<AdminUsers /> should render correctly with removeError 1`] = `
     >
       ⇠ Admin
     </a>
-    <div
-      class="typography__main"
+    <h1
+      class="page-title__heading page-title__heading--with-link"
     >
-      <h1
-        class="typography__text typography__text--section page-title__section page-title__section--with-link"
-        id="admin-users"
-      >
-        Admin users
-      </h1>
-    </div>
+      Admin users
+    </h1>
   </div>
   <div>
     <button
@@ -555,14 +525,14 @@ exports[`<AdminUsers /> should render correctly with removeError 1`] = `
               class="split-detail-item__content"
             >
               <div
-                class="typography__main typography--no-padding"
+                class="subsection__outer"
               >
-                <h2
-                  class="typography__text typography__text--subsection typography--no-padding"
+                <h3
+                  class="subsection__heading subsection__heading--no-padding"
                   id="new-+"
                 >
                   New +
-                </h2>
+                </h3>
               </div>
             </div>
           </div>
@@ -585,16 +555,11 @@ exports[`<AdminUsers /> should render correctly with removing=true 1`] = `
     >
       ⇠ Admin
     </a>
-    <div
-      class="typography__main"
+    <h1
+      class="page-title__heading page-title__heading--with-link"
     >
-      <h1
-        class="typography__text typography__text--section page-title__section page-title__section--with-link"
-        id="admin-users"
-      >
-        Admin users
-      </h1>
-    </div>
+      Admin users
+    </h1>
   </div>
   <div>
     <button
@@ -640,14 +605,14 @@ exports[`<AdminUsers /> should render correctly with removing=true 1`] = `
               class="split-detail-item__content"
             >
               <div
-                class="typography__main typography--no-padding"
+                class="subsection__outer"
               >
-                <h2
-                  class="typography__text typography__text--subsection typography--no-padding"
+                <h3
+                  class="subsection__heading subsection__heading--no-padding"
                   id="new-+"
                 >
                   New +
-                </h2>
+                </h3>
               </div>
             </div>
           </div>
@@ -670,16 +635,11 @@ exports[`<AdminUsers /> should render correctly with requestError 1`] = `
     >
       ⇠ Admin
     </a>
-    <div
-      class="typography__main"
+    <h1
+      class="page-title__heading page-title__heading--with-link"
     >
-      <h1
-        class="typography__text typography__text--section page-title__section page-title__section--with-link"
-        id="admin-users"
-      >
-        Admin users
-      </h1>
-    </div>
+      Admin users
+    </h1>
   </div>
   <div>
     <button
@@ -725,14 +685,14 @@ exports[`<AdminUsers /> should render correctly with requestError 1`] = `
               class="split-detail-item__content"
             >
               <div
-                class="typography__main typography--no-padding"
+                class="subsection__outer"
               >
-                <h2
-                  class="typography__text typography__text--subsection typography--no-padding"
+                <h3
+                  class="subsection__heading subsection__heading--no-padding"
                   id="new-+"
                 >
                   New +
-                </h2>
+                </h3>
               </div>
             </div>
           </div>
@@ -755,16 +715,11 @@ exports[`<AdminUsers /> should render correctly with requesting=true 1`] = `
     >
       ⇠ Admin
     </a>
-    <div
-      class="typography__main"
+    <h1
+      class="page-title__heading page-title__heading--with-link"
     >
-      <h1
-        class="typography__text typography__text--section page-title__section page-title__section--with-link"
-        id="admin-users"
-      >
-        Admin users
-      </h1>
-    </div>
+      Admin users
+    </h1>
   </div>
   <div>
     <button
@@ -810,14 +765,14 @@ exports[`<AdminUsers /> should render correctly with requesting=true 1`] = `
               class="split-detail-item__content"
             >
               <div
-                class="typography__main typography--no-padding"
+                class="subsection__outer"
               >
-                <h2
-                  class="typography__text typography__text--subsection typography--no-padding"
+                <h3
+                  class="subsection__heading subsection__heading--no-padding"
                   id="new-+"
                 >
                   New +
-                </h2>
+                </h3>
               </div>
             </div>
           </div>
@@ -840,16 +795,11 @@ exports[`<AdminUsers /> should render correctly with updateError 1`] = `
     >
       ⇠ Admin
     </a>
-    <div
-      class="typography__main"
+    <h1
+      class="page-title__heading page-title__heading--with-link"
     >
-      <h1
-        class="typography__text typography__text--section page-title__section page-title__section--with-link"
-        id="admin-users"
-      >
-        Admin users
-      </h1>
-    </div>
+      Admin users
+    </h1>
   </div>
   <div>
     <button
@@ -895,14 +845,14 @@ exports[`<AdminUsers /> should render correctly with updateError 1`] = `
               class="split-detail-item__content"
             >
               <div
-                class="typography__main typography--no-padding"
+                class="subsection__outer"
               >
-                <h2
-                  class="typography__text typography__text--subsection typography--no-padding"
+                <h3
+                  class="subsection__heading subsection__heading--no-padding"
                   id="new-+"
                 >
                   New +
-                </h2>
+                </h3>
               </div>
             </div>
           </div>
@@ -925,16 +875,11 @@ exports[`<AdminUsers /> should render correctly with updating=true 1`] = `
     >
       ⇠ Admin
     </a>
-    <div
-      class="typography__main"
+    <h1
+      class="page-title__heading page-title__heading--with-link"
     >
-      <h1
-        class="typography__text typography__text--section page-title__section page-title__section--with-link"
-        id="admin-users"
-      >
-        Admin users
-      </h1>
-    </div>
+      Admin users
+    </h1>
   </div>
   <div>
     <button
@@ -980,14 +925,14 @@ exports[`<AdminUsers /> should render correctly with updating=true 1`] = `
               class="split-detail-item__content"
             >
               <div
-                class="typography__main typography--no-padding"
+                class="subsection__outer"
               >
-                <h2
-                  class="typography__text typography__text--subsection typography--no-padding"
+                <h3
+                  class="subsection__heading subsection__heading--no-padding"
                   id="new-+"
                 >
                   New +
-                </h2>
+                </h3>
               </div>
             </div>
           </div>
@@ -1004,14 +949,14 @@ exports[`<AdminUsers /> should render correctly with updating=true 1`] = `
 exports[`<AdminUsers /> should render correctly with user 1`] = `
 <div>
   <div
-    class="typography__main"
+    class="section__outer"
   >
-    <h1
-      class="typography__text typography__text--section"
+    <h2
+      class="section__heading"
       id="admin-only"
     >
       Admin only
-    </h1>
+    </h2>
     <span
       class="paragraph"
     >
@@ -1037,16 +982,11 @@ exports[`<AdminUsers /> should render correctly with users 1`] = `
     >
       ⇠ Admin
     </a>
-    <div
-      class="typography__main"
+    <h1
+      class="page-title__heading page-title__heading--with-link"
     >
-      <h1
-        class="typography__text typography__text--section page-title__section page-title__section--with-link"
-        id="admin-users"
-      >
-        Admin users
-      </h1>
-    </div>
+      Admin users
+    </h1>
   </div>
   <div>
     <button
@@ -1101,14 +1041,14 @@ exports[`<AdminUsers /> should render correctly with users 1`] = `
               class="split-detail-item__content"
             >
               <div
-                class="typography__main typography--no-padding"
+                class="subsection__outer"
               >
-                <h2
-                  class="typography__text typography__text--subsection typography--no-padding"
+                <h3
+                  class="subsection__heading subsection__heading--no-padding"
                   id="new-+"
                 >
                   New +
-                </h2>
+                </h3>
               </div>
             </div>
           </div>
@@ -1132,14 +1072,14 @@ exports[`<AdminUsers /> should render correctly with users 1`] = `
               class="split-detail-item__content"
             >
               <div
-                class="typography__main typography--no-padding"
+                class="subsection__outer"
               >
-                <h2
-                  class="typography__text typography__text--subsection typography--no-padding"
+                <h3
+                  class="subsection__heading subsection__heading--no-padding"
                   id="name"
                 >
                   name
-                </h2>
+                </h3>
                 <span
                   class="paragraph"
                 >
@@ -1170,14 +1110,14 @@ exports[`<AdminUsers /> should render correctly with users 1`] = `
               class="split-detail-item__content"
             >
               <div
-                class="typography__main typography--no-padding"
+                class="subsection__outer"
               >
-                <h2
-                  class="typography__text typography__text--subsection typography--no-padding"
+                <h3
+                  class="subsection__heading subsection__heading--no-padding"
                   id="another"
                 >
                   another
-                </h2>
+                </h3>
                 <span
                   class="paragraph"
                 >
@@ -1208,14 +1148,14 @@ exports[`<AdminUsers /> should render correctly with users 1`] = `
               class="split-detail-item__content"
             >
               <div
-                class="typography__main typography--no-padding"
+                class="subsection__outer"
               >
-                <h2
-                  class="typography__text typography__text--subsection typography--no-padding"
+                <h3
+                  class="subsection__heading subsection__heading--no-padding"
                   id="a-third"
                 >
                   a third
-                </h2>
+                </h3>
                 <span
                   class="paragraph"
                 >

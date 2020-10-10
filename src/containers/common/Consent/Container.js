@@ -65,7 +65,6 @@ const Consent = props => {
         )}
         textClassName={getClassName('consent__section-text')}
         padding={false}
-        noPadding
         name="Privacy and cookies">
         <Paragraph>
           To provide the best possible experience, we would like to use cookies and handle your data in accordance with

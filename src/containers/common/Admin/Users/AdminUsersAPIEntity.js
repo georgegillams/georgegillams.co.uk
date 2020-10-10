@@ -17,7 +17,7 @@ const AdminUsersAPIEntity = props => {
   const [updatedUser, setUpdatedUser] = useState(null);
 
   const content = (
-    <Subsection anchor={false} noPadding={compact} name={entity.name || `User ${entity.id}`}>
+    <Subsection anchor={false} padding={!compact} name={entity.name || `User ${entity.id}`}>
       <Paragraph>
         {compact && <br />}
         id: {entity.id}

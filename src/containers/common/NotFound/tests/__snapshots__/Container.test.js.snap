@@ -5,33 +5,28 @@ exports[`<NotFound /> should render correctly 1`] = `
   <div
     class="not-found__container"
   >
-    <div
-      class="typography__main not-found__container"
+    <h1
+      class="page-title__heading not-found__container"
     >
-      <h1
-        class="typography__text typography__text--section page-title__section"
-        id="oops."
+      Oops.
+    </h1>
+    <div
+      class="subsection__outer"
+    >
+      <span
+        class="paragraph"
       >
-        Oops.
-      </h1>
-      <div
-        class="typography__main"
-      >
-        <span
-          class="paragraph"
+        The page you're looking for doesn't exist, or you don't have permission to view it.
+        <br />
+        Maybe the 
+        <a
+          class="text-link text-link--text-link text-link--no-padding text-link--inline"
+          href="/sitemap"
         >
-          The page you're looking for doesn't exist, or you don't have permission to view it.
-          <br />
-          Maybe the 
-          <a
-            class="text-link text-link--text-link text-link--no-padding text-link--inline"
-            href="/sitemap"
-          >
-            site map
-          </a>
-           can help
-        </span>
-      </div>
+          site map
+        </a>
+         can help
+      </span>
     </div>
   </div>
 </div>

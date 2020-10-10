@@ -5,24 +5,19 @@ exports[`<Teapot /> should render correctly 1`] = `
   <main
     class="not-found__container"
   >
-    <div
-      class="typography__main not-found__container"
+    <h1
+      class="page-title__heading not-found__container"
     >
-      <h1
-        class="typography__text typography__text--section page-title__section"
-        id="error-418---i'm-a-teapot."
+      Error 418 - I'm a teapot.
+    </h1>
+    <div
+      class="subsection__outer"
+    >
+      <span
+        class="paragraph"
       >
-        Error 418 - I'm a teapot.
-      </h1>
-      <div
-        class="typography__main"
-      >
-        <span
-          class="paragraph"
-        >
-          Coffee cannot be brewed inside a teapot context. The resulting entity body MAY be short and stout.
-        </span>
-      </div>
+        Coffee cannot be brewed inside a teapot context. The resulting entity body MAY be short and stout.
+      </span>
     </div>
   </main>
 </div>

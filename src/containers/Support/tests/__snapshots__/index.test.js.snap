@@ -2,125 +2,110 @@
 
 exports[`<Support /> should render correctly - index 1`] = `
 <div>
-  <div
-    class="typography__main"
+  <h1
+    class="page-title__heading"
   >
-    <h1
-      class="typography__text typography__text--section page-title__section"
-      id="support"
+    Support
+  </h1>
+  <div
+    class="support__controls"
+  >
+    <button
+      class="button__outer button__outer--regular button__outer--no-bouncy button__outer--disabled"
+      disabled=""
+      type="button"
     >
-      Support
-    </h1>
-    <div
-      class="support__controls"
-    >
-      <button
-        class="button__outer button__outer--regular button__outer--no-bouncy button__outer--disabled"
-        disabled=""
-        type="button"
+      <span
+        class="button__child"
       >
-        <span
-          class="button__child"
-        >
-          Reload
-        </span>
-      </button>
-    </div>
+        Reload
+      </span>
+    </button>
+  </div>
+  <div
+    class="skeleton__outer skeleton__card support__body-skeleton"
+  >
     <div
-      class="skeleton__outer skeleton__card support__body-skeleton"
-    >
-      <div
-        class="skeleton__shimmer"
-        style="margin-left: -0px;"
-      />
-    </div>
+      class="skeleton__shimmer"
+      style="margin-left: -0px;"
+    />
   </div>
 </div>
 `;
 
 exports[`<Support /> should render correctly when loading 1`] = `
 <div>
-  <div
-    class="typography__main"
+  <h1
+    class="page-title__heading"
   >
-    <h1
-      class="typography__text typography__text--section page-title__section"
-      id="support"
+    Support
+  </h1>
+  <div
+    class="support__controls"
+  >
+    <button
+      class="button__outer button__outer--regular button__outer--no-bouncy button__outer--disabled"
+      disabled=""
+      type="button"
     >
-      Support
-    </h1>
-    <div
-      class="support__controls"
-    >
-      <button
-        class="button__outer button__outer--regular button__outer--no-bouncy button__outer--disabled"
-        disabled=""
-        type="button"
+      <span
+        class="button__child"
       >
-        <span
-          class="button__child"
-        >
-          Reload
-        </span>
-      </button>
-    </div>
+        Reload
+      </span>
+    </button>
+  </div>
+  <div
+    class="skeleton__outer skeleton__card support__body-skeleton"
+  >
     <div
-      class="skeleton__outer skeleton__card support__body-skeleton"
-    >
-      <div
-        class="skeleton__shimmer"
-        style="margin-left: -0px;"
-      />
-    </div>
+      class="skeleton__shimmer"
+      style="margin-left: -0px;"
+    />
   </div>
 </div>
 `;
 
 exports[`<Support /> should render correctly with admin 1`] = `
 <div>
-  <div
-    class="typography__main"
+  <h1
+    class="page-title__heading"
   >
-    <h1
-      class="typography__text typography__text--section page-title__section"
-      id="support"
+    Support
+  </h1>
+  <div
+    class="support__controls"
+  >
+    <button
+      class="button__outer button__outer--regular button__outer--no-bouncy"
+      type="button"
     >
-      Support
-    </h1>
-    <div
-      class="support__controls"
-    >
-      <button
-        class="button__outer button__outer--regular button__outer--no-bouncy"
-        type="button"
+      <span
+        class="button__child"
       >
-        <span
-          class="button__child"
-        >
-          Reload
-        </span>
-      </button>
-    </div>
+        Reload
+      </span>
+    </button>
+  </div>
+  <div
+    class="skeleton__outer skeleton__card support__body-skeleton"
+  >
     <div
-      class="skeleton__outer skeleton__card support__body-skeleton"
+      class="skeleton__shimmer"
+      style="margin-left: -0px;"
+    />
+  </div>
+  <div
+    class="section__outer"
+  >
+    <h2
+      class="section__heading"
+      id="add-link"
     >
-      <div
-        class="skeleton__shimmer"
-        style="margin-left: -0px;"
-      />
-    </div>
-    <div
-      class="typography__main"
-    >
-      <h1
-        class="typography__text typography__text--section"
-        id="add-link"
-      >
-        ADD LINK
-      </h1>
-      <div>
-        SUPPORT_FORM
-      </div>
+      ADD LINK
+    </h2>
+    <div>
+      SUPPORT_FORM
     </div>
   </div>
 </div>
@@ -128,55 +113,50 @@ exports[`<Support /> should render correctly with admin 1`] = `
 
 exports[`<Support /> should render correctly with admin and createLinkError 1`] = `
 <div>
-  <div
-    class="typography__main"
+  <h1
+    class="page-title__heading"
   >
-    <h1
-      class="typography__text typography__text--section page-title__section"
-      id="support"
+    Support
+  </h1>
+  <div
+    class="support__controls"
+  >
+    <button
+      class="button__outer button__outer--regular button__outer--no-bouncy"
+      type="button"
     >
-      Support
-    </h1>
-    <div
-      class="support__controls"
-    >
-      <button
-        class="button__outer button__outer--regular button__outer--no-bouncy"
-        type="button"
-      >
-        <span
-          class="button__child"
-        >
-          Reload
-        </span>
-      </button>
-    </div>
-    <div
-      class="skeleton__outer skeleton__card support__body-skeleton"
-    >
-      <div
-        class="skeleton__shimmer"
-        style="margin-left: -0px;"
-      />
-    </div>
-    <div
-      class="typography__main"
-    >
-      <h1
-        class="typography__text typography__text--section"
-        id="add-link"
-      >
-        ADD LINK
-      </h1>
       <span
-        class="paragraph"
-        style="width: 100%; margin-bottom: 1rem;"
+        class="button__child"
       >
-        Error creating link
+        Reload
       </span>
-      <div>
-        SUPPORT_FORM
-      </div>
+    </button>
+  </div>
+  <div
+    class="skeleton__outer skeleton__card support__body-skeleton"
+  >
+    <div
+      class="skeleton__shimmer"
+      style="margin-left: -0px;"
+    />
+  </div>
+  <div
+    class="section__outer"
+  >
+    <h2
+      class="section__heading"
+      id="add-link"
+    >
+      ADD LINK
+    </h2>
+    <span
+      class="paragraph"
+      style="width: 100%; margin-bottom: 1rem;"
+    >
+      Error creating link
+    </span>
+    <div>
+      SUPPORT_FORM
     </div>
   </div>
 </div>
@@ -184,54 +164,49 @@ exports[`<Support /> should render correctly with admin and createLinkError 1`] 
 
 exports[`<Support /> should render correctly with admin and deleteLinkError 1`] = `
 <div>
-  <div
-    class="typography__main"
+  <h1
+    class="page-title__heading"
   >
-    <h1
-      class="typography__text typography__text--section page-title__section"
-      id="support"
+    Support
+  </h1>
+  <div
+    class="support__controls"
+  >
+    <button
+      class="button__outer button__outer--regular button__outer--no-bouncy"
+      type="button"
     >
-      Support
-    </h1>
-    <div
-      class="support__controls"
-    >
-      <button
-        class="button__outer button__outer--regular button__outer--no-bouncy"
-        type="button"
-      >
-        <span
-          class="button__child"
-        >
-          Reload
-        </span>
-      </button>
-    </div>
-    <div
-      class="skeleton__outer skeleton__card support__body-skeleton"
-    >
-      <div
-        class="skeleton__shimmer"
-        style="margin-left: -0px;"
-      />
-    </div>
-    <div
-      class="typography__main"
-    >
-      <h1
-        class="typography__text typography__text--section"
-        id="add-link"
-      >
-        ADD LINK
-      </h1>
       <span
-        class="paragraph support__error"
+        class="button__child"
       >
-        Error deleting link
+        Reload
       </span>
-      <div>
-        SUPPORT_FORM
-      </div>
+    </button>
+  </div>
+  <div
+    class="skeleton__outer skeleton__card support__body-skeleton"
+  >
+    <div
+      class="skeleton__shimmer"
+      style="margin-left: -0px;"
+    />
+  </div>
+  <div
+    class="section__outer"
+  >
+    <h2
+      class="section__heading"
+      id="add-link"
+    >
+      ADD LINK
+    </h2>
+    <span
+      class="paragraph support__error"
+    >
+      Error deleting link
+    </span>
+    <div>
+      SUPPORT_FORM
     </div>
   </div>
 </div>
@@ -239,190 +214,175 @@ exports[`<Support /> should render correctly with admin and deleteLinkError 1`] 
 
 exports[`<Support /> should render correctly with initial state 1`] = `
 <div>
-  <div
-    class="typography__main"
+  <h1
+    class="page-title__heading"
   >
-    <h1
-      class="typography__text typography__text--section page-title__section"
-      id="support"
+    Support
+  </h1>
+  <div
+    class="support__controls"
+  >
+    <button
+      class="button__outer button__outer--regular button__outer--no-bouncy"
+      type="button"
     >
-      Support
-    </h1>
-    <div
-      class="support__controls"
-    >
-      <button
-        class="button__outer button__outer--regular button__outer--no-bouncy"
-        type="button"
+      <span
+        class="button__child"
       >
-        <span
-          class="button__child"
-        >
-          Reload
-        </span>
-      </button>
-    </div>
+        Reload
+      </span>
+    </button>
+  </div>
+  <div
+    class="skeleton__outer skeleton__card support__body-skeleton"
+  >
     <div
-      class="skeleton__outer skeleton__card support__body-skeleton"
-    >
-      <div
-        class="skeleton__shimmer"
-        style="margin-left: -0px;"
-      />
-    </div>
+      class="skeleton__shimmer"
+      style="margin-left: -0px;"
+    />
   </div>
 </div>
 `;
 
 exports[`<Support /> should render correctly with links 1`] = `
 <div>
-  <div
-    class="typography__main"
+  <h1
+    class="page-title__heading"
   >
-    <h1
-      class="typography__text typography__text--section page-title__section"
-      id="support"
+    Support
+  </h1>
+  <div
+    class="support__controls"
+  >
+    <button
+      class="button__outer button__outer--regular button__outer--no-bouncy"
+      type="button"
     >
-      Support
-    </h1>
-    <div
-      class="support__controls"
-    >
-      <button
-        class="button__outer button__outer--regular button__outer--no-bouncy"
-        type="button"
-      >
-        <span
-          class="button__child"
-        >
-          Reload
-        </span>
-      </button>
-    </div>
-    <div
-      class="typography__main"
-    >
-      <h2
-        class="typography__text typography__text--subsection"
-        id="name-1"
-      >
-        name 1
-      </h2>
       <span
-        class="paragraph support-link__link"
+        class="button__child"
       >
-        <a
-          aria-label="URL_1 (opens in a new tab)"
-          class="text-link text-link--text-link text-link--no-padding text-link--inline"
-          href="URL_1"
-          rel="noopener noreferrer"
-          target="_blank"
-        >
-          URL_1
-          <div
-            class="text-link__icon-container"
-          >
-            <svg
-              class="icon text-link__icon"
-              height="18"
-              viewBox="0 0 24 24"
-              width="18"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M12.5 11.3c.4.4 1 .4 1.4 0L19 6.2V9c0 .6.4 1 1 1s1-.4 1-1V4c0-.6-.4-1-1-1h-5c-.6 0-1 .4-1 1s.4 1 1 1h2.4l-4.9 4.9c-.4.4-.4 1 0 1.4zM19 19c0 1.1-.9 2-2 2H5c-1.1 0-2-.9-2-2V7c0-1.1.9-2 2-2h7v2H5v12h12v-7h2"
-              />
-            </svg>
-          </div>
-        </a>
-        <br />
-        description 1
+        Reload
       </span>
-    </div>
-    <div
-      class="typography__main"
+    </button>
+  </div>
+  <div
+    class="subsection__outer"
+  >
+    <h3
+      class="subsection__heading"
+      id="name-1"
     >
-      <h2
-        class="typography__text typography__text--subsection"
-        id="name-2"
+      name 1
+    </h3>
+    <span
+      class="paragraph support-link__link"
+    >
+      <a
+        aria-label="URL_1 (opens in a new tab)"
+        class="text-link text-link--text-link text-link--no-padding text-link--inline"
+        href="URL_1"
+        rel="noopener noreferrer"
+        target="_blank"
       >
-        name 2
-      </h2>
-      <span
-        class="paragraph support-link__link"
-      >
-        <a
-          aria-label="URL_2 (opens in a new tab)"
-          class="text-link text-link--text-link text-link--no-padding text-link--inline"
-          href="URL_2"
-          rel="noopener noreferrer"
-          target="_blank"
+        URL_1
+        <div
+          class="text-link__icon-container"
         >
-          URL_2
-          <div
-            class="text-link__icon-container"
+          <svg
+            class="icon text-link__icon"
+            height="18"
+            viewBox="0 0 24 24"
+            width="18"
+            xmlns="http://www.w3.org/2000/svg"
           >
-            <svg
-              class="icon text-link__icon"
-              height="18"
-              viewBox="0 0 24 24"
-              width="18"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M12.5 11.3c.4.4 1 .4 1.4 0L19 6.2V9c0 .6.4 1 1 1s1-.4 1-1V4c0-.6-.4-1-1-1h-5c-.6 0-1 .4-1 1s.4 1 1 1h2.4l-4.9 4.9c-.4.4-.4 1 0 1.4zM19 19c0 1.1-.9 2-2 2H5c-1.1 0-2-.9-2-2V7c0-1.1.9-2 2-2h7v2H5v12h12v-7h2"
-              />
-            </svg>
-          </div>
-        </a>
-        <br />
-        description 2
-      </span>
-    </div>
+            <path
+              d="M12.5 11.3c.4.4 1 .4 1.4 0L19 6.2V9c0 .6.4 1 1 1s1-.4 1-1V4c0-.6-.4-1-1-1h-5c-.6 0-1 .4-1 1s.4 1 1 1h2.4l-4.9 4.9c-.4.4-.4 1 0 1.4zM19 19c0 1.1-.9 2-2 2H5c-1.1 0-2-.9-2-2V7c0-1.1.9-2 2-2h7v2H5v12h12v-7h2"
+            />
+          </svg>
+        </div>
+      </a>
+      <br />
+      description 1
+    </span>
+  </div>
+  <div
+    class="subsection__outer"
+  >
+    <h3
+      class="subsection__heading"
+      id="name-2"
+    >
+      name 2
+    </h3>
+    <span
+      class="paragraph support-link__link"
+    >
+      <a
+        aria-label="URL_2 (opens in a new tab)"
+        class="text-link text-link--text-link text-link--no-padding text-link--inline"
+        href="URL_2"
+        rel="noopener noreferrer"
+        target="_blank"
+      >
+        URL_2
+        <div
+          class="text-link__icon-container"
+        >
+          <svg
+            class="icon text-link__icon"
+            height="18"
+            viewBox="0 0 24 24"
+            width="18"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M12.5 11.3c.4.4 1 .4 1.4 0L19 6.2V9c0 .6.4 1 1 1s1-.4 1-1V4c0-.6-.4-1-1-1h-5c-.6 0-1 .4-1 1s.4 1 1 1h2.4l-4.9 4.9c-.4.4-.4 1 0 1.4zM19 19c0 1.1-.9 2-2 2H5c-1.1 0-2-.9-2-2V7c0-1.1.9-2 2-2h7v2H5v12h12v-7h2"
+            />
+          </svg>
+        </div>
+      </a>
+      <br />
+      description 2
+    </span>
   </div>
 </div>
 `;
 
 exports[`<Support /> should render correctly with loadError 1`] = `
 <div>
-  <div
-    class="typography__main"
+  <h1
+    class="page-title__heading"
   >
-    <h1
-      class="typography__text typography__text--section page-title__section"
-      id="support"
+    Support
+  </h1>
+  <div
+    class="support__controls"
+  >
+    <button
+      class="button__outer button__outer--regular button__outer--no-bouncy"
+      type="button"
     >
-      Support
-    </h1>
-    <div
-      class="support__controls"
-    >
-      <button
-        class="button__outer button__outer--regular button__outer--no-bouncy"
-        type="button"
+      <span
+        class="button__child"
       >
-        <span
-          class="button__child"
-        >
-          Reload
-        </span>
-      </button>
-    </div>
-    <span
-      class="paragraph support__error"
-    >
-      Something has gone wrong while loading the support session.
-      <br />
-      some error message
-    </span>
+        Reload
+      </span>
+    </button>
+  </div>
+  <span
+    class="paragraph support__error"
+  >
+    Something has gone wrong while loading the support session.
+    <br />
+    some error message
+  </span>
+  <div
+    class="skeleton__outer skeleton__card support__body-skeleton"
+  >
     <div
-      class="skeleton__outer skeleton__card support__body-skeleton"
-    >
-      <div
-        class="skeleton__shimmer"
-        style="margin-left: -0px;"
-      />
-    </div>
+      class="skeleton__shimmer"
+      style="margin-left: -0px;"
+    />
   </div>
 </div>
 `;

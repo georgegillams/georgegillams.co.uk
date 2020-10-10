@@ -9,14 +9,14 @@ exports[`<CreativeCommons /> Should render correctly 1`] = `
       class="creative-commons__background"
     />
     <div
-      class="typography__main creative-commons__inner"
+      class="subsection__outer creative-commons__inner"
     >
-      <h2
-        class="typography__text typography__text--subsection"
+      <h3
+        class="subsection__heading"
         id="copyright"
       >
         Copyright
-      </h2>
+      </h3>
       <span
         class="paragraph"
       >
@@ -71,14 +71,14 @@ exports[`<CreativeCommons /> Should render correctly with custom className 1`] =
       class="creative-commons__background"
     />
     <div
-      class="typography__main creative-commons__inner"
+      class="subsection__outer creative-commons__inner"
     >
-      <h2
-        class="typography__text typography__text--subsection"
+      <h3
+        class="subsection__heading"
         id="copyright"
       >
         Copyright
-      </h2>
+      </h3>
       <span
         class="paragraph"
       >
