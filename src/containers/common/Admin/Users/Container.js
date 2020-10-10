@@ -118,7 +118,7 @@ const AdminUsers = props => {
         highlighted={highlightId === 'new'}
         href="/admin/users?highlight=new"
         className={getClassName('admin-users__card')}>
-        <Subsection name="New +" anchor={false} noPadding />
+        <Subsection name="New +" anchor={false} padding={false} />
       </SplitDetailItem>
       {showUsers &&
         filteredUsers.map(n => (
