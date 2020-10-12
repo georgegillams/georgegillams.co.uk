@@ -6,7 +6,7 @@ import apiStructure from 'helpers/common/apiStructure';
 
 const Page = props => {
   return (
-    <CommonLayout layout={LAYOUT_STYLES.prose}>
+    <CommonLayout layout={LAYOUT_STYLES.prose} bottomPadding={false}>
       <BlogRenderer blogSubcategory="Blog" linkPrefix={'/blog'} {...props} />
     </CommonLayout>
   );

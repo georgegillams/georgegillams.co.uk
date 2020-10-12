@@ -22,6 +22,7 @@ const Contact = () => {
   return (
     <PageTitle name="Get in touch">
       <InfoCellWithScroll
+        className={getClassName('contact__info-cell')}
         title="Twitter"
         content={
           <TextLink href="https://twitter.com/georgegillams" hrefExternal>
@@ -35,6 +36,7 @@ const Contact = () => {
         }
       />
       <InfoCellWithScroll
+        className={getClassName('contact__info-cell')}
         cellStyle={INFO_CELL_STYLES.dark}
         title="Linkedin"
         content={
@@ -49,6 +51,7 @@ const Contact = () => {
         }
       />
       <InfoCellWithScroll
+        className={getClassName('contact__info-cell')}
         title="GitHub"
         content={
           <TextLink href="https://github.com/georgegillams" hrefExternal>
@@ -62,6 +65,7 @@ const Contact = () => {
         }
       />
       <InfoCellWithScroll
+        className={getClassName('contact__info-cell')}
         cellStyle={INFO_CELL_STYLES.dark}
         title="Email"
         content={
@@ -76,6 +80,7 @@ const Contact = () => {
         }
       />
       <InfoCellWithScroll
+        className={getClassName('contact__info-cell')}
         title="Flickr"
         content={
           <TextLink href="https://www.flickr.com/people/georgegillams" hrefExternal>
@@ -89,6 +94,7 @@ const Contact = () => {
         }
       />
       <InfoCellWithScroll
+        className={getClassName('contact__info-cell')}
         cellStyle={INFO_CELL_STYLES.dark}
         title="Gurushots"
         content={

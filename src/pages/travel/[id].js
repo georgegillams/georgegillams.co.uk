@@ -6,7 +6,7 @@ import blogPage from '../blog/[id]';
 
 const Page = props => {
   return (
-    <CommonLayout layout={LAYOUT_STYLES.proseCenter}>
+    <CommonLayout layout={LAYOUT_STYLES.proseCenter} bottomPadding={false}>
       <BlogRenderer blogSubcategory="Travel" linkPrefix={'/travel'} {...props} />
     </CommonLayout>
   );

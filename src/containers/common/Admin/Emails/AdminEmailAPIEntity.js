@@ -12,7 +12,7 @@ const AdminEmailAPIEntity = props => {
   const { compact, entity, children, ...rest } = props;
 
   const content = (
-    <Subsection anchor={false} noPadding={compact} name={entity.subject || `Email ${entity.id}`}>
+    <Subsection anchor={false} padding={!compact} name={entity.subject || `Email ${entity.id}`}>
       <Paragraph>
         {compact && <br />}
         id: {entity.id}

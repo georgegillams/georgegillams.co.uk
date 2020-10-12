@@ -45,6 +45,7 @@ const Login = props => {
       <LoggedOutOnly user={authenticatorState.user}>
         <PageTitle name="Login">
           <LoginForm
+            className={getClassName('login__form')}
             disabled={loginState.loggingIn}
             credentials={credentials}
             onDataChanged={setCredentials}
@@ -53,7 +54,7 @@ const Login = props => {
             }}
             preSubmitText={preSubmitText}
           />
-          <TextLink className={getClassName('login__sign-up-link')} href="/sign-up">
+          <TextLink className={getClassName('login__link')} href="/sign-up">
             Not yet got an account? Sign up here.
           </TextLink>
         </PageTitle>

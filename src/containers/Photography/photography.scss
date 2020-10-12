@@ -3,6 +3,7 @@
 .photography {
   &__card-container {
     max-width: 90rem;
+    margin-top: $spacing-lg;
 
     @include card-container;
   }
@@ -17,6 +18,7 @@
 
   &__image {
     width: 70%;
+    margin-top: 0.86rem;
     margin-bottom: $spacing-lg;
 
     @include bpk-breakpoint-mobile {
