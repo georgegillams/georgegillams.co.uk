@@ -8,7 +8,7 @@ const SignUpForm = props => {
   const { onDataChanged, credentials, submitLabel, ...rest } = props;
 
   const onDataChangedCustom = newValue => {
-    if (!newValue || !newValue.email) { 
+    if (!newValue || !newValue.email) {
       onDataChanged(newValue);
       return;
     }
