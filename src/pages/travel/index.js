@@ -6,7 +6,7 @@ import blogPage from '../blog/';
 
 const Page = props => {
   return (
-    <CommonLayout>
+    <CommonLayout bottomPadding={false}>
       <BlogList linkPrefix={'/travel'} selectedNav="Travel" filter={x => x.showInTravelBlogsList} {...props} />
     </CommonLayout>
   );

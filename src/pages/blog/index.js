@@ -6,7 +6,7 @@ import apiStructure from 'helpers/common/apiStructure';
 
 const Page = props => {
   return (
-    <CommonLayout>
+    <CommonLayout bottomPadding={false}>
       <BlogList linkPrefix={'/blog'} selectedNav="Writing" filter={x => x.showInBlogsList} {...props} />
     </CommonLayout>
   );

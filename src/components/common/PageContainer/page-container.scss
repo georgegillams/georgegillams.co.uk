@@ -7,6 +7,10 @@
     margin-right: auto;
     margin-left: auto;
 
+    &--bottom-padding {
+      padding-bottom: $spacing-lg;
+    }
+
     &--debug {
       background-color: orange;
 

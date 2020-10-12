@@ -5,7 +5,7 @@ import CommonLayout, { LAYOUT_STYLES } from 'components/common/CommonLayout';
 
 const Page = props => {
   return (
-    <CommonLayout layout={LAYOUT_STYLES.defaultCenter}>
+    <CommonLayout layout={LAYOUT_STYLES.defaultCenter} bottomPadding={false}>
       <Photography {...props} />
     </CommonLayout>
   );

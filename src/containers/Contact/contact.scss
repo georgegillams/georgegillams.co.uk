@@ -19,6 +19,14 @@
   }
 
   &__button {
-    margin: $spacing-base $spacing-base 0.5rem $spacing-base;
+    margin: $spacing-lg $spacing-base 0 $spacing-base;
+  }
+
+  &__info-cell {
+    width: 100%;
+
+    &:first-of-type {
+      margin-top: $spacing-base;
+    }
   }
 }

@@ -128,7 +128,7 @@ exports[`<AdminEmails /> should render correctly with emails 1`] = `
                 class="subsection__outer"
               >
                 <h3
-                  class="subsection__heading"
+                  class="subsection__heading subsection__heading--no-padding"
                   id="email-1"
                 >
                   Email 1
@@ -166,7 +166,7 @@ exports[`<AdminEmails /> should render correctly with emails 1`] = `
                 class="subsection__outer"
               >
                 <h3
-                  class="subsection__heading"
+                  class="subsection__heading subsection__heading--no-padding"
                   id="email-2"
                 >
                   Email 2
@@ -204,7 +204,7 @@ exports[`<AdminEmails /> should render correctly with emails 1`] = `
                 class="subsection__outer"
               >
                 <h3
-                  class="subsection__heading"
+                  class="subsection__heading subsection__heading--no-padding"
                   id="email-3"
                 >
                   Email 3

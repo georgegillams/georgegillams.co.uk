@@ -5,10 +5,7 @@ import { FormBuilder } from 'gg-components/FormBuilder';
 import { USERNAME_REGEX, EMAIL_REGEX } from 'helpers/regexConstants';
 
 const SignUpForm = props => {
-  const { onDataChanged, className, credentials, submitLabel, ...rest } = props;
-
-  const classNameFinal = [];
-  if (className) classNameFinal.push(className);
+  const { onDataChanged, credentials, submitLabel, ...rest } = props;
 
   const onDataChangedCustom = newValue => {
     if (!newValue || !newValue.email) {
@@ -57,12 +54,10 @@ SignUpForm.propTypes = {
   onDataChanged: PropTypes.func.isRequired,
   onSubmit: PropTypes.func.isRequired,
   submitLabel: PropTypes.string,
-  className: PropTypes.string,
 };
 
 SignUpForm.defaultProps = {
   submitLabel: null,
-  className: null,
 };
 
 export default SignUpForm;

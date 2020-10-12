@@ -17,7 +17,7 @@ export const LAYOUT_STYLES = {
 const getClassName = cssModules(STYLES);
 
 const PageContainer = props => {
-  const { className, layout, ...rest } = props;
+  const { className, layout, bottomPadding, ...rest } = props;
   const [showDebug, setShowDebug] = useState(false);
 
   useEffect(() => {
@@ -25,6 +25,9 @@ const PageContainer = props => {
   }, []);
 
   const outerClassNames = [getClassName('page-container__container')];
+  if (bottomPadding) {
+    outerClassNames.push([getClassName('page-container__container--bottom-padding')]);
+  }
   if (showDebug) {
     outerClassNames.push([getClassName('page-container__container--debug')]);
   }
@@ -55,11 +58,13 @@ const PageContainer = props => {
 PageContainer.propTypes = {
   layout: PropTypes.oneOf(Object.keys(LAYOUT_STYLES)),
   className: PropTypes.string,
+  bottomPadding: PropTypes.bool,
 };
 
 PageContainer.defaultProps = {
   layout: LAYOUT_STYLES.default,
   className: null,
+  bottomPadding: true,
 };
 
 export default PageContainer;
