@@ -10,6 +10,7 @@ const redirects = [
   { from: '/flickr', to: 'https://www.flickr.com/people/georgegillams' },
   { from: '/monzo', to: 'https://join.monzo.com/r/vjd3d74' },
   { from: '/github', to: 'https://github.com/georgegillams' },
+  { from: '/stackoverflow', to: 'https://stackoverflow.com/users/14463713/georgegillams' },
   { from: '/gurushots', to: 'https://gurushots.com/georgegillams/photos' },
   {
     from: '/linkedin',
