@@ -628,6 +628,15 @@ exports[`<SiteMap /> should render correctly - index 1`] = `
       <div>
         <a
           class="text-link text-link--text-link text-link--no-padding text-link--inline"
+          href="/stackoverflow"
+        >
+          /stackoverflow ⇒ https://stackoverflow.com/users/14463713/georgegillams
+        </a>
+        <br />
+      </div>
+      <div>
+        <a
+          class="text-link text-link--text-link text-link--no-padding text-link--inline"
           href="/gurushots"
         >
           /gurushots ⇒ https://gurushots.com/georgegillams/photos
@@ -1562,6 +1571,15 @@ exports[`<SiteMap /> should render correctly 1`] = `
       <div>
         <a
           class="text-link text-link--text-link text-link--no-padding text-link--inline"
+          href="/stackoverflow"
+        >
+          /stackoverflow ⇒ https://stackoverflow.com/users/14463713/georgegillams
+        </a>
+        <br />
+      </div>
+      <div>
+        <a
+          class="text-link text-link--text-link text-link--no-padding text-link--inline"
           href="/gurushots"
         >
           /gurushots ⇒ https://gurushots.com/georgegillams/photos
@@ -2417,6 +2435,15 @@ exports[`<SiteMap /> should render correctly with blogs 1`] = `
           href="/github"
         >
           /github ⇒ https://github.com/georgegillams
+        </a>
+        <br />
+      </div>
+      <div>
+        <a
+          class="text-link text-link--text-link text-link--no-padding text-link--inline"
+          href="/stackoverflow"
+        >
+          /stackoverflow ⇒ https://stackoverflow.com/users/14463713/georgegillams
         </a>
         <br />
       </div>
@@ -3328,6 +3355,15 @@ exports[`<SiteMap /> should render correctly with blogs and admin user 1`] = `
       <div>
         <a
           class="text-link text-link--text-link text-link--no-padding text-link--inline"
+          href="/stackoverflow"
+        >
+          /stackoverflow ⇒ https://stackoverflow.com/users/14463713/georgegillams
+        </a>
+        <br />
+      </div>
+      <div>
+        <a
+          class="text-link text-link--text-link text-link--no-padding text-link--inline"
           href="/gurushots"
         >
           /gurushots ⇒ https://gurushots.com/georgegillams/photos
@@ -4184,6 +4220,15 @@ exports[`<SiteMap /> should render correctly with ssrBlogs 1`] = `
           href="/github"
         >
           /github ⇒ https://github.com/georgegillams
+        </a>
+        <br />
+      </div>
+      <div>
+        <a
+          class="text-link text-link--text-link text-link--no-padding text-link--inline"
+          href="/stackoverflow"
+        >
+          /stackoverflow ⇒ https://stackoverflow.com/users/14463713/georgegillams
         </a>
         <br />
       </div>
