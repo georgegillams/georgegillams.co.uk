@@ -7,7 +7,10 @@
     "admin",
     "contact",
     "debug",
-    { "url": "greasemonkey/github_auto_merge", "delay": 10000 },
+    {
+      "url": "greasemonkey/github_auto_merge",
+      "delay": 10000
+    },
     "not-found-page",
     "photography",
     "sign-up",
@@ -15,9 +18,15 @@
     "support",
     "work",
     "work/backpack",
-    { "url": "work/degree", "delay": 7200 },
+    {
+      "url": "work/degree",
+      "delay": 7200
+    },
     "work/epicc",
     "work/side-projects"
   ],
-  "globallyHiddenSelectors": ["img", "[class^=image__outer__]"]
+  "globallyHiddenSelectors": [
+    "img",
+    "[class^=image__image__outer]"
+  ]
 }
