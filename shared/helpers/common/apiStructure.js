@@ -1,4 +1,4 @@
-import appConfig from 'helpers/appConfig';
+import appConfig from '../appConfig';
 import { apiStructureExtensions } from '../apiStructure_Extensions';
 
 const GET = 'GET';

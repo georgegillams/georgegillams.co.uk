@@ -1,4 +1,4 @@
-import apiStructure from 'helpers/common/apiStructure';
+import apiStructure from './apiStructure';
 import { apiStructureWithDescriptionsExtensions } from '../apiStructureWithDescriptions_Extensions';
 
 // Analytics
