@@ -8,7 +8,7 @@ const sensitiveApiRoutes = [];
 Object.keys(apiStructure).forEach(k => {
   const apiRoute = apiStructure[k];
   if (apiRoute.isSensitive) {
-    sensitiveApiRoutes.push(`api${apiRoute.path}`);
+    sensitiveApiRoutes.push(`api${apiRoute.path.split(':')[0]}`);
   }
 });
 
