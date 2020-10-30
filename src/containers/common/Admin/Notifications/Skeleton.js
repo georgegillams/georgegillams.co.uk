@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { SectionSkeleton, CompactCardSkeleton } from 'gg-components/Skeletons';
+import { SectionSkeleton, CardSkeleton } from 'gg-components/Skeletons';
 
 const Skeleton = props => {
   const { className } = props;
@@ -14,7 +14,10 @@ const Skeleton = props => {
   return (
     <div className={outerClassNames.join(' ')}>
       <SectionSkeleton />
-      <CompactCardSkeleton />
+      <CardSkeleton style={{ marginTop: '1.2rem' }} />
+      <CardSkeleton style={{ marginTop: '1.2rem' }} />
+      <CardSkeleton style={{ marginTop: '1.2rem' }} />
+      <CardSkeleton style={{ marginTop: '1.2rem' }} />
     </div>
   );
 };

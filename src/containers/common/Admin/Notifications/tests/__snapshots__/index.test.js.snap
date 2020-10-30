@@ -14,7 +14,35 @@ exports[`<AdminNotifications /> should render correctly - index 1`] = `
       />
     </div>
     <div
-      class="skeleton__outer skeleton__card--compact"
+      class="skeleton__outer skeleton__card"
+      style="margin-top: 1.2rem;"
+    >
+      <div
+        class="skeleton__shimmer"
+        style="margin-left: -0px;"
+      />
+    </div>
+    <div
+      class="skeleton__outer skeleton__card"
+      style="margin-top: 1.2rem;"
+    >
+      <div
+        class="skeleton__shimmer"
+        style="margin-left: -0px;"
+      />
+    </div>
+    <div
+      class="skeleton__outer skeleton__card"
+      style="margin-top: 1.2rem;"
+    >
+      <div
+        class="skeleton__shimmer"
+        style="margin-left: -0px;"
+      />
+    </div>
+    <div
+      class="skeleton__outer skeleton__card"
+      style="margin-top: 1.2rem;"
     >
       <div
         class="skeleton__shimmer"
@@ -162,7 +190,35 @@ exports[`<AdminNotifications /> should render correctly with initial state 1`] =
       />
     </div>
     <div
-      class="skeleton__outer skeleton__card--compact"
+      class="skeleton__outer skeleton__card"
+      style="margin-top: 1.2rem;"
+    >
+      <div
+        class="skeleton__shimmer"
+        style="margin-left: -0px;"
+      />
+    </div>
+    <div
+      class="skeleton__outer skeleton__card"
+      style="margin-top: 1.2rem;"
+    >
+      <div
+        class="skeleton__shimmer"
+        style="margin-left: -0px;"
+      />
+    </div>
+    <div
+      class="skeleton__outer skeleton__card"
+      style="margin-top: 1.2rem;"
+    >
+      <div
+        class="skeleton__shimmer"
+        style="margin-left: -0px;"
+      />
+    </div>
+    <div
+      class="skeleton__outer skeleton__card"
+      style="margin-top: 1.2rem;"
     >
       <div
         class="skeleton__shimmer"

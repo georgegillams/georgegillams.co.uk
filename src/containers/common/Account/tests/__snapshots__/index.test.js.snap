@@ -15,6 +15,7 @@ exports[`<Account /> should render correctly - index 1`] = `
     </div>
     <div
       class="skeleton__outer skeleton__button"
+      style="margin-top: 1.2rem;"
     >
       <div
         class="skeleton__shimmer"
@@ -239,6 +240,7 @@ exports[`<Account /> should render correctly with no user 1`] = `
     </div>
     <div
       class="skeleton__outer skeleton__button"
+      style="margin-top: 1.2rem;"
     >
       <div
         class="skeleton__shimmer"

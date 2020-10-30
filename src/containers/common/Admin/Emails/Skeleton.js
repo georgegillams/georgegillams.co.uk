@@ -14,7 +14,10 @@ const Skeleton = props => {
   return (
     <div className={outerClassNames.join(' ')}>
       <SectionSkeleton />
-      <CompactCardSkeleton />
+      <CompactCardSkeleton style={{ marginTop: '1.2rem' }} />
+      <CompactCardSkeleton style={{ marginTop: '1.2rem' }} />
+      <CompactCardSkeleton style={{ marginTop: '1.2rem' }} />
+      <CompactCardSkeleton style={{ marginTop: '1.2rem' }} />
     </div>
   );
 };
