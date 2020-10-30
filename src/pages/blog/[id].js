@@ -1,5 +1,6 @@
 import React from 'react';
 
+import CSSHack from 'components/common/CSSHack';
 import BlogRenderer from 'containers/BlogRenderer';
 import CommonLayout, { LAYOUT_STYLES } from 'components/common/CommonLayout';
 import apiStructure from 'helpers/common/apiStructure';
@@ -7,6 +8,7 @@ import apiStructure from 'helpers/common/apiStructure';
 const Page = props => {
   return (
     <CommonLayout layout={LAYOUT_STYLES.prose} bottomPadding={false}>
+      <CSSHack pageName="blog/[id]" />
       <BlogRenderer blogSubcategory="Blog" linkPrefix={'/blog'} {...props} />
     </CommonLayout>
   );

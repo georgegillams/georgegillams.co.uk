@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { Paragraph } from 'gg-components/Paragraph';
 import { Section } from 'gg-components/Section';
 import TextLink from 'components/common/TextLink';
 
@@ -9,7 +10,9 @@ const LoggedOutOnly = props => {
   if (user) {
     return (
       <Section name="You're logged in" {...rest}>
-        <TextLink href="/account">Go to your account.</TextLink>
+        <Paragraph>
+          <TextLink href="/account">Go to your account.</TextLink>
+        </Paragraph>
       </Section>
     );
   }

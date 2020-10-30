@@ -7,7 +7,7 @@ import CommonLayout from 'components/common/CommonLayout';
 const Page = props => {
   return (
     <CommonLayout>
-      <CSSHack pageName="404" />
+      <CSSHack pageName="account" />
       <Account {...props} />
     </CommonLayout>
   );

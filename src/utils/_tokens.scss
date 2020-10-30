@@ -8,6 +8,7 @@ $page-max-width-prose: 41.25rem;
 @mixin card-container {
   display: flex;
   width: 100%;
+  margin-top: $paragraph-margin-top;
   flex-wrap: wrap;
   justify-content: space-around;
 }

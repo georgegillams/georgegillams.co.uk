@@ -17,12 +17,16 @@ exports[`<LoggedOutOnly /> Should render correctly with user 1`] = `
     >
       You're logged in
     </h2>
-    <a
-      class="text-link text-link--text-link text-link--no-padding text-link--inline"
-      href="/account"
+    <span
+      class="paragraph"
     >
-      Go to your account.
-    </a>
+      <a
+        class="text-link text-link--text-link text-link--no-padding text-link--inline"
+        href="/account"
+      >
+        Go to your account.
+      </a>
+    </span>
   </div>
 </div>
 `;

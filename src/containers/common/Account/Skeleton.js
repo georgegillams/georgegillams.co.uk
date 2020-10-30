@@ -14,7 +14,7 @@ const Skeleton = props => {
   return (
     <div className={outerClassNames.join(' ')}>
       <SectionSkeleton />
-      <ButtonSkeleton />
+      <ButtonSkeleton style={{ marginTop: '1.2rem' }} />
       <ButtonSkeleton />
     </div>
   );

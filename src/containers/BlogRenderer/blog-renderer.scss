@@ -3,10 +3,11 @@
 .blog-renderer {
   &__body-skeleton {
     height: 50rem;
+    margin-top: $paragraph-margin-top;
   }
 
   &__date {
-    margin-top: 0.86rem;
+    margin-top: $paragraph-margin-top-first;
     margin-bottom: $spacing-base;
   }
 
