@@ -35,48 +35,56 @@ const SiteMap = props => {
     <PageTitle name="Site map" {...props}>
       <DebugObject debugTitle="Sitemap" debugObject={{ loadBlogs, authenticatorState, blogListState }} />
       <Subsection anchor={false} name="Blog 📝">
-        {!writingBlogList && (
-          <>
-            <TextLinkSkeleton />
-            <TextLinkSkeleton />
-            <TextLinkSkeleton />
-            <TextLinkSkeleton />
-            <TextLinkSkeleton />
-            <TextLinkSkeleton />
-          </>
-        )}
-        {writingBlogList && (
-          <Paragraph>
-            {writingBlogList.map(b => (
-              <>
-                <TextLink href={`/blog/${b.id}`}>{b.title}</TextLink>
-                <br />
-              </>
-            ))}
-          </Paragraph>
-        )}
+        <Paragraph>
+          <TextLink href={`/blog`}>Blog list</TextLink>
+          <br />
+          {!writingBlogList && (
+            <>
+              <TextLinkSkeleton />
+              <TextLinkSkeleton />
+              <TextLinkSkeleton />
+              <TextLinkSkeleton />
+              <TextLinkSkeleton />
+              <TextLinkSkeleton />
+            </>
+          )}
+          {writingBlogList && (
+            <>
+              {writingBlogList.map(b => (
+                <>
+                  <TextLink href={`/blog/${b.id}`}>{b.title}</TextLink>
+                  <br />
+                </>
+              ))}
+            </>
+          )}
+        </Paragraph>
       </Subsection>
       <Subsection anchor={false} name="Travel ✈️">
-        {!travelBlogList && (
-          <>
-            <TextLinkSkeleton />
-            <TextLinkSkeleton />
-            <TextLinkSkeleton />
-            <TextLinkSkeleton />
-            <TextLinkSkeleton />
-            <TextLinkSkeleton />
-          </>
-        )}
-        {travelBlogList && (
-          <Paragraph>
-            {travelBlogList.map(b => (
-              <>
-                <TextLink href={`/travel/${b.id}`}>{b.title}</TextLink>
-                <br />
-              </>
-            ))}
-          </Paragraph>
-        )}
+        <Paragraph>
+          <TextLink href={`/travel`}>Travel blog list</TextLink>
+          <br />
+          {!travelBlogList && (
+            <>
+              <TextLinkSkeleton />
+              <TextLinkSkeleton />
+              <TextLinkSkeleton />
+              <TextLinkSkeleton />
+              <TextLinkSkeleton />
+              <TextLinkSkeleton />
+            </>
+          )}
+          {travelBlogList && (
+            <>
+              {travelBlogList.map(b => (
+                <>
+                  <TextLink href={`/travel/${b.id}`}>{b.title}</TextLink>
+                  <br />
+                </>
+              ))}
+            </>
+          )}
+        </Paragraph>
       </Subsection>
       {admin && (
         <Subsection anchor={false} name="All blogs">
@@ -124,6 +132,8 @@ const SiteMap = props => {
           <br />
           <TextLink href="/support">Support</TextLink>
           <br />
+          <TextLink href="/debug">Debug tools</TextLink>
+          <br />
           <TextLink href="/status">Status</TextLink>
         </Paragraph>
       </Subsection>
@@ -145,51 +155,34 @@ const SiteMap = props => {
       <Subsection anchor={false} name="API">
         <Paragraph>
           <TextLink href="/api-docs">API docs</TextLink>
-          <br />
-          <TextLink hrefExternal href="/browser-scripts/disney_plus_play_pause">
-            /browser-scripts/disney_plus_play_pause
-          </TextLink>
-          <br />
-          <TextLink hrefExternal href="/browser-scripts/github_actual-time">
-            /browser-scripts/github_actual-time
-          </TextLink>
-          <br />
-          <TextLink hrefExternal href="/browser-scripts/github_auto_merge">
-            /browser-scripts/github_auto_merge
-          </TextLink>
-          <br />
-          <TextLink hrefExternal href="/browser-scripts/github_expand_rich_diffs">
-            /browser-scripts/github_expand_rich_diffs
-          </TextLink>
-          <br />
-          <TextLink hrefExternal href="https://github.com/georgegillams/browser-scripts/#browser-scripts">
-            More scripts on GitHub
-          </TextLink>
-          <br />
         </Paragraph>
       </Subsection>
       <Subsection anchor={false} name="Accounts 🔑">
         <Paragraph>
+          <TextLink href="/account">Account</TextLink>
+          <br />
           <TextLink href="/sign-up">Sign up</TextLink>
           <br />
           <TextLink href="/login">Log in</TextLink>
           <br />
-          <TextLink href="/account">Account</TextLink>
+          <TextLink href="/email-verification">Email verification</TextLink>
+          <br />
+          <TextLink href="/magic-login">Magic login</TextLink>
         </Paragraph>
       </Subsection>
       <Subsection anchor={false} name="Admin 👮‍♂️">
         <Paragraph>
           <TextLink href="/admin">Admin navigation</TextLink>
           <br />
-          <TextLink href="/blogs">Blogs</TextLink>
-          <br />
-          <TextLink href="/admin/users">Users</TextLink>
+          <TextLink href="/blog">Blogs</TextLink>
           <br />
           <TextLink href="/admin/analytics">Analytics</TextLink>
           <br />
           <TextLink href="/admin/emails">Emails</TextLink>
           <br />
           <TextLink href="/admin/notifications">Notifications</TextLink>
+          <br />
+          <TextLink href="/admin/users">Users</TextLink>
         </Paragraph>
       </Subsection>
       <Subsection anchor={false} name="Redirects 👉">
