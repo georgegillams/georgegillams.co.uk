@@ -8,27 +8,41 @@
       }
     ],
     "unit-blacklist": [
-      ["px"],
+      [
+        "px"
+      ],
       {
         "ignoreProperties": {
-          "px": ["box-shadow", "border"]
+          "px": [
+            "box-shadow",
+            "border"
+          ]
         }
       }
     ],
     "unit-disallowed-list": [
-      ["px"],
+      [
+        "px"
+      ],
       {
         "ignoreProperties": {
-          "px": ["box-shadow", "border"]
+          "px": [
+            "box-shadow",
+            "border"
+          ]
         }
       }
     ],
     "selector-pseudo-class-no-unknown": [
       true,
       {
-        "ignorePseudoClasses": ["global"]
+        "ignorePseudoClasses": [
+          "global"
+        ]
       }
     ],
-    "scale-unlimited/declaration-strict-value": "off"
+    "scale-unlimited/declaration-strict-value": "off",
+    "backpack/use-tokens": null,
+    "backpack/use-colors": null
   }
 }
