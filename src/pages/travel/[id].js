@@ -1,17 +1,32 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 import CSSHack from 'components/common/CSSHack';
 import BlogRenderer from 'containers/BlogRenderer';
 import CommonLayout, { LAYOUT_STYLES } from 'components/common/CommonLayout';
 import blogPage from '../blog/[id]';
+import FourOhFourPage from '../404';
 
 const Page = props => {
+  const { is404, ...rest } = props;
+  if (is404) {
+    return <FourOhFourPage {...rest} />;
+  }
+
   return (
     <CommonLayout layout={LAYOUT_STYLES.proseCenter} bottomPadding={false}>
       <CSSHack pageName="travel/[id]" />
-      <BlogRenderer blogSubcategory="Travel" linkPrefix={'/travel'} {...props} />
+      <BlogRenderer blogSubcategory="Travel" linkPrefix={'/travel'} {...rest} />
     </CommonLayout>
   );
+};
+
+Page.propTypes = {
+  is404: PropTypes.bool,
+};
+
+Page.defaultProps = {
+  is404: false,
 };
 
 Page.getInitialProps = blogPage.getInitialProps;
