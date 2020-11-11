@@ -18,7 +18,7 @@
     }
 
     @media (prefers-color-scheme: dark) {
-      border-top: solid white 0.15rem;
+      border-top: solid $primary-color 0.15rem;
       background-color: $background-color-elevated-colored-invert;
     }
   }
