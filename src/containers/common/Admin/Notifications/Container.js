@@ -15,6 +15,7 @@ import NotificationEntity from './NotificationEntity';
 import { cssModules } from 'gg-components/helpers/cssModules';
 import STYLES from './admin-notifications.scss';
 import useTabMadeVisible from 'utils/common/useTabMadeVisible';
+import ErrorDisplay from 'components/common/ErrorDisplay';
 import { CreateNotificationForm } from 'components/common/Forms';
 
 const getClassName = cssModules(STYLES);
@@ -79,14 +80,7 @@ const AdminNotifications = props => {
               <Paragraph>
                 <Error>Could not load analytics</Error>
               </Paragraph>
-              {loadError.errorMessage && (
-                <>
-                  <br />
-                  <Paragraph>
-                    <Error>{loadError.errorMessage}</Error>
-                  </Paragraph>
-                </>
-              )}
+              <ErrorDisplay message="Could not load notifications" error={loadError} />
             </>
           )}
           {showNotifications &&

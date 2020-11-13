@@ -386,15 +386,11 @@ exports[`<AdminUsers /> should render correctly with loadError 1`] = `
   <span
     class="paragraph"
   >
-    Could not load users
-  </span>
-  <br />
-  <span
-    class="error"
-  >
     <span
-      class="paragraph"
+      class="error"
     >
+      Could not load users
+      <br />
       Something went wrong
     </span>
   </span>

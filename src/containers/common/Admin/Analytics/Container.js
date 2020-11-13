@@ -10,7 +10,7 @@ import { setPostLoginRedirect } from 'utils/common/storageHelpers';
 import Skeleton from './Skeleton';
 import { withRouter } from 'next/router';
 import AnalyticFilter, { filterAnalytics, defaultFilters } from './AnalyticsFilter';
-import { Error } from 'gg-components/Error';
+import ErrorDisplay from 'components/common/ErrorDisplay';
 import AnalyticsEntity from './AnalyticEntity';
 
 import { cssModules } from 'gg-components/helpers/cssModules';
@@ -100,20 +100,7 @@ const AdminAnalytics = props => {
           </div>
           {mainControls}
           {showFilters && <AnalyticFilter filters={filters} onFiltersChanged={newValue => setFilters(newValue)} />}
-          {loadError && (
-            <>
-              <Paragraph>
-                <Error>Could not load analytics</Error>
-              </Paragraph>
-              {loadError.errorMessage && (
-                <>
-                  <Paragraph>
-                    <Error>{loadError.errorMessage}</Error>
-                  </Paragraph>
-                </>
-              )}
-            </>
-          )}
+          <ErrorDisplay message="Could not load analytics" error={loadError} />
           {analytics && (
             <Paragraph className={getClassName('admin-analytics__count')}>
               Showing {filteredAnalyticsCount} of {analyticsCount} analytics

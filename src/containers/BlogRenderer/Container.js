@@ -12,7 +12,7 @@ import { CreativeCommons } from 'components/CreativeCommons';
 import STYLES from './blog-renderer.scss';
 import PageTitle from 'components/common/PageTitle';
 import Tag from 'gg-components/Tag/Tag';
-import Paragraph from 'gg-components/Paragraph/Paragraph';
+import ErrorDisplay from 'components/common/ErrorDisplay';
 import LoadableBlogForm from './LoadableBlogForm';
 import Section from 'gg-components/Section/Section';
 import Head from 'next/head';
@@ -92,12 +92,7 @@ const BlogRenderer = props => {
           className,
         }}
       />
-      {blogRenderState.blogLoadError && (
-        <>
-          <Paragraph>Something has gone wrong while loading the blog.</Paragraph>
-          <Paragraph>${blogRenderState.blogLoadError.errorMessage}</Paragraph>
-        </>
-      )}
+      <ErrorDisplay message="This blog couldn't be loaded" error={blogRenderState.blogLoadError}></ErrorDisplay>
       <LoadingCover loadingSkeleton={BlogRendererSkeleton} loading={!blog} error={!!blogRenderState.blogLoadError}>
         <>
           {blog && (
@@ -123,11 +118,7 @@ const BlogRenderer = props => {
           )}
           {authenticatorState.user && authenticatorState.user.admin && (
             <Section name="EDIT BLOG">
-              {blogRenderState.blogUpdateError && (
-                <Paragraph style={{ width: '100%', marginBottom: '1rem' }}>
-                  {blogRenderState.blogUpdateError.errorMessage}
-                </Paragraph>
-              )}
+              <ErrorDisplay message="This blog couldn't be updated" error={blogRenderState.blogUpdateError} />
               <LoadableBlogForm
                 blog={newBlog || blog || {}}
                 onDataChanged={setNewBlog}

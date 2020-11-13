@@ -5,6 +5,7 @@ import { DebugObject } from 'components/common/DebugObject';
 import { Paragraph } from 'gg-components/Paragraph';
 
 import TextLink from 'components/common/TextLink';
+import ErrorDisplay from 'components/common/ErrorDisplay';
 import CookiesRequired from 'containers/common/CookiesRequired';
 import { withRouter } from 'next/router';
 import { REDIRECT_REGEX } from 'helpers/regexConstants';
@@ -75,19 +76,9 @@ const MagicLogin = props => {
             <TextLink href={redirectLocation}>Not been redirected? Click here</TextLink>
           </Paragraph>
         )}
-        {logInError && (
-          <>
-            <Paragraph>Something went wrong logging you in</Paragraph>
-            {logInError.errorMessage && (
-              <>
-                <br />
-                <Paragraph>{logInError.errorMessage}</Paragraph>
-              </>
-            )}
-            <br />
-            <TextLink href={'/login'}>Try logging in again</TextLink>
-          </>
-        )}
+        <ErrorDisplay message="Something went wrong logging you in" error={logInError}>
+          <TextLink href={'/login'}>Try logging in again</TextLink>
+        </ErrorDisplay>
       </PageTitle>
       <DebugObject
         debugTitle="MagicLogin"

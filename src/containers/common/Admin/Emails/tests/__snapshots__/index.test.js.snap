@@ -341,14 +341,11 @@ exports[`<AdminEmails /> should render correctly with loadError 1`] = `
   <span
     class="paragraph"
   >
-    Could not load emails
-  </span>
-  <span
-    class="paragraph"
-  >
     <span
       class="error"
     >
+      Could not load emails
+      <br />
       Something went wrong
     </span>
   </span>

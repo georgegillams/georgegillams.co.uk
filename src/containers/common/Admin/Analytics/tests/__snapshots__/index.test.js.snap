@@ -236,14 +236,7 @@ exports[`<AdminAnalytics /> should render correctly with loadError 1`] = `
       class="error"
     >
       Could not load analytics
-    </span>
-  </span>
-  <span
-    class="paragraph"
-  >
-    <span
-      class="error"
-    >
+      <br />
       Something went wrong
     </span>
   </span>

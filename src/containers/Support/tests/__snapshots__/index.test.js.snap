@@ -151,9 +151,14 @@ exports[`<Support /> should render correctly with admin and createLinkError 1`] 
     </h2>
     <span
       class="paragraph"
-      style="width: 100%; margin-bottom: 1rem;"
     >
-      Error creating link
+      <span
+        class="error"
+      >
+        Failed to add link
+        <br />
+        Error creating link
+      </span>
     </span>
     <div>
       SUPPORT_FORM
@@ -201,9 +206,15 @@ exports[`<Support /> should render correctly with admin and deleteLinkError 1`] 
       ADD LINK
     </h2>
     <span
-      class="paragraph support__error"
+      class="paragraph"
     >
-      Error deleting link
+      <span
+        class="error"
+      >
+        Failed to delete link
+        <br />
+        Error deleting link
+      </span>
     </span>
     <div>
       SUPPORT_FORM
@@ -370,11 +381,15 @@ exports[`<Support /> should render correctly with loadError 1`] = `
     </button>
   </div>
   <span
-    class="paragraph support__error"
+    class="paragraph"
   >
-    Something has gone wrong while loading the support session.
-    <br />
-    some error message
+    <span
+      class="error"
+    >
+      The support session failed to load
+      <br />
+      some error message
+    </span>
   </span>
   <div
     class="skeleton__outer skeleton__card support__body-skeleton"

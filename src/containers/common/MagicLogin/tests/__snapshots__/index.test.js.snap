@@ -41,21 +41,21 @@ exports[`<MagicLogin /> should render correctly with logInError 1`] = `
     <span
       class="paragraph"
     >
-      Something went wrong logging you in
+      <span
+        class="error"
+      >
+        Something went wrong logging you in
+        <br />
+        Invalid session
+        <br />
+        <a
+          class="text-link text-link--text-link text-link--no-padding text-link--inline"
+          href="/login"
+        >
+          Try logging in again
+        </a>
+      </span>
     </span>
-    <br />
-    <span
-      class="paragraph"
-    >
-      Invalid session
-    </span>
-    <br />
-    <a
-      class="text-link text-link--text-link text-link--no-padding text-link--inline"
-      href="/login"
-    >
-      Try logging in again
-    </a>
   </div>
 </div>
 `;

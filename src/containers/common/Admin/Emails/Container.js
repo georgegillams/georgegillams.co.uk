@@ -10,7 +10,7 @@ import { SplitDetailView } from 'components/common/SplitDetailView';
 import { setPostLoginRedirect } from 'utils/common/storageHelpers';
 import Skeleton from './Skeleton';
 import { withRouter } from 'next/router';
-import { Error } from 'gg-components/Error';
+import ErrorDisplay from 'components/common/ErrorDisplay';
 
 import AdminEmailAPIEntity from './AdminEmailAPIEntity';
 
@@ -135,16 +135,7 @@ const AdminEmails = props => {
             <PageTitle link={{ to: '/admin', text: 'Admin' }} name="Admin emails"></PageTitle>
           </div>
           {mainControls}
-          {loadError && (
-            <>
-              <Paragraph>Could not load emails</Paragraph>
-              {loadError.errorMessage && (
-                <Paragraph>
-                  <Error>{loadError.errorMessage}</Error>
-                </Paragraph>
-              )}
-            </>
-          )}
+          <ErrorDisplay message="Could not load emails" error={loadError} />
           {emails && (
             <Paragraph className={getClassName('admin-analytics__count')}>
               Showing {emails.length} of {emails.length} emails

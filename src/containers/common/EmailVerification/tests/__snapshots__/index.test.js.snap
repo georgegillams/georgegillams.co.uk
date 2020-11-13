@@ -60,13 +60,13 @@ exports[`<EmailVerification /> should render correctly with verifyError 1`] = `
     <span
       class="paragraph"
     >
-      Something went wrong whilst confirming your email
-    </span>
-    <br />
-    <span
-      class="paragraph"
-    >
-      Invalid verification link
+      <span
+        class="error"
+      >
+        Something went wrong whilst confirming your email
+        <br />
+        Invalid verification link
+      </span>
     </span>
   </div>
 </div>
