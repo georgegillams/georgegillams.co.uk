@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import PageTitle from 'components/common/PageTitle';
 import { DebugObject } from 'components/common/DebugObject';
 import { Paragraph } from 'gg-components/Paragraph';
+import ErrorDisplay from 'components/common/ErrorDisplay';
 
 import { withRouter } from 'next/router';
 
@@ -48,17 +49,7 @@ const EmailVerification = props => {
             <Paragraph>Thank you for confirming your email address</Paragraph>
           </>
         )}
-        {verifyError && (
-          <>
-            <Paragraph>Something went wrong whilst confirming your email</Paragraph>
-            {verifyError.errorMessage && (
-              <>
-                <br />
-                <Paragraph>{verifyError.errorMessage}</Paragraph>
-              </>
-            )}
-          </>
-        )}
+        <ErrorDisplay message="Something went wrong whilst confirming your email" error={verifyError}></ErrorDisplay>
       </PageTitle>
       <DebugObject
         debugTitle="EmailVerification"

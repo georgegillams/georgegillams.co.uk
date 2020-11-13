@@ -358,13 +358,13 @@ exports[`<BlogRenderer /> should render correctly with blog load error 1`] = `
   <span
     class="paragraph"
   >
-    Something has gone wrong while loading the blog.
-  </span>
-  <span
-    class="paragraph"
-  >
-    $
-    Some error
+    <span
+      class="error"
+    >
+      This blog couldn't be loaded
+      <br />
+      Some error
+    </span>
   </span>
   <div
     class="skeleton__outer skeleton__section"

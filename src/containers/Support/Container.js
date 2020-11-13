@@ -13,6 +13,7 @@ import LoadableSupportForm from './LoadableSupportForm';
 import Section from 'gg-components/Section/Section';
 import SupportLink from './SupportLink';
 import Button from 'components/common/Button';
+import ErrorDisplay from 'components/common/ErrorDisplay';
 
 const getClassName = cssModules(STYLES);
 
@@ -60,17 +61,7 @@ const Support = props => {
               Reload
             </Button>
           </div>
-          {supportState.loadLinksError && (
-            <>
-              {/* <Error> */}
-              <Paragraph className={getClassName('support__error')}>
-                Something has gone wrong while loading the support session.
-                <br />
-                {supportState.loadLinksError.errorMessage}
-              </Paragraph>
-              {/* </Error> */}
-            </>
-          )}
+          <ErrorDisplay message="The support session failed to load" error={supportState.loadLinksError} />
           <LoadingCover loadingSkeleton={SupportSkeleton} loading={!supportLinks}>
             <>
               {noSupport && (
@@ -84,16 +75,8 @@ const Support = props => {
           </LoadingCover>
           {admin && (
             <Section name="ADD LINK">
-              {supportState.createLinkError && (
-                <Paragraph style={{ width: '100%', marginBottom: '1rem' }}>
-                  {supportState.createLinkError.errorMessage}
-                </Paragraph>
-              )}
-              {supportState.deleteLinkError && (
-                <Paragraph className={getClassName('support__error')}>
-                  {supportState.deleteLinkError.errorMessage}
-                </Paragraph>
-              )}
+              <ErrorDisplay message="Failed to add link" error={supportState.createLinkError} />
+              <ErrorDisplay message="Failed to delete link" error={supportState.deleteLinkError} />
               <LoadableSupportForm
                 link={newLink || {}}
                 onDataChanged={setNewLink}

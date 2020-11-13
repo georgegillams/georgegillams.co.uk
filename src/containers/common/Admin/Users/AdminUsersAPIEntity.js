@@ -5,7 +5,7 @@ import { Paragraph } from 'gg-components/Paragraph';
 import { Subsection } from 'gg-components/Subsection';
 import { SplitDetailItem } from 'components/common/SplitDetailView';
 import { UserEditForm } from 'components/common/Forms';
-import { Error } from 'gg-components/Error';
+import ErrorDisplay from 'components/common/ErrorDisplay';
 import STYLES from './admin-users.scss';
 import { cssModules } from 'gg-components/helpers/cssModules';
 
@@ -69,12 +69,8 @@ const AdminUsersAPIEntity = props => {
           disabled={adminUserState.updating}
         />
       )}
-      {!compact && adminUserState && adminUserState.updateError && (
-        <>
-          <Error>
-            <Paragraph>{adminUserState.updateError.errorMessage || 'Something went wrong'}</Paragraph>
-          </Error>
-        </>
+      {!compact && adminUserState && (
+        <ErrorDisplay message="Could not update user" error={adminUserState.updateError} />
       )}
       {!compact && children && children}
     </Subsection>
