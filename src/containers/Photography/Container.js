@@ -143,8 +143,8 @@ const Photography = () => {
             }}
             aspectX={3000}
             aspectY={2000}
-            lightSrc="https://i.imgur.com/gIccH4E.jpg"
-            darkSrc="https://i.imgur.com/gIccH4E.jpg"
+            lightSrc="https://i.imgur.com/SSGGfbL.jpg"
+            darkSrc="https://i.imgur.com/SSGGfbL.jpg"
           />
         </Subsection>
         <Subsection
