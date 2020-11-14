@@ -355,15 +355,6 @@ exports[`<AdminNotifications /> should render correctly with loadError 1`] = `
     <span
       class="error"
     >
-      Could not load analytics
-    </span>
-  </span>
-  <span
-    class="paragraph"
-  >
-    <span
-      class="error"
-    >
       Could not load notifications
       <br />
       Something went wrong
