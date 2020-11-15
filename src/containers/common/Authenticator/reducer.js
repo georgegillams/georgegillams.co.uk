@@ -1,7 +1,7 @@
 import produce from 'immer';
 import cookie from 'react-cookies';
 
-import { SESSION_COOKIE_KEY } from 'helpers/storageConstants';
+import { SESSION_COOKIE_KEY, COOKIE_EXPIRY_TIME } from 'helpers/storageConstants';
 
 import { setUser, loadAuth } from './actions';
 
@@ -19,7 +19,8 @@ const reducer = (state = initialState, { type, payload }) =>
         if (payload && payload.session) {
           cookie.save(SESSION_COOKIE_KEY, payload.session, {
             path: '/',
-            expires: new Date(Date.now() + 24 * 60 * 60 * 100 * 1000),
+            secure: true,
+            expires: new Date(Date.now() + COOKIE_EXPIRY_TIME),
           });
         }
         break;

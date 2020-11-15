@@ -36,7 +36,7 @@ export default function authentication(req) {
       .then(() => {
         // `find` uses `safeCompare` so it is safe to use for authentication
         const { existingValue: userSession } = find(sessions, sessionKey, 'sessionKey');
-        if (userSession) {
+        if (userSession && userSession.expiry && userSession.expiry >= Date.now()) {
           // `find` uses `safeCompare` so it is safe to use for authentication
           const { existingValue: userProfile } = find(users, userSession.userId);
           if (userProfile) {

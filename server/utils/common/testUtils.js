@@ -30,17 +30,26 @@ const createUsersWithSessions = () => {
   const session1 = {
     sessionKey: 'adminSessionKey1',
     userId: 'adminUser1',
+    expiry: Date.now() + 10000,
   };
 
   const session2 = {
     sessionKey: 'nonAdminSessionKey1',
     userId: 'nonAdminUser1',
+    expiry: Date.now() + 10000,
+  };
+
+  const session3 = {
+    sessionKey: 'expiredSessionKey1',
+    userId: 'nonAdminUser1',
+    expiry: Date.now() - 10000,
   };
 
   return dbCreate({ redisKey: 'users' }, { body: user1 })
     .then(() => dbCreate({ redisKey: 'users' }, { body: user2 }))
     .then(() => dbCreate({ redisKey: 'sessions' }, { body: session1 }))
-    .then(() => dbCreate({ redisKey: 'sessions' }, { body: session2 }));
+    .then(() => dbCreate({ redisKey: 'sessions' }, { body: session2 }))
+    .then(() => dbCreate({ redisKey: 'sessions' }, { body: session3 }));
 };
 
 export { clearDatabaseCollection, createUsersWithSessions };
