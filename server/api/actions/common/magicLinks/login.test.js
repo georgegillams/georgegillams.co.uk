@@ -74,7 +74,7 @@ test('successful login - sets code expiry to 0 and creates session', () => {
     })
     .then(() => dbLoad({ redisKey: 'sessions' }))
     .then(sessions => {
-      expect(sessions.length).toBe(3);
+      expect(sessions.length).toBe(4);
       expect(sessions[2].userId).toBe('nonAdminUser1');
       return true;
     });
