@@ -77,7 +77,7 @@ describe('<BlogRenderer />', () => {
           blogId={testBlog.id}
           blogRenderState={{
             ...initialState,
-            blogLoadError: { error: 'not_found', errorMessage: 'Some error' },
+            loadBlogError: { error: 'not_found', errorMessage: 'Some error' },
           }}
           authenticatorState={{
             ...initialAuthenticatorState,

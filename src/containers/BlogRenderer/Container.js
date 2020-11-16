@@ -92,8 +92,8 @@ const BlogRenderer = props => {
           className,
         }}
       />
-      <ErrorDisplay message="This blog couldn't be loaded" error={blogRenderState.blogLoadError}></ErrorDisplay>
-      <LoadingCover loadingSkeleton={BlogRendererSkeleton} loading={!blog} error={!!blogRenderState.blogLoadError}>
+      <ErrorDisplay message="This blog couldn't be loaded" error={blogRenderState.loadBlogError}></ErrorDisplay>
+      <LoadingCover loadingSkeleton={BlogRendererSkeleton} loading={!blog} error={!!blogRenderState.loadBlogError}>
         <>
           {blog && (
             <PageTitle name={blog.title} link={{ to: linkPrefix, text: blogSubcategory }}>
@@ -139,7 +139,7 @@ BlogRenderer.propTypes = {
   ssrBlog: PropTypes.object,
   blogRenderState: PropTypes.shape({
     blogs: PropTypes.object,
-    blogLoadError: PropTypes.object,
+    loadBlogError: PropTypes.object,
     updatingBlog: PropTypes.bool,
     blogUpdateError: PropTypes.object,
   }),
