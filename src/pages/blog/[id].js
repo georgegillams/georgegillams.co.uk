@@ -6,6 +6,7 @@ import BlogRenderer from 'containers/BlogRenderer';
 import CommonLayout, { LAYOUT_STYLES } from 'components/common/CommonLayout';
 import apiStructure from 'helpers/common/apiStructure';
 import FourOhFourPage from '../404';
+import { SESSION_COOKIE_KEY } from 'helpers/storageConstants';
 
 const Page = props => {
   const { is404, ...rest } = props;
@@ -41,7 +42,16 @@ Page.getInitialProps = async context => {
 
   // Load blog from API and pass to props.
   const requestUrl = apiStructure.loadBlog.fullPath.split(':id').join(blogId);
-  const ssrBlog = await fetch(requestUrl).then(data => data.json());
+
+  let sessionCookie = '';
+  if (isServer && context && context.req && context.req.cookies && context.req.cookies[SESSION_COOKIE_KEY]) {
+    sessionCookie = context.req.cookies[SESSION_COOKIE_KEY];
+  }
+
+  const ssrBlog = await fetch(requestUrl, {
+    credentials: 'include',
+    headers: { Cookie: `${SESSION_COOKIE_KEY}=${sessionCookie}` },
+  }).then(data => data.json());
   if (!ssrBlog.error) {
     return { ssrBlog, blogId }; // will be passed to the page component as props
   }
