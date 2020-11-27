@@ -1,13 +1,13 @@
 /* eslint-disable */
-import { dbCreate } from 'utils/common/database';
+import { dbCreate } from 'server-utils/common/database';
 
 import loadPayment from './private/loadPayment';
 import stripeInstance from './private/stripe';
 import formatStripeError from './private/formatStripeError';
 import stripePaymentsAllowedAttributes from './private/stripePaymentsAllowedAttributes';
 
-import lockPromise from 'utils/common/lock';
-import reqSecure from 'utils/common/reqSecure';
+import lockPromise from 'server-utils/common/lock';
+import reqSecure from 'server-utils/common/reqSecure';
 
 const createNewPaymentIntent = payment =>
   Promise.resolve().then(() => {

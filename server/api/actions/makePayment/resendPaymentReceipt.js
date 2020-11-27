@@ -1,13 +1,13 @@
 /* eslint-disable */
-import { dbLoad } from 'utils/common/database';
+import { dbLoad } from 'server-utils/common/database';
 
 import sendPaymentReceiptEmail from './private/sendPaymentReceiptEmail';
 import stripePaymentsAllowedAttributes from './private/stripePaymentsAllowedAttributes';
 
-import authentication from 'utils/common/authentication';
-import reqSecure from 'utils/common/reqSecure';
-import { find } from 'utils/common/find';
-import { UNAUTHORISED_READ } from 'utils/common/errorConstants';
+import authentication from 'server-utils/common/authentication';
+import reqSecure from 'server-utils/common/reqSecure';
+import { find } from 'server-utils/common/find';
+import { UNAUTHORISED_READ } from 'server-utils/common/errorConstants';
 
 export default function resendPaymentReceipt(req) {
   // TODO rewrite to use payment email

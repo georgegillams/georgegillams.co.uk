@@ -12,7 +12,7 @@ import { Paragraph } from 'gg-components/Paragraph';
 import Modal from 'react-modal';
 import { cssModules } from 'gg-components/helpers/cssModules';
 import STYLES from './consent.scss';
-import { getPrivacyPreferences, setPrivacyPreferences } from 'utils/common/storageHelpers';
+import { getPrivacyPreferences, setPrivacyPreferences } from 'client-utils/common/storageHelpers';
 import TextLink from 'components/common/TextLink';
 import Banner from './Banner';
 import { Section } from 'gg-components/Section';

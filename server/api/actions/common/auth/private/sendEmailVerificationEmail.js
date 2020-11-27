@@ -8,9 +8,9 @@ import {
   sendEmail,
   EMAIL_OUTER_END,
   FONT_SIZE_SM,
-} from 'utils/emails';
-import lockPromise from 'utils/common/lock';
-import { dbCreate } from 'utils/common/database';
+} from 'server-utils/emails';
+import lockPromise from 'server-utils/common/lock';
+import { dbCreate } from 'server-utils/common/database';
 
 export default function sendEmailVerificationEmail(user) {
   const now = new Date();

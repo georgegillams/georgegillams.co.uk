@@ -7,8 +7,8 @@ import { createStructuredSelector } from 'reselect';
 import { load } from 'containers/common/Admin/Notifications/actions';
 import { selectState } from 'containers/common/Admin/Notifications/selectors';
 import Notifications from './Container';
-import injectSaga from 'utils/common/redux/inject-saga';
-import injectReducer from 'utils/common/redux/inject-reducer';
+import injectSaga from 'client-utils/common/redux/inject-saga';
+import injectReducer from 'client-utils/common/redux/inject-reducer';
 
 import { KEY } from 'containers/common/Admin/Notifications/constants';
 import saga from 'containers/common/Admin/Notifications/saga';

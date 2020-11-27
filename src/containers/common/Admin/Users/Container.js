@@ -9,7 +9,7 @@ import { Paragraph } from 'gg-components/Paragraph';
 import { SplitDetailItem } from 'components/common/SplitDetailView';
 import { AdminOnly } from 'components/common/Walls';
 import { SplitDetailView } from 'components/common/SplitDetailView';
-import { setPostLoginRedirect } from 'utils/common/storageHelpers';
+import { setPostLoginRedirect } from 'client-utils/common/storageHelpers';
 import Skeleton from './Skeleton';
 import { withRouter } from 'next/router';
 import UserFilter, { filterUsers, defaultFilters } from './UserFilter';
@@ -20,7 +20,7 @@ import AdminUsersAPIEntity from './AdminUsersAPIEntity';
 
 import { cssModules } from 'gg-components/helpers/cssModules';
 import STYLES from './admin-users.scss';
-import useTabMadeVisible from 'utils/common/useTabMadeVisible';
+import useTabMadeVisible from 'client-utils/common/useTabMadeVisible';
 
 const getClassName = cssModules(STYLES);
 

@@ -1,9 +1,9 @@
-import { dbLoad } from 'utils/common/database';
-import authentication from 'utils/common/authentication';
-import { UNAUTHORISED_READ } from 'utils/common/errorConstants';
+import { dbLoad } from 'server-utils/common/database';
+import authentication from 'server-utils/common/authentication';
+import { UNAUTHORISED_READ } from 'server-utils/common/errorConstants';
 import { RESOURCE_NOT_FOUND } from '../../../../utils/common/errorConstants';
-import { sendEmail } from 'utils/emails';
-import { find } from 'utils/common/find';
+import { sendEmail } from 'server-utils/emails';
+import { find } from 'server-utils/common/find';
 
 export default function resend(req) {
   return authentication(req)

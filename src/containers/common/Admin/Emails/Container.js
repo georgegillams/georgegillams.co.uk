@@ -7,7 +7,7 @@ import { Button } from 'gg-components/Button';
 import { Paragraph } from 'gg-components/Paragraph';
 import { AdminOnly } from 'components/common/Walls';
 import { SplitDetailView } from 'components/common/SplitDetailView';
-import { setPostLoginRedirect } from 'utils/common/storageHelpers';
+import { setPostLoginRedirect } from 'client-utils/common/storageHelpers';
 import Skeleton from './Skeleton';
 import { withRouter } from 'next/router';
 import ErrorDisplay from 'components/common/ErrorDisplay';
@@ -16,7 +16,7 @@ import AdminEmailAPIEntity from './AdminEmailAPIEntity';
 
 import { cssModules } from 'gg-components/helpers/cssModules';
 import STYLES from './admin-emails.scss';
-import useTabMadeVisible from 'utils/common/useTabMadeVisible';
+import useTabMadeVisible from 'client-utils/common/useTabMadeVisible';
 
 const getClassName = cssModules(STYLES);
 

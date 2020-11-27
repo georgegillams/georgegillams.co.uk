@@ -3,12 +3,10 @@ const withImages = require('next-images');
 const bundleAnalyzer = require('@next/bundle-analyzer');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
-const configureWebpack = (config, { buildId, dev, isServer, defaultLoaders, webpack }) => {
+const configureWebpack = (config, { dev }) => {
   const mCEPLoader = {
     loader: MiniCssExtractPlugin.loader,
-    options: {
-      hmr: !!dev, // webpack 4 only
-    },
+    options: {},
   };
 
   const cssLoader = {

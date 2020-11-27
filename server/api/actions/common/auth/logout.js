@@ -1,12 +1,12 @@
 import authAllowedAttributes from './private/authAllowedAttributes';
 import { SESSION_COOKIE_KEY } from 'helpers/storageConstants';
 
-import { dbLoad, dbUpdate } from 'utils/common/database';
-import { INVALID_SESSION } from 'utils/common/errorConstants';
-import lockPromise from 'utils/common/lock';
-import { find } from 'utils/common/find';
-import setContentLastUpdatedTimestamp from 'utils/common/setContentLastUpdatedTimestamp';
-import reqSecure from 'utils/common/reqSecure';
+import { dbLoad, dbUpdate } from 'server-utils/common/database';
+import { INVALID_SESSION } from 'server-utils/common/errorConstants';
+import lockPromise from 'server-utils/common/lock';
+import { find } from 'server-utils/common/find';
+import setContentLastUpdatedTimestamp from 'server-utils/common/setContentLastUpdatedTimestamp';
+import reqSecure from 'server-utils/common/reqSecure';
 
 export default function logout(req) {
   reqSecure(req, authAllowedAttributes);

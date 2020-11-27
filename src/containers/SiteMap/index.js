@@ -9,8 +9,8 @@ import { selectState as selectAuthenticatorState } from 'containers/common/Authe
 import { selectState as selectBlogListState } from 'containers/BlogList/selectors';
 import SiteMap from './Container';
 
-import injectSaga from 'utils/common/redux/inject-saga';
-import injectReducer from 'utils/common/redux/inject-reducer';
+import injectSaga from 'client-utils/common/redux/inject-saga';
+import injectReducer from 'client-utils/common/redux/inject-reducer';
 
 import { KEY as BLOG_LIST_KEY } from 'containers/BlogList/constants';
 import blogListSaga from 'containers/BlogList/saga';

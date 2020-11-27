@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import { FeatureCard as GGFeatureCard, FEATURE_CARD_LAYOUTS } from 'gg-components/FeatureCard';
 import HelperFunctions from 'helpers/common/HelperFunctions';
 import Router, { useRouter } from 'next/router';
-import nextifyHref from 'utils/nextifyHref';
+import nextifyHref from 'client-utils/nextifyHref';
 
 const FeatureCard = props => {
   const { href, onClick, scroll, ...rest } = props;

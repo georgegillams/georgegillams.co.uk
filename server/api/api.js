@@ -1,8 +1,8 @@
 import apiStructure from './actions/common/apiStructureWithActions';
 
-import { CategorisedError, InternalServerError, NotImplementedError } from 'utils/common/errors';
-import { mapPathToAction } from 'utils/common/mapPathToAction.js';
-import logger from 'utils/common/logger';
+import { CategorisedError, InternalServerError, NotImplementedError } from 'server-utils/common/errors';
+import { mapPathToAction } from 'server-utils/common/mapPathToAction.js';
+import logger from 'server-utils/common/logger';
 
 const appFunc = (req, res) => {
   const splitUrlPath = req.url.split('?')[0].split('/').slice(1);

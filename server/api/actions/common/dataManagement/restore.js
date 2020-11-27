@@ -1,10 +1,10 @@
-import { InvalidInputError } from 'utils/common/errors';
+import { InvalidInputError } from 'server-utils/common/errors';
 
 import performRestoration from './private/performRestoration';
 
-import authentication from 'utils/common/authentication';
+import authentication from 'server-utils/common/authentication';
 import appConfig from 'helpers/appConfig';
-import { UNAUTHORISED_WRITE } from 'utils/common/errorConstants';
+import { UNAUTHORISED_WRITE } from 'server-utils/common/errorConstants';
 
 export default function create(req) {
   return authentication(req).then(user => {

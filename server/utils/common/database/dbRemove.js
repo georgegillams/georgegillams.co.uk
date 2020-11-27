@@ -1,8 +1,8 @@
 import loadAllValues from './private/loadAllValues';
 import dbUpdate from './dbUpdate';
 
-import { RESOURCE_NOT_FOUND } from 'utils/common/errorConstants';
-import { find } from 'utils/common/find';
+import { RESOURCE_NOT_FOUND } from 'server-utils/common/errorConstants';
+import { find } from 'server-utils/common/find';
 
 export default function dbRemove(settings, req) {
   return loadAllValues(settings.redisKey).then(data => {

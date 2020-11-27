@@ -1,11 +1,11 @@
 import { takeLatest, put, call, select } from 'redux-saga/effects';
 
-import request from 'utils/common/request';
+import request from 'client-utils/common/request';
 import apiStructure from 'helpers/common/apiStructure';
 import { selectState } from './selectors';
 
 import { login } from './actions';
-import { getPostLoginRedirectAndRemove } from 'utils/common/storageHelpers';
+import { getPostLoginRedirectAndRemove } from 'client-utils/common/storageHelpers';
 
 export function* doLogin() {
   const currentState = yield select(selectState());

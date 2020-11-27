@@ -8,8 +8,8 @@ import { sendAnalytic } from './actions';
 import { selectState as selectConsentState } from '../Consent/selectors';
 import { selectState } from './selectors';
 import Analytics from './Container';
-import injectSaga from 'utils/common/redux/inject-saga';
-import injectReducer from 'utils/common/redux/inject-reducer';
+import injectSaga from 'client-utils/common/redux/inject-saga';
+import injectReducer from 'client-utils/common/redux/inject-reducer';
 
 import { KEY } from './constants';
 import saga from './saga';

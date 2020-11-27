@@ -3,7 +3,7 @@ import { render } from '@testing-library/react';
 import { Provider } from 'react-redux';
 import { initialState } from '../reducer';
 
-import configureStore from 'utils/common/redux/configure-store';
+import configureStore from 'client-utils/common/redux/configure-store';
 
 import AuthenticatorIndex from '../index';
 import Authenticator from '../Container';

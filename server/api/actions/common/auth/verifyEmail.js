@@ -1,7 +1,7 @@
-import { dbLoad, dbUpdate } from 'utils/common/database';
-import lockPromise from 'utils/common/lock';
-import { find } from 'utils/common/find';
-import { AuthError } from 'utils/common/errors';
+import { dbLoad, dbUpdate } from 'server-utils/common/database';
+import lockPromise from 'server-utils/common/lock';
+import { find } from 'server-utils/common/find';
+import { AuthError } from 'server-utils/common/errors';
 
 export default function verifyEmail(req) {
   return lockPromise('emailVerificationCodes', () => {

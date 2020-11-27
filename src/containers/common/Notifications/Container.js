@@ -4,7 +4,7 @@ import DebugObject from 'components/common/DebugObject';
 import Notification from 'gg-components/Notification/Notification';
 import STYLES from './notifications.scss';
 import { cssModules } from 'gg-components/helpers/cssModules';
-import useTabMadeVisible from 'utils/common/useTabMadeVisible';
+import useTabMadeVisible from 'client-utils/common/useTabMadeVisible';
 
 const getClassName = cssModules(STYLES);
 

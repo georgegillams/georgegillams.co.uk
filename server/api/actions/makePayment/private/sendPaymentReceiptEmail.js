@@ -1,4 +1,4 @@
-import { EMAIL_OUTER, EMAIL_LOGO_HEADER, sendEmail, EMAIL_OUTER_END, FONT_SIZE_SM } from 'utils/emails';
+import { EMAIL_OUTER, EMAIL_LOGO_HEADER, sendEmail, EMAIL_OUTER_END, FONT_SIZE_SM } from 'server-utils/emails';
 import appConfig from 'helpers/appConfig';
 
 export default function sendPaymentReceiptEmail(payment, charge) {

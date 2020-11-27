@@ -2,7 +2,7 @@ import safeCompare from 'safe-compare';
 
 import { find } from './find';
 
-import { dbLoad } from 'utils/common/database';
+import { dbLoad } from 'server-utils/common/database';
 import { SESSION_COOKIE_KEY } from 'helpers/storageConstants';
 
 const secretApiKey = process.env.SECRET_API_KEY;

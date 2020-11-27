@@ -5,7 +5,7 @@ import { initialState } from '../reducer';
 import { initialState as initialAuthenticatorState } from 'containers/common/Authenticator/reducer';
 import { initialState as initialConsentState } from '../../Consent/reducer';
 
-import configureStore from 'utils/common/redux/configure-store';
+import configureStore from 'client-utils/common/redux/configure-store';
 
 import SignUpIndex from '../index';
 import SignUp from '../Container';

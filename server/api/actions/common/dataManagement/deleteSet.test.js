@@ -3,9 +3,9 @@
 import { SESSION_COOKIE_KEY } from 'helpers/storageConstants';
 import deleteSet from './deleteSet.js';
 
-import { dbLoadSingle, dbCreate } from 'utils/common/database';
-import { clearDatabaseCollection, createUsersWithSessions } from 'utils/common/testUtils';
-import { AuthError, InvalidInputError } from 'utils/common/errors';
+import { dbLoadSingle, dbCreate } from 'server-utils/common/database';
+import { clearDatabaseCollection, createUsersWithSessions } from 'server-utils/common/testUtils';
+import { AuthError, InvalidInputError } from 'server-utils/common/errors';
 
 beforeEach(() => {
   clearDatabaseCollection('users');

@@ -5,7 +5,7 @@ import { LoadingCover } from 'gg-components/LoadingCover';
 import { DebugObject } from 'components/common/DebugObject';
 import { Paragraph } from 'gg-components/Paragraph';
 import Button from 'components/common/Button';
-import { setPostLoginRedirect } from 'utils/common/storageHelpers';
+import { setPostLoginRedirect } from 'client-utils/common/storageHelpers';
 
 import Skeleton from './Skeleton';
 

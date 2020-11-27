@@ -2,9 +2,9 @@
 
 import login from './login.js';
 
-import { dbCreate, dbLoad } from 'utils/common/database';
-import { clearDatabaseCollection, createUsersWithSessions } from 'utils/common/testUtils';
-import { InvalidInputError } from 'utils/common/errors';
+import { dbCreate, dbLoad } from 'server-utils/common/database';
+import { clearDatabaseCollection, createUsersWithSessions } from 'server-utils/common/testUtils';
+import { InvalidInputError } from 'server-utils/common/errors';
 
 beforeEach(() => {
   clearDatabaseCollection('magiclinks');

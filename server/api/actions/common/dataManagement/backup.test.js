@@ -3,8 +3,8 @@
 import { SESSION_COOKIE_KEY } from 'helpers/storageConstants';
 import backup from './backup.js';
 
-import { AuthError } from 'utils/common/errors';
-import { clearDatabaseCollection, createUsersWithSessions } from 'utils/common/testUtils';
+import { AuthError } from 'server-utils/common/errors';
+import { clearDatabaseCollection, createUsersWithSessions } from 'server-utils/common/testUtils';
 
 beforeEach(() => {
   clearDatabaseCollection('users');

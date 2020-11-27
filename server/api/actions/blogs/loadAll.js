@@ -1,5 +1,5 @@
-import { dbLoad } from 'utils/common/database';
-import authentication from 'utils/common/authentication';
+import { dbLoad } from 'server-utils/common/database';
+import authentication from 'server-utils/common/authentication';
 
 export default function loadAll(req) {
   return authentication(req)

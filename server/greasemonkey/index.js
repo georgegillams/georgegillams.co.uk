@@ -4,7 +4,7 @@ import path from 'path';
 import express from 'express';
 import wget from 'wget-improved';
 
-import logger from 'utils/common/logger';
+import logger from 'server-utils/common/logger';
 
 const router = express.Router();
 

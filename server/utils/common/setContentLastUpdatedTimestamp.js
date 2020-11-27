@@ -1,5 +1,5 @@
-import { dbLoad, dbCreate, dbUpdate } from 'utils/common/database';
-import lockPromise from 'utils/common/lock';
+import { dbLoad, dbCreate, dbUpdate } from 'server-utils/common/database';
+import lockPromise from 'server-utils/common/lock';
 
 export default function setContentLastUpdatedTimestamp() {
   let newContentUpdateData = {};
