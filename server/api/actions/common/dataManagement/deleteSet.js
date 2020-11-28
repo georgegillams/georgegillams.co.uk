@@ -1,11 +1,11 @@
 import { STRING_REGEX } from 'helpers/regexConstants';
 import appConfig from 'helpers/appConfig';
-import { UNAUTHORISED_WRITE } from 'utils/common/errorConstants';
-import redis from 'utils/common/redis';
-import { InvalidInputError } from 'utils/common/errors';
-import authentication from 'utils/common/authentication';
-import setContentLastUpdatedTimestamp from 'utils/common/setContentLastUpdatedTimestamp';
-import reqSecure from 'utils/common/reqSecure';
+import { UNAUTHORISED_WRITE } from 'server-utils/common/errorConstants';
+import redis from 'server-utils/common/redis';
+import { InvalidInputError } from 'server-utils/common/errors';
+import authentication from 'server-utils/common/authentication';
+import setContentLastUpdatedTimestamp from 'server-utils/common/setContentLastUpdatedTimestamp';
+import reqSecure from 'server-utils/common/reqSecure';
 
 const deleteSetAllowedAttributes = [{ attribute: 'collectionName', pattern: STRING_REGEX }];
 

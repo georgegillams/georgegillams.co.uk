@@ -4,7 +4,7 @@ import { Provider } from 'react-redux';
 import { initialState as initialConsentState } from '../../Consent/reducer';
 import { initialState } from '../reducer';
 
-import configureStore from 'utils/common/redux/configure-store';
+import configureStore from 'client-utils/common/redux/configure-store';
 
 import AnalyticsIndex from '../index';
 import Analytics from '../Container';

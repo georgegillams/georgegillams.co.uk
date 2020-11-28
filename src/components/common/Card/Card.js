@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import { Card as GGCard } from 'gg-components/Card';
 import HelperFunctions from 'helpers/common/HelperFunctions';
 import Router, { useRouter } from 'next/router';
-import nextifyHref from 'utils/nextifyHref';
+import nextifyHref from 'client-utils/nextifyHref';
 
 const Card = props => {
   const { href, onClick, scroll, ...rest } = props;

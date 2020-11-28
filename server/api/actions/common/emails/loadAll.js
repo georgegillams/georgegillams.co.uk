@@ -1,6 +1,6 @@
-import { dbLoad } from 'utils/common/database';
-import authentication from 'utils/common/authentication';
-import { UNAUTHORISED_READ } from 'utils/common/errorConstants';
+import { dbLoad } from 'server-utils/common/database';
+import authentication from 'server-utils/common/authentication';
+import { UNAUTHORISED_READ } from 'server-utils/common/errorConstants';
 
 export default function loadAll(req) {
   return authentication(req)

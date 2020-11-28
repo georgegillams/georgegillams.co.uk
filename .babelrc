@@ -10,5 +10,15 @@
       "presets": ["next/babel"]
     }
   },
-  "plugins": ["babel-plugin-add-module-exports"]
+  "plugins": [
+    "babel-plugin-add-module-exports", 
+    ["module-resolver", { 
+      "root": ["./"],
+      "alias": {
+        "helpers": "./shared/helpers",
+        "server-utils": "./server/utils",
+        "client-utils": "./src/utils"
+      }
+    }]
+  ]
 }

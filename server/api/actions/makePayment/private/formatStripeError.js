@@ -1,4 +1,4 @@
-import { NetworkError } from 'utils/common/errors';
+import { NetworkError } from 'server-utils/common/errors';
 
 const formatStripeError = err => {
   let error = err;

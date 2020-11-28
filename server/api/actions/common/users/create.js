@@ -1,15 +1,15 @@
 import sendEmailVerificationEmail from '../auth/private/sendEmailVerificationEmail';
-import { InvalidInputError } from 'utils/common/errors';
+import { InvalidInputError } from 'server-utils/common/errors';
 
 import usersAllowedAttributes from './private/usersAllowedAttributes';
 
-import { dbCreate, dbLoad } from 'utils/common/database';
-import lockPromise from 'utils/common/lock';
-import authentication from 'utils/common/authentication';
-import { hash } from 'utils/common/hash';
-import { find, emailFingerprint } from 'utils/common/find';
-import { UNAUTHORISED_WRITE } from 'utils/common/errorConstants';
-import reqSecure from 'utils/common/reqSecure';
+import { dbCreate, dbLoad } from 'server-utils/common/database';
+import lockPromise from 'server-utils/common/lock';
+import authentication from 'server-utils/common/authentication';
+import { hash } from 'server-utils/common/hash';
+import { find, emailFingerprint } from 'server-utils/common/find';
+import { UNAUTHORISED_WRITE } from 'server-utils/common/errorConstants';
+import reqSecure from 'server-utils/common/reqSecure';
 
 export default function create(req) {
   reqSecure(req, usersAllowedAttributes);

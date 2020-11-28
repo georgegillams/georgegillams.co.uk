@@ -2,11 +2,11 @@ import loginUser from '../auth/private/login';
 
 import magicLinksAllowedAttributes from './private/magicLinksAllowedAttributes';
 
-import { dbLoad, dbUpdate } from 'utils/common/database';
-import { InvalidInputError } from 'utils/common/errors';
-import lockPromise from 'utils/common/lock';
-import { find } from 'utils/common/find';
-import reqSecure from 'utils/common/reqSecure';
+import { dbLoad, dbUpdate } from 'server-utils/common/database';
+import { InvalidInputError } from 'server-utils/common/errors';
+import lockPromise from 'server-utils/common/lock';
+import { find } from 'server-utils/common/find';
+import reqSecure from 'server-utils/common/reqSecure';
 
 export default function loginMagicLink(req) {
   reqSecure(req, magicLinksAllowedAttributes);

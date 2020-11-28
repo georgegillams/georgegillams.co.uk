@@ -1,8 +1,8 @@
 import notificationsAllowedAttributes from './private/notificationsAllowedAttributes';
 
-import { dbLoad } from 'utils/common/database';
-import authentication from 'utils/common/authentication';
-import reqSecure from 'utils/common/reqSecure';
+import { dbLoad } from 'server-utils/common/database';
+import authentication from 'server-utils/common/authentication';
+import reqSecure from 'server-utils/common/reqSecure';
 
 export default function loadAll(req) {
   reqSecure(req, notificationsAllowedAttributes);

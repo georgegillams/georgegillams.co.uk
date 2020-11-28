@@ -3,7 +3,7 @@ import { render } from '@testing-library/react';
 import { Provider } from 'react-redux';
 import { initialState } from 'containers/common/Admin/Notifications/reducer';
 
-import configureStore from 'utils/common/redux/configure-store';
+import configureStore from 'client-utils/common/redux/configure-store';
 
 import NotificationsIndex from '../index';
 import Notifications from '../Container';

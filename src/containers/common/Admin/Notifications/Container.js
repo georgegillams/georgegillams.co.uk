@@ -5,7 +5,7 @@ import { DebugObject } from 'components/common/DebugObject';
 import { LoadingCover } from 'gg-components/LoadingCover';
 import { Button } from 'gg-components/Button';
 import { AdminOnly } from 'components/common/Walls';
-import { setPostLoginRedirect } from 'utils/common/storageHelpers';
+import { setPostLoginRedirect } from 'client-utils/common/storageHelpers';
 import Skeleton from './Skeleton';
 import { withRouter } from 'next/router';
 import ErrorDisplay from 'components/common/ErrorDisplay';
@@ -13,7 +13,7 @@ import NotificationEntity from './NotificationEntity';
 
 import { cssModules } from 'gg-components/helpers/cssModules';
 import STYLES from './admin-notifications.scss';
-import useTabMadeVisible from 'utils/common/useTabMadeVisible';
+import useTabMadeVisible from 'client-utils/common/useTabMadeVisible';
 import { CreateNotificationForm } from 'components/common/Forms';
 
 const getClassName = cssModules(STYLES);

@@ -1,7 +1,7 @@
 import loadAllValues from './private/loadAllValues';
 
-import redis from 'utils/common/redis';
-import { find } from 'utils/common/find';
+import redis from 'server-utils/common/redis';
+import { find } from 'server-utils/common/find';
 import appConfig from 'helpers/appConfig';
 
 const idForNewEntity = (redisKey, requestedId) =>

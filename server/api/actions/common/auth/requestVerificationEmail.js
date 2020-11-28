@@ -1,9 +1,9 @@
 import sendEmailVerificationEmail from './private/sendEmailVerificationEmail';
 import authAllowedAttributes from './private/authAllowedAttributes';
 
-import authentication from 'utils/common/authentication';
-import reqSecure from 'utils/common/reqSecure';
-import { UNAUTHORISED_WRITE } from 'utils/common/errorConstants';
+import authentication from 'server-utils/common/authentication';
+import reqSecure from 'server-utils/common/reqSecure';
+import { UNAUTHORISED_WRITE } from 'server-utils/common/errorConstants';
 
 export default function requestVerificationEmail(req) {
   reqSecure(req, authAllowedAttributes);

@@ -1,7 +1,7 @@
 import appConfig from 'helpers/appConfig';
 import nodemailer from 'nodemailer';
 
-import logger from 'utils/common/logger';
+import logger from 'server-utils/common/logger';
 
 let mailConfig = null;
 let transporter = null;

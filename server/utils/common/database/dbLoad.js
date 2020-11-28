@@ -3,7 +3,7 @@ import reverse from 'lodash/reverse';
 
 import loadAllValues from './private/loadAllValues';
 
-import { find } from 'utils/common/find';
+import { find } from 'server-utils/common/find';
 
 const attachUNames = results =>
   loadAllValues('users').then(userData => {

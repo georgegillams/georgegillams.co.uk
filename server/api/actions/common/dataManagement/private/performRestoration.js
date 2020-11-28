@@ -1,5 +1,5 @@
 import appConfig from 'helpers/appConfig';
-import redis from 'utils/common/redis';
+import redis from 'server-utils/common/redis';
 
 /**
  * Overwrites all redis data stores with the data values provided

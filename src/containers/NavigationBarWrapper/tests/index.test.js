@@ -3,7 +3,7 @@ import { render } from '@testing-library/react';
 import { Provider } from 'react-redux';
 import { initialState as initialAuthenticatorState } from 'containers/common/Authenticator/reducer';
 
-import configureStore from 'utils/common/redux/configure-store';
+import configureStore from 'client-utils/common/redux/configure-store';
 
 import NavigationBarWrapperIndex from '../index';
 import NavigationBarWrapper from '../Container';

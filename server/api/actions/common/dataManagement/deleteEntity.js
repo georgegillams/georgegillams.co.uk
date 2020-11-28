@@ -1,14 +1,14 @@
-import { dbLoad } from 'utils/common/database';
+import { dbLoad } from 'server-utils/common/database';
 import { STRING_REGEX, ID_REGEX } from 'helpers/regexConstants';
 import appConfig from 'helpers/appConfig';
-import { RESOURCE_NOT_FOUND, UNAUTHORISED_WRITE } from 'utils/common/errorConstants';
-import { AuthError } from 'utils/common/errors';
-import redis from 'utils/common/redis';
-import { find } from 'utils/common/find';
-import authentication from 'utils/common/authentication';
-import setContentLastUpdatedTimestamp from 'utils/common/setContentLastUpdatedTimestamp';
-import reqSecure from 'utils/common/reqSecure';
-import logger from 'utils/common/logger';
+import { RESOURCE_NOT_FOUND, UNAUTHORISED_WRITE } from 'server-utils/common/errorConstants';
+import { AuthError } from 'server-utils/common/errors';
+import redis from 'server-utils/common/redis';
+import { find } from 'server-utils/common/find';
+import authentication from 'server-utils/common/authentication';
+import setContentLastUpdatedTimestamp from 'server-utils/common/setContentLastUpdatedTimestamp';
+import reqSecure from 'server-utils/common/reqSecure';
+import logger from 'server-utils/common/logger';
 
 const deleteEntityAllowedAttributes = [
   { attribute: 'collectionName', pattern: STRING_REGEX },

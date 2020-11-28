@@ -3,10 +3,10 @@
 import { SESSION_COOKIE_KEY } from 'helpers/storageConstants';
 import logout from './logout.js';
 
-import { dbCreate, dbLoad } from 'utils/common/database';
-import { clearDatabaseCollection } from 'utils/common/testUtils';
-import { AuthError } from 'utils/common/errors';
-import { INVALID_SESSION } from 'utils/common/errorConstants';
+import { dbCreate, dbLoad } from 'server-utils/common/database';
+import { clearDatabaseCollection } from 'server-utils/common/testUtils';
+import { AuthError } from 'server-utils/common/errors';
+import { INVALID_SESSION } from 'server-utils/common/errorConstants';
 
 beforeEach(() => {
   clearDatabaseCollection('sessions');

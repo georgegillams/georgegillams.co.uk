@@ -2,8 +2,8 @@
 
 import performRestoration from './performRestoration.js';
 
-import { dbLoad, dbCreate } from 'utils/common/database';
-import { clearDatabaseCollection, createUsersWithSessions } from 'utils/common/testUtils';
+import { dbLoad, dbCreate } from 'server-utils/common/database';
+import { clearDatabaseCollection, createUsersWithSessions } from 'server-utils/common/testUtils';
 
 beforeEach(() => {
   clearDatabaseCollection('users');

@@ -1,4 +1,4 @@
-import { dbLoad } from 'utils/common/database';
+import { dbLoad } from 'server-utils/common/database';
 import { REDIS_INFORMATION_STORES } from './redisStores';
 
 /**

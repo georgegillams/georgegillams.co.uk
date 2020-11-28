@@ -1,5 +1,5 @@
 /* eslint-disable */
-import { dbLoad, dbLoadSingle, dbUpdate } from 'utils/common/database';
+import { dbLoad, dbLoadSingle, dbUpdate } from 'server-utils/common/database';
 
 import sendPaymentReceiptEmail from './sendPaymentReceiptEmail';
 import fetchPaymentDataFromStripe from './fetchPaymentDataFromStripe';

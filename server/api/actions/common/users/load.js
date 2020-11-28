@@ -1,9 +1,9 @@
 import usersAllowedAttributes from './private/usersAllowedAttributes';
 
-import { dbLoad } from 'utils/common/database';
-import authentication from 'utils/common/authentication';
-import { UNAUTHORISED_READ } from 'utils/common/errorConstants';
-import reqSecure from 'utils/common/reqSecure';
+import { dbLoad } from 'server-utils/common/database';
+import authentication from 'server-utils/common/authentication';
+import { UNAUTHORISED_READ } from 'server-utils/common/errorConstants';
+import reqSecure from 'server-utils/common/reqSecure';
 
 export default function load(req) {
   reqSecure(req, usersAllowedAttributes);

@@ -4,7 +4,7 @@ import { Provider } from 'react-redux';
 import { initialState as initialAuthenticatorState } from 'containers/common/Authenticator/reducer';
 import { initialState } from '../reducer';
 
-import configureStore from 'utils/common/redux/configure-store';
+import configureStore from 'client-utils/common/redux/configure-store';
 
 import BlogRendererIndex from '../index';
 import BlogRenderer from '../Container';

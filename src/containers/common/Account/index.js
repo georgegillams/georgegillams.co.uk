@@ -8,8 +8,8 @@ import { logout, requestVerificationEmail } from './actions';
 import { selectState } from './selectors';
 import { selectState as selectAuthenticatorState } from 'containers/common/Authenticator/selectors';
 import Account from './Container';
-import injectSaga from 'utils/common/redux/inject-saga';
-import injectReducer from 'utils/common/redux/inject-reducer';
+import injectSaga from 'client-utils/common/redux/inject-saga';
+import injectReducer from 'client-utils/common/redux/inject-reducer';
 
 import { KEY } from './constants';
 import saga from './saga';

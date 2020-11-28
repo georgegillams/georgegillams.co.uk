@@ -2,15 +2,15 @@ import sendEmailVerificationEmail from '../auth/private/sendEmailVerificationEma
 
 import usersAllowedAttributes from './private/usersAllowedAttributes';
 
-import { dbLoad, dbUpdate } from 'utils/common/database';
-import { InvalidInputError } from 'utils/common/errors';
-import lockPromise from 'utils/common/lock';
-import authentication from 'utils/common/authentication';
-import { hash } from 'utils/common/hash';
-import { find, emailFingerprint } from 'utils/common/find';
-import { userOwnsResource } from 'utils/common/userOwnsResource';
-import { UNAUTHORISED_WRITE, RESOURCE_NOT_FOUND } from 'utils/common/errorConstants';
-import reqSecure from 'utils/common/reqSecure';
+import { dbLoad, dbUpdate } from 'server-utils/common/database';
+import { InvalidInputError } from 'server-utils/common/errors';
+import lockPromise from 'server-utils/common/lock';
+import authentication from 'server-utils/common/authentication';
+import { hash } from 'server-utils/common/hash';
+import { find, emailFingerprint } from 'server-utils/common/find';
+import { userOwnsResource } from 'server-utils/common/userOwnsResource';
+import { UNAUTHORISED_WRITE, RESOURCE_NOT_FOUND } from 'server-utils/common/errorConstants';
+import reqSecure from 'server-utils/common/reqSecure';
 
 export default function update(req) {
   reqSecure(req, usersAllowedAttributes);

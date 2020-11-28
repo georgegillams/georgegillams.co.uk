@@ -3,9 +3,9 @@
 import deleteSupport from './delete.js';
 
 import { SESSION_COOKIE_KEY } from 'helpers/storageConstants';
-import { dbCreate, dbLoad } from 'utils/common/database';
-import { AuthError, NotFoundError } from 'utils/common/errors';
-import { clearDatabaseCollection, createUsersWithSessions } from 'utils/common/testUtils';
+import { dbCreate, dbLoad } from 'server-utils/common/database';
+import { AuthError, NotFoundError } from 'server-utils/common/errors';
+import { clearDatabaseCollection, createUsersWithSessions } from 'server-utils/common/testUtils';
 
 beforeEach(() => {
   clearDatabaseCollection('users');
