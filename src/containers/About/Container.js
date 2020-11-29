@@ -55,9 +55,24 @@ const Container = props => {
       />
       <br />
       <Paragraph>
-        This site is built in React and hosted on AWS. I use it to experiment with things, share stuff I&apos;ve figured
-        out, and allow people to reach-out to me. So if you&apos;re interested in anything I do,{' '}
-        <TextLink href="/contact">get in touch</TextLink>!
+        This site is built in{' '}
+        <TextLink hrefExternal href="https://reactjs.org/">
+          React
+        </TextLink>{' '}
+        and{' '}
+        <TextLink hrefExternal href="https://redux.js.org/">
+          Redux
+        </TextLink>{' '}
+        taking advantage of{' '}
+        <TextLink hrefExternal href="https://nextjs.org/">
+          Next.js
+        </TextLink>
+        . I serve it from an EC2 container on{' '}
+        <TextLink hrefExternal href="https://aws.amazon.com/">
+          AWS
+        </TextLink>
+        . I use it to experiment with things, share stuff I&apos;ve figured out, and allow people to reach-out to me. So
+        if you&apos;re interested in anything I do, <TextLink href="/contact">get in touch</TextLink>!
       </Paragraph>
     </PageTitle>
   );
