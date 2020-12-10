@@ -52,7 +52,7 @@ const PageContainer = props => {
     outerClassNames.push(className);
   }
 
-  return <main className={outerClassNames.join(' ')} {...rest} />;
+  return <main id="main" className={outerClassNames.join(' ')} {...rest} />;
 };
 
 PageContainer.propTypes = {

@@ -17,7 +17,7 @@ const Teapot = props => {
   }
 
   return (
-    <main className={classNameFinal.join(' ')}>
+    <main id="main" className={classNameFinal.join(' ')}>
       <PageTitle className={getClassName('not-found__container')} name="Error 418 - I'm a teapot." pageTitle="418">
         <Subsection anchor={false}>
           <Paragraph>

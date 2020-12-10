@@ -4,6 +4,7 @@ exports[`<Layout /> Should render correctly 1`] = `
 <div>
   <main
     class="flex-layout__grow"
+    id="main"
   >
     <div>
       some text
