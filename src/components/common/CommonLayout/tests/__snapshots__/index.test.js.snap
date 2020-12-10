@@ -4,6 +4,7 @@ exports[`<Layout /> Should render correctly 1`] = `
 <div>
   <main
     class="page-container__container page-container__container--bottom-padding page-container__container--regular common-layout__grow"
+    id="main"
   >
     <div>
       some text
@@ -117,6 +118,7 @@ exports[`<Layout /> Should render correctly with spread props 1`] = `
 <div>
   <main
     class="page-container__container page-container__container--bottom-padding page-container__container--prose common-layout__grow"
+    id="main"
   >
     <div>
       some text

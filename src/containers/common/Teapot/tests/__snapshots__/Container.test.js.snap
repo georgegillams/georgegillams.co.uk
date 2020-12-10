@@ -4,6 +4,7 @@ exports[`<Teapot /> should render correctly 1`] = `
 <div>
   <main
     class="not-found__container"
+    id="main"
   >
     <h1
       class="page-title__heading not-found__container"

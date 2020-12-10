@@ -8,7 +8,11 @@ const getClassName = cssModules(STYLES);
 const CommonLayout = props => {
   const { children } = props;
 
-  return <main className={getClassName('flex-layout__grow')}>{children}</main>;
+  return (
+    <main id="main" className={getClassName('flex-layout__grow')}>
+      {children}
+    </main>
+  );
 };
 
 CommonLayout.propTypes = {

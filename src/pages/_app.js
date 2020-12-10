@@ -13,6 +13,7 @@ import withReduxStore from 'client-utils/common/redux/with-redux-store';
 import appConfig from 'helpers/appConfig';
 import Navigation from 'containers/NavigationBarWrapper';
 import AppWrapper from 'components/common/AppWrapper';
+import { SkipLink } from 'gg-components/SkipLink';
 import { enableES5 } from 'immer';
 
 import 'global-styles.scss';
@@ -34,6 +35,9 @@ class Srr extends App {
 
         <Provider store={reduxStore}>
           <AppWrapper>
+            <div style={{ zIndex: 2000, position: 'absolute', left: '1rem', top: '0.8rem' }}>
+              <SkipLink href="#main" label="Skip to main content" />
+            </div>
             <Navigation />
             <Notifications />
             <Konami />
