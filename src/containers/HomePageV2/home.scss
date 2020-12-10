@@ -1,0 +1,11 @@
+@import '~utils/tokens';
+
+.home {
+  &__work-section {
+    margin-top: $spacing-lg;
+
+    @include bpk-breakpoint-tablet {
+      margin-top: $spacing-base;
+    }
+  }
+}

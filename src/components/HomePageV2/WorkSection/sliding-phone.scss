@@ -1,0 +1,23 @@
+@import '~utils/tokens';
+
+.sliding-phone {
+  &__outer {
+    position: relative;
+    width: 20%;
+    height: 0;
+    padding-bottom: 38.5%;
+  }
+
+  &__image {
+    position: absolute;
+    top: 6rem;
+    width: 100%;
+    transition: all 0.8s ease-in-out;
+    opacity: 0;
+
+    &--show {
+      top: 0;
+      opacity: 1;
+    }
+  }
+}
