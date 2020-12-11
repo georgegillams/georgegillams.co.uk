@@ -35,7 +35,7 @@ class Srr extends App {
 
         <Provider store={reduxStore}>
           <AppWrapper>
-            <div style={{ zIndex: 2000, position: 'fixed', left: '1rem', top: '0.8rem' }}>
+            <div style={{ pointerEvents: 'none', zIndex: 2000, position: 'fixed', left: '1rem', top: '0.8rem' }}>
               <SkipLink href="#main" label="Skip to main content" />
             </div>
             <Navigation />
