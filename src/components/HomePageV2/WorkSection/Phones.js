@@ -56,7 +56,7 @@ const Phones = props => {
   const finalDisplayStates = timedDisplayStates.map((s, i) => s && scrolledDisplayStates[i]);
 
   return (
-    <Paragraph className={getClassName('phones__outer', className)} {...rest}>
+    <div className={getClassName('phones__outer', className)} {...rest}>
       <SlidingPhone
         className={getClassName('phones__phone')}
         show={finalDisplayStates[0]}
@@ -75,7 +75,7 @@ const Phones = props => {
         lightSrc={light2}
         darkSrc={dark2}
       />
-    </Paragraph>
+    </div>
   );
 };
 

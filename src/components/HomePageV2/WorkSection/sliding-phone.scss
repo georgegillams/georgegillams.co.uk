@@ -10,14 +10,17 @@
 
   &__image {
     position: absolute;
-    top: 6rem;
+    top: 0;
     width: 100%;
-    transition: all 0.8s ease-in-out;
-    opacity: 0;
+    opacity: 1;
 
-    &--show {
-      top: 0;
-      opacity: 1;
+    &--animated {
+      transition: all 0.8s ease-in-out;
+    }
+
+    &--hide {
+      top: 6rem;
+      opacity: 0;
     }
   }
 }

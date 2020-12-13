@@ -1,0 +1,43 @@
+@import '~utils/tokens';
+
+.photo-section {
+  &__outer {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    text-align: left;
+
+    @include bpk-breakpoint-tablet {
+      flex-direction: column;
+      text-align: center;
+    }
+  }
+
+  &__content {
+    width: 100%;
+    max-width: 50%;
+    margin-right: 0.5rem;
+    flex-grow: 1;
+
+    @include bpk-breakpoint-tablet {
+      max-width: 25rem;
+      margin-right: 0;
+    }
+  }
+
+  &__graphic {
+    width: 100%;
+    max-width: 50%;
+    margin-left: 0.5rem;
+    flex-grow: 1;
+
+    @include bpk-breakpoint-tablet {
+      max-width: 25rem;
+      margin-left: 0;
+    }
+  }
+
+  &__paragraph {
+    font-size: $paragraph-font-size-larger;
+  }
+}

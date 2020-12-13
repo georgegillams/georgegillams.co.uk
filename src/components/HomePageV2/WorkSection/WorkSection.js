@@ -14,9 +14,9 @@ const WorkSection = props => {
   const { className, ...rest } = props;
 
   return (
-    <div className={getClassName('work-section__outer', className)}>
+    <div className={getClassName('work-section__outer', className)} {...rest}>
       <div className={getClassName('work-section__content')}>
-        <Section name="Work" {...rest}>
+        <Section name="Work">
           <Paragraph className={getClassName('work-section__paragraph')}>
             I work on{' '}
             <TextLink hrefExternal href="https://backpack.github.io">

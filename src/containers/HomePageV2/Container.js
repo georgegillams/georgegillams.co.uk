@@ -3,6 +3,9 @@ import PropTypes from 'prop-types';
 import { cssModules } from 'gg-components/helpers/cssModules';
 import PageTitle from 'components/common/PageTitle';
 import WorkSection from 'components/HomePageV2/WorkSection';
+import LifeSection from 'components/HomePageV2/LifeSection';
+import PhotoSection from 'components/HomePageV2/PhotoSection';
+import AboutSection from 'components/HomePageV2/AboutSection';
 
 import STYLES from './home.scss';
 
@@ -14,10 +17,9 @@ const HomePage = props => {
   return (
     <PageTitle name="Hey! I'm George." pageTitle="Home" {...rest}>
       <WorkSection className={getClassName('home__work-section')} />
-      <WorkSection className={getClassName('home__work-section')} />
-      <WorkSection className={getClassName('home__work-section')} />
-      <WorkSection className={getClassName('home__work-section')} />
-      <WorkSection className={getClassName('home__work-section')} />
+      <LifeSection className={getClassName('home__work-section')} />
+      <PhotoSection className={getClassName('home__work-section')} />
+      <AboutSection className={getClassName('home__work-section')} />
     </PageTitle>
   );
 };
