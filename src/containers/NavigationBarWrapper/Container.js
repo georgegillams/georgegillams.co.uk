@@ -11,7 +11,12 @@ const NavigationBarWrapper = props => {
   const { authenticatorState } = props;
   const { user } = authenticatorState;
 
-  const accountItem = <NavigationItem name={'Home page v2'} href={'/home-v2'} />;
+  const accountItem =
+    user === undefined ? (
+      <SmallButtonSkeleton />
+    ) : (
+      <NavigationItem name={user ? 'Account' : 'Login'} href={user ? '/account' : '/login'} />
+    );
 
   const adminItem = user && user.admin ? <NavigationItem name="Admin" href="/admin" /> : null;
 

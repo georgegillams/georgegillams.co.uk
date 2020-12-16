@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
+import { withScroll } from 'gg-components/ScrollContainer';
 import { Paragraph } from 'gg-components/Paragraph';
 import { Section } from 'gg-components/Section';
 import TextLink from 'components/common/TextLink';
@@ -11,7 +12,18 @@ import { cssModules } from 'gg-components/helpers/cssModules';
 const getClassName = cssModules(STYLES);
 
 const WorkSection = props => {
-  const { className, ...rest } = props;
+  const { hasBeenMostlyInView, hasBeenFullyInView, className, ...rest } = props;
+
+  delete rest.fullyInView;
+  delete rest.hasBeenInView;
+  delete rest.hasBeenJustInView;
+  delete rest.hasBeenOutOfView;
+  delete rest.inView;
+  delete rest.justInView;
+  delete rest.mostlyInView;
+  delete rest.outOfView;
+  delete rest.scrollPosition;
+  delete rest.scrollPositionVh;
 
   return (
     <div className={getClassName('work-section__outer', className)} {...rest}>
@@ -34,13 +46,20 @@ const WorkSection = props => {
           </Paragraph>
         </Section>
       </div>
-      <Phones className={getClassName('work-section__graphic')} />
+      <Phones
+        hasBeenMostlyInView={hasBeenMostlyInView || hasBeenFullyInView}
+        className={getClassName('work-section__graphic')}
+      />
     </div>
   );
 };
 
-WorkSection.propTypes = { className: PropTypes.string };
+WorkSection.propTypes = {
+  className: PropTypes.string,
+  hasBeenMostlyInView: PropTypes.bool.isRequired,
+  hasBeenFullyInView: PropTypes.bool.isRequired,
+};
 
 WorkSection.defaultProps = { className: null };
 
-export default WorkSection;
+export default withScroll(WorkSection);
