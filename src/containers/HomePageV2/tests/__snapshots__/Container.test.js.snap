@@ -123,11 +123,9 @@ exports[`<Home /> should render correctly 1`] = `
               </div>
               <img
                 class="image__img image__img--hidden image__img--light"
-                src="IMAGE_MOCK"
               />
               <img
                 class="image__img image__img--hidden image__img--dark"
-                src="IMAGE_MOCK"
               />
             </div>
           </div>
@@ -156,11 +154,9 @@ exports[`<Home /> should render correctly 1`] = `
               </div>
               <img
                 class="image__img image__img--hidden image__img--light"
-                src="IMAGE_MOCK"
               />
               <img
                 class="image__img image__img--hidden image__img--dark"
-                src="IMAGE_MOCK"
               />
             </div>
           </div>
@@ -189,11 +185,9 @@ exports[`<Home /> should render correctly 1`] = `
               </div>
               <img
                 class="image__img image__img--hidden image__img--light"
-                src="IMAGE_MOCK"
               />
               <img
                 class="image__img image__img--hidden image__img--dark"
-                src="IMAGE_MOCK"
               />
             </div>
           </div>
@@ -276,12 +270,10 @@ exports[`<Home /> should render correctly 1`] = `
         <img
           alt="Me"
           class="image__img image__img--hidden image__img--light"
-          src="https://i.imgur.com/FLA0jkg.jpg"
         />
         <img
           alt="Me"
           class="image__img image__img--hidden image__img--dark"
-          src="https://i.imgur.com/FLA0jkg.jpg"
         />
       </div>
     </div>
@@ -537,11 +529,9 @@ exports[`<Home /> should render correctly with admin user 1`] = `
               </div>
               <img
                 class="image__img image__img--hidden image__img--light"
-                src="IMAGE_MOCK"
               />
               <img
                 class="image__img image__img--hidden image__img--dark"
-                src="IMAGE_MOCK"
               />
             </div>
           </div>
@@ -570,11 +560,9 @@ exports[`<Home /> should render correctly with admin user 1`] = `
               </div>
               <img
                 class="image__img image__img--hidden image__img--light"
-                src="IMAGE_MOCK"
               />
               <img
                 class="image__img image__img--hidden image__img--dark"
-                src="IMAGE_MOCK"
               />
             </div>
           </div>
@@ -603,11 +591,9 @@ exports[`<Home /> should render correctly with admin user 1`] = `
               </div>
               <img
                 class="image__img image__img--hidden image__img--light"
-                src="IMAGE_MOCK"
               />
               <img
                 class="image__img image__img--hidden image__img--dark"
-                src="IMAGE_MOCK"
               />
             </div>
           </div>
@@ -690,12 +676,10 @@ exports[`<Home /> should render correctly with admin user 1`] = `
         <img
           alt="Me"
           class="image__img image__img--hidden image__img--light"
-          src="https://i.imgur.com/FLA0jkg.jpg"
         />
         <img
           alt="Me"
           class="image__img image__img--hidden image__img--dark"
-          src="https://i.imgur.com/FLA0jkg.jpg"
         />
       </div>
     </div>
@@ -951,11 +935,9 @@ exports[`<Home /> should render correctly with no user 1`] = `
               </div>
               <img
                 class="image__img image__img--hidden image__img--light"
-                src="IMAGE_MOCK"
               />
               <img
                 class="image__img image__img--hidden image__img--dark"
-                src="IMAGE_MOCK"
               />
             </div>
           </div>
@@ -984,11 +966,9 @@ exports[`<Home /> should render correctly with no user 1`] = `
               </div>
               <img
                 class="image__img image__img--hidden image__img--light"
-                src="IMAGE_MOCK"
               />
               <img
                 class="image__img image__img--hidden image__img--dark"
-                src="IMAGE_MOCK"
               />
             </div>
           </div>
@@ -1017,11 +997,9 @@ exports[`<Home /> should render correctly with no user 1`] = `
               </div>
               <img
                 class="image__img image__img--hidden image__img--light"
-                src="IMAGE_MOCK"
               />
               <img
                 class="image__img image__img--hidden image__img--dark"
-                src="IMAGE_MOCK"
               />
             </div>
           </div>
@@ -1104,12 +1082,10 @@ exports[`<Home /> should render correctly with no user 1`] = `
         <img
           alt="Me"
           class="image__img image__img--hidden image__img--light"
-          src="https://i.imgur.com/FLA0jkg.jpg"
         />
         <img
           alt="Me"
           class="image__img image__img--hidden image__img--dark"
-          src="https://i.imgur.com/FLA0jkg.jpg"
         />
       </div>
     </div>
@@ -1365,11 +1341,9 @@ exports[`<Home /> should render correctly with user 1`] = `
               </div>
               <img
                 class="image__img image__img--hidden image__img--light"
-                src="IMAGE_MOCK"
               />
               <img
                 class="image__img image__img--hidden image__img--dark"
-                src="IMAGE_MOCK"
               />
             </div>
           </div>
@@ -1398,11 +1372,9 @@ exports[`<Home /> should render correctly with user 1`] = `
               </div>
               <img
                 class="image__img image__img--hidden image__img--light"
-                src="IMAGE_MOCK"
               />
               <img
                 class="image__img image__img--hidden image__img--dark"
-                src="IMAGE_MOCK"
               />
             </div>
           </div>
@@ -1431,11 +1403,9 @@ exports[`<Home /> should render correctly with user 1`] = `
               </div>
               <img
                 class="image__img image__img--hidden image__img--light"
-                src="IMAGE_MOCK"
               />
               <img
                 class="image__img image__img--hidden image__img--dark"
-                src="IMAGE_MOCK"
               />
             </div>
           </div>
@@ -1518,12 +1488,10 @@ exports[`<Home /> should render correctly with user 1`] = `
         <img
           alt="Me"
           class="image__img image__img--hidden image__img--light"
-          src="https://i.imgur.com/FLA0jkg.jpg"
         />
         <img
           alt="Me"
           class="image__img image__img--hidden image__img--dark"
-          src="https://i.imgur.com/FLA0jkg.jpg"
         />
       </div>
     </div>
