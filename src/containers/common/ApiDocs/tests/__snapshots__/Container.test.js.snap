@@ -10,61 +10,69 @@ exports[`<ApiDocs /> should render correctly 1`] = `
   <table
     cellpadding="4"
     cellspacing="4"
-    class="api-docs__table"
+    class="table__table api-docs__table"
   >
-    <thead>
-      <tr>
+    <thead
+      class="table__head"
+    >
+      <tr
+        class="table__row"
+      >
         <th
-          class="api-docs__cell"
+          class="table__cell api-docs__cell"
         >
           <span
-            class="paragraph"
+            class="paragraph paragraph--no-padding"
           >
             Path
           </span>
         </th>
         <th
-          class="api-docs__cell"
+          class="table__cell api-docs__cell"
         >
           <span
-            class="paragraph"
+            class="paragraph paragraph--no-padding"
           >
             Method
           </span>
         </th>
         <th
-          class="api-docs__cell"
+          class="table__cell api-docs__cell"
         >
           <span
-            class="paragraph"
+            class="paragraph paragraph--no-padding"
           >
             Arguments
           </span>
         </th>
         <th
-          class="api-docs__cell"
+          class="table__cell api-docs__cell"
         >
           <span
-            class="paragraph"
+            class="paragraph paragraph--no-padding"
           >
             Authorisation
           </span>
         </th>
         <th
-          class="api-docs__cell"
+          class="table__cell api-docs__cell"
         >
           <span
-            class="paragraph"
+            class="paragraph paragraph--no-padding"
           >
             Description
           </span>
         </th>
       </tr>
     </thead>
-    <tbody>
-      <tr>
-        <td
-          class="api-docs__cell"
+    <tbody
+      class="table__body"
+    >
+      <tr
+        class="table__row"
+      >
+        <th
+          class="table__cell api-docs__cell"
         >
           <a
             aria-label="/analytics/create (opens in a new tab)"
@@ -90,45 +98,47 @@ exports[`<ApiDocs /> should render correctly 1`] = `
               </svg>
             </div>
           </a>
-        </td>
-        <td
-          class="api-docs__cell"
+        </th>
+        <th
+          class="table__cell api-docs__cell"
         >
           <span
-            class="paragraph api-docs__method"
+            class="paragraph paragraph--no-padding api-docs__method"
           >
             POST
           </span>
-        </td>
-        <td
-          class="api-docs__cell"
+        </th>
+        <th
+          class="table__cell api-docs__cell"
         >
           <span
-            class="paragraph"
+            class="paragraph paragraph--no-padding"
           />
-        </td>
-        <td
-          class="api-docs__cell"
+        </th>
+        <th
+          class="table__cell api-docs__cell"
         >
           <span
-            class="paragraph"
+            class="paragraph paragraph--no-padding"
           >
             None
           </span>
-        </td>
-        <td
-          class="api-docs__cell"
+        </th>
+        <th
+          class="table__cell api-docs__cell"
         >
           <span
-            class="paragraph api-docs__description"
+            class="paragraph paragraph--no-padding api-docs__description"
           >
             Registers information about the page navigated to
           </span>
-        </td>
+        </th>
       </tr>
-      <tr>
-        <td
-          class="api-docs__cell"
+      <tr
+        class="table__row"
+      >
+        <th
+          class="table__cell api-docs__cell"
         >
           <a
             aria-label="/analytics/load-all (opens in a new tab)"
@@ -154,45 +164,47 @@ exports[`<ApiDocs /> should render correctly 1`] = `
               </svg>
             </div>
           </a>
-        </td>
-        <td
-          class="api-docs__cell"
+        </th>
+        <th
+          class="table__cell api-docs__cell"
         >
           <span
-            class="paragraph api-docs__method"
+            class="paragraph paragraph--no-padding api-docs__method"
           >
             GET
           </span>
-        </td>
-        <td
-          class="api-docs__cell"
+        </th>
+        <th
+          class="table__cell api-docs__cell"
         >
           <span
-            class="paragraph"
+            class="paragraph paragraph--no-padding"
           />
-        </td>
-        <td
-          class="api-docs__cell"
+        </th>
+        <th
+          class="table__cell api-docs__cell"
         >
           <span
-            class="paragraph"
+            class="paragraph paragraph--no-padding"
           >
             Admin only
           </span>
-        </td>
-        <td
-          class="api-docs__cell"
+        </th>
+        <th
+          class="table__cell api-docs__cell"
         >
           <span
-            class="paragraph api-docs__description"
+            class="paragraph paragraph--no-padding api-docs__description"
           >
             Loads all raw analytic points
           </span>
-        </td>
+        </th>
       </tr>
-      <tr>
-        <td
-          class="api-docs__cell"
+      <tr
+        class="table__row"
+      >
+        <th
+          class="table__cell api-docs__cell"
         >
           <a
             aria-label="/analytics/load (opens in a new tab)"
@@ -218,45 +230,47 @@ exports[`<ApiDocs /> should render correctly 1`] = `
               </svg>
             </div>
           </a>
-        </td>
-        <td
-          class="api-docs__cell"
+        </th>
+        <th
+          class="table__cell api-docs__cell"
         >
           <span
-            class="paragraph api-docs__method"
+            class="paragraph paragraph--no-padding api-docs__method"
           >
             GET
           </span>
-        </td>
-        <td
-          class="api-docs__cell"
+        </th>
+        <th
+          class="table__cell api-docs__cell"
         >
           <span
-            class="paragraph"
+            class="paragraph paragraph--no-padding"
           />
-        </td>
-        <td
-          class="api-docs__cell"
+        </th>
+        <th
+          class="table__cell api-docs__cell"
         >
           <span
-            class="paragraph"
+            class="paragraph paragraph--no-padding"
           >
             Admin only
           </span>
-        </td>
-        <td
-          class="api-docs__cell"
+        </th>
+        <th
+          class="table__cell api-docs__cell"
         >
           <span
-            class="paragraph api-docs__description"
+            class="paragraph paragraph--no-padding api-docs__description"
           >
             Loads a summary of unique analytic points
           </span>
-        </td>
+        </th>
       </tr>
-      <tr>
-        <td
-          class="api-docs__cell"
+      <tr
+        class="table__row"
+      >
+        <th
+          class="table__cell api-docs__cell"
         >
           <a
             aria-label="/auth/load (opens in a new tab)"
@@ -282,45 +296,47 @@ exports[`<ApiDocs /> should render correctly 1`] = `
               </svg>
             </div>
           </a>
-        </td>
-        <td
-          class="api-docs__cell"
+        </th>
+        <th
+          class="table__cell api-docs__cell"
         >
           <span
-            class="paragraph api-docs__method"
+            class="paragraph paragraph--no-padding api-docs__method"
           >
             GET
           </span>
-        </td>
-        <td
-          class="api-docs__cell"
+        </th>
+        <th
+          class="table__cell api-docs__cell"
         >
           <span
-            class="paragraph"
+            class="paragraph paragraph--no-padding"
           />
-        </td>
-        <td
-          class="api-docs__cell"
+        </th>
+        <th
+          class="table__cell api-docs__cell"
         >
           <span
-            class="paragraph"
+            class="paragraph paragraph--no-padding"
           >
             None
           </span>
-        </td>
-        <td
-          class="api-docs__cell"
+        </th>
+        <th
+          class="table__cell api-docs__cell"
         >
           <span
-            class="paragraph api-docs__description"
+            class="paragraph paragraph--no-padding api-docs__description"
           >
             Loads the currently authenticated used. Returns null if signed out
           </span>
-        </td>
+        </th>
       </tr>
-      <tr>
-        <td
-          class="api-docs__cell"
+      <tr
+        class="table__row"
+      >
+        <th
+          class="table__cell api-docs__cell"
         >
           <a
             aria-label="/auth/logout (opens in a new tab)"
@@ -346,45 +362,47 @@ exports[`<ApiDocs /> should render correctly 1`] = `
               </svg>
             </div>
           </a>
-        </td>
-        <td
-          class="api-docs__cell"
+        </th>
+        <th
+          class="table__cell api-docs__cell"
         >
           <span
-            class="paragraph api-docs__method"
+            class="paragraph paragraph--no-padding api-docs__method"
           >
             POST
           </span>
-        </td>
-        <td
-          class="api-docs__cell"
+        </th>
+        <th
+          class="table__cell api-docs__cell"
         >
           <span
-            class="paragraph"
+            class="paragraph paragraph--no-padding"
           />
-        </td>
-        <td
-          class="api-docs__cell"
+        </th>
+        <th
+          class="table__cell api-docs__cell"
         >
           <span
-            class="paragraph"
+            class="paragraph paragraph--no-padding"
           >
             None
           </span>
-        </td>
-        <td
-          class="api-docs__cell"
+        </th>
+        <th
+          class="table__cell api-docs__cell"
         >
           <span
-            class="paragraph api-docs__description"
+            class="paragraph paragraph--no-padding api-docs__description"
           >
             Logs out the currently authenticated user
           </span>
-        </td>
+        </th>
       </tr>
-      <tr>
-        <td
-          class="api-docs__cell"
+      <tr
+        class="table__row"
+      >
+        <th
+          class="table__cell api-docs__cell"
         >
           <a
             aria-label="/auth/request-verification-email (opens in a new tab)"
@@ -410,45 +428,47 @@ exports[`<ApiDocs /> should render correctly 1`] = `
               </svg>
             </div>
           </a>
-        </td>
-        <td
-          class="api-docs__cell"
+        </th>
+        <th
+          class="table__cell api-docs__cell"
         >
           <span
-            class="paragraph api-docs__method"
+            class="paragraph paragraph--no-padding api-docs__method"
           >
             POST
           </span>
-        </td>
-        <td
-          class="api-docs__cell"
+        </th>
+        <th
+          class="table__cell api-docs__cell"
         >
           <span
-            class="paragraph"
+            class="paragraph paragraph--no-padding"
           />
-        </td>
-        <td
-          class="api-docs__cell"
+        </th>
+        <th
+          class="table__cell api-docs__cell"
         >
           <span
-            class="paragraph"
+            class="paragraph paragraph--no-padding"
           >
             Any user
           </span>
-        </td>
-        <td
-          class="api-docs__cell"
+        </th>
+        <th
+          class="table__cell api-docs__cell"
         >
           <span
-            class="paragraph api-docs__description"
+            class="paragraph paragraph--no-padding api-docs__description"
           >
             Resends an email verification email
           </span>
-        </td>
+        </th>
       </tr>
-      <tr>
-        <td
-          class="api-docs__cell"
+      <tr
+        class="table__row"
+      >
+        <th
+          class="table__cell api-docs__cell"
         >
           <a
             aria-label="/auth/verify-email (opens in a new tab)"
@@ -474,45 +494,47 @@ exports[`<ApiDocs /> should render correctly 1`] = `
               </svg>
             </div>
           </a>
-        </td>
-        <td
-          class="api-docs__cell"
+        </th>
+        <th
+          class="table__cell api-docs__cell"
         >
           <span
-            class="paragraph api-docs__method"
+            class="paragraph paragraph--no-padding api-docs__method"
           >
             POST
           </span>
-        </td>
-        <td
-          class="api-docs__cell"
+        </th>
+        <th
+          class="table__cell api-docs__cell"
         >
           <span
-            class="paragraph"
+            class="paragraph paragraph--no-padding"
           />
-        </td>
-        <td
-          class="api-docs__cell"
+        </th>
+        <th
+          class="table__cell api-docs__cell"
         >
           <span
-            class="paragraph"
+            class="paragraph paragraph--no-padding"
           >
             None
           </span>
-        </td>
-        <td
-          class="api-docs__cell"
+        </th>
+        <th
+          class="table__cell api-docs__cell"
         >
           <span
-            class="paragraph api-docs__description"
+            class="paragraph paragraph--no-padding api-docs__description"
           >
             Verify an email address with a secret verification key
           </span>
-        </td>
+        </th>
       </tr>
-      <tr>
-        <td
-          class="api-docs__cell"
+      <tr
+        class="table__row"
+      >
+        <th
+          class="table__cell api-docs__cell"
         >
           <a
             aria-label="/emails/load (opens in a new tab)"
@@ -538,45 +560,47 @@ exports[`<ApiDocs /> should render correctly 1`] = `
               </svg>
             </div>
           </a>
-        </td>
-        <td
-          class="api-docs__cell"
+        </th>
+        <th
+          class="table__cell api-docs__cell"
         >
           <span
-            class="paragraph api-docs__method"
+            class="paragraph paragraph--no-padding api-docs__method"
           >
             GET
           </span>
-        </td>
-        <td
-          class="api-docs__cell"
+        </th>
+        <th
+          class="table__cell api-docs__cell"
         >
           <span
-            class="paragraph"
+            class="paragraph paragraph--no-padding"
           />
-        </td>
-        <td
-          class="api-docs__cell"
+        </th>
+        <th
+          class="table__cell api-docs__cell"
         >
           <span
-            class="paragraph"
+            class="paragraph paragraph--no-padding"
           >
             Admin only
           </span>
-        </td>
-        <td
-          class="api-docs__cell"
+        </th>
+        <th
+          class="table__cell api-docs__cell"
         >
           <span
-            class="paragraph api-docs__description"
+            class="paragraph paragraph--no-padding api-docs__description"
           >
             Loads emails that have been sent
           </span>
-        </td>
+        </th>
       </tr>
-      <tr>
-        <td
-          class="api-docs__cell"
+      <tr
+        class="table__row"
+      >
+        <th
+          class="table__cell api-docs__cell"
         >
           <a
             aria-label="/emails/resend (opens in a new tab)"
@@ -602,45 +626,47 @@ exports[`<ApiDocs /> should render correctly 1`] = `
               </svg>
             </div>
           </a>
-        </td>
-        <td
-          class="api-docs__cell"
+        </th>
+        <th
+          class="table__cell api-docs__cell"
         >
           <span
-            class="paragraph api-docs__method"
+            class="paragraph paragraph--no-padding api-docs__method"
           >
             POST
           </span>
-        </td>
-        <td
-          class="api-docs__cell"
+        </th>
+        <th
+          class="table__cell api-docs__cell"
         >
           <span
-            class="paragraph"
+            class="paragraph paragraph--no-padding"
           />
-        </td>
-        <td
-          class="api-docs__cell"
+        </th>
+        <th
+          class="table__cell api-docs__cell"
         >
           <span
-            class="paragraph"
+            class="paragraph paragraph--no-padding"
           >
             Admin only
           </span>
-        </td>
-        <td
-          class="api-docs__cell"
+        </th>
+        <th
+          class="table__cell api-docs__cell"
         >
           <span
-            class="paragraph api-docs__description"
+            class="paragraph paragraph--no-padding api-docs__description"
           >
             Resends an email that's stored in the database
           </span>
-        </td>
+        </th>
       </tr>
-      <tr>
-        <td
-          class="api-docs__cell"
+      <tr
+        class="table__row"
+      >
+        <th
+          class="table__cell api-docs__cell"
         >
           <a
             aria-label="/magic-links/login (opens in a new tab)"
@@ -666,45 +692,47 @@ exports[`<ApiDocs /> should render correctly 1`] = `
               </svg>
             </div>
           </a>
-        </td>
-        <td
-          class="api-docs__cell"
+        </th>
+        <th
+          class="table__cell api-docs__cell"
         >
           <span
-            class="paragraph api-docs__method"
+            class="paragraph paragraph--no-padding api-docs__method"
           >
             POST
           </span>
-        </td>
-        <td
-          class="api-docs__cell"
+        </th>
+        <th
+          class="table__cell api-docs__cell"
         >
           <span
-            class="paragraph"
+            class="paragraph paragraph--no-padding"
           />
-        </td>
-        <td
-          class="api-docs__cell"
+        </th>
+        <th
+          class="table__cell api-docs__cell"
         >
           <span
-            class="paragraph"
+            class="paragraph paragraph--no-padding"
           >
             None
           </span>
-        </td>
-        <td
-          class="api-docs__cell"
+        </th>
+        <th
+          class="table__cell api-docs__cell"
         >
           <span
-            class="paragraph api-docs__description"
+            class="paragraph paragraph--no-padding api-docs__description"
           >
             Login using a secret magic-link key
           </span>
-        </td>
+        </th>
       </tr>
-      <tr>
-        <td
-          class="api-docs__cell"
+      <tr
+        class="table__row"
+      >
+        <th
+          class="table__cell api-docs__cell"
         >
           <a
             aria-label="/magic-links/request (opens in a new tab)"
@@ -730,45 +758,47 @@ exports[`<ApiDocs /> should render correctly 1`] = `
               </svg>
             </div>
           </a>
-        </td>
-        <td
-          class="api-docs__cell"
+        </th>
+        <th
+          class="table__cell api-docs__cell"
         >
           <span
-            class="paragraph api-docs__method"
+            class="paragraph paragraph--no-padding api-docs__method"
           >
             POST
           </span>
-        </td>
-        <td
-          class="api-docs__cell"
+        </th>
+        <th
+          class="table__cell api-docs__cell"
         >
           <span
-            class="paragraph"
+            class="paragraph paragraph--no-padding"
           />
-        </td>
-        <td
-          class="api-docs__cell"
+        </th>
+        <th
+          class="table__cell api-docs__cell"
         >
           <span
-            class="paragraph"
+            class="paragraph paragraph--no-padding"
           >
             None
           </span>
-        </td>
-        <td
-          class="api-docs__cell"
+        </th>
+        <th
+          class="table__cell api-docs__cell"
         >
           <span
-            class="paragraph api-docs__description"
+            class="paragraph paragraph--no-padding api-docs__description"
           >
             Request a magic link for a given account using the account's email address
           </span>
-        </td>
+        </th>
       </tr>
-      <tr>
-        <td
-          class="api-docs__cell"
+      <tr
+        class="table__row"
+      >
+        <th
+          class="table__cell api-docs__cell"
         >
           <a
             aria-label="/data-management/backup (opens in a new tab)"
@@ -794,45 +824,47 @@ exports[`<ApiDocs /> should render correctly 1`] = `
               </svg>
             </div>
           </a>
-        </td>
-        <td
-          class="api-docs__cell"
+        </th>
+        <th
+          class="table__cell api-docs__cell"
         >
           <span
-            class="paragraph api-docs__method"
+            class="paragraph paragraph--no-padding api-docs__method"
           >
             GET
           </span>
-        </td>
-        <td
-          class="api-docs__cell"
+        </th>
+        <th
+          class="table__cell api-docs__cell"
         >
           <span
-            class="paragraph"
+            class="paragraph paragraph--no-padding"
           />
-        </td>
-        <td
-          class="api-docs__cell"
+        </th>
+        <th
+          class="table__cell api-docs__cell"
         >
           <span
-            class="paragraph"
+            class="paragraph paragraph--no-padding"
           >
             Admin only
           </span>
-        </td>
-        <td
-          class="api-docs__cell"
+        </th>
+        <th
+          class="table__cell api-docs__cell"
         >
           <span
-            class="paragraph api-docs__description"
+            class="paragraph paragraph--no-padding api-docs__description"
           >
             Returns a file containing a full data backup for the site
           </span>
-        </td>
+        </th>
       </tr>
-      <tr>
-        <td
-          class="api-docs__cell"
+      <tr
+        class="table__row"
+      >
+        <th
+          class="table__cell api-docs__cell"
         >
           <a
             aria-label="/data-management/delete-entity (opens in a new tab)"
@@ -858,45 +890,47 @@ exports[`<ApiDocs /> should render correctly 1`] = `
               </svg>
             </div>
           </a>
-        </td>
-        <td
-          class="api-docs__cell"
+        </th>
+        <th
+          class="table__cell api-docs__cell"
         >
           <span
-            class="paragraph api-docs__method"
+            class="paragraph paragraph--no-padding api-docs__method"
           >
             POST
           </span>
-        </td>
-        <td
-          class="api-docs__cell"
+        </th>
+        <th
+          class="table__cell api-docs__cell"
         >
           <span
-            class="paragraph"
+            class="paragraph paragraph--no-padding"
           />
-        </td>
-        <td
-          class="api-docs__cell"
+        </th>
+        <th
+          class="table__cell api-docs__cell"
         >
           <span
-            class="paragraph"
+            class="paragraph paragraph--no-padding"
           >
             Admin only
           </span>
-        </td>
-        <td
-          class="api-docs__cell"
+        </th>
+        <th
+          class="table__cell api-docs__cell"
         >
           <span
-            class="paragraph api-docs__description"
+            class="paragraph paragraph--no-padding api-docs__description"
           >
             Remove a previously deleted entity completely from the DB
           </span>
-        </td>
+        </th>
       </tr>
-      <tr>
-        <td
-          class="api-docs__cell"
+      <tr
+        class="table__row"
+      >
+        <th
+          class="table__cell api-docs__cell"
         >
           <a
             aria-label="/data-management/delete-set (opens in a new tab)"
@@ -922,45 +956,47 @@ exports[`<ApiDocs /> should render correctly 1`] = `
               </svg>
             </div>
           </a>
-        </td>
-        <td
-          class="api-docs__cell"
+        </th>
+        <th
+          class="table__cell api-docs__cell"
         >
           <span
-            class="paragraph api-docs__method"
+            class="paragraph paragraph--no-padding api-docs__method"
           >
             POST
           </span>
-        </td>
-        <td
-          class="api-docs__cell"
+        </th>
+        <th
+          class="table__cell api-docs__cell"
         >
           <span
-            class="paragraph"
+            class="paragraph paragraph--no-padding"
           />
-        </td>
-        <td
-          class="api-docs__cell"
+        </th>
+        <th
+          class="table__cell api-docs__cell"
         >
           <span
-            class="paragraph"
+            class="paragraph paragraph--no-padding"
           >
             Admin only
           </span>
-        </td>
-        <td
-          class="api-docs__cell"
+        </th>
+        <th
+          class="table__cell api-docs__cell"
         >
           <span
-            class="paragraph api-docs__description"
+            class="paragraph paragraph--no-padding api-docs__description"
           >
             Remove an entire collection from the DB
           </span>
-        </td>
+        </th>
       </tr>
-      <tr>
-        <td
-          class="api-docs__cell"
+      <tr
+        class="table__row"
+      >
+        <th
+          class="table__cell api-docs__cell"
         >
           <a
             aria-label="/data-management/restore (opens in a new tab)"
@@ -986,45 +1022,47 @@ exports[`<ApiDocs /> should render correctly 1`] = `
               </svg>
             </div>
           </a>
-        </td>
-        <td
-          class="api-docs__cell"
+        </th>
+        <th
+          class="table__cell api-docs__cell"
         >
           <span
-            class="paragraph api-docs__method"
+            class="paragraph paragraph--no-padding api-docs__method"
           >
             POST
           </span>
-        </td>
-        <td
-          class="api-docs__cell"
+        </th>
+        <th
+          class="table__cell api-docs__cell"
         >
           <span
-            class="paragraph"
+            class="paragraph paragraph--no-padding"
           />
-        </td>
-        <td
-          class="api-docs__cell"
+        </th>
+        <th
+          class="table__cell api-docs__cell"
         >
           <span
-            class="paragraph"
+            class="paragraph paragraph--no-padding"
           >
             Admin only
           </span>
-        </td>
-        <td
-          class="api-docs__cell"
+        </th>
+        <th
+          class="table__cell api-docs__cell"
         >
           <span
-            class="paragraph api-docs__description"
+            class="paragraph paragraph--no-padding api-docs__description"
           >
             Restore all the data from a backup file
           </span>
-        </td>
+        </th>
       </tr>
-      <tr>
-        <td
-          class="api-docs__cell"
+      <tr
+        class="table__row"
+      >
+        <th
+          class="table__cell api-docs__cell"
         >
           <a
             aria-label="/notifications/create (opens in a new tab)"
@@ -1050,45 +1088,47 @@ exports[`<ApiDocs /> should render correctly 1`] = `
               </svg>
             </div>
           </a>
-        </td>
-        <td
-          class="api-docs__cell"
+        </th>
+        <th
+          class="table__cell api-docs__cell"
         >
           <span
-            class="paragraph api-docs__method"
+            class="paragraph paragraph--no-padding api-docs__method"
           >
             POST
           </span>
-        </td>
-        <td
-          class="api-docs__cell"
+        </th>
+        <th
+          class="table__cell api-docs__cell"
         >
           <span
-            class="paragraph"
+            class="paragraph paragraph--no-padding"
           />
-        </td>
-        <td
-          class="api-docs__cell"
+        </th>
+        <th
+          class="table__cell api-docs__cell"
         >
           <span
-            class="paragraph"
+            class="paragraph paragraph--no-padding"
           >
             Admin only
           </span>
-        </td>
-        <td
-          class="api-docs__cell"
+        </th>
+        <th
+          class="table__cell api-docs__cell"
         >
           <span
-            class="paragraph api-docs__description"
+            class="paragraph paragraph--no-padding api-docs__description"
           >
             Creates a notification which will be show at the top of the site
           </span>
-        </td>
+        </th>
       </tr>
-      <tr>
-        <td
-          class="api-docs__cell"
+      <tr
+        class="table__row"
+      >
+        <th
+          class="table__cell api-docs__cell"
         >
           <a
             aria-label="/notifications/delete (opens in a new tab)"
@@ -1114,45 +1154,47 @@ exports[`<ApiDocs /> should render correctly 1`] = `
               </svg>
             </div>
           </a>
-        </td>
-        <td
-          class="api-docs__cell"
+        </th>
+        <th
+          class="table__cell api-docs__cell"
         >
           <span
-            class="paragraph api-docs__method"
+            class="paragraph paragraph--no-padding api-docs__method"
           >
             POST
           </span>
-        </td>
-        <td
-          class="api-docs__cell"
+        </th>
+        <th
+          class="table__cell api-docs__cell"
         >
           <span
-            class="paragraph"
+            class="paragraph paragraph--no-padding"
           />
-        </td>
-        <td
-          class="api-docs__cell"
+        </th>
+        <th
+          class="table__cell api-docs__cell"
         >
           <span
-            class="paragraph"
+            class="paragraph paragraph--no-padding"
           >
             Admin only
           </span>
-        </td>
-        <td
-          class="api-docs__cell"
+        </th>
+        <th
+          class="table__cell api-docs__cell"
         >
           <span
-            class="paragraph api-docs__description"
+            class="paragraph paragraph--no-padding api-docs__description"
           >
             Deletes a notification
           </span>
-        </td>
+        </th>
       </tr>
-      <tr>
-        <td
-          class="api-docs__cell"
+      <tr
+        class="table__row"
+      >
+        <th
+          class="table__cell api-docs__cell"
         >
           <a
             aria-label="/notifications/load-all (opens in a new tab)"
@@ -1178,45 +1220,47 @@ exports[`<ApiDocs /> should render correctly 1`] = `
               </svg>
             </div>
           </a>
-        </td>
-        <td
-          class="api-docs__cell"
+        </th>
+        <th
+          class="table__cell api-docs__cell"
         >
           <span
-            class="paragraph api-docs__method"
+            class="paragraph paragraph--no-padding api-docs__method"
           >
             GET
           </span>
-        </td>
-        <td
-          class="api-docs__cell"
+        </th>
+        <th
+          class="table__cell api-docs__cell"
         >
           <span
-            class="paragraph"
+            class="paragraph paragraph--no-padding"
           />
-        </td>
-        <td
-          class="api-docs__cell"
+        </th>
+        <th
+          class="table__cell api-docs__cell"
         >
           <span
-            class="paragraph"
+            class="paragraph paragraph--no-padding"
           >
             Any user - only an admin can see deleted notifications
           </span>
-        </td>
-        <td
-          class="api-docs__cell"
+        </th>
+        <th
+          class="table__cell api-docs__cell"
         >
           <span
-            class="paragraph api-docs__description"
+            class="paragraph paragraph--no-padding api-docs__description"
           >
             Load all notifications
           </span>
-        </td>
+        </th>
       </tr>
-      <tr>
-        <td
-          class="api-docs__cell"
+      <tr
+        class="table__row"
+      >
+        <th
+          class="table__cell api-docs__cell"
         >
           <a
             aria-label="/notifications/load/:id (opens in a new tab)"
@@ -1242,41 +1286,43 @@ exports[`<ApiDocs /> should render correctly 1`] = `
               </svg>
             </div>
           </a>
-        </td>
-        <td
-          class="api-docs__cell"
+        </th>
+        <th
+          class="table__cell api-docs__cell"
         >
           <span
-            class="paragraph api-docs__method"
+            class="paragraph paragraph--no-padding api-docs__method"
           >
             GET
           </span>
-        </td>
-        <td
-          class="api-docs__cell"
+        </th>
+        <th
+          class="table__cell api-docs__cell"
         >
           <span
-            class="paragraph"
+            class="paragraph paragraph--no-padding"
           />
-        </td>
-        <td
-          class="api-docs__cell"
+        </th>
+        <th
+          class="table__cell api-docs__cell"
         >
           <span
-            class="paragraph"
+            class="paragraph paragraph--no-padding"
           />
-        </td>
-        <td
-          class="api-docs__cell"
+        </th>
+        <th
+          class="table__cell api-docs__cell"
         >
           <span
-            class="paragraph api-docs__description"
+            class="paragraph paragraph--no-padding api-docs__description"
           />
-        </td>
+        </th>
       </tr>
-      <tr>
-        <td
-          class="api-docs__cell"
+      <tr
+        class="table__row"
+      >
+        <th
+          class="table__cell api-docs__cell"
         >
           <a
             aria-label="/notifications/update (opens in a new tab)"
@@ -1302,45 +1348,47 @@ exports[`<ApiDocs /> should render correctly 1`] = `
               </svg>
             </div>
           </a>
-        </td>
-        <td
-          class="api-docs__cell"
+        </th>
+        <th
+          class="table__cell api-docs__cell"
         >
           <span
-            class="paragraph api-docs__method"
+            class="paragraph paragraph--no-padding api-docs__method"
           >
             POST
           </span>
-        </td>
-        <td
-          class="api-docs__cell"
+        </th>
+        <th
+          class="table__cell api-docs__cell"
         >
           <span
-            class="paragraph"
+            class="paragraph paragraph--no-padding"
           />
-        </td>
-        <td
-          class="api-docs__cell"
+        </th>
+        <th
+          class="table__cell api-docs__cell"
         >
           <span
-            class="paragraph"
+            class="paragraph paragraph--no-padding"
           >
             Admin only
           </span>
-        </td>
-        <td
-          class="api-docs__cell"
+        </th>
+        <th
+          class="table__cell api-docs__cell"
         >
           <span
-            class="paragraph api-docs__description"
+            class="paragraph paragraph--no-padding api-docs__description"
           >
             Update a given notification
           </span>
-        </td>
+        </th>
       </tr>
-      <tr>
-        <td
-          class="api-docs__cell"
+      <tr
+        class="table__row"
+      >
+        <th
+          class="table__cell api-docs__cell"
         >
           <a
             aria-label="/users/create (opens in a new tab)"
@@ -1366,45 +1414,47 @@ exports[`<ApiDocs /> should render correctly 1`] = `
               </svg>
             </div>
           </a>
-        </td>
-        <td
-          class="api-docs__cell"
+        </th>
+        <th
+          class="table__cell api-docs__cell"
         >
           <span
-            class="paragraph api-docs__method"
+            class="paragraph paragraph--no-padding api-docs__method"
           >
             POST
           </span>
-        </td>
-        <td
-          class="api-docs__cell"
+        </th>
+        <th
+          class="table__cell api-docs__cell"
         >
           <span
-            class="paragraph"
+            class="paragraph paragraph--no-padding"
           />
-        </td>
-        <td
-          class="api-docs__cell"
+        </th>
+        <th
+          class="table__cell api-docs__cell"
         >
           <span
-            class="paragraph"
+            class="paragraph paragraph--no-padding"
           >
             None - only an admin can create other admin users
           </span>
-        </td>
-        <td
-          class="api-docs__cell"
+        </th>
+        <th
+          class="table__cell api-docs__cell"
         >
           <span
-            class="paragraph api-docs__description"
+            class="paragraph paragraph--no-padding api-docs__description"
           >
             Create a user
           </span>
-        </td>
+        </th>
       </tr>
-      <tr>
-        <td
-          class="api-docs__cell"
+      <tr
+        class="table__row"
+      >
+        <th
+          class="table__cell api-docs__cell"
         >
           <a
             aria-label="/users/delete (opens in a new tab)"
@@ -1430,45 +1480,47 @@ exports[`<ApiDocs /> should render correctly 1`] = `
               </svg>
             </div>
           </a>
-        </td>
-        <td
-          class="api-docs__cell"
+        </th>
+        <th
+          class="table__cell api-docs__cell"
         >
           <span
-            class="paragraph api-docs__method"
+            class="paragraph paragraph--no-padding api-docs__method"
           >
             POST
           </span>
-        </td>
-        <td
-          class="api-docs__cell"
+        </th>
+        <th
+          class="table__cell api-docs__cell"
         >
           <span
-            class="paragraph"
+            class="paragraph paragraph--no-padding"
           />
-        </td>
-        <td
-          class="api-docs__cell"
+        </th>
+        <th
+          class="table__cell api-docs__cell"
         >
           <span
-            class="paragraph"
+            class="paragraph paragraph--no-padding"
           >
             The user being deleted, or an admin only
           </span>
-        </td>
-        <td
-          class="api-docs__cell"
+        </th>
+        <th
+          class="table__cell api-docs__cell"
         >
           <span
-            class="paragraph api-docs__description"
+            class="paragraph paragraph--no-padding api-docs__description"
           >
             Delete a user
           </span>
-        </td>
+        </th>
       </tr>
-      <tr>
-        <td
-          class="api-docs__cell"
+      <tr
+        class="table__row"
+      >
+        <th
+          class="table__cell api-docs__cell"
         >
           <a
             aria-label="/users/load (opens in a new tab)"
@@ -1494,45 +1546,47 @@ exports[`<ApiDocs /> should render correctly 1`] = `
               </svg>
             </div>
           </a>
-        </td>
-        <td
-          class="api-docs__cell"
+        </th>
+        <th
+          class="table__cell api-docs__cell"
         >
           <span
-            class="paragraph api-docs__method"
+            class="paragraph paragraph--no-padding api-docs__method"
           >
             GET
           </span>
-        </td>
-        <td
-          class="api-docs__cell"
+        </th>
+        <th
+          class="table__cell api-docs__cell"
         >
           <span
-            class="paragraph"
+            class="paragraph paragraph--no-padding"
           />
-        </td>
-        <td
-          class="api-docs__cell"
+        </th>
+        <th
+          class="table__cell api-docs__cell"
         >
           <span
-            class="paragraph"
+            class="paragraph paragraph--no-padding"
           >
             The user being loaded, or an admin only
           </span>
-        </td>
-        <td
-          class="api-docs__cell"
+        </th>
+        <th
+          class="table__cell api-docs__cell"
         >
           <span
-            class="paragraph api-docs__description"
+            class="paragraph paragraph--no-padding api-docs__description"
           >
             Load a given user
           </span>
-        </td>
+        </th>
       </tr>
-      <tr>
-        <td
-          class="api-docs__cell"
+      <tr
+        class="table__row"
+      >
+        <th
+          class="table__cell api-docs__cell"
         >
           <a
             aria-label="/users/load-all (opens in a new tab)"
@@ -1558,45 +1612,47 @@ exports[`<ApiDocs /> should render correctly 1`] = `
               </svg>
             </div>
           </a>
-        </td>
-        <td
-          class="api-docs__cell"
+        </th>
+        <th
+          class="table__cell api-docs__cell"
         >
           <span
-            class="paragraph api-docs__method"
+            class="paragraph paragraph--no-padding api-docs__method"
           >
             GET
           </span>
-        </td>
-        <td
-          class="api-docs__cell"
+        </th>
+        <th
+          class="table__cell api-docs__cell"
         >
           <span
-            class="paragraph"
+            class="paragraph paragraph--no-padding"
           />
-        </td>
-        <td
-          class="api-docs__cell"
+        </th>
+        <th
+          class="table__cell api-docs__cell"
         >
           <span
-            class="paragraph"
+            class="paragraph paragraph--no-padding"
           >
             Admin only
           </span>
-        </td>
-        <td
-          class="api-docs__cell"
+        </th>
+        <th
+          class="table__cell api-docs__cell"
         >
           <span
-            class="paragraph api-docs__description"
+            class="paragraph paragraph--no-padding api-docs__description"
           >
             Load all users
           </span>
-        </td>
+        </th>
       </tr>
-      <tr>
-        <td
-          class="api-docs__cell"
+      <tr
+        class="table__row"
+      >
+        <th
+          class="table__cell api-docs__cell"
         >
           <a
             aria-label="/users/sign-up (opens in a new tab)"
@@ -1622,45 +1678,47 @@ exports[`<ApiDocs /> should render correctly 1`] = `
               </svg>
             </div>
           </a>
-        </td>
-        <td
-          class="api-docs__cell"
+        </th>
+        <th
+          class="table__cell api-docs__cell"
         >
           <span
-            class="paragraph api-docs__method"
+            class="paragraph paragraph--no-padding api-docs__method"
           >
             POST
           </span>
-        </td>
-        <td
-          class="api-docs__cell"
+        </th>
+        <th
+          class="table__cell api-docs__cell"
         >
           <span
-            class="paragraph"
+            class="paragraph paragraph--no-padding"
           />
-        </td>
-        <td
-          class="api-docs__cell"
+        </th>
+        <th
+          class="table__cell api-docs__cell"
         >
           <span
-            class="paragraph"
+            class="paragraph paragraph--no-padding"
           >
             None
           </span>
-        </td>
-        <td
-          class="api-docs__cell"
+        </th>
+        <th
+          class="table__cell api-docs__cell"
         >
           <span
-            class="paragraph api-docs__description"
+            class="paragraph paragraph--no-padding api-docs__description"
           >
             Create a user, and sign in as that user at the same time
           </span>
-        </td>
+        </th>
       </tr>
-      <tr>
-        <td
-          class="api-docs__cell"
+      <tr
+        class="table__row"
+      >
+        <th
+          class="table__cell api-docs__cell"
         >
           <a
             aria-label="/users/update (opens in a new tab)"
@@ -1686,45 +1744,47 @@ exports[`<ApiDocs /> should render correctly 1`] = `
               </svg>
             </div>
           </a>
-        </td>
-        <td
-          class="api-docs__cell"
+        </th>
+        <th
+          class="table__cell api-docs__cell"
         >
           <span
-            class="paragraph api-docs__method"
+            class="paragraph paragraph--no-padding api-docs__method"
           >
             POST
           </span>
-        </td>
-        <td
-          class="api-docs__cell"
+        </th>
+        <th
+          class="table__cell api-docs__cell"
         >
           <span
-            class="paragraph"
+            class="paragraph paragraph--no-padding"
           />
-        </td>
-        <td
-          class="api-docs__cell"
+        </th>
+        <th
+          class="table__cell api-docs__cell"
         >
           <span
-            class="paragraph"
+            class="paragraph paragraph--no-padding"
           >
             Any user - only an admin can promote other users to admin
           </span>
-        </td>
-        <td
-          class="api-docs__cell"
+        </th>
+        <th
+          class="table__cell api-docs__cell"
         >
           <span
-            class="paragraph api-docs__description"
+            class="paragraph paragraph--no-padding api-docs__description"
           >
             Update a given user
           </span>
-        </td>
+        </th>
       </tr>
-      <tr>
-        <td
-          class="api-docs__cell"
+      <tr
+        class="table__row"
+      >
+        <th
+          class="table__cell api-docs__cell"
         >
           <a
             aria-label="/blogs/create (opens in a new tab)"
@@ -1750,45 +1810,47 @@ exports[`<ApiDocs /> should render correctly 1`] = `
               </svg>
             </div>
           </a>
-        </td>
-        <td
-          class="api-docs__cell"
+        </th>
+        <th
+          class="table__cell api-docs__cell"
         >
           <span
-            class="paragraph api-docs__method"
+            class="paragraph paragraph--no-padding api-docs__method"
           >
             POST
           </span>
-        </td>
-        <td
-          class="api-docs__cell"
+        </th>
+        <th
+          class="table__cell api-docs__cell"
         >
           <span
-            class="paragraph"
+            class="paragraph paragraph--no-padding"
           />
-        </td>
-        <td
-          class="api-docs__cell"
+        </th>
+        <th
+          class="table__cell api-docs__cell"
         >
           <span
-            class="paragraph"
+            class="paragraph paragraph--no-padding"
           >
             Admin only
           </span>
-        </td>
-        <td
-          class="api-docs__cell"
+        </th>
+        <th
+          class="table__cell api-docs__cell"
         >
           <span
-            class="paragraph api-docs__description"
+            class="paragraph paragraph--no-padding api-docs__description"
           >
             Create a new blog
           </span>
-        </td>
+        </th>
       </tr>
-      <tr>
-        <td
-          class="api-docs__cell"
+      <tr
+        class="table__row"
+      >
+        <th
+          class="table__cell api-docs__cell"
         >
           <a
             aria-label="/blogs/delete (opens in a new tab)"
@@ -1814,45 +1876,47 @@ exports[`<ApiDocs /> should render correctly 1`] = `
               </svg>
             </div>
           </a>
-        </td>
-        <td
-          class="api-docs__cell"
+        </th>
+        <th
+          class="table__cell api-docs__cell"
         >
           <span
-            class="paragraph api-docs__method"
+            class="paragraph paragraph--no-padding api-docs__method"
           >
             POST
           </span>
-        </td>
-        <td
-          class="api-docs__cell"
+        </th>
+        <th
+          class="table__cell api-docs__cell"
         >
           <span
-            class="paragraph"
+            class="paragraph paragraph--no-padding"
           />
-        </td>
-        <td
-          class="api-docs__cell"
+        </th>
+        <th
+          class="table__cell api-docs__cell"
         >
           <span
-            class="paragraph"
+            class="paragraph paragraph--no-padding"
           >
             Admin only
           </span>
-        </td>
-        <td
-          class="api-docs__cell"
+        </th>
+        <th
+          class="table__cell api-docs__cell"
         >
           <span
-            class="paragraph api-docs__description"
+            class="paragraph paragraph--no-padding api-docs__description"
           >
             Remove a blog
           </span>
-        </td>
+        </th>
       </tr>
-      <tr>
-        <td
-          class="api-docs__cell"
+      <tr
+        class="table__row"
+      >
+        <th
+          class="table__cell api-docs__cell"
         >
           <a
             aria-label="/blogs/load-all (opens in a new tab)"
@@ -1878,45 +1942,47 @@ exports[`<ApiDocs /> should render correctly 1`] = `
               </svg>
             </div>
           </a>
-        </td>
-        <td
-          class="api-docs__cell"
+        </th>
+        <th
+          class="table__cell api-docs__cell"
         >
           <span
-            class="paragraph api-docs__method"
+            class="paragraph paragraph--no-padding api-docs__method"
           >
             GET
           </span>
-        </td>
-        <td
-          class="api-docs__cell"
+        </th>
+        <th
+          class="table__cell api-docs__cell"
         >
           <span
-            class="paragraph"
+            class="paragraph paragraph--no-padding"
           />
-        </td>
-        <td
-          class="api-docs__cell"
+        </th>
+        <th
+          class="table__cell api-docs__cell"
         >
           <span
-            class="paragraph"
+            class="paragraph paragraph--no-padding"
           >
             None
           </span>
-        </td>
-        <td
-          class="api-docs__cell"
+        </th>
+        <th
+          class="table__cell api-docs__cell"
         >
           <span
-            class="paragraph api-docs__description"
+            class="paragraph paragraph--no-padding api-docs__description"
           >
             Load all blogs. If not admin, only non-deleted, published blogs will be loaded
           </span>
-        </td>
+        </th>
       </tr>
-      <tr>
-        <td
-          class="api-docs__cell"
+      <tr
+        class="table__row"
+      >
+        <th
+          class="table__cell api-docs__cell"
         >
           <a
             aria-label="/blogs/load/:id (opens in a new tab)"
@@ -1942,47 +2008,49 @@ exports[`<ApiDocs /> should render correctly 1`] = `
               </svg>
             </div>
           </a>
-        </td>
-        <td
-          class="api-docs__cell"
+        </th>
+        <th
+          class="table__cell api-docs__cell"
         >
           <span
-            class="paragraph api-docs__method"
+            class="paragraph paragraph--no-padding api-docs__method"
           >
             GET
           </span>
-        </td>
-        <td
-          class="api-docs__cell"
+        </th>
+        <th
+          class="table__cell api-docs__cell"
         >
           <span
-            class="paragraph"
+            class="paragraph paragraph--no-padding"
           >
             id: the blog ID to load
           </span>
-        </td>
-        <td
-          class="api-docs__cell"
+        </th>
+        <th
+          class="table__cell api-docs__cell"
         >
           <span
-            class="paragraph"
+            class="paragraph paragraph--no-padding"
           >
             None
           </span>
-        </td>
-        <td
-          class="api-docs__cell"
+        </th>
+        <th
+          class="table__cell api-docs__cell"
         >
           <span
-            class="paragraph api-docs__description"
+            class="paragraph paragraph--no-padding api-docs__description"
           >
             Load a single blog. If not admin, will fail if deleted or not published
           </span>
-        </td>
+        </th>
       </tr>
-      <tr>
-        <td
-          class="api-docs__cell"
+      <tr
+        class="table__row"
+      >
+        <th
+          class="table__cell api-docs__cell"
         >
           <a
             aria-label="/blogs/update (opens in a new tab)"
@@ -2008,45 +2076,47 @@ exports[`<ApiDocs /> should render correctly 1`] = `
               </svg>
             </div>
           </a>
-        </td>
-        <td
-          class="api-docs__cell"
+        </th>
+        <th
+          class="table__cell api-docs__cell"
         >
           <span
-            class="paragraph api-docs__method"
+            class="paragraph paragraph--no-padding api-docs__method"
           >
             POST
           </span>
-        </td>
-        <td
-          class="api-docs__cell"
+        </th>
+        <th
+          class="table__cell api-docs__cell"
         >
           <span
-            class="paragraph"
+            class="paragraph paragraph--no-padding"
           />
-        </td>
-        <td
-          class="api-docs__cell"
+        </th>
+        <th
+          class="table__cell api-docs__cell"
         >
           <span
-            class="paragraph"
+            class="paragraph paragraph--no-padding"
           >
             Admin only
           </span>
-        </td>
-        <td
-          class="api-docs__cell"
+        </th>
+        <th
+          class="table__cell api-docs__cell"
         >
           <span
-            class="paragraph api-docs__description"
+            class="paragraph paragraph--no-padding api-docs__description"
           >
             Update a blog
           </span>
-        </td>
+        </th>
       </tr>
-      <tr>
-        <td
-          class="api-docs__cell"
+      <tr
+        class="table__row"
+      >
+        <th
+          class="table__cell api-docs__cell"
         >
           <a
             aria-label="/make-payment/load (opens in a new tab)"
@@ -2072,45 +2142,47 @@ exports[`<ApiDocs /> should render correctly 1`] = `
               </svg>
             </div>
           </a>
-        </td>
-        <td
-          class="api-docs__cell"
+        </th>
+        <th
+          class="table__cell api-docs__cell"
         >
           <span
-            class="paragraph api-docs__method"
+            class="paragraph paragraph--no-padding api-docs__method"
           >
             POST
           </span>
-        </td>
-        <td
-          class="api-docs__cell"
+        </th>
+        <th
+          class="table__cell api-docs__cell"
         >
           <span
-            class="paragraph"
+            class="paragraph paragraph--no-padding"
           />
-        </td>
-        <td
-          class="api-docs__cell"
+        </th>
+        <th
+          class="table__cell api-docs__cell"
         >
           <span
-            class="paragraph"
+            class="paragraph paragraph--no-padding"
           >
             TODO
           </span>
-        </td>
-        <td
-          class="api-docs__cell"
+        </th>
+        <th
+          class="table__cell api-docs__cell"
         >
           <span
-            class="paragraph api-docs__description"
+            class="paragraph paragraph--no-padding api-docs__description"
           >
             TODO
           </span>
-        </td>
+        </th>
       </tr>
-      <tr>
-        <td
-          class="api-docs__cell"
+      <tr
+        class="table__row"
+      >
+        <th
+          class="table__cell api-docs__cell"
         >
           <a
             aria-label="/make-payment/create-intent (opens in a new tab)"
@@ -2136,45 +2208,47 @@ exports[`<ApiDocs /> should render correctly 1`] = `
               </svg>
             </div>
           </a>
-        </td>
-        <td
-          class="api-docs__cell"
+        </th>
+        <th
+          class="table__cell api-docs__cell"
         >
           <span
-            class="paragraph api-docs__method"
+            class="paragraph paragraph--no-padding api-docs__method"
           >
             POST
           </span>
-        </td>
-        <td
-          class="api-docs__cell"
+        </th>
+        <th
+          class="table__cell api-docs__cell"
         >
           <span
-            class="paragraph"
+            class="paragraph paragraph--no-padding"
           />
-        </td>
-        <td
-          class="api-docs__cell"
+        </th>
+        <th
+          class="table__cell api-docs__cell"
         >
           <span
-            class="paragraph"
+            class="paragraph paragraph--no-padding"
           >
             TODO
           </span>
-        </td>
-        <td
-          class="api-docs__cell"
+        </th>
+        <th
+          class="table__cell api-docs__cell"
         >
           <span
-            class="paragraph api-docs__description"
+            class="paragraph paragraph--no-padding api-docs__description"
           >
             TODO
           </span>
-        </td>
+        </th>
       </tr>
-      <tr>
-        <td
-          class="api-docs__cell"
+      <tr
+        class="table__row"
+      >
+        <th
+          class="table__cell api-docs__cell"
         >
           <a
             aria-label="/make-payment/resend-receipt (opens in a new tab)"
@@ -2200,45 +2274,47 @@ exports[`<ApiDocs /> should render correctly 1`] = `
               </svg>
             </div>
           </a>
-        </td>
-        <td
-          class="api-docs__cell"
+        </th>
+        <th
+          class="table__cell api-docs__cell"
         >
           <span
-            class="paragraph api-docs__method"
+            class="paragraph paragraph--no-padding api-docs__method"
           >
             POST
           </span>
-        </td>
-        <td
-          class="api-docs__cell"
+        </th>
+        <th
+          class="table__cell api-docs__cell"
         >
           <span
-            class="paragraph"
+            class="paragraph paragraph--no-padding"
           />
-        </td>
-        <td
-          class="api-docs__cell"
+        </th>
+        <th
+          class="table__cell api-docs__cell"
         >
           <span
-            class="paragraph"
+            class="paragraph paragraph--no-padding"
           >
             Admin only
           </span>
-        </td>
-        <td
-          class="api-docs__cell"
+        </th>
+        <th
+          class="table__cell api-docs__cell"
         >
           <span
-            class="paragraph api-docs__description"
+            class="paragraph paragraph--no-padding api-docs__description"
           >
             TODO
           </span>
-        </td>
+        </th>
       </tr>
-      <tr>
-        <td
-          class="api-docs__cell"
+      <tr
+        class="table__row"
+      >
+        <th
+          class="table__cell api-docs__cell"
         >
           <a
             aria-label="/payments/create (opens in a new tab)"
@@ -2264,45 +2340,47 @@ exports[`<ApiDocs /> should render correctly 1`] = `
               </svg>
             </div>
           </a>
-        </td>
-        <td
-          class="api-docs__cell"
+        </th>
+        <th
+          class="table__cell api-docs__cell"
         >
           <span
-            class="paragraph api-docs__method"
+            class="paragraph paragraph--no-padding api-docs__method"
           >
             POST
           </span>
-        </td>
-        <td
-          class="api-docs__cell"
+        </th>
+        <th
+          class="table__cell api-docs__cell"
         >
           <span
-            class="paragraph"
+            class="paragraph paragraph--no-padding"
           />
-        </td>
-        <td
-          class="api-docs__cell"
+        </th>
+        <th
+          class="table__cell api-docs__cell"
         >
           <span
-            class="paragraph"
+            class="paragraph paragraph--no-padding"
           >
             TODO
           </span>
-        </td>
-        <td
-          class="api-docs__cell"
+        </th>
+        <th
+          class="table__cell api-docs__cell"
         >
           <span
-            class="paragraph api-docs__description"
+            class="paragraph paragraph--no-padding api-docs__description"
           >
             TODO
           </span>
-        </td>
+        </th>
       </tr>
-      <tr>
-        <td
-          class="api-docs__cell"
+      <tr
+        class="table__row"
+      >
+        <th
+          class="table__cell api-docs__cell"
         >
           <a
             aria-label="/payments/delete (opens in a new tab)"
@@ -2328,45 +2406,47 @@ exports[`<ApiDocs /> should render correctly 1`] = `
               </svg>
             </div>
           </a>
-        </td>
-        <td
-          class="api-docs__cell"
+        </th>
+        <th
+          class="table__cell api-docs__cell"
         >
           <span
-            class="paragraph api-docs__method"
+            class="paragraph paragraph--no-padding api-docs__method"
           >
             POST
           </span>
-        </td>
-        <td
-          class="api-docs__cell"
+        </th>
+        <th
+          class="table__cell api-docs__cell"
         >
           <span
-            class="paragraph"
+            class="paragraph paragraph--no-padding"
           />
-        </td>
-        <td
-          class="api-docs__cell"
+        </th>
+        <th
+          class="table__cell api-docs__cell"
         >
           <span
-            class="paragraph"
+            class="paragraph paragraph--no-padding"
           >
             TODO
           </span>
-        </td>
-        <td
-          class="api-docs__cell"
+        </th>
+        <th
+          class="table__cell api-docs__cell"
         >
           <span
-            class="paragraph api-docs__description"
+            class="paragraph paragraph--no-padding api-docs__description"
           >
             TODO
           </span>
-        </td>
+        </th>
       </tr>
-      <tr>
-        <td
-          class="api-docs__cell"
+      <tr
+        class="table__row"
+      >
+        <th
+          class="table__cell api-docs__cell"
         >
           <a
             aria-label="/payments/load-all (opens in a new tab)"
@@ -2392,45 +2472,47 @@ exports[`<ApiDocs /> should render correctly 1`] = `
               </svg>
             </div>
           </a>
-        </td>
-        <td
-          class="api-docs__cell"
+        </th>
+        <th
+          class="table__cell api-docs__cell"
         >
           <span
-            class="paragraph api-docs__method"
+            class="paragraph paragraph--no-padding api-docs__method"
           >
             GET
           </span>
-        </td>
-        <td
-          class="api-docs__cell"
+        </th>
+        <th
+          class="table__cell api-docs__cell"
         >
           <span
-            class="paragraph"
+            class="paragraph paragraph--no-padding"
           />
-        </td>
-        <td
-          class="api-docs__cell"
+        </th>
+        <th
+          class="table__cell api-docs__cell"
         >
           <span
-            class="paragraph"
+            class="paragraph paragraph--no-padding"
           >
             TODO
           </span>
-        </td>
-        <td
-          class="api-docs__cell"
+        </th>
+        <th
+          class="table__cell api-docs__cell"
         >
           <span
-            class="paragraph api-docs__description"
+            class="paragraph paragraph--no-padding api-docs__description"
           >
             TODO
           </span>
-        </td>
+        </th>
       </tr>
-      <tr>
-        <td
-          class="api-docs__cell"
+      <tr
+        class="table__row"
+      >
+        <th
+          class="table__cell api-docs__cell"
         >
           <a
             aria-label="/support/create (opens in a new tab)"
@@ -2456,45 +2538,47 @@ exports[`<ApiDocs /> should render correctly 1`] = `
               </svg>
             </div>
           </a>
-        </td>
-        <td
-          class="api-docs__cell"
+        </th>
+        <th
+          class="table__cell api-docs__cell"
         >
           <span
-            class="paragraph api-docs__method"
+            class="paragraph paragraph--no-padding api-docs__method"
           >
             POST
           </span>
-        </td>
-        <td
-          class="api-docs__cell"
+        </th>
+        <th
+          class="table__cell api-docs__cell"
         >
           <span
-            class="paragraph"
+            class="paragraph paragraph--no-padding"
           />
-        </td>
-        <td
-          class="api-docs__cell"
+        </th>
+        <th
+          class="table__cell api-docs__cell"
         >
           <span
-            class="paragraph"
+            class="paragraph paragraph--no-padding"
           >
             Admin only
           </span>
-        </td>
-        <td
-          class="api-docs__cell"
+        </th>
+        <th
+          class="table__cell api-docs__cell"
         >
           <span
-            class="paragraph api-docs__description"
+            class="paragraph paragraph--no-padding api-docs__description"
           >
             TODO
           </span>
-        </td>
+        </th>
       </tr>
-      <tr>
-        <td
-          class="api-docs__cell"
+      <tr
+        class="table__row"
+      >
+        <th
+          class="table__cell api-docs__cell"
         >
           <a
             aria-label="/support/delete (opens in a new tab)"
@@ -2520,45 +2604,47 @@ exports[`<ApiDocs /> should render correctly 1`] = `
               </svg>
             </div>
           </a>
-        </td>
-        <td
-          class="api-docs__cell"
+        </th>
+        <th
+          class="table__cell api-docs__cell"
         >
           <span
-            class="paragraph api-docs__method"
+            class="paragraph paragraph--no-padding api-docs__method"
           >
             POST
           </span>
-        </td>
-        <td
-          class="api-docs__cell"
+        </th>
+        <th
+          class="table__cell api-docs__cell"
         >
           <span
-            class="paragraph"
+            class="paragraph paragraph--no-padding"
           />
-        </td>
-        <td
-          class="api-docs__cell"
+        </th>
+        <th
+          class="table__cell api-docs__cell"
         >
           <span
-            class="paragraph"
+            class="paragraph paragraph--no-padding"
           >
             Admin only
           </span>
-        </td>
-        <td
-          class="api-docs__cell"
+        </th>
+        <th
+          class="table__cell api-docs__cell"
         >
           <span
-            class="paragraph api-docs__description"
+            class="paragraph paragraph--no-padding api-docs__description"
           >
             TODO
           </span>
-        </td>
+        </th>
       </tr>
-      <tr>
-        <td
-          class="api-docs__cell"
+      <tr
+        class="table__row"
+      >
+        <th
+          class="table__cell api-docs__cell"
         >
           <a
             aria-label="/support/load (opens in a new tab)"
@@ -2584,41 +2670,41 @@ exports[`<ApiDocs /> should render correctly 1`] = `
               </svg>
             </div>
           </a>
-        </td>
-        <td
-          class="api-docs__cell"
+        </th>
+        <th
+          class="table__cell api-docs__cell"
         >
           <span
-            class="paragraph api-docs__method"
+            class="paragraph paragraph--no-padding api-docs__method"
           >
             GET
           </span>
-        </td>
-        <td
-          class="api-docs__cell"
+        </th>
+        <th
+          class="table__cell api-docs__cell"
         >
           <span
-            class="paragraph"
+            class="paragraph paragraph--no-padding"
           />
-        </td>
-        <td
-          class="api-docs__cell"
+        </th>
+        <th
+          class="table__cell api-docs__cell"
         >
           <span
-            class="paragraph"
+            class="paragraph paragraph--no-padding"
           >
             None
           </span>
-        </td>
-        <td
-          class="api-docs__cell"
+        </th>
+        <th
+          class="table__cell api-docs__cell"
         >
           <span
-            class="paragraph api-docs__description"
+            class="paragraph paragraph--no-padding api-docs__description"
           >
             TODO
           </span>
-        </td>
+        </th>
       </tr>
     </tbody>
   </table>

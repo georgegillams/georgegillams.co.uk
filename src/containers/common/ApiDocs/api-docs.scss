@@ -4,16 +4,6 @@
   &__table {
     width: 100%;
     margin-top: $paragraph-margin-top;
-    border-collapse: collapse;
-  }
-
-  &__cell {
-    padding: 0.4rem;
-    border: 1px solid $not-black;
-
-    @media (prefers-color-scheme: dark) {
-      border-color: gray;
-    }
   }
 
   &__description {
