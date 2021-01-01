@@ -196,56 +196,190 @@ exports[`<Home /> should render correctly 1`] = `
     </div>
   </div>
   <div
-    class="life-section__outer home__work-section"
+    class="home__life-section"
   >
     <div
-      class="life-section__content"
+      class="life-section__outer"
     >
       <div
-        class="section__outer"
+        class="image__outer life-section__image-above-tablet life-section__image-above-tablet--left"
+        style="margin-top: 5rem; transform: rotate(NaNdeg);"
       >
-        <h2
-          class="section__heading"
-          id="life"
+        <div
+          class="image__placeholder"
+          style="padding-bottom: 150%;"
         >
-          Life
-        </h2>
+          <div
+            class="image__spinner-container"
+          >
+            <div
+              class="skeleton__outer image__skeleton"
+            >
+              <div
+                class="skeleton__shimmer"
+                style="margin-left: -0px;"
+              />
+            </div>
+          </div>
+          <img
+            alt=""
+            class="image__img image__img--hidden image__img--light"
+          />
+          <img
+            alt=""
+            class="image__img image__img--hidden image__img--dark"
+          />
+        </div>
+      </div>
+      <div
+        class="life-section__content"
+      >
+        <div
+          class="section__outer"
+        >
+          <h2
+            class="section__heading"
+            id="life"
+          >
+            Life
+          </h2>
+          <span
+            class="paragraph life-section__paragraph"
+          >
+            I love travel and photography, and occasionally write other stuff.
+            <br />
+            <a
+              class="text-link text-link--text-link text-link--no-padding text-link--inline"
+              href="/blog"
+            >
+              Blog
+            </a>
+            <br />
+            <a
+              class="text-link text-link--text-link text-link--no-padding text-link--inline"
+              href="/travel"
+            >
+              Travel
+            </a>
+            <br />
+            <a
+              class="text-link text-link--text-link text-link--no-padding text-link--inline"
+              href="/photography"
+            >
+              Photography
+            </a>
+          </span>
+        </div>
         <span
           class="paragraph life-section__paragraph"
         >
-          I love travel and photography, and occasionally write other stuff.
-          <br />
-          <a
-            class="text-link text-link--text-link text-link--no-padding text-link--inline"
-            href="/blog"
-          >
-            Blog
-          </a>
-          <br />
-          <a
-            class="text-link text-link--text-link text-link--no-padding text-link--inline"
-            href="/travel"
-          >
-            Travel
-          </a>
-          <br />
-          <a
-            class="text-link text-link--text-link text-link--no-padding text-link--inline"
-            href="/photography"
-          >
-            Photography
-          </a>
+          I got engaged recently in Iceland, and live with my amazing fiancée and Tigger the cat.
         </span>
       </div>
-      <span
-        class="paragraph life-section__paragraph"
+      <div
+        class="image__outer life-section__image-above-tablet life-section__image-above-tablet--right"
+        style="margin-top: 8rem; transform: rotate(NaNdeg);"
       >
-        I got engaged recently in Iceland, and live with my amazing fiancée and Tigger the cat.
-      </span>
+        <div
+          class="image__placeholder"
+          style="padding-bottom: 66.66666666666667%;"
+        >
+          <div
+            class="image__spinner-container"
+          >
+            <div
+              class="skeleton__outer image__skeleton"
+            >
+              <div
+                class="skeleton__shimmer"
+                style="margin-left: -0px;"
+              />
+            </div>
+          </div>
+          <img
+            alt=""
+            class="image__img image__img--hidden image__img--light"
+          />
+          <img
+            alt=""
+            class="image__img image__img--hidden image__img--dark"
+          />
+        </div>
+      </div>
+      <div
+        class="life-section__mobile-image-container"
+      >
+        <div
+          class="life-section__mobile-image-wrapper life-section__mobile-image-wrapper--left"
+        >
+          <div
+            class="image__outer life-section__image-below-tablet life-section__image-below-tablet--left life-section__image-below-tablet--left-hide"
+          >
+            <div
+              class="image__placeholder"
+              style="padding-bottom: 150%;"
+            >
+              <div
+                class="image__spinner-container"
+              >
+                <div
+                  class="skeleton__outer image__skeleton"
+                >
+                  <div
+                    class="skeleton__shimmer"
+                    style="margin-left: -0px;"
+                  />
+                </div>
+              </div>
+              <img
+                alt=""
+                class="image__img image__img--hidden image__img--light"
+              />
+              <img
+                alt=""
+                class="image__img image__img--hidden image__img--dark"
+              />
+            </div>
+          </div>
+        </div>
+        <div
+          class="life-section__mobile-image-wrapper life-section__mobile-image-wrapper--right"
+        >
+          <div
+            class="image__outer life-section__image-below-tablet life-section__image-below-tablet--right life-section__image-below-tablet--right-hide"
+          >
+            <div
+              class="image__placeholder"
+              style="padding-bottom: 66.66666666666667%;"
+            >
+              <div
+                class="image__spinner-container"
+              >
+                <div
+                  class="skeleton__outer image__skeleton"
+                >
+                  <div
+                    class="skeleton__shimmer"
+                    style="margin-left: -0px;"
+                  />
+                </div>
+              </div>
+              <img
+                alt=""
+                class="image__img image__img--hidden image__img--light"
+              />
+              <img
+                alt=""
+                class="image__img image__img--hidden image__img--dark"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
   <div
-    class="home__work-section"
+    class="home__photo-section"
   >
     <div
       class="photo-section__outer"
@@ -290,7 +424,7 @@ exports[`<Home /> should render correctly 1`] = `
     </div>
   </div>
   <div
-    class="home__work-section"
+    class="home__about-section"
   >
     <div
       class="about-section__outer"
@@ -624,56 +758,190 @@ exports[`<Home /> should render correctly with admin user 1`] = `
     </div>
   </div>
   <div
-    class="life-section__outer home__work-section"
+    class="home__life-section"
   >
     <div
-      class="life-section__content"
+      class="life-section__outer"
     >
       <div
-        class="section__outer"
+        class="image__outer life-section__image-above-tablet life-section__image-above-tablet--left"
+        style="margin-top: 5rem; transform: rotate(NaNdeg);"
       >
-        <h2
-          class="section__heading"
-          id="life"
+        <div
+          class="image__placeholder"
+          style="padding-bottom: 150%;"
         >
-          Life
-        </h2>
+          <div
+            class="image__spinner-container"
+          >
+            <div
+              class="skeleton__outer image__skeleton"
+            >
+              <div
+                class="skeleton__shimmer"
+                style="margin-left: -0px;"
+              />
+            </div>
+          </div>
+          <img
+            alt=""
+            class="image__img image__img--hidden image__img--light"
+          />
+          <img
+            alt=""
+            class="image__img image__img--hidden image__img--dark"
+          />
+        </div>
+      </div>
+      <div
+        class="life-section__content"
+      >
+        <div
+          class="section__outer"
+        >
+          <h2
+            class="section__heading"
+            id="life"
+          >
+            Life
+          </h2>
+          <span
+            class="paragraph life-section__paragraph"
+          >
+            I love travel and photography, and occasionally write other stuff.
+            <br />
+            <a
+              class="text-link text-link--text-link text-link--no-padding text-link--inline"
+              href="/blog"
+            >
+              Blog
+            </a>
+            <br />
+            <a
+              class="text-link text-link--text-link text-link--no-padding text-link--inline"
+              href="/travel"
+            >
+              Travel
+            </a>
+            <br />
+            <a
+              class="text-link text-link--text-link text-link--no-padding text-link--inline"
+              href="/photography"
+            >
+              Photography
+            </a>
+          </span>
+        </div>
         <span
           class="paragraph life-section__paragraph"
         >
-          I love travel and photography, and occasionally write other stuff.
-          <br />
-          <a
-            class="text-link text-link--text-link text-link--no-padding text-link--inline"
-            href="/blog"
-          >
-            Blog
-          </a>
-          <br />
-          <a
-            class="text-link text-link--text-link text-link--no-padding text-link--inline"
-            href="/travel"
-          >
-            Travel
-          </a>
-          <br />
-          <a
-            class="text-link text-link--text-link text-link--no-padding text-link--inline"
-            href="/photography"
-          >
-            Photography
-          </a>
+          I got engaged recently in Iceland, and live with my amazing fiancée and Tigger the cat.
         </span>
       </div>
-      <span
-        class="paragraph life-section__paragraph"
+      <div
+        class="image__outer life-section__image-above-tablet life-section__image-above-tablet--right"
+        style="margin-top: 8rem; transform: rotate(NaNdeg);"
       >
-        I got engaged recently in Iceland, and live with my amazing fiancée and Tigger the cat.
-      </span>
+        <div
+          class="image__placeholder"
+          style="padding-bottom: 66.66666666666667%;"
+        >
+          <div
+            class="image__spinner-container"
+          >
+            <div
+              class="skeleton__outer image__skeleton"
+            >
+              <div
+                class="skeleton__shimmer"
+                style="margin-left: -0px;"
+              />
+            </div>
+          </div>
+          <img
+            alt=""
+            class="image__img image__img--hidden image__img--light"
+          />
+          <img
+            alt=""
+            class="image__img image__img--hidden image__img--dark"
+          />
+        </div>
+      </div>
+      <div
+        class="life-section__mobile-image-container"
+      >
+        <div
+          class="life-section__mobile-image-wrapper life-section__mobile-image-wrapper--left"
+        >
+          <div
+            class="image__outer life-section__image-below-tablet life-section__image-below-tablet--left life-section__image-below-tablet--left-hide"
+          >
+            <div
+              class="image__placeholder"
+              style="padding-bottom: 150%;"
+            >
+              <div
+                class="image__spinner-container"
+              >
+                <div
+                  class="skeleton__outer image__skeleton"
+                >
+                  <div
+                    class="skeleton__shimmer"
+                    style="margin-left: -0px;"
+                  />
+                </div>
+              </div>
+              <img
+                alt=""
+                class="image__img image__img--hidden image__img--light"
+              />
+              <img
+                alt=""
+                class="image__img image__img--hidden image__img--dark"
+              />
+            </div>
+          </div>
+        </div>
+        <div
+          class="life-section__mobile-image-wrapper life-section__mobile-image-wrapper--right"
+        >
+          <div
+            class="image__outer life-section__image-below-tablet life-section__image-below-tablet--right life-section__image-below-tablet--right-hide"
+          >
+            <div
+              class="image__placeholder"
+              style="padding-bottom: 66.66666666666667%;"
+            >
+              <div
+                class="image__spinner-container"
+              >
+                <div
+                  class="skeleton__outer image__skeleton"
+                >
+                  <div
+                    class="skeleton__shimmer"
+                    style="margin-left: -0px;"
+                  />
+                </div>
+              </div>
+              <img
+                alt=""
+                class="image__img image__img--hidden image__img--light"
+              />
+              <img
+                alt=""
+                class="image__img image__img--hidden image__img--dark"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
   <div
-    class="home__work-section"
+    class="home__photo-section"
   >
     <div
       class="photo-section__outer"
@@ -718,7 +986,7 @@ exports[`<Home /> should render correctly with admin user 1`] = `
     </div>
   </div>
   <div
-    class="home__work-section"
+    class="home__about-section"
   >
     <div
       class="about-section__outer"
@@ -1052,56 +1320,190 @@ exports[`<Home /> should render correctly with no user 1`] = `
     </div>
   </div>
   <div
-    class="life-section__outer home__work-section"
+    class="home__life-section"
   >
     <div
-      class="life-section__content"
+      class="life-section__outer"
     >
       <div
-        class="section__outer"
+        class="image__outer life-section__image-above-tablet life-section__image-above-tablet--left"
+        style="margin-top: 5rem; transform: rotate(NaNdeg);"
       >
-        <h2
-          class="section__heading"
-          id="life"
+        <div
+          class="image__placeholder"
+          style="padding-bottom: 150%;"
         >
-          Life
-        </h2>
+          <div
+            class="image__spinner-container"
+          >
+            <div
+              class="skeleton__outer image__skeleton"
+            >
+              <div
+                class="skeleton__shimmer"
+                style="margin-left: -0px;"
+              />
+            </div>
+          </div>
+          <img
+            alt=""
+            class="image__img image__img--hidden image__img--light"
+          />
+          <img
+            alt=""
+            class="image__img image__img--hidden image__img--dark"
+          />
+        </div>
+      </div>
+      <div
+        class="life-section__content"
+      >
+        <div
+          class="section__outer"
+        >
+          <h2
+            class="section__heading"
+            id="life"
+          >
+            Life
+          </h2>
+          <span
+            class="paragraph life-section__paragraph"
+          >
+            I love travel and photography, and occasionally write other stuff.
+            <br />
+            <a
+              class="text-link text-link--text-link text-link--no-padding text-link--inline"
+              href="/blog"
+            >
+              Blog
+            </a>
+            <br />
+            <a
+              class="text-link text-link--text-link text-link--no-padding text-link--inline"
+              href="/travel"
+            >
+              Travel
+            </a>
+            <br />
+            <a
+              class="text-link text-link--text-link text-link--no-padding text-link--inline"
+              href="/photography"
+            >
+              Photography
+            </a>
+          </span>
+        </div>
         <span
           class="paragraph life-section__paragraph"
         >
-          I love travel and photography, and occasionally write other stuff.
-          <br />
-          <a
-            class="text-link text-link--text-link text-link--no-padding text-link--inline"
-            href="/blog"
-          >
-            Blog
-          </a>
-          <br />
-          <a
-            class="text-link text-link--text-link text-link--no-padding text-link--inline"
-            href="/travel"
-          >
-            Travel
-          </a>
-          <br />
-          <a
-            class="text-link text-link--text-link text-link--no-padding text-link--inline"
-            href="/photography"
-          >
-            Photography
-          </a>
+          I got engaged recently in Iceland, and live with my amazing fiancée and Tigger the cat.
         </span>
       </div>
-      <span
-        class="paragraph life-section__paragraph"
+      <div
+        class="image__outer life-section__image-above-tablet life-section__image-above-tablet--right"
+        style="margin-top: 8rem; transform: rotate(NaNdeg);"
       >
-        I got engaged recently in Iceland, and live with my amazing fiancée and Tigger the cat.
-      </span>
+        <div
+          class="image__placeholder"
+          style="padding-bottom: 66.66666666666667%;"
+        >
+          <div
+            class="image__spinner-container"
+          >
+            <div
+              class="skeleton__outer image__skeleton"
+            >
+              <div
+                class="skeleton__shimmer"
+                style="margin-left: -0px;"
+              />
+            </div>
+          </div>
+          <img
+            alt=""
+            class="image__img image__img--hidden image__img--light"
+          />
+          <img
+            alt=""
+            class="image__img image__img--hidden image__img--dark"
+          />
+        </div>
+      </div>
+      <div
+        class="life-section__mobile-image-container"
+      >
+        <div
+          class="life-section__mobile-image-wrapper life-section__mobile-image-wrapper--left"
+        >
+          <div
+            class="image__outer life-section__image-below-tablet life-section__image-below-tablet--left life-section__image-below-tablet--left-hide"
+          >
+            <div
+              class="image__placeholder"
+              style="padding-bottom: 150%;"
+            >
+              <div
+                class="image__spinner-container"
+              >
+                <div
+                  class="skeleton__outer image__skeleton"
+                >
+                  <div
+                    class="skeleton__shimmer"
+                    style="margin-left: -0px;"
+                  />
+                </div>
+              </div>
+              <img
+                alt=""
+                class="image__img image__img--hidden image__img--light"
+              />
+              <img
+                alt=""
+                class="image__img image__img--hidden image__img--dark"
+              />
+            </div>
+          </div>
+        </div>
+        <div
+          class="life-section__mobile-image-wrapper life-section__mobile-image-wrapper--right"
+        >
+          <div
+            class="image__outer life-section__image-below-tablet life-section__image-below-tablet--right life-section__image-below-tablet--right-hide"
+          >
+            <div
+              class="image__placeholder"
+              style="padding-bottom: 66.66666666666667%;"
+            >
+              <div
+                class="image__spinner-container"
+              >
+                <div
+                  class="skeleton__outer image__skeleton"
+                >
+                  <div
+                    class="skeleton__shimmer"
+                    style="margin-left: -0px;"
+                  />
+                </div>
+              </div>
+              <img
+                alt=""
+                class="image__img image__img--hidden image__img--light"
+              />
+              <img
+                alt=""
+                class="image__img image__img--hidden image__img--dark"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
   <div
-    class="home__work-section"
+    class="home__photo-section"
   >
     <div
       class="photo-section__outer"
@@ -1146,7 +1548,7 @@ exports[`<Home /> should render correctly with no user 1`] = `
     </div>
   </div>
   <div
-    class="home__work-section"
+    class="home__about-section"
   >
     <div
       class="about-section__outer"
@@ -1480,56 +1882,190 @@ exports[`<Home /> should render correctly with user 1`] = `
     </div>
   </div>
   <div
-    class="life-section__outer home__work-section"
+    class="home__life-section"
   >
     <div
-      class="life-section__content"
+      class="life-section__outer"
     >
       <div
-        class="section__outer"
+        class="image__outer life-section__image-above-tablet life-section__image-above-tablet--left"
+        style="margin-top: 5rem; transform: rotate(NaNdeg);"
       >
-        <h2
-          class="section__heading"
-          id="life"
+        <div
+          class="image__placeholder"
+          style="padding-bottom: 150%;"
         >
-          Life
-        </h2>
+          <div
+            class="image__spinner-container"
+          >
+            <div
+              class="skeleton__outer image__skeleton"
+            >
+              <div
+                class="skeleton__shimmer"
+                style="margin-left: -0px;"
+              />
+            </div>
+          </div>
+          <img
+            alt=""
+            class="image__img image__img--hidden image__img--light"
+          />
+          <img
+            alt=""
+            class="image__img image__img--hidden image__img--dark"
+          />
+        </div>
+      </div>
+      <div
+        class="life-section__content"
+      >
+        <div
+          class="section__outer"
+        >
+          <h2
+            class="section__heading"
+            id="life"
+          >
+            Life
+          </h2>
+          <span
+            class="paragraph life-section__paragraph"
+          >
+            I love travel and photography, and occasionally write other stuff.
+            <br />
+            <a
+              class="text-link text-link--text-link text-link--no-padding text-link--inline"
+              href="/blog"
+            >
+              Blog
+            </a>
+            <br />
+            <a
+              class="text-link text-link--text-link text-link--no-padding text-link--inline"
+              href="/travel"
+            >
+              Travel
+            </a>
+            <br />
+            <a
+              class="text-link text-link--text-link text-link--no-padding text-link--inline"
+              href="/photography"
+            >
+              Photography
+            </a>
+          </span>
+        </div>
         <span
           class="paragraph life-section__paragraph"
         >
-          I love travel and photography, and occasionally write other stuff.
-          <br />
-          <a
-            class="text-link text-link--text-link text-link--no-padding text-link--inline"
-            href="/blog"
-          >
-            Blog
-          </a>
-          <br />
-          <a
-            class="text-link text-link--text-link text-link--no-padding text-link--inline"
-            href="/travel"
-          >
-            Travel
-          </a>
-          <br />
-          <a
-            class="text-link text-link--text-link text-link--no-padding text-link--inline"
-            href="/photography"
-          >
-            Photography
-          </a>
+          I got engaged recently in Iceland, and live with my amazing fiancée and Tigger the cat.
         </span>
       </div>
-      <span
-        class="paragraph life-section__paragraph"
+      <div
+        class="image__outer life-section__image-above-tablet life-section__image-above-tablet--right"
+        style="margin-top: 8rem; transform: rotate(NaNdeg);"
       >
-        I got engaged recently in Iceland, and live with my amazing fiancée and Tigger the cat.
-      </span>
+        <div
+          class="image__placeholder"
+          style="padding-bottom: 66.66666666666667%;"
+        >
+          <div
+            class="image__spinner-container"
+          >
+            <div
+              class="skeleton__outer image__skeleton"
+            >
+              <div
+                class="skeleton__shimmer"
+                style="margin-left: -0px;"
+              />
+            </div>
+          </div>
+          <img
+            alt=""
+            class="image__img image__img--hidden image__img--light"
+          />
+          <img
+            alt=""
+            class="image__img image__img--hidden image__img--dark"
+          />
+        </div>
+      </div>
+      <div
+        class="life-section__mobile-image-container"
+      >
+        <div
+          class="life-section__mobile-image-wrapper life-section__mobile-image-wrapper--left"
+        >
+          <div
+            class="image__outer life-section__image-below-tablet life-section__image-below-tablet--left life-section__image-below-tablet--left-hide"
+          >
+            <div
+              class="image__placeholder"
+              style="padding-bottom: 150%;"
+            >
+              <div
+                class="image__spinner-container"
+              >
+                <div
+                  class="skeleton__outer image__skeleton"
+                >
+                  <div
+                    class="skeleton__shimmer"
+                    style="margin-left: -0px;"
+                  />
+                </div>
+              </div>
+              <img
+                alt=""
+                class="image__img image__img--hidden image__img--light"
+              />
+              <img
+                alt=""
+                class="image__img image__img--hidden image__img--dark"
+              />
+            </div>
+          </div>
+        </div>
+        <div
+          class="life-section__mobile-image-wrapper life-section__mobile-image-wrapper--right"
+        >
+          <div
+            class="image__outer life-section__image-below-tablet life-section__image-below-tablet--right life-section__image-below-tablet--right-hide"
+          >
+            <div
+              class="image__placeholder"
+              style="padding-bottom: 66.66666666666667%;"
+            >
+              <div
+                class="image__spinner-container"
+              >
+                <div
+                  class="skeleton__outer image__skeleton"
+                >
+                  <div
+                    class="skeleton__shimmer"
+                    style="margin-left: -0px;"
+                  />
+                </div>
+              </div>
+              <img
+                alt=""
+                class="image__img image__img--hidden image__img--light"
+              />
+              <img
+                alt=""
+                class="image__img image__img--hidden image__img--dark"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
   <div
-    class="home__work-section"
+    class="home__photo-section"
   >
     <div
       class="photo-section__outer"
@@ -1574,7 +2110,7 @@ exports[`<Home /> should render correctly with user 1`] = `
     </div>
   </div>
   <div
-    class="home__work-section"
+    class="home__about-section"
   >
     <div
       class="about-section__outer"

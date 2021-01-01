@@ -17,9 +17,9 @@ const HomePage = props => {
   return (
     <PageTitle name="Hey! I'm George." pageTitle="Home" className={getClassName('home__title-section')} {...rest}>
       <WorkSection className={getClassName('home__work-section')} />
-      <LifeSection className={getClassName('home__work-section')} />
-      <PhotoSection className={getClassName('home__work-section')} />
-      <AboutSection className={getClassName('home__work-section')} />
+      <LifeSection className={getClassName('home__life-section')} />
+      <PhotoSection className={getClassName('home__photo-section')} />
+      <AboutSection className={getClassName('home__about-section')} />
     </PageTitle>
   );
 };
