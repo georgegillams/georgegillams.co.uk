@@ -290,10 +290,10 @@ exports[`<Home /> should render correctly 1`] = `
     </div>
   </div>
   <div
-    class="about-section__outer home__work-section"
+    class="home__work-section"
   >
     <div
-      class="about-section__content"
+      class="about-section__outer"
     >
       <span
         class="paragraph about-section__paragraph"
@@ -406,12 +406,23 @@ exports[`<Home /> should render correctly 1`] = `
         </a>
         . I use it to experiment with things, share stuff I've figured out, and allow people to contact me.
       </span>
-      <a
-        class="text-link text-link--text-link text-link--no-padding text-link--inline"
-        href="/contact"
+      <div
+        class="contact-link__outer"
       >
-        Get in touch
-      </a>
+        <div
+          class="contact-link__content"
+        >
+          <a
+            class="text-link text-link--text-link text-link--no-padding text-link--inline contact-link__link"
+            href="/contact"
+          >
+            Get in touch
+          </a>
+          <div
+            class="contact-link__cloud"
+          />
+        </div>
+      </div>
     </div>
   </div>
 </div>
@@ -707,10 +718,10 @@ exports[`<Home /> should render correctly with admin user 1`] = `
     </div>
   </div>
   <div
-    class="about-section__outer home__work-section"
+    class="home__work-section"
   >
     <div
-      class="about-section__content"
+      class="about-section__outer"
     >
       <span
         class="paragraph about-section__paragraph"
@@ -823,12 +834,23 @@ exports[`<Home /> should render correctly with admin user 1`] = `
         </a>
         . I use it to experiment with things, share stuff I've figured out, and allow people to contact me.
       </span>
-      <a
-        class="text-link text-link--text-link text-link--no-padding text-link--inline"
-        href="/contact"
+      <div
+        class="contact-link__outer"
       >
-        Get in touch
-      </a>
+        <div
+          class="contact-link__content"
+        >
+          <a
+            class="text-link text-link--text-link text-link--no-padding text-link--inline contact-link__link"
+            href="/contact"
+          >
+            Get in touch
+          </a>
+          <div
+            class="contact-link__cloud"
+          />
+        </div>
+      </div>
     </div>
   </div>
 </div>
@@ -1124,10 +1146,10 @@ exports[`<Home /> should render correctly with no user 1`] = `
     </div>
   </div>
   <div
-    class="about-section__outer home__work-section"
+    class="home__work-section"
   >
     <div
-      class="about-section__content"
+      class="about-section__outer"
     >
       <span
         class="paragraph about-section__paragraph"
@@ -1240,12 +1262,23 @@ exports[`<Home /> should render correctly with no user 1`] = `
         </a>
         . I use it to experiment with things, share stuff I've figured out, and allow people to contact me.
       </span>
-      <a
-        class="text-link text-link--text-link text-link--no-padding text-link--inline"
-        href="/contact"
+      <div
+        class="contact-link__outer"
       >
-        Get in touch
-      </a>
+        <div
+          class="contact-link__content"
+        >
+          <a
+            class="text-link text-link--text-link text-link--no-padding text-link--inline contact-link__link"
+            href="/contact"
+          >
+            Get in touch
+          </a>
+          <div
+            class="contact-link__cloud"
+          />
+        </div>
+      </div>
     </div>
   </div>
 </div>
@@ -1541,10 +1574,10 @@ exports[`<Home /> should render correctly with user 1`] = `
     </div>
   </div>
   <div
-    class="about-section__outer home__work-section"
+    class="home__work-section"
   >
     <div
-      class="about-section__content"
+      class="about-section__outer"
     >
       <span
         class="paragraph about-section__paragraph"
@@ -1657,12 +1690,23 @@ exports[`<Home /> should render correctly with user 1`] = `
         </a>
         . I use it to experiment with things, share stuff I've figured out, and allow people to contact me.
       </span>
-      <a
-        class="text-link text-link--text-link text-link--no-padding text-link--inline"
-        href="/contact"
+      <div
+        class="contact-link__outer"
       >
-        Get in touch
-      </a>
+        <div
+          class="contact-link__content"
+        >
+          <a
+            class="text-link text-link--text-link text-link--no-padding text-link--inline contact-link__link"
+            href="/contact"
+          >
+            Get in touch
+          </a>
+          <div
+            class="contact-link__cloud"
+          />
+        </div>
+      </div>
     </div>
   </div>
 </div>
