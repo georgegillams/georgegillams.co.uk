@@ -1,0 +1,40 @@
+@import '~utils/tokens';
+
+.contact-link {
+  &__outer {
+    display: flex;
+    width: 100%;
+    min-height: 10rem;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  }
+
+  &__content {
+    position: relative;
+  }
+
+  &__link {
+    font-size: $section-font-size;
+  }
+
+  &__cloud {
+    position: absolute;
+    top: -400%;
+    width: 20rem;
+    height: 20rem;
+    transform: rotate(-20deg);
+    transition: left 0.4s ease-in-out;
+    background-color: $background-color;
+    filter: blur(2rem);
+    pointer-events: none;
+
+    @media (prefers-color-scheme: dark) {
+      background-color: $background-color-invert;
+    }
+
+    &--hide {
+      left: 120%;
+    }
+  }
+}
