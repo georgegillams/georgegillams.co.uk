@@ -246,35 +246,46 @@ exports[`<Home /> should render correctly 1`] = `
   </div>
   <div
     class="home__work-section"
-    style="width: 70%;"
   >
     <div
-      class="image__outer about__image"
+      class="photo-section__outer"
     >
       <div
-        class="image__placeholder"
-        style="padding-bottom: 75.00652911987464%;"
+        class="photo-section__content"
       >
         <div
-          class="image__spinner-container"
+          class="animated-image__outer"
         >
           <div
-            class="skeleton__outer image__skeleton"
+            class="image__outer animated-image__image animated-image__image--hide"
           >
             <div
-              class="skeleton__shimmer"
-              style="margin-left: -0px;"
-            />
+              class="image__placeholder"
+              style="padding-bottom: 75.00652911987464%;"
+            >
+              <div
+                class="image__spinner-container"
+              >
+                <div
+                  class="skeleton__outer image__skeleton"
+                >
+                  <div
+                    class="skeleton__shimmer"
+                    style="margin-left: -0px;"
+                  />
+                </div>
+              </div>
+              <img
+                alt="Me"
+                class="image__img image__img--hidden image__img--light"
+              />
+              <img
+                alt="Me"
+                class="image__img image__img--hidden image__img--dark"
+              />
+            </div>
           </div>
         </div>
-        <img
-          alt="Me"
-          class="image__img image__img--hidden image__img--light"
-        />
-        <img
-          alt="Me"
-          class="image__img image__img--hidden image__img--dark"
-        />
       </div>
     </div>
   </div>
@@ -652,35 +663,46 @@ exports[`<Home /> should render correctly with admin user 1`] = `
   </div>
   <div
     class="home__work-section"
-    style="width: 70%;"
   >
     <div
-      class="image__outer about__image"
+      class="photo-section__outer"
     >
       <div
-        class="image__placeholder"
-        style="padding-bottom: 75.00652911987464%;"
+        class="photo-section__content"
       >
         <div
-          class="image__spinner-container"
+          class="animated-image__outer"
         >
           <div
-            class="skeleton__outer image__skeleton"
+            class="image__outer animated-image__image animated-image__image--hide"
           >
             <div
-              class="skeleton__shimmer"
-              style="margin-left: -0px;"
-            />
+              class="image__placeholder"
+              style="padding-bottom: 75.00652911987464%;"
+            >
+              <div
+                class="image__spinner-container"
+              >
+                <div
+                  class="skeleton__outer image__skeleton"
+                >
+                  <div
+                    class="skeleton__shimmer"
+                    style="margin-left: -0px;"
+                  />
+                </div>
+              </div>
+              <img
+                alt="Me"
+                class="image__img image__img--hidden image__img--light"
+              />
+              <img
+                alt="Me"
+                class="image__img image__img--hidden image__img--dark"
+              />
+            </div>
           </div>
         </div>
-        <img
-          alt="Me"
-          class="image__img image__img--hidden image__img--light"
-        />
-        <img
-          alt="Me"
-          class="image__img image__img--hidden image__img--dark"
-        />
       </div>
     </div>
   </div>
@@ -1058,35 +1080,46 @@ exports[`<Home /> should render correctly with no user 1`] = `
   </div>
   <div
     class="home__work-section"
-    style="width: 70%;"
   >
     <div
-      class="image__outer about__image"
+      class="photo-section__outer"
     >
       <div
-        class="image__placeholder"
-        style="padding-bottom: 75.00652911987464%;"
+        class="photo-section__content"
       >
         <div
-          class="image__spinner-container"
+          class="animated-image__outer"
         >
           <div
-            class="skeleton__outer image__skeleton"
+            class="image__outer animated-image__image animated-image__image--hide"
           >
             <div
-              class="skeleton__shimmer"
-              style="margin-left: -0px;"
-            />
+              class="image__placeholder"
+              style="padding-bottom: 75.00652911987464%;"
+            >
+              <div
+                class="image__spinner-container"
+              >
+                <div
+                  class="skeleton__outer image__skeleton"
+                >
+                  <div
+                    class="skeleton__shimmer"
+                    style="margin-left: -0px;"
+                  />
+                </div>
+              </div>
+              <img
+                alt="Me"
+                class="image__img image__img--hidden image__img--light"
+              />
+              <img
+                alt="Me"
+                class="image__img image__img--hidden image__img--dark"
+              />
+            </div>
           </div>
         </div>
-        <img
-          alt="Me"
-          class="image__img image__img--hidden image__img--light"
-        />
-        <img
-          alt="Me"
-          class="image__img image__img--hidden image__img--dark"
-        />
       </div>
     </div>
   </div>
@@ -1464,35 +1497,46 @@ exports[`<Home /> should render correctly with user 1`] = `
   </div>
   <div
     class="home__work-section"
-    style="width: 70%;"
   >
     <div
-      class="image__outer about__image"
+      class="photo-section__outer"
     >
       <div
-        class="image__placeholder"
-        style="padding-bottom: 75.00652911987464%;"
+        class="photo-section__content"
       >
         <div
-          class="image__spinner-container"
+          class="animated-image__outer"
         >
           <div
-            class="skeleton__outer image__skeleton"
+            class="image__outer animated-image__image animated-image__image--hide"
           >
             <div
-              class="skeleton__shimmer"
-              style="margin-left: -0px;"
-            />
+              class="image__placeholder"
+              style="padding-bottom: 75.00652911987464%;"
+            >
+              <div
+                class="image__spinner-container"
+              >
+                <div
+                  class="skeleton__outer image__skeleton"
+                >
+                  <div
+                    class="skeleton__shimmer"
+                    style="margin-left: -0px;"
+                  />
+                </div>
+              </div>
+              <img
+                alt="Me"
+                class="image__img image__img--hidden image__img--light"
+              />
+              <img
+                alt="Me"
+                class="image__img image__img--hidden image__img--dark"
+              />
+            </div>
           </div>
         </div>
-        <img
-          alt="Me"
-          class="image__img image__img--hidden image__img--light"
-        />
-        <img
-          alt="Me"
-          class="image__img image__img--hidden image__img--dark"
-        />
       </div>
     </div>
   </div>
