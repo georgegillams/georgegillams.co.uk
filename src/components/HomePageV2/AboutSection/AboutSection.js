@@ -5,7 +5,7 @@ import { Paragraph } from 'gg-components/Paragraph';
 import TextLink from 'components/common/TextLink';
 import STYLES from './about-section.scss';
 import { cssModules } from 'gg-components/helpers/cssModules';
-import { withScroll } from 'gg-components/ScrollContainer';
+import { withScroll, cleanRestScrollProps } from 'gg-components/ScrollContainer';
 import ContactLink from './ContactLink';
 
 const getClassName = cssModules(STYLES);
@@ -13,18 +13,7 @@ const getClassName = cssModules(STYLES);
 const LifeSection = props => {
   const { scrollPositionVh, className, ...rest } = props;
 
-  delete rest.hasBeenMostlyInView;
-  delete rest.hasBeenFullyInView;
-  delete rest.fullyInView;
-  delete rest.hasBeenInView;
-  delete rest.hasBeenJustInView;
-  delete rest.hasBeenOutOfView;
-  delete rest.inView;
-  delete rest.justInView;
-  delete rest.mostlyInView;
-  delete rest.outOfView;
-  delete rest.scrollPosition;
-  delete rest.scrollPositionVh;
+  cleanRestScrollProps(rest);
 
   return (
     <div className={getClassName('about-section__outer', className)} {...rest}>

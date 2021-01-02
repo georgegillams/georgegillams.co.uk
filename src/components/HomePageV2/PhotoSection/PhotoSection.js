@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 import STYLES from './photo-section.scss';
 import AnimatedImage from './AnimatedImage';
-import { withScroll } from 'gg-components/ScrollContainer';
+import { withScroll, cleanRestScrollProps } from 'gg-components/ScrollContainer';
 import { cssModules } from 'gg-components/helpers/cssModules';
 
 const getClassName = cssModules(STYLES);
@@ -19,16 +19,7 @@ const LifeSection = props => {
     }, 2000);
   }, []);
 
-  delete rest.fullyInView;
-  delete rest.hasBeenInView;
-  delete rest.hasBeenJustInView;
-  delete rest.hasBeenOutOfView;
-  delete rest.inView;
-  delete rest.justInView;
-  delete rest.mostlyInView;
-  delete rest.outOfView;
-  delete rest.scrollPosition;
-  delete rest.scrollPositionVh;
+  cleanRestScrollProps(rest);
 
   return (
     <div className={getClassName('photo-section__outer', className)} {...rest}>
