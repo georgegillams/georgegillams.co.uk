@@ -1,8 +1,14 @@
 import React from 'react';
 import { Paragraph } from 'gg-components/Paragraph';
 import { Subsection } from 'gg-components/Subsection';
+import { Image } from 'gg-components/Image';
 import TextLink from 'components/common/TextLink';
 import PageTitle from 'components/common/PageTitle';
+import backpackOfferingDark from './images/backpackOfferingDark.png';
+import backpackOfferingLight from './images/backpackOfferingLight.png';
+import darkMode from './images/darkMode.png';
+import brandLight from './images/brandLight.png';
+import brandDark from './images/brandDark.png';
 
 const WorkBackpack = () => (
   <div>
@@ -20,6 +26,17 @@ const WorkBackpack = () => (
         Native.
         <br />
         <br />
+        <Image
+          imgProps={{
+            alt:
+              // eslint-disable-next-line max-len
+              'Screenshots of Backpack accessibility documentation, the bar chart component for iOS, and the flare component for web.',
+          }}
+          aspectX={3258}
+          aspectY={1986}
+          lightSrc={backpackOfferingLight}
+          darkSrc={backpackOfferingDark}
+        />
       </Paragraph>
       <Subsection name="Brand refresh">
         <Paragraph>
@@ -38,6 +55,17 @@ const WorkBackpack = () => (
           </TextLink>{' '}
           if you want to know more.
         </Paragraph>
+        <br />
+        <br />
+        <Image
+          imgProps={{
+            alt: 'Screenshots of the Skyscanner app sporting the new brand.',
+          }}
+          aspectX={3248}
+          aspectY={1986}
+          lightSrc={brandLight}
+          darkSrc={brandDark}
+        />
       </Subsection>
       <Subsection name="Dark mode">
         <Paragraph>
@@ -47,6 +75,19 @@ const WorkBackpack = () => (
           designs. We also redefined our elevation language for both light and dark mode while we were at it to allow us
           to move as quickly as possible.
         </Paragraph>
+        <br />
+        <br />
+        <Image
+          imgProps={{
+            alt:
+              // eslint-disable-next-line max-len
+              'Screenshots of Backpack accessibility documentation, the bar chart component for iOS, and the flare component for web.',
+          }}
+          aspectX={3368}
+          aspectY={1986}
+          lightSrc={darkMode}
+          darkSrc={darkMode}
+        />
       </Subsection>
     </PageTitle>
   </div>
