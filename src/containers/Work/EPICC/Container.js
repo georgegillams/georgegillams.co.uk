@@ -1,8 +1,19 @@
 import React from 'react';
 import { Paragraph } from 'gg-components/Paragraph';
+import { Image } from 'gg-components/Image';
 import { Subsection } from 'gg-components/Subsection';
 import TextLink from 'components/common/TextLink';
 import PageTitle from 'components/common/PageTitle';
+import { cssModules } from 'gg-components/helpers/cssModules';
+
+import screenshot1 from './images/1.png';
+import screenshot2 from './images/2.png';
+import screenshot3 from './images/3.png';
+import screenshot4 from './images/4.png';
+
+import STYLES from './epicc.scss';
+
+const getClassName = cssModules(STYLES);
 
 const WorkEPICC = () => (
   <PageTitle link={{ to: '/work', text: 'Work' }} name="EPICC">
@@ -25,6 +36,50 @@ const WorkEPICC = () => (
         would have incurred. Delegates could sign in using a magic-link sent to their email and then manage their
         tickets online.
       </Paragraph>
+      <div className={getClassName('epicc__gallery')}>
+        <Image
+          className={getClassName('epicc__screenshot')}
+          imgProps={{
+            alt: 'The EPICC conference ticket home page showing available tickets and their prices.',
+          }}
+          aspectX={1137}
+          aspectY={1152}
+          lightSrc={screenshot1}
+          darkSrc={screenshot1}
+        />
+        <Image
+          className={getClassName('epicc__screenshot')}
+          imgProps={{
+            alt:
+              // eslint-disable-next-line max-len
+              'The EPICC conference ticket website showing a user their ticket reservation and asking for their registration details.',
+          }}
+          aspectX={1137}
+          aspectY={1113}
+          lightSrc={screenshot2}
+          darkSrc={screenshot2}
+        />
+        <Image
+          className={getClassName('epicc__screenshot')}
+          imgProps={{
+            alt: 'The EPICC conference ticket website payment page.',
+          }}
+          aspectX={1137}
+          aspectY={1196}
+          lightSrc={screenshot3}
+          darkSrc={screenshot3}
+        />
+        <Image
+          className={getClassName('epicc__screenshot')}
+          imgProps={{
+            alt: 'The EPICC conference ticket website showing a user their purchased ticket.',
+          }}
+          aspectX={1137}
+          aspectY={810}
+          lightSrc={screenshot4}
+          darkSrc={screenshot4}
+        />
+      </div>
     </Subsection>
   </PageTitle>
 );
