@@ -1,7 +1,7 @@
 import React from 'react';
 
 import CSSHack from 'components/common/CSSHack';
-import Home from 'containers/HomePage';
+import Home from 'containers/HomePageV2';
 import CommonLayout, { LAYOUT_STYLES } from 'components/common/CommonLayout';
 
 const Page = props => {

@@ -7,484 +7,560 @@ exports[`<HomePage /> should render correctly 1`] = `
     id="main"
   >
     <h1
-      class="page-title__heading about__unpadded about__centred home__about"
+      authenticatorstate="[object Object]"
+      class="page-title__heading"
     >
       Hey! I'm George.
     </h1>
-    <span
-      class="paragraph"
-    >
-      I'm an open-source software engineer at
-       
-      <a
-        aria-label="Skyscanner (opens in a new tab)"
-        class="text-link text-link--text-link text-link--no-padding text-link--inline"
-        href="https://www.skyscanner.net/"
-        rel="noopener noreferrer"
-        target="_blank"
-      >
-        Skyscanner
-        <div
-          class="text-link__icon-container"
-        >
-          <svg
-            class="icon text-link__icon"
-            height="18"
-            viewBox="0 0 24 24"
-            width="18"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M12.5 11.3c.4.4 1 .4 1.4 0L19 6.2V9c0 .6.4 1 1 1s1-.4 1-1V4c0-.6-.4-1-1-1h-5c-.6 0-1 .4-1 1s.4 1 1 1h2.4l-4.9 4.9c-.4.4-.4 1 0 1.4zM19 19c0 1.1-.9 2-2 2H5c-1.1 0-2-.9-2-2V7c0-1.1.9-2 2-2h7v2H5v12h12v-7h2"
-            />
-          </svg>
-        </div>
-      </a>
-      . I am passionate about design, 
-      <a
-        class="text-link text-link--text-link text-link--no-padding text-link--inline"
-        href="/travel"
-      >
-        travel
-      </a>
-       and
-       
-      <a
-        class="text-link text-link--text-link text-link--no-padding text-link--inline"
-        href="/photography"
-      >
-        photography
-      </a>
-      , for which I have an insatiable hunger. When I'm not internationally photobombing unsuspecting strangers I'm based somewhere between Portsmouth and London.
-      <br />
-      <br />
-      I enjoy getting outdoors and trying new things, and completed my 5th
-       
-      <a
-        class="text-link text-link--text-link text-link--no-padding text-link--inline"
-        href="/blog/tough-mudder"
-      >
-        Tough Mudder
-      </a>
-       in May 2018. I also try to squeeze in as much volunteering as I can, so you may find me dressed as a
-       
-      <a
-        aria-label="Help for Heroes (opens in a new tab)"
-        class="text-link text-link--text-link text-link--no-padding text-link--inline"
-        href="https://helpforheroes.org.uk/"
-        rel="noopener noreferrer"
-        target="_blank"
-      >
-        Help for Heroes
-        <div
-          class="text-link__icon-container"
-        >
-          <svg
-            class="icon text-link__icon"
-            height="18"
-            viewBox="0 0 24 24"
-            width="18"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M12.5 11.3c.4.4 1 .4 1.4 0L19 6.2V9c0 .6.4 1 1 1s1-.4 1-1V4c0-.6-.4-1-1-1h-5c-.6 0-1 .4-1 1s.4 1 1 1h2.4l-4.9 4.9c-.4.4-.4 1 0 1.4zM19 19c0 1.1-.9 2-2 2H5c-1.1 0-2-.9-2-2V7c0-1.1.9-2 2-2h7v2H5v12h12v-7h2"
-            />
-          </svg>
-        </div>
-      </a>
-       
-      bear, reviewing content for
-       
-      <a
-        aria-label="Beat (opens in a new tab)"
-        class="text-link text-link--text-link text-link--no-padding text-link--inline"
-        href="https://b-eat.co.uk/"
-        rel="noopener noreferrer"
-        target="_blank"
-      >
-        Beat
-        <div
-          class="text-link__icon-container"
-        >
-          <svg
-            class="icon text-link__icon"
-            height="18"
-            viewBox="0 0 24 24"
-            width="18"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M12.5 11.3c.4.4 1 .4 1.4 0L19 6.2V9c0 .6.4 1 1 1s1-.4 1-1V4c0-.6-.4-1-1-1h-5c-.6 0-1 .4-1 1s.4 1 1 1h2.4l-4.9 4.9c-.4.4-.4 1 0 1.4zM19 19c0 1.1-.9 2-2 2H5c-1.1 0-2-.9-2-2V7c0-1.1.9-2 2-2h7v2H5v12h12v-7h2"
-            />
-          </svg>
-        </div>
-      </a>
-      .
-      <br />
-      <br />
-      I recently got engaged to my wonderful fiancée while we were in
-       
-      <a
-        class="text-link text-link--text-link text-link--no-padding text-link--inline"
-        href="/travel/iceland-2018"
-      >
-        Iceland
-      </a>
-       💍, and live with her and Tigger the cat.
-    </span>
     <div
-      class="image__outer about__image"
+      class="home__work-section"
     >
       <div
-        class="image__placeholder"
-        style="padding-bottom: 75.00652911987464%;"
+        class="work-section__outer"
       >
         <div
-          class="image__spinner-container"
+          class="work-section__content"
         >
           <div
-            class="skeleton__outer image__skeleton"
+            class="section__outer"
           >
-            <div
-              class="skeleton__shimmer"
-              style="margin-left: -0px;"
-            />
+            <h2
+              class="section__heading"
+              id="work"
+            >
+              Work
+            </h2>
+            <span
+              class="paragraph work-section__paragraph"
+            >
+              I work on
+               
+              <a
+                aria-label="Backpack (opens in a new tab)"
+                class="text-link text-link--text-link text-link--no-padding text-link--inline"
+                href="https://backpack.github.io"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                Backpack
+                <div
+                  class="text-link__icon-container"
+                >
+                  <svg
+                    class="icon text-link__icon"
+                    height="18"
+                    viewBox="0 0 24 24"
+                    width="18"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M12.5 11.3c.4.4 1 .4 1.4 0L19 6.2V9c0 .6.4 1 1 1s1-.4 1-1V4c0-.6-.4-1-1-1h-5c-.6 0-1 .4-1 1s.4 1 1 1h2.4l-4.9 4.9c-.4.4-.4 1 0 1.4zM19 19c0 1.1-.9 2-2 2H5c-1.1 0-2-.9-2-2V7c0-1.1.9-2 2-2h7v2H5v12h12v-7h2"
+                    />
+                  </svg>
+                </div>
+              </a>
+               
+              for iOS and React at
+               
+              <a
+                aria-label="Skyscanner (opens in a new tab)"
+                class="text-link text-link--text-link text-link--no-padding text-link--inline"
+                href="https://www.skyscanner.net"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                Skyscanner
+                <div
+                  class="text-link__icon-container"
+                >
+                  <svg
+                    class="icon text-link__icon"
+                    height="18"
+                    viewBox="0 0 24 24"
+                    width="18"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M12.5 11.3c.4.4 1 .4 1.4 0L19 6.2V9c0 .6.4 1 1 1s1-.4 1-1V4c0-.6-.4-1-1-1h-5c-.6 0-1 .4-1 1s.4 1 1 1h2.4l-4.9 4.9c-.4.4-.4 1 0 1.4zM19 19c0 1.1-.9 2-2 2H5c-1.1 0-2-.9-2-2V7c0-1.1.9-2 2-2h7v2H5v12h12v-7h2"
+                    />
+                  </svg>
+                </div>
+              </a>
+               
+              .
+              <br />
+              I’m also an accessibility champion.
+              <br />
+              <a
+                class="text-link text-link--text-link text-link--no-padding text-link--inline"
+                href="/work"
+              >
+                Learn more about my work
+              </a>
+            </span>
           </div>
         </div>
-        <img
-          alt="Me"
-          class="image__img image__img--hidden image__img--light"
-        />
-        <img
-          alt="Me"
-          class="image__img image__img--hidden image__img--dark"
-        />
+        <div
+          class="phones__outer work-section__graphic"
+        >
+          <div
+            class="sliding-phone__outer phones__phone"
+          >
+            <div
+              class="image__outer sliding-phone__image sliding-phone__image--hide"
+            >
+              <div
+                class="image__placeholder"
+                style="padding-bottom: 197.80876494023903%;"
+              >
+                <div
+                  class="image__spinner-container"
+                >
+                  <div
+                    class="skeleton__outer image__skeleton"
+                  >
+                    <div
+                      class="skeleton__shimmer"
+                      style="margin-left: -0px;"
+                    />
+                  </div>
+                </div>
+                <img
+                  class="image__img image__img--hidden image__img--light"
+                />
+                <img
+                  class="image__img image__img--hidden image__img--dark"
+                />
+              </div>
+            </div>
+          </div>
+          <div
+            class="sliding-phone__outer phones__phone"
+          >
+            <div
+              class="image__outer sliding-phone__image sliding-phone__image--hide"
+            >
+              <div
+                class="image__placeholder"
+                style="padding-bottom: 197.80876494023903%;"
+              >
+                <div
+                  class="image__spinner-container"
+                >
+                  <div
+                    class="skeleton__outer image__skeleton"
+                  >
+                    <div
+                      class="skeleton__shimmer"
+                      style="margin-left: -0px;"
+                    />
+                  </div>
+                </div>
+                <img
+                  class="image__img image__img--hidden image__img--light"
+                />
+                <img
+                  class="image__img image__img--hidden image__img--dark"
+                />
+              </div>
+            </div>
+          </div>
+          <div
+            class="sliding-phone__outer phones__phone"
+          >
+            <div
+              class="image__outer sliding-phone__image sliding-phone__image--hide"
+            >
+              <div
+                class="image__placeholder"
+                style="padding-bottom: 197.80876494023903%;"
+              >
+                <div
+                  class="image__spinner-container"
+                >
+                  <div
+                    class="skeleton__outer image__skeleton"
+                  >
+                    <div
+                      class="skeleton__shimmer"
+                      style="margin-left: -0px;"
+                    />
+                  </div>
+                </div>
+                <img
+                  class="image__img image__img--hidden image__img--light"
+                />
+                <img
+                  class="image__img image__img--hidden image__img--dark"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-    <br />
-    <span
-      class="paragraph"
-    >
-      This site is built in
-       
-      <a
-        aria-label="React (opens in a new tab)"
-        class="text-link text-link--text-link text-link--no-padding text-link--inline"
-        href="https://reactjs.org/"
-        rel="noopener noreferrer"
-        target="_blank"
-      >
-        React
-        <div
-          class="text-link__icon-container"
-        >
-          <svg
-            class="icon text-link__icon"
-            height="18"
-            viewBox="0 0 24 24"
-            width="18"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M12.5 11.3c.4.4 1 .4 1.4 0L19 6.2V9c0 .6.4 1 1 1s1-.4 1-1V4c0-.6-.4-1-1-1h-5c-.6 0-1 .4-1 1s.4 1 1 1h2.4l-4.9 4.9c-.4.4-.4 1 0 1.4zM19 19c0 1.1-.9 2-2 2H5c-1.1 0-2-.9-2-2V7c0-1.1.9-2 2-2h7v2H5v12h12v-7h2"
-            />
-          </svg>
-        </div>
-      </a>
-       
-      and
-       
-      <a
-        aria-label="Redux (opens in a new tab)"
-        class="text-link text-link--text-link text-link--no-padding text-link--inline"
-        href="https://redux.js.org/"
-        rel="noopener noreferrer"
-        target="_blank"
-      >
-        Redux
-        <div
-          class="text-link__icon-container"
-        >
-          <svg
-            class="icon text-link__icon"
-            height="18"
-            viewBox="0 0 24 24"
-            width="18"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M12.5 11.3c.4.4 1 .4 1.4 0L19 6.2V9c0 .6.4 1 1 1s1-.4 1-1V4c0-.6-.4-1-1-1h-5c-.6 0-1 .4-1 1s.4 1 1 1h2.4l-4.9 4.9c-.4.4-.4 1 0 1.4zM19 19c0 1.1-.9 2-2 2H5c-1.1 0-2-.9-2-2V7c0-1.1.9-2 2-2h7v2H5v12h12v-7h2"
-            />
-          </svg>
-        </div>
-      </a>
-       
-      taking advantage of
-       
-      <a
-        aria-label="Next.js (opens in a new tab)"
-        class="text-link text-link--text-link text-link--no-padding text-link--inline"
-        href="https://nextjs.org/"
-        rel="noopener noreferrer"
-        target="_blank"
-      >
-        Next.js
-        <div
-          class="text-link__icon-container"
-        >
-          <svg
-            class="icon text-link__icon"
-            height="18"
-            viewBox="0 0 24 24"
-            width="18"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M12.5 11.3c.4.4 1 .4 1.4 0L19 6.2V9c0 .6.4 1 1 1s1-.4 1-1V4c0-.6-.4-1-1-1h-5c-.6 0-1 .4-1 1s.4 1 1 1h2.4l-4.9 4.9c-.4.4-.4 1 0 1.4zM19 19c0 1.1-.9 2-2 2H5c-1.1 0-2-.9-2-2V7c0-1.1.9-2 2-2h7v2H5v12h12v-7h2"
-            />
-          </svg>
-        </div>
-      </a>
-      . I serve it from an EC2 container on
-       
-      <a
-        aria-label="AWS (opens in a new tab)"
-        class="text-link text-link--text-link text-link--no-padding text-link--inline"
-        href="https://aws.amazon.com/"
-        rel="noopener noreferrer"
-        target="_blank"
-      >
-        AWS
-        <div
-          class="text-link__icon-container"
-        >
-          <svg
-            class="icon text-link__icon"
-            height="18"
-            viewBox="0 0 24 24"
-            width="18"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M12.5 11.3c.4.4 1 .4 1.4 0L19 6.2V9c0 .6.4 1 1 1s1-.4 1-1V4c0-.6-.4-1-1-1h-5c-.6 0-1 .4-1 1s.4 1 1 1h2.4l-4.9 4.9c-.4.4-.4 1 0 1.4zM19 19c0 1.1-.9 2-2 2H5c-1.1 0-2-.9-2-2V7c0-1.1.9-2 2-2h7v2H5v12h12v-7h2"
-            />
-          </svg>
-        </div>
-      </a>
-      . I use it to experiment with things, share stuff I've figured out, and allow people to reach-out to me. So if you're interested in anything I do, 
-      <a
-        class="text-link text-link--text-link text-link--no-padding text-link--inline"
-        href="/contact"
-      >
-        get in touch
-      </a>
-      !
-    </span>
     <div
-      class="home__card-container"
+      class="home__life-section"
     >
-      <button
-        class="card feature-card feature-card--narrow-compact home__card"
-        role="link"
-        style="cursor: pointer;"
-        type="button"
-      >
-        <div
-          class="card__background"
-        />
-        <div
-          class="card__outer-container card__outer-container--padded"
-        >
-          <div
-            aria-hidden="true"
-            class="feature-card__outer-container feature-card__outer-container--narrow-compact"
-          >
-            <div
-              class="feature-card__date feature-card__date--narrow-compact"
-            />
-            <div
-              class="feature-card__center-container feature-card__center-container--narrow-compact"
-            >
-              <div
-                class="section__outer feature-card__title"
-              >
-                <h2
-                  class="section__heading section__heading--link section__heading--no-padding"
-                  id="blog"
-                >
-                  Blog
-                </h2>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div
-          class="card__banner"
-        />
-      </button>
-      <button
-        class="card feature-card feature-card--narrow-compact home__card"
-        role="link"
-        style="cursor: pointer;"
-        type="button"
-      >
-        <div
-          class="card__background"
-        />
-        <div
-          class="card__outer-container card__outer-container--padded"
-        >
-          <div
-            aria-hidden="true"
-            class="feature-card__outer-container feature-card__outer-container--narrow-compact"
-          >
-            <div
-              class="feature-card__date feature-card__date--narrow-compact"
-            />
-            <div
-              class="feature-card__center-container feature-card__center-container--narrow-compact"
-            >
-              <div
-                class="section__outer feature-card__title"
-              >
-                <h2
-                  class="section__heading section__heading--link section__heading--no-padding"
-                  id="travel"
-                >
-                  Travel
-                </h2>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div
-          class="card__banner"
-        />
-      </button>
-      <button
-        class="card feature-card feature-card--narrow-compact home__card"
-        role="link"
-        style="cursor: pointer;"
-        type="button"
-      >
-        <div
-          class="card__background"
-        />
-        <div
-          class="card__outer-container card__outer-container--padded"
-        >
-          <div
-            aria-hidden="true"
-            class="feature-card__outer-container feature-card__outer-container--narrow-compact"
-          >
-            <div
-              class="feature-card__date feature-card__date--narrow-compact"
-            />
-            <div
-              class="feature-card__center-container feature-card__center-container--narrow-compact"
-            >
-              <div
-                class="section__outer feature-card__title"
-              >
-                <h2
-                  class="section__heading section__heading--link section__heading--no-padding"
-                  id="photography"
-                >
-                  Photography
-                </h2>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div
-          class="card__banner"
-        />
-      </button>
-      <button
-        class="card feature-card feature-card--narrow-compact home__card"
-        role="link"
-        style="cursor: pointer;"
-        type="button"
-      >
-        <div
-          class="card__background"
-        />
-        <div
-          class="card__outer-container card__outer-container--padded"
-        >
-          <div
-            aria-hidden="true"
-            class="feature-card__outer-container feature-card__outer-container--narrow-compact"
-          >
-            <div
-              class="feature-card__date feature-card__date--narrow-compact"
-            />
-            <div
-              class="feature-card__center-container feature-card__center-container--narrow-compact"
-            >
-              <div
-                class="section__outer feature-card__title"
-              >
-                <h2
-                  class="section__heading section__heading--link section__heading--no-padding"
-                  id="work"
-                >
-                  Work
-                </h2>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div
-          class="card__banner"
-        />
-      </button>
-      <button
-        class="card feature-card feature-card--narrow-compact home__card"
-        role="link"
-        style="cursor: pointer;"
-        type="button"
-      >
-        <div
-          class="card__background"
-        />
-        <div
-          class="card__outer-container card__outer-container--padded"
-        >
-          <div
-            aria-hidden="true"
-            class="feature-card__outer-container feature-card__outer-container--narrow-compact"
-          >
-            <div
-              class="feature-card__date feature-card__date--narrow-compact"
-            />
-            <div
-              class="feature-card__center-container feature-card__center-container--narrow-compact"
-            >
-              <div
-                class="section__outer feature-card__title"
-              >
-                <h2
-                  class="section__heading section__heading--link section__heading--no-padding"
-                  id="contact"
-                >
-                  Contact
-                </h2>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div
-          class="card__banner"
-        />
-      </button>
       <div
-        class="skeleton__outer skeleton__card--compact"
+        class="life-section__outer"
       >
         <div
-          class="skeleton__shimmer"
-          style="margin-left: -0px;"
-        />
+          class="image__outer life-section__image-above-tablet life-section__image-above-tablet--left"
+          style="margin-top: 5rem; transform: rotate(NaNdeg);"
+        >
+          <div
+            class="image__placeholder"
+            style="padding-bottom: 150%;"
+          >
+            <div
+              class="image__spinner-container"
+            >
+              <div
+                class="skeleton__outer image__skeleton"
+              >
+                <div
+                  class="skeleton__shimmer"
+                  style="margin-left: -0px;"
+                />
+              </div>
+            </div>
+            <img
+              alt=""
+              class="image__img image__img--hidden image__img--light"
+            />
+            <img
+              alt=""
+              class="image__img image__img--hidden image__img--dark"
+            />
+          </div>
+        </div>
+        <div
+          class="life-section__content"
+        >
+          <div
+            class="section__outer"
+          >
+            <h2
+              class="section__heading"
+              id="life"
+            >
+              Life
+            </h2>
+            <span
+              class="paragraph life-section__paragraph"
+            >
+              I love travel and photography, and occasionally write other stuff.
+              <br />
+              <a
+                class="text-link text-link--text-link text-link--no-padding text-link--inline"
+                href="/blog"
+              >
+                Blog
+              </a>
+              <br />
+              <a
+                class="text-link text-link--text-link text-link--no-padding text-link--inline"
+                href="/travel"
+              >
+                Travel
+              </a>
+              <br />
+              <a
+                class="text-link text-link--text-link text-link--no-padding text-link--inline"
+                href="/photography"
+              >
+                Photography
+              </a>
+            </span>
+          </div>
+          <span
+            class="paragraph life-section__paragraph"
+          >
+            I got engaged recently in Iceland, and live with my amazing fiancée and Tigger the cat.
+          </span>
+        </div>
+        <div
+          class="image__outer life-section__image-above-tablet life-section__image-above-tablet--right"
+          style="margin-top: 8rem; transform: rotate(NaNdeg);"
+        >
+          <div
+            class="image__placeholder"
+            style="padding-bottom: 66.66666666666667%;"
+          >
+            <div
+              class="image__spinner-container"
+            >
+              <div
+                class="skeleton__outer image__skeleton"
+              >
+                <div
+                  class="skeleton__shimmer"
+                  style="margin-left: -0px;"
+                />
+              </div>
+            </div>
+            <img
+              alt=""
+              class="image__img image__img--hidden image__img--light"
+            />
+            <img
+              alt=""
+              class="image__img image__img--hidden image__img--dark"
+            />
+          </div>
+        </div>
+        <div
+          class="life-section__mobile-image-container"
+        >
+          <div
+            class="life-section__mobile-image-wrapper life-section__mobile-image-wrapper--left"
+          >
+            <div
+              class="image__outer life-section__image-below-tablet life-section__image-below-tablet--left life-section__image-below-tablet--left-hide"
+            >
+              <div
+                class="image__placeholder"
+                style="padding-bottom: 150%;"
+              >
+                <div
+                  class="image__spinner-container"
+                >
+                  <div
+                    class="skeleton__outer image__skeleton"
+                  >
+                    <div
+                      class="skeleton__shimmer"
+                      style="margin-left: -0px;"
+                    />
+                  </div>
+                </div>
+                <img
+                  alt=""
+                  class="image__img image__img--hidden image__img--light"
+                />
+                <img
+                  alt=""
+                  class="image__img image__img--hidden image__img--dark"
+                />
+              </div>
+            </div>
+          </div>
+          <div
+            class="life-section__mobile-image-wrapper life-section__mobile-image-wrapper--right"
+          >
+            <div
+              class="image__outer life-section__image-below-tablet life-section__image-below-tablet--right life-section__image-below-tablet--right-hide"
+            >
+              <div
+                class="image__placeholder"
+                style="padding-bottom: 66.66666666666667%;"
+              >
+                <div
+                  class="image__spinner-container"
+                >
+                  <div
+                    class="skeleton__outer image__skeleton"
+                  >
+                    <div
+                      class="skeleton__shimmer"
+                      style="margin-left: -0px;"
+                    />
+                  </div>
+                </div>
+                <img
+                  alt=""
+                  class="image__img image__img--hidden image__img--light"
+                />
+                <img
+                  alt=""
+                  class="image__img image__img--hidden image__img--dark"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="home__photo-section"
+    >
+      <div
+        class="photo-section__outer"
+      >
+        <div
+          class="photo-section__content"
+        >
+          <div
+            class="animated-image__outer"
+          >
+            <div
+              class="image__outer animated-image__image animated-image__image--hide"
+            >
+              <div
+                class="image__placeholder"
+                style="padding-bottom: 75.00652911987464%;"
+              >
+                <div
+                  class="image__spinner-container"
+                >
+                  <div
+                    class="skeleton__outer image__skeleton"
+                  >
+                    <div
+                      class="skeleton__shimmer"
+                      style="margin-left: -0px;"
+                    />
+                  </div>
+                </div>
+                <img
+                  alt="Me"
+                  class="image__img image__img--hidden image__img--light"
+                />
+                <img
+                  alt="Me"
+                  class="image__img image__img--hidden image__img--dark"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="home__about-section"
+    >
+      <div
+        class="about-section__outer"
+      >
+        <span
+          class="paragraph about-section__paragraph"
+        >
+          This site is built in
+           
+          <a
+            aria-label="React (opens in a new tab)"
+            class="text-link text-link--text-link text-link--no-padding text-link--inline"
+            href="https://reactjs.org/"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            React
+            <div
+              class="text-link__icon-container"
+            >
+              <svg
+                class="icon text-link__icon"
+                height="18"
+                viewBox="0 0 24 24"
+                width="18"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M12.5 11.3c.4.4 1 .4 1.4 0L19 6.2V9c0 .6.4 1 1 1s1-.4 1-1V4c0-.6-.4-1-1-1h-5c-.6 0-1 .4-1 1s.4 1 1 1h2.4l-4.9 4.9c-.4.4-.4 1 0 1.4zM19 19c0 1.1-.9 2-2 2H5c-1.1 0-2-.9-2-2V7c0-1.1.9-2 2-2h7v2H5v12h12v-7h2"
+                />
+              </svg>
+            </div>
+          </a>
+           
+          and
+           
+          <a
+            aria-label="Redux (opens in a new tab)"
+            class="text-link text-link--text-link text-link--no-padding text-link--inline"
+            href="https://redux.js.org/"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            Redux
+            <div
+              class="text-link__icon-container"
+            >
+              <svg
+                class="icon text-link__icon"
+                height="18"
+                viewBox="0 0 24 24"
+                width="18"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M12.5 11.3c.4.4 1 .4 1.4 0L19 6.2V9c0 .6.4 1 1 1s1-.4 1-1V4c0-.6-.4-1-1-1h-5c-.6 0-1 .4-1 1s.4 1 1 1h2.4l-4.9 4.9c-.4.4-.4 1 0 1.4zM19 19c0 1.1-.9 2-2 2H5c-1.1 0-2-.9-2-2V7c0-1.1.9-2 2-2h7v2H5v12h12v-7h2"
+                />
+              </svg>
+            </div>
+          </a>
+           
+          taking advantage of
+           
+          <a
+            aria-label="Next.js (opens in a new tab)"
+            class="text-link text-link--text-link text-link--no-padding text-link--inline"
+            href="https://nextjs.org/"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            Next.js
+            <div
+              class="text-link__icon-container"
+            >
+              <svg
+                class="icon text-link__icon"
+                height="18"
+                viewBox="0 0 24 24"
+                width="18"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M12.5 11.3c.4.4 1 .4 1.4 0L19 6.2V9c0 .6.4 1 1 1s1-.4 1-1V4c0-.6-.4-1-1-1h-5c-.6 0-1 .4-1 1s.4 1 1 1h2.4l-4.9 4.9c-.4.4-.4 1 0 1.4zM19 19c0 1.1-.9 2-2 2H5c-1.1 0-2-.9-2-2V7c0-1.1.9-2 2-2h7v2H5v12h12v-7h2"
+                />
+              </svg>
+            </div>
+          </a>
+          . I serve it from an EC2 container on
+           
+          <a
+            aria-label="AWS (opens in a new tab)"
+            class="text-link text-link--text-link text-link--no-padding text-link--inline"
+            href="https://aws.amazon.com/"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            AWS
+            <div
+              class="text-link__icon-container"
+            >
+              <svg
+                class="icon text-link__icon"
+                height="18"
+                viewBox="0 0 24 24"
+                width="18"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M12.5 11.3c.4.4 1 .4 1.4 0L19 6.2V9c0 .6.4 1 1 1s1-.4 1-1V4c0-.6-.4-1-1-1h-5c-.6 0-1 .4-1 1s.4 1 1 1h2.4l-4.9 4.9c-.4.4-.4 1 0 1.4zM19 19c0 1.1-.9 2-2 2H5c-1.1 0-2-.9-2-2V7c0-1.1.9-2 2-2h7v2H5v12h12v-7h2"
+                />
+              </svg>
+            </div>
+          </a>
+          . I use it to experiment with things, share stuff I've figured out, and allow people to contact me.
+        </span>
+        <div
+          class="contact-link__outer"
+        >
+          <div
+            class="contact-link__content"
+          >
+            <a
+              class="text-link text-link--text-link text-link--no-padding text-link--inline contact-link__link"
+              href="/contact"
+            >
+              Get in touch
+            </a>
+            <div
+              class="contact-link__cloud"
+            />
+          </div>
+        </div>
       </div>
     </div>
   </main>
