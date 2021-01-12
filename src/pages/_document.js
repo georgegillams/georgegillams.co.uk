@@ -31,6 +31,8 @@ class MyDocument extends Document {
         </Head>
 
         <body>
+          {/* Fixes FOUC in Firefox: https://bugzilla.mozilla.org/show_bug.cgi?id=1404468 */}
+          <script>0</script>
           <Main />
           <NextScript />
         </body>
