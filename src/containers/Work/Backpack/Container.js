@@ -22,8 +22,8 @@ const WorkBackpack = () => (
         duplication.
         <br />
         <br />
-        I work mostly on iOS and web components, and occasionally do work to bridge components from native iOS to React
-        Native.
+        I work mostly on iOS and web (React) components, and occasionally do work to bridge components from native iOS
+        to React Native.
         <br />
         <br />
         <Image
