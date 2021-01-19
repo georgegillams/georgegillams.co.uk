@@ -55,7 +55,7 @@ exports[`<Photography /> should render correctly 1`] = `
                   class="image__spinner-container"
                 >
                   <div
-                    class="skeleton__outer image__skeleton"
+                    class="skeleton__outer image__skeleton image__skeleton--animated"
                   >
                     <div
                       class="skeleton__shimmer"
@@ -65,12 +65,15 @@ exports[`<Photography /> should render correctly 1`] = `
                 </div>
                 <img
                   alt="card"
-                  class="image__img image__img--hidden image__img--light"
+                  class="image__img image__img--animated image__img--hidden image__img--light"
+                  src="https://i.imgur.com/Jng7EhH.png"
                 />
                 <img
                   alt="card"
-                  class="image__img image__img--hidden image__img--dark"
+                  class="image__img image__img--animated image__img--hidden image__img--dark"
+                  src="https://i.imgur.com/Jng7EhH.png"
                 />
+                <noscript />
               </div>
             </div>
           </div>
@@ -125,7 +128,7 @@ exports[`<Photography /> should render correctly 1`] = `
                   class="image__spinner-container"
                 >
                   <div
-                    class="skeleton__outer image__skeleton"
+                    class="skeleton__outer image__skeleton image__skeleton--animated"
                   >
                     <div
                       class="skeleton__shimmer"
@@ -135,12 +138,15 @@ exports[`<Photography /> should render correctly 1`] = `
                 </div>
                 <img
                   alt="card"
-                  class="image__img image__img--hidden image__img--light"
+                  class="image__img image__img--animated image__img--hidden image__img--light"
+                  src="https://i.imgur.com/u30cQWU.png"
                 />
                 <img
                   alt="card"
-                  class="image__img image__img--hidden image__img--dark"
+                  class="image__img image__img--animated image__img--hidden image__img--dark"
+                  src="https://i.imgur.com/u30cQWU.png"
                 />
+                <noscript />
               </div>
             </div>
           </div>
@@ -195,7 +201,7 @@ exports[`<Photography /> should render correctly 1`] = `
                   class="image__spinner-container"
                 >
                   <div
-                    class="skeleton__outer image__skeleton"
+                    class="skeleton__outer image__skeleton image__skeleton--animated"
                   >
                     <div
                       class="skeleton__shimmer"
@@ -205,12 +211,15 @@ exports[`<Photography /> should render correctly 1`] = `
                 </div>
                 <img
                   alt="card"
-                  class="image__img image__img--hidden image__img--light"
+                  class="image__img image__img--animated image__img--hidden image__img--light"
+                  src="https://i.imgur.com/obBqvqK.png"
                 />
                 <img
                   alt="card"
-                  class="image__img image__img--hidden image__img--dark"
+                  class="image__img image__img--animated image__img--hidden image__img--dark"
+                  src="https://i.imgur.com/obBqvqK.png"
                 />
+                <noscript />
               </div>
             </div>
           </div>
@@ -244,7 +253,7 @@ exports[`<Photography /> should render correctly 1`] = `
             class="image__spinner-container"
           >
             <div
-              class="skeleton__outer image__skeleton"
+              class="skeleton__outer image__skeleton image__skeleton--animated"
             >
               <div
                 class="skeleton__shimmer"
@@ -254,12 +263,15 @@ exports[`<Photography /> should render correctly 1`] = `
           </div>
           <img
             alt="Harlequins vs Worcester Rugby Match"
-            class="image__img image__img--hidden image__img--light"
+            class="image__img image__img--animated image__img--hidden image__img--light"
+            src="https://i.imgur.com/OsFI23z.jpg"
           />
           <img
             alt="Harlequins vs Worcester Rugby Match"
-            class="image__img image__img--hidden image__img--dark"
+            class="image__img image__img--animated image__img--hidden image__img--dark"
+            src="https://i.imgur.com/OsFI23z.jpg"
           />
+          <noscript />
         </div>
       </div>
     </div>
@@ -283,7 +295,7 @@ exports[`<Photography /> should render correctly 1`] = `
             class="image__spinner-container"
           >
             <div
-              class="skeleton__outer image__skeleton"
+              class="skeleton__outer image__skeleton image__skeleton--animated"
             >
               <div
                 class="skeleton__shimmer"
@@ -293,12 +305,15 @@ exports[`<Photography /> should render correctly 1`] = `
           </div>
           <img
             alt="The cat looking handsome"
-            class="image__img image__img--hidden image__img--light"
+            class="image__img image__img--animated image__img--hidden image__img--light"
+            src="https://i.imgur.com/Aqy3tuA.jpg"
           />
           <img
             alt="The cat looking handsome"
-            class="image__img image__img--hidden image__img--dark"
+            class="image__img image__img--animated image__img--hidden image__img--dark"
+            src="https://i.imgur.com/Aqy3tuA.jpg"
           />
+          <noscript />
         </div>
       </div>
     </div>
@@ -328,7 +343,7 @@ exports[`<Photography /> should render correctly 1`] = `
                 class="image__spinner-container"
               >
                 <div
-                  class="skeleton__outer image__skeleton"
+                  class="skeleton__outer image__skeleton image__skeleton--animated"
                 >
                   <div
                     class="skeleton__shimmer"
@@ -338,12 +353,15 @@ exports[`<Photography /> should render correctly 1`] = `
               </div>
               <img
                 alt="A training scenario at EPICC 2017"
-                class="image__img image__img--hidden image__img--light"
+                class="image__img image__img--animated image__img--hidden image__img--light"
+                src="https://i.imgur.com/6B35GTV.jpg"
               />
               <img
                 alt="A training scenario at EPICC 2017"
-                class="image__img image__img--hidden image__img--dark"
+                class="image__img image__img--animated image__img--hidden image__img--dark"
+                src="https://i.imgur.com/6B35GTV.jpg"
               />
+              <noscript />
             </div>
           </div>
         </div>
@@ -393,7 +411,7 @@ exports[`<Photography /> should render correctly 1`] = `
             class="image__spinner-container"
           >
             <div
-              class="skeleton__outer image__skeleton"
+              class="skeleton__outer image__skeleton image__skeleton--animated"
             >
               <div
                 class="skeleton__shimmer"
@@ -403,12 +421,15 @@ exports[`<Photography /> should render correctly 1`] = `
           </div>
           <img
             alt="Dog running with a stick"
-            class="image__img image__img--hidden image__img--light"
+            class="image__img image__img--animated image__img--hidden image__img--light"
+            src="https://i.imgur.com/8dnCZ5D.jpg"
           />
           <img
             alt="Dog running with a stick"
-            class="image__img image__img--hidden image__img--dark"
+            class="image__img image__img--animated image__img--hidden image__img--dark"
+            src="https://i.imgur.com/8dnCZ5D.jpg"
           />
+          <noscript />
         </div>
       </div>
     </div>
@@ -432,7 +453,7 @@ exports[`<Photography /> should render correctly 1`] = `
             class="image__spinner-container"
           >
             <div
-              class="skeleton__outer image__skeleton"
+              class="skeleton__outer image__skeleton image__skeleton--animated"
             >
               <div
                 class="skeleton__shimmer"
@@ -442,12 +463,15 @@ exports[`<Photography /> should render correctly 1`] = `
           </div>
           <img
             alt="Stunt Motorcyclist standing on the back of a bike"
-            class="image__img image__img--hidden image__img--light"
+            class="image__img image__img--animated image__img--hidden image__img--light"
+            src="https://i.imgur.com/WlLYxDw.jpg"
           />
           <img
             alt="Stunt Motorcyclist standing on the back of a bike"
-            class="image__img image__img--hidden image__img--dark"
+            class="image__img image__img--animated image__img--hidden image__img--dark"
+            src="https://i.imgur.com/WlLYxDw.jpg"
           />
+          <noscript />
         </div>
       </div>
     </div>
@@ -471,7 +495,7 @@ exports[`<Photography /> should render correctly 1`] = `
             class="image__spinner-container"
           >
             <div
-              class="skeleton__outer image__skeleton"
+              class="skeleton__outer image__skeleton image__skeleton--animated"
             >
               <div
                 class="skeleton__shimmer"
@@ -481,12 +505,15 @@ exports[`<Photography /> should render correctly 1`] = `
           </div>
           <img
             alt="Longleat Festival of Light"
-            class="image__img image__img--hidden image__img--light"
+            class="image__img image__img--animated image__img--hidden image__img--light"
+            src="https://i.imgur.com/EHF7zqM.jpg"
           />
           <img
             alt="Longleat Festival of Light"
-            class="image__img image__img--hidden image__img--dark"
+            class="image__img image__img--animated image__img--hidden image__img--dark"
+            src="https://i.imgur.com/EHF7zqM.jpg"
           />
+          <noscript />
         </div>
       </div>
     </div>
@@ -510,7 +537,7 @@ exports[`<Photography /> should render correctly 1`] = `
             class="image__spinner-container"
           >
             <div
-              class="skeleton__outer image__skeleton"
+              class="skeleton__outer image__skeleton image__skeleton--animated"
             >
               <div
                 class="skeleton__shimmer"
@@ -520,12 +547,15 @@ exports[`<Photography /> should render correctly 1`] = `
           </div>
           <img
             alt="Serre Chavelier Ski Slopes"
-            class="image__img image__img--hidden image__img--light"
+            class="image__img image__img--animated image__img--hidden image__img--light"
+            src="https://i.imgur.com/SSGGfbL.jpg"
           />
           <img
             alt="Serre Chavelier Ski Slopes"
-            class="image__img image__img--hidden image__img--dark"
+            class="image__img image__img--animated image__img--hidden image__img--dark"
+            src="https://i.imgur.com/SSGGfbL.jpg"
           />
+          <noscript />
         </div>
       </div>
     </div>
@@ -549,7 +579,7 @@ exports[`<Photography /> should render correctly 1`] = `
             class="image__spinner-container"
           >
             <div
-              class="skeleton__outer image__skeleton"
+              class="skeleton__outer image__skeleton image__skeleton--animated"
             >
               <div
                 class="skeleton__shimmer"
@@ -559,12 +589,15 @@ exports[`<Photography /> should render correctly 1`] = `
           </div>
           <img
             alt="Nick Matthew playing in the Canary Wharf Open"
-            class="image__img image__img--hidden image__img--light"
+            class="image__img image__img--animated image__img--hidden image__img--light"
+            src="https://i.imgur.com/h4BFWqS.jpg"
           />
           <img
             alt="Nick Matthew playing in the Canary Wharf Open"
-            class="image__img image__img--hidden image__img--dark"
+            class="image__img image__img--animated image__img--hidden image__img--dark"
+            src="https://i.imgur.com/h4BFWqS.jpg"
           />
+          <noscript />
         </div>
       </div>
     </div>
@@ -604,7 +637,7 @@ exports[`<Photography /> should render correctly 1`] = `
             class="image__spinner-container"
           >
             <div
-              class="skeleton__outer image__skeleton"
+              class="skeleton__outer image__skeleton image__skeleton--animated"
             >
               <div
                 class="skeleton__shimmer"
@@ -614,12 +647,15 @@ exports[`<Photography /> should render correctly 1`] = `
           </div>
           <img
             alt="Exploding tulips"
-            class="image__img image__img--hidden image__img--light"
+            class="image__img image__img--animated image__img--hidden image__img--light"
+            src="https://i.imgur.com/PIKQ2D6.jpg"
           />
           <img
             alt="Exploding tulips"
-            class="image__img image__img--hidden image__img--dark"
+            class="image__img image__img--animated image__img--hidden image__img--dark"
+            src="https://i.imgur.com/PIKQ2D6.jpg"
           />
+          <noscript />
         </div>
       </div>
     </div>
@@ -649,7 +685,7 @@ exports[`<Photography /> should render correctly 1`] = `
             class="image__spinner-container"
           >
             <div
-              class="skeleton__outer image__skeleton"
+              class="skeleton__outer image__skeleton image__skeleton--animated"
             >
               <div
                 class="skeleton__shimmer"
@@ -659,12 +695,15 @@ exports[`<Photography /> should render correctly 1`] = `
           </div>
           <img
             alt="Miss Saigon sketch"
-            class="image__img image__img--hidden image__img--light"
+            class="image__img image__img--animated image__img--hidden image__img--light"
+            src="https://i.imgur.com/y3i2Ll1.jpg"
           />
           <img
             alt="Miss Saigon sketch"
-            class="image__img image__img--hidden image__img--dark"
+            class="image__img image__img--animated image__img--hidden image__img--dark"
+            src="https://i.imgur.com/y3i2Ll1.jpg"
           />
+          <noscript />
         </div>
       </div>
     </div>
@@ -694,7 +733,7 @@ exports[`<Photography /> should render correctly 1`] = `
             class="image__spinner-container"
           >
             <div
-              class="skeleton__outer image__skeleton"
+              class="skeleton__outer image__skeleton image__skeleton--animated"
             >
               <div
                 class="skeleton__shimmer"
@@ -704,12 +743,15 @@ exports[`<Photography /> should render correctly 1`] = `
           </div>
           <img
             alt="Dual-carriageway light-painting"
-            class="image__img image__img--hidden image__img--light"
+            class="image__img image__img--animated image__img--hidden image__img--light"
+            src="https://i.imgur.com/T502lkX.jpg"
           />
           <img
             alt="Dual-carriageway light-painting"
-            class="image__img image__img--hidden image__img--dark"
+            class="image__img image__img--animated image__img--hidden image__img--dark"
+            src="https://i.imgur.com/T502lkX.jpg"
           />
+          <noscript />
         </div>
       </div>
     </div>
@@ -749,7 +791,7 @@ exports[`<Photography /> should render correctly 1`] = `
             class="image__spinner-container"
           >
             <div
-              class="skeleton__outer image__skeleton"
+              class="skeleton__outer image__skeleton image__skeleton--animated"
             >
               <div
                 class="skeleton__shimmer"
@@ -759,12 +801,15 @@ exports[`<Photography /> should render correctly 1`] = `
           </div>
           <img
             alt="Guinness cake"
-            class="image__img image__img--hidden image__img--light"
+            class="image__img image__img--animated image__img--hidden image__img--light"
+            src="https://i.imgur.com/oBWlSDO.jpg"
           />
           <img
             alt="Guinness cake"
-            class="image__img image__img--hidden image__img--dark"
+            class="image__img image__img--animated image__img--hidden image__img--dark"
+            src="https://i.imgur.com/oBWlSDO.jpg"
           />
+          <noscript />
         </div>
       </div>
     </div>
@@ -794,7 +839,7 @@ exports[`<Photography /> should render correctly 1`] = `
             class="image__spinner-container"
           >
             <div
-              class="skeleton__outer image__skeleton"
+              class="skeleton__outer image__skeleton image__skeleton--animated"
             >
               <div
                 class="skeleton__shimmer"
@@ -804,12 +849,15 @@ exports[`<Photography /> should render correctly 1`] = `
           </div>
           <img
             alt="Ratatouille"
-            class="image__img image__img--hidden image__img--light"
+            class="image__img image__img--animated image__img--hidden image__img--light"
+            src="https://i.imgur.com/kRGhYxz.jpg"
           />
           <img
             alt="Ratatouille"
-            class="image__img image__img--hidden image__img--dark"
+            class="image__img image__img--animated image__img--hidden image__img--dark"
+            src="https://i.imgur.com/kRGhYxz.jpg"
           />
+          <noscript />
         </div>
       </div>
     </div>
