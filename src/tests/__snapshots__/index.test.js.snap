@@ -117,7 +117,7 @@ exports[`<HomePage /> should render correctly 1`] = `
                   class="image__spinner-container"
                 >
                   <div
-                    class="skeleton__outer image__skeleton"
+                    class="skeleton__outer image__skeleton image__skeleton--animated"
                   >
                     <div
                       class="skeleton__shimmer"
@@ -126,11 +126,14 @@ exports[`<HomePage /> should render correctly 1`] = `
                   </div>
                 </div>
                 <img
-                  class="image__img image__img--hidden image__img--light"
+                  class="image__img image__img--animated image__img--hidden image__img--light"
+                  src="IMAGE_MOCK"
                 />
                 <img
-                  class="image__img image__img--hidden image__img--dark"
+                  class="image__img image__img--animated image__img--hidden image__img--dark"
+                  src="IMAGE_MOCK"
                 />
+                <noscript />
               </div>
             </div>
           </div>
@@ -148,7 +151,7 @@ exports[`<HomePage /> should render correctly 1`] = `
                   class="image__spinner-container"
                 >
                   <div
-                    class="skeleton__outer image__skeleton"
+                    class="skeleton__outer image__skeleton image__skeleton--animated"
                   >
                     <div
                       class="skeleton__shimmer"
@@ -157,11 +160,14 @@ exports[`<HomePage /> should render correctly 1`] = `
                   </div>
                 </div>
                 <img
-                  class="image__img image__img--hidden image__img--light"
+                  class="image__img image__img--animated image__img--hidden image__img--light"
+                  src="IMAGE_MOCK"
                 />
                 <img
-                  class="image__img image__img--hidden image__img--dark"
+                  class="image__img image__img--animated image__img--hidden image__img--dark"
+                  src="IMAGE_MOCK"
                 />
+                <noscript />
               </div>
             </div>
           </div>
@@ -179,7 +185,7 @@ exports[`<HomePage /> should render correctly 1`] = `
                   class="image__spinner-container"
                 >
                   <div
-                    class="skeleton__outer image__skeleton"
+                    class="skeleton__outer image__skeleton image__skeleton--animated"
                   >
                     <div
                       class="skeleton__shimmer"
@@ -188,11 +194,14 @@ exports[`<HomePage /> should render correctly 1`] = `
                   </div>
                 </div>
                 <img
-                  class="image__img image__img--hidden image__img--light"
+                  class="image__img image__img--animated image__img--hidden image__img--light"
+                  src="IMAGE_MOCK"
                 />
                 <img
-                  class="image__img image__img--hidden image__img--dark"
+                  class="image__img image__img--animated image__img--hidden image__img--dark"
+                  src="IMAGE_MOCK"
                 />
+                <noscript />
               </div>
             </div>
           </div>
@@ -217,7 +226,7 @@ exports[`<HomePage /> should render correctly 1`] = `
               class="image__spinner-container"
             >
               <div
-                class="skeleton__outer image__skeleton"
+                class="skeleton__outer image__skeleton image__skeleton--animated"
               >
                 <div
                   class="skeleton__shimmer"
@@ -227,12 +236,15 @@ exports[`<HomePage /> should render correctly 1`] = `
             </div>
             <img
               alt=""
-              class="image__img image__img--hidden image__img--light"
+              class="image__img image__img--animated image__img--hidden image__img--light"
+              src="IMAGE_MOCK"
             />
             <img
               alt=""
-              class="image__img image__img--hidden image__img--dark"
+              class="image__img image__img--animated image__img--hidden image__img--dark"
+              src="IMAGE_MOCK"
             />
+            <noscript />
           </div>
         </div>
         <div
@@ -292,7 +304,7 @@ exports[`<HomePage /> should render correctly 1`] = `
               class="image__spinner-container"
             >
               <div
-                class="skeleton__outer image__skeleton"
+                class="skeleton__outer image__skeleton image__skeleton--animated"
               >
                 <div
                   class="skeleton__shimmer"
@@ -302,12 +314,15 @@ exports[`<HomePage /> should render correctly 1`] = `
             </div>
             <img
               alt=""
-              class="image__img image__img--hidden image__img--light"
+              class="image__img image__img--animated image__img--hidden image__img--light"
+              src="IMAGE_MOCK"
             />
             <img
               alt=""
-              class="image__img image__img--hidden image__img--dark"
+              class="image__img image__img--animated image__img--hidden image__img--dark"
+              src="IMAGE_MOCK"
             />
+            <noscript />
           </div>
         </div>
         <div
@@ -327,7 +342,7 @@ exports[`<HomePage /> should render correctly 1`] = `
                   class="image__spinner-container"
                 >
                   <div
-                    class="skeleton__outer image__skeleton"
+                    class="skeleton__outer image__skeleton image__skeleton--animated"
                   >
                     <div
                       class="skeleton__shimmer"
@@ -337,12 +352,15 @@ exports[`<HomePage /> should render correctly 1`] = `
                 </div>
                 <img
                   alt=""
-                  class="image__img image__img--hidden image__img--light"
+                  class="image__img image__img--animated image__img--hidden image__img--light"
+                  src="IMAGE_MOCK"
                 />
                 <img
                   alt=""
-                  class="image__img image__img--hidden image__img--dark"
+                  class="image__img image__img--animated image__img--hidden image__img--dark"
+                  src="IMAGE_MOCK"
                 />
+                <noscript />
               </div>
             </div>
           </div>
@@ -360,7 +378,7 @@ exports[`<HomePage /> should render correctly 1`] = `
                   class="image__spinner-container"
                 >
                   <div
-                    class="skeleton__outer image__skeleton"
+                    class="skeleton__outer image__skeleton image__skeleton--animated"
                   >
                     <div
                       class="skeleton__shimmer"
@@ -370,12 +388,15 @@ exports[`<HomePage /> should render correctly 1`] = `
                 </div>
                 <img
                   alt=""
-                  class="image__img image__img--hidden image__img--light"
+                  class="image__img image__img--animated image__img--hidden image__img--light"
+                  src="IMAGE_MOCK"
                 />
                 <img
                   alt=""
-                  class="image__img image__img--hidden image__img--dark"
+                  class="image__img image__img--animated image__img--hidden image__img--dark"
+                  src="IMAGE_MOCK"
                 />
+                <noscript />
               </div>
             </div>
           </div>
@@ -405,7 +426,7 @@ exports[`<HomePage /> should render correctly 1`] = `
                   class="image__spinner-container"
                 >
                   <div
-                    class="skeleton__outer image__skeleton"
+                    class="skeleton__outer image__skeleton image__skeleton--animated"
                   >
                     <div
                       class="skeleton__shimmer"
@@ -415,12 +436,15 @@ exports[`<HomePage /> should render correctly 1`] = `
                 </div>
                 <img
                   alt="Me"
-                  class="image__img image__img--hidden image__img--light"
+                  class="image__img image__img--animated image__img--hidden image__img--light"
+                  src="https://i.imgur.com/FLA0jkg.jpg"
                 />
                 <img
                   alt="Me"
-                  class="image__img image__img--hidden image__img--dark"
+                  class="image__img image__img--animated image__img--hidden image__img--dark"
+                  src="https://i.imgur.com/FLA0jkg.jpg"
                 />
+                <noscript />
               </div>
             </div>
           </div>

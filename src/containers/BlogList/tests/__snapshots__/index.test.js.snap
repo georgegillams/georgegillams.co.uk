@@ -397,7 +397,7 @@ exports[`<BlogList /> should render correctly authenticated with blogs 1`] = `
                   class="image__spinner-container"
                 >
                   <div
-                    class="skeleton__outer image__skeleton"
+                    class="skeleton__outer image__skeleton image__skeleton--animated"
                   >
                     <div
                       class="skeleton__shimmer"
@@ -407,12 +407,15 @@ exports[`<BlogList /> should render correctly authenticated with blogs 1`] = `
                 </div>
                 <img
                   alt="card"
-                  class="image__img image__img--hidden image__img--light"
+                  class="image__img image__img--animated image__img--hidden image__img--light"
+                  src="https://i.imgur.com/ppPEuDs.jpg"
                 />
                 <img
                   alt="card"
-                  class="image__img image__img--hidden image__img--dark"
+                  class="image__img image__img--animated image__img--hidden image__img--dark"
+                  src="https://i.imgur.com/ppPEuDs.jpg"
                 />
+                <noscript />
               </div>
             </div>
           </div>
@@ -537,7 +540,7 @@ exports[`<BlogList /> should render correctly authenticated with blogs 1`] = `
                   class="image__spinner-container"
                 >
                   <div
-                    class="skeleton__outer image__skeleton"
+                    class="skeleton__outer image__skeleton image__skeleton--animated"
                   >
                     <div
                       class="skeleton__shimmer"
@@ -547,12 +550,15 @@ exports[`<BlogList /> should render correctly authenticated with blogs 1`] = `
                 </div>
                 <img
                   alt="card"
-                  class="image__img image__img--hidden image__img--light"
+                  class="image__img image__img--animated image__img--hidden image__img--light"
+                  src="https://i.imgur.com/ppPEuDs.jpg"
                 />
                 <img
                   alt="card"
-                  class="image__img image__img--hidden image__img--dark"
+                  class="image__img image__img--animated image__img--hidden image__img--dark"
+                  src="https://i.imgur.com/ppPEuDs.jpg"
                 />
+                <noscript />
               </div>
             </div>
           </div>
@@ -993,7 +999,7 @@ exports[`<BlogList /> should render correctly with blogs 1`] = `
                   class="image__spinner-container"
                 >
                   <div
-                    class="skeleton__outer image__skeleton"
+                    class="skeleton__outer image__skeleton image__skeleton--animated"
                   >
                     <div
                       class="skeleton__shimmer"
@@ -1003,12 +1009,15 @@ exports[`<BlogList /> should render correctly with blogs 1`] = `
                 </div>
                 <img
                   alt="card"
-                  class="image__img image__img--hidden image__img--light"
+                  class="image__img image__img--animated image__img--hidden image__img--light"
+                  src="https://i.imgur.com/ppPEuDs.jpg"
                 />
                 <img
                   alt="card"
-                  class="image__img image__img--hidden image__img--dark"
+                  class="image__img image__img--animated image__img--hidden image__img--dark"
+                  src="https://i.imgur.com/ppPEuDs.jpg"
                 />
+                <noscript />
               </div>
             </div>
           </div>
@@ -1123,7 +1132,7 @@ exports[`<BlogList /> should render correctly with blogs 1`] = `
                   class="image__spinner-container"
                 >
                   <div
-                    class="skeleton__outer image__skeleton"
+                    class="skeleton__outer image__skeleton image__skeleton--animated"
                   >
                     <div
                       class="skeleton__shimmer"
@@ -1133,12 +1142,15 @@ exports[`<BlogList /> should render correctly with blogs 1`] = `
                 </div>
                 <img
                   alt="card"
-                  class="image__img image__img--hidden image__img--light"
+                  class="image__img image__img--animated image__img--hidden image__img--light"
+                  src="https://i.imgur.com/ppPEuDs.jpg"
                 />
                 <img
                   alt="card"
-                  class="image__img image__img--hidden image__img--dark"
+                  class="image__img image__img--animated image__img--hidden image__img--dark"
+                  src="https://i.imgur.com/ppPEuDs.jpg"
                 />
+                <noscript />
               </div>
             </div>
           </div>
@@ -1558,7 +1570,7 @@ exports[`<BlogList /> should render correctly with ssrBlogs 1`] = `
                   class="image__spinner-container"
                 >
                   <div
-                    class="skeleton__outer image__skeleton"
+                    class="skeleton__outer image__skeleton image__skeleton--animated"
                   >
                     <div
                       class="skeleton__shimmer"
@@ -1568,12 +1580,15 @@ exports[`<BlogList /> should render correctly with ssrBlogs 1`] = `
                 </div>
                 <img
                   alt="card"
-                  class="image__img image__img--hidden image__img--light"
+                  class="image__img image__img--animated image__img--hidden image__img--light"
+                  src="https://i.imgur.com/ppPEuDs.jpg"
                 />
                 <img
                   alt="card"
-                  class="image__img image__img--hidden image__img--dark"
+                  class="image__img image__img--animated image__img--hidden image__img--dark"
+                  src="https://i.imgur.com/ppPEuDs.jpg"
                 />
+                <noscript />
               </div>
             </div>
           </div>
@@ -1688,7 +1703,7 @@ exports[`<BlogList /> should render correctly with ssrBlogs 1`] = `
                   class="image__spinner-container"
                 >
                   <div
-                    class="skeleton__outer image__skeleton"
+                    class="skeleton__outer image__skeleton image__skeleton--animated"
                   >
                     <div
                       class="skeleton__shimmer"
@@ -1698,12 +1713,15 @@ exports[`<BlogList /> should render correctly with ssrBlogs 1`] = `
                 </div>
                 <img
                   alt="card"
-                  class="image__img image__img--hidden image__img--light"
+                  class="image__img image__img--animated image__img--hidden image__img--light"
+                  src="https://i.imgur.com/ppPEuDs.jpg"
                 />
                 <img
                   alt="card"
-                  class="image__img image__img--hidden image__img--dark"
+                  class="image__img image__img--animated image__img--hidden image__img--dark"
+                  src="https://i.imgur.com/ppPEuDs.jpg"
                 />
+                <noscript />
               </div>
             </div>
           </div>
