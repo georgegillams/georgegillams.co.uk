@@ -107,7 +107,7 @@ exports[`<HomePage /> should render correctly 1`] = `
             class="sliding-phone__outer phones__phone"
           >
             <div
-              class="image__outer sliding-phone__image sliding-phone__image--hide"
+              class="image__outer sliding-phone__image sliding-phone__image--hide sliding-phone__image--animated"
             >
               <div
                 class="image__placeholder"
@@ -136,12 +136,13 @@ exports[`<HomePage /> should render correctly 1`] = `
                 <noscript />
               </div>
             </div>
+            <noscript />
           </div>
           <div
             class="sliding-phone__outer phones__phone"
           >
             <div
-              class="image__outer sliding-phone__image sliding-phone__image--hide"
+              class="image__outer sliding-phone__image sliding-phone__image--hide sliding-phone__image--animated"
             >
               <div
                 class="image__placeholder"
@@ -170,12 +171,13 @@ exports[`<HomePage /> should render correctly 1`] = `
                 <noscript />
               </div>
             </div>
+            <noscript />
           </div>
           <div
             class="sliding-phone__outer phones__phone"
           >
             <div
-              class="image__outer sliding-phone__image sliding-phone__image--hide"
+              class="image__outer sliding-phone__image sliding-phone__image--hide sliding-phone__image--animated"
             >
               <div
                 class="image__placeholder"
@@ -204,6 +206,7 @@ exports[`<HomePage /> should render correctly 1`] = `
                 <noscript />
               </div>
             </div>
+            <noscript />
           </div>
         </div>
       </div>

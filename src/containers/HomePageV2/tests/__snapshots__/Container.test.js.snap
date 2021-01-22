@@ -103,7 +103,7 @@ exports[`<Home /> should render correctly 1`] = `
           class="sliding-phone__outer phones__phone"
         >
           <div
-            class="image__outer sliding-phone__image sliding-phone__image--hide"
+            class="image__outer sliding-phone__image sliding-phone__image--hide sliding-phone__image--animated"
           >
             <div
               class="image__placeholder"
@@ -132,12 +132,13 @@ exports[`<Home /> should render correctly 1`] = `
               <noscript />
             </div>
           </div>
+          <noscript />
         </div>
         <div
           class="sliding-phone__outer phones__phone"
         >
           <div
-            class="image__outer sliding-phone__image sliding-phone__image--hide"
+            class="image__outer sliding-phone__image sliding-phone__image--hide sliding-phone__image--animated"
           >
             <div
               class="image__placeholder"
@@ -166,12 +167,13 @@ exports[`<Home /> should render correctly 1`] = `
               <noscript />
             </div>
           </div>
+          <noscript />
         </div>
         <div
           class="sliding-phone__outer phones__phone"
         >
           <div
-            class="image__outer sliding-phone__image sliding-phone__image--hide"
+            class="image__outer sliding-phone__image sliding-phone__image--hide sliding-phone__image--animated"
           >
             <div
               class="image__placeholder"
@@ -200,6 +202,7 @@ exports[`<Home /> should render correctly 1`] = `
               <noscript />
             </div>
           </div>
+          <noscript />
         </div>
       </div>
     </div>
@@ -689,7 +692,7 @@ exports[`<Home /> should render correctly with admin user 1`] = `
           class="sliding-phone__outer phones__phone"
         >
           <div
-            class="image__outer sliding-phone__image sliding-phone__image--hide"
+            class="image__outer sliding-phone__image sliding-phone__image--hide sliding-phone__image--animated"
           >
             <div
               class="image__placeholder"
@@ -718,12 +721,13 @@ exports[`<Home /> should render correctly with admin user 1`] = `
               <noscript />
             </div>
           </div>
+          <noscript />
         </div>
         <div
           class="sliding-phone__outer phones__phone"
         >
           <div
-            class="image__outer sliding-phone__image sliding-phone__image--hide"
+            class="image__outer sliding-phone__image sliding-phone__image--hide sliding-phone__image--animated"
           >
             <div
               class="image__placeholder"
@@ -752,12 +756,13 @@ exports[`<Home /> should render correctly with admin user 1`] = `
               <noscript />
             </div>
           </div>
+          <noscript />
         </div>
         <div
           class="sliding-phone__outer phones__phone"
         >
           <div
-            class="image__outer sliding-phone__image sliding-phone__image--hide"
+            class="image__outer sliding-phone__image sliding-phone__image--hide sliding-phone__image--animated"
           >
             <div
               class="image__placeholder"
@@ -786,6 +791,7 @@ exports[`<Home /> should render correctly with admin user 1`] = `
               <noscript />
             </div>
           </div>
+          <noscript />
         </div>
       </div>
     </div>
@@ -1275,7 +1281,7 @@ exports[`<Home /> should render correctly with no user 1`] = `
           class="sliding-phone__outer phones__phone"
         >
           <div
-            class="image__outer sliding-phone__image sliding-phone__image--hide"
+            class="image__outer sliding-phone__image sliding-phone__image--hide sliding-phone__image--animated"
           >
             <div
               class="image__placeholder"
@@ -1304,12 +1310,13 @@ exports[`<Home /> should render correctly with no user 1`] = `
               <noscript />
             </div>
           </div>
+          <noscript />
         </div>
         <div
           class="sliding-phone__outer phones__phone"
         >
           <div
-            class="image__outer sliding-phone__image sliding-phone__image--hide"
+            class="image__outer sliding-phone__image sliding-phone__image--hide sliding-phone__image--animated"
           >
             <div
               class="image__placeholder"
@@ -1338,12 +1345,13 @@ exports[`<Home /> should render correctly with no user 1`] = `
               <noscript />
             </div>
           </div>
+          <noscript />
         </div>
         <div
           class="sliding-phone__outer phones__phone"
         >
           <div
-            class="image__outer sliding-phone__image sliding-phone__image--hide"
+            class="image__outer sliding-phone__image sliding-phone__image--hide sliding-phone__image--animated"
           >
             <div
               class="image__placeholder"
@@ -1372,6 +1380,7 @@ exports[`<Home /> should render correctly with no user 1`] = `
               <noscript />
             </div>
           </div>
+          <noscript />
         </div>
       </div>
     </div>
@@ -1861,7 +1870,7 @@ exports[`<Home /> should render correctly with user 1`] = `
           class="sliding-phone__outer phones__phone"
         >
           <div
-            class="image__outer sliding-phone__image sliding-phone__image--hide"
+            class="image__outer sliding-phone__image sliding-phone__image--hide sliding-phone__image--animated"
           >
             <div
               class="image__placeholder"
@@ -1890,12 +1899,13 @@ exports[`<Home /> should render correctly with user 1`] = `
               <noscript />
             </div>
           </div>
+          <noscript />
         </div>
         <div
           class="sliding-phone__outer phones__phone"
         >
           <div
-            class="image__outer sliding-phone__image sliding-phone__image--hide"
+            class="image__outer sliding-phone__image sliding-phone__image--hide sliding-phone__image--animated"
           >
             <div
               class="image__placeholder"
@@ -1924,12 +1934,13 @@ exports[`<Home /> should render correctly with user 1`] = `
               <noscript />
             </div>
           </div>
+          <noscript />
         </div>
         <div
           class="sliding-phone__outer phones__phone"
         >
           <div
-            class="image__outer sliding-phone__image sliding-phone__image--hide"
+            class="image__outer sliding-phone__image sliding-phone__image--hide sliding-phone__image--animated"
           >
             <div
               class="image__placeholder"
@@ -1958,6 +1969,7 @@ exports[`<Home /> should render correctly with user 1`] = `
               <noscript />
             </div>
           </div>
+          <noscript />
         </div>
       </div>
     </div>
