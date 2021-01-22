@@ -4,22 +4,19 @@ import PropTypes from 'prop-types';
 import { Image } from 'gg-components/Image';
 import STYLES from './animated-image.scss';
 import { cssModules } from 'gg-components/helpers/cssModules';
-import { useEntryAnimationClientOnly } from 'gg-components/ServerSideRendering';
 
 const getClassName = cssModules(STYLES);
 
 const AnimatedImage = props => {
   const { show, className, ...rest } = props;
 
-  const [isFirstRender, animationsEnabled] = useEntryAnimationClientOnly();
-
   return (
     <div className={getClassName('animated-image__outer', className)} {...rest}>
       <Image
         className={getClassName(
           'animated-image__image',
-          !isFirstRender && !show && 'animated-image__image--hide',
-          animationsEnabled && 'animated-image__image--animated'
+          !show && 'animated-image__image--hide',
+          'animated-image__image--animated'
         )}
         imgProps={{
           alt: 'Me',
@@ -29,6 +26,18 @@ const AnimatedImage = props => {
         lightSrc="https://i.imgur.com/FLA0jkg.jpg"
         darkSrc="https://i.imgur.com/FLA0jkg.jpg"
       />
+      <noscript>
+        <Image
+          className={getClassName('animated-image__image')}
+          imgProps={{
+            alt: 'Me',
+          }}
+          aspectX={3829}
+          aspectY={2872}
+          lightSrc="https://i.imgur.com/FLA0jkg.jpg"
+          darkSrc="https://i.imgur.com/FLA0jkg.jpg"
+        />
+      </noscript>
     </div>
   );
 };

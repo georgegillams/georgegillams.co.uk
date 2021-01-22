@@ -4,15 +4,19 @@ import PropTypes from 'prop-types';
 import TextLink from 'components/common/TextLink';
 import STYLES from './contact-link.scss';
 import { cssModules } from 'gg-components/helpers/cssModules';
-import { useEntryAnimationClientOnly } from 'gg-components/ServerSideRendering';
+import { useEffectAfterPageLoad } from 'gg-components/ServerSideRendering';
 
 const getClassName = cssModules(STYLES);
 
 const ContactLink = props => {
   const { scrollPosition, className, ...rest } = props;
-  const [isFirstRender] = useEntryAnimationClientOnly();
+  const [pageStillLoading, setPageStillLoading] = useState(true);
   const [hovering, setHovering] = useState(false);
-  const hide = isFirstRender || hovering;
+  const hide = pageStillLoading || hovering;
+
+  useEffectAfterPageLoad(() => {
+    setPageStillLoading(false);
+  });
 
   // We want to adjust the value to be always between 14 and 300
   const normalisedUpper = 300;

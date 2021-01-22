@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 
 import { withScroll, cleanRestScrollProps } from 'gg-components/ScrollContainer';
@@ -8,7 +8,7 @@ import { Section } from 'gg-components/Section';
 import TextLink from 'components/common/TextLink';
 import STYLES from './life-section.scss';
 import { cssModules } from 'gg-components/helpers/cssModules';
-import { useEntryAnimationClientOnly } from 'gg-components/ServerSideRendering';
+import { useEffectAfterPageLoad } from 'gg-components/ServerSideRendering';
 import travel from './images/travel.jpg';
 import cat from './images/cat.jpg';
 
@@ -17,7 +17,11 @@ const getClassName = cssModules(STYLES);
 const LifeSection = props => {
   const { scrollPositionVh, fullyInView, className, ...rest } = props;
 
-  const [isFirstRender, animationsEnabled] = useEntryAnimationClientOnly();
+  const [pageStillLoading, setPageStillLoading] = useState(true);
+
+  useEffectAfterPageLoad(() => {
+    setPageStillLoading(false);
+  });
 
   cleanRestScrollProps(rest);
 
@@ -29,8 +33,12 @@ const LifeSection = props => {
   const scrollOffsetMin2 = -6;
   const scrollOffsetMax2 = 8;
   const scrollOffsetRange2 = scrollOffsetMax2 - scrollOffsetMin2;
-  const scrollPositionOffset1 = isFirstRender ? scrollOffsetMax1 : scrollOffsetMin1 + scrollOffsetRange1 * scrollFactor;
-  const scrollPositionOffset2 = isFirstRender ? scrollOffsetMax2 : scrollOffsetMin2 + scrollOffsetRange2 * scrollFactor;
+  const scrollPositionOffset1 = pageStillLoading
+    ? scrollOffsetMax1
+    : scrollOffsetMin1 + scrollOffsetRange1 * scrollFactor;
+  const scrollPositionOffset2 = pageStillLoading
+    ? scrollOffsetMax2
+    : scrollOffsetMin2 + scrollOffsetRange2 * scrollFactor;
 
   const rotationMin1 = -15;
   const rotationMax1 = -4;
@@ -38,8 +46,8 @@ const LifeSection = props => {
   const rotationMin2 = 3;
   const rotationMax2 = 7;
   const rotationRange2 = rotationMax2 - rotationMin2;
-  const rotationPosition1 = rotationMin1 + rotationRange1 * scrollFactor;
-  const rotationPosition2 = rotationMin2 + rotationRange2 * scrollFactor;
+  const rotationPosition1 = pageStillLoading ? rotationMax1 : rotationMin1 + rotationRange1 * scrollFactor;
+  const rotationPosition2 = pageStillLoading ? rotationMax2 : rotationMin2 + rotationRange2 * scrollFactor;
 
   return (
     <div className={getClassName('life-section__outer', className)} {...rest}>
@@ -87,8 +95,8 @@ const LifeSection = props => {
             className={getClassName(
               'life-section__image-below-tablet',
               'life-section__image-below-tablet--left',
-              animationsEnabled ? 'life-section__image-below-tablet--animated' : '',
-              fullyInView || isFirstRender ? '' : 'life-section__image-below-tablet--left-hide'
+              'life-section__image-below-tablet--animated',
+              fullyInView ? '' : 'life-section__image-below-tablet--left-hide'
             )}
             // style={{ marginTop: `${scrollPositionOffset1}rem` }}
             imgProps={{
@@ -106,8 +114,8 @@ const LifeSection = props => {
             className={getClassName(
               'life-section__image-below-tablet',
               'life-section__image-below-tablet--right',
-              animationsEnabled ? 'life-section__image-below-tablet--animated' : '',
-              fullyInView || isFirstRender ? '' : 'life-section__image-below-tablet--right-hide'
+              'life-section__image-below-tablet--animated',
+              fullyInView ? '' : 'life-section__image-below-tablet--right-hide'
             )}
             // style={{ marginTop: `${scrollPositionOffset1}rem` }}
             imgProps={{
