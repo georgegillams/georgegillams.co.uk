@@ -9,7 +9,7 @@ import { useEntryAnimationClientOnly } from 'gg-components/ServerSideRendering';
 const getClassName = cssModules(STYLES);
 
 const SlidingPhone = props => {
-  const { show, className, lightSrc, darkSrc, ...rest } = props;
+  const { show, className, lightSrc, darkSrc, imgProps, ...rest } = props;
 
   const [isFirstRender, animationsEnabled] = useEntryAnimationClientOnly();
 
@@ -25,6 +25,7 @@ const SlidingPhone = props => {
         aspectY={1986}
         lightSrc={lightSrc}
         darkSrc={darkSrc}
+        imgProps={imgProps}
       />
     </div>
   );
@@ -34,6 +35,7 @@ SlidingPhone.propTypes = {
   show: PropTypes.bool,
   className: PropTypes.string,
   lightSrc: PropTypes.string.isRequired,
+  imgProps: PropTypes.object.isRequired,
   darkSrc: PropTypes.string.isRequired,
 };
 
