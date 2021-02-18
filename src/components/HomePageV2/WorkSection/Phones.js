@@ -59,18 +59,27 @@ const Phones = props => {
         show={timedDisplayStates[0]}
         lightSrc={light0}
         darkSrc={dark0}
+        imgProps={{
+          alt: 'A screenshot of our Backpack design principles',
+        }}
       />
       <SlidingPhone
         className={getClassName('phones__phone')}
         show={timedDisplayStates[1]}
         lightSrc={light1}
         darkSrc={dark1}
+        imgProps={{
+          alt: 'A screenshot of our bar chart component on iOS',
+        }}
       />
       <SlidingPhone
         className={getClassName('phones__phone')}
         show={timedDisplayStates[2]}
         lightSrc={light2}
         darkSrc={dark2}
+        imgProps={{
+          alt: 'A screenshot of our flare view component on web',
+        }}
       />
     </div>
   );
