@@ -59,6 +59,7 @@ exports[`<AdminNavigation /> should render correctly with admin user 1`] = `
       class="admin-navigation__card-container"
     >
       <button
+        aria-label="Debug"
         class="card feature-card feature-card--narrow-compact admin-navigation__card"
         role="link"
         style="cursor: pointer;"
@@ -98,6 +99,7 @@ exports[`<AdminNavigation /> should render correctly with admin user 1`] = `
         />
       </button>
       <button
+        aria-label="Analytics"
         class="card feature-card feature-card--narrow-compact admin-navigation__card"
         role="link"
         style="cursor: pointer;"
@@ -137,6 +139,7 @@ exports[`<AdminNavigation /> should render correctly with admin user 1`] = `
         />
       </button>
       <button
+        aria-label="Emails"
         class="card feature-card feature-card--narrow-compact admin-navigation__card"
         role="link"
         style="cursor: pointer;"
@@ -176,6 +179,7 @@ exports[`<AdminNavigation /> should render correctly with admin user 1`] = `
         />
       </button>
       <button
+        aria-label="Notifications"
         class="card feature-card feature-card--narrow-compact admin-navigation__card"
         role="link"
         style="cursor: pointer;"
@@ -215,6 +219,7 @@ exports[`<AdminNavigation /> should render correctly with admin user 1`] = `
         />
       </button>
       <button
+        aria-label="Users"
         class="card feature-card feature-card--narrow-compact admin-navigation__card"
         role="link"
         style="cursor: pointer;"

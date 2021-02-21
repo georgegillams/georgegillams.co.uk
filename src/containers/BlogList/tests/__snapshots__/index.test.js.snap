@@ -162,6 +162,7 @@ exports[`<BlogList /> should render correctly authenticated with blogs 1`] = `
   </div>
   <div>
     <button
+      aria-label="Add a new blog"
       class="card feature-card blogs-list__card"
       role="link"
       style="cursor: pointer;"
