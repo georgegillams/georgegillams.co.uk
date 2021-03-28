@@ -49,7 +49,8 @@ const SignUp = props => {
         <PageTitle name="Sign up">
           <SignUpForm
             className={getClassName('sign-up__form')}
-            disabled={signUpState.signingUp || consentState.cookieConsent !== CONSENT_STATE_ALLOWED}
+            disabled={consentState.cookieConsent !== CONSENT_STATE_ALLOWED}
+            loading={signUpState.signingUp}
             credentials={credentials}
             onDataChanged={setCredentials}
             onSubmit={() => {

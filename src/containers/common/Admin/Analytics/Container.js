@@ -69,7 +69,7 @@ const AdminAnalytics = props => {
     <div>
       <Button
         className={getClassName('admin-analytics__control')}
-        disabled={adminAnalyticsState.loading}
+        loading={adminAnalyticsState.loading}
         onClick={() => load()}>
         Reload analytics
       </Button>

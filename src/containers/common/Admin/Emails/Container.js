@@ -101,7 +101,7 @@ const AdminEmails = props => {
     <AdminEmailAPIEntity key={detailEmail.id} entity={detailEmail} highlighted={highlightId === detailEmail.id}>
       <Button
         destructive
-        disabled={adminEmailsState.resending}
+        loading={adminEmailsState.resending}
         onClick={() => resend({ emailToResend: detailEmail })}
         className={getClassName('admin-emails__control')}>
         Resend
@@ -113,7 +113,7 @@ const AdminEmails = props => {
     <div>
       <Button
         style={{ marginRight: '1rem', marginBottom: '1rem' }}
-        disabled={adminEmailsState.loading}
+        loading={adminEmailsState.loading}
         onClick={() => load()}>
         Reload emails
       </Button>

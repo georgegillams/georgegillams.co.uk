@@ -45,7 +45,7 @@ const AdminNotifications = props => {
     <div>
       <Button
         className={getClassName('admin-notifications__control')}
-        disabled={notificationsState.loading}
+        loading={notificationsState.loading}
         onClick={() => load()}>
         Reload notifications
       </Button>

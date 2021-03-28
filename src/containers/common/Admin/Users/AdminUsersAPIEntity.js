@@ -66,7 +66,7 @@ const AdminUsersAPIEntity = props => {
               });
             }
           }}
-          disabled={adminUserState.updating}
+          loading={adminUserState.updating}
         />
       )}
       {!compact && adminUserState && (

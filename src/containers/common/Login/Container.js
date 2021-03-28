@@ -46,7 +46,7 @@ const Login = props => {
         <PageTitle name="Login">
           <LoginForm
             className={getClassName('login__form')}
-            disabled={loginState.loggingIn}
+            loading={loginState.loggingIn}
             credentials={credentials}
             onDataChanged={setCredentials}
             onSubmit={() => {
