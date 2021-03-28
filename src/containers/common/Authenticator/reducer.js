@@ -2,6 +2,7 @@ import produce from 'immer';
 import cookie from 'react-cookies';
 
 import { SESSION_COOKIE_KEY, COOKIE_EXPIRY_TIME } from 'helpers/storageConstants';
+import { useLocalhost } from 'helpers/appConfig';
 
 import { setUser, loadAuth } from './actions';
 
@@ -19,7 +20,7 @@ const reducer = (state = initialState, { type, payload }) =>
         if (payload && payload.session) {
           cookie.save(SESSION_COOKIE_KEY, payload.session, {
             path: '/',
-            secure: true,
+            secure: !useLocalhost,
             expires: new Date(Date.now() + COOKIE_EXPIRY_TIME),
           });
         }

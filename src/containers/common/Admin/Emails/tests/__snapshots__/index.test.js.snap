@@ -384,10 +384,43 @@ exports[`<AdminEmails /> should render correctly with loading=true 1`] = `
       type="button"
     >
       <span
-        class="button__child"
+        class="button__child button__child--loading"
       >
         Reload emails
       </span>
+      <div
+        aria-hidden="true"
+        class="button__loading-spinner"
+      >
+        <div
+          class="spinner__outer"
+        >
+          <div
+            class="spinner__inner"
+          />
+          <div
+            class="spinner__inner"
+          />
+          <div
+            class="spinner__inner"
+          />
+          <div
+            class="spinner__inner"
+          />
+          <div
+            class="spinner__inner"
+          />
+          <div
+            class="spinner__inner"
+          />
+          <div
+            class="spinner__inner"
+          />
+          <div
+            class="spinner__inner"
+          />
+        </div>
+      </div>
     </button>
   </div>
   <div

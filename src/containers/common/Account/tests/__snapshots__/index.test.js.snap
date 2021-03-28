@@ -215,10 +215,43 @@ exports[`<Account /> should render correctly with loggingOut=true 1`] = `
         type="button"
       >
         <span
-          class="button__child"
+          class="button__child button__child--loading"
         >
           Logout
         </span>
+        <div
+          aria-hidden="true"
+          class="button__loading-spinner"
+        >
+          <div
+            class="spinner__outer"
+          >
+            <div
+              class="spinner__inner"
+            />
+            <div
+              class="spinner__inner"
+            />
+            <div
+              class="spinner__inner"
+            />
+            <div
+              class="spinner__inner"
+            />
+            <div
+              class="spinner__inner"
+            />
+            <div
+              class="spinner__inner"
+            />
+            <div
+              class="spinner__inner"
+            />
+            <div
+              class="spinner__inner"
+            />
+          </div>
+        </div>
       </button>
     </div>
   </div>
@@ -354,10 +387,43 @@ exports[`<Account /> should render correctly with requestingVerificationEmail=tr
         type="button"
       >
         <span
-          class="button__child"
+          class="button__child button__child--loading"
         >
           Get a new verification email
         </span>
+        <div
+          aria-hidden="true"
+          class="button__loading-spinner"
+        >
+          <div
+            class="spinner__outer"
+          >
+            <div
+              class="spinner__inner"
+            />
+            <div
+              class="spinner__inner"
+            />
+            <div
+              class="spinner__inner"
+            />
+            <div
+              class="spinner__inner"
+            />
+            <div
+              class="spinner__inner"
+            />
+            <div
+              class="spinner__inner"
+            />
+            <div
+              class="spinner__inner"
+            />
+            <div
+              class="spinner__inner"
+            />
+          </div>
+        </div>
       </button>
       <button
         class="button__outer button__outer--destructive button__outer--no-bouncy button__outer--no-bouncy--destructive"

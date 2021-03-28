@@ -268,10 +268,43 @@ exports[`<AdminAnalytics /> should render correctly with loading=true 1`] = `
       type="button"
     >
       <span
-        class="button__child"
+        class="button__child button__child--loading"
       >
         Reload analytics
       </span>
+      <div
+        aria-hidden="true"
+        class="button__loading-spinner"
+      >
+        <div
+          class="spinner__outer"
+        >
+          <div
+            class="spinner__inner"
+          />
+          <div
+            class="spinner__inner"
+          />
+          <div
+            class="spinner__inner"
+          />
+          <div
+            class="spinner__inner"
+          />
+          <div
+            class="spinner__inner"
+          />
+          <div
+            class="spinner__inner"
+          />
+          <div
+            class="spinner__inner"
+          />
+          <div
+            class="spinner__inner"
+          />
+        </div>
+      </div>
     </button>
     <button
       class="button__outer button__outer--regular button__outer--no-bouncy admin-analytics__control"

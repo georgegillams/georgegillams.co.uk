@@ -56,7 +56,7 @@ const Account = props => {
               <>
                 <Button
                   className={getClassName('account__button')}
-                  disabled={accountState && accountState.requestingVerificationEmail}
+                  loading={accountState && accountState.requestingVerificationEmail}
                   onClick={requestVerificationEmail}>
                   Get a new verification email
                 </Button>
@@ -72,7 +72,7 @@ const Account = props => {
                 </Button>
               </>
             )}
-            <Button destructive disabled={accountState && accountState.loggingOut} onClick={logout}>
+            <Button destructive loading={accountState && accountState.loggingOut} onClick={logout}>
               Logout
             </Button>
           </div>

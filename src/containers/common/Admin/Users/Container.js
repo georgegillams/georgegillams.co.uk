@@ -100,7 +100,7 @@ const AdminUsers = props => {
           create(newUser);
         }}
         submitLabel="Create user"
-        disabled={adminUsersState.creating}
+        loading={adminUsersState.creating}
       />
     </>
   );
@@ -148,7 +148,7 @@ const AdminUsers = props => {
           <Button
             className={getClassName('admin-users__button')}
             destructive
-            disabled={requesting || removing}
+            loading={requesting || removing}
             onClick={() => {
               requestMagicLink(detailUser);
             }}>
@@ -157,7 +157,7 @@ const AdminUsers = props => {
           <Button
             className={getClassName('admin-users__button')}
             destructive
-            disabled={removing}
+            loading={removing}
             onClick={() => remove(detailUser)}>
             Delete
           </Button>
@@ -169,7 +169,7 @@ const AdminUsers = props => {
   const filtersApplied = filters !== defaultFilters;
   const mainControls = (
     <div>
-      <Button className={getClassName('admin-users__button')} disabled={adminUsersState.loading} onClick={() => load()}>
+      <Button className={getClassName('admin-users__button')} loading={adminUsersState.loading} onClick={() => load()}>
         Reload users
       </Button>
       <Button className={getClassName('admin-users__button')} onClick={() => setShowFilters(!showFilters)}>
