@@ -6,6 +6,9 @@
     width: 100%;
     margin-right: auto;
     margin-left: auto;
+    // overflow is needed to ensure elements animated
+    // from outside the page don't affect page width
+    overflow: hidden;
 
     &--bottom-padding {
       padding-bottom: $spacing-lg;
