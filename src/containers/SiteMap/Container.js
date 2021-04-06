@@ -9,6 +9,11 @@ import PageTitle from 'components/common/PageTitle';
 import redirects from 'helpers/redirects';
 import DebugObject from 'components/common/DebugObject';
 
+import STYLES from './site-map.scss';
+import { cssModules } from 'gg-components/helpers/cssModules';
+
+const getClassName = cssModules(STYLES);
+
 const SiteMap = props => {
   const { ssrBlogs, loadBlogs, blogListState, authenticatorState } = props;
 
@@ -34,7 +39,7 @@ const SiteMap = props => {
   return (
     <PageTitle name="Site map" {...props}>
       <DebugObject debugTitle="Sitemap" debugObject={{ loadBlogs, authenticatorState, blogListState }} />
-      <Subsection anchor={false} name="Blog 📝">
+      <Subsection anchor={false} name="Blog 📝" className={getClassName('site-map__section')}>
         <Paragraph>
           <TextLink href={`/blog`}>Blog list</TextLink>
           <br />
@@ -60,7 +65,7 @@ const SiteMap = props => {
           )}
         </Paragraph>
       </Subsection>
-      <Subsection anchor={false} name="Travel ✈️">
+      <Subsection anchor={false} name="Travel ✈️" className={getClassName('site-map__section')}>
         <Paragraph>
           <TextLink href={`/travel`}>Travel blog list</TextLink>
           <br />
@@ -87,7 +92,7 @@ const SiteMap = props => {
         </Paragraph>
       </Subsection>
       {admin && (
-        <Subsection anchor={false} name="All blogs">
+        <Subsection anchor={false} name="All blogs" className={getClassName('site-map__section')}>
           {blogList && (
             <Paragraph>
               {blogList.map(b => (
@@ -103,12 +108,12 @@ const SiteMap = props => {
           )}
         </Subsection>
       )}
-      <Subsection anchor={false} name="Photography 📷">
+      <Subsection anchor={false} name="Photography 📷" className={getClassName('site-map__section')}>
         <Paragraph>
           <TextLink href="/photography">Photography</TextLink>
         </Paragraph>
       </Subsection>
-      <Subsection anchor={false} name="Work 📱">
+      <Subsection anchor={false} name="Work 📱" className={getClassName('site-map__section')}>
         <Paragraph>
           <TextLink href="/work">Overview</TextLink>
           <br />
@@ -121,12 +126,12 @@ const SiteMap = props => {
           <TextLink href="/work/side-projects">Side projects</TextLink>
         </Paragraph>
       </Subsection>
-      <Subsection anchor={false} name="Design 🎨">
+      <Subsection anchor={false} name="Design 🎨" className={getClassName('site-map__section')}>
         <Paragraph>
           <TextLink href="/privacy-policy">Privacy Policy</TextLink>
         </Paragraph>
       </Subsection>
-      <Subsection anchor={false} name="Other stuff 🤷‍♂️">
+      <Subsection anchor={false} name="Other stuff 🤷‍♂️" className={getClassName('site-map__section')}>
         <Paragraph>
           <TextLink href="/contact">Contact</TextLink>
           <br />
@@ -137,7 +142,7 @@ const SiteMap = props => {
           <TextLink href="/status">Status</TextLink>
         </Paragraph>
       </Subsection>
-      <Subsection anchor={false} name="Random 🐉">
+      <Subsection anchor={false} name="Random 🐉" className={getClassName('site-map__section')}>
         <Paragraph>
           <TextLink hrefExternal href="/robots.txt">
             Robots.txt
@@ -152,12 +157,12 @@ const SiteMap = props => {
           <TextLink href="/teapot">418 error page - I&apos;m a teapot</TextLink>
         </Paragraph>
       </Subsection>
-      <Subsection anchor={false} name="API">
+      <Subsection anchor={false} name="API" className={getClassName('site-map__section')}>
         <Paragraph>
           <TextLink href="/api-docs">API docs</TextLink>
         </Paragraph>
       </Subsection>
-      <Subsection anchor={false} name="Accounts 🔑">
+      <Subsection anchor={false} name="Accounts 🔑" className={getClassName('site-map__section')}>
         <Paragraph>
           <TextLink href="/account">Account</TextLink>
           <br />
@@ -170,7 +175,7 @@ const SiteMap = props => {
           <TextLink href="/magic-login">Magic login</TextLink>
         </Paragraph>
       </Subsection>
-      <Subsection anchor={false} name="Admin 👮‍♂️">
+      <Subsection anchor={false} name="Admin 👮‍♂️" className={getClassName('site-map__section')}>
         <Paragraph>
           <TextLink href="/admin">Admin navigation</TextLink>
           <br />
@@ -185,7 +190,7 @@ const SiteMap = props => {
           <TextLink href="/admin/users">Users</TextLink>
         </Paragraph>
       </Subsection>
-      <Subsection anchor={false} name="Redirects 👉">
+      <Subsection anchor={false} name="Redirects 👉" className={getClassName('site-map__section')}>
         <Paragraph>
           {redirects.map(redirect => (
             <div key={redirect.from}>
