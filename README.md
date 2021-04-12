@@ -37,10 +37,14 @@ npx jest -u
 To update backstopJS snapshots:
 
 ```
-docker build -t georgegillams-test -f Dockerfile.backstopjstest .
-docker run georgegillams-test
-docker cp DOCKER_CONTAINER_ID:/usr/src/tmp/backstop_data ./
+./scripts/docker/prepare.sh
+./scripts/docker/run-tests.sh --update
+./scripts/docker/clean-up.sh'
 ```
+
+- The first will setup the docker image and container. If they already exist this will be super fast.
+- The second will copy the project over, setup dependencies, build and run, and take screenshots. Failed screenshots will be copied back to your machine.
+- The third simply stops the docker container.
 
 Any changes resulting from these commands should be verified and checked in.
 
