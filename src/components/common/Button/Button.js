@@ -7,16 +7,16 @@ import Link from 'next/link';
 const Button = props => {
   const { href, hrefExternal, ...rest } = props;
 
-  const renderNormalLink = !href || hrefExternal;
+  const renderNormalButton = !href || hrefExternal;
 
   const destination = nextifyHref(href);
 
-  if (renderNormalLink) {
+  if (renderNormalButton) {
     return <GGButton href={href} hrefExternal={hrefExternal} {...rest} />;
   }
 
   return (
-    <Link passHref href={destination.url} as={destination.as}>
+    <Link passHref href={destination.url} as={destination.as} {...destination.options}>
       <GGButton {...rest} />
     </Link>
   );

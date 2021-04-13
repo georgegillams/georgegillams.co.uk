@@ -1,45 +1,28 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import PropTypes from 'prop-types';
 import { Card as GGCard } from 'gg-components/Card';
 import HelperFunctions from 'helpers/common/HelperFunctions';
-import Router, { useRouter } from 'next/router';
 import nextifyHref from 'client-utils/nextifyHref';
+import Link from 'next/link';
 
 const Card = props => {
-  const { href, onClick, scroll, ...rest } = props;
-  const router = useRouter();
+  const { href, onClick, ...rest } = props;
 
   const hrefExternal = href && HelperFunctions.includes(href, 'http');
 
-  const [isServer, setIsServer] = useState(typeof window === 'undefined');
-
-  const renderNormalLink = !href || hrefExternal;
+  const renderNormalCard = !href || hrefExternal;
 
   const destination = nextifyHref(href);
 
-  useEffect(() => {
-    setIsServer(false);
-    if (!renderNormalLink && process.env.NODE_ENV !== 'test') {
-      Router.prefetch(destination.url, destination.as);
-    }
-  }, []);
-
-  if (isServer || renderNormalLink) {
+  if (renderNormalCard) {
     return <GGCard href={href} onClick={onClick} {...rest} />;
   }
 
-  const onClickFinal = async e => {
-    if (onClick) {
-      onClick(e);
-    }
-    await router.push(destination.url, destination.as, destination.options);
-    if (scroll) {
-      return window.scrollTo(0, 0);
-    }
-    return true;
-  };
-
-  return <GGCard style={{ cursor: 'pointer' }} onClick={onClickFinal} {...rest} />;
+  return (
+    <Link passHref href={destination.url} as={destination.as} {...destination.options}>
+      <GGCard {...rest} />
+    </Link>
+  );
 };
 
 Card.propTypes = {

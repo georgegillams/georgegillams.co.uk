@@ -2,471 +2,20 @@
 
 exports[`<BlogCard /> Should render correctly 1`] = `
 <div>
-  <button
+  <a
     aria-label="Blog 1 , NaN Invalid Date"
-    class="card feature-card"
-    role="link"
-    style="cursor: pointer;"
-    type="button"
+    class="card feature-card card--atomic card--not-disabled"
+    href="/blog/asdfg"
+    tabindex="0"
   >
     <div
-      class="card__background"
-    />
-    <div
-      class="card__outer-container card__outer-container--padded"
-    >
-      <div
-        aria-hidden="true"
-        class="feature-card__outer-container feature-card__outer-container--auto"
-      >
-        <div
-          class="feature-card__date"
-        >
-          <div
-            class="feature-card__annotation feature-card__annotation--mobile"
-          >
-            <div
-              class="subsection__outer"
-            >
-              <h3
-                class="subsection__heading subsection__heading--link subsection__heading--no-padding"
-                id="nan-invalid-date"
-              >
-                NaN Invalid Date
-              </h3>
-            </div>
-          </div>
-          <div
-            class="feature-card__annotation feature-card__annotation--tablet"
-          >
-            <div
-              class="subsection__outer"
-            >
-              <h3
-                class="subsection__heading subsection__heading--link subsection__heading--no-padding"
-                id="nan"
-              >
-                NaN
-              </h3>
-            </div>
-          </div>
-          <div
-            class="feature-card__annotation feature-card__annotation--tablet"
-          >
-            <div
-              class="subsection__outer"
-            >
-              <h3
-                class="subsection__heading subsection__heading--link subsection__heading--no-padding"
-                id="invalid-date"
-              >
-                Invalid Date
-              </h3>
-            </div>
-          </div>
-        </div>
-        <div
-          class="feature-card__center-container"
-        >
-          <div
-            class="section__outer feature-card__title"
-          >
-            <h2
-              class="section__heading section__heading--link section__heading--no-padding"
-              id="blog-1-"
-            >
-              Blog 1 
-            </h2>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div
-      class="card__banner"
-    />
-  </button>
-</div>
-`;
-
-exports[`<BlogCard /> Should render correctly when deleted 1`] = `
-<div>
-  <button
-    aria-label="Untitled blog (DELETED), 23to30 Dec, Tagged travel"
-    class="card feature-card"
-    role="link"
-    style="cursor: pointer;"
-    type="button"
-  >
-    <div
-      class="card__background"
-    />
-    <div
-      class="card__outer-container card__outer-container--padded"
-    >
-      <div
-        aria-hidden="true"
-        class="feature-card__outer-container feature-card__outer-container--auto"
-      >
-        <div
-          class="feature-card__date"
-        >
-          <div
-            class="feature-card__annotation feature-card__annotation--mobile"
-          >
-            <div
-              class="subsection__outer"
-            >
-              <h3
-                class="subsection__heading subsection__heading--link subsection__heading--no-padding"
-                id="23-30-dec"
-              >
-                23-30 Dec
-              </h3>
-            </div>
-          </div>
-          <div
-            class="feature-card__annotation feature-card__annotation--tablet"
-          >
-            <div
-              class="subsection__outer"
-            >
-              <h3
-                class="subsection__heading subsection__heading--link subsection__heading--no-padding"
-                id="23-30"
-              >
-                23-30
-              </h3>
-            </div>
-          </div>
-          <div
-            class="feature-card__annotation feature-card__annotation--tablet"
-          >
-            <div
-              class="subsection__outer"
-            >
-              <h3
-                class="subsection__heading subsection__heading--link subsection__heading--no-padding"
-                id="dec"
-              >
-                Dec
-              </h3>
-            </div>
-          </div>
-        </div>
-        <div
-          class="feature-card__center-container"
-        >
-          <div
-            class="section__outer feature-card__title"
-          >
-            <h2
-              class="section__heading section__heading--link section__heading--no-padding"
-              id="untitled-blog-(deleted)"
-            >
-              Untitled blog (DELETED)
-            </h2>
-          </div>
-          <div
-            class="feature-card__children"
-          >
-            <div
-              class="tag__outer"
-            >
-              <span
-                class="tag tag--travel"
-              >
-                Travel
-              </span>
-            </div>
-          </div>
-        </div>
-        <div
-          class="feature-card__image-container"
-        >
-          <div
-            class="image__outer feature-card__image"
-          >
-            <div
-              class="image__placeholder"
-              style="padding-bottom: 100%;"
-            >
-              <div
-                class="image__spinner-container"
-              >
-                <div
-                  class="skeleton__outer image__skeleton image__skeleton--animated"
-                >
-                  <div
-                    class="skeleton__shimmer"
-                    style="margin-left: -0px;"
-                  />
-                </div>
-              </div>
-              <img
-                alt="card"
-                class="image__img image__img--animated image__img--hidden image__img--light"
-                src="https://i.imgur.com/ppPEuDs.jpg"
-              />
-              <img
-                alt="card"
-                class="image__img image__img--animated image__img--hidden image__img--dark"
-                src="https://i.imgur.com/ppPEuDs.jpg"
-              />
-              <noscript />
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div
-      class="card__banner"
-      style="background-color: rgb(1, 87, 155);"
-    />
-  </button>
-</div>
-`;
-
-exports[`<BlogCard /> Should render correctly with all parameters supplied 1`] = `
-<div>
-  <button
-    aria-label="St Ives  2018, 23to30 Dec, Tagged travel"
-    class="card feature-card"
-    role="link"
-    style="cursor: pointer;"
-    type="button"
-  >
-    <div
-      class="card__background"
-    />
-    <div
-      class="card__outer-container card__outer-container--padded"
-    >
-      <div
-        aria-hidden="true"
-        class="feature-card__outer-container feature-card__outer-container--auto"
-      >
-        <div
-          class="feature-card__date"
-        >
-          <div
-            class="feature-card__annotation feature-card__annotation--mobile"
-          >
-            <div
-              class="subsection__outer"
-            >
-              <h3
-                class="subsection__heading subsection__heading--link subsection__heading--no-padding"
-                id="23-30-dec"
-              >
-                23-30 Dec
-              </h3>
-            </div>
-          </div>
-          <div
-            class="feature-card__annotation feature-card__annotation--tablet"
-          >
-            <div
-              class="subsection__outer"
-            >
-              <h3
-                class="subsection__heading subsection__heading--link subsection__heading--no-padding"
-                id="23-30"
-              >
-                23-30
-              </h3>
-            </div>
-          </div>
-          <div
-            class="feature-card__annotation feature-card__annotation--tablet"
-          >
-            <div
-              class="subsection__outer"
-            >
-              <h3
-                class="subsection__heading subsection__heading--link subsection__heading--no-padding"
-                id="dec"
-              >
-                Dec
-              </h3>
-            </div>
-          </div>
-        </div>
-        <div
-          class="feature-card__center-container"
-        >
-          <div
-            class="section__outer feature-card__title"
-          >
-            <h2
-              class="section__heading section__heading--link section__heading--no-padding"
-              id="st-ives--2018"
-            >
-              St Ives  2018
-            </h2>
-          </div>
-          <div
-            class="feature-card__children"
-          >
-            <div
-              class="tag__outer"
-            >
-              <span
-                class="tag tag--travel"
-              >
-                Travel
-              </span>
-            </div>
-          </div>
-        </div>
-        <div
-          class="feature-card__image-container"
-        >
-          <div
-            class="image__outer feature-card__image"
-          >
-            <div
-              class="image__placeholder"
-              style="padding-bottom: 100%;"
-            >
-              <div
-                class="image__spinner-container"
-              >
-                <div
-                  class="skeleton__outer image__skeleton image__skeleton--animated"
-                >
-                  <div
-                    class="skeleton__shimmer"
-                    style="margin-left: -0px;"
-                  />
-                </div>
-              </div>
-              <img
-                alt="card"
-                class="image__img image__img--animated image__img--hidden image__img--light"
-                src="https://i.imgur.com/ppPEuDs.jpg"
-              />
-              <img
-                alt="card"
-                class="image__img image__img--animated image__img--hidden image__img--dark"
-                src="https://i.imgur.com/ppPEuDs.jpg"
-              />
-              <noscript />
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div
-      class="card__banner"
-      style="background-color: rgb(1, 87, 155);"
-    />
-  </button>
-</div>
-`;
-
-exports[`<BlogCard /> Should render correctly with custom className 1`] = `
-<div>
-  <button
-    aria-label="Blog 1 , NaN Invalid Date"
-    class="card feature-card test-custom-classname"
-    role="link"
-    style="cursor: pointer;"
-    type="button"
-  >
-    <div
-      class="card__background"
-    />
-    <div
-      class="card__outer-container card__outer-container--padded"
-    >
-      <div
-        aria-hidden="true"
-        class="feature-card__outer-container feature-card__outer-container--auto"
-      >
-        <div
-          class="feature-card__date"
-        >
-          <div
-            class="feature-card__annotation feature-card__annotation--mobile"
-          >
-            <div
-              class="subsection__outer"
-            >
-              <h3
-                class="subsection__heading subsection__heading--link subsection__heading--no-padding"
-                id="nan-invalid-date"
-              >
-                NaN Invalid Date
-              </h3>
-            </div>
-          </div>
-          <div
-            class="feature-card__annotation feature-card__annotation--tablet"
-          >
-            <div
-              class="subsection__outer"
-            >
-              <h3
-                class="subsection__heading subsection__heading--link subsection__heading--no-padding"
-                id="nan"
-              >
-                NaN
-              </h3>
-            </div>
-          </div>
-          <div
-            class="feature-card__annotation feature-card__annotation--tablet"
-          >
-            <div
-              class="subsection__outer"
-            >
-              <h3
-                class="subsection__heading subsection__heading--link subsection__heading--no-padding"
-                id="invalid-date"
-              >
-                Invalid Date
-              </h3>
-            </div>
-          </div>
-        </div>
-        <div
-          class="feature-card__center-container"
-        >
-          <div
-            class="section__outer feature-card__title"
-          >
-            <h2
-              class="section__heading section__heading--link section__heading--no-padding"
-              id="blog-1-"
-            >
-              Blog 1 
-            </h2>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div
-      class="card__banner"
-    />
-  </button>
-</div>
-`;
-
-exports[`<BlogsList /> Should render correctly 1`] = `
-<div>
-  <div>
-    <button
-      aria-label="Blog 1 , NaN Invalid Date"
-      class="card feature-card blogs-list__card"
-      role="link"
-      style="cursor: pointer;"
-      type="button"
+      class="card__outer-container"
     >
       <div
         class="card__background"
       />
       <div
-        class="card__outer-container card__outer-container--padded"
+        class="card__content-container card__content-container--padded"
       >
         <div
           aria-hidden="true"
@@ -479,10 +28,10 @@ exports[`<BlogsList /> Should render correctly 1`] = `
               class="feature-card__annotation feature-card__annotation--mobile"
             >
               <div
-                class="subsection__outer"
+                class="subsection__outer subsection__outer--inherit-color"
               >
                 <h3
-                  class="subsection__heading subsection__heading--link subsection__heading--no-padding"
+                  class="subsection__heading subsection__heading--no-padding"
                   id="nan-invalid-date"
                 >
                   NaN Invalid Date
@@ -493,10 +42,10 @@ exports[`<BlogsList /> Should render correctly 1`] = `
               class="feature-card__annotation feature-card__annotation--tablet"
             >
               <div
-                class="subsection__outer"
+                class="subsection__outer subsection__outer--inherit-color"
               >
                 <h3
-                  class="subsection__heading subsection__heading--link subsection__heading--no-padding"
+                  class="subsection__heading subsection__heading--no-padding"
                   id="nan"
                 >
                   NaN
@@ -507,10 +56,10 @@ exports[`<BlogsList /> Should render correctly 1`] = `
               class="feature-card__annotation feature-card__annotation--tablet"
             >
               <div
-                class="subsection__outer"
+                class="subsection__outer subsection__outer--inherit-color"
               >
                 <h3
-                  class="subsection__heading subsection__heading--link subsection__heading--no-padding"
+                  class="subsection__heading subsection__heading--no-padding"
                   id="invalid-date"
                 >
                   Invalid Date
@@ -522,10 +71,10 @@ exports[`<BlogsList /> Should render correctly 1`] = `
             class="feature-card__center-container"
           >
             <div
-              class="section__outer feature-card__title"
+              class="section__outer section__outer--inherit-color feature-card__title"
             >
               <h2
-                class="section__heading section__heading--link section__heading--no-padding"
+                class="section__heading section__heading--no-padding"
                 id="blog-1-"
               >
                 Blog 1 
@@ -534,22 +83,28 @@ exports[`<BlogsList /> Should render correctly 1`] = `
           </div>
         </div>
       </div>
-      <div
-        class="card__banner"
-      />
-    </button>
-    <button
-      aria-label="St Ives  2018, 23to30 Dec, Tagged travel"
-      class="card feature-card blogs-list__card"
-      role="link"
-      style="cursor: pointer;"
-      type="button"
+    </div>
+  </a>
+</div>
+`;
+
+exports[`<BlogCard /> Should render correctly when deleted 1`] = `
+<div>
+  <a
+    aria-label="Untitled blog (DELETED), 23to30 Dec, Tagged travel"
+    bannercolor="#01579b"
+    class="card feature-card card--atomic card--not-disabled"
+    href="/blog/mndyd8"
+    tabindex="0"
+  >
+    <div
+      class="card__outer-container"
     >
       <div
         class="card__background"
       />
       <div
-        class="card__outer-container card__outer-container--padded"
+        class="card__content-container card__content-container--padded"
       >
         <div
           aria-hidden="true"
@@ -562,10 +117,10 @@ exports[`<BlogsList /> Should render correctly 1`] = `
               class="feature-card__annotation feature-card__annotation--mobile"
             >
               <div
-                class="subsection__outer"
+                class="subsection__outer subsection__outer--inherit-color"
               >
                 <h3
-                  class="subsection__heading subsection__heading--link subsection__heading--no-padding"
+                  class="subsection__heading subsection__heading--no-padding"
                   id="23-30-dec"
                 >
                   23-30 Dec
@@ -576,10 +131,10 @@ exports[`<BlogsList /> Should render correctly 1`] = `
               class="feature-card__annotation feature-card__annotation--tablet"
             >
               <div
-                class="subsection__outer"
+                class="subsection__outer subsection__outer--inherit-color"
               >
                 <h3
-                  class="subsection__heading subsection__heading--link subsection__heading--no-padding"
+                  class="subsection__heading subsection__heading--no-padding"
                   id="23-30"
                 >
                   23-30
@@ -590,10 +145,10 @@ exports[`<BlogsList /> Should render correctly 1`] = `
               class="feature-card__annotation feature-card__annotation--tablet"
             >
               <div
-                class="subsection__outer"
+                class="subsection__outer subsection__outer--inherit-color"
               >
                 <h3
-                  class="subsection__heading subsection__heading--link subsection__heading--no-padding"
+                  class="subsection__heading subsection__heading--no-padding"
                   id="dec"
                 >
                   Dec
@@ -605,143 +160,10 @@ exports[`<BlogsList /> Should render correctly 1`] = `
             class="feature-card__center-container"
           >
             <div
-              class="section__outer feature-card__title"
+              class="section__outer section__outer--inherit-color feature-card__title"
             >
               <h2
-                class="section__heading section__heading--link section__heading--no-padding"
-                id="st-ives--2018"
-              >
-                St Ives  2018
-              </h2>
-            </div>
-            <div
-              class="feature-card__children"
-            >
-              <div
-                class="tag__outer"
-              >
-                <span
-                  class="tag tag--travel"
-                >
-                  Travel
-                </span>
-              </div>
-            </div>
-          </div>
-          <div
-            class="feature-card__image-container"
-          >
-            <div
-              class="image__outer feature-card__image"
-            >
-              <div
-                class="image__placeholder"
-                style="padding-bottom: 100%;"
-              >
-                <div
-                  class="image__spinner-container"
-                >
-                  <div
-                    class="skeleton__outer image__skeleton image__skeleton--animated"
-                  >
-                    <div
-                      class="skeleton__shimmer"
-                      style="margin-left: -0px;"
-                    />
-                  </div>
-                </div>
-                <img
-                  alt="card"
-                  class="image__img image__img--animated image__img--hidden image__img--light"
-                  src="https://i.imgur.com/ppPEuDs.jpg"
-                />
-                <img
-                  alt="card"
-                  class="image__img image__img--animated image__img--hidden image__img--dark"
-                  src="https://i.imgur.com/ppPEuDs.jpg"
-                />
-                <noscript />
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div
-        class="card__banner"
-        style="background-color: rgb(1, 87, 155);"
-      />
-    </button>
-    <button
-      aria-label="Untitled blog (DELETED), 23to30 Dec, Tagged travel"
-      class="card feature-card blogs-list__card"
-      role="link"
-      style="cursor: pointer;"
-      type="button"
-    >
-      <div
-        class="card__background"
-      />
-      <div
-        class="card__outer-container card__outer-container--padded"
-      >
-        <div
-          aria-hidden="true"
-          class="feature-card__outer-container feature-card__outer-container--auto"
-        >
-          <div
-            class="feature-card__date"
-          >
-            <div
-              class="feature-card__annotation feature-card__annotation--mobile"
-            >
-              <div
-                class="subsection__outer"
-              >
-                <h3
-                  class="subsection__heading subsection__heading--link subsection__heading--no-padding"
-                  id="23-30-dec"
-                >
-                  23-30 Dec
-                </h3>
-              </div>
-            </div>
-            <div
-              class="feature-card__annotation feature-card__annotation--tablet"
-            >
-              <div
-                class="subsection__outer"
-              >
-                <h3
-                  class="subsection__heading subsection__heading--link subsection__heading--no-padding"
-                  id="23-30"
-                >
-                  23-30
-                </h3>
-              </div>
-            </div>
-            <div
-              class="feature-card__annotation feature-card__annotation--tablet"
-            >
-              <div
-                class="subsection__outer"
-              >
-                <h3
-                  class="subsection__heading subsection__heading--link subsection__heading--no-padding"
-                  id="dec"
-                >
-                  Dec
-                </h3>
-              </div>
-            </div>
-          </div>
-          <div
-            class="feature-card__center-container"
-          >
-            <div
-              class="section__outer feature-card__title"
-            >
-              <h2
-                class="section__heading section__heading--link section__heading--no-padding"
+                class="section__heading section__heading--no-padding"
                 id="untitled-blog-(deleted)"
               >
                 Untitled blog (DELETED)
@@ -799,11 +221,589 @@ exports[`<BlogsList /> Should render correctly 1`] = `
           </div>
         </div>
       </div>
+    </div>
+  </a>
+</div>
+`;
+
+exports[`<BlogCard /> Should render correctly with all parameters supplied 1`] = `
+<div>
+  <a
+    aria-label="St Ives  2018, 23to30 Dec, Tagged travel"
+    bannercolor="#01579b"
+    class="card feature-card card--atomic card--not-disabled"
+    href="/blog/zxywvuts"
+    tabindex="0"
+  >
+    <div
+      class="card__outer-container"
+    >
       <div
-        class="card__banner"
-        style="background-color: rgb(1, 87, 155);"
+        class="card__background"
       />
-    </button>
+      <div
+        class="card__content-container card__content-container--padded"
+      >
+        <div
+          aria-hidden="true"
+          class="feature-card__outer-container feature-card__outer-container--auto"
+        >
+          <div
+            class="feature-card__date"
+          >
+            <div
+              class="feature-card__annotation feature-card__annotation--mobile"
+            >
+              <div
+                class="subsection__outer subsection__outer--inherit-color"
+              >
+                <h3
+                  class="subsection__heading subsection__heading--no-padding"
+                  id="23-30-dec"
+                >
+                  23-30 Dec
+                </h3>
+              </div>
+            </div>
+            <div
+              class="feature-card__annotation feature-card__annotation--tablet"
+            >
+              <div
+                class="subsection__outer subsection__outer--inherit-color"
+              >
+                <h3
+                  class="subsection__heading subsection__heading--no-padding"
+                  id="23-30"
+                >
+                  23-30
+                </h3>
+              </div>
+            </div>
+            <div
+              class="feature-card__annotation feature-card__annotation--tablet"
+            >
+              <div
+                class="subsection__outer subsection__outer--inherit-color"
+              >
+                <h3
+                  class="subsection__heading subsection__heading--no-padding"
+                  id="dec"
+                >
+                  Dec
+                </h3>
+              </div>
+            </div>
+          </div>
+          <div
+            class="feature-card__center-container"
+          >
+            <div
+              class="section__outer section__outer--inherit-color feature-card__title"
+            >
+              <h2
+                class="section__heading section__heading--no-padding"
+                id="st-ives--2018"
+              >
+                St Ives  2018
+              </h2>
+            </div>
+            <div
+              class="feature-card__children"
+            >
+              <div
+                class="tag__outer"
+              >
+                <span
+                  class="tag tag--travel"
+                >
+                  Travel
+                </span>
+              </div>
+            </div>
+          </div>
+          <div
+            class="feature-card__image-container"
+          >
+            <div
+              class="image__outer feature-card__image"
+            >
+              <div
+                class="image__placeholder"
+                style="padding-bottom: 100%;"
+              >
+                <div
+                  class="image__spinner-container"
+                >
+                  <div
+                    class="skeleton__outer image__skeleton image__skeleton--animated"
+                  >
+                    <div
+                      class="skeleton__shimmer"
+                      style="margin-left: -0px;"
+                    />
+                  </div>
+                </div>
+                <img
+                  alt="card"
+                  class="image__img image__img--animated image__img--hidden image__img--light"
+                  src="https://i.imgur.com/ppPEuDs.jpg"
+                />
+                <img
+                  alt="card"
+                  class="image__img image__img--animated image__img--hidden image__img--dark"
+                  src="https://i.imgur.com/ppPEuDs.jpg"
+                />
+                <noscript />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </a>
+</div>
+`;
+
+exports[`<BlogCard /> Should render correctly with custom className 1`] = `
+<div>
+  <a
+    aria-label="Blog 1 , NaN Invalid Date"
+    class="card feature-card test-custom-classname card--atomic card--not-disabled"
+    href="/blog/asdfg"
+    tabindex="0"
+  >
+    <div
+      class="card__outer-container"
+    >
+      <div
+        class="card__background"
+      />
+      <div
+        class="card__content-container card__content-container--padded"
+      >
+        <div
+          aria-hidden="true"
+          class="feature-card__outer-container feature-card__outer-container--auto"
+        >
+          <div
+            class="feature-card__date"
+          >
+            <div
+              class="feature-card__annotation feature-card__annotation--mobile"
+            >
+              <div
+                class="subsection__outer subsection__outer--inherit-color"
+              >
+                <h3
+                  class="subsection__heading subsection__heading--no-padding"
+                  id="nan-invalid-date"
+                >
+                  NaN Invalid Date
+                </h3>
+              </div>
+            </div>
+            <div
+              class="feature-card__annotation feature-card__annotation--tablet"
+            >
+              <div
+                class="subsection__outer subsection__outer--inherit-color"
+              >
+                <h3
+                  class="subsection__heading subsection__heading--no-padding"
+                  id="nan"
+                >
+                  NaN
+                </h3>
+              </div>
+            </div>
+            <div
+              class="feature-card__annotation feature-card__annotation--tablet"
+            >
+              <div
+                class="subsection__outer subsection__outer--inherit-color"
+              >
+                <h3
+                  class="subsection__heading subsection__heading--no-padding"
+                  id="invalid-date"
+                >
+                  Invalid Date
+                </h3>
+              </div>
+            </div>
+          </div>
+          <div
+            class="feature-card__center-container"
+          >
+            <div
+              class="section__outer section__outer--inherit-color feature-card__title"
+            >
+              <h2
+                class="section__heading section__heading--no-padding"
+                id="blog-1-"
+              >
+                Blog 1 
+              </h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </a>
+</div>
+`;
+
+exports[`<BlogsList /> Should render correctly 1`] = `
+<div>
+  <div>
+    <a
+      aria-label="Blog 1 , NaN Invalid Date"
+      class="card feature-card blogs-list__card card--atomic card--not-disabled"
+      href="/blog/asdfg"
+      tabindex="0"
+    >
+      <div
+        class="card__outer-container"
+      >
+        <div
+          class="card__background"
+        />
+        <div
+          class="card__content-container card__content-container--padded"
+        >
+          <div
+            aria-hidden="true"
+            class="feature-card__outer-container feature-card__outer-container--auto"
+          >
+            <div
+              class="feature-card__date"
+            >
+              <div
+                class="feature-card__annotation feature-card__annotation--mobile"
+              >
+                <div
+                  class="subsection__outer subsection__outer--inherit-color"
+                >
+                  <h3
+                    class="subsection__heading subsection__heading--no-padding"
+                    id="nan-invalid-date"
+                  >
+                    NaN Invalid Date
+                  </h3>
+                </div>
+              </div>
+              <div
+                class="feature-card__annotation feature-card__annotation--tablet"
+              >
+                <div
+                  class="subsection__outer subsection__outer--inherit-color"
+                >
+                  <h3
+                    class="subsection__heading subsection__heading--no-padding"
+                    id="nan"
+                  >
+                    NaN
+                  </h3>
+                </div>
+              </div>
+              <div
+                class="feature-card__annotation feature-card__annotation--tablet"
+              >
+                <div
+                  class="subsection__outer subsection__outer--inherit-color"
+                >
+                  <h3
+                    class="subsection__heading subsection__heading--no-padding"
+                    id="invalid-date"
+                  >
+                    Invalid Date
+                  </h3>
+                </div>
+              </div>
+            </div>
+            <div
+              class="feature-card__center-container"
+            >
+              <div
+                class="section__outer section__outer--inherit-color feature-card__title"
+              >
+                <h2
+                  class="section__heading section__heading--no-padding"
+                  id="blog-1-"
+                >
+                  Blog 1 
+                </h2>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </a>
+    <a
+      aria-label="St Ives  2018, 23to30 Dec, Tagged travel"
+      bannercolor="#01579b"
+      class="card feature-card blogs-list__card card--atomic card--not-disabled"
+      href="/blog/zxywvuts"
+      tabindex="0"
+    >
+      <div
+        class="card__outer-container"
+      >
+        <div
+          class="card__background"
+        />
+        <div
+          class="card__content-container card__content-container--padded"
+        >
+          <div
+            aria-hidden="true"
+            class="feature-card__outer-container feature-card__outer-container--auto"
+          >
+            <div
+              class="feature-card__date"
+            >
+              <div
+                class="feature-card__annotation feature-card__annotation--mobile"
+              >
+                <div
+                  class="subsection__outer subsection__outer--inherit-color"
+                >
+                  <h3
+                    class="subsection__heading subsection__heading--no-padding"
+                    id="23-30-dec"
+                  >
+                    23-30 Dec
+                  </h3>
+                </div>
+              </div>
+              <div
+                class="feature-card__annotation feature-card__annotation--tablet"
+              >
+                <div
+                  class="subsection__outer subsection__outer--inherit-color"
+                >
+                  <h3
+                    class="subsection__heading subsection__heading--no-padding"
+                    id="23-30"
+                  >
+                    23-30
+                  </h3>
+                </div>
+              </div>
+              <div
+                class="feature-card__annotation feature-card__annotation--tablet"
+              >
+                <div
+                  class="subsection__outer subsection__outer--inherit-color"
+                >
+                  <h3
+                    class="subsection__heading subsection__heading--no-padding"
+                    id="dec"
+                  >
+                    Dec
+                  </h3>
+                </div>
+              </div>
+            </div>
+            <div
+              class="feature-card__center-container"
+            >
+              <div
+                class="section__outer section__outer--inherit-color feature-card__title"
+              >
+                <h2
+                  class="section__heading section__heading--no-padding"
+                  id="st-ives--2018"
+                >
+                  St Ives  2018
+                </h2>
+              </div>
+              <div
+                class="feature-card__children"
+              >
+                <div
+                  class="tag__outer"
+                >
+                  <span
+                    class="tag tag--travel"
+                  >
+                    Travel
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div
+              class="feature-card__image-container"
+            >
+              <div
+                class="image__outer feature-card__image"
+              >
+                <div
+                  class="image__placeholder"
+                  style="padding-bottom: 100%;"
+                >
+                  <div
+                    class="image__spinner-container"
+                  >
+                    <div
+                      class="skeleton__outer image__skeleton image__skeleton--animated"
+                    >
+                      <div
+                        class="skeleton__shimmer"
+                        style="margin-left: -0px;"
+                      />
+                    </div>
+                  </div>
+                  <img
+                    alt="card"
+                    class="image__img image__img--animated image__img--hidden image__img--light"
+                    src="https://i.imgur.com/ppPEuDs.jpg"
+                  />
+                  <img
+                    alt="card"
+                    class="image__img image__img--animated image__img--hidden image__img--dark"
+                    src="https://i.imgur.com/ppPEuDs.jpg"
+                  />
+                  <noscript />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </a>
+    <a
+      aria-label="Untitled blog (DELETED), 23to30 Dec, Tagged travel"
+      bannercolor="#01579b"
+      class="card feature-card blogs-list__card card--atomic card--not-disabled"
+      href="/blog/mndyd8"
+      tabindex="0"
+    >
+      <div
+        class="card__outer-container"
+      >
+        <div
+          class="card__background"
+        />
+        <div
+          class="card__content-container card__content-container--padded"
+        >
+          <div
+            aria-hidden="true"
+            class="feature-card__outer-container feature-card__outer-container--auto"
+          >
+            <div
+              class="feature-card__date"
+            >
+              <div
+                class="feature-card__annotation feature-card__annotation--mobile"
+              >
+                <div
+                  class="subsection__outer subsection__outer--inherit-color"
+                >
+                  <h3
+                    class="subsection__heading subsection__heading--no-padding"
+                    id="23-30-dec"
+                  >
+                    23-30 Dec
+                  </h3>
+                </div>
+              </div>
+              <div
+                class="feature-card__annotation feature-card__annotation--tablet"
+              >
+                <div
+                  class="subsection__outer subsection__outer--inherit-color"
+                >
+                  <h3
+                    class="subsection__heading subsection__heading--no-padding"
+                    id="23-30"
+                  >
+                    23-30
+                  </h3>
+                </div>
+              </div>
+              <div
+                class="feature-card__annotation feature-card__annotation--tablet"
+              >
+                <div
+                  class="subsection__outer subsection__outer--inherit-color"
+                >
+                  <h3
+                    class="subsection__heading subsection__heading--no-padding"
+                    id="dec"
+                  >
+                    Dec
+                  </h3>
+                </div>
+              </div>
+            </div>
+            <div
+              class="feature-card__center-container"
+            >
+              <div
+                class="section__outer section__outer--inherit-color feature-card__title"
+              >
+                <h2
+                  class="section__heading section__heading--no-padding"
+                  id="untitled-blog-(deleted)"
+                >
+                  Untitled blog (DELETED)
+                </h2>
+              </div>
+              <div
+                class="feature-card__children"
+              >
+                <div
+                  class="tag__outer"
+                >
+                  <span
+                    class="tag tag--travel"
+                  >
+                    Travel
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div
+              class="feature-card__image-container"
+            >
+              <div
+                class="image__outer feature-card__image"
+              >
+                <div
+                  class="image__placeholder"
+                  style="padding-bottom: 100%;"
+                >
+                  <div
+                    class="image__spinner-container"
+                  >
+                    <div
+                      class="skeleton__outer image__skeleton image__skeleton--animated"
+                    >
+                      <div
+                        class="skeleton__shimmer"
+                        style="margin-left: -0px;"
+                      />
+                    </div>
+                  </div>
+                  <img
+                    alt="card"
+                    class="image__img image__img--animated image__img--hidden image__img--light"
+                    src="https://i.imgur.com/ppPEuDs.jpg"
+                  />
+                  <img
+                    alt="card"
+                    class="image__img image__img--animated image__img--hidden image__img--dark"
+                    src="https://i.imgur.com/ppPEuDs.jpg"
+                  />
+                  <noscript />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </a>
   </div>
 </div>
 `;
@@ -813,355 +813,355 @@ exports[`<BlogsList /> Should render correctly with custom className 1`] = `
   <div
     class="test-custom-classname"
   >
-    <button
+    <a
       aria-label="Blog 1 , NaN Invalid Date"
-      class="card feature-card blogs-list__card"
-      role="link"
-      style="cursor: pointer;"
-      type="button"
+      class="card feature-card blogs-list__card card--atomic card--not-disabled"
+      href="/blog/asdfg"
+      tabindex="0"
     >
       <div
-        class="card__background"
-      />
-      <div
-        class="card__outer-container card__outer-container--padded"
+        class="card__outer-container"
       >
         <div
-          aria-hidden="true"
-          class="feature-card__outer-container feature-card__outer-container--auto"
+          class="card__background"
+        />
+        <div
+          class="card__content-container card__content-container--padded"
         >
           <div
-            class="feature-card__date"
+            aria-hidden="true"
+            class="feature-card__outer-container feature-card__outer-container--auto"
           >
             <div
-              class="feature-card__annotation feature-card__annotation--mobile"
+              class="feature-card__date"
             >
               <div
-                class="subsection__outer"
+                class="feature-card__annotation feature-card__annotation--mobile"
               >
-                <h3
-                  class="subsection__heading subsection__heading--link subsection__heading--no-padding"
-                  id="nan-invalid-date"
+                <div
+                  class="subsection__outer subsection__outer--inherit-color"
                 >
-                  NaN Invalid Date
-                </h3>
+                  <h3
+                    class="subsection__heading subsection__heading--no-padding"
+                    id="nan-invalid-date"
+                  >
+                    NaN Invalid Date
+                  </h3>
+                </div>
+              </div>
+              <div
+                class="feature-card__annotation feature-card__annotation--tablet"
+              >
+                <div
+                  class="subsection__outer subsection__outer--inherit-color"
+                >
+                  <h3
+                    class="subsection__heading subsection__heading--no-padding"
+                    id="nan"
+                  >
+                    NaN
+                  </h3>
+                </div>
+              </div>
+              <div
+                class="feature-card__annotation feature-card__annotation--tablet"
+              >
+                <div
+                  class="subsection__outer subsection__outer--inherit-color"
+                >
+                  <h3
+                    class="subsection__heading subsection__heading--no-padding"
+                    id="invalid-date"
+                  >
+                    Invalid Date
+                  </h3>
+                </div>
               </div>
             </div>
             <div
-              class="feature-card__annotation feature-card__annotation--tablet"
+              class="feature-card__center-container"
             >
               <div
-                class="subsection__outer"
+                class="section__outer section__outer--inherit-color feature-card__title"
               >
-                <h3
-                  class="subsection__heading subsection__heading--link subsection__heading--no-padding"
-                  id="nan"
+                <h2
+                  class="section__heading section__heading--no-padding"
+                  id="blog-1-"
                 >
-                  NaN
-                </h3>
+                  Blog 1 
+                </h2>
               </div>
-            </div>
-            <div
-              class="feature-card__annotation feature-card__annotation--tablet"
-            >
-              <div
-                class="subsection__outer"
-              >
-                <h3
-                  class="subsection__heading subsection__heading--link subsection__heading--no-padding"
-                  id="invalid-date"
-                >
-                  Invalid Date
-                </h3>
-              </div>
-            </div>
-          </div>
-          <div
-            class="feature-card__center-container"
-          >
-            <div
-              class="section__outer feature-card__title"
-            >
-              <h2
-                class="section__heading section__heading--link section__heading--no-padding"
-                id="blog-1-"
-              >
-                Blog 1 
-              </h2>
             </div>
           </div>
         </div>
       </div>
-      <div
-        class="card__banner"
-      />
-    </button>
-    <button
+    </a>
+    <a
       aria-label="St Ives  2018, 23to30 Dec, Tagged travel"
-      class="card feature-card blogs-list__card"
-      role="link"
-      style="cursor: pointer;"
-      type="button"
+      bannercolor="#01579b"
+      class="card feature-card blogs-list__card card--atomic card--not-disabled"
+      href="/blog/zxywvuts"
+      tabindex="0"
     >
       <div
-        class="card__background"
-      />
-      <div
-        class="card__outer-container card__outer-container--padded"
+        class="card__outer-container"
       >
         <div
-          aria-hidden="true"
-          class="feature-card__outer-container feature-card__outer-container--auto"
+          class="card__background"
+        />
+        <div
+          class="card__content-container card__content-container--padded"
         >
           <div
-            class="feature-card__date"
+            aria-hidden="true"
+            class="feature-card__outer-container feature-card__outer-container--auto"
           >
             <div
-              class="feature-card__annotation feature-card__annotation--mobile"
+              class="feature-card__date"
             >
               <div
-                class="subsection__outer"
-              >
-                <h3
-                  class="subsection__heading subsection__heading--link subsection__heading--no-padding"
-                  id="23-30-dec"
-                >
-                  23-30 Dec
-                </h3>
-              </div>
-            </div>
-            <div
-              class="feature-card__annotation feature-card__annotation--tablet"
-            >
-              <div
-                class="subsection__outer"
-              >
-                <h3
-                  class="subsection__heading subsection__heading--link subsection__heading--no-padding"
-                  id="23-30"
-                >
-                  23-30
-                </h3>
-              </div>
-            </div>
-            <div
-              class="feature-card__annotation feature-card__annotation--tablet"
-            >
-              <div
-                class="subsection__outer"
-              >
-                <h3
-                  class="subsection__heading subsection__heading--link subsection__heading--no-padding"
-                  id="dec"
-                >
-                  Dec
-                </h3>
-              </div>
-            </div>
-          </div>
-          <div
-            class="feature-card__center-container"
-          >
-            <div
-              class="section__outer feature-card__title"
-            >
-              <h2
-                class="section__heading section__heading--link section__heading--no-padding"
-                id="st-ives--2018"
-              >
-                St Ives  2018
-              </h2>
-            </div>
-            <div
-              class="feature-card__children"
-            >
-              <div
-                class="tag__outer"
-              >
-                <span
-                  class="tag tag--travel"
-                >
-                  Travel
-                </span>
-              </div>
-            </div>
-          </div>
-          <div
-            class="feature-card__image-container"
-          >
-            <div
-              class="image__outer feature-card__image"
-            >
-              <div
-                class="image__placeholder"
-                style="padding-bottom: 100%;"
+                class="feature-card__annotation feature-card__annotation--mobile"
               >
                 <div
-                  class="image__spinner-container"
+                  class="subsection__outer subsection__outer--inherit-color"
+                >
+                  <h3
+                    class="subsection__heading subsection__heading--no-padding"
+                    id="23-30-dec"
+                  >
+                    23-30 Dec
+                  </h3>
+                </div>
+              </div>
+              <div
+                class="feature-card__annotation feature-card__annotation--tablet"
+              >
+                <div
+                  class="subsection__outer subsection__outer--inherit-color"
+                >
+                  <h3
+                    class="subsection__heading subsection__heading--no-padding"
+                    id="23-30"
+                  >
+                    23-30
+                  </h3>
+                </div>
+              </div>
+              <div
+                class="feature-card__annotation feature-card__annotation--tablet"
+              >
+                <div
+                  class="subsection__outer subsection__outer--inherit-color"
+                >
+                  <h3
+                    class="subsection__heading subsection__heading--no-padding"
+                    id="dec"
+                  >
+                    Dec
+                  </h3>
+                </div>
+              </div>
+            </div>
+            <div
+              class="feature-card__center-container"
+            >
+              <div
+                class="section__outer section__outer--inherit-color feature-card__title"
+              >
+                <h2
+                  class="section__heading section__heading--no-padding"
+                  id="st-ives--2018"
+                >
+                  St Ives  2018
+                </h2>
+              </div>
+              <div
+                class="feature-card__children"
+              >
+                <div
+                  class="tag__outer"
+                >
+                  <span
+                    class="tag tag--travel"
+                  >
+                    Travel
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div
+              class="feature-card__image-container"
+            >
+              <div
+                class="image__outer feature-card__image"
+              >
+                <div
+                  class="image__placeholder"
+                  style="padding-bottom: 100%;"
                 >
                   <div
-                    class="skeleton__outer image__skeleton image__skeleton--animated"
+                    class="image__spinner-container"
                   >
                     <div
-                      class="skeleton__shimmer"
-                      style="margin-left: -0px;"
-                    />
+                      class="skeleton__outer image__skeleton image__skeleton--animated"
+                    >
+                      <div
+                        class="skeleton__shimmer"
+                        style="margin-left: -0px;"
+                      />
+                    </div>
                   </div>
+                  <img
+                    alt="card"
+                    class="image__img image__img--animated image__img--hidden image__img--light"
+                    src="https://i.imgur.com/ppPEuDs.jpg"
+                  />
+                  <img
+                    alt="card"
+                    class="image__img image__img--animated image__img--hidden image__img--dark"
+                    src="https://i.imgur.com/ppPEuDs.jpg"
+                  />
+                  <noscript />
                 </div>
-                <img
-                  alt="card"
-                  class="image__img image__img--animated image__img--hidden image__img--light"
-                  src="https://i.imgur.com/ppPEuDs.jpg"
-                />
-                <img
-                  alt="card"
-                  class="image__img image__img--animated image__img--hidden image__img--dark"
-                  src="https://i.imgur.com/ppPEuDs.jpg"
-                />
-                <noscript />
               </div>
             </div>
           </div>
         </div>
       </div>
-      <div
-        class="card__banner"
-        style="background-color: rgb(1, 87, 155);"
-      />
-    </button>
-    <button
+    </a>
+    <a
       aria-label="Untitled blog (DELETED), 23to30 Dec, Tagged travel"
-      class="card feature-card blogs-list__card"
-      role="link"
-      style="cursor: pointer;"
-      type="button"
+      bannercolor="#01579b"
+      class="card feature-card blogs-list__card card--atomic card--not-disabled"
+      href="/blog/mndyd8"
+      tabindex="0"
     >
       <div
-        class="card__background"
-      />
-      <div
-        class="card__outer-container card__outer-container--padded"
+        class="card__outer-container"
       >
         <div
-          aria-hidden="true"
-          class="feature-card__outer-container feature-card__outer-container--auto"
+          class="card__background"
+        />
+        <div
+          class="card__content-container card__content-container--padded"
         >
           <div
-            class="feature-card__date"
+            aria-hidden="true"
+            class="feature-card__outer-container feature-card__outer-container--auto"
           >
             <div
-              class="feature-card__annotation feature-card__annotation--mobile"
+              class="feature-card__date"
             >
               <div
-                class="subsection__outer"
-              >
-                <h3
-                  class="subsection__heading subsection__heading--link subsection__heading--no-padding"
-                  id="23-30-dec"
-                >
-                  23-30 Dec
-                </h3>
-              </div>
-            </div>
-            <div
-              class="feature-card__annotation feature-card__annotation--tablet"
-            >
-              <div
-                class="subsection__outer"
-              >
-                <h3
-                  class="subsection__heading subsection__heading--link subsection__heading--no-padding"
-                  id="23-30"
-                >
-                  23-30
-                </h3>
-              </div>
-            </div>
-            <div
-              class="feature-card__annotation feature-card__annotation--tablet"
-            >
-              <div
-                class="subsection__outer"
-              >
-                <h3
-                  class="subsection__heading subsection__heading--link subsection__heading--no-padding"
-                  id="dec"
-                >
-                  Dec
-                </h3>
-              </div>
-            </div>
-          </div>
-          <div
-            class="feature-card__center-container"
-          >
-            <div
-              class="section__outer feature-card__title"
-            >
-              <h2
-                class="section__heading section__heading--link section__heading--no-padding"
-                id="untitled-blog-(deleted)"
-              >
-                Untitled blog (DELETED)
-              </h2>
-            </div>
-            <div
-              class="feature-card__children"
-            >
-              <div
-                class="tag__outer"
-              >
-                <span
-                  class="tag tag--travel"
-                >
-                  Travel
-                </span>
-              </div>
-            </div>
-          </div>
-          <div
-            class="feature-card__image-container"
-          >
-            <div
-              class="image__outer feature-card__image"
-            >
-              <div
-                class="image__placeholder"
-                style="padding-bottom: 100%;"
+                class="feature-card__annotation feature-card__annotation--mobile"
               >
                 <div
-                  class="image__spinner-container"
+                  class="subsection__outer subsection__outer--inherit-color"
+                >
+                  <h3
+                    class="subsection__heading subsection__heading--no-padding"
+                    id="23-30-dec"
+                  >
+                    23-30 Dec
+                  </h3>
+                </div>
+              </div>
+              <div
+                class="feature-card__annotation feature-card__annotation--tablet"
+              >
+                <div
+                  class="subsection__outer subsection__outer--inherit-color"
+                >
+                  <h3
+                    class="subsection__heading subsection__heading--no-padding"
+                    id="23-30"
+                  >
+                    23-30
+                  </h3>
+                </div>
+              </div>
+              <div
+                class="feature-card__annotation feature-card__annotation--tablet"
+              >
+                <div
+                  class="subsection__outer subsection__outer--inherit-color"
+                >
+                  <h3
+                    class="subsection__heading subsection__heading--no-padding"
+                    id="dec"
+                  >
+                    Dec
+                  </h3>
+                </div>
+              </div>
+            </div>
+            <div
+              class="feature-card__center-container"
+            >
+              <div
+                class="section__outer section__outer--inherit-color feature-card__title"
+              >
+                <h2
+                  class="section__heading section__heading--no-padding"
+                  id="untitled-blog-(deleted)"
+                >
+                  Untitled blog (DELETED)
+                </h2>
+              </div>
+              <div
+                class="feature-card__children"
+              >
+                <div
+                  class="tag__outer"
+                >
+                  <span
+                    class="tag tag--travel"
+                  >
+                    Travel
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div
+              class="feature-card__image-container"
+            >
+              <div
+                class="image__outer feature-card__image"
+              >
+                <div
+                  class="image__placeholder"
+                  style="padding-bottom: 100%;"
                 >
                   <div
-                    class="skeleton__outer image__skeleton image__skeleton--animated"
+                    class="image__spinner-container"
                   >
                     <div
-                      class="skeleton__shimmer"
-                      style="margin-left: -0px;"
-                    />
+                      class="skeleton__outer image__skeleton image__skeleton--animated"
+                    >
+                      <div
+                        class="skeleton__shimmer"
+                        style="margin-left: -0px;"
+                      />
+                    </div>
                   </div>
+                  <img
+                    alt="card"
+                    class="image__img image__img--animated image__img--hidden image__img--light"
+                    src="https://i.imgur.com/ppPEuDs.jpg"
+                  />
+                  <img
+                    alt="card"
+                    class="image__img image__img--animated image__img--hidden image__img--dark"
+                    src="https://i.imgur.com/ppPEuDs.jpg"
+                  />
+                  <noscript />
                 </div>
-                <img
-                  alt="card"
-                  class="image__img image__img--animated image__img--hidden image__img--light"
-                  src="https://i.imgur.com/ppPEuDs.jpg"
-                />
-                <img
-                  alt="card"
-                  class="image__img image__img--animated image__img--hidden image__img--dark"
-                  src="https://i.imgur.com/ppPEuDs.jpg"
-                />
-                <noscript />
               </div>
             </div>
           </div>
         </div>
       </div>
-      <div
-        class="card__banner"
-        style="background-color: rgb(1, 87, 155);"
-      />
-    </button>
+    </a>
   </div>
 </div>
 `;
@@ -1169,89 +1169,89 @@ exports[`<BlogsList /> Should render correctly with custom className 1`] = `
 exports[`<BlogsList /> Should render correctly with deleteBlog function 1`] = `
 <div>
   <div>
-    <button
+    <a
       aria-label="Blog 1 , NaN Invalid Date"
-      class="card feature-card blogs-list__card blogs-list__card--with-controls"
-      role="link"
-      style="cursor: pointer;"
-      type="button"
+      class="card feature-card blogs-list__card blogs-list__card--with-controls card--atomic card--not-disabled"
+      href="/blog/asdfg"
+      tabindex="0"
     >
       <div
-        class="card__background"
-      />
-      <div
-        class="card__outer-container card__outer-container--padded"
+        class="card__outer-container"
       >
         <div
-          aria-hidden="true"
-          class="feature-card__outer-container feature-card__outer-container--auto"
+          class="card__background"
+        />
+        <div
+          class="card__content-container card__content-container--padded"
         >
           <div
-            class="feature-card__date"
+            aria-hidden="true"
+            class="feature-card__outer-container feature-card__outer-container--auto"
           >
             <div
-              class="feature-card__annotation feature-card__annotation--mobile"
+              class="feature-card__date"
             >
               <div
-                class="subsection__outer"
+                class="feature-card__annotation feature-card__annotation--mobile"
               >
-                <h3
-                  class="subsection__heading subsection__heading--link subsection__heading--no-padding"
-                  id="nan-invalid-date"
+                <div
+                  class="subsection__outer subsection__outer--inherit-color"
                 >
-                  NaN Invalid Date
-                </h3>
+                  <h3
+                    class="subsection__heading subsection__heading--no-padding"
+                    id="nan-invalid-date"
+                  >
+                    NaN Invalid Date
+                  </h3>
+                </div>
+              </div>
+              <div
+                class="feature-card__annotation feature-card__annotation--tablet"
+              >
+                <div
+                  class="subsection__outer subsection__outer--inherit-color"
+                >
+                  <h3
+                    class="subsection__heading subsection__heading--no-padding"
+                    id="nan"
+                  >
+                    NaN
+                  </h3>
+                </div>
+              </div>
+              <div
+                class="feature-card__annotation feature-card__annotation--tablet"
+              >
+                <div
+                  class="subsection__outer subsection__outer--inherit-color"
+                >
+                  <h3
+                    class="subsection__heading subsection__heading--no-padding"
+                    id="invalid-date"
+                  >
+                    Invalid Date
+                  </h3>
+                </div>
               </div>
             </div>
             <div
-              class="feature-card__annotation feature-card__annotation--tablet"
+              class="feature-card__center-container"
             >
               <div
-                class="subsection__outer"
+                class="section__outer section__outer--inherit-color feature-card__title"
               >
-                <h3
-                  class="subsection__heading subsection__heading--link subsection__heading--no-padding"
-                  id="nan"
+                <h2
+                  class="section__heading section__heading--no-padding"
+                  id="blog-1-"
                 >
-                  NaN
-                </h3>
+                  Blog 1 
+                </h2>
               </div>
-            </div>
-            <div
-              class="feature-card__annotation feature-card__annotation--tablet"
-            >
-              <div
-                class="subsection__outer"
-              >
-                <h3
-                  class="subsection__heading subsection__heading--link subsection__heading--no-padding"
-                  id="invalid-date"
-                >
-                  Invalid Date
-                </h3>
-              </div>
-            </div>
-          </div>
-          <div
-            class="feature-card__center-container"
-          >
-            <div
-              class="section__outer feature-card__title"
-            >
-              <h2
-                class="section__heading section__heading--link section__heading--no-padding"
-                id="blog-1-"
-              >
-                Blog 1 
-              </h2>
             </div>
           </div>
         </div>
       </div>
-      <div
-        class="card__banner"
-      />
-    </button>
+    </a>
     <button
       class="button__outer button__outer--destructive button__outer--no-bouncy button__outer--no-bouncy--destructive blogs-list__control"
       type="button"
@@ -1262,139 +1262,139 @@ exports[`<BlogsList /> Should render correctly with deleteBlog function 1`] = `
         Delete blog
       </span>
     </button>
-    <button
+    <a
       aria-label="St Ives  2018, 23to30 Dec, Tagged travel"
-      class="card feature-card blogs-list__card blogs-list__card--with-controls"
-      role="link"
-      style="cursor: pointer;"
-      type="button"
+      bannercolor="#01579b"
+      class="card feature-card blogs-list__card blogs-list__card--with-controls card--atomic card--not-disabled"
+      href="/blog/zxywvuts"
+      tabindex="0"
     >
       <div
-        class="card__background"
-      />
-      <div
-        class="card__outer-container card__outer-container--padded"
+        class="card__outer-container"
       >
         <div
-          aria-hidden="true"
-          class="feature-card__outer-container feature-card__outer-container--auto"
+          class="card__background"
+        />
+        <div
+          class="card__content-container card__content-container--padded"
         >
           <div
-            class="feature-card__date"
+            aria-hidden="true"
+            class="feature-card__outer-container feature-card__outer-container--auto"
           >
             <div
-              class="feature-card__annotation feature-card__annotation--mobile"
+              class="feature-card__date"
             >
               <div
-                class="subsection__outer"
-              >
-                <h3
-                  class="subsection__heading subsection__heading--link subsection__heading--no-padding"
-                  id="23-30-dec"
-                >
-                  23-30 Dec
-                </h3>
-              </div>
-            </div>
-            <div
-              class="feature-card__annotation feature-card__annotation--tablet"
-            >
-              <div
-                class="subsection__outer"
-              >
-                <h3
-                  class="subsection__heading subsection__heading--link subsection__heading--no-padding"
-                  id="23-30"
-                >
-                  23-30
-                </h3>
-              </div>
-            </div>
-            <div
-              class="feature-card__annotation feature-card__annotation--tablet"
-            >
-              <div
-                class="subsection__outer"
-              >
-                <h3
-                  class="subsection__heading subsection__heading--link subsection__heading--no-padding"
-                  id="dec"
-                >
-                  Dec
-                </h3>
-              </div>
-            </div>
-          </div>
-          <div
-            class="feature-card__center-container"
-          >
-            <div
-              class="section__outer feature-card__title"
-            >
-              <h2
-                class="section__heading section__heading--link section__heading--no-padding"
-                id="st-ives--2018"
-              >
-                St Ives  2018
-              </h2>
-            </div>
-            <div
-              class="feature-card__children"
-            >
-              <div
-                class="tag__outer"
-              >
-                <span
-                  class="tag tag--travel"
-                >
-                  Travel
-                </span>
-              </div>
-            </div>
-          </div>
-          <div
-            class="feature-card__image-container"
-          >
-            <div
-              class="image__outer feature-card__image"
-            >
-              <div
-                class="image__placeholder"
-                style="padding-bottom: 100%;"
+                class="feature-card__annotation feature-card__annotation--mobile"
               >
                 <div
-                  class="image__spinner-container"
+                  class="subsection__outer subsection__outer--inherit-color"
+                >
+                  <h3
+                    class="subsection__heading subsection__heading--no-padding"
+                    id="23-30-dec"
+                  >
+                    23-30 Dec
+                  </h3>
+                </div>
+              </div>
+              <div
+                class="feature-card__annotation feature-card__annotation--tablet"
+              >
+                <div
+                  class="subsection__outer subsection__outer--inherit-color"
+                >
+                  <h3
+                    class="subsection__heading subsection__heading--no-padding"
+                    id="23-30"
+                  >
+                    23-30
+                  </h3>
+                </div>
+              </div>
+              <div
+                class="feature-card__annotation feature-card__annotation--tablet"
+              >
+                <div
+                  class="subsection__outer subsection__outer--inherit-color"
+                >
+                  <h3
+                    class="subsection__heading subsection__heading--no-padding"
+                    id="dec"
+                  >
+                    Dec
+                  </h3>
+                </div>
+              </div>
+            </div>
+            <div
+              class="feature-card__center-container"
+            >
+              <div
+                class="section__outer section__outer--inherit-color feature-card__title"
+              >
+                <h2
+                  class="section__heading section__heading--no-padding"
+                  id="st-ives--2018"
+                >
+                  St Ives  2018
+                </h2>
+              </div>
+              <div
+                class="feature-card__children"
+              >
+                <div
+                  class="tag__outer"
+                >
+                  <span
+                    class="tag tag--travel"
+                  >
+                    Travel
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div
+              class="feature-card__image-container"
+            >
+              <div
+                class="image__outer feature-card__image"
+              >
+                <div
+                  class="image__placeholder"
+                  style="padding-bottom: 100%;"
                 >
                   <div
-                    class="skeleton__outer image__skeleton image__skeleton--animated"
+                    class="image__spinner-container"
                   >
                     <div
-                      class="skeleton__shimmer"
-                      style="margin-left: -0px;"
-                    />
+                      class="skeleton__outer image__skeleton image__skeleton--animated"
+                    >
+                      <div
+                        class="skeleton__shimmer"
+                        style="margin-left: -0px;"
+                      />
+                    </div>
                   </div>
+                  <img
+                    alt="card"
+                    class="image__img image__img--animated image__img--hidden image__img--light"
+                    src="https://i.imgur.com/ppPEuDs.jpg"
+                  />
+                  <img
+                    alt="card"
+                    class="image__img image__img--animated image__img--hidden image__img--dark"
+                    src="https://i.imgur.com/ppPEuDs.jpg"
+                  />
+                  <noscript />
                 </div>
-                <img
-                  alt="card"
-                  class="image__img image__img--animated image__img--hidden image__img--light"
-                  src="https://i.imgur.com/ppPEuDs.jpg"
-                />
-                <img
-                  alt="card"
-                  class="image__img image__img--animated image__img--hidden image__img--dark"
-                  src="https://i.imgur.com/ppPEuDs.jpg"
-                />
-                <noscript />
               </div>
             </div>
           </div>
         </div>
       </div>
-      <div
-        class="card__banner"
-        style="background-color: rgb(1, 87, 155);"
-      />
-    </button>
+    </a>
     <button
       class="button__outer button__outer--destructive button__outer--no-bouncy button__outer--no-bouncy--destructive blogs-list__control"
       type="button"
@@ -1405,139 +1405,139 @@ exports[`<BlogsList /> Should render correctly with deleteBlog function 1`] = `
         Delete blog
       </span>
     </button>
-    <button
+    <a
       aria-label="Untitled blog (DELETED), 23to30 Dec, Tagged travel"
-      class="card feature-card blogs-list__card blogs-list__card--with-controls"
-      role="link"
-      style="cursor: pointer;"
-      type="button"
+      bannercolor="#01579b"
+      class="card feature-card blogs-list__card blogs-list__card--with-controls card--atomic card--not-disabled"
+      href="/blog/mndyd8"
+      tabindex="0"
     >
       <div
-        class="card__background"
-      />
-      <div
-        class="card__outer-container card__outer-container--padded"
+        class="card__outer-container"
       >
         <div
-          aria-hidden="true"
-          class="feature-card__outer-container feature-card__outer-container--auto"
+          class="card__background"
+        />
+        <div
+          class="card__content-container card__content-container--padded"
         >
           <div
-            class="feature-card__date"
+            aria-hidden="true"
+            class="feature-card__outer-container feature-card__outer-container--auto"
           >
             <div
-              class="feature-card__annotation feature-card__annotation--mobile"
+              class="feature-card__date"
             >
               <div
-                class="subsection__outer"
-              >
-                <h3
-                  class="subsection__heading subsection__heading--link subsection__heading--no-padding"
-                  id="23-30-dec"
-                >
-                  23-30 Dec
-                </h3>
-              </div>
-            </div>
-            <div
-              class="feature-card__annotation feature-card__annotation--tablet"
-            >
-              <div
-                class="subsection__outer"
-              >
-                <h3
-                  class="subsection__heading subsection__heading--link subsection__heading--no-padding"
-                  id="23-30"
-                >
-                  23-30
-                </h3>
-              </div>
-            </div>
-            <div
-              class="feature-card__annotation feature-card__annotation--tablet"
-            >
-              <div
-                class="subsection__outer"
-              >
-                <h3
-                  class="subsection__heading subsection__heading--link subsection__heading--no-padding"
-                  id="dec"
-                >
-                  Dec
-                </h3>
-              </div>
-            </div>
-          </div>
-          <div
-            class="feature-card__center-container"
-          >
-            <div
-              class="section__outer feature-card__title"
-            >
-              <h2
-                class="section__heading section__heading--link section__heading--no-padding"
-                id="untitled-blog-(deleted)"
-              >
-                Untitled blog (DELETED)
-              </h2>
-            </div>
-            <div
-              class="feature-card__children"
-            >
-              <div
-                class="tag__outer"
-              >
-                <span
-                  class="tag tag--travel"
-                >
-                  Travel
-                </span>
-              </div>
-            </div>
-          </div>
-          <div
-            class="feature-card__image-container"
-          >
-            <div
-              class="image__outer feature-card__image"
-            >
-              <div
-                class="image__placeholder"
-                style="padding-bottom: 100%;"
+                class="feature-card__annotation feature-card__annotation--mobile"
               >
                 <div
-                  class="image__spinner-container"
+                  class="subsection__outer subsection__outer--inherit-color"
+                >
+                  <h3
+                    class="subsection__heading subsection__heading--no-padding"
+                    id="23-30-dec"
+                  >
+                    23-30 Dec
+                  </h3>
+                </div>
+              </div>
+              <div
+                class="feature-card__annotation feature-card__annotation--tablet"
+              >
+                <div
+                  class="subsection__outer subsection__outer--inherit-color"
+                >
+                  <h3
+                    class="subsection__heading subsection__heading--no-padding"
+                    id="23-30"
+                  >
+                    23-30
+                  </h3>
+                </div>
+              </div>
+              <div
+                class="feature-card__annotation feature-card__annotation--tablet"
+              >
+                <div
+                  class="subsection__outer subsection__outer--inherit-color"
+                >
+                  <h3
+                    class="subsection__heading subsection__heading--no-padding"
+                    id="dec"
+                  >
+                    Dec
+                  </h3>
+                </div>
+              </div>
+            </div>
+            <div
+              class="feature-card__center-container"
+            >
+              <div
+                class="section__outer section__outer--inherit-color feature-card__title"
+              >
+                <h2
+                  class="section__heading section__heading--no-padding"
+                  id="untitled-blog-(deleted)"
+                >
+                  Untitled blog (DELETED)
+                </h2>
+              </div>
+              <div
+                class="feature-card__children"
+              >
+                <div
+                  class="tag__outer"
+                >
+                  <span
+                    class="tag tag--travel"
+                  >
+                    Travel
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div
+              class="feature-card__image-container"
+            >
+              <div
+                class="image__outer feature-card__image"
+              >
+                <div
+                  class="image__placeholder"
+                  style="padding-bottom: 100%;"
                 >
                   <div
-                    class="skeleton__outer image__skeleton image__skeleton--animated"
+                    class="image__spinner-container"
                   >
                     <div
-                      class="skeleton__shimmer"
-                      style="margin-left: -0px;"
-                    />
+                      class="skeleton__outer image__skeleton image__skeleton--animated"
+                    >
+                      <div
+                        class="skeleton__shimmer"
+                        style="margin-left: -0px;"
+                      />
+                    </div>
                   </div>
+                  <img
+                    alt="card"
+                    class="image__img image__img--animated image__img--hidden image__img--light"
+                    src="https://i.imgur.com/ppPEuDs.jpg"
+                  />
+                  <img
+                    alt="card"
+                    class="image__img image__img--animated image__img--hidden image__img--dark"
+                    src="https://i.imgur.com/ppPEuDs.jpg"
+                  />
+                  <noscript />
                 </div>
-                <img
-                  alt="card"
-                  class="image__img image__img--animated image__img--hidden image__img--light"
-                  src="https://i.imgur.com/ppPEuDs.jpg"
-                />
-                <img
-                  alt="card"
-                  class="image__img image__img--animated image__img--hidden image__img--dark"
-                  src="https://i.imgur.com/ppPEuDs.jpg"
-                />
-                <noscript />
               </div>
             </div>
           </div>
         </div>
       </div>
-      <div
-        class="card__banner"
-        style="background-color: rgb(1, 87, 155);"
-      />
-    </button>
+    </a>
     <button
       class="button__outer button__outer--destructive button__outer--no-bouncy button__outer--no-bouncy--destructive button__outer--disabled blogs-list__control"
       disabled=""

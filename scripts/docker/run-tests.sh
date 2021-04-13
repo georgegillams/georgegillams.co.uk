@@ -17,8 +17,9 @@ touch $projectName.tar.gz
 tar -zcf $projectName.tar.gz --exclude='node_modules' --exclude='.git' --exclude="$projectName.tar.gz" ./
 docker cp $projectName.tar.gz $containerId:$tmpDirectory
 
-# expand tar
+# cleanup existing files and expand tar
 docker exec $dockerArgs $containerId mkdir -p $projectName
+docker exec $dockerArgs $containerId -w $destinationDirectory find . -maxdepth 1 ! -name node_modules -exec rm -rf {} \;
 docker exec $dockerArgs $containerId tar -xzf $projectName.tar.gz --directory $projectName
 
 # prepare project

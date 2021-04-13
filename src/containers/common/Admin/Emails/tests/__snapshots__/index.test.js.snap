@@ -137,120 +137,123 @@ exports[`<AdminEmails /> should render correctly with emails 1`] = `
       class="split-detail-view__list-view"
     >
       <div>
-        <button
-          class="card admin-emails__card"
+        <a
+          class="card admin-emails__card card--atomic card--not-disabled"
+          href="/admin/emails?highlight=1"
           id="1"
-          style="cursor: pointer;"
-          type="button"
+          tabindex="0"
         >
-          <div
-            class="card__background"
-          />
           <div
             class="card__outer-container"
           >
             <div
-              class="split-detail-item__content"
+              class="card__background"
+            />
+            <div
+              class="card__content-container"
             >
               <div
-                class="subsection__outer"
+                class="split-detail-item__content"
               >
-                <h3
-                  class="subsection__heading subsection__heading--no-padding"
-                  id="email-1"
+                <div
+                  class="subsection__outer"
                 >
-                  Email 1
-                </h3>
-                <span
-                  class="paragraph"
-                >
-                  <br />
-                  id: 
-                  1
-                </span>
+                  <h3
+                    class="subsection__heading subsection__heading--no-padding"
+                    id="email-1"
+                  >
+                    Email 1
+                  </h3>
+                  <span
+                    class="paragraph"
+                  >
+                    <br />
+                    id: 
+                    1
+                  </span>
+                </div>
               </div>
             </div>
           </div>
-          <div
-            class="card__banner"
-          />
-        </button>
-        <button
-          class="card admin-emails__card"
+        </a>
+        <a
+          class="card admin-emails__card card--atomic card--not-disabled"
+          href="/admin/emails?highlight=2"
           id="2"
-          style="cursor: pointer;"
-          type="button"
+          tabindex="0"
         >
-          <div
-            class="card__background"
-          />
           <div
             class="card__outer-container"
           >
             <div
-              class="split-detail-item__content"
+              class="card__background"
+            />
+            <div
+              class="card__content-container"
             >
               <div
-                class="subsection__outer"
+                class="split-detail-item__content"
               >
-                <h3
-                  class="subsection__heading subsection__heading--no-padding"
-                  id="email-2"
+                <div
+                  class="subsection__outer"
                 >
-                  Email 2
-                </h3>
-                <span
-                  class="paragraph"
-                >
-                  <br />
-                  id: 
-                  2
-                </span>
+                  <h3
+                    class="subsection__heading subsection__heading--no-padding"
+                    id="email-2"
+                  >
+                    Email 2
+                  </h3>
+                  <span
+                    class="paragraph"
+                  >
+                    <br />
+                    id: 
+                    2
+                  </span>
+                </div>
               </div>
             </div>
           </div>
-          <div
-            class="card__banner"
-          />
-        </button>
-        <button
-          class="card admin-emails__card"
+        </a>
+        <a
+          class="card admin-emails__card card--atomic card--not-disabled"
+          href="/admin/emails?highlight=3"
           id="3"
-          style="cursor: pointer;"
-          type="button"
+          tabindex="0"
         >
-          <div
-            class="card__background"
-          />
           <div
             class="card__outer-container"
           >
             <div
-              class="split-detail-item__content"
+              class="card__background"
+            />
+            <div
+              class="card__content-container"
             >
               <div
-                class="subsection__outer"
+                class="split-detail-item__content"
               >
-                <h3
-                  class="subsection__heading subsection__heading--no-padding"
-                  id="email-3"
+                <div
+                  class="subsection__outer"
                 >
-                  Email 3
-                </h3>
-                <span
-                  class="paragraph"
-                >
-                  <br />
-                  id: 
-                  3
-                </span>
+                  <h3
+                    class="subsection__heading subsection__heading--no-padding"
+                    id="email-3"
+                  >
+                    Email 3
+                  </h3>
+                  <span
+                    class="paragraph"
+                  >
+                    <br />
+                    id: 
+                    3
+                  </span>
+                </div>
               </div>
             </div>
           </div>
-          <div
-            class="card__banner"
-          />
-        </button>
+        </a>
       </div>
     </div>
   </div>

@@ -2,79 +2,84 @@
 
 exports[`<Card /> Should render correctly 1`] = `
 <div>
-  <button
-    class="card"
-    style="cursor: pointer;"
-    type="button"
+  <a
+    class="card card--atomic card--not-disabled"
+    href="/test"
+    tabindex="0"
   >
     <div
-      class="card__background"
-    />
-    <div
-      class="card__outer-container card__outer-container--padded"
-    />
-    <div
-      class="card__banner"
-    />
-  </button>
+      class="card__outer-container"
+    >
+      <div
+        class="card__background"
+      />
+      <div
+        class="card__content-container card__content-container--padded"
+      />
+    </div>
+  </a>
 </div>
 `;
 
 exports[`<Card /> Should render correctly hrefExternal 1`] = `
 <div>
   <a
-    class="card"
+    class="card card--atomic card--not-disabled"
     href="https://duckduckgo.com/"
+    tabindex="0"
   >
     <div
-      class="card__background"
-    />
-    <div
-      class="card__outer-container card__outer-container--padded"
-    />
-    <div
-      class="card__banner"
-    />
+      class="card__outer-container"
+    >
+      <div
+        class="card__background"
+      />
+      <div
+        class="card__content-container card__content-container--padded"
+      />
+    </div>
   </a>
 </div>
 `;
 
 exports[`<Card /> Should render correctly with custom className 1`] = `
 <div>
-  <button
-    class="card test-custom-classname"
-    style="cursor: pointer;"
-    type="button"
+  <a
+    class="card test-custom-classname card--atomic card--not-disabled"
+    href="/test"
+    tabindex="0"
   >
     <div
-      class="card__background"
-    />
-    <div
-      class="card__outer-container card__outer-container--padded"
-    />
-    <div
-      class="card__banner"
-    />
-  </button>
+      class="card__outer-container"
+    >
+      <div
+        class="card__background"
+      />
+      <div
+        class="card__content-container card__content-container--padded"
+      />
+    </div>
+  </a>
 </div>
 `;
 
 exports[`<Card /> Should render with nextified href 1`] = `
 <div>
-  <button
-    class="card"
-    style="cursor: pointer;"
-    type="button"
+  <a
+    class="card card--atomic card--not-disabled"
+    href="/blog/test"
+    tabindex="0"
   >
     <div
-      class="card__background"
-    />
-    <div
-      class="card__outer-container card__outer-container--padded"
-    />
-    <div
-      class="card__banner"
-    />
-  </button>
+      class="card__outer-container"
+    >
+      <div
+        class="card__background"
+      />
+      <div
+        class="card__content-container card__content-container--padded"
+      />
+    </div>
+  </a>
 </div>
 `;
