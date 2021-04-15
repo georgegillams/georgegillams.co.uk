@@ -12,7 +12,7 @@ const TextLink = props => {
 
   const destination = nextifyHref(href);
   return (
-    <Link href={destination.url} as={destination.as} {...destination.options} passHref>
+    <Link passHref href={destination.url} as={destination.as} {...destination.options}>
       <GGTextLink href={href} {...rest} />
     </Link>
   );

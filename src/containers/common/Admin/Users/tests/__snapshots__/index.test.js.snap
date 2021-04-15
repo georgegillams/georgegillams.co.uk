@@ -97,36 +97,37 @@ exports[`<AdminUsers /> should render correctly with admin user 1`] = `
       class="split-detail-view__list-view"
     >
       <div>
-        <button
-          class="card admin-users__card"
-          style="cursor: pointer;"
-          type="button"
+        <a
+          class="card admin-users__card card--atomic card--not-disabled"
+          href="/admin/users?highlight=new"
+          tabindex="0"
         >
-          <div
-            class="card__background"
-          />
           <div
             class="card__outer-container"
           >
             <div
-              class="split-detail-item__content"
+              class="card__background"
+            />
+            <div
+              class="card__content-container"
             >
               <div
-                class="subsection__outer"
+                class="split-detail-item__content"
               >
-                <h3
-                  class="subsection__heading subsection__heading--no-padding"
-                  id="new-+"
+                <div
+                  class="subsection__outer"
                 >
-                  New +
-                </h3>
+                  <h3
+                    class="subsection__heading subsection__heading--no-padding"
+                    id="new-+"
+                  >
+                    New +
+                  </h3>
+                </div>
               </div>
             </div>
           </div>
-          <div
-            class="card__banner"
-          />
-        </button>
+        </a>
       </div>
     </div>
   </div>
@@ -177,36 +178,37 @@ exports[`<AdminUsers /> should render correctly with createError 1`] = `
       class="split-detail-view__list-view"
     >
       <div>
-        <button
-          class="card admin-users__card"
-          style="cursor: pointer;"
-          type="button"
+        <a
+          class="card admin-users__card card--atomic card--not-disabled"
+          href="/admin/users?highlight=new"
+          tabindex="0"
         >
-          <div
-            class="card__background"
-          />
           <div
             class="card__outer-container"
           >
             <div
-              class="split-detail-item__content"
+              class="card__background"
+            />
+            <div
+              class="card__content-container"
             >
               <div
-                class="subsection__outer"
+                class="split-detail-item__content"
               >
-                <h3
-                  class="subsection__heading subsection__heading--no-padding"
-                  id="new-+"
+                <div
+                  class="subsection__outer"
                 >
-                  New +
-                </h3>
+                  <h3
+                    class="subsection__heading subsection__heading--no-padding"
+                    id="new-+"
+                  >
+                    New +
+                  </h3>
+                </div>
               </div>
             </div>
           </div>
-          <div
-            class="card__banner"
-          />
-        </button>
+        </a>
       </div>
     </div>
   </div>
@@ -257,36 +259,37 @@ exports[`<AdminUsers /> should render correctly with creating=true 1`] = `
       class="split-detail-view__list-view"
     >
       <div>
-        <button
-          class="card admin-users__card"
-          style="cursor: pointer;"
-          type="button"
+        <a
+          class="card admin-users__card card--atomic card--not-disabled"
+          href="/admin/users?highlight=new"
+          tabindex="0"
         >
-          <div
-            class="card__background"
-          />
           <div
             class="card__outer-container"
           >
             <div
-              class="split-detail-item__content"
+              class="card__background"
+            />
+            <div
+              class="card__content-container"
             >
               <div
-                class="subsection__outer"
+                class="split-detail-item__content"
               >
-                <h3
-                  class="subsection__heading subsection__heading--no-padding"
-                  id="new-+"
+                <div
+                  class="subsection__outer"
                 >
-                  New +
-                </h3>
+                  <h3
+                    class="subsection__heading subsection__heading--no-padding"
+                    id="new-+"
+                  >
+                    New +
+                  </h3>
+                </div>
               </div>
             </div>
           </div>
-          <div
-            class="card__banner"
-          />
-        </button>
+        </a>
       </div>
     </div>
   </div>
@@ -401,36 +404,37 @@ exports[`<AdminUsers /> should render correctly with loadError 1`] = `
       class="split-detail-view__list-view"
     >
       <div>
-        <button
-          class="card admin-users__card"
-          style="cursor: pointer;"
-          type="button"
+        <a
+          class="card admin-users__card card--atomic card--not-disabled"
+          href="/admin/users?highlight=new"
+          tabindex="0"
         >
-          <div
-            class="card__background"
-          />
           <div
             class="card__outer-container"
           >
             <div
-              class="split-detail-item__content"
+              class="card__background"
+            />
+            <div
+              class="card__content-container"
             >
               <div
-                class="subsection__outer"
+                class="split-detail-item__content"
               >
-                <h3
-                  class="subsection__heading subsection__heading--no-padding"
-                  id="new-+"
+                <div
+                  class="subsection__outer"
                 >
-                  New +
-                </h3>
+                  <h3
+                    class="subsection__heading subsection__heading--no-padding"
+                    id="new-+"
+                  >
+                    New +
+                  </h3>
+                </div>
               </div>
             </div>
           </div>
-          <div
-            class="card__banner"
-          />
-        </button>
+        </a>
       </div>
     </div>
   </div>
@@ -515,36 +519,37 @@ exports[`<AdminUsers /> should render correctly with loading=true 1`] = `
       class="split-detail-view__list-view"
     >
       <div>
-        <button
-          class="card admin-users__card"
-          style="cursor: pointer;"
-          type="button"
+        <a
+          class="card admin-users__card card--atomic card--not-disabled"
+          href="/admin/users?highlight=new"
+          tabindex="0"
         >
-          <div
-            class="card__background"
-          />
           <div
             class="card__outer-container"
           >
             <div
-              class="split-detail-item__content"
+              class="card__background"
+            />
+            <div
+              class="card__content-container"
             >
               <div
-                class="subsection__outer"
+                class="split-detail-item__content"
               >
-                <h3
-                  class="subsection__heading subsection__heading--no-padding"
-                  id="new-+"
+                <div
+                  class="subsection__outer"
                 >
-                  New +
-                </h3>
+                  <h3
+                    class="subsection__heading subsection__heading--no-padding"
+                    id="new-+"
+                  >
+                    New +
+                  </h3>
+                </div>
               </div>
             </div>
           </div>
-          <div
-            class="card__banner"
-          />
-        </button>
+        </a>
       </div>
     </div>
   </div>
@@ -595,36 +600,37 @@ exports[`<AdminUsers /> should render correctly with removeError 1`] = `
       class="split-detail-view__list-view"
     >
       <div>
-        <button
-          class="card admin-users__card"
-          style="cursor: pointer;"
-          type="button"
+        <a
+          class="card admin-users__card card--atomic card--not-disabled"
+          href="/admin/users?highlight=new"
+          tabindex="0"
         >
-          <div
-            class="card__background"
-          />
           <div
             class="card__outer-container"
           >
             <div
-              class="split-detail-item__content"
+              class="card__background"
+            />
+            <div
+              class="card__content-container"
             >
               <div
-                class="subsection__outer"
+                class="split-detail-item__content"
               >
-                <h3
-                  class="subsection__heading subsection__heading--no-padding"
-                  id="new-+"
+                <div
+                  class="subsection__outer"
                 >
-                  New +
-                </h3>
+                  <h3
+                    class="subsection__heading subsection__heading--no-padding"
+                    id="new-+"
+                  >
+                    New +
+                  </h3>
+                </div>
               </div>
             </div>
           </div>
-          <div
-            class="card__banner"
-          />
-        </button>
+        </a>
       </div>
     </div>
   </div>
@@ -675,36 +681,37 @@ exports[`<AdminUsers /> should render correctly with removing=true 1`] = `
       class="split-detail-view__list-view"
     >
       <div>
-        <button
-          class="card admin-users__card"
-          style="cursor: pointer;"
-          type="button"
+        <a
+          class="card admin-users__card card--atomic card--not-disabled"
+          href="/admin/users?highlight=new"
+          tabindex="0"
         >
-          <div
-            class="card__background"
-          />
           <div
             class="card__outer-container"
           >
             <div
-              class="split-detail-item__content"
+              class="card__background"
+            />
+            <div
+              class="card__content-container"
             >
               <div
-                class="subsection__outer"
+                class="split-detail-item__content"
               >
-                <h3
-                  class="subsection__heading subsection__heading--no-padding"
-                  id="new-+"
+                <div
+                  class="subsection__outer"
                 >
-                  New +
-                </h3>
+                  <h3
+                    class="subsection__heading subsection__heading--no-padding"
+                    id="new-+"
+                  >
+                    New +
+                  </h3>
+                </div>
               </div>
             </div>
           </div>
-          <div
-            class="card__banner"
-          />
-        </button>
+        </a>
       </div>
     </div>
   </div>
@@ -755,36 +762,37 @@ exports[`<AdminUsers /> should render correctly with requestError 1`] = `
       class="split-detail-view__list-view"
     >
       <div>
-        <button
-          class="card admin-users__card"
-          style="cursor: pointer;"
-          type="button"
+        <a
+          class="card admin-users__card card--atomic card--not-disabled"
+          href="/admin/users?highlight=new"
+          tabindex="0"
         >
-          <div
-            class="card__background"
-          />
           <div
             class="card__outer-container"
           >
             <div
-              class="split-detail-item__content"
+              class="card__background"
+            />
+            <div
+              class="card__content-container"
             >
               <div
-                class="subsection__outer"
+                class="split-detail-item__content"
               >
-                <h3
-                  class="subsection__heading subsection__heading--no-padding"
-                  id="new-+"
+                <div
+                  class="subsection__outer"
                 >
-                  New +
-                </h3>
+                  <h3
+                    class="subsection__heading subsection__heading--no-padding"
+                    id="new-+"
+                  >
+                    New +
+                  </h3>
+                </div>
               </div>
             </div>
           </div>
-          <div
-            class="card__banner"
-          />
-        </button>
+        </a>
       </div>
     </div>
   </div>
@@ -835,36 +843,37 @@ exports[`<AdminUsers /> should render correctly with requesting=true 1`] = `
       class="split-detail-view__list-view"
     >
       <div>
-        <button
-          class="card admin-users__card"
-          style="cursor: pointer;"
-          type="button"
+        <a
+          class="card admin-users__card card--atomic card--not-disabled"
+          href="/admin/users?highlight=new"
+          tabindex="0"
         >
-          <div
-            class="card__background"
-          />
           <div
             class="card__outer-container"
           >
             <div
-              class="split-detail-item__content"
+              class="card__background"
+            />
+            <div
+              class="card__content-container"
             >
               <div
-                class="subsection__outer"
+                class="split-detail-item__content"
               >
-                <h3
-                  class="subsection__heading subsection__heading--no-padding"
-                  id="new-+"
+                <div
+                  class="subsection__outer"
                 >
-                  New +
-                </h3>
+                  <h3
+                    class="subsection__heading subsection__heading--no-padding"
+                    id="new-+"
+                  >
+                    New +
+                  </h3>
+                </div>
               </div>
             </div>
           </div>
-          <div
-            class="card__banner"
-          />
-        </button>
+        </a>
       </div>
     </div>
   </div>
@@ -915,36 +924,37 @@ exports[`<AdminUsers /> should render correctly with updateError 1`] = `
       class="split-detail-view__list-view"
     >
       <div>
-        <button
-          class="card admin-users__card"
-          style="cursor: pointer;"
-          type="button"
+        <a
+          class="card admin-users__card card--atomic card--not-disabled"
+          href="/admin/users?highlight=new"
+          tabindex="0"
         >
-          <div
-            class="card__background"
-          />
           <div
             class="card__outer-container"
           >
             <div
-              class="split-detail-item__content"
+              class="card__background"
+            />
+            <div
+              class="card__content-container"
             >
               <div
-                class="subsection__outer"
+                class="split-detail-item__content"
               >
-                <h3
-                  class="subsection__heading subsection__heading--no-padding"
-                  id="new-+"
+                <div
+                  class="subsection__outer"
                 >
-                  New +
-                </h3>
+                  <h3
+                    class="subsection__heading subsection__heading--no-padding"
+                    id="new-+"
+                  >
+                    New +
+                  </h3>
+                </div>
               </div>
             </div>
           </div>
-          <div
-            class="card__banner"
-          />
-        </button>
+        </a>
       </div>
     </div>
   </div>
@@ -995,36 +1005,37 @@ exports[`<AdminUsers /> should render correctly with updating=true 1`] = `
       class="split-detail-view__list-view"
     >
       <div>
-        <button
-          class="card admin-users__card"
-          style="cursor: pointer;"
-          type="button"
+        <a
+          class="card admin-users__card card--atomic card--not-disabled"
+          href="/admin/users?highlight=new"
+          tabindex="0"
         >
-          <div
-            class="card__background"
-          />
           <div
             class="card__outer-container"
           >
             <div
-              class="split-detail-item__content"
+              class="card__background"
+            />
+            <div
+              class="card__content-container"
             >
               <div
-                class="subsection__outer"
+                class="split-detail-item__content"
               >
-                <h3
-                  class="subsection__heading subsection__heading--no-padding"
-                  id="new-+"
+                <div
+                  class="subsection__outer"
                 >
-                  New +
-                </h3>
+                  <h3
+                    class="subsection__heading subsection__heading--no-padding"
+                    id="new-+"
+                  >
+                    New +
+                  </h3>
+                </div>
               </div>
             </div>
           </div>
-          <div
-            class="card__banner"
-          />
-        </button>
+        </a>
       </div>
     </div>
   </div>
@@ -1111,150 +1122,154 @@ exports[`<AdminUsers /> should render correctly with users 1`] = `
       class="split-detail-view__list-view"
     >
       <div>
-        <button
-          class="card admin-users__card"
-          style="cursor: pointer;"
-          type="button"
+        <a
+          class="card admin-users__card card--atomic card--not-disabled"
+          href="/admin/users?highlight=new"
+          tabindex="0"
         >
-          <div
-            class="card__background"
-          />
           <div
             class="card__outer-container"
           >
             <div
-              class="split-detail-item__content"
+              class="card__background"
+            />
+            <div
+              class="card__content-container"
             >
               <div
-                class="subsection__outer"
+                class="split-detail-item__content"
               >
-                <h3
-                  class="subsection__heading subsection__heading--no-padding"
-                  id="new-+"
+                <div
+                  class="subsection__outer"
                 >
-                  New +
-                </h3>
+                  <h3
+                    class="subsection__heading subsection__heading--no-padding"
+                    id="new-+"
+                  >
+                    New +
+                  </h3>
+                </div>
               </div>
             </div>
           </div>
-          <div
-            class="card__banner"
-          />
-        </button>
-        <button
-          class="card admin-users__card"
+        </a>
+        <a
+          class="card admin-users__card card--atomic card--not-disabled"
+          href="/admin/users?highlight=1"
           id="1"
-          style="cursor: pointer;"
-          type="button"
+          tabindex="0"
         >
-          <div
-            class="card__background"
-          />
           <div
             class="card__outer-container"
           >
             <div
-              class="split-detail-item__content"
+              class="card__background"
+            />
+            <div
+              class="card__content-container"
             >
               <div
-                class="subsection__outer"
+                class="split-detail-item__content"
               >
-                <h3
-                  class="subsection__heading subsection__heading--no-padding"
-                  id="name"
+                <div
+                  class="subsection__outer"
                 >
-                  name
-                </h3>
-                <span
-                  class="paragraph"
-                >
-                  <br />
-                  id: 
-                  1
-                </span>
+                  <h3
+                    class="subsection__heading subsection__heading--no-padding"
+                    id="name"
+                  >
+                    name
+                  </h3>
+                  <span
+                    class="paragraph"
+                  >
+                    <br />
+                    id: 
+                    1
+                  </span>
+                </div>
               </div>
             </div>
           </div>
-          <div
-            class="card__banner"
-          />
-        </button>
-        <button
-          class="card admin-users__card"
+        </a>
+        <a
+          class="card admin-users__card card--atomic card--not-disabled"
+          href="/admin/users?highlight=2"
           id="2"
-          style="cursor: pointer;"
-          type="button"
+          tabindex="0"
         >
-          <div
-            class="card__background"
-          />
           <div
             class="card__outer-container"
           >
             <div
-              class="split-detail-item__content"
+              class="card__background"
+            />
+            <div
+              class="card__content-container"
             >
               <div
-                class="subsection__outer"
+                class="split-detail-item__content"
               >
-                <h3
-                  class="subsection__heading subsection__heading--no-padding"
-                  id="another"
+                <div
+                  class="subsection__outer"
                 >
-                  another
-                </h3>
-                <span
-                  class="paragraph"
-                >
-                  <br />
-                  id: 
-                  2
-                </span>
+                  <h3
+                    class="subsection__heading subsection__heading--no-padding"
+                    id="another"
+                  >
+                    another
+                  </h3>
+                  <span
+                    class="paragraph"
+                  >
+                    <br />
+                    id: 
+                    2
+                  </span>
+                </div>
               </div>
             </div>
           </div>
-          <div
-            class="card__banner"
-          />
-        </button>
-        <button
-          class="card admin-users__card"
+        </a>
+        <a
+          class="card admin-users__card card--atomic card--not-disabled"
+          href="/admin/users?highlight=3"
           id="3"
-          style="cursor: pointer;"
-          type="button"
+          tabindex="0"
         >
-          <div
-            class="card__background"
-          />
           <div
             class="card__outer-container"
           >
             <div
-              class="split-detail-item__content"
+              class="card__background"
+            />
+            <div
+              class="card__content-container"
             >
               <div
-                class="subsection__outer"
+                class="split-detail-item__content"
               >
-                <h3
-                  class="subsection__heading subsection__heading--no-padding"
-                  id="a-third"
+                <div
+                  class="subsection__outer"
                 >
-                  a third
-                </h3>
-                <span
-                  class="paragraph"
-                >
-                  <br />
-                  id: 
-                  3
-                </span>
+                  <h3
+                    class="subsection__heading subsection__heading--no-padding"
+                    id="a-third"
+                  >
+                    a third
+                  </h3>
+                  <span
+                    class="paragraph"
+                  >
+                    <br />
+                    id: 
+                    3
+                  </span>
+                </div>
               </div>
             </div>
           </div>
-          <div
-            class="card__banner"
-          />
-        </button>
+        </a>
       </div>
     </div>
   </div>

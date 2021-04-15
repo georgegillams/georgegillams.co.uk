@@ -58,206 +58,206 @@ exports[`<AdminNavigation /> should render correctly with admin user 1`] = `
     <div
       class="admin-navigation__card-container"
     >
-      <button
+      <a
         aria-label="Debug"
-        class="card feature-card feature-card--narrow-compact admin-navigation__card"
-        role="link"
-        style="cursor: pointer;"
-        type="button"
+        class="card feature-card feature-card--narrow-compact admin-navigation__card card--atomic card--not-disabled"
+        href="/debug"
+        tabindex="0"
       >
         <div
-          class="card__background"
-        />
-        <div
-          class="card__outer-container card__outer-container--padded"
+          class="card__outer-container"
         >
           <div
-            aria-hidden="true"
-            class="feature-card__outer-container feature-card__outer-container--narrow-compact"
+            class="card__background"
+          />
+          <div
+            class="card__content-container card__content-container--padded"
           >
             <div
-              class="feature-card__date feature-card__date--narrow-compact"
-            />
-            <div
-              class="feature-card__center-container feature-card__center-container--narrow-compact"
+              aria-hidden="true"
+              class="feature-card__outer-container feature-card__outer-container--narrow-compact"
             >
               <div
-                class="section__outer feature-card__title"
+                class="feature-card__date feature-card__date--narrow-compact"
+              />
+              <div
+                class="feature-card__center-container feature-card__center-container--narrow-compact"
               >
-                <h2
-                  class="section__heading section__heading--link section__heading--no-padding"
-                  id="debug"
+                <div
+                  class="section__outer section__outer--inherit-color feature-card__title"
                 >
-                  Debug
-                </h2>
+                  <h2
+                    class="section__heading section__heading--no-padding"
+                    id="debug"
+                  >
+                    Debug
+                  </h2>
+                </div>
               </div>
             </div>
           </div>
         </div>
-        <div
-          class="card__banner"
-        />
-      </button>
-      <button
+      </a>
+      <a
         aria-label="Analytics"
-        class="card feature-card feature-card--narrow-compact admin-navigation__card"
-        role="link"
-        style="cursor: pointer;"
-        type="button"
+        class="card feature-card feature-card--narrow-compact admin-navigation__card card--atomic card--not-disabled"
+        href="/admin/analytics"
+        tabindex="0"
       >
         <div
-          class="card__background"
-        />
-        <div
-          class="card__outer-container card__outer-container--padded"
+          class="card__outer-container"
         >
           <div
-            aria-hidden="true"
-            class="feature-card__outer-container feature-card__outer-container--narrow-compact"
+            class="card__background"
+          />
+          <div
+            class="card__content-container card__content-container--padded"
           >
             <div
-              class="feature-card__date feature-card__date--narrow-compact"
-            />
-            <div
-              class="feature-card__center-container feature-card__center-container--narrow-compact"
+              aria-hidden="true"
+              class="feature-card__outer-container feature-card__outer-container--narrow-compact"
             >
               <div
-                class="section__outer feature-card__title"
+                class="feature-card__date feature-card__date--narrow-compact"
+              />
+              <div
+                class="feature-card__center-container feature-card__center-container--narrow-compact"
               >
-                <h2
-                  class="section__heading section__heading--link section__heading--no-padding"
-                  id="analytics"
+                <div
+                  class="section__outer section__outer--inherit-color feature-card__title"
                 >
-                  Analytics
-                </h2>
+                  <h2
+                    class="section__heading section__heading--no-padding"
+                    id="analytics"
+                  >
+                    Analytics
+                  </h2>
+                </div>
               </div>
             </div>
           </div>
         </div>
-        <div
-          class="card__banner"
-        />
-      </button>
-      <button
+      </a>
+      <a
         aria-label="Emails"
-        class="card feature-card feature-card--narrow-compact admin-navigation__card"
-        role="link"
-        style="cursor: pointer;"
-        type="button"
+        class="card feature-card feature-card--narrow-compact admin-navigation__card card--atomic card--not-disabled"
+        href="/admin/emails"
+        tabindex="0"
       >
         <div
-          class="card__background"
-        />
-        <div
-          class="card__outer-container card__outer-container--padded"
+          class="card__outer-container"
         >
           <div
-            aria-hidden="true"
-            class="feature-card__outer-container feature-card__outer-container--narrow-compact"
+            class="card__background"
+          />
+          <div
+            class="card__content-container card__content-container--padded"
           >
             <div
-              class="feature-card__date feature-card__date--narrow-compact"
-            />
-            <div
-              class="feature-card__center-container feature-card__center-container--narrow-compact"
+              aria-hidden="true"
+              class="feature-card__outer-container feature-card__outer-container--narrow-compact"
             >
               <div
-                class="section__outer feature-card__title"
+                class="feature-card__date feature-card__date--narrow-compact"
+              />
+              <div
+                class="feature-card__center-container feature-card__center-container--narrow-compact"
               >
-                <h2
-                  class="section__heading section__heading--link section__heading--no-padding"
-                  id="emails"
+                <div
+                  class="section__outer section__outer--inherit-color feature-card__title"
                 >
-                  Emails
-                </h2>
+                  <h2
+                    class="section__heading section__heading--no-padding"
+                    id="emails"
+                  >
+                    Emails
+                  </h2>
+                </div>
               </div>
             </div>
           </div>
         </div>
-        <div
-          class="card__banner"
-        />
-      </button>
-      <button
+      </a>
+      <a
         aria-label="Notifications"
-        class="card feature-card feature-card--narrow-compact admin-navigation__card"
-        role="link"
-        style="cursor: pointer;"
-        type="button"
+        class="card feature-card feature-card--narrow-compact admin-navigation__card card--atomic card--not-disabled"
+        href="/admin/notifications"
+        tabindex="0"
       >
         <div
-          class="card__background"
-        />
-        <div
-          class="card__outer-container card__outer-container--padded"
+          class="card__outer-container"
         >
           <div
-            aria-hidden="true"
-            class="feature-card__outer-container feature-card__outer-container--narrow-compact"
+            class="card__background"
+          />
+          <div
+            class="card__content-container card__content-container--padded"
           >
             <div
-              class="feature-card__date feature-card__date--narrow-compact"
-            />
-            <div
-              class="feature-card__center-container feature-card__center-container--narrow-compact"
+              aria-hidden="true"
+              class="feature-card__outer-container feature-card__outer-container--narrow-compact"
             >
               <div
-                class="section__outer feature-card__title"
+                class="feature-card__date feature-card__date--narrow-compact"
+              />
+              <div
+                class="feature-card__center-container feature-card__center-container--narrow-compact"
               >
-                <h2
-                  class="section__heading section__heading--link section__heading--no-padding"
-                  id="notifications"
+                <div
+                  class="section__outer section__outer--inherit-color feature-card__title"
                 >
-                  Notifications
-                </h2>
+                  <h2
+                    class="section__heading section__heading--no-padding"
+                    id="notifications"
+                  >
+                    Notifications
+                  </h2>
+                </div>
               </div>
             </div>
           </div>
         </div>
-        <div
-          class="card__banner"
-        />
-      </button>
-      <button
+      </a>
+      <a
         aria-label="Users"
-        class="card feature-card feature-card--narrow-compact admin-navigation__card"
-        role="link"
-        style="cursor: pointer;"
-        type="button"
+        class="card feature-card feature-card--narrow-compact admin-navigation__card card--atomic card--not-disabled"
+        href="/admin/users"
+        tabindex="0"
       >
         <div
-          class="card__background"
-        />
-        <div
-          class="card__outer-container card__outer-container--padded"
+          class="card__outer-container"
         >
           <div
-            aria-hidden="true"
-            class="feature-card__outer-container feature-card__outer-container--narrow-compact"
+            class="card__background"
+          />
+          <div
+            class="card__content-container card__content-container--padded"
           >
             <div
-              class="feature-card__date feature-card__date--narrow-compact"
-            />
-            <div
-              class="feature-card__center-container feature-card__center-container--narrow-compact"
+              aria-hidden="true"
+              class="feature-card__outer-container feature-card__outer-container--narrow-compact"
             >
               <div
-                class="section__outer feature-card__title"
+                class="feature-card__date feature-card__date--narrow-compact"
+              />
+              <div
+                class="feature-card__center-container feature-card__center-container--narrow-compact"
               >
-                <h2
-                  class="section__heading section__heading--link section__heading--no-padding"
-                  id="users"
+                <div
+                  class="section__outer section__outer--inherit-color feature-card__title"
                 >
-                  Users
-                </h2>
+                  <h2
+                    class="section__heading section__heading--no-padding"
+                    id="users"
+                  >
+                    Users
+                  </h2>
+                </div>
               </div>
             </div>
           </div>
         </div>
-        <div
-          class="card__banner"
-        />
-      </button>
+      </a>
     </div>
   </div>
 </div>
