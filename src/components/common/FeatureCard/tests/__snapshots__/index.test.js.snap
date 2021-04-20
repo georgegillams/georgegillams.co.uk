@@ -5,7 +5,6 @@ exports[`<NavigationItem /> Should render correctly 1`] = `
   <a
     class="card feature-card card--atomic card--not-disabled"
     href="/test"
-    tabindex="0"
   >
     <div
       class="card__outer-container"
@@ -42,7 +41,6 @@ exports[`<NavigationItem /> Should render correctly hrefExternal 1`] = `
   <a
     class="card feature-card card--atomic card--not-disabled"
     href="https://duckduckgo.com/"
-    tabindex="0"
   >
     <div
       class="card__outer-container"
@@ -79,7 +77,6 @@ exports[`<NavigationItem /> Should render correctly with custom className 1`] = 
   <a
     class="card feature-card test-custom-classname card--atomic card--not-disabled"
     href="/test"
-    tabindex="0"
   >
     <div
       class="card__outer-container"
@@ -116,7 +113,6 @@ exports[`<NavigationItem /> Should render with nextified href 1`] = `
   <a
     class="card feature-card card--atomic card--not-disabled"
     href="/blog/test"
-    tabindex="0"
   >
     <div
       class="card__outer-container"

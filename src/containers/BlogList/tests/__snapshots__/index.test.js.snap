@@ -165,7 +165,6 @@ exports[`<BlogList /> should render correctly authenticated with blogs 1`] = `
       aria-label="Add a new blog"
       class="card feature-card blogs-list__card card--atomic card--not-disabled"
       href="/create-blog"
-      tabindex="0"
     >
       <div
         class="card__outer-container"
@@ -205,7 +204,6 @@ exports[`<BlogList /> should render correctly authenticated with blogs 1`] = `
       aria-label="Blog 1 , NaN Invalid Date"
       class="card feature-card blogs-list__card blogs-list__card--with-controls card--atomic card--not-disabled"
       href="/blog/asdfg"
-      tabindex="0"
     >
       <div
         class="card__outer-container"
@@ -299,7 +297,6 @@ exports[`<BlogList /> should render correctly authenticated with blogs 1`] = `
       bannercolor="#01579b"
       class="card feature-card blogs-list__card blogs-list__card--with-controls card--atomic card--not-disabled"
       href="/blog/zxywvuts"
-      tabindex="0"
     >
       <div
         class="card__outer-container"
@@ -442,7 +439,6 @@ exports[`<BlogList /> should render correctly authenticated with blogs 1`] = `
       bannercolor="#01579b"
       class="card feature-card blogs-list__card blogs-list__card--with-controls card--atomic card--not-disabled"
       href="/blog/mndyd8"
-      tabindex="0"
     >
       <div
         class="card__outer-container"
@@ -817,7 +813,6 @@ exports[`<BlogList /> should render correctly with blogs 1`] = `
       aria-label="Blog 1 , NaN Invalid Date"
       class="card feature-card blogs-list__card card--atomic card--not-disabled"
       href="/blog/asdfg"
-      tabindex="0"
     >
       <div
         class="card__outer-container"
@@ -901,7 +896,6 @@ exports[`<BlogList /> should render correctly with blogs 1`] = `
       bannercolor="#01579b"
       class="card feature-card blogs-list__card card--atomic card--not-disabled"
       href="/blog/zxywvuts"
-      tabindex="0"
     >
       <div
         class="card__outer-container"
@@ -1034,7 +1028,6 @@ exports[`<BlogList /> should render correctly with blogs 1`] = `
       bannercolor="#01579b"
       class="card feature-card blogs-list__card card--atomic card--not-disabled"
       href="/blog/mndyd8"
-      tabindex="0"
     >
       <div
         class="card__outer-container"
@@ -1388,7 +1381,6 @@ exports[`<BlogList /> should render correctly with ssrBlogs 1`] = `
       aria-label="Blog 1 , NaN Invalid Date"
       class="card feature-card blogs-list__card card--atomic card--not-disabled"
       href="/blog/asdfg"
-      tabindex="0"
     >
       <div
         class="card__outer-container"
@@ -1472,7 +1464,6 @@ exports[`<BlogList /> should render correctly with ssrBlogs 1`] = `
       bannercolor="#01579b"
       class="card feature-card blogs-list__card card--atomic card--not-disabled"
       href="/blog/zxywvuts"
-      tabindex="0"
     >
       <div
         class="card__outer-container"
@@ -1605,7 +1596,6 @@ exports[`<BlogList /> should render correctly with ssrBlogs 1`] = `
       bannercolor="#01579b"
       class="card feature-card blogs-list__card card--atomic card--not-disabled"
       href="/blog/mndyd8"
-      tabindex="0"
     >
       <div
         class="card__outer-container"

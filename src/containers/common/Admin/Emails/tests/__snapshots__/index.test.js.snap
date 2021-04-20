@@ -141,7 +141,6 @@ exports[`<AdminEmails /> should render correctly with emails 1`] = `
           class="card admin-emails__card card--atomic card--not-disabled"
           href="/admin/emails?highlight=1"
           id="1"
-          tabindex="0"
         >
           <div
             class="card__outer-container"
@@ -180,7 +179,6 @@ exports[`<AdminEmails /> should render correctly with emails 1`] = `
           class="card admin-emails__card card--atomic card--not-disabled"
           href="/admin/emails?highlight=2"
           id="2"
-          tabindex="0"
         >
           <div
             class="card__outer-container"
@@ -219,7 +217,6 @@ exports[`<AdminEmails /> should render correctly with emails 1`] = `
           class="card admin-emails__card card--atomic card--not-disabled"
           href="/admin/emails?highlight=3"
           id="3"
-          tabindex="0"
         >
           <div
             class="card__outer-container"

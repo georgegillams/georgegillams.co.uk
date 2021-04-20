@@ -62,7 +62,6 @@ exports[`<AdminNavigation /> should render correctly with admin user 1`] = `
         aria-label="Debug"
         class="card feature-card feature-card--narrow-compact admin-navigation__card card--atomic card--not-disabled"
         href="/debug"
-        tabindex="0"
       >
         <div
           class="card__outer-container"
@@ -102,7 +101,6 @@ exports[`<AdminNavigation /> should render correctly with admin user 1`] = `
         aria-label="Analytics"
         class="card feature-card feature-card--narrow-compact admin-navigation__card card--atomic card--not-disabled"
         href="/admin/analytics"
-        tabindex="0"
       >
         <div
           class="card__outer-container"
@@ -142,7 +140,6 @@ exports[`<AdminNavigation /> should render correctly with admin user 1`] = `
         aria-label="Emails"
         class="card feature-card feature-card--narrow-compact admin-navigation__card card--atomic card--not-disabled"
         href="/admin/emails"
-        tabindex="0"
       >
         <div
           class="card__outer-container"
@@ -182,7 +179,6 @@ exports[`<AdminNavigation /> should render correctly with admin user 1`] = `
         aria-label="Notifications"
         class="card feature-card feature-card--narrow-compact admin-navigation__card card--atomic card--not-disabled"
         href="/admin/notifications"
-        tabindex="0"
       >
         <div
           class="card__outer-container"
@@ -222,7 +218,6 @@ exports[`<AdminNavigation /> should render correctly with admin user 1`] = `
         aria-label="Users"
         class="card feature-card feature-card--narrow-compact admin-navigation__card card--atomic card--not-disabled"
         href="/admin/users"
-        tabindex="0"
       >
         <div
           class="card__outer-container"

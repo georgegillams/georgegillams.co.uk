@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<PageContainer /> Should render correctly 1`] = `
+exports[`<LegacyPageContainer /> Should render correctly 1`] = `
 <div>
   <main
     class="page-container__container page-container__container--bottom-padding page-container__container--regular"
@@ -13,7 +13,7 @@ exports[`<PageContainer /> Should render correctly 1`] = `
 </div>
 `;
 
-exports[`<PageContainer /> Should render correctly with custom className 1`] = `
+exports[`<LegacyPageContainer /> Should render correctly with custom className 1`] = `
 <div>
   <main
     class="page-container__container page-container__container--bottom-padding page-container__container--regular test-custom-classname"
@@ -26,7 +26,7 @@ exports[`<PageContainer /> Should render correctly with custom className 1`] = `
 </div>
 `;
 
-exports[`<PageContainer /> Should render correctly with defaultCenter 1`] = `
+exports[`<LegacyPageContainer /> Should render correctly with defaultCenter 1`] = `
 <div>
   <main
     class="page-container__container page-container__container--bottom-padding page-container__container--regular page-container__container--center"
@@ -39,7 +39,7 @@ exports[`<PageContainer /> Should render correctly with defaultCenter 1`] = `
 </div>
 `;
 
-exports[`<PageContainer /> Should render correctly with prose 1`] = `
+exports[`<LegacyPageContainer /> Should render correctly with prose 1`] = `
 <div>
   <main
     class="page-container__container page-container__container--bottom-padding page-container__container--prose"

@@ -14,7 +14,6 @@ exports[`<Photography /> should render correctly 1`] = `
       aria-label="Find me on GuruShots"
       class="card feature-card feature-card--narrow-compact photography__card card--atomic card--not-disabled"
       href="https://gurushots.com/georgegillams/achievements"
-      tabindex="0"
     >
       <div
         class="card__outer-container"
@@ -90,7 +89,6 @@ exports[`<Photography /> should render correctly 1`] = `
       aria-label="Find me on Flickr"
       class="card feature-card feature-card--narrow-compact photography__card card--atomic card--not-disabled"
       href="https://www.flickr.com/people/georgegillams/"
-      tabindex="0"
     >
       <div
         class="card__outer-container"
@@ -166,7 +164,6 @@ exports[`<Photography /> should render correctly 1`] = `
       aria-label="Find me on Unsplash"
       class="card feature-card feature-card--narrow-compact photography__card card--atomic card--not-disabled"
       href="https://unsplash.com/@georgegillams"
-      tabindex="0"
     >
       <div
         class="card__outer-container"
