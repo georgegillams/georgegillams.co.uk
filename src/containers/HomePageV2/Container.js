@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { cssModules } from 'gg-components/helpers/cssModules';
+import { PageContainer } from 'gg-components/PageContainer';
 import PageTitle from 'components/common/PageTitle';
 import WorkSection from 'components/HomePageV2/WorkSection';
 import LifeSection from 'components/HomePageV2/LifeSection';
@@ -15,12 +16,14 @@ const HomePage = props => {
   const { ...rest } = props;
 
   return (
-    <PageTitle name="Hey! I'm George." pageTitle="Home" className={getClassName('home__title-section')} {...rest}>
-      <WorkSection className={getClassName('home__work-section')} />
-      <LifeSection className={getClassName('home__life-section')} />
-      <PhotoSection className={getClassName('home__photo-section')} />
-      <AboutSection className={getClassName('home__about-section')} />
-    </PageTitle>
+    <PageContainer centred>
+      <PageTitle name="Hey! I'm George." pageTitle="Home" className={getClassName('home__title-section')} {...rest}>
+        <WorkSection className={getClassName('home__work-section')} />
+        <LifeSection className={getClassName('home__life-section')} />
+        <PhotoSection className={getClassName('home__photo-section')} />
+        <AboutSection className={getClassName('home__about-section')} />
+      </PageTitle>
+    </PageContainer>
   );
 };
 

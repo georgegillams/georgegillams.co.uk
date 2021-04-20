@@ -1,13 +1,13 @@
 import React from 'react';
 
 import WorkBackpack from 'containers/Work/Backpack';
-import CommonLayout, { LAYOUT_STYLES } from 'components/common/CommonLayout';
+import LegacyCommonLayout, { LAYOUT_STYLES } from 'components/common/LegacyCommonLayout';
 
 const Page = props => {
   return (
-    <CommonLayout layout={LAYOUT_STYLES.prose}>
+    <LegacyCommonLayout layout={LAYOUT_STYLES.prose}>
       <WorkBackpack {...props} />
-    </CommonLayout>
+    </LegacyCommonLayout>
   );
 };
 
