@@ -100,7 +100,6 @@ exports[`<AdminUsers /> should render correctly with admin user 1`] = `
         <a
           class="card admin-users__card card--atomic card--not-disabled"
           href="/admin/users?highlight=new"
-          tabindex="0"
         >
           <div
             class="card__outer-container"
@@ -181,7 +180,6 @@ exports[`<AdminUsers /> should render correctly with createError 1`] = `
         <a
           class="card admin-users__card card--atomic card--not-disabled"
           href="/admin/users?highlight=new"
-          tabindex="0"
         >
           <div
             class="card__outer-container"
@@ -262,7 +260,6 @@ exports[`<AdminUsers /> should render correctly with creating=true 1`] = `
         <a
           class="card admin-users__card card--atomic card--not-disabled"
           href="/admin/users?highlight=new"
-          tabindex="0"
         >
           <div
             class="card__outer-container"
@@ -407,7 +404,6 @@ exports[`<AdminUsers /> should render correctly with loadError 1`] = `
         <a
           class="card admin-users__card card--atomic card--not-disabled"
           href="/admin/users?highlight=new"
-          tabindex="0"
         >
           <div
             class="card__outer-container"
@@ -522,7 +518,6 @@ exports[`<AdminUsers /> should render correctly with loading=true 1`] = `
         <a
           class="card admin-users__card card--atomic card--not-disabled"
           href="/admin/users?highlight=new"
-          tabindex="0"
         >
           <div
             class="card__outer-container"
@@ -603,7 +598,6 @@ exports[`<AdminUsers /> should render correctly with removeError 1`] = `
         <a
           class="card admin-users__card card--atomic card--not-disabled"
           href="/admin/users?highlight=new"
-          tabindex="0"
         >
           <div
             class="card__outer-container"
@@ -684,7 +678,6 @@ exports[`<AdminUsers /> should render correctly with removing=true 1`] = `
         <a
           class="card admin-users__card card--atomic card--not-disabled"
           href="/admin/users?highlight=new"
-          tabindex="0"
         >
           <div
             class="card__outer-container"
@@ -765,7 +758,6 @@ exports[`<AdminUsers /> should render correctly with requestError 1`] = `
         <a
           class="card admin-users__card card--atomic card--not-disabled"
           href="/admin/users?highlight=new"
-          tabindex="0"
         >
           <div
             class="card__outer-container"
@@ -846,7 +838,6 @@ exports[`<AdminUsers /> should render correctly with requesting=true 1`] = `
         <a
           class="card admin-users__card card--atomic card--not-disabled"
           href="/admin/users?highlight=new"
-          tabindex="0"
         >
           <div
             class="card__outer-container"
@@ -927,7 +918,6 @@ exports[`<AdminUsers /> should render correctly with updateError 1`] = `
         <a
           class="card admin-users__card card--atomic card--not-disabled"
           href="/admin/users?highlight=new"
-          tabindex="0"
         >
           <div
             class="card__outer-container"
@@ -1008,7 +998,6 @@ exports[`<AdminUsers /> should render correctly with updating=true 1`] = `
         <a
           class="card admin-users__card card--atomic card--not-disabled"
           href="/admin/users?highlight=new"
-          tabindex="0"
         >
           <div
             class="card__outer-container"
@@ -1125,7 +1114,6 @@ exports[`<AdminUsers /> should render correctly with users 1`] = `
         <a
           class="card admin-users__card card--atomic card--not-disabled"
           href="/admin/users?highlight=new"
-          tabindex="0"
         >
           <div
             class="card__outer-container"
@@ -1157,7 +1145,6 @@ exports[`<AdminUsers /> should render correctly with users 1`] = `
           class="card admin-users__card card--atomic card--not-disabled"
           href="/admin/users?highlight=1"
           id="1"
-          tabindex="0"
         >
           <div
             class="card__outer-container"
@@ -1196,7 +1183,6 @@ exports[`<AdminUsers /> should render correctly with users 1`] = `
           class="card admin-users__card card--atomic card--not-disabled"
           href="/admin/users?highlight=2"
           id="2"
-          tabindex="0"
         >
           <div
             class="card__outer-container"
@@ -1235,7 +1221,6 @@ exports[`<AdminUsers /> should render correctly with users 1`] = `
           class="card admin-users__card card--atomic card--not-disabled"
           href="/admin/users?highlight=3"
           id="3"
-          tabindex="0"
         >
           <div
             class="card__outer-container"

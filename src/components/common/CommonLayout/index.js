@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import PageContainer, { LAYOUT_STYLES } from 'components/common/PageContainer';
+import LegacyPageContainer, { LAYOUT_STYLES } from 'components/common/LegacyPageContainer';
 import Footer from 'components/Footer';
 import STYLES from './common-layout.scss';
 import { cssModules } from 'gg-components/helpers/cssModules';
@@ -12,9 +12,9 @@ const CommonLayout = props => {
 
   return (
     <>
-      <PageContainer className={getClassName('common-layout__grow')} {...rest}>
+      <LegacyPageContainer className={getClassName('common-layout__grow')} {...rest}>
         {children}
-      </PageContainer>
+      </LegacyPageContainer>
       <Footer />
     </>
   );

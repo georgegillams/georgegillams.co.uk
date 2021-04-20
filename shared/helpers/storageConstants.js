@@ -1,5 +1,5 @@
 const DEBUG_SHOW_DEBUG_INFORMATION_KEY = 'showSessionDebugViews';
-const DEBUG_SHOW_PAGE_CONTAINER_KEY = 'showPageContainerDebugColor';
+const DEBUG_SHOW_PAGE_CONTAINER_KEY = 'showLegacyPageContainerDebugColor';
 const POST_LOGIN_REDIRECT_LOCATION_KEY = 'post-login-redirect-location';
 const PRIVACY_PREFERENCES_KEY = 'privacy_preferences_v2';
 const SESSION_COOKIE_KEY = 'session_v2';

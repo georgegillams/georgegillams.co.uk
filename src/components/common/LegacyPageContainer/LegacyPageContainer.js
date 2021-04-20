@@ -16,7 +16,7 @@ export const LAYOUT_STYLES = {
 
 const getClassName = cssModules(STYLES);
 
-const PageContainer = props => {
+const LegacyPageContainer = props => {
   const { className, layout, bottomPadding, ...rest } = props;
   const [showDebug, setShowDebug] = useState(false);
 
@@ -55,16 +55,16 @@ const PageContainer = props => {
   return <main id="main" className={outerClassNames.join(' ')} {...rest} />;
 };
 
-PageContainer.propTypes = {
+LegacyPageContainer.propTypes = {
   layout: PropTypes.oneOf(Object.keys(LAYOUT_STYLES)),
   className: PropTypes.string,
   bottomPadding: PropTypes.bool,
 };
 
-PageContainer.defaultProps = {
+LegacyPageContainer.defaultProps = {
   layout: LAYOUT_STYLES.default,
   className: null,
   bottomPadding: true,
 };
 
-export default PageContainer;
+export default LegacyPageContainer;

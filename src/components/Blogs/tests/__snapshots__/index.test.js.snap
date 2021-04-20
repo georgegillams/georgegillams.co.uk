@@ -6,7 +6,6 @@ exports[`<BlogCard /> Should render correctly 1`] = `
     aria-label="Blog 1 , NaN Invalid Date"
     class="card feature-card card--atomic card--not-disabled"
     href="/blog/asdfg"
-    tabindex="0"
   >
     <div
       class="card__outer-container"
@@ -95,7 +94,6 @@ exports[`<BlogCard /> Should render correctly when deleted 1`] = `
     bannercolor="#01579b"
     class="card feature-card card--atomic card--not-disabled"
     href="/blog/mndyd8"
-    tabindex="0"
   >
     <div
       class="card__outer-container"
@@ -233,7 +231,6 @@ exports[`<BlogCard /> Should render correctly with all parameters supplied 1`] =
     bannercolor="#01579b"
     class="card feature-card card--atomic card--not-disabled"
     href="/blog/zxywvuts"
-    tabindex="0"
   >
     <div
       class="card__outer-container"
@@ -370,7 +367,6 @@ exports[`<BlogCard /> Should render correctly with custom className 1`] = `
     aria-label="Blog 1 , NaN Invalid Date"
     class="card feature-card test-custom-classname card--atomic card--not-disabled"
     href="/blog/asdfg"
-    tabindex="0"
   >
     <div
       class="card__outer-container"
@@ -459,7 +455,6 @@ exports[`<BlogsList /> Should render correctly 1`] = `
       aria-label="Blog 1 , NaN Invalid Date"
       class="card feature-card blogs-list__card card--atomic card--not-disabled"
       href="/blog/asdfg"
-      tabindex="0"
     >
       <div
         class="card__outer-container"
@@ -543,7 +538,6 @@ exports[`<BlogsList /> Should render correctly 1`] = `
       bannercolor="#01579b"
       class="card feature-card blogs-list__card card--atomic card--not-disabled"
       href="/blog/zxywvuts"
-      tabindex="0"
     >
       <div
         class="card__outer-container"
@@ -676,7 +670,6 @@ exports[`<BlogsList /> Should render correctly 1`] = `
       bannercolor="#01579b"
       class="card feature-card blogs-list__card card--atomic card--not-disabled"
       href="/blog/mndyd8"
-      tabindex="0"
     >
       <div
         class="card__outer-container"
@@ -817,7 +810,6 @@ exports[`<BlogsList /> Should render correctly with custom className 1`] = `
       aria-label="Blog 1 , NaN Invalid Date"
       class="card feature-card blogs-list__card card--atomic card--not-disabled"
       href="/blog/asdfg"
-      tabindex="0"
     >
       <div
         class="card__outer-container"
@@ -901,7 +893,6 @@ exports[`<BlogsList /> Should render correctly with custom className 1`] = `
       bannercolor="#01579b"
       class="card feature-card blogs-list__card card--atomic card--not-disabled"
       href="/blog/zxywvuts"
-      tabindex="0"
     >
       <div
         class="card__outer-container"
@@ -1034,7 +1025,6 @@ exports[`<BlogsList /> Should render correctly with custom className 1`] = `
       bannercolor="#01579b"
       class="card feature-card blogs-list__card card--atomic card--not-disabled"
       href="/blog/mndyd8"
-      tabindex="0"
     >
       <div
         class="card__outer-container"
@@ -1173,7 +1163,6 @@ exports[`<BlogsList /> Should render correctly with deleteBlog function 1`] = `
       aria-label="Blog 1 , NaN Invalid Date"
       class="card feature-card blogs-list__card blogs-list__card--with-controls card--atomic card--not-disabled"
       href="/blog/asdfg"
-      tabindex="0"
     >
       <div
         class="card__outer-container"
@@ -1267,7 +1256,6 @@ exports[`<BlogsList /> Should render correctly with deleteBlog function 1`] = `
       bannercolor="#01579b"
       class="card feature-card blogs-list__card blogs-list__card--with-controls card--atomic card--not-disabled"
       href="/blog/zxywvuts"
-      tabindex="0"
     >
       <div
         class="card__outer-container"
@@ -1410,7 +1398,6 @@ exports[`<BlogsList /> Should render correctly with deleteBlog function 1`] = `
       bannercolor="#01579b"
       class="card feature-card blogs-list__card blogs-list__card--with-controls card--atomic card--not-disabled"
       href="/blog/mndyd8"
-      tabindex="0"
     >
       <div
         class="card__outer-container"
