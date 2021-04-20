@@ -2,15 +2,15 @@ import React from 'react';
 
 import CSSHack from 'components/common/CSSHack';
 import BlogList from 'containers/BlogList';
-import CommonLayout from 'components/common/CommonLayout';
+import LegacyCommonLayout from 'components/common/LegacyCommonLayout';
 import apiStructure from 'helpers/common/apiStructure';
 
 const Page = props => {
   return (
-    <CommonLayout bottomPadding={false}>
+    <LegacyCommonLayout bottomPadding={false}>
       <CSSHack pageName="blog" />
       <BlogList linkPrefix={'/blog'} selectedNav="Writing" filter={x => x.showInBlogsList} {...props} />
-    </CommonLayout>
+    </LegacyCommonLayout>
   );
 };
 

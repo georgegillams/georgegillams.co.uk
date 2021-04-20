@@ -2,14 +2,14 @@ import React from 'react';
 
 import CSSHack from 'components/common/CSSHack';
 import ApiDocs from 'containers/common/ApiDocs';
-import CommonLayout from 'components/common/CommonLayout';
+import LegacyCommonLayout from 'components/common/LegacyCommonLayout';
 
 const Page = props => {
   return (
-    <CommonLayout>
+    <LegacyCommonLayout>
       <CSSHack pageName="api-docs" />
       <ApiDocs {...props} />
-    </CommonLayout>
+    </LegacyCommonLayout>
   );
 };
 

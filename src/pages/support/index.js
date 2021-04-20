@@ -1,13 +1,13 @@
 import React from 'react';
 
 import Support from 'containers/Support';
-import CommonLayout from 'components/common/CommonLayout';
+import LegacyCommonLayout from 'components/common/LegacyCommonLayout';
 
 const Page = props => {
   return (
-    <CommonLayout>
+    <LegacyCommonLayout>
       <Support {...props} />
-    </CommonLayout>
+    </LegacyCommonLayout>
   );
 };
 

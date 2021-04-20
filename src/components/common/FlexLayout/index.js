@@ -5,7 +5,7 @@ import STYLES from './flex-layout.scss';
 import { cssModules } from 'gg-components/helpers/cssModules';
 const getClassName = cssModules(STYLES);
 
-const CommonLayout = props => {
+const LegacyCommonLayout = props => {
   const { children } = props;
 
   return (
@@ -15,8 +15,8 @@ const CommonLayout = props => {
   );
 };
 
-CommonLayout.propTypes = {
+LegacyCommonLayout.propTypes = {
   children: PropTypes.node.isRequired,
 };
 
-export default CommonLayout;
+export default LegacyCommonLayout;

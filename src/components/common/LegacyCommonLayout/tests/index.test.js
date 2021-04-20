@@ -2,7 +2,7 @@ import React from 'react';
 
 import { render } from '@testing-library/react';
 
-import Layout from '..';
+import Layout, { LAYOUT_STYLES } from '..';
 
 describe('<Layout />', () => {
   const children = <div>some text</div>;
@@ -14,7 +14,7 @@ describe('<Layout />', () => {
   });
 
   it('Should render correctly with spread props', () => {
-    const { container } = render(<Layout>{children}</Layout>);
+    const { container } = render(<Layout layout={LAYOUT_STYLES.prose}>{children}</Layout>);
 
     expect(container).toMatchSnapshot();
   });

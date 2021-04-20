@@ -2,14 +2,14 @@ import React from 'react';
 
 import CSSHack from 'components/common/CSSHack';
 import EmailVerification from 'containers/common/EmailVerification';
-import CommonLayout from 'components/common/CommonLayout';
+import LegacyCommonLayout from 'components/common/LegacyCommonLayout';
 
 const Page = props => {
   return (
-    <CommonLayout>
+    <LegacyCommonLayout>
       <CSSHack pageName="email-verification" />
       <EmailVerification {...props} />
-    </CommonLayout>
+    </LegacyCommonLayout>
   );
 };
 
