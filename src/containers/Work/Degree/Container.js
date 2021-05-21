@@ -10,7 +10,6 @@ import { DegreeModule } from 'gg-components/Degree';
 
 import STYLES from './work-degree.scss';
 
-import MyDegreeImage from './degree_bitmoji.png';
 import SouthamptonUniLogo from './southampton.svg';
 
 import Subsection from 'gg-components/Subsection/Subsection';
@@ -94,20 +93,9 @@ const Degree = props => {
       <PageTitle link={{ to: '/work', text: 'Work' }} name="MEng Software Engineering 👨‍🎓">
         <Image
           className={getClassName('work-degree__image')}
-          imgProps={{
-            alt: 'My degree',
-          }}
-          aspectX={1}
-          aspectY={1}
-          lightSrc={MyDegreeImage}
-          darkSrc={MyDegreeImage}
-        />
-        <br />
-        <Image
-          className={getClassName('work-degree__image')}
           style={{ maxWidth: '20rem' }}
           imgProps={{
-            alt: 'My degree',
+            alt: 'University of Southampton Logo',
             className: getClassName('work-degree__img-dark-invert'),
           }}
           aspectX={2000}
