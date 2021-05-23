@@ -1,10 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { cssModules } from 'gg-components/helpers/cssModules';
-import { Subsection } from 'gg-components/Subsection';
-import { Paragraph } from 'gg-components/Paragraph';
+import { cssModules } from '@george-gillams/components/helpers/cssModules';
+import { Subsection } from '@george-gillams/components/Subsection';
+import { Paragraph } from '@george-gillams/components/Paragraph';
 import PageTitle from 'components/common/PageTitle';
-import { DebugObject } from 'gg-components/DebugObject';
+import { DebugObject } from '@george-gillams/components/DebugObject';
 
 import STYLES from './style.scss';
 

@@ -1,8 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { cssModules } from 'gg-components/helpers/cssModules';
-import { Paragraph } from 'gg-components/Paragraph';
-import { THEMES } from 'gg-components/Theming';
+import { cssModules } from '@george-gillams/components/helpers/cssModules';
+import { Paragraph } from '@george-gillams/components/Paragraph';
+import { THEMES } from '@george-gillams/components/Theming';
 
 import reactLogo from './react-logo.svg';
 import reduxLogo from './redux-logo.svg';

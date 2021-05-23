@@ -1,10 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Input } from 'gg-components/Input';
-import { Select } from 'gg-components/Select';
-import { Checkbox } from 'gg-components/Checkbox';
-import FORM_BUILDER_STYLES from 'gg-components/FormBuilder/forms.css';
-import { cssModules } from 'gg-components/helpers/cssModules';
+import { Input } from '@george-gillams/components/Input';
+import { Select } from '@george-gillams/components/Select';
+import { Checkbox } from '@george-gillams/components/Checkbox';
+import FORM_BUILDER_STYLES from '@george-gillams/components/FormBuilder/forms.css';
+import { cssModules } from '@george-gillams/components/helpers/cssModules';
 
 const getClassName = cssModules(FORM_BUILDER_STYLES);
 

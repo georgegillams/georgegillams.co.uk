@@ -1,8 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import { Paragraph } from 'gg-components/Paragraph';
-import { Section } from 'gg-components/Section';
+import { Paragraph } from '@george-gillams/components/Paragraph';
+import { Section } from '@george-gillams/components/Section';
 import TextLink from 'components/common/TextLink';
 
 const AdminOnly = props => {

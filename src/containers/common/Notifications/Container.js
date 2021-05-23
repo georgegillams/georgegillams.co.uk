@@ -1,9 +1,9 @@
 import React, { useEffect } from 'react';
 import PropTypes from 'prop-types';
 import DebugObject from 'components/common/DebugObject';
-import Notification from 'gg-components/Notification/Notification';
+import Notification from '@george-gillams/components/Notification/Notification';
 import STYLES from './notifications.scss';
-import { cssModules } from 'gg-components/helpers/cssModules';
+import { cssModules } from '@george-gillams/components/helpers/cssModules';
 import useTabMadeVisible from 'client-utils/common/useTabMadeVisible';
 
 const getClassName = cssModules(STYLES);

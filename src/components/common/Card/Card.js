@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Card as GGCard } from 'gg-components/Card';
+import { Card as GGCard } from '@george-gillams/components/Card';
 import HelperFunctions from 'helpers/common/HelperFunctions';
 import nextifyHref from 'client-utils/nextifyHref';
 import Link from 'next/link';

@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 import STYLES from './app-wrapper.scss';
 
-import { cssModules } from 'gg-components/helpers/cssModules';
+import { cssModules } from '@george-gillams/components/helpers/cssModules';
 
 const getClassName = cssModules(STYLES);
 

@@ -1,7 +1,7 @@
 import React from 'react';
-import { cssModules } from 'gg-components/helpers/cssModules';
-import { InfoCell, INFO_CELL_STYLES } from 'gg-components/InfoCell';
-import withScroll from 'gg-components/ScrollContainer/withScroll.js';
+import { cssModules } from '@george-gillams/components/helpers/cssModules';
+import { InfoCell, INFO_CELL_STYLES } from '@george-gillams/components/InfoCell';
+import withScroll from '@george-gillams/components/ScrollContainer/withScroll.js';
 import TextLink from 'components/common/TextLink';
 import PageTitle from 'components/common/PageTitle';
 import Button from 'components/common/Button';

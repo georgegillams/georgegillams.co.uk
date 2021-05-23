@@ -1,13 +1,13 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import { withScroll, cleanRestScrollProps } from 'gg-components/ScrollContainer';
-import { Paragraph } from 'gg-components/Paragraph';
-import { Section } from 'gg-components/Section';
+import { withScroll, cleanRestScrollProps } from '@george-gillams/components/ScrollContainer';
+import { Paragraph } from '@george-gillams/components/Paragraph';
+import { Section } from '@george-gillams/components/Section';
 import TextLink from 'components/common/TextLink';
 import Phones from './Phones';
 import STYLES from './work-section.scss';
-import { cssModules } from 'gg-components/helpers/cssModules';
+import { cssModules } from '@george-gillams/components/helpers/cssModules';
 
 const getClassName = cssModules(STYLES);
 

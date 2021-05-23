@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { cssModules } from 'gg-components/helpers/cssModules';
-import { PageContainer } from 'gg-components/PageContainer';
+import { cssModules } from '@george-gillams/components/helpers/cssModules';
+import { PageContainer } from '@george-gillams/components/PageContainer';
 import PageTitle from 'components/common/PageTitle';
 import WorkSection from 'components/HomePageV2/WorkSection';
 import LifeSection from 'components/HomePageV2/LifeSection';

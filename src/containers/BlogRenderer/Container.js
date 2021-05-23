@@ -1,20 +1,20 @@
 import React, { useEffect, useState } from 'react';
 import PropTypes from 'prop-types';
-import { cssModules } from 'gg-components/helpers/cssModules';
+import { cssModules } from '@george-gillams/components/helpers/cssModules';
 import DebugObject from 'components/common/DebugObject';
-import { LoadingCover } from 'gg-components/LoadingCover';
-import { ArticleDate } from 'gg-components/ArticleDate';
-import { MarkdownRenderer } from 'gg-components/MarkdownRenderer';
+import { LoadingCover } from '@george-gillams/components/LoadingCover';
+import { ArticleDate } from '@george-gillams/components/ArticleDate';
+import { MarkdownRenderer } from '@george-gillams/components/MarkdownRenderer';
 
 import BlogRendererSkeleton from './BlogRendererSkeleton';
 
 import { CreativeCommons } from 'components/CreativeCommons';
 import STYLES from './blog-renderer.scss';
 import PageTitle from 'components/common/PageTitle';
-import Tag from 'gg-components/Tag/Tag';
+import Tag from '@george-gillams/components/Tag/Tag';
 import ErrorDisplay from 'components/common/ErrorDisplay';
 import LoadableBlogForm from './LoadableBlogForm';
-import Section from 'gg-components/Section/Section';
+import Section from '@george-gillams/components/Section/Section';
 import Head from 'next/head';
 
 const getClassName = cssModules(STYLES);

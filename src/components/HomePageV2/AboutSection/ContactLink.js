@@ -3,8 +3,8 @@ import PropTypes from 'prop-types';
 
 import TextLink from 'components/common/TextLink';
 import STYLES from './contact-link.scss';
-import { cssModules } from 'gg-components/helpers/cssModules';
-import { useEntryAnimationClientOnly } from 'gg-components/ServerSideRendering';
+import { cssModules } from '@george-gillams/components/helpers/cssModules';
+import { useEntryAnimationClientOnly } from '@george-gillams/components/ServerSideRendering';
 
 const getClassName = cssModules(STYLES);
 

@@ -1,8 +1,8 @@
 import React, { useEffect } from 'react';
 import PropTypes from 'prop-types';
-import { Subsection } from 'gg-components/Subsection';
-import { Paragraph } from 'gg-components/Paragraph';
-import TextLinkSkeleton from 'gg-components/Skeletons/TextLinkSkeleton';
+import { Subsection } from '@george-gillams/components/Subsection';
+import { Paragraph } from '@george-gillams/components/Paragraph';
+import TextLinkSkeleton from '@george-gillams/components/Skeletons/TextLinkSkeleton';
 import TextLink from 'components/common/TextLink';
 import PageTitle from 'components/common/PageTitle';
 
@@ -10,7 +10,7 @@ import redirects from 'helpers/redirects';
 import DebugObject from 'components/common/DebugObject';
 
 import STYLES from './site-map.scss';
-import { cssModules } from 'gg-components/helpers/cssModules';
+import { cssModules } from '@george-gillams/components/helpers/cssModules';
 
 const getClassName = cssModules(STYLES);
 

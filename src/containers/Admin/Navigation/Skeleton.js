@@ -1,9 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import CompactCardSkeleton from 'gg-components/Skeletons/CompactCardSkeleton';
-import SectionSkeleton from 'gg-components/Skeletons/SectionSkeleton';
+import CompactCardSkeleton from '@george-gillams/components/Skeletons/CompactCardSkeleton';
+import SectionSkeleton from '@george-gillams/components/Skeletons/SectionSkeleton';
 import STYLES from './admin-navigation.scss';
-import { cssModules } from 'gg-components/helpers/cssModules';
+import { cssModules } from '@george-gillams/components/helpers/cssModules';
 
 const getClassName = cssModules(STYLES);
 

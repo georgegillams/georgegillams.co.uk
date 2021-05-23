@@ -1,16 +1,16 @@
 import React, { useEffect, useState } from 'react';
 import PropTypes from 'prop-types';
-import { cssModules } from 'gg-components/helpers/cssModules';
+import { cssModules } from '@george-gillams/components/helpers/cssModules';
 import DebugObject from 'components/common/DebugObject';
-import { LoadingCover } from 'gg-components/LoadingCover';
+import { LoadingCover } from '@george-gillams/components/LoadingCover';
 
 import SupportSkeleton from './SupportSkeleton';
 
 import STYLES from './support.scss';
 import PageTitle from 'components/common/PageTitle';
-import Paragraph from 'gg-components/Paragraph/Paragraph';
+import Paragraph from '@george-gillams/components/Paragraph/Paragraph';
 import LoadableSupportForm from './LoadableSupportForm';
-import Section from 'gg-components/Section/Section';
+import Section from '@george-gillams/components/Section/Section';
 import SupportLink from './SupportLink';
 import Button from 'components/common/Button';
 import ErrorDisplay from 'components/common/ErrorDisplay';

@@ -1,8 +1,8 @@
 import React, { useEffect } from 'react';
 import PropTypes from 'prop-types';
-import { cssModules } from 'gg-components/helpers/cssModules';
+import { cssModules } from '@george-gillams/components/helpers/cssModules';
 import DebugObject from 'components/common/DebugObject';
-import { LoadingCover } from 'gg-components/LoadingCover';
+import { LoadingCover } from '@george-gillams/components/LoadingCover';
 
 import BlogListSkeleton from './BlogListSkeleton';
 import BlogsNav from './BlogsNav';
