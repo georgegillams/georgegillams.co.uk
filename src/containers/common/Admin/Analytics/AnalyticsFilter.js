@@ -1,9 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Input } from 'gg-components/Input';
+import { Input } from '@george-gillams/components/Input';
 import HelperFunctions from 'helpers/common/HelperFunctions';
-import FORM_BUILDER_STYLES from 'gg-components/FormBuilder/forms.css';
-import { cssModules } from 'gg-components/helpers/cssModules';
+import FORM_BUILDER_STYLES from '@george-gillams/components/FormBuilder/forms.css';
+import { cssModules } from '@george-gillams/components/helpers/cssModules';
 
 const getClassName = cssModules(FORM_BUILDER_STYLES);
 

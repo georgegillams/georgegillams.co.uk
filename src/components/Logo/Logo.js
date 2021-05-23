@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import Link from 'next/link';
-import { cssModules } from 'gg-components/helpers/cssModules';
+import { cssModules } from '@george-gillams/components/helpers/cssModules';
 
 import STYLES from './logo.scss';
 

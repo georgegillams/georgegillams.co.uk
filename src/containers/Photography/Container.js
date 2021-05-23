@@ -1,11 +1,11 @@
 import React from 'react';
 import FeatureCard, { FEATURE_CARD_LAYOUTS } from 'components/common/FeatureCard';
-import { Image } from 'gg-components/Image';
-import { Paragraph } from 'gg-components/Paragraph';
-import { Section } from 'gg-components/Section';
-import { Subsection } from 'gg-components/Subsection';
+import { Image } from '@george-gillams/components/Image';
+import { Paragraph } from '@george-gillams/components/Paragraph';
+import { Section } from '@george-gillams/components/Section';
+import { Subsection } from '@george-gillams/components/Subsection';
 import PageTitle from 'components/common/PageTitle';
-import { cssModules } from 'gg-components/helpers/cssModules';
+import { cssModules } from '@george-gillams/components/helpers/cssModules';
 
 import STYLES from './photography.scss';
 

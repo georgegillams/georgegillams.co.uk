@@ -69,7 +69,7 @@ const nextConfig = {
   webpack: configureWebpack,
 };
 
-const withTM = nextTranspileModules(['gg-components']);
+const withTM = nextTranspileModules(['@george-gillams/components']);
 
 const withBundleAnalyzer = bundleAnalyzer({
   enabled: process.env.ANALYZE === 'true',

@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Error } from 'gg-components/Error';
-import { Paragraph } from 'gg-components/Paragraph';
+import { Error } from '@george-gillams/components/Error';
+import { Paragraph } from '@george-gillams/components/Paragraph';
 
 const ErrorDisplay = props => {
   const { error, message, children, ...rest } = props;

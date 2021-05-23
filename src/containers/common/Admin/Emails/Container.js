@@ -2,9 +2,9 @@ import React, { useEffect, useState } from 'react';
 import PropTypes from 'prop-types';
 import PageTitle from 'components/common/PageTitle';
 import { DebugObject } from 'components/common/DebugObject';
-import { LoadingCover } from 'gg-components/LoadingCover';
-import { Button } from 'gg-components/Button';
-import { Paragraph } from 'gg-components/Paragraph';
+import { LoadingCover } from '@george-gillams/components/LoadingCover';
+import { Button } from '@george-gillams/components/Button';
+import { Paragraph } from '@george-gillams/components/Paragraph';
 import { AdminOnly } from 'components/common/Walls';
 import { SplitDetailView } from 'components/common/SplitDetailView';
 import { setPostLoginRedirect } from 'client-utils/common/storageHelpers';
@@ -14,7 +14,7 @@ import ErrorDisplay from 'components/common/ErrorDisplay';
 
 import AdminEmailAPIEntity from './AdminEmailAPIEntity';
 
-import { cssModules } from 'gg-components/helpers/cssModules';
+import { cssModules } from '@george-gillams/components/helpers/cssModules';
 import STYLES from './admin-emails.scss';
 import useTabMadeVisible from 'client-utils/common/useTabMadeVisible';
 

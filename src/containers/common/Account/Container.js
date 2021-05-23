@@ -1,9 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import PageTitle from 'components/common/PageTitle';
-import { LoadingCover } from 'gg-components/LoadingCover';
+import { LoadingCover } from '@george-gillams/components/LoadingCover';
 import { DebugObject } from 'components/common/DebugObject';
-import { Paragraph } from 'gg-components/Paragraph';
+import { Paragraph } from '@george-gillams/components/Paragraph';
 import Button from 'components/common/Button';
 import { setPostLoginRedirect } from 'client-utils/common/storageHelpers';
 
@@ -11,7 +11,7 @@ import Skeleton from './Skeleton';
 
 import { LoggedInOnly } from 'components/common/Walls';
 import STYLES from './account.scss';
-import { cssModules } from 'gg-components/helpers/cssModules';
+import { cssModules } from '@george-gillams/components/helpers/cssModules';
 
 const getClassName = cssModules(STYLES);
 

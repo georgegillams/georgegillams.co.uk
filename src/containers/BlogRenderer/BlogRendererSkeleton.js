@@ -1,8 +1,8 @@
 import React from 'react';
-import CardSkeleton from 'gg-components/Skeletons/CardSkeleton';
-import SectionSkeleton from 'gg-components/Skeletons/SectionSkeleton';
+import CardSkeleton from '@george-gillams/components/Skeletons/CardSkeleton';
+import SectionSkeleton from '@george-gillams/components/Skeletons/SectionSkeleton';
 import STYLES from './blog-renderer.scss';
-import { cssModules } from 'gg-components/helpers/cssModules';
+import { cssModules } from '@george-gillams/components/helpers/cssModules';
 const getClassName = cssModules(STYLES);
 
 const BlogSkeleton = () => (

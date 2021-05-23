@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 import STYLES from './flex-layout.scss';
-import { cssModules } from 'gg-components/helpers/cssModules';
+import { cssModules } from '@george-gillams/components/helpers/cssModules';
 const getClassName = cssModules(STYLES);
 
 const LegacyCommonLayout = props => {

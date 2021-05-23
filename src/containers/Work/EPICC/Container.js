@@ -1,10 +1,10 @@
 import React from 'react';
-import { Paragraph } from 'gg-components/Paragraph';
-import { Image } from 'gg-components/Image';
-import { Subsection } from 'gg-components/Subsection';
+import { Paragraph } from '@george-gillams/components/Paragraph';
+import { Image } from '@george-gillams/components/Image';
+import { Subsection } from '@george-gillams/components/Subsection';
 import TextLink from 'components/common/TextLink';
 import PageTitle from 'components/common/PageTitle';
-import { cssModules } from 'gg-components/helpers/cssModules';
+import { cssModules } from '@george-gillams/components/helpers/cssModules';
 
 import screenshot1 from './images/1.png';
 import screenshot2 from './images/2.png';

@@ -1,14 +1,14 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import { withScroll, cleanRestScrollProps } from 'gg-components/ScrollContainer';
-import { Image } from 'gg-components/Image';
-import { Paragraph } from 'gg-components/Paragraph';
-import { Section } from 'gg-components/Section';
+import { withScroll, cleanRestScrollProps } from '@george-gillams/components/ScrollContainer';
+import { Image } from '@george-gillams/components/Image';
+import { Paragraph } from '@george-gillams/components/Paragraph';
+import { Section } from '@george-gillams/components/Section';
 import TextLink from 'components/common/TextLink';
 import STYLES from './life-section.scss';
-import { cssModules } from 'gg-components/helpers/cssModules';
-import { useEntryAnimationClientOnly } from 'gg-components/ServerSideRendering';
+import { cssModules } from '@george-gillams/components/helpers/cssModules';
+import { useEntryAnimationClientOnly } from '@george-gillams/components/ServerSideRendering';
 import travel from './images/travel.jpg';
 import cat from './images/cat.jpg';
 

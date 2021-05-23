@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 import SlidingPhone from './SlidingPhone';
 import STYLES from './phones.scss';
-import { cssModules } from 'gg-components/helpers/cssModules';
+import { cssModules } from '@george-gillams/components/helpers/cssModules';
 
 import light0 from './images/light0.png';
 import light1 from './images/light1.png';

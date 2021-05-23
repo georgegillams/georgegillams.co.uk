@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Notification } from 'gg-components/Notification';
+import { Notification } from '@george-gillams/components/Notification';
 import DebugObject from 'components/common/DebugObject';
 
 const AnalyticEntity = props => {

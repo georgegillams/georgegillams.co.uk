@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import TextLink from 'components/common/TextLink';
 import PageTitle from 'components/common/PageTitle';
 import { DebugObject } from 'components/common/DebugObject';
-import { LoadingCover } from 'gg-components/LoadingCover';
+import { LoadingCover } from '@george-gillams/components/LoadingCover';
 
 import Skeleton from './Skeleton';
 
@@ -12,7 +12,7 @@ import { SignUpForm } from 'components/common/Forms';
 import CookiesRequired from 'containers/common/CookiesRequired';
 import { CONSENT_STATE_ALLOWED } from 'containers/common/Consent/constants';
 import STYLES from './sign-up.scss';
-import { cssModules } from 'gg-components/helpers/cssModules';
+import { cssModules } from '@george-gillams/components/helpers/cssModules';
 
 const getClassName = cssModules(STYLES);
 
