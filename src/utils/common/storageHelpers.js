@@ -1,4 +1,7 @@
-import { POST_LOGIN_REDIRECT_LOCATION_KEY, PRIVACY_PREFERENCES_KEY } from 'helpers/storageConstants';
+import {
+  POST_LOGIN_REDIRECT_LOCATION_KEY,
+  PRIVACY_PREFERENCES_KEY,
+} from '@george-gillams/webapp/helpers/storageConstants';
 
 const setPostLoginRedirect = location => {
   localStorage.setItem(POST_LOGIN_REDIRECT_LOCATION_KEY, location);

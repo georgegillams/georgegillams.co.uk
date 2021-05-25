@@ -2,7 +2,7 @@
 
 import create from './create.js';
 
-import { SESSION_COOKIE_KEY } from 'helpers/storageConstants';
+import { SESSION_COOKIE_KEY } from '@george-gillams/webapp/helpers/storageConstants';
 import { dbLoad } from 'server-utils/common/database';
 import { AuthError } from 'server-utils/common/errors';
 import { clearDatabaseCollection, createUsersWithSessions } from 'server-utils/common/testUtils';

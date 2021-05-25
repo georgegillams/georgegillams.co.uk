@@ -5,7 +5,7 @@ import {
   STRING_REGEX,
   ID_REGEX,
   REDIRECT_REGEX,
-} from 'helpers/regexConstants';
+} from '@george-gillams/webapp/helpers/regexConstants';
 
 const usersAllowedAttributes = [
   { attribute: 'name', pattern: STRING_REGEX },

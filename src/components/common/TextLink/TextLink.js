@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { TextLink as GGTextLink } from '@george-gillams/components/TextLink';
 import Link from 'next/link';
-import nextifyHref from 'client-utils/nextifyHref';
+import nextifyHref from '@george-gillams/webapp/utils/nextifyHref';
 
 const TextLink = props => {
   const { href, hrefExternal, ...rest } = props;

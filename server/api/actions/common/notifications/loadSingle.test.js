@@ -2,7 +2,7 @@
 
 import loadSingle from './loadSingle.js';
 
-import { SESSION_COOKIE_KEY } from 'helpers/storageConstants';
+import { SESSION_COOKIE_KEY } from '@george-gillams/webapp/helpers/storageConstants';
 import { dbCreate } from 'server-utils/common/database';
 import { NotFoundError } from 'server-utils/common/errors';
 import { clearDatabaseCollection, createUsersWithSessions } from 'server-utils/common/testUtils';

@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 
-import { SESSION_COOKIE_KEY } from 'helpers/storageConstants';
+import { SESSION_COOKIE_KEY } from '@george-gillams/webapp/helpers/storageConstants';
 import load from './load.js';
 
 import { dbCreate } from 'server-utils/common/database';

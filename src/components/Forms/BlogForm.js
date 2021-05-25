@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { FormBuilder } from '@george-gillams/components/FormBuilder';
 
-import { STRING_REGEX, ID_REGEX, ANYTHING_REGEX } from 'helpers/regexConstants';
+import { STRING_REGEX, ID_REGEX, ANYTHING_REGEX } from '@george-gillams/webapp/helpers/regexConstants';
 
 const BlogForm = props => {
   const { className, blog, ...rest } = props;

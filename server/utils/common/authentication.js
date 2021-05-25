@@ -3,7 +3,7 @@ import safeCompare from 'safe-compare';
 import { find } from './find';
 
 import { dbLoad } from 'server-utils/common/database';
-import { SESSION_COOKIE_KEY } from 'helpers/storageConstants';
+import { SESSION_COOKIE_KEY } from '@george-gillams/webapp/helpers/storageConstants';
 
 const secretApiKey = process.env.SECRET_API_KEY;
 

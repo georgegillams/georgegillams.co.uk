@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { FormBuilder } from '@george-gillams/components/FormBuilder';
 
-import { ANYTHING_REGEX } from 'helpers/regexConstants';
+import { ANYTHING_REGEX } from '@george-gillams/webapp/helpers/regexConstants';
 
 const SupportForm = props => {
   const { className, link, ...rest } = props;

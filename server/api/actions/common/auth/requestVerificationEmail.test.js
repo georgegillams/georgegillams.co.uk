@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 
-import { SESSION_COOKIE_KEY } from 'helpers/storageConstants';
+import { SESSION_COOKIE_KEY } from '@george-gillams/webapp/helpers/storageConstants';
 import requestVerificationEmail from './requestVerificationEmail.js';
 
 import { clearDatabaseCollection, createUsersWithSessions } from 'server-utils/common/testUtils';

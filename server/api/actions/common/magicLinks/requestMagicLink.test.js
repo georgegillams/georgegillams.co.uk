@@ -5,7 +5,7 @@ import requestMagicLink from './requestMagicLink.js';
 import { dbLoad } from 'server-utils/common/database';
 import { AuthError, NotFoundError } from 'server-utils/common/errors';
 import { clearDatabaseCollection, createUsersWithSessions } from 'server-utils/common/testUtils';
-import { SESSION_COOKIE_KEY } from 'helpers/storageConstants';
+import { SESSION_COOKIE_KEY } from '@george-gillams/webapp/helpers/storageConstants';
 
 beforeEach(() => {
   clearDatabaseCollection('users');
