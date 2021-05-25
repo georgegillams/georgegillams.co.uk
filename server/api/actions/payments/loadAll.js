@@ -4,7 +4,7 @@ import { dbLoad } from 'server-utils/common/database';
 import authentication from 'server-utils/common/authentication';
 import reqSecure from 'server-utils/common/reqSecure';
 import { UNAUTHORISED_READ } from 'server-utils/common/errorConstants';
-import { associate } from 'helpers/common/objects';
+import { associate } from '@george-gillams/webapp/helpers/objects';
 
 export default function loadAll(req) {
   reqSecure(req, paymentsAllowedAttributes);

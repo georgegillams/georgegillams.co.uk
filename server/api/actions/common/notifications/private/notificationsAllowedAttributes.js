@@ -1,4 +1,4 @@
-import { MD_COMPLETE_REGEX, STRING_REGEX } from 'helpers/regexConstants';
+import { MD_COMPLETE_REGEX, STRING_REGEX } from '@george-gillams/webapp/helpers/regexConstants';
 
 const notificationsAllowedAttributes = [
   { attribute: 'type', pattern: STRING_REGEX },

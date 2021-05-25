@@ -8,7 +8,7 @@ import { DebugObject } from '@george-gillams/components/DebugObject';
 
 import STYLES from './style.scss';
 
-import { getTimeDifference } from 'helpers/common/time';
+import { getTimeDifference } from '@george-gillams/webapp/helpers/time';
 
 const getClassName = cssModules(STYLES);
 

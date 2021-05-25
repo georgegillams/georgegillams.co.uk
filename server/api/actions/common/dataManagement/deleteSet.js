@@ -1,4 +1,4 @@
-import { STRING_REGEX } from 'helpers/regexConstants';
+import { STRING_REGEX } from '@george-gillams/webapp/helpers/regexConstants';
 import appConfig from 'helpers/appConfig';
 import { UNAUTHORISED_WRITE } from 'server-utils/common/errorConstants';
 import redis from 'server-utils/common/redis';

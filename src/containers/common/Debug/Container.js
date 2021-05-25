@@ -5,7 +5,10 @@ import { Paragraph } from '@george-gillams/components/Paragraph';
 import PageTitle from 'components/common/PageTitle';
 import STYLES from './debug.scss';
 import { cssModules } from '@george-gillams/components/helpers/cssModules';
-import { DEBUG_SHOW_PAGE_CONTAINER_KEY, DEBUG_SHOW_DEBUG_INFORMATION_KEY } from 'helpers/storageConstants';
+import {
+  DEBUG_SHOW_PAGE_CONTAINER_KEY,
+  DEBUG_SHOW_DEBUG_INFORMATION_KEY,
+} from '@george-gillams/webapp/helpers/storageConstants';
 
 const getClassName = cssModules(STYLES);
 

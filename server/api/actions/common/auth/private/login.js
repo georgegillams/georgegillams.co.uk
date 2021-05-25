@@ -2,7 +2,7 @@ import { dbCreate } from 'server-utils/common/database';
 import lockPromise from 'server-utils/common/lock';
 import { generateKey } from 'server-utils/common/hash';
 import setContentLastUpdatedTimestamp from 'server-utils/common/setContentLastUpdatedTimestamp';
-import { COOKIE_EXPIRY_TIME } from 'helpers/storageConstants';
+import { COOKIE_EXPIRY_TIME } from '@george-gillams/webapp/helpers/storageConstants';
 
 /**
  * Creates a new session and assigns the user to it
