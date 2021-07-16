@@ -1,5 +1,5 @@
-import { SESSION_COOKIE_KEY } from 'helpers/storageConstants';
-import { INT_REGEX, ID_REGEX, PASSWORD_REGEX, ANYTHING_REGEX } from 'helpers/regexConstants';
+import { SESSION_COOKIE_KEY } from '@george-gillams/webapp/helpers/storageConstants';
+import { INT_REGEX, ID_REGEX, PASSWORD_REGEX, ANYTHING_REGEX } from '@george-gillams/webapp/helpers/regexConstants';
 
 const standardAttributes = [
   { attribute: 'deleted', pattern: 'BOOL' },

@@ -2,7 +2,7 @@
 
 import updateBlog from './update.js';
 
-import { SESSION_COOKIE_KEY } from 'helpers/storageConstants';
+import { SESSION_COOKIE_KEY } from '@george-gillams/webapp/helpers/storageConstants';
 import { dbCreate, dbLoad } from 'server-utils/common/database';
 import { AuthError, NotFoundError } from 'server-utils/common/errors';
 import { clearDatabaseCollection, createUsersWithSessions } from 'server-utils/common/testUtils';

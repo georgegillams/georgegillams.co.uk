@@ -1,4 +1,9 @@
-import { USERNAME_REGEX, EMAIL_REGEX, PASSWORD_REGEX, STRING_REGEX } from 'helpers/regexConstants';
+import {
+  USERNAME_REGEX,
+  EMAIL_REGEX,
+  PASSWORD_REGEX,
+  STRING_REGEX,
+} from '@george-gillams/webapp/helpers/regexConstants';
 
 const usersAllowedAttributes = [
   { attribute: 'name', pattern: STRING_REGEX },

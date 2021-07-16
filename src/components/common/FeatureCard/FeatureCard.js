@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { FeatureCard as GGFeatureCard, FEATURE_CARD_LAYOUTS } from '@george-gillams/components/FeatureCard';
-import nextifyHref from 'client-utils/nextifyHref';
+import nextifyHref from '@george-gillams/webapp/utils/nextifyHref';
 import Link from 'next/link';
 
 const FeatureCard = props => {

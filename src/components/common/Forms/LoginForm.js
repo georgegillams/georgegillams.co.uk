@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { FormBuilder } from '@george-gillams/components/FormBuilder';
 
-import { EMAIL_REGEX } from 'helpers/regexConstants';
+import { EMAIL_REGEX } from '@george-gillams/webapp/helpers/regexConstants';
 
 const LoginForm = props => {
   const { credentials, onDataChanged, ...rest } = props;

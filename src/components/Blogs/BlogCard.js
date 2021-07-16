@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import FeatureCard from 'components/common/FeatureCard';
 import { Tag } from '@george-gillams/components/Tag';
 
-import { NON_EMOJI_REGEX } from 'helpers/regexConstants';
+import { NON_EMOJI_REGEX } from '@george-gillams/webapp/helpers/regexConstants';
 
 const BlogCard = props => {
   const { blog, linkPrefix, ...rest } = props;

@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Button as GGButton } from '@george-gillams/components/Button';
-import nextifyHref from 'client-utils/nextifyHref';
+import nextifyHref from '@george-gillams/webapp/utils/nextifyHref';
 import Link from 'next/link';
 
 const Button = props => {
