@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import { cssModules } from '@george-gillams/components/helpers/cssModules';
 
 import STYLES from './page-container.scss';
-import { DEBUG_SHOW_PAGE_CONTAINER_KEY } from 'helpers/storageConstants';
+import { DEBUG_SHOW_PAGE_CONTAINER_KEY } from '@george-gillams/webapp/helpers/storageConstants';
 
 export const LAYOUT_STYLES = {
   default: 'default',

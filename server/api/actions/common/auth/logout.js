@@ -1,5 +1,5 @@
 import authAllowedAttributes from './private/authAllowedAttributes';
-import { SESSION_COOKIE_KEY } from 'helpers/storageConstants';
+import { SESSION_COOKIE_KEY } from '@george-gillams/webapp/helpers/storageConstants';
 
 import { dbLoad, dbUpdate } from 'server-utils/common/database';
 import { INVALID_SESSION } from 'server-utils/common/errorConstants';

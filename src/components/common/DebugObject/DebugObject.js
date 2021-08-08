@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
 import Loadable from 'react-loadable';
 
-import { DEBUG_SHOW_DEBUG_INFORMATION_KEY } from 'helpers/storageConstants';
+import { DEBUG_SHOW_DEBUG_INFORMATION_KEY } from '@george-gillams/webapp/helpers/storageConstants';
 
 const Loading = () => <div />;
 const LoadableGGDebugObject = Loadable({

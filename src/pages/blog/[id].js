@@ -6,7 +6,7 @@ import BlogRenderer from 'containers/BlogRenderer';
 import LegacyCommonLayout, { LAYOUT_STYLES } from 'components/common/LegacyCommonLayout';
 import apiStructure from 'helpers/common/apiStructure';
 import FourOhFourPage from '../404';
-import { SESSION_COOKIE_KEY } from 'helpers/storageConstants';
+import { SESSION_COOKIE_KEY } from '@george-gillams/webapp/helpers/storageConstants';
 
 const Page = props => {
   const { is404, ...rest } = props;

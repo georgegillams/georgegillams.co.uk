@@ -1,8 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Card as GGCard } from '@george-gillams/components/Card';
-import HelperFunctions from 'helpers/common/HelperFunctions';
-import nextifyHref from 'client-utils/nextifyHref';
+import HelperFunctions from '@george-gillams/webapp/helpers/HelperFunctions';
+import nextifyHref from '@george-gillams/webapp/utils/nextifyHref';
 import Link from 'next/link';
 
 const Card = props => {

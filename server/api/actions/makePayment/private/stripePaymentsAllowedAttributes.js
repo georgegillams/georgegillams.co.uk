@@ -1,4 +1,4 @@
-import { ID_REGEX, INT_REGEX, PASSWORD_REGEX } from 'helpers/regexConstants';
+import { ID_REGEX, INT_REGEX, PASSWORD_REGEX } from '@george-gillams/webapp/helpers/regexConstants';
 
 const commentsAllowedAttributes = [
   { attribute: 'paymentToken', pattern: PASSWORD_REGEX },
