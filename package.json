@@ -21,6 +21,7 @@
     "build:replace-paths:mac": "find build -name \"*.js\" -exec sed -i '.bak' 's/require(\"\\/.*\\/node_modules\\//require(\"/g' {} \\;",
     "build:replace-paths": "if [[ \"$OSTYPE\" == \"darwin\"* ]]; then npm run build:replace-paths:mac; else npm run build:replace-paths:linux; fi;",
     "build": "BUILT_AT=$( date -u +%s ) npm run build:client && npm run build:shared && npm run build:server && npm run build:replace-paths",
+    "build:for-deploy": "npm run build && mkdir -p deploy && mv build deploy/ && cp package* deploy/ && cp next.config.js deploy/ && cp -R config deploy/",
     "build:test": "cross-env PORT=9001 PROJECT_UNDER_TEST=true npm run build",
     "start": "npm run link-helpers:clean && cross-env STARTED_AT=$( date -u +%s ) NODE_ENV=production node ./build/server/app.js",
     "start:test": "cross-env PORT=9001 PROJECT_UNDER_TEST=true npm run start",
@@ -97,7 +98,9 @@
     "safe-compare": "^1.1.4",
     "signale": "^1.4.0",
     "stripe": "^8.126.0",
-    "wget-improved": "^3.2.1"
+    "webpack": "^4.44.1",
+    "wget-improved": "^3.2.1",
+    "whatwg-fetch": "^3.5.0"
   },
   "devDependencies": {
     "@babel/cli": "^7.12.7",
@@ -138,8 +141,6 @@
     "sass-loader": "^10.0.5",
     "style-loader": "^2.0.0",
     "stylelint": "^13.8.0",
-    "stylelint-config-skyscanner": "^3.0.3",
-    "webpack": "^4.44.1",
-    "whatwg-fetch": "^3.5.0"
+    "stylelint-config-skyscanner": "^3.0.3"
   }
 }
