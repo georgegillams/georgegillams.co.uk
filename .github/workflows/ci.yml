@@ -78,11 +78,12 @@ jobs:
         run: PUPPETEER_SKIP_CHROMIUM_DOWNLOAD=true npm ci
 
       - name: build
-        run: npm run build
+        run: npm run build:for-deploy
 
       - name: deploy
         run: |
-          zip -r build build
+          zipFileName="storybook-$(date +%s)"
+          zip -r $zipFileName deploy
           echo "${{ secrets.EC2_RSA }}" > ./identityFile.txt
           chmod 400 ./identityFile.txt
-          scp -o "StrictHostKeyChecking=no" -i ./identityFile.txt -r ./build.zip ubuntu@ec2-35-178-235-11.eu-west-2.compute.amazonaws.com:/home/ubuntu/georgegillams.co.uk/
+          scp -o "StrictHostKeyChecking=no" -i ./identityFile.txt -r ./$zipFileName.zip ubuntu@ec2-35-178-235-11.eu-west-2.compute.amazonaws.com:/home/ubuntu/neo
