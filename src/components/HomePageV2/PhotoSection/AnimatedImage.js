@@ -24,10 +24,10 @@ const AnimatedImage = props => {
         imgProps={{
           alt: 'Me',
         }}
-        aspectX={3829}
-        aspectY={2872}
-        lightSrc="https://i.imgur.com/FLA0jkg.jpg"
-        darkSrc="https://i.imgur.com/FLA0jkg.jpg"
+        aspectX={4667}
+        aspectY={3304}
+        lightSrc="https://i.imgur.com/L0Rm1ZC.jpg"
+        darkSrc="https://i.imgur.com/L0Rm1ZC.jpg"
       />
     </div>
   );

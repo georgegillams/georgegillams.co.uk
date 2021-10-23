@@ -21,17 +21,13 @@ const WorkSection = props => {
       <div className={getClassName('work-section__content')}>
         <Section name="Work">
           <Paragraph className={getClassName('work-section__paragraph')}>
-            I work on{' '}
-            <TextLink hrefExternal href="https://backpack.github.io">
-              Backpack
-            </TextLink>{' '}
-            for iOS and React at{' '}
-            <TextLink hrefExternal href="https://www.skyscanner.net">
-              Skyscanner
+            I&#39;m a web developer at{' '}
+            <TextLink hrefExternal href="https://typeform.com/">
+              Typeform
             </TextLink>{' '}
             .
             <br />
-            I’m also an accessibility champion.
+            I’m also an accessibility champion and design system enthusiast.
             <br />
             <TextLink href="/work">Learn more about my work</TextLink>
           </Paragraph>
