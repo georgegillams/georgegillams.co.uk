@@ -86,23 +86,23 @@ exports[`<BlogList /> should render correctly - index 1`] = `
         Copyright
       </h3>
       <span
-        class="paragraph"
+        class="sc-dkzDqf fKpeRn"
       >
         Most of my photos are licensed under
          
         <a
           aria-label="Creative Commons BY-SA 3.0 (opens in a new tab)"
-          class="text-link text-link--text-link text-link--no-padding text-link--inline"
+          class="sc-jqUVSM ehmyNV"
           href="https://creativecommons.org/licenses/by-sa/3.0/"
           rel="noopener noreferrer"
           target="_blank"
         >
           Creative Commons BY-SA 3.0
           <div
-            class="text-link__icon-container"
+            class="sc-kDDrLX ffjHhF"
           >
             <svg
-              class="icon text-link__icon"
+              class="sc-papXJ hertKB sc-iqcoie iOIaxE"
               height="18"
               viewBox="0 0 24 24"
               width="18"
@@ -118,7 +118,7 @@ exports[`<BlogList /> should render correctly - index 1`] = `
         <br />
         If you are unsure about your right to use them please 
         <a
-          class="text-link text-link--text-link text-link--no-padding text-link--inline"
+          class="sc-jqUVSM ehmyNV"
           href="/contact"
         >
           contact me
@@ -374,10 +374,11 @@ exports[`<BlogList /> should render correctly authenticated with blogs 1`] = `
                 class="feature-card__children"
               >
                 <div
-                  class="tag__outer"
+                  class="sc-crXcEl"
                 >
                   <span
-                    class="tag tag--travel"
+                    class="sc-evZas dtgTOu"
+                    type="travel"
                   >
                     Travel
                   </span>
@@ -516,10 +517,11 @@ exports[`<BlogList /> should render correctly authenticated with blogs 1`] = `
                 class="feature-card__children"
               >
                 <div
-                  class="tag__outer"
+                  class="sc-crXcEl"
                 >
                   <span
-                    class="tag tag--travel"
+                    class="sc-evZas dtgTOu"
+                    type="travel"
                   >
                     Travel
                   </span>
@@ -594,23 +596,23 @@ exports[`<BlogList /> should render correctly authenticated with blogs 1`] = `
         Copyright
       </h3>
       <span
-        class="paragraph"
+        class="sc-dkzDqf fKpeRn"
       >
         Most of my photos are licensed under
          
         <a
           aria-label="Creative Commons BY-SA 3.0 (opens in a new tab)"
-          class="text-link text-link--text-link text-link--no-padding text-link--inline"
+          class="sc-jqUVSM ehmyNV"
           href="https://creativecommons.org/licenses/by-sa/3.0/"
           rel="noopener noreferrer"
           target="_blank"
         >
           Creative Commons BY-SA 3.0
           <div
-            class="text-link__icon-container"
+            class="sc-kDDrLX ffjHhF"
           >
             <svg
-              class="icon text-link__icon"
+              class="sc-papXJ hertKB sc-iqcoie iOIaxE"
               height="18"
               viewBox="0 0 24 24"
               width="18"
@@ -626,7 +628,7 @@ exports[`<BlogList /> should render correctly authenticated with blogs 1`] = `
         <br />
         If you are unsure about your right to use them please 
         <a
-          class="text-link text-link--text-link text-link--no-padding text-link--inline"
+          class="sc-jqUVSM ehmyNV"
           href="/contact"
         >
           contact me
@@ -734,23 +736,23 @@ exports[`<BlogList /> should render correctly with blog load error 1`] = `
         Copyright
       </h3>
       <span
-        class="paragraph"
+        class="sc-dkzDqf fKpeRn"
       >
         Most of my photos are licensed under
          
         <a
           aria-label="Creative Commons BY-SA 3.0 (opens in a new tab)"
-          class="text-link text-link--text-link text-link--no-padding text-link--inline"
+          class="sc-jqUVSM ehmyNV"
           href="https://creativecommons.org/licenses/by-sa/3.0/"
           rel="noopener noreferrer"
           target="_blank"
         >
           Creative Commons BY-SA 3.0
           <div
-            class="text-link__icon-container"
+            class="sc-kDDrLX ffjHhF"
           >
             <svg
-              class="icon text-link__icon"
+              class="sc-papXJ hertKB sc-iqcoie iOIaxE"
               height="18"
               viewBox="0 0 24 24"
               width="18"
@@ -766,7 +768,7 @@ exports[`<BlogList /> should render correctly with blog load error 1`] = `
         <br />
         If you are unsure about your right to use them please 
         <a
-          class="text-link text-link--text-link text-link--no-padding text-link--inline"
+          class="sc-jqUVSM ehmyNV"
           href="/contact"
         >
           contact me
@@ -973,10 +975,11 @@ exports[`<BlogList /> should render correctly with blogs 1`] = `
                 class="feature-card__children"
               >
                 <div
-                  class="tag__outer"
+                  class="sc-crXcEl"
                 >
                   <span
-                    class="tag tag--travel"
+                    class="sc-evZas dtgTOu"
+                    type="travel"
                   >
                     Travel
                   </span>
@@ -1105,10 +1108,11 @@ exports[`<BlogList /> should render correctly with blogs 1`] = `
                 class="feature-card__children"
               >
                 <div
-                  class="tag__outer"
+                  class="sc-crXcEl"
                 >
                   <span
-                    class="tag tag--travel"
+                    class="sc-evZas dtgTOu"
+                    type="travel"
                   >
                     Travel
                   </span>
@@ -1172,23 +1176,23 @@ exports[`<BlogList /> should render correctly with blogs 1`] = `
         Copyright
       </h3>
       <span
-        class="paragraph"
+        class="sc-dkzDqf fKpeRn"
       >
         Most of my photos are licensed under
          
         <a
           aria-label="Creative Commons BY-SA 3.0 (opens in a new tab)"
-          class="text-link text-link--text-link text-link--no-padding text-link--inline"
+          class="sc-jqUVSM ehmyNV"
           href="https://creativecommons.org/licenses/by-sa/3.0/"
           rel="noopener noreferrer"
           target="_blank"
         >
           Creative Commons BY-SA 3.0
           <div
-            class="text-link__icon-container"
+            class="sc-kDDrLX ffjHhF"
           >
             <svg
-              class="icon text-link__icon"
+              class="sc-papXJ hertKB sc-iqcoie iOIaxE"
               height="18"
               viewBox="0 0 24 24"
               width="18"
@@ -1204,7 +1208,7 @@ exports[`<BlogList /> should render correctly with blogs 1`] = `
         <br />
         If you are unsure about your right to use them please 
         <a
-          class="text-link text-link--text-link text-link--no-padding text-link--inline"
+          class="sc-jqUVSM ehmyNV"
           href="/contact"
         >
           contact me
@@ -1302,23 +1306,23 @@ exports[`<BlogList /> should render correctly with initial state 1`] = `
         Copyright
       </h3>
       <span
-        class="paragraph"
+        class="sc-dkzDqf fKpeRn"
       >
         Most of my photos are licensed under
          
         <a
           aria-label="Creative Commons BY-SA 3.0 (opens in a new tab)"
-          class="text-link text-link--text-link text-link--no-padding text-link--inline"
+          class="sc-jqUVSM ehmyNV"
           href="https://creativecommons.org/licenses/by-sa/3.0/"
           rel="noopener noreferrer"
           target="_blank"
         >
           Creative Commons BY-SA 3.0
           <div
-            class="text-link__icon-container"
+            class="sc-kDDrLX ffjHhF"
           >
             <svg
-              class="icon text-link__icon"
+              class="sc-papXJ hertKB sc-iqcoie iOIaxE"
               height="18"
               viewBox="0 0 24 24"
               width="18"
@@ -1334,7 +1338,7 @@ exports[`<BlogList /> should render correctly with initial state 1`] = `
         <br />
         If you are unsure about your right to use them please 
         <a
-          class="text-link text-link--text-link text-link--no-padding text-link--inline"
+          class="sc-jqUVSM ehmyNV"
           href="/contact"
         >
           contact me
@@ -1541,10 +1545,11 @@ exports[`<BlogList /> should render correctly with ssrBlogs 1`] = `
                 class="feature-card__children"
               >
                 <div
-                  class="tag__outer"
+                  class="sc-crXcEl"
                 >
                   <span
-                    class="tag tag--travel"
+                    class="sc-evZas dtgTOu"
+                    type="travel"
                   >
                     Travel
                   </span>
@@ -1673,10 +1678,11 @@ exports[`<BlogList /> should render correctly with ssrBlogs 1`] = `
                 class="feature-card__children"
               >
                 <div
-                  class="tag__outer"
+                  class="sc-crXcEl"
                 >
                   <span
-                    class="tag tag--travel"
+                    class="sc-evZas dtgTOu"
+                    type="travel"
                   >
                     Travel
                   </span>
@@ -1740,23 +1746,23 @@ exports[`<BlogList /> should render correctly with ssrBlogs 1`] = `
         Copyright
       </h3>
       <span
-        class="paragraph"
+        class="sc-dkzDqf fKpeRn"
       >
         Most of my photos are licensed under
          
         <a
           aria-label="Creative Commons BY-SA 3.0 (opens in a new tab)"
-          class="text-link text-link--text-link text-link--no-padding text-link--inline"
+          class="sc-jqUVSM ehmyNV"
           href="https://creativecommons.org/licenses/by-sa/3.0/"
           rel="noopener noreferrer"
           target="_blank"
         >
           Creative Commons BY-SA 3.0
           <div
-            class="text-link__icon-container"
+            class="sc-kDDrLX ffjHhF"
           >
             <svg
-              class="icon text-link__icon"
+              class="sc-papXJ hertKB sc-iqcoie iOIaxE"
               height="18"
               viewBox="0 0 24 24"
               width="18"
@@ -1772,7 +1778,7 @@ exports[`<BlogList /> should render correctly with ssrBlogs 1`] = `
         <br />
         If you are unsure about your right to use them please 
         <a
-          class="text-link text-link--text-link text-link--no-padding text-link--inline"
+          class="sc-jqUVSM ehmyNV"
           href="/contact"
         >
           contact me

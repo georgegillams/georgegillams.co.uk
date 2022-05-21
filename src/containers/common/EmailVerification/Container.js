@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import PropTypes from 'prop-types';
 import PageTitle from 'components/common/PageTitle';
-import { DebugObject } from 'components/common/DebugObject';
-import { Paragraph } from '@george-gillams/components/Paragraph';
+import DebugObject from 'components/common/DebugObject';
+import Paragraph from '@george-gillams/components/paragraph';
 import ErrorDisplay from 'components/common/ErrorDisplay';
 
 import { withRouter } from 'next/router';

@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { SectionSkeleton, CompactCardSkeleton } from '@george-gillams/components/Skeletons';
+import { SectionSkeleton, CompactCardSkeleton } from '@george-gillams/components/skeleton';
 
 const Skeleton = props => {
   const { className } = props;

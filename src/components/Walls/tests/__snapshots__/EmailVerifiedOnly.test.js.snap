@@ -12,7 +12,7 @@ exports[`<EmailVerifiedOnly /> Should render correctly 1`] = `
       You need to verify your email before completing this step.
     </h2>
     <a
-      class="text-link text-link--text-link text-link--no-padding text-link--inline"
+      class="sc-ftvSup bvTsjB"
       href="/account"
     >
       Account
@@ -33,7 +33,7 @@ exports[`<EmailVerifiedOnly /> Should render correctly with user 1`] = `
       You need to verify your email before completing this step.
     </h2>
     <a
-      class="text-link text-link--text-link text-link--no-padding text-link--inline"
+      class="sc-ftvSup bvTsjB"
       href="/account"
     >
       Account

@@ -39,7 +39,7 @@ exports[`<EmailVerification /> should render correctly with user 1`] = `
       Email confirmed
     </h1>
     <span
-      class="paragraph"
+      class="sc-jqUVSM iuHAUr"
     >
       Thank you for confirming your email address
     </span>
@@ -58,10 +58,10 @@ exports[`<EmailVerification /> should render correctly with verifyError 1`] = `
       Confirming email
     </h1>
     <span
-      class="paragraph"
+      class="sc-jqUVSM iuHAUr"
     >
       <span
-        class="error"
+        class="sc-kDDrLX BHeVQ"
       >
         Something went wrong whilst confirming your email
         <br />

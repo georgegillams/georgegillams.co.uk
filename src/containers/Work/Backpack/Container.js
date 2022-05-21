@@ -1,7 +1,7 @@
 import React from 'react';
-import { Paragraph } from '@george-gillams/components/Paragraph';
-import { Subsection } from '@george-gillams/components/Subsection';
-import { Image } from '@george-gillams/components/Image';
+import Paragraph from '@george-gillams/components/paragraph';
+import Subsection from '@george-gillams/components/subsection';
+import Image from '@george-gillams/components/image';
 import TextLink from 'components/common/TextLink';
 import PageTitle from 'components/common/PageTitle';
 import backpackOfferingDark from './images/backpackOfferingDark.png';

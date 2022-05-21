@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { FormBuilder } from '@george-gillams/components/FormBuilder';
+import FormBuilder from '@george-gillams/components/form-builder';
 
 import { EMAIL_REGEX, USERNAME_REGEX, NAME_REGEX } from '@george-gillams/webapp/helpers/regexConstants';
 

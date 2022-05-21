@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
-import { Button } from '@george-gillams/components/Button';
-import { Paragraph } from '@george-gillams/components/Paragraph';
-import { Subsection } from '@george-gillams/components/Subsection';
+import Button from 'components/common/Button';
+import Paragraph from '@george-gillams/components/paragraph';
+import Subsection from '@george-gillams/components/subsection';
 import { SplitDetailItem } from 'components/common/SplitDetailView';
 import { UserEditForm } from 'components/common/Forms';
 import ErrorDisplay from 'components/common/ErrorDisplay';

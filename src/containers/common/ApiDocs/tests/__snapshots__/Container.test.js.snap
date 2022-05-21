@@ -10,55 +10,55 @@ exports[`<ApiDocs /> should render correctly 1`] = `
   <table
     cellpadding="4"
     cellspacing="4"
-    class="table__table api-docs__table"
+    class="sc-kDDrLX kYoHZQ api-docs__table"
   >
     <thead
-      class="table__head"
+      class="sc-iqcoie bNvTuK"
     >
       <tr
-        class="table__row"
+        class="sc-evZas"
       >
         <th
-          class="table__cell api-docs__cell"
+          class="sc-breuTD KWokR api-docs__cell"
         >
           <span
-            class="paragraph paragraph--no-padding"
+            class="sc-bczRLJ deidno"
           >
             Path
           </span>
         </th>
         <th
-          class="table__cell api-docs__cell"
+          class="sc-breuTD KWokR api-docs__cell"
         >
           <span
-            class="paragraph paragraph--no-padding"
+            class="sc-bczRLJ deidno"
           >
             Method
           </span>
         </th>
         <th
-          class="table__cell api-docs__cell"
+          class="sc-breuTD KWokR api-docs__cell"
         >
           <span
-            class="paragraph paragraph--no-padding"
+            class="sc-bczRLJ deidno"
           >
             Arguments
           </span>
         </th>
         <th
-          class="table__cell api-docs__cell"
+          class="sc-breuTD KWokR api-docs__cell"
         >
           <span
-            class="paragraph paragraph--no-padding"
+            class="sc-bczRLJ deidno"
           >
             Authorisation
           </span>
         </th>
         <th
-          class="table__cell api-docs__cell"
+          class="sc-breuTD KWokR api-docs__cell"
         >
           <span
-            class="paragraph paragraph--no-padding"
+            class="sc-bczRLJ deidno"
           >
             Description
           </span>
@@ -66,27 +66,27 @@ exports[`<ApiDocs /> should render correctly 1`] = `
       </tr>
     </thead>
     <tbody
-      class="table__body"
+      class="sc-crXcEl"
     >
       <tr
-        class="table__row"
+        class="sc-evZas"
       >
         <th
-          class="table__cell api-docs__cell"
+          class="sc-breuTD KWokR api-docs__cell"
         >
           <a
             aria-label="/analytics/create (opens in a new tab)"
-            class="text-link text-link--text-link text-link--no-padding text-link--inline"
+            class="sc-ftvSup bvTsjB"
             href="https://www.georgegillams.co.uk/api/analytics/create"
             rel="noopener noreferrer"
             target="_blank"
           >
             /analytics/create
             <div
-              class="text-link__icon-container"
+              class="sc-papXJ ecwnCf"
             >
               <svg
-                class="icon text-link__icon"
+                class="sc-iBkjds eintev sc-jqUVSM fjeMmK"
                 height="18"
                 viewBox="0 0 24 24"
                 width="18"
@@ -100,59 +100,59 @@ exports[`<ApiDocs /> should render correctly 1`] = `
           </a>
         </th>
         <th
-          class="table__cell api-docs__cell"
+          class="sc-breuTD KWokR api-docs__cell"
         >
           <span
-            class="paragraph paragraph--no-padding api-docs__method"
+            class="sc-bczRLJ deidno api-docs__method"
           >
             POST
           </span>
         </th>
         <th
-          class="table__cell api-docs__cell"
+          class="sc-breuTD KWokR api-docs__cell"
         >
           <span
-            class="paragraph paragraph--no-padding"
+            class="sc-bczRLJ deidno"
           />
         </th>
         <th
-          class="table__cell api-docs__cell"
+          class="sc-breuTD KWokR api-docs__cell"
         >
           <span
-            class="paragraph paragraph--no-padding"
+            class="sc-bczRLJ deidno"
           >
             None
           </span>
         </th>
         <th
-          class="table__cell api-docs__cell"
+          class="sc-breuTD KWokR api-docs__cell"
         >
           <span
-            class="paragraph paragraph--no-padding api-docs__description"
+            class="sc-bczRLJ deidno api-docs__description"
           >
             Registers information about the page navigated to
           </span>
         </th>
       </tr>
       <tr
-        class="table__row"
+        class="sc-evZas"
       >
         <th
-          class="table__cell api-docs__cell"
+          class="sc-breuTD KWokR api-docs__cell"
         >
           <a
             aria-label="/analytics/load-all (opens in a new tab)"
-            class="text-link text-link--text-link text-link--no-padding text-link--inline"
+            class="sc-ftvSup bvTsjB"
             href="https://www.georgegillams.co.uk/api/analytics/load-all"
             rel="noopener noreferrer"
             target="_blank"
           >
             /analytics/load-all
             <div
-              class="text-link__icon-container"
+              class="sc-papXJ ecwnCf"
             >
               <svg
-                class="icon text-link__icon"
+                class="sc-iBkjds eintev sc-jqUVSM fjeMmK"
                 height="18"
                 viewBox="0 0 24 24"
                 width="18"
@@ -166,59 +166,59 @@ exports[`<ApiDocs /> should render correctly 1`] = `
           </a>
         </th>
         <th
-          class="table__cell api-docs__cell"
+          class="sc-breuTD KWokR api-docs__cell"
         >
           <span
-            class="paragraph paragraph--no-padding api-docs__method"
+            class="sc-bczRLJ deidno api-docs__method"
           >
             GET
           </span>
         </th>
         <th
-          class="table__cell api-docs__cell"
+          class="sc-breuTD KWokR api-docs__cell"
         >
           <span
-            class="paragraph paragraph--no-padding"
+            class="sc-bczRLJ deidno"
           />
         </th>
         <th
-          class="table__cell api-docs__cell"
+          class="sc-breuTD KWokR api-docs__cell"
         >
           <span
-            class="paragraph paragraph--no-padding"
+            class="sc-bczRLJ deidno"
           >
             Admin only
           </span>
         </th>
         <th
-          class="table__cell api-docs__cell"
+          class="sc-breuTD KWokR api-docs__cell"
         >
           <span
-            class="paragraph paragraph--no-padding api-docs__description"
+            class="sc-bczRLJ deidno api-docs__description"
           >
             Loads all raw analytic points
           </span>
         </th>
       </tr>
       <tr
-        class="table__row"
+        class="sc-evZas"
       >
         <th
-          class="table__cell api-docs__cell"
+          class="sc-breuTD KWokR api-docs__cell"
         >
           <a
             aria-label="/analytics/load (opens in a new tab)"
-            class="text-link text-link--text-link text-link--no-padding text-link--inline"
+            class="sc-ftvSup bvTsjB"
             href="https://www.georgegillams.co.uk/api/analytics/load"
             rel="noopener noreferrer"
             target="_blank"
           >
             /analytics/load
             <div
-              class="text-link__icon-container"
+              class="sc-papXJ ecwnCf"
             >
               <svg
-                class="icon text-link__icon"
+                class="sc-iBkjds eintev sc-jqUVSM fjeMmK"
                 height="18"
                 viewBox="0 0 24 24"
                 width="18"
@@ -232,59 +232,59 @@ exports[`<ApiDocs /> should render correctly 1`] = `
           </a>
         </th>
         <th
-          class="table__cell api-docs__cell"
+          class="sc-breuTD KWokR api-docs__cell"
         >
           <span
-            class="paragraph paragraph--no-padding api-docs__method"
+            class="sc-bczRLJ deidno api-docs__method"
           >
             GET
           </span>
         </th>
         <th
-          class="table__cell api-docs__cell"
+          class="sc-breuTD KWokR api-docs__cell"
         >
           <span
-            class="paragraph paragraph--no-padding"
+            class="sc-bczRLJ deidno"
           />
         </th>
         <th
-          class="table__cell api-docs__cell"
+          class="sc-breuTD KWokR api-docs__cell"
         >
           <span
-            class="paragraph paragraph--no-padding"
+            class="sc-bczRLJ deidno"
           >
             Admin only
           </span>
         </th>
         <th
-          class="table__cell api-docs__cell"
+          class="sc-breuTD KWokR api-docs__cell"
         >
           <span
-            class="paragraph paragraph--no-padding api-docs__description"
+            class="sc-bczRLJ deidno api-docs__description"
           >
             Loads a summary of unique analytic points
           </span>
         </th>
       </tr>
       <tr
-        class="table__row"
+        class="sc-evZas"
       >
         <th
-          class="table__cell api-docs__cell"
+          class="sc-breuTD KWokR api-docs__cell"
         >
           <a
             aria-label="/auth/load (opens in a new tab)"
-            class="text-link text-link--text-link text-link--no-padding text-link--inline"
+            class="sc-ftvSup bvTsjB"
             href="https://www.georgegillams.co.uk/api/auth/load"
             rel="noopener noreferrer"
             target="_blank"
           >
             /auth/load
             <div
-              class="text-link__icon-container"
+              class="sc-papXJ ecwnCf"
             >
               <svg
-                class="icon text-link__icon"
+                class="sc-iBkjds eintev sc-jqUVSM fjeMmK"
                 height="18"
                 viewBox="0 0 24 24"
                 width="18"
@@ -298,59 +298,59 @@ exports[`<ApiDocs /> should render correctly 1`] = `
           </a>
         </th>
         <th
-          class="table__cell api-docs__cell"
+          class="sc-breuTD KWokR api-docs__cell"
         >
           <span
-            class="paragraph paragraph--no-padding api-docs__method"
+            class="sc-bczRLJ deidno api-docs__method"
           >
             GET
           </span>
         </th>
         <th
-          class="table__cell api-docs__cell"
+          class="sc-breuTD KWokR api-docs__cell"
         >
           <span
-            class="paragraph paragraph--no-padding"
+            class="sc-bczRLJ deidno"
           />
         </th>
         <th
-          class="table__cell api-docs__cell"
+          class="sc-breuTD KWokR api-docs__cell"
         >
           <span
-            class="paragraph paragraph--no-padding"
+            class="sc-bczRLJ deidno"
           >
             None
           </span>
         </th>
         <th
-          class="table__cell api-docs__cell"
+          class="sc-breuTD KWokR api-docs__cell"
         >
           <span
-            class="paragraph paragraph--no-padding api-docs__description"
+            class="sc-bczRLJ deidno api-docs__description"
           >
             Loads the currently authenticated used. Returns null if signed out
           </span>
         </th>
       </tr>
       <tr
-        class="table__row"
+        class="sc-evZas"
       >
         <th
-          class="table__cell api-docs__cell"
+          class="sc-breuTD KWokR api-docs__cell"
         >
           <a
             aria-label="/auth/logout (opens in a new tab)"
-            class="text-link text-link--text-link text-link--no-padding text-link--inline"
+            class="sc-ftvSup bvTsjB"
             href="https://www.georgegillams.co.uk/api/auth/logout"
             rel="noopener noreferrer"
             target="_blank"
           >
             /auth/logout
             <div
-              class="text-link__icon-container"
+              class="sc-papXJ ecwnCf"
             >
               <svg
-                class="icon text-link__icon"
+                class="sc-iBkjds eintev sc-jqUVSM fjeMmK"
                 height="18"
                 viewBox="0 0 24 24"
                 width="18"
@@ -364,59 +364,59 @@ exports[`<ApiDocs /> should render correctly 1`] = `
           </a>
         </th>
         <th
-          class="table__cell api-docs__cell"
+          class="sc-breuTD KWokR api-docs__cell"
         >
           <span
-            class="paragraph paragraph--no-padding api-docs__method"
+            class="sc-bczRLJ deidno api-docs__method"
           >
             POST
           </span>
         </th>
         <th
-          class="table__cell api-docs__cell"
+          class="sc-breuTD KWokR api-docs__cell"
         >
           <span
-            class="paragraph paragraph--no-padding"
+            class="sc-bczRLJ deidno"
           />
         </th>
         <th
-          class="table__cell api-docs__cell"
+          class="sc-breuTD KWokR api-docs__cell"
         >
           <span
-            class="paragraph paragraph--no-padding"
+            class="sc-bczRLJ deidno"
           >
             None
           </span>
         </th>
         <th
-          class="table__cell api-docs__cell"
+          class="sc-breuTD KWokR api-docs__cell"
         >
           <span
-            class="paragraph paragraph--no-padding api-docs__description"
+            class="sc-bczRLJ deidno api-docs__description"
           >
             Logs out the currently authenticated user
           </span>
         </th>
       </tr>
       <tr
-        class="table__row"
+        class="sc-evZas"
       >
         <th
-          class="table__cell api-docs__cell"
+          class="sc-breuTD KWokR api-docs__cell"
         >
           <a
             aria-label="/auth/request-verification-email (opens in a new tab)"
-            class="text-link text-link--text-link text-link--no-padding text-link--inline"
+            class="sc-ftvSup bvTsjB"
             href="https://www.georgegillams.co.uk/api/auth/request-verification-email"
             rel="noopener noreferrer"
             target="_blank"
           >
             /auth/request-verification-email
             <div
-              class="text-link__icon-container"
+              class="sc-papXJ ecwnCf"
             >
               <svg
-                class="icon text-link__icon"
+                class="sc-iBkjds eintev sc-jqUVSM fjeMmK"
                 height="18"
                 viewBox="0 0 24 24"
                 width="18"
@@ -430,59 +430,59 @@ exports[`<ApiDocs /> should render correctly 1`] = `
           </a>
         </th>
         <th
-          class="table__cell api-docs__cell"
+          class="sc-breuTD KWokR api-docs__cell"
         >
           <span
-            class="paragraph paragraph--no-padding api-docs__method"
+            class="sc-bczRLJ deidno api-docs__method"
           >
             POST
           </span>
         </th>
         <th
-          class="table__cell api-docs__cell"
+          class="sc-breuTD KWokR api-docs__cell"
         >
           <span
-            class="paragraph paragraph--no-padding"
+            class="sc-bczRLJ deidno"
           />
         </th>
         <th
-          class="table__cell api-docs__cell"
+          class="sc-breuTD KWokR api-docs__cell"
         >
           <span
-            class="paragraph paragraph--no-padding"
+            class="sc-bczRLJ deidno"
           >
             Any user
           </span>
         </th>
         <th
-          class="table__cell api-docs__cell"
+          class="sc-breuTD KWokR api-docs__cell"
         >
           <span
-            class="paragraph paragraph--no-padding api-docs__description"
+            class="sc-bczRLJ deidno api-docs__description"
           >
             Resends an email verification email
           </span>
         </th>
       </tr>
       <tr
-        class="table__row"
+        class="sc-evZas"
       >
         <th
-          class="table__cell api-docs__cell"
+          class="sc-breuTD KWokR api-docs__cell"
         >
           <a
             aria-label="/auth/verify-email (opens in a new tab)"
-            class="text-link text-link--text-link text-link--no-padding text-link--inline"
+            class="sc-ftvSup bvTsjB"
             href="https://www.georgegillams.co.uk/api/auth/verify-email"
             rel="noopener noreferrer"
             target="_blank"
           >
             /auth/verify-email
             <div
-              class="text-link__icon-container"
+              class="sc-papXJ ecwnCf"
             >
               <svg
-                class="icon text-link__icon"
+                class="sc-iBkjds eintev sc-jqUVSM fjeMmK"
                 height="18"
                 viewBox="0 0 24 24"
                 width="18"
@@ -496,59 +496,59 @@ exports[`<ApiDocs /> should render correctly 1`] = `
           </a>
         </th>
         <th
-          class="table__cell api-docs__cell"
+          class="sc-breuTD KWokR api-docs__cell"
         >
           <span
-            class="paragraph paragraph--no-padding api-docs__method"
+            class="sc-bczRLJ deidno api-docs__method"
           >
             POST
           </span>
         </th>
         <th
-          class="table__cell api-docs__cell"
+          class="sc-breuTD KWokR api-docs__cell"
         >
           <span
-            class="paragraph paragraph--no-padding"
+            class="sc-bczRLJ deidno"
           />
         </th>
         <th
-          class="table__cell api-docs__cell"
+          class="sc-breuTD KWokR api-docs__cell"
         >
           <span
-            class="paragraph paragraph--no-padding"
+            class="sc-bczRLJ deidno"
           >
             None
           </span>
         </th>
         <th
-          class="table__cell api-docs__cell"
+          class="sc-breuTD KWokR api-docs__cell"
         >
           <span
-            class="paragraph paragraph--no-padding api-docs__description"
+            class="sc-bczRLJ deidno api-docs__description"
           >
             Verify an email address with a secret verification key
           </span>
         </th>
       </tr>
       <tr
-        class="table__row"
+        class="sc-evZas"
       >
         <th
-          class="table__cell api-docs__cell"
+          class="sc-breuTD KWokR api-docs__cell"
         >
           <a
             aria-label="/emails/load (opens in a new tab)"
-            class="text-link text-link--text-link text-link--no-padding text-link--inline"
+            class="sc-ftvSup bvTsjB"
             href="https://www.georgegillams.co.uk/api/emails/load"
             rel="noopener noreferrer"
             target="_blank"
           >
             /emails/load
             <div
-              class="text-link__icon-container"
+              class="sc-papXJ ecwnCf"
             >
               <svg
-                class="icon text-link__icon"
+                class="sc-iBkjds eintev sc-jqUVSM fjeMmK"
                 height="18"
                 viewBox="0 0 24 24"
                 width="18"
@@ -562,59 +562,59 @@ exports[`<ApiDocs /> should render correctly 1`] = `
           </a>
         </th>
         <th
-          class="table__cell api-docs__cell"
+          class="sc-breuTD KWokR api-docs__cell"
         >
           <span
-            class="paragraph paragraph--no-padding api-docs__method"
+            class="sc-bczRLJ deidno api-docs__method"
           >
             GET
           </span>
         </th>
         <th
-          class="table__cell api-docs__cell"
+          class="sc-breuTD KWokR api-docs__cell"
         >
           <span
-            class="paragraph paragraph--no-padding"
+            class="sc-bczRLJ deidno"
           />
         </th>
         <th
-          class="table__cell api-docs__cell"
+          class="sc-breuTD KWokR api-docs__cell"
         >
           <span
-            class="paragraph paragraph--no-padding"
+            class="sc-bczRLJ deidno"
           >
             Admin only
           </span>
         </th>
         <th
-          class="table__cell api-docs__cell"
+          class="sc-breuTD KWokR api-docs__cell"
         >
           <span
-            class="paragraph paragraph--no-padding api-docs__description"
+            class="sc-bczRLJ deidno api-docs__description"
           >
             Loads emails that have been sent
           </span>
         </th>
       </tr>
       <tr
-        class="table__row"
+        class="sc-evZas"
       >
         <th
-          class="table__cell api-docs__cell"
+          class="sc-breuTD KWokR api-docs__cell"
         >
           <a
             aria-label="/emails/resend (opens in a new tab)"
-            class="text-link text-link--text-link text-link--no-padding text-link--inline"
+            class="sc-ftvSup bvTsjB"
             href="https://www.georgegillams.co.uk/api/emails/resend"
             rel="noopener noreferrer"
             target="_blank"
           >
             /emails/resend
             <div
-              class="text-link__icon-container"
+              class="sc-papXJ ecwnCf"
             >
               <svg
-                class="icon text-link__icon"
+                class="sc-iBkjds eintev sc-jqUVSM fjeMmK"
                 height="18"
                 viewBox="0 0 24 24"
                 width="18"
@@ -628,59 +628,59 @@ exports[`<ApiDocs /> should render correctly 1`] = `
           </a>
         </th>
         <th
-          class="table__cell api-docs__cell"
+          class="sc-breuTD KWokR api-docs__cell"
         >
           <span
-            class="paragraph paragraph--no-padding api-docs__method"
+            class="sc-bczRLJ deidno api-docs__method"
           >
             POST
           </span>
         </th>
         <th
-          class="table__cell api-docs__cell"
+          class="sc-breuTD KWokR api-docs__cell"
         >
           <span
-            class="paragraph paragraph--no-padding"
+            class="sc-bczRLJ deidno"
           />
         </th>
         <th
-          class="table__cell api-docs__cell"
+          class="sc-breuTD KWokR api-docs__cell"
         >
           <span
-            class="paragraph paragraph--no-padding"
+            class="sc-bczRLJ deidno"
           >
             Admin only
           </span>
         </th>
         <th
-          class="table__cell api-docs__cell"
+          class="sc-breuTD KWokR api-docs__cell"
         >
           <span
-            class="paragraph paragraph--no-padding api-docs__description"
+            class="sc-bczRLJ deidno api-docs__description"
           >
             Resends an email that's stored in the database
           </span>
         </th>
       </tr>
       <tr
-        class="table__row"
+        class="sc-evZas"
       >
         <th
-          class="table__cell api-docs__cell"
+          class="sc-breuTD KWokR api-docs__cell"
         >
           <a
             aria-label="/magic-links/login (opens in a new tab)"
-            class="text-link text-link--text-link text-link--no-padding text-link--inline"
+            class="sc-ftvSup bvTsjB"
             href="https://www.georgegillams.co.uk/api/magic-links/login"
             rel="noopener noreferrer"
             target="_blank"
           >
             /magic-links/login
             <div
-              class="text-link__icon-container"
+              class="sc-papXJ ecwnCf"
             >
               <svg
-                class="icon text-link__icon"
+                class="sc-iBkjds eintev sc-jqUVSM fjeMmK"
                 height="18"
                 viewBox="0 0 24 24"
                 width="18"
@@ -694,59 +694,59 @@ exports[`<ApiDocs /> should render correctly 1`] = `
           </a>
         </th>
         <th
-          class="table__cell api-docs__cell"
+          class="sc-breuTD KWokR api-docs__cell"
         >
           <span
-            class="paragraph paragraph--no-padding api-docs__method"
+            class="sc-bczRLJ deidno api-docs__method"
           >
             POST
           </span>
         </th>
         <th
-          class="table__cell api-docs__cell"
+          class="sc-breuTD KWokR api-docs__cell"
         >
           <span
-            class="paragraph paragraph--no-padding"
+            class="sc-bczRLJ deidno"
           />
         </th>
         <th
-          class="table__cell api-docs__cell"
+          class="sc-breuTD KWokR api-docs__cell"
         >
           <span
-            class="paragraph paragraph--no-padding"
+            class="sc-bczRLJ deidno"
           >
             None
           </span>
         </th>
         <th
-          class="table__cell api-docs__cell"
+          class="sc-breuTD KWokR api-docs__cell"
         >
           <span
-            class="paragraph paragraph--no-padding api-docs__description"
+            class="sc-bczRLJ deidno api-docs__description"
           >
             Login using a secret magic-link key
           </span>
         </th>
       </tr>
       <tr
-        class="table__row"
+        class="sc-evZas"
       >
         <th
-          class="table__cell api-docs__cell"
+          class="sc-breuTD KWokR api-docs__cell"
         >
           <a
             aria-label="/magic-links/request (opens in a new tab)"
-            class="text-link text-link--text-link text-link--no-padding text-link--inline"
+            class="sc-ftvSup bvTsjB"
             href="https://www.georgegillams.co.uk/api/magic-links/request"
             rel="noopener noreferrer"
             target="_blank"
           >
             /magic-links/request
             <div
-              class="text-link__icon-container"
+              class="sc-papXJ ecwnCf"
             >
               <svg
-                class="icon text-link__icon"
+                class="sc-iBkjds eintev sc-jqUVSM fjeMmK"
                 height="18"
                 viewBox="0 0 24 24"
                 width="18"
@@ -760,59 +760,59 @@ exports[`<ApiDocs /> should render correctly 1`] = `
           </a>
         </th>
         <th
-          class="table__cell api-docs__cell"
+          class="sc-breuTD KWokR api-docs__cell"
         >
           <span
-            class="paragraph paragraph--no-padding api-docs__method"
+            class="sc-bczRLJ deidno api-docs__method"
           >
             POST
           </span>
         </th>
         <th
-          class="table__cell api-docs__cell"
+          class="sc-breuTD KWokR api-docs__cell"
         >
           <span
-            class="paragraph paragraph--no-padding"
+            class="sc-bczRLJ deidno"
           />
         </th>
         <th
-          class="table__cell api-docs__cell"
+          class="sc-breuTD KWokR api-docs__cell"
         >
           <span
-            class="paragraph paragraph--no-padding"
+            class="sc-bczRLJ deidno"
           >
             None
           </span>
         </th>
         <th
-          class="table__cell api-docs__cell"
+          class="sc-breuTD KWokR api-docs__cell"
         >
           <span
-            class="paragraph paragraph--no-padding api-docs__description"
+            class="sc-bczRLJ deidno api-docs__description"
           >
             Request a magic link for a given account using the account's email address
           </span>
         </th>
       </tr>
       <tr
-        class="table__row"
+        class="sc-evZas"
       >
         <th
-          class="table__cell api-docs__cell"
+          class="sc-breuTD KWokR api-docs__cell"
         >
           <a
             aria-label="/data-management/backup (opens in a new tab)"
-            class="text-link text-link--text-link text-link--no-padding text-link--inline"
+            class="sc-ftvSup bvTsjB"
             href="https://www.georgegillams.co.uk/api/data-management/backup"
             rel="noopener noreferrer"
             target="_blank"
           >
             /data-management/backup
             <div
-              class="text-link__icon-container"
+              class="sc-papXJ ecwnCf"
             >
               <svg
-                class="icon text-link__icon"
+                class="sc-iBkjds eintev sc-jqUVSM fjeMmK"
                 height="18"
                 viewBox="0 0 24 24"
                 width="18"
@@ -826,59 +826,59 @@ exports[`<ApiDocs /> should render correctly 1`] = `
           </a>
         </th>
         <th
-          class="table__cell api-docs__cell"
+          class="sc-breuTD KWokR api-docs__cell"
         >
           <span
-            class="paragraph paragraph--no-padding api-docs__method"
+            class="sc-bczRLJ deidno api-docs__method"
           >
             GET
           </span>
         </th>
         <th
-          class="table__cell api-docs__cell"
+          class="sc-breuTD KWokR api-docs__cell"
         >
           <span
-            class="paragraph paragraph--no-padding"
+            class="sc-bczRLJ deidno"
           />
         </th>
         <th
-          class="table__cell api-docs__cell"
+          class="sc-breuTD KWokR api-docs__cell"
         >
           <span
-            class="paragraph paragraph--no-padding"
+            class="sc-bczRLJ deidno"
           >
             Admin only
           </span>
         </th>
         <th
-          class="table__cell api-docs__cell"
+          class="sc-breuTD KWokR api-docs__cell"
         >
           <span
-            class="paragraph paragraph--no-padding api-docs__description"
+            class="sc-bczRLJ deidno api-docs__description"
           >
             Returns a file containing a full data backup for the site
           </span>
         </th>
       </tr>
       <tr
-        class="table__row"
+        class="sc-evZas"
       >
         <th
-          class="table__cell api-docs__cell"
+          class="sc-breuTD KWokR api-docs__cell"
         >
           <a
             aria-label="/data-management/delete-entity (opens in a new tab)"
-            class="text-link text-link--text-link text-link--no-padding text-link--inline"
+            class="sc-ftvSup bvTsjB"
             href="https://www.georgegillams.co.uk/api/data-management/delete-entity"
             rel="noopener noreferrer"
             target="_blank"
           >
             /data-management/delete-entity
             <div
-              class="text-link__icon-container"
+              class="sc-papXJ ecwnCf"
             >
               <svg
-                class="icon text-link__icon"
+                class="sc-iBkjds eintev sc-jqUVSM fjeMmK"
                 height="18"
                 viewBox="0 0 24 24"
                 width="18"
@@ -892,59 +892,59 @@ exports[`<ApiDocs /> should render correctly 1`] = `
           </a>
         </th>
         <th
-          class="table__cell api-docs__cell"
+          class="sc-breuTD KWokR api-docs__cell"
         >
           <span
-            class="paragraph paragraph--no-padding api-docs__method"
+            class="sc-bczRLJ deidno api-docs__method"
           >
             POST
           </span>
         </th>
         <th
-          class="table__cell api-docs__cell"
+          class="sc-breuTD KWokR api-docs__cell"
         >
           <span
-            class="paragraph paragraph--no-padding"
+            class="sc-bczRLJ deidno"
           />
         </th>
         <th
-          class="table__cell api-docs__cell"
+          class="sc-breuTD KWokR api-docs__cell"
         >
           <span
-            class="paragraph paragraph--no-padding"
+            class="sc-bczRLJ deidno"
           >
             Admin only
           </span>
         </th>
         <th
-          class="table__cell api-docs__cell"
+          class="sc-breuTD KWokR api-docs__cell"
         >
           <span
-            class="paragraph paragraph--no-padding api-docs__description"
+            class="sc-bczRLJ deidno api-docs__description"
           >
             Remove a previously deleted entity completely from the DB
           </span>
         </th>
       </tr>
       <tr
-        class="table__row"
+        class="sc-evZas"
       >
         <th
-          class="table__cell api-docs__cell"
+          class="sc-breuTD KWokR api-docs__cell"
         >
           <a
             aria-label="/data-management/delete-set (opens in a new tab)"
-            class="text-link text-link--text-link text-link--no-padding text-link--inline"
+            class="sc-ftvSup bvTsjB"
             href="https://www.georgegillams.co.uk/api/data-management/delete-set"
             rel="noopener noreferrer"
             target="_blank"
           >
             /data-management/delete-set
             <div
-              class="text-link__icon-container"
+              class="sc-papXJ ecwnCf"
             >
               <svg
-                class="icon text-link__icon"
+                class="sc-iBkjds eintev sc-jqUVSM fjeMmK"
                 height="18"
                 viewBox="0 0 24 24"
                 width="18"
@@ -958,59 +958,59 @@ exports[`<ApiDocs /> should render correctly 1`] = `
           </a>
         </th>
         <th
-          class="table__cell api-docs__cell"
+          class="sc-breuTD KWokR api-docs__cell"
         >
           <span
-            class="paragraph paragraph--no-padding api-docs__method"
+            class="sc-bczRLJ deidno api-docs__method"
           >
             POST
           </span>
         </th>
         <th
-          class="table__cell api-docs__cell"
+          class="sc-breuTD KWokR api-docs__cell"
         >
           <span
-            class="paragraph paragraph--no-padding"
+            class="sc-bczRLJ deidno"
           />
         </th>
         <th
-          class="table__cell api-docs__cell"
+          class="sc-breuTD KWokR api-docs__cell"
         >
           <span
-            class="paragraph paragraph--no-padding"
+            class="sc-bczRLJ deidno"
           >
             Admin only
           </span>
         </th>
         <th
-          class="table__cell api-docs__cell"
+          class="sc-breuTD KWokR api-docs__cell"
         >
           <span
-            class="paragraph paragraph--no-padding api-docs__description"
+            class="sc-bczRLJ deidno api-docs__description"
           >
             Remove an entire collection from the DB
           </span>
         </th>
       </tr>
       <tr
-        class="table__row"
+        class="sc-evZas"
       >
         <th
-          class="table__cell api-docs__cell"
+          class="sc-breuTD KWokR api-docs__cell"
         >
           <a
             aria-label="/data-management/restore (opens in a new tab)"
-            class="text-link text-link--text-link text-link--no-padding text-link--inline"
+            class="sc-ftvSup bvTsjB"
             href="https://www.georgegillams.co.uk/api/data-management/restore"
             rel="noopener noreferrer"
             target="_blank"
           >
             /data-management/restore
             <div
-              class="text-link__icon-container"
+              class="sc-papXJ ecwnCf"
             >
               <svg
-                class="icon text-link__icon"
+                class="sc-iBkjds eintev sc-jqUVSM fjeMmK"
                 height="18"
                 viewBox="0 0 24 24"
                 width="18"
@@ -1024,59 +1024,59 @@ exports[`<ApiDocs /> should render correctly 1`] = `
           </a>
         </th>
         <th
-          class="table__cell api-docs__cell"
+          class="sc-breuTD KWokR api-docs__cell"
         >
           <span
-            class="paragraph paragraph--no-padding api-docs__method"
+            class="sc-bczRLJ deidno api-docs__method"
           >
             POST
           </span>
         </th>
         <th
-          class="table__cell api-docs__cell"
+          class="sc-breuTD KWokR api-docs__cell"
         >
           <span
-            class="paragraph paragraph--no-padding"
+            class="sc-bczRLJ deidno"
           />
         </th>
         <th
-          class="table__cell api-docs__cell"
+          class="sc-breuTD KWokR api-docs__cell"
         >
           <span
-            class="paragraph paragraph--no-padding"
+            class="sc-bczRLJ deidno"
           >
             Admin only
           </span>
         </th>
         <th
-          class="table__cell api-docs__cell"
+          class="sc-breuTD KWokR api-docs__cell"
         >
           <span
-            class="paragraph paragraph--no-padding api-docs__description"
+            class="sc-bczRLJ deidno api-docs__description"
           >
             Restore all the data from a backup file
           </span>
         </th>
       </tr>
       <tr
-        class="table__row"
+        class="sc-evZas"
       >
         <th
-          class="table__cell api-docs__cell"
+          class="sc-breuTD KWokR api-docs__cell"
         >
           <a
             aria-label="/notifications/create (opens in a new tab)"
-            class="text-link text-link--text-link text-link--no-padding text-link--inline"
+            class="sc-ftvSup bvTsjB"
             href="https://www.georgegillams.co.uk/api/notifications/create"
             rel="noopener noreferrer"
             target="_blank"
           >
             /notifications/create
             <div
-              class="text-link__icon-container"
+              class="sc-papXJ ecwnCf"
             >
               <svg
-                class="icon text-link__icon"
+                class="sc-iBkjds eintev sc-jqUVSM fjeMmK"
                 height="18"
                 viewBox="0 0 24 24"
                 width="18"
@@ -1090,59 +1090,59 @@ exports[`<ApiDocs /> should render correctly 1`] = `
           </a>
         </th>
         <th
-          class="table__cell api-docs__cell"
+          class="sc-breuTD KWokR api-docs__cell"
         >
           <span
-            class="paragraph paragraph--no-padding api-docs__method"
+            class="sc-bczRLJ deidno api-docs__method"
           >
             POST
           </span>
         </th>
         <th
-          class="table__cell api-docs__cell"
+          class="sc-breuTD KWokR api-docs__cell"
         >
           <span
-            class="paragraph paragraph--no-padding"
+            class="sc-bczRLJ deidno"
           />
         </th>
         <th
-          class="table__cell api-docs__cell"
+          class="sc-breuTD KWokR api-docs__cell"
         >
           <span
-            class="paragraph paragraph--no-padding"
+            class="sc-bczRLJ deidno"
           >
             Admin only
           </span>
         </th>
         <th
-          class="table__cell api-docs__cell"
+          class="sc-breuTD KWokR api-docs__cell"
         >
           <span
-            class="paragraph paragraph--no-padding api-docs__description"
+            class="sc-bczRLJ deidno api-docs__description"
           >
             Creates a notification which will be show at the top of the site
           </span>
         </th>
       </tr>
       <tr
-        class="table__row"
+        class="sc-evZas"
       >
         <th
-          class="table__cell api-docs__cell"
+          class="sc-breuTD KWokR api-docs__cell"
         >
           <a
             aria-label="/notifications/delete (opens in a new tab)"
-            class="text-link text-link--text-link text-link--no-padding text-link--inline"
+            class="sc-ftvSup bvTsjB"
             href="https://www.georgegillams.co.uk/api/notifications/delete"
             rel="noopener noreferrer"
             target="_blank"
           >
             /notifications/delete
             <div
-              class="text-link__icon-container"
+              class="sc-papXJ ecwnCf"
             >
               <svg
-                class="icon text-link__icon"
+                class="sc-iBkjds eintev sc-jqUVSM fjeMmK"
                 height="18"
                 viewBox="0 0 24 24"
                 width="18"
@@ -1156,59 +1156,59 @@ exports[`<ApiDocs /> should render correctly 1`] = `
           </a>
         </th>
         <th
-          class="table__cell api-docs__cell"
+          class="sc-breuTD KWokR api-docs__cell"
         >
           <span
-            class="paragraph paragraph--no-padding api-docs__method"
+            class="sc-bczRLJ deidno api-docs__method"
           >
             POST
           </span>
         </th>
         <th
-          class="table__cell api-docs__cell"
+          class="sc-breuTD KWokR api-docs__cell"
         >
           <span
-            class="paragraph paragraph--no-padding"
+            class="sc-bczRLJ deidno"
           />
         </th>
         <th
-          class="table__cell api-docs__cell"
+          class="sc-breuTD KWokR api-docs__cell"
         >
           <span
-            class="paragraph paragraph--no-padding"
+            class="sc-bczRLJ deidno"
           >
             Admin only
           </span>
         </th>
         <th
-          class="table__cell api-docs__cell"
+          class="sc-breuTD KWokR api-docs__cell"
         >
           <span
-            class="paragraph paragraph--no-padding api-docs__description"
+            class="sc-bczRLJ deidno api-docs__description"
           >
             Deletes a notification
           </span>
         </th>
       </tr>
       <tr
-        class="table__row"
+        class="sc-evZas"
       >
         <th
-          class="table__cell api-docs__cell"
+          class="sc-breuTD KWokR api-docs__cell"
         >
           <a
             aria-label="/notifications/load-all (opens in a new tab)"
-            class="text-link text-link--text-link text-link--no-padding text-link--inline"
+            class="sc-ftvSup bvTsjB"
             href="https://www.georgegillams.co.uk/api/notifications/load-all"
             rel="noopener noreferrer"
             target="_blank"
           >
             /notifications/load-all
             <div
-              class="text-link__icon-container"
+              class="sc-papXJ ecwnCf"
             >
               <svg
-                class="icon text-link__icon"
+                class="sc-iBkjds eintev sc-jqUVSM fjeMmK"
                 height="18"
                 viewBox="0 0 24 24"
                 width="18"
@@ -1222,59 +1222,59 @@ exports[`<ApiDocs /> should render correctly 1`] = `
           </a>
         </th>
         <th
-          class="table__cell api-docs__cell"
+          class="sc-breuTD KWokR api-docs__cell"
         >
           <span
-            class="paragraph paragraph--no-padding api-docs__method"
+            class="sc-bczRLJ deidno api-docs__method"
           >
             GET
           </span>
         </th>
         <th
-          class="table__cell api-docs__cell"
+          class="sc-breuTD KWokR api-docs__cell"
         >
           <span
-            class="paragraph paragraph--no-padding"
+            class="sc-bczRLJ deidno"
           />
         </th>
         <th
-          class="table__cell api-docs__cell"
+          class="sc-breuTD KWokR api-docs__cell"
         >
           <span
-            class="paragraph paragraph--no-padding"
+            class="sc-bczRLJ deidno"
           >
             Any user - only an admin can see deleted notifications
           </span>
         </th>
         <th
-          class="table__cell api-docs__cell"
+          class="sc-breuTD KWokR api-docs__cell"
         >
           <span
-            class="paragraph paragraph--no-padding api-docs__description"
+            class="sc-bczRLJ deidno api-docs__description"
           >
             Load all notifications
           </span>
         </th>
       </tr>
       <tr
-        class="table__row"
+        class="sc-evZas"
       >
         <th
-          class="table__cell api-docs__cell"
+          class="sc-breuTD KWokR api-docs__cell"
         >
           <a
             aria-label="/notifications/load/:id (opens in a new tab)"
-            class="text-link text-link--text-link text-link--no-padding text-link--inline"
+            class="sc-ftvSup bvTsjB"
             href="https://www.georgegillams.co.uk/api/notifications/load/:id"
             rel="noopener noreferrer"
             target="_blank"
           >
             /notifications/load/:id
             <div
-              class="text-link__icon-container"
+              class="sc-papXJ ecwnCf"
             >
               <svg
-                class="icon text-link__icon"
+                class="sc-iBkjds eintev sc-jqUVSM fjeMmK"
                 height="18"
                 viewBox="0 0 24 24"
                 width="18"
@@ -1288,55 +1288,55 @@ exports[`<ApiDocs /> should render correctly 1`] = `
           </a>
         </th>
         <th
-          class="table__cell api-docs__cell"
+          class="sc-breuTD KWokR api-docs__cell"
         >
           <span
-            class="paragraph paragraph--no-padding api-docs__method"
+            class="sc-bczRLJ deidno api-docs__method"
           >
             GET
           </span>
         </th>
         <th
-          class="table__cell api-docs__cell"
+          class="sc-breuTD KWokR api-docs__cell"
         >
           <span
-            class="paragraph paragraph--no-padding"
+            class="sc-bczRLJ deidno"
           />
         </th>
         <th
-          class="table__cell api-docs__cell"
+          class="sc-breuTD KWokR api-docs__cell"
         >
           <span
-            class="paragraph paragraph--no-padding"
+            class="sc-bczRLJ deidno"
           />
         </th>
         <th
-          class="table__cell api-docs__cell"
+          class="sc-breuTD KWokR api-docs__cell"
         >
           <span
-            class="paragraph paragraph--no-padding api-docs__description"
+            class="sc-bczRLJ deidno api-docs__description"
           />
         </th>
       </tr>
       <tr
-        class="table__row"
+        class="sc-evZas"
       >
         <th
-          class="table__cell api-docs__cell"
+          class="sc-breuTD KWokR api-docs__cell"
         >
           <a
             aria-label="/notifications/update (opens in a new tab)"
-            class="text-link text-link--text-link text-link--no-padding text-link--inline"
+            class="sc-ftvSup bvTsjB"
             href="https://www.georgegillams.co.uk/api/notifications/update"
             rel="noopener noreferrer"
             target="_blank"
           >
             /notifications/update
             <div
-              class="text-link__icon-container"
+              class="sc-papXJ ecwnCf"
             >
               <svg
-                class="icon text-link__icon"
+                class="sc-iBkjds eintev sc-jqUVSM fjeMmK"
                 height="18"
                 viewBox="0 0 24 24"
                 width="18"
@@ -1350,59 +1350,59 @@ exports[`<ApiDocs /> should render correctly 1`] = `
           </a>
         </th>
         <th
-          class="table__cell api-docs__cell"
+          class="sc-breuTD KWokR api-docs__cell"
         >
           <span
-            class="paragraph paragraph--no-padding api-docs__method"
+            class="sc-bczRLJ deidno api-docs__method"
           >
             POST
           </span>
         </th>
         <th
-          class="table__cell api-docs__cell"
+          class="sc-breuTD KWokR api-docs__cell"
         >
           <span
-            class="paragraph paragraph--no-padding"
+            class="sc-bczRLJ deidno"
           />
         </th>
         <th
-          class="table__cell api-docs__cell"
+          class="sc-breuTD KWokR api-docs__cell"
         >
           <span
-            class="paragraph paragraph--no-padding"
+            class="sc-bczRLJ deidno"
           >
             Admin only
           </span>
         </th>
         <th
-          class="table__cell api-docs__cell"
+          class="sc-breuTD KWokR api-docs__cell"
         >
           <span
-            class="paragraph paragraph--no-padding api-docs__description"
+            class="sc-bczRLJ deidno api-docs__description"
           >
             Update a given notification
           </span>
         </th>
       </tr>
       <tr
-        class="table__row"
+        class="sc-evZas"
       >
         <th
-          class="table__cell api-docs__cell"
+          class="sc-breuTD KWokR api-docs__cell"
         >
           <a
             aria-label="/users/create (opens in a new tab)"
-            class="text-link text-link--text-link text-link--no-padding text-link--inline"
+            class="sc-ftvSup bvTsjB"
             href="https://www.georgegillams.co.uk/api/users/create"
             rel="noopener noreferrer"
             target="_blank"
           >
             /users/create
             <div
-              class="text-link__icon-container"
+              class="sc-papXJ ecwnCf"
             >
               <svg
-                class="icon text-link__icon"
+                class="sc-iBkjds eintev sc-jqUVSM fjeMmK"
                 height="18"
                 viewBox="0 0 24 24"
                 width="18"
@@ -1416,59 +1416,59 @@ exports[`<ApiDocs /> should render correctly 1`] = `
           </a>
         </th>
         <th
-          class="table__cell api-docs__cell"
+          class="sc-breuTD KWokR api-docs__cell"
         >
           <span
-            class="paragraph paragraph--no-padding api-docs__method"
+            class="sc-bczRLJ deidno api-docs__method"
           >
             POST
           </span>
         </th>
         <th
-          class="table__cell api-docs__cell"
+          class="sc-breuTD KWokR api-docs__cell"
         >
           <span
-            class="paragraph paragraph--no-padding"
+            class="sc-bczRLJ deidno"
           />
         </th>
         <th
-          class="table__cell api-docs__cell"
+          class="sc-breuTD KWokR api-docs__cell"
         >
           <span
-            class="paragraph paragraph--no-padding"
+            class="sc-bczRLJ deidno"
           >
             None - only an admin can create other admin users
           </span>
         </th>
         <th
-          class="table__cell api-docs__cell"
+          class="sc-breuTD KWokR api-docs__cell"
         >
           <span
-            class="paragraph paragraph--no-padding api-docs__description"
+            class="sc-bczRLJ deidno api-docs__description"
           >
             Create a user
           </span>
         </th>
       </tr>
       <tr
-        class="table__row"
+        class="sc-evZas"
       >
         <th
-          class="table__cell api-docs__cell"
+          class="sc-breuTD KWokR api-docs__cell"
         >
           <a
             aria-label="/users/delete (opens in a new tab)"
-            class="text-link text-link--text-link text-link--no-padding text-link--inline"
+            class="sc-ftvSup bvTsjB"
             href="https://www.georgegillams.co.uk/api/users/delete"
             rel="noopener noreferrer"
             target="_blank"
           >
             /users/delete
             <div
-              class="text-link__icon-container"
+              class="sc-papXJ ecwnCf"
             >
               <svg
-                class="icon text-link__icon"
+                class="sc-iBkjds eintev sc-jqUVSM fjeMmK"
                 height="18"
                 viewBox="0 0 24 24"
                 width="18"
@@ -1482,59 +1482,59 @@ exports[`<ApiDocs /> should render correctly 1`] = `
           </a>
         </th>
         <th
-          class="table__cell api-docs__cell"
+          class="sc-breuTD KWokR api-docs__cell"
         >
           <span
-            class="paragraph paragraph--no-padding api-docs__method"
+            class="sc-bczRLJ deidno api-docs__method"
           >
             POST
           </span>
         </th>
         <th
-          class="table__cell api-docs__cell"
+          class="sc-breuTD KWokR api-docs__cell"
         >
           <span
-            class="paragraph paragraph--no-padding"
+            class="sc-bczRLJ deidno"
           />
         </th>
         <th
-          class="table__cell api-docs__cell"
+          class="sc-breuTD KWokR api-docs__cell"
         >
           <span
-            class="paragraph paragraph--no-padding"
+            class="sc-bczRLJ deidno"
           >
             The user being deleted, or an admin only
           </span>
         </th>
         <th
-          class="table__cell api-docs__cell"
+          class="sc-breuTD KWokR api-docs__cell"
         >
           <span
-            class="paragraph paragraph--no-padding api-docs__description"
+            class="sc-bczRLJ deidno api-docs__description"
           >
             Delete a user
           </span>
         </th>
       </tr>
       <tr
-        class="table__row"
+        class="sc-evZas"
       >
         <th
-          class="table__cell api-docs__cell"
+          class="sc-breuTD KWokR api-docs__cell"
         >
           <a
             aria-label="/users/load (opens in a new tab)"
-            class="text-link text-link--text-link text-link--no-padding text-link--inline"
+            class="sc-ftvSup bvTsjB"
             href="https://www.georgegillams.co.uk/api/users/load"
             rel="noopener noreferrer"
             target="_blank"
           >
             /users/load
             <div
-              class="text-link__icon-container"
+              class="sc-papXJ ecwnCf"
             >
               <svg
-                class="icon text-link__icon"
+                class="sc-iBkjds eintev sc-jqUVSM fjeMmK"
                 height="18"
                 viewBox="0 0 24 24"
                 width="18"
@@ -1548,59 +1548,59 @@ exports[`<ApiDocs /> should render correctly 1`] = `
           </a>
         </th>
         <th
-          class="table__cell api-docs__cell"
+          class="sc-breuTD KWokR api-docs__cell"
         >
           <span
-            class="paragraph paragraph--no-padding api-docs__method"
+            class="sc-bczRLJ deidno api-docs__method"
           >
             GET
           </span>
         </th>
         <th
-          class="table__cell api-docs__cell"
+          class="sc-breuTD KWokR api-docs__cell"
         >
           <span
-            class="paragraph paragraph--no-padding"
+            class="sc-bczRLJ deidno"
           />
         </th>
         <th
-          class="table__cell api-docs__cell"
+          class="sc-breuTD KWokR api-docs__cell"
         >
           <span
-            class="paragraph paragraph--no-padding"
+            class="sc-bczRLJ deidno"
           >
             The user being loaded, or an admin only
           </span>
         </th>
         <th
-          class="table__cell api-docs__cell"
+          class="sc-breuTD KWokR api-docs__cell"
         >
           <span
-            class="paragraph paragraph--no-padding api-docs__description"
+            class="sc-bczRLJ deidno api-docs__description"
           >
             Load a given user
           </span>
         </th>
       </tr>
       <tr
-        class="table__row"
+        class="sc-evZas"
       >
         <th
-          class="table__cell api-docs__cell"
+          class="sc-breuTD KWokR api-docs__cell"
         >
           <a
             aria-label="/users/load-all (opens in a new tab)"
-            class="text-link text-link--text-link text-link--no-padding text-link--inline"
+            class="sc-ftvSup bvTsjB"
             href="https://www.georgegillams.co.uk/api/users/load-all"
             rel="noopener noreferrer"
             target="_blank"
           >
             /users/load-all
             <div
-              class="text-link__icon-container"
+              class="sc-papXJ ecwnCf"
             >
               <svg
-                class="icon text-link__icon"
+                class="sc-iBkjds eintev sc-jqUVSM fjeMmK"
                 height="18"
                 viewBox="0 0 24 24"
                 width="18"
@@ -1614,59 +1614,59 @@ exports[`<ApiDocs /> should render correctly 1`] = `
           </a>
         </th>
         <th
-          class="table__cell api-docs__cell"
+          class="sc-breuTD KWokR api-docs__cell"
         >
           <span
-            class="paragraph paragraph--no-padding api-docs__method"
+            class="sc-bczRLJ deidno api-docs__method"
           >
             GET
           </span>
         </th>
         <th
-          class="table__cell api-docs__cell"
+          class="sc-breuTD KWokR api-docs__cell"
         >
           <span
-            class="paragraph paragraph--no-padding"
+            class="sc-bczRLJ deidno"
           />
         </th>
         <th
-          class="table__cell api-docs__cell"
+          class="sc-breuTD KWokR api-docs__cell"
         >
           <span
-            class="paragraph paragraph--no-padding"
+            class="sc-bczRLJ deidno"
           >
             Admin only
           </span>
         </th>
         <th
-          class="table__cell api-docs__cell"
+          class="sc-breuTD KWokR api-docs__cell"
         >
           <span
-            class="paragraph paragraph--no-padding api-docs__description"
+            class="sc-bczRLJ deidno api-docs__description"
           >
             Load all users
           </span>
         </th>
       </tr>
       <tr
-        class="table__row"
+        class="sc-evZas"
       >
         <th
-          class="table__cell api-docs__cell"
+          class="sc-breuTD KWokR api-docs__cell"
         >
           <a
             aria-label="/users/sign-up (opens in a new tab)"
-            class="text-link text-link--text-link text-link--no-padding text-link--inline"
+            class="sc-ftvSup bvTsjB"
             href="https://www.georgegillams.co.uk/api/users/sign-up"
             rel="noopener noreferrer"
             target="_blank"
           >
             /users/sign-up
             <div
-              class="text-link__icon-container"
+              class="sc-papXJ ecwnCf"
             >
               <svg
-                class="icon text-link__icon"
+                class="sc-iBkjds eintev sc-jqUVSM fjeMmK"
                 height="18"
                 viewBox="0 0 24 24"
                 width="18"
@@ -1680,59 +1680,59 @@ exports[`<ApiDocs /> should render correctly 1`] = `
           </a>
         </th>
         <th
-          class="table__cell api-docs__cell"
+          class="sc-breuTD KWokR api-docs__cell"
         >
           <span
-            class="paragraph paragraph--no-padding api-docs__method"
+            class="sc-bczRLJ deidno api-docs__method"
           >
             POST
           </span>
         </th>
         <th
-          class="table__cell api-docs__cell"
+          class="sc-breuTD KWokR api-docs__cell"
         >
           <span
-            class="paragraph paragraph--no-padding"
+            class="sc-bczRLJ deidno"
           />
         </th>
         <th
-          class="table__cell api-docs__cell"
+          class="sc-breuTD KWokR api-docs__cell"
         >
           <span
-            class="paragraph paragraph--no-padding"
+            class="sc-bczRLJ deidno"
           >
             None
           </span>
         </th>
         <th
-          class="table__cell api-docs__cell"
+          class="sc-breuTD KWokR api-docs__cell"
         >
           <span
-            class="paragraph paragraph--no-padding api-docs__description"
+            class="sc-bczRLJ deidno api-docs__description"
           >
             Create a user, and sign in as that user at the same time
           </span>
         </th>
       </tr>
       <tr
-        class="table__row"
+        class="sc-evZas"
       >
         <th
-          class="table__cell api-docs__cell"
+          class="sc-breuTD KWokR api-docs__cell"
         >
           <a
             aria-label="/users/update (opens in a new tab)"
-            class="text-link text-link--text-link text-link--no-padding text-link--inline"
+            class="sc-ftvSup bvTsjB"
             href="https://www.georgegillams.co.uk/api/users/update"
             rel="noopener noreferrer"
             target="_blank"
           >
             /users/update
             <div
-              class="text-link__icon-container"
+              class="sc-papXJ ecwnCf"
             >
               <svg
-                class="icon text-link__icon"
+                class="sc-iBkjds eintev sc-jqUVSM fjeMmK"
                 height="18"
                 viewBox="0 0 24 24"
                 width="18"
@@ -1746,59 +1746,59 @@ exports[`<ApiDocs /> should render correctly 1`] = `
           </a>
         </th>
         <th
-          class="table__cell api-docs__cell"
+          class="sc-breuTD KWokR api-docs__cell"
         >
           <span
-            class="paragraph paragraph--no-padding api-docs__method"
+            class="sc-bczRLJ deidno api-docs__method"
           >
             POST
           </span>
         </th>
         <th
-          class="table__cell api-docs__cell"
+          class="sc-breuTD KWokR api-docs__cell"
         >
           <span
-            class="paragraph paragraph--no-padding"
+            class="sc-bczRLJ deidno"
           />
         </th>
         <th
-          class="table__cell api-docs__cell"
+          class="sc-breuTD KWokR api-docs__cell"
         >
           <span
-            class="paragraph paragraph--no-padding"
+            class="sc-bczRLJ deidno"
           >
             Any user - only an admin can promote other users to admin
           </span>
         </th>
         <th
-          class="table__cell api-docs__cell"
+          class="sc-breuTD KWokR api-docs__cell"
         >
           <span
-            class="paragraph paragraph--no-padding api-docs__description"
+            class="sc-bczRLJ deidno api-docs__description"
           >
             Update a given user
           </span>
         </th>
       </tr>
       <tr
-        class="table__row"
+        class="sc-evZas"
       >
         <th
-          class="table__cell api-docs__cell"
+          class="sc-breuTD KWokR api-docs__cell"
         >
           <a
             aria-label="/blogs/create (opens in a new tab)"
-            class="text-link text-link--text-link text-link--no-padding text-link--inline"
+            class="sc-ftvSup bvTsjB"
             href="https://www.georgegillams.co.uk/api/blogs/create"
             rel="noopener noreferrer"
             target="_blank"
           >
             /blogs/create
             <div
-              class="text-link__icon-container"
+              class="sc-papXJ ecwnCf"
             >
               <svg
-                class="icon text-link__icon"
+                class="sc-iBkjds eintev sc-jqUVSM fjeMmK"
                 height="18"
                 viewBox="0 0 24 24"
                 width="18"
@@ -1812,59 +1812,59 @@ exports[`<ApiDocs /> should render correctly 1`] = `
           </a>
         </th>
         <th
-          class="table__cell api-docs__cell"
+          class="sc-breuTD KWokR api-docs__cell"
         >
           <span
-            class="paragraph paragraph--no-padding api-docs__method"
+            class="sc-bczRLJ deidno api-docs__method"
           >
             POST
           </span>
         </th>
         <th
-          class="table__cell api-docs__cell"
+          class="sc-breuTD KWokR api-docs__cell"
         >
           <span
-            class="paragraph paragraph--no-padding"
+            class="sc-bczRLJ deidno"
           />
         </th>
         <th
-          class="table__cell api-docs__cell"
+          class="sc-breuTD KWokR api-docs__cell"
         >
           <span
-            class="paragraph paragraph--no-padding"
+            class="sc-bczRLJ deidno"
           >
             Admin only
           </span>
         </th>
         <th
-          class="table__cell api-docs__cell"
+          class="sc-breuTD KWokR api-docs__cell"
         >
           <span
-            class="paragraph paragraph--no-padding api-docs__description"
+            class="sc-bczRLJ deidno api-docs__description"
           >
             Create a new blog
           </span>
         </th>
       </tr>
       <tr
-        class="table__row"
+        class="sc-evZas"
       >
         <th
-          class="table__cell api-docs__cell"
+          class="sc-breuTD KWokR api-docs__cell"
         >
           <a
             aria-label="/blogs/delete (opens in a new tab)"
-            class="text-link text-link--text-link text-link--no-padding text-link--inline"
+            class="sc-ftvSup bvTsjB"
             href="https://www.georgegillams.co.uk/api/blogs/delete"
             rel="noopener noreferrer"
             target="_blank"
           >
             /blogs/delete
             <div
-              class="text-link__icon-container"
+              class="sc-papXJ ecwnCf"
             >
               <svg
-                class="icon text-link__icon"
+                class="sc-iBkjds eintev sc-jqUVSM fjeMmK"
                 height="18"
                 viewBox="0 0 24 24"
                 width="18"
@@ -1878,59 +1878,59 @@ exports[`<ApiDocs /> should render correctly 1`] = `
           </a>
         </th>
         <th
-          class="table__cell api-docs__cell"
+          class="sc-breuTD KWokR api-docs__cell"
         >
           <span
-            class="paragraph paragraph--no-padding api-docs__method"
+            class="sc-bczRLJ deidno api-docs__method"
           >
             POST
           </span>
         </th>
         <th
-          class="table__cell api-docs__cell"
+          class="sc-breuTD KWokR api-docs__cell"
         >
           <span
-            class="paragraph paragraph--no-padding"
+            class="sc-bczRLJ deidno"
           />
         </th>
         <th
-          class="table__cell api-docs__cell"
+          class="sc-breuTD KWokR api-docs__cell"
         >
           <span
-            class="paragraph paragraph--no-padding"
+            class="sc-bczRLJ deidno"
           >
             Admin only
           </span>
         </th>
         <th
-          class="table__cell api-docs__cell"
+          class="sc-breuTD KWokR api-docs__cell"
         >
           <span
-            class="paragraph paragraph--no-padding api-docs__description"
+            class="sc-bczRLJ deidno api-docs__description"
           >
             Remove a blog
           </span>
         </th>
       </tr>
       <tr
-        class="table__row"
+        class="sc-evZas"
       >
         <th
-          class="table__cell api-docs__cell"
+          class="sc-breuTD KWokR api-docs__cell"
         >
           <a
             aria-label="/blogs/load-all (opens in a new tab)"
-            class="text-link text-link--text-link text-link--no-padding text-link--inline"
+            class="sc-ftvSup bvTsjB"
             href="https://www.georgegillams.co.uk/api/blogs/load-all"
             rel="noopener noreferrer"
             target="_blank"
           >
             /blogs/load-all
             <div
-              class="text-link__icon-container"
+              class="sc-papXJ ecwnCf"
             >
               <svg
-                class="icon text-link__icon"
+                class="sc-iBkjds eintev sc-jqUVSM fjeMmK"
                 height="18"
                 viewBox="0 0 24 24"
                 width="18"
@@ -1944,59 +1944,59 @@ exports[`<ApiDocs /> should render correctly 1`] = `
           </a>
         </th>
         <th
-          class="table__cell api-docs__cell"
+          class="sc-breuTD KWokR api-docs__cell"
         >
           <span
-            class="paragraph paragraph--no-padding api-docs__method"
+            class="sc-bczRLJ deidno api-docs__method"
           >
             GET
           </span>
         </th>
         <th
-          class="table__cell api-docs__cell"
+          class="sc-breuTD KWokR api-docs__cell"
         >
           <span
-            class="paragraph paragraph--no-padding"
+            class="sc-bczRLJ deidno"
           />
         </th>
         <th
-          class="table__cell api-docs__cell"
+          class="sc-breuTD KWokR api-docs__cell"
         >
           <span
-            class="paragraph paragraph--no-padding"
+            class="sc-bczRLJ deidno"
           >
             None
           </span>
         </th>
         <th
-          class="table__cell api-docs__cell"
+          class="sc-breuTD KWokR api-docs__cell"
         >
           <span
-            class="paragraph paragraph--no-padding api-docs__description"
+            class="sc-bczRLJ deidno api-docs__description"
           >
             Load all blogs. If not admin, only non-deleted, published blogs will be loaded
           </span>
         </th>
       </tr>
       <tr
-        class="table__row"
+        class="sc-evZas"
       >
         <th
-          class="table__cell api-docs__cell"
+          class="sc-breuTD KWokR api-docs__cell"
         >
           <a
             aria-label="/blogs/load/:id (opens in a new tab)"
-            class="text-link text-link--text-link text-link--no-padding text-link--inline"
+            class="sc-ftvSup bvTsjB"
             href="https://www.georgegillams.co.uk/api/blogs/load/:id"
             rel="noopener noreferrer"
             target="_blank"
           >
             /blogs/load/:id
             <div
-              class="text-link__icon-container"
+              class="sc-papXJ ecwnCf"
             >
               <svg
-                class="icon text-link__icon"
+                class="sc-iBkjds eintev sc-jqUVSM fjeMmK"
                 height="18"
                 viewBox="0 0 24 24"
                 width="18"
@@ -2010,61 +2010,61 @@ exports[`<ApiDocs /> should render correctly 1`] = `
           </a>
         </th>
         <th
-          class="table__cell api-docs__cell"
+          class="sc-breuTD KWokR api-docs__cell"
         >
           <span
-            class="paragraph paragraph--no-padding api-docs__method"
+            class="sc-bczRLJ deidno api-docs__method"
           >
             GET
           </span>
         </th>
         <th
-          class="table__cell api-docs__cell"
+          class="sc-breuTD KWokR api-docs__cell"
         >
           <span
-            class="paragraph paragraph--no-padding"
+            class="sc-bczRLJ deidno"
           >
             id: the blog ID to load
           </span>
         </th>
         <th
-          class="table__cell api-docs__cell"
+          class="sc-breuTD KWokR api-docs__cell"
         >
           <span
-            class="paragraph paragraph--no-padding"
+            class="sc-bczRLJ deidno"
           >
             None
           </span>
         </th>
         <th
-          class="table__cell api-docs__cell"
+          class="sc-breuTD KWokR api-docs__cell"
         >
           <span
-            class="paragraph paragraph--no-padding api-docs__description"
+            class="sc-bczRLJ deidno api-docs__description"
           >
             Load a single blog. If not admin, will fail if deleted or not published
           </span>
         </th>
       </tr>
       <tr
-        class="table__row"
+        class="sc-evZas"
       >
         <th
-          class="table__cell api-docs__cell"
+          class="sc-breuTD KWokR api-docs__cell"
         >
           <a
             aria-label="/blogs/update (opens in a new tab)"
-            class="text-link text-link--text-link text-link--no-padding text-link--inline"
+            class="sc-ftvSup bvTsjB"
             href="https://www.georgegillams.co.uk/api/blogs/update"
             rel="noopener noreferrer"
             target="_blank"
           >
             /blogs/update
             <div
-              class="text-link__icon-container"
+              class="sc-papXJ ecwnCf"
             >
               <svg
-                class="icon text-link__icon"
+                class="sc-iBkjds eintev sc-jqUVSM fjeMmK"
                 height="18"
                 viewBox="0 0 24 24"
                 width="18"
@@ -2078,59 +2078,59 @@ exports[`<ApiDocs /> should render correctly 1`] = `
           </a>
         </th>
         <th
-          class="table__cell api-docs__cell"
+          class="sc-breuTD KWokR api-docs__cell"
         >
           <span
-            class="paragraph paragraph--no-padding api-docs__method"
+            class="sc-bczRLJ deidno api-docs__method"
           >
             POST
           </span>
         </th>
         <th
-          class="table__cell api-docs__cell"
+          class="sc-breuTD KWokR api-docs__cell"
         >
           <span
-            class="paragraph paragraph--no-padding"
+            class="sc-bczRLJ deidno"
           />
         </th>
         <th
-          class="table__cell api-docs__cell"
+          class="sc-breuTD KWokR api-docs__cell"
         >
           <span
-            class="paragraph paragraph--no-padding"
+            class="sc-bczRLJ deidno"
           >
             Admin only
           </span>
         </th>
         <th
-          class="table__cell api-docs__cell"
+          class="sc-breuTD KWokR api-docs__cell"
         >
           <span
-            class="paragraph paragraph--no-padding api-docs__description"
+            class="sc-bczRLJ deidno api-docs__description"
           >
             Update a blog
           </span>
         </th>
       </tr>
       <tr
-        class="table__row"
+        class="sc-evZas"
       >
         <th
-          class="table__cell api-docs__cell"
+          class="sc-breuTD KWokR api-docs__cell"
         >
           <a
             aria-label="/make-payment/load (opens in a new tab)"
-            class="text-link text-link--text-link text-link--no-padding text-link--inline"
+            class="sc-ftvSup bvTsjB"
             href="https://www.georgegillams.co.uk/api/make-payment/load"
             rel="noopener noreferrer"
             target="_blank"
           >
             /make-payment/load
             <div
-              class="text-link__icon-container"
+              class="sc-papXJ ecwnCf"
             >
               <svg
-                class="icon text-link__icon"
+                class="sc-iBkjds eintev sc-jqUVSM fjeMmK"
                 height="18"
                 viewBox="0 0 24 24"
                 width="18"
@@ -2144,59 +2144,59 @@ exports[`<ApiDocs /> should render correctly 1`] = `
           </a>
         </th>
         <th
-          class="table__cell api-docs__cell"
+          class="sc-breuTD KWokR api-docs__cell"
         >
           <span
-            class="paragraph paragraph--no-padding api-docs__method"
+            class="sc-bczRLJ deidno api-docs__method"
           >
             POST
           </span>
         </th>
         <th
-          class="table__cell api-docs__cell"
+          class="sc-breuTD KWokR api-docs__cell"
         >
           <span
-            class="paragraph paragraph--no-padding"
+            class="sc-bczRLJ deidno"
           />
         </th>
         <th
-          class="table__cell api-docs__cell"
+          class="sc-breuTD KWokR api-docs__cell"
         >
           <span
-            class="paragraph paragraph--no-padding"
+            class="sc-bczRLJ deidno"
           >
             TODO
           </span>
         </th>
         <th
-          class="table__cell api-docs__cell"
+          class="sc-breuTD KWokR api-docs__cell"
         >
           <span
-            class="paragraph paragraph--no-padding api-docs__description"
+            class="sc-bczRLJ deidno api-docs__description"
           >
             TODO
           </span>
         </th>
       </tr>
       <tr
-        class="table__row"
+        class="sc-evZas"
       >
         <th
-          class="table__cell api-docs__cell"
+          class="sc-breuTD KWokR api-docs__cell"
         >
           <a
             aria-label="/make-payment/create-intent (opens in a new tab)"
-            class="text-link text-link--text-link text-link--no-padding text-link--inline"
+            class="sc-ftvSup bvTsjB"
             href="https://www.georgegillams.co.uk/api/make-payment/create-intent"
             rel="noopener noreferrer"
             target="_blank"
           >
             /make-payment/create-intent
             <div
-              class="text-link__icon-container"
+              class="sc-papXJ ecwnCf"
             >
               <svg
-                class="icon text-link__icon"
+                class="sc-iBkjds eintev sc-jqUVSM fjeMmK"
                 height="18"
                 viewBox="0 0 24 24"
                 width="18"
@@ -2210,59 +2210,59 @@ exports[`<ApiDocs /> should render correctly 1`] = `
           </a>
         </th>
         <th
-          class="table__cell api-docs__cell"
+          class="sc-breuTD KWokR api-docs__cell"
         >
           <span
-            class="paragraph paragraph--no-padding api-docs__method"
+            class="sc-bczRLJ deidno api-docs__method"
           >
             POST
           </span>
         </th>
         <th
-          class="table__cell api-docs__cell"
+          class="sc-breuTD KWokR api-docs__cell"
         >
           <span
-            class="paragraph paragraph--no-padding"
+            class="sc-bczRLJ deidno"
           />
         </th>
         <th
-          class="table__cell api-docs__cell"
+          class="sc-breuTD KWokR api-docs__cell"
         >
           <span
-            class="paragraph paragraph--no-padding"
+            class="sc-bczRLJ deidno"
           >
             TODO
           </span>
         </th>
         <th
-          class="table__cell api-docs__cell"
+          class="sc-breuTD KWokR api-docs__cell"
         >
           <span
-            class="paragraph paragraph--no-padding api-docs__description"
+            class="sc-bczRLJ deidno api-docs__description"
           >
             TODO
           </span>
         </th>
       </tr>
       <tr
-        class="table__row"
+        class="sc-evZas"
       >
         <th
-          class="table__cell api-docs__cell"
+          class="sc-breuTD KWokR api-docs__cell"
         >
           <a
             aria-label="/make-payment/resend-receipt (opens in a new tab)"
-            class="text-link text-link--text-link text-link--no-padding text-link--inline"
+            class="sc-ftvSup bvTsjB"
             href="https://www.georgegillams.co.uk/api/make-payment/resend-receipt"
             rel="noopener noreferrer"
             target="_blank"
           >
             /make-payment/resend-receipt
             <div
-              class="text-link__icon-container"
+              class="sc-papXJ ecwnCf"
             >
               <svg
-                class="icon text-link__icon"
+                class="sc-iBkjds eintev sc-jqUVSM fjeMmK"
                 height="18"
                 viewBox="0 0 24 24"
                 width="18"
@@ -2276,59 +2276,59 @@ exports[`<ApiDocs /> should render correctly 1`] = `
           </a>
         </th>
         <th
-          class="table__cell api-docs__cell"
+          class="sc-breuTD KWokR api-docs__cell"
         >
           <span
-            class="paragraph paragraph--no-padding api-docs__method"
+            class="sc-bczRLJ deidno api-docs__method"
           >
             POST
           </span>
         </th>
         <th
-          class="table__cell api-docs__cell"
+          class="sc-breuTD KWokR api-docs__cell"
         >
           <span
-            class="paragraph paragraph--no-padding"
+            class="sc-bczRLJ deidno"
           />
         </th>
         <th
-          class="table__cell api-docs__cell"
+          class="sc-breuTD KWokR api-docs__cell"
         >
           <span
-            class="paragraph paragraph--no-padding"
+            class="sc-bczRLJ deidno"
           >
             Admin only
           </span>
         </th>
         <th
-          class="table__cell api-docs__cell"
+          class="sc-breuTD KWokR api-docs__cell"
         >
           <span
-            class="paragraph paragraph--no-padding api-docs__description"
+            class="sc-bczRLJ deidno api-docs__description"
           >
             TODO
           </span>
         </th>
       </tr>
       <tr
-        class="table__row"
+        class="sc-evZas"
       >
         <th
-          class="table__cell api-docs__cell"
+          class="sc-breuTD KWokR api-docs__cell"
         >
           <a
             aria-label="/payments/create (opens in a new tab)"
-            class="text-link text-link--text-link text-link--no-padding text-link--inline"
+            class="sc-ftvSup bvTsjB"
             href="https://www.georgegillams.co.uk/api/payments/create"
             rel="noopener noreferrer"
             target="_blank"
           >
             /payments/create
             <div
-              class="text-link__icon-container"
+              class="sc-papXJ ecwnCf"
             >
               <svg
-                class="icon text-link__icon"
+                class="sc-iBkjds eintev sc-jqUVSM fjeMmK"
                 height="18"
                 viewBox="0 0 24 24"
                 width="18"
@@ -2342,59 +2342,59 @@ exports[`<ApiDocs /> should render correctly 1`] = `
           </a>
         </th>
         <th
-          class="table__cell api-docs__cell"
+          class="sc-breuTD KWokR api-docs__cell"
         >
           <span
-            class="paragraph paragraph--no-padding api-docs__method"
+            class="sc-bczRLJ deidno api-docs__method"
           >
             POST
           </span>
         </th>
         <th
-          class="table__cell api-docs__cell"
+          class="sc-breuTD KWokR api-docs__cell"
         >
           <span
-            class="paragraph paragraph--no-padding"
+            class="sc-bczRLJ deidno"
           />
         </th>
         <th
-          class="table__cell api-docs__cell"
+          class="sc-breuTD KWokR api-docs__cell"
         >
           <span
-            class="paragraph paragraph--no-padding"
+            class="sc-bczRLJ deidno"
           >
             TODO
           </span>
         </th>
         <th
-          class="table__cell api-docs__cell"
+          class="sc-breuTD KWokR api-docs__cell"
         >
           <span
-            class="paragraph paragraph--no-padding api-docs__description"
+            class="sc-bczRLJ deidno api-docs__description"
           >
             TODO
           </span>
         </th>
       </tr>
       <tr
-        class="table__row"
+        class="sc-evZas"
       >
         <th
-          class="table__cell api-docs__cell"
+          class="sc-breuTD KWokR api-docs__cell"
         >
           <a
             aria-label="/payments/delete (opens in a new tab)"
-            class="text-link text-link--text-link text-link--no-padding text-link--inline"
+            class="sc-ftvSup bvTsjB"
             href="https://www.georgegillams.co.uk/api/payments/delete"
             rel="noopener noreferrer"
             target="_blank"
           >
             /payments/delete
             <div
-              class="text-link__icon-container"
+              class="sc-papXJ ecwnCf"
             >
               <svg
-                class="icon text-link__icon"
+                class="sc-iBkjds eintev sc-jqUVSM fjeMmK"
                 height="18"
                 viewBox="0 0 24 24"
                 width="18"
@@ -2408,59 +2408,59 @@ exports[`<ApiDocs /> should render correctly 1`] = `
           </a>
         </th>
         <th
-          class="table__cell api-docs__cell"
+          class="sc-breuTD KWokR api-docs__cell"
         >
           <span
-            class="paragraph paragraph--no-padding api-docs__method"
+            class="sc-bczRLJ deidno api-docs__method"
           >
             POST
           </span>
         </th>
         <th
-          class="table__cell api-docs__cell"
+          class="sc-breuTD KWokR api-docs__cell"
         >
           <span
-            class="paragraph paragraph--no-padding"
+            class="sc-bczRLJ deidno"
           />
         </th>
         <th
-          class="table__cell api-docs__cell"
+          class="sc-breuTD KWokR api-docs__cell"
         >
           <span
-            class="paragraph paragraph--no-padding"
+            class="sc-bczRLJ deidno"
           >
             TODO
           </span>
         </th>
         <th
-          class="table__cell api-docs__cell"
+          class="sc-breuTD KWokR api-docs__cell"
         >
           <span
-            class="paragraph paragraph--no-padding api-docs__description"
+            class="sc-bczRLJ deidno api-docs__description"
           >
             TODO
           </span>
         </th>
       </tr>
       <tr
-        class="table__row"
+        class="sc-evZas"
       >
         <th
-          class="table__cell api-docs__cell"
+          class="sc-breuTD KWokR api-docs__cell"
         >
           <a
             aria-label="/payments/load-all (opens in a new tab)"
-            class="text-link text-link--text-link text-link--no-padding text-link--inline"
+            class="sc-ftvSup bvTsjB"
             href="https://www.georgegillams.co.uk/api/payments/load-all"
             rel="noopener noreferrer"
             target="_blank"
           >
             /payments/load-all
             <div
-              class="text-link__icon-container"
+              class="sc-papXJ ecwnCf"
             >
               <svg
-                class="icon text-link__icon"
+                class="sc-iBkjds eintev sc-jqUVSM fjeMmK"
                 height="18"
                 viewBox="0 0 24 24"
                 width="18"
@@ -2474,59 +2474,59 @@ exports[`<ApiDocs /> should render correctly 1`] = `
           </a>
         </th>
         <th
-          class="table__cell api-docs__cell"
+          class="sc-breuTD KWokR api-docs__cell"
         >
           <span
-            class="paragraph paragraph--no-padding api-docs__method"
+            class="sc-bczRLJ deidno api-docs__method"
           >
             GET
           </span>
         </th>
         <th
-          class="table__cell api-docs__cell"
+          class="sc-breuTD KWokR api-docs__cell"
         >
           <span
-            class="paragraph paragraph--no-padding"
+            class="sc-bczRLJ deidno"
           />
         </th>
         <th
-          class="table__cell api-docs__cell"
+          class="sc-breuTD KWokR api-docs__cell"
         >
           <span
-            class="paragraph paragraph--no-padding"
+            class="sc-bczRLJ deidno"
           >
             TODO
           </span>
         </th>
         <th
-          class="table__cell api-docs__cell"
+          class="sc-breuTD KWokR api-docs__cell"
         >
           <span
-            class="paragraph paragraph--no-padding api-docs__description"
+            class="sc-bczRLJ deidno api-docs__description"
           >
             TODO
           </span>
         </th>
       </tr>
       <tr
-        class="table__row"
+        class="sc-evZas"
       >
         <th
-          class="table__cell api-docs__cell"
+          class="sc-breuTD KWokR api-docs__cell"
         >
           <a
             aria-label="/support/create (opens in a new tab)"
-            class="text-link text-link--text-link text-link--no-padding text-link--inline"
+            class="sc-ftvSup bvTsjB"
             href="https://www.georgegillams.co.uk/api/support/create"
             rel="noopener noreferrer"
             target="_blank"
           >
             /support/create
             <div
-              class="text-link__icon-container"
+              class="sc-papXJ ecwnCf"
             >
               <svg
-                class="icon text-link__icon"
+                class="sc-iBkjds eintev sc-jqUVSM fjeMmK"
                 height="18"
                 viewBox="0 0 24 24"
                 width="18"
@@ -2540,59 +2540,59 @@ exports[`<ApiDocs /> should render correctly 1`] = `
           </a>
         </th>
         <th
-          class="table__cell api-docs__cell"
+          class="sc-breuTD KWokR api-docs__cell"
         >
           <span
-            class="paragraph paragraph--no-padding api-docs__method"
+            class="sc-bczRLJ deidno api-docs__method"
           >
             POST
           </span>
         </th>
         <th
-          class="table__cell api-docs__cell"
+          class="sc-breuTD KWokR api-docs__cell"
         >
           <span
-            class="paragraph paragraph--no-padding"
+            class="sc-bczRLJ deidno"
           />
         </th>
         <th
-          class="table__cell api-docs__cell"
+          class="sc-breuTD KWokR api-docs__cell"
         >
           <span
-            class="paragraph paragraph--no-padding"
+            class="sc-bczRLJ deidno"
           >
             Admin only
           </span>
         </th>
         <th
-          class="table__cell api-docs__cell"
+          class="sc-breuTD KWokR api-docs__cell"
         >
           <span
-            class="paragraph paragraph--no-padding api-docs__description"
+            class="sc-bczRLJ deidno api-docs__description"
           >
             TODO
           </span>
         </th>
       </tr>
       <tr
-        class="table__row"
+        class="sc-evZas"
       >
         <th
-          class="table__cell api-docs__cell"
+          class="sc-breuTD KWokR api-docs__cell"
         >
           <a
             aria-label="/support/delete (opens in a new tab)"
-            class="text-link text-link--text-link text-link--no-padding text-link--inline"
+            class="sc-ftvSup bvTsjB"
             href="https://www.georgegillams.co.uk/api/support/delete"
             rel="noopener noreferrer"
             target="_blank"
           >
             /support/delete
             <div
-              class="text-link__icon-container"
+              class="sc-papXJ ecwnCf"
             >
               <svg
-                class="icon text-link__icon"
+                class="sc-iBkjds eintev sc-jqUVSM fjeMmK"
                 height="18"
                 viewBox="0 0 24 24"
                 width="18"
@@ -2606,59 +2606,59 @@ exports[`<ApiDocs /> should render correctly 1`] = `
           </a>
         </th>
         <th
-          class="table__cell api-docs__cell"
+          class="sc-breuTD KWokR api-docs__cell"
         >
           <span
-            class="paragraph paragraph--no-padding api-docs__method"
+            class="sc-bczRLJ deidno api-docs__method"
           >
             POST
           </span>
         </th>
         <th
-          class="table__cell api-docs__cell"
+          class="sc-breuTD KWokR api-docs__cell"
         >
           <span
-            class="paragraph paragraph--no-padding"
+            class="sc-bczRLJ deidno"
           />
         </th>
         <th
-          class="table__cell api-docs__cell"
+          class="sc-breuTD KWokR api-docs__cell"
         >
           <span
-            class="paragraph paragraph--no-padding"
+            class="sc-bczRLJ deidno"
           >
             Admin only
           </span>
         </th>
         <th
-          class="table__cell api-docs__cell"
+          class="sc-breuTD KWokR api-docs__cell"
         >
           <span
-            class="paragraph paragraph--no-padding api-docs__description"
+            class="sc-bczRLJ deidno api-docs__description"
           >
             TODO
           </span>
         </th>
       </tr>
       <tr
-        class="table__row"
+        class="sc-evZas"
       >
         <th
-          class="table__cell api-docs__cell"
+          class="sc-breuTD KWokR api-docs__cell"
         >
           <a
             aria-label="/support/load (opens in a new tab)"
-            class="text-link text-link--text-link text-link--no-padding text-link--inline"
+            class="sc-ftvSup bvTsjB"
             href="https://www.georgegillams.co.uk/api/support/load"
             rel="noopener noreferrer"
             target="_blank"
           >
             /support/load
             <div
-              class="text-link__icon-container"
+              class="sc-papXJ ecwnCf"
             >
               <svg
-                class="icon text-link__icon"
+                class="sc-iBkjds eintev sc-jqUVSM fjeMmK"
                 height="18"
                 viewBox="0 0 24 24"
                 width="18"
@@ -2672,35 +2672,35 @@ exports[`<ApiDocs /> should render correctly 1`] = `
           </a>
         </th>
         <th
-          class="table__cell api-docs__cell"
+          class="sc-breuTD KWokR api-docs__cell"
         >
           <span
-            class="paragraph paragraph--no-padding api-docs__method"
+            class="sc-bczRLJ deidno api-docs__method"
           >
             GET
           </span>
         </th>
         <th
-          class="table__cell api-docs__cell"
+          class="sc-breuTD KWokR api-docs__cell"
         >
           <span
-            class="paragraph paragraph--no-padding"
+            class="sc-bczRLJ deidno"
           />
         </th>
         <th
-          class="table__cell api-docs__cell"
+          class="sc-breuTD KWokR api-docs__cell"
         >
           <span
-            class="paragraph paragraph--no-padding"
+            class="sc-bczRLJ deidno"
           >
             None
           </span>
         </th>
         <th
-          class="table__cell api-docs__cell"
+          class="sc-breuTD KWokR api-docs__cell"
         >
           <span
-            class="paragraph paragraph--no-padding api-docs__description"
+            class="sc-bczRLJ deidno api-docs__description"
           >
             TODO
           </span>

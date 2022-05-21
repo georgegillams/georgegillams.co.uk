@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import PropTypes from 'prop-types';
 import { cssModules } from '@george-gillams/components/helpers/cssModules';
 import DebugObject from 'components/common/DebugObject';
-import { LoadingCover } from '@george-gillams/components/LoadingCover';
+import LoadingCover from '@george-gillams/components/loading-cover';
 
 import BlogListSkeleton from './BlogListSkeleton';
 import BlogsNav from './BlogsNav';

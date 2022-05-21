@@ -1,18 +1,18 @@
 import React, { useState, useEffect } from 'react';
 // import BpkImage, { withLazyLoading, withLoadingBehavior } from 'bpk-component-image';
-import { Image } from '@george-gillams/components/Image';
+import Image from '@george-gillams/components/image';
 import { cssModules } from '@george-gillams/components/helpers/cssModules';
-import { Paragraph } from '@george-gillams/components/Paragraph';
-import { Section } from '@george-gillams/components/Section';
+import Paragraph from '@george-gillams/components/paragraph';
+import Section from '@george-gillams/components/section';
 import TextLink from 'components/common/TextLink';
 import PageTitle from 'components/common/PageTitle';
-import { DegreeModule } from '@george-gillams/components/Degree';
+import DegreeModule from '@george-gillams/components/degree-module';
 
 import STYLES from './work-degree.scss';
 
 import SouthamptonUniLogo from './southampton.svg';
 
-import Subsection from '@george-gillams/components/Subsection/Subsection';
+import Subsection from '@george-gillams/components/subsection';
 
 const getClassName = cssModules(STYLES);
 

@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import PropTypes from 'prop-types';
 import PageTitle from 'components/common/PageTitle';
-import { DebugObject } from 'components/common/DebugObject';
-import { LoadingCover } from '@george-gillams/components/LoadingCover';
-import { Button } from '@george-gillams/components/Button';
+import DebugObject from 'components/common/DebugObject';
+import LoadingCover from '@george-gillams/components/loading-cover';
+import Button from 'components/common/Button';
 import { AdminOnly } from 'components/common/Walls';
 import { setPostLoginRedirect } from 'client-utils/common/storageHelpers';
 import Skeleton from './Skeleton';

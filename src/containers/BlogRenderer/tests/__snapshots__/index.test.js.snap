@@ -34,23 +34,23 @@ exports[`<BlogRenderer /> should render correctly - index 1`] = `
         Copyright
       </h3>
       <span
-        class="paragraph"
+        class="sc-fnykZs kIjAem"
       >
         Most of my photos are licensed under
          
         <a
           aria-label="Creative Commons BY-SA 3.0 (opens in a new tab)"
-          class="text-link text-link--text-link text-link--no-padding text-link--inline"
+          class="sc-crXcEl lmkZeE"
           href="https://creativecommons.org/licenses/by-sa/3.0/"
           rel="noopener noreferrer"
           target="_blank"
         >
           Creative Commons BY-SA 3.0
           <div
-            class="text-link__icon-container"
+            class="sc-evZas gLzuUv"
           >
             <svg
-              class="icon text-link__icon"
+              class="sc-iqcoie ihGKQO sc-breuTD ktuGc"
               height="18"
               viewBox="0 0 24 24"
               width="18"
@@ -66,7 +66,7 @@ exports[`<BlogRenderer /> should render correctly - index 1`] = `
         <br />
         If you are unsure about your right to use them please 
         <a
-          class="text-link text-link--text-link text-link--no-padding text-link--inline"
+          class="sc-crXcEl lmkZeE"
           href="/contact"
         >
           contact me
@@ -81,7 +81,7 @@ exports[`<BlogRenderer /> should render correctly - index 1`] = `
 exports[`<BlogRenderer /> should render correctly with blog 1`] = `
 <div>
   <a
-    class="text-link text-link--text-link text-link--no-padding text-link--inline page-title__link"
+    class="sc-crXcEl lmkZeE page-title__link"
     href="/blogs"
   >
     ⇠ Blogs
@@ -95,8 +95,7 @@ exports[`<BlogRenderer /> should render correctly with blog 1`] = `
     class="blog-renderer__date"
   >
     <span
-      class="article-date__date"
-      style="font-style: italic;"
+      class="sc-eCYdqJ iiRHQc sc-gKXOVf hCxNQk"
     >
       Published 
       TEST_DATE
@@ -106,10 +105,11 @@ exports[`<BlogRenderer /> should render correctly with blog 1`] = `
     class="blog-renderer__tag-list"
   >
     <div
-      class="tag__outer blog-renderer__tag"
+      class="sc-bjUoiL blog-renderer__tag"
     >
       <span
-        class="tag tag--travel"
+        class="sc-idiyUo ijulBS"
+        type="travel"
       >
         Travel
       </span>
@@ -119,22 +119,22 @@ exports[`<BlogRenderer /> should render correctly with blog 1`] = `
     class="markdown-renderer__outer"
   >
     <span
-      class="paragraph markdown-renderer__element markdown-renderer__paragraph"
+      class="sc-fnykZs kIjAem markdown-renderer__element markdown-renderer__paragraph"
     >
       Some content with 
       <a
         aria-label="a link (opens in a new tab)"
-        class="text-link text-link--text-link text-link--no-padding text-link--inline"
+        class="sc-crXcEl lmkZeE"
         href="https://duckduckgo.com/"
         rel="noopener noreferrer"
         target="_blank"
       >
         a link
         <div
-          class="text-link__icon-container"
+          class="sc-evZas gLzuUv"
         >
           <svg
-            class="icon text-link__icon"
+            class="sc-iqcoie ihGKQO sc-breuTD ktuGc"
             height="18"
             viewBox="0 0 24 24"
             width="18"
@@ -165,23 +165,23 @@ exports[`<BlogRenderer /> should render correctly with blog 1`] = `
         Copyright
       </h3>
       <span
-        class="paragraph"
+        class="sc-fnykZs kIjAem"
       >
         Most of my photos are licensed under
          
         <a
           aria-label="Creative Commons BY-SA 3.0 (opens in a new tab)"
-          class="text-link text-link--text-link text-link--no-padding text-link--inline"
+          class="sc-crXcEl lmkZeE"
           href="https://creativecommons.org/licenses/by-sa/3.0/"
           rel="noopener noreferrer"
           target="_blank"
         >
           Creative Commons BY-SA 3.0
           <div
-            class="text-link__icon-container"
+            class="sc-evZas gLzuUv"
           >
             <svg
-              class="icon text-link__icon"
+              class="sc-iqcoie ihGKQO sc-breuTD ktuGc"
               height="18"
               viewBox="0 0 24 24"
               width="18"
@@ -197,7 +197,7 @@ exports[`<BlogRenderer /> should render correctly with blog 1`] = `
         <br />
         If you are unsure about your right to use them please 
         <a
-          class="text-link text-link--text-link text-link--no-padding text-link--inline"
+          class="sc-crXcEl lmkZeE"
           href="/contact"
         >
           contact me
@@ -212,7 +212,7 @@ exports[`<BlogRenderer /> should render correctly with blog 1`] = `
 exports[`<BlogRenderer /> should render correctly with blog and admin 1`] = `
 <div>
   <a
-    class="text-link text-link--text-link text-link--no-padding text-link--inline page-title__link"
+    class="sc-crXcEl lmkZeE page-title__link"
     href="/blogs"
   >
     ⇠ Blogs
@@ -226,8 +226,7 @@ exports[`<BlogRenderer /> should render correctly with blog and admin 1`] = `
     class="blog-renderer__date"
   >
     <span
-      class="article-date__date"
-      style="font-style: italic;"
+      class="sc-eCYdqJ iiRHQc sc-gKXOVf hCxNQk"
     >
       Published 
       TEST_DATE
@@ -237,10 +236,11 @@ exports[`<BlogRenderer /> should render correctly with blog and admin 1`] = `
     class="blog-renderer__tag-list"
   >
     <div
-      class="tag__outer blog-renderer__tag"
+      class="sc-bjUoiL blog-renderer__tag"
     >
       <span
-        class="tag tag--travel"
+        class="sc-idiyUo ijulBS"
+        type="travel"
       >
         Travel
       </span>
@@ -250,22 +250,22 @@ exports[`<BlogRenderer /> should render correctly with blog and admin 1`] = `
     class="markdown-renderer__outer"
   >
     <span
-      class="paragraph markdown-renderer__element markdown-renderer__paragraph"
+      class="sc-fnykZs kIjAem markdown-renderer__element markdown-renderer__paragraph"
     >
       Some content with 
       <a
         aria-label="a link (opens in a new tab)"
-        class="text-link text-link--text-link text-link--no-padding text-link--inline"
+        class="sc-crXcEl lmkZeE"
         href="https://duckduckgo.com/"
         rel="noopener noreferrer"
         target="_blank"
       >
         a link
         <div
-          class="text-link__icon-container"
+          class="sc-evZas gLzuUv"
         >
           <svg
-            class="icon text-link__icon"
+            class="sc-iqcoie ihGKQO sc-breuTD ktuGc"
             height="18"
             viewBox="0 0 24 24"
             width="18"
@@ -309,23 +309,23 @@ exports[`<BlogRenderer /> should render correctly with blog and admin 1`] = `
         Copyright
       </h3>
       <span
-        class="paragraph"
+        class="sc-fnykZs kIjAem"
       >
         Most of my photos are licensed under
          
         <a
           aria-label="Creative Commons BY-SA 3.0 (opens in a new tab)"
-          class="text-link text-link--text-link text-link--no-padding text-link--inline"
+          class="sc-crXcEl lmkZeE"
           href="https://creativecommons.org/licenses/by-sa/3.0/"
           rel="noopener noreferrer"
           target="_blank"
         >
           Creative Commons BY-SA 3.0
           <div
-            class="text-link__icon-container"
+            class="sc-evZas gLzuUv"
           >
             <svg
-              class="icon text-link__icon"
+              class="sc-iqcoie ihGKQO sc-breuTD ktuGc"
               height="18"
               viewBox="0 0 24 24"
               width="18"
@@ -341,7 +341,7 @@ exports[`<BlogRenderer /> should render correctly with blog and admin 1`] = `
         <br />
         If you are unsure about your right to use them please 
         <a
-          class="text-link text-link--text-link text-link--no-padding text-link--inline"
+          class="sc-crXcEl lmkZeE"
           href="/contact"
         >
           contact me
@@ -356,10 +356,10 @@ exports[`<BlogRenderer /> should render correctly with blog and admin 1`] = `
 exports[`<BlogRenderer /> should render correctly with blog load error 1`] = `
 <div>
   <span
-    class="paragraph"
+    class="sc-fnykZs kIjAem"
   >
     <span
-      class="error"
+      class="sc-dIouRR HZIpG"
     >
       This blog couldn't be loaded
       <br />
@@ -408,23 +408,23 @@ exports[`<BlogRenderer /> should render correctly with blog load error 1`] = `
         Copyright
       </h3>
       <span
-        class="paragraph"
+        class="sc-fnykZs kIjAem"
       >
         Most of my photos are licensed under
          
         <a
           aria-label="Creative Commons BY-SA 3.0 (opens in a new tab)"
-          class="text-link text-link--text-link text-link--no-padding text-link--inline"
+          class="sc-crXcEl lmkZeE"
           href="https://creativecommons.org/licenses/by-sa/3.0/"
           rel="noopener noreferrer"
           target="_blank"
         >
           Creative Commons BY-SA 3.0
           <div
-            class="text-link__icon-container"
+            class="sc-evZas gLzuUv"
           >
             <svg
-              class="icon text-link__icon"
+              class="sc-iqcoie ihGKQO sc-breuTD ktuGc"
               height="18"
               viewBox="0 0 24 24"
               width="18"
@@ -440,7 +440,7 @@ exports[`<BlogRenderer /> should render correctly with blog load error 1`] = `
         <br />
         If you are unsure about your right to use them please 
         <a
-          class="text-link text-link--text-link text-link--no-padding text-link--inline"
+          class="sc-crXcEl lmkZeE"
           href="/contact"
         >
           contact me
@@ -486,23 +486,23 @@ exports[`<BlogRenderer /> should render correctly with initial state 1`] = `
         Copyright
       </h3>
       <span
-        class="paragraph"
+        class="sc-fnykZs kIjAem"
       >
         Most of my photos are licensed under
          
         <a
           aria-label="Creative Commons BY-SA 3.0 (opens in a new tab)"
-          class="text-link text-link--text-link text-link--no-padding text-link--inline"
+          class="sc-crXcEl lmkZeE"
           href="https://creativecommons.org/licenses/by-sa/3.0/"
           rel="noopener noreferrer"
           target="_blank"
         >
           Creative Commons BY-SA 3.0
           <div
-            class="text-link__icon-container"
+            class="sc-evZas gLzuUv"
           >
             <svg
-              class="icon text-link__icon"
+              class="sc-iqcoie ihGKQO sc-breuTD ktuGc"
               height="18"
               viewBox="0 0 24 24"
               width="18"
@@ -518,7 +518,7 @@ exports[`<BlogRenderer /> should render correctly with initial state 1`] = `
         <br />
         If you are unsure about your right to use them please 
         <a
-          class="text-link text-link--text-link text-link--no-padding text-link--inline"
+          class="sc-crXcEl lmkZeE"
           href="/contact"
         >
           contact me
@@ -533,7 +533,7 @@ exports[`<BlogRenderer /> should render correctly with initial state 1`] = `
 exports[`<BlogRenderer /> should render correctly with ssrBlog 1`] = `
 <div>
   <a
-    class="text-link text-link--text-link text-link--no-padding text-link--inline page-title__link"
+    class="sc-crXcEl lmkZeE page-title__link"
     href="/blogs"
   >
     ⇠ Blogs
@@ -547,8 +547,7 @@ exports[`<BlogRenderer /> should render correctly with ssrBlog 1`] = `
     class="blog-renderer__date"
   >
     <span
-      class="article-date__date"
-      style="font-style: italic;"
+      class="sc-eCYdqJ iiRHQc sc-gKXOVf hCxNQk"
     >
       Published 
       TEST_DATE
@@ -558,10 +557,11 @@ exports[`<BlogRenderer /> should render correctly with ssrBlog 1`] = `
     class="blog-renderer__tag-list"
   >
     <div
-      class="tag__outer blog-renderer__tag"
+      class="sc-bjUoiL blog-renderer__tag"
     >
       <span
-        class="tag tag--travel"
+        class="sc-idiyUo ijulBS"
+        type="travel"
       >
         Travel
       </span>
@@ -571,22 +571,22 @@ exports[`<BlogRenderer /> should render correctly with ssrBlog 1`] = `
     class="markdown-renderer__outer"
   >
     <span
-      class="paragraph markdown-renderer__element markdown-renderer__paragraph"
+      class="sc-fnykZs kIjAem markdown-renderer__element markdown-renderer__paragraph"
     >
       Some content with 
       <a
         aria-label="a link (opens in a new tab)"
-        class="text-link text-link--text-link text-link--no-padding text-link--inline"
+        class="sc-crXcEl lmkZeE"
         href="https://duckduckgo.com/"
         rel="noopener noreferrer"
         target="_blank"
       >
         a link
         <div
-          class="text-link__icon-container"
+          class="sc-evZas gLzuUv"
         >
           <svg
-            class="icon text-link__icon"
+            class="sc-iqcoie ihGKQO sc-breuTD ktuGc"
             height="18"
             viewBox="0 0 24 24"
             width="18"
@@ -617,23 +617,23 @@ exports[`<BlogRenderer /> should render correctly with ssrBlog 1`] = `
         Copyright
       </h3>
       <span
-        class="paragraph"
+        class="sc-fnykZs kIjAem"
       >
         Most of my photos are licensed under
          
         <a
           aria-label="Creative Commons BY-SA 3.0 (opens in a new tab)"
-          class="text-link text-link--text-link text-link--no-padding text-link--inline"
+          class="sc-crXcEl lmkZeE"
           href="https://creativecommons.org/licenses/by-sa/3.0/"
           rel="noopener noreferrer"
           target="_blank"
         >
           Creative Commons BY-SA 3.0
           <div
-            class="text-link__icon-container"
+            class="sc-evZas gLzuUv"
           >
             <svg
-              class="icon text-link__icon"
+              class="sc-iqcoie ihGKQO sc-breuTD ktuGc"
               height="18"
               viewBox="0 0 24 24"
               width="18"
@@ -649,7 +649,7 @@ exports[`<BlogRenderer /> should render correctly with ssrBlog 1`] = `
         <br />
         If you are unsure about your right to use them please 
         <a
-          class="text-link text-link--text-link text-link--no-padding text-link--inline"
+          class="sc-crXcEl lmkZeE"
           href="/contact"
         >
           contact me

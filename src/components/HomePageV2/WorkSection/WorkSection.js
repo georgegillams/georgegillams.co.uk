@@ -1,9 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import { withScroll, cleanRestScrollProps } from '@george-gillams/components/ScrollContainer';
-import { Paragraph } from '@george-gillams/components/Paragraph';
-import { Section } from '@george-gillams/components/Section';
+import withScroll, { cleanRestScrollProps } from '@george-gillams/components/scroll-container';
+import Paragraph from '@george-gillams/components/paragraph';
+import Section from '@george-gillams/components/section';
 import TextLink from 'components/common/TextLink';
 import Phones from './Phones';
 import STYLES from './work-section.scss';

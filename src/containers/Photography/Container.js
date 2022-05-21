@@ -1,9 +1,9 @@
 import React from 'react';
 import FeatureCard, { FEATURE_CARD_LAYOUTS } from 'components/common/FeatureCard';
-import { Image } from '@george-gillams/components/Image';
-import { Paragraph } from '@george-gillams/components/Paragraph';
-import { Section } from '@george-gillams/components/Section';
-import { Subsection } from '@george-gillams/components/Subsection';
+import Image from '@george-gillams/components/image';
+import Paragraph from '@george-gillams/components/paragraph';
+import Section from '@george-gillams/components/section';
+import Subsection from '@george-gillams/components/subsection';
 import PageTitle from 'components/common/PageTitle';
 import { cssModules } from '@george-gillams/components/helpers/cssModules';
 

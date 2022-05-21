@@ -1,5 +1,5 @@
 import React from 'react';
-import CardSkeleton from '@george-gillams/components/Skeletons/CardSkeleton';
+import CardSkeleton from '@george-gillams/components/skeleton/card-skeleton';
 import STYLES from './support.scss';
 import { cssModules } from '@george-gillams/components/helpers/cssModules';
 const getClassName = cssModules(STYLES);

@@ -1,3 +1,3 @@
-import { DebugObject } from '@george-gillams/components/DebugObject';
+import DebugObject from '@george-gillams/components/debug-object';
 
 export default DebugObject;

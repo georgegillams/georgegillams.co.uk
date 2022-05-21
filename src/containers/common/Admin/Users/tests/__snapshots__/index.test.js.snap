@@ -57,7 +57,7 @@ exports[`<AdminUsers /> should render correctly with admin user 1`] = `
 <div>
   <div>
     <a
-      class="text-link text-link--text-link text-link--no-padding text-link--inline page-title__link"
+      class="sc-iBkjds kXOvCG page-title__link"
       href="/admin"
     >
       ⇠ Admin
@@ -137,7 +137,7 @@ exports[`<AdminUsers /> should render correctly with createError 1`] = `
 <div>
   <div>
     <a
-      class="text-link text-link--text-link text-link--no-padding text-link--inline page-title__link"
+      class="sc-iBkjds kXOvCG page-title__link"
       href="/admin"
     >
       ⇠ Admin
@@ -217,7 +217,7 @@ exports[`<AdminUsers /> should render correctly with creating=true 1`] = `
 <div>
   <div>
     <a
-      class="text-link text-link--text-link text-link--no-padding text-link--inline page-title__link"
+      class="sc-iBkjds kXOvCG page-title__link"
       href="/admin"
     >
       ⇠ Admin
@@ -350,7 +350,7 @@ exports[`<AdminUsers /> should render correctly with loadError 1`] = `
 <div>
   <div>
     <a
-      class="text-link text-link--text-link text-link--no-padding text-link--inline page-title__link"
+      class="sc-iBkjds kXOvCG page-title__link"
       href="/admin"
     >
       ⇠ Admin
@@ -384,10 +384,10 @@ exports[`<AdminUsers /> should render correctly with loadError 1`] = `
     </button>
   </div>
   <span
-    class="paragraph"
+    class="sc-iqcoie fIUTrZ"
   >
     <span
-      class="error"
+      class="sc-fEOsli ffZaGb"
     >
       Could not load users
       <br />
@@ -441,7 +441,7 @@ exports[`<AdminUsers /> should render correctly with loading=true 1`] = `
 <div>
   <div>
     <a
-      class="text-link text-link--text-link text-link--no-padding text-link--inline page-title__link"
+      class="sc-iBkjds kXOvCG page-title__link"
       href="/admin"
     >
       ⇠ Admin
@@ -468,31 +468,31 @@ exports[`<AdminUsers /> should render correctly with loading=true 1`] = `
         class="button__loading-spinner"
       >
         <div
-          class="spinner__outer"
+          class="sc-jqUVSM VvXWN"
         >
           <div
-            class="spinner__inner"
+            class="sc-kDDrLX eeXkXB"
           />
           <div
-            class="spinner__inner"
+            class="sc-kDDrLX bnwDAh"
           />
           <div
-            class="spinner__inner"
+            class="sc-kDDrLX jSzHFu"
           />
           <div
-            class="spinner__inner"
+            class="sc-kDDrLX hHQzVj"
           />
           <div
-            class="spinner__inner"
+            class="sc-kDDrLX bOKAbg"
           />
           <div
-            class="spinner__inner"
+            class="sc-kDDrLX coEtcF"
           />
           <div
-            class="spinner__inner"
+            class="sc-kDDrLX cyugPZ"
           />
           <div
-            class="spinner__inner"
+            class="sc-kDDrLX grMaMB"
           />
         </div>
       </div>
@@ -555,7 +555,7 @@ exports[`<AdminUsers /> should render correctly with removeError 1`] = `
 <div>
   <div>
     <a
-      class="text-link text-link--text-link text-link--no-padding text-link--inline page-title__link"
+      class="sc-iBkjds kXOvCG page-title__link"
       href="/admin"
     >
       ⇠ Admin
@@ -635,7 +635,7 @@ exports[`<AdminUsers /> should render correctly with removing=true 1`] = `
 <div>
   <div>
     <a
-      class="text-link text-link--text-link text-link--no-padding text-link--inline page-title__link"
+      class="sc-iBkjds kXOvCG page-title__link"
       href="/admin"
     >
       ⇠ Admin
@@ -715,7 +715,7 @@ exports[`<AdminUsers /> should render correctly with requestError 1`] = `
 <div>
   <div>
     <a
-      class="text-link text-link--text-link text-link--no-padding text-link--inline page-title__link"
+      class="sc-iBkjds kXOvCG page-title__link"
       href="/admin"
     >
       ⇠ Admin
@@ -795,7 +795,7 @@ exports[`<AdminUsers /> should render correctly with requesting=true 1`] = `
 <div>
   <div>
     <a
-      class="text-link text-link--text-link text-link--no-padding text-link--inline page-title__link"
+      class="sc-iBkjds kXOvCG page-title__link"
       href="/admin"
     >
       ⇠ Admin
@@ -875,7 +875,7 @@ exports[`<AdminUsers /> should render correctly with updateError 1`] = `
 <div>
   <div>
     <a
-      class="text-link text-link--text-link text-link--no-padding text-link--inline page-title__link"
+      class="sc-iBkjds kXOvCG page-title__link"
       href="/admin"
     >
       ⇠ Admin
@@ -955,7 +955,7 @@ exports[`<AdminUsers /> should render correctly with updating=true 1`] = `
 <div>
   <div>
     <a
-      class="text-link text-link--text-link text-link--no-padding text-link--inline page-title__link"
+      class="sc-iBkjds kXOvCG page-title__link"
       href="/admin"
     >
       ⇠ Admin
@@ -1043,12 +1043,12 @@ exports[`<AdminUsers /> should render correctly with user 1`] = `
       Admin only
     </h2>
     <span
-      class="paragraph"
+      class="sc-iqcoie fIUTrZ"
     >
       You need to be logged in with an admin account to view this content.
       <br />
       <a
-        class="text-link text-link--text-link text-link--no-padding text-link--inline"
+        class="sc-iBkjds kXOvCG"
         href="/login"
       >
         Got a different admin account? Log in here.
@@ -1062,7 +1062,7 @@ exports[`<AdminUsers /> should render correctly with users 1`] = `
 <div>
   <div>
     <a
-      class="text-link text-link--text-link text-link--no-padding text-link--inline page-title__link"
+      class="sc-iBkjds kXOvCG page-title__link"
       href="/admin"
     >
       ⇠ Admin
@@ -1096,7 +1096,7 @@ exports[`<AdminUsers /> should render correctly with users 1`] = `
     </button>
   </div>
   <span
-    class="paragraph admin-analytics__count"
+    class="sc-iqcoie fIUTrZ admin-analytics__count"
   >
     Showing 
     3
@@ -1168,7 +1168,7 @@ exports[`<AdminUsers /> should render correctly with users 1`] = `
                     name
                   </h3>
                   <span
-                    class="paragraph"
+                    class="sc-iqcoie fIUTrZ"
                   >
                     <br />
                     id: 
@@ -1206,7 +1206,7 @@ exports[`<AdminUsers /> should render correctly with users 1`] = `
                     another
                   </h3>
                   <span
-                    class="paragraph"
+                    class="sc-iqcoie fIUTrZ"
                   >
                     <br />
                     id: 
@@ -1244,7 +1244,7 @@ exports[`<AdminUsers /> should render correctly with users 1`] = `
                     a third
                   </h3>
                   <span
-                    class="paragraph"
+                    class="sc-iqcoie fIUTrZ"
                   >
                     <br />
                     id: 

@@ -34,8 +34,7 @@ exports[`<Layout /> Should render correctly 1`] = `
       class="footer__tech"
     >
       <span
-        class="paragraph tech-specs__container"
-        theme="allWhite"
+        class="sc-bczRLJ bhVmoO tech-specs__container"
       >
         Built in
         <a
@@ -86,25 +85,25 @@ exports[`<Layout /> Should render correctly 1`] = `
       class="footer-nav__container footer__nav"
     >
       <a
-        class="text-link text-link--text-link text-link--no-padding text-link--text-link--all-white text-link--inline footer-nav__link"
+        class="sc-ftvSup bvTsjB footer-nav__link"
         href="/photography"
       >
         Photo
       </a>
       <a
-        class="text-link text-link--text-link text-link--no-padding text-link--text-link--all-white text-link--inline footer-nav__link"
+        class="sc-ftvSup bvTsjB footer-nav__link"
         href="/work"
       >
         Work
       </a>
       <a
-        class="text-link text-link--text-link text-link--no-padding text-link--text-link--all-white text-link--inline footer-nav__link"
+        class="sc-ftvSup bvTsjB footer-nav__link"
         href="/contact"
       >
         Contact
       </a>
       <a
-        class="text-link text-link--text-link text-link--no-padding text-link--text-link--all-white text-link--inline footer-nav__link"
+        class="sc-ftvSup bvTsjB footer-nav__link"
         href="/privacy-policy"
       >
         Privacy
@@ -148,8 +147,7 @@ exports[`<Layout /> Should render correctly with spread props 1`] = `
       class="footer__tech"
     >
       <span
-        class="paragraph tech-specs__container"
-        theme="allWhite"
+        class="sc-bczRLJ bhVmoO tech-specs__container"
       >
         Built in
         <a
@@ -200,25 +198,25 @@ exports[`<Layout /> Should render correctly with spread props 1`] = `
       class="footer-nav__container footer__nav"
     >
       <a
-        class="text-link text-link--text-link text-link--no-padding text-link--text-link--all-white text-link--inline footer-nav__link"
+        class="sc-ftvSup bvTsjB footer-nav__link"
         href="/photography"
       >
         Photo
       </a>
       <a
-        class="text-link text-link--text-link text-link--no-padding text-link--text-link--all-white text-link--inline footer-nav__link"
+        class="sc-ftvSup bvTsjB footer-nav__link"
         href="/work"
       >
         Work
       </a>
       <a
-        class="text-link text-link--text-link text-link--no-padding text-link--text-link--all-white text-link--inline footer-nav__link"
+        class="sc-ftvSup bvTsjB footer-nav__link"
         href="/contact"
       >
         Contact
       </a>
       <a
-        class="text-link text-link--text-link text-link--no-padding text-link--text-link--all-white text-link--inline footer-nav__link"
+        class="sc-ftvSup bvTsjB footer-nav__link"
         href="/privacy-policy"
       >
         Privacy

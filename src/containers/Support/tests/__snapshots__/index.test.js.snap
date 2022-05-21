@@ -150,10 +150,10 @@ exports[`<Support /> should render correctly with admin and createLinkError 1`] 
       ADD LINK
     </h2>
     <span
-      class="paragraph"
+      class="sc-jqUVSM iuHAUr"
     >
       <span
-        class="error"
+        class="sc-crXcEl dggGEa"
       >
         Failed to add link
         <br />
@@ -206,10 +206,10 @@ exports[`<Support /> should render correctly with admin and deleteLinkError 1`] 
       ADD LINK
     </h2>
     <span
-      class="paragraph"
+      class="sc-jqUVSM iuHAUr"
     >
       <span
-        class="error"
+        class="sc-crXcEl dggGEa"
       >
         Failed to delete link
         <br />
@@ -286,21 +286,21 @@ exports[`<Support /> should render correctly with links 1`] = `
       name 1
     </h3>
     <span
-      class="paragraph support-link__link"
+      class="sc-jqUVSM iuHAUr support-link__link"
     >
       <a
         aria-label="URL_1 (opens in a new tab)"
-        class="text-link text-link--text-link text-link--no-padding text-link--inline"
+        class="sc-iBkjds kXOvCG"
         href="URL_1"
         rel="noopener noreferrer"
         target="_blank"
       >
         URL_1
         <div
-          class="text-link__icon-container"
+          class="sc-ftvSup kUuEWK"
         >
           <svg
-            class="icon text-link__icon"
+            class="sc-gKXOVf fAwmrp sc-papXJ fmVkXn"
             height="18"
             viewBox="0 0 24 24"
             width="18"
@@ -326,21 +326,21 @@ exports[`<Support /> should render correctly with links 1`] = `
       name 2
     </h3>
     <span
-      class="paragraph support-link__link"
+      class="sc-jqUVSM iuHAUr support-link__link"
     >
       <a
         aria-label="URL_2 (opens in a new tab)"
-        class="text-link text-link--text-link text-link--no-padding text-link--inline"
+        class="sc-iBkjds kXOvCG"
         href="URL_2"
         rel="noopener noreferrer"
         target="_blank"
       >
         URL_2
         <div
-          class="text-link__icon-container"
+          class="sc-ftvSup kUuEWK"
         >
           <svg
-            class="icon text-link__icon"
+            class="sc-gKXOVf fAwmrp sc-papXJ fmVkXn"
             height="18"
             viewBox="0 0 24 24"
             width="18"
@@ -381,10 +381,10 @@ exports[`<Support /> should render correctly with loadError 1`] = `
     </button>
   </div>
   <span
-    class="paragraph"
+    class="sc-jqUVSM iuHAUr"
   >
     <span
-      class="error"
+      class="sc-crXcEl dggGEa"
     >
       The support session failed to load
       <br />

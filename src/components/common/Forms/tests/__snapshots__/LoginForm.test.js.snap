@@ -12,21 +12,21 @@ exports[`<LoginForm /> Should render correctly 1`] = `
       Email
     </label>
     <div
-      class="input__outer forms__component forms__component__text-box"
+      class="sc-hKMtZM fMOyKb forms__component forms__component__text-box"
       placeholder="Email"
     >
       <input
         aria-disabled="false"
         aria-invalid="false"
         autofill="email"
-        class="input__inner"
+        class="sc-papXJ cgekWF"
         id="email_FORM_ID"
         name="Email"
         spellcheck="false"
         value=""
       />
       <svg
-        class="icon input__icon input__icon--valid"
+        class="sc-dkzDqf bDLnRc sc-jqUVSM hfMxIT"
         height="18"
         viewBox="0 0 24 24"
         width="18"
