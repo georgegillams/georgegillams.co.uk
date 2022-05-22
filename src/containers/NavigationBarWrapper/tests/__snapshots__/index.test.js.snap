@@ -4,7 +4,7 @@ exports[`<Authenticator /> should render correctly - index 1`] = `
 <div>
   <header
     role="banner"
-    style="position: sticky; top: 0px;"
+    style="position: sticky; top: 0px; z-index: 997;"
   >
     <div
       class="navigation-bar__container"
@@ -78,7 +78,7 @@ exports[`<Authenticator /> should render correctly with default state 1`] = `
 <div>
   <header
     role="banner"
-    style="position: sticky; top: 0px;"
+    style="position: sticky; top: 0px; z-index: 997;"
   >
     <div
       class="navigation-bar__container"
@@ -152,7 +152,7 @@ exports[`<Authenticator /> should render correctly with null user 1`] = `
 <div>
   <header
     role="banner"
-    style="position: sticky; top: 0px;"
+    style="position: sticky; top: 0px; z-index: 997;"
   >
     <div
       class="navigation-bar__container"
@@ -229,7 +229,7 @@ exports[`<Authenticator /> should render correctly with user 1`] = `
 <div>
   <header
     role="banner"
-    style="position: sticky; top: 0px;"
+    style="position: sticky; top: 0px; z-index: 997;"
   >
     <div
       class="navigation-bar__container"
