@@ -16,11 +16,11 @@ Ensure redis is installed (`brew install redis`).
 ### Running locally
 
 ```
-PUPPETEER_SKIP_CHROMIUM_DOWNLOAD=true npm ci
-npm run dev
+PUPPETEER_SKIP_CHROMIUM_DOWNLOAD=true yarn install --frozen-lockfile
+yarn dev
 ```
 
-`npm run dev` will set all necessary environment variables needed to run the application.
+`yarn dev` will set all necessary environment variables needed to run the application.
 
 A debugger can be attached to debug server-side code.
 

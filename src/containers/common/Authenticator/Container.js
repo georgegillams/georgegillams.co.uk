@@ -3,17 +3,11 @@ import PropTypes from 'prop-types';
 import DebugObject from 'components/common/DebugObject';
 
 const Authenticator = props => {
+  const { loadAuth, authenticatorState, className } = props;
+
   useEffect(() => {
-    props.loadAuth();
+    loadAuth();
   }, []);
-
-  const {
-    loadAuth,
-
-    authenticatorState,
-
-    className,
-  } = props;
 
   const outerClassNames = [];
 

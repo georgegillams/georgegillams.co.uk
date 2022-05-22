@@ -198,7 +198,7 @@ exports[`<HomePage /> should render correctly 1`] = `
         >
           <div
             class="image__outer life-section__image-above-tablet life-section__image-above-tablet--left"
-            style="margin-top: 5rem; transform: rotate(NaNdeg);"
+            style="margin-top: 2.6rem; transform: rotate(-10.6deg);"
           >
             <div
               class="image__placeholder"
@@ -276,7 +276,7 @@ exports[`<HomePage /> should render correctly 1`] = `
           </div>
           <div
             class="image__outer life-section__image-above-tablet life-section__image-above-tablet--right"
-            style="margin-top: 8rem; transform: rotate(NaNdeg);"
+            style="margin-top: -0.39999999999999947rem; transform: rotate(4.6deg);"
           >
             <div
               class="image__placeholder"
@@ -314,7 +314,7 @@ exports[`<HomePage /> should render correctly 1`] = `
               class="life-section__mobile-image-wrapper life-section__mobile-image-wrapper--left"
             >
               <div
-                class="image__outer life-section__image-below-tablet life-section__image-below-tablet--left life-section__image-below-tablet--left-hide"
+                class="image__outer life-section__image-below-tablet life-section__image-below-tablet--left"
               >
                 <div
                   class="image__placeholder"
@@ -350,7 +350,7 @@ exports[`<HomePage /> should render correctly 1`] = `
               class="life-section__mobile-image-wrapper life-section__mobile-image-wrapper--right"
             >
               <div
-                class="image__outer life-section__image-below-tablet life-section__image-below-tablet--right life-section__image-below-tablet--right-hide"
+                class="image__outer life-section__image-below-tablet life-section__image-below-tablet--right"
               >
                 <div
                   class="image__placeholder"
@@ -564,6 +564,7 @@ exports[`<HomePage /> should render correctly 1`] = `
               </a>
               <div
                 class="contact-link__cloud"
+                style="left: 300%;"
               />
             </div>
           </div>
