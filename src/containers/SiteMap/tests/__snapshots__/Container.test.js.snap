@@ -19,10 +19,10 @@ exports[`<SiteMap /> should render correctly - index 1`] = `
       Blog 📝
     </h3>
     <span
-      class="paragraph"
+      class="sc-bczRLJ bhVmoO"
     >
       <a
-        class="text-link text-link--text-link text-link--no-padding text-link--inline"
+        class="sc-ftvSup bvTsjB"
         href="/blog"
       >
         Blog list
@@ -88,10 +88,10 @@ exports[`<SiteMap /> should render correctly - index 1`] = `
       Travel ✈️
     </h3>
     <span
-      class="paragraph"
+      class="sc-bczRLJ bhVmoO"
     >
       <a
-        class="text-link text-link--text-link text-link--no-padding text-link--inline"
+        class="sc-ftvSup bvTsjB"
         href="/travel"
       >
         Travel blog list
@@ -157,10 +157,10 @@ exports[`<SiteMap /> should render correctly - index 1`] = `
       Photography 📷
     </h3>
     <span
-      class="paragraph"
+      class="sc-bczRLJ bhVmoO"
     >
       <a
-        class="text-link text-link--text-link text-link--no-padding text-link--inline"
+        class="sc-ftvSup bvTsjB"
         href="/photography"
       >
         Photography
@@ -177,38 +177,38 @@ exports[`<SiteMap /> should render correctly - index 1`] = `
       Work 📱
     </h3>
     <span
-      class="paragraph"
+      class="sc-bczRLJ bhVmoO"
     >
       <a
-        class="text-link text-link--text-link text-link--no-padding text-link--inline"
+        class="sc-ftvSup bvTsjB"
         href="/work"
       >
         Overview
       </a>
       <br />
       <a
-        class="text-link text-link--text-link text-link--no-padding text-link--inline"
+        class="sc-ftvSup bvTsjB"
         href="/work/backpack"
       >
         Backpack
       </a>
       <br />
       <a
-        class="text-link text-link--text-link text-link--no-padding text-link--inline"
+        class="sc-ftvSup bvTsjB"
         href="/work/degree"
       >
         Degree
       </a>
       <br />
       <a
-        class="text-link text-link--text-link text-link--no-padding text-link--inline"
-        href="/work/EPICC"
+        class="sc-ftvSup bvTsjB"
+        href="/work/epicc"
       >
         EPICC
       </a>
       <br />
       <a
-        class="text-link text-link--text-link text-link--no-padding text-link--inline"
+        class="sc-ftvSup bvTsjB"
         href="/work/side-projects"
       >
         Side projects
@@ -225,10 +225,10 @@ exports[`<SiteMap /> should render correctly - index 1`] = `
       Design 🎨
     </h3>
     <span
-      class="paragraph"
+      class="sc-bczRLJ bhVmoO"
     >
       <a
-        class="text-link text-link--text-link text-link--no-padding text-link--inline"
+        class="sc-ftvSup bvTsjB"
         href="/privacy-policy"
       >
         Privacy Policy
@@ -245,31 +245,31 @@ exports[`<SiteMap /> should render correctly - index 1`] = `
       Other stuff 🤷‍♂️
     </h3>
     <span
-      class="paragraph"
+      class="sc-bczRLJ bhVmoO"
     >
       <a
-        class="text-link text-link--text-link text-link--no-padding text-link--inline"
+        class="sc-ftvSup bvTsjB"
         href="/contact"
       >
         Contact
       </a>
       <br />
       <a
-        class="text-link text-link--text-link text-link--no-padding text-link--inline"
+        class="sc-ftvSup bvTsjB"
         href="/support"
       >
         Support
       </a>
       <br />
       <a
-        class="text-link text-link--text-link text-link--no-padding text-link--inline"
+        class="sc-ftvSup bvTsjB"
         href="/debug"
       >
         Debug tools
       </a>
       <br />
       <a
-        class="text-link text-link--text-link text-link--no-padding text-link--inline"
+        class="sc-ftvSup bvTsjB"
         href="/status"
       >
         Status
@@ -286,21 +286,21 @@ exports[`<SiteMap /> should render correctly - index 1`] = `
       Random 🐉
     </h3>
     <span
-      class="paragraph"
+      class="sc-bczRLJ bhVmoO"
     >
       <a
         aria-label="Robots.txt (opens in a new tab)"
-        class="text-link text-link--text-link text-link--no-padding text-link--inline"
+        class="sc-ftvSup bvTsjB"
         href="/robots.txt"
         rel="noopener noreferrer"
         target="_blank"
       >
         Robots.txt
         <div
-          class="text-link__icon-container"
+          class="sc-papXJ ecwnCf"
         >
           <svg
-            class="icon text-link__icon"
+            class="sc-iBkjds eintev sc-jqUVSM fjeMmK"
             height="18"
             viewBox="0 0 24 24"
             width="18"
@@ -315,17 +315,17 @@ exports[`<SiteMap /> should render correctly - index 1`] = `
       <br />
       <a
         aria-label="SiteMap.xml (opens in a new tab)"
-        class="text-link text-link--text-link text-link--no-padding text-link--inline"
+        class="sc-ftvSup bvTsjB"
         href="/sitemap.xml"
         rel="noopener noreferrer"
         target="_blank"
       >
         SiteMap.xml
         <div
-          class="text-link__icon-container"
+          class="sc-papXJ ecwnCf"
         >
           <svg
-            class="icon text-link__icon"
+            class="sc-iBkjds eintev sc-jqUVSM fjeMmK"
             height="18"
             viewBox="0 0 24 24"
             width="18"
@@ -339,14 +339,14 @@ exports[`<SiteMap /> should render correctly - index 1`] = `
       </a>
       <br />
       <a
-        class="text-link text-link--text-link text-link--no-padding text-link--inline"
+        class="sc-ftvSup bvTsjB"
         href="/404"
       >
         404 error page - not found
       </a>
       <br />
       <a
-        class="text-link text-link--text-link text-link--no-padding text-link--inline"
+        class="sc-ftvSup bvTsjB"
         href="/teapot"
       >
         418 error page - I'm a teapot
@@ -363,10 +363,10 @@ exports[`<SiteMap /> should render correctly - index 1`] = `
       API
     </h3>
     <span
-      class="paragraph"
+      class="sc-bczRLJ bhVmoO"
     >
       <a
-        class="text-link text-link--text-link text-link--no-padding text-link--inline"
+        class="sc-ftvSup bvTsjB"
         href="/api-docs"
       >
         API docs
@@ -383,38 +383,38 @@ exports[`<SiteMap /> should render correctly - index 1`] = `
       Accounts 🔑
     </h3>
     <span
-      class="paragraph"
+      class="sc-bczRLJ bhVmoO"
     >
       <a
-        class="text-link text-link--text-link text-link--no-padding text-link--inline"
+        class="sc-ftvSup bvTsjB"
         href="/account"
       >
         Account
       </a>
       <br />
       <a
-        class="text-link text-link--text-link text-link--no-padding text-link--inline"
+        class="sc-ftvSup bvTsjB"
         href="/sign-up"
       >
         Sign up
       </a>
       <br />
       <a
-        class="text-link text-link--text-link text-link--no-padding text-link--inline"
+        class="sc-ftvSup bvTsjB"
         href="/login"
       >
         Log in
       </a>
       <br />
       <a
-        class="text-link text-link--text-link text-link--no-padding text-link--inline"
+        class="sc-ftvSup bvTsjB"
         href="/email-verification"
       >
         Email verification
       </a>
       <br />
       <a
-        class="text-link text-link--text-link text-link--no-padding text-link--inline"
+        class="sc-ftvSup bvTsjB"
         href="/magic-login"
       >
         Magic login
@@ -431,45 +431,45 @@ exports[`<SiteMap /> should render correctly - index 1`] = `
       Admin 👮‍♂️
     </h3>
     <span
-      class="paragraph"
+      class="sc-bczRLJ bhVmoO"
     >
       <a
-        class="text-link text-link--text-link text-link--no-padding text-link--inline"
+        class="sc-ftvSup bvTsjB"
         href="/admin"
       >
         Admin navigation
       </a>
       <br />
       <a
-        class="text-link text-link--text-link text-link--no-padding text-link--inline"
+        class="sc-ftvSup bvTsjB"
         href="/blog"
       >
         Blogs
       </a>
       <br />
       <a
-        class="text-link text-link--text-link text-link--no-padding text-link--inline"
+        class="sc-ftvSup bvTsjB"
         href="/admin/analytics"
       >
         Analytics
       </a>
       <br />
       <a
-        class="text-link text-link--text-link text-link--no-padding text-link--inline"
+        class="sc-ftvSup bvTsjB"
         href="/admin/emails"
       >
         Emails
       </a>
       <br />
       <a
-        class="text-link text-link--text-link text-link--no-padding text-link--inline"
+        class="sc-ftvSup bvTsjB"
         href="/admin/notifications"
       >
         Notifications
       </a>
       <br />
       <a
-        class="text-link text-link--text-link text-link--no-padding text-link--inline"
+        class="sc-ftvSup bvTsjB"
         href="/admin/users"
       >
         Users
@@ -486,11 +486,11 @@ exports[`<SiteMap /> should render correctly - index 1`] = `
       Redirects 👉
     </h3>
     <span
-      class="paragraph"
+      class="sc-bczRLJ bhVmoO"
     >
       <div>
         <a
-          class="text-link text-link--text-link text-link--no-padding text-link--inline"
+          class="sc-ftvSup bvTsjB"
           href="/codebase"
         >
           /codebase ⇒ https://github.com/georgegillams/georgegillams.co.uk
@@ -499,7 +499,7 @@ exports[`<SiteMap /> should render correctly - index 1`] = `
       </div>
       <div>
         <a
-          class="text-link text-link--text-link text-link--no-padding text-link--inline"
+          class="sc-ftvSup bvTsjB"
           href="/copyright"
         >
           /copyright ⇒ https://creativecommons.org/licenses/by-sa/3.0/
@@ -508,7 +508,7 @@ exports[`<SiteMap /> should render correctly - index 1`] = `
       </div>
       <div>
         <a
-          class="text-link text-link--text-link text-link--no-padding text-link--inline"
+          class="sc-ftvSup bvTsjB"
           href="/flickr"
         >
           /flickr ⇒ https://www.flickr.com/people/georgegillams
@@ -517,7 +517,7 @@ exports[`<SiteMap /> should render correctly - index 1`] = `
       </div>
       <div>
         <a
-          class="text-link text-link--text-link text-link--no-padding text-link--inline"
+          class="sc-ftvSup bvTsjB"
           href="/monzo"
         >
           /monzo ⇒ https://join.monzo.com/r/vjd3d74
@@ -526,7 +526,7 @@ exports[`<SiteMap /> should render correctly - index 1`] = `
       </div>
       <div>
         <a
-          class="text-link text-link--text-link text-link--no-padding text-link--inline"
+          class="sc-ftvSup bvTsjB"
           href="/github"
         >
           /github ⇒ https://github.com/georgegillams
@@ -535,7 +535,7 @@ exports[`<SiteMap /> should render correctly - index 1`] = `
       </div>
       <div>
         <a
-          class="text-link text-link--text-link text-link--no-padding text-link--inline"
+          class="sc-ftvSup bvTsjB"
           href="/stackoverflow"
         >
           /stackoverflow ⇒ https://stackoverflow.com/users/14463713/georgegillams
@@ -544,7 +544,7 @@ exports[`<SiteMap /> should render correctly - index 1`] = `
       </div>
       <div>
         <a
-          class="text-link text-link--text-link text-link--no-padding text-link--inline"
+          class="sc-ftvSup bvTsjB"
           href="/gurushots"
         >
           /gurushots ⇒ https://gurushots.com/georgegillams/photos
@@ -553,7 +553,7 @@ exports[`<SiteMap /> should render correctly - index 1`] = `
       </div>
       <div>
         <a
-          class="text-link text-link--text-link text-link--no-padding text-link--inline"
+          class="sc-ftvSup bvTsjB"
           href="/linkedin"
         >
           /linkedin ⇒ https://www.linkedin.com/in/george-gillams-37537077
@@ -562,7 +562,7 @@ exports[`<SiteMap /> should render correctly - index 1`] = `
       </div>
       <div>
         <a
-          class="text-link text-link--text-link text-link--no-padding text-link--inline"
+          class="sc-ftvSup bvTsjB"
           href="/twitter"
         >
           /twitter ⇒ https://twitter.com/georgegillams
@@ -571,7 +571,7 @@ exports[`<SiteMap /> should render correctly - index 1`] = `
       </div>
       <div>
         <a
-          class="text-link text-link--text-link text-link--no-padding text-link--inline"
+          class="sc-ftvSup bvTsjB"
           href="/wp-admin"
         >
           /wp-admin ⇒ /admin
@@ -580,7 +580,7 @@ exports[`<SiteMap /> should render correctly - index 1`] = `
       </div>
       <div>
         <a
-          class="text-link text-link--text-link text-link--no-padding text-link--inline"
+          class="sc-ftvSup bvTsjB"
           href="/about"
         >
           /about ⇒ /
@@ -589,7 +589,7 @@ exports[`<SiteMap /> should render correctly - index 1`] = `
       </div>
       <div>
         <a
-          class="text-link text-link--text-link text-link--no-padding text-link--inline"
+          class="sc-ftvSup bvTsjB"
           href="/site-map"
         >
           /site-map ⇒ /sitemap
@@ -598,7 +598,7 @@ exports[`<SiteMap /> should render correctly - index 1`] = `
       </div>
       <div>
         <a
-          class="text-link text-link--text-link text-link--no-padding text-link--inline"
+          class="sc-ftvSup bvTsjB"
           href="/about/degree"
         >
           /about/degree ⇒ /work/degree
@@ -607,7 +607,7 @@ exports[`<SiteMap /> should render correctly - index 1`] = `
       </div>
       <div>
         <a
-          class="text-link text-link--text-link text-link--no-padding text-link--inline"
+          class="sc-ftvSup bvTsjB"
           href="/articles/tough-mudder"
         >
           /articles/tough-mudder ⇒ /blog/tough-mudder
@@ -616,7 +616,7 @@ exports[`<SiteMap /> should render correctly - index 1`] = `
       </div>
       <div>
         <a
-          class="text-link text-link--text-link text-link--no-padding text-link--inline"
+          class="sc-ftvSup bvTsjB"
           href="/articles/net-neutrality"
         >
           /articles/net-neutrality ⇒ /blog/net-neutrality
@@ -625,7 +625,7 @@ exports[`<SiteMap /> should render correctly - index 1`] = `
       </div>
       <div>
         <a
-          class="text-link text-link--text-link text-link--no-padding text-link--inline"
+          class="sc-ftvSup bvTsjB"
           href="/articles/vim"
         >
           /articles/vim ⇒ /blog/vim
@@ -634,7 +634,7 @@ exports[`<SiteMap /> should render correctly - index 1`] = `
       </div>
       <div>
         <a
-          class="text-link text-link--text-link text-link--no-padding text-link--inline"
+          class="sc-ftvSup bvTsjB"
           href="/articles/uk-bank-security"
         >
           /articles/uk-bank-security ⇒ /blog/uk-bank-security
@@ -643,7 +643,7 @@ exports[`<SiteMap /> should render correctly - index 1`] = `
       </div>
       <div>
         <a
-          class="text-link text-link--text-link text-link--no-padding text-link--inline"
+          class="sc-ftvSup bvTsjB"
           href="/articles/week-of-rust"
         >
           /articles/week-of-rust ⇒ /blog/week-of-rust
@@ -652,7 +652,7 @@ exports[`<SiteMap /> should render correctly - index 1`] = `
       </div>
       <div>
         <a
-          class="text-link text-link--text-link text-link--no-padding text-link--inline"
+          class="sc-ftvSup bvTsjB"
           href="/articles/react-http-response-codes"
         >
           /articles/react-http-response-codes ⇒ /blog/react-http-response-codes
@@ -661,7 +661,7 @@ exports[`<SiteMap /> should render correctly - index 1`] = `
       </div>
       <div>
         <a
-          class="text-link text-link--text-link text-link--no-padding text-link--inline"
+          class="sc-ftvSup bvTsjB"
           href="/articles/list"
         >
           /articles/list ⇒ /blog
@@ -670,7 +670,7 @@ exports[`<SiteMap /> should render correctly - index 1`] = `
       </div>
       <div>
         <a
-          class="text-link text-link--text-link text-link--no-padding text-link--inline"
+          class="sc-ftvSup bvTsjB"
           href="/articles"
         >
           /articles ⇒ /blog
@@ -679,7 +679,7 @@ exports[`<SiteMap /> should render correctly - index 1`] = `
       </div>
       <div>
         <a
-          class="text-link text-link--text-link text-link--no-padding text-link--inline"
+          class="sc-ftvSup bvTsjB"
           href="/net-neutrality"
         >
           /net-neutrality ⇒ /blog/net-neutrality
@@ -688,7 +688,7 @@ exports[`<SiteMap /> should render correctly - index 1`] = `
       </div>
       <div>
         <a
-          class="text-link text-link--text-link text-link--no-padding text-link--inline"
+          class="sc-ftvSup bvTsjB"
           href="/blog/view"
         >
           /blog/view ⇒ /blog
@@ -697,7 +697,7 @@ exports[`<SiteMap /> should render correctly - index 1`] = `
       </div>
       <div>
         <a
-          class="text-link text-link--text-link text-link--no-padding text-link--inline"
+          class="sc-ftvSup bvTsjB"
           href="/travel/view"
         >
           /travel/view ⇒ /travel
@@ -706,7 +706,7 @@ exports[`<SiteMap /> should render correctly - index 1`] = `
       </div>
       <div>
         <a
-          class="text-link text-link--text-link text-link--no-padding text-link--inline"
+          class="sc-ftvSup bvTsjB"
           href="/blog/view?id=tg5x7po9"
         >
           /blog/view?id=tg5x7po9 ⇒ /blog/tough-mudder
@@ -715,7 +715,7 @@ exports[`<SiteMap /> should render correctly - index 1`] = `
       </div>
       <div>
         <a
-          class="text-link text-link--text-link text-link--no-padding text-link--inline"
+          class="sc-ftvSup bvTsjB"
           href="/blog/view?id=lqngy"
         >
           /blog/view?id=lqngy ⇒ /blog/lightroom-workflow
@@ -724,7 +724,7 @@ exports[`<SiteMap /> should render correctly - index 1`] = `
       </div>
       <div>
         <a
-          class="text-link text-link--text-link text-link--no-padding text-link--inline"
+          class="sc-ftvSup bvTsjB"
           href="/blog/view?id=w85aht"
         >
           /blog/view?id=w85aht ⇒ /blog/net-neutrality
@@ -733,7 +733,7 @@ exports[`<SiteMap /> should render correctly - index 1`] = `
       </div>
       <div>
         <a
-          class="text-link text-link--text-link text-link--no-padding text-link--inline"
+          class="sc-ftvSup bvTsjB"
           href="/blog/view?id=azcpjh"
         >
           /blog/view?id=azcpjh ⇒ /blog/vim
@@ -742,7 +742,7 @@ exports[`<SiteMap /> should render correctly - index 1`] = `
       </div>
       <div>
         <a
-          class="text-link text-link--text-link text-link--no-padding text-link--inline"
+          class="sc-ftvSup bvTsjB"
           href="/blog/view?id=y77dnh"
         >
           /blog/view?id=y77dnh ⇒ /blog/uk-bank-security
@@ -751,7 +751,7 @@ exports[`<SiteMap /> should render correctly - index 1`] = `
       </div>
       <div>
         <a
-          class="text-link text-link--text-link text-link--no-padding text-link--inline"
+          class="sc-ftvSup bvTsjB"
           href="/travel/list"
         >
           /travel/list ⇒ /travel
@@ -760,7 +760,7 @@ exports[`<SiteMap /> should render correctly - index 1`] = `
       </div>
       <div>
         <a
-          class="text-link text-link--text-link text-link--no-padding text-link--inline"
+          class="sc-ftvSup bvTsjB"
           href="/travel/view?id=kzm87"
         >
           /travel/view?id=kzm87 ⇒ /travel/serre-chevalier-2017
@@ -769,7 +769,7 @@ exports[`<SiteMap /> should render correctly - index 1`] = `
       </div>
       <div>
         <a
-          class="text-link text-link--text-link text-link--no-padding text-link--inline"
+          class="sc-ftvSup bvTsjB"
           href="/travel/view?id=m4noe"
         >
           /travel/view?id=m4noe ⇒ /travel/disneyland-2017
@@ -778,7 +778,7 @@ exports[`<SiteMap /> should render correctly - index 1`] = `
       </div>
       <div>
         <a
-          class="text-link text-link--text-link text-link--no-padding text-link--inline"
+          class="sc-ftvSup bvTsjB"
           href="/travel/view?id=e0muz1"
         >
           /travel/view?id=e0muz1 ⇒ /travel/munich-2017
@@ -787,7 +787,7 @@ exports[`<SiteMap /> should render correctly - index 1`] = `
       </div>
       <div>
         <a
-          class="text-link text-link--text-link text-link--no-padding text-link--inline"
+          class="sc-ftvSup bvTsjB"
           href="/travel/view?id=evrd8w"
         >
           /travel/view?id=evrd8w ⇒ /travel/longleat-2017
@@ -796,7 +796,7 @@ exports[`<SiteMap /> should render correctly - index 1`] = `
       </div>
       <div>
         <a
-          class="text-link text-link--text-link text-link--no-padding text-link--inline"
+          class="sc-ftvSup bvTsjB"
           href="/travel/view?id=q03ms"
         >
           /travel/view?id=q03ms ⇒ /travel/iceland-2018
@@ -805,7 +805,7 @@ exports[`<SiteMap /> should render correctly - index 1`] = `
       </div>
       <div>
         <a
-          class="text-link text-link--text-link text-link--no-padding text-link--inline"
+          class="sc-ftvSup bvTsjB"
           href="/art"
         >
           /art ⇒ /photography
@@ -814,7 +814,7 @@ exports[`<SiteMap /> should render correctly - index 1`] = `
       </div>
       <div>
         <a
-          class="text-link text-link--text-link text-link--no-padding text-link--inline"
+          class="sc-ftvSup bvTsjB"
           href="/photoshop"
         >
           /photoshop ⇒ /photography
@@ -823,7 +823,7 @@ exports[`<SiteMap /> should render correctly - index 1`] = `
       </div>
       <div>
         <a
-          class="text-link text-link--text-link text-link--no-padding text-link--inline"
+          class="sc-ftvSup bvTsjB"
           href="/phot"
         >
           /phot ⇒ /photography
@@ -832,7 +832,7 @@ exports[`<SiteMap /> should render correctly - index 1`] = `
       </div>
       <div>
         <a
-          class="text-link text-link--text-link text-link--no-padding text-link--inline"
+          class="sc-ftvSup bvTsjB"
           href="/photo"
         >
           /photo ⇒ /photography
@@ -841,7 +841,7 @@ exports[`<SiteMap /> should render correctly - index 1`] = `
       </div>
       <div>
         <a
-          class="text-link text-link--text-link text-link--no-padding text-link--inline"
+          class="sc-ftvSup bvTsjB"
           href="/payment"
         >
           /payment ⇒ /payments
@@ -870,10 +870,10 @@ exports[`<SiteMap /> should render correctly 1`] = `
       Blog 📝
     </h3>
     <span
-      class="paragraph"
+      class="sc-bczRLJ bhVmoO"
     >
       <a
-        class="text-link text-link--text-link text-link--no-padding text-link--inline"
+        class="sc-ftvSup bvTsjB"
         href="/blog"
       >
         Blog list
@@ -939,10 +939,10 @@ exports[`<SiteMap /> should render correctly 1`] = `
       Travel ✈️
     </h3>
     <span
-      class="paragraph"
+      class="sc-bczRLJ bhVmoO"
     >
       <a
-        class="text-link text-link--text-link text-link--no-padding text-link--inline"
+        class="sc-ftvSup bvTsjB"
         href="/travel"
       >
         Travel blog list
@@ -1008,10 +1008,10 @@ exports[`<SiteMap /> should render correctly 1`] = `
       Photography 📷
     </h3>
     <span
-      class="paragraph"
+      class="sc-bczRLJ bhVmoO"
     >
       <a
-        class="text-link text-link--text-link text-link--no-padding text-link--inline"
+        class="sc-ftvSup bvTsjB"
         href="/photography"
       >
         Photography
@@ -1028,38 +1028,38 @@ exports[`<SiteMap /> should render correctly 1`] = `
       Work 📱
     </h3>
     <span
-      class="paragraph"
+      class="sc-bczRLJ bhVmoO"
     >
       <a
-        class="text-link text-link--text-link text-link--no-padding text-link--inline"
+        class="sc-ftvSup bvTsjB"
         href="/work"
       >
         Overview
       </a>
       <br />
       <a
-        class="text-link text-link--text-link text-link--no-padding text-link--inline"
+        class="sc-ftvSup bvTsjB"
         href="/work/backpack"
       >
         Backpack
       </a>
       <br />
       <a
-        class="text-link text-link--text-link text-link--no-padding text-link--inline"
+        class="sc-ftvSup bvTsjB"
         href="/work/degree"
       >
         Degree
       </a>
       <br />
       <a
-        class="text-link text-link--text-link text-link--no-padding text-link--inline"
-        href="/work/EPICC"
+        class="sc-ftvSup bvTsjB"
+        href="/work/epicc"
       >
         EPICC
       </a>
       <br />
       <a
-        class="text-link text-link--text-link text-link--no-padding text-link--inline"
+        class="sc-ftvSup bvTsjB"
         href="/work/side-projects"
       >
         Side projects
@@ -1076,10 +1076,10 @@ exports[`<SiteMap /> should render correctly 1`] = `
       Design 🎨
     </h3>
     <span
-      class="paragraph"
+      class="sc-bczRLJ bhVmoO"
     >
       <a
-        class="text-link text-link--text-link text-link--no-padding text-link--inline"
+        class="sc-ftvSup bvTsjB"
         href="/privacy-policy"
       >
         Privacy Policy
@@ -1096,31 +1096,31 @@ exports[`<SiteMap /> should render correctly 1`] = `
       Other stuff 🤷‍♂️
     </h3>
     <span
-      class="paragraph"
+      class="sc-bczRLJ bhVmoO"
     >
       <a
-        class="text-link text-link--text-link text-link--no-padding text-link--inline"
+        class="sc-ftvSup bvTsjB"
         href="/contact"
       >
         Contact
       </a>
       <br />
       <a
-        class="text-link text-link--text-link text-link--no-padding text-link--inline"
+        class="sc-ftvSup bvTsjB"
         href="/support"
       >
         Support
       </a>
       <br />
       <a
-        class="text-link text-link--text-link text-link--no-padding text-link--inline"
+        class="sc-ftvSup bvTsjB"
         href="/debug"
       >
         Debug tools
       </a>
       <br />
       <a
-        class="text-link text-link--text-link text-link--no-padding text-link--inline"
+        class="sc-ftvSup bvTsjB"
         href="/status"
       >
         Status
@@ -1137,21 +1137,21 @@ exports[`<SiteMap /> should render correctly 1`] = `
       Random 🐉
     </h3>
     <span
-      class="paragraph"
+      class="sc-bczRLJ bhVmoO"
     >
       <a
         aria-label="Robots.txt (opens in a new tab)"
-        class="text-link text-link--text-link text-link--no-padding text-link--inline"
+        class="sc-ftvSup bvTsjB"
         href="/robots.txt"
         rel="noopener noreferrer"
         target="_blank"
       >
         Robots.txt
         <div
-          class="text-link__icon-container"
+          class="sc-papXJ ecwnCf"
         >
           <svg
-            class="icon text-link__icon"
+            class="sc-iBkjds eintev sc-jqUVSM fjeMmK"
             height="18"
             viewBox="0 0 24 24"
             width="18"
@@ -1166,17 +1166,17 @@ exports[`<SiteMap /> should render correctly 1`] = `
       <br />
       <a
         aria-label="SiteMap.xml (opens in a new tab)"
-        class="text-link text-link--text-link text-link--no-padding text-link--inline"
+        class="sc-ftvSup bvTsjB"
         href="/sitemap.xml"
         rel="noopener noreferrer"
         target="_blank"
       >
         SiteMap.xml
         <div
-          class="text-link__icon-container"
+          class="sc-papXJ ecwnCf"
         >
           <svg
-            class="icon text-link__icon"
+            class="sc-iBkjds eintev sc-jqUVSM fjeMmK"
             height="18"
             viewBox="0 0 24 24"
             width="18"
@@ -1190,14 +1190,14 @@ exports[`<SiteMap /> should render correctly 1`] = `
       </a>
       <br />
       <a
-        class="text-link text-link--text-link text-link--no-padding text-link--inline"
+        class="sc-ftvSup bvTsjB"
         href="/404"
       >
         404 error page - not found
       </a>
       <br />
       <a
-        class="text-link text-link--text-link text-link--no-padding text-link--inline"
+        class="sc-ftvSup bvTsjB"
         href="/teapot"
       >
         418 error page - I'm a teapot
@@ -1214,10 +1214,10 @@ exports[`<SiteMap /> should render correctly 1`] = `
       API
     </h3>
     <span
-      class="paragraph"
+      class="sc-bczRLJ bhVmoO"
     >
       <a
-        class="text-link text-link--text-link text-link--no-padding text-link--inline"
+        class="sc-ftvSup bvTsjB"
         href="/api-docs"
       >
         API docs
@@ -1234,38 +1234,38 @@ exports[`<SiteMap /> should render correctly 1`] = `
       Accounts 🔑
     </h3>
     <span
-      class="paragraph"
+      class="sc-bczRLJ bhVmoO"
     >
       <a
-        class="text-link text-link--text-link text-link--no-padding text-link--inline"
+        class="sc-ftvSup bvTsjB"
         href="/account"
       >
         Account
       </a>
       <br />
       <a
-        class="text-link text-link--text-link text-link--no-padding text-link--inline"
+        class="sc-ftvSup bvTsjB"
         href="/sign-up"
       >
         Sign up
       </a>
       <br />
       <a
-        class="text-link text-link--text-link text-link--no-padding text-link--inline"
+        class="sc-ftvSup bvTsjB"
         href="/login"
       >
         Log in
       </a>
       <br />
       <a
-        class="text-link text-link--text-link text-link--no-padding text-link--inline"
+        class="sc-ftvSup bvTsjB"
         href="/email-verification"
       >
         Email verification
       </a>
       <br />
       <a
-        class="text-link text-link--text-link text-link--no-padding text-link--inline"
+        class="sc-ftvSup bvTsjB"
         href="/magic-login"
       >
         Magic login
@@ -1282,45 +1282,45 @@ exports[`<SiteMap /> should render correctly 1`] = `
       Admin 👮‍♂️
     </h3>
     <span
-      class="paragraph"
+      class="sc-bczRLJ bhVmoO"
     >
       <a
-        class="text-link text-link--text-link text-link--no-padding text-link--inline"
+        class="sc-ftvSup bvTsjB"
         href="/admin"
       >
         Admin navigation
       </a>
       <br />
       <a
-        class="text-link text-link--text-link text-link--no-padding text-link--inline"
+        class="sc-ftvSup bvTsjB"
         href="/blog"
       >
         Blogs
       </a>
       <br />
       <a
-        class="text-link text-link--text-link text-link--no-padding text-link--inline"
+        class="sc-ftvSup bvTsjB"
         href="/admin/analytics"
       >
         Analytics
       </a>
       <br />
       <a
-        class="text-link text-link--text-link text-link--no-padding text-link--inline"
+        class="sc-ftvSup bvTsjB"
         href="/admin/emails"
       >
         Emails
       </a>
       <br />
       <a
-        class="text-link text-link--text-link text-link--no-padding text-link--inline"
+        class="sc-ftvSup bvTsjB"
         href="/admin/notifications"
       >
         Notifications
       </a>
       <br />
       <a
-        class="text-link text-link--text-link text-link--no-padding text-link--inline"
+        class="sc-ftvSup bvTsjB"
         href="/admin/users"
       >
         Users
@@ -1337,11 +1337,11 @@ exports[`<SiteMap /> should render correctly 1`] = `
       Redirects 👉
     </h3>
     <span
-      class="paragraph"
+      class="sc-bczRLJ bhVmoO"
     >
       <div>
         <a
-          class="text-link text-link--text-link text-link--no-padding text-link--inline"
+          class="sc-ftvSup bvTsjB"
           href="/codebase"
         >
           /codebase ⇒ https://github.com/georgegillams/georgegillams.co.uk
@@ -1350,7 +1350,7 @@ exports[`<SiteMap /> should render correctly 1`] = `
       </div>
       <div>
         <a
-          class="text-link text-link--text-link text-link--no-padding text-link--inline"
+          class="sc-ftvSup bvTsjB"
           href="/copyright"
         >
           /copyright ⇒ https://creativecommons.org/licenses/by-sa/3.0/
@@ -1359,7 +1359,7 @@ exports[`<SiteMap /> should render correctly 1`] = `
       </div>
       <div>
         <a
-          class="text-link text-link--text-link text-link--no-padding text-link--inline"
+          class="sc-ftvSup bvTsjB"
           href="/flickr"
         >
           /flickr ⇒ https://www.flickr.com/people/georgegillams
@@ -1368,7 +1368,7 @@ exports[`<SiteMap /> should render correctly 1`] = `
       </div>
       <div>
         <a
-          class="text-link text-link--text-link text-link--no-padding text-link--inline"
+          class="sc-ftvSup bvTsjB"
           href="/monzo"
         >
           /monzo ⇒ https://join.monzo.com/r/vjd3d74
@@ -1377,7 +1377,7 @@ exports[`<SiteMap /> should render correctly 1`] = `
       </div>
       <div>
         <a
-          class="text-link text-link--text-link text-link--no-padding text-link--inline"
+          class="sc-ftvSup bvTsjB"
           href="/github"
         >
           /github ⇒ https://github.com/georgegillams
@@ -1386,7 +1386,7 @@ exports[`<SiteMap /> should render correctly 1`] = `
       </div>
       <div>
         <a
-          class="text-link text-link--text-link text-link--no-padding text-link--inline"
+          class="sc-ftvSup bvTsjB"
           href="/stackoverflow"
         >
           /stackoverflow ⇒ https://stackoverflow.com/users/14463713/georgegillams
@@ -1395,7 +1395,7 @@ exports[`<SiteMap /> should render correctly 1`] = `
       </div>
       <div>
         <a
-          class="text-link text-link--text-link text-link--no-padding text-link--inline"
+          class="sc-ftvSup bvTsjB"
           href="/gurushots"
         >
           /gurushots ⇒ https://gurushots.com/georgegillams/photos
@@ -1404,7 +1404,7 @@ exports[`<SiteMap /> should render correctly 1`] = `
       </div>
       <div>
         <a
-          class="text-link text-link--text-link text-link--no-padding text-link--inline"
+          class="sc-ftvSup bvTsjB"
           href="/linkedin"
         >
           /linkedin ⇒ https://www.linkedin.com/in/george-gillams-37537077
@@ -1413,7 +1413,7 @@ exports[`<SiteMap /> should render correctly 1`] = `
       </div>
       <div>
         <a
-          class="text-link text-link--text-link text-link--no-padding text-link--inline"
+          class="sc-ftvSup bvTsjB"
           href="/twitter"
         >
           /twitter ⇒ https://twitter.com/georgegillams
@@ -1422,7 +1422,7 @@ exports[`<SiteMap /> should render correctly 1`] = `
       </div>
       <div>
         <a
-          class="text-link text-link--text-link text-link--no-padding text-link--inline"
+          class="sc-ftvSup bvTsjB"
           href="/wp-admin"
         >
           /wp-admin ⇒ /admin
@@ -1431,7 +1431,7 @@ exports[`<SiteMap /> should render correctly 1`] = `
       </div>
       <div>
         <a
-          class="text-link text-link--text-link text-link--no-padding text-link--inline"
+          class="sc-ftvSup bvTsjB"
           href="/about"
         >
           /about ⇒ /
@@ -1440,7 +1440,7 @@ exports[`<SiteMap /> should render correctly 1`] = `
       </div>
       <div>
         <a
-          class="text-link text-link--text-link text-link--no-padding text-link--inline"
+          class="sc-ftvSup bvTsjB"
           href="/site-map"
         >
           /site-map ⇒ /sitemap
@@ -1449,7 +1449,7 @@ exports[`<SiteMap /> should render correctly 1`] = `
       </div>
       <div>
         <a
-          class="text-link text-link--text-link text-link--no-padding text-link--inline"
+          class="sc-ftvSup bvTsjB"
           href="/about/degree"
         >
           /about/degree ⇒ /work/degree
@@ -1458,7 +1458,7 @@ exports[`<SiteMap /> should render correctly 1`] = `
       </div>
       <div>
         <a
-          class="text-link text-link--text-link text-link--no-padding text-link--inline"
+          class="sc-ftvSup bvTsjB"
           href="/articles/tough-mudder"
         >
           /articles/tough-mudder ⇒ /blog/tough-mudder
@@ -1467,7 +1467,7 @@ exports[`<SiteMap /> should render correctly 1`] = `
       </div>
       <div>
         <a
-          class="text-link text-link--text-link text-link--no-padding text-link--inline"
+          class="sc-ftvSup bvTsjB"
           href="/articles/net-neutrality"
         >
           /articles/net-neutrality ⇒ /blog/net-neutrality
@@ -1476,7 +1476,7 @@ exports[`<SiteMap /> should render correctly 1`] = `
       </div>
       <div>
         <a
-          class="text-link text-link--text-link text-link--no-padding text-link--inline"
+          class="sc-ftvSup bvTsjB"
           href="/articles/vim"
         >
           /articles/vim ⇒ /blog/vim
@@ -1485,7 +1485,7 @@ exports[`<SiteMap /> should render correctly 1`] = `
       </div>
       <div>
         <a
-          class="text-link text-link--text-link text-link--no-padding text-link--inline"
+          class="sc-ftvSup bvTsjB"
           href="/articles/uk-bank-security"
         >
           /articles/uk-bank-security ⇒ /blog/uk-bank-security
@@ -1494,7 +1494,7 @@ exports[`<SiteMap /> should render correctly 1`] = `
       </div>
       <div>
         <a
-          class="text-link text-link--text-link text-link--no-padding text-link--inline"
+          class="sc-ftvSup bvTsjB"
           href="/articles/week-of-rust"
         >
           /articles/week-of-rust ⇒ /blog/week-of-rust
@@ -1503,7 +1503,7 @@ exports[`<SiteMap /> should render correctly 1`] = `
       </div>
       <div>
         <a
-          class="text-link text-link--text-link text-link--no-padding text-link--inline"
+          class="sc-ftvSup bvTsjB"
           href="/articles/react-http-response-codes"
         >
           /articles/react-http-response-codes ⇒ /blog/react-http-response-codes
@@ -1512,7 +1512,7 @@ exports[`<SiteMap /> should render correctly 1`] = `
       </div>
       <div>
         <a
-          class="text-link text-link--text-link text-link--no-padding text-link--inline"
+          class="sc-ftvSup bvTsjB"
           href="/articles/list"
         >
           /articles/list ⇒ /blog
@@ -1521,7 +1521,7 @@ exports[`<SiteMap /> should render correctly 1`] = `
       </div>
       <div>
         <a
-          class="text-link text-link--text-link text-link--no-padding text-link--inline"
+          class="sc-ftvSup bvTsjB"
           href="/articles"
         >
           /articles ⇒ /blog
@@ -1530,7 +1530,7 @@ exports[`<SiteMap /> should render correctly 1`] = `
       </div>
       <div>
         <a
-          class="text-link text-link--text-link text-link--no-padding text-link--inline"
+          class="sc-ftvSup bvTsjB"
           href="/net-neutrality"
         >
           /net-neutrality ⇒ /blog/net-neutrality
@@ -1539,7 +1539,7 @@ exports[`<SiteMap /> should render correctly 1`] = `
       </div>
       <div>
         <a
-          class="text-link text-link--text-link text-link--no-padding text-link--inline"
+          class="sc-ftvSup bvTsjB"
           href="/blog/view"
         >
           /blog/view ⇒ /blog
@@ -1548,7 +1548,7 @@ exports[`<SiteMap /> should render correctly 1`] = `
       </div>
       <div>
         <a
-          class="text-link text-link--text-link text-link--no-padding text-link--inline"
+          class="sc-ftvSup bvTsjB"
           href="/travel/view"
         >
           /travel/view ⇒ /travel
@@ -1557,7 +1557,7 @@ exports[`<SiteMap /> should render correctly 1`] = `
       </div>
       <div>
         <a
-          class="text-link text-link--text-link text-link--no-padding text-link--inline"
+          class="sc-ftvSup bvTsjB"
           href="/blog/view?id=tg5x7po9"
         >
           /blog/view?id=tg5x7po9 ⇒ /blog/tough-mudder
@@ -1566,7 +1566,7 @@ exports[`<SiteMap /> should render correctly 1`] = `
       </div>
       <div>
         <a
-          class="text-link text-link--text-link text-link--no-padding text-link--inline"
+          class="sc-ftvSup bvTsjB"
           href="/blog/view?id=lqngy"
         >
           /blog/view?id=lqngy ⇒ /blog/lightroom-workflow
@@ -1575,7 +1575,7 @@ exports[`<SiteMap /> should render correctly 1`] = `
       </div>
       <div>
         <a
-          class="text-link text-link--text-link text-link--no-padding text-link--inline"
+          class="sc-ftvSup bvTsjB"
           href="/blog/view?id=w85aht"
         >
           /blog/view?id=w85aht ⇒ /blog/net-neutrality
@@ -1584,7 +1584,7 @@ exports[`<SiteMap /> should render correctly 1`] = `
       </div>
       <div>
         <a
-          class="text-link text-link--text-link text-link--no-padding text-link--inline"
+          class="sc-ftvSup bvTsjB"
           href="/blog/view?id=azcpjh"
         >
           /blog/view?id=azcpjh ⇒ /blog/vim
@@ -1593,7 +1593,7 @@ exports[`<SiteMap /> should render correctly 1`] = `
       </div>
       <div>
         <a
-          class="text-link text-link--text-link text-link--no-padding text-link--inline"
+          class="sc-ftvSup bvTsjB"
           href="/blog/view?id=y77dnh"
         >
           /blog/view?id=y77dnh ⇒ /blog/uk-bank-security
@@ -1602,7 +1602,7 @@ exports[`<SiteMap /> should render correctly 1`] = `
       </div>
       <div>
         <a
-          class="text-link text-link--text-link text-link--no-padding text-link--inline"
+          class="sc-ftvSup bvTsjB"
           href="/travel/list"
         >
           /travel/list ⇒ /travel
@@ -1611,7 +1611,7 @@ exports[`<SiteMap /> should render correctly 1`] = `
       </div>
       <div>
         <a
-          class="text-link text-link--text-link text-link--no-padding text-link--inline"
+          class="sc-ftvSup bvTsjB"
           href="/travel/view?id=kzm87"
         >
           /travel/view?id=kzm87 ⇒ /travel/serre-chevalier-2017
@@ -1620,7 +1620,7 @@ exports[`<SiteMap /> should render correctly 1`] = `
       </div>
       <div>
         <a
-          class="text-link text-link--text-link text-link--no-padding text-link--inline"
+          class="sc-ftvSup bvTsjB"
           href="/travel/view?id=m4noe"
         >
           /travel/view?id=m4noe ⇒ /travel/disneyland-2017
@@ -1629,7 +1629,7 @@ exports[`<SiteMap /> should render correctly 1`] = `
       </div>
       <div>
         <a
-          class="text-link text-link--text-link text-link--no-padding text-link--inline"
+          class="sc-ftvSup bvTsjB"
           href="/travel/view?id=e0muz1"
         >
           /travel/view?id=e0muz1 ⇒ /travel/munich-2017
@@ -1638,7 +1638,7 @@ exports[`<SiteMap /> should render correctly 1`] = `
       </div>
       <div>
         <a
-          class="text-link text-link--text-link text-link--no-padding text-link--inline"
+          class="sc-ftvSup bvTsjB"
           href="/travel/view?id=evrd8w"
         >
           /travel/view?id=evrd8w ⇒ /travel/longleat-2017
@@ -1647,7 +1647,7 @@ exports[`<SiteMap /> should render correctly 1`] = `
       </div>
       <div>
         <a
-          class="text-link text-link--text-link text-link--no-padding text-link--inline"
+          class="sc-ftvSup bvTsjB"
           href="/travel/view?id=q03ms"
         >
           /travel/view?id=q03ms ⇒ /travel/iceland-2018
@@ -1656,7 +1656,7 @@ exports[`<SiteMap /> should render correctly 1`] = `
       </div>
       <div>
         <a
-          class="text-link text-link--text-link text-link--no-padding text-link--inline"
+          class="sc-ftvSup bvTsjB"
           href="/art"
         >
           /art ⇒ /photography
@@ -1665,7 +1665,7 @@ exports[`<SiteMap /> should render correctly 1`] = `
       </div>
       <div>
         <a
-          class="text-link text-link--text-link text-link--no-padding text-link--inline"
+          class="sc-ftvSup bvTsjB"
           href="/photoshop"
         >
           /photoshop ⇒ /photography
@@ -1674,7 +1674,7 @@ exports[`<SiteMap /> should render correctly 1`] = `
       </div>
       <div>
         <a
-          class="text-link text-link--text-link text-link--no-padding text-link--inline"
+          class="sc-ftvSup bvTsjB"
           href="/phot"
         >
           /phot ⇒ /photography
@@ -1683,7 +1683,7 @@ exports[`<SiteMap /> should render correctly 1`] = `
       </div>
       <div>
         <a
-          class="text-link text-link--text-link text-link--no-padding text-link--inline"
+          class="sc-ftvSup bvTsjB"
           href="/photo"
         >
           /photo ⇒ /photography
@@ -1692,7 +1692,7 @@ exports[`<SiteMap /> should render correctly 1`] = `
       </div>
       <div>
         <a
-          class="text-link text-link--text-link text-link--no-padding text-link--inline"
+          class="sc-ftvSup bvTsjB"
           href="/payment"
         >
           /payment ⇒ /payments
@@ -1722,17 +1722,17 @@ exports[`<SiteMap /> should render correctly with blogs 1`] = `
       Blog 📝
     </h3>
     <span
-      class="paragraph"
+      class="sc-bczRLJ bhVmoO"
     >
       <a
-        class="text-link text-link--text-link text-link--no-padding text-link--inline"
+        class="sc-ftvSup bvTsjB"
         href="/blog"
       >
         Blog list
       </a>
       <br />
       <a
-        class="text-link text-link--text-link text-link--no-padding text-link--inline"
+        class="sc-ftvSup bvTsjB"
         href="/blog/asdfg"
       >
         Blog 1 🎉
@@ -1750,17 +1750,17 @@ exports[`<SiteMap /> should render correctly with blogs 1`] = `
       Travel ✈️
     </h3>
     <span
-      class="paragraph"
+      class="sc-bczRLJ bhVmoO"
     >
       <a
-        class="text-link text-link--text-link text-link--no-padding text-link--inline"
+        class="sc-ftvSup bvTsjB"
         href="/travel"
       >
         Travel blog list
       </a>
       <br />
       <a
-        class="text-link text-link--text-link text-link--no-padding text-link--inline"
+        class="sc-ftvSup bvTsjB"
         href="/travel/zxywvuts"
       >
         St. Ives ⛵ 2018
@@ -1778,10 +1778,10 @@ exports[`<SiteMap /> should render correctly with blogs 1`] = `
       Photography 📷
     </h3>
     <span
-      class="paragraph"
+      class="sc-bczRLJ bhVmoO"
     >
       <a
-        class="text-link text-link--text-link text-link--no-padding text-link--inline"
+        class="sc-ftvSup bvTsjB"
         href="/photography"
       >
         Photography
@@ -1798,38 +1798,38 @@ exports[`<SiteMap /> should render correctly with blogs 1`] = `
       Work 📱
     </h3>
     <span
-      class="paragraph"
+      class="sc-bczRLJ bhVmoO"
     >
       <a
-        class="text-link text-link--text-link text-link--no-padding text-link--inline"
+        class="sc-ftvSup bvTsjB"
         href="/work"
       >
         Overview
       </a>
       <br />
       <a
-        class="text-link text-link--text-link text-link--no-padding text-link--inline"
+        class="sc-ftvSup bvTsjB"
         href="/work/backpack"
       >
         Backpack
       </a>
       <br />
       <a
-        class="text-link text-link--text-link text-link--no-padding text-link--inline"
+        class="sc-ftvSup bvTsjB"
         href="/work/degree"
       >
         Degree
       </a>
       <br />
       <a
-        class="text-link text-link--text-link text-link--no-padding text-link--inline"
-        href="/work/EPICC"
+        class="sc-ftvSup bvTsjB"
+        href="/work/epicc"
       >
         EPICC
       </a>
       <br />
       <a
-        class="text-link text-link--text-link text-link--no-padding text-link--inline"
+        class="sc-ftvSup bvTsjB"
         href="/work/side-projects"
       >
         Side projects
@@ -1846,10 +1846,10 @@ exports[`<SiteMap /> should render correctly with blogs 1`] = `
       Design 🎨
     </h3>
     <span
-      class="paragraph"
+      class="sc-bczRLJ bhVmoO"
     >
       <a
-        class="text-link text-link--text-link text-link--no-padding text-link--inline"
+        class="sc-ftvSup bvTsjB"
         href="/privacy-policy"
       >
         Privacy Policy
@@ -1866,31 +1866,31 @@ exports[`<SiteMap /> should render correctly with blogs 1`] = `
       Other stuff 🤷‍♂️
     </h3>
     <span
-      class="paragraph"
+      class="sc-bczRLJ bhVmoO"
     >
       <a
-        class="text-link text-link--text-link text-link--no-padding text-link--inline"
+        class="sc-ftvSup bvTsjB"
         href="/contact"
       >
         Contact
       </a>
       <br />
       <a
-        class="text-link text-link--text-link text-link--no-padding text-link--inline"
+        class="sc-ftvSup bvTsjB"
         href="/support"
       >
         Support
       </a>
       <br />
       <a
-        class="text-link text-link--text-link text-link--no-padding text-link--inline"
+        class="sc-ftvSup bvTsjB"
         href="/debug"
       >
         Debug tools
       </a>
       <br />
       <a
-        class="text-link text-link--text-link text-link--no-padding text-link--inline"
+        class="sc-ftvSup bvTsjB"
         href="/status"
       >
         Status
@@ -1907,21 +1907,21 @@ exports[`<SiteMap /> should render correctly with blogs 1`] = `
       Random 🐉
     </h3>
     <span
-      class="paragraph"
+      class="sc-bczRLJ bhVmoO"
     >
       <a
         aria-label="Robots.txt (opens in a new tab)"
-        class="text-link text-link--text-link text-link--no-padding text-link--inline"
+        class="sc-ftvSup bvTsjB"
         href="/robots.txt"
         rel="noopener noreferrer"
         target="_blank"
       >
         Robots.txt
         <div
-          class="text-link__icon-container"
+          class="sc-papXJ ecwnCf"
         >
           <svg
-            class="icon text-link__icon"
+            class="sc-iBkjds eintev sc-jqUVSM fjeMmK"
             height="18"
             viewBox="0 0 24 24"
             width="18"
@@ -1936,17 +1936,17 @@ exports[`<SiteMap /> should render correctly with blogs 1`] = `
       <br />
       <a
         aria-label="SiteMap.xml (opens in a new tab)"
-        class="text-link text-link--text-link text-link--no-padding text-link--inline"
+        class="sc-ftvSup bvTsjB"
         href="/sitemap.xml"
         rel="noopener noreferrer"
         target="_blank"
       >
         SiteMap.xml
         <div
-          class="text-link__icon-container"
+          class="sc-papXJ ecwnCf"
         >
           <svg
-            class="icon text-link__icon"
+            class="sc-iBkjds eintev sc-jqUVSM fjeMmK"
             height="18"
             viewBox="0 0 24 24"
             width="18"
@@ -1960,14 +1960,14 @@ exports[`<SiteMap /> should render correctly with blogs 1`] = `
       </a>
       <br />
       <a
-        class="text-link text-link--text-link text-link--no-padding text-link--inline"
+        class="sc-ftvSup bvTsjB"
         href="/404"
       >
         404 error page - not found
       </a>
       <br />
       <a
-        class="text-link text-link--text-link text-link--no-padding text-link--inline"
+        class="sc-ftvSup bvTsjB"
         href="/teapot"
       >
         418 error page - I'm a teapot
@@ -1984,10 +1984,10 @@ exports[`<SiteMap /> should render correctly with blogs 1`] = `
       API
     </h3>
     <span
-      class="paragraph"
+      class="sc-bczRLJ bhVmoO"
     >
       <a
-        class="text-link text-link--text-link text-link--no-padding text-link--inline"
+        class="sc-ftvSup bvTsjB"
         href="/api-docs"
       >
         API docs
@@ -2004,38 +2004,38 @@ exports[`<SiteMap /> should render correctly with blogs 1`] = `
       Accounts 🔑
     </h3>
     <span
-      class="paragraph"
+      class="sc-bczRLJ bhVmoO"
     >
       <a
-        class="text-link text-link--text-link text-link--no-padding text-link--inline"
+        class="sc-ftvSup bvTsjB"
         href="/account"
       >
         Account
       </a>
       <br />
       <a
-        class="text-link text-link--text-link text-link--no-padding text-link--inline"
+        class="sc-ftvSup bvTsjB"
         href="/sign-up"
       >
         Sign up
       </a>
       <br />
       <a
-        class="text-link text-link--text-link text-link--no-padding text-link--inline"
+        class="sc-ftvSup bvTsjB"
         href="/login"
       >
         Log in
       </a>
       <br />
       <a
-        class="text-link text-link--text-link text-link--no-padding text-link--inline"
+        class="sc-ftvSup bvTsjB"
         href="/email-verification"
       >
         Email verification
       </a>
       <br />
       <a
-        class="text-link text-link--text-link text-link--no-padding text-link--inline"
+        class="sc-ftvSup bvTsjB"
         href="/magic-login"
       >
         Magic login
@@ -2052,45 +2052,45 @@ exports[`<SiteMap /> should render correctly with blogs 1`] = `
       Admin 👮‍♂️
     </h3>
     <span
-      class="paragraph"
+      class="sc-bczRLJ bhVmoO"
     >
       <a
-        class="text-link text-link--text-link text-link--no-padding text-link--inline"
+        class="sc-ftvSup bvTsjB"
         href="/admin"
       >
         Admin navigation
       </a>
       <br />
       <a
-        class="text-link text-link--text-link text-link--no-padding text-link--inline"
+        class="sc-ftvSup bvTsjB"
         href="/blog"
       >
         Blogs
       </a>
       <br />
       <a
-        class="text-link text-link--text-link text-link--no-padding text-link--inline"
+        class="sc-ftvSup bvTsjB"
         href="/admin/analytics"
       >
         Analytics
       </a>
       <br />
       <a
-        class="text-link text-link--text-link text-link--no-padding text-link--inline"
+        class="sc-ftvSup bvTsjB"
         href="/admin/emails"
       >
         Emails
       </a>
       <br />
       <a
-        class="text-link text-link--text-link text-link--no-padding text-link--inline"
+        class="sc-ftvSup bvTsjB"
         href="/admin/notifications"
       >
         Notifications
       </a>
       <br />
       <a
-        class="text-link text-link--text-link text-link--no-padding text-link--inline"
+        class="sc-ftvSup bvTsjB"
         href="/admin/users"
       >
         Users
@@ -2107,11 +2107,11 @@ exports[`<SiteMap /> should render correctly with blogs 1`] = `
       Redirects 👉
     </h3>
     <span
-      class="paragraph"
+      class="sc-bczRLJ bhVmoO"
     >
       <div>
         <a
-          class="text-link text-link--text-link text-link--no-padding text-link--inline"
+          class="sc-ftvSup bvTsjB"
           href="/codebase"
         >
           /codebase ⇒ https://github.com/georgegillams/georgegillams.co.uk
@@ -2120,7 +2120,7 @@ exports[`<SiteMap /> should render correctly with blogs 1`] = `
       </div>
       <div>
         <a
-          class="text-link text-link--text-link text-link--no-padding text-link--inline"
+          class="sc-ftvSup bvTsjB"
           href="/copyright"
         >
           /copyright ⇒ https://creativecommons.org/licenses/by-sa/3.0/
@@ -2129,7 +2129,7 @@ exports[`<SiteMap /> should render correctly with blogs 1`] = `
       </div>
       <div>
         <a
-          class="text-link text-link--text-link text-link--no-padding text-link--inline"
+          class="sc-ftvSup bvTsjB"
           href="/flickr"
         >
           /flickr ⇒ https://www.flickr.com/people/georgegillams
@@ -2138,7 +2138,7 @@ exports[`<SiteMap /> should render correctly with blogs 1`] = `
       </div>
       <div>
         <a
-          class="text-link text-link--text-link text-link--no-padding text-link--inline"
+          class="sc-ftvSup bvTsjB"
           href="/monzo"
         >
           /monzo ⇒ https://join.monzo.com/r/vjd3d74
@@ -2147,7 +2147,7 @@ exports[`<SiteMap /> should render correctly with blogs 1`] = `
       </div>
       <div>
         <a
-          class="text-link text-link--text-link text-link--no-padding text-link--inline"
+          class="sc-ftvSup bvTsjB"
           href="/github"
         >
           /github ⇒ https://github.com/georgegillams
@@ -2156,7 +2156,7 @@ exports[`<SiteMap /> should render correctly with blogs 1`] = `
       </div>
       <div>
         <a
-          class="text-link text-link--text-link text-link--no-padding text-link--inline"
+          class="sc-ftvSup bvTsjB"
           href="/stackoverflow"
         >
           /stackoverflow ⇒ https://stackoverflow.com/users/14463713/georgegillams
@@ -2165,7 +2165,7 @@ exports[`<SiteMap /> should render correctly with blogs 1`] = `
       </div>
       <div>
         <a
-          class="text-link text-link--text-link text-link--no-padding text-link--inline"
+          class="sc-ftvSup bvTsjB"
           href="/gurushots"
         >
           /gurushots ⇒ https://gurushots.com/georgegillams/photos
@@ -2174,7 +2174,7 @@ exports[`<SiteMap /> should render correctly with blogs 1`] = `
       </div>
       <div>
         <a
-          class="text-link text-link--text-link text-link--no-padding text-link--inline"
+          class="sc-ftvSup bvTsjB"
           href="/linkedin"
         >
           /linkedin ⇒ https://www.linkedin.com/in/george-gillams-37537077
@@ -2183,7 +2183,7 @@ exports[`<SiteMap /> should render correctly with blogs 1`] = `
       </div>
       <div>
         <a
-          class="text-link text-link--text-link text-link--no-padding text-link--inline"
+          class="sc-ftvSup bvTsjB"
           href="/twitter"
         >
           /twitter ⇒ https://twitter.com/georgegillams
@@ -2192,7 +2192,7 @@ exports[`<SiteMap /> should render correctly with blogs 1`] = `
       </div>
       <div>
         <a
-          class="text-link text-link--text-link text-link--no-padding text-link--inline"
+          class="sc-ftvSup bvTsjB"
           href="/wp-admin"
         >
           /wp-admin ⇒ /admin
@@ -2201,7 +2201,7 @@ exports[`<SiteMap /> should render correctly with blogs 1`] = `
       </div>
       <div>
         <a
-          class="text-link text-link--text-link text-link--no-padding text-link--inline"
+          class="sc-ftvSup bvTsjB"
           href="/about"
         >
           /about ⇒ /
@@ -2210,7 +2210,7 @@ exports[`<SiteMap /> should render correctly with blogs 1`] = `
       </div>
       <div>
         <a
-          class="text-link text-link--text-link text-link--no-padding text-link--inline"
+          class="sc-ftvSup bvTsjB"
           href="/site-map"
         >
           /site-map ⇒ /sitemap
@@ -2219,7 +2219,7 @@ exports[`<SiteMap /> should render correctly with blogs 1`] = `
       </div>
       <div>
         <a
-          class="text-link text-link--text-link text-link--no-padding text-link--inline"
+          class="sc-ftvSup bvTsjB"
           href="/about/degree"
         >
           /about/degree ⇒ /work/degree
@@ -2228,7 +2228,7 @@ exports[`<SiteMap /> should render correctly with blogs 1`] = `
       </div>
       <div>
         <a
-          class="text-link text-link--text-link text-link--no-padding text-link--inline"
+          class="sc-ftvSup bvTsjB"
           href="/articles/tough-mudder"
         >
           /articles/tough-mudder ⇒ /blog/tough-mudder
@@ -2237,7 +2237,7 @@ exports[`<SiteMap /> should render correctly with blogs 1`] = `
       </div>
       <div>
         <a
-          class="text-link text-link--text-link text-link--no-padding text-link--inline"
+          class="sc-ftvSup bvTsjB"
           href="/articles/net-neutrality"
         >
           /articles/net-neutrality ⇒ /blog/net-neutrality
@@ -2246,7 +2246,7 @@ exports[`<SiteMap /> should render correctly with blogs 1`] = `
       </div>
       <div>
         <a
-          class="text-link text-link--text-link text-link--no-padding text-link--inline"
+          class="sc-ftvSup bvTsjB"
           href="/articles/vim"
         >
           /articles/vim ⇒ /blog/vim
@@ -2255,7 +2255,7 @@ exports[`<SiteMap /> should render correctly with blogs 1`] = `
       </div>
       <div>
         <a
-          class="text-link text-link--text-link text-link--no-padding text-link--inline"
+          class="sc-ftvSup bvTsjB"
           href="/articles/uk-bank-security"
         >
           /articles/uk-bank-security ⇒ /blog/uk-bank-security
@@ -2264,7 +2264,7 @@ exports[`<SiteMap /> should render correctly with blogs 1`] = `
       </div>
       <div>
         <a
-          class="text-link text-link--text-link text-link--no-padding text-link--inline"
+          class="sc-ftvSup bvTsjB"
           href="/articles/week-of-rust"
         >
           /articles/week-of-rust ⇒ /blog/week-of-rust
@@ -2273,7 +2273,7 @@ exports[`<SiteMap /> should render correctly with blogs 1`] = `
       </div>
       <div>
         <a
-          class="text-link text-link--text-link text-link--no-padding text-link--inline"
+          class="sc-ftvSup bvTsjB"
           href="/articles/react-http-response-codes"
         >
           /articles/react-http-response-codes ⇒ /blog/react-http-response-codes
@@ -2282,7 +2282,7 @@ exports[`<SiteMap /> should render correctly with blogs 1`] = `
       </div>
       <div>
         <a
-          class="text-link text-link--text-link text-link--no-padding text-link--inline"
+          class="sc-ftvSup bvTsjB"
           href="/articles/list"
         >
           /articles/list ⇒ /blog
@@ -2291,7 +2291,7 @@ exports[`<SiteMap /> should render correctly with blogs 1`] = `
       </div>
       <div>
         <a
-          class="text-link text-link--text-link text-link--no-padding text-link--inline"
+          class="sc-ftvSup bvTsjB"
           href="/articles"
         >
           /articles ⇒ /blog
@@ -2300,7 +2300,7 @@ exports[`<SiteMap /> should render correctly with blogs 1`] = `
       </div>
       <div>
         <a
-          class="text-link text-link--text-link text-link--no-padding text-link--inline"
+          class="sc-ftvSup bvTsjB"
           href="/net-neutrality"
         >
           /net-neutrality ⇒ /blog/net-neutrality
@@ -2309,7 +2309,7 @@ exports[`<SiteMap /> should render correctly with blogs 1`] = `
       </div>
       <div>
         <a
-          class="text-link text-link--text-link text-link--no-padding text-link--inline"
+          class="sc-ftvSup bvTsjB"
           href="/blog/view"
         >
           /blog/view ⇒ /blog
@@ -2318,7 +2318,7 @@ exports[`<SiteMap /> should render correctly with blogs 1`] = `
       </div>
       <div>
         <a
-          class="text-link text-link--text-link text-link--no-padding text-link--inline"
+          class="sc-ftvSup bvTsjB"
           href="/travel/view"
         >
           /travel/view ⇒ /travel
@@ -2327,7 +2327,7 @@ exports[`<SiteMap /> should render correctly with blogs 1`] = `
       </div>
       <div>
         <a
-          class="text-link text-link--text-link text-link--no-padding text-link--inline"
+          class="sc-ftvSup bvTsjB"
           href="/blog/view?id=tg5x7po9"
         >
           /blog/view?id=tg5x7po9 ⇒ /blog/tough-mudder
@@ -2336,7 +2336,7 @@ exports[`<SiteMap /> should render correctly with blogs 1`] = `
       </div>
       <div>
         <a
-          class="text-link text-link--text-link text-link--no-padding text-link--inline"
+          class="sc-ftvSup bvTsjB"
           href="/blog/view?id=lqngy"
         >
           /blog/view?id=lqngy ⇒ /blog/lightroom-workflow
@@ -2345,7 +2345,7 @@ exports[`<SiteMap /> should render correctly with blogs 1`] = `
       </div>
       <div>
         <a
-          class="text-link text-link--text-link text-link--no-padding text-link--inline"
+          class="sc-ftvSup bvTsjB"
           href="/blog/view?id=w85aht"
         >
           /blog/view?id=w85aht ⇒ /blog/net-neutrality
@@ -2354,7 +2354,7 @@ exports[`<SiteMap /> should render correctly with blogs 1`] = `
       </div>
       <div>
         <a
-          class="text-link text-link--text-link text-link--no-padding text-link--inline"
+          class="sc-ftvSup bvTsjB"
           href="/blog/view?id=azcpjh"
         >
           /blog/view?id=azcpjh ⇒ /blog/vim
@@ -2363,7 +2363,7 @@ exports[`<SiteMap /> should render correctly with blogs 1`] = `
       </div>
       <div>
         <a
-          class="text-link text-link--text-link text-link--no-padding text-link--inline"
+          class="sc-ftvSup bvTsjB"
           href="/blog/view?id=y77dnh"
         >
           /blog/view?id=y77dnh ⇒ /blog/uk-bank-security
@@ -2372,7 +2372,7 @@ exports[`<SiteMap /> should render correctly with blogs 1`] = `
       </div>
       <div>
         <a
-          class="text-link text-link--text-link text-link--no-padding text-link--inline"
+          class="sc-ftvSup bvTsjB"
           href="/travel/list"
         >
           /travel/list ⇒ /travel
@@ -2381,7 +2381,7 @@ exports[`<SiteMap /> should render correctly with blogs 1`] = `
       </div>
       <div>
         <a
-          class="text-link text-link--text-link text-link--no-padding text-link--inline"
+          class="sc-ftvSup bvTsjB"
           href="/travel/view?id=kzm87"
         >
           /travel/view?id=kzm87 ⇒ /travel/serre-chevalier-2017
@@ -2390,7 +2390,7 @@ exports[`<SiteMap /> should render correctly with blogs 1`] = `
       </div>
       <div>
         <a
-          class="text-link text-link--text-link text-link--no-padding text-link--inline"
+          class="sc-ftvSup bvTsjB"
           href="/travel/view?id=m4noe"
         >
           /travel/view?id=m4noe ⇒ /travel/disneyland-2017
@@ -2399,7 +2399,7 @@ exports[`<SiteMap /> should render correctly with blogs 1`] = `
       </div>
       <div>
         <a
-          class="text-link text-link--text-link text-link--no-padding text-link--inline"
+          class="sc-ftvSup bvTsjB"
           href="/travel/view?id=e0muz1"
         >
           /travel/view?id=e0muz1 ⇒ /travel/munich-2017
@@ -2408,7 +2408,7 @@ exports[`<SiteMap /> should render correctly with blogs 1`] = `
       </div>
       <div>
         <a
-          class="text-link text-link--text-link text-link--no-padding text-link--inline"
+          class="sc-ftvSup bvTsjB"
           href="/travel/view?id=evrd8w"
         >
           /travel/view?id=evrd8w ⇒ /travel/longleat-2017
@@ -2417,7 +2417,7 @@ exports[`<SiteMap /> should render correctly with blogs 1`] = `
       </div>
       <div>
         <a
-          class="text-link text-link--text-link text-link--no-padding text-link--inline"
+          class="sc-ftvSup bvTsjB"
           href="/travel/view?id=q03ms"
         >
           /travel/view?id=q03ms ⇒ /travel/iceland-2018
@@ -2426,7 +2426,7 @@ exports[`<SiteMap /> should render correctly with blogs 1`] = `
       </div>
       <div>
         <a
-          class="text-link text-link--text-link text-link--no-padding text-link--inline"
+          class="sc-ftvSup bvTsjB"
           href="/art"
         >
           /art ⇒ /photography
@@ -2435,7 +2435,7 @@ exports[`<SiteMap /> should render correctly with blogs 1`] = `
       </div>
       <div>
         <a
-          class="text-link text-link--text-link text-link--no-padding text-link--inline"
+          class="sc-ftvSup bvTsjB"
           href="/photoshop"
         >
           /photoshop ⇒ /photography
@@ -2444,7 +2444,7 @@ exports[`<SiteMap /> should render correctly with blogs 1`] = `
       </div>
       <div>
         <a
-          class="text-link text-link--text-link text-link--no-padding text-link--inline"
+          class="sc-ftvSup bvTsjB"
           href="/phot"
         >
           /phot ⇒ /photography
@@ -2453,7 +2453,7 @@ exports[`<SiteMap /> should render correctly with blogs 1`] = `
       </div>
       <div>
         <a
-          class="text-link text-link--text-link text-link--no-padding text-link--inline"
+          class="sc-ftvSup bvTsjB"
           href="/photo"
         >
           /photo ⇒ /photography
@@ -2462,7 +2462,7 @@ exports[`<SiteMap /> should render correctly with blogs 1`] = `
       </div>
       <div>
         <a
-          class="text-link text-link--text-link text-link--no-padding text-link--inline"
+          class="sc-ftvSup bvTsjB"
           href="/payment"
         >
           /payment ⇒ /payments
@@ -2493,17 +2493,17 @@ exports[`<SiteMap /> should render correctly with blogs and admin user 1`] = `
       Blog 📝
     </h3>
     <span
-      class="paragraph"
+      class="sc-bczRLJ bhVmoO"
     >
       <a
-        class="text-link text-link--text-link text-link--no-padding text-link--inline"
+        class="sc-ftvSup bvTsjB"
         href="/blog"
       >
         Blog list
       </a>
       <br />
       <a
-        class="text-link text-link--text-link text-link--no-padding text-link--inline"
+        class="sc-ftvSup bvTsjB"
         href="/blog/asdfg"
       >
         Blog 1 🎉
@@ -2521,17 +2521,17 @@ exports[`<SiteMap /> should render correctly with blogs and admin user 1`] = `
       Travel ✈️
     </h3>
     <span
-      class="paragraph"
+      class="sc-bczRLJ bhVmoO"
     >
       <a
-        class="text-link text-link--text-link text-link--no-padding text-link--inline"
+        class="sc-ftvSup bvTsjB"
         href="/travel"
       >
         Travel blog list
       </a>
       <br />
       <a
-        class="text-link text-link--text-link text-link--no-padding text-link--inline"
+        class="sc-ftvSup bvTsjB"
         href="/travel/zxywvuts"
       >
         St. Ives ⛵ 2018
@@ -2549,31 +2549,31 @@ exports[`<SiteMap /> should render correctly with blogs and admin user 1`] = `
       All blogs
     </h3>
     <span
-      class="paragraph"
+      class="sc-bczRLJ bhVmoO"
     >
       <a
-        class="text-link text-link--text-link text-link--no-padding text-link--inline"
+        class="sc-ftvSup bvTsjB"
         href="/blog/asdfg"
       >
         Blog 1 🎉
       </a>
       <br />
       <a
-        class="text-link text-link--text-link text-link--no-padding text-link--inline"
+        class="sc-ftvSup bvTsjB"
         href="/blog/asdfg"
       >
         Untitled blog
       </a>
       <br />
       <a
-        class="text-link text-link--text-link text-link--no-padding text-link--inline"
+        class="sc-ftvSup bvTsjB"
         href="/blog/zxywvuts"
       >
         St. Ives ⛵ 2018
       </a>
       <br />
       <a
-        class="text-link text-link--text-link text-link--no-padding text-link--inline"
+        class="sc-ftvSup bvTsjB"
         href="/blog/mndyd8"
       >
         Untitled blog
@@ -2592,10 +2592,10 @@ exports[`<SiteMap /> should render correctly with blogs and admin user 1`] = `
       Photography 📷
     </h3>
     <span
-      class="paragraph"
+      class="sc-bczRLJ bhVmoO"
     >
       <a
-        class="text-link text-link--text-link text-link--no-padding text-link--inline"
+        class="sc-ftvSup bvTsjB"
         href="/photography"
       >
         Photography
@@ -2612,38 +2612,38 @@ exports[`<SiteMap /> should render correctly with blogs and admin user 1`] = `
       Work 📱
     </h3>
     <span
-      class="paragraph"
+      class="sc-bczRLJ bhVmoO"
     >
       <a
-        class="text-link text-link--text-link text-link--no-padding text-link--inline"
+        class="sc-ftvSup bvTsjB"
         href="/work"
       >
         Overview
       </a>
       <br />
       <a
-        class="text-link text-link--text-link text-link--no-padding text-link--inline"
+        class="sc-ftvSup bvTsjB"
         href="/work/backpack"
       >
         Backpack
       </a>
       <br />
       <a
-        class="text-link text-link--text-link text-link--no-padding text-link--inline"
+        class="sc-ftvSup bvTsjB"
         href="/work/degree"
       >
         Degree
       </a>
       <br />
       <a
-        class="text-link text-link--text-link text-link--no-padding text-link--inline"
-        href="/work/EPICC"
+        class="sc-ftvSup bvTsjB"
+        href="/work/epicc"
       >
         EPICC
       </a>
       <br />
       <a
-        class="text-link text-link--text-link text-link--no-padding text-link--inline"
+        class="sc-ftvSup bvTsjB"
         href="/work/side-projects"
       >
         Side projects
@@ -2660,10 +2660,10 @@ exports[`<SiteMap /> should render correctly with blogs and admin user 1`] = `
       Design 🎨
     </h3>
     <span
-      class="paragraph"
+      class="sc-bczRLJ bhVmoO"
     >
       <a
-        class="text-link text-link--text-link text-link--no-padding text-link--inline"
+        class="sc-ftvSup bvTsjB"
         href="/privacy-policy"
       >
         Privacy Policy
@@ -2680,31 +2680,31 @@ exports[`<SiteMap /> should render correctly with blogs and admin user 1`] = `
       Other stuff 🤷‍♂️
     </h3>
     <span
-      class="paragraph"
+      class="sc-bczRLJ bhVmoO"
     >
       <a
-        class="text-link text-link--text-link text-link--no-padding text-link--inline"
+        class="sc-ftvSup bvTsjB"
         href="/contact"
       >
         Contact
       </a>
       <br />
       <a
-        class="text-link text-link--text-link text-link--no-padding text-link--inline"
+        class="sc-ftvSup bvTsjB"
         href="/support"
       >
         Support
       </a>
       <br />
       <a
-        class="text-link text-link--text-link text-link--no-padding text-link--inline"
+        class="sc-ftvSup bvTsjB"
         href="/debug"
       >
         Debug tools
       </a>
       <br />
       <a
-        class="text-link text-link--text-link text-link--no-padding text-link--inline"
+        class="sc-ftvSup bvTsjB"
         href="/status"
       >
         Status
@@ -2721,21 +2721,21 @@ exports[`<SiteMap /> should render correctly with blogs and admin user 1`] = `
       Random 🐉
     </h3>
     <span
-      class="paragraph"
+      class="sc-bczRLJ bhVmoO"
     >
       <a
         aria-label="Robots.txt (opens in a new tab)"
-        class="text-link text-link--text-link text-link--no-padding text-link--inline"
+        class="sc-ftvSup bvTsjB"
         href="/robots.txt"
         rel="noopener noreferrer"
         target="_blank"
       >
         Robots.txt
         <div
-          class="text-link__icon-container"
+          class="sc-papXJ ecwnCf"
         >
           <svg
-            class="icon text-link__icon"
+            class="sc-iBkjds eintev sc-jqUVSM fjeMmK"
             height="18"
             viewBox="0 0 24 24"
             width="18"
@@ -2750,17 +2750,17 @@ exports[`<SiteMap /> should render correctly with blogs and admin user 1`] = `
       <br />
       <a
         aria-label="SiteMap.xml (opens in a new tab)"
-        class="text-link text-link--text-link text-link--no-padding text-link--inline"
+        class="sc-ftvSup bvTsjB"
         href="/sitemap.xml"
         rel="noopener noreferrer"
         target="_blank"
       >
         SiteMap.xml
         <div
-          class="text-link__icon-container"
+          class="sc-papXJ ecwnCf"
         >
           <svg
-            class="icon text-link__icon"
+            class="sc-iBkjds eintev sc-jqUVSM fjeMmK"
             height="18"
             viewBox="0 0 24 24"
             width="18"
@@ -2774,14 +2774,14 @@ exports[`<SiteMap /> should render correctly with blogs and admin user 1`] = `
       </a>
       <br />
       <a
-        class="text-link text-link--text-link text-link--no-padding text-link--inline"
+        class="sc-ftvSup bvTsjB"
         href="/404"
       >
         404 error page - not found
       </a>
       <br />
       <a
-        class="text-link text-link--text-link text-link--no-padding text-link--inline"
+        class="sc-ftvSup bvTsjB"
         href="/teapot"
       >
         418 error page - I'm a teapot
@@ -2798,10 +2798,10 @@ exports[`<SiteMap /> should render correctly with blogs and admin user 1`] = `
       API
     </h3>
     <span
-      class="paragraph"
+      class="sc-bczRLJ bhVmoO"
     >
       <a
-        class="text-link text-link--text-link text-link--no-padding text-link--inline"
+        class="sc-ftvSup bvTsjB"
         href="/api-docs"
       >
         API docs
@@ -2818,38 +2818,38 @@ exports[`<SiteMap /> should render correctly with blogs and admin user 1`] = `
       Accounts 🔑
     </h3>
     <span
-      class="paragraph"
+      class="sc-bczRLJ bhVmoO"
     >
       <a
-        class="text-link text-link--text-link text-link--no-padding text-link--inline"
+        class="sc-ftvSup bvTsjB"
         href="/account"
       >
         Account
       </a>
       <br />
       <a
-        class="text-link text-link--text-link text-link--no-padding text-link--inline"
+        class="sc-ftvSup bvTsjB"
         href="/sign-up"
       >
         Sign up
       </a>
       <br />
       <a
-        class="text-link text-link--text-link text-link--no-padding text-link--inline"
+        class="sc-ftvSup bvTsjB"
         href="/login"
       >
         Log in
       </a>
       <br />
       <a
-        class="text-link text-link--text-link text-link--no-padding text-link--inline"
+        class="sc-ftvSup bvTsjB"
         href="/email-verification"
       >
         Email verification
       </a>
       <br />
       <a
-        class="text-link text-link--text-link text-link--no-padding text-link--inline"
+        class="sc-ftvSup bvTsjB"
         href="/magic-login"
       >
         Magic login
@@ -2866,45 +2866,45 @@ exports[`<SiteMap /> should render correctly with blogs and admin user 1`] = `
       Admin 👮‍♂️
     </h3>
     <span
-      class="paragraph"
+      class="sc-bczRLJ bhVmoO"
     >
       <a
-        class="text-link text-link--text-link text-link--no-padding text-link--inline"
+        class="sc-ftvSup bvTsjB"
         href="/admin"
       >
         Admin navigation
       </a>
       <br />
       <a
-        class="text-link text-link--text-link text-link--no-padding text-link--inline"
+        class="sc-ftvSup bvTsjB"
         href="/blog"
       >
         Blogs
       </a>
       <br />
       <a
-        class="text-link text-link--text-link text-link--no-padding text-link--inline"
+        class="sc-ftvSup bvTsjB"
         href="/admin/analytics"
       >
         Analytics
       </a>
       <br />
       <a
-        class="text-link text-link--text-link text-link--no-padding text-link--inline"
+        class="sc-ftvSup bvTsjB"
         href="/admin/emails"
       >
         Emails
       </a>
       <br />
       <a
-        class="text-link text-link--text-link text-link--no-padding text-link--inline"
+        class="sc-ftvSup bvTsjB"
         href="/admin/notifications"
       >
         Notifications
       </a>
       <br />
       <a
-        class="text-link text-link--text-link text-link--no-padding text-link--inline"
+        class="sc-ftvSup bvTsjB"
         href="/admin/users"
       >
         Users
@@ -2921,11 +2921,11 @@ exports[`<SiteMap /> should render correctly with blogs and admin user 1`] = `
       Redirects 👉
     </h3>
     <span
-      class="paragraph"
+      class="sc-bczRLJ bhVmoO"
     >
       <div>
         <a
-          class="text-link text-link--text-link text-link--no-padding text-link--inline"
+          class="sc-ftvSup bvTsjB"
           href="/codebase"
         >
           /codebase ⇒ https://github.com/georgegillams/georgegillams.co.uk
@@ -2934,7 +2934,7 @@ exports[`<SiteMap /> should render correctly with blogs and admin user 1`] = `
       </div>
       <div>
         <a
-          class="text-link text-link--text-link text-link--no-padding text-link--inline"
+          class="sc-ftvSup bvTsjB"
           href="/copyright"
         >
           /copyright ⇒ https://creativecommons.org/licenses/by-sa/3.0/
@@ -2943,7 +2943,7 @@ exports[`<SiteMap /> should render correctly with blogs and admin user 1`] = `
       </div>
       <div>
         <a
-          class="text-link text-link--text-link text-link--no-padding text-link--inline"
+          class="sc-ftvSup bvTsjB"
           href="/flickr"
         >
           /flickr ⇒ https://www.flickr.com/people/georgegillams
@@ -2952,7 +2952,7 @@ exports[`<SiteMap /> should render correctly with blogs and admin user 1`] = `
       </div>
       <div>
         <a
-          class="text-link text-link--text-link text-link--no-padding text-link--inline"
+          class="sc-ftvSup bvTsjB"
           href="/monzo"
         >
           /monzo ⇒ https://join.monzo.com/r/vjd3d74
@@ -2961,7 +2961,7 @@ exports[`<SiteMap /> should render correctly with blogs and admin user 1`] = `
       </div>
       <div>
         <a
-          class="text-link text-link--text-link text-link--no-padding text-link--inline"
+          class="sc-ftvSup bvTsjB"
           href="/github"
         >
           /github ⇒ https://github.com/georgegillams
@@ -2970,7 +2970,7 @@ exports[`<SiteMap /> should render correctly with blogs and admin user 1`] = `
       </div>
       <div>
         <a
-          class="text-link text-link--text-link text-link--no-padding text-link--inline"
+          class="sc-ftvSup bvTsjB"
           href="/stackoverflow"
         >
           /stackoverflow ⇒ https://stackoverflow.com/users/14463713/georgegillams
@@ -2979,7 +2979,7 @@ exports[`<SiteMap /> should render correctly with blogs and admin user 1`] = `
       </div>
       <div>
         <a
-          class="text-link text-link--text-link text-link--no-padding text-link--inline"
+          class="sc-ftvSup bvTsjB"
           href="/gurushots"
         >
           /gurushots ⇒ https://gurushots.com/georgegillams/photos
@@ -2988,7 +2988,7 @@ exports[`<SiteMap /> should render correctly with blogs and admin user 1`] = `
       </div>
       <div>
         <a
-          class="text-link text-link--text-link text-link--no-padding text-link--inline"
+          class="sc-ftvSup bvTsjB"
           href="/linkedin"
         >
           /linkedin ⇒ https://www.linkedin.com/in/george-gillams-37537077
@@ -2997,7 +2997,7 @@ exports[`<SiteMap /> should render correctly with blogs and admin user 1`] = `
       </div>
       <div>
         <a
-          class="text-link text-link--text-link text-link--no-padding text-link--inline"
+          class="sc-ftvSup bvTsjB"
           href="/twitter"
         >
           /twitter ⇒ https://twitter.com/georgegillams
@@ -3006,7 +3006,7 @@ exports[`<SiteMap /> should render correctly with blogs and admin user 1`] = `
       </div>
       <div>
         <a
-          class="text-link text-link--text-link text-link--no-padding text-link--inline"
+          class="sc-ftvSup bvTsjB"
           href="/wp-admin"
         >
           /wp-admin ⇒ /admin
@@ -3015,7 +3015,7 @@ exports[`<SiteMap /> should render correctly with blogs and admin user 1`] = `
       </div>
       <div>
         <a
-          class="text-link text-link--text-link text-link--no-padding text-link--inline"
+          class="sc-ftvSup bvTsjB"
           href="/about"
         >
           /about ⇒ /
@@ -3024,7 +3024,7 @@ exports[`<SiteMap /> should render correctly with blogs and admin user 1`] = `
       </div>
       <div>
         <a
-          class="text-link text-link--text-link text-link--no-padding text-link--inline"
+          class="sc-ftvSup bvTsjB"
           href="/site-map"
         >
           /site-map ⇒ /sitemap
@@ -3033,7 +3033,7 @@ exports[`<SiteMap /> should render correctly with blogs and admin user 1`] = `
       </div>
       <div>
         <a
-          class="text-link text-link--text-link text-link--no-padding text-link--inline"
+          class="sc-ftvSup bvTsjB"
           href="/about/degree"
         >
           /about/degree ⇒ /work/degree
@@ -3042,7 +3042,7 @@ exports[`<SiteMap /> should render correctly with blogs and admin user 1`] = `
       </div>
       <div>
         <a
-          class="text-link text-link--text-link text-link--no-padding text-link--inline"
+          class="sc-ftvSup bvTsjB"
           href="/articles/tough-mudder"
         >
           /articles/tough-mudder ⇒ /blog/tough-mudder
@@ -3051,7 +3051,7 @@ exports[`<SiteMap /> should render correctly with blogs and admin user 1`] = `
       </div>
       <div>
         <a
-          class="text-link text-link--text-link text-link--no-padding text-link--inline"
+          class="sc-ftvSup bvTsjB"
           href="/articles/net-neutrality"
         >
           /articles/net-neutrality ⇒ /blog/net-neutrality
@@ -3060,7 +3060,7 @@ exports[`<SiteMap /> should render correctly with blogs and admin user 1`] = `
       </div>
       <div>
         <a
-          class="text-link text-link--text-link text-link--no-padding text-link--inline"
+          class="sc-ftvSup bvTsjB"
           href="/articles/vim"
         >
           /articles/vim ⇒ /blog/vim
@@ -3069,7 +3069,7 @@ exports[`<SiteMap /> should render correctly with blogs and admin user 1`] = `
       </div>
       <div>
         <a
-          class="text-link text-link--text-link text-link--no-padding text-link--inline"
+          class="sc-ftvSup bvTsjB"
           href="/articles/uk-bank-security"
         >
           /articles/uk-bank-security ⇒ /blog/uk-bank-security
@@ -3078,7 +3078,7 @@ exports[`<SiteMap /> should render correctly with blogs and admin user 1`] = `
       </div>
       <div>
         <a
-          class="text-link text-link--text-link text-link--no-padding text-link--inline"
+          class="sc-ftvSup bvTsjB"
           href="/articles/week-of-rust"
         >
           /articles/week-of-rust ⇒ /blog/week-of-rust
@@ -3087,7 +3087,7 @@ exports[`<SiteMap /> should render correctly with blogs and admin user 1`] = `
       </div>
       <div>
         <a
-          class="text-link text-link--text-link text-link--no-padding text-link--inline"
+          class="sc-ftvSup bvTsjB"
           href="/articles/react-http-response-codes"
         >
           /articles/react-http-response-codes ⇒ /blog/react-http-response-codes
@@ -3096,7 +3096,7 @@ exports[`<SiteMap /> should render correctly with blogs and admin user 1`] = `
       </div>
       <div>
         <a
-          class="text-link text-link--text-link text-link--no-padding text-link--inline"
+          class="sc-ftvSup bvTsjB"
           href="/articles/list"
         >
           /articles/list ⇒ /blog
@@ -3105,7 +3105,7 @@ exports[`<SiteMap /> should render correctly with blogs and admin user 1`] = `
       </div>
       <div>
         <a
-          class="text-link text-link--text-link text-link--no-padding text-link--inline"
+          class="sc-ftvSup bvTsjB"
           href="/articles"
         >
           /articles ⇒ /blog
@@ -3114,7 +3114,7 @@ exports[`<SiteMap /> should render correctly with blogs and admin user 1`] = `
       </div>
       <div>
         <a
-          class="text-link text-link--text-link text-link--no-padding text-link--inline"
+          class="sc-ftvSup bvTsjB"
           href="/net-neutrality"
         >
           /net-neutrality ⇒ /blog/net-neutrality
@@ -3123,7 +3123,7 @@ exports[`<SiteMap /> should render correctly with blogs and admin user 1`] = `
       </div>
       <div>
         <a
-          class="text-link text-link--text-link text-link--no-padding text-link--inline"
+          class="sc-ftvSup bvTsjB"
           href="/blog/view"
         >
           /blog/view ⇒ /blog
@@ -3132,7 +3132,7 @@ exports[`<SiteMap /> should render correctly with blogs and admin user 1`] = `
       </div>
       <div>
         <a
-          class="text-link text-link--text-link text-link--no-padding text-link--inline"
+          class="sc-ftvSup bvTsjB"
           href="/travel/view"
         >
           /travel/view ⇒ /travel
@@ -3141,7 +3141,7 @@ exports[`<SiteMap /> should render correctly with blogs and admin user 1`] = `
       </div>
       <div>
         <a
-          class="text-link text-link--text-link text-link--no-padding text-link--inline"
+          class="sc-ftvSup bvTsjB"
           href="/blog/view?id=tg5x7po9"
         >
           /blog/view?id=tg5x7po9 ⇒ /blog/tough-mudder
@@ -3150,7 +3150,7 @@ exports[`<SiteMap /> should render correctly with blogs and admin user 1`] = `
       </div>
       <div>
         <a
-          class="text-link text-link--text-link text-link--no-padding text-link--inline"
+          class="sc-ftvSup bvTsjB"
           href="/blog/view?id=lqngy"
         >
           /blog/view?id=lqngy ⇒ /blog/lightroom-workflow
@@ -3159,7 +3159,7 @@ exports[`<SiteMap /> should render correctly with blogs and admin user 1`] = `
       </div>
       <div>
         <a
-          class="text-link text-link--text-link text-link--no-padding text-link--inline"
+          class="sc-ftvSup bvTsjB"
           href="/blog/view?id=w85aht"
         >
           /blog/view?id=w85aht ⇒ /blog/net-neutrality
@@ -3168,7 +3168,7 @@ exports[`<SiteMap /> should render correctly with blogs and admin user 1`] = `
       </div>
       <div>
         <a
-          class="text-link text-link--text-link text-link--no-padding text-link--inline"
+          class="sc-ftvSup bvTsjB"
           href="/blog/view?id=azcpjh"
         >
           /blog/view?id=azcpjh ⇒ /blog/vim
@@ -3177,7 +3177,7 @@ exports[`<SiteMap /> should render correctly with blogs and admin user 1`] = `
       </div>
       <div>
         <a
-          class="text-link text-link--text-link text-link--no-padding text-link--inline"
+          class="sc-ftvSup bvTsjB"
           href="/blog/view?id=y77dnh"
         >
           /blog/view?id=y77dnh ⇒ /blog/uk-bank-security
@@ -3186,7 +3186,7 @@ exports[`<SiteMap /> should render correctly with blogs and admin user 1`] = `
       </div>
       <div>
         <a
-          class="text-link text-link--text-link text-link--no-padding text-link--inline"
+          class="sc-ftvSup bvTsjB"
           href="/travel/list"
         >
           /travel/list ⇒ /travel
@@ -3195,7 +3195,7 @@ exports[`<SiteMap /> should render correctly with blogs and admin user 1`] = `
       </div>
       <div>
         <a
-          class="text-link text-link--text-link text-link--no-padding text-link--inline"
+          class="sc-ftvSup bvTsjB"
           href="/travel/view?id=kzm87"
         >
           /travel/view?id=kzm87 ⇒ /travel/serre-chevalier-2017
@@ -3204,7 +3204,7 @@ exports[`<SiteMap /> should render correctly with blogs and admin user 1`] = `
       </div>
       <div>
         <a
-          class="text-link text-link--text-link text-link--no-padding text-link--inline"
+          class="sc-ftvSup bvTsjB"
           href="/travel/view?id=m4noe"
         >
           /travel/view?id=m4noe ⇒ /travel/disneyland-2017
@@ -3213,7 +3213,7 @@ exports[`<SiteMap /> should render correctly with blogs and admin user 1`] = `
       </div>
       <div>
         <a
-          class="text-link text-link--text-link text-link--no-padding text-link--inline"
+          class="sc-ftvSup bvTsjB"
           href="/travel/view?id=e0muz1"
         >
           /travel/view?id=e0muz1 ⇒ /travel/munich-2017
@@ -3222,7 +3222,7 @@ exports[`<SiteMap /> should render correctly with blogs and admin user 1`] = `
       </div>
       <div>
         <a
-          class="text-link text-link--text-link text-link--no-padding text-link--inline"
+          class="sc-ftvSup bvTsjB"
           href="/travel/view?id=evrd8w"
         >
           /travel/view?id=evrd8w ⇒ /travel/longleat-2017
@@ -3231,7 +3231,7 @@ exports[`<SiteMap /> should render correctly with blogs and admin user 1`] = `
       </div>
       <div>
         <a
-          class="text-link text-link--text-link text-link--no-padding text-link--inline"
+          class="sc-ftvSup bvTsjB"
           href="/travel/view?id=q03ms"
         >
           /travel/view?id=q03ms ⇒ /travel/iceland-2018
@@ -3240,7 +3240,7 @@ exports[`<SiteMap /> should render correctly with blogs and admin user 1`] = `
       </div>
       <div>
         <a
-          class="text-link text-link--text-link text-link--no-padding text-link--inline"
+          class="sc-ftvSup bvTsjB"
           href="/art"
         >
           /art ⇒ /photography
@@ -3249,7 +3249,7 @@ exports[`<SiteMap /> should render correctly with blogs and admin user 1`] = `
       </div>
       <div>
         <a
-          class="text-link text-link--text-link text-link--no-padding text-link--inline"
+          class="sc-ftvSup bvTsjB"
           href="/photoshop"
         >
           /photoshop ⇒ /photography
@@ -3258,7 +3258,7 @@ exports[`<SiteMap /> should render correctly with blogs and admin user 1`] = `
       </div>
       <div>
         <a
-          class="text-link text-link--text-link text-link--no-padding text-link--inline"
+          class="sc-ftvSup bvTsjB"
           href="/phot"
         >
           /phot ⇒ /photography
@@ -3267,7 +3267,7 @@ exports[`<SiteMap /> should render correctly with blogs and admin user 1`] = `
       </div>
       <div>
         <a
-          class="text-link text-link--text-link text-link--no-padding text-link--inline"
+          class="sc-ftvSup bvTsjB"
           href="/photo"
         >
           /photo ⇒ /photography
@@ -3276,7 +3276,7 @@ exports[`<SiteMap /> should render correctly with blogs and admin user 1`] = `
       </div>
       <div>
         <a
-          class="text-link text-link--text-link text-link--no-padding text-link--inline"
+          class="sc-ftvSup bvTsjB"
           href="/payment"
         >
           /payment ⇒ /payments
@@ -3307,17 +3307,17 @@ exports[`<SiteMap /> should render correctly with ssrBlogs 1`] = `
       Blog 📝
     </h3>
     <span
-      class="paragraph"
+      class="sc-bczRLJ bhVmoO"
     >
       <a
-        class="text-link text-link--text-link text-link--no-padding text-link--inline"
+        class="sc-ftvSup bvTsjB"
         href="/blog"
       >
         Blog list
       </a>
       <br />
       <a
-        class="text-link text-link--text-link text-link--no-padding text-link--inline"
+        class="sc-ftvSup bvTsjB"
         href="/blog/asdfg"
       >
         Blog 1 🎉
@@ -3335,17 +3335,17 @@ exports[`<SiteMap /> should render correctly with ssrBlogs 1`] = `
       Travel ✈️
     </h3>
     <span
-      class="paragraph"
+      class="sc-bczRLJ bhVmoO"
     >
       <a
-        class="text-link text-link--text-link text-link--no-padding text-link--inline"
+        class="sc-ftvSup bvTsjB"
         href="/travel"
       >
         Travel blog list
       </a>
       <br />
       <a
-        class="text-link text-link--text-link text-link--no-padding text-link--inline"
+        class="sc-ftvSup bvTsjB"
         href="/travel/zxywvuts"
       >
         St. Ives ⛵ 2018
@@ -3363,10 +3363,10 @@ exports[`<SiteMap /> should render correctly with ssrBlogs 1`] = `
       Photography 📷
     </h3>
     <span
-      class="paragraph"
+      class="sc-bczRLJ bhVmoO"
     >
       <a
-        class="text-link text-link--text-link text-link--no-padding text-link--inline"
+        class="sc-ftvSup bvTsjB"
         href="/photography"
       >
         Photography
@@ -3383,38 +3383,38 @@ exports[`<SiteMap /> should render correctly with ssrBlogs 1`] = `
       Work 📱
     </h3>
     <span
-      class="paragraph"
+      class="sc-bczRLJ bhVmoO"
     >
       <a
-        class="text-link text-link--text-link text-link--no-padding text-link--inline"
+        class="sc-ftvSup bvTsjB"
         href="/work"
       >
         Overview
       </a>
       <br />
       <a
-        class="text-link text-link--text-link text-link--no-padding text-link--inline"
+        class="sc-ftvSup bvTsjB"
         href="/work/backpack"
       >
         Backpack
       </a>
       <br />
       <a
-        class="text-link text-link--text-link text-link--no-padding text-link--inline"
+        class="sc-ftvSup bvTsjB"
         href="/work/degree"
       >
         Degree
       </a>
       <br />
       <a
-        class="text-link text-link--text-link text-link--no-padding text-link--inline"
-        href="/work/EPICC"
+        class="sc-ftvSup bvTsjB"
+        href="/work/epicc"
       >
         EPICC
       </a>
       <br />
       <a
-        class="text-link text-link--text-link text-link--no-padding text-link--inline"
+        class="sc-ftvSup bvTsjB"
         href="/work/side-projects"
       >
         Side projects
@@ -3431,10 +3431,10 @@ exports[`<SiteMap /> should render correctly with ssrBlogs 1`] = `
       Design 🎨
     </h3>
     <span
-      class="paragraph"
+      class="sc-bczRLJ bhVmoO"
     >
       <a
-        class="text-link text-link--text-link text-link--no-padding text-link--inline"
+        class="sc-ftvSup bvTsjB"
         href="/privacy-policy"
       >
         Privacy Policy
@@ -3451,31 +3451,31 @@ exports[`<SiteMap /> should render correctly with ssrBlogs 1`] = `
       Other stuff 🤷‍♂️
     </h3>
     <span
-      class="paragraph"
+      class="sc-bczRLJ bhVmoO"
     >
       <a
-        class="text-link text-link--text-link text-link--no-padding text-link--inline"
+        class="sc-ftvSup bvTsjB"
         href="/contact"
       >
         Contact
       </a>
       <br />
       <a
-        class="text-link text-link--text-link text-link--no-padding text-link--inline"
+        class="sc-ftvSup bvTsjB"
         href="/support"
       >
         Support
       </a>
       <br />
       <a
-        class="text-link text-link--text-link text-link--no-padding text-link--inline"
+        class="sc-ftvSup bvTsjB"
         href="/debug"
       >
         Debug tools
       </a>
       <br />
       <a
-        class="text-link text-link--text-link text-link--no-padding text-link--inline"
+        class="sc-ftvSup bvTsjB"
         href="/status"
       >
         Status
@@ -3492,21 +3492,21 @@ exports[`<SiteMap /> should render correctly with ssrBlogs 1`] = `
       Random 🐉
     </h3>
     <span
-      class="paragraph"
+      class="sc-bczRLJ bhVmoO"
     >
       <a
         aria-label="Robots.txt (opens in a new tab)"
-        class="text-link text-link--text-link text-link--no-padding text-link--inline"
+        class="sc-ftvSup bvTsjB"
         href="/robots.txt"
         rel="noopener noreferrer"
         target="_blank"
       >
         Robots.txt
         <div
-          class="text-link__icon-container"
+          class="sc-papXJ ecwnCf"
         >
           <svg
-            class="icon text-link__icon"
+            class="sc-iBkjds eintev sc-jqUVSM fjeMmK"
             height="18"
             viewBox="0 0 24 24"
             width="18"
@@ -3521,17 +3521,17 @@ exports[`<SiteMap /> should render correctly with ssrBlogs 1`] = `
       <br />
       <a
         aria-label="SiteMap.xml (opens in a new tab)"
-        class="text-link text-link--text-link text-link--no-padding text-link--inline"
+        class="sc-ftvSup bvTsjB"
         href="/sitemap.xml"
         rel="noopener noreferrer"
         target="_blank"
       >
         SiteMap.xml
         <div
-          class="text-link__icon-container"
+          class="sc-papXJ ecwnCf"
         >
           <svg
-            class="icon text-link__icon"
+            class="sc-iBkjds eintev sc-jqUVSM fjeMmK"
             height="18"
             viewBox="0 0 24 24"
             width="18"
@@ -3545,14 +3545,14 @@ exports[`<SiteMap /> should render correctly with ssrBlogs 1`] = `
       </a>
       <br />
       <a
-        class="text-link text-link--text-link text-link--no-padding text-link--inline"
+        class="sc-ftvSup bvTsjB"
         href="/404"
       >
         404 error page - not found
       </a>
       <br />
       <a
-        class="text-link text-link--text-link text-link--no-padding text-link--inline"
+        class="sc-ftvSup bvTsjB"
         href="/teapot"
       >
         418 error page - I'm a teapot
@@ -3569,10 +3569,10 @@ exports[`<SiteMap /> should render correctly with ssrBlogs 1`] = `
       API
     </h3>
     <span
-      class="paragraph"
+      class="sc-bczRLJ bhVmoO"
     >
       <a
-        class="text-link text-link--text-link text-link--no-padding text-link--inline"
+        class="sc-ftvSup bvTsjB"
         href="/api-docs"
       >
         API docs
@@ -3589,38 +3589,38 @@ exports[`<SiteMap /> should render correctly with ssrBlogs 1`] = `
       Accounts 🔑
     </h3>
     <span
-      class="paragraph"
+      class="sc-bczRLJ bhVmoO"
     >
       <a
-        class="text-link text-link--text-link text-link--no-padding text-link--inline"
+        class="sc-ftvSup bvTsjB"
         href="/account"
       >
         Account
       </a>
       <br />
       <a
-        class="text-link text-link--text-link text-link--no-padding text-link--inline"
+        class="sc-ftvSup bvTsjB"
         href="/sign-up"
       >
         Sign up
       </a>
       <br />
       <a
-        class="text-link text-link--text-link text-link--no-padding text-link--inline"
+        class="sc-ftvSup bvTsjB"
         href="/login"
       >
         Log in
       </a>
       <br />
       <a
-        class="text-link text-link--text-link text-link--no-padding text-link--inline"
+        class="sc-ftvSup bvTsjB"
         href="/email-verification"
       >
         Email verification
       </a>
       <br />
       <a
-        class="text-link text-link--text-link text-link--no-padding text-link--inline"
+        class="sc-ftvSup bvTsjB"
         href="/magic-login"
       >
         Magic login
@@ -3637,45 +3637,45 @@ exports[`<SiteMap /> should render correctly with ssrBlogs 1`] = `
       Admin 👮‍♂️
     </h3>
     <span
-      class="paragraph"
+      class="sc-bczRLJ bhVmoO"
     >
       <a
-        class="text-link text-link--text-link text-link--no-padding text-link--inline"
+        class="sc-ftvSup bvTsjB"
         href="/admin"
       >
         Admin navigation
       </a>
       <br />
       <a
-        class="text-link text-link--text-link text-link--no-padding text-link--inline"
+        class="sc-ftvSup bvTsjB"
         href="/blog"
       >
         Blogs
       </a>
       <br />
       <a
-        class="text-link text-link--text-link text-link--no-padding text-link--inline"
+        class="sc-ftvSup bvTsjB"
         href="/admin/analytics"
       >
         Analytics
       </a>
       <br />
       <a
-        class="text-link text-link--text-link text-link--no-padding text-link--inline"
+        class="sc-ftvSup bvTsjB"
         href="/admin/emails"
       >
         Emails
       </a>
       <br />
       <a
-        class="text-link text-link--text-link text-link--no-padding text-link--inline"
+        class="sc-ftvSup bvTsjB"
         href="/admin/notifications"
       >
         Notifications
       </a>
       <br />
       <a
-        class="text-link text-link--text-link text-link--no-padding text-link--inline"
+        class="sc-ftvSup bvTsjB"
         href="/admin/users"
       >
         Users
@@ -3692,11 +3692,11 @@ exports[`<SiteMap /> should render correctly with ssrBlogs 1`] = `
       Redirects 👉
     </h3>
     <span
-      class="paragraph"
+      class="sc-bczRLJ bhVmoO"
     >
       <div>
         <a
-          class="text-link text-link--text-link text-link--no-padding text-link--inline"
+          class="sc-ftvSup bvTsjB"
           href="/codebase"
         >
           /codebase ⇒ https://github.com/georgegillams/georgegillams.co.uk
@@ -3705,7 +3705,7 @@ exports[`<SiteMap /> should render correctly with ssrBlogs 1`] = `
       </div>
       <div>
         <a
-          class="text-link text-link--text-link text-link--no-padding text-link--inline"
+          class="sc-ftvSup bvTsjB"
           href="/copyright"
         >
           /copyright ⇒ https://creativecommons.org/licenses/by-sa/3.0/
@@ -3714,7 +3714,7 @@ exports[`<SiteMap /> should render correctly with ssrBlogs 1`] = `
       </div>
       <div>
         <a
-          class="text-link text-link--text-link text-link--no-padding text-link--inline"
+          class="sc-ftvSup bvTsjB"
           href="/flickr"
         >
           /flickr ⇒ https://www.flickr.com/people/georgegillams
@@ -3723,7 +3723,7 @@ exports[`<SiteMap /> should render correctly with ssrBlogs 1`] = `
       </div>
       <div>
         <a
-          class="text-link text-link--text-link text-link--no-padding text-link--inline"
+          class="sc-ftvSup bvTsjB"
           href="/monzo"
         >
           /monzo ⇒ https://join.monzo.com/r/vjd3d74
@@ -3732,7 +3732,7 @@ exports[`<SiteMap /> should render correctly with ssrBlogs 1`] = `
       </div>
       <div>
         <a
-          class="text-link text-link--text-link text-link--no-padding text-link--inline"
+          class="sc-ftvSup bvTsjB"
           href="/github"
         >
           /github ⇒ https://github.com/georgegillams
@@ -3741,7 +3741,7 @@ exports[`<SiteMap /> should render correctly with ssrBlogs 1`] = `
       </div>
       <div>
         <a
-          class="text-link text-link--text-link text-link--no-padding text-link--inline"
+          class="sc-ftvSup bvTsjB"
           href="/stackoverflow"
         >
           /stackoverflow ⇒ https://stackoverflow.com/users/14463713/georgegillams
@@ -3750,7 +3750,7 @@ exports[`<SiteMap /> should render correctly with ssrBlogs 1`] = `
       </div>
       <div>
         <a
-          class="text-link text-link--text-link text-link--no-padding text-link--inline"
+          class="sc-ftvSup bvTsjB"
           href="/gurushots"
         >
           /gurushots ⇒ https://gurushots.com/georgegillams/photos
@@ -3759,7 +3759,7 @@ exports[`<SiteMap /> should render correctly with ssrBlogs 1`] = `
       </div>
       <div>
         <a
-          class="text-link text-link--text-link text-link--no-padding text-link--inline"
+          class="sc-ftvSup bvTsjB"
           href="/linkedin"
         >
           /linkedin ⇒ https://www.linkedin.com/in/george-gillams-37537077
@@ -3768,7 +3768,7 @@ exports[`<SiteMap /> should render correctly with ssrBlogs 1`] = `
       </div>
       <div>
         <a
-          class="text-link text-link--text-link text-link--no-padding text-link--inline"
+          class="sc-ftvSup bvTsjB"
           href="/twitter"
         >
           /twitter ⇒ https://twitter.com/georgegillams
@@ -3777,7 +3777,7 @@ exports[`<SiteMap /> should render correctly with ssrBlogs 1`] = `
       </div>
       <div>
         <a
-          class="text-link text-link--text-link text-link--no-padding text-link--inline"
+          class="sc-ftvSup bvTsjB"
           href="/wp-admin"
         >
           /wp-admin ⇒ /admin
@@ -3786,7 +3786,7 @@ exports[`<SiteMap /> should render correctly with ssrBlogs 1`] = `
       </div>
       <div>
         <a
-          class="text-link text-link--text-link text-link--no-padding text-link--inline"
+          class="sc-ftvSup bvTsjB"
           href="/about"
         >
           /about ⇒ /
@@ -3795,7 +3795,7 @@ exports[`<SiteMap /> should render correctly with ssrBlogs 1`] = `
       </div>
       <div>
         <a
-          class="text-link text-link--text-link text-link--no-padding text-link--inline"
+          class="sc-ftvSup bvTsjB"
           href="/site-map"
         >
           /site-map ⇒ /sitemap
@@ -3804,7 +3804,7 @@ exports[`<SiteMap /> should render correctly with ssrBlogs 1`] = `
       </div>
       <div>
         <a
-          class="text-link text-link--text-link text-link--no-padding text-link--inline"
+          class="sc-ftvSup bvTsjB"
           href="/about/degree"
         >
           /about/degree ⇒ /work/degree
@@ -3813,7 +3813,7 @@ exports[`<SiteMap /> should render correctly with ssrBlogs 1`] = `
       </div>
       <div>
         <a
-          class="text-link text-link--text-link text-link--no-padding text-link--inline"
+          class="sc-ftvSup bvTsjB"
           href="/articles/tough-mudder"
         >
           /articles/tough-mudder ⇒ /blog/tough-mudder
@@ -3822,7 +3822,7 @@ exports[`<SiteMap /> should render correctly with ssrBlogs 1`] = `
       </div>
       <div>
         <a
-          class="text-link text-link--text-link text-link--no-padding text-link--inline"
+          class="sc-ftvSup bvTsjB"
           href="/articles/net-neutrality"
         >
           /articles/net-neutrality ⇒ /blog/net-neutrality
@@ -3831,7 +3831,7 @@ exports[`<SiteMap /> should render correctly with ssrBlogs 1`] = `
       </div>
       <div>
         <a
-          class="text-link text-link--text-link text-link--no-padding text-link--inline"
+          class="sc-ftvSup bvTsjB"
           href="/articles/vim"
         >
           /articles/vim ⇒ /blog/vim
@@ -3840,7 +3840,7 @@ exports[`<SiteMap /> should render correctly with ssrBlogs 1`] = `
       </div>
       <div>
         <a
-          class="text-link text-link--text-link text-link--no-padding text-link--inline"
+          class="sc-ftvSup bvTsjB"
           href="/articles/uk-bank-security"
         >
           /articles/uk-bank-security ⇒ /blog/uk-bank-security
@@ -3849,7 +3849,7 @@ exports[`<SiteMap /> should render correctly with ssrBlogs 1`] = `
       </div>
       <div>
         <a
-          class="text-link text-link--text-link text-link--no-padding text-link--inline"
+          class="sc-ftvSup bvTsjB"
           href="/articles/week-of-rust"
         >
           /articles/week-of-rust ⇒ /blog/week-of-rust
@@ -3858,7 +3858,7 @@ exports[`<SiteMap /> should render correctly with ssrBlogs 1`] = `
       </div>
       <div>
         <a
-          class="text-link text-link--text-link text-link--no-padding text-link--inline"
+          class="sc-ftvSup bvTsjB"
           href="/articles/react-http-response-codes"
         >
           /articles/react-http-response-codes ⇒ /blog/react-http-response-codes
@@ -3867,7 +3867,7 @@ exports[`<SiteMap /> should render correctly with ssrBlogs 1`] = `
       </div>
       <div>
         <a
-          class="text-link text-link--text-link text-link--no-padding text-link--inline"
+          class="sc-ftvSup bvTsjB"
           href="/articles/list"
         >
           /articles/list ⇒ /blog
@@ -3876,7 +3876,7 @@ exports[`<SiteMap /> should render correctly with ssrBlogs 1`] = `
       </div>
       <div>
         <a
-          class="text-link text-link--text-link text-link--no-padding text-link--inline"
+          class="sc-ftvSup bvTsjB"
           href="/articles"
         >
           /articles ⇒ /blog
@@ -3885,7 +3885,7 @@ exports[`<SiteMap /> should render correctly with ssrBlogs 1`] = `
       </div>
       <div>
         <a
-          class="text-link text-link--text-link text-link--no-padding text-link--inline"
+          class="sc-ftvSup bvTsjB"
           href="/net-neutrality"
         >
           /net-neutrality ⇒ /blog/net-neutrality
@@ -3894,7 +3894,7 @@ exports[`<SiteMap /> should render correctly with ssrBlogs 1`] = `
       </div>
       <div>
         <a
-          class="text-link text-link--text-link text-link--no-padding text-link--inline"
+          class="sc-ftvSup bvTsjB"
           href="/blog/view"
         >
           /blog/view ⇒ /blog
@@ -3903,7 +3903,7 @@ exports[`<SiteMap /> should render correctly with ssrBlogs 1`] = `
       </div>
       <div>
         <a
-          class="text-link text-link--text-link text-link--no-padding text-link--inline"
+          class="sc-ftvSup bvTsjB"
           href="/travel/view"
         >
           /travel/view ⇒ /travel
@@ -3912,7 +3912,7 @@ exports[`<SiteMap /> should render correctly with ssrBlogs 1`] = `
       </div>
       <div>
         <a
-          class="text-link text-link--text-link text-link--no-padding text-link--inline"
+          class="sc-ftvSup bvTsjB"
           href="/blog/view?id=tg5x7po9"
         >
           /blog/view?id=tg5x7po9 ⇒ /blog/tough-mudder
@@ -3921,7 +3921,7 @@ exports[`<SiteMap /> should render correctly with ssrBlogs 1`] = `
       </div>
       <div>
         <a
-          class="text-link text-link--text-link text-link--no-padding text-link--inline"
+          class="sc-ftvSup bvTsjB"
           href="/blog/view?id=lqngy"
         >
           /blog/view?id=lqngy ⇒ /blog/lightroom-workflow
@@ -3930,7 +3930,7 @@ exports[`<SiteMap /> should render correctly with ssrBlogs 1`] = `
       </div>
       <div>
         <a
-          class="text-link text-link--text-link text-link--no-padding text-link--inline"
+          class="sc-ftvSup bvTsjB"
           href="/blog/view?id=w85aht"
         >
           /blog/view?id=w85aht ⇒ /blog/net-neutrality
@@ -3939,7 +3939,7 @@ exports[`<SiteMap /> should render correctly with ssrBlogs 1`] = `
       </div>
       <div>
         <a
-          class="text-link text-link--text-link text-link--no-padding text-link--inline"
+          class="sc-ftvSup bvTsjB"
           href="/blog/view?id=azcpjh"
         >
           /blog/view?id=azcpjh ⇒ /blog/vim
@@ -3948,7 +3948,7 @@ exports[`<SiteMap /> should render correctly with ssrBlogs 1`] = `
       </div>
       <div>
         <a
-          class="text-link text-link--text-link text-link--no-padding text-link--inline"
+          class="sc-ftvSup bvTsjB"
           href="/blog/view?id=y77dnh"
         >
           /blog/view?id=y77dnh ⇒ /blog/uk-bank-security
@@ -3957,7 +3957,7 @@ exports[`<SiteMap /> should render correctly with ssrBlogs 1`] = `
       </div>
       <div>
         <a
-          class="text-link text-link--text-link text-link--no-padding text-link--inline"
+          class="sc-ftvSup bvTsjB"
           href="/travel/list"
         >
           /travel/list ⇒ /travel
@@ -3966,7 +3966,7 @@ exports[`<SiteMap /> should render correctly with ssrBlogs 1`] = `
       </div>
       <div>
         <a
-          class="text-link text-link--text-link text-link--no-padding text-link--inline"
+          class="sc-ftvSup bvTsjB"
           href="/travel/view?id=kzm87"
         >
           /travel/view?id=kzm87 ⇒ /travel/serre-chevalier-2017
@@ -3975,7 +3975,7 @@ exports[`<SiteMap /> should render correctly with ssrBlogs 1`] = `
       </div>
       <div>
         <a
-          class="text-link text-link--text-link text-link--no-padding text-link--inline"
+          class="sc-ftvSup bvTsjB"
           href="/travel/view?id=m4noe"
         >
           /travel/view?id=m4noe ⇒ /travel/disneyland-2017
@@ -3984,7 +3984,7 @@ exports[`<SiteMap /> should render correctly with ssrBlogs 1`] = `
       </div>
       <div>
         <a
-          class="text-link text-link--text-link text-link--no-padding text-link--inline"
+          class="sc-ftvSup bvTsjB"
           href="/travel/view?id=e0muz1"
         >
           /travel/view?id=e0muz1 ⇒ /travel/munich-2017
@@ -3993,7 +3993,7 @@ exports[`<SiteMap /> should render correctly with ssrBlogs 1`] = `
       </div>
       <div>
         <a
-          class="text-link text-link--text-link text-link--no-padding text-link--inline"
+          class="sc-ftvSup bvTsjB"
           href="/travel/view?id=evrd8w"
         >
           /travel/view?id=evrd8w ⇒ /travel/longleat-2017
@@ -4002,7 +4002,7 @@ exports[`<SiteMap /> should render correctly with ssrBlogs 1`] = `
       </div>
       <div>
         <a
-          class="text-link text-link--text-link text-link--no-padding text-link--inline"
+          class="sc-ftvSup bvTsjB"
           href="/travel/view?id=q03ms"
         >
           /travel/view?id=q03ms ⇒ /travel/iceland-2018
@@ -4011,7 +4011,7 @@ exports[`<SiteMap /> should render correctly with ssrBlogs 1`] = `
       </div>
       <div>
         <a
-          class="text-link text-link--text-link text-link--no-padding text-link--inline"
+          class="sc-ftvSup bvTsjB"
           href="/art"
         >
           /art ⇒ /photography
@@ -4020,7 +4020,7 @@ exports[`<SiteMap /> should render correctly with ssrBlogs 1`] = `
       </div>
       <div>
         <a
-          class="text-link text-link--text-link text-link--no-padding text-link--inline"
+          class="sc-ftvSup bvTsjB"
           href="/photoshop"
         >
           /photoshop ⇒ /photography
@@ -4029,7 +4029,7 @@ exports[`<SiteMap /> should render correctly with ssrBlogs 1`] = `
       </div>
       <div>
         <a
-          class="text-link text-link--text-link text-link--no-padding text-link--inline"
+          class="sc-ftvSup bvTsjB"
           href="/phot"
         >
           /phot ⇒ /photography
@@ -4038,7 +4038,7 @@ exports[`<SiteMap /> should render correctly with ssrBlogs 1`] = `
       </div>
       <div>
         <a
-          class="text-link text-link--text-link text-link--no-padding text-link--inline"
+          class="sc-ftvSup bvTsjB"
           href="/photo"
         >
           /photo ⇒ /photography
@@ -4047,7 +4047,7 @@ exports[`<SiteMap /> should render correctly with ssrBlogs 1`] = `
       </div>
       <div>
         <a
-          class="text-link text-link--text-link text-link--no-padding text-link--inline"
+          class="sc-ftvSup bvTsjB"
           href="/payment"
         >
           /payment ⇒ /payments

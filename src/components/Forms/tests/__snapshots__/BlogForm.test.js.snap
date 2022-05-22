@@ -12,19 +12,19 @@ exports[`<BlogForm /> Should render correctly 1`] = `
       Title
     </label>
     <div
-      class="input__outer forms__component forms__component__text-box"
+      class="sc-hKMtZM fMOyKb forms__component forms__component__text-box"
       placeholder="Title"
     >
       <input
         aria-disabled="false"
         aria-invalid="false"
-        class="input__inner"
+        class="sc-papXJ cgekWF"
         id="title_FORM_ID"
         name="Title"
         value=""
       />
       <svg
-        class="icon input__icon input__icon--valid"
+        class="sc-dkzDqf bDLnRc sc-jqUVSM hfMxIT"
         height="18"
         viewBox="0 0 24 24"
         width="18"
@@ -42,19 +42,19 @@ exports[`<BlogForm /> Should render correctly 1`] = `
       Tags
     </label>
     <div
-      class="input__outer forms__component forms__component__text-box"
+      class="sc-hKMtZM fMOyKb forms__component forms__component__text-box"
       placeholder="Tags"
     >
       <input
         aria-disabled="false"
         aria-invalid="false"
-        class="input__inner"
+        class="sc-papXJ cgekWF"
         id="tags_FORM_ID"
         name="Tags"
         value=""
       />
       <svg
-        class="icon input__icon input__icon--valid"
+        class="sc-dkzDqf bDLnRc sc-jqUVSM hfMxIT"
         height="18"
         viewBox="0 0 24 24"
         width="18"
@@ -72,19 +72,19 @@ exports[`<BlogForm /> Should render correctly 1`] = `
       Blog image
     </label>
     <div
-      class="input__outer forms__component forms__component__text-box"
+      class="sc-hKMtZM fMOyKb forms__component forms__component__text-box"
       placeholder="Blog image"
     >
       <input
         aria-disabled="false"
         aria-invalid="false"
-        class="input__inner"
+        class="sc-papXJ cgekWF"
         id="blogImage_FORM_ID"
         name="Blog image"
         value=""
       />
       <svg
-        class="icon input__icon input__icon--valid"
+        class="sc-dkzDqf bDLnRc sc-jqUVSM hfMxIT"
         height="18"
         viewBox="0 0 24 24"
         width="18"
@@ -102,19 +102,19 @@ exports[`<BlogForm /> Should render correctly 1`] = `
       Published timestamp
     </label>
     <div
-      class="input__outer forms__component forms__component__text-box"
+      class="sc-hKMtZM fMOyKb forms__component forms__component__text-box"
       placeholder="Published timestamp"
     >
       <input
         aria-disabled="false"
         aria-invalid="false"
-        class="input__inner"
+        class="sc-papXJ cgekWF"
         id="publishedTimestamp_FORM_ID"
         name="Published timestamp"
         value=""
       />
       <svg
-        class="icon input__icon input__icon--valid"
+        class="sc-dkzDqf bDLnRc sc-jqUVSM hfMxIT"
         height="18"
         viewBox="0 0 24 24"
         width="18"
@@ -132,19 +132,19 @@ exports[`<BlogForm /> Should render correctly 1`] = `
       Blog card date override
     </label>
     <div
-      class="input__outer forms__component forms__component__text-box"
+      class="sc-hKMtZM fMOyKb forms__component forms__component__text-box"
       placeholder="Blog card date override"
     >
       <input
         aria-disabled="false"
         aria-invalid="false"
-        class="input__inner"
+        class="sc-papXJ cgekWF"
         id="blogCardDate_FORM_ID"
         name="Blog card date override"
         value=""
       />
       <svg
-        class="icon input__icon input__icon--valid"
+        class="sc-dkzDqf bDLnRc sc-jqUVSM hfMxIT"
         height="18"
         viewBox="0 0 24 24"
         width="18"
@@ -156,21 +156,21 @@ exports[`<BlogForm /> Should render correctly 1`] = `
       </svg>
     </div>
     <label
-      class="checkbox forms__component"
+      class="sc-eCYdqJ hGxLib forms__component"
       id="light_FORM_ID"
     >
       <div
-        class="checkbox__input-wrapper"
+        class="sc-jSMfEi gYtFJK"
       >
         <input
           aria-invalid="false"
           aria-label="Light"
-          class="checkbox__input"
+          class="sc-gKXOVf XFKMS"
           name="Light"
           type="checkbox"
         />
         <svg
-          class="icon checkbox__check"
+          class="sc-dkzDqf bDLnRc sc-iBkjds iaHuiq"
           height="18"
           viewBox="0 0 24 24"
           width="18"
@@ -181,30 +181,29 @@ exports[`<BlogForm /> Should render correctly 1`] = `
           />
         </svg>
       </div>
-      <span
+      <div
         aria-hidden="true"
-        class="checkbox__label"
+        class="sc-ftvSup jziudT"
       >
         Light
-         
-      </span>
+      </div>
     </label>
     <label
-      class="checkbox forms__component"
+      class="sc-eCYdqJ hGxLib forms__component"
       id="published_FORM_ID"
     >
       <div
-        class="checkbox__input-wrapper"
+        class="sc-jSMfEi gYtFJK"
       >
         <input
           aria-invalid="false"
           aria-label="Published"
-          class="checkbox__input"
+          class="sc-gKXOVf XFKMS"
           name="Published"
           type="checkbox"
         />
         <svg
-          class="icon checkbox__check"
+          class="sc-dkzDqf bDLnRc sc-iBkjds iaHuiq"
           height="18"
           viewBox="0 0 24 24"
           width="18"
@@ -215,30 +214,29 @@ exports[`<BlogForm /> Should render correctly 1`] = `
           />
         </svg>
       </div>
-      <span
+      <div
         aria-hidden="true"
-        class="checkbox__label"
+        class="sc-ftvSup jziudT"
       >
         Published
-         
-      </span>
+      </div>
     </label>
     <label
-      class="checkbox forms__component"
+      class="sc-eCYdqJ hGxLib forms__component"
       id="showInBlogsList_FORM_ID"
     >
       <div
-        class="checkbox__input-wrapper"
+        class="sc-jSMfEi gYtFJK"
       >
         <input
           aria-invalid="false"
           aria-label="Show in blogs list"
-          class="checkbox__input"
+          class="sc-gKXOVf XFKMS"
           name="Show in blogs list"
           type="checkbox"
         />
         <svg
-          class="icon checkbox__check"
+          class="sc-dkzDqf bDLnRc sc-iBkjds iaHuiq"
           height="18"
           viewBox="0 0 24 24"
           width="18"
@@ -249,30 +247,29 @@ exports[`<BlogForm /> Should render correctly 1`] = `
           />
         </svg>
       </div>
-      <span
+      <div
         aria-hidden="true"
-        class="checkbox__label"
+        class="sc-ftvSup jziudT"
       >
         Show in blogs list
-         
-      </span>
+      </div>
     </label>
     <label
-      class="checkbox forms__component"
+      class="sc-eCYdqJ hGxLib forms__component"
       id="showInTravelBlogsList_FORM_ID"
     >
       <div
-        class="checkbox__input-wrapper"
+        class="sc-jSMfEi gYtFJK"
       >
         <input
           aria-invalid="false"
           aria-label="Show in travel blogs list"
-          class="checkbox__input"
+          class="sc-gKXOVf XFKMS"
           name="Show in travel blogs list"
           type="checkbox"
         />
         <svg
-          class="icon checkbox__check"
+          class="sc-dkzDqf bDLnRc sc-iBkjds iaHuiq"
           height="18"
           viewBox="0 0 24 24"
           width="18"
@@ -283,13 +280,12 @@ exports[`<BlogForm /> Should render correctly 1`] = `
           />
         </svg>
       </div>
-      <span
+      <div
         aria-hidden="true"
-        class="checkbox__label"
+        class="sc-ftvSup jziudT"
       >
         Show in travel blogs list
-         
-      </span>
+      </div>
     </label>
     <label
       class="forms__component forms__component__label"
@@ -298,19 +294,19 @@ exports[`<BlogForm /> Should render correctly 1`] = `
       Blog image border color
     </label>
     <div
-      class="input__outer forms__component forms__component__text-box"
+      class="sc-hKMtZM fMOyKb forms__component forms__component__text-box"
       placeholder="Blog image border color"
     >
       <input
         aria-disabled="false"
         aria-invalid="false"
-        class="input__inner"
+        class="sc-papXJ cgekWF"
         id="blogImageBorderColor_FORM_ID"
         name="Blog image border color"
         value=""
       />
       <svg
-        class="icon input__icon input__icon--valid"
+        class="sc-dkzDqf bDLnRc sc-jqUVSM hfMxIT"
         height="18"
         viewBox="0 0 24 24"
         width="18"
@@ -328,18 +324,18 @@ exports[`<BlogForm /> Should render correctly 1`] = `
       Content
     </label>
     <div
-      class="input__outer forms__component forms__component__text-box"
+      class="sc-hKMtZM fMOyKb forms__component forms__component__text-box"
       placeholder="Content"
     >
       <textarea
         aria-disabled="false"
         aria-invalid="false"
-        class="input__inner"
+        class="sc-kDDrLX dxNyur"
         id="content_FORM_ID"
         name="Content"
       />
       <svg
-        class="icon input__icon input__icon--valid"
+        class="sc-dkzDqf bDLnRc sc-jqUVSM hfMxIT"
         height="18"
         viewBox="0 0 24 24"
         width="18"
@@ -374,19 +370,19 @@ exports[`<BlogForm /> Should render correctly with no blog id 1`] = `
       Requested ID
     </label>
     <div
-      class="input__outer forms__component forms__component__text-box"
+      class="sc-hKMtZM fMOyKb forms__component forms__component__text-box"
       placeholder="Requested ID"
     >
       <input
         aria-disabled="false"
         aria-invalid="false"
-        class="input__inner"
+        class="sc-papXJ cgekWF"
         id="requestedId_FORM_ID"
         name="Requested ID"
         value=""
       />
       <svg
-        class="icon input__icon input__icon--valid"
+        class="sc-dkzDqf bDLnRc sc-jqUVSM hfMxIT"
         height="18"
         viewBox="0 0 24 24"
         width="18"
@@ -404,19 +400,19 @@ exports[`<BlogForm /> Should render correctly with no blog id 1`] = `
       Title
     </label>
     <div
-      class="input__outer forms__component forms__component__text-box"
+      class="sc-hKMtZM fMOyKb forms__component forms__component__text-box"
       placeholder="Title"
     >
       <input
         aria-disabled="false"
         aria-invalid="false"
-        class="input__inner"
+        class="sc-papXJ cgekWF"
         id="title_FORM_ID"
         name="Title"
         value=""
       />
       <svg
-        class="icon input__icon input__icon--valid"
+        class="sc-dkzDqf bDLnRc sc-jqUVSM hfMxIT"
         height="18"
         viewBox="0 0 24 24"
         width="18"
@@ -434,19 +430,19 @@ exports[`<BlogForm /> Should render correctly with no blog id 1`] = `
       Tags
     </label>
     <div
-      class="input__outer forms__component forms__component__text-box"
+      class="sc-hKMtZM fMOyKb forms__component forms__component__text-box"
       placeholder="Tags"
     >
       <input
         aria-disabled="false"
         aria-invalid="false"
-        class="input__inner"
+        class="sc-papXJ cgekWF"
         id="tags_FORM_ID"
         name="Tags"
         value=""
       />
       <svg
-        class="icon input__icon input__icon--valid"
+        class="sc-dkzDqf bDLnRc sc-jqUVSM hfMxIT"
         height="18"
         viewBox="0 0 24 24"
         width="18"
@@ -464,19 +460,19 @@ exports[`<BlogForm /> Should render correctly with no blog id 1`] = `
       Blog image
     </label>
     <div
-      class="input__outer forms__component forms__component__text-box"
+      class="sc-hKMtZM fMOyKb forms__component forms__component__text-box"
       placeholder="Blog image"
     >
       <input
         aria-disabled="false"
         aria-invalid="false"
-        class="input__inner"
+        class="sc-papXJ cgekWF"
         id="blogImage_FORM_ID"
         name="Blog image"
         value=""
       />
       <svg
-        class="icon input__icon input__icon--valid"
+        class="sc-dkzDqf bDLnRc sc-jqUVSM hfMxIT"
         height="18"
         viewBox="0 0 24 24"
         width="18"
@@ -494,19 +490,19 @@ exports[`<BlogForm /> Should render correctly with no blog id 1`] = `
       Published timestamp
     </label>
     <div
-      class="input__outer forms__component forms__component__text-box"
+      class="sc-hKMtZM fMOyKb forms__component forms__component__text-box"
       placeholder="Published timestamp"
     >
       <input
         aria-disabled="false"
         aria-invalid="false"
-        class="input__inner"
+        class="sc-papXJ cgekWF"
         id="publishedTimestamp_FORM_ID"
         name="Published timestamp"
         value=""
       />
       <svg
-        class="icon input__icon input__icon--valid"
+        class="sc-dkzDqf bDLnRc sc-jqUVSM hfMxIT"
         height="18"
         viewBox="0 0 24 24"
         width="18"
@@ -524,19 +520,19 @@ exports[`<BlogForm /> Should render correctly with no blog id 1`] = `
       Blog card date override
     </label>
     <div
-      class="input__outer forms__component forms__component__text-box"
+      class="sc-hKMtZM fMOyKb forms__component forms__component__text-box"
       placeholder="Blog card date override"
     >
       <input
         aria-disabled="false"
         aria-invalid="false"
-        class="input__inner"
+        class="sc-papXJ cgekWF"
         id="blogCardDate_FORM_ID"
         name="Blog card date override"
         value=""
       />
       <svg
-        class="icon input__icon input__icon--valid"
+        class="sc-dkzDqf bDLnRc sc-jqUVSM hfMxIT"
         height="18"
         viewBox="0 0 24 24"
         width="18"
@@ -548,21 +544,21 @@ exports[`<BlogForm /> Should render correctly with no blog id 1`] = `
       </svg>
     </div>
     <label
-      class="checkbox forms__component"
+      class="sc-eCYdqJ hGxLib forms__component"
       id="light_FORM_ID"
     >
       <div
-        class="checkbox__input-wrapper"
+        class="sc-jSMfEi gYtFJK"
       >
         <input
           aria-invalid="false"
           aria-label="Light"
-          class="checkbox__input"
+          class="sc-gKXOVf XFKMS"
           name="Light"
           type="checkbox"
         />
         <svg
-          class="icon checkbox__check"
+          class="sc-dkzDqf bDLnRc sc-iBkjds iaHuiq"
           height="18"
           viewBox="0 0 24 24"
           width="18"
@@ -573,30 +569,29 @@ exports[`<BlogForm /> Should render correctly with no blog id 1`] = `
           />
         </svg>
       </div>
-      <span
+      <div
         aria-hidden="true"
-        class="checkbox__label"
+        class="sc-ftvSup jziudT"
       >
         Light
-         
-      </span>
+      </div>
     </label>
     <label
-      class="checkbox forms__component"
+      class="sc-eCYdqJ hGxLib forms__component"
       id="published_FORM_ID"
     >
       <div
-        class="checkbox__input-wrapper"
+        class="sc-jSMfEi gYtFJK"
       >
         <input
           aria-invalid="false"
           aria-label="Published"
-          class="checkbox__input"
+          class="sc-gKXOVf XFKMS"
           name="Published"
           type="checkbox"
         />
         <svg
-          class="icon checkbox__check"
+          class="sc-dkzDqf bDLnRc sc-iBkjds iaHuiq"
           height="18"
           viewBox="0 0 24 24"
           width="18"
@@ -607,30 +602,29 @@ exports[`<BlogForm /> Should render correctly with no blog id 1`] = `
           />
         </svg>
       </div>
-      <span
+      <div
         aria-hidden="true"
-        class="checkbox__label"
+        class="sc-ftvSup jziudT"
       >
         Published
-         
-      </span>
+      </div>
     </label>
     <label
-      class="checkbox forms__component"
+      class="sc-eCYdqJ hGxLib forms__component"
       id="showInBlogsList_FORM_ID"
     >
       <div
-        class="checkbox__input-wrapper"
+        class="sc-jSMfEi gYtFJK"
       >
         <input
           aria-invalid="false"
           aria-label="Show in blogs list"
-          class="checkbox__input"
+          class="sc-gKXOVf XFKMS"
           name="Show in blogs list"
           type="checkbox"
         />
         <svg
-          class="icon checkbox__check"
+          class="sc-dkzDqf bDLnRc sc-iBkjds iaHuiq"
           height="18"
           viewBox="0 0 24 24"
           width="18"
@@ -641,30 +635,29 @@ exports[`<BlogForm /> Should render correctly with no blog id 1`] = `
           />
         </svg>
       </div>
-      <span
+      <div
         aria-hidden="true"
-        class="checkbox__label"
+        class="sc-ftvSup jziudT"
       >
         Show in blogs list
-         
-      </span>
+      </div>
     </label>
     <label
-      class="checkbox forms__component"
+      class="sc-eCYdqJ hGxLib forms__component"
       id="showInTravelBlogsList_FORM_ID"
     >
       <div
-        class="checkbox__input-wrapper"
+        class="sc-jSMfEi gYtFJK"
       >
         <input
           aria-invalid="false"
           aria-label="Show in travel blogs list"
-          class="checkbox__input"
+          class="sc-gKXOVf XFKMS"
           name="Show in travel blogs list"
           type="checkbox"
         />
         <svg
-          class="icon checkbox__check"
+          class="sc-dkzDqf bDLnRc sc-iBkjds iaHuiq"
           height="18"
           viewBox="0 0 24 24"
           width="18"
@@ -675,13 +668,12 @@ exports[`<BlogForm /> Should render correctly with no blog id 1`] = `
           />
         </svg>
       </div>
-      <span
+      <div
         aria-hidden="true"
-        class="checkbox__label"
+        class="sc-ftvSup jziudT"
       >
         Show in travel blogs list
-         
-      </span>
+      </div>
     </label>
     <label
       class="forms__component forms__component__label"
@@ -690,19 +682,19 @@ exports[`<BlogForm /> Should render correctly with no blog id 1`] = `
       Blog image border color
     </label>
     <div
-      class="input__outer forms__component forms__component__text-box"
+      class="sc-hKMtZM fMOyKb forms__component forms__component__text-box"
       placeholder="Blog image border color"
     >
       <input
         aria-disabled="false"
         aria-invalid="false"
-        class="input__inner"
+        class="sc-papXJ cgekWF"
         id="blogImageBorderColor_FORM_ID"
         name="Blog image border color"
         value=""
       />
       <svg
-        class="icon input__icon input__icon--valid"
+        class="sc-dkzDqf bDLnRc sc-jqUVSM hfMxIT"
         height="18"
         viewBox="0 0 24 24"
         width="18"
@@ -720,18 +712,18 @@ exports[`<BlogForm /> Should render correctly with no blog id 1`] = `
       Content
     </label>
     <div
-      class="input__outer forms__component forms__component__text-box"
+      class="sc-hKMtZM fMOyKb forms__component forms__component__text-box"
       placeholder="Content"
     >
       <textarea
         aria-disabled="false"
         aria-invalid="false"
-        class="input__inner"
+        class="sc-kDDrLX dxNyur"
         id="content_FORM_ID"
         name="Content"
       />
       <svg
-        class="icon input__icon input__icon--valid"
+        class="sc-dkzDqf bDLnRc sc-jqUVSM hfMxIT"
         height="18"
         viewBox="0 0 24 24"
         width="18"

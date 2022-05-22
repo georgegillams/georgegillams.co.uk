@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
-import { Checkbox } from '@george-gillams/components/Checkbox';
-import { Paragraph } from '@george-gillams/components/Paragraph';
+import Checkbox from '@george-gillams/components/checkbox';
+import Paragraph from '@george-gillams/components/paragraph';
 import PageTitle from 'components/common/PageTitle';
 import STYLES from './debug.scss';
 import { cssModules } from '@george-gillams/components/helpers/cssModules';

@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { cssModules } from '@george-gillams/components/helpers/cssModules';
-import { Paragraph } from '@george-gillams/components/Paragraph';
+import Paragraph from '@george-gillams/components/paragraph';
 import { THEMES } from '@george-gillams/components/Theming';
 
 import reactLogo from './react-logo.svg';

@@ -1,8 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { cssModules } from '@george-gillams/components/helpers/cssModules';
-import { Subsection } from '@george-gillams/components/Subsection';
-import { Paragraph } from '@george-gillams/components/Paragraph';
+import Subsection from '@george-gillams/components/subsection';
+import Paragraph from '@george-gillams/components/paragraph';
 import PageTitle from 'components/common/PageTitle';
 
 import STYLES from './teapot.scss';

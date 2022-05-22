@@ -1,9 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import PageTitle from 'components/common/PageTitle';
-import { LoadingCover } from '@george-gillams/components/LoadingCover';
-import { DebugObject } from 'components/common/DebugObject';
-import { Paragraph } from '@george-gillams/components/Paragraph';
+import LoadingCover from '@george-gillams/components/loading-cover';
+import DebugObject from 'components/common/DebugObject';
+import Paragraph from '@george-gillams/components/paragraph';
 import Button from 'components/common/Button';
 import { setPostLoginRedirect } from 'client-utils/common/storageHelpers';
 

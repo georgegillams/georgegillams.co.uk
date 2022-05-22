@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 import STYLES from './photo-section.scss';
 import AnimatedImage from './AnimatedImage';
-import { withScroll, cleanRestScrollProps } from '@george-gillams/components/ScrollContainer';
+import withScroll, { cleanRestScrollProps } from '@george-gillams/components/scroll-container';
 import { cssModules } from '@george-gillams/components/helpers/cssModules';
 
 const getClassName = cssModules(STYLES);

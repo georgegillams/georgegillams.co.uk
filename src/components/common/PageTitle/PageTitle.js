@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { PageTitle as GGPageTitle } from '@george-gillams/components/PageTitle';
+import GGPageTitle from '@george-gillams/components/page-title';
 import TextLink from 'components/common/TextLink';
 import Head from 'next/head';
 import appConfig from 'helpers/appConfig';

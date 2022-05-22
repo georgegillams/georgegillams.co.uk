@@ -17,13 +17,13 @@ exports[`<PrivacyPolicy /> should render correctly - index 1`] = `
       Analytics
     </h3>
     <span
-      class="paragraph"
+      class="sc-jqUVSM iuHAUr"
     >
       This site collects basic analytics information, namely the URL paths you visit within the site, and information about the device you are using. This is never shared with third-parties and never used to track you across other services.
     </span>
     <br />
     <span
-      class="paragraph"
+      class="sc-jqUVSM iuHAUr"
     >
       The information collected about your device includes browser, browser version, OS, OS version, and the first part of your IP address which gives a very, very rough location of access.
     </span>
@@ -38,7 +38,7 @@ exports[`<PrivacyPolicy /> should render correctly - index 1`] = `
       Accounts
     </h3>
     <span
-      class="paragraph"
+      class="sc-jqUVSM iuHAUr"
     >
       When you sign-up for an account we ask for your name and email. We will never share these with third parties.
     </span>
@@ -53,7 +53,7 @@ exports[`<PrivacyPolicy /> should render correctly - index 1`] = `
       Cookies
     </h3>
     <span
-      class="paragraph"
+      class="sc-jqUVSM iuHAUr"
     >
       To keep you logged in to your user account an authentication cookie will be stored on your machine. This will not be used to track usage, track other services you use, or correlate usage patterns with an individual.
     </span>
@@ -68,23 +68,23 @@ exports[`<PrivacyPolicy /> should render correctly - index 1`] = `
       Stripe
     </h3>
     <span
-      class="paragraph"
+      class="sc-jqUVSM iuHAUr"
     >
       To enable payments on the site, we use Stripe. Data you enter when making a payment will be handled in accordance with
        
       <a
         aria-label="Stripe's policy (opens in a new tab)"
-        class="text-link text-link--text-link text-link--no-padding text-link--inline"
+        class="sc-iBkjds kXOvCG"
         href="https://stripe.com/privacy"
         rel="noopener noreferrer"
         target="_blank"
       >
         Stripe's policy
         <div
-          class="text-link__icon-container"
+          class="sc-ftvSup kUuEWK"
         >
           <svg
-            class="icon text-link__icon"
+            class="sc-gKXOVf fAwmrp sc-papXJ fmVkXn"
             height="18"
             viewBox="0 0 24 24"
             width="18"
@@ -109,7 +109,7 @@ exports[`<PrivacyPolicy /> should render correctly - index 1`] = `
       Consent
     </h3>
     <span
-      class="paragraph"
+      class="sc-jqUVSM iuHAUr"
     >
       By clicking "Accept" on the cookie popup, you consent to cookies being stored on your machine, and data being handled as outlined on this page. You may revoke your permission at any time by clearing your local-storage.
     </span>
@@ -124,7 +124,7 @@ exports[`<PrivacyPolicy /> should render correctly - index 1`] = `
       Version
     </h3>
     <span
-      class="paragraph"
+      class="sc-jqUVSM iuHAUr"
     >
       This is version 2 of the privacy policy. If the privacy policy changes, we'll re-prompt you for consent.
     </span>

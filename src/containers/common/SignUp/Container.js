@@ -2,8 +2,8 @@ import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import TextLink from 'components/common/TextLink';
 import PageTitle from 'components/common/PageTitle';
-import { DebugObject } from 'components/common/DebugObject';
-import { LoadingCover } from '@george-gillams/components/LoadingCover';
+import DebugObject from 'components/common/DebugObject';
+import LoadingCover from '@george-gillams/components/loading-cover';
 
 import Skeleton from './Skeleton';
 

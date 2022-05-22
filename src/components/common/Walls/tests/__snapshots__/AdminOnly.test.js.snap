@@ -12,12 +12,12 @@ exports[`<AdminOnly /> Should render correctly 1`] = `
       Admin only
     </h2>
     <span
-      class="paragraph"
+      class="sc-bczRLJ bhVmoO"
     >
       You need to be logged in with an admin account to view this content.
       <br />
       <a
-        class="text-link text-link--text-link text-link--no-padding text-link--inline"
+        class="sc-ftvSup bvTsjB"
         href="/login"
       >
         Got a different admin account? Log in here.
@@ -45,12 +45,12 @@ exports[`<AdminOnly /> Should render correctly with user 1`] = `
       Admin only
     </h2>
     <span
-      class="paragraph"
+      class="sc-bczRLJ bhVmoO"
     >
       You need to be logged in with an admin account to view this content.
       <br />
       <a
-        class="text-link text-link--text-link text-link--no-padding text-link--inline"
+        class="sc-ftvSup bvTsjB"
         href="/login"
       >
         Got a different admin account? Log in here.

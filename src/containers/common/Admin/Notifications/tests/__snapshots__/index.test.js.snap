@@ -57,7 +57,7 @@ exports[`<AdminNotifications /> should render correctly with admin user 1`] = `
 <div>
   <div>
     <a
-      class="text-link text-link--text-link text-link--no-padding text-link--inline page-title__link"
+      class="sc-iBkjds kXOvCG page-title__link"
       href="/admin"
     >
       ⇠ Admin
@@ -78,19 +78,19 @@ exports[`<AdminNotifications /> should render correctly with admin user 1`] = `
       Message
     </label>
     <div
-      class="input__outer forms__component forms__component__text-box"
+      class="sc-evZas dewINB forms__component forms__component__text-box"
       placeholder="Message"
     >
       <input
         aria-disabled="false"
         aria-invalid="false"
-        class="input__inner"
+        class="sc-bjUoiL kSCxEt"
         id="message_FORM_ID"
         name="Message"
         value=""
       />
       <svg
-        class="icon input__icon input__icon--valid"
+        class="sc-gKXOVf fAwmrp sc-idiyUo cJUKLa"
         height="18"
         viewBox="0 0 24 24"
         width="18"
@@ -138,7 +138,7 @@ exports[`<AdminNotifications /> should render correctly with admin user 1`] = `
           </option>
         </select>
         <svg
-          class="icon input__icon input__icon--valid"
+          class="sc-gKXOVf fAwmrp input__icon input__icon--valid"
           height="18"
           viewBox="0 0 24 24"
           width="18"
@@ -233,7 +233,7 @@ exports[`<AdminNotifications /> should render correctly with loadError 1`] = `
 <div>
   <div>
     <a
-      class="text-link text-link--text-link text-link--no-padding text-link--inline page-title__link"
+      class="sc-iBkjds kXOvCG page-title__link"
       href="/admin"
     >
       ⇠ Admin
@@ -254,19 +254,19 @@ exports[`<AdminNotifications /> should render correctly with loadError 1`] = `
       Message
     </label>
     <div
-      class="input__outer forms__component forms__component__text-box"
+      class="sc-evZas dewINB forms__component forms__component__text-box"
       placeholder="Message"
     >
       <input
         aria-disabled="false"
         aria-invalid="false"
-        class="input__inner"
+        class="sc-bjUoiL kSCxEt"
         id="message_FORM_ID"
         name="Message"
         value=""
       />
       <svg
-        class="icon input__icon input__icon--valid"
+        class="sc-gKXOVf fAwmrp sc-idiyUo cJUKLa"
         height="18"
         viewBox="0 0 24 24"
         width="18"
@@ -314,7 +314,7 @@ exports[`<AdminNotifications /> should render correctly with loadError 1`] = `
           </option>
         </select>
         <svg
-          class="icon input__icon input__icon--valid"
+          class="sc-gKXOVf fAwmrp input__icon input__icon--valid"
           height="18"
           viewBox="0 0 24 24"
           width="18"
@@ -350,10 +350,10 @@ exports[`<AdminNotifications /> should render correctly with loadError 1`] = `
     </button>
   </div>
   <span
-    class="paragraph"
+    class="sc-iqcoie fIUTrZ"
   >
     <span
-      class="error"
+      class="sc-crXcEl dggGEa"
     >
       Could not load notifications
       <br />
@@ -367,7 +367,7 @@ exports[`<AdminNotifications /> should render correctly with loading=true 1`] = 
 <div>
   <div>
     <a
-      class="text-link text-link--text-link text-link--no-padding text-link--inline page-title__link"
+      class="sc-iBkjds kXOvCG page-title__link"
       href="/admin"
     >
       ⇠ Admin
@@ -388,19 +388,19 @@ exports[`<AdminNotifications /> should render correctly with loading=true 1`] = 
       Message
     </label>
     <div
-      class="input__outer forms__component forms__component__text-box"
+      class="sc-evZas dewINB forms__component forms__component__text-box"
       placeholder="Message"
     >
       <input
         aria-disabled="false"
         aria-invalid="false"
-        class="input__inner"
+        class="sc-bjUoiL kSCxEt"
         id="message_FORM_ID"
         name="Message"
         value=""
       />
       <svg
-        class="icon input__icon input__icon--valid"
+        class="sc-gKXOVf fAwmrp sc-idiyUo cJUKLa"
         height="18"
         viewBox="0 0 24 24"
         width="18"
@@ -448,7 +448,7 @@ exports[`<AdminNotifications /> should render correctly with loading=true 1`] = 
           </option>
         </select>
         <svg
-          class="icon input__icon input__icon--valid"
+          class="sc-gKXOVf fAwmrp input__icon input__icon--valid"
           height="18"
           viewBox="0 0 24 24"
           width="18"
@@ -487,31 +487,31 @@ exports[`<AdminNotifications /> should render correctly with loading=true 1`] = 
         class="button__loading-spinner"
       >
         <div
-          class="spinner__outer"
+          class="sc-jqUVSM VvXWN"
         >
           <div
-            class="spinner__inner"
+            class="sc-kDDrLX eeXkXB"
           />
           <div
-            class="spinner__inner"
+            class="sc-kDDrLX bnwDAh"
           />
           <div
-            class="spinner__inner"
+            class="sc-kDDrLX jSzHFu"
           />
           <div
-            class="spinner__inner"
+            class="sc-kDDrLX hHQzVj"
           />
           <div
-            class="spinner__inner"
+            class="sc-kDDrLX bOKAbg"
           />
           <div
-            class="spinner__inner"
+            class="sc-kDDrLX coEtcF"
           />
           <div
-            class="spinner__inner"
+            class="sc-kDDrLX cyugPZ"
           />
           <div
-            class="spinner__inner"
+            class="sc-kDDrLX grMaMB"
           />
         </div>
       </div>
@@ -524,7 +524,7 @@ exports[`<AdminNotifications /> should render correctly with notifications 1`] =
 <div>
   <div>
     <a
-      class="text-link text-link--text-link text-link--no-padding text-link--inline page-title__link"
+      class="sc-iBkjds kXOvCG page-title__link"
       href="/admin"
     >
       ⇠ Admin
@@ -545,19 +545,19 @@ exports[`<AdminNotifications /> should render correctly with notifications 1`] =
       Message
     </label>
     <div
-      class="input__outer forms__component forms__component__text-box"
+      class="sc-evZas dewINB forms__component forms__component__text-box"
       placeholder="Message"
     >
       <input
         aria-disabled="false"
         aria-invalid="false"
-        class="input__inner"
+        class="sc-bjUoiL kSCxEt"
         id="message_FORM_ID"
         name="Message"
         value=""
       />
       <svg
-        class="icon input__icon input__icon--valid"
+        class="sc-gKXOVf fAwmrp sc-idiyUo cJUKLa"
         height="18"
         viewBox="0 0 24 24"
         width="18"
@@ -605,7 +605,7 @@ exports[`<AdminNotifications /> should render correctly with notifications 1`] =
           </option>
         </select>
         <svg
-          class="icon input__icon input__icon--valid"
+          class="sc-gKXOVf fAwmrp input__icon input__icon--valid"
           height="18"
           viewBox="0 0 24 24"
           width="18"
@@ -712,12 +712,12 @@ exports[`<AdminNotifications /> should render correctly with user 1`] = `
       Admin only
     </h2>
     <span
-      class="paragraph"
+      class="sc-iqcoie fIUTrZ"
     >
       You need to be logged in with an admin account to view this content.
       <br />
       <a
-        class="text-link text-link--text-link text-link--no-padding text-link--inline"
+        class="sc-iBkjds kXOvCG"
         href="/login"
       >
         Got a different admin account? Log in here.

@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Section } from '@george-gillams/components/Section';
+import Section from '@george-gillams/components/section';
 import TextLink from 'components/common/TextLink';
 
 const EmailVerifiedOnly = props => {

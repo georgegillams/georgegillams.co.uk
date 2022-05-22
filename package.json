@@ -53,8 +53,8 @@
     ]
   },
   "dependencies": {
-    "@george-gillams/components": "^20.1.1",
-    "@george-gillams/webapp": "0.0.5",
+    "@george-gillams/components": "^23.0.5",
+    "@george-gillams/webapp": "0.0.6",
     "@next/bundle-analyzer": "^10.1.3",
     "async-lock": "^1.2.4",
     "bcrypt": "^5.0.0",
@@ -98,6 +98,7 @@
     "safe-compare": "^1.1.4",
     "signale": "^1.4.0",
     "stripe": "^8.126.0",
+    "styled-components": "^5.3.5",
     "webpack": "^4.44.1",
     "wget-improved": "^3.2.1",
     "whatwg-fetch": "^3.5.0"

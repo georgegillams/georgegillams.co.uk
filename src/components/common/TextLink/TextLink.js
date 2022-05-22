@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { TextLink as GGTextLink } from '@george-gillams/components/TextLink';
+import GGTextLink from '@george-gillams/components/text-link';
 import Link from 'next/link';
 import nextifyHref from '@george-gillams/webapp/utils/nextifyHref';
 

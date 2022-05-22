@@ -4,10 +4,8 @@ exports[`<Authenticator /> should render correctly - index 1`] = `
 <div>
   <header
     role="banner"
+    style="position: sticky; top: 0px;"
   >
-    <div
-      class="navigation-bar__bar-placeholder"
-    />
     <div
       class="navigation-bar__container"
     >
@@ -20,20 +18,20 @@ exports[`<Authenticator /> should render correctly - index 1`] = `
           <button
             aria-expanded="false"
             aria-label="Menu"
-            class="burger-button__outer navigation-bar__burger-button"
+            class="sc-bczRLJ dIBDIK navigation-bar__burger-button"
             type="button"
           >
             <div
-              class="burger-button__inner"
+              class="sc-gsnTZi lbGBid"
             >
               <div
-                class="burger-button__line burger-button__line__one navigation-bar__burger-button__line"
+                class="sc-dkzDqf iKvdlc"
               />
               <div
-                class="burger-button__line burger-button__line__two navigation-bar__burger-button__line"
+                class="sc-dkzDqf iKvdlc"
               />
               <div
-                class="burger-button__line burger-button__line__three navigation-bar__burger-button__line"
+                class="sc-dkzDqf iKvdlc"
               />
             </div>
           </button>
@@ -80,10 +78,8 @@ exports[`<Authenticator /> should render correctly with default state 1`] = `
 <div>
   <header
     role="banner"
+    style="position: sticky; top: 0px;"
   >
-    <div
-      class="navigation-bar__bar-placeholder"
-    />
     <div
       class="navigation-bar__container"
     >
@@ -96,20 +92,20 @@ exports[`<Authenticator /> should render correctly with default state 1`] = `
           <button
             aria-expanded="false"
             aria-label="Menu"
-            class="burger-button__outer navigation-bar__burger-button"
+            class="sc-bczRLJ dIBDIK navigation-bar__burger-button"
             type="button"
           >
             <div
-              class="burger-button__inner"
+              class="sc-gsnTZi lbGBid"
             >
               <div
-                class="burger-button__line burger-button__line__one navigation-bar__burger-button__line"
+                class="sc-dkzDqf iKvdlc"
               />
               <div
-                class="burger-button__line burger-button__line__two navigation-bar__burger-button__line"
+                class="sc-dkzDqf iKvdlc"
               />
               <div
-                class="burger-button__line burger-button__line__three navigation-bar__burger-button__line"
+                class="sc-dkzDqf iKvdlc"
               />
             </div>
           </button>
@@ -156,10 +152,8 @@ exports[`<Authenticator /> should render correctly with null user 1`] = `
 <div>
   <header
     role="banner"
+    style="position: sticky; top: 0px;"
   >
-    <div
-      class="navigation-bar__bar-placeholder"
-    />
     <div
       class="navigation-bar__container"
     >
@@ -172,20 +166,20 @@ exports[`<Authenticator /> should render correctly with null user 1`] = `
           <button
             aria-expanded="false"
             aria-label="Menu"
-            class="burger-button__outer navigation-bar__burger-button"
+            class="sc-bczRLJ dIBDIK navigation-bar__burger-button"
             type="button"
           >
             <div
-              class="burger-button__inner"
+              class="sc-gsnTZi lbGBid"
             >
               <div
-                class="burger-button__line burger-button__line__one navigation-bar__burger-button__line"
+                class="sc-dkzDqf iKvdlc"
               />
               <div
-                class="burger-button__line burger-button__line__two navigation-bar__burger-button__line"
+                class="sc-dkzDqf iKvdlc"
               />
               <div
-                class="burger-button__line burger-button__line__three navigation-bar__burger-button__line"
+                class="sc-dkzDqf iKvdlc"
               />
             </div>
           </button>
@@ -235,10 +229,8 @@ exports[`<Authenticator /> should render correctly with user 1`] = `
 <div>
   <header
     role="banner"
+    style="position: sticky; top: 0px;"
   >
-    <div
-      class="navigation-bar__bar-placeholder"
-    />
     <div
       class="navigation-bar__container"
     >
@@ -251,20 +243,20 @@ exports[`<Authenticator /> should render correctly with user 1`] = `
           <button
             aria-expanded="false"
             aria-label="Menu"
-            class="burger-button__outer navigation-bar__burger-button"
+            class="sc-bczRLJ dIBDIK navigation-bar__burger-button"
             type="button"
           >
             <div
-              class="burger-button__inner"
+              class="sc-gsnTZi lbGBid"
             >
               <div
-                class="burger-button__line burger-button__line__one navigation-bar__burger-button__line"
+                class="sc-dkzDqf iKvdlc"
               />
               <div
-                class="burger-button__line burger-button__line__two navigation-bar__burger-button__line"
+                class="sc-dkzDqf iKvdlc"
               />
               <div
-                class="burger-button__line burger-button__line__three navigation-bar__burger-button__line"
+                class="sc-dkzDqf iKvdlc"
               />
             </div>
           </button>

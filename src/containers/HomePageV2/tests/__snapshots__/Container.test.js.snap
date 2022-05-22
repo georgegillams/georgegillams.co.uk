@@ -30,23 +30,23 @@ exports[`<Home /> should render correctly 1`] = `
               Work
             </h2>
             <span
-              class="paragraph work-section__paragraph"
+              class="sc-jqUVSM iuHAUr work-section__paragraph"
             >
               I'm a web developer at
                
               <a
                 aria-label="Typeform (opens in a new tab)"
-                class="text-link text-link--text-link text-link--no-padding text-link--inline"
+                class="sc-iBkjds kXOvCG"
                 href="https://typeform.com/"
                 rel="noopener noreferrer"
                 target="_blank"
               >
                 Typeform
                 <div
-                  class="text-link__icon-container"
+                  class="sc-ftvSup kUuEWK"
                 >
                   <svg
-                    class="icon text-link__icon"
+                    class="sc-gKXOVf fAwmrp sc-papXJ fmVkXn"
                     height="18"
                     viewBox="0 0 24 24"
                     width="18"
@@ -64,7 +64,7 @@ exports[`<Home /> should render correctly 1`] = `
               I’m also an accessibility champion and design system enthusiast.
               <br />
               <a
-                class="text-link text-link--text-link text-link--no-padding text-link--inline"
+                class="sc-iBkjds kXOvCG"
                 href="/work"
               >
                 Learn more about my work
@@ -238,26 +238,26 @@ exports[`<Home /> should render correctly 1`] = `
               Life
             </h2>
             <span
-              class="paragraph life-section__paragraph"
+              class="sc-jqUVSM iuHAUr life-section__paragraph"
             >
               I love travel and photography, and occasionally write other stuff.
               <br />
               <a
-                class="text-link text-link--text-link text-link--no-padding text-link--inline"
+                class="sc-iBkjds kXOvCG"
                 href="/blog"
               >
                 Blog
               </a>
               <br />
               <a
-                class="text-link text-link--text-link text-link--no-padding text-link--inline"
+                class="sc-iBkjds kXOvCG"
                 href="/travel"
               >
                 Travel
               </a>
               <br />
               <a
-                class="text-link text-link--text-link text-link--no-padding text-link--inline"
+                class="sc-iBkjds kXOvCG"
                 href="/photography"
               >
                 Photography
@@ -265,7 +265,7 @@ exports[`<Home /> should render correctly 1`] = `
             </span>
           </div>
           <span
-            class="paragraph life-section__paragraph"
+            class="sc-jqUVSM iuHAUr life-section__paragraph"
           >
             I got engaged recently in Iceland, and live with my amazing fiancée and Tigger the cat.
           </span>
@@ -436,23 +436,23 @@ exports[`<Home /> should render correctly 1`] = `
         class="about-section__outer"
       >
         <span
-          class="paragraph about-section__paragraph"
+          class="sc-jqUVSM iuHAUr about-section__paragraph"
         >
           This site is built in
            
           <a
             aria-label="React (opens in a new tab)"
-            class="text-link text-link--text-link text-link--no-padding text-link--inline"
+            class="sc-iBkjds kXOvCG"
             href="https://reactjs.org/"
             rel="noopener noreferrer"
             target="_blank"
           >
             React
             <div
-              class="text-link__icon-container"
+              class="sc-ftvSup kUuEWK"
             >
               <svg
-                class="icon text-link__icon"
+                class="sc-gKXOVf fAwmrp sc-papXJ fmVkXn"
                 height="18"
                 viewBox="0 0 24 24"
                 width="18"
@@ -469,17 +469,17 @@ exports[`<Home /> should render correctly 1`] = `
            
           <a
             aria-label="Redux (opens in a new tab)"
-            class="text-link text-link--text-link text-link--no-padding text-link--inline"
+            class="sc-iBkjds kXOvCG"
             href="https://redux.js.org/"
             rel="noopener noreferrer"
             target="_blank"
           >
             Redux
             <div
-              class="text-link__icon-container"
+              class="sc-ftvSup kUuEWK"
             >
               <svg
-                class="icon text-link__icon"
+                class="sc-gKXOVf fAwmrp sc-papXJ fmVkXn"
                 height="18"
                 viewBox="0 0 24 24"
                 width="18"
@@ -496,17 +496,17 @@ exports[`<Home /> should render correctly 1`] = `
            
           <a
             aria-label="Next.js (opens in a new tab)"
-            class="text-link text-link--text-link text-link--no-padding text-link--inline"
+            class="sc-iBkjds kXOvCG"
             href="https://nextjs.org/"
             rel="noopener noreferrer"
             target="_blank"
           >
             Next.js
             <div
-              class="text-link__icon-container"
+              class="sc-ftvSup kUuEWK"
             >
               <svg
-                class="icon text-link__icon"
+                class="sc-gKXOVf fAwmrp sc-papXJ fmVkXn"
                 height="18"
                 viewBox="0 0 24 24"
                 width="18"
@@ -522,17 +522,17 @@ exports[`<Home /> should render correctly 1`] = `
            
           <a
             aria-label="AWS (opens in a new tab)"
-            class="text-link text-link--text-link text-link--no-padding text-link--inline"
+            class="sc-iBkjds kXOvCG"
             href="https://aws.amazon.com/"
             rel="noopener noreferrer"
             target="_blank"
           >
             AWS
             <div
-              class="text-link__icon-container"
+              class="sc-ftvSup kUuEWK"
             >
               <svg
-                class="icon text-link__icon"
+                class="sc-gKXOVf fAwmrp sc-papXJ fmVkXn"
                 height="18"
                 viewBox="0 0 24 24"
                 width="18"
@@ -553,7 +553,7 @@ exports[`<Home /> should render correctly 1`] = `
             class="contact-link__content"
           >
             <a
-              class="text-link text-link--text-link text-link--no-padding text-link--inline contact-link__link"
+              class="sc-iBkjds kXOvCG contact-link__link"
               href="/contact"
             >
               Get in touch
@@ -599,23 +599,23 @@ exports[`<Home /> should render correctly with admin user 1`] = `
               Work
             </h2>
             <span
-              class="paragraph work-section__paragraph"
+              class="sc-jqUVSM iuHAUr work-section__paragraph"
             >
               I'm a web developer at
                
               <a
                 aria-label="Typeform (opens in a new tab)"
-                class="text-link text-link--text-link text-link--no-padding text-link--inline"
+                class="sc-iBkjds kXOvCG"
                 href="https://typeform.com/"
                 rel="noopener noreferrer"
                 target="_blank"
               >
                 Typeform
                 <div
-                  class="text-link__icon-container"
+                  class="sc-ftvSup kUuEWK"
                 >
                   <svg
-                    class="icon text-link__icon"
+                    class="sc-gKXOVf fAwmrp sc-papXJ fmVkXn"
                     height="18"
                     viewBox="0 0 24 24"
                     width="18"
@@ -633,7 +633,7 @@ exports[`<Home /> should render correctly with admin user 1`] = `
               I’m also an accessibility champion and design system enthusiast.
               <br />
               <a
-                class="text-link text-link--text-link text-link--no-padding text-link--inline"
+                class="sc-iBkjds kXOvCG"
                 href="/work"
               >
                 Learn more about my work
@@ -807,26 +807,26 @@ exports[`<Home /> should render correctly with admin user 1`] = `
               Life
             </h2>
             <span
-              class="paragraph life-section__paragraph"
+              class="sc-jqUVSM iuHAUr life-section__paragraph"
             >
               I love travel and photography, and occasionally write other stuff.
               <br />
               <a
-                class="text-link text-link--text-link text-link--no-padding text-link--inline"
+                class="sc-iBkjds kXOvCG"
                 href="/blog"
               >
                 Blog
               </a>
               <br />
               <a
-                class="text-link text-link--text-link text-link--no-padding text-link--inline"
+                class="sc-iBkjds kXOvCG"
                 href="/travel"
               >
                 Travel
               </a>
               <br />
               <a
-                class="text-link text-link--text-link text-link--no-padding text-link--inline"
+                class="sc-iBkjds kXOvCG"
                 href="/photography"
               >
                 Photography
@@ -834,7 +834,7 @@ exports[`<Home /> should render correctly with admin user 1`] = `
             </span>
           </div>
           <span
-            class="paragraph life-section__paragraph"
+            class="sc-jqUVSM iuHAUr life-section__paragraph"
           >
             I got engaged recently in Iceland, and live with my amazing fiancée and Tigger the cat.
           </span>
@@ -1005,23 +1005,23 @@ exports[`<Home /> should render correctly with admin user 1`] = `
         class="about-section__outer"
       >
         <span
-          class="paragraph about-section__paragraph"
+          class="sc-jqUVSM iuHAUr about-section__paragraph"
         >
           This site is built in
            
           <a
             aria-label="React (opens in a new tab)"
-            class="text-link text-link--text-link text-link--no-padding text-link--inline"
+            class="sc-iBkjds kXOvCG"
             href="https://reactjs.org/"
             rel="noopener noreferrer"
             target="_blank"
           >
             React
             <div
-              class="text-link__icon-container"
+              class="sc-ftvSup kUuEWK"
             >
               <svg
-                class="icon text-link__icon"
+                class="sc-gKXOVf fAwmrp sc-papXJ fmVkXn"
                 height="18"
                 viewBox="0 0 24 24"
                 width="18"
@@ -1038,17 +1038,17 @@ exports[`<Home /> should render correctly with admin user 1`] = `
            
           <a
             aria-label="Redux (opens in a new tab)"
-            class="text-link text-link--text-link text-link--no-padding text-link--inline"
+            class="sc-iBkjds kXOvCG"
             href="https://redux.js.org/"
             rel="noopener noreferrer"
             target="_blank"
           >
             Redux
             <div
-              class="text-link__icon-container"
+              class="sc-ftvSup kUuEWK"
             >
               <svg
-                class="icon text-link__icon"
+                class="sc-gKXOVf fAwmrp sc-papXJ fmVkXn"
                 height="18"
                 viewBox="0 0 24 24"
                 width="18"
@@ -1065,17 +1065,17 @@ exports[`<Home /> should render correctly with admin user 1`] = `
            
           <a
             aria-label="Next.js (opens in a new tab)"
-            class="text-link text-link--text-link text-link--no-padding text-link--inline"
+            class="sc-iBkjds kXOvCG"
             href="https://nextjs.org/"
             rel="noopener noreferrer"
             target="_blank"
           >
             Next.js
             <div
-              class="text-link__icon-container"
+              class="sc-ftvSup kUuEWK"
             >
               <svg
-                class="icon text-link__icon"
+                class="sc-gKXOVf fAwmrp sc-papXJ fmVkXn"
                 height="18"
                 viewBox="0 0 24 24"
                 width="18"
@@ -1091,17 +1091,17 @@ exports[`<Home /> should render correctly with admin user 1`] = `
            
           <a
             aria-label="AWS (opens in a new tab)"
-            class="text-link text-link--text-link text-link--no-padding text-link--inline"
+            class="sc-iBkjds kXOvCG"
             href="https://aws.amazon.com/"
             rel="noopener noreferrer"
             target="_blank"
           >
             AWS
             <div
-              class="text-link__icon-container"
+              class="sc-ftvSup kUuEWK"
             >
               <svg
-                class="icon text-link__icon"
+                class="sc-gKXOVf fAwmrp sc-papXJ fmVkXn"
                 height="18"
                 viewBox="0 0 24 24"
                 width="18"
@@ -1122,7 +1122,7 @@ exports[`<Home /> should render correctly with admin user 1`] = `
             class="contact-link__content"
           >
             <a
-              class="text-link text-link--text-link text-link--no-padding text-link--inline contact-link__link"
+              class="sc-iBkjds kXOvCG contact-link__link"
               href="/contact"
             >
               Get in touch
@@ -1168,23 +1168,23 @@ exports[`<Home /> should render correctly with no user 1`] = `
               Work
             </h2>
             <span
-              class="paragraph work-section__paragraph"
+              class="sc-jqUVSM iuHAUr work-section__paragraph"
             >
               I'm a web developer at
                
               <a
                 aria-label="Typeform (opens in a new tab)"
-                class="text-link text-link--text-link text-link--no-padding text-link--inline"
+                class="sc-iBkjds kXOvCG"
                 href="https://typeform.com/"
                 rel="noopener noreferrer"
                 target="_blank"
               >
                 Typeform
                 <div
-                  class="text-link__icon-container"
+                  class="sc-ftvSup kUuEWK"
                 >
                   <svg
-                    class="icon text-link__icon"
+                    class="sc-gKXOVf fAwmrp sc-papXJ fmVkXn"
                     height="18"
                     viewBox="0 0 24 24"
                     width="18"
@@ -1202,7 +1202,7 @@ exports[`<Home /> should render correctly with no user 1`] = `
               I’m also an accessibility champion and design system enthusiast.
               <br />
               <a
-                class="text-link text-link--text-link text-link--no-padding text-link--inline"
+                class="sc-iBkjds kXOvCG"
                 href="/work"
               >
                 Learn more about my work
@@ -1376,26 +1376,26 @@ exports[`<Home /> should render correctly with no user 1`] = `
               Life
             </h2>
             <span
-              class="paragraph life-section__paragraph"
+              class="sc-jqUVSM iuHAUr life-section__paragraph"
             >
               I love travel and photography, and occasionally write other stuff.
               <br />
               <a
-                class="text-link text-link--text-link text-link--no-padding text-link--inline"
+                class="sc-iBkjds kXOvCG"
                 href="/blog"
               >
                 Blog
               </a>
               <br />
               <a
-                class="text-link text-link--text-link text-link--no-padding text-link--inline"
+                class="sc-iBkjds kXOvCG"
                 href="/travel"
               >
                 Travel
               </a>
               <br />
               <a
-                class="text-link text-link--text-link text-link--no-padding text-link--inline"
+                class="sc-iBkjds kXOvCG"
                 href="/photography"
               >
                 Photography
@@ -1403,7 +1403,7 @@ exports[`<Home /> should render correctly with no user 1`] = `
             </span>
           </div>
           <span
-            class="paragraph life-section__paragraph"
+            class="sc-jqUVSM iuHAUr life-section__paragraph"
           >
             I got engaged recently in Iceland, and live with my amazing fiancée and Tigger the cat.
           </span>
@@ -1574,23 +1574,23 @@ exports[`<Home /> should render correctly with no user 1`] = `
         class="about-section__outer"
       >
         <span
-          class="paragraph about-section__paragraph"
+          class="sc-jqUVSM iuHAUr about-section__paragraph"
         >
           This site is built in
            
           <a
             aria-label="React (opens in a new tab)"
-            class="text-link text-link--text-link text-link--no-padding text-link--inline"
+            class="sc-iBkjds kXOvCG"
             href="https://reactjs.org/"
             rel="noopener noreferrer"
             target="_blank"
           >
             React
             <div
-              class="text-link__icon-container"
+              class="sc-ftvSup kUuEWK"
             >
               <svg
-                class="icon text-link__icon"
+                class="sc-gKXOVf fAwmrp sc-papXJ fmVkXn"
                 height="18"
                 viewBox="0 0 24 24"
                 width="18"
@@ -1607,17 +1607,17 @@ exports[`<Home /> should render correctly with no user 1`] = `
            
           <a
             aria-label="Redux (opens in a new tab)"
-            class="text-link text-link--text-link text-link--no-padding text-link--inline"
+            class="sc-iBkjds kXOvCG"
             href="https://redux.js.org/"
             rel="noopener noreferrer"
             target="_blank"
           >
             Redux
             <div
-              class="text-link__icon-container"
+              class="sc-ftvSup kUuEWK"
             >
               <svg
-                class="icon text-link__icon"
+                class="sc-gKXOVf fAwmrp sc-papXJ fmVkXn"
                 height="18"
                 viewBox="0 0 24 24"
                 width="18"
@@ -1634,17 +1634,17 @@ exports[`<Home /> should render correctly with no user 1`] = `
            
           <a
             aria-label="Next.js (opens in a new tab)"
-            class="text-link text-link--text-link text-link--no-padding text-link--inline"
+            class="sc-iBkjds kXOvCG"
             href="https://nextjs.org/"
             rel="noopener noreferrer"
             target="_blank"
           >
             Next.js
             <div
-              class="text-link__icon-container"
+              class="sc-ftvSup kUuEWK"
             >
               <svg
-                class="icon text-link__icon"
+                class="sc-gKXOVf fAwmrp sc-papXJ fmVkXn"
                 height="18"
                 viewBox="0 0 24 24"
                 width="18"
@@ -1660,17 +1660,17 @@ exports[`<Home /> should render correctly with no user 1`] = `
            
           <a
             aria-label="AWS (opens in a new tab)"
-            class="text-link text-link--text-link text-link--no-padding text-link--inline"
+            class="sc-iBkjds kXOvCG"
             href="https://aws.amazon.com/"
             rel="noopener noreferrer"
             target="_blank"
           >
             AWS
             <div
-              class="text-link__icon-container"
+              class="sc-ftvSup kUuEWK"
             >
               <svg
-                class="icon text-link__icon"
+                class="sc-gKXOVf fAwmrp sc-papXJ fmVkXn"
                 height="18"
                 viewBox="0 0 24 24"
                 width="18"
@@ -1691,7 +1691,7 @@ exports[`<Home /> should render correctly with no user 1`] = `
             class="contact-link__content"
           >
             <a
-              class="text-link text-link--text-link text-link--no-padding text-link--inline contact-link__link"
+              class="sc-iBkjds kXOvCG contact-link__link"
               href="/contact"
             >
               Get in touch
@@ -1737,23 +1737,23 @@ exports[`<Home /> should render correctly with user 1`] = `
               Work
             </h2>
             <span
-              class="paragraph work-section__paragraph"
+              class="sc-jqUVSM iuHAUr work-section__paragraph"
             >
               I'm a web developer at
                
               <a
                 aria-label="Typeform (opens in a new tab)"
-                class="text-link text-link--text-link text-link--no-padding text-link--inline"
+                class="sc-iBkjds kXOvCG"
                 href="https://typeform.com/"
                 rel="noopener noreferrer"
                 target="_blank"
               >
                 Typeform
                 <div
-                  class="text-link__icon-container"
+                  class="sc-ftvSup kUuEWK"
                 >
                   <svg
-                    class="icon text-link__icon"
+                    class="sc-gKXOVf fAwmrp sc-papXJ fmVkXn"
                     height="18"
                     viewBox="0 0 24 24"
                     width="18"
@@ -1771,7 +1771,7 @@ exports[`<Home /> should render correctly with user 1`] = `
               I’m also an accessibility champion and design system enthusiast.
               <br />
               <a
-                class="text-link text-link--text-link text-link--no-padding text-link--inline"
+                class="sc-iBkjds kXOvCG"
                 href="/work"
               >
                 Learn more about my work
@@ -1945,26 +1945,26 @@ exports[`<Home /> should render correctly with user 1`] = `
               Life
             </h2>
             <span
-              class="paragraph life-section__paragraph"
+              class="sc-jqUVSM iuHAUr life-section__paragraph"
             >
               I love travel and photography, and occasionally write other stuff.
               <br />
               <a
-                class="text-link text-link--text-link text-link--no-padding text-link--inline"
+                class="sc-iBkjds kXOvCG"
                 href="/blog"
               >
                 Blog
               </a>
               <br />
               <a
-                class="text-link text-link--text-link text-link--no-padding text-link--inline"
+                class="sc-iBkjds kXOvCG"
                 href="/travel"
               >
                 Travel
               </a>
               <br />
               <a
-                class="text-link text-link--text-link text-link--no-padding text-link--inline"
+                class="sc-iBkjds kXOvCG"
                 href="/photography"
               >
                 Photography
@@ -1972,7 +1972,7 @@ exports[`<Home /> should render correctly with user 1`] = `
             </span>
           </div>
           <span
-            class="paragraph life-section__paragraph"
+            class="sc-jqUVSM iuHAUr life-section__paragraph"
           >
             I got engaged recently in Iceland, and live with my amazing fiancée and Tigger the cat.
           </span>
@@ -2143,23 +2143,23 @@ exports[`<Home /> should render correctly with user 1`] = `
         class="about-section__outer"
       >
         <span
-          class="paragraph about-section__paragraph"
+          class="sc-jqUVSM iuHAUr about-section__paragraph"
         >
           This site is built in
            
           <a
             aria-label="React (opens in a new tab)"
-            class="text-link text-link--text-link text-link--no-padding text-link--inline"
+            class="sc-iBkjds kXOvCG"
             href="https://reactjs.org/"
             rel="noopener noreferrer"
             target="_blank"
           >
             React
             <div
-              class="text-link__icon-container"
+              class="sc-ftvSup kUuEWK"
             >
               <svg
-                class="icon text-link__icon"
+                class="sc-gKXOVf fAwmrp sc-papXJ fmVkXn"
                 height="18"
                 viewBox="0 0 24 24"
                 width="18"
@@ -2176,17 +2176,17 @@ exports[`<Home /> should render correctly with user 1`] = `
            
           <a
             aria-label="Redux (opens in a new tab)"
-            class="text-link text-link--text-link text-link--no-padding text-link--inline"
+            class="sc-iBkjds kXOvCG"
             href="https://redux.js.org/"
             rel="noopener noreferrer"
             target="_blank"
           >
             Redux
             <div
-              class="text-link__icon-container"
+              class="sc-ftvSup kUuEWK"
             >
               <svg
-                class="icon text-link__icon"
+                class="sc-gKXOVf fAwmrp sc-papXJ fmVkXn"
                 height="18"
                 viewBox="0 0 24 24"
                 width="18"
@@ -2203,17 +2203,17 @@ exports[`<Home /> should render correctly with user 1`] = `
            
           <a
             aria-label="Next.js (opens in a new tab)"
-            class="text-link text-link--text-link text-link--no-padding text-link--inline"
+            class="sc-iBkjds kXOvCG"
             href="https://nextjs.org/"
             rel="noopener noreferrer"
             target="_blank"
           >
             Next.js
             <div
-              class="text-link__icon-container"
+              class="sc-ftvSup kUuEWK"
             >
               <svg
-                class="icon text-link__icon"
+                class="sc-gKXOVf fAwmrp sc-papXJ fmVkXn"
                 height="18"
                 viewBox="0 0 24 24"
                 width="18"
@@ -2229,17 +2229,17 @@ exports[`<Home /> should render correctly with user 1`] = `
            
           <a
             aria-label="AWS (opens in a new tab)"
-            class="text-link text-link--text-link text-link--no-padding text-link--inline"
+            class="sc-iBkjds kXOvCG"
             href="https://aws.amazon.com/"
             rel="noopener noreferrer"
             target="_blank"
           >
             AWS
             <div
-              class="text-link__icon-container"
+              class="sc-ftvSup kUuEWK"
             >
               <svg
-                class="icon text-link__icon"
+                class="sc-gKXOVf fAwmrp sc-papXJ fmVkXn"
                 height="18"
                 viewBox="0 0 24 24"
                 width="18"
@@ -2260,7 +2260,7 @@ exports[`<Home /> should render correctly with user 1`] = `
             class="contact-link__content"
           >
             <a
-              class="text-link text-link--text-link text-link--no-padding text-link--inline contact-link__link"
+              class="sc-iBkjds kXOvCG contact-link__link"
               href="/contact"
             >
               Get in touch

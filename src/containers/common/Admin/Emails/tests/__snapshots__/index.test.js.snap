@@ -57,7 +57,7 @@ exports[`<AdminEmails /> should render correctly with admin user 1`] = `
 <div>
   <div>
     <a
-      class="text-link text-link--text-link text-link--no-padding text-link--inline page-title__link"
+      class="sc-iBkjds kXOvCG page-title__link"
       href="/admin"
     >
       ⇠ Admin
@@ -97,7 +97,7 @@ exports[`<AdminEmails /> should render correctly with emails 1`] = `
 <div>
   <div>
     <a
-      class="text-link text-link--text-link text-link--no-padding text-link--inline page-title__link"
+      class="sc-iBkjds kXOvCG page-title__link"
       href="/admin"
     >
       ⇠ Admin
@@ -122,7 +122,7 @@ exports[`<AdminEmails /> should render correctly with emails 1`] = `
     </button>
   </div>
   <span
-    class="paragraph admin-analytics__count"
+    class="sc-iqcoie fIUTrZ admin-analytics__count"
   >
     Showing 
     3
@@ -164,7 +164,7 @@ exports[`<AdminEmails /> should render correctly with emails 1`] = `
                     Email 1
                   </h3>
                   <span
-                    class="paragraph"
+                    class="sc-iqcoie fIUTrZ"
                   >
                     <br />
                     id: 
@@ -202,7 +202,7 @@ exports[`<AdminEmails /> should render correctly with emails 1`] = `
                     Email 2
                   </h3>
                   <span
-                    class="paragraph"
+                    class="sc-iqcoie fIUTrZ"
                   >
                     <br />
                     id: 
@@ -240,7 +240,7 @@ exports[`<AdminEmails /> should render correctly with emails 1`] = `
                     Email 3
                   </h3>
                   <span
-                    class="paragraph"
+                    class="sc-iqcoie fIUTrZ"
                   >
                     <br />
                     id: 
@@ -314,7 +314,7 @@ exports[`<AdminEmails /> should render correctly with loadError 1`] = `
 <div>
   <div>
     <a
-      class="text-link text-link--text-link text-link--no-padding text-link--inline page-title__link"
+      class="sc-iBkjds kXOvCG page-title__link"
       href="/admin"
     >
       ⇠ Admin
@@ -339,10 +339,10 @@ exports[`<AdminEmails /> should render correctly with loadError 1`] = `
     </button>
   </div>
   <span
-    class="paragraph"
+    class="sc-iqcoie fIUTrZ"
   >
     <span
-      class="error"
+      class="sc-crXcEl dggGEa"
     >
       Could not load emails
       <br />
@@ -365,7 +365,7 @@ exports[`<AdminEmails /> should render correctly with loading=true 1`] = `
 <div>
   <div>
     <a
-      class="text-link text-link--text-link text-link--no-padding text-link--inline page-title__link"
+      class="sc-iBkjds kXOvCG page-title__link"
       href="/admin"
     >
       ⇠ Admin
@@ -393,31 +393,31 @@ exports[`<AdminEmails /> should render correctly with loading=true 1`] = `
         class="button__loading-spinner"
       >
         <div
-          class="spinner__outer"
+          class="sc-jqUVSM VvXWN"
         >
           <div
-            class="spinner__inner"
+            class="sc-kDDrLX eeXkXB"
           />
           <div
-            class="spinner__inner"
+            class="sc-kDDrLX bnwDAh"
           />
           <div
-            class="spinner__inner"
+            class="sc-kDDrLX jSzHFu"
           />
           <div
-            class="spinner__inner"
+            class="sc-kDDrLX hHQzVj"
           />
           <div
-            class="spinner__inner"
+            class="sc-kDDrLX bOKAbg"
           />
           <div
-            class="spinner__inner"
+            class="sc-kDDrLX coEtcF"
           />
           <div
-            class="spinner__inner"
+            class="sc-kDDrLX cyugPZ"
           />
           <div
-            class="spinner__inner"
+            class="sc-kDDrLX grMaMB"
           />
         </div>
       </div>
@@ -439,7 +439,7 @@ exports[`<AdminEmails /> should render correctly with resendError 1`] = `
 <div>
   <div>
     <a
-      class="text-link text-link--text-link text-link--no-padding text-link--inline page-title__link"
+      class="sc-iBkjds kXOvCG page-title__link"
       href="/admin"
     >
       ⇠ Admin
@@ -479,7 +479,7 @@ exports[`<AdminEmails /> should render correctly with resending=true 1`] = `
 <div>
   <div>
     <a
-      class="text-link text-link--text-link text-link--no-padding text-link--inline page-title__link"
+      class="sc-iBkjds kXOvCG page-title__link"
       href="/admin"
     >
       ⇠ Admin
@@ -527,12 +527,12 @@ exports[`<AdminEmails /> should render correctly with user 1`] = `
       Admin only
     </h2>
     <span
-      class="paragraph"
+      class="sc-iqcoie fIUTrZ"
     >
       You need to be logged in with an admin account to view this content.
       <br />
       <a
-        class="text-link text-link--text-link text-link--no-padding text-link--inline"
+        class="sc-iBkjds kXOvCG"
         href="/login"
       >
         Got a different admin account? Log in here.

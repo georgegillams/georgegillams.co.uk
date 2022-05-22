@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import PropTypes from 'prop-types';
-import { DebugObject } from 'components/common/DebugObject';
+import DebugObject from 'components/common/DebugObject';
 import {
   CONSENT_STATE_UNSET,
   CONSENT_STATE_ALLOWED,
@@ -8,14 +8,14 @@ import {
   CONSENT_STATE_DEFERRED_CLIENT_VALUE,
 } from './constants';
 import Button from 'components/common/Button';
-import { Paragraph } from '@george-gillams/components/Paragraph';
+import Paragraph from '@george-gillams/components/paragraph';
 import Modal from 'react-modal';
 import { cssModules } from '@george-gillams/components/helpers/cssModules';
 import STYLES from './consent.scss';
 import { getPrivacyPreferences, setPrivacyPreferences } from 'client-utils/common/storageHelpers';
 import TextLink from 'components/common/TextLink';
 import Banner from './Banner';
-import { Section } from '@george-gillams/components/Section';
+import Section from '@george-gillams/components/section';
 
 const getClassName = cssModules(STYLES);
 

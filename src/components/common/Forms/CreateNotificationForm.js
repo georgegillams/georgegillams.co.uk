@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { FormBuilder } from '@george-gillams/components/FormBuilder';
+import FormBuilder from '@george-gillams/components/form-builder';
 
 const CreateNotificationForm = props => {
   const { className, notification, onDataChanged, onSubmit, submitLabel, ...rest } = props;

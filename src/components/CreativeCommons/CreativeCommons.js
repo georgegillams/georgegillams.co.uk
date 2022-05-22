@@ -1,8 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { cssModules } from '@george-gillams/components/helpers/cssModules';
-import { Paragraph } from '@george-gillams/components/Paragraph';
-import { Subsection } from '@george-gillams/components/Subsection';
+import Paragraph from '@george-gillams/components/paragraph';
+import Subsection from '@george-gillams/components/subsection';
 import TextLink from 'components/common/TextLink';
 
 import STYLES from './creative-commons.scss';

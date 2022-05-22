@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Paragraph } from '@george-gillams/components/Paragraph';
+import Paragraph from '@george-gillams/components/paragraph';
 import Card from 'components/common/Card';
 import DebugObject from 'components/common/DebugObject';
 

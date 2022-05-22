@@ -1,11 +1,11 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import { Paragraph } from '@george-gillams/components/Paragraph';
+import Paragraph from '@george-gillams/components/paragraph';
 import TextLink from 'components/common/TextLink';
 import STYLES from './about-section.scss';
 import { cssModules } from '@george-gillams/components/helpers/cssModules';
-import { withScroll, cleanRestScrollProps } from '@george-gillams/components/ScrollContainer';
+import withScroll, { cleanRestScrollProps } from '@george-gillams/components/scroll-container';
 import ContactLink from './ContactLink';
 
 const getClassName = cssModules(STYLES);

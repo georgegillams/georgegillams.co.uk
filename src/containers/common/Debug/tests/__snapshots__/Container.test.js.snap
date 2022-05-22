@@ -9,20 +9,20 @@ exports[`<Debug /> should render correctly 1`] = `
       Debug
     </h1>
     <label
-      class="checkbox debug__checkbox"
+      class="sc-gsnTZi iqncvO debug__checkbox"
     >
       <div
-        class="checkbox__input-wrapper"
+        class="sc-dkzDqf fOErMa"
       >
         <input
           aria-invalid="false"
           aria-label="Show session debug views"
-          class="checkbox__input"
+          class="sc-hKMtZM iCuKLE"
           name="Show session debug views"
           type="checkbox"
         />
         <svg
-          class="icon checkbox__check"
+          class="sc-bczRLJ koLtDZ sc-eCYdqJ drZDAv"
           height="18"
           viewBox="0 0 24 24"
           width="18"
@@ -33,29 +33,28 @@ exports[`<Debug /> should render correctly 1`] = `
           />
         </svg>
       </div>
-      <span
+      <div
         aria-hidden="true"
-        class="checkbox__label"
+        class="sc-jSMfEi iURcBj"
       >
         Show session debug views
-         
-      </span>
+      </div>
     </label>
     <label
-      class="checkbox debug__checkbox"
+      class="sc-gsnTZi iqncvO debug__checkbox"
     >
       <div
-        class="checkbox__input-wrapper"
+        class="sc-dkzDqf fOErMa"
       >
         <input
           aria-invalid="false"
           aria-label="Show page container debug colours"
-          class="checkbox__input"
+          class="sc-hKMtZM iCuKLE"
           name="Show page container debug colours"
           type="checkbox"
         />
         <svg
-          class="icon checkbox__check"
+          class="sc-bczRLJ koLtDZ sc-eCYdqJ drZDAv"
           height="18"
           viewBox="0 0 24 24"
           width="18"
@@ -66,16 +65,15 @@ exports[`<Debug /> should render correctly 1`] = `
           />
         </svg>
       </div>
-      <span
+      <div
         aria-hidden="true"
-        class="checkbox__label"
+        class="sc-jSMfEi iURcBj"
       >
         Show page container debug colours
-         
-      </span>
+      </div>
     </label>
     <span
-      class="paragraph"
+      class="sc-gKXOVf dVduRi"
     >
       Note that changes will not take effect until you reload the page.
     </span>
