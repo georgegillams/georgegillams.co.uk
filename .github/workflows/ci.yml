@@ -27,11 +27,11 @@ jobs:
           path: ~/.npm
           key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
 
-      - name: npm install
-        run: PUPPETEER_SKIP_CHROMIUM_DOWNLOAD=true npm ci
+      - name: yarn install
+        run: PUPPETEER_SKIP_CHROMIUM_DOWNLOAD=true yarn install --frozen-lockfile
 
       - name: lint
-        run: npm run lint
+        run: yarn lint
 
       - name: jest test
         run: npm test

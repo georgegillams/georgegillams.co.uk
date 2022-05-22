@@ -78,6 +78,7 @@ describe('useInjectReducer hook', () => {
     // eslint-disable-next-line no-import-assign
     reducerInjectors.default = jest.fn().mockImplementation(() => injectors);
     store = configureStore({});
+    // eslint-disable-next-line react/display-name
     ComponentWithReducer = () => {
       useInjectReducer({ key: 'test', reducer });
       return null;

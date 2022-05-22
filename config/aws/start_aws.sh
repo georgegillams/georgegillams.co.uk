@@ -1,3 +1,3 @@
 # #!/bin/bash
 
-PORT=3000 npm run start:aws
+PORT=3000 yarn start:aws

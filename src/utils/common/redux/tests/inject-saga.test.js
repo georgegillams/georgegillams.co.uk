@@ -103,6 +103,7 @@ describe('useInjectSaga hook', () => {
       injectSaga: jest.fn(),
       ejectSaga: jest.fn(),
     };
+    // eslint-disable-next-line react/display-name
     ComponentWithSaga = () => {
       useInjectSaga({
         key: 'test',
