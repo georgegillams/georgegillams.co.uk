@@ -11,11 +11,11 @@ exports[`<Layout /> Should render correctly 1`] = `
     </div>
   </main>
   <footer
-    class="footer__container"
+    class="sc-breuTD bLHECa"
     id="footer"
   >
     <div
-      class="logo__container footer__logo logo__container--centred logo__container--no-padding"
+      class="logo__container sc-ksZaOG ibVvbd logo__container--centred logo__container--no-padding"
     >
       <a
         class="logo__a"
@@ -23,7 +23,7 @@ exports[`<Layout /> Should render correctly 1`] = `
       >
         <h1
           aria-label="Home page"
-          class="logo__heading logo__heading--no-padding"
+          class="logo__heading logo__heading--pride logo__heading--no-padding"
           role="button"
         >
           &lt;G/&gt;
@@ -31,10 +31,10 @@ exports[`<Layout /> Should render correctly 1`] = `
       </a>
     </div>
     <div
-      class="footer__tech"
+      class="sc-hAZoDl dOa-DtS"
     >
       <span
-        class="sc-bczRLJ bhVmoO tech-specs__container"
+        class="sc-iqcoie fIUTrZ sc-crXcEl ggwNYf"
       >
         Built in
         <a
@@ -44,7 +44,7 @@ exports[`<Layout /> Should render correctly 1`] = `
         >
           <img
             alt="React"
-            class="tech-specs__icon"
+            class="sc-evZas dELNCN"
             height="5"
             src="IMAGE_MOCK"
             width="5"
@@ -58,7 +58,7 @@ exports[`<Layout /> Should render correctly 1`] = `
         >
           <img
             alt="Redux"
-            class="tech-specs__icon"
+            class="sc-evZas dELNCN"
             height="5"
             src="IMAGE_MOCK"
             width="5"
@@ -72,7 +72,7 @@ exports[`<Layout /> Should render correctly 1`] = `
         >
           <img
             alt="Amazon Web Services"
-            class="tech-specs__icon"
+            class="sc-evZas dELNCN"
             height="5"
             src="IMAGE_MOCK"
             style="margin-top: .8rem; max-width: 2.9rem;"
@@ -82,32 +82,64 @@ exports[`<Layout /> Should render correctly 1`] = `
       </span>
     </div>
     <div
-      class="footer-nav__container footer__nav"
+      class="sc-jqUVSM iynNqP sc-fnykZs"
     >
-      <a
-        class="sc-ftvSup bvTsjB footer-nav__link"
-        href="/photography"
+      <div
+        class="sc-kDDrLX hmGkcq"
       >
-        Photo
-      </a>
-      <a
-        class="sc-ftvSup bvTsjB footer-nav__link"
-        href="/work"
+        <a
+          class="sc-iBkjds cXbvnS"
+          href="/blog"
+        >
+          Blog
+        </a>
+        <a
+          class="sc-iBkjds cXbvnS"
+          href="/photography"
+        >
+          Photography
+        </a>
+        <a
+          class="sc-iBkjds cXbvnS"
+          href="/work"
+        >
+          Work
+        </a>
+        <a
+          class="sc-iBkjds cXbvnS"
+          href="/contact"
+        >
+          Contact
+        </a>
+      </div>
+      <div
+        class="sc-kDDrLX hmGkcq"
       >
-        Work
-      </a>
-      <a
-        class="sc-ftvSup bvTsjB footer-nav__link"
-        href="/contact"
-      >
-        Contact
-      </a>
-      <a
-        class="sc-ftvSup bvTsjB footer-nav__link"
-        href="/privacy-policy"
-      >
-        Privacy
-      </a>
+        <a
+          class="sc-iBkjds cXbvnS"
+          href="/sitemap"
+        >
+          Site map
+        </a>
+        <a
+          class="sc-iBkjds cXbvnS"
+          href="/privacy-policy"
+        >
+          Privacy
+        </a>
+        <a
+          class="sc-iBkjds cXbvnS"
+          href="/login"
+        >
+          Login/Account
+        </a>
+        <a
+          class="sc-iBkjds cXbvnS"
+          href="/status"
+        >
+          Status
+        </a>
+      </div>
     </div>
   </footer>
 </div>
@@ -124,11 +156,11 @@ exports[`<Layout /> Should render correctly with spread props 1`] = `
     </div>
   </main>
   <footer
-    class="footer__container"
+    class="sc-breuTD bLHECa"
     id="footer"
   >
     <div
-      class="logo__container footer__logo logo__container--centred logo__container--no-padding"
+      class="logo__container sc-ksZaOG ibVvbd logo__container--centred logo__container--no-padding"
     >
       <a
         class="logo__a"
@@ -136,7 +168,7 @@ exports[`<Layout /> Should render correctly with spread props 1`] = `
       >
         <h1
           aria-label="Home page"
-          class="logo__heading logo__heading--no-padding"
+          class="logo__heading logo__heading--pride logo__heading--no-padding"
           role="button"
         >
           &lt;G/&gt;
@@ -144,10 +176,10 @@ exports[`<Layout /> Should render correctly with spread props 1`] = `
       </a>
     </div>
     <div
-      class="footer__tech"
+      class="sc-hAZoDl dOa-DtS"
     >
       <span
-        class="sc-bczRLJ bhVmoO tech-specs__container"
+        class="sc-iqcoie fIUTrZ sc-crXcEl ggwNYf"
       >
         Built in
         <a
@@ -157,7 +189,7 @@ exports[`<Layout /> Should render correctly with spread props 1`] = `
         >
           <img
             alt="React"
-            class="tech-specs__icon"
+            class="sc-evZas dELNCN"
             height="5"
             src="IMAGE_MOCK"
             width="5"
@@ -171,7 +203,7 @@ exports[`<Layout /> Should render correctly with spread props 1`] = `
         >
           <img
             alt="Redux"
-            class="tech-specs__icon"
+            class="sc-evZas dELNCN"
             height="5"
             src="IMAGE_MOCK"
             width="5"
@@ -185,7 +217,7 @@ exports[`<Layout /> Should render correctly with spread props 1`] = `
         >
           <img
             alt="Amazon Web Services"
-            class="tech-specs__icon"
+            class="sc-evZas dELNCN"
             height="5"
             src="IMAGE_MOCK"
             style="margin-top: .8rem; max-width: 2.9rem;"
@@ -195,32 +227,64 @@ exports[`<Layout /> Should render correctly with spread props 1`] = `
       </span>
     </div>
     <div
-      class="footer-nav__container footer__nav"
+      class="sc-jqUVSM iynNqP sc-fnykZs"
     >
-      <a
-        class="sc-ftvSup bvTsjB footer-nav__link"
-        href="/photography"
+      <div
+        class="sc-kDDrLX hmGkcq"
       >
-        Photo
-      </a>
-      <a
-        class="sc-ftvSup bvTsjB footer-nav__link"
-        href="/work"
+        <a
+          class="sc-iBkjds cXbvnS"
+          href="/blog"
+        >
+          Blog
+        </a>
+        <a
+          class="sc-iBkjds cXbvnS"
+          href="/photography"
+        >
+          Photography
+        </a>
+        <a
+          class="sc-iBkjds cXbvnS"
+          href="/work"
+        >
+          Work
+        </a>
+        <a
+          class="sc-iBkjds cXbvnS"
+          href="/contact"
+        >
+          Contact
+        </a>
+      </div>
+      <div
+        class="sc-kDDrLX hmGkcq"
       >
-        Work
-      </a>
-      <a
-        class="sc-ftvSup bvTsjB footer-nav__link"
-        href="/contact"
-      >
-        Contact
-      </a>
-      <a
-        class="sc-ftvSup bvTsjB footer-nav__link"
-        href="/privacy-policy"
-      >
-        Privacy
-      </a>
+        <a
+          class="sc-iBkjds cXbvnS"
+          href="/sitemap"
+        >
+          Site map
+        </a>
+        <a
+          class="sc-iBkjds cXbvnS"
+          href="/privacy-policy"
+        >
+          Privacy
+        </a>
+        <a
+          class="sc-iBkjds cXbvnS"
+          href="/login"
+        >
+          Login/Account
+        </a>
+        <a
+          class="sc-iBkjds cXbvnS"
+          href="/status"
+        >
+          Status
+        </a>
+      </div>
     </div>
   </footer>
 </div>
