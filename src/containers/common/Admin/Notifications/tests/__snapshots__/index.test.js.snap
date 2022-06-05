@@ -112,12 +112,12 @@ exports[`<AdminNotifications /> should render correctly with admin user 1`] = `
       placeholder="Type"
     >
       <div
-        class="input__outer"
+        class="sc-evZas dewINB"
       >
         <select
           aria-disabled="false"
           aria-invalid="false"
-          class="input__inner input__inner--select"
+          class="sc-dIouRR cqKYoJ"
           id="type_FORM_ID"
           name="Type"
         >
@@ -138,7 +138,7 @@ exports[`<AdminNotifications /> should render correctly with admin user 1`] = `
           </option>
         </select>
         <svg
-          class="sc-gKXOVf fAwmrp input__icon input__icon--valid"
+          class="sc-gKXOVf fAwmrp sc-idiyUo cJUKLa"
           height="18"
           viewBox="0 0 24 24"
           width="18"
@@ -288,12 +288,12 @@ exports[`<AdminNotifications /> should render correctly with loadError 1`] = `
       placeholder="Type"
     >
       <div
-        class="input__outer"
+        class="sc-evZas dewINB"
       >
         <select
           aria-disabled="false"
           aria-invalid="false"
-          class="input__inner input__inner--select"
+          class="sc-dmRaPn gAvRkq"
           id="type_FORM_ID"
           name="Type"
         >
@@ -314,7 +314,7 @@ exports[`<AdminNotifications /> should render correctly with loadError 1`] = `
           </option>
         </select>
         <svg
-          class="sc-gKXOVf fAwmrp input__icon input__icon--valid"
+          class="sc-gKXOVf fAwmrp sc-idiyUo cJUKLa"
           height="18"
           viewBox="0 0 24 24"
           width="18"
@@ -422,12 +422,12 @@ exports[`<AdminNotifications /> should render correctly with loading=true 1`] = 
       placeholder="Type"
     >
       <div
-        class="input__outer"
+        class="sc-evZas dewINB"
       >
         <select
           aria-disabled="false"
           aria-invalid="false"
-          class="input__inner input__inner--select"
+          class="sc-hHLeRK gLFEXi"
           id="type_FORM_ID"
           name="Type"
         >
@@ -448,7 +448,7 @@ exports[`<AdminNotifications /> should render correctly with loading=true 1`] = 
           </option>
         </select>
         <svg
-          class="sc-gKXOVf fAwmrp input__icon input__icon--valid"
+          class="sc-gKXOVf fAwmrp sc-idiyUo cJUKLa"
           height="18"
           viewBox="0 0 24 24"
           width="18"
@@ -579,12 +579,12 @@ exports[`<AdminNotifications /> should render correctly with notifications 1`] =
       placeholder="Type"
     >
       <div
-        class="input__outer"
+        class="sc-evZas dewINB"
       >
         <select
           aria-disabled="false"
           aria-invalid="false"
-          class="input__inner input__inner--select"
+          class="sc-kgflAQ hwJVPw"
           id="type_FORM_ID"
           name="Type"
         >
@@ -605,7 +605,7 @@ exports[`<AdminNotifications /> should render correctly with notifications 1`] =
           </option>
         </select>
         <svg
-          class="sc-gKXOVf fAwmrp input__icon input__icon--valid"
+          class="sc-gKXOVf fAwmrp sc-idiyUo cJUKLa"
           height="18"
           viewBox="0 0 24 24"
           width="18"

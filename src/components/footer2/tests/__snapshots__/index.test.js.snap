@@ -1,15 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<Layout /> Should render correctly 1`] = `
+exports[`<Footer /> Should render correctly 1`] = `
 <div>
-  <main
-    class="page-container__container common-layout__grow"
-    id="main"
-  >
-    <div>
-      some text
-    </div>
-  </main>
   <footer
     class="sc-breuTD bLHECa"
     id="footer"
@@ -145,18 +137,10 @@ exports[`<Layout /> Should render correctly 1`] = `
 </div>
 `;
 
-exports[`<Layout /> Should render correctly with spread props 1`] = `
+exports[`<Footer /> Should render correctly with custom className 1`] = `
 <div>
-  <main
-    class="page-container__container common-layout__grow"
-    id="main"
-  >
-    <div>
-      some text
-    </div>
-  </main>
   <footer
-    class="sc-breuTD bLHECa"
+    class="sc-breuTD bLHECa test-custom-className"
     id="footer"
   >
     <div

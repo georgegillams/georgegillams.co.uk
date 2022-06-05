@@ -7,7 +7,8 @@ exports[`<HomePage /> should render correctly 1`] = `
     id="main"
   >
     <div
-      class="page-container__container page-container__container--regular page-container__container--center"
+      class="sc-bczRLJ gmscGQ"
+      width="default"
     >
       <h1
         authenticatorstate="[object Object]"
@@ -34,23 +35,23 @@ exports[`<HomePage /> should render correctly 1`] = `
                 Work
               </h2>
               <span
-                class="sc-jqUVSM iuHAUr work-section__paragraph"
+                class="sc-kDDrLX bMvsic work-section__paragraph"
               >
                 I'm a web developer at
                  
                 <a
                   aria-label="Typeform (opens in a new tab)"
-                  class="sc-iBkjds kXOvCG"
+                  class="sc-ftvSup bvTsjB"
                   href="https://typeform.com/"
                   rel="noopener noreferrer"
                   target="_blank"
                 >
                   Typeform
                   <div
-                    class="sc-ftvSup kUuEWK"
+                    class="sc-papXJ ecwnCf"
                   >
                     <svg
-                      class="sc-gKXOVf fAwmrp sc-papXJ fmVkXn"
+                      class="sc-iBkjds eintev sc-jqUVSM fjeMmK"
                       height="18"
                       viewBox="0 0 24 24"
                       width="18"
@@ -68,7 +69,7 @@ exports[`<HomePage /> should render correctly 1`] = `
                 I’m also an accessibility champion and design system enthusiast.
                 <br />
                 <a
-                  class="sc-iBkjds kXOvCG"
+                  class="sc-ftvSup bvTsjB"
                   href="/work"
                 >
                   Learn more about my work
@@ -242,26 +243,26 @@ exports[`<HomePage /> should render correctly 1`] = `
                 Life
               </h2>
               <span
-                class="sc-jqUVSM iuHAUr life-section__paragraph"
+                class="sc-kDDrLX bMvsic life-section__paragraph"
               >
                 I love travel and photography, and occasionally write other stuff.
                 <br />
                 <a
-                  class="sc-iBkjds kXOvCG"
+                  class="sc-ftvSup bvTsjB"
                   href="/blog"
                 >
                   Blog
                 </a>
                 <br />
                 <a
-                  class="sc-iBkjds kXOvCG"
+                  class="sc-ftvSup bvTsjB"
                   href="/travel"
                 >
                   Travel
                 </a>
                 <br />
                 <a
-                  class="sc-iBkjds kXOvCG"
+                  class="sc-ftvSup bvTsjB"
                   href="/photography"
                 >
                   Photography
@@ -269,7 +270,7 @@ exports[`<HomePage /> should render correctly 1`] = `
               </span>
             </div>
             <span
-              class="sc-jqUVSM iuHAUr life-section__paragraph"
+              class="sc-kDDrLX bMvsic life-section__paragraph"
             >
               I got engaged recently in Iceland, and live with my amazing fiancée and Tigger the cat.
             </span>
@@ -440,23 +441,23 @@ exports[`<HomePage /> should render correctly 1`] = `
           class="about-section__outer"
         >
           <span
-            class="sc-jqUVSM iuHAUr about-section__paragraph"
+            class="sc-kDDrLX bMvsic about-section__paragraph"
           >
             This site is built in
              
             <a
               aria-label="React (opens in a new tab)"
-              class="sc-iBkjds kXOvCG"
+              class="sc-ftvSup bvTsjB"
               href="https://reactjs.org/"
               rel="noopener noreferrer"
               target="_blank"
             >
               React
               <div
-                class="sc-ftvSup kUuEWK"
+                class="sc-papXJ ecwnCf"
               >
                 <svg
-                  class="sc-gKXOVf fAwmrp sc-papXJ fmVkXn"
+                  class="sc-iBkjds eintev sc-jqUVSM fjeMmK"
                   height="18"
                   viewBox="0 0 24 24"
                   width="18"
@@ -473,17 +474,17 @@ exports[`<HomePage /> should render correctly 1`] = `
              
             <a
               aria-label="Redux (opens in a new tab)"
-              class="sc-iBkjds kXOvCG"
+              class="sc-ftvSup bvTsjB"
               href="https://redux.js.org/"
               rel="noopener noreferrer"
               target="_blank"
             >
               Redux
               <div
-                class="sc-ftvSup kUuEWK"
+                class="sc-papXJ ecwnCf"
               >
                 <svg
-                  class="sc-gKXOVf fAwmrp sc-papXJ fmVkXn"
+                  class="sc-iBkjds eintev sc-jqUVSM fjeMmK"
                   height="18"
                   viewBox="0 0 24 24"
                   width="18"
@@ -500,17 +501,17 @@ exports[`<HomePage /> should render correctly 1`] = `
              
             <a
               aria-label="Next.js (opens in a new tab)"
-              class="sc-iBkjds kXOvCG"
+              class="sc-ftvSup bvTsjB"
               href="https://nextjs.org/"
               rel="noopener noreferrer"
               target="_blank"
             >
               Next.js
               <div
-                class="sc-ftvSup kUuEWK"
+                class="sc-papXJ ecwnCf"
               >
                 <svg
-                  class="sc-gKXOVf fAwmrp sc-papXJ fmVkXn"
+                  class="sc-iBkjds eintev sc-jqUVSM fjeMmK"
                   height="18"
                   viewBox="0 0 24 24"
                   width="18"
@@ -526,17 +527,17 @@ exports[`<HomePage /> should render correctly 1`] = `
              
             <a
               aria-label="AWS (opens in a new tab)"
-              class="sc-iBkjds kXOvCG"
+              class="sc-ftvSup bvTsjB"
               href="https://aws.amazon.com/"
               rel="noopener noreferrer"
               target="_blank"
             >
               AWS
               <div
-                class="sc-ftvSup kUuEWK"
+                class="sc-papXJ ecwnCf"
               >
                 <svg
-                  class="sc-gKXOVf fAwmrp sc-papXJ fmVkXn"
+                  class="sc-iBkjds eintev sc-jqUVSM fjeMmK"
                   height="18"
                   viewBox="0 0 24 24"
                   width="18"
@@ -557,7 +558,7 @@ exports[`<HomePage /> should render correctly 1`] = `
               class="contact-link__content"
             >
               <a
-                class="sc-iBkjds kXOvCG contact-link__link"
+                class="sc-ftvSup bvTsjB contact-link__link"
                 href="/contact"
               >
                 Get in touch
@@ -573,11 +574,11 @@ exports[`<HomePage /> should render correctly 1`] = `
     </div>
   </main>
   <footer
-    class="footer__container"
+    class="sc-ksZaOG uRMXx"
     id="footer"
   >
     <div
-      class="logo__container footer__logo logo__container--centred logo__container--no-padding"
+      class="logo__container sc-hAZoDl dOa-DtS logo__container--centred logo__container--no-padding"
     >
       <a
         class="logo__a"
@@ -585,7 +586,7 @@ exports[`<HomePage /> should render correctly 1`] = `
       >
         <h1
           aria-label="Home page"
-          class="logo__heading logo__heading--no-padding"
+          class="logo__heading logo__heading--pride logo__heading--no-padding"
           role="button"
         >
           &lt;G/&gt;
@@ -593,10 +594,10 @@ exports[`<HomePage /> should render correctly 1`] = `
       </a>
     </div>
     <div
-      class="footer__tech"
+      class="sc-fnykZs bfJfNd"
     >
       <span
-        class="sc-jqUVSM iuHAUr tech-specs__container"
+        class="sc-kDDrLX bMvsic sc-evZas hpFAon"
       >
         Built in
         <a
@@ -606,7 +607,7 @@ exports[`<HomePage /> should render correctly 1`] = `
         >
           <img
             alt="React"
-            class="tech-specs__icon"
+            class="sc-breuTD ebWuTO"
             height="5"
             src="IMAGE_MOCK"
             width="5"
@@ -620,7 +621,7 @@ exports[`<HomePage /> should render correctly 1`] = `
         >
           <img
             alt="Redux"
-            class="tech-specs__icon"
+            class="sc-breuTD ebWuTO"
             height="5"
             src="IMAGE_MOCK"
             width="5"
@@ -634,7 +635,7 @@ exports[`<HomePage /> should render correctly 1`] = `
         >
           <img
             alt="Amazon Web Services"
-            class="tech-specs__icon"
+            class="sc-breuTD ebWuTO"
             height="5"
             src="IMAGE_MOCK"
             style="margin-top: .8rem; max-width: 2.9rem;"
@@ -644,32 +645,64 @@ exports[`<HomePage /> should render correctly 1`] = `
       </span>
     </div>
     <div
-      class="footer-nav__container footer__nav"
+      class="sc-iqcoie cgVnAp sc-fEOsli"
     >
-      <a
-        class="sc-iBkjds kXOvCG footer-nav__link"
-        href="/photography"
+      <div
+        class="sc-crXcEl ktiGPI"
       >
-        Photo
-      </a>
-      <a
-        class="sc-iBkjds kXOvCG footer-nav__link"
-        href="/work"
+        <a
+          class="sc-ftvSup dMEDbl"
+          href="/blog"
+        >
+          Blog
+        </a>
+        <a
+          class="sc-ftvSup dMEDbl"
+          href="/photography"
+        >
+          Photography
+        </a>
+        <a
+          class="sc-ftvSup dMEDbl"
+          href="/work"
+        >
+          Work
+        </a>
+        <a
+          class="sc-ftvSup dMEDbl"
+          href="/contact"
+        >
+          Contact
+        </a>
+      </div>
+      <div
+        class="sc-crXcEl ktiGPI"
       >
-        Work
-      </a>
-      <a
-        class="sc-iBkjds kXOvCG footer-nav__link"
-        href="/contact"
-      >
-        Contact
-      </a>
-      <a
-        class="sc-iBkjds kXOvCG footer-nav__link"
-        href="/privacy-policy"
-      >
-        Privacy
-      </a>
+        <a
+          class="sc-ftvSup dMEDbl"
+          href="/sitemap"
+        >
+          Site map
+        </a>
+        <a
+          class="sc-ftvSup dMEDbl"
+          href="/privacy-policy"
+        >
+          Privacy
+        </a>
+        <a
+          class="sc-ftvSup dMEDbl"
+          href="/login"
+        >
+          Login/Account
+        </a>
+        <a
+          class="sc-ftvSup dMEDbl"
+          href="/status"
+        >
+          Status
+        </a>
+      </div>
     </div>
   </footer>
 </div>

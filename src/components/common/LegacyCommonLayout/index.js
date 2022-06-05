@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 import LegacyPageContainer, { LAYOUT_STYLES } from 'components/common/LegacyPageContainer';
-import Footer from 'components/Footer';
+import Footer from 'components/footer2';
 import STYLES from './common-layout.scss';
 import { cssModules } from '@george-gillams/components/helpers/cssModules';
 const getClassName = cssModules(STYLES);
