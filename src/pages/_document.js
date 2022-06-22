@@ -7,12 +7,27 @@ import JSFeatureDetector, { NO_JS_CLASSNAME } from '@george-gillams/components/j
 class MyDocument extends Document {
   static async getInitialProps(ctx) {
     const sheet = new ServerStyleSheet();
-    const page = ctx.renderPage(App => props => sheet.collectStyles(<App {...props} />));
+    const originalRenderPage = ctx.renderPage;
+
+    const page = (ctx.renderPage = () =>
+      originalRenderPage({
+        enhanceApp: App => props => sheet.collectStyles(<App {...props} />),
+      }));
     const styleTags = sheet.getStyleElement();
 
     const initialProps = await Document.getInitialProps(ctx);
 
-    return { styleTags, ...initialProps, ...page };
+    return {
+      styleTags,
+      ...initialProps,
+      styles: (
+        <>
+          {initialProps.styles}
+          {sheet.getStyleElement()}
+        </>
+      ),
+      ...page,
+    };
   }
 
   render() {
