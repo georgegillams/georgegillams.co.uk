@@ -51,7 +51,7 @@ exports[`<HomePage /> should render correctly 1`] = `
                     class="sc-papXJ ecwnCf"
                   >
                     <svg
-                      class="sc-iBkjds eintev sc-jqUVSM fjeMmK"
+                      class="sc-iBkjds eZahvc sc-jqUVSM fjeMmK"
                       height="18"
                       viewBox="0 0 24 24"
                       width="18"
@@ -457,7 +457,7 @@ exports[`<HomePage /> should render correctly 1`] = `
                 class="sc-papXJ ecwnCf"
               >
                 <svg
-                  class="sc-iBkjds eintev sc-jqUVSM fjeMmK"
+                  class="sc-iBkjds eZahvc sc-jqUVSM fjeMmK"
                   height="18"
                   viewBox="0 0 24 24"
                   width="18"
@@ -484,7 +484,7 @@ exports[`<HomePage /> should render correctly 1`] = `
                 class="sc-papXJ ecwnCf"
               >
                 <svg
-                  class="sc-iBkjds eintev sc-jqUVSM fjeMmK"
+                  class="sc-iBkjds eZahvc sc-jqUVSM fjeMmK"
                   height="18"
                   viewBox="0 0 24 24"
                   width="18"
@@ -511,7 +511,7 @@ exports[`<HomePage /> should render correctly 1`] = `
                 class="sc-papXJ ecwnCf"
               >
                 <svg
-                  class="sc-iBkjds eintev sc-jqUVSM fjeMmK"
+                  class="sc-iBkjds eZahvc sc-jqUVSM fjeMmK"
                   height="18"
                   viewBox="0 0 24 24"
                   width="18"
@@ -537,7 +537,7 @@ exports[`<HomePage /> should render correctly 1`] = `
                 class="sc-papXJ ecwnCf"
               >
                 <svg
-                  class="sc-iBkjds eintev sc-jqUVSM fjeMmK"
+                  class="sc-iBkjds eZahvc sc-jqUVSM fjeMmK"
                   height="18"
                   viewBox="0 0 24 24"
                   width="18"
@@ -574,11 +574,11 @@ exports[`<HomePage /> should render correctly 1`] = `
     </div>
   </main>
   <footer
-    class="sc-ksZaOG uRMXx"
+    class="footerstyles__Container-sc-ojjd19-0 lmaSVt"
     id="footer"
   >
     <div
-      class="logo__container sc-hAZoDl dOa-DtS logo__container--centred logo__container--no-padding"
+      class="logo__container footerstyles__StyledLogo-sc-ojjd19-1 dHUBSN logo__container--centred logo__container--no-padding"
     >
       <a
         class="logo__a"
@@ -594,10 +594,10 @@ exports[`<HomePage /> should render correctly 1`] = `
       </a>
     </div>
     <div
-      class="sc-fnykZs bfJfNd"
+      class="footerstyles__StyledTechSpecs-sc-ojjd19-2 hLmmol"
     >
       <span
-        class="sc-kDDrLX bMvsic sc-evZas hpFAon"
+        class="sc-kDDrLX bMvsic tech-specsstyles__StyledParagraph-sc-1ysn53a-0 glkFZI"
       >
         Built in
         <a
@@ -607,7 +607,7 @@ exports[`<HomePage /> should render correctly 1`] = `
         >
           <img
             alt="React"
-            class="sc-breuTD ebWuTO"
+            class="tech-specsstyles__Icon-sc-1ysn53a-1 fVaLbn"
             height="5"
             src="IMAGE_MOCK"
             width="5"
@@ -621,7 +621,7 @@ exports[`<HomePage /> should render correctly 1`] = `
         >
           <img
             alt="Redux"
-            class="sc-breuTD ebWuTO"
+            class="tech-specsstyles__Icon-sc-1ysn53a-1 fVaLbn"
             height="5"
             src="IMAGE_MOCK"
             width="5"
@@ -635,7 +635,7 @@ exports[`<HomePage /> should render correctly 1`] = `
         >
           <img
             alt="Amazon Web Services"
-            class="sc-breuTD ebWuTO"
+            class="tech-specsstyles__Icon-sc-1ysn53a-1 fVaLbn"
             height="5"
             src="IMAGE_MOCK"
             style="margin-top: .8rem; max-width: 2.9rem;"
@@ -645,10 +645,10 @@ exports[`<HomePage /> should render correctly 1`] = `
       </span>
     </div>
     <div
-      class="sc-iqcoie cgVnAp sc-fEOsli"
+      class="footer-navstyles__Wrapper-sc-7lmnsj-0 kTnJQq footerstyles__StyledFooterNav-sc-ojjd19-3"
     >
       <div
-        class="sc-crXcEl ktiGPI"
+        class="footer-navstyles__Section-sc-7lmnsj-1 iFmILp"
       >
         <a
           class="sc-ftvSup dMEDbl"
@@ -676,7 +676,7 @@ exports[`<HomePage /> should render correctly 1`] = `
         </a>
       </div>
       <div
-        class="sc-crXcEl ktiGPI"
+        class="footer-navstyles__Section-sc-7lmnsj-1 iFmILp"
       >
         <a
           class="sc-ftvSup dMEDbl"

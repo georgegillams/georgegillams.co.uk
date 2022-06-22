@@ -3,11 +3,11 @@
 exports[`<Footer /> Should render correctly 1`] = `
 <div>
   <footer
-    class="sc-breuTD bLHECa"
+    class="footerstyles__Container-sc-ojjd19-0 lmaSVt"
     id="footer"
   >
     <div
-      class="logo__container sc-ksZaOG ibVvbd logo__container--centred logo__container--no-padding"
+      class="logo__container footerstyles__StyledLogo-sc-ojjd19-1 dHUBSN logo__container--centred logo__container--no-padding"
     >
       <a
         class="logo__a"
@@ -23,10 +23,10 @@ exports[`<Footer /> Should render correctly 1`] = `
       </a>
     </div>
     <div
-      class="sc-hAZoDl dOa-DtS"
+      class="footerstyles__StyledTechSpecs-sc-ojjd19-2 hLmmol"
     >
       <span
-        class="sc-iqcoie fIUTrZ sc-crXcEl ggwNYf"
+        class="sc-jqUVSM iuHAUr tech-specsstyles__StyledParagraph-sc-1ysn53a-0 glkFZI"
       >
         Built in
         <a
@@ -36,7 +36,7 @@ exports[`<Footer /> Should render correctly 1`] = `
         >
           <img
             alt="React"
-            class="sc-evZas dELNCN"
+            class="tech-specsstyles__Icon-sc-1ysn53a-1 fVaLbn"
             height="5"
             src="IMAGE_MOCK"
             width="5"
@@ -50,7 +50,7 @@ exports[`<Footer /> Should render correctly 1`] = `
         >
           <img
             alt="Redux"
-            class="sc-evZas dELNCN"
+            class="tech-specsstyles__Icon-sc-1ysn53a-1 fVaLbn"
             height="5"
             src="IMAGE_MOCK"
             width="5"
@@ -64,7 +64,7 @@ exports[`<Footer /> Should render correctly 1`] = `
         >
           <img
             alt="Amazon Web Services"
-            class="sc-evZas dELNCN"
+            class="tech-specsstyles__Icon-sc-1ysn53a-1 fVaLbn"
             height="5"
             src="IMAGE_MOCK"
             style="margin-top: .8rem; max-width: 2.9rem;"
@@ -74,10 +74,10 @@ exports[`<Footer /> Should render correctly 1`] = `
       </span>
     </div>
     <div
-      class="sc-jqUVSM iynNqP sc-fnykZs"
+      class="footer-navstyles__Wrapper-sc-7lmnsj-0 kTnJQq footerstyles__StyledFooterNav-sc-ojjd19-3"
     >
       <div
-        class="sc-kDDrLX hmGkcq"
+        class="footer-navstyles__Section-sc-7lmnsj-1 iFmILp"
       >
         <a
           class="sc-iBkjds cXbvnS"
@@ -105,7 +105,7 @@ exports[`<Footer /> Should render correctly 1`] = `
         </a>
       </div>
       <div
-        class="sc-kDDrLX hmGkcq"
+        class="footer-navstyles__Section-sc-7lmnsj-1 iFmILp"
       >
         <a
           class="sc-iBkjds cXbvnS"
@@ -140,11 +140,11 @@ exports[`<Footer /> Should render correctly 1`] = `
 exports[`<Footer /> Should render correctly with custom className 1`] = `
 <div>
   <footer
-    class="sc-breuTD bLHECa test-custom-className"
+    class="footerstyles__Container-sc-ojjd19-0 lmaSVt test-custom-className"
     id="footer"
   >
     <div
-      class="logo__container sc-ksZaOG ibVvbd logo__container--centred logo__container--no-padding"
+      class="logo__container footerstyles__StyledLogo-sc-ojjd19-1 dHUBSN logo__container--centred logo__container--no-padding"
     >
       <a
         class="logo__a"
@@ -160,10 +160,10 @@ exports[`<Footer /> Should render correctly with custom className 1`] = `
       </a>
     </div>
     <div
-      class="sc-hAZoDl dOa-DtS"
+      class="footerstyles__StyledTechSpecs-sc-ojjd19-2 hLmmol"
     >
       <span
-        class="sc-iqcoie fIUTrZ sc-crXcEl ggwNYf"
+        class="sc-jqUVSM iuHAUr tech-specsstyles__StyledParagraph-sc-1ysn53a-0 glkFZI"
       >
         Built in
         <a
@@ -173,7 +173,7 @@ exports[`<Footer /> Should render correctly with custom className 1`] = `
         >
           <img
             alt="React"
-            class="sc-evZas dELNCN"
+            class="tech-specsstyles__Icon-sc-1ysn53a-1 fVaLbn"
             height="5"
             src="IMAGE_MOCK"
             width="5"
@@ -187,7 +187,7 @@ exports[`<Footer /> Should render correctly with custom className 1`] = `
         >
           <img
             alt="Redux"
-            class="sc-evZas dELNCN"
+            class="tech-specsstyles__Icon-sc-1ysn53a-1 fVaLbn"
             height="5"
             src="IMAGE_MOCK"
             width="5"
@@ -201,7 +201,7 @@ exports[`<Footer /> Should render correctly with custom className 1`] = `
         >
           <img
             alt="Amazon Web Services"
-            class="sc-evZas dELNCN"
+            class="tech-specsstyles__Icon-sc-1ysn53a-1 fVaLbn"
             height="5"
             src="IMAGE_MOCK"
             style="margin-top: .8rem; max-width: 2.9rem;"
@@ -211,10 +211,10 @@ exports[`<Footer /> Should render correctly with custom className 1`] = `
       </span>
     </div>
     <div
-      class="sc-jqUVSM iynNqP sc-fnykZs"
+      class="footer-navstyles__Wrapper-sc-7lmnsj-0 kTnJQq footerstyles__StyledFooterNav-sc-ojjd19-3"
     >
       <div
-        class="sc-kDDrLX hmGkcq"
+        class="footer-navstyles__Section-sc-7lmnsj-1 iFmILp"
       >
         <a
           class="sc-iBkjds cXbvnS"
@@ -242,7 +242,7 @@ exports[`<Footer /> Should render correctly with custom className 1`] = `
         </a>
       </div>
       <div
-        class="sc-kDDrLX hmGkcq"
+        class="footer-navstyles__Section-sc-7lmnsj-1 iFmILp"
       >
         <a
           class="sc-iBkjds cXbvnS"

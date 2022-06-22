@@ -3,41 +3,99 @@
 exports[`<Authenticator /> should render correctly - index 1`] = `
 <div>
   <header
+    class="sc-hKMtZM LVOTa"
     role="banner"
-    style="position: sticky; top: 0px; z-index: 997;"
   >
-    <div
-      class="navigation-bar__container"
+    <style>
+      .js .navigation-bar__burger-wrapper--no-js {
+  display: none;
+}
+      .no-js .navigation-bar__burger-wrapper--js {
+  display: none;
+}
+    </style>
+    <nav
+      class="sc-jSMfEi jnhvTO"
     >
       <div
-        class="navigation-bar__bar"
+        class="sc-gKXOVf MHOqO"
       >
         <div
-          class="navigation-bar__mobile-container navigation-bar__mobile-container--left"
+          class="sc-papXJ ejHZVP"
         >
-          <button
-            aria-expanded="false"
-            aria-label="Menu"
-            class="sc-bczRLJ dIBDIK navigation-bar__burger-button"
-            type="button"
+          <div
+            class="sc-iBkjds hiohco"
           >
-            <div
-              class="sc-gsnTZi lbGBid"
+            <button
+              aria-expanded="false"
+              aria-label="Menu"
+              class="sc-bczRLJ dIBDIK navigation-bar__burger-wrapper--js"
+              type="button"
             >
               <div
-                class="sc-dkzDqf iKvdlc"
-              />
-              <div
-                class="sc-dkzDqf iKvdlc"
-              />
-              <div
-                class="sc-dkzDqf iKvdlc"
-              />
-            </div>
-          </button>
+                class="sc-gsnTZi lbGBid"
+              >
+                <div
+                  class="sc-dkzDqf iKvdlc"
+                />
+                <div
+                  class="sc-dkzDqf iKvdlc"
+                />
+                <div
+                  class="sc-dkzDqf iKvdlc"
+                />
+              </div>
+            </button>
+            <a
+              aria-label="Sitemap"
+              class="navigation-bar__burger-wrapper--no-js"
+              href="/site-map"
+            >
+              <button
+                aria-expanded="false"
+                aria-hidden="true"
+                aria-label="Menu"
+                class="sc-bczRLJ dIBDIK"
+                type="button"
+              >
+                <div
+                  class="sc-gsnTZi lbGBid"
+                >
+                  <div
+                    class="sc-dkzDqf iKvdlc"
+                  />
+                  <div
+                    class="sc-dkzDqf iKvdlc"
+                  />
+                  <div
+                    class="sc-dkzDqf iKvdlc"
+                  />
+                </div>
+              </button>
+            </a>
+          </div>
+          <div
+            class="logo__container logo__container--no-padding"
+          >
+            <a
+              class="logo__a"
+              href="/"
+            >
+              <h1
+                aria-label="Home page"
+                class="logo__heading logo__subheading--animated logo__heading--pride logo__heading--no-padding"
+                role="button"
+              >
+                &lt;G/&gt;
+              </h1>
+            </a>
+          </div>
+          <div
+            class="sc-iBkjds hiohco"
+          />
         </div>
         <div
-          class="navigation-bar__logo-container"
+          class="sc-ftvSup fXmYLN"
         >
           <div
             class="logo__container logo__container--no-padding"
@@ -55,12 +113,53 @@ exports[`<Authenticator /> should render correctly - index 1`] = `
               </h1>
             </a>
           </div>
+          <a
+            aria-label="Blog"
+            class="button__a button__outer button__outer--dark-text button__outer--bouncy button__outer--link"
+            href="/blog"
+          >
+            <span
+              class="button__child"
+            >
+              Blog
+            </span>
+          </a>
+          <a
+            aria-label="Photography"
+            class="button__a button__outer button__outer--dark-text button__outer--bouncy button__outer--link"
+            href="/photography"
+          >
+            <span
+              class="button__child"
+            >
+              Photography
+            </span>
+          </a>
+          <a
+            aria-label="Work"
+            class="button__a button__outer button__outer--dark-text button__outer--bouncy button__outer--link"
+            href="/work"
+          >
+            <span
+              class="button__child"
+            >
+              Work
+            </span>
+          </a>
+          <a
+            aria-label="Contact"
+            class="button__a button__outer button__outer--dark-text button__outer--bouncy button__outer--link"
+            href="/contact"
+          >
+            <span
+              class="button__child"
+            >
+              Contact
+            </span>
+          </a>
         </div>
-        <div
-          class="navigation-bar__mobile-container navigation-bar__mobile-container--rgt"
-        />
       </div>
-    </div>
+    </nav>
   </header>
 </div>
 `;
@@ -68,41 +167,99 @@ exports[`<Authenticator /> should render correctly - index 1`] = `
 exports[`<Authenticator /> should render correctly with default state 1`] = `
 <div>
   <header
+    class="sc-hKMtZM LVOTa"
     role="banner"
-    style="position: sticky; top: 0px; z-index: 997;"
   >
-    <div
-      class="navigation-bar__container"
+    <style>
+      .js .navigation-bar__burger-wrapper--no-js {
+  display: none;
+}
+      .no-js .navigation-bar__burger-wrapper--js {
+  display: none;
+}
+    </style>
+    <nav
+      class="sc-jSMfEi jnhvTO"
     >
       <div
-        class="navigation-bar__bar"
+        class="sc-gKXOVf MHOqO"
       >
         <div
-          class="navigation-bar__mobile-container navigation-bar__mobile-container--left"
+          class="sc-papXJ ejHZVP"
         >
-          <button
-            aria-expanded="false"
-            aria-label="Menu"
-            class="sc-bczRLJ dIBDIK navigation-bar__burger-button"
-            type="button"
+          <div
+            class="sc-iBkjds hiohco"
           >
-            <div
-              class="sc-gsnTZi lbGBid"
+            <button
+              aria-expanded="false"
+              aria-label="Menu"
+              class="sc-bczRLJ dIBDIK navigation-bar__burger-wrapper--js"
+              type="button"
             >
               <div
-                class="sc-dkzDqf iKvdlc"
-              />
-              <div
-                class="sc-dkzDqf iKvdlc"
-              />
-              <div
-                class="sc-dkzDqf iKvdlc"
-              />
-            </div>
-          </button>
+                class="sc-gsnTZi lbGBid"
+              >
+                <div
+                  class="sc-dkzDqf iKvdlc"
+                />
+                <div
+                  class="sc-dkzDqf iKvdlc"
+                />
+                <div
+                  class="sc-dkzDqf iKvdlc"
+                />
+              </div>
+            </button>
+            <a
+              aria-label="Sitemap"
+              class="navigation-bar__burger-wrapper--no-js"
+              href="/site-map"
+            >
+              <button
+                aria-expanded="false"
+                aria-hidden="true"
+                aria-label="Menu"
+                class="sc-bczRLJ dIBDIK"
+                type="button"
+              >
+                <div
+                  class="sc-gsnTZi lbGBid"
+                >
+                  <div
+                    class="sc-dkzDqf iKvdlc"
+                  />
+                  <div
+                    class="sc-dkzDqf iKvdlc"
+                  />
+                  <div
+                    class="sc-dkzDqf iKvdlc"
+                  />
+                </div>
+              </button>
+            </a>
+          </div>
+          <div
+            class="logo__container logo__container--no-padding"
+          >
+            <a
+              class="logo__a"
+              href="/"
+            >
+              <h1
+                aria-label="Home page"
+                class="logo__heading logo__subheading--animated logo__heading--pride logo__heading--no-padding"
+                role="button"
+              >
+                &lt;G/&gt;
+              </h1>
+            </a>
+          </div>
+          <div
+            class="sc-iBkjds hiohco"
+          />
         </div>
         <div
-          class="navigation-bar__logo-container"
+          class="sc-ftvSup fXmYLN"
         >
           <div
             class="logo__container logo__container--no-padding"
@@ -120,12 +277,53 @@ exports[`<Authenticator /> should render correctly with default state 1`] = `
               </h1>
             </a>
           </div>
+          <a
+            aria-label="Blog"
+            class="button__a button__outer button__outer--dark-text button__outer--bouncy button__outer--link"
+            href="/blog"
+          >
+            <span
+              class="button__child"
+            >
+              Blog
+            </span>
+          </a>
+          <a
+            aria-label="Photography"
+            class="button__a button__outer button__outer--dark-text button__outer--bouncy button__outer--link"
+            href="/photography"
+          >
+            <span
+              class="button__child"
+            >
+              Photography
+            </span>
+          </a>
+          <a
+            aria-label="Work"
+            class="button__a button__outer button__outer--dark-text button__outer--bouncy button__outer--link"
+            href="/work"
+          >
+            <span
+              class="button__child"
+            >
+              Work
+            </span>
+          </a>
+          <a
+            aria-label="Contact"
+            class="button__a button__outer button__outer--dark-text button__outer--bouncy button__outer--link"
+            href="/contact"
+          >
+            <span
+              class="button__child"
+            >
+              Contact
+            </span>
+          </a>
         </div>
-        <div
-          class="navigation-bar__mobile-container navigation-bar__mobile-container--rgt"
-        />
       </div>
-    </div>
+    </nav>
   </header>
 </div>
 `;
@@ -133,41 +331,99 @@ exports[`<Authenticator /> should render correctly with default state 1`] = `
 exports[`<Authenticator /> should render correctly with null user 1`] = `
 <div>
   <header
+    class="sc-hKMtZM LVOTa"
     role="banner"
-    style="position: sticky; top: 0px; z-index: 997;"
   >
-    <div
-      class="navigation-bar__container"
+    <style>
+      .js .navigation-bar__burger-wrapper--no-js {
+  display: none;
+}
+      .no-js .navigation-bar__burger-wrapper--js {
+  display: none;
+}
+    </style>
+    <nav
+      class="sc-jSMfEi jnhvTO"
     >
       <div
-        class="navigation-bar__bar"
+        class="sc-gKXOVf MHOqO"
       >
         <div
-          class="navigation-bar__mobile-container navigation-bar__mobile-container--left"
+          class="sc-papXJ ejHZVP"
         >
-          <button
-            aria-expanded="false"
-            aria-label="Menu"
-            class="sc-bczRLJ dIBDIK navigation-bar__burger-button"
-            type="button"
+          <div
+            class="sc-iBkjds hiohco"
           >
-            <div
-              class="sc-gsnTZi lbGBid"
+            <button
+              aria-expanded="false"
+              aria-label="Menu"
+              class="sc-bczRLJ dIBDIK navigation-bar__burger-wrapper--js"
+              type="button"
             >
               <div
-                class="sc-dkzDqf iKvdlc"
-              />
-              <div
-                class="sc-dkzDqf iKvdlc"
-              />
-              <div
-                class="sc-dkzDqf iKvdlc"
-              />
-            </div>
-          </button>
+                class="sc-gsnTZi lbGBid"
+              >
+                <div
+                  class="sc-dkzDqf iKvdlc"
+                />
+                <div
+                  class="sc-dkzDqf iKvdlc"
+                />
+                <div
+                  class="sc-dkzDqf iKvdlc"
+                />
+              </div>
+            </button>
+            <a
+              aria-label="Sitemap"
+              class="navigation-bar__burger-wrapper--no-js"
+              href="/site-map"
+            >
+              <button
+                aria-expanded="false"
+                aria-hidden="true"
+                aria-label="Menu"
+                class="sc-bczRLJ dIBDIK"
+                type="button"
+              >
+                <div
+                  class="sc-gsnTZi lbGBid"
+                >
+                  <div
+                    class="sc-dkzDqf iKvdlc"
+                  />
+                  <div
+                    class="sc-dkzDqf iKvdlc"
+                  />
+                  <div
+                    class="sc-dkzDqf iKvdlc"
+                  />
+                </div>
+              </button>
+            </a>
+          </div>
+          <div
+            class="logo__container logo__container--no-padding"
+          >
+            <a
+              class="logo__a"
+              href="/"
+            >
+              <h1
+                aria-label="Home page"
+                class="logo__heading logo__subheading--animated logo__heading--pride logo__heading--no-padding"
+                role="button"
+              >
+                &lt;G/&gt;
+              </h1>
+            </a>
+          </div>
+          <div
+            class="sc-iBkjds hiohco"
+          />
         </div>
         <div
-          class="navigation-bar__logo-container"
+          class="sc-ftvSup fXmYLN"
         >
           <div
             class="logo__container logo__container--no-padding"
@@ -185,12 +441,53 @@ exports[`<Authenticator /> should render correctly with null user 1`] = `
               </h1>
             </a>
           </div>
+          <a
+            aria-label="Blog"
+            class="button__a button__outer button__outer--dark-text button__outer--bouncy button__outer--link"
+            href="/blog"
+          >
+            <span
+              class="button__child"
+            >
+              Blog
+            </span>
+          </a>
+          <a
+            aria-label="Photography"
+            class="button__a button__outer button__outer--dark-text button__outer--bouncy button__outer--link"
+            href="/photography"
+          >
+            <span
+              class="button__child"
+            >
+              Photography
+            </span>
+          </a>
+          <a
+            aria-label="Work"
+            class="button__a button__outer button__outer--dark-text button__outer--bouncy button__outer--link"
+            href="/work"
+          >
+            <span
+              class="button__child"
+            >
+              Work
+            </span>
+          </a>
+          <a
+            aria-label="Contact"
+            class="button__a button__outer button__outer--dark-text button__outer--bouncy button__outer--link"
+            href="/contact"
+          >
+            <span
+              class="button__child"
+            >
+              Contact
+            </span>
+          </a>
         </div>
-        <div
-          class="navigation-bar__mobile-container navigation-bar__mobile-container--rgt"
-        />
       </div>
-    </div>
+    </nav>
   </header>
 </div>
 `;
@@ -198,41 +495,99 @@ exports[`<Authenticator /> should render correctly with null user 1`] = `
 exports[`<Authenticator /> should render correctly with user 1`] = `
 <div>
   <header
+    class="sc-hKMtZM LVOTa"
     role="banner"
-    style="position: sticky; top: 0px; z-index: 997;"
   >
-    <div
-      class="navigation-bar__container"
+    <style>
+      .js .navigation-bar__burger-wrapper--no-js {
+  display: none;
+}
+      .no-js .navigation-bar__burger-wrapper--js {
+  display: none;
+}
+    </style>
+    <nav
+      class="sc-jSMfEi jnhvTO"
     >
       <div
-        class="navigation-bar__bar"
+        class="sc-gKXOVf MHOqO"
       >
         <div
-          class="navigation-bar__mobile-container navigation-bar__mobile-container--left"
+          class="sc-papXJ ejHZVP"
         >
-          <button
-            aria-expanded="false"
-            aria-label="Menu"
-            class="sc-bczRLJ dIBDIK navigation-bar__burger-button"
-            type="button"
+          <div
+            class="sc-iBkjds hiohco"
           >
-            <div
-              class="sc-gsnTZi lbGBid"
+            <button
+              aria-expanded="false"
+              aria-label="Menu"
+              class="sc-bczRLJ dIBDIK navigation-bar__burger-wrapper--js"
+              type="button"
             >
               <div
-                class="sc-dkzDqf iKvdlc"
-              />
-              <div
-                class="sc-dkzDqf iKvdlc"
-              />
-              <div
-                class="sc-dkzDqf iKvdlc"
-              />
-            </div>
-          </button>
+                class="sc-gsnTZi lbGBid"
+              >
+                <div
+                  class="sc-dkzDqf iKvdlc"
+                />
+                <div
+                  class="sc-dkzDqf iKvdlc"
+                />
+                <div
+                  class="sc-dkzDqf iKvdlc"
+                />
+              </div>
+            </button>
+            <a
+              aria-label="Sitemap"
+              class="navigation-bar__burger-wrapper--no-js"
+              href="/site-map"
+            >
+              <button
+                aria-expanded="false"
+                aria-hidden="true"
+                aria-label="Menu"
+                class="sc-bczRLJ dIBDIK"
+                type="button"
+              >
+                <div
+                  class="sc-gsnTZi lbGBid"
+                >
+                  <div
+                    class="sc-dkzDqf iKvdlc"
+                  />
+                  <div
+                    class="sc-dkzDqf iKvdlc"
+                  />
+                  <div
+                    class="sc-dkzDqf iKvdlc"
+                  />
+                </div>
+              </button>
+            </a>
+          </div>
+          <div
+            class="logo__container logo__container--no-padding"
+          >
+            <a
+              class="logo__a"
+              href="/"
+            >
+              <h1
+                aria-label="Home page"
+                class="logo__heading logo__subheading--animated logo__heading--pride logo__heading--no-padding"
+                role="button"
+              >
+                &lt;G/&gt;
+              </h1>
+            </a>
+          </div>
+          <div
+            class="sc-iBkjds hiohco"
+          />
         </div>
         <div
-          class="navigation-bar__logo-container"
+          class="sc-ftvSup fXmYLN"
         >
           <div
             class="logo__container logo__container--no-padding"
@@ -250,12 +605,53 @@ exports[`<Authenticator /> should render correctly with user 1`] = `
               </h1>
             </a>
           </div>
+          <a
+            aria-label="Blog"
+            class="button__a button__outer button__outer--dark-text button__outer--bouncy button__outer--link"
+            href="/blog"
+          >
+            <span
+              class="button__child"
+            >
+              Blog
+            </span>
+          </a>
+          <a
+            aria-label="Photography"
+            class="button__a button__outer button__outer--dark-text button__outer--bouncy button__outer--link"
+            href="/photography"
+          >
+            <span
+              class="button__child"
+            >
+              Photography
+            </span>
+          </a>
+          <a
+            aria-label="Work"
+            class="button__a button__outer button__outer--dark-text button__outer--bouncy button__outer--link"
+            href="/work"
+          >
+            <span
+              class="button__child"
+            >
+              Work
+            </span>
+          </a>
+          <a
+            aria-label="Contact"
+            class="button__a button__outer button__outer--dark-text button__outer--bouncy button__outer--link"
+            href="/contact"
+          >
+            <span
+              class="button__child"
+            >
+              Contact
+            </span>
+          </a>
         </div>
-        <div
-          class="navigation-bar__mobile-container navigation-bar__mobile-container--rgt"
-        />
       </div>
-    </div>
+    </nav>
   </header>
 </div>
 `;
