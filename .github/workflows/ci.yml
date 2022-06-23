@@ -77,7 +77,10 @@ jobs:
           echo "ZIP_FILE_NAME=$ZIP_FILE_NAME" >> $GITHUB_ENV
 
       - name: install system dependencies
-        run: sudo apt install -y qemu-user-static binfmt-support
+        run: |
+          sudo apt-get update
+          sudo apt install -y qemu-user-static binfmt-support
+
 
       - name: build docker image
         env:
