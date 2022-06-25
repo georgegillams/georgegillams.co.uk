@@ -113,6 +113,11 @@ const SiteMap = props => {
           <TextLink href="/photography">Photography</TextLink>
         </Paragraph>
       </Subsection>
+      <Subsection anchor={false} name="Medals 🏅" className={getClassName('site-map__section')}>
+        <Paragraph>
+          <TextLink href="/medals">Medals</TextLink>
+        </Paragraph>
+      </Subsection>
       <Subsection anchor={false} name="Work 📱" className={getClassName('site-map__section')}>
         <Paragraph>
           <TextLink href="/work">Overview</TextLink>

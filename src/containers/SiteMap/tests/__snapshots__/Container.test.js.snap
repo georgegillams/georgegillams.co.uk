@@ -172,6 +172,26 @@ exports[`<SiteMap /> should render correctly - index 1`] = `
   >
     <h3
       class="subsection__heading"
+      id="medals-🏅"
+    >
+      Medals 🏅
+    </h3>
+    <span
+      class="sc-bczRLJ bhVmoO"
+    >
+      <a
+        class="sc-ftvSup bvTsjB"
+        href="/medals"
+      >
+        Medals
+      </a>
+    </span>
+  </div>
+  <div
+    class="subsection__outer site-map__section"
+  >
+    <h3
+      class="subsection__heading"
       id="work-📱"
     >
       Work 📱
@@ -1023,6 +1043,26 @@ exports[`<SiteMap /> should render correctly 1`] = `
   >
     <h3
       class="subsection__heading"
+      id="medals-🏅"
+    >
+      Medals 🏅
+    </h3>
+    <span
+      class="sc-bczRLJ bhVmoO"
+    >
+      <a
+        class="sc-ftvSup bvTsjB"
+        href="/medals"
+      >
+        Medals
+      </a>
+    </span>
+  </div>
+  <div
+    class="subsection__outer site-map__section"
+  >
+    <h3
+      class="subsection__heading"
       id="work-📱"
     >
       Work 📱
@@ -1785,6 +1825,26 @@ exports[`<SiteMap /> should render correctly with blogs 1`] = `
         href="/photography"
       >
         Photography
+      </a>
+    </span>
+  </div>
+  <div
+    class="subsection__outer site-map__section"
+  >
+    <h3
+      class="subsection__heading"
+      id="medals-🏅"
+    >
+      Medals 🏅
+    </h3>
+    <span
+      class="sc-bczRLJ bhVmoO"
+    >
+      <a
+        class="sc-ftvSup bvTsjB"
+        href="/medals"
+      >
+        Medals
       </a>
     </span>
   </div>
@@ -2607,6 +2667,26 @@ exports[`<SiteMap /> should render correctly with blogs and admin user 1`] = `
   >
     <h3
       class="subsection__heading"
+      id="medals-🏅"
+    >
+      Medals 🏅
+    </h3>
+    <span
+      class="sc-bczRLJ bhVmoO"
+    >
+      <a
+        class="sc-ftvSup bvTsjB"
+        href="/medals"
+      >
+        Medals
+      </a>
+    </span>
+  </div>
+  <div
+    class="subsection__outer site-map__section"
+  >
+    <h3
+      class="subsection__heading"
       id="work-📱"
     >
       Work 📱
@@ -3370,6 +3450,26 @@ exports[`<SiteMap /> should render correctly with ssrBlogs 1`] = `
         href="/photography"
       >
         Photography
+      </a>
+    </span>
+  </div>
+  <div
+    class="subsection__outer site-map__section"
+  >
+    <h3
+      class="subsection__heading"
+      id="medals-🏅"
+    >
+      Medals 🏅
+    </h3>
+    <span
+      class="sc-bczRLJ bhVmoO"
+    >
+      <a
+        class="sc-ftvSup bvTsjB"
+        href="/medals"
+      >
+        Medals
       </a>
     </span>
   </div>
