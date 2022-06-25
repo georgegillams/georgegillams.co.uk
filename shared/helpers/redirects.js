@@ -33,6 +33,7 @@ const redirects = [
   { from: '/articles/list', to: '/blog' },
   { from: '/articles', to: '/blog' },
   { from: '/net-neutrality', to: '/blog/net-neutrality' },
+  { from: '/work/side-projects', to: '/work' },
 
   { to: '/blog', from: '/blog/view' },
   { to: '/travel', from: '/travel/view' },
