@@ -32,7 +32,7 @@ class MyDocument extends Document {
 
   render() {
     return (
-      <Html lang="en-GB" class={NO_JS_CLASSNAME}>
+      <Html lang="en-GB" className={NO_JS_CLASSNAME}>
         <Head>
           <link rel="apple-touch-icon" sizes="180x180" href="/static/favicon/favicon-180x180.png" />
 

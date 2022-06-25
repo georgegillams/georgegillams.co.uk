@@ -22,7 +22,7 @@ const applySecurityPractises = server => {
     frameAncestors: ["'self'"],
     imgSrc: ["'self'", 'https:', 'data:'],
     objectSrc: ["'none'"],
-    scriptSrc: ["'self'"],
+    scriptSrc: ["'self'", "'unsafe-inline'"],
     styleSrc: ["'self'", 'https:', "'unsafe-inline'"],
   };
 
