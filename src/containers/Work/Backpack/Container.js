@@ -17,13 +17,14 @@ const WorkBackpack = () => (
         <TextLink hrefExternal href="https://backpack.github.io/">
           Backpack
         </TextLink>{' '}
-        is Skyscanner&#39;s open-source design system which supports 4 platforms (Android, iOS, React Native and Web).
-        Our work which combines Design and Engineering in equal measures enables fast development and reduces effort
-        duplication.
+        is Skyscanner&#39;s open-source design system which supports 4 platforms (Android, iOS, React Native and Web). I
+        spent 4 years working on the Web and native iOS offering, combining Design and Engineering in equal measures
+        enables fast development and reduce effort duplication.
         <br />
         <br />
-        I work mostly on iOS and web (React) components, and occasionally do work to bridge components from native iOS
-        to React Native.
+        During my time at Skyscanner I led a number of technical initiatives to improve the accessibility of the design
+        system, and worked closely with the accessibility lead to embed accessibility into our design and engineering
+        culture.
         <br />
         <br />
         <Image

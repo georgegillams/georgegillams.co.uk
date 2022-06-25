@@ -226,13 +226,6 @@ exports[`<SiteMap /> should render correctly - index 1`] = `
       >
         EPICC
       </a>
-      <br />
-      <a
-        class="sc-ftvSup bvTsjB"
-        href="/work/side-projects"
-      >
-        Side projects
-      </a>
     </span>
   </div>
   <div
@@ -703,6 +696,15 @@ exports[`<SiteMap /> should render correctly - index 1`] = `
           href="/net-neutrality"
         >
           /net-neutrality ⇒ /blog/net-neutrality
+        </a>
+        <br />
+      </div>
+      <div>
+        <a
+          class="sc-ftvSup bvTsjB"
+          href="/work/side-projects"
+        >
+          /work/side-projects ⇒ /work
         </a>
         <br />
       </div>
@@ -1097,13 +1099,6 @@ exports[`<SiteMap /> should render correctly 1`] = `
       >
         EPICC
       </a>
-      <br />
-      <a
-        class="sc-ftvSup bvTsjB"
-        href="/work/side-projects"
-      >
-        Side projects
-      </a>
     </span>
   </div>
   <div
@@ -1574,6 +1569,15 @@ exports[`<SiteMap /> should render correctly 1`] = `
           href="/net-neutrality"
         >
           /net-neutrality ⇒ /blog/net-neutrality
+        </a>
+        <br />
+      </div>
+      <div>
+        <a
+          class="sc-ftvSup bvTsjB"
+          href="/work/side-projects"
+        >
+          /work/side-projects ⇒ /work
         </a>
         <br />
       </div>
@@ -1887,13 +1891,6 @@ exports[`<SiteMap /> should render correctly with blogs 1`] = `
       >
         EPICC
       </a>
-      <br />
-      <a
-        class="sc-ftvSup bvTsjB"
-        href="/work/side-projects"
-      >
-        Side projects
-      </a>
     </span>
   </div>
   <div
@@ -2364,6 +2361,15 @@ exports[`<SiteMap /> should render correctly with blogs 1`] = `
           href="/net-neutrality"
         >
           /net-neutrality ⇒ /blog/net-neutrality
+        </a>
+        <br />
+      </div>
+      <div>
+        <a
+          class="sc-ftvSup bvTsjB"
+          href="/work/side-projects"
+        >
+          /work/side-projects ⇒ /work
         </a>
         <br />
       </div>
@@ -2721,13 +2727,6 @@ exports[`<SiteMap /> should render correctly with blogs and admin user 1`] = `
       >
         EPICC
       </a>
-      <br />
-      <a
-        class="sc-ftvSup bvTsjB"
-        href="/work/side-projects"
-      >
-        Side projects
-      </a>
     </span>
   </div>
   <div
@@ -3198,6 +3197,15 @@ exports[`<SiteMap /> should render correctly with blogs and admin user 1`] = `
           href="/net-neutrality"
         >
           /net-neutrality ⇒ /blog/net-neutrality
+        </a>
+        <br />
+      </div>
+      <div>
+        <a
+          class="sc-ftvSup bvTsjB"
+          href="/work/side-projects"
+        >
+          /work/side-projects ⇒ /work
         </a>
         <br />
       </div>
@@ -3512,13 +3520,6 @@ exports[`<SiteMap /> should render correctly with ssrBlogs 1`] = `
       >
         EPICC
       </a>
-      <br />
-      <a
-        class="sc-ftvSup bvTsjB"
-        href="/work/side-projects"
-      >
-        Side projects
-      </a>
     </span>
   </div>
   <div
@@ -3989,6 +3990,15 @@ exports[`<SiteMap /> should render correctly with ssrBlogs 1`] = `
           href="/net-neutrality"
         >
           /net-neutrality ⇒ /blog/net-neutrality
+        </a>
+        <br />
+      </div>
+      <div>
+        <a
+          class="sc-ftvSup bvTsjB"
+          href="/work/side-projects"
+        >
+          /work/side-projects ⇒ /work
         </a>
         <br />
       </div>
