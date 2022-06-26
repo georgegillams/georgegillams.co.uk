@@ -1,4 +1,3 @@
-import appConfig from 'helpers/appConfig';
 import nodemailer from 'nodemailer';
 
 import logger from 'server-utils/common/logger';
@@ -6,8 +5,8 @@ import logger from 'server-utils/common/logger';
 let mailConfig = null;
 let transporter = null;
 
-const user = process.env[`${appConfig.projectName}_GSUITE_EMAIL`];
-const pass = process.env[`${appConfig.projectName}_GSUITE_APP_PASSWORD`];
+const user = process.env.GSUITE_EMAIL;
+const pass = process.env.GSUITE_APP_PASSWORD;
 
 if (user && pass) {
   mailConfig = {
