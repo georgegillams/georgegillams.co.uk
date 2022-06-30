@@ -20,9 +20,9 @@ const SplitDetailView = props => {
       <div className={getClassName('split-detail-view__list-view')}>{listView}</div>
       {detailView && (
         <div className={getClassName('split-detail-view__detail-view')}>
-          <Button className={getClassName('split-detail-view__close-button')} href={closeLink}>
-            Close
-          </Button>
+          <div className={getClassName('split-detail-view__close-button-container')}>
+            <Button href={closeLink}>Close</Button>
+          </div>
           <div className={getClassName('split-detail-view__detail-view-content')}>{detailView}</div>
         </div>
       )}

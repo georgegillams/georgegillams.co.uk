@@ -14,7 +14,7 @@ exports[`<ErrorDisplay  /> Should render with empty error object and message 1`]
     class="sc-gsnTZi bUAnoQ"
   >
     <span
-      class="sc-bczRLJ cuIShi"
+      class="sc-bczRLJ vDmnW"
     >
       Test message
     </span>
@@ -28,7 +28,7 @@ exports[`<ErrorDisplay  /> Should render with empty error object and no message 
     class="sc-gsnTZi bUAnoQ"
   >
     <span
-      class="sc-bczRLJ cuIShi"
+      class="sc-bczRLJ vDmnW"
     />
   </span>
 </div>
@@ -40,7 +40,7 @@ exports[`<ErrorDisplay  /> Should render with well-defined error object and mess
     class="sc-gsnTZi bUAnoQ"
   >
     <span
-      class="sc-bczRLJ cuIShi"
+      class="sc-bczRLJ vDmnW"
     >
       Test message
       <br />
@@ -56,7 +56,7 @@ exports[`<ErrorDisplay  /> Should render with well-defined error object and no m
     class="sc-gsnTZi bUAnoQ"
   >
     <span
-      class="sc-bczRLJ cuIShi"
+      class="sc-bczRLJ vDmnW"
     >
       Test error message
     </span>

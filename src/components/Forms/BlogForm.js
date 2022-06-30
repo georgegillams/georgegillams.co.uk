@@ -72,13 +72,6 @@ const BlogForm = props => {
           show: true,
         },
         {
-          id: 'showInTravelBlogsList',
-          name: 'Show in travel blogs list',
-          validationRegex: null,
-          type: 'CHECKBOX',
-          show: true,
-        },
-        {
           id: 'blogImageBorderColor',
           name: 'Blog image border color',
           validationRegex: STRING_REGEX,

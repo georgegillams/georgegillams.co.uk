@@ -11,12 +11,12 @@ exports[`<Support /> should render correctly - index 1`] = `
     class="support__controls"
   >
     <button
-      class="button__outer button__outer--regular button__outer--no-bouncy button__outer--disabled"
+      class="sc-crXcEl eZWdef outer"
       disabled=""
       type="button"
     >
       <span
-        class="button__child"
+        class="sc-breuTD powPW"
       >
         Reload
       </span>
@@ -44,12 +44,12 @@ exports[`<Support /> should render correctly when loading 1`] = `
     class="support__controls"
   >
     <button
-      class="button__outer button__outer--regular button__outer--no-bouncy button__outer--disabled"
+      class="sc-crXcEl eZWdef outer"
       disabled=""
       type="button"
     >
       <span
-        class="button__child"
+        class="sc-breuTD powPW"
       >
         Reload
       </span>
@@ -77,11 +77,11 @@ exports[`<Support /> should render correctly with admin 1`] = `
     class="support__controls"
   >
     <button
-      class="button__outer button__outer--regular button__outer--no-bouncy"
+      class="sc-crXcEl kEYxNj outer"
       type="button"
     >
       <span
-        class="button__child"
+        class="sc-breuTD powPW"
       >
         Reload
       </span>
@@ -122,11 +122,11 @@ exports[`<Support /> should render correctly with admin and createLinkError 1`] 
     class="support__controls"
   >
     <button
-      class="button__outer button__outer--regular button__outer--no-bouncy"
+      class="sc-crXcEl kEYxNj outer"
       type="button"
     >
       <span
-        class="button__child"
+        class="sc-breuTD powPW"
       >
         Reload
       </span>
@@ -153,7 +153,7 @@ exports[`<Support /> should render correctly with admin and createLinkError 1`] 
       class="sc-jqUVSM iuHAUr"
     >
       <span
-        class="sc-crXcEl dggGEa"
+        class="sc-hAZoDl hWlXdd"
       >
         Failed to add link
         <br />
@@ -178,11 +178,11 @@ exports[`<Support /> should render correctly with admin and deleteLinkError 1`] 
     class="support__controls"
   >
     <button
-      class="button__outer button__outer--regular button__outer--no-bouncy"
+      class="sc-crXcEl kEYxNj outer"
       type="button"
     >
       <span
-        class="button__child"
+        class="sc-breuTD powPW"
       >
         Reload
       </span>
@@ -209,7 +209,7 @@ exports[`<Support /> should render correctly with admin and deleteLinkError 1`] 
       class="sc-jqUVSM iuHAUr"
     >
       <span
-        class="sc-crXcEl dggGEa"
+        class="sc-hAZoDl hWlXdd"
       >
         Failed to delete link
         <br />
@@ -234,11 +234,11 @@ exports[`<Support /> should render correctly with initial state 1`] = `
     class="support__controls"
   >
     <button
-      class="button__outer button__outer--regular button__outer--no-bouncy"
+      class="sc-crXcEl kEYxNj outer"
       type="button"
     >
       <span
-        class="button__child"
+        class="sc-breuTD powPW"
       >
         Reload
       </span>
@@ -266,11 +266,11 @@ exports[`<Support /> should render correctly with links 1`] = `
     class="support__controls"
   >
     <button
-      class="button__outer button__outer--regular button__outer--no-bouncy"
+      class="sc-crXcEl kEYxNj outer"
       type="button"
     >
       <span
-        class="button__child"
+        class="sc-breuTD powPW"
       >
         Reload
       </span>
@@ -370,11 +370,11 @@ exports[`<Support /> should render correctly with loadError 1`] = `
     class="support__controls"
   >
     <button
-      class="button__outer button__outer--regular button__outer--no-bouncy"
+      class="sc-crXcEl kEYxNj outer"
       type="button"
     >
       <span
-        class="button__child"
+        class="sc-breuTD powPW"
       >
         Reload
       </span>
@@ -384,7 +384,7 @@ exports[`<Support /> should render correctly with loadError 1`] = `
     class="sc-jqUVSM iuHAUr"
   >
     <span
-      class="sc-crXcEl dggGEa"
+      class="sc-hAZoDl hWlXdd"
     >
       The support session failed to load
       <br />

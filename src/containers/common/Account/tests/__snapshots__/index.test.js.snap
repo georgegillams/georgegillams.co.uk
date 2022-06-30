@@ -48,21 +48,21 @@ exports[`<Account /> should render correctly with initial state 1`] = `
       class="account__control-panel"
     >
       <button
-        class="button__outer button__outer--regular button__outer--no-bouncy account__button"
+        class="sc-crXcEl kEYxNj account__button"
         type="button"
       >
         <span
-          class="button__child"
+          class="sc-breuTD powPW"
         >
           Get a new verification email
         </span>
       </button>
       <button
-        class="button__outer button__outer--destructive button__outer--no-bouncy button__outer--no-bouncy--destructive"
+        class="sc-crXcEl iLdlBe outer"
         type="button"
       >
         <span
-          class="button__child"
+          class="sc-breuTD powPW"
         >
           Logout
         </span>
@@ -86,21 +86,21 @@ exports[`<Account /> should render correctly with initial state 2`] = `
       class="account__control-panel"
     >
       <button
-        class="button__outer button__outer--regular button__outer--no-bouncy account__button"
+        class="sc-crXcEl kEYxNj account__button"
         type="button"
       >
         <span
-          class="button__child"
+          class="sc-breuTD powPW"
         >
           Get a new verification email
         </span>
       </button>
       <button
-        class="button__outer button__outer--destructive button__outer--no-bouncy button__outer--no-bouncy--destructive"
+        class="sc-crXcEl iLdlBe outer"
         type="button"
       >
         <span
-          class="button__child"
+          class="sc-breuTD powPW"
         >
           Logout
         </span>
@@ -124,21 +124,21 @@ exports[`<Account /> should render correctly with logOutError 1`] = `
       class="account__control-panel"
     >
       <button
-        class="button__outer button__outer--regular button__outer--no-bouncy account__button"
+        class="sc-crXcEl kEYxNj account__button"
         type="button"
       >
         <span
-          class="button__child"
+          class="sc-breuTD powPW"
         >
           Get a new verification email
         </span>
       </button>
       <button
-        class="button__outer button__outer--destructive button__outer--no-bouncy button__outer--no-bouncy--destructive"
+        class="sc-crXcEl iLdlBe outer"
         type="button"
       >
         <span
-          class="button__child"
+          class="sc-breuTD powPW"
         >
           Logout
         </span>
@@ -162,21 +162,21 @@ exports[`<Account /> should render correctly with logOutResult 1`] = `
       class="account__control-panel"
     >
       <button
-        class="button__outer button__outer--regular button__outer--no-bouncy account__button"
+        class="sc-crXcEl kEYxNj account__button"
         type="button"
       >
         <span
-          class="button__child"
+          class="sc-breuTD powPW"
         >
           Get a new verification email
         </span>
       </button>
       <button
-        class="button__outer button__outer--destructive button__outer--no-bouncy button__outer--no-bouncy--destructive"
+        class="sc-crXcEl iLdlBe outer"
         type="button"
       >
         <span
-          class="button__child"
+          class="sc-breuTD powPW"
         >
           Logout
         </span>
@@ -200,28 +200,28 @@ exports[`<Account /> should render correctly with loggingOut=true 1`] = `
       class="account__control-panel"
     >
       <button
-        class="button__outer button__outer--regular button__outer--no-bouncy account__button"
+        class="sc-crXcEl kEYxNj account__button"
         type="button"
       >
         <span
-          class="button__child"
+          class="sc-breuTD powPW"
         >
           Get a new verification email
         </span>
       </button>
       <button
-        class="button__outer button__outer--destructive button__outer--no-bouncy button__outer--no-bouncy--destructive button__outer--disabled"
+        class="sc-crXcEl bdmsEy outer"
         disabled=""
         type="button"
       >
         <span
-          class="button__child button__child--loading"
+          class="sc-breuTD dwJTpx"
         >
           Logout
         </span>
         <div
           aria-hidden="true"
-          class="button__loading-spinner"
+          class="sc-ksZaOG gstvZW button__loading-spinner"
         >
           <div
             class="sc-kDDrLX kWUBZq"
@@ -306,21 +306,21 @@ exports[`<Account /> should render correctly with requestVerificationEmailError 
       class="account__control-panel"
     >
       <button
-        class="button__outer button__outer--regular button__outer--no-bouncy account__button"
+        class="sc-crXcEl kEYxNj account__button"
         type="button"
       >
         <span
-          class="button__child"
+          class="sc-breuTD powPW"
         >
           Get a new verification email
         </span>
       </button>
       <button
-        class="button__outer button__outer--destructive button__outer--no-bouncy button__outer--no-bouncy--destructive"
+        class="sc-crXcEl iLdlBe outer"
         type="button"
       >
         <span
-          class="button__child"
+          class="sc-breuTD powPW"
         >
           Logout
         </span>
@@ -344,21 +344,21 @@ exports[`<Account /> should render correctly with requestVerificationEmailResult
       class="account__control-panel"
     >
       <button
-        class="button__outer button__outer--regular button__outer--no-bouncy account__button"
+        class="sc-crXcEl kEYxNj account__button"
         type="button"
       >
         <span
-          class="button__child"
+          class="sc-breuTD powPW"
         >
           Get a new verification email
         </span>
       </button>
       <button
-        class="button__outer button__outer--destructive button__outer--no-bouncy button__outer--no-bouncy--destructive"
+        class="sc-crXcEl iLdlBe outer"
         type="button"
       >
         <span
-          class="button__child"
+          class="sc-breuTD powPW"
         >
           Logout
         </span>
@@ -382,18 +382,18 @@ exports[`<Account /> should render correctly with requestingVerificationEmail=tr
       class="account__control-panel"
     >
       <button
-        class="button__outer button__outer--regular button__outer--no-bouncy button__outer--disabled account__button"
+        class="sc-crXcEl eZWdef account__button"
         disabled=""
         type="button"
       >
         <span
-          class="button__child button__child--loading"
+          class="sc-breuTD dwJTpx"
         >
           Get a new verification email
         </span>
         <div
           aria-hidden="true"
-          class="button__loading-spinner"
+          class="sc-ksZaOG gstvZW button__loading-spinner"
         >
           <div
             class="sc-kDDrLX kWUBZq"
@@ -426,11 +426,11 @@ exports[`<Account /> should render correctly with requestingVerificationEmail=tr
         </div>
       </button>
       <button
-        class="button__outer button__outer--destructive button__outer--no-bouncy button__outer--no-bouncy--destructive"
+        class="sc-crXcEl iLdlBe outer"
         type="button"
       >
         <span
-          class="button__child"
+          class="sc-breuTD powPW"
         >
           Logout
         </span>
@@ -454,11 +454,11 @@ exports[`<Account /> should render correctly with user with emailVerified=true 1
       class="account__control-panel"
     >
       <button
-        class="button__outer button__outer--destructive button__outer--no-bouncy button__outer--no-bouncy--destructive"
+        class="sc-crXcEl iLdlBe outer"
         type="button"
       >
         <span
-          class="button__child"
+          class="sc-breuTD powPW"
         >
           Logout
         </span>

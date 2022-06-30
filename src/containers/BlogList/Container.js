@@ -1,32 +1,18 @@
 import React, { useEffect } from 'react';
 import PropTypes from 'prop-types';
-import { cssModules } from '@george-gillams/components/helpers/cssModules';
 import DebugObject from 'components/common/DebugObject';
 import LoadingCover from '@george-gillams/components/loading-cover';
 
 import BlogListSkeleton from './BlogListSkeleton';
-import BlogsNav from './BlogsNav';
 
 import { CreativeCommons } from 'components/CreativeCommons';
 import { BlogsList } from 'components/Blogs';
-import STYLES from './blogs-page.scss';
 import Head from 'next/head';
 import appConfig from 'helpers/appConfig';
-
-const getClassName = cssModules(STYLES);
+import { StyledPageContainer } from './container.styles';
 
 const BlogList = props => {
-  const {
-    ssrBlogs,
-    loadBlogs,
-    deleteBlog,
-    filter,
-    authenticatorState,
-    blogListState,
-    selectedNav,
-    linkPrefix,
-    className,
-  } = props;
+  const { ssrBlogs, loadBlogs, deleteBlog, filter, authenticatorState, blogListState, linkPrefix } = props;
 
   useEffect(() => {
     loadBlogs();
@@ -37,44 +23,40 @@ const BlogList = props => {
     filteredBlogs = filteredBlogs.filter(filter);
   }
 
-  const outerClassNameFinal = [getClassName('blogs-page__wrapper')];
-
-  if (className) {
-    outerClassNameFinal.push(className);
-  }
-
   const admin = authenticatorState.user && authenticatorState.user.admin;
 
   return (
     <>
-      <DebugObject
-        debugTitle="Blogs"
-        debugObject={{
-          loadBlogs,
-          deleteBlog,
-          filter,
-          blogListState,
-          selectedNav,
-          linkPrefix,
-          className,
-        }}
-      />
-      <Head>
-        <title>{`${selectedNav} - ${appConfig.projectTitle}`}</title>
-      </Head>
-      <BlogsNav className={getClassName('blogs-page__navigation')} selected={selectedNav} />
-      <LoadingCover loadingSkeleton={BlogListSkeleton} loading={!filteredBlogs} error={!!blogListState.blogsLoadError}>
-        <>
-          {filteredBlogs && (
-            <BlogsList
-              admin={admin}
-              blogs={filteredBlogs}
-              linkPrefix={linkPrefix}
-              deleteBlog={admin ? deleteBlog : null}
-            />
-          )}
-        </>
-      </LoadingCover>
+      <StyledPageContainer>
+        <DebugObject
+          debugTitle="Blogs"
+          debugObject={{
+            loadBlogs,
+            deleteBlog,
+            filter,
+            blogListState,
+            linkPrefix,
+          }}
+        />
+        <Head>
+          <title>{`Blog - ${appConfig.projectTitle}`}</title>
+        </Head>
+        <LoadingCover
+          loadingSkeleton={BlogListSkeleton}
+          loading={!filteredBlogs}
+          error={!!blogListState.blogsLoadError}>
+          <>
+            {filteredBlogs && (
+              <BlogsList
+                admin={admin}
+                blogs={filteredBlogs}
+                linkPrefix={linkPrefix}
+                deleteBlog={admin ? deleteBlog : null}
+              />
+            )}
+          </>
+        </LoadingCover>
+      </StyledPageContainer>
       <CreativeCommons />
     </>
   );
@@ -95,8 +77,6 @@ BlogList.propTypes = {
   linkPrefix: PropTypes.string,
   loadBlogs: PropTypes.func.isRequired,
   deleteBlog: PropTypes.func.isRequired,
-  className: PropTypes.string,
-  selectedNav: PropTypes.string,
 };
 
 BlogList.defaultProps = {
@@ -104,8 +84,6 @@ BlogList.defaultProps = {
   ssrBlogs: null,
   filter: null,
   linkPrefix: null,
-  className: null,
-  selectedNav: null,
 };
 
 export default BlogList;

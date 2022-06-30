@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { cssModules } from '@george-gillams/components/helpers/cssModules';
+import { BUTTON_TYPES } from '@george-gillams/components/button/constants';
 
 import BlogCard from './BlogCard';
 import STYLES from './blogs-list.scss';
@@ -26,7 +27,7 @@ const BlogsList = props => {
           {deleteBlog && (
             <Button
               key={`delete_button_${blog.id}`}
-              destructive
+              buttonType={BUTTON_TYPES.destructive}
               onClick={() => deleteBlog(blog.id)}
               disabled={blog.deleted}
               className={getClassName('blogs-list__control')}>
