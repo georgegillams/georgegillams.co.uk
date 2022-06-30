@@ -12,19 +12,19 @@ exports[`<CreateNotificationForm /> Should render correctly 1`] = `
       Message
     </label>
     <div
-      class="sc-hKMtZM fMOyKb forms__component forms__component__text-box"
+      class="sc-iBkjds hDuMmX forms__component forms__component__text-box"
       placeholder="Message"
     >
       <input
         aria-disabled="false"
         aria-invalid="false"
-        class="sc-papXJ cgekWF"
+        class="sc-crXcEl dKPdSV"
         id="message_FORM_ID"
         name="Message"
         value=""
       />
       <svg
-        class="sc-dkzDqf ibQdgf sc-jqUVSM hfMxIT"
+        class="sc-gKXOVf ktoyia sc-evZas bOUPru"
         height="18"
         viewBox="0 0 24 24"
         width="18"
@@ -46,12 +46,12 @@ exports[`<CreateNotificationForm /> Should render correctly 1`] = `
       placeholder="Type"
     >
       <div
-        class="sc-hKMtZM fMOyKb"
+        class="sc-iBkjds hDuMmX"
       >
         <select
           aria-disabled="false"
           aria-invalid="false"
-          class="sc-kDDrLX dxNyur"
+          class="sc-breuTD dFnzpG"
           id="type_FORM_ID"
           name="Type"
         >
@@ -72,7 +72,7 @@ exports[`<CreateNotificationForm /> Should render correctly 1`] = `
           </option>
         </select>
         <svg
-          class="sc-dkzDqf ibQdgf sc-jqUVSM hfMxIT"
+          class="sc-gKXOVf ktoyia sc-evZas bOUPru"
           height="18"
           viewBox="0 0 24 24"
           width="18"
@@ -85,11 +85,11 @@ exports[`<CreateNotificationForm /> Should render correctly 1`] = `
       </div>
     </div>
     <button
-      class="button__outer button__outer--regular button__outer--no-bouncy forms__component forms__component__button"
+      class="sc-dkzDqf kHuqxu forms__component forms__component__button"
       type="button"
     >
       <span
-        class="button__child"
+        class="sc-eCYdqJ ghZAyu"
       >
         Create notification
       </span>

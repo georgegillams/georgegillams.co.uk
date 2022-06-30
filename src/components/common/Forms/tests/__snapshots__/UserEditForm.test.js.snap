@@ -12,20 +12,20 @@ exports[`<UserEditForm /> Should render correctly 1`] = `
       Display name
     </label>
     <div
-      class="sc-hKMtZM fMOyKb forms__component forms__component__text-box"
+      class="sc-iBkjds hDuMmX forms__component forms__component__text-box"
       placeholder="Display name"
     >
       <input
         aria-disabled="false"
         aria-invalid="false"
-        class="sc-papXJ cgekWF"
+        class="sc-crXcEl dKPdSV"
         id="uname_FORM_ID"
         name="Display name"
         spellcheck="false"
         value=""
       />
       <svg
-        class="sc-dkzDqf ibQdgf sc-jqUVSM hfMxIT"
+        class="sc-gKXOVf ktoyia sc-evZas bOUPru"
         height="18"
         viewBox="0 0 24 24"
         width="18"
@@ -43,21 +43,21 @@ exports[`<UserEditForm /> Should render correctly 1`] = `
       Real name
     </label>
     <div
-      class="sc-hKMtZM fMOyKb forms__component forms__component__text-box"
+      class="sc-iBkjds hDuMmX forms__component forms__component__text-box"
       placeholder="Real name"
     >
       <input
         aria-disabled="false"
         aria-invalid="false"
         autofill="name"
-        class="sc-papXJ cgekWF"
+        class="sc-crXcEl dKPdSV"
         id="name_FORM_ID"
         name="Real name"
         spellcheck="false"
         value=""
       />
       <svg
-        class="sc-dkzDqf ibQdgf sc-jqUVSM hfMxIT"
+        class="sc-gKXOVf ktoyia sc-evZas bOUPru"
         height="18"
         viewBox="0 0 24 24"
         width="18"
@@ -75,21 +75,21 @@ exports[`<UserEditForm /> Should render correctly 1`] = `
       Email
     </label>
     <div
-      class="sc-hKMtZM fMOyKb forms__component forms__component__text-box"
+      class="sc-iBkjds hDuMmX forms__component forms__component__text-box"
       placeholder="Email"
     >
       <input
         aria-disabled="false"
         aria-invalid="false"
         autofill="email"
-        class="sc-papXJ cgekWF"
+        class="sc-crXcEl dKPdSV"
         id="email_FORM_ID"
         name="Email"
         spellcheck="false"
         value=""
       />
       <svg
-        class="sc-dkzDqf ibQdgf sc-jqUVSM hfMxIT"
+        class="sc-gKXOVf ktoyia sc-evZas bOUPru"
         height="18"
         viewBox="0 0 24 24"
         width="18"
@@ -101,11 +101,11 @@ exports[`<UserEditForm /> Should render correctly 1`] = `
       </svg>
     </div>
     <button
-      class="button__outer button__outer--regular button__outer--no-bouncy forms__component forms__component__button"
+      class="sc-dkzDqf kHuqxu forms__component forms__component__button"
       type="button"
     >
       <span
-        class="button__child"
+        class="sc-eCYdqJ ghZAyu"
       >
         Update
       </span>
@@ -126,20 +126,20 @@ exports[`<UserEditForm /> Should render correctly with admin controls shown 1`] 
       Display name
     </label>
     <div
-      class="sc-hKMtZM fMOyKb forms__component forms__component__text-box"
+      class="sc-iBkjds hDuMmX forms__component forms__component__text-box"
       placeholder="Display name"
     >
       <input
         aria-disabled="false"
         aria-invalid="false"
-        class="sc-papXJ cgekWF"
+        class="sc-crXcEl dKPdSV"
         id="uname_FORM_ID"
         name="Display name"
         spellcheck="false"
         value=""
       />
       <svg
-        class="sc-dkzDqf ibQdgf sc-jqUVSM hfMxIT"
+        class="sc-gKXOVf ktoyia sc-evZas bOUPru"
         height="18"
         viewBox="0 0 24 24"
         width="18"
@@ -157,21 +157,21 @@ exports[`<UserEditForm /> Should render correctly with admin controls shown 1`] 
       Real name
     </label>
     <div
-      class="sc-hKMtZM fMOyKb forms__component forms__component__text-box"
+      class="sc-iBkjds hDuMmX forms__component forms__component__text-box"
       placeholder="Real name"
     >
       <input
         aria-disabled="false"
         aria-invalid="false"
         autofill="name"
-        class="sc-papXJ cgekWF"
+        class="sc-crXcEl dKPdSV"
         id="name_FORM_ID"
         name="Real name"
         spellcheck="false"
         value=""
       />
       <svg
-        class="sc-dkzDqf ibQdgf sc-jqUVSM hfMxIT"
+        class="sc-gKXOVf ktoyia sc-evZas bOUPru"
         height="18"
         viewBox="0 0 24 24"
         width="18"
@@ -189,21 +189,21 @@ exports[`<UserEditForm /> Should render correctly with admin controls shown 1`] 
       Email
     </label>
     <div
-      class="sc-hKMtZM fMOyKb forms__component forms__component__text-box"
+      class="sc-iBkjds hDuMmX forms__component forms__component__text-box"
       placeholder="Email"
     >
       <input
         aria-disabled="false"
         aria-invalid="false"
         autofill="email"
-        class="sc-papXJ cgekWF"
+        class="sc-crXcEl dKPdSV"
         id="email_FORM_ID"
         name="Email"
         spellcheck="false"
         value=""
       />
       <svg
-        class="sc-dkzDqf ibQdgf sc-jqUVSM hfMxIT"
+        class="sc-gKXOVf ktoyia sc-evZas bOUPru"
         height="18"
         viewBox="0 0 24 24"
         width="18"
@@ -215,21 +215,21 @@ exports[`<UserEditForm /> Should render correctly with admin controls shown 1`] 
       </svg>
     </div>
     <label
-      class="sc-eCYdqJ hGxLib forms__component"
+      class="sc-ftvSup bMRhqZ forms__component"
       id="admin_FORM_ID"
     >
       <div
-        class="sc-jSMfEi gYtFJK"
+        class="sc-papXJ gtFCxX"
       >
         <input
           aria-invalid="false"
           aria-label="Is admin"
-          class="sc-gKXOVf XFKMS"
+          class="sc-jqUVSM hocLPL"
           name="Is admin"
           type="checkbox"
         />
         <svg
-          class="sc-dkzDqf ibQdgf sc-iBkjds iaHuiq"
+          class="sc-gKXOVf ktoyia sc-kDDrLX bmdoJK"
           height="18"
           viewBox="0 0 24 24"
           width="18"
@@ -242,17 +242,17 @@ exports[`<UserEditForm /> Should render correctly with admin controls shown 1`] 
       </div>
       <div
         aria-hidden="true"
-        class="sc-ftvSup jziudT"
+        class="sc-iqcoie bBXilN"
       >
         Is admin
       </div>
     </label>
     <button
-      class="button__outer button__outer--regular button__outer--no-bouncy forms__component forms__component__button"
+      class="sc-dkzDqf kHuqxu forms__component forms__component__button"
       type="button"
     >
       <span
-        class="button__child"
+        class="sc-eCYdqJ ghZAyu"
       >
         Update
       </span>

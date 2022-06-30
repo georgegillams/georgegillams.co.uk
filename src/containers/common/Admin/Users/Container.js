@@ -15,6 +15,7 @@ import { withRouter } from 'next/router';
 import UserFilter, { filterUsers, defaultFilters } from './UserFilter';
 import { UserEditForm } from 'components/common/Forms';
 import ErrorDisplay from 'components/common/ErrorDisplay';
+import { BUTTON_TYPES } from '@george-gillams/components/button/constants';
 
 import AdminUsersAPIEntity from './AdminUsersAPIEntity';
 
@@ -147,7 +148,7 @@ const AdminUsers = props => {
         <div className={getClassName('admin-users__control-panel')}>
           <Button
             className={getClassName('admin-users__button')}
-            destructive
+            buttonType={BUTTON_TYPES.destructive}
             loading={requesting || removing}
             onClick={() => {
               requestMagicLink(detailUser);
@@ -156,7 +157,7 @@ const AdminUsers = props => {
           </Button>
           <Button
             className={getClassName('admin-users__button')}
-            destructive
+            buttonType={BUTTON_TYPES.destructive}
             loading={removing}
             onClick={() => remove(detailUser)}>
             Delete

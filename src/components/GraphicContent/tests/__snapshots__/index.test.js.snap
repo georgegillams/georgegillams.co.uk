@@ -25,11 +25,11 @@ exports[`<GraphicContent /> Should render correctly 1`] = `
         </div>
         <br />
         <button
-          class="button__outer button__outer--regular button__outer--no-bouncy graphic-content__text"
+          class="sc-dkzDqf kHuqxu graphic-content__text"
           type="button"
         >
           <span
-            class="button__child"
+            class="sc-eCYdqJ ghZAyu"
           >
             Show graphic content
           </span>
@@ -81,11 +81,11 @@ exports[`<GraphicContent /> Should render correctly with custom className 1`] = 
         </div>
         <br />
         <button
-          class="button__outer button__outer--regular button__outer--no-bouncy graphic-content__text"
+          class="sc-dkzDqf kHuqxu graphic-content__text"
           type="button"
         >
           <span
-            class="button__child"
+            class="sc-eCYdqJ ghZAyu"
           >
             Show graphic content
           </span>

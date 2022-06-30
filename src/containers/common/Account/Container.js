@@ -5,6 +5,7 @@ import LoadingCover from '@george-gillams/components/loading-cover';
 import DebugObject from 'components/common/DebugObject';
 import Paragraph from '@george-gillams/components/paragraph';
 import Button from 'components/common/Button';
+import { BUTTON_TYPES } from '@george-gillams/components/button/constants';
 import { setPostLoginRedirect } from 'client-utils/common/storageHelpers';
 
 import Skeleton from './Skeleton';
@@ -72,7 +73,10 @@ const Account = props => {
                 </Button>
               </>
             )}
-            <Button destructive loading={accountState && accountState.loggingOut} onClick={logout}>
+            <Button
+              buttonType={BUTTON_TYPES.destructive}
+              loading={accountState && accountState.loggingOut}
+              onClick={logout}>
               Logout
             </Button>
           </div>

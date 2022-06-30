@@ -70,21 +70,21 @@ exports[`<AdminAnalytics /> should render correctly with admin user 1`] = `
   </div>
   <div>
     <button
-      class="button__outer button__outer--regular button__outer--no-bouncy admin-analytics__control"
+      class="sc-iqcoie iDPilc admin-analytics__control"
       type="button"
     >
       <span
-        class="button__child"
+        class="sc-evZas bfIsxJ"
       >
         Reload analytics
       </span>
     </button>
     <button
-      class="button__outer button__outer--regular button__outer--no-bouncy admin-analytics__control"
+      class="sc-iqcoie iDPilc admin-analytics__control"
       type="button"
     >
       <span
-        class="button__child"
+        class="sc-evZas bfIsxJ"
       >
         Show filters
       </span>
@@ -113,21 +113,21 @@ exports[`<AdminAnalytics /> should render correctly with analytics 1`] = `
   </div>
   <div>
     <button
-      class="button__outer button__outer--regular button__outer--no-bouncy admin-analytics__control"
+      class="sc-iqcoie iDPilc admin-analytics__control"
       type="button"
     >
       <span
-        class="button__child"
+        class="sc-evZas bfIsxJ"
       >
         Reload analytics
       </span>
     </button>
     <button
-      class="button__outer button__outer--regular button__outer--no-bouncy admin-analytics__control"
+      class="sc-iqcoie iDPilc admin-analytics__control"
       type="button"
     >
       <span
-        class="button__child"
+        class="sc-evZas bfIsxJ"
       >
         Show filters
       </span>
@@ -209,31 +209,31 @@ exports[`<AdminAnalytics /> should render correctly with loadError 1`] = `
   </div>
   <div>
     <button
-      class="button__outer button__outer--regular button__outer--no-bouncy admin-analytics__control"
+      class="sc-iqcoie iDPilc admin-analytics__control"
       type="button"
     >
       <span
-        class="button__child"
+        class="sc-evZas bfIsxJ"
       >
         Reload analytics
       </span>
     </button>
     <button
-      class="button__outer button__outer--regular button__outer--no-bouncy admin-analytics__control"
+      class="sc-iqcoie iDPilc admin-analytics__control"
       type="button"
     >
       <span
-        class="button__child"
+        class="sc-evZas bfIsxJ"
       >
         Show filters
       </span>
     </button>
   </div>
   <span
-    class="sc-iqcoie fIUTrZ"
+    class="sc-ksZaOG cQKWUS"
   >
     <span
-      class="sc-evZas jWVitK"
+      class="sc-fnykZs UTXXK"
     >
       Could not load analytics
       <br />
@@ -263,18 +263,18 @@ exports[`<AdminAnalytics /> should render correctly with loading=true 1`] = `
   </div>
   <div>
     <button
-      class="button__outer button__outer--regular button__outer--no-bouncy button__outer--disabled admin-analytics__control"
+      class="sc-iqcoie kSTvtY admin-analytics__control"
       disabled=""
       type="button"
     >
       <span
-        class="button__child button__child--loading"
+        class="sc-evZas fLeWHK"
       >
         Reload analytics
       </span>
       <div
         aria-hidden="true"
-        class="button__loading-spinner"
+        class="sc-breuTD ewjWx button__loading-spinner"
       >
         <div
           class="sc-jqUVSM VvXWN"
@@ -307,11 +307,11 @@ exports[`<AdminAnalytics /> should render correctly with loading=true 1`] = `
       </div>
     </button>
     <button
-      class="button__outer button__outer--regular button__outer--no-bouncy admin-analytics__control"
+      class="sc-iqcoie iDPilc admin-analytics__control"
       type="button"
     >
       <span
-        class="button__child"
+        class="sc-evZas bfIsxJ"
       >
         Show filters
       </span>
@@ -335,7 +335,7 @@ exports[`<AdminAnalytics /> should render correctly with user 1`] = `
       Admin only
     </h2>
     <span
-      class="sc-iqcoie fIUTrZ"
+      class="sc-ksZaOG cQKWUS"
     >
       You need to be logged in with an admin account to view this content.
       <br />

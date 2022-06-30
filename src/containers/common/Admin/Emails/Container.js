@@ -11,6 +11,7 @@ import { setPostLoginRedirect } from 'client-utils/common/storageHelpers';
 import Skeleton from './Skeleton';
 import { withRouter } from 'next/router';
 import ErrorDisplay from 'components/common/ErrorDisplay';
+import { BUTTON_TYPES } from '@george-gillams/components/button/constants';
 
 import AdminEmailAPIEntity from './AdminEmailAPIEntity';
 
@@ -100,7 +101,7 @@ const AdminEmails = props => {
   detailView = !detailEmail ? null : (
     <AdminEmailAPIEntity key={detailEmail.id} entity={detailEmail} highlighted={highlightId === detailEmail.id}>
       <Button
-        destructive
+        buttonType={BUTTON_TYPES.destructive}
         loading={adminEmailsState.resending}
         onClick={() => resend({ emailToResend: detailEmail })}
         className={getClassName('admin-emails__control')}>

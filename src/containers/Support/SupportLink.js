@@ -7,6 +7,7 @@ import { cssModules } from '@george-gillams/components/helpers/cssModules';
 
 import STYLES from './support-link.scss';
 import Paragraph from '@george-gillams/components/paragraph';
+import { BUTTON_TYPES } from '@george-gillams/components/button/constants';
 
 const getClassName = cssModules(STYLES);
 
@@ -31,7 +32,7 @@ const SupportLink = props => {
       {admin && (
         <Button
           className={getClassName('support-link__delete-button')}
-          destructive
+          buttonType={BUTTON_TYPES.destructive}
           onClick={() => {
             deleteLink(link);
           }}>

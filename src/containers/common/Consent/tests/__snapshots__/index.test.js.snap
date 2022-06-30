@@ -19,11 +19,11 @@ exports[`<Consent /> should render correctly - index 1`] = `
             Privacy and cookies
           </h2>
           <span
-            class="sc-dkzDqf fKpeRn"
+            class="sc-gKXOVf dVduRi"
           >
             To provide the best possible experience, we would like to use cookies and handle your data in accordance with our 
             <a
-              class="sc-jqUVSM ehmyNV"
+              class="sc-evZas isgXJA"
               href="/privacy-policy"
             >
               Privacy policy
@@ -34,21 +34,21 @@ exports[`<Consent /> should render correctly - index 1`] = `
         </div>
         <div>
           <button
-            class="button__outer button__outer--regular button__outer--no-bouncy consent__button"
+            class="sc-dkzDqf kHuqxu consent__button"
             type="button"
           >
             <span
-              class="button__child"
+              class="sc-eCYdqJ ghZAyu"
             >
               Accept
             </span>
           </button>
           <button
-            class="button__outer button__outer--regular button__outer--no-bouncy consent__button"
+            class="sc-dkzDqf kHuqxu consent__button"
             type="button"
           >
             <span
-              class="button__child"
+              class="sc-eCYdqJ ghZAyu"
             >
               Dismiss
             </span>

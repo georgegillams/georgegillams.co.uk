@@ -23,7 +23,6 @@ const SiteMap = props => {
 
   let blogList = null;
   let writingBlogList = null;
-  let travelBlogList = null;
   if (blogListState && blogListState.blogs) {
     blogList = blogListState.blogs;
   } else if (ssrBlogs) {
@@ -32,7 +31,6 @@ const SiteMap = props => {
 
   if (blogList) {
     writingBlogList = blogList.filter(b => !b.deleted && b.title && b.published && b.showInBlogsList);
-    travelBlogList = blogList.filter(b => !b.deleted && b.title && b.published && b.showInTravelBlogsList);
   }
   const admin = !!(authenticatorState && authenticatorState.user && authenticatorState.user.admin);
 
@@ -58,32 +56,6 @@ const SiteMap = props => {
               {writingBlogList.map(b => (
                 <>
                   <TextLink href={`/blog/${b.id}`}>{b.title}</TextLink>
-                  <br />
-                </>
-              ))}
-            </>
-          )}
-        </Paragraph>
-      </Subsection>
-      <Subsection anchor={false} name="Travel ✈️" className={getClassName('site-map__section')}>
-        <Paragraph>
-          <TextLink href={`/travel`}>Travel blog list</TextLink>
-          <br />
-          {!travelBlogList && (
-            <>
-              <TextLinkSkeleton />
-              <TextLinkSkeleton />
-              <TextLinkSkeleton />
-              <TextLinkSkeleton />
-              <TextLinkSkeleton />
-              <TextLinkSkeleton />
-            </>
-          )}
-          {travelBlogList && (
-            <>
-              {travelBlogList.map(b => (
-                <>
-                  <TextLink href={`/travel/${b.id}`}>{b.title}</TextLink>
                   <br />
                 </>
               ))}

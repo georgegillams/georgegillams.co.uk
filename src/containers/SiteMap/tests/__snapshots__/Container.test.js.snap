@@ -83,75 +83,6 @@ exports[`<SiteMap /> should render correctly - index 1`] = `
   >
     <h3
       class="subsection__heading"
-      id="travel-✈️"
-    >
-      Travel ✈️
-    </h3>
-    <span
-      class="sc-bczRLJ bhVmoO"
-    >
-      <a
-        class="sc-ftvSup bvTsjB"
-        href="/travel"
-      >
-        Travel blog list
-      </a>
-      <br />
-      <div
-        class="skeleton__outer skeleton__text-link"
-      >
-        <div
-          class="skeleton__shimmer"
-          style="margin-left: -0px;"
-        />
-      </div>
-      <div
-        class="skeleton__outer skeleton__text-link"
-      >
-        <div
-          class="skeleton__shimmer"
-          style="margin-left: -0px;"
-        />
-      </div>
-      <div
-        class="skeleton__outer skeleton__text-link"
-      >
-        <div
-          class="skeleton__shimmer"
-          style="margin-left: -0px;"
-        />
-      </div>
-      <div
-        class="skeleton__outer skeleton__text-link"
-      >
-        <div
-          class="skeleton__shimmer"
-          style="margin-left: -0px;"
-        />
-      </div>
-      <div
-        class="skeleton__outer skeleton__text-link"
-      >
-        <div
-          class="skeleton__shimmer"
-          style="margin-left: -0px;"
-        />
-      </div>
-      <div
-        class="skeleton__outer skeleton__text-link"
-      >
-        <div
-          class="skeleton__shimmer"
-          style="margin-left: -0px;"
-        />
-      </div>
-    </span>
-  </div>
-  <div
-    class="subsection__outer site-map__section"
-  >
-    <h3
-      class="subsection__heading"
       id="photography-📷"
     >
       Photography 📷
@@ -899,75 +830,6 @@ exports[`<SiteMap /> should render correctly 1`] = `
         href="/blog"
       >
         Blog list
-      </a>
-      <br />
-      <div
-        class="skeleton__outer skeleton__text-link"
-      >
-        <div
-          class="skeleton__shimmer"
-          style="margin-left: -0px;"
-        />
-      </div>
-      <div
-        class="skeleton__outer skeleton__text-link"
-      >
-        <div
-          class="skeleton__shimmer"
-          style="margin-left: -0px;"
-        />
-      </div>
-      <div
-        class="skeleton__outer skeleton__text-link"
-      >
-        <div
-          class="skeleton__shimmer"
-          style="margin-left: -0px;"
-        />
-      </div>
-      <div
-        class="skeleton__outer skeleton__text-link"
-      >
-        <div
-          class="skeleton__shimmer"
-          style="margin-left: -0px;"
-        />
-      </div>
-      <div
-        class="skeleton__outer skeleton__text-link"
-      >
-        <div
-          class="skeleton__shimmer"
-          style="margin-left: -0px;"
-        />
-      </div>
-      <div
-        class="skeleton__outer skeleton__text-link"
-      >
-        <div
-          class="skeleton__shimmer"
-          style="margin-left: -0px;"
-        />
-      </div>
-    </span>
-  </div>
-  <div
-    class="subsection__outer site-map__section"
-  >
-    <h3
-      class="subsection__heading"
-      id="travel-✈️"
-    >
-      Travel ✈️
-    </h3>
-    <span
-      class="sc-bczRLJ bhVmoO"
-    >
-      <a
-        class="sc-ftvSup bvTsjB"
-        href="/travel"
-      >
-        Travel blog list
       </a>
       <br />
       <div
@@ -1789,34 +1651,6 @@ exports[`<SiteMap /> should render correctly with blogs 1`] = `
   >
     <h3
       class="subsection__heading"
-      id="travel-✈️"
-    >
-      Travel ✈️
-    </h3>
-    <span
-      class="sc-bczRLJ bhVmoO"
-    >
-      <a
-        class="sc-ftvSup bvTsjB"
-        href="/travel"
-      >
-        Travel blog list
-      </a>
-      <br />
-      <a
-        class="sc-ftvSup bvTsjB"
-        href="/travel/zxywvuts"
-      >
-        St. Ives ⛵ 2018
-      </a>
-      <br />
-    </span>
-  </div>
-  <div
-    class="subsection__outer site-map__section"
-  >
-    <h3
-      class="subsection__heading"
       id="photography-📷"
     >
       Photography 📷
@@ -2573,34 +2407,6 @@ exports[`<SiteMap /> should render correctly with blogs and admin user 1`] = `
         href="/blog/asdfg"
       >
         Blog 1 🎉
-      </a>
-      <br />
-    </span>
-  </div>
-  <div
-    class="subsection__outer site-map__section"
-  >
-    <h3
-      class="subsection__heading"
-      id="travel-✈️"
-    >
-      Travel ✈️
-    </h3>
-    <span
-      class="sc-bczRLJ bhVmoO"
-    >
-      <a
-        class="sc-ftvSup bvTsjB"
-        href="/travel"
-      >
-        Travel blog list
-      </a>
-      <br />
-      <a
-        class="sc-ftvSup bvTsjB"
-        href="/travel/zxywvuts"
-      >
-        St. Ives ⛵ 2018
       </a>
       <br />
     </span>
@@ -3409,34 +3215,6 @@ exports[`<SiteMap /> should render correctly with ssrBlogs 1`] = `
         href="/blog/asdfg"
       >
         Blog 1 🎉
-      </a>
-      <br />
-    </span>
-  </div>
-  <div
-    class="subsection__outer site-map__section"
-  >
-    <h3
-      class="subsection__heading"
-      id="travel-✈️"
-    >
-      Travel ✈️
-    </h3>
-    <span
-      class="sc-bczRLJ bhVmoO"
-    >
-      <a
-        class="sc-ftvSup bvTsjB"
-        href="/travel"
-      >
-        Travel blog list
-      </a>
-      <br />
-      <a
-        class="sc-ftvSup bvTsjB"
-        href="/travel/zxywvuts"
-      >
-        St. Ives ⛵ 2018
       </a>
       <br />
     </span>

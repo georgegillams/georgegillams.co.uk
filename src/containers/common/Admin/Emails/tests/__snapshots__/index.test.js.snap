@@ -70,12 +70,12 @@ exports[`<AdminEmails /> should render correctly with admin user 1`] = `
   </div>
   <div>
     <button
-      class="button__outer button__outer--regular button__outer--no-bouncy"
+      class="sc-iqcoie iDPilc outer"
       style="margin-right: 1rem; margin-bottom: 1rem;"
       type="button"
     >
       <span
-        class="button__child"
+        class="sc-evZas bfIsxJ"
       >
         Reload emails
       </span>
@@ -110,19 +110,19 @@ exports[`<AdminEmails /> should render correctly with emails 1`] = `
   </div>
   <div>
     <button
-      class="button__outer button__outer--regular button__outer--no-bouncy"
+      class="sc-iqcoie iDPilc outer"
       style="margin-right: 1rem; margin-bottom: 1rem;"
       type="button"
     >
       <span
-        class="button__child"
+        class="sc-evZas bfIsxJ"
       >
         Reload emails
       </span>
     </button>
   </div>
   <span
-    class="sc-iqcoie fIUTrZ admin-analytics__count"
+    class="sc-ksZaOG cQKWUS admin-analytics__count"
   >
     Showing 
     3
@@ -164,7 +164,7 @@ exports[`<AdminEmails /> should render correctly with emails 1`] = `
                     Email 1
                   </h3>
                   <span
-                    class="sc-iqcoie fIUTrZ"
+                    class="sc-ksZaOG cQKWUS"
                   >
                     <br />
                     id: 
@@ -202,7 +202,7 @@ exports[`<AdminEmails /> should render correctly with emails 1`] = `
                     Email 2
                   </h3>
                   <span
-                    class="sc-iqcoie fIUTrZ"
+                    class="sc-ksZaOG cQKWUS"
                   >
                     <br />
                     id: 
@@ -240,7 +240,7 @@ exports[`<AdminEmails /> should render correctly with emails 1`] = `
                     Email 3
                   </h3>
                   <span
-                    class="sc-iqcoie fIUTrZ"
+                    class="sc-ksZaOG cQKWUS"
                   >
                     <br />
                     id: 
@@ -327,22 +327,22 @@ exports[`<AdminEmails /> should render correctly with loadError 1`] = `
   </div>
   <div>
     <button
-      class="button__outer button__outer--regular button__outer--no-bouncy"
+      class="sc-iqcoie iDPilc outer"
       style="margin-right: 1rem; margin-bottom: 1rem;"
       type="button"
     >
       <span
-        class="button__child"
+        class="sc-evZas bfIsxJ"
       >
         Reload emails
       </span>
     </button>
   </div>
   <span
-    class="sc-iqcoie fIUTrZ"
+    class="sc-ksZaOG cQKWUS"
   >
     <span
-      class="sc-crXcEl dggGEa"
+      class="sc-hAZoDl hWlXdd"
     >
       Could not load emails
       <br />
@@ -378,19 +378,19 @@ exports[`<AdminEmails /> should render correctly with loading=true 1`] = `
   </div>
   <div>
     <button
-      class="button__outer button__outer--regular button__outer--no-bouncy button__outer--disabled"
+      class="sc-iqcoie kSTvtY outer"
       disabled=""
       style="margin-right: 1rem; margin-bottom: 1rem;"
       type="button"
     >
       <span
-        class="button__child button__child--loading"
+        class="sc-evZas fLeWHK"
       >
         Reload emails
       </span>
       <div
         aria-hidden="true"
-        class="button__loading-spinner"
+        class="sc-breuTD ewjWx button__loading-spinner"
       >
         <div
           class="sc-jqUVSM VvXWN"
@@ -452,12 +452,12 @@ exports[`<AdminEmails /> should render correctly with resendError 1`] = `
   </div>
   <div>
     <button
-      class="button__outer button__outer--regular button__outer--no-bouncy"
+      class="sc-iqcoie iDPilc outer"
       style="margin-right: 1rem; margin-bottom: 1rem;"
       type="button"
     >
       <span
-        class="button__child"
+        class="sc-evZas bfIsxJ"
       >
         Reload emails
       </span>
@@ -492,12 +492,12 @@ exports[`<AdminEmails /> should render correctly with resending=true 1`] = `
   </div>
   <div>
     <button
-      class="button__outer button__outer--regular button__outer--no-bouncy"
+      class="sc-iqcoie iDPilc outer"
       style="margin-right: 1rem; margin-bottom: 1rem;"
       type="button"
     >
       <span
-        class="button__child"
+        class="sc-evZas bfIsxJ"
       >
         Reload emails
       </span>
@@ -527,7 +527,7 @@ exports[`<AdminEmails /> should render correctly with user 1`] = `
       Admin only
     </h2>
     <span
-      class="sc-iqcoie fIUTrZ"
+      class="sc-ksZaOG cQKWUS"
     >
       You need to be logged in with an admin account to view this content.
       <br />

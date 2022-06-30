@@ -12,19 +12,19 @@ exports[`<SupportForm /> Should render correctly 1`] = `
       Description
     </label>
     <div
-      class="sc-hKMtZM fMOyKb forms__component forms__component__text-box"
+      class="sc-iBkjds hDuMmX forms__component forms__component__text-box"
       placeholder="Description"
     >
       <input
         aria-disabled="false"
         aria-invalid="false"
-        class="sc-papXJ cgekWF"
+        class="sc-crXcEl dKPdSV"
         id="description_FORM_ID"
         name="Description"
         value=""
       />
       <svg
-        class="sc-dkzDqf ibQdgf sc-jqUVSM hfMxIT"
+        class="sc-gKXOVf ktoyia sc-evZas bOUPru"
         height="18"
         viewBox="0 0 24 24"
         width="18"
@@ -42,19 +42,19 @@ exports[`<SupportForm /> Should render correctly 1`] = `
       URL
     </label>
     <div
-      class="sc-hKMtZM fMOyKb forms__component forms__component__text-box"
+      class="sc-iBkjds hDuMmX forms__component forms__component__text-box"
       placeholder="URL"
     >
       <input
         aria-disabled="false"
         aria-invalid="false"
-        class="sc-papXJ cgekWF"
+        class="sc-crXcEl dKPdSV"
         id="url_FORM_ID"
         name="URL"
         value=""
       />
       <svg
-        class="sc-dkzDqf ibQdgf sc-jqUVSM hfMxIT"
+        class="sc-gKXOVf ktoyia sc-evZas bOUPru"
         height="18"
         viewBox="0 0 24 24"
         width="18"
@@ -66,11 +66,11 @@ exports[`<SupportForm /> Should render correctly 1`] = `
       </svg>
     </div>
     <button
-      class="button__outer button__outer--regular button__outer--no-bouncy forms__component forms__component__button"
+      class="sc-dkzDqf kHuqxu forms__component forms__component__button"
       type="button"
     >
       <span
-        class="button__child"
+        class="sc-eCYdqJ ghZAyu"
       >
         Add link
       </span>
@@ -91,19 +91,19 @@ exports[`<SupportForm /> Should render correctly with no link id 1`] = `
       Name
     </label>
     <div
-      class="sc-hKMtZM fMOyKb forms__component forms__component__text-box"
+      class="sc-iBkjds hDuMmX forms__component forms__component__text-box"
       placeholder="Name"
     >
       <input
         aria-disabled="false"
         aria-invalid="false"
-        class="sc-papXJ cgekWF"
+        class="sc-crXcEl dKPdSV"
         id="name_FORM_ID"
         name="Name"
         value=""
       />
       <svg
-        class="sc-dkzDqf ibQdgf sc-jqUVSM hfMxIT"
+        class="sc-gKXOVf ktoyia sc-evZas bOUPru"
         height="18"
         viewBox="0 0 24 24"
         width="18"
@@ -121,19 +121,19 @@ exports[`<SupportForm /> Should render correctly with no link id 1`] = `
       Description
     </label>
     <div
-      class="sc-hKMtZM fMOyKb forms__component forms__component__text-box"
+      class="sc-iBkjds hDuMmX forms__component forms__component__text-box"
       placeholder="Description"
     >
       <input
         aria-disabled="false"
         aria-invalid="false"
-        class="sc-papXJ cgekWF"
+        class="sc-crXcEl dKPdSV"
         id="description_FORM_ID"
         name="Description"
         value=""
       />
       <svg
-        class="sc-dkzDqf ibQdgf sc-jqUVSM hfMxIT"
+        class="sc-gKXOVf ktoyia sc-evZas bOUPru"
         height="18"
         viewBox="0 0 24 24"
         width="18"
@@ -151,19 +151,19 @@ exports[`<SupportForm /> Should render correctly with no link id 1`] = `
       URL
     </label>
     <div
-      class="sc-hKMtZM fMOyKb forms__component forms__component__text-box"
+      class="sc-iBkjds hDuMmX forms__component forms__component__text-box"
       placeholder="URL"
     >
       <input
         aria-disabled="false"
         aria-invalid="false"
-        class="sc-papXJ cgekWF"
+        class="sc-crXcEl dKPdSV"
         id="url_FORM_ID"
         name="URL"
         value=""
       />
       <svg
-        class="sc-dkzDqf ibQdgf sc-jqUVSM hfMxIT"
+        class="sc-gKXOVf ktoyia sc-evZas bOUPru"
         height="18"
         viewBox="0 0 24 24"
         width="18"
@@ -175,11 +175,11 @@ exports[`<SupportForm /> Should render correctly with no link id 1`] = `
       </svg>
     </div>
     <button
-      class="button__outer button__outer--regular button__outer--no-bouncy forms__component forms__component__button"
+      class="sc-dkzDqf kHuqxu forms__component forms__component__button"
       type="button"
     >
       <span
-        class="button__child"
+        class="sc-eCYdqJ ghZAyu"
       >
         Add link
       </span>

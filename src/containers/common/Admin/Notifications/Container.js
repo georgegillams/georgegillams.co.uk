@@ -10,6 +10,7 @@ import Skeleton from './Skeleton';
 import { withRouter } from 'next/router';
 import ErrorDisplay from 'components/common/ErrorDisplay';
 import NotificationEntity from './NotificationEntity';
+import { BUTTON_TYPES } from '@george-gillams/components/button/constants';
 
 import { cssModules } from '@george-gillams/components/helpers/cssModules';
 import STYLES from './admin-notifications.scss';
@@ -78,7 +79,7 @@ const AdminNotifications = props => {
             notifications.map(n => (
               <NotificationEntity className={getClassName('admin-notifications__entity')} key={n.id} entity={n}>
                 <Button
-                  destructive
+                  buttonType={BUTTON_TYPES.destructive}
                   disabled={n.deleted}
                   onClick={() => {
                     remove(n);
