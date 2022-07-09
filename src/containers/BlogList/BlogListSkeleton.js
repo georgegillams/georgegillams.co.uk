@@ -1,13 +1,13 @@
 import React from 'react';
-import CardSkeleton from '@george-gillams/components/skeleton/card-skeleton';
+import Skeleton, { SKELETON_STYLES } from '@george-gillams/components/skeleton';
 
 const BlogsSkeleton = () => (
   <>
-    <CardSkeleton />
-    <CardSkeleton />
-    <CardSkeleton />
-    <CardSkeleton />
-    <CardSkeleton />
+    <Skeleton skeletonStyle={SKELETON_STYLES.card} />
+    <Skeleton skeletonStyle={SKELETON_STYLES.card} />
+    <Skeleton skeletonStyle={SKELETON_STYLES.card} />
+    <Skeleton skeletonStyle={SKELETON_STYLES.card} />
+    <Skeleton skeletonStyle={SKELETON_STYLES.card} />
   </>
 );
 

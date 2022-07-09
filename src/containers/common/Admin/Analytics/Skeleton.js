@@ -1,8 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { SectionSkeleton, CompactCardSkeleton } from '@george-gillams/components/skeleton';
+import Skeleton, { SKELETON_STYLES } from '@george-gillams/components/skeleton';
 
-const Skeleton = props => {
+const PageSkeleton = props => {
   const { className } = props;
 
   const outerClassNames = [];
@@ -13,21 +13,21 @@ const Skeleton = props => {
 
   return (
     <div className={outerClassNames.join(' ')}>
-      <SectionSkeleton />
-      <CompactCardSkeleton style={{ marginTop: '1.2rem' }} />
-      <CompactCardSkeleton style={{ marginTop: '1.2rem' }} />
-      <CompactCardSkeleton style={{ marginTop: '1.2rem' }} />
-      <CompactCardSkeleton style={{ marginTop: '1.2rem' }} />
+      <Skeleton skeletonStyle={SKELETON_STYLES.section} />
+      <Skeleton skeletonStyle={SKELETON_STYLES.cardCompact} style={{ marginTop: '1.2rem' }} />
+      <Skeleton skeletonStyle={SKELETON_STYLES.cardCompact} style={{ marginTop: '1.2rem' }} />
+      <Skeleton skeletonStyle={SKELETON_STYLES.cardCompact} style={{ marginTop: '1.2rem' }} />
+      <Skeleton skeletonStyle={SKELETON_STYLES.cardCompact} style={{ marginTop: '1.2rem' }} />
     </div>
   );
 };
 
-Skeleton.propTypes = {
+PageSkeleton.propTypes = {
   className: PropTypes.string,
 };
 
-Skeleton.defaultProps = {
+PageSkeleton.defaultProps = {
   className: null,
 };
 
-export default Skeleton;
+export default PageSkeleton;

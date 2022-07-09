@@ -6,46 +6,46 @@ exports[`<AdminEmails /> should render correctly - index 1`] = `
     class=""
   >
     <div
-      class="skeleton__outer skeleton__section"
+      class="sc-jqUVSM hehiTi"
     >
       <div
-        class="skeleton__shimmer"
+        class="sc-kDDrLX jqDTPj"
         style="margin-left: -0px;"
       />
     </div>
     <div
-      class="skeleton__outer skeleton__card--compact"
+      class="sc-jqUVSM hxCeSk"
       style="margin-top: 1.2rem;"
     >
       <div
-        class="skeleton__shimmer"
+        class="sc-kDDrLX jqDTPj"
         style="margin-left: -0px;"
       />
     </div>
     <div
-      class="skeleton__outer skeleton__card--compact"
+      class="sc-jqUVSM hxCeSk"
       style="margin-top: 1.2rem;"
     >
       <div
-        class="skeleton__shimmer"
+        class="sc-kDDrLX jqDTPj"
         style="margin-left: -0px;"
       />
     </div>
     <div
-      class="skeleton__outer skeleton__card--compact"
+      class="sc-jqUVSM hxCeSk"
       style="margin-top: 1.2rem;"
     >
       <div
-        class="skeleton__shimmer"
+        class="sc-kDDrLX jqDTPj"
         style="margin-left: -0px;"
       />
     </div>
     <div
-      class="skeleton__outer skeleton__card--compact"
+      class="sc-jqUVSM hxCeSk"
       style="margin-top: 1.2rem;"
     >
       <div
-        class="skeleton__shimmer"
+        class="sc-kDDrLX jqDTPj"
         style="margin-left: -0px;"
       />
     </div>
@@ -70,12 +70,12 @@ exports[`<AdminEmails /> should render correctly with admin user 1`] = `
   </div>
   <div>
     <button
-      class="sc-iqcoie iDPilc outer"
+      class="sc-evZas jzlNIL outer"
       style="margin-right: 1rem; margin-bottom: 1rem;"
       type="button"
     >
       <span
-        class="sc-evZas bfIsxJ"
+        class="sc-ksZaOG cPAimV"
       >
         Reload emails
       </span>
@@ -110,19 +110,19 @@ exports[`<AdminEmails /> should render correctly with emails 1`] = `
   </div>
   <div>
     <button
-      class="sc-iqcoie iDPilc outer"
+      class="sc-evZas jzlNIL outer"
       style="margin-right: 1rem; margin-bottom: 1rem;"
       type="button"
     >
       <span
-        class="sc-evZas bfIsxJ"
+        class="sc-ksZaOG cPAimV"
       >
         Reload emails
       </span>
     </button>
   </div>
   <span
-    class="sc-ksZaOG cQKWUS admin-analytics__count"
+    class="sc-fnykZs kIjAem admin-analytics__count"
   >
     Showing 
     3
@@ -138,18 +138,18 @@ exports[`<AdminEmails /> should render correctly with emails 1`] = `
     >
       <div>
         <a
-          class="card admin-emails__card card--atomic card--not-disabled"
+          class="sc-bjUoiL iXnCrm admin-emails__card"
           href="/admin/emails?highlight=1"
           id="1"
         >
           <div
-            class="card__outer-container"
+            class="sc-idiyUo laTiW"
           >
             <div
-              class="card__background"
+              class="sc-dIouRR SXuOK"
             />
             <div
-              class="card__content-container"
+              class="sc-hHLeRK hDubuO"
             >
               <div
                 class="split-detail-item__content"
@@ -164,7 +164,7 @@ exports[`<AdminEmails /> should render correctly with emails 1`] = `
                     Email 1
                   </h3>
                   <span
-                    class="sc-ksZaOG cQKWUS"
+                    class="sc-fnykZs kIjAem"
                   >
                     <br />
                     id: 
@@ -176,18 +176,18 @@ exports[`<AdminEmails /> should render correctly with emails 1`] = `
           </div>
         </a>
         <a
-          class="card admin-emails__card card--atomic card--not-disabled"
+          class="sc-bjUoiL iXnCrm admin-emails__card"
           href="/admin/emails?highlight=2"
           id="2"
         >
           <div
-            class="card__outer-container"
+            class="sc-idiyUo laTiW"
           >
             <div
-              class="card__background"
+              class="sc-dIouRR SXuOK"
             />
             <div
-              class="card__content-container"
+              class="sc-hHLeRK hDubuO"
             >
               <div
                 class="split-detail-item__content"
@@ -202,7 +202,7 @@ exports[`<AdminEmails /> should render correctly with emails 1`] = `
                     Email 2
                   </h3>
                   <span
-                    class="sc-ksZaOG cQKWUS"
+                    class="sc-fnykZs kIjAem"
                   >
                     <br />
                     id: 
@@ -214,18 +214,18 @@ exports[`<AdminEmails /> should render correctly with emails 1`] = `
           </div>
         </a>
         <a
-          class="card admin-emails__card card--atomic card--not-disabled"
+          class="sc-bjUoiL iXnCrm admin-emails__card"
           href="/admin/emails?highlight=3"
           id="3"
         >
           <div
-            class="card__outer-container"
+            class="sc-idiyUo laTiW"
           >
             <div
-              class="card__background"
+              class="sc-dIouRR SXuOK"
             />
             <div
-              class="card__content-container"
+              class="sc-hHLeRK hDubuO"
             >
               <div
                 class="split-detail-item__content"
@@ -240,7 +240,7 @@ exports[`<AdminEmails /> should render correctly with emails 1`] = `
                     Email 3
                   </h3>
                   <span
-                    class="sc-ksZaOG cQKWUS"
+                    class="sc-fnykZs kIjAem"
                   >
                     <br />
                     id: 
@@ -263,46 +263,46 @@ exports[`<AdminEmails /> should render correctly with initial state 1`] = `
     class=""
   >
     <div
-      class="skeleton__outer skeleton__section"
+      class="sc-jqUVSM hehiTi"
     >
       <div
-        class="skeleton__shimmer"
+        class="sc-kDDrLX jqDTPj"
         style="margin-left: -0px;"
       />
     </div>
     <div
-      class="skeleton__outer skeleton__card--compact"
+      class="sc-jqUVSM hxCeSk"
       style="margin-top: 1.2rem;"
     >
       <div
-        class="skeleton__shimmer"
+        class="sc-kDDrLX jqDTPj"
         style="margin-left: -0px;"
       />
     </div>
     <div
-      class="skeleton__outer skeleton__card--compact"
+      class="sc-jqUVSM hxCeSk"
       style="margin-top: 1.2rem;"
     >
       <div
-        class="skeleton__shimmer"
+        class="sc-kDDrLX jqDTPj"
         style="margin-left: -0px;"
       />
     </div>
     <div
-      class="skeleton__outer skeleton__card--compact"
+      class="sc-jqUVSM hxCeSk"
       style="margin-top: 1.2rem;"
     >
       <div
-        class="skeleton__shimmer"
+        class="sc-kDDrLX jqDTPj"
         style="margin-left: -0px;"
       />
     </div>
     <div
-      class="skeleton__outer skeleton__card--compact"
+      class="sc-jqUVSM hxCeSk"
       style="margin-top: 1.2rem;"
     >
       <div
-        class="skeleton__shimmer"
+        class="sc-kDDrLX jqDTPj"
         style="margin-left: -0px;"
       />
     </div>
@@ -327,22 +327,22 @@ exports[`<AdminEmails /> should render correctly with loadError 1`] = `
   </div>
   <div>
     <button
-      class="sc-iqcoie iDPilc outer"
+      class="sc-evZas jzlNIL outer"
       style="margin-right: 1rem; margin-bottom: 1rem;"
       type="button"
     >
       <span
-        class="sc-evZas bfIsxJ"
+        class="sc-ksZaOG cPAimV"
       >
         Reload emails
       </span>
     </button>
   </div>
   <span
-    class="sc-ksZaOG cQKWUS"
+    class="sc-fnykZs kIjAem"
   >
     <span
-      class="sc-hAZoDl hWlXdd"
+      class="sc-dmRaPn cCLtJt"
     >
       Could not load emails
       <br />
@@ -378,46 +378,46 @@ exports[`<AdminEmails /> should render correctly with loading=true 1`] = `
   </div>
   <div>
     <button
-      class="sc-iqcoie kSTvtY outer"
+      class="sc-evZas juxlAL outer"
       disabled=""
       style="margin-right: 1rem; margin-bottom: 1rem;"
       type="button"
     >
       <span
-        class="sc-evZas fLeWHK"
+        class="sc-ksZaOG idpoLe"
       >
         Reload emails
       </span>
       <div
         aria-hidden="true"
-        class="sc-breuTD ewjWx button__loading-spinner"
+        class="sc-hAZoDl eImVmd button__loading-spinner"
       >
         <div
-          class="sc-jqUVSM VvXWN"
+          class="sc-iqcoie jUFsFD"
         >
           <div
-            class="sc-kDDrLX eeXkXB"
+            class="sc-crXcEl bnEQQz"
           />
           <div
-            class="sc-kDDrLX bnwDAh"
+            class="sc-crXcEl REdYz"
           />
           <div
-            class="sc-kDDrLX jSzHFu"
+            class="sc-crXcEl cnIsZI"
           />
           <div
-            class="sc-kDDrLX hHQzVj"
+            class="sc-crXcEl jStvKR"
           />
           <div
-            class="sc-kDDrLX bOKAbg"
+            class="sc-crXcEl dliQGu"
           />
           <div
-            class="sc-kDDrLX coEtcF"
+            class="sc-crXcEl jyzewH"
           />
           <div
-            class="sc-kDDrLX cyugPZ"
+            class="sc-crXcEl jSmUjv"
           />
           <div
-            class="sc-kDDrLX grMaMB"
+            class="sc-crXcEl jVOpOT"
           />
         </div>
       </div>
@@ -452,12 +452,12 @@ exports[`<AdminEmails /> should render correctly with resendError 1`] = `
   </div>
   <div>
     <button
-      class="sc-iqcoie iDPilc outer"
+      class="sc-evZas jzlNIL outer"
       style="margin-right: 1rem; margin-bottom: 1rem;"
       type="button"
     >
       <span
-        class="sc-evZas bfIsxJ"
+        class="sc-ksZaOG cPAimV"
       >
         Reload emails
       </span>
@@ -492,12 +492,12 @@ exports[`<AdminEmails /> should render correctly with resending=true 1`] = `
   </div>
   <div>
     <button
-      class="sc-iqcoie iDPilc outer"
+      class="sc-evZas jzlNIL outer"
       style="margin-right: 1rem; margin-bottom: 1rem;"
       type="button"
     >
       <span
-        class="sc-evZas bfIsxJ"
+        class="sc-ksZaOG cPAimV"
       >
         Reload emails
       </span>
@@ -527,7 +527,7 @@ exports[`<AdminEmails /> should render correctly with user 1`] = `
       Admin only
     </h2>
     <span
-      class="sc-ksZaOG cQKWUS"
+      class="sc-fnykZs kIjAem"
     >
       You need to be logged in with an admin account to view this content.
       <br />

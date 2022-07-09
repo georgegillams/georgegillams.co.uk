@@ -4,7 +4,7 @@ exports[`<NavigationItem /> Should render correctly 1`] = `
 <div>
   <a
     aria-label="name"
-    class="sc-hKMtZM jJwVdZ button__a"
+    class="sc-hKMtZM cHPiiV button__a"
     href="/test"
   >
     <span
@@ -20,7 +20,7 @@ exports[`<NavigationItem /> Should render correctly hrefExternal 1`] = `
 <div>
   <a
     aria-label="name"
-    class="sc-hKMtZM jJwVdZ button__a"
+    class="sc-hKMtZM cHPiiV button__a"
     href="/test"
     rel="noopener noreferrer"
     target="_blank"
@@ -38,7 +38,7 @@ exports[`<NavigationItem /> Should render correctly with custom className 1`] = 
 <div>
   <a
     aria-label="name"
-    class="sc-hKMtZM jJwVdZ test-custom-classname"
+    class="sc-hKMtZM cHPiiV test-custom-classname"
     href="/test"
   >
     <span

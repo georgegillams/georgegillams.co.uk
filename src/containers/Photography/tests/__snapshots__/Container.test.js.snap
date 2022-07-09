@@ -12,44 +12,39 @@ exports[`<Photography /> should render correctly 1`] = `
   >
     <a
       aria-label="Find me on GuruShots"
-      class="card feature-card feature-card--narrow-compact photography__card card--atomic card--not-disabled"
+      class="sc-gsnTZi hvFSuA sc-iBkjds fIaXJf photography__card"
       href="https://gurushots.com/georgegillams/achievements"
     >
       <div
-        class="card__outer-container"
+        class="sc-dkzDqf hkFiab"
       >
         <div
-          class="card__background"
+          class="sc-hKMtZM kvlGVY"
         />
         <div
-          class="card__content-container card__content-container--padded"
+          class="sc-eCYdqJ heBWoi"
         >
           <div
             aria-hidden="true"
-            class="feature-card__outer-container feature-card__outer-container--narrow-compact"
+            class="sc-ftvSup ePJXaK"
           >
             <div
-              class="feature-card__date feature-card__date--narrow-compact"
+              class="sc-papXJ dzTRhW date container"
             />
             <div
-              class="feature-card__center-container feature-card__center-container--narrow-compact"
+              class="sc-jqUVSM elkaFX"
             >
-              <div
-                class="section__outer section__outer--inherit-color feature-card__title"
+              <h1
+                class="sc-hAZoDl eNenGa"
               >
-                <h2
-                  class="section__heading section__heading--no-padding"
-                  id="find-me-on-gurushots"
-                >
-                  Find me on GuruShots
-                </h2>
-              </div>
+                Find me on GuruShots
+              </h1>
             </div>
             <div
-              class="feature-card__image-container"
+              class="sc-kDDrLX foETbC"
             >
               <div
-                class="image__outer feature-card__image"
+                class="image__outer sc-evZas iqencj"
               >
                 <div
                   class="image__placeholder"
@@ -59,10 +54,10 @@ exports[`<Photography /> should render correctly 1`] = `
                     class="image__spinner-container"
                   >
                     <div
-                      class="skeleton__outer image__skeleton image__skeleton--animated"
+                      class="sc-jSMfEi detKc image__skeleton image__skeleton--animated"
                     >
                       <div
-                        class="skeleton__shimmer"
+                        class="sc-gKXOVf ihacwt"
                         style="margin-left: -0px;"
                       />
                     </div>
@@ -87,44 +82,39 @@ exports[`<Photography /> should render correctly 1`] = `
     </a>
     <a
       aria-label="Find me on Flickr"
-      class="card feature-card feature-card--narrow-compact photography__card card--atomic card--not-disabled"
+      class="sc-gsnTZi hvFSuA sc-iBkjds fIaXJf photography__card"
       href="https://www.flickr.com/people/georgegillams/"
     >
       <div
-        class="card__outer-container"
+        class="sc-dkzDqf hkFiab"
       >
         <div
-          class="card__background"
+          class="sc-hKMtZM kvlGVY"
         />
         <div
-          class="card__content-container card__content-container--padded"
+          class="sc-eCYdqJ heBWoi"
         >
           <div
             aria-hidden="true"
-            class="feature-card__outer-container feature-card__outer-container--narrow-compact"
+            class="sc-ftvSup ePJXaK"
           >
             <div
-              class="feature-card__date feature-card__date--narrow-compact"
+              class="sc-papXJ dzTRhW date container"
             />
             <div
-              class="feature-card__center-container feature-card__center-container--narrow-compact"
+              class="sc-jqUVSM elkaFX"
             >
-              <div
-                class="section__outer section__outer--inherit-color feature-card__title"
+              <h1
+                class="sc-hAZoDl eNenGa"
               >
-                <h2
-                  class="section__heading section__heading--no-padding"
-                  id="find-me-on-flickr"
-                >
-                  Find me on Flickr
-                </h2>
-              </div>
+                Find me on Flickr
+              </h1>
             </div>
             <div
-              class="feature-card__image-container"
+              class="sc-kDDrLX foETbC"
             >
               <div
-                class="image__outer feature-card__image"
+                class="image__outer sc-evZas iqencj"
               >
                 <div
                   class="image__placeholder"
@@ -134,10 +124,10 @@ exports[`<Photography /> should render correctly 1`] = `
                     class="image__spinner-container"
                   >
                     <div
-                      class="skeleton__outer image__skeleton image__skeleton--animated"
+                      class="sc-jSMfEi detKc image__skeleton image__skeleton--animated"
                     >
                       <div
-                        class="skeleton__shimmer"
+                        class="sc-gKXOVf ihacwt"
                         style="margin-left: -0px;"
                       />
                     </div>
@@ -162,44 +152,39 @@ exports[`<Photography /> should render correctly 1`] = `
     </a>
     <a
       aria-label="Find me on Unsplash"
-      class="card feature-card feature-card--narrow-compact photography__card card--atomic card--not-disabled"
+      class="sc-gsnTZi hvFSuA sc-iBkjds fIaXJf photography__card"
       href="https://unsplash.com/@georgegillams"
     >
       <div
-        class="card__outer-container"
+        class="sc-dkzDqf hkFiab"
       >
         <div
-          class="card__background"
+          class="sc-hKMtZM kvlGVY"
         />
         <div
-          class="card__content-container card__content-container--padded"
+          class="sc-eCYdqJ heBWoi"
         >
           <div
             aria-hidden="true"
-            class="feature-card__outer-container feature-card__outer-container--narrow-compact"
+            class="sc-ftvSup ePJXaK"
           >
             <div
-              class="feature-card__date feature-card__date--narrow-compact"
+              class="sc-papXJ dzTRhW date container"
             />
             <div
-              class="feature-card__center-container feature-card__center-container--narrow-compact"
+              class="sc-jqUVSM elkaFX"
             >
-              <div
-                class="section__outer section__outer--inherit-color feature-card__title"
+              <h1
+                class="sc-hAZoDl eNenGa"
               >
-                <h2
-                  class="section__heading section__heading--no-padding"
-                  id="find-me-on-unsplash"
-                >
-                  Find me on Unsplash
-                </h2>
-              </div>
+                Find me on Unsplash
+              </h1>
             </div>
             <div
-              class="feature-card__image-container"
+              class="sc-kDDrLX foETbC"
             >
               <div
-                class="image__outer feature-card__image"
+                class="image__outer sc-evZas iqencj"
               >
                 <div
                   class="image__placeholder"
@@ -209,10 +194,10 @@ exports[`<Photography /> should render correctly 1`] = `
                     class="image__spinner-container"
                   >
                     <div
-                      class="skeleton__outer image__skeleton image__skeleton--animated"
+                      class="sc-jSMfEi detKc image__skeleton image__skeleton--animated"
                     >
                       <div
-                        class="skeleton__shimmer"
+                        class="sc-gKXOVf ihacwt"
                         style="margin-left: -0px;"
                       />
                     </div>
@@ -259,10 +244,10 @@ exports[`<Photography /> should render correctly 1`] = `
             class="image__spinner-container"
           >
             <div
-              class="skeleton__outer image__skeleton image__skeleton--animated"
+              class="sc-jSMfEi detKc image__skeleton image__skeleton--animated"
             >
               <div
-                class="skeleton__shimmer"
+                class="sc-gKXOVf ihacwt"
                 style="margin-left: -0px;"
               />
             </div>
@@ -301,10 +286,10 @@ exports[`<Photography /> should render correctly 1`] = `
             class="image__spinner-container"
           >
             <div
-              class="skeleton__outer image__skeleton image__skeleton--animated"
+              class="sc-jSMfEi detKc image__skeleton image__skeleton--animated"
             >
               <div
-                class="skeleton__shimmer"
+                class="sc-gKXOVf ihacwt"
                 style="margin-left: -0px;"
               />
             </div>
@@ -349,10 +334,10 @@ exports[`<Photography /> should render correctly 1`] = `
                 class="image__spinner-container"
               >
                 <div
-                  class="skeleton__outer image__skeleton image__skeleton--animated"
+                  class="sc-jSMfEi detKc image__skeleton image__skeleton--animated"
                 >
                   <div
-                    class="skeleton__shimmer"
+                    class="sc-gKXOVf ihacwt"
                     style="margin-left: -0px;"
                   />
                 </div>
@@ -384,11 +369,11 @@ exports[`<Photography /> should render correctly 1`] = `
             </div>
             <br />
             <button
-              class="sc-crXcEl kEYxNj graphic-content__text"
+              class="sc-cxabCf eMqnlV graphic-content__text"
               type="button"
             >
               <span
-                class="sc-breuTD powPW"
+                class="sc-iIPllB hSPATc"
               >
                 Show graphic content
               </span>
@@ -417,10 +402,10 @@ exports[`<Photography /> should render correctly 1`] = `
             class="image__spinner-container"
           >
             <div
-              class="skeleton__outer image__skeleton image__skeleton--animated"
+              class="sc-jSMfEi detKc image__skeleton image__skeleton--animated"
             >
               <div
-                class="skeleton__shimmer"
+                class="sc-gKXOVf ihacwt"
                 style="margin-left: -0px;"
               />
             </div>
@@ -459,10 +444,10 @@ exports[`<Photography /> should render correctly 1`] = `
             class="image__spinner-container"
           >
             <div
-              class="skeleton__outer image__skeleton image__skeleton--animated"
+              class="sc-jSMfEi detKc image__skeleton image__skeleton--animated"
             >
               <div
-                class="skeleton__shimmer"
+                class="sc-gKXOVf ihacwt"
                 style="margin-left: -0px;"
               />
             </div>
@@ -501,10 +486,10 @@ exports[`<Photography /> should render correctly 1`] = `
             class="image__spinner-container"
           >
             <div
-              class="skeleton__outer image__skeleton image__skeleton--animated"
+              class="sc-jSMfEi detKc image__skeleton image__skeleton--animated"
             >
               <div
-                class="skeleton__shimmer"
+                class="sc-gKXOVf ihacwt"
                 style="margin-left: -0px;"
               />
             </div>
@@ -543,10 +528,10 @@ exports[`<Photography /> should render correctly 1`] = `
             class="image__spinner-container"
           >
             <div
-              class="skeleton__outer image__skeleton image__skeleton--animated"
+              class="sc-jSMfEi detKc image__skeleton image__skeleton--animated"
             >
               <div
-                class="skeleton__shimmer"
+                class="sc-gKXOVf ihacwt"
                 style="margin-left: -0px;"
               />
             </div>
@@ -585,10 +570,10 @@ exports[`<Photography /> should render correctly 1`] = `
             class="image__spinner-container"
           >
             <div
-              class="skeleton__outer image__skeleton image__skeleton--animated"
+              class="sc-jSMfEi detKc image__skeleton image__skeleton--animated"
             >
               <div
-                class="skeleton__shimmer"
+                class="sc-gKXOVf ihacwt"
                 style="margin-left: -0px;"
               />
             </div>
@@ -627,7 +612,7 @@ exports[`<Photography /> should render correctly 1`] = `
         Tulips exploding with light
       </h3>
       <span
-        class="sc-bczRLJ bhVmoO"
+        class="sc-dIouRR fiupoW"
       >
         For some reason the idea of light exploding out of tulips popped into my mind, so I went out to find some and made it a reality. I used a similar effect in Art that I had used in the past to create beams of sunlight breaking through the clouds, and then darkened the background a little.
       </span>
@@ -643,10 +628,10 @@ exports[`<Photography /> should render correctly 1`] = `
             class="image__spinner-container"
           >
             <div
-              class="skeleton__outer image__skeleton image__skeleton--animated"
+              class="sc-jSMfEi detKc image__skeleton image__skeleton--animated"
             >
               <div
-                class="skeleton__shimmer"
+                class="sc-gKXOVf ihacwt"
                 style="margin-left: -0px;"
               />
             </div>
@@ -675,7 +660,7 @@ exports[`<Photography /> should render correctly 1`] = `
         Miss Saigon sketch
       </h3>
       <span
-        class="sc-bczRLJ bhVmoO"
+        class="sc-dIouRR fiupoW"
       >
         With Miss Saigon coming to cinemas soon for one day only, I was inspired to draw the production logo (aka tempted to procrastinate).
       </span>
@@ -691,10 +676,10 @@ exports[`<Photography /> should render correctly 1`] = `
             class="image__spinner-container"
           >
             <div
-              class="skeleton__outer image__skeleton image__skeleton--animated"
+              class="sc-jSMfEi detKc image__skeleton image__skeleton--animated"
             >
               <div
-                class="skeleton__shimmer"
+                class="sc-gKXOVf ihacwt"
                 style="margin-left: -0px;"
               />
             </div>
@@ -723,7 +708,7 @@ exports[`<Photography /> should render correctly 1`] = `
         Dual-carriageway light-painting (in post)
       </h3>
       <span
-        class="sc-bczRLJ bhVmoO"
+        class="sc-dIouRR fiupoW"
       >
         One evening after leaving work at an unearthly hour, I shot this uninspired photo. In Photoshop, I then used the brush tool and some layer styles to create a 'painting with light' effect.
       </span>
@@ -739,10 +724,10 @@ exports[`<Photography /> should render correctly 1`] = `
             class="image__spinner-container"
           >
             <div
-              class="skeleton__outer image__skeleton image__skeleton--animated"
+              class="sc-jSMfEi detKc image__skeleton image__skeleton--animated"
             >
               <div
-                class="skeleton__shimmer"
+                class="sc-gKXOVf ihacwt"
                 style="margin-left: -0px;"
               />
             </div>
@@ -781,7 +766,7 @@ exports[`<Photography /> should render correctly 1`] = `
         Guinness cake
       </h3>
       <span
-        class="sc-bczRLJ bhVmoO"
+        class="sc-dIouRR fiupoW"
       >
         I like spending time on food presentation when the opportunity calls for it. So I created this masterpiece to share with the office and celebrate a legendary drink!
       </span>
@@ -797,10 +782,10 @@ exports[`<Photography /> should render correctly 1`] = `
             class="image__spinner-container"
           >
             <div
-              class="skeleton__outer image__skeleton image__skeleton--animated"
+              class="sc-jSMfEi detKc image__skeleton image__skeleton--animated"
             >
               <div
-                class="skeleton__shimmer"
+                class="sc-gKXOVf ihacwt"
                 style="margin-left: -0px;"
               />
             </div>
@@ -829,7 +814,7 @@ exports[`<Photography /> should render correctly 1`] = `
         Ratatouille
       </h3>
       <span
-        class="sc-bczRLJ bhVmoO"
+        class="sc-dIouRR fiupoW"
       >
         To get us in the mood for Disneyland, I cooked up this Ratatouille in the style of the dish served in the film. It came out better than I expected... Pretty pleased with the result!
       </span>
@@ -845,10 +830,10 @@ exports[`<Photography /> should render correctly 1`] = `
             class="image__spinner-container"
           >
             <div
-              class="skeleton__outer image__skeleton image__skeleton--animated"
+              class="sc-jSMfEi detKc image__skeleton image__skeleton--animated"
             >
               <div
-                class="skeleton__shimmer"
+                class="sc-gKXOVf ihacwt"
                 style="margin-left: -0px;"
               />
             </div>
@@ -884,23 +869,23 @@ exports[`<Photography /> should render correctly 1`] = `
         Copyright
       </h3>
       <span
-        class="sc-bczRLJ bhVmoO"
+        class="sc-dIouRR fiupoW"
       >
         Most of my photos are licensed under
          
         <a
           aria-label="Creative Commons BY-SA 3.0 (opens in a new tab)"
-          class="sc-ftvSup bvTsjB"
+          class="sc-dmRaPn dMHBjv"
           href="https://creativecommons.org/licenses/by-sa/3.0/"
           rel="noopener noreferrer"
           target="_blank"
         >
           Creative Commons BY-SA 3.0
           <div
-            class="sc-papXJ ecwnCf"
+            class="sc-kgflAQ CPbSa"
           >
             <svg
-              class="sc-iBkjds eZahvc sc-jqUVSM fjeMmK"
+              class="sc-hHLeRK hNLcd sc-fLlhyt jcJuiX"
               height="18"
               viewBox="0 0 24 24"
               width="18"
@@ -916,7 +901,7 @@ exports[`<Photography /> should render correctly 1`] = `
         <br />
         If you are unsure about your right to use them please 
         <a
-          class="sc-ftvSup bvTsjB"
+          class="sc-dmRaPn dMHBjv"
           href="/contact"
         >
           contact me

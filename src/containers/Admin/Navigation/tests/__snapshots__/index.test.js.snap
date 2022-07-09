@@ -6,10 +6,10 @@ exports[`<AdminNavigation /> should render correctly - index 1`] = `
     class=""
   >
     <div
-      class="skeleton__outer skeleton__section"
+      class="sc-jqUVSM hehiTi"
     >
       <div
-        class="skeleton__shimmer"
+        class="sc-kDDrLX jqDTPj"
         style="margin-left: -0px;"
       />
     </div>
@@ -17,26 +17,26 @@ exports[`<AdminNavigation /> should render correctly - index 1`] = `
       class="admin-navigation__card-container"
     >
       <div
-        class="skeleton__outer skeleton__card--compact"
+        class="sc-jqUVSM liWCTR"
       >
         <div
-          class="skeleton__shimmer"
+          class="sc-kDDrLX jqDTPj"
           style="margin-left: -0px;"
         />
       </div>
       <div
-        class="skeleton__outer skeleton__card--compact"
+        class="sc-jqUVSM liWCTR"
       >
         <div
-          class="skeleton__shimmer"
+          class="sc-kDDrLX jqDTPj"
           style="margin-left: -0px;"
         />
       </div>
       <div
-        class="skeleton__outer skeleton__card--compact"
+        class="sc-jqUVSM liWCTR"
       >
         <div
-          class="skeleton__shimmer"
+          class="sc-kDDrLX jqDTPj"
           style="margin-left: -0px;"
         />
       </div>
@@ -60,38 +60,33 @@ exports[`<AdminNavigation /> should render correctly with admin user 1`] = `
     >
       <a
         aria-label="Debug"
-        class="card feature-card feature-card--narrow-compact admin-navigation__card card--atomic card--not-disabled"
+        class="sc-crXcEl ibsSAm sc-hAZoDl ipFjCy admin-navigation__card"
         href="/debug"
       >
         <div
-          class="card__outer-container"
+          class="sc-evZas etTfym"
         >
           <div
-            class="card__background"
+            class="sc-breuTD jcyuBN"
           />
           <div
-            class="card__content-container card__content-container--padded"
+            class="sc-ksZaOG bFaelV"
           >
             <div
               aria-hidden="true"
-              class="feature-card__outer-container feature-card__outer-container--narrow-compact"
+              class="sc-fnykZs kTzZGL"
             >
               <div
-                class="feature-card__date feature-card__date--narrow-compact"
+                class="sc-fEOsli jbzoHX date container"
               />
               <div
-                class="feature-card__center-container feature-card__center-container--narrow-compact"
+                class="sc-bjUoiL btReIK"
               >
-                <div
-                  class="section__outer section__outer--inherit-color feature-card__title"
+                <h1
+                  class="sc-gsnTZi cTWewb"
                 >
-                  <h2
-                    class="section__heading section__heading--no-padding"
-                    id="debug"
-                  >
-                    Debug
-                  </h2>
-                </div>
+                  Debug
+                </h1>
               </div>
             </div>
           </div>
@@ -99,38 +94,33 @@ exports[`<AdminNavigation /> should render correctly with admin user 1`] = `
       </a>
       <a
         aria-label="Analytics"
-        class="card feature-card feature-card--narrow-compact admin-navigation__card card--atomic card--not-disabled"
+        class="sc-crXcEl ibsSAm sc-hAZoDl ipFjCy admin-navigation__card"
         href="/admin/analytics"
       >
         <div
-          class="card__outer-container"
+          class="sc-evZas etTfym"
         >
           <div
-            class="card__background"
+            class="sc-breuTD jcyuBN"
           />
           <div
-            class="card__content-container card__content-container--padded"
+            class="sc-ksZaOG bFaelV"
           >
             <div
               aria-hidden="true"
-              class="feature-card__outer-container feature-card__outer-container--narrow-compact"
+              class="sc-fnykZs kTzZGL"
             >
               <div
-                class="feature-card__date feature-card__date--narrow-compact"
+                class="sc-fEOsli jbzoHX date container"
               />
               <div
-                class="feature-card__center-container feature-card__center-container--narrow-compact"
+                class="sc-bjUoiL btReIK"
               >
-                <div
-                  class="section__outer section__outer--inherit-color feature-card__title"
+                <h1
+                  class="sc-gsnTZi cTWewb"
                 >
-                  <h2
-                    class="section__heading section__heading--no-padding"
-                    id="analytics"
-                  >
-                    Analytics
-                  </h2>
-                </div>
+                  Analytics
+                </h1>
               </div>
             </div>
           </div>
@@ -138,38 +128,33 @@ exports[`<AdminNavigation /> should render correctly with admin user 1`] = `
       </a>
       <a
         aria-label="Emails"
-        class="card feature-card feature-card--narrow-compact admin-navigation__card card--atomic card--not-disabled"
+        class="sc-crXcEl ibsSAm sc-hAZoDl ipFjCy admin-navigation__card"
         href="/admin/emails"
       >
         <div
-          class="card__outer-container"
+          class="sc-evZas etTfym"
         >
           <div
-            class="card__background"
+            class="sc-breuTD jcyuBN"
           />
           <div
-            class="card__content-container card__content-container--padded"
+            class="sc-ksZaOG bFaelV"
           >
             <div
               aria-hidden="true"
-              class="feature-card__outer-container feature-card__outer-container--narrow-compact"
+              class="sc-fnykZs kTzZGL"
             >
               <div
-                class="feature-card__date feature-card__date--narrow-compact"
+                class="sc-fEOsli jbzoHX date container"
               />
               <div
-                class="feature-card__center-container feature-card__center-container--narrow-compact"
+                class="sc-bjUoiL btReIK"
               >
-                <div
-                  class="section__outer section__outer--inherit-color feature-card__title"
+                <h1
+                  class="sc-gsnTZi cTWewb"
                 >
-                  <h2
-                    class="section__heading section__heading--no-padding"
-                    id="emails"
-                  >
-                    Emails
-                  </h2>
-                </div>
+                  Emails
+                </h1>
               </div>
             </div>
           </div>
@@ -177,38 +162,33 @@ exports[`<AdminNavigation /> should render correctly with admin user 1`] = `
       </a>
       <a
         aria-label="Notifications"
-        class="card feature-card feature-card--narrow-compact admin-navigation__card card--atomic card--not-disabled"
+        class="sc-crXcEl ibsSAm sc-hAZoDl ipFjCy admin-navigation__card"
         href="/admin/notifications"
       >
         <div
-          class="card__outer-container"
+          class="sc-evZas etTfym"
         >
           <div
-            class="card__background"
+            class="sc-breuTD jcyuBN"
           />
           <div
-            class="card__content-container card__content-container--padded"
+            class="sc-ksZaOG bFaelV"
           >
             <div
               aria-hidden="true"
-              class="feature-card__outer-container feature-card__outer-container--narrow-compact"
+              class="sc-fnykZs kTzZGL"
             >
               <div
-                class="feature-card__date feature-card__date--narrow-compact"
+                class="sc-fEOsli jbzoHX date container"
               />
               <div
-                class="feature-card__center-container feature-card__center-container--narrow-compact"
+                class="sc-bjUoiL btReIK"
               >
-                <div
-                  class="section__outer section__outer--inherit-color feature-card__title"
+                <h1
+                  class="sc-gsnTZi cTWewb"
                 >
-                  <h2
-                    class="section__heading section__heading--no-padding"
-                    id="notifications"
-                  >
-                    Notifications
-                  </h2>
-                </div>
+                  Notifications
+                </h1>
               </div>
             </div>
           </div>
@@ -216,38 +196,33 @@ exports[`<AdminNavigation /> should render correctly with admin user 1`] = `
       </a>
       <a
         aria-label="Users"
-        class="card feature-card feature-card--narrow-compact admin-navigation__card card--atomic card--not-disabled"
+        class="sc-crXcEl ibsSAm sc-hAZoDl ipFjCy admin-navigation__card"
         href="/admin/users"
       >
         <div
-          class="card__outer-container"
+          class="sc-evZas etTfym"
         >
           <div
-            class="card__background"
+            class="sc-breuTD jcyuBN"
           />
           <div
-            class="card__content-container card__content-container--padded"
+            class="sc-ksZaOG bFaelV"
           >
             <div
               aria-hidden="true"
-              class="feature-card__outer-container feature-card__outer-container--narrow-compact"
+              class="sc-fnykZs kTzZGL"
             >
               <div
-                class="feature-card__date feature-card__date--narrow-compact"
+                class="sc-fEOsli jbzoHX date container"
               />
               <div
-                class="feature-card__center-container feature-card__center-container--narrow-compact"
+                class="sc-bjUoiL btReIK"
               >
-                <div
-                  class="section__outer section__outer--inherit-color feature-card__title"
+                <h1
+                  class="sc-gsnTZi cTWewb"
                 >
-                  <h2
-                    class="section__heading section__heading--no-padding"
-                    id="users"
-                  >
-                    Users
-                  </h2>
-                </div>
+                  Users
+                </h1>
               </div>
             </div>
           </div>
@@ -264,10 +239,10 @@ exports[`<AdminNavigation /> should render correctly with auth error 1`] = `
     class=""
   >
     <div
-      class="skeleton__outer skeleton__section"
+      class="sc-jqUVSM hehiTi"
     >
       <div
-        class="skeleton__shimmer"
+        class="sc-kDDrLX jqDTPj"
         style="margin-left: -0px;"
       />
     </div>
@@ -275,26 +250,26 @@ exports[`<AdminNavigation /> should render correctly with auth error 1`] = `
       class="admin-navigation__card-container"
     >
       <div
-        class="skeleton__outer skeleton__card--compact"
+        class="sc-jqUVSM liWCTR"
       >
         <div
-          class="skeleton__shimmer"
+          class="sc-kDDrLX jqDTPj"
           style="margin-left: -0px;"
         />
       </div>
       <div
-        class="skeleton__outer skeleton__card--compact"
+        class="sc-jqUVSM liWCTR"
       >
         <div
-          class="skeleton__shimmer"
+          class="sc-kDDrLX jqDTPj"
           style="margin-left: -0px;"
         />
       </div>
       <div
-        class="skeleton__outer skeleton__card--compact"
+        class="sc-jqUVSM liWCTR"
       >
         <div
-          class="skeleton__shimmer"
+          class="sc-kDDrLX jqDTPj"
           style="margin-left: -0px;"
         />
       </div>
@@ -319,10 +294,10 @@ exports[`<AdminNavigation /> should render correctly with initial state 1`] = `
     class=""
   >
     <div
-      class="skeleton__outer skeleton__section"
+      class="sc-jqUVSM hehiTi"
     >
       <div
-        class="skeleton__shimmer"
+        class="sc-kDDrLX jqDTPj"
         style="margin-left: -0px;"
       />
     </div>
@@ -330,26 +305,26 @@ exports[`<AdminNavigation /> should render correctly with initial state 1`] = `
       class="admin-navigation__card-container"
     >
       <div
-        class="skeleton__outer skeleton__card--compact"
+        class="sc-jqUVSM liWCTR"
       >
         <div
-          class="skeleton__shimmer"
+          class="sc-kDDrLX jqDTPj"
           style="margin-left: -0px;"
         />
       </div>
       <div
-        class="skeleton__outer skeleton__card--compact"
+        class="sc-jqUVSM liWCTR"
       >
         <div
-          class="skeleton__shimmer"
+          class="sc-kDDrLX jqDTPj"
           style="margin-left: -0px;"
         />
       </div>
       <div
-        class="skeleton__outer skeleton__card--compact"
+        class="sc-jqUVSM liWCTR"
       >
         <div
-          class="skeleton__shimmer"
+          class="sc-kDDrLX jqDTPj"
           style="margin-left: -0px;"
         />
       </div>
@@ -373,7 +348,7 @@ exports[`<AdminNavigation /> should render correctly with user 1`] = `
         Admin only
       </h2>
       <span
-        class="sc-jqUVSM iuHAUr"
+        class="sc-fLlhyt boeWou"
       >
         You need to be logged in with an admin account to view this content.
         <br />
