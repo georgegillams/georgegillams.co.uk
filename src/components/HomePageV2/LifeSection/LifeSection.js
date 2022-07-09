@@ -61,8 +61,6 @@ const LifeSection = props => {
             <br />
             <TextLink href="/blog">Blog</TextLink>
             <br />
-            <TextLink href="/travel">Travel</TextLink>
-            <br />
             <TextLink href="/photography">Photography</TextLink>
           </Paragraph>
         </Section>

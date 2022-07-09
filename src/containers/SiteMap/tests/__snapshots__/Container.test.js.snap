@@ -651,9 +651,9 @@ exports[`<SiteMap /> should render correctly - index 1`] = `
       <div>
         <a
           class="sc-ftvSup bvTsjB"
-          href="/travel/view"
+          href="/blog"
         >
-          /travel/view ⇒ /travel
+          /blog ⇒ /travel
         </a>
         <br />
       </div>
@@ -1455,9 +1455,9 @@ exports[`<SiteMap /> should render correctly 1`] = `
       <div>
         <a
           class="sc-ftvSup bvTsjB"
-          href="/travel/view"
+          href="/blog"
         >
-          /travel/view ⇒ /travel
+          /blog ⇒ /travel
         </a>
         <br />
       </div>
@@ -2219,9 +2219,9 @@ exports[`<SiteMap /> should render correctly with blogs 1`] = `
       <div>
         <a
           class="sc-ftvSup bvTsjB"
-          href="/travel/view"
+          href="/blog"
         >
-          /travel/view ⇒ /travel
+          /blog ⇒ /travel
         </a>
         <br />
       </div>
@@ -3027,9 +3027,9 @@ exports[`<SiteMap /> should render correctly with blogs and admin user 1`] = `
       <div>
         <a
           class="sc-ftvSup bvTsjB"
-          href="/travel/view"
+          href="/blog"
         >
-          /travel/view ⇒ /travel
+          /blog ⇒ /travel
         </a>
         <br />
       </div>
@@ -3792,9 +3792,9 @@ exports[`<SiteMap /> should render correctly with ssrBlogs 1`] = `
       <div>
         <a
           class="sc-ftvSup bvTsjB"
-          href="/travel/view"
+          href="/blog"
         >
-          /travel/view ⇒ /travel
+          /blog ⇒ /travel
         </a>
         <br />
       </div>

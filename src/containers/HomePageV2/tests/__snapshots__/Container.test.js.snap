@@ -252,13 +252,6 @@ exports[`<Home /> should render correctly 1`] = `
               <br />
               <a
                 class="sc-ftvSup bvTsjB"
-                href="/travel"
-              >
-                Travel
-              </a>
-              <br />
-              <a
-                class="sc-ftvSup bvTsjB"
                 href="/photography"
               >
                 Photography
@@ -819,13 +812,6 @@ exports[`<Home /> should render correctly with admin user 1`] = `
                 href="/blog"
               >
                 Blog
-              </a>
-              <br />
-              <a
-                class="sc-ftvSup bvTsjB"
-                href="/travel"
-              >
-                Travel
               </a>
               <br />
               <a
@@ -1394,13 +1380,6 @@ exports[`<Home /> should render correctly with no user 1`] = `
               <br />
               <a
                 class="sc-ftvSup bvTsjB"
-                href="/travel"
-              >
-                Travel
-              </a>
-              <br />
-              <a
-                class="sc-ftvSup bvTsjB"
                 href="/photography"
               >
                 Photography
@@ -1961,13 +1940,6 @@ exports[`<Home /> should render correctly with user 1`] = `
                 href="/blog"
               >
                 Blog
-              </a>
-              <br />
-              <a
-                class="sc-ftvSup bvTsjB"
-                href="/travel"
-              >
-                Travel
               </a>
               <br />
               <a

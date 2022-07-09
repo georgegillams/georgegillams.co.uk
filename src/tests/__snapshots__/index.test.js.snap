@@ -256,13 +256,6 @@ exports[`<HomePage /> should render correctly 1`] = `
                 <br />
                 <a
                   class="sc-ftvSup bvTsjB"
-                  href="/travel"
-                >
-                  Travel
-                </a>
-                <br />
-                <a
-                  class="sc-ftvSup bvTsjB"
                   href="/photography"
                 >
                   Photography
@@ -586,7 +579,7 @@ exports[`<HomePage /> should render correctly 1`] = `
       >
         <h1
           aria-label="Home page"
-          class="logo__heading logo__heading--pride logo__heading--no-padding"
+          class="logo__heading logo__heading--no-padding"
           role="button"
         >
           G

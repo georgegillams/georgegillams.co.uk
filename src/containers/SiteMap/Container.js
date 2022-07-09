@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import PropTypes from 'prop-types';
 import Subsection from '@george-gillams/components/subsection';
 import Paragraph from '@george-gillams/components/paragraph';
-import TextLinkSkeleton from '@george-gillams/components/skeleton/text-link-skeleton';
+import Skeleton, { SKELETON_STYLES } from '@george-gillams/components/skeleton';
 import TextLink from 'components/common/TextLink';
 import PageTitle from 'components/common/PageTitle';
 
@@ -43,12 +43,12 @@ const SiteMap = props => {
           <br />
           {!writingBlogList && (
             <>
-              <TextLinkSkeleton />
-              <TextLinkSkeleton />
-              <TextLinkSkeleton />
-              <TextLinkSkeleton />
-              <TextLinkSkeleton />
-              <TextLinkSkeleton />
+              <Skeleton skeletonStyle={SKELETON_STYLES.textLink} />
+              <Skeleton skeletonStyle={SKELETON_STYLES.textLink} />
+              <Skeleton skeletonStyle={SKELETON_STYLES.textLink} />
+              <Skeleton skeletonStyle={SKELETON_STYLES.textLink} />
+              <Skeleton skeletonStyle={SKELETON_STYLES.textLink} />
+              <Skeleton skeletonStyle={SKELETON_STYLES.textLink} />
             </>
           )}
           {writingBlogList && (

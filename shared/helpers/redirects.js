@@ -36,7 +36,7 @@ const redirects = [
   { from: '/work/side-projects', to: '/work' },
 
   { to: '/blog', from: '/blog/view' },
-  { to: '/travel', from: '/travel/view' },
+  { to: '/travel', from: '/blog' },
   { to: '/blog/tough-mudder', from: '/blog/view?id=tg5x7po9' },
   { to: '/blog/lightroom-workflow', from: '/blog/view?id=lqngy' },
   { to: '/blog/net-neutrality', from: '/blog/view?id=w85aht' },
