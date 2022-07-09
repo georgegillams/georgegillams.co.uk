@@ -3,30 +3,30 @@
 exports[`<NavigationItem /> Should render correctly 1`] = `
 <div>
   <a
-    class="card feature-card card--atomic card--not-disabled"
+    class="sc-gsnTZi hvFSuA sc-iBkjds lehxXE"
     href="/test"
   >
     <div
-      class="card__outer-container"
+      class="sc-dkzDqf hkFiab"
     >
       <div
-        class="card__background"
+        class="sc-hKMtZM kvlGVY"
       />
       <div
-        class="card__content-container card__content-container--padded"
+        class="sc-eCYdqJ heBWoi"
       >
         <div
           aria-hidden="true"
-          class="feature-card__outer-container feature-card__outer-container--auto"
+          class="sc-ftvSup ePJXaK"
         >
           <div
-            class="feature-card__date"
+            class="sc-papXJ diveQv date container"
           />
           <div
-            class="feature-card__center-container"
+            class="sc-jqUVSM elkaFX"
           >
-            <div
-              class="section__outer section__outer--inherit-color feature-card__title"
+            <h1
+              class="sc-hAZoDl eNenGa"
             />
           </div>
         </div>
@@ -39,30 +39,30 @@ exports[`<NavigationItem /> Should render correctly 1`] = `
 exports[`<NavigationItem /> Should render correctly hrefExternal 1`] = `
 <div>
   <a
-    class="card feature-card card--atomic card--not-disabled"
+    class="sc-gsnTZi hvFSuA sc-iBkjds lehxXE"
     href="https://duckduckgo.com/"
   >
     <div
-      class="card__outer-container"
+      class="sc-dkzDqf hkFiab"
     >
       <div
-        class="card__background"
+        class="sc-hKMtZM kvlGVY"
       />
       <div
-        class="card__content-container card__content-container--padded"
+        class="sc-eCYdqJ heBWoi"
       >
         <div
           aria-hidden="true"
-          class="feature-card__outer-container feature-card__outer-container--auto"
+          class="sc-ftvSup ePJXaK"
         >
           <div
-            class="feature-card__date"
+            class="sc-papXJ diveQv date container"
           />
           <div
-            class="feature-card__center-container"
+            class="sc-jqUVSM elkaFX"
           >
-            <div
-              class="section__outer section__outer--inherit-color feature-card__title"
+            <h1
+              class="sc-hAZoDl eNenGa"
             />
           </div>
         </div>
@@ -75,30 +75,30 @@ exports[`<NavigationItem /> Should render correctly hrefExternal 1`] = `
 exports[`<NavigationItem /> Should render correctly with custom className 1`] = `
 <div>
   <a
-    class="card feature-card test-custom-classname card--atomic card--not-disabled"
+    class="sc-gsnTZi hvFSuA sc-iBkjds lehxXE test-custom-classname"
     href="/test"
   >
     <div
-      class="card__outer-container"
+      class="sc-dkzDqf hkFiab"
     >
       <div
-        class="card__background"
+        class="sc-hKMtZM kvlGVY"
       />
       <div
-        class="card__content-container card__content-container--padded"
+        class="sc-eCYdqJ heBWoi"
       >
         <div
           aria-hidden="true"
-          class="feature-card__outer-container feature-card__outer-container--auto"
+          class="sc-ftvSup ePJXaK"
         >
           <div
-            class="feature-card__date"
+            class="sc-papXJ diveQv date container"
           />
           <div
-            class="feature-card__center-container"
+            class="sc-jqUVSM elkaFX"
           >
-            <div
-              class="section__outer section__outer--inherit-color feature-card__title"
+            <h1
+              class="sc-hAZoDl eNenGa"
             />
           </div>
         </div>
@@ -111,30 +111,30 @@ exports[`<NavigationItem /> Should render correctly with custom className 1`] = 
 exports[`<NavigationItem /> Should render with nextified href 1`] = `
 <div>
   <a
-    class="card feature-card card--atomic card--not-disabled"
+    class="sc-gsnTZi hvFSuA sc-iBkjds lehxXE"
     href="/blog/test"
   >
     <div
-      class="card__outer-container"
+      class="sc-dkzDqf hkFiab"
     >
       <div
-        class="card__background"
+        class="sc-hKMtZM kvlGVY"
       />
       <div
-        class="card__content-container card__content-container--padded"
+        class="sc-eCYdqJ heBWoi"
       >
         <div
           aria-hidden="true"
-          class="feature-card__outer-container feature-card__outer-container--auto"
+          class="sc-ftvSup ePJXaK"
         >
           <div
-            class="feature-card__date"
+            class="sc-papXJ diveQv date container"
           />
           <div
-            class="feature-card__center-container"
+            class="sc-jqUVSM elkaFX"
           >
-            <div
-              class="section__outer section__outer--inherit-color feature-card__title"
+            <h1
+              class="sc-hAZoDl eNenGa"
             />
           </div>
         </div>

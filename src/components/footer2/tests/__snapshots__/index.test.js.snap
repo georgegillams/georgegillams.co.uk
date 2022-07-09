@@ -3,7 +3,7 @@
 exports[`<Footer /> Should render correctly 1`] = `
 <div>
   <footer
-    class="footerstyles__Container-sc-ojjd19-0 lmaSVt"
+    class="footerstyles__Container-sc-ojjd19-0 beXJfO"
     id="footer"
   >
     <div
@@ -140,7 +140,7 @@ exports[`<Footer /> Should render correctly 1`] = `
 exports[`<Footer /> Should render correctly with custom className 1`] = `
 <div>
   <footer
-    class="footerstyles__Container-sc-ojjd19-0 lmaSVt test-custom-className"
+    class="footerstyles__Container-sc-ojjd19-0 beXJfO test-custom-className"
     id="footer"
   >
     <div

@@ -24,10 +24,10 @@ exports[`<Medals /> should render correctly 1`] = `
         class="subsection__outer"
       >
         <div
-          class="sc-efBctP iMgREi containerstyles__StyledMedalShelf-sc-153xxqc-0 fsYLue"
+          class="sc-dPyBCJ feDiOq containerstyles__StyledMedalShelf-sc-153xxqc-0 fsYLue"
         >
           <div
-            class="sc-kDDrLX hTwwss"
+            class="sc-kDDrLX cVYoPL"
           >
             <span
               class="sc-eCYdqJ laHCpw sc-iqcoie eFrAsm"
@@ -67,7 +67,7 @@ exports[`<Medals /> should render correctly 1`] = `
             </div>
           </div>
           <div
-            class="sc-kDDrLX iNuAgw"
+            class="sc-kDDrLX bxoEqn"
           >
             <span
               class="sc-eCYdqJ laHCpw sc-iqcoie eFrAsm"
@@ -86,7 +86,7 @@ exports[`<Medals /> should render correctly 1`] = `
             </div>
           </div>
           <div
-            class="sc-kDDrLX hTwwss"
+            class="sc-kDDrLX cVYoPL"
           >
             <span
               class="sc-eCYdqJ laHCpw sc-iqcoie eFrAsm"
@@ -126,7 +126,7 @@ exports[`<Medals /> should render correctly 1`] = `
             </div>
           </div>
           <div
-            class="sc-kDDrLX hTwwss"
+            class="sc-kDDrLX cVYoPL"
           >
             <span
               class="sc-eCYdqJ laHCpw sc-iqcoie eFrAsm"
@@ -166,7 +166,7 @@ exports[`<Medals /> should render correctly 1`] = `
             </div>
           </div>
           <div
-            class="sc-kDDrLX hTwwss"
+            class="sc-kDDrLX cVYoPL"
           >
             <span
               class="sc-eCYdqJ laHCpw sc-iqcoie eFrAsm"
@@ -217,10 +217,10 @@ exports[`<Medals /> should render correctly 1`] = `
           Legionaire
         </h3>
         <div
-          class="sc-efBctP iMgREi containerstyles__StyledMedalShelf-sc-153xxqc-0 fsYLue"
+          class="sc-dPyBCJ feDiOq containerstyles__StyledMedalShelf-sc-153xxqc-0 fsYLue"
         >
           <div
-            class="sc-kDDrLX dMlcBz"
+            class="sc-kDDrLX eskcpk"
           >
             <span
               class="sc-eCYdqJ laHCpw sc-iqcoie eFrAsm"
@@ -237,7 +237,7 @@ exports[`<Medals /> should render correctly 1`] = `
             />
           </div>
           <div
-            class="sc-kDDrLX gNiKVE"
+            class="sc-kDDrLX hthJYr"
           >
             <span
               class="sc-eCYdqJ laHCpw sc-iqcoie eFrAsm"
@@ -254,7 +254,7 @@ exports[`<Medals /> should render correctly 1`] = `
             />
           </div>
           <div
-            class="sc-kDDrLX farXOL"
+            class="sc-kDDrLX fGqVZk"
           >
             <span
               class="sc-eCYdqJ laHCpw sc-iqcoie eFrAsm"
@@ -286,7 +286,7 @@ exports[`<Medals /> should render correctly 1`] = `
         class="subsection__outer"
       >
         <div
-          class="sc-efBctP iMgREi containerstyles__StyledMedalShelf-sc-153xxqc-0 fsYLue"
+          class="sc-dPyBCJ feDiOq containerstyles__StyledMedalShelf-sc-153xxqc-0 fsYLue"
         >
           <div
             class="sc-hAZoDl cCmlRs"
@@ -327,7 +327,7 @@ exports[`<Medals /> should render correctly 1`] = `
               >
                 <textpath
                   alignment-baseline="center"
-                  class="sc-dmRaPn"
+                  class="sc-dmRaPn WOpqe"
                   startOffset="15"
                   xlink:href="#textLine1"
                 >
@@ -348,7 +348,7 @@ exports[`<Medals /> should render correctly 1`] = `
               >
                 <textpath
                   alignment-baseline="center"
-                  class="sc-bBrHrO"
+                  class="sc-bBrHrO lahdtz"
                   startOffset="16"
                   xlink:href="#textLine2"
                 >
@@ -357,7 +357,7 @@ exports[`<Medals /> should render correctly 1`] = `
                 </textpath>
               </text>
               <svg
-                class="sc-ksZaOG tWELj sc-ivTmOn"
+                class="sc-ksZaOG dueYud sc-ivTmOn"
                 color="#C50722"
                 height="44"
                 viewBox="0 0 200 200"
@@ -448,29 +448,66 @@ exports[`<Medals /> should render correctly 1`] = `
           Trifectas
         </h3>
         <div
-          class="sc-efBctP iMgREi containerstyles__StyledMedalShelf-sc-153xxqc-0 fsYLue"
+          class="sc-dPyBCJ feDiOq containerstyles__StyledMedalShelf-sc-153xxqc-0 fsYLue"
         >
           <svg
-            class="sc-bZnhIo jgjqIS"
-            height="120"
-            viewBox="0 0 120 120"
-            width="120"
+            class="sc-bZnhIo kjNiJy"
+            height="124"
+            viewBox="0 0 124 124"
+            width="124"
             xmlns="http://www.w3.org/2000/svg"
           >
             <circle
               class="sc-iTONeN A-DWTB"
-              cx="60"
-              cy="60"
-              r="60"
+              cx="62"
+              cy="62"
+              r="62"
             />
+            <circle
+              class="sc-efBctP cmYJcb"
+              cx="62"
+              cy="62"
+              id="outerTextLine"
+              r="53"
+            />
+            <text
+              class="sc-cTQhss fhdsWE"
+              color="#1e1e1e"
+              width="500"
+            >
+              <textpath
+                alignment-baseline="center"
+                class="sc-jOrMOR jAoGnY"
+                startOffset="166"
+                xlink:href="#outerTextLine"
+              >
+                CAMARADERIE
+              </textpath>
+              <textpath
+                alignment-baseline="center"
+                class="sc-jOrMOR jAoGnY"
+                startOffset="286"
+                xlink:href="#outerTextLine"
+              >
+                COURAGE
+              </textpath>
+              <textpath
+                alignment-baseline="center"
+                class="sc-jOrMOR jAoGnY"
+                startOffset="58"
+                xlink:href="#outerTextLine"
+              >
+                COMPETITION
+              </textpath>
+            </text>
             <svg
               class="sc-iIPllB cjGpYg sc-iAvgwm hDpkvR"
               height="100"
               viewBox="0 0 100 100"
               width="100"
-              x="10"
+              x="12"
               xmlns="http://www.w3.org/2000/svg"
-              y="10"
+              y="12"
             >
               <circle
                 class="sc-gicCDI clkrfZ"
@@ -497,18 +534,18 @@ exports[`<Medals /> should render correctly 1`] = `
               />
               <path
                 class="sc-ikZpkk hXdXBl"
-                d="M14.5 49.5C14.5 29.5 31.5945 14.5 50 14.5C68.4055 14.5 85.5 29.5 85.5 49.5"
+                d="M13.5 49.75C13.5 29.1786 31.0761 13.75 50 13.75C68.9239 13.75 86.5 29.1786 86.5 49.75"
                 id="textLineTop0"
               />
               <text
-                class="sc-jIZahH fBfjaC"
+                class="sc-jIZahH HJqlr"
                 color="white"
                 width="500"
               >
                 <textpath
                   alignment-baseline="center"
-                  class="sc-himrzO"
-                  startOffset="1"
+                  class="sc-himrzO gSfNql"
+                  startOffset="0.5"
                   xlink:href="#textLineTop0"
                 >
                   SPARTAN 
@@ -517,25 +554,25 @@ exports[`<Medals /> should render correctly 1`] = `
               </text>
               <path
                 class="sc-gXmSlM bHUACp"
-                d="M5.5 49.5C5.5 72 25.0614 93.8604 49.5 94C73.8017 94.1389 94 74.5 94 50.5"
+                d="M5.5 48.75C5.5 71.5024 24.9509 93.6081 49.2514 93.7493C73.4158 93.8897 93.5 74.0305 93.5 49.7612"
                 id="textLineBottom0"
               />
               <text
-                class="sc-cCsOjp eqJhSR"
+                class="sc-cCsOjp lcfaQC"
                 color="white"
                 width="500"
               >
                 <textpath
                   alignment-baseline="center"
-                  class="sc-ciZhAO"
-                  startOffset="26"
+                  class="sc-ciZhAO vHMBQ"
+                  startOffset="23"
                   xlink:href="#textLineBottom0"
                 >
                   TRIFECTA TRIBE
                 </textpath>
               </text>
               <svg
-                class="sc-ksZaOG tWELj sc-jdAMXn"
+                class="sc-ksZaOG dueYud sc-jdAMXn"
                 color="#C50722"
                 height="44"
                 viewBox="0 0 200 200"
@@ -604,10 +641,10 @@ exports[`<Medals /> should render correctly 1`] = `
         class="subsection__outer"
       >
         <div
-          class="sc-efBctP iMgREi containerstyles__StyledMedalShelf-sc-153xxqc-0 fsYLue"
+          class="sc-dPyBCJ feDiOq containerstyles__StyledMedalShelf-sc-153xxqc-0 fsYLue"
         >
           <div
-            class="sc-kDDrLX gyZyEo"
+            class="sc-kDDrLX heYxHb"
           >
             <span
               class="sc-eCYdqJ laHCpw sc-iqcoie eFrAsm"

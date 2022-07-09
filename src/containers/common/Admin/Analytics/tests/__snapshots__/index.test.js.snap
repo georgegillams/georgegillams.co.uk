@@ -6,46 +6,46 @@ exports[`<AdminAnalytics /> should render correctly - index 1`] = `
     class=""
   >
     <div
-      class="skeleton__outer skeleton__section"
+      class="sc-jqUVSM hehiTi"
     >
       <div
-        class="skeleton__shimmer"
+        class="sc-kDDrLX jqDTPj"
         style="margin-left: -0px;"
       />
     </div>
     <div
-      class="skeleton__outer skeleton__card--compact"
+      class="sc-jqUVSM liWCTR"
       style="margin-top: 1.2rem;"
     >
       <div
-        class="skeleton__shimmer"
+        class="sc-kDDrLX jqDTPj"
         style="margin-left: -0px;"
       />
     </div>
     <div
-      class="skeleton__outer skeleton__card--compact"
+      class="sc-jqUVSM liWCTR"
       style="margin-top: 1.2rem;"
     >
       <div
-        class="skeleton__shimmer"
+        class="sc-kDDrLX jqDTPj"
         style="margin-left: -0px;"
       />
     </div>
     <div
-      class="skeleton__outer skeleton__card--compact"
+      class="sc-jqUVSM liWCTR"
       style="margin-top: 1.2rem;"
     >
       <div
-        class="skeleton__shimmer"
+        class="sc-kDDrLX jqDTPj"
         style="margin-left: -0px;"
       />
     </div>
     <div
-      class="skeleton__outer skeleton__card--compact"
+      class="sc-jqUVSM liWCTR"
       style="margin-top: 1.2rem;"
     >
       <div
-        class="skeleton__shimmer"
+        class="sc-kDDrLX jqDTPj"
         style="margin-left: -0px;"
       />
     </div>
@@ -70,21 +70,21 @@ exports[`<AdminAnalytics /> should render correctly with admin user 1`] = `
   </div>
   <div>
     <button
-      class="sc-iqcoie iDPilc admin-analytics__control"
+      class="sc-evZas jzlNIL admin-analytics__control"
       type="button"
     >
       <span
-        class="sc-evZas bfIsxJ"
+        class="sc-ksZaOG cPAimV"
       >
         Reload analytics
       </span>
     </button>
     <button
-      class="sc-iqcoie iDPilc admin-analytics__control"
+      class="sc-evZas jzlNIL admin-analytics__control"
       type="button"
     >
       <span
-        class="sc-evZas bfIsxJ"
+        class="sc-ksZaOG cPAimV"
       >
         Show filters
       </span>
@@ -113,21 +113,21 @@ exports[`<AdminAnalytics /> should render correctly with analytics 1`] = `
   </div>
   <div>
     <button
-      class="sc-iqcoie iDPilc admin-analytics__control"
+      class="sc-evZas jzlNIL admin-analytics__control"
       type="button"
     >
       <span
-        class="sc-evZas bfIsxJ"
+        class="sc-ksZaOG cPAimV"
       >
         Reload analytics
       </span>
     </button>
     <button
-      class="sc-iqcoie iDPilc admin-analytics__control"
+      class="sc-evZas jzlNIL admin-analytics__control"
       type="button"
     >
       <span
-        class="sc-evZas bfIsxJ"
+        class="sc-ksZaOG cPAimV"
       >
         Show filters
       </span>
@@ -145,46 +145,46 @@ exports[`<AdminAnalytics /> should render correctly with initial state 1`] = `
     class=""
   >
     <div
-      class="skeleton__outer skeleton__section"
+      class="sc-jqUVSM hehiTi"
     >
       <div
-        class="skeleton__shimmer"
+        class="sc-kDDrLX jqDTPj"
         style="margin-left: -0px;"
       />
     </div>
     <div
-      class="skeleton__outer skeleton__card--compact"
+      class="sc-jqUVSM liWCTR"
       style="margin-top: 1.2rem;"
     >
       <div
-        class="skeleton__shimmer"
+        class="sc-kDDrLX jqDTPj"
         style="margin-left: -0px;"
       />
     </div>
     <div
-      class="skeleton__outer skeleton__card--compact"
+      class="sc-jqUVSM liWCTR"
       style="margin-top: 1.2rem;"
     >
       <div
-        class="skeleton__shimmer"
+        class="sc-kDDrLX jqDTPj"
         style="margin-left: -0px;"
       />
     </div>
     <div
-      class="skeleton__outer skeleton__card--compact"
+      class="sc-jqUVSM liWCTR"
       style="margin-top: 1.2rem;"
     >
       <div
-        class="skeleton__shimmer"
+        class="sc-kDDrLX jqDTPj"
         style="margin-left: -0px;"
       />
     </div>
     <div
-      class="skeleton__outer skeleton__card--compact"
+      class="sc-jqUVSM liWCTR"
       style="margin-top: 1.2rem;"
     >
       <div
-        class="skeleton__shimmer"
+        class="sc-kDDrLX jqDTPj"
         style="margin-left: -0px;"
       />
     </div>
@@ -209,31 +209,31 @@ exports[`<AdminAnalytics /> should render correctly with loadError 1`] = `
   </div>
   <div>
     <button
-      class="sc-iqcoie iDPilc admin-analytics__control"
+      class="sc-evZas jzlNIL admin-analytics__control"
       type="button"
     >
       <span
-        class="sc-evZas bfIsxJ"
+        class="sc-ksZaOG cPAimV"
       >
         Reload analytics
       </span>
     </button>
     <button
-      class="sc-iqcoie iDPilc admin-analytics__control"
+      class="sc-evZas jzlNIL admin-analytics__control"
       type="button"
     >
       <span
-        class="sc-evZas bfIsxJ"
+        class="sc-ksZaOG cPAimV"
       >
         Show filters
       </span>
     </button>
   </div>
   <span
-    class="sc-ksZaOG cQKWUS"
+    class="sc-fnykZs kIjAem"
   >
     <span
-      class="sc-fnykZs UTXXK"
+      class="sc-bjUoiL lnnJny"
     >
       Could not load analytics
       <br />
@@ -263,55 +263,55 @@ exports[`<AdminAnalytics /> should render correctly with loading=true 1`] = `
   </div>
   <div>
     <button
-      class="sc-iqcoie kSTvtY admin-analytics__control"
+      class="sc-evZas juxlAL admin-analytics__control"
       disabled=""
       type="button"
     >
       <span
-        class="sc-evZas fLeWHK"
+        class="sc-ksZaOG idpoLe"
       >
         Reload analytics
       </span>
       <div
         aria-hidden="true"
-        class="sc-breuTD ewjWx button__loading-spinner"
+        class="sc-hAZoDl eImVmd button__loading-spinner"
       >
         <div
-          class="sc-jqUVSM VvXWN"
+          class="sc-iqcoie jUFsFD"
         >
           <div
-            class="sc-kDDrLX eeXkXB"
+            class="sc-crXcEl bnEQQz"
           />
           <div
-            class="sc-kDDrLX bnwDAh"
+            class="sc-crXcEl REdYz"
           />
           <div
-            class="sc-kDDrLX jSzHFu"
+            class="sc-crXcEl cnIsZI"
           />
           <div
-            class="sc-kDDrLX hHQzVj"
+            class="sc-crXcEl jStvKR"
           />
           <div
-            class="sc-kDDrLX bOKAbg"
+            class="sc-crXcEl dliQGu"
           />
           <div
-            class="sc-kDDrLX coEtcF"
+            class="sc-crXcEl jyzewH"
           />
           <div
-            class="sc-kDDrLX cyugPZ"
+            class="sc-crXcEl jSmUjv"
           />
           <div
-            class="sc-kDDrLX grMaMB"
+            class="sc-crXcEl jVOpOT"
           />
         </div>
       </div>
     </button>
     <button
-      class="sc-iqcoie iDPilc admin-analytics__control"
+      class="sc-evZas jzlNIL admin-analytics__control"
       type="button"
     >
       <span
-        class="sc-evZas bfIsxJ"
+        class="sc-ksZaOG cPAimV"
       >
         Show filters
       </span>
@@ -335,7 +335,7 @@ exports[`<AdminAnalytics /> should render correctly with user 1`] = `
       Admin only
     </h2>
     <span
-      class="sc-ksZaOG cQKWUS"
+      class="sc-fnykZs kIjAem"
     >
       You need to be logged in with an admin account to view this content.
       <br />

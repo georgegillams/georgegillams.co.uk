@@ -6,27 +6,27 @@ exports[`<Account /> should render correctly - index 1`] = `
     class=""
   >
     <div
-      class="skeleton__outer skeleton__section"
+      class="sc-jqUVSM hehiTi"
     >
       <div
-        class="skeleton__shimmer"
+        class="sc-kDDrLX jqDTPj"
         style="margin-left: -0px;"
       />
     </div>
     <div
-      class="skeleton__outer skeleton__button"
+      class="sc-jqUVSM crAaGm"
       style="margin-top: 1.2rem;"
     >
       <div
-        class="skeleton__shimmer"
+        class="sc-kDDrLX jqDTPj"
         style="margin-left: -0px;"
       />
     </div>
     <div
-      class="skeleton__outer skeleton__button"
+      class="sc-jqUVSM crAaGm"
     >
       <div
-        class="skeleton__shimmer"
+        class="sc-kDDrLX jqDTPj"
         style="margin-left: -0px;"
       />
     </div>
@@ -48,21 +48,21 @@ exports[`<Account /> should render correctly with initial state 1`] = `
       class="account__control-panel"
     >
       <button
-        class="sc-crXcEl kEYxNj account__button"
+        class="sc-breuTD cIraFQ account__button"
         type="button"
       >
         <span
-          class="sc-breuTD powPW"
+          class="sc-hAZoDl gYBdAO"
         >
           Get a new verification email
         </span>
       </button>
       <button
-        class="sc-crXcEl iLdlBe outer"
+        class="sc-breuTD fBUHnV outer"
         type="button"
       >
         <span
-          class="sc-breuTD powPW"
+          class="sc-hAZoDl gYBdAO"
         >
           Logout
         </span>
@@ -86,21 +86,21 @@ exports[`<Account /> should render correctly with initial state 2`] = `
       class="account__control-panel"
     >
       <button
-        class="sc-crXcEl kEYxNj account__button"
+        class="sc-breuTD cIraFQ account__button"
         type="button"
       >
         <span
-          class="sc-breuTD powPW"
+          class="sc-hAZoDl gYBdAO"
         >
           Get a new verification email
         </span>
       </button>
       <button
-        class="sc-crXcEl iLdlBe outer"
+        class="sc-breuTD fBUHnV outer"
         type="button"
       >
         <span
-          class="sc-breuTD powPW"
+          class="sc-hAZoDl gYBdAO"
         >
           Logout
         </span>
@@ -124,21 +124,21 @@ exports[`<Account /> should render correctly with logOutError 1`] = `
       class="account__control-panel"
     >
       <button
-        class="sc-crXcEl kEYxNj account__button"
+        class="sc-breuTD cIraFQ account__button"
         type="button"
       >
         <span
-          class="sc-breuTD powPW"
+          class="sc-hAZoDl gYBdAO"
         >
           Get a new verification email
         </span>
       </button>
       <button
-        class="sc-crXcEl iLdlBe outer"
+        class="sc-breuTD fBUHnV outer"
         type="button"
       >
         <span
-          class="sc-breuTD powPW"
+          class="sc-hAZoDl gYBdAO"
         >
           Logout
         </span>
@@ -162,21 +162,21 @@ exports[`<Account /> should render correctly with logOutResult 1`] = `
       class="account__control-panel"
     >
       <button
-        class="sc-crXcEl kEYxNj account__button"
+        class="sc-breuTD cIraFQ account__button"
         type="button"
       >
         <span
-          class="sc-breuTD powPW"
+          class="sc-hAZoDl gYBdAO"
         >
           Get a new verification email
         </span>
       </button>
       <button
-        class="sc-crXcEl iLdlBe outer"
+        class="sc-breuTD fBUHnV outer"
         type="button"
       >
         <span
-          class="sc-breuTD powPW"
+          class="sc-hAZoDl gYBdAO"
         >
           Logout
         </span>
@@ -200,55 +200,55 @@ exports[`<Account /> should render correctly with loggingOut=true 1`] = `
       class="account__control-panel"
     >
       <button
-        class="sc-crXcEl kEYxNj account__button"
+        class="sc-breuTD cIraFQ account__button"
         type="button"
       >
         <span
-          class="sc-breuTD powPW"
+          class="sc-hAZoDl gYBdAO"
         >
           Get a new verification email
         </span>
       </button>
       <button
-        class="sc-crXcEl bdmsEy outer"
+        class="sc-breuTD botKqd outer"
         disabled=""
         type="button"
       >
         <span
-          class="sc-breuTD dwJTpx"
+          class="sc-hAZoDl jTMaxl"
         >
           Logout
         </span>
         <div
           aria-hidden="true"
-          class="sc-ksZaOG gstvZW button__loading-spinner"
+          class="sc-fnykZs jYSETG button__loading-spinner"
         >
           <div
-            class="sc-kDDrLX kWUBZq"
+            class="sc-crXcEl gcTsuc"
           >
             <div
-              class="sc-iqcoie bRqCOA"
+              class="sc-evZas eJPqj"
             />
             <div
-              class="sc-iqcoie hyZmyk"
+              class="sc-evZas fpKILf"
             />
             <div
-              class="sc-iqcoie hxuYMn"
+              class="sc-evZas eZptxQ"
             />
             <div
-              class="sc-iqcoie jpQCvm"
+              class="sc-evZas bOFFkB"
             />
             <div
-              class="sc-iqcoie cYotlJ"
+              class="sc-evZas iFBFTy"
             />
             <div
-              class="sc-iqcoie hAYXcQ"
+              class="sc-evZas htaoqH"
             />
             <div
-              class="sc-iqcoie bWgjE"
+              class="sc-evZas cYwNmX"
             />
             <div
-              class="sc-iqcoie dXrhCM"
+              class="sc-evZas kutSFz"
             />
           </div>
         </div>
@@ -264,27 +264,27 @@ exports[`<Account /> should render correctly with no user 1`] = `
     class=""
   >
     <div
-      class="skeleton__outer skeleton__section"
+      class="sc-jqUVSM hehiTi"
     >
       <div
-        class="skeleton__shimmer"
+        class="sc-kDDrLX jqDTPj"
         style="margin-left: -0px;"
       />
     </div>
     <div
-      class="skeleton__outer skeleton__button"
+      class="sc-jqUVSM crAaGm"
       style="margin-top: 1.2rem;"
     >
       <div
-        class="skeleton__shimmer"
+        class="sc-kDDrLX jqDTPj"
         style="margin-left: -0px;"
       />
     </div>
     <div
-      class="skeleton__outer skeleton__button"
+      class="sc-jqUVSM crAaGm"
     >
       <div
-        class="skeleton__shimmer"
+        class="sc-kDDrLX jqDTPj"
         style="margin-left: -0px;"
       />
     </div>
@@ -306,21 +306,21 @@ exports[`<Account /> should render correctly with requestVerificationEmailError 
       class="account__control-panel"
     >
       <button
-        class="sc-crXcEl kEYxNj account__button"
+        class="sc-breuTD cIraFQ account__button"
         type="button"
       >
         <span
-          class="sc-breuTD powPW"
+          class="sc-hAZoDl gYBdAO"
         >
           Get a new verification email
         </span>
       </button>
       <button
-        class="sc-crXcEl iLdlBe outer"
+        class="sc-breuTD fBUHnV outer"
         type="button"
       >
         <span
-          class="sc-breuTD powPW"
+          class="sc-hAZoDl gYBdAO"
         >
           Logout
         </span>
@@ -344,21 +344,21 @@ exports[`<Account /> should render correctly with requestVerificationEmailResult
       class="account__control-panel"
     >
       <button
-        class="sc-crXcEl kEYxNj account__button"
+        class="sc-breuTD cIraFQ account__button"
         type="button"
       >
         <span
-          class="sc-breuTD powPW"
+          class="sc-hAZoDl gYBdAO"
         >
           Get a new verification email
         </span>
       </button>
       <button
-        class="sc-crXcEl iLdlBe outer"
+        class="sc-breuTD fBUHnV outer"
         type="button"
       >
         <span
-          class="sc-breuTD powPW"
+          class="sc-hAZoDl gYBdAO"
         >
           Logout
         </span>
@@ -382,55 +382,55 @@ exports[`<Account /> should render correctly with requestingVerificationEmail=tr
       class="account__control-panel"
     >
       <button
-        class="sc-crXcEl eZWdef account__button"
+        class="sc-breuTD HMkzI account__button"
         disabled=""
         type="button"
       >
         <span
-          class="sc-breuTD dwJTpx"
+          class="sc-hAZoDl jTMaxl"
         >
           Get a new verification email
         </span>
         <div
           aria-hidden="true"
-          class="sc-ksZaOG gstvZW button__loading-spinner"
+          class="sc-fnykZs jYSETG button__loading-spinner"
         >
           <div
-            class="sc-kDDrLX kWUBZq"
+            class="sc-crXcEl gcTsuc"
           >
             <div
-              class="sc-iqcoie bRqCOA"
+              class="sc-evZas eJPqj"
             />
             <div
-              class="sc-iqcoie hyZmyk"
+              class="sc-evZas fpKILf"
             />
             <div
-              class="sc-iqcoie hxuYMn"
+              class="sc-evZas eZptxQ"
             />
             <div
-              class="sc-iqcoie jpQCvm"
+              class="sc-evZas bOFFkB"
             />
             <div
-              class="sc-iqcoie cYotlJ"
+              class="sc-evZas iFBFTy"
             />
             <div
-              class="sc-iqcoie hAYXcQ"
+              class="sc-evZas htaoqH"
             />
             <div
-              class="sc-iqcoie bWgjE"
+              class="sc-evZas cYwNmX"
             />
             <div
-              class="sc-iqcoie dXrhCM"
+              class="sc-evZas kutSFz"
             />
           </div>
         </div>
       </button>
       <button
-        class="sc-crXcEl iLdlBe outer"
+        class="sc-breuTD fBUHnV outer"
         type="button"
       >
         <span
-          class="sc-breuTD powPW"
+          class="sc-hAZoDl gYBdAO"
         >
           Logout
         </span>
@@ -454,11 +454,11 @@ exports[`<Account /> should render correctly with user with emailVerified=true 1
       class="account__control-panel"
     >
       <button
-        class="sc-crXcEl iLdlBe outer"
+        class="sc-breuTD fBUHnV outer"
         type="button"
       >
         <span
-          class="sc-breuTD powPW"
+          class="sc-hAZoDl gYBdAO"
         >
           Logout
         </span>
