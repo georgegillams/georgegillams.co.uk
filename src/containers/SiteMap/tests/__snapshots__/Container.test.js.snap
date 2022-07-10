@@ -579,33 +579,6 @@ exports[`<SiteMap /> should render correctly - index 1`] = `
       <div>
         <a
           class="sc-jqUVSM ehmyNV"
-          href="/articles/uk-bank-security"
-        >
-          /articles/uk-bank-security ⇒ /blog/uk-bank-security
-        </a>
-        <br />
-      </div>
-      <div>
-        <a
-          class="sc-jqUVSM ehmyNV"
-          href="/articles/week-of-rust"
-        >
-          /articles/week-of-rust ⇒ /blog/week-of-rust
-        </a>
-        <br />
-      </div>
-      <div>
-        <a
-          class="sc-jqUVSM ehmyNV"
-          href="/articles/react-http-response-codes"
-        >
-          /articles/react-http-response-codes ⇒ /blog/react-http-response-codes
-        </a>
-        <br />
-      </div>
-      <div>
-        <a
-          class="sc-jqUVSM ehmyNV"
           href="/articles/list"
         >
           /articles/list ⇒ /blog
@@ -651,9 +624,18 @@ exports[`<SiteMap /> should render correctly - index 1`] = `
       <div>
         <a
           class="sc-jqUVSM ehmyNV"
-          href="/blog"
+          href="/travel"
         >
-          /blog ⇒ /travel
+          /travel ⇒ /blog
+        </a>
+        <br />
+      </div>
+      <div>
+        <a
+          class="sc-jqUVSM ehmyNV"
+          href="/travel/list"
+        >
+          /travel/list ⇒ /blog
         </a>
         <br />
       </div>
@@ -705,60 +687,6 @@ exports[`<SiteMap /> should render correctly - index 1`] = `
       <div>
         <a
           class="sc-jqUVSM ehmyNV"
-          href="/travel/list"
-        >
-          /travel/list ⇒ /travel
-        </a>
-        <br />
-      </div>
-      <div>
-        <a
-          class="sc-jqUVSM ehmyNV"
-          href="/travel/view?id=kzm87"
-        >
-          /travel/view?id=kzm87 ⇒ /travel/serre-chevalier-2017
-        </a>
-        <br />
-      </div>
-      <div>
-        <a
-          class="sc-jqUVSM ehmyNV"
-          href="/travel/view?id=m4noe"
-        >
-          /travel/view?id=m4noe ⇒ /travel/disneyland-2017
-        </a>
-        <br />
-      </div>
-      <div>
-        <a
-          class="sc-jqUVSM ehmyNV"
-          href="/travel/view?id=e0muz1"
-        >
-          /travel/view?id=e0muz1 ⇒ /travel/munich-2017
-        </a>
-        <br />
-      </div>
-      <div>
-        <a
-          class="sc-jqUVSM ehmyNV"
-          href="/travel/view?id=evrd8w"
-        >
-          /travel/view?id=evrd8w ⇒ /travel/longleat-2017
-        </a>
-        <br />
-      </div>
-      <div>
-        <a
-          class="sc-jqUVSM ehmyNV"
-          href="/travel/view?id=q03ms"
-        >
-          /travel/view?id=q03ms ⇒ /travel/iceland-2018
-        </a>
-        <br />
-      </div>
-      <div>
-        <a
-          class="sc-jqUVSM ehmyNV"
           href="/art"
         >
           /art ⇒ /photography
@@ -789,15 +717,6 @@ exports[`<SiteMap /> should render correctly - index 1`] = `
           href="/photo"
         >
           /photo ⇒ /photography
-        </a>
-        <br />
-      </div>
-      <div>
-        <a
-          class="sc-jqUVSM ehmyNV"
-          href="/payment"
-        >
-          /payment ⇒ /payments
         </a>
         <br />
       </div>
@@ -1383,33 +1302,6 @@ exports[`<SiteMap /> should render correctly 1`] = `
       <div>
         <a
           class="sc-jqUVSM ehmyNV"
-          href="/articles/uk-bank-security"
-        >
-          /articles/uk-bank-security ⇒ /blog/uk-bank-security
-        </a>
-        <br />
-      </div>
-      <div>
-        <a
-          class="sc-jqUVSM ehmyNV"
-          href="/articles/week-of-rust"
-        >
-          /articles/week-of-rust ⇒ /blog/week-of-rust
-        </a>
-        <br />
-      </div>
-      <div>
-        <a
-          class="sc-jqUVSM ehmyNV"
-          href="/articles/react-http-response-codes"
-        >
-          /articles/react-http-response-codes ⇒ /blog/react-http-response-codes
-        </a>
-        <br />
-      </div>
-      <div>
-        <a
-          class="sc-jqUVSM ehmyNV"
           href="/articles/list"
         >
           /articles/list ⇒ /blog
@@ -1455,9 +1347,18 @@ exports[`<SiteMap /> should render correctly 1`] = `
       <div>
         <a
           class="sc-jqUVSM ehmyNV"
-          href="/blog"
+          href="/travel"
         >
-          /blog ⇒ /travel
+          /travel ⇒ /blog
+        </a>
+        <br />
+      </div>
+      <div>
+        <a
+          class="sc-jqUVSM ehmyNV"
+          href="/travel/list"
+        >
+          /travel/list ⇒ /blog
         </a>
         <br />
       </div>
@@ -1509,60 +1410,6 @@ exports[`<SiteMap /> should render correctly 1`] = `
       <div>
         <a
           class="sc-jqUVSM ehmyNV"
-          href="/travel/list"
-        >
-          /travel/list ⇒ /travel
-        </a>
-        <br />
-      </div>
-      <div>
-        <a
-          class="sc-jqUVSM ehmyNV"
-          href="/travel/view?id=kzm87"
-        >
-          /travel/view?id=kzm87 ⇒ /travel/serre-chevalier-2017
-        </a>
-        <br />
-      </div>
-      <div>
-        <a
-          class="sc-jqUVSM ehmyNV"
-          href="/travel/view?id=m4noe"
-        >
-          /travel/view?id=m4noe ⇒ /travel/disneyland-2017
-        </a>
-        <br />
-      </div>
-      <div>
-        <a
-          class="sc-jqUVSM ehmyNV"
-          href="/travel/view?id=e0muz1"
-        >
-          /travel/view?id=e0muz1 ⇒ /travel/munich-2017
-        </a>
-        <br />
-      </div>
-      <div>
-        <a
-          class="sc-jqUVSM ehmyNV"
-          href="/travel/view?id=evrd8w"
-        >
-          /travel/view?id=evrd8w ⇒ /travel/longleat-2017
-        </a>
-        <br />
-      </div>
-      <div>
-        <a
-          class="sc-jqUVSM ehmyNV"
-          href="/travel/view?id=q03ms"
-        >
-          /travel/view?id=q03ms ⇒ /travel/iceland-2018
-        </a>
-        <br />
-      </div>
-      <div>
-        <a
-          class="sc-jqUVSM ehmyNV"
           href="/art"
         >
           /art ⇒ /photography
@@ -1593,15 +1440,6 @@ exports[`<SiteMap /> should render correctly 1`] = `
           href="/photo"
         >
           /photo ⇒ /photography
-        </a>
-        <br />
-      </div>
-      <div>
-        <a
-          class="sc-jqUVSM ehmyNV"
-          href="/payment"
-        >
-          /payment ⇒ /payments
         </a>
         <br />
       </div>
@@ -2147,33 +1985,6 @@ exports[`<SiteMap /> should render correctly with blogs 1`] = `
       <div>
         <a
           class="sc-jqUVSM ehmyNV"
-          href="/articles/uk-bank-security"
-        >
-          /articles/uk-bank-security ⇒ /blog/uk-bank-security
-        </a>
-        <br />
-      </div>
-      <div>
-        <a
-          class="sc-jqUVSM ehmyNV"
-          href="/articles/week-of-rust"
-        >
-          /articles/week-of-rust ⇒ /blog/week-of-rust
-        </a>
-        <br />
-      </div>
-      <div>
-        <a
-          class="sc-jqUVSM ehmyNV"
-          href="/articles/react-http-response-codes"
-        >
-          /articles/react-http-response-codes ⇒ /blog/react-http-response-codes
-        </a>
-        <br />
-      </div>
-      <div>
-        <a
-          class="sc-jqUVSM ehmyNV"
           href="/articles/list"
         >
           /articles/list ⇒ /blog
@@ -2219,9 +2030,18 @@ exports[`<SiteMap /> should render correctly with blogs 1`] = `
       <div>
         <a
           class="sc-jqUVSM ehmyNV"
-          href="/blog"
+          href="/travel"
         >
-          /blog ⇒ /travel
+          /travel ⇒ /blog
+        </a>
+        <br />
+      </div>
+      <div>
+        <a
+          class="sc-jqUVSM ehmyNV"
+          href="/travel/list"
+        >
+          /travel/list ⇒ /blog
         </a>
         <br />
       </div>
@@ -2273,60 +2093,6 @@ exports[`<SiteMap /> should render correctly with blogs 1`] = `
       <div>
         <a
           class="sc-jqUVSM ehmyNV"
-          href="/travel/list"
-        >
-          /travel/list ⇒ /travel
-        </a>
-        <br />
-      </div>
-      <div>
-        <a
-          class="sc-jqUVSM ehmyNV"
-          href="/travel/view?id=kzm87"
-        >
-          /travel/view?id=kzm87 ⇒ /travel/serre-chevalier-2017
-        </a>
-        <br />
-      </div>
-      <div>
-        <a
-          class="sc-jqUVSM ehmyNV"
-          href="/travel/view?id=m4noe"
-        >
-          /travel/view?id=m4noe ⇒ /travel/disneyland-2017
-        </a>
-        <br />
-      </div>
-      <div>
-        <a
-          class="sc-jqUVSM ehmyNV"
-          href="/travel/view?id=e0muz1"
-        >
-          /travel/view?id=e0muz1 ⇒ /travel/munich-2017
-        </a>
-        <br />
-      </div>
-      <div>
-        <a
-          class="sc-jqUVSM ehmyNV"
-          href="/travel/view?id=evrd8w"
-        >
-          /travel/view?id=evrd8w ⇒ /travel/longleat-2017
-        </a>
-        <br />
-      </div>
-      <div>
-        <a
-          class="sc-jqUVSM ehmyNV"
-          href="/travel/view?id=q03ms"
-        >
-          /travel/view?id=q03ms ⇒ /travel/iceland-2018
-        </a>
-        <br />
-      </div>
-      <div>
-        <a
-          class="sc-jqUVSM ehmyNV"
           href="/art"
         >
           /art ⇒ /photography
@@ -2357,15 +2123,6 @@ exports[`<SiteMap /> should render correctly with blogs 1`] = `
           href="/photo"
         >
           /photo ⇒ /photography
-        </a>
-        <br />
-      </div>
-      <div>
-        <a
-          class="sc-jqUVSM ehmyNV"
-          href="/payment"
-        >
-          /payment ⇒ /payments
         </a>
         <br />
       </div>
@@ -2955,33 +2712,6 @@ exports[`<SiteMap /> should render correctly with blogs and admin user 1`] = `
       <div>
         <a
           class="sc-jqUVSM ehmyNV"
-          href="/articles/uk-bank-security"
-        >
-          /articles/uk-bank-security ⇒ /blog/uk-bank-security
-        </a>
-        <br />
-      </div>
-      <div>
-        <a
-          class="sc-jqUVSM ehmyNV"
-          href="/articles/week-of-rust"
-        >
-          /articles/week-of-rust ⇒ /blog/week-of-rust
-        </a>
-        <br />
-      </div>
-      <div>
-        <a
-          class="sc-jqUVSM ehmyNV"
-          href="/articles/react-http-response-codes"
-        >
-          /articles/react-http-response-codes ⇒ /blog/react-http-response-codes
-        </a>
-        <br />
-      </div>
-      <div>
-        <a
-          class="sc-jqUVSM ehmyNV"
           href="/articles/list"
         >
           /articles/list ⇒ /blog
@@ -3027,9 +2757,18 @@ exports[`<SiteMap /> should render correctly with blogs and admin user 1`] = `
       <div>
         <a
           class="sc-jqUVSM ehmyNV"
-          href="/blog"
+          href="/travel"
         >
-          /blog ⇒ /travel
+          /travel ⇒ /blog
+        </a>
+        <br />
+      </div>
+      <div>
+        <a
+          class="sc-jqUVSM ehmyNV"
+          href="/travel/list"
+        >
+          /travel/list ⇒ /blog
         </a>
         <br />
       </div>
@@ -3081,60 +2820,6 @@ exports[`<SiteMap /> should render correctly with blogs and admin user 1`] = `
       <div>
         <a
           class="sc-jqUVSM ehmyNV"
-          href="/travel/list"
-        >
-          /travel/list ⇒ /travel
-        </a>
-        <br />
-      </div>
-      <div>
-        <a
-          class="sc-jqUVSM ehmyNV"
-          href="/travel/view?id=kzm87"
-        >
-          /travel/view?id=kzm87 ⇒ /travel/serre-chevalier-2017
-        </a>
-        <br />
-      </div>
-      <div>
-        <a
-          class="sc-jqUVSM ehmyNV"
-          href="/travel/view?id=m4noe"
-        >
-          /travel/view?id=m4noe ⇒ /travel/disneyland-2017
-        </a>
-        <br />
-      </div>
-      <div>
-        <a
-          class="sc-jqUVSM ehmyNV"
-          href="/travel/view?id=e0muz1"
-        >
-          /travel/view?id=e0muz1 ⇒ /travel/munich-2017
-        </a>
-        <br />
-      </div>
-      <div>
-        <a
-          class="sc-jqUVSM ehmyNV"
-          href="/travel/view?id=evrd8w"
-        >
-          /travel/view?id=evrd8w ⇒ /travel/longleat-2017
-        </a>
-        <br />
-      </div>
-      <div>
-        <a
-          class="sc-jqUVSM ehmyNV"
-          href="/travel/view?id=q03ms"
-        >
-          /travel/view?id=q03ms ⇒ /travel/iceland-2018
-        </a>
-        <br />
-      </div>
-      <div>
-        <a
-          class="sc-jqUVSM ehmyNV"
           href="/art"
         >
           /art ⇒ /photography
@@ -3165,15 +2850,6 @@ exports[`<SiteMap /> should render correctly with blogs and admin user 1`] = `
           href="/photo"
         >
           /photo ⇒ /photography
-        </a>
-        <br />
-      </div>
-      <div>
-        <a
-          class="sc-jqUVSM ehmyNV"
-          href="/payment"
-        >
-          /payment ⇒ /payments
         </a>
         <br />
       </div>
@@ -3720,33 +3396,6 @@ exports[`<SiteMap /> should render correctly with ssrBlogs 1`] = `
       <div>
         <a
           class="sc-jqUVSM ehmyNV"
-          href="/articles/uk-bank-security"
-        >
-          /articles/uk-bank-security ⇒ /blog/uk-bank-security
-        </a>
-        <br />
-      </div>
-      <div>
-        <a
-          class="sc-jqUVSM ehmyNV"
-          href="/articles/week-of-rust"
-        >
-          /articles/week-of-rust ⇒ /blog/week-of-rust
-        </a>
-        <br />
-      </div>
-      <div>
-        <a
-          class="sc-jqUVSM ehmyNV"
-          href="/articles/react-http-response-codes"
-        >
-          /articles/react-http-response-codes ⇒ /blog/react-http-response-codes
-        </a>
-        <br />
-      </div>
-      <div>
-        <a
-          class="sc-jqUVSM ehmyNV"
           href="/articles/list"
         >
           /articles/list ⇒ /blog
@@ -3792,9 +3441,18 @@ exports[`<SiteMap /> should render correctly with ssrBlogs 1`] = `
       <div>
         <a
           class="sc-jqUVSM ehmyNV"
-          href="/blog"
+          href="/travel"
         >
-          /blog ⇒ /travel
+          /travel ⇒ /blog
+        </a>
+        <br />
+      </div>
+      <div>
+        <a
+          class="sc-jqUVSM ehmyNV"
+          href="/travel/list"
+        >
+          /travel/list ⇒ /blog
         </a>
         <br />
       </div>
@@ -3846,60 +3504,6 @@ exports[`<SiteMap /> should render correctly with ssrBlogs 1`] = `
       <div>
         <a
           class="sc-jqUVSM ehmyNV"
-          href="/travel/list"
-        >
-          /travel/list ⇒ /travel
-        </a>
-        <br />
-      </div>
-      <div>
-        <a
-          class="sc-jqUVSM ehmyNV"
-          href="/travel/view?id=kzm87"
-        >
-          /travel/view?id=kzm87 ⇒ /travel/serre-chevalier-2017
-        </a>
-        <br />
-      </div>
-      <div>
-        <a
-          class="sc-jqUVSM ehmyNV"
-          href="/travel/view?id=m4noe"
-        >
-          /travel/view?id=m4noe ⇒ /travel/disneyland-2017
-        </a>
-        <br />
-      </div>
-      <div>
-        <a
-          class="sc-jqUVSM ehmyNV"
-          href="/travel/view?id=e0muz1"
-        >
-          /travel/view?id=e0muz1 ⇒ /travel/munich-2017
-        </a>
-        <br />
-      </div>
-      <div>
-        <a
-          class="sc-jqUVSM ehmyNV"
-          href="/travel/view?id=evrd8w"
-        >
-          /travel/view?id=evrd8w ⇒ /travel/longleat-2017
-        </a>
-        <br />
-      </div>
-      <div>
-        <a
-          class="sc-jqUVSM ehmyNV"
-          href="/travel/view?id=q03ms"
-        >
-          /travel/view?id=q03ms ⇒ /travel/iceland-2018
-        </a>
-        <br />
-      </div>
-      <div>
-        <a
-          class="sc-jqUVSM ehmyNV"
           href="/art"
         >
           /art ⇒ /photography
@@ -3930,15 +3534,6 @@ exports[`<SiteMap /> should render correctly with ssrBlogs 1`] = `
           href="/photo"
         >
           /photo ⇒ /photography
-        </a>
-        <br />
-      </div>
-      <div>
-        <a
-          class="sc-jqUVSM ehmyNV"
-          href="/payment"
-        >
-          /payment ⇒ /payments
         </a>
         <br />
       </div>
