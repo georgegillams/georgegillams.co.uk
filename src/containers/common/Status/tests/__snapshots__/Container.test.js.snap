@@ -4,7 +4,7 @@ exports[`<Status /> should render correctly 1`] = `
 <div>
   <div>
     <h1
-      class="page-title__heading"
+      class="sc-bczRLJ hDLBIv sc-breuTD iUaPig"
     >
       Status
     </h1>
@@ -20,10 +20,10 @@ exports[`<Status /> should render correctly 1`] = `
       src="https://img.shields.io/david/GITHUB_REPO"
     />
     <div
-      class="subsection__outer pages__component"
+      class="sc-jqUVSM leXYdV pages__component"
     >
       <span
-        class="sc-bczRLJ bhVmoO"
+        class="sc-evZas FCsLq"
       >
         Built 
         about 52 years ago
@@ -33,27 +33,27 @@ exports[`<Status /> should render correctly 1`] = `
       </span>
     </div>
     <div
-      class="subsection__outer pages__component"
+      class="sc-jqUVSM leXYdV pages__component"
     >
       <span
-        class="sc-bczRLJ bhVmoO"
+        class="sc-evZas FCsLq"
       >
         Environment 
         test-node-env
       </span>
     </div>
     <div
-      class="subsection__outer pages__component"
+      class="sc-jqUVSM leXYdV pages__component"
     >
       <div
-        class="section__outer sc-kDDrLX ksrIma"
+        class="sc-jqUVSM leXYdV sc-hAZoDl kWJBEH"
       >
-        <h2
-          class="section__heading"
+        <h1
+          class="sc-gsnTZi cTWewb sc-crXcEl jisdVx"
           id="app-config"
         >
           App config
-        </h2>
+        </h1>
         <div
           role="button"
           style="margin-left: 0rem;"

@@ -3,14 +3,14 @@
 exports[`<AdminOnly /> Should render correctly 1`] = `
 <div>
   <div
-    class="section__outer"
+    class="sc-kDDrLX iNAFzC"
   >
-    <h2
-      class="section__heading"
+    <h1
+      class="sc-dkzDqf iBtyHU sc-evZas cCtlkt"
       id="admin-only"
     >
       Admin only
-    </h2>
+    </h1>
     <span
       class="sc-bczRLJ bhVmoO"
     >
@@ -36,14 +36,14 @@ exports[`<AdminOnly /> Should render correctly with admin user 1`] = `
 exports[`<AdminOnly /> Should render correctly with user 1`] = `
 <div>
   <div
-    class="section__outer"
+    class="sc-kDDrLX iNAFzC"
   >
-    <h2
-      class="section__heading"
+    <h1
+      class="sc-dkzDqf iBtyHU sc-evZas cCtlkt"
       id="admin-only"
     >
       Admin only
-    </h2>
+    </h1>
     <span
       class="sc-bczRLJ bhVmoO"
     >

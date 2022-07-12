@@ -8,26 +8,6 @@ import appConfig from 'helpers/appConfig';
 const PageTitle = props => {
   const { link, name, pageTitle, ...rest } = props;
 
-  let result = null;
-  if (!link) {
-    result = <GGPageTitle name={name} {...rest} />;
-  } else {
-    result = (
-      <GGPageTitle
-        name={name}
-        link={link}
-        renderLink={(linkHref, linkName, linkClassName) => {
-          return (
-            <TextLink href={linkHref} className={linkClassName}>
-              {linkName}
-            </TextLink>
-          );
-        }}
-        {...rest}
-      />
-    );
-  }
-
   const pageTitleFinal = `${pageTitle || name} - ${appConfig.projectTitle}`;
 
   return (
@@ -36,7 +16,7 @@ const PageTitle = props => {
         <title>{pageTitleFinal}</title>
         <meta key="og:title" name="og:title" content={pageTitleFinal} />
       </Head>
-      {result}
+      <GGPageTitle name={name} link={link} linkProvider={props => <TextLink {...props} />} {...rest} />
     </>
   );
 };

@@ -3,23 +3,23 @@
 exports[`<ApiDocs /> should render correctly 1`] = `
 <div>
   <h1
-    class="page-title__heading"
+    class="sc-gsnTZi hUDWSp sc-kDDrLX cCIGfN"
   >
     API docs
   </h1>
   <table
     cellpadding="4"
     cellspacing="4"
-    class="sc-kDDrLX kYoHZQ api-docs__table"
+    class="sc-crXcEl fAmPEq api-docs__table"
   >
     <thead
-      class="sc-iqcoie bNvTuK"
+      class="sc-evZas bDIEnd"
     >
       <tr
-        class="sc-evZas"
+        class="sc-ksZaOG"
       >
         <th
-          class="sc-breuTD KWokR api-docs__cell"
+          class="sc-hAZoDl bGblnd api-docs__cell"
         >
           <span
             class="sc-bczRLJ deidno"
@@ -28,7 +28,7 @@ exports[`<ApiDocs /> should render correctly 1`] = `
           </span>
         </th>
         <th
-          class="sc-breuTD KWokR api-docs__cell"
+          class="sc-hAZoDl bGblnd api-docs__cell"
         >
           <span
             class="sc-bczRLJ deidno"
@@ -37,7 +37,7 @@ exports[`<ApiDocs /> should render correctly 1`] = `
           </span>
         </th>
         <th
-          class="sc-breuTD KWokR api-docs__cell"
+          class="sc-hAZoDl bGblnd api-docs__cell"
         >
           <span
             class="sc-bczRLJ deidno"
@@ -46,7 +46,7 @@ exports[`<ApiDocs /> should render correctly 1`] = `
           </span>
         </th>
         <th
-          class="sc-breuTD KWokR api-docs__cell"
+          class="sc-hAZoDl bGblnd api-docs__cell"
         >
           <span
             class="sc-bczRLJ deidno"
@@ -55,7 +55,7 @@ exports[`<ApiDocs /> should render correctly 1`] = `
           </span>
         </th>
         <th
-          class="sc-breuTD KWokR api-docs__cell"
+          class="sc-hAZoDl bGblnd api-docs__cell"
         >
           <span
             class="sc-bczRLJ deidno"
@@ -66,13 +66,13 @@ exports[`<ApiDocs /> should render correctly 1`] = `
       </tr>
     </thead>
     <tbody
-      class="sc-crXcEl"
+      class="sc-breuTD"
     >
       <tr
-        class="sc-evZas"
+        class="sc-ksZaOG"
       >
         <th
-          class="sc-breuTD KWokR api-docs__cell"
+          class="sc-hAZoDl bGblnd api-docs__cell"
         >
           <a
             aria-label="/analytics/create (opens in a new tab)"
@@ -100,7 +100,7 @@ exports[`<ApiDocs /> should render correctly 1`] = `
           </a>
         </th>
         <th
-          class="sc-breuTD KWokR api-docs__cell"
+          class="sc-hAZoDl bGblnd api-docs__cell"
         >
           <span
             class="sc-bczRLJ deidno api-docs__method"
@@ -109,14 +109,14 @@ exports[`<ApiDocs /> should render correctly 1`] = `
           </span>
         </th>
         <th
-          class="sc-breuTD KWokR api-docs__cell"
+          class="sc-hAZoDl bGblnd api-docs__cell"
         >
           <span
             class="sc-bczRLJ deidno"
           />
         </th>
         <th
-          class="sc-breuTD KWokR api-docs__cell"
+          class="sc-hAZoDl bGblnd api-docs__cell"
         >
           <span
             class="sc-bczRLJ deidno"
@@ -125,7 +125,7 @@ exports[`<ApiDocs /> should render correctly 1`] = `
           </span>
         </th>
         <th
-          class="sc-breuTD KWokR api-docs__cell"
+          class="sc-hAZoDl bGblnd api-docs__cell"
         >
           <span
             class="sc-bczRLJ deidno api-docs__description"
@@ -135,10 +135,10 @@ exports[`<ApiDocs /> should render correctly 1`] = `
         </th>
       </tr>
       <tr
-        class="sc-evZas"
+        class="sc-ksZaOG"
       >
         <th
-          class="sc-breuTD KWokR api-docs__cell"
+          class="sc-hAZoDl bGblnd api-docs__cell"
         >
           <a
             aria-label="/analytics/load-all (opens in a new tab)"
@@ -166,7 +166,7 @@ exports[`<ApiDocs /> should render correctly 1`] = `
           </a>
         </th>
         <th
-          class="sc-breuTD KWokR api-docs__cell"
+          class="sc-hAZoDl bGblnd api-docs__cell"
         >
           <span
             class="sc-bczRLJ deidno api-docs__method"
@@ -175,14 +175,14 @@ exports[`<ApiDocs /> should render correctly 1`] = `
           </span>
         </th>
         <th
-          class="sc-breuTD KWokR api-docs__cell"
+          class="sc-hAZoDl bGblnd api-docs__cell"
         >
           <span
             class="sc-bczRLJ deidno"
           />
         </th>
         <th
-          class="sc-breuTD KWokR api-docs__cell"
+          class="sc-hAZoDl bGblnd api-docs__cell"
         >
           <span
             class="sc-bczRLJ deidno"
@@ -191,7 +191,7 @@ exports[`<ApiDocs /> should render correctly 1`] = `
           </span>
         </th>
         <th
-          class="sc-breuTD KWokR api-docs__cell"
+          class="sc-hAZoDl bGblnd api-docs__cell"
         >
           <span
             class="sc-bczRLJ deidno api-docs__description"
@@ -201,10 +201,10 @@ exports[`<ApiDocs /> should render correctly 1`] = `
         </th>
       </tr>
       <tr
-        class="sc-evZas"
+        class="sc-ksZaOG"
       >
         <th
-          class="sc-breuTD KWokR api-docs__cell"
+          class="sc-hAZoDl bGblnd api-docs__cell"
         >
           <a
             aria-label="/analytics/load (opens in a new tab)"
@@ -232,7 +232,7 @@ exports[`<ApiDocs /> should render correctly 1`] = `
           </a>
         </th>
         <th
-          class="sc-breuTD KWokR api-docs__cell"
+          class="sc-hAZoDl bGblnd api-docs__cell"
         >
           <span
             class="sc-bczRLJ deidno api-docs__method"
@@ -241,14 +241,14 @@ exports[`<ApiDocs /> should render correctly 1`] = `
           </span>
         </th>
         <th
-          class="sc-breuTD KWokR api-docs__cell"
+          class="sc-hAZoDl bGblnd api-docs__cell"
         >
           <span
             class="sc-bczRLJ deidno"
           />
         </th>
         <th
-          class="sc-breuTD KWokR api-docs__cell"
+          class="sc-hAZoDl bGblnd api-docs__cell"
         >
           <span
             class="sc-bczRLJ deidno"
@@ -257,7 +257,7 @@ exports[`<ApiDocs /> should render correctly 1`] = `
           </span>
         </th>
         <th
-          class="sc-breuTD KWokR api-docs__cell"
+          class="sc-hAZoDl bGblnd api-docs__cell"
         >
           <span
             class="sc-bczRLJ deidno api-docs__description"
@@ -267,10 +267,10 @@ exports[`<ApiDocs /> should render correctly 1`] = `
         </th>
       </tr>
       <tr
-        class="sc-evZas"
+        class="sc-ksZaOG"
       >
         <th
-          class="sc-breuTD KWokR api-docs__cell"
+          class="sc-hAZoDl bGblnd api-docs__cell"
         >
           <a
             aria-label="/auth/load (opens in a new tab)"
@@ -298,7 +298,7 @@ exports[`<ApiDocs /> should render correctly 1`] = `
           </a>
         </th>
         <th
-          class="sc-breuTD KWokR api-docs__cell"
+          class="sc-hAZoDl bGblnd api-docs__cell"
         >
           <span
             class="sc-bczRLJ deidno api-docs__method"
@@ -307,14 +307,14 @@ exports[`<ApiDocs /> should render correctly 1`] = `
           </span>
         </th>
         <th
-          class="sc-breuTD KWokR api-docs__cell"
+          class="sc-hAZoDl bGblnd api-docs__cell"
         >
           <span
             class="sc-bczRLJ deidno"
           />
         </th>
         <th
-          class="sc-breuTD KWokR api-docs__cell"
+          class="sc-hAZoDl bGblnd api-docs__cell"
         >
           <span
             class="sc-bczRLJ deidno"
@@ -323,7 +323,7 @@ exports[`<ApiDocs /> should render correctly 1`] = `
           </span>
         </th>
         <th
-          class="sc-breuTD KWokR api-docs__cell"
+          class="sc-hAZoDl bGblnd api-docs__cell"
         >
           <span
             class="sc-bczRLJ deidno api-docs__description"
@@ -333,10 +333,10 @@ exports[`<ApiDocs /> should render correctly 1`] = `
         </th>
       </tr>
       <tr
-        class="sc-evZas"
+        class="sc-ksZaOG"
       >
         <th
-          class="sc-breuTD KWokR api-docs__cell"
+          class="sc-hAZoDl bGblnd api-docs__cell"
         >
           <a
             aria-label="/auth/logout (opens in a new tab)"
@@ -364,7 +364,7 @@ exports[`<ApiDocs /> should render correctly 1`] = `
           </a>
         </th>
         <th
-          class="sc-breuTD KWokR api-docs__cell"
+          class="sc-hAZoDl bGblnd api-docs__cell"
         >
           <span
             class="sc-bczRLJ deidno api-docs__method"
@@ -373,14 +373,14 @@ exports[`<ApiDocs /> should render correctly 1`] = `
           </span>
         </th>
         <th
-          class="sc-breuTD KWokR api-docs__cell"
+          class="sc-hAZoDl bGblnd api-docs__cell"
         >
           <span
             class="sc-bczRLJ deidno"
           />
         </th>
         <th
-          class="sc-breuTD KWokR api-docs__cell"
+          class="sc-hAZoDl bGblnd api-docs__cell"
         >
           <span
             class="sc-bczRLJ deidno"
@@ -389,7 +389,7 @@ exports[`<ApiDocs /> should render correctly 1`] = `
           </span>
         </th>
         <th
-          class="sc-breuTD KWokR api-docs__cell"
+          class="sc-hAZoDl bGblnd api-docs__cell"
         >
           <span
             class="sc-bczRLJ deidno api-docs__description"
@@ -399,10 +399,10 @@ exports[`<ApiDocs /> should render correctly 1`] = `
         </th>
       </tr>
       <tr
-        class="sc-evZas"
+        class="sc-ksZaOG"
       >
         <th
-          class="sc-breuTD KWokR api-docs__cell"
+          class="sc-hAZoDl bGblnd api-docs__cell"
         >
           <a
             aria-label="/auth/request-verification-email (opens in a new tab)"
@@ -430,7 +430,7 @@ exports[`<ApiDocs /> should render correctly 1`] = `
           </a>
         </th>
         <th
-          class="sc-breuTD KWokR api-docs__cell"
+          class="sc-hAZoDl bGblnd api-docs__cell"
         >
           <span
             class="sc-bczRLJ deidno api-docs__method"
@@ -439,14 +439,14 @@ exports[`<ApiDocs /> should render correctly 1`] = `
           </span>
         </th>
         <th
-          class="sc-breuTD KWokR api-docs__cell"
+          class="sc-hAZoDl bGblnd api-docs__cell"
         >
           <span
             class="sc-bczRLJ deidno"
           />
         </th>
         <th
-          class="sc-breuTD KWokR api-docs__cell"
+          class="sc-hAZoDl bGblnd api-docs__cell"
         >
           <span
             class="sc-bczRLJ deidno"
@@ -455,7 +455,7 @@ exports[`<ApiDocs /> should render correctly 1`] = `
           </span>
         </th>
         <th
-          class="sc-breuTD KWokR api-docs__cell"
+          class="sc-hAZoDl bGblnd api-docs__cell"
         >
           <span
             class="sc-bczRLJ deidno api-docs__description"
@@ -465,10 +465,10 @@ exports[`<ApiDocs /> should render correctly 1`] = `
         </th>
       </tr>
       <tr
-        class="sc-evZas"
+        class="sc-ksZaOG"
       >
         <th
-          class="sc-breuTD KWokR api-docs__cell"
+          class="sc-hAZoDl bGblnd api-docs__cell"
         >
           <a
             aria-label="/auth/verify-email (opens in a new tab)"
@@ -496,7 +496,7 @@ exports[`<ApiDocs /> should render correctly 1`] = `
           </a>
         </th>
         <th
-          class="sc-breuTD KWokR api-docs__cell"
+          class="sc-hAZoDl bGblnd api-docs__cell"
         >
           <span
             class="sc-bczRLJ deidno api-docs__method"
@@ -505,14 +505,14 @@ exports[`<ApiDocs /> should render correctly 1`] = `
           </span>
         </th>
         <th
-          class="sc-breuTD KWokR api-docs__cell"
+          class="sc-hAZoDl bGblnd api-docs__cell"
         >
           <span
             class="sc-bczRLJ deidno"
           />
         </th>
         <th
-          class="sc-breuTD KWokR api-docs__cell"
+          class="sc-hAZoDl bGblnd api-docs__cell"
         >
           <span
             class="sc-bczRLJ deidno"
@@ -521,7 +521,7 @@ exports[`<ApiDocs /> should render correctly 1`] = `
           </span>
         </th>
         <th
-          class="sc-breuTD KWokR api-docs__cell"
+          class="sc-hAZoDl bGblnd api-docs__cell"
         >
           <span
             class="sc-bczRLJ deidno api-docs__description"
@@ -531,10 +531,10 @@ exports[`<ApiDocs /> should render correctly 1`] = `
         </th>
       </tr>
       <tr
-        class="sc-evZas"
+        class="sc-ksZaOG"
       >
         <th
-          class="sc-breuTD KWokR api-docs__cell"
+          class="sc-hAZoDl bGblnd api-docs__cell"
         >
           <a
             aria-label="/emails/load (opens in a new tab)"
@@ -562,7 +562,7 @@ exports[`<ApiDocs /> should render correctly 1`] = `
           </a>
         </th>
         <th
-          class="sc-breuTD KWokR api-docs__cell"
+          class="sc-hAZoDl bGblnd api-docs__cell"
         >
           <span
             class="sc-bczRLJ deidno api-docs__method"
@@ -571,14 +571,14 @@ exports[`<ApiDocs /> should render correctly 1`] = `
           </span>
         </th>
         <th
-          class="sc-breuTD KWokR api-docs__cell"
+          class="sc-hAZoDl bGblnd api-docs__cell"
         >
           <span
             class="sc-bczRLJ deidno"
           />
         </th>
         <th
-          class="sc-breuTD KWokR api-docs__cell"
+          class="sc-hAZoDl bGblnd api-docs__cell"
         >
           <span
             class="sc-bczRLJ deidno"
@@ -587,7 +587,7 @@ exports[`<ApiDocs /> should render correctly 1`] = `
           </span>
         </th>
         <th
-          class="sc-breuTD KWokR api-docs__cell"
+          class="sc-hAZoDl bGblnd api-docs__cell"
         >
           <span
             class="sc-bczRLJ deidno api-docs__description"
@@ -597,10 +597,10 @@ exports[`<ApiDocs /> should render correctly 1`] = `
         </th>
       </tr>
       <tr
-        class="sc-evZas"
+        class="sc-ksZaOG"
       >
         <th
-          class="sc-breuTD KWokR api-docs__cell"
+          class="sc-hAZoDl bGblnd api-docs__cell"
         >
           <a
             aria-label="/emails/resend (opens in a new tab)"
@@ -628,7 +628,7 @@ exports[`<ApiDocs /> should render correctly 1`] = `
           </a>
         </th>
         <th
-          class="sc-breuTD KWokR api-docs__cell"
+          class="sc-hAZoDl bGblnd api-docs__cell"
         >
           <span
             class="sc-bczRLJ deidno api-docs__method"
@@ -637,14 +637,14 @@ exports[`<ApiDocs /> should render correctly 1`] = `
           </span>
         </th>
         <th
-          class="sc-breuTD KWokR api-docs__cell"
+          class="sc-hAZoDl bGblnd api-docs__cell"
         >
           <span
             class="sc-bczRLJ deidno"
           />
         </th>
         <th
-          class="sc-breuTD KWokR api-docs__cell"
+          class="sc-hAZoDl bGblnd api-docs__cell"
         >
           <span
             class="sc-bczRLJ deidno"
@@ -653,7 +653,7 @@ exports[`<ApiDocs /> should render correctly 1`] = `
           </span>
         </th>
         <th
-          class="sc-breuTD KWokR api-docs__cell"
+          class="sc-hAZoDl bGblnd api-docs__cell"
         >
           <span
             class="sc-bczRLJ deidno api-docs__description"
@@ -663,10 +663,10 @@ exports[`<ApiDocs /> should render correctly 1`] = `
         </th>
       </tr>
       <tr
-        class="sc-evZas"
+        class="sc-ksZaOG"
       >
         <th
-          class="sc-breuTD KWokR api-docs__cell"
+          class="sc-hAZoDl bGblnd api-docs__cell"
         >
           <a
             aria-label="/magic-links/login (opens in a new tab)"
@@ -694,7 +694,7 @@ exports[`<ApiDocs /> should render correctly 1`] = `
           </a>
         </th>
         <th
-          class="sc-breuTD KWokR api-docs__cell"
+          class="sc-hAZoDl bGblnd api-docs__cell"
         >
           <span
             class="sc-bczRLJ deidno api-docs__method"
@@ -703,14 +703,14 @@ exports[`<ApiDocs /> should render correctly 1`] = `
           </span>
         </th>
         <th
-          class="sc-breuTD KWokR api-docs__cell"
+          class="sc-hAZoDl bGblnd api-docs__cell"
         >
           <span
             class="sc-bczRLJ deidno"
           />
         </th>
         <th
-          class="sc-breuTD KWokR api-docs__cell"
+          class="sc-hAZoDl bGblnd api-docs__cell"
         >
           <span
             class="sc-bczRLJ deidno"
@@ -719,7 +719,7 @@ exports[`<ApiDocs /> should render correctly 1`] = `
           </span>
         </th>
         <th
-          class="sc-breuTD KWokR api-docs__cell"
+          class="sc-hAZoDl bGblnd api-docs__cell"
         >
           <span
             class="sc-bczRLJ deidno api-docs__description"
@@ -729,10 +729,10 @@ exports[`<ApiDocs /> should render correctly 1`] = `
         </th>
       </tr>
       <tr
-        class="sc-evZas"
+        class="sc-ksZaOG"
       >
         <th
-          class="sc-breuTD KWokR api-docs__cell"
+          class="sc-hAZoDl bGblnd api-docs__cell"
         >
           <a
             aria-label="/magic-links/request (opens in a new tab)"
@@ -760,7 +760,7 @@ exports[`<ApiDocs /> should render correctly 1`] = `
           </a>
         </th>
         <th
-          class="sc-breuTD KWokR api-docs__cell"
+          class="sc-hAZoDl bGblnd api-docs__cell"
         >
           <span
             class="sc-bczRLJ deidno api-docs__method"
@@ -769,14 +769,14 @@ exports[`<ApiDocs /> should render correctly 1`] = `
           </span>
         </th>
         <th
-          class="sc-breuTD KWokR api-docs__cell"
+          class="sc-hAZoDl bGblnd api-docs__cell"
         >
           <span
             class="sc-bczRLJ deidno"
           />
         </th>
         <th
-          class="sc-breuTD KWokR api-docs__cell"
+          class="sc-hAZoDl bGblnd api-docs__cell"
         >
           <span
             class="sc-bczRLJ deidno"
@@ -785,7 +785,7 @@ exports[`<ApiDocs /> should render correctly 1`] = `
           </span>
         </th>
         <th
-          class="sc-breuTD KWokR api-docs__cell"
+          class="sc-hAZoDl bGblnd api-docs__cell"
         >
           <span
             class="sc-bczRLJ deidno api-docs__description"
@@ -795,10 +795,10 @@ exports[`<ApiDocs /> should render correctly 1`] = `
         </th>
       </tr>
       <tr
-        class="sc-evZas"
+        class="sc-ksZaOG"
       >
         <th
-          class="sc-breuTD KWokR api-docs__cell"
+          class="sc-hAZoDl bGblnd api-docs__cell"
         >
           <a
             aria-label="/data-management/backup (opens in a new tab)"
@@ -826,7 +826,7 @@ exports[`<ApiDocs /> should render correctly 1`] = `
           </a>
         </th>
         <th
-          class="sc-breuTD KWokR api-docs__cell"
+          class="sc-hAZoDl bGblnd api-docs__cell"
         >
           <span
             class="sc-bczRLJ deidno api-docs__method"
@@ -835,14 +835,14 @@ exports[`<ApiDocs /> should render correctly 1`] = `
           </span>
         </th>
         <th
-          class="sc-breuTD KWokR api-docs__cell"
+          class="sc-hAZoDl bGblnd api-docs__cell"
         >
           <span
             class="sc-bczRLJ deidno"
           />
         </th>
         <th
-          class="sc-breuTD KWokR api-docs__cell"
+          class="sc-hAZoDl bGblnd api-docs__cell"
         >
           <span
             class="sc-bczRLJ deidno"
@@ -851,7 +851,7 @@ exports[`<ApiDocs /> should render correctly 1`] = `
           </span>
         </th>
         <th
-          class="sc-breuTD KWokR api-docs__cell"
+          class="sc-hAZoDl bGblnd api-docs__cell"
         >
           <span
             class="sc-bczRLJ deidno api-docs__description"
@@ -861,10 +861,10 @@ exports[`<ApiDocs /> should render correctly 1`] = `
         </th>
       </tr>
       <tr
-        class="sc-evZas"
+        class="sc-ksZaOG"
       >
         <th
-          class="sc-breuTD KWokR api-docs__cell"
+          class="sc-hAZoDl bGblnd api-docs__cell"
         >
           <a
             aria-label="/data-management/delete-entity (opens in a new tab)"
@@ -892,7 +892,7 @@ exports[`<ApiDocs /> should render correctly 1`] = `
           </a>
         </th>
         <th
-          class="sc-breuTD KWokR api-docs__cell"
+          class="sc-hAZoDl bGblnd api-docs__cell"
         >
           <span
             class="sc-bczRLJ deidno api-docs__method"
@@ -901,14 +901,14 @@ exports[`<ApiDocs /> should render correctly 1`] = `
           </span>
         </th>
         <th
-          class="sc-breuTD KWokR api-docs__cell"
+          class="sc-hAZoDl bGblnd api-docs__cell"
         >
           <span
             class="sc-bczRLJ deidno"
           />
         </th>
         <th
-          class="sc-breuTD KWokR api-docs__cell"
+          class="sc-hAZoDl bGblnd api-docs__cell"
         >
           <span
             class="sc-bczRLJ deidno"
@@ -917,7 +917,7 @@ exports[`<ApiDocs /> should render correctly 1`] = `
           </span>
         </th>
         <th
-          class="sc-breuTD KWokR api-docs__cell"
+          class="sc-hAZoDl bGblnd api-docs__cell"
         >
           <span
             class="sc-bczRLJ deidno api-docs__description"
@@ -927,10 +927,10 @@ exports[`<ApiDocs /> should render correctly 1`] = `
         </th>
       </tr>
       <tr
-        class="sc-evZas"
+        class="sc-ksZaOG"
       >
         <th
-          class="sc-breuTD KWokR api-docs__cell"
+          class="sc-hAZoDl bGblnd api-docs__cell"
         >
           <a
             aria-label="/data-management/delete-set (opens in a new tab)"
@@ -958,7 +958,7 @@ exports[`<ApiDocs /> should render correctly 1`] = `
           </a>
         </th>
         <th
-          class="sc-breuTD KWokR api-docs__cell"
+          class="sc-hAZoDl bGblnd api-docs__cell"
         >
           <span
             class="sc-bczRLJ deidno api-docs__method"
@@ -967,14 +967,14 @@ exports[`<ApiDocs /> should render correctly 1`] = `
           </span>
         </th>
         <th
-          class="sc-breuTD KWokR api-docs__cell"
+          class="sc-hAZoDl bGblnd api-docs__cell"
         >
           <span
             class="sc-bczRLJ deidno"
           />
         </th>
         <th
-          class="sc-breuTD KWokR api-docs__cell"
+          class="sc-hAZoDl bGblnd api-docs__cell"
         >
           <span
             class="sc-bczRLJ deidno"
@@ -983,7 +983,7 @@ exports[`<ApiDocs /> should render correctly 1`] = `
           </span>
         </th>
         <th
-          class="sc-breuTD KWokR api-docs__cell"
+          class="sc-hAZoDl bGblnd api-docs__cell"
         >
           <span
             class="sc-bczRLJ deidno api-docs__description"
@@ -993,10 +993,10 @@ exports[`<ApiDocs /> should render correctly 1`] = `
         </th>
       </tr>
       <tr
-        class="sc-evZas"
+        class="sc-ksZaOG"
       >
         <th
-          class="sc-breuTD KWokR api-docs__cell"
+          class="sc-hAZoDl bGblnd api-docs__cell"
         >
           <a
             aria-label="/data-management/restore (opens in a new tab)"
@@ -1024,7 +1024,7 @@ exports[`<ApiDocs /> should render correctly 1`] = `
           </a>
         </th>
         <th
-          class="sc-breuTD KWokR api-docs__cell"
+          class="sc-hAZoDl bGblnd api-docs__cell"
         >
           <span
             class="sc-bczRLJ deidno api-docs__method"
@@ -1033,14 +1033,14 @@ exports[`<ApiDocs /> should render correctly 1`] = `
           </span>
         </th>
         <th
-          class="sc-breuTD KWokR api-docs__cell"
+          class="sc-hAZoDl bGblnd api-docs__cell"
         >
           <span
             class="sc-bczRLJ deidno"
           />
         </th>
         <th
-          class="sc-breuTD KWokR api-docs__cell"
+          class="sc-hAZoDl bGblnd api-docs__cell"
         >
           <span
             class="sc-bczRLJ deidno"
@@ -1049,7 +1049,7 @@ exports[`<ApiDocs /> should render correctly 1`] = `
           </span>
         </th>
         <th
-          class="sc-breuTD KWokR api-docs__cell"
+          class="sc-hAZoDl bGblnd api-docs__cell"
         >
           <span
             class="sc-bczRLJ deidno api-docs__description"
@@ -1059,10 +1059,10 @@ exports[`<ApiDocs /> should render correctly 1`] = `
         </th>
       </tr>
       <tr
-        class="sc-evZas"
+        class="sc-ksZaOG"
       >
         <th
-          class="sc-breuTD KWokR api-docs__cell"
+          class="sc-hAZoDl bGblnd api-docs__cell"
         >
           <a
             aria-label="/notifications/create (opens in a new tab)"
@@ -1090,7 +1090,7 @@ exports[`<ApiDocs /> should render correctly 1`] = `
           </a>
         </th>
         <th
-          class="sc-breuTD KWokR api-docs__cell"
+          class="sc-hAZoDl bGblnd api-docs__cell"
         >
           <span
             class="sc-bczRLJ deidno api-docs__method"
@@ -1099,14 +1099,14 @@ exports[`<ApiDocs /> should render correctly 1`] = `
           </span>
         </th>
         <th
-          class="sc-breuTD KWokR api-docs__cell"
+          class="sc-hAZoDl bGblnd api-docs__cell"
         >
           <span
             class="sc-bczRLJ deidno"
           />
         </th>
         <th
-          class="sc-breuTD KWokR api-docs__cell"
+          class="sc-hAZoDl bGblnd api-docs__cell"
         >
           <span
             class="sc-bczRLJ deidno"
@@ -1115,7 +1115,7 @@ exports[`<ApiDocs /> should render correctly 1`] = `
           </span>
         </th>
         <th
-          class="sc-breuTD KWokR api-docs__cell"
+          class="sc-hAZoDl bGblnd api-docs__cell"
         >
           <span
             class="sc-bczRLJ deidno api-docs__description"
@@ -1125,10 +1125,10 @@ exports[`<ApiDocs /> should render correctly 1`] = `
         </th>
       </tr>
       <tr
-        class="sc-evZas"
+        class="sc-ksZaOG"
       >
         <th
-          class="sc-breuTD KWokR api-docs__cell"
+          class="sc-hAZoDl bGblnd api-docs__cell"
         >
           <a
             aria-label="/notifications/delete (opens in a new tab)"
@@ -1156,7 +1156,7 @@ exports[`<ApiDocs /> should render correctly 1`] = `
           </a>
         </th>
         <th
-          class="sc-breuTD KWokR api-docs__cell"
+          class="sc-hAZoDl bGblnd api-docs__cell"
         >
           <span
             class="sc-bczRLJ deidno api-docs__method"
@@ -1165,14 +1165,14 @@ exports[`<ApiDocs /> should render correctly 1`] = `
           </span>
         </th>
         <th
-          class="sc-breuTD KWokR api-docs__cell"
+          class="sc-hAZoDl bGblnd api-docs__cell"
         >
           <span
             class="sc-bczRLJ deidno"
           />
         </th>
         <th
-          class="sc-breuTD KWokR api-docs__cell"
+          class="sc-hAZoDl bGblnd api-docs__cell"
         >
           <span
             class="sc-bczRLJ deidno"
@@ -1181,7 +1181,7 @@ exports[`<ApiDocs /> should render correctly 1`] = `
           </span>
         </th>
         <th
-          class="sc-breuTD KWokR api-docs__cell"
+          class="sc-hAZoDl bGblnd api-docs__cell"
         >
           <span
             class="sc-bczRLJ deidno api-docs__description"
@@ -1191,10 +1191,10 @@ exports[`<ApiDocs /> should render correctly 1`] = `
         </th>
       </tr>
       <tr
-        class="sc-evZas"
+        class="sc-ksZaOG"
       >
         <th
-          class="sc-breuTD KWokR api-docs__cell"
+          class="sc-hAZoDl bGblnd api-docs__cell"
         >
           <a
             aria-label="/notifications/load-all (opens in a new tab)"
@@ -1222,7 +1222,7 @@ exports[`<ApiDocs /> should render correctly 1`] = `
           </a>
         </th>
         <th
-          class="sc-breuTD KWokR api-docs__cell"
+          class="sc-hAZoDl bGblnd api-docs__cell"
         >
           <span
             class="sc-bczRLJ deidno api-docs__method"
@@ -1231,14 +1231,14 @@ exports[`<ApiDocs /> should render correctly 1`] = `
           </span>
         </th>
         <th
-          class="sc-breuTD KWokR api-docs__cell"
+          class="sc-hAZoDl bGblnd api-docs__cell"
         >
           <span
             class="sc-bczRLJ deidno"
           />
         </th>
         <th
-          class="sc-breuTD KWokR api-docs__cell"
+          class="sc-hAZoDl bGblnd api-docs__cell"
         >
           <span
             class="sc-bczRLJ deidno"
@@ -1247,7 +1247,7 @@ exports[`<ApiDocs /> should render correctly 1`] = `
           </span>
         </th>
         <th
-          class="sc-breuTD KWokR api-docs__cell"
+          class="sc-hAZoDl bGblnd api-docs__cell"
         >
           <span
             class="sc-bczRLJ deidno api-docs__description"
@@ -1257,10 +1257,10 @@ exports[`<ApiDocs /> should render correctly 1`] = `
         </th>
       </tr>
       <tr
-        class="sc-evZas"
+        class="sc-ksZaOG"
       >
         <th
-          class="sc-breuTD KWokR api-docs__cell"
+          class="sc-hAZoDl bGblnd api-docs__cell"
         >
           <a
             aria-label="/notifications/load/:id (opens in a new tab)"
@@ -1288,7 +1288,7 @@ exports[`<ApiDocs /> should render correctly 1`] = `
           </a>
         </th>
         <th
-          class="sc-breuTD KWokR api-docs__cell"
+          class="sc-hAZoDl bGblnd api-docs__cell"
         >
           <span
             class="sc-bczRLJ deidno api-docs__method"
@@ -1297,21 +1297,21 @@ exports[`<ApiDocs /> should render correctly 1`] = `
           </span>
         </th>
         <th
-          class="sc-breuTD KWokR api-docs__cell"
+          class="sc-hAZoDl bGblnd api-docs__cell"
         >
           <span
             class="sc-bczRLJ deidno"
           />
         </th>
         <th
-          class="sc-breuTD KWokR api-docs__cell"
+          class="sc-hAZoDl bGblnd api-docs__cell"
         >
           <span
             class="sc-bczRLJ deidno"
           />
         </th>
         <th
-          class="sc-breuTD KWokR api-docs__cell"
+          class="sc-hAZoDl bGblnd api-docs__cell"
         >
           <span
             class="sc-bczRLJ deidno api-docs__description"
@@ -1319,10 +1319,10 @@ exports[`<ApiDocs /> should render correctly 1`] = `
         </th>
       </tr>
       <tr
-        class="sc-evZas"
+        class="sc-ksZaOG"
       >
         <th
-          class="sc-breuTD KWokR api-docs__cell"
+          class="sc-hAZoDl bGblnd api-docs__cell"
         >
           <a
             aria-label="/notifications/update (opens in a new tab)"
@@ -1350,7 +1350,7 @@ exports[`<ApiDocs /> should render correctly 1`] = `
           </a>
         </th>
         <th
-          class="sc-breuTD KWokR api-docs__cell"
+          class="sc-hAZoDl bGblnd api-docs__cell"
         >
           <span
             class="sc-bczRLJ deidno api-docs__method"
@@ -1359,14 +1359,14 @@ exports[`<ApiDocs /> should render correctly 1`] = `
           </span>
         </th>
         <th
-          class="sc-breuTD KWokR api-docs__cell"
+          class="sc-hAZoDl bGblnd api-docs__cell"
         >
           <span
             class="sc-bczRLJ deidno"
           />
         </th>
         <th
-          class="sc-breuTD KWokR api-docs__cell"
+          class="sc-hAZoDl bGblnd api-docs__cell"
         >
           <span
             class="sc-bczRLJ deidno"
@@ -1375,7 +1375,7 @@ exports[`<ApiDocs /> should render correctly 1`] = `
           </span>
         </th>
         <th
-          class="sc-breuTD KWokR api-docs__cell"
+          class="sc-hAZoDl bGblnd api-docs__cell"
         >
           <span
             class="sc-bczRLJ deidno api-docs__description"
@@ -1385,10 +1385,10 @@ exports[`<ApiDocs /> should render correctly 1`] = `
         </th>
       </tr>
       <tr
-        class="sc-evZas"
+        class="sc-ksZaOG"
       >
         <th
-          class="sc-breuTD KWokR api-docs__cell"
+          class="sc-hAZoDl bGblnd api-docs__cell"
         >
           <a
             aria-label="/users/create (opens in a new tab)"
@@ -1416,7 +1416,7 @@ exports[`<ApiDocs /> should render correctly 1`] = `
           </a>
         </th>
         <th
-          class="sc-breuTD KWokR api-docs__cell"
+          class="sc-hAZoDl bGblnd api-docs__cell"
         >
           <span
             class="sc-bczRLJ deidno api-docs__method"
@@ -1425,14 +1425,14 @@ exports[`<ApiDocs /> should render correctly 1`] = `
           </span>
         </th>
         <th
-          class="sc-breuTD KWokR api-docs__cell"
+          class="sc-hAZoDl bGblnd api-docs__cell"
         >
           <span
             class="sc-bczRLJ deidno"
           />
         </th>
         <th
-          class="sc-breuTD KWokR api-docs__cell"
+          class="sc-hAZoDl bGblnd api-docs__cell"
         >
           <span
             class="sc-bczRLJ deidno"
@@ -1441,7 +1441,7 @@ exports[`<ApiDocs /> should render correctly 1`] = `
           </span>
         </th>
         <th
-          class="sc-breuTD KWokR api-docs__cell"
+          class="sc-hAZoDl bGblnd api-docs__cell"
         >
           <span
             class="sc-bczRLJ deidno api-docs__description"
@@ -1451,10 +1451,10 @@ exports[`<ApiDocs /> should render correctly 1`] = `
         </th>
       </tr>
       <tr
-        class="sc-evZas"
+        class="sc-ksZaOG"
       >
         <th
-          class="sc-breuTD KWokR api-docs__cell"
+          class="sc-hAZoDl bGblnd api-docs__cell"
         >
           <a
             aria-label="/users/delete (opens in a new tab)"
@@ -1482,7 +1482,7 @@ exports[`<ApiDocs /> should render correctly 1`] = `
           </a>
         </th>
         <th
-          class="sc-breuTD KWokR api-docs__cell"
+          class="sc-hAZoDl bGblnd api-docs__cell"
         >
           <span
             class="sc-bczRLJ deidno api-docs__method"
@@ -1491,14 +1491,14 @@ exports[`<ApiDocs /> should render correctly 1`] = `
           </span>
         </th>
         <th
-          class="sc-breuTD KWokR api-docs__cell"
+          class="sc-hAZoDl bGblnd api-docs__cell"
         >
           <span
             class="sc-bczRLJ deidno"
           />
         </th>
         <th
-          class="sc-breuTD KWokR api-docs__cell"
+          class="sc-hAZoDl bGblnd api-docs__cell"
         >
           <span
             class="sc-bczRLJ deidno"
@@ -1507,7 +1507,7 @@ exports[`<ApiDocs /> should render correctly 1`] = `
           </span>
         </th>
         <th
-          class="sc-breuTD KWokR api-docs__cell"
+          class="sc-hAZoDl bGblnd api-docs__cell"
         >
           <span
             class="sc-bczRLJ deidno api-docs__description"
@@ -1517,10 +1517,10 @@ exports[`<ApiDocs /> should render correctly 1`] = `
         </th>
       </tr>
       <tr
-        class="sc-evZas"
+        class="sc-ksZaOG"
       >
         <th
-          class="sc-breuTD KWokR api-docs__cell"
+          class="sc-hAZoDl bGblnd api-docs__cell"
         >
           <a
             aria-label="/users/load (opens in a new tab)"
@@ -1548,7 +1548,7 @@ exports[`<ApiDocs /> should render correctly 1`] = `
           </a>
         </th>
         <th
-          class="sc-breuTD KWokR api-docs__cell"
+          class="sc-hAZoDl bGblnd api-docs__cell"
         >
           <span
             class="sc-bczRLJ deidno api-docs__method"
@@ -1557,14 +1557,14 @@ exports[`<ApiDocs /> should render correctly 1`] = `
           </span>
         </th>
         <th
-          class="sc-breuTD KWokR api-docs__cell"
+          class="sc-hAZoDl bGblnd api-docs__cell"
         >
           <span
             class="sc-bczRLJ deidno"
           />
         </th>
         <th
-          class="sc-breuTD KWokR api-docs__cell"
+          class="sc-hAZoDl bGblnd api-docs__cell"
         >
           <span
             class="sc-bczRLJ deidno"
@@ -1573,7 +1573,7 @@ exports[`<ApiDocs /> should render correctly 1`] = `
           </span>
         </th>
         <th
-          class="sc-breuTD KWokR api-docs__cell"
+          class="sc-hAZoDl bGblnd api-docs__cell"
         >
           <span
             class="sc-bczRLJ deidno api-docs__description"
@@ -1583,10 +1583,10 @@ exports[`<ApiDocs /> should render correctly 1`] = `
         </th>
       </tr>
       <tr
-        class="sc-evZas"
+        class="sc-ksZaOG"
       >
         <th
-          class="sc-breuTD KWokR api-docs__cell"
+          class="sc-hAZoDl bGblnd api-docs__cell"
         >
           <a
             aria-label="/users/load-all (opens in a new tab)"
@@ -1614,7 +1614,7 @@ exports[`<ApiDocs /> should render correctly 1`] = `
           </a>
         </th>
         <th
-          class="sc-breuTD KWokR api-docs__cell"
+          class="sc-hAZoDl bGblnd api-docs__cell"
         >
           <span
             class="sc-bczRLJ deidno api-docs__method"
@@ -1623,14 +1623,14 @@ exports[`<ApiDocs /> should render correctly 1`] = `
           </span>
         </th>
         <th
-          class="sc-breuTD KWokR api-docs__cell"
+          class="sc-hAZoDl bGblnd api-docs__cell"
         >
           <span
             class="sc-bczRLJ deidno"
           />
         </th>
         <th
-          class="sc-breuTD KWokR api-docs__cell"
+          class="sc-hAZoDl bGblnd api-docs__cell"
         >
           <span
             class="sc-bczRLJ deidno"
@@ -1639,7 +1639,7 @@ exports[`<ApiDocs /> should render correctly 1`] = `
           </span>
         </th>
         <th
-          class="sc-breuTD KWokR api-docs__cell"
+          class="sc-hAZoDl bGblnd api-docs__cell"
         >
           <span
             class="sc-bczRLJ deidno api-docs__description"
@@ -1649,10 +1649,10 @@ exports[`<ApiDocs /> should render correctly 1`] = `
         </th>
       </tr>
       <tr
-        class="sc-evZas"
+        class="sc-ksZaOG"
       >
         <th
-          class="sc-breuTD KWokR api-docs__cell"
+          class="sc-hAZoDl bGblnd api-docs__cell"
         >
           <a
             aria-label="/users/sign-up (opens in a new tab)"
@@ -1680,7 +1680,7 @@ exports[`<ApiDocs /> should render correctly 1`] = `
           </a>
         </th>
         <th
-          class="sc-breuTD KWokR api-docs__cell"
+          class="sc-hAZoDl bGblnd api-docs__cell"
         >
           <span
             class="sc-bczRLJ deidno api-docs__method"
@@ -1689,14 +1689,14 @@ exports[`<ApiDocs /> should render correctly 1`] = `
           </span>
         </th>
         <th
-          class="sc-breuTD KWokR api-docs__cell"
+          class="sc-hAZoDl bGblnd api-docs__cell"
         >
           <span
             class="sc-bczRLJ deidno"
           />
         </th>
         <th
-          class="sc-breuTD KWokR api-docs__cell"
+          class="sc-hAZoDl bGblnd api-docs__cell"
         >
           <span
             class="sc-bczRLJ deidno"
@@ -1705,7 +1705,7 @@ exports[`<ApiDocs /> should render correctly 1`] = `
           </span>
         </th>
         <th
-          class="sc-breuTD KWokR api-docs__cell"
+          class="sc-hAZoDl bGblnd api-docs__cell"
         >
           <span
             class="sc-bczRLJ deidno api-docs__description"
@@ -1715,10 +1715,10 @@ exports[`<ApiDocs /> should render correctly 1`] = `
         </th>
       </tr>
       <tr
-        class="sc-evZas"
+        class="sc-ksZaOG"
       >
         <th
-          class="sc-breuTD KWokR api-docs__cell"
+          class="sc-hAZoDl bGblnd api-docs__cell"
         >
           <a
             aria-label="/users/update (opens in a new tab)"
@@ -1746,7 +1746,7 @@ exports[`<ApiDocs /> should render correctly 1`] = `
           </a>
         </th>
         <th
-          class="sc-breuTD KWokR api-docs__cell"
+          class="sc-hAZoDl bGblnd api-docs__cell"
         >
           <span
             class="sc-bczRLJ deidno api-docs__method"
@@ -1755,14 +1755,14 @@ exports[`<ApiDocs /> should render correctly 1`] = `
           </span>
         </th>
         <th
-          class="sc-breuTD KWokR api-docs__cell"
+          class="sc-hAZoDl bGblnd api-docs__cell"
         >
           <span
             class="sc-bczRLJ deidno"
           />
         </th>
         <th
-          class="sc-breuTD KWokR api-docs__cell"
+          class="sc-hAZoDl bGblnd api-docs__cell"
         >
           <span
             class="sc-bczRLJ deidno"
@@ -1771,7 +1771,7 @@ exports[`<ApiDocs /> should render correctly 1`] = `
           </span>
         </th>
         <th
-          class="sc-breuTD KWokR api-docs__cell"
+          class="sc-hAZoDl bGblnd api-docs__cell"
         >
           <span
             class="sc-bczRLJ deidno api-docs__description"
@@ -1781,10 +1781,10 @@ exports[`<ApiDocs /> should render correctly 1`] = `
         </th>
       </tr>
       <tr
-        class="sc-evZas"
+        class="sc-ksZaOG"
       >
         <th
-          class="sc-breuTD KWokR api-docs__cell"
+          class="sc-hAZoDl bGblnd api-docs__cell"
         >
           <a
             aria-label="/blogs/create (opens in a new tab)"
@@ -1812,7 +1812,7 @@ exports[`<ApiDocs /> should render correctly 1`] = `
           </a>
         </th>
         <th
-          class="sc-breuTD KWokR api-docs__cell"
+          class="sc-hAZoDl bGblnd api-docs__cell"
         >
           <span
             class="sc-bczRLJ deidno api-docs__method"
@@ -1821,14 +1821,14 @@ exports[`<ApiDocs /> should render correctly 1`] = `
           </span>
         </th>
         <th
-          class="sc-breuTD KWokR api-docs__cell"
+          class="sc-hAZoDl bGblnd api-docs__cell"
         >
           <span
             class="sc-bczRLJ deidno"
           />
         </th>
         <th
-          class="sc-breuTD KWokR api-docs__cell"
+          class="sc-hAZoDl bGblnd api-docs__cell"
         >
           <span
             class="sc-bczRLJ deidno"
@@ -1837,7 +1837,7 @@ exports[`<ApiDocs /> should render correctly 1`] = `
           </span>
         </th>
         <th
-          class="sc-breuTD KWokR api-docs__cell"
+          class="sc-hAZoDl bGblnd api-docs__cell"
         >
           <span
             class="sc-bczRLJ deidno api-docs__description"
@@ -1847,10 +1847,10 @@ exports[`<ApiDocs /> should render correctly 1`] = `
         </th>
       </tr>
       <tr
-        class="sc-evZas"
+        class="sc-ksZaOG"
       >
         <th
-          class="sc-breuTD KWokR api-docs__cell"
+          class="sc-hAZoDl bGblnd api-docs__cell"
         >
           <a
             aria-label="/blogs/delete (opens in a new tab)"
@@ -1878,7 +1878,7 @@ exports[`<ApiDocs /> should render correctly 1`] = `
           </a>
         </th>
         <th
-          class="sc-breuTD KWokR api-docs__cell"
+          class="sc-hAZoDl bGblnd api-docs__cell"
         >
           <span
             class="sc-bczRLJ deidno api-docs__method"
@@ -1887,14 +1887,14 @@ exports[`<ApiDocs /> should render correctly 1`] = `
           </span>
         </th>
         <th
-          class="sc-breuTD KWokR api-docs__cell"
+          class="sc-hAZoDl bGblnd api-docs__cell"
         >
           <span
             class="sc-bczRLJ deidno"
           />
         </th>
         <th
-          class="sc-breuTD KWokR api-docs__cell"
+          class="sc-hAZoDl bGblnd api-docs__cell"
         >
           <span
             class="sc-bczRLJ deidno"
@@ -1903,7 +1903,7 @@ exports[`<ApiDocs /> should render correctly 1`] = `
           </span>
         </th>
         <th
-          class="sc-breuTD KWokR api-docs__cell"
+          class="sc-hAZoDl bGblnd api-docs__cell"
         >
           <span
             class="sc-bczRLJ deidno api-docs__description"
@@ -1913,10 +1913,10 @@ exports[`<ApiDocs /> should render correctly 1`] = `
         </th>
       </tr>
       <tr
-        class="sc-evZas"
+        class="sc-ksZaOG"
       >
         <th
-          class="sc-breuTD KWokR api-docs__cell"
+          class="sc-hAZoDl bGblnd api-docs__cell"
         >
           <a
             aria-label="/blogs/load-all (opens in a new tab)"
@@ -1944,7 +1944,7 @@ exports[`<ApiDocs /> should render correctly 1`] = `
           </a>
         </th>
         <th
-          class="sc-breuTD KWokR api-docs__cell"
+          class="sc-hAZoDl bGblnd api-docs__cell"
         >
           <span
             class="sc-bczRLJ deidno api-docs__method"
@@ -1953,14 +1953,14 @@ exports[`<ApiDocs /> should render correctly 1`] = `
           </span>
         </th>
         <th
-          class="sc-breuTD KWokR api-docs__cell"
+          class="sc-hAZoDl bGblnd api-docs__cell"
         >
           <span
             class="sc-bczRLJ deidno"
           />
         </th>
         <th
-          class="sc-breuTD KWokR api-docs__cell"
+          class="sc-hAZoDl bGblnd api-docs__cell"
         >
           <span
             class="sc-bczRLJ deidno"
@@ -1969,7 +1969,7 @@ exports[`<ApiDocs /> should render correctly 1`] = `
           </span>
         </th>
         <th
-          class="sc-breuTD KWokR api-docs__cell"
+          class="sc-hAZoDl bGblnd api-docs__cell"
         >
           <span
             class="sc-bczRLJ deidno api-docs__description"
@@ -1979,10 +1979,10 @@ exports[`<ApiDocs /> should render correctly 1`] = `
         </th>
       </tr>
       <tr
-        class="sc-evZas"
+        class="sc-ksZaOG"
       >
         <th
-          class="sc-breuTD KWokR api-docs__cell"
+          class="sc-hAZoDl bGblnd api-docs__cell"
         >
           <a
             aria-label="/blogs/load/:id (opens in a new tab)"
@@ -2010,7 +2010,7 @@ exports[`<ApiDocs /> should render correctly 1`] = `
           </a>
         </th>
         <th
-          class="sc-breuTD KWokR api-docs__cell"
+          class="sc-hAZoDl bGblnd api-docs__cell"
         >
           <span
             class="sc-bczRLJ deidno api-docs__method"
@@ -2019,7 +2019,7 @@ exports[`<ApiDocs /> should render correctly 1`] = `
           </span>
         </th>
         <th
-          class="sc-breuTD KWokR api-docs__cell"
+          class="sc-hAZoDl bGblnd api-docs__cell"
         >
           <span
             class="sc-bczRLJ deidno"
@@ -2028,7 +2028,7 @@ exports[`<ApiDocs /> should render correctly 1`] = `
           </span>
         </th>
         <th
-          class="sc-breuTD KWokR api-docs__cell"
+          class="sc-hAZoDl bGblnd api-docs__cell"
         >
           <span
             class="sc-bczRLJ deidno"
@@ -2037,7 +2037,7 @@ exports[`<ApiDocs /> should render correctly 1`] = `
           </span>
         </th>
         <th
-          class="sc-breuTD KWokR api-docs__cell"
+          class="sc-hAZoDl bGblnd api-docs__cell"
         >
           <span
             class="sc-bczRLJ deidno api-docs__description"
@@ -2047,10 +2047,10 @@ exports[`<ApiDocs /> should render correctly 1`] = `
         </th>
       </tr>
       <tr
-        class="sc-evZas"
+        class="sc-ksZaOG"
       >
         <th
-          class="sc-breuTD KWokR api-docs__cell"
+          class="sc-hAZoDl bGblnd api-docs__cell"
         >
           <a
             aria-label="/blogs/update (opens in a new tab)"
@@ -2078,7 +2078,7 @@ exports[`<ApiDocs /> should render correctly 1`] = `
           </a>
         </th>
         <th
-          class="sc-breuTD KWokR api-docs__cell"
+          class="sc-hAZoDl bGblnd api-docs__cell"
         >
           <span
             class="sc-bczRLJ deidno api-docs__method"
@@ -2087,14 +2087,14 @@ exports[`<ApiDocs /> should render correctly 1`] = `
           </span>
         </th>
         <th
-          class="sc-breuTD KWokR api-docs__cell"
+          class="sc-hAZoDl bGblnd api-docs__cell"
         >
           <span
             class="sc-bczRLJ deidno"
           />
         </th>
         <th
-          class="sc-breuTD KWokR api-docs__cell"
+          class="sc-hAZoDl bGblnd api-docs__cell"
         >
           <span
             class="sc-bczRLJ deidno"
@@ -2103,7 +2103,7 @@ exports[`<ApiDocs /> should render correctly 1`] = `
           </span>
         </th>
         <th
-          class="sc-breuTD KWokR api-docs__cell"
+          class="sc-hAZoDl bGblnd api-docs__cell"
         >
           <span
             class="sc-bczRLJ deidno api-docs__description"
@@ -2113,10 +2113,10 @@ exports[`<ApiDocs /> should render correctly 1`] = `
         </th>
       </tr>
       <tr
-        class="sc-evZas"
+        class="sc-ksZaOG"
       >
         <th
-          class="sc-breuTD KWokR api-docs__cell"
+          class="sc-hAZoDl bGblnd api-docs__cell"
         >
           <a
             aria-label="/make-payment/load (opens in a new tab)"
@@ -2144,7 +2144,7 @@ exports[`<ApiDocs /> should render correctly 1`] = `
           </a>
         </th>
         <th
-          class="sc-breuTD KWokR api-docs__cell"
+          class="sc-hAZoDl bGblnd api-docs__cell"
         >
           <span
             class="sc-bczRLJ deidno api-docs__method"
@@ -2153,14 +2153,14 @@ exports[`<ApiDocs /> should render correctly 1`] = `
           </span>
         </th>
         <th
-          class="sc-breuTD KWokR api-docs__cell"
+          class="sc-hAZoDl bGblnd api-docs__cell"
         >
           <span
             class="sc-bczRLJ deidno"
           />
         </th>
         <th
-          class="sc-breuTD KWokR api-docs__cell"
+          class="sc-hAZoDl bGblnd api-docs__cell"
         >
           <span
             class="sc-bczRLJ deidno"
@@ -2169,7 +2169,7 @@ exports[`<ApiDocs /> should render correctly 1`] = `
           </span>
         </th>
         <th
-          class="sc-breuTD KWokR api-docs__cell"
+          class="sc-hAZoDl bGblnd api-docs__cell"
         >
           <span
             class="sc-bczRLJ deidno api-docs__description"
@@ -2179,10 +2179,10 @@ exports[`<ApiDocs /> should render correctly 1`] = `
         </th>
       </tr>
       <tr
-        class="sc-evZas"
+        class="sc-ksZaOG"
       >
         <th
-          class="sc-breuTD KWokR api-docs__cell"
+          class="sc-hAZoDl bGblnd api-docs__cell"
         >
           <a
             aria-label="/make-payment/create-intent (opens in a new tab)"
@@ -2210,7 +2210,7 @@ exports[`<ApiDocs /> should render correctly 1`] = `
           </a>
         </th>
         <th
-          class="sc-breuTD KWokR api-docs__cell"
+          class="sc-hAZoDl bGblnd api-docs__cell"
         >
           <span
             class="sc-bczRLJ deidno api-docs__method"
@@ -2219,14 +2219,14 @@ exports[`<ApiDocs /> should render correctly 1`] = `
           </span>
         </th>
         <th
-          class="sc-breuTD KWokR api-docs__cell"
+          class="sc-hAZoDl bGblnd api-docs__cell"
         >
           <span
             class="sc-bczRLJ deidno"
           />
         </th>
         <th
-          class="sc-breuTD KWokR api-docs__cell"
+          class="sc-hAZoDl bGblnd api-docs__cell"
         >
           <span
             class="sc-bczRLJ deidno"
@@ -2235,7 +2235,7 @@ exports[`<ApiDocs /> should render correctly 1`] = `
           </span>
         </th>
         <th
-          class="sc-breuTD KWokR api-docs__cell"
+          class="sc-hAZoDl bGblnd api-docs__cell"
         >
           <span
             class="sc-bczRLJ deidno api-docs__description"
@@ -2245,10 +2245,10 @@ exports[`<ApiDocs /> should render correctly 1`] = `
         </th>
       </tr>
       <tr
-        class="sc-evZas"
+        class="sc-ksZaOG"
       >
         <th
-          class="sc-breuTD KWokR api-docs__cell"
+          class="sc-hAZoDl bGblnd api-docs__cell"
         >
           <a
             aria-label="/make-payment/resend-receipt (opens in a new tab)"
@@ -2276,7 +2276,7 @@ exports[`<ApiDocs /> should render correctly 1`] = `
           </a>
         </th>
         <th
-          class="sc-breuTD KWokR api-docs__cell"
+          class="sc-hAZoDl bGblnd api-docs__cell"
         >
           <span
             class="sc-bczRLJ deidno api-docs__method"
@@ -2285,14 +2285,14 @@ exports[`<ApiDocs /> should render correctly 1`] = `
           </span>
         </th>
         <th
-          class="sc-breuTD KWokR api-docs__cell"
+          class="sc-hAZoDl bGblnd api-docs__cell"
         >
           <span
             class="sc-bczRLJ deidno"
           />
         </th>
         <th
-          class="sc-breuTD KWokR api-docs__cell"
+          class="sc-hAZoDl bGblnd api-docs__cell"
         >
           <span
             class="sc-bczRLJ deidno"
@@ -2301,7 +2301,7 @@ exports[`<ApiDocs /> should render correctly 1`] = `
           </span>
         </th>
         <th
-          class="sc-breuTD KWokR api-docs__cell"
+          class="sc-hAZoDl bGblnd api-docs__cell"
         >
           <span
             class="sc-bczRLJ deidno api-docs__description"
@@ -2311,10 +2311,10 @@ exports[`<ApiDocs /> should render correctly 1`] = `
         </th>
       </tr>
       <tr
-        class="sc-evZas"
+        class="sc-ksZaOG"
       >
         <th
-          class="sc-breuTD KWokR api-docs__cell"
+          class="sc-hAZoDl bGblnd api-docs__cell"
         >
           <a
             aria-label="/payments/create (opens in a new tab)"
@@ -2342,7 +2342,7 @@ exports[`<ApiDocs /> should render correctly 1`] = `
           </a>
         </th>
         <th
-          class="sc-breuTD KWokR api-docs__cell"
+          class="sc-hAZoDl bGblnd api-docs__cell"
         >
           <span
             class="sc-bczRLJ deidno api-docs__method"
@@ -2351,14 +2351,14 @@ exports[`<ApiDocs /> should render correctly 1`] = `
           </span>
         </th>
         <th
-          class="sc-breuTD KWokR api-docs__cell"
+          class="sc-hAZoDl bGblnd api-docs__cell"
         >
           <span
             class="sc-bczRLJ deidno"
           />
         </th>
         <th
-          class="sc-breuTD KWokR api-docs__cell"
+          class="sc-hAZoDl bGblnd api-docs__cell"
         >
           <span
             class="sc-bczRLJ deidno"
@@ -2367,7 +2367,7 @@ exports[`<ApiDocs /> should render correctly 1`] = `
           </span>
         </th>
         <th
-          class="sc-breuTD KWokR api-docs__cell"
+          class="sc-hAZoDl bGblnd api-docs__cell"
         >
           <span
             class="sc-bczRLJ deidno api-docs__description"
@@ -2377,10 +2377,10 @@ exports[`<ApiDocs /> should render correctly 1`] = `
         </th>
       </tr>
       <tr
-        class="sc-evZas"
+        class="sc-ksZaOG"
       >
         <th
-          class="sc-breuTD KWokR api-docs__cell"
+          class="sc-hAZoDl bGblnd api-docs__cell"
         >
           <a
             aria-label="/payments/delete (opens in a new tab)"
@@ -2408,7 +2408,7 @@ exports[`<ApiDocs /> should render correctly 1`] = `
           </a>
         </th>
         <th
-          class="sc-breuTD KWokR api-docs__cell"
+          class="sc-hAZoDl bGblnd api-docs__cell"
         >
           <span
             class="sc-bczRLJ deidno api-docs__method"
@@ -2417,14 +2417,14 @@ exports[`<ApiDocs /> should render correctly 1`] = `
           </span>
         </th>
         <th
-          class="sc-breuTD KWokR api-docs__cell"
+          class="sc-hAZoDl bGblnd api-docs__cell"
         >
           <span
             class="sc-bczRLJ deidno"
           />
         </th>
         <th
-          class="sc-breuTD KWokR api-docs__cell"
+          class="sc-hAZoDl bGblnd api-docs__cell"
         >
           <span
             class="sc-bczRLJ deidno"
@@ -2433,7 +2433,7 @@ exports[`<ApiDocs /> should render correctly 1`] = `
           </span>
         </th>
         <th
-          class="sc-breuTD KWokR api-docs__cell"
+          class="sc-hAZoDl bGblnd api-docs__cell"
         >
           <span
             class="sc-bczRLJ deidno api-docs__description"
@@ -2443,10 +2443,10 @@ exports[`<ApiDocs /> should render correctly 1`] = `
         </th>
       </tr>
       <tr
-        class="sc-evZas"
+        class="sc-ksZaOG"
       >
         <th
-          class="sc-breuTD KWokR api-docs__cell"
+          class="sc-hAZoDl bGblnd api-docs__cell"
         >
           <a
             aria-label="/payments/load-all (opens in a new tab)"
@@ -2474,7 +2474,7 @@ exports[`<ApiDocs /> should render correctly 1`] = `
           </a>
         </th>
         <th
-          class="sc-breuTD KWokR api-docs__cell"
+          class="sc-hAZoDl bGblnd api-docs__cell"
         >
           <span
             class="sc-bczRLJ deidno api-docs__method"
@@ -2483,14 +2483,14 @@ exports[`<ApiDocs /> should render correctly 1`] = `
           </span>
         </th>
         <th
-          class="sc-breuTD KWokR api-docs__cell"
+          class="sc-hAZoDl bGblnd api-docs__cell"
         >
           <span
             class="sc-bczRLJ deidno"
           />
         </th>
         <th
-          class="sc-breuTD KWokR api-docs__cell"
+          class="sc-hAZoDl bGblnd api-docs__cell"
         >
           <span
             class="sc-bczRLJ deidno"
@@ -2499,7 +2499,7 @@ exports[`<ApiDocs /> should render correctly 1`] = `
           </span>
         </th>
         <th
-          class="sc-breuTD KWokR api-docs__cell"
+          class="sc-hAZoDl bGblnd api-docs__cell"
         >
           <span
             class="sc-bczRLJ deidno api-docs__description"
@@ -2509,10 +2509,10 @@ exports[`<ApiDocs /> should render correctly 1`] = `
         </th>
       </tr>
       <tr
-        class="sc-evZas"
+        class="sc-ksZaOG"
       >
         <th
-          class="sc-breuTD KWokR api-docs__cell"
+          class="sc-hAZoDl bGblnd api-docs__cell"
         >
           <a
             aria-label="/support/create (opens in a new tab)"
@@ -2540,7 +2540,7 @@ exports[`<ApiDocs /> should render correctly 1`] = `
           </a>
         </th>
         <th
-          class="sc-breuTD KWokR api-docs__cell"
+          class="sc-hAZoDl bGblnd api-docs__cell"
         >
           <span
             class="sc-bczRLJ deidno api-docs__method"
@@ -2549,14 +2549,14 @@ exports[`<ApiDocs /> should render correctly 1`] = `
           </span>
         </th>
         <th
-          class="sc-breuTD KWokR api-docs__cell"
+          class="sc-hAZoDl bGblnd api-docs__cell"
         >
           <span
             class="sc-bczRLJ deidno"
           />
         </th>
         <th
-          class="sc-breuTD KWokR api-docs__cell"
+          class="sc-hAZoDl bGblnd api-docs__cell"
         >
           <span
             class="sc-bczRLJ deidno"
@@ -2565,7 +2565,7 @@ exports[`<ApiDocs /> should render correctly 1`] = `
           </span>
         </th>
         <th
-          class="sc-breuTD KWokR api-docs__cell"
+          class="sc-hAZoDl bGblnd api-docs__cell"
         >
           <span
             class="sc-bczRLJ deidno api-docs__description"
@@ -2575,10 +2575,10 @@ exports[`<ApiDocs /> should render correctly 1`] = `
         </th>
       </tr>
       <tr
-        class="sc-evZas"
+        class="sc-ksZaOG"
       >
         <th
-          class="sc-breuTD KWokR api-docs__cell"
+          class="sc-hAZoDl bGblnd api-docs__cell"
         >
           <a
             aria-label="/support/delete (opens in a new tab)"
@@ -2606,7 +2606,7 @@ exports[`<ApiDocs /> should render correctly 1`] = `
           </a>
         </th>
         <th
-          class="sc-breuTD KWokR api-docs__cell"
+          class="sc-hAZoDl bGblnd api-docs__cell"
         >
           <span
             class="sc-bczRLJ deidno api-docs__method"
@@ -2615,14 +2615,14 @@ exports[`<ApiDocs /> should render correctly 1`] = `
           </span>
         </th>
         <th
-          class="sc-breuTD KWokR api-docs__cell"
+          class="sc-hAZoDl bGblnd api-docs__cell"
         >
           <span
             class="sc-bczRLJ deidno"
           />
         </th>
         <th
-          class="sc-breuTD KWokR api-docs__cell"
+          class="sc-hAZoDl bGblnd api-docs__cell"
         >
           <span
             class="sc-bczRLJ deidno"
@@ -2631,7 +2631,7 @@ exports[`<ApiDocs /> should render correctly 1`] = `
           </span>
         </th>
         <th
-          class="sc-breuTD KWokR api-docs__cell"
+          class="sc-hAZoDl bGblnd api-docs__cell"
         >
           <span
             class="sc-bczRLJ deidno api-docs__description"
@@ -2641,10 +2641,10 @@ exports[`<ApiDocs /> should render correctly 1`] = `
         </th>
       </tr>
       <tr
-        class="sc-evZas"
+        class="sc-ksZaOG"
       >
         <th
-          class="sc-breuTD KWokR api-docs__cell"
+          class="sc-hAZoDl bGblnd api-docs__cell"
         >
           <a
             aria-label="/support/load (opens in a new tab)"
@@ -2672,7 +2672,7 @@ exports[`<ApiDocs /> should render correctly 1`] = `
           </a>
         </th>
         <th
-          class="sc-breuTD KWokR api-docs__cell"
+          class="sc-hAZoDl bGblnd api-docs__cell"
         >
           <span
             class="sc-bczRLJ deidno api-docs__method"
@@ -2681,14 +2681,14 @@ exports[`<ApiDocs /> should render correctly 1`] = `
           </span>
         </th>
         <th
-          class="sc-breuTD KWokR api-docs__cell"
+          class="sc-hAZoDl bGblnd api-docs__cell"
         >
           <span
             class="sc-bczRLJ deidno"
           />
         </th>
         <th
-          class="sc-breuTD KWokR api-docs__cell"
+          class="sc-hAZoDl bGblnd api-docs__cell"
         >
           <span
             class="sc-bczRLJ deidno"
@@ -2697,7 +2697,7 @@ exports[`<ApiDocs /> should render correctly 1`] = `
           </span>
         </th>
         <th
-          class="sc-breuTD KWokR api-docs__cell"
+          class="sc-hAZoDl bGblnd api-docs__cell"
         >
           <span
             class="sc-bczRLJ deidno api-docs__description"

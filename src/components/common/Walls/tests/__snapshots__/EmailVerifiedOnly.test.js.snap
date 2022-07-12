@@ -3,14 +3,14 @@
 exports[`<EmailVerifiedOnly /> Should render correctly 1`] = `
 <div>
   <div
-    class="section__outer"
+    class="sc-kDDrLX iNAFzC"
   >
-    <h2
-      class="section__heading"
+    <h1
+      class="sc-dkzDqf iBtyHU sc-evZas cCtlkt"
       id="you-need-to-verify-your-email-before-completing-this-step."
     >
       You need to verify your email before completing this step.
-    </h2>
+    </h1>
     <a
       class="sc-ftvSup bvTsjB"
       href="/account"
@@ -24,14 +24,14 @@ exports[`<EmailVerifiedOnly /> Should render correctly 1`] = `
 exports[`<EmailVerifiedOnly /> Should render correctly with user 1`] = `
 <div>
   <div
-    class="section__outer"
+    class="sc-kDDrLX iNAFzC"
   >
-    <h2
-      class="section__heading"
+    <h1
+      class="sc-dkzDqf iBtyHU sc-evZas cCtlkt"
       id="you-need-to-verify-your-email-before-completing-this-step."
     >
       You need to verify your email before completing this step.
-    </h2>
+    </h1>
     <a
       class="sc-ftvSup bvTsjB"
       href="/account"

@@ -31,7 +31,7 @@ const LoginForm = props => {
           show: true,
           inputProps: {
             spellCheck: 'false',
-            autofill: 'email',
+            autofill: 'username',
           },
         },
       ]}
