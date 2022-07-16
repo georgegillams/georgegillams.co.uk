@@ -6,7 +6,7 @@ exports[`<MagicLogin /> should render correctly - index 1`] = `
     class=""
   >
     <h1
-      class="page-title__heading"
+      class="sc-bczRLJ hDLBIv sc-jqUVSM cFomsy"
     >
       Logging in
     </h1>
@@ -20,7 +20,7 @@ exports[`<MagicLogin /> should render correctly with initial state 1`] = `
     class=""
   >
     <h1
-      class="page-title__heading"
+      class="sc-bczRLJ hDLBIv sc-jqUVSM cFomsy"
     >
       Logging in
     </h1>
@@ -34,15 +34,15 @@ exports[`<MagicLogin /> should render correctly with logInError 1`] = `
     class=""
   >
     <h1
-      class="page-title__heading"
+      class="sc-bczRLJ hDLBIv sc-jqUVSM cFomsy"
     >
       Logging in
     </h1>
     <span
-      class="sc-jqUVSM iuHAUr"
+      class="sc-iqcoie fIUTrZ"
     >
       <span
-        class="sc-kDDrLX GVGko"
+        class="sc-crXcEl iMitmy"
       >
         Something went wrong logging you in
         <br />
@@ -66,7 +66,7 @@ exports[`<MagicLogin /> should render correctly with loggingIn=true 1`] = `
     class=""
   >
     <h1
-      class="page-title__heading"
+      class="sc-bczRLJ hDLBIv sc-jqUVSM cFomsy"
     >
       Logging in
     </h1>
@@ -80,12 +80,12 @@ exports[`<MagicLogin /> should render correctly with user 1`] = `
     class=""
   >
     <h1
-      class="page-title__heading"
+      class="sc-bczRLJ hDLBIv sc-jqUVSM cFomsy"
     >
       Logged in
     </h1>
     <span
-      class="sc-jqUVSM iuHAUr"
+      class="sc-iqcoie fIUTrZ"
     >
       Logged in!
       <br />

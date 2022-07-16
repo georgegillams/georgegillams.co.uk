@@ -10,14 +10,14 @@ exports[`<Consent /> should render correctly - index 1`] = `
         class="banner__inner"
       >
         <div
-          class="section__outer consent__section consent__section--banner"
+          class="sc-hAZoDl iua-dtn consent__section consent__section--banner"
         >
-          <h2
-            class="section__heading section__heading--no-padding consent__section-text"
+          <h1
+            class="sc-ftvSup hxjBmw sc-bjUoiL LQOzt"
             id="privacy-and-cookies"
           >
             Privacy and cookies
-          </h2>
+          </h1>
           <span
             class="sc-gKXOVf dVduRi"
           >
@@ -34,7 +34,7 @@ exports[`<Consent /> should render correctly - index 1`] = `
         </div>
         <div>
           <button
-            class="sc-dkzDqf kHuqxu consent__button"
+            class="sc-dkzDqf bOfPfm consent__button"
             type="button"
           >
             <span
@@ -44,7 +44,7 @@ exports[`<Consent /> should render correctly - index 1`] = `
             </span>
           </button>
           <button
-            class="sc-dkzDqf kHuqxu consent__button"
+            class="sc-dkzDqf bOfPfm consent__button"
             type="button"
           >
             <span

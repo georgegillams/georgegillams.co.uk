@@ -3,7 +3,7 @@
 exports[`<PageTitle /> Should render correctly 1`] = `
 <div>
   <h1
-    class="page-title__heading"
+    class="sc-bczRLJ hDLBIv sc-jqUVSM cFomsy"
   >
     Test
   </h1>
@@ -14,7 +14,7 @@ exports[`<PageTitle /> Should render correctly 1`] = `
 exports[`<PageTitle /> Should render correctly with custom className 1`] = `
 <div>
   <h1
-    class="page-title__heading test-custom-classname"
+    class="sc-bczRLJ hDLBIv sc-jqUVSM cFomsy test-custom-classname"
   >
     Test
   </h1>
@@ -24,14 +24,18 @@ exports[`<PageTitle /> Should render correctly with custom className 1`] = `
 
 exports[`<PageTitle /> Should render correctly with other props 1`] = `
 <div>
-  <a
-    class="sc-iBkjds kXOvCG page-title__link"
-    href="/test"
+  <div
+    class="sc-kDDrLX emakin"
   >
-    ⇠ test
-  </a>
+    <a
+      class="sc-iBkjds kXOvCG"
+      href="/test"
+    >
+      ⇠ test
+    </a>
+  </div>
   <h1
-    class="page-title__heading page-title__heading--with-link"
+    class="sc-bczRLJ hDLBIv sc-jqUVSM drQcdn"
   >
     Test
   </h1>

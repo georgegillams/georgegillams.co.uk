@@ -3,7 +3,7 @@
 exports[`<Support /> should render correctly - index 1`] = `
 <div>
   <h1
-    class="page-title__heading"
+    class="sc-bczRLJ hDLBIv sc-ksZaOG UTWGT"
   >
     Support
   </h1>
@@ -11,22 +11,22 @@ exports[`<Support /> should render correctly - index 1`] = `
     class="support__controls"
   >
     <button
-      class="sc-breuTD HMkzI outer"
+      class="sc-idiyUo fWHeaH outer"
       disabled=""
       type="button"
     >
       <span
-        class="sc-hAZoDl gYBdAO"
+        class="sc-hHLeRK eOuDcm"
       >
         Reload
       </span>
     </button>
   </div>
   <div
-    class="sc-bczRLJ jxMqhd support__body-skeleton"
+    class="sc-evZas cgLOYZ support__body-skeleton"
   >
     <div
-      class="sc-gsnTZi iSNZRr"
+      class="sc-breuTD cvMWpe"
       style="margin-left: -0px;"
     />
   </div>
@@ -36,7 +36,7 @@ exports[`<Support /> should render correctly - index 1`] = `
 exports[`<Support /> should render correctly when loading 1`] = `
 <div>
   <h1
-    class="page-title__heading"
+    class="sc-bczRLJ hDLBIv sc-ksZaOG UTWGT"
   >
     Support
   </h1>
@@ -44,22 +44,22 @@ exports[`<Support /> should render correctly when loading 1`] = `
     class="support__controls"
   >
     <button
-      class="sc-breuTD HMkzI outer"
+      class="sc-idiyUo fWHeaH outer"
       disabled=""
       type="button"
     >
       <span
-        class="sc-hAZoDl gYBdAO"
+        class="sc-hHLeRK eOuDcm"
       >
         Reload
       </span>
     </button>
   </div>
   <div
-    class="sc-bczRLJ jxMqhd support__body-skeleton"
+    class="sc-evZas cgLOYZ support__body-skeleton"
   >
     <div
-      class="sc-gsnTZi iSNZRr"
+      class="sc-breuTD cvMWpe"
       style="margin-left: -0px;"
     />
   </div>
@@ -69,7 +69,7 @@ exports[`<Support /> should render correctly when loading 1`] = `
 exports[`<Support /> should render correctly with admin 1`] = `
 <div>
   <h1
-    class="page-title__heading"
+    class="sc-bczRLJ hDLBIv sc-ksZaOG UTWGT"
   >
     Support
   </h1>
@@ -77,33 +77,33 @@ exports[`<Support /> should render correctly with admin 1`] = `
     class="support__controls"
   >
     <button
-      class="sc-breuTD cIraFQ outer"
+      class="sc-idiyUo sooGH outer"
       type="button"
     >
       <span
-        class="sc-hAZoDl gYBdAO"
+        class="sc-hHLeRK eOuDcm"
       >
         Reload
       </span>
     </button>
   </div>
   <div
-    class="sc-bczRLJ jxMqhd support__body-skeleton"
+    class="sc-evZas cgLOYZ support__body-skeleton"
   >
     <div
-      class="sc-gsnTZi iSNZRr"
+      class="sc-breuTD cvMWpe"
       style="margin-left: -0px;"
     />
   </div>
   <div
-    class="section__outer"
+    class="sc-jqUVSM leXYdV"
   >
-    <h2
-      class="section__heading"
+    <h1
+      class="sc-gsnTZi cTWewb sc-crXcEl jisdVx"
       id="add-link"
     >
       ADD LINK
-    </h2>
+    </h1>
     <div>
       SUPPORT_FORM
     </div>
@@ -114,7 +114,7 @@ exports[`<Support /> should render correctly with admin 1`] = `
 exports[`<Support /> should render correctly with admin and createLinkError 1`] = `
 <div>
   <h1
-    class="page-title__heading"
+    class="sc-bczRLJ hDLBIv sc-ksZaOG UTWGT"
   >
     Support
   </h1>
@@ -122,38 +122,38 @@ exports[`<Support /> should render correctly with admin and createLinkError 1`] 
     class="support__controls"
   >
     <button
-      class="sc-breuTD cIraFQ outer"
+      class="sc-idiyUo sooGH outer"
       type="button"
     >
       <span
-        class="sc-hAZoDl gYBdAO"
+        class="sc-hHLeRK eOuDcm"
       >
         Reload
       </span>
     </button>
   </div>
   <div
-    class="sc-bczRLJ jxMqhd support__body-skeleton"
+    class="sc-evZas cgLOYZ support__body-skeleton"
   >
     <div
-      class="sc-gsnTZi iSNZRr"
+      class="sc-breuTD cvMWpe"
       style="margin-left: -0px;"
     />
   </div>
   <div
-    class="section__outer"
+    class="sc-jqUVSM leXYdV"
   >
-    <h2
-      class="section__heading"
+    <h1
+      class="sc-gsnTZi cTWewb sc-crXcEl jisdVx"
       id="add-link"
     >
       ADD LINK
-    </h2>
+    </h1>
     <span
-      class="sc-iqcoie fIUTrZ"
+      class="sc-fnykZs kIjAem"
     >
       <span
-        class="sc-fEOsli gvMThL"
+        class="sc-kgflAQ daSGn"
       >
         Failed to add link
         <br />
@@ -170,7 +170,7 @@ exports[`<Support /> should render correctly with admin and createLinkError 1`] 
 exports[`<Support /> should render correctly with admin and deleteLinkError 1`] = `
 <div>
   <h1
-    class="page-title__heading"
+    class="sc-bczRLJ hDLBIv sc-ksZaOG UTWGT"
   >
     Support
   </h1>
@@ -178,38 +178,38 @@ exports[`<Support /> should render correctly with admin and deleteLinkError 1`] 
     class="support__controls"
   >
     <button
-      class="sc-breuTD cIraFQ outer"
+      class="sc-idiyUo sooGH outer"
       type="button"
     >
       <span
-        class="sc-hAZoDl gYBdAO"
+        class="sc-hHLeRK eOuDcm"
       >
         Reload
       </span>
     </button>
   </div>
   <div
-    class="sc-bczRLJ jxMqhd support__body-skeleton"
+    class="sc-evZas cgLOYZ support__body-skeleton"
   >
     <div
-      class="sc-gsnTZi iSNZRr"
+      class="sc-breuTD cvMWpe"
       style="margin-left: -0px;"
     />
   </div>
   <div
-    class="section__outer"
+    class="sc-jqUVSM leXYdV"
   >
-    <h2
-      class="section__heading"
+    <h1
+      class="sc-gsnTZi cTWewb sc-crXcEl jisdVx"
       id="add-link"
     >
       ADD LINK
-    </h2>
+    </h1>
     <span
-      class="sc-iqcoie fIUTrZ"
+      class="sc-fnykZs kIjAem"
     >
       <span
-        class="sc-fEOsli gvMThL"
+        class="sc-kgflAQ daSGn"
       >
         Failed to delete link
         <br />
@@ -226,7 +226,7 @@ exports[`<Support /> should render correctly with admin and deleteLinkError 1`] 
 exports[`<Support /> should render correctly with initial state 1`] = `
 <div>
   <h1
-    class="page-title__heading"
+    class="sc-bczRLJ hDLBIv sc-ksZaOG UTWGT"
   >
     Support
   </h1>
@@ -234,21 +234,21 @@ exports[`<Support /> should render correctly with initial state 1`] = `
     class="support__controls"
   >
     <button
-      class="sc-breuTD cIraFQ outer"
+      class="sc-idiyUo sooGH outer"
       type="button"
     >
       <span
-        class="sc-hAZoDl gYBdAO"
+        class="sc-hHLeRK eOuDcm"
       >
         Reload
       </span>
     </button>
   </div>
   <div
-    class="sc-bczRLJ jxMqhd support__body-skeleton"
+    class="sc-evZas cgLOYZ support__body-skeleton"
   >
     <div
-      class="sc-gsnTZi iSNZRr"
+      class="sc-breuTD cvMWpe"
       style="margin-left: -0px;"
     />
   </div>
@@ -258,7 +258,7 @@ exports[`<Support /> should render correctly with initial state 1`] = `
 exports[`<Support /> should render correctly with links 1`] = `
 <div>
   <h1
-    class="page-title__heading"
+    class="sc-bczRLJ hDLBIv sc-ksZaOG UTWGT"
   >
     Support
   </h1>
@@ -266,41 +266,41 @@ exports[`<Support /> should render correctly with links 1`] = `
     class="support__controls"
   >
     <button
-      class="sc-breuTD cIraFQ outer"
+      class="sc-idiyUo sooGH outer"
       type="button"
     >
       <span
-        class="sc-hAZoDl gYBdAO"
+        class="sc-hHLeRK eOuDcm"
       >
         Reload
       </span>
     </button>
   </div>
   <div
-    class="subsection__outer"
+    class="sc-jqUVSM leXYdV"
   >
-    <h3
-      class="subsection__heading"
+    <h1
+      class="sc-dkzDqf ddFalQ sc-crXcEl ioFrJl"
       id="name-1"
     >
       name 1
-    </h3>
+    </h1>
     <span
-      class="sc-iqcoie fIUTrZ support-link__link"
+      class="sc-fnykZs kIjAem support-link__link"
     >
       <a
         aria-label="URL_1 (opens in a new tab)"
-        class="sc-papXJ gfSAJY"
+        class="sc-iBkjds kXOvCG"
         href="URL_1"
         rel="noopener noreferrer"
         target="_blank"
       >
         URL_1
         <div
-          class="sc-jqUVSM icGDYy"
+          class="sc-ftvSup kUuEWK"
         >
           <svg
-            class="sc-ftvSup bygzLL sc-kDDrLX kzKBSF"
+            class="sc-gKXOVf ktoyia sc-papXJ fmVkXn"
             height="18"
             viewBox="0 0 24 24"
             width="18"
@@ -317,30 +317,30 @@ exports[`<Support /> should render correctly with links 1`] = `
     </span>
   </div>
   <div
-    class="subsection__outer"
+    class="sc-jqUVSM leXYdV"
   >
-    <h3
-      class="subsection__heading"
+    <h1
+      class="sc-dkzDqf ddFalQ sc-crXcEl ioFrJl"
       id="name-2"
     >
       name 2
-    </h3>
+    </h1>
     <span
-      class="sc-iqcoie fIUTrZ support-link__link"
+      class="sc-fnykZs kIjAem support-link__link"
     >
       <a
         aria-label="URL_2 (opens in a new tab)"
-        class="sc-papXJ gfSAJY"
+        class="sc-iBkjds kXOvCG"
         href="URL_2"
         rel="noopener noreferrer"
         target="_blank"
       >
         URL_2
         <div
-          class="sc-jqUVSM icGDYy"
+          class="sc-ftvSup kUuEWK"
         >
           <svg
-            class="sc-ftvSup bygzLL sc-kDDrLX kzKBSF"
+            class="sc-gKXOVf ktoyia sc-papXJ fmVkXn"
             height="18"
             viewBox="0 0 24 24"
             width="18"
@@ -362,7 +362,7 @@ exports[`<Support /> should render correctly with links 1`] = `
 exports[`<Support /> should render correctly with loadError 1`] = `
 <div>
   <h1
-    class="page-title__heading"
+    class="sc-bczRLJ hDLBIv sc-ksZaOG UTWGT"
   >
     Support
   </h1>
@@ -370,21 +370,21 @@ exports[`<Support /> should render correctly with loadError 1`] = `
     class="support__controls"
   >
     <button
-      class="sc-breuTD cIraFQ outer"
+      class="sc-idiyUo sooGH outer"
       type="button"
     >
       <span
-        class="sc-hAZoDl gYBdAO"
+        class="sc-hHLeRK eOuDcm"
       >
         Reload
       </span>
     </button>
   </div>
   <span
-    class="sc-iqcoie fIUTrZ"
+    class="sc-fnykZs kIjAem"
   >
     <span
-      class="sc-fEOsli gvMThL"
+      class="sc-kgflAQ daSGn"
     >
       The support session failed to load
       <br />
@@ -392,10 +392,10 @@ exports[`<Support /> should render correctly with loadError 1`] = `
     </span>
   </span>
   <div
-    class="sc-bczRLJ jxMqhd support__body-skeleton"
+    class="sc-evZas cgLOYZ support__body-skeleton"
   >
     <div
-      class="sc-gsnTZi iSNZRr"
+      class="sc-breuTD cvMWpe"
       style="margin-left: -0px;"
     />
   </div>

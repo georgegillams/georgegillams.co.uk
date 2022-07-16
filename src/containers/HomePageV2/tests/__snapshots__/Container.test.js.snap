@@ -7,8 +7,7 @@ exports[`<Home /> should render correctly 1`] = `
     width="default"
   >
     <h1
-      authenticatorstate="[object Object]"
-      class="page-title__heading"
+      class="sc-gsnTZi hUDWSp sc-kDDrLX cCIGfN"
     >
       Hey! I'm George.
     </h1>
@@ -22,16 +21,16 @@ exports[`<Home /> should render correctly 1`] = `
           class="work-section__content"
         >
           <div
-            class="section__outer"
+            class="sc-evZas fjRNQE"
           >
-            <h2
-              class="section__heading"
+            <h1
+              class="sc-dkzDqf iBtyHU sc-hAZoDl VIrFO"
               id="work"
             >
               Work
-            </h2>
+            </h1>
             <span
-              class="sc-kDDrLX bMvsic work-section__paragraph"
+              class="sc-crXcEl hyjoRq work-section__paragraph"
             >
               I'm a web developer at
                
@@ -90,10 +89,10 @@ exports[`<Home /> should render correctly 1`] = `
                   class="image__spinner-container"
                 >
                   <div
-                    class="sc-iqcoie ihdiZO image__skeleton image__skeleton--animated"
+                    class="sc-fnykZs bVJbtJ image__skeleton image__skeleton--animated"
                   >
                     <div
-                      class="sc-crXcEl dYKgpx"
+                      class="sc-fEOsli jwVbEY"
                       style="margin-left: -0px;"
                     />
                   </div>
@@ -126,10 +125,10 @@ exports[`<Home /> should render correctly 1`] = `
                   class="image__spinner-container"
                 >
                   <div
-                    class="sc-iqcoie ihdiZO image__skeleton image__skeleton--animated"
+                    class="sc-fnykZs bVJbtJ image__skeleton image__skeleton--animated"
                   >
                     <div
-                      class="sc-crXcEl dYKgpx"
+                      class="sc-fEOsli jwVbEY"
                       style="margin-left: -0px;"
                     />
                   </div>
@@ -162,10 +161,10 @@ exports[`<Home /> should render correctly 1`] = `
                   class="image__spinner-container"
                 >
                   <div
-                    class="sc-iqcoie ihdiZO image__skeleton image__skeleton--animated"
+                    class="sc-fnykZs bVJbtJ image__skeleton image__skeleton--animated"
                   >
                     <div
-                      class="sc-crXcEl dYKgpx"
+                      class="sc-fEOsli jwVbEY"
                       style="margin-left: -0px;"
                     />
                   </div>
@@ -205,10 +204,10 @@ exports[`<Home /> should render correctly 1`] = `
               class="image__spinner-container"
             >
               <div
-                class="sc-iqcoie ihdiZO image__skeleton image__skeleton--animated"
+                class="sc-fnykZs bVJbtJ image__skeleton image__skeleton--animated"
               >
                 <div
-                  class="sc-crXcEl dYKgpx"
+                  class="sc-fEOsli jwVbEY"
                   style="margin-left: -0px;"
                 />
               </div>
@@ -230,16 +229,16 @@ exports[`<Home /> should render correctly 1`] = `
           class="life-section__content"
         >
           <div
-            class="section__outer"
+            class="sc-evZas fjRNQE"
           >
-            <h2
-              class="section__heading"
+            <h1
+              class="sc-dkzDqf iBtyHU sc-hAZoDl VIrFO"
               id="life"
             >
               Life
-            </h2>
+            </h1>
             <span
-              class="sc-kDDrLX bMvsic life-section__paragraph"
+              class="sc-crXcEl hyjoRq life-section__paragraph"
             >
               I love travel and photography, and occasionally write other stuff.
               <br />
@@ -259,7 +258,7 @@ exports[`<Home /> should render correctly 1`] = `
             </span>
           </div>
           <span
-            class="sc-kDDrLX bMvsic life-section__paragraph"
+            class="sc-crXcEl hyjoRq life-section__paragraph"
           >
             I got engaged recently in Iceland, and live with my amazing fiancée and Tigger the cat.
           </span>
@@ -276,10 +275,10 @@ exports[`<Home /> should render correctly 1`] = `
               class="image__spinner-container"
             >
               <div
-                class="sc-iqcoie ihdiZO image__skeleton image__skeleton--animated"
+                class="sc-fnykZs bVJbtJ image__skeleton image__skeleton--animated"
               >
                 <div
-                  class="sc-crXcEl dYKgpx"
+                  class="sc-fEOsli jwVbEY"
                   style="margin-left: -0px;"
                 />
               </div>
@@ -314,10 +313,10 @@ exports[`<Home /> should render correctly 1`] = `
                   class="image__spinner-container"
                 >
                   <div
-                    class="sc-iqcoie ihdiZO image__skeleton image__skeleton--animated"
+                    class="sc-fnykZs bVJbtJ image__skeleton image__skeleton--animated"
                   >
                     <div
-                      class="sc-crXcEl dYKgpx"
+                      class="sc-fEOsli jwVbEY"
                       style="margin-left: -0px;"
                     />
                   </div>
@@ -350,10 +349,10 @@ exports[`<Home /> should render correctly 1`] = `
                   class="image__spinner-container"
                 >
                   <div
-                    class="sc-iqcoie ihdiZO image__skeleton image__skeleton--animated"
+                    class="sc-fnykZs bVJbtJ image__skeleton image__skeleton--animated"
                   >
                     <div
-                      class="sc-crXcEl dYKgpx"
+                      class="sc-fEOsli jwVbEY"
                       style="margin-left: -0px;"
                     />
                   </div>
@@ -398,10 +397,10 @@ exports[`<Home /> should render correctly 1`] = `
                   class="image__spinner-container"
                 >
                   <div
-                    class="sc-iqcoie ihdiZO image__skeleton image__skeleton--animated"
+                    class="sc-fnykZs bVJbtJ image__skeleton image__skeleton--animated"
                   >
                     <div
-                      class="sc-crXcEl dYKgpx"
+                      class="sc-fEOsli jwVbEY"
                       style="margin-left: -0px;"
                     />
                   </div>
@@ -430,7 +429,7 @@ exports[`<Home /> should render correctly 1`] = `
         class="about-section__outer"
       >
         <span
-          class="sc-kDDrLX bMvsic about-section__paragraph"
+          class="sc-crXcEl hyjoRq about-section__paragraph"
         >
           This site is built in
            
@@ -571,8 +570,7 @@ exports[`<Home /> should render correctly with admin user 1`] = `
     width="default"
   >
     <h1
-      authenticatorstate="[object Object]"
-      class="page-title__heading"
+      class="sc-gsnTZi hUDWSp sc-kDDrLX cCIGfN"
     >
       Hey! I'm George.
     </h1>
@@ -586,16 +584,16 @@ exports[`<Home /> should render correctly with admin user 1`] = `
           class="work-section__content"
         >
           <div
-            class="section__outer"
+            class="sc-evZas fjRNQE"
           >
-            <h2
-              class="section__heading"
+            <h1
+              class="sc-dkzDqf iBtyHU sc-hAZoDl VIrFO"
               id="work"
             >
               Work
-            </h2>
+            </h1>
             <span
-              class="sc-kDDrLX bMvsic work-section__paragraph"
+              class="sc-crXcEl hyjoRq work-section__paragraph"
             >
               I'm a web developer at
                
@@ -654,10 +652,10 @@ exports[`<Home /> should render correctly with admin user 1`] = `
                   class="image__spinner-container"
                 >
                   <div
-                    class="sc-iqcoie ihdiZO image__skeleton image__skeleton--animated"
+                    class="sc-fnykZs bVJbtJ image__skeleton image__skeleton--animated"
                   >
                     <div
-                      class="sc-crXcEl dYKgpx"
+                      class="sc-fEOsli jwVbEY"
                       style="margin-left: -0px;"
                     />
                   </div>
@@ -690,10 +688,10 @@ exports[`<Home /> should render correctly with admin user 1`] = `
                   class="image__spinner-container"
                 >
                   <div
-                    class="sc-iqcoie ihdiZO image__skeleton image__skeleton--animated"
+                    class="sc-fnykZs bVJbtJ image__skeleton image__skeleton--animated"
                   >
                     <div
-                      class="sc-crXcEl dYKgpx"
+                      class="sc-fEOsli jwVbEY"
                       style="margin-left: -0px;"
                     />
                   </div>
@@ -726,10 +724,10 @@ exports[`<Home /> should render correctly with admin user 1`] = `
                   class="image__spinner-container"
                 >
                   <div
-                    class="sc-iqcoie ihdiZO image__skeleton image__skeleton--animated"
+                    class="sc-fnykZs bVJbtJ image__skeleton image__skeleton--animated"
                   >
                     <div
-                      class="sc-crXcEl dYKgpx"
+                      class="sc-fEOsli jwVbEY"
                       style="margin-left: -0px;"
                     />
                   </div>
@@ -769,10 +767,10 @@ exports[`<Home /> should render correctly with admin user 1`] = `
               class="image__spinner-container"
             >
               <div
-                class="sc-iqcoie ihdiZO image__skeleton image__skeleton--animated"
+                class="sc-fnykZs bVJbtJ image__skeleton image__skeleton--animated"
               >
                 <div
-                  class="sc-crXcEl dYKgpx"
+                  class="sc-fEOsli jwVbEY"
                   style="margin-left: -0px;"
                 />
               </div>
@@ -794,16 +792,16 @@ exports[`<Home /> should render correctly with admin user 1`] = `
           class="life-section__content"
         >
           <div
-            class="section__outer"
+            class="sc-evZas fjRNQE"
           >
-            <h2
-              class="section__heading"
+            <h1
+              class="sc-dkzDqf iBtyHU sc-hAZoDl VIrFO"
               id="life"
             >
               Life
-            </h2>
+            </h1>
             <span
-              class="sc-kDDrLX bMvsic life-section__paragraph"
+              class="sc-crXcEl hyjoRq life-section__paragraph"
             >
               I love travel and photography, and occasionally write other stuff.
               <br />
@@ -823,7 +821,7 @@ exports[`<Home /> should render correctly with admin user 1`] = `
             </span>
           </div>
           <span
-            class="sc-kDDrLX bMvsic life-section__paragraph"
+            class="sc-crXcEl hyjoRq life-section__paragraph"
           >
             I got engaged recently in Iceland, and live with my amazing fiancée and Tigger the cat.
           </span>
@@ -840,10 +838,10 @@ exports[`<Home /> should render correctly with admin user 1`] = `
               class="image__spinner-container"
             >
               <div
-                class="sc-iqcoie ihdiZO image__skeleton image__skeleton--animated"
+                class="sc-fnykZs bVJbtJ image__skeleton image__skeleton--animated"
               >
                 <div
-                  class="sc-crXcEl dYKgpx"
+                  class="sc-fEOsli jwVbEY"
                   style="margin-left: -0px;"
                 />
               </div>
@@ -878,10 +876,10 @@ exports[`<Home /> should render correctly with admin user 1`] = `
                   class="image__spinner-container"
                 >
                   <div
-                    class="sc-iqcoie ihdiZO image__skeleton image__skeleton--animated"
+                    class="sc-fnykZs bVJbtJ image__skeleton image__skeleton--animated"
                   >
                     <div
-                      class="sc-crXcEl dYKgpx"
+                      class="sc-fEOsli jwVbEY"
                       style="margin-left: -0px;"
                     />
                   </div>
@@ -914,10 +912,10 @@ exports[`<Home /> should render correctly with admin user 1`] = `
                   class="image__spinner-container"
                 >
                   <div
-                    class="sc-iqcoie ihdiZO image__skeleton image__skeleton--animated"
+                    class="sc-fnykZs bVJbtJ image__skeleton image__skeleton--animated"
                   >
                     <div
-                      class="sc-crXcEl dYKgpx"
+                      class="sc-fEOsli jwVbEY"
                       style="margin-left: -0px;"
                     />
                   </div>
@@ -962,10 +960,10 @@ exports[`<Home /> should render correctly with admin user 1`] = `
                   class="image__spinner-container"
                 >
                   <div
-                    class="sc-iqcoie ihdiZO image__skeleton image__skeleton--animated"
+                    class="sc-fnykZs bVJbtJ image__skeleton image__skeleton--animated"
                   >
                     <div
-                      class="sc-crXcEl dYKgpx"
+                      class="sc-fEOsli jwVbEY"
                       style="margin-left: -0px;"
                     />
                   </div>
@@ -994,7 +992,7 @@ exports[`<Home /> should render correctly with admin user 1`] = `
         class="about-section__outer"
       >
         <span
-          class="sc-kDDrLX bMvsic about-section__paragraph"
+          class="sc-crXcEl hyjoRq about-section__paragraph"
         >
           This site is built in
            
@@ -1135,8 +1133,7 @@ exports[`<Home /> should render correctly with no user 1`] = `
     width="default"
   >
     <h1
-      authenticatorstate="[object Object]"
-      class="page-title__heading"
+      class="sc-gsnTZi hUDWSp sc-kDDrLX cCIGfN"
     >
       Hey! I'm George.
     </h1>
@@ -1150,16 +1147,16 @@ exports[`<Home /> should render correctly with no user 1`] = `
           class="work-section__content"
         >
           <div
-            class="section__outer"
+            class="sc-evZas fjRNQE"
           >
-            <h2
-              class="section__heading"
+            <h1
+              class="sc-dkzDqf iBtyHU sc-hAZoDl VIrFO"
               id="work"
             >
               Work
-            </h2>
+            </h1>
             <span
-              class="sc-kDDrLX bMvsic work-section__paragraph"
+              class="sc-crXcEl hyjoRq work-section__paragraph"
             >
               I'm a web developer at
                
@@ -1218,10 +1215,10 @@ exports[`<Home /> should render correctly with no user 1`] = `
                   class="image__spinner-container"
                 >
                   <div
-                    class="sc-iqcoie ihdiZO image__skeleton image__skeleton--animated"
+                    class="sc-fnykZs bVJbtJ image__skeleton image__skeleton--animated"
                   >
                     <div
-                      class="sc-crXcEl dYKgpx"
+                      class="sc-fEOsli jwVbEY"
                       style="margin-left: -0px;"
                     />
                   </div>
@@ -1254,10 +1251,10 @@ exports[`<Home /> should render correctly with no user 1`] = `
                   class="image__spinner-container"
                 >
                   <div
-                    class="sc-iqcoie ihdiZO image__skeleton image__skeleton--animated"
+                    class="sc-fnykZs bVJbtJ image__skeleton image__skeleton--animated"
                   >
                     <div
-                      class="sc-crXcEl dYKgpx"
+                      class="sc-fEOsli jwVbEY"
                       style="margin-left: -0px;"
                     />
                   </div>
@@ -1290,10 +1287,10 @@ exports[`<Home /> should render correctly with no user 1`] = `
                   class="image__spinner-container"
                 >
                   <div
-                    class="sc-iqcoie ihdiZO image__skeleton image__skeleton--animated"
+                    class="sc-fnykZs bVJbtJ image__skeleton image__skeleton--animated"
                   >
                     <div
-                      class="sc-crXcEl dYKgpx"
+                      class="sc-fEOsli jwVbEY"
                       style="margin-left: -0px;"
                     />
                   </div>
@@ -1333,10 +1330,10 @@ exports[`<Home /> should render correctly with no user 1`] = `
               class="image__spinner-container"
             >
               <div
-                class="sc-iqcoie ihdiZO image__skeleton image__skeleton--animated"
+                class="sc-fnykZs bVJbtJ image__skeleton image__skeleton--animated"
               >
                 <div
-                  class="sc-crXcEl dYKgpx"
+                  class="sc-fEOsli jwVbEY"
                   style="margin-left: -0px;"
                 />
               </div>
@@ -1358,16 +1355,16 @@ exports[`<Home /> should render correctly with no user 1`] = `
           class="life-section__content"
         >
           <div
-            class="section__outer"
+            class="sc-evZas fjRNQE"
           >
-            <h2
-              class="section__heading"
+            <h1
+              class="sc-dkzDqf iBtyHU sc-hAZoDl VIrFO"
               id="life"
             >
               Life
-            </h2>
+            </h1>
             <span
-              class="sc-kDDrLX bMvsic life-section__paragraph"
+              class="sc-crXcEl hyjoRq life-section__paragraph"
             >
               I love travel and photography, and occasionally write other stuff.
               <br />
@@ -1387,7 +1384,7 @@ exports[`<Home /> should render correctly with no user 1`] = `
             </span>
           </div>
           <span
-            class="sc-kDDrLX bMvsic life-section__paragraph"
+            class="sc-crXcEl hyjoRq life-section__paragraph"
           >
             I got engaged recently in Iceland, and live with my amazing fiancée and Tigger the cat.
           </span>
@@ -1404,10 +1401,10 @@ exports[`<Home /> should render correctly with no user 1`] = `
               class="image__spinner-container"
             >
               <div
-                class="sc-iqcoie ihdiZO image__skeleton image__skeleton--animated"
+                class="sc-fnykZs bVJbtJ image__skeleton image__skeleton--animated"
               >
                 <div
-                  class="sc-crXcEl dYKgpx"
+                  class="sc-fEOsli jwVbEY"
                   style="margin-left: -0px;"
                 />
               </div>
@@ -1442,10 +1439,10 @@ exports[`<Home /> should render correctly with no user 1`] = `
                   class="image__spinner-container"
                 >
                   <div
-                    class="sc-iqcoie ihdiZO image__skeleton image__skeleton--animated"
+                    class="sc-fnykZs bVJbtJ image__skeleton image__skeleton--animated"
                   >
                     <div
-                      class="sc-crXcEl dYKgpx"
+                      class="sc-fEOsli jwVbEY"
                       style="margin-left: -0px;"
                     />
                   </div>
@@ -1478,10 +1475,10 @@ exports[`<Home /> should render correctly with no user 1`] = `
                   class="image__spinner-container"
                 >
                   <div
-                    class="sc-iqcoie ihdiZO image__skeleton image__skeleton--animated"
+                    class="sc-fnykZs bVJbtJ image__skeleton image__skeleton--animated"
                   >
                     <div
-                      class="sc-crXcEl dYKgpx"
+                      class="sc-fEOsli jwVbEY"
                       style="margin-left: -0px;"
                     />
                   </div>
@@ -1526,10 +1523,10 @@ exports[`<Home /> should render correctly with no user 1`] = `
                   class="image__spinner-container"
                 >
                   <div
-                    class="sc-iqcoie ihdiZO image__skeleton image__skeleton--animated"
+                    class="sc-fnykZs bVJbtJ image__skeleton image__skeleton--animated"
                   >
                     <div
-                      class="sc-crXcEl dYKgpx"
+                      class="sc-fEOsli jwVbEY"
                       style="margin-left: -0px;"
                     />
                   </div>
@@ -1558,7 +1555,7 @@ exports[`<Home /> should render correctly with no user 1`] = `
         class="about-section__outer"
       >
         <span
-          class="sc-kDDrLX bMvsic about-section__paragraph"
+          class="sc-crXcEl hyjoRq about-section__paragraph"
         >
           This site is built in
            
@@ -1699,8 +1696,7 @@ exports[`<Home /> should render correctly with user 1`] = `
     width="default"
   >
     <h1
-      authenticatorstate="[object Object]"
-      class="page-title__heading"
+      class="sc-gsnTZi hUDWSp sc-kDDrLX cCIGfN"
     >
       Hey! I'm George.
     </h1>
@@ -1714,16 +1710,16 @@ exports[`<Home /> should render correctly with user 1`] = `
           class="work-section__content"
         >
           <div
-            class="section__outer"
+            class="sc-evZas fjRNQE"
           >
-            <h2
-              class="section__heading"
+            <h1
+              class="sc-dkzDqf iBtyHU sc-hAZoDl VIrFO"
               id="work"
             >
               Work
-            </h2>
+            </h1>
             <span
-              class="sc-kDDrLX bMvsic work-section__paragraph"
+              class="sc-crXcEl hyjoRq work-section__paragraph"
             >
               I'm a web developer at
                
@@ -1782,10 +1778,10 @@ exports[`<Home /> should render correctly with user 1`] = `
                   class="image__spinner-container"
                 >
                   <div
-                    class="sc-iqcoie ihdiZO image__skeleton image__skeleton--animated"
+                    class="sc-fnykZs bVJbtJ image__skeleton image__skeleton--animated"
                   >
                     <div
-                      class="sc-crXcEl dYKgpx"
+                      class="sc-fEOsli jwVbEY"
                       style="margin-left: -0px;"
                     />
                   </div>
@@ -1818,10 +1814,10 @@ exports[`<Home /> should render correctly with user 1`] = `
                   class="image__spinner-container"
                 >
                   <div
-                    class="sc-iqcoie ihdiZO image__skeleton image__skeleton--animated"
+                    class="sc-fnykZs bVJbtJ image__skeleton image__skeleton--animated"
                   >
                     <div
-                      class="sc-crXcEl dYKgpx"
+                      class="sc-fEOsli jwVbEY"
                       style="margin-left: -0px;"
                     />
                   </div>
@@ -1854,10 +1850,10 @@ exports[`<Home /> should render correctly with user 1`] = `
                   class="image__spinner-container"
                 >
                   <div
-                    class="sc-iqcoie ihdiZO image__skeleton image__skeleton--animated"
+                    class="sc-fnykZs bVJbtJ image__skeleton image__skeleton--animated"
                   >
                     <div
-                      class="sc-crXcEl dYKgpx"
+                      class="sc-fEOsli jwVbEY"
                       style="margin-left: -0px;"
                     />
                   </div>
@@ -1897,10 +1893,10 @@ exports[`<Home /> should render correctly with user 1`] = `
               class="image__spinner-container"
             >
               <div
-                class="sc-iqcoie ihdiZO image__skeleton image__skeleton--animated"
+                class="sc-fnykZs bVJbtJ image__skeleton image__skeleton--animated"
               >
                 <div
-                  class="sc-crXcEl dYKgpx"
+                  class="sc-fEOsli jwVbEY"
                   style="margin-left: -0px;"
                 />
               </div>
@@ -1922,16 +1918,16 @@ exports[`<Home /> should render correctly with user 1`] = `
           class="life-section__content"
         >
           <div
-            class="section__outer"
+            class="sc-evZas fjRNQE"
           >
-            <h2
-              class="section__heading"
+            <h1
+              class="sc-dkzDqf iBtyHU sc-hAZoDl VIrFO"
               id="life"
             >
               Life
-            </h2>
+            </h1>
             <span
-              class="sc-kDDrLX bMvsic life-section__paragraph"
+              class="sc-crXcEl hyjoRq life-section__paragraph"
             >
               I love travel and photography, and occasionally write other stuff.
               <br />
@@ -1951,7 +1947,7 @@ exports[`<Home /> should render correctly with user 1`] = `
             </span>
           </div>
           <span
-            class="sc-kDDrLX bMvsic life-section__paragraph"
+            class="sc-crXcEl hyjoRq life-section__paragraph"
           >
             I got engaged recently in Iceland, and live with my amazing fiancée and Tigger the cat.
           </span>
@@ -1968,10 +1964,10 @@ exports[`<Home /> should render correctly with user 1`] = `
               class="image__spinner-container"
             >
               <div
-                class="sc-iqcoie ihdiZO image__skeleton image__skeleton--animated"
+                class="sc-fnykZs bVJbtJ image__skeleton image__skeleton--animated"
               >
                 <div
-                  class="sc-crXcEl dYKgpx"
+                  class="sc-fEOsli jwVbEY"
                   style="margin-left: -0px;"
                 />
               </div>
@@ -2006,10 +2002,10 @@ exports[`<Home /> should render correctly with user 1`] = `
                   class="image__spinner-container"
                 >
                   <div
-                    class="sc-iqcoie ihdiZO image__skeleton image__skeleton--animated"
+                    class="sc-fnykZs bVJbtJ image__skeleton image__skeleton--animated"
                   >
                     <div
-                      class="sc-crXcEl dYKgpx"
+                      class="sc-fEOsli jwVbEY"
                       style="margin-left: -0px;"
                     />
                   </div>
@@ -2042,10 +2038,10 @@ exports[`<Home /> should render correctly with user 1`] = `
                   class="image__spinner-container"
                 >
                   <div
-                    class="sc-iqcoie ihdiZO image__skeleton image__skeleton--animated"
+                    class="sc-fnykZs bVJbtJ image__skeleton image__skeleton--animated"
                   >
                     <div
-                      class="sc-crXcEl dYKgpx"
+                      class="sc-fEOsli jwVbEY"
                       style="margin-left: -0px;"
                     />
                   </div>
@@ -2090,10 +2086,10 @@ exports[`<Home /> should render correctly with user 1`] = `
                   class="image__spinner-container"
                 >
                   <div
-                    class="sc-iqcoie ihdiZO image__skeleton image__skeleton--animated"
+                    class="sc-fnykZs bVJbtJ image__skeleton image__skeleton--animated"
                   >
                     <div
-                      class="sc-crXcEl dYKgpx"
+                      class="sc-fEOsli jwVbEY"
                       style="margin-left: -0px;"
                     />
                   </div>
@@ -2122,7 +2118,7 @@ exports[`<Home /> should render correctly with user 1`] = `
         class="about-section__outer"
       >
         <span
-          class="sc-kDDrLX bMvsic about-section__paragraph"
+          class="sc-crXcEl hyjoRq about-section__paragraph"
         >
           This site is built in
            

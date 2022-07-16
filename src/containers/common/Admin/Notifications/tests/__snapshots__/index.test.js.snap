@@ -6,46 +6,46 @@ exports[`<AdminNotifications /> should render correctly - index 1`] = `
     class=""
   >
     <div
-      class="sc-jqUVSM hehiTi"
+      class="sc-ksZaOG duCsur"
     >
       <div
-        class="sc-kDDrLX jqDTPj"
+        class="sc-hAZoDl bQWNOe"
         style="margin-left: -0px;"
       />
     </div>
     <div
-      class="sc-jqUVSM hxCeSk"
+      class="sc-ksZaOG gPHHop"
       style="margin-top: 1.2rem;"
     >
       <div
-        class="sc-kDDrLX jqDTPj"
+        class="sc-hAZoDl bQWNOe"
         style="margin-left: -0px;"
       />
     </div>
     <div
-      class="sc-jqUVSM hxCeSk"
+      class="sc-ksZaOG gPHHop"
       style="margin-top: 1.2rem;"
     >
       <div
-        class="sc-kDDrLX jqDTPj"
+        class="sc-hAZoDl bQWNOe"
         style="margin-left: -0px;"
       />
     </div>
     <div
-      class="sc-jqUVSM hxCeSk"
+      class="sc-ksZaOG gPHHop"
       style="margin-top: 1.2rem;"
     >
       <div
-        class="sc-kDDrLX jqDTPj"
+        class="sc-hAZoDl bQWNOe"
         style="margin-left: -0px;"
       />
     </div>
     <div
-      class="sc-jqUVSM hxCeSk"
+      class="sc-ksZaOG gPHHop"
       style="margin-top: 1.2rem;"
     >
       <div
-        class="sc-kDDrLX jqDTPj"
+        class="sc-hAZoDl bQWNOe"
         style="margin-left: -0px;"
       />
     </div>
@@ -56,14 +56,18 @@ exports[`<AdminNotifications /> should render correctly - index 1`] = `
 exports[`<AdminNotifications /> should render correctly with admin user 1`] = `
 <div>
   <div>
-    <a
-      class="sc-iBkjds kXOvCG page-title__link"
-      href="/admin"
+    <div
+      class="sc-kDDrLX emakin"
     >
-      ⇠ Admin
-    </a>
+      <a
+        class="sc-iBkjds kXOvCG"
+        href="/admin"
+      >
+        ⇠ Admin
+      </a>
+    </div>
     <h1
-      class="page-title__heading page-title__heading--with-link"
+      class="sc-bczRLJ hDLBIv sc-jqUVSM drQcdn"
     >
       Admin notifications
     </h1>
@@ -78,19 +82,19 @@ exports[`<AdminNotifications /> should render correctly with admin user 1`] = `
       Message
     </label>
     <div
-      class="sc-bjUoiL cqBeFF forms__component forms__component__text-box"
+      class="sc-fLlhyt emHXsh forms__component forms__component__text-box"
       placeholder="Message"
     >
       <input
         aria-disabled="false"
         aria-invalid="false"
-        class="sc-fLlhyt blkTEN"
+        class="sc-gicCDI cHujXR"
         id="message_FORM_ID"
         name="Message"
         value=""
       />
       <svg
-        class="sc-gKXOVf ktoyia sc-bBrHrO DteqK"
+        class="sc-gKXOVf ktoyia sc-ezWOiH ilAcif"
         height="18"
         viewBox="0 0 24 24"
         width="18"
@@ -112,12 +116,12 @@ exports[`<AdminNotifications /> should render correctly with admin user 1`] = `
       placeholder="Type"
     >
       <div
-        class="sc-bjUoiL cqBeFF"
+        class="sc-fLlhyt emHXsh"
       >
         <select
           aria-disabled="false"
           aria-invalid="false"
-          class="sc-ivTmOn cEjiJV"
+          class="sc-bZkfAO dfVYuh"
           id="type_FORM_ID"
           name="Type"
         >
@@ -138,7 +142,7 @@ exports[`<AdminNotifications /> should render correctly with admin user 1`] = `
           </option>
         </select>
         <svg
-          class="sc-gKXOVf ktoyia sc-bBrHrO DteqK"
+          class="sc-gKXOVf ktoyia sc-ezWOiH ilAcif"
           height="18"
           viewBox="0 0 24 24"
           width="18"
@@ -151,11 +155,11 @@ exports[`<AdminNotifications /> should render correctly with admin user 1`] = `
       </div>
     </div>
     <button
-      class="sc-evZas jzlNIL forms__component forms__component__button"
+      class="sc-bjUoiL hCXTDD forms__component forms__component__button"
       type="button"
     >
       <span
-        class="sc-ksZaOG cPAimV"
+        class="sc-dIouRR ixIogl"
       >
         Create notification
       </span>
@@ -163,11 +167,11 @@ exports[`<AdminNotifications /> should render correctly with admin user 1`] = `
   </div>
   <div>
     <button
-      class="sc-evZas jzlNIL admin-notifications__control"
+      class="sc-bjUoiL hCXTDD admin-notifications__control"
       type="button"
     >
       <span
-        class="sc-ksZaOG cPAimV"
+        class="sc-dIouRR ixIogl"
       >
         Reload notifications
       </span>
@@ -182,46 +186,46 @@ exports[`<AdminNotifications /> should render correctly with initial state 1`] =
     class=""
   >
     <div
-      class="sc-jqUVSM hehiTi"
+      class="sc-ksZaOG duCsur"
     >
       <div
-        class="sc-kDDrLX jqDTPj"
+        class="sc-hAZoDl bQWNOe"
         style="margin-left: -0px;"
       />
     </div>
     <div
-      class="sc-jqUVSM hxCeSk"
+      class="sc-ksZaOG gPHHop"
       style="margin-top: 1.2rem;"
     >
       <div
-        class="sc-kDDrLX jqDTPj"
+        class="sc-hAZoDl bQWNOe"
         style="margin-left: -0px;"
       />
     </div>
     <div
-      class="sc-jqUVSM hxCeSk"
+      class="sc-ksZaOG gPHHop"
       style="margin-top: 1.2rem;"
     >
       <div
-        class="sc-kDDrLX jqDTPj"
+        class="sc-hAZoDl bQWNOe"
         style="margin-left: -0px;"
       />
     </div>
     <div
-      class="sc-jqUVSM hxCeSk"
+      class="sc-ksZaOG gPHHop"
       style="margin-top: 1.2rem;"
     >
       <div
-        class="sc-kDDrLX jqDTPj"
+        class="sc-hAZoDl bQWNOe"
         style="margin-left: -0px;"
       />
     </div>
     <div
-      class="sc-jqUVSM hxCeSk"
+      class="sc-ksZaOG gPHHop"
       style="margin-top: 1.2rem;"
     >
       <div
-        class="sc-kDDrLX jqDTPj"
+        class="sc-hAZoDl bQWNOe"
         style="margin-left: -0px;"
       />
     </div>
@@ -232,14 +236,18 @@ exports[`<AdminNotifications /> should render correctly with initial state 1`] =
 exports[`<AdminNotifications /> should render correctly with loadError 1`] = `
 <div>
   <div>
-    <a
-      class="sc-iBkjds kXOvCG page-title__link"
-      href="/admin"
+    <div
+      class="sc-kDDrLX emakin"
     >
-      ⇠ Admin
-    </a>
+      <a
+        class="sc-iBkjds kXOvCG"
+        href="/admin"
+      >
+        ⇠ Admin
+      </a>
+    </div>
     <h1
-      class="page-title__heading page-title__heading--with-link"
+      class="sc-bczRLJ hDLBIv sc-jqUVSM drQcdn"
     >
       Admin notifications
     </h1>
@@ -254,19 +262,19 @@ exports[`<AdminNotifications /> should render correctly with loadError 1`] = `
       Message
     </label>
     <div
-      class="sc-bjUoiL cqBeFF forms__component forms__component__text-box"
+      class="sc-fLlhyt emHXsh forms__component forms__component__text-box"
       placeholder="Message"
     >
       <input
         aria-disabled="false"
         aria-invalid="false"
-        class="sc-fLlhyt blkTEN"
+        class="sc-gicCDI cHujXR"
         id="message_FORM_ID"
         name="Message"
         value=""
       />
       <svg
-        class="sc-gKXOVf ktoyia sc-bBrHrO DteqK"
+        class="sc-gKXOVf ktoyia sc-ezWOiH ilAcif"
         height="18"
         viewBox="0 0 24 24"
         width="18"
@@ -288,12 +296,12 @@ exports[`<AdminNotifications /> should render correctly with loadError 1`] = `
       placeholder="Type"
     >
       <div
-        class="sc-bjUoiL cqBeFF"
+        class="sc-fLlhyt emHXsh"
       >
         <select
           aria-disabled="false"
           aria-invalid="false"
-          class="sc-llJcti eKkrfK"
+          class="sc-ikZpkk YDDgC"
           id="type_FORM_ID"
           name="Type"
         >
@@ -314,7 +322,7 @@ exports[`<AdminNotifications /> should render correctly with loadError 1`] = `
           </option>
         </select>
         <svg
-          class="sc-gKXOVf ktoyia sc-bBrHrO DteqK"
+          class="sc-gKXOVf ktoyia sc-ezWOiH ilAcif"
           height="18"
           viewBox="0 0 24 24"
           width="18"
@@ -327,11 +335,11 @@ exports[`<AdminNotifications /> should render correctly with loadError 1`] = `
       </div>
     </div>
     <button
-      class="sc-evZas jzlNIL forms__component forms__component__button"
+      class="sc-bjUoiL hCXTDD forms__component forms__component__button"
       type="button"
     >
       <span
-        class="sc-ksZaOG cPAimV"
+        class="sc-dIouRR ixIogl"
       >
         Create notification
       </span>
@@ -339,21 +347,21 @@ exports[`<AdminNotifications /> should render correctly with loadError 1`] = `
   </div>
   <div>
     <button
-      class="sc-evZas jzlNIL admin-notifications__control"
+      class="sc-bjUoiL hCXTDD admin-notifications__control"
       type="button"
     >
       <span
-        class="sc-ksZaOG cPAimV"
+        class="sc-dIouRR ixIogl"
       >
         Reload notifications
       </span>
     </button>
   </div>
   <span
-    class="sc-fnykZs kIjAem"
+    class="sc-dmRaPn bsyMtp"
   >
     <span
-      class="sc-fEOsli gvMThL"
+      class="sc-kgflAQ daSGn"
     >
       Could not load notifications
       <br />
@@ -366,14 +374,18 @@ exports[`<AdminNotifications /> should render correctly with loadError 1`] = `
 exports[`<AdminNotifications /> should render correctly with loading=true 1`] = `
 <div>
   <div>
-    <a
-      class="sc-iBkjds kXOvCG page-title__link"
-      href="/admin"
+    <div
+      class="sc-kDDrLX emakin"
     >
-      ⇠ Admin
-    </a>
+      <a
+        class="sc-iBkjds kXOvCG"
+        href="/admin"
+      >
+        ⇠ Admin
+      </a>
+    </div>
     <h1
-      class="page-title__heading page-title__heading--with-link"
+      class="sc-bczRLJ hDLBIv sc-jqUVSM drQcdn"
     >
       Admin notifications
     </h1>
@@ -388,19 +400,19 @@ exports[`<AdminNotifications /> should render correctly with loading=true 1`] = 
       Message
     </label>
     <div
-      class="sc-bjUoiL cqBeFF forms__component forms__component__text-box"
+      class="sc-fLlhyt emHXsh forms__component forms__component__text-box"
       placeholder="Message"
     >
       <input
         aria-disabled="false"
         aria-invalid="false"
-        class="sc-fLlhyt blkTEN"
+        class="sc-gicCDI cHujXR"
         id="message_FORM_ID"
         name="Message"
         value=""
       />
       <svg
-        class="sc-gKXOVf ktoyia sc-bBrHrO DteqK"
+        class="sc-gKXOVf ktoyia sc-ezWOiH ilAcif"
         height="18"
         viewBox="0 0 24 24"
         width="18"
@@ -422,12 +434,12 @@ exports[`<AdminNotifications /> should render correctly with loading=true 1`] = 
       placeholder="Type"
     >
       <div
-        class="sc-bjUoiL cqBeFF"
+        class="sc-fLlhyt emHXsh"
       >
         <select
           aria-disabled="false"
           aria-invalid="false"
-          class="sc-cxabCf fhbBrT"
+          class="sc-kLLXSd iyoAca"
           id="type_FORM_ID"
           name="Type"
         >
@@ -448,7 +460,7 @@ exports[`<AdminNotifications /> should render correctly with loading=true 1`] = 
           </option>
         </select>
         <svg
-          class="sc-gKXOVf ktoyia sc-bBrHrO DteqK"
+          class="sc-gKXOVf ktoyia sc-ezWOiH ilAcif"
           height="18"
           viewBox="0 0 24 24"
           width="18"
@@ -461,11 +473,11 @@ exports[`<AdminNotifications /> should render correctly with loading=true 1`] = 
       </div>
     </div>
     <button
-      class="sc-evZas jzlNIL forms__component forms__component__button"
+      class="sc-bjUoiL hCXTDD forms__component forms__component__button"
       type="button"
     >
       <span
-        class="sc-ksZaOG cPAimV"
+        class="sc-dIouRR ixIogl"
       >
         Create notification
       </span>
@@ -473,45 +485,45 @@ exports[`<AdminNotifications /> should render correctly with loading=true 1`] = 
   </div>
   <div>
     <button
-      class="sc-evZas juxlAL admin-notifications__control"
+      class="sc-bjUoiL kQkTFv admin-notifications__control"
       disabled=""
       type="button"
     >
       <span
-        class="sc-ksZaOG idpoLe"
+        class="sc-dIouRR dQEKTW"
       >
         Reload notifications
       </span>
       <div
         aria-hidden="true"
-        class="sc-hAZoDl eImVmd button__loading-spinner"
+        class="sc-hHLeRK dAWrmh button__loading-spinner"
       >
         <div
-          class="sc-iqcoie jUFsFD"
+          class="sc-fnykZs gCEWdg"
         >
           <div
-            class="sc-crXcEl bnEQQz"
+            class="sc-fEOsli lkTqOy"
           />
           <div
-            class="sc-crXcEl REdYz"
+            class="sc-fEOsli dxKqkG"
           />
           <div
-            class="sc-crXcEl cnIsZI"
+            class="sc-fEOsli dGpXuh"
           />
           <div
-            class="sc-crXcEl jStvKR"
+            class="sc-fEOsli cIgRdg"
           />
           <div
-            class="sc-crXcEl dliQGu"
+            class="sc-fEOsli gZzohb"
           />
           <div
-            class="sc-crXcEl jyzewH"
+            class="sc-fEOsli zmfC"
           />
           <div
-            class="sc-crXcEl jSmUjv"
+            class="sc-fEOsli gacaki"
           />
           <div
-            class="sc-crXcEl jVOpOT"
+            class="sc-fEOsli cIrbJy"
           />
         </div>
       </div>
@@ -523,14 +535,18 @@ exports[`<AdminNotifications /> should render correctly with loading=true 1`] = 
 exports[`<AdminNotifications /> should render correctly with notifications 1`] = `
 <div>
   <div>
-    <a
-      class="sc-iBkjds kXOvCG page-title__link"
-      href="/admin"
+    <div
+      class="sc-kDDrLX emakin"
     >
-      ⇠ Admin
-    </a>
+      <a
+        class="sc-iBkjds kXOvCG"
+        href="/admin"
+      >
+        ⇠ Admin
+      </a>
+    </div>
     <h1
-      class="page-title__heading page-title__heading--with-link"
+      class="sc-bczRLJ hDLBIv sc-jqUVSM drQcdn"
     >
       Admin notifications
     </h1>
@@ -545,19 +561,19 @@ exports[`<AdminNotifications /> should render correctly with notifications 1`] =
       Message
     </label>
     <div
-      class="sc-bjUoiL cqBeFF forms__component forms__component__text-box"
+      class="sc-fLlhyt emHXsh forms__component forms__component__text-box"
       placeholder="Message"
     >
       <input
         aria-disabled="false"
         aria-invalid="false"
-        class="sc-fLlhyt blkTEN"
+        class="sc-gicCDI cHujXR"
         id="message_FORM_ID"
         name="Message"
         value=""
       />
       <svg
-        class="sc-gKXOVf ktoyia sc-bBrHrO DteqK"
+        class="sc-gKXOVf ktoyia sc-ezWOiH ilAcif"
         height="18"
         viewBox="0 0 24 24"
         width="18"
@@ -579,12 +595,12 @@ exports[`<AdminNotifications /> should render correctly with notifications 1`] =
       placeholder="Type"
     >
       <div
-        class="sc-bjUoiL cqBeFF"
+        class="sc-fLlhyt emHXsh"
       >
         <select
           aria-disabled="false"
           aria-invalid="false"
-          class="sc-iIPllB kfUAeU"
+          class="sc-jIZahH bsCpnG"
           id="type_FORM_ID"
           name="Type"
         >
@@ -605,7 +621,7 @@ exports[`<AdminNotifications /> should render correctly with notifications 1`] =
           </option>
         </select>
         <svg
-          class="sc-gKXOVf ktoyia sc-bBrHrO DteqK"
+          class="sc-gKXOVf ktoyia sc-ezWOiH ilAcif"
           height="18"
           viewBox="0 0 24 24"
           width="18"
@@ -618,11 +634,11 @@ exports[`<AdminNotifications /> should render correctly with notifications 1`] =
       </div>
     </div>
     <button
-      class="sc-evZas jzlNIL forms__component forms__component__button"
+      class="sc-bjUoiL hCXTDD forms__component forms__component__button"
       type="button"
     >
       <span
-        class="sc-ksZaOG cPAimV"
+        class="sc-dIouRR ixIogl"
       >
         Create notification
       </span>
@@ -630,11 +646,11 @@ exports[`<AdminNotifications /> should render correctly with notifications 1`] =
   </div>
   <div>
     <button
-      class="sc-evZas jzlNIL admin-notifications__control"
+      class="sc-bjUoiL hCXTDD admin-notifications__control"
       type="button"
     >
       <span
-        class="sc-ksZaOG cPAimV"
+        class="sc-dIouRR ixIogl"
       >
         Reload notifications
       </span>
@@ -649,11 +665,11 @@ exports[`<AdminNotifications /> should render correctly with notifications 1`] =
       message1
     </div>
     <button
-      class="sc-evZas kXOxkW outer"
+      class="sc-bjUoiL eoymkC outer"
       type="button"
     >
       <span
-        class="sc-ksZaOG cPAimV"
+        class="sc-dIouRR ixIogl"
       >
         Remove
       </span>
@@ -668,11 +684,11 @@ exports[`<AdminNotifications /> should render correctly with notifications 1`] =
       message2
     </div>
     <button
-      class="sc-evZas kXOxkW outer"
+      class="sc-bjUoiL eoymkC outer"
       type="button"
     >
       <span
-        class="sc-ksZaOG cPAimV"
+        class="sc-dIouRR ixIogl"
       >
         Remove
       </span>
@@ -687,11 +703,11 @@ exports[`<AdminNotifications /> should render correctly with notifications 1`] =
       message3
     </div>
     <button
-      class="sc-evZas kXOxkW outer"
+      class="sc-bjUoiL eoymkC outer"
       type="button"
     >
       <span
-        class="sc-ksZaOG cPAimV"
+        class="sc-dIouRR ixIogl"
       >
         Remove
       </span>
@@ -703,16 +719,16 @@ exports[`<AdminNotifications /> should render correctly with notifications 1`] =
 exports[`<AdminNotifications /> should render correctly with user 1`] = `
 <div>
   <div
-    class="section__outer"
+    class="sc-iqcoie fvEXqf"
   >
-    <h2
-      class="section__heading"
+    <h1
+      class="sc-gsnTZi cTWewb sc-breuTD kCJHVK"
       id="admin-only"
     >
       Admin only
-    </h2>
+    </h1>
     <span
-      class="sc-fnykZs kIjAem"
+      class="sc-dmRaPn bsyMtp"
     >
       You need to be logged in with an admin account to view this content.
       <br />

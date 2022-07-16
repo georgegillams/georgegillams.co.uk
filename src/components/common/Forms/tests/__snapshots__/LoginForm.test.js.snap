@@ -18,7 +18,7 @@ exports[`<LoginForm /> Should render correctly 1`] = `
       <input
         aria-disabled="false"
         aria-invalid="false"
-        autofill="email"
+        autofill="username"
         class="sc-crXcEl dKPdSV"
         id="email_FORM_ID"
         name="Email"
@@ -43,7 +43,7 @@ exports[`<LoginForm /> Should render correctly 1`] = `
       An email containing a login link will be sent to you. To access your account, follow the link in the email.
     </div>
     <button
-      class="sc-dkzDqf kHuqxu forms__component forms__component__button"
+      class="sc-dkzDqf bOfPfm forms__component forms__component__button"
       type="button"
     >
       <span

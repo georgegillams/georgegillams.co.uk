@@ -6,7 +6,7 @@ exports[`<EmailVerification /> should render correctly - index 1`] = `
     class=""
   >
     <h1
-      class="page-title__heading"
+      class="sc-bczRLJ hDLBIv sc-jqUVSM cFomsy"
     >
       Confirming email
     </h1>
@@ -20,7 +20,7 @@ exports[`<EmailVerification /> should render correctly with initial state 1`] = 
     class=""
   >
     <h1
-      class="page-title__heading"
+      class="sc-bczRLJ hDLBIv sc-jqUVSM cFomsy"
     >
       Confirming email
     </h1>
@@ -34,12 +34,12 @@ exports[`<EmailVerification /> should render correctly with user 1`] = `
     class=""
   >
     <h1
-      class="page-title__heading"
+      class="sc-bczRLJ hDLBIv sc-jqUVSM cFomsy"
     >
       Email confirmed
     </h1>
     <span
-      class="sc-jqUVSM iuHAUr"
+      class="sc-iqcoie fIUTrZ"
     >
       Thank you for confirming your email address
     </span>
@@ -53,15 +53,15 @@ exports[`<EmailVerification /> should render correctly with verifyError 1`] = `
     class=""
   >
     <h1
-      class="page-title__heading"
+      class="sc-bczRLJ hDLBIv sc-jqUVSM cFomsy"
     >
       Confirming email
     </h1>
     <span
-      class="sc-jqUVSM iuHAUr"
+      class="sc-iqcoie fIUTrZ"
     >
       <span
-        class="sc-kDDrLX GVGko"
+        class="sc-crXcEl iMitmy"
       >
         Something went wrong whilst confirming your email
         <br />
@@ -78,7 +78,7 @@ exports[`<EmailVerification /> should render correctly with verifying=true 1`] =
     class=""
   >
     <h1
-      class="page-title__heading"
+      class="sc-bczRLJ hDLBIv sc-jqUVSM cFomsy"
     >
       Confirming email
     </h1>
