@@ -22,7 +22,11 @@ const Medals = () => {
               year={2016}
               stravaLink="https://www.strava.com/activities/787876867"
             />
-            <ToughMudderPatch type={TM_PATCH_TYPE.eventHalf} year={2016} stravaLink="" />
+            <ToughMudderPatch
+              type={TM_PATCH_TYPE.eventHalf}
+              year={2016}
+              stravaLink="https://www.strava.com/activities/787876472"
+            />
             <ToughMudderPatch
               type={TM_PATCH_TYPE.eventFull}
               year={2017}
