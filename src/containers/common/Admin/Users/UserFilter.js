@@ -3,10 +3,9 @@ import PropTypes from 'prop-types';
 import Input from '@george-gillams/components/input';
 import Select from '@george-gillams/components/select';
 import Checkbox from '@george-gillams/components/checkbox';
-import FORM_BUILDER_STYLES from '@george-gillams/components/form-builder/forms.css';
 import { cssModules } from '@george-gillams/components/helpers/cssModules';
 
-const getClassName = cssModules(FORM_BUILDER_STYLES);
+const getClassName = cssModules({});
 
 const defaultFilters = { deleted: true, adminStatus: 'all', emailVerified: 'all' };
 
