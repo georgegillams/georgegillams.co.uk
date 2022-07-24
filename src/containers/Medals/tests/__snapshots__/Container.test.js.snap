@@ -248,11 +248,6 @@ exports[`<Medals /> should render correctly 1`] = `
             >
               2X TOUGH MUDDER
             </span>
-            <span
-              class="sc-eCYdqJ iiRHQc sc-fEOsli jFZvgM"
-            >
-              2018
-            </span>
             <div
               class="sc-bjUoiL gZyZTu"
             />
@@ -263,12 +258,7 @@ exports[`<Medals /> should render correctly 1`] = `
             <span
               class="sc-eCYdqJ laHCpw sc-fnykZs bfJfNd"
             >
-              2X TOUGH MUDDER
-            </span>
-            <span
-              class="sc-eCYdqJ iiRHQc sc-fEOsli jFZvgM"
-            >
-              2018
+              3X TOUGH MUDDER
             </span>
             <div
               class="sc-bjUoiL gZyZTu"
@@ -281,11 +271,6 @@ exports[`<Medals /> should render correctly 1`] = `
               class="sc-eCYdqJ laHCpw sc-fnykZs bfJfNd"
             >
               4-6X TOUGH MUDDER
-            </span>
-            <span
-              class="sc-eCYdqJ iiRHQc sc-fEOsli jFZvgM"
-            >
-              2018
             </span>
             <div
               class="sc-bjUoiL gZyZTu"
@@ -378,8 +363,7 @@ exports[`<Medals /> should render correctly 1`] = `
                 </textpath>
               </text>
               <svg
-                class="sc-dIouRR kbcZPl sc-bZkfAO"
-                color="#C50722"
+                class="sc-dIouRR kbcZPl sc-bZkfAO sc-bZkfAO"
                 height="44"
                 viewBox="0 0 200 200"
                 width="44"
@@ -526,8 +510,7 @@ exports[`<Medals /> should render correctly 1`] = `
                 </textpath>
               </text>
               <svg
-                class="sc-dIouRR kbcZPl sc-bZkfAO"
-                color="#11388E"
+                class="sc-dIouRR kbcZPl sc-bZkfAO sc-bZkfAO"
                 height="44"
                 viewBox="0 0 200 200"
                 width="44"
@@ -741,14 +724,13 @@ exports[`<Medals /> should render correctly 1`] = `
                 </textpath>
               </text>
               <svg
-                class="sc-dIouRR kbcZPl sc-jOrMOR"
-                color="#C50722"
-                height="44"
+                class="sc-dIouRR kbcZPl sc-jOrMOR sc-jOrMOR"
+                height="55"
                 viewBox="0 0 200 200"
-                width="44"
-                x="28"
+                width="55"
+                x="22.5"
                 xmlns="http://www.w3.org/2000/svg"
-                y="28"
+                y="22.5"
               >
                 <circle
                   cx="100"
@@ -865,14 +847,13 @@ exports[`<Medals /> should render correctly 1`] = `
                 </textpath>
               </text>
               <svg
-                class="sc-dIouRR kbcZPl sc-jOrMOR"
-                color="#11388E"
-                height="44"
+                class="sc-dIouRR kbcZPl sc-jOrMOR sc-jOrMOR"
+                height="55"
                 viewBox="0 0 200 200"
-                width="44"
-                x="28"
+                width="55"
+                x="22.5"
                 xmlns="http://www.w3.org/2000/svg"
-                y="28"
+                y="22.5"
               >
                 <circle
                   cx="100"

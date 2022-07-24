@@ -3,7 +3,7 @@
 exports[`<NavigationItem /> Should render correctly 1`] = `
 <div>
   <a
-    class="sc-gsnTZi hvFSuA sc-iBkjds lehxXE"
+    class="sc-gsnTZi hvFSuA sc-crXcEl hbtQem"
     href="/test"
   >
     <div
@@ -17,16 +17,16 @@ exports[`<NavigationItem /> Should render correctly 1`] = `
       >
         <div
           aria-hidden="true"
-          class="sc-ftvSup ePJXaK"
+          class="sc-evZas bZNQpX"
         >
           <div
-            class="sc-papXJ diveQv date container"
+            class="sc-breuTD knUrQg date container"
           />
           <div
-            class="sc-jqUVSM elkaFX"
+            class="sc-ksZaOG fRNvFu"
           >
             <h1
-              class="sc-hAZoDl eNenGa"
+              class="sc-hHLeRK ilwmty"
             />
           </div>
         </div>
@@ -39,7 +39,7 @@ exports[`<NavigationItem /> Should render correctly 1`] = `
 exports[`<NavigationItem /> Should render correctly hrefExternal 1`] = `
 <div>
   <a
-    class="sc-gsnTZi hvFSuA sc-iBkjds lehxXE"
+    class="sc-gsnTZi hvFSuA sc-crXcEl hbtQem"
     href="https://duckduckgo.com/"
   >
     <div
@@ -53,16 +53,16 @@ exports[`<NavigationItem /> Should render correctly hrefExternal 1`] = `
       >
         <div
           aria-hidden="true"
-          class="sc-ftvSup ePJXaK"
+          class="sc-evZas bZNQpX"
         >
           <div
-            class="sc-papXJ diveQv date container"
+            class="sc-breuTD knUrQg date container"
           />
           <div
-            class="sc-jqUVSM elkaFX"
+            class="sc-ksZaOG fRNvFu"
           >
             <h1
-              class="sc-hAZoDl eNenGa"
+              class="sc-hHLeRK ilwmty"
             />
           </div>
         </div>
@@ -75,7 +75,7 @@ exports[`<NavigationItem /> Should render correctly hrefExternal 1`] = `
 exports[`<NavigationItem /> Should render correctly with custom className 1`] = `
 <div>
   <a
-    class="sc-gsnTZi hvFSuA sc-iBkjds lehxXE test-custom-classname"
+    class="sc-gsnTZi hvFSuA sc-crXcEl hbtQem test-custom-classname"
     href="/test"
   >
     <div
@@ -89,16 +89,16 @@ exports[`<NavigationItem /> Should render correctly with custom className 1`] = 
       >
         <div
           aria-hidden="true"
-          class="sc-ftvSup ePJXaK"
+          class="sc-evZas bZNQpX"
         >
           <div
-            class="sc-papXJ diveQv date container"
+            class="sc-breuTD knUrQg date container"
           />
           <div
-            class="sc-jqUVSM elkaFX"
+            class="sc-ksZaOG fRNvFu"
           >
             <h1
-              class="sc-hAZoDl eNenGa"
+              class="sc-hHLeRK ilwmty"
             />
           </div>
         </div>
@@ -111,7 +111,7 @@ exports[`<NavigationItem /> Should render correctly with custom className 1`] = 
 exports[`<NavigationItem /> Should render with nextified href 1`] = `
 <div>
   <a
-    class="sc-gsnTZi hvFSuA sc-iBkjds lehxXE"
+    class="sc-gsnTZi hvFSuA sc-crXcEl hbtQem"
     href="/blog/test"
   >
     <div
@@ -125,16 +125,16 @@ exports[`<NavigationItem /> Should render with nextified href 1`] = `
       >
         <div
           aria-hidden="true"
-          class="sc-ftvSup ePJXaK"
+          class="sc-evZas bZNQpX"
         >
           <div
-            class="sc-papXJ diveQv date container"
+            class="sc-breuTD knUrQg date container"
           />
           <div
-            class="sc-jqUVSM elkaFX"
+            class="sc-ksZaOG fRNvFu"
           >
             <h1
-              class="sc-hAZoDl eNenGa"
+              class="sc-hHLeRK ilwmty"
             />
           </div>
         </div>

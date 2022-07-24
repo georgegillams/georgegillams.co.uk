@@ -73,28 +73,28 @@ exports[`<AdminNotifications /> should render correctly with admin user 1`] = `
     </h1>
   </div>
   <div
-    class=""
+    class="sc-gicCDI"
   >
     <label
-      class="forms__component forms__component__label"
+      class="sc-himrzO pijHq"
       for="message_FORM_ID"
     >
       Message
     </label>
     <div
-      class="sc-fLlhyt emHXsh forms__component forms__component__text-box"
+      class="sc-fLlhyt emHXsh sc-bZkfAO eobqRk"
       placeholder="Message"
     >
       <input
         aria-disabled="false"
         aria-invalid="false"
-        class="sc-gicCDI cHujXR"
+        class="sc-ciZhAO fropdU"
         id="message_FORM_ID"
         name="Message"
         value=""
       />
       <svg
-        class="sc-gKXOVf ktoyia sc-ezWOiH ilAcif"
+        class="sc-gKXOVf ktoyia sc-jdAMXn dIUcEF"
         height="18"
         viewBox="0 0 24 24"
         width="18"
@@ -106,13 +106,13 @@ exports[`<AdminNotifications /> should render correctly with admin user 1`] = `
       </svg>
     </div>
     <label
-      class="forms__component forms__component__label"
+      class="sc-himrzO pijHq"
       for="type_FORM_ID"
     >
       Type
     </label>
     <div
-      class="forms__component forms__component__text-box"
+      class="sc-ikZpkk dXeYRL"
       placeholder="Type"
     >
       <div
@@ -121,7 +121,7 @@ exports[`<AdminNotifications /> should render correctly with admin user 1`] = `
         <select
           aria-disabled="false"
           aria-invalid="false"
-          class="sc-bZkfAO dfVYuh"
+          class="sc-bZnhIo hIKVOK"
           id="type_FORM_ID"
           name="Type"
         >
@@ -142,7 +142,7 @@ exports[`<AdminNotifications /> should render correctly with admin user 1`] = `
           </option>
         </select>
         <svg
-          class="sc-gKXOVf ktoyia sc-ezWOiH ilAcif"
+          class="sc-gKXOVf ktoyia sc-jdAMXn dIUcEF"
           height="18"
           viewBox="0 0 24 24"
           width="18"
@@ -155,7 +155,7 @@ exports[`<AdminNotifications /> should render correctly with admin user 1`] = `
       </div>
     </div>
     <button
-      class="sc-bjUoiL hCXTDD forms__component forms__component__button"
+      class="sc-bjUoiL hCXTDD sc-ezWOiH xGiQw"
       type="button"
     >
       <span
@@ -253,28 +253,28 @@ exports[`<AdminNotifications /> should render correctly with loadError 1`] = `
     </h1>
   </div>
   <div
-    class=""
+    class="sc-gicCDI"
   >
     <label
-      class="forms__component forms__component__label"
+      class="sc-himrzO pijHq"
       for="message_FORM_ID"
     >
       Message
     </label>
     <div
-      class="sc-fLlhyt emHXsh forms__component forms__component__text-box"
+      class="sc-fLlhyt emHXsh sc-bZkfAO eobqRk"
       placeholder="Message"
     >
       <input
         aria-disabled="false"
         aria-invalid="false"
-        class="sc-gicCDI cHujXR"
+        class="sc-ciZhAO fropdU"
         id="message_FORM_ID"
         name="Message"
         value=""
       />
       <svg
-        class="sc-gKXOVf ktoyia sc-ezWOiH ilAcif"
+        class="sc-gKXOVf ktoyia sc-jdAMXn dIUcEF"
         height="18"
         viewBox="0 0 24 24"
         width="18"
@@ -286,13 +286,13 @@ exports[`<AdminNotifications /> should render correctly with loadError 1`] = `
       </svg>
     </div>
     <label
-      class="forms__component forms__component__label"
+      class="sc-himrzO pijHq"
       for="type_FORM_ID"
     >
       Type
     </label>
     <div
-      class="forms__component forms__component__text-box"
+      class="sc-ikZpkk dXeYRL"
       placeholder="Type"
     >
       <div
@@ -301,7 +301,7 @@ exports[`<AdminNotifications /> should render correctly with loadError 1`] = `
         <select
           aria-disabled="false"
           aria-invalid="false"
-          class="sc-ikZpkk YDDgC"
+          class="sc-iAvgwm gFnleV"
           id="type_FORM_ID"
           name="Type"
         >
@@ -322,7 +322,7 @@ exports[`<AdminNotifications /> should render correctly with loadError 1`] = `
           </option>
         </select>
         <svg
-          class="sc-gKXOVf ktoyia sc-ezWOiH ilAcif"
+          class="sc-gKXOVf ktoyia sc-jdAMXn dIUcEF"
           height="18"
           viewBox="0 0 24 24"
           width="18"
@@ -335,7 +335,7 @@ exports[`<AdminNotifications /> should render correctly with loadError 1`] = `
       </div>
     </div>
     <button
-      class="sc-bjUoiL hCXTDD forms__component forms__component__button"
+      class="sc-bjUoiL hCXTDD sc-ezWOiH xGiQw"
       type="button"
     >
       <span
@@ -391,28 +391,28 @@ exports[`<AdminNotifications /> should render correctly with loading=true 1`] = 
     </h1>
   </div>
   <div
-    class=""
+    class="sc-gicCDI"
   >
     <label
-      class="forms__component forms__component__label"
+      class="sc-himrzO pijHq"
       for="message_FORM_ID"
     >
       Message
     </label>
     <div
-      class="sc-fLlhyt emHXsh forms__component forms__component__text-box"
+      class="sc-fLlhyt emHXsh sc-bZkfAO eobqRk"
       placeholder="Message"
     >
       <input
         aria-disabled="false"
         aria-invalid="false"
-        class="sc-gicCDI cHujXR"
+        class="sc-ciZhAO fropdU"
         id="message_FORM_ID"
         name="Message"
         value=""
       />
       <svg
-        class="sc-gKXOVf ktoyia sc-ezWOiH ilAcif"
+        class="sc-gKXOVf ktoyia sc-jdAMXn dIUcEF"
         height="18"
         viewBox="0 0 24 24"
         width="18"
@@ -424,13 +424,13 @@ exports[`<AdminNotifications /> should render correctly with loading=true 1`] = 
       </svg>
     </div>
     <label
-      class="forms__component forms__component__label"
+      class="sc-himrzO pijHq"
       for="type_FORM_ID"
     >
       Type
     </label>
     <div
-      class="forms__component forms__component__text-box"
+      class="sc-ikZpkk dXeYRL"
       placeholder="Type"
     >
       <div
@@ -439,7 +439,7 @@ exports[`<AdminNotifications /> should render correctly with loading=true 1`] = 
         <select
           aria-disabled="false"
           aria-invalid="false"
-          class="sc-kLLXSd iyoAca"
+          class="sc-iTONeN dALTTh"
           id="type_FORM_ID"
           name="Type"
         >
@@ -460,7 +460,7 @@ exports[`<AdminNotifications /> should render correctly with loading=true 1`] = 
           </option>
         </select>
         <svg
-          class="sc-gKXOVf ktoyia sc-ezWOiH ilAcif"
+          class="sc-gKXOVf ktoyia sc-jdAMXn dIUcEF"
           height="18"
           viewBox="0 0 24 24"
           width="18"
@@ -473,7 +473,7 @@ exports[`<AdminNotifications /> should render correctly with loading=true 1`] = 
       </div>
     </div>
     <button
-      class="sc-bjUoiL hCXTDD forms__component forms__component__button"
+      class="sc-bjUoiL hCXTDD sc-ezWOiH xGiQw"
       type="button"
     >
       <span
@@ -496,7 +496,7 @@ exports[`<AdminNotifications /> should render correctly with loading=true 1`] = 
       </span>
       <div
         aria-hidden="true"
-        class="sc-hHLeRK dAWrmh button__loading-spinner"
+        class="sc-hHLeRK dAWrmh"
       >
         <div
           class="sc-fnykZs gCEWdg"
@@ -552,28 +552,28 @@ exports[`<AdminNotifications /> should render correctly with notifications 1`] =
     </h1>
   </div>
   <div
-    class=""
+    class="sc-gicCDI"
   >
     <label
-      class="forms__component forms__component__label"
+      class="sc-himrzO pijHq"
       for="message_FORM_ID"
     >
       Message
     </label>
     <div
-      class="sc-fLlhyt emHXsh forms__component forms__component__text-box"
+      class="sc-fLlhyt emHXsh sc-bZkfAO eobqRk"
       placeholder="Message"
     >
       <input
         aria-disabled="false"
         aria-invalid="false"
-        class="sc-gicCDI cHujXR"
+        class="sc-ciZhAO fropdU"
         id="message_FORM_ID"
         name="Message"
         value=""
       />
       <svg
-        class="sc-gKXOVf ktoyia sc-ezWOiH ilAcif"
+        class="sc-gKXOVf ktoyia sc-jdAMXn dIUcEF"
         height="18"
         viewBox="0 0 24 24"
         width="18"
@@ -585,13 +585,13 @@ exports[`<AdminNotifications /> should render correctly with notifications 1`] =
       </svg>
     </div>
     <label
-      class="forms__component forms__component__label"
+      class="sc-himrzO pijHq"
       for="type_FORM_ID"
     >
       Type
     </label>
     <div
-      class="forms__component forms__component__text-box"
+      class="sc-ikZpkk dXeYRL"
       placeholder="Type"
     >
       <div
@@ -600,7 +600,7 @@ exports[`<AdminNotifications /> should render correctly with notifications 1`] =
         <select
           aria-disabled="false"
           aria-invalid="false"
-          class="sc-jIZahH bsCpnG"
+          class="sc-efBctP kwETPg"
           id="type_FORM_ID"
           name="Type"
         >
@@ -621,7 +621,7 @@ exports[`<AdminNotifications /> should render correctly with notifications 1`] =
           </option>
         </select>
         <svg
-          class="sc-gKXOVf ktoyia sc-ezWOiH ilAcif"
+          class="sc-gKXOVf ktoyia sc-jdAMXn dIUcEF"
           height="18"
           viewBox="0 0 24 24"
           width="18"
@@ -634,7 +634,7 @@ exports[`<AdminNotifications /> should render correctly with notifications 1`] =
       </div>
     </div>
     <button
-      class="sc-bjUoiL hCXTDD forms__component forms__component__button"
+      class="sc-bjUoiL hCXTDD sc-ezWOiH xGiQw"
       type="button"
     >
       <span

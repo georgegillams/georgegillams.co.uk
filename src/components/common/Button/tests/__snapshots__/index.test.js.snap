@@ -3,7 +3,7 @@
 exports[`<Button /> Should render correctly 1`] = `
 <div>
   <a
-    class="sc-hKMtZM lopzjZ button__a"
+    class="sc-hKMtZM lopzjZ"
     href="/test"
   >
     <span
@@ -16,7 +16,7 @@ exports[`<Button /> Should render correctly 1`] = `
 exports[`<Button /> Should render correctly hrefExternal 1`] = `
 <div>
   <a
-    class="sc-hKMtZM lopzjZ button__a"
+    class="sc-hKMtZM lopzjZ"
     href="https://duckduckgo.com/"
     rel="noopener noreferrer"
     target="_blank"
@@ -44,7 +44,7 @@ exports[`<Button /> Should render correctly with custom className 1`] = `
 exports[`<Button /> Should render with nextified href 1`] = `
 <div>
   <a
-    class="sc-hKMtZM lopzjZ button__a"
+    class="sc-hKMtZM lopzjZ"
     href="/blog/test"
   >
     <span

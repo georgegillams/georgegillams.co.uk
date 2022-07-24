@@ -3,28 +3,28 @@
 exports[`<CreateNotificationForm /> Should render correctly 1`] = `
 <div>
   <div
-    class=""
+    class="sc-crXcEl"
   >
     <label
-      class="forms__component forms__component__label"
+      class="sc-fEOsli iHSlJz"
       for="message_FORM_ID"
     >
       Message
     </label>
     <div
-      class="sc-iBkjds hDuMmX forms__component forms__component__text-box"
+      class="sc-iBkjds hDuMmX sc-breuTD bOZwsL"
       placeholder="Message"
     >
       <input
         aria-disabled="false"
         aria-invalid="false"
-        class="sc-crXcEl dKPdSV"
+        class="sc-dIouRR cqKYoJ"
         id="message_FORM_ID"
         name="Message"
         value=""
       />
       <svg
-        class="sc-gKXOVf ktoyia sc-evZas bOUPru"
+        class="sc-gKXOVf ktoyia sc-hHLeRK kBmlVx"
         height="18"
         viewBox="0 0 24 24"
         width="18"
@@ -36,13 +36,13 @@ exports[`<CreateNotificationForm /> Should render correctly 1`] = `
       </svg>
     </div>
     <label
-      class="forms__component forms__component__label"
+      class="sc-fEOsli iHSlJz"
       for="type_FORM_ID"
     >
       Type
     </label>
     <div
-      class="forms__component forms__component__text-box"
+      class="sc-hAZoDl iAXvan"
       placeholder="Type"
     >
       <div
@@ -51,7 +51,7 @@ exports[`<CreateNotificationForm /> Should render correctly 1`] = `
         <select
           aria-disabled="false"
           aria-invalid="false"
-          class="sc-breuTD dFnzpG"
+          class="sc-dmRaPn gAvRkq"
           id="type_FORM_ID"
           name="Type"
         >
@@ -72,7 +72,7 @@ exports[`<CreateNotificationForm /> Should render correctly 1`] = `
           </option>
         </select>
         <svg
-          class="sc-gKXOVf ktoyia sc-evZas bOUPru"
+          class="sc-gKXOVf ktoyia sc-hHLeRK kBmlVx"
           height="18"
           viewBox="0 0 24 24"
           width="18"
@@ -85,7 +85,7 @@ exports[`<CreateNotificationForm /> Should render correctly 1`] = `
       </div>
     </div>
     <button
-      class="sc-dkzDqf bOfPfm forms__component forms__component__button"
+      class="sc-dkzDqf bOfPfm sc-evZas hAEDCd"
       type="button"
     >
       <span

@@ -3,28 +3,28 @@
 exports[`<BlogForm /> Should render correctly 1`] = `
 <div>
   <div
-    class=""
+    class="sc-crXcEl"
   >
     <label
-      class="forms__component forms__component__label"
+      class="sc-fEOsli iHSlJz"
       for="title_FORM_ID"
     >
       Title
     </label>
     <div
-      class="sc-iBkjds hDuMmX forms__component forms__component__text-box"
+      class="sc-iBkjds hDuMmX sc-breuTD bOZwsL"
       placeholder="Title"
     >
       <input
         aria-disabled="false"
         aria-invalid="false"
-        class="sc-crXcEl dKPdSV"
+        class="sc-dIouRR cqKYoJ"
         id="title_FORM_ID"
         name="Title"
         value=""
       />
       <svg
-        class="sc-gKXOVf ktoyia sc-evZas bOUPru"
+        class="sc-gKXOVf ktoyia sc-hHLeRK kBmlVx"
         height="18"
         viewBox="0 0 24 24"
         width="18"
@@ -36,25 +36,25 @@ exports[`<BlogForm /> Should render correctly 1`] = `
       </svg>
     </div>
     <label
-      class="forms__component forms__component__label"
+      class="sc-fEOsli iHSlJz"
       for="tags_FORM_ID"
     >
       Tags
     </label>
     <div
-      class="sc-iBkjds hDuMmX forms__component forms__component__text-box"
+      class="sc-iBkjds hDuMmX sc-breuTD bOZwsL"
       placeholder="Tags"
     >
       <input
         aria-disabled="false"
         aria-invalid="false"
-        class="sc-crXcEl dKPdSV"
+        class="sc-dIouRR cqKYoJ"
         id="tags_FORM_ID"
         name="Tags"
         value=""
       />
       <svg
-        class="sc-gKXOVf ktoyia sc-evZas bOUPru"
+        class="sc-gKXOVf ktoyia sc-hHLeRK kBmlVx"
         height="18"
         viewBox="0 0 24 24"
         width="18"
@@ -66,25 +66,25 @@ exports[`<BlogForm /> Should render correctly 1`] = `
       </svg>
     </div>
     <label
-      class="forms__component forms__component__label"
+      class="sc-fEOsli iHSlJz"
       for="blogImage_FORM_ID"
     >
       Blog image
     </label>
     <div
-      class="sc-iBkjds hDuMmX forms__component forms__component__text-box"
+      class="sc-iBkjds hDuMmX sc-breuTD bOZwsL"
       placeholder="Blog image"
     >
       <input
         aria-disabled="false"
         aria-invalid="false"
-        class="sc-crXcEl dKPdSV"
+        class="sc-dIouRR cqKYoJ"
         id="blogImage_FORM_ID"
         name="Blog image"
         value=""
       />
       <svg
-        class="sc-gKXOVf ktoyia sc-evZas bOUPru"
+        class="sc-gKXOVf ktoyia sc-hHLeRK kBmlVx"
         height="18"
         viewBox="0 0 24 24"
         width="18"
@@ -96,25 +96,25 @@ exports[`<BlogForm /> Should render correctly 1`] = `
       </svg>
     </div>
     <label
-      class="forms__component forms__component__label"
+      class="sc-fEOsli iHSlJz"
       for="publishedTimestamp_FORM_ID"
     >
       Published timestamp
     </label>
     <div
-      class="sc-iBkjds hDuMmX forms__component forms__component__text-box"
+      class="sc-iBkjds hDuMmX sc-breuTD bOZwsL"
       placeholder="Published timestamp"
     >
       <input
         aria-disabled="false"
         aria-invalid="false"
-        class="sc-crXcEl dKPdSV"
+        class="sc-dIouRR cqKYoJ"
         id="publishedTimestamp_FORM_ID"
         name="Published timestamp"
         value=""
       />
       <svg
-        class="sc-gKXOVf ktoyia sc-evZas bOUPru"
+        class="sc-gKXOVf ktoyia sc-hHLeRK kBmlVx"
         height="18"
         viewBox="0 0 24 24"
         width="18"
@@ -126,25 +126,25 @@ exports[`<BlogForm /> Should render correctly 1`] = `
       </svg>
     </div>
     <label
-      class="forms__component forms__component__label"
+      class="sc-fEOsli iHSlJz"
       for="blogCardDate_FORM_ID"
     >
       Blog card date override
     </label>
     <div
-      class="sc-iBkjds hDuMmX forms__component forms__component__text-box"
+      class="sc-iBkjds hDuMmX sc-breuTD bOZwsL"
       placeholder="Blog card date override"
     >
       <input
         aria-disabled="false"
         aria-invalid="false"
-        class="sc-crXcEl dKPdSV"
+        class="sc-dIouRR cqKYoJ"
         id="blogCardDate_FORM_ID"
         name="Blog card date override"
         value=""
       />
       <svg
-        class="sc-gKXOVf ktoyia sc-evZas bOUPru"
+        class="sc-gKXOVf ktoyia sc-hHLeRK kBmlVx"
         height="18"
         viewBox="0 0 24 24"
         width="18"
@@ -156,7 +156,7 @@ exports[`<BlogForm /> Should render correctly 1`] = `
       </svg>
     </div>
     <label
-      class="sc-ftvSup bMRhqZ forms__component"
+      class="sc-ftvSup bMRhqZ sc-fnykZs dYLQUI"
       id="light_FORM_ID"
     >
       <div
@@ -189,7 +189,7 @@ exports[`<BlogForm /> Should render correctly 1`] = `
       </div>
     </label>
     <label
-      class="sc-ftvSup bMRhqZ forms__component"
+      class="sc-ftvSup bMRhqZ sc-fnykZs dYLQUI"
       id="published_FORM_ID"
     >
       <div
@@ -222,7 +222,7 @@ exports[`<BlogForm /> Should render correctly 1`] = `
       </div>
     </label>
     <label
-      class="sc-ftvSup bMRhqZ forms__component"
+      class="sc-ftvSup bMRhqZ sc-fnykZs dYLQUI"
       id="showInBlogsList_FORM_ID"
     >
       <div
@@ -255,25 +255,25 @@ exports[`<BlogForm /> Should render correctly 1`] = `
       </div>
     </label>
     <label
-      class="forms__component forms__component__label"
+      class="sc-fEOsli iHSlJz"
       for="blogImageBorderColor_FORM_ID"
     >
       Blog image border color
     </label>
     <div
-      class="sc-iBkjds hDuMmX forms__component forms__component__text-box"
+      class="sc-iBkjds hDuMmX sc-breuTD bOZwsL"
       placeholder="Blog image border color"
     >
       <input
         aria-disabled="false"
         aria-invalid="false"
-        class="sc-crXcEl dKPdSV"
+        class="sc-dIouRR cqKYoJ"
         id="blogImageBorderColor_FORM_ID"
         name="Blog image border color"
         value=""
       />
       <svg
-        class="sc-gKXOVf ktoyia sc-evZas bOUPru"
+        class="sc-gKXOVf ktoyia sc-hHLeRK kBmlVx"
         height="18"
         viewBox="0 0 24 24"
         width="18"
@@ -285,24 +285,24 @@ exports[`<BlogForm /> Should render correctly 1`] = `
       </svg>
     </div>
     <label
-      class="forms__component forms__component__label"
+      class="sc-fEOsli iHSlJz"
       for="content_FORM_ID"
     >
       Content
     </label>
     <div
-      class="sc-iBkjds hDuMmX forms__component forms__component__text-box"
+      class="sc-iBkjds hDuMmX sc-ksZaOG gYTEOI"
       placeholder="Content"
     >
       <textarea
         aria-disabled="false"
         aria-invalid="false"
-        class="sc-breuTD dFnzpG"
+        class="sc-dmRaPn gAvRkq"
         id="content_FORM_ID"
         name="Content"
       />
       <svg
-        class="sc-gKXOVf ktoyia sc-evZas bOUPru"
+        class="sc-gKXOVf ktoyia sc-hHLeRK kBmlVx"
         height="18"
         viewBox="0 0 24 24"
         width="18"
@@ -314,7 +314,7 @@ exports[`<BlogForm /> Should render correctly 1`] = `
       </svg>
     </div>
     <button
-      class="sc-dkzDqf bOfPfm forms__component forms__component__button"
+      class="sc-dkzDqf bOfPfm sc-evZas hAEDCd"
       type="button"
     >
       <span
@@ -328,28 +328,28 @@ exports[`<BlogForm /> Should render correctly 1`] = `
 exports[`<BlogForm /> Should render correctly with no blog id 1`] = `
 <div>
   <div
-    class=""
+    class="sc-crXcEl"
   >
     <label
-      class="forms__component forms__component__label"
+      class="sc-fEOsli iHSlJz"
       for="requestedId_FORM_ID"
     >
       Requested ID
     </label>
     <div
-      class="sc-iBkjds hDuMmX forms__component forms__component__text-box"
+      class="sc-iBkjds hDuMmX sc-breuTD bOZwsL"
       placeholder="Requested ID"
     >
       <input
         aria-disabled="false"
         aria-invalid="false"
-        class="sc-crXcEl dKPdSV"
+        class="sc-dIouRR cqKYoJ"
         id="requestedId_FORM_ID"
         name="Requested ID"
         value=""
       />
       <svg
-        class="sc-gKXOVf ktoyia sc-evZas bOUPru"
+        class="sc-gKXOVf ktoyia sc-hHLeRK kBmlVx"
         height="18"
         viewBox="0 0 24 24"
         width="18"
@@ -361,25 +361,25 @@ exports[`<BlogForm /> Should render correctly with no blog id 1`] = `
       </svg>
     </div>
     <label
-      class="forms__component forms__component__label"
+      class="sc-fEOsli iHSlJz"
       for="title_FORM_ID"
     >
       Title
     </label>
     <div
-      class="sc-iBkjds hDuMmX forms__component forms__component__text-box"
+      class="sc-iBkjds hDuMmX sc-breuTD bOZwsL"
       placeholder="Title"
     >
       <input
         aria-disabled="false"
         aria-invalid="false"
-        class="sc-crXcEl dKPdSV"
+        class="sc-dIouRR cqKYoJ"
         id="title_FORM_ID"
         name="Title"
         value=""
       />
       <svg
-        class="sc-gKXOVf ktoyia sc-evZas bOUPru"
+        class="sc-gKXOVf ktoyia sc-hHLeRK kBmlVx"
         height="18"
         viewBox="0 0 24 24"
         width="18"
@@ -391,25 +391,25 @@ exports[`<BlogForm /> Should render correctly with no blog id 1`] = `
       </svg>
     </div>
     <label
-      class="forms__component forms__component__label"
+      class="sc-fEOsli iHSlJz"
       for="tags_FORM_ID"
     >
       Tags
     </label>
     <div
-      class="sc-iBkjds hDuMmX forms__component forms__component__text-box"
+      class="sc-iBkjds hDuMmX sc-breuTD bOZwsL"
       placeholder="Tags"
     >
       <input
         aria-disabled="false"
         aria-invalid="false"
-        class="sc-crXcEl dKPdSV"
+        class="sc-dIouRR cqKYoJ"
         id="tags_FORM_ID"
         name="Tags"
         value=""
       />
       <svg
-        class="sc-gKXOVf ktoyia sc-evZas bOUPru"
+        class="sc-gKXOVf ktoyia sc-hHLeRK kBmlVx"
         height="18"
         viewBox="0 0 24 24"
         width="18"
@@ -421,25 +421,25 @@ exports[`<BlogForm /> Should render correctly with no blog id 1`] = `
       </svg>
     </div>
     <label
-      class="forms__component forms__component__label"
+      class="sc-fEOsli iHSlJz"
       for="blogImage_FORM_ID"
     >
       Blog image
     </label>
     <div
-      class="sc-iBkjds hDuMmX forms__component forms__component__text-box"
+      class="sc-iBkjds hDuMmX sc-breuTD bOZwsL"
       placeholder="Blog image"
     >
       <input
         aria-disabled="false"
         aria-invalid="false"
-        class="sc-crXcEl dKPdSV"
+        class="sc-dIouRR cqKYoJ"
         id="blogImage_FORM_ID"
         name="Blog image"
         value=""
       />
       <svg
-        class="sc-gKXOVf ktoyia sc-evZas bOUPru"
+        class="sc-gKXOVf ktoyia sc-hHLeRK kBmlVx"
         height="18"
         viewBox="0 0 24 24"
         width="18"
@@ -451,25 +451,25 @@ exports[`<BlogForm /> Should render correctly with no blog id 1`] = `
       </svg>
     </div>
     <label
-      class="forms__component forms__component__label"
+      class="sc-fEOsli iHSlJz"
       for="publishedTimestamp_FORM_ID"
     >
       Published timestamp
     </label>
     <div
-      class="sc-iBkjds hDuMmX forms__component forms__component__text-box"
+      class="sc-iBkjds hDuMmX sc-breuTD bOZwsL"
       placeholder="Published timestamp"
     >
       <input
         aria-disabled="false"
         aria-invalid="false"
-        class="sc-crXcEl dKPdSV"
+        class="sc-dIouRR cqKYoJ"
         id="publishedTimestamp_FORM_ID"
         name="Published timestamp"
         value=""
       />
       <svg
-        class="sc-gKXOVf ktoyia sc-evZas bOUPru"
+        class="sc-gKXOVf ktoyia sc-hHLeRK kBmlVx"
         height="18"
         viewBox="0 0 24 24"
         width="18"
@@ -481,25 +481,25 @@ exports[`<BlogForm /> Should render correctly with no blog id 1`] = `
       </svg>
     </div>
     <label
-      class="forms__component forms__component__label"
+      class="sc-fEOsli iHSlJz"
       for="blogCardDate_FORM_ID"
     >
       Blog card date override
     </label>
     <div
-      class="sc-iBkjds hDuMmX forms__component forms__component__text-box"
+      class="sc-iBkjds hDuMmX sc-breuTD bOZwsL"
       placeholder="Blog card date override"
     >
       <input
         aria-disabled="false"
         aria-invalid="false"
-        class="sc-crXcEl dKPdSV"
+        class="sc-dIouRR cqKYoJ"
         id="blogCardDate_FORM_ID"
         name="Blog card date override"
         value=""
       />
       <svg
-        class="sc-gKXOVf ktoyia sc-evZas bOUPru"
+        class="sc-gKXOVf ktoyia sc-hHLeRK kBmlVx"
         height="18"
         viewBox="0 0 24 24"
         width="18"
@@ -511,7 +511,7 @@ exports[`<BlogForm /> Should render correctly with no blog id 1`] = `
       </svg>
     </div>
     <label
-      class="sc-ftvSup bMRhqZ forms__component"
+      class="sc-ftvSup bMRhqZ sc-fnykZs dYLQUI"
       id="light_FORM_ID"
     >
       <div
@@ -544,7 +544,7 @@ exports[`<BlogForm /> Should render correctly with no blog id 1`] = `
       </div>
     </label>
     <label
-      class="sc-ftvSup bMRhqZ forms__component"
+      class="sc-ftvSup bMRhqZ sc-fnykZs dYLQUI"
       id="published_FORM_ID"
     >
       <div
@@ -577,7 +577,7 @@ exports[`<BlogForm /> Should render correctly with no blog id 1`] = `
       </div>
     </label>
     <label
-      class="sc-ftvSup bMRhqZ forms__component"
+      class="sc-ftvSup bMRhqZ sc-fnykZs dYLQUI"
       id="showInBlogsList_FORM_ID"
     >
       <div
@@ -610,25 +610,25 @@ exports[`<BlogForm /> Should render correctly with no blog id 1`] = `
       </div>
     </label>
     <label
-      class="forms__component forms__component__label"
+      class="sc-fEOsli iHSlJz"
       for="blogImageBorderColor_FORM_ID"
     >
       Blog image border color
     </label>
     <div
-      class="sc-iBkjds hDuMmX forms__component forms__component__text-box"
+      class="sc-iBkjds hDuMmX sc-breuTD bOZwsL"
       placeholder="Blog image border color"
     >
       <input
         aria-disabled="false"
         aria-invalid="false"
-        class="sc-crXcEl dKPdSV"
+        class="sc-dIouRR cqKYoJ"
         id="blogImageBorderColor_FORM_ID"
         name="Blog image border color"
         value=""
       />
       <svg
-        class="sc-gKXOVf ktoyia sc-evZas bOUPru"
+        class="sc-gKXOVf ktoyia sc-hHLeRK kBmlVx"
         height="18"
         viewBox="0 0 24 24"
         width="18"
@@ -640,24 +640,24 @@ exports[`<BlogForm /> Should render correctly with no blog id 1`] = `
       </svg>
     </div>
     <label
-      class="forms__component forms__component__label"
+      class="sc-fEOsli iHSlJz"
       for="content_FORM_ID"
     >
       Content
     </label>
     <div
-      class="sc-iBkjds hDuMmX forms__component forms__component__text-box"
+      class="sc-iBkjds hDuMmX sc-ksZaOG gYTEOI"
       placeholder="Content"
     >
       <textarea
         aria-disabled="false"
         aria-invalid="false"
-        class="sc-breuTD dFnzpG"
+        class="sc-dmRaPn gAvRkq"
         id="content_FORM_ID"
         name="Content"
       />
       <svg
-        class="sc-gKXOVf ktoyia sc-evZas bOUPru"
+        class="sc-gKXOVf ktoyia sc-hHLeRK kBmlVx"
         height="18"
         viewBox="0 0 24 24"
         width="18"
@@ -669,7 +669,7 @@ exports[`<BlogForm /> Should render correctly with no blog id 1`] = `
       </svg>
     </div>
     <button
-      class="sc-dkzDqf bOfPfm forms__component forms__component__button"
+      class="sc-dkzDqf bOfPfm sc-evZas hAEDCd"
       type="button"
     >
       <span
