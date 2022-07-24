@@ -3,29 +3,29 @@
 exports[`<SignUpForm /> Should render correctly 1`] = `
 <div>
   <div
-    class=""
+    class="sc-crXcEl"
   >
     <label
-      class="forms__component forms__component__label"
+      class="sc-fEOsli iHSlJz"
       for="uname_FORM_ID"
     >
       Display name
     </label>
     <div
-      class="sc-iBkjds hDuMmX forms__component forms__component__text-box"
+      class="sc-iBkjds hDuMmX sc-breuTD bOZwsL"
       placeholder="Display name"
     >
       <input
         aria-disabled="false"
         aria-invalid="false"
         autofill="username"
-        class="sc-crXcEl dKPdSV"
+        class="sc-dIouRR cqKYoJ"
         id="uname_FORM_ID"
         name="Display name"
         value=""
       />
       <svg
-        class="sc-gKXOVf ktoyia sc-evZas bOUPru"
+        class="sc-gKXOVf ktoyia sc-hHLeRK kBmlVx"
         height="18"
         viewBox="0 0 24 24"
         width="18"
@@ -37,27 +37,27 @@ exports[`<SignUpForm /> Should render correctly 1`] = `
       </svg>
     </div>
     <label
-      class="forms__component forms__component__label"
+      class="sc-fEOsli iHSlJz"
       for="email_FORM_ID"
     >
       Email
     </label>
     <div
-      class="sc-iBkjds hDuMmX forms__component forms__component__text-box"
+      class="sc-iBkjds hDuMmX sc-breuTD bOZwsL"
       placeholder="Email"
     >
       <input
         aria-disabled="false"
         aria-invalid="false"
         autofill="email"
-        class="sc-crXcEl dKPdSV"
+        class="sc-dIouRR cqKYoJ"
         id="email_FORM_ID"
         name="Email"
         spellcheck="false"
         value=""
       />
       <svg
-        class="sc-gKXOVf ktoyia sc-evZas bOUPru"
+        class="sc-gKXOVf ktoyia sc-hHLeRK kBmlVx"
         height="18"
         viewBox="0 0 24 24"
         width="18"
@@ -69,7 +69,7 @@ exports[`<SignUpForm /> Should render correctly 1`] = `
       </svg>
     </div>
     <button
-      class="sc-dkzDqf bOfPfm forms__component forms__component__button"
+      class="sc-dkzDqf bOfPfm sc-evZas hAEDCd"
       type="button"
     >
       <span

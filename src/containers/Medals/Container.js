@@ -46,9 +46,9 @@ const Medals = () => {
         </Subsection>
         <Subsection anchor={false} name="Legionaire">
           <StyledMedalShelf>
-            <ToughMudderPatch type={TM_PATCH_TYPE.legionnaire2} year={2018} />
-            <ToughMudderPatch type={TM_PATCH_TYPE.legionnaire3} year={2018} />
-            <ToughMudderPatch type={TM_PATCH_TYPE.legionnaire456} year={2018} />
+            <ToughMudderPatch type={TM_PATCH_TYPE.legionnaire2} />
+            <ToughMudderPatch type={TM_PATCH_TYPE.legionnaire3} />
+            <ToughMudderPatch type={TM_PATCH_TYPE.legionnaire456} />
           </StyledMedalShelf>
         </Subsection>
       </Section>

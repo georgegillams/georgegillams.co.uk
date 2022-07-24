@@ -3,7 +3,7 @@
 exports[`<Photography /> should render correctly 1`] = `
 <div>
   <h1
-    class="sc-ksZaOG fImUcH sc-iIPllB dRlPIC"
+    class="sc-dIouRR bdrYkT sc-jIZahH frhAkw"
   >
     Photography
   </h1>
@@ -12,7 +12,7 @@ exports[`<Photography /> should render correctly 1`] = `
   >
     <a
       aria-label="Find me on GuruShots"
-      class="sc-gsnTZi hvFSuA sc-iBkjds fIaXJf photography__card"
+      class="sc-gsnTZi hvFSuA sc-crXcEl feuFUh photography__card"
       href="https://gurushots.com/georgegillams/achievements"
     >
       <div
@@ -26,35 +26,38 @@ exports[`<Photography /> should render correctly 1`] = `
         >
           <div
             aria-hidden="true"
-            class="sc-ftvSup ePJXaK"
+            class="sc-evZas bZNQpX"
           >
             <div
-              class="sc-papXJ dzTRhW date container"
+              class="sc-breuTD hQxFzl date container"
             />
             <div
-              class="sc-jqUVSM elkaFX"
+              class="sc-ksZaOG fRNvFu"
             >
               <h1
-                class="sc-hAZoDl eNenGa"
+                class="sc-hHLeRK ilwmty"
               >
                 Find me on GuruShots
               </h1>
             </div>
             <div
-              class="sc-kDDrLX foETbC"
+              class="sc-hAZoDl gdKkFT"
             >
               <div
-                class="image__outer sc-evZas iqencj"
+                class="sc-iBkjds bZGVhU"
               >
+                <style>
+                  .js .gg-image__img--hide {opacity: 0;}
+                </style>
                 <div
-                  class="image__placeholder"
+                  class="sc-ftvSup ilXIrt"
                   style="padding-bottom: 100%;"
                 >
                   <div
-                    class="image__spinner-container"
+                    class="sc-papXJ dBrEee"
                   >
                     <div
-                      class="sc-jSMfEi detKc image__skeleton image__skeleton--animated"
+                      class="sc-jSMfEi detKc sc-jqUVSM kZOdvC"
                     >
                       <div
                         class="sc-gKXOVf ihacwt"
@@ -64,15 +67,14 @@ exports[`<Photography /> should render correctly 1`] = `
                   </div>
                   <img
                     alt="card"
-                    class="image__img image__img--animated image__img--hidden image__img--light"
+                    class="sc-kDDrLX fyqUD gg-image__img--hide"
                     src="https://i.imgur.com/Jng7EhH.png"
                   />
                   <img
                     alt="card"
-                    class="image__img image__img--animated image__img--hidden image__img--dark"
+                    class="sc-iqcoie iTHoXU gg-image__img--hide"
                     src="https://i.imgur.com/Jng7EhH.png"
                   />
-                  <noscript />
                 </div>
               </div>
             </div>
@@ -82,7 +84,7 @@ exports[`<Photography /> should render correctly 1`] = `
     </a>
     <a
       aria-label="Find me on Flickr"
-      class="sc-gsnTZi hvFSuA sc-iBkjds fIaXJf photography__card"
+      class="sc-gsnTZi hvFSuA sc-crXcEl feuFUh photography__card"
       href="https://www.flickr.com/people/georgegillams/"
     >
       <div
@@ -96,35 +98,38 @@ exports[`<Photography /> should render correctly 1`] = `
         >
           <div
             aria-hidden="true"
-            class="sc-ftvSup ePJXaK"
+            class="sc-evZas bZNQpX"
           >
             <div
-              class="sc-papXJ dzTRhW date container"
+              class="sc-breuTD hQxFzl date container"
             />
             <div
-              class="sc-jqUVSM elkaFX"
+              class="sc-ksZaOG fRNvFu"
             >
               <h1
-                class="sc-hAZoDl eNenGa"
+                class="sc-hHLeRK ilwmty"
               >
                 Find me on Flickr
               </h1>
             </div>
             <div
-              class="sc-kDDrLX foETbC"
+              class="sc-hAZoDl gdKkFT"
             >
               <div
-                class="image__outer sc-evZas iqencj"
+                class="sc-iBkjds bZGVhU"
               >
+                <style>
+                  .js .gg-image__img--hide {opacity: 0;}
+                </style>
                 <div
-                  class="image__placeholder"
+                  class="sc-ftvSup ilXIrt"
                   style="padding-bottom: 100%;"
                 >
                   <div
-                    class="image__spinner-container"
+                    class="sc-papXJ dBrEee"
                   >
                     <div
-                      class="sc-jSMfEi detKc image__skeleton image__skeleton--animated"
+                      class="sc-jSMfEi detKc sc-jqUVSM kZOdvC"
                     >
                       <div
                         class="sc-gKXOVf ihacwt"
@@ -134,15 +139,14 @@ exports[`<Photography /> should render correctly 1`] = `
                   </div>
                   <img
                     alt="card"
-                    class="image__img image__img--animated image__img--hidden image__img--light"
+                    class="sc-kDDrLX fyqUD gg-image__img--hide"
                     src="https://i.imgur.com/u30cQWU.png"
                   />
                   <img
                     alt="card"
-                    class="image__img image__img--animated image__img--hidden image__img--dark"
+                    class="sc-iqcoie iTHoXU gg-image__img--hide"
                     src="https://i.imgur.com/u30cQWU.png"
                   />
-                  <noscript />
                 </div>
               </div>
             </div>
@@ -152,7 +156,7 @@ exports[`<Photography /> should render correctly 1`] = `
     </a>
     <a
       aria-label="Find me on Unsplash"
-      class="sc-gsnTZi hvFSuA sc-iBkjds fIaXJf photography__card"
+      class="sc-gsnTZi hvFSuA sc-crXcEl feuFUh photography__card"
       href="https://unsplash.com/@georgegillams"
     >
       <div
@@ -166,35 +170,38 @@ exports[`<Photography /> should render correctly 1`] = `
         >
           <div
             aria-hidden="true"
-            class="sc-ftvSup ePJXaK"
+            class="sc-evZas bZNQpX"
           >
             <div
-              class="sc-papXJ dzTRhW date container"
+              class="sc-breuTD hQxFzl date container"
             />
             <div
-              class="sc-jqUVSM elkaFX"
+              class="sc-ksZaOG fRNvFu"
             >
               <h1
-                class="sc-hAZoDl eNenGa"
+                class="sc-hHLeRK ilwmty"
               >
                 Find me on Unsplash
               </h1>
             </div>
             <div
-              class="sc-kDDrLX foETbC"
+              class="sc-hAZoDl gdKkFT"
             >
               <div
-                class="image__outer sc-evZas iqencj"
+                class="sc-iBkjds bZGVhU"
               >
+                <style>
+                  .js .gg-image__img--hide {opacity: 0;}
+                </style>
                 <div
-                  class="image__placeholder"
+                  class="sc-ftvSup ilXIrt"
                   style="padding-bottom: 100%;"
                 >
                   <div
-                    class="image__spinner-container"
+                    class="sc-papXJ dBrEee"
                   >
                     <div
-                      class="sc-jSMfEi detKc image__skeleton image__skeleton--animated"
+                      class="sc-jSMfEi detKc sc-jqUVSM kZOdvC"
                     >
                       <div
                         class="sc-gKXOVf ihacwt"
@@ -204,15 +211,14 @@ exports[`<Photography /> should render correctly 1`] = `
                   </div>
                   <img
                     alt="card"
-                    class="image__img image__img--animated image__img--hidden image__img--light"
+                    class="sc-kDDrLX fyqUD gg-image__img--hide"
                     src="https://i.imgur.com/obBqvqK.png"
                   />
                   <img
                     alt="card"
-                    class="image__img image__img--animated image__img--hidden image__img--dark"
+                    class="sc-iqcoie iTHoXU gg-image__img--hide"
                     src="https://i.imgur.com/obBqvqK.png"
                   />
-                  <noscript />
                 </div>
               </div>
             </div>
@@ -222,29 +228,32 @@ exports[`<Photography /> should render correctly 1`] = `
     </a>
   </div>
   <div
-    class="sc-bBrHrO bwyoak"
+    class="sc-ezWOiH hCWRxp"
   >
     <div
-      class="sc-bBrHrO bwyoak photography__subsection"
+      class="sc-ezWOiH hCWRxp photography__subsection"
     >
       <h1
-        class="sc-fnykZs dRogcl sc-llJcti kolJEy"
+        class="sc-dmRaPn ibeVEC sc-ikZpkk imExry"
         id="harlequins-vs-worcester-rugby-match"
       >
         Harlequins vs Worcester Rugby Match
       </h1>
       <div
-        class="image__outer photography__image"
+        class="sc-iBkjds bZGVhU"
       >
+        <style>
+          .js .gg-image__img--hide {opacity: 0;}
+        </style>
         <div
-          class="image__placeholder"
+          class="sc-ftvSup ilXIrt"
           style="padding-bottom: 57.96610169491525%;"
         >
           <div
-            class="image__spinner-container"
+            class="sc-papXJ dBrEee"
           >
             <div
-              class="sc-jSMfEi detKc image__skeleton image__skeleton--animated"
+              class="sc-jSMfEi detKc sc-jqUVSM kZOdvC"
             >
               <div
                 class="sc-gKXOVf ihacwt"
@@ -254,39 +263,41 @@ exports[`<Photography /> should render correctly 1`] = `
           </div>
           <img
             alt="Harlequins vs Worcester Rugby Match"
-            class="image__img image__img--animated image__img--hidden image__img--light"
+            class="sc-kDDrLX fyqUD gg-image__img--hide"
             src="https://i.imgur.com/OsFI23z.jpg"
           />
           <img
             alt="Harlequins vs Worcester Rugby Match"
-            class="image__img image__img--animated image__img--hidden image__img--dark"
+            class="sc-iqcoie iTHoXU gg-image__img--hide"
             src="https://i.imgur.com/OsFI23z.jpg"
           />
-          <noscript />
         </div>
       </div>
     </div>
     <div
-      class="sc-bBrHrO bwyoak photography__subsection"
+      class="sc-ezWOiH hCWRxp photography__subsection"
     >
       <h1
-        class="sc-fnykZs dRogcl sc-llJcti kolJEy"
+        class="sc-dmRaPn ibeVEC sc-ikZpkk imExry"
         id="the-cat-looking-handsome-as-ever!"
       >
         The cat looking handsome as ever!
       </h1>
       <div
-        class="image__outer photography__image"
+        class="sc-iBkjds bZGVhU"
       >
+        <style>
+          .js .gg-image__img--hide {opacity: 0;}
+        </style>
         <div
-          class="image__placeholder"
+          class="sc-ftvSup ilXIrt"
           style="padding-bottom: 66.66666666666667%;"
         >
           <div
-            class="image__spinner-container"
+            class="sc-papXJ dBrEee"
           >
             <div
-              class="sc-jSMfEi detKc image__skeleton image__skeleton--animated"
+              class="sc-jSMfEi detKc sc-jqUVSM kZOdvC"
             >
               <div
                 class="sc-gKXOVf ihacwt"
@@ -296,23 +307,22 @@ exports[`<Photography /> should render correctly 1`] = `
           </div>
           <img
             alt="The cat looking handsome"
-            class="image__img image__img--animated image__img--hidden image__img--light"
+            class="sc-kDDrLX fyqUD gg-image__img--hide"
             src="https://i.imgur.com/Aqy3tuA.jpg"
           />
           <img
             alt="The cat looking handsome"
-            class="image__img image__img--animated image__img--hidden image__img--dark"
+            class="sc-iqcoie iTHoXU gg-image__img--hide"
             src="https://i.imgur.com/Aqy3tuA.jpg"
           />
-          <noscript />
         </div>
       </div>
     </div>
     <div
-      class="sc-bBrHrO bwyoak photography__subsection"
+      class="sc-ezWOiH hCWRxp photography__subsection"
     >
       <h1
-        class="sc-fnykZs dRogcl sc-llJcti kolJEy"
+        class="sc-dmRaPn ibeVEC sc-ikZpkk imExry"
         id="a-training-scenario-at-epicc-2017"
       >
         A training scenario at EPICC 2017
@@ -324,17 +334,20 @@ exports[`<Photography /> should render correctly 1`] = `
           class="graphic-content__content-container graphic-content__content-container--hidden"
         >
           <div
-            class="image__outer"
+            class="sc-iBkjds bZGVhU"
           >
+            <style>
+              .js .gg-image__img--hide {opacity: 0;}
+            </style>
             <div
-              class="image__placeholder"
+              class="sc-ftvSup ilXIrt"
               style="padding-bottom: 60.416666666666664%;"
             >
               <div
-                class="image__spinner-container"
+                class="sc-papXJ dBrEee"
               >
                 <div
-                  class="sc-jSMfEi detKc image__skeleton image__skeleton--animated"
+                  class="sc-jSMfEi detKc sc-jqUVSM kZOdvC"
                 >
                   <div
                     class="sc-gKXOVf ihacwt"
@@ -344,15 +357,14 @@ exports[`<Photography /> should render correctly 1`] = `
               </div>
               <img
                 alt="A training scenario at EPICC 2017"
-                class="image__img image__img--animated image__img--hidden image__img--light"
+                class="sc-kDDrLX fyqUD gg-image__img--hide"
                 src="https://i.imgur.com/6B35GTV.jpg"
               />
               <img
                 alt="A training scenario at EPICC 2017"
-                class="image__img image__img--animated image__img--hidden image__img--dark"
+                class="sc-iqcoie iTHoXU gg-image__img--hide"
                 src="https://i.imgur.com/6B35GTV.jpg"
               />
-              <noscript />
             </div>
           </div>
         </div>
@@ -369,11 +381,11 @@ exports[`<Photography /> should render correctly 1`] = `
             </div>
             <br />
             <button
-              class="sc-kLLXSd ePwbFg graphic-content__text"
+              class="sc-ciZhAO gbotEi graphic-content__text"
               type="button"
             >
               <span
-                class="sc-jIZahH kXkAyS"
+                class="sc-bZnhIo jfVzHO"
               >
                 Show graphic content
               </span>
@@ -383,26 +395,29 @@ exports[`<Photography /> should render correctly 1`] = `
       </div>
     </div>
     <div
-      class="sc-bBrHrO bwyoak photography__subsection"
+      class="sc-ezWOiH hCWRxp photography__subsection"
     >
       <h1
-        class="sc-fnykZs dRogcl sc-llJcti kolJEy"
+        class="sc-dmRaPn ibeVEC sc-ikZpkk imExry"
         id="dog-running-with-a-stick"
       >
         Dog running with a Stick
       </h1>
       <div
-        class="image__outer photography__image"
+        class="sc-iBkjds bZGVhU"
       >
+        <style>
+          .js .gg-image__img--hide {opacity: 0;}
+        </style>
         <div
-          class="image__placeholder"
+          class="sc-ftvSup ilXIrt"
           style="padding-bottom: 66.66666666666667%;"
         >
           <div
-            class="image__spinner-container"
+            class="sc-papXJ dBrEee"
           >
             <div
-              class="sc-jSMfEi detKc image__skeleton image__skeleton--animated"
+              class="sc-jSMfEi detKc sc-jqUVSM kZOdvC"
             >
               <div
                 class="sc-gKXOVf ihacwt"
@@ -412,39 +427,41 @@ exports[`<Photography /> should render correctly 1`] = `
           </div>
           <img
             alt="Dog running with a stick"
-            class="image__img image__img--animated image__img--hidden image__img--light"
+            class="sc-kDDrLX fyqUD gg-image__img--hide"
             src="https://i.imgur.com/8dnCZ5D.jpg"
           />
           <img
             alt="Dog running with a stick"
-            class="image__img image__img--animated image__img--hidden image__img--dark"
+            class="sc-iqcoie iTHoXU gg-image__img--hide"
             src="https://i.imgur.com/8dnCZ5D.jpg"
           />
-          <noscript />
         </div>
       </div>
     </div>
     <div
-      class="sc-bBrHrO bwyoak photography__subsection"
+      class="sc-ezWOiH hCWRxp photography__subsection"
     >
       <h1
-        class="sc-fnykZs dRogcl sc-llJcti kolJEy"
+        class="sc-dmRaPn ibeVEC sc-ikZpkk imExry"
         id="stunt-motorcyclist"
       >
         Stunt Motorcyclist
       </h1>
       <div
-        class="image__outer photography__image"
+        class="sc-iBkjds bZGVhU"
       >
+        <style>
+          .js .gg-image__img--hide {opacity: 0;}
+        </style>
         <div
-          class="image__placeholder"
+          class="sc-ftvSup ilXIrt"
           style="padding-bottom: 66.66666666666667%;"
         >
           <div
-            class="image__spinner-container"
+            class="sc-papXJ dBrEee"
           >
             <div
-              class="sc-jSMfEi detKc image__skeleton image__skeleton--animated"
+              class="sc-jSMfEi detKc sc-jqUVSM kZOdvC"
             >
               <div
                 class="sc-gKXOVf ihacwt"
@@ -454,39 +471,41 @@ exports[`<Photography /> should render correctly 1`] = `
           </div>
           <img
             alt="Stunt Motorcyclist standing on the back of a bike"
-            class="image__img image__img--animated image__img--hidden image__img--light"
+            class="sc-kDDrLX fyqUD gg-image__img--hide"
             src="https://i.imgur.com/WlLYxDw.jpg"
           />
           <img
             alt="Stunt Motorcyclist standing on the back of a bike"
-            class="image__img image__img--animated image__img--hidden image__img--dark"
+            class="sc-iqcoie iTHoXU gg-image__img--hide"
             src="https://i.imgur.com/WlLYxDw.jpg"
           />
-          <noscript />
         </div>
       </div>
     </div>
     <div
-      class="sc-bBrHrO bwyoak photography__subsection"
+      class="sc-ezWOiH hCWRxp photography__subsection"
     >
       <h1
-        class="sc-fnykZs dRogcl sc-llJcti kolJEy"
+        class="sc-dmRaPn ibeVEC sc-ikZpkk imExry"
         id="longleat-festival-of-light"
       >
         Longleat Festival of Light
       </h1>
       <div
-        class="image__outer photography__image"
+        class="sc-iBkjds bZGVhU"
       >
+        <style>
+          .js .gg-image__img--hide {opacity: 0;}
+        </style>
         <div
-          class="image__placeholder"
+          class="sc-ftvSup ilXIrt"
           style="padding-bottom: 66.66666666666667%;"
         >
           <div
-            class="image__spinner-container"
+            class="sc-papXJ dBrEee"
           >
             <div
-              class="sc-jSMfEi detKc image__skeleton image__skeleton--animated"
+              class="sc-jSMfEi detKc sc-jqUVSM kZOdvC"
             >
               <div
                 class="sc-gKXOVf ihacwt"
@@ -496,39 +515,41 @@ exports[`<Photography /> should render correctly 1`] = `
           </div>
           <img
             alt="Longleat Festival of Light"
-            class="image__img image__img--animated image__img--hidden image__img--light"
+            class="sc-kDDrLX fyqUD gg-image__img--hide"
             src="https://i.imgur.com/EHF7zqM.jpg"
           />
           <img
             alt="Longleat Festival of Light"
-            class="image__img image__img--animated image__img--hidden image__img--dark"
+            class="sc-iqcoie iTHoXU gg-image__img--hide"
             src="https://i.imgur.com/EHF7zqM.jpg"
           />
-          <noscript />
         </div>
       </div>
     </div>
     <div
-      class="sc-bBrHrO bwyoak photography__subsection"
+      class="sc-ezWOiH hCWRxp photography__subsection"
     >
       <h1
-        class="sc-fnykZs dRogcl sc-llJcti kolJEy"
+        class="sc-dmRaPn ibeVEC sc-ikZpkk imExry"
         id="serre-chevalier"
       >
         Serre Chevalier
       </h1>
       <div
-        class="image__outer photography__image"
+        class="sc-iBkjds bZGVhU"
       >
+        <style>
+          .js .gg-image__img--hide {opacity: 0;}
+        </style>
         <div
-          class="image__placeholder"
+          class="sc-ftvSup ilXIrt"
           style="padding-bottom: 66.66666666666667%;"
         >
           <div
-            class="image__spinner-container"
+            class="sc-papXJ dBrEee"
           >
             <div
-              class="sc-jSMfEi detKc image__skeleton image__skeleton--animated"
+              class="sc-jSMfEi detKc sc-jqUVSM kZOdvC"
             >
               <div
                 class="sc-gKXOVf ihacwt"
@@ -538,39 +559,41 @@ exports[`<Photography /> should render correctly 1`] = `
           </div>
           <img
             alt="Serre Chavelier Ski Slopes"
-            class="image__img image__img--animated image__img--hidden image__img--light"
+            class="sc-kDDrLX fyqUD gg-image__img--hide"
             src="https://i.imgur.com/SSGGfbL.jpg"
           />
           <img
             alt="Serre Chavelier Ski Slopes"
-            class="image__img image__img--animated image__img--hidden image__img--dark"
+            class="sc-iqcoie iTHoXU gg-image__img--hide"
             src="https://i.imgur.com/SSGGfbL.jpg"
           />
-          <noscript />
         </div>
       </div>
     </div>
     <div
-      class="sc-bBrHrO bwyoak photography__subsection"
+      class="sc-ezWOiH hCWRxp photography__subsection"
     >
       <h1
-        class="sc-fnykZs dRogcl sc-llJcti kolJEy"
+        class="sc-dmRaPn ibeVEC sc-ikZpkk imExry"
         id="nick-matthew-playing-in-the-canary-wharf-open"
       >
         Nick Matthew playing in the Canary Wharf Open
       </h1>
       <div
-        class="image__outer photography__image"
+        class="sc-iBkjds bZGVhU"
       >
+        <style>
+          .js .gg-image__img--hide {opacity: 0;}
+        </style>
         <div
-          class="image__placeholder"
+          class="sc-ftvSup ilXIrt"
           style="padding-bottom: 66.66666666666667%;"
         >
           <div
-            class="image__spinner-container"
+            class="sc-papXJ dBrEee"
           >
             <div
-              class="sc-jSMfEi detKc image__skeleton image__skeleton--animated"
+              class="sc-jSMfEi detKc sc-jqUVSM kZOdvC"
             >
               <div
                 class="sc-gKXOVf ihacwt"
@@ -580,55 +603,57 @@ exports[`<Photography /> should render correctly 1`] = `
           </div>
           <img
             alt="Nick Matthew playing in the Canary Wharf Open"
-            class="image__img image__img--animated image__img--hidden image__img--light"
+            class="sc-kDDrLX fyqUD gg-image__img--hide"
             src="https://i.imgur.com/h4BFWqS.jpg"
           />
           <img
             alt="Nick Matthew playing in the Canary Wharf Open"
-            class="image__img image__img--animated image__img--hidden image__img--dark"
+            class="sc-iqcoie iTHoXU gg-image__img--hide"
             src="https://i.imgur.com/h4BFWqS.jpg"
           />
-          <noscript />
         </div>
       </div>
     </div>
   </div>
   <div
-    class="sc-bBrHrO bwyoak"
+    class="sc-ezWOiH hCWRxp"
   >
     <h1
-      class="sc-hAZoDl eNenGa sc-llJcti nPSOK"
+      class="sc-hHLeRK ilwmty sc-ikZpkk dckfAa"
       id="photoshop"
     >
       Photoshop
     </h1>
     <div
-      class="sc-bBrHrO bwyoak photography__subsection"
+      class="sc-ezWOiH hCWRxp photography__subsection"
     >
       <h1
-        class="sc-fnykZs dRogcl sc-llJcti kolJEy"
+        class="sc-dmRaPn ibeVEC sc-ikZpkk imExry"
         id="tulips-exploding-with-light"
       >
         Tulips exploding with light
       </h1>
       <span
-        class="sc-dIouRR fiupoW"
+        class="sc-ivTmOn kdttXe"
       >
         For some reason the idea of light exploding out of tulips popped into my mind, so I went out to find some and made it a reality. I used a similar effect in Art that I had used in the past to create beams of sunlight breaking through the clouds, and then darkened the background a little.
       </span>
       <br />
       <div
-        class="image__outer photography__image"
+        class="sc-iBkjds bZGVhU"
       >
+        <style>
+          .js .gg-image__img--hide {opacity: 0;}
+        </style>
         <div
-          class="image__placeholder"
+          class="sc-ftvSup ilXIrt"
           style="padding-bottom: 66.66666666666667%;"
         >
           <div
-            class="image__spinner-container"
+            class="sc-papXJ dBrEee"
           >
             <div
-              class="sc-jSMfEi detKc image__skeleton image__skeleton--animated"
+              class="sc-jSMfEi detKc sc-jqUVSM kZOdvC"
             >
               <div
                 class="sc-gKXOVf ihacwt"
@@ -638,45 +663,47 @@ exports[`<Photography /> should render correctly 1`] = `
           </div>
           <img
             alt="Exploding tulips"
-            class="image__img image__img--animated image__img--hidden image__img--light"
+            class="sc-kDDrLX fyqUD gg-image__img--hide"
             src="https://i.imgur.com/PIKQ2D6.jpg"
           />
           <img
             alt="Exploding tulips"
-            class="image__img image__img--animated image__img--hidden image__img--dark"
+            class="sc-iqcoie iTHoXU gg-image__img--hide"
             src="https://i.imgur.com/PIKQ2D6.jpg"
           />
-          <noscript />
         </div>
       </div>
     </div>
     <div
-      class="sc-bBrHrO bwyoak photography__subsection"
+      class="sc-ezWOiH hCWRxp photography__subsection"
     >
       <h1
-        class="sc-fnykZs dRogcl sc-llJcti kolJEy"
+        class="sc-dmRaPn ibeVEC sc-ikZpkk imExry"
         id="miss-saigon-sketch"
       >
         Miss Saigon sketch
       </h1>
       <span
-        class="sc-dIouRR fiupoW"
+        class="sc-ivTmOn kdttXe"
       >
         With Miss Saigon coming to cinemas soon for one day only, I was inspired to draw the production logo (aka tempted to procrastinate).
       </span>
       <br />
       <div
-        class="image__outer photography__image"
+        class="sc-iBkjds bZGVhU"
       >
+        <style>
+          .js .gg-image__img--hide {opacity: 0;}
+        </style>
         <div
-          class="image__placeholder"
+          class="sc-ftvSup ilXIrt"
           style="padding-bottom: 139.34045517882026%;"
         >
           <div
-            class="image__spinner-container"
+            class="sc-papXJ dBrEee"
           >
             <div
-              class="sc-jSMfEi detKc image__skeleton image__skeleton--animated"
+              class="sc-jSMfEi detKc sc-jqUVSM kZOdvC"
             >
               <div
                 class="sc-gKXOVf ihacwt"
@@ -686,45 +713,47 @@ exports[`<Photography /> should render correctly 1`] = `
           </div>
           <img
             alt="Miss Saigon sketch"
-            class="image__img image__img--animated image__img--hidden image__img--light"
+            class="sc-kDDrLX fyqUD gg-image__img--hide"
             src="https://i.imgur.com/y3i2Ll1.jpg"
           />
           <img
             alt="Miss Saigon sketch"
-            class="image__img image__img--animated image__img--hidden image__img--dark"
+            class="sc-iqcoie iTHoXU gg-image__img--hide"
             src="https://i.imgur.com/y3i2Ll1.jpg"
           />
-          <noscript />
         </div>
       </div>
     </div>
     <div
-      class="sc-bBrHrO bwyoak photography__subsection"
+      class="sc-ezWOiH hCWRxp photography__subsection"
     >
       <h1
-        class="sc-fnykZs dRogcl sc-llJcti kolJEy"
+        class="sc-dmRaPn ibeVEC sc-ikZpkk imExry"
         id="dual-carriageway-light-painting-(in-post)"
       >
         Dual-carriageway light-painting (in post)
       </h1>
       <span
-        class="sc-dIouRR fiupoW"
+        class="sc-ivTmOn kdttXe"
       >
         One evening after leaving work at an unearthly hour, I shot this uninspired photo. In Photoshop, I then used the brush tool and some layer styles to create a 'painting with light' effect.
       </span>
       <br />
       <div
-        class="image__outer photography__image"
+        class="sc-iBkjds bZGVhU"
       >
+        <style>
+          .js .gg-image__img--hide {opacity: 0;}
+        </style>
         <div
-          class="image__placeholder"
+          class="sc-ftvSup ilXIrt"
           style="padding-bottom: 66.66666666666667%;"
         >
           <div
-            class="image__spinner-container"
+            class="sc-papXJ dBrEee"
           >
             <div
-              class="sc-jSMfEi detKc image__skeleton image__skeleton--animated"
+              class="sc-jSMfEi detKc sc-jqUVSM kZOdvC"
             >
               <div
                 class="sc-gKXOVf ihacwt"
@@ -734,55 +763,57 @@ exports[`<Photography /> should render correctly 1`] = `
           </div>
           <img
             alt="Dual-carriageway light-painting"
-            class="image__img image__img--animated image__img--hidden image__img--light"
+            class="sc-kDDrLX fyqUD gg-image__img--hide"
             src="https://i.imgur.com/T502lkX.jpg"
           />
           <img
             alt="Dual-carriageway light-painting"
-            class="image__img image__img--animated image__img--hidden image__img--dark"
+            class="sc-iqcoie iTHoXU gg-image__img--hide"
             src="https://i.imgur.com/T502lkX.jpg"
           />
-          <noscript />
         </div>
       </div>
     </div>
   </div>
   <div
-    class="sc-bBrHrO bwyoak"
+    class="sc-ezWOiH hCWRxp"
   >
     <h1
-      class="sc-hAZoDl eNenGa sc-llJcti nPSOK"
+      class="sc-hHLeRK ilwmty sc-ikZpkk dckfAa"
       id="food-is-art!-(...sometimes)"
     >
       Food is art! (...sometimes)
     </h1>
     <div
-      class="sc-bBrHrO bwyoak photography__subsection"
+      class="sc-ezWOiH hCWRxp photography__subsection"
     >
       <h1
-        class="sc-fnykZs dRogcl sc-llJcti kolJEy"
+        class="sc-dmRaPn ibeVEC sc-ikZpkk imExry"
         id="guinness-cake"
       >
         Guinness cake
       </h1>
       <span
-        class="sc-dIouRR fiupoW"
+        class="sc-ivTmOn kdttXe"
       >
         I like spending time on food presentation when the opportunity calls for it. So I created this masterpiece to share with the office and celebrate a legendary drink!
       </span>
       <br />
       <div
-        class="image__outer photography__image"
+        class="sc-iBkjds bZGVhU"
       >
+        <style>
+          .js .gg-image__img--hide {opacity: 0;}
+        </style>
         <div
-          class="image__placeholder"
+          class="sc-ftvSup ilXIrt"
           style="padding-bottom: 66.66666666666667%;"
         >
           <div
-            class="image__spinner-container"
+            class="sc-papXJ dBrEee"
           >
             <div
-              class="sc-jSMfEi detKc image__skeleton image__skeleton--animated"
+              class="sc-jSMfEi detKc sc-jqUVSM kZOdvC"
             >
               <div
                 class="sc-gKXOVf ihacwt"
@@ -792,45 +823,47 @@ exports[`<Photography /> should render correctly 1`] = `
           </div>
           <img
             alt="Guinness cake"
-            class="image__img image__img--animated image__img--hidden image__img--light"
+            class="sc-kDDrLX fyqUD gg-image__img--hide"
             src="https://i.imgur.com/oBWlSDO.jpg"
           />
           <img
             alt="Guinness cake"
-            class="image__img image__img--animated image__img--hidden image__img--dark"
+            class="sc-iqcoie iTHoXU gg-image__img--hide"
             src="https://i.imgur.com/oBWlSDO.jpg"
           />
-          <noscript />
         </div>
       </div>
     </div>
     <div
-      class="sc-bBrHrO bwyoak photography__subsection"
+      class="sc-ezWOiH hCWRxp photography__subsection"
     >
       <h1
-        class="sc-fnykZs dRogcl sc-llJcti kolJEy"
+        class="sc-dmRaPn ibeVEC sc-ikZpkk imExry"
         id="ratatouille"
       >
         Ratatouille
       </h1>
       <span
-        class="sc-dIouRR fiupoW"
+        class="sc-ivTmOn kdttXe"
       >
         To get us in the mood for Disneyland, I cooked up this Ratatouille in the style of the dish served in the film. It came out better than I expected... Pretty pleased with the result!
       </span>
       <br />
       <div
-        class="image__outer photography__image"
+        class="sc-iBkjds bZGVhU"
       >
+        <style>
+          .js .gg-image__img--hide {opacity: 0;}
+        </style>
         <div
-          class="image__placeholder"
+          class="sc-ftvSup ilXIrt"
           style="padding-bottom: 66.66666666666667%;"
         >
           <div
-            class="image__spinner-container"
+            class="sc-papXJ dBrEee"
           >
             <div
-              class="sc-jSMfEi detKc image__skeleton image__skeleton--animated"
+              class="sc-jSMfEi detKc sc-jqUVSM kZOdvC"
             >
               <div
                 class="sc-gKXOVf ihacwt"
@@ -840,15 +873,14 @@ exports[`<Photography /> should render correctly 1`] = `
           </div>
           <img
             alt="Ratatouille"
-            class="image__img image__img--animated image__img--hidden image__img--light"
+            class="sc-kDDrLX fyqUD gg-image__img--hide"
             src="https://i.imgur.com/kRGhYxz.jpg"
           />
           <img
             alt="Ratatouille"
-            class="image__img image__img--animated image__img--hidden image__img--dark"
+            class="sc-iqcoie iTHoXU gg-image__img--hide"
             src="https://i.imgur.com/kRGhYxz.jpg"
           />
-          <noscript />
         </div>
       </div>
     </div>
@@ -860,32 +892,32 @@ exports[`<Photography /> should render correctly 1`] = `
       class="creative-commons__background"
     />
     <div
-      class="sc-bBrHrO bwyoak creative-commons__inner"
+      class="sc-ezWOiH hCWRxp creative-commons__inner"
     >
       <h1
-        class="sc-fnykZs dRogcl sc-llJcti kolJEy"
+        class="sc-dmRaPn ibeVEC sc-ikZpkk imExry"
         id="copyright"
       >
         Copyright
       </h1>
       <span
-        class="sc-dIouRR fiupoW"
+        class="sc-ivTmOn kdttXe"
       >
         Most of my photos are licensed under
          
         <a
           aria-label="Creative Commons BY-SA 3.0 (opens in a new tab)"
-          class="sc-dmRaPn dMHBjv"
+          class="sc-llJcti eSeSsb"
           href="https://creativecommons.org/licenses/by-sa/3.0/"
           rel="noopener noreferrer"
           target="_blank"
         >
           Creative Commons BY-SA 3.0
           <div
-            class="sc-kgflAQ CPbSa"
+            class="sc-iIPllB gcLPvW"
           >
             <svg
-              class="sc-hHLeRK hNLcd sc-fLlhyt jcJuiX"
+              class="sc-cxabCf frQqGw sc-gicCDI dzKkXD"
               height="18"
               viewBox="0 0 24 24"
               width="18"
@@ -901,7 +933,7 @@ exports[`<Photography /> should render correctly 1`] = `
         <br />
         If you are unsure about your right to use them please 
         <a
-          class="sc-dmRaPn dMHBjv"
+          class="sc-llJcti eSeSsb"
           href="/contact"
         >
           contact me

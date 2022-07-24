@@ -221,7 +221,7 @@ exports[`<Account /> should render correctly with loggingOut=true 1`] = `
         </span>
         <div
           aria-hidden="true"
-          class="sc-dmRaPn etefHp button__loading-spinner"
+          class="sc-dmRaPn etefHp"
         >
           <div
             class="sc-fEOsli eGfMJp"
@@ -393,7 +393,7 @@ exports[`<Account /> should render correctly with requestingVerificationEmail=tr
         </span>
         <div
           aria-hidden="true"
-          class="sc-dmRaPn etefHp button__loading-spinner"
+          class="sc-dmRaPn etefHp"
         >
           <div
             class="sc-fEOsli eGfMJp"
