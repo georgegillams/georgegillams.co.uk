@@ -145,7 +145,7 @@ exports[`<BlogCard /> Should render correctly when deleted 1`] = `
             class="sc-hAZoDl gdKkFT"
           >
             <div
-              class="sc-iBkjds bZGVhU"
+              class="sc-iBkjds bZGVhU sc-bjUoiL gJRlun"
             >
               <style>
                 .js .gg-image__img--hide {opacity: 0;}
@@ -168,12 +168,12 @@ exports[`<BlogCard /> Should render correctly when deleted 1`] = `
                 </div>
                 <img
                   alt="card"
-                  class="sc-kDDrLX fyqUD gg-image__img--hide"
+                  class="sc-kDDrLX fyqUD  gg-image__img--hide"
                   src="https://i.imgur.com/ppPEuDs.jpg"
                 />
                 <img
                   alt="card"
-                  class="sc-iqcoie iTHoXU gg-image__img--hide"
+                  class="sc-iqcoie iTHoXU  gg-image__img--hide"
                   src="https://i.imgur.com/ppPEuDs.jpg"
                 />
               </div>
@@ -264,7 +264,7 @@ exports[`<BlogCard /> Should render correctly with all parameters supplied 1`] =
             class="sc-hAZoDl gdKkFT"
           >
             <div
-              class="sc-iBkjds bZGVhU"
+              class="sc-iBkjds bZGVhU sc-bjUoiL gJRlun"
             >
               <style>
                 .js .gg-image__img--hide {opacity: 0;}
@@ -287,12 +287,12 @@ exports[`<BlogCard /> Should render correctly with all parameters supplied 1`] =
                 </div>
                 <img
                   alt="card"
-                  class="sc-kDDrLX fyqUD gg-image__img--hide"
+                  class="sc-kDDrLX fyqUD  gg-image__img--hide"
                   src="https://i.imgur.com/ppPEuDs.jpg"
                 />
                 <img
                   alt="card"
-                  class="sc-iqcoie iTHoXU gg-image__img--hide"
+                  class="sc-iqcoie iTHoXU  gg-image__img--hide"
                   src="https://i.imgur.com/ppPEuDs.jpg"
                 />
               </div>
@@ -513,7 +513,7 @@ exports[`<BlogsList /> Should render correctly 1`] = `
               class="sc-hAZoDl gdKkFT"
             >
               <div
-                class="sc-iBkjds bZGVhU"
+                class="sc-iBkjds bZGVhU sc-bjUoiL gJRlun"
               >
                 <style>
                   .js .gg-image__img--hide {opacity: 0;}
@@ -536,12 +536,12 @@ exports[`<BlogsList /> Should render correctly 1`] = `
                   </div>
                   <img
                     alt="card"
-                    class="sc-kDDrLX fyqUD gg-image__img--hide"
+                    class="sc-kDDrLX fyqUD  gg-image__img--hide"
                     src="https://i.imgur.com/ppPEuDs.jpg"
                   />
                   <img
                     alt="card"
-                    class="sc-iqcoie iTHoXU gg-image__img--hide"
+                    class="sc-iqcoie iTHoXU  gg-image__img--hide"
                     src="https://i.imgur.com/ppPEuDs.jpg"
                   />
                 </div>
@@ -627,7 +627,7 @@ exports[`<BlogsList /> Should render correctly 1`] = `
               class="sc-hAZoDl gdKkFT"
             >
               <div
-                class="sc-iBkjds bZGVhU"
+                class="sc-iBkjds bZGVhU sc-bjUoiL gJRlun"
               >
                 <style>
                   .js .gg-image__img--hide {opacity: 0;}
@@ -650,12 +650,12 @@ exports[`<BlogsList /> Should render correctly 1`] = `
                   </div>
                   <img
                     alt="card"
-                    class="sc-kDDrLX fyqUD gg-image__img--hide"
+                    class="sc-kDDrLX fyqUD  gg-image__img--hide"
                     src="https://i.imgur.com/ppPEuDs.jpg"
                   />
                   <img
                     alt="card"
-                    class="sc-iqcoie iTHoXU gg-image__img--hide"
+                    class="sc-iqcoie iTHoXU  gg-image__img--hide"
                     src="https://i.imgur.com/ppPEuDs.jpg"
                   />
                 </div>
@@ -812,7 +812,7 @@ exports[`<BlogsList /> Should render correctly with custom className 1`] = `
               class="sc-hAZoDl gdKkFT"
             >
               <div
-                class="sc-iBkjds bZGVhU"
+                class="sc-iBkjds bZGVhU sc-bjUoiL gJRlun"
               >
                 <style>
                   .js .gg-image__img--hide {opacity: 0;}
@@ -835,12 +835,12 @@ exports[`<BlogsList /> Should render correctly with custom className 1`] = `
                   </div>
                   <img
                     alt="card"
-                    class="sc-kDDrLX fyqUD gg-image__img--hide"
+                    class="sc-kDDrLX fyqUD  gg-image__img--hide"
                     src="https://i.imgur.com/ppPEuDs.jpg"
                   />
                   <img
                     alt="card"
-                    class="sc-iqcoie iTHoXU gg-image__img--hide"
+                    class="sc-iqcoie iTHoXU  gg-image__img--hide"
                     src="https://i.imgur.com/ppPEuDs.jpg"
                   />
                 </div>
@@ -926,7 +926,7 @@ exports[`<BlogsList /> Should render correctly with custom className 1`] = `
               class="sc-hAZoDl gdKkFT"
             >
               <div
-                class="sc-iBkjds bZGVhU"
+                class="sc-iBkjds bZGVhU sc-bjUoiL gJRlun"
               >
                 <style>
                   .js .gg-image__img--hide {opacity: 0;}
@@ -949,12 +949,12 @@ exports[`<BlogsList /> Should render correctly with custom className 1`] = `
                   </div>
                   <img
                     alt="card"
-                    class="sc-kDDrLX fyqUD gg-image__img--hide"
+                    class="sc-kDDrLX fyqUD  gg-image__img--hide"
                     src="https://i.imgur.com/ppPEuDs.jpg"
                   />
                   <img
                     alt="card"
-                    class="sc-iqcoie iTHoXU gg-image__img--hide"
+                    class="sc-iqcoie iTHoXU  gg-image__img--hide"
                     src="https://i.imgur.com/ppPEuDs.jpg"
                   />
                 </div>
@@ -1119,7 +1119,7 @@ exports[`<BlogsList /> Should render correctly with deleteBlog function 1`] = `
               class="sc-hAZoDl gdKkFT"
             >
               <div
-                class="sc-iBkjds bZGVhU"
+                class="sc-iBkjds bZGVhU sc-bjUoiL gJRlun"
               >
                 <style>
                   .js .gg-image__img--hide {opacity: 0;}
@@ -1142,12 +1142,12 @@ exports[`<BlogsList /> Should render correctly with deleteBlog function 1`] = `
                   </div>
                   <img
                     alt="card"
-                    class="sc-kDDrLX fyqUD gg-image__img--hide"
+                    class="sc-kDDrLX fyqUD  gg-image__img--hide"
                     src="https://i.imgur.com/ppPEuDs.jpg"
                   />
                   <img
                     alt="card"
-                    class="sc-iqcoie iTHoXU gg-image__img--hide"
+                    class="sc-iqcoie iTHoXU  gg-image__img--hide"
                     src="https://i.imgur.com/ppPEuDs.jpg"
                   />
                 </div>
@@ -1243,7 +1243,7 @@ exports[`<BlogsList /> Should render correctly with deleteBlog function 1`] = `
               class="sc-hAZoDl gdKkFT"
             >
               <div
-                class="sc-iBkjds bZGVhU"
+                class="sc-iBkjds bZGVhU sc-bjUoiL gJRlun"
               >
                 <style>
                   .js .gg-image__img--hide {opacity: 0;}
@@ -1266,12 +1266,12 @@ exports[`<BlogsList /> Should render correctly with deleteBlog function 1`] = `
                   </div>
                   <img
                     alt="card"
-                    class="sc-kDDrLX fyqUD gg-image__img--hide"
+                    class="sc-kDDrLX fyqUD  gg-image__img--hide"
                     src="https://i.imgur.com/ppPEuDs.jpg"
                   />
                   <img
                     alt="card"
-                    class="sc-iqcoie iTHoXU gg-image__img--hide"
+                    class="sc-iqcoie iTHoXU  gg-image__img--hide"
                     src="https://i.imgur.com/ppPEuDs.jpg"
                   />
                 </div>
