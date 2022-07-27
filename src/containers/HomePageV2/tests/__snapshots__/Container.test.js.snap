@@ -79,7 +79,7 @@ exports[`<Home /> should render correctly 1`] = `
             class="sliding-phone__outer phones__phone"
           >
             <div
-              class="sc-bjUoiL limWoi"
+              class="sc-bjUoiL limWoi sliding-phone__image sliding-phone__image--hide"
             >
               <style>
                 .js .gg-image__img--hide {opacity: 0;}
@@ -102,12 +102,12 @@ exports[`<Home /> should render correctly 1`] = `
                 </div>
                 <img
                   alt="A screenshot of our Backpack design principles"
-                  class="sc-dmRaPn fGUcdG gg-image__img--hide"
+                  class="sc-dmRaPn fGUcdG  gg-image__img--hide"
                   src="IMAGE_MOCK"
                 />
                 <img
                   alt="A screenshot of our Backpack design principles"
-                  class="sc-kgflAQ kSJlNq gg-image__img--hide"
+                  class="sc-kgflAQ kSJlNq  gg-image__img--hide"
                   src="IMAGE_MOCK"
                 />
               </div>
@@ -117,7 +117,7 @@ exports[`<Home /> should render correctly 1`] = `
             class="sliding-phone__outer phones__phone"
           >
             <div
-              class="sc-bjUoiL limWoi"
+              class="sc-bjUoiL limWoi sliding-phone__image sliding-phone__image--hide"
             >
               <style>
                 .js .gg-image__img--hide {opacity: 0;}
@@ -140,12 +140,12 @@ exports[`<Home /> should render correctly 1`] = `
                 </div>
                 <img
                   alt="A screenshot of our bar chart component on iOS"
-                  class="sc-dmRaPn fGUcdG gg-image__img--hide"
+                  class="sc-dmRaPn fGUcdG  gg-image__img--hide"
                   src="IMAGE_MOCK"
                 />
                 <img
                   alt="A screenshot of our bar chart component on iOS"
-                  class="sc-kgflAQ kSJlNq gg-image__img--hide"
+                  class="sc-kgflAQ kSJlNq  gg-image__img--hide"
                   src="IMAGE_MOCK"
                 />
               </div>
@@ -155,7 +155,7 @@ exports[`<Home /> should render correctly 1`] = `
             class="sliding-phone__outer phones__phone"
           >
             <div
-              class="sc-bjUoiL limWoi"
+              class="sc-bjUoiL limWoi sliding-phone__image sliding-phone__image--hide"
             >
               <style>
                 .js .gg-image__img--hide {opacity: 0;}
@@ -178,12 +178,12 @@ exports[`<Home /> should render correctly 1`] = `
                 </div>
                 <img
                   alt="A screenshot of our flare view component on web"
-                  class="sc-dmRaPn fGUcdG gg-image__img--hide"
+                  class="sc-dmRaPn fGUcdG  gg-image__img--hide"
                   src="IMAGE_MOCK"
                 />
                 <img
                   alt="A screenshot of our flare view component on web"
-                  class="sc-kgflAQ kSJlNq gg-image__img--hide"
+                  class="sc-kgflAQ kSJlNq  gg-image__img--hide"
                   src="IMAGE_MOCK"
                 />
               </div>
@@ -199,7 +199,7 @@ exports[`<Home /> should render correctly 1`] = `
         class="life-section__outer"
       >
         <div
-          class="sc-bjUoiL limWoi"
+          class="sc-bjUoiL limWoi life-section__image-above-tablet life-section__image-above-tablet--left"
           style="margin-top: 2.6rem; transform: rotate(-10.6deg);"
         >
           <style>
@@ -223,12 +223,12 @@ exports[`<Home /> should render correctly 1`] = `
             </div>
             <img
               alt=""
-              class="sc-dmRaPn fGUcdG gg-image__img--hide"
+              class="sc-dmRaPn fGUcdG  gg-image__img--hide"
               src="IMAGE_MOCK"
             />
             <img
               alt=""
-              class="sc-kgflAQ kSJlNq gg-image__img--hide"
+              class="sc-kgflAQ kSJlNq  gg-image__img--hide"
               src="IMAGE_MOCK"
             />
           </div>
@@ -272,7 +272,7 @@ exports[`<Home /> should render correctly 1`] = `
           </span>
         </div>
         <div
-          class="sc-bjUoiL limWoi"
+          class="sc-bjUoiL limWoi life-section__image-above-tablet life-section__image-above-tablet--right"
           style="margin-top: -0.39999999999999947rem; transform: rotate(4.6deg);"
         >
           <style>
@@ -296,12 +296,12 @@ exports[`<Home /> should render correctly 1`] = `
             </div>
             <img
               alt=""
-              class="sc-dmRaPn fGUcdG gg-image__img--hide"
+              class="sc-dmRaPn fGUcdG  gg-image__img--hide"
               src="IMAGE_MOCK"
             />
             <img
               alt=""
-              class="sc-kgflAQ kSJlNq gg-image__img--hide"
+              class="sc-kgflAQ kSJlNq  gg-image__img--hide"
               src="IMAGE_MOCK"
             />
           </div>
@@ -313,7 +313,7 @@ exports[`<Home /> should render correctly 1`] = `
             class="life-section__mobile-image-wrapper life-section__mobile-image-wrapper--left"
           >
             <div
-              class="sc-bjUoiL limWoi"
+              class="sc-bjUoiL limWoi life-section__image-below-tablet life-section__image-below-tablet--left"
             >
               <style>
                 .js .gg-image__img--hide {opacity: 0;}
@@ -336,12 +336,12 @@ exports[`<Home /> should render correctly 1`] = `
                 </div>
                 <img
                   alt=""
-                  class="sc-dmRaPn fGUcdG gg-image__img--hide"
+                  class="sc-dmRaPn fGUcdG  gg-image__img--hide"
                   src="IMAGE_MOCK"
                 />
                 <img
                   alt=""
-                  class="sc-kgflAQ kSJlNq gg-image__img--hide"
+                  class="sc-kgflAQ kSJlNq  gg-image__img--hide"
                   src="IMAGE_MOCK"
                 />
               </div>
@@ -351,7 +351,7 @@ exports[`<Home /> should render correctly 1`] = `
             class="life-section__mobile-image-wrapper life-section__mobile-image-wrapper--right"
           >
             <div
-              class="sc-bjUoiL limWoi"
+              class="sc-bjUoiL limWoi life-section__image-below-tablet life-section__image-below-tablet--right"
             >
               <style>
                 .js .gg-image__img--hide {opacity: 0;}
@@ -374,12 +374,12 @@ exports[`<Home /> should render correctly 1`] = `
                 </div>
                 <img
                   alt=""
-                  class="sc-dmRaPn fGUcdG gg-image__img--hide"
+                  class="sc-dmRaPn fGUcdG  gg-image__img--hide"
                   src="IMAGE_MOCK"
                 />
                 <img
                   alt=""
-                  class="sc-kgflAQ kSJlNq gg-image__img--hide"
+                  class="sc-kgflAQ kSJlNq  gg-image__img--hide"
                   src="IMAGE_MOCK"
                 />
               </div>
@@ -401,7 +401,7 @@ exports[`<Home /> should render correctly 1`] = `
             class="animated-image__outer"
           >
             <div
-              class="sc-bjUoiL limWoi"
+              class="sc-bjUoiL limWoi animated-image__image animated-image__image--hide"
             >
               <style>
                 .js .gg-image__img--hide {opacity: 0;}
@@ -424,12 +424,12 @@ exports[`<Home /> should render correctly 1`] = `
                 </div>
                 <img
                   alt="Me"
-                  class="sc-dmRaPn fGUcdG gg-image__img--hide"
+                  class="sc-dmRaPn fGUcdG  gg-image__img--hide"
                   src="https://i.imgur.com/L0Rm1ZC.jpg"
                 />
                 <img
                   alt="Me"
-                  class="sc-kgflAQ kSJlNq gg-image__img--hide"
+                  class="sc-kgflAQ kSJlNq  gg-image__img--hide"
                   src="https://i.imgur.com/L0Rm1ZC.jpg"
                 />
               </div>
@@ -658,7 +658,7 @@ exports[`<Home /> should render correctly with admin user 1`] = `
             class="sliding-phone__outer phones__phone"
           >
             <div
-              class="sc-bjUoiL limWoi"
+              class="sc-bjUoiL limWoi sliding-phone__image sliding-phone__image--hide"
             >
               <style>
                 .js .gg-image__img--hide {opacity: 0;}
@@ -681,12 +681,12 @@ exports[`<Home /> should render correctly with admin user 1`] = `
                 </div>
                 <img
                   alt="A screenshot of our Backpack design principles"
-                  class="sc-dmRaPn fGUcdG gg-image__img--hide"
+                  class="sc-dmRaPn fGUcdG  gg-image__img--hide"
                   src="IMAGE_MOCK"
                 />
                 <img
                   alt="A screenshot of our Backpack design principles"
-                  class="sc-kgflAQ kSJlNq gg-image__img--hide"
+                  class="sc-kgflAQ kSJlNq  gg-image__img--hide"
                   src="IMAGE_MOCK"
                 />
               </div>
@@ -696,7 +696,7 @@ exports[`<Home /> should render correctly with admin user 1`] = `
             class="sliding-phone__outer phones__phone"
           >
             <div
-              class="sc-bjUoiL limWoi"
+              class="sc-bjUoiL limWoi sliding-phone__image sliding-phone__image--hide"
             >
               <style>
                 .js .gg-image__img--hide {opacity: 0;}
@@ -719,12 +719,12 @@ exports[`<Home /> should render correctly with admin user 1`] = `
                 </div>
                 <img
                   alt="A screenshot of our bar chart component on iOS"
-                  class="sc-dmRaPn fGUcdG gg-image__img--hide"
+                  class="sc-dmRaPn fGUcdG  gg-image__img--hide"
                   src="IMAGE_MOCK"
                 />
                 <img
                   alt="A screenshot of our bar chart component on iOS"
-                  class="sc-kgflAQ kSJlNq gg-image__img--hide"
+                  class="sc-kgflAQ kSJlNq  gg-image__img--hide"
                   src="IMAGE_MOCK"
                 />
               </div>
@@ -734,7 +734,7 @@ exports[`<Home /> should render correctly with admin user 1`] = `
             class="sliding-phone__outer phones__phone"
           >
             <div
-              class="sc-bjUoiL limWoi"
+              class="sc-bjUoiL limWoi sliding-phone__image sliding-phone__image--hide"
             >
               <style>
                 .js .gg-image__img--hide {opacity: 0;}
@@ -757,12 +757,12 @@ exports[`<Home /> should render correctly with admin user 1`] = `
                 </div>
                 <img
                   alt="A screenshot of our flare view component on web"
-                  class="sc-dmRaPn fGUcdG gg-image__img--hide"
+                  class="sc-dmRaPn fGUcdG  gg-image__img--hide"
                   src="IMAGE_MOCK"
                 />
                 <img
                   alt="A screenshot of our flare view component on web"
-                  class="sc-kgflAQ kSJlNq gg-image__img--hide"
+                  class="sc-kgflAQ kSJlNq  gg-image__img--hide"
                   src="IMAGE_MOCK"
                 />
               </div>
@@ -778,7 +778,7 @@ exports[`<Home /> should render correctly with admin user 1`] = `
         class="life-section__outer"
       >
         <div
-          class="sc-bjUoiL limWoi"
+          class="sc-bjUoiL limWoi life-section__image-above-tablet life-section__image-above-tablet--left"
           style="margin-top: 2.6rem; transform: rotate(-10.6deg);"
         >
           <style>
@@ -802,12 +802,12 @@ exports[`<Home /> should render correctly with admin user 1`] = `
             </div>
             <img
               alt=""
-              class="sc-dmRaPn fGUcdG gg-image__img--hide"
+              class="sc-dmRaPn fGUcdG  gg-image__img--hide"
               src="IMAGE_MOCK"
             />
             <img
               alt=""
-              class="sc-kgflAQ kSJlNq gg-image__img--hide"
+              class="sc-kgflAQ kSJlNq  gg-image__img--hide"
               src="IMAGE_MOCK"
             />
           </div>
@@ -851,7 +851,7 @@ exports[`<Home /> should render correctly with admin user 1`] = `
           </span>
         </div>
         <div
-          class="sc-bjUoiL limWoi"
+          class="sc-bjUoiL limWoi life-section__image-above-tablet life-section__image-above-tablet--right"
           style="margin-top: -0.39999999999999947rem; transform: rotate(4.6deg);"
         >
           <style>
@@ -875,12 +875,12 @@ exports[`<Home /> should render correctly with admin user 1`] = `
             </div>
             <img
               alt=""
-              class="sc-dmRaPn fGUcdG gg-image__img--hide"
+              class="sc-dmRaPn fGUcdG  gg-image__img--hide"
               src="IMAGE_MOCK"
             />
             <img
               alt=""
-              class="sc-kgflAQ kSJlNq gg-image__img--hide"
+              class="sc-kgflAQ kSJlNq  gg-image__img--hide"
               src="IMAGE_MOCK"
             />
           </div>
@@ -892,7 +892,7 @@ exports[`<Home /> should render correctly with admin user 1`] = `
             class="life-section__mobile-image-wrapper life-section__mobile-image-wrapper--left"
           >
             <div
-              class="sc-bjUoiL limWoi"
+              class="sc-bjUoiL limWoi life-section__image-below-tablet life-section__image-below-tablet--left"
             >
               <style>
                 .js .gg-image__img--hide {opacity: 0;}
@@ -915,12 +915,12 @@ exports[`<Home /> should render correctly with admin user 1`] = `
                 </div>
                 <img
                   alt=""
-                  class="sc-dmRaPn fGUcdG gg-image__img--hide"
+                  class="sc-dmRaPn fGUcdG  gg-image__img--hide"
                   src="IMAGE_MOCK"
                 />
                 <img
                   alt=""
-                  class="sc-kgflAQ kSJlNq gg-image__img--hide"
+                  class="sc-kgflAQ kSJlNq  gg-image__img--hide"
                   src="IMAGE_MOCK"
                 />
               </div>
@@ -930,7 +930,7 @@ exports[`<Home /> should render correctly with admin user 1`] = `
             class="life-section__mobile-image-wrapper life-section__mobile-image-wrapper--right"
           >
             <div
-              class="sc-bjUoiL limWoi"
+              class="sc-bjUoiL limWoi life-section__image-below-tablet life-section__image-below-tablet--right"
             >
               <style>
                 .js .gg-image__img--hide {opacity: 0;}
@@ -953,12 +953,12 @@ exports[`<Home /> should render correctly with admin user 1`] = `
                 </div>
                 <img
                   alt=""
-                  class="sc-dmRaPn fGUcdG gg-image__img--hide"
+                  class="sc-dmRaPn fGUcdG  gg-image__img--hide"
                   src="IMAGE_MOCK"
                 />
                 <img
                   alt=""
-                  class="sc-kgflAQ kSJlNq gg-image__img--hide"
+                  class="sc-kgflAQ kSJlNq  gg-image__img--hide"
                   src="IMAGE_MOCK"
                 />
               </div>
@@ -980,7 +980,7 @@ exports[`<Home /> should render correctly with admin user 1`] = `
             class="animated-image__outer"
           >
             <div
-              class="sc-bjUoiL limWoi"
+              class="sc-bjUoiL limWoi animated-image__image animated-image__image--hide"
             >
               <style>
                 .js .gg-image__img--hide {opacity: 0;}
@@ -1003,12 +1003,12 @@ exports[`<Home /> should render correctly with admin user 1`] = `
                 </div>
                 <img
                   alt="Me"
-                  class="sc-dmRaPn fGUcdG gg-image__img--hide"
+                  class="sc-dmRaPn fGUcdG  gg-image__img--hide"
                   src="https://i.imgur.com/L0Rm1ZC.jpg"
                 />
                 <img
                   alt="Me"
-                  class="sc-kgflAQ kSJlNq gg-image__img--hide"
+                  class="sc-kgflAQ kSJlNq  gg-image__img--hide"
                   src="https://i.imgur.com/L0Rm1ZC.jpg"
                 />
               </div>
@@ -1237,7 +1237,7 @@ exports[`<Home /> should render correctly with no user 1`] = `
             class="sliding-phone__outer phones__phone"
           >
             <div
-              class="sc-bjUoiL limWoi"
+              class="sc-bjUoiL limWoi sliding-phone__image sliding-phone__image--hide"
             >
               <style>
                 .js .gg-image__img--hide {opacity: 0;}
@@ -1260,12 +1260,12 @@ exports[`<Home /> should render correctly with no user 1`] = `
                 </div>
                 <img
                   alt="A screenshot of our Backpack design principles"
-                  class="sc-dmRaPn fGUcdG gg-image__img--hide"
+                  class="sc-dmRaPn fGUcdG  gg-image__img--hide"
                   src="IMAGE_MOCK"
                 />
                 <img
                   alt="A screenshot of our Backpack design principles"
-                  class="sc-kgflAQ kSJlNq gg-image__img--hide"
+                  class="sc-kgflAQ kSJlNq  gg-image__img--hide"
                   src="IMAGE_MOCK"
                 />
               </div>
@@ -1275,7 +1275,7 @@ exports[`<Home /> should render correctly with no user 1`] = `
             class="sliding-phone__outer phones__phone"
           >
             <div
-              class="sc-bjUoiL limWoi"
+              class="sc-bjUoiL limWoi sliding-phone__image sliding-phone__image--hide"
             >
               <style>
                 .js .gg-image__img--hide {opacity: 0;}
@@ -1298,12 +1298,12 @@ exports[`<Home /> should render correctly with no user 1`] = `
                 </div>
                 <img
                   alt="A screenshot of our bar chart component on iOS"
-                  class="sc-dmRaPn fGUcdG gg-image__img--hide"
+                  class="sc-dmRaPn fGUcdG  gg-image__img--hide"
                   src="IMAGE_MOCK"
                 />
                 <img
                   alt="A screenshot of our bar chart component on iOS"
-                  class="sc-kgflAQ kSJlNq gg-image__img--hide"
+                  class="sc-kgflAQ kSJlNq  gg-image__img--hide"
                   src="IMAGE_MOCK"
                 />
               </div>
@@ -1313,7 +1313,7 @@ exports[`<Home /> should render correctly with no user 1`] = `
             class="sliding-phone__outer phones__phone"
           >
             <div
-              class="sc-bjUoiL limWoi"
+              class="sc-bjUoiL limWoi sliding-phone__image sliding-phone__image--hide"
             >
               <style>
                 .js .gg-image__img--hide {opacity: 0;}
@@ -1336,12 +1336,12 @@ exports[`<Home /> should render correctly with no user 1`] = `
                 </div>
                 <img
                   alt="A screenshot of our flare view component on web"
-                  class="sc-dmRaPn fGUcdG gg-image__img--hide"
+                  class="sc-dmRaPn fGUcdG  gg-image__img--hide"
                   src="IMAGE_MOCK"
                 />
                 <img
                   alt="A screenshot of our flare view component on web"
-                  class="sc-kgflAQ kSJlNq gg-image__img--hide"
+                  class="sc-kgflAQ kSJlNq  gg-image__img--hide"
                   src="IMAGE_MOCK"
                 />
               </div>
@@ -1357,7 +1357,7 @@ exports[`<Home /> should render correctly with no user 1`] = `
         class="life-section__outer"
       >
         <div
-          class="sc-bjUoiL limWoi"
+          class="sc-bjUoiL limWoi life-section__image-above-tablet life-section__image-above-tablet--left"
           style="margin-top: 2.6rem; transform: rotate(-10.6deg);"
         >
           <style>
@@ -1381,12 +1381,12 @@ exports[`<Home /> should render correctly with no user 1`] = `
             </div>
             <img
               alt=""
-              class="sc-dmRaPn fGUcdG gg-image__img--hide"
+              class="sc-dmRaPn fGUcdG  gg-image__img--hide"
               src="IMAGE_MOCK"
             />
             <img
               alt=""
-              class="sc-kgflAQ kSJlNq gg-image__img--hide"
+              class="sc-kgflAQ kSJlNq  gg-image__img--hide"
               src="IMAGE_MOCK"
             />
           </div>
@@ -1430,7 +1430,7 @@ exports[`<Home /> should render correctly with no user 1`] = `
           </span>
         </div>
         <div
-          class="sc-bjUoiL limWoi"
+          class="sc-bjUoiL limWoi life-section__image-above-tablet life-section__image-above-tablet--right"
           style="margin-top: -0.39999999999999947rem; transform: rotate(4.6deg);"
         >
           <style>
@@ -1454,12 +1454,12 @@ exports[`<Home /> should render correctly with no user 1`] = `
             </div>
             <img
               alt=""
-              class="sc-dmRaPn fGUcdG gg-image__img--hide"
+              class="sc-dmRaPn fGUcdG  gg-image__img--hide"
               src="IMAGE_MOCK"
             />
             <img
               alt=""
-              class="sc-kgflAQ kSJlNq gg-image__img--hide"
+              class="sc-kgflAQ kSJlNq  gg-image__img--hide"
               src="IMAGE_MOCK"
             />
           </div>
@@ -1471,7 +1471,7 @@ exports[`<Home /> should render correctly with no user 1`] = `
             class="life-section__mobile-image-wrapper life-section__mobile-image-wrapper--left"
           >
             <div
-              class="sc-bjUoiL limWoi"
+              class="sc-bjUoiL limWoi life-section__image-below-tablet life-section__image-below-tablet--left"
             >
               <style>
                 .js .gg-image__img--hide {opacity: 0;}
@@ -1494,12 +1494,12 @@ exports[`<Home /> should render correctly with no user 1`] = `
                 </div>
                 <img
                   alt=""
-                  class="sc-dmRaPn fGUcdG gg-image__img--hide"
+                  class="sc-dmRaPn fGUcdG  gg-image__img--hide"
                   src="IMAGE_MOCK"
                 />
                 <img
                   alt=""
-                  class="sc-kgflAQ kSJlNq gg-image__img--hide"
+                  class="sc-kgflAQ kSJlNq  gg-image__img--hide"
                   src="IMAGE_MOCK"
                 />
               </div>
@@ -1509,7 +1509,7 @@ exports[`<Home /> should render correctly with no user 1`] = `
             class="life-section__mobile-image-wrapper life-section__mobile-image-wrapper--right"
           >
             <div
-              class="sc-bjUoiL limWoi"
+              class="sc-bjUoiL limWoi life-section__image-below-tablet life-section__image-below-tablet--right"
             >
               <style>
                 .js .gg-image__img--hide {opacity: 0;}
@@ -1532,12 +1532,12 @@ exports[`<Home /> should render correctly with no user 1`] = `
                 </div>
                 <img
                   alt=""
-                  class="sc-dmRaPn fGUcdG gg-image__img--hide"
+                  class="sc-dmRaPn fGUcdG  gg-image__img--hide"
                   src="IMAGE_MOCK"
                 />
                 <img
                   alt=""
-                  class="sc-kgflAQ kSJlNq gg-image__img--hide"
+                  class="sc-kgflAQ kSJlNq  gg-image__img--hide"
                   src="IMAGE_MOCK"
                 />
               </div>
@@ -1559,7 +1559,7 @@ exports[`<Home /> should render correctly with no user 1`] = `
             class="animated-image__outer"
           >
             <div
-              class="sc-bjUoiL limWoi"
+              class="sc-bjUoiL limWoi animated-image__image animated-image__image--hide"
             >
               <style>
                 .js .gg-image__img--hide {opacity: 0;}
@@ -1582,12 +1582,12 @@ exports[`<Home /> should render correctly with no user 1`] = `
                 </div>
                 <img
                   alt="Me"
-                  class="sc-dmRaPn fGUcdG gg-image__img--hide"
+                  class="sc-dmRaPn fGUcdG  gg-image__img--hide"
                   src="https://i.imgur.com/L0Rm1ZC.jpg"
                 />
                 <img
                   alt="Me"
-                  class="sc-kgflAQ kSJlNq gg-image__img--hide"
+                  class="sc-kgflAQ kSJlNq  gg-image__img--hide"
                   src="https://i.imgur.com/L0Rm1ZC.jpg"
                 />
               </div>
@@ -1816,7 +1816,7 @@ exports[`<Home /> should render correctly with user 1`] = `
             class="sliding-phone__outer phones__phone"
           >
             <div
-              class="sc-bjUoiL limWoi"
+              class="sc-bjUoiL limWoi sliding-phone__image sliding-phone__image--hide"
             >
               <style>
                 .js .gg-image__img--hide {opacity: 0;}
@@ -1839,12 +1839,12 @@ exports[`<Home /> should render correctly with user 1`] = `
                 </div>
                 <img
                   alt="A screenshot of our Backpack design principles"
-                  class="sc-dmRaPn fGUcdG gg-image__img--hide"
+                  class="sc-dmRaPn fGUcdG  gg-image__img--hide"
                   src="IMAGE_MOCK"
                 />
                 <img
                   alt="A screenshot of our Backpack design principles"
-                  class="sc-kgflAQ kSJlNq gg-image__img--hide"
+                  class="sc-kgflAQ kSJlNq  gg-image__img--hide"
                   src="IMAGE_MOCK"
                 />
               </div>
@@ -1854,7 +1854,7 @@ exports[`<Home /> should render correctly with user 1`] = `
             class="sliding-phone__outer phones__phone"
           >
             <div
-              class="sc-bjUoiL limWoi"
+              class="sc-bjUoiL limWoi sliding-phone__image sliding-phone__image--hide"
             >
               <style>
                 .js .gg-image__img--hide {opacity: 0;}
@@ -1877,12 +1877,12 @@ exports[`<Home /> should render correctly with user 1`] = `
                 </div>
                 <img
                   alt="A screenshot of our bar chart component on iOS"
-                  class="sc-dmRaPn fGUcdG gg-image__img--hide"
+                  class="sc-dmRaPn fGUcdG  gg-image__img--hide"
                   src="IMAGE_MOCK"
                 />
                 <img
                   alt="A screenshot of our bar chart component on iOS"
-                  class="sc-kgflAQ kSJlNq gg-image__img--hide"
+                  class="sc-kgflAQ kSJlNq  gg-image__img--hide"
                   src="IMAGE_MOCK"
                 />
               </div>
@@ -1892,7 +1892,7 @@ exports[`<Home /> should render correctly with user 1`] = `
             class="sliding-phone__outer phones__phone"
           >
             <div
-              class="sc-bjUoiL limWoi"
+              class="sc-bjUoiL limWoi sliding-phone__image sliding-phone__image--hide"
             >
               <style>
                 .js .gg-image__img--hide {opacity: 0;}
@@ -1915,12 +1915,12 @@ exports[`<Home /> should render correctly with user 1`] = `
                 </div>
                 <img
                   alt="A screenshot of our flare view component on web"
-                  class="sc-dmRaPn fGUcdG gg-image__img--hide"
+                  class="sc-dmRaPn fGUcdG  gg-image__img--hide"
                   src="IMAGE_MOCK"
                 />
                 <img
                   alt="A screenshot of our flare view component on web"
-                  class="sc-kgflAQ kSJlNq gg-image__img--hide"
+                  class="sc-kgflAQ kSJlNq  gg-image__img--hide"
                   src="IMAGE_MOCK"
                 />
               </div>
@@ -1936,7 +1936,7 @@ exports[`<Home /> should render correctly with user 1`] = `
         class="life-section__outer"
       >
         <div
-          class="sc-bjUoiL limWoi"
+          class="sc-bjUoiL limWoi life-section__image-above-tablet life-section__image-above-tablet--left"
           style="margin-top: 2.6rem; transform: rotate(-10.6deg);"
         >
           <style>
@@ -1960,12 +1960,12 @@ exports[`<Home /> should render correctly with user 1`] = `
             </div>
             <img
               alt=""
-              class="sc-dmRaPn fGUcdG gg-image__img--hide"
+              class="sc-dmRaPn fGUcdG  gg-image__img--hide"
               src="IMAGE_MOCK"
             />
             <img
               alt=""
-              class="sc-kgflAQ kSJlNq gg-image__img--hide"
+              class="sc-kgflAQ kSJlNq  gg-image__img--hide"
               src="IMAGE_MOCK"
             />
           </div>
@@ -2009,7 +2009,7 @@ exports[`<Home /> should render correctly with user 1`] = `
           </span>
         </div>
         <div
-          class="sc-bjUoiL limWoi"
+          class="sc-bjUoiL limWoi life-section__image-above-tablet life-section__image-above-tablet--right"
           style="margin-top: -0.39999999999999947rem; transform: rotate(4.6deg);"
         >
           <style>
@@ -2033,12 +2033,12 @@ exports[`<Home /> should render correctly with user 1`] = `
             </div>
             <img
               alt=""
-              class="sc-dmRaPn fGUcdG gg-image__img--hide"
+              class="sc-dmRaPn fGUcdG  gg-image__img--hide"
               src="IMAGE_MOCK"
             />
             <img
               alt=""
-              class="sc-kgflAQ kSJlNq gg-image__img--hide"
+              class="sc-kgflAQ kSJlNq  gg-image__img--hide"
               src="IMAGE_MOCK"
             />
           </div>
@@ -2050,7 +2050,7 @@ exports[`<Home /> should render correctly with user 1`] = `
             class="life-section__mobile-image-wrapper life-section__mobile-image-wrapper--left"
           >
             <div
-              class="sc-bjUoiL limWoi"
+              class="sc-bjUoiL limWoi life-section__image-below-tablet life-section__image-below-tablet--left"
             >
               <style>
                 .js .gg-image__img--hide {opacity: 0;}
@@ -2073,12 +2073,12 @@ exports[`<Home /> should render correctly with user 1`] = `
                 </div>
                 <img
                   alt=""
-                  class="sc-dmRaPn fGUcdG gg-image__img--hide"
+                  class="sc-dmRaPn fGUcdG  gg-image__img--hide"
                   src="IMAGE_MOCK"
                 />
                 <img
                   alt=""
-                  class="sc-kgflAQ kSJlNq gg-image__img--hide"
+                  class="sc-kgflAQ kSJlNq  gg-image__img--hide"
                   src="IMAGE_MOCK"
                 />
               </div>
@@ -2088,7 +2088,7 @@ exports[`<Home /> should render correctly with user 1`] = `
             class="life-section__mobile-image-wrapper life-section__mobile-image-wrapper--right"
           >
             <div
-              class="sc-bjUoiL limWoi"
+              class="sc-bjUoiL limWoi life-section__image-below-tablet life-section__image-below-tablet--right"
             >
               <style>
                 .js .gg-image__img--hide {opacity: 0;}
@@ -2111,12 +2111,12 @@ exports[`<Home /> should render correctly with user 1`] = `
                 </div>
                 <img
                   alt=""
-                  class="sc-dmRaPn fGUcdG gg-image__img--hide"
+                  class="sc-dmRaPn fGUcdG  gg-image__img--hide"
                   src="IMAGE_MOCK"
                 />
                 <img
                   alt=""
-                  class="sc-kgflAQ kSJlNq gg-image__img--hide"
+                  class="sc-kgflAQ kSJlNq  gg-image__img--hide"
                   src="IMAGE_MOCK"
                 />
               </div>
@@ -2138,7 +2138,7 @@ exports[`<Home /> should render correctly with user 1`] = `
             class="animated-image__outer"
           >
             <div
-              class="sc-bjUoiL limWoi"
+              class="sc-bjUoiL limWoi animated-image__image animated-image__image--hide"
             >
               <style>
                 .js .gg-image__img--hide {opacity: 0;}
@@ -2161,12 +2161,12 @@ exports[`<Home /> should render correctly with user 1`] = `
                 </div>
                 <img
                   alt="Me"
-                  class="sc-dmRaPn fGUcdG gg-image__img--hide"
+                  class="sc-dmRaPn fGUcdG  gg-image__img--hide"
                   src="https://i.imgur.com/L0Rm1ZC.jpg"
                 />
                 <img
                   alt="Me"
-                  class="sc-kgflAQ kSJlNq gg-image__img--hide"
+                  class="sc-kgflAQ kSJlNq  gg-image__img--hide"
                   src="https://i.imgur.com/L0Rm1ZC.jpg"
                 />
               </div>
