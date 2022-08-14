@@ -21,6 +21,8 @@ const apiStructureWithActionsExtensions = apiStructure => {
   apiStructure.deleteSupport.action = require('./support/delete');
   apiStructure.loadSupport.action = require('./support/loadAll');
 
+  apiStructure.loadFlickrImages.action = require('./flickr/loadAll');
+
   return apiStructure;
 };
 
