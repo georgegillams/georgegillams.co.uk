@@ -13,6 +13,7 @@ import gurushotsLogo from './gurushots.svg';
 import flickrLogo from './flickr.svg';
 import githubLogo from './github.svg';
 import emailLogo from './email.svg';
+import unsplashLogo from './unsplash.svg';
 
 const InfoCellWithScroll = withScroll(InfoCell);
 
@@ -107,6 +108,23 @@ const Contact = () => {
             <img
               className={getClassName('contact__icon-image', 'contact__icon-image--dark-invert')}
               src={gurushotsLogo}
+            />
+          </div>
+        }
+      />
+      <InfoCellWithScroll
+        className={getClassName('contact__info-cell')}
+        title="Unsplash"
+        content={
+          <TextLink href="https://unsplash.com/@georgegillams/" hrefExternal>
+            See my profile on Unsplash
+          </TextLink>
+        }
+        aux={
+          <div className={getClassName('contact__icon-image-container')}>
+            <img
+              className={getClassName('contact__icon-image', 'contact__icon-image--dark-invert')}
+              src={unsplashLogo}
             />
           </div>
         }

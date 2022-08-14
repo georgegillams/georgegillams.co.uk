@@ -11,6 +11,8 @@ const redirects = [
   { from: '/github', to: 'https://github.com/georgegillams' },
   { from: '/stackoverflow', to: 'https://stackoverflow.com/users/14463713/georgegillams' },
   { from: '/gurushots', to: 'https://gurushots.com/georgegillams/photos' },
+  { from: '/unsplash', to: 'https://unsplash.com/@georgegillams/' },
+  { from: '/strava', to: 'https://www.strava.com/athletes/7221483' },
   {
     from: '/linkedin',
     to: 'https://www.linkedin.com/in/george-gillams-37537077',
