@@ -25,8 +25,8 @@ const apiStructureExtensions = {
   deleteSupport: { method: POST, path: '/support/delete' },
   loadSupport: { method: GET, path: '/support/load' },
 
-  // Flickr
-  loadFlickrImages: { method: GET, path: '/flickr/load-all' },
+  // Photo showcase
+  loadShowcaseImages: { method: GET, path: '/photo-showcase/load-all' },
 };
 
 export default { apiStructureExtensions };
