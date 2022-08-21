@@ -21,6 +21,8 @@ const apiStructureWithActionsExtensions = apiStructure => {
   apiStructure.deleteSupport.action = require('./support/delete');
   apiStructure.loadSupport.action = require('./support/loadAll');
 
+  apiStructure.loadShowcaseImages.action = require('./photo-showcase/loadAll');
+
   return apiStructure;
 };
 

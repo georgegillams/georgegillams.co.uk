@@ -81,11 +81,11 @@ jobs:
           sudo apt-get update
           sudo apt install -y qemu-user-static binfmt-support
 
-
       - name: build docker image
         env:
           GSUITE_APP_PASSWORD: ${{ secrets.GSUITE_APP_PASSWORD }}
           GSUITE_EMAIL: ${{ secrets.GSUITE_EMAIL }}
+          FLICKR_API_KEY: ${{ secrets.FLICKR_API_KEY }}
           NODE_ENV: ${{ secrets.NODE_ENV }}
           REDIS_URL: ${{ secrets.REDIS_URL }}
           SECRET_API_KEY: ${{ secrets.SECRET_API_KEY }}

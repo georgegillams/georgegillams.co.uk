@@ -36,6 +36,9 @@ const apiStructureWithDescriptionsExtensions = apiStructure => {
   apiStructure.loadSupport.description = 'TODO';
   apiStructure.loadSupport.authorisation = 'None';
 
+  apiStructure.loadShowcaseImages.description = 'Load images from Flickr showcase album';
+  apiStructure.loadShowcaseImages.authorisation = 'None';
+
   return apiStructure;
 };
 

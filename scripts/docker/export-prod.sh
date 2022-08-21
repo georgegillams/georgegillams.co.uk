@@ -7,7 +7,7 @@ if ! [ $image_name ]; then
   exit 1
 fi
 
-declare -a expected_args=("GSUITE_APP_PASSWORD" "GSUITE_EMAIL" "REDIS_URL" "SECRET_API_KEY" "SESSION_SECRET")
+declare -a expected_args=("GSUITE_APP_PASSWORD" "GSUITE_EMAIL" "FLICKR_API_KEY" "REDIS_URL" "SECRET_API_KEY" "SESSION_SECRET")
 for i in "${expected_args[@]}"
 do
   arg_value="$(printenv $i)"
@@ -27,6 +27,7 @@ fi
 docker buildx build \
   --build-arg GSUITE_APP_PASSWORD="$GSUITE_APP_PASSWORD" \
   --build-arg GSUITE_EMAIL="$GSUITE_EMAIL" \
+  --build-arg FLICKR_API_KEY="$FLICKR_API_KEY" \
   --build-arg NODE_ENV="$NODE_ENV" \
   --build-arg REDIS_URL="$REDIS_URL" \
   --build-arg SECRET_API_KEY="$SECRET_API_KEY" \

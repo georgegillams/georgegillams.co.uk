@@ -56,6 +56,7 @@ The following environment variables should be set up
 | ------------------- | -------------------------------------- | ------------------------------------------------------------------------- |
 | GSUITE_APP_PASSWORD | To send emails from your Gmail account | The password generated to access yout G-Suite account                     |
 | GSUITE_EMAIL        | To send emails from your Gmail account | Your G-Suite email address                                                |
+| FLICKR_API_KEY      | To pull images from the showcase album | Your Flickr API key                                                       |
 | NODE_ENV            | Makes the magic happen                 | `production`                                                              |
 | REDIS_URL           | To access the redis database.          | If no URL is provided, the server will connect to a local redis instance. |
 | SECRET_API_KEY      | Used to make admin API requests        | Anything secret and impossible to guess                                   |
