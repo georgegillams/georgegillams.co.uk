@@ -1,6 +1,5 @@
 # Don't check auto-generated stuff into git
 .next/
-.yarn/cache/
 coverage
 node_modules
 stats.json
