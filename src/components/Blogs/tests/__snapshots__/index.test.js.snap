@@ -4,58 +4,58 @@ exports[`<BlogCard /> Should render correctly 1`] = `
 <div>
   <a
     aria-label="Blog 1 , NaN Invalid Date"
-    class="sc-gsnTZi hvFSuA sc-crXcEl hbtQem"
+    class="sc-iBkjds fAWbEc sc-fEOsli cPLYA-D"
     href="/blog/asdfg"
   >
     <div
-      class="sc-dkzDqf hkFiab"
+      class="sc-ftvSup igEfOL"
     >
       <div
-        class="sc-hKMtZM kvlGVY"
+        class="sc-papXJ eRRswi"
       />
       <div
-        class="sc-eCYdqJ heBWoi"
+        class="sc-jqUVSM dcVjxQ"
       >
         <div
           aria-hidden="true"
-          class="sc-evZas bZNQpX"
+          class="sc-bjUoiL iyDKRv"
         >
           <div
-            class="sc-breuTD knUrQg date container"
+            class="sc-idiyUo gybJmj date container"
           >
             <div
-              class="sc-fnykZs gNzjfC"
+              class="sc-dmRaPn gGrjMF"
             >
               <span
-                class="sc-fLlhyt hQrWnF"
+                class="sc-gicCDI gfYzqt"
               >
                 NaN Invalid Date
               </span>
             </div>
             <div
-              class="sc-fEOsli YrDqx"
+              class="sc-kgflAQ YFyoZ"
             >
               <span
-                class="sc-fLlhyt hQrWnF"
+                class="sc-gicCDI gfYzqt"
               >
                 NaN
               </span>
             </div>
             <div
-              class="sc-fEOsli YrDqx"
+              class="sc-kgflAQ YFyoZ"
             >
               <span
-                class="sc-fLlhyt hQrWnF"
+                class="sc-gicCDI gfYzqt"
               >
                 Invalid Date
               </span>
             </div>
           </div>
           <div
-            class="sc-ksZaOG fRNvFu"
+            class="sc-dIouRR iiidbO"
           >
             <h1
-              class="sc-hHLeRK ilwmty"
+              class="sc-cxabCf fizvsH"
             >
               Blog 1 
             </h1>
@@ -71,69 +71,69 @@ exports[`<BlogCard /> Should render correctly when deleted 1`] = `
 <div>
   <a
     aria-label="Untitled blog (DELETED), 23to30 Dec, Tagged travel"
-    class="sc-gsnTZi hvFSuA sc-crXcEl hbtQem"
+    class="sc-iBkjds fAWbEc sc-fEOsli cPLYA-D"
     href="/blog/mndyd8"
   >
     <div
-      class="sc-dkzDqf hkFiab"
+      class="sc-ftvSup igEfOL"
     >
       <div
-        class="sc-hKMtZM kvlGVY"
+        class="sc-papXJ eRRswi"
       />
       <div
-        class="sc-eCYdqJ heBWoi"
+        class="sc-jqUVSM dcVjxQ"
       >
         <div
           aria-hidden="true"
-          class="sc-evZas bZNQpX"
+          class="sc-bjUoiL iyDKRv"
         >
           <div
-            class="sc-breuTD knUrQg date container"
+            class="sc-idiyUo gybJmj date container"
           >
             <div
-              class="sc-fnykZs gNzjfC"
+              class="sc-dmRaPn gGrjMF"
             >
               <span
-                class="sc-fLlhyt hQrWnF"
+                class="sc-gicCDI gfYzqt"
               >
                 23-30 Dec
               </span>
             </div>
             <div
-              class="sc-fEOsli YrDqx"
+              class="sc-kgflAQ YFyoZ"
             >
               <span
-                class="sc-fLlhyt hQrWnF"
+                class="sc-gicCDI gfYzqt"
               >
                 23-30
               </span>
             </div>
             <div
-              class="sc-fEOsli YrDqx"
+              class="sc-kgflAQ YFyoZ"
             >
               <span
-                class="sc-fLlhyt hQrWnF"
+                class="sc-gicCDI gfYzqt"
               >
                 Dec
               </span>
             </div>
           </div>
           <div
-            class="sc-ksZaOG fRNvFu"
+            class="sc-dIouRR iiidbO"
           >
             <h1
-              class="sc-hHLeRK ilwmty"
+              class="sc-cxabCf fizvsH"
             >
               Untitled blog (DELETED)
             </h1>
             <div
-              class="sc-idiyUo beoGSj"
+              class="sc-bBrHrO dKgGej"
             >
               <div
-                class="sc-ivTmOn"
+                class="sc-bZkfAO"
               >
                 <span
-                  class="sc-cxabCf cWFBrE"
+                  class="sc-kLLXSd bxEHil"
                   type="travel"
                 >
                   Travel
@@ -142,38 +142,38 @@ exports[`<BlogCard /> Should render correctly when deleted 1`] = `
             </div>
           </div>
           <div
-            class="sc-hAZoDl gdKkFT"
+            class="sc-hHLeRK jFlueT"
           >
             <div
-              class="sc-iBkjds bZGVhU sc-bjUoiL gJRlun"
+              class="sc-crXcEl dGlrBO sc-fLlhyt gIqfv"
             >
               <style>
                 .js .gg-image__img--hide {opacity: 0;}
               </style>
               <div
-                class="sc-ftvSup ilXIrt"
+                class="sc-evZas kJA-dLA"
                 style="padding-bottom: 100%;"
               >
                 <div
-                  class="sc-papXJ dBrEee"
+                  class="sc-breuTD ckEWzJ"
                 >
                   <div
-                    class="sc-jSMfEi detKc sc-jqUVSM kZOdvC"
+                    class="sc-kDDrLX iHJcOX sc-ksZaOG hETmuT"
                   >
                     <div
-                      class="sc-gKXOVf ihacwt"
+                      class="sc-iqcoie bwoPbu"
                       style="margin-left: -0px;"
                     />
                   </div>
                 </div>
                 <img
                   alt="card"
-                  class="sc-kDDrLX fyqUD  gg-image__img--hide"
+                  class="sc-hAZoDl dACQWm  gg-image__img--hide"
                   src="https://i.imgur.com/ppPEuDs.jpg"
                 />
                 <img
                   alt="card"
-                  class="sc-iqcoie iTHoXU  gg-image__img--hide"
+                  class="sc-fnykZs bpFNhT  gg-image__img--hide"
                   src="https://i.imgur.com/ppPEuDs.jpg"
                 />
               </div>
@@ -190,69 +190,69 @@ exports[`<BlogCard /> Should render correctly with all parameters supplied 1`] =
 <div>
   <a
     aria-label="St Ives  2018, 23to30 Dec, Tagged travel"
-    class="sc-gsnTZi hvFSuA sc-crXcEl hbtQem"
+    class="sc-iBkjds fAWbEc sc-fEOsli cPLYA-D"
     href="/blog/zxywvuts"
   >
     <div
-      class="sc-dkzDqf hkFiab"
+      class="sc-ftvSup igEfOL"
     >
       <div
-        class="sc-hKMtZM kvlGVY"
+        class="sc-papXJ eRRswi"
       />
       <div
-        class="sc-eCYdqJ heBWoi"
+        class="sc-jqUVSM dcVjxQ"
       >
         <div
           aria-hidden="true"
-          class="sc-evZas bZNQpX"
+          class="sc-bjUoiL iyDKRv"
         >
           <div
-            class="sc-breuTD knUrQg date container"
+            class="sc-idiyUo gybJmj date container"
           >
             <div
-              class="sc-fnykZs gNzjfC"
+              class="sc-dmRaPn gGrjMF"
             >
               <span
-                class="sc-fLlhyt hQrWnF"
+                class="sc-gicCDI gfYzqt"
               >
                 23-30 Dec
               </span>
             </div>
             <div
-              class="sc-fEOsli YrDqx"
+              class="sc-kgflAQ YFyoZ"
             >
               <span
-                class="sc-fLlhyt hQrWnF"
+                class="sc-gicCDI gfYzqt"
               >
                 23-30
               </span>
             </div>
             <div
-              class="sc-fEOsli YrDqx"
+              class="sc-kgflAQ YFyoZ"
             >
               <span
-                class="sc-fLlhyt hQrWnF"
+                class="sc-gicCDI gfYzqt"
               >
                 Dec
               </span>
             </div>
           </div>
           <div
-            class="sc-ksZaOG fRNvFu"
+            class="sc-dIouRR iiidbO"
           >
             <h1
-              class="sc-hHLeRK ilwmty"
+              class="sc-cxabCf fizvsH"
             >
               St Ives  2018
             </h1>
             <div
-              class="sc-idiyUo beoGSj"
+              class="sc-bBrHrO dKgGej"
             >
               <div
-                class="sc-ivTmOn"
+                class="sc-bZkfAO"
               >
                 <span
-                  class="sc-cxabCf cWFBrE"
+                  class="sc-kLLXSd bxEHil"
                   type="travel"
                 >
                   Travel
@@ -261,38 +261,38 @@ exports[`<BlogCard /> Should render correctly with all parameters supplied 1`] =
             </div>
           </div>
           <div
-            class="sc-hAZoDl gdKkFT"
+            class="sc-hHLeRK jFlueT"
           >
             <div
-              class="sc-iBkjds bZGVhU sc-bjUoiL gJRlun"
+              class="sc-crXcEl dGlrBO sc-fLlhyt gIqfv"
             >
               <style>
                 .js .gg-image__img--hide {opacity: 0;}
               </style>
               <div
-                class="sc-ftvSup ilXIrt"
+                class="sc-evZas kJA-dLA"
                 style="padding-bottom: 100%;"
               >
                 <div
-                  class="sc-papXJ dBrEee"
+                  class="sc-breuTD ckEWzJ"
                 >
                   <div
-                    class="sc-jSMfEi detKc sc-jqUVSM kZOdvC"
+                    class="sc-kDDrLX iHJcOX sc-ksZaOG hETmuT"
                   >
                     <div
-                      class="sc-gKXOVf ihacwt"
+                      class="sc-iqcoie bwoPbu"
                       style="margin-left: -0px;"
                     />
                   </div>
                 </div>
                 <img
                   alt="card"
-                  class="sc-kDDrLX fyqUD  gg-image__img--hide"
+                  class="sc-hAZoDl dACQWm  gg-image__img--hide"
                   src="https://i.imgur.com/ppPEuDs.jpg"
                 />
                 <img
                   alt="card"
-                  class="sc-iqcoie iTHoXU  gg-image__img--hide"
+                  class="sc-fnykZs bpFNhT  gg-image__img--hide"
                   src="https://i.imgur.com/ppPEuDs.jpg"
                 />
               </div>
@@ -309,58 +309,58 @@ exports[`<BlogCard /> Should render correctly with custom className 1`] = `
 <div>
   <a
     aria-label="Blog 1 , NaN Invalid Date"
-    class="sc-gsnTZi hvFSuA sc-crXcEl hbtQem test-custom-classname"
+    class="sc-iBkjds fAWbEc sc-fEOsli cPLYA-D test-custom-classname"
     href="/blog/asdfg"
   >
     <div
-      class="sc-dkzDqf hkFiab"
+      class="sc-ftvSup igEfOL"
     >
       <div
-        class="sc-hKMtZM kvlGVY"
+        class="sc-papXJ eRRswi"
       />
       <div
-        class="sc-eCYdqJ heBWoi"
+        class="sc-jqUVSM dcVjxQ"
       >
         <div
           aria-hidden="true"
-          class="sc-evZas bZNQpX"
+          class="sc-bjUoiL iyDKRv"
         >
           <div
-            class="sc-breuTD knUrQg date container"
+            class="sc-idiyUo gybJmj date container"
           >
             <div
-              class="sc-fnykZs gNzjfC"
+              class="sc-dmRaPn gGrjMF"
             >
               <span
-                class="sc-fLlhyt hQrWnF"
+                class="sc-gicCDI gfYzqt"
               >
                 NaN Invalid Date
               </span>
             </div>
             <div
-              class="sc-fEOsli YrDqx"
+              class="sc-kgflAQ YFyoZ"
             >
               <span
-                class="sc-fLlhyt hQrWnF"
+                class="sc-gicCDI gfYzqt"
               >
                 NaN
               </span>
             </div>
             <div
-              class="sc-fEOsli YrDqx"
+              class="sc-kgflAQ YFyoZ"
             >
               <span
-                class="sc-fLlhyt hQrWnF"
+                class="sc-gicCDI gfYzqt"
               >
                 Invalid Date
               </span>
             </div>
           </div>
           <div
-            class="sc-ksZaOG fRNvFu"
+            class="sc-dIouRR iiidbO"
           >
             <h1
-              class="sc-hHLeRK ilwmty"
+              class="sc-cxabCf fizvsH"
             >
               Blog 1 
             </h1>
@@ -377,58 +377,58 @@ exports[`<BlogsList /> Should render correctly 1`] = `
   <div>
     <a
       aria-label="Blog 1 , NaN Invalid Date"
-      class="sc-gsnTZi hvFSuA sc-crXcEl hbtQem blogs-list__card"
+      class="sc-iBkjds fAWbEc sc-fEOsli cPLYA-D blogs-liststyles__StyledBlogCard-sc-if7ctk-1 cPOHiC"
       href="/blog/asdfg"
     >
       <div
-        class="sc-dkzDqf hkFiab"
+        class="sc-ftvSup igEfOL"
       >
         <div
-          class="sc-hKMtZM kvlGVY"
+          class="sc-papXJ eRRswi"
         />
         <div
-          class="sc-eCYdqJ heBWoi"
+          class="sc-jqUVSM dcVjxQ"
         >
           <div
             aria-hidden="true"
-            class="sc-evZas bZNQpX"
+            class="sc-bjUoiL iyDKRv"
           >
             <div
-              class="sc-breuTD knUrQg date container"
+              class="sc-idiyUo gybJmj date container"
             >
               <div
-                class="sc-fnykZs gNzjfC"
+                class="sc-dmRaPn gGrjMF"
               >
                 <span
-                  class="sc-fLlhyt hQrWnF"
+                  class="sc-gicCDI gfYzqt"
                 >
                   NaN Invalid Date
                 </span>
               </div>
               <div
-                class="sc-fEOsli YrDqx"
+                class="sc-kgflAQ YFyoZ"
               >
                 <span
-                  class="sc-fLlhyt hQrWnF"
+                  class="sc-gicCDI gfYzqt"
                 >
                   NaN
                 </span>
               </div>
               <div
-                class="sc-fEOsli YrDqx"
+                class="sc-kgflAQ YFyoZ"
               >
                 <span
-                  class="sc-fLlhyt hQrWnF"
+                  class="sc-gicCDI gfYzqt"
                 >
                   Invalid Date
                 </span>
               </div>
             </div>
             <div
-              class="sc-ksZaOG fRNvFu"
+              class="sc-dIouRR iiidbO"
             >
               <h1
-                class="sc-hHLeRK ilwmty"
+                class="sc-cxabCf fizvsH"
               >
                 Blog 1 
               </h1>
@@ -439,69 +439,69 @@ exports[`<BlogsList /> Should render correctly 1`] = `
     </a>
     <a
       aria-label="St Ives  2018, 23to30 Dec, Tagged travel"
-      class="sc-gsnTZi hvFSuA sc-crXcEl hbtQem blogs-list__card"
+      class="sc-iBkjds fAWbEc sc-fEOsli cPLYA-D blogs-liststyles__StyledBlogCard-sc-if7ctk-1 cPOHiC"
       href="/blog/zxywvuts"
     >
       <div
-        class="sc-dkzDqf hkFiab"
+        class="sc-ftvSup igEfOL"
       >
         <div
-          class="sc-hKMtZM kvlGVY"
+          class="sc-papXJ eRRswi"
         />
         <div
-          class="sc-eCYdqJ heBWoi"
+          class="sc-jqUVSM dcVjxQ"
         >
           <div
             aria-hidden="true"
-            class="sc-evZas bZNQpX"
+            class="sc-bjUoiL iyDKRv"
           >
             <div
-              class="sc-breuTD knUrQg date container"
+              class="sc-idiyUo gybJmj date container"
             >
               <div
-                class="sc-fnykZs gNzjfC"
+                class="sc-dmRaPn gGrjMF"
               >
                 <span
-                  class="sc-fLlhyt hQrWnF"
+                  class="sc-gicCDI gfYzqt"
                 >
                   23-30 Dec
                 </span>
               </div>
               <div
-                class="sc-fEOsli YrDqx"
+                class="sc-kgflAQ YFyoZ"
               >
                 <span
-                  class="sc-fLlhyt hQrWnF"
+                  class="sc-gicCDI gfYzqt"
                 >
                   23-30
                 </span>
               </div>
               <div
-                class="sc-fEOsli YrDqx"
+                class="sc-kgflAQ YFyoZ"
               >
                 <span
-                  class="sc-fLlhyt hQrWnF"
+                  class="sc-gicCDI gfYzqt"
                 >
                   Dec
                 </span>
               </div>
             </div>
             <div
-              class="sc-ksZaOG fRNvFu"
+              class="sc-dIouRR iiidbO"
             >
               <h1
-                class="sc-hHLeRK ilwmty"
+                class="sc-cxabCf fizvsH"
               >
                 St Ives  2018
               </h1>
               <div
-                class="sc-idiyUo beoGSj"
+                class="sc-bBrHrO dKgGej"
               >
                 <div
-                  class="sc-ivTmOn"
+                  class="sc-bZkfAO"
                 >
                   <span
-                    class="sc-cxabCf cWFBrE"
+                    class="sc-kLLXSd bxEHil"
                     type="travel"
                   >
                     Travel
@@ -510,38 +510,38 @@ exports[`<BlogsList /> Should render correctly 1`] = `
               </div>
             </div>
             <div
-              class="sc-hAZoDl gdKkFT"
+              class="sc-hHLeRK jFlueT"
             >
               <div
-                class="sc-iBkjds bZGVhU sc-bjUoiL gJRlun"
+                class="sc-crXcEl dGlrBO sc-fLlhyt gIqfv"
               >
                 <style>
                   .js .gg-image__img--hide {opacity: 0;}
                 </style>
                 <div
-                  class="sc-ftvSup ilXIrt"
+                  class="sc-evZas kJA-dLA"
                   style="padding-bottom: 100%;"
                 >
                   <div
-                    class="sc-papXJ dBrEee"
+                    class="sc-breuTD ckEWzJ"
                   >
                     <div
-                      class="sc-jSMfEi detKc sc-jqUVSM kZOdvC"
+                      class="sc-kDDrLX iHJcOX sc-ksZaOG hETmuT"
                     >
                       <div
-                        class="sc-gKXOVf ihacwt"
+                        class="sc-iqcoie bwoPbu"
                         style="margin-left: -0px;"
                       />
                     </div>
                   </div>
                   <img
                     alt="card"
-                    class="sc-kDDrLX fyqUD  gg-image__img--hide"
+                    class="sc-hAZoDl dACQWm  gg-image__img--hide"
                     src="https://i.imgur.com/ppPEuDs.jpg"
                   />
                   <img
                     alt="card"
-                    class="sc-iqcoie iTHoXU  gg-image__img--hide"
+                    class="sc-fnykZs bpFNhT  gg-image__img--hide"
                     src="https://i.imgur.com/ppPEuDs.jpg"
                   />
                 </div>
@@ -553,69 +553,69 @@ exports[`<BlogsList /> Should render correctly 1`] = `
     </a>
     <a
       aria-label="Untitled blog (DELETED), 23to30 Dec, Tagged travel"
-      class="sc-gsnTZi hvFSuA sc-crXcEl hbtQem blogs-list__card"
+      class="sc-iBkjds fAWbEc sc-fEOsli cPLYA-D blogs-liststyles__StyledBlogCard-sc-if7ctk-1 cPOHiC"
       href="/blog/mndyd8"
     >
       <div
-        class="sc-dkzDqf hkFiab"
+        class="sc-ftvSup igEfOL"
       >
         <div
-          class="sc-hKMtZM kvlGVY"
+          class="sc-papXJ eRRswi"
         />
         <div
-          class="sc-eCYdqJ heBWoi"
+          class="sc-jqUVSM dcVjxQ"
         >
           <div
             aria-hidden="true"
-            class="sc-evZas bZNQpX"
+            class="sc-bjUoiL iyDKRv"
           >
             <div
-              class="sc-breuTD knUrQg date container"
+              class="sc-idiyUo gybJmj date container"
             >
               <div
-                class="sc-fnykZs gNzjfC"
+                class="sc-dmRaPn gGrjMF"
               >
                 <span
-                  class="sc-fLlhyt hQrWnF"
+                  class="sc-gicCDI gfYzqt"
                 >
                   23-30 Dec
                 </span>
               </div>
               <div
-                class="sc-fEOsli YrDqx"
+                class="sc-kgflAQ YFyoZ"
               >
                 <span
-                  class="sc-fLlhyt hQrWnF"
+                  class="sc-gicCDI gfYzqt"
                 >
                   23-30
                 </span>
               </div>
               <div
-                class="sc-fEOsli YrDqx"
+                class="sc-kgflAQ YFyoZ"
               >
                 <span
-                  class="sc-fLlhyt hQrWnF"
+                  class="sc-gicCDI gfYzqt"
                 >
                   Dec
                 </span>
               </div>
             </div>
             <div
-              class="sc-ksZaOG fRNvFu"
+              class="sc-dIouRR iiidbO"
             >
               <h1
-                class="sc-hHLeRK ilwmty"
+                class="sc-cxabCf fizvsH"
               >
                 Untitled blog (DELETED)
               </h1>
               <div
-                class="sc-idiyUo beoGSj"
+                class="sc-bBrHrO dKgGej"
               >
                 <div
-                  class="sc-ivTmOn"
+                  class="sc-bZkfAO"
                 >
                   <span
-                    class="sc-cxabCf cWFBrE"
+                    class="sc-kLLXSd bxEHil"
                     type="travel"
                   >
                     Travel
@@ -624,38 +624,38 @@ exports[`<BlogsList /> Should render correctly 1`] = `
               </div>
             </div>
             <div
-              class="sc-hAZoDl gdKkFT"
+              class="sc-hHLeRK jFlueT"
             >
               <div
-                class="sc-iBkjds bZGVhU sc-bjUoiL gJRlun"
+                class="sc-crXcEl dGlrBO sc-fLlhyt gIqfv"
               >
                 <style>
                   .js .gg-image__img--hide {opacity: 0;}
                 </style>
                 <div
-                  class="sc-ftvSup ilXIrt"
+                  class="sc-evZas kJA-dLA"
                   style="padding-bottom: 100%;"
                 >
                   <div
-                    class="sc-papXJ dBrEee"
+                    class="sc-breuTD ckEWzJ"
                   >
                     <div
-                      class="sc-jSMfEi detKc sc-jqUVSM kZOdvC"
+                      class="sc-kDDrLX iHJcOX sc-ksZaOG hETmuT"
                     >
                       <div
-                        class="sc-gKXOVf ihacwt"
+                        class="sc-iqcoie bwoPbu"
                         style="margin-left: -0px;"
                       />
                     </div>
                   </div>
                   <img
                     alt="card"
-                    class="sc-kDDrLX fyqUD  gg-image__img--hide"
+                    class="sc-hAZoDl dACQWm  gg-image__img--hide"
                     src="https://i.imgur.com/ppPEuDs.jpg"
                   />
                   <img
                     alt="card"
-                    class="sc-iqcoie iTHoXU  gg-image__img--hide"
+                    class="sc-fnykZs bpFNhT  gg-image__img--hide"
                     src="https://i.imgur.com/ppPEuDs.jpg"
                   />
                 </div>
@@ -676,58 +676,58 @@ exports[`<BlogsList /> Should render correctly with custom className 1`] = `
   >
     <a
       aria-label="Blog 1 , NaN Invalid Date"
-      class="sc-gsnTZi hvFSuA sc-crXcEl hbtQem blogs-list__card"
+      class="sc-iBkjds fAWbEc sc-fEOsli cPLYA-D blogs-liststyles__StyledBlogCard-sc-if7ctk-1 cPOHiC"
       href="/blog/asdfg"
     >
       <div
-        class="sc-dkzDqf hkFiab"
+        class="sc-ftvSup igEfOL"
       >
         <div
-          class="sc-hKMtZM kvlGVY"
+          class="sc-papXJ eRRswi"
         />
         <div
-          class="sc-eCYdqJ heBWoi"
+          class="sc-jqUVSM dcVjxQ"
         >
           <div
             aria-hidden="true"
-            class="sc-evZas bZNQpX"
+            class="sc-bjUoiL iyDKRv"
           >
             <div
-              class="sc-breuTD knUrQg date container"
+              class="sc-idiyUo gybJmj date container"
             >
               <div
-                class="sc-fnykZs gNzjfC"
+                class="sc-dmRaPn gGrjMF"
               >
                 <span
-                  class="sc-fLlhyt hQrWnF"
+                  class="sc-gicCDI gfYzqt"
                 >
                   NaN Invalid Date
                 </span>
               </div>
               <div
-                class="sc-fEOsli YrDqx"
+                class="sc-kgflAQ YFyoZ"
               >
                 <span
-                  class="sc-fLlhyt hQrWnF"
+                  class="sc-gicCDI gfYzqt"
                 >
                   NaN
                 </span>
               </div>
               <div
-                class="sc-fEOsli YrDqx"
+                class="sc-kgflAQ YFyoZ"
               >
                 <span
-                  class="sc-fLlhyt hQrWnF"
+                  class="sc-gicCDI gfYzqt"
                 >
                   Invalid Date
                 </span>
               </div>
             </div>
             <div
-              class="sc-ksZaOG fRNvFu"
+              class="sc-dIouRR iiidbO"
             >
               <h1
-                class="sc-hHLeRK ilwmty"
+                class="sc-cxabCf fizvsH"
               >
                 Blog 1 
               </h1>
@@ -738,69 +738,69 @@ exports[`<BlogsList /> Should render correctly with custom className 1`] = `
     </a>
     <a
       aria-label="St Ives  2018, 23to30 Dec, Tagged travel"
-      class="sc-gsnTZi hvFSuA sc-crXcEl hbtQem blogs-list__card"
+      class="sc-iBkjds fAWbEc sc-fEOsli cPLYA-D blogs-liststyles__StyledBlogCard-sc-if7ctk-1 cPOHiC"
       href="/blog/zxywvuts"
     >
       <div
-        class="sc-dkzDqf hkFiab"
+        class="sc-ftvSup igEfOL"
       >
         <div
-          class="sc-hKMtZM kvlGVY"
+          class="sc-papXJ eRRswi"
         />
         <div
-          class="sc-eCYdqJ heBWoi"
+          class="sc-jqUVSM dcVjxQ"
         >
           <div
             aria-hidden="true"
-            class="sc-evZas bZNQpX"
+            class="sc-bjUoiL iyDKRv"
           >
             <div
-              class="sc-breuTD knUrQg date container"
+              class="sc-idiyUo gybJmj date container"
             >
               <div
-                class="sc-fnykZs gNzjfC"
+                class="sc-dmRaPn gGrjMF"
               >
                 <span
-                  class="sc-fLlhyt hQrWnF"
+                  class="sc-gicCDI gfYzqt"
                 >
                   23-30 Dec
                 </span>
               </div>
               <div
-                class="sc-fEOsli YrDqx"
+                class="sc-kgflAQ YFyoZ"
               >
                 <span
-                  class="sc-fLlhyt hQrWnF"
+                  class="sc-gicCDI gfYzqt"
                 >
                   23-30
                 </span>
               </div>
               <div
-                class="sc-fEOsli YrDqx"
+                class="sc-kgflAQ YFyoZ"
               >
                 <span
-                  class="sc-fLlhyt hQrWnF"
+                  class="sc-gicCDI gfYzqt"
                 >
                   Dec
                 </span>
               </div>
             </div>
             <div
-              class="sc-ksZaOG fRNvFu"
+              class="sc-dIouRR iiidbO"
             >
               <h1
-                class="sc-hHLeRK ilwmty"
+                class="sc-cxabCf fizvsH"
               >
                 St Ives  2018
               </h1>
               <div
-                class="sc-idiyUo beoGSj"
+                class="sc-bBrHrO dKgGej"
               >
                 <div
-                  class="sc-ivTmOn"
+                  class="sc-bZkfAO"
                 >
                   <span
-                    class="sc-cxabCf cWFBrE"
+                    class="sc-kLLXSd bxEHil"
                     type="travel"
                   >
                     Travel
@@ -809,38 +809,38 @@ exports[`<BlogsList /> Should render correctly with custom className 1`] = `
               </div>
             </div>
             <div
-              class="sc-hAZoDl gdKkFT"
+              class="sc-hHLeRK jFlueT"
             >
               <div
-                class="sc-iBkjds bZGVhU sc-bjUoiL gJRlun"
+                class="sc-crXcEl dGlrBO sc-fLlhyt gIqfv"
               >
                 <style>
                   .js .gg-image__img--hide {opacity: 0;}
                 </style>
                 <div
-                  class="sc-ftvSup ilXIrt"
+                  class="sc-evZas kJA-dLA"
                   style="padding-bottom: 100%;"
                 >
                   <div
-                    class="sc-papXJ dBrEee"
+                    class="sc-breuTD ckEWzJ"
                   >
                     <div
-                      class="sc-jSMfEi detKc sc-jqUVSM kZOdvC"
+                      class="sc-kDDrLX iHJcOX sc-ksZaOG hETmuT"
                     >
                       <div
-                        class="sc-gKXOVf ihacwt"
+                        class="sc-iqcoie bwoPbu"
                         style="margin-left: -0px;"
                       />
                     </div>
                   </div>
                   <img
                     alt="card"
-                    class="sc-kDDrLX fyqUD  gg-image__img--hide"
+                    class="sc-hAZoDl dACQWm  gg-image__img--hide"
                     src="https://i.imgur.com/ppPEuDs.jpg"
                   />
                   <img
                     alt="card"
-                    class="sc-iqcoie iTHoXU  gg-image__img--hide"
+                    class="sc-fnykZs bpFNhT  gg-image__img--hide"
                     src="https://i.imgur.com/ppPEuDs.jpg"
                   />
                 </div>
@@ -852,69 +852,69 @@ exports[`<BlogsList /> Should render correctly with custom className 1`] = `
     </a>
     <a
       aria-label="Untitled blog (DELETED), 23to30 Dec, Tagged travel"
-      class="sc-gsnTZi hvFSuA sc-crXcEl hbtQem blogs-list__card"
+      class="sc-iBkjds fAWbEc sc-fEOsli cPLYA-D blogs-liststyles__StyledBlogCard-sc-if7ctk-1 cPOHiC"
       href="/blog/mndyd8"
     >
       <div
-        class="sc-dkzDqf hkFiab"
+        class="sc-ftvSup igEfOL"
       >
         <div
-          class="sc-hKMtZM kvlGVY"
+          class="sc-papXJ eRRswi"
         />
         <div
-          class="sc-eCYdqJ heBWoi"
+          class="sc-jqUVSM dcVjxQ"
         >
           <div
             aria-hidden="true"
-            class="sc-evZas bZNQpX"
+            class="sc-bjUoiL iyDKRv"
           >
             <div
-              class="sc-breuTD knUrQg date container"
+              class="sc-idiyUo gybJmj date container"
             >
               <div
-                class="sc-fnykZs gNzjfC"
+                class="sc-dmRaPn gGrjMF"
               >
                 <span
-                  class="sc-fLlhyt hQrWnF"
+                  class="sc-gicCDI gfYzqt"
                 >
                   23-30 Dec
                 </span>
               </div>
               <div
-                class="sc-fEOsli YrDqx"
+                class="sc-kgflAQ YFyoZ"
               >
                 <span
-                  class="sc-fLlhyt hQrWnF"
+                  class="sc-gicCDI gfYzqt"
                 >
                   23-30
                 </span>
               </div>
               <div
-                class="sc-fEOsli YrDqx"
+                class="sc-kgflAQ YFyoZ"
               >
                 <span
-                  class="sc-fLlhyt hQrWnF"
+                  class="sc-gicCDI gfYzqt"
                 >
                   Dec
                 </span>
               </div>
             </div>
             <div
-              class="sc-ksZaOG fRNvFu"
+              class="sc-dIouRR iiidbO"
             >
               <h1
-                class="sc-hHLeRK ilwmty"
+                class="sc-cxabCf fizvsH"
               >
                 Untitled blog (DELETED)
               </h1>
               <div
-                class="sc-idiyUo beoGSj"
+                class="sc-bBrHrO dKgGej"
               >
                 <div
-                  class="sc-ivTmOn"
+                  class="sc-bZkfAO"
                 >
                   <span
-                    class="sc-cxabCf cWFBrE"
+                    class="sc-kLLXSd bxEHil"
                     type="travel"
                   >
                     Travel
@@ -923,38 +923,38 @@ exports[`<BlogsList /> Should render correctly with custom className 1`] = `
               </div>
             </div>
             <div
-              class="sc-hAZoDl gdKkFT"
+              class="sc-hHLeRK jFlueT"
             >
               <div
-                class="sc-iBkjds bZGVhU sc-bjUoiL gJRlun"
+                class="sc-crXcEl dGlrBO sc-fLlhyt gIqfv"
               >
                 <style>
                   .js .gg-image__img--hide {opacity: 0;}
                 </style>
                 <div
-                  class="sc-ftvSup ilXIrt"
+                  class="sc-evZas kJA-dLA"
                   style="padding-bottom: 100%;"
                 >
                   <div
-                    class="sc-papXJ dBrEee"
+                    class="sc-breuTD ckEWzJ"
                   >
                     <div
-                      class="sc-jSMfEi detKc sc-jqUVSM kZOdvC"
+                      class="sc-kDDrLX iHJcOX sc-ksZaOG hETmuT"
                     >
                       <div
-                        class="sc-gKXOVf ihacwt"
+                        class="sc-iqcoie bwoPbu"
                         style="margin-left: -0px;"
                       />
                     </div>
                   </div>
                   <img
                     alt="card"
-                    class="sc-kDDrLX fyqUD  gg-image__img--hide"
+                    class="sc-hAZoDl dACQWm  gg-image__img--hide"
                     src="https://i.imgur.com/ppPEuDs.jpg"
                   />
                   <img
                     alt="card"
-                    class="sc-iqcoie iTHoXU  gg-image__img--hide"
+                    class="sc-fnykZs bpFNhT  gg-image__img--hide"
                     src="https://i.imgur.com/ppPEuDs.jpg"
                   />
                 </div>
@@ -973,58 +973,58 @@ exports[`<BlogsList /> Should render correctly with deleteBlog function 1`] = `
   <div>
     <a
       aria-label="Blog 1 , NaN Invalid Date"
-      class="sc-gsnTZi hvFSuA sc-crXcEl hbtQem blogs-list__card blogs-list__card--with-controls"
+      class="sc-iBkjds fAWbEc sc-fEOsli cPLYA-D blogs-liststyles__StyledBlogCard-sc-if7ctk-1 faugAy"
       href="/blog/asdfg"
     >
       <div
-        class="sc-dkzDqf hkFiab"
+        class="sc-ftvSup igEfOL"
       >
         <div
-          class="sc-hKMtZM kvlGVY"
+          class="sc-papXJ eRRswi"
         />
         <div
-          class="sc-eCYdqJ heBWoi"
+          class="sc-jqUVSM dcVjxQ"
         >
           <div
             aria-hidden="true"
-            class="sc-evZas bZNQpX"
+            class="sc-bjUoiL iyDKRv"
           >
             <div
-              class="sc-breuTD knUrQg date container"
+              class="sc-idiyUo gybJmj date container"
             >
               <div
-                class="sc-fnykZs gNzjfC"
+                class="sc-dmRaPn gGrjMF"
               >
                 <span
-                  class="sc-fLlhyt hQrWnF"
+                  class="sc-gicCDI gfYzqt"
                 >
                   NaN Invalid Date
                 </span>
               </div>
               <div
-                class="sc-fEOsli YrDqx"
+                class="sc-kgflAQ YFyoZ"
               >
                 <span
-                  class="sc-fLlhyt hQrWnF"
+                  class="sc-gicCDI gfYzqt"
                 >
                   NaN
                 </span>
               </div>
               <div
-                class="sc-fEOsli YrDqx"
+                class="sc-kgflAQ YFyoZ"
               >
                 <span
-                  class="sc-fLlhyt hQrWnF"
+                  class="sc-gicCDI gfYzqt"
                 >
                   Invalid Date
                 </span>
               </div>
             </div>
             <div
-              class="sc-ksZaOG fRNvFu"
+              class="sc-dIouRR iiidbO"
             >
               <h1
-                class="sc-hHLeRK ilwmty"
+                class="sc-cxabCf fizvsH"
               >
                 Blog 1 
               </h1>
@@ -1034,80 +1034,80 @@ exports[`<BlogsList /> Should render correctly with deleteBlog function 1`] = `
       </div>
     </a>
     <button
-      class="sc-gicCDI bMnljm blogs-list__control"
+      class="sc-dkzDqf dhXlGL blogs-liststyles__StyledButton-sc-if7ctk-2 bknPIw"
       type="button"
     >
       <span
-        class="sc-bZkfAO housOp"
+        class="sc-eCYdqJ ghZAyu"
       >
         Delete blog
       </span>
     </button>
     <a
       aria-label="St Ives  2018, 23to30 Dec, Tagged travel"
-      class="sc-gsnTZi hvFSuA sc-crXcEl hbtQem blogs-list__card blogs-list__card--with-controls"
+      class="sc-iBkjds fAWbEc sc-fEOsli cPLYA-D blogs-liststyles__StyledBlogCard-sc-if7ctk-1 faugAy"
       href="/blog/zxywvuts"
     >
       <div
-        class="sc-dkzDqf hkFiab"
+        class="sc-ftvSup igEfOL"
       >
         <div
-          class="sc-hKMtZM kvlGVY"
+          class="sc-papXJ eRRswi"
         />
         <div
-          class="sc-eCYdqJ heBWoi"
+          class="sc-jqUVSM dcVjxQ"
         >
           <div
             aria-hidden="true"
-            class="sc-evZas bZNQpX"
+            class="sc-bjUoiL iyDKRv"
           >
             <div
-              class="sc-breuTD knUrQg date container"
+              class="sc-idiyUo gybJmj date container"
             >
               <div
-                class="sc-fnykZs gNzjfC"
+                class="sc-dmRaPn gGrjMF"
               >
                 <span
-                  class="sc-fLlhyt hQrWnF"
+                  class="sc-gicCDI gfYzqt"
                 >
                   23-30 Dec
                 </span>
               </div>
               <div
-                class="sc-fEOsli YrDqx"
+                class="sc-kgflAQ YFyoZ"
               >
                 <span
-                  class="sc-fLlhyt hQrWnF"
+                  class="sc-gicCDI gfYzqt"
                 >
                   23-30
                 </span>
               </div>
               <div
-                class="sc-fEOsli YrDqx"
+                class="sc-kgflAQ YFyoZ"
               >
                 <span
-                  class="sc-fLlhyt hQrWnF"
+                  class="sc-gicCDI gfYzqt"
                 >
                   Dec
                 </span>
               </div>
             </div>
             <div
-              class="sc-ksZaOG fRNvFu"
+              class="sc-dIouRR iiidbO"
             >
               <h1
-                class="sc-hHLeRK ilwmty"
+                class="sc-cxabCf fizvsH"
               >
                 St Ives  2018
               </h1>
               <div
-                class="sc-idiyUo beoGSj"
+                class="sc-bBrHrO dKgGej"
               >
                 <div
-                  class="sc-ivTmOn"
+                  class="sc-bZkfAO"
                 >
                   <span
-                    class="sc-cxabCf cWFBrE"
+                    class="sc-kLLXSd bxEHil"
                     type="travel"
                   >
                     Travel
@@ -1116,38 +1116,38 @@ exports[`<BlogsList /> Should render correctly with deleteBlog function 1`] = `
               </div>
             </div>
             <div
-              class="sc-hAZoDl gdKkFT"
+              class="sc-hHLeRK jFlueT"
             >
               <div
-                class="sc-iBkjds bZGVhU sc-bjUoiL gJRlun"
+                class="sc-crXcEl dGlrBO sc-fLlhyt gIqfv"
               >
                 <style>
                   .js .gg-image__img--hide {opacity: 0;}
                 </style>
                 <div
-                  class="sc-ftvSup ilXIrt"
+                  class="sc-evZas kJA-dLA"
                   style="padding-bottom: 100%;"
                 >
                   <div
-                    class="sc-papXJ dBrEee"
+                    class="sc-breuTD ckEWzJ"
                   >
                     <div
-                      class="sc-jSMfEi detKc sc-jqUVSM kZOdvC"
+                      class="sc-kDDrLX iHJcOX sc-ksZaOG hETmuT"
                     >
                       <div
-                        class="sc-gKXOVf ihacwt"
+                        class="sc-iqcoie bwoPbu"
                         style="margin-left: -0px;"
                       />
                     </div>
                   </div>
                   <img
                     alt="card"
-                    class="sc-kDDrLX fyqUD  gg-image__img--hide"
+                    class="sc-hAZoDl dACQWm  gg-image__img--hide"
                     src="https://i.imgur.com/ppPEuDs.jpg"
                   />
                   <img
                     alt="card"
-                    class="sc-iqcoie iTHoXU  gg-image__img--hide"
+                    class="sc-fnykZs bpFNhT  gg-image__img--hide"
                     src="https://i.imgur.com/ppPEuDs.jpg"
                   />
                 </div>
@@ -1158,80 +1158,80 @@ exports[`<BlogsList /> Should render correctly with deleteBlog function 1`] = `
       </div>
     </a>
     <button
-      class="sc-gicCDI bMnljm blogs-list__control"
+      class="sc-dkzDqf dhXlGL blogs-liststyles__StyledButton-sc-if7ctk-2 bknPIw"
       type="button"
     >
       <span
-        class="sc-bZkfAO housOp"
+        class="sc-eCYdqJ ghZAyu"
       >
         Delete blog
       </span>
     </button>
     <a
       aria-label="Untitled blog (DELETED), 23to30 Dec, Tagged travel"
-      class="sc-gsnTZi hvFSuA sc-crXcEl hbtQem blogs-list__card blogs-list__card--with-controls"
+      class="sc-iBkjds fAWbEc sc-fEOsli cPLYA-D blogs-liststyles__StyledBlogCard-sc-if7ctk-1 faugAy"
       href="/blog/mndyd8"
     >
       <div
-        class="sc-dkzDqf hkFiab"
+        class="sc-ftvSup igEfOL"
       >
         <div
-          class="sc-hKMtZM kvlGVY"
+          class="sc-papXJ eRRswi"
         />
         <div
-          class="sc-eCYdqJ heBWoi"
+          class="sc-jqUVSM dcVjxQ"
         >
           <div
             aria-hidden="true"
-            class="sc-evZas bZNQpX"
+            class="sc-bjUoiL iyDKRv"
           >
             <div
-              class="sc-breuTD knUrQg date container"
+              class="sc-idiyUo gybJmj date container"
             >
               <div
-                class="sc-fnykZs gNzjfC"
+                class="sc-dmRaPn gGrjMF"
               >
                 <span
-                  class="sc-fLlhyt hQrWnF"
+                  class="sc-gicCDI gfYzqt"
                 >
                   23-30 Dec
                 </span>
               </div>
               <div
-                class="sc-fEOsli YrDqx"
+                class="sc-kgflAQ YFyoZ"
               >
                 <span
-                  class="sc-fLlhyt hQrWnF"
+                  class="sc-gicCDI gfYzqt"
                 >
                   23-30
                 </span>
               </div>
               <div
-                class="sc-fEOsli YrDqx"
+                class="sc-kgflAQ YFyoZ"
               >
                 <span
-                  class="sc-fLlhyt hQrWnF"
+                  class="sc-gicCDI gfYzqt"
                 >
                   Dec
                 </span>
               </div>
             </div>
             <div
-              class="sc-ksZaOG fRNvFu"
+              class="sc-dIouRR iiidbO"
             >
               <h1
-                class="sc-hHLeRK ilwmty"
+                class="sc-cxabCf fizvsH"
               >
                 Untitled blog (DELETED)
               </h1>
               <div
-                class="sc-idiyUo beoGSj"
+                class="sc-bBrHrO dKgGej"
               >
                 <div
-                  class="sc-ivTmOn"
+                  class="sc-bZkfAO"
                 >
                   <span
-                    class="sc-cxabCf cWFBrE"
+                    class="sc-kLLXSd bxEHil"
                     type="travel"
                   >
                     Travel
@@ -1240,38 +1240,38 @@ exports[`<BlogsList /> Should render correctly with deleteBlog function 1`] = `
               </div>
             </div>
             <div
-              class="sc-hAZoDl gdKkFT"
+              class="sc-hHLeRK jFlueT"
             >
               <div
-                class="sc-iBkjds bZGVhU sc-bjUoiL gJRlun"
+                class="sc-crXcEl dGlrBO sc-fLlhyt gIqfv"
               >
                 <style>
                   .js .gg-image__img--hide {opacity: 0;}
                 </style>
                 <div
-                  class="sc-ftvSup ilXIrt"
+                  class="sc-evZas kJA-dLA"
                   style="padding-bottom: 100%;"
                 >
                   <div
-                    class="sc-papXJ dBrEee"
+                    class="sc-breuTD ckEWzJ"
                   >
                     <div
-                      class="sc-jSMfEi detKc sc-jqUVSM kZOdvC"
+                      class="sc-kDDrLX iHJcOX sc-ksZaOG hETmuT"
                     >
                       <div
-                        class="sc-gKXOVf ihacwt"
+                        class="sc-iqcoie bwoPbu"
                         style="margin-left: -0px;"
                       />
                     </div>
                   </div>
                   <img
                     alt="card"
-                    class="sc-kDDrLX fyqUD  gg-image__img--hide"
+                    class="sc-hAZoDl dACQWm  gg-image__img--hide"
                     src="https://i.imgur.com/ppPEuDs.jpg"
                   />
                   <img
                     alt="card"
-                    class="sc-iqcoie iTHoXU  gg-image__img--hide"
+                    class="sc-fnykZs bpFNhT  gg-image__img--hide"
                     src="https://i.imgur.com/ppPEuDs.jpg"
                   />
                 </div>
@@ -1282,12 +1282,12 @@ exports[`<BlogsList /> Should render correctly with deleteBlog function 1`] = `
       </div>
     </a>
     <button
-      class="sc-gicCDI jVDCxe blogs-list__control"
+      class="sc-dkzDqf jQQPA-D blogs-liststyles__StyledButton-sc-if7ctk-2 bknPIw"
       disabled=""
       type="button"
     >
       <span
-        class="sc-bZkfAO housOp"
+        class="sc-eCYdqJ ghZAyu"
       >
         Delete blog
       </span>

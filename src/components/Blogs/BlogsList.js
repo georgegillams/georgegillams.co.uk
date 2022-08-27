@@ -1,38 +1,26 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { cssModules } from '@george-gillams/components/helpers/cssModules';
 import { BUTTON_TYPES } from '@george-gillams/components/button/constants';
 
-import BlogCard from './BlogCard';
-import STYLES from './blogs-list.scss';
-import Button from 'components/common/Button';
-import FeatureCard from 'components/common/FeatureCard';
-
-const getClassName = cssModules(STYLES);
+import { StyledBlogCard, StyledButton, StyledFeatureCard } from './blogs-list.styles';
 
 const BlogsList = props => {
   const { admin, blogs, deleteBlog, linkPrefix, ...rest } = props;
 
   return (
     <div {...rest}>
-      {admin && <FeatureCard title="Add a new blog" href="/create-blog" className={getClassName('blogs-list__card')} />}
+      {admin && <StyledFeatureCard title="Add a new blog" href="/create-blog" />}
       {blogs.map(blog => (
         <>
-          <BlogCard
-            key={`card_${blog.id}`}
-            blog={blog}
-            linkPrefix={linkPrefix}
-            className={getClassName('blogs-list__card', deleteBlog ? 'blogs-list__card--with-controls' : null)}
-          />
+          <StyledBlogCard key={`card_${blog.id}`} blog={blog} linkPrefix={linkPrefix} withControls={!!deleteBlog} />
           {deleteBlog && (
-            <Button
+            <StyledButton
               key={`delete_button_${blog.id}`}
               buttonType={BUTTON_TYPES.destructive}
               onClick={() => deleteBlog(blog.id)}
-              disabled={blog.deleted}
-              className={getClassName('blogs-list__control')}>
+              disabled={blog.deleted}>
               Delete blog
-            </Button>
+            </StyledButton>
           )}
         </>
       ))}

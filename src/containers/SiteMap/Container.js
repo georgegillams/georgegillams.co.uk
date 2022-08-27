@@ -11,6 +11,7 @@ import DebugObject from 'components/common/DebugObject';
 
 import STYLES from './site-map.scss';
 import { cssModules } from '@george-gillams/components/helpers/cssModules';
+import PageContainer from 'components/common/PageContainer';
 
 const getClassName = cssModules(STYLES);
 
@@ -35,147 +36,149 @@ const SiteMap = props => {
   const admin = !!(authenticatorState && authenticatorState.user && authenticatorState.user.admin);
 
   return (
-    <PageTitle name="Site map" {...props}>
-      <DebugObject debugTitle="Sitemap" debugObject={{ loadBlogs, authenticatorState, blogListState }} />
-      <Subsection anchor={false} name="Blog 📝" className={getClassName('site-map__section')}>
-        <Paragraph>
-          <TextLink href={`/blog`}>Blog list</TextLink>
-          <br />
-          {!writingBlogList && (
-            <>
-              <Skeleton skeletonStyle={SKELETON_STYLES.textLink} />
-              <Skeleton skeletonStyle={SKELETON_STYLES.textLink} />
-              <Skeleton skeletonStyle={SKELETON_STYLES.textLink} />
-              <Skeleton skeletonStyle={SKELETON_STYLES.textLink} />
-              <Skeleton skeletonStyle={SKELETON_STYLES.textLink} />
-              <Skeleton skeletonStyle={SKELETON_STYLES.textLink} />
-            </>
-          )}
-          {writingBlogList && (
-            <>
-              {writingBlogList.map(b => (
-                <>
-                  <TextLink href={`/blog/${b.id}`}>{b.title}</TextLink>
-                  <br />
-                </>
-              ))}
-            </>
-          )}
-        </Paragraph>
-      </Subsection>
-      {admin && (
-        <Subsection anchor={false} name="All blogs" className={getClassName('site-map__section')}>
-          {blogList && (
-            <Paragraph>
-              {blogList.map(b => (
-                <>
-                  <TextLink href={`/blog/${b.id}`}>
-                    {b.title || 'Untitled blog'}
-                    {b.deleted && ' (deleted)'}
-                  </TextLink>
-                  <br />
-                </>
-              ))}
-            </Paragraph>
-          )}
+    <PageContainer bottomPadding>
+      <PageTitle name="Site map" {...props}>
+        <DebugObject debugTitle="Sitemap" debugObject={{ loadBlogs, authenticatorState, blogListState }} />
+        <Subsection anchor={false} name="Blog 📝" className={getClassName('site-map__section')}>
+          <Paragraph>
+            <TextLink href={`/blog`}>Blog list</TextLink>
+            <br />
+            {!writingBlogList && (
+              <>
+                <Skeleton skeletonStyle={SKELETON_STYLES.textLink} />
+                <Skeleton skeletonStyle={SKELETON_STYLES.textLink} />
+                <Skeleton skeletonStyle={SKELETON_STYLES.textLink} />
+                <Skeleton skeletonStyle={SKELETON_STYLES.textLink} />
+                <Skeleton skeletonStyle={SKELETON_STYLES.textLink} />
+                <Skeleton skeletonStyle={SKELETON_STYLES.textLink} />
+              </>
+            )}
+            {writingBlogList && (
+              <>
+                {writingBlogList.map(b => (
+                  <>
+                    <TextLink href={`/blog/${b.id}`}>{b.title}</TextLink>
+                    <br />
+                  </>
+                ))}
+              </>
+            )}
+          </Paragraph>
         </Subsection>
-      )}
-      <Subsection anchor={false} name="Photography 📷" className={getClassName('site-map__section')}>
-        <Paragraph>
-          <TextLink href="/photography">Photography</TextLink>
-        </Paragraph>
-      </Subsection>
-      <Subsection anchor={false} name="Medals 🏅" className={getClassName('site-map__section')}>
-        <Paragraph>
-          <TextLink href="/medals">Medals</TextLink>
-        </Paragraph>
-      </Subsection>
-      <Subsection anchor={false} name="Work 📱" className={getClassName('site-map__section')}>
-        <Paragraph>
-          <TextLink href="/work">Overview</TextLink>
-          <br />
-          <TextLink href="/work/backpack">Backpack</TextLink>
-          <br />
-          <TextLink href="/work/degree">Degree</TextLink>
-          <br />
-          <TextLink href="/work/epicc">EPICC</TextLink>
-        </Paragraph>
-      </Subsection>
-      <Subsection anchor={false} name="Design 🎨" className={getClassName('site-map__section')}>
-        <Paragraph>
-          <TextLink href="/privacy-policy">Privacy Policy</TextLink>
-        </Paragraph>
-      </Subsection>
-      <Subsection anchor={false} name="Other stuff 🤷‍♂️" className={getClassName('site-map__section')}>
-        <Paragraph>
-          <TextLink href="/contact">Contact</TextLink>
-          <br />
-          <TextLink href="/support">Support</TextLink>
-          <br />
-          <TextLink href="/debug">Debug tools</TextLink>
-          <br />
-          <TextLink href="/status">Status</TextLink>
-        </Paragraph>
-      </Subsection>
-      <Subsection anchor={false} name="Random 🐉" className={getClassName('site-map__section')}>
-        <Paragraph>
-          <TextLink hrefExternal href="/robots.txt">
-            Robots.txt
-          </TextLink>
-          <br />
-          <TextLink hrefExternal href="/sitemap.xml">
-            SiteMap.xml
-          </TextLink>
-          <br />
-          <TextLink href="/404">404 error page - not found</TextLink>
-          <br />
-          <TextLink href="/teapot">418 error page - I&apos;m a teapot</TextLink>
-        </Paragraph>
-      </Subsection>
-      <Subsection anchor={false} name="API" className={getClassName('site-map__section')}>
-        <Paragraph>
-          <TextLink href="/api-docs">API docs</TextLink>
-        </Paragraph>
-      </Subsection>
-      <Subsection anchor={false} name="Accounts 🔑" className={getClassName('site-map__section')}>
-        <Paragraph>
-          <TextLink href="/account">Account</TextLink>
-          <br />
-          <TextLink href="/sign-up">Sign up</TextLink>
-          <br />
-          <TextLink href="/login">Log in</TextLink>
-          <br />
-          <TextLink href="/email-verification">Email verification</TextLink>
-          <br />
-          <TextLink href="/magic-login">Magic login</TextLink>
-        </Paragraph>
-      </Subsection>
-      <Subsection anchor={false} name="Admin 👮‍♂️" className={getClassName('site-map__section')}>
-        <Paragraph>
-          <TextLink href="/admin">Admin navigation</TextLink>
-          <br />
-          <TextLink href="/blog">Blogs</TextLink>
-          <br />
-          <TextLink href="/admin/analytics">Analytics</TextLink>
-          <br />
-          <TextLink href="/admin/emails">Emails</TextLink>
-          <br />
-          <TextLink href="/admin/notifications">Notifications</TextLink>
-          <br />
-          <TextLink href="/admin/users">Users</TextLink>
-        </Paragraph>
-      </Subsection>
-      <Subsection anchor={false} name="Redirects 👉" className={getClassName('site-map__section')}>
-        <Paragraph>
-          {redirects.map(redirect => (
-            <div key={redirect.from}>
-              <TextLink href={`${redirect.from}`}>{`${redirect.from} ⇒ ${redirect.to}`}</TextLink>
-              <br />
-            </div>
-          ))}
-        </Paragraph>
-      </Subsection>
-    </PageTitle>
+        {admin && (
+          <Subsection anchor={false} name="All blogs" className={getClassName('site-map__section')}>
+            {blogList && (
+              <Paragraph>
+                {blogList.map(b => (
+                  <>
+                    <TextLink href={`/blog/${b.id}`}>
+                      {b.title || 'Untitled blog'}
+                      {b.deleted && ' (deleted)'}
+                    </TextLink>
+                    <br />
+                  </>
+                ))}
+              </Paragraph>
+            )}
+          </Subsection>
+        )}
+        <Subsection anchor={false} name="Photography 📷" className={getClassName('site-map__section')}>
+          <Paragraph>
+            <TextLink href="/photography">Photography</TextLink>
+          </Paragraph>
+        </Subsection>
+        <Subsection anchor={false} name="Medals 🏅" className={getClassName('site-map__section')}>
+          <Paragraph>
+            <TextLink href="/medals">Medals</TextLink>
+          </Paragraph>
+        </Subsection>
+        <Subsection anchor={false} name="Work 📱" className={getClassName('site-map__section')}>
+          <Paragraph>
+            <TextLink href="/work">Overview</TextLink>
+            <br />
+            <TextLink href="/work/backpack">Backpack</TextLink>
+            <br />
+            <TextLink href="/work/degree">Degree</TextLink>
+            <br />
+            <TextLink href="/work/epicc">EPICC</TextLink>
+          </Paragraph>
+        </Subsection>
+        <Subsection anchor={false} name="Design 🎨" className={getClassName('site-map__section')}>
+          <Paragraph>
+            <TextLink href="/privacy-policy">Privacy Policy</TextLink>
+          </Paragraph>
+        </Subsection>
+        <Subsection anchor={false} name="Other stuff 🤷‍♂️" className={getClassName('site-map__section')}>
+          <Paragraph>
+            <TextLink href="/contact">Contact</TextLink>
+            <br />
+            <TextLink href="/support">Support</TextLink>
+            <br />
+            <TextLink href="/debug">Debug tools</TextLink>
+            <br />
+            <TextLink href="/status">Status</TextLink>
+          </Paragraph>
+        </Subsection>
+        <Subsection anchor={false} name="Random 🐉" className={getClassName('site-map__section')}>
+          <Paragraph>
+            <TextLink hrefExternal href="/robots.txt">
+              Robots.txt
+            </TextLink>
+            <br />
+            <TextLink hrefExternal href="/sitemap.xml">
+              SiteMap.xml
+            </TextLink>
+            <br />
+            <TextLink href="/404">404 error page - not found</TextLink>
+            <br />
+            <TextLink href="/teapot">418 error page - I&apos;m a teapot</TextLink>
+          </Paragraph>
+        </Subsection>
+        <Subsection anchor={false} name="API" className={getClassName('site-map__section')}>
+          <Paragraph>
+            <TextLink href="/api-docs">API docs</TextLink>
+          </Paragraph>
+        </Subsection>
+        <Subsection anchor={false} name="Accounts 🔑" className={getClassName('site-map__section')}>
+          <Paragraph>
+            <TextLink href="/account">Account</TextLink>
+            <br />
+            <TextLink href="/sign-up">Sign up</TextLink>
+            <br />
+            <TextLink href="/login">Log in</TextLink>
+            <br />
+            <TextLink href="/email-verification">Email verification</TextLink>
+            <br />
+            <TextLink href="/magic-login">Magic login</TextLink>
+          </Paragraph>
+        </Subsection>
+        <Subsection anchor={false} name="Admin 👮‍♂️" className={getClassName('site-map__section')}>
+          <Paragraph>
+            <TextLink href="/admin">Admin navigation</TextLink>
+            <br />
+            <TextLink href="/blog">Blogs</TextLink>
+            <br />
+            <TextLink href="/admin/analytics">Analytics</TextLink>
+            <br />
+            <TextLink href="/admin/emails">Emails</TextLink>
+            <br />
+            <TextLink href="/admin/notifications">Notifications</TextLink>
+            <br />
+            <TextLink href="/admin/users">Users</TextLink>
+          </Paragraph>
+        </Subsection>
+        <Subsection anchor={false} name="Redirects 👉" className={getClassName('site-map__section')}>
+          <Paragraph>
+            {redirects.map(redirect => (
+              <div key={redirect.from}>
+                <TextLink href={`${redirect.from}`}>{`${redirect.from} ⇒ ${redirect.to}`}</TextLink>
+                <br />
+              </div>
+            ))}
+          </Paragraph>
+        </Subsection>
+      </PageTitle>
+    </PageContainer>
   );
 };
 

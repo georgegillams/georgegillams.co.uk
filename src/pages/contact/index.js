@@ -2,14 +2,14 @@ import React from 'react';
 
 import CSSHack from 'components/common/CSSHack';
 import Contact from 'containers/Contact';
-import LegacyCommonLayout, { LAYOUT_STYLES } from 'components/common/LegacyCommonLayout';
+import CommonLayout from 'components/common/CommonLayout';
 
 const Page = props => {
   return (
-    <LegacyCommonLayout layout={LAYOUT_STYLES.fullWidthCenter}>
+    <CommonLayout>
       <CSSHack pageName="contact" />
       <Contact {...props} />
-    </LegacyCommonLayout>
+    </CommonLayout>
   );
 };
 

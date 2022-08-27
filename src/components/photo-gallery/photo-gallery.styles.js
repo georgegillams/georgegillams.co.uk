@@ -4,7 +4,7 @@ import Image from '@george-gillams/components/image';
 export const SimplePhotoGallery = styled.div`
   width: 100%;
   display: flex;
-  flexwrap: wrap;
+  flex-wrap: wrap;
 `;
 
 export const SimplePhotoWrapper = styled.div`

@@ -4,7 +4,7 @@ import PageTitle from 'components/common/PageTitle';
 
 import { CreativeCommons } from 'components/CreativeCommons';
 import TextLink from 'components/common/TextLink';
-import PageContainer from '@george-gillams/components/page-container';
+import PageContainer from 'components/common/PageContainer';
 import PhotographySkeleton from './PhotographySkeleton';
 import LoadingCover from '@george-gillams/components/loading-cover';
 import { LinkContainer } from './photography.styles';

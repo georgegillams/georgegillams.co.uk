@@ -1,5 +1,17 @@
-const portraitSize = { label: 'Original', width: 4000, height: 3000, source: 'https://via.placeholder.com/4000x3000' };
-const landscapeSize = { label: 'Original', width: 3000, height: 4000, source: 'https://via.placeholder.com/3000x4000' };
+const portraitSize = label => ({
+  label: label,
+  width: 4000,
+  height: 3000,
+  source: 'https://via.placeholder.com/4000x3000',
+});
+const landscapeSize = label => ({
+  label: label,
+  width: 3000,
+  height: 4000,
+  source: 'https://via.placeholder.com/3000x4000',
+});
+const portraitSizes = [portraitSize('Original'), portraitSize('Large')];
+const landscapeSizes = [landscapeSize('Original'), landscapeSize('Large')];
 
 export default class MockFlickr {
   constructor() {
@@ -7,7 +19,7 @@ export default class MockFlickr {
       getSizes: () => ({
         body: {
           sizes: {
-            size: [Math.random() < 0.5 ? portraitSize : landscapeSize],
+            size: Math.random() < 0.5 ? portraitSizes : landscapeSizes,
           },
         },
       }),
