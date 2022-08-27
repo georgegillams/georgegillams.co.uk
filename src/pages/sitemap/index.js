@@ -2,15 +2,15 @@ import React from 'react';
 
 import CSSHack from 'components/common/CSSHack';
 import SiteMap from 'containers/SiteMap';
-import LegacyCommonLayout from 'components/common/LegacyCommonLayout';
 import blogPage from '../blog/';
+import CommonLayout from 'components/common/CommonLayout';
 
 const Page = props => {
   return (
-    <LegacyCommonLayout>
+    <CommonLayout>
       <CSSHack pageName="sitemap" />
       <SiteMap {...props} />
-    </LegacyCommonLayout>
+    </CommonLayout>
   );
 };
 

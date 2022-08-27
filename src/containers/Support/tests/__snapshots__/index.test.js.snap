@@ -2,110 +2,125 @@
 
 exports[`<Support /> should render correctly - index 1`] = `
 <div>
-  <h1
-    class="sc-bczRLJ hDLBIv sc-ksZaOG UTWGT"
-  >
-    Support
-  </h1>
   <div
-    class="support__controls"
+    class="sc-fLlhyt fWbXiz page-containerstyles__StyledPageContainer-sc-19l7k4-0"
+    width="default"
   >
-    <button
-      class="sc-idiyUo fWHeaH outer"
-      disabled=""
-      type="button"
+    <h1
+      class="sc-bczRLJ hDLBIv sc-ksZaOG UTWGT"
     >
-      <span
-        class="sc-hHLeRK eOuDcm"
-      >
-        Reload
-      </span>
-    </button>
-  </div>
-  <div
-    class="sc-evZas cgLOYZ support__body-skeleton"
-  >
+      Support
+    </h1>
     <div
-      class="sc-breuTD cvMWpe"
-      style="margin-left: -0px;"
-    />
+      class="support__controls"
+    >
+      <button
+        class="sc-idiyUo fWHeaH outer"
+        disabled=""
+        type="button"
+      >
+        <span
+          class="sc-hHLeRK eOuDcm"
+        >
+          Reload
+        </span>
+      </button>
+    </div>
+    <div
+      class="sc-evZas cgLOYZ support__body-skeleton"
+    >
+      <div
+        class="sc-breuTD cvMWpe"
+        style="margin-left: -0px;"
+      />
+    </div>
   </div>
 </div>
 `;
 
 exports[`<Support /> should render correctly when loading 1`] = `
 <div>
-  <h1
-    class="sc-bczRLJ hDLBIv sc-ksZaOG UTWGT"
-  >
-    Support
-  </h1>
   <div
-    class="support__controls"
+    class="sc-fLlhyt fWbXiz page-containerstyles__StyledPageContainer-sc-19l7k4-0"
+    width="default"
   >
-    <button
-      class="sc-idiyUo fWHeaH outer"
-      disabled=""
-      type="button"
+    <h1
+      class="sc-bczRLJ hDLBIv sc-ksZaOG UTWGT"
     >
-      <span
-        class="sc-hHLeRK eOuDcm"
-      >
-        Reload
-      </span>
-    </button>
-  </div>
-  <div
-    class="sc-evZas cgLOYZ support__body-skeleton"
-  >
+      Support
+    </h1>
     <div
-      class="sc-breuTD cvMWpe"
-      style="margin-left: -0px;"
-    />
+      class="support__controls"
+    >
+      <button
+        class="sc-idiyUo fWHeaH outer"
+        disabled=""
+        type="button"
+      >
+        <span
+          class="sc-hHLeRK eOuDcm"
+        >
+          Reload
+        </span>
+      </button>
+    </div>
+    <div
+      class="sc-evZas cgLOYZ support__body-skeleton"
+    >
+      <div
+        class="sc-breuTD cvMWpe"
+        style="margin-left: -0px;"
+      />
+    </div>
   </div>
 </div>
 `;
 
 exports[`<Support /> should render correctly with admin 1`] = `
 <div>
-  <h1
-    class="sc-bczRLJ hDLBIv sc-ksZaOG UTWGT"
-  >
-    Support
-  </h1>
   <div
-    class="support__controls"
-  >
-    <button
-      class="sc-idiyUo sooGH outer"
-      type="button"
-    >
-      <span
-        class="sc-hHLeRK eOuDcm"
-      >
-        Reload
-      </span>
-    </button>
-  </div>
-  <div
-    class="sc-evZas cgLOYZ support__body-skeleton"
-  >
-    <div
-      class="sc-breuTD cvMWpe"
-      style="margin-left: -0px;"
-    />
-  </div>
-  <div
-    class="sc-jqUVSM leXYdV"
+    class="sc-fLlhyt fWbXiz page-containerstyles__StyledPageContainer-sc-19l7k4-0"
+    width="default"
   >
     <h1
-      class="sc-gsnTZi cTWewb sc-crXcEl jisdVx"
-      id="add-link"
+      class="sc-bczRLJ hDLBIv sc-ksZaOG UTWGT"
     >
-      ADD LINK
+      Support
     </h1>
-    <div>
-      SUPPORT_FORM
+    <div
+      class="support__controls"
+    >
+      <button
+        class="sc-idiyUo sooGH outer"
+        type="button"
+      >
+        <span
+          class="sc-hHLeRK eOuDcm"
+        >
+          Reload
+        </span>
+      </button>
+    </div>
+    <div
+      class="sc-evZas cgLOYZ support__body-skeleton"
+    >
+      <div
+        class="sc-breuTD cvMWpe"
+        style="margin-left: -0px;"
+      />
+    </div>
+    <div
+      class="sc-jqUVSM leXYdV"
+    >
+      <h1
+        class="sc-gsnTZi cTWewb sc-crXcEl jisdVx"
+        id="add-link"
+      >
+        ADD LINK
+      </h1>
+      <div>
+        SUPPORT_FORM
+      </div>
     </div>
   </div>
 </div>
@@ -113,55 +128,60 @@ exports[`<Support /> should render correctly with admin 1`] = `
 
 exports[`<Support /> should render correctly with admin and createLinkError 1`] = `
 <div>
-  <h1
-    class="sc-bczRLJ hDLBIv sc-ksZaOG UTWGT"
-  >
-    Support
-  </h1>
   <div
-    class="support__controls"
-  >
-    <button
-      class="sc-idiyUo sooGH outer"
-      type="button"
-    >
-      <span
-        class="sc-hHLeRK eOuDcm"
-      >
-        Reload
-      </span>
-    </button>
-  </div>
-  <div
-    class="sc-evZas cgLOYZ support__body-skeleton"
-  >
-    <div
-      class="sc-breuTD cvMWpe"
-      style="margin-left: -0px;"
-    />
-  </div>
-  <div
-    class="sc-jqUVSM leXYdV"
+    class="sc-fLlhyt fWbXiz page-containerstyles__StyledPageContainer-sc-19l7k4-0"
+    width="default"
   >
     <h1
-      class="sc-gsnTZi cTWewb sc-crXcEl jisdVx"
-      id="add-link"
+      class="sc-bczRLJ hDLBIv sc-ksZaOG UTWGT"
     >
-      ADD LINK
+      Support
     </h1>
-    <span
-      class="sc-fnykZs kIjAem"
+    <div
+      class="support__controls"
     >
-      <span
-        class="sc-kgflAQ daSGn"
+      <button
+        class="sc-idiyUo sooGH outer"
+        type="button"
       >
-        Failed to add link
-        <br />
-        Error creating link
+        <span
+          class="sc-hHLeRK eOuDcm"
+        >
+          Reload
+        </span>
+      </button>
+    </div>
+    <div
+      class="sc-evZas cgLOYZ support__body-skeleton"
+    >
+      <div
+        class="sc-breuTD cvMWpe"
+        style="margin-left: -0px;"
+      />
+    </div>
+    <div
+      class="sc-jqUVSM leXYdV"
+    >
+      <h1
+        class="sc-gsnTZi cTWewb sc-crXcEl jisdVx"
+        id="add-link"
+      >
+        ADD LINK
+      </h1>
+      <span
+        class="sc-fnykZs kIjAem"
+      >
+        <span
+          class="sc-kgflAQ daSGn"
+        >
+          Failed to add link
+          <br />
+          Error creating link
+        </span>
       </span>
-    </span>
-    <div>
-      SUPPORT_FORM
+      <div>
+        SUPPORT_FORM
+      </div>
     </div>
   </div>
 </div>
@@ -169,55 +189,60 @@ exports[`<Support /> should render correctly with admin and createLinkError 1`] 
 
 exports[`<Support /> should render correctly with admin and deleteLinkError 1`] = `
 <div>
-  <h1
-    class="sc-bczRLJ hDLBIv sc-ksZaOG UTWGT"
-  >
-    Support
-  </h1>
   <div
-    class="support__controls"
-  >
-    <button
-      class="sc-idiyUo sooGH outer"
-      type="button"
-    >
-      <span
-        class="sc-hHLeRK eOuDcm"
-      >
-        Reload
-      </span>
-    </button>
-  </div>
-  <div
-    class="sc-evZas cgLOYZ support__body-skeleton"
-  >
-    <div
-      class="sc-breuTD cvMWpe"
-      style="margin-left: -0px;"
-    />
-  </div>
-  <div
-    class="sc-jqUVSM leXYdV"
+    class="sc-fLlhyt fWbXiz page-containerstyles__StyledPageContainer-sc-19l7k4-0"
+    width="default"
   >
     <h1
-      class="sc-gsnTZi cTWewb sc-crXcEl jisdVx"
-      id="add-link"
+      class="sc-bczRLJ hDLBIv sc-ksZaOG UTWGT"
     >
-      ADD LINK
+      Support
     </h1>
-    <span
-      class="sc-fnykZs kIjAem"
+    <div
+      class="support__controls"
     >
-      <span
-        class="sc-kgflAQ daSGn"
+      <button
+        class="sc-idiyUo sooGH outer"
+        type="button"
       >
-        Failed to delete link
-        <br />
-        Error deleting link
+        <span
+          class="sc-hHLeRK eOuDcm"
+        >
+          Reload
+        </span>
+      </button>
+    </div>
+    <div
+      class="sc-evZas cgLOYZ support__body-skeleton"
+    >
+      <div
+        class="sc-breuTD cvMWpe"
+        style="margin-left: -0px;"
+      />
+    </div>
+    <div
+      class="sc-jqUVSM leXYdV"
+    >
+      <h1
+        class="sc-gsnTZi cTWewb sc-crXcEl jisdVx"
+        id="add-link"
+      >
+        ADD LINK
+      </h1>
+      <span
+        class="sc-fnykZs kIjAem"
+      >
+        <span
+          class="sc-kgflAQ daSGn"
+        >
+          Failed to delete link
+          <br />
+          Error deleting link
+        </span>
       </span>
-    </span>
-    <div>
-      SUPPORT_FORM
+      <div>
+        SUPPORT_FORM
+      </div>
     </div>
   </div>
 </div>
@@ -225,179 +250,194 @@ exports[`<Support /> should render correctly with admin and deleteLinkError 1`] 
 
 exports[`<Support /> should render correctly with initial state 1`] = `
 <div>
-  <h1
-    class="sc-bczRLJ hDLBIv sc-ksZaOG UTWGT"
-  >
-    Support
-  </h1>
   <div
-    class="support__controls"
+    class="sc-fLlhyt fWbXiz page-containerstyles__StyledPageContainer-sc-19l7k4-0"
+    width="default"
   >
-    <button
-      class="sc-idiyUo sooGH outer"
-      type="button"
+    <h1
+      class="sc-bczRLJ hDLBIv sc-ksZaOG UTWGT"
     >
-      <span
-        class="sc-hHLeRK eOuDcm"
-      >
-        Reload
-      </span>
-    </button>
-  </div>
-  <div
-    class="sc-evZas cgLOYZ support__body-skeleton"
-  >
+      Support
+    </h1>
     <div
-      class="sc-breuTD cvMWpe"
-      style="margin-left: -0px;"
-    />
+      class="support__controls"
+    >
+      <button
+        class="sc-idiyUo sooGH outer"
+        type="button"
+      >
+        <span
+          class="sc-hHLeRK eOuDcm"
+        >
+          Reload
+        </span>
+      </button>
+    </div>
+    <div
+      class="sc-evZas cgLOYZ support__body-skeleton"
+    >
+      <div
+        class="sc-breuTD cvMWpe"
+        style="margin-left: -0px;"
+      />
+    </div>
   </div>
 </div>
 `;
 
 exports[`<Support /> should render correctly with links 1`] = `
 <div>
-  <h1
-    class="sc-bczRLJ hDLBIv sc-ksZaOG UTWGT"
-  >
-    Support
-  </h1>
   <div
-    class="support__controls"
+    class="sc-fLlhyt fWbXiz page-containerstyles__StyledPageContainer-sc-19l7k4-0"
+    width="default"
   >
-    <button
-      class="sc-idiyUo sooGH outer"
-      type="button"
+    <h1
+      class="sc-bczRLJ hDLBIv sc-ksZaOG UTWGT"
     >
+      Support
+    </h1>
+    <div
+      class="support__controls"
+    >
+      <button
+        class="sc-idiyUo sooGH outer"
+        type="button"
+      >
+        <span
+          class="sc-hHLeRK eOuDcm"
+        >
+          Reload
+        </span>
+      </button>
+    </div>
+    <div
+      class="sc-jqUVSM leXYdV"
+    >
+      <h1
+        class="sc-dkzDqf ddFalQ sc-crXcEl ioFrJl"
+        id="name-1"
+      >
+        name 1
+      </h1>
       <span
-        class="sc-hHLeRK eOuDcm"
+        class="sc-fnykZs kIjAem support-link__link"
       >
-        Reload
+        <a
+          aria-label="URL_1 (opens in a new tab)"
+          class="sc-iBkjds kXOvCG"
+          href="URL_1"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          URL_1
+          <div
+            class="sc-ftvSup kUuEWK"
+          >
+            <svg
+              class="sc-gKXOVf ktoyia sc-papXJ fmVkXn"
+              height="18"
+              viewBox="0 0 24 24"
+              width="18"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M12.5 11.3c.4.4 1 .4 1.4 0L19 6.2V9c0 .6.4 1 1 1s1-.4 1-1V4c0-.6-.4-1-1-1h-5c-.6 0-1 .4-1 1s.4 1 1 1h2.4l-4.9 4.9c-.4.4-.4 1 0 1.4zM19 19c0 1.1-.9 2-2 2H5c-1.1 0-2-.9-2-2V7c0-1.1.9-2 2-2h7v2H5v12h12v-7h2"
+              />
+            </svg>
+          </div>
+        </a>
+        <br />
+        description 1
       </span>
-    </button>
-  </div>
-  <div
-    class="sc-jqUVSM leXYdV"
-  >
-    <h1
-      class="sc-dkzDqf ddFalQ sc-crXcEl ioFrJl"
-      id="name-1"
+    </div>
+    <div
+      class="sc-jqUVSM leXYdV"
     >
-      name 1
-    </h1>
-    <span
-      class="sc-fnykZs kIjAem support-link__link"
-    >
-      <a
-        aria-label="URL_1 (opens in a new tab)"
-        class="sc-iBkjds kXOvCG"
-        href="URL_1"
-        rel="noopener noreferrer"
-        target="_blank"
+      <h1
+        class="sc-dkzDqf ddFalQ sc-crXcEl ioFrJl"
+        id="name-2"
       >
-        URL_1
-        <div
-          class="sc-ftvSup kUuEWK"
-        >
-          <svg
-            class="sc-gKXOVf ktoyia sc-papXJ fmVkXn"
-            height="18"
-            viewBox="0 0 24 24"
-            width="18"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M12.5 11.3c.4.4 1 .4 1.4 0L19 6.2V9c0 .6.4 1 1 1s1-.4 1-1V4c0-.6-.4-1-1-1h-5c-.6 0-1 .4-1 1s.4 1 1 1h2.4l-4.9 4.9c-.4.4-.4 1 0 1.4zM19 19c0 1.1-.9 2-2 2H5c-1.1 0-2-.9-2-2V7c0-1.1.9-2 2-2h7v2H5v12h12v-7h2"
-            />
-          </svg>
-        </div>
-      </a>
-      <br />
-      description 1
-    </span>
-  </div>
-  <div
-    class="sc-jqUVSM leXYdV"
-  >
-    <h1
-      class="sc-dkzDqf ddFalQ sc-crXcEl ioFrJl"
-      id="name-2"
-    >
-      name 2
-    </h1>
-    <span
-      class="sc-fnykZs kIjAem support-link__link"
-    >
-      <a
-        aria-label="URL_2 (opens in a new tab)"
-        class="sc-iBkjds kXOvCG"
-        href="URL_2"
-        rel="noopener noreferrer"
-        target="_blank"
+        name 2
+      </h1>
+      <span
+        class="sc-fnykZs kIjAem support-link__link"
       >
-        URL_2
-        <div
-          class="sc-ftvSup kUuEWK"
+        <a
+          aria-label="URL_2 (opens in a new tab)"
+          class="sc-iBkjds kXOvCG"
+          href="URL_2"
+          rel="noopener noreferrer"
+          target="_blank"
         >
-          <svg
-            class="sc-gKXOVf ktoyia sc-papXJ fmVkXn"
-            height="18"
-            viewBox="0 0 24 24"
-            width="18"
-            xmlns="http://www.w3.org/2000/svg"
+          URL_2
+          <div
+            class="sc-ftvSup kUuEWK"
           >
-            <path
-              d="M12.5 11.3c.4.4 1 .4 1.4 0L19 6.2V9c0 .6.4 1 1 1s1-.4 1-1V4c0-.6-.4-1-1-1h-5c-.6 0-1 .4-1 1s.4 1 1 1h2.4l-4.9 4.9c-.4.4-.4 1 0 1.4zM19 19c0 1.1-.9 2-2 2H5c-1.1 0-2-.9-2-2V7c0-1.1.9-2 2-2h7v2H5v12h12v-7h2"
-            />
-          </svg>
-        </div>
-      </a>
-      <br />
-      description 2
-    </span>
+            <svg
+              class="sc-gKXOVf ktoyia sc-papXJ fmVkXn"
+              height="18"
+              viewBox="0 0 24 24"
+              width="18"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M12.5 11.3c.4.4 1 .4 1.4 0L19 6.2V9c0 .6.4 1 1 1s1-.4 1-1V4c0-.6-.4-1-1-1h-5c-.6 0-1 .4-1 1s.4 1 1 1h2.4l-4.9 4.9c-.4.4-.4 1 0 1.4zM19 19c0 1.1-.9 2-2 2H5c-1.1 0-2-.9-2-2V7c0-1.1.9-2 2-2h7v2H5v12h12v-7h2"
+              />
+            </svg>
+          </div>
+        </a>
+        <br />
+        description 2
+      </span>
+    </div>
   </div>
 </div>
 `;
 
 exports[`<Support /> should render correctly with loadError 1`] = `
 <div>
-  <h1
-    class="sc-bczRLJ hDLBIv sc-ksZaOG UTWGT"
-  >
-    Support
-  </h1>
   <div
-    class="support__controls"
+    class="sc-fLlhyt fWbXiz page-containerstyles__StyledPageContainer-sc-19l7k4-0"
+    width="default"
   >
-    <button
-      class="sc-idiyUo sooGH outer"
-      type="button"
+    <h1
+      class="sc-bczRLJ hDLBIv sc-ksZaOG UTWGT"
+    >
+      Support
+    </h1>
+    <div
+      class="support__controls"
+    >
+      <button
+        class="sc-idiyUo sooGH outer"
+        type="button"
+      >
+        <span
+          class="sc-hHLeRK eOuDcm"
+        >
+          Reload
+        </span>
+      </button>
+    </div>
+    <span
+      class="sc-fnykZs kIjAem"
     >
       <span
-        class="sc-hHLeRK eOuDcm"
+        class="sc-kgflAQ daSGn"
       >
-        Reload
+        The support session failed to load
+        <br />
+        some error message
       </span>
-    </button>
-  </div>
-  <span
-    class="sc-fnykZs kIjAem"
-  >
-    <span
-      class="sc-kgflAQ daSGn"
-    >
-      The support session failed to load
-      <br />
-      some error message
     </span>
-  </span>
-  <div
-    class="sc-evZas cgLOYZ support__body-skeleton"
-  >
     <div
-      class="sc-breuTD cvMWpe"
-      style="margin-left: -0px;"
-    />
+      class="sc-evZas cgLOYZ support__body-skeleton"
+    >
+      <div
+        class="sc-breuTD cvMWpe"
+        style="margin-left: -0px;"
+      />
+    </div>
   </div>
 </div>
 `;

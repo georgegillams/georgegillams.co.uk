@@ -3,7 +3,7 @@ import Section from '@george-gillams/components/section';
 import Subsection from '@george-gillams/components/subsection';
 import PageTitle from 'components/common/PageTitle';
 
-import PageContainer from '@george-gillams/components/page-container';
+import PageContainer from 'components/common/PageContainer';
 import EventPatch from '@george-gillams/components/event-patch';
 import ToughMudderPatch, { PATCH_TYPE as TM_PATCH_TYPE } from '@george-gillams/components/tough-mudder-patch';
 import SpartanMedal, { EVENT_TYPE as SPARTAN_EVENT_TYPE } from '@george-gillams/components/spartan-medal';

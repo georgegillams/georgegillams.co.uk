@@ -9,9 +9,10 @@ import backpackOfferingLight from './images/backpackOfferingLight.png';
 import darkMode from './images/darkMode.png';
 import brandLight from './images/brandLight.png';
 import brandDark from './images/brandDark.png';
+import PageContainer, { WIDTHS } from 'components/common/PageContainer';
 
 const WorkBackpack = () => (
-  <div>
+  <PageContainer width={WIDTHS.prose}>
     <PageTitle link={{ to: '/work', text: 'Work' }} name="Backpack">
       <Paragraph>
         <TextLink hrefExternal href="https://backpack.github.io/">
@@ -91,7 +92,7 @@ const WorkBackpack = () => (
         />
       </Subsection>
     </PageTitle>
-  </div>
+  </PageContainer>
 );
 
 export default WorkBackpack;

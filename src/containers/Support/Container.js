@@ -14,6 +14,7 @@ import Section from '@george-gillams/components/section';
 import SupportLink from './SupportLink';
 import Button from 'components/common/Button';
 import ErrorDisplay from 'components/common/ErrorDisplay';
+import PageContainer from 'components/common/PageContainer';
 
 const getClassName = cssModules(STYLES);
 
@@ -42,7 +43,7 @@ const Support = props => {
   const admin = !!(authenticatorState.user && authenticatorState.user.admin);
 
   return (
-    <>
+    <PageContainer bottomPadding>
       <DebugObject
         debugTitle="Support"
         debugObject={{
@@ -87,7 +88,7 @@ const Support = props => {
           )}
         </>
       </PageTitle>
-    </>
+    </PageContainer>
   );
 };
 

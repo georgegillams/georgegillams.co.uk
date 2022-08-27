@@ -3,20 +3,25 @@
 exports[`<BlogRenderer /> should render correctly - index 1`] = `
 <div>
   <div
-    class="sc-evZas cgLOYZ"
+    class="sc-bZnhIo hFJCgQ page-containerstyles__StyledPageContainer-sc-19l7k4-0"
+    width="prose"
   >
     <div
-      class="sc-breuTD cvMWpe"
-      style="margin-left: -0px;"
-    />
-  </div>
-  <div
-    class="sc-evZas cgLOYZ blog-renderer__body-skeleton"
-  >
+      class="sc-evZas fXZjtf"
+    >
+      <div
+        class="sc-breuTD cvMWpe"
+        style="margin-left: -0px;"
+      />
+    </div>
     <div
-      class="sc-breuTD cvMWpe"
-      style="margin-left: -0px;"
-    />
+      class="sc-evZas ctHunJ blog-rendererstyles__BodySkeleton-sc-15d9dvh-0 jSDQAJ"
+    >
+      <div
+        class="sc-breuTD cvMWpe"
+        style="margin-left: -0px;"
+      />
+    </div>
   </div>
   <div
     class="creative-commons__wrapper"
@@ -81,77 +86,82 @@ exports[`<BlogRenderer /> should render correctly - index 1`] = `
 exports[`<BlogRenderer /> should render correctly with blog 1`] = `
 <div>
   <div
-    class="sc-gXmSlM dApwEi"
-  >
-    <a
-      class="sc-iBkjds kXOvCG"
-      href="/blogs"
-    >
-      ⇠ Blogs
-    </a>
-  </div>
-  <h1
-    class="sc-bczRLJ hDLBIv sc-himrzO kwTTFi"
-  >
-    St. Ives ⛵ 2018
-  </h1>
-  <div
-    class="blog-renderer__date"
-  >
-    <span
-      class="sc-eCYdqJ iiRHQc sc-ksZaOG fwWbSc"
-    >
-      Published 
-      TEST_DATE
-    </span>
-  </div>
-  <div
-    class="blog-renderer__tag-list"
+    class="sc-bZnhIo hFJCgQ page-containerstyles__StyledPageContainer-sc-19l7k4-0"
+    width="prose"
   >
     <div
-      class="sc-cCsOjp blog-renderer__tag"
+      class="sc-gXmSlM dApwEi"
+    >
+      <a
+        class="sc-iBkjds kXOvCG"
+        href="/blogs"
+      >
+        ⇠ Blogs
+      </a>
+    </div>
+    <h1
+      class="sc-bczRLJ hDLBIv sc-himrzO kwTTFi"
+    >
+      St. Ives ⛵ 2018
+    </h1>
+    <div
+      class="blog-rendererstyles__DateContainer-sc-15d9dvh-1 cQmHrf"
     >
       <span
-        class="sc-ciZhAO hlaqTL"
-        type="travel"
+        class="sc-eCYdqJ iiRHQc sc-ksZaOG fwWbSc"
       >
-        Travel
+        Published 
+        TEST_DATE
       </span>
     </div>
-  </div>
-  <div
-    class="sc-bZkfAO fPxBCj"
-  >
-    <span
-      class="sc-gicCDI prKpa sc-kLLXSd bGXPbi markdown-renderer__element"
+    <div
+      class="blog-rendererstyles__TagList-sc-15d9dvh-2 jWtyvq"
     >
-      Some content with 
-      <a
-        aria-label="a link (opens in a new tab)"
-        class="sc-iBkjds kXOvCG"
-        href="https://duckduckgo.com/"
-        rel="noopener noreferrer"
-        target="_blank"
+      <div
+        class="sc-cCsOjp"
       >
-        a link
-        <div
-          class="sc-ftvSup kUuEWK"
+        <span
+          class="sc-ciZhAO hlaqTL"
+          type="travel"
         >
-          <svg
-            class="sc-gKXOVf ktoyia sc-papXJ fmVkXn"
-            height="18"
-            viewBox="0 0 24 24"
-            width="18"
-            xmlns="http://www.w3.org/2000/svg"
+          Travel
+        </span>
+      </div>
+    </div>
+    <div
+      class="sc-bZkfAO fPxBCj"
+    >
+      <span
+        class="sc-gicCDI prKpa sc-kLLXSd bGXPbi markdown-renderer__element"
+      >
+        Some content with 
+        <a
+          aria-label="a link (opens in a new tab)"
+          class="sc-iBkjds kXOvCG"
+          href="https://duckduckgo.com/"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          a link
+          <div
+            class="sc-ftvSup kUuEWK"
           >
-            <path
-              d="M12.5 11.3c.4.4 1 .4 1.4 0L19 6.2V9c0 .6.4 1 1 1s1-.4 1-1V4c0-.6-.4-1-1-1h-5c-.6 0-1 .4-1 1s.4 1 1 1h2.4l-4.9 4.9c-.4.4-.4 1 0 1.4zM19 19c0 1.1-.9 2-2 2H5c-1.1 0-2-.9-2-2V7c0-1.1.9-2 2-2h7v2H5v12h12v-7h2"
-            />
-          </svg>
-        </div>
-      </a>
-      <br />
-    </span>
+            <svg
+              class="sc-gKXOVf ktoyia sc-papXJ fmVkXn"
+              height="18"
+              viewBox="0 0 24 24"
+              width="18"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M12.5 11.3c.4.4 1 .4 1.4 0L19 6.2V9c0 .6.4 1 1 1s1-.4 1-1V4c0-.6-.4-1-1-1h-5c-.6 0-1 .4-1 1s.4 1 1 1h2.4l-4.9 4.9c-.4.4-.4 1 0 1.4zM19 19c0 1.1-.9 2-2 2H5c-1.1 0-2-.9-2-2V7c0-1.1.9-2 2-2h7v2H5v12h12v-7h2"
+              />
+            </svg>
+          </div>
+        </a>
+        <br />
+      </span>
+    </div>
   </div>
   <div
     class="creative-commons__wrapper"
@@ -216,89 +226,94 @@ exports[`<BlogRenderer /> should render correctly with blog 1`] = `
 exports[`<BlogRenderer /> should render correctly with blog and admin 1`] = `
 <div>
   <div
-    class="sc-gXmSlM dApwEi"
-  >
-    <a
-      class="sc-iBkjds kXOvCG"
-      href="/blogs"
-    >
-      ⇠ Blogs
-    </a>
-  </div>
-  <h1
-    class="sc-bczRLJ hDLBIv sc-himrzO kwTTFi"
-  >
-    St. Ives ⛵ 2018
-  </h1>
-  <div
-    class="blog-renderer__date"
-  >
-    <span
-      class="sc-eCYdqJ iiRHQc sc-ksZaOG fwWbSc"
-    >
-      Published 
-      TEST_DATE
-    </span>
-  </div>
-  <div
-    class="blog-renderer__tag-list"
+    class="sc-bZnhIo hFJCgQ page-containerstyles__StyledPageContainer-sc-19l7k4-0"
+    width="prose"
   >
     <div
-      class="sc-cCsOjp blog-renderer__tag"
+      class="sc-gXmSlM dApwEi"
+    >
+      <a
+        class="sc-iBkjds kXOvCG"
+        href="/blogs"
+      >
+        ⇠ Blogs
+      </a>
+    </div>
+    <h1
+      class="sc-bczRLJ hDLBIv sc-himrzO kwTTFi"
+    >
+      St. Ives ⛵ 2018
+    </h1>
+    <div
+      class="blog-rendererstyles__DateContainer-sc-15d9dvh-1 cQmHrf"
     >
       <span
-        class="sc-ciZhAO hlaqTL"
-        type="travel"
+        class="sc-eCYdqJ iiRHQc sc-ksZaOG fwWbSc"
       >
-        Travel
+        Published 
+        TEST_DATE
       </span>
     </div>
-  </div>
-  <div
-    class="sc-bZkfAO fPxBCj"
-  >
-    <span
-      class="sc-gicCDI prKpa sc-kLLXSd bGXPbi markdown-renderer__element"
+    <div
+      class="blog-rendererstyles__TagList-sc-15d9dvh-2 jWtyvq"
     >
-      Some content with 
-      <a
-        aria-label="a link (opens in a new tab)"
-        class="sc-iBkjds kXOvCG"
-        href="https://duckduckgo.com/"
-        rel="noopener noreferrer"
-        target="_blank"
+      <div
+        class="sc-cCsOjp"
       >
-        a link
-        <div
-          class="sc-ftvSup kUuEWK"
+        <span
+          class="sc-ciZhAO hlaqTL"
+          type="travel"
         >
-          <svg
-            class="sc-gKXOVf ktoyia sc-papXJ fmVkXn"
-            height="18"
-            viewBox="0 0 24 24"
-            width="18"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M12.5 11.3c.4.4 1 .4 1.4 0L19 6.2V9c0 .6.4 1 1 1s1-.4 1-1V4c0-.6-.4-1-1-1h-5c-.6 0-1 .4-1 1s.4 1 1 1h2.4l-4.9 4.9c-.4.4-.4 1 0 1.4zM19 19c0 1.1-.9 2-2 2H5c-1.1 0-2-.9-2-2V7c0-1.1.9-2 2-2h7v2H5v12h12v-7h2"
-            />
-          </svg>
-        </div>
-      </a>
-      <br />
-    </span>
-  </div>
-  <div
-    class="sc-jqUVSM leXYdV"
-  >
-    <h1
-      class="sc-gsnTZi cTWewb sc-crXcEl jisdVx"
-      id="edit-blog"
+          Travel
+        </span>
+      </div>
+    </div>
+    <div
+      class="sc-bZkfAO fPxBCj"
     >
-      EDIT BLOG
-    </h1>
-    <div>
-      BLOG_FORM
+      <span
+        class="sc-gicCDI prKpa sc-kLLXSd bGXPbi markdown-renderer__element"
+      >
+        Some content with 
+        <a
+          aria-label="a link (opens in a new tab)"
+          class="sc-iBkjds kXOvCG"
+          href="https://duckduckgo.com/"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          a link
+          <div
+            class="sc-ftvSup kUuEWK"
+          >
+            <svg
+              class="sc-gKXOVf ktoyia sc-papXJ fmVkXn"
+              height="18"
+              viewBox="0 0 24 24"
+              width="18"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M12.5 11.3c.4.4 1 .4 1.4 0L19 6.2V9c0 .6.4 1 1 1s1-.4 1-1V4c0-.6-.4-1-1-1h-5c-.6 0-1 .4-1 1s.4 1 1 1h2.4l-4.9 4.9c-.4.4-.4 1 0 1.4zM19 19c0 1.1-.9 2-2 2H5c-1.1 0-2-.9-2-2V7c0-1.1.9-2 2-2h7v2H5v12h12v-7h2"
+              />
+            </svg>
+          </div>
+        </a>
+        <br />
+      </span>
+    </div>
+    <div
+      class="sc-jqUVSM leXYdV"
+    >
+      <h1
+        class="sc-gsnTZi cTWewb sc-crXcEl jisdVx"
+        id="edit-blog"
+      >
+        EDIT BLOG
+      </h1>
+      <div>
+        BLOG_FORM
+      </div>
     </div>
   </div>
   <div
@@ -363,42 +378,47 @@ exports[`<BlogRenderer /> should render correctly with blog and admin 1`] = `
 
 exports[`<BlogRenderer /> should render correctly with blog load error 1`] = `
 <div>
-  <span
-    class="sc-gicCDI prKpa"
+  <div
+    class="sc-bZnhIo hFJCgQ page-containerstyles__StyledPageContainer-sc-19l7k4-0"
+    width="prose"
   >
     <span
-      class="sc-jdAMXn kbXSpd"
+      class="sc-gicCDI prKpa"
     >
-      This blog couldn't be loaded
-      <br />
-      Some error
+      <span
+        class="sc-jdAMXn kbXSpd"
+      >
+        This blog couldn't be loaded
+        <br />
+        Some error
+      </span>
     </span>
-  </span>
-  <div
-    class="sc-evZas cgLOYZ"
-  >
     <div
-      class="sc-breuTD cvMWpe"
-      style="margin-left: -0px;"
-    />
-  </div>
-  <div
-    class="sc-evZas cgLOYZ blog-renderer__body-skeleton"
-  >
-    <div
-      class="sc-breuTD cvMWpe"
-      style="margin-left: -0px;"
-    />
-  </div>
-  <div
-    class="sc-jqUVSM leXYdV"
-  >
-    <h1
-      class="sc-dkzDqf ddFalQ sc-crXcEl hldXbV"
-      id="this-is-taking-a-while.-maybe-something-isn't-quite-right..."
+      class="sc-evZas fXZjtf"
     >
-      This is taking a while. Maybe something isn't quite right...
-    </h1>
+      <div
+        class="sc-breuTD cvMWpe"
+        style="margin-left: -0px;"
+      />
+    </div>
+    <div
+      class="sc-evZas ctHunJ blog-rendererstyles__BodySkeleton-sc-15d9dvh-0 jSDQAJ"
+    >
+      <div
+        class="sc-breuTD cvMWpe"
+        style="margin-left: -0px;"
+      />
+    </div>
+    <div
+      class="sc-jqUVSM leXYdV"
+    >
+      <h1
+        class="sc-dkzDqf ddFalQ sc-crXcEl hldXbV"
+        id="this-is-taking-a-while.-maybe-something-isn't-quite-right..."
+      >
+        This is taking a while. Maybe something isn't quite right...
+      </h1>
+    </div>
   </div>
   <div
     class="creative-commons__wrapper"
@@ -463,20 +483,25 @@ exports[`<BlogRenderer /> should render correctly with blog load error 1`] = `
 exports[`<BlogRenderer /> should render correctly with initial state 1`] = `
 <div>
   <div
-    class="sc-evZas cgLOYZ"
+    class="sc-bZnhIo hFJCgQ page-containerstyles__StyledPageContainer-sc-19l7k4-0"
+    width="prose"
   >
     <div
-      class="sc-breuTD cvMWpe"
-      style="margin-left: -0px;"
-    />
-  </div>
-  <div
-    class="sc-evZas cgLOYZ blog-renderer__body-skeleton"
-  >
+      class="sc-evZas fXZjtf"
+    >
+      <div
+        class="sc-breuTD cvMWpe"
+        style="margin-left: -0px;"
+      />
+    </div>
     <div
-      class="sc-breuTD cvMWpe"
-      style="margin-left: -0px;"
-    />
+      class="sc-evZas ctHunJ blog-rendererstyles__BodySkeleton-sc-15d9dvh-0 jSDQAJ"
+    >
+      <div
+        class="sc-breuTD cvMWpe"
+        style="margin-left: -0px;"
+      />
+    </div>
   </div>
   <div
     class="creative-commons__wrapper"
@@ -541,77 +566,82 @@ exports[`<BlogRenderer /> should render correctly with initial state 1`] = `
 exports[`<BlogRenderer /> should render correctly with ssrBlog 1`] = `
 <div>
   <div
-    class="sc-gXmSlM dApwEi"
-  >
-    <a
-      class="sc-iBkjds kXOvCG"
-      href="/blogs"
-    >
-      ⇠ Blogs
-    </a>
-  </div>
-  <h1
-    class="sc-bczRLJ hDLBIv sc-himrzO kwTTFi"
-  >
-    St. Ives ⛵ 2018
-  </h1>
-  <div
-    class="blog-renderer__date"
-  >
-    <span
-      class="sc-eCYdqJ iiRHQc sc-ksZaOG fwWbSc"
-    >
-      Published 
-      TEST_DATE
-    </span>
-  </div>
-  <div
-    class="blog-renderer__tag-list"
+    class="sc-bZnhIo hFJCgQ page-containerstyles__StyledPageContainer-sc-19l7k4-0"
+    width="prose"
   >
     <div
-      class="sc-cCsOjp blog-renderer__tag"
+      class="sc-gXmSlM dApwEi"
+    >
+      <a
+        class="sc-iBkjds kXOvCG"
+        href="/blogs"
+      >
+        ⇠ Blogs
+      </a>
+    </div>
+    <h1
+      class="sc-bczRLJ hDLBIv sc-himrzO kwTTFi"
+    >
+      St. Ives ⛵ 2018
+    </h1>
+    <div
+      class="blog-rendererstyles__DateContainer-sc-15d9dvh-1 cQmHrf"
     >
       <span
-        class="sc-ciZhAO hlaqTL"
-        type="travel"
+        class="sc-eCYdqJ iiRHQc sc-ksZaOG fwWbSc"
       >
-        Travel
+        Published 
+        TEST_DATE
       </span>
     </div>
-  </div>
-  <div
-    class="sc-bZkfAO fPxBCj"
-  >
-    <span
-      class="sc-gicCDI prKpa sc-kLLXSd bGXPbi markdown-renderer__element"
+    <div
+      class="blog-rendererstyles__TagList-sc-15d9dvh-2 jWtyvq"
     >
-      Some content with 
-      <a
-        aria-label="a link (opens in a new tab)"
-        class="sc-iBkjds kXOvCG"
-        href="https://duckduckgo.com/"
-        rel="noopener noreferrer"
-        target="_blank"
+      <div
+        class="sc-cCsOjp"
       >
-        a link
-        <div
-          class="sc-ftvSup kUuEWK"
+        <span
+          class="sc-ciZhAO hlaqTL"
+          type="travel"
         >
-          <svg
-            class="sc-gKXOVf ktoyia sc-papXJ fmVkXn"
-            height="18"
-            viewBox="0 0 24 24"
-            width="18"
-            xmlns="http://www.w3.org/2000/svg"
+          Travel
+        </span>
+      </div>
+    </div>
+    <div
+      class="sc-bZkfAO fPxBCj"
+    >
+      <span
+        class="sc-gicCDI prKpa sc-kLLXSd bGXPbi markdown-renderer__element"
+      >
+        Some content with 
+        <a
+          aria-label="a link (opens in a new tab)"
+          class="sc-iBkjds kXOvCG"
+          href="https://duckduckgo.com/"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          a link
+          <div
+            class="sc-ftvSup kUuEWK"
           >
-            <path
-              d="M12.5 11.3c.4.4 1 .4 1.4 0L19 6.2V9c0 .6.4 1 1 1s1-.4 1-1V4c0-.6-.4-1-1-1h-5c-.6 0-1 .4-1 1s.4 1 1 1h2.4l-4.9 4.9c-.4.4-.4 1 0 1.4zM19 19c0 1.1-.9 2-2 2H5c-1.1 0-2-.9-2-2V7c0-1.1.9-2 2-2h7v2H5v12h12v-7h2"
-            />
-          </svg>
-        </div>
-      </a>
-      <br />
-    </span>
+            <svg
+              class="sc-gKXOVf ktoyia sc-papXJ fmVkXn"
+              height="18"
+              viewBox="0 0 24 24"
+              width="18"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M12.5 11.3c.4.4 1 .4 1.4 0L19 6.2V9c0 .6.4 1 1 1s1-.4 1-1V4c0-.6-.4-1-1-1h-5c-.6 0-1 .4-1 1s.4 1 1 1h2.4l-4.9 4.9c-.4.4-.4 1 0 1.4zM19 19c0 1.1-.9 2-2 2H5c-1.1 0-2-.9-2-2V7c0-1.1.9-2 2-2h7v2H5v12h12v-7h2"
+              />
+            </svg>
+          </div>
+        </a>
+        <br />
+      </span>
+    </div>
   </div>
   <div
     class="creative-commons__wrapper"

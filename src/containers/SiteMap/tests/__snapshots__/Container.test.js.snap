@@ -2,3625 +2,3650 @@
 
 exports[`<SiteMap /> should render correctly - index 1`] = `
 <div>
-  <h1
-    class="sc-bczRLJ hDLBIv sc-hAZoDl cDlBMk"
-  >
-    Site map
-  </h1>
   <div
-    class="sc-jqUVSM leXYdV site-map__section"
+    class="sc-fEOsli kRThfC page-containerstyles__StyledPageContainer-sc-19l7k4-0"
+    width="default"
   >
     <h1
-      class="sc-dkzDqf ddFalQ sc-crXcEl ioFrJl"
-      id="blog-📝"
+      class="sc-bczRLJ hDLBIv sc-hAZoDl cDlBMk"
     >
-      Blog 📝
+      Site map
     </h1>
-    <span
-      class="sc-evZas FCsLq"
+    <div
+      class="sc-jqUVSM leXYdV site-map__section"
     >
-      <a
-        class="sc-iBkjds kXOvCG"
-        href="/blog"
+      <h1
+        class="sc-dkzDqf ddFalQ sc-crXcEl ioFrJl"
+        id="blog-📝"
       >
-        Blog list
-      </a>
-      <br />
-      <div
-        class="sc-breuTD hTzYZA"
+        Blog 📝
+      </h1>
+      <span
+        class="sc-evZas FCsLq"
       >
-        <div
-          class="sc-ksZaOG fakLGB"
-          style="margin-left: -0px;"
-        />
-      </div>
-      <div
-        class="sc-breuTD hTzYZA"
-      >
-        <div
-          class="sc-ksZaOG fakLGB"
-          style="margin-left: -0px;"
-        />
-      </div>
-      <div
-        class="sc-breuTD hTzYZA"
-      >
-        <div
-          class="sc-ksZaOG fakLGB"
-          style="margin-left: -0px;"
-        />
-      </div>
-      <div
-        class="sc-breuTD hTzYZA"
-      >
-        <div
-          class="sc-ksZaOG fakLGB"
-          style="margin-left: -0px;"
-        />
-      </div>
-      <div
-        class="sc-breuTD hTzYZA"
-      >
-        <div
-          class="sc-ksZaOG fakLGB"
-          style="margin-left: -0px;"
-        />
-      </div>
-      <div
-        class="sc-breuTD hTzYZA"
-      >
-        <div
-          class="sc-ksZaOG fakLGB"
-          style="margin-left: -0px;"
-        />
-      </div>
-    </span>
-  </div>
-  <div
-    class="sc-jqUVSM leXYdV site-map__section"
-  >
-    <h1
-      class="sc-dkzDqf ddFalQ sc-crXcEl ioFrJl"
-      id="photography-📷"
-    >
-      Photography 📷
-    </h1>
-    <span
-      class="sc-evZas FCsLq"
-    >
-      <a
-        class="sc-iBkjds kXOvCG"
-        href="/photography"
-      >
-        Photography
-      </a>
-    </span>
-  </div>
-  <div
-    class="sc-jqUVSM leXYdV site-map__section"
-  >
-    <h1
-      class="sc-dkzDqf ddFalQ sc-crXcEl ioFrJl"
-      id="medals-🏅"
-    >
-      Medals 🏅
-    </h1>
-    <span
-      class="sc-evZas FCsLq"
-    >
-      <a
-        class="sc-iBkjds kXOvCG"
-        href="/medals"
-      >
-        Medals
-      </a>
-    </span>
-  </div>
-  <div
-    class="sc-jqUVSM leXYdV site-map__section"
-  >
-    <h1
-      class="sc-dkzDqf ddFalQ sc-crXcEl ioFrJl"
-      id="work-📱"
-    >
-      Work 📱
-    </h1>
-    <span
-      class="sc-evZas FCsLq"
-    >
-      <a
-        class="sc-iBkjds kXOvCG"
-        href="/work"
-      >
-        Overview
-      </a>
-      <br />
-      <a
-        class="sc-iBkjds kXOvCG"
-        href="/work/backpack"
-      >
-        Backpack
-      </a>
-      <br />
-      <a
-        class="sc-iBkjds kXOvCG"
-        href="/work/degree"
-      >
-        Degree
-      </a>
-      <br />
-      <a
-        class="sc-iBkjds kXOvCG"
-        href="/work/epicc"
-      >
-        EPICC
-      </a>
-    </span>
-  </div>
-  <div
-    class="sc-jqUVSM leXYdV site-map__section"
-  >
-    <h1
-      class="sc-dkzDqf ddFalQ sc-crXcEl ioFrJl"
-      id="design-🎨"
-    >
-      Design 🎨
-    </h1>
-    <span
-      class="sc-evZas FCsLq"
-    >
-      <a
-        class="sc-iBkjds kXOvCG"
-        href="/privacy-policy"
-      >
-        Privacy Policy
-      </a>
-    </span>
-  </div>
-  <div
-    class="sc-jqUVSM leXYdV site-map__section"
-  >
-    <h1
-      class="sc-dkzDqf ddFalQ sc-crXcEl ioFrJl"
-      id="other-stuff-🤷‍♂️"
-    >
-      Other stuff 🤷‍♂️
-    </h1>
-    <span
-      class="sc-evZas FCsLq"
-    >
-      <a
-        class="sc-iBkjds kXOvCG"
-        href="/contact"
-      >
-        Contact
-      </a>
-      <br />
-      <a
-        class="sc-iBkjds kXOvCG"
-        href="/support"
-      >
-        Support
-      </a>
-      <br />
-      <a
-        class="sc-iBkjds kXOvCG"
-        href="/debug"
-      >
-        Debug tools
-      </a>
-      <br />
-      <a
-        class="sc-iBkjds kXOvCG"
-        href="/status"
-      >
-        Status
-      </a>
-    </span>
-  </div>
-  <div
-    class="sc-jqUVSM leXYdV site-map__section"
-  >
-    <h1
-      class="sc-dkzDqf ddFalQ sc-crXcEl ioFrJl"
-      id="random-🐉"
-    >
-      Random 🐉
-    </h1>
-    <span
-      class="sc-evZas FCsLq"
-    >
-      <a
-        aria-label="Robots.txt (opens in a new tab)"
-        class="sc-iBkjds kXOvCG"
-        href="/robots.txt"
-        rel="noopener noreferrer"
-        target="_blank"
-      >
-        Robots.txt
-        <div
-          class="sc-ftvSup kUuEWK"
+        <a
+          class="sc-iBkjds kXOvCG"
+          href="/blog"
         >
-          <svg
-            class="sc-gKXOVf ktoyia sc-papXJ fmVkXn"
-            height="18"
-            viewBox="0 0 24 24"
-            width="18"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M12.5 11.3c.4.4 1 .4 1.4 0L19 6.2V9c0 .6.4 1 1 1s1-.4 1-1V4c0-.6-.4-1-1-1h-5c-.6 0-1 .4-1 1s.4 1 1 1h2.4l-4.9 4.9c-.4.4-.4 1 0 1.4zM19 19c0 1.1-.9 2-2 2H5c-1.1 0-2-.9-2-2V7c0-1.1.9-2 2-2h7v2H5v12h12v-7h2"
-            />
-          </svg>
+          Blog list
+        </a>
+        <br />
+        <div
+          class="sc-breuTD hTzYZA"
+        >
+          <div
+            class="sc-ksZaOG fakLGB"
+            style="margin-left: -0px;"
+          />
         </div>
-      </a>
-      <br />
-      <a
-        aria-label="SiteMap.xml (opens in a new tab)"
-        class="sc-iBkjds kXOvCG"
-        href="/sitemap.xml"
-        rel="noopener noreferrer"
-        target="_blank"
-      >
-        SiteMap.xml
         <div
-          class="sc-ftvSup kUuEWK"
+          class="sc-breuTD hTzYZA"
         >
-          <svg
-            class="sc-gKXOVf ktoyia sc-papXJ fmVkXn"
-            height="18"
-            viewBox="0 0 24 24"
-            width="18"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M12.5 11.3c.4.4 1 .4 1.4 0L19 6.2V9c0 .6.4 1 1 1s1-.4 1-1V4c0-.6-.4-1-1-1h-5c-.6 0-1 .4-1 1s.4 1 1 1h2.4l-4.9 4.9c-.4.4-.4 1 0 1.4zM19 19c0 1.1-.9 2-2 2H5c-1.1 0-2-.9-2-2V7c0-1.1.9-2 2-2h7v2H5v12h12v-7h2"
-            />
-          </svg>
+          <div
+            class="sc-ksZaOG fakLGB"
+            style="margin-left: -0px;"
+          />
         </div>
-      </a>
-      <br />
-      <a
-        class="sc-iBkjds kXOvCG"
-        href="/404"
-      >
-        404 error page - not found
-      </a>
-      <br />
-      <a
-        class="sc-iBkjds kXOvCG"
-        href="/teapot"
-      >
-        418 error page - I'm a teapot
-      </a>
-    </span>
-  </div>
-  <div
-    class="sc-jqUVSM leXYdV site-map__section"
-  >
-    <h1
-      class="sc-dkzDqf ddFalQ sc-crXcEl ioFrJl"
-      id="api"
+        <div
+          class="sc-breuTD hTzYZA"
+        >
+          <div
+            class="sc-ksZaOG fakLGB"
+            style="margin-left: -0px;"
+          />
+        </div>
+        <div
+          class="sc-breuTD hTzYZA"
+        >
+          <div
+            class="sc-ksZaOG fakLGB"
+            style="margin-left: -0px;"
+          />
+        </div>
+        <div
+          class="sc-breuTD hTzYZA"
+        >
+          <div
+            class="sc-ksZaOG fakLGB"
+            style="margin-left: -0px;"
+          />
+        </div>
+        <div
+          class="sc-breuTD hTzYZA"
+        >
+          <div
+            class="sc-ksZaOG fakLGB"
+            style="margin-left: -0px;"
+          />
+        </div>
+      </span>
+    </div>
+    <div
+      class="sc-jqUVSM leXYdV site-map__section"
     >
-      API
-    </h1>
-    <span
-      class="sc-evZas FCsLq"
+      <h1
+        class="sc-dkzDqf ddFalQ sc-crXcEl ioFrJl"
+        id="photography-📷"
+      >
+        Photography 📷
+      </h1>
+      <span
+        class="sc-evZas FCsLq"
+      >
+        <a
+          class="sc-iBkjds kXOvCG"
+          href="/photography"
+        >
+          Photography
+        </a>
+      </span>
+    </div>
+    <div
+      class="sc-jqUVSM leXYdV site-map__section"
     >
-      <a
-        class="sc-iBkjds kXOvCG"
-        href="/api-docs"
+      <h1
+        class="sc-dkzDqf ddFalQ sc-crXcEl ioFrJl"
+        id="medals-🏅"
       >
-        API docs
-      </a>
-    </span>
-  </div>
-  <div
-    class="sc-jqUVSM leXYdV site-map__section"
-  >
-    <h1
-      class="sc-dkzDqf ddFalQ sc-crXcEl ioFrJl"
-      id="accounts-🔑"
+        Medals 🏅
+      </h1>
+      <span
+        class="sc-evZas FCsLq"
+      >
+        <a
+          class="sc-iBkjds kXOvCG"
+          href="/medals"
+        >
+          Medals
+        </a>
+      </span>
+    </div>
+    <div
+      class="sc-jqUVSM leXYdV site-map__section"
     >
-      Accounts 🔑
-    </h1>
-    <span
-      class="sc-evZas FCsLq"
+      <h1
+        class="sc-dkzDqf ddFalQ sc-crXcEl ioFrJl"
+        id="work-📱"
+      >
+        Work 📱
+      </h1>
+      <span
+        class="sc-evZas FCsLq"
+      >
+        <a
+          class="sc-iBkjds kXOvCG"
+          href="/work"
+        >
+          Overview
+        </a>
+        <br />
+        <a
+          class="sc-iBkjds kXOvCG"
+          href="/work/backpack"
+        >
+          Backpack
+        </a>
+        <br />
+        <a
+          class="sc-iBkjds kXOvCG"
+          href="/work/degree"
+        >
+          Degree
+        </a>
+        <br />
+        <a
+          class="sc-iBkjds kXOvCG"
+          href="/work/epicc"
+        >
+          EPICC
+        </a>
+      </span>
+    </div>
+    <div
+      class="sc-jqUVSM leXYdV site-map__section"
     >
-      <a
-        class="sc-iBkjds kXOvCG"
-        href="/account"
+      <h1
+        class="sc-dkzDqf ddFalQ sc-crXcEl ioFrJl"
+        id="design-🎨"
       >
-        Account
-      </a>
-      <br />
-      <a
-        class="sc-iBkjds kXOvCG"
-        href="/sign-up"
+        Design 🎨
+      </h1>
+      <span
+        class="sc-evZas FCsLq"
       >
-        Sign up
-      </a>
-      <br />
-      <a
-        class="sc-iBkjds kXOvCG"
-        href="/login"
-      >
-        Log in
-      </a>
-      <br />
-      <a
-        class="sc-iBkjds kXOvCG"
-        href="/email-verification"
-      >
-        Email verification
-      </a>
-      <br />
-      <a
-        class="sc-iBkjds kXOvCG"
-        href="/magic-login"
-      >
-        Magic login
-      </a>
-    </span>
-  </div>
-  <div
-    class="sc-jqUVSM leXYdV site-map__section"
-  >
-    <h1
-      class="sc-dkzDqf ddFalQ sc-crXcEl ioFrJl"
-      id="admin-👮‍♂️"
+        <a
+          class="sc-iBkjds kXOvCG"
+          href="/privacy-policy"
+        >
+          Privacy Policy
+        </a>
+      </span>
+    </div>
+    <div
+      class="sc-jqUVSM leXYdV site-map__section"
     >
-      Admin 👮‍♂️
-    </h1>
-    <span
-      class="sc-evZas FCsLq"
+      <h1
+        class="sc-dkzDqf ddFalQ sc-crXcEl ioFrJl"
+        id="other-stuff-🤷‍♂️"
+      >
+        Other stuff 🤷‍♂️
+      </h1>
+      <span
+        class="sc-evZas FCsLq"
+      >
+        <a
+          class="sc-iBkjds kXOvCG"
+          href="/contact"
+        >
+          Contact
+        </a>
+        <br />
+        <a
+          class="sc-iBkjds kXOvCG"
+          href="/support"
+        >
+          Support
+        </a>
+        <br />
+        <a
+          class="sc-iBkjds kXOvCG"
+          href="/debug"
+        >
+          Debug tools
+        </a>
+        <br />
+        <a
+          class="sc-iBkjds kXOvCG"
+          href="/status"
+        >
+          Status
+        </a>
+      </span>
+    </div>
+    <div
+      class="sc-jqUVSM leXYdV site-map__section"
     >
-      <a
-        class="sc-iBkjds kXOvCG"
-        href="/admin"
+      <h1
+        class="sc-dkzDqf ddFalQ sc-crXcEl ioFrJl"
+        id="random-🐉"
       >
-        Admin navigation
-      </a>
-      <br />
-      <a
-        class="sc-iBkjds kXOvCG"
-        href="/blog"
+        Random 🐉
+      </h1>
+      <span
+        class="sc-evZas FCsLq"
       >
-        Blogs
-      </a>
-      <br />
-      <a
-        class="sc-iBkjds kXOvCG"
-        href="/admin/analytics"
-      >
-        Analytics
-      </a>
-      <br />
-      <a
-        class="sc-iBkjds kXOvCG"
-        href="/admin/emails"
-      >
-        Emails
-      </a>
-      <br />
-      <a
-        class="sc-iBkjds kXOvCG"
-        href="/admin/notifications"
-      >
-        Notifications
-      </a>
-      <br />
-      <a
-        class="sc-iBkjds kXOvCG"
-        href="/admin/users"
-      >
-        Users
-      </a>
-    </span>
-  </div>
-  <div
-    class="sc-jqUVSM leXYdV site-map__section"
-  >
-    <h1
-      class="sc-dkzDqf ddFalQ sc-crXcEl ioFrJl"
-      id="redirects-👉"
+        <a
+          aria-label="Robots.txt (opens in a new tab)"
+          class="sc-iBkjds kXOvCG"
+          href="/robots.txt"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          Robots.txt
+          <div
+            class="sc-ftvSup kUuEWK"
+          >
+            <svg
+              class="sc-gKXOVf ktoyia sc-papXJ fmVkXn"
+              height="18"
+              viewBox="0 0 24 24"
+              width="18"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M12.5 11.3c.4.4 1 .4 1.4 0L19 6.2V9c0 .6.4 1 1 1s1-.4 1-1V4c0-.6-.4-1-1-1h-5c-.6 0-1 .4-1 1s.4 1 1 1h2.4l-4.9 4.9c-.4.4-.4 1 0 1.4zM19 19c0 1.1-.9 2-2 2H5c-1.1 0-2-.9-2-2V7c0-1.1.9-2 2-2h7v2H5v12h12v-7h2"
+              />
+            </svg>
+          </div>
+        </a>
+        <br />
+        <a
+          aria-label="SiteMap.xml (opens in a new tab)"
+          class="sc-iBkjds kXOvCG"
+          href="/sitemap.xml"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          SiteMap.xml
+          <div
+            class="sc-ftvSup kUuEWK"
+          >
+            <svg
+              class="sc-gKXOVf ktoyia sc-papXJ fmVkXn"
+              height="18"
+              viewBox="0 0 24 24"
+              width="18"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M12.5 11.3c.4.4 1 .4 1.4 0L19 6.2V9c0 .6.4 1 1 1s1-.4 1-1V4c0-.6-.4-1-1-1h-5c-.6 0-1 .4-1 1s.4 1 1 1h2.4l-4.9 4.9c-.4.4-.4 1 0 1.4zM19 19c0 1.1-.9 2-2 2H5c-1.1 0-2-.9-2-2V7c0-1.1.9-2 2-2h7v2H5v12h12v-7h2"
+              />
+            </svg>
+          </div>
+        </a>
+        <br />
+        <a
+          class="sc-iBkjds kXOvCG"
+          href="/404"
+        >
+          404 error page - not found
+        </a>
+        <br />
+        <a
+          class="sc-iBkjds kXOvCG"
+          href="/teapot"
+        >
+          418 error page - I'm a teapot
+        </a>
+      </span>
+    </div>
+    <div
+      class="sc-jqUVSM leXYdV site-map__section"
     >
-      Redirects 👉
-    </h1>
-    <span
-      class="sc-evZas FCsLq"
+      <h1
+        class="sc-dkzDqf ddFalQ sc-crXcEl ioFrJl"
+        id="api"
+      >
+        API
+      </h1>
+      <span
+        class="sc-evZas FCsLq"
+      >
+        <a
+          class="sc-iBkjds kXOvCG"
+          href="/api-docs"
+        >
+          API docs
+        </a>
+      </span>
+    </div>
+    <div
+      class="sc-jqUVSM leXYdV site-map__section"
     >
-      <div>
+      <h1
+        class="sc-dkzDqf ddFalQ sc-crXcEl ioFrJl"
+        id="accounts-🔑"
+      >
+        Accounts 🔑
+      </h1>
+      <span
+        class="sc-evZas FCsLq"
+      >
         <a
           class="sc-iBkjds kXOvCG"
-          href="/codebase"
+          href="/account"
         >
-          /codebase ⇒ https://github.com/georgegillams/georgegillams.co.uk
+          Account
         </a>
         <br />
-      </div>
-      <div>
         <a
           class="sc-iBkjds kXOvCG"
-          href="/copyright"
+          href="/sign-up"
         >
-          /copyright ⇒ https://creativecommons.org/licenses/by-sa/3.0/
+          Sign up
         </a>
         <br />
-      </div>
-      <div>
         <a
           class="sc-iBkjds kXOvCG"
-          href="/flickr"
+          href="/login"
         >
-          /flickr ⇒ https://www.flickr.com/people/georgegillams
+          Log in
         </a>
         <br />
-      </div>
-      <div>
         <a
           class="sc-iBkjds kXOvCG"
-          href="/monzo"
+          href="/email-verification"
         >
-          /monzo ⇒ https://join.monzo.com/r/vjd3d74
+          Email verification
         </a>
         <br />
-      </div>
-      <div>
         <a
           class="sc-iBkjds kXOvCG"
-          href="/github"
+          href="/magic-login"
         >
-          /github ⇒ https://github.com/georgegillams
+          Magic login
         </a>
-        <br />
-      </div>
-      <div>
+      </span>
+    </div>
+    <div
+      class="sc-jqUVSM leXYdV site-map__section"
+    >
+      <h1
+        class="sc-dkzDqf ddFalQ sc-crXcEl ioFrJl"
+        id="admin-👮‍♂️"
+      >
+        Admin 👮‍♂️
+      </h1>
+      <span
+        class="sc-evZas FCsLq"
+      >
         <a
           class="sc-iBkjds kXOvCG"
-          href="/stackoverflow"
+          href="/admin"
         >
-          /stackoverflow ⇒ https://stackoverflow.com/users/14463713/georgegillams
+          Admin navigation
         </a>
         <br />
-      </div>
-      <div>
         <a
           class="sc-iBkjds kXOvCG"
-          href="/gurushots"
+          href="/blog"
         >
-          /gurushots ⇒ https://gurushots.com/georgegillams/photos
+          Blogs
         </a>
         <br />
-      </div>
-      <div>
         <a
           class="sc-iBkjds kXOvCG"
-          href="/unsplash"
+          href="/admin/analytics"
         >
-          /unsplash ⇒ https://unsplash.com/@georgegillams/
+          Analytics
         </a>
         <br />
-      </div>
-      <div>
         <a
           class="sc-iBkjds kXOvCG"
-          href="/strava"
+          href="/admin/emails"
         >
-          /strava ⇒ https://www.strava.com/athletes/7221483
+          Emails
         </a>
         <br />
-      </div>
-      <div>
         <a
           class="sc-iBkjds kXOvCG"
-          href="/linkedin"
+          href="/admin/notifications"
         >
-          /linkedin ⇒ https://www.linkedin.com/in/george-gillams-37537077
+          Notifications
         </a>
         <br />
-      </div>
-      <div>
         <a
           class="sc-iBkjds kXOvCG"
-          href="/twitter"
+          href="/admin/users"
         >
-          /twitter ⇒ https://twitter.com/georgegillams
+          Users
         </a>
-        <br />
-      </div>
-      <div>
-        <a
-          class="sc-iBkjds kXOvCG"
-          href="/wp-admin"
-        >
-          /wp-admin ⇒ /admin
-        </a>
-        <br />
-      </div>
-      <div>
-        <a
-          class="sc-iBkjds kXOvCG"
-          href="/about"
-        >
-          /about ⇒ /
-        </a>
-        <br />
-      </div>
-      <div>
-        <a
-          class="sc-iBkjds kXOvCG"
-          href="/site-map"
-        >
-          /site-map ⇒ /sitemap
-        </a>
-        <br />
-      </div>
-      <div>
-        <a
-          class="sc-iBkjds kXOvCG"
-          href="/about/degree"
-        >
-          /about/degree ⇒ /work/degree
-        </a>
-        <br />
-      </div>
-      <div>
-        <a
-          class="sc-iBkjds kXOvCG"
-          href="/articles/tough-mudder"
-        >
-          /articles/tough-mudder ⇒ /blog/tough-mudder
-        </a>
-        <br />
-      </div>
-      <div>
-        <a
-          class="sc-iBkjds kXOvCG"
-          href="/articles/net-neutrality"
-        >
-          /articles/net-neutrality ⇒ /blog/net-neutrality
-        </a>
-        <br />
-      </div>
-      <div>
-        <a
-          class="sc-iBkjds kXOvCG"
-          href="/articles/vim"
-        >
-          /articles/vim ⇒ /blog/vim
-        </a>
-        <br />
-      </div>
-      <div>
-        <a
-          class="sc-iBkjds kXOvCG"
-          href="/articles/list"
-        >
-          /articles/list ⇒ /blog
-        </a>
-        <br />
-      </div>
-      <div>
-        <a
-          class="sc-iBkjds kXOvCG"
-          href="/articles"
-        >
-          /articles ⇒ /blog
-        </a>
-        <br />
-      </div>
-      <div>
-        <a
-          class="sc-iBkjds kXOvCG"
-          href="/net-neutrality"
-        >
-          /net-neutrality ⇒ /blog/net-neutrality
-        </a>
-        <br />
-      </div>
-      <div>
-        <a
-          class="sc-iBkjds kXOvCG"
-          href="/work/side-projects"
-        >
-          /work/side-projects ⇒ /work
-        </a>
-        <br />
-      </div>
-      <div>
-        <a
-          class="sc-iBkjds kXOvCG"
-          href="/blog/view"
-        >
-          /blog/view ⇒ /blog
-        </a>
-        <br />
-      </div>
-      <div>
-        <a
-          class="sc-iBkjds kXOvCG"
-          href="/travel"
-        >
-          /travel ⇒ /blog
-        </a>
-        <br />
-      </div>
-      <div>
-        <a
-          class="sc-iBkjds kXOvCG"
-          href="/travel/list"
-        >
-          /travel/list ⇒ /blog
-        </a>
-        <br />
-      </div>
-      <div>
-        <a
-          class="sc-iBkjds kXOvCG"
-          href="/blog/view?id=tg5x7po9"
-        >
-          /blog/view?id=tg5x7po9 ⇒ /blog/tough-mudder
-        </a>
-        <br />
-      </div>
-      <div>
-        <a
-          class="sc-iBkjds kXOvCG"
-          href="/blog/view?id=lqngy"
-        >
-          /blog/view?id=lqngy ⇒ /blog/lightroom-workflow
-        </a>
-        <br />
-      </div>
-      <div>
-        <a
-          class="sc-iBkjds kXOvCG"
-          href="/blog/view?id=w85aht"
-        >
-          /blog/view?id=w85aht ⇒ /blog/net-neutrality
-        </a>
-        <br />
-      </div>
-      <div>
-        <a
-          class="sc-iBkjds kXOvCG"
-          href="/blog/view?id=azcpjh"
-        >
-          /blog/view?id=azcpjh ⇒ /blog/vim
-        </a>
-        <br />
-      </div>
-      <div>
-        <a
-          class="sc-iBkjds kXOvCG"
-          href="/blog/view?id=y77dnh"
-        >
-          /blog/view?id=y77dnh ⇒ /blog/uk-bank-security
-        </a>
-        <br />
-      </div>
-      <div>
-        <a
-          class="sc-iBkjds kXOvCG"
-          href="/art"
-        >
-          /art ⇒ /photography
-        </a>
-        <br />
-      </div>
-      <div>
-        <a
-          class="sc-iBkjds kXOvCG"
-          href="/photoshop"
-        >
-          /photoshop ⇒ /photography
-        </a>
-        <br />
-      </div>
-      <div>
-        <a
-          class="sc-iBkjds kXOvCG"
-          href="/phot"
-        >
-          /phot ⇒ /photography
-        </a>
-        <br />
-      </div>
-      <div>
-        <a
-          class="sc-iBkjds kXOvCG"
-          href="/photo"
-        >
-          /photo ⇒ /photography
-        </a>
-        <br />
-      </div>
-    </span>
+      </span>
+    </div>
+    <div
+      class="sc-jqUVSM leXYdV site-map__section"
+    >
+      <h1
+        class="sc-dkzDqf ddFalQ sc-crXcEl ioFrJl"
+        id="redirects-👉"
+      >
+        Redirects 👉
+      </h1>
+      <span
+        class="sc-evZas FCsLq"
+      >
+        <div>
+          <a
+            class="sc-iBkjds kXOvCG"
+            href="/codebase"
+          >
+            /codebase ⇒ https://github.com/georgegillams/georgegillams.co.uk
+          </a>
+          <br />
+        </div>
+        <div>
+          <a
+            class="sc-iBkjds kXOvCG"
+            href="/copyright"
+          >
+            /copyright ⇒ https://creativecommons.org/licenses/by-sa/3.0/
+          </a>
+          <br />
+        </div>
+        <div>
+          <a
+            class="sc-iBkjds kXOvCG"
+            href="/flickr"
+          >
+            /flickr ⇒ https://www.flickr.com/people/georgegillams
+          </a>
+          <br />
+        </div>
+        <div>
+          <a
+            class="sc-iBkjds kXOvCG"
+            href="/monzo"
+          >
+            /monzo ⇒ https://join.monzo.com/r/vjd3d74
+          </a>
+          <br />
+        </div>
+        <div>
+          <a
+            class="sc-iBkjds kXOvCG"
+            href="/github"
+          >
+            /github ⇒ https://github.com/georgegillams
+          </a>
+          <br />
+        </div>
+        <div>
+          <a
+            class="sc-iBkjds kXOvCG"
+            href="/stackoverflow"
+          >
+            /stackoverflow ⇒ https://stackoverflow.com/users/14463713/georgegillams
+          </a>
+          <br />
+        </div>
+        <div>
+          <a
+            class="sc-iBkjds kXOvCG"
+            href="/gurushots"
+          >
+            /gurushots ⇒ https://gurushots.com/georgegillams/photos
+          </a>
+          <br />
+        </div>
+        <div>
+          <a
+            class="sc-iBkjds kXOvCG"
+            href="/unsplash"
+          >
+            /unsplash ⇒ https://unsplash.com/@georgegillams/
+          </a>
+          <br />
+        </div>
+        <div>
+          <a
+            class="sc-iBkjds kXOvCG"
+            href="/strava"
+          >
+            /strava ⇒ https://www.strava.com/athletes/7221483
+          </a>
+          <br />
+        </div>
+        <div>
+          <a
+            class="sc-iBkjds kXOvCG"
+            href="/linkedin"
+          >
+            /linkedin ⇒ https://www.linkedin.com/in/george-gillams-37537077
+          </a>
+          <br />
+        </div>
+        <div>
+          <a
+            class="sc-iBkjds kXOvCG"
+            href="/twitter"
+          >
+            /twitter ⇒ https://twitter.com/georgegillams
+          </a>
+          <br />
+        </div>
+        <div>
+          <a
+            class="sc-iBkjds kXOvCG"
+            href="/wp-admin"
+          >
+            /wp-admin ⇒ /admin
+          </a>
+          <br />
+        </div>
+        <div>
+          <a
+            class="sc-iBkjds kXOvCG"
+            href="/about"
+          >
+            /about ⇒ /
+          </a>
+          <br />
+        </div>
+        <div>
+          <a
+            class="sc-iBkjds kXOvCG"
+            href="/site-map"
+          >
+            /site-map ⇒ /sitemap
+          </a>
+          <br />
+        </div>
+        <div>
+          <a
+            class="sc-iBkjds kXOvCG"
+            href="/about/degree"
+          >
+            /about/degree ⇒ /work/degree
+          </a>
+          <br />
+        </div>
+        <div>
+          <a
+            class="sc-iBkjds kXOvCG"
+            href="/articles/tough-mudder"
+          >
+            /articles/tough-mudder ⇒ /blog/tough-mudder
+          </a>
+          <br />
+        </div>
+        <div>
+          <a
+            class="sc-iBkjds kXOvCG"
+            href="/articles/net-neutrality"
+          >
+            /articles/net-neutrality ⇒ /blog/net-neutrality
+          </a>
+          <br />
+        </div>
+        <div>
+          <a
+            class="sc-iBkjds kXOvCG"
+            href="/articles/vim"
+          >
+            /articles/vim ⇒ /blog/vim
+          </a>
+          <br />
+        </div>
+        <div>
+          <a
+            class="sc-iBkjds kXOvCG"
+            href="/articles/list"
+          >
+            /articles/list ⇒ /blog
+          </a>
+          <br />
+        </div>
+        <div>
+          <a
+            class="sc-iBkjds kXOvCG"
+            href="/articles"
+          >
+            /articles ⇒ /blog
+          </a>
+          <br />
+        </div>
+        <div>
+          <a
+            class="sc-iBkjds kXOvCG"
+            href="/net-neutrality"
+          >
+            /net-neutrality ⇒ /blog/net-neutrality
+          </a>
+          <br />
+        </div>
+        <div>
+          <a
+            class="sc-iBkjds kXOvCG"
+            href="/work/side-projects"
+          >
+            /work/side-projects ⇒ /work
+          </a>
+          <br />
+        </div>
+        <div>
+          <a
+            class="sc-iBkjds kXOvCG"
+            href="/blog/view"
+          >
+            /blog/view ⇒ /blog
+          </a>
+          <br />
+        </div>
+        <div>
+          <a
+            class="sc-iBkjds kXOvCG"
+            href="/travel"
+          >
+            /travel ⇒ /blog
+          </a>
+          <br />
+        </div>
+        <div>
+          <a
+            class="sc-iBkjds kXOvCG"
+            href="/travel/list"
+          >
+            /travel/list ⇒ /blog
+          </a>
+          <br />
+        </div>
+        <div>
+          <a
+            class="sc-iBkjds kXOvCG"
+            href="/blog/view?id=tg5x7po9"
+          >
+            /blog/view?id=tg5x7po9 ⇒ /blog/tough-mudder
+          </a>
+          <br />
+        </div>
+        <div>
+          <a
+            class="sc-iBkjds kXOvCG"
+            href="/blog/view?id=lqngy"
+          >
+            /blog/view?id=lqngy ⇒ /blog/lightroom-workflow
+          </a>
+          <br />
+        </div>
+        <div>
+          <a
+            class="sc-iBkjds kXOvCG"
+            href="/blog/view?id=w85aht"
+          >
+            /blog/view?id=w85aht ⇒ /blog/net-neutrality
+          </a>
+          <br />
+        </div>
+        <div>
+          <a
+            class="sc-iBkjds kXOvCG"
+            href="/blog/view?id=azcpjh"
+          >
+            /blog/view?id=azcpjh ⇒ /blog/vim
+          </a>
+          <br />
+        </div>
+        <div>
+          <a
+            class="sc-iBkjds kXOvCG"
+            href="/blog/view?id=y77dnh"
+          >
+            /blog/view?id=y77dnh ⇒ /blog/uk-bank-security
+          </a>
+          <br />
+        </div>
+        <div>
+          <a
+            class="sc-iBkjds kXOvCG"
+            href="/art"
+          >
+            /art ⇒ /photography
+          </a>
+          <br />
+        </div>
+        <div>
+          <a
+            class="sc-iBkjds kXOvCG"
+            href="/photoshop"
+          >
+            /photoshop ⇒ /photography
+          </a>
+          <br />
+        </div>
+        <div>
+          <a
+            class="sc-iBkjds kXOvCG"
+            href="/phot"
+          >
+            /phot ⇒ /photography
+          </a>
+          <br />
+        </div>
+        <div>
+          <a
+            class="sc-iBkjds kXOvCG"
+            href="/photo"
+          >
+            /photo ⇒ /photography
+          </a>
+          <br />
+        </div>
+      </span>
+    </div>
   </div>
 </div>
 `;
 
 exports[`<SiteMap /> should render correctly 1`] = `
 <div>
-  <h1
-    class="sc-bczRLJ hDLBIv sc-hAZoDl cDlBMk"
-  >
-    Site map
-  </h1>
   <div
-    class="sc-jqUVSM leXYdV site-map__section"
+    class="sc-fEOsli kRThfC page-containerstyles__StyledPageContainer-sc-19l7k4-0"
+    width="default"
   >
     <h1
-      class="sc-dkzDqf ddFalQ sc-crXcEl ioFrJl"
-      id="blog-📝"
+      class="sc-bczRLJ hDLBIv sc-hAZoDl cDlBMk"
     >
-      Blog 📝
+      Site map
     </h1>
-    <span
-      class="sc-evZas FCsLq"
+    <div
+      class="sc-jqUVSM leXYdV site-map__section"
     >
-      <a
-        class="sc-iBkjds kXOvCG"
-        href="/blog"
+      <h1
+        class="sc-dkzDqf ddFalQ sc-crXcEl ioFrJl"
+        id="blog-📝"
       >
-        Blog list
-      </a>
-      <br />
-      <div
-        class="sc-breuTD hTzYZA"
+        Blog 📝
+      </h1>
+      <span
+        class="sc-evZas FCsLq"
       >
-        <div
-          class="sc-ksZaOG fakLGB"
-          style="margin-left: -0px;"
-        />
-      </div>
-      <div
-        class="sc-breuTD hTzYZA"
-      >
-        <div
-          class="sc-ksZaOG fakLGB"
-          style="margin-left: -0px;"
-        />
-      </div>
-      <div
-        class="sc-breuTD hTzYZA"
-      >
-        <div
-          class="sc-ksZaOG fakLGB"
-          style="margin-left: -0px;"
-        />
-      </div>
-      <div
-        class="sc-breuTD hTzYZA"
-      >
-        <div
-          class="sc-ksZaOG fakLGB"
-          style="margin-left: -0px;"
-        />
-      </div>
-      <div
-        class="sc-breuTD hTzYZA"
-      >
-        <div
-          class="sc-ksZaOG fakLGB"
-          style="margin-left: -0px;"
-        />
-      </div>
-      <div
-        class="sc-breuTD hTzYZA"
-      >
-        <div
-          class="sc-ksZaOG fakLGB"
-          style="margin-left: -0px;"
-        />
-      </div>
-    </span>
-  </div>
-  <div
-    class="sc-jqUVSM leXYdV site-map__section"
-  >
-    <h1
-      class="sc-dkzDqf ddFalQ sc-crXcEl ioFrJl"
-      id="photography-📷"
-    >
-      Photography 📷
-    </h1>
-    <span
-      class="sc-evZas FCsLq"
-    >
-      <a
-        class="sc-iBkjds kXOvCG"
-        href="/photography"
-      >
-        Photography
-      </a>
-    </span>
-  </div>
-  <div
-    class="sc-jqUVSM leXYdV site-map__section"
-  >
-    <h1
-      class="sc-dkzDqf ddFalQ sc-crXcEl ioFrJl"
-      id="medals-🏅"
-    >
-      Medals 🏅
-    </h1>
-    <span
-      class="sc-evZas FCsLq"
-    >
-      <a
-        class="sc-iBkjds kXOvCG"
-        href="/medals"
-      >
-        Medals
-      </a>
-    </span>
-  </div>
-  <div
-    class="sc-jqUVSM leXYdV site-map__section"
-  >
-    <h1
-      class="sc-dkzDqf ddFalQ sc-crXcEl ioFrJl"
-      id="work-📱"
-    >
-      Work 📱
-    </h1>
-    <span
-      class="sc-evZas FCsLq"
-    >
-      <a
-        class="sc-iBkjds kXOvCG"
-        href="/work"
-      >
-        Overview
-      </a>
-      <br />
-      <a
-        class="sc-iBkjds kXOvCG"
-        href="/work/backpack"
-      >
-        Backpack
-      </a>
-      <br />
-      <a
-        class="sc-iBkjds kXOvCG"
-        href="/work/degree"
-      >
-        Degree
-      </a>
-      <br />
-      <a
-        class="sc-iBkjds kXOvCG"
-        href="/work/epicc"
-      >
-        EPICC
-      </a>
-    </span>
-  </div>
-  <div
-    class="sc-jqUVSM leXYdV site-map__section"
-  >
-    <h1
-      class="sc-dkzDqf ddFalQ sc-crXcEl ioFrJl"
-      id="design-🎨"
-    >
-      Design 🎨
-    </h1>
-    <span
-      class="sc-evZas FCsLq"
-    >
-      <a
-        class="sc-iBkjds kXOvCG"
-        href="/privacy-policy"
-      >
-        Privacy Policy
-      </a>
-    </span>
-  </div>
-  <div
-    class="sc-jqUVSM leXYdV site-map__section"
-  >
-    <h1
-      class="sc-dkzDqf ddFalQ sc-crXcEl ioFrJl"
-      id="other-stuff-🤷‍♂️"
-    >
-      Other stuff 🤷‍♂️
-    </h1>
-    <span
-      class="sc-evZas FCsLq"
-    >
-      <a
-        class="sc-iBkjds kXOvCG"
-        href="/contact"
-      >
-        Contact
-      </a>
-      <br />
-      <a
-        class="sc-iBkjds kXOvCG"
-        href="/support"
-      >
-        Support
-      </a>
-      <br />
-      <a
-        class="sc-iBkjds kXOvCG"
-        href="/debug"
-      >
-        Debug tools
-      </a>
-      <br />
-      <a
-        class="sc-iBkjds kXOvCG"
-        href="/status"
-      >
-        Status
-      </a>
-    </span>
-  </div>
-  <div
-    class="sc-jqUVSM leXYdV site-map__section"
-  >
-    <h1
-      class="sc-dkzDqf ddFalQ sc-crXcEl ioFrJl"
-      id="random-🐉"
-    >
-      Random 🐉
-    </h1>
-    <span
-      class="sc-evZas FCsLq"
-    >
-      <a
-        aria-label="Robots.txt (opens in a new tab)"
-        class="sc-iBkjds kXOvCG"
-        href="/robots.txt"
-        rel="noopener noreferrer"
-        target="_blank"
-      >
-        Robots.txt
-        <div
-          class="sc-ftvSup kUuEWK"
+        <a
+          class="sc-iBkjds kXOvCG"
+          href="/blog"
         >
-          <svg
-            class="sc-gKXOVf ktoyia sc-papXJ fmVkXn"
-            height="18"
-            viewBox="0 0 24 24"
-            width="18"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M12.5 11.3c.4.4 1 .4 1.4 0L19 6.2V9c0 .6.4 1 1 1s1-.4 1-1V4c0-.6-.4-1-1-1h-5c-.6 0-1 .4-1 1s.4 1 1 1h2.4l-4.9 4.9c-.4.4-.4 1 0 1.4zM19 19c0 1.1-.9 2-2 2H5c-1.1 0-2-.9-2-2V7c0-1.1.9-2 2-2h7v2H5v12h12v-7h2"
-            />
-          </svg>
+          Blog list
+        </a>
+        <br />
+        <div
+          class="sc-breuTD hTzYZA"
+        >
+          <div
+            class="sc-ksZaOG fakLGB"
+            style="margin-left: -0px;"
+          />
         </div>
-      </a>
-      <br />
-      <a
-        aria-label="SiteMap.xml (opens in a new tab)"
-        class="sc-iBkjds kXOvCG"
-        href="/sitemap.xml"
-        rel="noopener noreferrer"
-        target="_blank"
-      >
-        SiteMap.xml
         <div
-          class="sc-ftvSup kUuEWK"
+          class="sc-breuTD hTzYZA"
         >
-          <svg
-            class="sc-gKXOVf ktoyia sc-papXJ fmVkXn"
-            height="18"
-            viewBox="0 0 24 24"
-            width="18"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M12.5 11.3c.4.4 1 .4 1.4 0L19 6.2V9c0 .6.4 1 1 1s1-.4 1-1V4c0-.6-.4-1-1-1h-5c-.6 0-1 .4-1 1s.4 1 1 1h2.4l-4.9 4.9c-.4.4-.4 1 0 1.4zM19 19c0 1.1-.9 2-2 2H5c-1.1 0-2-.9-2-2V7c0-1.1.9-2 2-2h7v2H5v12h12v-7h2"
-            />
-          </svg>
+          <div
+            class="sc-ksZaOG fakLGB"
+            style="margin-left: -0px;"
+          />
         </div>
-      </a>
-      <br />
-      <a
-        class="sc-iBkjds kXOvCG"
-        href="/404"
-      >
-        404 error page - not found
-      </a>
-      <br />
-      <a
-        class="sc-iBkjds kXOvCG"
-        href="/teapot"
-      >
-        418 error page - I'm a teapot
-      </a>
-    </span>
-  </div>
-  <div
-    class="sc-jqUVSM leXYdV site-map__section"
-  >
-    <h1
-      class="sc-dkzDqf ddFalQ sc-crXcEl ioFrJl"
-      id="api"
+        <div
+          class="sc-breuTD hTzYZA"
+        >
+          <div
+            class="sc-ksZaOG fakLGB"
+            style="margin-left: -0px;"
+          />
+        </div>
+        <div
+          class="sc-breuTD hTzYZA"
+        >
+          <div
+            class="sc-ksZaOG fakLGB"
+            style="margin-left: -0px;"
+          />
+        </div>
+        <div
+          class="sc-breuTD hTzYZA"
+        >
+          <div
+            class="sc-ksZaOG fakLGB"
+            style="margin-left: -0px;"
+          />
+        </div>
+        <div
+          class="sc-breuTD hTzYZA"
+        >
+          <div
+            class="sc-ksZaOG fakLGB"
+            style="margin-left: -0px;"
+          />
+        </div>
+      </span>
+    </div>
+    <div
+      class="sc-jqUVSM leXYdV site-map__section"
     >
-      API
-    </h1>
-    <span
-      class="sc-evZas FCsLq"
+      <h1
+        class="sc-dkzDqf ddFalQ sc-crXcEl ioFrJl"
+        id="photography-📷"
+      >
+        Photography 📷
+      </h1>
+      <span
+        class="sc-evZas FCsLq"
+      >
+        <a
+          class="sc-iBkjds kXOvCG"
+          href="/photography"
+        >
+          Photography
+        </a>
+      </span>
+    </div>
+    <div
+      class="sc-jqUVSM leXYdV site-map__section"
     >
-      <a
-        class="sc-iBkjds kXOvCG"
-        href="/api-docs"
+      <h1
+        class="sc-dkzDqf ddFalQ sc-crXcEl ioFrJl"
+        id="medals-🏅"
       >
-        API docs
-      </a>
-    </span>
-  </div>
-  <div
-    class="sc-jqUVSM leXYdV site-map__section"
-  >
-    <h1
-      class="sc-dkzDqf ddFalQ sc-crXcEl ioFrJl"
-      id="accounts-🔑"
+        Medals 🏅
+      </h1>
+      <span
+        class="sc-evZas FCsLq"
+      >
+        <a
+          class="sc-iBkjds kXOvCG"
+          href="/medals"
+        >
+          Medals
+        </a>
+      </span>
+    </div>
+    <div
+      class="sc-jqUVSM leXYdV site-map__section"
     >
-      Accounts 🔑
-    </h1>
-    <span
-      class="sc-evZas FCsLq"
+      <h1
+        class="sc-dkzDqf ddFalQ sc-crXcEl ioFrJl"
+        id="work-📱"
+      >
+        Work 📱
+      </h1>
+      <span
+        class="sc-evZas FCsLq"
+      >
+        <a
+          class="sc-iBkjds kXOvCG"
+          href="/work"
+        >
+          Overview
+        </a>
+        <br />
+        <a
+          class="sc-iBkjds kXOvCG"
+          href="/work/backpack"
+        >
+          Backpack
+        </a>
+        <br />
+        <a
+          class="sc-iBkjds kXOvCG"
+          href="/work/degree"
+        >
+          Degree
+        </a>
+        <br />
+        <a
+          class="sc-iBkjds kXOvCG"
+          href="/work/epicc"
+        >
+          EPICC
+        </a>
+      </span>
+    </div>
+    <div
+      class="sc-jqUVSM leXYdV site-map__section"
     >
-      <a
-        class="sc-iBkjds kXOvCG"
-        href="/account"
+      <h1
+        class="sc-dkzDqf ddFalQ sc-crXcEl ioFrJl"
+        id="design-🎨"
       >
-        Account
-      </a>
-      <br />
-      <a
-        class="sc-iBkjds kXOvCG"
-        href="/sign-up"
+        Design 🎨
+      </h1>
+      <span
+        class="sc-evZas FCsLq"
       >
-        Sign up
-      </a>
-      <br />
-      <a
-        class="sc-iBkjds kXOvCG"
-        href="/login"
-      >
-        Log in
-      </a>
-      <br />
-      <a
-        class="sc-iBkjds kXOvCG"
-        href="/email-verification"
-      >
-        Email verification
-      </a>
-      <br />
-      <a
-        class="sc-iBkjds kXOvCG"
-        href="/magic-login"
-      >
-        Magic login
-      </a>
-    </span>
-  </div>
-  <div
-    class="sc-jqUVSM leXYdV site-map__section"
-  >
-    <h1
-      class="sc-dkzDqf ddFalQ sc-crXcEl ioFrJl"
-      id="admin-👮‍♂️"
+        <a
+          class="sc-iBkjds kXOvCG"
+          href="/privacy-policy"
+        >
+          Privacy Policy
+        </a>
+      </span>
+    </div>
+    <div
+      class="sc-jqUVSM leXYdV site-map__section"
     >
-      Admin 👮‍♂️
-    </h1>
-    <span
-      class="sc-evZas FCsLq"
+      <h1
+        class="sc-dkzDqf ddFalQ sc-crXcEl ioFrJl"
+        id="other-stuff-🤷‍♂️"
+      >
+        Other stuff 🤷‍♂️
+      </h1>
+      <span
+        class="sc-evZas FCsLq"
+      >
+        <a
+          class="sc-iBkjds kXOvCG"
+          href="/contact"
+        >
+          Contact
+        </a>
+        <br />
+        <a
+          class="sc-iBkjds kXOvCG"
+          href="/support"
+        >
+          Support
+        </a>
+        <br />
+        <a
+          class="sc-iBkjds kXOvCG"
+          href="/debug"
+        >
+          Debug tools
+        </a>
+        <br />
+        <a
+          class="sc-iBkjds kXOvCG"
+          href="/status"
+        >
+          Status
+        </a>
+      </span>
+    </div>
+    <div
+      class="sc-jqUVSM leXYdV site-map__section"
     >
-      <a
-        class="sc-iBkjds kXOvCG"
-        href="/admin"
+      <h1
+        class="sc-dkzDqf ddFalQ sc-crXcEl ioFrJl"
+        id="random-🐉"
       >
-        Admin navigation
-      </a>
-      <br />
-      <a
-        class="sc-iBkjds kXOvCG"
-        href="/blog"
+        Random 🐉
+      </h1>
+      <span
+        class="sc-evZas FCsLq"
       >
-        Blogs
-      </a>
-      <br />
-      <a
-        class="sc-iBkjds kXOvCG"
-        href="/admin/analytics"
-      >
-        Analytics
-      </a>
-      <br />
-      <a
-        class="sc-iBkjds kXOvCG"
-        href="/admin/emails"
-      >
-        Emails
-      </a>
-      <br />
-      <a
-        class="sc-iBkjds kXOvCG"
-        href="/admin/notifications"
-      >
-        Notifications
-      </a>
-      <br />
-      <a
-        class="sc-iBkjds kXOvCG"
-        href="/admin/users"
-      >
-        Users
-      </a>
-    </span>
-  </div>
-  <div
-    class="sc-jqUVSM leXYdV site-map__section"
-  >
-    <h1
-      class="sc-dkzDqf ddFalQ sc-crXcEl ioFrJl"
-      id="redirects-👉"
+        <a
+          aria-label="Robots.txt (opens in a new tab)"
+          class="sc-iBkjds kXOvCG"
+          href="/robots.txt"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          Robots.txt
+          <div
+            class="sc-ftvSup kUuEWK"
+          >
+            <svg
+              class="sc-gKXOVf ktoyia sc-papXJ fmVkXn"
+              height="18"
+              viewBox="0 0 24 24"
+              width="18"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M12.5 11.3c.4.4 1 .4 1.4 0L19 6.2V9c0 .6.4 1 1 1s1-.4 1-1V4c0-.6-.4-1-1-1h-5c-.6 0-1 .4-1 1s.4 1 1 1h2.4l-4.9 4.9c-.4.4-.4 1 0 1.4zM19 19c0 1.1-.9 2-2 2H5c-1.1 0-2-.9-2-2V7c0-1.1.9-2 2-2h7v2H5v12h12v-7h2"
+              />
+            </svg>
+          </div>
+        </a>
+        <br />
+        <a
+          aria-label="SiteMap.xml (opens in a new tab)"
+          class="sc-iBkjds kXOvCG"
+          href="/sitemap.xml"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          SiteMap.xml
+          <div
+            class="sc-ftvSup kUuEWK"
+          >
+            <svg
+              class="sc-gKXOVf ktoyia sc-papXJ fmVkXn"
+              height="18"
+              viewBox="0 0 24 24"
+              width="18"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M12.5 11.3c.4.4 1 .4 1.4 0L19 6.2V9c0 .6.4 1 1 1s1-.4 1-1V4c0-.6-.4-1-1-1h-5c-.6 0-1 .4-1 1s.4 1 1 1h2.4l-4.9 4.9c-.4.4-.4 1 0 1.4zM19 19c0 1.1-.9 2-2 2H5c-1.1 0-2-.9-2-2V7c0-1.1.9-2 2-2h7v2H5v12h12v-7h2"
+              />
+            </svg>
+          </div>
+        </a>
+        <br />
+        <a
+          class="sc-iBkjds kXOvCG"
+          href="/404"
+        >
+          404 error page - not found
+        </a>
+        <br />
+        <a
+          class="sc-iBkjds kXOvCG"
+          href="/teapot"
+        >
+          418 error page - I'm a teapot
+        </a>
+      </span>
+    </div>
+    <div
+      class="sc-jqUVSM leXYdV site-map__section"
     >
-      Redirects 👉
-    </h1>
-    <span
-      class="sc-evZas FCsLq"
+      <h1
+        class="sc-dkzDqf ddFalQ sc-crXcEl ioFrJl"
+        id="api"
+      >
+        API
+      </h1>
+      <span
+        class="sc-evZas FCsLq"
+      >
+        <a
+          class="sc-iBkjds kXOvCG"
+          href="/api-docs"
+        >
+          API docs
+        </a>
+      </span>
+    </div>
+    <div
+      class="sc-jqUVSM leXYdV site-map__section"
     >
-      <div>
+      <h1
+        class="sc-dkzDqf ddFalQ sc-crXcEl ioFrJl"
+        id="accounts-🔑"
+      >
+        Accounts 🔑
+      </h1>
+      <span
+        class="sc-evZas FCsLq"
+      >
         <a
           class="sc-iBkjds kXOvCG"
-          href="/codebase"
+          href="/account"
         >
-          /codebase ⇒ https://github.com/georgegillams/georgegillams.co.uk
+          Account
         </a>
         <br />
-      </div>
-      <div>
         <a
           class="sc-iBkjds kXOvCG"
-          href="/copyright"
+          href="/sign-up"
         >
-          /copyright ⇒ https://creativecommons.org/licenses/by-sa/3.0/
+          Sign up
         </a>
         <br />
-      </div>
-      <div>
         <a
           class="sc-iBkjds kXOvCG"
-          href="/flickr"
+          href="/login"
         >
-          /flickr ⇒ https://www.flickr.com/people/georgegillams
+          Log in
         </a>
         <br />
-      </div>
-      <div>
         <a
           class="sc-iBkjds kXOvCG"
-          href="/monzo"
+          href="/email-verification"
         >
-          /monzo ⇒ https://join.monzo.com/r/vjd3d74
+          Email verification
         </a>
         <br />
-      </div>
-      <div>
         <a
           class="sc-iBkjds kXOvCG"
-          href="/github"
+          href="/magic-login"
         >
-          /github ⇒ https://github.com/georgegillams
+          Magic login
         </a>
-        <br />
-      </div>
-      <div>
+      </span>
+    </div>
+    <div
+      class="sc-jqUVSM leXYdV site-map__section"
+    >
+      <h1
+        class="sc-dkzDqf ddFalQ sc-crXcEl ioFrJl"
+        id="admin-👮‍♂️"
+      >
+        Admin 👮‍♂️
+      </h1>
+      <span
+        class="sc-evZas FCsLq"
+      >
         <a
           class="sc-iBkjds kXOvCG"
-          href="/stackoverflow"
+          href="/admin"
         >
-          /stackoverflow ⇒ https://stackoverflow.com/users/14463713/georgegillams
+          Admin navigation
         </a>
         <br />
-      </div>
-      <div>
         <a
           class="sc-iBkjds kXOvCG"
-          href="/gurushots"
+          href="/blog"
         >
-          /gurushots ⇒ https://gurushots.com/georgegillams/photos
+          Blogs
         </a>
         <br />
-      </div>
-      <div>
         <a
           class="sc-iBkjds kXOvCG"
-          href="/unsplash"
+          href="/admin/analytics"
         >
-          /unsplash ⇒ https://unsplash.com/@georgegillams/
+          Analytics
         </a>
         <br />
-      </div>
-      <div>
         <a
           class="sc-iBkjds kXOvCG"
-          href="/strava"
+          href="/admin/emails"
         >
-          /strava ⇒ https://www.strava.com/athletes/7221483
+          Emails
         </a>
         <br />
-      </div>
-      <div>
         <a
           class="sc-iBkjds kXOvCG"
-          href="/linkedin"
+          href="/admin/notifications"
         >
-          /linkedin ⇒ https://www.linkedin.com/in/george-gillams-37537077
+          Notifications
         </a>
         <br />
-      </div>
-      <div>
         <a
           class="sc-iBkjds kXOvCG"
-          href="/twitter"
+          href="/admin/users"
         >
-          /twitter ⇒ https://twitter.com/georgegillams
+          Users
         </a>
-        <br />
-      </div>
-      <div>
-        <a
-          class="sc-iBkjds kXOvCG"
-          href="/wp-admin"
-        >
-          /wp-admin ⇒ /admin
-        </a>
-        <br />
-      </div>
-      <div>
-        <a
-          class="sc-iBkjds kXOvCG"
-          href="/about"
-        >
-          /about ⇒ /
-        </a>
-        <br />
-      </div>
-      <div>
-        <a
-          class="sc-iBkjds kXOvCG"
-          href="/site-map"
-        >
-          /site-map ⇒ /sitemap
-        </a>
-        <br />
-      </div>
-      <div>
-        <a
-          class="sc-iBkjds kXOvCG"
-          href="/about/degree"
-        >
-          /about/degree ⇒ /work/degree
-        </a>
-        <br />
-      </div>
-      <div>
-        <a
-          class="sc-iBkjds kXOvCG"
-          href="/articles/tough-mudder"
-        >
-          /articles/tough-mudder ⇒ /blog/tough-mudder
-        </a>
-        <br />
-      </div>
-      <div>
-        <a
-          class="sc-iBkjds kXOvCG"
-          href="/articles/net-neutrality"
-        >
-          /articles/net-neutrality ⇒ /blog/net-neutrality
-        </a>
-        <br />
-      </div>
-      <div>
-        <a
-          class="sc-iBkjds kXOvCG"
-          href="/articles/vim"
-        >
-          /articles/vim ⇒ /blog/vim
-        </a>
-        <br />
-      </div>
-      <div>
-        <a
-          class="sc-iBkjds kXOvCG"
-          href="/articles/list"
-        >
-          /articles/list ⇒ /blog
-        </a>
-        <br />
-      </div>
-      <div>
-        <a
-          class="sc-iBkjds kXOvCG"
-          href="/articles"
-        >
-          /articles ⇒ /blog
-        </a>
-        <br />
-      </div>
-      <div>
-        <a
-          class="sc-iBkjds kXOvCG"
-          href="/net-neutrality"
-        >
-          /net-neutrality ⇒ /blog/net-neutrality
-        </a>
-        <br />
-      </div>
-      <div>
-        <a
-          class="sc-iBkjds kXOvCG"
-          href="/work/side-projects"
-        >
-          /work/side-projects ⇒ /work
-        </a>
-        <br />
-      </div>
-      <div>
-        <a
-          class="sc-iBkjds kXOvCG"
-          href="/blog/view"
-        >
-          /blog/view ⇒ /blog
-        </a>
-        <br />
-      </div>
-      <div>
-        <a
-          class="sc-iBkjds kXOvCG"
-          href="/travel"
-        >
-          /travel ⇒ /blog
-        </a>
-        <br />
-      </div>
-      <div>
-        <a
-          class="sc-iBkjds kXOvCG"
-          href="/travel/list"
-        >
-          /travel/list ⇒ /blog
-        </a>
-        <br />
-      </div>
-      <div>
-        <a
-          class="sc-iBkjds kXOvCG"
-          href="/blog/view?id=tg5x7po9"
-        >
-          /blog/view?id=tg5x7po9 ⇒ /blog/tough-mudder
-        </a>
-        <br />
-      </div>
-      <div>
-        <a
-          class="sc-iBkjds kXOvCG"
-          href="/blog/view?id=lqngy"
-        >
-          /blog/view?id=lqngy ⇒ /blog/lightroom-workflow
-        </a>
-        <br />
-      </div>
-      <div>
-        <a
-          class="sc-iBkjds kXOvCG"
-          href="/blog/view?id=w85aht"
-        >
-          /blog/view?id=w85aht ⇒ /blog/net-neutrality
-        </a>
-        <br />
-      </div>
-      <div>
-        <a
-          class="sc-iBkjds kXOvCG"
-          href="/blog/view?id=azcpjh"
-        >
-          /blog/view?id=azcpjh ⇒ /blog/vim
-        </a>
-        <br />
-      </div>
-      <div>
-        <a
-          class="sc-iBkjds kXOvCG"
-          href="/blog/view?id=y77dnh"
-        >
-          /blog/view?id=y77dnh ⇒ /blog/uk-bank-security
-        </a>
-        <br />
-      </div>
-      <div>
-        <a
-          class="sc-iBkjds kXOvCG"
-          href="/art"
-        >
-          /art ⇒ /photography
-        </a>
-        <br />
-      </div>
-      <div>
-        <a
-          class="sc-iBkjds kXOvCG"
-          href="/photoshop"
-        >
-          /photoshop ⇒ /photography
-        </a>
-        <br />
-      </div>
-      <div>
-        <a
-          class="sc-iBkjds kXOvCG"
-          href="/phot"
-        >
-          /phot ⇒ /photography
-        </a>
-        <br />
-      </div>
-      <div>
-        <a
-          class="sc-iBkjds kXOvCG"
-          href="/photo"
-        >
-          /photo ⇒ /photography
-        </a>
-        <br />
-      </div>
-    </span>
+      </span>
+    </div>
+    <div
+      class="sc-jqUVSM leXYdV site-map__section"
+    >
+      <h1
+        class="sc-dkzDqf ddFalQ sc-crXcEl ioFrJl"
+        id="redirects-👉"
+      >
+        Redirects 👉
+      </h1>
+      <span
+        class="sc-evZas FCsLq"
+      >
+        <div>
+          <a
+            class="sc-iBkjds kXOvCG"
+            href="/codebase"
+          >
+            /codebase ⇒ https://github.com/georgegillams/georgegillams.co.uk
+          </a>
+          <br />
+        </div>
+        <div>
+          <a
+            class="sc-iBkjds kXOvCG"
+            href="/copyright"
+          >
+            /copyright ⇒ https://creativecommons.org/licenses/by-sa/3.0/
+          </a>
+          <br />
+        </div>
+        <div>
+          <a
+            class="sc-iBkjds kXOvCG"
+            href="/flickr"
+          >
+            /flickr ⇒ https://www.flickr.com/people/georgegillams
+          </a>
+          <br />
+        </div>
+        <div>
+          <a
+            class="sc-iBkjds kXOvCG"
+            href="/monzo"
+          >
+            /monzo ⇒ https://join.monzo.com/r/vjd3d74
+          </a>
+          <br />
+        </div>
+        <div>
+          <a
+            class="sc-iBkjds kXOvCG"
+            href="/github"
+          >
+            /github ⇒ https://github.com/georgegillams
+          </a>
+          <br />
+        </div>
+        <div>
+          <a
+            class="sc-iBkjds kXOvCG"
+            href="/stackoverflow"
+          >
+            /stackoverflow ⇒ https://stackoverflow.com/users/14463713/georgegillams
+          </a>
+          <br />
+        </div>
+        <div>
+          <a
+            class="sc-iBkjds kXOvCG"
+            href="/gurushots"
+          >
+            /gurushots ⇒ https://gurushots.com/georgegillams/photos
+          </a>
+          <br />
+        </div>
+        <div>
+          <a
+            class="sc-iBkjds kXOvCG"
+            href="/unsplash"
+          >
+            /unsplash ⇒ https://unsplash.com/@georgegillams/
+          </a>
+          <br />
+        </div>
+        <div>
+          <a
+            class="sc-iBkjds kXOvCG"
+            href="/strava"
+          >
+            /strava ⇒ https://www.strava.com/athletes/7221483
+          </a>
+          <br />
+        </div>
+        <div>
+          <a
+            class="sc-iBkjds kXOvCG"
+            href="/linkedin"
+          >
+            /linkedin ⇒ https://www.linkedin.com/in/george-gillams-37537077
+          </a>
+          <br />
+        </div>
+        <div>
+          <a
+            class="sc-iBkjds kXOvCG"
+            href="/twitter"
+          >
+            /twitter ⇒ https://twitter.com/georgegillams
+          </a>
+          <br />
+        </div>
+        <div>
+          <a
+            class="sc-iBkjds kXOvCG"
+            href="/wp-admin"
+          >
+            /wp-admin ⇒ /admin
+          </a>
+          <br />
+        </div>
+        <div>
+          <a
+            class="sc-iBkjds kXOvCG"
+            href="/about"
+          >
+            /about ⇒ /
+          </a>
+          <br />
+        </div>
+        <div>
+          <a
+            class="sc-iBkjds kXOvCG"
+            href="/site-map"
+          >
+            /site-map ⇒ /sitemap
+          </a>
+          <br />
+        </div>
+        <div>
+          <a
+            class="sc-iBkjds kXOvCG"
+            href="/about/degree"
+          >
+            /about/degree ⇒ /work/degree
+          </a>
+          <br />
+        </div>
+        <div>
+          <a
+            class="sc-iBkjds kXOvCG"
+            href="/articles/tough-mudder"
+          >
+            /articles/tough-mudder ⇒ /blog/tough-mudder
+          </a>
+          <br />
+        </div>
+        <div>
+          <a
+            class="sc-iBkjds kXOvCG"
+            href="/articles/net-neutrality"
+          >
+            /articles/net-neutrality ⇒ /blog/net-neutrality
+          </a>
+          <br />
+        </div>
+        <div>
+          <a
+            class="sc-iBkjds kXOvCG"
+            href="/articles/vim"
+          >
+            /articles/vim ⇒ /blog/vim
+          </a>
+          <br />
+        </div>
+        <div>
+          <a
+            class="sc-iBkjds kXOvCG"
+            href="/articles/list"
+          >
+            /articles/list ⇒ /blog
+          </a>
+          <br />
+        </div>
+        <div>
+          <a
+            class="sc-iBkjds kXOvCG"
+            href="/articles"
+          >
+            /articles ⇒ /blog
+          </a>
+          <br />
+        </div>
+        <div>
+          <a
+            class="sc-iBkjds kXOvCG"
+            href="/net-neutrality"
+          >
+            /net-neutrality ⇒ /blog/net-neutrality
+          </a>
+          <br />
+        </div>
+        <div>
+          <a
+            class="sc-iBkjds kXOvCG"
+            href="/work/side-projects"
+          >
+            /work/side-projects ⇒ /work
+          </a>
+          <br />
+        </div>
+        <div>
+          <a
+            class="sc-iBkjds kXOvCG"
+            href="/blog/view"
+          >
+            /blog/view ⇒ /blog
+          </a>
+          <br />
+        </div>
+        <div>
+          <a
+            class="sc-iBkjds kXOvCG"
+            href="/travel"
+          >
+            /travel ⇒ /blog
+          </a>
+          <br />
+        </div>
+        <div>
+          <a
+            class="sc-iBkjds kXOvCG"
+            href="/travel/list"
+          >
+            /travel/list ⇒ /blog
+          </a>
+          <br />
+        </div>
+        <div>
+          <a
+            class="sc-iBkjds kXOvCG"
+            href="/blog/view?id=tg5x7po9"
+          >
+            /blog/view?id=tg5x7po9 ⇒ /blog/tough-mudder
+          </a>
+          <br />
+        </div>
+        <div>
+          <a
+            class="sc-iBkjds kXOvCG"
+            href="/blog/view?id=lqngy"
+          >
+            /blog/view?id=lqngy ⇒ /blog/lightroom-workflow
+          </a>
+          <br />
+        </div>
+        <div>
+          <a
+            class="sc-iBkjds kXOvCG"
+            href="/blog/view?id=w85aht"
+          >
+            /blog/view?id=w85aht ⇒ /blog/net-neutrality
+          </a>
+          <br />
+        </div>
+        <div>
+          <a
+            class="sc-iBkjds kXOvCG"
+            href="/blog/view?id=azcpjh"
+          >
+            /blog/view?id=azcpjh ⇒ /blog/vim
+          </a>
+          <br />
+        </div>
+        <div>
+          <a
+            class="sc-iBkjds kXOvCG"
+            href="/blog/view?id=y77dnh"
+          >
+            /blog/view?id=y77dnh ⇒ /blog/uk-bank-security
+          </a>
+          <br />
+        </div>
+        <div>
+          <a
+            class="sc-iBkjds kXOvCG"
+            href="/art"
+          >
+            /art ⇒ /photography
+          </a>
+          <br />
+        </div>
+        <div>
+          <a
+            class="sc-iBkjds kXOvCG"
+            href="/photoshop"
+          >
+            /photoshop ⇒ /photography
+          </a>
+          <br />
+        </div>
+        <div>
+          <a
+            class="sc-iBkjds kXOvCG"
+            href="/phot"
+          >
+            /phot ⇒ /photography
+          </a>
+          <br />
+        </div>
+        <div>
+          <a
+            class="sc-iBkjds kXOvCG"
+            href="/photo"
+          >
+            /photo ⇒ /photography
+          </a>
+          <br />
+        </div>
+      </span>
+    </div>
   </div>
 </div>
 `;
 
 exports[`<SiteMap /> should render correctly with blogs 1`] = `
 <div>
-  <h1
-    class="sc-bczRLJ hDLBIv sc-hAZoDl cDlBMk"
-  >
-    Site map
-  </h1>
   <div
-    class="sc-jqUVSM leXYdV site-map__section"
+    class="sc-fEOsli kRThfC page-containerstyles__StyledPageContainer-sc-19l7k4-0"
+    width="default"
   >
     <h1
-      class="sc-dkzDqf ddFalQ sc-crXcEl ioFrJl"
-      id="blog-📝"
+      class="sc-bczRLJ hDLBIv sc-hAZoDl cDlBMk"
     >
-      Blog 📝
+      Site map
     </h1>
-    <span
-      class="sc-evZas FCsLq"
+    <div
+      class="sc-jqUVSM leXYdV site-map__section"
     >
-      <a
-        class="sc-iBkjds kXOvCG"
-        href="/blog"
+      <h1
+        class="sc-dkzDqf ddFalQ sc-crXcEl ioFrJl"
+        id="blog-📝"
       >
-        Blog list
-      </a>
-      <br />
-      <a
-        class="sc-iBkjds kXOvCG"
-        href="/blog/asdfg"
+        Blog 📝
+      </h1>
+      <span
+        class="sc-evZas FCsLq"
       >
-        Blog 1 🎉
-      </a>
-      <br />
-    </span>
-  </div>
-  <div
-    class="sc-jqUVSM leXYdV site-map__section"
-  >
-    <h1
-      class="sc-dkzDqf ddFalQ sc-crXcEl ioFrJl"
-      id="photography-📷"
-    >
-      Photography 📷
-    </h1>
-    <span
-      class="sc-evZas FCsLq"
-    >
-      <a
-        class="sc-iBkjds kXOvCG"
-        href="/photography"
-      >
-        Photography
-      </a>
-    </span>
-  </div>
-  <div
-    class="sc-jqUVSM leXYdV site-map__section"
-  >
-    <h1
-      class="sc-dkzDqf ddFalQ sc-crXcEl ioFrJl"
-      id="medals-🏅"
-    >
-      Medals 🏅
-    </h1>
-    <span
-      class="sc-evZas FCsLq"
-    >
-      <a
-        class="sc-iBkjds kXOvCG"
-        href="/medals"
-      >
-        Medals
-      </a>
-    </span>
-  </div>
-  <div
-    class="sc-jqUVSM leXYdV site-map__section"
-  >
-    <h1
-      class="sc-dkzDqf ddFalQ sc-crXcEl ioFrJl"
-      id="work-📱"
-    >
-      Work 📱
-    </h1>
-    <span
-      class="sc-evZas FCsLq"
-    >
-      <a
-        class="sc-iBkjds kXOvCG"
-        href="/work"
-      >
-        Overview
-      </a>
-      <br />
-      <a
-        class="sc-iBkjds kXOvCG"
-        href="/work/backpack"
-      >
-        Backpack
-      </a>
-      <br />
-      <a
-        class="sc-iBkjds kXOvCG"
-        href="/work/degree"
-      >
-        Degree
-      </a>
-      <br />
-      <a
-        class="sc-iBkjds kXOvCG"
-        href="/work/epicc"
-      >
-        EPICC
-      </a>
-    </span>
-  </div>
-  <div
-    class="sc-jqUVSM leXYdV site-map__section"
-  >
-    <h1
-      class="sc-dkzDqf ddFalQ sc-crXcEl ioFrJl"
-      id="design-🎨"
-    >
-      Design 🎨
-    </h1>
-    <span
-      class="sc-evZas FCsLq"
-    >
-      <a
-        class="sc-iBkjds kXOvCG"
-        href="/privacy-policy"
-      >
-        Privacy Policy
-      </a>
-    </span>
-  </div>
-  <div
-    class="sc-jqUVSM leXYdV site-map__section"
-  >
-    <h1
-      class="sc-dkzDqf ddFalQ sc-crXcEl ioFrJl"
-      id="other-stuff-🤷‍♂️"
-    >
-      Other stuff 🤷‍♂️
-    </h1>
-    <span
-      class="sc-evZas FCsLq"
-    >
-      <a
-        class="sc-iBkjds kXOvCG"
-        href="/contact"
-      >
-        Contact
-      </a>
-      <br />
-      <a
-        class="sc-iBkjds kXOvCG"
-        href="/support"
-      >
-        Support
-      </a>
-      <br />
-      <a
-        class="sc-iBkjds kXOvCG"
-        href="/debug"
-      >
-        Debug tools
-      </a>
-      <br />
-      <a
-        class="sc-iBkjds kXOvCG"
-        href="/status"
-      >
-        Status
-      </a>
-    </span>
-  </div>
-  <div
-    class="sc-jqUVSM leXYdV site-map__section"
-  >
-    <h1
-      class="sc-dkzDqf ddFalQ sc-crXcEl ioFrJl"
-      id="random-🐉"
-    >
-      Random 🐉
-    </h1>
-    <span
-      class="sc-evZas FCsLq"
-    >
-      <a
-        aria-label="Robots.txt (opens in a new tab)"
-        class="sc-iBkjds kXOvCG"
-        href="/robots.txt"
-        rel="noopener noreferrer"
-        target="_blank"
-      >
-        Robots.txt
-        <div
-          class="sc-ftvSup kUuEWK"
+        <a
+          class="sc-iBkjds kXOvCG"
+          href="/blog"
         >
-          <svg
-            class="sc-gKXOVf ktoyia sc-papXJ fmVkXn"
-            height="18"
-            viewBox="0 0 24 24"
-            width="18"
-            xmlns="http://www.w3.org/2000/svg"
+          Blog list
+        </a>
+        <br />
+        <a
+          class="sc-iBkjds kXOvCG"
+          href="/blog/asdfg"
+        >
+          Blog 1 🎉
+        </a>
+        <br />
+      </span>
+    </div>
+    <div
+      class="sc-jqUVSM leXYdV site-map__section"
+    >
+      <h1
+        class="sc-dkzDqf ddFalQ sc-crXcEl ioFrJl"
+        id="photography-📷"
+      >
+        Photography 📷
+      </h1>
+      <span
+        class="sc-evZas FCsLq"
+      >
+        <a
+          class="sc-iBkjds kXOvCG"
+          href="/photography"
+        >
+          Photography
+        </a>
+      </span>
+    </div>
+    <div
+      class="sc-jqUVSM leXYdV site-map__section"
+    >
+      <h1
+        class="sc-dkzDqf ddFalQ sc-crXcEl ioFrJl"
+        id="medals-🏅"
+      >
+        Medals 🏅
+      </h1>
+      <span
+        class="sc-evZas FCsLq"
+      >
+        <a
+          class="sc-iBkjds kXOvCG"
+          href="/medals"
+        >
+          Medals
+        </a>
+      </span>
+    </div>
+    <div
+      class="sc-jqUVSM leXYdV site-map__section"
+    >
+      <h1
+        class="sc-dkzDqf ddFalQ sc-crXcEl ioFrJl"
+        id="work-📱"
+      >
+        Work 📱
+      </h1>
+      <span
+        class="sc-evZas FCsLq"
+      >
+        <a
+          class="sc-iBkjds kXOvCG"
+          href="/work"
+        >
+          Overview
+        </a>
+        <br />
+        <a
+          class="sc-iBkjds kXOvCG"
+          href="/work/backpack"
+        >
+          Backpack
+        </a>
+        <br />
+        <a
+          class="sc-iBkjds kXOvCG"
+          href="/work/degree"
+        >
+          Degree
+        </a>
+        <br />
+        <a
+          class="sc-iBkjds kXOvCG"
+          href="/work/epicc"
+        >
+          EPICC
+        </a>
+      </span>
+    </div>
+    <div
+      class="sc-jqUVSM leXYdV site-map__section"
+    >
+      <h1
+        class="sc-dkzDqf ddFalQ sc-crXcEl ioFrJl"
+        id="design-🎨"
+      >
+        Design 🎨
+      </h1>
+      <span
+        class="sc-evZas FCsLq"
+      >
+        <a
+          class="sc-iBkjds kXOvCG"
+          href="/privacy-policy"
+        >
+          Privacy Policy
+        </a>
+      </span>
+    </div>
+    <div
+      class="sc-jqUVSM leXYdV site-map__section"
+    >
+      <h1
+        class="sc-dkzDqf ddFalQ sc-crXcEl ioFrJl"
+        id="other-stuff-🤷‍♂️"
+      >
+        Other stuff 🤷‍♂️
+      </h1>
+      <span
+        class="sc-evZas FCsLq"
+      >
+        <a
+          class="sc-iBkjds kXOvCG"
+          href="/contact"
+        >
+          Contact
+        </a>
+        <br />
+        <a
+          class="sc-iBkjds kXOvCG"
+          href="/support"
+        >
+          Support
+        </a>
+        <br />
+        <a
+          class="sc-iBkjds kXOvCG"
+          href="/debug"
+        >
+          Debug tools
+        </a>
+        <br />
+        <a
+          class="sc-iBkjds kXOvCG"
+          href="/status"
+        >
+          Status
+        </a>
+      </span>
+    </div>
+    <div
+      class="sc-jqUVSM leXYdV site-map__section"
+    >
+      <h1
+        class="sc-dkzDqf ddFalQ sc-crXcEl ioFrJl"
+        id="random-🐉"
+      >
+        Random 🐉
+      </h1>
+      <span
+        class="sc-evZas FCsLq"
+      >
+        <a
+          aria-label="Robots.txt (opens in a new tab)"
+          class="sc-iBkjds kXOvCG"
+          href="/robots.txt"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          Robots.txt
+          <div
+            class="sc-ftvSup kUuEWK"
           >
-            <path
-              d="M12.5 11.3c.4.4 1 .4 1.4 0L19 6.2V9c0 .6.4 1 1 1s1-.4 1-1V4c0-.6-.4-1-1-1h-5c-.6 0-1 .4-1 1s.4 1 1 1h2.4l-4.9 4.9c-.4.4-.4 1 0 1.4zM19 19c0 1.1-.9 2-2 2H5c-1.1 0-2-.9-2-2V7c0-1.1.9-2 2-2h7v2H5v12h12v-7h2"
-            />
-          </svg>
-        </div>
-      </a>
-      <br />
-      <a
-        aria-label="SiteMap.xml (opens in a new tab)"
-        class="sc-iBkjds kXOvCG"
-        href="/sitemap.xml"
-        rel="noopener noreferrer"
-        target="_blank"
-      >
-        SiteMap.xml
-        <div
-          class="sc-ftvSup kUuEWK"
+            <svg
+              class="sc-gKXOVf ktoyia sc-papXJ fmVkXn"
+              height="18"
+              viewBox="0 0 24 24"
+              width="18"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M12.5 11.3c.4.4 1 .4 1.4 0L19 6.2V9c0 .6.4 1 1 1s1-.4 1-1V4c0-.6-.4-1-1-1h-5c-.6 0-1 .4-1 1s.4 1 1 1h2.4l-4.9 4.9c-.4.4-.4 1 0 1.4zM19 19c0 1.1-.9 2-2 2H5c-1.1 0-2-.9-2-2V7c0-1.1.9-2 2-2h7v2H5v12h12v-7h2"
+              />
+            </svg>
+          </div>
+        </a>
+        <br />
+        <a
+          aria-label="SiteMap.xml (opens in a new tab)"
+          class="sc-iBkjds kXOvCG"
+          href="/sitemap.xml"
+          rel="noopener noreferrer"
+          target="_blank"
         >
-          <svg
-            class="sc-gKXOVf ktoyia sc-papXJ fmVkXn"
-            height="18"
-            viewBox="0 0 24 24"
-            width="18"
-            xmlns="http://www.w3.org/2000/svg"
+          SiteMap.xml
+          <div
+            class="sc-ftvSup kUuEWK"
           >
-            <path
-              d="M12.5 11.3c.4.4 1 .4 1.4 0L19 6.2V9c0 .6.4 1 1 1s1-.4 1-1V4c0-.6-.4-1-1-1h-5c-.6 0-1 .4-1 1s.4 1 1 1h2.4l-4.9 4.9c-.4.4-.4 1 0 1.4zM19 19c0 1.1-.9 2-2 2H5c-1.1 0-2-.9-2-2V7c0-1.1.9-2 2-2h7v2H5v12h12v-7h2"
-            />
-          </svg>
+            <svg
+              class="sc-gKXOVf ktoyia sc-papXJ fmVkXn"
+              height="18"
+              viewBox="0 0 24 24"
+              width="18"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M12.5 11.3c.4.4 1 .4 1.4 0L19 6.2V9c0 .6.4 1 1 1s1-.4 1-1V4c0-.6-.4-1-1-1h-5c-.6 0-1 .4-1 1s.4 1 1 1h2.4l-4.9 4.9c-.4.4-.4 1 0 1.4zM19 19c0 1.1-.9 2-2 2H5c-1.1 0-2-.9-2-2V7c0-1.1.9-2 2-2h7v2H5v12h12v-7h2"
+              />
+            </svg>
+          </div>
+        </a>
+        <br />
+        <a
+          class="sc-iBkjds kXOvCG"
+          href="/404"
+        >
+          404 error page - not found
+        </a>
+        <br />
+        <a
+          class="sc-iBkjds kXOvCG"
+          href="/teapot"
+        >
+          418 error page - I'm a teapot
+        </a>
+      </span>
+    </div>
+    <div
+      class="sc-jqUVSM leXYdV site-map__section"
+    >
+      <h1
+        class="sc-dkzDqf ddFalQ sc-crXcEl ioFrJl"
+        id="api"
+      >
+        API
+      </h1>
+      <span
+        class="sc-evZas FCsLq"
+      >
+        <a
+          class="sc-iBkjds kXOvCG"
+          href="/api-docs"
+        >
+          API docs
+        </a>
+      </span>
+    </div>
+    <div
+      class="sc-jqUVSM leXYdV site-map__section"
+    >
+      <h1
+        class="sc-dkzDqf ddFalQ sc-crXcEl ioFrJl"
+        id="accounts-🔑"
+      >
+        Accounts 🔑
+      </h1>
+      <span
+        class="sc-evZas FCsLq"
+      >
+        <a
+          class="sc-iBkjds kXOvCG"
+          href="/account"
+        >
+          Account
+        </a>
+        <br />
+        <a
+          class="sc-iBkjds kXOvCG"
+          href="/sign-up"
+        >
+          Sign up
+        </a>
+        <br />
+        <a
+          class="sc-iBkjds kXOvCG"
+          href="/login"
+        >
+          Log in
+        </a>
+        <br />
+        <a
+          class="sc-iBkjds kXOvCG"
+          href="/email-verification"
+        >
+          Email verification
+        </a>
+        <br />
+        <a
+          class="sc-iBkjds kXOvCG"
+          href="/magic-login"
+        >
+          Magic login
+        </a>
+      </span>
+    </div>
+    <div
+      class="sc-jqUVSM leXYdV site-map__section"
+    >
+      <h1
+        class="sc-dkzDqf ddFalQ sc-crXcEl ioFrJl"
+        id="admin-👮‍♂️"
+      >
+        Admin 👮‍♂️
+      </h1>
+      <span
+        class="sc-evZas FCsLq"
+      >
+        <a
+          class="sc-iBkjds kXOvCG"
+          href="/admin"
+        >
+          Admin navigation
+        </a>
+        <br />
+        <a
+          class="sc-iBkjds kXOvCG"
+          href="/blog"
+        >
+          Blogs
+        </a>
+        <br />
+        <a
+          class="sc-iBkjds kXOvCG"
+          href="/admin/analytics"
+        >
+          Analytics
+        </a>
+        <br />
+        <a
+          class="sc-iBkjds kXOvCG"
+          href="/admin/emails"
+        >
+          Emails
+        </a>
+        <br />
+        <a
+          class="sc-iBkjds kXOvCG"
+          href="/admin/notifications"
+        >
+          Notifications
+        </a>
+        <br />
+        <a
+          class="sc-iBkjds kXOvCG"
+          href="/admin/users"
+        >
+          Users
+        </a>
+      </span>
+    </div>
+    <div
+      class="sc-jqUVSM leXYdV site-map__section"
+    >
+      <h1
+        class="sc-dkzDqf ddFalQ sc-crXcEl ioFrJl"
+        id="redirects-👉"
+      >
+        Redirects 👉
+      </h1>
+      <span
+        class="sc-evZas FCsLq"
+      >
+        <div>
+          <a
+            class="sc-iBkjds kXOvCG"
+            href="/codebase"
+          >
+            /codebase ⇒ https://github.com/georgegillams/georgegillams.co.uk
+          </a>
+          <br />
         </div>
-      </a>
-      <br />
-      <a
-        class="sc-iBkjds kXOvCG"
-        href="/404"
-      >
-        404 error page - not found
-      </a>
-      <br />
-      <a
-        class="sc-iBkjds kXOvCG"
-        href="/teapot"
-      >
-        418 error page - I'm a teapot
-      </a>
-    </span>
-  </div>
-  <div
-    class="sc-jqUVSM leXYdV site-map__section"
-  >
-    <h1
-      class="sc-dkzDqf ddFalQ sc-crXcEl ioFrJl"
-      id="api"
-    >
-      API
-    </h1>
-    <span
-      class="sc-evZas FCsLq"
-    >
-      <a
-        class="sc-iBkjds kXOvCG"
-        href="/api-docs"
-      >
-        API docs
-      </a>
-    </span>
-  </div>
-  <div
-    class="sc-jqUVSM leXYdV site-map__section"
-  >
-    <h1
-      class="sc-dkzDqf ddFalQ sc-crXcEl ioFrJl"
-      id="accounts-🔑"
-    >
-      Accounts 🔑
-    </h1>
-    <span
-      class="sc-evZas FCsLq"
-    >
-      <a
-        class="sc-iBkjds kXOvCG"
-        href="/account"
-      >
-        Account
-      </a>
-      <br />
-      <a
-        class="sc-iBkjds kXOvCG"
-        href="/sign-up"
-      >
-        Sign up
-      </a>
-      <br />
-      <a
-        class="sc-iBkjds kXOvCG"
-        href="/login"
-      >
-        Log in
-      </a>
-      <br />
-      <a
-        class="sc-iBkjds kXOvCG"
-        href="/email-verification"
-      >
-        Email verification
-      </a>
-      <br />
-      <a
-        class="sc-iBkjds kXOvCG"
-        href="/magic-login"
-      >
-        Magic login
-      </a>
-    </span>
-  </div>
-  <div
-    class="sc-jqUVSM leXYdV site-map__section"
-  >
-    <h1
-      class="sc-dkzDqf ddFalQ sc-crXcEl ioFrJl"
-      id="admin-👮‍♂️"
-    >
-      Admin 👮‍♂️
-    </h1>
-    <span
-      class="sc-evZas FCsLq"
-    >
-      <a
-        class="sc-iBkjds kXOvCG"
-        href="/admin"
-      >
-        Admin navigation
-      </a>
-      <br />
-      <a
-        class="sc-iBkjds kXOvCG"
-        href="/blog"
-      >
-        Blogs
-      </a>
-      <br />
-      <a
-        class="sc-iBkjds kXOvCG"
-        href="/admin/analytics"
-      >
-        Analytics
-      </a>
-      <br />
-      <a
-        class="sc-iBkjds kXOvCG"
-        href="/admin/emails"
-      >
-        Emails
-      </a>
-      <br />
-      <a
-        class="sc-iBkjds kXOvCG"
-        href="/admin/notifications"
-      >
-        Notifications
-      </a>
-      <br />
-      <a
-        class="sc-iBkjds kXOvCG"
-        href="/admin/users"
-      >
-        Users
-      </a>
-    </span>
-  </div>
-  <div
-    class="sc-jqUVSM leXYdV site-map__section"
-  >
-    <h1
-      class="sc-dkzDqf ddFalQ sc-crXcEl ioFrJl"
-      id="redirects-👉"
-    >
-      Redirects 👉
-    </h1>
-    <span
-      class="sc-evZas FCsLq"
-    >
-      <div>
-        <a
-          class="sc-iBkjds kXOvCG"
-          href="/codebase"
-        >
-          /codebase ⇒ https://github.com/georgegillams/georgegillams.co.uk
-        </a>
-        <br />
-      </div>
-      <div>
-        <a
-          class="sc-iBkjds kXOvCG"
-          href="/copyright"
-        >
-          /copyright ⇒ https://creativecommons.org/licenses/by-sa/3.0/
-        </a>
-        <br />
-      </div>
-      <div>
-        <a
-          class="sc-iBkjds kXOvCG"
-          href="/flickr"
-        >
-          /flickr ⇒ https://www.flickr.com/people/georgegillams
-        </a>
-        <br />
-      </div>
-      <div>
-        <a
-          class="sc-iBkjds kXOvCG"
-          href="/monzo"
-        >
-          /monzo ⇒ https://join.monzo.com/r/vjd3d74
-        </a>
-        <br />
-      </div>
-      <div>
-        <a
-          class="sc-iBkjds kXOvCG"
-          href="/github"
-        >
-          /github ⇒ https://github.com/georgegillams
-        </a>
-        <br />
-      </div>
-      <div>
-        <a
-          class="sc-iBkjds kXOvCG"
-          href="/stackoverflow"
-        >
-          /stackoverflow ⇒ https://stackoverflow.com/users/14463713/georgegillams
-        </a>
-        <br />
-      </div>
-      <div>
-        <a
-          class="sc-iBkjds kXOvCG"
-          href="/gurushots"
-        >
-          /gurushots ⇒ https://gurushots.com/georgegillams/photos
-        </a>
-        <br />
-      </div>
-      <div>
-        <a
-          class="sc-iBkjds kXOvCG"
-          href="/unsplash"
-        >
-          /unsplash ⇒ https://unsplash.com/@georgegillams/
-        </a>
-        <br />
-      </div>
-      <div>
-        <a
-          class="sc-iBkjds kXOvCG"
-          href="/strava"
-        >
-          /strava ⇒ https://www.strava.com/athletes/7221483
-        </a>
-        <br />
-      </div>
-      <div>
-        <a
-          class="sc-iBkjds kXOvCG"
-          href="/linkedin"
-        >
-          /linkedin ⇒ https://www.linkedin.com/in/george-gillams-37537077
-        </a>
-        <br />
-      </div>
-      <div>
-        <a
-          class="sc-iBkjds kXOvCG"
-          href="/twitter"
-        >
-          /twitter ⇒ https://twitter.com/georgegillams
-        </a>
-        <br />
-      </div>
-      <div>
-        <a
-          class="sc-iBkjds kXOvCG"
-          href="/wp-admin"
-        >
-          /wp-admin ⇒ /admin
-        </a>
-        <br />
-      </div>
-      <div>
-        <a
-          class="sc-iBkjds kXOvCG"
-          href="/about"
-        >
-          /about ⇒ /
-        </a>
-        <br />
-      </div>
-      <div>
-        <a
-          class="sc-iBkjds kXOvCG"
-          href="/site-map"
-        >
-          /site-map ⇒ /sitemap
-        </a>
-        <br />
-      </div>
-      <div>
-        <a
-          class="sc-iBkjds kXOvCG"
-          href="/about/degree"
-        >
-          /about/degree ⇒ /work/degree
-        </a>
-        <br />
-      </div>
-      <div>
-        <a
-          class="sc-iBkjds kXOvCG"
-          href="/articles/tough-mudder"
-        >
-          /articles/tough-mudder ⇒ /blog/tough-mudder
-        </a>
-        <br />
-      </div>
-      <div>
-        <a
-          class="sc-iBkjds kXOvCG"
-          href="/articles/net-neutrality"
-        >
-          /articles/net-neutrality ⇒ /blog/net-neutrality
-        </a>
-        <br />
-      </div>
-      <div>
-        <a
-          class="sc-iBkjds kXOvCG"
-          href="/articles/vim"
-        >
-          /articles/vim ⇒ /blog/vim
-        </a>
-        <br />
-      </div>
-      <div>
-        <a
-          class="sc-iBkjds kXOvCG"
-          href="/articles/list"
-        >
-          /articles/list ⇒ /blog
-        </a>
-        <br />
-      </div>
-      <div>
-        <a
-          class="sc-iBkjds kXOvCG"
-          href="/articles"
-        >
-          /articles ⇒ /blog
-        </a>
-        <br />
-      </div>
-      <div>
-        <a
-          class="sc-iBkjds kXOvCG"
-          href="/net-neutrality"
-        >
-          /net-neutrality ⇒ /blog/net-neutrality
-        </a>
-        <br />
-      </div>
-      <div>
-        <a
-          class="sc-iBkjds kXOvCG"
-          href="/work/side-projects"
-        >
-          /work/side-projects ⇒ /work
-        </a>
-        <br />
-      </div>
-      <div>
-        <a
-          class="sc-iBkjds kXOvCG"
-          href="/blog/view"
-        >
-          /blog/view ⇒ /blog
-        </a>
-        <br />
-      </div>
-      <div>
-        <a
-          class="sc-iBkjds kXOvCG"
-          href="/travel"
-        >
-          /travel ⇒ /blog
-        </a>
-        <br />
-      </div>
-      <div>
-        <a
-          class="sc-iBkjds kXOvCG"
-          href="/travel/list"
-        >
-          /travel/list ⇒ /blog
-        </a>
-        <br />
-      </div>
-      <div>
-        <a
-          class="sc-iBkjds kXOvCG"
-          href="/blog/view?id=tg5x7po9"
-        >
-          /blog/view?id=tg5x7po9 ⇒ /blog/tough-mudder
-        </a>
-        <br />
-      </div>
-      <div>
-        <a
-          class="sc-iBkjds kXOvCG"
-          href="/blog/view?id=lqngy"
-        >
-          /blog/view?id=lqngy ⇒ /blog/lightroom-workflow
-        </a>
-        <br />
-      </div>
-      <div>
-        <a
-          class="sc-iBkjds kXOvCG"
-          href="/blog/view?id=w85aht"
-        >
-          /blog/view?id=w85aht ⇒ /blog/net-neutrality
-        </a>
-        <br />
-      </div>
-      <div>
-        <a
-          class="sc-iBkjds kXOvCG"
-          href="/blog/view?id=azcpjh"
-        >
-          /blog/view?id=azcpjh ⇒ /blog/vim
-        </a>
-        <br />
-      </div>
-      <div>
-        <a
-          class="sc-iBkjds kXOvCG"
-          href="/blog/view?id=y77dnh"
-        >
-          /blog/view?id=y77dnh ⇒ /blog/uk-bank-security
-        </a>
-        <br />
-      </div>
-      <div>
-        <a
-          class="sc-iBkjds kXOvCG"
-          href="/art"
-        >
-          /art ⇒ /photography
-        </a>
-        <br />
-      </div>
-      <div>
-        <a
-          class="sc-iBkjds kXOvCG"
-          href="/photoshop"
-        >
-          /photoshop ⇒ /photography
-        </a>
-        <br />
-      </div>
-      <div>
-        <a
-          class="sc-iBkjds kXOvCG"
-          href="/phot"
-        >
-          /phot ⇒ /photography
-        </a>
-        <br />
-      </div>
-      <div>
-        <a
-          class="sc-iBkjds kXOvCG"
-          href="/photo"
-        >
-          /photo ⇒ /photography
-        </a>
-        <br />
-      </div>
-    </span>
+        <div>
+          <a
+            class="sc-iBkjds kXOvCG"
+            href="/copyright"
+          >
+            /copyright ⇒ https://creativecommons.org/licenses/by-sa/3.0/
+          </a>
+          <br />
+        </div>
+        <div>
+          <a
+            class="sc-iBkjds kXOvCG"
+            href="/flickr"
+          >
+            /flickr ⇒ https://www.flickr.com/people/georgegillams
+          </a>
+          <br />
+        </div>
+        <div>
+          <a
+            class="sc-iBkjds kXOvCG"
+            href="/monzo"
+          >
+            /monzo ⇒ https://join.monzo.com/r/vjd3d74
+          </a>
+          <br />
+        </div>
+        <div>
+          <a
+            class="sc-iBkjds kXOvCG"
+            href="/github"
+          >
+            /github ⇒ https://github.com/georgegillams
+          </a>
+          <br />
+        </div>
+        <div>
+          <a
+            class="sc-iBkjds kXOvCG"
+            href="/stackoverflow"
+          >
+            /stackoverflow ⇒ https://stackoverflow.com/users/14463713/georgegillams
+          </a>
+          <br />
+        </div>
+        <div>
+          <a
+            class="sc-iBkjds kXOvCG"
+            href="/gurushots"
+          >
+            /gurushots ⇒ https://gurushots.com/georgegillams/photos
+          </a>
+          <br />
+        </div>
+        <div>
+          <a
+            class="sc-iBkjds kXOvCG"
+            href="/unsplash"
+          >
+            /unsplash ⇒ https://unsplash.com/@georgegillams/
+          </a>
+          <br />
+        </div>
+        <div>
+          <a
+            class="sc-iBkjds kXOvCG"
+            href="/strava"
+          >
+            /strava ⇒ https://www.strava.com/athletes/7221483
+          </a>
+          <br />
+        </div>
+        <div>
+          <a
+            class="sc-iBkjds kXOvCG"
+            href="/linkedin"
+          >
+            /linkedin ⇒ https://www.linkedin.com/in/george-gillams-37537077
+          </a>
+          <br />
+        </div>
+        <div>
+          <a
+            class="sc-iBkjds kXOvCG"
+            href="/twitter"
+          >
+            /twitter ⇒ https://twitter.com/georgegillams
+          </a>
+          <br />
+        </div>
+        <div>
+          <a
+            class="sc-iBkjds kXOvCG"
+            href="/wp-admin"
+          >
+            /wp-admin ⇒ /admin
+          </a>
+          <br />
+        </div>
+        <div>
+          <a
+            class="sc-iBkjds kXOvCG"
+            href="/about"
+          >
+            /about ⇒ /
+          </a>
+          <br />
+        </div>
+        <div>
+          <a
+            class="sc-iBkjds kXOvCG"
+            href="/site-map"
+          >
+            /site-map ⇒ /sitemap
+          </a>
+          <br />
+        </div>
+        <div>
+          <a
+            class="sc-iBkjds kXOvCG"
+            href="/about/degree"
+          >
+            /about/degree ⇒ /work/degree
+          </a>
+          <br />
+        </div>
+        <div>
+          <a
+            class="sc-iBkjds kXOvCG"
+            href="/articles/tough-mudder"
+          >
+            /articles/tough-mudder ⇒ /blog/tough-mudder
+          </a>
+          <br />
+        </div>
+        <div>
+          <a
+            class="sc-iBkjds kXOvCG"
+            href="/articles/net-neutrality"
+          >
+            /articles/net-neutrality ⇒ /blog/net-neutrality
+          </a>
+          <br />
+        </div>
+        <div>
+          <a
+            class="sc-iBkjds kXOvCG"
+            href="/articles/vim"
+          >
+            /articles/vim ⇒ /blog/vim
+          </a>
+          <br />
+        </div>
+        <div>
+          <a
+            class="sc-iBkjds kXOvCG"
+            href="/articles/list"
+          >
+            /articles/list ⇒ /blog
+          </a>
+          <br />
+        </div>
+        <div>
+          <a
+            class="sc-iBkjds kXOvCG"
+            href="/articles"
+          >
+            /articles ⇒ /blog
+          </a>
+          <br />
+        </div>
+        <div>
+          <a
+            class="sc-iBkjds kXOvCG"
+            href="/net-neutrality"
+          >
+            /net-neutrality ⇒ /blog/net-neutrality
+          </a>
+          <br />
+        </div>
+        <div>
+          <a
+            class="sc-iBkjds kXOvCG"
+            href="/work/side-projects"
+          >
+            /work/side-projects ⇒ /work
+          </a>
+          <br />
+        </div>
+        <div>
+          <a
+            class="sc-iBkjds kXOvCG"
+            href="/blog/view"
+          >
+            /blog/view ⇒ /blog
+          </a>
+          <br />
+        </div>
+        <div>
+          <a
+            class="sc-iBkjds kXOvCG"
+            href="/travel"
+          >
+            /travel ⇒ /blog
+          </a>
+          <br />
+        </div>
+        <div>
+          <a
+            class="sc-iBkjds kXOvCG"
+            href="/travel/list"
+          >
+            /travel/list ⇒ /blog
+          </a>
+          <br />
+        </div>
+        <div>
+          <a
+            class="sc-iBkjds kXOvCG"
+            href="/blog/view?id=tg5x7po9"
+          >
+            /blog/view?id=tg5x7po9 ⇒ /blog/tough-mudder
+          </a>
+          <br />
+        </div>
+        <div>
+          <a
+            class="sc-iBkjds kXOvCG"
+            href="/blog/view?id=lqngy"
+          >
+            /blog/view?id=lqngy ⇒ /blog/lightroom-workflow
+          </a>
+          <br />
+        </div>
+        <div>
+          <a
+            class="sc-iBkjds kXOvCG"
+            href="/blog/view?id=w85aht"
+          >
+            /blog/view?id=w85aht ⇒ /blog/net-neutrality
+          </a>
+          <br />
+        </div>
+        <div>
+          <a
+            class="sc-iBkjds kXOvCG"
+            href="/blog/view?id=azcpjh"
+          >
+            /blog/view?id=azcpjh ⇒ /blog/vim
+          </a>
+          <br />
+        </div>
+        <div>
+          <a
+            class="sc-iBkjds kXOvCG"
+            href="/blog/view?id=y77dnh"
+          >
+            /blog/view?id=y77dnh ⇒ /blog/uk-bank-security
+          </a>
+          <br />
+        </div>
+        <div>
+          <a
+            class="sc-iBkjds kXOvCG"
+            href="/art"
+          >
+            /art ⇒ /photography
+          </a>
+          <br />
+        </div>
+        <div>
+          <a
+            class="sc-iBkjds kXOvCG"
+            href="/photoshop"
+          >
+            /photoshop ⇒ /photography
+          </a>
+          <br />
+        </div>
+        <div>
+          <a
+            class="sc-iBkjds kXOvCG"
+            href="/phot"
+          >
+            /phot ⇒ /photography
+          </a>
+          <br />
+        </div>
+        <div>
+          <a
+            class="sc-iBkjds kXOvCG"
+            href="/photo"
+          >
+            /photo ⇒ /photography
+          </a>
+          <br />
+        </div>
+      </span>
+    </div>
   </div>
 </div>
 `;
 
 exports[`<SiteMap /> should render correctly with blogs and admin user 1`] = `
 <div>
-  <h1
-    class="sc-bczRLJ hDLBIv sc-hAZoDl cDlBMk"
-  >
-    Site map
-  </h1>
   <div
-    class="sc-jqUVSM leXYdV site-map__section"
+    class="sc-fEOsli kRThfC page-containerstyles__StyledPageContainer-sc-19l7k4-0"
+    width="default"
   >
     <h1
-      class="sc-dkzDqf ddFalQ sc-crXcEl ioFrJl"
-      id="blog-📝"
+      class="sc-bczRLJ hDLBIv sc-hAZoDl cDlBMk"
     >
-      Blog 📝
+      Site map
     </h1>
-    <span
-      class="sc-evZas FCsLq"
+    <div
+      class="sc-jqUVSM leXYdV site-map__section"
     >
-      <a
-        class="sc-iBkjds kXOvCG"
-        href="/blog"
+      <h1
+        class="sc-dkzDqf ddFalQ sc-crXcEl ioFrJl"
+        id="blog-📝"
       >
-        Blog list
-      </a>
-      <br />
-      <a
-        class="sc-iBkjds kXOvCG"
-        href="/blog/asdfg"
+        Blog 📝
+      </h1>
+      <span
+        class="sc-evZas FCsLq"
       >
-        Blog 1 🎉
-      </a>
-      <br />
-    </span>
-  </div>
-  <div
-    class="sc-jqUVSM leXYdV site-map__section"
-  >
-    <h1
-      class="sc-dkzDqf ddFalQ sc-crXcEl ioFrJl"
-      id="all-blogs"
-    >
-      All blogs
-    </h1>
-    <span
-      class="sc-evZas FCsLq"
-    >
-      <a
-        class="sc-iBkjds kXOvCG"
-        href="/blog/asdfg"
-      >
-        Blog 1 🎉
-      </a>
-      <br />
-      <a
-        class="sc-iBkjds kXOvCG"
-        href="/blog/asdfg"
-      >
-        Untitled blog
-      </a>
-      <br />
-      <a
-        class="sc-iBkjds kXOvCG"
-        href="/blog/zxywvuts"
-      >
-        St. Ives ⛵ 2018
-      </a>
-      <br />
-      <a
-        class="sc-iBkjds kXOvCG"
-        href="/blog/mndyd8"
-      >
-        Untitled blog
-         (deleted)
-      </a>
-      <br />
-    </span>
-  </div>
-  <div
-    class="sc-jqUVSM leXYdV site-map__section"
-  >
-    <h1
-      class="sc-dkzDqf ddFalQ sc-crXcEl ioFrJl"
-      id="photography-📷"
-    >
-      Photography 📷
-    </h1>
-    <span
-      class="sc-evZas FCsLq"
-    >
-      <a
-        class="sc-iBkjds kXOvCG"
-        href="/photography"
-      >
-        Photography
-      </a>
-    </span>
-  </div>
-  <div
-    class="sc-jqUVSM leXYdV site-map__section"
-  >
-    <h1
-      class="sc-dkzDqf ddFalQ sc-crXcEl ioFrJl"
-      id="medals-🏅"
-    >
-      Medals 🏅
-    </h1>
-    <span
-      class="sc-evZas FCsLq"
-    >
-      <a
-        class="sc-iBkjds kXOvCG"
-        href="/medals"
-      >
-        Medals
-      </a>
-    </span>
-  </div>
-  <div
-    class="sc-jqUVSM leXYdV site-map__section"
-  >
-    <h1
-      class="sc-dkzDqf ddFalQ sc-crXcEl ioFrJl"
-      id="work-📱"
-    >
-      Work 📱
-    </h1>
-    <span
-      class="sc-evZas FCsLq"
-    >
-      <a
-        class="sc-iBkjds kXOvCG"
-        href="/work"
-      >
-        Overview
-      </a>
-      <br />
-      <a
-        class="sc-iBkjds kXOvCG"
-        href="/work/backpack"
-      >
-        Backpack
-      </a>
-      <br />
-      <a
-        class="sc-iBkjds kXOvCG"
-        href="/work/degree"
-      >
-        Degree
-      </a>
-      <br />
-      <a
-        class="sc-iBkjds kXOvCG"
-        href="/work/epicc"
-      >
-        EPICC
-      </a>
-    </span>
-  </div>
-  <div
-    class="sc-jqUVSM leXYdV site-map__section"
-  >
-    <h1
-      class="sc-dkzDqf ddFalQ sc-crXcEl ioFrJl"
-      id="design-🎨"
-    >
-      Design 🎨
-    </h1>
-    <span
-      class="sc-evZas FCsLq"
-    >
-      <a
-        class="sc-iBkjds kXOvCG"
-        href="/privacy-policy"
-      >
-        Privacy Policy
-      </a>
-    </span>
-  </div>
-  <div
-    class="sc-jqUVSM leXYdV site-map__section"
-  >
-    <h1
-      class="sc-dkzDqf ddFalQ sc-crXcEl ioFrJl"
-      id="other-stuff-🤷‍♂️"
-    >
-      Other stuff 🤷‍♂️
-    </h1>
-    <span
-      class="sc-evZas FCsLq"
-    >
-      <a
-        class="sc-iBkjds kXOvCG"
-        href="/contact"
-      >
-        Contact
-      </a>
-      <br />
-      <a
-        class="sc-iBkjds kXOvCG"
-        href="/support"
-      >
-        Support
-      </a>
-      <br />
-      <a
-        class="sc-iBkjds kXOvCG"
-        href="/debug"
-      >
-        Debug tools
-      </a>
-      <br />
-      <a
-        class="sc-iBkjds kXOvCG"
-        href="/status"
-      >
-        Status
-      </a>
-    </span>
-  </div>
-  <div
-    class="sc-jqUVSM leXYdV site-map__section"
-  >
-    <h1
-      class="sc-dkzDqf ddFalQ sc-crXcEl ioFrJl"
-      id="random-🐉"
-    >
-      Random 🐉
-    </h1>
-    <span
-      class="sc-evZas FCsLq"
-    >
-      <a
-        aria-label="Robots.txt (opens in a new tab)"
-        class="sc-iBkjds kXOvCG"
-        href="/robots.txt"
-        rel="noopener noreferrer"
-        target="_blank"
-      >
-        Robots.txt
-        <div
-          class="sc-ftvSup kUuEWK"
+        <a
+          class="sc-iBkjds kXOvCG"
+          href="/blog"
         >
-          <svg
-            class="sc-gKXOVf ktoyia sc-papXJ fmVkXn"
-            height="18"
-            viewBox="0 0 24 24"
-            width="18"
-            xmlns="http://www.w3.org/2000/svg"
+          Blog list
+        </a>
+        <br />
+        <a
+          class="sc-iBkjds kXOvCG"
+          href="/blog/asdfg"
+        >
+          Blog 1 🎉
+        </a>
+        <br />
+      </span>
+    </div>
+    <div
+      class="sc-jqUVSM leXYdV site-map__section"
+    >
+      <h1
+        class="sc-dkzDqf ddFalQ sc-crXcEl ioFrJl"
+        id="all-blogs"
+      >
+        All blogs
+      </h1>
+      <span
+        class="sc-evZas FCsLq"
+      >
+        <a
+          class="sc-iBkjds kXOvCG"
+          href="/blog/asdfg"
+        >
+          Blog 1 🎉
+        </a>
+        <br />
+        <a
+          class="sc-iBkjds kXOvCG"
+          href="/blog/asdfg"
+        >
+          Untitled blog
+        </a>
+        <br />
+        <a
+          class="sc-iBkjds kXOvCG"
+          href="/blog/zxywvuts"
+        >
+          St. Ives ⛵ 2018
+        </a>
+        <br />
+        <a
+          class="sc-iBkjds kXOvCG"
+          href="/blog/mndyd8"
+        >
+          Untitled blog
+           (deleted)
+        </a>
+        <br />
+      </span>
+    </div>
+    <div
+      class="sc-jqUVSM leXYdV site-map__section"
+    >
+      <h1
+        class="sc-dkzDqf ddFalQ sc-crXcEl ioFrJl"
+        id="photography-📷"
+      >
+        Photography 📷
+      </h1>
+      <span
+        class="sc-evZas FCsLq"
+      >
+        <a
+          class="sc-iBkjds kXOvCG"
+          href="/photography"
+        >
+          Photography
+        </a>
+      </span>
+    </div>
+    <div
+      class="sc-jqUVSM leXYdV site-map__section"
+    >
+      <h1
+        class="sc-dkzDqf ddFalQ sc-crXcEl ioFrJl"
+        id="medals-🏅"
+      >
+        Medals 🏅
+      </h1>
+      <span
+        class="sc-evZas FCsLq"
+      >
+        <a
+          class="sc-iBkjds kXOvCG"
+          href="/medals"
+        >
+          Medals
+        </a>
+      </span>
+    </div>
+    <div
+      class="sc-jqUVSM leXYdV site-map__section"
+    >
+      <h1
+        class="sc-dkzDqf ddFalQ sc-crXcEl ioFrJl"
+        id="work-📱"
+      >
+        Work 📱
+      </h1>
+      <span
+        class="sc-evZas FCsLq"
+      >
+        <a
+          class="sc-iBkjds kXOvCG"
+          href="/work"
+        >
+          Overview
+        </a>
+        <br />
+        <a
+          class="sc-iBkjds kXOvCG"
+          href="/work/backpack"
+        >
+          Backpack
+        </a>
+        <br />
+        <a
+          class="sc-iBkjds kXOvCG"
+          href="/work/degree"
+        >
+          Degree
+        </a>
+        <br />
+        <a
+          class="sc-iBkjds kXOvCG"
+          href="/work/epicc"
+        >
+          EPICC
+        </a>
+      </span>
+    </div>
+    <div
+      class="sc-jqUVSM leXYdV site-map__section"
+    >
+      <h1
+        class="sc-dkzDqf ddFalQ sc-crXcEl ioFrJl"
+        id="design-🎨"
+      >
+        Design 🎨
+      </h1>
+      <span
+        class="sc-evZas FCsLq"
+      >
+        <a
+          class="sc-iBkjds kXOvCG"
+          href="/privacy-policy"
+        >
+          Privacy Policy
+        </a>
+      </span>
+    </div>
+    <div
+      class="sc-jqUVSM leXYdV site-map__section"
+    >
+      <h1
+        class="sc-dkzDqf ddFalQ sc-crXcEl ioFrJl"
+        id="other-stuff-🤷‍♂️"
+      >
+        Other stuff 🤷‍♂️
+      </h1>
+      <span
+        class="sc-evZas FCsLq"
+      >
+        <a
+          class="sc-iBkjds kXOvCG"
+          href="/contact"
+        >
+          Contact
+        </a>
+        <br />
+        <a
+          class="sc-iBkjds kXOvCG"
+          href="/support"
+        >
+          Support
+        </a>
+        <br />
+        <a
+          class="sc-iBkjds kXOvCG"
+          href="/debug"
+        >
+          Debug tools
+        </a>
+        <br />
+        <a
+          class="sc-iBkjds kXOvCG"
+          href="/status"
+        >
+          Status
+        </a>
+      </span>
+    </div>
+    <div
+      class="sc-jqUVSM leXYdV site-map__section"
+    >
+      <h1
+        class="sc-dkzDqf ddFalQ sc-crXcEl ioFrJl"
+        id="random-🐉"
+      >
+        Random 🐉
+      </h1>
+      <span
+        class="sc-evZas FCsLq"
+      >
+        <a
+          aria-label="Robots.txt (opens in a new tab)"
+          class="sc-iBkjds kXOvCG"
+          href="/robots.txt"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          Robots.txt
+          <div
+            class="sc-ftvSup kUuEWK"
           >
-            <path
-              d="M12.5 11.3c.4.4 1 .4 1.4 0L19 6.2V9c0 .6.4 1 1 1s1-.4 1-1V4c0-.6-.4-1-1-1h-5c-.6 0-1 .4-1 1s.4 1 1 1h2.4l-4.9 4.9c-.4.4-.4 1 0 1.4zM19 19c0 1.1-.9 2-2 2H5c-1.1 0-2-.9-2-2V7c0-1.1.9-2 2-2h7v2H5v12h12v-7h2"
-            />
-          </svg>
-        </div>
-      </a>
-      <br />
-      <a
-        aria-label="SiteMap.xml (opens in a new tab)"
-        class="sc-iBkjds kXOvCG"
-        href="/sitemap.xml"
-        rel="noopener noreferrer"
-        target="_blank"
-      >
-        SiteMap.xml
-        <div
-          class="sc-ftvSup kUuEWK"
+            <svg
+              class="sc-gKXOVf ktoyia sc-papXJ fmVkXn"
+              height="18"
+              viewBox="0 0 24 24"
+              width="18"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M12.5 11.3c.4.4 1 .4 1.4 0L19 6.2V9c0 .6.4 1 1 1s1-.4 1-1V4c0-.6-.4-1-1-1h-5c-.6 0-1 .4-1 1s.4 1 1 1h2.4l-4.9 4.9c-.4.4-.4 1 0 1.4zM19 19c0 1.1-.9 2-2 2H5c-1.1 0-2-.9-2-2V7c0-1.1.9-2 2-2h7v2H5v12h12v-7h2"
+              />
+            </svg>
+          </div>
+        </a>
+        <br />
+        <a
+          aria-label="SiteMap.xml (opens in a new tab)"
+          class="sc-iBkjds kXOvCG"
+          href="/sitemap.xml"
+          rel="noopener noreferrer"
+          target="_blank"
         >
-          <svg
-            class="sc-gKXOVf ktoyia sc-papXJ fmVkXn"
-            height="18"
-            viewBox="0 0 24 24"
-            width="18"
-            xmlns="http://www.w3.org/2000/svg"
+          SiteMap.xml
+          <div
+            class="sc-ftvSup kUuEWK"
           >
-            <path
-              d="M12.5 11.3c.4.4 1 .4 1.4 0L19 6.2V9c0 .6.4 1 1 1s1-.4 1-1V4c0-.6-.4-1-1-1h-5c-.6 0-1 .4-1 1s.4 1 1 1h2.4l-4.9 4.9c-.4.4-.4 1 0 1.4zM19 19c0 1.1-.9 2-2 2H5c-1.1 0-2-.9-2-2V7c0-1.1.9-2 2-2h7v2H5v12h12v-7h2"
-            />
-          </svg>
+            <svg
+              class="sc-gKXOVf ktoyia sc-papXJ fmVkXn"
+              height="18"
+              viewBox="0 0 24 24"
+              width="18"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M12.5 11.3c.4.4 1 .4 1.4 0L19 6.2V9c0 .6.4 1 1 1s1-.4 1-1V4c0-.6-.4-1-1-1h-5c-.6 0-1 .4-1 1s.4 1 1 1h2.4l-4.9 4.9c-.4.4-.4 1 0 1.4zM19 19c0 1.1-.9 2-2 2H5c-1.1 0-2-.9-2-2V7c0-1.1.9-2 2-2h7v2H5v12h12v-7h2"
+              />
+            </svg>
+          </div>
+        </a>
+        <br />
+        <a
+          class="sc-iBkjds kXOvCG"
+          href="/404"
+        >
+          404 error page - not found
+        </a>
+        <br />
+        <a
+          class="sc-iBkjds kXOvCG"
+          href="/teapot"
+        >
+          418 error page - I'm a teapot
+        </a>
+      </span>
+    </div>
+    <div
+      class="sc-jqUVSM leXYdV site-map__section"
+    >
+      <h1
+        class="sc-dkzDqf ddFalQ sc-crXcEl ioFrJl"
+        id="api"
+      >
+        API
+      </h1>
+      <span
+        class="sc-evZas FCsLq"
+      >
+        <a
+          class="sc-iBkjds kXOvCG"
+          href="/api-docs"
+        >
+          API docs
+        </a>
+      </span>
+    </div>
+    <div
+      class="sc-jqUVSM leXYdV site-map__section"
+    >
+      <h1
+        class="sc-dkzDqf ddFalQ sc-crXcEl ioFrJl"
+        id="accounts-🔑"
+      >
+        Accounts 🔑
+      </h1>
+      <span
+        class="sc-evZas FCsLq"
+      >
+        <a
+          class="sc-iBkjds kXOvCG"
+          href="/account"
+        >
+          Account
+        </a>
+        <br />
+        <a
+          class="sc-iBkjds kXOvCG"
+          href="/sign-up"
+        >
+          Sign up
+        </a>
+        <br />
+        <a
+          class="sc-iBkjds kXOvCG"
+          href="/login"
+        >
+          Log in
+        </a>
+        <br />
+        <a
+          class="sc-iBkjds kXOvCG"
+          href="/email-verification"
+        >
+          Email verification
+        </a>
+        <br />
+        <a
+          class="sc-iBkjds kXOvCG"
+          href="/magic-login"
+        >
+          Magic login
+        </a>
+      </span>
+    </div>
+    <div
+      class="sc-jqUVSM leXYdV site-map__section"
+    >
+      <h1
+        class="sc-dkzDqf ddFalQ sc-crXcEl ioFrJl"
+        id="admin-👮‍♂️"
+      >
+        Admin 👮‍♂️
+      </h1>
+      <span
+        class="sc-evZas FCsLq"
+      >
+        <a
+          class="sc-iBkjds kXOvCG"
+          href="/admin"
+        >
+          Admin navigation
+        </a>
+        <br />
+        <a
+          class="sc-iBkjds kXOvCG"
+          href="/blog"
+        >
+          Blogs
+        </a>
+        <br />
+        <a
+          class="sc-iBkjds kXOvCG"
+          href="/admin/analytics"
+        >
+          Analytics
+        </a>
+        <br />
+        <a
+          class="sc-iBkjds kXOvCG"
+          href="/admin/emails"
+        >
+          Emails
+        </a>
+        <br />
+        <a
+          class="sc-iBkjds kXOvCG"
+          href="/admin/notifications"
+        >
+          Notifications
+        </a>
+        <br />
+        <a
+          class="sc-iBkjds kXOvCG"
+          href="/admin/users"
+        >
+          Users
+        </a>
+      </span>
+    </div>
+    <div
+      class="sc-jqUVSM leXYdV site-map__section"
+    >
+      <h1
+        class="sc-dkzDqf ddFalQ sc-crXcEl ioFrJl"
+        id="redirects-👉"
+      >
+        Redirects 👉
+      </h1>
+      <span
+        class="sc-evZas FCsLq"
+      >
+        <div>
+          <a
+            class="sc-iBkjds kXOvCG"
+            href="/codebase"
+          >
+            /codebase ⇒ https://github.com/georgegillams/georgegillams.co.uk
+          </a>
+          <br />
         </div>
-      </a>
-      <br />
-      <a
-        class="sc-iBkjds kXOvCG"
-        href="/404"
-      >
-        404 error page - not found
-      </a>
-      <br />
-      <a
-        class="sc-iBkjds kXOvCG"
-        href="/teapot"
-      >
-        418 error page - I'm a teapot
-      </a>
-    </span>
-  </div>
-  <div
-    class="sc-jqUVSM leXYdV site-map__section"
-  >
-    <h1
-      class="sc-dkzDqf ddFalQ sc-crXcEl ioFrJl"
-      id="api"
-    >
-      API
-    </h1>
-    <span
-      class="sc-evZas FCsLq"
-    >
-      <a
-        class="sc-iBkjds kXOvCG"
-        href="/api-docs"
-      >
-        API docs
-      </a>
-    </span>
-  </div>
-  <div
-    class="sc-jqUVSM leXYdV site-map__section"
-  >
-    <h1
-      class="sc-dkzDqf ddFalQ sc-crXcEl ioFrJl"
-      id="accounts-🔑"
-    >
-      Accounts 🔑
-    </h1>
-    <span
-      class="sc-evZas FCsLq"
-    >
-      <a
-        class="sc-iBkjds kXOvCG"
-        href="/account"
-      >
-        Account
-      </a>
-      <br />
-      <a
-        class="sc-iBkjds kXOvCG"
-        href="/sign-up"
-      >
-        Sign up
-      </a>
-      <br />
-      <a
-        class="sc-iBkjds kXOvCG"
-        href="/login"
-      >
-        Log in
-      </a>
-      <br />
-      <a
-        class="sc-iBkjds kXOvCG"
-        href="/email-verification"
-      >
-        Email verification
-      </a>
-      <br />
-      <a
-        class="sc-iBkjds kXOvCG"
-        href="/magic-login"
-      >
-        Magic login
-      </a>
-    </span>
-  </div>
-  <div
-    class="sc-jqUVSM leXYdV site-map__section"
-  >
-    <h1
-      class="sc-dkzDqf ddFalQ sc-crXcEl ioFrJl"
-      id="admin-👮‍♂️"
-    >
-      Admin 👮‍♂️
-    </h1>
-    <span
-      class="sc-evZas FCsLq"
-    >
-      <a
-        class="sc-iBkjds kXOvCG"
-        href="/admin"
-      >
-        Admin navigation
-      </a>
-      <br />
-      <a
-        class="sc-iBkjds kXOvCG"
-        href="/blog"
-      >
-        Blogs
-      </a>
-      <br />
-      <a
-        class="sc-iBkjds kXOvCG"
-        href="/admin/analytics"
-      >
-        Analytics
-      </a>
-      <br />
-      <a
-        class="sc-iBkjds kXOvCG"
-        href="/admin/emails"
-      >
-        Emails
-      </a>
-      <br />
-      <a
-        class="sc-iBkjds kXOvCG"
-        href="/admin/notifications"
-      >
-        Notifications
-      </a>
-      <br />
-      <a
-        class="sc-iBkjds kXOvCG"
-        href="/admin/users"
-      >
-        Users
-      </a>
-    </span>
-  </div>
-  <div
-    class="sc-jqUVSM leXYdV site-map__section"
-  >
-    <h1
-      class="sc-dkzDqf ddFalQ sc-crXcEl ioFrJl"
-      id="redirects-👉"
-    >
-      Redirects 👉
-    </h1>
-    <span
-      class="sc-evZas FCsLq"
-    >
-      <div>
-        <a
-          class="sc-iBkjds kXOvCG"
-          href="/codebase"
-        >
-          /codebase ⇒ https://github.com/georgegillams/georgegillams.co.uk
-        </a>
-        <br />
-      </div>
-      <div>
-        <a
-          class="sc-iBkjds kXOvCG"
-          href="/copyright"
-        >
-          /copyright ⇒ https://creativecommons.org/licenses/by-sa/3.0/
-        </a>
-        <br />
-      </div>
-      <div>
-        <a
-          class="sc-iBkjds kXOvCG"
-          href="/flickr"
-        >
-          /flickr ⇒ https://www.flickr.com/people/georgegillams
-        </a>
-        <br />
-      </div>
-      <div>
-        <a
-          class="sc-iBkjds kXOvCG"
-          href="/monzo"
-        >
-          /monzo ⇒ https://join.monzo.com/r/vjd3d74
-        </a>
-        <br />
-      </div>
-      <div>
-        <a
-          class="sc-iBkjds kXOvCG"
-          href="/github"
-        >
-          /github ⇒ https://github.com/georgegillams
-        </a>
-        <br />
-      </div>
-      <div>
-        <a
-          class="sc-iBkjds kXOvCG"
-          href="/stackoverflow"
-        >
-          /stackoverflow ⇒ https://stackoverflow.com/users/14463713/georgegillams
-        </a>
-        <br />
-      </div>
-      <div>
-        <a
-          class="sc-iBkjds kXOvCG"
-          href="/gurushots"
-        >
-          /gurushots ⇒ https://gurushots.com/georgegillams/photos
-        </a>
-        <br />
-      </div>
-      <div>
-        <a
-          class="sc-iBkjds kXOvCG"
-          href="/unsplash"
-        >
-          /unsplash ⇒ https://unsplash.com/@georgegillams/
-        </a>
-        <br />
-      </div>
-      <div>
-        <a
-          class="sc-iBkjds kXOvCG"
-          href="/strava"
-        >
-          /strava ⇒ https://www.strava.com/athletes/7221483
-        </a>
-        <br />
-      </div>
-      <div>
-        <a
-          class="sc-iBkjds kXOvCG"
-          href="/linkedin"
-        >
-          /linkedin ⇒ https://www.linkedin.com/in/george-gillams-37537077
-        </a>
-        <br />
-      </div>
-      <div>
-        <a
-          class="sc-iBkjds kXOvCG"
-          href="/twitter"
-        >
-          /twitter ⇒ https://twitter.com/georgegillams
-        </a>
-        <br />
-      </div>
-      <div>
-        <a
-          class="sc-iBkjds kXOvCG"
-          href="/wp-admin"
-        >
-          /wp-admin ⇒ /admin
-        </a>
-        <br />
-      </div>
-      <div>
-        <a
-          class="sc-iBkjds kXOvCG"
-          href="/about"
-        >
-          /about ⇒ /
-        </a>
-        <br />
-      </div>
-      <div>
-        <a
-          class="sc-iBkjds kXOvCG"
-          href="/site-map"
-        >
-          /site-map ⇒ /sitemap
-        </a>
-        <br />
-      </div>
-      <div>
-        <a
-          class="sc-iBkjds kXOvCG"
-          href="/about/degree"
-        >
-          /about/degree ⇒ /work/degree
-        </a>
-        <br />
-      </div>
-      <div>
-        <a
-          class="sc-iBkjds kXOvCG"
-          href="/articles/tough-mudder"
-        >
-          /articles/tough-mudder ⇒ /blog/tough-mudder
-        </a>
-        <br />
-      </div>
-      <div>
-        <a
-          class="sc-iBkjds kXOvCG"
-          href="/articles/net-neutrality"
-        >
-          /articles/net-neutrality ⇒ /blog/net-neutrality
-        </a>
-        <br />
-      </div>
-      <div>
-        <a
-          class="sc-iBkjds kXOvCG"
-          href="/articles/vim"
-        >
-          /articles/vim ⇒ /blog/vim
-        </a>
-        <br />
-      </div>
-      <div>
-        <a
-          class="sc-iBkjds kXOvCG"
-          href="/articles/list"
-        >
-          /articles/list ⇒ /blog
-        </a>
-        <br />
-      </div>
-      <div>
-        <a
-          class="sc-iBkjds kXOvCG"
-          href="/articles"
-        >
-          /articles ⇒ /blog
-        </a>
-        <br />
-      </div>
-      <div>
-        <a
-          class="sc-iBkjds kXOvCG"
-          href="/net-neutrality"
-        >
-          /net-neutrality ⇒ /blog/net-neutrality
-        </a>
-        <br />
-      </div>
-      <div>
-        <a
-          class="sc-iBkjds kXOvCG"
-          href="/work/side-projects"
-        >
-          /work/side-projects ⇒ /work
-        </a>
-        <br />
-      </div>
-      <div>
-        <a
-          class="sc-iBkjds kXOvCG"
-          href="/blog/view"
-        >
-          /blog/view ⇒ /blog
-        </a>
-        <br />
-      </div>
-      <div>
-        <a
-          class="sc-iBkjds kXOvCG"
-          href="/travel"
-        >
-          /travel ⇒ /blog
-        </a>
-        <br />
-      </div>
-      <div>
-        <a
-          class="sc-iBkjds kXOvCG"
-          href="/travel/list"
-        >
-          /travel/list ⇒ /blog
-        </a>
-        <br />
-      </div>
-      <div>
-        <a
-          class="sc-iBkjds kXOvCG"
-          href="/blog/view?id=tg5x7po9"
-        >
-          /blog/view?id=tg5x7po9 ⇒ /blog/tough-mudder
-        </a>
-        <br />
-      </div>
-      <div>
-        <a
-          class="sc-iBkjds kXOvCG"
-          href="/blog/view?id=lqngy"
-        >
-          /blog/view?id=lqngy ⇒ /blog/lightroom-workflow
-        </a>
-        <br />
-      </div>
-      <div>
-        <a
-          class="sc-iBkjds kXOvCG"
-          href="/blog/view?id=w85aht"
-        >
-          /blog/view?id=w85aht ⇒ /blog/net-neutrality
-        </a>
-        <br />
-      </div>
-      <div>
-        <a
-          class="sc-iBkjds kXOvCG"
-          href="/blog/view?id=azcpjh"
-        >
-          /blog/view?id=azcpjh ⇒ /blog/vim
-        </a>
-        <br />
-      </div>
-      <div>
-        <a
-          class="sc-iBkjds kXOvCG"
-          href="/blog/view?id=y77dnh"
-        >
-          /blog/view?id=y77dnh ⇒ /blog/uk-bank-security
-        </a>
-        <br />
-      </div>
-      <div>
-        <a
-          class="sc-iBkjds kXOvCG"
-          href="/art"
-        >
-          /art ⇒ /photography
-        </a>
-        <br />
-      </div>
-      <div>
-        <a
-          class="sc-iBkjds kXOvCG"
-          href="/photoshop"
-        >
-          /photoshop ⇒ /photography
-        </a>
-        <br />
-      </div>
-      <div>
-        <a
-          class="sc-iBkjds kXOvCG"
-          href="/phot"
-        >
-          /phot ⇒ /photography
-        </a>
-        <br />
-      </div>
-      <div>
-        <a
-          class="sc-iBkjds kXOvCG"
-          href="/photo"
-        >
-          /photo ⇒ /photography
-        </a>
-        <br />
-      </div>
-    </span>
+        <div>
+          <a
+            class="sc-iBkjds kXOvCG"
+            href="/copyright"
+          >
+            /copyright ⇒ https://creativecommons.org/licenses/by-sa/3.0/
+          </a>
+          <br />
+        </div>
+        <div>
+          <a
+            class="sc-iBkjds kXOvCG"
+            href="/flickr"
+          >
+            /flickr ⇒ https://www.flickr.com/people/georgegillams
+          </a>
+          <br />
+        </div>
+        <div>
+          <a
+            class="sc-iBkjds kXOvCG"
+            href="/monzo"
+          >
+            /monzo ⇒ https://join.monzo.com/r/vjd3d74
+          </a>
+          <br />
+        </div>
+        <div>
+          <a
+            class="sc-iBkjds kXOvCG"
+            href="/github"
+          >
+            /github ⇒ https://github.com/georgegillams
+          </a>
+          <br />
+        </div>
+        <div>
+          <a
+            class="sc-iBkjds kXOvCG"
+            href="/stackoverflow"
+          >
+            /stackoverflow ⇒ https://stackoverflow.com/users/14463713/georgegillams
+          </a>
+          <br />
+        </div>
+        <div>
+          <a
+            class="sc-iBkjds kXOvCG"
+            href="/gurushots"
+          >
+            /gurushots ⇒ https://gurushots.com/georgegillams/photos
+          </a>
+          <br />
+        </div>
+        <div>
+          <a
+            class="sc-iBkjds kXOvCG"
+            href="/unsplash"
+          >
+            /unsplash ⇒ https://unsplash.com/@georgegillams/
+          </a>
+          <br />
+        </div>
+        <div>
+          <a
+            class="sc-iBkjds kXOvCG"
+            href="/strava"
+          >
+            /strava ⇒ https://www.strava.com/athletes/7221483
+          </a>
+          <br />
+        </div>
+        <div>
+          <a
+            class="sc-iBkjds kXOvCG"
+            href="/linkedin"
+          >
+            /linkedin ⇒ https://www.linkedin.com/in/george-gillams-37537077
+          </a>
+          <br />
+        </div>
+        <div>
+          <a
+            class="sc-iBkjds kXOvCG"
+            href="/twitter"
+          >
+            /twitter ⇒ https://twitter.com/georgegillams
+          </a>
+          <br />
+        </div>
+        <div>
+          <a
+            class="sc-iBkjds kXOvCG"
+            href="/wp-admin"
+          >
+            /wp-admin ⇒ /admin
+          </a>
+          <br />
+        </div>
+        <div>
+          <a
+            class="sc-iBkjds kXOvCG"
+            href="/about"
+          >
+            /about ⇒ /
+          </a>
+          <br />
+        </div>
+        <div>
+          <a
+            class="sc-iBkjds kXOvCG"
+            href="/site-map"
+          >
+            /site-map ⇒ /sitemap
+          </a>
+          <br />
+        </div>
+        <div>
+          <a
+            class="sc-iBkjds kXOvCG"
+            href="/about/degree"
+          >
+            /about/degree ⇒ /work/degree
+          </a>
+          <br />
+        </div>
+        <div>
+          <a
+            class="sc-iBkjds kXOvCG"
+            href="/articles/tough-mudder"
+          >
+            /articles/tough-mudder ⇒ /blog/tough-mudder
+          </a>
+          <br />
+        </div>
+        <div>
+          <a
+            class="sc-iBkjds kXOvCG"
+            href="/articles/net-neutrality"
+          >
+            /articles/net-neutrality ⇒ /blog/net-neutrality
+          </a>
+          <br />
+        </div>
+        <div>
+          <a
+            class="sc-iBkjds kXOvCG"
+            href="/articles/vim"
+          >
+            /articles/vim ⇒ /blog/vim
+          </a>
+          <br />
+        </div>
+        <div>
+          <a
+            class="sc-iBkjds kXOvCG"
+            href="/articles/list"
+          >
+            /articles/list ⇒ /blog
+          </a>
+          <br />
+        </div>
+        <div>
+          <a
+            class="sc-iBkjds kXOvCG"
+            href="/articles"
+          >
+            /articles ⇒ /blog
+          </a>
+          <br />
+        </div>
+        <div>
+          <a
+            class="sc-iBkjds kXOvCG"
+            href="/net-neutrality"
+          >
+            /net-neutrality ⇒ /blog/net-neutrality
+          </a>
+          <br />
+        </div>
+        <div>
+          <a
+            class="sc-iBkjds kXOvCG"
+            href="/work/side-projects"
+          >
+            /work/side-projects ⇒ /work
+          </a>
+          <br />
+        </div>
+        <div>
+          <a
+            class="sc-iBkjds kXOvCG"
+            href="/blog/view"
+          >
+            /blog/view ⇒ /blog
+          </a>
+          <br />
+        </div>
+        <div>
+          <a
+            class="sc-iBkjds kXOvCG"
+            href="/travel"
+          >
+            /travel ⇒ /blog
+          </a>
+          <br />
+        </div>
+        <div>
+          <a
+            class="sc-iBkjds kXOvCG"
+            href="/travel/list"
+          >
+            /travel/list ⇒ /blog
+          </a>
+          <br />
+        </div>
+        <div>
+          <a
+            class="sc-iBkjds kXOvCG"
+            href="/blog/view?id=tg5x7po9"
+          >
+            /blog/view?id=tg5x7po9 ⇒ /blog/tough-mudder
+          </a>
+          <br />
+        </div>
+        <div>
+          <a
+            class="sc-iBkjds kXOvCG"
+            href="/blog/view?id=lqngy"
+          >
+            /blog/view?id=lqngy ⇒ /blog/lightroom-workflow
+          </a>
+          <br />
+        </div>
+        <div>
+          <a
+            class="sc-iBkjds kXOvCG"
+            href="/blog/view?id=w85aht"
+          >
+            /blog/view?id=w85aht ⇒ /blog/net-neutrality
+          </a>
+          <br />
+        </div>
+        <div>
+          <a
+            class="sc-iBkjds kXOvCG"
+            href="/blog/view?id=azcpjh"
+          >
+            /blog/view?id=azcpjh ⇒ /blog/vim
+          </a>
+          <br />
+        </div>
+        <div>
+          <a
+            class="sc-iBkjds kXOvCG"
+            href="/blog/view?id=y77dnh"
+          >
+            /blog/view?id=y77dnh ⇒ /blog/uk-bank-security
+          </a>
+          <br />
+        </div>
+        <div>
+          <a
+            class="sc-iBkjds kXOvCG"
+            href="/art"
+          >
+            /art ⇒ /photography
+          </a>
+          <br />
+        </div>
+        <div>
+          <a
+            class="sc-iBkjds kXOvCG"
+            href="/photoshop"
+          >
+            /photoshop ⇒ /photography
+          </a>
+          <br />
+        </div>
+        <div>
+          <a
+            class="sc-iBkjds kXOvCG"
+            href="/phot"
+          >
+            /phot ⇒ /photography
+          </a>
+          <br />
+        </div>
+        <div>
+          <a
+            class="sc-iBkjds kXOvCG"
+            href="/photo"
+          >
+            /photo ⇒ /photography
+          </a>
+          <br />
+        </div>
+      </span>
+    </div>
   </div>
 </div>
 `;
 
 exports[`<SiteMap /> should render correctly with ssrBlogs 1`] = `
 <div>
-  <h1
-    class="sc-bczRLJ hDLBIv sc-hAZoDl cDlBMk"
-  >
-    Site map
-  </h1>
   <div
-    class="sc-jqUVSM leXYdV site-map__section"
+    class="sc-fEOsli kRThfC page-containerstyles__StyledPageContainer-sc-19l7k4-0"
+    width="default"
   >
     <h1
-      class="sc-dkzDqf ddFalQ sc-crXcEl ioFrJl"
-      id="blog-📝"
+      class="sc-bczRLJ hDLBIv sc-hAZoDl cDlBMk"
     >
-      Blog 📝
+      Site map
     </h1>
-    <span
-      class="sc-evZas FCsLq"
+    <div
+      class="sc-jqUVSM leXYdV site-map__section"
     >
-      <a
-        class="sc-iBkjds kXOvCG"
-        href="/blog"
+      <h1
+        class="sc-dkzDqf ddFalQ sc-crXcEl ioFrJl"
+        id="blog-📝"
       >
-        Blog list
-      </a>
-      <br />
-      <a
-        class="sc-iBkjds kXOvCG"
-        href="/blog/asdfg"
+        Blog 📝
+      </h1>
+      <span
+        class="sc-evZas FCsLq"
       >
-        Blog 1 🎉
-      </a>
-      <br />
-    </span>
-  </div>
-  <div
-    class="sc-jqUVSM leXYdV site-map__section"
-  >
-    <h1
-      class="sc-dkzDqf ddFalQ sc-crXcEl ioFrJl"
-      id="photography-📷"
-    >
-      Photography 📷
-    </h1>
-    <span
-      class="sc-evZas FCsLq"
-    >
-      <a
-        class="sc-iBkjds kXOvCG"
-        href="/photography"
-      >
-        Photography
-      </a>
-    </span>
-  </div>
-  <div
-    class="sc-jqUVSM leXYdV site-map__section"
-  >
-    <h1
-      class="sc-dkzDqf ddFalQ sc-crXcEl ioFrJl"
-      id="medals-🏅"
-    >
-      Medals 🏅
-    </h1>
-    <span
-      class="sc-evZas FCsLq"
-    >
-      <a
-        class="sc-iBkjds kXOvCG"
-        href="/medals"
-      >
-        Medals
-      </a>
-    </span>
-  </div>
-  <div
-    class="sc-jqUVSM leXYdV site-map__section"
-  >
-    <h1
-      class="sc-dkzDqf ddFalQ sc-crXcEl ioFrJl"
-      id="work-📱"
-    >
-      Work 📱
-    </h1>
-    <span
-      class="sc-evZas FCsLq"
-    >
-      <a
-        class="sc-iBkjds kXOvCG"
-        href="/work"
-      >
-        Overview
-      </a>
-      <br />
-      <a
-        class="sc-iBkjds kXOvCG"
-        href="/work/backpack"
-      >
-        Backpack
-      </a>
-      <br />
-      <a
-        class="sc-iBkjds kXOvCG"
-        href="/work/degree"
-      >
-        Degree
-      </a>
-      <br />
-      <a
-        class="sc-iBkjds kXOvCG"
-        href="/work/epicc"
-      >
-        EPICC
-      </a>
-    </span>
-  </div>
-  <div
-    class="sc-jqUVSM leXYdV site-map__section"
-  >
-    <h1
-      class="sc-dkzDqf ddFalQ sc-crXcEl ioFrJl"
-      id="design-🎨"
-    >
-      Design 🎨
-    </h1>
-    <span
-      class="sc-evZas FCsLq"
-    >
-      <a
-        class="sc-iBkjds kXOvCG"
-        href="/privacy-policy"
-      >
-        Privacy Policy
-      </a>
-    </span>
-  </div>
-  <div
-    class="sc-jqUVSM leXYdV site-map__section"
-  >
-    <h1
-      class="sc-dkzDqf ddFalQ sc-crXcEl ioFrJl"
-      id="other-stuff-🤷‍♂️"
-    >
-      Other stuff 🤷‍♂️
-    </h1>
-    <span
-      class="sc-evZas FCsLq"
-    >
-      <a
-        class="sc-iBkjds kXOvCG"
-        href="/contact"
-      >
-        Contact
-      </a>
-      <br />
-      <a
-        class="sc-iBkjds kXOvCG"
-        href="/support"
-      >
-        Support
-      </a>
-      <br />
-      <a
-        class="sc-iBkjds kXOvCG"
-        href="/debug"
-      >
-        Debug tools
-      </a>
-      <br />
-      <a
-        class="sc-iBkjds kXOvCG"
-        href="/status"
-      >
-        Status
-      </a>
-    </span>
-  </div>
-  <div
-    class="sc-jqUVSM leXYdV site-map__section"
-  >
-    <h1
-      class="sc-dkzDqf ddFalQ sc-crXcEl ioFrJl"
-      id="random-🐉"
-    >
-      Random 🐉
-    </h1>
-    <span
-      class="sc-evZas FCsLq"
-    >
-      <a
-        aria-label="Robots.txt (opens in a new tab)"
-        class="sc-iBkjds kXOvCG"
-        href="/robots.txt"
-        rel="noopener noreferrer"
-        target="_blank"
-      >
-        Robots.txt
-        <div
-          class="sc-ftvSup kUuEWK"
+        <a
+          class="sc-iBkjds kXOvCG"
+          href="/blog"
         >
-          <svg
-            class="sc-gKXOVf ktoyia sc-papXJ fmVkXn"
-            height="18"
-            viewBox="0 0 24 24"
-            width="18"
-            xmlns="http://www.w3.org/2000/svg"
+          Blog list
+        </a>
+        <br />
+        <a
+          class="sc-iBkjds kXOvCG"
+          href="/blog/asdfg"
+        >
+          Blog 1 🎉
+        </a>
+        <br />
+      </span>
+    </div>
+    <div
+      class="sc-jqUVSM leXYdV site-map__section"
+    >
+      <h1
+        class="sc-dkzDqf ddFalQ sc-crXcEl ioFrJl"
+        id="photography-📷"
+      >
+        Photography 📷
+      </h1>
+      <span
+        class="sc-evZas FCsLq"
+      >
+        <a
+          class="sc-iBkjds kXOvCG"
+          href="/photography"
+        >
+          Photography
+        </a>
+      </span>
+    </div>
+    <div
+      class="sc-jqUVSM leXYdV site-map__section"
+    >
+      <h1
+        class="sc-dkzDqf ddFalQ sc-crXcEl ioFrJl"
+        id="medals-🏅"
+      >
+        Medals 🏅
+      </h1>
+      <span
+        class="sc-evZas FCsLq"
+      >
+        <a
+          class="sc-iBkjds kXOvCG"
+          href="/medals"
+        >
+          Medals
+        </a>
+      </span>
+    </div>
+    <div
+      class="sc-jqUVSM leXYdV site-map__section"
+    >
+      <h1
+        class="sc-dkzDqf ddFalQ sc-crXcEl ioFrJl"
+        id="work-📱"
+      >
+        Work 📱
+      </h1>
+      <span
+        class="sc-evZas FCsLq"
+      >
+        <a
+          class="sc-iBkjds kXOvCG"
+          href="/work"
+        >
+          Overview
+        </a>
+        <br />
+        <a
+          class="sc-iBkjds kXOvCG"
+          href="/work/backpack"
+        >
+          Backpack
+        </a>
+        <br />
+        <a
+          class="sc-iBkjds kXOvCG"
+          href="/work/degree"
+        >
+          Degree
+        </a>
+        <br />
+        <a
+          class="sc-iBkjds kXOvCG"
+          href="/work/epicc"
+        >
+          EPICC
+        </a>
+      </span>
+    </div>
+    <div
+      class="sc-jqUVSM leXYdV site-map__section"
+    >
+      <h1
+        class="sc-dkzDqf ddFalQ sc-crXcEl ioFrJl"
+        id="design-🎨"
+      >
+        Design 🎨
+      </h1>
+      <span
+        class="sc-evZas FCsLq"
+      >
+        <a
+          class="sc-iBkjds kXOvCG"
+          href="/privacy-policy"
+        >
+          Privacy Policy
+        </a>
+      </span>
+    </div>
+    <div
+      class="sc-jqUVSM leXYdV site-map__section"
+    >
+      <h1
+        class="sc-dkzDqf ddFalQ sc-crXcEl ioFrJl"
+        id="other-stuff-🤷‍♂️"
+      >
+        Other stuff 🤷‍♂️
+      </h1>
+      <span
+        class="sc-evZas FCsLq"
+      >
+        <a
+          class="sc-iBkjds kXOvCG"
+          href="/contact"
+        >
+          Contact
+        </a>
+        <br />
+        <a
+          class="sc-iBkjds kXOvCG"
+          href="/support"
+        >
+          Support
+        </a>
+        <br />
+        <a
+          class="sc-iBkjds kXOvCG"
+          href="/debug"
+        >
+          Debug tools
+        </a>
+        <br />
+        <a
+          class="sc-iBkjds kXOvCG"
+          href="/status"
+        >
+          Status
+        </a>
+      </span>
+    </div>
+    <div
+      class="sc-jqUVSM leXYdV site-map__section"
+    >
+      <h1
+        class="sc-dkzDqf ddFalQ sc-crXcEl ioFrJl"
+        id="random-🐉"
+      >
+        Random 🐉
+      </h1>
+      <span
+        class="sc-evZas FCsLq"
+      >
+        <a
+          aria-label="Robots.txt (opens in a new tab)"
+          class="sc-iBkjds kXOvCG"
+          href="/robots.txt"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          Robots.txt
+          <div
+            class="sc-ftvSup kUuEWK"
           >
-            <path
-              d="M12.5 11.3c.4.4 1 .4 1.4 0L19 6.2V9c0 .6.4 1 1 1s1-.4 1-1V4c0-.6-.4-1-1-1h-5c-.6 0-1 .4-1 1s.4 1 1 1h2.4l-4.9 4.9c-.4.4-.4 1 0 1.4zM19 19c0 1.1-.9 2-2 2H5c-1.1 0-2-.9-2-2V7c0-1.1.9-2 2-2h7v2H5v12h12v-7h2"
-            />
-          </svg>
-        </div>
-      </a>
-      <br />
-      <a
-        aria-label="SiteMap.xml (opens in a new tab)"
-        class="sc-iBkjds kXOvCG"
-        href="/sitemap.xml"
-        rel="noopener noreferrer"
-        target="_blank"
-      >
-        SiteMap.xml
-        <div
-          class="sc-ftvSup kUuEWK"
+            <svg
+              class="sc-gKXOVf ktoyia sc-papXJ fmVkXn"
+              height="18"
+              viewBox="0 0 24 24"
+              width="18"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M12.5 11.3c.4.4 1 .4 1.4 0L19 6.2V9c0 .6.4 1 1 1s1-.4 1-1V4c0-.6-.4-1-1-1h-5c-.6 0-1 .4-1 1s.4 1 1 1h2.4l-4.9 4.9c-.4.4-.4 1 0 1.4zM19 19c0 1.1-.9 2-2 2H5c-1.1 0-2-.9-2-2V7c0-1.1.9-2 2-2h7v2H5v12h12v-7h2"
+              />
+            </svg>
+          </div>
+        </a>
+        <br />
+        <a
+          aria-label="SiteMap.xml (opens in a new tab)"
+          class="sc-iBkjds kXOvCG"
+          href="/sitemap.xml"
+          rel="noopener noreferrer"
+          target="_blank"
         >
-          <svg
-            class="sc-gKXOVf ktoyia sc-papXJ fmVkXn"
-            height="18"
-            viewBox="0 0 24 24"
-            width="18"
-            xmlns="http://www.w3.org/2000/svg"
+          SiteMap.xml
+          <div
+            class="sc-ftvSup kUuEWK"
           >
-            <path
-              d="M12.5 11.3c.4.4 1 .4 1.4 0L19 6.2V9c0 .6.4 1 1 1s1-.4 1-1V4c0-.6-.4-1-1-1h-5c-.6 0-1 .4-1 1s.4 1 1 1h2.4l-4.9 4.9c-.4.4-.4 1 0 1.4zM19 19c0 1.1-.9 2-2 2H5c-1.1 0-2-.9-2-2V7c0-1.1.9-2 2-2h7v2H5v12h12v-7h2"
-            />
-          </svg>
+            <svg
+              class="sc-gKXOVf ktoyia sc-papXJ fmVkXn"
+              height="18"
+              viewBox="0 0 24 24"
+              width="18"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M12.5 11.3c.4.4 1 .4 1.4 0L19 6.2V9c0 .6.4 1 1 1s1-.4 1-1V4c0-.6-.4-1-1-1h-5c-.6 0-1 .4-1 1s.4 1 1 1h2.4l-4.9 4.9c-.4.4-.4 1 0 1.4zM19 19c0 1.1-.9 2-2 2H5c-1.1 0-2-.9-2-2V7c0-1.1.9-2 2-2h7v2H5v12h12v-7h2"
+              />
+            </svg>
+          </div>
+        </a>
+        <br />
+        <a
+          class="sc-iBkjds kXOvCG"
+          href="/404"
+        >
+          404 error page - not found
+        </a>
+        <br />
+        <a
+          class="sc-iBkjds kXOvCG"
+          href="/teapot"
+        >
+          418 error page - I'm a teapot
+        </a>
+      </span>
+    </div>
+    <div
+      class="sc-jqUVSM leXYdV site-map__section"
+    >
+      <h1
+        class="sc-dkzDqf ddFalQ sc-crXcEl ioFrJl"
+        id="api"
+      >
+        API
+      </h1>
+      <span
+        class="sc-evZas FCsLq"
+      >
+        <a
+          class="sc-iBkjds kXOvCG"
+          href="/api-docs"
+        >
+          API docs
+        </a>
+      </span>
+    </div>
+    <div
+      class="sc-jqUVSM leXYdV site-map__section"
+    >
+      <h1
+        class="sc-dkzDqf ddFalQ sc-crXcEl ioFrJl"
+        id="accounts-🔑"
+      >
+        Accounts 🔑
+      </h1>
+      <span
+        class="sc-evZas FCsLq"
+      >
+        <a
+          class="sc-iBkjds kXOvCG"
+          href="/account"
+        >
+          Account
+        </a>
+        <br />
+        <a
+          class="sc-iBkjds kXOvCG"
+          href="/sign-up"
+        >
+          Sign up
+        </a>
+        <br />
+        <a
+          class="sc-iBkjds kXOvCG"
+          href="/login"
+        >
+          Log in
+        </a>
+        <br />
+        <a
+          class="sc-iBkjds kXOvCG"
+          href="/email-verification"
+        >
+          Email verification
+        </a>
+        <br />
+        <a
+          class="sc-iBkjds kXOvCG"
+          href="/magic-login"
+        >
+          Magic login
+        </a>
+      </span>
+    </div>
+    <div
+      class="sc-jqUVSM leXYdV site-map__section"
+    >
+      <h1
+        class="sc-dkzDqf ddFalQ sc-crXcEl ioFrJl"
+        id="admin-👮‍♂️"
+      >
+        Admin 👮‍♂️
+      </h1>
+      <span
+        class="sc-evZas FCsLq"
+      >
+        <a
+          class="sc-iBkjds kXOvCG"
+          href="/admin"
+        >
+          Admin navigation
+        </a>
+        <br />
+        <a
+          class="sc-iBkjds kXOvCG"
+          href="/blog"
+        >
+          Blogs
+        </a>
+        <br />
+        <a
+          class="sc-iBkjds kXOvCG"
+          href="/admin/analytics"
+        >
+          Analytics
+        </a>
+        <br />
+        <a
+          class="sc-iBkjds kXOvCG"
+          href="/admin/emails"
+        >
+          Emails
+        </a>
+        <br />
+        <a
+          class="sc-iBkjds kXOvCG"
+          href="/admin/notifications"
+        >
+          Notifications
+        </a>
+        <br />
+        <a
+          class="sc-iBkjds kXOvCG"
+          href="/admin/users"
+        >
+          Users
+        </a>
+      </span>
+    </div>
+    <div
+      class="sc-jqUVSM leXYdV site-map__section"
+    >
+      <h1
+        class="sc-dkzDqf ddFalQ sc-crXcEl ioFrJl"
+        id="redirects-👉"
+      >
+        Redirects 👉
+      </h1>
+      <span
+        class="sc-evZas FCsLq"
+      >
+        <div>
+          <a
+            class="sc-iBkjds kXOvCG"
+            href="/codebase"
+          >
+            /codebase ⇒ https://github.com/georgegillams/georgegillams.co.uk
+          </a>
+          <br />
         </div>
-      </a>
-      <br />
-      <a
-        class="sc-iBkjds kXOvCG"
-        href="/404"
-      >
-        404 error page - not found
-      </a>
-      <br />
-      <a
-        class="sc-iBkjds kXOvCG"
-        href="/teapot"
-      >
-        418 error page - I'm a teapot
-      </a>
-    </span>
-  </div>
-  <div
-    class="sc-jqUVSM leXYdV site-map__section"
-  >
-    <h1
-      class="sc-dkzDqf ddFalQ sc-crXcEl ioFrJl"
-      id="api"
-    >
-      API
-    </h1>
-    <span
-      class="sc-evZas FCsLq"
-    >
-      <a
-        class="sc-iBkjds kXOvCG"
-        href="/api-docs"
-      >
-        API docs
-      </a>
-    </span>
-  </div>
-  <div
-    class="sc-jqUVSM leXYdV site-map__section"
-  >
-    <h1
-      class="sc-dkzDqf ddFalQ sc-crXcEl ioFrJl"
-      id="accounts-🔑"
-    >
-      Accounts 🔑
-    </h1>
-    <span
-      class="sc-evZas FCsLq"
-    >
-      <a
-        class="sc-iBkjds kXOvCG"
-        href="/account"
-      >
-        Account
-      </a>
-      <br />
-      <a
-        class="sc-iBkjds kXOvCG"
-        href="/sign-up"
-      >
-        Sign up
-      </a>
-      <br />
-      <a
-        class="sc-iBkjds kXOvCG"
-        href="/login"
-      >
-        Log in
-      </a>
-      <br />
-      <a
-        class="sc-iBkjds kXOvCG"
-        href="/email-verification"
-      >
-        Email verification
-      </a>
-      <br />
-      <a
-        class="sc-iBkjds kXOvCG"
-        href="/magic-login"
-      >
-        Magic login
-      </a>
-    </span>
-  </div>
-  <div
-    class="sc-jqUVSM leXYdV site-map__section"
-  >
-    <h1
-      class="sc-dkzDqf ddFalQ sc-crXcEl ioFrJl"
-      id="admin-👮‍♂️"
-    >
-      Admin 👮‍♂️
-    </h1>
-    <span
-      class="sc-evZas FCsLq"
-    >
-      <a
-        class="sc-iBkjds kXOvCG"
-        href="/admin"
-      >
-        Admin navigation
-      </a>
-      <br />
-      <a
-        class="sc-iBkjds kXOvCG"
-        href="/blog"
-      >
-        Blogs
-      </a>
-      <br />
-      <a
-        class="sc-iBkjds kXOvCG"
-        href="/admin/analytics"
-      >
-        Analytics
-      </a>
-      <br />
-      <a
-        class="sc-iBkjds kXOvCG"
-        href="/admin/emails"
-      >
-        Emails
-      </a>
-      <br />
-      <a
-        class="sc-iBkjds kXOvCG"
-        href="/admin/notifications"
-      >
-        Notifications
-      </a>
-      <br />
-      <a
-        class="sc-iBkjds kXOvCG"
-        href="/admin/users"
-      >
-        Users
-      </a>
-    </span>
-  </div>
-  <div
-    class="sc-jqUVSM leXYdV site-map__section"
-  >
-    <h1
-      class="sc-dkzDqf ddFalQ sc-crXcEl ioFrJl"
-      id="redirects-👉"
-    >
-      Redirects 👉
-    </h1>
-    <span
-      class="sc-evZas FCsLq"
-    >
-      <div>
-        <a
-          class="sc-iBkjds kXOvCG"
-          href="/codebase"
-        >
-          /codebase ⇒ https://github.com/georgegillams/georgegillams.co.uk
-        </a>
-        <br />
-      </div>
-      <div>
-        <a
-          class="sc-iBkjds kXOvCG"
-          href="/copyright"
-        >
-          /copyright ⇒ https://creativecommons.org/licenses/by-sa/3.0/
-        </a>
-        <br />
-      </div>
-      <div>
-        <a
-          class="sc-iBkjds kXOvCG"
-          href="/flickr"
-        >
-          /flickr ⇒ https://www.flickr.com/people/georgegillams
-        </a>
-        <br />
-      </div>
-      <div>
-        <a
-          class="sc-iBkjds kXOvCG"
-          href="/monzo"
-        >
-          /monzo ⇒ https://join.monzo.com/r/vjd3d74
-        </a>
-        <br />
-      </div>
-      <div>
-        <a
-          class="sc-iBkjds kXOvCG"
-          href="/github"
-        >
-          /github ⇒ https://github.com/georgegillams
-        </a>
-        <br />
-      </div>
-      <div>
-        <a
-          class="sc-iBkjds kXOvCG"
-          href="/stackoverflow"
-        >
-          /stackoverflow ⇒ https://stackoverflow.com/users/14463713/georgegillams
-        </a>
-        <br />
-      </div>
-      <div>
-        <a
-          class="sc-iBkjds kXOvCG"
-          href="/gurushots"
-        >
-          /gurushots ⇒ https://gurushots.com/georgegillams/photos
-        </a>
-        <br />
-      </div>
-      <div>
-        <a
-          class="sc-iBkjds kXOvCG"
-          href="/unsplash"
-        >
-          /unsplash ⇒ https://unsplash.com/@georgegillams/
-        </a>
-        <br />
-      </div>
-      <div>
-        <a
-          class="sc-iBkjds kXOvCG"
-          href="/strava"
-        >
-          /strava ⇒ https://www.strava.com/athletes/7221483
-        </a>
-        <br />
-      </div>
-      <div>
-        <a
-          class="sc-iBkjds kXOvCG"
-          href="/linkedin"
-        >
-          /linkedin ⇒ https://www.linkedin.com/in/george-gillams-37537077
-        </a>
-        <br />
-      </div>
-      <div>
-        <a
-          class="sc-iBkjds kXOvCG"
-          href="/twitter"
-        >
-          /twitter ⇒ https://twitter.com/georgegillams
-        </a>
-        <br />
-      </div>
-      <div>
-        <a
-          class="sc-iBkjds kXOvCG"
-          href="/wp-admin"
-        >
-          /wp-admin ⇒ /admin
-        </a>
-        <br />
-      </div>
-      <div>
-        <a
-          class="sc-iBkjds kXOvCG"
-          href="/about"
-        >
-          /about ⇒ /
-        </a>
-        <br />
-      </div>
-      <div>
-        <a
-          class="sc-iBkjds kXOvCG"
-          href="/site-map"
-        >
-          /site-map ⇒ /sitemap
-        </a>
-        <br />
-      </div>
-      <div>
-        <a
-          class="sc-iBkjds kXOvCG"
-          href="/about/degree"
-        >
-          /about/degree ⇒ /work/degree
-        </a>
-        <br />
-      </div>
-      <div>
-        <a
-          class="sc-iBkjds kXOvCG"
-          href="/articles/tough-mudder"
-        >
-          /articles/tough-mudder ⇒ /blog/tough-mudder
-        </a>
-        <br />
-      </div>
-      <div>
-        <a
-          class="sc-iBkjds kXOvCG"
-          href="/articles/net-neutrality"
-        >
-          /articles/net-neutrality ⇒ /blog/net-neutrality
-        </a>
-        <br />
-      </div>
-      <div>
-        <a
-          class="sc-iBkjds kXOvCG"
-          href="/articles/vim"
-        >
-          /articles/vim ⇒ /blog/vim
-        </a>
-        <br />
-      </div>
-      <div>
-        <a
-          class="sc-iBkjds kXOvCG"
-          href="/articles/list"
-        >
-          /articles/list ⇒ /blog
-        </a>
-        <br />
-      </div>
-      <div>
-        <a
-          class="sc-iBkjds kXOvCG"
-          href="/articles"
-        >
-          /articles ⇒ /blog
-        </a>
-        <br />
-      </div>
-      <div>
-        <a
-          class="sc-iBkjds kXOvCG"
-          href="/net-neutrality"
-        >
-          /net-neutrality ⇒ /blog/net-neutrality
-        </a>
-        <br />
-      </div>
-      <div>
-        <a
-          class="sc-iBkjds kXOvCG"
-          href="/work/side-projects"
-        >
-          /work/side-projects ⇒ /work
-        </a>
-        <br />
-      </div>
-      <div>
-        <a
-          class="sc-iBkjds kXOvCG"
-          href="/blog/view"
-        >
-          /blog/view ⇒ /blog
-        </a>
-        <br />
-      </div>
-      <div>
-        <a
-          class="sc-iBkjds kXOvCG"
-          href="/travel"
-        >
-          /travel ⇒ /blog
-        </a>
-        <br />
-      </div>
-      <div>
-        <a
-          class="sc-iBkjds kXOvCG"
-          href="/travel/list"
-        >
-          /travel/list ⇒ /blog
-        </a>
-        <br />
-      </div>
-      <div>
-        <a
-          class="sc-iBkjds kXOvCG"
-          href="/blog/view?id=tg5x7po9"
-        >
-          /blog/view?id=tg5x7po9 ⇒ /blog/tough-mudder
-        </a>
-        <br />
-      </div>
-      <div>
-        <a
-          class="sc-iBkjds kXOvCG"
-          href="/blog/view?id=lqngy"
-        >
-          /blog/view?id=lqngy ⇒ /blog/lightroom-workflow
-        </a>
-        <br />
-      </div>
-      <div>
-        <a
-          class="sc-iBkjds kXOvCG"
-          href="/blog/view?id=w85aht"
-        >
-          /blog/view?id=w85aht ⇒ /blog/net-neutrality
-        </a>
-        <br />
-      </div>
-      <div>
-        <a
-          class="sc-iBkjds kXOvCG"
-          href="/blog/view?id=azcpjh"
-        >
-          /blog/view?id=azcpjh ⇒ /blog/vim
-        </a>
-        <br />
-      </div>
-      <div>
-        <a
-          class="sc-iBkjds kXOvCG"
-          href="/blog/view?id=y77dnh"
-        >
-          /blog/view?id=y77dnh ⇒ /blog/uk-bank-security
-        </a>
-        <br />
-      </div>
-      <div>
-        <a
-          class="sc-iBkjds kXOvCG"
-          href="/art"
-        >
-          /art ⇒ /photography
-        </a>
-        <br />
-      </div>
-      <div>
-        <a
-          class="sc-iBkjds kXOvCG"
-          href="/photoshop"
-        >
-          /photoshop ⇒ /photography
-        </a>
-        <br />
-      </div>
-      <div>
-        <a
-          class="sc-iBkjds kXOvCG"
-          href="/phot"
-        >
-          /phot ⇒ /photography
-        </a>
-        <br />
-      </div>
-      <div>
-        <a
-          class="sc-iBkjds kXOvCG"
-          href="/photo"
-        >
-          /photo ⇒ /photography
-        </a>
-        <br />
-      </div>
-    </span>
+        <div>
+          <a
+            class="sc-iBkjds kXOvCG"
+            href="/copyright"
+          >
+            /copyright ⇒ https://creativecommons.org/licenses/by-sa/3.0/
+          </a>
+          <br />
+        </div>
+        <div>
+          <a
+            class="sc-iBkjds kXOvCG"
+            href="/flickr"
+          >
+            /flickr ⇒ https://www.flickr.com/people/georgegillams
+          </a>
+          <br />
+        </div>
+        <div>
+          <a
+            class="sc-iBkjds kXOvCG"
+            href="/monzo"
+          >
+            /monzo ⇒ https://join.monzo.com/r/vjd3d74
+          </a>
+          <br />
+        </div>
+        <div>
+          <a
+            class="sc-iBkjds kXOvCG"
+            href="/github"
+          >
+            /github ⇒ https://github.com/georgegillams
+          </a>
+          <br />
+        </div>
+        <div>
+          <a
+            class="sc-iBkjds kXOvCG"
+            href="/stackoverflow"
+          >
+            /stackoverflow ⇒ https://stackoverflow.com/users/14463713/georgegillams
+          </a>
+          <br />
+        </div>
+        <div>
+          <a
+            class="sc-iBkjds kXOvCG"
+            href="/gurushots"
+          >
+            /gurushots ⇒ https://gurushots.com/georgegillams/photos
+          </a>
+          <br />
+        </div>
+        <div>
+          <a
+            class="sc-iBkjds kXOvCG"
+            href="/unsplash"
+          >
+            /unsplash ⇒ https://unsplash.com/@georgegillams/
+          </a>
+          <br />
+        </div>
+        <div>
+          <a
+            class="sc-iBkjds kXOvCG"
+            href="/strava"
+          >
+            /strava ⇒ https://www.strava.com/athletes/7221483
+          </a>
+          <br />
+        </div>
+        <div>
+          <a
+            class="sc-iBkjds kXOvCG"
+            href="/linkedin"
+          >
+            /linkedin ⇒ https://www.linkedin.com/in/george-gillams-37537077
+          </a>
+          <br />
+        </div>
+        <div>
+          <a
+            class="sc-iBkjds kXOvCG"
+            href="/twitter"
+          >
+            /twitter ⇒ https://twitter.com/georgegillams
+          </a>
+          <br />
+        </div>
+        <div>
+          <a
+            class="sc-iBkjds kXOvCG"
+            href="/wp-admin"
+          >
+            /wp-admin ⇒ /admin
+          </a>
+          <br />
+        </div>
+        <div>
+          <a
+            class="sc-iBkjds kXOvCG"
+            href="/about"
+          >
+            /about ⇒ /
+          </a>
+          <br />
+        </div>
+        <div>
+          <a
+            class="sc-iBkjds kXOvCG"
+            href="/site-map"
+          >
+            /site-map ⇒ /sitemap
+          </a>
+          <br />
+        </div>
+        <div>
+          <a
+            class="sc-iBkjds kXOvCG"
+            href="/about/degree"
+          >
+            /about/degree ⇒ /work/degree
+          </a>
+          <br />
+        </div>
+        <div>
+          <a
+            class="sc-iBkjds kXOvCG"
+            href="/articles/tough-mudder"
+          >
+            /articles/tough-mudder ⇒ /blog/tough-mudder
+          </a>
+          <br />
+        </div>
+        <div>
+          <a
+            class="sc-iBkjds kXOvCG"
+            href="/articles/net-neutrality"
+          >
+            /articles/net-neutrality ⇒ /blog/net-neutrality
+          </a>
+          <br />
+        </div>
+        <div>
+          <a
+            class="sc-iBkjds kXOvCG"
+            href="/articles/vim"
+          >
+            /articles/vim ⇒ /blog/vim
+          </a>
+          <br />
+        </div>
+        <div>
+          <a
+            class="sc-iBkjds kXOvCG"
+            href="/articles/list"
+          >
+            /articles/list ⇒ /blog
+          </a>
+          <br />
+        </div>
+        <div>
+          <a
+            class="sc-iBkjds kXOvCG"
+            href="/articles"
+          >
+            /articles ⇒ /blog
+          </a>
+          <br />
+        </div>
+        <div>
+          <a
+            class="sc-iBkjds kXOvCG"
+            href="/net-neutrality"
+          >
+            /net-neutrality ⇒ /blog/net-neutrality
+          </a>
+          <br />
+        </div>
+        <div>
+          <a
+            class="sc-iBkjds kXOvCG"
+            href="/work/side-projects"
+          >
+            /work/side-projects ⇒ /work
+          </a>
+          <br />
+        </div>
+        <div>
+          <a
+            class="sc-iBkjds kXOvCG"
+            href="/blog/view"
+          >
+            /blog/view ⇒ /blog
+          </a>
+          <br />
+        </div>
+        <div>
+          <a
+            class="sc-iBkjds kXOvCG"
+            href="/travel"
+          >
+            /travel ⇒ /blog
+          </a>
+          <br />
+        </div>
+        <div>
+          <a
+            class="sc-iBkjds kXOvCG"
+            href="/travel/list"
+          >
+            /travel/list ⇒ /blog
+          </a>
+          <br />
+        </div>
+        <div>
+          <a
+            class="sc-iBkjds kXOvCG"
+            href="/blog/view?id=tg5x7po9"
+          >
+            /blog/view?id=tg5x7po9 ⇒ /blog/tough-mudder
+          </a>
+          <br />
+        </div>
+        <div>
+          <a
+            class="sc-iBkjds kXOvCG"
+            href="/blog/view?id=lqngy"
+          >
+            /blog/view?id=lqngy ⇒ /blog/lightroom-workflow
+          </a>
+          <br />
+        </div>
+        <div>
+          <a
+            class="sc-iBkjds kXOvCG"
+            href="/blog/view?id=w85aht"
+          >
+            /blog/view?id=w85aht ⇒ /blog/net-neutrality
+          </a>
+          <br />
+        </div>
+        <div>
+          <a
+            class="sc-iBkjds kXOvCG"
+            href="/blog/view?id=azcpjh"
+          >
+            /blog/view?id=azcpjh ⇒ /blog/vim
+          </a>
+          <br />
+        </div>
+        <div>
+          <a
+            class="sc-iBkjds kXOvCG"
+            href="/blog/view?id=y77dnh"
+          >
+            /blog/view?id=y77dnh ⇒ /blog/uk-bank-security
+          </a>
+          <br />
+        </div>
+        <div>
+          <a
+            class="sc-iBkjds kXOvCG"
+            href="/art"
+          >
+            /art ⇒ /photography
+          </a>
+          <br />
+        </div>
+        <div>
+          <a
+            class="sc-iBkjds kXOvCG"
+            href="/photoshop"
+          >
+            /photoshop ⇒ /photography
+          </a>
+          <br />
+        </div>
+        <div>
+          <a
+            class="sc-iBkjds kXOvCG"
+            href="/phot"
+          >
+            /phot ⇒ /photography
+          </a>
+          <br />
+        </div>
+        <div>
+          <a
+            class="sc-iBkjds kXOvCG"
+            href="/photo"
+          >
+            /photo ⇒ /photography
+          </a>
+          <br />
+        </div>
+      </span>
+    </div>
   </div>
 </div>
 `;

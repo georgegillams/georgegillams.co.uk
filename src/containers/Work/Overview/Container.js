@@ -7,11 +7,12 @@ import TextLink from 'components/common/TextLink';
 import PageTitle from 'components/common/PageTitle';
 
 import STYLES from './work-overview.scss';
+import PageContainer, { WIDTHS } from 'components/common/PageContainer';
 
 const getClassName = cssModules(STYLES);
 
 const Work = () => (
-  <div>
+  <PageContainer width={WIDTHS.prose}>
     <PageTitle name="Work">
       <Subsection name="Skyscanner">
         <Paragraph>
@@ -73,7 +74,7 @@ const Work = () => (
         </Paragraph>
       </Subsection>
     </PageTitle>
-  </div>
+  </PageContainer>
 );
 
 export default Work;

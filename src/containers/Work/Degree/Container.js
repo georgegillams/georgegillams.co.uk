@@ -13,6 +13,7 @@ import STYLES from './work-degree.scss';
 import SouthamptonUniLogo from './southampton.svg';
 
 import Subsection from '@george-gillams/components/subsection';
+import PageContainer, { WIDTHS } from 'components/common/PageContainer';
 
 const getClassName = cssModules(STYLES);
 
@@ -89,7 +90,7 @@ const Degree = props => {
   }, [lastFilled, filled, filling]);
 
   return (
-    <div {...props}>
+    <PageContainer width={WIDTHS.prose} {...props}>
       <PageTitle link={{ to: '/work', text: 'Work' }} name="MEng Software Engineering 👨‍🎓">
         <Image
           className={getClassName('work-degree__image')}
@@ -328,7 +329,7 @@ const Degree = props => {
           </Subsection>
         </Section>
       </PageTitle>
-    </div>
+    </PageContainer>
   );
 };
 

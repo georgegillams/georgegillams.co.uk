@@ -7,7 +7,12 @@ const getPhotoSize = async photoId => {
   const res = await flickr.photos.getSizes({ photo_id: photoId });
   const sizes = res.body.sizes.size;
   const originalSize = sizes.find(size => size.label === 'Original');
-  return { width: originalSize?.width || 0, height: originalSize?.height || 0, src: originalSize?.source || '' };
+  const largeSize = sizes.find(size => size.label === 'Large');
+  return {
+    width: originalSize?.width || 0,
+    height: originalSize?.height || 0,
+    src: largeSize?.source || originalSize?.source || '',
+  };
 };
 
 const getPhotoInformation = async photoId => {
