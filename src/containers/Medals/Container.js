@@ -9,6 +9,7 @@ import ToughMudderPatch, { PATCH_TYPE as TM_PATCH_TYPE } from '@george-gillams/c
 import SpartanMedal, { EVENT_TYPE as SPARTAN_EVENT_TYPE } from '@george-gillams/components/spartan-medal';
 import SpartanTrifectaDisplay from '@george-gillams/components/spartan-trifecta-display';
 import { StyledMedalShelf } from './container.styles';
+import { notBlack } from '@george-gillams/components/constants/colors';
 
 const Medals = () => {
   return (
@@ -73,22 +74,30 @@ const Medals = () => {
           </StyledMedalShelf>
         </Subsection>
       </Section>
-      {/* <Section name="Runs">
+      <Section name="Runs">
         <Subsection>
           <StyledMedalShelf>
+            <EventPatch
+              background="#93D50A"
+              foreground={notBlack}
+              title="New Forest Half Marathon"
+              year={2022}
+              stravaLink="https://www.strava.com/activities/7790895383"
+            />
           </StyledMedalShelf>
         </Subsection>
-      </Section> */}
+      </Section>
       <Section name="Treks">
         <Subsection>
           <StyledMedalShelf>
             <EventPatch
-              background="#595959"
-              foreground="#bad01e"
+              background="#0D313D"
+              foreground="#CE9708"
               title="Trekfest 50km"
               year={2017}
               stravaLink="https://www.strava.com/activities/1019627751"
             />
+            {/* <EventPatch background="#0D492C" foreground="white" title="TODO" year={2022} stravaLink="TODO" /> */}
           </StyledMedalShelf>
         </Subsection>
       </Section>
