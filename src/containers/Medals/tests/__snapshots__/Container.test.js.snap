@@ -907,6 +907,64 @@ exports[`<Medals /> should render correctly 1`] = `
     >
       <h1
         class="sc-gsnTZi cTWewb sc-crXcEl jisdVx"
+        id="runs"
+      >
+        Runs
+      </h1>
+      <div
+        class="sc-jqUVSM leXYdV"
+      >
+        <div
+          class="sc-jgbSNz gbPXuE containerstyles__StyledMedalShelf-sc-153xxqc-0 fsYLue"
+        >
+          <div
+            class="sc-hAZoDl kuLGYY"
+          >
+            <span
+              class="sc-eCYdqJ laHCpw sc-fnykZs bfJfNd"
+            >
+              New Forest Half Marathon
+            </span>
+            <span
+              class="sc-eCYdqJ iiRHQc sc-fEOsli jFZvgM"
+            >
+              2022
+            </span>
+            <div
+              class="sc-bjUoiL gZyZTu"
+            >
+              <a
+                class="sc-iBkjds jYpFLS sc-idiyUo"
+                href="https://www.strava.com/activities/7790895383"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                <svg
+                  class="sc-gKXOVf iNzqQR"
+                  height="18"
+                  viewBox="0 0 24 24"
+                  width="18"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M10.5714 1.2381L4.28571 13.5238H8L10.5714 8.66667L13.1429 13.5238H16.9524L10.5714 1.2381Z"
+                  />
+                  <path
+                    d="M15.0476 22.7619L10.381 13.5238H13.2381L15.0476 17.2381L16.9524 13.5238H19.7143L15.0476 22.7619Z"
+                    fill-opacity="0.5"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="sc-jqUVSM leXYdV"
+    >
+      <h1
+        class="sc-gsnTZi cTWewb sc-crXcEl jisdVx"
         id="treks"
       >
         Treks
@@ -918,7 +976,7 @@ exports[`<Medals /> should render correctly 1`] = `
           class="sc-jgbSNz gbPXuE containerstyles__StyledMedalShelf-sc-153xxqc-0 fsYLue"
         >
           <div
-            class="sc-hAZoDl kTjPNa"
+            class="sc-hAZoDl hdstcz"
           >
             <span
               class="sc-eCYdqJ laHCpw sc-fnykZs bfJfNd"
@@ -934,7 +992,7 @@ exports[`<Medals /> should render correctly 1`] = `
               class="sc-bjUoiL gZyZTu"
             >
               <a
-                class="sc-iBkjds izCObS sc-idiyUo"
+                class="sc-iBkjds iujZhe sc-idiyUo"
                 href="https://www.strava.com/activities/1019627751"
                 rel="noopener noreferrer"
                 target="_blank"
