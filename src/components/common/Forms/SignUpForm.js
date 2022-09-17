@@ -21,6 +21,7 @@ const SignUpForm = props => {
       onDataChanged={onDataChangedCustom}
       entity={credentials}
       submitLabel={submitLabel || 'Sign up'}
+      disabled={!credentials.consent}
       formFields={[
         {
           id: 'uname',
@@ -40,6 +41,12 @@ const SignUpForm = props => {
             spellCheck: 'false',
             autofill: 'email',
           },
+        },
+        {
+          type: 'CHECKBOX',
+          id: 'consent',
+          name: 'I consent to the data entered above being stored.',
+          show: true,
         },
       ]}
       test={process.env.NODE_ENV === 'test'}

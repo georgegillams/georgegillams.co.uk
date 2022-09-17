@@ -1,43 +1,21 @@
 import React from 'react';
-import PropTypes from 'prop-types';
-import { cssModules } from '@george-gillams/components/helpers/cssModules';
-import Subsection from '@george-gillams/components/subsection';
+import PageContainer from 'components/common/PageContainer';
 import Paragraph from '@george-gillams/components/paragraph';
 import PageTitle from 'components/common/PageTitle';
 import TextLink from 'components/common/TextLink';
 
-import STYLES from './not-found.scss';
-
-const getClassName = cssModules(STYLES);
-
 const NotFound = props => {
-  const { className } = props;
-  const classNameFinal = [getClassName('not-found__container')];
-  if (className) {
-    classNameFinal.push(className);
-  }
-
   return (
-    <div className={classNameFinal.join(' ')}>
-      <PageTitle className={getClassName('not-found__container')} name="Oops." pageTitle="404">
-        <Subsection anchor={false}>
-          <Paragraph>
-            The page you&apos;re looking for doesn&apos;t exist, or you don&apos;t have permission to view it.
-            <br />
-            Maybe the <TextLink href={'/sitemap'}>site map</TextLink> can help
-          </Paragraph>
-        </Subsection>
+    <PageContainer bottomPadding centred {...props}>
+      <PageTitle name="Oops." pageTitle="404">
+        <Paragraph>
+          The page you&apos;re looking for doesn&apos;t exist, or you don&apos;t have permission to view it.
+          <br />
+          Maybe the <TextLink href={'/sitemap'}>site map</TextLink> can help
+        </Paragraph>
       </PageTitle>
-    </div>
+    </PageContainer>
   );
-};
-
-NotFound.propTypes = {
-  className: PropTypes.string,
-};
-
-NotFound.defaultProps = {
-  className: null,
 };
 
 export default NotFound;

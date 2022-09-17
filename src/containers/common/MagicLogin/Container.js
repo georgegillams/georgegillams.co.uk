@@ -6,10 +6,9 @@ import Paragraph from '@george-gillams/components/paragraph';
 
 import TextLink from 'components/common/TextLink';
 import ErrorDisplay from 'components/common/ErrorDisplay';
-import CookiesRequired from 'containers/common/CookiesRequired';
 import { withRouter } from 'next/router';
 import { REDIRECT_REGEX } from '@george-gillams/webapp/helpers/regexConstants';
-import { CONSENT_STATE_ALLOWED } from 'containers/common/Consent/constants';
+import PageContainer from 'components/common/PageContainer';
 
 const MagicLogin = props => {
   const [loginAttempted, setLoginAttempted] = useState(false);
@@ -19,11 +18,8 @@ const MagicLogin = props => {
 
     login,
 
-    consentState,
     magicLoginState,
     authenticatorState,
-
-    className,
   } = props;
 
   const { logInError, logInResult } = magicLoginState;
@@ -33,22 +29,15 @@ const MagicLogin = props => {
     if (router && router.query) {
       token = router.query.token;
     }
-    // We want to wait for cookies to be accepted before logging in
-    if (!loginAttempted && token && consentState.cookieConsent === CONSENT_STATE_ALLOWED) {
+    if (!loginAttempted && token) {
       login(token);
       setLoginAttempted(true);
     }
-  }, [consentState, router]);
+  }, [router]);
 
   const { user } = authenticatorState;
 
   const success = user && logInResult && !logInError;
-
-  const outerClassNames = [];
-
-  if (className) {
-    outerClassNames.push(className);
-  }
 
   let redirectLocation = 'account';
   if (success) {
@@ -64,8 +53,7 @@ const MagicLogin = props => {
   }
 
   return (
-    <div className={outerClassNames.join(' ')}>
-      <CookiesRequired reason={'log in'} />
+    <PageContainer bottomPadding>
       <PageTitle name={success ? 'Logged in' : 'Logging in'}>
         {success && (
           <Paragraph>
@@ -88,7 +76,7 @@ const MagicLogin = props => {
           magicLoginState,
         }}
       />
-    </div>
+    </PageContainer>
   );
 };
 
@@ -110,17 +98,12 @@ MagicLogin.propTypes = {
   authenticatorState: PropTypes.shape({
     user: PropTypes.object,
   }).isRequired,
-  consentState: PropTypes.shape({
-    cookieConsent: PropTypes.string,
-  }).isRequired,
-  className: PropTypes.string,
 };
 
 MagicLogin.defaultProps = {
   router: null,
   authenticatorState: null,
   magicLoginState: null,
-  className: null,
 };
 
 export default withRouter(MagicLogin);

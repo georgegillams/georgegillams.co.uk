@@ -28,19 +28,6 @@ exports[`<Button /> Should render correctly hrefExternal 1`] = `
 </div>
 `;
 
-exports[`<Button /> Should render correctly with custom className 1`] = `
-<div>
-  <a
-    class="sc-hKMtZM lopzjZ test-custom-classname"
-    href="/test"
-  >
-    <span
-      class="sc-eCYdqJ ghZAyu"
-    />
-  </a>
-</div>
-`;
-
 exports[`<Button /> Should render with nextified href 1`] = `
 <div>
   <a

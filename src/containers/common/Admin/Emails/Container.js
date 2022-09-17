@@ -3,10 +3,7 @@ import PropTypes from 'prop-types';
 import PageTitle from 'components/common/PageTitle';
 import DebugObject from 'components/common/DebugObject';
 import LoadingCover from '@george-gillams/components/loading-cover';
-import Button from 'components/common/Button';
-import Paragraph from '@george-gillams/components/paragraph';
 import { AdminOnly } from 'components/common/Walls';
-import { SplitDetailView } from 'components/common/SplitDetailView';
 import { setPostLoginRedirect } from 'client-utils/common/storageHelpers';
 import Skeleton from './Skeleton';
 import { withRouter } from 'next/router';
@@ -15,11 +12,9 @@ import { BUTTON_TYPES } from '@george-gillams/components/button/constants';
 
 import AdminEmailAPIEntity from './AdminEmailAPIEntity';
 
-import { cssModules } from '@george-gillams/components/helpers/cssModules';
-import STYLES from './admin-emails.scss';
 import useTabMadeVisible from 'client-utils/common/useTabMadeVisible';
-
-const getClassName = cssModules(STYLES);
+import { Count, StyledButton, StyledSplitDetailView } from './admin-emails.styles';
+import { VStack } from 'components/common/Stacks';
 
 const AdminEmails = props => {
   const [firstPageHit, setFirstPageHit] = useState(true);
@@ -79,7 +74,7 @@ const AdminEmails = props => {
   const showEmails = !!emails && !!emails.length && !!emails.map;
 
   const listView = (
-    <div>
+    <VStack>
       {showEmails &&
         emails.map(n => (
           <AdminEmailAPIEntity
@@ -89,10 +84,9 @@ const AdminEmails = props => {
             compact
             entity={n}
             highlighted={highlightId === n.id}
-            className={getClassName('admin-emails__card')}
           />
         ))}
-    </div>
+    </VStack>
   );
   let detailView = null;
   const detailEmails = emails && emails.filter && highlightId ? emails.filter(g => g.id === highlightId) : null;
@@ -100,24 +94,20 @@ const AdminEmails = props => {
 
   detailView = !detailEmail ? null : (
     <AdminEmailAPIEntity key={detailEmail.id} entity={detailEmail} highlighted={highlightId === detailEmail.id}>
-      <Button
+      <StyledButton
         buttonType={BUTTON_TYPES.destructive}
         loading={adminEmailsState.resending}
-        onClick={() => resend({ emailToResend: detailEmail })}
-        className={getClassName('admin-emails__control')}>
+        onClick={() => resend({ emailToResend: detailEmail })}>
         Resend
-      </Button>
+      </StyledButton>
     </AdminEmailAPIEntity>
   );
 
   const mainControls = (
     <div>
-      <Button
-        style={{ marginRight: '1rem', marginBottom: '1rem' }}
-        loading={adminEmailsState.loading}
-        onClick={() => load()}>
+      <StyledButton loading={adminEmailsState.loading} onClick={() => load()}>
         Reload emails
-      </Button>
+      </StyledButton>
     </div>
   );
 
@@ -138,16 +128,11 @@ const AdminEmails = props => {
           {mainControls}
           <ErrorDisplay message="Could not load emails" error={loadError} />
           {emails && (
-            <Paragraph className={getClassName('admin-analytics__count')}>
+            <Count>
               Showing {emails.length} of {emails.length} emails
-            </Paragraph>
+            </Count>
           )}
-          <SplitDetailView
-            className={getClassName('admin-emails__split-view')}
-            listView={listView}
-            detailView={detailView}
-            closeLink="/admin/emails"
-          />
+          <StyledSplitDetailView listView={listView} detailView={detailView} closeLink="/admin/emails" />
         </AdminOnly>
       </LoadingCover>
       <DebugObject

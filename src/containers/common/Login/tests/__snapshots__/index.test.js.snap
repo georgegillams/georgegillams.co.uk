@@ -3,7 +3,9 @@
 exports[`<Login /> should render correctly - index 1`] = `
 <div>
   <div
-    class=""
+    aria-label="Loading"
+    class="sc-fnykZs liLDph page-containerstyles__StyledPageContainer-sc-19l7k4-0"
+    width="default"
   >
     <div
       class="sc-ksZaOG duCsur"
@@ -45,7 +47,9 @@ exports[`<Login /> should render correctly - index 1`] = `
 exports[`<Login /> should render correctly with initial state 1`] = `
 <div>
   <div
-    class=""
+    aria-label="Loading"
+    class="sc-fnykZs liLDph page-containerstyles__StyledPageContainer-sc-19l7k4-0"
+    width="default"
   >
     <div
       class="sc-ksZaOG duCsur"
@@ -87,7 +91,9 @@ exports[`<Login /> should render correctly with initial state 1`] = `
 exports[`<Login /> should render correctly with loggingIn=true 1`] = `
 <div>
   <div
-    class=""
+    aria-label="Loading"
+    class="sc-fnykZs liLDph page-containerstyles__StyledPageContainer-sc-19l7k4-0"
+    width="default"
   >
     <div
       class="sc-ksZaOG duCsur"
@@ -129,7 +135,9 @@ exports[`<Login /> should render correctly with loggingIn=true 1`] = `
 exports[`<Login /> should render correctly with loginError 1`] = `
 <div>
   <div
-    class=""
+    aria-label="Loading"
+    class="sc-fnykZs liLDph page-containerstyles__StyledPageContainer-sc-19l7k4-0"
+    width="default"
   >
     <div
       class="sc-ksZaOG duCsur"
@@ -171,7 +179,9 @@ exports[`<Login /> should render correctly with loginError 1`] = `
 exports[`<Login /> should render correctly with loginResult 1`] = `
 <div>
   <div
-    class=""
+    aria-label="Loading"
+    class="sc-fnykZs liLDph page-containerstyles__StyledPageContainer-sc-19l7k4-0"
+    width="default"
   >
     <div
       class="sc-ksZaOG duCsur"
@@ -213,7 +223,8 @@ exports[`<Login /> should render correctly with loginResult 1`] = `
 exports[`<Login /> should render correctly with user 1`] = `
 <div>
   <div
-    class=""
+    class="sc-fnykZs cNMYuP page-containerstyles__StyledPageContainer-sc-19l7k4-0"
+    width="default"
   >
     <div
       class="sc-iqcoie fvEXqf"
@@ -225,7 +236,7 @@ exports[`<Login /> should render correctly with user 1`] = `
         You're logged in
       </h1>
       <span
-        class="sc-fnykZs kIjAem"
+        class="sc-fEOsli ftbhjX"
       >
         <a
           class="sc-iBkjds kXOvCG"

@@ -12,10 +12,4 @@ describe('<AppWrapper />', () => {
 
     expect(container).toMatchSnapshot();
   });
-
-  it('Should render correctly with custom className', () => {
-    const { container } = render(<AppWrapper className={'test-custom-classname'}>{children}</AppWrapper>);
-
-    expect(container).toMatchSnapshot();
-  });
 });

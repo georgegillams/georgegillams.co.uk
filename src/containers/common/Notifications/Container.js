@@ -1,12 +1,8 @@
 import React, { useEffect } from 'react';
 import PropTypes from 'prop-types';
 import DebugObject from 'components/common/DebugObject';
-import Notification from '@george-gillams/components/notification';
-import STYLES from './notifications.scss';
-import { cssModules } from '@george-gillams/components/helpers/cssModules';
+import { StyledNotification } from './notifications.styles';
 import useTabMadeVisible from 'client-utils/common/useTabMadeVisible';
-
-const getClassName = cssModules(STYLES);
 
 const Notifications = props => {
   const { load, notificationsState } = props;
@@ -35,9 +31,9 @@ const Notifications = props => {
     <>
       {filteredNotifications &&
         filteredNotifications.map(n => (
-          <Notification key={n.id} className={getClassName('notifications__notification')} type={n.type}>
+          <StyledNotification key={n.id} type={n.type}>
             {n.message}
-          </Notification>
+          </StyledNotification>
         ))}
       <div>
         <DebugObject debugTitle="Notifications" debugObject={{ load, notificationsState }} />

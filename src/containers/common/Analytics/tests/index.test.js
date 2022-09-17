@@ -1,7 +1,6 @@
 import React from 'react';
 import { render } from '@testing-library/react';
 import { Provider } from 'react-redux';
-import { initialState as initialConsentState } from '../../Consent/reducer';
 import { initialState } from '../reducer';
 
 import configureStore from 'client-utils/common/redux/configure-store';
@@ -32,9 +31,6 @@ describe('<Analytics />', () => {
       <Provider store={store}>
         <Analytics
           sendAnalytic={spy}
-          consentState={{
-            ...initialConsentState,
-          }}
           analyticState={{
             ...initialState,
           }}

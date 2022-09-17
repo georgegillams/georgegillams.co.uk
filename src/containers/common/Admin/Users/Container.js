@@ -3,9 +3,8 @@ import PropTypes from 'prop-types';
 import PageTitle from 'components/common/PageTitle';
 import DebugObject from 'components/common/DebugObject';
 import LoadingCover from '@george-gillams/components/loading-cover';
-import Button from 'components/common/Button';
 import Subsection from '@george-gillams/components/subsection';
-import Paragraph from '@george-gillams/components/paragraph';
+import Button from 'components/common/Button';
 import { SplitDetailItem } from 'components/common/SplitDetailView';
 import { AdminOnly } from 'components/common/Walls';
 import { SplitDetailView } from 'components/common/SplitDetailView';
@@ -19,11 +18,9 @@ import { BUTTON_TYPES } from '@george-gillams/components/button/constants';
 
 import AdminUsersAPIEntity from './AdminUsersAPIEntity';
 
-import { cssModules } from '@george-gillams/components/helpers/cssModules';
-import STYLES from './admin-users.scss';
 import useTabMadeVisible from 'client-utils/common/useTabMadeVisible';
-
-const getClassName = cssModules(STYLES);
+import { ControlPanel, Count } from './admin-users.styles';
+import { HStack, VStack } from 'components/common/Stacks';
 
 const AdminUsers = props => {
   const [firstPageHit, setFirstPageHit] = useState(true);
@@ -106,12 +103,8 @@ const AdminUsers = props => {
     </>
   );
   const listView = (
-    <div>
-      <SplitDetailItem
-        scroll={false}
-        highlighted={highlightId === 'new'}
-        href="/admin/users?highlight=new"
-        className={getClassName('admin-users__card')}>
+    <VStack>
+      <SplitDetailItem scroll={false} highlighted={highlightId === 'new'} href="/admin/users?highlight=new">
         <Subsection name="New +" anchor={false} padding={false} />
       </SplitDetailItem>
       {showUsers &&
@@ -123,10 +116,9 @@ const AdminUsers = props => {
             compact
             entity={n}
             highlighted={highlightId === n.id}
-            className={getClassName('admin-users__card')}
           />
         ))}
-    </div>
+    </VStack>
   );
   let detailView = null;
   if (highlightId === 'new') {
@@ -145,9 +137,8 @@ const AdminUsers = props => {
         onUserUpdateSuccess={() => {
           load();
         }}>
-        <div className={getClassName('admin-users__control-panel')}>
+        <ControlPanel>
           <Button
-            className={getClassName('admin-users__button')}
             buttonType={BUTTON_TYPES.destructive}
             loading={requesting || removing}
             onClick={() => {
@@ -155,33 +146,23 @@ const AdminUsers = props => {
             }}>
             Login as user
           </Button>
-          <Button
-            className={getClassName('admin-users__button')}
-            buttonType={BUTTON_TYPES.destructive}
-            loading={removing}
-            onClick={() => remove(detailUser)}>
+          <Button buttonType={BUTTON_TYPES.destructive} loading={removing} onClick={() => remove(detailUser)}>
             Delete
           </Button>
-        </div>
+        </ControlPanel>
       </AdminUsersAPIEntity>
     );
   }
 
   const filtersApplied = filters !== defaultFilters;
   const mainControls = (
-    <div>
-      <Button className={getClassName('admin-users__button')} loading={adminUsersState.loading} onClick={() => load()}>
+    <HStack>
+      <Button loading={adminUsersState.loading} onClick={() => load()}>
         Reload users
       </Button>
-      <Button className={getClassName('admin-users__button')} onClick={() => setShowFilters(!showFilters)}>
-        {showFilters ? 'Hide filters' : 'Show filters'}
-      </Button>
-      {filtersApplied && (
-        <Button className={getClassName('admin-users__button')} onClick={() => setFilters(defaultFilters)}>
-          Clear filters
-        </Button>
-      )}
-    </div>
+      <Button onClick={() => setShowFilters(!showFilters)}>{showFilters ? 'Hide filters' : 'Show filters'}</Button>
+      {filtersApplied && <Button onClick={() => setFilters(defaultFilters)}>Clear filters</Button>}
+    </HStack>
   );
 
   const filterControls = <UserFilter filters={filters} onFiltersChanged={setFilters} />;
@@ -204,16 +185,11 @@ const AdminUsers = props => {
           <ErrorDisplay message="Could not load users" error={loadError} />
           {showFilters && filterControls}
           {users && (
-            <Paragraph className={getClassName('admin-analytics__count')}>
+            <Count>
               Showing {filteredUsers.length} of {users.length} users
-            </Paragraph>
+            </Count>
           )}
-          <SplitDetailView
-            className={getClassName('admin-users__split-view')}
-            listView={listView}
-            detailView={detailView}
-            closeLink="/admin/users"
-          />
+          <SplitDetailView listView={listView} detailView={detailView} closeLink="/admin/users" />
         </AdminOnly>
       </LoadingCover>
       <DebugObject

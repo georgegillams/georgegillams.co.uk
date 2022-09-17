@@ -3,7 +3,7 @@
 exports[`<Layout /> Should render correctly 1`] = `
 <div>
   <main
-    class="page-container__container common-layout__grow"
+    class="main-wrapperstyles__StyledMainWrapper-sc-hveppy-0 iMOsNu common-layoutstyles__StyledMainWrapper-sc-1orix3m-0 bnxJXa"
     id="main"
   >
     <div>
@@ -18,14 +18,22 @@ exports[`<Layout /> Should render correctly 1`] = `
       class="logostyles__OuterContainer-sc-1fentac-0 ftAWyG footerstyles__StyledLogo-sc-ojjd19-1 dHUBSN"
     >
       <a
+<<<<<<< HEAD
         class="logostyles__StyledLink-sc-1fentac-1 hziiVO"
+=======
+        class="logostyles__StyledLink-sc-1fentac-1 jmykYS"
+>>>>>>> acbe0cf7 (fix: Styled everything — common code)
         href="/"
       >
         <span
           aria-label="Home page"
           class="logostyles__LargeText-sc-1fentac-2 eneHCc"
         >
+<<<<<<< HEAD
           G
+=======
+          LOGO
+>>>>>>> acbe0cf7 (fix: Styled everything — common code)
         </span>
       </a>
     </div>
@@ -83,34 +91,6 @@ exports[`<Layout /> Should render correctly 1`] = `
     <div
       class="footer-navstyles__Wrapper-sc-7lmnsj-0 kTnJQq footerstyles__StyledFooterNav-sc-ojjd19-3"
     >
-      <div
-        class="footer-navstyles__Section-sc-7lmnsj-1 iFmILp"
-      >
-        <a
-          class="sc-iBkjds cXbvnS"
-          href="/blog"
-        >
-          Blog
-        </a>
-        <a
-          class="sc-iBkjds cXbvnS"
-          href="/photography"
-        >
-          Photography
-        </a>
-        <a
-          class="sc-iBkjds cXbvnS"
-          href="/work"
-        >
-          Work
-        </a>
-        <a
-          class="sc-iBkjds cXbvnS"
-          href="/contact"
-        >
-          Contact
-        </a>
-      </div>
       <div
         class="footer-navstyles__Section-sc-7lmnsj-1 iFmILp"
       >
@@ -147,7 +127,7 @@ exports[`<Layout /> Should render correctly 1`] = `
 exports[`<Layout /> Should render correctly with spread props 1`] = `
 <div>
   <main
-    class="page-container__container common-layout__grow"
+    class="main-wrapperstyles__StyledMainWrapper-sc-hveppy-0 iMOsNu common-layoutstyles__StyledMainWrapper-sc-1orix3m-0 bnxJXa"
     id="main"
   >
     <div>
@@ -162,14 +142,22 @@ exports[`<Layout /> Should render correctly with spread props 1`] = `
       class="logostyles__OuterContainer-sc-1fentac-0 ftAWyG footerstyles__StyledLogo-sc-ojjd19-1 dHUBSN"
     >
       <a
+<<<<<<< HEAD
         class="logostyles__StyledLink-sc-1fentac-1 hziiVO"
+=======
+        class="logostyles__StyledLink-sc-1fentac-1 jmykYS"
+>>>>>>> acbe0cf7 (fix: Styled everything — common code)
         href="/"
       >
         <span
           aria-label="Home page"
           class="logostyles__LargeText-sc-1fentac-2 eneHCc"
         >
+<<<<<<< HEAD
           G
+=======
+          LOGO
+>>>>>>> acbe0cf7 (fix: Styled everything — common code)
         </span>
       </a>
     </div>
@@ -227,34 +215,6 @@ exports[`<Layout /> Should render correctly with spread props 1`] = `
     <div
       class="footer-navstyles__Wrapper-sc-7lmnsj-0 kTnJQq footerstyles__StyledFooterNav-sc-ojjd19-3"
     >
-      <div
-        class="footer-navstyles__Section-sc-7lmnsj-1 iFmILp"
-      >
-        <a
-          class="sc-iBkjds cXbvnS"
-          href="/blog"
-        >
-          Blog
-        </a>
-        <a
-          class="sc-iBkjds cXbvnS"
-          href="/photography"
-        >
-          Photography
-        </a>
-        <a
-          class="sc-iBkjds cXbvnS"
-          href="/work"
-        >
-          Work
-        </a>
-        <a
-          class="sc-iBkjds cXbvnS"
-          href="/contact"
-        >
-          Contact
-        </a>
-      </div>
       <div
         class="footer-navstyles__Section-sc-7lmnsj-1 iFmILp"
       >

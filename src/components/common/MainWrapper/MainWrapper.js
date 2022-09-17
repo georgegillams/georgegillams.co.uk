@@ -1,38 +1,15 @@
-import React, { useState, useEffect } from 'react';
-import PropTypes from 'prop-types';
-import { cssModules } from '@george-gillams/components/helpers/cssModules';
+import React from 'react';
 
-import STYLES from './main-wrapper.scss';
-import { DEBUG_SHOW_PAGE_CONTAINER_KEY } from '@george-gillams/webapp/helpers/storageConstants';
-
-const getClassName = cssModules(STYLES);
+import { StyledMainWrapper } from './main-wrapper.styles';
 
 const MainWrapper = props => {
-  const { className, ...rest } = props;
-  const [showDebug, setShowDebug] = useState(false);
+  const { ...rest } = props;
 
-  useEffect(() => {
-    setShowDebug(window.localStorage.getItem(DEBUG_SHOW_PAGE_CONTAINER_KEY) === 'true');
-  }, []);
-
-  const outerClassNames = [getClassName('page-container__container')];
-  if (showDebug) {
-    outerClassNames.push([getClassName('page-container__container--debug')]);
-  }
-
-  if (className) {
-    outerClassNames.push(className);
-  }
-
-  return <main id="main" className={outerClassNames.join(' ')} {...rest} />;
+  return <StyledMainWrapper id="main" {...rest} />;
 };
 
-MainWrapper.propTypes = {
-  className: PropTypes.string,
-};
+MainWrapper.propTypes = {};
 
-MainWrapper.defaultProps = {
-  className: null,
-};
+MainWrapper.defaultProps = {};
 
 export default MainWrapper;

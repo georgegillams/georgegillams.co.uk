@@ -12,12 +12,10 @@ import ErrorDisplay from 'components/common/ErrorDisplay';
 import NotificationEntity from './NotificationEntity';
 import { BUTTON_TYPES } from '@george-gillams/components/button/constants';
 
-import { cssModules } from '@george-gillams/components/helpers/cssModules';
-import STYLES from './admin-notifications.scss';
 import useTabMadeVisible from 'client-utils/common/useTabMadeVisible';
 import { CreateNotificationForm } from 'components/common/Forms';
-
-const getClassName = cssModules(STYLES);
+import PageContainer from 'components/common/PageContainer';
+import { VStack } from 'components/common/Stacks';
 
 const AdminNotifications = props => {
   const {
@@ -42,19 +40,8 @@ const AdminNotifications = props => {
 
   const showNotifications = !!notifications && !!notifications.map && notifications.length > 0;
 
-  const mainControls = (
-    <div>
-      <Button
-        className={getClassName('admin-notifications__control')}
-        loading={notificationsState.loading}
-        onClick={() => load()}>
-        Reload notifications
-      </Button>
-    </div>
-  );
-
   return (
-    <>
+    <PageContainer bottomPadding>
       <LoadingCover
         loadingSkeleton={Skeleton}
         loading={authenticatorState.user === undefined}
@@ -72,22 +59,27 @@ const AdminNotifications = props => {
             onDataChanged={setNewNotification}
             onSubmit={() => {
               create(newNotification);
-            }}></CreateNotificationForm>
-          {mainControls}
-          <ErrorDisplay message="Could not load notifications" error={loadError} />
-          {showNotifications &&
-            notifications.map(n => (
-              <NotificationEntity className={getClassName('admin-notifications__entity')} key={n.id} entity={n}>
-                <Button
-                  buttonType={BUTTON_TYPES.destructive}
-                  disabled={n.deleted}
-                  onClick={() => {
-                    remove(n);
-                  }}>
-                  Remove
-                </Button>
-              </NotificationEntity>
-            ))}
+            }}
+          />
+          <Button loading={notificationsState.loading} onClick={() => load()}>
+            Reload notifications
+          </Button>
+          <VStack topPadding>
+            <ErrorDisplay message="Could not load notifications" error={loadError} />
+            {showNotifications &&
+              notifications.map(n => (
+                <NotificationEntity key={n.id} entity={n}>
+                  <Button
+                    buttonType={BUTTON_TYPES.destructive}
+                    disabled={n.deleted}
+                    onClick={() => {
+                      remove(n);
+                    }}>
+                    Remove
+                  </Button>
+                </NotificationEntity>
+              ))}
+          </VStack>
         </AdminOnly>
       </LoadingCover>
       <DebugObject
@@ -99,7 +91,7 @@ const AdminNotifications = props => {
           newNotification,
         }}
       />
-    </>
+    </PageContainer>
   );
 };
 

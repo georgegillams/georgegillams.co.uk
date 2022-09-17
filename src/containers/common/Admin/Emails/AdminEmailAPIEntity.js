@@ -3,10 +3,7 @@ import PropTypes from 'prop-types';
 import Paragraph from '@george-gillams/components/paragraph';
 import Subsection from '@george-gillams/components/subsection';
 import { SplitDetailItem } from 'components/common/SplitDetailView';
-import { cssModules } from '@george-gillams/components/helpers/cssModules';
-import STYLES from './admin-emails.scss';
-
-const getClassName = cssModules(STYLES);
+import { EmailPreview } from './AdminEmailAPIEntity.styles';
 
 const AdminEmailAPIEntity = props => {
   const { compact, entity, children, ...rest } = props;
@@ -35,8 +32,7 @@ const AdminEmailAPIEntity = props => {
         )}
       </Paragraph>
       {!compact && (
-        <div
-          className={getClassName('admin-emails__preview')}
+        <EmailPreview
           dangerouslySetInnerHTML={{
             __html: entity.html,
           }}

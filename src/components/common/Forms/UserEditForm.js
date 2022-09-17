@@ -5,10 +5,7 @@ import FormBuilder from '@george-gillams/components/form-builder';
 import { EMAIL_REGEX, USERNAME_REGEX, NAME_REGEX } from '@george-gillams/webapp/helpers/regexConstants';
 
 const UserEditForm = props => {
-  const { className, user, showAdminControls, onDataChanged, ...rest } = props;
-
-  const classNameFinal = [];
-  if (className) classNameFinal.push(className);
+  const { user, showAdminControls, onDataChanged, ...rest } = props;
 
   const onDataChangedCustom = newValue => {
     if (!newValue.email) {
@@ -72,12 +69,10 @@ UserEditForm.propTypes = {
   user: PropTypes.object.isRequired,
   onDataChanged: PropTypes.func.isRequired,
   onSubmit: PropTypes.func.isRequired,
-  className: PropTypes.string,
   showAdminControls: PropTypes.bool,
 };
 
 UserEditForm.defaultProps = {
-  className: null,
   showAdminControls: false,
 };
 

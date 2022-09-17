@@ -1,15 +1,12 @@
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
-import Button from 'components/common/Button';
 import Paragraph from '@george-gillams/components/paragraph';
 import Subsection from '@george-gillams/components/subsection';
 import { SplitDetailItem } from 'components/common/SplitDetailView';
 import { UserEditForm } from 'components/common/Forms';
 import ErrorDisplay from 'components/common/ErrorDisplay';
-import STYLES from './admin-users.scss';
-import { cssModules } from '@george-gillams/components/helpers/cssModules';
-
-const getClassName = cssModules(STYLES);
+import Button from 'components/common/Button';
+import { spacingBase } from '@george-gillams/components/constants/layout';
 
 const AdminUsersAPIEntity = props => {
   const { compact, entity, updateUser, adminUserState, children, ...rest } = props;
@@ -41,9 +38,9 @@ const AdminUsersAPIEntity = props => {
         )}
       </Paragraph>
       {!compact && (
-        <div className={getClassName('admin-users__control-panel')}>
+        <div>
           <Button
-            className={getClassName('admin-users__edit-button')}
+            style={{ marginBottom: spacingBase }}
             onClick={() => {
               setEditing(!editing);
             }}>

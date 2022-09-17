@@ -5,7 +5,6 @@ import { connect } from 'react-redux';
 import { createStructuredSelector } from 'reselect';
 
 import { sendAnalytic } from './actions';
-import { selectState as selectConsentState } from '../Consent/selectors';
 import { selectState } from './selectors';
 import Analytics from './Container';
 import injectSaga from 'client-utils/common/redux/inject-saga';
@@ -16,7 +15,6 @@ import saga from './saga';
 import reducer from './reducer';
 
 const mapStateToProps = createStructuredSelector({
-  consentState: selectConsentState(),
   analyticState: selectState(),
 });
 

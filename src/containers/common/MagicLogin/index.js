@@ -7,7 +7,6 @@ import { createStructuredSelector } from 'reselect';
 import { login } from './actions';
 import { selectState } from './selectors';
 import { selectState as selectAuthenticatorState } from 'containers/common/Authenticator/selectors';
-import { selectState as selectConsentState } from '../Consent/selectors';
 import MagicLogin from './Container';
 import injectSaga from 'client-utils/common/redux/inject-saga';
 import injectReducer from 'client-utils/common/redux/inject-reducer';
@@ -18,7 +17,6 @@ import reducer from './reducer';
 
 const mapStateToProps = createStructuredSelector({
   magicLoginState: selectState(),
-  consentState: selectConsentState(),
   authenticatorState: selectAuthenticatorState(),
 });
 

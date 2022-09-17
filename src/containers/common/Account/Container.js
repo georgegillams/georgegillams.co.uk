@@ -1,9 +1,9 @@
 import React from 'react';
+import PageContainer from 'components/common/PageContainer';
 import PropTypes from 'prop-types';
 import PageTitle from 'components/common/PageTitle';
 import LoadingCover from '@george-gillams/components/loading-cover';
 import DebugObject from 'components/common/DebugObject';
-import Paragraph from '@george-gillams/components/paragraph';
 import Button from 'components/common/Button';
 import { BUTTON_TYPES } from '@george-gillams/components/button/constants';
 import { setPostLoginRedirect } from 'client-utils/common/storageHelpers';
@@ -11,10 +11,7 @@ import { setPostLoginRedirect } from 'client-utils/common/storageHelpers';
 import Skeleton from './Skeleton';
 
 import { LoggedInOnly } from 'components/common/Walls';
-import STYLES from './account.scss';
-import { cssModules } from '@george-gillams/components/helpers/cssModules';
-
-const getClassName = cssModules(STYLES);
+import { Details, StyledButton, ControlPanel } from './account.styles';
 
 const Account = props => {
   const {
@@ -23,23 +20,15 @@ const Account = props => {
 
     accountState,
     authenticatorState,
-
-    className,
   } = props;
   const { user } = authenticatorState;
-
-  const outerClassNames = [];
-
-  if (className) {
-    outerClassNames.push(className);
-  }
 
   const showEmail = user && user.email;
   const showUname = user && user.uname;
   const showUserDetails = showEmail || showUname;
 
   const page = (
-    <div className={outerClassNames.join(' ')}>
+    <PageContainer bottomPadding>
       <LoggedInOnly
         user={authenticatorState.user}
         setLoginRedirect={() => {
@@ -47,30 +36,24 @@ const Account = props => {
         }}>
         <PageTitle name="Account">
           {showUserDetails && (
-            <Paragraph className={getClassName('account__details')}>
+            <Details>
               {showEmail && <div>{`Email: ${user.email}`}</div>}
               {showUname && <div>{`Display name: ${user.uname}`}</div>}
-            </Paragraph>
+            </Details>
           )}
-          <div className={getClassName('account__control-panel')}>
+          <ControlPanel>
             {user && !user.emailVerified && (
               <>
-                <Button
-                  className={getClassName('account__button')}
+                <StyledButton
                   loading={accountState && accountState.requestingVerificationEmail}
                   onClick={requestVerificationEmail}>
                   Get a new verification email
-                </Button>
+                </StyledButton>
               </>
             )}
             {user && user.admin && (
               <>
-                <Button className={getClassName('account__button')} href="/admin">
-                  Admin
-                </Button>
-                <Button className={getClassName('account__button')} href="/status">
-                  Site status
-                </Button>
+                <StyledButton href="/admin">Admin</StyledButton>
               </>
             )}
             <Button
@@ -79,10 +62,10 @@ const Account = props => {
               onClick={logout}>
               Logout
             </Button>
-          </div>
+          </ControlPanel>
         </PageTitle>
       </LoggedInOnly>
-    </div>
+    </PageContainer>
   );
 
   return (
@@ -116,13 +99,11 @@ Account.propTypes = {
   authenticatorState: PropTypes.shape({
     user: PropTypes.object,
   }).isRequired,
-  className: PropTypes.string,
 };
 
 Account.defaultProps = {
   authenticatorState: null,
   logoutState: null,
-  className: null,
 };
 
 export default Account;

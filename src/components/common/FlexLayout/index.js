@@ -1,22 +1,16 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import STYLES from './flex-layout.scss';
-import { cssModules } from '@george-gillams/components/helpers/cssModules';
-const getClassName = cssModules(STYLES);
+import { StyledMainWrapper } from './flex-layout.styles';
 
-const LegacyCommonLayout = props => {
+const FlexLayout = props => {
   const { children } = props;
 
-  return (
-    <main id="main" className={getClassName('flex-layout__grow')}>
-      {children}
-    </main>
-  );
+  return <StyledMainWrapper id="main">{children}</StyledMainWrapper>;
 };
 
-LegacyCommonLayout.propTypes = {
+FlexLayout.propTypes = {
   children: PropTypes.node.isRequired,
 };
 
-export default LegacyCommonLayout;
+export default FlexLayout;
