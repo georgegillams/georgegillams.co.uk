@@ -64,7 +64,7 @@ const LifeSection = props => {
           </Paragraph>
         </Section>
         <Paragraph className={getClassName('life-section__paragraph')}>
-          I got engaged recently in Iceland, and live with my amazing fiancée and Tigger the cat.
+          I live on the south coast of the UK with my wife, cat and dog.
         </Paragraph>
       </div>
       <Image

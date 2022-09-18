@@ -1,19 +1,16 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 
 import Paragraph from '@george-gillams/components/paragraph';
-import Subsection from '@george-gillams/components/subsection';
 import TextLink from 'components/common/TextLink';
-
-const getClassName = c => c;
+import { Background, Inner, Wrapper } from './creative-commons.syles';
 
 const CreativeCommons = props => {
-  const { className, ...rest } = props;
+  const { ...rest } = props;
 
   return (
-    <div className={getClassName('creative-commons__wrapper', className)} {...rest}>
-      <div className={getClassName('creative-commons__background')} />
-      <Subsection className={getClassName('creative-commons__inner')} anchor={false} name="Copyright">
+    <Wrapper {...rest}>
+      <Background />
+      <Inner anchor={false} name="Copyright">
         <Paragraph>
           Most of my photos are licensed under{' '}
           <TextLink hrefExternal href="https://creativecommons.org/licenses/by-sa/3.0/">
@@ -22,17 +19,9 @@ const CreativeCommons = props => {
           .<br />
           If you are unsure about your right to use them please <TextLink href="/contact">contact me</TextLink>.
         </Paragraph>
-      </Subsection>
-    </div>
+      </Inner>
+    </Wrapper>
   );
-};
-
-CreativeCommons.propTypes = {
-  className: PropTypes.string,
-};
-
-CreativeCommons.defaultProps = {
-  className: null,
 };
 
 export default CreativeCommons;
