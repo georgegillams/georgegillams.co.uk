@@ -15,19 +15,18 @@ exports[`<Layout /> Should render correctly 1`] = `
     id="footer"
   >
     <div
-      class="logo__container footerstyles__StyledLogo-sc-ojjd19-1 dHUBSN logo__container--centred logo__container--no-padding"
+      class="logostyles__OuterContainer-sc-1fentac-0 ftAWyG footerstyles__StyledLogo-sc-ojjd19-1 dHUBSN"
     >
       <a
-        class="logo__a"
+        class="logostyles__StyledLink-sc-1fentac-1 hziiVO"
         href="/"
       >
-        <h1
+        <span
           aria-label="Home page"
-          class="logo__heading logo__heading--no-padding"
-          role="button"
+          class="logostyles__LargeText-sc-1fentac-2 eneHCc"
         >
           G
-        </h1>
+        </span>
       </a>
     </div>
     <div
@@ -160,19 +159,18 @@ exports[`<Layout /> Should render correctly with spread props 1`] = `
     id="footer"
   >
     <div
-      class="logo__container footerstyles__StyledLogo-sc-ojjd19-1 dHUBSN logo__container--centred logo__container--no-padding"
+      class="logostyles__OuterContainer-sc-1fentac-0 ftAWyG footerstyles__StyledLogo-sc-ojjd19-1 dHUBSN"
     >
       <a
-        class="logo__a"
+        class="logostyles__StyledLink-sc-1fentac-1 hziiVO"
         href="/"
       >
-        <h1
+        <span
           aria-label="Home page"
-          class="logo__heading logo__heading--no-padding"
-          role="button"
+          class="logostyles__LargeText-sc-1fentac-2 eneHCc"
         >
           G
-        </h1>
+        </span>
       </a>
     </div>
     <div

@@ -21,7 +21,7 @@ const Photography = props => {
 
   return (
     <>
-      <PageContainer centred>
+      <PageContainer centred bottomPadding>
         <PageTitle anchor={false} name="Photography" />
         <LinkContainer>
           <TextLink hrefExternal href="https://www.flickr.com/people/georgegillams/">
