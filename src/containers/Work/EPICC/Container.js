@@ -1,6 +1,5 @@
 import React from 'react';
 import Paragraph from '@george-gillams/components/paragraph';
-import Image from '@george-gillams/components/image';
 import Subsection from '@george-gillams/components/subsection';
 import TextLink from 'components/common/TextLink';
 import PageTitle from 'components/common/PageTitle';
@@ -11,8 +10,7 @@ import screenshot3 from './images/3.png';
 import screenshot4 from './images/4.png';
 
 import PageContainer, { WIDTHS } from 'components/common/PageContainer';
-
-const getClassName = c => c;
+import { Gallery, Screenshot } from './epicc.styles';
 
 const WorkEPICC = () => (
   <PageContainer width={WIDTHS.prose}>
@@ -36,9 +34,8 @@ const WorkEPICC = () => (
           products would have incurred. Delegates could sign in using a magic-link sent to their email and then manage
           their tickets online.
         </Paragraph>
-        <div className={getClassName('epicc__gallery')}>
-          <Image
-            className={getClassName('epicc__screenshot')}
+        <Gallery>
+          <Screenshot
             imgProps={{
               alt: 'The EPICC conference ticket home page showing available tickets and their prices.',
             }}
@@ -47,8 +44,7 @@ const WorkEPICC = () => (
             lightSrc={screenshot1}
             darkSrc={screenshot1}
           />
-          <Image
-            className={getClassName('epicc__screenshot')}
+          <Screenshot
             imgProps={{
               alt:
                 // eslint-disable-next-line max-len
@@ -59,8 +55,7 @@ const WorkEPICC = () => (
             lightSrc={screenshot2}
             darkSrc={screenshot2}
           />
-          <Image
-            className={getClassName('epicc__screenshot')}
+          <Screenshot
             imgProps={{
               alt: 'The EPICC conference ticket website payment page.',
             }}
@@ -69,8 +64,7 @@ const WorkEPICC = () => (
             lightSrc={screenshot3}
             darkSrc={screenshot3}
           />
-          <Image
-            className={getClassName('epicc__screenshot')}
+          <Screenshot
             imgProps={{
               alt: 'The EPICC conference ticket website showing a user their purchased ticket.',
             }}
@@ -79,7 +73,7 @@ const WorkEPICC = () => (
             lightSrc={screenshot4}
             darkSrc={screenshot4}
           />
-        </div>
+        </Gallery>
       </Subsection>
     </PageTitle>
   </PageContainer>

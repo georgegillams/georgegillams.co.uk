@@ -1,6 +1,5 @@
 import React from 'react';
 
-import CSSHack from 'components/common/CSSHack';
 import BlogCreate from 'containers/BlogCreate';
 import CommonLayout from 'components/common/CommonLayout';
 

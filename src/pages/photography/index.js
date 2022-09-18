@@ -1,6 +1,5 @@
 import React from 'react';
 
-import CSSHack from 'components/common/CSSHack';
 import Photography from 'containers/Photography';
 import CommonLayout from 'components/common/CommonLayout';
 import apiStructure from 'helpers/common/apiStructure';

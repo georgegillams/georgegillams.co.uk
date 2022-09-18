@@ -10,6 +10,7 @@ import Skeleton from './Skeleton';
 
 import { AdminOnly } from 'components/common/Walls';
 import { CardContainer, StyledFeatureCard } from './admin-navigation.styles';
+import PageContainer from '@george-gillams/components/page-container';
 
 const AdminNavigation = props => {
   const {
@@ -26,7 +27,7 @@ const AdminNavigation = props => {
   }
 
   const page = (
-    <div className={outerClassNames.join(' ')}>
+    <PageContainer className={outerClassNames.join(' ')}>
       <AdminOnly
         user={user}
         setLoginRedirect={() => {
@@ -72,7 +73,7 @@ const AdminNavigation = props => {
           </CardContainer>
         </PageTitle>
       </AdminOnly>
-    </div>
+    </PageContainer>
   );
 
   return (

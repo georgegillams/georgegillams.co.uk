@@ -1,0 +1,32 @@
+@import '~utils/tokens';
+
+.contact {
+  &__icon-image-container {
+    display: flex;
+    height: 100%;
+    align-items: center;
+  }
+
+  &__icon-image {
+    width: 6rem;
+    height: 6rem;
+
+    &--dark-invert {
+      @media (prefers-color-scheme: dark) {spacing-lg
+        filter: invert(100%);
+      }
+    }
+  }
+
+  &__button {
+    margin: $spacing-lg $spacing-base 0 $spacing-base;
+  }
+
+  &__info-cell {
+    width: 100%;
+
+    &:first-of-type {
+      margin-top: $spacing-base;
+    }
+  }
+}

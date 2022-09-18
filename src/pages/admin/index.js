@@ -1,6 +1,5 @@
 import React from 'react';
 
-import CSSHack from 'components/common/CSSHack';
 import Admin from 'containers/Admin/Navigation';
 import CommonLayout from 'components/common/CommonLayout';
 

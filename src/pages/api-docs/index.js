@@ -1,6 +1,5 @@
 import React from 'react';
 
-import CSSHack from 'components/common/CSSHack';
 import ApiDocs from 'containers/common/ApiDocs';
 import CommonLayout from 'components/common/CommonLayout';
 

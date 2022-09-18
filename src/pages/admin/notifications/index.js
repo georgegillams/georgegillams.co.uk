@@ -1,6 +1,5 @@
 import React from 'react';
 
-import CSSHack from 'components/common/CSSHack';
 import Notifications from 'containers/common/Admin/Notifications';
 import CommonLayout from 'components/common/CommonLayout';
 

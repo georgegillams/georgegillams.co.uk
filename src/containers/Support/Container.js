@@ -7,18 +7,16 @@ import LoadingCover from '@george-gillams/components/loading-cover';
 import SupportSkeleton from './SupportSkeleton';
 
 import PageTitle from 'components/common/PageTitle';
-import Paragraph from '@george-gillams/components/paragraph';
 import LoadableSupportForm from './LoadableSupportForm';
 import Section from '@george-gillams/components/section';
 import SupportLink from './SupportLink';
 import Button from 'components/common/Button';
 import ErrorDisplay from 'components/common/ErrorDisplay';
 import PageContainer from 'components/common/PageContainer';
-
-const getClassName = c => c;
+import { Controls, SupportError } from './support.styles';
 
 const Support = props => {
-  const { loadLinks, createLink, deleteLink, supportState, authenticatorState, className } = props;
+  const { loadLinks, createLink, deleteLink, supportState, authenticatorState } = props;
 
   const [newLink, setNewLink] = useState(null);
 
@@ -51,24 +49,19 @@ const Support = props => {
           deleteLink,
           supportState,
           authenticatorState,
-          className,
         }}
       />
       <PageTitle name="Support">
         <>
-          <div className={getClassName('support__controls')}>
+          <Controls>
             <Button onClick={() => loadLinks()} disabled={supportState.loadingLinks}>
               Reload
             </Button>
-          </div>
+          </Controls>
           <ErrorDisplay message="The support session failed to load" error={supportState.loadLinksError} />
           <LoadingCover loadingSkeleton={SupportSkeleton} loading={!supportLinks}>
             <>
-              {noSupport && (
-                <Paragraph className={getClassName('support__error')}>
-                  No support session is currently active.
-                </Paragraph>
-              )}
+              {noSupport && <SupportError>No support session is currently active.</SupportError>}
               {supportLinks &&
                 supportLinks.map(sL => <SupportLink key={sL.name} admin={admin} link={sL} deleteLink={deleteLink} />)}
             </>
@@ -99,11 +92,8 @@ Support.propTypes = {
   loadLinks: PropTypes.func.isRequired,
   createLink: PropTypes.func.isRequired,
   deleteLink: PropTypes.func.isRequired,
-  className: PropTypes.string,
 };
 
-Support.defaultProps = {
-  className: null,
-};
+Support.defaultProps = {};
 
 export default Support;

@@ -1,20 +1,17 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import Button from 'components/common/Button';
 import Subsection from '@george-gillams/components/subsection';
 import TextLink from 'components/common/TextLink';
 
-import Paragraph from '@george-gillams/components/paragraph';
 import { BUTTON_TYPES } from '@george-gillams/components/button/constants';
-
-const getClassName = c => c;
+import { DeleteButton, StyledParagraph } from './support-link.styles';
 
 const SupportLink = props => {
   const { link, deleteLink, admin, ...rest } = props;
 
   return (
     <Subsection anchor={false} name={link.name || 'Untitled support link'} {...rest}>
-      <Paragraph className={getClassName('support-link__link')}>
+      <StyledParagraph>
         {link.url && (
           <TextLink hrefExternal href={link.url}>
             {link.url}
@@ -26,16 +23,15 @@ const SupportLink = props => {
             {link.description}
           </>
         )}
-      </Paragraph>
+      </StyledParagraph>
       {admin && (
-        <Button
-          className={getClassName('support-link__delete-button')}
+        <DeleteButton
           buttonType={BUTTON_TYPES.destructive}
           onClick={() => {
             deleteLink(link);
           }}>
           Delete
-        </Button>
+        </DeleteButton>
       )}
     </Subsection>
   );

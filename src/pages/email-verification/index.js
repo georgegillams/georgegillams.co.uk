@@ -1,6 +1,5 @@
 import React from 'react';
 
-import CSSHack from 'components/common/CSSHack';
 import EmailVerification from 'containers/common/EmailVerification';
 import CommonLayout from 'components/common/CommonLayout';
 
