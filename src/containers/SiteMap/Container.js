@@ -1,6 +1,5 @@
 import React, { useEffect } from 'react';
 import PropTypes from 'prop-types';
-import Subsection from '@george-gillams/components/subsection';
 import Paragraph from '@george-gillams/components/paragraph';
 import Skeleton, { SKELETON_STYLES } from '@george-gillams/components/skeleton';
 import TextLink from 'components/common/TextLink';
@@ -9,11 +8,8 @@ import PageTitle from 'components/common/PageTitle';
 import redirects from 'helpers/redirects';
 import DebugObject from 'components/common/DebugObject';
 
-import STYLES from './site-map.scss';
-import { cssModules } from '@george-gillams/components/helpers/cssModules';
 import PageContainer from 'components/common/PageContainer';
-
-const getClassName = cssModules(STYLES);
+import { StyledSubsection } from './site-map.styles';
 
 const SiteMap = props => {
   const { ssrBlogs, loadBlogs, blogListState, authenticatorState } = props;
@@ -39,7 +35,7 @@ const SiteMap = props => {
     <PageContainer bottomPadding>
       <PageTitle name="Site map" {...props}>
         <DebugObject debugTitle="Sitemap" debugObject={{ loadBlogs, authenticatorState, blogListState }} />
-        <Subsection anchor={false} name="Blog 📝" className={getClassName('site-map__section')}>
+        <StyledSubsection anchor={false} name="Blog 📝">
           <Paragraph>
             <TextLink href={`/blog`}>Blog list</TextLink>
             <br />
@@ -64,9 +60,9 @@ const SiteMap = props => {
               </>
             )}
           </Paragraph>
-        </Subsection>
+        </StyledSubsection>
         {admin && (
-          <Subsection anchor={false} name="All blogs" className={getClassName('site-map__section')}>
+          <StyledSubsection anchor={false} name="All blogs">
             {blogList && (
               <Paragraph>
                 {blogList.map(b => (
@@ -80,19 +76,19 @@ const SiteMap = props => {
                 ))}
               </Paragraph>
             )}
-          </Subsection>
+          </StyledSubsection>
         )}
-        <Subsection anchor={false} name="Photography 📷" className={getClassName('site-map__section')}>
+        <StyledSubsection anchor={false} name="Photography 📷">
           <Paragraph>
             <TextLink href="/photography">Photography</TextLink>
           </Paragraph>
-        </Subsection>
-        <Subsection anchor={false} name="Medals 🏅" className={getClassName('site-map__section')}>
+        </StyledSubsection>
+        <StyledSubsection anchor={false} name="Medals 🏅">
           <Paragraph>
             <TextLink href="/medals">Medals</TextLink>
           </Paragraph>
-        </Subsection>
-        <Subsection anchor={false} name="Work 📱" className={getClassName('site-map__section')}>
+        </StyledSubsection>
+        <StyledSubsection anchor={false} name="Work 📱">
           <Paragraph>
             <TextLink href="/work">Overview</TextLink>
             <br />
@@ -102,13 +98,13 @@ const SiteMap = props => {
             <br />
             <TextLink href="/work/epicc">EPICC</TextLink>
           </Paragraph>
-        </Subsection>
-        <Subsection anchor={false} name="Design 🎨" className={getClassName('site-map__section')}>
+        </StyledSubsection>
+        <StyledSubsection anchor={false} name="Design 🎨">
           <Paragraph>
             <TextLink href="/privacy-policy">Privacy Policy</TextLink>
           </Paragraph>
-        </Subsection>
-        <Subsection anchor={false} name="Other stuff 🤷‍♂️" className={getClassName('site-map__section')}>
+        </StyledSubsection>
+        <StyledSubsection anchor={false} name="Other stuff 🤷‍♂️">
           <Paragraph>
             <TextLink href="/contact">Contact</TextLink>
             <br />
@@ -118,8 +114,8 @@ const SiteMap = props => {
             <br />
             <TextLink href="/status">Status</TextLink>
           </Paragraph>
-        </Subsection>
-        <Subsection anchor={false} name="Random 🐉" className={getClassName('site-map__section')}>
+        </StyledSubsection>
+        <StyledSubsection anchor={false} name="Random 🐉">
           <Paragraph>
             <TextLink hrefExternal href="/robots.txt">
               Robots.txt
@@ -133,13 +129,13 @@ const SiteMap = props => {
             <br />
             <TextLink href="/teapot">418 error page - I&apos;m a teapot</TextLink>
           </Paragraph>
-        </Subsection>
-        <Subsection anchor={false} name="API" className={getClassName('site-map__section')}>
+        </StyledSubsection>
+        <StyledSubsection anchor={false} name="API">
           <Paragraph>
             <TextLink href="/api-docs">API docs</TextLink>
           </Paragraph>
-        </Subsection>
-        <Subsection anchor={false} name="Accounts 🔑" className={getClassName('site-map__section')}>
+        </StyledSubsection>
+        <StyledSubsection anchor={false} name="Accounts 🔑">
           <Paragraph>
             <TextLink href="/account">Account</TextLink>
             <br />
@@ -151,8 +147,8 @@ const SiteMap = props => {
             <br />
             <TextLink href="/magic-login">Magic login</TextLink>
           </Paragraph>
-        </Subsection>
-        <Subsection anchor={false} name="Admin 👮‍♂️" className={getClassName('site-map__section')}>
+        </StyledSubsection>
+        <StyledSubsection anchor={false} name="Admin 👮‍♂️">
           <Paragraph>
             <TextLink href="/admin">Admin navigation</TextLink>
             <br />
@@ -166,8 +162,8 @@ const SiteMap = props => {
             <br />
             <TextLink href="/admin/users">Users</TextLink>
           </Paragraph>
-        </Subsection>
-        <Subsection anchor={false} name="Redirects 👉" className={getClassName('site-map__section')}>
+        </StyledSubsection>
+        <StyledSubsection anchor={false} name="Redirects 👉">
           <Paragraph>
             {redirects.map(redirect => (
               <div key={redirect.from}>
@@ -176,7 +172,7 @@ const SiteMap = props => {
               </div>
             ))}
           </Paragraph>
-        </Subsection>
+        </StyledSubsection>
       </PageTitle>
     </PageContainer>
   );

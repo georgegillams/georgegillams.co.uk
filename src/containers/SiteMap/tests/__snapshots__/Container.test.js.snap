@@ -3,97 +3,97 @@
 exports[`<SiteMap /> should render correctly - index 1`] = `
 <div>
   <div
-    class="sc-fEOsli kRThfC page-containerstyles__StyledPageContainer-sc-19l7k4-0"
+    class="sc-breuTD hBYskY page-containerstyles__StyledPageContainer-sc-19l7k4-0"
     width="default"
   >
     <h1
-      class="sc-bczRLJ hDLBIv sc-hAZoDl cDlBMk"
+      class="sc-hKMtZM eRFfPl sc-crXcEl injKYD"
     >
       Site map
     </h1>
     <div
-      class="sc-jqUVSM leXYdV site-map__section"
+      class="sc-ksZaOG fmXsYE site-mapstyles__StyledSubsection-sc-13l3sqp-0 jPoVcT"
     >
       <h1
-        class="sc-dkzDqf ddFalQ sc-crXcEl ioFrJl"
+        class="sc-jSMfEi kskSGE sc-fEOsli gNxMg"
         id="blog-📝"
       >
         Blog 📝
       </h1>
       <span
-        class="sc-evZas FCsLq"
+        class="sc-bczRLJ bhVmoO"
       >
         <a
-          class="sc-iBkjds kXOvCG"
+          class="sc-jqUVSM ehmyNV"
           href="/blog"
         >
           Blog list
         </a>
         <br />
         <div
-          class="sc-breuTD hTzYZA"
+          class="sc-gsnTZi liGQBF"
         >
           <div
-            class="sc-ksZaOG fakLGB"
+            class="sc-dkzDqf bgQVNk"
             style="margin-left: -0px;"
           />
         </div>
         <div
-          class="sc-breuTD hTzYZA"
+          class="sc-gsnTZi liGQBF"
         >
           <div
-            class="sc-ksZaOG fakLGB"
+            class="sc-dkzDqf bgQVNk"
             style="margin-left: -0px;"
           />
         </div>
         <div
-          class="sc-breuTD hTzYZA"
+          class="sc-gsnTZi liGQBF"
         >
           <div
-            class="sc-ksZaOG fakLGB"
+            class="sc-dkzDqf bgQVNk"
             style="margin-left: -0px;"
           />
         </div>
         <div
-          class="sc-breuTD hTzYZA"
+          class="sc-gsnTZi liGQBF"
         >
           <div
-            class="sc-ksZaOG fakLGB"
+            class="sc-dkzDqf bgQVNk"
             style="margin-left: -0px;"
           />
         </div>
         <div
-          class="sc-breuTD hTzYZA"
+          class="sc-gsnTZi liGQBF"
         >
           <div
-            class="sc-ksZaOG fakLGB"
+            class="sc-dkzDqf bgQVNk"
             style="margin-left: -0px;"
           />
         </div>
         <div
-          class="sc-breuTD hTzYZA"
+          class="sc-gsnTZi liGQBF"
         >
           <div
-            class="sc-ksZaOG fakLGB"
+            class="sc-dkzDqf bgQVNk"
             style="margin-left: -0px;"
           />
         </div>
       </span>
     </div>
     <div
-      class="sc-jqUVSM leXYdV site-map__section"
+      class="sc-ksZaOG fmXsYE site-mapstyles__StyledSubsection-sc-13l3sqp-0 jPoVcT"
     >
       <h1
-        class="sc-dkzDqf ddFalQ sc-crXcEl ioFrJl"
+        class="sc-jSMfEi kskSGE sc-fEOsli gNxMg"
         id="photography-📷"
       >
         Photography 📷
       </h1>
       <span
-        class="sc-evZas FCsLq"
+        class="sc-bczRLJ bhVmoO"
       >
         <a
-          class="sc-iBkjds kXOvCG"
+          class="sc-jqUVSM ehmyNV"
           href="/photography"
         >
           Photography
@@ -101,19 +101,19 @@ exports[`<SiteMap /> should render correctly - index 1`] = `
       </span>
     </div>
     <div
-      class="sc-jqUVSM leXYdV site-map__section"
+      class="sc-ksZaOG fmXsYE site-mapstyles__StyledSubsection-sc-13l3sqp-0 jPoVcT"
     >
       <h1
-        class="sc-dkzDqf ddFalQ sc-crXcEl ioFrJl"
+        class="sc-jSMfEi kskSGE sc-fEOsli gNxMg"
         id="medals-🏅"
       >
         Medals 🏅
       </h1>
       <span
-        class="sc-evZas FCsLq"
+        class="sc-bczRLJ bhVmoO"
       >
         <a
-          class="sc-iBkjds kXOvCG"
+          class="sc-jqUVSM ehmyNV"
           href="/medals"
         >
           Medals
@@ -121,40 +121,40 @@ exports[`<SiteMap /> should render correctly - index 1`] = `
       </span>
     </div>
     <div
-      class="sc-jqUVSM leXYdV site-map__section"
+      class="sc-ksZaOG fmXsYE site-mapstyles__StyledSubsection-sc-13l3sqp-0 jPoVcT"
     >
       <h1
-        class="sc-dkzDqf ddFalQ sc-crXcEl ioFrJl"
+        class="sc-jSMfEi kskSGE sc-fEOsli gNxMg"
         id="work-📱"
       >
         Work 📱
       </h1>
       <span
-        class="sc-evZas FCsLq"
+        class="sc-bczRLJ bhVmoO"
       >
         <a
-          class="sc-iBkjds kXOvCG"
+          class="sc-jqUVSM ehmyNV"
           href="/work"
         >
           Overview
         </a>
         <br />
         <a
-          class="sc-iBkjds kXOvCG"
+          class="sc-jqUVSM ehmyNV"
           href="/work/backpack"
         >
           Backpack
         </a>
         <br />
         <a
-          class="sc-iBkjds kXOvCG"
+          class="sc-jqUVSM ehmyNV"
           href="/work/degree"
         >
           Degree
         </a>
         <br />
         <a
-          class="sc-iBkjds kXOvCG"
+          class="sc-jqUVSM ehmyNV"
           href="/work/epicc"
         >
           EPICC
@@ -162,19 +162,19 @@ exports[`<SiteMap /> should render correctly - index 1`] = `
       </span>
     </div>
     <div
-      class="sc-jqUVSM leXYdV site-map__section"
+      class="sc-ksZaOG fmXsYE site-mapstyles__StyledSubsection-sc-13l3sqp-0 jPoVcT"
     >
       <h1
-        class="sc-dkzDqf ddFalQ sc-crXcEl ioFrJl"
+        class="sc-jSMfEi kskSGE sc-fEOsli gNxMg"
         id="design-🎨"
       >
         Design 🎨
       </h1>
       <span
-        class="sc-evZas FCsLq"
+        class="sc-bczRLJ bhVmoO"
       >
         <a
-          class="sc-iBkjds kXOvCG"
+          class="sc-jqUVSM ehmyNV"
           href="/privacy-policy"
         >
           Privacy Policy
@@ -182,40 +182,40 @@ exports[`<SiteMap /> should render correctly - index 1`] = `
       </span>
     </div>
     <div
-      class="sc-jqUVSM leXYdV site-map__section"
+      class="sc-ksZaOG fmXsYE site-mapstyles__StyledSubsection-sc-13l3sqp-0 jPoVcT"
     >
       <h1
-        class="sc-dkzDqf ddFalQ sc-crXcEl ioFrJl"
+        class="sc-jSMfEi kskSGE sc-fEOsli gNxMg"
         id="other-stuff-🤷‍♂️"
       >
         Other stuff 🤷‍♂️
       </h1>
       <span
-        class="sc-evZas FCsLq"
+        class="sc-bczRLJ bhVmoO"
       >
         <a
-          class="sc-iBkjds kXOvCG"
+          class="sc-jqUVSM ehmyNV"
           href="/contact"
         >
           Contact
         </a>
         <br />
         <a
-          class="sc-iBkjds kXOvCG"
+          class="sc-jqUVSM ehmyNV"
           href="/support"
         >
           Support
         </a>
         <br />
         <a
-          class="sc-iBkjds kXOvCG"
+          class="sc-jqUVSM ehmyNV"
           href="/debug"
         >
           Debug tools
         </a>
         <br />
         <a
-          class="sc-iBkjds kXOvCG"
+          class="sc-jqUVSM ehmyNV"
           href="/status"
         >
           Status
@@ -223,30 +223,30 @@ exports[`<SiteMap /> should render correctly - index 1`] = `
       </span>
     </div>
     <div
-      class="sc-jqUVSM leXYdV site-map__section"
+      class="sc-ksZaOG fmXsYE site-mapstyles__StyledSubsection-sc-13l3sqp-0 jPoVcT"
     >
       <h1
-        class="sc-dkzDqf ddFalQ sc-crXcEl ioFrJl"
+        class="sc-jSMfEi kskSGE sc-fEOsli gNxMg"
         id="random-🐉"
       >
         Random 🐉
       </h1>
       <span
-        class="sc-evZas FCsLq"
+        class="sc-bczRLJ bhVmoO"
       >
         <a
           aria-label="Robots.txt (opens in a new tab)"
-          class="sc-iBkjds kXOvCG"
+          class="sc-jqUVSM ehmyNV"
           href="/robots.txt"
           rel="noopener noreferrer"
           target="_blank"
         >
           Robots.txt
           <div
-            class="sc-ftvSup kUuEWK"
+            class="sc-kDDrLX ffjHhF"
           >
             <svg
-              class="sc-gKXOVf ktoyia sc-papXJ fmVkXn"
+              class="sc-papXJ QvWXe sc-iqcoie iOIaxE"
               height="18"
               viewBox="0 0 24 24"
               width="18"
@@ -261,17 +261,17 @@ exports[`<SiteMap /> should render correctly - index 1`] = `
         <br />
         <a
           aria-label="SiteMap.xml (opens in a new tab)"
-          class="sc-iBkjds kXOvCG"
+          class="sc-jqUVSM ehmyNV"
           href="/sitemap.xml"
           rel="noopener noreferrer"
           target="_blank"
         >
           SiteMap.xml
           <div
-            class="sc-ftvSup kUuEWK"
+            class="sc-kDDrLX ffjHhF"
           >
             <svg
-              class="sc-gKXOVf ktoyia sc-papXJ fmVkXn"
+              class="sc-papXJ QvWXe sc-iqcoie iOIaxE"
               height="18"
               viewBox="0 0 24 24"
               width="18"
@@ -285,14 +285,14 @@ exports[`<SiteMap /> should render correctly - index 1`] = `
         </a>
         <br />
         <a
-          class="sc-iBkjds kXOvCG"
+          class="sc-jqUVSM ehmyNV"
           href="/404"
         >
           404 error page - not found
         </a>
         <br />
         <a
-          class="sc-iBkjds kXOvCG"
+          class="sc-jqUVSM ehmyNV"
           href="/teapot"
         >
           418 error page - I'm a teapot
@@ -300,19 +300,19 @@ exports[`<SiteMap /> should render correctly - index 1`] = `
       </span>
     </div>
     <div
-      class="sc-jqUVSM leXYdV site-map__section"
+      class="sc-ksZaOG fmXsYE site-mapstyles__StyledSubsection-sc-13l3sqp-0 jPoVcT"
     >
       <h1
-        class="sc-dkzDqf ddFalQ sc-crXcEl ioFrJl"
+        class="sc-jSMfEi kskSGE sc-fEOsli gNxMg"
         id="api"
       >
         API
       </h1>
       <span
-        class="sc-evZas FCsLq"
+        class="sc-bczRLJ bhVmoO"
       >
         <a
-          class="sc-iBkjds kXOvCG"
+          class="sc-jqUVSM ehmyNV"
           href="/api-docs"
         >
           API docs
@@ -320,47 +320,47 @@ exports[`<SiteMap /> should render correctly - index 1`] = `
       </span>
     </div>
     <div
-      class="sc-jqUVSM leXYdV site-map__section"
+      class="sc-ksZaOG fmXsYE site-mapstyles__StyledSubsection-sc-13l3sqp-0 jPoVcT"
     >
       <h1
-        class="sc-dkzDqf ddFalQ sc-crXcEl ioFrJl"
+        class="sc-jSMfEi kskSGE sc-fEOsli gNxMg"
         id="accounts-🔑"
       >
         Accounts 🔑
       </h1>
       <span
-        class="sc-evZas FCsLq"
+        class="sc-bczRLJ bhVmoO"
       >
         <a
-          class="sc-iBkjds kXOvCG"
+          class="sc-jqUVSM ehmyNV"
           href="/account"
         >
           Account
         </a>
         <br />
         <a
-          class="sc-iBkjds kXOvCG"
+          class="sc-jqUVSM ehmyNV"
           href="/sign-up"
         >
           Sign up
         </a>
         <br />
         <a
-          class="sc-iBkjds kXOvCG"
+          class="sc-jqUVSM ehmyNV"
           href="/login"
         >
           Log in
         </a>
         <br />
         <a
-          class="sc-iBkjds kXOvCG"
+          class="sc-jqUVSM ehmyNV"
           href="/email-verification"
         >
           Email verification
         </a>
         <br />
         <a
-          class="sc-iBkjds kXOvCG"
+          class="sc-jqUVSM ehmyNV"
           href="/magic-login"
         >
           Magic login
@@ -368,54 +368,54 @@ exports[`<SiteMap /> should render correctly - index 1`] = `
       </span>
     </div>
     <div
-      class="sc-jqUVSM leXYdV site-map__section"
+      class="sc-ksZaOG fmXsYE site-mapstyles__StyledSubsection-sc-13l3sqp-0 jPoVcT"
     >
       <h1
-        class="sc-dkzDqf ddFalQ sc-crXcEl ioFrJl"
+        class="sc-jSMfEi kskSGE sc-fEOsli gNxMg"
         id="admin-👮‍♂️"
       >
         Admin 👮‍♂️
       </h1>
       <span
-        class="sc-evZas FCsLq"
+        class="sc-bczRLJ bhVmoO"
       >
         <a
-          class="sc-iBkjds kXOvCG"
+          class="sc-jqUVSM ehmyNV"
           href="/admin"
         >
           Admin navigation
         </a>
         <br />
         <a
-          class="sc-iBkjds kXOvCG"
+          class="sc-jqUVSM ehmyNV"
           href="/blog"
         >
           Blogs
         </a>
         <br />
         <a
-          class="sc-iBkjds kXOvCG"
+          class="sc-jqUVSM ehmyNV"
           href="/admin/analytics"
         >
           Analytics
         </a>
         <br />
         <a
-          class="sc-iBkjds kXOvCG"
+          class="sc-jqUVSM ehmyNV"
           href="/admin/emails"
         >
           Emails
         </a>
         <br />
         <a
-          class="sc-iBkjds kXOvCG"
+          class="sc-jqUVSM ehmyNV"
           href="/admin/notifications"
         >
           Notifications
         </a>
         <br />
         <a
-          class="sc-iBkjds kXOvCG"
+          class="sc-jqUVSM ehmyNV"
           href="/admin/users"
         >
           Users
@@ -423,20 +423,20 @@ exports[`<SiteMap /> should render correctly - index 1`] = `
       </span>
     </div>
     <div
-      class="sc-jqUVSM leXYdV site-map__section"
+      class="sc-ksZaOG fmXsYE site-mapstyles__StyledSubsection-sc-13l3sqp-0 jPoVcT"
     >
       <h1
-        class="sc-dkzDqf ddFalQ sc-crXcEl ioFrJl"
+        class="sc-jSMfEi kskSGE sc-fEOsli gNxMg"
         id="redirects-👉"
       >
         Redirects 👉
       </h1>
       <span
-        class="sc-evZas FCsLq"
+        class="sc-bczRLJ bhVmoO"
       >
         <div>
           <a
-            class="sc-iBkjds kXOvCG"
+            class="sc-jqUVSM ehmyNV"
             href="/codebase"
           >
             /codebase ⇒ https://github.com/georgegillams/georgegillams.co.uk
@@ -445,7 +445,7 @@ exports[`<SiteMap /> should render correctly - index 1`] = `
         </div>
         <div>
           <a
-            class="sc-iBkjds kXOvCG"
+            class="sc-jqUVSM ehmyNV"
             href="/copyright"
           >
             /copyright ⇒ https://creativecommons.org/licenses/by-sa/3.0/
@@ -454,7 +454,7 @@ exports[`<SiteMap /> should render correctly - index 1`] = `
         </div>
         <div>
           <a
-            class="sc-iBkjds kXOvCG"
+            class="sc-jqUVSM ehmyNV"
             href="/flickr"
           >
             /flickr ⇒ https://www.flickr.com/people/georgegillams
@@ -463,7 +463,7 @@ exports[`<SiteMap /> should render correctly - index 1`] = `
         </div>
         <div>
           <a
-            class="sc-iBkjds kXOvCG"
+            class="sc-jqUVSM ehmyNV"
             href="/monzo"
           >
             /monzo ⇒ https://join.monzo.com/r/vjd3d74
@@ -472,7 +472,7 @@ exports[`<SiteMap /> should render correctly - index 1`] = `
         </div>
         <div>
           <a
-            class="sc-iBkjds kXOvCG"
+            class="sc-jqUVSM ehmyNV"
             href="/github"
           >
             /github ⇒ https://github.com/georgegillams
@@ -481,7 +481,7 @@ exports[`<SiteMap /> should render correctly - index 1`] = `
         </div>
         <div>
           <a
-            class="sc-iBkjds kXOvCG"
+            class="sc-jqUVSM ehmyNV"
             href="/stackoverflow"
           >
             /stackoverflow ⇒ https://stackoverflow.com/users/14463713/georgegillams
@@ -490,7 +490,7 @@ exports[`<SiteMap /> should render correctly - index 1`] = `
         </div>
         <div>
           <a
-            class="sc-iBkjds kXOvCG"
+            class="sc-jqUVSM ehmyNV"
             href="/gurushots"
           >
             /gurushots ⇒ https://gurushots.com/georgegillams/photos
@@ -499,7 +499,7 @@ exports[`<SiteMap /> should render correctly - index 1`] = `
         </div>
         <div>
           <a
-            class="sc-iBkjds kXOvCG"
+            class="sc-jqUVSM ehmyNV"
             href="/unsplash"
           >
             /unsplash ⇒ https://unsplash.com/@georgegillams/
@@ -508,7 +508,7 @@ exports[`<SiteMap /> should render correctly - index 1`] = `
         </div>
         <div>
           <a
-            class="sc-iBkjds kXOvCG"
+            class="sc-jqUVSM ehmyNV"
             href="/strava"
           >
             /strava ⇒ https://www.strava.com/athletes/7221483
@@ -517,7 +517,7 @@ exports[`<SiteMap /> should render correctly - index 1`] = `
         </div>
         <div>
           <a
-            class="sc-iBkjds kXOvCG"
+            class="sc-jqUVSM ehmyNV"
             href="/linkedin"
           >
             /linkedin ⇒ https://www.linkedin.com/in/george-gillams-37537077
@@ -526,7 +526,7 @@ exports[`<SiteMap /> should render correctly - index 1`] = `
         </div>
         <div>
           <a
-            class="sc-iBkjds kXOvCG"
+            class="sc-jqUVSM ehmyNV"
             href="/twitter"
           >
             /twitter ⇒ https://twitter.com/georgegillams
@@ -535,7 +535,7 @@ exports[`<SiteMap /> should render correctly - index 1`] = `
         </div>
         <div>
           <a
-            class="sc-iBkjds kXOvCG"
+            class="sc-jqUVSM ehmyNV"
             href="/wp-admin"
           >
             /wp-admin ⇒ /admin
@@ -544,7 +544,7 @@ exports[`<SiteMap /> should render correctly - index 1`] = `
         </div>
         <div>
           <a
-            class="sc-iBkjds kXOvCG"
+            class="sc-jqUVSM ehmyNV"
             href="/about"
           >
             /about ⇒ /
@@ -553,7 +553,7 @@ exports[`<SiteMap /> should render correctly - index 1`] = `
         </div>
         <div>
           <a
-            class="sc-iBkjds kXOvCG"
+            class="sc-jqUVSM ehmyNV"
             href="/site-map"
           >
             /site-map ⇒ /sitemap
@@ -562,7 +562,7 @@ exports[`<SiteMap /> should render correctly - index 1`] = `
         </div>
         <div>
           <a
-            class="sc-iBkjds kXOvCG"
+            class="sc-jqUVSM ehmyNV"
             href="/about/degree"
           >
             /about/degree ⇒ /work/degree
@@ -571,7 +571,7 @@ exports[`<SiteMap /> should render correctly - index 1`] = `
         </div>
         <div>
           <a
-            class="sc-iBkjds kXOvCG"
+            class="sc-jqUVSM ehmyNV"
             href="/articles/tough-mudder"
           >
             /articles/tough-mudder ⇒ /blog/tough-mudder
@@ -580,7 +580,7 @@ exports[`<SiteMap /> should render correctly - index 1`] = `
         </div>
         <div>
           <a
-            class="sc-iBkjds kXOvCG"
+            class="sc-jqUVSM ehmyNV"
             href="/articles/net-neutrality"
           >
             /articles/net-neutrality ⇒ /blog/net-neutrality
@@ -589,7 +589,7 @@ exports[`<SiteMap /> should render correctly - index 1`] = `
         </div>
         <div>
           <a
-            class="sc-iBkjds kXOvCG"
+            class="sc-jqUVSM ehmyNV"
             href="/articles/vim"
           >
             /articles/vim ⇒ /blog/vim
@@ -598,7 +598,7 @@ exports[`<SiteMap /> should render correctly - index 1`] = `
         </div>
         <div>
           <a
-            class="sc-iBkjds kXOvCG"
+            class="sc-jqUVSM ehmyNV"
             href="/articles/list"
           >
             /articles/list ⇒ /blog
@@ -607,7 +607,7 @@ exports[`<SiteMap /> should render correctly - index 1`] = `
         </div>
         <div>
           <a
-            class="sc-iBkjds kXOvCG"
+            class="sc-jqUVSM ehmyNV"
             href="/articles"
           >
             /articles ⇒ /blog
@@ -616,7 +616,7 @@ exports[`<SiteMap /> should render correctly - index 1`] = `
         </div>
         <div>
           <a
-            class="sc-iBkjds kXOvCG"
+            class="sc-jqUVSM ehmyNV"
             href="/net-neutrality"
           >
             /net-neutrality ⇒ /blog/net-neutrality
@@ -625,7 +625,7 @@ exports[`<SiteMap /> should render correctly - index 1`] = `
         </div>
         <div>
           <a
-            class="sc-iBkjds kXOvCG"
+            class="sc-jqUVSM ehmyNV"
             href="/work/side-projects"
           >
             /work/side-projects ⇒ /work
@@ -634,7 +634,7 @@ exports[`<SiteMap /> should render correctly - index 1`] = `
         </div>
         <div>
           <a
-            class="sc-iBkjds kXOvCG"
+            class="sc-jqUVSM ehmyNV"
             href="/blog/view"
           >
             /blog/view ⇒ /blog
@@ -643,7 +643,7 @@ exports[`<SiteMap /> should render correctly - index 1`] = `
         </div>
         <div>
           <a
-            class="sc-iBkjds kXOvCG"
+            class="sc-jqUVSM ehmyNV"
             href="/travel"
           >
             /travel ⇒ /blog
@@ -652,7 +652,7 @@ exports[`<SiteMap /> should render correctly - index 1`] = `
         </div>
         <div>
           <a
-            class="sc-iBkjds kXOvCG"
+            class="sc-jqUVSM ehmyNV"
             href="/travel/list"
           >
             /travel/list ⇒ /blog
@@ -661,7 +661,7 @@ exports[`<SiteMap /> should render correctly - index 1`] = `
         </div>
         <div>
           <a
-            class="sc-iBkjds kXOvCG"
+            class="sc-jqUVSM ehmyNV"
             href="/blog/view?id=tg5x7po9"
           >
             /blog/view?id=tg5x7po9 ⇒ /blog/tough-mudder
@@ -670,7 +670,7 @@ exports[`<SiteMap /> should render correctly - index 1`] = `
         </div>
         <div>
           <a
-            class="sc-iBkjds kXOvCG"
+            class="sc-jqUVSM ehmyNV"
             href="/blog/view?id=lqngy"
           >
             /blog/view?id=lqngy ⇒ /blog/lightroom-workflow
@@ -679,7 +679,7 @@ exports[`<SiteMap /> should render correctly - index 1`] = `
         </div>
         <div>
           <a
-            class="sc-iBkjds kXOvCG"
+            class="sc-jqUVSM ehmyNV"
             href="/blog/view?id=w85aht"
           >
             /blog/view?id=w85aht ⇒ /blog/net-neutrality
@@ -688,7 +688,7 @@ exports[`<SiteMap /> should render correctly - index 1`] = `
         </div>
         <div>
           <a
-            class="sc-iBkjds kXOvCG"
+            class="sc-jqUVSM ehmyNV"
             href="/blog/view?id=azcpjh"
           >
             /blog/view?id=azcpjh ⇒ /blog/vim
@@ -697,7 +697,7 @@ exports[`<SiteMap /> should render correctly - index 1`] = `
         </div>
         <div>
           <a
-            class="sc-iBkjds kXOvCG"
+            class="sc-jqUVSM ehmyNV"
             href="/blog/view?id=y77dnh"
           >
             /blog/view?id=y77dnh ⇒ /blog/uk-bank-security
@@ -706,7 +706,7 @@ exports[`<SiteMap /> should render correctly - index 1`] = `
         </div>
         <div>
           <a
-            class="sc-iBkjds kXOvCG"
+            class="sc-jqUVSM ehmyNV"
             href="/art"
           >
             /art ⇒ /photography
@@ -715,7 +715,7 @@ exports[`<SiteMap /> should render correctly - index 1`] = `
         </div>
         <div>
           <a
-            class="sc-iBkjds kXOvCG"
+            class="sc-jqUVSM ehmyNV"
             href="/photoshop"
           >
             /photoshop ⇒ /photography
@@ -724,7 +724,7 @@ exports[`<SiteMap /> should render correctly - index 1`] = `
         </div>
         <div>
           <a
-            class="sc-iBkjds kXOvCG"
+            class="sc-jqUVSM ehmyNV"
             href="/phot"
           >
             /phot ⇒ /photography
@@ -733,7 +733,7 @@ exports[`<SiteMap /> should render correctly - index 1`] = `
         </div>
         <div>
           <a
-            class="sc-iBkjds kXOvCG"
+            class="sc-jqUVSM ehmyNV"
             href="/photo"
           >
             /photo ⇒ /photography
@@ -749,97 +749,97 @@ exports[`<SiteMap /> should render correctly - index 1`] = `
 exports[`<SiteMap /> should render correctly 1`] = `
 <div>
   <div
-    class="sc-fEOsli kRThfC page-containerstyles__StyledPageContainer-sc-19l7k4-0"
+    class="sc-breuTD hBYskY page-containerstyles__StyledPageContainer-sc-19l7k4-0"
     width="default"
   >
     <h1
-      class="sc-bczRLJ hDLBIv sc-hAZoDl cDlBMk"
+      class="sc-hKMtZM eRFfPl sc-crXcEl injKYD"
     >
       Site map
     </h1>
     <div
-      class="sc-jqUVSM leXYdV site-map__section"
+      class="sc-ksZaOG fmXsYE site-mapstyles__StyledSubsection-sc-13l3sqp-0 jPoVcT"
     >
       <h1
-        class="sc-dkzDqf ddFalQ sc-crXcEl ioFrJl"
+        class="sc-jSMfEi kskSGE sc-fEOsli gNxMg"
         id="blog-📝"
       >
         Blog 📝
       </h1>
       <span
-        class="sc-evZas FCsLq"
+        class="sc-bczRLJ bhVmoO"
       >
         <a
-          class="sc-iBkjds kXOvCG"
+          class="sc-jqUVSM ehmyNV"
           href="/blog"
         >
           Blog list
         </a>
         <br />
         <div
-          class="sc-breuTD hTzYZA"
+          class="sc-gsnTZi liGQBF"
         >
           <div
-            class="sc-ksZaOG fakLGB"
+            class="sc-dkzDqf bgQVNk"
             style="margin-left: -0px;"
           />
         </div>
         <div
-          class="sc-breuTD hTzYZA"
+          class="sc-gsnTZi liGQBF"
         >
           <div
-            class="sc-ksZaOG fakLGB"
+            class="sc-dkzDqf bgQVNk"
             style="margin-left: -0px;"
           />
         </div>
         <div
-          class="sc-breuTD hTzYZA"
+          class="sc-gsnTZi liGQBF"
         >
           <div
-            class="sc-ksZaOG fakLGB"
+            class="sc-dkzDqf bgQVNk"
             style="margin-left: -0px;"
           />
         </div>
         <div
-          class="sc-breuTD hTzYZA"
+          class="sc-gsnTZi liGQBF"
         >
           <div
-            class="sc-ksZaOG fakLGB"
+            class="sc-dkzDqf bgQVNk"
             style="margin-left: -0px;"
           />
         </div>
         <div
-          class="sc-breuTD hTzYZA"
+          class="sc-gsnTZi liGQBF"
         >
           <div
-            class="sc-ksZaOG fakLGB"
+            class="sc-dkzDqf bgQVNk"
             style="margin-left: -0px;"
           />
         </div>
         <div
-          class="sc-breuTD hTzYZA"
+          class="sc-gsnTZi liGQBF"
         >
           <div
-            class="sc-ksZaOG fakLGB"
+            class="sc-dkzDqf bgQVNk"
             style="margin-left: -0px;"
           />
         </div>
       </span>
     </div>
     <div
-      class="sc-jqUVSM leXYdV site-map__section"
+      class="sc-ksZaOG fmXsYE site-mapstyles__StyledSubsection-sc-13l3sqp-0 jPoVcT"
     >
       <h1
-        class="sc-dkzDqf ddFalQ sc-crXcEl ioFrJl"
+        class="sc-jSMfEi kskSGE sc-fEOsli gNxMg"
         id="photography-📷"
       >
         Photography 📷
       </h1>
       <span
-        class="sc-evZas FCsLq"
+        class="sc-bczRLJ bhVmoO"
       >
         <a
-          class="sc-iBkjds kXOvCG"
+          class="sc-jqUVSM ehmyNV"
           href="/photography"
         >
           Photography
@@ -847,19 +847,19 @@ exports[`<SiteMap /> should render correctly 1`] = `
       </span>
     </div>
     <div
-      class="sc-jqUVSM leXYdV site-map__section"
+      class="sc-ksZaOG fmXsYE site-mapstyles__StyledSubsection-sc-13l3sqp-0 jPoVcT"
     >
       <h1
-        class="sc-dkzDqf ddFalQ sc-crXcEl ioFrJl"
+        class="sc-jSMfEi kskSGE sc-fEOsli gNxMg"
         id="medals-🏅"
       >
         Medals 🏅
       </h1>
       <span
-        class="sc-evZas FCsLq"
+        class="sc-bczRLJ bhVmoO"
       >
         <a
-          class="sc-iBkjds kXOvCG"
+          class="sc-jqUVSM ehmyNV"
           href="/medals"
         >
           Medals
@@ -867,40 +867,40 @@ exports[`<SiteMap /> should render correctly 1`] = `
       </span>
     </div>
     <div
-      class="sc-jqUVSM leXYdV site-map__section"
+      class="sc-ksZaOG fmXsYE site-mapstyles__StyledSubsection-sc-13l3sqp-0 jPoVcT"
     >
       <h1
-        class="sc-dkzDqf ddFalQ sc-crXcEl ioFrJl"
+        class="sc-jSMfEi kskSGE sc-fEOsli gNxMg"
         id="work-📱"
       >
         Work 📱
       </h1>
       <span
-        class="sc-evZas FCsLq"
+        class="sc-bczRLJ bhVmoO"
       >
         <a
-          class="sc-iBkjds kXOvCG"
+          class="sc-jqUVSM ehmyNV"
           href="/work"
         >
           Overview
         </a>
         <br />
         <a
-          class="sc-iBkjds kXOvCG"
+          class="sc-jqUVSM ehmyNV"
           href="/work/backpack"
         >
           Backpack
         </a>
         <br />
         <a
-          class="sc-iBkjds kXOvCG"
+          class="sc-jqUVSM ehmyNV"
           href="/work/degree"
         >
           Degree
         </a>
         <br />
         <a
-          class="sc-iBkjds kXOvCG"
+          class="sc-jqUVSM ehmyNV"
           href="/work/epicc"
         >
           EPICC
@@ -908,19 +908,19 @@ exports[`<SiteMap /> should render correctly 1`] = `
       </span>
     </div>
     <div
-      class="sc-jqUVSM leXYdV site-map__section"
+      class="sc-ksZaOG fmXsYE site-mapstyles__StyledSubsection-sc-13l3sqp-0 jPoVcT"
     >
       <h1
-        class="sc-dkzDqf ddFalQ sc-crXcEl ioFrJl"
+        class="sc-jSMfEi kskSGE sc-fEOsli gNxMg"
         id="design-🎨"
       >
         Design 🎨
       </h1>
       <span
-        class="sc-evZas FCsLq"
+        class="sc-bczRLJ bhVmoO"
       >
         <a
-          class="sc-iBkjds kXOvCG"
+          class="sc-jqUVSM ehmyNV"
           href="/privacy-policy"
         >
           Privacy Policy
@@ -928,40 +928,40 @@ exports[`<SiteMap /> should render correctly 1`] = `
       </span>
     </div>
     <div
-      class="sc-jqUVSM leXYdV site-map__section"
+      class="sc-ksZaOG fmXsYE site-mapstyles__StyledSubsection-sc-13l3sqp-0 jPoVcT"
     >
       <h1
-        class="sc-dkzDqf ddFalQ sc-crXcEl ioFrJl"
+        class="sc-jSMfEi kskSGE sc-fEOsli gNxMg"
         id="other-stuff-🤷‍♂️"
       >
         Other stuff 🤷‍♂️
       </h1>
       <span
-        class="sc-evZas FCsLq"
+        class="sc-bczRLJ bhVmoO"
       >
         <a
-          class="sc-iBkjds kXOvCG"
+          class="sc-jqUVSM ehmyNV"
           href="/contact"
         >
           Contact
         </a>
         <br />
         <a
-          class="sc-iBkjds kXOvCG"
+          class="sc-jqUVSM ehmyNV"
           href="/support"
         >
           Support
         </a>
         <br />
         <a
-          class="sc-iBkjds kXOvCG"
+          class="sc-jqUVSM ehmyNV"
           href="/debug"
         >
           Debug tools
         </a>
         <br />
         <a
-          class="sc-iBkjds kXOvCG"
+          class="sc-jqUVSM ehmyNV"
           href="/status"
         >
           Status
@@ -969,30 +969,30 @@ exports[`<SiteMap /> should render correctly 1`] = `
       </span>
     </div>
     <div
-      class="sc-jqUVSM leXYdV site-map__section"
+      class="sc-ksZaOG fmXsYE site-mapstyles__StyledSubsection-sc-13l3sqp-0 jPoVcT"
     >
       <h1
-        class="sc-dkzDqf ddFalQ sc-crXcEl ioFrJl"
+        class="sc-jSMfEi kskSGE sc-fEOsli gNxMg"
         id="random-🐉"
       >
         Random 🐉
       </h1>
       <span
-        class="sc-evZas FCsLq"
+        class="sc-bczRLJ bhVmoO"
       >
         <a
           aria-label="Robots.txt (opens in a new tab)"
-          class="sc-iBkjds kXOvCG"
+          class="sc-jqUVSM ehmyNV"
           href="/robots.txt"
           rel="noopener noreferrer"
           target="_blank"
         >
           Robots.txt
           <div
-            class="sc-ftvSup kUuEWK"
+            class="sc-kDDrLX ffjHhF"
           >
             <svg
-              class="sc-gKXOVf ktoyia sc-papXJ fmVkXn"
+              class="sc-papXJ QvWXe sc-iqcoie iOIaxE"
               height="18"
               viewBox="0 0 24 24"
               width="18"
@@ -1007,17 +1007,17 @@ exports[`<SiteMap /> should render correctly 1`] = `
         <br />
         <a
           aria-label="SiteMap.xml (opens in a new tab)"
-          class="sc-iBkjds kXOvCG"
+          class="sc-jqUVSM ehmyNV"
           href="/sitemap.xml"
           rel="noopener noreferrer"
           target="_blank"
         >
           SiteMap.xml
           <div
-            class="sc-ftvSup kUuEWK"
+            class="sc-kDDrLX ffjHhF"
           >
             <svg
-              class="sc-gKXOVf ktoyia sc-papXJ fmVkXn"
+              class="sc-papXJ QvWXe sc-iqcoie iOIaxE"
               height="18"
               viewBox="0 0 24 24"
               width="18"
@@ -1031,14 +1031,14 @@ exports[`<SiteMap /> should render correctly 1`] = `
         </a>
         <br />
         <a
-          class="sc-iBkjds kXOvCG"
+          class="sc-jqUVSM ehmyNV"
           href="/404"
         >
           404 error page - not found
         </a>
         <br />
         <a
-          class="sc-iBkjds kXOvCG"
+          class="sc-jqUVSM ehmyNV"
           href="/teapot"
         >
           418 error page - I'm a teapot
@@ -1046,19 +1046,19 @@ exports[`<SiteMap /> should render correctly 1`] = `
       </span>
     </div>
     <div
-      class="sc-jqUVSM leXYdV site-map__section"
+      class="sc-ksZaOG fmXsYE site-mapstyles__StyledSubsection-sc-13l3sqp-0 jPoVcT"
     >
       <h1
-        class="sc-dkzDqf ddFalQ sc-crXcEl ioFrJl"
+        class="sc-jSMfEi kskSGE sc-fEOsli gNxMg"
         id="api"
       >
         API
       </h1>
       <span
-        class="sc-evZas FCsLq"
+        class="sc-bczRLJ bhVmoO"
       >
         <a
-          class="sc-iBkjds kXOvCG"
+          class="sc-jqUVSM ehmyNV"
           href="/api-docs"
         >
           API docs
@@ -1066,47 +1066,47 @@ exports[`<SiteMap /> should render correctly 1`] = `
       </span>
     </div>
     <div
-      class="sc-jqUVSM leXYdV site-map__section"
+      class="sc-ksZaOG fmXsYE site-mapstyles__StyledSubsection-sc-13l3sqp-0 jPoVcT"
     >
       <h1
-        class="sc-dkzDqf ddFalQ sc-crXcEl ioFrJl"
+        class="sc-jSMfEi kskSGE sc-fEOsli gNxMg"
         id="accounts-🔑"
       >
         Accounts 🔑
       </h1>
       <span
-        class="sc-evZas FCsLq"
+        class="sc-bczRLJ bhVmoO"
       >
         <a
-          class="sc-iBkjds kXOvCG"
+          class="sc-jqUVSM ehmyNV"
           href="/account"
         >
           Account
         </a>
         <br />
         <a
-          class="sc-iBkjds kXOvCG"
+          class="sc-jqUVSM ehmyNV"
           href="/sign-up"
         >
           Sign up
         </a>
         <br />
         <a
-          class="sc-iBkjds kXOvCG"
+          class="sc-jqUVSM ehmyNV"
           href="/login"
         >
           Log in
         </a>
         <br />
         <a
-          class="sc-iBkjds kXOvCG"
+          class="sc-jqUVSM ehmyNV"
           href="/email-verification"
         >
           Email verification
         </a>
         <br />
         <a
-          class="sc-iBkjds kXOvCG"
+          class="sc-jqUVSM ehmyNV"
           href="/magic-login"
         >
           Magic login
@@ -1114,54 +1114,54 @@ exports[`<SiteMap /> should render correctly 1`] = `
       </span>
     </div>
     <div
-      class="sc-jqUVSM leXYdV site-map__section"
+      class="sc-ksZaOG fmXsYE site-mapstyles__StyledSubsection-sc-13l3sqp-0 jPoVcT"
     >
       <h1
-        class="sc-dkzDqf ddFalQ sc-crXcEl ioFrJl"
+        class="sc-jSMfEi kskSGE sc-fEOsli gNxMg"
         id="admin-👮‍♂️"
       >
         Admin 👮‍♂️
       </h1>
       <span
-        class="sc-evZas FCsLq"
+        class="sc-bczRLJ bhVmoO"
       >
         <a
-          class="sc-iBkjds kXOvCG"
+          class="sc-jqUVSM ehmyNV"
           href="/admin"
         >
           Admin navigation
         </a>
         <br />
         <a
-          class="sc-iBkjds kXOvCG"
+          class="sc-jqUVSM ehmyNV"
           href="/blog"
         >
           Blogs
         </a>
         <br />
         <a
-          class="sc-iBkjds kXOvCG"
+          class="sc-jqUVSM ehmyNV"
           href="/admin/analytics"
         >
           Analytics
         </a>
         <br />
         <a
-          class="sc-iBkjds kXOvCG"
+          class="sc-jqUVSM ehmyNV"
           href="/admin/emails"
         >
           Emails
         </a>
         <br />
         <a
-          class="sc-iBkjds kXOvCG"
+          class="sc-jqUVSM ehmyNV"
           href="/admin/notifications"
         >
           Notifications
         </a>
         <br />
         <a
-          class="sc-iBkjds kXOvCG"
+          class="sc-jqUVSM ehmyNV"
           href="/admin/users"
         >
           Users
@@ -1169,20 +1169,20 @@ exports[`<SiteMap /> should render correctly 1`] = `
       </span>
     </div>
     <div
-      class="sc-jqUVSM leXYdV site-map__section"
+      class="sc-ksZaOG fmXsYE site-mapstyles__StyledSubsection-sc-13l3sqp-0 jPoVcT"
     >
       <h1
-        class="sc-dkzDqf ddFalQ sc-crXcEl ioFrJl"
+        class="sc-jSMfEi kskSGE sc-fEOsli gNxMg"
         id="redirects-👉"
       >
         Redirects 👉
       </h1>
       <span
-        class="sc-evZas FCsLq"
+        class="sc-bczRLJ bhVmoO"
       >
         <div>
           <a
-            class="sc-iBkjds kXOvCG"
+            class="sc-jqUVSM ehmyNV"
             href="/codebase"
           >
             /codebase ⇒ https://github.com/georgegillams/georgegillams.co.uk
@@ -1191,7 +1191,7 @@ exports[`<SiteMap /> should render correctly 1`] = `
         </div>
         <div>
           <a
-            class="sc-iBkjds kXOvCG"
+            class="sc-jqUVSM ehmyNV"
             href="/copyright"
           >
             /copyright ⇒ https://creativecommons.org/licenses/by-sa/3.0/
@@ -1200,7 +1200,7 @@ exports[`<SiteMap /> should render correctly 1`] = `
         </div>
         <div>
           <a
-            class="sc-iBkjds kXOvCG"
+            class="sc-jqUVSM ehmyNV"
             href="/flickr"
           >
             /flickr ⇒ https://www.flickr.com/people/georgegillams
@@ -1209,7 +1209,7 @@ exports[`<SiteMap /> should render correctly 1`] = `
         </div>
         <div>
           <a
-            class="sc-iBkjds kXOvCG"
+            class="sc-jqUVSM ehmyNV"
             href="/monzo"
           >
             /monzo ⇒ https://join.monzo.com/r/vjd3d74
@@ -1218,7 +1218,7 @@ exports[`<SiteMap /> should render correctly 1`] = `
         </div>
         <div>
           <a
-            class="sc-iBkjds kXOvCG"
+            class="sc-jqUVSM ehmyNV"
             href="/github"
           >
             /github ⇒ https://github.com/georgegillams
@@ -1227,7 +1227,7 @@ exports[`<SiteMap /> should render correctly 1`] = `
         </div>
         <div>
           <a
-            class="sc-iBkjds kXOvCG"
+            class="sc-jqUVSM ehmyNV"
             href="/stackoverflow"
           >
             /stackoverflow ⇒ https://stackoverflow.com/users/14463713/georgegillams
@@ -1236,7 +1236,7 @@ exports[`<SiteMap /> should render correctly 1`] = `
         </div>
         <div>
           <a
-            class="sc-iBkjds kXOvCG"
+            class="sc-jqUVSM ehmyNV"
             href="/gurushots"
           >
             /gurushots ⇒ https://gurushots.com/georgegillams/photos
@@ -1245,7 +1245,7 @@ exports[`<SiteMap /> should render correctly 1`] = `
         </div>
         <div>
           <a
-            class="sc-iBkjds kXOvCG"
+            class="sc-jqUVSM ehmyNV"
             href="/unsplash"
           >
             /unsplash ⇒ https://unsplash.com/@georgegillams/
@@ -1254,7 +1254,7 @@ exports[`<SiteMap /> should render correctly 1`] = `
         </div>
         <div>
           <a
-            class="sc-iBkjds kXOvCG"
+            class="sc-jqUVSM ehmyNV"
             href="/strava"
           >
             /strava ⇒ https://www.strava.com/athletes/7221483
@@ -1263,7 +1263,7 @@ exports[`<SiteMap /> should render correctly 1`] = `
         </div>
         <div>
           <a
-            class="sc-iBkjds kXOvCG"
+            class="sc-jqUVSM ehmyNV"
             href="/linkedin"
           >
             /linkedin ⇒ https://www.linkedin.com/in/george-gillams-37537077
@@ -1272,7 +1272,7 @@ exports[`<SiteMap /> should render correctly 1`] = `
         </div>
         <div>
           <a
-            class="sc-iBkjds kXOvCG"
+            class="sc-jqUVSM ehmyNV"
             href="/twitter"
           >
             /twitter ⇒ https://twitter.com/georgegillams
@@ -1281,7 +1281,7 @@ exports[`<SiteMap /> should render correctly 1`] = `
         </div>
         <div>
           <a
-            class="sc-iBkjds kXOvCG"
+            class="sc-jqUVSM ehmyNV"
             href="/wp-admin"
           >
             /wp-admin ⇒ /admin
@@ -1290,7 +1290,7 @@ exports[`<SiteMap /> should render correctly 1`] = `
         </div>
         <div>
           <a
-            class="sc-iBkjds kXOvCG"
+            class="sc-jqUVSM ehmyNV"
             href="/about"
           >
             /about ⇒ /
@@ -1299,7 +1299,7 @@ exports[`<SiteMap /> should render correctly 1`] = `
         </div>
         <div>
           <a
-            class="sc-iBkjds kXOvCG"
+            class="sc-jqUVSM ehmyNV"
             href="/site-map"
           >
             /site-map ⇒ /sitemap
@@ -1308,7 +1308,7 @@ exports[`<SiteMap /> should render correctly 1`] = `
         </div>
         <div>
           <a
-            class="sc-iBkjds kXOvCG"
+            class="sc-jqUVSM ehmyNV"
             href="/about/degree"
           >
             /about/degree ⇒ /work/degree
@@ -1317,7 +1317,7 @@ exports[`<SiteMap /> should render correctly 1`] = `
         </div>
         <div>
           <a
-            class="sc-iBkjds kXOvCG"
+            class="sc-jqUVSM ehmyNV"
             href="/articles/tough-mudder"
           >
             /articles/tough-mudder ⇒ /blog/tough-mudder
@@ -1326,7 +1326,7 @@ exports[`<SiteMap /> should render correctly 1`] = `
         </div>
         <div>
           <a
-            class="sc-iBkjds kXOvCG"
+            class="sc-jqUVSM ehmyNV"
             href="/articles/net-neutrality"
           >
             /articles/net-neutrality ⇒ /blog/net-neutrality
@@ -1335,7 +1335,7 @@ exports[`<SiteMap /> should render correctly 1`] = `
         </div>
         <div>
           <a
-            class="sc-iBkjds kXOvCG"
+            class="sc-jqUVSM ehmyNV"
             href="/articles/vim"
           >
             /articles/vim ⇒ /blog/vim
@@ -1344,7 +1344,7 @@ exports[`<SiteMap /> should render correctly 1`] = `
         </div>
         <div>
           <a
-            class="sc-iBkjds kXOvCG"
+            class="sc-jqUVSM ehmyNV"
             href="/articles/list"
           >
             /articles/list ⇒ /blog
@@ -1353,7 +1353,7 @@ exports[`<SiteMap /> should render correctly 1`] = `
         </div>
         <div>
           <a
-            class="sc-iBkjds kXOvCG"
+            class="sc-jqUVSM ehmyNV"
             href="/articles"
           >
             /articles ⇒ /blog
@@ -1362,7 +1362,7 @@ exports[`<SiteMap /> should render correctly 1`] = `
         </div>
         <div>
           <a
-            class="sc-iBkjds kXOvCG"
+            class="sc-jqUVSM ehmyNV"
             href="/net-neutrality"
           >
             /net-neutrality ⇒ /blog/net-neutrality
@@ -1371,7 +1371,7 @@ exports[`<SiteMap /> should render correctly 1`] = `
         </div>
         <div>
           <a
-            class="sc-iBkjds kXOvCG"
+            class="sc-jqUVSM ehmyNV"
             href="/work/side-projects"
           >
             /work/side-projects ⇒ /work
@@ -1380,7 +1380,7 @@ exports[`<SiteMap /> should render correctly 1`] = `
         </div>
         <div>
           <a
-            class="sc-iBkjds kXOvCG"
+            class="sc-jqUVSM ehmyNV"
             href="/blog/view"
           >
             /blog/view ⇒ /blog
@@ -1389,7 +1389,7 @@ exports[`<SiteMap /> should render correctly 1`] = `
         </div>
         <div>
           <a
-            class="sc-iBkjds kXOvCG"
+            class="sc-jqUVSM ehmyNV"
             href="/travel"
           >
             /travel ⇒ /blog
@@ -1398,7 +1398,7 @@ exports[`<SiteMap /> should render correctly 1`] = `
         </div>
         <div>
           <a
-            class="sc-iBkjds kXOvCG"
+            class="sc-jqUVSM ehmyNV"
             href="/travel/list"
           >
             /travel/list ⇒ /blog
@@ -1407,7 +1407,7 @@ exports[`<SiteMap /> should render correctly 1`] = `
         </div>
         <div>
           <a
-            class="sc-iBkjds kXOvCG"
+            class="sc-jqUVSM ehmyNV"
             href="/blog/view?id=tg5x7po9"
           >
             /blog/view?id=tg5x7po9 ⇒ /blog/tough-mudder
@@ -1416,7 +1416,7 @@ exports[`<SiteMap /> should render correctly 1`] = `
         </div>
         <div>
           <a
-            class="sc-iBkjds kXOvCG"
+            class="sc-jqUVSM ehmyNV"
             href="/blog/view?id=lqngy"
           >
             /blog/view?id=lqngy ⇒ /blog/lightroom-workflow
@@ -1425,7 +1425,7 @@ exports[`<SiteMap /> should render correctly 1`] = `
         </div>
         <div>
           <a
-            class="sc-iBkjds kXOvCG"
+            class="sc-jqUVSM ehmyNV"
             href="/blog/view?id=w85aht"
           >
             /blog/view?id=w85aht ⇒ /blog/net-neutrality
@@ -1434,7 +1434,7 @@ exports[`<SiteMap /> should render correctly 1`] = `
         </div>
         <div>
           <a
-            class="sc-iBkjds kXOvCG"
+            class="sc-jqUVSM ehmyNV"
             href="/blog/view?id=azcpjh"
           >
             /blog/view?id=azcpjh ⇒ /blog/vim
@@ -1443,7 +1443,7 @@ exports[`<SiteMap /> should render correctly 1`] = `
         </div>
         <div>
           <a
-            class="sc-iBkjds kXOvCG"
+            class="sc-jqUVSM ehmyNV"
             href="/blog/view?id=y77dnh"
           >
             /blog/view?id=y77dnh ⇒ /blog/uk-bank-security
@@ -1452,7 +1452,7 @@ exports[`<SiteMap /> should render correctly 1`] = `
         </div>
         <div>
           <a
-            class="sc-iBkjds kXOvCG"
+            class="sc-jqUVSM ehmyNV"
             href="/art"
           >
             /art ⇒ /photography
@@ -1461,7 +1461,7 @@ exports[`<SiteMap /> should render correctly 1`] = `
         </div>
         <div>
           <a
-            class="sc-iBkjds kXOvCG"
+            class="sc-jqUVSM ehmyNV"
             href="/photoshop"
           >
             /photoshop ⇒ /photography
@@ -1470,7 +1470,7 @@ exports[`<SiteMap /> should render correctly 1`] = `
         </div>
         <div>
           <a
-            class="sc-iBkjds kXOvCG"
+            class="sc-jqUVSM ehmyNV"
             href="/phot"
           >
             /phot ⇒ /photography
@@ -1479,7 +1479,7 @@ exports[`<SiteMap /> should render correctly 1`] = `
         </div>
         <div>
           <a
-            class="sc-iBkjds kXOvCG"
+            class="sc-jqUVSM ehmyNV"
             href="/photo"
           >
             /photo ⇒ /photography
@@ -1495,35 +1495,35 @@ exports[`<SiteMap /> should render correctly 1`] = `
 exports[`<SiteMap /> should render correctly with blogs 1`] = `
 <div>
   <div
-    class="sc-fEOsli kRThfC page-containerstyles__StyledPageContainer-sc-19l7k4-0"
+    class="sc-breuTD hBYskY page-containerstyles__StyledPageContainer-sc-19l7k4-0"
     width="default"
   >
     <h1
-      class="sc-bczRLJ hDLBIv sc-hAZoDl cDlBMk"
+      class="sc-hKMtZM eRFfPl sc-crXcEl injKYD"
     >
       Site map
     </h1>
     <div
-      class="sc-jqUVSM leXYdV site-map__section"
+      class="sc-ksZaOG fmXsYE site-mapstyles__StyledSubsection-sc-13l3sqp-0 jPoVcT"
     >
       <h1
-        class="sc-dkzDqf ddFalQ sc-crXcEl ioFrJl"
+        class="sc-jSMfEi kskSGE sc-fEOsli gNxMg"
         id="blog-📝"
       >
         Blog 📝
       </h1>
       <span
-        class="sc-evZas FCsLq"
+        class="sc-bczRLJ bhVmoO"
       >
         <a
-          class="sc-iBkjds kXOvCG"
+          class="sc-jqUVSM ehmyNV"
           href="/blog"
         >
           Blog list
         </a>
         <br />
         <a
-          class="sc-iBkjds kXOvCG"
+          class="sc-jqUVSM ehmyNV"
           href="/blog/asdfg"
         >
           Blog 1 🎉
@@ -1532,19 +1532,19 @@ exports[`<SiteMap /> should render correctly with blogs 1`] = `
       </span>
     </div>
     <div
-      class="sc-jqUVSM leXYdV site-map__section"
+      class="sc-ksZaOG fmXsYE site-mapstyles__StyledSubsection-sc-13l3sqp-0 jPoVcT"
     >
       <h1
-        class="sc-dkzDqf ddFalQ sc-crXcEl ioFrJl"
+        class="sc-jSMfEi kskSGE sc-fEOsli gNxMg"
         id="photography-📷"
       >
         Photography 📷
       </h1>
       <span
-        class="sc-evZas FCsLq"
+        class="sc-bczRLJ bhVmoO"
       >
         <a
-          class="sc-iBkjds kXOvCG"
+          class="sc-jqUVSM ehmyNV"
           href="/photography"
         >
           Photography
@@ -1552,19 +1552,19 @@ exports[`<SiteMap /> should render correctly with blogs 1`] = `
       </span>
     </div>
     <div
-      class="sc-jqUVSM leXYdV site-map__section"
+      class="sc-ksZaOG fmXsYE site-mapstyles__StyledSubsection-sc-13l3sqp-0 jPoVcT"
     >
       <h1
-        class="sc-dkzDqf ddFalQ sc-crXcEl ioFrJl"
+        class="sc-jSMfEi kskSGE sc-fEOsli gNxMg"
         id="medals-🏅"
       >
         Medals 🏅
       </h1>
       <span
-        class="sc-evZas FCsLq"
+        class="sc-bczRLJ bhVmoO"
       >
         <a
-          class="sc-iBkjds kXOvCG"
+          class="sc-jqUVSM ehmyNV"
           href="/medals"
         >
           Medals
@@ -1572,40 +1572,40 @@ exports[`<SiteMap /> should render correctly with blogs 1`] = `
       </span>
     </div>
     <div
-      class="sc-jqUVSM leXYdV site-map__section"
+      class="sc-ksZaOG fmXsYE site-mapstyles__StyledSubsection-sc-13l3sqp-0 jPoVcT"
     >
       <h1
-        class="sc-dkzDqf ddFalQ sc-crXcEl ioFrJl"
+        class="sc-jSMfEi kskSGE sc-fEOsli gNxMg"
         id="work-📱"
       >
         Work 📱
       </h1>
       <span
-        class="sc-evZas FCsLq"
+        class="sc-bczRLJ bhVmoO"
       >
         <a
-          class="sc-iBkjds kXOvCG"
+          class="sc-jqUVSM ehmyNV"
           href="/work"
         >
           Overview
         </a>
         <br />
         <a
-          class="sc-iBkjds kXOvCG"
+          class="sc-jqUVSM ehmyNV"
           href="/work/backpack"
         >
           Backpack
         </a>
         <br />
         <a
-          class="sc-iBkjds kXOvCG"
+          class="sc-jqUVSM ehmyNV"
           href="/work/degree"
         >
           Degree
         </a>
         <br />
         <a
-          class="sc-iBkjds kXOvCG"
+          class="sc-jqUVSM ehmyNV"
           href="/work/epicc"
         >
           EPICC
@@ -1613,19 +1613,19 @@ exports[`<SiteMap /> should render correctly with blogs 1`] = `
       </span>
     </div>
     <div
-      class="sc-jqUVSM leXYdV site-map__section"
+      class="sc-ksZaOG fmXsYE site-mapstyles__StyledSubsection-sc-13l3sqp-0 jPoVcT"
     >
       <h1
-        class="sc-dkzDqf ddFalQ sc-crXcEl ioFrJl"
+        class="sc-jSMfEi kskSGE sc-fEOsli gNxMg"
         id="design-🎨"
       >
         Design 🎨
       </h1>
       <span
-        class="sc-evZas FCsLq"
+        class="sc-bczRLJ bhVmoO"
       >
         <a
-          class="sc-iBkjds kXOvCG"
+          class="sc-jqUVSM ehmyNV"
           href="/privacy-policy"
         >
           Privacy Policy
@@ -1633,40 +1633,40 @@ exports[`<SiteMap /> should render correctly with blogs 1`] = `
       </span>
     </div>
     <div
-      class="sc-jqUVSM leXYdV site-map__section"
+      class="sc-ksZaOG fmXsYE site-mapstyles__StyledSubsection-sc-13l3sqp-0 jPoVcT"
     >
       <h1
-        class="sc-dkzDqf ddFalQ sc-crXcEl ioFrJl"
+        class="sc-jSMfEi kskSGE sc-fEOsli gNxMg"
         id="other-stuff-🤷‍♂️"
       >
         Other stuff 🤷‍♂️
       </h1>
       <span
-        class="sc-evZas FCsLq"
+        class="sc-bczRLJ bhVmoO"
       >
         <a
-          class="sc-iBkjds kXOvCG"
+          class="sc-jqUVSM ehmyNV"
           href="/contact"
         >
           Contact
         </a>
         <br />
         <a
-          class="sc-iBkjds kXOvCG"
+          class="sc-jqUVSM ehmyNV"
           href="/support"
         >
           Support
         </a>
         <br />
         <a
-          class="sc-iBkjds kXOvCG"
+          class="sc-jqUVSM ehmyNV"
           href="/debug"
         >
           Debug tools
         </a>
         <br />
         <a
-          class="sc-iBkjds kXOvCG"
+          class="sc-jqUVSM ehmyNV"
           href="/status"
         >
           Status
@@ -1674,30 +1674,30 @@ exports[`<SiteMap /> should render correctly with blogs 1`] = `
       </span>
     </div>
     <div
-      class="sc-jqUVSM leXYdV site-map__section"
+      class="sc-ksZaOG fmXsYE site-mapstyles__StyledSubsection-sc-13l3sqp-0 jPoVcT"
     >
       <h1
-        class="sc-dkzDqf ddFalQ sc-crXcEl ioFrJl"
+        class="sc-jSMfEi kskSGE sc-fEOsli gNxMg"
         id="random-🐉"
       >
         Random 🐉
       </h1>
       <span
-        class="sc-evZas FCsLq"
+        class="sc-bczRLJ bhVmoO"
       >
         <a
           aria-label="Robots.txt (opens in a new tab)"
-          class="sc-iBkjds kXOvCG"
+          class="sc-jqUVSM ehmyNV"
           href="/robots.txt"
           rel="noopener noreferrer"
           target="_blank"
         >
           Robots.txt
           <div
-            class="sc-ftvSup kUuEWK"
+            class="sc-kDDrLX ffjHhF"
           >
             <svg
-              class="sc-gKXOVf ktoyia sc-papXJ fmVkXn"
+              class="sc-papXJ QvWXe sc-iqcoie iOIaxE"
               height="18"
               viewBox="0 0 24 24"
               width="18"
@@ -1712,17 +1712,17 @@ exports[`<SiteMap /> should render correctly with blogs 1`] = `
         <br />
         <a
           aria-label="SiteMap.xml (opens in a new tab)"
-          class="sc-iBkjds kXOvCG"
+          class="sc-jqUVSM ehmyNV"
           href="/sitemap.xml"
           rel="noopener noreferrer"
           target="_blank"
         >
           SiteMap.xml
           <div
-            class="sc-ftvSup kUuEWK"
+            class="sc-kDDrLX ffjHhF"
           >
             <svg
-              class="sc-gKXOVf ktoyia sc-papXJ fmVkXn"
+              class="sc-papXJ QvWXe sc-iqcoie iOIaxE"
               height="18"
               viewBox="0 0 24 24"
               width="18"
@@ -1736,14 +1736,14 @@ exports[`<SiteMap /> should render correctly with blogs 1`] = `
         </a>
         <br />
         <a
-          class="sc-iBkjds kXOvCG"
+          class="sc-jqUVSM ehmyNV"
           href="/404"
         >
           404 error page - not found
         </a>
         <br />
         <a
-          class="sc-iBkjds kXOvCG"
+          class="sc-jqUVSM ehmyNV"
           href="/teapot"
         >
           418 error page - I'm a teapot
@@ -1751,19 +1751,19 @@ exports[`<SiteMap /> should render correctly with blogs 1`] = `
       </span>
     </div>
     <div
-      class="sc-jqUVSM leXYdV site-map__section"
+      class="sc-ksZaOG fmXsYE site-mapstyles__StyledSubsection-sc-13l3sqp-0 jPoVcT"
     >
       <h1
-        class="sc-dkzDqf ddFalQ sc-crXcEl ioFrJl"
+        class="sc-jSMfEi kskSGE sc-fEOsli gNxMg"
         id="api"
       >
         API
       </h1>
       <span
-        class="sc-evZas FCsLq"
+        class="sc-bczRLJ bhVmoO"
       >
         <a
-          class="sc-iBkjds kXOvCG"
+          class="sc-jqUVSM ehmyNV"
           href="/api-docs"
         >
           API docs
@@ -1771,47 +1771,47 @@ exports[`<SiteMap /> should render correctly with blogs 1`] = `
       </span>
     </div>
     <div
-      class="sc-jqUVSM leXYdV site-map__section"
+      class="sc-ksZaOG fmXsYE site-mapstyles__StyledSubsection-sc-13l3sqp-0 jPoVcT"
     >
       <h1
-        class="sc-dkzDqf ddFalQ sc-crXcEl ioFrJl"
+        class="sc-jSMfEi kskSGE sc-fEOsli gNxMg"
         id="accounts-🔑"
       >
         Accounts 🔑
       </h1>
       <span
-        class="sc-evZas FCsLq"
+        class="sc-bczRLJ bhVmoO"
       >
         <a
-          class="sc-iBkjds kXOvCG"
+          class="sc-jqUVSM ehmyNV"
           href="/account"
         >
           Account
         </a>
         <br />
         <a
-          class="sc-iBkjds kXOvCG"
+          class="sc-jqUVSM ehmyNV"
           href="/sign-up"
         >
           Sign up
         </a>
         <br />
         <a
-          class="sc-iBkjds kXOvCG"
+          class="sc-jqUVSM ehmyNV"
           href="/login"
         >
           Log in
         </a>
         <br />
         <a
-          class="sc-iBkjds kXOvCG"
+          class="sc-jqUVSM ehmyNV"
           href="/email-verification"
         >
           Email verification
         </a>
         <br />
         <a
-          class="sc-iBkjds kXOvCG"
+          class="sc-jqUVSM ehmyNV"
           href="/magic-login"
         >
           Magic login
@@ -1819,54 +1819,54 @@ exports[`<SiteMap /> should render correctly with blogs 1`] = `
       </span>
     </div>
     <div
-      class="sc-jqUVSM leXYdV site-map__section"
+      class="sc-ksZaOG fmXsYE site-mapstyles__StyledSubsection-sc-13l3sqp-0 jPoVcT"
     >
       <h1
-        class="sc-dkzDqf ddFalQ sc-crXcEl ioFrJl"
+        class="sc-jSMfEi kskSGE sc-fEOsli gNxMg"
         id="admin-👮‍♂️"
       >
         Admin 👮‍♂️
       </h1>
       <span
-        class="sc-evZas FCsLq"
+        class="sc-bczRLJ bhVmoO"
       >
         <a
-          class="sc-iBkjds kXOvCG"
+          class="sc-jqUVSM ehmyNV"
           href="/admin"
         >
           Admin navigation
         </a>
         <br />
         <a
-          class="sc-iBkjds kXOvCG"
+          class="sc-jqUVSM ehmyNV"
           href="/blog"
         >
           Blogs
         </a>
         <br />
         <a
-          class="sc-iBkjds kXOvCG"
+          class="sc-jqUVSM ehmyNV"
           href="/admin/analytics"
         >
           Analytics
         </a>
         <br />
         <a
-          class="sc-iBkjds kXOvCG"
+          class="sc-jqUVSM ehmyNV"
           href="/admin/emails"
         >
           Emails
         </a>
         <br />
         <a
-          class="sc-iBkjds kXOvCG"
+          class="sc-jqUVSM ehmyNV"
           href="/admin/notifications"
         >
           Notifications
         </a>
         <br />
         <a
-          class="sc-iBkjds kXOvCG"
+          class="sc-jqUVSM ehmyNV"
           href="/admin/users"
         >
           Users
@@ -1874,20 +1874,20 @@ exports[`<SiteMap /> should render correctly with blogs 1`] = `
       </span>
     </div>
     <div
-      class="sc-jqUVSM leXYdV site-map__section"
+      class="sc-ksZaOG fmXsYE site-mapstyles__StyledSubsection-sc-13l3sqp-0 jPoVcT"
     >
       <h1
-        class="sc-dkzDqf ddFalQ sc-crXcEl ioFrJl"
+        class="sc-jSMfEi kskSGE sc-fEOsli gNxMg"
         id="redirects-👉"
       >
         Redirects 👉
       </h1>
       <span
-        class="sc-evZas FCsLq"
+        class="sc-bczRLJ bhVmoO"
       >
         <div>
           <a
-            class="sc-iBkjds kXOvCG"
+            class="sc-jqUVSM ehmyNV"
             href="/codebase"
           >
             /codebase ⇒ https://github.com/georgegillams/georgegillams.co.uk
@@ -1896,7 +1896,7 @@ exports[`<SiteMap /> should render correctly with blogs 1`] = `
         </div>
         <div>
           <a
-            class="sc-iBkjds kXOvCG"
+            class="sc-jqUVSM ehmyNV"
             href="/copyright"
           >
             /copyright ⇒ https://creativecommons.org/licenses/by-sa/3.0/
@@ -1905,7 +1905,7 @@ exports[`<SiteMap /> should render correctly with blogs 1`] = `
         </div>
         <div>
           <a
-            class="sc-iBkjds kXOvCG"
+            class="sc-jqUVSM ehmyNV"
             href="/flickr"
           >
             /flickr ⇒ https://www.flickr.com/people/georgegillams
@@ -1914,7 +1914,7 @@ exports[`<SiteMap /> should render correctly with blogs 1`] = `
         </div>
         <div>
           <a
-            class="sc-iBkjds kXOvCG"
+            class="sc-jqUVSM ehmyNV"
             href="/monzo"
           >
             /monzo ⇒ https://join.monzo.com/r/vjd3d74
@@ -1923,7 +1923,7 @@ exports[`<SiteMap /> should render correctly with blogs 1`] = `
         </div>
         <div>
           <a
-            class="sc-iBkjds kXOvCG"
+            class="sc-jqUVSM ehmyNV"
             href="/github"
           >
             /github ⇒ https://github.com/georgegillams
@@ -1932,7 +1932,7 @@ exports[`<SiteMap /> should render correctly with blogs 1`] = `
         </div>
         <div>
           <a
-            class="sc-iBkjds kXOvCG"
+            class="sc-jqUVSM ehmyNV"
             href="/stackoverflow"
           >
             /stackoverflow ⇒ https://stackoverflow.com/users/14463713/georgegillams
@@ -1941,7 +1941,7 @@ exports[`<SiteMap /> should render correctly with blogs 1`] = `
         </div>
         <div>
           <a
-            class="sc-iBkjds kXOvCG"
+            class="sc-jqUVSM ehmyNV"
             href="/gurushots"
           >
             /gurushots ⇒ https://gurushots.com/georgegillams/photos
@@ -1950,7 +1950,7 @@ exports[`<SiteMap /> should render correctly with blogs 1`] = `
         </div>
         <div>
           <a
-            class="sc-iBkjds kXOvCG"
+            class="sc-jqUVSM ehmyNV"
             href="/unsplash"
           >
             /unsplash ⇒ https://unsplash.com/@georgegillams/
@@ -1959,7 +1959,7 @@ exports[`<SiteMap /> should render correctly with blogs 1`] = `
         </div>
         <div>
           <a
-            class="sc-iBkjds kXOvCG"
+            class="sc-jqUVSM ehmyNV"
             href="/strava"
           >
             /strava ⇒ https://www.strava.com/athletes/7221483
@@ -1968,7 +1968,7 @@ exports[`<SiteMap /> should render correctly with blogs 1`] = `
         </div>
         <div>
           <a
-            class="sc-iBkjds kXOvCG"
+            class="sc-jqUVSM ehmyNV"
             href="/linkedin"
           >
             /linkedin ⇒ https://www.linkedin.com/in/george-gillams-37537077
@@ -1977,7 +1977,7 @@ exports[`<SiteMap /> should render correctly with blogs 1`] = `
         </div>
         <div>
           <a
-            class="sc-iBkjds kXOvCG"
+            class="sc-jqUVSM ehmyNV"
             href="/twitter"
           >
             /twitter ⇒ https://twitter.com/georgegillams
@@ -1986,7 +1986,7 @@ exports[`<SiteMap /> should render correctly with blogs 1`] = `
         </div>
         <div>
           <a
-            class="sc-iBkjds kXOvCG"
+            class="sc-jqUVSM ehmyNV"
             href="/wp-admin"
           >
             /wp-admin ⇒ /admin
@@ -1995,7 +1995,7 @@ exports[`<SiteMap /> should render correctly with blogs 1`] = `
         </div>
         <div>
           <a
-            class="sc-iBkjds kXOvCG"
+            class="sc-jqUVSM ehmyNV"
             href="/about"
           >
             /about ⇒ /
@@ -2004,7 +2004,7 @@ exports[`<SiteMap /> should render correctly with blogs 1`] = `
         </div>
         <div>
           <a
-            class="sc-iBkjds kXOvCG"
+            class="sc-jqUVSM ehmyNV"
             href="/site-map"
           >
             /site-map ⇒ /sitemap
@@ -2013,7 +2013,7 @@ exports[`<SiteMap /> should render correctly with blogs 1`] = `
         </div>
         <div>
           <a
-            class="sc-iBkjds kXOvCG"
+            class="sc-jqUVSM ehmyNV"
             href="/about/degree"
           >
             /about/degree ⇒ /work/degree
@@ -2022,7 +2022,7 @@ exports[`<SiteMap /> should render correctly with blogs 1`] = `
         </div>
         <div>
           <a
-            class="sc-iBkjds kXOvCG"
+            class="sc-jqUVSM ehmyNV"
             href="/articles/tough-mudder"
           >
             /articles/tough-mudder ⇒ /blog/tough-mudder
@@ -2031,7 +2031,7 @@ exports[`<SiteMap /> should render correctly with blogs 1`] = `
         </div>
         <div>
           <a
-            class="sc-iBkjds kXOvCG"
+            class="sc-jqUVSM ehmyNV"
             href="/articles/net-neutrality"
           >
             /articles/net-neutrality ⇒ /blog/net-neutrality
@@ -2040,7 +2040,7 @@ exports[`<SiteMap /> should render correctly with blogs 1`] = `
         </div>
         <div>
           <a
-            class="sc-iBkjds kXOvCG"
+            class="sc-jqUVSM ehmyNV"
             href="/articles/vim"
           >
             /articles/vim ⇒ /blog/vim
@@ -2049,7 +2049,7 @@ exports[`<SiteMap /> should render correctly with blogs 1`] = `
         </div>
         <div>
           <a
-            class="sc-iBkjds kXOvCG"
+            class="sc-jqUVSM ehmyNV"
             href="/articles/list"
           >
             /articles/list ⇒ /blog
@@ -2058,7 +2058,7 @@ exports[`<SiteMap /> should render correctly with blogs 1`] = `
         </div>
         <div>
           <a
-            class="sc-iBkjds kXOvCG"
+            class="sc-jqUVSM ehmyNV"
             href="/articles"
           >
             /articles ⇒ /blog
@@ -2067,7 +2067,7 @@ exports[`<SiteMap /> should render correctly with blogs 1`] = `
         </div>
         <div>
           <a
-            class="sc-iBkjds kXOvCG"
+            class="sc-jqUVSM ehmyNV"
             href="/net-neutrality"
           >
             /net-neutrality ⇒ /blog/net-neutrality
@@ -2076,7 +2076,7 @@ exports[`<SiteMap /> should render correctly with blogs 1`] = `
         </div>
         <div>
           <a
-            class="sc-iBkjds kXOvCG"
+            class="sc-jqUVSM ehmyNV"
             href="/work/side-projects"
           >
             /work/side-projects ⇒ /work
@@ -2085,7 +2085,7 @@ exports[`<SiteMap /> should render correctly with blogs 1`] = `
         </div>
         <div>
           <a
-            class="sc-iBkjds kXOvCG"
+            class="sc-jqUVSM ehmyNV"
             href="/blog/view"
           >
             /blog/view ⇒ /blog
@@ -2094,7 +2094,7 @@ exports[`<SiteMap /> should render correctly with blogs 1`] = `
         </div>
         <div>
           <a
-            class="sc-iBkjds kXOvCG"
+            class="sc-jqUVSM ehmyNV"
             href="/travel"
           >
             /travel ⇒ /blog
@@ -2103,7 +2103,7 @@ exports[`<SiteMap /> should render correctly with blogs 1`] = `
         </div>
         <div>
           <a
-            class="sc-iBkjds kXOvCG"
+            class="sc-jqUVSM ehmyNV"
             href="/travel/list"
           >
             /travel/list ⇒ /blog
@@ -2112,7 +2112,7 @@ exports[`<SiteMap /> should render correctly with blogs 1`] = `
         </div>
         <div>
           <a
-            class="sc-iBkjds kXOvCG"
+            class="sc-jqUVSM ehmyNV"
             href="/blog/view?id=tg5x7po9"
           >
             /blog/view?id=tg5x7po9 ⇒ /blog/tough-mudder
@@ -2121,7 +2121,7 @@ exports[`<SiteMap /> should render correctly with blogs 1`] = `
         </div>
         <div>
           <a
-            class="sc-iBkjds kXOvCG"
+            class="sc-jqUVSM ehmyNV"
             href="/blog/view?id=lqngy"
           >
             /blog/view?id=lqngy ⇒ /blog/lightroom-workflow
@@ -2130,7 +2130,7 @@ exports[`<SiteMap /> should render correctly with blogs 1`] = `
         </div>
         <div>
           <a
-            class="sc-iBkjds kXOvCG"
+            class="sc-jqUVSM ehmyNV"
             href="/blog/view?id=w85aht"
           >
             /blog/view?id=w85aht ⇒ /blog/net-neutrality
@@ -2139,7 +2139,7 @@ exports[`<SiteMap /> should render correctly with blogs 1`] = `
         </div>
         <div>
           <a
-            class="sc-iBkjds kXOvCG"
+            class="sc-jqUVSM ehmyNV"
             href="/blog/view?id=azcpjh"
           >
             /blog/view?id=azcpjh ⇒ /blog/vim
@@ -2148,7 +2148,7 @@ exports[`<SiteMap /> should render correctly with blogs 1`] = `
         </div>
         <div>
           <a
-            class="sc-iBkjds kXOvCG"
+            class="sc-jqUVSM ehmyNV"
             href="/blog/view?id=y77dnh"
           >
             /blog/view?id=y77dnh ⇒ /blog/uk-bank-security
@@ -2157,7 +2157,7 @@ exports[`<SiteMap /> should render correctly with blogs 1`] = `
         </div>
         <div>
           <a
-            class="sc-iBkjds kXOvCG"
+            class="sc-jqUVSM ehmyNV"
             href="/art"
           >
             /art ⇒ /photography
@@ -2166,7 +2166,7 @@ exports[`<SiteMap /> should render correctly with blogs 1`] = `
         </div>
         <div>
           <a
-            class="sc-iBkjds kXOvCG"
+            class="sc-jqUVSM ehmyNV"
             href="/photoshop"
           >
             /photoshop ⇒ /photography
@@ -2175,7 +2175,7 @@ exports[`<SiteMap /> should render correctly with blogs 1`] = `
         </div>
         <div>
           <a
-            class="sc-iBkjds kXOvCG"
+            class="sc-jqUVSM ehmyNV"
             href="/phot"
           >
             /phot ⇒ /photography
@@ -2184,7 +2184,7 @@ exports[`<SiteMap /> should render correctly with blogs 1`] = `
         </div>
         <div>
           <a
-            class="sc-iBkjds kXOvCG"
+            class="sc-jqUVSM ehmyNV"
             href="/photo"
           >
             /photo ⇒ /photography
@@ -2200,35 +2200,35 @@ exports[`<SiteMap /> should render correctly with blogs 1`] = `
 exports[`<SiteMap /> should render correctly with blogs and admin user 1`] = `
 <div>
   <div
-    class="sc-fEOsli kRThfC page-containerstyles__StyledPageContainer-sc-19l7k4-0"
+    class="sc-breuTD hBYskY page-containerstyles__StyledPageContainer-sc-19l7k4-0"
     width="default"
   >
     <h1
-      class="sc-bczRLJ hDLBIv sc-hAZoDl cDlBMk"
+      class="sc-hKMtZM eRFfPl sc-crXcEl injKYD"
     >
       Site map
     </h1>
     <div
-      class="sc-jqUVSM leXYdV site-map__section"
+      class="sc-ksZaOG fmXsYE site-mapstyles__StyledSubsection-sc-13l3sqp-0 jPoVcT"
     >
       <h1
-        class="sc-dkzDqf ddFalQ sc-crXcEl ioFrJl"
+        class="sc-jSMfEi kskSGE sc-fEOsli gNxMg"
         id="blog-📝"
       >
         Blog 📝
       </h1>
       <span
-        class="sc-evZas FCsLq"
+        class="sc-bczRLJ bhVmoO"
       >
         <a
-          class="sc-iBkjds kXOvCG"
+          class="sc-jqUVSM ehmyNV"
           href="/blog"
         >
           Blog list
         </a>
         <br />
         <a
-          class="sc-iBkjds kXOvCG"
+          class="sc-jqUVSM ehmyNV"
           href="/blog/asdfg"
         >
           Blog 1 🎉
@@ -2237,40 +2237,40 @@ exports[`<SiteMap /> should render correctly with blogs and admin user 1`] = `
       </span>
     </div>
     <div
-      class="sc-jqUVSM leXYdV site-map__section"
+      class="sc-ksZaOG fmXsYE site-mapstyles__StyledSubsection-sc-13l3sqp-0 jPoVcT"
     >
       <h1
-        class="sc-dkzDqf ddFalQ sc-crXcEl ioFrJl"
+        class="sc-jSMfEi kskSGE sc-fEOsli gNxMg"
         id="all-blogs"
       >
         All blogs
       </h1>
       <span
-        class="sc-evZas FCsLq"
+        class="sc-bczRLJ bhVmoO"
       >
         <a
-          class="sc-iBkjds kXOvCG"
+          class="sc-jqUVSM ehmyNV"
           href="/blog/asdfg"
         >
           Blog 1 🎉
         </a>
         <br />
         <a
-          class="sc-iBkjds kXOvCG"
+          class="sc-jqUVSM ehmyNV"
           href="/blog/asdfg"
         >
           Untitled blog
         </a>
         <br />
         <a
-          class="sc-iBkjds kXOvCG"
+          class="sc-jqUVSM ehmyNV"
           href="/blog/zxywvuts"
         >
           St. Ives ⛵ 2018
         </a>
         <br />
         <a
-          class="sc-iBkjds kXOvCG"
+          class="sc-jqUVSM ehmyNV"
           href="/blog/mndyd8"
         >
           Untitled blog
@@ -2280,19 +2280,19 @@ exports[`<SiteMap /> should render correctly with blogs and admin user 1`] = `
       </span>
     </div>
     <div
-      class="sc-jqUVSM leXYdV site-map__section"
+      class="sc-ksZaOG fmXsYE site-mapstyles__StyledSubsection-sc-13l3sqp-0 jPoVcT"
     >
       <h1
-        class="sc-dkzDqf ddFalQ sc-crXcEl ioFrJl"
+        class="sc-jSMfEi kskSGE sc-fEOsli gNxMg"
         id="photography-📷"
       >
         Photography 📷
       </h1>
       <span
-        class="sc-evZas FCsLq"
+        class="sc-bczRLJ bhVmoO"
       >
         <a
-          class="sc-iBkjds kXOvCG"
+          class="sc-jqUVSM ehmyNV"
           href="/photography"
         >
           Photography
@@ -2300,19 +2300,19 @@ exports[`<SiteMap /> should render correctly with blogs and admin user 1`] = `
       </span>
     </div>
     <div
-      class="sc-jqUVSM leXYdV site-map__section"
+      class="sc-ksZaOG fmXsYE site-mapstyles__StyledSubsection-sc-13l3sqp-0 jPoVcT"
     >
       <h1
-        class="sc-dkzDqf ddFalQ sc-crXcEl ioFrJl"
+        class="sc-jSMfEi kskSGE sc-fEOsli gNxMg"
         id="medals-🏅"
       >
         Medals 🏅
       </h1>
       <span
-        class="sc-evZas FCsLq"
+        class="sc-bczRLJ bhVmoO"
       >
         <a
-          class="sc-iBkjds kXOvCG"
+          class="sc-jqUVSM ehmyNV"
           href="/medals"
         >
           Medals
@@ -2320,40 +2320,40 @@ exports[`<SiteMap /> should render correctly with blogs and admin user 1`] = `
       </span>
     </div>
     <div
-      class="sc-jqUVSM leXYdV site-map__section"
+      class="sc-ksZaOG fmXsYE site-mapstyles__StyledSubsection-sc-13l3sqp-0 jPoVcT"
     >
       <h1
-        class="sc-dkzDqf ddFalQ sc-crXcEl ioFrJl"
+        class="sc-jSMfEi kskSGE sc-fEOsli gNxMg"
         id="work-📱"
       >
         Work 📱
       </h1>
       <span
-        class="sc-evZas FCsLq"
+        class="sc-bczRLJ bhVmoO"
       >
         <a
-          class="sc-iBkjds kXOvCG"
+          class="sc-jqUVSM ehmyNV"
           href="/work"
         >
           Overview
         </a>
         <br />
         <a
-          class="sc-iBkjds kXOvCG"
+          class="sc-jqUVSM ehmyNV"
           href="/work/backpack"
         >
           Backpack
         </a>
         <br />
         <a
-          class="sc-iBkjds kXOvCG"
+          class="sc-jqUVSM ehmyNV"
           href="/work/degree"
         >
           Degree
         </a>
         <br />
         <a
-          class="sc-iBkjds kXOvCG"
+          class="sc-jqUVSM ehmyNV"
           href="/work/epicc"
         >
           EPICC
@@ -2361,19 +2361,19 @@ exports[`<SiteMap /> should render correctly with blogs and admin user 1`] = `
       </span>
     </div>
     <div
-      class="sc-jqUVSM leXYdV site-map__section"
+      class="sc-ksZaOG fmXsYE site-mapstyles__StyledSubsection-sc-13l3sqp-0 jPoVcT"
     >
       <h1
-        class="sc-dkzDqf ddFalQ sc-crXcEl ioFrJl"
+        class="sc-jSMfEi kskSGE sc-fEOsli gNxMg"
         id="design-🎨"
       >
         Design 🎨
       </h1>
       <span
-        class="sc-evZas FCsLq"
+        class="sc-bczRLJ bhVmoO"
       >
         <a
-          class="sc-iBkjds kXOvCG"
+          class="sc-jqUVSM ehmyNV"
           href="/privacy-policy"
         >
           Privacy Policy
@@ -2381,40 +2381,40 @@ exports[`<SiteMap /> should render correctly with blogs and admin user 1`] = `
       </span>
     </div>
     <div
-      class="sc-jqUVSM leXYdV site-map__section"
+      class="sc-ksZaOG fmXsYE site-mapstyles__StyledSubsection-sc-13l3sqp-0 jPoVcT"
     >
       <h1
-        class="sc-dkzDqf ddFalQ sc-crXcEl ioFrJl"
+        class="sc-jSMfEi kskSGE sc-fEOsli gNxMg"
         id="other-stuff-🤷‍♂️"
       >
         Other stuff 🤷‍♂️
       </h1>
       <span
-        class="sc-evZas FCsLq"
+        class="sc-bczRLJ bhVmoO"
       >
         <a
-          class="sc-iBkjds kXOvCG"
+          class="sc-jqUVSM ehmyNV"
           href="/contact"
         >
           Contact
         </a>
         <br />
         <a
-          class="sc-iBkjds kXOvCG"
+          class="sc-jqUVSM ehmyNV"
           href="/support"
         >
           Support
         </a>
         <br />
         <a
-          class="sc-iBkjds kXOvCG"
+          class="sc-jqUVSM ehmyNV"
           href="/debug"
         >
           Debug tools
         </a>
         <br />
         <a
-          class="sc-iBkjds kXOvCG"
+          class="sc-jqUVSM ehmyNV"
           href="/status"
         >
           Status
@@ -2422,30 +2422,30 @@ exports[`<SiteMap /> should render correctly with blogs and admin user 1`] = `
       </span>
     </div>
     <div
-      class="sc-jqUVSM leXYdV site-map__section"
+      class="sc-ksZaOG fmXsYE site-mapstyles__StyledSubsection-sc-13l3sqp-0 jPoVcT"
     >
       <h1
-        class="sc-dkzDqf ddFalQ sc-crXcEl ioFrJl"
+        class="sc-jSMfEi kskSGE sc-fEOsli gNxMg"
         id="random-🐉"
       >
         Random 🐉
       </h1>
       <span
-        class="sc-evZas FCsLq"
+        class="sc-bczRLJ bhVmoO"
       >
         <a
           aria-label="Robots.txt (opens in a new tab)"
-          class="sc-iBkjds kXOvCG"
+          class="sc-jqUVSM ehmyNV"
           href="/robots.txt"
           rel="noopener noreferrer"
           target="_blank"
         >
           Robots.txt
           <div
-            class="sc-ftvSup kUuEWK"
+            class="sc-kDDrLX ffjHhF"
           >
             <svg
-              class="sc-gKXOVf ktoyia sc-papXJ fmVkXn"
+              class="sc-papXJ QvWXe sc-iqcoie iOIaxE"
               height="18"
               viewBox="0 0 24 24"
               width="18"
@@ -2460,17 +2460,17 @@ exports[`<SiteMap /> should render correctly with blogs and admin user 1`] = `
         <br />
         <a
           aria-label="SiteMap.xml (opens in a new tab)"
-          class="sc-iBkjds kXOvCG"
+          class="sc-jqUVSM ehmyNV"
           href="/sitemap.xml"
           rel="noopener noreferrer"
           target="_blank"
         >
           SiteMap.xml
           <div
-            class="sc-ftvSup kUuEWK"
+            class="sc-kDDrLX ffjHhF"
           >
             <svg
-              class="sc-gKXOVf ktoyia sc-papXJ fmVkXn"
+              class="sc-papXJ QvWXe sc-iqcoie iOIaxE"
               height="18"
               viewBox="0 0 24 24"
               width="18"
@@ -2484,14 +2484,14 @@ exports[`<SiteMap /> should render correctly with blogs and admin user 1`] = `
         </a>
         <br />
         <a
-          class="sc-iBkjds kXOvCG"
+          class="sc-jqUVSM ehmyNV"
           href="/404"
         >
           404 error page - not found
         </a>
         <br />
         <a
-          class="sc-iBkjds kXOvCG"
+          class="sc-jqUVSM ehmyNV"
           href="/teapot"
         >
           418 error page - I'm a teapot
@@ -2499,19 +2499,19 @@ exports[`<SiteMap /> should render correctly with blogs and admin user 1`] = `
       </span>
     </div>
     <div
-      class="sc-jqUVSM leXYdV site-map__section"
+      class="sc-ksZaOG fmXsYE site-mapstyles__StyledSubsection-sc-13l3sqp-0 jPoVcT"
     >
       <h1
-        class="sc-dkzDqf ddFalQ sc-crXcEl ioFrJl"
+        class="sc-jSMfEi kskSGE sc-fEOsli gNxMg"
         id="api"
       >
         API
       </h1>
       <span
-        class="sc-evZas FCsLq"
+        class="sc-bczRLJ bhVmoO"
       >
         <a
-          class="sc-iBkjds kXOvCG"
+          class="sc-jqUVSM ehmyNV"
           href="/api-docs"
         >
           API docs
@@ -2519,47 +2519,47 @@ exports[`<SiteMap /> should render correctly with blogs and admin user 1`] = `
       </span>
     </div>
     <div
-      class="sc-jqUVSM leXYdV site-map__section"
+      class="sc-ksZaOG fmXsYE site-mapstyles__StyledSubsection-sc-13l3sqp-0 jPoVcT"
     >
       <h1
-        class="sc-dkzDqf ddFalQ sc-crXcEl ioFrJl"
+        class="sc-jSMfEi kskSGE sc-fEOsli gNxMg"
         id="accounts-🔑"
       >
         Accounts 🔑
       </h1>
       <span
-        class="sc-evZas FCsLq"
+        class="sc-bczRLJ bhVmoO"
       >
         <a
-          class="sc-iBkjds kXOvCG"
+          class="sc-jqUVSM ehmyNV"
           href="/account"
         >
           Account
         </a>
         <br />
         <a
-          class="sc-iBkjds kXOvCG"
+          class="sc-jqUVSM ehmyNV"
           href="/sign-up"
         >
           Sign up
         </a>
         <br />
         <a
-          class="sc-iBkjds kXOvCG"
+          class="sc-jqUVSM ehmyNV"
           href="/login"
         >
           Log in
         </a>
         <br />
         <a
-          class="sc-iBkjds kXOvCG"
+          class="sc-jqUVSM ehmyNV"
           href="/email-verification"
         >
           Email verification
         </a>
         <br />
         <a
-          class="sc-iBkjds kXOvCG"
+          class="sc-jqUVSM ehmyNV"
           href="/magic-login"
         >
           Magic login
@@ -2567,54 +2567,54 @@ exports[`<SiteMap /> should render correctly with blogs and admin user 1`] = `
       </span>
     </div>
     <div
-      class="sc-jqUVSM leXYdV site-map__section"
+      class="sc-ksZaOG fmXsYE site-mapstyles__StyledSubsection-sc-13l3sqp-0 jPoVcT"
     >
       <h1
-        class="sc-dkzDqf ddFalQ sc-crXcEl ioFrJl"
+        class="sc-jSMfEi kskSGE sc-fEOsli gNxMg"
         id="admin-👮‍♂️"
       >
         Admin 👮‍♂️
       </h1>
       <span
-        class="sc-evZas FCsLq"
+        class="sc-bczRLJ bhVmoO"
       >
         <a
-          class="sc-iBkjds kXOvCG"
+          class="sc-jqUVSM ehmyNV"
           href="/admin"
         >
           Admin navigation
         </a>
         <br />
         <a
-          class="sc-iBkjds kXOvCG"
+          class="sc-jqUVSM ehmyNV"
           href="/blog"
         >
           Blogs
         </a>
         <br />
         <a
-          class="sc-iBkjds kXOvCG"
+          class="sc-jqUVSM ehmyNV"
           href="/admin/analytics"
         >
           Analytics
         </a>
         <br />
         <a
-          class="sc-iBkjds kXOvCG"
+          class="sc-jqUVSM ehmyNV"
           href="/admin/emails"
         >
           Emails
         </a>
         <br />
         <a
-          class="sc-iBkjds kXOvCG"
+          class="sc-jqUVSM ehmyNV"
           href="/admin/notifications"
         >
           Notifications
         </a>
         <br />
         <a
-          class="sc-iBkjds kXOvCG"
+          class="sc-jqUVSM ehmyNV"
           href="/admin/users"
         >
           Users
@@ -2622,20 +2622,20 @@ exports[`<SiteMap /> should render correctly with blogs and admin user 1`] = `
       </span>
     </div>
     <div
-      class="sc-jqUVSM leXYdV site-map__section"
+      class="sc-ksZaOG fmXsYE site-mapstyles__StyledSubsection-sc-13l3sqp-0 jPoVcT"
     >
       <h1
-        class="sc-dkzDqf ddFalQ sc-crXcEl ioFrJl"
+        class="sc-jSMfEi kskSGE sc-fEOsli gNxMg"
         id="redirects-👉"
       >
         Redirects 👉
       </h1>
       <span
-        class="sc-evZas FCsLq"
+        class="sc-bczRLJ bhVmoO"
       >
         <div>
           <a
-            class="sc-iBkjds kXOvCG"
+            class="sc-jqUVSM ehmyNV"
             href="/codebase"
           >
             /codebase ⇒ https://github.com/georgegillams/georgegillams.co.uk
@@ -2644,7 +2644,7 @@ exports[`<SiteMap /> should render correctly with blogs and admin user 1`] = `
         </div>
         <div>
           <a
-            class="sc-iBkjds kXOvCG"
+            class="sc-jqUVSM ehmyNV"
             href="/copyright"
           >
             /copyright ⇒ https://creativecommons.org/licenses/by-sa/3.0/
@@ -2653,7 +2653,7 @@ exports[`<SiteMap /> should render correctly with blogs and admin user 1`] = `
         </div>
         <div>
           <a
-            class="sc-iBkjds kXOvCG"
+            class="sc-jqUVSM ehmyNV"
             href="/flickr"
           >
             /flickr ⇒ https://www.flickr.com/people/georgegillams
@@ -2662,7 +2662,7 @@ exports[`<SiteMap /> should render correctly with blogs and admin user 1`] = `
         </div>
         <div>
           <a
-            class="sc-iBkjds kXOvCG"
+            class="sc-jqUVSM ehmyNV"
             href="/monzo"
           >
             /monzo ⇒ https://join.monzo.com/r/vjd3d74
@@ -2671,7 +2671,7 @@ exports[`<SiteMap /> should render correctly with blogs and admin user 1`] = `
         </div>
         <div>
           <a
-            class="sc-iBkjds kXOvCG"
+            class="sc-jqUVSM ehmyNV"
             href="/github"
           >
             /github ⇒ https://github.com/georgegillams
@@ -2680,7 +2680,7 @@ exports[`<SiteMap /> should render correctly with blogs and admin user 1`] = `
         </div>
         <div>
           <a
-            class="sc-iBkjds kXOvCG"
+            class="sc-jqUVSM ehmyNV"
             href="/stackoverflow"
           >
             /stackoverflow ⇒ https://stackoverflow.com/users/14463713/georgegillams
@@ -2689,7 +2689,7 @@ exports[`<SiteMap /> should render correctly with blogs and admin user 1`] = `
         </div>
         <div>
           <a
-            class="sc-iBkjds kXOvCG"
+            class="sc-jqUVSM ehmyNV"
             href="/gurushots"
           >
             /gurushots ⇒ https://gurushots.com/georgegillams/photos
@@ -2698,7 +2698,7 @@ exports[`<SiteMap /> should render correctly with blogs and admin user 1`] = `
         </div>
         <div>
           <a
-            class="sc-iBkjds kXOvCG"
+            class="sc-jqUVSM ehmyNV"
             href="/unsplash"
           >
             /unsplash ⇒ https://unsplash.com/@georgegillams/
@@ -2707,7 +2707,7 @@ exports[`<SiteMap /> should render correctly with blogs and admin user 1`] = `
         </div>
         <div>
           <a
-            class="sc-iBkjds kXOvCG"
+            class="sc-jqUVSM ehmyNV"
             href="/strava"
           >
             /strava ⇒ https://www.strava.com/athletes/7221483
@@ -2716,7 +2716,7 @@ exports[`<SiteMap /> should render correctly with blogs and admin user 1`] = `
         </div>
         <div>
           <a
-            class="sc-iBkjds kXOvCG"
+            class="sc-jqUVSM ehmyNV"
             href="/linkedin"
           >
             /linkedin ⇒ https://www.linkedin.com/in/george-gillams-37537077
@@ -2725,7 +2725,7 @@ exports[`<SiteMap /> should render correctly with blogs and admin user 1`] = `
         </div>
         <div>
           <a
-            class="sc-iBkjds kXOvCG"
+            class="sc-jqUVSM ehmyNV"
             href="/twitter"
           >
             /twitter ⇒ https://twitter.com/georgegillams
@@ -2734,7 +2734,7 @@ exports[`<SiteMap /> should render correctly with blogs and admin user 1`] = `
         </div>
         <div>
           <a
-            class="sc-iBkjds kXOvCG"
+            class="sc-jqUVSM ehmyNV"
             href="/wp-admin"
           >
             /wp-admin ⇒ /admin
@@ -2743,7 +2743,7 @@ exports[`<SiteMap /> should render correctly with blogs and admin user 1`] = `
         </div>
         <div>
           <a
-            class="sc-iBkjds kXOvCG"
+            class="sc-jqUVSM ehmyNV"
             href="/about"
           >
             /about ⇒ /
@@ -2752,7 +2752,7 @@ exports[`<SiteMap /> should render correctly with blogs and admin user 1`] = `
         </div>
         <div>
           <a
-            class="sc-iBkjds kXOvCG"
+            class="sc-jqUVSM ehmyNV"
             href="/site-map"
           >
             /site-map ⇒ /sitemap
@@ -2761,7 +2761,7 @@ exports[`<SiteMap /> should render correctly with blogs and admin user 1`] = `
         </div>
         <div>
           <a
-            class="sc-iBkjds kXOvCG"
+            class="sc-jqUVSM ehmyNV"
             href="/about/degree"
           >
             /about/degree ⇒ /work/degree
@@ -2770,7 +2770,7 @@ exports[`<SiteMap /> should render correctly with blogs and admin user 1`] = `
         </div>
         <div>
           <a
-            class="sc-iBkjds kXOvCG"
+            class="sc-jqUVSM ehmyNV"
             href="/articles/tough-mudder"
           >
             /articles/tough-mudder ⇒ /blog/tough-mudder
@@ -2779,7 +2779,7 @@ exports[`<SiteMap /> should render correctly with blogs and admin user 1`] = `
         </div>
         <div>
           <a
-            class="sc-iBkjds kXOvCG"
+            class="sc-jqUVSM ehmyNV"
             href="/articles/net-neutrality"
           >
             /articles/net-neutrality ⇒ /blog/net-neutrality
@@ -2788,7 +2788,7 @@ exports[`<SiteMap /> should render correctly with blogs and admin user 1`] = `
         </div>
         <div>
           <a
-            class="sc-iBkjds kXOvCG"
+            class="sc-jqUVSM ehmyNV"
             href="/articles/vim"
           >
             /articles/vim ⇒ /blog/vim
@@ -2797,7 +2797,7 @@ exports[`<SiteMap /> should render correctly with blogs and admin user 1`] = `
         </div>
         <div>
           <a
-            class="sc-iBkjds kXOvCG"
+            class="sc-jqUVSM ehmyNV"
             href="/articles/list"
           >
             /articles/list ⇒ /blog
@@ -2806,7 +2806,7 @@ exports[`<SiteMap /> should render correctly with blogs and admin user 1`] = `
         </div>
         <div>
           <a
-            class="sc-iBkjds kXOvCG"
+            class="sc-jqUVSM ehmyNV"
             href="/articles"
           >
             /articles ⇒ /blog
@@ -2815,7 +2815,7 @@ exports[`<SiteMap /> should render correctly with blogs and admin user 1`] = `
         </div>
         <div>
           <a
-            class="sc-iBkjds kXOvCG"
+            class="sc-jqUVSM ehmyNV"
             href="/net-neutrality"
           >
             /net-neutrality ⇒ /blog/net-neutrality
@@ -2824,7 +2824,7 @@ exports[`<SiteMap /> should render correctly with blogs and admin user 1`] = `
         </div>
         <div>
           <a
-            class="sc-iBkjds kXOvCG"
+            class="sc-jqUVSM ehmyNV"
             href="/work/side-projects"
           >
             /work/side-projects ⇒ /work
@@ -2833,7 +2833,7 @@ exports[`<SiteMap /> should render correctly with blogs and admin user 1`] = `
         </div>
         <div>
           <a
-            class="sc-iBkjds kXOvCG"
+            class="sc-jqUVSM ehmyNV"
             href="/blog/view"
           >
             /blog/view ⇒ /blog
@@ -2842,7 +2842,7 @@ exports[`<SiteMap /> should render correctly with blogs and admin user 1`] = `
         </div>
         <div>
           <a
-            class="sc-iBkjds kXOvCG"
+            class="sc-jqUVSM ehmyNV"
             href="/travel"
           >
             /travel ⇒ /blog
@@ -2851,7 +2851,7 @@ exports[`<SiteMap /> should render correctly with blogs and admin user 1`] = `
         </div>
         <div>
           <a
-            class="sc-iBkjds kXOvCG"
+            class="sc-jqUVSM ehmyNV"
             href="/travel/list"
           >
             /travel/list ⇒ /blog
@@ -2860,7 +2860,7 @@ exports[`<SiteMap /> should render correctly with blogs and admin user 1`] = `
         </div>
         <div>
           <a
-            class="sc-iBkjds kXOvCG"
+            class="sc-jqUVSM ehmyNV"
             href="/blog/view?id=tg5x7po9"
           >
             /blog/view?id=tg5x7po9 ⇒ /blog/tough-mudder
@@ -2869,7 +2869,7 @@ exports[`<SiteMap /> should render correctly with blogs and admin user 1`] = `
         </div>
         <div>
           <a
-            class="sc-iBkjds kXOvCG"
+            class="sc-jqUVSM ehmyNV"
             href="/blog/view?id=lqngy"
           >
             /blog/view?id=lqngy ⇒ /blog/lightroom-workflow
@@ -2878,7 +2878,7 @@ exports[`<SiteMap /> should render correctly with blogs and admin user 1`] = `
         </div>
         <div>
           <a
-            class="sc-iBkjds kXOvCG"
+            class="sc-jqUVSM ehmyNV"
             href="/blog/view?id=w85aht"
           >
             /blog/view?id=w85aht ⇒ /blog/net-neutrality
@@ -2887,7 +2887,7 @@ exports[`<SiteMap /> should render correctly with blogs and admin user 1`] = `
         </div>
         <div>
           <a
-            class="sc-iBkjds kXOvCG"
+            class="sc-jqUVSM ehmyNV"
             href="/blog/view?id=azcpjh"
           >
             /blog/view?id=azcpjh ⇒ /blog/vim
@@ -2896,7 +2896,7 @@ exports[`<SiteMap /> should render correctly with blogs and admin user 1`] = `
         </div>
         <div>
           <a
-            class="sc-iBkjds kXOvCG"
+            class="sc-jqUVSM ehmyNV"
             href="/blog/view?id=y77dnh"
           >
             /blog/view?id=y77dnh ⇒ /blog/uk-bank-security
@@ -2905,7 +2905,7 @@ exports[`<SiteMap /> should render correctly with blogs and admin user 1`] = `
         </div>
         <div>
           <a
-            class="sc-iBkjds kXOvCG"
+            class="sc-jqUVSM ehmyNV"
             href="/art"
           >
             /art ⇒ /photography
@@ -2914,7 +2914,7 @@ exports[`<SiteMap /> should render correctly with blogs and admin user 1`] = `
         </div>
         <div>
           <a
-            class="sc-iBkjds kXOvCG"
+            class="sc-jqUVSM ehmyNV"
             href="/photoshop"
           >
             /photoshop ⇒ /photography
@@ -2923,7 +2923,7 @@ exports[`<SiteMap /> should render correctly with blogs and admin user 1`] = `
         </div>
         <div>
           <a
-            class="sc-iBkjds kXOvCG"
+            class="sc-jqUVSM ehmyNV"
             href="/phot"
           >
             /phot ⇒ /photography
@@ -2932,7 +2932,7 @@ exports[`<SiteMap /> should render correctly with blogs and admin user 1`] = `
         </div>
         <div>
           <a
-            class="sc-iBkjds kXOvCG"
+            class="sc-jqUVSM ehmyNV"
             href="/photo"
           >
             /photo ⇒ /photography
@@ -2948,35 +2948,35 @@ exports[`<SiteMap /> should render correctly with blogs and admin user 1`] = `
 exports[`<SiteMap /> should render correctly with ssrBlogs 1`] = `
 <div>
   <div
-    class="sc-fEOsli kRThfC page-containerstyles__StyledPageContainer-sc-19l7k4-0"
+    class="sc-breuTD hBYskY page-containerstyles__StyledPageContainer-sc-19l7k4-0"
     width="default"
   >
     <h1
-      class="sc-bczRLJ hDLBIv sc-hAZoDl cDlBMk"
+      class="sc-hKMtZM eRFfPl sc-crXcEl injKYD"
     >
       Site map
     </h1>
     <div
-      class="sc-jqUVSM leXYdV site-map__section"
+      class="sc-ksZaOG fmXsYE site-mapstyles__StyledSubsection-sc-13l3sqp-0 jPoVcT"
     >
       <h1
-        class="sc-dkzDqf ddFalQ sc-crXcEl ioFrJl"
+        class="sc-jSMfEi kskSGE sc-fEOsli gNxMg"
         id="blog-📝"
       >
         Blog 📝
       </h1>
       <span
-        class="sc-evZas FCsLq"
+        class="sc-bczRLJ bhVmoO"
       >
         <a
-          class="sc-iBkjds kXOvCG"
+          class="sc-jqUVSM ehmyNV"
           href="/blog"
         >
           Blog list
         </a>
         <br />
         <a
-          class="sc-iBkjds kXOvCG"
+          class="sc-jqUVSM ehmyNV"
           href="/blog/asdfg"
         >
           Blog 1 🎉
@@ -2985,19 +2985,19 @@ exports[`<SiteMap /> should render correctly with ssrBlogs 1`] = `
       </span>
     </div>
     <div
-      class="sc-jqUVSM leXYdV site-map__section"
+      class="sc-ksZaOG fmXsYE site-mapstyles__StyledSubsection-sc-13l3sqp-0 jPoVcT"
     >
       <h1
-        class="sc-dkzDqf ddFalQ sc-crXcEl ioFrJl"
+        class="sc-jSMfEi kskSGE sc-fEOsli gNxMg"
         id="photography-📷"
       >
         Photography 📷
       </h1>
       <span
-        class="sc-evZas FCsLq"
+        class="sc-bczRLJ bhVmoO"
       >
         <a
-          class="sc-iBkjds kXOvCG"
+          class="sc-jqUVSM ehmyNV"
           href="/photography"
         >
           Photography
@@ -3005,19 +3005,19 @@ exports[`<SiteMap /> should render correctly with ssrBlogs 1`] = `
       </span>
     </div>
     <div
-      class="sc-jqUVSM leXYdV site-map__section"
+      class="sc-ksZaOG fmXsYE site-mapstyles__StyledSubsection-sc-13l3sqp-0 jPoVcT"
     >
       <h1
-        class="sc-dkzDqf ddFalQ sc-crXcEl ioFrJl"
+        class="sc-jSMfEi kskSGE sc-fEOsli gNxMg"
         id="medals-🏅"
       >
         Medals 🏅
       </h1>
       <span
-        class="sc-evZas FCsLq"
+        class="sc-bczRLJ bhVmoO"
       >
         <a
-          class="sc-iBkjds kXOvCG"
+          class="sc-jqUVSM ehmyNV"
           href="/medals"
         >
           Medals
@@ -3025,40 +3025,40 @@ exports[`<SiteMap /> should render correctly with ssrBlogs 1`] = `
       </span>
     </div>
     <div
-      class="sc-jqUVSM leXYdV site-map__section"
+      class="sc-ksZaOG fmXsYE site-mapstyles__StyledSubsection-sc-13l3sqp-0 jPoVcT"
     >
       <h1
-        class="sc-dkzDqf ddFalQ sc-crXcEl ioFrJl"
+        class="sc-jSMfEi kskSGE sc-fEOsli gNxMg"
         id="work-📱"
       >
         Work 📱
       </h1>
       <span
-        class="sc-evZas FCsLq"
+        class="sc-bczRLJ bhVmoO"
       >
         <a
-          class="sc-iBkjds kXOvCG"
+          class="sc-jqUVSM ehmyNV"
           href="/work"
         >
           Overview
         </a>
         <br />
         <a
-          class="sc-iBkjds kXOvCG"
+          class="sc-jqUVSM ehmyNV"
           href="/work/backpack"
         >
           Backpack
         </a>
         <br />
         <a
-          class="sc-iBkjds kXOvCG"
+          class="sc-jqUVSM ehmyNV"
           href="/work/degree"
         >
           Degree
         </a>
         <br />
         <a
-          class="sc-iBkjds kXOvCG"
+          class="sc-jqUVSM ehmyNV"
           href="/work/epicc"
         >
           EPICC
@@ -3066,19 +3066,19 @@ exports[`<SiteMap /> should render correctly with ssrBlogs 1`] = `
       </span>
     </div>
     <div
-      class="sc-jqUVSM leXYdV site-map__section"
+      class="sc-ksZaOG fmXsYE site-mapstyles__StyledSubsection-sc-13l3sqp-0 jPoVcT"
     >
       <h1
-        class="sc-dkzDqf ddFalQ sc-crXcEl ioFrJl"
+        class="sc-jSMfEi kskSGE sc-fEOsli gNxMg"
         id="design-🎨"
       >
         Design 🎨
       </h1>
       <span
-        class="sc-evZas FCsLq"
+        class="sc-bczRLJ bhVmoO"
       >
         <a
-          class="sc-iBkjds kXOvCG"
+          class="sc-jqUVSM ehmyNV"
           href="/privacy-policy"
         >
           Privacy Policy
@@ -3086,40 +3086,40 @@ exports[`<SiteMap /> should render correctly with ssrBlogs 1`] = `
       </span>
     </div>
     <div
-      class="sc-jqUVSM leXYdV site-map__section"
+      class="sc-ksZaOG fmXsYE site-mapstyles__StyledSubsection-sc-13l3sqp-0 jPoVcT"
     >
       <h1
-        class="sc-dkzDqf ddFalQ sc-crXcEl ioFrJl"
+        class="sc-jSMfEi kskSGE sc-fEOsli gNxMg"
         id="other-stuff-🤷‍♂️"
       >
         Other stuff 🤷‍♂️
       </h1>
       <span
-        class="sc-evZas FCsLq"
+        class="sc-bczRLJ bhVmoO"
       >
         <a
-          class="sc-iBkjds kXOvCG"
+          class="sc-jqUVSM ehmyNV"
           href="/contact"
         >
           Contact
         </a>
         <br />
         <a
-          class="sc-iBkjds kXOvCG"
+          class="sc-jqUVSM ehmyNV"
           href="/support"
         >
           Support
         </a>
         <br />
         <a
-          class="sc-iBkjds kXOvCG"
+          class="sc-jqUVSM ehmyNV"
           href="/debug"
         >
           Debug tools
         </a>
         <br />
         <a
-          class="sc-iBkjds kXOvCG"
+          class="sc-jqUVSM ehmyNV"
           href="/status"
         >
           Status
@@ -3127,30 +3127,30 @@ exports[`<SiteMap /> should render correctly with ssrBlogs 1`] = `
       </span>
     </div>
     <div
-      class="sc-jqUVSM leXYdV site-map__section"
+      class="sc-ksZaOG fmXsYE site-mapstyles__StyledSubsection-sc-13l3sqp-0 jPoVcT"
     >
       <h1
-        class="sc-dkzDqf ddFalQ sc-crXcEl ioFrJl"
+        class="sc-jSMfEi kskSGE sc-fEOsli gNxMg"
         id="random-🐉"
       >
         Random 🐉
       </h1>
       <span
-        class="sc-evZas FCsLq"
+        class="sc-bczRLJ bhVmoO"
       >
         <a
           aria-label="Robots.txt (opens in a new tab)"
-          class="sc-iBkjds kXOvCG"
+          class="sc-jqUVSM ehmyNV"
           href="/robots.txt"
           rel="noopener noreferrer"
           target="_blank"
         >
           Robots.txt
           <div
-            class="sc-ftvSup kUuEWK"
+            class="sc-kDDrLX ffjHhF"
           >
             <svg
-              class="sc-gKXOVf ktoyia sc-papXJ fmVkXn"
+              class="sc-papXJ QvWXe sc-iqcoie iOIaxE"
               height="18"
               viewBox="0 0 24 24"
               width="18"
@@ -3165,17 +3165,17 @@ exports[`<SiteMap /> should render correctly with ssrBlogs 1`] = `
         <br />
         <a
           aria-label="SiteMap.xml (opens in a new tab)"
-          class="sc-iBkjds kXOvCG"
+          class="sc-jqUVSM ehmyNV"
           href="/sitemap.xml"
           rel="noopener noreferrer"
           target="_blank"
         >
           SiteMap.xml
           <div
-            class="sc-ftvSup kUuEWK"
+            class="sc-kDDrLX ffjHhF"
           >
             <svg
-              class="sc-gKXOVf ktoyia sc-papXJ fmVkXn"
+              class="sc-papXJ QvWXe sc-iqcoie iOIaxE"
               height="18"
               viewBox="0 0 24 24"
               width="18"
@@ -3189,14 +3189,14 @@ exports[`<SiteMap /> should render correctly with ssrBlogs 1`] = `
         </a>
         <br />
         <a
-          class="sc-iBkjds kXOvCG"
+          class="sc-jqUVSM ehmyNV"
           href="/404"
         >
           404 error page - not found
         </a>
         <br />
         <a
-          class="sc-iBkjds kXOvCG"
+          class="sc-jqUVSM ehmyNV"
           href="/teapot"
         >
           418 error page - I'm a teapot
@@ -3204,19 +3204,19 @@ exports[`<SiteMap /> should render correctly with ssrBlogs 1`] = `
       </span>
     </div>
     <div
-      class="sc-jqUVSM leXYdV site-map__section"
+      class="sc-ksZaOG fmXsYE site-mapstyles__StyledSubsection-sc-13l3sqp-0 jPoVcT"
     >
       <h1
-        class="sc-dkzDqf ddFalQ sc-crXcEl ioFrJl"
+        class="sc-jSMfEi kskSGE sc-fEOsli gNxMg"
         id="api"
       >
         API
       </h1>
       <span
-        class="sc-evZas FCsLq"
+        class="sc-bczRLJ bhVmoO"
       >
         <a
-          class="sc-iBkjds kXOvCG"
+          class="sc-jqUVSM ehmyNV"
           href="/api-docs"
         >
           API docs
@@ -3224,47 +3224,47 @@ exports[`<SiteMap /> should render correctly with ssrBlogs 1`] = `
       </span>
     </div>
     <div
-      class="sc-jqUVSM leXYdV site-map__section"
+      class="sc-ksZaOG fmXsYE site-mapstyles__StyledSubsection-sc-13l3sqp-0 jPoVcT"
     >
       <h1
-        class="sc-dkzDqf ddFalQ sc-crXcEl ioFrJl"
+        class="sc-jSMfEi kskSGE sc-fEOsli gNxMg"
         id="accounts-🔑"
       >
         Accounts 🔑
       </h1>
       <span
-        class="sc-evZas FCsLq"
+        class="sc-bczRLJ bhVmoO"
       >
         <a
-          class="sc-iBkjds kXOvCG"
+          class="sc-jqUVSM ehmyNV"
           href="/account"
         >
           Account
         </a>
         <br />
         <a
-          class="sc-iBkjds kXOvCG"
+          class="sc-jqUVSM ehmyNV"
           href="/sign-up"
         >
           Sign up
         </a>
         <br />
         <a
-          class="sc-iBkjds kXOvCG"
+          class="sc-jqUVSM ehmyNV"
           href="/login"
         >
           Log in
         </a>
         <br />
         <a
-          class="sc-iBkjds kXOvCG"
+          class="sc-jqUVSM ehmyNV"
           href="/email-verification"
         >
           Email verification
         </a>
         <br />
         <a
-          class="sc-iBkjds kXOvCG"
+          class="sc-jqUVSM ehmyNV"
           href="/magic-login"
         >
           Magic login
@@ -3272,54 +3272,54 @@ exports[`<SiteMap /> should render correctly with ssrBlogs 1`] = `
       </span>
     </div>
     <div
-      class="sc-jqUVSM leXYdV site-map__section"
+      class="sc-ksZaOG fmXsYE site-mapstyles__StyledSubsection-sc-13l3sqp-0 jPoVcT"
     >
       <h1
-        class="sc-dkzDqf ddFalQ sc-crXcEl ioFrJl"
+        class="sc-jSMfEi kskSGE sc-fEOsli gNxMg"
         id="admin-👮‍♂️"
       >
         Admin 👮‍♂️
       </h1>
       <span
-        class="sc-evZas FCsLq"
+        class="sc-bczRLJ bhVmoO"
       >
         <a
-          class="sc-iBkjds kXOvCG"
+          class="sc-jqUVSM ehmyNV"
           href="/admin"
         >
           Admin navigation
         </a>
         <br />
         <a
-          class="sc-iBkjds kXOvCG"
+          class="sc-jqUVSM ehmyNV"
           href="/blog"
         >
           Blogs
         </a>
         <br />
         <a
-          class="sc-iBkjds kXOvCG"
+          class="sc-jqUVSM ehmyNV"
           href="/admin/analytics"
         >
           Analytics
         </a>
         <br />
         <a
-          class="sc-iBkjds kXOvCG"
+          class="sc-jqUVSM ehmyNV"
           href="/admin/emails"
         >
           Emails
         </a>
         <br />
         <a
-          class="sc-iBkjds kXOvCG"
+          class="sc-jqUVSM ehmyNV"
           href="/admin/notifications"
         >
           Notifications
         </a>
         <br />
         <a
-          class="sc-iBkjds kXOvCG"
+          class="sc-jqUVSM ehmyNV"
           href="/admin/users"
         >
           Users
@@ -3327,20 +3327,20 @@ exports[`<SiteMap /> should render correctly with ssrBlogs 1`] = `
       </span>
     </div>
     <div
-      class="sc-jqUVSM leXYdV site-map__section"
+      class="sc-ksZaOG fmXsYE site-mapstyles__StyledSubsection-sc-13l3sqp-0 jPoVcT"
     >
       <h1
-        class="sc-dkzDqf ddFalQ sc-crXcEl ioFrJl"
+        class="sc-jSMfEi kskSGE sc-fEOsli gNxMg"
         id="redirects-👉"
       >
         Redirects 👉
       </h1>
       <span
-        class="sc-evZas FCsLq"
+        class="sc-bczRLJ bhVmoO"
       >
         <div>
           <a
-            class="sc-iBkjds kXOvCG"
+            class="sc-jqUVSM ehmyNV"
             href="/codebase"
           >
             /codebase ⇒ https://github.com/georgegillams/georgegillams.co.uk
@@ -3349,7 +3349,7 @@ exports[`<SiteMap /> should render correctly with ssrBlogs 1`] = `
         </div>
         <div>
           <a
-            class="sc-iBkjds kXOvCG"
+            class="sc-jqUVSM ehmyNV"
             href="/copyright"
           >
             /copyright ⇒ https://creativecommons.org/licenses/by-sa/3.0/
@@ -3358,7 +3358,7 @@ exports[`<SiteMap /> should render correctly with ssrBlogs 1`] = `
         </div>
         <div>
           <a
-            class="sc-iBkjds kXOvCG"
+            class="sc-jqUVSM ehmyNV"
             href="/flickr"
           >
             /flickr ⇒ https://www.flickr.com/people/georgegillams
@@ -3367,7 +3367,7 @@ exports[`<SiteMap /> should render correctly with ssrBlogs 1`] = `
         </div>
         <div>
           <a
-            class="sc-iBkjds kXOvCG"
+            class="sc-jqUVSM ehmyNV"
             href="/monzo"
           >
             /monzo ⇒ https://join.monzo.com/r/vjd3d74
@@ -3376,7 +3376,7 @@ exports[`<SiteMap /> should render correctly with ssrBlogs 1`] = `
         </div>
         <div>
           <a
-            class="sc-iBkjds kXOvCG"
+            class="sc-jqUVSM ehmyNV"
             href="/github"
           >
             /github ⇒ https://github.com/georgegillams
@@ -3385,7 +3385,7 @@ exports[`<SiteMap /> should render correctly with ssrBlogs 1`] = `
         </div>
         <div>
           <a
-            class="sc-iBkjds kXOvCG"
+            class="sc-jqUVSM ehmyNV"
             href="/stackoverflow"
           >
             /stackoverflow ⇒ https://stackoverflow.com/users/14463713/georgegillams
@@ -3394,7 +3394,7 @@ exports[`<SiteMap /> should render correctly with ssrBlogs 1`] = `
         </div>
         <div>
           <a
-            class="sc-iBkjds kXOvCG"
+            class="sc-jqUVSM ehmyNV"
             href="/gurushots"
           >
             /gurushots ⇒ https://gurushots.com/georgegillams/photos
@@ -3403,7 +3403,7 @@ exports[`<SiteMap /> should render correctly with ssrBlogs 1`] = `
         </div>
         <div>
           <a
-            class="sc-iBkjds kXOvCG"
+            class="sc-jqUVSM ehmyNV"
             href="/unsplash"
           >
             /unsplash ⇒ https://unsplash.com/@georgegillams/
@@ -3412,7 +3412,7 @@ exports[`<SiteMap /> should render correctly with ssrBlogs 1`] = `
         </div>
         <div>
           <a
-            class="sc-iBkjds kXOvCG"
+            class="sc-jqUVSM ehmyNV"
             href="/strava"
           >
             /strava ⇒ https://www.strava.com/athletes/7221483
@@ -3421,7 +3421,7 @@ exports[`<SiteMap /> should render correctly with ssrBlogs 1`] = `
         </div>
         <div>
           <a
-            class="sc-iBkjds kXOvCG"
+            class="sc-jqUVSM ehmyNV"
             href="/linkedin"
           >
             /linkedin ⇒ https://www.linkedin.com/in/george-gillams-37537077
@@ -3430,7 +3430,7 @@ exports[`<SiteMap /> should render correctly with ssrBlogs 1`] = `
         </div>
         <div>
           <a
-            class="sc-iBkjds kXOvCG"
+            class="sc-jqUVSM ehmyNV"
             href="/twitter"
           >
             /twitter ⇒ https://twitter.com/georgegillams
@@ -3439,7 +3439,7 @@ exports[`<SiteMap /> should render correctly with ssrBlogs 1`] = `
         </div>
         <div>
           <a
-            class="sc-iBkjds kXOvCG"
+            class="sc-jqUVSM ehmyNV"
             href="/wp-admin"
           >
             /wp-admin ⇒ /admin
@@ -3448,7 +3448,7 @@ exports[`<SiteMap /> should render correctly with ssrBlogs 1`] = `
         </div>
         <div>
           <a
-            class="sc-iBkjds kXOvCG"
+            class="sc-jqUVSM ehmyNV"
             href="/about"
           >
             /about ⇒ /
@@ -3457,7 +3457,7 @@ exports[`<SiteMap /> should render correctly with ssrBlogs 1`] = `
         </div>
         <div>
           <a
-            class="sc-iBkjds kXOvCG"
+            class="sc-jqUVSM ehmyNV"
             href="/site-map"
           >
             /site-map ⇒ /sitemap
@@ -3466,7 +3466,7 @@ exports[`<SiteMap /> should render correctly with ssrBlogs 1`] = `
         </div>
         <div>
           <a
-            class="sc-iBkjds kXOvCG"
+            class="sc-jqUVSM ehmyNV"
             href="/about/degree"
           >
             /about/degree ⇒ /work/degree
@@ -3475,7 +3475,7 @@ exports[`<SiteMap /> should render correctly with ssrBlogs 1`] = `
         </div>
         <div>
           <a
-            class="sc-iBkjds kXOvCG"
+            class="sc-jqUVSM ehmyNV"
             href="/articles/tough-mudder"
           >
             /articles/tough-mudder ⇒ /blog/tough-mudder
@@ -3484,7 +3484,7 @@ exports[`<SiteMap /> should render correctly with ssrBlogs 1`] = `
         </div>
         <div>
           <a
-            class="sc-iBkjds kXOvCG"
+            class="sc-jqUVSM ehmyNV"
             href="/articles/net-neutrality"
           >
             /articles/net-neutrality ⇒ /blog/net-neutrality
@@ -3493,7 +3493,7 @@ exports[`<SiteMap /> should render correctly with ssrBlogs 1`] = `
         </div>
         <div>
           <a
-            class="sc-iBkjds kXOvCG"
+            class="sc-jqUVSM ehmyNV"
             href="/articles/vim"
           >
             /articles/vim ⇒ /blog/vim
@@ -3502,7 +3502,7 @@ exports[`<SiteMap /> should render correctly with ssrBlogs 1`] = `
         </div>
         <div>
           <a
-            class="sc-iBkjds kXOvCG"
+            class="sc-jqUVSM ehmyNV"
             href="/articles/list"
           >
             /articles/list ⇒ /blog
@@ -3511,7 +3511,7 @@ exports[`<SiteMap /> should render correctly with ssrBlogs 1`] = `
         </div>
         <div>
           <a
-            class="sc-iBkjds kXOvCG"
+            class="sc-jqUVSM ehmyNV"
             href="/articles"
           >
             /articles ⇒ /blog
@@ -3520,7 +3520,7 @@ exports[`<SiteMap /> should render correctly with ssrBlogs 1`] = `
         </div>
         <div>
           <a
-            class="sc-iBkjds kXOvCG"
+            class="sc-jqUVSM ehmyNV"
             href="/net-neutrality"
           >
             /net-neutrality ⇒ /blog/net-neutrality
@@ -3529,7 +3529,7 @@ exports[`<SiteMap /> should render correctly with ssrBlogs 1`] = `
         </div>
         <div>
           <a
-            class="sc-iBkjds kXOvCG"
+            class="sc-jqUVSM ehmyNV"
             href="/work/side-projects"
           >
             /work/side-projects ⇒ /work
@@ -3538,7 +3538,7 @@ exports[`<SiteMap /> should render correctly with ssrBlogs 1`] = `
         </div>
         <div>
           <a
-            class="sc-iBkjds kXOvCG"
+            class="sc-jqUVSM ehmyNV"
             href="/blog/view"
           >
             /blog/view ⇒ /blog
@@ -3547,7 +3547,7 @@ exports[`<SiteMap /> should render correctly with ssrBlogs 1`] = `
         </div>
         <div>
           <a
-            class="sc-iBkjds kXOvCG"
+            class="sc-jqUVSM ehmyNV"
             href="/travel"
           >
             /travel ⇒ /blog
@@ -3556,7 +3556,7 @@ exports[`<SiteMap /> should render correctly with ssrBlogs 1`] = `
         </div>
         <div>
           <a
-            class="sc-iBkjds kXOvCG"
+            class="sc-jqUVSM ehmyNV"
             href="/travel/list"
           >
             /travel/list ⇒ /blog
@@ -3565,7 +3565,7 @@ exports[`<SiteMap /> should render correctly with ssrBlogs 1`] = `
         </div>
         <div>
           <a
-            class="sc-iBkjds kXOvCG"
+            class="sc-jqUVSM ehmyNV"
             href="/blog/view?id=tg5x7po9"
           >
             /blog/view?id=tg5x7po9 ⇒ /blog/tough-mudder
@@ -3574,7 +3574,7 @@ exports[`<SiteMap /> should render correctly with ssrBlogs 1`] = `
         </div>
         <div>
           <a
-            class="sc-iBkjds kXOvCG"
+            class="sc-jqUVSM ehmyNV"
             href="/blog/view?id=lqngy"
           >
             /blog/view?id=lqngy ⇒ /blog/lightroom-workflow
@@ -3583,7 +3583,7 @@ exports[`<SiteMap /> should render correctly with ssrBlogs 1`] = `
         </div>
         <div>
           <a
-            class="sc-iBkjds kXOvCG"
+            class="sc-jqUVSM ehmyNV"
             href="/blog/view?id=w85aht"
           >
             /blog/view?id=w85aht ⇒ /blog/net-neutrality
@@ -3592,7 +3592,7 @@ exports[`<SiteMap /> should render correctly with ssrBlogs 1`] = `
         </div>
         <div>
           <a
-            class="sc-iBkjds kXOvCG"
+            class="sc-jqUVSM ehmyNV"
             href="/blog/view?id=azcpjh"
           >
             /blog/view?id=azcpjh ⇒ /blog/vim
@@ -3601,7 +3601,7 @@ exports[`<SiteMap /> should render correctly with ssrBlogs 1`] = `
         </div>
         <div>
           <a
-            class="sc-iBkjds kXOvCG"
+            class="sc-jqUVSM ehmyNV"
             href="/blog/view?id=y77dnh"
           >
             /blog/view?id=y77dnh ⇒ /blog/uk-bank-security
@@ -3610,7 +3610,7 @@ exports[`<SiteMap /> should render correctly with ssrBlogs 1`] = `
         </div>
         <div>
           <a
-            class="sc-iBkjds kXOvCG"
+            class="sc-jqUVSM ehmyNV"
             href="/art"
           >
             /art ⇒ /photography
@@ -3619,7 +3619,7 @@ exports[`<SiteMap /> should render correctly with ssrBlogs 1`] = `
         </div>
         <div>
           <a
-            class="sc-iBkjds kXOvCG"
+            class="sc-jqUVSM ehmyNV"
             href="/photoshop"
           >
             /photoshop ⇒ /photography
@@ -3628,7 +3628,7 @@ exports[`<SiteMap /> should render correctly with ssrBlogs 1`] = `
         </div>
         <div>
           <a
-            class="sc-iBkjds kXOvCG"
+            class="sc-jqUVSM ehmyNV"
             href="/phot"
           >
             /phot ⇒ /photography
@@ -3637,7 +3637,7 @@ exports[`<SiteMap /> should render correctly with ssrBlogs 1`] = `
         </div>
         <div>
           <a
-            class="sc-iBkjds kXOvCG"
+            class="sc-jqUVSM ehmyNV"
             href="/photo"
           >
             /photo ⇒ /photography

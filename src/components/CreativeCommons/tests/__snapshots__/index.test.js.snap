@@ -3,13 +3,13 @@
 exports[`<CreativeCommons /> Should render correctly 1`] = `
 <div>
   <div
-    class="creative-commons__wrapper"
+    class="creative-commonssyles__Wrapper-sc-qff226-0 gOCDiS"
   >
     <div
-      class="creative-commons__background"
+      class="creative-commonssyles__Background-sc-qff226-1 ddrRBh"
     />
     <div
-      class="sc-kDDrLX iNAFzC creative-commons__inner"
+      class="sc-kDDrLX iNAFzC creative-commonssyles__Inner-sc-qff226-2 gkGslB"
     >
       <h1
         class="sc-hKMtZM juqKJr sc-evZas goeUxJ"
@@ -65,13 +65,13 @@ exports[`<CreativeCommons /> Should render correctly 1`] = `
 exports[`<CreativeCommons /> Should render correctly with custom className 1`] = `
 <div>
   <div
-    class="creative-commons__wrapper test-custom-className"
+    class="creative-commonssyles__Wrapper-sc-qff226-0 gOCDiS test-custom-className"
   >
     <div
-      class="creative-commons__background"
+      class="creative-commonssyles__Background-sc-qff226-1 ddrRBh"
     />
     <div
-      class="sc-kDDrLX iNAFzC creative-commons__inner"
+      class="sc-kDDrLX iNAFzC creative-commonssyles__Inner-sc-qff226-2 gkGslB"
     >
       <h1
         class="sc-hKMtZM juqKJr sc-evZas goeUxJ"

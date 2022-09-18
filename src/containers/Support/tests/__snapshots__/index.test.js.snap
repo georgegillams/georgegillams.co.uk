@@ -12,15 +12,15 @@ exports[`<Support /> should render correctly - index 1`] = `
       Support
     </h1>
     <div
-      class="support__controls"
+      class="supportstyles__Controls-sc-yym0gw-0 jknFIr"
     >
       <button
-        class="sc-idiyUo fWHeaH outer"
+        class="sc-bjUoiL kQkTFv outer"
         disabled=""
         type="button"
       >
         <span
-          class="sc-hHLeRK eOuDcm"
+          class="sc-dIouRR ixIogl"
         >
           Reload
         </span>
@@ -50,15 +50,15 @@ exports[`<Support /> should render correctly when loading 1`] = `
       Support
     </h1>
     <div
-      class="support__controls"
+      class="supportstyles__Controls-sc-yym0gw-0 jknFIr"
     >
       <button
-        class="sc-idiyUo fWHeaH outer"
+        class="sc-bjUoiL kQkTFv outer"
         disabled=""
         type="button"
       >
         <span
-          class="sc-hHLeRK eOuDcm"
+          class="sc-dIouRR ixIogl"
         >
           Reload
         </span>
@@ -88,14 +88,14 @@ exports[`<Support /> should render correctly with admin 1`] = `
       Support
     </h1>
     <div
-      class="support__controls"
+      class="supportstyles__Controls-sc-yym0gw-0 jknFIr"
     >
       <button
-        class="sc-idiyUo sooGH outer"
+        class="sc-bjUoiL hCXTDD outer"
         type="button"
       >
         <span
-          class="sc-hHLeRK eOuDcm"
+          class="sc-dIouRR ixIogl"
         >
           Reload
         </span>
@@ -138,14 +138,14 @@ exports[`<Support /> should render correctly with admin and createLinkError 1`] 
       Support
     </h1>
     <div
-      class="support__controls"
+      class="supportstyles__Controls-sc-yym0gw-0 jknFIr"
     >
       <button
-        class="sc-idiyUo sooGH outer"
+        class="sc-bjUoiL hCXTDD outer"
         type="button"
       >
         <span
-          class="sc-hHLeRK eOuDcm"
+          class="sc-dIouRR ixIogl"
         >
           Reload
         </span>
@@ -169,7 +169,7 @@ exports[`<Support /> should render correctly with admin and createLinkError 1`] 
         ADD LINK
       </h1>
       <span
-        class="sc-fnykZs kIjAem"
+        class="sc-dmRaPn bsyMtp"
       >
         <span
           class="sc-kgflAQ daSGn"
@@ -199,14 +199,14 @@ exports[`<Support /> should render correctly with admin and deleteLinkError 1`] 
       Support
     </h1>
     <div
-      class="support__controls"
+      class="supportstyles__Controls-sc-yym0gw-0 jknFIr"
     >
       <button
-        class="sc-idiyUo sooGH outer"
+        class="sc-bjUoiL hCXTDD outer"
         type="button"
       >
         <span
-          class="sc-hHLeRK eOuDcm"
+          class="sc-dIouRR ixIogl"
         >
           Reload
         </span>
@@ -230,7 +230,7 @@ exports[`<Support /> should render correctly with admin and deleteLinkError 1`] 
         ADD LINK
       </h1>
       <span
-        class="sc-fnykZs kIjAem"
+        class="sc-dmRaPn bsyMtp"
       >
         <span
           class="sc-kgflAQ daSGn"
@@ -260,14 +260,14 @@ exports[`<Support /> should render correctly with initial state 1`] = `
       Support
     </h1>
     <div
-      class="support__controls"
+      class="supportstyles__Controls-sc-yym0gw-0 jknFIr"
     >
       <button
-        class="sc-idiyUo sooGH outer"
+        class="sc-bjUoiL hCXTDD outer"
         type="button"
       >
         <span
-          class="sc-hHLeRK eOuDcm"
+          class="sc-dIouRR ixIogl"
         >
           Reload
         </span>
@@ -297,14 +297,14 @@ exports[`<Support /> should render correctly with links 1`] = `
       Support
     </h1>
     <div
-      class="support__controls"
+      class="supportstyles__Controls-sc-yym0gw-0 jknFIr"
     >
       <button
-        class="sc-idiyUo sooGH outer"
+        class="sc-bjUoiL hCXTDD outer"
         type="button"
       >
         <span
-          class="sc-hHLeRK eOuDcm"
+          class="sc-dIouRR ixIogl"
         >
           Reload
         </span>
@@ -320,7 +320,7 @@ exports[`<Support /> should render correctly with links 1`] = `
         name 1
       </h1>
       <span
-        class="sc-fnykZs kIjAem support-link__link"
+        class="sc-dmRaPn bsyMtp support-linkstyles__StyledParagraph-sc-1088mlq-0 huyeQP"
       >
         <a
           aria-label="URL_1 (opens in a new tab)"
@@ -360,7 +360,7 @@ exports[`<Support /> should render correctly with links 1`] = `
         name 2
       </h1>
       <span
-        class="sc-fnykZs kIjAem support-link__link"
+        class="sc-dmRaPn bsyMtp support-linkstyles__StyledParagraph-sc-1088mlq-0 huyeQP"
       >
         <a
           aria-label="URL_2 (opens in a new tab)"
@@ -406,21 +406,21 @@ exports[`<Support /> should render correctly with loadError 1`] = `
       Support
     </h1>
     <div
-      class="support__controls"
+      class="supportstyles__Controls-sc-yym0gw-0 jknFIr"
     >
       <button
-        class="sc-idiyUo sooGH outer"
+        class="sc-bjUoiL hCXTDD outer"
         type="button"
       >
         <span
-          class="sc-hHLeRK eOuDcm"
+          class="sc-dIouRR ixIogl"
         >
           Reload
         </span>
       </button>
     </div>
     <span
-      class="sc-fnykZs kIjAem"
+      class="sc-dmRaPn bsyMtp"
     >
       <span
         class="sc-kgflAQ daSGn"

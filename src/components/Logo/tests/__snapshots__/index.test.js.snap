@@ -3,19 +3,18 @@
 exports[`<Logo /> Should render correctly 1`] = `
 <div>
   <div
-    class="logo__container"
+    class="logostyles__OuterContainer-sc-1fentac-0 fBmToK"
   >
     <a
-      class="logo__a"
+      class="logostyles__StyledLink-sc-1fentac-1 hziiVO"
       href="/"
     >
-      <h1
+      <span
         aria-label="Home page"
-        class="logo__heading"
-        role="button"
+        class="logostyles__LargeText-sc-1fentac-2 jmxYGd"
       >
         G
-      </h1>
+      </span>
     </a>
   </div>
 </div>
@@ -24,19 +23,18 @@ exports[`<Logo /> Should render correctly 1`] = `
 exports[`<Logo /> Should render correctly animated 1`] = `
 <div>
   <div
-    class="logo__container"
+    class="logostyles__OuterContainer-sc-1fentac-0 fBmToK"
   >
     <a
-      class="logo__a"
+      class="logostyles__StyledLink-sc-1fentac-1 hziiVO"
       href="/"
     >
-      <h1
+      <span
         aria-label="Home page"
-        class="logo__heading logo__subheading--animated"
-        role="button"
+        class="logostyles__LargeText-sc-1fentac-2 jmxYGd"
       >
         G
-      </h1>
+      </span>
     </a>
   </div>
 </div>
@@ -45,19 +43,18 @@ exports[`<Logo /> Should render correctly animated 1`] = `
 exports[`<Logo /> Should render correctly pride 1`] = `
 <div>
   <div
-    class="logo__container"
+    class="logostyles__OuterContainer-sc-1fentac-0 fBmToK"
   >
     <a
-      class="logo__a"
+      class="logostyles__StyledLink-sc-1fentac-1 hziiVO"
       href="/"
     >
-      <h1
+      <span
         aria-label="Home page"
-        class="logo__heading logo__heading--pride"
-        role="button"
+        class="logostyles__LargeText-sc-1fentac-2 fAwzxY"
       >
         G
-      </h1>
+      </span>
     </a>
   </div>
 </div>
@@ -66,19 +63,18 @@ exports[`<Logo /> Should render correctly pride 1`] = `
 exports[`<Logo /> Should render correctly with custom className 1`] = `
 <div>
   <div
-    class="logo__container test-custom-classname"
+    class="logostyles__OuterContainer-sc-1fentac-0 fBmToK test-custom-classname"
   >
     <a
-      class="logo__a"
+      class="logostyles__StyledLink-sc-1fentac-1 hziiVO"
       href="/"
     >
-      <h1
+      <span
         aria-label="Home page"
-        class="logo__heading"
-        role="button"
+        class="logostyles__LargeText-sc-1fentac-2 jmxYGd"
       >
         G
-      </h1>
+      </span>
     </a>
   </div>
 </div>

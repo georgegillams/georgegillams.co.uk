@@ -12,7 +12,7 @@ import brandDark from './images/brandDark.png';
 import PageContainer, { WIDTHS } from 'components/common/PageContainer';
 
 const WorkBackpack = () => (
-  <PageContainer width={WIDTHS.prose}>
+  <PageContainer width={WIDTHS.prose} bottomPadding>
     <PageTitle link={{ to: '/work', text: 'Work' }} name="Backpack">
       <Paragraph>
         <TextLink hrefExternal href="https://backpack.github.io/">
