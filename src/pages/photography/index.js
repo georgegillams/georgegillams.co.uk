@@ -8,7 +8,6 @@ import apiStructure from 'helpers/common/apiStructure';
 const Page = props => {
   return (
     <CommonLayout>
-      <CSSHack pageName="photography" />
       <Photography {...props} />
     </CommonLayout>
   );

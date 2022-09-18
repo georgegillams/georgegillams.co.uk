@@ -8,7 +8,6 @@ import apiStructure from 'helpers/common/apiStructure';
 const Page = props => {
   return (
     <CommonLayout>
-      <CSSHack pageName="blog" />
       <BlogList linkPrefix={'/blog'} filter={x => x.showInBlogsList} {...props} />
     </CommonLayout>
   );

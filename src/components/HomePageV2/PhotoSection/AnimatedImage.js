@@ -2,11 +2,10 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 import Image from '@george-gillams/components/image';
-import STYLES from './animated-image.scss';
-import { cssModules } from '@george-gillams/components/helpers/cssModules';
+
 import { useEntryAnimationClientOnly } from '@george-gillams/components/server-side-rendering';
 
-const getClassName = cssModules(STYLES);
+const getClassName = c => c;
 
 const AnimatedImage = props => {
   const { show, className, ...rest } = props;

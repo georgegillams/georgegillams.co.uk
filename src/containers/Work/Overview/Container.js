@@ -1,12 +1,14 @@
 import React from 'react';
 
+import Button from 'components/common/Button';
 import Paragraph from '@george-gillams/components/paragraph';
 import Subsection from '@george-gillams/components/subsection';
 import TextLink from 'components/common/TextLink';
 import PageTitle from 'components/common/PageTitle';
 
 import PageContainer, { WIDTHS } from 'components/common/PageContainer';
-import { StyledButton } from './work-overview.styles';
+
+const getClassName = c => c;
 
 const Work = () => (
   <PageContainer width={WIDTHS.prose} bottomPadding>
@@ -21,13 +23,17 @@ const Work = () => (
           enables fast development and reduce effort duplication.
         </Paragraph>
         <br />
-        <StyledButton href="/work/backpack">My work in Backpack →</StyledButton>
+        <Button className={getClassName('work-overview__component')} href="/work/backpack">
+          My work in Backpack →
+        </Button>
       </Subsection>
 
       <Subsection name="Software Engineering Masters">
         <Paragraph>I have a 1st class Masters in Software Engineering from the University of Southampton.</Paragraph>
         <br />
-        <StyledButton href="/work/degree">My degree →</StyledButton>
+        <Button className={getClassName('work-overview__component')} href="/work/degree">
+          My degree →
+        </Button>
       </Subsection>
 
       <Subsection name="EPICC Conference">
@@ -36,7 +42,9 @@ const Work = () => (
           tickets.
         </Paragraph>
         <br />
-        <StyledButton href="/work/epicc">Selling EPICC tickets →</StyledButton>
+        <Button className={getClassName('work-overview__component')} href="/work/epicc">
+          Selling EPICC tickets →
+        </Button>
       </Subsection>
 
       <Subsection name="Leonardo Company">

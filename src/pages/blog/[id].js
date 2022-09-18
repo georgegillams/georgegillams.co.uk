@@ -16,7 +16,6 @@ const Page = props => {
 
   return (
     <CommonLayout bottomPadding={false}>
-      <CSSHack pageName="blog/[id]" />
       <BlogRenderer blogSubcategory="Blog" linkPrefix={'/blog'} {...rest} />
     </CommonLayout>
   );

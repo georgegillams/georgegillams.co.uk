@@ -1,6 +1,7 @@
 import React from 'react';
 
-import { INFO_CELL_STYLES } from '@george-gillams/components/info-cell';
+import InfoCell, { INFO_CELL_STYLES } from '@george-gillams/components/info-cell';
+import withScroll from '@george-gillams/components/scroll-container';
 import TextLink from 'components/common/TextLink';
 import PageTitle from 'components/common/PageTitle';
 
@@ -12,13 +13,17 @@ import githubLogo from './github.svg';
 import emailLogo from './email.svg';
 import unsplashLogo from './unsplash.svg';
 import PageContainer, { WIDTHS } from 'components/common/PageContainer';
-import { IconImage, ImageIconContainer, StyledInfoCellWithScroll } from './contact.styles';
+
+const InfoCellWithScroll = withScroll(InfoCell);
+
+const getClassName = c => c;
 
 const Contact = () => {
   return (
     <PageContainer width={WIDTHS.fullWidth} centred>
       <PageTitle name="Get in touch">
-        <StyledInfoCellWithScroll
+        <InfoCellWithScroll
+          className={getClassName('contact__info-cell')}
           title="Twitter"
           content={
             <TextLink href="https://twitter.com/georgegillams" hrefExternal>
@@ -26,12 +31,13 @@ const Contact = () => {
             </TextLink>
           }
           aux={
-            <ImageIconContainer>
-              <IconImage src={twitterLogo} />
-            </ImageIconContainer>
+            <div className={getClassName('contact__icon-image-container')}>
+              <img className={getClassName('contact__icon-image')} src={twitterLogo} />
+            </div>
           }
         />
-        <StyledInfoCellWithScroll
+        <InfoCellWithScroll
+          className={getClassName('contact__info-cell')}
           cellStyle={INFO_CELL_STYLES.dark}
           title="Linkedin"
           content={
@@ -40,12 +46,13 @@ const Contact = () => {
             </TextLink>
           }
           aux={
-            <ImageIconContainer>
-              <IconImage src={linkedInLogo} />
-            </ImageIconContainer>
+            <div className={getClassName('contact__icon-image-container')}>
+              <img className={getClassName('contact__icon-image')} src={linkedInLogo} />
+            </div>
           }
         />
-        <StyledInfoCellWithScroll
+        <InfoCellWithScroll
+          className={getClassName('contact__info-cell')}
           title="GitHub"
           content={
             <TextLink href="https://github.com/georgegillams" hrefExternal>
@@ -53,12 +60,16 @@ const Contact = () => {
             </TextLink>
           }
           aux={
-            <ImageIconContainer>
-              <IconImage invertInDarkMode src={githubLogo} />
-            </ImageIconContainer>
+            <div className={getClassName('contact__icon-image-container')}>
+              <img
+                className={getClassName('contact__icon-image', 'contact__icon-image--dark-invert')}
+                src={githubLogo}
+              />
+            </div>
           }
         />
-        <StyledInfoCellWithScroll
+        <InfoCellWithScroll
+          className={getClassName('contact__info-cell')}
           cellStyle={INFO_CELL_STYLES.dark}
           title="Email"
           content={
@@ -67,12 +78,13 @@ const Contact = () => {
             </TextLink>
           }
           aux={
-            <ImageIconContainer>
-              <IconImage src={emailLogo} />
-            </ImageIconContainer>
+            <div className={getClassName('contact__icon-image-container')}>
+              <img className={getClassName('contact__icon-image')} src={emailLogo} />
+            </div>
           }
         />
-        <StyledInfoCellWithScroll
+        <InfoCellWithScroll
+          className={getClassName('contact__info-cell')}
           title="Flickr"
           content={
             <TextLink href="https://www.flickr.com/people/georgegillams" hrefExternal>
@@ -80,12 +92,13 @@ const Contact = () => {
             </TextLink>
           }
           aux={
-            <ImageIconContainer>
-              <IconImage src={flickrLogo} />
-            </ImageIconContainer>
+            <div className={getClassName('contact__icon-image-container')}>
+              <img className={getClassName('contact__icon-image')} src={flickrLogo} />
+            </div>
           }
         />
-        <StyledInfoCellWithScroll
+        <InfoCellWithScroll
+          className={getClassName('contact__info-cell')}
           cellStyle={INFO_CELL_STYLES.dark}
           title="Gurushots"
           content={
@@ -94,12 +107,16 @@ const Contact = () => {
             </TextLink>
           }
           aux={
-            <ImageIconContainer>
-              <IconImage invertInDarkMode src={gurushotsLogo} />
-            </ImageIconContainer>
+            <div className={getClassName('contact__icon-image-container')}>
+              <img
+                className={getClassName('contact__icon-image', 'contact__icon-image--dark-invert')}
+                src={gurushotsLogo}
+              />
+            </div>
           }
         />
-        <StyledInfoCellWithScroll
+        <InfoCellWithScroll
+          className={getClassName('contact__info-cell')}
           title="Unsplash"
           content={
             <TextLink href="https://unsplash.com/@georgegillams/" hrefExternal>
@@ -107,9 +124,12 @@ const Contact = () => {
             </TextLink>
           }
           aux={
-            <ImageIconContainer>
-              <IconImage invertInDarkMode src={unsplashLogo} />
-            </ImageIconContainer>
+            <div className={getClassName('contact__icon-image-container')}>
+              <img
+                className={getClassName('contact__icon-image', 'contact__icon-image--dark-invert')}
+                src={unsplashLogo}
+              />
+            </div>
           }
         />
       </PageTitle>

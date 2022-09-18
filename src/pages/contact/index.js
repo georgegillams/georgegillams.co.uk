@@ -7,7 +7,6 @@ import CommonLayout from 'components/common/CommonLayout';
 const Page = props => {
   return (
     <CommonLayout>
-      <CSSHack pageName="contact" />
       <Contact {...props} />
     </CommonLayout>
   );

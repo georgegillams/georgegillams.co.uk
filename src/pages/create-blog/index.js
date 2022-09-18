@@ -2,14 +2,13 @@ import React from 'react';
 
 import CSSHack from 'components/common/CSSHack';
 import BlogCreate from 'containers/BlogCreate';
-import LegacyCommonLayout from 'components/common/LegacyCommonLayout';
+import CommonLayout from 'components/common/CommonLayout';
 
 const Page = props => {
   return (
-    <LegacyCommonLayout>
-      <CSSHack pageName="create-blog" />
+    <CommonLayout>
       <BlogCreate linkPrefix={'/blog'} {...props} />
-    </LegacyCommonLayout>
+    </CommonLayout>
   );
 };
 

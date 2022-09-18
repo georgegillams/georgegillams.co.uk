@@ -1,27 +1,47 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import Link from 'next/link';
-import { LargeText, OuterContainer, StyledLink } from './logo.styles';
-import withStyledTheme from '@george-gillams/components/styled-theming/with-styled-theme';
+
+const getClassName = c => c; // REGEX_REPLACED
 
 const Logo = props => {
-  const { padding, animated, alwaysCentred, pride, theme, ...rest } = props;
+  const { padding, animated, className, alwaysCentred, pride, ...rest } = props;
+  const classNameFinal = [getClassName('logo__container')];
+  if (className) {
+    classNameFinal.push(className);
+  }
+  if (alwaysCentred) {
+    classNameFinal.push(getClassName('logo__container--centred'));
+  }
+
+  const largeTextClassNameFinal = [getClassName('logo__heading')];
+  if (animated) {
+    largeTextClassNameFinal.push(getClassName('logo__subheading--animated'));
+  }
+  if (pride) {
+    largeTextClassNameFinal.push(getClassName('logo__heading--pride'));
+  }
+
+  if (!padding) {
+    classNameFinal.push(getClassName('logo__container--no-padding'));
+    largeTextClassNameFinal.push(getClassName('logo__heading--no-padding'));
+  }
 
   return (
-    <OuterContainer alwaysCentred={alwaysCentred} padding={padding} {...rest}>
+    <div className={classNameFinal.join(' ')} {...rest}>
       <Link href="/">
-        <StyledLink href="/">
-          <LargeText theme={theme} animated={animated} pride={pride} padding={padding} aria-label="Home page">
+        <a href="/" className={getClassName('logo__a')}>
+          <h1 role="button" aria-label="Home page" className={largeTextClassNameFinal.join(' ')}>
             G
-          </LargeText>
-        </StyledLink>
+          </h1>
+        </a>
       </Link>
-    </OuterContainer>
+    </div>
   );
 };
 
 Logo.propTypes = {
-  theme: PropTypes.object,
+  className: PropTypes.string,
   padding: PropTypes.bool,
   animated: PropTypes.bool,
   pride: PropTypes.bool,
@@ -29,11 +49,11 @@ Logo.propTypes = {
 };
 
 Logo.defaultProps = {
-  theme: {},
+  className: null,
   padding: true,
   animated: false,
   pride: false,
   alwaysCentred: false,
 };
 
-export default withStyledTheme(Logo);
+export default Logo;

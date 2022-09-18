@@ -6,13 +6,12 @@ import Image from '@george-gillams/components/image';
 import Paragraph from '@george-gillams/components/paragraph';
 import Section from '@george-gillams/components/section';
 import TextLink from 'components/common/TextLink';
-import STYLES from './life-section.scss';
-import { cssModules } from '@george-gillams/components/helpers/cssModules';
+
 import { useEntryAnimationClientOnly } from '@george-gillams/components/server-side-rendering';
 import travel from './images/travel.jpg';
 import cat from './images/cat.jpg';
 
-const getClassName = cssModules(STYLES);
+const getClassName = c => c;
 
 const LifeSection = props => {
   const { scrollPositionVh, fullyInView, className, ...rest } = props;

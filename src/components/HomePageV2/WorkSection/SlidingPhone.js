@@ -2,11 +2,10 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 import Image from '@george-gillams/components/image';
-import STYLES from './sliding-phone.scss';
-import { cssModules } from '@george-gillams/components/helpers/cssModules';
+
 import { useEntryAnimationClientOnly } from '@george-gillams/components/server-side-rendering';
 
-const getClassName = cssModules(STYLES);
+const getClassName = c => c;
 
 const SlidingPhone = props => {
   const { show, className, lightSrc, darkSrc, imgProps, ...rest } = props;

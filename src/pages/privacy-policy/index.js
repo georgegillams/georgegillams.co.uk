@@ -2,14 +2,13 @@ import React from 'react';
 
 import CSSHack from 'components/common/CSSHack';
 import PrivacyPolicy from 'containers/common/PrivacyPolicy';
-import LegacyCommonLayout from 'components/common/LegacyCommonLayout';
+import CommonLayout from 'components/common/CommonLayout';
 
 const Page = props => {
   return (
-    <LegacyCommonLayout>
-      <CSSHack pageName="privacy-policy" />
+    <CommonLayout>
       <PrivacyPolicy {...props} />
-    </LegacyCommonLayout>
+    </CommonLayout>
   );
 };
 

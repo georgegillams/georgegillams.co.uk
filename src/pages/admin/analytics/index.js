@@ -7,7 +7,6 @@ import FlexLayout from 'components/common/FlexLayout';
 const Page = props => {
   return (
     <FlexLayout>
-      <CSSHack pageName="admin/analytics" />
       <Analytics {...props} />
     </FlexLayout>
   );

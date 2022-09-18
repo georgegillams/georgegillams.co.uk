@@ -6,10 +6,8 @@ import Paragraph from '@george-gillams/components/paragraph';
 import Section from '@george-gillams/components/section';
 import TextLink from 'components/common/TextLink';
 import Phones from './Phones';
-import STYLES from './work-section.scss';
-import { cssModules } from '@george-gillams/components/helpers/cssModules';
 
-const getClassName = cssModules(STYLES);
+const getClassName = c => c;
 
 const WorkSection = props => {
   const { hasBeenMostlyInView, hasBeenFullyInView, className, ...rest } = props;

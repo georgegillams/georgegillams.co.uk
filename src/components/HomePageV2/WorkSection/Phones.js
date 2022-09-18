@@ -2,8 +2,6 @@ import React, { useEffect, useState } from 'react';
 import PropTypes from 'prop-types';
 
 import SlidingPhone from './SlidingPhone';
-import STYLES from './phones.scss';
-import { cssModules } from '@george-gillams/components/helpers/cssModules';
 
 import light0 from './images/light0.png';
 import light1 from './images/light1.png';
@@ -12,7 +10,7 @@ import dark0 from './images/dark0.png';
 import dark1 from './images/dark1.png';
 import dark2 from './images/dark2.png';
 
-const getClassName = cssModules(STYLES);
+const getClassName = c => c;
 
 const Phones = props => {
   const { hasBeenMostlyInView, className, ...rest } = props;

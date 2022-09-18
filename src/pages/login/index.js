@@ -2,14 +2,13 @@ import React from 'react';
 
 import CSSHack from 'components/common/CSSHack';
 import Login from 'containers/common/Login';
-import LegacyCommonLayout from 'components/common/LegacyCommonLayout';
+import CommonLayout from 'components/common/CommonLayout';
 
 const Page = props => {
   return (
-    <LegacyCommonLayout>
-      <CSSHack pageName="login" />
+    <CommonLayout>
       <Login {...props} />
-    </LegacyCommonLayout>
+    </CommonLayout>
   );
 };
 

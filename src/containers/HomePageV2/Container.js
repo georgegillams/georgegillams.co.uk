@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { cssModules } from '@george-gillams/components/helpers/cssModules';
+
 import PageContainer from 'components/common/PageContainer';
 import PageTitle from 'components/common/PageTitle';
 import WorkSection from 'components/HomePageV2/WorkSection';
@@ -8,9 +8,7 @@ import LifeSection from 'components/HomePageV2/LifeSection';
 import PhotoSection from 'components/HomePageV2/PhotoSection';
 import AboutSection from 'components/HomePageV2/AboutSection';
 
-import STYLES from './home.scss';
-
-const getClassName = cssModules(STYLES);
+const getClassName = c => c;
 
 const HomePage = props => {
   const { ...rest } = props;
