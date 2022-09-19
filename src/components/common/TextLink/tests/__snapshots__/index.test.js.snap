@@ -3,7 +3,7 @@
 exports[`<TextLink /> Should render correctly 1`] = `
 <div>
   <a
-    class="sc-iBkjds kXOvCG"
+    class="sc-iBkjds JLudk"
     href="/test"
   >
     some text
@@ -14,7 +14,7 @@ exports[`<TextLink /> Should render correctly 1`] = `
 exports[`<TextLink /> Should render correctly with custom className 1`] = `
 <div>
   <a
-    class="sc-iBkjds kXOvCG test-custom-classname"
+    class="sc-iBkjds JLudk test-custom-classname"
     href="/test"
   >
     some text
@@ -25,7 +25,7 @@ exports[`<TextLink /> Should render correctly with custom className 1`] = `
 exports[`<TextLink /> Should render with nextified href 1`] = `
 <div>
   <a
-    class="sc-iBkjds kXOvCG"
+    class="sc-iBkjds JLudk"
     href="/blog/test"
   >
     some text

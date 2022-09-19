@@ -1,17 +1,15 @@
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 
-import TextLink from 'components/common/TextLink';
+import { Cloud, Content, StyledTextLink, Wrapper } from './contact-link.styles';
+import { NO_JS_CLASSNAME } from '@george-gillams/components/js-feature-detector';
 
-import { useEntryAnimationClientOnly } from '@george-gillams/components/server-side-rendering';
-
-const getClassName = c => c;
+const HIDDEN_CLASSNAME = 'home__contact--hide';
 
 const ContactLink = props => {
-  const { scrollPosition, className, ...rest } = props;
-  const [isFirstRender] = useEntryAnimationClientOnly();
+  const { scrollPosition, ...rest } = props;
   const [hovering, setHovering] = useState(false);
-  const hide = isFirstRender || hovering;
+  const hide = hovering;
 
   // We want to adjust the value to be always between 14 and 300
   const normalisedUpper = 300;
@@ -20,24 +18,24 @@ const ContactLink = props => {
   const scrollPositionNormalised = normalisedLower + ((normalisedUpper - normalisedLower) * scrollPositionFactor) / 100;
 
   return (
-    <div className={getClassName('contact-link__outer', className)} {...rest}>
-      <div
-        className={getClassName('contact-link__content', className)}
+    <Wrapper {...rest}>
+      <style>
+        {`
+        .${NO_JS_CLASSNAME} .${HIDDEN_CLASSNAME} {
+        display: none;
+        }`}
+      </style>
+      <Content
         onMouseEnter={() => {
           setHovering(true);
         }}
         onMouseLeave={() => {
           setHovering(false);
         }}>
-        <TextLink className={getClassName('contact-link__link')} href="/contact">
-          Get in touch
-        </TextLink>
-        <div
-          style={hide ? {} : { left: `${scrollPositionNormalised}%` }}
-          className={getClassName('contact-link__cloud', hide && 'contact-link__cloud--hide')}
-        />
-      </div>
-    </div>
+        <StyledTextLink href="/contact">Get in touch</StyledTextLink>
+        <Cloud className={HIDDEN_CLASSNAME} style={{ left: hide ? '120%' : `${scrollPositionNormalised}%` }} />
+      </Content>
+    </Wrapper>
   );
 };
 

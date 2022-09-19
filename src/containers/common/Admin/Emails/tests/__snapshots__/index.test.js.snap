@@ -62,7 +62,7 @@ exports[`<AdminEmails /> should render correctly with admin user 1`] = `
       class="sc-kDDrLX emakin"
     >
       <a
-        class="sc-iBkjds kXOvCG"
+        class="sc-iBkjds JLudk"
         href="/admin"
       >
         ⇠ Admin
@@ -107,7 +107,7 @@ exports[`<AdminEmails /> should render correctly with emails 1`] = `
       class="sc-kDDrLX emakin"
     >
       <a
-        class="sc-iBkjds kXOvCG"
+        class="sc-iBkjds JLudk"
         href="/admin"
       >
         ⇠ Admin
@@ -331,7 +331,7 @@ exports[`<AdminEmails /> should render correctly with loadError 1`] = `
       class="sc-kDDrLX emakin"
     >
       <a
-        class="sc-iBkjds kXOvCG"
+        class="sc-iBkjds JLudk"
         href="/admin"
       >
         ⇠ Admin
@@ -387,7 +387,7 @@ exports[`<AdminEmails /> should render correctly with loading=true 1`] = `
       class="sc-kDDrLX emakin"
     >
       <a
-        class="sc-iBkjds kXOvCG"
+        class="sc-iBkjds JLudk"
         href="/admin"
       >
         ⇠ Admin
@@ -466,7 +466,7 @@ exports[`<AdminEmails /> should render correctly with resendError 1`] = `
       class="sc-kDDrLX emakin"
     >
       <a
-        class="sc-iBkjds kXOvCG"
+        class="sc-iBkjds JLudk"
         href="/admin"
       >
         ⇠ Admin
@@ -511,7 +511,7 @@ exports[`<AdminEmails /> should render correctly with resending=true 1`] = `
       class="sc-kDDrLX emakin"
     >
       <a
-        class="sc-iBkjds kXOvCG"
+        class="sc-iBkjds JLudk"
         href="/admin"
       >
         ⇠ Admin
@@ -566,7 +566,7 @@ exports[`<AdminEmails /> should render correctly with user 1`] = `
       You need to be logged in with an admin account to view this content.
       <br />
       <a
-        class="sc-iBkjds kXOvCG"
+        class="sc-iBkjds JLudk"
         href="/login"
       >
         Got a different admin account? Log in here.

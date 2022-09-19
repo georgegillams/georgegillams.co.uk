@@ -12,31 +12,31 @@ exports[`<Home /> should render correctly 1`] = `
       Hey! I'm George.
     </h1>
     <div
-      class="home__work-section"
+      class="homestyles__StyledWorkSection-sc-d0smz9-0 jrSJcZ"
     >
       <div
-        class="work-section__outer"
+        class="work-sectionstyles__Wrapper-sc-1t4zqac-0 cYTwZx"
       >
         <div
-          class="work-section__content"
+          class="work-sectionstyles__Content-sc-1t4zqac-1 jDtMJd"
         >
           <div
-            class="sc-evZas fjRNQE"
+            class="sc-crXcEl hTWOhI"
           >
             <h1
-              class="sc-dkzDqf iBtyHU sc-hAZoDl VIrFO"
+              class="sc-dkzDqf iBtyHU sc-ksZaOG dCXhIJ"
               id="work"
             >
               Work
             </h1>
             <span
-              class="sc-crXcEl hyjoRq work-section__paragraph"
+              class="sc-hAZoDl LEXuB work-sectionstyles__StyledParagraph-sc-1t4zqac-3 dAHWkA"
             >
               I'm a web developer at
                
               <a
                 aria-label="Typeform (opens in a new tab)"
-                class="sc-ftvSup bvTsjB"
+                class="sc-ftvSup cMmkUr"
                 href="https://typeform.com/"
                 rel="noopener noreferrer"
                 target="_blank"
@@ -64,7 +64,7 @@ exports[`<Home /> should render correctly 1`] = `
               I’m also an accessibility champion and design system enthusiast.
               <br />
               <a
-                class="sc-ftvSup bvTsjB"
+                class="sc-ftvSup cMmkUr"
                 href="/work"
               >
                 Learn more about my work
@@ -73,16 +73,23 @@ exports[`<Home /> should render correctly 1`] = `
           </div>
         </div>
         <div
-          class="phones__outer work-section__graphic"
+          class="phonesstyles__Wrapper-sc-qc041h-0 jABYOt work-sectionstyles__Graphic-sc-1t4zqac-2 fPqDqJ"
         >
           <div
-            class="sliding-phone__outer phones__phone"
+            class="sliding-phonestyles__Wrapper-sc-1ngyhd8-0 eVwAsN phonesstyles__StyledSlidingPhone-sc-qc041h-1 dFrbPC"
           >
+            <style>
+              .js .home__sliding-phone--hidden {
+        top: 6rem;
+        opacity: 0;
+      }
+            </style>
             <div
-              class="sc-bjUoiL limWoi sliding-phone__image sliding-phone__image--hide"
+              class="sc-bjUoiL limWoi sliding-phonestyles__StyledImage-sc-1ngyhd8-1 bhVyjo home__sliding-phone--hidden"
             >
               <style>
-                .js .gg-image__img--hide {opacity: 0;}
+                .js .gg-image__img--hide-js {display: none;}
+                .no-js .gg-image__img--hide-no-js {display: none;}
               </style>
               <div
                 class="sc-idiyUo flPZkA"
@@ -100,27 +107,52 @@ exports[`<Home /> should render correctly 1`] = `
                     />
                   </div>
                 </div>
-                <img
-                  alt="A screenshot of our Backpack design principles"
-                  class="sc-dmRaPn fGUcdG  gg-image__img--hide"
-                  src="IMAGE_MOCK"
-                />
-                <img
-                  alt="A screenshot of our Backpack design principles"
-                  class="sc-kgflAQ kSJlNq  gg-image__img--hide"
-                  src="IMAGE_MOCK"
-                />
+                <div
+                  class="gg-image__img--hide-no-js"
+                >
+                  <img
+                    alt="A screenshot of our Backpack design principles"
+                    class="sc-dmRaPn gBWRow"
+                    src="IMAGE_MOCK"
+                  />
+                  <img
+                    alt="A screenshot of our Backpack design principles"
+                    class="sc-kgflAQ iUjZeU"
+                    src="IMAGE_MOCK"
+                  />
+                </div>
+                <div
+                  class="gg-image__img--hide-js"
+                >
+                  <img
+                    alt="A screenshot of our Backpack design principles"
+                    class="sc-dmRaPn jDIOwE"
+                    src="IMAGE_MOCK"
+                  />
+                  <img
+                    alt="A screenshot of our Backpack design principles"
+                    class="sc-kgflAQ cCECw"
+                    src="IMAGE_MOCK"
+                  />
+                </div>
               </div>
             </div>
           </div>
           <div
-            class="sliding-phone__outer phones__phone"
+            class="sliding-phonestyles__Wrapper-sc-1ngyhd8-0 eVwAsN phonesstyles__StyledSlidingPhone-sc-qc041h-1 dFrbPC"
           >
+            <style>
+              .js .home__sliding-phone--hidden {
+        top: 6rem;
+        opacity: 0;
+      }
+            </style>
             <div
-              class="sc-bjUoiL limWoi sliding-phone__image sliding-phone__image--hide"
+              class="sc-bjUoiL limWoi sliding-phonestyles__StyledImage-sc-1ngyhd8-1 bhVyjo home__sliding-phone--hidden"
             >
               <style>
-                .js .gg-image__img--hide {opacity: 0;}
+                .js .gg-image__img--hide-js {display: none;}
+                .no-js .gg-image__img--hide-no-js {display: none;}
               </style>
               <div
                 class="sc-idiyUo flPZkA"
@@ -138,27 +170,52 @@ exports[`<Home /> should render correctly 1`] = `
                     />
                   </div>
                 </div>
-                <img
-                  alt="A screenshot of our bar chart component on iOS"
-                  class="sc-dmRaPn fGUcdG  gg-image__img--hide"
-                  src="IMAGE_MOCK"
-                />
-                <img
-                  alt="A screenshot of our bar chart component on iOS"
-                  class="sc-kgflAQ kSJlNq  gg-image__img--hide"
-                  src="IMAGE_MOCK"
-                />
+                <div
+                  class="gg-image__img--hide-no-js"
+                >
+                  <img
+                    alt="A screenshot of our bar chart component on iOS"
+                    class="sc-dmRaPn gBWRow"
+                    src="IMAGE_MOCK"
+                  />
+                  <img
+                    alt="A screenshot of our bar chart component on iOS"
+                    class="sc-kgflAQ iUjZeU"
+                    src="IMAGE_MOCK"
+                  />
+                </div>
+                <div
+                  class="gg-image__img--hide-js"
+                >
+                  <img
+                    alt="A screenshot of our bar chart component on iOS"
+                    class="sc-dmRaPn jDIOwE"
+                    src="IMAGE_MOCK"
+                  />
+                  <img
+                    alt="A screenshot of our bar chart component on iOS"
+                    class="sc-kgflAQ cCECw"
+                    src="IMAGE_MOCK"
+                  />
+                </div>
               </div>
             </div>
           </div>
           <div
-            class="sliding-phone__outer phones__phone"
+            class="sliding-phonestyles__Wrapper-sc-1ngyhd8-0 eVwAsN phonesstyles__StyledSlidingPhone-sc-qc041h-1 dFrbPC"
           >
+            <style>
+              .js .home__sliding-phone--hidden {
+        top: 6rem;
+        opacity: 0;
+      }
+            </style>
             <div
-              class="sc-bjUoiL limWoi sliding-phone__image sliding-phone__image--hide"
+              class="sc-bjUoiL limWoi sliding-phonestyles__StyledImage-sc-1ngyhd8-1 bhVyjo home__sliding-phone--hidden"
             >
               <style>
-                .js .gg-image__img--hide {opacity: 0;}
+                .js .gg-image__img--hide-js {display: none;}
+                .no-js .gg-image__img--hide-no-js {display: none;}
               </style>
               <div
                 class="sc-idiyUo flPZkA"
@@ -176,16 +233,34 @@ exports[`<Home /> should render correctly 1`] = `
                     />
                   </div>
                 </div>
-                <img
-                  alt="A screenshot of our flare view component on web"
-                  class="sc-dmRaPn fGUcdG  gg-image__img--hide"
-                  src="IMAGE_MOCK"
-                />
-                <img
-                  alt="A screenshot of our flare view component on web"
-                  class="sc-kgflAQ kSJlNq  gg-image__img--hide"
-                  src="IMAGE_MOCK"
-                />
+                <div
+                  class="gg-image__img--hide-no-js"
+                >
+                  <img
+                    alt="A screenshot of our flare view component on web"
+                    class="sc-dmRaPn gBWRow"
+                    src="IMAGE_MOCK"
+                  />
+                  <img
+                    alt="A screenshot of our flare view component on web"
+                    class="sc-kgflAQ iUjZeU"
+                    src="IMAGE_MOCK"
+                  />
+                </div>
+                <div
+                  class="gg-image__img--hide-js"
+                >
+                  <img
+                    alt="A screenshot of our flare view component on web"
+                    class="sc-dmRaPn jDIOwE"
+                    src="IMAGE_MOCK"
+                  />
+                  <img
+                    alt="A screenshot of our flare view component on web"
+                    class="sc-kgflAQ cCECw"
+                    src="IMAGE_MOCK"
+                  />
+                </div>
               </div>
             </div>
           </div>
@@ -193,17 +268,18 @@ exports[`<Home /> should render correctly 1`] = `
       </div>
     </div>
     <div
-      class="home__life-section"
+      class="homestyles__StyledLifeSection-sc-d0smz9-1 hLkPtG"
     >
       <div
-        class="life-section__outer"
+        class="life-sectionstyles__Wrapper-sc-17amgn9-0 bHsFEN"
       >
         <div
-          class="sc-bjUoiL limWoi life-section__image-above-tablet life-section__image-above-tablet--left"
+          class="sc-bjUoiL limWoi life-sectionstyles__ImageAboveTabletLeft-sc-17amgn9-3 kVMvQF"
           style="margin-top: 2.6rem; transform: rotate(-10.6deg);"
         >
           <style>
-            .js .gg-image__img--hide {opacity: 0;}
+            .js .gg-image__img--hide-js {display: none;}
+            .no-js .gg-image__img--hide-no-js {display: none;}
           </style>
           <div
             class="sc-idiyUo flPZkA"
@@ -221,44 +297,62 @@ exports[`<Home /> should render correctly 1`] = `
                 />
               </div>
             </div>
-            <img
-              alt=""
-              class="sc-dmRaPn fGUcdG  gg-image__img--hide"
-              src="IMAGE_MOCK"
-            />
-            <img
-              alt=""
-              class="sc-kgflAQ kSJlNq  gg-image__img--hide"
-              src="IMAGE_MOCK"
-            />
+            <div
+              class="gg-image__img--hide-no-js"
+            >
+              <img
+                alt=""
+                class="sc-dmRaPn gBWRow"
+                src="IMAGE_MOCK"
+              />
+              <img
+                alt=""
+                class="sc-kgflAQ iUjZeU"
+                src="IMAGE_MOCK"
+              />
+            </div>
+            <div
+              class="gg-image__img--hide-js"
+            >
+              <img
+                alt=""
+                class="sc-dmRaPn jDIOwE"
+                src="IMAGE_MOCK"
+              />
+              <img
+                alt=""
+                class="sc-kgflAQ cCECw"
+                src="IMAGE_MOCK"
+              />
+            </div>
           </div>
         </div>
         <div
-          class="life-section__content"
+          class="life-sectionstyles__Content-sc-17amgn9-2 izamhA"
         >
           <div
-            class="sc-evZas fjRNQE"
+            class="sc-crXcEl hTWOhI"
           >
             <h1
-              class="sc-dkzDqf iBtyHU sc-hAZoDl VIrFO"
+              class="sc-dkzDqf iBtyHU sc-ksZaOG dCXhIJ"
               id="life"
             >
               Life
             </h1>
             <span
-              class="sc-crXcEl hyjoRq life-section__paragraph"
+              class="sc-hAZoDl LEXuB life-sectionstyles__StyledParagraph-sc-17amgn9-1 kRjsHX"
             >
               I love travel and photography, and occasionally write other stuff.
               <br />
               <a
-                class="sc-ftvSup bvTsjB"
+                class="sc-ftvSup cMmkUr"
                 href="/blog"
               >
                 Blog
               </a>
               <br />
               <a
-                class="sc-ftvSup bvTsjB"
+                class="sc-ftvSup cMmkUr"
                 href="/photography"
               >
                 Photography
@@ -266,17 +360,18 @@ exports[`<Home /> should render correctly 1`] = `
             </span>
           </div>
           <span
-            class="sc-crXcEl hyjoRq life-section__paragraph"
+            class="sc-hAZoDl LEXuB life-sectionstyles__StyledParagraph-sc-17amgn9-1 kRjsHX"
           >
-            I got engaged recently in Iceland, and live with my amazing fiancée and Tigger the cat.
+            I live on the south coast of the UK with my wife, cat and dog.
           </span>
         </div>
         <div
-          class="sc-bjUoiL limWoi life-section__image-above-tablet life-section__image-above-tablet--right"
+          class="sc-bjUoiL limWoi life-sectionstyles__ImageAboveTabletRight-sc-17amgn9-4 kbUisf"
           style="margin-top: -0.39999999999999947rem; transform: rotate(4.6deg);"
         >
           <style>
-            .js .gg-image__img--hide {opacity: 0;}
+            .js .gg-image__img--hide-js {display: none;}
+            .no-js .gg-image__img--hide-no-js {display: none;}
           </style>
           <div
             class="sc-idiyUo flPZkA"
@@ -294,29 +389,60 @@ exports[`<Home /> should render correctly 1`] = `
                 />
               </div>
             </div>
-            <img
-              alt=""
-              class="sc-dmRaPn fGUcdG  gg-image__img--hide"
-              src="IMAGE_MOCK"
-            />
-            <img
-              alt=""
-              class="sc-kgflAQ kSJlNq  gg-image__img--hide"
-              src="IMAGE_MOCK"
-            />
+            <div
+              class="gg-image__img--hide-no-js"
+            >
+              <img
+                alt=""
+                class="sc-dmRaPn gBWRow"
+                src="IMAGE_MOCK"
+              />
+              <img
+                alt=""
+                class="sc-kgflAQ iUjZeU"
+                src="IMAGE_MOCK"
+              />
+            </div>
+            <div
+              class="gg-image__img--hide-js"
+            >
+              <img
+                alt=""
+                class="sc-dmRaPn jDIOwE"
+                src="IMAGE_MOCK"
+              />
+              <img
+                alt=""
+                class="sc-kgflAQ cCECw"
+                src="IMAGE_MOCK"
+              />
+            </div>
           </div>
         </div>
         <div
-          class="life-section__mobile-image-container"
+          class="life-sectionstyles__MobileImageWrapper-sc-17amgn9-5 bkmlEe"
         >
+          <style>
+            
+          .js .home__life-section-image--left-hide {
+          margin-left: -20vw;
+                opacity: 0;
+          }
+          .js .home__life-section-image--right-hide {
+          margin-right: -20vw;
+                opacity: 0;
+          }
+          
+          </style>
           <div
-            class="life-section__mobile-image-wrapper life-section__mobile-image-wrapper--left"
+            class="life-sectionstyles__MobileImageInnerWrapperLeft-sc-17amgn9-6 hKsbHM"
           >
             <div
-              class="sc-bjUoiL limWoi life-section__image-below-tablet life-section__image-below-tablet--left"
+              class="sc-bjUoiL limWoi"
             >
               <style>
-                .js .gg-image__img--hide {opacity: 0;}
+                .js .gg-image__img--hide-js {display: none;}
+                .no-js .gg-image__img--hide-no-js {display: none;}
               </style>
               <div
                 class="sc-idiyUo flPZkA"
@@ -334,27 +460,46 @@ exports[`<Home /> should render correctly 1`] = `
                     />
                   </div>
                 </div>
-                <img
-                  alt=""
-                  class="sc-dmRaPn fGUcdG  gg-image__img--hide"
-                  src="IMAGE_MOCK"
-                />
-                <img
-                  alt=""
-                  class="sc-kgflAQ kSJlNq  gg-image__img--hide"
-                  src="IMAGE_MOCK"
-                />
+                <div
+                  class="gg-image__img--hide-no-js"
+                >
+                  <img
+                    alt=""
+                    class="sc-dmRaPn gBWRow"
+                    src="IMAGE_MOCK"
+                  />
+                  <img
+                    alt=""
+                    class="sc-kgflAQ iUjZeU"
+                    src="IMAGE_MOCK"
+                  />
+                </div>
+                <div
+                  class="gg-image__img--hide-js"
+                >
+                  <img
+                    alt=""
+                    class="sc-dmRaPn jDIOwE"
+                    src="IMAGE_MOCK"
+                  />
+                  <img
+                    alt=""
+                    class="sc-kgflAQ cCECw"
+                    src="IMAGE_MOCK"
+                  />
+                </div>
               </div>
             </div>
           </div>
           <div
-            class="life-section__mobile-image-wrapper life-section__mobile-image-wrapper--right"
+            class="life-sectionstyles__MobileImageInnerWrapperRight-sc-17amgn9-7 fwfLdM"
           >
             <div
-              class="sc-bjUoiL limWoi life-section__image-below-tablet life-section__image-below-tablet--right"
+              class="sc-bjUoiL limWoi"
             >
               <style>
-                .js .gg-image__img--hide {opacity: 0;}
+                .js .gg-image__img--hide-js {display: none;}
+                .no-js .gg-image__img--hide-no-js {display: none;}
               </style>
               <div
                 class="sc-idiyUo flPZkA"
@@ -372,16 +517,34 @@ exports[`<Home /> should render correctly 1`] = `
                     />
                   </div>
                 </div>
-                <img
-                  alt=""
-                  class="sc-dmRaPn fGUcdG  gg-image__img--hide"
-                  src="IMAGE_MOCK"
-                />
-                <img
-                  alt=""
-                  class="sc-kgflAQ kSJlNq  gg-image__img--hide"
-                  src="IMAGE_MOCK"
-                />
+                <div
+                  class="gg-image__img--hide-no-js"
+                >
+                  <img
+                    alt=""
+                    class="sc-dmRaPn gBWRow"
+                    src="IMAGE_MOCK"
+                  />
+                  <img
+                    alt=""
+                    class="sc-kgflAQ iUjZeU"
+                    src="IMAGE_MOCK"
+                  />
+                </div>
+                <div
+                  class="gg-image__img--hide-js"
+                >
+                  <img
+                    alt=""
+                    class="sc-dmRaPn jDIOwE"
+                    src="IMAGE_MOCK"
+                  />
+                  <img
+                    alt=""
+                    class="sc-kgflAQ cCECw"
+                    src="IMAGE_MOCK"
+                  />
+                </div>
               </div>
             </div>
           </div>
@@ -389,22 +552,29 @@ exports[`<Home /> should render correctly 1`] = `
       </div>
     </div>
     <div
-      class="home__photo-section"
+      class="homestyles__StyledPhotoSection-sc-d0smz9-2 fHDLeh"
     >
       <div
-        class="photo-section__outer"
+        class="photo-sectionstyles__Wrapper-sc-1vxd7ly-0 jZerSY"
       >
         <div
-          class="photo-section__content"
+          class="photo-sectionstyles__Content-sc-1vxd7ly-1 hRjbc"
         >
           <div
-            class="animated-image__outer"
+            class="animated-imagestyles__Wrapper-sc-1ah0zqa-0 TxyKS"
           >
+            <style>
+              .js .home__animated-image--hidden {
+            top: 6rem;
+            opacity: 0;
+          }
+            </style>
             <div
-              class="sc-bjUoiL limWoi animated-image__image animated-image__image--hide"
+              class="sc-bjUoiL limWoi animated-imagestyles__StyledImage-sc-1ah0zqa-1 eMwtAl home__animated-image--hidden"
             >
               <style>
-                .js .gg-image__img--hide {opacity: 0;}
+                .js .gg-image__img--hide-js {display: none;}
+                .no-js .gg-image__img--hide-no-js {display: none;}
               </style>
               <div
                 class="sc-idiyUo flPZkA"
@@ -422,16 +592,34 @@ exports[`<Home /> should render correctly 1`] = `
                     />
                   </div>
                 </div>
-                <img
-                  alt="Me"
-                  class="sc-dmRaPn fGUcdG  gg-image__img--hide"
-                  src="https://i.imgur.com/L0Rm1ZC.jpg"
-                />
-                <img
-                  alt="Me"
-                  class="sc-kgflAQ kSJlNq  gg-image__img--hide"
-                  src="https://i.imgur.com/L0Rm1ZC.jpg"
-                />
+                <div
+                  class="gg-image__img--hide-no-js"
+                >
+                  <img
+                    alt="Me"
+                    class="sc-dmRaPn gBWRow"
+                    src="https://i.imgur.com/L0Rm1ZC.jpg"
+                  />
+                  <img
+                    alt="Me"
+                    class="sc-kgflAQ iUjZeU"
+                    src="https://i.imgur.com/L0Rm1ZC.jpg"
+                  />
+                </div>
+                <div
+                  class="gg-image__img--hide-js"
+                >
+                  <img
+                    alt="Me"
+                    class="sc-dmRaPn jDIOwE"
+                    src="https://i.imgur.com/L0Rm1ZC.jpg"
+                  />
+                  <img
+                    alt="Me"
+                    class="sc-kgflAQ cCECw"
+                    src="https://i.imgur.com/L0Rm1ZC.jpg"
+                  />
+                </div>
               </div>
             </div>
           </div>
@@ -439,19 +627,19 @@ exports[`<Home /> should render correctly 1`] = `
       </div>
     </div>
     <div
-      class="home__about-section"
+      class="homestyles__StyledAboutSection-sc-d0smz9-3 hLdjKh"
     >
       <div
-        class="about-section__outer"
+        class="about-sectionstyles__Wrapper-sc-161fh79-0 bPRmDB"
       >
         <span
-          class="sc-crXcEl hyjoRq about-section__paragraph"
+          class="sc-hAZoDl LEXuB about-sectionstyles__StyledParagraph-sc-161fh79-1 eEUKqc"
         >
           This site is built in
            
           <a
             aria-label="React (opens in a new tab)"
-            class="sc-ftvSup bvTsjB"
+            class="sc-ftvSup cMmkUr"
             href="https://reactjs.org/"
             rel="noopener noreferrer"
             target="_blank"
@@ -478,7 +666,7 @@ exports[`<Home /> should render correctly 1`] = `
            
           <a
             aria-label="Redux (opens in a new tab)"
-            class="sc-ftvSup bvTsjB"
+            class="sc-ftvSup cMmkUr"
             href="https://redux.js.org/"
             rel="noopener noreferrer"
             target="_blank"
@@ -505,7 +693,7 @@ exports[`<Home /> should render correctly 1`] = `
            
           <a
             aria-label="Next.js (opens in a new tab)"
-            class="sc-ftvSup bvTsjB"
+            class="sc-ftvSup cMmkUr"
             href="https://nextjs.org/"
             rel="noopener noreferrer"
             target="_blank"
@@ -531,7 +719,7 @@ exports[`<Home /> should render correctly 1`] = `
            
           <a
             aria-label="AWS (opens in a new tab)"
-            class="sc-ftvSup bvTsjB"
+            class="sc-ftvSup cMmkUr"
             href="https://aws.amazon.com/"
             rel="noopener noreferrer"
             target="_blank"
@@ -556,19 +744,25 @@ exports[`<Home /> should render correctly 1`] = `
           . I use it to experiment with things, share stuff I've figured out, and allow people to contact me.
         </span>
         <div
-          class="contact-link__outer"
+          class="contact-linkstyles__Wrapper-sc-1f9dgs5-0 hknrdW"
         >
+          <style>
+            
+        .no-js .home__contact--hide {
+        display: none;
+        }
+          </style>
           <div
-            class="contact-link__content"
+            class="contact-linkstyles__Content-sc-1f9dgs5-1 cmohzj"
           >
             <a
-              class="sc-ftvSup bvTsjB contact-link__link"
+              class="sc-ftvSup cMmkUr contact-linkstyles__StyledTextLink-sc-1f9dgs5-2 dZxlbK"
               href="/contact"
             >
               Get in touch
             </a>
             <div
-              class="contact-link__cloud"
+              class="contact-linkstyles__Cloud-sc-1f9dgs5-3 cEZzVo home__contact--hide"
               style="left: 300%;"
             />
           </div>
@@ -591,31 +785,31 @@ exports[`<Home /> should render correctly with admin user 1`] = `
       Hey! I'm George.
     </h1>
     <div
-      class="home__work-section"
+      class="homestyles__StyledWorkSection-sc-d0smz9-0 jrSJcZ"
     >
       <div
-        class="work-section__outer"
+        class="work-sectionstyles__Wrapper-sc-1t4zqac-0 cYTwZx"
       >
         <div
-          class="work-section__content"
+          class="work-sectionstyles__Content-sc-1t4zqac-1 jDtMJd"
         >
           <div
-            class="sc-evZas fjRNQE"
+            class="sc-crXcEl hTWOhI"
           >
             <h1
-              class="sc-dkzDqf iBtyHU sc-hAZoDl VIrFO"
+              class="sc-dkzDqf iBtyHU sc-ksZaOG dCXhIJ"
               id="work"
             >
               Work
             </h1>
             <span
-              class="sc-crXcEl hyjoRq work-section__paragraph"
+              class="sc-hAZoDl LEXuB work-sectionstyles__StyledParagraph-sc-1t4zqac-3 dAHWkA"
             >
               I'm a web developer at
                
               <a
                 aria-label="Typeform (opens in a new tab)"
-                class="sc-ftvSup bvTsjB"
+                class="sc-ftvSup cMmkUr"
                 href="https://typeform.com/"
                 rel="noopener noreferrer"
                 target="_blank"
@@ -643,7 +837,7 @@ exports[`<Home /> should render correctly with admin user 1`] = `
               I’m also an accessibility champion and design system enthusiast.
               <br />
               <a
-                class="sc-ftvSup bvTsjB"
+                class="sc-ftvSup cMmkUr"
                 href="/work"
               >
                 Learn more about my work
@@ -652,16 +846,23 @@ exports[`<Home /> should render correctly with admin user 1`] = `
           </div>
         </div>
         <div
-          class="phones__outer work-section__graphic"
+          class="phonesstyles__Wrapper-sc-qc041h-0 jABYOt work-sectionstyles__Graphic-sc-1t4zqac-2 fPqDqJ"
         >
           <div
-            class="sliding-phone__outer phones__phone"
+            class="sliding-phonestyles__Wrapper-sc-1ngyhd8-0 eVwAsN phonesstyles__StyledSlidingPhone-sc-qc041h-1 dFrbPC"
           >
+            <style>
+              .js .home__sliding-phone--hidden {
+        top: 6rem;
+        opacity: 0;
+      }
+            </style>
             <div
-              class="sc-bjUoiL limWoi sliding-phone__image sliding-phone__image--hide"
+              class="sc-bjUoiL limWoi sliding-phonestyles__StyledImage-sc-1ngyhd8-1 bhVyjo home__sliding-phone--hidden"
             >
               <style>
-                .js .gg-image__img--hide {opacity: 0;}
+                .js .gg-image__img--hide-js {display: none;}
+                .no-js .gg-image__img--hide-no-js {display: none;}
               </style>
               <div
                 class="sc-idiyUo flPZkA"
@@ -679,27 +880,52 @@ exports[`<Home /> should render correctly with admin user 1`] = `
                     />
                   </div>
                 </div>
-                <img
-                  alt="A screenshot of our Backpack design principles"
-                  class="sc-dmRaPn fGUcdG  gg-image__img--hide"
-                  src="IMAGE_MOCK"
-                />
-                <img
-                  alt="A screenshot of our Backpack design principles"
-                  class="sc-kgflAQ kSJlNq  gg-image__img--hide"
-                  src="IMAGE_MOCK"
-                />
+                <div
+                  class="gg-image__img--hide-no-js"
+                >
+                  <img
+                    alt="A screenshot of our Backpack design principles"
+                    class="sc-dmRaPn gBWRow"
+                    src="IMAGE_MOCK"
+                  />
+                  <img
+                    alt="A screenshot of our Backpack design principles"
+                    class="sc-kgflAQ iUjZeU"
+                    src="IMAGE_MOCK"
+                  />
+                </div>
+                <div
+                  class="gg-image__img--hide-js"
+                >
+                  <img
+                    alt="A screenshot of our Backpack design principles"
+                    class="sc-dmRaPn jDIOwE"
+                    src="IMAGE_MOCK"
+                  />
+                  <img
+                    alt="A screenshot of our Backpack design principles"
+                    class="sc-kgflAQ cCECw"
+                    src="IMAGE_MOCK"
+                  />
+                </div>
               </div>
             </div>
           </div>
           <div
-            class="sliding-phone__outer phones__phone"
+            class="sliding-phonestyles__Wrapper-sc-1ngyhd8-0 eVwAsN phonesstyles__StyledSlidingPhone-sc-qc041h-1 dFrbPC"
           >
+            <style>
+              .js .home__sliding-phone--hidden {
+        top: 6rem;
+        opacity: 0;
+      }
+            </style>
             <div
-              class="sc-bjUoiL limWoi sliding-phone__image sliding-phone__image--hide"
+              class="sc-bjUoiL limWoi sliding-phonestyles__StyledImage-sc-1ngyhd8-1 bhVyjo home__sliding-phone--hidden"
             >
               <style>
-                .js .gg-image__img--hide {opacity: 0;}
+                .js .gg-image__img--hide-js {display: none;}
+                .no-js .gg-image__img--hide-no-js {display: none;}
               </style>
               <div
                 class="sc-idiyUo flPZkA"
@@ -717,27 +943,52 @@ exports[`<Home /> should render correctly with admin user 1`] = `
                     />
                   </div>
                 </div>
-                <img
-                  alt="A screenshot of our bar chart component on iOS"
-                  class="sc-dmRaPn fGUcdG  gg-image__img--hide"
-                  src="IMAGE_MOCK"
-                />
-                <img
-                  alt="A screenshot of our bar chart component on iOS"
-                  class="sc-kgflAQ kSJlNq  gg-image__img--hide"
-                  src="IMAGE_MOCK"
-                />
+                <div
+                  class="gg-image__img--hide-no-js"
+                >
+                  <img
+                    alt="A screenshot of our bar chart component on iOS"
+                    class="sc-dmRaPn gBWRow"
+                    src="IMAGE_MOCK"
+                  />
+                  <img
+                    alt="A screenshot of our bar chart component on iOS"
+                    class="sc-kgflAQ iUjZeU"
+                    src="IMAGE_MOCK"
+                  />
+                </div>
+                <div
+                  class="gg-image__img--hide-js"
+                >
+                  <img
+                    alt="A screenshot of our bar chart component on iOS"
+                    class="sc-dmRaPn jDIOwE"
+                    src="IMAGE_MOCK"
+                  />
+                  <img
+                    alt="A screenshot of our bar chart component on iOS"
+                    class="sc-kgflAQ cCECw"
+                    src="IMAGE_MOCK"
+                  />
+                </div>
               </div>
             </div>
           </div>
           <div
-            class="sliding-phone__outer phones__phone"
+            class="sliding-phonestyles__Wrapper-sc-1ngyhd8-0 eVwAsN phonesstyles__StyledSlidingPhone-sc-qc041h-1 dFrbPC"
           >
+            <style>
+              .js .home__sliding-phone--hidden {
+        top: 6rem;
+        opacity: 0;
+      }
+            </style>
             <div
-              class="sc-bjUoiL limWoi sliding-phone__image sliding-phone__image--hide"
+              class="sc-bjUoiL limWoi sliding-phonestyles__StyledImage-sc-1ngyhd8-1 bhVyjo home__sliding-phone--hidden"
             >
               <style>
-                .js .gg-image__img--hide {opacity: 0;}
+                .js .gg-image__img--hide-js {display: none;}
+                .no-js .gg-image__img--hide-no-js {display: none;}
               </style>
               <div
                 class="sc-idiyUo flPZkA"
@@ -755,16 +1006,34 @@ exports[`<Home /> should render correctly with admin user 1`] = `
                     />
                   </div>
                 </div>
-                <img
-                  alt="A screenshot of our flare view component on web"
-                  class="sc-dmRaPn fGUcdG  gg-image__img--hide"
-                  src="IMAGE_MOCK"
-                />
-                <img
-                  alt="A screenshot of our flare view component on web"
-                  class="sc-kgflAQ kSJlNq  gg-image__img--hide"
-                  src="IMAGE_MOCK"
-                />
+                <div
+                  class="gg-image__img--hide-no-js"
+                >
+                  <img
+                    alt="A screenshot of our flare view component on web"
+                    class="sc-dmRaPn gBWRow"
+                    src="IMAGE_MOCK"
+                  />
+                  <img
+                    alt="A screenshot of our flare view component on web"
+                    class="sc-kgflAQ iUjZeU"
+                    src="IMAGE_MOCK"
+                  />
+                </div>
+                <div
+                  class="gg-image__img--hide-js"
+                >
+                  <img
+                    alt="A screenshot of our flare view component on web"
+                    class="sc-dmRaPn jDIOwE"
+                    src="IMAGE_MOCK"
+                  />
+                  <img
+                    alt="A screenshot of our flare view component on web"
+                    class="sc-kgflAQ cCECw"
+                    src="IMAGE_MOCK"
+                  />
+                </div>
               </div>
             </div>
           </div>
@@ -772,17 +1041,18 @@ exports[`<Home /> should render correctly with admin user 1`] = `
       </div>
     </div>
     <div
-      class="home__life-section"
+      class="homestyles__StyledLifeSection-sc-d0smz9-1 hLkPtG"
     >
       <div
-        class="life-section__outer"
+        class="life-sectionstyles__Wrapper-sc-17amgn9-0 bHsFEN"
       >
         <div
-          class="sc-bjUoiL limWoi life-section__image-above-tablet life-section__image-above-tablet--left"
+          class="sc-bjUoiL limWoi life-sectionstyles__ImageAboveTabletLeft-sc-17amgn9-3 kVMvQF"
           style="margin-top: 2.6rem; transform: rotate(-10.6deg);"
         >
           <style>
-            .js .gg-image__img--hide {opacity: 0;}
+            .js .gg-image__img--hide-js {display: none;}
+            .no-js .gg-image__img--hide-no-js {display: none;}
           </style>
           <div
             class="sc-idiyUo flPZkA"
@@ -800,44 +1070,62 @@ exports[`<Home /> should render correctly with admin user 1`] = `
                 />
               </div>
             </div>
-            <img
-              alt=""
-              class="sc-dmRaPn fGUcdG  gg-image__img--hide"
-              src="IMAGE_MOCK"
-            />
-            <img
-              alt=""
-              class="sc-kgflAQ kSJlNq  gg-image__img--hide"
-              src="IMAGE_MOCK"
-            />
+            <div
+              class="gg-image__img--hide-no-js"
+            >
+              <img
+                alt=""
+                class="sc-dmRaPn gBWRow"
+                src="IMAGE_MOCK"
+              />
+              <img
+                alt=""
+                class="sc-kgflAQ iUjZeU"
+                src="IMAGE_MOCK"
+              />
+            </div>
+            <div
+              class="gg-image__img--hide-js"
+            >
+              <img
+                alt=""
+                class="sc-dmRaPn jDIOwE"
+                src="IMAGE_MOCK"
+              />
+              <img
+                alt=""
+                class="sc-kgflAQ cCECw"
+                src="IMAGE_MOCK"
+              />
+            </div>
           </div>
         </div>
         <div
-          class="life-section__content"
+          class="life-sectionstyles__Content-sc-17amgn9-2 izamhA"
         >
           <div
-            class="sc-evZas fjRNQE"
+            class="sc-crXcEl hTWOhI"
           >
             <h1
-              class="sc-dkzDqf iBtyHU sc-hAZoDl VIrFO"
+              class="sc-dkzDqf iBtyHU sc-ksZaOG dCXhIJ"
               id="life"
             >
               Life
             </h1>
             <span
-              class="sc-crXcEl hyjoRq life-section__paragraph"
+              class="sc-hAZoDl LEXuB life-sectionstyles__StyledParagraph-sc-17amgn9-1 kRjsHX"
             >
               I love travel and photography, and occasionally write other stuff.
               <br />
               <a
-                class="sc-ftvSup bvTsjB"
+                class="sc-ftvSup cMmkUr"
                 href="/blog"
               >
                 Blog
               </a>
               <br />
               <a
-                class="sc-ftvSup bvTsjB"
+                class="sc-ftvSup cMmkUr"
                 href="/photography"
               >
                 Photography
@@ -845,17 +1133,18 @@ exports[`<Home /> should render correctly with admin user 1`] = `
             </span>
           </div>
           <span
-            class="sc-crXcEl hyjoRq life-section__paragraph"
+            class="sc-hAZoDl LEXuB life-sectionstyles__StyledParagraph-sc-17amgn9-1 kRjsHX"
           >
-            I got engaged recently in Iceland, and live with my amazing fiancée and Tigger the cat.
+            I live on the south coast of the UK with my wife, cat and dog.
           </span>
         </div>
         <div
-          class="sc-bjUoiL limWoi life-section__image-above-tablet life-section__image-above-tablet--right"
+          class="sc-bjUoiL limWoi life-sectionstyles__ImageAboveTabletRight-sc-17amgn9-4 kbUisf"
           style="margin-top: -0.39999999999999947rem; transform: rotate(4.6deg);"
         >
           <style>
-            .js .gg-image__img--hide {opacity: 0;}
+            .js .gg-image__img--hide-js {display: none;}
+            .no-js .gg-image__img--hide-no-js {display: none;}
           </style>
           <div
             class="sc-idiyUo flPZkA"
@@ -873,29 +1162,60 @@ exports[`<Home /> should render correctly with admin user 1`] = `
                 />
               </div>
             </div>
-            <img
-              alt=""
-              class="sc-dmRaPn fGUcdG  gg-image__img--hide"
-              src="IMAGE_MOCK"
-            />
-            <img
-              alt=""
-              class="sc-kgflAQ kSJlNq  gg-image__img--hide"
-              src="IMAGE_MOCK"
-            />
+            <div
+              class="gg-image__img--hide-no-js"
+            >
+              <img
+                alt=""
+                class="sc-dmRaPn gBWRow"
+                src="IMAGE_MOCK"
+              />
+              <img
+                alt=""
+                class="sc-kgflAQ iUjZeU"
+                src="IMAGE_MOCK"
+              />
+            </div>
+            <div
+              class="gg-image__img--hide-js"
+            >
+              <img
+                alt=""
+                class="sc-dmRaPn jDIOwE"
+                src="IMAGE_MOCK"
+              />
+              <img
+                alt=""
+                class="sc-kgflAQ cCECw"
+                src="IMAGE_MOCK"
+              />
+            </div>
           </div>
         </div>
         <div
-          class="life-section__mobile-image-container"
+          class="life-sectionstyles__MobileImageWrapper-sc-17amgn9-5 bkmlEe"
         >
+          <style>
+            
+          .js .home__life-section-image--left-hide {
+          margin-left: -20vw;
+                opacity: 0;
+          }
+          .js .home__life-section-image--right-hide {
+          margin-right: -20vw;
+                opacity: 0;
+          }
+          
+          </style>
           <div
-            class="life-section__mobile-image-wrapper life-section__mobile-image-wrapper--left"
+            class="life-sectionstyles__MobileImageInnerWrapperLeft-sc-17amgn9-6 hKsbHM"
           >
             <div
-              class="sc-bjUoiL limWoi life-section__image-below-tablet life-section__image-below-tablet--left"
+              class="sc-bjUoiL limWoi"
             >
               <style>
-                .js .gg-image__img--hide {opacity: 0;}
+                .js .gg-image__img--hide-js {display: none;}
+                .no-js .gg-image__img--hide-no-js {display: none;}
               </style>
               <div
                 class="sc-idiyUo flPZkA"
@@ -913,27 +1233,46 @@ exports[`<Home /> should render correctly with admin user 1`] = `
                     />
                   </div>
                 </div>
-                <img
-                  alt=""
-                  class="sc-dmRaPn fGUcdG  gg-image__img--hide"
-                  src="IMAGE_MOCK"
-                />
-                <img
-                  alt=""
-                  class="sc-kgflAQ kSJlNq  gg-image__img--hide"
-                  src="IMAGE_MOCK"
-                />
+                <div
+                  class="gg-image__img--hide-no-js"
+                >
+                  <img
+                    alt=""
+                    class="sc-dmRaPn gBWRow"
+                    src="IMAGE_MOCK"
+                  />
+                  <img
+                    alt=""
+                    class="sc-kgflAQ iUjZeU"
+                    src="IMAGE_MOCK"
+                  />
+                </div>
+                <div
+                  class="gg-image__img--hide-js"
+                >
+                  <img
+                    alt=""
+                    class="sc-dmRaPn jDIOwE"
+                    src="IMAGE_MOCK"
+                  />
+                  <img
+                    alt=""
+                    class="sc-kgflAQ cCECw"
+                    src="IMAGE_MOCK"
+                  />
+                </div>
               </div>
             </div>
           </div>
           <div
-            class="life-section__mobile-image-wrapper life-section__mobile-image-wrapper--right"
+            class="life-sectionstyles__MobileImageInnerWrapperRight-sc-17amgn9-7 fwfLdM"
           >
             <div
-              class="sc-bjUoiL limWoi life-section__image-below-tablet life-section__image-below-tablet--right"
+              class="sc-bjUoiL limWoi"
             >
               <style>
-                .js .gg-image__img--hide {opacity: 0;}
+                .js .gg-image__img--hide-js {display: none;}
+                .no-js .gg-image__img--hide-no-js {display: none;}
               </style>
               <div
                 class="sc-idiyUo flPZkA"
@@ -951,16 +1290,34 @@ exports[`<Home /> should render correctly with admin user 1`] = `
                     />
                   </div>
                 </div>
-                <img
-                  alt=""
-                  class="sc-dmRaPn fGUcdG  gg-image__img--hide"
-                  src="IMAGE_MOCK"
-                />
-                <img
-                  alt=""
-                  class="sc-kgflAQ kSJlNq  gg-image__img--hide"
-                  src="IMAGE_MOCK"
-                />
+                <div
+                  class="gg-image__img--hide-no-js"
+                >
+                  <img
+                    alt=""
+                    class="sc-dmRaPn gBWRow"
+                    src="IMAGE_MOCK"
+                  />
+                  <img
+                    alt=""
+                    class="sc-kgflAQ iUjZeU"
+                    src="IMAGE_MOCK"
+                  />
+                </div>
+                <div
+                  class="gg-image__img--hide-js"
+                >
+                  <img
+                    alt=""
+                    class="sc-dmRaPn jDIOwE"
+                    src="IMAGE_MOCK"
+                  />
+                  <img
+                    alt=""
+                    class="sc-kgflAQ cCECw"
+                    src="IMAGE_MOCK"
+                  />
+                </div>
               </div>
             </div>
           </div>
@@ -968,22 +1325,29 @@ exports[`<Home /> should render correctly with admin user 1`] = `
       </div>
     </div>
     <div
-      class="home__photo-section"
+      class="homestyles__StyledPhotoSection-sc-d0smz9-2 fHDLeh"
     >
       <div
-        class="photo-section__outer"
+        class="photo-sectionstyles__Wrapper-sc-1vxd7ly-0 jZerSY"
       >
         <div
-          class="photo-section__content"
+          class="photo-sectionstyles__Content-sc-1vxd7ly-1 hRjbc"
         >
           <div
-            class="animated-image__outer"
+            class="animated-imagestyles__Wrapper-sc-1ah0zqa-0 TxyKS"
           >
+            <style>
+              .js .home__animated-image--hidden {
+            top: 6rem;
+            opacity: 0;
+          }
+            </style>
             <div
-              class="sc-bjUoiL limWoi animated-image__image animated-image__image--hide"
+              class="sc-bjUoiL limWoi animated-imagestyles__StyledImage-sc-1ah0zqa-1 eMwtAl home__animated-image--hidden"
             >
               <style>
-                .js .gg-image__img--hide {opacity: 0;}
+                .js .gg-image__img--hide-js {display: none;}
+                .no-js .gg-image__img--hide-no-js {display: none;}
               </style>
               <div
                 class="sc-idiyUo flPZkA"
@@ -1001,16 +1365,34 @@ exports[`<Home /> should render correctly with admin user 1`] = `
                     />
                   </div>
                 </div>
-                <img
-                  alt="Me"
-                  class="sc-dmRaPn fGUcdG  gg-image__img--hide"
-                  src="https://i.imgur.com/L0Rm1ZC.jpg"
-                />
-                <img
-                  alt="Me"
-                  class="sc-kgflAQ kSJlNq  gg-image__img--hide"
-                  src="https://i.imgur.com/L0Rm1ZC.jpg"
-                />
+                <div
+                  class="gg-image__img--hide-no-js"
+                >
+                  <img
+                    alt="Me"
+                    class="sc-dmRaPn gBWRow"
+                    src="https://i.imgur.com/L0Rm1ZC.jpg"
+                  />
+                  <img
+                    alt="Me"
+                    class="sc-kgflAQ iUjZeU"
+                    src="https://i.imgur.com/L0Rm1ZC.jpg"
+                  />
+                </div>
+                <div
+                  class="gg-image__img--hide-js"
+                >
+                  <img
+                    alt="Me"
+                    class="sc-dmRaPn jDIOwE"
+                    src="https://i.imgur.com/L0Rm1ZC.jpg"
+                  />
+                  <img
+                    alt="Me"
+                    class="sc-kgflAQ cCECw"
+                    src="https://i.imgur.com/L0Rm1ZC.jpg"
+                  />
+                </div>
               </div>
             </div>
           </div>
@@ -1018,19 +1400,19 @@ exports[`<Home /> should render correctly with admin user 1`] = `
       </div>
     </div>
     <div
-      class="home__about-section"
+      class="homestyles__StyledAboutSection-sc-d0smz9-3 hLdjKh"
     >
       <div
-        class="about-section__outer"
+        class="about-sectionstyles__Wrapper-sc-161fh79-0 bPRmDB"
       >
         <span
-          class="sc-crXcEl hyjoRq about-section__paragraph"
+          class="sc-hAZoDl LEXuB about-sectionstyles__StyledParagraph-sc-161fh79-1 eEUKqc"
         >
           This site is built in
            
           <a
             aria-label="React (opens in a new tab)"
-            class="sc-ftvSup bvTsjB"
+            class="sc-ftvSup cMmkUr"
             href="https://reactjs.org/"
             rel="noopener noreferrer"
             target="_blank"
@@ -1057,7 +1439,7 @@ exports[`<Home /> should render correctly with admin user 1`] = `
            
           <a
             aria-label="Redux (opens in a new tab)"
-            class="sc-ftvSup bvTsjB"
+            class="sc-ftvSup cMmkUr"
             href="https://redux.js.org/"
             rel="noopener noreferrer"
             target="_blank"
@@ -1084,7 +1466,7 @@ exports[`<Home /> should render correctly with admin user 1`] = `
            
           <a
             aria-label="Next.js (opens in a new tab)"
-            class="sc-ftvSup bvTsjB"
+            class="sc-ftvSup cMmkUr"
             href="https://nextjs.org/"
             rel="noopener noreferrer"
             target="_blank"
@@ -1110,7 +1492,7 @@ exports[`<Home /> should render correctly with admin user 1`] = `
            
           <a
             aria-label="AWS (opens in a new tab)"
-            class="sc-ftvSup bvTsjB"
+            class="sc-ftvSup cMmkUr"
             href="https://aws.amazon.com/"
             rel="noopener noreferrer"
             target="_blank"
@@ -1135,19 +1517,25 @@ exports[`<Home /> should render correctly with admin user 1`] = `
           . I use it to experiment with things, share stuff I've figured out, and allow people to contact me.
         </span>
         <div
-          class="contact-link__outer"
+          class="contact-linkstyles__Wrapper-sc-1f9dgs5-0 hknrdW"
         >
+          <style>
+            
+        .no-js .home__contact--hide {
+        display: none;
+        }
+          </style>
           <div
-            class="contact-link__content"
+            class="contact-linkstyles__Content-sc-1f9dgs5-1 cmohzj"
           >
             <a
-              class="sc-ftvSup bvTsjB contact-link__link"
+              class="sc-ftvSup cMmkUr contact-linkstyles__StyledTextLink-sc-1f9dgs5-2 dZxlbK"
               href="/contact"
             >
               Get in touch
             </a>
             <div
-              class="contact-link__cloud"
+              class="contact-linkstyles__Cloud-sc-1f9dgs5-3 cEZzVo home__contact--hide"
               style="left: 300%;"
             />
           </div>
@@ -1170,31 +1558,31 @@ exports[`<Home /> should render correctly with no user 1`] = `
       Hey! I'm George.
     </h1>
     <div
-      class="home__work-section"
+      class="homestyles__StyledWorkSection-sc-d0smz9-0 jrSJcZ"
     >
       <div
-        class="work-section__outer"
+        class="work-sectionstyles__Wrapper-sc-1t4zqac-0 cYTwZx"
       >
         <div
-          class="work-section__content"
+          class="work-sectionstyles__Content-sc-1t4zqac-1 jDtMJd"
         >
           <div
-            class="sc-evZas fjRNQE"
+            class="sc-crXcEl hTWOhI"
           >
             <h1
-              class="sc-dkzDqf iBtyHU sc-hAZoDl VIrFO"
+              class="sc-dkzDqf iBtyHU sc-ksZaOG dCXhIJ"
               id="work"
             >
               Work
             </h1>
             <span
-              class="sc-crXcEl hyjoRq work-section__paragraph"
+              class="sc-hAZoDl LEXuB work-sectionstyles__StyledParagraph-sc-1t4zqac-3 dAHWkA"
             >
               I'm a web developer at
                
               <a
                 aria-label="Typeform (opens in a new tab)"
-                class="sc-ftvSup bvTsjB"
+                class="sc-ftvSup cMmkUr"
                 href="https://typeform.com/"
                 rel="noopener noreferrer"
                 target="_blank"
@@ -1222,7 +1610,7 @@ exports[`<Home /> should render correctly with no user 1`] = `
               I’m also an accessibility champion and design system enthusiast.
               <br />
               <a
-                class="sc-ftvSup bvTsjB"
+                class="sc-ftvSup cMmkUr"
                 href="/work"
               >
                 Learn more about my work
@@ -1231,16 +1619,23 @@ exports[`<Home /> should render correctly with no user 1`] = `
           </div>
         </div>
         <div
-          class="phones__outer work-section__graphic"
+          class="phonesstyles__Wrapper-sc-qc041h-0 jABYOt work-sectionstyles__Graphic-sc-1t4zqac-2 fPqDqJ"
         >
           <div
-            class="sliding-phone__outer phones__phone"
+            class="sliding-phonestyles__Wrapper-sc-1ngyhd8-0 eVwAsN phonesstyles__StyledSlidingPhone-sc-qc041h-1 dFrbPC"
           >
+            <style>
+              .js .home__sliding-phone--hidden {
+        top: 6rem;
+        opacity: 0;
+      }
+            </style>
             <div
-              class="sc-bjUoiL limWoi sliding-phone__image sliding-phone__image--hide"
+              class="sc-bjUoiL limWoi sliding-phonestyles__StyledImage-sc-1ngyhd8-1 bhVyjo home__sliding-phone--hidden"
             >
               <style>
-                .js .gg-image__img--hide {opacity: 0;}
+                .js .gg-image__img--hide-js {display: none;}
+                .no-js .gg-image__img--hide-no-js {display: none;}
               </style>
               <div
                 class="sc-idiyUo flPZkA"
@@ -1258,27 +1653,52 @@ exports[`<Home /> should render correctly with no user 1`] = `
                     />
                   </div>
                 </div>
-                <img
-                  alt="A screenshot of our Backpack design principles"
-                  class="sc-dmRaPn fGUcdG  gg-image__img--hide"
-                  src="IMAGE_MOCK"
-                />
-                <img
-                  alt="A screenshot of our Backpack design principles"
-                  class="sc-kgflAQ kSJlNq  gg-image__img--hide"
-                  src="IMAGE_MOCK"
-                />
+                <div
+                  class="gg-image__img--hide-no-js"
+                >
+                  <img
+                    alt="A screenshot of our Backpack design principles"
+                    class="sc-dmRaPn gBWRow"
+                    src="IMAGE_MOCK"
+                  />
+                  <img
+                    alt="A screenshot of our Backpack design principles"
+                    class="sc-kgflAQ iUjZeU"
+                    src="IMAGE_MOCK"
+                  />
+                </div>
+                <div
+                  class="gg-image__img--hide-js"
+                >
+                  <img
+                    alt="A screenshot of our Backpack design principles"
+                    class="sc-dmRaPn jDIOwE"
+                    src="IMAGE_MOCK"
+                  />
+                  <img
+                    alt="A screenshot of our Backpack design principles"
+                    class="sc-kgflAQ cCECw"
+                    src="IMAGE_MOCK"
+                  />
+                </div>
               </div>
             </div>
           </div>
           <div
-            class="sliding-phone__outer phones__phone"
+            class="sliding-phonestyles__Wrapper-sc-1ngyhd8-0 eVwAsN phonesstyles__StyledSlidingPhone-sc-qc041h-1 dFrbPC"
           >
+            <style>
+              .js .home__sliding-phone--hidden {
+        top: 6rem;
+        opacity: 0;
+      }
+            </style>
             <div
-              class="sc-bjUoiL limWoi sliding-phone__image sliding-phone__image--hide"
+              class="sc-bjUoiL limWoi sliding-phonestyles__StyledImage-sc-1ngyhd8-1 bhVyjo home__sliding-phone--hidden"
             >
               <style>
-                .js .gg-image__img--hide {opacity: 0;}
+                .js .gg-image__img--hide-js {display: none;}
+                .no-js .gg-image__img--hide-no-js {display: none;}
               </style>
               <div
                 class="sc-idiyUo flPZkA"
@@ -1296,27 +1716,52 @@ exports[`<Home /> should render correctly with no user 1`] = `
                     />
                   </div>
                 </div>
-                <img
-                  alt="A screenshot of our bar chart component on iOS"
-                  class="sc-dmRaPn fGUcdG  gg-image__img--hide"
-                  src="IMAGE_MOCK"
-                />
-                <img
-                  alt="A screenshot of our bar chart component on iOS"
-                  class="sc-kgflAQ kSJlNq  gg-image__img--hide"
-                  src="IMAGE_MOCK"
-                />
+                <div
+                  class="gg-image__img--hide-no-js"
+                >
+                  <img
+                    alt="A screenshot of our bar chart component on iOS"
+                    class="sc-dmRaPn gBWRow"
+                    src="IMAGE_MOCK"
+                  />
+                  <img
+                    alt="A screenshot of our bar chart component on iOS"
+                    class="sc-kgflAQ iUjZeU"
+                    src="IMAGE_MOCK"
+                  />
+                </div>
+                <div
+                  class="gg-image__img--hide-js"
+                >
+                  <img
+                    alt="A screenshot of our bar chart component on iOS"
+                    class="sc-dmRaPn jDIOwE"
+                    src="IMAGE_MOCK"
+                  />
+                  <img
+                    alt="A screenshot of our bar chart component on iOS"
+                    class="sc-kgflAQ cCECw"
+                    src="IMAGE_MOCK"
+                  />
+                </div>
               </div>
             </div>
           </div>
           <div
-            class="sliding-phone__outer phones__phone"
+            class="sliding-phonestyles__Wrapper-sc-1ngyhd8-0 eVwAsN phonesstyles__StyledSlidingPhone-sc-qc041h-1 dFrbPC"
           >
+            <style>
+              .js .home__sliding-phone--hidden {
+        top: 6rem;
+        opacity: 0;
+      }
+            </style>
             <div
-              class="sc-bjUoiL limWoi sliding-phone__image sliding-phone__image--hide"
+              class="sc-bjUoiL limWoi sliding-phonestyles__StyledImage-sc-1ngyhd8-1 bhVyjo home__sliding-phone--hidden"
             >
               <style>
-                .js .gg-image__img--hide {opacity: 0;}
+                .js .gg-image__img--hide-js {display: none;}
+                .no-js .gg-image__img--hide-no-js {display: none;}
               </style>
               <div
                 class="sc-idiyUo flPZkA"
@@ -1334,16 +1779,34 @@ exports[`<Home /> should render correctly with no user 1`] = `
                     />
                   </div>
                 </div>
-                <img
-                  alt="A screenshot of our flare view component on web"
-                  class="sc-dmRaPn fGUcdG  gg-image__img--hide"
-                  src="IMAGE_MOCK"
-                />
-                <img
-                  alt="A screenshot of our flare view component on web"
-                  class="sc-kgflAQ kSJlNq  gg-image__img--hide"
-                  src="IMAGE_MOCK"
-                />
+                <div
+                  class="gg-image__img--hide-no-js"
+                >
+                  <img
+                    alt="A screenshot of our flare view component on web"
+                    class="sc-dmRaPn gBWRow"
+                    src="IMAGE_MOCK"
+                  />
+                  <img
+                    alt="A screenshot of our flare view component on web"
+                    class="sc-kgflAQ iUjZeU"
+                    src="IMAGE_MOCK"
+                  />
+                </div>
+                <div
+                  class="gg-image__img--hide-js"
+                >
+                  <img
+                    alt="A screenshot of our flare view component on web"
+                    class="sc-dmRaPn jDIOwE"
+                    src="IMAGE_MOCK"
+                  />
+                  <img
+                    alt="A screenshot of our flare view component on web"
+                    class="sc-kgflAQ cCECw"
+                    src="IMAGE_MOCK"
+                  />
+                </div>
               </div>
             </div>
           </div>
@@ -1351,17 +1814,18 @@ exports[`<Home /> should render correctly with no user 1`] = `
       </div>
     </div>
     <div
-      class="home__life-section"
+      class="homestyles__StyledLifeSection-sc-d0smz9-1 hLkPtG"
     >
       <div
-        class="life-section__outer"
+        class="life-sectionstyles__Wrapper-sc-17amgn9-0 bHsFEN"
       >
         <div
-          class="sc-bjUoiL limWoi life-section__image-above-tablet life-section__image-above-tablet--left"
+          class="sc-bjUoiL limWoi life-sectionstyles__ImageAboveTabletLeft-sc-17amgn9-3 kVMvQF"
           style="margin-top: 2.6rem; transform: rotate(-10.6deg);"
         >
           <style>
-            .js .gg-image__img--hide {opacity: 0;}
+            .js .gg-image__img--hide-js {display: none;}
+            .no-js .gg-image__img--hide-no-js {display: none;}
           </style>
           <div
             class="sc-idiyUo flPZkA"
@@ -1379,44 +1843,62 @@ exports[`<Home /> should render correctly with no user 1`] = `
                 />
               </div>
             </div>
-            <img
-              alt=""
-              class="sc-dmRaPn fGUcdG  gg-image__img--hide"
-              src="IMAGE_MOCK"
-            />
-            <img
-              alt=""
-              class="sc-kgflAQ kSJlNq  gg-image__img--hide"
-              src="IMAGE_MOCK"
-            />
+            <div
+              class="gg-image__img--hide-no-js"
+            >
+              <img
+                alt=""
+                class="sc-dmRaPn gBWRow"
+                src="IMAGE_MOCK"
+              />
+              <img
+                alt=""
+                class="sc-kgflAQ iUjZeU"
+                src="IMAGE_MOCK"
+              />
+            </div>
+            <div
+              class="gg-image__img--hide-js"
+            >
+              <img
+                alt=""
+                class="sc-dmRaPn jDIOwE"
+                src="IMAGE_MOCK"
+              />
+              <img
+                alt=""
+                class="sc-kgflAQ cCECw"
+                src="IMAGE_MOCK"
+              />
+            </div>
           </div>
         </div>
         <div
-          class="life-section__content"
+          class="life-sectionstyles__Content-sc-17amgn9-2 izamhA"
         >
           <div
-            class="sc-evZas fjRNQE"
+            class="sc-crXcEl hTWOhI"
           >
             <h1
-              class="sc-dkzDqf iBtyHU sc-hAZoDl VIrFO"
+              class="sc-dkzDqf iBtyHU sc-ksZaOG dCXhIJ"
               id="life"
             >
               Life
             </h1>
             <span
-              class="sc-crXcEl hyjoRq life-section__paragraph"
+              class="sc-hAZoDl LEXuB life-sectionstyles__StyledParagraph-sc-17amgn9-1 kRjsHX"
             >
               I love travel and photography, and occasionally write other stuff.
               <br />
               <a
-                class="sc-ftvSup bvTsjB"
+                class="sc-ftvSup cMmkUr"
                 href="/blog"
               >
                 Blog
               </a>
               <br />
               <a
-                class="sc-ftvSup bvTsjB"
+                class="sc-ftvSup cMmkUr"
                 href="/photography"
               >
                 Photography
@@ -1424,17 +1906,18 @@ exports[`<Home /> should render correctly with no user 1`] = `
             </span>
           </div>
           <span
-            class="sc-crXcEl hyjoRq life-section__paragraph"
+            class="sc-hAZoDl LEXuB life-sectionstyles__StyledParagraph-sc-17amgn9-1 kRjsHX"
           >
-            I got engaged recently in Iceland, and live with my amazing fiancée and Tigger the cat.
+            I live on the south coast of the UK with my wife, cat and dog.
           </span>
         </div>
         <div
-          class="sc-bjUoiL limWoi life-section__image-above-tablet life-section__image-above-tablet--right"
+          class="sc-bjUoiL limWoi life-sectionstyles__ImageAboveTabletRight-sc-17amgn9-4 kbUisf"
           style="margin-top: -0.39999999999999947rem; transform: rotate(4.6deg);"
         >
           <style>
-            .js .gg-image__img--hide {opacity: 0;}
+            .js .gg-image__img--hide-js {display: none;}
+            .no-js .gg-image__img--hide-no-js {display: none;}
           </style>
           <div
             class="sc-idiyUo flPZkA"
@@ -1452,29 +1935,60 @@ exports[`<Home /> should render correctly with no user 1`] = `
                 />
               </div>
             </div>
-            <img
-              alt=""
-              class="sc-dmRaPn fGUcdG  gg-image__img--hide"
-              src="IMAGE_MOCK"
-            />
-            <img
-              alt=""
-              class="sc-kgflAQ kSJlNq  gg-image__img--hide"
-              src="IMAGE_MOCK"
-            />
+            <div
+              class="gg-image__img--hide-no-js"
+            >
+              <img
+                alt=""
+                class="sc-dmRaPn gBWRow"
+                src="IMAGE_MOCK"
+              />
+              <img
+                alt=""
+                class="sc-kgflAQ iUjZeU"
+                src="IMAGE_MOCK"
+              />
+            </div>
+            <div
+              class="gg-image__img--hide-js"
+            >
+              <img
+                alt=""
+                class="sc-dmRaPn jDIOwE"
+                src="IMAGE_MOCK"
+              />
+              <img
+                alt=""
+                class="sc-kgflAQ cCECw"
+                src="IMAGE_MOCK"
+              />
+            </div>
           </div>
         </div>
         <div
-          class="life-section__mobile-image-container"
+          class="life-sectionstyles__MobileImageWrapper-sc-17amgn9-5 bkmlEe"
         >
+          <style>
+            
+          .js .home__life-section-image--left-hide {
+          margin-left: -20vw;
+                opacity: 0;
+          }
+          .js .home__life-section-image--right-hide {
+          margin-right: -20vw;
+                opacity: 0;
+          }
+          
+          </style>
           <div
-            class="life-section__mobile-image-wrapper life-section__mobile-image-wrapper--left"
+            class="life-sectionstyles__MobileImageInnerWrapperLeft-sc-17amgn9-6 hKsbHM"
           >
             <div
-              class="sc-bjUoiL limWoi life-section__image-below-tablet life-section__image-below-tablet--left"
+              class="sc-bjUoiL limWoi"
             >
               <style>
-                .js .gg-image__img--hide {opacity: 0;}
+                .js .gg-image__img--hide-js {display: none;}
+                .no-js .gg-image__img--hide-no-js {display: none;}
               </style>
               <div
                 class="sc-idiyUo flPZkA"
@@ -1492,27 +2006,46 @@ exports[`<Home /> should render correctly with no user 1`] = `
                     />
                   </div>
                 </div>
-                <img
-                  alt=""
-                  class="sc-dmRaPn fGUcdG  gg-image__img--hide"
-                  src="IMAGE_MOCK"
-                />
-                <img
-                  alt=""
-                  class="sc-kgflAQ kSJlNq  gg-image__img--hide"
-                  src="IMAGE_MOCK"
-                />
+                <div
+                  class="gg-image__img--hide-no-js"
+                >
+                  <img
+                    alt=""
+                    class="sc-dmRaPn gBWRow"
+                    src="IMAGE_MOCK"
+                  />
+                  <img
+                    alt=""
+                    class="sc-kgflAQ iUjZeU"
+                    src="IMAGE_MOCK"
+                  />
+                </div>
+                <div
+                  class="gg-image__img--hide-js"
+                >
+                  <img
+                    alt=""
+                    class="sc-dmRaPn jDIOwE"
+                    src="IMAGE_MOCK"
+                  />
+                  <img
+                    alt=""
+                    class="sc-kgflAQ cCECw"
+                    src="IMAGE_MOCK"
+                  />
+                </div>
               </div>
             </div>
           </div>
           <div
-            class="life-section__mobile-image-wrapper life-section__mobile-image-wrapper--right"
+            class="life-sectionstyles__MobileImageInnerWrapperRight-sc-17amgn9-7 fwfLdM"
           >
             <div
-              class="sc-bjUoiL limWoi life-section__image-below-tablet life-section__image-below-tablet--right"
+              class="sc-bjUoiL limWoi"
             >
               <style>
-                .js .gg-image__img--hide {opacity: 0;}
+                .js .gg-image__img--hide-js {display: none;}
+                .no-js .gg-image__img--hide-no-js {display: none;}
               </style>
               <div
                 class="sc-idiyUo flPZkA"
@@ -1530,16 +2063,34 @@ exports[`<Home /> should render correctly with no user 1`] = `
                     />
                   </div>
                 </div>
-                <img
-                  alt=""
-                  class="sc-dmRaPn fGUcdG  gg-image__img--hide"
-                  src="IMAGE_MOCK"
-                />
-                <img
-                  alt=""
-                  class="sc-kgflAQ kSJlNq  gg-image__img--hide"
-                  src="IMAGE_MOCK"
-                />
+                <div
+                  class="gg-image__img--hide-no-js"
+                >
+                  <img
+                    alt=""
+                    class="sc-dmRaPn gBWRow"
+                    src="IMAGE_MOCK"
+                  />
+                  <img
+                    alt=""
+                    class="sc-kgflAQ iUjZeU"
+                    src="IMAGE_MOCK"
+                  />
+                </div>
+                <div
+                  class="gg-image__img--hide-js"
+                >
+                  <img
+                    alt=""
+                    class="sc-dmRaPn jDIOwE"
+                    src="IMAGE_MOCK"
+                  />
+                  <img
+                    alt=""
+                    class="sc-kgflAQ cCECw"
+                    src="IMAGE_MOCK"
+                  />
+                </div>
               </div>
             </div>
           </div>
@@ -1547,22 +2098,29 @@ exports[`<Home /> should render correctly with no user 1`] = `
       </div>
     </div>
     <div
-      class="home__photo-section"
+      class="homestyles__StyledPhotoSection-sc-d0smz9-2 fHDLeh"
     >
       <div
-        class="photo-section__outer"
+        class="photo-sectionstyles__Wrapper-sc-1vxd7ly-0 jZerSY"
       >
         <div
-          class="photo-section__content"
+          class="photo-sectionstyles__Content-sc-1vxd7ly-1 hRjbc"
         >
           <div
-            class="animated-image__outer"
+            class="animated-imagestyles__Wrapper-sc-1ah0zqa-0 TxyKS"
           >
+            <style>
+              .js .home__animated-image--hidden {
+            top: 6rem;
+            opacity: 0;
+          }
+            </style>
             <div
-              class="sc-bjUoiL limWoi animated-image__image animated-image__image--hide"
+              class="sc-bjUoiL limWoi animated-imagestyles__StyledImage-sc-1ah0zqa-1 eMwtAl home__animated-image--hidden"
             >
               <style>
-                .js .gg-image__img--hide {opacity: 0;}
+                .js .gg-image__img--hide-js {display: none;}
+                .no-js .gg-image__img--hide-no-js {display: none;}
               </style>
               <div
                 class="sc-idiyUo flPZkA"
@@ -1580,16 +2138,34 @@ exports[`<Home /> should render correctly with no user 1`] = `
                     />
                   </div>
                 </div>
-                <img
-                  alt="Me"
-                  class="sc-dmRaPn fGUcdG  gg-image__img--hide"
-                  src="https://i.imgur.com/L0Rm1ZC.jpg"
-                />
-                <img
-                  alt="Me"
-                  class="sc-kgflAQ kSJlNq  gg-image__img--hide"
-                  src="https://i.imgur.com/L0Rm1ZC.jpg"
-                />
+                <div
+                  class="gg-image__img--hide-no-js"
+                >
+                  <img
+                    alt="Me"
+                    class="sc-dmRaPn gBWRow"
+                    src="https://i.imgur.com/L0Rm1ZC.jpg"
+                  />
+                  <img
+                    alt="Me"
+                    class="sc-kgflAQ iUjZeU"
+                    src="https://i.imgur.com/L0Rm1ZC.jpg"
+                  />
+                </div>
+                <div
+                  class="gg-image__img--hide-js"
+                >
+                  <img
+                    alt="Me"
+                    class="sc-dmRaPn jDIOwE"
+                    src="https://i.imgur.com/L0Rm1ZC.jpg"
+                  />
+                  <img
+                    alt="Me"
+                    class="sc-kgflAQ cCECw"
+                    src="https://i.imgur.com/L0Rm1ZC.jpg"
+                  />
+                </div>
               </div>
             </div>
           </div>
@@ -1597,19 +2173,19 @@ exports[`<Home /> should render correctly with no user 1`] = `
       </div>
     </div>
     <div
-      class="home__about-section"
+      class="homestyles__StyledAboutSection-sc-d0smz9-3 hLdjKh"
     >
       <div
-        class="about-section__outer"
+        class="about-sectionstyles__Wrapper-sc-161fh79-0 bPRmDB"
       >
         <span
-          class="sc-crXcEl hyjoRq about-section__paragraph"
+          class="sc-hAZoDl LEXuB about-sectionstyles__StyledParagraph-sc-161fh79-1 eEUKqc"
         >
           This site is built in
            
           <a
             aria-label="React (opens in a new tab)"
-            class="sc-ftvSup bvTsjB"
+            class="sc-ftvSup cMmkUr"
             href="https://reactjs.org/"
             rel="noopener noreferrer"
             target="_blank"
@@ -1636,7 +2212,7 @@ exports[`<Home /> should render correctly with no user 1`] = `
            
           <a
             aria-label="Redux (opens in a new tab)"
-            class="sc-ftvSup bvTsjB"
+            class="sc-ftvSup cMmkUr"
             href="https://redux.js.org/"
             rel="noopener noreferrer"
             target="_blank"
@@ -1663,7 +2239,7 @@ exports[`<Home /> should render correctly with no user 1`] = `
            
           <a
             aria-label="Next.js (opens in a new tab)"
-            class="sc-ftvSup bvTsjB"
+            class="sc-ftvSup cMmkUr"
             href="https://nextjs.org/"
             rel="noopener noreferrer"
             target="_blank"
@@ -1689,7 +2265,7 @@ exports[`<Home /> should render correctly with no user 1`] = `
            
           <a
             aria-label="AWS (opens in a new tab)"
-            class="sc-ftvSup bvTsjB"
+            class="sc-ftvSup cMmkUr"
             href="https://aws.amazon.com/"
             rel="noopener noreferrer"
             target="_blank"
@@ -1714,19 +2290,25 @@ exports[`<Home /> should render correctly with no user 1`] = `
           . I use it to experiment with things, share stuff I've figured out, and allow people to contact me.
         </span>
         <div
-          class="contact-link__outer"
+          class="contact-linkstyles__Wrapper-sc-1f9dgs5-0 hknrdW"
         >
+          <style>
+            
+        .no-js .home__contact--hide {
+        display: none;
+        }
+          </style>
           <div
-            class="contact-link__content"
+            class="contact-linkstyles__Content-sc-1f9dgs5-1 cmohzj"
           >
             <a
-              class="sc-ftvSup bvTsjB contact-link__link"
+              class="sc-ftvSup cMmkUr contact-linkstyles__StyledTextLink-sc-1f9dgs5-2 dZxlbK"
               href="/contact"
             >
               Get in touch
             </a>
             <div
-              class="contact-link__cloud"
+              class="contact-linkstyles__Cloud-sc-1f9dgs5-3 cEZzVo home__contact--hide"
               style="left: 300%;"
             />
           </div>
@@ -1749,31 +2331,31 @@ exports[`<Home /> should render correctly with user 1`] = `
       Hey! I'm George.
     </h1>
     <div
-      class="home__work-section"
+      class="homestyles__StyledWorkSection-sc-d0smz9-0 jrSJcZ"
     >
       <div
-        class="work-section__outer"
+        class="work-sectionstyles__Wrapper-sc-1t4zqac-0 cYTwZx"
       >
         <div
-          class="work-section__content"
+          class="work-sectionstyles__Content-sc-1t4zqac-1 jDtMJd"
         >
           <div
-            class="sc-evZas fjRNQE"
+            class="sc-crXcEl hTWOhI"
           >
             <h1
-              class="sc-dkzDqf iBtyHU sc-hAZoDl VIrFO"
+              class="sc-dkzDqf iBtyHU sc-ksZaOG dCXhIJ"
               id="work"
             >
               Work
             </h1>
             <span
-              class="sc-crXcEl hyjoRq work-section__paragraph"
+              class="sc-hAZoDl LEXuB work-sectionstyles__StyledParagraph-sc-1t4zqac-3 dAHWkA"
             >
               I'm a web developer at
                
               <a
                 aria-label="Typeform (opens in a new tab)"
-                class="sc-ftvSup bvTsjB"
+                class="sc-ftvSup cMmkUr"
                 href="https://typeform.com/"
                 rel="noopener noreferrer"
                 target="_blank"
@@ -1801,7 +2383,7 @@ exports[`<Home /> should render correctly with user 1`] = `
               I’m also an accessibility champion and design system enthusiast.
               <br />
               <a
-                class="sc-ftvSup bvTsjB"
+                class="sc-ftvSup cMmkUr"
                 href="/work"
               >
                 Learn more about my work
@@ -1810,16 +2392,23 @@ exports[`<Home /> should render correctly with user 1`] = `
           </div>
         </div>
         <div
-          class="phones__outer work-section__graphic"
+          class="phonesstyles__Wrapper-sc-qc041h-0 jABYOt work-sectionstyles__Graphic-sc-1t4zqac-2 fPqDqJ"
         >
           <div
-            class="sliding-phone__outer phones__phone"
+            class="sliding-phonestyles__Wrapper-sc-1ngyhd8-0 eVwAsN phonesstyles__StyledSlidingPhone-sc-qc041h-1 dFrbPC"
           >
+            <style>
+              .js .home__sliding-phone--hidden {
+        top: 6rem;
+        opacity: 0;
+      }
+            </style>
             <div
-              class="sc-bjUoiL limWoi sliding-phone__image sliding-phone__image--hide"
+              class="sc-bjUoiL limWoi sliding-phonestyles__StyledImage-sc-1ngyhd8-1 bhVyjo home__sliding-phone--hidden"
             >
               <style>
-                .js .gg-image__img--hide {opacity: 0;}
+                .js .gg-image__img--hide-js {display: none;}
+                .no-js .gg-image__img--hide-no-js {display: none;}
               </style>
               <div
                 class="sc-idiyUo flPZkA"
@@ -1837,27 +2426,52 @@ exports[`<Home /> should render correctly with user 1`] = `
                     />
                   </div>
                 </div>
-                <img
-                  alt="A screenshot of our Backpack design principles"
-                  class="sc-dmRaPn fGUcdG  gg-image__img--hide"
-                  src="IMAGE_MOCK"
-                />
-                <img
-                  alt="A screenshot of our Backpack design principles"
-                  class="sc-kgflAQ kSJlNq  gg-image__img--hide"
-                  src="IMAGE_MOCK"
-                />
+                <div
+                  class="gg-image__img--hide-no-js"
+                >
+                  <img
+                    alt="A screenshot of our Backpack design principles"
+                    class="sc-dmRaPn gBWRow"
+                    src="IMAGE_MOCK"
+                  />
+                  <img
+                    alt="A screenshot of our Backpack design principles"
+                    class="sc-kgflAQ iUjZeU"
+                    src="IMAGE_MOCK"
+                  />
+                </div>
+                <div
+                  class="gg-image__img--hide-js"
+                >
+                  <img
+                    alt="A screenshot of our Backpack design principles"
+                    class="sc-dmRaPn jDIOwE"
+                    src="IMAGE_MOCK"
+                  />
+                  <img
+                    alt="A screenshot of our Backpack design principles"
+                    class="sc-kgflAQ cCECw"
+                    src="IMAGE_MOCK"
+                  />
+                </div>
               </div>
             </div>
           </div>
           <div
-            class="sliding-phone__outer phones__phone"
+            class="sliding-phonestyles__Wrapper-sc-1ngyhd8-0 eVwAsN phonesstyles__StyledSlidingPhone-sc-qc041h-1 dFrbPC"
           >
+            <style>
+              .js .home__sliding-phone--hidden {
+        top: 6rem;
+        opacity: 0;
+      }
+            </style>
             <div
-              class="sc-bjUoiL limWoi sliding-phone__image sliding-phone__image--hide"
+              class="sc-bjUoiL limWoi sliding-phonestyles__StyledImage-sc-1ngyhd8-1 bhVyjo home__sliding-phone--hidden"
             >
               <style>
-                .js .gg-image__img--hide {opacity: 0;}
+                .js .gg-image__img--hide-js {display: none;}
+                .no-js .gg-image__img--hide-no-js {display: none;}
               </style>
               <div
                 class="sc-idiyUo flPZkA"
@@ -1875,27 +2489,52 @@ exports[`<Home /> should render correctly with user 1`] = `
                     />
                   </div>
                 </div>
-                <img
-                  alt="A screenshot of our bar chart component on iOS"
-                  class="sc-dmRaPn fGUcdG  gg-image__img--hide"
-                  src="IMAGE_MOCK"
-                />
-                <img
-                  alt="A screenshot of our bar chart component on iOS"
-                  class="sc-kgflAQ kSJlNq  gg-image__img--hide"
-                  src="IMAGE_MOCK"
-                />
+                <div
+                  class="gg-image__img--hide-no-js"
+                >
+                  <img
+                    alt="A screenshot of our bar chart component on iOS"
+                    class="sc-dmRaPn gBWRow"
+                    src="IMAGE_MOCK"
+                  />
+                  <img
+                    alt="A screenshot of our bar chart component on iOS"
+                    class="sc-kgflAQ iUjZeU"
+                    src="IMAGE_MOCK"
+                  />
+                </div>
+                <div
+                  class="gg-image__img--hide-js"
+                >
+                  <img
+                    alt="A screenshot of our bar chart component on iOS"
+                    class="sc-dmRaPn jDIOwE"
+                    src="IMAGE_MOCK"
+                  />
+                  <img
+                    alt="A screenshot of our bar chart component on iOS"
+                    class="sc-kgflAQ cCECw"
+                    src="IMAGE_MOCK"
+                  />
+                </div>
               </div>
             </div>
           </div>
           <div
-            class="sliding-phone__outer phones__phone"
+            class="sliding-phonestyles__Wrapper-sc-1ngyhd8-0 eVwAsN phonesstyles__StyledSlidingPhone-sc-qc041h-1 dFrbPC"
           >
+            <style>
+              .js .home__sliding-phone--hidden {
+        top: 6rem;
+        opacity: 0;
+      }
+            </style>
             <div
-              class="sc-bjUoiL limWoi sliding-phone__image sliding-phone__image--hide"
+              class="sc-bjUoiL limWoi sliding-phonestyles__StyledImage-sc-1ngyhd8-1 bhVyjo home__sliding-phone--hidden"
             >
               <style>
-                .js .gg-image__img--hide {opacity: 0;}
+                .js .gg-image__img--hide-js {display: none;}
+                .no-js .gg-image__img--hide-no-js {display: none;}
               </style>
               <div
                 class="sc-idiyUo flPZkA"
@@ -1913,16 +2552,34 @@ exports[`<Home /> should render correctly with user 1`] = `
                     />
                   </div>
                 </div>
-                <img
-                  alt="A screenshot of our flare view component on web"
-                  class="sc-dmRaPn fGUcdG  gg-image__img--hide"
-                  src="IMAGE_MOCK"
-                />
-                <img
-                  alt="A screenshot of our flare view component on web"
-                  class="sc-kgflAQ kSJlNq  gg-image__img--hide"
-                  src="IMAGE_MOCK"
-                />
+                <div
+                  class="gg-image__img--hide-no-js"
+                >
+                  <img
+                    alt="A screenshot of our flare view component on web"
+                    class="sc-dmRaPn gBWRow"
+                    src="IMAGE_MOCK"
+                  />
+                  <img
+                    alt="A screenshot of our flare view component on web"
+                    class="sc-kgflAQ iUjZeU"
+                    src="IMAGE_MOCK"
+                  />
+                </div>
+                <div
+                  class="gg-image__img--hide-js"
+                >
+                  <img
+                    alt="A screenshot of our flare view component on web"
+                    class="sc-dmRaPn jDIOwE"
+                    src="IMAGE_MOCK"
+                  />
+                  <img
+                    alt="A screenshot of our flare view component on web"
+                    class="sc-kgflAQ cCECw"
+                    src="IMAGE_MOCK"
+                  />
+                </div>
               </div>
             </div>
           </div>
@@ -1930,17 +2587,18 @@ exports[`<Home /> should render correctly with user 1`] = `
       </div>
     </div>
     <div
-      class="home__life-section"
+      class="homestyles__StyledLifeSection-sc-d0smz9-1 hLkPtG"
     >
       <div
-        class="life-section__outer"
+        class="life-sectionstyles__Wrapper-sc-17amgn9-0 bHsFEN"
       >
         <div
-          class="sc-bjUoiL limWoi life-section__image-above-tablet life-section__image-above-tablet--left"
+          class="sc-bjUoiL limWoi life-sectionstyles__ImageAboveTabletLeft-sc-17amgn9-3 kVMvQF"
           style="margin-top: 2.6rem; transform: rotate(-10.6deg);"
         >
           <style>
-            .js .gg-image__img--hide {opacity: 0;}
+            .js .gg-image__img--hide-js {display: none;}
+            .no-js .gg-image__img--hide-no-js {display: none;}
           </style>
           <div
             class="sc-idiyUo flPZkA"
@@ -1958,44 +2616,62 @@ exports[`<Home /> should render correctly with user 1`] = `
                 />
               </div>
             </div>
-            <img
-              alt=""
-              class="sc-dmRaPn fGUcdG  gg-image__img--hide"
-              src="IMAGE_MOCK"
-            />
-            <img
-              alt=""
-              class="sc-kgflAQ kSJlNq  gg-image__img--hide"
-              src="IMAGE_MOCK"
-            />
+            <div
+              class="gg-image__img--hide-no-js"
+            >
+              <img
+                alt=""
+                class="sc-dmRaPn gBWRow"
+                src="IMAGE_MOCK"
+              />
+              <img
+                alt=""
+                class="sc-kgflAQ iUjZeU"
+                src="IMAGE_MOCK"
+              />
+            </div>
+            <div
+              class="gg-image__img--hide-js"
+            >
+              <img
+                alt=""
+                class="sc-dmRaPn jDIOwE"
+                src="IMAGE_MOCK"
+              />
+              <img
+                alt=""
+                class="sc-kgflAQ cCECw"
+                src="IMAGE_MOCK"
+              />
+            </div>
           </div>
         </div>
         <div
-          class="life-section__content"
+          class="life-sectionstyles__Content-sc-17amgn9-2 izamhA"
         >
           <div
-            class="sc-evZas fjRNQE"
+            class="sc-crXcEl hTWOhI"
           >
             <h1
-              class="sc-dkzDqf iBtyHU sc-hAZoDl VIrFO"
+              class="sc-dkzDqf iBtyHU sc-ksZaOG dCXhIJ"
               id="life"
             >
               Life
             </h1>
             <span
-              class="sc-crXcEl hyjoRq life-section__paragraph"
+              class="sc-hAZoDl LEXuB life-sectionstyles__StyledParagraph-sc-17amgn9-1 kRjsHX"
             >
               I love travel and photography, and occasionally write other stuff.
               <br />
               <a
-                class="sc-ftvSup bvTsjB"
+                class="sc-ftvSup cMmkUr"
                 href="/blog"
               >
                 Blog
               </a>
               <br />
               <a
-                class="sc-ftvSup bvTsjB"
+                class="sc-ftvSup cMmkUr"
                 href="/photography"
               >
                 Photography
@@ -2003,17 +2679,18 @@ exports[`<Home /> should render correctly with user 1`] = `
             </span>
           </div>
           <span
-            class="sc-crXcEl hyjoRq life-section__paragraph"
+            class="sc-hAZoDl LEXuB life-sectionstyles__StyledParagraph-sc-17amgn9-1 kRjsHX"
           >
-            I got engaged recently in Iceland, and live with my amazing fiancée and Tigger the cat.
+            I live on the south coast of the UK with my wife, cat and dog.
           </span>
         </div>
         <div
-          class="sc-bjUoiL limWoi life-section__image-above-tablet life-section__image-above-tablet--right"
+          class="sc-bjUoiL limWoi life-sectionstyles__ImageAboveTabletRight-sc-17amgn9-4 kbUisf"
           style="margin-top: -0.39999999999999947rem; transform: rotate(4.6deg);"
         >
           <style>
-            .js .gg-image__img--hide {opacity: 0;}
+            .js .gg-image__img--hide-js {display: none;}
+            .no-js .gg-image__img--hide-no-js {display: none;}
           </style>
           <div
             class="sc-idiyUo flPZkA"
@@ -2031,29 +2708,60 @@ exports[`<Home /> should render correctly with user 1`] = `
                 />
               </div>
             </div>
-            <img
-              alt=""
-              class="sc-dmRaPn fGUcdG  gg-image__img--hide"
-              src="IMAGE_MOCK"
-            />
-            <img
-              alt=""
-              class="sc-kgflAQ kSJlNq  gg-image__img--hide"
-              src="IMAGE_MOCK"
-            />
+            <div
+              class="gg-image__img--hide-no-js"
+            >
+              <img
+                alt=""
+                class="sc-dmRaPn gBWRow"
+                src="IMAGE_MOCK"
+              />
+              <img
+                alt=""
+                class="sc-kgflAQ iUjZeU"
+                src="IMAGE_MOCK"
+              />
+            </div>
+            <div
+              class="gg-image__img--hide-js"
+            >
+              <img
+                alt=""
+                class="sc-dmRaPn jDIOwE"
+                src="IMAGE_MOCK"
+              />
+              <img
+                alt=""
+                class="sc-kgflAQ cCECw"
+                src="IMAGE_MOCK"
+              />
+            </div>
           </div>
         </div>
         <div
-          class="life-section__mobile-image-container"
+          class="life-sectionstyles__MobileImageWrapper-sc-17amgn9-5 bkmlEe"
         >
+          <style>
+            
+          .js .home__life-section-image--left-hide {
+          margin-left: -20vw;
+                opacity: 0;
+          }
+          .js .home__life-section-image--right-hide {
+          margin-right: -20vw;
+                opacity: 0;
+          }
+          
+          </style>
           <div
-            class="life-section__mobile-image-wrapper life-section__mobile-image-wrapper--left"
+            class="life-sectionstyles__MobileImageInnerWrapperLeft-sc-17amgn9-6 hKsbHM"
           >
             <div
-              class="sc-bjUoiL limWoi life-section__image-below-tablet life-section__image-below-tablet--left"
+              class="sc-bjUoiL limWoi"
             >
               <style>
-                .js .gg-image__img--hide {opacity: 0;}
+                .js .gg-image__img--hide-js {display: none;}
+                .no-js .gg-image__img--hide-no-js {display: none;}
               </style>
               <div
                 class="sc-idiyUo flPZkA"
@@ -2071,27 +2779,46 @@ exports[`<Home /> should render correctly with user 1`] = `
                     />
                   </div>
                 </div>
-                <img
-                  alt=""
-                  class="sc-dmRaPn fGUcdG  gg-image__img--hide"
-                  src="IMAGE_MOCK"
-                />
-                <img
-                  alt=""
-                  class="sc-kgflAQ kSJlNq  gg-image__img--hide"
-                  src="IMAGE_MOCK"
-                />
+                <div
+                  class="gg-image__img--hide-no-js"
+                >
+                  <img
+                    alt=""
+                    class="sc-dmRaPn gBWRow"
+                    src="IMAGE_MOCK"
+                  />
+                  <img
+                    alt=""
+                    class="sc-kgflAQ iUjZeU"
+                    src="IMAGE_MOCK"
+                  />
+                </div>
+                <div
+                  class="gg-image__img--hide-js"
+                >
+                  <img
+                    alt=""
+                    class="sc-dmRaPn jDIOwE"
+                    src="IMAGE_MOCK"
+                  />
+                  <img
+                    alt=""
+                    class="sc-kgflAQ cCECw"
+                    src="IMAGE_MOCK"
+                  />
+                </div>
               </div>
             </div>
           </div>
           <div
-            class="life-section__mobile-image-wrapper life-section__mobile-image-wrapper--right"
+            class="life-sectionstyles__MobileImageInnerWrapperRight-sc-17amgn9-7 fwfLdM"
           >
             <div
-              class="sc-bjUoiL limWoi life-section__image-below-tablet life-section__image-below-tablet--right"
+              class="sc-bjUoiL limWoi"
             >
               <style>
-                .js .gg-image__img--hide {opacity: 0;}
+                .js .gg-image__img--hide-js {display: none;}
+                .no-js .gg-image__img--hide-no-js {display: none;}
               </style>
               <div
                 class="sc-idiyUo flPZkA"
@@ -2109,16 +2836,34 @@ exports[`<Home /> should render correctly with user 1`] = `
                     />
                   </div>
                 </div>
-                <img
-                  alt=""
-                  class="sc-dmRaPn fGUcdG  gg-image__img--hide"
-                  src="IMAGE_MOCK"
-                />
-                <img
-                  alt=""
-                  class="sc-kgflAQ kSJlNq  gg-image__img--hide"
-                  src="IMAGE_MOCK"
-                />
+                <div
+                  class="gg-image__img--hide-no-js"
+                >
+                  <img
+                    alt=""
+                    class="sc-dmRaPn gBWRow"
+                    src="IMAGE_MOCK"
+                  />
+                  <img
+                    alt=""
+                    class="sc-kgflAQ iUjZeU"
+                    src="IMAGE_MOCK"
+                  />
+                </div>
+                <div
+                  class="gg-image__img--hide-js"
+                >
+                  <img
+                    alt=""
+                    class="sc-dmRaPn jDIOwE"
+                    src="IMAGE_MOCK"
+                  />
+                  <img
+                    alt=""
+                    class="sc-kgflAQ cCECw"
+                    src="IMAGE_MOCK"
+                  />
+                </div>
               </div>
             </div>
           </div>
@@ -2126,22 +2871,29 @@ exports[`<Home /> should render correctly with user 1`] = `
       </div>
     </div>
     <div
-      class="home__photo-section"
+      class="homestyles__StyledPhotoSection-sc-d0smz9-2 fHDLeh"
     >
       <div
-        class="photo-section__outer"
+        class="photo-sectionstyles__Wrapper-sc-1vxd7ly-0 jZerSY"
       >
         <div
-          class="photo-section__content"
+          class="photo-sectionstyles__Content-sc-1vxd7ly-1 hRjbc"
         >
           <div
-            class="animated-image__outer"
+            class="animated-imagestyles__Wrapper-sc-1ah0zqa-0 TxyKS"
           >
+            <style>
+              .js .home__animated-image--hidden {
+            top: 6rem;
+            opacity: 0;
+          }
+            </style>
             <div
-              class="sc-bjUoiL limWoi animated-image__image animated-image__image--hide"
+              class="sc-bjUoiL limWoi animated-imagestyles__StyledImage-sc-1ah0zqa-1 eMwtAl home__animated-image--hidden"
             >
               <style>
-                .js .gg-image__img--hide {opacity: 0;}
+                .js .gg-image__img--hide-js {display: none;}
+                .no-js .gg-image__img--hide-no-js {display: none;}
               </style>
               <div
                 class="sc-idiyUo flPZkA"
@@ -2159,16 +2911,34 @@ exports[`<Home /> should render correctly with user 1`] = `
                     />
                   </div>
                 </div>
-                <img
-                  alt="Me"
-                  class="sc-dmRaPn fGUcdG  gg-image__img--hide"
-                  src="https://i.imgur.com/L0Rm1ZC.jpg"
-                />
-                <img
-                  alt="Me"
-                  class="sc-kgflAQ kSJlNq  gg-image__img--hide"
-                  src="https://i.imgur.com/L0Rm1ZC.jpg"
-                />
+                <div
+                  class="gg-image__img--hide-no-js"
+                >
+                  <img
+                    alt="Me"
+                    class="sc-dmRaPn gBWRow"
+                    src="https://i.imgur.com/L0Rm1ZC.jpg"
+                  />
+                  <img
+                    alt="Me"
+                    class="sc-kgflAQ iUjZeU"
+                    src="https://i.imgur.com/L0Rm1ZC.jpg"
+                  />
+                </div>
+                <div
+                  class="gg-image__img--hide-js"
+                >
+                  <img
+                    alt="Me"
+                    class="sc-dmRaPn jDIOwE"
+                    src="https://i.imgur.com/L0Rm1ZC.jpg"
+                  />
+                  <img
+                    alt="Me"
+                    class="sc-kgflAQ cCECw"
+                    src="https://i.imgur.com/L0Rm1ZC.jpg"
+                  />
+                </div>
               </div>
             </div>
           </div>
@@ -2176,19 +2946,19 @@ exports[`<Home /> should render correctly with user 1`] = `
       </div>
     </div>
     <div
-      class="home__about-section"
+      class="homestyles__StyledAboutSection-sc-d0smz9-3 hLdjKh"
     >
       <div
-        class="about-section__outer"
+        class="about-sectionstyles__Wrapper-sc-161fh79-0 bPRmDB"
       >
         <span
-          class="sc-crXcEl hyjoRq about-section__paragraph"
+          class="sc-hAZoDl LEXuB about-sectionstyles__StyledParagraph-sc-161fh79-1 eEUKqc"
         >
           This site is built in
            
           <a
             aria-label="React (opens in a new tab)"
-            class="sc-ftvSup bvTsjB"
+            class="sc-ftvSup cMmkUr"
             href="https://reactjs.org/"
             rel="noopener noreferrer"
             target="_blank"
@@ -2215,7 +2985,7 @@ exports[`<Home /> should render correctly with user 1`] = `
            
           <a
             aria-label="Redux (opens in a new tab)"
-            class="sc-ftvSup bvTsjB"
+            class="sc-ftvSup cMmkUr"
             href="https://redux.js.org/"
             rel="noopener noreferrer"
             target="_blank"
@@ -2242,7 +3012,7 @@ exports[`<Home /> should render correctly with user 1`] = `
            
           <a
             aria-label="Next.js (opens in a new tab)"
-            class="sc-ftvSup bvTsjB"
+            class="sc-ftvSup cMmkUr"
             href="https://nextjs.org/"
             rel="noopener noreferrer"
             target="_blank"
@@ -2268,7 +3038,7 @@ exports[`<Home /> should render correctly with user 1`] = `
            
           <a
             aria-label="AWS (opens in a new tab)"
-            class="sc-ftvSup bvTsjB"
+            class="sc-ftvSup cMmkUr"
             href="https://aws.amazon.com/"
             rel="noopener noreferrer"
             target="_blank"
@@ -2293,19 +3063,25 @@ exports[`<Home /> should render correctly with user 1`] = `
           . I use it to experiment with things, share stuff I've figured out, and allow people to contact me.
         </span>
         <div
-          class="contact-link__outer"
+          class="contact-linkstyles__Wrapper-sc-1f9dgs5-0 hknrdW"
         >
+          <style>
+            
+        .no-js .home__contact--hide {
+        display: none;
+        }
+          </style>
           <div
-            class="contact-link__content"
+            class="contact-linkstyles__Content-sc-1f9dgs5-1 cmohzj"
           >
             <a
-              class="sc-ftvSup bvTsjB contact-link__link"
+              class="sc-ftvSup cMmkUr contact-linkstyles__StyledTextLink-sc-1f9dgs5-2 dZxlbK"
               href="/contact"
             >
               Get in touch
             </a>
             <div
-              class="contact-link__cloud"
+              class="contact-linkstyles__Cloud-sc-1f9dgs5-3 cEZzVo home__contact--hide"
               style="left: 300%;"
             />
           </div>

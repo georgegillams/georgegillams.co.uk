@@ -52,7 +52,7 @@ exports[`<MagicLogin /> should render correctly with logInError 1`] = `
         Invalid session
         <br />
         <a
-          class="sc-iBkjds kXOvCG"
+          class="sc-iBkjds JLudk"
           href="/login"
         >
           Try logging in again
@@ -99,7 +99,7 @@ exports[`<MagicLogin /> should render correctly with user 1`] = `
        page
       <br />
       <a
-        class="sc-iBkjds kXOvCG"
+        class="sc-iBkjds JLudk"
         href="/account"
       >
         Not been redirected? Click here

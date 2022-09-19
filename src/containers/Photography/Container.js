@@ -33,6 +33,7 @@ const Photography = props => {
           <TextLink hrefExternal href="https://gurushots.com/georgegillams/achievements">
             Find me on GuruShots
           </TextLink>
+          <TextLink href="/contact">Contact me about photography work</TextLink>
         </LinkContainer>
         <LoadingCover
           loadingSkeleton={PhotographySkeleton}

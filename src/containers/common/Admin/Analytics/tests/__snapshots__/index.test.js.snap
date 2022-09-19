@@ -17,7 +17,7 @@ exports[`<AdminAnalytics /> should render correctly - index 1`] = `
       You need to be logged in with an admin account to view this content.
       <br />
       <a
-        class="sc-iBkjds kXOvCG"
+        class="sc-iBkjds JLudk"
         href="/login"
       >
         Got a different admin account? Log in here.
@@ -34,7 +34,7 @@ exports[`<AdminAnalytics /> should render correctly with admin user 1`] = `
       class="sc-kDDrLX emakin"
     >
       <a
-        class="sc-iBkjds kXOvCG"
+        class="sc-iBkjds JLudk"
         href="/admin"
       >
         ⇠ Admin
@@ -81,7 +81,7 @@ exports[`<AdminAnalytics /> should render correctly with analytics 1`] = `
       class="sc-kDDrLX emakin"
     >
       <a
-        class="sc-iBkjds kXOvCG"
+        class="sc-iBkjds JLudk"
         href="/admin"
       >
         ⇠ Admin
@@ -138,7 +138,7 @@ exports[`<AdminAnalytics /> should render correctly with initial state 1`] = `
       You need to be logged in with an admin account to view this content.
       <br />
       <a
-        class="sc-iBkjds kXOvCG"
+        class="sc-iBkjds JLudk"
         href="/login"
       >
         Got a different admin account? Log in here.
@@ -220,7 +220,7 @@ exports[`<AdminAnalytics /> should render correctly with loading=true 1`] = `
       class="sc-kDDrLX emakin"
     >
       <a
-        class="sc-iBkjds kXOvCG"
+        class="sc-iBkjds JLudk"
         href="/admin"
       >
         ⇠ Admin
@@ -311,7 +311,7 @@ exports[`<AdminAnalytics /> should render correctly with user 1`] = `
       You need to be logged in with an admin account to view this content.
       <br />
       <a
-        class="sc-iBkjds kXOvCG"
+        class="sc-iBkjds JLudk"
         href="/login"
       >
         Got a different admin account? Log in here.

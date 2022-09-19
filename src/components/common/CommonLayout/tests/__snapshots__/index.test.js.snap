@@ -18,22 +18,14 @@ exports[`<Layout /> Should render correctly 1`] = `
       class="logostyles__OuterContainer-sc-1fentac-0 ftAWyG footerstyles__StyledLogo-sc-ojjd19-1 dHUBSN"
     >
       <a
-<<<<<<< HEAD
         class="logostyles__StyledLink-sc-1fentac-1 hziiVO"
-=======
-        class="logostyles__StyledLink-sc-1fentac-1 jmykYS"
->>>>>>> acbe0cf7 (fix: Styled everything — common code)
         href="/"
       >
         <span
           aria-label="Home page"
           class="logostyles__LargeText-sc-1fentac-2 eneHCc"
         >
-<<<<<<< HEAD
           G
-=======
-          LOGO
->>>>>>> acbe0cf7 (fix: Styled everything — common code)
         </span>
       </a>
     </div>
@@ -95,25 +87,53 @@ exports[`<Layout /> Should render correctly 1`] = `
         class="footer-navstyles__Section-sc-7lmnsj-1 iFmILp"
       >
         <a
-          class="sc-iBkjds cXbvnS"
+          class="sc-iBkjds LHtmg"
+          href="/blog"
+        >
+          Blog
+        </a>
+        <a
+          class="sc-iBkjds LHtmg"
+          href="/photography"
+        >
+          Photography
+        </a>
+        <a
+          class="sc-iBkjds LHtmg"
+          href="/work"
+        >
+          Work
+        </a>
+        <a
+          class="sc-iBkjds LHtmg"
+          href="/contact"
+        >
+          Contact
+        </a>
+      </div>
+      <div
+        class="footer-navstyles__Section-sc-7lmnsj-1 iFmILp"
+      >
+        <a
+          class="sc-iBkjds LHtmg"
           href="/sitemap"
         >
           Site map
         </a>
         <a
-          class="sc-iBkjds cXbvnS"
+          class="sc-iBkjds LHtmg"
           href="/privacy-policy"
         >
           Privacy
         </a>
         <a
-          class="sc-iBkjds cXbvnS"
+          class="sc-iBkjds LHtmg"
           href="/login"
         >
           Login/Account
         </a>
         <a
-          class="sc-iBkjds cXbvnS"
+          class="sc-iBkjds LHtmg"
           href="/status"
         >
           Status
@@ -142,22 +162,14 @@ exports[`<Layout /> Should render correctly with spread props 1`] = `
       class="logostyles__OuterContainer-sc-1fentac-0 ftAWyG footerstyles__StyledLogo-sc-ojjd19-1 dHUBSN"
     >
       <a
-<<<<<<< HEAD
         class="logostyles__StyledLink-sc-1fentac-1 hziiVO"
-=======
-        class="logostyles__StyledLink-sc-1fentac-1 jmykYS"
->>>>>>> acbe0cf7 (fix: Styled everything — common code)
         href="/"
       >
         <span
           aria-label="Home page"
           class="logostyles__LargeText-sc-1fentac-2 eneHCc"
         >
-<<<<<<< HEAD
           G
-=======
-          LOGO
->>>>>>> acbe0cf7 (fix: Styled everything — common code)
         </span>
       </a>
     </div>
@@ -219,25 +231,53 @@ exports[`<Layout /> Should render correctly with spread props 1`] = `
         class="footer-navstyles__Section-sc-7lmnsj-1 iFmILp"
       >
         <a
-          class="sc-iBkjds cXbvnS"
+          class="sc-iBkjds LHtmg"
+          href="/blog"
+        >
+          Blog
+        </a>
+        <a
+          class="sc-iBkjds LHtmg"
+          href="/photography"
+        >
+          Photography
+        </a>
+        <a
+          class="sc-iBkjds LHtmg"
+          href="/work"
+        >
+          Work
+        </a>
+        <a
+          class="sc-iBkjds LHtmg"
+          href="/contact"
+        >
+          Contact
+        </a>
+      </div>
+      <div
+        class="footer-navstyles__Section-sc-7lmnsj-1 iFmILp"
+      >
+        <a
+          class="sc-iBkjds LHtmg"
           href="/sitemap"
         >
           Site map
         </a>
         <a
-          class="sc-iBkjds cXbvnS"
+          class="sc-iBkjds LHtmg"
           href="/privacy-policy"
         >
           Privacy
         </a>
         <a
-          class="sc-iBkjds cXbvnS"
+          class="sc-iBkjds LHtmg"
           href="/login"
         >
           Login/Account
         </a>
         <a
-          class="sc-iBkjds cXbvnS"
+          class="sc-iBkjds LHtmg"
           href="/status"
         >
           Status

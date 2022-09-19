@@ -3,20 +3,28 @@ import PropTypes from 'prop-types';
 
 import withScroll, { cleanRestScrollProps } from '@george-gillams/components/scroll-container';
 import Image from '@george-gillams/components/image';
-import Paragraph from '@george-gillams/components/paragraph';
 import Section from '@george-gillams/components/section';
 import TextLink from 'components/common/TextLink';
 
-import { useEntryAnimationClientOnly } from '@george-gillams/components/server-side-rendering';
 import travel from './images/travel.jpg';
 import cat from './images/cat.jpg';
+import {
+  Content,
+  ImageAboveTabletLeft,
+  ImageAboveTabletRight,
+  MobileImageInnerWrapperLeft,
+  MobileImageInnerWrapperRight,
+  MobileImageWrapper,
+  StyledParagraph,
+  Wrapper,
+} from './life-section.styles';
+import { JS_CLASSNAME } from '@george-gillams/components/js-feature-detector';
 
-const getClassName = c => c;
+const LEFT_IMAGE_HIDE_CLASSNAME = 'home__life-section-image--left-hide';
+const RIGHT_IMAGE_HIDE_CLASSNAME = 'home__life-section-image--right-hide';
 
 const LifeSection = props => {
-  const { scrollPositionVh, fullyInView, className, ...rest } = props;
-
-  const [isFirstRender, animationsEnabled] = useEntryAnimationClientOnly();
+  const { scrollPositionVh, fullyInView, ...rest } = props;
 
   cleanRestScrollProps(rest);
 
@@ -28,8 +36,8 @@ const LifeSection = props => {
   const scrollOffsetMin2 = -6;
   const scrollOffsetMax2 = 8;
   const scrollOffsetRange2 = scrollOffsetMax2 - scrollOffsetMin2;
-  const scrollPositionOffset1 = isFirstRender ? scrollOffsetMax1 : scrollOffsetMin1 + scrollOffsetRange1 * scrollFactor;
-  const scrollPositionOffset2 = isFirstRender ? scrollOffsetMax2 : scrollOffsetMin2 + scrollOffsetRange2 * scrollFactor;
+  const scrollPositionOffset1 = scrollOffsetMin1 + scrollOffsetRange1 * scrollFactor;
+  const scrollPositionOffset2 = scrollOffsetMin2 + scrollOffsetRange2 * scrollFactor;
 
   const rotationMin1 = -15;
   const rotationMax1 = -4;
@@ -41,9 +49,8 @@ const LifeSection = props => {
   const rotationPosition2 = rotationMin2 + rotationRange2 * scrollFactor;
 
   return (
-    <div className={getClassName('life-section__outer', className)} {...rest}>
-      <Image
-        className={getClassName('life-section__image-above-tablet', 'life-section__image-above-tablet--left')}
+    <Wrapper {...rest}>
+      <ImageAboveTabletLeft
         style={{ marginTop: `${scrollPositionOffset1}rem`, transform: `rotate(${rotationPosition1}deg)` }}
         imgProps={{
           alt: '',
@@ -53,22 +60,19 @@ const LifeSection = props => {
         lightSrc={travel}
         darkSrc={travel}
       />
-      <div className={getClassName('life-section__content')}>
+      <Content>
         <Section name="Life">
-          <Paragraph className={getClassName('life-section__paragraph')}>
+          <StyledParagraph>
             I love travel and photography, and occasionally write other stuff.
             <br />
             <TextLink href="/blog">Blog</TextLink>
             <br />
             <TextLink href="/photography">Photography</TextLink>
-          </Paragraph>
+          </StyledParagraph>
         </Section>
-        <Paragraph className={getClassName('life-section__paragraph')}>
-          I live on the south coast of the UK with my wife, cat and dog.
-        </Paragraph>
-      </div>
-      <Image
-        className={getClassName('life-section__image-above-tablet', 'life-section__image-above-tablet--right')}
+        <StyledParagraph>I live on the south coast of the UK with my wife, cat and dog.</StyledParagraph>
+      </Content>
+      <ImageAboveTabletRight
         style={{ marginTop: `${scrollPositionOffset2}rem`, transform: `rotate(${rotationPosition2}deg)` }}
         imgProps={{
           alt: '',
@@ -78,16 +82,21 @@ const LifeSection = props => {
         lightSrc={cat}
         darkSrc={cat}
       />
-      <div className={getClassName('life-section__mobile-image-container')}>
-        <div className={getClassName('life-section__mobile-image-wrapper', 'life-section__mobile-image-wrapper--left')}>
+      <MobileImageWrapper>
+        <style>
+          {`
+          .${JS_CLASSNAME} .${LEFT_IMAGE_HIDE_CLASSNAME} {
+          margin-left: -20vw;
+                opacity: 0;
+          }
+          .${JS_CLASSNAME} .${RIGHT_IMAGE_HIDE_CLASSNAME} {
+          margin-right: -20vw;
+                opacity: 0;
+          }
+          `}
+        </style>
+        <MobileImageInnerWrapperLeft className={fullyInView ? '' : LEFT_IMAGE_HIDE_CLASSNAME}>
           <Image
-            className={getClassName(
-              'life-section__image-below-tablet',
-              'life-section__image-below-tablet--left',
-              animationsEnabled ? 'life-section__image-below-tablet--animated' : '',
-              fullyInView || isFirstRender ? '' : 'life-section__image-below-tablet--left-hide'
-            )}
-            // style={{ marginTop: `${scrollPositionOffset1}rem` }}
             imgProps={{
               alt: '',
             }}
@@ -96,17 +105,9 @@ const LifeSection = props => {
             lightSrc={travel}
             darkSrc={travel}
           />
-        </div>
-        <div
-          className={getClassName('life-section__mobile-image-wrapper', 'life-section__mobile-image-wrapper--right')}>
+        </MobileImageInnerWrapperLeft>
+        <MobileImageInnerWrapperRight className={fullyInView ? '' : RIGHT_IMAGE_HIDE_CLASSNAME}>
           <Image
-            className={getClassName(
-              'life-section__image-below-tablet',
-              'life-section__image-below-tablet--right',
-              animationsEnabled ? 'life-section__image-below-tablet--animated' : '',
-              fullyInView || isFirstRender ? '' : 'life-section__image-below-tablet--right-hide'
-            )}
-            // style={{ marginTop: `${scrollPositionOffset1}rem` }}
             imgProps={{
               alt: '',
             }}
@@ -115,18 +116,17 @@ const LifeSection = props => {
             lightSrc={cat}
             darkSrc={cat}
           />
-        </div>
-      </div>
-    </div>
+        </MobileImageInnerWrapperRight>
+      </MobileImageWrapper>
+    </Wrapper>
   );
 };
 
 LifeSection.propTypes = {
   scrollPositionVh: PropTypes.number.isRequired,
   fullyInView: PropTypes.bool.isRequired,
-  className: PropTypes.string,
 };
 
-LifeSection.defaultProps = { className: null };
+LifeSection.defaultProps = {};
 
 export default withScroll(LifeSection);

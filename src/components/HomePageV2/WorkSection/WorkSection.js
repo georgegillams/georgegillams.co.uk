@@ -2,23 +2,20 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 import withScroll, { cleanRestScrollProps } from '@george-gillams/components/scroll-container';
-import Paragraph from '@george-gillams/components/paragraph';
 import Section from '@george-gillams/components/section';
 import TextLink from 'components/common/TextLink';
-import Phones from './Phones';
-
-const getClassName = c => c;
+import { Content, Graphic, StyledParagraph, Wrapper } from './work-section.styles';
 
 const WorkSection = props => {
-  const { hasBeenMostlyInView, hasBeenFullyInView, className, ...rest } = props;
+  const { hasBeenMostlyInView, hasBeenFullyInView, ...rest } = props;
 
   cleanRestScrollProps(rest);
 
   return (
-    <div className={getClassName('work-section__outer', className)} {...rest}>
-      <div className={getClassName('work-section__content')}>
+    <Wrapper {...rest}>
+      <Content>
         <Section name="Work">
-          <Paragraph className={getClassName('work-section__paragraph')}>
+          <StyledParagraph>
             I&#39;m a web developer at{' '}
             <TextLink hrefExternal href="https://typeform.com/">
               Typeform
@@ -28,19 +25,15 @@ const WorkSection = props => {
             I’m also an accessibility champion and design system enthusiast.
             <br />
             <TextLink href="/work">Learn more about my work</TextLink>
-          </Paragraph>
+          </StyledParagraph>
         </Section>
-      </div>
-      <Phones
-        hasBeenMostlyInView={hasBeenMostlyInView || hasBeenFullyInView}
-        className={getClassName('work-section__graphic')}
-      />
-    </div>
+      </Content>
+      <Graphic hasBeenMostlyInView={hasBeenMostlyInView || hasBeenFullyInView} />
+    </Wrapper>
   );
 };
 
 WorkSection.propTypes = {
-  className: PropTypes.string,
   hasBeenMostlyInView: PropTypes.bool.isRequired,
   hasBeenFullyInView: PropTypes.bool.isRequired,
 };

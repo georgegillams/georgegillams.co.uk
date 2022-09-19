@@ -1,22 +1,20 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import Paragraph from '@george-gillams/components/paragraph';
 import TextLink from 'components/common/TextLink';
 
 import withScroll, { cleanRestScrollProps } from '@george-gillams/components/scroll-container';
 import ContactLink from './ContactLink';
-
-const getClassName = c => c;
+import { StyledParagraph, Wrapper } from './about-section.styles';
 
 const LifeSection = props => {
-  const { scrollPositionVh, className, ...rest } = props;
+  const { scrollPositionVh, ...rest } = props;
 
   cleanRestScrollProps(rest);
 
   return (
-    <div className={getClassName('about-section__outer', className)} {...rest}>
-      <Paragraph className={getClassName('about-section__paragraph')}>
+    <Wrapper {...rest}>
+      <StyledParagraph>
         This site is built in{' '}
         <TextLink hrefExternal href="https://reactjs.org/">
           React
@@ -34,14 +32,14 @@ const LifeSection = props => {
           AWS
         </TextLink>
         . I use it to experiment with things, share stuff I&apos;ve figured out, and allow people to contact me.
-      </Paragraph>
+      </StyledParagraph>
       <ContactLink scrollPosition={scrollPositionVh} />
-    </div>
+    </Wrapper>
   );
 };
 
-LifeSection.propTypes = { scrollPositionVh: PropTypes.number.isRequired, className: PropTypes.string };
+LifeSection.propTypes = { scrollPositionVh: PropTypes.number.isRequired };
 
-LifeSection.defaultProps = { className: null };
+LifeSection.defaultProps = {};
 
 export default withScroll(LifeSection);
