@@ -4,6 +4,7 @@ import PageTitle from 'components/common/PageTitle';
 import DebugObject from 'components/common/DebugObject';
 import Paragraph from '@george-gillams/components/paragraph';
 import ErrorDisplay from 'components/common/ErrorDisplay';
+import PageContainer from 'components/common/PageContainer';
 
 import { withRouter } from 'next/router';
 
@@ -16,8 +17,6 @@ const EmailVerification = props => {
 
     verificationState,
     authenticatorState,
-
-    className,
   } = props;
 
   const { verifyError, verifyResult } = verificationState;
@@ -35,14 +34,8 @@ const EmailVerification = props => {
 
   const success = verifyResult && !verifyError;
 
-  const outerClassNames = [];
-
-  if (className) {
-    outerClassNames.push(className);
-  }
-
   return (
-    <div className={outerClassNames.join(' ')}>
+    <PageContainer bottomPadding>
       <PageTitle name={success ? 'Email confirmed' : 'Confirming email'}>
         {success && (
           <>
@@ -59,7 +52,7 @@ const EmailVerification = props => {
           verificationState,
         }}
       />
-    </div>
+    </PageContainer>
   );
 };
 
@@ -81,14 +74,12 @@ EmailVerification.propTypes = {
   authenticatorState: PropTypes.shape({
     user: PropTypes.object,
   }).isRequired,
-  className: PropTypes.string,
 };
 
 EmailVerification.defaultProps = {
   router: null,
   verificationState: null,
   magicLoginState: null,
-  className: null,
 };
 
 export default withRouter(EmailVerification);

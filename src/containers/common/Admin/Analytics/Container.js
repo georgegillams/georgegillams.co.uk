@@ -3,21 +3,15 @@ import PropTypes from 'prop-types';
 import PageTitle from 'components/common/PageTitle';
 import DebugObject from 'components/common/DebugObject';
 import LoadingCover from '@george-gillams/components/loading-cover';
-import Button from 'components/common/Button';
-import Paragraph from '@george-gillams/components/paragraph';
 import { AdminOnly } from 'components/common/Walls';
 import { setPostLoginRedirect } from 'client-utils/common/storageHelpers';
 import Skeleton from './Skeleton';
 import { withRouter } from 'next/router';
 import AnalyticFilter, { filterAnalytics, defaultFilters } from './AnalyticsFilter';
 import ErrorDisplay from 'components/common/ErrorDisplay';
-import AnalyticsEntity from './AnalyticEntity';
 
-import { cssModules } from '@george-gillams/components/helpers/cssModules';
-import STYLES from './admin-analytics.scss';
+import { Count, Control, StyledAnalyticsEntity, CardContainer } from './admin-analytics.styles';
 import useTabMadeVisible from 'client-utils/common/useTabMadeVisible';
-
-const getClassName = cssModules(STYLES);
 
 const AdminAnalytics = props => {
   const [showFilters, setShowFilters] = useState(false);
@@ -56,40 +50,25 @@ const AdminAnalytics = props => {
   }
 
   const analyticsList = (
-    <div className={getClassName('admin-analytics__card-container')}>
-      {showAnalytics &&
-        filteredAnalytics.map(n => (
-          <AnalyticsEntity key={n.id} entity={n} className={getClassName('admin-analytics__card')} />
-        ))}
-    </div>
+    <CardContainer>
+      {showAnalytics && filteredAnalytics.map(n => <StyledAnalyticsEntity key={n.id} entity={n} />)}
+    </CardContainer>
   );
 
   const filtersApplied = filters !== defaultFilters;
   const mainControls = (
     <div>
-      <Button
-        className={getClassName('admin-analytics__control')}
-        loading={adminAnalyticsState.loading}
-        onClick={() => load()}>
+      <Control loading={adminAnalyticsState.loading} onClick={() => load()}>
         Reload analytics
-      </Button>
-      <Button className={getClassName('admin-analytics__control')} onClick={() => setShowFilters(!showFilters)}>
-        {showFilters ? 'Hide filters' : 'Show filters'}
-      </Button>
-      {filtersApplied && (
-        <Button className={getClassName('admin-analytics__control')} onClick={() => setFilters(defaultFilters)}>
-          Clear filters
-        </Button>
-      )}
+      </Control>
+      <Control onClick={() => setShowFilters(!showFilters)}>{showFilters ? 'Hide filters' : 'Show filters'}</Control>
+      {filtersApplied && <Control onClick={() => setFilters(defaultFilters)}>Clear filters</Control>}
     </div>
   );
 
   return (
     <>
-      <LoadingCover
-        loadingSkeleton={Skeleton}
-        loading={authenticatorState.user === undefined}
-        error={authenticatorState.loadAuthError}>
+      <LoadingCover loadingSkeleton={Skeleton} loading={analytics} error={loadError}>
         <AdminOnly
           user={user}
           setLoginRedirect={() => {
@@ -102,9 +81,9 @@ const AdminAnalytics = props => {
           {showFilters && <AnalyticFilter filters={filters} onFiltersChanged={newValue => setFilters(newValue)} />}
           <ErrorDisplay message="Could not load analytics" error={loadError} />
           {analytics && (
-            <Paragraph className={getClassName('admin-analytics__count')}>
+            <Count>
               Showing {filteredAnalyticsCount} of {analyticsCount} analytics
-            </Paragraph>
+            </Count>
           )}
           {analyticsList && analyticsList}
         </AdminOnly>

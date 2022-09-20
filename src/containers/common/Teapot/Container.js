@@ -1,40 +1,18 @@
 import React from 'react';
-import PropTypes from 'prop-types';
-import { cssModules } from '@george-gillams/components/helpers/cssModules';
-import Subsection from '@george-gillams/components/subsection';
+import PageContainer from 'components/common/PageContainer';
 import Paragraph from '@george-gillams/components/paragraph';
 import PageTitle from 'components/common/PageTitle';
 
-import STYLES from './teapot.scss';
-
-const getClassName = cssModules(STYLES);
-
 const Teapot = props => {
-  const { className } = props;
-  const classNameFinal = [getClassName('not-found__container')];
-  if (className) {
-    classNameFinal.push(className);
-  }
-
   return (
-    <main id="main" className={classNameFinal.join(' ')}>
-      <PageTitle className={getClassName('not-found__container')} name="Error 418 - I'm a teapot." pageTitle="418">
-        <Subsection anchor={false}>
-          <Paragraph>
-            Coffee cannot be brewed inside a teapot context. The resulting entity body MAY be short and stout.
-          </Paragraph>
-        </Subsection>
+    <PageContainer bottomPadding centred {...props}>
+      <PageTitle name="Error 418 - I'm a teapot." pageTitle="418">
+        <Paragraph>
+          Coffee cannot be brewed inside a teapot context. The resulting entity body MAY be short and stout.
+        </Paragraph>
       </PageTitle>
-    </main>
+    </PageContainer>
   );
-};
-
-Teapot.propTypes = {
-  className: PropTypes.string,
-};
-
-Teapot.defaultProps = {
-  className: null,
 };
 
 export default Teapot;

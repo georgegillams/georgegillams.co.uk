@@ -1,7 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import CSSHack from 'components/common/CSSHack';
 import BlogRenderer from 'containers/BlogRenderer';
 import apiStructure from 'helpers/common/apiStructure';
 import FourOhFourPage from '../404';
@@ -16,7 +15,6 @@ const Page = props => {
 
   return (
     <CommonLayout bottomPadding={false}>
-      <CSSHack pageName="blog/[id]" />
       <BlogRenderer blogSubcategory="Blog" linkPrefix={'/blog'} {...rest} />
     </CommonLayout>
   );

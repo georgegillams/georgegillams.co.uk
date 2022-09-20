@@ -2,9 +2,6 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Input from '@george-gillams/components/input';
 import HelperFunctions from '@george-gillams/webapp/helpers/HelperFunctions';
-import { cssModules } from '@george-gillams/components/helpers/cssModules';
-
-const getClassName = cssModules({});
 
 const defaultFilters = {};
 
@@ -80,59 +77,20 @@ const AnalyticsFilter = props => {
 
   return (
     <div>
-      <label htmlFor="url" className={getClassName('forms__component__label')}>
-        Filter by url
-      </label>
-      <Input id="url" value={url} onChange={onUrlFilterChanged} className={getClassName('forms__component')} />
-      <label htmlFor="browser" className={getClassName('forms__component__label')}>
-        Filter by browser
-      </label>
-      <Input
-        id="browser"
-        value={browser}
-        onChange={onBrowserFilterChanged}
-        className={getClassName('forms__component')}
-      />
-      <label htmlFor="browserVersion" className={getClassName('forms__component__label')}>
-        Filter by browser version
-      </label>
-      <Input
-        id="browserVersion"
-        value={browserVersion}
-        onChange={onBrowserVersionFilterChanged}
-        className={getClassName('forms__component')}
-      />
-      <label htmlFor="utmSource" className={getClassName('forms__component__label')}>
-        Filter by UTM_SOURCE
-      </label>
-      <Input
-        id="utmSource"
-        value={utmSource}
-        onChange={onUtmSourceFilterChanged}
-        className={getClassName('forms__component')}
-      />
-      <label htmlFor="utmMedium" className={getClassName('forms__component__label')}>
-        Filter by UTM_MEDIUM
-      </label>
-      <Input
-        id="utmMedium"
-        value={utmMedium}
-        onChange={onUtmMediumFilterChanged}
-        className={getClassName('forms__component')}
-      />
-      <label htmlFor="os" className={getClassName('forms__component__label')}>
-        Filter by OS
-      </label>
-      <Input id="os" value={os} onChange={onOsFilterChanged} className={getClassName('forms__component')} />
-      <label htmlFor="ipAddressPrefix" className={getClassName('forms__component__label')}>
-        Filter by IP address prefix
-      </label>
-      <Input
-        id="ipAddressPrefix"
-        value={ipAddressPrefix}
-        onChange={onIpAddressPrefixFilterChanged}
-        className={getClassName('forms__component')}
-      />
+      <label htmlFor="url">Filter by url</label>
+      <Input id="url" value={url} onChange={onUrlFilterChanged} />
+      <label htmlFor="browser">Filter by browser</label>
+      <Input id="browser" value={browser} onChange={onBrowserFilterChanged} />
+      <label htmlFor="browserVersion">Filter by browser version</label>
+      <Input id="browserVersion" value={browserVersion} onChange={onBrowserVersionFilterChanged} />
+      <label htmlFor="utmSource">Filter by UTM_SOURCE</label>
+      <Input id="utmSource" value={utmSource} onChange={onUtmSourceFilterChanged} />
+      <label htmlFor="utmMedium">Filter by UTM_MEDIUM</label>
+      <Input id="utmMedium" value={utmMedium} onChange={onUtmMediumFilterChanged} />
+      <label htmlFor="os">Filter by OS</label>
+      <Input id="os" value={os} onChange={onOsFilterChanged} />
+      <label htmlFor="ipAddressPrefix">Filter by IP address prefix</label>
+      <Input id="ipAddressPrefix" value={ipAddressPrefix} onChange={onIpAddressPrefixFilterChanged} />
     </div>
   );
 };

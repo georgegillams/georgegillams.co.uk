@@ -3,9 +3,6 @@ import PropTypes from 'prop-types';
 import Input from '@george-gillams/components/input';
 import Select from '@george-gillams/components/select';
 import Checkbox from '@george-gillams/components/checkbox';
-import { cssModules } from '@george-gillams/components/helpers/cssModules';
-
-const getClassName = cssModules({});
 
 const defaultFilters = { deleted: true, adminStatus: 'all', emailVerified: 'all' };
 
@@ -66,19 +63,10 @@ const UserFilter = props => {
 
   return (
     <div>
-      <Checkbox
-        className={getClassName('forms__component')}
-        label="Show deleted"
-        name="deleted"
-        checked={!deleted}
-        onChange={onDeletedFilterChanged}
-      />
-      <label className={getClassName('forms__component__label')} htmlFor="adminStatus">
-        Filter by admin status
-      </label>
+      <Checkbox label="Show deleted" name="deleted" checked={!deleted} onChange={onDeletedFilterChanged} />
+      <label htmlFor="adminStatus">Filter by admin status</label>
       <Select
         id="adminStatus"
-        className={getClassName('forms__component')}
         name="Filter by admin status"
         value={adminStatus}
         options={[
@@ -88,12 +76,9 @@ const UserFilter = props => {
         ]}
         onChange={onAdminStatusFilterChanged}
       />
-      <label className={getClassName('forms__component__label')} htmlFor="emailVerified">
-        Filter by email verification status
-      </label>
+      <label htmlFor="emailVerified">Filter by email verification status</label>
       <Select
         id="emailVerified"
-        className={getClassName('forms__component')}
         name="Filter by email verification status"
         value={emailVerified}
         options={[
@@ -103,10 +88,8 @@ const UserFilter = props => {
         ]}
         onChange={onEmailVerifiedFilterChanged}
       />
-      <label className={getClassName('forms__component__label')} htmlFor="name">
-        Filter by name
-      </label>
-      <Input id="name" className={getClassName('forms__component')} value={name} onChange={onNameFilterChanged} />
+      <label htmlFor="name">Filter by name</label>
+      <Input id="name" value={name} onChange={onNameFilterChanged} />
     </div>
   );
 };

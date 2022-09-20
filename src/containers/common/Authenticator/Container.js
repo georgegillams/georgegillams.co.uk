@@ -3,26 +3,19 @@ import PropTypes from 'prop-types';
 import DebugObject from 'components/common/DebugObject';
 
 const Authenticator = props => {
-  const { loadAuth, authenticatorState, className } = props;
+  const { loadAuth, authenticatorState } = props;
 
   useEffect(() => {
     loadAuth();
   }, []);
 
-  const outerClassNames = [];
-
-  if (className) {
-    outerClassNames.push(className);
-  }
-
   return (
-    <div className={outerClassNames.join(' ')}>
+    <div>
       <DebugObject
         debugTitle="Authenticator"
         debugObject={{
           loadAuth,
           authenticatorState,
-          className,
         }}
       />
     </div>
@@ -36,11 +29,8 @@ Authenticator.propTypes = {
     loadAuthError: PropTypes.object,
     user: PropTypes.object,
   }).isRequired,
-  className: PropTypes.string,
 };
 
-Authenticator.defaultProps = {
-  className: null,
-};
+Authenticator.defaultProps = {};
 
 export default Authenticator;

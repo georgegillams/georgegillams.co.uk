@@ -1,26 +1,24 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import Image from '@george-gillams/components/image';
-import STYLES from './animated-image.scss';
-import { cssModules } from '@george-gillams/components/helpers/cssModules';
-import { useEntryAnimationClientOnly } from '@george-gillams/components/server-side-rendering';
+import { StyledImage, Wrapper } from './animated-image.styles';
+import { JS_CLASSNAME } from '@george-gillams/components/js-feature-detector';
 
-const getClassName = cssModules(STYLES);
+const HIDDEN_CLASSNAME = 'home__animated-image--hidden';
 
 const AnimatedImage = props => {
-  const { show, className, ...rest } = props;
-
-  const [isFirstRender, animationsEnabled] = useEntryAnimationClientOnly();
+  const { show, ...rest } = props;
 
   return (
-    <div className={getClassName('animated-image__outer', className)} {...rest}>
-      <Image
-        className={getClassName(
-          'animated-image__image',
-          !isFirstRender && !show && 'animated-image__image--hide',
-          animationsEnabled && 'animated-image__image--animated'
-        )}
+    <Wrapper {...rest}>
+      <style>
+        {`.${JS_CLASSNAME} .${HIDDEN_CLASSNAME} {
+            top: 6rem;
+            opacity: 0;
+          }`}
+      </style>
+      <StyledImage
+        className={show ? '' : HIDDEN_CLASSNAME}
         imgProps={{
           alt: 'Me',
         }}
@@ -29,12 +27,10 @@ const AnimatedImage = props => {
         lightSrc="https://i.imgur.com/L0Rm1ZC.jpg"
         darkSrc="https://i.imgur.com/L0Rm1ZC.jpg"
       />
-    </div>
+    </Wrapper>
   );
 };
 
-AnimatedImage.propTypes = { show: PropTypes.bool.isRequired, className: PropTypes.string };
-
-AnimatedImage.defaultProps = { className: null };
+AnimatedImage.propTypes = { show: PropTypes.bool.isRequired };
 
 export default AnimatedImage;

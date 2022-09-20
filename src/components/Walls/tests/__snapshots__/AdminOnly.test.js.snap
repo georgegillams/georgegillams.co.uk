@@ -17,7 +17,7 @@ exports[`<AdminOnly /> Should render correctly 1`] = `
       You need to be logged in with an admin account to view this content.
       <br />
       <a
-        class="sc-ftvSup bvTsjB"
+        class="sc-ftvSup cMmkUr"
         href="/login"
       >
         Got a different admin account? Log in here.
@@ -50,7 +50,7 @@ exports[`<AdminOnly /> Should render correctly with user 1`] = `
       You need to be logged in with an admin account to view this content.
       <br />
       <a
-        class="sc-ftvSup bvTsjB"
+        class="sc-ftvSup cMmkUr"
         href="/login"
       >
         Got a different admin account? Log in here.

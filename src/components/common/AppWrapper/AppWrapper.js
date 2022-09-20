@@ -1,24 +1,15 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 
-import STYLES from './app-wrapper.scss';
-
-import { cssModules } from '@george-gillams/components/helpers/cssModules';
-
-const getClassName = cssModules(STYLES);
+import { StyledAppWrapper } from './app-wrapper.styles';
 
 const AppWrapper = props => {
-  const { className, ...rest } = props;
+  const { ...rest } = props;
 
-  return <div className={getClassName('app__app-wrapper', className)} {...rest} />;
+  return <StyledAppWrapper {...rest} />;
 };
 
-AppWrapper.propTypes = {
-  className: PropTypes.string,
-};
+AppWrapper.propTypes = {};
 
-AppWrapper.defaultProps = {
-  className: null,
-};
+AppWrapper.defaultProps = {};
 
 export default AppWrapper;

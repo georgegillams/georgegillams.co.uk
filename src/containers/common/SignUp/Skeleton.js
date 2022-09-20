@@ -1,31 +1,20 @@
 import React from 'react';
-import PropTypes from 'prop-types';
+import PageContainer from 'components/common/PageContainer';
+
 import Skeleton, { SKELETON_STYLES } from '@george-gillams/components/skeleton';
 
 const PageSkeleton = props => {
-  const { className } = props;
-
-  const outerClassNames = [];
-
-  if (className) {
-    outerClassNames.push(className);
-  }
-
   return (
-    <div className={outerClassNames.join(' ')}>
+    <PageContainer {...props}>
       <Skeleton skeletonStyle={SKELETON_STYLES.section} />
       <Skeleton skeletonStyle={SKELETON_STYLES.input} style={{ marginTop: '1.2rem' }} />
       <Skeleton skeletonStyle={SKELETON_STYLES.button} />
-    </div>
+    </PageContainer>
   );
 };
 
-PageSkeleton.propTypes = {
-  className: PropTypes.string,
-};
+PageSkeleton.propTypes = {};
 
-PageSkeleton.defaultProps = {
-  className: null,
-};
+PageSkeleton.defaultProps = {};
 
 export default PageSkeleton;

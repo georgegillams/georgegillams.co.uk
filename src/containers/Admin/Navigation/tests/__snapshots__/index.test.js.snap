@@ -3,7 +3,7 @@
 exports[`<AdminNavigation /> should render correctly - index 1`] = `
 <div>
   <div
-    class=""
+    aria-label="Loading"
   >
     <div
       class="sc-ksZaOG duCsur"
@@ -14,7 +14,7 @@ exports[`<AdminNavigation /> should render correctly - index 1`] = `
       />
     </div>
     <div
-      class="admin-navigation__card-container"
+      class="admin-navigationstyles__CardContainer-sc-n2t86e-0 gCaCSq"
     >
       <div
         class="sc-ksZaOG fJrBYQ"
@@ -48,7 +48,8 @@ exports[`<AdminNavigation /> should render correctly - index 1`] = `
 exports[`<AdminNavigation /> should render correctly with admin user 1`] = `
 <div>
   <div
-    class=""
+    class="sc-gXmSlM gUDDtK"
+    width="default"
   >
     <h1
       class="sc-bczRLJ hDLBIv sc-jqUVSM cFomsy"
@@ -56,11 +57,11 @@ exports[`<AdminNavigation /> should render correctly with admin user 1`] = `
       Admin
     </h1>
     <div
-      class="admin-navigation__card-container"
+      class="admin-navigationstyles__CardContainer-sc-n2t86e-0 gCaCSq"
     >
       <a
         aria-label="Debug"
-        class="sc-fEOsli cXgttH sc-cxabCf fQooTn admin-navigation__card"
+        class="sc-fEOsli cXgttH sc-cxabCf fQooTn admin-navigationstyles__StyledFeatureCard-sc-n2t86e-1 FFmcP"
         href="/debug"
       >
         <div
@@ -94,7 +95,7 @@ exports[`<AdminNavigation /> should render correctly with admin user 1`] = `
       </a>
       <a
         aria-label="Analytics"
-        class="sc-fEOsli cXgttH sc-cxabCf fQooTn admin-navigation__card"
+        class="sc-fEOsli cXgttH sc-cxabCf fQooTn admin-navigationstyles__StyledFeatureCard-sc-n2t86e-1 FFmcP"
         href="/admin/analytics"
       >
         <div
@@ -128,7 +129,7 @@ exports[`<AdminNavigation /> should render correctly with admin user 1`] = `
       </a>
       <a
         aria-label="Emails"
-        class="sc-fEOsli cXgttH sc-cxabCf fQooTn admin-navigation__card"
+        class="sc-fEOsli cXgttH sc-cxabCf fQooTn admin-navigationstyles__StyledFeatureCard-sc-n2t86e-1 FFmcP"
         href="/admin/emails"
       >
         <div
@@ -162,7 +163,7 @@ exports[`<AdminNavigation /> should render correctly with admin user 1`] = `
       </a>
       <a
         aria-label="Notifications"
-        class="sc-fEOsli cXgttH sc-cxabCf fQooTn admin-navigation__card"
+        class="sc-fEOsli cXgttH sc-cxabCf fQooTn admin-navigationstyles__StyledFeatureCard-sc-n2t86e-1 FFmcP"
         href="/admin/notifications"
       >
         <div
@@ -196,7 +197,7 @@ exports[`<AdminNavigation /> should render correctly with admin user 1`] = `
       </a>
       <a
         aria-label="Users"
-        class="sc-fEOsli cXgttH sc-cxabCf fQooTn admin-navigation__card"
+        class="sc-fEOsli cXgttH sc-cxabCf fQooTn admin-navigationstyles__StyledFeatureCard-sc-n2t86e-1 FFmcP"
         href="/admin/users"
       >
         <div
@@ -236,7 +237,7 @@ exports[`<AdminNavigation /> should render correctly with admin user 1`] = `
 exports[`<AdminNavigation /> should render correctly with auth error 1`] = `
 <div>
   <div
-    class=""
+    aria-label="Loading"
   >
     <div
       class="sc-ksZaOG duCsur"
@@ -247,7 +248,7 @@ exports[`<AdminNavigation /> should render correctly with auth error 1`] = `
       />
     </div>
     <div
-      class="admin-navigation__card-container"
+      class="admin-navigationstyles__CardContainer-sc-n2t86e-0 gCaCSq"
     >
       <div
         class="sc-ksZaOG fJrBYQ"
@@ -291,7 +292,7 @@ exports[`<AdminNavigation /> should render correctly with auth error 1`] = `
 exports[`<AdminNavigation /> should render correctly with initial state 1`] = `
 <div>
   <div
-    class=""
+    aria-label="Loading"
   >
     <div
       class="sc-ksZaOG duCsur"
@@ -302,7 +303,7 @@ exports[`<AdminNavigation /> should render correctly with initial state 1`] = `
       />
     </div>
     <div
-      class="admin-navigation__card-container"
+      class="admin-navigationstyles__CardContainer-sc-n2t86e-0 gCaCSq"
     >
       <div
         class="sc-ksZaOG fJrBYQ"
@@ -336,7 +337,8 @@ exports[`<AdminNavigation /> should render correctly with initial state 1`] = `
 exports[`<AdminNavigation /> should render correctly with user 1`] = `
 <div>
   <div
-    class=""
+    class="sc-gXmSlM gUDDtK"
+    width="default"
   >
     <div
       class="sc-iqcoie fvEXqf"
@@ -353,7 +355,7 @@ exports[`<AdminNavigation /> should render correctly with user 1`] = `
         You need to be logged in with an admin account to view this content.
         <br />
         <a
-          class="sc-iBkjds kXOvCG"
+          class="sc-iBkjds JLudk"
           href="/login"
         >
           Got a different admin account? Log in here.

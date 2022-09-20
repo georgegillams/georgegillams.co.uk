@@ -1,28 +1,17 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import Skeleton, { SKELETON_STYLES } from '@george-gillams/components/skeleton';
-import STYLES from './admin-navigation.scss';
-import { cssModules } from '@george-gillams/components/helpers/cssModules';
-
-const getClassName = cssModules(STYLES);
+import { CardContainer } from './admin-navigation.styles';
 
 const PageSkeleton = props => {
-  const { className } = props;
-
-  const outerClassNames = [];
-
-  if (className) {
-    outerClassNames.push(className);
-  }
-
   return (
-    <div className={outerClassNames.join(' ')}>
+    <div {...props}>
       <Skeleton skeletonStyle={SKELETON_STYLES.section} />
-      <div className={getClassName('admin-navigation__card-container')}>
+      <CardContainer>
         <Skeleton skeletonStyle={SKELETON_STYLES.cardCompact} />
         <Skeleton skeletonStyle={SKELETON_STYLES.cardCompact} />
         <Skeleton skeletonStyle={SKELETON_STYLES.cardCompact} />
-      </div>
+      </CardContainer>
     </div>
   );
 };

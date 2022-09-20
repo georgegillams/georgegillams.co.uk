@@ -1,15 +1,13 @@
 import React from 'react';
 
-import CSSHack from 'components/common/CSSHack';
 import Notifications from 'containers/common/Admin/Notifications';
-import LegacyCommonLayout from 'components/common/LegacyCommonLayout';
+import CommonLayout from 'components/common/CommonLayout';
 
 const Page = props => {
   return (
-    <LegacyCommonLayout>
-      <CSSHack pageName="admin/notifications" />
+    <CommonLayout>
       <Notifications {...props} />
-    </LegacyCommonLayout>
+    </CommonLayout>
   );
 };
 

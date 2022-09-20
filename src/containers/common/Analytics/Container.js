@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import PropTypes from 'prop-types';
 import DebugObject from 'components/common/DebugObject';
-import { CONSENT_STATE_ALLOWED } from 'containers/common/Consent/constants';
 import { detect } from 'detect-browser';
 import { withRouter } from 'next/router';
 
@@ -15,9 +14,6 @@ const Analytics = props => {
     sendAnalytic,
 
     analyticState,
-    consentState,
-
-    className,
   } = props;
 
   const constructAnalytic = () => {
@@ -62,28 +58,19 @@ const Analytics = props => {
       setAnalytic(newAnalytic);
     }
     const analyticToSend = analytic || newAnalytic;
-    // ... but wait to send it until we have consent
-    if (analyticToSend && !analyticSent && consentState.cookieConsent === CONSENT_STATE_ALLOWED) {
+    if (analyticToSend && !analyticSent) {
       sendAnalytic(analyticToSend);
       setAnalyticSent(true);
     }
-  }, [consentState]);
-
-  const outerClassNames = [];
-
-  if (className) {
-    outerClassNames.push(className);
-  }
+  }, []);
 
   return (
-    <div className={outerClassNames.join(' ')}>
+    <div>
       <DebugObject
         debugTitle="Analytics"
         debugObject={{
           sendAnalytic,
           analyticState,
-          consentState,
-          className,
         }}
       />
     </div>
@@ -93,19 +80,14 @@ const Analytics = props => {
 Analytics.propTypes = {
   router: PropTypes.object,
   sendAnalytic: PropTypes.func.isRequired,
-  consentState: PropTypes.shape({
-    cookieConsent: PropTypes.string,
-  }).isRequired,
   analyticState: PropTypes.shape({
     sending: PropTypes.bool,
     sendError: PropTypes.object,
   }).isRequired,
-  className: PropTypes.string,
 };
 
 Analytics.defaultProps = {
   router: null,
-  className: null,
 };
 
 export default withRouter(Analytics);

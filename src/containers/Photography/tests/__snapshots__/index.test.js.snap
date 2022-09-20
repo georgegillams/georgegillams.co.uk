@@ -16,7 +16,7 @@ exports[`<Photography /> should render correctly - index 1`] = `
     >
       <a
         aria-label="Find me on Flickr (opens in a new tab)"
-        class="sc-iBkjds kXOvCG"
+        class="sc-iBkjds JLudk"
         href="https://www.flickr.com/people/georgegillams/"
         rel="noopener noreferrer"
         target="_blank"
@@ -40,7 +40,7 @@ exports[`<Photography /> should render correctly - index 1`] = `
       </a>
       <a
         aria-label="Find me on Unsplash (opens in a new tab)"
-        class="sc-iBkjds kXOvCG"
+        class="sc-iBkjds JLudk"
         href="https://unsplash.com/@georgegillams"
         rel="noopener noreferrer"
         target="_blank"
@@ -64,7 +64,7 @@ exports[`<Photography /> should render correctly - index 1`] = `
       </a>
       <a
         aria-label="Find me on GuruShots (opens in a new tab)"
-        class="sc-iBkjds kXOvCG"
+        class="sc-iBkjds JLudk"
         href="https://gurushots.com/georgegillams/achievements"
         rel="noopener noreferrer"
         target="_blank"
@@ -85,6 +85,12 @@ exports[`<Photography /> should render correctly - index 1`] = `
             />
           </svg>
         </div>
+      </a>
+      <a
+        class="sc-iBkjds JLudk"
+        href="/contact"
+      >
+        Contact me about photography work
       </a>
     </div>
     <div
@@ -119,7 +125,7 @@ exports[`<Photography /> should render correctly - index 1`] = `
          
         <a
           aria-label="Creative Commons BY-SA 3.0 (opens in a new tab)"
-          class="sc-iBkjds kXOvCG"
+          class="sc-iBkjds JLudk"
           href="https://creativecommons.org/licenses/by-sa/3.0/"
           rel="noopener noreferrer"
           target="_blank"
@@ -145,7 +151,7 @@ exports[`<Photography /> should render correctly - index 1`] = `
         <br />
         If you are unsure about your right to use them please 
         <a
-          class="sc-iBkjds kXOvCG"
+          class="sc-iBkjds JLudk"
           href="/contact"
         >
           contact me
@@ -173,7 +179,7 @@ exports[`<Photography /> should render correctly when loading 1`] = `
     >
       <a
         aria-label="Find me on Flickr (opens in a new tab)"
-        class="sc-iBkjds kXOvCG"
+        class="sc-iBkjds JLudk"
         href="https://www.flickr.com/people/georgegillams/"
         rel="noopener noreferrer"
         target="_blank"
@@ -197,7 +203,7 @@ exports[`<Photography /> should render correctly when loading 1`] = `
       </a>
       <a
         aria-label="Find me on Unsplash (opens in a new tab)"
-        class="sc-iBkjds kXOvCG"
+        class="sc-iBkjds JLudk"
         href="https://unsplash.com/@georgegillams"
         rel="noopener noreferrer"
         target="_blank"
@@ -221,7 +227,7 @@ exports[`<Photography /> should render correctly when loading 1`] = `
       </a>
       <a
         aria-label="Find me on GuruShots (opens in a new tab)"
-        class="sc-iBkjds kXOvCG"
+        class="sc-iBkjds JLudk"
         href="https://gurushots.com/georgegillams/achievements"
         rel="noopener noreferrer"
         target="_blank"
@@ -242,6 +248,12 @@ exports[`<Photography /> should render correctly when loading 1`] = `
             />
           </svg>
         </div>
+      </a>
+      <a
+        class="sc-iBkjds JLudk"
+        href="/contact"
+      >
+        Contact me about photography work
       </a>
     </div>
     <div
@@ -276,7 +288,7 @@ exports[`<Photography /> should render correctly when loading 1`] = `
          
         <a
           aria-label="Creative Commons BY-SA 3.0 (opens in a new tab)"
-          class="sc-iBkjds kXOvCG"
+          class="sc-iBkjds JLudk"
           href="https://creativecommons.org/licenses/by-sa/3.0/"
           rel="noopener noreferrer"
           target="_blank"
@@ -302,7 +314,7 @@ exports[`<Photography /> should render correctly when loading 1`] = `
         <br />
         If you are unsure about your right to use them please 
         <a
-          class="sc-iBkjds kXOvCG"
+          class="sc-iBkjds JLudk"
           href="/contact"
         >
           contact me
@@ -330,7 +342,7 @@ exports[`<Photography /> should render correctly with initial state 1`] = `
     >
       <a
         aria-label="Find me on Flickr (opens in a new tab)"
-        class="sc-iBkjds kXOvCG"
+        class="sc-iBkjds JLudk"
         href="https://www.flickr.com/people/georgegillams/"
         rel="noopener noreferrer"
         target="_blank"
@@ -354,7 +366,7 @@ exports[`<Photography /> should render correctly with initial state 1`] = `
       </a>
       <a
         aria-label="Find me on Unsplash (opens in a new tab)"
-        class="sc-iBkjds kXOvCG"
+        class="sc-iBkjds JLudk"
         href="https://unsplash.com/@georgegillams"
         rel="noopener noreferrer"
         target="_blank"
@@ -378,7 +390,7 @@ exports[`<Photography /> should render correctly with initial state 1`] = `
       </a>
       <a
         aria-label="Find me on GuruShots (opens in a new tab)"
-        class="sc-iBkjds kXOvCG"
+        class="sc-iBkjds JLudk"
         href="https://gurushots.com/georgegillams/achievements"
         rel="noopener noreferrer"
         target="_blank"
@@ -399,6 +411,12 @@ exports[`<Photography /> should render correctly with initial state 1`] = `
             />
           </svg>
         </div>
+      </a>
+      <a
+        class="sc-iBkjds JLudk"
+        href="/contact"
+      >
+        Contact me about photography work
       </a>
     </div>
     <div
@@ -433,7 +451,7 @@ exports[`<Photography /> should render correctly with initial state 1`] = `
          
         <a
           aria-label="Creative Commons BY-SA 3.0 (opens in a new tab)"
-          class="sc-iBkjds kXOvCG"
+          class="sc-iBkjds JLudk"
           href="https://creativecommons.org/licenses/by-sa/3.0/"
           rel="noopener noreferrer"
           target="_blank"
@@ -459,7 +477,7 @@ exports[`<Photography /> should render correctly with initial state 1`] = `
         <br />
         If you are unsure about your right to use them please 
         <a
-          class="sc-iBkjds kXOvCG"
+          class="sc-iBkjds JLudk"
           href="/contact"
         >
           contact me
@@ -487,7 +505,7 @@ exports[`<Photography /> should render correctly with loadError 1`] = `
     >
       <a
         aria-label="Find me on Flickr (opens in a new tab)"
-        class="sc-iBkjds kXOvCG"
+        class="sc-iBkjds JLudk"
         href="https://www.flickr.com/people/georgegillams/"
         rel="noopener noreferrer"
         target="_blank"
@@ -511,7 +529,7 @@ exports[`<Photography /> should render correctly with loadError 1`] = `
       </a>
       <a
         aria-label="Find me on Unsplash (opens in a new tab)"
-        class="sc-iBkjds kXOvCG"
+        class="sc-iBkjds JLudk"
         href="https://unsplash.com/@georgegillams"
         rel="noopener noreferrer"
         target="_blank"
@@ -535,7 +553,7 @@ exports[`<Photography /> should render correctly with loadError 1`] = `
       </a>
       <a
         aria-label="Find me on GuruShots (opens in a new tab)"
-        class="sc-iBkjds kXOvCG"
+        class="sc-iBkjds JLudk"
         href="https://gurushots.com/georgegillams/achievements"
         rel="noopener noreferrer"
         target="_blank"
@@ -556,6 +574,12 @@ exports[`<Photography /> should render correctly with loadError 1`] = `
             />
           </svg>
         </div>
+      </a>
+      <a
+        class="sc-iBkjds JLudk"
+        href="/contact"
+      >
+        Contact me about photography work
       </a>
     </div>
     <div
@@ -590,7 +614,7 @@ exports[`<Photography /> should render correctly with loadError 1`] = `
          
         <a
           aria-label="Creative Commons BY-SA 3.0 (opens in a new tab)"
-          class="sc-iBkjds kXOvCG"
+          class="sc-iBkjds JLudk"
           href="https://creativecommons.org/licenses/by-sa/3.0/"
           rel="noopener noreferrer"
           target="_blank"
@@ -616,7 +640,7 @@ exports[`<Photography /> should render correctly with loadError 1`] = `
         <br />
         If you are unsure about your right to use them please 
         <a
-          class="sc-iBkjds kXOvCG"
+          class="sc-iBkjds JLudk"
           href="/contact"
         >
           contact me
@@ -644,7 +668,7 @@ exports[`<Photography /> should render correctly with photos 1`] = `
     >
       <a
         aria-label="Find me on Flickr (opens in a new tab)"
-        class="sc-iBkjds kXOvCG"
+        class="sc-iBkjds JLudk"
         href="https://www.flickr.com/people/georgegillams/"
         rel="noopener noreferrer"
         target="_blank"
@@ -668,7 +692,7 @@ exports[`<Photography /> should render correctly with photos 1`] = `
       </a>
       <a
         aria-label="Find me on Unsplash (opens in a new tab)"
-        class="sc-iBkjds kXOvCG"
+        class="sc-iBkjds JLudk"
         href="https://unsplash.com/@georgegillams"
         rel="noopener noreferrer"
         target="_blank"
@@ -692,7 +716,7 @@ exports[`<Photography /> should render correctly with photos 1`] = `
       </a>
       <a
         aria-label="Find me on GuruShots (opens in a new tab)"
-        class="sc-iBkjds kXOvCG"
+        class="sc-iBkjds JLudk"
         href="https://gurushots.com/georgegillams/achievements"
         rel="noopener noreferrer"
         target="_blank"
@@ -713,6 +737,12 @@ exports[`<Photography /> should render correctly with photos 1`] = `
             />
           </svg>
         </div>
+      </a>
+      <a
+        class="sc-iBkjds JLudk"
+        href="/contact"
+      >
+        Contact me about photography work
       </a>
     </div>
     <div
@@ -747,7 +777,7 @@ exports[`<Photography /> should render correctly with photos 1`] = `
          
         <a
           aria-label="Creative Commons BY-SA 3.0 (opens in a new tab)"
-          class="sc-iBkjds kXOvCG"
+          class="sc-iBkjds JLudk"
           href="https://creativecommons.org/licenses/by-sa/3.0/"
           rel="noopener noreferrer"
           target="_blank"
@@ -773,7 +803,7 @@ exports[`<Photography /> should render correctly with photos 1`] = `
         <br />
         If you are unsure about your right to use them please 
         <a
-          class="sc-iBkjds kXOvCG"
+          class="sc-iBkjds JLudk"
           href="/contact"
         >
           contact me

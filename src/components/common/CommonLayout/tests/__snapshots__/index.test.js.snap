@@ -3,7 +3,7 @@
 exports[`<Layout /> Should render correctly 1`] = `
 <div>
   <main
-    class="page-container__container common-layout__grow"
+    class="main-wrapperstyles__StyledMainWrapper-sc-hveppy-0 iMOsNu common-layoutstyles__StyledMainWrapper-sc-1orix3m-0 bnxJXa"
     id="main"
   >
     <div>
@@ -87,25 +87,25 @@ exports[`<Layout /> Should render correctly 1`] = `
         class="footer-navstyles__Section-sc-7lmnsj-1 iFmILp"
       >
         <a
-          class="sc-iBkjds cXbvnS"
+          class="sc-iBkjds LHtmg"
           href="/blog"
         >
           Blog
         </a>
         <a
-          class="sc-iBkjds cXbvnS"
+          class="sc-iBkjds LHtmg"
           href="/photography"
         >
           Photography
         </a>
         <a
-          class="sc-iBkjds cXbvnS"
+          class="sc-iBkjds LHtmg"
           href="/work"
         >
           Work
         </a>
         <a
-          class="sc-iBkjds cXbvnS"
+          class="sc-iBkjds LHtmg"
           href="/contact"
         >
           Contact
@@ -115,25 +115,25 @@ exports[`<Layout /> Should render correctly 1`] = `
         class="footer-navstyles__Section-sc-7lmnsj-1 iFmILp"
       >
         <a
-          class="sc-iBkjds cXbvnS"
+          class="sc-iBkjds LHtmg"
           href="/sitemap"
         >
           Site map
         </a>
         <a
-          class="sc-iBkjds cXbvnS"
+          class="sc-iBkjds LHtmg"
           href="/privacy-policy"
         >
           Privacy
         </a>
         <a
-          class="sc-iBkjds cXbvnS"
+          class="sc-iBkjds LHtmg"
           href="/login"
         >
           Login/Account
         </a>
         <a
-          class="sc-iBkjds cXbvnS"
+          class="sc-iBkjds LHtmg"
           href="/status"
         >
           Status
@@ -147,7 +147,7 @@ exports[`<Layout /> Should render correctly 1`] = `
 exports[`<Layout /> Should render correctly with spread props 1`] = `
 <div>
   <main
-    class="page-container__container common-layout__grow"
+    class="main-wrapperstyles__StyledMainWrapper-sc-hveppy-0 iMOsNu common-layoutstyles__StyledMainWrapper-sc-1orix3m-0 bnxJXa"
     id="main"
   >
     <div>
@@ -231,25 +231,25 @@ exports[`<Layout /> Should render correctly with spread props 1`] = `
         class="footer-navstyles__Section-sc-7lmnsj-1 iFmILp"
       >
         <a
-          class="sc-iBkjds cXbvnS"
+          class="sc-iBkjds LHtmg"
           href="/blog"
         >
           Blog
         </a>
         <a
-          class="sc-iBkjds cXbvnS"
+          class="sc-iBkjds LHtmg"
           href="/photography"
         >
           Photography
         </a>
         <a
-          class="sc-iBkjds cXbvnS"
+          class="sc-iBkjds LHtmg"
           href="/work"
         >
           Work
         </a>
         <a
-          class="sc-iBkjds cXbvnS"
+          class="sc-iBkjds LHtmg"
           href="/contact"
         >
           Contact
@@ -259,25 +259,25 @@ exports[`<Layout /> Should render correctly with spread props 1`] = `
         class="footer-navstyles__Section-sc-7lmnsj-1 iFmILp"
       >
         <a
-          class="sc-iBkjds cXbvnS"
+          class="sc-iBkjds LHtmg"
           href="/sitemap"
         >
           Site map
         </a>
         <a
-          class="sc-iBkjds cXbvnS"
+          class="sc-iBkjds LHtmg"
           href="/privacy-policy"
         >
           Privacy
         </a>
         <a
-          class="sc-iBkjds cXbvnS"
+          class="sc-iBkjds LHtmg"
           href="/login"
         >
           Login/Account
         </a>
         <a
-          class="sc-iBkjds cXbvnS"
+          class="sc-iBkjds LHtmg"
           href="/status"
         >
           Status

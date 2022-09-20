@@ -1,18 +1,15 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { cssModules } from '@george-gillams/components/helpers/cssModules';
 import Card from 'components/common/Card';
 
-import STYLES from './split-detail-item.scss';
-
-const getClassName = cssModules(STYLES);
+import { Item } from './split-detail-item.styles';
 
 const SplitDetailItem = props => {
   const { children, ...rest } = props;
 
   return (
     <Card padded={false} {...rest}>
-      <div className={getClassName('split-detail-item__content')}>{children}</div>
+      <Item>{children}</Item>
     </Card>
   );
 };

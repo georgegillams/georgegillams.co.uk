@@ -1,20 +1,15 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import MainWrapper from 'components/common/MainWrapper';
 import Footer from 'components/footer2';
-import STYLES from './common-layout.scss';
-import { cssModules } from '@george-gillams/components/helpers/cssModules';
-const getClassName = cssModules(STYLES);
+import { StyledMainWrapper } from './common-layout.styles';
 
 const CommonLayout = props => {
   const { children, ...rest } = props;
 
   return (
     <>
-      <MainWrapper className={getClassName('common-layout__grow')} {...rest}>
-        {children}
-      </MainWrapper>
+      <StyledMainWrapper {...rest}>{children}</StyledMainWrapper>
       <Footer />
     </>
   );

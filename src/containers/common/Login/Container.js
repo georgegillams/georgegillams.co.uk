@@ -1,19 +1,14 @@
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
-import TextLink from 'components/common/TextLink';
 import PageTitle from 'components/common/PageTitle';
 import DebugObject from 'components/common/DebugObject';
 import LoadingCover from '@george-gillams/components/loading-cover';
 
 import Skeleton from './Skeleton';
 
-import CookiesRequired from 'containers/common/CookiesRequired';
 import { LoggedOutOnly } from 'components/common/Walls';
-import { LoginForm } from 'components/common/Forms';
-import STYLES from './login.scss';
-import { cssModules } from '@george-gillams/components/helpers/cssModules';
-
-const getClassName = cssModules(STYLES);
+import PageContainer from 'components/common/PageContainer';
+import { StyledLoginForm, StyledTextLink } from './login.styles';
 
 const Login = props => {
   const [credentials, setCredentials] = useState({});
@@ -23,14 +18,8 @@ const Login = props => {
 
     loginState,
     authenticatorState,
-
-    className,
   } = props;
-  const outerClassNames = [];
 
-  if (className) {
-    outerClassNames.push(className);
-  }
   let preSubmitText = null;
   if (loginState.loginResult && loginState.loginResult.success) {
     preSubmitText = loginState.loginResult.success;
@@ -40,12 +29,10 @@ const Login = props => {
   }
 
   const page = (
-    <div className={outerClassNames.join(' ')}>
-      <CookiesRequired reason={'log in'} />
+    <PageContainer bottomPadding>
       <LoggedOutOnly user={authenticatorState.user}>
         <PageTitle name="Login">
-          <LoginForm
-            className={getClassName('login__form')}
+          <StyledLoginForm
             loading={loginState.loggingIn}
             credentials={credentials}
             onDataChanged={setCredentials}
@@ -54,12 +41,10 @@ const Login = props => {
             }}
             preSubmitText={preSubmitText}
           />
-          <TextLink className={getClassName('login__link')} href="/sign-up">
-            Not yet got an account? Sign up here.
-          </TextLink>
+          <StyledTextLink href="/sign-up">Not yet got an account? Sign up here.</StyledTextLink>
         </PageTitle>
       </LoggedOutOnly>
-    </div>
+    </PageContainer>
   );
 
   return (
@@ -89,13 +74,11 @@ Login.propTypes = {
   authenticatorState: PropTypes.shape({
     user: PropTypes.object,
   }).isRequired,
-  className: PropTypes.string,
 };
 
 Login.defaultProps = {
   authenticatorState: null,
   loginState: null,
-  className: null,
 };
 
 export default Login;

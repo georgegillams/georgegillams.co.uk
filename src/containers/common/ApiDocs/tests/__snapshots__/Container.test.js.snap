@@ -2,2777 +2,2784 @@
 
 exports[`<ApiDocs /> should render correctly 1`] = `
 <div>
-  <h1
-    class="sc-gsnTZi hUDWSp sc-kDDrLX cCIGfN"
+  <div
+    class="sc-bczRLJ ikoAiL page-containerstyles__StyledPageContainer-sc-19l7k4-0"
+    width="default"
   >
-    API docs
-  </h1>
-  <table
-    cellpadding="4"
-    cellspacing="4"
-    class="sc-crXcEl fAmPEq api-docs__table"
-  >
-    <thead
-      class="sc-evZas bDIEnd"
+    <h1
+      class="sc-dkzDqf grUNba sc-iqcoie fulViU"
     >
-      <tr
-        class="sc-ksZaOG"
-      >
-        <th
-          class="sc-hAZoDl bGblnd api-docs__cell"
-        >
-          <span
-            class="sc-bczRLJ deidno"
-          >
-            Path
-          </span>
-        </th>
-        <th
-          class="sc-hAZoDl bGblnd api-docs__cell"
-        >
-          <span
-            class="sc-bczRLJ deidno"
-          >
-            Method
-          </span>
-        </th>
-        <th
-          class="sc-hAZoDl bGblnd api-docs__cell"
-        >
-          <span
-            class="sc-bczRLJ deidno"
-          >
-            Arguments
-          </span>
-        </th>
-        <th
-          class="sc-hAZoDl bGblnd api-docs__cell"
-        >
-          <span
-            class="sc-bczRLJ deidno"
-          >
-            Authorisation
-          </span>
-        </th>
-        <th
-          class="sc-hAZoDl bGblnd api-docs__cell"
-        >
-          <span
-            class="sc-bczRLJ deidno"
-          >
-            Description
-          </span>
-        </th>
-      </tr>
-    </thead>
-    <tbody
-      class="sc-breuTD"
+      API docs
+    </h1>
+    <div
+      class="api-docsstyles__VerticalScrollContainer-sc-4t6xyo-3 kgPUAS"
     >
-      <tr
-        class="sc-ksZaOG"
+      <table
+        class="api-docsstyles__StyledTable-sc-4t6xyo-0 gBkxaf"
       >
-        <th
-          class="sc-hAZoDl bGblnd api-docs__cell"
+        <thead
+          class="sc-breuTD VMYjy"
         >
-          <a
-            aria-label="/analytics/create (opens in a new tab)"
-            class="sc-ftvSup bvTsjB"
-            href="https://www.georgegillams.co.uk/api/analytics/create"
-            rel="noopener noreferrer"
-            target="_blank"
+          <tr
+            class="sc-hAZoDl"
           >
-            /analytics/create
-            <div
-              class="sc-papXJ ecwnCf"
+            <th
+              class="sc-fnykZs geZTSW"
             >
-              <svg
-                class="sc-iBkjds eZahvc sc-jqUVSM fjeMmK"
-                height="18"
-                viewBox="0 0 24 24"
-                width="18"
-                xmlns="http://www.w3.org/2000/svg"
+              <span
+                class="sc-gsnTZi fzWRHm"
               >
-                <path
-                  d="M12.5 11.3c.4.4 1 .4 1.4 0L19 6.2V9c0 .6.4 1 1 1s1-.4 1-1V4c0-.6-.4-1-1-1h-5c-.6 0-1 .4-1 1s.4 1 1 1h2.4l-4.9 4.9c-.4.4-.4 1 0 1.4zM19 19c0 1.1-.9 2-2 2H5c-1.1 0-2-.9-2-2V7c0-1.1.9-2 2-2h7v2H5v12h12v-7h2"
-                />
-              </svg>
-            </div>
-          </a>
-        </th>
-        <th
-          class="sc-hAZoDl bGblnd api-docs__cell"
-        >
-          <span
-            class="sc-bczRLJ deidno api-docs__method"
-          >
-            POST
-          </span>
-        </th>
-        <th
-          class="sc-hAZoDl bGblnd api-docs__cell"
-        >
-          <span
-            class="sc-bczRLJ deidno"
-          />
-        </th>
-        <th
-          class="sc-hAZoDl bGblnd api-docs__cell"
-        >
-          <span
-            class="sc-bczRLJ deidno"
-          >
-            None
-          </span>
-        </th>
-        <th
-          class="sc-hAZoDl bGblnd api-docs__cell"
-        >
-          <span
-            class="sc-bczRLJ deidno api-docs__description"
-          >
-            Registers information about the page navigated to
-          </span>
-        </th>
-      </tr>
-      <tr
-        class="sc-ksZaOG"
-      >
-        <th
-          class="sc-hAZoDl bGblnd api-docs__cell"
-        >
-          <a
-            aria-label="/analytics/load-all (opens in a new tab)"
-            class="sc-ftvSup bvTsjB"
-            href="https://www.georgegillams.co.uk/api/analytics/load-all"
-            rel="noopener noreferrer"
-            target="_blank"
-          >
-            /analytics/load-all
-            <div
-              class="sc-papXJ ecwnCf"
+                Path
+              </span>
+            </th>
+            <th
+              class="sc-fnykZs geZTSW"
             >
-              <svg
-                class="sc-iBkjds eZahvc sc-jqUVSM fjeMmK"
-                height="18"
-                viewBox="0 0 24 24"
-                width="18"
-                xmlns="http://www.w3.org/2000/svg"
+              <span
+                class="sc-gsnTZi fzWRHm"
               >
-                <path
-                  d="M12.5 11.3c.4.4 1 .4 1.4 0L19 6.2V9c0 .6.4 1 1 1s1-.4 1-1V4c0-.6-.4-1-1-1h-5c-.6 0-1 .4-1 1s.4 1 1 1h2.4l-4.9 4.9c-.4.4-.4 1 0 1.4zM19 19c0 1.1-.9 2-2 2H5c-1.1 0-2-.9-2-2V7c0-1.1.9-2 2-2h7v2H5v12h12v-7h2"
-                />
-              </svg>
-            </div>
-          </a>
-        </th>
-        <th
-          class="sc-hAZoDl bGblnd api-docs__cell"
-        >
-          <span
-            class="sc-bczRLJ deidno api-docs__method"
-          >
-            GET
-          </span>
-        </th>
-        <th
-          class="sc-hAZoDl bGblnd api-docs__cell"
-        >
-          <span
-            class="sc-bczRLJ deidno"
-          />
-        </th>
-        <th
-          class="sc-hAZoDl bGblnd api-docs__cell"
-        >
-          <span
-            class="sc-bczRLJ deidno"
-          >
-            Admin only
-          </span>
-        </th>
-        <th
-          class="sc-hAZoDl bGblnd api-docs__cell"
-        >
-          <span
-            class="sc-bczRLJ deidno api-docs__description"
-          >
-            Loads all raw analytic points
-          </span>
-        </th>
-      </tr>
-      <tr
-        class="sc-ksZaOG"
-      >
-        <th
-          class="sc-hAZoDl bGblnd api-docs__cell"
-        >
-          <a
-            aria-label="/analytics/load (opens in a new tab)"
-            class="sc-ftvSup bvTsjB"
-            href="https://www.georgegillams.co.uk/api/analytics/load"
-            rel="noopener noreferrer"
-            target="_blank"
-          >
-            /analytics/load
-            <div
-              class="sc-papXJ ecwnCf"
+                Method
+              </span>
+            </th>
+            <th
+              class="sc-fnykZs geZTSW"
             >
-              <svg
-                class="sc-iBkjds eZahvc sc-jqUVSM fjeMmK"
-                height="18"
-                viewBox="0 0 24 24"
-                width="18"
-                xmlns="http://www.w3.org/2000/svg"
+              <span
+                class="sc-gsnTZi fzWRHm"
               >
-                <path
-                  d="M12.5 11.3c.4.4 1 .4 1.4 0L19 6.2V9c0 .6.4 1 1 1s1-.4 1-1V4c0-.6-.4-1-1-1h-5c-.6 0-1 .4-1 1s.4 1 1 1h2.4l-4.9 4.9c-.4.4-.4 1 0 1.4zM19 19c0 1.1-.9 2-2 2H5c-1.1 0-2-.9-2-2V7c0-1.1.9-2 2-2h7v2H5v12h12v-7h2"
-                />
-              </svg>
-            </div>
-          </a>
-        </th>
-        <th
-          class="sc-hAZoDl bGblnd api-docs__cell"
-        >
-          <span
-            class="sc-bczRLJ deidno api-docs__method"
-          >
-            GET
-          </span>
-        </th>
-        <th
-          class="sc-hAZoDl bGblnd api-docs__cell"
-        >
-          <span
-            class="sc-bczRLJ deidno"
-          />
-        </th>
-        <th
-          class="sc-hAZoDl bGblnd api-docs__cell"
-        >
-          <span
-            class="sc-bczRLJ deidno"
-          >
-            Admin only
-          </span>
-        </th>
-        <th
-          class="sc-hAZoDl bGblnd api-docs__cell"
-        >
-          <span
-            class="sc-bczRLJ deidno api-docs__description"
-          >
-            Loads a summary of unique analytic points
-          </span>
-        </th>
-      </tr>
-      <tr
-        class="sc-ksZaOG"
-      >
-        <th
-          class="sc-hAZoDl bGblnd api-docs__cell"
-        >
-          <a
-            aria-label="/auth/load (opens in a new tab)"
-            class="sc-ftvSup bvTsjB"
-            href="https://www.georgegillams.co.uk/api/auth/load"
-            rel="noopener noreferrer"
-            target="_blank"
-          >
-            /auth/load
-            <div
-              class="sc-papXJ ecwnCf"
+                Arguments
+              </span>
+            </th>
+            <th
+              class="sc-fnykZs geZTSW"
             >
-              <svg
-                class="sc-iBkjds eZahvc sc-jqUVSM fjeMmK"
-                height="18"
-                viewBox="0 0 24 24"
-                width="18"
-                xmlns="http://www.w3.org/2000/svg"
+              <span
+                class="sc-gsnTZi fzWRHm"
               >
-                <path
-                  d="M12.5 11.3c.4.4 1 .4 1.4 0L19 6.2V9c0 .6.4 1 1 1s1-.4 1-1V4c0-.6-.4-1-1-1h-5c-.6 0-1 .4-1 1s.4 1 1 1h2.4l-4.9 4.9c-.4.4-.4 1 0 1.4zM19 19c0 1.1-.9 2-2 2H5c-1.1 0-2-.9-2-2V7c0-1.1.9-2 2-2h7v2H5v12h12v-7h2"
-                />
-              </svg>
-            </div>
-          </a>
-        </th>
-        <th
-          class="sc-hAZoDl bGblnd api-docs__cell"
-        >
-          <span
-            class="sc-bczRLJ deidno api-docs__method"
-          >
-            GET
-          </span>
-        </th>
-        <th
-          class="sc-hAZoDl bGblnd api-docs__cell"
-        >
-          <span
-            class="sc-bczRLJ deidno"
-          />
-        </th>
-        <th
-          class="sc-hAZoDl bGblnd api-docs__cell"
-        >
-          <span
-            class="sc-bczRLJ deidno"
-          >
-            None
-          </span>
-        </th>
-        <th
-          class="sc-hAZoDl bGblnd api-docs__cell"
-        >
-          <span
-            class="sc-bczRLJ deidno api-docs__description"
-          >
-            Loads the currently authenticated used. Returns null if signed out
-          </span>
-        </th>
-      </tr>
-      <tr
-        class="sc-ksZaOG"
-      >
-        <th
-          class="sc-hAZoDl bGblnd api-docs__cell"
-        >
-          <a
-            aria-label="/auth/logout (opens in a new tab)"
-            class="sc-ftvSup bvTsjB"
-            href="https://www.georgegillams.co.uk/api/auth/logout"
-            rel="noopener noreferrer"
-            target="_blank"
-          >
-            /auth/logout
-            <div
-              class="sc-papXJ ecwnCf"
+                Authorisation
+              </span>
+            </th>
+            <th
+              class="sc-fnykZs geZTSW"
             >
-              <svg
-                class="sc-iBkjds eZahvc sc-jqUVSM fjeMmK"
-                height="18"
-                viewBox="0 0 24 24"
-                width="18"
-                xmlns="http://www.w3.org/2000/svg"
+              <span
+                class="sc-gsnTZi fzWRHm"
               >
-                <path
-                  d="M12.5 11.3c.4.4 1 .4 1.4 0L19 6.2V9c0 .6.4 1 1 1s1-.4 1-1V4c0-.6-.4-1-1-1h-5c-.6 0-1 .4-1 1s.4 1 1 1h2.4l-4.9 4.9c-.4.4-.4 1 0 1.4zM19 19c0 1.1-.9 2-2 2H5c-1.1 0-2-.9-2-2V7c0-1.1.9-2 2-2h7v2H5v12h12v-7h2"
-                />
-              </svg>
-            </div>
-          </a>
-        </th>
-        <th
-          class="sc-hAZoDl bGblnd api-docs__cell"
+                Description
+              </span>
+            </th>
+          </tr>
+        </thead>
+        <tbody
+          class="sc-ksZaOG"
         >
-          <span
-            class="sc-bczRLJ deidno api-docs__method"
+          <tr
+            class="sc-hAZoDl"
           >
-            POST
-          </span>
-        </th>
-        <th
-          class="sc-hAZoDl bGblnd api-docs__cell"
-        >
-          <span
-            class="sc-bczRLJ deidno"
-          />
-        </th>
-        <th
-          class="sc-hAZoDl bGblnd api-docs__cell"
-        >
-          <span
-            class="sc-bczRLJ deidno"
-          >
-            None
-          </span>
-        </th>
-        <th
-          class="sc-hAZoDl bGblnd api-docs__cell"
-        >
-          <span
-            class="sc-bczRLJ deidno api-docs__description"
-          >
-            Logs out the currently authenticated user
-          </span>
-        </th>
-      </tr>
-      <tr
-        class="sc-ksZaOG"
-      >
-        <th
-          class="sc-hAZoDl bGblnd api-docs__cell"
-        >
-          <a
-            aria-label="/auth/request-verification-email (opens in a new tab)"
-            class="sc-ftvSup bvTsjB"
-            href="https://www.georgegillams.co.uk/api/auth/request-verification-email"
-            rel="noopener noreferrer"
-            target="_blank"
-          >
-            /auth/request-verification-email
-            <div
-              class="sc-papXJ ecwnCf"
+            <th
+              class="sc-fnykZs geZTSW"
             >
-              <svg
-                class="sc-iBkjds eZahvc sc-jqUVSM fjeMmK"
-                height="18"
-                viewBox="0 0 24 24"
-                width="18"
-                xmlns="http://www.w3.org/2000/svg"
+              <a
+                aria-label="/analytics/create (opens in a new tab)"
+                class="sc-papXJ ilnFdC"
+                href="https://www.georgegillams.co.uk/api/analytics/create"
+                rel="noopener noreferrer"
+                target="_blank"
               >
-                <path
-                  d="M12.5 11.3c.4.4 1 .4 1.4 0L19 6.2V9c0 .6.4 1 1 1s1-.4 1-1V4c0-.6-.4-1-1-1h-5c-.6 0-1 .4-1 1s.4 1 1 1h2.4l-4.9 4.9c-.4.4-.4 1 0 1.4zM19 19c0 1.1-.9 2-2 2H5c-1.1 0-2-.9-2-2V7c0-1.1.9-2 2-2h7v2H5v12h12v-7h2"
-                />
-              </svg>
-            </div>
-          </a>
-        </th>
-        <th
-          class="sc-hAZoDl bGblnd api-docs__cell"
-        >
-          <span
-            class="sc-bczRLJ deidno api-docs__method"
-          >
-            POST
-          </span>
-        </th>
-        <th
-          class="sc-hAZoDl bGblnd api-docs__cell"
-        >
-          <span
-            class="sc-bczRLJ deidno"
-          />
-        </th>
-        <th
-          class="sc-hAZoDl bGblnd api-docs__cell"
-        >
-          <span
-            class="sc-bczRLJ deidno"
-          >
-            Any user
-          </span>
-        </th>
-        <th
-          class="sc-hAZoDl bGblnd api-docs__cell"
-        >
-          <span
-            class="sc-bczRLJ deidno api-docs__description"
-          >
-            Resends an email verification email
-          </span>
-        </th>
-      </tr>
-      <tr
-        class="sc-ksZaOG"
-      >
-        <th
-          class="sc-hAZoDl bGblnd api-docs__cell"
-        >
-          <a
-            aria-label="/auth/verify-email (opens in a new tab)"
-            class="sc-ftvSup bvTsjB"
-            href="https://www.georgegillams.co.uk/api/auth/verify-email"
-            rel="noopener noreferrer"
-            target="_blank"
-          >
-            /auth/verify-email
-            <div
-              class="sc-papXJ ecwnCf"
+                /analytics/create
+                <div
+                  class="sc-jqUVSM icGDYy"
+                >
+                  <svg
+                    class="sc-ftvSup bygzLL sc-kDDrLX kzKBSF"
+                    height="18"
+                    viewBox="0 0 24 24"
+                    width="18"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M12.5 11.3c.4.4 1 .4 1.4 0L19 6.2V9c0 .6.4 1 1 1s1-.4 1-1V4c0-.6-.4-1-1-1h-5c-.6 0-1 .4-1 1s.4 1 1 1h2.4l-4.9 4.9c-.4.4-.4 1 0 1.4zM19 19c0 1.1-.9 2-2 2H5c-1.1 0-2-.9-2-2V7c0-1.1.9-2 2-2h7v2H5v12h12v-7h2"
+                    />
+                  </svg>
+                </div>
+              </a>
+            </th>
+            <th
+              class="sc-fnykZs geZTSW"
             >
-              <svg
-                class="sc-iBkjds eZahvc sc-jqUVSM fjeMmK"
-                height="18"
-                viewBox="0 0 24 24"
-                width="18"
-                xmlns="http://www.w3.org/2000/svg"
+              <span
+                class="sc-gsnTZi fzWRHm api-docsstyles__Method-sc-4t6xyo-2 lesXHI"
               >
-                <path
-                  d="M12.5 11.3c.4.4 1 .4 1.4 0L19 6.2V9c0 .6.4 1 1 1s1-.4 1-1V4c0-.6-.4-1-1-1h-5c-.6 0-1 .4-1 1s.4 1 1 1h2.4l-4.9 4.9c-.4.4-.4 1 0 1.4zM19 19c0 1.1-.9 2-2 2H5c-1.1 0-2-.9-2-2V7c0-1.1.9-2 2-2h7v2H5v12h12v-7h2"
-                />
-              </svg>
-            </div>
-          </a>
-        </th>
-        <th
-          class="sc-hAZoDl bGblnd api-docs__cell"
-        >
-          <span
-            class="sc-bczRLJ deidno api-docs__method"
-          >
-            POST
-          </span>
-        </th>
-        <th
-          class="sc-hAZoDl bGblnd api-docs__cell"
-        >
-          <span
-            class="sc-bczRLJ deidno"
-          />
-        </th>
-        <th
-          class="sc-hAZoDl bGblnd api-docs__cell"
-        >
-          <span
-            class="sc-bczRLJ deidno"
-          >
-            None
-          </span>
-        </th>
-        <th
-          class="sc-hAZoDl bGblnd api-docs__cell"
-        >
-          <span
-            class="sc-bczRLJ deidno api-docs__description"
-          >
-            Verify an email address with a secret verification key
-          </span>
-        </th>
-      </tr>
-      <tr
-        class="sc-ksZaOG"
-      >
-        <th
-          class="sc-hAZoDl bGblnd api-docs__cell"
-        >
-          <a
-            aria-label="/emails/load (opens in a new tab)"
-            class="sc-ftvSup bvTsjB"
-            href="https://www.georgegillams.co.uk/api/emails/load"
-            rel="noopener noreferrer"
-            target="_blank"
-          >
-            /emails/load
-            <div
-              class="sc-papXJ ecwnCf"
+                POST
+              </span>
+            </th>
+            <th
+              class="sc-fnykZs geZTSW"
             >
-              <svg
-                class="sc-iBkjds eZahvc sc-jqUVSM fjeMmK"
-                height="18"
-                viewBox="0 0 24 24"
-                width="18"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M12.5 11.3c.4.4 1 .4 1.4 0L19 6.2V9c0 .6.4 1 1 1s1-.4 1-1V4c0-.6-.4-1-1-1h-5c-.6 0-1 .4-1 1s.4 1 1 1h2.4l-4.9 4.9c-.4.4-.4 1 0 1.4zM19 19c0 1.1-.9 2-2 2H5c-1.1 0-2-.9-2-2V7c0-1.1.9-2 2-2h7v2H5v12h12v-7h2"
-                />
-              </svg>
-            </div>
-          </a>
-        </th>
-        <th
-          class="sc-hAZoDl bGblnd api-docs__cell"
-        >
-          <span
-            class="sc-bczRLJ deidno api-docs__method"
-          >
-            GET
-          </span>
-        </th>
-        <th
-          class="sc-hAZoDl bGblnd api-docs__cell"
-        >
-          <span
-            class="sc-bczRLJ deidno"
-          />
-        </th>
-        <th
-          class="sc-hAZoDl bGblnd api-docs__cell"
-        >
-          <span
-            class="sc-bczRLJ deidno"
-          >
-            Admin only
-          </span>
-        </th>
-        <th
-          class="sc-hAZoDl bGblnd api-docs__cell"
-        >
-          <span
-            class="sc-bczRLJ deidno api-docs__description"
-          >
-            Loads emails that have been sent
-          </span>
-        </th>
-      </tr>
-      <tr
-        class="sc-ksZaOG"
-      >
-        <th
-          class="sc-hAZoDl bGblnd api-docs__cell"
-        >
-          <a
-            aria-label="/emails/resend (opens in a new tab)"
-            class="sc-ftvSup bvTsjB"
-            href="https://www.georgegillams.co.uk/api/emails/resend"
-            rel="noopener noreferrer"
-            target="_blank"
-          >
-            /emails/resend
-            <div
-              class="sc-papXJ ecwnCf"
+              <span
+                class="sc-gsnTZi fzWRHm"
+              />
+            </th>
+            <th
+              class="sc-fnykZs geZTSW"
             >
-              <svg
-                class="sc-iBkjds eZahvc sc-jqUVSM fjeMmK"
-                height="18"
-                viewBox="0 0 24 24"
-                width="18"
-                xmlns="http://www.w3.org/2000/svg"
+              <span
+                class="sc-gsnTZi fzWRHm"
               >
-                <path
-                  d="M12.5 11.3c.4.4 1 .4 1.4 0L19 6.2V9c0 .6.4 1 1 1s1-.4 1-1V4c0-.6-.4-1-1-1h-5c-.6 0-1 .4-1 1s.4 1 1 1h2.4l-4.9 4.9c-.4.4-.4 1 0 1.4zM19 19c0 1.1-.9 2-2 2H5c-1.1 0-2-.9-2-2V7c0-1.1.9-2 2-2h7v2H5v12h12v-7h2"
-                />
-              </svg>
-            </div>
-          </a>
-        </th>
-        <th
-          class="sc-hAZoDl bGblnd api-docs__cell"
-        >
-          <span
-            class="sc-bczRLJ deidno api-docs__method"
-          >
-            POST
-          </span>
-        </th>
-        <th
-          class="sc-hAZoDl bGblnd api-docs__cell"
-        >
-          <span
-            class="sc-bczRLJ deidno"
-          />
-        </th>
-        <th
-          class="sc-hAZoDl bGblnd api-docs__cell"
-        >
-          <span
-            class="sc-bczRLJ deidno"
-          >
-            Admin only
-          </span>
-        </th>
-        <th
-          class="sc-hAZoDl bGblnd api-docs__cell"
-        >
-          <span
-            class="sc-bczRLJ deidno api-docs__description"
-          >
-            Resends an email that's stored in the database
-          </span>
-        </th>
-      </tr>
-      <tr
-        class="sc-ksZaOG"
-      >
-        <th
-          class="sc-hAZoDl bGblnd api-docs__cell"
-        >
-          <a
-            aria-label="/magic-links/login (opens in a new tab)"
-            class="sc-ftvSup bvTsjB"
-            href="https://www.georgegillams.co.uk/api/magic-links/login"
-            rel="noopener noreferrer"
-            target="_blank"
-          >
-            /magic-links/login
-            <div
-              class="sc-papXJ ecwnCf"
+                None
+              </span>
+            </th>
+            <th
+              class="sc-fnykZs geZTSW"
             >
-              <svg
-                class="sc-iBkjds eZahvc sc-jqUVSM fjeMmK"
-                height="18"
-                viewBox="0 0 24 24"
-                width="18"
-                xmlns="http://www.w3.org/2000/svg"
+              <span
+                class="sc-gsnTZi fzWRHm api-docsstyles__Description-sc-4t6xyo-1 cZtHBf"
               >
-                <path
-                  d="M12.5 11.3c.4.4 1 .4 1.4 0L19 6.2V9c0 .6.4 1 1 1s1-.4 1-1V4c0-.6-.4-1-1-1h-5c-.6 0-1 .4-1 1s.4 1 1 1h2.4l-4.9 4.9c-.4.4-.4 1 0 1.4zM19 19c0 1.1-.9 2-2 2H5c-1.1 0-2-.9-2-2V7c0-1.1.9-2 2-2h7v2H5v12h12v-7h2"
-                />
-              </svg>
-            </div>
-          </a>
-        </th>
-        <th
-          class="sc-hAZoDl bGblnd api-docs__cell"
-        >
-          <span
-            class="sc-bczRLJ deidno api-docs__method"
+                Registers information about the page navigated to
+              </span>
+            </th>
+          </tr>
+          <tr
+            class="sc-hAZoDl"
           >
-            POST
-          </span>
-        </th>
-        <th
-          class="sc-hAZoDl bGblnd api-docs__cell"
-        >
-          <span
-            class="sc-bczRLJ deidno"
-          />
-        </th>
-        <th
-          class="sc-hAZoDl bGblnd api-docs__cell"
-        >
-          <span
-            class="sc-bczRLJ deidno"
-          >
-            None
-          </span>
-        </th>
-        <th
-          class="sc-hAZoDl bGblnd api-docs__cell"
-        >
-          <span
-            class="sc-bczRLJ deidno api-docs__description"
-          >
-            Login using a secret magic-link key
-          </span>
-        </th>
-      </tr>
-      <tr
-        class="sc-ksZaOG"
-      >
-        <th
-          class="sc-hAZoDl bGblnd api-docs__cell"
-        >
-          <a
-            aria-label="/magic-links/request (opens in a new tab)"
-            class="sc-ftvSup bvTsjB"
-            href="https://www.georgegillams.co.uk/api/magic-links/request"
-            rel="noopener noreferrer"
-            target="_blank"
-          >
-            /magic-links/request
-            <div
-              class="sc-papXJ ecwnCf"
+            <th
+              class="sc-fnykZs geZTSW"
             >
-              <svg
-                class="sc-iBkjds eZahvc sc-jqUVSM fjeMmK"
-                height="18"
-                viewBox="0 0 24 24"
-                width="18"
-                xmlns="http://www.w3.org/2000/svg"
+              <a
+                aria-label="/analytics/load-all (opens in a new tab)"
+                class="sc-papXJ ilnFdC"
+                href="https://www.georgegillams.co.uk/api/analytics/load-all"
+                rel="noopener noreferrer"
+                target="_blank"
               >
-                <path
-                  d="M12.5 11.3c.4.4 1 .4 1.4 0L19 6.2V9c0 .6.4 1 1 1s1-.4 1-1V4c0-.6-.4-1-1-1h-5c-.6 0-1 .4-1 1s.4 1 1 1h2.4l-4.9 4.9c-.4.4-.4 1 0 1.4zM19 19c0 1.1-.9 2-2 2H5c-1.1 0-2-.9-2-2V7c0-1.1.9-2 2-2h7v2H5v12h12v-7h2"
-                />
-              </svg>
-            </div>
-          </a>
-        </th>
-        <th
-          class="sc-hAZoDl bGblnd api-docs__cell"
-        >
-          <span
-            class="sc-bczRLJ deidno api-docs__method"
-          >
-            POST
-          </span>
-        </th>
-        <th
-          class="sc-hAZoDl bGblnd api-docs__cell"
-        >
-          <span
-            class="sc-bczRLJ deidno"
-          />
-        </th>
-        <th
-          class="sc-hAZoDl bGblnd api-docs__cell"
-        >
-          <span
-            class="sc-bczRLJ deidno"
-          >
-            None
-          </span>
-        </th>
-        <th
-          class="sc-hAZoDl bGblnd api-docs__cell"
-        >
-          <span
-            class="sc-bczRLJ deidno api-docs__description"
-          >
-            Request a magic link for a given account using the account's email address
-          </span>
-        </th>
-      </tr>
-      <tr
-        class="sc-ksZaOG"
-      >
-        <th
-          class="sc-hAZoDl bGblnd api-docs__cell"
-        >
-          <a
-            aria-label="/data-management/backup (opens in a new tab)"
-            class="sc-ftvSup bvTsjB"
-            href="https://www.georgegillams.co.uk/api/data-management/backup"
-            rel="noopener noreferrer"
-            target="_blank"
-          >
-            /data-management/backup
-            <div
-              class="sc-papXJ ecwnCf"
+                /analytics/load-all
+                <div
+                  class="sc-jqUVSM icGDYy"
+                >
+                  <svg
+                    class="sc-ftvSup bygzLL sc-kDDrLX kzKBSF"
+                    height="18"
+                    viewBox="0 0 24 24"
+                    width="18"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M12.5 11.3c.4.4 1 .4 1.4 0L19 6.2V9c0 .6.4 1 1 1s1-.4 1-1V4c0-.6-.4-1-1-1h-5c-.6 0-1 .4-1 1s.4 1 1 1h2.4l-4.9 4.9c-.4.4-.4 1 0 1.4zM19 19c0 1.1-.9 2-2 2H5c-1.1 0-2-.9-2-2V7c0-1.1.9-2 2-2h7v2H5v12h12v-7h2"
+                    />
+                  </svg>
+                </div>
+              </a>
+            </th>
+            <th
+              class="sc-fnykZs geZTSW"
             >
-              <svg
-                class="sc-iBkjds eZahvc sc-jqUVSM fjeMmK"
-                height="18"
-                viewBox="0 0 24 24"
-                width="18"
-                xmlns="http://www.w3.org/2000/svg"
+              <span
+                class="sc-gsnTZi fzWRHm api-docsstyles__Method-sc-4t6xyo-2 lesXHI"
               >
-                <path
-                  d="M12.5 11.3c.4.4 1 .4 1.4 0L19 6.2V9c0 .6.4 1 1 1s1-.4 1-1V4c0-.6-.4-1-1-1h-5c-.6 0-1 .4-1 1s.4 1 1 1h2.4l-4.9 4.9c-.4.4-.4 1 0 1.4zM19 19c0 1.1-.9 2-2 2H5c-1.1 0-2-.9-2-2V7c0-1.1.9-2 2-2h7v2H5v12h12v-7h2"
-                />
-              </svg>
-            </div>
-          </a>
-        </th>
-        <th
-          class="sc-hAZoDl bGblnd api-docs__cell"
-        >
-          <span
-            class="sc-bczRLJ deidno api-docs__method"
-          >
-            GET
-          </span>
-        </th>
-        <th
-          class="sc-hAZoDl bGblnd api-docs__cell"
-        >
-          <span
-            class="sc-bczRLJ deidno"
-          />
-        </th>
-        <th
-          class="sc-hAZoDl bGblnd api-docs__cell"
-        >
-          <span
-            class="sc-bczRLJ deidno"
-          >
-            Admin only
-          </span>
-        </th>
-        <th
-          class="sc-hAZoDl bGblnd api-docs__cell"
-        >
-          <span
-            class="sc-bczRLJ deidno api-docs__description"
-          >
-            Returns a file containing a full data backup for the site
-          </span>
-        </th>
-      </tr>
-      <tr
-        class="sc-ksZaOG"
-      >
-        <th
-          class="sc-hAZoDl bGblnd api-docs__cell"
-        >
-          <a
-            aria-label="/data-management/delete-entity (opens in a new tab)"
-            class="sc-ftvSup bvTsjB"
-            href="https://www.georgegillams.co.uk/api/data-management/delete-entity"
-            rel="noopener noreferrer"
-            target="_blank"
-          >
-            /data-management/delete-entity
-            <div
-              class="sc-papXJ ecwnCf"
+                GET
+              </span>
+            </th>
+            <th
+              class="sc-fnykZs geZTSW"
             >
-              <svg
-                class="sc-iBkjds eZahvc sc-jqUVSM fjeMmK"
-                height="18"
-                viewBox="0 0 24 24"
-                width="18"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M12.5 11.3c.4.4 1 .4 1.4 0L19 6.2V9c0 .6.4 1 1 1s1-.4 1-1V4c0-.6-.4-1-1-1h-5c-.6 0-1 .4-1 1s.4 1 1 1h2.4l-4.9 4.9c-.4.4-.4 1 0 1.4zM19 19c0 1.1-.9 2-2 2H5c-1.1 0-2-.9-2-2V7c0-1.1.9-2 2-2h7v2H5v12h12v-7h2"
-                />
-              </svg>
-            </div>
-          </a>
-        </th>
-        <th
-          class="sc-hAZoDl bGblnd api-docs__cell"
-        >
-          <span
-            class="sc-bczRLJ deidno api-docs__method"
-          >
-            POST
-          </span>
-        </th>
-        <th
-          class="sc-hAZoDl bGblnd api-docs__cell"
-        >
-          <span
-            class="sc-bczRLJ deidno"
-          />
-        </th>
-        <th
-          class="sc-hAZoDl bGblnd api-docs__cell"
-        >
-          <span
-            class="sc-bczRLJ deidno"
-          >
-            Admin only
-          </span>
-        </th>
-        <th
-          class="sc-hAZoDl bGblnd api-docs__cell"
-        >
-          <span
-            class="sc-bczRLJ deidno api-docs__description"
-          >
-            Remove a previously deleted entity completely from the DB
-          </span>
-        </th>
-      </tr>
-      <tr
-        class="sc-ksZaOG"
-      >
-        <th
-          class="sc-hAZoDl bGblnd api-docs__cell"
-        >
-          <a
-            aria-label="/data-management/delete-set (opens in a new tab)"
-            class="sc-ftvSup bvTsjB"
-            href="https://www.georgegillams.co.uk/api/data-management/delete-set"
-            rel="noopener noreferrer"
-            target="_blank"
-          >
-            /data-management/delete-set
-            <div
-              class="sc-papXJ ecwnCf"
+              <span
+                class="sc-gsnTZi fzWRHm"
+              />
+            </th>
+            <th
+              class="sc-fnykZs geZTSW"
             >
-              <svg
-                class="sc-iBkjds eZahvc sc-jqUVSM fjeMmK"
-                height="18"
-                viewBox="0 0 24 24"
-                width="18"
-                xmlns="http://www.w3.org/2000/svg"
+              <span
+                class="sc-gsnTZi fzWRHm"
               >
-                <path
-                  d="M12.5 11.3c.4.4 1 .4 1.4 0L19 6.2V9c0 .6.4 1 1 1s1-.4 1-1V4c0-.6-.4-1-1-1h-5c-.6 0-1 .4-1 1s.4 1 1 1h2.4l-4.9 4.9c-.4.4-.4 1 0 1.4zM19 19c0 1.1-.9 2-2 2H5c-1.1 0-2-.9-2-2V7c0-1.1.9-2 2-2h7v2H5v12h12v-7h2"
-                />
-              </svg>
-            </div>
-          </a>
-        </th>
-        <th
-          class="sc-hAZoDl bGblnd api-docs__cell"
-        >
-          <span
-            class="sc-bczRLJ deidno api-docs__method"
-          >
-            POST
-          </span>
-        </th>
-        <th
-          class="sc-hAZoDl bGblnd api-docs__cell"
-        >
-          <span
-            class="sc-bczRLJ deidno"
-          />
-        </th>
-        <th
-          class="sc-hAZoDl bGblnd api-docs__cell"
-        >
-          <span
-            class="sc-bczRLJ deidno"
-          >
-            Admin only
-          </span>
-        </th>
-        <th
-          class="sc-hAZoDl bGblnd api-docs__cell"
-        >
-          <span
-            class="sc-bczRLJ deidno api-docs__description"
-          >
-            Remove an entire collection from the DB
-          </span>
-        </th>
-      </tr>
-      <tr
-        class="sc-ksZaOG"
-      >
-        <th
-          class="sc-hAZoDl bGblnd api-docs__cell"
-        >
-          <a
-            aria-label="/data-management/restore (opens in a new tab)"
-            class="sc-ftvSup bvTsjB"
-            href="https://www.georgegillams.co.uk/api/data-management/restore"
-            rel="noopener noreferrer"
-            target="_blank"
-          >
-            /data-management/restore
-            <div
-              class="sc-papXJ ecwnCf"
+                Admin only
+              </span>
+            </th>
+            <th
+              class="sc-fnykZs geZTSW"
             >
-              <svg
-                class="sc-iBkjds eZahvc sc-jqUVSM fjeMmK"
-                height="18"
-                viewBox="0 0 24 24"
-                width="18"
-                xmlns="http://www.w3.org/2000/svg"
+              <span
+                class="sc-gsnTZi fzWRHm api-docsstyles__Description-sc-4t6xyo-1 cZtHBf"
               >
-                <path
-                  d="M12.5 11.3c.4.4 1 .4 1.4 0L19 6.2V9c0 .6.4 1 1 1s1-.4 1-1V4c0-.6-.4-1-1-1h-5c-.6 0-1 .4-1 1s.4 1 1 1h2.4l-4.9 4.9c-.4.4-.4 1 0 1.4zM19 19c0 1.1-.9 2-2 2H5c-1.1 0-2-.9-2-2V7c0-1.1.9-2 2-2h7v2H5v12h12v-7h2"
-                />
-              </svg>
-            </div>
-          </a>
-        </th>
-        <th
-          class="sc-hAZoDl bGblnd api-docs__cell"
-        >
-          <span
-            class="sc-bczRLJ deidno api-docs__method"
+                Loads all raw analytic points
+              </span>
+            </th>
+          </tr>
+          <tr
+            class="sc-hAZoDl"
           >
-            POST
-          </span>
-        </th>
-        <th
-          class="sc-hAZoDl bGblnd api-docs__cell"
-        >
-          <span
-            class="sc-bczRLJ deidno"
-          />
-        </th>
-        <th
-          class="sc-hAZoDl bGblnd api-docs__cell"
-        >
-          <span
-            class="sc-bczRLJ deidno"
-          >
-            Admin only
-          </span>
-        </th>
-        <th
-          class="sc-hAZoDl bGblnd api-docs__cell"
-        >
-          <span
-            class="sc-bczRLJ deidno api-docs__description"
-          >
-            Restore all the data from a backup file
-          </span>
-        </th>
-      </tr>
-      <tr
-        class="sc-ksZaOG"
-      >
-        <th
-          class="sc-hAZoDl bGblnd api-docs__cell"
-        >
-          <a
-            aria-label="/notifications/create (opens in a new tab)"
-            class="sc-ftvSup bvTsjB"
-            href="https://www.georgegillams.co.uk/api/notifications/create"
-            rel="noopener noreferrer"
-            target="_blank"
-          >
-            /notifications/create
-            <div
-              class="sc-papXJ ecwnCf"
+            <th
+              class="sc-fnykZs geZTSW"
             >
-              <svg
-                class="sc-iBkjds eZahvc sc-jqUVSM fjeMmK"
-                height="18"
-                viewBox="0 0 24 24"
-                width="18"
-                xmlns="http://www.w3.org/2000/svg"
+              <a
+                aria-label="/analytics/load (opens in a new tab)"
+                class="sc-papXJ ilnFdC"
+                href="https://www.georgegillams.co.uk/api/analytics/load"
+                rel="noopener noreferrer"
+                target="_blank"
               >
-                <path
-                  d="M12.5 11.3c.4.4 1 .4 1.4 0L19 6.2V9c0 .6.4 1 1 1s1-.4 1-1V4c0-.6-.4-1-1-1h-5c-.6 0-1 .4-1 1s.4 1 1 1h2.4l-4.9 4.9c-.4.4-.4 1 0 1.4zM19 19c0 1.1-.9 2-2 2H5c-1.1 0-2-.9-2-2V7c0-1.1.9-2 2-2h7v2H5v12h12v-7h2"
-                />
-              </svg>
-            </div>
-          </a>
-        </th>
-        <th
-          class="sc-hAZoDl bGblnd api-docs__cell"
-        >
-          <span
-            class="sc-bczRLJ deidno api-docs__method"
-          >
-            POST
-          </span>
-        </th>
-        <th
-          class="sc-hAZoDl bGblnd api-docs__cell"
-        >
-          <span
-            class="sc-bczRLJ deidno"
-          />
-        </th>
-        <th
-          class="sc-hAZoDl bGblnd api-docs__cell"
-        >
-          <span
-            class="sc-bczRLJ deidno"
-          >
-            Admin only
-          </span>
-        </th>
-        <th
-          class="sc-hAZoDl bGblnd api-docs__cell"
-        >
-          <span
-            class="sc-bczRLJ deidno api-docs__description"
-          >
-            Creates a notification which will be show at the top of the site
-          </span>
-        </th>
-      </tr>
-      <tr
-        class="sc-ksZaOG"
-      >
-        <th
-          class="sc-hAZoDl bGblnd api-docs__cell"
-        >
-          <a
-            aria-label="/notifications/delete (opens in a new tab)"
-            class="sc-ftvSup bvTsjB"
-            href="https://www.georgegillams.co.uk/api/notifications/delete"
-            rel="noopener noreferrer"
-            target="_blank"
-          >
-            /notifications/delete
-            <div
-              class="sc-papXJ ecwnCf"
+                /analytics/load
+                <div
+                  class="sc-jqUVSM icGDYy"
+                >
+                  <svg
+                    class="sc-ftvSup bygzLL sc-kDDrLX kzKBSF"
+                    height="18"
+                    viewBox="0 0 24 24"
+                    width="18"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M12.5 11.3c.4.4 1 .4 1.4 0L19 6.2V9c0 .6.4 1 1 1s1-.4 1-1V4c0-.6-.4-1-1-1h-5c-.6 0-1 .4-1 1s.4 1 1 1h2.4l-4.9 4.9c-.4.4-.4 1 0 1.4zM19 19c0 1.1-.9 2-2 2H5c-1.1 0-2-.9-2-2V7c0-1.1.9-2 2-2h7v2H5v12h12v-7h2"
+                    />
+                  </svg>
+                </div>
+              </a>
+            </th>
+            <th
+              class="sc-fnykZs geZTSW"
             >
-              <svg
-                class="sc-iBkjds eZahvc sc-jqUVSM fjeMmK"
-                height="18"
-                viewBox="0 0 24 24"
-                width="18"
-                xmlns="http://www.w3.org/2000/svg"
+              <span
+                class="sc-gsnTZi fzWRHm api-docsstyles__Method-sc-4t6xyo-2 lesXHI"
               >
-                <path
-                  d="M12.5 11.3c.4.4 1 .4 1.4 0L19 6.2V9c0 .6.4 1 1 1s1-.4 1-1V4c0-.6-.4-1-1-1h-5c-.6 0-1 .4-1 1s.4 1 1 1h2.4l-4.9 4.9c-.4.4-.4 1 0 1.4zM19 19c0 1.1-.9 2-2 2H5c-1.1 0-2-.9-2-2V7c0-1.1.9-2 2-2h7v2H5v12h12v-7h2"
-                />
-              </svg>
-            </div>
-          </a>
-        </th>
-        <th
-          class="sc-hAZoDl bGblnd api-docs__cell"
-        >
-          <span
-            class="sc-bczRLJ deidno api-docs__method"
-          >
-            POST
-          </span>
-        </th>
-        <th
-          class="sc-hAZoDl bGblnd api-docs__cell"
-        >
-          <span
-            class="sc-bczRLJ deidno"
-          />
-        </th>
-        <th
-          class="sc-hAZoDl bGblnd api-docs__cell"
-        >
-          <span
-            class="sc-bczRLJ deidno"
-          >
-            Admin only
-          </span>
-        </th>
-        <th
-          class="sc-hAZoDl bGblnd api-docs__cell"
-        >
-          <span
-            class="sc-bczRLJ deidno api-docs__description"
-          >
-            Deletes a notification
-          </span>
-        </th>
-      </tr>
-      <tr
-        class="sc-ksZaOG"
-      >
-        <th
-          class="sc-hAZoDl bGblnd api-docs__cell"
-        >
-          <a
-            aria-label="/notifications/load-all (opens in a new tab)"
-            class="sc-ftvSup bvTsjB"
-            href="https://www.georgegillams.co.uk/api/notifications/load-all"
-            rel="noopener noreferrer"
-            target="_blank"
-          >
-            /notifications/load-all
-            <div
-              class="sc-papXJ ecwnCf"
+                GET
+              </span>
+            </th>
+            <th
+              class="sc-fnykZs geZTSW"
             >
-              <svg
-                class="sc-iBkjds eZahvc sc-jqUVSM fjeMmK"
-                height="18"
-                viewBox="0 0 24 24"
-                width="18"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M12.5 11.3c.4.4 1 .4 1.4 0L19 6.2V9c0 .6.4 1 1 1s1-.4 1-1V4c0-.6-.4-1-1-1h-5c-.6 0-1 .4-1 1s.4 1 1 1h2.4l-4.9 4.9c-.4.4-.4 1 0 1.4zM19 19c0 1.1-.9 2-2 2H5c-1.1 0-2-.9-2-2V7c0-1.1.9-2 2-2h7v2H5v12h12v-7h2"
-                />
-              </svg>
-            </div>
-          </a>
-        </th>
-        <th
-          class="sc-hAZoDl bGblnd api-docs__cell"
-        >
-          <span
-            class="sc-bczRLJ deidno api-docs__method"
-          >
-            GET
-          </span>
-        </th>
-        <th
-          class="sc-hAZoDl bGblnd api-docs__cell"
-        >
-          <span
-            class="sc-bczRLJ deidno"
-          />
-        </th>
-        <th
-          class="sc-hAZoDl bGblnd api-docs__cell"
-        >
-          <span
-            class="sc-bczRLJ deidno"
-          >
-            Any user - only an admin can see deleted notifications
-          </span>
-        </th>
-        <th
-          class="sc-hAZoDl bGblnd api-docs__cell"
-        >
-          <span
-            class="sc-bczRLJ deidno api-docs__description"
-          >
-            Load all notifications
-          </span>
-        </th>
-      </tr>
-      <tr
-        class="sc-ksZaOG"
-      >
-        <th
-          class="sc-hAZoDl bGblnd api-docs__cell"
-        >
-          <a
-            aria-label="/notifications/load/:id (opens in a new tab)"
-            class="sc-ftvSup bvTsjB"
-            href="https://www.georgegillams.co.uk/api/notifications/load/:id"
-            rel="noopener noreferrer"
-            target="_blank"
-          >
-            /notifications/load/:id
-            <div
-              class="sc-papXJ ecwnCf"
+              <span
+                class="sc-gsnTZi fzWRHm"
+              />
+            </th>
+            <th
+              class="sc-fnykZs geZTSW"
             >
-              <svg
-                class="sc-iBkjds eZahvc sc-jqUVSM fjeMmK"
-                height="18"
-                viewBox="0 0 24 24"
-                width="18"
-                xmlns="http://www.w3.org/2000/svg"
+              <span
+                class="sc-gsnTZi fzWRHm"
               >
-                <path
-                  d="M12.5 11.3c.4.4 1 .4 1.4 0L19 6.2V9c0 .6.4 1 1 1s1-.4 1-1V4c0-.6-.4-1-1-1h-5c-.6 0-1 .4-1 1s.4 1 1 1h2.4l-4.9 4.9c-.4.4-.4 1 0 1.4zM19 19c0 1.1-.9 2-2 2H5c-1.1 0-2-.9-2-2V7c0-1.1.9-2 2-2h7v2H5v12h12v-7h2"
-                />
-              </svg>
-            </div>
-          </a>
-        </th>
-        <th
-          class="sc-hAZoDl bGblnd api-docs__cell"
-        >
-          <span
-            class="sc-bczRLJ deidno api-docs__method"
-          >
-            GET
-          </span>
-        </th>
-        <th
-          class="sc-hAZoDl bGblnd api-docs__cell"
-        >
-          <span
-            class="sc-bczRLJ deidno"
-          />
-        </th>
-        <th
-          class="sc-hAZoDl bGblnd api-docs__cell"
-        >
-          <span
-            class="sc-bczRLJ deidno"
-          />
-        </th>
-        <th
-          class="sc-hAZoDl bGblnd api-docs__cell"
-        >
-          <span
-            class="sc-bczRLJ deidno api-docs__description"
-          />
-        </th>
-      </tr>
-      <tr
-        class="sc-ksZaOG"
-      >
-        <th
-          class="sc-hAZoDl bGblnd api-docs__cell"
-        >
-          <a
-            aria-label="/notifications/update (opens in a new tab)"
-            class="sc-ftvSup bvTsjB"
-            href="https://www.georgegillams.co.uk/api/notifications/update"
-            rel="noopener noreferrer"
-            target="_blank"
-          >
-            /notifications/update
-            <div
-              class="sc-papXJ ecwnCf"
+                Admin only
+              </span>
+            </th>
+            <th
+              class="sc-fnykZs geZTSW"
             >
-              <svg
-                class="sc-iBkjds eZahvc sc-jqUVSM fjeMmK"
-                height="18"
-                viewBox="0 0 24 24"
-                width="18"
-                xmlns="http://www.w3.org/2000/svg"
+              <span
+                class="sc-gsnTZi fzWRHm api-docsstyles__Description-sc-4t6xyo-1 cZtHBf"
               >
-                <path
-                  d="M12.5 11.3c.4.4 1 .4 1.4 0L19 6.2V9c0 .6.4 1 1 1s1-.4 1-1V4c0-.6-.4-1-1-1h-5c-.6 0-1 .4-1 1s.4 1 1 1h2.4l-4.9 4.9c-.4.4-.4 1 0 1.4zM19 19c0 1.1-.9 2-2 2H5c-1.1 0-2-.9-2-2V7c0-1.1.9-2 2-2h7v2H5v12h12v-7h2"
-                />
-              </svg>
-            </div>
-          </a>
-        </th>
-        <th
-          class="sc-hAZoDl bGblnd api-docs__cell"
-        >
-          <span
-            class="sc-bczRLJ deidno api-docs__method"
+                Loads a summary of unique analytic points
+              </span>
+            </th>
+          </tr>
+          <tr
+            class="sc-hAZoDl"
           >
-            POST
-          </span>
-        </th>
-        <th
-          class="sc-hAZoDl bGblnd api-docs__cell"
-        >
-          <span
-            class="sc-bczRLJ deidno"
-          />
-        </th>
-        <th
-          class="sc-hAZoDl bGblnd api-docs__cell"
-        >
-          <span
-            class="sc-bczRLJ deidno"
-          >
-            Admin only
-          </span>
-        </th>
-        <th
-          class="sc-hAZoDl bGblnd api-docs__cell"
-        >
-          <span
-            class="sc-bczRLJ deidno api-docs__description"
-          >
-            Update a given notification
-          </span>
-        </th>
-      </tr>
-      <tr
-        class="sc-ksZaOG"
-      >
-        <th
-          class="sc-hAZoDl bGblnd api-docs__cell"
-        >
-          <a
-            aria-label="/users/create (opens in a new tab)"
-            class="sc-ftvSup bvTsjB"
-            href="https://www.georgegillams.co.uk/api/users/create"
-            rel="noopener noreferrer"
-            target="_blank"
-          >
-            /users/create
-            <div
-              class="sc-papXJ ecwnCf"
+            <th
+              class="sc-fnykZs geZTSW"
             >
-              <svg
-                class="sc-iBkjds eZahvc sc-jqUVSM fjeMmK"
-                height="18"
-                viewBox="0 0 24 24"
-                width="18"
-                xmlns="http://www.w3.org/2000/svg"
+              <a
+                aria-label="/auth/load (opens in a new tab)"
+                class="sc-papXJ ilnFdC"
+                href="https://www.georgegillams.co.uk/api/auth/load"
+                rel="noopener noreferrer"
+                target="_blank"
               >
-                <path
-                  d="M12.5 11.3c.4.4 1 .4 1.4 0L19 6.2V9c0 .6.4 1 1 1s1-.4 1-1V4c0-.6-.4-1-1-1h-5c-.6 0-1 .4-1 1s.4 1 1 1h2.4l-4.9 4.9c-.4.4-.4 1 0 1.4zM19 19c0 1.1-.9 2-2 2H5c-1.1 0-2-.9-2-2V7c0-1.1.9-2 2-2h7v2H5v12h12v-7h2"
-                />
-              </svg>
-            </div>
-          </a>
-        </th>
-        <th
-          class="sc-hAZoDl bGblnd api-docs__cell"
-        >
-          <span
-            class="sc-bczRLJ deidno api-docs__method"
-          >
-            POST
-          </span>
-        </th>
-        <th
-          class="sc-hAZoDl bGblnd api-docs__cell"
-        >
-          <span
-            class="sc-bczRLJ deidno"
-          />
-        </th>
-        <th
-          class="sc-hAZoDl bGblnd api-docs__cell"
-        >
-          <span
-            class="sc-bczRLJ deidno"
-          >
-            None - only an admin can create other admin users
-          </span>
-        </th>
-        <th
-          class="sc-hAZoDl bGblnd api-docs__cell"
-        >
-          <span
-            class="sc-bczRLJ deidno api-docs__description"
-          >
-            Create a user
-          </span>
-        </th>
-      </tr>
-      <tr
-        class="sc-ksZaOG"
-      >
-        <th
-          class="sc-hAZoDl bGblnd api-docs__cell"
-        >
-          <a
-            aria-label="/users/delete (opens in a new tab)"
-            class="sc-ftvSup bvTsjB"
-            href="https://www.georgegillams.co.uk/api/users/delete"
-            rel="noopener noreferrer"
-            target="_blank"
-          >
-            /users/delete
-            <div
-              class="sc-papXJ ecwnCf"
+                /auth/load
+                <div
+                  class="sc-jqUVSM icGDYy"
+                >
+                  <svg
+                    class="sc-ftvSup bygzLL sc-kDDrLX kzKBSF"
+                    height="18"
+                    viewBox="0 0 24 24"
+                    width="18"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M12.5 11.3c.4.4 1 .4 1.4 0L19 6.2V9c0 .6.4 1 1 1s1-.4 1-1V4c0-.6-.4-1-1-1h-5c-.6 0-1 .4-1 1s.4 1 1 1h2.4l-4.9 4.9c-.4.4-.4 1 0 1.4zM19 19c0 1.1-.9 2-2 2H5c-1.1 0-2-.9-2-2V7c0-1.1.9-2 2-2h7v2H5v12h12v-7h2"
+                    />
+                  </svg>
+                </div>
+              </a>
+            </th>
+            <th
+              class="sc-fnykZs geZTSW"
             >
-              <svg
-                class="sc-iBkjds eZahvc sc-jqUVSM fjeMmK"
-                height="18"
-                viewBox="0 0 24 24"
-                width="18"
-                xmlns="http://www.w3.org/2000/svg"
+              <span
+                class="sc-gsnTZi fzWRHm api-docsstyles__Method-sc-4t6xyo-2 lesXHI"
               >
-                <path
-                  d="M12.5 11.3c.4.4 1 .4 1.4 0L19 6.2V9c0 .6.4 1 1 1s1-.4 1-1V4c0-.6-.4-1-1-1h-5c-.6 0-1 .4-1 1s.4 1 1 1h2.4l-4.9 4.9c-.4.4-.4 1 0 1.4zM19 19c0 1.1-.9 2-2 2H5c-1.1 0-2-.9-2-2V7c0-1.1.9-2 2-2h7v2H5v12h12v-7h2"
-                />
-              </svg>
-            </div>
-          </a>
-        </th>
-        <th
-          class="sc-hAZoDl bGblnd api-docs__cell"
-        >
-          <span
-            class="sc-bczRLJ deidno api-docs__method"
-          >
-            POST
-          </span>
-        </th>
-        <th
-          class="sc-hAZoDl bGblnd api-docs__cell"
-        >
-          <span
-            class="sc-bczRLJ deidno"
-          />
-        </th>
-        <th
-          class="sc-hAZoDl bGblnd api-docs__cell"
-        >
-          <span
-            class="sc-bczRLJ deidno"
-          >
-            The user being deleted, or an admin only
-          </span>
-        </th>
-        <th
-          class="sc-hAZoDl bGblnd api-docs__cell"
-        >
-          <span
-            class="sc-bczRLJ deidno api-docs__description"
-          >
-            Delete a user
-          </span>
-        </th>
-      </tr>
-      <tr
-        class="sc-ksZaOG"
-      >
-        <th
-          class="sc-hAZoDl bGblnd api-docs__cell"
-        >
-          <a
-            aria-label="/users/load (opens in a new tab)"
-            class="sc-ftvSup bvTsjB"
-            href="https://www.georgegillams.co.uk/api/users/load"
-            rel="noopener noreferrer"
-            target="_blank"
-          >
-            /users/load
-            <div
-              class="sc-papXJ ecwnCf"
+                GET
+              </span>
+            </th>
+            <th
+              class="sc-fnykZs geZTSW"
             >
-              <svg
-                class="sc-iBkjds eZahvc sc-jqUVSM fjeMmK"
-                height="18"
-                viewBox="0 0 24 24"
-                width="18"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M12.5 11.3c.4.4 1 .4 1.4 0L19 6.2V9c0 .6.4 1 1 1s1-.4 1-1V4c0-.6-.4-1-1-1h-5c-.6 0-1 .4-1 1s.4 1 1 1h2.4l-4.9 4.9c-.4.4-.4 1 0 1.4zM19 19c0 1.1-.9 2-2 2H5c-1.1 0-2-.9-2-2V7c0-1.1.9-2 2-2h7v2H5v12h12v-7h2"
-                />
-              </svg>
-            </div>
-          </a>
-        </th>
-        <th
-          class="sc-hAZoDl bGblnd api-docs__cell"
-        >
-          <span
-            class="sc-bczRLJ deidno api-docs__method"
-          >
-            GET
-          </span>
-        </th>
-        <th
-          class="sc-hAZoDl bGblnd api-docs__cell"
-        >
-          <span
-            class="sc-bczRLJ deidno"
-          />
-        </th>
-        <th
-          class="sc-hAZoDl bGblnd api-docs__cell"
-        >
-          <span
-            class="sc-bczRLJ deidno"
-          >
-            The user being loaded, or an admin only
-          </span>
-        </th>
-        <th
-          class="sc-hAZoDl bGblnd api-docs__cell"
-        >
-          <span
-            class="sc-bczRLJ deidno api-docs__description"
-          >
-            Load a given user
-          </span>
-        </th>
-      </tr>
-      <tr
-        class="sc-ksZaOG"
-      >
-        <th
-          class="sc-hAZoDl bGblnd api-docs__cell"
-        >
-          <a
-            aria-label="/users/load-all (opens in a new tab)"
-            class="sc-ftvSup bvTsjB"
-            href="https://www.georgegillams.co.uk/api/users/load-all"
-            rel="noopener noreferrer"
-            target="_blank"
-          >
-            /users/load-all
-            <div
-              class="sc-papXJ ecwnCf"
+              <span
+                class="sc-gsnTZi fzWRHm"
+              />
+            </th>
+            <th
+              class="sc-fnykZs geZTSW"
             >
-              <svg
-                class="sc-iBkjds eZahvc sc-jqUVSM fjeMmK"
-                height="18"
-                viewBox="0 0 24 24"
-                width="18"
-                xmlns="http://www.w3.org/2000/svg"
+              <span
+                class="sc-gsnTZi fzWRHm"
               >
-                <path
-                  d="M12.5 11.3c.4.4 1 .4 1.4 0L19 6.2V9c0 .6.4 1 1 1s1-.4 1-1V4c0-.6-.4-1-1-1h-5c-.6 0-1 .4-1 1s.4 1 1 1h2.4l-4.9 4.9c-.4.4-.4 1 0 1.4zM19 19c0 1.1-.9 2-2 2H5c-1.1 0-2-.9-2-2V7c0-1.1.9-2 2-2h7v2H5v12h12v-7h2"
-                />
-              </svg>
-            </div>
-          </a>
-        </th>
-        <th
-          class="sc-hAZoDl bGblnd api-docs__cell"
-        >
-          <span
-            class="sc-bczRLJ deidno api-docs__method"
-          >
-            GET
-          </span>
-        </th>
-        <th
-          class="sc-hAZoDl bGblnd api-docs__cell"
-        >
-          <span
-            class="sc-bczRLJ deidno"
-          />
-        </th>
-        <th
-          class="sc-hAZoDl bGblnd api-docs__cell"
-        >
-          <span
-            class="sc-bczRLJ deidno"
-          >
-            Admin only
-          </span>
-        </th>
-        <th
-          class="sc-hAZoDl bGblnd api-docs__cell"
-        >
-          <span
-            class="sc-bczRLJ deidno api-docs__description"
-          >
-            Load all users
-          </span>
-        </th>
-      </tr>
-      <tr
-        class="sc-ksZaOG"
-      >
-        <th
-          class="sc-hAZoDl bGblnd api-docs__cell"
-        >
-          <a
-            aria-label="/users/sign-up (opens in a new tab)"
-            class="sc-ftvSup bvTsjB"
-            href="https://www.georgegillams.co.uk/api/users/sign-up"
-            rel="noopener noreferrer"
-            target="_blank"
-          >
-            /users/sign-up
-            <div
-              class="sc-papXJ ecwnCf"
+                None
+              </span>
+            </th>
+            <th
+              class="sc-fnykZs geZTSW"
             >
-              <svg
-                class="sc-iBkjds eZahvc sc-jqUVSM fjeMmK"
-                height="18"
-                viewBox="0 0 24 24"
-                width="18"
-                xmlns="http://www.w3.org/2000/svg"
+              <span
+                class="sc-gsnTZi fzWRHm api-docsstyles__Description-sc-4t6xyo-1 cZtHBf"
               >
-                <path
-                  d="M12.5 11.3c.4.4 1 .4 1.4 0L19 6.2V9c0 .6.4 1 1 1s1-.4 1-1V4c0-.6-.4-1-1-1h-5c-.6 0-1 .4-1 1s.4 1 1 1h2.4l-4.9 4.9c-.4.4-.4 1 0 1.4zM19 19c0 1.1-.9 2-2 2H5c-1.1 0-2-.9-2-2V7c0-1.1.9-2 2-2h7v2H5v12h12v-7h2"
-                />
-              </svg>
-            </div>
-          </a>
-        </th>
-        <th
-          class="sc-hAZoDl bGblnd api-docs__cell"
-        >
-          <span
-            class="sc-bczRLJ deidno api-docs__method"
+                Loads the currently authenticated used. Returns null if signed out
+              </span>
+            </th>
+          </tr>
+          <tr
+            class="sc-hAZoDl"
           >
-            POST
-          </span>
-        </th>
-        <th
-          class="sc-hAZoDl bGblnd api-docs__cell"
-        >
-          <span
-            class="sc-bczRLJ deidno"
-          />
-        </th>
-        <th
-          class="sc-hAZoDl bGblnd api-docs__cell"
-        >
-          <span
-            class="sc-bczRLJ deidno"
-          >
-            None
-          </span>
-        </th>
-        <th
-          class="sc-hAZoDl bGblnd api-docs__cell"
-        >
-          <span
-            class="sc-bczRLJ deidno api-docs__description"
-          >
-            Create a user, and sign in as that user at the same time
-          </span>
-        </th>
-      </tr>
-      <tr
-        class="sc-ksZaOG"
-      >
-        <th
-          class="sc-hAZoDl bGblnd api-docs__cell"
-        >
-          <a
-            aria-label="/users/update (opens in a new tab)"
-            class="sc-ftvSup bvTsjB"
-            href="https://www.georgegillams.co.uk/api/users/update"
-            rel="noopener noreferrer"
-            target="_blank"
-          >
-            /users/update
-            <div
-              class="sc-papXJ ecwnCf"
+            <th
+              class="sc-fnykZs geZTSW"
             >
-              <svg
-                class="sc-iBkjds eZahvc sc-jqUVSM fjeMmK"
-                height="18"
-                viewBox="0 0 24 24"
-                width="18"
-                xmlns="http://www.w3.org/2000/svg"
+              <a
+                aria-label="/auth/logout (opens in a new tab)"
+                class="sc-papXJ ilnFdC"
+                href="https://www.georgegillams.co.uk/api/auth/logout"
+                rel="noopener noreferrer"
+                target="_blank"
               >
-                <path
-                  d="M12.5 11.3c.4.4 1 .4 1.4 0L19 6.2V9c0 .6.4 1 1 1s1-.4 1-1V4c0-.6-.4-1-1-1h-5c-.6 0-1 .4-1 1s.4 1 1 1h2.4l-4.9 4.9c-.4.4-.4 1 0 1.4zM19 19c0 1.1-.9 2-2 2H5c-1.1 0-2-.9-2-2V7c0-1.1.9-2 2-2h7v2H5v12h12v-7h2"
-                />
-              </svg>
-            </div>
-          </a>
-        </th>
-        <th
-          class="sc-hAZoDl bGblnd api-docs__cell"
-        >
-          <span
-            class="sc-bczRLJ deidno api-docs__method"
-          >
-            POST
-          </span>
-        </th>
-        <th
-          class="sc-hAZoDl bGblnd api-docs__cell"
-        >
-          <span
-            class="sc-bczRLJ deidno"
-          />
-        </th>
-        <th
-          class="sc-hAZoDl bGblnd api-docs__cell"
-        >
-          <span
-            class="sc-bczRLJ deidno"
-          >
-            Any user - only an admin can promote other users to admin
-          </span>
-        </th>
-        <th
-          class="sc-hAZoDl bGblnd api-docs__cell"
-        >
-          <span
-            class="sc-bczRLJ deidno api-docs__description"
-          >
-            Update a given user
-          </span>
-        </th>
-      </tr>
-      <tr
-        class="sc-ksZaOG"
-      >
-        <th
-          class="sc-hAZoDl bGblnd api-docs__cell"
-        >
-          <a
-            aria-label="/blogs/create (opens in a new tab)"
-            class="sc-ftvSup bvTsjB"
-            href="https://www.georgegillams.co.uk/api/blogs/create"
-            rel="noopener noreferrer"
-            target="_blank"
-          >
-            /blogs/create
-            <div
-              class="sc-papXJ ecwnCf"
+                /auth/logout
+                <div
+                  class="sc-jqUVSM icGDYy"
+                >
+                  <svg
+                    class="sc-ftvSup bygzLL sc-kDDrLX kzKBSF"
+                    height="18"
+                    viewBox="0 0 24 24"
+                    width="18"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M12.5 11.3c.4.4 1 .4 1.4 0L19 6.2V9c0 .6.4 1 1 1s1-.4 1-1V4c0-.6-.4-1-1-1h-5c-.6 0-1 .4-1 1s.4 1 1 1h2.4l-4.9 4.9c-.4.4-.4 1 0 1.4zM19 19c0 1.1-.9 2-2 2H5c-1.1 0-2-.9-2-2V7c0-1.1.9-2 2-2h7v2H5v12h12v-7h2"
+                    />
+                  </svg>
+                </div>
+              </a>
+            </th>
+            <th
+              class="sc-fnykZs geZTSW"
             >
-              <svg
-                class="sc-iBkjds eZahvc sc-jqUVSM fjeMmK"
-                height="18"
-                viewBox="0 0 24 24"
-                width="18"
-                xmlns="http://www.w3.org/2000/svg"
+              <span
+                class="sc-gsnTZi fzWRHm api-docsstyles__Method-sc-4t6xyo-2 lesXHI"
               >
-                <path
-                  d="M12.5 11.3c.4.4 1 .4 1.4 0L19 6.2V9c0 .6.4 1 1 1s1-.4 1-1V4c0-.6-.4-1-1-1h-5c-.6 0-1 .4-1 1s.4 1 1 1h2.4l-4.9 4.9c-.4.4-.4 1 0 1.4zM19 19c0 1.1-.9 2-2 2H5c-1.1 0-2-.9-2-2V7c0-1.1.9-2 2-2h7v2H5v12h12v-7h2"
-                />
-              </svg>
-            </div>
-          </a>
-        </th>
-        <th
-          class="sc-hAZoDl bGblnd api-docs__cell"
-        >
-          <span
-            class="sc-bczRLJ deidno api-docs__method"
-          >
-            POST
-          </span>
-        </th>
-        <th
-          class="sc-hAZoDl bGblnd api-docs__cell"
-        >
-          <span
-            class="sc-bczRLJ deidno"
-          />
-        </th>
-        <th
-          class="sc-hAZoDl bGblnd api-docs__cell"
-        >
-          <span
-            class="sc-bczRLJ deidno"
-          >
-            Admin only
-          </span>
-        </th>
-        <th
-          class="sc-hAZoDl bGblnd api-docs__cell"
-        >
-          <span
-            class="sc-bczRLJ deidno api-docs__description"
-          >
-            Create a new blog
-          </span>
-        </th>
-      </tr>
-      <tr
-        class="sc-ksZaOG"
-      >
-        <th
-          class="sc-hAZoDl bGblnd api-docs__cell"
-        >
-          <a
-            aria-label="/blogs/delete (opens in a new tab)"
-            class="sc-ftvSup bvTsjB"
-            href="https://www.georgegillams.co.uk/api/blogs/delete"
-            rel="noopener noreferrer"
-            target="_blank"
-          >
-            /blogs/delete
-            <div
-              class="sc-papXJ ecwnCf"
+                POST
+              </span>
+            </th>
+            <th
+              class="sc-fnykZs geZTSW"
             >
-              <svg
-                class="sc-iBkjds eZahvc sc-jqUVSM fjeMmK"
-                height="18"
-                viewBox="0 0 24 24"
-                width="18"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M12.5 11.3c.4.4 1 .4 1.4 0L19 6.2V9c0 .6.4 1 1 1s1-.4 1-1V4c0-.6-.4-1-1-1h-5c-.6 0-1 .4-1 1s.4 1 1 1h2.4l-4.9 4.9c-.4.4-.4 1 0 1.4zM19 19c0 1.1-.9 2-2 2H5c-1.1 0-2-.9-2-2V7c0-1.1.9-2 2-2h7v2H5v12h12v-7h2"
-                />
-              </svg>
-            </div>
-          </a>
-        </th>
-        <th
-          class="sc-hAZoDl bGblnd api-docs__cell"
-        >
-          <span
-            class="sc-bczRLJ deidno api-docs__method"
-          >
-            POST
-          </span>
-        </th>
-        <th
-          class="sc-hAZoDl bGblnd api-docs__cell"
-        >
-          <span
-            class="sc-bczRLJ deidno"
-          />
-        </th>
-        <th
-          class="sc-hAZoDl bGblnd api-docs__cell"
-        >
-          <span
-            class="sc-bczRLJ deidno"
-          >
-            Admin only
-          </span>
-        </th>
-        <th
-          class="sc-hAZoDl bGblnd api-docs__cell"
-        >
-          <span
-            class="sc-bczRLJ deidno api-docs__description"
-          >
-            Remove a blog
-          </span>
-        </th>
-      </tr>
-      <tr
-        class="sc-ksZaOG"
-      >
-        <th
-          class="sc-hAZoDl bGblnd api-docs__cell"
-        >
-          <a
-            aria-label="/blogs/load-all (opens in a new tab)"
-            class="sc-ftvSup bvTsjB"
-            href="https://www.georgegillams.co.uk/api/blogs/load-all"
-            rel="noopener noreferrer"
-            target="_blank"
-          >
-            /blogs/load-all
-            <div
-              class="sc-papXJ ecwnCf"
+              <span
+                class="sc-gsnTZi fzWRHm"
+              />
+            </th>
+            <th
+              class="sc-fnykZs geZTSW"
             >
-              <svg
-                class="sc-iBkjds eZahvc sc-jqUVSM fjeMmK"
-                height="18"
-                viewBox="0 0 24 24"
-                width="18"
-                xmlns="http://www.w3.org/2000/svg"
+              <span
+                class="sc-gsnTZi fzWRHm"
               >
-                <path
-                  d="M12.5 11.3c.4.4 1 .4 1.4 0L19 6.2V9c0 .6.4 1 1 1s1-.4 1-1V4c0-.6-.4-1-1-1h-5c-.6 0-1 .4-1 1s.4 1 1 1h2.4l-4.9 4.9c-.4.4-.4 1 0 1.4zM19 19c0 1.1-.9 2-2 2H5c-1.1 0-2-.9-2-2V7c0-1.1.9-2 2-2h7v2H5v12h12v-7h2"
-                />
-              </svg>
-            </div>
-          </a>
-        </th>
-        <th
-          class="sc-hAZoDl bGblnd api-docs__cell"
-        >
-          <span
-            class="sc-bczRLJ deidno api-docs__method"
-          >
-            GET
-          </span>
-        </th>
-        <th
-          class="sc-hAZoDl bGblnd api-docs__cell"
-        >
-          <span
-            class="sc-bczRLJ deidno"
-          />
-        </th>
-        <th
-          class="sc-hAZoDl bGblnd api-docs__cell"
-        >
-          <span
-            class="sc-bczRLJ deidno"
-          >
-            None
-          </span>
-        </th>
-        <th
-          class="sc-hAZoDl bGblnd api-docs__cell"
-        >
-          <span
-            class="sc-bczRLJ deidno api-docs__description"
-          >
-            Load all blogs. If not admin, only non-deleted, published blogs will be loaded
-          </span>
-        </th>
-      </tr>
-      <tr
-        class="sc-ksZaOG"
-      >
-        <th
-          class="sc-hAZoDl bGblnd api-docs__cell"
-        >
-          <a
-            aria-label="/blogs/load/:id (opens in a new tab)"
-            class="sc-ftvSup bvTsjB"
-            href="https://www.georgegillams.co.uk/api/blogs/load/:id"
-            rel="noopener noreferrer"
-            target="_blank"
-          >
-            /blogs/load/:id
-            <div
-              class="sc-papXJ ecwnCf"
+                None
+              </span>
+            </th>
+            <th
+              class="sc-fnykZs geZTSW"
             >
-              <svg
-                class="sc-iBkjds eZahvc sc-jqUVSM fjeMmK"
-                height="18"
-                viewBox="0 0 24 24"
-                width="18"
-                xmlns="http://www.w3.org/2000/svg"
+              <span
+                class="sc-gsnTZi fzWRHm api-docsstyles__Description-sc-4t6xyo-1 cZtHBf"
               >
-                <path
-                  d="M12.5 11.3c.4.4 1 .4 1.4 0L19 6.2V9c0 .6.4 1 1 1s1-.4 1-1V4c0-.6-.4-1-1-1h-5c-.6 0-1 .4-1 1s.4 1 1 1h2.4l-4.9 4.9c-.4.4-.4 1 0 1.4zM19 19c0 1.1-.9 2-2 2H5c-1.1 0-2-.9-2-2V7c0-1.1.9-2 2-2h7v2H5v12h12v-7h2"
-                />
-              </svg>
-            </div>
-          </a>
-        </th>
-        <th
-          class="sc-hAZoDl bGblnd api-docs__cell"
-        >
-          <span
-            class="sc-bczRLJ deidno api-docs__method"
+                Logs out the currently authenticated user
+              </span>
+            </th>
+          </tr>
+          <tr
+            class="sc-hAZoDl"
           >
-            GET
-          </span>
-        </th>
-        <th
-          class="sc-hAZoDl bGblnd api-docs__cell"
-        >
-          <span
-            class="sc-bczRLJ deidno"
-          >
-            id: the blog ID to load
-          </span>
-        </th>
-        <th
-          class="sc-hAZoDl bGblnd api-docs__cell"
-        >
-          <span
-            class="sc-bczRLJ deidno"
-          >
-            None
-          </span>
-        </th>
-        <th
-          class="sc-hAZoDl bGblnd api-docs__cell"
-        >
-          <span
-            class="sc-bczRLJ deidno api-docs__description"
-          >
-            Load a single blog. If not admin, will fail if deleted or not published
-          </span>
-        </th>
-      </tr>
-      <tr
-        class="sc-ksZaOG"
-      >
-        <th
-          class="sc-hAZoDl bGblnd api-docs__cell"
-        >
-          <a
-            aria-label="/blogs/update (opens in a new tab)"
-            class="sc-ftvSup bvTsjB"
-            href="https://www.georgegillams.co.uk/api/blogs/update"
-            rel="noopener noreferrer"
-            target="_blank"
-          >
-            /blogs/update
-            <div
-              class="sc-papXJ ecwnCf"
+            <th
+              class="sc-fnykZs geZTSW"
             >
-              <svg
-                class="sc-iBkjds eZahvc sc-jqUVSM fjeMmK"
-                height="18"
-                viewBox="0 0 24 24"
-                width="18"
-                xmlns="http://www.w3.org/2000/svg"
+              <a
+                aria-label="/auth/request-verification-email (opens in a new tab)"
+                class="sc-papXJ ilnFdC"
+                href="https://www.georgegillams.co.uk/api/auth/request-verification-email"
+                rel="noopener noreferrer"
+                target="_blank"
               >
-                <path
-                  d="M12.5 11.3c.4.4 1 .4 1.4 0L19 6.2V9c0 .6.4 1 1 1s1-.4 1-1V4c0-.6-.4-1-1-1h-5c-.6 0-1 .4-1 1s.4 1 1 1h2.4l-4.9 4.9c-.4.4-.4 1 0 1.4zM19 19c0 1.1-.9 2-2 2H5c-1.1 0-2-.9-2-2V7c0-1.1.9-2 2-2h7v2H5v12h12v-7h2"
-                />
-              </svg>
-            </div>
-          </a>
-        </th>
-        <th
-          class="sc-hAZoDl bGblnd api-docs__cell"
-        >
-          <span
-            class="sc-bczRLJ deidno api-docs__method"
-          >
-            POST
-          </span>
-        </th>
-        <th
-          class="sc-hAZoDl bGblnd api-docs__cell"
-        >
-          <span
-            class="sc-bczRLJ deidno"
-          />
-        </th>
-        <th
-          class="sc-hAZoDl bGblnd api-docs__cell"
-        >
-          <span
-            class="sc-bczRLJ deidno"
-          >
-            Admin only
-          </span>
-        </th>
-        <th
-          class="sc-hAZoDl bGblnd api-docs__cell"
-        >
-          <span
-            class="sc-bczRLJ deidno api-docs__description"
-          >
-            Update a blog
-          </span>
-        </th>
-      </tr>
-      <tr
-        class="sc-ksZaOG"
-      >
-        <th
-          class="sc-hAZoDl bGblnd api-docs__cell"
-        >
-          <a
-            aria-label="/make-payment/load (opens in a new tab)"
-            class="sc-ftvSup bvTsjB"
-            href="https://www.georgegillams.co.uk/api/make-payment/load"
-            rel="noopener noreferrer"
-            target="_blank"
-          >
-            /make-payment/load
-            <div
-              class="sc-papXJ ecwnCf"
+                /auth/request-verification-email
+                <div
+                  class="sc-jqUVSM icGDYy"
+                >
+                  <svg
+                    class="sc-ftvSup bygzLL sc-kDDrLX kzKBSF"
+                    height="18"
+                    viewBox="0 0 24 24"
+                    width="18"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M12.5 11.3c.4.4 1 .4 1.4 0L19 6.2V9c0 .6.4 1 1 1s1-.4 1-1V4c0-.6-.4-1-1-1h-5c-.6 0-1 .4-1 1s.4 1 1 1h2.4l-4.9 4.9c-.4.4-.4 1 0 1.4zM19 19c0 1.1-.9 2-2 2H5c-1.1 0-2-.9-2-2V7c0-1.1.9-2 2-2h7v2H5v12h12v-7h2"
+                    />
+                  </svg>
+                </div>
+              </a>
+            </th>
+            <th
+              class="sc-fnykZs geZTSW"
             >
-              <svg
-                class="sc-iBkjds eZahvc sc-jqUVSM fjeMmK"
-                height="18"
-                viewBox="0 0 24 24"
-                width="18"
-                xmlns="http://www.w3.org/2000/svg"
+              <span
+                class="sc-gsnTZi fzWRHm api-docsstyles__Method-sc-4t6xyo-2 lesXHI"
               >
-                <path
-                  d="M12.5 11.3c.4.4 1 .4 1.4 0L19 6.2V9c0 .6.4 1 1 1s1-.4 1-1V4c0-.6-.4-1-1-1h-5c-.6 0-1 .4-1 1s.4 1 1 1h2.4l-4.9 4.9c-.4.4-.4 1 0 1.4zM19 19c0 1.1-.9 2-2 2H5c-1.1 0-2-.9-2-2V7c0-1.1.9-2 2-2h7v2H5v12h12v-7h2"
-                />
-              </svg>
-            </div>
-          </a>
-        </th>
-        <th
-          class="sc-hAZoDl bGblnd api-docs__cell"
-        >
-          <span
-            class="sc-bczRLJ deidno api-docs__method"
-          >
-            POST
-          </span>
-        </th>
-        <th
-          class="sc-hAZoDl bGblnd api-docs__cell"
-        >
-          <span
-            class="sc-bczRLJ deidno"
-          />
-        </th>
-        <th
-          class="sc-hAZoDl bGblnd api-docs__cell"
-        >
-          <span
-            class="sc-bczRLJ deidno"
-          >
-            TODO
-          </span>
-        </th>
-        <th
-          class="sc-hAZoDl bGblnd api-docs__cell"
-        >
-          <span
-            class="sc-bczRLJ deidno api-docs__description"
-          >
-            TODO
-          </span>
-        </th>
-      </tr>
-      <tr
-        class="sc-ksZaOG"
-      >
-        <th
-          class="sc-hAZoDl bGblnd api-docs__cell"
-        >
-          <a
-            aria-label="/make-payment/create-intent (opens in a new tab)"
-            class="sc-ftvSup bvTsjB"
-            href="https://www.georgegillams.co.uk/api/make-payment/create-intent"
-            rel="noopener noreferrer"
-            target="_blank"
-          >
-            /make-payment/create-intent
-            <div
-              class="sc-papXJ ecwnCf"
+                POST
+              </span>
+            </th>
+            <th
+              class="sc-fnykZs geZTSW"
             >
-              <svg
-                class="sc-iBkjds eZahvc sc-jqUVSM fjeMmK"
-                height="18"
-                viewBox="0 0 24 24"
-                width="18"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M12.5 11.3c.4.4 1 .4 1.4 0L19 6.2V9c0 .6.4 1 1 1s1-.4 1-1V4c0-.6-.4-1-1-1h-5c-.6 0-1 .4-1 1s.4 1 1 1h2.4l-4.9 4.9c-.4.4-.4 1 0 1.4zM19 19c0 1.1-.9 2-2 2H5c-1.1 0-2-.9-2-2V7c0-1.1.9-2 2-2h7v2H5v12h12v-7h2"
-                />
-              </svg>
-            </div>
-          </a>
-        </th>
-        <th
-          class="sc-hAZoDl bGblnd api-docs__cell"
-        >
-          <span
-            class="sc-bczRLJ deidno api-docs__method"
-          >
-            POST
-          </span>
-        </th>
-        <th
-          class="sc-hAZoDl bGblnd api-docs__cell"
-        >
-          <span
-            class="sc-bczRLJ deidno"
-          />
-        </th>
-        <th
-          class="sc-hAZoDl bGblnd api-docs__cell"
-        >
-          <span
-            class="sc-bczRLJ deidno"
-          >
-            TODO
-          </span>
-        </th>
-        <th
-          class="sc-hAZoDl bGblnd api-docs__cell"
-        >
-          <span
-            class="sc-bczRLJ deidno api-docs__description"
-          >
-            TODO
-          </span>
-        </th>
-      </tr>
-      <tr
-        class="sc-ksZaOG"
-      >
-        <th
-          class="sc-hAZoDl bGblnd api-docs__cell"
-        >
-          <a
-            aria-label="/make-payment/resend-receipt (opens in a new tab)"
-            class="sc-ftvSup bvTsjB"
-            href="https://www.georgegillams.co.uk/api/make-payment/resend-receipt"
-            rel="noopener noreferrer"
-            target="_blank"
-          >
-            /make-payment/resend-receipt
-            <div
-              class="sc-papXJ ecwnCf"
+              <span
+                class="sc-gsnTZi fzWRHm"
+              />
+            </th>
+            <th
+              class="sc-fnykZs geZTSW"
             >
-              <svg
-                class="sc-iBkjds eZahvc sc-jqUVSM fjeMmK"
-                height="18"
-                viewBox="0 0 24 24"
-                width="18"
-                xmlns="http://www.w3.org/2000/svg"
+              <span
+                class="sc-gsnTZi fzWRHm"
               >
-                <path
-                  d="M12.5 11.3c.4.4 1 .4 1.4 0L19 6.2V9c0 .6.4 1 1 1s1-.4 1-1V4c0-.6-.4-1-1-1h-5c-.6 0-1 .4-1 1s.4 1 1 1h2.4l-4.9 4.9c-.4.4-.4 1 0 1.4zM19 19c0 1.1-.9 2-2 2H5c-1.1 0-2-.9-2-2V7c0-1.1.9-2 2-2h7v2H5v12h12v-7h2"
-                />
-              </svg>
-            </div>
-          </a>
-        </th>
-        <th
-          class="sc-hAZoDl bGblnd api-docs__cell"
-        >
-          <span
-            class="sc-bczRLJ deidno api-docs__method"
-          >
-            POST
-          </span>
-        </th>
-        <th
-          class="sc-hAZoDl bGblnd api-docs__cell"
-        >
-          <span
-            class="sc-bczRLJ deidno"
-          />
-        </th>
-        <th
-          class="sc-hAZoDl bGblnd api-docs__cell"
-        >
-          <span
-            class="sc-bczRLJ deidno"
-          >
-            Admin only
-          </span>
-        </th>
-        <th
-          class="sc-hAZoDl bGblnd api-docs__cell"
-        >
-          <span
-            class="sc-bczRLJ deidno api-docs__description"
-          >
-            TODO
-          </span>
-        </th>
-      </tr>
-      <tr
-        class="sc-ksZaOG"
-      >
-        <th
-          class="sc-hAZoDl bGblnd api-docs__cell"
-        >
-          <a
-            aria-label="/payments/create (opens in a new tab)"
-            class="sc-ftvSup bvTsjB"
-            href="https://www.georgegillams.co.uk/api/payments/create"
-            rel="noopener noreferrer"
-            target="_blank"
-          >
-            /payments/create
-            <div
-              class="sc-papXJ ecwnCf"
+                Any user
+              </span>
+            </th>
+            <th
+              class="sc-fnykZs geZTSW"
             >
-              <svg
-                class="sc-iBkjds eZahvc sc-jqUVSM fjeMmK"
-                height="18"
-                viewBox="0 0 24 24"
-                width="18"
-                xmlns="http://www.w3.org/2000/svg"
+              <span
+                class="sc-gsnTZi fzWRHm api-docsstyles__Description-sc-4t6xyo-1 cZtHBf"
               >
-                <path
-                  d="M12.5 11.3c.4.4 1 .4 1.4 0L19 6.2V9c0 .6.4 1 1 1s1-.4 1-1V4c0-.6-.4-1-1-1h-5c-.6 0-1 .4-1 1s.4 1 1 1h2.4l-4.9 4.9c-.4.4-.4 1 0 1.4zM19 19c0 1.1-.9 2-2 2H5c-1.1 0-2-.9-2-2V7c0-1.1.9-2 2-2h7v2H5v12h12v-7h2"
-                />
-              </svg>
-            </div>
-          </a>
-        </th>
-        <th
-          class="sc-hAZoDl bGblnd api-docs__cell"
-        >
-          <span
-            class="sc-bczRLJ deidno api-docs__method"
+                Resends an email verification email
+              </span>
+            </th>
+          </tr>
+          <tr
+            class="sc-hAZoDl"
           >
-            POST
-          </span>
-        </th>
-        <th
-          class="sc-hAZoDl bGblnd api-docs__cell"
-        >
-          <span
-            class="sc-bczRLJ deidno"
-          />
-        </th>
-        <th
-          class="sc-hAZoDl bGblnd api-docs__cell"
-        >
-          <span
-            class="sc-bczRLJ deidno"
-          >
-            TODO
-          </span>
-        </th>
-        <th
-          class="sc-hAZoDl bGblnd api-docs__cell"
-        >
-          <span
-            class="sc-bczRLJ deidno api-docs__description"
-          >
-            TODO
-          </span>
-        </th>
-      </tr>
-      <tr
-        class="sc-ksZaOG"
-      >
-        <th
-          class="sc-hAZoDl bGblnd api-docs__cell"
-        >
-          <a
-            aria-label="/payments/delete (opens in a new tab)"
-            class="sc-ftvSup bvTsjB"
-            href="https://www.georgegillams.co.uk/api/payments/delete"
-            rel="noopener noreferrer"
-            target="_blank"
-          >
-            /payments/delete
-            <div
-              class="sc-papXJ ecwnCf"
+            <th
+              class="sc-fnykZs geZTSW"
             >
-              <svg
-                class="sc-iBkjds eZahvc sc-jqUVSM fjeMmK"
-                height="18"
-                viewBox="0 0 24 24"
-                width="18"
-                xmlns="http://www.w3.org/2000/svg"
+              <a
+                aria-label="/auth/verify-email (opens in a new tab)"
+                class="sc-papXJ ilnFdC"
+                href="https://www.georgegillams.co.uk/api/auth/verify-email"
+                rel="noopener noreferrer"
+                target="_blank"
               >
-                <path
-                  d="M12.5 11.3c.4.4 1 .4 1.4 0L19 6.2V9c0 .6.4 1 1 1s1-.4 1-1V4c0-.6-.4-1-1-1h-5c-.6 0-1 .4-1 1s.4 1 1 1h2.4l-4.9 4.9c-.4.4-.4 1 0 1.4zM19 19c0 1.1-.9 2-2 2H5c-1.1 0-2-.9-2-2V7c0-1.1.9-2 2-2h7v2H5v12h12v-7h2"
-                />
-              </svg>
-            </div>
-          </a>
-        </th>
-        <th
-          class="sc-hAZoDl bGblnd api-docs__cell"
-        >
-          <span
-            class="sc-bczRLJ deidno api-docs__method"
-          >
-            POST
-          </span>
-        </th>
-        <th
-          class="sc-hAZoDl bGblnd api-docs__cell"
-        >
-          <span
-            class="sc-bczRLJ deidno"
-          />
-        </th>
-        <th
-          class="sc-hAZoDl bGblnd api-docs__cell"
-        >
-          <span
-            class="sc-bczRLJ deidno"
-          >
-            TODO
-          </span>
-        </th>
-        <th
-          class="sc-hAZoDl bGblnd api-docs__cell"
-        >
-          <span
-            class="sc-bczRLJ deidno api-docs__description"
-          >
-            TODO
-          </span>
-        </th>
-      </tr>
-      <tr
-        class="sc-ksZaOG"
-      >
-        <th
-          class="sc-hAZoDl bGblnd api-docs__cell"
-        >
-          <a
-            aria-label="/payments/load-all (opens in a new tab)"
-            class="sc-ftvSup bvTsjB"
-            href="https://www.georgegillams.co.uk/api/payments/load-all"
-            rel="noopener noreferrer"
-            target="_blank"
-          >
-            /payments/load-all
-            <div
-              class="sc-papXJ ecwnCf"
+                /auth/verify-email
+                <div
+                  class="sc-jqUVSM icGDYy"
+                >
+                  <svg
+                    class="sc-ftvSup bygzLL sc-kDDrLX kzKBSF"
+                    height="18"
+                    viewBox="0 0 24 24"
+                    width="18"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M12.5 11.3c.4.4 1 .4 1.4 0L19 6.2V9c0 .6.4 1 1 1s1-.4 1-1V4c0-.6-.4-1-1-1h-5c-.6 0-1 .4-1 1s.4 1 1 1h2.4l-4.9 4.9c-.4.4-.4 1 0 1.4zM19 19c0 1.1-.9 2-2 2H5c-1.1 0-2-.9-2-2V7c0-1.1.9-2 2-2h7v2H5v12h12v-7h2"
+                    />
+                  </svg>
+                </div>
+              </a>
+            </th>
+            <th
+              class="sc-fnykZs geZTSW"
             >
-              <svg
-                class="sc-iBkjds eZahvc sc-jqUVSM fjeMmK"
-                height="18"
-                viewBox="0 0 24 24"
-                width="18"
-                xmlns="http://www.w3.org/2000/svg"
+              <span
+                class="sc-gsnTZi fzWRHm api-docsstyles__Method-sc-4t6xyo-2 lesXHI"
               >
-                <path
-                  d="M12.5 11.3c.4.4 1 .4 1.4 0L19 6.2V9c0 .6.4 1 1 1s1-.4 1-1V4c0-.6-.4-1-1-1h-5c-.6 0-1 .4-1 1s.4 1 1 1h2.4l-4.9 4.9c-.4.4-.4 1 0 1.4zM19 19c0 1.1-.9 2-2 2H5c-1.1 0-2-.9-2-2V7c0-1.1.9-2 2-2h7v2H5v12h12v-7h2"
-                />
-              </svg>
-            </div>
-          </a>
-        </th>
-        <th
-          class="sc-hAZoDl bGblnd api-docs__cell"
-        >
-          <span
-            class="sc-bczRLJ deidno api-docs__method"
-          >
-            GET
-          </span>
-        </th>
-        <th
-          class="sc-hAZoDl bGblnd api-docs__cell"
-        >
-          <span
-            class="sc-bczRLJ deidno"
-          />
-        </th>
-        <th
-          class="sc-hAZoDl bGblnd api-docs__cell"
-        >
-          <span
-            class="sc-bczRLJ deidno"
-          >
-            TODO
-          </span>
-        </th>
-        <th
-          class="sc-hAZoDl bGblnd api-docs__cell"
-        >
-          <span
-            class="sc-bczRLJ deidno api-docs__description"
-          >
-            TODO
-          </span>
-        </th>
-      </tr>
-      <tr
-        class="sc-ksZaOG"
-      >
-        <th
-          class="sc-hAZoDl bGblnd api-docs__cell"
-        >
-          <a
-            aria-label="/support/create (opens in a new tab)"
-            class="sc-ftvSup bvTsjB"
-            href="https://www.georgegillams.co.uk/api/support/create"
-            rel="noopener noreferrer"
-            target="_blank"
-          >
-            /support/create
-            <div
-              class="sc-papXJ ecwnCf"
+                POST
+              </span>
+            </th>
+            <th
+              class="sc-fnykZs geZTSW"
             >
-              <svg
-                class="sc-iBkjds eZahvc sc-jqUVSM fjeMmK"
-                height="18"
-                viewBox="0 0 24 24"
-                width="18"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M12.5 11.3c.4.4 1 .4 1.4 0L19 6.2V9c0 .6.4 1 1 1s1-.4 1-1V4c0-.6-.4-1-1-1h-5c-.6 0-1 .4-1 1s.4 1 1 1h2.4l-4.9 4.9c-.4.4-.4 1 0 1.4zM19 19c0 1.1-.9 2-2 2H5c-1.1 0-2-.9-2-2V7c0-1.1.9-2 2-2h7v2H5v12h12v-7h2"
-                />
-              </svg>
-            </div>
-          </a>
-        </th>
-        <th
-          class="sc-hAZoDl bGblnd api-docs__cell"
-        >
-          <span
-            class="sc-bczRLJ deidno api-docs__method"
-          >
-            POST
-          </span>
-        </th>
-        <th
-          class="sc-hAZoDl bGblnd api-docs__cell"
-        >
-          <span
-            class="sc-bczRLJ deidno"
-          />
-        </th>
-        <th
-          class="sc-hAZoDl bGblnd api-docs__cell"
-        >
-          <span
-            class="sc-bczRLJ deidno"
-          >
-            Admin only
-          </span>
-        </th>
-        <th
-          class="sc-hAZoDl bGblnd api-docs__cell"
-        >
-          <span
-            class="sc-bczRLJ deidno api-docs__description"
-          >
-            TODO
-          </span>
-        </th>
-      </tr>
-      <tr
-        class="sc-ksZaOG"
-      >
-        <th
-          class="sc-hAZoDl bGblnd api-docs__cell"
-        >
-          <a
-            aria-label="/support/delete (opens in a new tab)"
-            class="sc-ftvSup bvTsjB"
-            href="https://www.georgegillams.co.uk/api/support/delete"
-            rel="noopener noreferrer"
-            target="_blank"
-          >
-            /support/delete
-            <div
-              class="sc-papXJ ecwnCf"
+              <span
+                class="sc-gsnTZi fzWRHm"
+              />
+            </th>
+            <th
+              class="sc-fnykZs geZTSW"
             >
-              <svg
-                class="sc-iBkjds eZahvc sc-jqUVSM fjeMmK"
-                height="18"
-                viewBox="0 0 24 24"
-                width="18"
-                xmlns="http://www.w3.org/2000/svg"
+              <span
+                class="sc-gsnTZi fzWRHm"
               >
-                <path
-                  d="M12.5 11.3c.4.4 1 .4 1.4 0L19 6.2V9c0 .6.4 1 1 1s1-.4 1-1V4c0-.6-.4-1-1-1h-5c-.6 0-1 .4-1 1s.4 1 1 1h2.4l-4.9 4.9c-.4.4-.4 1 0 1.4zM19 19c0 1.1-.9 2-2 2H5c-1.1 0-2-.9-2-2V7c0-1.1.9-2 2-2h7v2H5v12h12v-7h2"
-                />
-              </svg>
-            </div>
-          </a>
-        </th>
-        <th
-          class="sc-hAZoDl bGblnd api-docs__cell"
-        >
-          <span
-            class="sc-bczRLJ deidno api-docs__method"
-          >
-            POST
-          </span>
-        </th>
-        <th
-          class="sc-hAZoDl bGblnd api-docs__cell"
-        >
-          <span
-            class="sc-bczRLJ deidno"
-          />
-        </th>
-        <th
-          class="sc-hAZoDl bGblnd api-docs__cell"
-        >
-          <span
-            class="sc-bczRLJ deidno"
-          >
-            Admin only
-          </span>
-        </th>
-        <th
-          class="sc-hAZoDl bGblnd api-docs__cell"
-        >
-          <span
-            class="sc-bczRLJ deidno api-docs__description"
-          >
-            TODO
-          </span>
-        </th>
-      </tr>
-      <tr
-        class="sc-ksZaOG"
-      >
-        <th
-          class="sc-hAZoDl bGblnd api-docs__cell"
-        >
-          <a
-            aria-label="/support/load (opens in a new tab)"
-            class="sc-ftvSup bvTsjB"
-            href="https://www.georgegillams.co.uk/api/support/load"
-            rel="noopener noreferrer"
-            target="_blank"
-          >
-            /support/load
-            <div
-              class="sc-papXJ ecwnCf"
+                None
+              </span>
+            </th>
+            <th
+              class="sc-fnykZs geZTSW"
             >
-              <svg
-                class="sc-iBkjds eZahvc sc-jqUVSM fjeMmK"
-                height="18"
-                viewBox="0 0 24 24"
-                width="18"
-                xmlns="http://www.w3.org/2000/svg"
+              <span
+                class="sc-gsnTZi fzWRHm api-docsstyles__Description-sc-4t6xyo-1 cZtHBf"
               >
-                <path
-                  d="M12.5 11.3c.4.4 1 .4 1.4 0L19 6.2V9c0 .6.4 1 1 1s1-.4 1-1V4c0-.6-.4-1-1-1h-5c-.6 0-1 .4-1 1s.4 1 1 1h2.4l-4.9 4.9c-.4.4-.4 1 0 1.4zM19 19c0 1.1-.9 2-2 2H5c-1.1 0-2-.9-2-2V7c0-1.1.9-2 2-2h7v2H5v12h12v-7h2"
-                />
-              </svg>
-            </div>
-          </a>
-        </th>
-        <th
-          class="sc-hAZoDl bGblnd api-docs__cell"
-        >
-          <span
-            class="sc-bczRLJ deidno api-docs__method"
+                Verify an email address with a secret verification key
+              </span>
+            </th>
+          </tr>
+          <tr
+            class="sc-hAZoDl"
           >
-            GET
-          </span>
-        </th>
-        <th
-          class="sc-hAZoDl bGblnd api-docs__cell"
-        >
-          <span
-            class="sc-bczRLJ deidno"
-          />
-        </th>
-        <th
-          class="sc-hAZoDl bGblnd api-docs__cell"
-        >
-          <span
-            class="sc-bczRLJ deidno"
-          >
-            None
-          </span>
-        </th>
-        <th
-          class="sc-hAZoDl bGblnd api-docs__cell"
-        >
-          <span
-            class="sc-bczRLJ deidno api-docs__description"
-          >
-            TODO
-          </span>
-        </th>
-      </tr>
-      <tr
-        class="sc-ksZaOG"
-      >
-        <th
-          class="sc-hAZoDl bGblnd api-docs__cell"
-        >
-          <a
-            aria-label="/photo-showcase/load-all (opens in a new tab)"
-            class="sc-ftvSup bvTsjB"
-            href="https://www.georgegillams.co.uk/api/photo-showcase/load-all"
-            rel="noopener noreferrer"
-            target="_blank"
-          >
-            /photo-showcase/load-all
-            <div
-              class="sc-papXJ ecwnCf"
+            <th
+              class="sc-fnykZs geZTSW"
             >
-              <svg
-                class="sc-iBkjds eZahvc sc-jqUVSM fjeMmK"
-                height="18"
-                viewBox="0 0 24 24"
-                width="18"
-                xmlns="http://www.w3.org/2000/svg"
+              <a
+                aria-label="/emails/load (opens in a new tab)"
+                class="sc-papXJ ilnFdC"
+                href="https://www.georgegillams.co.uk/api/emails/load"
+                rel="noopener noreferrer"
+                target="_blank"
               >
-                <path
-                  d="M12.5 11.3c.4.4 1 .4 1.4 0L19 6.2V9c0 .6.4 1 1 1s1-.4 1-1V4c0-.6-.4-1-1-1h-5c-.6 0-1 .4-1 1s.4 1 1 1h2.4l-4.9 4.9c-.4.4-.4 1 0 1.4zM19 19c0 1.1-.9 2-2 2H5c-1.1 0-2-.9-2-2V7c0-1.1.9-2 2-2h7v2H5v12h12v-7h2"
-                />
-              </svg>
-            </div>
-          </a>
-        </th>
-        <th
-          class="sc-hAZoDl bGblnd api-docs__cell"
-        >
-          <span
-            class="sc-bczRLJ deidno api-docs__method"
+                /emails/load
+                <div
+                  class="sc-jqUVSM icGDYy"
+                >
+                  <svg
+                    class="sc-ftvSup bygzLL sc-kDDrLX kzKBSF"
+                    height="18"
+                    viewBox="0 0 24 24"
+                    width="18"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M12.5 11.3c.4.4 1 .4 1.4 0L19 6.2V9c0 .6.4 1 1 1s1-.4 1-1V4c0-.6-.4-1-1-1h-5c-.6 0-1 .4-1 1s.4 1 1 1h2.4l-4.9 4.9c-.4.4-.4 1 0 1.4zM19 19c0 1.1-.9 2-2 2H5c-1.1 0-2-.9-2-2V7c0-1.1.9-2 2-2h7v2H5v12h12v-7h2"
+                    />
+                  </svg>
+                </div>
+              </a>
+            </th>
+            <th
+              class="sc-fnykZs geZTSW"
+            >
+              <span
+                class="sc-gsnTZi fzWRHm api-docsstyles__Method-sc-4t6xyo-2 lesXHI"
+              >
+                GET
+              </span>
+            </th>
+            <th
+              class="sc-fnykZs geZTSW"
+            >
+              <span
+                class="sc-gsnTZi fzWRHm"
+              />
+            </th>
+            <th
+              class="sc-fnykZs geZTSW"
+            >
+              <span
+                class="sc-gsnTZi fzWRHm"
+              >
+                Admin only
+              </span>
+            </th>
+            <th
+              class="sc-fnykZs geZTSW"
+            >
+              <span
+                class="sc-gsnTZi fzWRHm api-docsstyles__Description-sc-4t6xyo-1 cZtHBf"
+              >
+                Loads emails that have been sent
+              </span>
+            </th>
+          </tr>
+          <tr
+            class="sc-hAZoDl"
           >
-            GET
-          </span>
-        </th>
-        <th
-          class="sc-hAZoDl bGblnd api-docs__cell"
-        >
-          <span
-            class="sc-bczRLJ deidno"
-          />
-        </th>
-        <th
-          class="sc-hAZoDl bGblnd api-docs__cell"
-        >
-          <span
-            class="sc-bczRLJ deidno"
+            <th
+              class="sc-fnykZs geZTSW"
+            >
+              <a
+                aria-label="/emails/resend (opens in a new tab)"
+                class="sc-papXJ ilnFdC"
+                href="https://www.georgegillams.co.uk/api/emails/resend"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                /emails/resend
+                <div
+                  class="sc-jqUVSM icGDYy"
+                >
+                  <svg
+                    class="sc-ftvSup bygzLL sc-kDDrLX kzKBSF"
+                    height="18"
+                    viewBox="0 0 24 24"
+                    width="18"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M12.5 11.3c.4.4 1 .4 1.4 0L19 6.2V9c0 .6.4 1 1 1s1-.4 1-1V4c0-.6-.4-1-1-1h-5c-.6 0-1 .4-1 1s.4 1 1 1h2.4l-4.9 4.9c-.4.4-.4 1 0 1.4zM19 19c0 1.1-.9 2-2 2H5c-1.1 0-2-.9-2-2V7c0-1.1.9-2 2-2h7v2H5v12h12v-7h2"
+                    />
+                  </svg>
+                </div>
+              </a>
+            </th>
+            <th
+              class="sc-fnykZs geZTSW"
+            >
+              <span
+                class="sc-gsnTZi fzWRHm api-docsstyles__Method-sc-4t6xyo-2 lesXHI"
+              >
+                POST
+              </span>
+            </th>
+            <th
+              class="sc-fnykZs geZTSW"
+            >
+              <span
+                class="sc-gsnTZi fzWRHm"
+              />
+            </th>
+            <th
+              class="sc-fnykZs geZTSW"
+            >
+              <span
+                class="sc-gsnTZi fzWRHm"
+              >
+                Admin only
+              </span>
+            </th>
+            <th
+              class="sc-fnykZs geZTSW"
+            >
+              <span
+                class="sc-gsnTZi fzWRHm api-docsstyles__Description-sc-4t6xyo-1 cZtHBf"
+              >
+                Resends an email that's stored in the database
+              </span>
+            </th>
+          </tr>
+          <tr
+            class="sc-hAZoDl"
           >
-            None
-          </span>
-        </th>
-        <th
-          class="sc-hAZoDl bGblnd api-docs__cell"
-        >
-          <span
-            class="sc-bczRLJ deidno api-docs__description"
+            <th
+              class="sc-fnykZs geZTSW"
+            >
+              <a
+                aria-label="/magic-links/login (opens in a new tab)"
+                class="sc-papXJ ilnFdC"
+                href="https://www.georgegillams.co.uk/api/magic-links/login"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                /magic-links/login
+                <div
+                  class="sc-jqUVSM icGDYy"
+                >
+                  <svg
+                    class="sc-ftvSup bygzLL sc-kDDrLX kzKBSF"
+                    height="18"
+                    viewBox="0 0 24 24"
+                    width="18"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M12.5 11.3c.4.4 1 .4 1.4 0L19 6.2V9c0 .6.4 1 1 1s1-.4 1-1V4c0-.6-.4-1-1-1h-5c-.6 0-1 .4-1 1s.4 1 1 1h2.4l-4.9 4.9c-.4.4-.4 1 0 1.4zM19 19c0 1.1-.9 2-2 2H5c-1.1 0-2-.9-2-2V7c0-1.1.9-2 2-2h7v2H5v12h12v-7h2"
+                    />
+                  </svg>
+                </div>
+              </a>
+            </th>
+            <th
+              class="sc-fnykZs geZTSW"
+            >
+              <span
+                class="sc-gsnTZi fzWRHm api-docsstyles__Method-sc-4t6xyo-2 lesXHI"
+              >
+                POST
+              </span>
+            </th>
+            <th
+              class="sc-fnykZs geZTSW"
+            >
+              <span
+                class="sc-gsnTZi fzWRHm"
+              />
+            </th>
+            <th
+              class="sc-fnykZs geZTSW"
+            >
+              <span
+                class="sc-gsnTZi fzWRHm"
+              >
+                None
+              </span>
+            </th>
+            <th
+              class="sc-fnykZs geZTSW"
+            >
+              <span
+                class="sc-gsnTZi fzWRHm api-docsstyles__Description-sc-4t6xyo-1 cZtHBf"
+              >
+                Login using a secret magic-link key
+              </span>
+            </th>
+          </tr>
+          <tr
+            class="sc-hAZoDl"
           >
-            Load images from Flickr showcase album
-          </span>
-        </th>
-      </tr>
-    </tbody>
-  </table>
+            <th
+              class="sc-fnykZs geZTSW"
+            >
+              <a
+                aria-label="/magic-links/request (opens in a new tab)"
+                class="sc-papXJ ilnFdC"
+                href="https://www.georgegillams.co.uk/api/magic-links/request"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                /magic-links/request
+                <div
+                  class="sc-jqUVSM icGDYy"
+                >
+                  <svg
+                    class="sc-ftvSup bygzLL sc-kDDrLX kzKBSF"
+                    height="18"
+                    viewBox="0 0 24 24"
+                    width="18"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M12.5 11.3c.4.4 1 .4 1.4 0L19 6.2V9c0 .6.4 1 1 1s1-.4 1-1V4c0-.6-.4-1-1-1h-5c-.6 0-1 .4-1 1s.4 1 1 1h2.4l-4.9 4.9c-.4.4-.4 1 0 1.4zM19 19c0 1.1-.9 2-2 2H5c-1.1 0-2-.9-2-2V7c0-1.1.9-2 2-2h7v2H5v12h12v-7h2"
+                    />
+                  </svg>
+                </div>
+              </a>
+            </th>
+            <th
+              class="sc-fnykZs geZTSW"
+            >
+              <span
+                class="sc-gsnTZi fzWRHm api-docsstyles__Method-sc-4t6xyo-2 lesXHI"
+              >
+                POST
+              </span>
+            </th>
+            <th
+              class="sc-fnykZs geZTSW"
+            >
+              <span
+                class="sc-gsnTZi fzWRHm"
+              />
+            </th>
+            <th
+              class="sc-fnykZs geZTSW"
+            >
+              <span
+                class="sc-gsnTZi fzWRHm"
+              >
+                None
+              </span>
+            </th>
+            <th
+              class="sc-fnykZs geZTSW"
+            >
+              <span
+                class="sc-gsnTZi fzWRHm api-docsstyles__Description-sc-4t6xyo-1 cZtHBf"
+              >
+                Request a magic link for a given account using the account's email address
+              </span>
+            </th>
+          </tr>
+          <tr
+            class="sc-hAZoDl"
+          >
+            <th
+              class="sc-fnykZs geZTSW"
+            >
+              <a
+                aria-label="/data-management/backup (opens in a new tab)"
+                class="sc-papXJ ilnFdC"
+                href="https://www.georgegillams.co.uk/api/data-management/backup"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                /data-management/backup
+                <div
+                  class="sc-jqUVSM icGDYy"
+                >
+                  <svg
+                    class="sc-ftvSup bygzLL sc-kDDrLX kzKBSF"
+                    height="18"
+                    viewBox="0 0 24 24"
+                    width="18"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M12.5 11.3c.4.4 1 .4 1.4 0L19 6.2V9c0 .6.4 1 1 1s1-.4 1-1V4c0-.6-.4-1-1-1h-5c-.6 0-1 .4-1 1s.4 1 1 1h2.4l-4.9 4.9c-.4.4-.4 1 0 1.4zM19 19c0 1.1-.9 2-2 2H5c-1.1 0-2-.9-2-2V7c0-1.1.9-2 2-2h7v2H5v12h12v-7h2"
+                    />
+                  </svg>
+                </div>
+              </a>
+            </th>
+            <th
+              class="sc-fnykZs geZTSW"
+            >
+              <span
+                class="sc-gsnTZi fzWRHm api-docsstyles__Method-sc-4t6xyo-2 lesXHI"
+              >
+                GET
+              </span>
+            </th>
+            <th
+              class="sc-fnykZs geZTSW"
+            >
+              <span
+                class="sc-gsnTZi fzWRHm"
+              />
+            </th>
+            <th
+              class="sc-fnykZs geZTSW"
+            >
+              <span
+                class="sc-gsnTZi fzWRHm"
+              >
+                Admin only
+              </span>
+            </th>
+            <th
+              class="sc-fnykZs geZTSW"
+            >
+              <span
+                class="sc-gsnTZi fzWRHm api-docsstyles__Description-sc-4t6xyo-1 cZtHBf"
+              >
+                Returns a file containing a full data backup for the site
+              </span>
+            </th>
+          </tr>
+          <tr
+            class="sc-hAZoDl"
+          >
+            <th
+              class="sc-fnykZs geZTSW"
+            >
+              <a
+                aria-label="/data-management/delete-entity (opens in a new tab)"
+                class="sc-papXJ ilnFdC"
+                href="https://www.georgegillams.co.uk/api/data-management/delete-entity"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                /data-management/delete-entity
+                <div
+                  class="sc-jqUVSM icGDYy"
+                >
+                  <svg
+                    class="sc-ftvSup bygzLL sc-kDDrLX kzKBSF"
+                    height="18"
+                    viewBox="0 0 24 24"
+                    width="18"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M12.5 11.3c.4.4 1 .4 1.4 0L19 6.2V9c0 .6.4 1 1 1s1-.4 1-1V4c0-.6-.4-1-1-1h-5c-.6 0-1 .4-1 1s.4 1 1 1h2.4l-4.9 4.9c-.4.4-.4 1 0 1.4zM19 19c0 1.1-.9 2-2 2H5c-1.1 0-2-.9-2-2V7c0-1.1.9-2 2-2h7v2H5v12h12v-7h2"
+                    />
+                  </svg>
+                </div>
+              </a>
+            </th>
+            <th
+              class="sc-fnykZs geZTSW"
+            >
+              <span
+                class="sc-gsnTZi fzWRHm api-docsstyles__Method-sc-4t6xyo-2 lesXHI"
+              >
+                POST
+              </span>
+            </th>
+            <th
+              class="sc-fnykZs geZTSW"
+            >
+              <span
+                class="sc-gsnTZi fzWRHm"
+              />
+            </th>
+            <th
+              class="sc-fnykZs geZTSW"
+            >
+              <span
+                class="sc-gsnTZi fzWRHm"
+              >
+                Admin only
+              </span>
+            </th>
+            <th
+              class="sc-fnykZs geZTSW"
+            >
+              <span
+                class="sc-gsnTZi fzWRHm api-docsstyles__Description-sc-4t6xyo-1 cZtHBf"
+              >
+                Remove a previously deleted entity completely from the DB
+              </span>
+            </th>
+          </tr>
+          <tr
+            class="sc-hAZoDl"
+          >
+            <th
+              class="sc-fnykZs geZTSW"
+            >
+              <a
+                aria-label="/data-management/delete-set (opens in a new tab)"
+                class="sc-papXJ ilnFdC"
+                href="https://www.georgegillams.co.uk/api/data-management/delete-set"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                /data-management/delete-set
+                <div
+                  class="sc-jqUVSM icGDYy"
+                >
+                  <svg
+                    class="sc-ftvSup bygzLL sc-kDDrLX kzKBSF"
+                    height="18"
+                    viewBox="0 0 24 24"
+                    width="18"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M12.5 11.3c.4.4 1 .4 1.4 0L19 6.2V9c0 .6.4 1 1 1s1-.4 1-1V4c0-.6-.4-1-1-1h-5c-.6 0-1 .4-1 1s.4 1 1 1h2.4l-4.9 4.9c-.4.4-.4 1 0 1.4zM19 19c0 1.1-.9 2-2 2H5c-1.1 0-2-.9-2-2V7c0-1.1.9-2 2-2h7v2H5v12h12v-7h2"
+                    />
+                  </svg>
+                </div>
+              </a>
+            </th>
+            <th
+              class="sc-fnykZs geZTSW"
+            >
+              <span
+                class="sc-gsnTZi fzWRHm api-docsstyles__Method-sc-4t6xyo-2 lesXHI"
+              >
+                POST
+              </span>
+            </th>
+            <th
+              class="sc-fnykZs geZTSW"
+            >
+              <span
+                class="sc-gsnTZi fzWRHm"
+              />
+            </th>
+            <th
+              class="sc-fnykZs geZTSW"
+            >
+              <span
+                class="sc-gsnTZi fzWRHm"
+              >
+                Admin only
+              </span>
+            </th>
+            <th
+              class="sc-fnykZs geZTSW"
+            >
+              <span
+                class="sc-gsnTZi fzWRHm api-docsstyles__Description-sc-4t6xyo-1 cZtHBf"
+              >
+                Remove an entire collection from the DB
+              </span>
+            </th>
+          </tr>
+          <tr
+            class="sc-hAZoDl"
+          >
+            <th
+              class="sc-fnykZs geZTSW"
+            >
+              <a
+                aria-label="/data-management/restore (opens in a new tab)"
+                class="sc-papXJ ilnFdC"
+                href="https://www.georgegillams.co.uk/api/data-management/restore"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                /data-management/restore
+                <div
+                  class="sc-jqUVSM icGDYy"
+                >
+                  <svg
+                    class="sc-ftvSup bygzLL sc-kDDrLX kzKBSF"
+                    height="18"
+                    viewBox="0 0 24 24"
+                    width="18"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M12.5 11.3c.4.4 1 .4 1.4 0L19 6.2V9c0 .6.4 1 1 1s1-.4 1-1V4c0-.6-.4-1-1-1h-5c-.6 0-1 .4-1 1s.4 1 1 1h2.4l-4.9 4.9c-.4.4-.4 1 0 1.4zM19 19c0 1.1-.9 2-2 2H5c-1.1 0-2-.9-2-2V7c0-1.1.9-2 2-2h7v2H5v12h12v-7h2"
+                    />
+                  </svg>
+                </div>
+              </a>
+            </th>
+            <th
+              class="sc-fnykZs geZTSW"
+            >
+              <span
+                class="sc-gsnTZi fzWRHm api-docsstyles__Method-sc-4t6xyo-2 lesXHI"
+              >
+                POST
+              </span>
+            </th>
+            <th
+              class="sc-fnykZs geZTSW"
+            >
+              <span
+                class="sc-gsnTZi fzWRHm"
+              />
+            </th>
+            <th
+              class="sc-fnykZs geZTSW"
+            >
+              <span
+                class="sc-gsnTZi fzWRHm"
+              >
+                Admin only
+              </span>
+            </th>
+            <th
+              class="sc-fnykZs geZTSW"
+            >
+              <span
+                class="sc-gsnTZi fzWRHm api-docsstyles__Description-sc-4t6xyo-1 cZtHBf"
+              >
+                Restore all the data from a backup file
+              </span>
+            </th>
+          </tr>
+          <tr
+            class="sc-hAZoDl"
+          >
+            <th
+              class="sc-fnykZs geZTSW"
+            >
+              <a
+                aria-label="/notifications/create (opens in a new tab)"
+                class="sc-papXJ ilnFdC"
+                href="https://www.georgegillams.co.uk/api/notifications/create"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                /notifications/create
+                <div
+                  class="sc-jqUVSM icGDYy"
+                >
+                  <svg
+                    class="sc-ftvSup bygzLL sc-kDDrLX kzKBSF"
+                    height="18"
+                    viewBox="0 0 24 24"
+                    width="18"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M12.5 11.3c.4.4 1 .4 1.4 0L19 6.2V9c0 .6.4 1 1 1s1-.4 1-1V4c0-.6-.4-1-1-1h-5c-.6 0-1 .4-1 1s.4 1 1 1h2.4l-4.9 4.9c-.4.4-.4 1 0 1.4zM19 19c0 1.1-.9 2-2 2H5c-1.1 0-2-.9-2-2V7c0-1.1.9-2 2-2h7v2H5v12h12v-7h2"
+                    />
+                  </svg>
+                </div>
+              </a>
+            </th>
+            <th
+              class="sc-fnykZs geZTSW"
+            >
+              <span
+                class="sc-gsnTZi fzWRHm api-docsstyles__Method-sc-4t6xyo-2 lesXHI"
+              >
+                POST
+              </span>
+            </th>
+            <th
+              class="sc-fnykZs geZTSW"
+            >
+              <span
+                class="sc-gsnTZi fzWRHm"
+              />
+            </th>
+            <th
+              class="sc-fnykZs geZTSW"
+            >
+              <span
+                class="sc-gsnTZi fzWRHm"
+              >
+                Admin only
+              </span>
+            </th>
+            <th
+              class="sc-fnykZs geZTSW"
+            >
+              <span
+                class="sc-gsnTZi fzWRHm api-docsstyles__Description-sc-4t6xyo-1 cZtHBf"
+              >
+                Creates a notification which will be show at the top of the site
+              </span>
+            </th>
+          </tr>
+          <tr
+            class="sc-hAZoDl"
+          >
+            <th
+              class="sc-fnykZs geZTSW"
+            >
+              <a
+                aria-label="/notifications/delete (opens in a new tab)"
+                class="sc-papXJ ilnFdC"
+                href="https://www.georgegillams.co.uk/api/notifications/delete"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                /notifications/delete
+                <div
+                  class="sc-jqUVSM icGDYy"
+                >
+                  <svg
+                    class="sc-ftvSup bygzLL sc-kDDrLX kzKBSF"
+                    height="18"
+                    viewBox="0 0 24 24"
+                    width="18"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M12.5 11.3c.4.4 1 .4 1.4 0L19 6.2V9c0 .6.4 1 1 1s1-.4 1-1V4c0-.6-.4-1-1-1h-5c-.6 0-1 .4-1 1s.4 1 1 1h2.4l-4.9 4.9c-.4.4-.4 1 0 1.4zM19 19c0 1.1-.9 2-2 2H5c-1.1 0-2-.9-2-2V7c0-1.1.9-2 2-2h7v2H5v12h12v-7h2"
+                    />
+                  </svg>
+                </div>
+              </a>
+            </th>
+            <th
+              class="sc-fnykZs geZTSW"
+            >
+              <span
+                class="sc-gsnTZi fzWRHm api-docsstyles__Method-sc-4t6xyo-2 lesXHI"
+              >
+                POST
+              </span>
+            </th>
+            <th
+              class="sc-fnykZs geZTSW"
+            >
+              <span
+                class="sc-gsnTZi fzWRHm"
+              />
+            </th>
+            <th
+              class="sc-fnykZs geZTSW"
+            >
+              <span
+                class="sc-gsnTZi fzWRHm"
+              >
+                Admin only
+              </span>
+            </th>
+            <th
+              class="sc-fnykZs geZTSW"
+            >
+              <span
+                class="sc-gsnTZi fzWRHm api-docsstyles__Description-sc-4t6xyo-1 cZtHBf"
+              >
+                Deletes a notification
+              </span>
+            </th>
+          </tr>
+          <tr
+            class="sc-hAZoDl"
+          >
+            <th
+              class="sc-fnykZs geZTSW"
+            >
+              <a
+                aria-label="/notifications/load-all (opens in a new tab)"
+                class="sc-papXJ ilnFdC"
+                href="https://www.georgegillams.co.uk/api/notifications/load-all"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                /notifications/load-all
+                <div
+                  class="sc-jqUVSM icGDYy"
+                >
+                  <svg
+                    class="sc-ftvSup bygzLL sc-kDDrLX kzKBSF"
+                    height="18"
+                    viewBox="0 0 24 24"
+                    width="18"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M12.5 11.3c.4.4 1 .4 1.4 0L19 6.2V9c0 .6.4 1 1 1s1-.4 1-1V4c0-.6-.4-1-1-1h-5c-.6 0-1 .4-1 1s.4 1 1 1h2.4l-4.9 4.9c-.4.4-.4 1 0 1.4zM19 19c0 1.1-.9 2-2 2H5c-1.1 0-2-.9-2-2V7c0-1.1.9-2 2-2h7v2H5v12h12v-7h2"
+                    />
+                  </svg>
+                </div>
+              </a>
+            </th>
+            <th
+              class="sc-fnykZs geZTSW"
+            >
+              <span
+                class="sc-gsnTZi fzWRHm api-docsstyles__Method-sc-4t6xyo-2 lesXHI"
+              >
+                GET
+              </span>
+            </th>
+            <th
+              class="sc-fnykZs geZTSW"
+            >
+              <span
+                class="sc-gsnTZi fzWRHm"
+              />
+            </th>
+            <th
+              class="sc-fnykZs geZTSW"
+            >
+              <span
+                class="sc-gsnTZi fzWRHm"
+              >
+                Any user - only an admin can see deleted notifications
+              </span>
+            </th>
+            <th
+              class="sc-fnykZs geZTSW"
+            >
+              <span
+                class="sc-gsnTZi fzWRHm api-docsstyles__Description-sc-4t6xyo-1 cZtHBf"
+              >
+                Load all notifications
+              </span>
+            </th>
+          </tr>
+          <tr
+            class="sc-hAZoDl"
+          >
+            <th
+              class="sc-fnykZs geZTSW"
+            >
+              <a
+                aria-label="/notifications/load/:id (opens in a new tab)"
+                class="sc-papXJ ilnFdC"
+                href="https://www.georgegillams.co.uk/api/notifications/load/:id"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                /notifications/load/:id
+                <div
+                  class="sc-jqUVSM icGDYy"
+                >
+                  <svg
+                    class="sc-ftvSup bygzLL sc-kDDrLX kzKBSF"
+                    height="18"
+                    viewBox="0 0 24 24"
+                    width="18"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M12.5 11.3c.4.4 1 .4 1.4 0L19 6.2V9c0 .6.4 1 1 1s1-.4 1-1V4c0-.6-.4-1-1-1h-5c-.6 0-1 .4-1 1s.4 1 1 1h2.4l-4.9 4.9c-.4.4-.4 1 0 1.4zM19 19c0 1.1-.9 2-2 2H5c-1.1 0-2-.9-2-2V7c0-1.1.9-2 2-2h7v2H5v12h12v-7h2"
+                    />
+                  </svg>
+                </div>
+              </a>
+            </th>
+            <th
+              class="sc-fnykZs geZTSW"
+            >
+              <span
+                class="sc-gsnTZi fzWRHm api-docsstyles__Method-sc-4t6xyo-2 lesXHI"
+              >
+                GET
+              </span>
+            </th>
+            <th
+              class="sc-fnykZs geZTSW"
+            >
+              <span
+                class="sc-gsnTZi fzWRHm"
+              />
+            </th>
+            <th
+              class="sc-fnykZs geZTSW"
+            >
+              <span
+                class="sc-gsnTZi fzWRHm"
+              />
+            </th>
+            <th
+              class="sc-fnykZs geZTSW"
+            >
+              <span
+                class="sc-gsnTZi fzWRHm api-docsstyles__Description-sc-4t6xyo-1 cZtHBf"
+              />
+            </th>
+          </tr>
+          <tr
+            class="sc-hAZoDl"
+          >
+            <th
+              class="sc-fnykZs geZTSW"
+            >
+              <a
+                aria-label="/notifications/update (opens in a new tab)"
+                class="sc-papXJ ilnFdC"
+                href="https://www.georgegillams.co.uk/api/notifications/update"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                /notifications/update
+                <div
+                  class="sc-jqUVSM icGDYy"
+                >
+                  <svg
+                    class="sc-ftvSup bygzLL sc-kDDrLX kzKBSF"
+                    height="18"
+                    viewBox="0 0 24 24"
+                    width="18"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M12.5 11.3c.4.4 1 .4 1.4 0L19 6.2V9c0 .6.4 1 1 1s1-.4 1-1V4c0-.6-.4-1-1-1h-5c-.6 0-1 .4-1 1s.4 1 1 1h2.4l-4.9 4.9c-.4.4-.4 1 0 1.4zM19 19c0 1.1-.9 2-2 2H5c-1.1 0-2-.9-2-2V7c0-1.1.9-2 2-2h7v2H5v12h12v-7h2"
+                    />
+                  </svg>
+                </div>
+              </a>
+            </th>
+            <th
+              class="sc-fnykZs geZTSW"
+            >
+              <span
+                class="sc-gsnTZi fzWRHm api-docsstyles__Method-sc-4t6xyo-2 lesXHI"
+              >
+                POST
+              </span>
+            </th>
+            <th
+              class="sc-fnykZs geZTSW"
+            >
+              <span
+                class="sc-gsnTZi fzWRHm"
+              />
+            </th>
+            <th
+              class="sc-fnykZs geZTSW"
+            >
+              <span
+                class="sc-gsnTZi fzWRHm"
+              >
+                Admin only
+              </span>
+            </th>
+            <th
+              class="sc-fnykZs geZTSW"
+            >
+              <span
+                class="sc-gsnTZi fzWRHm api-docsstyles__Description-sc-4t6xyo-1 cZtHBf"
+              >
+                Update a given notification
+              </span>
+            </th>
+          </tr>
+          <tr
+            class="sc-hAZoDl"
+          >
+            <th
+              class="sc-fnykZs geZTSW"
+            >
+              <a
+                aria-label="/users/create (opens in a new tab)"
+                class="sc-papXJ ilnFdC"
+                href="https://www.georgegillams.co.uk/api/users/create"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                /users/create
+                <div
+                  class="sc-jqUVSM icGDYy"
+                >
+                  <svg
+                    class="sc-ftvSup bygzLL sc-kDDrLX kzKBSF"
+                    height="18"
+                    viewBox="0 0 24 24"
+                    width="18"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M12.5 11.3c.4.4 1 .4 1.4 0L19 6.2V9c0 .6.4 1 1 1s1-.4 1-1V4c0-.6-.4-1-1-1h-5c-.6 0-1 .4-1 1s.4 1 1 1h2.4l-4.9 4.9c-.4.4-.4 1 0 1.4zM19 19c0 1.1-.9 2-2 2H5c-1.1 0-2-.9-2-2V7c0-1.1.9-2 2-2h7v2H5v12h12v-7h2"
+                    />
+                  </svg>
+                </div>
+              </a>
+            </th>
+            <th
+              class="sc-fnykZs geZTSW"
+            >
+              <span
+                class="sc-gsnTZi fzWRHm api-docsstyles__Method-sc-4t6xyo-2 lesXHI"
+              >
+                POST
+              </span>
+            </th>
+            <th
+              class="sc-fnykZs geZTSW"
+            >
+              <span
+                class="sc-gsnTZi fzWRHm"
+              />
+            </th>
+            <th
+              class="sc-fnykZs geZTSW"
+            >
+              <span
+                class="sc-gsnTZi fzWRHm"
+              >
+                None - only an admin can create other admin users
+              </span>
+            </th>
+            <th
+              class="sc-fnykZs geZTSW"
+            >
+              <span
+                class="sc-gsnTZi fzWRHm api-docsstyles__Description-sc-4t6xyo-1 cZtHBf"
+              >
+                Create a user
+              </span>
+            </th>
+          </tr>
+          <tr
+            class="sc-hAZoDl"
+          >
+            <th
+              class="sc-fnykZs geZTSW"
+            >
+              <a
+                aria-label="/users/delete (opens in a new tab)"
+                class="sc-papXJ ilnFdC"
+                href="https://www.georgegillams.co.uk/api/users/delete"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                /users/delete
+                <div
+                  class="sc-jqUVSM icGDYy"
+                >
+                  <svg
+                    class="sc-ftvSup bygzLL sc-kDDrLX kzKBSF"
+                    height="18"
+                    viewBox="0 0 24 24"
+                    width="18"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M12.5 11.3c.4.4 1 .4 1.4 0L19 6.2V9c0 .6.4 1 1 1s1-.4 1-1V4c0-.6-.4-1-1-1h-5c-.6 0-1 .4-1 1s.4 1 1 1h2.4l-4.9 4.9c-.4.4-.4 1 0 1.4zM19 19c0 1.1-.9 2-2 2H5c-1.1 0-2-.9-2-2V7c0-1.1.9-2 2-2h7v2H5v12h12v-7h2"
+                    />
+                  </svg>
+                </div>
+              </a>
+            </th>
+            <th
+              class="sc-fnykZs geZTSW"
+            >
+              <span
+                class="sc-gsnTZi fzWRHm api-docsstyles__Method-sc-4t6xyo-2 lesXHI"
+              >
+                POST
+              </span>
+            </th>
+            <th
+              class="sc-fnykZs geZTSW"
+            >
+              <span
+                class="sc-gsnTZi fzWRHm"
+              />
+            </th>
+            <th
+              class="sc-fnykZs geZTSW"
+            >
+              <span
+                class="sc-gsnTZi fzWRHm"
+              >
+                The user being deleted, or an admin only
+              </span>
+            </th>
+            <th
+              class="sc-fnykZs geZTSW"
+            >
+              <span
+                class="sc-gsnTZi fzWRHm api-docsstyles__Description-sc-4t6xyo-1 cZtHBf"
+              >
+                Delete a user
+              </span>
+            </th>
+          </tr>
+          <tr
+            class="sc-hAZoDl"
+          >
+            <th
+              class="sc-fnykZs geZTSW"
+            >
+              <a
+                aria-label="/users/load (opens in a new tab)"
+                class="sc-papXJ ilnFdC"
+                href="https://www.georgegillams.co.uk/api/users/load"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                /users/load
+                <div
+                  class="sc-jqUVSM icGDYy"
+                >
+                  <svg
+                    class="sc-ftvSup bygzLL sc-kDDrLX kzKBSF"
+                    height="18"
+                    viewBox="0 0 24 24"
+                    width="18"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M12.5 11.3c.4.4 1 .4 1.4 0L19 6.2V9c0 .6.4 1 1 1s1-.4 1-1V4c0-.6-.4-1-1-1h-5c-.6 0-1 .4-1 1s.4 1 1 1h2.4l-4.9 4.9c-.4.4-.4 1 0 1.4zM19 19c0 1.1-.9 2-2 2H5c-1.1 0-2-.9-2-2V7c0-1.1.9-2 2-2h7v2H5v12h12v-7h2"
+                    />
+                  </svg>
+                </div>
+              </a>
+            </th>
+            <th
+              class="sc-fnykZs geZTSW"
+            >
+              <span
+                class="sc-gsnTZi fzWRHm api-docsstyles__Method-sc-4t6xyo-2 lesXHI"
+              >
+                GET
+              </span>
+            </th>
+            <th
+              class="sc-fnykZs geZTSW"
+            >
+              <span
+                class="sc-gsnTZi fzWRHm"
+              />
+            </th>
+            <th
+              class="sc-fnykZs geZTSW"
+            >
+              <span
+                class="sc-gsnTZi fzWRHm"
+              >
+                The user being loaded, or an admin only
+              </span>
+            </th>
+            <th
+              class="sc-fnykZs geZTSW"
+            >
+              <span
+                class="sc-gsnTZi fzWRHm api-docsstyles__Description-sc-4t6xyo-1 cZtHBf"
+              >
+                Load a given user
+              </span>
+            </th>
+          </tr>
+          <tr
+            class="sc-hAZoDl"
+          >
+            <th
+              class="sc-fnykZs geZTSW"
+            >
+              <a
+                aria-label="/users/load-all (opens in a new tab)"
+                class="sc-papXJ ilnFdC"
+                href="https://www.georgegillams.co.uk/api/users/load-all"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                /users/load-all
+                <div
+                  class="sc-jqUVSM icGDYy"
+                >
+                  <svg
+                    class="sc-ftvSup bygzLL sc-kDDrLX kzKBSF"
+                    height="18"
+                    viewBox="0 0 24 24"
+                    width="18"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M12.5 11.3c.4.4 1 .4 1.4 0L19 6.2V9c0 .6.4 1 1 1s1-.4 1-1V4c0-.6-.4-1-1-1h-5c-.6 0-1 .4-1 1s.4 1 1 1h2.4l-4.9 4.9c-.4.4-.4 1 0 1.4zM19 19c0 1.1-.9 2-2 2H5c-1.1 0-2-.9-2-2V7c0-1.1.9-2 2-2h7v2H5v12h12v-7h2"
+                    />
+                  </svg>
+                </div>
+              </a>
+            </th>
+            <th
+              class="sc-fnykZs geZTSW"
+            >
+              <span
+                class="sc-gsnTZi fzWRHm api-docsstyles__Method-sc-4t6xyo-2 lesXHI"
+              >
+                GET
+              </span>
+            </th>
+            <th
+              class="sc-fnykZs geZTSW"
+            >
+              <span
+                class="sc-gsnTZi fzWRHm"
+              />
+            </th>
+            <th
+              class="sc-fnykZs geZTSW"
+            >
+              <span
+                class="sc-gsnTZi fzWRHm"
+              >
+                Admin only
+              </span>
+            </th>
+            <th
+              class="sc-fnykZs geZTSW"
+            >
+              <span
+                class="sc-gsnTZi fzWRHm api-docsstyles__Description-sc-4t6xyo-1 cZtHBf"
+              >
+                Load all users
+              </span>
+            </th>
+          </tr>
+          <tr
+            class="sc-hAZoDl"
+          >
+            <th
+              class="sc-fnykZs geZTSW"
+            >
+              <a
+                aria-label="/users/sign-up (opens in a new tab)"
+                class="sc-papXJ ilnFdC"
+                href="https://www.georgegillams.co.uk/api/users/sign-up"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                /users/sign-up
+                <div
+                  class="sc-jqUVSM icGDYy"
+                >
+                  <svg
+                    class="sc-ftvSup bygzLL sc-kDDrLX kzKBSF"
+                    height="18"
+                    viewBox="0 0 24 24"
+                    width="18"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M12.5 11.3c.4.4 1 .4 1.4 0L19 6.2V9c0 .6.4 1 1 1s1-.4 1-1V4c0-.6-.4-1-1-1h-5c-.6 0-1 .4-1 1s.4 1 1 1h2.4l-4.9 4.9c-.4.4-.4 1 0 1.4zM19 19c0 1.1-.9 2-2 2H5c-1.1 0-2-.9-2-2V7c0-1.1.9-2 2-2h7v2H5v12h12v-7h2"
+                    />
+                  </svg>
+                </div>
+              </a>
+            </th>
+            <th
+              class="sc-fnykZs geZTSW"
+            >
+              <span
+                class="sc-gsnTZi fzWRHm api-docsstyles__Method-sc-4t6xyo-2 lesXHI"
+              >
+                POST
+              </span>
+            </th>
+            <th
+              class="sc-fnykZs geZTSW"
+            >
+              <span
+                class="sc-gsnTZi fzWRHm"
+              />
+            </th>
+            <th
+              class="sc-fnykZs geZTSW"
+            >
+              <span
+                class="sc-gsnTZi fzWRHm"
+              >
+                None
+              </span>
+            </th>
+            <th
+              class="sc-fnykZs geZTSW"
+            >
+              <span
+                class="sc-gsnTZi fzWRHm api-docsstyles__Description-sc-4t6xyo-1 cZtHBf"
+              >
+                Create a user, and sign in as that user at the same time
+              </span>
+            </th>
+          </tr>
+          <tr
+            class="sc-hAZoDl"
+          >
+            <th
+              class="sc-fnykZs geZTSW"
+            >
+              <a
+                aria-label="/users/update (opens in a new tab)"
+                class="sc-papXJ ilnFdC"
+                href="https://www.georgegillams.co.uk/api/users/update"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                /users/update
+                <div
+                  class="sc-jqUVSM icGDYy"
+                >
+                  <svg
+                    class="sc-ftvSup bygzLL sc-kDDrLX kzKBSF"
+                    height="18"
+                    viewBox="0 0 24 24"
+                    width="18"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M12.5 11.3c.4.4 1 .4 1.4 0L19 6.2V9c0 .6.4 1 1 1s1-.4 1-1V4c0-.6-.4-1-1-1h-5c-.6 0-1 .4-1 1s.4 1 1 1h2.4l-4.9 4.9c-.4.4-.4 1 0 1.4zM19 19c0 1.1-.9 2-2 2H5c-1.1 0-2-.9-2-2V7c0-1.1.9-2 2-2h7v2H5v12h12v-7h2"
+                    />
+                  </svg>
+                </div>
+              </a>
+            </th>
+            <th
+              class="sc-fnykZs geZTSW"
+            >
+              <span
+                class="sc-gsnTZi fzWRHm api-docsstyles__Method-sc-4t6xyo-2 lesXHI"
+              >
+                POST
+              </span>
+            </th>
+            <th
+              class="sc-fnykZs geZTSW"
+            >
+              <span
+                class="sc-gsnTZi fzWRHm"
+              />
+            </th>
+            <th
+              class="sc-fnykZs geZTSW"
+            >
+              <span
+                class="sc-gsnTZi fzWRHm"
+              >
+                Any user - only an admin can promote other users to admin
+              </span>
+            </th>
+            <th
+              class="sc-fnykZs geZTSW"
+            >
+              <span
+                class="sc-gsnTZi fzWRHm api-docsstyles__Description-sc-4t6xyo-1 cZtHBf"
+              >
+                Update a given user
+              </span>
+            </th>
+          </tr>
+          <tr
+            class="sc-hAZoDl"
+          >
+            <th
+              class="sc-fnykZs geZTSW"
+            >
+              <a
+                aria-label="/blogs/create (opens in a new tab)"
+                class="sc-papXJ ilnFdC"
+                href="https://www.georgegillams.co.uk/api/blogs/create"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                /blogs/create
+                <div
+                  class="sc-jqUVSM icGDYy"
+                >
+                  <svg
+                    class="sc-ftvSup bygzLL sc-kDDrLX kzKBSF"
+                    height="18"
+                    viewBox="0 0 24 24"
+                    width="18"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M12.5 11.3c.4.4 1 .4 1.4 0L19 6.2V9c0 .6.4 1 1 1s1-.4 1-1V4c0-.6-.4-1-1-1h-5c-.6 0-1 .4-1 1s.4 1 1 1h2.4l-4.9 4.9c-.4.4-.4 1 0 1.4zM19 19c0 1.1-.9 2-2 2H5c-1.1 0-2-.9-2-2V7c0-1.1.9-2 2-2h7v2H5v12h12v-7h2"
+                    />
+                  </svg>
+                </div>
+              </a>
+            </th>
+            <th
+              class="sc-fnykZs geZTSW"
+            >
+              <span
+                class="sc-gsnTZi fzWRHm api-docsstyles__Method-sc-4t6xyo-2 lesXHI"
+              >
+                POST
+              </span>
+            </th>
+            <th
+              class="sc-fnykZs geZTSW"
+            >
+              <span
+                class="sc-gsnTZi fzWRHm"
+              />
+            </th>
+            <th
+              class="sc-fnykZs geZTSW"
+            >
+              <span
+                class="sc-gsnTZi fzWRHm"
+              >
+                Admin only
+              </span>
+            </th>
+            <th
+              class="sc-fnykZs geZTSW"
+            >
+              <span
+                class="sc-gsnTZi fzWRHm api-docsstyles__Description-sc-4t6xyo-1 cZtHBf"
+              >
+                Create a new blog
+              </span>
+            </th>
+          </tr>
+          <tr
+            class="sc-hAZoDl"
+          >
+            <th
+              class="sc-fnykZs geZTSW"
+            >
+              <a
+                aria-label="/blogs/delete (opens in a new tab)"
+                class="sc-papXJ ilnFdC"
+                href="https://www.georgegillams.co.uk/api/blogs/delete"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                /blogs/delete
+                <div
+                  class="sc-jqUVSM icGDYy"
+                >
+                  <svg
+                    class="sc-ftvSup bygzLL sc-kDDrLX kzKBSF"
+                    height="18"
+                    viewBox="0 0 24 24"
+                    width="18"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M12.5 11.3c.4.4 1 .4 1.4 0L19 6.2V9c0 .6.4 1 1 1s1-.4 1-1V4c0-.6-.4-1-1-1h-5c-.6 0-1 .4-1 1s.4 1 1 1h2.4l-4.9 4.9c-.4.4-.4 1 0 1.4zM19 19c0 1.1-.9 2-2 2H5c-1.1 0-2-.9-2-2V7c0-1.1.9-2 2-2h7v2H5v12h12v-7h2"
+                    />
+                  </svg>
+                </div>
+              </a>
+            </th>
+            <th
+              class="sc-fnykZs geZTSW"
+            >
+              <span
+                class="sc-gsnTZi fzWRHm api-docsstyles__Method-sc-4t6xyo-2 lesXHI"
+              >
+                POST
+              </span>
+            </th>
+            <th
+              class="sc-fnykZs geZTSW"
+            >
+              <span
+                class="sc-gsnTZi fzWRHm"
+              />
+            </th>
+            <th
+              class="sc-fnykZs geZTSW"
+            >
+              <span
+                class="sc-gsnTZi fzWRHm"
+              >
+                Admin only
+              </span>
+            </th>
+            <th
+              class="sc-fnykZs geZTSW"
+            >
+              <span
+                class="sc-gsnTZi fzWRHm api-docsstyles__Description-sc-4t6xyo-1 cZtHBf"
+              >
+                Remove a blog
+              </span>
+            </th>
+          </tr>
+          <tr
+            class="sc-hAZoDl"
+          >
+            <th
+              class="sc-fnykZs geZTSW"
+            >
+              <a
+                aria-label="/blogs/load-all (opens in a new tab)"
+                class="sc-papXJ ilnFdC"
+                href="https://www.georgegillams.co.uk/api/blogs/load-all"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                /blogs/load-all
+                <div
+                  class="sc-jqUVSM icGDYy"
+                >
+                  <svg
+                    class="sc-ftvSup bygzLL sc-kDDrLX kzKBSF"
+                    height="18"
+                    viewBox="0 0 24 24"
+                    width="18"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M12.5 11.3c.4.4 1 .4 1.4 0L19 6.2V9c0 .6.4 1 1 1s1-.4 1-1V4c0-.6-.4-1-1-1h-5c-.6 0-1 .4-1 1s.4 1 1 1h2.4l-4.9 4.9c-.4.4-.4 1 0 1.4zM19 19c0 1.1-.9 2-2 2H5c-1.1 0-2-.9-2-2V7c0-1.1.9-2 2-2h7v2H5v12h12v-7h2"
+                    />
+                  </svg>
+                </div>
+              </a>
+            </th>
+            <th
+              class="sc-fnykZs geZTSW"
+            >
+              <span
+                class="sc-gsnTZi fzWRHm api-docsstyles__Method-sc-4t6xyo-2 lesXHI"
+              >
+                GET
+              </span>
+            </th>
+            <th
+              class="sc-fnykZs geZTSW"
+            >
+              <span
+                class="sc-gsnTZi fzWRHm"
+              />
+            </th>
+            <th
+              class="sc-fnykZs geZTSW"
+            >
+              <span
+                class="sc-gsnTZi fzWRHm"
+              >
+                None
+              </span>
+            </th>
+            <th
+              class="sc-fnykZs geZTSW"
+            >
+              <span
+                class="sc-gsnTZi fzWRHm api-docsstyles__Description-sc-4t6xyo-1 cZtHBf"
+              >
+                Load all blogs. If not admin, only non-deleted, published blogs will be loaded
+              </span>
+            </th>
+          </tr>
+          <tr
+            class="sc-hAZoDl"
+          >
+            <th
+              class="sc-fnykZs geZTSW"
+            >
+              <a
+                aria-label="/blogs/load/:id (opens in a new tab)"
+                class="sc-papXJ ilnFdC"
+                href="https://www.georgegillams.co.uk/api/blogs/load/:id"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                /blogs/load/:id
+                <div
+                  class="sc-jqUVSM icGDYy"
+                >
+                  <svg
+                    class="sc-ftvSup bygzLL sc-kDDrLX kzKBSF"
+                    height="18"
+                    viewBox="0 0 24 24"
+                    width="18"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M12.5 11.3c.4.4 1 .4 1.4 0L19 6.2V9c0 .6.4 1 1 1s1-.4 1-1V4c0-.6-.4-1-1-1h-5c-.6 0-1 .4-1 1s.4 1 1 1h2.4l-4.9 4.9c-.4.4-.4 1 0 1.4zM19 19c0 1.1-.9 2-2 2H5c-1.1 0-2-.9-2-2V7c0-1.1.9-2 2-2h7v2H5v12h12v-7h2"
+                    />
+                  </svg>
+                </div>
+              </a>
+            </th>
+            <th
+              class="sc-fnykZs geZTSW"
+            >
+              <span
+                class="sc-gsnTZi fzWRHm api-docsstyles__Method-sc-4t6xyo-2 lesXHI"
+              >
+                GET
+              </span>
+            </th>
+            <th
+              class="sc-fnykZs geZTSW"
+            >
+              <span
+                class="sc-gsnTZi fzWRHm"
+              >
+                id: the blog ID to load
+              </span>
+            </th>
+            <th
+              class="sc-fnykZs geZTSW"
+            >
+              <span
+                class="sc-gsnTZi fzWRHm"
+              >
+                None
+              </span>
+            </th>
+            <th
+              class="sc-fnykZs geZTSW"
+            >
+              <span
+                class="sc-gsnTZi fzWRHm api-docsstyles__Description-sc-4t6xyo-1 cZtHBf"
+              >
+                Load a single blog. If not admin, will fail if deleted or not published
+              </span>
+            </th>
+          </tr>
+          <tr
+            class="sc-hAZoDl"
+          >
+            <th
+              class="sc-fnykZs geZTSW"
+            >
+              <a
+                aria-label="/blogs/update (opens in a new tab)"
+                class="sc-papXJ ilnFdC"
+                href="https://www.georgegillams.co.uk/api/blogs/update"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                /blogs/update
+                <div
+                  class="sc-jqUVSM icGDYy"
+                >
+                  <svg
+                    class="sc-ftvSup bygzLL sc-kDDrLX kzKBSF"
+                    height="18"
+                    viewBox="0 0 24 24"
+                    width="18"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M12.5 11.3c.4.4 1 .4 1.4 0L19 6.2V9c0 .6.4 1 1 1s1-.4 1-1V4c0-.6-.4-1-1-1h-5c-.6 0-1 .4-1 1s.4 1 1 1h2.4l-4.9 4.9c-.4.4-.4 1 0 1.4zM19 19c0 1.1-.9 2-2 2H5c-1.1 0-2-.9-2-2V7c0-1.1.9-2 2-2h7v2H5v12h12v-7h2"
+                    />
+                  </svg>
+                </div>
+              </a>
+            </th>
+            <th
+              class="sc-fnykZs geZTSW"
+            >
+              <span
+                class="sc-gsnTZi fzWRHm api-docsstyles__Method-sc-4t6xyo-2 lesXHI"
+              >
+                POST
+              </span>
+            </th>
+            <th
+              class="sc-fnykZs geZTSW"
+            >
+              <span
+                class="sc-gsnTZi fzWRHm"
+              />
+            </th>
+            <th
+              class="sc-fnykZs geZTSW"
+            >
+              <span
+                class="sc-gsnTZi fzWRHm"
+              >
+                Admin only
+              </span>
+            </th>
+            <th
+              class="sc-fnykZs geZTSW"
+            >
+              <span
+                class="sc-gsnTZi fzWRHm api-docsstyles__Description-sc-4t6xyo-1 cZtHBf"
+              >
+                Update a blog
+              </span>
+            </th>
+          </tr>
+          <tr
+            class="sc-hAZoDl"
+          >
+            <th
+              class="sc-fnykZs geZTSW"
+            >
+              <a
+                aria-label="/make-payment/load (opens in a new tab)"
+                class="sc-papXJ ilnFdC"
+                href="https://www.georgegillams.co.uk/api/make-payment/load"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                /make-payment/load
+                <div
+                  class="sc-jqUVSM icGDYy"
+                >
+                  <svg
+                    class="sc-ftvSup bygzLL sc-kDDrLX kzKBSF"
+                    height="18"
+                    viewBox="0 0 24 24"
+                    width="18"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M12.5 11.3c.4.4 1 .4 1.4 0L19 6.2V9c0 .6.4 1 1 1s1-.4 1-1V4c0-.6-.4-1-1-1h-5c-.6 0-1 .4-1 1s.4 1 1 1h2.4l-4.9 4.9c-.4.4-.4 1 0 1.4zM19 19c0 1.1-.9 2-2 2H5c-1.1 0-2-.9-2-2V7c0-1.1.9-2 2-2h7v2H5v12h12v-7h2"
+                    />
+                  </svg>
+                </div>
+              </a>
+            </th>
+            <th
+              class="sc-fnykZs geZTSW"
+            >
+              <span
+                class="sc-gsnTZi fzWRHm api-docsstyles__Method-sc-4t6xyo-2 lesXHI"
+              >
+                POST
+              </span>
+            </th>
+            <th
+              class="sc-fnykZs geZTSW"
+            >
+              <span
+                class="sc-gsnTZi fzWRHm"
+              />
+            </th>
+            <th
+              class="sc-fnykZs geZTSW"
+            >
+              <span
+                class="sc-gsnTZi fzWRHm"
+              >
+                TODO
+              </span>
+            </th>
+            <th
+              class="sc-fnykZs geZTSW"
+            >
+              <span
+                class="sc-gsnTZi fzWRHm api-docsstyles__Description-sc-4t6xyo-1 cZtHBf"
+              >
+                TODO
+              </span>
+            </th>
+          </tr>
+          <tr
+            class="sc-hAZoDl"
+          >
+            <th
+              class="sc-fnykZs geZTSW"
+            >
+              <a
+                aria-label="/make-payment/create-intent (opens in a new tab)"
+                class="sc-papXJ ilnFdC"
+                href="https://www.georgegillams.co.uk/api/make-payment/create-intent"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                /make-payment/create-intent
+                <div
+                  class="sc-jqUVSM icGDYy"
+                >
+                  <svg
+                    class="sc-ftvSup bygzLL sc-kDDrLX kzKBSF"
+                    height="18"
+                    viewBox="0 0 24 24"
+                    width="18"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M12.5 11.3c.4.4 1 .4 1.4 0L19 6.2V9c0 .6.4 1 1 1s1-.4 1-1V4c0-.6-.4-1-1-1h-5c-.6 0-1 .4-1 1s.4 1 1 1h2.4l-4.9 4.9c-.4.4-.4 1 0 1.4zM19 19c0 1.1-.9 2-2 2H5c-1.1 0-2-.9-2-2V7c0-1.1.9-2 2-2h7v2H5v12h12v-7h2"
+                    />
+                  </svg>
+                </div>
+              </a>
+            </th>
+            <th
+              class="sc-fnykZs geZTSW"
+            >
+              <span
+                class="sc-gsnTZi fzWRHm api-docsstyles__Method-sc-4t6xyo-2 lesXHI"
+              >
+                POST
+              </span>
+            </th>
+            <th
+              class="sc-fnykZs geZTSW"
+            >
+              <span
+                class="sc-gsnTZi fzWRHm"
+              />
+            </th>
+            <th
+              class="sc-fnykZs geZTSW"
+            >
+              <span
+                class="sc-gsnTZi fzWRHm"
+              >
+                TODO
+              </span>
+            </th>
+            <th
+              class="sc-fnykZs geZTSW"
+            >
+              <span
+                class="sc-gsnTZi fzWRHm api-docsstyles__Description-sc-4t6xyo-1 cZtHBf"
+              >
+                TODO
+              </span>
+            </th>
+          </tr>
+          <tr
+            class="sc-hAZoDl"
+          >
+            <th
+              class="sc-fnykZs geZTSW"
+            >
+              <a
+                aria-label="/make-payment/resend-receipt (opens in a new tab)"
+                class="sc-papXJ ilnFdC"
+                href="https://www.georgegillams.co.uk/api/make-payment/resend-receipt"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                /make-payment/resend-receipt
+                <div
+                  class="sc-jqUVSM icGDYy"
+                >
+                  <svg
+                    class="sc-ftvSup bygzLL sc-kDDrLX kzKBSF"
+                    height="18"
+                    viewBox="0 0 24 24"
+                    width="18"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M12.5 11.3c.4.4 1 .4 1.4 0L19 6.2V9c0 .6.4 1 1 1s1-.4 1-1V4c0-.6-.4-1-1-1h-5c-.6 0-1 .4-1 1s.4 1 1 1h2.4l-4.9 4.9c-.4.4-.4 1 0 1.4zM19 19c0 1.1-.9 2-2 2H5c-1.1 0-2-.9-2-2V7c0-1.1.9-2 2-2h7v2H5v12h12v-7h2"
+                    />
+                  </svg>
+                </div>
+              </a>
+            </th>
+            <th
+              class="sc-fnykZs geZTSW"
+            >
+              <span
+                class="sc-gsnTZi fzWRHm api-docsstyles__Method-sc-4t6xyo-2 lesXHI"
+              >
+                POST
+              </span>
+            </th>
+            <th
+              class="sc-fnykZs geZTSW"
+            >
+              <span
+                class="sc-gsnTZi fzWRHm"
+              />
+            </th>
+            <th
+              class="sc-fnykZs geZTSW"
+            >
+              <span
+                class="sc-gsnTZi fzWRHm"
+              >
+                Admin only
+              </span>
+            </th>
+            <th
+              class="sc-fnykZs geZTSW"
+            >
+              <span
+                class="sc-gsnTZi fzWRHm api-docsstyles__Description-sc-4t6xyo-1 cZtHBf"
+              >
+                TODO
+              </span>
+            </th>
+          </tr>
+          <tr
+            class="sc-hAZoDl"
+          >
+            <th
+              class="sc-fnykZs geZTSW"
+            >
+              <a
+                aria-label="/payments/create (opens in a new tab)"
+                class="sc-papXJ ilnFdC"
+                href="https://www.georgegillams.co.uk/api/payments/create"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                /payments/create
+                <div
+                  class="sc-jqUVSM icGDYy"
+                >
+                  <svg
+                    class="sc-ftvSup bygzLL sc-kDDrLX kzKBSF"
+                    height="18"
+                    viewBox="0 0 24 24"
+                    width="18"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M12.5 11.3c.4.4 1 .4 1.4 0L19 6.2V9c0 .6.4 1 1 1s1-.4 1-1V4c0-.6-.4-1-1-1h-5c-.6 0-1 .4-1 1s.4 1 1 1h2.4l-4.9 4.9c-.4.4-.4 1 0 1.4zM19 19c0 1.1-.9 2-2 2H5c-1.1 0-2-.9-2-2V7c0-1.1.9-2 2-2h7v2H5v12h12v-7h2"
+                    />
+                  </svg>
+                </div>
+              </a>
+            </th>
+            <th
+              class="sc-fnykZs geZTSW"
+            >
+              <span
+                class="sc-gsnTZi fzWRHm api-docsstyles__Method-sc-4t6xyo-2 lesXHI"
+              >
+                POST
+              </span>
+            </th>
+            <th
+              class="sc-fnykZs geZTSW"
+            >
+              <span
+                class="sc-gsnTZi fzWRHm"
+              />
+            </th>
+            <th
+              class="sc-fnykZs geZTSW"
+            >
+              <span
+                class="sc-gsnTZi fzWRHm"
+              >
+                TODO
+              </span>
+            </th>
+            <th
+              class="sc-fnykZs geZTSW"
+            >
+              <span
+                class="sc-gsnTZi fzWRHm api-docsstyles__Description-sc-4t6xyo-1 cZtHBf"
+              >
+                TODO
+              </span>
+            </th>
+          </tr>
+          <tr
+            class="sc-hAZoDl"
+          >
+            <th
+              class="sc-fnykZs geZTSW"
+            >
+              <a
+                aria-label="/payments/delete (opens in a new tab)"
+                class="sc-papXJ ilnFdC"
+                href="https://www.georgegillams.co.uk/api/payments/delete"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                /payments/delete
+                <div
+                  class="sc-jqUVSM icGDYy"
+                >
+                  <svg
+                    class="sc-ftvSup bygzLL sc-kDDrLX kzKBSF"
+                    height="18"
+                    viewBox="0 0 24 24"
+                    width="18"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M12.5 11.3c.4.4 1 .4 1.4 0L19 6.2V9c0 .6.4 1 1 1s1-.4 1-1V4c0-.6-.4-1-1-1h-5c-.6 0-1 .4-1 1s.4 1 1 1h2.4l-4.9 4.9c-.4.4-.4 1 0 1.4zM19 19c0 1.1-.9 2-2 2H5c-1.1 0-2-.9-2-2V7c0-1.1.9-2 2-2h7v2H5v12h12v-7h2"
+                    />
+                  </svg>
+                </div>
+              </a>
+            </th>
+            <th
+              class="sc-fnykZs geZTSW"
+            >
+              <span
+                class="sc-gsnTZi fzWRHm api-docsstyles__Method-sc-4t6xyo-2 lesXHI"
+              >
+                POST
+              </span>
+            </th>
+            <th
+              class="sc-fnykZs geZTSW"
+            >
+              <span
+                class="sc-gsnTZi fzWRHm"
+              />
+            </th>
+            <th
+              class="sc-fnykZs geZTSW"
+            >
+              <span
+                class="sc-gsnTZi fzWRHm"
+              >
+                TODO
+              </span>
+            </th>
+            <th
+              class="sc-fnykZs geZTSW"
+            >
+              <span
+                class="sc-gsnTZi fzWRHm api-docsstyles__Description-sc-4t6xyo-1 cZtHBf"
+              >
+                TODO
+              </span>
+            </th>
+          </tr>
+          <tr
+            class="sc-hAZoDl"
+          >
+            <th
+              class="sc-fnykZs geZTSW"
+            >
+              <a
+                aria-label="/payments/load-all (opens in a new tab)"
+                class="sc-papXJ ilnFdC"
+                href="https://www.georgegillams.co.uk/api/payments/load-all"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                /payments/load-all
+                <div
+                  class="sc-jqUVSM icGDYy"
+                >
+                  <svg
+                    class="sc-ftvSup bygzLL sc-kDDrLX kzKBSF"
+                    height="18"
+                    viewBox="0 0 24 24"
+                    width="18"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M12.5 11.3c.4.4 1 .4 1.4 0L19 6.2V9c0 .6.4 1 1 1s1-.4 1-1V4c0-.6-.4-1-1-1h-5c-.6 0-1 .4-1 1s.4 1 1 1h2.4l-4.9 4.9c-.4.4-.4 1 0 1.4zM19 19c0 1.1-.9 2-2 2H5c-1.1 0-2-.9-2-2V7c0-1.1.9-2 2-2h7v2H5v12h12v-7h2"
+                    />
+                  </svg>
+                </div>
+              </a>
+            </th>
+            <th
+              class="sc-fnykZs geZTSW"
+            >
+              <span
+                class="sc-gsnTZi fzWRHm api-docsstyles__Method-sc-4t6xyo-2 lesXHI"
+              >
+                GET
+              </span>
+            </th>
+            <th
+              class="sc-fnykZs geZTSW"
+            >
+              <span
+                class="sc-gsnTZi fzWRHm"
+              />
+            </th>
+            <th
+              class="sc-fnykZs geZTSW"
+            >
+              <span
+                class="sc-gsnTZi fzWRHm"
+              >
+                TODO
+              </span>
+            </th>
+            <th
+              class="sc-fnykZs geZTSW"
+            >
+              <span
+                class="sc-gsnTZi fzWRHm api-docsstyles__Description-sc-4t6xyo-1 cZtHBf"
+              >
+                TODO
+              </span>
+            </th>
+          </tr>
+          <tr
+            class="sc-hAZoDl"
+          >
+            <th
+              class="sc-fnykZs geZTSW"
+            >
+              <a
+                aria-label="/support/create (opens in a new tab)"
+                class="sc-papXJ ilnFdC"
+                href="https://www.georgegillams.co.uk/api/support/create"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                /support/create
+                <div
+                  class="sc-jqUVSM icGDYy"
+                >
+                  <svg
+                    class="sc-ftvSup bygzLL sc-kDDrLX kzKBSF"
+                    height="18"
+                    viewBox="0 0 24 24"
+                    width="18"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M12.5 11.3c.4.4 1 .4 1.4 0L19 6.2V9c0 .6.4 1 1 1s1-.4 1-1V4c0-.6-.4-1-1-1h-5c-.6 0-1 .4-1 1s.4 1 1 1h2.4l-4.9 4.9c-.4.4-.4 1 0 1.4zM19 19c0 1.1-.9 2-2 2H5c-1.1 0-2-.9-2-2V7c0-1.1.9-2 2-2h7v2H5v12h12v-7h2"
+                    />
+                  </svg>
+                </div>
+              </a>
+            </th>
+            <th
+              class="sc-fnykZs geZTSW"
+            >
+              <span
+                class="sc-gsnTZi fzWRHm api-docsstyles__Method-sc-4t6xyo-2 lesXHI"
+              >
+                POST
+              </span>
+            </th>
+            <th
+              class="sc-fnykZs geZTSW"
+            >
+              <span
+                class="sc-gsnTZi fzWRHm"
+              />
+            </th>
+            <th
+              class="sc-fnykZs geZTSW"
+            >
+              <span
+                class="sc-gsnTZi fzWRHm"
+              >
+                Admin only
+              </span>
+            </th>
+            <th
+              class="sc-fnykZs geZTSW"
+            >
+              <span
+                class="sc-gsnTZi fzWRHm api-docsstyles__Description-sc-4t6xyo-1 cZtHBf"
+              >
+                TODO
+              </span>
+            </th>
+          </tr>
+          <tr
+            class="sc-hAZoDl"
+          >
+            <th
+              class="sc-fnykZs geZTSW"
+            >
+              <a
+                aria-label="/support/delete (opens in a new tab)"
+                class="sc-papXJ ilnFdC"
+                href="https://www.georgegillams.co.uk/api/support/delete"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                /support/delete
+                <div
+                  class="sc-jqUVSM icGDYy"
+                >
+                  <svg
+                    class="sc-ftvSup bygzLL sc-kDDrLX kzKBSF"
+                    height="18"
+                    viewBox="0 0 24 24"
+                    width="18"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M12.5 11.3c.4.4 1 .4 1.4 0L19 6.2V9c0 .6.4 1 1 1s1-.4 1-1V4c0-.6-.4-1-1-1h-5c-.6 0-1 .4-1 1s.4 1 1 1h2.4l-4.9 4.9c-.4.4-.4 1 0 1.4zM19 19c0 1.1-.9 2-2 2H5c-1.1 0-2-.9-2-2V7c0-1.1.9-2 2-2h7v2H5v12h12v-7h2"
+                    />
+                  </svg>
+                </div>
+              </a>
+            </th>
+            <th
+              class="sc-fnykZs geZTSW"
+            >
+              <span
+                class="sc-gsnTZi fzWRHm api-docsstyles__Method-sc-4t6xyo-2 lesXHI"
+              >
+                POST
+              </span>
+            </th>
+            <th
+              class="sc-fnykZs geZTSW"
+            >
+              <span
+                class="sc-gsnTZi fzWRHm"
+              />
+            </th>
+            <th
+              class="sc-fnykZs geZTSW"
+            >
+              <span
+                class="sc-gsnTZi fzWRHm"
+              >
+                Admin only
+              </span>
+            </th>
+            <th
+              class="sc-fnykZs geZTSW"
+            >
+              <span
+                class="sc-gsnTZi fzWRHm api-docsstyles__Description-sc-4t6xyo-1 cZtHBf"
+              >
+                TODO
+              </span>
+            </th>
+          </tr>
+          <tr
+            class="sc-hAZoDl"
+          >
+            <th
+              class="sc-fnykZs geZTSW"
+            >
+              <a
+                aria-label="/support/load (opens in a new tab)"
+                class="sc-papXJ ilnFdC"
+                href="https://www.georgegillams.co.uk/api/support/load"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                /support/load
+                <div
+                  class="sc-jqUVSM icGDYy"
+                >
+                  <svg
+                    class="sc-ftvSup bygzLL sc-kDDrLX kzKBSF"
+                    height="18"
+                    viewBox="0 0 24 24"
+                    width="18"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M12.5 11.3c.4.4 1 .4 1.4 0L19 6.2V9c0 .6.4 1 1 1s1-.4 1-1V4c0-.6-.4-1-1-1h-5c-.6 0-1 .4-1 1s.4 1 1 1h2.4l-4.9 4.9c-.4.4-.4 1 0 1.4zM19 19c0 1.1-.9 2-2 2H5c-1.1 0-2-.9-2-2V7c0-1.1.9-2 2-2h7v2H5v12h12v-7h2"
+                    />
+                  </svg>
+                </div>
+              </a>
+            </th>
+            <th
+              class="sc-fnykZs geZTSW"
+            >
+              <span
+                class="sc-gsnTZi fzWRHm api-docsstyles__Method-sc-4t6xyo-2 lesXHI"
+              >
+                GET
+              </span>
+            </th>
+            <th
+              class="sc-fnykZs geZTSW"
+            >
+              <span
+                class="sc-gsnTZi fzWRHm"
+              />
+            </th>
+            <th
+              class="sc-fnykZs geZTSW"
+            >
+              <span
+                class="sc-gsnTZi fzWRHm"
+              >
+                None
+              </span>
+            </th>
+            <th
+              class="sc-fnykZs geZTSW"
+            >
+              <span
+                class="sc-gsnTZi fzWRHm api-docsstyles__Description-sc-4t6xyo-1 cZtHBf"
+              >
+                TODO
+              </span>
+            </th>
+          </tr>
+          <tr
+            class="sc-hAZoDl"
+          >
+            <th
+              class="sc-fnykZs geZTSW"
+            >
+              <a
+                aria-label="/photo-showcase/load-all (opens in a new tab)"
+                class="sc-papXJ ilnFdC"
+                href="https://www.georgegillams.co.uk/api/photo-showcase/load-all"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                /photo-showcase/load-all
+                <div
+                  class="sc-jqUVSM icGDYy"
+                >
+                  <svg
+                    class="sc-ftvSup bygzLL sc-kDDrLX kzKBSF"
+                    height="18"
+                    viewBox="0 0 24 24"
+                    width="18"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M12.5 11.3c.4.4 1 .4 1.4 0L19 6.2V9c0 .6.4 1 1 1s1-.4 1-1V4c0-.6-.4-1-1-1h-5c-.6 0-1 .4-1 1s.4 1 1 1h2.4l-4.9 4.9c-.4.4-.4 1 0 1.4zM19 19c0 1.1-.9 2-2 2H5c-1.1 0-2-.9-2-2V7c0-1.1.9-2 2-2h7v2H5v12h12v-7h2"
+                    />
+                  </svg>
+                </div>
+              </a>
+            </th>
+            <th
+              class="sc-fnykZs geZTSW"
+            >
+              <span
+                class="sc-gsnTZi fzWRHm api-docsstyles__Method-sc-4t6xyo-2 lesXHI"
+              >
+                GET
+              </span>
+            </th>
+            <th
+              class="sc-fnykZs geZTSW"
+            >
+              <span
+                class="sc-gsnTZi fzWRHm"
+              />
+            </th>
+            <th
+              class="sc-fnykZs geZTSW"
+            >
+              <span
+                class="sc-gsnTZi fzWRHm"
+              >
+                None
+              </span>
+            </th>
+            <th
+              class="sc-fnykZs geZTSW"
+            >
+              <span
+                class="sc-gsnTZi fzWRHm api-docsstyles__Description-sc-4t6xyo-1 cZtHBf"
+              >
+                Load images from Flickr showcase album
+              </span>
+            </th>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
 </div>
 `;

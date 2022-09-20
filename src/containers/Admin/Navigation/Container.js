@@ -4,16 +4,13 @@ import PageTitle from 'components/common/PageTitle';
 import { DebugObject } from 'components/common/DebugObject';
 import LoadingCover from '@george-gillams/components/loading-cover';
 import { FEATURE_CARD_LAYOUTS } from '@george-gillams/components/feature-card';
-import FeatureCard from 'components/common/FeatureCard';
-import STYLES from './admin-navigation.scss';
-import { cssModules } from '@george-gillams/components/helpers/cssModules';
 import { setPostLoginRedirect } from 'client-utils/common/storageHelpers';
 
 import Skeleton from './Skeleton';
 
 import { AdminOnly } from 'components/common/Walls';
-
-const getClassName = cssModules(STYLES);
+import { CardContainer, StyledFeatureCard } from './admin-navigation.styles';
+import PageContainer from '@george-gillams/components/page-container';
 
 const AdminNavigation = props => {
   const {
@@ -30,58 +27,53 @@ const AdminNavigation = props => {
   }
 
   const page = (
-    <div className={outerClassNames.join(' ')}>
+    <PageContainer className={outerClassNames.join(' ')}>
       <AdminOnly
         user={user}
         setLoginRedirect={() => {
           setPostLoginRedirect('admin');
         }}>
         <PageTitle name="Admin">
-          <div className={getClassName('admin-navigation__card-container')}>
-            <FeatureCard
+          <CardContainer>
+            <StyledFeatureCard
               layout={FEATURE_CARD_LAYOUTS.narrowCompact}
               day={null}
               month={null}
-              className={getClassName('admin-navigation__card')}
               href="/debug"
               title="Debug"
             />
-            <FeatureCard
+            <StyledFeatureCard
               layout={FEATURE_CARD_LAYOUTS.narrowCompact}
               day={null}
               month={null}
-              className={getClassName('admin-navigation__card')}
               href="/admin/analytics"
               title="Analytics"
             />
-            <FeatureCard
+            <StyledFeatureCard
               layout={FEATURE_CARD_LAYOUTS.narrowCompact}
               day={null}
               month={null}
-              className={getClassName('admin-navigation__card')}
               href="/admin/emails"
               title="Emails"
             />
-            <FeatureCard
+            <StyledFeatureCard
               layout={FEATURE_CARD_LAYOUTS.narrowCompact}
               day={null}
               month={null}
-              className={getClassName('admin-navigation__card')}
               href="/admin/notifications"
               title="Notifications"
             />
-            <FeatureCard
+            <StyledFeatureCard
               layout={FEATURE_CARD_LAYOUTS.narrowCompact}
               day={null}
               month={null}
-              className={getClassName('admin-navigation__card')}
               href="/admin/users"
               title="Users"
             />
-          </div>
+          </CardContainer>
         </PageTitle>
       </AdminOnly>
-    </div>
+    </PageContainer>
   );
 
   return (

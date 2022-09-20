@@ -1,33 +1,31 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import Image from '@george-gillams/components/image';
-import STYLES from './sliding-phone.scss';
-import { cssModules } from '@george-gillams/components/helpers/cssModules';
-import { useEntryAnimationClientOnly } from '@george-gillams/components/server-side-rendering';
+import { StyledImage, Wrapper } from './sliding-phone.styles';
+import { JS_CLASSNAME } from '@george-gillams/components/js-feature-detector';
 
-const getClassName = cssModules(STYLES);
+const HIDDEN_CLASSNAME = `home__sliding-phone--hidden`;
 
 const SlidingPhone = props => {
-  const { show, className, lightSrc, darkSrc, imgProps, ...rest } = props;
-
-  const [isFirstRender, animationsEnabled] = useEntryAnimationClientOnly();
+  const { show, lightSrc, darkSrc, imgProps, ...rest } = props;
 
   return (
-    <div className={getClassName('sliding-phone__outer', className)} {...rest}>
-      <Image
-        className={getClassName(
-          'sliding-phone__image',
-          !isFirstRender && !show && 'sliding-phone__image--hide',
-          animationsEnabled && 'sliding-phone__image--animated'
-        )}
+    <Wrapper {...rest}>
+      <style>
+        {`.${JS_CLASSNAME} .${HIDDEN_CLASSNAME} {
+        top: 6rem;
+        opacity: 0;
+      }`}
+      </style>
+      <StyledImage
+        className={show ? '' : 'home__sliding-phone--hidden'}
         aspectX={1004}
         aspectY={1986}
         lightSrc={lightSrc}
         darkSrc={darkSrc}
         imgProps={imgProps}
       />
-    </div>
+    </Wrapper>
   );
 };
 

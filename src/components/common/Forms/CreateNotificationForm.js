@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import FormBuilder from '@george-gillams/components/form-builder';
 
 const CreateNotificationForm = props => {
-  const { className, notification, onDataChanged, onSubmit, submitLabel, ...rest } = props;
+  const { notification, onDataChanged, onSubmit, submitLabel, ...rest } = props;
 
   return (
     <FormBuilder
@@ -29,7 +29,6 @@ const CreateNotificationForm = props => {
         },
       ]}
       onSubmit={onSubmit}
-      className={className}
       test={process.env.NODE_ENV === 'test'}
       {...rest}
     />
@@ -41,12 +40,10 @@ CreateNotificationForm.propTypes = {
   notification: PropTypes.object.isRequired,
   onDataChanged: PropTypes.func.isRequired,
   onSubmit: PropTypes.func.isRequired,
-  className: PropTypes.string,
   submitLabel: PropTypes.string,
 };
 
 CreateNotificationForm.defaultProps = {
-  className: null,
   submitLabel: null,
 };
 
