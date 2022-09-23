@@ -1015,6 +1015,46 @@ exports[`<Medals /> should render correctly 1`] = `
               </a>
             </div>
           </div>
+          <div
+            class="sc-hAZoDl dvjESO"
+          >
+            <span
+              class="sc-eCYdqJ laHCpw sc-fnykZs bfJfNd"
+            >
+              Chiltern 50km Ultra Challenge
+            </span>
+            <span
+              class="sc-eCYdqJ iiRHQc sc-fEOsli jFZvgM"
+            >
+              2022
+            </span>
+            <div
+              class="sc-bjUoiL gZyZTu"
+            >
+              <a
+                class="sc-iBkjds inzsyM sc-idiyUo"
+                href="https://www.strava.com/activities/STRAVA_TODO"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                <svg
+                  class="sc-gKXOVf iNzqQR"
+                  height="18"
+                  viewBox="0 0 24 24"
+                  width="18"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M10.5714 1.2381L4.28571 13.5238H8L10.5714 8.66667L13.1429 13.5238H16.9524L10.5714 1.2381Z"
+                  />
+                  <path
+                    d="M15.0476 22.7619L10.381 13.5238H13.2381L15.0476 17.2381L16.9524 13.5238H19.7143L15.0476 22.7619Z"
+                    fill-opacity="0.5"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
         </div>
       </div>
     </div>
