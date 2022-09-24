@@ -97,7 +97,13 @@ const Medals = () => {
               year={2017}
               stravaLink="https://www.strava.com/activities/1019627751"
             />
-            {/* <EventPatch background="#0D492C" foreground="white" title="TODO" year={2022} stravaLink="TODO" /> */}
+            <EventPatch
+              background="#0D492C"
+              foreground="white"
+              title="Chiltern 50km Ultra Challenge"
+              year={2022}
+              stravaLink="https://www.strava.com/activities/7859623082"
+            />
           </StyledMedalShelf>
         </Subsection>
       </Section>
