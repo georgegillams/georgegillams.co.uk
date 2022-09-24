@@ -102,7 +102,7 @@ const Medals = () => {
               foreground="white"
               title="Chiltern 50km Ultra Challenge"
               year={2022}
-              stravaLink="https://www.strava.com/activities/STRAVA_TODO"
+              stravaLink="https://www.strava.com/activities/7859623082"
             />
           </StyledMedalShelf>
         </Subsection>
