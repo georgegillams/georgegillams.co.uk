@@ -73,6 +73,11 @@ const Medals = () => {
             <SpartanTrifectaDisplay wedges={[SPARTAN_EVENT_TYPE.sprint, SPARTAN_EVENT_TYPE.super]} year={2022} />
           </StyledMedalShelf>
         </Subsection>
+        <Subsection anchor={false} name="Other wedges">
+          <StyledMedalShelf>
+            <SpartanTrifectaDisplay wedges={[SPARTAN_EVENT_TYPE.obstacleSpecialistWorkshop, null, null]} />
+          </StyledMedalShelf>
+        </Subsection>
       </Section>
       <Section name="Runs">
         <Subsection>
