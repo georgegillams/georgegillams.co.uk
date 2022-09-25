@@ -1125,10 +1125,10 @@
     recompose "^0.30.0"
     youtube-embed-video "^1.2.1"
 
-"@george-gillams/components@^28.1.3":
-  version "28.1.3"
-  resolved "https://registry.yarnpkg.com/@george-gillams/components/-/components-28.1.3.tgz#04385e1ad7c010615c6c2d12b1fd249175be1061"
-  integrity sha512-ofoFUmteTPEQtK55ZqHrP6yu4b9TAAvLRooUFeHPrMO2zZFoIqDkfaYNcyASlfvYCMXkRF6YP2rNuQQd1+Z2QQ==
+"@george-gillams/components@^28.2.0":
+  version "28.2.0"
+  resolved "https://registry.yarnpkg.com/@george-gillams/components/-/components-28.2.0.tgz#dbce3b02b4e738eac6377565aed051b9e5f50b09"
+  integrity sha512-X+r6/CjwqUPSauOtepRJCABrne5aXSuk3r/8UWW5wHDH9XImhjjjz6xH/xKbtLatxPilzcqQZvQfsOM2sm25lw==
   dependencies:
     a11y-focus-scope "^1.1.3"
     date-fns "^2.28.0"

@@ -9,25 +9,25 @@ class MyDocument extends Document {
     const sheet = new ServerStyleSheet();
     const originalRenderPage = ctx.renderPage;
 
-    const page = (ctx.renderPage = () =>
-      originalRenderPage({
-        enhanceApp: App => props => sheet.collectStyles(<App {...props} />),
-      }));
-    const styleTags = sheet.getStyleElement();
+    try {
+      ctx.renderPage = () =>
+        originalRenderPage({
+          enhanceApp: App => props => sheet.collectStyles(<App {...props} />),
+        });
 
-    const initialProps = await Document.getInitialProps(ctx);
-
-    return {
-      styleTags,
-      ...initialProps,
-      styles: (
-        <>
-          {initialProps.styles}
-          {sheet.getStyleElement()}
-        </>
-      ),
-      ...page,
-    };
+      const initialProps = await Document.getInitialProps(ctx);
+      return {
+        ...initialProps,
+        styles: (
+          <>
+            {initialProps.styles}
+            {sheet.getStyleElement()}
+          </>
+        ),
+      };
+    } finally {
+      sheet.seal();
+    }
   }
 
   render() {
