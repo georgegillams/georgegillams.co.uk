@@ -28,7 +28,7 @@ const Contact = () => {
           }
           aux={
             <ImageIconContainer>
-              <IconImage src={formLogo} />
+              <IconImage invertInDarkMode src={formLogo} />
             </ImageIconContainer>
           }
         />

@@ -1,12 +1,12 @@
 import React from 'react';
 
-import Medals from 'containers/Medals';
+import Coffee from 'containers/Coffee';
 import CommonLayout from 'components/common/CommonLayout';
 
 const Page = props => {
   return (
     <CommonLayout>
-      <Medals {...props} />
+      <Coffee {...props} />
     </CommonLayout>
   );
 };
