@@ -69,7 +69,7 @@ const Medals = () => {
             <SpartanMedal
               type={SPARTAN_EVENT_TYPE.beast}
               year={2022}
-              stravaLink="https://www.strava.com/activities/TODOSTRAVAACTIVITYID"
+              stravaLink="https://www.strava.com/activities/7931592133"
             />
           </StyledMedalShelf>
         </Subsection>
