@@ -536,6 +536,15 @@ exports[`<SiteMap /> should render correctly - index 1`] = `
         <div>
           <a
             class="sc-jqUVSM gnmJsf"
+            href="/spartan"
+          >
+            /spartan ⇒ https://uk.spartan.com/en/race/profile/3661120
+          </a>
+          <br />
+        </div>
+        <div>
+          <a
+            class="sc-jqUVSM gnmJsf"
             href="/wp-admin"
           >
             /wp-admin ⇒ /admin
@@ -1282,6 +1291,15 @@ exports[`<SiteMap /> should render correctly 1`] = `
         <div>
           <a
             class="sc-jqUVSM gnmJsf"
+            href="/spartan"
+          >
+            /spartan ⇒ https://uk.spartan.com/en/race/profile/3661120
+          </a>
+          <br />
+        </div>
+        <div>
+          <a
+            class="sc-jqUVSM gnmJsf"
             href="/wp-admin"
           >
             /wp-admin ⇒ /admin
@@ -1981,6 +1999,15 @@ exports[`<SiteMap /> should render correctly with blogs 1`] = `
             href="/twitter"
           >
             /twitter ⇒ https://twitter.com/georgegillams
+          </a>
+          <br />
+        </div>
+        <div>
+          <a
+            class="sc-jqUVSM gnmJsf"
+            href="/spartan"
+          >
+            /spartan ⇒ https://uk.spartan.com/en/race/profile/3661120
           </a>
           <br />
         </div>
@@ -2735,6 +2762,15 @@ exports[`<SiteMap /> should render correctly with blogs and admin user 1`] = `
         <div>
           <a
             class="sc-jqUVSM gnmJsf"
+            href="/spartan"
+          >
+            /spartan ⇒ https://uk.spartan.com/en/race/profile/3661120
+          </a>
+          <br />
+        </div>
+        <div>
+          <a
+            class="sc-jqUVSM gnmJsf"
             href="/wp-admin"
           >
             /wp-admin ⇒ /admin
@@ -3434,6 +3470,15 @@ exports[`<SiteMap /> should render correctly with ssrBlogs 1`] = `
             href="/twitter"
           >
             /twitter ⇒ https://twitter.com/georgegillams
+          </a>
+          <br />
+        </div>
+        <div>
+          <a
+            class="sc-jqUVSM gnmJsf"
+            href="/spartan"
+          >
+            /spartan ⇒ https://uk.spartan.com/en/race/profile/3661120
           </a>
           <br />
         </div>
