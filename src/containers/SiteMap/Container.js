@@ -94,6 +94,8 @@ const SiteMap = props => {
             <br />
             <TextLink href="/work/backpack">Backpack</TextLink>
             <br />
+            <TextLink href="/work/side-projects">Side projects</TextLink>
+            <br />
             <TextLink href="/work/degree">Degree</TextLink>
             <br />
             <TextLink href="/work/epicc">EPICC</TextLink>
@@ -113,6 +115,8 @@ const SiteMap = props => {
             <TextLink href="/debug">Debug tools</TextLink>
             <br />
             <TextLink href="/status">Status</TextLink>
+            <br />
+            <TextLink href="/coffee">Coffee</TextLink>
           </Paragraph>
         </StyledSubsection>
         <StyledSubsection anchor={false} name="Random 🐉">

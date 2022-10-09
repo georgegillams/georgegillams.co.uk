@@ -82,7 +82,7 @@ const Contact = () => {
           }
           aux={
             <ImageIconContainer>
-              <IconImage src={emailLogo} />
+              <IconImage invertInDarkMode src={emailLogo} />
             </ImageIconContainer>
           }
         />

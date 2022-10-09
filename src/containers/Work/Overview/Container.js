@@ -11,6 +11,19 @@ import { StyledButton } from './work-overview.styles';
 const Work = () => (
   <PageContainer width={WIDTHS.prose} bottomPadding>
     <PageTitle name="Work">
+      <Subsection name="Typeform">
+        <Paragraph>
+          <TextLink hrefExternal href="https://backpack.github.io/">
+            Backpack
+          </TextLink>{' '}
+          is Skyscanner&#39;s open-source design system which supports 4 platforms (Android, iOS, React Native and Web).
+          I spent 4 years working on the Web and native iOS offering, combining Design and Engineering in equal measures
+          enables fast development and reduce effort duplication.
+        </Paragraph>
+        <br />
+        <StyledButton href="/work/backpack">My work in Backpack →</StyledButton>
+      </Subsection>
+
       <Subsection name="Skyscanner">
         <Paragraph>
           <TextLink hrefExternal href="https://backpack.github.io/">
@@ -22,6 +35,10 @@ const Work = () => (
         </Paragraph>
         <br />
         <StyledButton href="/work/backpack">My work in Backpack →</StyledButton>
+      </Subsection>
+
+      <Subsection name="Side projects">
+        <StyledButton href="/work/side-projects">View my side projects →</StyledButton>
       </Subsection>
 
       <Subsection name="Software Engineering Masters">
