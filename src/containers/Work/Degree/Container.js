@@ -10,8 +10,12 @@ import SouthamptonUniLogo from './southampton.svg';
 
 import Subsection from '@george-gillams/components/subsection';
 import PageContainer, { WIDTHS } from 'components/common/PageContainer';
+import { withScrollAnimation } from '@george-gillams/components/effects';
 
 const FINAL_DEGREE_PERCENTAGE = 68;
+
+const SectionWithScroll = withScrollAnimation(Section);
+const SubsectionWithScroll = withScrollAnimation(Subsection);
 
 const Degree = props => {
   const [filling, setFilling] = useState(false);
@@ -97,7 +101,7 @@ const Degree = props => {
           lightSrc={SouthamptonUniLogo}
           darkSrc={SouthamptonUniLogo}
         />
-        <Section name="Summary">
+        <SectionWithScroll name="Summary">
           <Paragraph>4 year integrated Masters of Engineering (2013 - 2015, 2016 - 2018)</Paragraph>
           <StyledDegreeModule name="Final percentage" percentage={FINAL_DEGREE_PERCENTAGE} filled={filled[0]} />
           <Paragraph>
@@ -114,9 +118,9 @@ const Degree = props => {
               Degree information (archived){' '}
             </TextLink>
           </Paragraph>
-        </Section>
-        <Section name="Breakdown">
-          <Subsection name="Year 1">
+        </SectionWithScroll>
+        <SectionWithScroll name="Breakdown">
+          <SubsectionWithScroll name="Year 1">
             <StyledDegreeModule
               markerPosition={FINAL_DEGREE_PERCENTAGE}
               name="Algorithmics"
@@ -165,8 +169,8 @@ const Degree = props => {
               percentage={60}
               filled={filled[8]}
             />
-          </Subsection>
-          <Subsection name="Year 2">
+          </SubsectionWithScroll>
+          <SubsectionWithScroll name="Year 2">
             <StyledDegreeModule
               markerPosition={FINAL_DEGREE_PERCENTAGE}
               name="Distributed Systems"
@@ -215,8 +219,8 @@ const Degree = props => {
               percentage={60}
               filled={filled[16]}
             />
-          </Subsection>
-          <Subsection name="Year 3">
+          </SubsectionWithScroll>
+          <SubsectionWithScroll name="Year 3">
             <StyledDegreeModule
               markerPosition={FINAL_DEGREE_PERCENTAGE}
               name="Dissertation Project"
@@ -253,8 +257,8 @@ const Degree = props => {
               percentage={62}
               filled={filled[22]}
             />
-          </Subsection>
-          <Subsection name="Year 4">
+          </SubsectionWithScroll>
+          <SubsectionWithScroll name="Year 4">
             <StyledDegreeModule
               markerPosition={FINAL_DEGREE_PERCENTAGE}
               name="Group Design Project"
@@ -291,8 +295,8 @@ const Degree = props => {
               percentage={62}
               filled={filled[28]}
             />
-          </Subsection>
-        </Section>
+          </SubsectionWithScroll>
+        </SectionWithScroll>
       </PageTitle>
     </PageContainer>
   );

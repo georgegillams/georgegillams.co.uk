@@ -3,6 +3,9 @@ import PropTypes from 'prop-types';
 
 import Footer from 'components/footer2';
 import { StyledMainWrapper } from './common-layout.styles';
+import { withScrollAnimation, ANIMATIONS } from '@george-gillams/components/effects';
+
+const FooterWithScroll = withScrollAnimation(Footer, { animation: ANIMATIONS.fade });
 
 const CommonLayout = props => {
   const { children, ...rest } = props;
@@ -10,7 +13,7 @@ const CommonLayout = props => {
   return (
     <>
       <StyledMainWrapper {...rest}>{children}</StyledMainWrapper>
-      <Footer />
+      <FooterWithScroll />
     </>
   );
 };

@@ -4,6 +4,7 @@ import PropTypes from 'prop-types';
 import PageContainer from 'components/common/PageContainer';
 import PageTitle from 'components/common/PageTitle';
 import { StyledAboutSection, StyledLifeSection, StyledPhotoSection, StyledWorkSection } from './home.styles';
+import { ScrollAnimationWrapper } from '@george-gillams/components/effects';
 
 const getClassName = c => c;
 
@@ -13,10 +14,16 @@ const HomePage = props => {
   return (
     <PageContainer centred>
       <PageTitle name="Hey! I'm George." pageTitle="Home" className={getClassName('home__title-section')} {...rest}>
-        <StyledWorkSection />
-        <StyledLifeSection />
+        <ScrollAnimationWrapper>
+          <StyledWorkSection />
+        </ScrollAnimationWrapper>
+        <ScrollAnimationWrapper>
+          <StyledLifeSection />
+        </ScrollAnimationWrapper>
         <StyledPhotoSection />
-        <StyledAboutSection />
+        <ScrollAnimationWrapper>
+          <StyledAboutSection />
+        </ScrollAnimationWrapper>
       </PageTitle>
     </PageContainer>
   );

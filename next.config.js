@@ -15,6 +15,9 @@ const nextConfig = {
     PROJECT_UNDER_TEST: process.env.PROJECT_UNDER_TEST,
     HOST: process.env.HOST,
   },
+  compiler: {
+    styledComponents: true,
+  },
 };
 
 const withTM = nextTranspileModules(['@george-gillams/components']);

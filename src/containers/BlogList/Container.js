@@ -10,6 +10,9 @@ import { BlogsList } from 'components/Blogs';
 import Head from 'next/head';
 import appConfig from 'helpers/appConfig';
 import { StyledPageContainer } from './container.styles';
+import { ANIMATIONS, ScrollAnimationWrapper, withScrollAnimation } from '@george-gillams/components/effects';
+
+const CreativeCommonsWithScroll = withScrollAnimation(CreativeCommons, { animation: ANIMATIONS.fade });
 
 const BlogList = props => {
   const { ssrBlogs, loadBlogs, deleteBlog, filter, authenticatorState, blogListState, linkPrefix } = props;
@@ -47,17 +50,19 @@ const BlogList = props => {
           error={!!blogListState.blogsLoadError}>
           <>
             {filteredBlogs && (
-              <BlogsList
-                admin={admin}
-                blogs={filteredBlogs}
-                linkPrefix={linkPrefix}
-                deleteBlog={admin ? deleteBlog : null}
-              />
+              <ScrollAnimationWrapper>
+                <BlogsList
+                  admin={admin}
+                  blogs={filteredBlogs}
+                  linkPrefix={linkPrefix}
+                  deleteBlog={admin ? deleteBlog : null}
+                />
+              </ScrollAnimationWrapper>
             )}
           </>
         </LoadingCover>
       </StyledPageContainer>
-      <CreativeCommons />
+      <CreativeCommonsWithScroll />
     </>
   );
 };

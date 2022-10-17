@@ -10,11 +10,15 @@ import darkMode from './images/darkMode.png';
 import brandLight from './images/brandLight.png';
 import brandDark from './images/brandDark.png';
 import PageContainer, { WIDTHS } from 'components/common/PageContainer';
+import { withScrollAnimation } from '@george-gillams/components/effects';
+
+const SubsectionWithScroll = withScrollAnimation(Subsection);
+const ParagraphWithScroll = withScrollAnimation(Paragraph);
 
 const WorkBackpack = () => (
   <PageContainer width={WIDTHS.prose} bottomPadding>
     <PageTitle link={{ to: '/work', text: 'Work' }} name="Backpack">
-      <Paragraph>
+      <ParagraphWithScroll>
         <TextLink hrefExternal href="https://backpack.github.io/">
           Backpack
         </TextLink>{' '}
@@ -39,8 +43,8 @@ const WorkBackpack = () => (
           lightSrc={backpackOfferingLight}
           darkSrc={backpackOfferingDark}
         />
-      </Paragraph>
-      <Subsection name="Brand refresh">
+      </ParagraphWithScroll>
+      <SubsectionWithScroll name="Brand refresh">
         <Paragraph>
           A highlight has been delivering Skyscanner’s new brand across all our products, leveraging the coverage of
           Backpack libraries to enable seamless experimentation and roll-out across the entire ecosystem. We made use of
@@ -68,8 +72,8 @@ const WorkBackpack = () => (
           lightSrc={brandLight}
           darkSrc={brandDark}
         />
-      </Subsection>
-      <Subsection name="Dark mode">
+      </SubsectionWithScroll>
+      <SubsectionWithScroll name="Dark mode">
         <Paragraph>
           Leveraging some of the same techniques used to deliver the new brand, we recently rolled out Dark Mode support
           across iOS, Android and React Native. It was great to deliver such an important traveller-first feature as
@@ -90,7 +94,7 @@ const WorkBackpack = () => (
           lightSrc={darkMode}
           darkSrc={darkMode}
         />
-      </Subsection>
+      </SubsectionWithScroll>
     </PageTitle>
   </PageContainer>
 );

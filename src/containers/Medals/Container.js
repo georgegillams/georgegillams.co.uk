@@ -10,12 +10,14 @@ import SpartanMedal, { EVENT_TYPE as SPARTAN_EVENT_TYPE } from '@george-gillams/
 import SpartanTrifectaDisplay from '@george-gillams/components/spartan-trifecta-display';
 import { StyledMedalShelf } from './container.styles';
 import { notBlack } from '@george-gillams/components/constants/colors';
+import { withScrollAnimation } from '@george-gillams/components/effects';
+const SectionWithScroll = withScrollAnimation(Section);
 
 const Medals = () => {
   return (
     <PageContainer bottomPadding>
       <PageTitle anchor={false} name="Medals"></PageTitle>
-      <Section name="Tough Mudder">
+      <SectionWithScroll name="Tough Mudder">
         <Subsection>
           <StyledMedalShelf>
             <ToughMudderPatch
@@ -52,8 +54,8 @@ const Medals = () => {
             <ToughMudderPatch type={TM_PATCH_TYPE.legionnaire456} />
           </StyledMedalShelf>
         </Subsection>
-      </Section>
-      <Section name="Spartan">
+      </SectionWithScroll>
+      <SectionWithScroll name="Spartan">
         <Subsection>
           <StyledMedalShelf>
             <SpartanMedal
@@ -86,8 +88,8 @@ const Medals = () => {
             <SpartanTrifectaDisplay wedges={[SPARTAN_EVENT_TYPE.obstacleSpecialistWorkshop, null, null]} />
           </StyledMedalShelf>
         </Subsection>
-      </Section>
-      <Section name="Runs">
+      </SectionWithScroll>
+      <SectionWithScroll name="Runs">
         <Subsection>
           <StyledMedalShelf>
             <EventPatch
@@ -99,8 +101,8 @@ const Medals = () => {
             />
           </StyledMedalShelf>
         </Subsection>
-      </Section>
-      <Section name="Treks">
+      </SectionWithScroll>
+      <SectionWithScroll name="Treks">
         <Subsection>
           <StyledMedalShelf>
             <EventPatch
@@ -119,7 +121,7 @@ const Medals = () => {
             />
           </StyledMedalShelf>
         </Subsection>
-      </Section>
+      </SectionWithScroll>
     </PageContainer>
   );
 };

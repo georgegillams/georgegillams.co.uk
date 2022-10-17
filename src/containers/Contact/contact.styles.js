@@ -3,8 +3,9 @@ import styled, { css } from 'styled-components';
 import InfoCell from '@george-gillams/components/info-cell';
 import { spacingBase } from '@george-gillams/components/constants/layout';
 import withScroll from '@george-gillams/components/scroll-container/with-scroll';
+import { ANIMATIONS, withScrollAnimation } from '@george-gillams/components/effects';
 
-const InfoCellWithScroll = withScroll(InfoCell);
+const InfoCellWithScroll = withScrollAnimation(withScroll(InfoCell), { animation: ANIMATIONS.fade });
 
 export const ImageIconContainer = styled.div`
   display: flex;
@@ -25,10 +26,10 @@ export const IconImage = styled.img`
     `}
 `;
 
+export const Spacer = styled.div`
+  height: ${spacingBase};
+`;
+
 export const StyledInfoCellWithScroll = styled(InfoCellWithScroll)`
   width: 100%;
-
-  &:first-of-type {
-    margin-top: ${spacingBase};
-  }
 `;
