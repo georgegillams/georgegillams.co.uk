@@ -6,25 +6,42 @@ exports[`<NotFound /> should render correctly 1`] = `
     class="sc-bczRLJ eVJKhe page-containerstyles__StyledPageContainer-sc-19l7k4-0"
     width="default"
   >
-    <h1
-      class="sc-dkzDqf grUNba sc-iqcoie fulViU"
+    <div
+      class="sc-hAZoDl gTuHKu"
     >
-      Oops.
-    </h1>
-    <span
-      class="sc-gsnTZi bUAnoQ"
-    >
-      The page you're looking for doesn't exist, or you don't have permission to view it.
-      <br />
-      Maybe the 
-      <a
-        class="sc-papXJ ilnFdC"
-        href="/sitemap"
+      <h1
+        class="sc-dkzDqf grUNba sc-iqcoie fulViU"
       >
-        site map
-      </a>
-       can help
-    </span>
+        Oops.
+      </h1>
+    </div>
+    <div
+      class="sc-breuTD bTEPBS"
+    >
+      <style>
+        .js .animated-content__wrapper--hidden {
+  opacity: 0.01;
+}
+      </style>
+      <div
+        class="sc-evZas ggWrhg animated-content__wrapper--hidden"
+      >
+        <span
+          class="sc-gsnTZi bUAnoQ"
+        >
+          The page you're looking for doesn't exist, or you don't have permission to view it.
+          <br />
+          Maybe the 
+          <a
+            class="sc-papXJ ilnFdC"
+            href="/sitemap"
+          >
+            site map
+          </a>
+           can help
+        </span>
+      </div>
+    </div>
   </div>
 </div>
 `;

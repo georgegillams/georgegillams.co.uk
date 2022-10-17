@@ -3,86 +3,103 @@
 exports[`<Debug /> should render correctly 1`] = `
 <div>
   <div
-    class="sc-fnykZs cNMYuP page-containerstyles__StyledPageContainer-sc-19l7k4-0"
+    class="sc-dIouRR czvkEL page-containerstyles__StyledPageContainer-sc-19l7k4-0"
     width="default"
   >
-    <h1
-      class="sc-iBkjds nWKoN sc-ksZaOG UTWGT"
-    >
-      Debug
-    </h1>
     <div
-      class="stackstyles__StyledVStack-sc-1m733wj-0 dejFMJ"
+      class="sc-idiyUo gZOHEF"
     >
-      <label
-        class="sc-gsnTZi iqncvO"
+      <h1
+        class="sc-iBkjds nWKoN sc-ksZaOG UTWGT"
+      >
+        Debug
+      </h1>
+    </div>
+    <div
+      class="sc-fEOsli fyeKZw"
+    >
+      <style>
+        .js .animated-content__wrapper--hidden {
+  opacity: 0.01;
+}
+      </style>
+      <div
+        class="sc-fnykZs euASMs animated-content__wrapper--hidden"
       >
         <div
-          class="sc-dkzDqf fOErMa"
+          class="stackstyles__StyledVStack-sc-1m733wj-0 dejFMJ"
         >
-          <input
-            aria-invalid="false"
-            aria-label="Show session debug views"
-            class="sc-hKMtZM iCuKLE"
-            name="Show session debug views"
-            type="checkbox"
-          />
-          <svg
-            class="sc-bczRLJ jmoFDq sc-eCYdqJ drZDAv"
-            height="18"
-            viewBox="0 0 24 24"
-            width="18"
-            xmlns="http://www.w3.org/2000/svg"
+          <label
+            class="sc-gsnTZi iqncvO"
           >
-            <path
-              d="M9.4 20c-.5 0-.9-.2-1.3-.5l-5.8-5.1c-.4-.4-.5-1-.1-1.4l1.3-1.5c.4-.4 1-.5 1.4-.1l4 3.5c.2.1.4.1.6 0l9.2-10.5c.4-.4 1-.5 1.4-.1l1.5 1.3c.4.4.5 1 .1 1.4L10.9 19.3c-.4.5-.9.7-1.5.7z"
-            />
-          </svg>
-        </div>
-        <div
-          aria-hidden="true"
-          class="sc-jSMfEi iURcBj"
-        >
-          Show session debug views
-        </div>
-      </label>
-      <label
-        class="sc-gsnTZi iqncvO"
-      >
-        <div
-          class="sc-dkzDqf fOErMa"
-        >
-          <input
-            aria-invalid="false"
-            aria-label="Show page container debug colours"
-            class="sc-hKMtZM iCuKLE"
-            name="Show page container debug colours"
-            type="checkbox"
-          />
-          <svg
-            class="sc-bczRLJ jmoFDq sc-eCYdqJ drZDAv"
-            height="18"
-            viewBox="0 0 24 24"
-            width="18"
-            xmlns="http://www.w3.org/2000/svg"
+            <div
+              class="sc-dkzDqf fOErMa"
+            >
+              <input
+                aria-invalid="false"
+                aria-label="Show session debug views"
+                class="sc-hKMtZM iCuKLE"
+                name="Show session debug views"
+                type="checkbox"
+              />
+              <svg
+                class="sc-bczRLJ jmoFDq sc-eCYdqJ drZDAv"
+                height="18"
+                viewBox="0 0 24 24"
+                width="18"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M9.4 20c-.5 0-.9-.2-1.3-.5l-5.8-5.1c-.4-.4-.5-1-.1-1.4l1.3-1.5c.4-.4 1-.5 1.4-.1l4 3.5c.2.1.4.1.6 0l9.2-10.5c.4-.4 1-.5 1.4-.1l1.5 1.3c.4.4.5 1 .1 1.4L10.9 19.3c-.4.5-.9.7-1.5.7z"
+                />
+              </svg>
+            </div>
+            <div
+              aria-hidden="true"
+              class="sc-jSMfEi iURcBj"
+            >
+              Show session debug views
+            </div>
+          </label>
+          <label
+            class="sc-gsnTZi iqncvO"
           >
-            <path
-              d="M9.4 20c-.5 0-.9-.2-1.3-.5l-5.8-5.1c-.4-.4-.5-1-.1-1.4l1.3-1.5c.4-.4 1-.5 1.4-.1l4 3.5c.2.1.4.1.6 0l9.2-10.5c.4-.4 1-.5 1.4-.1l1.5 1.3c.4.4.5 1 .1 1.4L10.9 19.3c-.4.5-.9.7-1.5.7z"
-            />
-          </svg>
+            <div
+              class="sc-dkzDqf fOErMa"
+            >
+              <input
+                aria-invalid="false"
+                aria-label="Show page container debug colours"
+                class="sc-hKMtZM iCuKLE"
+                name="Show page container debug colours"
+                type="checkbox"
+              />
+              <svg
+                class="sc-bczRLJ jmoFDq sc-eCYdqJ drZDAv"
+                height="18"
+                viewBox="0 0 24 24"
+                width="18"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M9.4 20c-.5 0-.9-.2-1.3-.5l-5.8-5.1c-.4-.4-.5-1-.1-1.4l1.3-1.5c.4-.4 1-.5 1.4-.1l4 3.5c.2.1.4.1.6 0l9.2-10.5c.4-.4 1-.5 1.4-.1l1.5 1.3c.4.4.5 1 .1 1.4L10.9 19.3c-.4.5-.9.7-1.5.7z"
+                />
+              </svg>
+            </div>
+            <div
+              aria-hidden="true"
+              class="sc-jSMfEi iURcBj"
+            >
+              Show page container debug colours
+            </div>
+          </label>
+          <span
+            class="sc-gKXOVf dVduRi"
+          >
+            Note that changes will not take effect until you reload the page.
+          </span>
         </div>
-        <div
-          aria-hidden="true"
-          class="sc-jSMfEi iURcBj"
-        >
-          Show page container debug colours
-        </div>
-      </label>
-      <span
-        class="sc-gKXOVf dVduRi"
-      >
-        Note that changes will not take effect until you reload the page.
-      </span>
+      </div>
     </div>
   </div>
 </div>

@@ -63,7 +63,7 @@ const LifeSection = props => {
       <Content>
         <Section name="Life">
           <StyledParagraph>
-            I love travel and photography, and occasionally write other stuff.
+            I love travel, photography, and obstacle course racing.
             <br />
             <TextLink href="/blog">Blog</TextLink>
             <br />

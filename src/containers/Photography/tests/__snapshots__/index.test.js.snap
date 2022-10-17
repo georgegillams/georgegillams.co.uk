@@ -3,161 +3,206 @@
 exports[`<Photography /> should render correctly - index 1`] = `
 <div>
   <div
-    class="sc-hAZoDl coNVZF page-containerstyles__StyledPageContainer-sc-19l7k4-0"
+    class="sc-idiyUo kVkjUW page-containerstyles__StyledPageContainer-sc-19l7k4-0"
     width="default"
   >
-    <h1
-      class="sc-bczRLJ hDLBIv sc-jqUVSM cFomsy"
-    >
-      Photography
-    </h1>
     <div
-      class="photographystyles__LinkContainer-sc-a0s7o0-0 hrlZUz"
+      class="sc-breuTD gWTOEy"
     >
-      <a
-        aria-label="Find me on Flickr (opens in a new tab)"
-        class="sc-iBkjds JLudk"
-        href="https://www.flickr.com/people/georgegillams/"
-        rel="noopener noreferrer"
-        target="_blank"
+      <h1
+        class="sc-bczRLJ hDLBIv sc-jqUVSM cFomsy"
       >
-        Find me on Flickr
-        <div
-          class="sc-ftvSup kUuEWK"
-        >
-          <svg
-            class="sc-gKXOVf ktoyia sc-papXJ fmVkXn"
-            height="18"
-            viewBox="0 0 24 24"
-            width="18"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M12.5 11.3c.4.4 1 .4 1.4 0L19 6.2V9c0 .6.4 1 1 1s1-.4 1-1V4c0-.6-.4-1-1-1h-5c-.6 0-1 .4-1 1s.4 1 1 1h2.4l-4.9 4.9c-.4.4-.4 1 0 1.4zM19 19c0 1.1-.9 2-2 2H5c-1.1 0-2-.9-2-2V7c0-1.1.9-2 2-2h7v2H5v12h12v-7h2"
-            />
-          </svg>
-        </div>
-      </a>
-      <a
-        aria-label="Find me on Unsplash (opens in a new tab)"
-        class="sc-iBkjds JLudk"
-        href="https://unsplash.com/@georgegillams"
-        rel="noopener noreferrer"
-        target="_blank"
-      >
-        Find me on Unsplash
-        <div
-          class="sc-ftvSup kUuEWK"
-        >
-          <svg
-            class="sc-gKXOVf ktoyia sc-papXJ fmVkXn"
-            height="18"
-            viewBox="0 0 24 24"
-            width="18"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M12.5 11.3c.4.4 1 .4 1.4 0L19 6.2V9c0 .6.4 1 1 1s1-.4 1-1V4c0-.6-.4-1-1-1h-5c-.6 0-1 .4-1 1s.4 1 1 1h2.4l-4.9 4.9c-.4.4-.4 1 0 1.4zM19 19c0 1.1-.9 2-2 2H5c-1.1 0-2-.9-2-2V7c0-1.1.9-2 2-2h7v2H5v12h12v-7h2"
-            />
-          </svg>
-        </div>
-      </a>
-      <a
-        aria-label="Find me on GuruShots (opens in a new tab)"
-        class="sc-iBkjds JLudk"
-        href="https://gurushots.com/georgegillams/achievements"
-        rel="noopener noreferrer"
-        target="_blank"
-      >
-        Find me on GuruShots
-        <div
-          class="sc-ftvSup kUuEWK"
-        >
-          <svg
-            class="sc-gKXOVf ktoyia sc-papXJ fmVkXn"
-            height="18"
-            viewBox="0 0 24 24"
-            width="18"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M12.5 11.3c.4.4 1 .4 1.4 0L19 6.2V9c0 .6.4 1 1 1s1-.4 1-1V4c0-.6-.4-1-1-1h-5c-.6 0-1 .4-1 1s.4 1 1 1h2.4l-4.9 4.9c-.4.4-.4 1 0 1.4zM19 19c0 1.1-.9 2-2 2H5c-1.1 0-2-.9-2-2V7c0-1.1.9-2 2-2h7v2H5v12h12v-7h2"
-            />
-          </svg>
-        </div>
-      </a>
-      <a
-        class="sc-iBkjds JLudk"
-        href="/contact"
-      >
-        Contact me about photography work
-      </a>
+        Photography
+      </h1>
     </div>
     <div
-      class="sc-fnykZs bVJbtJ"
-      style="width: 100%;"
+      class="sc-crXcEl jVCfod"
     >
+      <style>
+        .js .animated-content__wrapper--hidden {
+  padding-top: 4rem;
+  opacity: 0.01;
+}
+      </style>
       <div
-        class="sc-fEOsli jwVbEY"
-        style="margin-left: -0px;"
-      />
+        class="sc-iqcoie eeqyer animated-content__wrapper--hidden"
+      >
+        <div
+          class="photographystyles__LinkContainer-sc-a0s7o0-0 hrlZUz"
+        >
+          <a
+            aria-label="Find me on Flickr (opens in a new tab)"
+            class="sc-iBkjds JLudk"
+            href="https://www.flickr.com/people/georgegillams/"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            Find me on Flickr
+            <div
+              class="sc-ftvSup kUuEWK"
+            >
+              <svg
+                class="sc-gKXOVf ktoyia sc-papXJ fmVkXn"
+                height="18"
+                viewBox="0 0 24 24"
+                width="18"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M12.5 11.3c.4.4 1 .4 1.4 0L19 6.2V9c0 .6.4 1 1 1s1-.4 1-1V4c0-.6-.4-1-1-1h-5c-.6 0-1 .4-1 1s.4 1 1 1h2.4l-4.9 4.9c-.4.4-.4 1 0 1.4zM19 19c0 1.1-.9 2-2 2H5c-1.1 0-2-.9-2-2V7c0-1.1.9-2 2-2h7v2H5v12h12v-7h2"
+                />
+              </svg>
+            </div>
+          </a>
+          <a
+            aria-label="Find me on Unsplash (opens in a new tab)"
+            class="sc-iBkjds JLudk"
+            href="https://unsplash.com/@georgegillams"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            Find me on Unsplash
+            <div
+              class="sc-ftvSup kUuEWK"
+            >
+              <svg
+                class="sc-gKXOVf ktoyia sc-papXJ fmVkXn"
+                height="18"
+                viewBox="0 0 24 24"
+                width="18"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M12.5 11.3c.4.4 1 .4 1.4 0L19 6.2V9c0 .6.4 1 1 1s1-.4 1-1V4c0-.6-.4-1-1-1h-5c-.6 0-1 .4-1 1s.4 1 1 1h2.4l-4.9 4.9c-.4.4-.4 1 0 1.4zM19 19c0 1.1-.9 2-2 2H5c-1.1 0-2-.9-2-2V7c0-1.1.9-2 2-2h7v2H5v12h12v-7h2"
+                />
+              </svg>
+            </div>
+          </a>
+          <a
+            aria-label="Find me on GuruShots (opens in a new tab)"
+            class="sc-iBkjds JLudk"
+            href="https://gurushots.com/georgegillams/achievements"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            Find me on GuruShots
+            <div
+              class="sc-ftvSup kUuEWK"
+            >
+              <svg
+                class="sc-gKXOVf ktoyia sc-papXJ fmVkXn"
+                height="18"
+                viewBox="0 0 24 24"
+                width="18"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M12.5 11.3c.4.4 1 .4 1.4 0L19 6.2V9c0 .6.4 1 1 1s1-.4 1-1V4c0-.6-.4-1-1-1h-5c-.6 0-1 .4-1 1s.4 1 1 1h2.4l-4.9 4.9c-.4.4-.4 1 0 1.4zM19 19c0 1.1-.9 2-2 2H5c-1.1 0-2-.9-2-2V7c0-1.1.9-2 2-2h7v2H5v12h12v-7h2"
+                />
+              </svg>
+            </div>
+          </a>
+          <a
+            class="sc-iBkjds JLudk"
+            href="/contact"
+          >
+            Contact me about photography work
+          </a>
+        </div>
+      </div>
+    </div>
+    <div
+      class="sc-crXcEl jVCfod"
+    >
+      <style>
+        .js .animated-content__wrapper--hidden {
+  padding-top: 4rem;
+  opacity: 0.01;
+}
+      </style>
+      <div
+        class="sc-iqcoie eeqyer animated-content__wrapper--hidden"
+      >
+        <div
+          class="sc-dIouRR dNePtF"
+          style="width: 100%;"
+        >
+          <div
+            class="sc-hHLeRK dEoKO"
+            style="margin-left: -0px;"
+          />
+        </div>
+      </div>
     </div>
   </div>
   <div
-    class="creative-commonssyles__Wrapper-sc-qff226-0 gOCDiS"
+    class="sc-crXcEl jVCfod"
   >
+    <style>
+      .js .animated-content__wrapper--hidden {
+  opacity: 0.01;
+}
+    </style>
     <div
-      class="creative-commonssyles__Background-sc-qff226-1 ddrRBh"
-    />
-    <div
-      class="sc-crXcEl hTWOhI creative-commonssyles__Inner-sc-qff226-2 gkGslB"
+      class="sc-iqcoie eeqyer animated-content__wrapper--hidden"
     >
-      <h1
-        class="sc-dkzDqf ddFalQ sc-ksZaOG ijJOzl"
-        id="copyright"
+      <div
+        class="creative-commonssyles__Wrapper-sc-qff226-0 gOCDiS"
       >
-        Copyright
-      </h1>
-      <span
-        class="sc-iqcoie fIUTrZ"
-      >
-        Most of my photos are licensed under
-         
-        <a
-          aria-label="Creative Commons BY-SA 3.0 (opens in a new tab)"
-          class="sc-iBkjds JLudk"
-          href="https://creativecommons.org/licenses/by-sa/3.0/"
-          rel="noopener noreferrer"
-          target="_blank"
+        <div
+          class="creative-commonssyles__Background-sc-qff226-1 ddrRBh"
+        />
+        <div
+          class="sc-hAZoDl iua-dtn creative-commonssyles__Inner-sc-qff226-2 gkGslB"
         >
-          Creative Commons BY-SA 3.0
-          <div
-            class="sc-ftvSup kUuEWK"
+          <h1
+            class="sc-dkzDqf ddFalQ sc-bjUoiL ioGKQB"
+            id="copyright"
           >
-            <svg
-              class="sc-gKXOVf ktoyia sc-papXJ fmVkXn"
-              height="18"
-              viewBox="0 0 24 24"
-              width="18"
-              xmlns="http://www.w3.org/2000/svg"
+            Copyright
+          </h1>
+          <span
+            class="sc-ksZaOG cQKWUS"
+          >
+            Most of my photos are licensed under
+             
+            <a
+              aria-label="Creative Commons BY-SA 3.0 (opens in a new tab)"
+              class="sc-iBkjds JLudk"
+              href="https://creativecommons.org/licenses/by-sa/3.0/"
+              rel="noopener noreferrer"
+              target="_blank"
             >
-              <path
-                d="M12.5 11.3c.4.4 1 .4 1.4 0L19 6.2V9c0 .6.4 1 1 1s1-.4 1-1V4c0-.6-.4-1-1-1h-5c-.6 0-1 .4-1 1s.4 1 1 1h2.4l-4.9 4.9c-.4.4-.4 1 0 1.4zM19 19c0 1.1-.9 2-2 2H5c-1.1 0-2-.9-2-2V7c0-1.1.9-2 2-2h7v2H5v12h12v-7h2"
-              />
-            </svg>
-          </div>
-        </a>
-        .
-        <br />
-        If you are unsure about your right to use them please 
-        <a
-          class="sc-iBkjds JLudk"
-          href="/contact"
-        >
-          contact me
-        </a>
-        .
-      </span>
+              Creative Commons BY-SA 3.0
+              <div
+                class="sc-ftvSup kUuEWK"
+              >
+                <svg
+                  class="sc-gKXOVf ktoyia sc-papXJ fmVkXn"
+                  height="18"
+                  viewBox="0 0 24 24"
+                  width="18"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M12.5 11.3c.4.4 1 .4 1.4 0L19 6.2V9c0 .6.4 1 1 1s1-.4 1-1V4c0-.6-.4-1-1-1h-5c-.6 0-1 .4-1 1s.4 1 1 1h2.4l-4.9 4.9c-.4.4-.4 1 0 1.4zM19 19c0 1.1-.9 2-2 2H5c-1.1 0-2-.9-2-2V7c0-1.1.9-2 2-2h7v2H5v12h12v-7h2"
+                  />
+                </svg>
+              </div>
+            </a>
+            .
+            <br />
+            If you are unsure about your right to use them please 
+            <a
+              class="sc-iBkjds JLudk"
+              href="/contact"
+            >
+              contact me
+            </a>
+            .
+          </span>
+        </div>
+      </div>
     </div>
   </div>
 </div>
@@ -166,161 +211,206 @@ exports[`<Photography /> should render correctly - index 1`] = `
 exports[`<Photography /> should render correctly when loading 1`] = `
 <div>
   <div
-    class="sc-hAZoDl coNVZF page-containerstyles__StyledPageContainer-sc-19l7k4-0"
+    class="sc-idiyUo kVkjUW page-containerstyles__StyledPageContainer-sc-19l7k4-0"
     width="default"
   >
-    <h1
-      class="sc-bczRLJ hDLBIv sc-jqUVSM cFomsy"
-    >
-      Photography
-    </h1>
     <div
-      class="photographystyles__LinkContainer-sc-a0s7o0-0 hrlZUz"
+      class="sc-breuTD gWTOEy"
     >
-      <a
-        aria-label="Find me on Flickr (opens in a new tab)"
-        class="sc-iBkjds JLudk"
-        href="https://www.flickr.com/people/georgegillams/"
-        rel="noopener noreferrer"
-        target="_blank"
+      <h1
+        class="sc-bczRLJ hDLBIv sc-jqUVSM cFomsy"
       >
-        Find me on Flickr
-        <div
-          class="sc-ftvSup kUuEWK"
-        >
-          <svg
-            class="sc-gKXOVf ktoyia sc-papXJ fmVkXn"
-            height="18"
-            viewBox="0 0 24 24"
-            width="18"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M12.5 11.3c.4.4 1 .4 1.4 0L19 6.2V9c0 .6.4 1 1 1s1-.4 1-1V4c0-.6-.4-1-1-1h-5c-.6 0-1 .4-1 1s.4 1 1 1h2.4l-4.9 4.9c-.4.4-.4 1 0 1.4zM19 19c0 1.1-.9 2-2 2H5c-1.1 0-2-.9-2-2V7c0-1.1.9-2 2-2h7v2H5v12h12v-7h2"
-            />
-          </svg>
-        </div>
-      </a>
-      <a
-        aria-label="Find me on Unsplash (opens in a new tab)"
-        class="sc-iBkjds JLudk"
-        href="https://unsplash.com/@georgegillams"
-        rel="noopener noreferrer"
-        target="_blank"
-      >
-        Find me on Unsplash
-        <div
-          class="sc-ftvSup kUuEWK"
-        >
-          <svg
-            class="sc-gKXOVf ktoyia sc-papXJ fmVkXn"
-            height="18"
-            viewBox="0 0 24 24"
-            width="18"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M12.5 11.3c.4.4 1 .4 1.4 0L19 6.2V9c0 .6.4 1 1 1s1-.4 1-1V4c0-.6-.4-1-1-1h-5c-.6 0-1 .4-1 1s.4 1 1 1h2.4l-4.9 4.9c-.4.4-.4 1 0 1.4zM19 19c0 1.1-.9 2-2 2H5c-1.1 0-2-.9-2-2V7c0-1.1.9-2 2-2h7v2H5v12h12v-7h2"
-            />
-          </svg>
-        </div>
-      </a>
-      <a
-        aria-label="Find me on GuruShots (opens in a new tab)"
-        class="sc-iBkjds JLudk"
-        href="https://gurushots.com/georgegillams/achievements"
-        rel="noopener noreferrer"
-        target="_blank"
-      >
-        Find me on GuruShots
-        <div
-          class="sc-ftvSup kUuEWK"
-        >
-          <svg
-            class="sc-gKXOVf ktoyia sc-papXJ fmVkXn"
-            height="18"
-            viewBox="0 0 24 24"
-            width="18"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M12.5 11.3c.4.4 1 .4 1.4 0L19 6.2V9c0 .6.4 1 1 1s1-.4 1-1V4c0-.6-.4-1-1-1h-5c-.6 0-1 .4-1 1s.4 1 1 1h2.4l-4.9 4.9c-.4.4-.4 1 0 1.4zM19 19c0 1.1-.9 2-2 2H5c-1.1 0-2-.9-2-2V7c0-1.1.9-2 2-2h7v2H5v12h12v-7h2"
-            />
-          </svg>
-        </div>
-      </a>
-      <a
-        class="sc-iBkjds JLudk"
-        href="/contact"
-      >
-        Contact me about photography work
-      </a>
+        Photography
+      </h1>
     </div>
     <div
-      class="sc-fnykZs bVJbtJ"
-      style="width: 100%;"
+      class="sc-crXcEl jVCfod"
     >
+      <style>
+        .js .animated-content__wrapper--hidden {
+  padding-top: 4rem;
+  opacity: 0.01;
+}
+      </style>
       <div
-        class="sc-fEOsli jwVbEY"
-        style="margin-left: -0px;"
-      />
+        class="sc-iqcoie eeqyer animated-content__wrapper--hidden"
+      >
+        <div
+          class="photographystyles__LinkContainer-sc-a0s7o0-0 hrlZUz"
+        >
+          <a
+            aria-label="Find me on Flickr (opens in a new tab)"
+            class="sc-iBkjds JLudk"
+            href="https://www.flickr.com/people/georgegillams/"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            Find me on Flickr
+            <div
+              class="sc-ftvSup kUuEWK"
+            >
+              <svg
+                class="sc-gKXOVf ktoyia sc-papXJ fmVkXn"
+                height="18"
+                viewBox="0 0 24 24"
+                width="18"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M12.5 11.3c.4.4 1 .4 1.4 0L19 6.2V9c0 .6.4 1 1 1s1-.4 1-1V4c0-.6-.4-1-1-1h-5c-.6 0-1 .4-1 1s.4 1 1 1h2.4l-4.9 4.9c-.4.4-.4 1 0 1.4zM19 19c0 1.1-.9 2-2 2H5c-1.1 0-2-.9-2-2V7c0-1.1.9-2 2-2h7v2H5v12h12v-7h2"
+                />
+              </svg>
+            </div>
+          </a>
+          <a
+            aria-label="Find me on Unsplash (opens in a new tab)"
+            class="sc-iBkjds JLudk"
+            href="https://unsplash.com/@georgegillams"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            Find me on Unsplash
+            <div
+              class="sc-ftvSup kUuEWK"
+            >
+              <svg
+                class="sc-gKXOVf ktoyia sc-papXJ fmVkXn"
+                height="18"
+                viewBox="0 0 24 24"
+                width="18"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M12.5 11.3c.4.4 1 .4 1.4 0L19 6.2V9c0 .6.4 1 1 1s1-.4 1-1V4c0-.6-.4-1-1-1h-5c-.6 0-1 .4-1 1s.4 1 1 1h2.4l-4.9 4.9c-.4.4-.4 1 0 1.4zM19 19c0 1.1-.9 2-2 2H5c-1.1 0-2-.9-2-2V7c0-1.1.9-2 2-2h7v2H5v12h12v-7h2"
+                />
+              </svg>
+            </div>
+          </a>
+          <a
+            aria-label="Find me on GuruShots (opens in a new tab)"
+            class="sc-iBkjds JLudk"
+            href="https://gurushots.com/georgegillams/achievements"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            Find me on GuruShots
+            <div
+              class="sc-ftvSup kUuEWK"
+            >
+              <svg
+                class="sc-gKXOVf ktoyia sc-papXJ fmVkXn"
+                height="18"
+                viewBox="0 0 24 24"
+                width="18"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M12.5 11.3c.4.4 1 .4 1.4 0L19 6.2V9c0 .6.4 1 1 1s1-.4 1-1V4c0-.6-.4-1-1-1h-5c-.6 0-1 .4-1 1s.4 1 1 1h2.4l-4.9 4.9c-.4.4-.4 1 0 1.4zM19 19c0 1.1-.9 2-2 2H5c-1.1 0-2-.9-2-2V7c0-1.1.9-2 2-2h7v2H5v12h12v-7h2"
+                />
+              </svg>
+            </div>
+          </a>
+          <a
+            class="sc-iBkjds JLudk"
+            href="/contact"
+          >
+            Contact me about photography work
+          </a>
+        </div>
+      </div>
+    </div>
+    <div
+      class="sc-crXcEl jVCfod"
+    >
+      <style>
+        .js .animated-content__wrapper--hidden {
+  padding-top: 4rem;
+  opacity: 0.01;
+}
+      </style>
+      <div
+        class="sc-iqcoie eeqyer animated-content__wrapper--hidden"
+      >
+        <div
+          class="sc-dIouRR dNePtF"
+          style="width: 100%;"
+        >
+          <div
+            class="sc-hHLeRK dEoKO"
+            style="margin-left: -0px;"
+          />
+        </div>
+      </div>
     </div>
   </div>
   <div
-    class="creative-commonssyles__Wrapper-sc-qff226-0 gOCDiS"
+    class="sc-crXcEl jVCfod"
   >
+    <style>
+      .js .animated-content__wrapper--hidden {
+  opacity: 0.01;
+}
+    </style>
     <div
-      class="creative-commonssyles__Background-sc-qff226-1 ddrRBh"
-    />
-    <div
-      class="sc-crXcEl hTWOhI creative-commonssyles__Inner-sc-qff226-2 gkGslB"
+      class="sc-iqcoie eeqyer animated-content__wrapper--hidden"
     >
-      <h1
-        class="sc-dkzDqf ddFalQ sc-ksZaOG ijJOzl"
-        id="copyright"
+      <div
+        class="creative-commonssyles__Wrapper-sc-qff226-0 gOCDiS"
       >
-        Copyright
-      </h1>
-      <span
-        class="sc-iqcoie fIUTrZ"
-      >
-        Most of my photos are licensed under
-         
-        <a
-          aria-label="Creative Commons BY-SA 3.0 (opens in a new tab)"
-          class="sc-iBkjds JLudk"
-          href="https://creativecommons.org/licenses/by-sa/3.0/"
-          rel="noopener noreferrer"
-          target="_blank"
+        <div
+          class="creative-commonssyles__Background-sc-qff226-1 ddrRBh"
+        />
+        <div
+          class="sc-hAZoDl iua-dtn creative-commonssyles__Inner-sc-qff226-2 gkGslB"
         >
-          Creative Commons BY-SA 3.0
-          <div
-            class="sc-ftvSup kUuEWK"
+          <h1
+            class="sc-dkzDqf ddFalQ sc-bjUoiL ioGKQB"
+            id="copyright"
           >
-            <svg
-              class="sc-gKXOVf ktoyia sc-papXJ fmVkXn"
-              height="18"
-              viewBox="0 0 24 24"
-              width="18"
-              xmlns="http://www.w3.org/2000/svg"
+            Copyright
+          </h1>
+          <span
+            class="sc-ksZaOG cQKWUS"
+          >
+            Most of my photos are licensed under
+             
+            <a
+              aria-label="Creative Commons BY-SA 3.0 (opens in a new tab)"
+              class="sc-iBkjds JLudk"
+              href="https://creativecommons.org/licenses/by-sa/3.0/"
+              rel="noopener noreferrer"
+              target="_blank"
             >
-              <path
-                d="M12.5 11.3c.4.4 1 .4 1.4 0L19 6.2V9c0 .6.4 1 1 1s1-.4 1-1V4c0-.6-.4-1-1-1h-5c-.6 0-1 .4-1 1s.4 1 1 1h2.4l-4.9 4.9c-.4.4-.4 1 0 1.4zM19 19c0 1.1-.9 2-2 2H5c-1.1 0-2-.9-2-2V7c0-1.1.9-2 2-2h7v2H5v12h12v-7h2"
-              />
-            </svg>
-          </div>
-        </a>
-        .
-        <br />
-        If you are unsure about your right to use them please 
-        <a
-          class="sc-iBkjds JLudk"
-          href="/contact"
-        >
-          contact me
-        </a>
-        .
-      </span>
+              Creative Commons BY-SA 3.0
+              <div
+                class="sc-ftvSup kUuEWK"
+              >
+                <svg
+                  class="sc-gKXOVf ktoyia sc-papXJ fmVkXn"
+                  height="18"
+                  viewBox="0 0 24 24"
+                  width="18"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M12.5 11.3c.4.4 1 .4 1.4 0L19 6.2V9c0 .6.4 1 1 1s1-.4 1-1V4c0-.6-.4-1-1-1h-5c-.6 0-1 .4-1 1s.4 1 1 1h2.4l-4.9 4.9c-.4.4-.4 1 0 1.4zM19 19c0 1.1-.9 2-2 2H5c-1.1 0-2-.9-2-2V7c0-1.1.9-2 2-2h7v2H5v12h12v-7h2"
+                  />
+                </svg>
+              </div>
+            </a>
+            .
+            <br />
+            If you are unsure about your right to use them please 
+            <a
+              class="sc-iBkjds JLudk"
+              href="/contact"
+            >
+              contact me
+            </a>
+            .
+          </span>
+        </div>
+      </div>
     </div>
   </div>
 </div>
@@ -329,161 +419,206 @@ exports[`<Photography /> should render correctly when loading 1`] = `
 exports[`<Photography /> should render correctly with initial state 1`] = `
 <div>
   <div
-    class="sc-hAZoDl coNVZF page-containerstyles__StyledPageContainer-sc-19l7k4-0"
+    class="sc-idiyUo kVkjUW page-containerstyles__StyledPageContainer-sc-19l7k4-0"
     width="default"
   >
-    <h1
-      class="sc-bczRLJ hDLBIv sc-jqUVSM cFomsy"
-    >
-      Photography
-    </h1>
     <div
-      class="photographystyles__LinkContainer-sc-a0s7o0-0 hrlZUz"
+      class="sc-breuTD gWTOEy"
     >
-      <a
-        aria-label="Find me on Flickr (opens in a new tab)"
-        class="sc-iBkjds JLudk"
-        href="https://www.flickr.com/people/georgegillams/"
-        rel="noopener noreferrer"
-        target="_blank"
+      <h1
+        class="sc-bczRLJ hDLBIv sc-jqUVSM cFomsy"
       >
-        Find me on Flickr
-        <div
-          class="sc-ftvSup kUuEWK"
-        >
-          <svg
-            class="sc-gKXOVf ktoyia sc-papXJ fmVkXn"
-            height="18"
-            viewBox="0 0 24 24"
-            width="18"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M12.5 11.3c.4.4 1 .4 1.4 0L19 6.2V9c0 .6.4 1 1 1s1-.4 1-1V4c0-.6-.4-1-1-1h-5c-.6 0-1 .4-1 1s.4 1 1 1h2.4l-4.9 4.9c-.4.4-.4 1 0 1.4zM19 19c0 1.1-.9 2-2 2H5c-1.1 0-2-.9-2-2V7c0-1.1.9-2 2-2h7v2H5v12h12v-7h2"
-            />
-          </svg>
-        </div>
-      </a>
-      <a
-        aria-label="Find me on Unsplash (opens in a new tab)"
-        class="sc-iBkjds JLudk"
-        href="https://unsplash.com/@georgegillams"
-        rel="noopener noreferrer"
-        target="_blank"
-      >
-        Find me on Unsplash
-        <div
-          class="sc-ftvSup kUuEWK"
-        >
-          <svg
-            class="sc-gKXOVf ktoyia sc-papXJ fmVkXn"
-            height="18"
-            viewBox="0 0 24 24"
-            width="18"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M12.5 11.3c.4.4 1 .4 1.4 0L19 6.2V9c0 .6.4 1 1 1s1-.4 1-1V4c0-.6-.4-1-1-1h-5c-.6 0-1 .4-1 1s.4 1 1 1h2.4l-4.9 4.9c-.4.4-.4 1 0 1.4zM19 19c0 1.1-.9 2-2 2H5c-1.1 0-2-.9-2-2V7c0-1.1.9-2 2-2h7v2H5v12h12v-7h2"
-            />
-          </svg>
-        </div>
-      </a>
-      <a
-        aria-label="Find me on GuruShots (opens in a new tab)"
-        class="sc-iBkjds JLudk"
-        href="https://gurushots.com/georgegillams/achievements"
-        rel="noopener noreferrer"
-        target="_blank"
-      >
-        Find me on GuruShots
-        <div
-          class="sc-ftvSup kUuEWK"
-        >
-          <svg
-            class="sc-gKXOVf ktoyia sc-papXJ fmVkXn"
-            height="18"
-            viewBox="0 0 24 24"
-            width="18"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M12.5 11.3c.4.4 1 .4 1.4 0L19 6.2V9c0 .6.4 1 1 1s1-.4 1-1V4c0-.6-.4-1-1-1h-5c-.6 0-1 .4-1 1s.4 1 1 1h2.4l-4.9 4.9c-.4.4-.4 1 0 1.4zM19 19c0 1.1-.9 2-2 2H5c-1.1 0-2-.9-2-2V7c0-1.1.9-2 2-2h7v2H5v12h12v-7h2"
-            />
-          </svg>
-        </div>
-      </a>
-      <a
-        class="sc-iBkjds JLudk"
-        href="/contact"
-      >
-        Contact me about photography work
-      </a>
+        Photography
+      </h1>
     </div>
     <div
-      class="sc-fnykZs bVJbtJ"
-      style="width: 100%;"
+      class="sc-crXcEl jVCfod"
     >
+      <style>
+        .js .animated-content__wrapper--hidden {
+  padding-top: 4rem;
+  opacity: 0.01;
+}
+      </style>
       <div
-        class="sc-fEOsli jwVbEY"
-        style="margin-left: -0px;"
-      />
+        class="sc-iqcoie eeqyer animated-content__wrapper--hidden"
+      >
+        <div
+          class="photographystyles__LinkContainer-sc-a0s7o0-0 hrlZUz"
+        >
+          <a
+            aria-label="Find me on Flickr (opens in a new tab)"
+            class="sc-iBkjds JLudk"
+            href="https://www.flickr.com/people/georgegillams/"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            Find me on Flickr
+            <div
+              class="sc-ftvSup kUuEWK"
+            >
+              <svg
+                class="sc-gKXOVf ktoyia sc-papXJ fmVkXn"
+                height="18"
+                viewBox="0 0 24 24"
+                width="18"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M12.5 11.3c.4.4 1 .4 1.4 0L19 6.2V9c0 .6.4 1 1 1s1-.4 1-1V4c0-.6-.4-1-1-1h-5c-.6 0-1 .4-1 1s.4 1 1 1h2.4l-4.9 4.9c-.4.4-.4 1 0 1.4zM19 19c0 1.1-.9 2-2 2H5c-1.1 0-2-.9-2-2V7c0-1.1.9-2 2-2h7v2H5v12h12v-7h2"
+                />
+              </svg>
+            </div>
+          </a>
+          <a
+            aria-label="Find me on Unsplash (opens in a new tab)"
+            class="sc-iBkjds JLudk"
+            href="https://unsplash.com/@georgegillams"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            Find me on Unsplash
+            <div
+              class="sc-ftvSup kUuEWK"
+            >
+              <svg
+                class="sc-gKXOVf ktoyia sc-papXJ fmVkXn"
+                height="18"
+                viewBox="0 0 24 24"
+                width="18"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M12.5 11.3c.4.4 1 .4 1.4 0L19 6.2V9c0 .6.4 1 1 1s1-.4 1-1V4c0-.6-.4-1-1-1h-5c-.6 0-1 .4-1 1s.4 1 1 1h2.4l-4.9 4.9c-.4.4-.4 1 0 1.4zM19 19c0 1.1-.9 2-2 2H5c-1.1 0-2-.9-2-2V7c0-1.1.9-2 2-2h7v2H5v12h12v-7h2"
+                />
+              </svg>
+            </div>
+          </a>
+          <a
+            aria-label="Find me on GuruShots (opens in a new tab)"
+            class="sc-iBkjds JLudk"
+            href="https://gurushots.com/georgegillams/achievements"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            Find me on GuruShots
+            <div
+              class="sc-ftvSup kUuEWK"
+            >
+              <svg
+                class="sc-gKXOVf ktoyia sc-papXJ fmVkXn"
+                height="18"
+                viewBox="0 0 24 24"
+                width="18"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M12.5 11.3c.4.4 1 .4 1.4 0L19 6.2V9c0 .6.4 1 1 1s1-.4 1-1V4c0-.6-.4-1-1-1h-5c-.6 0-1 .4-1 1s.4 1 1 1h2.4l-4.9 4.9c-.4.4-.4 1 0 1.4zM19 19c0 1.1-.9 2-2 2H5c-1.1 0-2-.9-2-2V7c0-1.1.9-2 2-2h7v2H5v12h12v-7h2"
+                />
+              </svg>
+            </div>
+          </a>
+          <a
+            class="sc-iBkjds JLudk"
+            href="/contact"
+          >
+            Contact me about photography work
+          </a>
+        </div>
+      </div>
+    </div>
+    <div
+      class="sc-crXcEl jVCfod"
+    >
+      <style>
+        .js .animated-content__wrapper--hidden {
+  padding-top: 4rem;
+  opacity: 0.01;
+}
+      </style>
+      <div
+        class="sc-iqcoie eeqyer animated-content__wrapper--hidden"
+      >
+        <div
+          class="sc-dIouRR dNePtF"
+          style="width: 100%;"
+        >
+          <div
+            class="sc-hHLeRK dEoKO"
+            style="margin-left: -0px;"
+          />
+        </div>
+      </div>
     </div>
   </div>
   <div
-    class="creative-commonssyles__Wrapper-sc-qff226-0 gOCDiS"
+    class="sc-crXcEl jVCfod"
   >
+    <style>
+      .js .animated-content__wrapper--hidden {
+  opacity: 0.01;
+}
+    </style>
     <div
-      class="creative-commonssyles__Background-sc-qff226-1 ddrRBh"
-    />
-    <div
-      class="sc-crXcEl hTWOhI creative-commonssyles__Inner-sc-qff226-2 gkGslB"
+      class="sc-iqcoie eeqyer animated-content__wrapper--hidden"
     >
-      <h1
-        class="sc-dkzDqf ddFalQ sc-ksZaOG ijJOzl"
-        id="copyright"
+      <div
+        class="creative-commonssyles__Wrapper-sc-qff226-0 gOCDiS"
       >
-        Copyright
-      </h1>
-      <span
-        class="sc-iqcoie fIUTrZ"
-      >
-        Most of my photos are licensed under
-         
-        <a
-          aria-label="Creative Commons BY-SA 3.0 (opens in a new tab)"
-          class="sc-iBkjds JLudk"
-          href="https://creativecommons.org/licenses/by-sa/3.0/"
-          rel="noopener noreferrer"
-          target="_blank"
+        <div
+          class="creative-commonssyles__Background-sc-qff226-1 ddrRBh"
+        />
+        <div
+          class="sc-hAZoDl iua-dtn creative-commonssyles__Inner-sc-qff226-2 gkGslB"
         >
-          Creative Commons BY-SA 3.0
-          <div
-            class="sc-ftvSup kUuEWK"
+          <h1
+            class="sc-dkzDqf ddFalQ sc-bjUoiL ioGKQB"
+            id="copyright"
           >
-            <svg
-              class="sc-gKXOVf ktoyia sc-papXJ fmVkXn"
-              height="18"
-              viewBox="0 0 24 24"
-              width="18"
-              xmlns="http://www.w3.org/2000/svg"
+            Copyright
+          </h1>
+          <span
+            class="sc-ksZaOG cQKWUS"
+          >
+            Most of my photos are licensed under
+             
+            <a
+              aria-label="Creative Commons BY-SA 3.0 (opens in a new tab)"
+              class="sc-iBkjds JLudk"
+              href="https://creativecommons.org/licenses/by-sa/3.0/"
+              rel="noopener noreferrer"
+              target="_blank"
             >
-              <path
-                d="M12.5 11.3c.4.4 1 .4 1.4 0L19 6.2V9c0 .6.4 1 1 1s1-.4 1-1V4c0-.6-.4-1-1-1h-5c-.6 0-1 .4-1 1s.4 1 1 1h2.4l-4.9 4.9c-.4.4-.4 1 0 1.4zM19 19c0 1.1-.9 2-2 2H5c-1.1 0-2-.9-2-2V7c0-1.1.9-2 2-2h7v2H5v12h12v-7h2"
-              />
-            </svg>
-          </div>
-        </a>
-        .
-        <br />
-        If you are unsure about your right to use them please 
-        <a
-          class="sc-iBkjds JLudk"
-          href="/contact"
-        >
-          contact me
-        </a>
-        .
-      </span>
+              Creative Commons BY-SA 3.0
+              <div
+                class="sc-ftvSup kUuEWK"
+              >
+                <svg
+                  class="sc-gKXOVf ktoyia sc-papXJ fmVkXn"
+                  height="18"
+                  viewBox="0 0 24 24"
+                  width="18"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M12.5 11.3c.4.4 1 .4 1.4 0L19 6.2V9c0 .6.4 1 1 1s1-.4 1-1V4c0-.6-.4-1-1-1h-5c-.6 0-1 .4-1 1s.4 1 1 1h2.4l-4.9 4.9c-.4.4-.4 1 0 1.4zM19 19c0 1.1-.9 2-2 2H5c-1.1 0-2-.9-2-2V7c0-1.1.9-2 2-2h7v2H5v12h12v-7h2"
+                  />
+                </svg>
+              </div>
+            </a>
+            .
+            <br />
+            If you are unsure about your right to use them please 
+            <a
+              class="sc-iBkjds JLudk"
+              href="/contact"
+            >
+              contact me
+            </a>
+            .
+          </span>
+        </div>
+      </div>
     </div>
   </div>
 </div>
@@ -492,161 +627,206 @@ exports[`<Photography /> should render correctly with initial state 1`] = `
 exports[`<Photography /> should render correctly with loadError 1`] = `
 <div>
   <div
-    class="sc-hAZoDl coNVZF page-containerstyles__StyledPageContainer-sc-19l7k4-0"
+    class="sc-idiyUo kVkjUW page-containerstyles__StyledPageContainer-sc-19l7k4-0"
     width="default"
   >
-    <h1
-      class="sc-bczRLJ hDLBIv sc-jqUVSM cFomsy"
-    >
-      Photography
-    </h1>
     <div
-      class="photographystyles__LinkContainer-sc-a0s7o0-0 hrlZUz"
+      class="sc-breuTD gWTOEy"
     >
-      <a
-        aria-label="Find me on Flickr (opens in a new tab)"
-        class="sc-iBkjds JLudk"
-        href="https://www.flickr.com/people/georgegillams/"
-        rel="noopener noreferrer"
-        target="_blank"
+      <h1
+        class="sc-bczRLJ hDLBIv sc-jqUVSM cFomsy"
       >
-        Find me on Flickr
-        <div
-          class="sc-ftvSup kUuEWK"
-        >
-          <svg
-            class="sc-gKXOVf ktoyia sc-papXJ fmVkXn"
-            height="18"
-            viewBox="0 0 24 24"
-            width="18"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M12.5 11.3c.4.4 1 .4 1.4 0L19 6.2V9c0 .6.4 1 1 1s1-.4 1-1V4c0-.6-.4-1-1-1h-5c-.6 0-1 .4-1 1s.4 1 1 1h2.4l-4.9 4.9c-.4.4-.4 1 0 1.4zM19 19c0 1.1-.9 2-2 2H5c-1.1 0-2-.9-2-2V7c0-1.1.9-2 2-2h7v2H5v12h12v-7h2"
-            />
-          </svg>
-        </div>
-      </a>
-      <a
-        aria-label="Find me on Unsplash (opens in a new tab)"
-        class="sc-iBkjds JLudk"
-        href="https://unsplash.com/@georgegillams"
-        rel="noopener noreferrer"
-        target="_blank"
-      >
-        Find me on Unsplash
-        <div
-          class="sc-ftvSup kUuEWK"
-        >
-          <svg
-            class="sc-gKXOVf ktoyia sc-papXJ fmVkXn"
-            height="18"
-            viewBox="0 0 24 24"
-            width="18"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M12.5 11.3c.4.4 1 .4 1.4 0L19 6.2V9c0 .6.4 1 1 1s1-.4 1-1V4c0-.6-.4-1-1-1h-5c-.6 0-1 .4-1 1s.4 1 1 1h2.4l-4.9 4.9c-.4.4-.4 1 0 1.4zM19 19c0 1.1-.9 2-2 2H5c-1.1 0-2-.9-2-2V7c0-1.1.9-2 2-2h7v2H5v12h12v-7h2"
-            />
-          </svg>
-        </div>
-      </a>
-      <a
-        aria-label="Find me on GuruShots (opens in a new tab)"
-        class="sc-iBkjds JLudk"
-        href="https://gurushots.com/georgegillams/achievements"
-        rel="noopener noreferrer"
-        target="_blank"
-      >
-        Find me on GuruShots
-        <div
-          class="sc-ftvSup kUuEWK"
-        >
-          <svg
-            class="sc-gKXOVf ktoyia sc-papXJ fmVkXn"
-            height="18"
-            viewBox="0 0 24 24"
-            width="18"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M12.5 11.3c.4.4 1 .4 1.4 0L19 6.2V9c0 .6.4 1 1 1s1-.4 1-1V4c0-.6-.4-1-1-1h-5c-.6 0-1 .4-1 1s.4 1 1 1h2.4l-4.9 4.9c-.4.4-.4 1 0 1.4zM19 19c0 1.1-.9 2-2 2H5c-1.1 0-2-.9-2-2V7c0-1.1.9-2 2-2h7v2H5v12h12v-7h2"
-            />
-          </svg>
-        </div>
-      </a>
-      <a
-        class="sc-iBkjds JLudk"
-        href="/contact"
-      >
-        Contact me about photography work
-      </a>
+        Photography
+      </h1>
     </div>
     <div
-      class="sc-fnykZs bVJbtJ"
-      style="width: 100%;"
+      class="sc-crXcEl jVCfod"
     >
+      <style>
+        .js .animated-content__wrapper--hidden {
+  padding-top: 4rem;
+  opacity: 0.01;
+}
+      </style>
       <div
-        class="sc-fEOsli jwVbEY"
-        style="margin-left: -0px;"
-      />
+        class="sc-iqcoie eeqyer animated-content__wrapper--hidden"
+      >
+        <div
+          class="photographystyles__LinkContainer-sc-a0s7o0-0 hrlZUz"
+        >
+          <a
+            aria-label="Find me on Flickr (opens in a new tab)"
+            class="sc-iBkjds JLudk"
+            href="https://www.flickr.com/people/georgegillams/"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            Find me on Flickr
+            <div
+              class="sc-ftvSup kUuEWK"
+            >
+              <svg
+                class="sc-gKXOVf ktoyia sc-papXJ fmVkXn"
+                height="18"
+                viewBox="0 0 24 24"
+                width="18"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M12.5 11.3c.4.4 1 .4 1.4 0L19 6.2V9c0 .6.4 1 1 1s1-.4 1-1V4c0-.6-.4-1-1-1h-5c-.6 0-1 .4-1 1s.4 1 1 1h2.4l-4.9 4.9c-.4.4-.4 1 0 1.4zM19 19c0 1.1-.9 2-2 2H5c-1.1 0-2-.9-2-2V7c0-1.1.9-2 2-2h7v2H5v12h12v-7h2"
+                />
+              </svg>
+            </div>
+          </a>
+          <a
+            aria-label="Find me on Unsplash (opens in a new tab)"
+            class="sc-iBkjds JLudk"
+            href="https://unsplash.com/@georgegillams"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            Find me on Unsplash
+            <div
+              class="sc-ftvSup kUuEWK"
+            >
+              <svg
+                class="sc-gKXOVf ktoyia sc-papXJ fmVkXn"
+                height="18"
+                viewBox="0 0 24 24"
+                width="18"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M12.5 11.3c.4.4 1 .4 1.4 0L19 6.2V9c0 .6.4 1 1 1s1-.4 1-1V4c0-.6-.4-1-1-1h-5c-.6 0-1 .4-1 1s.4 1 1 1h2.4l-4.9 4.9c-.4.4-.4 1 0 1.4zM19 19c0 1.1-.9 2-2 2H5c-1.1 0-2-.9-2-2V7c0-1.1.9-2 2-2h7v2H5v12h12v-7h2"
+                />
+              </svg>
+            </div>
+          </a>
+          <a
+            aria-label="Find me on GuruShots (opens in a new tab)"
+            class="sc-iBkjds JLudk"
+            href="https://gurushots.com/georgegillams/achievements"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            Find me on GuruShots
+            <div
+              class="sc-ftvSup kUuEWK"
+            >
+              <svg
+                class="sc-gKXOVf ktoyia sc-papXJ fmVkXn"
+                height="18"
+                viewBox="0 0 24 24"
+                width="18"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M12.5 11.3c.4.4 1 .4 1.4 0L19 6.2V9c0 .6.4 1 1 1s1-.4 1-1V4c0-.6-.4-1-1-1h-5c-.6 0-1 .4-1 1s.4 1 1 1h2.4l-4.9 4.9c-.4.4-.4 1 0 1.4zM19 19c0 1.1-.9 2-2 2H5c-1.1 0-2-.9-2-2V7c0-1.1.9-2 2-2h7v2H5v12h12v-7h2"
+                />
+              </svg>
+            </div>
+          </a>
+          <a
+            class="sc-iBkjds JLudk"
+            href="/contact"
+          >
+            Contact me about photography work
+          </a>
+        </div>
+      </div>
+    </div>
+    <div
+      class="sc-crXcEl jVCfod"
+    >
+      <style>
+        .js .animated-content__wrapper--hidden {
+  padding-top: 4rem;
+  opacity: 0.01;
+}
+      </style>
+      <div
+        class="sc-iqcoie eeqyer animated-content__wrapper--hidden"
+      >
+        <div
+          class="sc-dIouRR dNePtF"
+          style="width: 100%;"
+        >
+          <div
+            class="sc-hHLeRK dEoKO"
+            style="margin-left: -0px;"
+          />
+        </div>
+      </div>
     </div>
   </div>
   <div
-    class="creative-commonssyles__Wrapper-sc-qff226-0 gOCDiS"
+    class="sc-crXcEl jVCfod"
   >
+    <style>
+      .js .animated-content__wrapper--hidden {
+  opacity: 0.01;
+}
+    </style>
     <div
-      class="creative-commonssyles__Background-sc-qff226-1 ddrRBh"
-    />
-    <div
-      class="sc-crXcEl hTWOhI creative-commonssyles__Inner-sc-qff226-2 gkGslB"
+      class="sc-iqcoie eeqyer animated-content__wrapper--hidden"
     >
-      <h1
-        class="sc-dkzDqf ddFalQ sc-ksZaOG ijJOzl"
-        id="copyright"
+      <div
+        class="creative-commonssyles__Wrapper-sc-qff226-0 gOCDiS"
       >
-        Copyright
-      </h1>
-      <span
-        class="sc-iqcoie fIUTrZ"
-      >
-        Most of my photos are licensed under
-         
-        <a
-          aria-label="Creative Commons BY-SA 3.0 (opens in a new tab)"
-          class="sc-iBkjds JLudk"
-          href="https://creativecommons.org/licenses/by-sa/3.0/"
-          rel="noopener noreferrer"
-          target="_blank"
+        <div
+          class="creative-commonssyles__Background-sc-qff226-1 ddrRBh"
+        />
+        <div
+          class="sc-hAZoDl iua-dtn creative-commonssyles__Inner-sc-qff226-2 gkGslB"
         >
-          Creative Commons BY-SA 3.0
-          <div
-            class="sc-ftvSup kUuEWK"
+          <h1
+            class="sc-dkzDqf ddFalQ sc-bjUoiL ioGKQB"
+            id="copyright"
           >
-            <svg
-              class="sc-gKXOVf ktoyia sc-papXJ fmVkXn"
-              height="18"
-              viewBox="0 0 24 24"
-              width="18"
-              xmlns="http://www.w3.org/2000/svg"
+            Copyright
+          </h1>
+          <span
+            class="sc-ksZaOG cQKWUS"
+          >
+            Most of my photos are licensed under
+             
+            <a
+              aria-label="Creative Commons BY-SA 3.0 (opens in a new tab)"
+              class="sc-iBkjds JLudk"
+              href="https://creativecommons.org/licenses/by-sa/3.0/"
+              rel="noopener noreferrer"
+              target="_blank"
             >
-              <path
-                d="M12.5 11.3c.4.4 1 .4 1.4 0L19 6.2V9c0 .6.4 1 1 1s1-.4 1-1V4c0-.6-.4-1-1-1h-5c-.6 0-1 .4-1 1s.4 1 1 1h2.4l-4.9 4.9c-.4.4-.4 1 0 1.4zM19 19c0 1.1-.9 2-2 2H5c-1.1 0-2-.9-2-2V7c0-1.1.9-2 2-2h7v2H5v12h12v-7h2"
-              />
-            </svg>
-          </div>
-        </a>
-        .
-        <br />
-        If you are unsure about your right to use them please 
-        <a
-          class="sc-iBkjds JLudk"
-          href="/contact"
-        >
-          contact me
-        </a>
-        .
-      </span>
+              Creative Commons BY-SA 3.0
+              <div
+                class="sc-ftvSup kUuEWK"
+              >
+                <svg
+                  class="sc-gKXOVf ktoyia sc-papXJ fmVkXn"
+                  height="18"
+                  viewBox="0 0 24 24"
+                  width="18"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M12.5 11.3c.4.4 1 .4 1.4 0L19 6.2V9c0 .6.4 1 1 1s1-.4 1-1V4c0-.6-.4-1-1-1h-5c-.6 0-1 .4-1 1s.4 1 1 1h2.4l-4.9 4.9c-.4.4-.4 1 0 1.4zM19 19c0 1.1-.9 2-2 2H5c-1.1 0-2-.9-2-2V7c0-1.1.9-2 2-2h7v2H5v12h12v-7h2"
+                  />
+                </svg>
+              </div>
+            </a>
+            .
+            <br />
+            If you are unsure about your right to use them please 
+            <a
+              class="sc-iBkjds JLudk"
+              href="/contact"
+            >
+              contact me
+            </a>
+            .
+          </span>
+        </div>
+      </div>
     </div>
   </div>
 </div>
@@ -655,161 +835,206 @@ exports[`<Photography /> should render correctly with loadError 1`] = `
 exports[`<Photography /> should render correctly with photos 1`] = `
 <div>
   <div
-    class="sc-hAZoDl coNVZF page-containerstyles__StyledPageContainer-sc-19l7k4-0"
+    class="sc-idiyUo kVkjUW page-containerstyles__StyledPageContainer-sc-19l7k4-0"
     width="default"
   >
-    <h1
-      class="sc-bczRLJ hDLBIv sc-jqUVSM cFomsy"
-    >
-      Photography
-    </h1>
     <div
-      class="photographystyles__LinkContainer-sc-a0s7o0-0 hrlZUz"
+      class="sc-breuTD gWTOEy"
     >
-      <a
-        aria-label="Find me on Flickr (opens in a new tab)"
-        class="sc-iBkjds JLudk"
-        href="https://www.flickr.com/people/georgegillams/"
-        rel="noopener noreferrer"
-        target="_blank"
+      <h1
+        class="sc-bczRLJ hDLBIv sc-jqUVSM cFomsy"
       >
-        Find me on Flickr
-        <div
-          class="sc-ftvSup kUuEWK"
-        >
-          <svg
-            class="sc-gKXOVf ktoyia sc-papXJ fmVkXn"
-            height="18"
-            viewBox="0 0 24 24"
-            width="18"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M12.5 11.3c.4.4 1 .4 1.4 0L19 6.2V9c0 .6.4 1 1 1s1-.4 1-1V4c0-.6-.4-1-1-1h-5c-.6 0-1 .4-1 1s.4 1 1 1h2.4l-4.9 4.9c-.4.4-.4 1 0 1.4zM19 19c0 1.1-.9 2-2 2H5c-1.1 0-2-.9-2-2V7c0-1.1.9-2 2-2h7v2H5v12h12v-7h2"
-            />
-          </svg>
-        </div>
-      </a>
-      <a
-        aria-label="Find me on Unsplash (opens in a new tab)"
-        class="sc-iBkjds JLudk"
-        href="https://unsplash.com/@georgegillams"
-        rel="noopener noreferrer"
-        target="_blank"
-      >
-        Find me on Unsplash
-        <div
-          class="sc-ftvSup kUuEWK"
-        >
-          <svg
-            class="sc-gKXOVf ktoyia sc-papXJ fmVkXn"
-            height="18"
-            viewBox="0 0 24 24"
-            width="18"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M12.5 11.3c.4.4 1 .4 1.4 0L19 6.2V9c0 .6.4 1 1 1s1-.4 1-1V4c0-.6-.4-1-1-1h-5c-.6 0-1 .4-1 1s.4 1 1 1h2.4l-4.9 4.9c-.4.4-.4 1 0 1.4zM19 19c0 1.1-.9 2-2 2H5c-1.1 0-2-.9-2-2V7c0-1.1.9-2 2-2h7v2H5v12h12v-7h2"
-            />
-          </svg>
-        </div>
-      </a>
-      <a
-        aria-label="Find me on GuruShots (opens in a new tab)"
-        class="sc-iBkjds JLudk"
-        href="https://gurushots.com/georgegillams/achievements"
-        rel="noopener noreferrer"
-        target="_blank"
-      >
-        Find me on GuruShots
-        <div
-          class="sc-ftvSup kUuEWK"
-        >
-          <svg
-            class="sc-gKXOVf ktoyia sc-papXJ fmVkXn"
-            height="18"
-            viewBox="0 0 24 24"
-            width="18"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M12.5 11.3c.4.4 1 .4 1.4 0L19 6.2V9c0 .6.4 1 1 1s1-.4 1-1V4c0-.6-.4-1-1-1h-5c-.6 0-1 .4-1 1s.4 1 1 1h2.4l-4.9 4.9c-.4.4-.4 1 0 1.4zM19 19c0 1.1-.9 2-2 2H5c-1.1 0-2-.9-2-2V7c0-1.1.9-2 2-2h7v2H5v12h12v-7h2"
-            />
-          </svg>
-        </div>
-      </a>
-      <a
-        class="sc-iBkjds JLudk"
-        href="/contact"
-      >
-        Contact me about photography work
-      </a>
+        Photography
+      </h1>
     </div>
     <div
-      class="sc-fnykZs bVJbtJ"
-      style="width: 100%;"
+      class="sc-crXcEl jVCfod"
     >
+      <style>
+        .js .animated-content__wrapper--hidden {
+  padding-top: 4rem;
+  opacity: 0.01;
+}
+      </style>
       <div
-        class="sc-fEOsli jwVbEY"
-        style="margin-left: -0px;"
-      />
+        class="sc-iqcoie eeqyer animated-content__wrapper--hidden"
+      >
+        <div
+          class="photographystyles__LinkContainer-sc-a0s7o0-0 hrlZUz"
+        >
+          <a
+            aria-label="Find me on Flickr (opens in a new tab)"
+            class="sc-iBkjds JLudk"
+            href="https://www.flickr.com/people/georgegillams/"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            Find me on Flickr
+            <div
+              class="sc-ftvSup kUuEWK"
+            >
+              <svg
+                class="sc-gKXOVf ktoyia sc-papXJ fmVkXn"
+                height="18"
+                viewBox="0 0 24 24"
+                width="18"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M12.5 11.3c.4.4 1 .4 1.4 0L19 6.2V9c0 .6.4 1 1 1s1-.4 1-1V4c0-.6-.4-1-1-1h-5c-.6 0-1 .4-1 1s.4 1 1 1h2.4l-4.9 4.9c-.4.4-.4 1 0 1.4zM19 19c0 1.1-.9 2-2 2H5c-1.1 0-2-.9-2-2V7c0-1.1.9-2 2-2h7v2H5v12h12v-7h2"
+                />
+              </svg>
+            </div>
+          </a>
+          <a
+            aria-label="Find me on Unsplash (opens in a new tab)"
+            class="sc-iBkjds JLudk"
+            href="https://unsplash.com/@georgegillams"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            Find me on Unsplash
+            <div
+              class="sc-ftvSup kUuEWK"
+            >
+              <svg
+                class="sc-gKXOVf ktoyia sc-papXJ fmVkXn"
+                height="18"
+                viewBox="0 0 24 24"
+                width="18"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M12.5 11.3c.4.4 1 .4 1.4 0L19 6.2V9c0 .6.4 1 1 1s1-.4 1-1V4c0-.6-.4-1-1-1h-5c-.6 0-1 .4-1 1s.4 1 1 1h2.4l-4.9 4.9c-.4.4-.4 1 0 1.4zM19 19c0 1.1-.9 2-2 2H5c-1.1 0-2-.9-2-2V7c0-1.1.9-2 2-2h7v2H5v12h12v-7h2"
+                />
+              </svg>
+            </div>
+          </a>
+          <a
+            aria-label="Find me on GuruShots (opens in a new tab)"
+            class="sc-iBkjds JLudk"
+            href="https://gurushots.com/georgegillams/achievements"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            Find me on GuruShots
+            <div
+              class="sc-ftvSup kUuEWK"
+            >
+              <svg
+                class="sc-gKXOVf ktoyia sc-papXJ fmVkXn"
+                height="18"
+                viewBox="0 0 24 24"
+                width="18"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M12.5 11.3c.4.4 1 .4 1.4 0L19 6.2V9c0 .6.4 1 1 1s1-.4 1-1V4c0-.6-.4-1-1-1h-5c-.6 0-1 .4-1 1s.4 1 1 1h2.4l-4.9 4.9c-.4.4-.4 1 0 1.4zM19 19c0 1.1-.9 2-2 2H5c-1.1 0-2-.9-2-2V7c0-1.1.9-2 2-2h7v2H5v12h12v-7h2"
+                />
+              </svg>
+            </div>
+          </a>
+          <a
+            class="sc-iBkjds JLudk"
+            href="/contact"
+          >
+            Contact me about photography work
+          </a>
+        </div>
+      </div>
+    </div>
+    <div
+      class="sc-crXcEl jVCfod"
+    >
+      <style>
+        .js .animated-content__wrapper--hidden {
+  padding-top: 4rem;
+  opacity: 0.01;
+}
+      </style>
+      <div
+        class="sc-iqcoie eeqyer animated-content__wrapper--hidden"
+      >
+        <div
+          class="sc-dIouRR dNePtF"
+          style="width: 100%;"
+        >
+          <div
+            class="sc-hHLeRK dEoKO"
+            style="margin-left: -0px;"
+          />
+        </div>
+      </div>
     </div>
   </div>
   <div
-    class="creative-commonssyles__Wrapper-sc-qff226-0 gOCDiS"
+    class="sc-crXcEl jVCfod"
   >
+    <style>
+      .js .animated-content__wrapper--hidden {
+  opacity: 0.01;
+}
+    </style>
     <div
-      class="creative-commonssyles__Background-sc-qff226-1 ddrRBh"
-    />
-    <div
-      class="sc-crXcEl hTWOhI creative-commonssyles__Inner-sc-qff226-2 gkGslB"
+      class="sc-iqcoie eeqyer animated-content__wrapper--hidden"
     >
-      <h1
-        class="sc-dkzDqf ddFalQ sc-ksZaOG ijJOzl"
-        id="copyright"
+      <div
+        class="creative-commonssyles__Wrapper-sc-qff226-0 gOCDiS"
       >
-        Copyright
-      </h1>
-      <span
-        class="sc-iqcoie fIUTrZ"
-      >
-        Most of my photos are licensed under
-         
-        <a
-          aria-label="Creative Commons BY-SA 3.0 (opens in a new tab)"
-          class="sc-iBkjds JLudk"
-          href="https://creativecommons.org/licenses/by-sa/3.0/"
-          rel="noopener noreferrer"
-          target="_blank"
+        <div
+          class="creative-commonssyles__Background-sc-qff226-1 ddrRBh"
+        />
+        <div
+          class="sc-hAZoDl iua-dtn creative-commonssyles__Inner-sc-qff226-2 gkGslB"
         >
-          Creative Commons BY-SA 3.0
-          <div
-            class="sc-ftvSup kUuEWK"
+          <h1
+            class="sc-dkzDqf ddFalQ sc-bjUoiL ioGKQB"
+            id="copyright"
           >
-            <svg
-              class="sc-gKXOVf ktoyia sc-papXJ fmVkXn"
-              height="18"
-              viewBox="0 0 24 24"
-              width="18"
-              xmlns="http://www.w3.org/2000/svg"
+            Copyright
+          </h1>
+          <span
+            class="sc-ksZaOG cQKWUS"
+          >
+            Most of my photos are licensed under
+             
+            <a
+              aria-label="Creative Commons BY-SA 3.0 (opens in a new tab)"
+              class="sc-iBkjds JLudk"
+              href="https://creativecommons.org/licenses/by-sa/3.0/"
+              rel="noopener noreferrer"
+              target="_blank"
             >
-              <path
-                d="M12.5 11.3c.4.4 1 .4 1.4 0L19 6.2V9c0 .6.4 1 1 1s1-.4 1-1V4c0-.6-.4-1-1-1h-5c-.6 0-1 .4-1 1s.4 1 1 1h2.4l-4.9 4.9c-.4.4-.4 1 0 1.4zM19 19c0 1.1-.9 2-2 2H5c-1.1 0-2-.9-2-2V7c0-1.1.9-2 2-2h7v2H5v12h12v-7h2"
-              />
-            </svg>
-          </div>
-        </a>
-        .
-        <br />
-        If you are unsure about your right to use them please 
-        <a
-          class="sc-iBkjds JLudk"
-          href="/contact"
-        >
-          contact me
-        </a>
-        .
-      </span>
+              Creative Commons BY-SA 3.0
+              <div
+                class="sc-ftvSup kUuEWK"
+              >
+                <svg
+                  class="sc-gKXOVf ktoyia sc-papXJ fmVkXn"
+                  height="18"
+                  viewBox="0 0 24 24"
+                  width="18"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M12.5 11.3c.4.4 1 .4 1.4 0L19 6.2V9c0 .6.4 1 1 1s1-.4 1-1V4c0-.6-.4-1-1-1h-5c-.6 0-1 .4-1 1s.4 1 1 1h2.4l-4.9 4.9c-.4.4-.4 1 0 1.4zM19 19c0 1.1-.9 2-2 2H5c-1.1 0-2-.9-2-2V7c0-1.1.9-2 2-2h7v2H5v12h12v-7h2"
+                  />
+                </svg>
+              </div>
+            </a>
+            .
+            <br />
+            If you are unsure about your right to use them please 
+            <a
+              class="sc-iBkjds JLudk"
+              href="/contact"
+            >
+              contact me
+            </a>
+            .
+          </span>
+        </div>
+      </div>
     </div>
   </div>
 </div>

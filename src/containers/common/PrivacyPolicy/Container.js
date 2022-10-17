@@ -5,18 +5,20 @@ import Paragraph from '@george-gillams/components/paragraph';
 
 import Subsection from '@george-gillams/components/subsection';
 import { VERSION } from '@george-gillams/webapp/helpers/storageConstants';
+import { withScrollAnimation } from '@george-gillams/components/effects';
+const SubsectionWithScroll = withScrollAnimation(Subsection);
 
 const PrivacyPolicy = () => {
   return (
     <PageContainer bottomPadding>
       <PageTitle name="Privacy policy">
-        <Subsection name="Accounts">
+        <SubsectionWithScroll name="Accounts">
           <Paragraph>
             When you sign-up for an account we ask for a username and email. We will never share these with
             third-parties. We store these only to enable access to your account.
           </Paragraph>
-        </Subsection>
-        <Subsection name="Analytics">
+        </SubsectionWithScroll>
+        <SubsectionWithScroll name="Analytics">
           <Paragraph>
             This site collects basic analytics information, namely the URL paths you visit within the site, and
             information about the device you are using. This is never shared with third-parties and never used to track
@@ -30,17 +32,17 @@ const PrivacyPolicy = () => {
             As this data contains no personally identifiable information and is not used to track you, it can be
             collected without consent.
           </Paragraph>
-        </Subsection>
-        <Subsection name="Cookies">
+        </SubsectionWithScroll>
+        <SubsectionWithScroll name="Cookies">
           <Paragraph>
             To keep you logged in to your user account an authentication cookie will be stored on your machine. This
             will not be used to track you, and will not be shared with any third-parties. As this is a purely functional
             cookie, it can be used without consent.
           </Paragraph>
-        </Subsection>
-        <Subsection name="Version">
+        </SubsectionWithScroll>
+        <SubsectionWithScroll name="Version">
           <Paragraph>This is version {VERSION} of the privacy policy.</Paragraph>
-        </Subsection>
+        </SubsectionWithScroll>
       </PageTitle>
     </PageContainer>
   );

@@ -7,11 +7,24 @@ import PageTitle from 'components/common/PageTitle';
 
 import PageContainer, { WIDTHS } from 'components/common/PageContainer';
 import { StyledButton } from './work-overview.styles';
+import { withScrollAnimation } from '@george-gillams/components/effects';
+
+const SubsectionWithScroll = withScrollAnimation(Subsection);
 
 const Work = () => (
   <PageContainer width={WIDTHS.prose} bottomPadding>
     <PageTitle name="Work">
-      <Subsection name="Skyscanner">
+      <SubsectionWithScroll name="Typeform">
+        <Paragraph>
+          I work on{' '}
+          <TextLink href="https://www.typeform.com/" hrefExternal>
+            Typeform&#39;s
+          </TextLink>{' '}
+          public front-end apps.
+        </Paragraph>
+      </SubsectionWithScroll>
+
+      <SubsectionWithScroll name="Skyscanner">
         <Paragraph>
           <TextLink hrefExternal href="https://backpack.github.io/">
             Backpack
@@ -22,24 +35,24 @@ const Work = () => (
         </Paragraph>
         <br />
         <StyledButton href="/work/backpack">My work in Backpack →</StyledButton>
-      </Subsection>
+      </SubsectionWithScroll>
 
-      <Subsection name="Software Engineering Masters">
+      <SubsectionWithScroll name="Software Engineering Masters">
         <Paragraph>I have a 1st class Masters in Software Engineering from the University of Southampton.</Paragraph>
         <br />
         <StyledButton href="/work/degree">My degree →</StyledButton>
-      </Subsection>
+      </SubsectionWithScroll>
 
-      <Subsection name="EPICC Conference">
+      <SubsectionWithScroll name="EPICC Conference">
         <Paragraph>
           EPICC is a non-profit conference for which I developed a website where delegates could reserve and pay for
           tickets.
         </Paragraph>
         <br />
         <StyledButton href="/work/epicc">Selling EPICC tickets →</StyledButton>
-      </Subsection>
+      </SubsectionWithScroll>
 
-      <Subsection name="Leonardo Company">
+      <SubsectionWithScroll name="Leonardo Company">
         <Paragraph>
           In 2015, I joined the EWOS (Electronic Warfare Operational Support) team at{' '}
           <TextLink href="http://www.leonardocompany.com/en/-/ewos-electronic_warfare_operational_support" hrefExternal>
@@ -48,22 +61,22 @@ const Work = () => (
           . My work there involved maintaining large .NET frameworks which supported feature-rich mission analysis
           tools.
         </Paragraph>
-      </Subsection>
+      </SubsectionWithScroll>
 
-      <Subsection name="Videography">
+      <SubsectionWithScroll name="Videography">
         <Paragraph>
           Before turning to Software Engineering, I was involved in professional film and TV production. From filming
           dance-shows to Weddings and University graduation ceremonies.
         </Paragraph>
-      </Subsection>
+      </SubsectionWithScroll>
 
-      <Subsection name="Stage work">
+      <SubsectionWithScroll name="Stage work">
         <Paragraph>
           I was involved in a number of stage performances. I was involved in Tosca at the Royal Opera House in 2008,
           and the Glyndebourne Carmen tour in 2009. I also sang in a modern-day adaptation of Handel&#39;s Semele in the
           Edinburgh Fringe Festival in 2017.
         </Paragraph>
-      </Subsection>
+      </SubsectionWithScroll>
     </PageTitle>
   </PageContainer>
 );

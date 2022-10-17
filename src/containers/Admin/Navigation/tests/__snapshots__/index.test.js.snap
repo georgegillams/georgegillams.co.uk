@@ -6,10 +6,10 @@ exports[`<AdminNavigation /> should render correctly - index 1`] = `
     aria-label="Loading"
   >
     <div
-      class="sc-ksZaOG duCsur"
+      class="sc-bjUoiL cAgDxb"
     >
       <div
-        class="sc-hAZoDl bQWNOe"
+        class="sc-idiyUo hyoeZZ"
         style="margin-left: -0px;"
       />
     </div>
@@ -17,26 +17,26 @@ exports[`<AdminNavigation /> should render correctly - index 1`] = `
       class="admin-navigationstyles__CardContainer-sc-n2t86e-0 gCaCSq"
     >
       <div
-        class="sc-ksZaOG fJrBYQ"
+        class="sc-bjUoiL dpJsGE"
       >
         <div
-          class="sc-hAZoDl bQWNOe"
+          class="sc-idiyUo hyoeZZ"
           style="margin-left: -0px;"
         />
       </div>
       <div
-        class="sc-ksZaOG fJrBYQ"
+        class="sc-bjUoiL dpJsGE"
       >
         <div
-          class="sc-hAZoDl bQWNOe"
+          class="sc-idiyUo hyoeZZ"
           style="margin-left: -0px;"
         />
       </div>
       <div
-        class="sc-ksZaOG fJrBYQ"
+        class="sc-bjUoiL dpJsGE"
       >
         <div
-          class="sc-hAZoDl bQWNOe"
+          class="sc-idiyUo hyoeZZ"
           style="margin-left: -0px;"
         />
       </div>
@@ -48,40 +48,44 @@ exports[`<AdminNavigation /> should render correctly - index 1`] = `
 exports[`<AdminNavigation /> should render correctly with admin user 1`] = `
 <div>
   <div
-    class="sc-gXmSlM gUDDtK"
+    class="sc-bZnhIo bUYDFS"
     width="default"
   >
-    <h1
-      class="sc-bczRLJ hDLBIv sc-jqUVSM cFomsy"
+    <div
+      class="sc-breuTD gWTOEy"
     >
-      Admin
-    </h1>
+      <h1
+        class="sc-bczRLJ hDLBIv sc-jqUVSM cFomsy"
+      >
+        Admin
+      </h1>
+    </div>
     <div
       class="admin-navigationstyles__CardContainer-sc-n2t86e-0 gCaCSq"
     >
       <a
         aria-label="Debug"
-        class="sc-fEOsli cXgttH sc-cxabCf fQooTn admin-navigationstyles__StyledFeatureCard-sc-n2t86e-1 FFmcP"
+        class="sc-hHLeRK kOvChB sc-ezWOiH blrmAI admin-navigationstyles__StyledFeatureCard-sc-n2t86e-1 FFmcP"
         href="/debug"
       >
         <div
-          class="sc-bjUoiL igSAfm"
+          class="sc-dmRaPn dCnxDV"
         >
           <div
-            class="sc-idiyUo kSzkUC"
+            class="sc-kgflAQ jLoDNj"
           />
           <div
-            class="sc-dIouRR OioNl"
+            class="sc-fLlhyt lbdYqJ"
           >
             <div
               aria-hidden="true"
-              class="sc-llJcti bdzqVg"
+              class="sc-bZkfAO kiHbjz"
             >
               <div
-                class="sc-iIPllB eVeYf date container"
+                class="sc-kLLXSd cfIWdF date container"
               />
               <div
-                class="sc-gicCDI hGHHuy"
+                class="sc-ikZpkk beDUqZ"
               >
                 <h1
                   class="sc-gsnTZi cTWewb"
@@ -95,27 +99,27 @@ exports[`<AdminNavigation /> should render correctly with admin user 1`] = `
       </a>
       <a
         aria-label="Analytics"
-        class="sc-fEOsli cXgttH sc-cxabCf fQooTn admin-navigationstyles__StyledFeatureCard-sc-n2t86e-1 FFmcP"
+        class="sc-hHLeRK kOvChB sc-ezWOiH blrmAI admin-navigationstyles__StyledFeatureCard-sc-n2t86e-1 FFmcP"
         href="/admin/analytics"
       >
         <div
-          class="sc-bjUoiL igSAfm"
+          class="sc-dmRaPn dCnxDV"
         >
           <div
-            class="sc-idiyUo kSzkUC"
+            class="sc-kgflAQ jLoDNj"
           />
           <div
-            class="sc-dIouRR OioNl"
+            class="sc-fLlhyt lbdYqJ"
           >
             <div
               aria-hidden="true"
-              class="sc-llJcti bdzqVg"
+              class="sc-bZkfAO kiHbjz"
             >
               <div
-                class="sc-iIPllB eVeYf date container"
+                class="sc-kLLXSd cfIWdF date container"
               />
               <div
-                class="sc-gicCDI hGHHuy"
+                class="sc-ikZpkk beDUqZ"
               >
                 <h1
                   class="sc-gsnTZi cTWewb"
@@ -129,27 +133,27 @@ exports[`<AdminNavigation /> should render correctly with admin user 1`] = `
       </a>
       <a
         aria-label="Emails"
-        class="sc-fEOsli cXgttH sc-cxabCf fQooTn admin-navigationstyles__StyledFeatureCard-sc-n2t86e-1 FFmcP"
+        class="sc-hHLeRK kOvChB sc-ezWOiH blrmAI admin-navigationstyles__StyledFeatureCard-sc-n2t86e-1 FFmcP"
         href="/admin/emails"
       >
         <div
-          class="sc-bjUoiL igSAfm"
+          class="sc-dmRaPn dCnxDV"
         >
           <div
-            class="sc-idiyUo kSzkUC"
+            class="sc-kgflAQ jLoDNj"
           />
           <div
-            class="sc-dIouRR OioNl"
+            class="sc-fLlhyt lbdYqJ"
           >
             <div
               aria-hidden="true"
-              class="sc-llJcti bdzqVg"
+              class="sc-bZkfAO kiHbjz"
             >
               <div
-                class="sc-iIPllB eVeYf date container"
+                class="sc-kLLXSd cfIWdF date container"
               />
               <div
-                class="sc-gicCDI hGHHuy"
+                class="sc-ikZpkk beDUqZ"
               >
                 <h1
                   class="sc-gsnTZi cTWewb"
@@ -163,27 +167,27 @@ exports[`<AdminNavigation /> should render correctly with admin user 1`] = `
       </a>
       <a
         aria-label="Notifications"
-        class="sc-fEOsli cXgttH sc-cxabCf fQooTn admin-navigationstyles__StyledFeatureCard-sc-n2t86e-1 FFmcP"
+        class="sc-hHLeRK kOvChB sc-ezWOiH blrmAI admin-navigationstyles__StyledFeatureCard-sc-n2t86e-1 FFmcP"
         href="/admin/notifications"
       >
         <div
-          class="sc-bjUoiL igSAfm"
+          class="sc-dmRaPn dCnxDV"
         >
           <div
-            class="sc-idiyUo kSzkUC"
+            class="sc-kgflAQ jLoDNj"
           />
           <div
-            class="sc-dIouRR OioNl"
+            class="sc-fLlhyt lbdYqJ"
           >
             <div
               aria-hidden="true"
-              class="sc-llJcti bdzqVg"
+              class="sc-bZkfAO kiHbjz"
             >
               <div
-                class="sc-iIPllB eVeYf date container"
+                class="sc-kLLXSd cfIWdF date container"
               />
               <div
-                class="sc-gicCDI hGHHuy"
+                class="sc-ikZpkk beDUqZ"
               >
                 <h1
                   class="sc-gsnTZi cTWewb"
@@ -197,27 +201,27 @@ exports[`<AdminNavigation /> should render correctly with admin user 1`] = `
       </a>
       <a
         aria-label="Users"
-        class="sc-fEOsli cXgttH sc-cxabCf fQooTn admin-navigationstyles__StyledFeatureCard-sc-n2t86e-1 FFmcP"
+        class="sc-hHLeRK kOvChB sc-ezWOiH blrmAI admin-navigationstyles__StyledFeatureCard-sc-n2t86e-1 FFmcP"
         href="/admin/users"
       >
         <div
-          class="sc-bjUoiL igSAfm"
+          class="sc-dmRaPn dCnxDV"
         >
           <div
-            class="sc-idiyUo kSzkUC"
+            class="sc-kgflAQ jLoDNj"
           />
           <div
-            class="sc-dIouRR OioNl"
+            class="sc-fLlhyt lbdYqJ"
           >
             <div
               aria-hidden="true"
-              class="sc-llJcti bdzqVg"
+              class="sc-bZkfAO kiHbjz"
             >
               <div
-                class="sc-iIPllB eVeYf date container"
+                class="sc-kLLXSd cfIWdF date container"
               />
               <div
-                class="sc-gicCDI hGHHuy"
+                class="sc-ikZpkk beDUqZ"
               >
                 <h1
                   class="sc-gsnTZi cTWewb"
@@ -240,10 +244,10 @@ exports[`<AdminNavigation /> should render correctly with auth error 1`] = `
     aria-label="Loading"
   >
     <div
-      class="sc-ksZaOG duCsur"
+      class="sc-bjUoiL cAgDxb"
     >
       <div
-        class="sc-hAZoDl bQWNOe"
+        class="sc-idiyUo hyoeZZ"
         style="margin-left: -0px;"
       />
     </div>
@@ -251,36 +255,36 @@ exports[`<AdminNavigation /> should render correctly with auth error 1`] = `
       class="admin-navigationstyles__CardContainer-sc-n2t86e-0 gCaCSq"
     >
       <div
-        class="sc-ksZaOG fJrBYQ"
+        class="sc-bjUoiL dpJsGE"
       >
         <div
-          class="sc-hAZoDl bQWNOe"
+          class="sc-idiyUo hyoeZZ"
           style="margin-left: -0px;"
         />
       </div>
       <div
-        class="sc-ksZaOG fJrBYQ"
+        class="sc-bjUoiL dpJsGE"
       >
         <div
-          class="sc-hAZoDl bQWNOe"
+          class="sc-idiyUo hyoeZZ"
           style="margin-left: -0px;"
         />
       </div>
       <div
-        class="sc-ksZaOG fJrBYQ"
+        class="sc-bjUoiL dpJsGE"
       >
         <div
-          class="sc-hAZoDl bQWNOe"
+          class="sc-idiyUo hyoeZZ"
           style="margin-left: -0px;"
         />
       </div>
     </div>
   </div>
   <div
-    class="sc-iqcoie fvEXqf"
+    class="sc-ksZaOG fmXsYE"
   >
     <h1
-      class="sc-dkzDqf ddFalQ sc-breuTD sbvki"
+      class="sc-dkzDqf ddFalQ sc-fEOsli bjQyEs"
       id="this-is-taking-a-while.-maybe-something-isn't-quite-right..."
     >
       This is taking a while. Maybe something isn't quite right...
@@ -295,10 +299,10 @@ exports[`<AdminNavigation /> should render correctly with initial state 1`] = `
     aria-label="Loading"
   >
     <div
-      class="sc-ksZaOG duCsur"
+      class="sc-bjUoiL cAgDxb"
     >
       <div
-        class="sc-hAZoDl bQWNOe"
+        class="sc-idiyUo hyoeZZ"
         style="margin-left: -0px;"
       />
     </div>
@@ -306,26 +310,26 @@ exports[`<AdminNavigation /> should render correctly with initial state 1`] = `
       class="admin-navigationstyles__CardContainer-sc-n2t86e-0 gCaCSq"
     >
       <div
-        class="sc-ksZaOG fJrBYQ"
+        class="sc-bjUoiL dpJsGE"
       >
         <div
-          class="sc-hAZoDl bQWNOe"
+          class="sc-idiyUo hyoeZZ"
           style="margin-left: -0px;"
         />
       </div>
       <div
-        class="sc-ksZaOG fJrBYQ"
+        class="sc-bjUoiL dpJsGE"
       >
         <div
-          class="sc-hAZoDl bQWNOe"
+          class="sc-idiyUo hyoeZZ"
           style="margin-left: -0px;"
         />
       </div>
       <div
-        class="sc-ksZaOG fJrBYQ"
+        class="sc-bjUoiL dpJsGE"
       >
         <div
-          class="sc-hAZoDl bQWNOe"
+          class="sc-idiyUo hyoeZZ"
           style="margin-left: -0px;"
         />
       </div>
@@ -337,20 +341,20 @@ exports[`<AdminNavigation /> should render correctly with initial state 1`] = `
 exports[`<AdminNavigation /> should render correctly with user 1`] = `
 <div>
   <div
-    class="sc-gXmSlM gUDDtK"
+    class="sc-bZnhIo bUYDFS"
     width="default"
   >
     <div
-      class="sc-iqcoie fvEXqf"
+      class="sc-ksZaOG fmXsYE"
     >
       <h1
-        class="sc-gsnTZi cTWewb sc-breuTD kCJHVK"
+        class="sc-gsnTZi cTWewb sc-fEOsli cWAOmA"
         id="admin-only"
       >
         Admin only
       </h1>
       <span
-        class="sc-himrzO lJcae"
+        class="sc-jdAMXn hvPhpF"
       >
         You need to be logged in with an admin account to view this content.
         <br />

@@ -1,7 +1,7 @@
 import { primaryColor, primaryColorDarkMode } from '@george-gillams/components/constants/colors';
 import { breakpointMd, breakpointSm, spacingBase, spacingLg } from '@george-gillams/components/constants/layout';
 import { focusStyle } from '@george-gillams/components/constants/styles';
-import styled, { css } from 'styled-components';
+import styled, { css, keyframes } from 'styled-components';
 
 export const OuterContainer = styled.div`
   display: flex;
@@ -33,12 +33,7 @@ export const OuterContainer = styled.div`
     `}
 `;
 
-export const StyledLink = styled.a`
-  border-radius: 0.25rem;
-
-  ${focusStyle(true)}
-
-  @keyframes gg-bounce-hover-effect-2 {
+const bounceHoverEffect = keyframes`
     0% {
       transform: scale(1);
     }
@@ -48,13 +43,18 @@ export const StyledLink = styled.a`
     100% {
       transform: scale(1);
     }
-  }
+`;
+
+export const StyledLink = styled.a`
+  border-radius: 0.25rem;
+
+  ${focusStyle(true)}
 
   &:hover,
   &:active,
   &:focus {
     animation-duration: 0.4s;
-    animation-name: gg-bounce-hover-effect-2;
+    animation-name: ${bounceHoverEffect};
   }
 `;
 

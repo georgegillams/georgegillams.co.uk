@@ -6,11 +6,15 @@ exports[`<Status /> should render correctly 1`] = `
     class="sc-bczRLJ ikoAiL page-containerstyles__StyledPageContainer-sc-19l7k4-0"
     width="default"
   >
-    <h1
-      class="sc-dkzDqf grUNba sc-iqcoie fulViU"
+    <div
+      class="sc-hAZoDl gTuHKu"
     >
-      Status
-    </h1>
+      <h1
+        class="sc-dkzDqf grUNba sc-iqcoie fulViU"
+      >
+        Status
+      </h1>
+    </div>
     <span
       class="sc-gsnTZi bUAnoQ"
     >
@@ -29,10 +33,10 @@ exports[`<Status /> should render correctly 1`] = `
       test-node-env
     </span>
     <div
-      class="sc-evZas fjRNQE sc-fnykZs bskKYg"
+      class="sc-fnykZs pkqjk sc-dIouRR hImLoc"
     >
       <h1
-        class="sc-hKMtZM bftfxT sc-hAZoDl VIrFO"
+        class="sc-hKMtZM bftfxT sc-idiyUo kEQaPd"
         id="app-config"
       >
         App config

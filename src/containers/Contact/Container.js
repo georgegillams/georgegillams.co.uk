@@ -13,12 +13,13 @@ import emailLogo from './email.svg';
 import unsplashLogo from './unsplash.svg';
 import formLogo from './form.svg';
 import PageContainer, { WIDTHS } from 'components/common/PageContainer';
-import { IconImage, ImageIconContainer, StyledInfoCellWithScroll } from './contact.styles';
+import { IconImage, ImageIconContainer, Spacer, StyledInfoCellWithScroll } from './contact.styles';
 
 const Contact = () => {
   return (
     <PageContainer width={WIDTHS.fullWidth} centred>
-      <PageTitle name="Get in touch">
+      <PageTitle name="Get in touch" style={{ width: '100%' }}>
+        <Spacer />
         <StyledInfoCellWithScroll
           title="Form"
           content={
@@ -82,7 +83,7 @@ const Contact = () => {
           }
           aux={
             <ImageIconContainer>
-              <IconImage src={emailLogo} />
+              <IconImage invertInDarkMode src={emailLogo} />
             </ImageIconContainer>
           }
         />
