@@ -34,6 +34,10 @@ const signale = new Signale(options);
 
   applySecurityPractises(server);
 
+  // server.all('/_next/webpack-hmr', (req, res) => {
+  //   nextjsRequestHandler(req, res)
+  // })
+
   // enable sending API requests with files in form-data
   server.use(fileupload());
 
@@ -42,6 +46,7 @@ const signale = new Signale(options);
 
   server.use(greasemonkey);
   server.use(seo);
+
   server.use('/api', api);
   server.use('/static', express.static(dev ? 'public/static' : 'build/public/static'));
 

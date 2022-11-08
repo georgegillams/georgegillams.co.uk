@@ -9,7 +9,7 @@ const Logo = props => {
 
   return (
     <OuterContainer alwaysCentred={alwaysCentred} padding={padding} {...rest}>
-      <Link href="/">
+      <Link href="/" legacyBehavior>
         <StyledLink href="/">
           <LargeText theme={theme} animated={animated} pride={pride} padding={padding} aria-label="Home page">
             G
