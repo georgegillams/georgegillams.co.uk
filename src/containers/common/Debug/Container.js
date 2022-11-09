@@ -9,6 +9,9 @@ import {
 } from '@george-gillams/webapp/helpers/storageConstants';
 import PageContainer from 'components/common/PageContainer';
 import { VStack } from 'components/common/Stacks';
+import { ANIMATIONS, withScrollAnimation } from '@george-gillams/components/effects';
+
+const VStackWithScroll = withScrollAnimation(VStack, { animation: ANIMATIONS.fade });
 
 const StatusControl = props => {
   const { name, storageKey, ...rest } = props;
@@ -45,11 +48,11 @@ StatusControl.propTypes = {
 const Debug = props => (
   <PageContainer bottomPadding {...props}>
     <PageTitle anchor={false} name="Debug">
-      <VStack topPadding>
+      <VStackWithScroll topPadding>
         <StatusControl name="Show session debug views" storageKey={DEBUG_SHOW_DEBUG_INFORMATION_KEY} />
         <StatusControl name="Show page container debug colours" storageKey={DEBUG_SHOW_PAGE_CONTAINER_KEY} />
         <Paragraph>Note that changes will not take effect until you reload the page.</Paragraph>
-      </VStack>
+      </VStackWithScroll>
     </PageTitle>
   </PageContainer>
 );

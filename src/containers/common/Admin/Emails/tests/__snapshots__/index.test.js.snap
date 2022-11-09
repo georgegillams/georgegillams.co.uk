@@ -4,50 +4,50 @@ exports[`<AdminEmails /> should render correctly - index 1`] = `
 <div>
   <div
     aria-label="Loading"
-    class="sc-fEOsli lgueII page-containerstyles__StyledPageContainer-sc-19l7k4-0"
+    class="sc-hHLeRK btzriW page-containerstyles__StyledPageContainer-sc-19l7k4-0"
     width="default"
   >
     <div
-      class="sc-ksZaOG duCsur"
+      class="sc-bjUoiL cAgDxb"
     >
       <div
-        class="sc-hAZoDl bQWNOe"
+        class="sc-idiyUo hyoeZZ"
         style="margin-left: -0px;"
       />
     </div>
     <div
-      class="sc-ksZaOG gPHHop"
+      class="sc-bjUoiL bDehF"
       style="margin-top: 1.2rem;"
     >
       <div
-        class="sc-hAZoDl bQWNOe"
+        class="sc-idiyUo hyoeZZ"
         style="margin-left: -0px;"
       />
     </div>
     <div
-      class="sc-ksZaOG gPHHop"
+      class="sc-bjUoiL bDehF"
       style="margin-top: 1.2rem;"
     >
       <div
-        class="sc-hAZoDl bQWNOe"
+        class="sc-idiyUo hyoeZZ"
         style="margin-left: -0px;"
       />
     </div>
     <div
-      class="sc-ksZaOG gPHHop"
+      class="sc-bjUoiL bDehF"
       style="margin-top: 1.2rem;"
     >
       <div
-        class="sc-hAZoDl bQWNOe"
+        class="sc-idiyUo hyoeZZ"
         style="margin-left: -0px;"
       />
     </div>
     <div
-      class="sc-ksZaOG gPHHop"
+      class="sc-bjUoiL bDehF"
       style="margin-top: 1.2rem;"
     >
       <div
-        class="sc-hAZoDl bQWNOe"
+        class="sc-idiyUo hyoeZZ"
         style="margin-left: -0px;"
       />
     </div>
@@ -59,28 +59,36 @@ exports[`<AdminEmails /> should render correctly with admin user 1`] = `
 <div>
   <div>
     <div
-      class="sc-kDDrLX emakin"
+      class="sc-breuTD gWTOEy"
     >
-      <a
-        class="sc-iBkjds JLudk"
-        href="/admin"
+      <div
+        class="sc-kDDrLX emakin"
       >
-        ⇠ Admin
-      </a>
+        <a
+          class="sc-iBkjds JLudk"
+          href="/admin"
+        >
+          ⇠ Admin
+        </a>
+      </div>
     </div>
-    <h1
-      class="sc-bczRLJ hDLBIv sc-jqUVSM drQcdn"
+    <div
+      class="sc-breuTD gWTOEy"
     >
-      Admin emails
-    </h1>
+      <h1
+        class="sc-bczRLJ hDLBIv sc-jqUVSM drQcdn"
+      >
+        Admin emails
+      </h1>
+    </div>
   </div>
   <div>
     <button
-      class="sc-hHLeRK esewhQ admin-emailsstyles__StyledButton-sc-zq6ujt-0 jNNkEw"
+      class="sc-bBrHrO dOSzAj admin-emailsstyles__StyledButton-sc-zq6ujt-0 jNNkEw"
       type="button"
     >
       <span
-        class="sc-kgflAQ hRTnZw"
+        class="sc-cxabCf kcehXf"
       >
         Reload emails
       </span>
@@ -104,35 +112,43 @@ exports[`<AdminEmails /> should render correctly with emails 1`] = `
 <div>
   <div>
     <div
-      class="sc-kDDrLX emakin"
+      class="sc-breuTD gWTOEy"
     >
-      <a
-        class="sc-iBkjds JLudk"
-        href="/admin"
+      <div
+        class="sc-kDDrLX emakin"
       >
-        ⇠ Admin
-      </a>
+        <a
+          class="sc-iBkjds JLudk"
+          href="/admin"
+        >
+          ⇠ Admin
+        </a>
+      </div>
     </div>
-    <h1
-      class="sc-bczRLJ hDLBIv sc-jqUVSM drQcdn"
+    <div
+      class="sc-breuTD gWTOEy"
     >
-      Admin emails
-    </h1>
+      <h1
+        class="sc-bczRLJ hDLBIv sc-jqUVSM drQcdn"
+      >
+        Admin emails
+      </h1>
+    </div>
   </div>
   <div>
     <button
-      class="sc-hHLeRK esewhQ admin-emailsstyles__StyledButton-sc-zq6ujt-0 jNNkEw"
+      class="sc-bBrHrO dOSzAj admin-emailsstyles__StyledButton-sc-zq6ujt-0 jNNkEw"
       type="button"
     >
       <span
-        class="sc-kgflAQ hRTnZw"
+        class="sc-cxabCf kcehXf"
       >
         Reload emails
       </span>
     </button>
   </div>
   <span
-    class="sc-fnykZs kIjAem admin-emailsstyles__Count-sc-zq6ujt-2 ZNuVi"
+    class="sc-dIouRR fiupoW admin-emailsstyles__Count-sc-zq6ujt-2 ZNuVi"
   >
     Showing 
     3
@@ -150,33 +166,33 @@ exports[`<AdminEmails /> should render correctly with emails 1`] = `
         class="stackstyles__StyledVStack-sc-1m733wj-0 hxKxqM"
       >
         <a
-          class="sc-ivTmOn iuNGHC"
+          class="sc-gicCDI bfGlDG"
           href="/admin/emails?highlight=1"
           id="1"
         >
           <div
-            class="sc-cxabCf dtDPuA"
+            class="sc-ezWOiH lfqRxL"
           >
             <div
-              class="sc-llJcti fpAjGx"
+              class="sc-bZkfAO kpENcq"
             />
             <div
-              class="sc-iIPllB cJILiA"
+              class="sc-kLLXSd gppdjy"
             >
               <div
                 class="split-detail-itemstyles__Item-sc-5gess9-0 cHrFus"
               >
                 <div
-                  class="sc-iqcoie fvEXqf"
+                  class="sc-ksZaOG fmXsYE"
                 >
                   <h1
-                    class="sc-dkzDqf ddFalQ sc-breuTD sbvki"
+                    class="sc-dkzDqf ddFalQ sc-fEOsli bjQyEs"
                     id="email-1"
                   >
                     Email 1
                   </h1>
                   <span
-                    class="sc-fnykZs kIjAem"
+                    class="sc-dIouRR fiupoW"
                   >
                     <br />
                     id: 
@@ -188,33 +204,33 @@ exports[`<AdminEmails /> should render correctly with emails 1`] = `
           </div>
         </a>
         <a
-          class="sc-ivTmOn iuNGHC"
+          class="sc-gicCDI bfGlDG"
           href="/admin/emails?highlight=2"
           id="2"
         >
           <div
-            class="sc-cxabCf dtDPuA"
+            class="sc-ezWOiH lfqRxL"
           >
             <div
-              class="sc-llJcti fpAjGx"
+              class="sc-bZkfAO kpENcq"
             />
             <div
-              class="sc-iIPllB cJILiA"
+              class="sc-kLLXSd gppdjy"
             >
               <div
                 class="split-detail-itemstyles__Item-sc-5gess9-0 cHrFus"
               >
                 <div
-                  class="sc-iqcoie fvEXqf"
+                  class="sc-ksZaOG fmXsYE"
                 >
                   <h1
-                    class="sc-dkzDqf ddFalQ sc-breuTD sbvki"
+                    class="sc-dkzDqf ddFalQ sc-fEOsli bjQyEs"
                     id="email-2"
                   >
                     Email 2
                   </h1>
                   <span
-                    class="sc-fnykZs kIjAem"
+                    class="sc-dIouRR fiupoW"
                   >
                     <br />
                     id: 
@@ -226,33 +242,33 @@ exports[`<AdminEmails /> should render correctly with emails 1`] = `
           </div>
         </a>
         <a
-          class="sc-ivTmOn iuNGHC"
+          class="sc-gicCDI bfGlDG"
           href="/admin/emails?highlight=3"
           id="3"
         >
           <div
-            class="sc-cxabCf dtDPuA"
+            class="sc-ezWOiH lfqRxL"
           >
             <div
-              class="sc-llJcti fpAjGx"
+              class="sc-bZkfAO kpENcq"
             />
             <div
-              class="sc-iIPllB cJILiA"
+              class="sc-kLLXSd gppdjy"
             >
               <div
                 class="split-detail-itemstyles__Item-sc-5gess9-0 cHrFus"
               >
                 <div
-                  class="sc-iqcoie fvEXqf"
+                  class="sc-ksZaOG fmXsYE"
                 >
                   <h1
-                    class="sc-dkzDqf ddFalQ sc-breuTD sbvki"
+                    class="sc-dkzDqf ddFalQ sc-fEOsli bjQyEs"
                     id="email-3"
                   >
                     Email 3
                   </h1>
                   <span
-                    class="sc-fnykZs kIjAem"
+                    class="sc-dIouRR fiupoW"
                   >
                     <br />
                     id: 
@@ -273,50 +289,50 @@ exports[`<AdminEmails /> should render correctly with initial state 1`] = `
 <div>
   <div
     aria-label="Loading"
-    class="sc-fEOsli lgueII page-containerstyles__StyledPageContainer-sc-19l7k4-0"
+    class="sc-hHLeRK btzriW page-containerstyles__StyledPageContainer-sc-19l7k4-0"
     width="default"
   >
     <div
-      class="sc-ksZaOG duCsur"
+      class="sc-bjUoiL cAgDxb"
     >
       <div
-        class="sc-hAZoDl bQWNOe"
+        class="sc-idiyUo hyoeZZ"
         style="margin-left: -0px;"
       />
     </div>
     <div
-      class="sc-ksZaOG gPHHop"
+      class="sc-bjUoiL bDehF"
       style="margin-top: 1.2rem;"
     >
       <div
-        class="sc-hAZoDl bQWNOe"
+        class="sc-idiyUo hyoeZZ"
         style="margin-left: -0px;"
       />
     </div>
     <div
-      class="sc-ksZaOG gPHHop"
+      class="sc-bjUoiL bDehF"
       style="margin-top: 1.2rem;"
     >
       <div
-        class="sc-hAZoDl bQWNOe"
+        class="sc-idiyUo hyoeZZ"
         style="margin-left: -0px;"
       />
     </div>
     <div
-      class="sc-ksZaOG gPHHop"
+      class="sc-bjUoiL bDehF"
       style="margin-top: 1.2rem;"
     >
       <div
-        class="sc-hAZoDl bQWNOe"
+        class="sc-idiyUo hyoeZZ"
         style="margin-left: -0px;"
       />
     </div>
     <div
-      class="sc-ksZaOG gPHHop"
+      class="sc-bjUoiL bDehF"
       style="margin-top: 1.2rem;"
     >
       <div
-        class="sc-hAZoDl bQWNOe"
+        class="sc-idiyUo hyoeZZ"
         style="margin-left: -0px;"
       />
     </div>
@@ -328,38 +344,46 @@ exports[`<AdminEmails /> should render correctly with loadError 1`] = `
 <div>
   <div>
     <div
-      class="sc-kDDrLX emakin"
+      class="sc-breuTD gWTOEy"
     >
-      <a
-        class="sc-iBkjds JLudk"
-        href="/admin"
+      <div
+        class="sc-kDDrLX emakin"
       >
-        ⇠ Admin
-      </a>
+        <a
+          class="sc-iBkjds JLudk"
+          href="/admin"
+        >
+          ⇠ Admin
+        </a>
+      </div>
     </div>
-    <h1
-      class="sc-bczRLJ hDLBIv sc-jqUVSM drQcdn"
+    <div
+      class="sc-breuTD gWTOEy"
     >
-      Admin emails
-    </h1>
+      <h1
+        class="sc-bczRLJ hDLBIv sc-jqUVSM drQcdn"
+      >
+        Admin emails
+      </h1>
+    </div>
   </div>
   <div>
     <button
-      class="sc-hHLeRK esewhQ admin-emailsstyles__StyledButton-sc-zq6ujt-0 jNNkEw"
+      class="sc-bBrHrO dOSzAj admin-emailsstyles__StyledButton-sc-zq6ujt-0 jNNkEw"
       type="button"
     >
       <span
-        class="sc-kgflAQ hRTnZw"
+        class="sc-cxabCf kcehXf"
       >
         Reload emails
       </span>
     </button>
   </div>
   <span
-    class="sc-fnykZs kIjAem"
+    class="sc-dIouRR fiupoW"
   >
     <span
-      class="sc-bjUoiL lnnJny"
+      class="sc-dmRaPn cCLtJt"
     >
       Could not load emails
       <br />
@@ -384,62 +408,70 @@ exports[`<AdminEmails /> should render correctly with loading=true 1`] = `
 <div>
   <div>
     <div
-      class="sc-kDDrLX emakin"
+      class="sc-breuTD gWTOEy"
     >
-      <a
-        class="sc-iBkjds JLudk"
-        href="/admin"
+      <div
+        class="sc-kDDrLX emakin"
       >
-        ⇠ Admin
-      </a>
+        <a
+          class="sc-iBkjds JLudk"
+          href="/admin"
+        >
+          ⇠ Admin
+        </a>
+      </div>
     </div>
-    <h1
-      class="sc-bczRLJ hDLBIv sc-jqUVSM drQcdn"
+    <div
+      class="sc-breuTD gWTOEy"
     >
-      Admin emails
-    </h1>
+      <h1
+        class="sc-bczRLJ hDLBIv sc-jqUVSM drQcdn"
+      >
+        Admin emails
+      </h1>
+    </div>
   </div>
   <div>
     <button
-      class="sc-hHLeRK gSBJBQ admin-emailsstyles__StyledButton-sc-zq6ujt-0 jNNkEw"
+      class="sc-bBrHrO jPwjtv admin-emailsstyles__StyledButton-sc-zq6ujt-0 jNNkEw"
       disabled=""
       type="button"
     >
       <span
-        class="sc-kgflAQ jaLWuf"
+        class="sc-cxabCf hfKlhc"
       >
         Reload emails
       </span>
       <div
         aria-hidden="true"
-        class="sc-fLlhyt dtBjEm"
+        class="sc-llJcti bkWzGt"
       >
         <div
-          class="sc-idiyUo iBqozc"
+          class="sc-kgflAQ bGtehY"
         >
           <div
-            class="sc-dIouRR gBQhvH"
+            class="sc-fLlhyt bOovNu"
           />
           <div
-            class="sc-dIouRR gzKIWf"
+            class="sc-fLlhyt iltUFu"
           />
           <div
-            class="sc-dIouRR fsALHg"
+            class="sc-fLlhyt lWeXB"
           />
           <div
-            class="sc-dIouRR cWRLIN"
+            class="sc-fLlhyt blXqmk"
           />
           <div
-            class="sc-dIouRR gWnMPS"
+            class="sc-fLlhyt kWvkLb"
           />
           <div
-            class="sc-dIouRR jdEZHP"
+            class="sc-fLlhyt jtwCiO"
           />
           <div
-            class="sc-dIouRR bHHaa-D"
+            class="sc-fLlhyt dbjVJS"
           />
           <div
-            class="sc-dIouRR dhBncX"
+            class="sc-fLlhyt hmlxzO"
           />
         </div>
       </div>
@@ -463,28 +495,36 @@ exports[`<AdminEmails /> should render correctly with resendError 1`] = `
 <div>
   <div>
     <div
-      class="sc-kDDrLX emakin"
+      class="sc-breuTD gWTOEy"
     >
-      <a
-        class="sc-iBkjds JLudk"
-        href="/admin"
+      <div
+        class="sc-kDDrLX emakin"
       >
-        ⇠ Admin
-      </a>
+        <a
+          class="sc-iBkjds JLudk"
+          href="/admin"
+        >
+          ⇠ Admin
+        </a>
+      </div>
     </div>
-    <h1
-      class="sc-bczRLJ hDLBIv sc-jqUVSM drQcdn"
+    <div
+      class="sc-breuTD gWTOEy"
     >
-      Admin emails
-    </h1>
+      <h1
+        class="sc-bczRLJ hDLBIv sc-jqUVSM drQcdn"
+      >
+        Admin emails
+      </h1>
+    </div>
   </div>
   <div>
     <button
-      class="sc-hHLeRK esewhQ admin-emailsstyles__StyledButton-sc-zq6ujt-0 jNNkEw"
+      class="sc-bBrHrO dOSzAj admin-emailsstyles__StyledButton-sc-zq6ujt-0 jNNkEw"
       type="button"
     >
       <span
-        class="sc-kgflAQ hRTnZw"
+        class="sc-cxabCf kcehXf"
       >
         Reload emails
       </span>
@@ -508,28 +548,36 @@ exports[`<AdminEmails /> should render correctly with resending=true 1`] = `
 <div>
   <div>
     <div
-      class="sc-kDDrLX emakin"
+      class="sc-breuTD gWTOEy"
     >
-      <a
-        class="sc-iBkjds JLudk"
-        href="/admin"
+      <div
+        class="sc-kDDrLX emakin"
       >
-        ⇠ Admin
-      </a>
+        <a
+          class="sc-iBkjds JLudk"
+          href="/admin"
+        >
+          ⇠ Admin
+        </a>
+      </div>
     </div>
-    <h1
-      class="sc-bczRLJ hDLBIv sc-jqUVSM drQcdn"
+    <div
+      class="sc-breuTD gWTOEy"
     >
-      Admin emails
-    </h1>
+      <h1
+        class="sc-bczRLJ hDLBIv sc-jqUVSM drQcdn"
+      >
+        Admin emails
+      </h1>
+    </div>
   </div>
   <div>
     <button
-      class="sc-hHLeRK esewhQ admin-emailsstyles__StyledButton-sc-zq6ujt-0 jNNkEw"
+      class="sc-bBrHrO dOSzAj admin-emailsstyles__StyledButton-sc-zq6ujt-0 jNNkEw"
       type="button"
     >
       <span
-        class="sc-kgflAQ hRTnZw"
+        class="sc-cxabCf kcehXf"
       >
         Reload emails
       </span>
@@ -552,16 +600,16 @@ exports[`<AdminEmails /> should render correctly with resending=true 1`] = `
 exports[`<AdminEmails /> should render correctly with user 1`] = `
 <div>
   <div
-    class="sc-iqcoie fvEXqf"
+    class="sc-ksZaOG fmXsYE"
   >
     <h1
-      class="sc-gsnTZi cTWewb sc-breuTD kCJHVK"
+      class="sc-gsnTZi cTWewb sc-fEOsli cWAOmA"
       id="admin-only"
     >
       Admin only
     </h1>
     <span
-      class="sc-fnykZs kIjAem"
+      class="sc-dIouRR fiupoW"
     >
       You need to be logged in with an admin account to view this content.
       <br />

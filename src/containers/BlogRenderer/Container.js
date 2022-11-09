@@ -16,6 +16,9 @@ import Section from '@george-gillams/components/section';
 import Head from 'next/head';
 import PageContainer, { WIDTHS } from 'components/common/PageContainer';
 import { DateContainer, TagList } from './blog-renderer.styles';
+import { ANIMATIONS, withScrollAnimation } from '@george-gillams/components/effects';
+
+const CreativeCommonsWithScroll = withScrollAnimation(CreativeCommons, { animation: ANIMATIONS.fade });
 
 const BlogRenderer = props => {
   const { blogSubcategory, ssrBlog, blogId, loadBlog, updateBlog, blogRenderState, authenticatorState, linkPrefix } =
@@ -108,7 +111,7 @@ const BlogRenderer = props => {
           </>
         </LoadingCover>
       </PageContainer>
-      <CreativeCommons />
+      <CreativeCommonsWithScroll />
     </>
   );
 };

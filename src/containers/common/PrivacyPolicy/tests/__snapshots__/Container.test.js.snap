@@ -6,82 +6,142 @@ exports[`<PrivacyPolicy /> should render correctly - index 1`] = `
     class="sc-bczRLJ ikoAiL page-containerstyles__StyledPageContainer-sc-19l7k4-0"
     width="default"
   >
-    <h1
-      class="sc-gsnTZi hUDWSp sc-kDDrLX cCIGfN"
-    >
-      Privacy policy
-    </h1>
     <div
-      class="sc-evZas fjRNQE"
+      class="sc-ksZaOG itmwyR"
     >
       <h1
-        class="sc-hKMtZM juqKJr sc-hAZoDl lgucHm"
-        id="accounts"
+        class="sc-gsnTZi hUDWSp sc-kDDrLX cCIGfN"
       >
-        Accounts
+        Privacy policy
       </h1>
-      <span
-        class="sc-crXcEl hyjoRq"
-      >
-        When you sign-up for an account we ask for a username and email. We will never share these with third-parties. We store these only to enable access to your account.
-      </span>
     </div>
     <div
-      class="sc-evZas fjRNQE"
+      class="sc-evZas csYxrp"
     >
-      <h1
-        class="sc-hKMtZM juqKJr sc-hAZoDl lgucHm"
-        id="analytics"
+      <style>
+        .js .animated-content__wrapper--hidden {
+  padding-top: 4rem;
+  opacity: 0.01;
+}
+      </style>
+      <div
+        class="sc-crXcEl hfkUjM animated-content__wrapper--hidden"
       >
-        Analytics
-      </h1>
-      <span
-        class="sc-crXcEl hyjoRq"
-      >
-        This site collects basic analytics information, namely the URL paths you visit within the site, and information about the device you are using. This is never shared with third-parties and never used to track you across other services.
-      </span>
-      <span
-        class="sc-crXcEl hyjoRq"
-      >
-        The information collected about your device includes browser, browser version, OS, OS version, and the first part of your IP address which gives a very, very rough location of access.
-      </span>
-      <span
-        class="sc-crXcEl hyjoRq"
-      >
-        As this data contains no personally identifiable information and is not used to track you, it can be collected without consent.
-      </span>
+        <div
+          class="sc-fnykZs pkqjk"
+        >
+          <h1
+            class="sc-hKMtZM juqKJr sc-idiyUo dvYYnV"
+            id="accounts"
+          >
+            Accounts
+          </h1>
+          <span
+            class="sc-hAZoDl LEXuB"
+          >
+            When you sign-up for an account we ask for a username and email. We will never share these with third-parties. We store these only to enable access to your account.
+          </span>
+        </div>
+      </div>
     </div>
     <div
-      class="sc-evZas fjRNQE"
+      class="sc-evZas csYxrp"
     >
-      <h1
-        class="sc-hKMtZM juqKJr sc-hAZoDl lgucHm"
-        id="cookies"
+      <style>
+        .js .animated-content__wrapper--hidden {
+  padding-top: 4rem;
+  opacity: 0.01;
+}
+      </style>
+      <div
+        class="sc-crXcEl hfkUjM animated-content__wrapper--hidden"
       >
-        Cookies
-      </h1>
-      <span
-        class="sc-crXcEl hyjoRq"
-      >
-        To keep you logged in to your user account an authentication cookie will be stored on your machine. This will not be used to track you, and will not be shared with any third-parties. As this is a purely functional cookie, it can be used without consent.
-      </span>
+        <div
+          class="sc-fnykZs pkqjk"
+        >
+          <h1
+            class="sc-hKMtZM juqKJr sc-idiyUo dvYYnV"
+            id="analytics"
+          >
+            Analytics
+          </h1>
+          <span
+            class="sc-hAZoDl LEXuB"
+          >
+            This site collects basic analytics information, namely the URL paths you visit within the site, and information about the device you are using. This is never shared with third-parties and never used to track you across other services.
+          </span>
+          <span
+            class="sc-hAZoDl LEXuB"
+          >
+            The information collected about your device includes browser, browser version, OS, OS version, and the first part of your IP address which gives a very, very rough location of access.
+          </span>
+          <span
+            class="sc-hAZoDl LEXuB"
+          >
+            As this data contains no personally identifiable information and is not used to track you, it can be collected without consent.
+          </span>
+        </div>
+      </div>
     </div>
     <div
-      class="sc-evZas fjRNQE"
+      class="sc-evZas csYxrp"
     >
-      <h1
-        class="sc-hKMtZM juqKJr sc-hAZoDl lgucHm"
-        id="version"
+      <style>
+        .js .animated-content__wrapper--hidden {
+  padding-top: 4rem;
+  opacity: 0.01;
+}
+      </style>
+      <div
+        class="sc-crXcEl hfkUjM animated-content__wrapper--hidden"
       >
-        Version
-      </h1>
-      <span
-        class="sc-crXcEl hyjoRq"
+        <div
+          class="sc-fnykZs pkqjk"
+        >
+          <h1
+            class="sc-hKMtZM juqKJr sc-idiyUo dvYYnV"
+            id="cookies"
+          >
+            Cookies
+          </h1>
+          <span
+            class="sc-hAZoDl LEXuB"
+          >
+            To keep you logged in to your user account an authentication cookie will be stored on your machine. This will not be used to track you, and will not be shared with any third-parties. As this is a purely functional cookie, it can be used without consent.
+          </span>
+        </div>
+      </div>
+    </div>
+    <div
+      class="sc-evZas csYxrp"
+    >
+      <style>
+        .js .animated-content__wrapper--hidden {
+  padding-top: 4rem;
+  opacity: 0.01;
+}
+      </style>
+      <div
+        class="sc-crXcEl hfkUjM animated-content__wrapper--hidden"
       >
-        This is version 
-        3
-         of the privacy policy.
-      </span>
+        <div
+          class="sc-fnykZs pkqjk"
+        >
+          <h1
+            class="sc-hKMtZM juqKJr sc-idiyUo dvYYnV"
+            id="version"
+          >
+            Version
+          </h1>
+          <span
+            class="sc-hAZoDl LEXuB"
+          >
+            This is version 
+            3
+             of the privacy policy.
+          </span>
+        </div>
+      </div>
     </div>
   </div>
 </div>

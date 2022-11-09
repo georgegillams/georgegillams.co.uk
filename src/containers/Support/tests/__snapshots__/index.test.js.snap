@@ -3,24 +3,28 @@
 exports[`<Support /> should render correctly - index 1`] = `
 <div>
   <div
-    class="sc-fLlhyt fWbXiz page-containerstyles__StyledPageContainer-sc-19l7k4-0"
+    class="sc-llJcti gVCISo page-containerstyles__StyledPageContainer-sc-19l7k4-0"
     width="default"
   >
-    <h1
-      class="sc-bczRLJ hDLBIv sc-ksZaOG UTWGT"
+    <div
+      class="sc-idiyUo gZOHEF"
     >
-      Support
-    </h1>
+      <h1
+        class="sc-bczRLJ hDLBIv sc-ksZaOG UTWGT"
+      >
+        Support
+      </h1>
+    </div>
     <div
       class="supportstyles__Controls-sc-yym0gw-0 jknFIr"
     >
       <button
-        class="sc-bjUoiL kQkTFv outer"
+        class="sc-dmRaPn hixPQQ outer"
         disabled=""
         type="button"
       >
         <span
-          class="sc-dIouRR ixIogl"
+          class="sc-fLlhyt rsaHd"
         >
           Reload
         </span>
@@ -30,7 +34,7 @@ exports[`<Support /> should render correctly - index 1`] = `
       class="sc-evZas cgLOYZ support__body-skeleton"
     >
       <div
-        class="sc-breuTD cvMWpe"
+        class="sc-breuTD bLqFbu"
         style="margin-left: -0px;"
       />
     </div>
@@ -41,24 +45,28 @@ exports[`<Support /> should render correctly - index 1`] = `
 exports[`<Support /> should render correctly when loading 1`] = `
 <div>
   <div
-    class="sc-fLlhyt fWbXiz page-containerstyles__StyledPageContainer-sc-19l7k4-0"
+    class="sc-llJcti gVCISo page-containerstyles__StyledPageContainer-sc-19l7k4-0"
     width="default"
   >
-    <h1
-      class="sc-bczRLJ hDLBIv sc-ksZaOG UTWGT"
+    <div
+      class="sc-idiyUo gZOHEF"
     >
-      Support
-    </h1>
+      <h1
+        class="sc-bczRLJ hDLBIv sc-ksZaOG UTWGT"
+      >
+        Support
+      </h1>
+    </div>
     <div
       class="supportstyles__Controls-sc-yym0gw-0 jknFIr"
     >
       <button
-        class="sc-bjUoiL kQkTFv outer"
+        class="sc-dmRaPn hixPQQ outer"
         disabled=""
         type="button"
       >
         <span
-          class="sc-dIouRR ixIogl"
+          class="sc-fLlhyt rsaHd"
         >
           Reload
         </span>
@@ -68,7 +76,7 @@ exports[`<Support /> should render correctly when loading 1`] = `
       class="sc-evZas cgLOYZ support__body-skeleton"
     >
       <div
-        class="sc-breuTD cvMWpe"
+        class="sc-breuTD bLqFbu"
         style="margin-left: -0px;"
       />
     </div>
@@ -79,23 +87,27 @@ exports[`<Support /> should render correctly when loading 1`] = `
 exports[`<Support /> should render correctly with admin 1`] = `
 <div>
   <div
-    class="sc-fLlhyt fWbXiz page-containerstyles__StyledPageContainer-sc-19l7k4-0"
+    class="sc-llJcti gVCISo page-containerstyles__StyledPageContainer-sc-19l7k4-0"
     width="default"
   >
-    <h1
-      class="sc-bczRLJ hDLBIv sc-ksZaOG UTWGT"
+    <div
+      class="sc-idiyUo gZOHEF"
     >
-      Support
-    </h1>
+      <h1
+        class="sc-bczRLJ hDLBIv sc-ksZaOG UTWGT"
+      >
+        Support
+      </h1>
+    </div>
     <div
       class="supportstyles__Controls-sc-yym0gw-0 jknFIr"
     >
       <button
-        class="sc-bjUoiL hCXTDD outer"
+        class="sc-dmRaPn dquIzU outer"
         type="button"
       >
         <span
-          class="sc-dIouRR ixIogl"
+          class="sc-fLlhyt rsaHd"
         >
           Reload
         </span>
@@ -105,7 +117,7 @@ exports[`<Support /> should render correctly with admin 1`] = `
       class="sc-evZas cgLOYZ support__body-skeleton"
     >
       <div
-        class="sc-breuTD cvMWpe"
+        class="sc-breuTD bLqFbu"
         style="margin-left: -0px;"
       />
     </div>
@@ -129,23 +141,27 @@ exports[`<Support /> should render correctly with admin 1`] = `
 exports[`<Support /> should render correctly with admin and createLinkError 1`] = `
 <div>
   <div
-    class="sc-fLlhyt fWbXiz page-containerstyles__StyledPageContainer-sc-19l7k4-0"
+    class="sc-llJcti gVCISo page-containerstyles__StyledPageContainer-sc-19l7k4-0"
     width="default"
   >
-    <h1
-      class="sc-bczRLJ hDLBIv sc-ksZaOG UTWGT"
+    <div
+      class="sc-idiyUo gZOHEF"
     >
-      Support
-    </h1>
+      <h1
+        class="sc-bczRLJ hDLBIv sc-ksZaOG UTWGT"
+      >
+        Support
+      </h1>
+    </div>
     <div
       class="supportstyles__Controls-sc-yym0gw-0 jknFIr"
     >
       <button
-        class="sc-bjUoiL hCXTDD outer"
+        class="sc-dmRaPn dquIzU outer"
         type="button"
       >
         <span
-          class="sc-dIouRR ixIogl"
+          class="sc-fLlhyt rsaHd"
         >
           Reload
         </span>
@@ -155,7 +171,7 @@ exports[`<Support /> should render correctly with admin and createLinkError 1`] 
       class="sc-evZas cgLOYZ support__body-skeleton"
     >
       <div
-        class="sc-breuTD cvMWpe"
+        class="sc-breuTD bLqFbu"
         style="margin-left: -0px;"
       />
     </div>
@@ -169,10 +185,10 @@ exports[`<Support /> should render correctly with admin and createLinkError 1`] 
         ADD LINK
       </h1>
       <span
-        class="sc-dmRaPn bsyMtp"
+        class="sc-ivTmOn kdttXe"
       >
         <span
-          class="sc-kgflAQ daSGn"
+          class="sc-cxabCf jLTMMo"
         >
           Failed to add link
           <br />
@@ -190,23 +206,27 @@ exports[`<Support /> should render correctly with admin and createLinkError 1`] 
 exports[`<Support /> should render correctly with admin and deleteLinkError 1`] = `
 <div>
   <div
-    class="sc-fLlhyt fWbXiz page-containerstyles__StyledPageContainer-sc-19l7k4-0"
+    class="sc-llJcti gVCISo page-containerstyles__StyledPageContainer-sc-19l7k4-0"
     width="default"
   >
-    <h1
-      class="sc-bczRLJ hDLBIv sc-ksZaOG UTWGT"
+    <div
+      class="sc-idiyUo gZOHEF"
     >
-      Support
-    </h1>
+      <h1
+        class="sc-bczRLJ hDLBIv sc-ksZaOG UTWGT"
+      >
+        Support
+      </h1>
+    </div>
     <div
       class="supportstyles__Controls-sc-yym0gw-0 jknFIr"
     >
       <button
-        class="sc-bjUoiL hCXTDD outer"
+        class="sc-dmRaPn dquIzU outer"
         type="button"
       >
         <span
-          class="sc-dIouRR ixIogl"
+          class="sc-fLlhyt rsaHd"
         >
           Reload
         </span>
@@ -216,7 +236,7 @@ exports[`<Support /> should render correctly with admin and deleteLinkError 1`] 
       class="sc-evZas cgLOYZ support__body-skeleton"
     >
       <div
-        class="sc-breuTD cvMWpe"
+        class="sc-breuTD bLqFbu"
         style="margin-left: -0px;"
       />
     </div>
@@ -230,10 +250,10 @@ exports[`<Support /> should render correctly with admin and deleteLinkError 1`] 
         ADD LINK
       </h1>
       <span
-        class="sc-dmRaPn bsyMtp"
+        class="sc-ivTmOn kdttXe"
       >
         <span
-          class="sc-kgflAQ daSGn"
+          class="sc-cxabCf jLTMMo"
         >
           Failed to delete link
           <br />
@@ -251,23 +271,27 @@ exports[`<Support /> should render correctly with admin and deleteLinkError 1`] 
 exports[`<Support /> should render correctly with initial state 1`] = `
 <div>
   <div
-    class="sc-fLlhyt fWbXiz page-containerstyles__StyledPageContainer-sc-19l7k4-0"
+    class="sc-llJcti gVCISo page-containerstyles__StyledPageContainer-sc-19l7k4-0"
     width="default"
   >
-    <h1
-      class="sc-bczRLJ hDLBIv sc-ksZaOG UTWGT"
+    <div
+      class="sc-idiyUo gZOHEF"
     >
-      Support
-    </h1>
+      <h1
+        class="sc-bczRLJ hDLBIv sc-ksZaOG UTWGT"
+      >
+        Support
+      </h1>
+    </div>
     <div
       class="supportstyles__Controls-sc-yym0gw-0 jknFIr"
     >
       <button
-        class="sc-bjUoiL hCXTDD outer"
+        class="sc-dmRaPn dquIzU outer"
         type="button"
       >
         <span
-          class="sc-dIouRR ixIogl"
+          class="sc-fLlhyt rsaHd"
         >
           Reload
         </span>
@@ -277,7 +301,7 @@ exports[`<Support /> should render correctly with initial state 1`] = `
       class="sc-evZas cgLOYZ support__body-skeleton"
     >
       <div
-        class="sc-breuTD cvMWpe"
+        class="sc-breuTD bLqFbu"
         style="margin-left: -0px;"
       />
     </div>
@@ -288,23 +312,27 @@ exports[`<Support /> should render correctly with initial state 1`] = `
 exports[`<Support /> should render correctly with links 1`] = `
 <div>
   <div
-    class="sc-fLlhyt fWbXiz page-containerstyles__StyledPageContainer-sc-19l7k4-0"
+    class="sc-llJcti gVCISo page-containerstyles__StyledPageContainer-sc-19l7k4-0"
     width="default"
   >
-    <h1
-      class="sc-bczRLJ hDLBIv sc-ksZaOG UTWGT"
+    <div
+      class="sc-idiyUo gZOHEF"
     >
-      Support
-    </h1>
+      <h1
+        class="sc-bczRLJ hDLBIv sc-ksZaOG UTWGT"
+      >
+        Support
+      </h1>
+    </div>
     <div
       class="supportstyles__Controls-sc-yym0gw-0 jknFIr"
     >
       <button
-        class="sc-bjUoiL hCXTDD outer"
+        class="sc-dmRaPn dquIzU outer"
         type="button"
       >
         <span
-          class="sc-dIouRR ixIogl"
+          class="sc-fLlhyt rsaHd"
         >
           Reload
         </span>
@@ -320,7 +348,7 @@ exports[`<Support /> should render correctly with links 1`] = `
         name 1
       </h1>
       <span
-        class="sc-dmRaPn bsyMtp support-linkstyles__StyledParagraph-sc-1088mlq-0 huyeQP"
+        class="sc-ivTmOn kdttXe support-linkstyles__StyledParagraph-sc-1088mlq-0 huyeQP"
       >
         <a
           aria-label="URL_1 (opens in a new tab)"
@@ -360,7 +388,7 @@ exports[`<Support /> should render correctly with links 1`] = `
         name 2
       </h1>
       <span
-        class="sc-dmRaPn bsyMtp support-linkstyles__StyledParagraph-sc-1088mlq-0 huyeQP"
+        class="sc-ivTmOn kdttXe support-linkstyles__StyledParagraph-sc-1088mlq-0 huyeQP"
       >
         <a
           aria-label="URL_2 (opens in a new tab)"
@@ -397,33 +425,37 @@ exports[`<Support /> should render correctly with links 1`] = `
 exports[`<Support /> should render correctly with loadError 1`] = `
 <div>
   <div
-    class="sc-fLlhyt fWbXiz page-containerstyles__StyledPageContainer-sc-19l7k4-0"
+    class="sc-llJcti gVCISo page-containerstyles__StyledPageContainer-sc-19l7k4-0"
     width="default"
   >
-    <h1
-      class="sc-bczRLJ hDLBIv sc-ksZaOG UTWGT"
+    <div
+      class="sc-idiyUo gZOHEF"
     >
-      Support
-    </h1>
+      <h1
+        class="sc-bczRLJ hDLBIv sc-ksZaOG UTWGT"
+      >
+        Support
+      </h1>
+    </div>
     <div
       class="supportstyles__Controls-sc-yym0gw-0 jknFIr"
     >
       <button
-        class="sc-bjUoiL hCXTDD outer"
+        class="sc-dmRaPn dquIzU outer"
         type="button"
       >
         <span
-          class="sc-dIouRR ixIogl"
+          class="sc-fLlhyt rsaHd"
         >
           Reload
         </span>
       </button>
     </div>
     <span
-      class="sc-dmRaPn bsyMtp"
+      class="sc-ivTmOn kdttXe"
     >
       <span
-        class="sc-kgflAQ daSGn"
+        class="sc-cxabCf jLTMMo"
       >
         The support session failed to load
         <br />
@@ -434,7 +466,7 @@ exports[`<Support /> should render correctly with loadError 1`] = `
       class="sc-evZas cgLOYZ support__body-skeleton"
     >
       <div
-        class="sc-breuTD cvMWpe"
+        class="sc-breuTD bLqFbu"
         style="margin-left: -0px;"
       />
     </div>

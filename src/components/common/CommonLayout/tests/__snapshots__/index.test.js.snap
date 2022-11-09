@@ -10,137 +10,150 @@ exports[`<Layout /> Should render correctly 1`] = `
       some text
     </div>
   </main>
-  <footer
-    class="footerstyles__Container-sc-ojjd19-0 beXJfO"
-    id="footer"
+  <div
+    class="sc-iqcoie fTAtuW"
   >
+    <style>
+      .js .animated-content__wrapper--hidden {
+  opacity: 0.01;
+}
+    </style>
     <div
-      class="logostyles__OuterContainer-sc-1fentac-0 ftAWyG footerstyles__StyledLogo-sc-ojjd19-1 dHUBSN"
+      class="sc-kDDrLX jEmsrG animated-content__wrapper--hidden"
     >
-      <a
-        class="logostyles__StyledLink-sc-1fentac-1 hziiVO"
-        href="/"
+      <footer
+        class="footerstyles__Container-sc-ojjd19-0 beXJfO"
+        id="footer"
       >
-        <span
-          aria-label="Home page"
-          class="logostyles__LargeText-sc-1fentac-2 eneHCc"
+        <div
+          class="logostyles__OuterContainer-sc-1fentac-0 ftAWyG footerstyles__StyledLogo-sc-ojjd19-1 dHUBSN"
         >
-          G
-        </span>
-      </a>
+          <a
+            class="logostyles__StyledLink-sc-1fentac-1 gfWJqm"
+            href="/"
+          >
+            <span
+              aria-label="Home page"
+              class="logostyles__LargeText-sc-1fentac-2 eneHCc"
+            >
+              G
+            </span>
+          </a>
+        </div>
+        <div
+          class="footerstyles__StyledTechSpecs-sc-ojjd19-2 hLmmol"
+        >
+          <span
+            class="sc-jqUVSM iuHAUr tech-specsstyles__StyledParagraph-sc-1ysn53a-0 glkFZI"
+          >
+            Built in
+            <a
+              href="https://reactjs.org/"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              <img
+                alt="React"
+                class="tech-specsstyles__Icon-sc-1ysn53a-1 fVaLbn"
+                height="5"
+                src="IMAGE_MOCK"
+                width="5"
+              />
+            </a>
+            and
+            <a
+              href="https://redux.js.org/"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              <img
+                alt="Redux"
+                class="tech-specsstyles__Icon-sc-1ysn53a-1 fVaLbn"
+                height="5"
+                src="IMAGE_MOCK"
+                width="5"
+              />
+            </a>
+            Hosted on
+            <a
+              href="https://aws.amazon.com/"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              <img
+                alt="Amazon Web Services"
+                class="tech-specsstyles__Icon-sc-1ysn53a-1 fVaLbn"
+                height="5"
+                src="IMAGE_MOCK"
+                style="margin-top: .8rem; max-width: 2.9rem;"
+                width="8.28"
+              />
+            </a>
+          </span>
+        </div>
+        <div
+          class="footer-navstyles__Wrapper-sc-7lmnsj-0 kTnJQq footerstyles__StyledFooterNav-sc-ojjd19-3"
+        >
+          <div
+            class="footer-navstyles__Section-sc-7lmnsj-1 iFmILp"
+          >
+            <a
+              class="sc-iBkjds LHtmg"
+              href="/blog"
+            >
+              Blog
+            </a>
+            <a
+              class="sc-iBkjds LHtmg"
+              href="/photography"
+            >
+              Photography
+            </a>
+            <a
+              class="sc-iBkjds LHtmg"
+              href="/work"
+            >
+              Work
+            </a>
+            <a
+              class="sc-iBkjds LHtmg"
+              href="/contact"
+            >
+              Contact
+            </a>
+          </div>
+          <div
+            class="footer-navstyles__Section-sc-7lmnsj-1 iFmILp"
+          >
+            <a
+              class="sc-iBkjds LHtmg"
+              href="/sitemap"
+            >
+              Site map
+            </a>
+            <a
+              class="sc-iBkjds LHtmg"
+              href="/privacy-policy"
+            >
+              Privacy
+            </a>
+            <a
+              class="sc-iBkjds LHtmg"
+              href="/login"
+            >
+              Login/Account
+            </a>
+            <a
+              class="sc-iBkjds LHtmg"
+              href="/status"
+            >
+              Status
+            </a>
+          </div>
+        </div>
+      </footer>
     </div>
-    <div
-      class="footerstyles__StyledTechSpecs-sc-ojjd19-2 hLmmol"
-    >
-      <span
-        class="sc-jqUVSM iuHAUr tech-specsstyles__StyledParagraph-sc-1ysn53a-0 glkFZI"
-      >
-        Built in
-        <a
-          href="https://reactjs.org/"
-          rel="noopener noreferrer"
-          target="_blank"
-        >
-          <img
-            alt="React"
-            class="tech-specsstyles__Icon-sc-1ysn53a-1 fVaLbn"
-            height="5"
-            src="IMAGE_MOCK"
-            width="5"
-          />
-        </a>
-        and
-        <a
-          href="https://redux.js.org/"
-          rel="noopener noreferrer"
-          target="_blank"
-        >
-          <img
-            alt="Redux"
-            class="tech-specsstyles__Icon-sc-1ysn53a-1 fVaLbn"
-            height="5"
-            src="IMAGE_MOCK"
-            width="5"
-          />
-        </a>
-        Hosted on
-        <a
-          href="https://aws.amazon.com/"
-          rel="noopener noreferrer"
-          target="_blank"
-        >
-          <img
-            alt="Amazon Web Services"
-            class="tech-specsstyles__Icon-sc-1ysn53a-1 fVaLbn"
-            height="5"
-            src="IMAGE_MOCK"
-            style="margin-top: .8rem; max-width: 2.9rem;"
-            width="8.28"
-          />
-        </a>
-      </span>
-    </div>
-    <div
-      class="footer-navstyles__Wrapper-sc-7lmnsj-0 kTnJQq footerstyles__StyledFooterNav-sc-ojjd19-3"
-    >
-      <div
-        class="footer-navstyles__Section-sc-7lmnsj-1 iFmILp"
-      >
-        <a
-          class="sc-iBkjds LHtmg"
-          href="/blog"
-        >
-          Blog
-        </a>
-        <a
-          class="sc-iBkjds LHtmg"
-          href="/photography"
-        >
-          Photography
-        </a>
-        <a
-          class="sc-iBkjds LHtmg"
-          href="/work"
-        >
-          Work
-        </a>
-        <a
-          class="sc-iBkjds LHtmg"
-          href="/contact"
-        >
-          Contact
-        </a>
-      </div>
-      <div
-        class="footer-navstyles__Section-sc-7lmnsj-1 iFmILp"
-      >
-        <a
-          class="sc-iBkjds LHtmg"
-          href="/sitemap"
-        >
-          Site map
-        </a>
-        <a
-          class="sc-iBkjds LHtmg"
-          href="/privacy-policy"
-        >
-          Privacy
-        </a>
-        <a
-          class="sc-iBkjds LHtmg"
-          href="/login"
-        >
-          Login/Account
-        </a>
-        <a
-          class="sc-iBkjds LHtmg"
-          href="/status"
-        >
-          Status
-        </a>
-      </div>
-    </div>
-  </footer>
+  </div>
 </div>
 `;
 
@@ -154,136 +167,149 @@ exports[`<Layout /> Should render correctly with spread props 1`] = `
       some text
     </div>
   </main>
-  <footer
-    class="footerstyles__Container-sc-ojjd19-0 beXJfO"
-    id="footer"
+  <div
+    class="sc-iqcoie fTAtuW"
   >
+    <style>
+      .js .animated-content__wrapper--hidden {
+  opacity: 0.01;
+}
+    </style>
     <div
-      class="logostyles__OuterContainer-sc-1fentac-0 ftAWyG footerstyles__StyledLogo-sc-ojjd19-1 dHUBSN"
+      class="sc-kDDrLX jEmsrG animated-content__wrapper--hidden"
     >
-      <a
-        class="logostyles__StyledLink-sc-1fentac-1 hziiVO"
-        href="/"
+      <footer
+        class="footerstyles__Container-sc-ojjd19-0 beXJfO"
+        id="footer"
       >
-        <span
-          aria-label="Home page"
-          class="logostyles__LargeText-sc-1fentac-2 eneHCc"
+        <div
+          class="logostyles__OuterContainer-sc-1fentac-0 ftAWyG footerstyles__StyledLogo-sc-ojjd19-1 dHUBSN"
         >
-          G
-        </span>
-      </a>
+          <a
+            class="logostyles__StyledLink-sc-1fentac-1 gfWJqm"
+            href="/"
+          >
+            <span
+              aria-label="Home page"
+              class="logostyles__LargeText-sc-1fentac-2 eneHCc"
+            >
+              G
+            </span>
+          </a>
+        </div>
+        <div
+          class="footerstyles__StyledTechSpecs-sc-ojjd19-2 hLmmol"
+        >
+          <span
+            class="sc-jqUVSM iuHAUr tech-specsstyles__StyledParagraph-sc-1ysn53a-0 glkFZI"
+          >
+            Built in
+            <a
+              href="https://reactjs.org/"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              <img
+                alt="React"
+                class="tech-specsstyles__Icon-sc-1ysn53a-1 fVaLbn"
+                height="5"
+                src="IMAGE_MOCK"
+                width="5"
+              />
+            </a>
+            and
+            <a
+              href="https://redux.js.org/"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              <img
+                alt="Redux"
+                class="tech-specsstyles__Icon-sc-1ysn53a-1 fVaLbn"
+                height="5"
+                src="IMAGE_MOCK"
+                width="5"
+              />
+            </a>
+            Hosted on
+            <a
+              href="https://aws.amazon.com/"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              <img
+                alt="Amazon Web Services"
+                class="tech-specsstyles__Icon-sc-1ysn53a-1 fVaLbn"
+                height="5"
+                src="IMAGE_MOCK"
+                style="margin-top: .8rem; max-width: 2.9rem;"
+                width="8.28"
+              />
+            </a>
+          </span>
+        </div>
+        <div
+          class="footer-navstyles__Wrapper-sc-7lmnsj-0 kTnJQq footerstyles__StyledFooterNav-sc-ojjd19-3"
+        >
+          <div
+            class="footer-navstyles__Section-sc-7lmnsj-1 iFmILp"
+          >
+            <a
+              class="sc-iBkjds LHtmg"
+              href="/blog"
+            >
+              Blog
+            </a>
+            <a
+              class="sc-iBkjds LHtmg"
+              href="/photography"
+            >
+              Photography
+            </a>
+            <a
+              class="sc-iBkjds LHtmg"
+              href="/work"
+            >
+              Work
+            </a>
+            <a
+              class="sc-iBkjds LHtmg"
+              href="/contact"
+            >
+              Contact
+            </a>
+          </div>
+          <div
+            class="footer-navstyles__Section-sc-7lmnsj-1 iFmILp"
+          >
+            <a
+              class="sc-iBkjds LHtmg"
+              href="/sitemap"
+            >
+              Site map
+            </a>
+            <a
+              class="sc-iBkjds LHtmg"
+              href="/privacy-policy"
+            >
+              Privacy
+            </a>
+            <a
+              class="sc-iBkjds LHtmg"
+              href="/login"
+            >
+              Login/Account
+            </a>
+            <a
+              class="sc-iBkjds LHtmg"
+              href="/status"
+            >
+              Status
+            </a>
+          </div>
+        </div>
+      </footer>
     </div>
-    <div
-      class="footerstyles__StyledTechSpecs-sc-ojjd19-2 hLmmol"
-    >
-      <span
-        class="sc-jqUVSM iuHAUr tech-specsstyles__StyledParagraph-sc-1ysn53a-0 glkFZI"
-      >
-        Built in
-        <a
-          href="https://reactjs.org/"
-          rel="noopener noreferrer"
-          target="_blank"
-        >
-          <img
-            alt="React"
-            class="tech-specsstyles__Icon-sc-1ysn53a-1 fVaLbn"
-            height="5"
-            src="IMAGE_MOCK"
-            width="5"
-          />
-        </a>
-        and
-        <a
-          href="https://redux.js.org/"
-          rel="noopener noreferrer"
-          target="_blank"
-        >
-          <img
-            alt="Redux"
-            class="tech-specsstyles__Icon-sc-1ysn53a-1 fVaLbn"
-            height="5"
-            src="IMAGE_MOCK"
-            width="5"
-          />
-        </a>
-        Hosted on
-        <a
-          href="https://aws.amazon.com/"
-          rel="noopener noreferrer"
-          target="_blank"
-        >
-          <img
-            alt="Amazon Web Services"
-            class="tech-specsstyles__Icon-sc-1ysn53a-1 fVaLbn"
-            height="5"
-            src="IMAGE_MOCK"
-            style="margin-top: .8rem; max-width: 2.9rem;"
-            width="8.28"
-          />
-        </a>
-      </span>
-    </div>
-    <div
-      class="footer-navstyles__Wrapper-sc-7lmnsj-0 kTnJQq footerstyles__StyledFooterNav-sc-ojjd19-3"
-    >
-      <div
-        class="footer-navstyles__Section-sc-7lmnsj-1 iFmILp"
-      >
-        <a
-          class="sc-iBkjds LHtmg"
-          href="/blog"
-        >
-          Blog
-        </a>
-        <a
-          class="sc-iBkjds LHtmg"
-          href="/photography"
-        >
-          Photography
-        </a>
-        <a
-          class="sc-iBkjds LHtmg"
-          href="/work"
-        >
-          Work
-        </a>
-        <a
-          class="sc-iBkjds LHtmg"
-          href="/contact"
-        >
-          Contact
-        </a>
-      </div>
-      <div
-        class="footer-navstyles__Section-sc-7lmnsj-1 iFmILp"
-      >
-        <a
-          class="sc-iBkjds LHtmg"
-          href="/sitemap"
-        >
-          Site map
-        </a>
-        <a
-          class="sc-iBkjds LHtmg"
-          href="/privacy-policy"
-        >
-          Privacy
-        </a>
-        <a
-          class="sc-iBkjds LHtmg"
-          href="/login"
-        >
-          Login/Account
-        </a>
-        <a
-          class="sc-iBkjds LHtmg"
-          href="/status"
-        >
-          Status
-        </a>
-      </div>
-    </div>
-  </footer>
+  </div>
 </div>
 `;

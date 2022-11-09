@@ -5,6 +5,7 @@ const prompt = require('prompt');
 
 // Create backup
 const defaultBackupName = Date.now().toString();
+const cliApiKey = process.argv[process.argv.indexOf('--apiKey') + 1];
 const schema = {
   properties: {
     backupName: {
@@ -15,6 +16,7 @@ const schema = {
     },
     apiKey: {
       description: 'Enter the admin API key to use for this backup',
+      default: cliApiKey,
       pattern: /.*/,
       message: 'Enter the admin API key to use for this backup',
       required: true,
@@ -32,7 +34,7 @@ const performBackup = async (err, { backupName, apiKey }) => {
   execSync(`mkdir ~/Dropbox/georgegillams.co.uk/backups/${backupName}`);
 
   execSync(
-    `wget https://www.georgegillams.co.uk/api/data-management/backup --header "apiKey: ${apiKey}" -O ~/Dropbox/georgegillams.co.uk/backups/${backupName}/data.json`,
+    `wget https://www.georgegillams.co.uk/api/data-management/backup --header "apiKey: ${apiKey}" -O ~/Dropbox/georgegillams.co.uk/backups/${backupName}/data.json`
   );
 };
 

@@ -3,14 +3,14 @@
 exports[`<BlogRenderer /> should render correctly - index 1`] = `
 <div>
   <div
-    class="sc-bZnhIo hFJCgQ page-containerstyles__StyledPageContainer-sc-19l7k4-0"
+    class="sc-cTQhss jwfbEm page-containerstyles__StyledPageContainer-sc-19l7k4-0"
     width="prose"
   >
     <div
       class="sc-evZas fXZjtf"
     >
       <div
-        class="sc-breuTD cvMWpe"
+        class="sc-breuTD bLqFbu"
         style="margin-left: -0px;"
       />
     </div>
@@ -18,66 +18,79 @@ exports[`<BlogRenderer /> should render correctly - index 1`] = `
       class="sc-evZas ctHunJ blog-rendererstyles__BodySkeleton-sc-15d9dvh-0 jSDQAJ"
     >
       <div
-        class="sc-breuTD cvMWpe"
+        class="sc-breuTD bLqFbu"
         style="margin-left: -0px;"
       />
     </div>
   </div>
   <div
-    class="creative-commonssyles__Wrapper-sc-qff226-0 gOCDiS"
+    class="sc-ciZhAO jCfeVY"
   >
+    <style>
+      .js .animated-content__wrapper--hidden {
+  opacity: 0.01;
+}
+    </style>
     <div
-      class="creative-commonssyles__Background-sc-qff226-1 ddrRBh"
-    />
-    <div
-      class="sc-jqUVSM leXYdV creative-commonssyles__Inner-sc-qff226-2 gkGslB"
+      class="sc-cCsOjp mSMdJ animated-content__wrapper--hidden"
     >
-      <h1
-        class="sc-dkzDqf ddFalQ sc-crXcEl ioFrJl"
-        id="copyright"
+      <div
+        class="creative-commonssyles__Wrapper-sc-qff226-0 gOCDiS"
       >
-        Copyright
-      </h1>
-      <span
-        class="sc-gicCDI prKpa"
-      >
-        Most of my photos are licensed under
-         
-        <a
-          aria-label="Creative Commons BY-SA 3.0 (opens in a new tab)"
-          class="sc-iBkjds JLudk"
-          href="https://creativecommons.org/licenses/by-sa/3.0/"
-          rel="noopener noreferrer"
-          target="_blank"
+        <div
+          class="creative-commonssyles__Background-sc-qff226-1 ddrRBh"
+        />
+        <div
+          class="sc-jqUVSM leXYdV creative-commonssyles__Inner-sc-qff226-2 gkGslB"
         >
-          Creative Commons BY-SA 3.0
-          <div
-            class="sc-ftvSup kUuEWK"
+          <h1
+            class="sc-dkzDqf ddFalQ sc-crXcEl ioFrJl"
+            id="copyright"
           >
-            <svg
-              class="sc-gKXOVf ktoyia sc-papXJ fmVkXn"
-              height="18"
-              viewBox="0 0 24 24"
-              width="18"
-              xmlns="http://www.w3.org/2000/svg"
+            Copyright
+          </h1>
+          <span
+            class="sc-gicCDI prKpa"
+          >
+            Most of my photos are licensed under
+             
+            <a
+              aria-label="Creative Commons BY-SA 3.0 (opens in a new tab)"
+              class="sc-iBkjds JLudk"
+              href="https://creativecommons.org/licenses/by-sa/3.0/"
+              rel="noopener noreferrer"
+              target="_blank"
             >
-              <path
-                d="M12.5 11.3c.4.4 1 .4 1.4 0L19 6.2V9c0 .6.4 1 1 1s1-.4 1-1V4c0-.6-.4-1-1-1h-5c-.6 0-1 .4-1 1s.4 1 1 1h2.4l-4.9 4.9c-.4.4-.4 1 0 1.4zM19 19c0 1.1-.9 2-2 2H5c-1.1 0-2-.9-2-2V7c0-1.1.9-2 2-2h7v2H5v12h12v-7h2"
-              />
-            </svg>
-          </div>
-        </a>
-        .
-        <br />
-        If you are unsure about your right to use them please 
-        <a
-          class="sc-iBkjds JLudk"
-          href="/contact"
-        >
-          contact me
-        </a>
-        .
-      </span>
+              Creative Commons BY-SA 3.0
+              <div
+                class="sc-ftvSup kUuEWK"
+              >
+                <svg
+                  class="sc-gKXOVf ktoyia sc-papXJ fmVkXn"
+                  height="18"
+                  viewBox="0 0 24 24"
+                  width="18"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M12.5 11.3c.4.4 1 .4 1.4 0L19 6.2V9c0 .6.4 1 1 1s1-.4 1-1V4c0-.6-.4-1-1-1h-5c-.6 0-1 .4-1 1s.4 1 1 1h2.4l-4.9 4.9c-.4.4-.4 1 0 1.4zM19 19c0 1.1-.9 2-2 2H5c-1.1 0-2-.9-2-2V7c0-1.1.9-2 2-2h7v2H5v12h12v-7h2"
+                  />
+                </svg>
+              </div>
+            </a>
+            .
+            <br />
+            If you are unsure about your right to use them please 
+            <a
+              class="sc-iBkjds JLudk"
+              href="/contact"
+            >
+              contact me
+            </a>
+            .
+          </span>
+        </div>
+      </div>
     </div>
   </div>
 </div>
@@ -86,24 +99,32 @@ exports[`<BlogRenderer /> should render correctly - index 1`] = `
 exports[`<BlogRenderer /> should render correctly with blog 1`] = `
 <div>
   <div
-    class="sc-bZnhIo hFJCgQ page-containerstyles__StyledPageContainer-sc-19l7k4-0"
+    class="sc-cTQhss jwfbEm page-containerstyles__StyledPageContainer-sc-19l7k4-0"
     width="prose"
   >
     <div
-      class="sc-gXmSlM dApwEi"
+      class="sc-bZnhIo fuBeEG"
     >
-      <a
-        class="sc-iBkjds JLudk"
-        href="/blogs"
+      <div
+        class="sc-gXmSlM dApwEi"
       >
-        ⇠ Blogs
-      </a>
+        <a
+          class="sc-iBkjds JLudk"
+          href="/blogs"
+        >
+          ⇠ Blogs
+        </a>
+      </div>
     </div>
-    <h1
-      class="sc-bczRLJ hDLBIv sc-himrzO kwTTFi"
+    <div
+      class="sc-bZnhIo fuBeEG"
     >
-      St. Ives ⛵ 2018
-    </h1>
+      <h1
+        class="sc-bczRLJ hDLBIv sc-himrzO kwTTFi"
+      >
+        St. Ives ⛵ 2018
+      </h1>
+    </div>
     <div
       class="blog-rendererstyles__DateContainer-sc-15d9dvh-1 cQmHrf"
     >
@@ -118,10 +139,10 @@ exports[`<BlogRenderer /> should render correctly with blog 1`] = `
       class="blog-rendererstyles__TagList-sc-15d9dvh-2 jWtyvq"
     >
       <div
-        class="sc-cCsOjp"
+        class="sc-iTONeN"
       >
         <span
-          class="sc-ciZhAO hlaqTL"
+          class="sc-iAvgwm eiWPlW"
           type="travel"
         >
           Travel
@@ -164,60 +185,73 @@ exports[`<BlogRenderer /> should render correctly with blog 1`] = `
     </div>
   </div>
   <div
-    class="creative-commonssyles__Wrapper-sc-qff226-0 gOCDiS"
+    class="sc-ciZhAO jCfeVY"
   >
+    <style>
+      .js .animated-content__wrapper--hidden {
+  opacity: 0.01;
+}
+    </style>
     <div
-      class="creative-commonssyles__Background-sc-qff226-1 ddrRBh"
-    />
-    <div
-      class="sc-jqUVSM leXYdV creative-commonssyles__Inner-sc-qff226-2 gkGslB"
+      class="sc-cCsOjp mSMdJ animated-content__wrapper--hidden"
     >
-      <h1
-        class="sc-dkzDqf ddFalQ sc-crXcEl ioFrJl"
-        id="copyright"
+      <div
+        class="creative-commonssyles__Wrapper-sc-qff226-0 gOCDiS"
       >
-        Copyright
-      </h1>
-      <span
-        class="sc-gicCDI prKpa"
-      >
-        Most of my photos are licensed under
-         
-        <a
-          aria-label="Creative Commons BY-SA 3.0 (opens in a new tab)"
-          class="sc-iBkjds JLudk"
-          href="https://creativecommons.org/licenses/by-sa/3.0/"
-          rel="noopener noreferrer"
-          target="_blank"
+        <div
+          class="creative-commonssyles__Background-sc-qff226-1 ddrRBh"
+        />
+        <div
+          class="sc-jqUVSM leXYdV creative-commonssyles__Inner-sc-qff226-2 gkGslB"
         >
-          Creative Commons BY-SA 3.0
-          <div
-            class="sc-ftvSup kUuEWK"
+          <h1
+            class="sc-dkzDqf ddFalQ sc-crXcEl ioFrJl"
+            id="copyright"
           >
-            <svg
-              class="sc-gKXOVf ktoyia sc-papXJ fmVkXn"
-              height="18"
-              viewBox="0 0 24 24"
-              width="18"
-              xmlns="http://www.w3.org/2000/svg"
+            Copyright
+          </h1>
+          <span
+            class="sc-gicCDI prKpa"
+          >
+            Most of my photos are licensed under
+             
+            <a
+              aria-label="Creative Commons BY-SA 3.0 (opens in a new tab)"
+              class="sc-iBkjds JLudk"
+              href="https://creativecommons.org/licenses/by-sa/3.0/"
+              rel="noopener noreferrer"
+              target="_blank"
             >
-              <path
-                d="M12.5 11.3c.4.4 1 .4 1.4 0L19 6.2V9c0 .6.4 1 1 1s1-.4 1-1V4c0-.6-.4-1-1-1h-5c-.6 0-1 .4-1 1s.4 1 1 1h2.4l-4.9 4.9c-.4.4-.4 1 0 1.4zM19 19c0 1.1-.9 2-2 2H5c-1.1 0-2-.9-2-2V7c0-1.1.9-2 2-2h7v2H5v12h12v-7h2"
-              />
-            </svg>
-          </div>
-        </a>
-        .
-        <br />
-        If you are unsure about your right to use them please 
-        <a
-          class="sc-iBkjds JLudk"
-          href="/contact"
-        >
-          contact me
-        </a>
-        .
-      </span>
+              Creative Commons BY-SA 3.0
+              <div
+                class="sc-ftvSup kUuEWK"
+              >
+                <svg
+                  class="sc-gKXOVf ktoyia sc-papXJ fmVkXn"
+                  height="18"
+                  viewBox="0 0 24 24"
+                  width="18"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M12.5 11.3c.4.4 1 .4 1.4 0L19 6.2V9c0 .6.4 1 1 1s1-.4 1-1V4c0-.6-.4-1-1-1h-5c-.6 0-1 .4-1 1s.4 1 1 1h2.4l-4.9 4.9c-.4.4-.4 1 0 1.4zM19 19c0 1.1-.9 2-2 2H5c-1.1 0-2-.9-2-2V7c0-1.1.9-2 2-2h7v2H5v12h12v-7h2"
+                  />
+                </svg>
+              </div>
+            </a>
+            .
+            <br />
+            If you are unsure about your right to use them please 
+            <a
+              class="sc-iBkjds JLudk"
+              href="/contact"
+            >
+              contact me
+            </a>
+            .
+          </span>
+        </div>
+      </div>
     </div>
   </div>
 </div>
@@ -226,24 +260,32 @@ exports[`<BlogRenderer /> should render correctly with blog 1`] = `
 exports[`<BlogRenderer /> should render correctly with blog and admin 1`] = `
 <div>
   <div
-    class="sc-bZnhIo hFJCgQ page-containerstyles__StyledPageContainer-sc-19l7k4-0"
+    class="sc-cTQhss jwfbEm page-containerstyles__StyledPageContainer-sc-19l7k4-0"
     width="prose"
   >
     <div
-      class="sc-gXmSlM dApwEi"
+      class="sc-bZnhIo fuBeEG"
     >
-      <a
-        class="sc-iBkjds JLudk"
-        href="/blogs"
+      <div
+        class="sc-gXmSlM dApwEi"
       >
-        ⇠ Blogs
-      </a>
+        <a
+          class="sc-iBkjds JLudk"
+          href="/blogs"
+        >
+          ⇠ Blogs
+        </a>
+      </div>
     </div>
-    <h1
-      class="sc-bczRLJ hDLBIv sc-himrzO kwTTFi"
+    <div
+      class="sc-bZnhIo fuBeEG"
     >
-      St. Ives ⛵ 2018
-    </h1>
+      <h1
+        class="sc-bczRLJ hDLBIv sc-himrzO kwTTFi"
+      >
+        St. Ives ⛵ 2018
+      </h1>
+    </div>
     <div
       class="blog-rendererstyles__DateContainer-sc-15d9dvh-1 cQmHrf"
     >
@@ -258,10 +300,10 @@ exports[`<BlogRenderer /> should render correctly with blog and admin 1`] = `
       class="blog-rendererstyles__TagList-sc-15d9dvh-2 jWtyvq"
     >
       <div
-        class="sc-cCsOjp"
+        class="sc-iTONeN"
       >
         <span
-          class="sc-ciZhAO hlaqTL"
+          class="sc-iAvgwm eiWPlW"
           type="travel"
         >
           Travel
@@ -317,60 +359,73 @@ exports[`<BlogRenderer /> should render correctly with blog and admin 1`] = `
     </div>
   </div>
   <div
-    class="creative-commonssyles__Wrapper-sc-qff226-0 gOCDiS"
+    class="sc-ciZhAO jCfeVY"
   >
+    <style>
+      .js .animated-content__wrapper--hidden {
+  opacity: 0.01;
+}
+    </style>
     <div
-      class="creative-commonssyles__Background-sc-qff226-1 ddrRBh"
-    />
-    <div
-      class="sc-jqUVSM leXYdV creative-commonssyles__Inner-sc-qff226-2 gkGslB"
+      class="sc-cCsOjp mSMdJ animated-content__wrapper--hidden"
     >
-      <h1
-        class="sc-dkzDqf ddFalQ sc-crXcEl ioFrJl"
-        id="copyright"
+      <div
+        class="creative-commonssyles__Wrapper-sc-qff226-0 gOCDiS"
       >
-        Copyright
-      </h1>
-      <span
-        class="sc-gicCDI prKpa"
-      >
-        Most of my photos are licensed under
-         
-        <a
-          aria-label="Creative Commons BY-SA 3.0 (opens in a new tab)"
-          class="sc-iBkjds JLudk"
-          href="https://creativecommons.org/licenses/by-sa/3.0/"
-          rel="noopener noreferrer"
-          target="_blank"
+        <div
+          class="creative-commonssyles__Background-sc-qff226-1 ddrRBh"
+        />
+        <div
+          class="sc-jqUVSM leXYdV creative-commonssyles__Inner-sc-qff226-2 gkGslB"
         >
-          Creative Commons BY-SA 3.0
-          <div
-            class="sc-ftvSup kUuEWK"
+          <h1
+            class="sc-dkzDqf ddFalQ sc-crXcEl ioFrJl"
+            id="copyright"
           >
-            <svg
-              class="sc-gKXOVf ktoyia sc-papXJ fmVkXn"
-              height="18"
-              viewBox="0 0 24 24"
-              width="18"
-              xmlns="http://www.w3.org/2000/svg"
+            Copyright
+          </h1>
+          <span
+            class="sc-gicCDI prKpa"
+          >
+            Most of my photos are licensed under
+             
+            <a
+              aria-label="Creative Commons BY-SA 3.0 (opens in a new tab)"
+              class="sc-iBkjds JLudk"
+              href="https://creativecommons.org/licenses/by-sa/3.0/"
+              rel="noopener noreferrer"
+              target="_blank"
             >
-              <path
-                d="M12.5 11.3c.4.4 1 .4 1.4 0L19 6.2V9c0 .6.4 1 1 1s1-.4 1-1V4c0-.6-.4-1-1-1h-5c-.6 0-1 .4-1 1s.4 1 1 1h2.4l-4.9 4.9c-.4.4-.4 1 0 1.4zM19 19c0 1.1-.9 2-2 2H5c-1.1 0-2-.9-2-2V7c0-1.1.9-2 2-2h7v2H5v12h12v-7h2"
-              />
-            </svg>
-          </div>
-        </a>
-        .
-        <br />
-        If you are unsure about your right to use them please 
-        <a
-          class="sc-iBkjds JLudk"
-          href="/contact"
-        >
-          contact me
-        </a>
-        .
-      </span>
+              Creative Commons BY-SA 3.0
+              <div
+                class="sc-ftvSup kUuEWK"
+              >
+                <svg
+                  class="sc-gKXOVf ktoyia sc-papXJ fmVkXn"
+                  height="18"
+                  viewBox="0 0 24 24"
+                  width="18"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M12.5 11.3c.4.4 1 .4 1.4 0L19 6.2V9c0 .6.4 1 1 1s1-.4 1-1V4c0-.6-.4-1-1-1h-5c-.6 0-1 .4-1 1s.4 1 1 1h2.4l-4.9 4.9c-.4.4-.4 1 0 1.4zM19 19c0 1.1-.9 2-2 2H5c-1.1 0-2-.9-2-2V7c0-1.1.9-2 2-2h7v2H5v12h12v-7h2"
+                  />
+                </svg>
+              </div>
+            </a>
+            .
+            <br />
+            If you are unsure about your right to use them please 
+            <a
+              class="sc-iBkjds JLudk"
+              href="/contact"
+            >
+              contact me
+            </a>
+            .
+          </span>
+        </div>
+      </div>
     </div>
   </div>
 </div>
@@ -379,14 +434,14 @@ exports[`<BlogRenderer /> should render correctly with blog and admin 1`] = `
 exports[`<BlogRenderer /> should render correctly with blog load error 1`] = `
 <div>
   <div
-    class="sc-bZnhIo hFJCgQ page-containerstyles__StyledPageContainer-sc-19l7k4-0"
+    class="sc-cTQhss jwfbEm page-containerstyles__StyledPageContainer-sc-19l7k4-0"
     width="prose"
   >
     <span
       class="sc-gicCDI prKpa"
     >
       <span
-        class="sc-jdAMXn kbXSpd"
+        class="sc-efBctP jFDViT"
       >
         This blog couldn't be loaded
         <br />
@@ -397,7 +452,7 @@ exports[`<BlogRenderer /> should render correctly with blog load error 1`] = `
       class="sc-evZas fXZjtf"
     >
       <div
-        class="sc-breuTD cvMWpe"
+        class="sc-breuTD bLqFbu"
         style="margin-left: -0px;"
       />
     </div>
@@ -405,7 +460,7 @@ exports[`<BlogRenderer /> should render correctly with blog load error 1`] = `
       class="sc-evZas ctHunJ blog-rendererstyles__BodySkeleton-sc-15d9dvh-0 jSDQAJ"
     >
       <div
-        class="sc-breuTD cvMWpe"
+        class="sc-breuTD bLqFbu"
         style="margin-left: -0px;"
       />
     </div>
@@ -421,60 +476,73 @@ exports[`<BlogRenderer /> should render correctly with blog load error 1`] = `
     </div>
   </div>
   <div
-    class="creative-commonssyles__Wrapper-sc-qff226-0 gOCDiS"
+    class="sc-ciZhAO jCfeVY"
   >
+    <style>
+      .js .animated-content__wrapper--hidden {
+  opacity: 0.01;
+}
+    </style>
     <div
-      class="creative-commonssyles__Background-sc-qff226-1 ddrRBh"
-    />
-    <div
-      class="sc-jqUVSM leXYdV creative-commonssyles__Inner-sc-qff226-2 gkGslB"
+      class="sc-cCsOjp mSMdJ animated-content__wrapper--hidden"
     >
-      <h1
-        class="sc-dkzDqf ddFalQ sc-crXcEl ioFrJl"
-        id="copyright"
+      <div
+        class="creative-commonssyles__Wrapper-sc-qff226-0 gOCDiS"
       >
-        Copyright
-      </h1>
-      <span
-        class="sc-gicCDI prKpa"
-      >
-        Most of my photos are licensed under
-         
-        <a
-          aria-label="Creative Commons BY-SA 3.0 (opens in a new tab)"
-          class="sc-iBkjds JLudk"
-          href="https://creativecommons.org/licenses/by-sa/3.0/"
-          rel="noopener noreferrer"
-          target="_blank"
+        <div
+          class="creative-commonssyles__Background-sc-qff226-1 ddrRBh"
+        />
+        <div
+          class="sc-jqUVSM leXYdV creative-commonssyles__Inner-sc-qff226-2 gkGslB"
         >
-          Creative Commons BY-SA 3.0
-          <div
-            class="sc-ftvSup kUuEWK"
+          <h1
+            class="sc-dkzDqf ddFalQ sc-crXcEl ioFrJl"
+            id="copyright"
           >
-            <svg
-              class="sc-gKXOVf ktoyia sc-papXJ fmVkXn"
-              height="18"
-              viewBox="0 0 24 24"
-              width="18"
-              xmlns="http://www.w3.org/2000/svg"
+            Copyright
+          </h1>
+          <span
+            class="sc-gicCDI prKpa"
+          >
+            Most of my photos are licensed under
+             
+            <a
+              aria-label="Creative Commons BY-SA 3.0 (opens in a new tab)"
+              class="sc-iBkjds JLudk"
+              href="https://creativecommons.org/licenses/by-sa/3.0/"
+              rel="noopener noreferrer"
+              target="_blank"
             >
-              <path
-                d="M12.5 11.3c.4.4 1 .4 1.4 0L19 6.2V9c0 .6.4 1 1 1s1-.4 1-1V4c0-.6-.4-1-1-1h-5c-.6 0-1 .4-1 1s.4 1 1 1h2.4l-4.9 4.9c-.4.4-.4 1 0 1.4zM19 19c0 1.1-.9 2-2 2H5c-1.1 0-2-.9-2-2V7c0-1.1.9-2 2-2h7v2H5v12h12v-7h2"
-              />
-            </svg>
-          </div>
-        </a>
-        .
-        <br />
-        If you are unsure about your right to use them please 
-        <a
-          class="sc-iBkjds JLudk"
-          href="/contact"
-        >
-          contact me
-        </a>
-        .
-      </span>
+              Creative Commons BY-SA 3.0
+              <div
+                class="sc-ftvSup kUuEWK"
+              >
+                <svg
+                  class="sc-gKXOVf ktoyia sc-papXJ fmVkXn"
+                  height="18"
+                  viewBox="0 0 24 24"
+                  width="18"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M12.5 11.3c.4.4 1 .4 1.4 0L19 6.2V9c0 .6.4 1 1 1s1-.4 1-1V4c0-.6-.4-1-1-1h-5c-.6 0-1 .4-1 1s.4 1 1 1h2.4l-4.9 4.9c-.4.4-.4 1 0 1.4zM19 19c0 1.1-.9 2-2 2H5c-1.1 0-2-.9-2-2V7c0-1.1.9-2 2-2h7v2H5v12h12v-7h2"
+                  />
+                </svg>
+              </div>
+            </a>
+            .
+            <br />
+            If you are unsure about your right to use them please 
+            <a
+              class="sc-iBkjds JLudk"
+              href="/contact"
+            >
+              contact me
+            </a>
+            .
+          </span>
+        </div>
+      </div>
     </div>
   </div>
 </div>
@@ -483,14 +551,14 @@ exports[`<BlogRenderer /> should render correctly with blog load error 1`] = `
 exports[`<BlogRenderer /> should render correctly with initial state 1`] = `
 <div>
   <div
-    class="sc-bZnhIo hFJCgQ page-containerstyles__StyledPageContainer-sc-19l7k4-0"
+    class="sc-cTQhss jwfbEm page-containerstyles__StyledPageContainer-sc-19l7k4-0"
     width="prose"
   >
     <div
       class="sc-evZas fXZjtf"
     >
       <div
-        class="sc-breuTD cvMWpe"
+        class="sc-breuTD bLqFbu"
         style="margin-left: -0px;"
       />
     </div>
@@ -498,66 +566,79 @@ exports[`<BlogRenderer /> should render correctly with initial state 1`] = `
       class="sc-evZas ctHunJ blog-rendererstyles__BodySkeleton-sc-15d9dvh-0 jSDQAJ"
     >
       <div
-        class="sc-breuTD cvMWpe"
+        class="sc-breuTD bLqFbu"
         style="margin-left: -0px;"
       />
     </div>
   </div>
   <div
-    class="creative-commonssyles__Wrapper-sc-qff226-0 gOCDiS"
+    class="sc-ciZhAO jCfeVY"
   >
+    <style>
+      .js .animated-content__wrapper--hidden {
+  opacity: 0.01;
+}
+    </style>
     <div
-      class="creative-commonssyles__Background-sc-qff226-1 ddrRBh"
-    />
-    <div
-      class="sc-jqUVSM leXYdV creative-commonssyles__Inner-sc-qff226-2 gkGslB"
+      class="sc-cCsOjp mSMdJ animated-content__wrapper--hidden"
     >
-      <h1
-        class="sc-dkzDqf ddFalQ sc-crXcEl ioFrJl"
-        id="copyright"
+      <div
+        class="creative-commonssyles__Wrapper-sc-qff226-0 gOCDiS"
       >
-        Copyright
-      </h1>
-      <span
-        class="sc-gicCDI prKpa"
-      >
-        Most of my photos are licensed under
-         
-        <a
-          aria-label="Creative Commons BY-SA 3.0 (opens in a new tab)"
-          class="sc-iBkjds JLudk"
-          href="https://creativecommons.org/licenses/by-sa/3.0/"
-          rel="noopener noreferrer"
-          target="_blank"
+        <div
+          class="creative-commonssyles__Background-sc-qff226-1 ddrRBh"
+        />
+        <div
+          class="sc-jqUVSM leXYdV creative-commonssyles__Inner-sc-qff226-2 gkGslB"
         >
-          Creative Commons BY-SA 3.0
-          <div
-            class="sc-ftvSup kUuEWK"
+          <h1
+            class="sc-dkzDqf ddFalQ sc-crXcEl ioFrJl"
+            id="copyright"
           >
-            <svg
-              class="sc-gKXOVf ktoyia sc-papXJ fmVkXn"
-              height="18"
-              viewBox="0 0 24 24"
-              width="18"
-              xmlns="http://www.w3.org/2000/svg"
+            Copyright
+          </h1>
+          <span
+            class="sc-gicCDI prKpa"
+          >
+            Most of my photos are licensed under
+             
+            <a
+              aria-label="Creative Commons BY-SA 3.0 (opens in a new tab)"
+              class="sc-iBkjds JLudk"
+              href="https://creativecommons.org/licenses/by-sa/3.0/"
+              rel="noopener noreferrer"
+              target="_blank"
             >
-              <path
-                d="M12.5 11.3c.4.4 1 .4 1.4 0L19 6.2V9c0 .6.4 1 1 1s1-.4 1-1V4c0-.6-.4-1-1-1h-5c-.6 0-1 .4-1 1s.4 1 1 1h2.4l-4.9 4.9c-.4.4-.4 1 0 1.4zM19 19c0 1.1-.9 2-2 2H5c-1.1 0-2-.9-2-2V7c0-1.1.9-2 2-2h7v2H5v12h12v-7h2"
-              />
-            </svg>
-          </div>
-        </a>
-        .
-        <br />
-        If you are unsure about your right to use them please 
-        <a
-          class="sc-iBkjds JLudk"
-          href="/contact"
-        >
-          contact me
-        </a>
-        .
-      </span>
+              Creative Commons BY-SA 3.0
+              <div
+                class="sc-ftvSup kUuEWK"
+              >
+                <svg
+                  class="sc-gKXOVf ktoyia sc-papXJ fmVkXn"
+                  height="18"
+                  viewBox="0 0 24 24"
+                  width="18"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M12.5 11.3c.4.4 1 .4 1.4 0L19 6.2V9c0 .6.4 1 1 1s1-.4 1-1V4c0-.6-.4-1-1-1h-5c-.6 0-1 .4-1 1s.4 1 1 1h2.4l-4.9 4.9c-.4.4-.4 1 0 1.4zM19 19c0 1.1-.9 2-2 2H5c-1.1 0-2-.9-2-2V7c0-1.1.9-2 2-2h7v2H5v12h12v-7h2"
+                  />
+                </svg>
+              </div>
+            </a>
+            .
+            <br />
+            If you are unsure about your right to use them please 
+            <a
+              class="sc-iBkjds JLudk"
+              href="/contact"
+            >
+              contact me
+            </a>
+            .
+          </span>
+        </div>
+      </div>
     </div>
   </div>
 </div>
@@ -566,24 +647,32 @@ exports[`<BlogRenderer /> should render correctly with initial state 1`] = `
 exports[`<BlogRenderer /> should render correctly with ssrBlog 1`] = `
 <div>
   <div
-    class="sc-bZnhIo hFJCgQ page-containerstyles__StyledPageContainer-sc-19l7k4-0"
+    class="sc-cTQhss jwfbEm page-containerstyles__StyledPageContainer-sc-19l7k4-0"
     width="prose"
   >
     <div
-      class="sc-gXmSlM dApwEi"
+      class="sc-bZnhIo fuBeEG"
     >
-      <a
-        class="sc-iBkjds JLudk"
-        href="/blogs"
+      <div
+        class="sc-gXmSlM dApwEi"
       >
-        ⇠ Blogs
-      </a>
+        <a
+          class="sc-iBkjds JLudk"
+          href="/blogs"
+        >
+          ⇠ Blogs
+        </a>
+      </div>
     </div>
-    <h1
-      class="sc-bczRLJ hDLBIv sc-himrzO kwTTFi"
+    <div
+      class="sc-bZnhIo fuBeEG"
     >
-      St. Ives ⛵ 2018
-    </h1>
+      <h1
+        class="sc-bczRLJ hDLBIv sc-himrzO kwTTFi"
+      >
+        St. Ives ⛵ 2018
+      </h1>
+    </div>
     <div
       class="blog-rendererstyles__DateContainer-sc-15d9dvh-1 cQmHrf"
     >
@@ -598,10 +687,10 @@ exports[`<BlogRenderer /> should render correctly with ssrBlog 1`] = `
       class="blog-rendererstyles__TagList-sc-15d9dvh-2 jWtyvq"
     >
       <div
-        class="sc-cCsOjp"
+        class="sc-iTONeN"
       >
         <span
-          class="sc-ciZhAO hlaqTL"
+          class="sc-iAvgwm eiWPlW"
           type="travel"
         >
           Travel
@@ -644,60 +733,73 @@ exports[`<BlogRenderer /> should render correctly with ssrBlog 1`] = `
     </div>
   </div>
   <div
-    class="creative-commonssyles__Wrapper-sc-qff226-0 gOCDiS"
+    class="sc-ciZhAO jCfeVY"
   >
+    <style>
+      .js .animated-content__wrapper--hidden {
+  opacity: 0.01;
+}
+    </style>
     <div
-      class="creative-commonssyles__Background-sc-qff226-1 ddrRBh"
-    />
-    <div
-      class="sc-jqUVSM leXYdV creative-commonssyles__Inner-sc-qff226-2 gkGslB"
+      class="sc-cCsOjp mSMdJ animated-content__wrapper--hidden"
     >
-      <h1
-        class="sc-dkzDqf ddFalQ sc-crXcEl ioFrJl"
-        id="copyright"
+      <div
+        class="creative-commonssyles__Wrapper-sc-qff226-0 gOCDiS"
       >
-        Copyright
-      </h1>
-      <span
-        class="sc-gicCDI prKpa"
-      >
-        Most of my photos are licensed under
-         
-        <a
-          aria-label="Creative Commons BY-SA 3.0 (opens in a new tab)"
-          class="sc-iBkjds JLudk"
-          href="https://creativecommons.org/licenses/by-sa/3.0/"
-          rel="noopener noreferrer"
-          target="_blank"
+        <div
+          class="creative-commonssyles__Background-sc-qff226-1 ddrRBh"
+        />
+        <div
+          class="sc-jqUVSM leXYdV creative-commonssyles__Inner-sc-qff226-2 gkGslB"
         >
-          Creative Commons BY-SA 3.0
-          <div
-            class="sc-ftvSup kUuEWK"
+          <h1
+            class="sc-dkzDqf ddFalQ sc-crXcEl ioFrJl"
+            id="copyright"
           >
-            <svg
-              class="sc-gKXOVf ktoyia sc-papXJ fmVkXn"
-              height="18"
-              viewBox="0 0 24 24"
-              width="18"
-              xmlns="http://www.w3.org/2000/svg"
+            Copyright
+          </h1>
+          <span
+            class="sc-gicCDI prKpa"
+          >
+            Most of my photos are licensed under
+             
+            <a
+              aria-label="Creative Commons BY-SA 3.0 (opens in a new tab)"
+              class="sc-iBkjds JLudk"
+              href="https://creativecommons.org/licenses/by-sa/3.0/"
+              rel="noopener noreferrer"
+              target="_blank"
             >
-              <path
-                d="M12.5 11.3c.4.4 1 .4 1.4 0L19 6.2V9c0 .6.4 1 1 1s1-.4 1-1V4c0-.6-.4-1-1-1h-5c-.6 0-1 .4-1 1s.4 1 1 1h2.4l-4.9 4.9c-.4.4-.4 1 0 1.4zM19 19c0 1.1-.9 2-2 2H5c-1.1 0-2-.9-2-2V7c0-1.1.9-2 2-2h7v2H5v12h12v-7h2"
-              />
-            </svg>
-          </div>
-        </a>
-        .
-        <br />
-        If you are unsure about your right to use them please 
-        <a
-          class="sc-iBkjds JLudk"
-          href="/contact"
-        >
-          contact me
-        </a>
-        .
-      </span>
+              Creative Commons BY-SA 3.0
+              <div
+                class="sc-ftvSup kUuEWK"
+              >
+                <svg
+                  class="sc-gKXOVf ktoyia sc-papXJ fmVkXn"
+                  height="18"
+                  viewBox="0 0 24 24"
+                  width="18"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M12.5 11.3c.4.4 1 .4 1.4 0L19 6.2V9c0 .6.4 1 1 1s1-.4 1-1V4c0-.6-.4-1-1-1h-5c-.6 0-1 .4-1 1s.4 1 1 1h2.4l-4.9 4.9c-.4.4-.4 1 0 1.4zM19 19c0 1.1-.9 2-2 2H5c-1.1 0-2-.9-2-2V7c0-1.1.9-2 2-2h7v2H5v12h12v-7h2"
+                  />
+                </svg>
+              </div>
+            </a>
+            .
+            <br />
+            If you are unsure about your right to use them please 
+            <a
+              class="sc-iBkjds JLudk"
+              href="/contact"
+            >
+              contact me
+            </a>
+            .
+          </span>
+        </div>
+      </div>
     </div>
   </div>
 </div>
