@@ -3,30 +3,30 @@
 exports[`<LoginForm /> Should render correctly 1`] = `
 <div>
   <div
-    class="sc-crXcEl"
+    class="sc-csuSiG"
   >
     <label
-      class="sc-fEOsli iHSlJz"
+      class="sc-fEXmlR fcnjli"
       for="email_FORM_ID"
     >
       Email
     </label>
     <div
-      class="sc-iBkjds hDuMmX sc-breuTD bOZwsL"
+      class="sc-iBYQkv qDrdv sc-bqWxrE dvHoOv"
       placeholder="Email"
     >
       <input
         aria-disabled="false"
         aria-invalid="false"
         autofill="username"
-        class="sc-dIouRR cqKYoJ"
+        class="sc-dIfARi egSfao"
         id="email_FORM_ID"
         name="Email"
         spellcheck="false"
         value=""
       />
       <svg
-        class="sc-gKXOVf ktoyia sc-hHLeRK kBmlVx"
+        class="sc-gKPRtg eSdzmv sc-hHTYSt hQAsBU"
         height="18"
         viewBox="0 0 24 24"
         width="18"
@@ -38,16 +38,16 @@ exports[`<LoginForm /> Should render correctly 1`] = `
       </svg>
     </div>
     <div
-      class="sc-idiyUo iOzASk"
+      class="sc-idXgbr gGJHZq"
     >
       An email containing a login link will be sent to you. To access your account, follow the link in the email.
     </div>
     <button
-      class="sc-dkzDqf bOfPfm sc-evZas hAEDCd"
+      class="sc-dkrFOg jeTODs sc-eDWCr fujPXy"
       type="button"
     >
       <span
-        class="sc-eCYdqJ ghZAyu"
+        class="sc-eDvSVe iqkXFe"
       >
         Login
       </span>

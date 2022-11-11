@@ -9,6 +9,8 @@ import configureStore from 'client-utils/common/redux/configure-store';
 import MagicLoginIndex from '../index';
 import MagicLogin from '../Container';
 
+jest.mock('next/router', () => ({ withRouter: component => component }));
+
 describe('<MagicLogin />', () => {
   let store;
   const spy = jest.fn();

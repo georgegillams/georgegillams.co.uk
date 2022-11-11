@@ -27,10 +27,10 @@ const EmailVerification = props => {
       token = router.query.token;
     }
     if (!verificationAttempted && token) {
-      verify(token);
       setVerificationAttempted(true);
+      verify(token);
     }
-  }, [verificationState, router]);
+  }, [router, verificationAttempted, verify]);
 
   const success = verifyResult && !verifyError;
 

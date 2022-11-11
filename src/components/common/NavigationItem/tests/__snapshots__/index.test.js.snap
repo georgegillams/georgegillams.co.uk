@@ -4,11 +4,11 @@ exports[`<NavigationItem /> Should render correctly 1`] = `
 <div>
   <a
     aria-label="name"
-    class="sc-hKMtZM iNnZJM"
+    class="sc-hLBbgP iLEeKF"
     href="/test"
   >
     <span
-      class="sc-eCYdqJ ghZAyu"
+      class="sc-eDvSVe iqkXFe"
     >
       name
     </span>
@@ -20,13 +20,13 @@ exports[`<NavigationItem /> Should render correctly hrefExternal 1`] = `
 <div>
   <a
     aria-label="name"
-    class="sc-hKMtZM iNnZJM"
+    class="sc-hLBbgP iLEeKF"
     href="/test"
     rel="noopener noreferrer"
     target="_blank"
   >
     <span
-      class="sc-eCYdqJ ghZAyu"
+      class="sc-eDvSVe iqkXFe"
     >
       name
     </span>
@@ -38,11 +38,11 @@ exports[`<NavigationItem /> Should render correctly with custom className 1`] = 
 <div>
   <a
     aria-label="name"
-    class="sc-hKMtZM iNnZJM test-custom-classname"
+    class="sc-hLBbgP iLEeKF test-custom-classname"
     href="/test"
   >
     <span
-      class="sc-eCYdqJ ghZAyu"
+      class="sc-eDvSVe iqkXFe"
     >
       name
     </span>

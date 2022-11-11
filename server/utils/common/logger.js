@@ -1,7 +1,5 @@
-/* eslint-disable no-console */
-
 const chalk = require('chalk');
-const ip = require('ip');
+import { ip } from 'ip';
 
 const divider = chalk.gray('\n-----------------------------------');
 
@@ -33,4 +31,4 @@ ${chalk.blue(`Press ${chalk.italic('CTRL-C')} to stop`)}
   },
 };
 
-module.exports = logger;
+export default logger;

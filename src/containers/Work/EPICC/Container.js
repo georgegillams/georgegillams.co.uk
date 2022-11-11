@@ -41,8 +41,8 @@ const WorkEPICC = () => (
             }}
             aspectX={1137}
             aspectY={1152}
-            lightSrc={screenshot1}
-            darkSrc={screenshot1}
+            lightSrc={screenshot1.src}
+            darkSrc={screenshot1.src}
           />
           <Screenshot
             imgProps={{
@@ -52,8 +52,8 @@ const WorkEPICC = () => (
             }}
             aspectX={1137}
             aspectY={1113}
-            lightSrc={screenshot2}
-            darkSrc={screenshot2}
+            lightSrc={screenshot2.src}
+            darkSrc={screenshot2.src}
           />
           <Screenshot
             imgProps={{
@@ -61,8 +61,8 @@ const WorkEPICC = () => (
             }}
             aspectX={1137}
             aspectY={1196}
-            lightSrc={screenshot3}
-            darkSrc={screenshot3}
+            lightSrc={screenshot3.src}
+            darkSrc={screenshot3.src}
           />
           <Screenshot
             imgProps={{
@@ -70,8 +70,8 @@ const WorkEPICC = () => (
             }}
             aspectX={1137}
             aspectY={810}
-            lightSrc={screenshot4}
-            darkSrc={screenshot4}
+            lightSrc={screenshot4.src}
+            darkSrc={screenshot4.src}
           />
         </Gallery>
       </Subsection>

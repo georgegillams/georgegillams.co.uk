@@ -1,11 +1,11 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Support saga loadPhotos actions Should call loadPhotos.failure if API returns error 1`] = `
-Object {
+{
   "@@redux-saga/IO": true,
   "combinator": false,
-  "payload": Object {
-    "action": Object {
+  "payload": {
+    "action": {
       "type": "app/photography/LOAD_PHOTOS/REQUEST",
     },
     "channel": undefined,
@@ -15,11 +15,11 @@ Object {
 `;
 
 exports[`Support saga loadPhotos actions Should call loadPhotos.failure if an exception occurs 1`] = `
-Object {
+{
   "@@redux-saga/IO": true,
   "combinator": false,
-  "payload": Object {
-    "action": Object {
+  "payload": {
+    "action": {
       "type": "app/photography/LOAD_PHOTOS/REQUEST",
     },
     "channel": undefined,
@@ -29,11 +29,11 @@ Object {
 `;
 
 exports[`Support saga loadPhotos actions Should call loadPhotos.success on successful API call 1`] = `
-Object {
+{
   "@@redux-saga/IO": true,
   "combinator": false,
-  "payload": Object {
-    "action": Object {
+  "payload": {
+    "action": {
       "type": "app/photography/LOAD_PHOTOS/REQUEST",
     },
     "channel": undefined,

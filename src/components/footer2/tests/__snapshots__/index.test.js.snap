@@ -3,29 +3,29 @@
 exports[`<Footer /> Should render correctly 1`] = `
 <div>
   <footer
-    class="footerstyles__Container-sc-ojjd19-0 beXJfO"
+    class="footerstyles__Container-sc-ojjd19-0 jwEgwh"
     id="footer"
   >
     <div
-      class="logostyles__OuterContainer-sc-1fentac-0 ftAWyG footerstyles__StyledLogo-sc-ojjd19-1 dHUBSN"
+      class="logostyles__OuterContainer-sc-1fentac-0 hLzBQR footerstyles__StyledLogo-sc-ojjd19-1 iDMNXa"
     >
       <a
-        class="logostyles__StyledLink-sc-1fentac-1 gfWJqm"
+        class="logostyles__StyledLink-sc-1fentac-1 faHbaV"
         href="/"
       >
         <span
           aria-label="Home page"
-          class="logostyles__LargeText-sc-1fentac-2 eneHCc"
+          class="logostyles__LargeText-sc-1fentac-2 cachOr"
         >
           G
         </span>
       </a>
     </div>
     <div
-      class="footerstyles__StyledTechSpecs-sc-ojjd19-2 hLmmol"
+      class="footerstyles__StyledTechSpecs-sc-ojjd19-2 jckxzC"
     >
       <span
-        class="sc-jqUVSM iuHAUr tech-specsstyles__StyledParagraph-sc-1ysn53a-0 glkFZI"
+        class="sc-jrcTuL dRJySQ tech-specsstyles__StyledParagraph-sc-1ysn53a-0 hLsLJb"
       >
         Built in
         <a
@@ -35,7 +35,7 @@ exports[`<Footer /> Should render correctly 1`] = `
         >
           <img
             alt="React"
-            class="tech-specsstyles__Icon-sc-1ysn53a-1 fVaLbn"
+            class="tech-specsstyles__Icon-sc-1ysn53a-1 ifSCys"
             height="5"
             src="IMAGE_MOCK"
             width="5"
@@ -49,7 +49,7 @@ exports[`<Footer /> Should render correctly 1`] = `
         >
           <img
             alt="Redux"
-            class="tech-specsstyles__Icon-sc-1ysn53a-1 fVaLbn"
+            class="tech-specsstyles__Icon-sc-1ysn53a-1 ifSCys"
             height="5"
             src="IMAGE_MOCK"
             width="5"
@@ -63,7 +63,7 @@ exports[`<Footer /> Should render correctly 1`] = `
         >
           <img
             alt="Amazon Web Services"
-            class="tech-specsstyles__Icon-sc-1ysn53a-1 fVaLbn"
+            class="tech-specsstyles__Icon-sc-1ysn53a-1 ifSCys"
             height="5"
             src="IMAGE_MOCK"
             style="margin-top: .8rem; max-width: 2.9rem;"
@@ -73,59 +73,59 @@ exports[`<Footer /> Should render correctly 1`] = `
       </span>
     </div>
     <div
-      class="footer-navstyles__Wrapper-sc-7lmnsj-0 kTnJQq footerstyles__StyledFooterNav-sc-ojjd19-3"
+      class="footer-navstyles__Wrapper-sc-7lmnsj-0 bCyRIt footerstyles__StyledFooterNav-sc-ojjd19-3"
     >
       <div
-        class="footer-navstyles__Section-sc-7lmnsj-1 iFmILp"
+        class="footer-navstyles__Section-sc-7lmnsj-1 bcuhSW"
       >
         <a
-          class="sc-iBkjds LHtmg"
+          class="sc-iBYQkv cCatJA"
           href="/blog"
         >
           Blog
         </a>
         <a
-          class="sc-iBkjds LHtmg"
+          class="sc-iBYQkv cCatJA"
           href="/photography"
         >
           Photography
         </a>
         <a
-          class="sc-iBkjds LHtmg"
+          class="sc-iBYQkv cCatJA"
           href="/work"
         >
           Work
         </a>
         <a
-          class="sc-iBkjds LHtmg"
+          class="sc-iBYQkv cCatJA"
           href="/contact"
         >
           Contact
         </a>
       </div>
       <div
-        class="footer-navstyles__Section-sc-7lmnsj-1 iFmILp"
+        class="footer-navstyles__Section-sc-7lmnsj-1 bcuhSW"
       >
         <a
-          class="sc-iBkjds LHtmg"
+          class="sc-iBYQkv cCatJA"
           href="/sitemap"
         >
           Site map
         </a>
         <a
-          class="sc-iBkjds LHtmg"
+          class="sc-iBYQkv cCatJA"
           href="/privacy-policy"
         >
           Privacy
         </a>
         <a
-          class="sc-iBkjds LHtmg"
+          class="sc-iBYQkv cCatJA"
           href="/login"
         >
           Login/Account
         </a>
         <a
-          class="sc-iBkjds LHtmg"
+          class="sc-iBYQkv cCatJA"
           href="/status"
         >
           Status
@@ -139,29 +139,29 @@ exports[`<Footer /> Should render correctly 1`] = `
 exports[`<Footer /> Should render correctly with custom className 1`] = `
 <div>
   <footer
-    class="footerstyles__Container-sc-ojjd19-0 beXJfO test-custom-className"
+    class="footerstyles__Container-sc-ojjd19-0 jwEgwh test-custom-className"
     id="footer"
   >
     <div
-      class="logostyles__OuterContainer-sc-1fentac-0 ftAWyG footerstyles__StyledLogo-sc-ojjd19-1 dHUBSN"
+      class="logostyles__OuterContainer-sc-1fentac-0 hLzBQR footerstyles__StyledLogo-sc-ojjd19-1 iDMNXa"
     >
       <a
-        class="logostyles__StyledLink-sc-1fentac-1 gfWJqm"
+        class="logostyles__StyledLink-sc-1fentac-1 faHbaV"
         href="/"
       >
         <span
           aria-label="Home page"
-          class="logostyles__LargeText-sc-1fentac-2 eneHCc"
+          class="logostyles__LargeText-sc-1fentac-2 cachOr"
         >
           G
         </span>
       </a>
     </div>
     <div
-      class="footerstyles__StyledTechSpecs-sc-ojjd19-2 hLmmol"
+      class="footerstyles__StyledTechSpecs-sc-ojjd19-2 jckxzC"
     >
       <span
-        class="sc-jqUVSM iuHAUr tech-specsstyles__StyledParagraph-sc-1ysn53a-0 glkFZI"
+        class="sc-jrcTuL dRJySQ tech-specsstyles__StyledParagraph-sc-1ysn53a-0 hLsLJb"
       >
         Built in
         <a
@@ -171,7 +171,7 @@ exports[`<Footer /> Should render correctly with custom className 1`] = `
         >
           <img
             alt="React"
-            class="tech-specsstyles__Icon-sc-1ysn53a-1 fVaLbn"
+            class="tech-specsstyles__Icon-sc-1ysn53a-1 ifSCys"
             height="5"
             src="IMAGE_MOCK"
             width="5"
@@ -185,7 +185,7 @@ exports[`<Footer /> Should render correctly with custom className 1`] = `
         >
           <img
             alt="Redux"
-            class="tech-specsstyles__Icon-sc-1ysn53a-1 fVaLbn"
+            class="tech-specsstyles__Icon-sc-1ysn53a-1 ifSCys"
             height="5"
             src="IMAGE_MOCK"
             width="5"
@@ -199,7 +199,7 @@ exports[`<Footer /> Should render correctly with custom className 1`] = `
         >
           <img
             alt="Amazon Web Services"
-            class="tech-specsstyles__Icon-sc-1ysn53a-1 fVaLbn"
+            class="tech-specsstyles__Icon-sc-1ysn53a-1 ifSCys"
             height="5"
             src="IMAGE_MOCK"
             style="margin-top: .8rem; max-width: 2.9rem;"
@@ -209,59 +209,59 @@ exports[`<Footer /> Should render correctly with custom className 1`] = `
       </span>
     </div>
     <div
-      class="footer-navstyles__Wrapper-sc-7lmnsj-0 kTnJQq footerstyles__StyledFooterNav-sc-ojjd19-3"
+      class="footer-navstyles__Wrapper-sc-7lmnsj-0 bCyRIt footerstyles__StyledFooterNav-sc-ojjd19-3"
     >
       <div
-        class="footer-navstyles__Section-sc-7lmnsj-1 iFmILp"
+        class="footer-navstyles__Section-sc-7lmnsj-1 bcuhSW"
       >
         <a
-          class="sc-iBkjds LHtmg"
+          class="sc-iBYQkv cCatJA"
           href="/blog"
         >
           Blog
         </a>
         <a
-          class="sc-iBkjds LHtmg"
+          class="sc-iBYQkv cCatJA"
           href="/photography"
         >
           Photography
         </a>
         <a
-          class="sc-iBkjds LHtmg"
+          class="sc-iBYQkv cCatJA"
           href="/work"
         >
           Work
         </a>
         <a
-          class="sc-iBkjds LHtmg"
+          class="sc-iBYQkv cCatJA"
           href="/contact"
         >
           Contact
         </a>
       </div>
       <div
-        class="footer-navstyles__Section-sc-7lmnsj-1 iFmILp"
+        class="footer-navstyles__Section-sc-7lmnsj-1 bcuhSW"
       >
         <a
-          class="sc-iBkjds LHtmg"
+          class="sc-iBYQkv cCatJA"
           href="/sitemap"
         >
           Site map
         </a>
         <a
-          class="sc-iBkjds LHtmg"
+          class="sc-iBYQkv cCatJA"
           href="/privacy-policy"
         >
           Privacy
         </a>
         <a
-          class="sc-iBkjds LHtmg"
+          class="sc-iBYQkv cCatJA"
           href="/login"
         >
           Login/Account
         </a>
         <a
-          class="sc-iBkjds LHtmg"
+          class="sc-iBYQkv cCatJA"
           href="/status"
         >
           Status

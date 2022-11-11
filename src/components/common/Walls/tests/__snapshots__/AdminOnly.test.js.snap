@@ -3,21 +3,21 @@
 exports[`<AdminOnly /> Should render correctly 1`] = `
 <div>
   <div
-    class="sc-kDDrLX iNAFzC"
+    class="sc-kDvujY jcGnlL"
   >
     <h1
-      class="sc-dkzDqf iBtyHU sc-evZas cCtlkt"
+      class="sc-dkrFOg dYiSba sc-eDWCr wULAC"
       id="admin-only"
     >
       Admin only
     </h1>
     <span
-      class="sc-bczRLJ bhVmoO"
+      class="sc-bcXHqe huaqIH"
     >
       You need to be logged in with an admin account to view this content.
       <br />
       <a
-        class="sc-ftvSup cMmkUr"
+        class="sc-ftTHYK dpmGDG"
         href="/login"
       >
         Got a different admin account? Log in here.
@@ -36,21 +36,21 @@ exports[`<AdminOnly /> Should render correctly with admin user 1`] = `
 exports[`<AdminOnly /> Should render correctly with user 1`] = `
 <div>
   <div
-    class="sc-kDDrLX iNAFzC"
+    class="sc-kDvujY jcGnlL"
   >
     <h1
-      class="sc-dkzDqf iBtyHU sc-evZas cCtlkt"
+      class="sc-dkrFOg dYiSba sc-eDWCr wULAC"
       id="admin-only"
     >
       Admin only
     </h1>
     <span
-      class="sc-bczRLJ bhVmoO"
+      class="sc-bcXHqe huaqIH"
     >
       You need to be logged in with an admin account to view this content.
       <br />
       <a
-        class="sc-ftvSup cMmkUr"
+        class="sc-ftTHYK dpmGDG"
         href="/login"
       >
         Got a different admin account? Log in here.

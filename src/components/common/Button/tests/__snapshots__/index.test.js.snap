@@ -3,11 +3,11 @@
 exports[`<Button /> Should render correctly 1`] = `
 <div>
   <a
-    class="sc-hKMtZM lopzjZ"
+    class="sc-hLBbgP hCSjEI"
     href="/test"
   >
     <span
-      class="sc-eCYdqJ ghZAyu"
+      class="sc-eDvSVe iqkXFe"
     />
   </a>
 </div>
@@ -16,13 +16,13 @@ exports[`<Button /> Should render correctly 1`] = `
 exports[`<Button /> Should render correctly hrefExternal 1`] = `
 <div>
   <a
-    class="sc-hKMtZM lopzjZ"
+    class="sc-hLBbgP hCSjEI"
     href="https://duckduckgo.com/"
     rel="noopener noreferrer"
     target="_blank"
   >
     <span
-      class="sc-eCYdqJ ghZAyu"
+      class="sc-eDvSVe iqkXFe"
     />
   </a>
 </div>
@@ -31,11 +31,11 @@ exports[`<Button /> Should render correctly hrefExternal 1`] = `
 exports[`<Button /> Should render with nextified href 1`] = `
 <div>
   <a
-    class="sc-hKMtZM lopzjZ"
+    class="sc-hLBbgP hCSjEI"
     href="/blog/test"
   >
     <span
-      class="sc-eCYdqJ ghZAyu"
+      class="sc-eDvSVe iqkXFe"
     />
   </a>
 </div>

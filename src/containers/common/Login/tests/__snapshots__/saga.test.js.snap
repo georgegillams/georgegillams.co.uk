@@ -1,11 +1,11 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`loginRequest Saga login actions Should call login.failure if API returns error 1`] = `
-Object {
+{
   "@@redux-saga/IO": true,
   "combinator": false,
-  "payload": Object {
-    "args": Array [],
+  "payload": {
+    "args": [],
     "selector": [Function],
   },
   "type": "SELECT",
@@ -13,11 +13,11 @@ Object {
 `;
 
 exports[`loginRequest Saga login actions Should call login.failure if an exception occurs 1`] = `
-Object {
+{
   "@@redux-saga/IO": true,
   "combinator": false,
-  "payload": Object {
-    "args": Array [],
+  "payload": {
+    "args": [],
     "selector": [Function],
   },
   "type": "SELECT",
@@ -25,11 +25,11 @@ Object {
 `;
 
 exports[`loginRequest Saga login actions Should call login.success on successful API call 1`] = `
-Object {
+{
   "@@redux-saga/IO": true,
   "combinator": false,
-  "payload": Object {
-    "args": Array [],
+  "payload": {
+    "args": [],
     "selector": [Function],
   },
   "type": "SELECT",

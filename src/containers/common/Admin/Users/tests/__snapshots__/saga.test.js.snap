@@ -1,11 +1,11 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`AdminUsers saga create actions Should call create.failure if API returns error 1`] = `
-Object {
+{
   "@@redux-saga/IO": true,
   "combinator": false,
-  "payload": Object {
-    "args": Array [],
+  "payload": {
+    "args": [],
     "selector": [Function],
   },
   "type": "SELECT",
@@ -13,11 +13,11 @@ Object {
 `;
 
 exports[`AdminUsers saga create actions Should call create.failure if an exception occurs 1`] = `
-Object {
+{
   "@@redux-saga/IO": true,
   "combinator": false,
-  "payload": Object {
-    "args": Array [],
+  "payload": {
+    "args": [],
     "selector": [Function],
   },
   "type": "SELECT",
@@ -25,11 +25,11 @@ Object {
 `;
 
 exports[`AdminUsers saga create actions Should call create.success on successful API call 1`] = `
-Object {
+{
   "@@redux-saga/IO": true,
   "combinator": false,
-  "payload": Object {
-    "args": Array [],
+  "payload": {
+    "args": [],
     "selector": [Function],
   },
   "type": "SELECT",
@@ -37,11 +37,11 @@ Object {
 `;
 
 exports[`AdminUsers saga create actions Should call load.trigger on successful API call 1`] = `
-Object {
+{
   "@@redux-saga/IO": true,
   "combinator": false,
-  "payload": Object {
-    "args": Array [],
+  "payload": {
+    "args": [],
     "selector": [Function],
   },
   "type": "SELECT",
@@ -49,11 +49,11 @@ Object {
 `;
 
 exports[`AdminUsers saga load actions Should call load.failure if API returns error 1`] = `
-Object {
+{
   "@@redux-saga/IO": true,
   "combinator": false,
-  "payload": Object {
-    "action": Object {
+  "payload": {
+    "action": {
       "type": "app/admin-users/LOAD/REQUEST",
     },
     "channel": undefined,
@@ -63,11 +63,11 @@ Object {
 `;
 
 exports[`AdminUsers saga load actions Should call load.failure if an exception occurs 1`] = `
-Object {
+{
   "@@redux-saga/IO": true,
   "combinator": false,
-  "payload": Object {
-    "action": Object {
+  "payload": {
+    "action": {
       "type": "app/admin-users/LOAD/REQUEST",
     },
     "channel": undefined,
@@ -77,11 +77,11 @@ Object {
 `;
 
 exports[`AdminUsers saga load actions Should call load.success on successful API call 1`] = `
-Object {
+{
   "@@redux-saga/IO": true,
   "combinator": false,
-  "payload": Object {
-    "action": Object {
+  "payload": {
+    "action": {
       "type": "app/admin-users/LOAD/REQUEST",
     },
     "channel": undefined,
@@ -91,11 +91,11 @@ Object {
 `;
 
 exports[`AdminUsers saga remove actions Should call load.trigger on successful API call 1`] = `
-Object {
+{
   "@@redux-saga/IO": true,
   "combinator": false,
-  "payload": Object {
-    "args": Array [],
+  "payload": {
+    "args": [],
     "selector": [Function],
   },
   "type": "SELECT",
@@ -103,11 +103,11 @@ Object {
 `;
 
 exports[`AdminUsers saga remove actions Should call remove.failure if API returns error 1`] = `
-Object {
+{
   "@@redux-saga/IO": true,
   "combinator": false,
-  "payload": Object {
-    "args": Array [],
+  "payload": {
+    "args": [],
     "selector": [Function],
   },
   "type": "SELECT",
@@ -115,11 +115,11 @@ Object {
 `;
 
 exports[`AdminUsers saga remove actions Should call remove.failure if an exception occurs 1`] = `
-Object {
+{
   "@@redux-saga/IO": true,
   "combinator": false,
-  "payload": Object {
-    "args": Array [],
+  "payload": {
+    "args": [],
     "selector": [Function],
   },
   "type": "SELECT",
@@ -127,11 +127,11 @@ Object {
 `;
 
 exports[`AdminUsers saga remove actions Should call remove.success on successful API call 1`] = `
-Object {
+{
   "@@redux-saga/IO": true,
   "combinator": false,
-  "payload": Object {
-    "args": Array [],
+  "payload": {
+    "args": [],
     "selector": [Function],
   },
   "type": "SELECT",
@@ -139,11 +139,11 @@ Object {
 `;
 
 exports[`AdminUsers saga request actions Should call requestMagicLink.failure if API returns error 1`] = `
-Object {
+{
   "@@redux-saga/IO": true,
   "combinator": false,
-  "payload": Object {
-    "args": Array [],
+  "payload": {
+    "args": [],
     "selector": [Function],
   },
   "type": "SELECT",
@@ -151,11 +151,11 @@ Object {
 `;
 
 exports[`AdminUsers saga request actions Should call requestMagicLink.failure if an exception occurs 1`] = `
-Object {
+{
   "@@redux-saga/IO": true,
   "combinator": false,
-  "payload": Object {
-    "args": Array [],
+  "payload": {
+    "args": [],
     "selector": [Function],
   },
   "type": "SELECT",
@@ -163,11 +163,11 @@ Object {
 `;
 
 exports[`AdminUsers saga request actions Should call requestMagicLink.success on successful API call 1`] = `
-Object {
+{
   "@@redux-saga/IO": true,
   "combinator": false,
-  "payload": Object {
-    "args": Array [],
+  "payload": {
+    "args": [],
     "selector": [Function],
   },
   "type": "SELECT",
@@ -175,11 +175,11 @@ Object {
 `;
 
 exports[`AdminUsers saga update actions Should call load.trigger on successful API call 1`] = `
-Object {
+{
   "@@redux-saga/IO": true,
   "combinator": false,
-  "payload": Object {
-    "args": Array [],
+  "payload": {
+    "args": [],
     "selector": [Function],
   },
   "type": "SELECT",
@@ -187,11 +187,11 @@ Object {
 `;
 
 exports[`AdminUsers saga update actions Should call update.failure if API returns error 1`] = `
-Object {
+{
   "@@redux-saga/IO": true,
   "combinator": false,
-  "payload": Object {
-    "args": Array [],
+  "payload": {
+    "args": [],
     "selector": [Function],
   },
   "type": "SELECT",
@@ -199,11 +199,11 @@ Object {
 `;
 
 exports[`AdminUsers saga update actions Should call update.failure if an exception occurs 1`] = `
-Object {
+{
   "@@redux-saga/IO": true,
   "combinator": false,
-  "payload": Object {
-    "args": Array [],
+  "payload": {
+    "args": [],
     "selector": [Function],
   },
   "type": "SELECT",
@@ -211,11 +211,11 @@ Object {
 `;
 
 exports[`AdminUsers saga update actions Should call update.success on successful API call 1`] = `
-Object {
+{
   "@@redux-saga/IO": true,
   "combinator": false,
-  "payload": Object {
-    "args": Array [],
+  "payload": {
+    "args": [],
     "selector": [Function],
   },
   "type": "SELECT",

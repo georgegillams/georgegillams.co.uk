@@ -46,24 +46,24 @@ const Phones = props => {
     <Wrapper {...rest}>
       <StyledSlidingPhone
         show={timedDisplayStates[0]}
-        lightSrc={light0}
-        darkSrc={dark0}
+        lightSrc={light0.src}
+        darkSrc={dark0.src}
         imgProps={{
           alt: 'A screenshot of our Backpack design principles',
         }}
       />
       <StyledSlidingPhone
         show={timedDisplayStates[1]}
-        lightSrc={light1}
-        darkSrc={dark1}
+        lightSrc={light1.src}
+        darkSrc={dark1.src}
         imgProps={{
           alt: 'A screenshot of our bar chart component on iOS',
         }}
       />
       <StyledSlidingPhone
         show={timedDisplayStates[2]}
-        lightSrc={light2}
-        darkSrc={dark2}
+        lightSrc={light2.src}
+        darkSrc={dark2.src}
         imgProps={{
           alt: 'A screenshot of our flare view component on web',
         }}

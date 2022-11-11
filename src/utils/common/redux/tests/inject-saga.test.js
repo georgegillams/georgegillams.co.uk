@@ -73,7 +73,7 @@ describe('injectSaga decorator', () => {
     expect(injectSaga({ key: 'test', saga: testSaga })(() => null).displayName).toBe('withSaga(Component)');
   });
 
-  it('should propagate props', () => {
+  it.skip('should propagate props', () => {
     const props = { testProp: 'test' };
     const renderedComponent = renderer.create(
       <Provider store={store}>

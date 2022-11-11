@@ -3,28 +3,28 @@
 exports[`<BlogRenderer /> should render correctly - index 1`] = `
 <div>
   <div
-    class="sc-cTQhss jwfbEm page-containerstyles__StyledPageContainer-sc-19l7k4-0"
+    class="sc-cUEOzv fizLAr page-containerstyles__StyledPageContainer-sc-19l7k4-0"
     width="prose"
   >
     <div
-      class="sc-evZas fXZjtf"
+      class="sc-eDWCr gfHLtc"
     >
       <div
-        class="sc-breuTD bLqFbu"
+        class="sc-bqWxrE cRkaeW"
         style="margin-left: -0px;"
       />
     </div>
     <div
-      class="sc-evZas ctHunJ blog-rendererstyles__BodySkeleton-sc-15d9dvh-0 jSDQAJ"
+      class="sc-eDWCr kticUa blog-rendererstyles__BodySkeleton-sc-15d9dvh-0 kzmwSy"
     >
       <div
-        class="sc-breuTD bLqFbu"
+        class="sc-bqWxrE cRkaeW"
         style="margin-left: -0px;"
       />
     </div>
   </div>
   <div
-    class="sc-ciZhAO jCfeVY"
+    class="sc-cjibBx FXeDp"
   >
     <style>
       .js .animated-content__wrapper--hidden {
@@ -32,41 +32,41 @@ exports[`<BlogRenderer /> should render correctly - index 1`] = `
 }
     </style>
     <div
-      class="sc-cCsOjp mSMdJ animated-content__wrapper--hidden"
+      class="sc-cCjUiG htyYId animated-content__wrapper--hidden"
     >
       <div
-        class="creative-commonssyles__Wrapper-sc-qff226-0 gOCDiS"
+        class="creative-commonssyles__Wrapper-sc-qff226-0 eObJgx"
       >
         <div
-          class="creative-commonssyles__Background-sc-qff226-1 ddrRBh"
+          class="creative-commonssyles__Background-sc-qff226-1 gREbZK"
         />
         <div
-          class="sc-jqUVSM leXYdV creative-commonssyles__Inner-sc-qff226-2 gkGslB"
+          class="sc-jrcTuL drIieO creative-commonssyles__Inner-sc-qff226-2 jkifKu"
         >
           <h1
-            class="sc-dkzDqf ddFalQ sc-crXcEl ioFrJl"
+            class="sc-dkrFOg eRKGDm sc-csuSiG gvoVyF"
             id="copyright"
           >
             Copyright
           </h1>
           <span
-            class="sc-gicCDI prKpa"
+            class="sc-gikAfH buRiqg"
           >
             Most of my photos are licensed under
              
             <a
               aria-label="Creative Commons BY-SA 3.0 (opens in a new tab)"
-              class="sc-iBkjds JLudk"
+              class="sc-iBYQkv jNlLug"
               href="https://creativecommons.org/licenses/by-sa/3.0/"
               rel="noopener noreferrer"
               target="_blank"
             >
               Creative Commons BY-SA 3.0
               <div
-                class="sc-ftvSup kUuEWK"
+                class="sc-ftTHYK dbfjGz"
               >
                 <svg
-                  class="sc-gKXOVf ktoyia sc-papXJ fmVkXn"
+                  class="sc-gKPRtg eSdzmv sc-pyfCe hLCbyO"
                   height="18"
                   viewBox="0 0 24 24"
                   width="18"
@@ -82,7 +82,7 @@ exports[`<BlogRenderer /> should render correctly - index 1`] = `
             <br />
             If you are unsure about your right to use them please 
             <a
-              class="sc-iBkjds JLudk"
+              class="sc-iBYQkv jNlLug"
               href="/contact"
             >
               contact me
@@ -99,17 +99,17 @@ exports[`<BlogRenderer /> should render correctly - index 1`] = `
 exports[`<BlogRenderer /> should render correctly with blog 1`] = `
 <div>
   <div
-    class="sc-cTQhss jwfbEm page-containerstyles__StyledPageContainer-sc-19l7k4-0"
+    class="sc-cUEOzv fizLAr page-containerstyles__StyledPageContainer-sc-19l7k4-0"
     width="prose"
   >
     <div
-      class="sc-bZnhIo fuBeEG"
+      class="sc-cabOPr cxUFJc"
     >
       <div
-        class="sc-gXmSlM dApwEi"
+        class="sc-gYbzsP bCTbDs"
       >
         <a
-          class="sc-iBkjds JLudk"
+          class="sc-iBYQkv jNlLug"
           href="/blogs"
         >
           ⇠ Blogs
@@ -117,32 +117,32 @@ exports[`<BlogRenderer /> should render correctly with blog 1`] = `
       </div>
     </div>
     <div
-      class="sc-bZnhIo fuBeEG"
+      class="sc-cabOPr cxUFJc"
     >
       <h1
-        class="sc-bczRLJ hDLBIv sc-himrzO kwTTFi"
+        class="sc-bcXHqe bHgOFy sc-hhOBVt dpGXFh"
       >
         St. Ives ⛵ 2018
       </h1>
     </div>
     <div
-      class="blog-rendererstyles__DateContainer-sc-15d9dvh-1 cQmHrf"
+      class="blog-rendererstyles__DateContainer-sc-15d9dvh-1 kuvyGk"
     >
       <span
-        class="sc-eCYdqJ iiRHQc sc-ksZaOG fwWbSc"
+        class="sc-eDvSVe ezgbKo sc-ksBlkl iiDSod"
       >
         Published 
         TEST_DATE
       </span>
     </div>
     <div
-      class="blog-rendererstyles__TagList-sc-15d9dvh-2 jWtyvq"
+      class="blog-rendererstyles__TagList-sc-15d9dvh-2 cpiaZB"
     >
       <div
-        class="sc-iTONeN"
+        class="sc-iTFTee"
       >
         <span
-          class="sc-iAvgwm eiWPlW"
+          class="sc-iAEawV buRgyr"
           type="travel"
         >
           Travel
@@ -150,25 +150,25 @@ exports[`<BlogRenderer /> should render correctly with blog 1`] = `
       </div>
     </div>
     <div
-      class="sc-bZkfAO fPxBCj"
+      class="sc-bYMpWt jdetWK"
     >
       <span
-        class="sc-gicCDI prKpa sc-kLLXSd bGXPbi markdown-renderer__element"
+        class="sc-gikAfH buRiqg sc-kMjNwy bEnXPJ markdown-renderer__element"
       >
         Some content with 
         <a
           aria-label="a link (opens in a new tab)"
-          class="sc-iBkjds JLudk"
+          class="sc-iBYQkv jNlLug"
           href="https://duckduckgo.com/"
           rel="noopener noreferrer"
           target="_blank"
         >
           a link
           <div
-            class="sc-ftvSup kUuEWK"
+            class="sc-ftTHYK dbfjGz"
           >
             <svg
-              class="sc-gKXOVf ktoyia sc-papXJ fmVkXn"
+              class="sc-gKPRtg eSdzmv sc-pyfCe hLCbyO"
               height="18"
               viewBox="0 0 24 24"
               width="18"
@@ -185,7 +185,7 @@ exports[`<BlogRenderer /> should render correctly with blog 1`] = `
     </div>
   </div>
   <div
-    class="sc-ciZhAO jCfeVY"
+    class="sc-cjibBx FXeDp"
   >
     <style>
       .js .animated-content__wrapper--hidden {
@@ -193,41 +193,41 @@ exports[`<BlogRenderer /> should render correctly with blog 1`] = `
 }
     </style>
     <div
-      class="sc-cCsOjp mSMdJ animated-content__wrapper--hidden"
+      class="sc-cCjUiG htyYId animated-content__wrapper--hidden"
     >
       <div
-        class="creative-commonssyles__Wrapper-sc-qff226-0 gOCDiS"
+        class="creative-commonssyles__Wrapper-sc-qff226-0 eObJgx"
       >
         <div
-          class="creative-commonssyles__Background-sc-qff226-1 ddrRBh"
+          class="creative-commonssyles__Background-sc-qff226-1 gREbZK"
         />
         <div
-          class="sc-jqUVSM leXYdV creative-commonssyles__Inner-sc-qff226-2 gkGslB"
+          class="sc-jrcTuL drIieO creative-commonssyles__Inner-sc-qff226-2 jkifKu"
         >
           <h1
-            class="sc-dkzDqf ddFalQ sc-crXcEl ioFrJl"
+            class="sc-dkrFOg eRKGDm sc-csuSiG gvoVyF"
             id="copyright"
           >
             Copyright
           </h1>
           <span
-            class="sc-gicCDI prKpa"
+            class="sc-gikAfH buRiqg"
           >
             Most of my photos are licensed under
              
             <a
               aria-label="Creative Commons BY-SA 3.0 (opens in a new tab)"
-              class="sc-iBkjds JLudk"
+              class="sc-iBYQkv jNlLug"
               href="https://creativecommons.org/licenses/by-sa/3.0/"
               rel="noopener noreferrer"
               target="_blank"
             >
               Creative Commons BY-SA 3.0
               <div
-                class="sc-ftvSup kUuEWK"
+                class="sc-ftTHYK dbfjGz"
               >
                 <svg
-                  class="sc-gKXOVf ktoyia sc-papXJ fmVkXn"
+                  class="sc-gKPRtg eSdzmv sc-pyfCe hLCbyO"
                   height="18"
                   viewBox="0 0 24 24"
                   width="18"
@@ -243,7 +243,7 @@ exports[`<BlogRenderer /> should render correctly with blog 1`] = `
             <br />
             If you are unsure about your right to use them please 
             <a
-              class="sc-iBkjds JLudk"
+              class="sc-iBYQkv jNlLug"
               href="/contact"
             >
               contact me
@@ -260,17 +260,17 @@ exports[`<BlogRenderer /> should render correctly with blog 1`] = `
 exports[`<BlogRenderer /> should render correctly with blog and admin 1`] = `
 <div>
   <div
-    class="sc-cTQhss jwfbEm page-containerstyles__StyledPageContainer-sc-19l7k4-0"
+    class="sc-cUEOzv fizLAr page-containerstyles__StyledPageContainer-sc-19l7k4-0"
     width="prose"
   >
     <div
-      class="sc-bZnhIo fuBeEG"
+      class="sc-cabOPr cxUFJc"
     >
       <div
-        class="sc-gXmSlM dApwEi"
+        class="sc-gYbzsP bCTbDs"
       >
         <a
-          class="sc-iBkjds JLudk"
+          class="sc-iBYQkv jNlLug"
           href="/blogs"
         >
           ⇠ Blogs
@@ -278,32 +278,32 @@ exports[`<BlogRenderer /> should render correctly with blog and admin 1`] = `
       </div>
     </div>
     <div
-      class="sc-bZnhIo fuBeEG"
+      class="sc-cabOPr cxUFJc"
     >
       <h1
-        class="sc-bczRLJ hDLBIv sc-himrzO kwTTFi"
+        class="sc-bcXHqe bHgOFy sc-hhOBVt dpGXFh"
       >
         St. Ives ⛵ 2018
       </h1>
     </div>
     <div
-      class="blog-rendererstyles__DateContainer-sc-15d9dvh-1 cQmHrf"
+      class="blog-rendererstyles__DateContainer-sc-15d9dvh-1 kuvyGk"
     >
       <span
-        class="sc-eCYdqJ iiRHQc sc-ksZaOG fwWbSc"
+        class="sc-eDvSVe ezgbKo sc-ksBlkl iiDSod"
       >
         Published 
         TEST_DATE
       </span>
     </div>
     <div
-      class="blog-rendererstyles__TagList-sc-15d9dvh-2 jWtyvq"
+      class="blog-rendererstyles__TagList-sc-15d9dvh-2 cpiaZB"
     >
       <div
-        class="sc-iTONeN"
+        class="sc-iTFTee"
       >
         <span
-          class="sc-iAvgwm eiWPlW"
+          class="sc-iAEawV buRgyr"
           type="travel"
         >
           Travel
@@ -311,25 +311,25 @@ exports[`<BlogRenderer /> should render correctly with blog and admin 1`] = `
       </div>
     </div>
     <div
-      class="sc-bZkfAO fPxBCj"
+      class="sc-bYMpWt jdetWK"
     >
       <span
-        class="sc-gicCDI prKpa sc-kLLXSd bGXPbi markdown-renderer__element"
+        class="sc-gikAfH buRiqg sc-kMjNwy bEnXPJ markdown-renderer__element"
       >
         Some content with 
         <a
           aria-label="a link (opens in a new tab)"
-          class="sc-iBkjds JLudk"
+          class="sc-iBYQkv jNlLug"
           href="https://duckduckgo.com/"
           rel="noopener noreferrer"
           target="_blank"
         >
           a link
           <div
-            class="sc-ftvSup kUuEWK"
+            class="sc-ftTHYK dbfjGz"
           >
             <svg
-              class="sc-gKXOVf ktoyia sc-papXJ fmVkXn"
+              class="sc-gKPRtg eSdzmv sc-pyfCe hLCbyO"
               height="18"
               viewBox="0 0 24 24"
               width="18"
@@ -345,10 +345,10 @@ exports[`<BlogRenderer /> should render correctly with blog and admin 1`] = `
       </span>
     </div>
     <div
-      class="sc-jqUVSM leXYdV"
+      class="sc-jrcTuL drIieO"
     >
       <h1
-        class="sc-gsnTZi cTWewb sc-crXcEl jisdVx"
+        class="sc-gswNZR gzqAHo sc-csuSiG hpbHKR"
         id="edit-blog"
       >
         EDIT BLOG
@@ -359,7 +359,7 @@ exports[`<BlogRenderer /> should render correctly with blog and admin 1`] = `
     </div>
   </div>
   <div
-    class="sc-ciZhAO jCfeVY"
+    class="sc-cjibBx FXeDp"
   >
     <style>
       .js .animated-content__wrapper--hidden {
@@ -367,41 +367,41 @@ exports[`<BlogRenderer /> should render correctly with blog and admin 1`] = `
 }
     </style>
     <div
-      class="sc-cCsOjp mSMdJ animated-content__wrapper--hidden"
+      class="sc-cCjUiG htyYId animated-content__wrapper--hidden"
     >
       <div
-        class="creative-commonssyles__Wrapper-sc-qff226-0 gOCDiS"
+        class="creative-commonssyles__Wrapper-sc-qff226-0 eObJgx"
       >
         <div
-          class="creative-commonssyles__Background-sc-qff226-1 ddrRBh"
+          class="creative-commonssyles__Background-sc-qff226-1 gREbZK"
         />
         <div
-          class="sc-jqUVSM leXYdV creative-commonssyles__Inner-sc-qff226-2 gkGslB"
+          class="sc-jrcTuL drIieO creative-commonssyles__Inner-sc-qff226-2 jkifKu"
         >
           <h1
-            class="sc-dkzDqf ddFalQ sc-crXcEl ioFrJl"
+            class="sc-dkrFOg eRKGDm sc-csuSiG gvoVyF"
             id="copyright"
           >
             Copyright
           </h1>
           <span
-            class="sc-gicCDI prKpa"
+            class="sc-gikAfH buRiqg"
           >
             Most of my photos are licensed under
              
             <a
               aria-label="Creative Commons BY-SA 3.0 (opens in a new tab)"
-              class="sc-iBkjds JLudk"
+              class="sc-iBYQkv jNlLug"
               href="https://creativecommons.org/licenses/by-sa/3.0/"
               rel="noopener noreferrer"
               target="_blank"
             >
               Creative Commons BY-SA 3.0
               <div
-                class="sc-ftvSup kUuEWK"
+                class="sc-ftTHYK dbfjGz"
               >
                 <svg
-                  class="sc-gKXOVf ktoyia sc-papXJ fmVkXn"
+                  class="sc-gKPRtg eSdzmv sc-pyfCe hLCbyO"
                   height="18"
                   viewBox="0 0 24 24"
                   width="18"
@@ -417,7 +417,7 @@ exports[`<BlogRenderer /> should render correctly with blog and admin 1`] = `
             <br />
             If you are unsure about your right to use them please 
             <a
-              class="sc-iBkjds JLudk"
+              class="sc-iBYQkv jNlLug"
               href="/contact"
             >
               contact me
@@ -434,14 +434,14 @@ exports[`<BlogRenderer /> should render correctly with blog and admin 1`] = `
 exports[`<BlogRenderer /> should render correctly with blog load error 1`] = `
 <div>
   <div
-    class="sc-cTQhss jwfbEm page-containerstyles__StyledPageContainer-sc-19l7k4-0"
+    class="sc-cUEOzv fizLAr page-containerstyles__StyledPageContainer-sc-19l7k4-0"
     width="prose"
   >
     <span
-      class="sc-gicCDI prKpa"
+      class="sc-gikAfH buRiqg"
     >
       <span
-        class="sc-efBctP jFDViT"
+        class="sc-eeMvmM kyCQJh"
       >
         This blog couldn't be loaded
         <br />
@@ -449,26 +449,26 @@ exports[`<BlogRenderer /> should render correctly with blog load error 1`] = `
       </span>
     </span>
     <div
-      class="sc-evZas fXZjtf"
+      class="sc-eDWCr gfHLtc"
     >
       <div
-        class="sc-breuTD bLqFbu"
+        class="sc-bqWxrE cRkaeW"
         style="margin-left: -0px;"
       />
     </div>
     <div
-      class="sc-evZas ctHunJ blog-rendererstyles__BodySkeleton-sc-15d9dvh-0 jSDQAJ"
+      class="sc-eDWCr kticUa blog-rendererstyles__BodySkeleton-sc-15d9dvh-0 kzmwSy"
     >
       <div
-        class="sc-breuTD bLqFbu"
+        class="sc-bqWxrE cRkaeW"
         style="margin-left: -0px;"
       />
     </div>
     <div
-      class="sc-jqUVSM leXYdV"
+      class="sc-jrcTuL drIieO"
     >
       <h1
-        class="sc-dkzDqf ddFalQ sc-crXcEl hldXbV"
+        class="sc-dkrFOg eRKGDm sc-csuSiG kJUcBp"
         id="this-is-taking-a-while.-maybe-something-isn't-quite-right..."
       >
         This is taking a while. Maybe something isn't quite right...
@@ -476,7 +476,7 @@ exports[`<BlogRenderer /> should render correctly with blog load error 1`] = `
     </div>
   </div>
   <div
-    class="sc-ciZhAO jCfeVY"
+    class="sc-cjibBx FXeDp"
   >
     <style>
       .js .animated-content__wrapper--hidden {
@@ -484,41 +484,41 @@ exports[`<BlogRenderer /> should render correctly with blog load error 1`] = `
 }
     </style>
     <div
-      class="sc-cCsOjp mSMdJ animated-content__wrapper--hidden"
+      class="sc-cCjUiG htyYId animated-content__wrapper--hidden"
     >
       <div
-        class="creative-commonssyles__Wrapper-sc-qff226-0 gOCDiS"
+        class="creative-commonssyles__Wrapper-sc-qff226-0 eObJgx"
       >
         <div
-          class="creative-commonssyles__Background-sc-qff226-1 ddrRBh"
+          class="creative-commonssyles__Background-sc-qff226-1 gREbZK"
         />
         <div
-          class="sc-jqUVSM leXYdV creative-commonssyles__Inner-sc-qff226-2 gkGslB"
+          class="sc-jrcTuL drIieO creative-commonssyles__Inner-sc-qff226-2 jkifKu"
         >
           <h1
-            class="sc-dkzDqf ddFalQ sc-crXcEl ioFrJl"
+            class="sc-dkrFOg eRKGDm sc-csuSiG gvoVyF"
             id="copyright"
           >
             Copyright
           </h1>
           <span
-            class="sc-gicCDI prKpa"
+            class="sc-gikAfH buRiqg"
           >
             Most of my photos are licensed under
              
             <a
               aria-label="Creative Commons BY-SA 3.0 (opens in a new tab)"
-              class="sc-iBkjds JLudk"
+              class="sc-iBYQkv jNlLug"
               href="https://creativecommons.org/licenses/by-sa/3.0/"
               rel="noopener noreferrer"
               target="_blank"
             >
               Creative Commons BY-SA 3.0
               <div
-                class="sc-ftvSup kUuEWK"
+                class="sc-ftTHYK dbfjGz"
               >
                 <svg
-                  class="sc-gKXOVf ktoyia sc-papXJ fmVkXn"
+                  class="sc-gKPRtg eSdzmv sc-pyfCe hLCbyO"
                   height="18"
                   viewBox="0 0 24 24"
                   width="18"
@@ -534,7 +534,7 @@ exports[`<BlogRenderer /> should render correctly with blog load error 1`] = `
             <br />
             If you are unsure about your right to use them please 
             <a
-              class="sc-iBkjds JLudk"
+              class="sc-iBYQkv jNlLug"
               href="/contact"
             >
               contact me
@@ -551,28 +551,28 @@ exports[`<BlogRenderer /> should render correctly with blog load error 1`] = `
 exports[`<BlogRenderer /> should render correctly with initial state 1`] = `
 <div>
   <div
-    class="sc-cTQhss jwfbEm page-containerstyles__StyledPageContainer-sc-19l7k4-0"
+    class="sc-cUEOzv fizLAr page-containerstyles__StyledPageContainer-sc-19l7k4-0"
     width="prose"
   >
     <div
-      class="sc-evZas fXZjtf"
+      class="sc-eDWCr gfHLtc"
     >
       <div
-        class="sc-breuTD bLqFbu"
+        class="sc-bqWxrE cRkaeW"
         style="margin-left: -0px;"
       />
     </div>
     <div
-      class="sc-evZas ctHunJ blog-rendererstyles__BodySkeleton-sc-15d9dvh-0 jSDQAJ"
+      class="sc-eDWCr kticUa blog-rendererstyles__BodySkeleton-sc-15d9dvh-0 kzmwSy"
     >
       <div
-        class="sc-breuTD bLqFbu"
+        class="sc-bqWxrE cRkaeW"
         style="margin-left: -0px;"
       />
     </div>
   </div>
   <div
-    class="sc-ciZhAO jCfeVY"
+    class="sc-cjibBx FXeDp"
   >
     <style>
       .js .animated-content__wrapper--hidden {
@@ -580,41 +580,41 @@ exports[`<BlogRenderer /> should render correctly with initial state 1`] = `
 }
     </style>
     <div
-      class="sc-cCsOjp mSMdJ animated-content__wrapper--hidden"
+      class="sc-cCjUiG htyYId animated-content__wrapper--hidden"
     >
       <div
-        class="creative-commonssyles__Wrapper-sc-qff226-0 gOCDiS"
+        class="creative-commonssyles__Wrapper-sc-qff226-0 eObJgx"
       >
         <div
-          class="creative-commonssyles__Background-sc-qff226-1 ddrRBh"
+          class="creative-commonssyles__Background-sc-qff226-1 gREbZK"
         />
         <div
-          class="sc-jqUVSM leXYdV creative-commonssyles__Inner-sc-qff226-2 gkGslB"
+          class="sc-jrcTuL drIieO creative-commonssyles__Inner-sc-qff226-2 jkifKu"
         >
           <h1
-            class="sc-dkzDqf ddFalQ sc-crXcEl ioFrJl"
+            class="sc-dkrFOg eRKGDm sc-csuSiG gvoVyF"
             id="copyright"
           >
             Copyright
           </h1>
           <span
-            class="sc-gicCDI prKpa"
+            class="sc-gikAfH buRiqg"
           >
             Most of my photos are licensed under
              
             <a
               aria-label="Creative Commons BY-SA 3.0 (opens in a new tab)"
-              class="sc-iBkjds JLudk"
+              class="sc-iBYQkv jNlLug"
               href="https://creativecommons.org/licenses/by-sa/3.0/"
               rel="noopener noreferrer"
               target="_blank"
             >
               Creative Commons BY-SA 3.0
               <div
-                class="sc-ftvSup kUuEWK"
+                class="sc-ftTHYK dbfjGz"
               >
                 <svg
-                  class="sc-gKXOVf ktoyia sc-papXJ fmVkXn"
+                  class="sc-gKPRtg eSdzmv sc-pyfCe hLCbyO"
                   height="18"
                   viewBox="0 0 24 24"
                   width="18"
@@ -630,7 +630,7 @@ exports[`<BlogRenderer /> should render correctly with initial state 1`] = `
             <br />
             If you are unsure about your right to use them please 
             <a
-              class="sc-iBkjds JLudk"
+              class="sc-iBYQkv jNlLug"
               href="/contact"
             >
               contact me
@@ -647,17 +647,17 @@ exports[`<BlogRenderer /> should render correctly with initial state 1`] = `
 exports[`<BlogRenderer /> should render correctly with ssrBlog 1`] = `
 <div>
   <div
-    class="sc-cTQhss jwfbEm page-containerstyles__StyledPageContainer-sc-19l7k4-0"
+    class="sc-cUEOzv fizLAr page-containerstyles__StyledPageContainer-sc-19l7k4-0"
     width="prose"
   >
     <div
-      class="sc-bZnhIo fuBeEG"
+      class="sc-cabOPr cxUFJc"
     >
       <div
-        class="sc-gXmSlM dApwEi"
+        class="sc-gYbzsP bCTbDs"
       >
         <a
-          class="sc-iBkjds JLudk"
+          class="sc-iBYQkv jNlLug"
           href="/blogs"
         >
           ⇠ Blogs
@@ -665,32 +665,32 @@ exports[`<BlogRenderer /> should render correctly with ssrBlog 1`] = `
       </div>
     </div>
     <div
-      class="sc-bZnhIo fuBeEG"
+      class="sc-cabOPr cxUFJc"
     >
       <h1
-        class="sc-bczRLJ hDLBIv sc-himrzO kwTTFi"
+        class="sc-bcXHqe bHgOFy sc-hhOBVt dpGXFh"
       >
         St. Ives ⛵ 2018
       </h1>
     </div>
     <div
-      class="blog-rendererstyles__DateContainer-sc-15d9dvh-1 cQmHrf"
+      class="blog-rendererstyles__DateContainer-sc-15d9dvh-1 kuvyGk"
     >
       <span
-        class="sc-eCYdqJ iiRHQc sc-ksZaOG fwWbSc"
+        class="sc-eDvSVe ezgbKo sc-ksBlkl iiDSod"
       >
         Published 
         TEST_DATE
       </span>
     </div>
     <div
-      class="blog-rendererstyles__TagList-sc-15d9dvh-2 jWtyvq"
+      class="blog-rendererstyles__TagList-sc-15d9dvh-2 cpiaZB"
     >
       <div
-        class="sc-iTONeN"
+        class="sc-iTFTee"
       >
         <span
-          class="sc-iAvgwm eiWPlW"
+          class="sc-iAEawV buRgyr"
           type="travel"
         >
           Travel
@@ -698,25 +698,25 @@ exports[`<BlogRenderer /> should render correctly with ssrBlog 1`] = `
       </div>
     </div>
     <div
-      class="sc-bZkfAO fPxBCj"
+      class="sc-bYMpWt jdetWK"
     >
       <span
-        class="sc-gicCDI prKpa sc-kLLXSd bGXPbi markdown-renderer__element"
+        class="sc-gikAfH buRiqg sc-kMjNwy bEnXPJ markdown-renderer__element"
       >
         Some content with 
         <a
           aria-label="a link (opens in a new tab)"
-          class="sc-iBkjds JLudk"
+          class="sc-iBYQkv jNlLug"
           href="https://duckduckgo.com/"
           rel="noopener noreferrer"
           target="_blank"
         >
           a link
           <div
-            class="sc-ftvSup kUuEWK"
+            class="sc-ftTHYK dbfjGz"
           >
             <svg
-              class="sc-gKXOVf ktoyia sc-papXJ fmVkXn"
+              class="sc-gKPRtg eSdzmv sc-pyfCe hLCbyO"
               height="18"
               viewBox="0 0 24 24"
               width="18"
@@ -733,7 +733,7 @@ exports[`<BlogRenderer /> should render correctly with ssrBlog 1`] = `
     </div>
   </div>
   <div
-    class="sc-ciZhAO jCfeVY"
+    class="sc-cjibBx FXeDp"
   >
     <style>
       .js .animated-content__wrapper--hidden {
@@ -741,41 +741,41 @@ exports[`<BlogRenderer /> should render correctly with ssrBlog 1`] = `
 }
     </style>
     <div
-      class="sc-cCsOjp mSMdJ animated-content__wrapper--hidden"
+      class="sc-cCjUiG htyYId animated-content__wrapper--hidden"
     >
       <div
-        class="creative-commonssyles__Wrapper-sc-qff226-0 gOCDiS"
+        class="creative-commonssyles__Wrapper-sc-qff226-0 eObJgx"
       >
         <div
-          class="creative-commonssyles__Background-sc-qff226-1 ddrRBh"
+          class="creative-commonssyles__Background-sc-qff226-1 gREbZK"
         />
         <div
-          class="sc-jqUVSM leXYdV creative-commonssyles__Inner-sc-qff226-2 gkGslB"
+          class="sc-jrcTuL drIieO creative-commonssyles__Inner-sc-qff226-2 jkifKu"
         >
           <h1
-            class="sc-dkzDqf ddFalQ sc-crXcEl ioFrJl"
+            class="sc-dkrFOg eRKGDm sc-csuSiG gvoVyF"
             id="copyright"
           >
             Copyright
           </h1>
           <span
-            class="sc-gicCDI prKpa"
+            class="sc-gikAfH buRiqg"
           >
             Most of my photos are licensed under
              
             <a
               aria-label="Creative Commons BY-SA 3.0 (opens in a new tab)"
-              class="sc-iBkjds JLudk"
+              class="sc-iBYQkv jNlLug"
               href="https://creativecommons.org/licenses/by-sa/3.0/"
               rel="noopener noreferrer"
               target="_blank"
             >
               Creative Commons BY-SA 3.0
               <div
-                class="sc-ftvSup kUuEWK"
+                class="sc-ftTHYK dbfjGz"
               >
                 <svg
-                  class="sc-gKXOVf ktoyia sc-papXJ fmVkXn"
+                  class="sc-gKPRtg eSdzmv sc-pyfCe hLCbyO"
                   height="18"
                   viewBox="0 0 24 24"
                   width="18"
@@ -791,7 +791,7 @@ exports[`<BlogRenderer /> should render correctly with ssrBlog 1`] = `
             <br />
             If you are unsure about your right to use them please 
             <a
-              class="sc-iBkjds JLudk"
+              class="sc-iBYQkv jNlLug"
               href="/contact"
             >
               contact me

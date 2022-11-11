@@ -3,20 +3,20 @@
 exports[`<Home /> should render correctly 1`] = `
 <div>
   <div
-    class="sc-bczRLJ gmscGQ page-containerstyles__StyledPageContainer-sc-19l7k4-0"
+    class="sc-bcXHqe fjKhSJ page-containerstyles__StyledPageContainer-sc-19l7k4-0"
     width="default"
   >
     <div
-      class="sc-ksZaOG itmwyR"
+      class="sc-ksBlkl iCvzgk"
     >
       <h1
-        class="sc-gsnTZi hUDWSp sc-kDDrLX cCIGfN"
+        class="sc-gswNZR fEnHfq sc-kDvujY jlGjEY"
       >
         Hey! I'm George.
       </h1>
     </div>
     <div
-      class="sc-evZas csYxrp"
+      class="sc-eDWCr himBEe"
     >
       <style>
         .js .animated-content__wrapper--hidden {
@@ -25,44 +25,44 @@ exports[`<Home /> should render correctly 1`] = `
 }
       </style>
       <div
-        class="sc-crXcEl hfkUjM animated-content__wrapper--hidden"
+        class="sc-csuSiG bimhCI animated-content__wrapper--hidden"
       >
         <div
-          class="homestyles__StyledWorkSection-sc-d0smz9-0 jrSJcZ"
+          class="homestyles__StyledWorkSection-sc-d0smz9-0 fjVlPe"
         >
           <div
-            class="work-sectionstyles__Wrapper-sc-1t4zqac-0 cYTwZx"
+            class="work-sectionstyles__Wrapper-sc-1t4zqac-0 ehSGLm"
           >
             <div
-              class="work-sectionstyles__Content-sc-1t4zqac-1 jDtMJd"
+              class="work-sectionstyles__Content-sc-1t4zqac-1 cFtcfy"
             >
               <div
-                class="sc-hAZoDl iua-dtn"
+                class="sc-hBxehG julUME"
               >
                 <h1
-                  class="sc-dkzDqf iBtyHU sc-bjUoiL eicdSN"
+                  class="sc-dkrFOg dYiSba sc-bjfHbI cBkNPA"
                   id="work"
                 >
                   Work
                 </h1>
                 <span
-                  class="sc-idiyUo bKYaKy work-sectionstyles__StyledParagraph-sc-1t4zqac-3 dAHWkA"
+                  class="sc-idXgbr fvYUUw work-sectionstyles__StyledParagraph-sc-1t4zqac-3 cXOZzD"
                 >
                   I'm a web developer at
                    
                   <a
                     aria-label="Typeform (opens in a new tab)"
-                    class="sc-ftvSup cMmkUr"
+                    class="sc-ftTHYK dpmGDG"
                     href="https://typeform.com/"
                     rel="noopener noreferrer"
                     target="_blank"
                   >
                     Typeform
                     <div
-                      class="sc-papXJ ecwnCf"
+                      class="sc-pyfCe bordam"
                     >
                       <svg
-                        class="sc-iBkjds eZahvc sc-jqUVSM fjeMmK"
+                        class="sc-iBYQkv lnzGUE sc-jrcTuL joTGkF"
                         height="18"
                         viewBox="0 0 24 24"
                         width="18"
@@ -80,7 +80,7 @@ exports[`<Home /> should render correctly 1`] = `
                   I’m also an accessibility champion and design system enthusiast.
                   <br />
                   <a
-                    class="sc-ftvSup cMmkUr"
+                    class="sc-ftTHYK dpmGDG"
                     href="/work"
                   >
                     Learn more about my work
@@ -89,10 +89,10 @@ exports[`<Home /> should render correctly 1`] = `
               </div>
             </div>
             <div
-              class="phonesstyles__Wrapper-sc-qc041h-0 jABYOt work-sectionstyles__Graphic-sc-1t4zqac-2 fPqDqJ"
+              class="phonesstyles__Wrapper-sc-qc041h-0 kOTBXS work-sectionstyles__Graphic-sc-1t4zqac-2 bDqRgi"
             >
               <div
-                class="sliding-phonestyles__Wrapper-sc-1ngyhd8-0 eVwAsN phonesstyles__StyledSlidingPhone-sc-qc041h-1 dFrbPC"
+                class="sliding-phonestyles__Wrapper-sc-1ngyhd8-0 ceORcu phonesstyles__StyledSlidingPhone-sc-qc041h-1 gkZvSd"
               >
                 <style>
                   .js .home__sliding-phone--hidden {
@@ -101,24 +101,26 @@ exports[`<Home /> should render correctly 1`] = `
       }
                 </style>
                 <div
-                  class="sc-dmRaPn cluTth sliding-phonestyles__StyledImage-sc-1ngyhd8-1 bhVyjo home__sliding-phone--hidden"
+                  class="sc-dmctIk ggHTBC sliding-phonestyles__StyledImage-sc-1ngyhd8-1 cObRhL home__sliding-phone--hidden"
                 >
                   <style>
-                    .js .gg-image__img--hide-js {display: none;}
-                    .no-js .gg-image__img--hide-no-js {display: none;}
+                    
+          .js .gg-image__img--hide-js {display: none;}
+          .no-js .gg-image__img--hide-no-js {display: none;}
+        
                   </style>
                   <div
-                    class="sc-kgflAQ fklZUB"
+                    class="sc-kgTSHT eMhaJf"
                     style="padding-bottom: 197.80876494023903%;"
                   >
                     <div
-                      class="sc-fLlhyt eaeRSK"
+                      class="sc-fLcnxK kvGhjm"
                     >
                       <div
-                        class="sc-dIouRR dNePtF sc-bBrHrO bHBNEP"
+                        class="sc-dIfARi vcnqE sc-bBABsx eDpgBb"
                       >
                         <div
-                          class="sc-hHLeRK dEoKO"
+                          class="sc-hHTYSt fkOjYj"
                           style="margin-left: -0px;"
                         />
                       </div>
@@ -128,13 +130,11 @@ exports[`<Home /> should render correctly 1`] = `
                     >
                       <img
                         alt="A screenshot of our Backpack design principles"
-                        class="sc-ivTmOn bMIea-D"
-                        src="IMAGE_MOCK"
+                        class="sc-iveFHk fTSVVQ"
                       />
                       <img
                         alt="A screenshot of our Backpack design principles"
-                        class="sc-cxabCf jsTpWv"
-                        src="IMAGE_MOCK"
+                        class="sc-cwSeag eMJthJ"
                       />
                     </div>
                     <div
@@ -142,20 +142,18 @@ exports[`<Home /> should render correctly 1`] = `
                     >
                       <img
                         alt="A screenshot of our Backpack design principles"
-                        class="sc-ivTmOn dWRufX"
-                        src="IMAGE_MOCK"
+                        class="sc-iveFHk ulBjQ"
                       />
                       <img
                         alt="A screenshot of our Backpack design principles"
-                        class="sc-cxabCf dqOWyn"
-                        src="IMAGE_MOCK"
+                        class="sc-cwSeag iZnDYF"
                       />
                     </div>
                   </div>
                 </div>
               </div>
               <div
-                class="sliding-phonestyles__Wrapper-sc-1ngyhd8-0 eVwAsN phonesstyles__StyledSlidingPhone-sc-qc041h-1 dFrbPC"
+                class="sliding-phonestyles__Wrapper-sc-1ngyhd8-0 ceORcu phonesstyles__StyledSlidingPhone-sc-qc041h-1 gkZvSd"
               >
                 <style>
                   .js .home__sliding-phone--hidden {
@@ -164,24 +162,26 @@ exports[`<Home /> should render correctly 1`] = `
       }
                 </style>
                 <div
-                  class="sc-dmRaPn cluTth sliding-phonestyles__StyledImage-sc-1ngyhd8-1 bhVyjo home__sliding-phone--hidden"
+                  class="sc-dmctIk ggHTBC sliding-phonestyles__StyledImage-sc-1ngyhd8-1 cObRhL home__sliding-phone--hidden"
                 >
                   <style>
-                    .js .gg-image__img--hide-js {display: none;}
-                    .no-js .gg-image__img--hide-no-js {display: none;}
+                    
+          .js .gg-image__img--hide-js {display: none;}
+          .no-js .gg-image__img--hide-no-js {display: none;}
+        
                   </style>
                   <div
-                    class="sc-kgflAQ fklZUB"
+                    class="sc-kgTSHT eMhaJf"
                     style="padding-bottom: 197.80876494023903%;"
                   >
                     <div
-                      class="sc-fLlhyt eaeRSK"
+                      class="sc-fLcnxK kvGhjm"
                     >
                       <div
-                        class="sc-dIouRR dNePtF sc-bBrHrO bHBNEP"
+                        class="sc-dIfARi vcnqE sc-bBABsx eDpgBb"
                       >
                         <div
-                          class="sc-hHLeRK dEoKO"
+                          class="sc-hHTYSt fkOjYj"
                           style="margin-left: -0px;"
                         />
                       </div>
@@ -191,13 +191,11 @@ exports[`<Home /> should render correctly 1`] = `
                     >
                       <img
                         alt="A screenshot of our bar chart component on iOS"
-                        class="sc-ivTmOn bMIea-D"
-                        src="IMAGE_MOCK"
+                        class="sc-iveFHk fTSVVQ"
                       />
                       <img
                         alt="A screenshot of our bar chart component on iOS"
-                        class="sc-cxabCf jsTpWv"
-                        src="IMAGE_MOCK"
+                        class="sc-cwSeag eMJthJ"
                       />
                     </div>
                     <div
@@ -205,20 +203,18 @@ exports[`<Home /> should render correctly 1`] = `
                     >
                       <img
                         alt="A screenshot of our bar chart component on iOS"
-                        class="sc-ivTmOn dWRufX"
-                        src="IMAGE_MOCK"
+                        class="sc-iveFHk ulBjQ"
                       />
                       <img
                         alt="A screenshot of our bar chart component on iOS"
-                        class="sc-cxabCf dqOWyn"
-                        src="IMAGE_MOCK"
+                        class="sc-cwSeag iZnDYF"
                       />
                     </div>
                   </div>
                 </div>
               </div>
               <div
-                class="sliding-phonestyles__Wrapper-sc-1ngyhd8-0 eVwAsN phonesstyles__StyledSlidingPhone-sc-qc041h-1 dFrbPC"
+                class="sliding-phonestyles__Wrapper-sc-1ngyhd8-0 ceORcu phonesstyles__StyledSlidingPhone-sc-qc041h-1 gkZvSd"
               >
                 <style>
                   .js .home__sliding-phone--hidden {
@@ -227,24 +223,26 @@ exports[`<Home /> should render correctly 1`] = `
       }
                 </style>
                 <div
-                  class="sc-dmRaPn cluTth sliding-phonestyles__StyledImage-sc-1ngyhd8-1 bhVyjo home__sliding-phone--hidden"
+                  class="sc-dmctIk ggHTBC sliding-phonestyles__StyledImage-sc-1ngyhd8-1 cObRhL home__sliding-phone--hidden"
                 >
                   <style>
-                    .js .gg-image__img--hide-js {display: none;}
-                    .no-js .gg-image__img--hide-no-js {display: none;}
+                    
+          .js .gg-image__img--hide-js {display: none;}
+          .no-js .gg-image__img--hide-no-js {display: none;}
+        
                   </style>
                   <div
-                    class="sc-kgflAQ fklZUB"
+                    class="sc-kgTSHT eMhaJf"
                     style="padding-bottom: 197.80876494023903%;"
                   >
                     <div
-                      class="sc-fLlhyt eaeRSK"
+                      class="sc-fLcnxK kvGhjm"
                     >
                       <div
-                        class="sc-dIouRR dNePtF sc-bBrHrO bHBNEP"
+                        class="sc-dIfARi vcnqE sc-bBABsx eDpgBb"
                       >
                         <div
-                          class="sc-hHLeRK dEoKO"
+                          class="sc-hHTYSt fkOjYj"
                           style="margin-left: -0px;"
                         />
                       </div>
@@ -254,13 +252,11 @@ exports[`<Home /> should render correctly 1`] = `
                     >
                       <img
                         alt="A screenshot of our flare view component on web"
-                        class="sc-ivTmOn bMIea-D"
-                        src="IMAGE_MOCK"
+                        class="sc-iveFHk fTSVVQ"
                       />
                       <img
                         alt="A screenshot of our flare view component on web"
-                        class="sc-cxabCf jsTpWv"
-                        src="IMAGE_MOCK"
+                        class="sc-cwSeag eMJthJ"
                       />
                     </div>
                     <div
@@ -268,13 +264,11 @@ exports[`<Home /> should render correctly 1`] = `
                     >
                       <img
                         alt="A screenshot of our flare view component on web"
-                        class="sc-ivTmOn dWRufX"
-                        src="IMAGE_MOCK"
+                        class="sc-iveFHk ulBjQ"
                       />
                       <img
                         alt="A screenshot of our flare view component on web"
-                        class="sc-cxabCf dqOWyn"
-                        src="IMAGE_MOCK"
+                        class="sc-cwSeag iZnDYF"
                       />
                     </div>
                   </div>
@@ -286,7 +280,7 @@ exports[`<Home /> should render correctly 1`] = `
       </div>
     </div>
     <div
-      class="sc-evZas csYxrp"
+      class="sc-eDWCr himBEe"
     >
       <style>
         .js .animated-content__wrapper--hidden {
@@ -295,34 +289,36 @@ exports[`<Home /> should render correctly 1`] = `
 }
       </style>
       <div
-        class="sc-crXcEl hfkUjM animated-content__wrapper--hidden"
+        class="sc-csuSiG bimhCI animated-content__wrapper--hidden"
       >
         <div
-          class="homestyles__StyledLifeSection-sc-d0smz9-1 hLkPtG"
+          class="homestyles__StyledLifeSection-sc-d0smz9-1 HnNWF"
         >
           <div
-            class="life-sectionstyles__Wrapper-sc-17amgn9-0 bHsFEN"
+            class="life-sectionstyles__Wrapper-sc-17amgn9-0 Dfoqm"
           >
             <div
-              class="sc-dmRaPn cluTth life-sectionstyles__ImageAboveTabletLeft-sc-17amgn9-3 kVMvQF"
+              class="sc-dmctIk ggHTBC life-sectionstyles__ImageAboveTabletLeft-sc-17amgn9-3 iRfPSu"
               style="margin-top: 2.6rem; transform: rotate(-10.6deg);"
             >
               <style>
-                .js .gg-image__img--hide-js {display: none;}
-                .no-js .gg-image__img--hide-no-js {display: none;}
+                
+          .js .gg-image__img--hide-js {display: none;}
+          .no-js .gg-image__img--hide-no-js {display: none;}
+        
               </style>
               <div
-                class="sc-kgflAQ fklZUB"
+                class="sc-kgTSHT eMhaJf"
                 style="padding-bottom: 150%;"
               >
                 <div
-                  class="sc-fLlhyt eaeRSK"
+                  class="sc-fLcnxK kvGhjm"
                 >
                   <div
-                    class="sc-dIouRR dNePtF sc-bBrHrO bHBNEP"
+                    class="sc-dIfARi vcnqE sc-bBABsx eDpgBb"
                   >
                     <div
-                      class="sc-hHLeRK dEoKO"
+                      class="sc-hHTYSt fkOjYj"
                       style="margin-left: -0px;"
                     />
                   </div>
@@ -332,13 +328,11 @@ exports[`<Home /> should render correctly 1`] = `
                 >
                   <img
                     alt=""
-                    class="sc-ivTmOn bMIea-D"
-                    src="IMAGE_MOCK"
+                    class="sc-iveFHk fTSVVQ"
                   />
                   <img
                     alt=""
-                    class="sc-cxabCf jsTpWv"
-                    src="IMAGE_MOCK"
+                    class="sc-cwSeag eMJthJ"
                   />
                 </div>
                 <div
@@ -346,43 +340,41 @@ exports[`<Home /> should render correctly 1`] = `
                 >
                   <img
                     alt=""
-                    class="sc-ivTmOn dWRufX"
-                    src="IMAGE_MOCK"
+                    class="sc-iveFHk ulBjQ"
                   />
                   <img
                     alt=""
-                    class="sc-cxabCf dqOWyn"
-                    src="IMAGE_MOCK"
+                    class="sc-cwSeag iZnDYF"
                   />
                 </div>
               </div>
             </div>
             <div
-              class="life-sectionstyles__Content-sc-17amgn9-2 izamhA"
+              class="life-sectionstyles__Content-sc-17amgn9-2 iyExnr"
             >
               <div
-                class="sc-hAZoDl iua-dtn"
+                class="sc-hBxehG julUME"
               >
                 <h1
-                  class="sc-dkzDqf iBtyHU sc-bjUoiL eicdSN"
+                  class="sc-dkrFOg dYiSba sc-bjfHbI cBkNPA"
                   id="life"
                 >
                   Life
                 </h1>
                 <span
-                  class="sc-idiyUo bKYaKy life-sectionstyles__StyledParagraph-sc-17amgn9-1 kRjsHX"
+                  class="sc-idXgbr fvYUUw life-sectionstyles__StyledParagraph-sc-17amgn9-1 iBdBcU"
                 >
                   I love travel, photography, and obstacle course racing.
                   <br />
                   <a
-                    class="sc-ftvSup cMmkUr"
+                    class="sc-ftTHYK dpmGDG"
                     href="/blog"
                   >
                     Blog
                   </a>
                   <br />
                   <a
-                    class="sc-ftvSup cMmkUr"
+                    class="sc-ftTHYK dpmGDG"
                     href="/photography"
                   >
                     Photography
@@ -390,31 +382,33 @@ exports[`<Home /> should render correctly 1`] = `
                 </span>
               </div>
               <span
-                class="sc-idiyUo bKYaKy life-sectionstyles__StyledParagraph-sc-17amgn9-1 kRjsHX"
+                class="sc-idXgbr fvYUUw life-sectionstyles__StyledParagraph-sc-17amgn9-1 iBdBcU"
               >
                 I live on the south coast of the UK with my wife, cat and dog.
               </span>
             </div>
             <div
-              class="sc-dmRaPn cluTth life-sectionstyles__ImageAboveTabletRight-sc-17amgn9-4 kbUisf"
+              class="sc-dmctIk ggHTBC life-sectionstyles__ImageAboveTabletRight-sc-17amgn9-4 hWXkmE"
               style="margin-top: -0.39999999999999947rem; transform: rotate(4.6deg);"
             >
               <style>
-                .js .gg-image__img--hide-js {display: none;}
-                .no-js .gg-image__img--hide-no-js {display: none;}
+                
+          .js .gg-image__img--hide-js {display: none;}
+          .no-js .gg-image__img--hide-no-js {display: none;}
+        
               </style>
               <div
-                class="sc-kgflAQ fklZUB"
+                class="sc-kgTSHT eMhaJf"
                 style="padding-bottom: 66.66666666666667%;"
               >
                 <div
-                  class="sc-fLlhyt eaeRSK"
+                  class="sc-fLcnxK kvGhjm"
                 >
                   <div
-                    class="sc-dIouRR dNePtF sc-bBrHrO bHBNEP"
+                    class="sc-dIfARi vcnqE sc-bBABsx eDpgBb"
                   >
                     <div
-                      class="sc-hHLeRK dEoKO"
+                      class="sc-hHTYSt fkOjYj"
                       style="margin-left: -0px;"
                     />
                   </div>
@@ -424,13 +418,11 @@ exports[`<Home /> should render correctly 1`] = `
                 >
                   <img
                     alt=""
-                    class="sc-ivTmOn bMIea-D"
-                    src="IMAGE_MOCK"
+                    class="sc-iveFHk fTSVVQ"
                   />
                   <img
                     alt=""
-                    class="sc-cxabCf jsTpWv"
-                    src="IMAGE_MOCK"
+                    class="sc-cwSeag eMJthJ"
                   />
                 </div>
                 <div
@@ -438,19 +430,17 @@ exports[`<Home /> should render correctly 1`] = `
                 >
                   <img
                     alt=""
-                    class="sc-ivTmOn dWRufX"
-                    src="IMAGE_MOCK"
+                    class="sc-iveFHk ulBjQ"
                   />
                   <img
                     alt=""
-                    class="sc-cxabCf dqOWyn"
-                    src="IMAGE_MOCK"
+                    class="sc-cwSeag iZnDYF"
                   />
                 </div>
               </div>
             </div>
             <div
-              class="life-sectionstyles__MobileImageWrapper-sc-17amgn9-5 bkmlEe"
+              class="life-sectionstyles__MobileImageWrapper-sc-17amgn9-5 mjRmV"
             >
               <style>
                 
@@ -465,27 +455,29 @@ exports[`<Home /> should render correctly 1`] = `
           
               </style>
               <div
-                class="life-sectionstyles__MobileImageInnerWrapperLeft-sc-17amgn9-6 hKsbHM home__life-section-image--left-hide"
+                class="life-sectionstyles__MobileImageInnerWrapperLeft-sc-17amgn9-6 dmHVWz home__life-section-image--left-hide"
               >
                 <div
-                  class="sc-dmRaPn cluTth"
+                  class="sc-dmctIk ggHTBC"
                 >
                   <style>
-                    .js .gg-image__img--hide-js {display: none;}
-                    .no-js .gg-image__img--hide-no-js {display: none;}
+                    
+          .js .gg-image__img--hide-js {display: none;}
+          .no-js .gg-image__img--hide-no-js {display: none;}
+        
                   </style>
                   <div
-                    class="sc-kgflAQ fklZUB"
+                    class="sc-kgTSHT eMhaJf"
                     style="padding-bottom: 150%;"
                   >
                     <div
-                      class="sc-fLlhyt eaeRSK"
+                      class="sc-fLcnxK kvGhjm"
                     >
                       <div
-                        class="sc-dIouRR dNePtF sc-bBrHrO bHBNEP"
+                        class="sc-dIfARi vcnqE sc-bBABsx eDpgBb"
                       >
                         <div
-                          class="sc-hHLeRK dEoKO"
+                          class="sc-hHTYSt fkOjYj"
                           style="margin-left: -0px;"
                         />
                       </div>
@@ -495,13 +487,11 @@ exports[`<Home /> should render correctly 1`] = `
                     >
                       <img
                         alt=""
-                        class="sc-ivTmOn bMIea-D"
-                        src="IMAGE_MOCK"
+                        class="sc-iveFHk fTSVVQ"
                       />
                       <img
                         alt=""
-                        class="sc-cxabCf jsTpWv"
-                        src="IMAGE_MOCK"
+                        class="sc-cwSeag eMJthJ"
                       />
                     </div>
                     <div
@@ -509,40 +499,40 @@ exports[`<Home /> should render correctly 1`] = `
                     >
                       <img
                         alt=""
-                        class="sc-ivTmOn dWRufX"
-                        src="IMAGE_MOCK"
+                        class="sc-iveFHk ulBjQ"
                       />
                       <img
                         alt=""
-                        class="sc-cxabCf dqOWyn"
-                        src="IMAGE_MOCK"
+                        class="sc-cwSeag iZnDYF"
                       />
                     </div>
                   </div>
                 </div>
               </div>
               <div
-                class="life-sectionstyles__MobileImageInnerWrapperRight-sc-17amgn9-7 fwfLdM home__life-section-image--right-hide"
+                class="life-sectionstyles__MobileImageInnerWrapperRight-sc-17amgn9-7 bOxRrT home__life-section-image--right-hide"
               >
                 <div
-                  class="sc-dmRaPn cluTth"
+                  class="sc-dmctIk ggHTBC"
                 >
                   <style>
-                    .js .gg-image__img--hide-js {display: none;}
-                    .no-js .gg-image__img--hide-no-js {display: none;}
+                    
+          .js .gg-image__img--hide-js {display: none;}
+          .no-js .gg-image__img--hide-no-js {display: none;}
+        
                   </style>
                   <div
-                    class="sc-kgflAQ fklZUB"
+                    class="sc-kgTSHT eMhaJf"
                     style="padding-bottom: 66.66666666666667%;"
                   >
                     <div
-                      class="sc-fLlhyt eaeRSK"
+                      class="sc-fLcnxK kvGhjm"
                     >
                       <div
-                        class="sc-dIouRR dNePtF sc-bBrHrO bHBNEP"
+                        class="sc-dIfARi vcnqE sc-bBABsx eDpgBb"
                       >
                         <div
-                          class="sc-hHLeRK dEoKO"
+                          class="sc-hHTYSt fkOjYj"
                           style="margin-left: -0px;"
                         />
                       </div>
@@ -552,13 +542,11 @@ exports[`<Home /> should render correctly 1`] = `
                     >
                       <img
                         alt=""
-                        class="sc-ivTmOn bMIea-D"
-                        src="IMAGE_MOCK"
+                        class="sc-iveFHk fTSVVQ"
                       />
                       <img
                         alt=""
-                        class="sc-cxabCf jsTpWv"
-                        src="IMAGE_MOCK"
+                        class="sc-cwSeag eMJthJ"
                       />
                     </div>
                     <div
@@ -566,13 +554,11 @@ exports[`<Home /> should render correctly 1`] = `
                     >
                       <img
                         alt=""
-                        class="sc-ivTmOn dWRufX"
-                        src="IMAGE_MOCK"
+                        class="sc-iveFHk ulBjQ"
                       />
                       <img
                         alt=""
-                        class="sc-cxabCf dqOWyn"
-                        src="IMAGE_MOCK"
+                        class="sc-cwSeag iZnDYF"
                       />
                     </div>
                   </div>
@@ -584,16 +570,16 @@ exports[`<Home /> should render correctly 1`] = `
       </div>
     </div>
     <div
-      class="homestyles__StyledPhotoSection-sc-d0smz9-2 fHDLeh"
+      class="homestyles__StyledPhotoSection-sc-d0smz9-2 iKAEPq"
     >
       <div
-        class="photo-sectionstyles__Wrapper-sc-1vxd7ly-0 jZerSY"
+        class="photo-sectionstyles__Wrapper-sc-1vxd7ly-0 uQuQj"
       >
         <div
-          class="photo-sectionstyles__Content-sc-1vxd7ly-1 hRjbc"
+          class="photo-sectionstyles__Content-sc-1vxd7ly-1 NmlDX"
         >
           <div
-            class="animated-imagestyles__Wrapper-sc-1ah0zqa-0 TxyKS"
+            class="animated-imagestyles__Wrapper-sc-1ah0zqa-0 THYXl"
           >
             <style>
               .js .home__animated-image--hidden {
@@ -602,24 +588,26 @@ exports[`<Home /> should render correctly 1`] = `
           }
             </style>
             <div
-              class="sc-dmRaPn cluTth animated-imagestyles__StyledImage-sc-1ah0zqa-1 eMwtAl home__animated-image--hidden"
+              class="sc-dmctIk ggHTBC animated-imagestyles__StyledImage-sc-1ah0zqa-1 iHRNaq home__animated-image--hidden"
             >
               <style>
-                .js .gg-image__img--hide-js {display: none;}
-                .no-js .gg-image__img--hide-no-js {display: none;}
+                
+          .js .gg-image__img--hide-js {display: none;}
+          .no-js .gg-image__img--hide-no-js {display: none;}
+        
               </style>
               <div
-                class="sc-kgflAQ fklZUB"
+                class="sc-kgTSHT eMhaJf"
                 style="padding-bottom: 70.79494321834154%;"
               >
                 <div
-                  class="sc-fLlhyt eaeRSK"
+                  class="sc-fLcnxK kvGhjm"
                 >
                   <div
-                    class="sc-dIouRR dNePtF sc-bBrHrO bHBNEP"
+                    class="sc-dIfARi vcnqE sc-bBABsx eDpgBb"
                   >
                     <div
-                      class="sc-hHLeRK dEoKO"
+                      class="sc-hHTYSt fkOjYj"
                       style="margin-left: -0px;"
                     />
                   </div>
@@ -629,12 +617,12 @@ exports[`<Home /> should render correctly 1`] = `
                 >
                   <img
                     alt="Me"
-                    class="sc-ivTmOn bMIea-D"
+                    class="sc-iveFHk fTSVVQ"
                     src="https://i.imgur.com/L0Rm1ZC.jpg"
                   />
                   <img
                     alt="Me"
-                    class="sc-cxabCf jsTpWv"
+                    class="sc-cwSeag eMJthJ"
                     src="https://i.imgur.com/L0Rm1ZC.jpg"
                   />
                 </div>
@@ -643,12 +631,12 @@ exports[`<Home /> should render correctly 1`] = `
                 >
                   <img
                     alt="Me"
-                    class="sc-ivTmOn dWRufX"
+                    class="sc-iveFHk ulBjQ"
                     src="https://i.imgur.com/L0Rm1ZC.jpg"
                   />
                   <img
                     alt="Me"
-                    class="sc-cxabCf dqOWyn"
+                    class="sc-cwSeag iZnDYF"
                     src="https://i.imgur.com/L0Rm1ZC.jpg"
                   />
                 </div>
@@ -659,7 +647,7 @@ exports[`<Home /> should render correctly 1`] = `
       </div>
     </div>
     <div
-      class="sc-evZas csYxrp"
+      class="sc-eDWCr himBEe"
     >
       <style>
         .js .animated-content__wrapper--hidden {
@@ -668,32 +656,32 @@ exports[`<Home /> should render correctly 1`] = `
 }
       </style>
       <div
-        class="sc-crXcEl hfkUjM animated-content__wrapper--hidden"
+        class="sc-csuSiG bimhCI animated-content__wrapper--hidden"
       >
         <div
-          class="homestyles__StyledAboutSection-sc-d0smz9-3 hLdjKh"
+          class="homestyles__StyledAboutSection-sc-d0smz9-3 kXAVhO"
         >
           <div
-            class="about-sectionstyles__Wrapper-sc-161fh79-0 bPRmDB"
+            class="about-sectionstyles__Wrapper-sc-161fh79-0 dfgKZa"
           >
             <span
-              class="sc-idiyUo bKYaKy about-sectionstyles__StyledParagraph-sc-161fh79-1 eEUKqc"
+              class="sc-idXgbr fvYUUw about-sectionstyles__StyledParagraph-sc-161fh79-1 kZkWBL"
             >
               This site is built in
                
               <a
                 aria-label="React (opens in a new tab)"
-                class="sc-ftvSup cMmkUr"
+                class="sc-ftTHYK dpmGDG"
                 href="https://reactjs.org/"
                 rel="noopener noreferrer"
                 target="_blank"
               >
                 React
                 <div
-                  class="sc-papXJ ecwnCf"
+                  class="sc-pyfCe bordam"
                 >
                   <svg
-                    class="sc-iBkjds eZahvc sc-jqUVSM fjeMmK"
+                    class="sc-iBYQkv lnzGUE sc-jrcTuL joTGkF"
                     height="18"
                     viewBox="0 0 24 24"
                     width="18"
@@ -710,17 +698,17 @@ exports[`<Home /> should render correctly 1`] = `
                
               <a
                 aria-label="Redux (opens in a new tab)"
-                class="sc-ftvSup cMmkUr"
+                class="sc-ftTHYK dpmGDG"
                 href="https://redux.js.org/"
                 rel="noopener noreferrer"
                 target="_blank"
               >
                 Redux
                 <div
-                  class="sc-papXJ ecwnCf"
+                  class="sc-pyfCe bordam"
                 >
                   <svg
-                    class="sc-iBkjds eZahvc sc-jqUVSM fjeMmK"
+                    class="sc-iBYQkv lnzGUE sc-jrcTuL joTGkF"
                     height="18"
                     viewBox="0 0 24 24"
                     width="18"
@@ -737,17 +725,17 @@ exports[`<Home /> should render correctly 1`] = `
                
               <a
                 aria-label="Next.js (opens in a new tab)"
-                class="sc-ftvSup cMmkUr"
+                class="sc-ftTHYK dpmGDG"
                 href="https://nextjs.org/"
                 rel="noopener noreferrer"
                 target="_blank"
               >
                 Next.js
                 <div
-                  class="sc-papXJ ecwnCf"
+                  class="sc-pyfCe bordam"
                 >
                   <svg
-                    class="sc-iBkjds eZahvc sc-jqUVSM fjeMmK"
+                    class="sc-iBYQkv lnzGUE sc-jrcTuL joTGkF"
                     height="18"
                     viewBox="0 0 24 24"
                     width="18"
@@ -763,17 +751,17 @@ exports[`<Home /> should render correctly 1`] = `
                
               <a
                 aria-label="AWS (opens in a new tab)"
-                class="sc-ftvSup cMmkUr"
+                class="sc-ftTHYK dpmGDG"
                 href="https://aws.amazon.com/"
                 rel="noopener noreferrer"
                 target="_blank"
               >
                 AWS
                 <div
-                  class="sc-papXJ ecwnCf"
+                  class="sc-pyfCe bordam"
                 >
                   <svg
-                    class="sc-iBkjds eZahvc sc-jqUVSM fjeMmK"
+                    class="sc-iBYQkv lnzGUE sc-jrcTuL joTGkF"
                     height="18"
                     viewBox="0 0 24 24"
                     width="18"
@@ -788,7 +776,7 @@ exports[`<Home /> should render correctly 1`] = `
               . I use it to experiment with things, share stuff I've figured out, and allow people to contact me.
             </span>
             <div
-              class="contact-linkstyles__Wrapper-sc-1f9dgs5-0 hknrdW"
+              class="contact-linkstyles__Wrapper-sc-1f9dgs5-0 empxtt"
             >
               <style>
                 
@@ -797,16 +785,16 @@ exports[`<Home /> should render correctly 1`] = `
         }
               </style>
               <div
-                class="contact-linkstyles__Content-sc-1f9dgs5-1 cmohzj"
+                class="contact-linkstyles__Content-sc-1f9dgs5-1 ktkYdY"
               >
                 <a
-                  class="sc-ftvSup cMmkUr contact-linkstyles__StyledTextLink-sc-1f9dgs5-2 dZxlbK"
+                  class="sc-ftTHYK dpmGDG contact-linkstyles__StyledTextLink-sc-1f9dgs5-2 ePjaBV"
                   href="/contact"
                 >
                   Get in touch
                 </a>
                 <div
-                  class="contact-linkstyles__Cloud-sc-1f9dgs5-3 cEZzVo home__contact--hide"
+                  class="contact-linkstyles__Cloud-sc-1f9dgs5-3 laVHCj home__contact--hide"
                   style="left: 300%;"
                 />
               </div>
@@ -822,20 +810,20 @@ exports[`<Home /> should render correctly 1`] = `
 exports[`<Home /> should render correctly with admin user 1`] = `
 <div>
   <div
-    class="sc-bczRLJ gmscGQ page-containerstyles__StyledPageContainer-sc-19l7k4-0"
+    class="sc-bcXHqe fjKhSJ page-containerstyles__StyledPageContainer-sc-19l7k4-0"
     width="default"
   >
     <div
-      class="sc-ksZaOG itmwyR"
+      class="sc-ksBlkl iCvzgk"
     >
       <h1
-        class="sc-gsnTZi hUDWSp sc-kDDrLX cCIGfN"
+        class="sc-gswNZR fEnHfq sc-kDvujY jlGjEY"
       >
         Hey! I'm George.
       </h1>
     </div>
     <div
-      class="sc-evZas csYxrp"
+      class="sc-eDWCr himBEe"
     >
       <style>
         .js .animated-content__wrapper--hidden {
@@ -844,44 +832,44 @@ exports[`<Home /> should render correctly with admin user 1`] = `
 }
       </style>
       <div
-        class="sc-crXcEl hfkUjM animated-content__wrapper--hidden"
+        class="sc-csuSiG bimhCI animated-content__wrapper--hidden"
       >
         <div
-          class="homestyles__StyledWorkSection-sc-d0smz9-0 jrSJcZ"
+          class="homestyles__StyledWorkSection-sc-d0smz9-0 fjVlPe"
         >
           <div
-            class="work-sectionstyles__Wrapper-sc-1t4zqac-0 cYTwZx"
+            class="work-sectionstyles__Wrapper-sc-1t4zqac-0 ehSGLm"
           >
             <div
-              class="work-sectionstyles__Content-sc-1t4zqac-1 jDtMJd"
+              class="work-sectionstyles__Content-sc-1t4zqac-1 cFtcfy"
             >
               <div
-                class="sc-hAZoDl iua-dtn"
+                class="sc-hBxehG julUME"
               >
                 <h1
-                  class="sc-dkzDqf iBtyHU sc-bjUoiL eicdSN"
+                  class="sc-dkrFOg dYiSba sc-bjfHbI cBkNPA"
                   id="work"
                 >
                   Work
                 </h1>
                 <span
-                  class="sc-idiyUo bKYaKy work-sectionstyles__StyledParagraph-sc-1t4zqac-3 dAHWkA"
+                  class="sc-idXgbr fvYUUw work-sectionstyles__StyledParagraph-sc-1t4zqac-3 cXOZzD"
                 >
                   I'm a web developer at
                    
                   <a
                     aria-label="Typeform (opens in a new tab)"
-                    class="sc-ftvSup cMmkUr"
+                    class="sc-ftTHYK dpmGDG"
                     href="https://typeform.com/"
                     rel="noopener noreferrer"
                     target="_blank"
                   >
                     Typeform
                     <div
-                      class="sc-papXJ ecwnCf"
+                      class="sc-pyfCe bordam"
                     >
                       <svg
-                        class="sc-iBkjds eZahvc sc-jqUVSM fjeMmK"
+                        class="sc-iBYQkv lnzGUE sc-jrcTuL joTGkF"
                         height="18"
                         viewBox="0 0 24 24"
                         width="18"
@@ -899,7 +887,7 @@ exports[`<Home /> should render correctly with admin user 1`] = `
                   I’m also an accessibility champion and design system enthusiast.
                   <br />
                   <a
-                    class="sc-ftvSup cMmkUr"
+                    class="sc-ftTHYK dpmGDG"
                     href="/work"
                   >
                     Learn more about my work
@@ -908,10 +896,10 @@ exports[`<Home /> should render correctly with admin user 1`] = `
               </div>
             </div>
             <div
-              class="phonesstyles__Wrapper-sc-qc041h-0 jABYOt work-sectionstyles__Graphic-sc-1t4zqac-2 fPqDqJ"
+              class="phonesstyles__Wrapper-sc-qc041h-0 kOTBXS work-sectionstyles__Graphic-sc-1t4zqac-2 bDqRgi"
             >
               <div
-                class="sliding-phonestyles__Wrapper-sc-1ngyhd8-0 eVwAsN phonesstyles__StyledSlidingPhone-sc-qc041h-1 dFrbPC"
+                class="sliding-phonestyles__Wrapper-sc-1ngyhd8-0 ceORcu phonesstyles__StyledSlidingPhone-sc-qc041h-1 gkZvSd"
               >
                 <style>
                   .js .home__sliding-phone--hidden {
@@ -920,24 +908,26 @@ exports[`<Home /> should render correctly with admin user 1`] = `
       }
                 </style>
                 <div
-                  class="sc-dmRaPn cluTth sliding-phonestyles__StyledImage-sc-1ngyhd8-1 bhVyjo home__sliding-phone--hidden"
+                  class="sc-dmctIk ggHTBC sliding-phonestyles__StyledImage-sc-1ngyhd8-1 cObRhL home__sliding-phone--hidden"
                 >
                   <style>
-                    .js .gg-image__img--hide-js {display: none;}
-                    .no-js .gg-image__img--hide-no-js {display: none;}
+                    
+          .js .gg-image__img--hide-js {display: none;}
+          .no-js .gg-image__img--hide-no-js {display: none;}
+        
                   </style>
                   <div
-                    class="sc-kgflAQ fklZUB"
+                    class="sc-kgTSHT eMhaJf"
                     style="padding-bottom: 197.80876494023903%;"
                   >
                     <div
-                      class="sc-fLlhyt eaeRSK"
+                      class="sc-fLcnxK kvGhjm"
                     >
                       <div
-                        class="sc-dIouRR dNePtF sc-bBrHrO bHBNEP"
+                        class="sc-dIfARi vcnqE sc-bBABsx eDpgBb"
                       >
                         <div
-                          class="sc-hHLeRK dEoKO"
+                          class="sc-hHTYSt fkOjYj"
                           style="margin-left: -0px;"
                         />
                       </div>
@@ -947,13 +937,11 @@ exports[`<Home /> should render correctly with admin user 1`] = `
                     >
                       <img
                         alt="A screenshot of our Backpack design principles"
-                        class="sc-ivTmOn bMIea-D"
-                        src="IMAGE_MOCK"
+                        class="sc-iveFHk fTSVVQ"
                       />
                       <img
                         alt="A screenshot of our Backpack design principles"
-                        class="sc-cxabCf jsTpWv"
-                        src="IMAGE_MOCK"
+                        class="sc-cwSeag eMJthJ"
                       />
                     </div>
                     <div
@@ -961,20 +949,18 @@ exports[`<Home /> should render correctly with admin user 1`] = `
                     >
                       <img
                         alt="A screenshot of our Backpack design principles"
-                        class="sc-ivTmOn dWRufX"
-                        src="IMAGE_MOCK"
+                        class="sc-iveFHk ulBjQ"
                       />
                       <img
                         alt="A screenshot of our Backpack design principles"
-                        class="sc-cxabCf dqOWyn"
-                        src="IMAGE_MOCK"
+                        class="sc-cwSeag iZnDYF"
                       />
                     </div>
                   </div>
                 </div>
               </div>
               <div
-                class="sliding-phonestyles__Wrapper-sc-1ngyhd8-0 eVwAsN phonesstyles__StyledSlidingPhone-sc-qc041h-1 dFrbPC"
+                class="sliding-phonestyles__Wrapper-sc-1ngyhd8-0 ceORcu phonesstyles__StyledSlidingPhone-sc-qc041h-1 gkZvSd"
               >
                 <style>
                   .js .home__sliding-phone--hidden {
@@ -983,24 +969,26 @@ exports[`<Home /> should render correctly with admin user 1`] = `
       }
                 </style>
                 <div
-                  class="sc-dmRaPn cluTth sliding-phonestyles__StyledImage-sc-1ngyhd8-1 bhVyjo home__sliding-phone--hidden"
+                  class="sc-dmctIk ggHTBC sliding-phonestyles__StyledImage-sc-1ngyhd8-1 cObRhL home__sliding-phone--hidden"
                 >
                   <style>
-                    .js .gg-image__img--hide-js {display: none;}
-                    .no-js .gg-image__img--hide-no-js {display: none;}
+                    
+          .js .gg-image__img--hide-js {display: none;}
+          .no-js .gg-image__img--hide-no-js {display: none;}
+        
                   </style>
                   <div
-                    class="sc-kgflAQ fklZUB"
+                    class="sc-kgTSHT eMhaJf"
                     style="padding-bottom: 197.80876494023903%;"
                   >
                     <div
-                      class="sc-fLlhyt eaeRSK"
+                      class="sc-fLcnxK kvGhjm"
                     >
                       <div
-                        class="sc-dIouRR dNePtF sc-bBrHrO bHBNEP"
+                        class="sc-dIfARi vcnqE sc-bBABsx eDpgBb"
                       >
                         <div
-                          class="sc-hHLeRK dEoKO"
+                          class="sc-hHTYSt fkOjYj"
                           style="margin-left: -0px;"
                         />
                       </div>
@@ -1010,13 +998,11 @@ exports[`<Home /> should render correctly with admin user 1`] = `
                     >
                       <img
                         alt="A screenshot of our bar chart component on iOS"
-                        class="sc-ivTmOn bMIea-D"
-                        src="IMAGE_MOCK"
+                        class="sc-iveFHk fTSVVQ"
                       />
                       <img
                         alt="A screenshot of our bar chart component on iOS"
-                        class="sc-cxabCf jsTpWv"
-                        src="IMAGE_MOCK"
+                        class="sc-cwSeag eMJthJ"
                       />
                     </div>
                     <div
@@ -1024,20 +1010,18 @@ exports[`<Home /> should render correctly with admin user 1`] = `
                     >
                       <img
                         alt="A screenshot of our bar chart component on iOS"
-                        class="sc-ivTmOn dWRufX"
-                        src="IMAGE_MOCK"
+                        class="sc-iveFHk ulBjQ"
                       />
                       <img
                         alt="A screenshot of our bar chart component on iOS"
-                        class="sc-cxabCf dqOWyn"
-                        src="IMAGE_MOCK"
+                        class="sc-cwSeag iZnDYF"
                       />
                     </div>
                   </div>
                 </div>
               </div>
               <div
-                class="sliding-phonestyles__Wrapper-sc-1ngyhd8-0 eVwAsN phonesstyles__StyledSlidingPhone-sc-qc041h-1 dFrbPC"
+                class="sliding-phonestyles__Wrapper-sc-1ngyhd8-0 ceORcu phonesstyles__StyledSlidingPhone-sc-qc041h-1 gkZvSd"
               >
                 <style>
                   .js .home__sliding-phone--hidden {
@@ -1046,24 +1030,26 @@ exports[`<Home /> should render correctly with admin user 1`] = `
       }
                 </style>
                 <div
-                  class="sc-dmRaPn cluTth sliding-phonestyles__StyledImage-sc-1ngyhd8-1 bhVyjo home__sliding-phone--hidden"
+                  class="sc-dmctIk ggHTBC sliding-phonestyles__StyledImage-sc-1ngyhd8-1 cObRhL home__sliding-phone--hidden"
                 >
                   <style>
-                    .js .gg-image__img--hide-js {display: none;}
-                    .no-js .gg-image__img--hide-no-js {display: none;}
+                    
+          .js .gg-image__img--hide-js {display: none;}
+          .no-js .gg-image__img--hide-no-js {display: none;}
+        
                   </style>
                   <div
-                    class="sc-kgflAQ fklZUB"
+                    class="sc-kgTSHT eMhaJf"
                     style="padding-bottom: 197.80876494023903%;"
                   >
                     <div
-                      class="sc-fLlhyt eaeRSK"
+                      class="sc-fLcnxK kvGhjm"
                     >
                       <div
-                        class="sc-dIouRR dNePtF sc-bBrHrO bHBNEP"
+                        class="sc-dIfARi vcnqE sc-bBABsx eDpgBb"
                       >
                         <div
-                          class="sc-hHLeRK dEoKO"
+                          class="sc-hHTYSt fkOjYj"
                           style="margin-left: -0px;"
                         />
                       </div>
@@ -1073,13 +1059,11 @@ exports[`<Home /> should render correctly with admin user 1`] = `
                     >
                       <img
                         alt="A screenshot of our flare view component on web"
-                        class="sc-ivTmOn bMIea-D"
-                        src="IMAGE_MOCK"
+                        class="sc-iveFHk fTSVVQ"
                       />
                       <img
                         alt="A screenshot of our flare view component on web"
-                        class="sc-cxabCf jsTpWv"
-                        src="IMAGE_MOCK"
+                        class="sc-cwSeag eMJthJ"
                       />
                     </div>
                     <div
@@ -1087,13 +1071,11 @@ exports[`<Home /> should render correctly with admin user 1`] = `
                     >
                       <img
                         alt="A screenshot of our flare view component on web"
-                        class="sc-ivTmOn dWRufX"
-                        src="IMAGE_MOCK"
+                        class="sc-iveFHk ulBjQ"
                       />
                       <img
                         alt="A screenshot of our flare view component on web"
-                        class="sc-cxabCf dqOWyn"
-                        src="IMAGE_MOCK"
+                        class="sc-cwSeag iZnDYF"
                       />
                     </div>
                   </div>
@@ -1105,7 +1087,7 @@ exports[`<Home /> should render correctly with admin user 1`] = `
       </div>
     </div>
     <div
-      class="sc-evZas csYxrp"
+      class="sc-eDWCr himBEe"
     >
       <style>
         .js .animated-content__wrapper--hidden {
@@ -1114,34 +1096,36 @@ exports[`<Home /> should render correctly with admin user 1`] = `
 }
       </style>
       <div
-        class="sc-crXcEl hfkUjM animated-content__wrapper--hidden"
+        class="sc-csuSiG bimhCI animated-content__wrapper--hidden"
       >
         <div
-          class="homestyles__StyledLifeSection-sc-d0smz9-1 hLkPtG"
+          class="homestyles__StyledLifeSection-sc-d0smz9-1 HnNWF"
         >
           <div
-            class="life-sectionstyles__Wrapper-sc-17amgn9-0 bHsFEN"
+            class="life-sectionstyles__Wrapper-sc-17amgn9-0 Dfoqm"
           >
             <div
-              class="sc-dmRaPn cluTth life-sectionstyles__ImageAboveTabletLeft-sc-17amgn9-3 kVMvQF"
+              class="sc-dmctIk ggHTBC life-sectionstyles__ImageAboveTabletLeft-sc-17amgn9-3 iRfPSu"
               style="margin-top: 2.6rem; transform: rotate(-10.6deg);"
             >
               <style>
-                .js .gg-image__img--hide-js {display: none;}
-                .no-js .gg-image__img--hide-no-js {display: none;}
+                
+          .js .gg-image__img--hide-js {display: none;}
+          .no-js .gg-image__img--hide-no-js {display: none;}
+        
               </style>
               <div
-                class="sc-kgflAQ fklZUB"
+                class="sc-kgTSHT eMhaJf"
                 style="padding-bottom: 150%;"
               >
                 <div
-                  class="sc-fLlhyt eaeRSK"
+                  class="sc-fLcnxK kvGhjm"
                 >
                   <div
-                    class="sc-dIouRR dNePtF sc-bBrHrO bHBNEP"
+                    class="sc-dIfARi vcnqE sc-bBABsx eDpgBb"
                   >
                     <div
-                      class="sc-hHLeRK dEoKO"
+                      class="sc-hHTYSt fkOjYj"
                       style="margin-left: -0px;"
                     />
                   </div>
@@ -1151,13 +1135,11 @@ exports[`<Home /> should render correctly with admin user 1`] = `
                 >
                   <img
                     alt=""
-                    class="sc-ivTmOn bMIea-D"
-                    src="IMAGE_MOCK"
+                    class="sc-iveFHk fTSVVQ"
                   />
                   <img
                     alt=""
-                    class="sc-cxabCf jsTpWv"
-                    src="IMAGE_MOCK"
+                    class="sc-cwSeag eMJthJ"
                   />
                 </div>
                 <div
@@ -1165,43 +1147,41 @@ exports[`<Home /> should render correctly with admin user 1`] = `
                 >
                   <img
                     alt=""
-                    class="sc-ivTmOn dWRufX"
-                    src="IMAGE_MOCK"
+                    class="sc-iveFHk ulBjQ"
                   />
                   <img
                     alt=""
-                    class="sc-cxabCf dqOWyn"
-                    src="IMAGE_MOCK"
+                    class="sc-cwSeag iZnDYF"
                   />
                 </div>
               </div>
             </div>
             <div
-              class="life-sectionstyles__Content-sc-17amgn9-2 izamhA"
+              class="life-sectionstyles__Content-sc-17amgn9-2 iyExnr"
             >
               <div
-                class="sc-hAZoDl iua-dtn"
+                class="sc-hBxehG julUME"
               >
                 <h1
-                  class="sc-dkzDqf iBtyHU sc-bjUoiL eicdSN"
+                  class="sc-dkrFOg dYiSba sc-bjfHbI cBkNPA"
                   id="life"
                 >
                   Life
                 </h1>
                 <span
-                  class="sc-idiyUo bKYaKy life-sectionstyles__StyledParagraph-sc-17amgn9-1 kRjsHX"
+                  class="sc-idXgbr fvYUUw life-sectionstyles__StyledParagraph-sc-17amgn9-1 iBdBcU"
                 >
                   I love travel, photography, and obstacle course racing.
                   <br />
                   <a
-                    class="sc-ftvSup cMmkUr"
+                    class="sc-ftTHYK dpmGDG"
                     href="/blog"
                   >
                     Blog
                   </a>
                   <br />
                   <a
-                    class="sc-ftvSup cMmkUr"
+                    class="sc-ftTHYK dpmGDG"
                     href="/photography"
                   >
                     Photography
@@ -1209,31 +1189,33 @@ exports[`<Home /> should render correctly with admin user 1`] = `
                 </span>
               </div>
               <span
-                class="sc-idiyUo bKYaKy life-sectionstyles__StyledParagraph-sc-17amgn9-1 kRjsHX"
+                class="sc-idXgbr fvYUUw life-sectionstyles__StyledParagraph-sc-17amgn9-1 iBdBcU"
               >
                 I live on the south coast of the UK with my wife, cat and dog.
               </span>
             </div>
             <div
-              class="sc-dmRaPn cluTth life-sectionstyles__ImageAboveTabletRight-sc-17amgn9-4 kbUisf"
+              class="sc-dmctIk ggHTBC life-sectionstyles__ImageAboveTabletRight-sc-17amgn9-4 hWXkmE"
               style="margin-top: -0.39999999999999947rem; transform: rotate(4.6deg);"
             >
               <style>
-                .js .gg-image__img--hide-js {display: none;}
-                .no-js .gg-image__img--hide-no-js {display: none;}
+                
+          .js .gg-image__img--hide-js {display: none;}
+          .no-js .gg-image__img--hide-no-js {display: none;}
+        
               </style>
               <div
-                class="sc-kgflAQ fklZUB"
+                class="sc-kgTSHT eMhaJf"
                 style="padding-bottom: 66.66666666666667%;"
               >
                 <div
-                  class="sc-fLlhyt eaeRSK"
+                  class="sc-fLcnxK kvGhjm"
                 >
                   <div
-                    class="sc-dIouRR dNePtF sc-bBrHrO bHBNEP"
+                    class="sc-dIfARi vcnqE sc-bBABsx eDpgBb"
                   >
                     <div
-                      class="sc-hHLeRK dEoKO"
+                      class="sc-hHTYSt fkOjYj"
                       style="margin-left: -0px;"
                     />
                   </div>
@@ -1243,13 +1225,11 @@ exports[`<Home /> should render correctly with admin user 1`] = `
                 >
                   <img
                     alt=""
-                    class="sc-ivTmOn bMIea-D"
-                    src="IMAGE_MOCK"
+                    class="sc-iveFHk fTSVVQ"
                   />
                   <img
                     alt=""
-                    class="sc-cxabCf jsTpWv"
-                    src="IMAGE_MOCK"
+                    class="sc-cwSeag eMJthJ"
                   />
                 </div>
                 <div
@@ -1257,19 +1237,17 @@ exports[`<Home /> should render correctly with admin user 1`] = `
                 >
                   <img
                     alt=""
-                    class="sc-ivTmOn dWRufX"
-                    src="IMAGE_MOCK"
+                    class="sc-iveFHk ulBjQ"
                   />
                   <img
                     alt=""
-                    class="sc-cxabCf dqOWyn"
-                    src="IMAGE_MOCK"
+                    class="sc-cwSeag iZnDYF"
                   />
                 </div>
               </div>
             </div>
             <div
-              class="life-sectionstyles__MobileImageWrapper-sc-17amgn9-5 bkmlEe"
+              class="life-sectionstyles__MobileImageWrapper-sc-17amgn9-5 mjRmV"
             >
               <style>
                 
@@ -1284,27 +1262,29 @@ exports[`<Home /> should render correctly with admin user 1`] = `
           
               </style>
               <div
-                class="life-sectionstyles__MobileImageInnerWrapperLeft-sc-17amgn9-6 hKsbHM home__life-section-image--left-hide"
+                class="life-sectionstyles__MobileImageInnerWrapperLeft-sc-17amgn9-6 dmHVWz home__life-section-image--left-hide"
               >
                 <div
-                  class="sc-dmRaPn cluTth"
+                  class="sc-dmctIk ggHTBC"
                 >
                   <style>
-                    .js .gg-image__img--hide-js {display: none;}
-                    .no-js .gg-image__img--hide-no-js {display: none;}
+                    
+          .js .gg-image__img--hide-js {display: none;}
+          .no-js .gg-image__img--hide-no-js {display: none;}
+        
                   </style>
                   <div
-                    class="sc-kgflAQ fklZUB"
+                    class="sc-kgTSHT eMhaJf"
                     style="padding-bottom: 150%;"
                   >
                     <div
-                      class="sc-fLlhyt eaeRSK"
+                      class="sc-fLcnxK kvGhjm"
                     >
                       <div
-                        class="sc-dIouRR dNePtF sc-bBrHrO bHBNEP"
+                        class="sc-dIfARi vcnqE sc-bBABsx eDpgBb"
                       >
                         <div
-                          class="sc-hHLeRK dEoKO"
+                          class="sc-hHTYSt fkOjYj"
                           style="margin-left: -0px;"
                         />
                       </div>
@@ -1314,13 +1294,11 @@ exports[`<Home /> should render correctly with admin user 1`] = `
                     >
                       <img
                         alt=""
-                        class="sc-ivTmOn bMIea-D"
-                        src="IMAGE_MOCK"
+                        class="sc-iveFHk fTSVVQ"
                       />
                       <img
                         alt=""
-                        class="sc-cxabCf jsTpWv"
-                        src="IMAGE_MOCK"
+                        class="sc-cwSeag eMJthJ"
                       />
                     </div>
                     <div
@@ -1328,40 +1306,40 @@ exports[`<Home /> should render correctly with admin user 1`] = `
                     >
                       <img
                         alt=""
-                        class="sc-ivTmOn dWRufX"
-                        src="IMAGE_MOCK"
+                        class="sc-iveFHk ulBjQ"
                       />
                       <img
                         alt=""
-                        class="sc-cxabCf dqOWyn"
-                        src="IMAGE_MOCK"
+                        class="sc-cwSeag iZnDYF"
                       />
                     </div>
                   </div>
                 </div>
               </div>
               <div
-                class="life-sectionstyles__MobileImageInnerWrapperRight-sc-17amgn9-7 fwfLdM home__life-section-image--right-hide"
+                class="life-sectionstyles__MobileImageInnerWrapperRight-sc-17amgn9-7 bOxRrT home__life-section-image--right-hide"
               >
                 <div
-                  class="sc-dmRaPn cluTth"
+                  class="sc-dmctIk ggHTBC"
                 >
                   <style>
-                    .js .gg-image__img--hide-js {display: none;}
-                    .no-js .gg-image__img--hide-no-js {display: none;}
+                    
+          .js .gg-image__img--hide-js {display: none;}
+          .no-js .gg-image__img--hide-no-js {display: none;}
+        
                   </style>
                   <div
-                    class="sc-kgflAQ fklZUB"
+                    class="sc-kgTSHT eMhaJf"
                     style="padding-bottom: 66.66666666666667%;"
                   >
                     <div
-                      class="sc-fLlhyt eaeRSK"
+                      class="sc-fLcnxK kvGhjm"
                     >
                       <div
-                        class="sc-dIouRR dNePtF sc-bBrHrO bHBNEP"
+                        class="sc-dIfARi vcnqE sc-bBABsx eDpgBb"
                       >
                         <div
-                          class="sc-hHLeRK dEoKO"
+                          class="sc-hHTYSt fkOjYj"
                           style="margin-left: -0px;"
                         />
                       </div>
@@ -1371,13 +1349,11 @@ exports[`<Home /> should render correctly with admin user 1`] = `
                     >
                       <img
                         alt=""
-                        class="sc-ivTmOn bMIea-D"
-                        src="IMAGE_MOCK"
+                        class="sc-iveFHk fTSVVQ"
                       />
                       <img
                         alt=""
-                        class="sc-cxabCf jsTpWv"
-                        src="IMAGE_MOCK"
+                        class="sc-cwSeag eMJthJ"
                       />
                     </div>
                     <div
@@ -1385,13 +1361,11 @@ exports[`<Home /> should render correctly with admin user 1`] = `
                     >
                       <img
                         alt=""
-                        class="sc-ivTmOn dWRufX"
-                        src="IMAGE_MOCK"
+                        class="sc-iveFHk ulBjQ"
                       />
                       <img
                         alt=""
-                        class="sc-cxabCf dqOWyn"
-                        src="IMAGE_MOCK"
+                        class="sc-cwSeag iZnDYF"
                       />
                     </div>
                   </div>
@@ -1403,16 +1377,16 @@ exports[`<Home /> should render correctly with admin user 1`] = `
       </div>
     </div>
     <div
-      class="homestyles__StyledPhotoSection-sc-d0smz9-2 fHDLeh"
+      class="homestyles__StyledPhotoSection-sc-d0smz9-2 iKAEPq"
     >
       <div
-        class="photo-sectionstyles__Wrapper-sc-1vxd7ly-0 jZerSY"
+        class="photo-sectionstyles__Wrapper-sc-1vxd7ly-0 uQuQj"
       >
         <div
-          class="photo-sectionstyles__Content-sc-1vxd7ly-1 hRjbc"
+          class="photo-sectionstyles__Content-sc-1vxd7ly-1 NmlDX"
         >
           <div
-            class="animated-imagestyles__Wrapper-sc-1ah0zqa-0 TxyKS"
+            class="animated-imagestyles__Wrapper-sc-1ah0zqa-0 THYXl"
           >
             <style>
               .js .home__animated-image--hidden {
@@ -1421,24 +1395,26 @@ exports[`<Home /> should render correctly with admin user 1`] = `
           }
             </style>
             <div
-              class="sc-dmRaPn cluTth animated-imagestyles__StyledImage-sc-1ah0zqa-1 eMwtAl home__animated-image--hidden"
+              class="sc-dmctIk ggHTBC animated-imagestyles__StyledImage-sc-1ah0zqa-1 iHRNaq home__animated-image--hidden"
             >
               <style>
-                .js .gg-image__img--hide-js {display: none;}
-                .no-js .gg-image__img--hide-no-js {display: none;}
+                
+          .js .gg-image__img--hide-js {display: none;}
+          .no-js .gg-image__img--hide-no-js {display: none;}
+        
               </style>
               <div
-                class="sc-kgflAQ fklZUB"
+                class="sc-kgTSHT eMhaJf"
                 style="padding-bottom: 70.79494321834154%;"
               >
                 <div
-                  class="sc-fLlhyt eaeRSK"
+                  class="sc-fLcnxK kvGhjm"
                 >
                   <div
-                    class="sc-dIouRR dNePtF sc-bBrHrO bHBNEP"
+                    class="sc-dIfARi vcnqE sc-bBABsx eDpgBb"
                   >
                     <div
-                      class="sc-hHLeRK dEoKO"
+                      class="sc-hHTYSt fkOjYj"
                       style="margin-left: -0px;"
                     />
                   </div>
@@ -1448,12 +1424,12 @@ exports[`<Home /> should render correctly with admin user 1`] = `
                 >
                   <img
                     alt="Me"
-                    class="sc-ivTmOn bMIea-D"
+                    class="sc-iveFHk fTSVVQ"
                     src="https://i.imgur.com/L0Rm1ZC.jpg"
                   />
                   <img
                     alt="Me"
-                    class="sc-cxabCf jsTpWv"
+                    class="sc-cwSeag eMJthJ"
                     src="https://i.imgur.com/L0Rm1ZC.jpg"
                   />
                 </div>
@@ -1462,12 +1438,12 @@ exports[`<Home /> should render correctly with admin user 1`] = `
                 >
                   <img
                     alt="Me"
-                    class="sc-ivTmOn dWRufX"
+                    class="sc-iveFHk ulBjQ"
                     src="https://i.imgur.com/L0Rm1ZC.jpg"
                   />
                   <img
                     alt="Me"
-                    class="sc-cxabCf dqOWyn"
+                    class="sc-cwSeag iZnDYF"
                     src="https://i.imgur.com/L0Rm1ZC.jpg"
                   />
                 </div>
@@ -1478,7 +1454,7 @@ exports[`<Home /> should render correctly with admin user 1`] = `
       </div>
     </div>
     <div
-      class="sc-evZas csYxrp"
+      class="sc-eDWCr himBEe"
     >
       <style>
         .js .animated-content__wrapper--hidden {
@@ -1487,32 +1463,32 @@ exports[`<Home /> should render correctly with admin user 1`] = `
 }
       </style>
       <div
-        class="sc-crXcEl hfkUjM animated-content__wrapper--hidden"
+        class="sc-csuSiG bimhCI animated-content__wrapper--hidden"
       >
         <div
-          class="homestyles__StyledAboutSection-sc-d0smz9-3 hLdjKh"
+          class="homestyles__StyledAboutSection-sc-d0smz9-3 kXAVhO"
         >
           <div
-            class="about-sectionstyles__Wrapper-sc-161fh79-0 bPRmDB"
+            class="about-sectionstyles__Wrapper-sc-161fh79-0 dfgKZa"
           >
             <span
-              class="sc-idiyUo bKYaKy about-sectionstyles__StyledParagraph-sc-161fh79-1 eEUKqc"
+              class="sc-idXgbr fvYUUw about-sectionstyles__StyledParagraph-sc-161fh79-1 kZkWBL"
             >
               This site is built in
                
               <a
                 aria-label="React (opens in a new tab)"
-                class="sc-ftvSup cMmkUr"
+                class="sc-ftTHYK dpmGDG"
                 href="https://reactjs.org/"
                 rel="noopener noreferrer"
                 target="_blank"
               >
                 React
                 <div
-                  class="sc-papXJ ecwnCf"
+                  class="sc-pyfCe bordam"
                 >
                   <svg
-                    class="sc-iBkjds eZahvc sc-jqUVSM fjeMmK"
+                    class="sc-iBYQkv lnzGUE sc-jrcTuL joTGkF"
                     height="18"
                     viewBox="0 0 24 24"
                     width="18"
@@ -1529,17 +1505,17 @@ exports[`<Home /> should render correctly with admin user 1`] = `
                
               <a
                 aria-label="Redux (opens in a new tab)"
-                class="sc-ftvSup cMmkUr"
+                class="sc-ftTHYK dpmGDG"
                 href="https://redux.js.org/"
                 rel="noopener noreferrer"
                 target="_blank"
               >
                 Redux
                 <div
-                  class="sc-papXJ ecwnCf"
+                  class="sc-pyfCe bordam"
                 >
                   <svg
-                    class="sc-iBkjds eZahvc sc-jqUVSM fjeMmK"
+                    class="sc-iBYQkv lnzGUE sc-jrcTuL joTGkF"
                     height="18"
                     viewBox="0 0 24 24"
                     width="18"
@@ -1556,17 +1532,17 @@ exports[`<Home /> should render correctly with admin user 1`] = `
                
               <a
                 aria-label="Next.js (opens in a new tab)"
-                class="sc-ftvSup cMmkUr"
+                class="sc-ftTHYK dpmGDG"
                 href="https://nextjs.org/"
                 rel="noopener noreferrer"
                 target="_blank"
               >
                 Next.js
                 <div
-                  class="sc-papXJ ecwnCf"
+                  class="sc-pyfCe bordam"
                 >
                   <svg
-                    class="sc-iBkjds eZahvc sc-jqUVSM fjeMmK"
+                    class="sc-iBYQkv lnzGUE sc-jrcTuL joTGkF"
                     height="18"
                     viewBox="0 0 24 24"
                     width="18"
@@ -1582,17 +1558,17 @@ exports[`<Home /> should render correctly with admin user 1`] = `
                
               <a
                 aria-label="AWS (opens in a new tab)"
-                class="sc-ftvSup cMmkUr"
+                class="sc-ftTHYK dpmGDG"
                 href="https://aws.amazon.com/"
                 rel="noopener noreferrer"
                 target="_blank"
               >
                 AWS
                 <div
-                  class="sc-papXJ ecwnCf"
+                  class="sc-pyfCe bordam"
                 >
                   <svg
-                    class="sc-iBkjds eZahvc sc-jqUVSM fjeMmK"
+                    class="sc-iBYQkv lnzGUE sc-jrcTuL joTGkF"
                     height="18"
                     viewBox="0 0 24 24"
                     width="18"
@@ -1607,7 +1583,7 @@ exports[`<Home /> should render correctly with admin user 1`] = `
               . I use it to experiment with things, share stuff I've figured out, and allow people to contact me.
             </span>
             <div
-              class="contact-linkstyles__Wrapper-sc-1f9dgs5-0 hknrdW"
+              class="contact-linkstyles__Wrapper-sc-1f9dgs5-0 empxtt"
             >
               <style>
                 
@@ -1616,16 +1592,16 @@ exports[`<Home /> should render correctly with admin user 1`] = `
         }
               </style>
               <div
-                class="contact-linkstyles__Content-sc-1f9dgs5-1 cmohzj"
+                class="contact-linkstyles__Content-sc-1f9dgs5-1 ktkYdY"
               >
                 <a
-                  class="sc-ftvSup cMmkUr contact-linkstyles__StyledTextLink-sc-1f9dgs5-2 dZxlbK"
+                  class="sc-ftTHYK dpmGDG contact-linkstyles__StyledTextLink-sc-1f9dgs5-2 ePjaBV"
                   href="/contact"
                 >
                   Get in touch
                 </a>
                 <div
-                  class="contact-linkstyles__Cloud-sc-1f9dgs5-3 cEZzVo home__contact--hide"
+                  class="contact-linkstyles__Cloud-sc-1f9dgs5-3 laVHCj home__contact--hide"
                   style="left: 300%;"
                 />
               </div>
@@ -1641,20 +1617,20 @@ exports[`<Home /> should render correctly with admin user 1`] = `
 exports[`<Home /> should render correctly with no user 1`] = `
 <div>
   <div
-    class="sc-bczRLJ gmscGQ page-containerstyles__StyledPageContainer-sc-19l7k4-0"
+    class="sc-bcXHqe fjKhSJ page-containerstyles__StyledPageContainer-sc-19l7k4-0"
     width="default"
   >
     <div
-      class="sc-ksZaOG itmwyR"
+      class="sc-ksBlkl iCvzgk"
     >
       <h1
-        class="sc-gsnTZi hUDWSp sc-kDDrLX cCIGfN"
+        class="sc-gswNZR fEnHfq sc-kDvujY jlGjEY"
       >
         Hey! I'm George.
       </h1>
     </div>
     <div
-      class="sc-evZas csYxrp"
+      class="sc-eDWCr himBEe"
     >
       <style>
         .js .animated-content__wrapper--hidden {
@@ -1663,44 +1639,44 @@ exports[`<Home /> should render correctly with no user 1`] = `
 }
       </style>
       <div
-        class="sc-crXcEl hfkUjM animated-content__wrapper--hidden"
+        class="sc-csuSiG bimhCI animated-content__wrapper--hidden"
       >
         <div
-          class="homestyles__StyledWorkSection-sc-d0smz9-0 jrSJcZ"
+          class="homestyles__StyledWorkSection-sc-d0smz9-0 fjVlPe"
         >
           <div
-            class="work-sectionstyles__Wrapper-sc-1t4zqac-0 cYTwZx"
+            class="work-sectionstyles__Wrapper-sc-1t4zqac-0 ehSGLm"
           >
             <div
-              class="work-sectionstyles__Content-sc-1t4zqac-1 jDtMJd"
+              class="work-sectionstyles__Content-sc-1t4zqac-1 cFtcfy"
             >
               <div
-                class="sc-hAZoDl iua-dtn"
+                class="sc-hBxehG julUME"
               >
                 <h1
-                  class="sc-dkzDqf iBtyHU sc-bjUoiL eicdSN"
+                  class="sc-dkrFOg dYiSba sc-bjfHbI cBkNPA"
                   id="work"
                 >
                   Work
                 </h1>
                 <span
-                  class="sc-idiyUo bKYaKy work-sectionstyles__StyledParagraph-sc-1t4zqac-3 dAHWkA"
+                  class="sc-idXgbr fvYUUw work-sectionstyles__StyledParagraph-sc-1t4zqac-3 cXOZzD"
                 >
                   I'm a web developer at
                    
                   <a
                     aria-label="Typeform (opens in a new tab)"
-                    class="sc-ftvSup cMmkUr"
+                    class="sc-ftTHYK dpmGDG"
                     href="https://typeform.com/"
                     rel="noopener noreferrer"
                     target="_blank"
                   >
                     Typeform
                     <div
-                      class="sc-papXJ ecwnCf"
+                      class="sc-pyfCe bordam"
                     >
                       <svg
-                        class="sc-iBkjds eZahvc sc-jqUVSM fjeMmK"
+                        class="sc-iBYQkv lnzGUE sc-jrcTuL joTGkF"
                         height="18"
                         viewBox="0 0 24 24"
                         width="18"
@@ -1718,7 +1694,7 @@ exports[`<Home /> should render correctly with no user 1`] = `
                   I’m also an accessibility champion and design system enthusiast.
                   <br />
                   <a
-                    class="sc-ftvSup cMmkUr"
+                    class="sc-ftTHYK dpmGDG"
                     href="/work"
                   >
                     Learn more about my work
@@ -1727,10 +1703,10 @@ exports[`<Home /> should render correctly with no user 1`] = `
               </div>
             </div>
             <div
-              class="phonesstyles__Wrapper-sc-qc041h-0 jABYOt work-sectionstyles__Graphic-sc-1t4zqac-2 fPqDqJ"
+              class="phonesstyles__Wrapper-sc-qc041h-0 kOTBXS work-sectionstyles__Graphic-sc-1t4zqac-2 bDqRgi"
             >
               <div
-                class="sliding-phonestyles__Wrapper-sc-1ngyhd8-0 eVwAsN phonesstyles__StyledSlidingPhone-sc-qc041h-1 dFrbPC"
+                class="sliding-phonestyles__Wrapper-sc-1ngyhd8-0 ceORcu phonesstyles__StyledSlidingPhone-sc-qc041h-1 gkZvSd"
               >
                 <style>
                   .js .home__sliding-phone--hidden {
@@ -1739,24 +1715,26 @@ exports[`<Home /> should render correctly with no user 1`] = `
       }
                 </style>
                 <div
-                  class="sc-dmRaPn cluTth sliding-phonestyles__StyledImage-sc-1ngyhd8-1 bhVyjo home__sliding-phone--hidden"
+                  class="sc-dmctIk ggHTBC sliding-phonestyles__StyledImage-sc-1ngyhd8-1 cObRhL home__sliding-phone--hidden"
                 >
                   <style>
-                    .js .gg-image__img--hide-js {display: none;}
-                    .no-js .gg-image__img--hide-no-js {display: none;}
+                    
+          .js .gg-image__img--hide-js {display: none;}
+          .no-js .gg-image__img--hide-no-js {display: none;}
+        
                   </style>
                   <div
-                    class="sc-kgflAQ fklZUB"
+                    class="sc-kgTSHT eMhaJf"
                     style="padding-bottom: 197.80876494023903%;"
                   >
                     <div
-                      class="sc-fLlhyt eaeRSK"
+                      class="sc-fLcnxK kvGhjm"
                     >
                       <div
-                        class="sc-dIouRR dNePtF sc-bBrHrO bHBNEP"
+                        class="sc-dIfARi vcnqE sc-bBABsx eDpgBb"
                       >
                         <div
-                          class="sc-hHLeRK dEoKO"
+                          class="sc-hHTYSt fkOjYj"
                           style="margin-left: -0px;"
                         />
                       </div>
@@ -1766,13 +1744,11 @@ exports[`<Home /> should render correctly with no user 1`] = `
                     >
                       <img
                         alt="A screenshot of our Backpack design principles"
-                        class="sc-ivTmOn bMIea-D"
-                        src="IMAGE_MOCK"
+                        class="sc-iveFHk fTSVVQ"
                       />
                       <img
                         alt="A screenshot of our Backpack design principles"
-                        class="sc-cxabCf jsTpWv"
-                        src="IMAGE_MOCK"
+                        class="sc-cwSeag eMJthJ"
                       />
                     </div>
                     <div
@@ -1780,20 +1756,18 @@ exports[`<Home /> should render correctly with no user 1`] = `
                     >
                       <img
                         alt="A screenshot of our Backpack design principles"
-                        class="sc-ivTmOn dWRufX"
-                        src="IMAGE_MOCK"
+                        class="sc-iveFHk ulBjQ"
                       />
                       <img
                         alt="A screenshot of our Backpack design principles"
-                        class="sc-cxabCf dqOWyn"
-                        src="IMAGE_MOCK"
+                        class="sc-cwSeag iZnDYF"
                       />
                     </div>
                   </div>
                 </div>
               </div>
               <div
-                class="sliding-phonestyles__Wrapper-sc-1ngyhd8-0 eVwAsN phonesstyles__StyledSlidingPhone-sc-qc041h-1 dFrbPC"
+                class="sliding-phonestyles__Wrapper-sc-1ngyhd8-0 ceORcu phonesstyles__StyledSlidingPhone-sc-qc041h-1 gkZvSd"
               >
                 <style>
                   .js .home__sliding-phone--hidden {
@@ -1802,24 +1776,26 @@ exports[`<Home /> should render correctly with no user 1`] = `
       }
                 </style>
                 <div
-                  class="sc-dmRaPn cluTth sliding-phonestyles__StyledImage-sc-1ngyhd8-1 bhVyjo home__sliding-phone--hidden"
+                  class="sc-dmctIk ggHTBC sliding-phonestyles__StyledImage-sc-1ngyhd8-1 cObRhL home__sliding-phone--hidden"
                 >
                   <style>
-                    .js .gg-image__img--hide-js {display: none;}
-                    .no-js .gg-image__img--hide-no-js {display: none;}
+                    
+          .js .gg-image__img--hide-js {display: none;}
+          .no-js .gg-image__img--hide-no-js {display: none;}
+        
                   </style>
                   <div
-                    class="sc-kgflAQ fklZUB"
+                    class="sc-kgTSHT eMhaJf"
                     style="padding-bottom: 197.80876494023903%;"
                   >
                     <div
-                      class="sc-fLlhyt eaeRSK"
+                      class="sc-fLcnxK kvGhjm"
                     >
                       <div
-                        class="sc-dIouRR dNePtF sc-bBrHrO bHBNEP"
+                        class="sc-dIfARi vcnqE sc-bBABsx eDpgBb"
                       >
                         <div
-                          class="sc-hHLeRK dEoKO"
+                          class="sc-hHTYSt fkOjYj"
                           style="margin-left: -0px;"
                         />
                       </div>
@@ -1829,13 +1805,11 @@ exports[`<Home /> should render correctly with no user 1`] = `
                     >
                       <img
                         alt="A screenshot of our bar chart component on iOS"
-                        class="sc-ivTmOn bMIea-D"
-                        src="IMAGE_MOCK"
+                        class="sc-iveFHk fTSVVQ"
                       />
                       <img
                         alt="A screenshot of our bar chart component on iOS"
-                        class="sc-cxabCf jsTpWv"
-                        src="IMAGE_MOCK"
+                        class="sc-cwSeag eMJthJ"
                       />
                     </div>
                     <div
@@ -1843,20 +1817,18 @@ exports[`<Home /> should render correctly with no user 1`] = `
                     >
                       <img
                         alt="A screenshot of our bar chart component on iOS"
-                        class="sc-ivTmOn dWRufX"
-                        src="IMAGE_MOCK"
+                        class="sc-iveFHk ulBjQ"
                       />
                       <img
                         alt="A screenshot of our bar chart component on iOS"
-                        class="sc-cxabCf dqOWyn"
-                        src="IMAGE_MOCK"
+                        class="sc-cwSeag iZnDYF"
                       />
                     </div>
                   </div>
                 </div>
               </div>
               <div
-                class="sliding-phonestyles__Wrapper-sc-1ngyhd8-0 eVwAsN phonesstyles__StyledSlidingPhone-sc-qc041h-1 dFrbPC"
+                class="sliding-phonestyles__Wrapper-sc-1ngyhd8-0 ceORcu phonesstyles__StyledSlidingPhone-sc-qc041h-1 gkZvSd"
               >
                 <style>
                   .js .home__sliding-phone--hidden {
@@ -1865,24 +1837,26 @@ exports[`<Home /> should render correctly with no user 1`] = `
       }
                 </style>
                 <div
-                  class="sc-dmRaPn cluTth sliding-phonestyles__StyledImage-sc-1ngyhd8-1 bhVyjo home__sliding-phone--hidden"
+                  class="sc-dmctIk ggHTBC sliding-phonestyles__StyledImage-sc-1ngyhd8-1 cObRhL home__sliding-phone--hidden"
                 >
                   <style>
-                    .js .gg-image__img--hide-js {display: none;}
-                    .no-js .gg-image__img--hide-no-js {display: none;}
+                    
+          .js .gg-image__img--hide-js {display: none;}
+          .no-js .gg-image__img--hide-no-js {display: none;}
+        
                   </style>
                   <div
-                    class="sc-kgflAQ fklZUB"
+                    class="sc-kgTSHT eMhaJf"
                     style="padding-bottom: 197.80876494023903%;"
                   >
                     <div
-                      class="sc-fLlhyt eaeRSK"
+                      class="sc-fLcnxK kvGhjm"
                     >
                       <div
-                        class="sc-dIouRR dNePtF sc-bBrHrO bHBNEP"
+                        class="sc-dIfARi vcnqE sc-bBABsx eDpgBb"
                       >
                         <div
-                          class="sc-hHLeRK dEoKO"
+                          class="sc-hHTYSt fkOjYj"
                           style="margin-left: -0px;"
                         />
                       </div>
@@ -1892,13 +1866,11 @@ exports[`<Home /> should render correctly with no user 1`] = `
                     >
                       <img
                         alt="A screenshot of our flare view component on web"
-                        class="sc-ivTmOn bMIea-D"
-                        src="IMAGE_MOCK"
+                        class="sc-iveFHk fTSVVQ"
                       />
                       <img
                         alt="A screenshot of our flare view component on web"
-                        class="sc-cxabCf jsTpWv"
-                        src="IMAGE_MOCK"
+                        class="sc-cwSeag eMJthJ"
                       />
                     </div>
                     <div
@@ -1906,13 +1878,11 @@ exports[`<Home /> should render correctly with no user 1`] = `
                     >
                       <img
                         alt="A screenshot of our flare view component on web"
-                        class="sc-ivTmOn dWRufX"
-                        src="IMAGE_MOCK"
+                        class="sc-iveFHk ulBjQ"
                       />
                       <img
                         alt="A screenshot of our flare view component on web"
-                        class="sc-cxabCf dqOWyn"
-                        src="IMAGE_MOCK"
+                        class="sc-cwSeag iZnDYF"
                       />
                     </div>
                   </div>
@@ -1924,7 +1894,7 @@ exports[`<Home /> should render correctly with no user 1`] = `
       </div>
     </div>
     <div
-      class="sc-evZas csYxrp"
+      class="sc-eDWCr himBEe"
     >
       <style>
         .js .animated-content__wrapper--hidden {
@@ -1933,34 +1903,36 @@ exports[`<Home /> should render correctly with no user 1`] = `
 }
       </style>
       <div
-        class="sc-crXcEl hfkUjM animated-content__wrapper--hidden"
+        class="sc-csuSiG bimhCI animated-content__wrapper--hidden"
       >
         <div
-          class="homestyles__StyledLifeSection-sc-d0smz9-1 hLkPtG"
+          class="homestyles__StyledLifeSection-sc-d0smz9-1 HnNWF"
         >
           <div
-            class="life-sectionstyles__Wrapper-sc-17amgn9-0 bHsFEN"
+            class="life-sectionstyles__Wrapper-sc-17amgn9-0 Dfoqm"
           >
             <div
-              class="sc-dmRaPn cluTth life-sectionstyles__ImageAboveTabletLeft-sc-17amgn9-3 kVMvQF"
+              class="sc-dmctIk ggHTBC life-sectionstyles__ImageAboveTabletLeft-sc-17amgn9-3 iRfPSu"
               style="margin-top: 2.6rem; transform: rotate(-10.6deg);"
             >
               <style>
-                .js .gg-image__img--hide-js {display: none;}
-                .no-js .gg-image__img--hide-no-js {display: none;}
+                
+          .js .gg-image__img--hide-js {display: none;}
+          .no-js .gg-image__img--hide-no-js {display: none;}
+        
               </style>
               <div
-                class="sc-kgflAQ fklZUB"
+                class="sc-kgTSHT eMhaJf"
                 style="padding-bottom: 150%;"
               >
                 <div
-                  class="sc-fLlhyt eaeRSK"
+                  class="sc-fLcnxK kvGhjm"
                 >
                   <div
-                    class="sc-dIouRR dNePtF sc-bBrHrO bHBNEP"
+                    class="sc-dIfARi vcnqE sc-bBABsx eDpgBb"
                   >
                     <div
-                      class="sc-hHLeRK dEoKO"
+                      class="sc-hHTYSt fkOjYj"
                       style="margin-left: -0px;"
                     />
                   </div>
@@ -1970,13 +1942,11 @@ exports[`<Home /> should render correctly with no user 1`] = `
                 >
                   <img
                     alt=""
-                    class="sc-ivTmOn bMIea-D"
-                    src="IMAGE_MOCK"
+                    class="sc-iveFHk fTSVVQ"
                   />
                   <img
                     alt=""
-                    class="sc-cxabCf jsTpWv"
-                    src="IMAGE_MOCK"
+                    class="sc-cwSeag eMJthJ"
                   />
                 </div>
                 <div
@@ -1984,43 +1954,41 @@ exports[`<Home /> should render correctly with no user 1`] = `
                 >
                   <img
                     alt=""
-                    class="sc-ivTmOn dWRufX"
-                    src="IMAGE_MOCK"
+                    class="sc-iveFHk ulBjQ"
                   />
                   <img
                     alt=""
-                    class="sc-cxabCf dqOWyn"
-                    src="IMAGE_MOCK"
+                    class="sc-cwSeag iZnDYF"
                   />
                 </div>
               </div>
             </div>
             <div
-              class="life-sectionstyles__Content-sc-17amgn9-2 izamhA"
+              class="life-sectionstyles__Content-sc-17amgn9-2 iyExnr"
             >
               <div
-                class="sc-hAZoDl iua-dtn"
+                class="sc-hBxehG julUME"
               >
                 <h1
-                  class="sc-dkzDqf iBtyHU sc-bjUoiL eicdSN"
+                  class="sc-dkrFOg dYiSba sc-bjfHbI cBkNPA"
                   id="life"
                 >
                   Life
                 </h1>
                 <span
-                  class="sc-idiyUo bKYaKy life-sectionstyles__StyledParagraph-sc-17amgn9-1 kRjsHX"
+                  class="sc-idXgbr fvYUUw life-sectionstyles__StyledParagraph-sc-17amgn9-1 iBdBcU"
                 >
                   I love travel, photography, and obstacle course racing.
                   <br />
                   <a
-                    class="sc-ftvSup cMmkUr"
+                    class="sc-ftTHYK dpmGDG"
                     href="/blog"
                   >
                     Blog
                   </a>
                   <br />
                   <a
-                    class="sc-ftvSup cMmkUr"
+                    class="sc-ftTHYK dpmGDG"
                     href="/photography"
                   >
                     Photography
@@ -2028,31 +1996,33 @@ exports[`<Home /> should render correctly with no user 1`] = `
                 </span>
               </div>
               <span
-                class="sc-idiyUo bKYaKy life-sectionstyles__StyledParagraph-sc-17amgn9-1 kRjsHX"
+                class="sc-idXgbr fvYUUw life-sectionstyles__StyledParagraph-sc-17amgn9-1 iBdBcU"
               >
                 I live on the south coast of the UK with my wife, cat and dog.
               </span>
             </div>
             <div
-              class="sc-dmRaPn cluTth life-sectionstyles__ImageAboveTabletRight-sc-17amgn9-4 kbUisf"
+              class="sc-dmctIk ggHTBC life-sectionstyles__ImageAboveTabletRight-sc-17amgn9-4 hWXkmE"
               style="margin-top: -0.39999999999999947rem; transform: rotate(4.6deg);"
             >
               <style>
-                .js .gg-image__img--hide-js {display: none;}
-                .no-js .gg-image__img--hide-no-js {display: none;}
+                
+          .js .gg-image__img--hide-js {display: none;}
+          .no-js .gg-image__img--hide-no-js {display: none;}
+        
               </style>
               <div
-                class="sc-kgflAQ fklZUB"
+                class="sc-kgTSHT eMhaJf"
                 style="padding-bottom: 66.66666666666667%;"
               >
                 <div
-                  class="sc-fLlhyt eaeRSK"
+                  class="sc-fLcnxK kvGhjm"
                 >
                   <div
-                    class="sc-dIouRR dNePtF sc-bBrHrO bHBNEP"
+                    class="sc-dIfARi vcnqE sc-bBABsx eDpgBb"
                   >
                     <div
-                      class="sc-hHLeRK dEoKO"
+                      class="sc-hHTYSt fkOjYj"
                       style="margin-left: -0px;"
                     />
                   </div>
@@ -2062,13 +2032,11 @@ exports[`<Home /> should render correctly with no user 1`] = `
                 >
                   <img
                     alt=""
-                    class="sc-ivTmOn bMIea-D"
-                    src="IMAGE_MOCK"
+                    class="sc-iveFHk fTSVVQ"
                   />
                   <img
                     alt=""
-                    class="sc-cxabCf jsTpWv"
-                    src="IMAGE_MOCK"
+                    class="sc-cwSeag eMJthJ"
                   />
                 </div>
                 <div
@@ -2076,19 +2044,17 @@ exports[`<Home /> should render correctly with no user 1`] = `
                 >
                   <img
                     alt=""
-                    class="sc-ivTmOn dWRufX"
-                    src="IMAGE_MOCK"
+                    class="sc-iveFHk ulBjQ"
                   />
                   <img
                     alt=""
-                    class="sc-cxabCf dqOWyn"
-                    src="IMAGE_MOCK"
+                    class="sc-cwSeag iZnDYF"
                   />
                 </div>
               </div>
             </div>
             <div
-              class="life-sectionstyles__MobileImageWrapper-sc-17amgn9-5 bkmlEe"
+              class="life-sectionstyles__MobileImageWrapper-sc-17amgn9-5 mjRmV"
             >
               <style>
                 
@@ -2103,27 +2069,29 @@ exports[`<Home /> should render correctly with no user 1`] = `
           
               </style>
               <div
-                class="life-sectionstyles__MobileImageInnerWrapperLeft-sc-17amgn9-6 hKsbHM home__life-section-image--left-hide"
+                class="life-sectionstyles__MobileImageInnerWrapperLeft-sc-17amgn9-6 dmHVWz home__life-section-image--left-hide"
               >
                 <div
-                  class="sc-dmRaPn cluTth"
+                  class="sc-dmctIk ggHTBC"
                 >
                   <style>
-                    .js .gg-image__img--hide-js {display: none;}
-                    .no-js .gg-image__img--hide-no-js {display: none;}
+                    
+          .js .gg-image__img--hide-js {display: none;}
+          .no-js .gg-image__img--hide-no-js {display: none;}
+        
                   </style>
                   <div
-                    class="sc-kgflAQ fklZUB"
+                    class="sc-kgTSHT eMhaJf"
                     style="padding-bottom: 150%;"
                   >
                     <div
-                      class="sc-fLlhyt eaeRSK"
+                      class="sc-fLcnxK kvGhjm"
                     >
                       <div
-                        class="sc-dIouRR dNePtF sc-bBrHrO bHBNEP"
+                        class="sc-dIfARi vcnqE sc-bBABsx eDpgBb"
                       >
                         <div
-                          class="sc-hHLeRK dEoKO"
+                          class="sc-hHTYSt fkOjYj"
                           style="margin-left: -0px;"
                         />
                       </div>
@@ -2133,13 +2101,11 @@ exports[`<Home /> should render correctly with no user 1`] = `
                     >
                       <img
                         alt=""
-                        class="sc-ivTmOn bMIea-D"
-                        src="IMAGE_MOCK"
+                        class="sc-iveFHk fTSVVQ"
                       />
                       <img
                         alt=""
-                        class="sc-cxabCf jsTpWv"
-                        src="IMAGE_MOCK"
+                        class="sc-cwSeag eMJthJ"
                       />
                     </div>
                     <div
@@ -2147,40 +2113,40 @@ exports[`<Home /> should render correctly with no user 1`] = `
                     >
                       <img
                         alt=""
-                        class="sc-ivTmOn dWRufX"
-                        src="IMAGE_MOCK"
+                        class="sc-iveFHk ulBjQ"
                       />
                       <img
                         alt=""
-                        class="sc-cxabCf dqOWyn"
-                        src="IMAGE_MOCK"
+                        class="sc-cwSeag iZnDYF"
                       />
                     </div>
                   </div>
                 </div>
               </div>
               <div
-                class="life-sectionstyles__MobileImageInnerWrapperRight-sc-17amgn9-7 fwfLdM home__life-section-image--right-hide"
+                class="life-sectionstyles__MobileImageInnerWrapperRight-sc-17amgn9-7 bOxRrT home__life-section-image--right-hide"
               >
                 <div
-                  class="sc-dmRaPn cluTth"
+                  class="sc-dmctIk ggHTBC"
                 >
                   <style>
-                    .js .gg-image__img--hide-js {display: none;}
-                    .no-js .gg-image__img--hide-no-js {display: none;}
+                    
+          .js .gg-image__img--hide-js {display: none;}
+          .no-js .gg-image__img--hide-no-js {display: none;}
+        
                   </style>
                   <div
-                    class="sc-kgflAQ fklZUB"
+                    class="sc-kgTSHT eMhaJf"
                     style="padding-bottom: 66.66666666666667%;"
                   >
                     <div
-                      class="sc-fLlhyt eaeRSK"
+                      class="sc-fLcnxK kvGhjm"
                     >
                       <div
-                        class="sc-dIouRR dNePtF sc-bBrHrO bHBNEP"
+                        class="sc-dIfARi vcnqE sc-bBABsx eDpgBb"
                       >
                         <div
-                          class="sc-hHLeRK dEoKO"
+                          class="sc-hHTYSt fkOjYj"
                           style="margin-left: -0px;"
                         />
                       </div>
@@ -2190,13 +2156,11 @@ exports[`<Home /> should render correctly with no user 1`] = `
                     >
                       <img
                         alt=""
-                        class="sc-ivTmOn bMIea-D"
-                        src="IMAGE_MOCK"
+                        class="sc-iveFHk fTSVVQ"
                       />
                       <img
                         alt=""
-                        class="sc-cxabCf jsTpWv"
-                        src="IMAGE_MOCK"
+                        class="sc-cwSeag eMJthJ"
                       />
                     </div>
                     <div
@@ -2204,13 +2168,11 @@ exports[`<Home /> should render correctly with no user 1`] = `
                     >
                       <img
                         alt=""
-                        class="sc-ivTmOn dWRufX"
-                        src="IMAGE_MOCK"
+                        class="sc-iveFHk ulBjQ"
                       />
                       <img
                         alt=""
-                        class="sc-cxabCf dqOWyn"
-                        src="IMAGE_MOCK"
+                        class="sc-cwSeag iZnDYF"
                       />
                     </div>
                   </div>
@@ -2222,16 +2184,16 @@ exports[`<Home /> should render correctly with no user 1`] = `
       </div>
     </div>
     <div
-      class="homestyles__StyledPhotoSection-sc-d0smz9-2 fHDLeh"
+      class="homestyles__StyledPhotoSection-sc-d0smz9-2 iKAEPq"
     >
       <div
-        class="photo-sectionstyles__Wrapper-sc-1vxd7ly-0 jZerSY"
+        class="photo-sectionstyles__Wrapper-sc-1vxd7ly-0 uQuQj"
       >
         <div
-          class="photo-sectionstyles__Content-sc-1vxd7ly-1 hRjbc"
+          class="photo-sectionstyles__Content-sc-1vxd7ly-1 NmlDX"
         >
           <div
-            class="animated-imagestyles__Wrapper-sc-1ah0zqa-0 TxyKS"
+            class="animated-imagestyles__Wrapper-sc-1ah0zqa-0 THYXl"
           >
             <style>
               .js .home__animated-image--hidden {
@@ -2240,24 +2202,26 @@ exports[`<Home /> should render correctly with no user 1`] = `
           }
             </style>
             <div
-              class="sc-dmRaPn cluTth animated-imagestyles__StyledImage-sc-1ah0zqa-1 eMwtAl home__animated-image--hidden"
+              class="sc-dmctIk ggHTBC animated-imagestyles__StyledImage-sc-1ah0zqa-1 iHRNaq home__animated-image--hidden"
             >
               <style>
-                .js .gg-image__img--hide-js {display: none;}
-                .no-js .gg-image__img--hide-no-js {display: none;}
+                
+          .js .gg-image__img--hide-js {display: none;}
+          .no-js .gg-image__img--hide-no-js {display: none;}
+        
               </style>
               <div
-                class="sc-kgflAQ fklZUB"
+                class="sc-kgTSHT eMhaJf"
                 style="padding-bottom: 70.79494321834154%;"
               >
                 <div
-                  class="sc-fLlhyt eaeRSK"
+                  class="sc-fLcnxK kvGhjm"
                 >
                   <div
-                    class="sc-dIouRR dNePtF sc-bBrHrO bHBNEP"
+                    class="sc-dIfARi vcnqE sc-bBABsx eDpgBb"
                   >
                     <div
-                      class="sc-hHLeRK dEoKO"
+                      class="sc-hHTYSt fkOjYj"
                       style="margin-left: -0px;"
                     />
                   </div>
@@ -2267,12 +2231,12 @@ exports[`<Home /> should render correctly with no user 1`] = `
                 >
                   <img
                     alt="Me"
-                    class="sc-ivTmOn bMIea-D"
+                    class="sc-iveFHk fTSVVQ"
                     src="https://i.imgur.com/L0Rm1ZC.jpg"
                   />
                   <img
                     alt="Me"
-                    class="sc-cxabCf jsTpWv"
+                    class="sc-cwSeag eMJthJ"
                     src="https://i.imgur.com/L0Rm1ZC.jpg"
                   />
                 </div>
@@ -2281,12 +2245,12 @@ exports[`<Home /> should render correctly with no user 1`] = `
                 >
                   <img
                     alt="Me"
-                    class="sc-ivTmOn dWRufX"
+                    class="sc-iveFHk ulBjQ"
                     src="https://i.imgur.com/L0Rm1ZC.jpg"
                   />
                   <img
                     alt="Me"
-                    class="sc-cxabCf dqOWyn"
+                    class="sc-cwSeag iZnDYF"
                     src="https://i.imgur.com/L0Rm1ZC.jpg"
                   />
                 </div>
@@ -2297,7 +2261,7 @@ exports[`<Home /> should render correctly with no user 1`] = `
       </div>
     </div>
     <div
-      class="sc-evZas csYxrp"
+      class="sc-eDWCr himBEe"
     >
       <style>
         .js .animated-content__wrapper--hidden {
@@ -2306,32 +2270,32 @@ exports[`<Home /> should render correctly with no user 1`] = `
 }
       </style>
       <div
-        class="sc-crXcEl hfkUjM animated-content__wrapper--hidden"
+        class="sc-csuSiG bimhCI animated-content__wrapper--hidden"
       >
         <div
-          class="homestyles__StyledAboutSection-sc-d0smz9-3 hLdjKh"
+          class="homestyles__StyledAboutSection-sc-d0smz9-3 kXAVhO"
         >
           <div
-            class="about-sectionstyles__Wrapper-sc-161fh79-0 bPRmDB"
+            class="about-sectionstyles__Wrapper-sc-161fh79-0 dfgKZa"
           >
             <span
-              class="sc-idiyUo bKYaKy about-sectionstyles__StyledParagraph-sc-161fh79-1 eEUKqc"
+              class="sc-idXgbr fvYUUw about-sectionstyles__StyledParagraph-sc-161fh79-1 kZkWBL"
             >
               This site is built in
                
               <a
                 aria-label="React (opens in a new tab)"
-                class="sc-ftvSup cMmkUr"
+                class="sc-ftTHYK dpmGDG"
                 href="https://reactjs.org/"
                 rel="noopener noreferrer"
                 target="_blank"
               >
                 React
                 <div
-                  class="sc-papXJ ecwnCf"
+                  class="sc-pyfCe bordam"
                 >
                   <svg
-                    class="sc-iBkjds eZahvc sc-jqUVSM fjeMmK"
+                    class="sc-iBYQkv lnzGUE sc-jrcTuL joTGkF"
                     height="18"
                     viewBox="0 0 24 24"
                     width="18"
@@ -2348,17 +2312,17 @@ exports[`<Home /> should render correctly with no user 1`] = `
                
               <a
                 aria-label="Redux (opens in a new tab)"
-                class="sc-ftvSup cMmkUr"
+                class="sc-ftTHYK dpmGDG"
                 href="https://redux.js.org/"
                 rel="noopener noreferrer"
                 target="_blank"
               >
                 Redux
                 <div
-                  class="sc-papXJ ecwnCf"
+                  class="sc-pyfCe bordam"
                 >
                   <svg
-                    class="sc-iBkjds eZahvc sc-jqUVSM fjeMmK"
+                    class="sc-iBYQkv lnzGUE sc-jrcTuL joTGkF"
                     height="18"
                     viewBox="0 0 24 24"
                     width="18"
@@ -2375,17 +2339,17 @@ exports[`<Home /> should render correctly with no user 1`] = `
                
               <a
                 aria-label="Next.js (opens in a new tab)"
-                class="sc-ftvSup cMmkUr"
+                class="sc-ftTHYK dpmGDG"
                 href="https://nextjs.org/"
                 rel="noopener noreferrer"
                 target="_blank"
               >
                 Next.js
                 <div
-                  class="sc-papXJ ecwnCf"
+                  class="sc-pyfCe bordam"
                 >
                   <svg
-                    class="sc-iBkjds eZahvc sc-jqUVSM fjeMmK"
+                    class="sc-iBYQkv lnzGUE sc-jrcTuL joTGkF"
                     height="18"
                     viewBox="0 0 24 24"
                     width="18"
@@ -2401,17 +2365,17 @@ exports[`<Home /> should render correctly with no user 1`] = `
                
               <a
                 aria-label="AWS (opens in a new tab)"
-                class="sc-ftvSup cMmkUr"
+                class="sc-ftTHYK dpmGDG"
                 href="https://aws.amazon.com/"
                 rel="noopener noreferrer"
                 target="_blank"
               >
                 AWS
                 <div
-                  class="sc-papXJ ecwnCf"
+                  class="sc-pyfCe bordam"
                 >
                   <svg
-                    class="sc-iBkjds eZahvc sc-jqUVSM fjeMmK"
+                    class="sc-iBYQkv lnzGUE sc-jrcTuL joTGkF"
                     height="18"
                     viewBox="0 0 24 24"
                     width="18"
@@ -2426,7 +2390,7 @@ exports[`<Home /> should render correctly with no user 1`] = `
               . I use it to experiment with things, share stuff I've figured out, and allow people to contact me.
             </span>
             <div
-              class="contact-linkstyles__Wrapper-sc-1f9dgs5-0 hknrdW"
+              class="contact-linkstyles__Wrapper-sc-1f9dgs5-0 empxtt"
             >
               <style>
                 
@@ -2435,16 +2399,16 @@ exports[`<Home /> should render correctly with no user 1`] = `
         }
               </style>
               <div
-                class="contact-linkstyles__Content-sc-1f9dgs5-1 cmohzj"
+                class="contact-linkstyles__Content-sc-1f9dgs5-1 ktkYdY"
               >
                 <a
-                  class="sc-ftvSup cMmkUr contact-linkstyles__StyledTextLink-sc-1f9dgs5-2 dZxlbK"
+                  class="sc-ftTHYK dpmGDG contact-linkstyles__StyledTextLink-sc-1f9dgs5-2 ePjaBV"
                   href="/contact"
                 >
                   Get in touch
                 </a>
                 <div
-                  class="contact-linkstyles__Cloud-sc-1f9dgs5-3 cEZzVo home__contact--hide"
+                  class="contact-linkstyles__Cloud-sc-1f9dgs5-3 laVHCj home__contact--hide"
                   style="left: 300%;"
                 />
               </div>
@@ -2460,20 +2424,20 @@ exports[`<Home /> should render correctly with no user 1`] = `
 exports[`<Home /> should render correctly with user 1`] = `
 <div>
   <div
-    class="sc-bczRLJ gmscGQ page-containerstyles__StyledPageContainer-sc-19l7k4-0"
+    class="sc-bcXHqe fjKhSJ page-containerstyles__StyledPageContainer-sc-19l7k4-0"
     width="default"
   >
     <div
-      class="sc-ksZaOG itmwyR"
+      class="sc-ksBlkl iCvzgk"
     >
       <h1
-        class="sc-gsnTZi hUDWSp sc-kDDrLX cCIGfN"
+        class="sc-gswNZR fEnHfq sc-kDvujY jlGjEY"
       >
         Hey! I'm George.
       </h1>
     </div>
     <div
-      class="sc-evZas csYxrp"
+      class="sc-eDWCr himBEe"
     >
       <style>
         .js .animated-content__wrapper--hidden {
@@ -2482,44 +2446,44 @@ exports[`<Home /> should render correctly with user 1`] = `
 }
       </style>
       <div
-        class="sc-crXcEl hfkUjM animated-content__wrapper--hidden"
+        class="sc-csuSiG bimhCI animated-content__wrapper--hidden"
       >
         <div
-          class="homestyles__StyledWorkSection-sc-d0smz9-0 jrSJcZ"
+          class="homestyles__StyledWorkSection-sc-d0smz9-0 fjVlPe"
         >
           <div
-            class="work-sectionstyles__Wrapper-sc-1t4zqac-0 cYTwZx"
+            class="work-sectionstyles__Wrapper-sc-1t4zqac-0 ehSGLm"
           >
             <div
-              class="work-sectionstyles__Content-sc-1t4zqac-1 jDtMJd"
+              class="work-sectionstyles__Content-sc-1t4zqac-1 cFtcfy"
             >
               <div
-                class="sc-hAZoDl iua-dtn"
+                class="sc-hBxehG julUME"
               >
                 <h1
-                  class="sc-dkzDqf iBtyHU sc-bjUoiL eicdSN"
+                  class="sc-dkrFOg dYiSba sc-bjfHbI cBkNPA"
                   id="work"
                 >
                   Work
                 </h1>
                 <span
-                  class="sc-idiyUo bKYaKy work-sectionstyles__StyledParagraph-sc-1t4zqac-3 dAHWkA"
+                  class="sc-idXgbr fvYUUw work-sectionstyles__StyledParagraph-sc-1t4zqac-3 cXOZzD"
                 >
                   I'm a web developer at
                    
                   <a
                     aria-label="Typeform (opens in a new tab)"
-                    class="sc-ftvSup cMmkUr"
+                    class="sc-ftTHYK dpmGDG"
                     href="https://typeform.com/"
                     rel="noopener noreferrer"
                     target="_blank"
                   >
                     Typeform
                     <div
-                      class="sc-papXJ ecwnCf"
+                      class="sc-pyfCe bordam"
                     >
                       <svg
-                        class="sc-iBkjds eZahvc sc-jqUVSM fjeMmK"
+                        class="sc-iBYQkv lnzGUE sc-jrcTuL joTGkF"
                         height="18"
                         viewBox="0 0 24 24"
                         width="18"
@@ -2537,7 +2501,7 @@ exports[`<Home /> should render correctly with user 1`] = `
                   I’m also an accessibility champion and design system enthusiast.
                   <br />
                   <a
-                    class="sc-ftvSup cMmkUr"
+                    class="sc-ftTHYK dpmGDG"
                     href="/work"
                   >
                     Learn more about my work
@@ -2546,10 +2510,10 @@ exports[`<Home /> should render correctly with user 1`] = `
               </div>
             </div>
             <div
-              class="phonesstyles__Wrapper-sc-qc041h-0 jABYOt work-sectionstyles__Graphic-sc-1t4zqac-2 fPqDqJ"
+              class="phonesstyles__Wrapper-sc-qc041h-0 kOTBXS work-sectionstyles__Graphic-sc-1t4zqac-2 bDqRgi"
             >
               <div
-                class="sliding-phonestyles__Wrapper-sc-1ngyhd8-0 eVwAsN phonesstyles__StyledSlidingPhone-sc-qc041h-1 dFrbPC"
+                class="sliding-phonestyles__Wrapper-sc-1ngyhd8-0 ceORcu phonesstyles__StyledSlidingPhone-sc-qc041h-1 gkZvSd"
               >
                 <style>
                   .js .home__sliding-phone--hidden {
@@ -2558,24 +2522,26 @@ exports[`<Home /> should render correctly with user 1`] = `
       }
                 </style>
                 <div
-                  class="sc-dmRaPn cluTth sliding-phonestyles__StyledImage-sc-1ngyhd8-1 bhVyjo home__sliding-phone--hidden"
+                  class="sc-dmctIk ggHTBC sliding-phonestyles__StyledImage-sc-1ngyhd8-1 cObRhL home__sliding-phone--hidden"
                 >
                   <style>
-                    .js .gg-image__img--hide-js {display: none;}
-                    .no-js .gg-image__img--hide-no-js {display: none;}
+                    
+          .js .gg-image__img--hide-js {display: none;}
+          .no-js .gg-image__img--hide-no-js {display: none;}
+        
                   </style>
                   <div
-                    class="sc-kgflAQ fklZUB"
+                    class="sc-kgTSHT eMhaJf"
                     style="padding-bottom: 197.80876494023903%;"
                   >
                     <div
-                      class="sc-fLlhyt eaeRSK"
+                      class="sc-fLcnxK kvGhjm"
                     >
                       <div
-                        class="sc-dIouRR dNePtF sc-bBrHrO bHBNEP"
+                        class="sc-dIfARi vcnqE sc-bBABsx eDpgBb"
                       >
                         <div
-                          class="sc-hHLeRK dEoKO"
+                          class="sc-hHTYSt fkOjYj"
                           style="margin-left: -0px;"
                         />
                       </div>
@@ -2585,13 +2551,11 @@ exports[`<Home /> should render correctly with user 1`] = `
                     >
                       <img
                         alt="A screenshot of our Backpack design principles"
-                        class="sc-ivTmOn bMIea-D"
-                        src="IMAGE_MOCK"
+                        class="sc-iveFHk fTSVVQ"
                       />
                       <img
                         alt="A screenshot of our Backpack design principles"
-                        class="sc-cxabCf jsTpWv"
-                        src="IMAGE_MOCK"
+                        class="sc-cwSeag eMJthJ"
                       />
                     </div>
                     <div
@@ -2599,20 +2563,18 @@ exports[`<Home /> should render correctly with user 1`] = `
                     >
                       <img
                         alt="A screenshot of our Backpack design principles"
-                        class="sc-ivTmOn dWRufX"
-                        src="IMAGE_MOCK"
+                        class="sc-iveFHk ulBjQ"
                       />
                       <img
                         alt="A screenshot of our Backpack design principles"
-                        class="sc-cxabCf dqOWyn"
-                        src="IMAGE_MOCK"
+                        class="sc-cwSeag iZnDYF"
                       />
                     </div>
                   </div>
                 </div>
               </div>
               <div
-                class="sliding-phonestyles__Wrapper-sc-1ngyhd8-0 eVwAsN phonesstyles__StyledSlidingPhone-sc-qc041h-1 dFrbPC"
+                class="sliding-phonestyles__Wrapper-sc-1ngyhd8-0 ceORcu phonesstyles__StyledSlidingPhone-sc-qc041h-1 gkZvSd"
               >
                 <style>
                   .js .home__sliding-phone--hidden {
@@ -2621,24 +2583,26 @@ exports[`<Home /> should render correctly with user 1`] = `
       }
                 </style>
                 <div
-                  class="sc-dmRaPn cluTth sliding-phonestyles__StyledImage-sc-1ngyhd8-1 bhVyjo home__sliding-phone--hidden"
+                  class="sc-dmctIk ggHTBC sliding-phonestyles__StyledImage-sc-1ngyhd8-1 cObRhL home__sliding-phone--hidden"
                 >
                   <style>
-                    .js .gg-image__img--hide-js {display: none;}
-                    .no-js .gg-image__img--hide-no-js {display: none;}
+                    
+          .js .gg-image__img--hide-js {display: none;}
+          .no-js .gg-image__img--hide-no-js {display: none;}
+        
                   </style>
                   <div
-                    class="sc-kgflAQ fklZUB"
+                    class="sc-kgTSHT eMhaJf"
                     style="padding-bottom: 197.80876494023903%;"
                   >
                     <div
-                      class="sc-fLlhyt eaeRSK"
+                      class="sc-fLcnxK kvGhjm"
                     >
                       <div
-                        class="sc-dIouRR dNePtF sc-bBrHrO bHBNEP"
+                        class="sc-dIfARi vcnqE sc-bBABsx eDpgBb"
                       >
                         <div
-                          class="sc-hHLeRK dEoKO"
+                          class="sc-hHTYSt fkOjYj"
                           style="margin-left: -0px;"
                         />
                       </div>
@@ -2648,13 +2612,11 @@ exports[`<Home /> should render correctly with user 1`] = `
                     >
                       <img
                         alt="A screenshot of our bar chart component on iOS"
-                        class="sc-ivTmOn bMIea-D"
-                        src="IMAGE_MOCK"
+                        class="sc-iveFHk fTSVVQ"
                       />
                       <img
                         alt="A screenshot of our bar chart component on iOS"
-                        class="sc-cxabCf jsTpWv"
-                        src="IMAGE_MOCK"
+                        class="sc-cwSeag eMJthJ"
                       />
                     </div>
                     <div
@@ -2662,20 +2624,18 @@ exports[`<Home /> should render correctly with user 1`] = `
                     >
                       <img
                         alt="A screenshot of our bar chart component on iOS"
-                        class="sc-ivTmOn dWRufX"
-                        src="IMAGE_MOCK"
+                        class="sc-iveFHk ulBjQ"
                       />
                       <img
                         alt="A screenshot of our bar chart component on iOS"
-                        class="sc-cxabCf dqOWyn"
-                        src="IMAGE_MOCK"
+                        class="sc-cwSeag iZnDYF"
                       />
                     </div>
                   </div>
                 </div>
               </div>
               <div
-                class="sliding-phonestyles__Wrapper-sc-1ngyhd8-0 eVwAsN phonesstyles__StyledSlidingPhone-sc-qc041h-1 dFrbPC"
+                class="sliding-phonestyles__Wrapper-sc-1ngyhd8-0 ceORcu phonesstyles__StyledSlidingPhone-sc-qc041h-1 gkZvSd"
               >
                 <style>
                   .js .home__sliding-phone--hidden {
@@ -2684,24 +2644,26 @@ exports[`<Home /> should render correctly with user 1`] = `
       }
                 </style>
                 <div
-                  class="sc-dmRaPn cluTth sliding-phonestyles__StyledImage-sc-1ngyhd8-1 bhVyjo home__sliding-phone--hidden"
+                  class="sc-dmctIk ggHTBC sliding-phonestyles__StyledImage-sc-1ngyhd8-1 cObRhL home__sliding-phone--hidden"
                 >
                   <style>
-                    .js .gg-image__img--hide-js {display: none;}
-                    .no-js .gg-image__img--hide-no-js {display: none;}
+                    
+          .js .gg-image__img--hide-js {display: none;}
+          .no-js .gg-image__img--hide-no-js {display: none;}
+        
                   </style>
                   <div
-                    class="sc-kgflAQ fklZUB"
+                    class="sc-kgTSHT eMhaJf"
                     style="padding-bottom: 197.80876494023903%;"
                   >
                     <div
-                      class="sc-fLlhyt eaeRSK"
+                      class="sc-fLcnxK kvGhjm"
                     >
                       <div
-                        class="sc-dIouRR dNePtF sc-bBrHrO bHBNEP"
+                        class="sc-dIfARi vcnqE sc-bBABsx eDpgBb"
                       >
                         <div
-                          class="sc-hHLeRK dEoKO"
+                          class="sc-hHTYSt fkOjYj"
                           style="margin-left: -0px;"
                         />
                       </div>
@@ -2711,13 +2673,11 @@ exports[`<Home /> should render correctly with user 1`] = `
                     >
                       <img
                         alt="A screenshot of our flare view component on web"
-                        class="sc-ivTmOn bMIea-D"
-                        src="IMAGE_MOCK"
+                        class="sc-iveFHk fTSVVQ"
                       />
                       <img
                         alt="A screenshot of our flare view component on web"
-                        class="sc-cxabCf jsTpWv"
-                        src="IMAGE_MOCK"
+                        class="sc-cwSeag eMJthJ"
                       />
                     </div>
                     <div
@@ -2725,13 +2685,11 @@ exports[`<Home /> should render correctly with user 1`] = `
                     >
                       <img
                         alt="A screenshot of our flare view component on web"
-                        class="sc-ivTmOn dWRufX"
-                        src="IMAGE_MOCK"
+                        class="sc-iveFHk ulBjQ"
                       />
                       <img
                         alt="A screenshot of our flare view component on web"
-                        class="sc-cxabCf dqOWyn"
-                        src="IMAGE_MOCK"
+                        class="sc-cwSeag iZnDYF"
                       />
                     </div>
                   </div>
@@ -2743,7 +2701,7 @@ exports[`<Home /> should render correctly with user 1`] = `
       </div>
     </div>
     <div
-      class="sc-evZas csYxrp"
+      class="sc-eDWCr himBEe"
     >
       <style>
         .js .animated-content__wrapper--hidden {
@@ -2752,34 +2710,36 @@ exports[`<Home /> should render correctly with user 1`] = `
 }
       </style>
       <div
-        class="sc-crXcEl hfkUjM animated-content__wrapper--hidden"
+        class="sc-csuSiG bimhCI animated-content__wrapper--hidden"
       >
         <div
-          class="homestyles__StyledLifeSection-sc-d0smz9-1 hLkPtG"
+          class="homestyles__StyledLifeSection-sc-d0smz9-1 HnNWF"
         >
           <div
-            class="life-sectionstyles__Wrapper-sc-17amgn9-0 bHsFEN"
+            class="life-sectionstyles__Wrapper-sc-17amgn9-0 Dfoqm"
           >
             <div
-              class="sc-dmRaPn cluTth life-sectionstyles__ImageAboveTabletLeft-sc-17amgn9-3 kVMvQF"
+              class="sc-dmctIk ggHTBC life-sectionstyles__ImageAboveTabletLeft-sc-17amgn9-3 iRfPSu"
               style="margin-top: 2.6rem; transform: rotate(-10.6deg);"
             >
               <style>
-                .js .gg-image__img--hide-js {display: none;}
-                .no-js .gg-image__img--hide-no-js {display: none;}
+                
+          .js .gg-image__img--hide-js {display: none;}
+          .no-js .gg-image__img--hide-no-js {display: none;}
+        
               </style>
               <div
-                class="sc-kgflAQ fklZUB"
+                class="sc-kgTSHT eMhaJf"
                 style="padding-bottom: 150%;"
               >
                 <div
-                  class="sc-fLlhyt eaeRSK"
+                  class="sc-fLcnxK kvGhjm"
                 >
                   <div
-                    class="sc-dIouRR dNePtF sc-bBrHrO bHBNEP"
+                    class="sc-dIfARi vcnqE sc-bBABsx eDpgBb"
                   >
                     <div
-                      class="sc-hHLeRK dEoKO"
+                      class="sc-hHTYSt fkOjYj"
                       style="margin-left: -0px;"
                     />
                   </div>
@@ -2789,13 +2749,11 @@ exports[`<Home /> should render correctly with user 1`] = `
                 >
                   <img
                     alt=""
-                    class="sc-ivTmOn bMIea-D"
-                    src="IMAGE_MOCK"
+                    class="sc-iveFHk fTSVVQ"
                   />
                   <img
                     alt=""
-                    class="sc-cxabCf jsTpWv"
-                    src="IMAGE_MOCK"
+                    class="sc-cwSeag eMJthJ"
                   />
                 </div>
                 <div
@@ -2803,43 +2761,41 @@ exports[`<Home /> should render correctly with user 1`] = `
                 >
                   <img
                     alt=""
-                    class="sc-ivTmOn dWRufX"
-                    src="IMAGE_MOCK"
+                    class="sc-iveFHk ulBjQ"
                   />
                   <img
                     alt=""
-                    class="sc-cxabCf dqOWyn"
-                    src="IMAGE_MOCK"
+                    class="sc-cwSeag iZnDYF"
                   />
                 </div>
               </div>
             </div>
             <div
-              class="life-sectionstyles__Content-sc-17amgn9-2 izamhA"
+              class="life-sectionstyles__Content-sc-17amgn9-2 iyExnr"
             >
               <div
-                class="sc-hAZoDl iua-dtn"
+                class="sc-hBxehG julUME"
               >
                 <h1
-                  class="sc-dkzDqf iBtyHU sc-bjUoiL eicdSN"
+                  class="sc-dkrFOg dYiSba sc-bjfHbI cBkNPA"
                   id="life"
                 >
                   Life
                 </h1>
                 <span
-                  class="sc-idiyUo bKYaKy life-sectionstyles__StyledParagraph-sc-17amgn9-1 kRjsHX"
+                  class="sc-idXgbr fvYUUw life-sectionstyles__StyledParagraph-sc-17amgn9-1 iBdBcU"
                 >
                   I love travel, photography, and obstacle course racing.
                   <br />
                   <a
-                    class="sc-ftvSup cMmkUr"
+                    class="sc-ftTHYK dpmGDG"
                     href="/blog"
                   >
                     Blog
                   </a>
                   <br />
                   <a
-                    class="sc-ftvSup cMmkUr"
+                    class="sc-ftTHYK dpmGDG"
                     href="/photography"
                   >
                     Photography
@@ -2847,31 +2803,33 @@ exports[`<Home /> should render correctly with user 1`] = `
                 </span>
               </div>
               <span
-                class="sc-idiyUo bKYaKy life-sectionstyles__StyledParagraph-sc-17amgn9-1 kRjsHX"
+                class="sc-idXgbr fvYUUw life-sectionstyles__StyledParagraph-sc-17amgn9-1 iBdBcU"
               >
                 I live on the south coast of the UK with my wife, cat and dog.
               </span>
             </div>
             <div
-              class="sc-dmRaPn cluTth life-sectionstyles__ImageAboveTabletRight-sc-17amgn9-4 kbUisf"
+              class="sc-dmctIk ggHTBC life-sectionstyles__ImageAboveTabletRight-sc-17amgn9-4 hWXkmE"
               style="margin-top: -0.39999999999999947rem; transform: rotate(4.6deg);"
             >
               <style>
-                .js .gg-image__img--hide-js {display: none;}
-                .no-js .gg-image__img--hide-no-js {display: none;}
+                
+          .js .gg-image__img--hide-js {display: none;}
+          .no-js .gg-image__img--hide-no-js {display: none;}
+        
               </style>
               <div
-                class="sc-kgflAQ fklZUB"
+                class="sc-kgTSHT eMhaJf"
                 style="padding-bottom: 66.66666666666667%;"
               >
                 <div
-                  class="sc-fLlhyt eaeRSK"
+                  class="sc-fLcnxK kvGhjm"
                 >
                   <div
-                    class="sc-dIouRR dNePtF sc-bBrHrO bHBNEP"
+                    class="sc-dIfARi vcnqE sc-bBABsx eDpgBb"
                   >
                     <div
-                      class="sc-hHLeRK dEoKO"
+                      class="sc-hHTYSt fkOjYj"
                       style="margin-left: -0px;"
                     />
                   </div>
@@ -2881,13 +2839,11 @@ exports[`<Home /> should render correctly with user 1`] = `
                 >
                   <img
                     alt=""
-                    class="sc-ivTmOn bMIea-D"
-                    src="IMAGE_MOCK"
+                    class="sc-iveFHk fTSVVQ"
                   />
                   <img
                     alt=""
-                    class="sc-cxabCf jsTpWv"
-                    src="IMAGE_MOCK"
+                    class="sc-cwSeag eMJthJ"
                   />
                 </div>
                 <div
@@ -2895,19 +2851,17 @@ exports[`<Home /> should render correctly with user 1`] = `
                 >
                   <img
                     alt=""
-                    class="sc-ivTmOn dWRufX"
-                    src="IMAGE_MOCK"
+                    class="sc-iveFHk ulBjQ"
                   />
                   <img
                     alt=""
-                    class="sc-cxabCf dqOWyn"
-                    src="IMAGE_MOCK"
+                    class="sc-cwSeag iZnDYF"
                   />
                 </div>
               </div>
             </div>
             <div
-              class="life-sectionstyles__MobileImageWrapper-sc-17amgn9-5 bkmlEe"
+              class="life-sectionstyles__MobileImageWrapper-sc-17amgn9-5 mjRmV"
             >
               <style>
                 
@@ -2922,27 +2876,29 @@ exports[`<Home /> should render correctly with user 1`] = `
           
               </style>
               <div
-                class="life-sectionstyles__MobileImageInnerWrapperLeft-sc-17amgn9-6 hKsbHM home__life-section-image--left-hide"
+                class="life-sectionstyles__MobileImageInnerWrapperLeft-sc-17amgn9-6 dmHVWz home__life-section-image--left-hide"
               >
                 <div
-                  class="sc-dmRaPn cluTth"
+                  class="sc-dmctIk ggHTBC"
                 >
                   <style>
-                    .js .gg-image__img--hide-js {display: none;}
-                    .no-js .gg-image__img--hide-no-js {display: none;}
+                    
+          .js .gg-image__img--hide-js {display: none;}
+          .no-js .gg-image__img--hide-no-js {display: none;}
+        
                   </style>
                   <div
-                    class="sc-kgflAQ fklZUB"
+                    class="sc-kgTSHT eMhaJf"
                     style="padding-bottom: 150%;"
                   >
                     <div
-                      class="sc-fLlhyt eaeRSK"
+                      class="sc-fLcnxK kvGhjm"
                     >
                       <div
-                        class="sc-dIouRR dNePtF sc-bBrHrO bHBNEP"
+                        class="sc-dIfARi vcnqE sc-bBABsx eDpgBb"
                       >
                         <div
-                          class="sc-hHLeRK dEoKO"
+                          class="sc-hHTYSt fkOjYj"
                           style="margin-left: -0px;"
                         />
                       </div>
@@ -2952,13 +2908,11 @@ exports[`<Home /> should render correctly with user 1`] = `
                     >
                       <img
                         alt=""
-                        class="sc-ivTmOn bMIea-D"
-                        src="IMAGE_MOCK"
+                        class="sc-iveFHk fTSVVQ"
                       />
                       <img
                         alt=""
-                        class="sc-cxabCf jsTpWv"
-                        src="IMAGE_MOCK"
+                        class="sc-cwSeag eMJthJ"
                       />
                     </div>
                     <div
@@ -2966,40 +2920,40 @@ exports[`<Home /> should render correctly with user 1`] = `
                     >
                       <img
                         alt=""
-                        class="sc-ivTmOn dWRufX"
-                        src="IMAGE_MOCK"
+                        class="sc-iveFHk ulBjQ"
                       />
                       <img
                         alt=""
-                        class="sc-cxabCf dqOWyn"
-                        src="IMAGE_MOCK"
+                        class="sc-cwSeag iZnDYF"
                       />
                     </div>
                   </div>
                 </div>
               </div>
               <div
-                class="life-sectionstyles__MobileImageInnerWrapperRight-sc-17amgn9-7 fwfLdM home__life-section-image--right-hide"
+                class="life-sectionstyles__MobileImageInnerWrapperRight-sc-17amgn9-7 bOxRrT home__life-section-image--right-hide"
               >
                 <div
-                  class="sc-dmRaPn cluTth"
+                  class="sc-dmctIk ggHTBC"
                 >
                   <style>
-                    .js .gg-image__img--hide-js {display: none;}
-                    .no-js .gg-image__img--hide-no-js {display: none;}
+                    
+          .js .gg-image__img--hide-js {display: none;}
+          .no-js .gg-image__img--hide-no-js {display: none;}
+        
                   </style>
                   <div
-                    class="sc-kgflAQ fklZUB"
+                    class="sc-kgTSHT eMhaJf"
                     style="padding-bottom: 66.66666666666667%;"
                   >
                     <div
-                      class="sc-fLlhyt eaeRSK"
+                      class="sc-fLcnxK kvGhjm"
                     >
                       <div
-                        class="sc-dIouRR dNePtF sc-bBrHrO bHBNEP"
+                        class="sc-dIfARi vcnqE sc-bBABsx eDpgBb"
                       >
                         <div
-                          class="sc-hHLeRK dEoKO"
+                          class="sc-hHTYSt fkOjYj"
                           style="margin-left: -0px;"
                         />
                       </div>
@@ -3009,13 +2963,11 @@ exports[`<Home /> should render correctly with user 1`] = `
                     >
                       <img
                         alt=""
-                        class="sc-ivTmOn bMIea-D"
-                        src="IMAGE_MOCK"
+                        class="sc-iveFHk fTSVVQ"
                       />
                       <img
                         alt=""
-                        class="sc-cxabCf jsTpWv"
-                        src="IMAGE_MOCK"
+                        class="sc-cwSeag eMJthJ"
                       />
                     </div>
                     <div
@@ -3023,13 +2975,11 @@ exports[`<Home /> should render correctly with user 1`] = `
                     >
                       <img
                         alt=""
-                        class="sc-ivTmOn dWRufX"
-                        src="IMAGE_MOCK"
+                        class="sc-iveFHk ulBjQ"
                       />
                       <img
                         alt=""
-                        class="sc-cxabCf dqOWyn"
-                        src="IMAGE_MOCK"
+                        class="sc-cwSeag iZnDYF"
                       />
                     </div>
                   </div>
@@ -3041,16 +2991,16 @@ exports[`<Home /> should render correctly with user 1`] = `
       </div>
     </div>
     <div
-      class="homestyles__StyledPhotoSection-sc-d0smz9-2 fHDLeh"
+      class="homestyles__StyledPhotoSection-sc-d0smz9-2 iKAEPq"
     >
       <div
-        class="photo-sectionstyles__Wrapper-sc-1vxd7ly-0 jZerSY"
+        class="photo-sectionstyles__Wrapper-sc-1vxd7ly-0 uQuQj"
       >
         <div
-          class="photo-sectionstyles__Content-sc-1vxd7ly-1 hRjbc"
+          class="photo-sectionstyles__Content-sc-1vxd7ly-1 NmlDX"
         >
           <div
-            class="animated-imagestyles__Wrapper-sc-1ah0zqa-0 TxyKS"
+            class="animated-imagestyles__Wrapper-sc-1ah0zqa-0 THYXl"
           >
             <style>
               .js .home__animated-image--hidden {
@@ -3059,24 +3009,26 @@ exports[`<Home /> should render correctly with user 1`] = `
           }
             </style>
             <div
-              class="sc-dmRaPn cluTth animated-imagestyles__StyledImage-sc-1ah0zqa-1 eMwtAl home__animated-image--hidden"
+              class="sc-dmctIk ggHTBC animated-imagestyles__StyledImage-sc-1ah0zqa-1 iHRNaq home__animated-image--hidden"
             >
               <style>
-                .js .gg-image__img--hide-js {display: none;}
-                .no-js .gg-image__img--hide-no-js {display: none;}
+                
+          .js .gg-image__img--hide-js {display: none;}
+          .no-js .gg-image__img--hide-no-js {display: none;}
+        
               </style>
               <div
-                class="sc-kgflAQ fklZUB"
+                class="sc-kgTSHT eMhaJf"
                 style="padding-bottom: 70.79494321834154%;"
               >
                 <div
-                  class="sc-fLlhyt eaeRSK"
+                  class="sc-fLcnxK kvGhjm"
                 >
                   <div
-                    class="sc-dIouRR dNePtF sc-bBrHrO bHBNEP"
+                    class="sc-dIfARi vcnqE sc-bBABsx eDpgBb"
                   >
                     <div
-                      class="sc-hHLeRK dEoKO"
+                      class="sc-hHTYSt fkOjYj"
                       style="margin-left: -0px;"
                     />
                   </div>
@@ -3086,12 +3038,12 @@ exports[`<Home /> should render correctly with user 1`] = `
                 >
                   <img
                     alt="Me"
-                    class="sc-ivTmOn bMIea-D"
+                    class="sc-iveFHk fTSVVQ"
                     src="https://i.imgur.com/L0Rm1ZC.jpg"
                   />
                   <img
                     alt="Me"
-                    class="sc-cxabCf jsTpWv"
+                    class="sc-cwSeag eMJthJ"
                     src="https://i.imgur.com/L0Rm1ZC.jpg"
                   />
                 </div>
@@ -3100,12 +3052,12 @@ exports[`<Home /> should render correctly with user 1`] = `
                 >
                   <img
                     alt="Me"
-                    class="sc-ivTmOn dWRufX"
+                    class="sc-iveFHk ulBjQ"
                     src="https://i.imgur.com/L0Rm1ZC.jpg"
                   />
                   <img
                     alt="Me"
-                    class="sc-cxabCf dqOWyn"
+                    class="sc-cwSeag iZnDYF"
                     src="https://i.imgur.com/L0Rm1ZC.jpg"
                   />
                 </div>
@@ -3116,7 +3068,7 @@ exports[`<Home /> should render correctly with user 1`] = `
       </div>
     </div>
     <div
-      class="sc-evZas csYxrp"
+      class="sc-eDWCr himBEe"
     >
       <style>
         .js .animated-content__wrapper--hidden {
@@ -3125,32 +3077,32 @@ exports[`<Home /> should render correctly with user 1`] = `
 }
       </style>
       <div
-        class="sc-crXcEl hfkUjM animated-content__wrapper--hidden"
+        class="sc-csuSiG bimhCI animated-content__wrapper--hidden"
       >
         <div
-          class="homestyles__StyledAboutSection-sc-d0smz9-3 hLdjKh"
+          class="homestyles__StyledAboutSection-sc-d0smz9-3 kXAVhO"
         >
           <div
-            class="about-sectionstyles__Wrapper-sc-161fh79-0 bPRmDB"
+            class="about-sectionstyles__Wrapper-sc-161fh79-0 dfgKZa"
           >
             <span
-              class="sc-idiyUo bKYaKy about-sectionstyles__StyledParagraph-sc-161fh79-1 eEUKqc"
+              class="sc-idXgbr fvYUUw about-sectionstyles__StyledParagraph-sc-161fh79-1 kZkWBL"
             >
               This site is built in
                
               <a
                 aria-label="React (opens in a new tab)"
-                class="sc-ftvSup cMmkUr"
+                class="sc-ftTHYK dpmGDG"
                 href="https://reactjs.org/"
                 rel="noopener noreferrer"
                 target="_blank"
               >
                 React
                 <div
-                  class="sc-papXJ ecwnCf"
+                  class="sc-pyfCe bordam"
                 >
                   <svg
-                    class="sc-iBkjds eZahvc sc-jqUVSM fjeMmK"
+                    class="sc-iBYQkv lnzGUE sc-jrcTuL joTGkF"
                     height="18"
                     viewBox="0 0 24 24"
                     width="18"
@@ -3167,17 +3119,17 @@ exports[`<Home /> should render correctly with user 1`] = `
                
               <a
                 aria-label="Redux (opens in a new tab)"
-                class="sc-ftvSup cMmkUr"
+                class="sc-ftTHYK dpmGDG"
                 href="https://redux.js.org/"
                 rel="noopener noreferrer"
                 target="_blank"
               >
                 Redux
                 <div
-                  class="sc-papXJ ecwnCf"
+                  class="sc-pyfCe bordam"
                 >
                   <svg
-                    class="sc-iBkjds eZahvc sc-jqUVSM fjeMmK"
+                    class="sc-iBYQkv lnzGUE sc-jrcTuL joTGkF"
                     height="18"
                     viewBox="0 0 24 24"
                     width="18"
@@ -3194,17 +3146,17 @@ exports[`<Home /> should render correctly with user 1`] = `
                
               <a
                 aria-label="Next.js (opens in a new tab)"
-                class="sc-ftvSup cMmkUr"
+                class="sc-ftTHYK dpmGDG"
                 href="https://nextjs.org/"
                 rel="noopener noreferrer"
                 target="_blank"
               >
                 Next.js
                 <div
-                  class="sc-papXJ ecwnCf"
+                  class="sc-pyfCe bordam"
                 >
                   <svg
-                    class="sc-iBkjds eZahvc sc-jqUVSM fjeMmK"
+                    class="sc-iBYQkv lnzGUE sc-jrcTuL joTGkF"
                     height="18"
                     viewBox="0 0 24 24"
                     width="18"
@@ -3220,17 +3172,17 @@ exports[`<Home /> should render correctly with user 1`] = `
                
               <a
                 aria-label="AWS (opens in a new tab)"
-                class="sc-ftvSup cMmkUr"
+                class="sc-ftTHYK dpmGDG"
                 href="https://aws.amazon.com/"
                 rel="noopener noreferrer"
                 target="_blank"
               >
                 AWS
                 <div
-                  class="sc-papXJ ecwnCf"
+                  class="sc-pyfCe bordam"
                 >
                   <svg
-                    class="sc-iBkjds eZahvc sc-jqUVSM fjeMmK"
+                    class="sc-iBYQkv lnzGUE sc-jrcTuL joTGkF"
                     height="18"
                     viewBox="0 0 24 24"
                     width="18"
@@ -3245,7 +3197,7 @@ exports[`<Home /> should render correctly with user 1`] = `
               . I use it to experiment with things, share stuff I've figured out, and allow people to contact me.
             </span>
             <div
-              class="contact-linkstyles__Wrapper-sc-1f9dgs5-0 hknrdW"
+              class="contact-linkstyles__Wrapper-sc-1f9dgs5-0 empxtt"
             >
               <style>
                 
@@ -3254,16 +3206,16 @@ exports[`<Home /> should render correctly with user 1`] = `
         }
               </style>
               <div
-                class="contact-linkstyles__Content-sc-1f9dgs5-1 cmohzj"
+                class="contact-linkstyles__Content-sc-1f9dgs5-1 ktkYdY"
               >
                 <a
-                  class="sc-ftvSup cMmkUr contact-linkstyles__StyledTextLink-sc-1f9dgs5-2 dZxlbK"
+                  class="sc-ftTHYK dpmGDG contact-linkstyles__StyledTextLink-sc-1f9dgs5-2 ePjaBV"
                   href="/contact"
                 >
                   Get in touch
                 </a>
                 <div
-                  class="contact-linkstyles__Cloud-sc-1f9dgs5-3 cEZzVo home__contact--hide"
+                  class="contact-linkstyles__Cloud-sc-1f9dgs5-3 laVHCj home__contact--hide"
                   style="left: 300%;"
                 />
               </div>

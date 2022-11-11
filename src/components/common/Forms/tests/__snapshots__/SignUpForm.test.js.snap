@@ -3,29 +3,29 @@
 exports[`<SignUpForm /> Should render correctly 1`] = `
 <div>
   <div
-    class="sc-crXcEl"
+    class="sc-csuSiG"
   >
     <label
-      class="sc-fEOsli iHSlJz"
+      class="sc-fEXmlR fcnjli"
       for="uname_FORM_ID"
     >
       Display name
     </label>
     <div
-      class="sc-iBkjds hDuMmX sc-breuTD bOZwsL"
+      class="sc-iBYQkv qDrdv sc-bqWxrE dvHoOv"
       placeholder="Display name"
     >
       <input
         aria-disabled="false"
         aria-invalid="false"
         autofill="username"
-        class="sc-dIouRR cqKYoJ"
+        class="sc-dIfARi egSfao"
         id="uname_FORM_ID"
         name="Display name"
         value=""
       />
       <svg
-        class="sc-gKXOVf ktoyia sc-hHLeRK kBmlVx"
+        class="sc-gKPRtg eSdzmv sc-hHTYSt hQAsBU"
         height="18"
         viewBox="0 0 24 24"
         width="18"
@@ -37,27 +37,27 @@ exports[`<SignUpForm /> Should render correctly 1`] = `
       </svg>
     </div>
     <label
-      class="sc-fEOsli iHSlJz"
+      class="sc-fEXmlR fcnjli"
       for="email_FORM_ID"
     >
       Email
     </label>
     <div
-      class="sc-iBkjds hDuMmX sc-breuTD bOZwsL"
+      class="sc-iBYQkv qDrdv sc-bqWxrE dvHoOv"
       placeholder="Email"
     >
       <input
         aria-disabled="false"
         aria-invalid="false"
         autofill="email"
-        class="sc-dIouRR cqKYoJ"
+        class="sc-dIfARi egSfao"
         id="email_FORM_ID"
         name="Email"
         spellcheck="false"
         value=""
       />
       <svg
-        class="sc-gKXOVf ktoyia sc-hHLeRK kBmlVx"
+        class="sc-gKPRtg eSdzmv sc-hHTYSt hQAsBU"
         height="18"
         viewBox="0 0 24 24"
         width="18"
@@ -69,21 +69,21 @@ exports[`<SignUpForm /> Should render correctly 1`] = `
       </svg>
     </div>
     <label
-      class="sc-ftvSup bMRhqZ sc-fnykZs dYLQUI"
+      class="sc-ftTHYK cnKNCo sc-fnGiBr dOtmda"
       id="consent_FORM_ID"
     >
       <div
-        class="sc-papXJ gtFCxX"
+        class="sc-pyfCe cPxSom"
       >
         <input
           aria-invalid="false"
           aria-label="I consent to the data entered above being stored."
-          class="sc-jqUVSM hocLPL"
+          class="sc-jrcTuL bUxtxE"
           name="I consent to the data entered above being stored."
           type="checkbox"
         />
         <svg
-          class="sc-gKXOVf ktoyia sc-kDDrLX bmdoJK"
+          class="sc-gKPRtg eSdzmv sc-kDvujY bYAPqH"
           height="18"
           viewBox="0 0 24 24"
           width="18"
@@ -96,18 +96,18 @@ exports[`<SignUpForm /> Should render correctly 1`] = `
       </div>
       <div
         aria-hidden="true"
-        class="sc-iqcoie bBXilN"
+        class="sc-ipEyDJ enbqXF"
       >
         I consent to the data entered above being stored.
       </div>
     </label>
     <button
-      class="sc-dkzDqf idcKMi sc-evZas hAEDCd"
+      class="sc-dkrFOg iFkICg sc-eDWCr fujPXy"
       disabled=""
       type="button"
     >
       <span
-        class="sc-eCYdqJ ghZAyu"
+        class="sc-eDvSVe iqkXFe"
       >
         Sign up
       </span>

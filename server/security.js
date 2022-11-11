@@ -40,6 +40,7 @@ const applySecurityPractises = server => {
       contentSecurityPolicy: {
         directives: cspDirectives,
       },
+      crossOriginEmbedderPolicy: false,
     })
   );
 

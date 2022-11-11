@@ -9,6 +9,8 @@ import configureStore from 'client-utils/common/redux/configure-store';
 import AdminNotificationsIndex from '../index';
 import AdminNotifications from '../Container';
 
+jest.mock('next/router', () => ({ withRouter: component => component }));
+
 describe('<AdminNotifications />', () => {
   let store;
   const spy = jest.fn();

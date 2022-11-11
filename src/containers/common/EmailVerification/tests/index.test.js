@@ -9,6 +9,8 @@ import configureStore from 'client-utils/common/redux/configure-store';
 import EmailVerificationIndex from '../index';
 import EmailVerification from '../Container';
 
+jest.mock('next/router', () => ({ withRouter: component => component }));
+
 describe('<EmailVerification />', () => {
   let store;
   const spy = jest.fn();

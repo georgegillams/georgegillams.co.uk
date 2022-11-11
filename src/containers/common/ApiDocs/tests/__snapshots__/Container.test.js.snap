@@ -3,71 +3,71 @@
 exports[`<ApiDocs /> should render correctly 1`] = `
 <div>
   <div
-    class="sc-bczRLJ ikoAiL page-containerstyles__StyledPageContainer-sc-19l7k4-0"
+    class="sc-bcXHqe dKDSeC page-containerstyles__StyledPageContainer-sc-19l7k4-0"
     width="default"
   >
     <div
-      class="sc-hAZoDl gTuHKu"
+      class="sc-hBxehG kRpDOl"
     >
       <h1
-        class="sc-dkzDqf grUNba sc-iqcoie fulViU"
+        class="sc-dkrFOg eTlLCY sc-ipEyDJ jfsqCE"
       >
         API docs
       </h1>
     </div>
     <div
-      class="api-docsstyles__VerticalScrollContainer-sc-4t6xyo-3 kgPUAS"
+      class="api-docsstyles__VerticalScrollContainer-sc-4t6xyo-3 cGJQxR"
     >
       <table
-        class="api-docsstyles__StyledTable-sc-4t6xyo-0 gBkxaf"
+        class="api-docsstyles__StyledTable-sc-4t6xyo-0 ljoqFk"
       >
         <thead
-          class="sc-fEOsli iYzMqM"
+          class="sc-fEXmlR gzJGTZ"
         >
           <tr
-            class="sc-idiyUo"
+            class="sc-idXgbr"
           >
             <th
-              class="sc-dIouRR fWwdiK"
+              class="sc-dIfARi jImzib"
             >
               <span
-                class="sc-gsnTZi fzWRHm"
+                class="sc-gswNZR iZwDAZ"
               >
                 Path
               </span>
             </th>
             <th
-              class="sc-dIouRR fWwdiK"
+              class="sc-dIfARi jImzib"
             >
               <span
-                class="sc-gsnTZi fzWRHm"
+                class="sc-gswNZR iZwDAZ"
               >
                 Method
               </span>
             </th>
             <th
-              class="sc-dIouRR fWwdiK"
+              class="sc-dIfARi jImzib"
             >
               <span
-                class="sc-gsnTZi fzWRHm"
+                class="sc-gswNZR iZwDAZ"
               >
                 Arguments
               </span>
             </th>
             <th
-              class="sc-dIouRR fWwdiK"
+              class="sc-dIfARi jImzib"
             >
               <span
-                class="sc-gsnTZi fzWRHm"
+                class="sc-gswNZR iZwDAZ"
               >
                 Authorisation
               </span>
             </th>
             <th
-              class="sc-dIouRR fWwdiK"
+              class="sc-dIfARi jImzib"
             >
               <span
-                class="sc-gsnTZi fzWRHm"
+                class="sc-gswNZR iZwDAZ"
               >
                 Description
               </span>
@@ -75,27 +75,27 @@ exports[`<ApiDocs /> should render correctly 1`] = `
           </tr>
         </thead>
         <tbody
-          class="sc-bjUoiL"
+          class="sc-bjfHbI"
         >
           <tr
-            class="sc-idiyUo"
+            class="sc-idXgbr"
           >
             <th
-              class="sc-dIouRR fWwdiK"
+              class="sc-dIfARi jImzib"
             >
               <a
                 aria-label="/analytics/create (opens in a new tab)"
-                class="sc-papXJ ilnFdC"
+                class="sc-pyfCe kHwuaX"
                 href="https://www.georgegillams.co.uk/api/analytics/create"
                 rel="noopener noreferrer"
                 target="_blank"
               >
                 /analytics/create
                 <div
-                  class="sc-jqUVSM icGDYy"
+                  class="sc-jrcTuL QvVN"
                 >
                   <svg
-                    class="sc-ftvSup bygzLL sc-kDDrLX kzKBSF"
+                    class="sc-ftTHYK fjjwty sc-kDvujY fYbYDQ"
                     height="18"
                     viewBox="0 0 24 24"
                     width="18"
@@ -109,59 +109,59 @@ exports[`<ApiDocs /> should render correctly 1`] = `
               </a>
             </th>
             <th
-              class="sc-dIouRR fWwdiK"
+              class="sc-dIfARi jImzib"
             >
               <span
-                class="sc-gsnTZi fzWRHm api-docsstyles__Method-sc-4t6xyo-2 lesXHI"
+                class="sc-gswNZR iZwDAZ api-docsstyles__Method-sc-4t6xyo-2 jGEmiL"
               >
                 POST
               </span>
             </th>
             <th
-              class="sc-dIouRR fWwdiK"
+              class="sc-dIfARi jImzib"
             >
               <span
-                class="sc-gsnTZi fzWRHm"
+                class="sc-gswNZR iZwDAZ"
               />
             </th>
             <th
-              class="sc-dIouRR fWwdiK"
+              class="sc-dIfARi jImzib"
             >
               <span
-                class="sc-gsnTZi fzWRHm"
+                class="sc-gswNZR iZwDAZ"
               >
                 None
               </span>
             </th>
             <th
-              class="sc-dIouRR fWwdiK"
+              class="sc-dIfARi jImzib"
             >
               <span
-                class="sc-gsnTZi fzWRHm api-docsstyles__Description-sc-4t6xyo-1 cZtHBf"
+                class="sc-gswNZR iZwDAZ api-docsstyles__Description-sc-4t6xyo-1 dkIedw"
               >
                 Registers information about the page navigated to
               </span>
             </th>
           </tr>
           <tr
-            class="sc-idiyUo"
+            class="sc-idXgbr"
           >
             <th
-              class="sc-dIouRR fWwdiK"
+              class="sc-dIfARi jImzib"
             >
               <a
                 aria-label="/analytics/load-all (opens in a new tab)"
-                class="sc-papXJ ilnFdC"
+                class="sc-pyfCe kHwuaX"
                 href="https://www.georgegillams.co.uk/api/analytics/load-all"
                 rel="noopener noreferrer"
                 target="_blank"
               >
                 /analytics/load-all
                 <div
-                  class="sc-jqUVSM icGDYy"
+                  class="sc-jrcTuL QvVN"
                 >
                   <svg
-                    class="sc-ftvSup bygzLL sc-kDDrLX kzKBSF"
+                    class="sc-ftTHYK fjjwty sc-kDvujY fYbYDQ"
                     height="18"
                     viewBox="0 0 24 24"
                     width="18"
@@ -175,59 +175,59 @@ exports[`<ApiDocs /> should render correctly 1`] = `
               </a>
             </th>
             <th
-              class="sc-dIouRR fWwdiK"
+              class="sc-dIfARi jImzib"
             >
               <span
-                class="sc-gsnTZi fzWRHm api-docsstyles__Method-sc-4t6xyo-2 lesXHI"
+                class="sc-gswNZR iZwDAZ api-docsstyles__Method-sc-4t6xyo-2 jGEmiL"
               >
                 GET
               </span>
             </th>
             <th
-              class="sc-dIouRR fWwdiK"
+              class="sc-dIfARi jImzib"
             >
               <span
-                class="sc-gsnTZi fzWRHm"
+                class="sc-gswNZR iZwDAZ"
               />
             </th>
             <th
-              class="sc-dIouRR fWwdiK"
+              class="sc-dIfARi jImzib"
             >
               <span
-                class="sc-gsnTZi fzWRHm"
+                class="sc-gswNZR iZwDAZ"
               >
                 Admin only
               </span>
             </th>
             <th
-              class="sc-dIouRR fWwdiK"
+              class="sc-dIfARi jImzib"
             >
               <span
-                class="sc-gsnTZi fzWRHm api-docsstyles__Description-sc-4t6xyo-1 cZtHBf"
+                class="sc-gswNZR iZwDAZ api-docsstyles__Description-sc-4t6xyo-1 dkIedw"
               >
                 Loads all raw analytic points
               </span>
             </th>
           </tr>
           <tr
-            class="sc-idiyUo"
+            class="sc-idXgbr"
           >
             <th
-              class="sc-dIouRR fWwdiK"
+              class="sc-dIfARi jImzib"
             >
               <a
                 aria-label="/analytics/load (opens in a new tab)"
-                class="sc-papXJ ilnFdC"
+                class="sc-pyfCe kHwuaX"
                 href="https://www.georgegillams.co.uk/api/analytics/load"
                 rel="noopener noreferrer"
                 target="_blank"
               >
                 /analytics/load
                 <div
-                  class="sc-jqUVSM icGDYy"
+                  class="sc-jrcTuL QvVN"
                 >
                   <svg
-                    class="sc-ftvSup bygzLL sc-kDDrLX kzKBSF"
+                    class="sc-ftTHYK fjjwty sc-kDvujY fYbYDQ"
                     height="18"
                     viewBox="0 0 24 24"
                     width="18"
@@ -241,59 +241,59 @@ exports[`<ApiDocs /> should render correctly 1`] = `
               </a>
             </th>
             <th
-              class="sc-dIouRR fWwdiK"
+              class="sc-dIfARi jImzib"
             >
               <span
-                class="sc-gsnTZi fzWRHm api-docsstyles__Method-sc-4t6xyo-2 lesXHI"
+                class="sc-gswNZR iZwDAZ api-docsstyles__Method-sc-4t6xyo-2 jGEmiL"
               >
                 GET
               </span>
             </th>
             <th
-              class="sc-dIouRR fWwdiK"
+              class="sc-dIfARi jImzib"
             >
               <span
-                class="sc-gsnTZi fzWRHm"
+                class="sc-gswNZR iZwDAZ"
               />
             </th>
             <th
-              class="sc-dIouRR fWwdiK"
+              class="sc-dIfARi jImzib"
             >
               <span
-                class="sc-gsnTZi fzWRHm"
+                class="sc-gswNZR iZwDAZ"
               >
                 Admin only
               </span>
             </th>
             <th
-              class="sc-dIouRR fWwdiK"
+              class="sc-dIfARi jImzib"
             >
               <span
-                class="sc-gsnTZi fzWRHm api-docsstyles__Description-sc-4t6xyo-1 cZtHBf"
+                class="sc-gswNZR iZwDAZ api-docsstyles__Description-sc-4t6xyo-1 dkIedw"
               >
                 Loads a summary of unique analytic points
               </span>
             </th>
           </tr>
           <tr
-            class="sc-idiyUo"
+            class="sc-idXgbr"
           >
             <th
-              class="sc-dIouRR fWwdiK"
+              class="sc-dIfARi jImzib"
             >
               <a
                 aria-label="/auth/load (opens in a new tab)"
-                class="sc-papXJ ilnFdC"
+                class="sc-pyfCe kHwuaX"
                 href="https://www.georgegillams.co.uk/api/auth/load"
                 rel="noopener noreferrer"
                 target="_blank"
               >
                 /auth/load
                 <div
-                  class="sc-jqUVSM icGDYy"
+                  class="sc-jrcTuL QvVN"
                 >
                   <svg
-                    class="sc-ftvSup bygzLL sc-kDDrLX kzKBSF"
+                    class="sc-ftTHYK fjjwty sc-kDvujY fYbYDQ"
                     height="18"
                     viewBox="0 0 24 24"
                     width="18"
@@ -307,59 +307,59 @@ exports[`<ApiDocs /> should render correctly 1`] = `
               </a>
             </th>
             <th
-              class="sc-dIouRR fWwdiK"
+              class="sc-dIfARi jImzib"
             >
               <span
-                class="sc-gsnTZi fzWRHm api-docsstyles__Method-sc-4t6xyo-2 lesXHI"
+                class="sc-gswNZR iZwDAZ api-docsstyles__Method-sc-4t6xyo-2 jGEmiL"
               >
                 GET
               </span>
             </th>
             <th
-              class="sc-dIouRR fWwdiK"
+              class="sc-dIfARi jImzib"
             >
               <span
-                class="sc-gsnTZi fzWRHm"
+                class="sc-gswNZR iZwDAZ"
               />
             </th>
             <th
-              class="sc-dIouRR fWwdiK"
+              class="sc-dIfARi jImzib"
             >
               <span
-                class="sc-gsnTZi fzWRHm"
+                class="sc-gswNZR iZwDAZ"
               >
                 None
               </span>
             </th>
             <th
-              class="sc-dIouRR fWwdiK"
+              class="sc-dIfARi jImzib"
             >
               <span
-                class="sc-gsnTZi fzWRHm api-docsstyles__Description-sc-4t6xyo-1 cZtHBf"
+                class="sc-gswNZR iZwDAZ api-docsstyles__Description-sc-4t6xyo-1 dkIedw"
               >
                 Loads the currently authenticated used. Returns null if signed out
               </span>
             </th>
           </tr>
           <tr
-            class="sc-idiyUo"
+            class="sc-idXgbr"
           >
             <th
-              class="sc-dIouRR fWwdiK"
+              class="sc-dIfARi jImzib"
             >
               <a
                 aria-label="/auth/logout (opens in a new tab)"
-                class="sc-papXJ ilnFdC"
+                class="sc-pyfCe kHwuaX"
                 href="https://www.georgegillams.co.uk/api/auth/logout"
                 rel="noopener noreferrer"
                 target="_blank"
               >
                 /auth/logout
                 <div
-                  class="sc-jqUVSM icGDYy"
+                  class="sc-jrcTuL QvVN"
                 >
                   <svg
-                    class="sc-ftvSup bygzLL sc-kDDrLX kzKBSF"
+                    class="sc-ftTHYK fjjwty sc-kDvujY fYbYDQ"
                     height="18"
                     viewBox="0 0 24 24"
                     width="18"
@@ -373,59 +373,59 @@ exports[`<ApiDocs /> should render correctly 1`] = `
               </a>
             </th>
             <th
-              class="sc-dIouRR fWwdiK"
+              class="sc-dIfARi jImzib"
             >
               <span
-                class="sc-gsnTZi fzWRHm api-docsstyles__Method-sc-4t6xyo-2 lesXHI"
+                class="sc-gswNZR iZwDAZ api-docsstyles__Method-sc-4t6xyo-2 jGEmiL"
               >
                 POST
               </span>
             </th>
             <th
-              class="sc-dIouRR fWwdiK"
+              class="sc-dIfARi jImzib"
             >
               <span
-                class="sc-gsnTZi fzWRHm"
+                class="sc-gswNZR iZwDAZ"
               />
             </th>
             <th
-              class="sc-dIouRR fWwdiK"
+              class="sc-dIfARi jImzib"
             >
               <span
-                class="sc-gsnTZi fzWRHm"
+                class="sc-gswNZR iZwDAZ"
               >
                 None
               </span>
             </th>
             <th
-              class="sc-dIouRR fWwdiK"
+              class="sc-dIfARi jImzib"
             >
               <span
-                class="sc-gsnTZi fzWRHm api-docsstyles__Description-sc-4t6xyo-1 cZtHBf"
+                class="sc-gswNZR iZwDAZ api-docsstyles__Description-sc-4t6xyo-1 dkIedw"
               >
                 Logs out the currently authenticated user
               </span>
             </th>
           </tr>
           <tr
-            class="sc-idiyUo"
+            class="sc-idXgbr"
           >
             <th
-              class="sc-dIouRR fWwdiK"
+              class="sc-dIfARi jImzib"
             >
               <a
                 aria-label="/auth/request-verification-email (opens in a new tab)"
-                class="sc-papXJ ilnFdC"
+                class="sc-pyfCe kHwuaX"
                 href="https://www.georgegillams.co.uk/api/auth/request-verification-email"
                 rel="noopener noreferrer"
                 target="_blank"
               >
                 /auth/request-verification-email
                 <div
-                  class="sc-jqUVSM icGDYy"
+                  class="sc-jrcTuL QvVN"
                 >
                   <svg
-                    class="sc-ftvSup bygzLL sc-kDDrLX kzKBSF"
+                    class="sc-ftTHYK fjjwty sc-kDvujY fYbYDQ"
                     height="18"
                     viewBox="0 0 24 24"
                     width="18"
@@ -439,59 +439,59 @@ exports[`<ApiDocs /> should render correctly 1`] = `
               </a>
             </th>
             <th
-              class="sc-dIouRR fWwdiK"
+              class="sc-dIfARi jImzib"
             >
               <span
-                class="sc-gsnTZi fzWRHm api-docsstyles__Method-sc-4t6xyo-2 lesXHI"
+                class="sc-gswNZR iZwDAZ api-docsstyles__Method-sc-4t6xyo-2 jGEmiL"
               >
                 POST
               </span>
             </th>
             <th
-              class="sc-dIouRR fWwdiK"
+              class="sc-dIfARi jImzib"
             >
               <span
-                class="sc-gsnTZi fzWRHm"
+                class="sc-gswNZR iZwDAZ"
               />
             </th>
             <th
-              class="sc-dIouRR fWwdiK"
+              class="sc-dIfARi jImzib"
             >
               <span
-                class="sc-gsnTZi fzWRHm"
+                class="sc-gswNZR iZwDAZ"
               >
                 Any user
               </span>
             </th>
             <th
-              class="sc-dIouRR fWwdiK"
+              class="sc-dIfARi jImzib"
             >
               <span
-                class="sc-gsnTZi fzWRHm api-docsstyles__Description-sc-4t6xyo-1 cZtHBf"
+                class="sc-gswNZR iZwDAZ api-docsstyles__Description-sc-4t6xyo-1 dkIedw"
               >
                 Resends an email verification email
               </span>
             </th>
           </tr>
           <tr
-            class="sc-idiyUo"
+            class="sc-idXgbr"
           >
             <th
-              class="sc-dIouRR fWwdiK"
+              class="sc-dIfARi jImzib"
             >
               <a
                 aria-label="/auth/verify-email (opens in a new tab)"
-                class="sc-papXJ ilnFdC"
+                class="sc-pyfCe kHwuaX"
                 href="https://www.georgegillams.co.uk/api/auth/verify-email"
                 rel="noopener noreferrer"
                 target="_blank"
               >
                 /auth/verify-email
                 <div
-                  class="sc-jqUVSM icGDYy"
+                  class="sc-jrcTuL QvVN"
                 >
                   <svg
-                    class="sc-ftvSup bygzLL sc-kDDrLX kzKBSF"
+                    class="sc-ftTHYK fjjwty sc-kDvujY fYbYDQ"
                     height="18"
                     viewBox="0 0 24 24"
                     width="18"
@@ -505,59 +505,59 @@ exports[`<ApiDocs /> should render correctly 1`] = `
               </a>
             </th>
             <th
-              class="sc-dIouRR fWwdiK"
+              class="sc-dIfARi jImzib"
             >
               <span
-                class="sc-gsnTZi fzWRHm api-docsstyles__Method-sc-4t6xyo-2 lesXHI"
+                class="sc-gswNZR iZwDAZ api-docsstyles__Method-sc-4t6xyo-2 jGEmiL"
               >
                 POST
               </span>
             </th>
             <th
-              class="sc-dIouRR fWwdiK"
+              class="sc-dIfARi jImzib"
             >
               <span
-                class="sc-gsnTZi fzWRHm"
+                class="sc-gswNZR iZwDAZ"
               />
             </th>
             <th
-              class="sc-dIouRR fWwdiK"
+              class="sc-dIfARi jImzib"
             >
               <span
-                class="sc-gsnTZi fzWRHm"
+                class="sc-gswNZR iZwDAZ"
               >
                 None
               </span>
             </th>
             <th
-              class="sc-dIouRR fWwdiK"
+              class="sc-dIfARi jImzib"
             >
               <span
-                class="sc-gsnTZi fzWRHm api-docsstyles__Description-sc-4t6xyo-1 cZtHBf"
+                class="sc-gswNZR iZwDAZ api-docsstyles__Description-sc-4t6xyo-1 dkIedw"
               >
                 Verify an email address with a secret verification key
               </span>
             </th>
           </tr>
           <tr
-            class="sc-idiyUo"
+            class="sc-idXgbr"
           >
             <th
-              class="sc-dIouRR fWwdiK"
+              class="sc-dIfARi jImzib"
             >
               <a
                 aria-label="/emails/load (opens in a new tab)"
-                class="sc-papXJ ilnFdC"
+                class="sc-pyfCe kHwuaX"
                 href="https://www.georgegillams.co.uk/api/emails/load"
                 rel="noopener noreferrer"
                 target="_blank"
               >
                 /emails/load
                 <div
-                  class="sc-jqUVSM icGDYy"
+                  class="sc-jrcTuL QvVN"
                 >
                   <svg
-                    class="sc-ftvSup bygzLL sc-kDDrLX kzKBSF"
+                    class="sc-ftTHYK fjjwty sc-kDvujY fYbYDQ"
                     height="18"
                     viewBox="0 0 24 24"
                     width="18"
@@ -571,59 +571,59 @@ exports[`<ApiDocs /> should render correctly 1`] = `
               </a>
             </th>
             <th
-              class="sc-dIouRR fWwdiK"
+              class="sc-dIfARi jImzib"
             >
               <span
-                class="sc-gsnTZi fzWRHm api-docsstyles__Method-sc-4t6xyo-2 lesXHI"
+                class="sc-gswNZR iZwDAZ api-docsstyles__Method-sc-4t6xyo-2 jGEmiL"
               >
                 GET
               </span>
             </th>
             <th
-              class="sc-dIouRR fWwdiK"
+              class="sc-dIfARi jImzib"
             >
               <span
-                class="sc-gsnTZi fzWRHm"
+                class="sc-gswNZR iZwDAZ"
               />
             </th>
             <th
-              class="sc-dIouRR fWwdiK"
+              class="sc-dIfARi jImzib"
             >
               <span
-                class="sc-gsnTZi fzWRHm"
+                class="sc-gswNZR iZwDAZ"
               >
                 Admin only
               </span>
             </th>
             <th
-              class="sc-dIouRR fWwdiK"
+              class="sc-dIfARi jImzib"
             >
               <span
-                class="sc-gsnTZi fzWRHm api-docsstyles__Description-sc-4t6xyo-1 cZtHBf"
+                class="sc-gswNZR iZwDAZ api-docsstyles__Description-sc-4t6xyo-1 dkIedw"
               >
                 Loads emails that have been sent
               </span>
             </th>
           </tr>
           <tr
-            class="sc-idiyUo"
+            class="sc-idXgbr"
           >
             <th
-              class="sc-dIouRR fWwdiK"
+              class="sc-dIfARi jImzib"
             >
               <a
                 aria-label="/emails/resend (opens in a new tab)"
-                class="sc-papXJ ilnFdC"
+                class="sc-pyfCe kHwuaX"
                 href="https://www.georgegillams.co.uk/api/emails/resend"
                 rel="noopener noreferrer"
                 target="_blank"
               >
                 /emails/resend
                 <div
-                  class="sc-jqUVSM icGDYy"
+                  class="sc-jrcTuL QvVN"
                 >
                   <svg
-                    class="sc-ftvSup bygzLL sc-kDDrLX kzKBSF"
+                    class="sc-ftTHYK fjjwty sc-kDvujY fYbYDQ"
                     height="18"
                     viewBox="0 0 24 24"
                     width="18"
@@ -637,59 +637,59 @@ exports[`<ApiDocs /> should render correctly 1`] = `
               </a>
             </th>
             <th
-              class="sc-dIouRR fWwdiK"
+              class="sc-dIfARi jImzib"
             >
               <span
-                class="sc-gsnTZi fzWRHm api-docsstyles__Method-sc-4t6xyo-2 lesXHI"
+                class="sc-gswNZR iZwDAZ api-docsstyles__Method-sc-4t6xyo-2 jGEmiL"
               >
                 POST
               </span>
             </th>
             <th
-              class="sc-dIouRR fWwdiK"
+              class="sc-dIfARi jImzib"
             >
               <span
-                class="sc-gsnTZi fzWRHm"
+                class="sc-gswNZR iZwDAZ"
               />
             </th>
             <th
-              class="sc-dIouRR fWwdiK"
+              class="sc-dIfARi jImzib"
             >
               <span
-                class="sc-gsnTZi fzWRHm"
+                class="sc-gswNZR iZwDAZ"
               >
                 Admin only
               </span>
             </th>
             <th
-              class="sc-dIouRR fWwdiK"
+              class="sc-dIfARi jImzib"
             >
               <span
-                class="sc-gsnTZi fzWRHm api-docsstyles__Description-sc-4t6xyo-1 cZtHBf"
+                class="sc-gswNZR iZwDAZ api-docsstyles__Description-sc-4t6xyo-1 dkIedw"
               >
                 Resends an email that's stored in the database
               </span>
             </th>
           </tr>
           <tr
-            class="sc-idiyUo"
+            class="sc-idXgbr"
           >
             <th
-              class="sc-dIouRR fWwdiK"
+              class="sc-dIfARi jImzib"
             >
               <a
                 aria-label="/magic-links/login (opens in a new tab)"
-                class="sc-papXJ ilnFdC"
+                class="sc-pyfCe kHwuaX"
                 href="https://www.georgegillams.co.uk/api/magic-links/login"
                 rel="noopener noreferrer"
                 target="_blank"
               >
                 /magic-links/login
                 <div
-                  class="sc-jqUVSM icGDYy"
+                  class="sc-jrcTuL QvVN"
                 >
                   <svg
-                    class="sc-ftvSup bygzLL sc-kDDrLX kzKBSF"
+                    class="sc-ftTHYK fjjwty sc-kDvujY fYbYDQ"
                     height="18"
                     viewBox="0 0 24 24"
                     width="18"
@@ -703,59 +703,59 @@ exports[`<ApiDocs /> should render correctly 1`] = `
               </a>
             </th>
             <th
-              class="sc-dIouRR fWwdiK"
+              class="sc-dIfARi jImzib"
             >
               <span
-                class="sc-gsnTZi fzWRHm api-docsstyles__Method-sc-4t6xyo-2 lesXHI"
+                class="sc-gswNZR iZwDAZ api-docsstyles__Method-sc-4t6xyo-2 jGEmiL"
               >
                 POST
               </span>
             </th>
             <th
-              class="sc-dIouRR fWwdiK"
+              class="sc-dIfARi jImzib"
             >
               <span
-                class="sc-gsnTZi fzWRHm"
+                class="sc-gswNZR iZwDAZ"
               />
             </th>
             <th
-              class="sc-dIouRR fWwdiK"
+              class="sc-dIfARi jImzib"
             >
               <span
-                class="sc-gsnTZi fzWRHm"
+                class="sc-gswNZR iZwDAZ"
               >
                 None
               </span>
             </th>
             <th
-              class="sc-dIouRR fWwdiK"
+              class="sc-dIfARi jImzib"
             >
               <span
-                class="sc-gsnTZi fzWRHm api-docsstyles__Description-sc-4t6xyo-1 cZtHBf"
+                class="sc-gswNZR iZwDAZ api-docsstyles__Description-sc-4t6xyo-1 dkIedw"
               >
                 Login using a secret magic-link key
               </span>
             </th>
           </tr>
           <tr
-            class="sc-idiyUo"
+            class="sc-idXgbr"
           >
             <th
-              class="sc-dIouRR fWwdiK"
+              class="sc-dIfARi jImzib"
             >
               <a
                 aria-label="/magic-links/request (opens in a new tab)"
-                class="sc-papXJ ilnFdC"
+                class="sc-pyfCe kHwuaX"
                 href="https://www.georgegillams.co.uk/api/magic-links/request"
                 rel="noopener noreferrer"
                 target="_blank"
               >
                 /magic-links/request
                 <div
-                  class="sc-jqUVSM icGDYy"
+                  class="sc-jrcTuL QvVN"
                 >
                   <svg
-                    class="sc-ftvSup bygzLL sc-kDDrLX kzKBSF"
+                    class="sc-ftTHYK fjjwty sc-kDvujY fYbYDQ"
                     height="18"
                     viewBox="0 0 24 24"
                     width="18"
@@ -769,59 +769,59 @@ exports[`<ApiDocs /> should render correctly 1`] = `
               </a>
             </th>
             <th
-              class="sc-dIouRR fWwdiK"
+              class="sc-dIfARi jImzib"
             >
               <span
-                class="sc-gsnTZi fzWRHm api-docsstyles__Method-sc-4t6xyo-2 lesXHI"
+                class="sc-gswNZR iZwDAZ api-docsstyles__Method-sc-4t6xyo-2 jGEmiL"
               >
                 POST
               </span>
             </th>
             <th
-              class="sc-dIouRR fWwdiK"
+              class="sc-dIfARi jImzib"
             >
               <span
-                class="sc-gsnTZi fzWRHm"
+                class="sc-gswNZR iZwDAZ"
               />
             </th>
             <th
-              class="sc-dIouRR fWwdiK"
+              class="sc-dIfARi jImzib"
             >
               <span
-                class="sc-gsnTZi fzWRHm"
+                class="sc-gswNZR iZwDAZ"
               >
                 None
               </span>
             </th>
             <th
-              class="sc-dIouRR fWwdiK"
+              class="sc-dIfARi jImzib"
             >
               <span
-                class="sc-gsnTZi fzWRHm api-docsstyles__Description-sc-4t6xyo-1 cZtHBf"
+                class="sc-gswNZR iZwDAZ api-docsstyles__Description-sc-4t6xyo-1 dkIedw"
               >
                 Request a magic link for a given account using the account's email address
               </span>
             </th>
           </tr>
           <tr
-            class="sc-idiyUo"
+            class="sc-idXgbr"
           >
             <th
-              class="sc-dIouRR fWwdiK"
+              class="sc-dIfARi jImzib"
             >
               <a
                 aria-label="/data-management/backup (opens in a new tab)"
-                class="sc-papXJ ilnFdC"
+                class="sc-pyfCe kHwuaX"
                 href="https://www.georgegillams.co.uk/api/data-management/backup"
                 rel="noopener noreferrer"
                 target="_blank"
               >
                 /data-management/backup
                 <div
-                  class="sc-jqUVSM icGDYy"
+                  class="sc-jrcTuL QvVN"
                 >
                   <svg
-                    class="sc-ftvSup bygzLL sc-kDDrLX kzKBSF"
+                    class="sc-ftTHYK fjjwty sc-kDvujY fYbYDQ"
                     height="18"
                     viewBox="0 0 24 24"
                     width="18"
@@ -835,59 +835,59 @@ exports[`<ApiDocs /> should render correctly 1`] = `
               </a>
             </th>
             <th
-              class="sc-dIouRR fWwdiK"
+              class="sc-dIfARi jImzib"
             >
               <span
-                class="sc-gsnTZi fzWRHm api-docsstyles__Method-sc-4t6xyo-2 lesXHI"
+                class="sc-gswNZR iZwDAZ api-docsstyles__Method-sc-4t6xyo-2 jGEmiL"
               >
                 GET
               </span>
             </th>
             <th
-              class="sc-dIouRR fWwdiK"
+              class="sc-dIfARi jImzib"
             >
               <span
-                class="sc-gsnTZi fzWRHm"
+                class="sc-gswNZR iZwDAZ"
               />
             </th>
             <th
-              class="sc-dIouRR fWwdiK"
+              class="sc-dIfARi jImzib"
             >
               <span
-                class="sc-gsnTZi fzWRHm"
+                class="sc-gswNZR iZwDAZ"
               >
                 Admin only
               </span>
             </th>
             <th
-              class="sc-dIouRR fWwdiK"
+              class="sc-dIfARi jImzib"
             >
               <span
-                class="sc-gsnTZi fzWRHm api-docsstyles__Description-sc-4t6xyo-1 cZtHBf"
+                class="sc-gswNZR iZwDAZ api-docsstyles__Description-sc-4t6xyo-1 dkIedw"
               >
                 Returns a file containing a full data backup for the site
               </span>
             </th>
           </tr>
           <tr
-            class="sc-idiyUo"
+            class="sc-idXgbr"
           >
             <th
-              class="sc-dIouRR fWwdiK"
+              class="sc-dIfARi jImzib"
             >
               <a
                 aria-label="/data-management/delete-entity (opens in a new tab)"
-                class="sc-papXJ ilnFdC"
+                class="sc-pyfCe kHwuaX"
                 href="https://www.georgegillams.co.uk/api/data-management/delete-entity"
                 rel="noopener noreferrer"
                 target="_blank"
               >
                 /data-management/delete-entity
                 <div
-                  class="sc-jqUVSM icGDYy"
+                  class="sc-jrcTuL QvVN"
                 >
                   <svg
-                    class="sc-ftvSup bygzLL sc-kDDrLX kzKBSF"
+                    class="sc-ftTHYK fjjwty sc-kDvujY fYbYDQ"
                     height="18"
                     viewBox="0 0 24 24"
                     width="18"
@@ -901,59 +901,59 @@ exports[`<ApiDocs /> should render correctly 1`] = `
               </a>
             </th>
             <th
-              class="sc-dIouRR fWwdiK"
+              class="sc-dIfARi jImzib"
             >
               <span
-                class="sc-gsnTZi fzWRHm api-docsstyles__Method-sc-4t6xyo-2 lesXHI"
+                class="sc-gswNZR iZwDAZ api-docsstyles__Method-sc-4t6xyo-2 jGEmiL"
               >
                 POST
               </span>
             </th>
             <th
-              class="sc-dIouRR fWwdiK"
+              class="sc-dIfARi jImzib"
             >
               <span
-                class="sc-gsnTZi fzWRHm"
+                class="sc-gswNZR iZwDAZ"
               />
             </th>
             <th
-              class="sc-dIouRR fWwdiK"
+              class="sc-dIfARi jImzib"
             >
               <span
-                class="sc-gsnTZi fzWRHm"
+                class="sc-gswNZR iZwDAZ"
               >
                 Admin only
               </span>
             </th>
             <th
-              class="sc-dIouRR fWwdiK"
+              class="sc-dIfARi jImzib"
             >
               <span
-                class="sc-gsnTZi fzWRHm api-docsstyles__Description-sc-4t6xyo-1 cZtHBf"
+                class="sc-gswNZR iZwDAZ api-docsstyles__Description-sc-4t6xyo-1 dkIedw"
               >
                 Remove a previously deleted entity completely from the DB
               </span>
             </th>
           </tr>
           <tr
-            class="sc-idiyUo"
+            class="sc-idXgbr"
           >
             <th
-              class="sc-dIouRR fWwdiK"
+              class="sc-dIfARi jImzib"
             >
               <a
                 aria-label="/data-management/delete-set (opens in a new tab)"
-                class="sc-papXJ ilnFdC"
+                class="sc-pyfCe kHwuaX"
                 href="https://www.georgegillams.co.uk/api/data-management/delete-set"
                 rel="noopener noreferrer"
                 target="_blank"
               >
                 /data-management/delete-set
                 <div
-                  class="sc-jqUVSM icGDYy"
+                  class="sc-jrcTuL QvVN"
                 >
                   <svg
-                    class="sc-ftvSup bygzLL sc-kDDrLX kzKBSF"
+                    class="sc-ftTHYK fjjwty sc-kDvujY fYbYDQ"
                     height="18"
                     viewBox="0 0 24 24"
                     width="18"
@@ -967,59 +967,59 @@ exports[`<ApiDocs /> should render correctly 1`] = `
               </a>
             </th>
             <th
-              class="sc-dIouRR fWwdiK"
+              class="sc-dIfARi jImzib"
             >
               <span
-                class="sc-gsnTZi fzWRHm api-docsstyles__Method-sc-4t6xyo-2 lesXHI"
+                class="sc-gswNZR iZwDAZ api-docsstyles__Method-sc-4t6xyo-2 jGEmiL"
               >
                 POST
               </span>
             </th>
             <th
-              class="sc-dIouRR fWwdiK"
+              class="sc-dIfARi jImzib"
             >
               <span
-                class="sc-gsnTZi fzWRHm"
+                class="sc-gswNZR iZwDAZ"
               />
             </th>
             <th
-              class="sc-dIouRR fWwdiK"
+              class="sc-dIfARi jImzib"
             >
               <span
-                class="sc-gsnTZi fzWRHm"
+                class="sc-gswNZR iZwDAZ"
               >
                 Admin only
               </span>
             </th>
             <th
-              class="sc-dIouRR fWwdiK"
+              class="sc-dIfARi jImzib"
             >
               <span
-                class="sc-gsnTZi fzWRHm api-docsstyles__Description-sc-4t6xyo-1 cZtHBf"
+                class="sc-gswNZR iZwDAZ api-docsstyles__Description-sc-4t6xyo-1 dkIedw"
               >
                 Remove an entire collection from the DB
               </span>
             </th>
           </tr>
           <tr
-            class="sc-idiyUo"
+            class="sc-idXgbr"
           >
             <th
-              class="sc-dIouRR fWwdiK"
+              class="sc-dIfARi jImzib"
             >
               <a
                 aria-label="/data-management/restore (opens in a new tab)"
-                class="sc-papXJ ilnFdC"
+                class="sc-pyfCe kHwuaX"
                 href="https://www.georgegillams.co.uk/api/data-management/restore"
                 rel="noopener noreferrer"
                 target="_blank"
               >
                 /data-management/restore
                 <div
-                  class="sc-jqUVSM icGDYy"
+                  class="sc-jrcTuL QvVN"
                 >
                   <svg
-                    class="sc-ftvSup bygzLL sc-kDDrLX kzKBSF"
+                    class="sc-ftTHYK fjjwty sc-kDvujY fYbYDQ"
                     height="18"
                     viewBox="0 0 24 24"
                     width="18"
@@ -1033,59 +1033,59 @@ exports[`<ApiDocs /> should render correctly 1`] = `
               </a>
             </th>
             <th
-              class="sc-dIouRR fWwdiK"
+              class="sc-dIfARi jImzib"
             >
               <span
-                class="sc-gsnTZi fzWRHm api-docsstyles__Method-sc-4t6xyo-2 lesXHI"
+                class="sc-gswNZR iZwDAZ api-docsstyles__Method-sc-4t6xyo-2 jGEmiL"
               >
                 POST
               </span>
             </th>
             <th
-              class="sc-dIouRR fWwdiK"
+              class="sc-dIfARi jImzib"
             >
               <span
-                class="sc-gsnTZi fzWRHm"
+                class="sc-gswNZR iZwDAZ"
               />
             </th>
             <th
-              class="sc-dIouRR fWwdiK"
+              class="sc-dIfARi jImzib"
             >
               <span
-                class="sc-gsnTZi fzWRHm"
+                class="sc-gswNZR iZwDAZ"
               >
                 Admin only
               </span>
             </th>
             <th
-              class="sc-dIouRR fWwdiK"
+              class="sc-dIfARi jImzib"
             >
               <span
-                class="sc-gsnTZi fzWRHm api-docsstyles__Description-sc-4t6xyo-1 cZtHBf"
+                class="sc-gswNZR iZwDAZ api-docsstyles__Description-sc-4t6xyo-1 dkIedw"
               >
                 Restore all the data from a backup file
               </span>
             </th>
           </tr>
           <tr
-            class="sc-idiyUo"
+            class="sc-idXgbr"
           >
             <th
-              class="sc-dIouRR fWwdiK"
+              class="sc-dIfARi jImzib"
             >
               <a
                 aria-label="/notifications/create (opens in a new tab)"
-                class="sc-papXJ ilnFdC"
+                class="sc-pyfCe kHwuaX"
                 href="https://www.georgegillams.co.uk/api/notifications/create"
                 rel="noopener noreferrer"
                 target="_blank"
               >
                 /notifications/create
                 <div
-                  class="sc-jqUVSM icGDYy"
+                  class="sc-jrcTuL QvVN"
                 >
                   <svg
-                    class="sc-ftvSup bygzLL sc-kDDrLX kzKBSF"
+                    class="sc-ftTHYK fjjwty sc-kDvujY fYbYDQ"
                     height="18"
                     viewBox="0 0 24 24"
                     width="18"
@@ -1099,59 +1099,59 @@ exports[`<ApiDocs /> should render correctly 1`] = `
               </a>
             </th>
             <th
-              class="sc-dIouRR fWwdiK"
+              class="sc-dIfARi jImzib"
             >
               <span
-                class="sc-gsnTZi fzWRHm api-docsstyles__Method-sc-4t6xyo-2 lesXHI"
+                class="sc-gswNZR iZwDAZ api-docsstyles__Method-sc-4t6xyo-2 jGEmiL"
               >
                 POST
               </span>
             </th>
             <th
-              class="sc-dIouRR fWwdiK"
+              class="sc-dIfARi jImzib"
             >
               <span
-                class="sc-gsnTZi fzWRHm"
+                class="sc-gswNZR iZwDAZ"
               />
             </th>
             <th
-              class="sc-dIouRR fWwdiK"
+              class="sc-dIfARi jImzib"
             >
               <span
-                class="sc-gsnTZi fzWRHm"
+                class="sc-gswNZR iZwDAZ"
               >
                 Admin only
               </span>
             </th>
             <th
-              class="sc-dIouRR fWwdiK"
+              class="sc-dIfARi jImzib"
             >
               <span
-                class="sc-gsnTZi fzWRHm api-docsstyles__Description-sc-4t6xyo-1 cZtHBf"
+                class="sc-gswNZR iZwDAZ api-docsstyles__Description-sc-4t6xyo-1 dkIedw"
               >
                 Creates a notification which will be show at the top of the site
               </span>
             </th>
           </tr>
           <tr
-            class="sc-idiyUo"
+            class="sc-idXgbr"
           >
             <th
-              class="sc-dIouRR fWwdiK"
+              class="sc-dIfARi jImzib"
             >
               <a
                 aria-label="/notifications/delete (opens in a new tab)"
-                class="sc-papXJ ilnFdC"
+                class="sc-pyfCe kHwuaX"
                 href="https://www.georgegillams.co.uk/api/notifications/delete"
                 rel="noopener noreferrer"
                 target="_blank"
               >
                 /notifications/delete
                 <div
-                  class="sc-jqUVSM icGDYy"
+                  class="sc-jrcTuL QvVN"
                 >
                   <svg
-                    class="sc-ftvSup bygzLL sc-kDDrLX kzKBSF"
+                    class="sc-ftTHYK fjjwty sc-kDvujY fYbYDQ"
                     height="18"
                     viewBox="0 0 24 24"
                     width="18"
@@ -1165,59 +1165,59 @@ exports[`<ApiDocs /> should render correctly 1`] = `
               </a>
             </th>
             <th
-              class="sc-dIouRR fWwdiK"
+              class="sc-dIfARi jImzib"
             >
               <span
-                class="sc-gsnTZi fzWRHm api-docsstyles__Method-sc-4t6xyo-2 lesXHI"
+                class="sc-gswNZR iZwDAZ api-docsstyles__Method-sc-4t6xyo-2 jGEmiL"
               >
                 POST
               </span>
             </th>
             <th
-              class="sc-dIouRR fWwdiK"
+              class="sc-dIfARi jImzib"
             >
               <span
-                class="sc-gsnTZi fzWRHm"
+                class="sc-gswNZR iZwDAZ"
               />
             </th>
             <th
-              class="sc-dIouRR fWwdiK"
+              class="sc-dIfARi jImzib"
             >
               <span
-                class="sc-gsnTZi fzWRHm"
+                class="sc-gswNZR iZwDAZ"
               >
                 Admin only
               </span>
             </th>
             <th
-              class="sc-dIouRR fWwdiK"
+              class="sc-dIfARi jImzib"
             >
               <span
-                class="sc-gsnTZi fzWRHm api-docsstyles__Description-sc-4t6xyo-1 cZtHBf"
+                class="sc-gswNZR iZwDAZ api-docsstyles__Description-sc-4t6xyo-1 dkIedw"
               >
                 Deletes a notification
               </span>
             </th>
           </tr>
           <tr
-            class="sc-idiyUo"
+            class="sc-idXgbr"
           >
             <th
-              class="sc-dIouRR fWwdiK"
+              class="sc-dIfARi jImzib"
             >
               <a
                 aria-label="/notifications/load-all (opens in a new tab)"
-                class="sc-papXJ ilnFdC"
+                class="sc-pyfCe kHwuaX"
                 href="https://www.georgegillams.co.uk/api/notifications/load-all"
                 rel="noopener noreferrer"
                 target="_blank"
               >
                 /notifications/load-all
                 <div
-                  class="sc-jqUVSM icGDYy"
+                  class="sc-jrcTuL QvVN"
                 >
                   <svg
-                    class="sc-ftvSup bygzLL sc-kDDrLX kzKBSF"
+                    class="sc-ftTHYK fjjwty sc-kDvujY fYbYDQ"
                     height="18"
                     viewBox="0 0 24 24"
                     width="18"
@@ -1231,59 +1231,59 @@ exports[`<ApiDocs /> should render correctly 1`] = `
               </a>
             </th>
             <th
-              class="sc-dIouRR fWwdiK"
+              class="sc-dIfARi jImzib"
             >
               <span
-                class="sc-gsnTZi fzWRHm api-docsstyles__Method-sc-4t6xyo-2 lesXHI"
+                class="sc-gswNZR iZwDAZ api-docsstyles__Method-sc-4t6xyo-2 jGEmiL"
               >
                 GET
               </span>
             </th>
             <th
-              class="sc-dIouRR fWwdiK"
+              class="sc-dIfARi jImzib"
             >
               <span
-                class="sc-gsnTZi fzWRHm"
+                class="sc-gswNZR iZwDAZ"
               />
             </th>
             <th
-              class="sc-dIouRR fWwdiK"
+              class="sc-dIfARi jImzib"
             >
               <span
-                class="sc-gsnTZi fzWRHm"
+                class="sc-gswNZR iZwDAZ"
               >
                 Any user - only an admin can see deleted notifications
               </span>
             </th>
             <th
-              class="sc-dIouRR fWwdiK"
+              class="sc-dIfARi jImzib"
             >
               <span
-                class="sc-gsnTZi fzWRHm api-docsstyles__Description-sc-4t6xyo-1 cZtHBf"
+                class="sc-gswNZR iZwDAZ api-docsstyles__Description-sc-4t6xyo-1 dkIedw"
               >
                 Load all notifications
               </span>
             </th>
           </tr>
           <tr
-            class="sc-idiyUo"
+            class="sc-idXgbr"
           >
             <th
-              class="sc-dIouRR fWwdiK"
+              class="sc-dIfARi jImzib"
             >
               <a
                 aria-label="/notifications/load/:id (opens in a new tab)"
-                class="sc-papXJ ilnFdC"
+                class="sc-pyfCe kHwuaX"
                 href="https://www.georgegillams.co.uk/api/notifications/load/:id"
                 rel="noopener noreferrer"
                 target="_blank"
               >
                 /notifications/load/:id
                 <div
-                  class="sc-jqUVSM icGDYy"
+                  class="sc-jrcTuL QvVN"
                 >
                   <svg
-                    class="sc-ftvSup bygzLL sc-kDDrLX kzKBSF"
+                    class="sc-ftTHYK fjjwty sc-kDvujY fYbYDQ"
                     height="18"
                     viewBox="0 0 24 24"
                     width="18"
@@ -1297,55 +1297,55 @@ exports[`<ApiDocs /> should render correctly 1`] = `
               </a>
             </th>
             <th
-              class="sc-dIouRR fWwdiK"
+              class="sc-dIfARi jImzib"
             >
               <span
-                class="sc-gsnTZi fzWRHm api-docsstyles__Method-sc-4t6xyo-2 lesXHI"
+                class="sc-gswNZR iZwDAZ api-docsstyles__Method-sc-4t6xyo-2 jGEmiL"
               >
                 GET
               </span>
             </th>
             <th
-              class="sc-dIouRR fWwdiK"
+              class="sc-dIfARi jImzib"
             >
               <span
-                class="sc-gsnTZi fzWRHm"
+                class="sc-gswNZR iZwDAZ"
               />
             </th>
             <th
-              class="sc-dIouRR fWwdiK"
+              class="sc-dIfARi jImzib"
             >
               <span
-                class="sc-gsnTZi fzWRHm"
+                class="sc-gswNZR iZwDAZ"
               />
             </th>
             <th
-              class="sc-dIouRR fWwdiK"
+              class="sc-dIfARi jImzib"
             >
               <span
-                class="sc-gsnTZi fzWRHm api-docsstyles__Description-sc-4t6xyo-1 cZtHBf"
+                class="sc-gswNZR iZwDAZ api-docsstyles__Description-sc-4t6xyo-1 dkIedw"
               />
             </th>
           </tr>
           <tr
-            class="sc-idiyUo"
+            class="sc-idXgbr"
           >
             <th
-              class="sc-dIouRR fWwdiK"
+              class="sc-dIfARi jImzib"
             >
               <a
                 aria-label="/notifications/update (opens in a new tab)"
-                class="sc-papXJ ilnFdC"
+                class="sc-pyfCe kHwuaX"
                 href="https://www.georgegillams.co.uk/api/notifications/update"
                 rel="noopener noreferrer"
                 target="_blank"
               >
                 /notifications/update
                 <div
-                  class="sc-jqUVSM icGDYy"
+                  class="sc-jrcTuL QvVN"
                 >
                   <svg
-                    class="sc-ftvSup bygzLL sc-kDDrLX kzKBSF"
+                    class="sc-ftTHYK fjjwty sc-kDvujY fYbYDQ"
                     height="18"
                     viewBox="0 0 24 24"
                     width="18"
@@ -1359,59 +1359,59 @@ exports[`<ApiDocs /> should render correctly 1`] = `
               </a>
             </th>
             <th
-              class="sc-dIouRR fWwdiK"
+              class="sc-dIfARi jImzib"
             >
               <span
-                class="sc-gsnTZi fzWRHm api-docsstyles__Method-sc-4t6xyo-2 lesXHI"
+                class="sc-gswNZR iZwDAZ api-docsstyles__Method-sc-4t6xyo-2 jGEmiL"
               >
                 POST
               </span>
             </th>
             <th
-              class="sc-dIouRR fWwdiK"
+              class="sc-dIfARi jImzib"
             >
               <span
-                class="sc-gsnTZi fzWRHm"
+                class="sc-gswNZR iZwDAZ"
               />
             </th>
             <th
-              class="sc-dIouRR fWwdiK"
+              class="sc-dIfARi jImzib"
             >
               <span
-                class="sc-gsnTZi fzWRHm"
+                class="sc-gswNZR iZwDAZ"
               >
                 Admin only
               </span>
             </th>
             <th
-              class="sc-dIouRR fWwdiK"
+              class="sc-dIfARi jImzib"
             >
               <span
-                class="sc-gsnTZi fzWRHm api-docsstyles__Description-sc-4t6xyo-1 cZtHBf"
+                class="sc-gswNZR iZwDAZ api-docsstyles__Description-sc-4t6xyo-1 dkIedw"
               >
                 Update a given notification
               </span>
             </th>
           </tr>
           <tr
-            class="sc-idiyUo"
+            class="sc-idXgbr"
           >
             <th
-              class="sc-dIouRR fWwdiK"
+              class="sc-dIfARi jImzib"
             >
               <a
                 aria-label="/users/create (opens in a new tab)"
-                class="sc-papXJ ilnFdC"
+                class="sc-pyfCe kHwuaX"
                 href="https://www.georgegillams.co.uk/api/users/create"
                 rel="noopener noreferrer"
                 target="_blank"
               >
                 /users/create
                 <div
-                  class="sc-jqUVSM icGDYy"
+                  class="sc-jrcTuL QvVN"
                 >
                   <svg
-                    class="sc-ftvSup bygzLL sc-kDDrLX kzKBSF"
+                    class="sc-ftTHYK fjjwty sc-kDvujY fYbYDQ"
                     height="18"
                     viewBox="0 0 24 24"
                     width="18"
@@ -1425,59 +1425,59 @@ exports[`<ApiDocs /> should render correctly 1`] = `
               </a>
             </th>
             <th
-              class="sc-dIouRR fWwdiK"
+              class="sc-dIfARi jImzib"
             >
               <span
-                class="sc-gsnTZi fzWRHm api-docsstyles__Method-sc-4t6xyo-2 lesXHI"
+                class="sc-gswNZR iZwDAZ api-docsstyles__Method-sc-4t6xyo-2 jGEmiL"
               >
                 POST
               </span>
             </th>
             <th
-              class="sc-dIouRR fWwdiK"
+              class="sc-dIfARi jImzib"
             >
               <span
-                class="sc-gsnTZi fzWRHm"
+                class="sc-gswNZR iZwDAZ"
               />
             </th>
             <th
-              class="sc-dIouRR fWwdiK"
+              class="sc-dIfARi jImzib"
             >
               <span
-                class="sc-gsnTZi fzWRHm"
+                class="sc-gswNZR iZwDAZ"
               >
                 None - only an admin can create other admin users
               </span>
             </th>
             <th
-              class="sc-dIouRR fWwdiK"
+              class="sc-dIfARi jImzib"
             >
               <span
-                class="sc-gsnTZi fzWRHm api-docsstyles__Description-sc-4t6xyo-1 cZtHBf"
+                class="sc-gswNZR iZwDAZ api-docsstyles__Description-sc-4t6xyo-1 dkIedw"
               >
                 Create a user
               </span>
             </th>
           </tr>
           <tr
-            class="sc-idiyUo"
+            class="sc-idXgbr"
           >
             <th
-              class="sc-dIouRR fWwdiK"
+              class="sc-dIfARi jImzib"
             >
               <a
                 aria-label="/users/delete (opens in a new tab)"
-                class="sc-papXJ ilnFdC"
+                class="sc-pyfCe kHwuaX"
                 href="https://www.georgegillams.co.uk/api/users/delete"
                 rel="noopener noreferrer"
                 target="_blank"
               >
                 /users/delete
                 <div
-                  class="sc-jqUVSM icGDYy"
+                  class="sc-jrcTuL QvVN"
                 >
                   <svg
-                    class="sc-ftvSup bygzLL sc-kDDrLX kzKBSF"
+                    class="sc-ftTHYK fjjwty sc-kDvujY fYbYDQ"
                     height="18"
                     viewBox="0 0 24 24"
                     width="18"
@@ -1491,59 +1491,59 @@ exports[`<ApiDocs /> should render correctly 1`] = `
               </a>
             </th>
             <th
-              class="sc-dIouRR fWwdiK"
+              class="sc-dIfARi jImzib"
             >
               <span
-                class="sc-gsnTZi fzWRHm api-docsstyles__Method-sc-4t6xyo-2 lesXHI"
+                class="sc-gswNZR iZwDAZ api-docsstyles__Method-sc-4t6xyo-2 jGEmiL"
               >
                 POST
               </span>
             </th>
             <th
-              class="sc-dIouRR fWwdiK"
+              class="sc-dIfARi jImzib"
             >
               <span
-                class="sc-gsnTZi fzWRHm"
+                class="sc-gswNZR iZwDAZ"
               />
             </th>
             <th
-              class="sc-dIouRR fWwdiK"
+              class="sc-dIfARi jImzib"
             >
               <span
-                class="sc-gsnTZi fzWRHm"
+                class="sc-gswNZR iZwDAZ"
               >
                 The user being deleted, or an admin only
               </span>
             </th>
             <th
-              class="sc-dIouRR fWwdiK"
+              class="sc-dIfARi jImzib"
             >
               <span
-                class="sc-gsnTZi fzWRHm api-docsstyles__Description-sc-4t6xyo-1 cZtHBf"
+                class="sc-gswNZR iZwDAZ api-docsstyles__Description-sc-4t6xyo-1 dkIedw"
               >
                 Delete a user
               </span>
             </th>
           </tr>
           <tr
-            class="sc-idiyUo"
+            class="sc-idXgbr"
           >
             <th
-              class="sc-dIouRR fWwdiK"
+              class="sc-dIfARi jImzib"
             >
               <a
                 aria-label="/users/load (opens in a new tab)"
-                class="sc-papXJ ilnFdC"
+                class="sc-pyfCe kHwuaX"
                 href="https://www.georgegillams.co.uk/api/users/load"
                 rel="noopener noreferrer"
                 target="_blank"
               >
                 /users/load
                 <div
-                  class="sc-jqUVSM icGDYy"
+                  class="sc-jrcTuL QvVN"
                 >
                   <svg
-                    class="sc-ftvSup bygzLL sc-kDDrLX kzKBSF"
+                    class="sc-ftTHYK fjjwty sc-kDvujY fYbYDQ"
                     height="18"
                     viewBox="0 0 24 24"
                     width="18"
@@ -1557,59 +1557,59 @@ exports[`<ApiDocs /> should render correctly 1`] = `
               </a>
             </th>
             <th
-              class="sc-dIouRR fWwdiK"
+              class="sc-dIfARi jImzib"
             >
               <span
-                class="sc-gsnTZi fzWRHm api-docsstyles__Method-sc-4t6xyo-2 lesXHI"
+                class="sc-gswNZR iZwDAZ api-docsstyles__Method-sc-4t6xyo-2 jGEmiL"
               >
                 GET
               </span>
             </th>
             <th
-              class="sc-dIouRR fWwdiK"
+              class="sc-dIfARi jImzib"
             >
               <span
-                class="sc-gsnTZi fzWRHm"
+                class="sc-gswNZR iZwDAZ"
               />
             </th>
             <th
-              class="sc-dIouRR fWwdiK"
+              class="sc-dIfARi jImzib"
             >
               <span
-                class="sc-gsnTZi fzWRHm"
+                class="sc-gswNZR iZwDAZ"
               >
                 The user being loaded, or an admin only
               </span>
             </th>
             <th
-              class="sc-dIouRR fWwdiK"
+              class="sc-dIfARi jImzib"
             >
               <span
-                class="sc-gsnTZi fzWRHm api-docsstyles__Description-sc-4t6xyo-1 cZtHBf"
+                class="sc-gswNZR iZwDAZ api-docsstyles__Description-sc-4t6xyo-1 dkIedw"
               >
                 Load a given user
               </span>
             </th>
           </tr>
           <tr
-            class="sc-idiyUo"
+            class="sc-idXgbr"
           >
             <th
-              class="sc-dIouRR fWwdiK"
+              class="sc-dIfARi jImzib"
             >
               <a
                 aria-label="/users/load-all (opens in a new tab)"
-                class="sc-papXJ ilnFdC"
+                class="sc-pyfCe kHwuaX"
                 href="https://www.georgegillams.co.uk/api/users/load-all"
                 rel="noopener noreferrer"
                 target="_blank"
               >
                 /users/load-all
                 <div
-                  class="sc-jqUVSM icGDYy"
+                  class="sc-jrcTuL QvVN"
                 >
                   <svg
-                    class="sc-ftvSup bygzLL sc-kDDrLX kzKBSF"
+                    class="sc-ftTHYK fjjwty sc-kDvujY fYbYDQ"
                     height="18"
                     viewBox="0 0 24 24"
                     width="18"
@@ -1623,59 +1623,59 @@ exports[`<ApiDocs /> should render correctly 1`] = `
               </a>
             </th>
             <th
-              class="sc-dIouRR fWwdiK"
+              class="sc-dIfARi jImzib"
             >
               <span
-                class="sc-gsnTZi fzWRHm api-docsstyles__Method-sc-4t6xyo-2 lesXHI"
+                class="sc-gswNZR iZwDAZ api-docsstyles__Method-sc-4t6xyo-2 jGEmiL"
               >
                 GET
               </span>
             </th>
             <th
-              class="sc-dIouRR fWwdiK"
+              class="sc-dIfARi jImzib"
             >
               <span
-                class="sc-gsnTZi fzWRHm"
+                class="sc-gswNZR iZwDAZ"
               />
             </th>
             <th
-              class="sc-dIouRR fWwdiK"
+              class="sc-dIfARi jImzib"
             >
               <span
-                class="sc-gsnTZi fzWRHm"
+                class="sc-gswNZR iZwDAZ"
               >
                 Admin only
               </span>
             </th>
             <th
-              class="sc-dIouRR fWwdiK"
+              class="sc-dIfARi jImzib"
             >
               <span
-                class="sc-gsnTZi fzWRHm api-docsstyles__Description-sc-4t6xyo-1 cZtHBf"
+                class="sc-gswNZR iZwDAZ api-docsstyles__Description-sc-4t6xyo-1 dkIedw"
               >
                 Load all users
               </span>
             </th>
           </tr>
           <tr
-            class="sc-idiyUo"
+            class="sc-idXgbr"
           >
             <th
-              class="sc-dIouRR fWwdiK"
+              class="sc-dIfARi jImzib"
             >
               <a
                 aria-label="/users/sign-up (opens in a new tab)"
-                class="sc-papXJ ilnFdC"
+                class="sc-pyfCe kHwuaX"
                 href="https://www.georgegillams.co.uk/api/users/sign-up"
                 rel="noopener noreferrer"
                 target="_blank"
               >
                 /users/sign-up
                 <div
-                  class="sc-jqUVSM icGDYy"
+                  class="sc-jrcTuL QvVN"
                 >
                   <svg
-                    class="sc-ftvSup bygzLL sc-kDDrLX kzKBSF"
+                    class="sc-ftTHYK fjjwty sc-kDvujY fYbYDQ"
                     height="18"
                     viewBox="0 0 24 24"
                     width="18"
@@ -1689,59 +1689,59 @@ exports[`<ApiDocs /> should render correctly 1`] = `
               </a>
             </th>
             <th
-              class="sc-dIouRR fWwdiK"
+              class="sc-dIfARi jImzib"
             >
               <span
-                class="sc-gsnTZi fzWRHm api-docsstyles__Method-sc-4t6xyo-2 lesXHI"
+                class="sc-gswNZR iZwDAZ api-docsstyles__Method-sc-4t6xyo-2 jGEmiL"
               >
                 POST
               </span>
             </th>
             <th
-              class="sc-dIouRR fWwdiK"
+              class="sc-dIfARi jImzib"
             >
               <span
-                class="sc-gsnTZi fzWRHm"
+                class="sc-gswNZR iZwDAZ"
               />
             </th>
             <th
-              class="sc-dIouRR fWwdiK"
+              class="sc-dIfARi jImzib"
             >
               <span
-                class="sc-gsnTZi fzWRHm"
+                class="sc-gswNZR iZwDAZ"
               >
                 None
               </span>
             </th>
             <th
-              class="sc-dIouRR fWwdiK"
+              class="sc-dIfARi jImzib"
             >
               <span
-                class="sc-gsnTZi fzWRHm api-docsstyles__Description-sc-4t6xyo-1 cZtHBf"
+                class="sc-gswNZR iZwDAZ api-docsstyles__Description-sc-4t6xyo-1 dkIedw"
               >
                 Create a user, and sign in as that user at the same time
               </span>
             </th>
           </tr>
           <tr
-            class="sc-idiyUo"
+            class="sc-idXgbr"
           >
             <th
-              class="sc-dIouRR fWwdiK"
+              class="sc-dIfARi jImzib"
             >
               <a
                 aria-label="/users/update (opens in a new tab)"
-                class="sc-papXJ ilnFdC"
+                class="sc-pyfCe kHwuaX"
                 href="https://www.georgegillams.co.uk/api/users/update"
                 rel="noopener noreferrer"
                 target="_blank"
               >
                 /users/update
                 <div
-                  class="sc-jqUVSM icGDYy"
+                  class="sc-jrcTuL QvVN"
                 >
                   <svg
-                    class="sc-ftvSup bygzLL sc-kDDrLX kzKBSF"
+                    class="sc-ftTHYK fjjwty sc-kDvujY fYbYDQ"
                     height="18"
                     viewBox="0 0 24 24"
                     width="18"
@@ -1755,59 +1755,59 @@ exports[`<ApiDocs /> should render correctly 1`] = `
               </a>
             </th>
             <th
-              class="sc-dIouRR fWwdiK"
+              class="sc-dIfARi jImzib"
             >
               <span
-                class="sc-gsnTZi fzWRHm api-docsstyles__Method-sc-4t6xyo-2 lesXHI"
+                class="sc-gswNZR iZwDAZ api-docsstyles__Method-sc-4t6xyo-2 jGEmiL"
               >
                 POST
               </span>
             </th>
             <th
-              class="sc-dIouRR fWwdiK"
+              class="sc-dIfARi jImzib"
             >
               <span
-                class="sc-gsnTZi fzWRHm"
+                class="sc-gswNZR iZwDAZ"
               />
             </th>
             <th
-              class="sc-dIouRR fWwdiK"
+              class="sc-dIfARi jImzib"
             >
               <span
-                class="sc-gsnTZi fzWRHm"
+                class="sc-gswNZR iZwDAZ"
               >
                 Any user - only an admin can promote other users to admin
               </span>
             </th>
             <th
-              class="sc-dIouRR fWwdiK"
+              class="sc-dIfARi jImzib"
             >
               <span
-                class="sc-gsnTZi fzWRHm api-docsstyles__Description-sc-4t6xyo-1 cZtHBf"
+                class="sc-gswNZR iZwDAZ api-docsstyles__Description-sc-4t6xyo-1 dkIedw"
               >
                 Update a given user
               </span>
             </th>
           </tr>
           <tr
-            class="sc-idiyUo"
+            class="sc-idXgbr"
           >
             <th
-              class="sc-dIouRR fWwdiK"
+              class="sc-dIfARi jImzib"
             >
               <a
                 aria-label="/blogs/create (opens in a new tab)"
-                class="sc-papXJ ilnFdC"
+                class="sc-pyfCe kHwuaX"
                 href="https://www.georgegillams.co.uk/api/blogs/create"
                 rel="noopener noreferrer"
                 target="_blank"
               >
                 /blogs/create
                 <div
-                  class="sc-jqUVSM icGDYy"
+                  class="sc-jrcTuL QvVN"
                 >
                   <svg
-                    class="sc-ftvSup bygzLL sc-kDDrLX kzKBSF"
+                    class="sc-ftTHYK fjjwty sc-kDvujY fYbYDQ"
                     height="18"
                     viewBox="0 0 24 24"
                     width="18"
@@ -1821,59 +1821,59 @@ exports[`<ApiDocs /> should render correctly 1`] = `
               </a>
             </th>
             <th
-              class="sc-dIouRR fWwdiK"
+              class="sc-dIfARi jImzib"
             >
               <span
-                class="sc-gsnTZi fzWRHm api-docsstyles__Method-sc-4t6xyo-2 lesXHI"
+                class="sc-gswNZR iZwDAZ api-docsstyles__Method-sc-4t6xyo-2 jGEmiL"
               >
                 POST
               </span>
             </th>
             <th
-              class="sc-dIouRR fWwdiK"
+              class="sc-dIfARi jImzib"
             >
               <span
-                class="sc-gsnTZi fzWRHm"
+                class="sc-gswNZR iZwDAZ"
               />
             </th>
             <th
-              class="sc-dIouRR fWwdiK"
+              class="sc-dIfARi jImzib"
             >
               <span
-                class="sc-gsnTZi fzWRHm"
+                class="sc-gswNZR iZwDAZ"
               >
                 Admin only
               </span>
             </th>
             <th
-              class="sc-dIouRR fWwdiK"
+              class="sc-dIfARi jImzib"
             >
               <span
-                class="sc-gsnTZi fzWRHm api-docsstyles__Description-sc-4t6xyo-1 cZtHBf"
+                class="sc-gswNZR iZwDAZ api-docsstyles__Description-sc-4t6xyo-1 dkIedw"
               >
                 Create a new blog
               </span>
             </th>
           </tr>
           <tr
-            class="sc-idiyUo"
+            class="sc-idXgbr"
           >
             <th
-              class="sc-dIouRR fWwdiK"
+              class="sc-dIfARi jImzib"
             >
               <a
                 aria-label="/blogs/delete (opens in a new tab)"
-                class="sc-papXJ ilnFdC"
+                class="sc-pyfCe kHwuaX"
                 href="https://www.georgegillams.co.uk/api/blogs/delete"
                 rel="noopener noreferrer"
                 target="_blank"
               >
                 /blogs/delete
                 <div
-                  class="sc-jqUVSM icGDYy"
+                  class="sc-jrcTuL QvVN"
                 >
                   <svg
-                    class="sc-ftvSup bygzLL sc-kDDrLX kzKBSF"
+                    class="sc-ftTHYK fjjwty sc-kDvujY fYbYDQ"
                     height="18"
                     viewBox="0 0 24 24"
                     width="18"
@@ -1887,59 +1887,59 @@ exports[`<ApiDocs /> should render correctly 1`] = `
               </a>
             </th>
             <th
-              class="sc-dIouRR fWwdiK"
+              class="sc-dIfARi jImzib"
             >
               <span
-                class="sc-gsnTZi fzWRHm api-docsstyles__Method-sc-4t6xyo-2 lesXHI"
+                class="sc-gswNZR iZwDAZ api-docsstyles__Method-sc-4t6xyo-2 jGEmiL"
               >
                 POST
               </span>
             </th>
             <th
-              class="sc-dIouRR fWwdiK"
+              class="sc-dIfARi jImzib"
             >
               <span
-                class="sc-gsnTZi fzWRHm"
+                class="sc-gswNZR iZwDAZ"
               />
             </th>
             <th
-              class="sc-dIouRR fWwdiK"
+              class="sc-dIfARi jImzib"
             >
               <span
-                class="sc-gsnTZi fzWRHm"
+                class="sc-gswNZR iZwDAZ"
               >
                 Admin only
               </span>
             </th>
             <th
-              class="sc-dIouRR fWwdiK"
+              class="sc-dIfARi jImzib"
             >
               <span
-                class="sc-gsnTZi fzWRHm api-docsstyles__Description-sc-4t6xyo-1 cZtHBf"
+                class="sc-gswNZR iZwDAZ api-docsstyles__Description-sc-4t6xyo-1 dkIedw"
               >
                 Remove a blog
               </span>
             </th>
           </tr>
           <tr
-            class="sc-idiyUo"
+            class="sc-idXgbr"
           >
             <th
-              class="sc-dIouRR fWwdiK"
+              class="sc-dIfARi jImzib"
             >
               <a
                 aria-label="/blogs/load-all (opens in a new tab)"
-                class="sc-papXJ ilnFdC"
+                class="sc-pyfCe kHwuaX"
                 href="https://www.georgegillams.co.uk/api/blogs/load-all"
                 rel="noopener noreferrer"
                 target="_blank"
               >
                 /blogs/load-all
                 <div
-                  class="sc-jqUVSM icGDYy"
+                  class="sc-jrcTuL QvVN"
                 >
                   <svg
-                    class="sc-ftvSup bygzLL sc-kDDrLX kzKBSF"
+                    class="sc-ftTHYK fjjwty sc-kDvujY fYbYDQ"
                     height="18"
                     viewBox="0 0 24 24"
                     width="18"
@@ -1953,59 +1953,59 @@ exports[`<ApiDocs /> should render correctly 1`] = `
               </a>
             </th>
             <th
-              class="sc-dIouRR fWwdiK"
+              class="sc-dIfARi jImzib"
             >
               <span
-                class="sc-gsnTZi fzWRHm api-docsstyles__Method-sc-4t6xyo-2 lesXHI"
+                class="sc-gswNZR iZwDAZ api-docsstyles__Method-sc-4t6xyo-2 jGEmiL"
               >
                 GET
               </span>
             </th>
             <th
-              class="sc-dIouRR fWwdiK"
+              class="sc-dIfARi jImzib"
             >
               <span
-                class="sc-gsnTZi fzWRHm"
+                class="sc-gswNZR iZwDAZ"
               />
             </th>
             <th
-              class="sc-dIouRR fWwdiK"
+              class="sc-dIfARi jImzib"
             >
               <span
-                class="sc-gsnTZi fzWRHm"
+                class="sc-gswNZR iZwDAZ"
               >
                 None
               </span>
             </th>
             <th
-              class="sc-dIouRR fWwdiK"
+              class="sc-dIfARi jImzib"
             >
               <span
-                class="sc-gsnTZi fzWRHm api-docsstyles__Description-sc-4t6xyo-1 cZtHBf"
+                class="sc-gswNZR iZwDAZ api-docsstyles__Description-sc-4t6xyo-1 dkIedw"
               >
                 Load all blogs. If not admin, only non-deleted, published blogs will be loaded
               </span>
             </th>
           </tr>
           <tr
-            class="sc-idiyUo"
+            class="sc-idXgbr"
           >
             <th
-              class="sc-dIouRR fWwdiK"
+              class="sc-dIfARi jImzib"
             >
               <a
                 aria-label="/blogs/load/:id (opens in a new tab)"
-                class="sc-papXJ ilnFdC"
+                class="sc-pyfCe kHwuaX"
                 href="https://www.georgegillams.co.uk/api/blogs/load/:id"
                 rel="noopener noreferrer"
                 target="_blank"
               >
                 /blogs/load/:id
                 <div
-                  class="sc-jqUVSM icGDYy"
+                  class="sc-jrcTuL QvVN"
                 >
                   <svg
-                    class="sc-ftvSup bygzLL sc-kDDrLX kzKBSF"
+                    class="sc-ftTHYK fjjwty sc-kDvujY fYbYDQ"
                     height="18"
                     viewBox="0 0 24 24"
                     width="18"
@@ -2019,61 +2019,61 @@ exports[`<ApiDocs /> should render correctly 1`] = `
               </a>
             </th>
             <th
-              class="sc-dIouRR fWwdiK"
+              class="sc-dIfARi jImzib"
             >
               <span
-                class="sc-gsnTZi fzWRHm api-docsstyles__Method-sc-4t6xyo-2 lesXHI"
+                class="sc-gswNZR iZwDAZ api-docsstyles__Method-sc-4t6xyo-2 jGEmiL"
               >
                 GET
               </span>
             </th>
             <th
-              class="sc-dIouRR fWwdiK"
+              class="sc-dIfARi jImzib"
             >
               <span
-                class="sc-gsnTZi fzWRHm"
+                class="sc-gswNZR iZwDAZ"
               >
                 id: the blog ID to load
               </span>
             </th>
             <th
-              class="sc-dIouRR fWwdiK"
+              class="sc-dIfARi jImzib"
             >
               <span
-                class="sc-gsnTZi fzWRHm"
+                class="sc-gswNZR iZwDAZ"
               >
                 None
               </span>
             </th>
             <th
-              class="sc-dIouRR fWwdiK"
+              class="sc-dIfARi jImzib"
             >
               <span
-                class="sc-gsnTZi fzWRHm api-docsstyles__Description-sc-4t6xyo-1 cZtHBf"
+                class="sc-gswNZR iZwDAZ api-docsstyles__Description-sc-4t6xyo-1 dkIedw"
               >
                 Load a single blog. If not admin, will fail if deleted or not published
               </span>
             </th>
           </tr>
           <tr
-            class="sc-idiyUo"
+            class="sc-idXgbr"
           >
             <th
-              class="sc-dIouRR fWwdiK"
+              class="sc-dIfARi jImzib"
             >
               <a
                 aria-label="/blogs/update (opens in a new tab)"
-                class="sc-papXJ ilnFdC"
+                class="sc-pyfCe kHwuaX"
                 href="https://www.georgegillams.co.uk/api/blogs/update"
                 rel="noopener noreferrer"
                 target="_blank"
               >
                 /blogs/update
                 <div
-                  class="sc-jqUVSM icGDYy"
+                  class="sc-jrcTuL QvVN"
                 >
                   <svg
-                    class="sc-ftvSup bygzLL sc-kDDrLX kzKBSF"
+                    class="sc-ftTHYK fjjwty sc-kDvujY fYbYDQ"
                     height="18"
                     viewBox="0 0 24 24"
                     width="18"
@@ -2087,59 +2087,59 @@ exports[`<ApiDocs /> should render correctly 1`] = `
               </a>
             </th>
             <th
-              class="sc-dIouRR fWwdiK"
+              class="sc-dIfARi jImzib"
             >
               <span
-                class="sc-gsnTZi fzWRHm api-docsstyles__Method-sc-4t6xyo-2 lesXHI"
+                class="sc-gswNZR iZwDAZ api-docsstyles__Method-sc-4t6xyo-2 jGEmiL"
               >
                 POST
               </span>
             </th>
             <th
-              class="sc-dIouRR fWwdiK"
+              class="sc-dIfARi jImzib"
             >
               <span
-                class="sc-gsnTZi fzWRHm"
+                class="sc-gswNZR iZwDAZ"
               />
             </th>
             <th
-              class="sc-dIouRR fWwdiK"
+              class="sc-dIfARi jImzib"
             >
               <span
-                class="sc-gsnTZi fzWRHm"
+                class="sc-gswNZR iZwDAZ"
               >
                 Admin only
               </span>
             </th>
             <th
-              class="sc-dIouRR fWwdiK"
+              class="sc-dIfARi jImzib"
             >
               <span
-                class="sc-gsnTZi fzWRHm api-docsstyles__Description-sc-4t6xyo-1 cZtHBf"
+                class="sc-gswNZR iZwDAZ api-docsstyles__Description-sc-4t6xyo-1 dkIedw"
               >
                 Update a blog
               </span>
             </th>
           </tr>
           <tr
-            class="sc-idiyUo"
+            class="sc-idXgbr"
           >
             <th
-              class="sc-dIouRR fWwdiK"
+              class="sc-dIfARi jImzib"
             >
               <a
                 aria-label="/make-payment/load (opens in a new tab)"
-                class="sc-papXJ ilnFdC"
+                class="sc-pyfCe kHwuaX"
                 href="https://www.georgegillams.co.uk/api/make-payment/load"
                 rel="noopener noreferrer"
                 target="_blank"
               >
                 /make-payment/load
                 <div
-                  class="sc-jqUVSM icGDYy"
+                  class="sc-jrcTuL QvVN"
                 >
                   <svg
-                    class="sc-ftvSup bygzLL sc-kDDrLX kzKBSF"
+                    class="sc-ftTHYK fjjwty sc-kDvujY fYbYDQ"
                     height="18"
                     viewBox="0 0 24 24"
                     width="18"
@@ -2153,59 +2153,59 @@ exports[`<ApiDocs /> should render correctly 1`] = `
               </a>
             </th>
             <th
-              class="sc-dIouRR fWwdiK"
+              class="sc-dIfARi jImzib"
             >
               <span
-                class="sc-gsnTZi fzWRHm api-docsstyles__Method-sc-4t6xyo-2 lesXHI"
+                class="sc-gswNZR iZwDAZ api-docsstyles__Method-sc-4t6xyo-2 jGEmiL"
               >
                 POST
               </span>
             </th>
             <th
-              class="sc-dIouRR fWwdiK"
+              class="sc-dIfARi jImzib"
             >
               <span
-                class="sc-gsnTZi fzWRHm"
+                class="sc-gswNZR iZwDAZ"
               />
             </th>
             <th
-              class="sc-dIouRR fWwdiK"
+              class="sc-dIfARi jImzib"
             >
               <span
-                class="sc-gsnTZi fzWRHm"
+                class="sc-gswNZR iZwDAZ"
               >
                 TODO
               </span>
             </th>
             <th
-              class="sc-dIouRR fWwdiK"
+              class="sc-dIfARi jImzib"
             >
               <span
-                class="sc-gsnTZi fzWRHm api-docsstyles__Description-sc-4t6xyo-1 cZtHBf"
+                class="sc-gswNZR iZwDAZ api-docsstyles__Description-sc-4t6xyo-1 dkIedw"
               >
                 TODO
               </span>
             </th>
           </tr>
           <tr
-            class="sc-idiyUo"
+            class="sc-idXgbr"
           >
             <th
-              class="sc-dIouRR fWwdiK"
+              class="sc-dIfARi jImzib"
             >
               <a
                 aria-label="/make-payment/create-intent (opens in a new tab)"
-                class="sc-papXJ ilnFdC"
+                class="sc-pyfCe kHwuaX"
                 href="https://www.georgegillams.co.uk/api/make-payment/create-intent"
                 rel="noopener noreferrer"
                 target="_blank"
               >
                 /make-payment/create-intent
                 <div
-                  class="sc-jqUVSM icGDYy"
+                  class="sc-jrcTuL QvVN"
                 >
                   <svg
-                    class="sc-ftvSup bygzLL sc-kDDrLX kzKBSF"
+                    class="sc-ftTHYK fjjwty sc-kDvujY fYbYDQ"
                     height="18"
                     viewBox="0 0 24 24"
                     width="18"
@@ -2219,59 +2219,59 @@ exports[`<ApiDocs /> should render correctly 1`] = `
               </a>
             </th>
             <th
-              class="sc-dIouRR fWwdiK"
+              class="sc-dIfARi jImzib"
             >
               <span
-                class="sc-gsnTZi fzWRHm api-docsstyles__Method-sc-4t6xyo-2 lesXHI"
+                class="sc-gswNZR iZwDAZ api-docsstyles__Method-sc-4t6xyo-2 jGEmiL"
               >
                 POST
               </span>
             </th>
             <th
-              class="sc-dIouRR fWwdiK"
+              class="sc-dIfARi jImzib"
             >
               <span
-                class="sc-gsnTZi fzWRHm"
+                class="sc-gswNZR iZwDAZ"
               />
             </th>
             <th
-              class="sc-dIouRR fWwdiK"
+              class="sc-dIfARi jImzib"
             >
               <span
-                class="sc-gsnTZi fzWRHm"
+                class="sc-gswNZR iZwDAZ"
               >
                 TODO
               </span>
             </th>
             <th
-              class="sc-dIouRR fWwdiK"
+              class="sc-dIfARi jImzib"
             >
               <span
-                class="sc-gsnTZi fzWRHm api-docsstyles__Description-sc-4t6xyo-1 cZtHBf"
+                class="sc-gswNZR iZwDAZ api-docsstyles__Description-sc-4t6xyo-1 dkIedw"
               >
                 TODO
               </span>
             </th>
           </tr>
           <tr
-            class="sc-idiyUo"
+            class="sc-idXgbr"
           >
             <th
-              class="sc-dIouRR fWwdiK"
+              class="sc-dIfARi jImzib"
             >
               <a
                 aria-label="/make-payment/resend-receipt (opens in a new tab)"
-                class="sc-papXJ ilnFdC"
+                class="sc-pyfCe kHwuaX"
                 href="https://www.georgegillams.co.uk/api/make-payment/resend-receipt"
                 rel="noopener noreferrer"
                 target="_blank"
               >
                 /make-payment/resend-receipt
                 <div
-                  class="sc-jqUVSM icGDYy"
+                  class="sc-jrcTuL QvVN"
                 >
                   <svg
-                    class="sc-ftvSup bygzLL sc-kDDrLX kzKBSF"
+                    class="sc-ftTHYK fjjwty sc-kDvujY fYbYDQ"
                     height="18"
                     viewBox="0 0 24 24"
                     width="18"
@@ -2285,59 +2285,59 @@ exports[`<ApiDocs /> should render correctly 1`] = `
               </a>
             </th>
             <th
-              class="sc-dIouRR fWwdiK"
+              class="sc-dIfARi jImzib"
             >
               <span
-                class="sc-gsnTZi fzWRHm api-docsstyles__Method-sc-4t6xyo-2 lesXHI"
+                class="sc-gswNZR iZwDAZ api-docsstyles__Method-sc-4t6xyo-2 jGEmiL"
               >
                 POST
               </span>
             </th>
             <th
-              class="sc-dIouRR fWwdiK"
+              class="sc-dIfARi jImzib"
             >
               <span
-                class="sc-gsnTZi fzWRHm"
+                class="sc-gswNZR iZwDAZ"
               />
             </th>
             <th
-              class="sc-dIouRR fWwdiK"
+              class="sc-dIfARi jImzib"
             >
               <span
-                class="sc-gsnTZi fzWRHm"
+                class="sc-gswNZR iZwDAZ"
               >
                 Admin only
               </span>
             </th>
             <th
-              class="sc-dIouRR fWwdiK"
+              class="sc-dIfARi jImzib"
             >
               <span
-                class="sc-gsnTZi fzWRHm api-docsstyles__Description-sc-4t6xyo-1 cZtHBf"
+                class="sc-gswNZR iZwDAZ api-docsstyles__Description-sc-4t6xyo-1 dkIedw"
               >
                 TODO
               </span>
             </th>
           </tr>
           <tr
-            class="sc-idiyUo"
+            class="sc-idXgbr"
           >
             <th
-              class="sc-dIouRR fWwdiK"
+              class="sc-dIfARi jImzib"
             >
               <a
                 aria-label="/payments/create (opens in a new tab)"
-                class="sc-papXJ ilnFdC"
+                class="sc-pyfCe kHwuaX"
                 href="https://www.georgegillams.co.uk/api/payments/create"
                 rel="noopener noreferrer"
                 target="_blank"
               >
                 /payments/create
                 <div
-                  class="sc-jqUVSM icGDYy"
+                  class="sc-jrcTuL QvVN"
                 >
                   <svg
-                    class="sc-ftvSup bygzLL sc-kDDrLX kzKBSF"
+                    class="sc-ftTHYK fjjwty sc-kDvujY fYbYDQ"
                     height="18"
                     viewBox="0 0 24 24"
                     width="18"
@@ -2351,59 +2351,59 @@ exports[`<ApiDocs /> should render correctly 1`] = `
               </a>
             </th>
             <th
-              class="sc-dIouRR fWwdiK"
+              class="sc-dIfARi jImzib"
             >
               <span
-                class="sc-gsnTZi fzWRHm api-docsstyles__Method-sc-4t6xyo-2 lesXHI"
+                class="sc-gswNZR iZwDAZ api-docsstyles__Method-sc-4t6xyo-2 jGEmiL"
               >
                 POST
               </span>
             </th>
             <th
-              class="sc-dIouRR fWwdiK"
+              class="sc-dIfARi jImzib"
             >
               <span
-                class="sc-gsnTZi fzWRHm"
+                class="sc-gswNZR iZwDAZ"
               />
             </th>
             <th
-              class="sc-dIouRR fWwdiK"
+              class="sc-dIfARi jImzib"
             >
               <span
-                class="sc-gsnTZi fzWRHm"
+                class="sc-gswNZR iZwDAZ"
               >
                 TODO
               </span>
             </th>
             <th
-              class="sc-dIouRR fWwdiK"
+              class="sc-dIfARi jImzib"
             >
               <span
-                class="sc-gsnTZi fzWRHm api-docsstyles__Description-sc-4t6xyo-1 cZtHBf"
+                class="sc-gswNZR iZwDAZ api-docsstyles__Description-sc-4t6xyo-1 dkIedw"
               >
                 TODO
               </span>
             </th>
           </tr>
           <tr
-            class="sc-idiyUo"
+            class="sc-idXgbr"
           >
             <th
-              class="sc-dIouRR fWwdiK"
+              class="sc-dIfARi jImzib"
             >
               <a
                 aria-label="/payments/delete (opens in a new tab)"
-                class="sc-papXJ ilnFdC"
+                class="sc-pyfCe kHwuaX"
                 href="https://www.georgegillams.co.uk/api/payments/delete"
                 rel="noopener noreferrer"
                 target="_blank"
               >
                 /payments/delete
                 <div
-                  class="sc-jqUVSM icGDYy"
+                  class="sc-jrcTuL QvVN"
                 >
                   <svg
-                    class="sc-ftvSup bygzLL sc-kDDrLX kzKBSF"
+                    class="sc-ftTHYK fjjwty sc-kDvujY fYbYDQ"
                     height="18"
                     viewBox="0 0 24 24"
                     width="18"
@@ -2417,59 +2417,59 @@ exports[`<ApiDocs /> should render correctly 1`] = `
               </a>
             </th>
             <th
-              class="sc-dIouRR fWwdiK"
+              class="sc-dIfARi jImzib"
             >
               <span
-                class="sc-gsnTZi fzWRHm api-docsstyles__Method-sc-4t6xyo-2 lesXHI"
+                class="sc-gswNZR iZwDAZ api-docsstyles__Method-sc-4t6xyo-2 jGEmiL"
               >
                 POST
               </span>
             </th>
             <th
-              class="sc-dIouRR fWwdiK"
+              class="sc-dIfARi jImzib"
             >
               <span
-                class="sc-gsnTZi fzWRHm"
+                class="sc-gswNZR iZwDAZ"
               />
             </th>
             <th
-              class="sc-dIouRR fWwdiK"
+              class="sc-dIfARi jImzib"
             >
               <span
-                class="sc-gsnTZi fzWRHm"
+                class="sc-gswNZR iZwDAZ"
               >
                 TODO
               </span>
             </th>
             <th
-              class="sc-dIouRR fWwdiK"
+              class="sc-dIfARi jImzib"
             >
               <span
-                class="sc-gsnTZi fzWRHm api-docsstyles__Description-sc-4t6xyo-1 cZtHBf"
+                class="sc-gswNZR iZwDAZ api-docsstyles__Description-sc-4t6xyo-1 dkIedw"
               >
                 TODO
               </span>
             </th>
           </tr>
           <tr
-            class="sc-idiyUo"
+            class="sc-idXgbr"
           >
             <th
-              class="sc-dIouRR fWwdiK"
+              class="sc-dIfARi jImzib"
             >
               <a
                 aria-label="/payments/load-all (opens in a new tab)"
-                class="sc-papXJ ilnFdC"
+                class="sc-pyfCe kHwuaX"
                 href="https://www.georgegillams.co.uk/api/payments/load-all"
                 rel="noopener noreferrer"
                 target="_blank"
               >
                 /payments/load-all
                 <div
-                  class="sc-jqUVSM icGDYy"
+                  class="sc-jrcTuL QvVN"
                 >
                   <svg
-                    class="sc-ftvSup bygzLL sc-kDDrLX kzKBSF"
+                    class="sc-ftTHYK fjjwty sc-kDvujY fYbYDQ"
                     height="18"
                     viewBox="0 0 24 24"
                     width="18"
@@ -2483,59 +2483,59 @@ exports[`<ApiDocs /> should render correctly 1`] = `
               </a>
             </th>
             <th
-              class="sc-dIouRR fWwdiK"
+              class="sc-dIfARi jImzib"
             >
               <span
-                class="sc-gsnTZi fzWRHm api-docsstyles__Method-sc-4t6xyo-2 lesXHI"
+                class="sc-gswNZR iZwDAZ api-docsstyles__Method-sc-4t6xyo-2 jGEmiL"
               >
                 GET
               </span>
             </th>
             <th
-              class="sc-dIouRR fWwdiK"
+              class="sc-dIfARi jImzib"
             >
               <span
-                class="sc-gsnTZi fzWRHm"
+                class="sc-gswNZR iZwDAZ"
               />
             </th>
             <th
-              class="sc-dIouRR fWwdiK"
+              class="sc-dIfARi jImzib"
             >
               <span
-                class="sc-gsnTZi fzWRHm"
+                class="sc-gswNZR iZwDAZ"
               >
                 TODO
               </span>
             </th>
             <th
-              class="sc-dIouRR fWwdiK"
+              class="sc-dIfARi jImzib"
             >
               <span
-                class="sc-gsnTZi fzWRHm api-docsstyles__Description-sc-4t6xyo-1 cZtHBf"
+                class="sc-gswNZR iZwDAZ api-docsstyles__Description-sc-4t6xyo-1 dkIedw"
               >
                 TODO
               </span>
             </th>
           </tr>
           <tr
-            class="sc-idiyUo"
+            class="sc-idXgbr"
           >
             <th
-              class="sc-dIouRR fWwdiK"
+              class="sc-dIfARi jImzib"
             >
               <a
                 aria-label="/support/create (opens in a new tab)"
-                class="sc-papXJ ilnFdC"
+                class="sc-pyfCe kHwuaX"
                 href="https://www.georgegillams.co.uk/api/support/create"
                 rel="noopener noreferrer"
                 target="_blank"
               >
                 /support/create
                 <div
-                  class="sc-jqUVSM icGDYy"
+                  class="sc-jrcTuL QvVN"
                 >
                   <svg
-                    class="sc-ftvSup bygzLL sc-kDDrLX kzKBSF"
+                    class="sc-ftTHYK fjjwty sc-kDvujY fYbYDQ"
                     height="18"
                     viewBox="0 0 24 24"
                     width="18"
@@ -2549,59 +2549,59 @@ exports[`<ApiDocs /> should render correctly 1`] = `
               </a>
             </th>
             <th
-              class="sc-dIouRR fWwdiK"
+              class="sc-dIfARi jImzib"
             >
               <span
-                class="sc-gsnTZi fzWRHm api-docsstyles__Method-sc-4t6xyo-2 lesXHI"
+                class="sc-gswNZR iZwDAZ api-docsstyles__Method-sc-4t6xyo-2 jGEmiL"
               >
                 POST
               </span>
             </th>
             <th
-              class="sc-dIouRR fWwdiK"
+              class="sc-dIfARi jImzib"
             >
               <span
-                class="sc-gsnTZi fzWRHm"
+                class="sc-gswNZR iZwDAZ"
               />
             </th>
             <th
-              class="sc-dIouRR fWwdiK"
+              class="sc-dIfARi jImzib"
             >
               <span
-                class="sc-gsnTZi fzWRHm"
+                class="sc-gswNZR iZwDAZ"
               >
                 Admin only
               </span>
             </th>
             <th
-              class="sc-dIouRR fWwdiK"
+              class="sc-dIfARi jImzib"
             >
               <span
-                class="sc-gsnTZi fzWRHm api-docsstyles__Description-sc-4t6xyo-1 cZtHBf"
+                class="sc-gswNZR iZwDAZ api-docsstyles__Description-sc-4t6xyo-1 dkIedw"
               >
                 TODO
               </span>
             </th>
           </tr>
           <tr
-            class="sc-idiyUo"
+            class="sc-idXgbr"
           >
             <th
-              class="sc-dIouRR fWwdiK"
+              class="sc-dIfARi jImzib"
             >
               <a
                 aria-label="/support/delete (opens in a new tab)"
-                class="sc-papXJ ilnFdC"
+                class="sc-pyfCe kHwuaX"
                 href="https://www.georgegillams.co.uk/api/support/delete"
                 rel="noopener noreferrer"
                 target="_blank"
               >
                 /support/delete
                 <div
-                  class="sc-jqUVSM icGDYy"
+                  class="sc-jrcTuL QvVN"
                 >
                   <svg
-                    class="sc-ftvSup bygzLL sc-kDDrLX kzKBSF"
+                    class="sc-ftTHYK fjjwty sc-kDvujY fYbYDQ"
                     height="18"
                     viewBox="0 0 24 24"
                     width="18"
@@ -2615,59 +2615,59 @@ exports[`<ApiDocs /> should render correctly 1`] = `
               </a>
             </th>
             <th
-              class="sc-dIouRR fWwdiK"
+              class="sc-dIfARi jImzib"
             >
               <span
-                class="sc-gsnTZi fzWRHm api-docsstyles__Method-sc-4t6xyo-2 lesXHI"
+                class="sc-gswNZR iZwDAZ api-docsstyles__Method-sc-4t6xyo-2 jGEmiL"
               >
                 POST
               </span>
             </th>
             <th
-              class="sc-dIouRR fWwdiK"
+              class="sc-dIfARi jImzib"
             >
               <span
-                class="sc-gsnTZi fzWRHm"
+                class="sc-gswNZR iZwDAZ"
               />
             </th>
             <th
-              class="sc-dIouRR fWwdiK"
+              class="sc-dIfARi jImzib"
             >
               <span
-                class="sc-gsnTZi fzWRHm"
+                class="sc-gswNZR iZwDAZ"
               >
                 Admin only
               </span>
             </th>
             <th
-              class="sc-dIouRR fWwdiK"
+              class="sc-dIfARi jImzib"
             >
               <span
-                class="sc-gsnTZi fzWRHm api-docsstyles__Description-sc-4t6xyo-1 cZtHBf"
+                class="sc-gswNZR iZwDAZ api-docsstyles__Description-sc-4t6xyo-1 dkIedw"
               >
                 TODO
               </span>
             </th>
           </tr>
           <tr
-            class="sc-idiyUo"
+            class="sc-idXgbr"
           >
             <th
-              class="sc-dIouRR fWwdiK"
+              class="sc-dIfARi jImzib"
             >
               <a
                 aria-label="/support/load (opens in a new tab)"
-                class="sc-papXJ ilnFdC"
+                class="sc-pyfCe kHwuaX"
                 href="https://www.georgegillams.co.uk/api/support/load"
                 rel="noopener noreferrer"
                 target="_blank"
               >
                 /support/load
                 <div
-                  class="sc-jqUVSM icGDYy"
+                  class="sc-jrcTuL QvVN"
                 >
                   <svg
-                    class="sc-ftvSup bygzLL sc-kDDrLX kzKBSF"
+                    class="sc-ftTHYK fjjwty sc-kDvujY fYbYDQ"
                     height="18"
                     viewBox="0 0 24 24"
                     width="18"
@@ -2681,59 +2681,59 @@ exports[`<ApiDocs /> should render correctly 1`] = `
               </a>
             </th>
             <th
-              class="sc-dIouRR fWwdiK"
+              class="sc-dIfARi jImzib"
             >
               <span
-                class="sc-gsnTZi fzWRHm api-docsstyles__Method-sc-4t6xyo-2 lesXHI"
+                class="sc-gswNZR iZwDAZ api-docsstyles__Method-sc-4t6xyo-2 jGEmiL"
               >
                 GET
               </span>
             </th>
             <th
-              class="sc-dIouRR fWwdiK"
+              class="sc-dIfARi jImzib"
             >
               <span
-                class="sc-gsnTZi fzWRHm"
+                class="sc-gswNZR iZwDAZ"
               />
             </th>
             <th
-              class="sc-dIouRR fWwdiK"
+              class="sc-dIfARi jImzib"
             >
               <span
-                class="sc-gsnTZi fzWRHm"
+                class="sc-gswNZR iZwDAZ"
               >
                 None
               </span>
             </th>
             <th
-              class="sc-dIouRR fWwdiK"
+              class="sc-dIfARi jImzib"
             >
               <span
-                class="sc-gsnTZi fzWRHm api-docsstyles__Description-sc-4t6xyo-1 cZtHBf"
+                class="sc-gswNZR iZwDAZ api-docsstyles__Description-sc-4t6xyo-1 dkIedw"
               >
                 TODO
               </span>
             </th>
           </tr>
           <tr
-            class="sc-idiyUo"
+            class="sc-idXgbr"
           >
             <th
-              class="sc-dIouRR fWwdiK"
+              class="sc-dIfARi jImzib"
             >
               <a
                 aria-label="/photo-showcase/load-all (opens in a new tab)"
-                class="sc-papXJ ilnFdC"
+                class="sc-pyfCe kHwuaX"
                 href="https://www.georgegillams.co.uk/api/photo-showcase/load-all"
                 rel="noopener noreferrer"
                 target="_blank"
               >
                 /photo-showcase/load-all
                 <div
-                  class="sc-jqUVSM icGDYy"
+                  class="sc-jrcTuL QvVN"
                 >
                   <svg
-                    class="sc-ftvSup bygzLL sc-kDDrLX kzKBSF"
+                    class="sc-ftTHYK fjjwty sc-kDvujY fYbYDQ"
                     height="18"
                     viewBox="0 0 24 24"
                     width="18"
@@ -2747,35 +2747,35 @@ exports[`<ApiDocs /> should render correctly 1`] = `
               </a>
             </th>
             <th
-              class="sc-dIouRR fWwdiK"
+              class="sc-dIfARi jImzib"
             >
               <span
-                class="sc-gsnTZi fzWRHm api-docsstyles__Method-sc-4t6xyo-2 lesXHI"
+                class="sc-gswNZR iZwDAZ api-docsstyles__Method-sc-4t6xyo-2 jGEmiL"
               >
                 GET
               </span>
             </th>
             <th
-              class="sc-dIouRR fWwdiK"
+              class="sc-dIfARi jImzib"
             >
               <span
-                class="sc-gsnTZi fzWRHm"
+                class="sc-gswNZR iZwDAZ"
               />
             </th>
             <th
-              class="sc-dIouRR fWwdiK"
+              class="sc-dIfARi jImzib"
             >
               <span
-                class="sc-gsnTZi fzWRHm"
+                class="sc-gswNZR iZwDAZ"
               >
                 None
               </span>
             </th>
             <th
-              class="sc-dIouRR fWwdiK"
+              class="sc-dIfARi jImzib"
             >
               <span
-                class="sc-gsnTZi fzWRHm api-docsstyles__Description-sc-4t6xyo-1 cZtHBf"
+                class="sc-gswNZR iZwDAZ api-docsstyles__Description-sc-4t6xyo-1 dkIedw"
               >
                 Load images from Flickr showcase album
               </span>

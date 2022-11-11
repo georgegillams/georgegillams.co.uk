@@ -3,29 +3,29 @@
 exports[`<LoggedInOnly /> Should render correctly 1`] = `
 <div>
   <div
-    class="sc-kDDrLX iNAFzC"
+    class="sc-kDvujY jcGnlL"
   >
     <h1
-      class="sc-dkzDqf iBtyHU sc-evZas cCtlkt"
+      class="sc-dkrFOg dYiSba sc-eDWCr wULAC"
       id="logged-out"
     >
       Logged out
     </h1>
     <span
-      class="sc-bczRLJ bhVmoO"
+      class="sc-bcXHqe huaqIH"
     >
       You need to be logged in to 
       view this content
       <br />
       <a
-        class="sc-ftvSup cMmkUr"
+        class="sc-ftTHYK dpmGDG"
         href="/sign-up"
       >
         Register here - it's quick and easy.
       </a>
       <br />
       <a
-        class="sc-ftvSup cMmkUr"
+        class="sc-ftTHYK dpmGDG"
         href="/login"
       >
         Already got an account? Log in here.

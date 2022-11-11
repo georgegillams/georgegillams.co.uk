@@ -1,5 +1,4 @@
 const nextTranspileModules = require('next-transpile-modules');
-const withImages = require('next-images');
 const bundleAnalyzer = require('@next/bundle-analyzer');
 
 const nextConfig = {
@@ -9,6 +8,8 @@ const nextConfig = {
     STARTED_AT: process.env.STARTED_AT,
   },
   env: {
+    // WARNING: ALL THESE VALUES ARE EXPOSED TO THE CLIENT
+    // DO NOT PUT ANY SECRETS HERE
     // NODE_ENV is handled automatically
     BUILT_AT: process.env.BUILT_AT,
     PORT: process.env.PORT,
@@ -16,6 +17,7 @@ const nextConfig = {
     HOST: process.env.HOST,
   },
   compiler: {
+    // Enables the styled-components SWC transform
     styledComponents: true,
   },
 };
@@ -29,9 +31,7 @@ const withBundleAnalyzer = bundleAnalyzer({
 module.exports = withBundleAnalyzer({});
 
 module.exports = withBundleAnalyzer(
-  withImages(
-    withTM({
-      ...nextConfig,
-    })
-  )
+  withTM({
+    ...nextConfig,
+  })
 );

@@ -3,28 +3,28 @@
 exports[`<CreateNotificationForm /> Should render correctly 1`] = `
 <div>
   <div
-    class="sc-crXcEl"
+    class="sc-csuSiG"
   >
     <label
-      class="sc-fEOsli iHSlJz"
+      class="sc-fEXmlR fcnjli"
       for="message_FORM_ID"
     >
       Message
     </label>
     <div
-      class="sc-iBkjds hDuMmX sc-breuTD bOZwsL"
+      class="sc-iBYQkv qDrdv sc-bqWxrE dvHoOv"
       placeholder="Message"
     >
       <input
         aria-disabled="false"
         aria-invalid="false"
-        class="sc-dIouRR cqKYoJ"
+        class="sc-dIfARi egSfao"
         id="message_FORM_ID"
         name="Message"
         value=""
       />
       <svg
-        class="sc-gKXOVf ktoyia sc-hHLeRK kBmlVx"
+        class="sc-gKPRtg eSdzmv sc-hHTYSt hQAsBU"
         height="18"
         viewBox="0 0 24 24"
         width="18"
@@ -36,22 +36,22 @@ exports[`<CreateNotificationForm /> Should render correctly 1`] = `
       </svg>
     </div>
     <label
-      class="sc-fEOsli iHSlJz"
+      class="sc-fEXmlR fcnjli"
       for="type_FORM_ID"
     >
       Type
     </label>
     <div
-      class="sc-hAZoDl iAXvan"
+      class="sc-hBxehG jAEcGs"
       placeholder="Type"
     >
       <div
-        class="sc-iBkjds hDuMmX"
+        class="sc-iBYQkv qDrdv"
       >
         <select
           aria-disabled="false"
           aria-invalid="false"
-          class="sc-dmRaPn gAvRkq"
+          class="sc-dmctIk byTwkR"
           id="type_FORM_ID"
           name="Type"
         >
@@ -72,7 +72,7 @@ exports[`<CreateNotificationForm /> Should render correctly 1`] = `
           </option>
         </select>
         <svg
-          class="sc-gKXOVf ktoyia sc-hHLeRK kBmlVx"
+          class="sc-gKPRtg eSdzmv sc-hHTYSt hQAsBU"
           height="18"
           viewBox="0 0 24 24"
           width="18"
@@ -85,11 +85,11 @@ exports[`<CreateNotificationForm /> Should render correctly 1`] = `
       </div>
     </div>
     <button
-      class="sc-dkzDqf bOfPfm sc-evZas hAEDCd"
+      class="sc-dkrFOg jeTODs sc-eDWCr fujPXy"
       type="button"
     >
       <span
-        class="sc-eCYdqJ ghZAyu"
+        class="sc-eDvSVe iqkXFe"
       >
         Create notification
       </span>

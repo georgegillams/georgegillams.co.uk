@@ -9,6 +9,8 @@ import configureStore from 'client-utils/common/redux/configure-store';
 import AdminUsersIndex from '../index';
 import AdminEmails from '../Container';
 
+jest.mock('next/router', () => ({ withRouter: component => component }));
+
 describe('<AdminEmails />', () => {
   let store;
   const spy = jest.fn();

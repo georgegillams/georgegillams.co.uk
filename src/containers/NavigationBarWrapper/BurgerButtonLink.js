@@ -6,7 +6,7 @@ const BurgerButtonLink = props => {
   const { href, ...rest } = props;
 
   return (
-    <Link href={href}>
+    <Link href={href} legacyBehavior>
       <a {...rest} />
     </Link>
   );
