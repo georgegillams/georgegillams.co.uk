@@ -11,11 +11,11 @@ const TechSpecs = props => {
       <StyledParagraph>
         Built in
         <a href="https://reactjs.org/" rel="noopener noreferrer" target="_blank">
-          <Icon alt="React" width={5} height={5} src={reactLogo} />
+          <Icon alt="React" width={5} height={5} src={reactLogo.src} />
         </a>
         and
         <a href="https://redux.js.org/" rel="noopener noreferrer" target="_blank">
-          <Icon alt="Redux" width={5} height={5} src={reduxLogo} />
+          <Icon alt="Redux" width={5} height={5} src={reduxLogo.src} />
         </a>
         Hosted on
         <a href="https://aws.amazon.com/" rel="noopener noreferrer" target="_blank">
@@ -24,7 +24,7 @@ const TechSpecs = props => {
             width={8.28}
             height={5}
             style={{ marginTop: '.8rem', maxWidth: '2.9rem' }}
-            src={awsLogo}
+            src={awsLogo.src}
           />
         </a>
       </StyledParagraph>

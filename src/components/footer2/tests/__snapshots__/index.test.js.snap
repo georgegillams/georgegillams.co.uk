@@ -37,7 +37,6 @@ exports[`<Footer /> Should render correctly 1`] = `
             alt="React"
             class="tech-specsstyles__Icon-sc-1ysn53a-1 ifSCys"
             height="5"
-            src="IMAGE_MOCK"
             width="5"
           />
         </a>
@@ -51,7 +50,6 @@ exports[`<Footer /> Should render correctly 1`] = `
             alt="Redux"
             class="tech-specsstyles__Icon-sc-1ysn53a-1 ifSCys"
             height="5"
-            src="IMAGE_MOCK"
             width="5"
           />
         </a>
@@ -65,7 +63,6 @@ exports[`<Footer /> Should render correctly 1`] = `
             alt="Amazon Web Services"
             class="tech-specsstyles__Icon-sc-1ysn53a-1 ifSCys"
             height="5"
-            src="IMAGE_MOCK"
             style="margin-top: .8rem; max-width: 2.9rem;"
             width="8.28"
           />
@@ -173,7 +170,6 @@ exports[`<Footer /> Should render correctly with custom className 1`] = `
             alt="React"
             class="tech-specsstyles__Icon-sc-1ysn53a-1 ifSCys"
             height="5"
-            src="IMAGE_MOCK"
             width="5"
           />
         </a>
@@ -187,7 +183,6 @@ exports[`<Footer /> Should render correctly with custom className 1`] = `
             alt="Redux"
             class="tech-specsstyles__Icon-sc-1ysn53a-1 ifSCys"
             height="5"
-            src="IMAGE_MOCK"
             width="5"
           />
         </a>
@@ -201,7 +196,6 @@ exports[`<Footer /> Should render correctly with custom className 1`] = `
             alt="Amazon Web Services"
             class="tech-specsstyles__Icon-sc-1ysn53a-1 ifSCys"
             height="5"
-            src="IMAGE_MOCK"
             style="margin-top: .8rem; max-width: 2.9rem;"
             width="8.28"
           />
