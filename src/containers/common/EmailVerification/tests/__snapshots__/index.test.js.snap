@@ -3,14 +3,14 @@
 exports[`<EmailVerification /> should render correctly - index 1`] = `
 <div>
   <div
-    class="sc-fnykZs cNMYuP page-containerstyles__StyledPageContainer-sc-19l7k4-0"
+    class="sc-fnGiBr fwOxJt page-containerstyles__StyledPageContainer-sc-19l7k4-0"
     width="default"
   >
     <div
-      class="sc-breuTD gWTOEy"
+      class="sc-bqWxrE VcTDu"
     >
       <h1
-        class="sc-bczRLJ hDLBIv sc-jqUVSM cFomsy"
+        class="sc-bcXHqe bHgOFy sc-jrcTuL ewlzmZ"
       >
         Confirming email
       </h1>
@@ -22,14 +22,14 @@ exports[`<EmailVerification /> should render correctly - index 1`] = `
 exports[`<EmailVerification /> should render correctly with initial state 1`] = `
 <div>
   <div
-    class="sc-fnykZs cNMYuP page-containerstyles__StyledPageContainer-sc-19l7k4-0"
+    class="sc-fnGiBr fwOxJt page-containerstyles__StyledPageContainer-sc-19l7k4-0"
     width="default"
   >
     <div
-      class="sc-breuTD gWTOEy"
+      class="sc-bqWxrE VcTDu"
     >
       <h1
-        class="sc-bczRLJ hDLBIv sc-jqUVSM cFomsy"
+        class="sc-bcXHqe bHgOFy sc-jrcTuL ewlzmZ"
       >
         Confirming email
       </h1>
@@ -41,20 +41,20 @@ exports[`<EmailVerification /> should render correctly with initial state 1`] = 
 exports[`<EmailVerification /> should render correctly with user 1`] = `
 <div>
   <div
-    class="sc-fnykZs cNMYuP page-containerstyles__StyledPageContainer-sc-19l7k4-0"
+    class="sc-fnGiBr fwOxJt page-containerstyles__StyledPageContainer-sc-19l7k4-0"
     width="default"
   >
     <div
-      class="sc-breuTD gWTOEy"
+      class="sc-bqWxrE VcTDu"
     >
       <h1
-        class="sc-bczRLJ hDLBIv sc-jqUVSM cFomsy"
+        class="sc-bcXHqe bHgOFy sc-jrcTuL ewlzmZ"
       >
         Email confirmed
       </h1>
     </div>
     <span
-      class="sc-ksZaOG cQKWUS"
+      class="sc-ksBlkl bLCpBX"
     >
       Thank you for confirming your email address
     </span>
@@ -65,23 +65,23 @@ exports[`<EmailVerification /> should render correctly with user 1`] = `
 exports[`<EmailVerification /> should render correctly with verifyError 1`] = `
 <div>
   <div
-    class="sc-fnykZs cNMYuP page-containerstyles__StyledPageContainer-sc-19l7k4-0"
+    class="sc-fnGiBr fwOxJt page-containerstyles__StyledPageContainer-sc-19l7k4-0"
     width="default"
   >
     <div
-      class="sc-breuTD gWTOEy"
+      class="sc-bqWxrE VcTDu"
     >
       <h1
-        class="sc-bczRLJ hDLBIv sc-jqUVSM cFomsy"
+        class="sc-bcXHqe bHgOFy sc-jrcTuL ewlzmZ"
       >
         Confirming email
       </h1>
     </div>
     <span
-      class="sc-ksZaOG cQKWUS"
+      class="sc-ksBlkl bLCpBX"
     >
       <span
-        class="sc-hAZoDl hWlXdd"
+        class="sc-hBxehG cqQowO"
       >
         Something went wrong whilst confirming your email
         <br />
@@ -95,14 +95,14 @@ exports[`<EmailVerification /> should render correctly with verifyError 1`] = `
 exports[`<EmailVerification /> should render correctly with verifying=true 1`] = `
 <div>
   <div
-    class="sc-fnykZs cNMYuP page-containerstyles__StyledPageContainer-sc-19l7k4-0"
+    class="sc-fnGiBr fwOxJt page-containerstyles__StyledPageContainer-sc-19l7k4-0"
     width="default"
   >
     <div
-      class="sc-breuTD gWTOEy"
+      class="sc-bqWxrE VcTDu"
     >
       <h1
-        class="sc-bczRLJ hDLBIv sc-jqUVSM cFomsy"
+        class="sc-bcXHqe bHgOFy sc-jrcTuL ewlzmZ"
       >
         Confirming email
       </h1>

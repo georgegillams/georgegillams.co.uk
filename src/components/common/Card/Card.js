@@ -19,7 +19,7 @@ const Card = props => {
   }
 
   return (
-    <Link passHref href={destination.url} as={destination.as} {...destination.options}>
+    <Link passHref href={destination.url} as={destination.as} {...destination.options} legacyBehavior>
       <GGCard {...rest} />
     </Link>
   );

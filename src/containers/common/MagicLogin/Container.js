@@ -30,10 +30,10 @@ const MagicLogin = props => {
       token = router.query.token;
     }
     if (!loginAttempted && token) {
-      login(token);
       setLoginAttempted(true);
+      login(token);
     }
-  }, [router]);
+  }, [router, loginAttempted, login]);
 
   const { user } = authenticatorState;
 

@@ -3,29 +3,29 @@
 exports[`<UserEditForm /> Should render correctly 1`] = `
 <div>
   <div
-    class="sc-crXcEl"
+    class="sc-csuSiG"
   >
     <label
-      class="sc-fEOsli iHSlJz"
+      class="sc-fEXmlR fcnjli"
       for="uname_FORM_ID"
     >
       Display name
     </label>
     <div
-      class="sc-iBkjds hDuMmX sc-breuTD bOZwsL"
+      class="sc-iBYQkv qDrdv sc-bqWxrE dvHoOv"
       placeholder="Display name"
     >
       <input
         aria-disabled="false"
         aria-invalid="false"
-        class="sc-dIouRR cqKYoJ"
+        class="sc-dIfARi egSfao"
         id="uname_FORM_ID"
         name="Display name"
         spellcheck="false"
         value=""
       />
       <svg
-        class="sc-gKXOVf ktoyia sc-hHLeRK kBmlVx"
+        class="sc-gKPRtg eSdzmv sc-hHTYSt hQAsBU"
         height="18"
         viewBox="0 0 24 24"
         width="18"
@@ -37,27 +37,27 @@ exports[`<UserEditForm /> Should render correctly 1`] = `
       </svg>
     </div>
     <label
-      class="sc-fEOsli iHSlJz"
+      class="sc-fEXmlR fcnjli"
       for="name_FORM_ID"
     >
       Real name
     </label>
     <div
-      class="sc-iBkjds hDuMmX sc-breuTD bOZwsL"
+      class="sc-iBYQkv qDrdv sc-bqWxrE dvHoOv"
       placeholder="Real name"
     >
       <input
         aria-disabled="false"
         aria-invalid="false"
         autofill="name"
-        class="sc-dIouRR cqKYoJ"
+        class="sc-dIfARi egSfao"
         id="name_FORM_ID"
         name="Real name"
         spellcheck="false"
         value=""
       />
       <svg
-        class="sc-gKXOVf ktoyia sc-hHLeRK kBmlVx"
+        class="sc-gKPRtg eSdzmv sc-hHTYSt hQAsBU"
         height="18"
         viewBox="0 0 24 24"
         width="18"
@@ -69,27 +69,27 @@ exports[`<UserEditForm /> Should render correctly 1`] = `
       </svg>
     </div>
     <label
-      class="sc-fEOsli iHSlJz"
+      class="sc-fEXmlR fcnjli"
       for="email_FORM_ID"
     >
       Email
     </label>
     <div
-      class="sc-iBkjds hDuMmX sc-breuTD bOZwsL"
+      class="sc-iBYQkv qDrdv sc-bqWxrE dvHoOv"
       placeholder="Email"
     >
       <input
         aria-disabled="false"
         aria-invalid="false"
         autofill="email"
-        class="sc-dIouRR cqKYoJ"
+        class="sc-dIfARi egSfao"
         id="email_FORM_ID"
         name="Email"
         spellcheck="false"
         value=""
       />
       <svg
-        class="sc-gKXOVf ktoyia sc-hHLeRK kBmlVx"
+        class="sc-gKPRtg eSdzmv sc-hHTYSt hQAsBU"
         height="18"
         viewBox="0 0 24 24"
         width="18"
@@ -101,11 +101,11 @@ exports[`<UserEditForm /> Should render correctly 1`] = `
       </svg>
     </div>
     <button
-      class="sc-dkzDqf bOfPfm sc-evZas hAEDCd"
+      class="sc-dkrFOg jeTODs sc-eDWCr fujPXy"
       type="button"
     >
       <span
-        class="sc-eCYdqJ ghZAyu"
+        class="sc-eDvSVe iqkXFe"
       >
         Update
       </span>
@@ -117,29 +117,29 @@ exports[`<UserEditForm /> Should render correctly 1`] = `
 exports[`<UserEditForm /> Should render correctly with admin controls shown 1`] = `
 <div>
   <div
-    class="sc-crXcEl"
+    class="sc-csuSiG"
   >
     <label
-      class="sc-fEOsli iHSlJz"
+      class="sc-fEXmlR fcnjli"
       for="uname_FORM_ID"
     >
       Display name
     </label>
     <div
-      class="sc-iBkjds hDuMmX sc-breuTD bOZwsL"
+      class="sc-iBYQkv qDrdv sc-bqWxrE dvHoOv"
       placeholder="Display name"
     >
       <input
         aria-disabled="false"
         aria-invalid="false"
-        class="sc-dIouRR cqKYoJ"
+        class="sc-dIfARi egSfao"
         id="uname_FORM_ID"
         name="Display name"
         spellcheck="false"
         value=""
       />
       <svg
-        class="sc-gKXOVf ktoyia sc-hHLeRK kBmlVx"
+        class="sc-gKPRtg eSdzmv sc-hHTYSt hQAsBU"
         height="18"
         viewBox="0 0 24 24"
         width="18"
@@ -151,27 +151,27 @@ exports[`<UserEditForm /> Should render correctly with admin controls shown 1`] 
       </svg>
     </div>
     <label
-      class="sc-fEOsli iHSlJz"
+      class="sc-fEXmlR fcnjli"
       for="name_FORM_ID"
     >
       Real name
     </label>
     <div
-      class="sc-iBkjds hDuMmX sc-breuTD bOZwsL"
+      class="sc-iBYQkv qDrdv sc-bqWxrE dvHoOv"
       placeholder="Real name"
     >
       <input
         aria-disabled="false"
         aria-invalid="false"
         autofill="name"
-        class="sc-dIouRR cqKYoJ"
+        class="sc-dIfARi egSfao"
         id="name_FORM_ID"
         name="Real name"
         spellcheck="false"
         value=""
       />
       <svg
-        class="sc-gKXOVf ktoyia sc-hHLeRK kBmlVx"
+        class="sc-gKPRtg eSdzmv sc-hHTYSt hQAsBU"
         height="18"
         viewBox="0 0 24 24"
         width="18"
@@ -183,27 +183,27 @@ exports[`<UserEditForm /> Should render correctly with admin controls shown 1`] 
       </svg>
     </div>
     <label
-      class="sc-fEOsli iHSlJz"
+      class="sc-fEXmlR fcnjli"
       for="email_FORM_ID"
     >
       Email
     </label>
     <div
-      class="sc-iBkjds hDuMmX sc-breuTD bOZwsL"
+      class="sc-iBYQkv qDrdv sc-bqWxrE dvHoOv"
       placeholder="Email"
     >
       <input
         aria-disabled="false"
         aria-invalid="false"
         autofill="email"
-        class="sc-dIouRR cqKYoJ"
+        class="sc-dIfARi egSfao"
         id="email_FORM_ID"
         name="Email"
         spellcheck="false"
         value=""
       />
       <svg
-        class="sc-gKXOVf ktoyia sc-hHLeRK kBmlVx"
+        class="sc-gKPRtg eSdzmv sc-hHTYSt hQAsBU"
         height="18"
         viewBox="0 0 24 24"
         width="18"
@@ -215,21 +215,21 @@ exports[`<UserEditForm /> Should render correctly with admin controls shown 1`] 
       </svg>
     </div>
     <label
-      class="sc-ftvSup bMRhqZ sc-fnykZs dYLQUI"
+      class="sc-ftTHYK cnKNCo sc-fnGiBr dOtmda"
       id="admin_FORM_ID"
     >
       <div
-        class="sc-papXJ gtFCxX"
+        class="sc-pyfCe cPxSom"
       >
         <input
           aria-invalid="false"
           aria-label="Is admin"
-          class="sc-jqUVSM hocLPL"
+          class="sc-jrcTuL bUxtxE"
           name="Is admin"
           type="checkbox"
         />
         <svg
-          class="sc-gKXOVf ktoyia sc-kDDrLX bmdoJK"
+          class="sc-gKPRtg eSdzmv sc-kDvujY bYAPqH"
           height="18"
           viewBox="0 0 24 24"
           width="18"
@@ -242,17 +242,17 @@ exports[`<UserEditForm /> Should render correctly with admin controls shown 1`] 
       </div>
       <div
         aria-hidden="true"
-        class="sc-iqcoie bBXilN"
+        class="sc-ipEyDJ enbqXF"
       >
         Is admin
       </div>
     </label>
     <button
-      class="sc-dkzDqf bOfPfm sc-evZas hAEDCd"
+      class="sc-dkrFOg jeTODs sc-eDWCr fujPXy"
       type="button"
     >
       <span
-        class="sc-eCYdqJ ghZAyu"
+        class="sc-eDvSVe iqkXFe"
       >
         Update
       </span>

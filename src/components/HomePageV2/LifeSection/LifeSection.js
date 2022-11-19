@@ -57,8 +57,8 @@ const LifeSection = props => {
         }}
         aspectX={4000}
         aspectY={6000}
-        lightSrc={travel}
-        darkSrc={travel}
+        lightSrc={travel.src}
+        darkSrc={travel.src}
       />
       <Content>
         <Section name="Life">
@@ -79,8 +79,8 @@ const LifeSection = props => {
         }}
         aspectX={5913}
         aspectY={3942}
-        lightSrc={cat}
-        darkSrc={cat}
+        lightSrc={cat.src}
+        darkSrc={cat.src}
       />
       <MobileImageWrapper>
         <style>
@@ -102,8 +102,8 @@ const LifeSection = props => {
             }}
             aspectX={4000}
             aspectY={6000}
-            lightSrc={travel}
-            darkSrc={travel}
+            lightSrc={travel.src}
+            darkSrc={travel.src}
           />
         </MobileImageInnerWrapperLeft>
         <MobileImageInnerWrapperRight className={fullyInView ? '' : RIGHT_IMAGE_HIDE_CLASSNAME}>
@@ -113,8 +113,8 @@ const LifeSection = props => {
             }}
             aspectX={5913}
             aspectY={3942}
-            lightSrc={cat}
-            darkSrc={cat}
+            lightSrc={cat.src}
+            darkSrc={cat.src}
           />
         </MobileImageInnerWrapperRight>
       </MobileImageWrapper>

@@ -8,6 +8,8 @@ import configureStore from 'client-utils/common/redux/configure-store';
 import AnalyticsIndex from '../index';
 import Analytics from '../Container';
 
+jest.mock('next/router', () => ({ withRouter: component => component }));
+
 describe('<Analytics />', () => {
   let store;
   const spy = jest.fn();

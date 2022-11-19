@@ -3,38 +3,38 @@
 exports[`<CreativeCommons /> Should render correctly 1`] = `
 <div>
   <div
-    class="creative-commonssyles__Wrapper-sc-qff226-0 gOCDiS"
+    class="creative-commonssyles__Wrapper-sc-qff226-0 eObJgx"
   >
     <div
-      class="creative-commonssyles__Background-sc-qff226-1 ddrRBh"
+      class="creative-commonssyles__Background-sc-qff226-1 gREbZK"
     />
     <div
-      class="sc-kDDrLX iNAFzC creative-commonssyles__Inner-sc-qff226-2 gkGslB"
+      class="sc-kDvujY jcGnlL creative-commonssyles__Inner-sc-qff226-2 jkifKu"
     >
       <h1
-        class="sc-hKMtZM juqKJr sc-evZas goeUxJ"
+        class="sc-hLBbgP hxBBAy sc-eDWCr qSnbm"
         id="copyright"
       >
         Copyright
       </h1>
       <span
-        class="sc-bczRLJ bhVmoO"
+        class="sc-bcXHqe huaqIH"
       >
         Most of my photos are licensed under
          
         <a
           aria-label="Creative Commons BY-SA 3.0 (opens in a new tab)"
-          class="sc-ftvSup cMmkUr"
+          class="sc-ftTHYK dpmGDG"
           href="https://creativecommons.org/licenses/by-sa/3.0/"
           rel="noopener noreferrer"
           target="_blank"
         >
           Creative Commons BY-SA 3.0
           <div
-            class="sc-papXJ ecwnCf"
+            class="sc-pyfCe bordam"
           >
             <svg
-              class="sc-iBkjds eZahvc sc-jqUVSM fjeMmK"
+              class="sc-iBYQkv lnzGUE sc-jrcTuL joTGkF"
               height="18"
               viewBox="0 0 24 24"
               width="18"
@@ -50,7 +50,7 @@ exports[`<CreativeCommons /> Should render correctly 1`] = `
         <br />
         If you are unsure about your right to use them please 
         <a
-          class="sc-ftvSup cMmkUr"
+          class="sc-ftTHYK dpmGDG"
           href="/contact"
         >
           contact me
@@ -65,38 +65,38 @@ exports[`<CreativeCommons /> Should render correctly 1`] = `
 exports[`<CreativeCommons /> Should render correctly with custom className 1`] = `
 <div>
   <div
-    class="creative-commonssyles__Wrapper-sc-qff226-0 gOCDiS test-custom-className"
+    class="creative-commonssyles__Wrapper-sc-qff226-0 eObJgx test-custom-className"
   >
     <div
-      class="creative-commonssyles__Background-sc-qff226-1 ddrRBh"
+      class="creative-commonssyles__Background-sc-qff226-1 gREbZK"
     />
     <div
-      class="sc-kDDrLX iNAFzC creative-commonssyles__Inner-sc-qff226-2 gkGslB"
+      class="sc-kDvujY jcGnlL creative-commonssyles__Inner-sc-qff226-2 jkifKu"
     >
       <h1
-        class="sc-hKMtZM juqKJr sc-evZas goeUxJ"
+        class="sc-hLBbgP hxBBAy sc-eDWCr qSnbm"
         id="copyright"
       >
         Copyright
       </h1>
       <span
-        class="sc-bczRLJ bhVmoO"
+        class="sc-bcXHqe huaqIH"
       >
         Most of my photos are licensed under
          
         <a
           aria-label="Creative Commons BY-SA 3.0 (opens in a new tab)"
-          class="sc-ftvSup cMmkUr"
+          class="sc-ftTHYK dpmGDG"
           href="https://creativecommons.org/licenses/by-sa/3.0/"
           rel="noopener noreferrer"
           target="_blank"
         >
           Creative Commons BY-SA 3.0
           <div
-            class="sc-papXJ ecwnCf"
+            class="sc-pyfCe bordam"
           >
             <svg
-              class="sc-iBkjds eZahvc sc-jqUVSM fjeMmK"
+              class="sc-iBYQkv lnzGUE sc-jrcTuL joTGkF"
               height="18"
               viewBox="0 0 24 24"
               width="18"
@@ -112,7 +112,7 @@ exports[`<CreativeCommons /> Should render correctly with custom className 1`] =
         <br />
         If you are unsure about your right to use them please 
         <a
-          class="sc-ftvSup cMmkUr"
+          class="sc-ftTHYK dpmGDG"
           href="/contact"
         >
           contact me

@@ -40,8 +40,8 @@ const WorkBackpack = () => (
           }}
           aspectX={3258}
           aspectY={1986}
-          lightSrc={backpackOfferingLight}
-          darkSrc={backpackOfferingDark}
+          lightSrc={backpackOfferingLight.src}
+          darkSrc={backpackOfferingDark.src}
         />
       </ParagraphWithScroll>
       <SubsectionWithScroll name="Brand refresh">
@@ -69,8 +69,8 @@ const WorkBackpack = () => (
           }}
           aspectX={3248}
           aspectY={1986}
-          lightSrc={brandLight}
-          darkSrc={brandDark}
+          lightSrc={brandLight.src}
+          darkSrc={brandDark.src}
         />
       </SubsectionWithScroll>
       <SubsectionWithScroll name="Dark mode">
@@ -91,8 +91,8 @@ const WorkBackpack = () => (
           }}
           aspectX={3368}
           aspectY={1986}
-          lightSrc={darkMode}
-          darkSrc={darkMode}
+          lightSrc={darkMode.src}
+          darkSrc={darkMode.src}
         />
       </SubsectionWithScroll>
     </PageTitle>

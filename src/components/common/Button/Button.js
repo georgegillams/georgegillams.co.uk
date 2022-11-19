@@ -16,7 +16,7 @@ const Button = props => {
   }
 
   return (
-    <Link passHref href={destination.url} as={destination.as} {...destination.options}>
+    <Link passHref href={destination.url} as={destination.as} {...destination.options} legacyBehavior>
       <GGButton href={href} {...rest} />
     </Link>
   );

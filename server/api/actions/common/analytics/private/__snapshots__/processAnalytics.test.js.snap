@@ -1,8 +1,8 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`process analytics data properly  1`] = `
-Array [
-  Object {
+[
+  {
     "browser": "browser1",
     "browserVersion": "1",
     "count": 2,
@@ -13,7 +13,7 @@ Array [
     "utm_medium": undefined,
     "utm_source": undefined,
   },
-  Object {
+  {
     "browser": "browser1",
     "browserVersion": "1",
     "count": 1,
@@ -24,7 +24,7 @@ Array [
     "utm_medium": undefined,
     "utm_source": undefined,
   },
-  Object {
+  {
     "browser": "browser2",
     "browserVersion": "2",
     "count": 1,
@@ -35,7 +35,7 @@ Array [
     "utm_medium": "utmMedium1",
     "utm_source": "utmSource1",
   },
-  Object {
+  {
     "browser": "browser2",
     "browserVersion": "2",
     "count": 1,
@@ -46,7 +46,7 @@ Array [
     "utm_medium": undefined,
     "utm_source": undefined,
   },
-  Object {
+  {
     "browser": "browser2",
     "browserVersion": "2",
     "count": 1,
@@ -57,7 +57,7 @@ Array [
     "utm_medium": undefined,
     "utm_source": undefined,
   },
-  Object {
+  {
     "browser": "browser2",
     "browserVersion": "2",
     "count": 2,
@@ -68,7 +68,7 @@ Array [
     "utm_medium": undefined,
     "utm_source": undefined,
   },
-  Object {
+  {
     "browser": "browser3",
     "browserVersion": "3",
     "count": 1,
@@ -79,7 +79,7 @@ Array [
     "utm_medium": undefined,
     "utm_source": undefined,
   },
-  Object {
+  {
     "browser": "browser4",
     "browserVersion": "4",
     "count": 1,
@@ -90,7 +90,7 @@ Array [
     "utm_medium": undefined,
     "utm_source": undefined,
   },
-  Object {
+  {
     "browser": "browser1",
     "browserVersion": "1",
     "count": 4,
@@ -101,7 +101,7 @@ Array [
     "utm_medium": undefined,
     "utm_source": undefined,
   },
-  Object {
+  {
     "browser": "browser1",
     "browserVersion": "1.3",
     "count": 4,

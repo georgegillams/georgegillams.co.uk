@@ -98,8 +98,8 @@ const Degree = props => {
           }}
           aspectX={2000}
           aspectY={442}
-          lightSrc={SouthamptonUniLogo}
-          darkSrc={SouthamptonUniLogo}
+          lightSrc={SouthamptonUniLogo.src}
+          darkSrc={SouthamptonUniLogo.src}
         />
         <SectionWithScroll name="Summary">
           <Paragraph>4 year integrated Masters of Engineering (2013 - 2015, 2016 - 2018)</Paragraph>

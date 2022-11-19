@@ -29,7 +29,7 @@ const Contact = () => {
           }
           aux={
             <ImageIconContainer>
-              <IconImage invertInDarkMode src={formLogo} />
+              <IconImage invertInDarkMode src={formLogo.src} />
             </ImageIconContainer>
           }
         />
@@ -43,7 +43,7 @@ const Contact = () => {
           }
           aux={
             <ImageIconContainer>
-              <IconImage src={twitterLogo} />
+              <IconImage src={twitterLogo.src} />
             </ImageIconContainer>
           }
         />
@@ -56,7 +56,7 @@ const Contact = () => {
           }
           aux={
             <ImageIconContainer>
-              <IconImage src={linkedInLogo} />
+              <IconImage src={linkedInLogo.src} />
             </ImageIconContainer>
           }
         />
@@ -70,7 +70,7 @@ const Contact = () => {
           }
           aux={
             <ImageIconContainer>
-              <IconImage invertInDarkMode src={githubLogo} />
+              <IconImage invertInDarkMode src={githubLogo.src} />
             </ImageIconContainer>
           }
         />
@@ -83,7 +83,7 @@ const Contact = () => {
           }
           aux={
             <ImageIconContainer>
-              <IconImage invertInDarkMode src={emailLogo} />
+              <IconImage invertInDarkMode src={emailLogo.src} />
             </ImageIconContainer>
           }
         />
@@ -97,7 +97,7 @@ const Contact = () => {
           }
           aux={
             <ImageIconContainer>
-              <IconImage src={flickrLogo} />
+              <IconImage src={flickrLogo.src} />
             </ImageIconContainer>
           }
         />
@@ -110,7 +110,7 @@ const Contact = () => {
           }
           aux={
             <ImageIconContainer>
-              <IconImage invertInDarkMode src={gurushotsLogo} />
+              <IconImage invertInDarkMode src={gurushotsLogo.src} />
             </ImageIconContainer>
           }
         />
@@ -124,7 +124,7 @@ const Contact = () => {
           }
           aux={
             <ImageIconContainer>
-              <IconImage invertInDarkMode src={unsplashLogo} />
+              <IconImage invertInDarkMode src={unsplashLogo.src} />
             </ImageIconContainer>
           }
         />

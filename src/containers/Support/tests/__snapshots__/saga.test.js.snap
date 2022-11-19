@@ -1,11 +1,11 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Support saga createLink actions Should call createLink.failure if API returns error 1`] = `
-Object {
+{
   "@@redux-saga/IO": true,
   "combinator": false,
-  "payload": Object {
-    "args": Array [],
+  "payload": {
+    "args": [],
     "selector": [Function],
   },
   "type": "SELECT",
@@ -13,11 +13,11 @@ Object {
 `;
 
 exports[`Support saga createLink actions Should call createLink.failure if an exception occurs 1`] = `
-Object {
+{
   "@@redux-saga/IO": true,
   "combinator": false,
-  "payload": Object {
-    "args": Array [],
+  "payload": {
+    "args": [],
     "selector": [Function],
   },
   "type": "SELECT",
@@ -25,11 +25,11 @@ Object {
 `;
 
 exports[`Support saga createLink actions Should call createLink.success on successful API call 1`] = `
-Object {
+{
   "@@redux-saga/IO": true,
   "combinator": false,
-  "payload": Object {
-    "args": Array [],
+  "payload": {
+    "args": [],
     "selector": [Function],
   },
   "type": "SELECT",
@@ -37,11 +37,11 @@ Object {
 `;
 
 exports[`Support saga deleteLink actions Should call deleteLink.failure if API returns error 1`] = `
-Object {
+{
   "@@redux-saga/IO": true,
   "combinator": false,
-  "payload": Object {
-    "args": Array [],
+  "payload": {
+    "args": [],
     "selector": [Function],
   },
   "type": "SELECT",
@@ -49,11 +49,11 @@ Object {
 `;
 
 exports[`Support saga deleteLink actions Should call deleteLink.failure if an exception occurs 1`] = `
-Object {
+{
   "@@redux-saga/IO": true,
   "combinator": false,
-  "payload": Object {
-    "args": Array [],
+  "payload": {
+    "args": [],
     "selector": [Function],
   },
   "type": "SELECT",
@@ -61,11 +61,11 @@ Object {
 `;
 
 exports[`Support saga deleteLink actions Should call deleteLink.success on successful API call 1`] = `
-Object {
+{
   "@@redux-saga/IO": true,
   "combinator": false,
-  "payload": Object {
-    "args": Array [],
+  "payload": {
+    "args": [],
     "selector": [Function],
   },
   "type": "SELECT",
@@ -73,11 +73,11 @@ Object {
 `;
 
 exports[`Support saga loadLinks actions Should call loadLinks.failure if API returns error 1`] = `
-Object {
+{
   "@@redux-saga/IO": true,
   "combinator": false,
-  "payload": Object {
-    "action": Object {
+  "payload": {
+    "action": {
       "type": "app/support/LOAD_LINKS/REQUEST",
     },
     "channel": undefined,
@@ -87,11 +87,11 @@ Object {
 `;
 
 exports[`Support saga loadLinks actions Should call loadLinks.failure if an exception occurs 1`] = `
-Object {
+{
   "@@redux-saga/IO": true,
   "combinator": false,
-  "payload": Object {
-    "action": Object {
+  "payload": {
+    "action": {
       "type": "app/support/LOAD_LINKS/REQUEST",
     },
     "channel": undefined,
@@ -101,11 +101,11 @@ Object {
 `;
 
 exports[`Support saga loadLinks actions Should call loadLinks.success on successful API call 1`] = `
-Object {
+{
   "@@redux-saga/IO": true,
   "combinator": false,
-  "payload": Object {
-    "action": Object {
+  "payload": {
+    "action": {
       "type": "app/support/LOAD_LINKS/REQUEST",
     },
     "channel": undefined,

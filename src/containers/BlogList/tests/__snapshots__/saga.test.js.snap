@@ -1,11 +1,11 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`BlogList saga deleteBlog actions Should call deleteBlog.failure if API returns error 1`] = `
-Object {
+{
   "@@redux-saga/IO": true,
   "combinator": false,
-  "payload": Object {
-    "args": Array [],
+  "payload": {
+    "args": [],
     "selector": [Function],
   },
   "type": "SELECT",
@@ -13,11 +13,11 @@ Object {
 `;
 
 exports[`BlogList saga deleteBlog actions Should call deleteBlog.failure if an exception occurs 1`] = `
-Object {
+{
   "@@redux-saga/IO": true,
   "combinator": false,
-  "payload": Object {
-    "args": Array [],
+  "payload": {
+    "args": [],
     "selector": [Function],
   },
   "type": "SELECT",
@@ -25,11 +25,11 @@ Object {
 `;
 
 exports[`BlogList saga deleteBlog actions Should call deleteBlog.success on successful API call 1`] = `
-Object {
+{
   "@@redux-saga/IO": true,
   "combinator": false,
-  "payload": Object {
-    "args": Array [],
+  "payload": {
+    "args": [],
     "selector": [Function],
   },
   "type": "SELECT",
@@ -37,11 +37,11 @@ Object {
 `;
 
 exports[`BlogList saga loadBlogs actions Should call loadBlogs.failure if API returns error 1`] = `
-Object {
+{
   "@@redux-saga/IO": true,
   "combinator": false,
-  "payload": Object {
-    "action": Object {
+  "payload": {
+    "action": {
       "type": "app/blog-list/LOAD_BLOGS/REQUEST",
     },
     "channel": undefined,
@@ -51,11 +51,11 @@ Object {
 `;
 
 exports[`BlogList saga loadBlogs actions Should call loadBlogs.failure if an exception occurs 1`] = `
-Object {
+{
   "@@redux-saga/IO": true,
   "combinator": false,
-  "payload": Object {
-    "action": Object {
+  "payload": {
+    "action": {
       "type": "app/blog-list/LOAD_BLOGS/REQUEST",
     },
     "channel": undefined,
@@ -65,11 +65,11 @@ Object {
 `;
 
 exports[`BlogList saga loadBlogs actions Should call loadBlogs.success on successful API call 1`] = `
-Object {
+{
   "@@redux-saga/IO": true,
   "combinator": false,
-  "payload": Object {
-    "action": Object {
+  "payload": {
+    "action": {
       "type": "app/blog-list/LOAD_BLOGS/REQUEST",
     },
     "channel": undefined,

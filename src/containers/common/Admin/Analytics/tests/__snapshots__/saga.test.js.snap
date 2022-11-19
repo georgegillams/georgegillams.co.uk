@@ -1,11 +1,11 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`AdminAnalytics saga load actions Should call load.failure if API returns error 1`] = `
-Object {
+{
   "@@redux-saga/IO": true,
   "combinator": false,
-  "payload": Object {
-    "action": Object {
+  "payload": {
+    "action": {
       "type": "app/admin-analytics/LOAD/REQUEST",
     },
     "channel": undefined,
@@ -15,11 +15,11 @@ Object {
 `;
 
 exports[`AdminAnalytics saga load actions Should call load.failure if an exception occurs 1`] = `
-Object {
+{
   "@@redux-saga/IO": true,
   "combinator": false,
-  "payload": Object {
-    "action": Object {
+  "payload": {
+    "action": {
       "type": "app/admin-analytics/LOAD/REQUEST",
     },
     "channel": undefined,
@@ -29,11 +29,11 @@ Object {
 `;
 
 exports[`AdminAnalytics saga load actions Should call load.success on successful API call 1`] = `
-Object {
+{
   "@@redux-saga/IO": true,
   "combinator": false,
-  "payload": Object {
-    "action": Object {
+  "payload": {
+    "action": {
       "type": "app/admin-analytics/LOAD/REQUEST",
     },
     "channel": undefined,

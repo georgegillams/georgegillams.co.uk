@@ -11,10 +11,10 @@ exports[`<ErrorDisplay  /> Should render correctly with message 1`] = `<div />`;
 exports[`<ErrorDisplay  /> Should render with empty error object and message 1`] = `
 <div>
   <span
-    class="sc-gsnTZi bUAnoQ"
+    class="sc-gswNZR ekTDXf"
   >
     <span
-      class="sc-bczRLJ vDmnW"
+      class="sc-bcXHqe jxQnwv"
     >
       Test message
     </span>
@@ -25,10 +25,10 @@ exports[`<ErrorDisplay  /> Should render with empty error object and message 1`]
 exports[`<ErrorDisplay  /> Should render with empty error object and no message 1`] = `
 <div>
   <span
-    class="sc-gsnTZi bUAnoQ"
+    class="sc-gswNZR ekTDXf"
   >
     <span
-      class="sc-bczRLJ vDmnW"
+      class="sc-bcXHqe jxQnwv"
     />
   </span>
 </div>
@@ -37,10 +37,10 @@ exports[`<ErrorDisplay  /> Should render with empty error object and no message 
 exports[`<ErrorDisplay  /> Should render with well-defined error object and message 1`] = `
 <div>
   <span
-    class="sc-gsnTZi bUAnoQ"
+    class="sc-gswNZR ekTDXf"
   >
     <span
-      class="sc-bczRLJ vDmnW"
+      class="sc-bcXHqe jxQnwv"
     >
       Test message
       <br />
@@ -53,10 +53,10 @@ exports[`<ErrorDisplay  /> Should render with well-defined error object and mess
 exports[`<ErrorDisplay  /> Should render with well-defined error object and no message 1`] = `
 <div>
   <span
-    class="sc-gsnTZi bUAnoQ"
+    class="sc-gswNZR ekTDXf"
   >
     <span
-      class="sc-bczRLJ vDmnW"
+      class="sc-bcXHqe jxQnwv"
     >
       Test error message
     </span>

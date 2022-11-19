@@ -3,28 +3,28 @@
 exports[`<SupportForm /> Should render correctly 1`] = `
 <div>
   <div
-    class="sc-crXcEl"
+    class="sc-csuSiG"
   >
     <label
-      class="sc-fEOsli iHSlJz"
+      class="sc-fEXmlR fcnjli"
       for="description_FORM_ID"
     >
       Description
     </label>
     <div
-      class="sc-iBkjds hDuMmX sc-breuTD bOZwsL"
+      class="sc-iBYQkv qDrdv sc-bqWxrE dvHoOv"
       placeholder="Description"
     >
       <input
         aria-disabled="false"
         aria-invalid="false"
-        class="sc-dIouRR cqKYoJ"
+        class="sc-dIfARi egSfao"
         id="description_FORM_ID"
         name="Description"
         value=""
       />
       <svg
-        class="sc-gKXOVf ktoyia sc-hHLeRK kBmlVx"
+        class="sc-gKPRtg eSdzmv sc-hHTYSt hQAsBU"
         height="18"
         viewBox="0 0 24 24"
         width="18"
@@ -36,25 +36,25 @@ exports[`<SupportForm /> Should render correctly 1`] = `
       </svg>
     </div>
     <label
-      class="sc-fEOsli iHSlJz"
+      class="sc-fEXmlR fcnjli"
       for="url_FORM_ID"
     >
       URL
     </label>
     <div
-      class="sc-iBkjds hDuMmX sc-breuTD bOZwsL"
+      class="sc-iBYQkv qDrdv sc-bqWxrE dvHoOv"
       placeholder="URL"
     >
       <input
         aria-disabled="false"
         aria-invalid="false"
-        class="sc-dIouRR cqKYoJ"
+        class="sc-dIfARi egSfao"
         id="url_FORM_ID"
         name="URL"
         value=""
       />
       <svg
-        class="sc-gKXOVf ktoyia sc-hHLeRK kBmlVx"
+        class="sc-gKPRtg eSdzmv sc-hHTYSt hQAsBU"
         height="18"
         viewBox="0 0 24 24"
         width="18"
@@ -66,11 +66,11 @@ exports[`<SupportForm /> Should render correctly 1`] = `
       </svg>
     </div>
     <button
-      class="sc-dkzDqf bOfPfm sc-evZas hAEDCd"
+      class="sc-dkrFOg jeTODs sc-eDWCr fujPXy"
       type="button"
     >
       <span
-        class="sc-eCYdqJ ghZAyu"
+        class="sc-eDvSVe iqkXFe"
       >
         Add link
       </span>
@@ -82,28 +82,28 @@ exports[`<SupportForm /> Should render correctly 1`] = `
 exports[`<SupportForm /> Should render correctly with no link id 1`] = `
 <div>
   <div
-    class="sc-crXcEl"
+    class="sc-csuSiG"
   >
     <label
-      class="sc-fEOsli iHSlJz"
+      class="sc-fEXmlR fcnjli"
       for="name_FORM_ID"
     >
       Name
     </label>
     <div
-      class="sc-iBkjds hDuMmX sc-breuTD bOZwsL"
+      class="sc-iBYQkv qDrdv sc-bqWxrE dvHoOv"
       placeholder="Name"
     >
       <input
         aria-disabled="false"
         aria-invalid="false"
-        class="sc-dIouRR cqKYoJ"
+        class="sc-dIfARi egSfao"
         id="name_FORM_ID"
         name="Name"
         value=""
       />
       <svg
-        class="sc-gKXOVf ktoyia sc-hHLeRK kBmlVx"
+        class="sc-gKPRtg eSdzmv sc-hHTYSt hQAsBU"
         height="18"
         viewBox="0 0 24 24"
         width="18"
@@ -115,25 +115,25 @@ exports[`<SupportForm /> Should render correctly with no link id 1`] = `
       </svg>
     </div>
     <label
-      class="sc-fEOsli iHSlJz"
+      class="sc-fEXmlR fcnjli"
       for="description_FORM_ID"
     >
       Description
     </label>
     <div
-      class="sc-iBkjds hDuMmX sc-breuTD bOZwsL"
+      class="sc-iBYQkv qDrdv sc-bqWxrE dvHoOv"
       placeholder="Description"
     >
       <input
         aria-disabled="false"
         aria-invalid="false"
-        class="sc-dIouRR cqKYoJ"
+        class="sc-dIfARi egSfao"
         id="description_FORM_ID"
         name="Description"
         value=""
       />
       <svg
-        class="sc-gKXOVf ktoyia sc-hHLeRK kBmlVx"
+        class="sc-gKPRtg eSdzmv sc-hHTYSt hQAsBU"
         height="18"
         viewBox="0 0 24 24"
         width="18"
@@ -145,25 +145,25 @@ exports[`<SupportForm /> Should render correctly with no link id 1`] = `
       </svg>
     </div>
     <label
-      class="sc-fEOsli iHSlJz"
+      class="sc-fEXmlR fcnjli"
       for="url_FORM_ID"
     >
       URL
     </label>
     <div
-      class="sc-iBkjds hDuMmX sc-breuTD bOZwsL"
+      class="sc-iBYQkv qDrdv sc-bqWxrE dvHoOv"
       placeholder="URL"
     >
       <input
         aria-disabled="false"
         aria-invalid="false"
-        class="sc-dIouRR cqKYoJ"
+        class="sc-dIfARi egSfao"
         id="url_FORM_ID"
         name="URL"
         value=""
       />
       <svg
-        class="sc-gKXOVf ktoyia sc-hHLeRK kBmlVx"
+        class="sc-gKPRtg eSdzmv sc-hHTYSt hQAsBU"
         height="18"
         viewBox="0 0 24 24"
         width="18"
@@ -175,11 +175,11 @@ exports[`<SupportForm /> Should render correctly with no link id 1`] = `
       </svg>
     </div>
     <button
-      class="sc-dkzDqf bOfPfm sc-evZas hAEDCd"
+      class="sc-dkrFOg jeTODs sc-eDWCr fujPXy"
       type="button"
     >
       <span
-        class="sc-eCYdqJ ghZAyu"
+        class="sc-eDvSVe iqkXFe"
       >
         Add link
       </span>

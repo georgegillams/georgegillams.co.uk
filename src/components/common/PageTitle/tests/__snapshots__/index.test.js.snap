@@ -3,10 +3,10 @@
 exports[`<PageTitle /> Should render correctly 1`] = `
 <div>
   <div
-    class="sc-breuTD gWTOEy"
+    class="sc-bqWxrE VcTDu"
   >
     <h1
-      class="sc-bczRLJ hDLBIv sc-jqUVSM cFomsy"
+      class="sc-bcXHqe bHgOFy sc-jrcTuL ewlzmZ"
     >
       Test
     </h1>
@@ -18,10 +18,10 @@ exports[`<PageTitle /> Should render correctly 1`] = `
 exports[`<PageTitle /> Should render correctly with custom className 1`] = `
 <div>
   <div
-    class="sc-breuTD gWTOEy"
+    class="sc-bqWxrE VcTDu"
   >
     <h1
-      class="sc-bczRLJ hDLBIv sc-jqUVSM cFomsy test-custom-classname"
+      class="sc-bcXHqe bHgOFy sc-jrcTuL ewlzmZ test-custom-classname"
     >
       Test
     </h1>
@@ -33,13 +33,13 @@ exports[`<PageTitle /> Should render correctly with custom className 1`] = `
 exports[`<PageTitle /> Should render correctly with other props 1`] = `
 <div>
   <div
-    class="sc-breuTD gWTOEy"
+    class="sc-bqWxrE VcTDu"
   >
     <div
-      class="sc-kDDrLX emakin"
+      class="sc-kDvujY bJLGdG"
     >
       <a
-        class="sc-iBkjds JLudk"
+        class="sc-iBYQkv jNlLug"
         href="/test"
       >
         ⇠ test
@@ -47,10 +47,10 @@ exports[`<PageTitle /> Should render correctly with other props 1`] = `
     </div>
   </div>
   <div
-    class="sc-breuTD gWTOEy"
+    class="sc-bqWxrE VcTDu"
   >
     <h1
-      class="sc-bczRLJ hDLBIv sc-jqUVSM drQcdn"
+      class="sc-bcXHqe bHgOFy sc-jrcTuL jiMlto"
     >
       Test
     </h1>
