@@ -1,4 +1,5 @@
 # Don't check auto-generated stuff into git
+.idea/
 .next/
 coverage
 node_modules

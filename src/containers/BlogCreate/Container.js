@@ -12,15 +12,7 @@ const CreateBlog = props => {
 
   return (
     <>
-      <DebugObject
-        debugTitle="Blogs"
-        debugObject={{
-          createBlog,
-          authenticatorState,
-          blogCreateState,
-          className,
-        }}
-      />
+      <DebugObject debugTitle="Blogs" debugObject={{ createBlog, authenticatorState, blogCreateState, className }} />
       <AdminOnly user={authenticatorState.user}>
         <PageTitle name="Create a new blog">
           <BlogForm
@@ -29,8 +21,8 @@ const CreateBlog = props => {
             }}
             blog={newBlog || {}}
             submitLabel="Create blog"
-            onDataChanged={setNewBlog}></BlogForm>
-        </PageTitle>
+            onDataChanged={setNewBlog}></BlogForm>{' '}
+        </PageTitle>{' '}
       </AdminOnly>
     </>
   );

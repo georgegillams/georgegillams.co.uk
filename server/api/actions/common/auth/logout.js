@@ -10,18 +10,17 @@ import reqSecure from 'server-utils/common/reqSecure';
 
 export default function logout(req) {
   reqSecure(req, authAllowedAttributes);
-  return lockPromise('sessions', () =>
-    dbLoad({ redisKey: 'sessions' })
-      .then(sessionData => {
-        const { existingValue: session } = find(sessionData, req.cookies[SESSION_COOKIE_KEY], 'sessionKey');
-        if (session) {
-          session.userId = null;
-          session.userAuthenticatedTimestamp = null;
-          return dbUpdate({ redisKey: 'sessions' }, { body: session });
-        }
-        throw INVALID_SESSION;
-      })
-      .then(() => setContentLastUpdatedTimestamp())
-      .then(() => ({ success: 'You are now logged out' }))
-  );
+  return lockPromise('sessions', async () => {
+    let sessionData = await dbLoad({ redisKey: 'sessions' });
+    const { existingValue: session } = find(sessionData, req.cookies[SESSION_COOKIE_KEY], 'sessionKey');
+    if (session) {
+      session.userId = null;
+      session.userAuthenticatedTimestamp = null;
+      await dbUpdate({ redisKey: 'sessions' }, { body: session });
+    } else {
+      throw INVALID_SESSION;
+    }
+    await setContentLastUpdatedTimestamp();
+    return { success: 'You are now logged out' };
+  });
 }

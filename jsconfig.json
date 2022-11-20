@@ -3,17 +3,14 @@
     "baseUrl": "./src",
     "paths": {
       "helpers/*": [
-        "shared/helpers/*"
+        "../shared/helpers/*"
       ],
       "server-utils/*": [
-        "server/utils/*"
+        "../server/utils/*"
       ],
       "client-utils/*": [
-        "src/utils/*"
-      ],
+        "utils/*"
+      ]
     }
-  },
-  "exclude": [
-    "node_modules",
   ]
 }
