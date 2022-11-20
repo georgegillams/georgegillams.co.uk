@@ -6,20 +6,13 @@ import { userOwnsResource } from 'server-utils/common/userOwnsResource';
 import { UNAUTHORISED_WRITE } from 'server-utils/common/errorConstants';
 import reqSecure from 'server-utils/common/reqSecure';
 
-export default function remove(req) {
+export default async function remove(req) {
   reqSecure(req, usersAllowedAttributes);
-  let user = null;
-  return authentication(req)
-    .then(authenticatedUser => {
-      user = authenticatedUser;
-      return true;
-    })
-    .then(() => userOwnsResource('users', req.body.id, user))
-    .then(userOwnsResourceResult => {
-      // Users should be able to delete their own user
-      if (user && (user.admin || userOwnsResourceResult)) {
-        return dbRemove({ redisKey: 'users' }, req);
-      }
-      throw UNAUTHORISED_WRITE;
-    });
+  const user = await authentication(req);
+  const userOwnsResourceResult = await userOwnsResource('users', req.body.id, user);
+  // Users should be able to delete their own user
+  if (user && (user.admin || userOwnsResourceResult)) {
+    return await dbRemove({ redisKey: 'users' }, req);
+  }
+  throw UNAUTHORISED_WRITE;
 }

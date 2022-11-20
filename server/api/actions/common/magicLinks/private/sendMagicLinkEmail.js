@@ -29,30 +29,31 @@ export default function sendMagicLinkEmail(userProfile, divertToAdmin, loginRedi
     from: `auth@${appConfig.emailDomain}`,
     to: divertToAdmin ? `auth+diverted-to-admin@${appConfig.emailDomain}` : userProfile.email,
     subject: 'Your magic login link',
-    text: `Your magic link is: 
+    text: `Your magic link is:
 ${magicLinkUrl}\n\nIt will expire ${oneHoursTime.toString()}`,
-    html: `${EMAIL_OUTER} 
-  ${EMAIL_LOGO_HEADER} 
-  <tr> 
-    <td bgcolor="white" style="padding: 24px; text-align: center;"> 
-      <p> 
-        Tap the button below to login 
-        <br><br><br> 
-        <a href="${magicLinkUrl}" style="${EMAIL_HTML_BUTTON_STYLE}">Log in</a> 
-        <br><br><br> 
-        <p> 
-          Once you're logged in, feel free to delete this email 
-        </p> 
-        <p style="font-size: ${FONT_SIZE_SM};"> 
-          Your single-use login link will expire ${oneHoursTime.toString()} 
-        </p> 
-      </p> 
-    </td> 
-  </tr> 
+    html: `${EMAIL_OUTER}
+  ${EMAIL_LOGO_HEADER}
+  <tr>
+    <td bgcolor="white" style="padding: 24px; text-align: center;">
+      <p>
+        Tap the button below to login
+        <br><br><br>
+        <a href="${magicLinkUrl}" style="${EMAIL_HTML_BUTTON_STYLE}">Log in</a>
+        <br><br><br>
+        <p>
+          Once you're logged in, feel free to delete this email
+        </p>
+        <p style="font-size: ${FONT_SIZE_SM};">
+          Your single-use login link will expire ${oneHoursTime.toString()}
+        </p>
+      </p>
+    </td>
+  </tr>
 ${EMAIL_OUTER_END}`,
   };
 
-  return lockPromise('magicLinks', () =>
-    dbCreate({ redisKey: 'magiclinks' }, { body: magicLink }).then(() => sendEmail(email))
-  );
+  return lockPromise('magicLinks', async () => {
+    await dbCreate({ redisKey: 'magiclinks' }, { body: magicLink });
+    return await sendEmail(email);
+  });
 }

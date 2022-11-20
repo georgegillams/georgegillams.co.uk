@@ -26,6 +26,7 @@ Page.getInitialProps = async context => {
   const ssrBlogs = await fetch(requestUrl)
     .then(data => data.json())
     .then(result => result.blogs);
+
   return { ssrBlogs }; // will be passed to the page component as props
 };
 

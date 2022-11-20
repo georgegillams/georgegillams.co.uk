@@ -9,20 +9,18 @@ import reqSecure from 'server-utils/common/reqSecure';
 
 const deleteSetAllowedAttributes = [{ attribute: 'collectionName', pattern: STRING_REGEX }];
 
-export default function deleteSet(req) {
+export default async function deleteSet(req) {
   reqSecure(req, deleteSetAllowedAttributes);
-  return authentication(req)
-    .then(user => {
-      if (!user || !user.admin) {
-        throw UNAUTHORISED_WRITE;
-      }
-      const { collectionName } = req.body;
-      if (!collectionName) {
-        throw new InvalidInputError('collectionName must be provided');
-      } else {
-        redis.del(`${appConfig.projectName}_${collectionName}`);
-        return setContentLastUpdatedTimestamp();
-      }
-    })
-    .then(() => true);
+  let user = await authentication(req);
+  if (!user || !user.admin) {
+    throw UNAUTHORISED_WRITE;
+  }
+  const { collectionName } = req.body;
+  if (!collectionName) {
+    throw new InvalidInputError('collectionName must be provided');
+  } else {
+    await redis.del(`${appConfig.projectName}_${collectionName}`);
+    await setContentLastUpdatedTimestamp();
+  }
+  return true;
 }

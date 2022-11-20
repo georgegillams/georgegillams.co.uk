@@ -6,22 +6,18 @@ import authentication from 'server-utils/common/authentication';
 import reqSecure from 'server-utils/common/reqSecure';
 import { UNAUTHORISED_READ } from 'server-utils/common/errorConstants';
 
-export default function loadSummary(req) {
+export default async function loadSummary(req) {
   reqSecure(req, analyticsAllowedAttributes);
-  return authentication(req)
-    .then(user => {
-      if (user && user.admin) {
-        return dbLoad({
-          redisKey: 'analytics',
-          includeOwnerUname: true,
-          includeDeleted: true,
-        });
-      }
-      throw UNAUTHORISED_READ;
-    })
-    .then(result => {
-      const bags = processAnalytics(result);
-      const sortedBags = bags.sort((a, b) => b.count - a.count);
-      return { analytics: sortedBags };
-    });
+  const user = await authentication(req);
+  if (!user || !user.admin) {
+    throw UNAUTHORISED_READ;
+  }
+  const data = await dbLoad({
+    redisKey: 'analytics',
+    includeOwnerUname: true,
+    includeDeleted: true,
+  });
+  const bags = processAnalytics(data);
+  const sortedBags = bags.sort((a, b) => b.count - a.count);
+  return { analytics: sortedBags };
 }

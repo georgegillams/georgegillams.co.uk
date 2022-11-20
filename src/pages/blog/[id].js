@@ -50,6 +50,7 @@ Page.getInitialProps = async context => {
     credentials: 'include',
     headers: { Cookie: `${SESSION_COOKIE_KEY}=${sessionCookie}` },
   }).then(data => data.json());
+
   if (!ssrBlog.error) {
     return { ssrBlog, blogId }; // will be passed to the page component as props
   }

@@ -4,34 +4,30 @@ import { find } from 'server-utils/common/find';
 import { AuthError } from 'server-utils/common/errors';
 
 export default function verifyEmail(req) {
-  return lockPromise('emailVerificationCodes', () => {
+  return lockPromise('emailVerificationCodes', async () => {
     const { verificationKey } = req.body;
-    let emailVerification = null;
-    return dbLoad({ redisKey: 'emailVerificationCodes' })
-      .then(emailVerificationData => {
-        // `find` uses `safeCompare` so it is safe to use for finding the entry that matches the key
-        const { existingValue: emailVerificationMatch } = find(emailVerificationData, verificationKey, 'key');
-        emailVerification = emailVerificationMatch;
-        if (emailVerification) {
-          if (Date.now() < new Date(emailVerification.expiry).getTime()) {
-            // invalidate magic link (set expiry to 0)
-            emailVerification.expiry = 0;
-            return dbUpdate({ redisKey: 'emailVerificationCodes' }, { body: emailVerification });
-          }
-          throw new AuthError('Email verification link has expired');
-        } else {
-          throw new AuthError('Invalid verification link');
-        }
-      })
-      .then(() => dbLoad({ redisKey: 'users' }))
-      .then(userData => {
-        const { existingValue: user } = find(userData, emailVerification.userId);
-        if (user) {
-          user.emailVerified = true;
-          return dbUpdate({ redisKey: 'users' }, { body: user });
-        }
-        throw new AuthError('Invalid user');
-      })
-      .then(() => ({ success: 'Email verified' }));
+    let emailVerificationData = await dbLoad({ redisKey: 'emailVerificationCodes' });
+    const { existingValue: emailVerification } = find(emailVerificationData, verificationKey, 'key');
+    if (emailVerification) {
+      if (Date.now() < new Date(emailVerification.expiry).getTime()) {
+        // invalidate magic link (set expiry to 0)
+        emailVerification.expiry = 0;
+        await dbUpdate({ redisKey: 'emailVerificationCodes' }, { body: emailVerification });
+      } else {
+        throw new AuthError('Email verification link has expired');
+      }
+    } else {
+      throw new AuthError('Invalid verification link');
+    }
+    const userData = await dbLoad({ redisKey: 'users' });
+    const { existingValue: user } = find(userData, emailVerification.userId);
+    if (user) {
+      user.emailVerified = true;
+      await dbUpdate({ redisKey: 'users' }, { body: user });
+    } else {
+      throw new AuthError('Invalid user');
+    }
+
+    return { success: 'Email verified' };
   });
 }
