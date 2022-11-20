@@ -4,7 +4,7 @@ import Footer from './footer-nav';
 import TechSpecs from './tech-specs';
 import { breakpointSm, spacingBase, spacingLg } from '@george-gillams/components/constants/layout';
 import {
-  backgroundColorElevatedColoredinvert,
+  backgroundColorElevatedColoredDarkMode,
   notBlack,
   notBlackDarkMode,
   primaryColor,
@@ -27,7 +27,7 @@ export const Container = styled.footer`
 
   @media (prefers-color-scheme: dark) {
     border-top: solid ${primaryColor} 0.15rem;
-    background-color: ${backgroundColorElevatedColoredinvert};
+    background-color: ${backgroundColorElevatedColoredDarkMode};
   }
 `;
 
