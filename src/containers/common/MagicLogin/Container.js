@@ -8,6 +8,7 @@ import TextLink from 'components/common/TextLink';
 import ErrorDisplay from 'components/common/ErrorDisplay';
 import { withRouter } from 'next/router';
 import { REDIRECT_REGEX } from '@george-gillams/webapp/helpers/regexConstants';
+import Spinner from '@george-gillams/components/spinner';
 import PageContainer from 'components/common/PageContainer';
 
 const MagicLogin = props => {
@@ -22,17 +23,24 @@ const MagicLogin = props => {
     authenticatorState,
   } = props;
 
-  const { logInError, logInResult } = magicLoginState;
+  const { logInError, logInResult, loggingIn } = magicLoginState;
 
   useEffect(() => {
-    let token = null;
-    if (router && router.query) {
-      token = router.query.token;
-    }
-    if (!loginAttempted && token) {
-      setLoginAttempted(true);
-      login(token);
-    }
+    // Prevent react-double render bug by ensuring login request is only made once the component has been mounted for 100ms
+    const timeout = setTimeout(() => {
+      let token = null;
+      if (router && router.query) {
+        token = router.query.token;
+      }
+      if (!loginAttempted && token) {
+        setLoginAttempted(true);
+        login(token);
+      }
+    }, 100);
+
+    return () => {
+      clearTimeout(timeout);
+    };
   }, [router, loginAttempted, login]);
 
   const { user } = authenticatorState;
@@ -64,6 +72,7 @@ const MagicLogin = props => {
             <TextLink href={redirectLocation}>Not been redirected? Click here</TextLink>
           </Paragraph>
         )}
+        {(loggingIn || !loginAttempted) && <Spinner large />}
         <ErrorDisplay message="Something went wrong logging you in" error={logInError}>
           <TextLink href={'/login'}>Try logging in again</TextLink>
         </ErrorDisplay>
