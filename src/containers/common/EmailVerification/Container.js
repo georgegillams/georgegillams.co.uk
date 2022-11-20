@@ -7,6 +7,7 @@ import ErrorDisplay from 'components/common/ErrorDisplay';
 import PageContainer from 'components/common/PageContainer';
 
 import { withRouter } from 'next/router';
+import Spinner from '@george-gillams/components/spinner';
 
 const EmailVerification = props => {
   const [verificationAttempted, setVerificationAttempted] = useState(false);
@@ -19,17 +20,24 @@ const EmailVerification = props => {
     authenticatorState,
   } = props;
 
-  const { verifyError, verifyResult } = verificationState;
+  const { verifyError, verifyResult, verifying } = verificationState;
 
   useEffect(() => {
-    let token = null;
-    if (router && router.query) {
-      token = router.query.token;
-    }
-    if (!verificationAttempted && token) {
-      setVerificationAttempted(true);
-      verify(token);
-    }
+    // Prevent react-double render bug by ensuring login request is only made once the component has been mounted for 100ms
+    const timeout = setTimeout(() => {
+      let token = null;
+      if (router && router.query) {
+        token = router.query.token;
+      }
+      if (!verificationAttempted && token) {
+        setVerificationAttempted(true);
+        verify(token);
+      }
+    }, 100);
+
+    return () => {
+      clearTimeout(timeout);
+    };
   }, [router, verificationAttempted, verify]);
 
   const success = verifyResult && !verifyError;
@@ -42,8 +50,10 @@ const EmailVerification = props => {
             <Paragraph>Thank you for confirming your email address</Paragraph>
           </>
         )}
+        {(verifying || !verificationAttempted) && <Spinner large />}
         <ErrorDisplay message="Something went wrong whilst confirming your email" error={verifyError}></ErrorDisplay>
       </PageTitle>
+
       <DebugObject
         debugTitle="EmailVerification"
         debugObject={{

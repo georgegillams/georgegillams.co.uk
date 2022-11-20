@@ -35,6 +35,7 @@ export function* doLogin() {
     yield put(login.fulfill());
   }
 }
+
 export default function* saga() {
   yield takeLatest(login.TRIGGER, doLogin);
 }
