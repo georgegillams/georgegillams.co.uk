@@ -4,50 +4,50 @@ exports[`<AdminUsers /> should render correctly - index 1`] = `
 <div>
   <div
     aria-label="Loading"
-    class="sc-bYMpWt kficxQ page-containerstyles__StyledPageContainer-sc-19l7k4-0"
+    class="sc-ilhmMj dutEnW page-containerstyles__StyledPageContainer-sc-19l7k4-0"
     width="default"
   >
     <div
-      class="sc-bjfHbI ibzWhy"
+      class="sc-idXgbr irOVYZ"
     >
       <div
-        class="sc-idXgbr jlSlT"
+        class="sc-dIfARi hEqwgc"
         style="margin-left: -0px;"
       />
     </div>
     <div
-      class="sc-bjfHbI jVoIxg"
+      class="sc-idXgbr hApKDz"
       style="margin-top: 1.2rem;"
     >
       <div
-        class="sc-idXgbr jlSlT"
+        class="sc-dIfARi hEqwgc"
         style="margin-left: -0px;"
       />
     </div>
     <div
-      class="sc-bjfHbI jVoIxg"
+      class="sc-idXgbr hApKDz"
       style="margin-top: 1.2rem;"
     >
       <div
-        class="sc-idXgbr jlSlT"
+        class="sc-dIfARi hEqwgc"
         style="margin-left: -0px;"
       />
     </div>
     <div
-      class="sc-bjfHbI jVoIxg"
+      class="sc-idXgbr hApKDz"
       style="margin-top: 1.2rem;"
     >
       <div
-        class="sc-idXgbr jlSlT"
+        class="sc-dIfARi hEqwgc"
         style="margin-left: -0px;"
       />
     </div>
     <div
-      class="sc-bjfHbI jVoIxg"
+      class="sc-idXgbr hApKDz"
       style="margin-top: 1.2rem;"
     >
       <div
-        class="sc-idXgbr jlSlT"
+        class="sc-dIfARi hEqwgc"
         style="margin-left: -0px;"
       />
     </div>
@@ -65,10 +65,14 @@ exports[`<AdminUsers /> should render correctly with admin user 1`] = `
         class="sc-kDvujY bJLGdG"
       >
         <a
-          class="sc-iBYQkv jNlLug"
+          class="sc-gswNZR bbFtvE"
           href="/admin"
         >
-          ⇠ Admin
+          <span
+            class="sc-ftTHYK cRFGYD"
+          >
+            ⇠ Admin
+          </span>
         </a>
       </div>
     </div>
@@ -76,7 +80,7 @@ exports[`<AdminUsers /> should render correctly with admin user 1`] = `
       class="sc-bqWxrE VcTDu"
     >
       <h1
-        class="sc-bcXHqe bHgOFy sc-jrcTuL jiMlto"
+        class="sc-eDvSVe fsBEuM sc-jrcTuL jiMlto"
       >
         Admin users
       </h1>
@@ -86,21 +90,21 @@ exports[`<AdminUsers /> should render correctly with admin user 1`] = `
     class="stackstyles__StyledHStack-sc-1m733wj-1 fnxnys"
   >
     <button
-      class="sc-dmctIk cEWxAH outer"
+      class="sc-kgTSHT bVHzyr outer"
       type="button"
     >
       <span
-        class="sc-fLcnxK fqTbAl"
+        class="sc-bBABsx fsRcPl"
       >
         Reload users
       </span>
     </button>
     <button
-      class="sc-dmctIk cEWxAH outer"
+      class="sc-kgTSHT bVHzyr outer"
       type="button"
     >
       <span
-        class="sc-fLcnxK fqTbAl"
+        class="sc-bBABsx fsRcPl"
       >
         Show filters
       </span>
@@ -115,36 +119,31 @@ exports[`<AdminUsers /> should render correctly with admin user 1`] = `
       <div
         class="stackstyles__StyledVStack-sc-1m733wj-0 dmknRP"
       >
-        <a
-          class="sc-cwSeag cWIIHC"
-          href="/admin/users?highlight=new"
+        <div
+          class="sc-gikAfH dTPGls"
         >
           <div
-            class="sc-lllmON guUaQC"
+            class="sc-ezOQGI kvCBJt"
+          />
+          <div
+            class="sc-bYMpWt dhEwtI"
           >
             <div
-              class="sc-iJnaPW erCkEd"
-            />
-            <div
-              class="sc-gikAfH hfGgAP"
+              class="split-detail-itemstyles__Item-sc-5gess9-0 eDQpMP"
             >
               <div
-                class="split-detail-itemstyles__Item-sc-5gess9-0 eDQpMP"
+                class="sc-hBxehG julUME"
               >
-                <div
-                  class="sc-ksBlkl gDlyuV"
+                <h1
+                  class="sc-gKPRtg jJVvWo sc-bjfHbI iYWdbA"
+                  id="new-+"
                 >
-                  <h1
-                    class="sc-dkrFOg eRKGDm sc-fEXmlR eZgzot"
-                    id="new-+"
-                  >
-                    New +
-                  </h1>
-                </div>
+                  New +
+                </h1>
               </div>
             </div>
           </div>
-        </a>
+        </div>
       </div>
     </div>
   </div>
@@ -161,10 +160,14 @@ exports[`<AdminUsers /> should render correctly with createError 1`] = `
         class="sc-kDvujY bJLGdG"
       >
         <a
-          class="sc-iBYQkv jNlLug"
+          class="sc-gswNZR bbFtvE"
           href="/admin"
         >
-          ⇠ Admin
+          <span
+            class="sc-ftTHYK cRFGYD"
+          >
+            ⇠ Admin
+          </span>
         </a>
       </div>
     </div>
@@ -172,7 +175,7 @@ exports[`<AdminUsers /> should render correctly with createError 1`] = `
       class="sc-bqWxrE VcTDu"
     >
       <h1
-        class="sc-bcXHqe bHgOFy sc-jrcTuL jiMlto"
+        class="sc-eDvSVe fsBEuM sc-jrcTuL jiMlto"
       >
         Admin users
       </h1>
@@ -182,21 +185,21 @@ exports[`<AdminUsers /> should render correctly with createError 1`] = `
     class="stackstyles__StyledHStack-sc-1m733wj-1 fnxnys"
   >
     <button
-      class="sc-dmctIk cEWxAH outer"
+      class="sc-kgTSHT bVHzyr outer"
       type="button"
     >
       <span
-        class="sc-fLcnxK fqTbAl"
+        class="sc-bBABsx fsRcPl"
       >
         Reload users
       </span>
     </button>
     <button
-      class="sc-dmctIk cEWxAH outer"
+      class="sc-kgTSHT bVHzyr outer"
       type="button"
     >
       <span
-        class="sc-fLcnxK fqTbAl"
+        class="sc-bBABsx fsRcPl"
       >
         Show filters
       </span>
@@ -211,36 +214,31 @@ exports[`<AdminUsers /> should render correctly with createError 1`] = `
       <div
         class="stackstyles__StyledVStack-sc-1m733wj-0 dmknRP"
       >
-        <a
-          class="sc-cwSeag cWIIHC"
-          href="/admin/users?highlight=new"
+        <div
+          class="sc-gikAfH dTPGls"
         >
           <div
-            class="sc-lllmON guUaQC"
+            class="sc-ezOQGI kvCBJt"
+          />
+          <div
+            class="sc-bYMpWt dhEwtI"
           >
             <div
-              class="sc-iJnaPW erCkEd"
-            />
-            <div
-              class="sc-gikAfH hfGgAP"
+              class="split-detail-itemstyles__Item-sc-5gess9-0 eDQpMP"
             >
               <div
-                class="split-detail-itemstyles__Item-sc-5gess9-0 eDQpMP"
+                class="sc-hBxehG julUME"
               >
-                <div
-                  class="sc-ksBlkl gDlyuV"
+                <h1
+                  class="sc-gKPRtg jJVvWo sc-bjfHbI iYWdbA"
+                  id="new-+"
                 >
-                  <h1
-                    class="sc-dkrFOg eRKGDm sc-fEXmlR eZgzot"
-                    id="new-+"
-                  >
-                    New +
-                  </h1>
-                </div>
+                  New +
+                </h1>
               </div>
             </div>
           </div>
-        </a>
+        </div>
       </div>
     </div>
   </div>
@@ -257,10 +255,14 @@ exports[`<AdminUsers /> should render correctly with creating=true 1`] = `
         class="sc-kDvujY bJLGdG"
       >
         <a
-          class="sc-iBYQkv jNlLug"
+          class="sc-gswNZR bbFtvE"
           href="/admin"
         >
-          ⇠ Admin
+          <span
+            class="sc-ftTHYK cRFGYD"
+          >
+            ⇠ Admin
+          </span>
         </a>
       </div>
     </div>
@@ -268,7 +270,7 @@ exports[`<AdminUsers /> should render correctly with creating=true 1`] = `
       class="sc-bqWxrE VcTDu"
     >
       <h1
-        class="sc-bcXHqe bHgOFy sc-jrcTuL jiMlto"
+        class="sc-eDvSVe fsBEuM sc-jrcTuL jiMlto"
       >
         Admin users
       </h1>
@@ -278,21 +280,21 @@ exports[`<AdminUsers /> should render correctly with creating=true 1`] = `
     class="stackstyles__StyledHStack-sc-1m733wj-1 fnxnys"
   >
     <button
-      class="sc-dmctIk cEWxAH outer"
+      class="sc-kgTSHT bVHzyr outer"
       type="button"
     >
       <span
-        class="sc-fLcnxK fqTbAl"
+        class="sc-bBABsx fsRcPl"
       >
         Reload users
       </span>
     </button>
     <button
-      class="sc-dmctIk cEWxAH outer"
+      class="sc-kgTSHT bVHzyr outer"
       type="button"
     >
       <span
-        class="sc-fLcnxK fqTbAl"
+        class="sc-bBABsx fsRcPl"
       >
         Show filters
       </span>
@@ -307,36 +309,31 @@ exports[`<AdminUsers /> should render correctly with creating=true 1`] = `
       <div
         class="stackstyles__StyledVStack-sc-1m733wj-0 dmknRP"
       >
-        <a
-          class="sc-cwSeag cWIIHC"
-          href="/admin/users?highlight=new"
+        <div
+          class="sc-gikAfH dTPGls"
         >
           <div
-            class="sc-lllmON guUaQC"
+            class="sc-ezOQGI kvCBJt"
+          />
+          <div
+            class="sc-bYMpWt dhEwtI"
           >
             <div
-              class="sc-iJnaPW erCkEd"
-            />
-            <div
-              class="sc-gikAfH hfGgAP"
+              class="split-detail-itemstyles__Item-sc-5gess9-0 eDQpMP"
             >
               <div
-                class="split-detail-itemstyles__Item-sc-5gess9-0 eDQpMP"
+                class="sc-hBxehG julUME"
               >
-                <div
-                  class="sc-ksBlkl gDlyuV"
+                <h1
+                  class="sc-gKPRtg jJVvWo sc-bjfHbI iYWdbA"
+                  id="new-+"
                 >
-                  <h1
-                    class="sc-dkrFOg eRKGDm sc-fEXmlR eZgzot"
-                    id="new-+"
-                  >
-                    New +
-                  </h1>
-                </div>
+                  New +
+                </h1>
               </div>
             </div>
           </div>
-        </a>
+        </div>
       </div>
     </div>
   </div>
@@ -347,50 +344,50 @@ exports[`<AdminUsers /> should render correctly with initial state 1`] = `
 <div>
   <div
     aria-label="Loading"
-    class="sc-bYMpWt kficxQ page-containerstyles__StyledPageContainer-sc-19l7k4-0"
+    class="sc-ilhmMj dutEnW page-containerstyles__StyledPageContainer-sc-19l7k4-0"
     width="default"
   >
     <div
-      class="sc-bjfHbI ibzWhy"
+      class="sc-idXgbr irOVYZ"
     >
       <div
-        class="sc-idXgbr jlSlT"
+        class="sc-dIfARi hEqwgc"
         style="margin-left: -0px;"
       />
     </div>
     <div
-      class="sc-bjfHbI jVoIxg"
+      class="sc-idXgbr hApKDz"
       style="margin-top: 1.2rem;"
     >
       <div
-        class="sc-idXgbr jlSlT"
+        class="sc-dIfARi hEqwgc"
         style="margin-left: -0px;"
       />
     </div>
     <div
-      class="sc-bjfHbI jVoIxg"
+      class="sc-idXgbr hApKDz"
       style="margin-top: 1.2rem;"
     >
       <div
-        class="sc-idXgbr jlSlT"
+        class="sc-dIfARi hEqwgc"
         style="margin-left: -0px;"
       />
     </div>
     <div
-      class="sc-bjfHbI jVoIxg"
+      class="sc-idXgbr hApKDz"
       style="margin-top: 1.2rem;"
     >
       <div
-        class="sc-idXgbr jlSlT"
+        class="sc-dIfARi hEqwgc"
         style="margin-left: -0px;"
       />
     </div>
     <div
-      class="sc-bjfHbI jVoIxg"
+      class="sc-idXgbr hApKDz"
       style="margin-top: 1.2rem;"
     >
       <div
-        class="sc-idXgbr jlSlT"
+        class="sc-dIfARi hEqwgc"
         style="margin-left: -0px;"
       />
     </div>
@@ -408,10 +405,14 @@ exports[`<AdminUsers /> should render correctly with loadError 1`] = `
         class="sc-kDvujY bJLGdG"
       >
         <a
-          class="sc-iBYQkv jNlLug"
+          class="sc-gswNZR bbFtvE"
           href="/admin"
         >
-          ⇠ Admin
+          <span
+            class="sc-ftTHYK cRFGYD"
+          >
+            ⇠ Admin
+          </span>
         </a>
       </div>
     </div>
@@ -419,7 +420,7 @@ exports[`<AdminUsers /> should render correctly with loadError 1`] = `
       class="sc-bqWxrE VcTDu"
     >
       <h1
-        class="sc-bcXHqe bHgOFy sc-jrcTuL jiMlto"
+        class="sc-eDvSVe fsBEuM sc-jrcTuL jiMlto"
       >
         Admin users
       </h1>
@@ -429,31 +430,31 @@ exports[`<AdminUsers /> should render correctly with loadError 1`] = `
     class="stackstyles__StyledHStack-sc-1m733wj-1 fnxnys"
   >
     <button
-      class="sc-dmctIk cEWxAH outer"
+      class="sc-kgTSHT bVHzyr outer"
       type="button"
     >
       <span
-        class="sc-fLcnxK fqTbAl"
+        class="sc-bBABsx fsRcPl"
       >
         Reload users
       </span>
     </button>
     <button
-      class="sc-dmctIk cEWxAH outer"
+      class="sc-kgTSHT bVHzyr outer"
       type="button"
     >
       <span
-        class="sc-fLcnxK fqTbAl"
+        class="sc-bBABsx fsRcPl"
       >
         Show filters
       </span>
     </button>
   </div>
   <span
-    class="sc-ezOQGI jPOzit"
+    class="sc-kMjNwy cyunjC"
   >
     <span
-      class="sc-bCfvAP kXYLUW"
+      class="sc-AHaJN hrLlWK"
     >
       Could not load users
       <br />
@@ -469,36 +470,31 @@ exports[`<AdminUsers /> should render correctly with loadError 1`] = `
       <div
         class="stackstyles__StyledVStack-sc-1m733wj-0 dmknRP"
       >
-        <a
-          class="sc-cwSeag cWIIHC"
-          href="/admin/users?highlight=new"
+        <div
+          class="sc-gikAfH dTPGls"
         >
           <div
-            class="sc-lllmON guUaQC"
+            class="sc-ezOQGI kvCBJt"
+          />
+          <div
+            class="sc-bYMpWt dhEwtI"
           >
             <div
-              class="sc-iJnaPW erCkEd"
-            />
-            <div
-              class="sc-gikAfH hfGgAP"
+              class="split-detail-itemstyles__Item-sc-5gess9-0 eDQpMP"
             >
               <div
-                class="split-detail-itemstyles__Item-sc-5gess9-0 eDQpMP"
+                class="sc-hBxehG julUME"
               >
-                <div
-                  class="sc-ksBlkl gDlyuV"
+                <h1
+                  class="sc-gKPRtg jJVvWo sc-bjfHbI iYWdbA"
+                  id="new-+"
                 >
-                  <h1
-                    class="sc-dkrFOg eRKGDm sc-fEXmlR eZgzot"
-                    id="new-+"
-                  >
-                    New +
-                  </h1>
-                </div>
+                  New +
+                </h1>
               </div>
             </div>
           </div>
-        </a>
+        </div>
       </div>
     </div>
   </div>
@@ -515,10 +511,14 @@ exports[`<AdminUsers /> should render correctly with loading=true 1`] = `
         class="sc-kDvujY bJLGdG"
       >
         <a
-          class="sc-iBYQkv jNlLug"
+          class="sc-gswNZR bbFtvE"
           href="/admin"
         >
-          ⇠ Admin
+          <span
+            class="sc-ftTHYK cRFGYD"
+          >
+            ⇠ Admin
+          </span>
         </a>
       </div>
     </div>
@@ -526,7 +526,7 @@ exports[`<AdminUsers /> should render correctly with loading=true 1`] = `
       class="sc-bqWxrE VcTDu"
     >
       <h1
-        class="sc-bcXHqe bHgOFy sc-jrcTuL jiMlto"
+        class="sc-eDvSVe fsBEuM sc-jrcTuL jiMlto"
       >
         Admin users
       </h1>
@@ -536,55 +536,55 @@ exports[`<AdminUsers /> should render correctly with loading=true 1`] = `
     class="stackstyles__StyledHStack-sc-1m733wj-1 fnxnys"
   >
     <button
-      class="sc-dmctIk kcMKQX outer"
+      class="sc-kgTSHT kfSbgz outer"
       disabled=""
       type="button"
     >
       <span
-        class="sc-fLcnxK gaAjG"
+        class="sc-bBABsx kGAFze"
       >
         Reload users
       </span>
       <div
         aria-hidden="true"
-        class="sc-bBABsx kWWQKm"
+        class="sc-iveFHk fcnnul"
       >
         <div
-          class="sc-dIfARi hGlUnw"
+          class="sc-hHTYSt faOWmX"
         >
           <div
-            class="sc-hHTYSt kKPHak"
+            class="sc-dmctIk cXBZJa"
           />
           <div
-            class="sc-hHTYSt intAUs"
+            class="sc-dmctIk geFBjy"
           />
           <div
-            class="sc-hHTYSt fkjyfb"
+            class="sc-dmctIk izRBrV"
           />
           <div
-            class="sc-hHTYSt bGhnZe"
+            class="sc-dmctIk jshiOg"
           />
           <div
-            class="sc-hHTYSt iMblJ"
+            class="sc-dmctIk eXRsjf"
           />
           <div
-            class="sc-hHTYSt ihXoZg"
+            class="sc-dmctIk ktWufq"
           />
           <div
-            class="sc-hHTYSt cLLCzE"
+            class="sc-dmctIk dtOXNO"
           />
           <div
-            class="sc-hHTYSt bYMKzs"
+            class="sc-dmctIk cQoAua"
           />
         </div>
       </div>
     </button>
     <button
-      class="sc-dmctIk cEWxAH outer"
+      class="sc-kgTSHT bVHzyr outer"
       type="button"
     >
       <span
-        class="sc-fLcnxK fqTbAl"
+        class="sc-bBABsx fsRcPl"
       >
         Show filters
       </span>
@@ -599,36 +599,31 @@ exports[`<AdminUsers /> should render correctly with loading=true 1`] = `
       <div
         class="stackstyles__StyledVStack-sc-1m733wj-0 dmknRP"
       >
-        <a
-          class="sc-cwSeag cWIIHC"
-          href="/admin/users?highlight=new"
+        <div
+          class="sc-gikAfH dTPGls"
         >
           <div
-            class="sc-lllmON guUaQC"
+            class="sc-ezOQGI kvCBJt"
+          />
+          <div
+            class="sc-bYMpWt dhEwtI"
           >
             <div
-              class="sc-iJnaPW erCkEd"
-            />
-            <div
-              class="sc-gikAfH hfGgAP"
+              class="split-detail-itemstyles__Item-sc-5gess9-0 eDQpMP"
             >
               <div
-                class="split-detail-itemstyles__Item-sc-5gess9-0 eDQpMP"
+                class="sc-hBxehG julUME"
               >
-                <div
-                  class="sc-ksBlkl gDlyuV"
+                <h1
+                  class="sc-gKPRtg jJVvWo sc-bjfHbI iYWdbA"
+                  id="new-+"
                 >
-                  <h1
-                    class="sc-dkrFOg eRKGDm sc-fEXmlR eZgzot"
-                    id="new-+"
-                  >
-                    New +
-                  </h1>
-                </div>
+                  New +
+                </h1>
               </div>
             </div>
           </div>
-        </a>
+        </div>
       </div>
     </div>
   </div>
@@ -645,10 +640,14 @@ exports[`<AdminUsers /> should render correctly with removeError 1`] = `
         class="sc-kDvujY bJLGdG"
       >
         <a
-          class="sc-iBYQkv jNlLug"
+          class="sc-gswNZR bbFtvE"
           href="/admin"
         >
-          ⇠ Admin
+          <span
+            class="sc-ftTHYK cRFGYD"
+          >
+            ⇠ Admin
+          </span>
         </a>
       </div>
     </div>
@@ -656,7 +655,7 @@ exports[`<AdminUsers /> should render correctly with removeError 1`] = `
       class="sc-bqWxrE VcTDu"
     >
       <h1
-        class="sc-bcXHqe bHgOFy sc-jrcTuL jiMlto"
+        class="sc-eDvSVe fsBEuM sc-jrcTuL jiMlto"
       >
         Admin users
       </h1>
@@ -666,21 +665,21 @@ exports[`<AdminUsers /> should render correctly with removeError 1`] = `
     class="stackstyles__StyledHStack-sc-1m733wj-1 fnxnys"
   >
     <button
-      class="sc-dmctIk cEWxAH outer"
+      class="sc-kgTSHT bVHzyr outer"
       type="button"
     >
       <span
-        class="sc-fLcnxK fqTbAl"
+        class="sc-bBABsx fsRcPl"
       >
         Reload users
       </span>
     </button>
     <button
-      class="sc-dmctIk cEWxAH outer"
+      class="sc-kgTSHT bVHzyr outer"
       type="button"
     >
       <span
-        class="sc-fLcnxK fqTbAl"
+        class="sc-bBABsx fsRcPl"
       >
         Show filters
       </span>
@@ -695,36 +694,31 @@ exports[`<AdminUsers /> should render correctly with removeError 1`] = `
       <div
         class="stackstyles__StyledVStack-sc-1m733wj-0 dmknRP"
       >
-        <a
-          class="sc-cwSeag cWIIHC"
-          href="/admin/users?highlight=new"
+        <div
+          class="sc-gikAfH dTPGls"
         >
           <div
-            class="sc-lllmON guUaQC"
+            class="sc-ezOQGI kvCBJt"
+          />
+          <div
+            class="sc-bYMpWt dhEwtI"
           >
             <div
-              class="sc-iJnaPW erCkEd"
-            />
-            <div
-              class="sc-gikAfH hfGgAP"
+              class="split-detail-itemstyles__Item-sc-5gess9-0 eDQpMP"
             >
               <div
-                class="split-detail-itemstyles__Item-sc-5gess9-0 eDQpMP"
+                class="sc-hBxehG julUME"
               >
-                <div
-                  class="sc-ksBlkl gDlyuV"
+                <h1
+                  class="sc-gKPRtg jJVvWo sc-bjfHbI iYWdbA"
+                  id="new-+"
                 >
-                  <h1
-                    class="sc-dkrFOg eRKGDm sc-fEXmlR eZgzot"
-                    id="new-+"
-                  >
-                    New +
-                  </h1>
-                </div>
+                  New +
+                </h1>
               </div>
             </div>
           </div>
-        </a>
+        </div>
       </div>
     </div>
   </div>
@@ -741,10 +735,14 @@ exports[`<AdminUsers /> should render correctly with removing=true 1`] = `
         class="sc-kDvujY bJLGdG"
       >
         <a
-          class="sc-iBYQkv jNlLug"
+          class="sc-gswNZR bbFtvE"
           href="/admin"
         >
-          ⇠ Admin
+          <span
+            class="sc-ftTHYK cRFGYD"
+          >
+            ⇠ Admin
+          </span>
         </a>
       </div>
     </div>
@@ -752,7 +750,7 @@ exports[`<AdminUsers /> should render correctly with removing=true 1`] = `
       class="sc-bqWxrE VcTDu"
     >
       <h1
-        class="sc-bcXHqe bHgOFy sc-jrcTuL jiMlto"
+        class="sc-eDvSVe fsBEuM sc-jrcTuL jiMlto"
       >
         Admin users
       </h1>
@@ -762,21 +760,21 @@ exports[`<AdminUsers /> should render correctly with removing=true 1`] = `
     class="stackstyles__StyledHStack-sc-1m733wj-1 fnxnys"
   >
     <button
-      class="sc-dmctIk cEWxAH outer"
+      class="sc-kgTSHT bVHzyr outer"
       type="button"
     >
       <span
-        class="sc-fLcnxK fqTbAl"
+        class="sc-bBABsx fsRcPl"
       >
         Reload users
       </span>
     </button>
     <button
-      class="sc-dmctIk cEWxAH outer"
+      class="sc-kgTSHT bVHzyr outer"
       type="button"
     >
       <span
-        class="sc-fLcnxK fqTbAl"
+        class="sc-bBABsx fsRcPl"
       >
         Show filters
       </span>
@@ -791,36 +789,31 @@ exports[`<AdminUsers /> should render correctly with removing=true 1`] = `
       <div
         class="stackstyles__StyledVStack-sc-1m733wj-0 dmknRP"
       >
-        <a
-          class="sc-cwSeag cWIIHC"
-          href="/admin/users?highlight=new"
+        <div
+          class="sc-gikAfH dTPGls"
         >
           <div
-            class="sc-lllmON guUaQC"
+            class="sc-ezOQGI kvCBJt"
+          />
+          <div
+            class="sc-bYMpWt dhEwtI"
           >
             <div
-              class="sc-iJnaPW erCkEd"
-            />
-            <div
-              class="sc-gikAfH hfGgAP"
+              class="split-detail-itemstyles__Item-sc-5gess9-0 eDQpMP"
             >
               <div
-                class="split-detail-itemstyles__Item-sc-5gess9-0 eDQpMP"
+                class="sc-hBxehG julUME"
               >
-                <div
-                  class="sc-ksBlkl gDlyuV"
+                <h1
+                  class="sc-gKPRtg jJVvWo sc-bjfHbI iYWdbA"
+                  id="new-+"
                 >
-                  <h1
-                    class="sc-dkrFOg eRKGDm sc-fEXmlR eZgzot"
-                    id="new-+"
-                  >
-                    New +
-                  </h1>
-                </div>
+                  New +
+                </h1>
               </div>
             </div>
           </div>
-        </a>
+        </div>
       </div>
     </div>
   </div>
@@ -837,10 +830,14 @@ exports[`<AdminUsers /> should render correctly with requestError 1`] = `
         class="sc-kDvujY bJLGdG"
       >
         <a
-          class="sc-iBYQkv jNlLug"
+          class="sc-gswNZR bbFtvE"
           href="/admin"
         >
-          ⇠ Admin
+          <span
+            class="sc-ftTHYK cRFGYD"
+          >
+            ⇠ Admin
+          </span>
         </a>
       </div>
     </div>
@@ -848,7 +845,7 @@ exports[`<AdminUsers /> should render correctly with requestError 1`] = `
       class="sc-bqWxrE VcTDu"
     >
       <h1
-        class="sc-bcXHqe bHgOFy sc-jrcTuL jiMlto"
+        class="sc-eDvSVe fsBEuM sc-jrcTuL jiMlto"
       >
         Admin users
       </h1>
@@ -858,21 +855,21 @@ exports[`<AdminUsers /> should render correctly with requestError 1`] = `
     class="stackstyles__StyledHStack-sc-1m733wj-1 fnxnys"
   >
     <button
-      class="sc-dmctIk cEWxAH outer"
+      class="sc-kgTSHT bVHzyr outer"
       type="button"
     >
       <span
-        class="sc-fLcnxK fqTbAl"
+        class="sc-bBABsx fsRcPl"
       >
         Reload users
       </span>
     </button>
     <button
-      class="sc-dmctIk cEWxAH outer"
+      class="sc-kgTSHT bVHzyr outer"
       type="button"
     >
       <span
-        class="sc-fLcnxK fqTbAl"
+        class="sc-bBABsx fsRcPl"
       >
         Show filters
       </span>
@@ -887,36 +884,31 @@ exports[`<AdminUsers /> should render correctly with requestError 1`] = `
       <div
         class="stackstyles__StyledVStack-sc-1m733wj-0 dmknRP"
       >
-        <a
-          class="sc-cwSeag cWIIHC"
-          href="/admin/users?highlight=new"
+        <div
+          class="sc-gikAfH dTPGls"
         >
           <div
-            class="sc-lllmON guUaQC"
+            class="sc-ezOQGI kvCBJt"
+          />
+          <div
+            class="sc-bYMpWt dhEwtI"
           >
             <div
-              class="sc-iJnaPW erCkEd"
-            />
-            <div
-              class="sc-gikAfH hfGgAP"
+              class="split-detail-itemstyles__Item-sc-5gess9-0 eDQpMP"
             >
               <div
-                class="split-detail-itemstyles__Item-sc-5gess9-0 eDQpMP"
+                class="sc-hBxehG julUME"
               >
-                <div
-                  class="sc-ksBlkl gDlyuV"
+                <h1
+                  class="sc-gKPRtg jJVvWo sc-bjfHbI iYWdbA"
+                  id="new-+"
                 >
-                  <h1
-                    class="sc-dkrFOg eRKGDm sc-fEXmlR eZgzot"
-                    id="new-+"
-                  >
-                    New +
-                  </h1>
-                </div>
+                  New +
+                </h1>
               </div>
             </div>
           </div>
-        </a>
+        </div>
       </div>
     </div>
   </div>
@@ -933,10 +925,14 @@ exports[`<AdminUsers /> should render correctly with requesting=true 1`] = `
         class="sc-kDvujY bJLGdG"
       >
         <a
-          class="sc-iBYQkv jNlLug"
+          class="sc-gswNZR bbFtvE"
           href="/admin"
         >
-          ⇠ Admin
+          <span
+            class="sc-ftTHYK cRFGYD"
+          >
+            ⇠ Admin
+          </span>
         </a>
       </div>
     </div>
@@ -944,7 +940,7 @@ exports[`<AdminUsers /> should render correctly with requesting=true 1`] = `
       class="sc-bqWxrE VcTDu"
     >
       <h1
-        class="sc-bcXHqe bHgOFy sc-jrcTuL jiMlto"
+        class="sc-eDvSVe fsBEuM sc-jrcTuL jiMlto"
       >
         Admin users
       </h1>
@@ -954,21 +950,21 @@ exports[`<AdminUsers /> should render correctly with requesting=true 1`] = `
     class="stackstyles__StyledHStack-sc-1m733wj-1 fnxnys"
   >
     <button
-      class="sc-dmctIk cEWxAH outer"
+      class="sc-kgTSHT bVHzyr outer"
       type="button"
     >
       <span
-        class="sc-fLcnxK fqTbAl"
+        class="sc-bBABsx fsRcPl"
       >
         Reload users
       </span>
     </button>
     <button
-      class="sc-dmctIk cEWxAH outer"
+      class="sc-kgTSHT bVHzyr outer"
       type="button"
     >
       <span
-        class="sc-fLcnxK fqTbAl"
+        class="sc-bBABsx fsRcPl"
       >
         Show filters
       </span>
@@ -983,36 +979,31 @@ exports[`<AdminUsers /> should render correctly with requesting=true 1`] = `
       <div
         class="stackstyles__StyledVStack-sc-1m733wj-0 dmknRP"
       >
-        <a
-          class="sc-cwSeag cWIIHC"
-          href="/admin/users?highlight=new"
+        <div
+          class="sc-gikAfH dTPGls"
         >
           <div
-            class="sc-lllmON guUaQC"
+            class="sc-ezOQGI kvCBJt"
+          />
+          <div
+            class="sc-bYMpWt dhEwtI"
           >
             <div
-              class="sc-iJnaPW erCkEd"
-            />
-            <div
-              class="sc-gikAfH hfGgAP"
+              class="split-detail-itemstyles__Item-sc-5gess9-0 eDQpMP"
             >
               <div
-                class="split-detail-itemstyles__Item-sc-5gess9-0 eDQpMP"
+                class="sc-hBxehG julUME"
               >
-                <div
-                  class="sc-ksBlkl gDlyuV"
+                <h1
+                  class="sc-gKPRtg jJVvWo sc-bjfHbI iYWdbA"
+                  id="new-+"
                 >
-                  <h1
-                    class="sc-dkrFOg eRKGDm sc-fEXmlR eZgzot"
-                    id="new-+"
-                  >
-                    New +
-                  </h1>
-                </div>
+                  New +
+                </h1>
               </div>
             </div>
           </div>
-        </a>
+        </div>
       </div>
     </div>
   </div>
@@ -1029,10 +1020,14 @@ exports[`<AdminUsers /> should render correctly with updateError 1`] = `
         class="sc-kDvujY bJLGdG"
       >
         <a
-          class="sc-iBYQkv jNlLug"
+          class="sc-gswNZR bbFtvE"
           href="/admin"
         >
-          ⇠ Admin
+          <span
+            class="sc-ftTHYK cRFGYD"
+          >
+            ⇠ Admin
+          </span>
         </a>
       </div>
     </div>
@@ -1040,7 +1035,7 @@ exports[`<AdminUsers /> should render correctly with updateError 1`] = `
       class="sc-bqWxrE VcTDu"
     >
       <h1
-        class="sc-bcXHqe bHgOFy sc-jrcTuL jiMlto"
+        class="sc-eDvSVe fsBEuM sc-jrcTuL jiMlto"
       >
         Admin users
       </h1>
@@ -1050,21 +1045,21 @@ exports[`<AdminUsers /> should render correctly with updateError 1`] = `
     class="stackstyles__StyledHStack-sc-1m733wj-1 fnxnys"
   >
     <button
-      class="sc-dmctIk cEWxAH outer"
+      class="sc-kgTSHT bVHzyr outer"
       type="button"
     >
       <span
-        class="sc-fLcnxK fqTbAl"
+        class="sc-bBABsx fsRcPl"
       >
         Reload users
       </span>
     </button>
     <button
-      class="sc-dmctIk cEWxAH outer"
+      class="sc-kgTSHT bVHzyr outer"
       type="button"
     >
       <span
-        class="sc-fLcnxK fqTbAl"
+        class="sc-bBABsx fsRcPl"
       >
         Show filters
       </span>
@@ -1079,36 +1074,31 @@ exports[`<AdminUsers /> should render correctly with updateError 1`] = `
       <div
         class="stackstyles__StyledVStack-sc-1m733wj-0 dmknRP"
       >
-        <a
-          class="sc-cwSeag cWIIHC"
-          href="/admin/users?highlight=new"
+        <div
+          class="sc-gikAfH dTPGls"
         >
           <div
-            class="sc-lllmON guUaQC"
+            class="sc-ezOQGI kvCBJt"
+          />
+          <div
+            class="sc-bYMpWt dhEwtI"
           >
             <div
-              class="sc-iJnaPW erCkEd"
-            />
-            <div
-              class="sc-gikAfH hfGgAP"
+              class="split-detail-itemstyles__Item-sc-5gess9-0 eDQpMP"
             >
               <div
-                class="split-detail-itemstyles__Item-sc-5gess9-0 eDQpMP"
+                class="sc-hBxehG julUME"
               >
-                <div
-                  class="sc-ksBlkl gDlyuV"
+                <h1
+                  class="sc-gKPRtg jJVvWo sc-bjfHbI iYWdbA"
+                  id="new-+"
                 >
-                  <h1
-                    class="sc-dkrFOg eRKGDm sc-fEXmlR eZgzot"
-                    id="new-+"
-                  >
-                    New +
-                  </h1>
-                </div>
+                  New +
+                </h1>
               </div>
             </div>
           </div>
-        </a>
+        </div>
       </div>
     </div>
   </div>
@@ -1125,10 +1115,14 @@ exports[`<AdminUsers /> should render correctly with updating=true 1`] = `
         class="sc-kDvujY bJLGdG"
       >
         <a
-          class="sc-iBYQkv jNlLug"
+          class="sc-gswNZR bbFtvE"
           href="/admin"
         >
-          ⇠ Admin
+          <span
+            class="sc-ftTHYK cRFGYD"
+          >
+            ⇠ Admin
+          </span>
         </a>
       </div>
     </div>
@@ -1136,7 +1130,7 @@ exports[`<AdminUsers /> should render correctly with updating=true 1`] = `
       class="sc-bqWxrE VcTDu"
     >
       <h1
-        class="sc-bcXHqe bHgOFy sc-jrcTuL jiMlto"
+        class="sc-eDvSVe fsBEuM sc-jrcTuL jiMlto"
       >
         Admin users
       </h1>
@@ -1146,21 +1140,21 @@ exports[`<AdminUsers /> should render correctly with updating=true 1`] = `
     class="stackstyles__StyledHStack-sc-1m733wj-1 fnxnys"
   >
     <button
-      class="sc-dmctIk cEWxAH outer"
+      class="sc-kgTSHT bVHzyr outer"
       type="button"
     >
       <span
-        class="sc-fLcnxK fqTbAl"
+        class="sc-bBABsx fsRcPl"
       >
         Reload users
       </span>
     </button>
     <button
-      class="sc-dmctIk cEWxAH outer"
+      class="sc-kgTSHT bVHzyr outer"
       type="button"
     >
       <span
-        class="sc-fLcnxK fqTbAl"
+        class="sc-bBABsx fsRcPl"
       >
         Show filters
       </span>
@@ -1175,36 +1169,31 @@ exports[`<AdminUsers /> should render correctly with updating=true 1`] = `
       <div
         class="stackstyles__StyledVStack-sc-1m733wj-0 dmknRP"
       >
-        <a
-          class="sc-cwSeag cWIIHC"
-          href="/admin/users?highlight=new"
+        <div
+          class="sc-gikAfH dTPGls"
         >
           <div
-            class="sc-lllmON guUaQC"
+            class="sc-ezOQGI kvCBJt"
+          />
+          <div
+            class="sc-bYMpWt dhEwtI"
           >
             <div
-              class="sc-iJnaPW erCkEd"
-            />
-            <div
-              class="sc-gikAfH hfGgAP"
+              class="split-detail-itemstyles__Item-sc-5gess9-0 eDQpMP"
             >
               <div
-                class="split-detail-itemstyles__Item-sc-5gess9-0 eDQpMP"
+                class="sc-hBxehG julUME"
               >
-                <div
-                  class="sc-ksBlkl gDlyuV"
+                <h1
+                  class="sc-gKPRtg jJVvWo sc-bjfHbI iYWdbA"
+                  id="new-+"
                 >
-                  <h1
-                    class="sc-dkrFOg eRKGDm sc-fEXmlR eZgzot"
-                    id="new-+"
-                  >
-                    New +
-                  </h1>
-                </div>
+                  New +
+                </h1>
               </div>
             </div>
           </div>
-        </a>
+        </div>
       </div>
     </div>
   </div>
@@ -1214,24 +1203,28 @@ exports[`<AdminUsers /> should render correctly with updating=true 1`] = `
 exports[`<AdminUsers /> should render correctly with user 1`] = `
 <div>
   <div
-    class="sc-ksBlkl gDlyuV"
+    class="sc-hBxehG julUME"
   >
     <h1
-      class="sc-gswNZR gzqAHo sc-fEXmlR cIHzsJ"
+      class="sc-jSUZER glQaLI sc-bjfHbI cBkNPA"
       id="admin-only"
     >
       Admin only
     </h1>
     <span
-      class="sc-ezOQGI jPOzit"
+      class="sc-kMjNwy cyunjC"
     >
       You need to be logged in with an admin account to view this content.
       <br />
       <a
-        class="sc-iBYQkv jNlLug"
+        class="sc-gswNZR bbFtvE"
         href="/login"
       >
-        Got a different admin account? Log in here.
+        <span
+          class="sc-ftTHYK cRFGYD"
+        >
+          Got a different admin account? Log in here.
+        </span>
       </a>
     </span>
   </div>
@@ -1248,10 +1241,14 @@ exports[`<AdminUsers /> should render correctly with users 1`] = `
         class="sc-kDvujY bJLGdG"
       >
         <a
-          class="sc-iBYQkv jNlLug"
+          class="sc-gswNZR bbFtvE"
           href="/admin"
         >
-          ⇠ Admin
+          <span
+            class="sc-ftTHYK cRFGYD"
+          >
+            ⇠ Admin
+          </span>
         </a>
       </div>
     </div>
@@ -1259,7 +1256,7 @@ exports[`<AdminUsers /> should render correctly with users 1`] = `
       class="sc-bqWxrE VcTDu"
     >
       <h1
-        class="sc-bcXHqe bHgOFy sc-jrcTuL jiMlto"
+        class="sc-eDvSVe fsBEuM sc-jrcTuL jiMlto"
       >
         Admin users
       </h1>
@@ -1269,28 +1266,28 @@ exports[`<AdminUsers /> should render correctly with users 1`] = `
     class="stackstyles__StyledHStack-sc-1m733wj-1 fnxnys"
   >
     <button
-      class="sc-dmctIk cEWxAH outer"
+      class="sc-kgTSHT bVHzyr outer"
       type="button"
     >
       <span
-        class="sc-fLcnxK fqTbAl"
+        class="sc-bBABsx fsRcPl"
       >
         Reload users
       </span>
     </button>
     <button
-      class="sc-dmctIk cEWxAH outer"
+      class="sc-kgTSHT bVHzyr outer"
       type="button"
     >
       <span
-        class="sc-fLcnxK fqTbAl"
+        class="sc-bBABsx fsRcPl"
       >
         Show filters
       </span>
     </button>
   </div>
   <span
-    class="sc-ezOQGI jPOzit admin-usersstyles__Count-sc-1qwrqg1-0 cmWvHQ"
+    class="sc-kMjNwy cyunjC admin-usersstyles__Count-sc-1qwrqg1-0 cmWvHQ"
   >
     Showing 
     3
@@ -1307,150 +1304,127 @@ exports[`<AdminUsers /> should render correctly with users 1`] = `
       <div
         class="stackstyles__StyledVStack-sc-1m733wj-0 dmknRP"
       >
-        <a
-          class="sc-cwSeag cWIIHC"
-          href="/admin/users?highlight=new"
+        <div
+          class="sc-gikAfH dTPGls"
         >
           <div
-            class="sc-lllmON guUaQC"
+            class="sc-ezOQGI kvCBJt"
+          />
+          <div
+            class="sc-bYMpWt dhEwtI"
           >
             <div
-              class="sc-iJnaPW erCkEd"
-            />
-            <div
-              class="sc-gikAfH hfGgAP"
+              class="split-detail-itemstyles__Item-sc-5gess9-0 eDQpMP"
             >
               <div
-                class="split-detail-itemstyles__Item-sc-5gess9-0 eDQpMP"
+                class="sc-hBxehG julUME"
               >
-                <div
-                  class="sc-ksBlkl gDlyuV"
+                <h1
+                  class="sc-gKPRtg jJVvWo sc-bjfHbI iYWdbA"
+                  id="new-+"
                 >
-                  <h1
-                    class="sc-dkrFOg eRKGDm sc-fEXmlR eZgzot"
-                    id="new-+"
-                  >
-                    New +
-                  </h1>
-                </div>
+                  New +
+                </h1>
               </div>
             </div>
           </div>
-        </a>
-        <a
-          class="sc-cwSeag cWIIHC"
-          href="/admin/users?highlight=1"
-          id="1"
+        </div>
+        <div
+          class="sc-gikAfH dTPGls"
         >
           <div
-            class="sc-lllmON guUaQC"
+            class="sc-ezOQGI kvCBJt"
+          />
+          <div
+            class="sc-bYMpWt dhEwtI"
           >
             <div
-              class="sc-iJnaPW erCkEd"
-            />
-            <div
-              class="sc-gikAfH hfGgAP"
+              class="split-detail-itemstyles__Item-sc-5gess9-0 eDQpMP"
             >
               <div
-                class="split-detail-itemstyles__Item-sc-5gess9-0 eDQpMP"
+                class="sc-hBxehG julUME"
               >
-                <div
-                  class="sc-ksBlkl gDlyuV"
+                <h1
+                  class="sc-gKPRtg jJVvWo sc-bjfHbI iYWdbA"
+                  id="name"
                 >
-                  <h1
-                    class="sc-dkrFOg eRKGDm sc-fEXmlR eZgzot"
-                    id="name"
-                  >
-                    name
-                  </h1>
-                  <span
-                    class="sc-ezOQGI jPOzit"
-                  >
-                    <br />
-                    id: 
-                    1
-                  </span>
-                </div>
+                  name
+                </h1>
+                <span
+                  class="sc-kMjNwy cyunjC"
+                >
+                  <br />
+                  id: 
+                  1
+                </span>
               </div>
             </div>
           </div>
-        </a>
-        <a
-          class="sc-cwSeag cWIIHC"
-          href="/admin/users?highlight=2"
-          id="2"
+        </div>
+        <div
+          class="sc-gikAfH dTPGls"
         >
           <div
-            class="sc-lllmON guUaQC"
+            class="sc-ezOQGI kvCBJt"
+          />
+          <div
+            class="sc-bYMpWt dhEwtI"
           >
             <div
-              class="sc-iJnaPW erCkEd"
-            />
-            <div
-              class="sc-gikAfH hfGgAP"
+              class="split-detail-itemstyles__Item-sc-5gess9-0 eDQpMP"
             >
               <div
-                class="split-detail-itemstyles__Item-sc-5gess9-0 eDQpMP"
+                class="sc-hBxehG julUME"
               >
-                <div
-                  class="sc-ksBlkl gDlyuV"
+                <h1
+                  class="sc-gKPRtg jJVvWo sc-bjfHbI iYWdbA"
+                  id="another"
                 >
-                  <h1
-                    class="sc-dkrFOg eRKGDm sc-fEXmlR eZgzot"
-                    id="another"
-                  >
-                    another
-                  </h1>
-                  <span
-                    class="sc-ezOQGI jPOzit"
-                  >
-                    <br />
-                    id: 
-                    2
-                  </span>
-                </div>
+                  another
+                </h1>
+                <span
+                  class="sc-kMjNwy cyunjC"
+                >
+                  <br />
+                  id: 
+                  2
+                </span>
               </div>
             </div>
           </div>
-        </a>
-        <a
-          class="sc-cwSeag cWIIHC"
-          href="/admin/users?highlight=3"
-          id="3"
+        </div>
+        <div
+          class="sc-gikAfH dTPGls"
         >
           <div
-            class="sc-lllmON guUaQC"
+            class="sc-ezOQGI kvCBJt"
+          />
+          <div
+            class="sc-bYMpWt dhEwtI"
           >
             <div
-              class="sc-iJnaPW erCkEd"
-            />
-            <div
-              class="sc-gikAfH hfGgAP"
+              class="split-detail-itemstyles__Item-sc-5gess9-0 eDQpMP"
             >
               <div
-                class="split-detail-itemstyles__Item-sc-5gess9-0 eDQpMP"
+                class="sc-hBxehG julUME"
               >
-                <div
-                  class="sc-ksBlkl gDlyuV"
+                <h1
+                  class="sc-gKPRtg jJVvWo sc-bjfHbI iYWdbA"
+                  id="a-third"
                 >
-                  <h1
-                    class="sc-dkrFOg eRKGDm sc-fEXmlR eZgzot"
-                    id="a-third"
-                  >
-                    a third
-                  </h1>
-                  <span
-                    class="sc-ezOQGI jPOzit"
-                  >
-                    <br />
-                    id: 
-                    3
-                  </span>
-                </div>
+                  a third
+                </h1>
+                <span
+                  class="sc-kMjNwy cyunjC"
+                >
+                  <br />
+                  id: 
+                  3
+                </span>
               </div>
             </div>
           </div>
-        </a>
+        </div>
       </div>
     </div>
   </div>

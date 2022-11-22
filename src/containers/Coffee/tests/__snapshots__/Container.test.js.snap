@@ -3,7 +3,7 @@
 exports[`<Coffee /> should render correctly 1`] = `
 <div>
   <div
-    class="sc-ksBlkl ifZhlm page-containerstyles__StyledPageContainer-sc-19l7k4-0"
+    class="sc-hBxehG ekKVJL page-containerstyles__StyledPageContainer-sc-19l7k4-0"
     width="default"
   >
     <div
@@ -21,18 +21,18 @@ exports[`<Coffee /> should render correctly 1`] = `
           class="sc-bqWxrE VcTDu"
         >
           <h1
-            class="sc-bcXHqe bHgOFy sc-jrcTuL ewlzmZ"
+            class="sc-eDvSVe fsBEuM sc-jrcTuL ewlzmZ"
           >
             Buy me a coffee
           </h1>
         </div>
         <span
-          class="sc-hBxehG jiKGja"
+          class="sc-fnGiBr hCJYcY"
         >
           Thanks for thinking of me and considering sending some cash my way. As a developer of free apps, I really appreciate people who want to pay me for my work.
         </span>
         <span
-          class="sc-hBxehG jiKGja"
+          class="sc-fnGiBr hCJYcY"
         >
           The world is kinda on fire right now though, so if you have spare cash, please consider sending it to one of these great causes instead:
         </span>
@@ -42,17 +42,21 @@ exports[`<Coffee /> should render correctly 1`] = `
         >
           <a
             aria-label="DEC Ukraine Humanitarian Appeal (opens in a new tab)"
-            class="sc-iBYQkv jNlLug"
+            class="sc-gswNZR bbFtvE"
             href="https://donation.dec.org.uk/ukraine-humanitarian-appeal"
             rel="noopener noreferrer"
             target="_blank"
           >
-            DEC Ukraine Humanitarian Appeal
+            <span
+              class="sc-ftTHYK cRFGYD"
+            >
+              DEC Ukraine Humanitarian Appeal
+            </span>
             <div
-              class="sc-ftTHYK dbfjGz"
+              class="sc-dkrFOg dOaeSw"
             >
               <svg
-                class="sc-gKPRtg eSdzmv sc-pyfCe hLCbyO"
+                class="sc-bcXHqe cbaReT sc-hLBbgP eKXpFg"
                 height="18"
                 viewBox="0 0 24 24"
                 width="18"
@@ -66,17 +70,21 @@ exports[`<Coffee /> should render correctly 1`] = `
           </a>
           <a
             aria-label="Red Cross (opens in a new tab)"
-            class="sc-iBYQkv jNlLug"
+            class="sc-gswNZR bbFtvE"
             href="https://www.redcross.org.uk/"
             rel="noopener noreferrer"
             target="_blank"
           >
-            Red Cross
+            <span
+              class="sc-ftTHYK cRFGYD"
+            >
+              Red Cross
+            </span>
             <div
-              class="sc-ftTHYK dbfjGz"
+              class="sc-dkrFOg dOaeSw"
             >
               <svg
-                class="sc-gKPRtg eSdzmv sc-pyfCe hLCbyO"
+                class="sc-bcXHqe cbaReT sc-hLBbgP eKXpFg"
                 height="18"
                 viewBox="0 0 24 24"
                 width="18"
@@ -90,17 +98,21 @@ exports[`<Coffee /> should render correctly 1`] = `
           </a>
           <a
             aria-label="Beat (opens in a new tab)"
-            class="sc-iBYQkv jNlLug"
+            class="sc-gswNZR bbFtvE"
             href="https://www.beateatingdisorders.org.uk/"
             rel="noopener noreferrer"
             target="_blank"
           >
-            Beat
+            <span
+              class="sc-ftTHYK cRFGYD"
+            >
+              Beat
+            </span>
             <div
-              class="sc-ftTHYK dbfjGz"
+              class="sc-dkrFOg dOaeSw"
             >
               <svg
-                class="sc-gKPRtg eSdzmv sc-pyfCe hLCbyO"
+                class="sc-bcXHqe cbaReT sc-hLBbgP eKXpFg"
                 height="18"
                 viewBox="0 0 24 24"
                 width="18"

@@ -9,10 +9,10 @@ exports[`<CreativeCommons /> Should render correctly 1`] = `
       class="creative-commonssyles__Background-sc-qff226-1 gREbZK"
     />
     <div
-      class="sc-kDvujY jcGnlL creative-commonssyles__Inner-sc-qff226-2 jkifKu"
+      class="sc-ipEyDJ jDBIzX creative-commonssyles__Inner-sc-qff226-2 jkifKu"
     >
       <h1
-        class="sc-hLBbgP hxBBAy sc-eDWCr qSnbm"
+        class="sc-iBYQkv bnxJCD sc-bqWxrE exAZce"
         id="copyright"
       >
         Copyright
@@ -24,17 +24,21 @@ exports[`<CreativeCommons /> Should render correctly 1`] = `
          
         <a
           aria-label="Creative Commons BY-SA 3.0 (opens in a new tab)"
-          class="sc-ftTHYK dpmGDG"
+          class="sc-dkrFOg goDQJi"
           href="https://creativecommons.org/licenses/by-sa/3.0/"
           rel="noopener noreferrer"
           target="_blank"
         >
-          Creative Commons BY-SA 3.0
+          <span
+            class="sc-pyfCe TBvmW"
+          >
+            Creative Commons BY-SA 3.0
+          </span>
           <div
-            class="sc-pyfCe bordam"
+            class="sc-hLBbgP dPpdAU"
           >
             <svg
-              class="sc-iBYQkv lnzGUE sc-jrcTuL joTGkF"
+              class="sc-gswNZR hanptH sc-eDvSVe emXavc"
               height="18"
               viewBox="0 0 24 24"
               width="18"
@@ -50,10 +54,14 @@ exports[`<CreativeCommons /> Should render correctly 1`] = `
         <br />
         If you are unsure about your right to use them please 
         <a
-          class="sc-ftTHYK dpmGDG"
+          class="sc-dkrFOg goDQJi"
           href="/contact"
         >
-          contact me
+          <span
+            class="sc-pyfCe TBvmW"
+          >
+            contact me
+          </span>
         </a>
         .
       </span>
@@ -71,10 +79,10 @@ exports[`<CreativeCommons /> Should render correctly with custom className 1`] =
       class="creative-commonssyles__Background-sc-qff226-1 gREbZK"
     />
     <div
-      class="sc-kDvujY jcGnlL creative-commonssyles__Inner-sc-qff226-2 jkifKu"
+      class="sc-ipEyDJ jDBIzX creative-commonssyles__Inner-sc-qff226-2 jkifKu"
     >
       <h1
-        class="sc-hLBbgP hxBBAy sc-eDWCr qSnbm"
+        class="sc-iBYQkv bnxJCD sc-bqWxrE exAZce"
         id="copyright"
       >
         Copyright
@@ -86,17 +94,21 @@ exports[`<CreativeCommons /> Should render correctly with custom className 1`] =
          
         <a
           aria-label="Creative Commons BY-SA 3.0 (opens in a new tab)"
-          class="sc-ftTHYK dpmGDG"
+          class="sc-dkrFOg goDQJi"
           href="https://creativecommons.org/licenses/by-sa/3.0/"
           rel="noopener noreferrer"
           target="_blank"
         >
-          Creative Commons BY-SA 3.0
+          <span
+            class="sc-pyfCe TBvmW"
+          >
+            Creative Commons BY-SA 3.0
+          </span>
           <div
-            class="sc-pyfCe bordam"
+            class="sc-hLBbgP dPpdAU"
           >
             <svg
-              class="sc-iBYQkv lnzGUE sc-jrcTuL joTGkF"
+              class="sc-gswNZR hanptH sc-eDvSVe emXavc"
               height="18"
               viewBox="0 0 24 24"
               width="18"
@@ -112,10 +124,14 @@ exports[`<CreativeCommons /> Should render correctly with custom className 1`] =
         <br />
         If you are unsure about your right to use them please 
         <a
-          class="sc-ftTHYK dpmGDG"
+          class="sc-dkrFOg goDQJi"
           href="/contact"
         >
-          contact me
+          <span
+            class="sc-pyfCe TBvmW"
+          >
+            contact me
+          </span>
         </a>
         .
       </span>

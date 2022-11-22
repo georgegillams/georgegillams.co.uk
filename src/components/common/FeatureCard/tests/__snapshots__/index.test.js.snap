@@ -2,144 +2,124 @@
 
 exports[`<NavigationItem /> Should render correctly 1`] = `
 <div>
-  <a
-    class="sc-gswNZR gZypLD sc-csuSiG dAVFvW"
-    href="/test"
+  <div
+    class="sc-dkrFOg issWQp"
   >
     <div
-      class="sc-dkrFOg issWQp"
+      class="sc-hLBbgP ePknQl"
+    />
+    <div
+      class="sc-eDvSVe dgcnrq"
     >
       <div
-        class="sc-hLBbgP ePknQl"
-      />
-      <div
-        class="sc-eDvSVe dgcnrq"
+        aria-hidden="true"
+        class="sc-eDWCr fGeeSY"
       >
         <div
-          aria-hidden="true"
-          class="sc-eDWCr fGeeSY"
+          class="sc-bqWxrE khjRns date container"
+        />
+        <div
+          class="sc-ksBlkl iEacQb"
         >
-          <div
-            class="sc-bqWxrE khjRns date container"
+          <h1
+            class="sc-hHTYSt jAbRvz"
           />
-          <div
-            class="sc-ksBlkl iEacQb"
-          >
-            <h1
-              class="sc-hHTYSt jAbRvz"
-            />
-          </div>
         </div>
       </div>
     </div>
-  </a>
+  </div>
 </div>
 `;
 
 exports[`<NavigationItem /> Should render correctly hrefExternal 1`] = `
 <div>
-  <a
-    class="sc-gswNZR gZypLD sc-csuSiG dAVFvW"
-    href="https://duckduckgo.com/"
+  <div
+    class="sc-dkrFOg issWQp"
   >
     <div
-      class="sc-dkrFOg issWQp"
+      class="sc-hLBbgP ePknQl"
+    />
+    <div
+      class="sc-eDvSVe dgcnrq"
     >
       <div
-        class="sc-hLBbgP ePknQl"
-      />
-      <div
-        class="sc-eDvSVe dgcnrq"
+        aria-hidden="true"
+        class="sc-eDWCr fGeeSY"
       >
         <div
-          aria-hidden="true"
-          class="sc-eDWCr fGeeSY"
+          class="sc-bqWxrE khjRns date container"
+        />
+        <div
+          class="sc-ksBlkl iEacQb"
         >
-          <div
-            class="sc-bqWxrE khjRns date container"
+          <h1
+            class="sc-hHTYSt jAbRvz"
           />
-          <div
-            class="sc-ksBlkl iEacQb"
-          >
-            <h1
-              class="sc-hHTYSt jAbRvz"
-            />
-          </div>
         </div>
       </div>
     </div>
-  </a>
+  </div>
 </div>
 `;
 
 exports[`<NavigationItem /> Should render correctly with custom className 1`] = `
 <div>
-  <a
-    class="sc-gswNZR gZypLD sc-csuSiG dAVFvW test-custom-classname"
-    href="/test"
+  <div
+    class="sc-dkrFOg issWQp"
   >
     <div
-      class="sc-dkrFOg issWQp"
+      class="sc-hLBbgP ePknQl"
+    />
+    <div
+      class="sc-eDvSVe dgcnrq"
     >
       <div
-        class="sc-hLBbgP ePknQl"
-      />
-      <div
-        class="sc-eDvSVe dgcnrq"
+        aria-hidden="true"
+        class="sc-eDWCr fGeeSY"
       >
         <div
-          aria-hidden="true"
-          class="sc-eDWCr fGeeSY"
+          class="sc-bqWxrE khjRns date container"
+        />
+        <div
+          class="sc-ksBlkl iEacQb"
         >
-          <div
-            class="sc-bqWxrE khjRns date container"
+          <h1
+            class="sc-hHTYSt jAbRvz"
           />
-          <div
-            class="sc-ksBlkl iEacQb"
-          >
-            <h1
-              class="sc-hHTYSt jAbRvz"
-            />
-          </div>
         </div>
       </div>
     </div>
-  </a>
+  </div>
 </div>
 `;
 
 exports[`<NavigationItem /> Should render with nextified href 1`] = `
 <div>
-  <a
-    class="sc-gswNZR gZypLD sc-csuSiG dAVFvW"
-    href="/blog/test"
+  <div
+    class="sc-dkrFOg issWQp"
   >
     <div
-      class="sc-dkrFOg issWQp"
+      class="sc-hLBbgP ePknQl"
+    />
+    <div
+      class="sc-eDvSVe dgcnrq"
     >
       <div
-        class="sc-hLBbgP ePknQl"
-      />
-      <div
-        class="sc-eDvSVe dgcnrq"
+        aria-hidden="true"
+        class="sc-eDWCr fGeeSY"
       >
         <div
-          aria-hidden="true"
-          class="sc-eDWCr fGeeSY"
+          class="sc-bqWxrE khjRns date container"
+        />
+        <div
+          class="sc-ksBlkl iEacQb"
         >
-          <div
-            class="sc-bqWxrE khjRns date container"
+          <h1
+            class="sc-hHTYSt jAbRvz"
           />
-          <div
-            class="sc-ksBlkl iEacQb"
-          >
-            <h1
-              class="sc-hHTYSt jAbRvz"
-            />
-          </div>
         </div>
       </div>
     </div>
-  </a>
+  </div>
 </div>
 `;

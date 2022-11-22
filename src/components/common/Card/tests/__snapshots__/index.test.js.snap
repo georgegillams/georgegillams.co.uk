@@ -2,80 +2,60 @@
 
 exports[`<Card /> Should render correctly 1`] = `
 <div>
-  <a
-    class="sc-gswNZR gZypLD"
-    href="/test"
+  <div
+    class="sc-dkrFOg issWQp"
   >
     <div
-      class="sc-dkrFOg issWQp"
-    >
-      <div
-        class="sc-hLBbgP ePknQl"
-      />
-      <div
-        class="sc-eDvSVe dgcnrq"
-      />
-    </div>
-  </a>
+      class="sc-hLBbgP ePknQl"
+    />
+    <div
+      class="sc-eDvSVe dgcnrq"
+    />
+  </div>
 </div>
 `;
 
 exports[`<Card /> Should render correctly hrefExternal 1`] = `
 <div>
-  <a
-    class="sc-gswNZR gZypLD"
-    href="https://duckduckgo.com/"
+  <div
+    class="sc-dkrFOg issWQp"
   >
     <div
-      class="sc-dkrFOg issWQp"
-    >
-      <div
-        class="sc-hLBbgP ePknQl"
-      />
-      <div
-        class="sc-eDvSVe dgcnrq"
-      />
-    </div>
-  </a>
+      class="sc-hLBbgP ePknQl"
+    />
+    <div
+      class="sc-eDvSVe dgcnrq"
+    />
+  </div>
 </div>
 `;
 
 exports[`<Card /> Should render correctly with custom className 1`] = `
 <div>
-  <a
-    class="sc-gswNZR gZypLD test-custom-classname"
-    href="/test"
+  <div
+    class="sc-dkrFOg issWQp"
   >
     <div
-      class="sc-dkrFOg issWQp"
-    >
-      <div
-        class="sc-hLBbgP ePknQl"
-      />
-      <div
-        class="sc-eDvSVe dgcnrq"
-      />
-    </div>
-  </a>
+      class="sc-hLBbgP ePknQl"
+    />
+    <div
+      class="sc-eDvSVe dgcnrq"
+    />
+  </div>
 </div>
 `;
 
 exports[`<Card /> Should render with nextified href 1`] = `
 <div>
-  <a
-    class="sc-gswNZR gZypLD"
-    href="/blog/test"
+  <div
+    class="sc-dkrFOg issWQp"
   >
     <div
-      class="sc-dkrFOg issWQp"
-    >
-      <div
-        class="sc-hLBbgP ePknQl"
-      />
-      <div
-        class="sc-eDvSVe dgcnrq"
-      />
-    </div>
-  </a>
+      class="sc-hLBbgP ePknQl"
+    />
+    <div
+      class="sc-eDvSVe dgcnrq"
+    />
+  </div>
 </div>
 `;

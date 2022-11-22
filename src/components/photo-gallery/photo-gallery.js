@@ -52,7 +52,7 @@ const PhotoGallery = props => {
       <SimplePhotoGallery className={'photo-gallery_simple'}>
         {photos.map(p => {
           return (
-            <SimplePhotoWrapper key={p.id}>
+            <SimplePhotoWrapper key={p.key}>
               <SimplePhoto lightSrc={p.src} darkSrc={p.src} aspectX={p.width} aspectY={p.height} />
             </SimplePhotoWrapper>
           );

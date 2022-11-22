@@ -2,50 +2,30 @@
 
 exports[`<NavigationItem /> Should render correctly 1`] = `
 <div>
-  <a
-    aria-label="name"
-    class="sc-hLBbgP iLEeKF"
-    href="/test"
+  <span
+    class="sc-eDvSVe iqkXFe"
   >
-    <span
-      class="sc-eDvSVe iqkXFe"
-    >
-      name
-    </span>
-  </a>
+    name
+  </span>
 </div>
 `;
 
 exports[`<NavigationItem /> Should render correctly hrefExternal 1`] = `
 <div>
-  <a
-    aria-label="name"
-    class="sc-hLBbgP iLEeKF"
-    href="/test"
-    rel="noopener noreferrer"
-    target="_blank"
+  <span
+    class="sc-eDvSVe iqkXFe"
   >
-    <span
-      class="sc-eDvSVe iqkXFe"
-    >
-      name
-    </span>
-  </a>
+    name
+  </span>
 </div>
 `;
 
 exports[`<NavigationItem /> Should render correctly with custom className 1`] = `
 <div>
-  <a
-    aria-label="name"
-    class="sc-hLBbgP iLEeKF test-custom-classname"
-    href="/test"
+  <span
+    class="sc-eDvSVe iqkXFe"
   >
-    <span
-      class="sc-eDvSVe iqkXFe"
-    >
-      name
-    </span>
-  </a>
+    name
+  </span>
 </div>
 `;

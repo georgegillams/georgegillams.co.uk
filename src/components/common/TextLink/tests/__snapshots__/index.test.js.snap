@@ -3,10 +3,14 @@
 exports[`<TextLink /> Should render correctly 1`] = `
 <div>
   <a
-    class="sc-iBYQkv jNlLug"
+    class="sc-gswNZR bbFtvE"
     href="/test"
   >
-    some text
+    <span
+      class="sc-ftTHYK cRFGYD"
+    >
+      some text
+    </span>
   </a>
 </div>
 `;
@@ -14,10 +18,14 @@ exports[`<TextLink /> Should render correctly 1`] = `
 exports[`<TextLink /> Should render correctly with custom className 1`] = `
 <div>
   <a
-    class="sc-iBYQkv jNlLug test-custom-classname"
+    class="sc-gswNZR bbFtvE test-custom-classname"
     href="/test"
   >
-    some text
+    <span
+      class="sc-ftTHYK cRFGYD"
+    >
+      some text
+    </span>
   </a>
 </div>
 `;
@@ -25,10 +33,14 @@ exports[`<TextLink /> Should render correctly with custom className 1`] = `
 exports[`<TextLink /> Should render with nextified href 1`] = `
 <div>
   <a
-    class="sc-iBYQkv jNlLug"
+    class="sc-gswNZR bbFtvE"
     href="/blog/test"
   >
-    some text
+    <span
+      class="sc-ftTHYK cRFGYD"
+    >
+      some text
+    </span>
   </a>
 </div>
 `;

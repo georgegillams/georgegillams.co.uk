@@ -6,7 +6,7 @@ exports[`<PageTitle /> Should render correctly 1`] = `
     class="sc-bqWxrE VcTDu"
   >
     <h1
-      class="sc-bcXHqe bHgOFy sc-jrcTuL ewlzmZ"
+      class="sc-eDvSVe fsBEuM sc-jrcTuL ewlzmZ"
     >
       Test
     </h1>
@@ -21,7 +21,7 @@ exports[`<PageTitle /> Should render correctly with custom className 1`] = `
     class="sc-bqWxrE VcTDu"
   >
     <h1
-      class="sc-bcXHqe bHgOFy sc-jrcTuL ewlzmZ test-custom-classname"
+      class="sc-eDvSVe fsBEuM sc-jrcTuL ewlzmZ test-custom-classname"
     >
       Test
     </h1>
@@ -39,10 +39,14 @@ exports[`<PageTitle /> Should render correctly with other props 1`] = `
       class="sc-kDvujY bJLGdG"
     >
       <a
-        class="sc-iBYQkv jNlLug"
+        class="sc-gswNZR bbFtvE"
         href="/test"
       >
-        ⇠ test
+        <span
+          class="sc-ftTHYK cRFGYD"
+        >
+          ⇠ test
+        </span>
       </a>
     </div>
   </div>
@@ -50,7 +54,7 @@ exports[`<PageTitle /> Should render correctly with other props 1`] = `
     class="sc-bqWxrE VcTDu"
   >
     <h1
-      class="sc-bcXHqe bHgOFy sc-jrcTuL jiMlto"
+      class="sc-eDvSVe fsBEuM sc-jrcTuL jiMlto"
     >
       Test
     </h1>

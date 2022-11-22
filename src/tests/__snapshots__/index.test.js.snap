@@ -14,7 +14,7 @@ exports[`<HomePage /> should render correctly 1`] = `
         class="sc-ksBlkl iCvzgk"
       >
         <h1
-          class="sc-gswNZR fEnHfq sc-kDvujY jlGjEY"
+          class="sc-jSUZER bliipu sc-kDvujY jlGjEY"
         >
           Hey! I'm George.
         </h1>
@@ -41,32 +41,36 @@ exports[`<HomePage /> should render correctly 1`] = `
                 class="work-sectionstyles__Content-sc-1t4zqac-1 cFtcfy"
               >
                 <div
-                  class="sc-hBxehG julUME"
+                  class="sc-fnGiBr cWeZey"
                 >
                   <h1
-                    class="sc-dkrFOg dYiSba sc-bjfHbI cBkNPA"
+                    class="sc-gKPRtg cFtFE sc-idXgbr CjtXn"
                     id="work"
                   >
                     Work
                   </h1>
                   <span
-                    class="sc-idXgbr fvYUUw work-sectionstyles__StyledParagraph-sc-1t4zqac-3 cXOZzD"
+                    class="sc-dIfARi gupYKT work-sectionstyles__StyledParagraph-sc-1t4zqac-3 cXOZzD"
                   >
                     I'm a web developer at
                      
                     <a
                       aria-label="Typeform (opens in a new tab)"
-                      class="sc-ftTHYK dpmGDG"
+                      class="sc-dkrFOg goDQJi"
                       href="https://typeform.com/"
                       rel="noopener noreferrer"
                       target="_blank"
                     >
-                      Typeform
+                      <span
+                        class="sc-pyfCe TBvmW"
+                      >
+                        Typeform
+                      </span>
                       <div
-                        class="sc-pyfCe bordam"
+                        class="sc-hLBbgP dPpdAU"
                       >
                         <svg
-                          class="sc-iBYQkv lnzGUE sc-jrcTuL joTGkF"
+                          class="sc-gswNZR hanptH sc-eDvSVe emXavc"
                           height="18"
                           viewBox="0 0 24 24"
                           width="18"
@@ -84,10 +88,14 @@ exports[`<HomePage /> should render correctly 1`] = `
                     I’m also an accessibility champion and design system enthusiast.
                     <br />
                     <a
-                      class="sc-ftTHYK dpmGDG"
+                      class="sc-dkrFOg goDQJi"
                       href="/work"
                     >
-                      Learn more about my work
+                      <span
+                        class="sc-pyfCe TBvmW"
+                      >
+                        Learn more about my work
+                      </span>
                     </a>
                   </span>
                 </div>
@@ -105,7 +113,7 @@ exports[`<HomePage /> should render correctly 1`] = `
       }
                   </style>
                   <div
-                    class="sc-dmctIk ggHTBC sliding-phonestyles__StyledImage-sc-1ngyhd8-1 cObRhL home__sliding-phone--hidden"
+                    class="sc-kgTSHT eUhlhh sliding-phonestyles__StyledImage-sc-1ngyhd8-1 cObRhL home__sliding-phone--hidden"
                   >
                     <style>
                       
@@ -114,17 +122,17 @@ exports[`<HomePage /> should render correctly 1`] = `
         
                     </style>
                     <div
-                      class="sc-kgTSHT eMhaJf"
+                      class="sc-fLcnxK hbXkzo"
                       style="padding-bottom: 197.80876494023903%;"
                     >
                       <div
-                        class="sc-fLcnxK kvGhjm"
+                        class="sc-bBABsx fzMRrO"
                       >
                         <div
-                          class="sc-dIfARi vcnqE sc-bBABsx eDpgBb"
+                          class="sc-hHTYSt jkmwNj sc-iveFHk icHhkY"
                         >
                           <div
-                            class="sc-hHTYSt fkOjYj"
+                            class="sc-dmctIk cOGJAF"
                             style="margin-left: -0px;"
                           />
                         </div>
@@ -134,11 +142,11 @@ exports[`<HomePage /> should render correctly 1`] = `
                       >
                         <img
                           alt="A screenshot of our Backpack design principles"
-                          class="sc-iveFHk fTSVVQ"
+                          class="sc-cwSeag jzhngs"
                         />
                         <img
                           alt="A screenshot of our Backpack design principles"
-                          class="sc-cwSeag eMJthJ"
+                          class="sc-lllmON ibCXxG"
                         />
                       </div>
                       <div
@@ -146,11 +154,11 @@ exports[`<HomePage /> should render correctly 1`] = `
                       >
                         <img
                           alt="A screenshot of our Backpack design principles"
-                          class="sc-iveFHk ulBjQ"
+                          class="sc-cwSeag kquVus"
                         />
                         <img
                           alt="A screenshot of our Backpack design principles"
-                          class="sc-cwSeag iZnDYF"
+                          class="sc-lllmON hxptFy"
                         />
                       </div>
                     </div>
@@ -166,7 +174,7 @@ exports[`<HomePage /> should render correctly 1`] = `
       }
                   </style>
                   <div
-                    class="sc-dmctIk ggHTBC sliding-phonestyles__StyledImage-sc-1ngyhd8-1 cObRhL home__sliding-phone--hidden"
+                    class="sc-kgTSHT eUhlhh sliding-phonestyles__StyledImage-sc-1ngyhd8-1 cObRhL home__sliding-phone--hidden"
                   >
                     <style>
                       
@@ -175,17 +183,17 @@ exports[`<HomePage /> should render correctly 1`] = `
         
                     </style>
                     <div
-                      class="sc-kgTSHT eMhaJf"
+                      class="sc-fLcnxK hbXkzo"
                       style="padding-bottom: 197.80876494023903%;"
                     >
                       <div
-                        class="sc-fLcnxK kvGhjm"
+                        class="sc-bBABsx fzMRrO"
                       >
                         <div
-                          class="sc-dIfARi vcnqE sc-bBABsx eDpgBb"
+                          class="sc-hHTYSt jkmwNj sc-iveFHk icHhkY"
                         >
                           <div
-                            class="sc-hHTYSt fkOjYj"
+                            class="sc-dmctIk cOGJAF"
                             style="margin-left: -0px;"
                           />
                         </div>
@@ -195,11 +203,11 @@ exports[`<HomePage /> should render correctly 1`] = `
                       >
                         <img
                           alt="A screenshot of our bar chart component on iOS"
-                          class="sc-iveFHk fTSVVQ"
+                          class="sc-cwSeag jzhngs"
                         />
                         <img
                           alt="A screenshot of our bar chart component on iOS"
-                          class="sc-cwSeag eMJthJ"
+                          class="sc-lllmON ibCXxG"
                         />
                       </div>
                       <div
@@ -207,11 +215,11 @@ exports[`<HomePage /> should render correctly 1`] = `
                       >
                         <img
                           alt="A screenshot of our bar chart component on iOS"
-                          class="sc-iveFHk ulBjQ"
+                          class="sc-cwSeag kquVus"
                         />
                         <img
                           alt="A screenshot of our bar chart component on iOS"
-                          class="sc-cwSeag iZnDYF"
+                          class="sc-lllmON hxptFy"
                         />
                       </div>
                     </div>
@@ -227,7 +235,7 @@ exports[`<HomePage /> should render correctly 1`] = `
       }
                   </style>
                   <div
-                    class="sc-dmctIk ggHTBC sliding-phonestyles__StyledImage-sc-1ngyhd8-1 cObRhL home__sliding-phone--hidden"
+                    class="sc-kgTSHT eUhlhh sliding-phonestyles__StyledImage-sc-1ngyhd8-1 cObRhL home__sliding-phone--hidden"
                   >
                     <style>
                       
@@ -236,17 +244,17 @@ exports[`<HomePage /> should render correctly 1`] = `
         
                     </style>
                     <div
-                      class="sc-kgTSHT eMhaJf"
+                      class="sc-fLcnxK hbXkzo"
                       style="padding-bottom: 197.80876494023903%;"
                     >
                       <div
-                        class="sc-fLcnxK kvGhjm"
+                        class="sc-bBABsx fzMRrO"
                       >
                         <div
-                          class="sc-dIfARi vcnqE sc-bBABsx eDpgBb"
+                          class="sc-hHTYSt jkmwNj sc-iveFHk icHhkY"
                         >
                           <div
-                            class="sc-hHTYSt fkOjYj"
+                            class="sc-dmctIk cOGJAF"
                             style="margin-left: -0px;"
                           />
                         </div>
@@ -256,11 +264,11 @@ exports[`<HomePage /> should render correctly 1`] = `
                       >
                         <img
                           alt="A screenshot of our flare view component on web"
-                          class="sc-iveFHk fTSVVQ"
+                          class="sc-cwSeag jzhngs"
                         />
                         <img
                           alt="A screenshot of our flare view component on web"
-                          class="sc-cwSeag eMJthJ"
+                          class="sc-lllmON ibCXxG"
                         />
                       </div>
                       <div
@@ -268,11 +276,11 @@ exports[`<HomePage /> should render correctly 1`] = `
                       >
                         <img
                           alt="A screenshot of our flare view component on web"
-                          class="sc-iveFHk ulBjQ"
+                          class="sc-cwSeag kquVus"
                         />
                         <img
                           alt="A screenshot of our flare view component on web"
-                          class="sc-cwSeag iZnDYF"
+                          class="sc-lllmON hxptFy"
                         />
                       </div>
                     </div>
@@ -302,7 +310,7 @@ exports[`<HomePage /> should render correctly 1`] = `
               class="life-sectionstyles__Wrapper-sc-17amgn9-0 Dfoqm"
             >
               <div
-                class="sc-dmctIk ggHTBC life-sectionstyles__ImageAboveTabletLeft-sc-17amgn9-3 iRfPSu"
+                class="sc-kgTSHT eUhlhh life-sectionstyles__ImageAboveTabletLeft-sc-17amgn9-3 iRfPSu"
                 style="margin-top: 2.6rem; transform: rotate(-10.6deg);"
               >
                 <style>
@@ -312,17 +320,17 @@ exports[`<HomePage /> should render correctly 1`] = `
         
                 </style>
                 <div
-                  class="sc-kgTSHT eMhaJf"
+                  class="sc-fLcnxK hbXkzo"
                   style="padding-bottom: 150%;"
                 >
                   <div
-                    class="sc-fLcnxK kvGhjm"
+                    class="sc-bBABsx fzMRrO"
                   >
                     <div
-                      class="sc-dIfARi vcnqE sc-bBABsx eDpgBb"
+                      class="sc-hHTYSt jkmwNj sc-iveFHk icHhkY"
                     >
                       <div
-                        class="sc-hHTYSt fkOjYj"
+                        class="sc-dmctIk cOGJAF"
                         style="margin-left: -0px;"
                       />
                     </div>
@@ -332,11 +340,11 @@ exports[`<HomePage /> should render correctly 1`] = `
                   >
                     <img
                       alt=""
-                      class="sc-iveFHk fTSVVQ"
+                      class="sc-cwSeag jzhngs"
                     />
                     <img
                       alt=""
-                      class="sc-cwSeag eMJthJ"
+                      class="sc-lllmON ibCXxG"
                     />
                   </div>
                   <div
@@ -344,11 +352,11 @@ exports[`<HomePage /> should render correctly 1`] = `
                   >
                     <img
                       alt=""
-                      class="sc-iveFHk ulBjQ"
+                      class="sc-cwSeag kquVus"
                     />
                     <img
                       alt=""
-                      class="sc-cwSeag iZnDYF"
+                      class="sc-lllmON hxptFy"
                     />
                   </div>
                 </div>
@@ -357,42 +365,50 @@ exports[`<HomePage /> should render correctly 1`] = `
                 class="life-sectionstyles__Content-sc-17amgn9-2 iyExnr"
               >
                 <div
-                  class="sc-hBxehG julUME"
+                  class="sc-fnGiBr cWeZey"
                 >
                   <h1
-                    class="sc-dkrFOg dYiSba sc-bjfHbI cBkNPA"
+                    class="sc-gKPRtg cFtFE sc-idXgbr CjtXn"
                     id="life"
                   >
                     Life
                   </h1>
                   <span
-                    class="sc-idXgbr fvYUUw life-sectionstyles__StyledParagraph-sc-17amgn9-1 iBdBcU"
+                    class="sc-dIfARi gupYKT life-sectionstyles__StyledParagraph-sc-17amgn9-1 iBdBcU"
                   >
                     I love travel, photography, and obstacle course racing.
                     <br />
                     <a
-                      class="sc-ftTHYK dpmGDG"
+                      class="sc-dkrFOg goDQJi"
                       href="/blog"
                     >
-                      Blog
+                      <span
+                        class="sc-pyfCe TBvmW"
+                      >
+                        Blog
+                      </span>
                     </a>
                     <br />
                     <a
-                      class="sc-ftTHYK dpmGDG"
+                      class="sc-dkrFOg goDQJi"
                       href="/photography"
                     >
-                      Photography
+                      <span
+                        class="sc-pyfCe TBvmW"
+                      >
+                        Photography
+                      </span>
                     </a>
                   </span>
                 </div>
                 <span
-                  class="sc-idXgbr fvYUUw life-sectionstyles__StyledParagraph-sc-17amgn9-1 iBdBcU"
+                  class="sc-dIfARi gupYKT life-sectionstyles__StyledParagraph-sc-17amgn9-1 iBdBcU"
                 >
                   I live on the south coast of the UK with my wife, cat and dog.
                 </span>
               </div>
               <div
-                class="sc-dmctIk ggHTBC life-sectionstyles__ImageAboveTabletRight-sc-17amgn9-4 hWXkmE"
+                class="sc-kgTSHT eUhlhh life-sectionstyles__ImageAboveTabletRight-sc-17amgn9-4 hWXkmE"
                 style="margin-top: -0.39999999999999947rem; transform: rotate(4.6deg);"
               >
                 <style>
@@ -402,17 +418,17 @@ exports[`<HomePage /> should render correctly 1`] = `
         
                 </style>
                 <div
-                  class="sc-kgTSHT eMhaJf"
+                  class="sc-fLcnxK hbXkzo"
                   style="padding-bottom: 66.66666666666667%;"
                 >
                   <div
-                    class="sc-fLcnxK kvGhjm"
+                    class="sc-bBABsx fzMRrO"
                   >
                     <div
-                      class="sc-dIfARi vcnqE sc-bBABsx eDpgBb"
+                      class="sc-hHTYSt jkmwNj sc-iveFHk icHhkY"
                     >
                       <div
-                        class="sc-hHTYSt fkOjYj"
+                        class="sc-dmctIk cOGJAF"
                         style="margin-left: -0px;"
                       />
                     </div>
@@ -422,11 +438,11 @@ exports[`<HomePage /> should render correctly 1`] = `
                   >
                     <img
                       alt=""
-                      class="sc-iveFHk fTSVVQ"
+                      class="sc-cwSeag jzhngs"
                     />
                     <img
                       alt=""
-                      class="sc-cwSeag eMJthJ"
+                      class="sc-lllmON ibCXxG"
                     />
                   </div>
                   <div
@@ -434,11 +450,11 @@ exports[`<HomePage /> should render correctly 1`] = `
                   >
                     <img
                       alt=""
-                      class="sc-iveFHk ulBjQ"
+                      class="sc-cwSeag kquVus"
                     />
                     <img
                       alt=""
-                      class="sc-cwSeag iZnDYF"
+                      class="sc-lllmON hxptFy"
                     />
                   </div>
                 </div>
@@ -462,7 +478,7 @@ exports[`<HomePage /> should render correctly 1`] = `
                   class="life-sectionstyles__MobileImageInnerWrapperLeft-sc-17amgn9-6 dmHVWz home__life-section-image--left-hide"
                 >
                   <div
-                    class="sc-dmctIk ggHTBC"
+                    class="sc-kgTSHT eUhlhh"
                   >
                     <style>
                       
@@ -471,17 +487,17 @@ exports[`<HomePage /> should render correctly 1`] = `
         
                     </style>
                     <div
-                      class="sc-kgTSHT eMhaJf"
+                      class="sc-fLcnxK hbXkzo"
                       style="padding-bottom: 150%;"
                     >
                       <div
-                        class="sc-fLcnxK kvGhjm"
+                        class="sc-bBABsx fzMRrO"
                       >
                         <div
-                          class="sc-dIfARi vcnqE sc-bBABsx eDpgBb"
+                          class="sc-hHTYSt jkmwNj sc-iveFHk icHhkY"
                         >
                           <div
-                            class="sc-hHTYSt fkOjYj"
+                            class="sc-dmctIk cOGJAF"
                             style="margin-left: -0px;"
                           />
                         </div>
@@ -491,11 +507,11 @@ exports[`<HomePage /> should render correctly 1`] = `
                       >
                         <img
                           alt=""
-                          class="sc-iveFHk fTSVVQ"
+                          class="sc-cwSeag jzhngs"
                         />
                         <img
                           alt=""
-                          class="sc-cwSeag eMJthJ"
+                          class="sc-lllmON ibCXxG"
                         />
                       </div>
                       <div
@@ -503,11 +519,11 @@ exports[`<HomePage /> should render correctly 1`] = `
                       >
                         <img
                           alt=""
-                          class="sc-iveFHk ulBjQ"
+                          class="sc-cwSeag kquVus"
                         />
                         <img
                           alt=""
-                          class="sc-cwSeag iZnDYF"
+                          class="sc-lllmON hxptFy"
                         />
                       </div>
                     </div>
@@ -517,7 +533,7 @@ exports[`<HomePage /> should render correctly 1`] = `
                   class="life-sectionstyles__MobileImageInnerWrapperRight-sc-17amgn9-7 bOxRrT home__life-section-image--right-hide"
                 >
                   <div
-                    class="sc-dmctIk ggHTBC"
+                    class="sc-kgTSHT eUhlhh"
                   >
                     <style>
                       
@@ -526,17 +542,17 @@ exports[`<HomePage /> should render correctly 1`] = `
         
                     </style>
                     <div
-                      class="sc-kgTSHT eMhaJf"
+                      class="sc-fLcnxK hbXkzo"
                       style="padding-bottom: 66.66666666666667%;"
                     >
                       <div
-                        class="sc-fLcnxK kvGhjm"
+                        class="sc-bBABsx fzMRrO"
                       >
                         <div
-                          class="sc-dIfARi vcnqE sc-bBABsx eDpgBb"
+                          class="sc-hHTYSt jkmwNj sc-iveFHk icHhkY"
                         >
                           <div
-                            class="sc-hHTYSt fkOjYj"
+                            class="sc-dmctIk cOGJAF"
                             style="margin-left: -0px;"
                           />
                         </div>
@@ -546,11 +562,11 @@ exports[`<HomePage /> should render correctly 1`] = `
                       >
                         <img
                           alt=""
-                          class="sc-iveFHk fTSVVQ"
+                          class="sc-cwSeag jzhngs"
                         />
                         <img
                           alt=""
-                          class="sc-cwSeag eMJthJ"
+                          class="sc-lllmON ibCXxG"
                         />
                       </div>
                       <div
@@ -558,11 +574,11 @@ exports[`<HomePage /> should render correctly 1`] = `
                       >
                         <img
                           alt=""
-                          class="sc-iveFHk ulBjQ"
+                          class="sc-cwSeag kquVus"
                         />
                         <img
                           alt=""
-                          class="sc-cwSeag iZnDYF"
+                          class="sc-lllmON hxptFy"
                         />
                       </div>
                     </div>
@@ -592,7 +608,7 @@ exports[`<HomePage /> should render correctly 1`] = `
           }
               </style>
               <div
-                class="sc-dmctIk ggHTBC animated-imagestyles__StyledImage-sc-1ah0zqa-1 iHRNaq home__animated-image--hidden"
+                class="sc-kgTSHT eUhlhh animated-imagestyles__StyledImage-sc-1ah0zqa-1 iHRNaq home__animated-image--hidden"
               >
                 <style>
                   
@@ -601,17 +617,17 @@ exports[`<HomePage /> should render correctly 1`] = `
         
                 </style>
                 <div
-                  class="sc-kgTSHT eMhaJf"
+                  class="sc-fLcnxK hbXkzo"
                   style="padding-bottom: 70.79494321834154%;"
                 >
                   <div
-                    class="sc-fLcnxK kvGhjm"
+                    class="sc-bBABsx fzMRrO"
                   >
                     <div
-                      class="sc-dIfARi vcnqE sc-bBABsx eDpgBb"
+                      class="sc-hHTYSt jkmwNj sc-iveFHk icHhkY"
                     >
                       <div
-                        class="sc-hHTYSt fkOjYj"
+                        class="sc-dmctIk cOGJAF"
                         style="margin-left: -0px;"
                       />
                     </div>
@@ -621,12 +637,12 @@ exports[`<HomePage /> should render correctly 1`] = `
                   >
                     <img
                       alt="Me"
-                      class="sc-iveFHk fTSVVQ"
+                      class="sc-cwSeag jzhngs"
                       src="https://i.imgur.com/L0Rm1ZC.jpg"
                     />
                     <img
                       alt="Me"
-                      class="sc-cwSeag eMJthJ"
+                      class="sc-lllmON ibCXxG"
                       src="https://i.imgur.com/L0Rm1ZC.jpg"
                     />
                   </div>
@@ -635,12 +651,12 @@ exports[`<HomePage /> should render correctly 1`] = `
                   >
                     <img
                       alt="Me"
-                      class="sc-iveFHk ulBjQ"
+                      class="sc-cwSeag kquVus"
                       src="https://i.imgur.com/L0Rm1ZC.jpg"
                     />
                     <img
                       alt="Me"
-                      class="sc-cwSeag iZnDYF"
+                      class="sc-lllmON hxptFy"
                       src="https://i.imgur.com/L0Rm1ZC.jpg"
                     />
                   </div>
@@ -669,23 +685,27 @@ exports[`<HomePage /> should render correctly 1`] = `
               class="about-sectionstyles__Wrapper-sc-161fh79-0 dfgKZa"
             >
               <span
-                class="sc-idXgbr fvYUUw about-sectionstyles__StyledParagraph-sc-161fh79-1 kZkWBL"
+                class="sc-dIfARi gupYKT about-sectionstyles__StyledParagraph-sc-161fh79-1 kZkWBL"
               >
                 This site is built in
                  
                 <a
                   aria-label="React (opens in a new tab)"
-                  class="sc-ftTHYK dpmGDG"
+                  class="sc-dkrFOg goDQJi"
                   href="https://reactjs.org/"
                   rel="noopener noreferrer"
                   target="_blank"
                 >
-                  React
+                  <span
+                    class="sc-pyfCe TBvmW"
+                  >
+                    React
+                  </span>
                   <div
-                    class="sc-pyfCe bordam"
+                    class="sc-hLBbgP dPpdAU"
                   >
                     <svg
-                      class="sc-iBYQkv lnzGUE sc-jrcTuL joTGkF"
+                      class="sc-gswNZR hanptH sc-eDvSVe emXavc"
                       height="18"
                       viewBox="0 0 24 24"
                       width="18"
@@ -702,17 +722,21 @@ exports[`<HomePage /> should render correctly 1`] = `
                  
                 <a
                   aria-label="Redux (opens in a new tab)"
-                  class="sc-ftTHYK dpmGDG"
+                  class="sc-dkrFOg goDQJi"
                   href="https://redux.js.org/"
                   rel="noopener noreferrer"
                   target="_blank"
                 >
-                  Redux
+                  <span
+                    class="sc-pyfCe TBvmW"
+                  >
+                    Redux
+                  </span>
                   <div
-                    class="sc-pyfCe bordam"
+                    class="sc-hLBbgP dPpdAU"
                   >
                     <svg
-                      class="sc-iBYQkv lnzGUE sc-jrcTuL joTGkF"
+                      class="sc-gswNZR hanptH sc-eDvSVe emXavc"
                       height="18"
                       viewBox="0 0 24 24"
                       width="18"
@@ -729,17 +753,21 @@ exports[`<HomePage /> should render correctly 1`] = `
                  
                 <a
                   aria-label="Next.js (opens in a new tab)"
-                  class="sc-ftTHYK dpmGDG"
+                  class="sc-dkrFOg goDQJi"
                   href="https://nextjs.org/"
                   rel="noopener noreferrer"
                   target="_blank"
                 >
-                  Next.js
+                  <span
+                    class="sc-pyfCe TBvmW"
+                  >
+                    Next.js
+                  </span>
                   <div
-                    class="sc-pyfCe bordam"
+                    class="sc-hLBbgP dPpdAU"
                   >
                     <svg
-                      class="sc-iBYQkv lnzGUE sc-jrcTuL joTGkF"
+                      class="sc-gswNZR hanptH sc-eDvSVe emXavc"
                       height="18"
                       viewBox="0 0 24 24"
                       width="18"
@@ -755,17 +783,21 @@ exports[`<HomePage /> should render correctly 1`] = `
                  
                 <a
                   aria-label="AWS (opens in a new tab)"
-                  class="sc-ftTHYK dpmGDG"
+                  class="sc-dkrFOg goDQJi"
                   href="https://aws.amazon.com/"
                   rel="noopener noreferrer"
                   target="_blank"
                 >
-                  AWS
+                  <span
+                    class="sc-pyfCe TBvmW"
+                  >
+                    AWS
+                  </span>
                   <div
-                    class="sc-pyfCe bordam"
+                    class="sc-hLBbgP dPpdAU"
                   >
                     <svg
-                      class="sc-iBYQkv lnzGUE sc-jrcTuL joTGkF"
+                      class="sc-gswNZR hanptH sc-eDvSVe emXavc"
                       height="18"
                       viewBox="0 0 24 24"
                       width="18"
@@ -792,10 +824,14 @@ exports[`<HomePage /> should render correctly 1`] = `
                   class="contact-linkstyles__Content-sc-1f9dgs5-1 ktkYdY"
                 >
                   <a
-                    class="sc-ftTHYK dpmGDG contact-linkstyles__StyledTextLink-sc-1f9dgs5-2 ePjaBV"
+                    class="sc-dkrFOg goDQJi contact-linkstyles__StyledTextLink-sc-1f9dgs5-2 ePjaBV"
                     href="/contact"
                   >
-                    Get in touch
+                    <span
+                      class="sc-pyfCe TBvmW"
+                    >
+                      Get in touch
+                    </span>
                   </a>
                   <div
                     class="contact-linkstyles__Cloud-sc-1f9dgs5-3 laVHCj home__contact--hide"
@@ -843,7 +879,7 @@ exports[`<HomePage /> should render correctly 1`] = `
           class="footerstyles__StyledTechSpecs-sc-ojjd19-2 jckxzC"
         >
           <span
-            class="sc-idXgbr fvYUUw tech-specsstyles__StyledParagraph-sc-1ysn53a-0 hLsLJb"
+            class="sc-dIfARi gupYKT tech-specsstyles__StyledParagraph-sc-1ysn53a-0 hLsLJb"
           >
             Built in
             <a
@@ -894,56 +930,88 @@ exports[`<HomePage /> should render correctly 1`] = `
             class="footer-navstyles__Section-sc-7lmnsj-1 bcuhSW"
           >
             <a
-              class="sc-ftTHYK uCHsm"
+              class="sc-dkrFOg bjTxWu"
               href="/blog"
             >
-              Blog
+              <span
+                class="sc-pyfCe TBvmW"
+              >
+                Blog
+              </span>
             </a>
             <a
-              class="sc-ftTHYK uCHsm"
+              class="sc-dkrFOg bjTxWu"
               href="/photography"
             >
-              Photography
+              <span
+                class="sc-pyfCe TBvmW"
+              >
+                Photography
+              </span>
             </a>
             <a
-              class="sc-ftTHYK uCHsm"
+              class="sc-dkrFOg bjTxWu"
               href="/work"
             >
-              Work
+              <span
+                class="sc-pyfCe TBvmW"
+              >
+                Work
+              </span>
             </a>
             <a
-              class="sc-ftTHYK uCHsm"
+              class="sc-dkrFOg bjTxWu"
               href="/contact"
             >
-              Contact
+              <span
+                class="sc-pyfCe TBvmW"
+              >
+                Contact
+              </span>
             </a>
           </div>
           <div
             class="footer-navstyles__Section-sc-7lmnsj-1 bcuhSW"
           >
             <a
-              class="sc-ftTHYK uCHsm"
+              class="sc-dkrFOg bjTxWu"
               href="/sitemap"
             >
-              Site map
+              <span
+                class="sc-pyfCe TBvmW"
+              >
+                Site map
+              </span>
             </a>
             <a
-              class="sc-ftTHYK uCHsm"
+              class="sc-dkrFOg bjTxWu"
               href="/privacy-policy"
             >
-              Privacy
+              <span
+                class="sc-pyfCe TBvmW"
+              >
+                Privacy
+              </span>
             </a>
             <a
-              class="sc-ftTHYK uCHsm"
+              class="sc-dkrFOg bjTxWu"
               href="/login"
             >
-              Login/Account
+              <span
+                class="sc-pyfCe TBvmW"
+              >
+                Login/Account
+              </span>
             </a>
             <a
-              class="sc-ftTHYK uCHsm"
+              class="sc-dkrFOg bjTxWu"
               href="/status"
             >
-              Status
+              <span
+                class="sc-pyfCe TBvmW"
+              >
+                Status
+              </span>
             </a>
           </div>
         </div>

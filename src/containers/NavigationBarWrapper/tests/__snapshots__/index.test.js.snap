@@ -109,50 +109,26 @@ exports[`<Authenticator /> should render correctly - index 1`] = `
               </span>
             </a>
           </div>
-          <a
-            aria-label="Blog"
-            class="sc-bqWxrE kvTOPd"
-            href="/blog"
+          <span
+            class="sc-ksBlkl aEVfs"
           >
-            <span
-              class="sc-ksBlkl aEVfs"
-            >
-              Blog
-            </span>
-          </a>
-          <a
-            aria-label="Photography"
-            class="sc-bqWxrE kvTOPd"
-            href="/photography"
+            Blog
+          </span>
+          <span
+            class="sc-ksBlkl aEVfs"
           >
-            <span
-              class="sc-ksBlkl aEVfs"
-            >
-              Photography
-            </span>
-          </a>
-          <a
-            aria-label="Work"
-            class="sc-bqWxrE kvTOPd"
-            href="/work"
+            Photography
+          </span>
+          <span
+            class="sc-ksBlkl aEVfs"
           >
-            <span
-              class="sc-ksBlkl aEVfs"
-            >
-              Work
-            </span>
-          </a>
-          <a
-            aria-label="Contact"
-            class="sc-bqWxrE kvTOPd"
-            href="/contact"
+            Work
+          </span>
+          <span
+            class="sc-ksBlkl aEVfs"
           >
-            <span
-              class="sc-ksBlkl aEVfs"
-            >
-              Contact
-            </span>
-          </a>
+            Contact
+          </span>
         </div>
       </div>
     </nav>
@@ -269,50 +245,26 @@ exports[`<Authenticator /> should render correctly with default state 1`] = `
               </span>
             </a>
           </div>
-          <a
-            aria-label="Blog"
-            class="sc-bqWxrE kvTOPd"
-            href="/blog"
+          <span
+            class="sc-ksBlkl aEVfs"
           >
-            <span
-              class="sc-ksBlkl aEVfs"
-            >
-              Blog
-            </span>
-          </a>
-          <a
-            aria-label="Photography"
-            class="sc-bqWxrE kvTOPd"
-            href="/photography"
+            Blog
+          </span>
+          <span
+            class="sc-ksBlkl aEVfs"
           >
-            <span
-              class="sc-ksBlkl aEVfs"
-            >
-              Photography
-            </span>
-          </a>
-          <a
-            aria-label="Work"
-            class="sc-bqWxrE kvTOPd"
-            href="/work"
+            Photography
+          </span>
+          <span
+            class="sc-ksBlkl aEVfs"
           >
-            <span
-              class="sc-ksBlkl aEVfs"
-            >
-              Work
-            </span>
-          </a>
-          <a
-            aria-label="Contact"
-            class="sc-bqWxrE kvTOPd"
-            href="/contact"
+            Work
+          </span>
+          <span
+            class="sc-ksBlkl aEVfs"
           >
-            <span
-              class="sc-ksBlkl aEVfs"
-            >
-              Contact
-            </span>
-          </a>
+            Contact
+          </span>
         </div>
       </div>
     </nav>
@@ -429,50 +381,26 @@ exports[`<Authenticator /> should render correctly with null user 1`] = `
               </span>
             </a>
           </div>
-          <a
-            aria-label="Blog"
-            class="sc-bqWxrE kvTOPd"
-            href="/blog"
+          <span
+            class="sc-ksBlkl aEVfs"
           >
-            <span
-              class="sc-ksBlkl aEVfs"
-            >
-              Blog
-            </span>
-          </a>
-          <a
-            aria-label="Photography"
-            class="sc-bqWxrE kvTOPd"
-            href="/photography"
+            Blog
+          </span>
+          <span
+            class="sc-ksBlkl aEVfs"
           >
-            <span
-              class="sc-ksBlkl aEVfs"
-            >
-              Photography
-            </span>
-          </a>
-          <a
-            aria-label="Work"
-            class="sc-bqWxrE kvTOPd"
-            href="/work"
+            Photography
+          </span>
+          <span
+            class="sc-ksBlkl aEVfs"
           >
-            <span
-              class="sc-ksBlkl aEVfs"
-            >
-              Work
-            </span>
-          </a>
-          <a
-            aria-label="Contact"
-            class="sc-bqWxrE kvTOPd"
-            href="/contact"
+            Work
+          </span>
+          <span
+            class="sc-ksBlkl aEVfs"
           >
-            <span
-              class="sc-ksBlkl aEVfs"
-            >
-              Contact
-            </span>
-          </a>
+            Contact
+          </span>
         </div>
       </div>
     </nav>
@@ -589,50 +517,26 @@ exports[`<Authenticator /> should render correctly with user 1`] = `
               </span>
             </a>
           </div>
-          <a
-            aria-label="Blog"
-            class="sc-bqWxrE kvTOPd"
-            href="/blog"
+          <span
+            class="sc-ksBlkl aEVfs"
           >
-            <span
-              class="sc-ksBlkl aEVfs"
-            >
-              Blog
-            </span>
-          </a>
-          <a
-            aria-label="Photography"
-            class="sc-bqWxrE kvTOPd"
-            href="/photography"
+            Blog
+          </span>
+          <span
+            class="sc-ksBlkl aEVfs"
           >
-            <span
-              class="sc-ksBlkl aEVfs"
-            >
-              Photography
-            </span>
-          </a>
-          <a
-            aria-label="Work"
-            class="sc-bqWxrE kvTOPd"
-            href="/work"
+            Photography
+          </span>
+          <span
+            class="sc-ksBlkl aEVfs"
           >
-            <span
-              class="sc-ksBlkl aEVfs"
-            >
-              Work
-            </span>
-          </a>
-          <a
-            aria-label="Contact"
-            class="sc-bqWxrE kvTOPd"
-            href="/contact"
+            Work
+          </span>
+          <span
+            class="sc-ksBlkl aEVfs"
           >
-            <span
-              class="sc-ksBlkl aEVfs"
-            >
-              Contact
-            </span>
-          </a>
+            Contact
+          </span>
         </div>
       </div>
     </nav>

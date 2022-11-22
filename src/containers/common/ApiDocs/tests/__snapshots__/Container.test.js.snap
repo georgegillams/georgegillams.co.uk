@@ -10,7 +10,7 @@ exports[`<ApiDocs /> should render correctly 1`] = `
       class="sc-hBxehG kRpDOl"
     >
       <h1
-        class="sc-dkrFOg eTlLCY sc-ipEyDJ jfsqCE"
+        class="sc-gKPRtg kZXQcu sc-ipEyDJ jfsqCE"
       >
         API docs
       </h1>
@@ -22,13 +22,13 @@ exports[`<ApiDocs /> should render correctly 1`] = `
         class="api-docsstyles__StyledTable-sc-4t6xyo-0 ljoqFk"
       >
         <thead
-          class="sc-fEXmlR gzJGTZ"
+          class="sc-bjfHbI hTZsqY"
         >
           <tr
-            class="sc-idXgbr"
+            class="sc-dIfARi"
           >
             <th
-              class="sc-dIfARi jImzib"
+              class="sc-hHTYSt fJuwLg"
             >
               <span
                 class="sc-gswNZR iZwDAZ"
@@ -37,7 +37,7 @@ exports[`<ApiDocs /> should render correctly 1`] = `
               </span>
             </th>
             <th
-              class="sc-dIfARi jImzib"
+              class="sc-hHTYSt fJuwLg"
             >
               <span
                 class="sc-gswNZR iZwDAZ"
@@ -46,7 +46,7 @@ exports[`<ApiDocs /> should render correctly 1`] = `
               </span>
             </th>
             <th
-              class="sc-dIfARi jImzib"
+              class="sc-hHTYSt fJuwLg"
             >
               <span
                 class="sc-gswNZR iZwDAZ"
@@ -55,7 +55,7 @@ exports[`<ApiDocs /> should render correctly 1`] = `
               </span>
             </th>
             <th
-              class="sc-dIfARi jImzib"
+              class="sc-hHTYSt fJuwLg"
             >
               <span
                 class="sc-gswNZR iZwDAZ"
@@ -64,7 +64,7 @@ exports[`<ApiDocs /> should render correctly 1`] = `
               </span>
             </th>
             <th
-              class="sc-dIfARi jImzib"
+              class="sc-hHTYSt fJuwLg"
             >
               <span
                 class="sc-gswNZR iZwDAZ"
@@ -75,27 +75,31 @@ exports[`<ApiDocs /> should render correctly 1`] = `
           </tr>
         </thead>
         <tbody
-          class="sc-bjfHbI"
+          class="sc-idXgbr"
         >
           <tr
-            class="sc-idXgbr"
+            class="sc-dIfARi"
           >
             <th
-              class="sc-dIfARi jImzib"
+              class="sc-hHTYSt fJuwLg"
             >
               <a
                 aria-label="/analytics/create (opens in a new tab)"
-                class="sc-pyfCe kHwuaX"
+                class="sc-hLBbgP lcnCbW"
                 href="https://www.georgegillams.co.uk/api/analytics/create"
                 rel="noopener noreferrer"
                 target="_blank"
               >
-                /analytics/create
+                <span
+                  class="sc-jrcTuL ddyEiV"
+                >
+                  /analytics/create
+                </span>
                 <div
-                  class="sc-jrcTuL QvVN"
+                  class="sc-eDvSVe kRlCjo"
                 >
                   <svg
-                    class="sc-ftTHYK fjjwty sc-kDvujY fYbYDQ"
+                    class="sc-dkrFOg bLfPgZ sc-jSUZER kDBwKa"
                     height="18"
                     viewBox="0 0 24 24"
                     width="18"
@@ -109,7 +113,7 @@ exports[`<ApiDocs /> should render correctly 1`] = `
               </a>
             </th>
             <th
-              class="sc-dIfARi jImzib"
+              class="sc-hHTYSt fJuwLg"
             >
               <span
                 class="sc-gswNZR iZwDAZ api-docsstyles__Method-sc-4t6xyo-2 jGEmiL"
@@ -118,14 +122,14 @@ exports[`<ApiDocs /> should render correctly 1`] = `
               </span>
             </th>
             <th
-              class="sc-dIfARi jImzib"
+              class="sc-hHTYSt fJuwLg"
             >
               <span
                 class="sc-gswNZR iZwDAZ"
               />
             </th>
             <th
-              class="sc-dIfARi jImzib"
+              class="sc-hHTYSt fJuwLg"
             >
               <span
                 class="sc-gswNZR iZwDAZ"
@@ -134,7 +138,7 @@ exports[`<ApiDocs /> should render correctly 1`] = `
               </span>
             </th>
             <th
-              class="sc-dIfARi jImzib"
+              class="sc-hHTYSt fJuwLg"
             >
               <span
                 class="sc-gswNZR iZwDAZ api-docsstyles__Description-sc-4t6xyo-1 dkIedw"
@@ -144,24 +148,28 @@ exports[`<ApiDocs /> should render correctly 1`] = `
             </th>
           </tr>
           <tr
-            class="sc-idXgbr"
+            class="sc-dIfARi"
           >
             <th
-              class="sc-dIfARi jImzib"
+              class="sc-hHTYSt fJuwLg"
             >
               <a
                 aria-label="/analytics/load-all (opens in a new tab)"
-                class="sc-pyfCe kHwuaX"
+                class="sc-hLBbgP lcnCbW"
                 href="https://www.georgegillams.co.uk/api/analytics/load-all"
                 rel="noopener noreferrer"
                 target="_blank"
               >
-                /analytics/load-all
+                <span
+                  class="sc-jrcTuL ddyEiV"
+                >
+                  /analytics/load-all
+                </span>
                 <div
-                  class="sc-jrcTuL QvVN"
+                  class="sc-eDvSVe kRlCjo"
                 >
                   <svg
-                    class="sc-ftTHYK fjjwty sc-kDvujY fYbYDQ"
+                    class="sc-dkrFOg bLfPgZ sc-jSUZER kDBwKa"
                     height="18"
                     viewBox="0 0 24 24"
                     width="18"
@@ -175,7 +183,7 @@ exports[`<ApiDocs /> should render correctly 1`] = `
               </a>
             </th>
             <th
-              class="sc-dIfARi jImzib"
+              class="sc-hHTYSt fJuwLg"
             >
               <span
                 class="sc-gswNZR iZwDAZ api-docsstyles__Method-sc-4t6xyo-2 jGEmiL"
@@ -184,14 +192,14 @@ exports[`<ApiDocs /> should render correctly 1`] = `
               </span>
             </th>
             <th
-              class="sc-dIfARi jImzib"
+              class="sc-hHTYSt fJuwLg"
             >
               <span
                 class="sc-gswNZR iZwDAZ"
               />
             </th>
             <th
-              class="sc-dIfARi jImzib"
+              class="sc-hHTYSt fJuwLg"
             >
               <span
                 class="sc-gswNZR iZwDAZ"
@@ -200,7 +208,7 @@ exports[`<ApiDocs /> should render correctly 1`] = `
               </span>
             </th>
             <th
-              class="sc-dIfARi jImzib"
+              class="sc-hHTYSt fJuwLg"
             >
               <span
                 class="sc-gswNZR iZwDAZ api-docsstyles__Description-sc-4t6xyo-1 dkIedw"
@@ -210,24 +218,28 @@ exports[`<ApiDocs /> should render correctly 1`] = `
             </th>
           </tr>
           <tr
-            class="sc-idXgbr"
+            class="sc-dIfARi"
           >
             <th
-              class="sc-dIfARi jImzib"
+              class="sc-hHTYSt fJuwLg"
             >
               <a
                 aria-label="/analytics/load (opens in a new tab)"
-                class="sc-pyfCe kHwuaX"
+                class="sc-hLBbgP lcnCbW"
                 href="https://www.georgegillams.co.uk/api/analytics/load"
                 rel="noopener noreferrer"
                 target="_blank"
               >
-                /analytics/load
+                <span
+                  class="sc-jrcTuL ddyEiV"
+                >
+                  /analytics/load
+                </span>
                 <div
-                  class="sc-jrcTuL QvVN"
+                  class="sc-eDvSVe kRlCjo"
                 >
                   <svg
-                    class="sc-ftTHYK fjjwty sc-kDvujY fYbYDQ"
+                    class="sc-dkrFOg bLfPgZ sc-jSUZER kDBwKa"
                     height="18"
                     viewBox="0 0 24 24"
                     width="18"
@@ -241,7 +253,7 @@ exports[`<ApiDocs /> should render correctly 1`] = `
               </a>
             </th>
             <th
-              class="sc-dIfARi jImzib"
+              class="sc-hHTYSt fJuwLg"
             >
               <span
                 class="sc-gswNZR iZwDAZ api-docsstyles__Method-sc-4t6xyo-2 jGEmiL"
@@ -250,14 +262,14 @@ exports[`<ApiDocs /> should render correctly 1`] = `
               </span>
             </th>
             <th
-              class="sc-dIfARi jImzib"
+              class="sc-hHTYSt fJuwLg"
             >
               <span
                 class="sc-gswNZR iZwDAZ"
               />
             </th>
             <th
-              class="sc-dIfARi jImzib"
+              class="sc-hHTYSt fJuwLg"
             >
               <span
                 class="sc-gswNZR iZwDAZ"
@@ -266,7 +278,7 @@ exports[`<ApiDocs /> should render correctly 1`] = `
               </span>
             </th>
             <th
-              class="sc-dIfARi jImzib"
+              class="sc-hHTYSt fJuwLg"
             >
               <span
                 class="sc-gswNZR iZwDAZ api-docsstyles__Description-sc-4t6xyo-1 dkIedw"
@@ -276,24 +288,28 @@ exports[`<ApiDocs /> should render correctly 1`] = `
             </th>
           </tr>
           <tr
-            class="sc-idXgbr"
+            class="sc-dIfARi"
           >
             <th
-              class="sc-dIfARi jImzib"
+              class="sc-hHTYSt fJuwLg"
             >
               <a
                 aria-label="/auth/load (opens in a new tab)"
-                class="sc-pyfCe kHwuaX"
+                class="sc-hLBbgP lcnCbW"
                 href="https://www.georgegillams.co.uk/api/auth/load"
                 rel="noopener noreferrer"
                 target="_blank"
               >
-                /auth/load
+                <span
+                  class="sc-jrcTuL ddyEiV"
+                >
+                  /auth/load
+                </span>
                 <div
-                  class="sc-jrcTuL QvVN"
+                  class="sc-eDvSVe kRlCjo"
                 >
                   <svg
-                    class="sc-ftTHYK fjjwty sc-kDvujY fYbYDQ"
+                    class="sc-dkrFOg bLfPgZ sc-jSUZER kDBwKa"
                     height="18"
                     viewBox="0 0 24 24"
                     width="18"
@@ -307,7 +323,7 @@ exports[`<ApiDocs /> should render correctly 1`] = `
               </a>
             </th>
             <th
-              class="sc-dIfARi jImzib"
+              class="sc-hHTYSt fJuwLg"
             >
               <span
                 class="sc-gswNZR iZwDAZ api-docsstyles__Method-sc-4t6xyo-2 jGEmiL"
@@ -316,14 +332,14 @@ exports[`<ApiDocs /> should render correctly 1`] = `
               </span>
             </th>
             <th
-              class="sc-dIfARi jImzib"
+              class="sc-hHTYSt fJuwLg"
             >
               <span
                 class="sc-gswNZR iZwDAZ"
               />
             </th>
             <th
-              class="sc-dIfARi jImzib"
+              class="sc-hHTYSt fJuwLg"
             >
               <span
                 class="sc-gswNZR iZwDAZ"
@@ -332,7 +348,7 @@ exports[`<ApiDocs /> should render correctly 1`] = `
               </span>
             </th>
             <th
-              class="sc-dIfARi jImzib"
+              class="sc-hHTYSt fJuwLg"
             >
               <span
                 class="sc-gswNZR iZwDAZ api-docsstyles__Description-sc-4t6xyo-1 dkIedw"
@@ -342,24 +358,28 @@ exports[`<ApiDocs /> should render correctly 1`] = `
             </th>
           </tr>
           <tr
-            class="sc-idXgbr"
+            class="sc-dIfARi"
           >
             <th
-              class="sc-dIfARi jImzib"
+              class="sc-hHTYSt fJuwLg"
             >
               <a
                 aria-label="/auth/logout (opens in a new tab)"
-                class="sc-pyfCe kHwuaX"
+                class="sc-hLBbgP lcnCbW"
                 href="https://www.georgegillams.co.uk/api/auth/logout"
                 rel="noopener noreferrer"
                 target="_blank"
               >
-                /auth/logout
+                <span
+                  class="sc-jrcTuL ddyEiV"
+                >
+                  /auth/logout
+                </span>
                 <div
-                  class="sc-jrcTuL QvVN"
+                  class="sc-eDvSVe kRlCjo"
                 >
                   <svg
-                    class="sc-ftTHYK fjjwty sc-kDvujY fYbYDQ"
+                    class="sc-dkrFOg bLfPgZ sc-jSUZER kDBwKa"
                     height="18"
                     viewBox="0 0 24 24"
                     width="18"
@@ -373,7 +393,7 @@ exports[`<ApiDocs /> should render correctly 1`] = `
               </a>
             </th>
             <th
-              class="sc-dIfARi jImzib"
+              class="sc-hHTYSt fJuwLg"
             >
               <span
                 class="sc-gswNZR iZwDAZ api-docsstyles__Method-sc-4t6xyo-2 jGEmiL"
@@ -382,14 +402,14 @@ exports[`<ApiDocs /> should render correctly 1`] = `
               </span>
             </th>
             <th
-              class="sc-dIfARi jImzib"
+              class="sc-hHTYSt fJuwLg"
             >
               <span
                 class="sc-gswNZR iZwDAZ"
               />
             </th>
             <th
-              class="sc-dIfARi jImzib"
+              class="sc-hHTYSt fJuwLg"
             >
               <span
                 class="sc-gswNZR iZwDAZ"
@@ -398,7 +418,7 @@ exports[`<ApiDocs /> should render correctly 1`] = `
               </span>
             </th>
             <th
-              class="sc-dIfARi jImzib"
+              class="sc-hHTYSt fJuwLg"
             >
               <span
                 class="sc-gswNZR iZwDAZ api-docsstyles__Description-sc-4t6xyo-1 dkIedw"
@@ -408,24 +428,28 @@ exports[`<ApiDocs /> should render correctly 1`] = `
             </th>
           </tr>
           <tr
-            class="sc-idXgbr"
+            class="sc-dIfARi"
           >
             <th
-              class="sc-dIfARi jImzib"
+              class="sc-hHTYSt fJuwLg"
             >
               <a
                 aria-label="/auth/request-verification-email (opens in a new tab)"
-                class="sc-pyfCe kHwuaX"
+                class="sc-hLBbgP lcnCbW"
                 href="https://www.georgegillams.co.uk/api/auth/request-verification-email"
                 rel="noopener noreferrer"
                 target="_blank"
               >
-                /auth/request-verification-email
+                <span
+                  class="sc-jrcTuL ddyEiV"
+                >
+                  /auth/request-verification-email
+                </span>
                 <div
-                  class="sc-jrcTuL QvVN"
+                  class="sc-eDvSVe kRlCjo"
                 >
                   <svg
-                    class="sc-ftTHYK fjjwty sc-kDvujY fYbYDQ"
+                    class="sc-dkrFOg bLfPgZ sc-jSUZER kDBwKa"
                     height="18"
                     viewBox="0 0 24 24"
                     width="18"
@@ -439,7 +463,7 @@ exports[`<ApiDocs /> should render correctly 1`] = `
               </a>
             </th>
             <th
-              class="sc-dIfARi jImzib"
+              class="sc-hHTYSt fJuwLg"
             >
               <span
                 class="sc-gswNZR iZwDAZ api-docsstyles__Method-sc-4t6xyo-2 jGEmiL"
@@ -448,14 +472,14 @@ exports[`<ApiDocs /> should render correctly 1`] = `
               </span>
             </th>
             <th
-              class="sc-dIfARi jImzib"
+              class="sc-hHTYSt fJuwLg"
             >
               <span
                 class="sc-gswNZR iZwDAZ"
               />
             </th>
             <th
-              class="sc-dIfARi jImzib"
+              class="sc-hHTYSt fJuwLg"
             >
               <span
                 class="sc-gswNZR iZwDAZ"
@@ -464,7 +488,7 @@ exports[`<ApiDocs /> should render correctly 1`] = `
               </span>
             </th>
             <th
-              class="sc-dIfARi jImzib"
+              class="sc-hHTYSt fJuwLg"
             >
               <span
                 class="sc-gswNZR iZwDAZ api-docsstyles__Description-sc-4t6xyo-1 dkIedw"
@@ -474,24 +498,28 @@ exports[`<ApiDocs /> should render correctly 1`] = `
             </th>
           </tr>
           <tr
-            class="sc-idXgbr"
+            class="sc-dIfARi"
           >
             <th
-              class="sc-dIfARi jImzib"
+              class="sc-hHTYSt fJuwLg"
             >
               <a
                 aria-label="/auth/verify-email (opens in a new tab)"
-                class="sc-pyfCe kHwuaX"
+                class="sc-hLBbgP lcnCbW"
                 href="https://www.georgegillams.co.uk/api/auth/verify-email"
                 rel="noopener noreferrer"
                 target="_blank"
               >
-                /auth/verify-email
+                <span
+                  class="sc-jrcTuL ddyEiV"
+                >
+                  /auth/verify-email
+                </span>
                 <div
-                  class="sc-jrcTuL QvVN"
+                  class="sc-eDvSVe kRlCjo"
                 >
                   <svg
-                    class="sc-ftTHYK fjjwty sc-kDvujY fYbYDQ"
+                    class="sc-dkrFOg bLfPgZ sc-jSUZER kDBwKa"
                     height="18"
                     viewBox="0 0 24 24"
                     width="18"
@@ -505,7 +533,7 @@ exports[`<ApiDocs /> should render correctly 1`] = `
               </a>
             </th>
             <th
-              class="sc-dIfARi jImzib"
+              class="sc-hHTYSt fJuwLg"
             >
               <span
                 class="sc-gswNZR iZwDAZ api-docsstyles__Method-sc-4t6xyo-2 jGEmiL"
@@ -514,14 +542,14 @@ exports[`<ApiDocs /> should render correctly 1`] = `
               </span>
             </th>
             <th
-              class="sc-dIfARi jImzib"
+              class="sc-hHTYSt fJuwLg"
             >
               <span
                 class="sc-gswNZR iZwDAZ"
               />
             </th>
             <th
-              class="sc-dIfARi jImzib"
+              class="sc-hHTYSt fJuwLg"
             >
               <span
                 class="sc-gswNZR iZwDAZ"
@@ -530,7 +558,7 @@ exports[`<ApiDocs /> should render correctly 1`] = `
               </span>
             </th>
             <th
-              class="sc-dIfARi jImzib"
+              class="sc-hHTYSt fJuwLg"
             >
               <span
                 class="sc-gswNZR iZwDAZ api-docsstyles__Description-sc-4t6xyo-1 dkIedw"
@@ -540,24 +568,28 @@ exports[`<ApiDocs /> should render correctly 1`] = `
             </th>
           </tr>
           <tr
-            class="sc-idXgbr"
+            class="sc-dIfARi"
           >
             <th
-              class="sc-dIfARi jImzib"
+              class="sc-hHTYSt fJuwLg"
             >
               <a
                 aria-label="/emails/load (opens in a new tab)"
-                class="sc-pyfCe kHwuaX"
+                class="sc-hLBbgP lcnCbW"
                 href="https://www.georgegillams.co.uk/api/emails/load"
                 rel="noopener noreferrer"
                 target="_blank"
               >
-                /emails/load
+                <span
+                  class="sc-jrcTuL ddyEiV"
+                >
+                  /emails/load
+                </span>
                 <div
-                  class="sc-jrcTuL QvVN"
+                  class="sc-eDvSVe kRlCjo"
                 >
                   <svg
-                    class="sc-ftTHYK fjjwty sc-kDvujY fYbYDQ"
+                    class="sc-dkrFOg bLfPgZ sc-jSUZER kDBwKa"
                     height="18"
                     viewBox="0 0 24 24"
                     width="18"
@@ -571,7 +603,7 @@ exports[`<ApiDocs /> should render correctly 1`] = `
               </a>
             </th>
             <th
-              class="sc-dIfARi jImzib"
+              class="sc-hHTYSt fJuwLg"
             >
               <span
                 class="sc-gswNZR iZwDAZ api-docsstyles__Method-sc-4t6xyo-2 jGEmiL"
@@ -580,14 +612,14 @@ exports[`<ApiDocs /> should render correctly 1`] = `
               </span>
             </th>
             <th
-              class="sc-dIfARi jImzib"
+              class="sc-hHTYSt fJuwLg"
             >
               <span
                 class="sc-gswNZR iZwDAZ"
               />
             </th>
             <th
-              class="sc-dIfARi jImzib"
+              class="sc-hHTYSt fJuwLg"
             >
               <span
                 class="sc-gswNZR iZwDAZ"
@@ -596,7 +628,7 @@ exports[`<ApiDocs /> should render correctly 1`] = `
               </span>
             </th>
             <th
-              class="sc-dIfARi jImzib"
+              class="sc-hHTYSt fJuwLg"
             >
               <span
                 class="sc-gswNZR iZwDAZ api-docsstyles__Description-sc-4t6xyo-1 dkIedw"
@@ -606,24 +638,28 @@ exports[`<ApiDocs /> should render correctly 1`] = `
             </th>
           </tr>
           <tr
-            class="sc-idXgbr"
+            class="sc-dIfARi"
           >
             <th
-              class="sc-dIfARi jImzib"
+              class="sc-hHTYSt fJuwLg"
             >
               <a
                 aria-label="/emails/resend (opens in a new tab)"
-                class="sc-pyfCe kHwuaX"
+                class="sc-hLBbgP lcnCbW"
                 href="https://www.georgegillams.co.uk/api/emails/resend"
                 rel="noopener noreferrer"
                 target="_blank"
               >
-                /emails/resend
+                <span
+                  class="sc-jrcTuL ddyEiV"
+                >
+                  /emails/resend
+                </span>
                 <div
-                  class="sc-jrcTuL QvVN"
+                  class="sc-eDvSVe kRlCjo"
                 >
                   <svg
-                    class="sc-ftTHYK fjjwty sc-kDvujY fYbYDQ"
+                    class="sc-dkrFOg bLfPgZ sc-jSUZER kDBwKa"
                     height="18"
                     viewBox="0 0 24 24"
                     width="18"
@@ -637,7 +673,7 @@ exports[`<ApiDocs /> should render correctly 1`] = `
               </a>
             </th>
             <th
-              class="sc-dIfARi jImzib"
+              class="sc-hHTYSt fJuwLg"
             >
               <span
                 class="sc-gswNZR iZwDAZ api-docsstyles__Method-sc-4t6xyo-2 jGEmiL"
@@ -646,14 +682,14 @@ exports[`<ApiDocs /> should render correctly 1`] = `
               </span>
             </th>
             <th
-              class="sc-dIfARi jImzib"
+              class="sc-hHTYSt fJuwLg"
             >
               <span
                 class="sc-gswNZR iZwDAZ"
               />
             </th>
             <th
-              class="sc-dIfARi jImzib"
+              class="sc-hHTYSt fJuwLg"
             >
               <span
                 class="sc-gswNZR iZwDAZ"
@@ -662,7 +698,7 @@ exports[`<ApiDocs /> should render correctly 1`] = `
               </span>
             </th>
             <th
-              class="sc-dIfARi jImzib"
+              class="sc-hHTYSt fJuwLg"
             >
               <span
                 class="sc-gswNZR iZwDAZ api-docsstyles__Description-sc-4t6xyo-1 dkIedw"
@@ -672,24 +708,28 @@ exports[`<ApiDocs /> should render correctly 1`] = `
             </th>
           </tr>
           <tr
-            class="sc-idXgbr"
+            class="sc-dIfARi"
           >
             <th
-              class="sc-dIfARi jImzib"
+              class="sc-hHTYSt fJuwLg"
             >
               <a
                 aria-label="/magic-links/login (opens in a new tab)"
-                class="sc-pyfCe kHwuaX"
+                class="sc-hLBbgP lcnCbW"
                 href="https://www.georgegillams.co.uk/api/magic-links/login"
                 rel="noopener noreferrer"
                 target="_blank"
               >
-                /magic-links/login
+                <span
+                  class="sc-jrcTuL ddyEiV"
+                >
+                  /magic-links/login
+                </span>
                 <div
-                  class="sc-jrcTuL QvVN"
+                  class="sc-eDvSVe kRlCjo"
                 >
                   <svg
-                    class="sc-ftTHYK fjjwty sc-kDvujY fYbYDQ"
+                    class="sc-dkrFOg bLfPgZ sc-jSUZER kDBwKa"
                     height="18"
                     viewBox="0 0 24 24"
                     width="18"
@@ -703,7 +743,7 @@ exports[`<ApiDocs /> should render correctly 1`] = `
               </a>
             </th>
             <th
-              class="sc-dIfARi jImzib"
+              class="sc-hHTYSt fJuwLg"
             >
               <span
                 class="sc-gswNZR iZwDAZ api-docsstyles__Method-sc-4t6xyo-2 jGEmiL"
@@ -712,14 +752,14 @@ exports[`<ApiDocs /> should render correctly 1`] = `
               </span>
             </th>
             <th
-              class="sc-dIfARi jImzib"
+              class="sc-hHTYSt fJuwLg"
             >
               <span
                 class="sc-gswNZR iZwDAZ"
               />
             </th>
             <th
-              class="sc-dIfARi jImzib"
+              class="sc-hHTYSt fJuwLg"
             >
               <span
                 class="sc-gswNZR iZwDAZ"
@@ -728,7 +768,7 @@ exports[`<ApiDocs /> should render correctly 1`] = `
               </span>
             </th>
             <th
-              class="sc-dIfARi jImzib"
+              class="sc-hHTYSt fJuwLg"
             >
               <span
                 class="sc-gswNZR iZwDAZ api-docsstyles__Description-sc-4t6xyo-1 dkIedw"
@@ -738,24 +778,28 @@ exports[`<ApiDocs /> should render correctly 1`] = `
             </th>
           </tr>
           <tr
-            class="sc-idXgbr"
+            class="sc-dIfARi"
           >
             <th
-              class="sc-dIfARi jImzib"
+              class="sc-hHTYSt fJuwLg"
             >
               <a
                 aria-label="/magic-links/request (opens in a new tab)"
-                class="sc-pyfCe kHwuaX"
+                class="sc-hLBbgP lcnCbW"
                 href="https://www.georgegillams.co.uk/api/magic-links/request"
                 rel="noopener noreferrer"
                 target="_blank"
               >
-                /magic-links/request
+                <span
+                  class="sc-jrcTuL ddyEiV"
+                >
+                  /magic-links/request
+                </span>
                 <div
-                  class="sc-jrcTuL QvVN"
+                  class="sc-eDvSVe kRlCjo"
                 >
                   <svg
-                    class="sc-ftTHYK fjjwty sc-kDvujY fYbYDQ"
+                    class="sc-dkrFOg bLfPgZ sc-jSUZER kDBwKa"
                     height="18"
                     viewBox="0 0 24 24"
                     width="18"
@@ -769,7 +813,7 @@ exports[`<ApiDocs /> should render correctly 1`] = `
               </a>
             </th>
             <th
-              class="sc-dIfARi jImzib"
+              class="sc-hHTYSt fJuwLg"
             >
               <span
                 class="sc-gswNZR iZwDAZ api-docsstyles__Method-sc-4t6xyo-2 jGEmiL"
@@ -778,14 +822,14 @@ exports[`<ApiDocs /> should render correctly 1`] = `
               </span>
             </th>
             <th
-              class="sc-dIfARi jImzib"
+              class="sc-hHTYSt fJuwLg"
             >
               <span
                 class="sc-gswNZR iZwDAZ"
               />
             </th>
             <th
-              class="sc-dIfARi jImzib"
+              class="sc-hHTYSt fJuwLg"
             >
               <span
                 class="sc-gswNZR iZwDAZ"
@@ -794,7 +838,7 @@ exports[`<ApiDocs /> should render correctly 1`] = `
               </span>
             </th>
             <th
-              class="sc-dIfARi jImzib"
+              class="sc-hHTYSt fJuwLg"
             >
               <span
                 class="sc-gswNZR iZwDAZ api-docsstyles__Description-sc-4t6xyo-1 dkIedw"
@@ -804,24 +848,28 @@ exports[`<ApiDocs /> should render correctly 1`] = `
             </th>
           </tr>
           <tr
-            class="sc-idXgbr"
+            class="sc-dIfARi"
           >
             <th
-              class="sc-dIfARi jImzib"
+              class="sc-hHTYSt fJuwLg"
             >
               <a
                 aria-label="/data-management/backup (opens in a new tab)"
-                class="sc-pyfCe kHwuaX"
+                class="sc-hLBbgP lcnCbW"
                 href="https://www.georgegillams.co.uk/api/data-management/backup"
                 rel="noopener noreferrer"
                 target="_blank"
               >
-                /data-management/backup
+                <span
+                  class="sc-jrcTuL ddyEiV"
+                >
+                  /data-management/backup
+                </span>
                 <div
-                  class="sc-jrcTuL QvVN"
+                  class="sc-eDvSVe kRlCjo"
                 >
                   <svg
-                    class="sc-ftTHYK fjjwty sc-kDvujY fYbYDQ"
+                    class="sc-dkrFOg bLfPgZ sc-jSUZER kDBwKa"
                     height="18"
                     viewBox="0 0 24 24"
                     width="18"
@@ -835,7 +883,7 @@ exports[`<ApiDocs /> should render correctly 1`] = `
               </a>
             </th>
             <th
-              class="sc-dIfARi jImzib"
+              class="sc-hHTYSt fJuwLg"
             >
               <span
                 class="sc-gswNZR iZwDAZ api-docsstyles__Method-sc-4t6xyo-2 jGEmiL"
@@ -844,14 +892,14 @@ exports[`<ApiDocs /> should render correctly 1`] = `
               </span>
             </th>
             <th
-              class="sc-dIfARi jImzib"
+              class="sc-hHTYSt fJuwLg"
             >
               <span
                 class="sc-gswNZR iZwDAZ"
               />
             </th>
             <th
-              class="sc-dIfARi jImzib"
+              class="sc-hHTYSt fJuwLg"
             >
               <span
                 class="sc-gswNZR iZwDAZ"
@@ -860,7 +908,7 @@ exports[`<ApiDocs /> should render correctly 1`] = `
               </span>
             </th>
             <th
-              class="sc-dIfARi jImzib"
+              class="sc-hHTYSt fJuwLg"
             >
               <span
                 class="sc-gswNZR iZwDAZ api-docsstyles__Description-sc-4t6xyo-1 dkIedw"
@@ -870,24 +918,28 @@ exports[`<ApiDocs /> should render correctly 1`] = `
             </th>
           </tr>
           <tr
-            class="sc-idXgbr"
+            class="sc-dIfARi"
           >
             <th
-              class="sc-dIfARi jImzib"
+              class="sc-hHTYSt fJuwLg"
             >
               <a
                 aria-label="/data-management/delete-entity (opens in a new tab)"
-                class="sc-pyfCe kHwuaX"
+                class="sc-hLBbgP lcnCbW"
                 href="https://www.georgegillams.co.uk/api/data-management/delete-entity"
                 rel="noopener noreferrer"
                 target="_blank"
               >
-                /data-management/delete-entity
+                <span
+                  class="sc-jrcTuL ddyEiV"
+                >
+                  /data-management/delete-entity
+                </span>
                 <div
-                  class="sc-jrcTuL QvVN"
+                  class="sc-eDvSVe kRlCjo"
                 >
                   <svg
-                    class="sc-ftTHYK fjjwty sc-kDvujY fYbYDQ"
+                    class="sc-dkrFOg bLfPgZ sc-jSUZER kDBwKa"
                     height="18"
                     viewBox="0 0 24 24"
                     width="18"
@@ -901,7 +953,7 @@ exports[`<ApiDocs /> should render correctly 1`] = `
               </a>
             </th>
             <th
-              class="sc-dIfARi jImzib"
+              class="sc-hHTYSt fJuwLg"
             >
               <span
                 class="sc-gswNZR iZwDAZ api-docsstyles__Method-sc-4t6xyo-2 jGEmiL"
@@ -910,14 +962,14 @@ exports[`<ApiDocs /> should render correctly 1`] = `
               </span>
             </th>
             <th
-              class="sc-dIfARi jImzib"
+              class="sc-hHTYSt fJuwLg"
             >
               <span
                 class="sc-gswNZR iZwDAZ"
               />
             </th>
             <th
-              class="sc-dIfARi jImzib"
+              class="sc-hHTYSt fJuwLg"
             >
               <span
                 class="sc-gswNZR iZwDAZ"
@@ -926,7 +978,7 @@ exports[`<ApiDocs /> should render correctly 1`] = `
               </span>
             </th>
             <th
-              class="sc-dIfARi jImzib"
+              class="sc-hHTYSt fJuwLg"
             >
               <span
                 class="sc-gswNZR iZwDAZ api-docsstyles__Description-sc-4t6xyo-1 dkIedw"
@@ -936,24 +988,28 @@ exports[`<ApiDocs /> should render correctly 1`] = `
             </th>
           </tr>
           <tr
-            class="sc-idXgbr"
+            class="sc-dIfARi"
           >
             <th
-              class="sc-dIfARi jImzib"
+              class="sc-hHTYSt fJuwLg"
             >
               <a
                 aria-label="/data-management/delete-set (opens in a new tab)"
-                class="sc-pyfCe kHwuaX"
+                class="sc-hLBbgP lcnCbW"
                 href="https://www.georgegillams.co.uk/api/data-management/delete-set"
                 rel="noopener noreferrer"
                 target="_blank"
               >
-                /data-management/delete-set
+                <span
+                  class="sc-jrcTuL ddyEiV"
+                >
+                  /data-management/delete-set
+                </span>
                 <div
-                  class="sc-jrcTuL QvVN"
+                  class="sc-eDvSVe kRlCjo"
                 >
                   <svg
-                    class="sc-ftTHYK fjjwty sc-kDvujY fYbYDQ"
+                    class="sc-dkrFOg bLfPgZ sc-jSUZER kDBwKa"
                     height="18"
                     viewBox="0 0 24 24"
                     width="18"
@@ -967,7 +1023,7 @@ exports[`<ApiDocs /> should render correctly 1`] = `
               </a>
             </th>
             <th
-              class="sc-dIfARi jImzib"
+              class="sc-hHTYSt fJuwLg"
             >
               <span
                 class="sc-gswNZR iZwDAZ api-docsstyles__Method-sc-4t6xyo-2 jGEmiL"
@@ -976,14 +1032,14 @@ exports[`<ApiDocs /> should render correctly 1`] = `
               </span>
             </th>
             <th
-              class="sc-dIfARi jImzib"
+              class="sc-hHTYSt fJuwLg"
             >
               <span
                 class="sc-gswNZR iZwDAZ"
               />
             </th>
             <th
-              class="sc-dIfARi jImzib"
+              class="sc-hHTYSt fJuwLg"
             >
               <span
                 class="sc-gswNZR iZwDAZ"
@@ -992,7 +1048,7 @@ exports[`<ApiDocs /> should render correctly 1`] = `
               </span>
             </th>
             <th
-              class="sc-dIfARi jImzib"
+              class="sc-hHTYSt fJuwLg"
             >
               <span
                 class="sc-gswNZR iZwDAZ api-docsstyles__Description-sc-4t6xyo-1 dkIedw"
@@ -1002,24 +1058,28 @@ exports[`<ApiDocs /> should render correctly 1`] = `
             </th>
           </tr>
           <tr
-            class="sc-idXgbr"
+            class="sc-dIfARi"
           >
             <th
-              class="sc-dIfARi jImzib"
+              class="sc-hHTYSt fJuwLg"
             >
               <a
                 aria-label="/data-management/restore (opens in a new tab)"
-                class="sc-pyfCe kHwuaX"
+                class="sc-hLBbgP lcnCbW"
                 href="https://www.georgegillams.co.uk/api/data-management/restore"
                 rel="noopener noreferrer"
                 target="_blank"
               >
-                /data-management/restore
+                <span
+                  class="sc-jrcTuL ddyEiV"
+                >
+                  /data-management/restore
+                </span>
                 <div
-                  class="sc-jrcTuL QvVN"
+                  class="sc-eDvSVe kRlCjo"
                 >
                   <svg
-                    class="sc-ftTHYK fjjwty sc-kDvujY fYbYDQ"
+                    class="sc-dkrFOg bLfPgZ sc-jSUZER kDBwKa"
                     height="18"
                     viewBox="0 0 24 24"
                     width="18"
@@ -1033,7 +1093,7 @@ exports[`<ApiDocs /> should render correctly 1`] = `
               </a>
             </th>
             <th
-              class="sc-dIfARi jImzib"
+              class="sc-hHTYSt fJuwLg"
             >
               <span
                 class="sc-gswNZR iZwDAZ api-docsstyles__Method-sc-4t6xyo-2 jGEmiL"
@@ -1042,14 +1102,14 @@ exports[`<ApiDocs /> should render correctly 1`] = `
               </span>
             </th>
             <th
-              class="sc-dIfARi jImzib"
+              class="sc-hHTYSt fJuwLg"
             >
               <span
                 class="sc-gswNZR iZwDAZ"
               />
             </th>
             <th
-              class="sc-dIfARi jImzib"
+              class="sc-hHTYSt fJuwLg"
             >
               <span
                 class="sc-gswNZR iZwDAZ"
@@ -1058,7 +1118,7 @@ exports[`<ApiDocs /> should render correctly 1`] = `
               </span>
             </th>
             <th
-              class="sc-dIfARi jImzib"
+              class="sc-hHTYSt fJuwLg"
             >
               <span
                 class="sc-gswNZR iZwDAZ api-docsstyles__Description-sc-4t6xyo-1 dkIedw"
@@ -1068,24 +1128,28 @@ exports[`<ApiDocs /> should render correctly 1`] = `
             </th>
           </tr>
           <tr
-            class="sc-idXgbr"
+            class="sc-dIfARi"
           >
             <th
-              class="sc-dIfARi jImzib"
+              class="sc-hHTYSt fJuwLg"
             >
               <a
                 aria-label="/notifications/create (opens in a new tab)"
-                class="sc-pyfCe kHwuaX"
+                class="sc-hLBbgP lcnCbW"
                 href="https://www.georgegillams.co.uk/api/notifications/create"
                 rel="noopener noreferrer"
                 target="_blank"
               >
-                /notifications/create
+                <span
+                  class="sc-jrcTuL ddyEiV"
+                >
+                  /notifications/create
+                </span>
                 <div
-                  class="sc-jrcTuL QvVN"
+                  class="sc-eDvSVe kRlCjo"
                 >
                   <svg
-                    class="sc-ftTHYK fjjwty sc-kDvujY fYbYDQ"
+                    class="sc-dkrFOg bLfPgZ sc-jSUZER kDBwKa"
                     height="18"
                     viewBox="0 0 24 24"
                     width="18"
@@ -1099,7 +1163,7 @@ exports[`<ApiDocs /> should render correctly 1`] = `
               </a>
             </th>
             <th
-              class="sc-dIfARi jImzib"
+              class="sc-hHTYSt fJuwLg"
             >
               <span
                 class="sc-gswNZR iZwDAZ api-docsstyles__Method-sc-4t6xyo-2 jGEmiL"
@@ -1108,14 +1172,14 @@ exports[`<ApiDocs /> should render correctly 1`] = `
               </span>
             </th>
             <th
-              class="sc-dIfARi jImzib"
+              class="sc-hHTYSt fJuwLg"
             >
               <span
                 class="sc-gswNZR iZwDAZ"
               />
             </th>
             <th
-              class="sc-dIfARi jImzib"
+              class="sc-hHTYSt fJuwLg"
             >
               <span
                 class="sc-gswNZR iZwDAZ"
@@ -1124,7 +1188,7 @@ exports[`<ApiDocs /> should render correctly 1`] = `
               </span>
             </th>
             <th
-              class="sc-dIfARi jImzib"
+              class="sc-hHTYSt fJuwLg"
             >
               <span
                 class="sc-gswNZR iZwDAZ api-docsstyles__Description-sc-4t6xyo-1 dkIedw"
@@ -1134,24 +1198,28 @@ exports[`<ApiDocs /> should render correctly 1`] = `
             </th>
           </tr>
           <tr
-            class="sc-idXgbr"
+            class="sc-dIfARi"
           >
             <th
-              class="sc-dIfARi jImzib"
+              class="sc-hHTYSt fJuwLg"
             >
               <a
                 aria-label="/notifications/delete (opens in a new tab)"
-                class="sc-pyfCe kHwuaX"
+                class="sc-hLBbgP lcnCbW"
                 href="https://www.georgegillams.co.uk/api/notifications/delete"
                 rel="noopener noreferrer"
                 target="_blank"
               >
-                /notifications/delete
+                <span
+                  class="sc-jrcTuL ddyEiV"
+                >
+                  /notifications/delete
+                </span>
                 <div
-                  class="sc-jrcTuL QvVN"
+                  class="sc-eDvSVe kRlCjo"
                 >
                   <svg
-                    class="sc-ftTHYK fjjwty sc-kDvujY fYbYDQ"
+                    class="sc-dkrFOg bLfPgZ sc-jSUZER kDBwKa"
                     height="18"
                     viewBox="0 0 24 24"
                     width="18"
@@ -1165,7 +1233,7 @@ exports[`<ApiDocs /> should render correctly 1`] = `
               </a>
             </th>
             <th
-              class="sc-dIfARi jImzib"
+              class="sc-hHTYSt fJuwLg"
             >
               <span
                 class="sc-gswNZR iZwDAZ api-docsstyles__Method-sc-4t6xyo-2 jGEmiL"
@@ -1174,14 +1242,14 @@ exports[`<ApiDocs /> should render correctly 1`] = `
               </span>
             </th>
             <th
-              class="sc-dIfARi jImzib"
+              class="sc-hHTYSt fJuwLg"
             >
               <span
                 class="sc-gswNZR iZwDAZ"
               />
             </th>
             <th
-              class="sc-dIfARi jImzib"
+              class="sc-hHTYSt fJuwLg"
             >
               <span
                 class="sc-gswNZR iZwDAZ"
@@ -1190,7 +1258,7 @@ exports[`<ApiDocs /> should render correctly 1`] = `
               </span>
             </th>
             <th
-              class="sc-dIfARi jImzib"
+              class="sc-hHTYSt fJuwLg"
             >
               <span
                 class="sc-gswNZR iZwDAZ api-docsstyles__Description-sc-4t6xyo-1 dkIedw"
@@ -1200,24 +1268,28 @@ exports[`<ApiDocs /> should render correctly 1`] = `
             </th>
           </tr>
           <tr
-            class="sc-idXgbr"
+            class="sc-dIfARi"
           >
             <th
-              class="sc-dIfARi jImzib"
+              class="sc-hHTYSt fJuwLg"
             >
               <a
                 aria-label="/notifications/load-all (opens in a new tab)"
-                class="sc-pyfCe kHwuaX"
+                class="sc-hLBbgP lcnCbW"
                 href="https://www.georgegillams.co.uk/api/notifications/load-all"
                 rel="noopener noreferrer"
                 target="_blank"
               >
-                /notifications/load-all
+                <span
+                  class="sc-jrcTuL ddyEiV"
+                >
+                  /notifications/load-all
+                </span>
                 <div
-                  class="sc-jrcTuL QvVN"
+                  class="sc-eDvSVe kRlCjo"
                 >
                   <svg
-                    class="sc-ftTHYK fjjwty sc-kDvujY fYbYDQ"
+                    class="sc-dkrFOg bLfPgZ sc-jSUZER kDBwKa"
                     height="18"
                     viewBox="0 0 24 24"
                     width="18"
@@ -1231,7 +1303,7 @@ exports[`<ApiDocs /> should render correctly 1`] = `
               </a>
             </th>
             <th
-              class="sc-dIfARi jImzib"
+              class="sc-hHTYSt fJuwLg"
             >
               <span
                 class="sc-gswNZR iZwDAZ api-docsstyles__Method-sc-4t6xyo-2 jGEmiL"
@@ -1240,14 +1312,14 @@ exports[`<ApiDocs /> should render correctly 1`] = `
               </span>
             </th>
             <th
-              class="sc-dIfARi jImzib"
+              class="sc-hHTYSt fJuwLg"
             >
               <span
                 class="sc-gswNZR iZwDAZ"
               />
             </th>
             <th
-              class="sc-dIfARi jImzib"
+              class="sc-hHTYSt fJuwLg"
             >
               <span
                 class="sc-gswNZR iZwDAZ"
@@ -1256,7 +1328,7 @@ exports[`<ApiDocs /> should render correctly 1`] = `
               </span>
             </th>
             <th
-              class="sc-dIfARi jImzib"
+              class="sc-hHTYSt fJuwLg"
             >
               <span
                 class="sc-gswNZR iZwDAZ api-docsstyles__Description-sc-4t6xyo-1 dkIedw"
@@ -1266,24 +1338,28 @@ exports[`<ApiDocs /> should render correctly 1`] = `
             </th>
           </tr>
           <tr
-            class="sc-idXgbr"
+            class="sc-dIfARi"
           >
             <th
-              class="sc-dIfARi jImzib"
+              class="sc-hHTYSt fJuwLg"
             >
               <a
                 aria-label="/notifications/load/:id (opens in a new tab)"
-                class="sc-pyfCe kHwuaX"
+                class="sc-hLBbgP lcnCbW"
                 href="https://www.georgegillams.co.uk/api/notifications/load/:id"
                 rel="noopener noreferrer"
                 target="_blank"
               >
-                /notifications/load/:id
+                <span
+                  class="sc-jrcTuL ddyEiV"
+                >
+                  /notifications/load/:id
+                </span>
                 <div
-                  class="sc-jrcTuL QvVN"
+                  class="sc-eDvSVe kRlCjo"
                 >
                   <svg
-                    class="sc-ftTHYK fjjwty sc-kDvujY fYbYDQ"
+                    class="sc-dkrFOg bLfPgZ sc-jSUZER kDBwKa"
                     height="18"
                     viewBox="0 0 24 24"
                     width="18"
@@ -1297,7 +1373,7 @@ exports[`<ApiDocs /> should render correctly 1`] = `
               </a>
             </th>
             <th
-              class="sc-dIfARi jImzib"
+              class="sc-hHTYSt fJuwLg"
             >
               <span
                 class="sc-gswNZR iZwDAZ api-docsstyles__Method-sc-4t6xyo-2 jGEmiL"
@@ -1306,21 +1382,21 @@ exports[`<ApiDocs /> should render correctly 1`] = `
               </span>
             </th>
             <th
-              class="sc-dIfARi jImzib"
+              class="sc-hHTYSt fJuwLg"
             >
               <span
                 class="sc-gswNZR iZwDAZ"
               />
             </th>
             <th
-              class="sc-dIfARi jImzib"
+              class="sc-hHTYSt fJuwLg"
             >
               <span
                 class="sc-gswNZR iZwDAZ"
               />
             </th>
             <th
-              class="sc-dIfARi jImzib"
+              class="sc-hHTYSt fJuwLg"
             >
               <span
                 class="sc-gswNZR iZwDAZ api-docsstyles__Description-sc-4t6xyo-1 dkIedw"
@@ -1328,24 +1404,28 @@ exports[`<ApiDocs /> should render correctly 1`] = `
             </th>
           </tr>
           <tr
-            class="sc-idXgbr"
+            class="sc-dIfARi"
           >
             <th
-              class="sc-dIfARi jImzib"
+              class="sc-hHTYSt fJuwLg"
             >
               <a
                 aria-label="/notifications/update (opens in a new tab)"
-                class="sc-pyfCe kHwuaX"
+                class="sc-hLBbgP lcnCbW"
                 href="https://www.georgegillams.co.uk/api/notifications/update"
                 rel="noopener noreferrer"
                 target="_blank"
               >
-                /notifications/update
+                <span
+                  class="sc-jrcTuL ddyEiV"
+                >
+                  /notifications/update
+                </span>
                 <div
-                  class="sc-jrcTuL QvVN"
+                  class="sc-eDvSVe kRlCjo"
                 >
                   <svg
-                    class="sc-ftTHYK fjjwty sc-kDvujY fYbYDQ"
+                    class="sc-dkrFOg bLfPgZ sc-jSUZER kDBwKa"
                     height="18"
                     viewBox="0 0 24 24"
                     width="18"
@@ -1359,7 +1439,7 @@ exports[`<ApiDocs /> should render correctly 1`] = `
               </a>
             </th>
             <th
-              class="sc-dIfARi jImzib"
+              class="sc-hHTYSt fJuwLg"
             >
               <span
                 class="sc-gswNZR iZwDAZ api-docsstyles__Method-sc-4t6xyo-2 jGEmiL"
@@ -1368,14 +1448,14 @@ exports[`<ApiDocs /> should render correctly 1`] = `
               </span>
             </th>
             <th
-              class="sc-dIfARi jImzib"
+              class="sc-hHTYSt fJuwLg"
             >
               <span
                 class="sc-gswNZR iZwDAZ"
               />
             </th>
             <th
-              class="sc-dIfARi jImzib"
+              class="sc-hHTYSt fJuwLg"
             >
               <span
                 class="sc-gswNZR iZwDAZ"
@@ -1384,7 +1464,7 @@ exports[`<ApiDocs /> should render correctly 1`] = `
               </span>
             </th>
             <th
-              class="sc-dIfARi jImzib"
+              class="sc-hHTYSt fJuwLg"
             >
               <span
                 class="sc-gswNZR iZwDAZ api-docsstyles__Description-sc-4t6xyo-1 dkIedw"
@@ -1394,24 +1474,28 @@ exports[`<ApiDocs /> should render correctly 1`] = `
             </th>
           </tr>
           <tr
-            class="sc-idXgbr"
+            class="sc-dIfARi"
           >
             <th
-              class="sc-dIfARi jImzib"
+              class="sc-hHTYSt fJuwLg"
             >
               <a
                 aria-label="/users/create (opens in a new tab)"
-                class="sc-pyfCe kHwuaX"
+                class="sc-hLBbgP lcnCbW"
                 href="https://www.georgegillams.co.uk/api/users/create"
                 rel="noopener noreferrer"
                 target="_blank"
               >
-                /users/create
+                <span
+                  class="sc-jrcTuL ddyEiV"
+                >
+                  /users/create
+                </span>
                 <div
-                  class="sc-jrcTuL QvVN"
+                  class="sc-eDvSVe kRlCjo"
                 >
                   <svg
-                    class="sc-ftTHYK fjjwty sc-kDvujY fYbYDQ"
+                    class="sc-dkrFOg bLfPgZ sc-jSUZER kDBwKa"
                     height="18"
                     viewBox="0 0 24 24"
                     width="18"
@@ -1425,7 +1509,7 @@ exports[`<ApiDocs /> should render correctly 1`] = `
               </a>
             </th>
             <th
-              class="sc-dIfARi jImzib"
+              class="sc-hHTYSt fJuwLg"
             >
               <span
                 class="sc-gswNZR iZwDAZ api-docsstyles__Method-sc-4t6xyo-2 jGEmiL"
@@ -1434,14 +1518,14 @@ exports[`<ApiDocs /> should render correctly 1`] = `
               </span>
             </th>
             <th
-              class="sc-dIfARi jImzib"
+              class="sc-hHTYSt fJuwLg"
             >
               <span
                 class="sc-gswNZR iZwDAZ"
               />
             </th>
             <th
-              class="sc-dIfARi jImzib"
+              class="sc-hHTYSt fJuwLg"
             >
               <span
                 class="sc-gswNZR iZwDAZ"
@@ -1450,7 +1534,7 @@ exports[`<ApiDocs /> should render correctly 1`] = `
               </span>
             </th>
             <th
-              class="sc-dIfARi jImzib"
+              class="sc-hHTYSt fJuwLg"
             >
               <span
                 class="sc-gswNZR iZwDAZ api-docsstyles__Description-sc-4t6xyo-1 dkIedw"
@@ -1460,24 +1544,28 @@ exports[`<ApiDocs /> should render correctly 1`] = `
             </th>
           </tr>
           <tr
-            class="sc-idXgbr"
+            class="sc-dIfARi"
           >
             <th
-              class="sc-dIfARi jImzib"
+              class="sc-hHTYSt fJuwLg"
             >
               <a
                 aria-label="/users/delete (opens in a new tab)"
-                class="sc-pyfCe kHwuaX"
+                class="sc-hLBbgP lcnCbW"
                 href="https://www.georgegillams.co.uk/api/users/delete"
                 rel="noopener noreferrer"
                 target="_blank"
               >
-                /users/delete
+                <span
+                  class="sc-jrcTuL ddyEiV"
+                >
+                  /users/delete
+                </span>
                 <div
-                  class="sc-jrcTuL QvVN"
+                  class="sc-eDvSVe kRlCjo"
                 >
                   <svg
-                    class="sc-ftTHYK fjjwty sc-kDvujY fYbYDQ"
+                    class="sc-dkrFOg bLfPgZ sc-jSUZER kDBwKa"
                     height="18"
                     viewBox="0 0 24 24"
                     width="18"
@@ -1491,7 +1579,7 @@ exports[`<ApiDocs /> should render correctly 1`] = `
               </a>
             </th>
             <th
-              class="sc-dIfARi jImzib"
+              class="sc-hHTYSt fJuwLg"
             >
               <span
                 class="sc-gswNZR iZwDAZ api-docsstyles__Method-sc-4t6xyo-2 jGEmiL"
@@ -1500,14 +1588,14 @@ exports[`<ApiDocs /> should render correctly 1`] = `
               </span>
             </th>
             <th
-              class="sc-dIfARi jImzib"
+              class="sc-hHTYSt fJuwLg"
             >
               <span
                 class="sc-gswNZR iZwDAZ"
               />
             </th>
             <th
-              class="sc-dIfARi jImzib"
+              class="sc-hHTYSt fJuwLg"
             >
               <span
                 class="sc-gswNZR iZwDAZ"
@@ -1516,7 +1604,7 @@ exports[`<ApiDocs /> should render correctly 1`] = `
               </span>
             </th>
             <th
-              class="sc-dIfARi jImzib"
+              class="sc-hHTYSt fJuwLg"
             >
               <span
                 class="sc-gswNZR iZwDAZ api-docsstyles__Description-sc-4t6xyo-1 dkIedw"
@@ -1526,24 +1614,28 @@ exports[`<ApiDocs /> should render correctly 1`] = `
             </th>
           </tr>
           <tr
-            class="sc-idXgbr"
+            class="sc-dIfARi"
           >
             <th
-              class="sc-dIfARi jImzib"
+              class="sc-hHTYSt fJuwLg"
             >
               <a
                 aria-label="/users/load (opens in a new tab)"
-                class="sc-pyfCe kHwuaX"
+                class="sc-hLBbgP lcnCbW"
                 href="https://www.georgegillams.co.uk/api/users/load"
                 rel="noopener noreferrer"
                 target="_blank"
               >
-                /users/load
+                <span
+                  class="sc-jrcTuL ddyEiV"
+                >
+                  /users/load
+                </span>
                 <div
-                  class="sc-jrcTuL QvVN"
+                  class="sc-eDvSVe kRlCjo"
                 >
                   <svg
-                    class="sc-ftTHYK fjjwty sc-kDvujY fYbYDQ"
+                    class="sc-dkrFOg bLfPgZ sc-jSUZER kDBwKa"
                     height="18"
                     viewBox="0 0 24 24"
                     width="18"
@@ -1557,7 +1649,7 @@ exports[`<ApiDocs /> should render correctly 1`] = `
               </a>
             </th>
             <th
-              class="sc-dIfARi jImzib"
+              class="sc-hHTYSt fJuwLg"
             >
               <span
                 class="sc-gswNZR iZwDAZ api-docsstyles__Method-sc-4t6xyo-2 jGEmiL"
@@ -1566,14 +1658,14 @@ exports[`<ApiDocs /> should render correctly 1`] = `
               </span>
             </th>
             <th
-              class="sc-dIfARi jImzib"
+              class="sc-hHTYSt fJuwLg"
             >
               <span
                 class="sc-gswNZR iZwDAZ"
               />
             </th>
             <th
-              class="sc-dIfARi jImzib"
+              class="sc-hHTYSt fJuwLg"
             >
               <span
                 class="sc-gswNZR iZwDAZ"
@@ -1582,7 +1674,7 @@ exports[`<ApiDocs /> should render correctly 1`] = `
               </span>
             </th>
             <th
-              class="sc-dIfARi jImzib"
+              class="sc-hHTYSt fJuwLg"
             >
               <span
                 class="sc-gswNZR iZwDAZ api-docsstyles__Description-sc-4t6xyo-1 dkIedw"
@@ -1592,24 +1684,28 @@ exports[`<ApiDocs /> should render correctly 1`] = `
             </th>
           </tr>
           <tr
-            class="sc-idXgbr"
+            class="sc-dIfARi"
           >
             <th
-              class="sc-dIfARi jImzib"
+              class="sc-hHTYSt fJuwLg"
             >
               <a
                 aria-label="/users/load-all (opens in a new tab)"
-                class="sc-pyfCe kHwuaX"
+                class="sc-hLBbgP lcnCbW"
                 href="https://www.georgegillams.co.uk/api/users/load-all"
                 rel="noopener noreferrer"
                 target="_blank"
               >
-                /users/load-all
+                <span
+                  class="sc-jrcTuL ddyEiV"
+                >
+                  /users/load-all
+                </span>
                 <div
-                  class="sc-jrcTuL QvVN"
+                  class="sc-eDvSVe kRlCjo"
                 >
                   <svg
-                    class="sc-ftTHYK fjjwty sc-kDvujY fYbYDQ"
+                    class="sc-dkrFOg bLfPgZ sc-jSUZER kDBwKa"
                     height="18"
                     viewBox="0 0 24 24"
                     width="18"
@@ -1623,7 +1719,7 @@ exports[`<ApiDocs /> should render correctly 1`] = `
               </a>
             </th>
             <th
-              class="sc-dIfARi jImzib"
+              class="sc-hHTYSt fJuwLg"
             >
               <span
                 class="sc-gswNZR iZwDAZ api-docsstyles__Method-sc-4t6xyo-2 jGEmiL"
@@ -1632,14 +1728,14 @@ exports[`<ApiDocs /> should render correctly 1`] = `
               </span>
             </th>
             <th
-              class="sc-dIfARi jImzib"
+              class="sc-hHTYSt fJuwLg"
             >
               <span
                 class="sc-gswNZR iZwDAZ"
               />
             </th>
             <th
-              class="sc-dIfARi jImzib"
+              class="sc-hHTYSt fJuwLg"
             >
               <span
                 class="sc-gswNZR iZwDAZ"
@@ -1648,7 +1744,7 @@ exports[`<ApiDocs /> should render correctly 1`] = `
               </span>
             </th>
             <th
-              class="sc-dIfARi jImzib"
+              class="sc-hHTYSt fJuwLg"
             >
               <span
                 class="sc-gswNZR iZwDAZ api-docsstyles__Description-sc-4t6xyo-1 dkIedw"
@@ -1658,24 +1754,28 @@ exports[`<ApiDocs /> should render correctly 1`] = `
             </th>
           </tr>
           <tr
-            class="sc-idXgbr"
+            class="sc-dIfARi"
           >
             <th
-              class="sc-dIfARi jImzib"
+              class="sc-hHTYSt fJuwLg"
             >
               <a
                 aria-label="/users/sign-up (opens in a new tab)"
-                class="sc-pyfCe kHwuaX"
+                class="sc-hLBbgP lcnCbW"
                 href="https://www.georgegillams.co.uk/api/users/sign-up"
                 rel="noopener noreferrer"
                 target="_blank"
               >
-                /users/sign-up
+                <span
+                  class="sc-jrcTuL ddyEiV"
+                >
+                  /users/sign-up
+                </span>
                 <div
-                  class="sc-jrcTuL QvVN"
+                  class="sc-eDvSVe kRlCjo"
                 >
                   <svg
-                    class="sc-ftTHYK fjjwty sc-kDvujY fYbYDQ"
+                    class="sc-dkrFOg bLfPgZ sc-jSUZER kDBwKa"
                     height="18"
                     viewBox="0 0 24 24"
                     width="18"
@@ -1689,7 +1789,7 @@ exports[`<ApiDocs /> should render correctly 1`] = `
               </a>
             </th>
             <th
-              class="sc-dIfARi jImzib"
+              class="sc-hHTYSt fJuwLg"
             >
               <span
                 class="sc-gswNZR iZwDAZ api-docsstyles__Method-sc-4t6xyo-2 jGEmiL"
@@ -1698,14 +1798,14 @@ exports[`<ApiDocs /> should render correctly 1`] = `
               </span>
             </th>
             <th
-              class="sc-dIfARi jImzib"
+              class="sc-hHTYSt fJuwLg"
             >
               <span
                 class="sc-gswNZR iZwDAZ"
               />
             </th>
             <th
-              class="sc-dIfARi jImzib"
+              class="sc-hHTYSt fJuwLg"
             >
               <span
                 class="sc-gswNZR iZwDAZ"
@@ -1714,7 +1814,7 @@ exports[`<ApiDocs /> should render correctly 1`] = `
               </span>
             </th>
             <th
-              class="sc-dIfARi jImzib"
+              class="sc-hHTYSt fJuwLg"
             >
               <span
                 class="sc-gswNZR iZwDAZ api-docsstyles__Description-sc-4t6xyo-1 dkIedw"
@@ -1724,24 +1824,28 @@ exports[`<ApiDocs /> should render correctly 1`] = `
             </th>
           </tr>
           <tr
-            class="sc-idXgbr"
+            class="sc-dIfARi"
           >
             <th
-              class="sc-dIfARi jImzib"
+              class="sc-hHTYSt fJuwLg"
             >
               <a
                 aria-label="/users/update (opens in a new tab)"
-                class="sc-pyfCe kHwuaX"
+                class="sc-hLBbgP lcnCbW"
                 href="https://www.georgegillams.co.uk/api/users/update"
                 rel="noopener noreferrer"
                 target="_blank"
               >
-                /users/update
+                <span
+                  class="sc-jrcTuL ddyEiV"
+                >
+                  /users/update
+                </span>
                 <div
-                  class="sc-jrcTuL QvVN"
+                  class="sc-eDvSVe kRlCjo"
                 >
                   <svg
-                    class="sc-ftTHYK fjjwty sc-kDvujY fYbYDQ"
+                    class="sc-dkrFOg bLfPgZ sc-jSUZER kDBwKa"
                     height="18"
                     viewBox="0 0 24 24"
                     width="18"
@@ -1755,7 +1859,7 @@ exports[`<ApiDocs /> should render correctly 1`] = `
               </a>
             </th>
             <th
-              class="sc-dIfARi jImzib"
+              class="sc-hHTYSt fJuwLg"
             >
               <span
                 class="sc-gswNZR iZwDAZ api-docsstyles__Method-sc-4t6xyo-2 jGEmiL"
@@ -1764,14 +1868,14 @@ exports[`<ApiDocs /> should render correctly 1`] = `
               </span>
             </th>
             <th
-              class="sc-dIfARi jImzib"
+              class="sc-hHTYSt fJuwLg"
             >
               <span
                 class="sc-gswNZR iZwDAZ"
               />
             </th>
             <th
-              class="sc-dIfARi jImzib"
+              class="sc-hHTYSt fJuwLg"
             >
               <span
                 class="sc-gswNZR iZwDAZ"
@@ -1780,7 +1884,7 @@ exports[`<ApiDocs /> should render correctly 1`] = `
               </span>
             </th>
             <th
-              class="sc-dIfARi jImzib"
+              class="sc-hHTYSt fJuwLg"
             >
               <span
                 class="sc-gswNZR iZwDAZ api-docsstyles__Description-sc-4t6xyo-1 dkIedw"
@@ -1790,24 +1894,28 @@ exports[`<ApiDocs /> should render correctly 1`] = `
             </th>
           </tr>
           <tr
-            class="sc-idXgbr"
+            class="sc-dIfARi"
           >
             <th
-              class="sc-dIfARi jImzib"
+              class="sc-hHTYSt fJuwLg"
             >
               <a
                 aria-label="/blogs/create (opens in a new tab)"
-                class="sc-pyfCe kHwuaX"
+                class="sc-hLBbgP lcnCbW"
                 href="https://www.georgegillams.co.uk/api/blogs/create"
                 rel="noopener noreferrer"
                 target="_blank"
               >
-                /blogs/create
+                <span
+                  class="sc-jrcTuL ddyEiV"
+                >
+                  /blogs/create
+                </span>
                 <div
-                  class="sc-jrcTuL QvVN"
+                  class="sc-eDvSVe kRlCjo"
                 >
                   <svg
-                    class="sc-ftTHYK fjjwty sc-kDvujY fYbYDQ"
+                    class="sc-dkrFOg bLfPgZ sc-jSUZER kDBwKa"
                     height="18"
                     viewBox="0 0 24 24"
                     width="18"
@@ -1821,7 +1929,7 @@ exports[`<ApiDocs /> should render correctly 1`] = `
               </a>
             </th>
             <th
-              class="sc-dIfARi jImzib"
+              class="sc-hHTYSt fJuwLg"
             >
               <span
                 class="sc-gswNZR iZwDAZ api-docsstyles__Method-sc-4t6xyo-2 jGEmiL"
@@ -1830,14 +1938,14 @@ exports[`<ApiDocs /> should render correctly 1`] = `
               </span>
             </th>
             <th
-              class="sc-dIfARi jImzib"
+              class="sc-hHTYSt fJuwLg"
             >
               <span
                 class="sc-gswNZR iZwDAZ"
               />
             </th>
             <th
-              class="sc-dIfARi jImzib"
+              class="sc-hHTYSt fJuwLg"
             >
               <span
                 class="sc-gswNZR iZwDAZ"
@@ -1846,7 +1954,7 @@ exports[`<ApiDocs /> should render correctly 1`] = `
               </span>
             </th>
             <th
-              class="sc-dIfARi jImzib"
+              class="sc-hHTYSt fJuwLg"
             >
               <span
                 class="sc-gswNZR iZwDAZ api-docsstyles__Description-sc-4t6xyo-1 dkIedw"
@@ -1856,24 +1964,28 @@ exports[`<ApiDocs /> should render correctly 1`] = `
             </th>
           </tr>
           <tr
-            class="sc-idXgbr"
+            class="sc-dIfARi"
           >
             <th
-              class="sc-dIfARi jImzib"
+              class="sc-hHTYSt fJuwLg"
             >
               <a
                 aria-label="/blogs/delete (opens in a new tab)"
-                class="sc-pyfCe kHwuaX"
+                class="sc-hLBbgP lcnCbW"
                 href="https://www.georgegillams.co.uk/api/blogs/delete"
                 rel="noopener noreferrer"
                 target="_blank"
               >
-                /blogs/delete
+                <span
+                  class="sc-jrcTuL ddyEiV"
+                >
+                  /blogs/delete
+                </span>
                 <div
-                  class="sc-jrcTuL QvVN"
+                  class="sc-eDvSVe kRlCjo"
                 >
                   <svg
-                    class="sc-ftTHYK fjjwty sc-kDvujY fYbYDQ"
+                    class="sc-dkrFOg bLfPgZ sc-jSUZER kDBwKa"
                     height="18"
                     viewBox="0 0 24 24"
                     width="18"
@@ -1887,7 +1999,7 @@ exports[`<ApiDocs /> should render correctly 1`] = `
               </a>
             </th>
             <th
-              class="sc-dIfARi jImzib"
+              class="sc-hHTYSt fJuwLg"
             >
               <span
                 class="sc-gswNZR iZwDAZ api-docsstyles__Method-sc-4t6xyo-2 jGEmiL"
@@ -1896,14 +2008,14 @@ exports[`<ApiDocs /> should render correctly 1`] = `
               </span>
             </th>
             <th
-              class="sc-dIfARi jImzib"
+              class="sc-hHTYSt fJuwLg"
             >
               <span
                 class="sc-gswNZR iZwDAZ"
               />
             </th>
             <th
-              class="sc-dIfARi jImzib"
+              class="sc-hHTYSt fJuwLg"
             >
               <span
                 class="sc-gswNZR iZwDAZ"
@@ -1912,7 +2024,7 @@ exports[`<ApiDocs /> should render correctly 1`] = `
               </span>
             </th>
             <th
-              class="sc-dIfARi jImzib"
+              class="sc-hHTYSt fJuwLg"
             >
               <span
                 class="sc-gswNZR iZwDAZ api-docsstyles__Description-sc-4t6xyo-1 dkIedw"
@@ -1922,24 +2034,28 @@ exports[`<ApiDocs /> should render correctly 1`] = `
             </th>
           </tr>
           <tr
-            class="sc-idXgbr"
+            class="sc-dIfARi"
           >
             <th
-              class="sc-dIfARi jImzib"
+              class="sc-hHTYSt fJuwLg"
             >
               <a
                 aria-label="/blogs/load-all (opens in a new tab)"
-                class="sc-pyfCe kHwuaX"
+                class="sc-hLBbgP lcnCbW"
                 href="https://www.georgegillams.co.uk/api/blogs/load-all"
                 rel="noopener noreferrer"
                 target="_blank"
               >
-                /blogs/load-all
+                <span
+                  class="sc-jrcTuL ddyEiV"
+                >
+                  /blogs/load-all
+                </span>
                 <div
-                  class="sc-jrcTuL QvVN"
+                  class="sc-eDvSVe kRlCjo"
                 >
                   <svg
-                    class="sc-ftTHYK fjjwty sc-kDvujY fYbYDQ"
+                    class="sc-dkrFOg bLfPgZ sc-jSUZER kDBwKa"
                     height="18"
                     viewBox="0 0 24 24"
                     width="18"
@@ -1953,7 +2069,7 @@ exports[`<ApiDocs /> should render correctly 1`] = `
               </a>
             </th>
             <th
-              class="sc-dIfARi jImzib"
+              class="sc-hHTYSt fJuwLg"
             >
               <span
                 class="sc-gswNZR iZwDAZ api-docsstyles__Method-sc-4t6xyo-2 jGEmiL"
@@ -1962,14 +2078,14 @@ exports[`<ApiDocs /> should render correctly 1`] = `
               </span>
             </th>
             <th
-              class="sc-dIfARi jImzib"
+              class="sc-hHTYSt fJuwLg"
             >
               <span
                 class="sc-gswNZR iZwDAZ"
               />
             </th>
             <th
-              class="sc-dIfARi jImzib"
+              class="sc-hHTYSt fJuwLg"
             >
               <span
                 class="sc-gswNZR iZwDAZ"
@@ -1978,7 +2094,7 @@ exports[`<ApiDocs /> should render correctly 1`] = `
               </span>
             </th>
             <th
-              class="sc-dIfARi jImzib"
+              class="sc-hHTYSt fJuwLg"
             >
               <span
                 class="sc-gswNZR iZwDAZ api-docsstyles__Description-sc-4t6xyo-1 dkIedw"
@@ -1988,24 +2104,28 @@ exports[`<ApiDocs /> should render correctly 1`] = `
             </th>
           </tr>
           <tr
-            class="sc-idXgbr"
+            class="sc-dIfARi"
           >
             <th
-              class="sc-dIfARi jImzib"
+              class="sc-hHTYSt fJuwLg"
             >
               <a
                 aria-label="/blogs/load/:id (opens in a new tab)"
-                class="sc-pyfCe kHwuaX"
+                class="sc-hLBbgP lcnCbW"
                 href="https://www.georgegillams.co.uk/api/blogs/load/:id"
                 rel="noopener noreferrer"
                 target="_blank"
               >
-                /blogs/load/:id
+                <span
+                  class="sc-jrcTuL ddyEiV"
+                >
+                  /blogs/load/:id
+                </span>
                 <div
-                  class="sc-jrcTuL QvVN"
+                  class="sc-eDvSVe kRlCjo"
                 >
                   <svg
-                    class="sc-ftTHYK fjjwty sc-kDvujY fYbYDQ"
+                    class="sc-dkrFOg bLfPgZ sc-jSUZER kDBwKa"
                     height="18"
                     viewBox="0 0 24 24"
                     width="18"
@@ -2019,7 +2139,7 @@ exports[`<ApiDocs /> should render correctly 1`] = `
               </a>
             </th>
             <th
-              class="sc-dIfARi jImzib"
+              class="sc-hHTYSt fJuwLg"
             >
               <span
                 class="sc-gswNZR iZwDAZ api-docsstyles__Method-sc-4t6xyo-2 jGEmiL"
@@ -2028,7 +2148,7 @@ exports[`<ApiDocs /> should render correctly 1`] = `
               </span>
             </th>
             <th
-              class="sc-dIfARi jImzib"
+              class="sc-hHTYSt fJuwLg"
             >
               <span
                 class="sc-gswNZR iZwDAZ"
@@ -2037,7 +2157,7 @@ exports[`<ApiDocs /> should render correctly 1`] = `
               </span>
             </th>
             <th
-              class="sc-dIfARi jImzib"
+              class="sc-hHTYSt fJuwLg"
             >
               <span
                 class="sc-gswNZR iZwDAZ"
@@ -2046,7 +2166,7 @@ exports[`<ApiDocs /> should render correctly 1`] = `
               </span>
             </th>
             <th
-              class="sc-dIfARi jImzib"
+              class="sc-hHTYSt fJuwLg"
             >
               <span
                 class="sc-gswNZR iZwDAZ api-docsstyles__Description-sc-4t6xyo-1 dkIedw"
@@ -2056,24 +2176,28 @@ exports[`<ApiDocs /> should render correctly 1`] = `
             </th>
           </tr>
           <tr
-            class="sc-idXgbr"
+            class="sc-dIfARi"
           >
             <th
-              class="sc-dIfARi jImzib"
+              class="sc-hHTYSt fJuwLg"
             >
               <a
                 aria-label="/blogs/update (opens in a new tab)"
-                class="sc-pyfCe kHwuaX"
+                class="sc-hLBbgP lcnCbW"
                 href="https://www.georgegillams.co.uk/api/blogs/update"
                 rel="noopener noreferrer"
                 target="_blank"
               >
-                /blogs/update
+                <span
+                  class="sc-jrcTuL ddyEiV"
+                >
+                  /blogs/update
+                </span>
                 <div
-                  class="sc-jrcTuL QvVN"
+                  class="sc-eDvSVe kRlCjo"
                 >
                   <svg
-                    class="sc-ftTHYK fjjwty sc-kDvujY fYbYDQ"
+                    class="sc-dkrFOg bLfPgZ sc-jSUZER kDBwKa"
                     height="18"
                     viewBox="0 0 24 24"
                     width="18"
@@ -2087,7 +2211,7 @@ exports[`<ApiDocs /> should render correctly 1`] = `
               </a>
             </th>
             <th
-              class="sc-dIfARi jImzib"
+              class="sc-hHTYSt fJuwLg"
             >
               <span
                 class="sc-gswNZR iZwDAZ api-docsstyles__Method-sc-4t6xyo-2 jGEmiL"
@@ -2096,14 +2220,14 @@ exports[`<ApiDocs /> should render correctly 1`] = `
               </span>
             </th>
             <th
-              class="sc-dIfARi jImzib"
+              class="sc-hHTYSt fJuwLg"
             >
               <span
                 class="sc-gswNZR iZwDAZ"
               />
             </th>
             <th
-              class="sc-dIfARi jImzib"
+              class="sc-hHTYSt fJuwLg"
             >
               <span
                 class="sc-gswNZR iZwDAZ"
@@ -2112,7 +2236,7 @@ exports[`<ApiDocs /> should render correctly 1`] = `
               </span>
             </th>
             <th
-              class="sc-dIfARi jImzib"
+              class="sc-hHTYSt fJuwLg"
             >
               <span
                 class="sc-gswNZR iZwDAZ api-docsstyles__Description-sc-4t6xyo-1 dkIedw"
@@ -2122,24 +2246,28 @@ exports[`<ApiDocs /> should render correctly 1`] = `
             </th>
           </tr>
           <tr
-            class="sc-idXgbr"
+            class="sc-dIfARi"
           >
             <th
-              class="sc-dIfARi jImzib"
+              class="sc-hHTYSt fJuwLg"
             >
               <a
                 aria-label="/make-payment/load (opens in a new tab)"
-                class="sc-pyfCe kHwuaX"
+                class="sc-hLBbgP lcnCbW"
                 href="https://www.georgegillams.co.uk/api/make-payment/load"
                 rel="noopener noreferrer"
                 target="_blank"
               >
-                /make-payment/load
+                <span
+                  class="sc-jrcTuL ddyEiV"
+                >
+                  /make-payment/load
+                </span>
                 <div
-                  class="sc-jrcTuL QvVN"
+                  class="sc-eDvSVe kRlCjo"
                 >
                   <svg
-                    class="sc-ftTHYK fjjwty sc-kDvujY fYbYDQ"
+                    class="sc-dkrFOg bLfPgZ sc-jSUZER kDBwKa"
                     height="18"
                     viewBox="0 0 24 24"
                     width="18"
@@ -2153,7 +2281,7 @@ exports[`<ApiDocs /> should render correctly 1`] = `
               </a>
             </th>
             <th
-              class="sc-dIfARi jImzib"
+              class="sc-hHTYSt fJuwLg"
             >
               <span
                 class="sc-gswNZR iZwDAZ api-docsstyles__Method-sc-4t6xyo-2 jGEmiL"
@@ -2162,14 +2290,14 @@ exports[`<ApiDocs /> should render correctly 1`] = `
               </span>
             </th>
             <th
-              class="sc-dIfARi jImzib"
+              class="sc-hHTYSt fJuwLg"
             >
               <span
                 class="sc-gswNZR iZwDAZ"
               />
             </th>
             <th
-              class="sc-dIfARi jImzib"
+              class="sc-hHTYSt fJuwLg"
             >
               <span
                 class="sc-gswNZR iZwDAZ"
@@ -2178,7 +2306,7 @@ exports[`<ApiDocs /> should render correctly 1`] = `
               </span>
             </th>
             <th
-              class="sc-dIfARi jImzib"
+              class="sc-hHTYSt fJuwLg"
             >
               <span
                 class="sc-gswNZR iZwDAZ api-docsstyles__Description-sc-4t6xyo-1 dkIedw"
@@ -2188,24 +2316,28 @@ exports[`<ApiDocs /> should render correctly 1`] = `
             </th>
           </tr>
           <tr
-            class="sc-idXgbr"
+            class="sc-dIfARi"
           >
             <th
-              class="sc-dIfARi jImzib"
+              class="sc-hHTYSt fJuwLg"
             >
               <a
                 aria-label="/make-payment/create-intent (opens in a new tab)"
-                class="sc-pyfCe kHwuaX"
+                class="sc-hLBbgP lcnCbW"
                 href="https://www.georgegillams.co.uk/api/make-payment/create-intent"
                 rel="noopener noreferrer"
                 target="_blank"
               >
-                /make-payment/create-intent
+                <span
+                  class="sc-jrcTuL ddyEiV"
+                >
+                  /make-payment/create-intent
+                </span>
                 <div
-                  class="sc-jrcTuL QvVN"
+                  class="sc-eDvSVe kRlCjo"
                 >
                   <svg
-                    class="sc-ftTHYK fjjwty sc-kDvujY fYbYDQ"
+                    class="sc-dkrFOg bLfPgZ sc-jSUZER kDBwKa"
                     height="18"
                     viewBox="0 0 24 24"
                     width="18"
@@ -2219,7 +2351,7 @@ exports[`<ApiDocs /> should render correctly 1`] = `
               </a>
             </th>
             <th
-              class="sc-dIfARi jImzib"
+              class="sc-hHTYSt fJuwLg"
             >
               <span
                 class="sc-gswNZR iZwDAZ api-docsstyles__Method-sc-4t6xyo-2 jGEmiL"
@@ -2228,14 +2360,14 @@ exports[`<ApiDocs /> should render correctly 1`] = `
               </span>
             </th>
             <th
-              class="sc-dIfARi jImzib"
+              class="sc-hHTYSt fJuwLg"
             >
               <span
                 class="sc-gswNZR iZwDAZ"
               />
             </th>
             <th
-              class="sc-dIfARi jImzib"
+              class="sc-hHTYSt fJuwLg"
             >
               <span
                 class="sc-gswNZR iZwDAZ"
@@ -2244,7 +2376,7 @@ exports[`<ApiDocs /> should render correctly 1`] = `
               </span>
             </th>
             <th
-              class="sc-dIfARi jImzib"
+              class="sc-hHTYSt fJuwLg"
             >
               <span
                 class="sc-gswNZR iZwDAZ api-docsstyles__Description-sc-4t6xyo-1 dkIedw"
@@ -2254,24 +2386,28 @@ exports[`<ApiDocs /> should render correctly 1`] = `
             </th>
           </tr>
           <tr
-            class="sc-idXgbr"
+            class="sc-dIfARi"
           >
             <th
-              class="sc-dIfARi jImzib"
+              class="sc-hHTYSt fJuwLg"
             >
               <a
                 aria-label="/make-payment/resend-receipt (opens in a new tab)"
-                class="sc-pyfCe kHwuaX"
+                class="sc-hLBbgP lcnCbW"
                 href="https://www.georgegillams.co.uk/api/make-payment/resend-receipt"
                 rel="noopener noreferrer"
                 target="_blank"
               >
-                /make-payment/resend-receipt
+                <span
+                  class="sc-jrcTuL ddyEiV"
+                >
+                  /make-payment/resend-receipt
+                </span>
                 <div
-                  class="sc-jrcTuL QvVN"
+                  class="sc-eDvSVe kRlCjo"
                 >
                   <svg
-                    class="sc-ftTHYK fjjwty sc-kDvujY fYbYDQ"
+                    class="sc-dkrFOg bLfPgZ sc-jSUZER kDBwKa"
                     height="18"
                     viewBox="0 0 24 24"
                     width="18"
@@ -2285,7 +2421,7 @@ exports[`<ApiDocs /> should render correctly 1`] = `
               </a>
             </th>
             <th
-              class="sc-dIfARi jImzib"
+              class="sc-hHTYSt fJuwLg"
             >
               <span
                 class="sc-gswNZR iZwDAZ api-docsstyles__Method-sc-4t6xyo-2 jGEmiL"
@@ -2294,14 +2430,14 @@ exports[`<ApiDocs /> should render correctly 1`] = `
               </span>
             </th>
             <th
-              class="sc-dIfARi jImzib"
+              class="sc-hHTYSt fJuwLg"
             >
               <span
                 class="sc-gswNZR iZwDAZ"
               />
             </th>
             <th
-              class="sc-dIfARi jImzib"
+              class="sc-hHTYSt fJuwLg"
             >
               <span
                 class="sc-gswNZR iZwDAZ"
@@ -2310,7 +2446,7 @@ exports[`<ApiDocs /> should render correctly 1`] = `
               </span>
             </th>
             <th
-              class="sc-dIfARi jImzib"
+              class="sc-hHTYSt fJuwLg"
             >
               <span
                 class="sc-gswNZR iZwDAZ api-docsstyles__Description-sc-4t6xyo-1 dkIedw"
@@ -2320,24 +2456,28 @@ exports[`<ApiDocs /> should render correctly 1`] = `
             </th>
           </tr>
           <tr
-            class="sc-idXgbr"
+            class="sc-dIfARi"
           >
             <th
-              class="sc-dIfARi jImzib"
+              class="sc-hHTYSt fJuwLg"
             >
               <a
                 aria-label="/payments/create (opens in a new tab)"
-                class="sc-pyfCe kHwuaX"
+                class="sc-hLBbgP lcnCbW"
                 href="https://www.georgegillams.co.uk/api/payments/create"
                 rel="noopener noreferrer"
                 target="_blank"
               >
-                /payments/create
+                <span
+                  class="sc-jrcTuL ddyEiV"
+                >
+                  /payments/create
+                </span>
                 <div
-                  class="sc-jrcTuL QvVN"
+                  class="sc-eDvSVe kRlCjo"
                 >
                   <svg
-                    class="sc-ftTHYK fjjwty sc-kDvujY fYbYDQ"
+                    class="sc-dkrFOg bLfPgZ sc-jSUZER kDBwKa"
                     height="18"
                     viewBox="0 0 24 24"
                     width="18"
@@ -2351,7 +2491,7 @@ exports[`<ApiDocs /> should render correctly 1`] = `
               </a>
             </th>
             <th
-              class="sc-dIfARi jImzib"
+              class="sc-hHTYSt fJuwLg"
             >
               <span
                 class="sc-gswNZR iZwDAZ api-docsstyles__Method-sc-4t6xyo-2 jGEmiL"
@@ -2360,14 +2500,14 @@ exports[`<ApiDocs /> should render correctly 1`] = `
               </span>
             </th>
             <th
-              class="sc-dIfARi jImzib"
+              class="sc-hHTYSt fJuwLg"
             >
               <span
                 class="sc-gswNZR iZwDAZ"
               />
             </th>
             <th
-              class="sc-dIfARi jImzib"
+              class="sc-hHTYSt fJuwLg"
             >
               <span
                 class="sc-gswNZR iZwDAZ"
@@ -2376,7 +2516,7 @@ exports[`<ApiDocs /> should render correctly 1`] = `
               </span>
             </th>
             <th
-              class="sc-dIfARi jImzib"
+              class="sc-hHTYSt fJuwLg"
             >
               <span
                 class="sc-gswNZR iZwDAZ api-docsstyles__Description-sc-4t6xyo-1 dkIedw"
@@ -2386,24 +2526,28 @@ exports[`<ApiDocs /> should render correctly 1`] = `
             </th>
           </tr>
           <tr
-            class="sc-idXgbr"
+            class="sc-dIfARi"
           >
             <th
-              class="sc-dIfARi jImzib"
+              class="sc-hHTYSt fJuwLg"
             >
               <a
                 aria-label="/payments/delete (opens in a new tab)"
-                class="sc-pyfCe kHwuaX"
+                class="sc-hLBbgP lcnCbW"
                 href="https://www.georgegillams.co.uk/api/payments/delete"
                 rel="noopener noreferrer"
                 target="_blank"
               >
-                /payments/delete
+                <span
+                  class="sc-jrcTuL ddyEiV"
+                >
+                  /payments/delete
+                </span>
                 <div
-                  class="sc-jrcTuL QvVN"
+                  class="sc-eDvSVe kRlCjo"
                 >
                   <svg
-                    class="sc-ftTHYK fjjwty sc-kDvujY fYbYDQ"
+                    class="sc-dkrFOg bLfPgZ sc-jSUZER kDBwKa"
                     height="18"
                     viewBox="0 0 24 24"
                     width="18"
@@ -2417,7 +2561,7 @@ exports[`<ApiDocs /> should render correctly 1`] = `
               </a>
             </th>
             <th
-              class="sc-dIfARi jImzib"
+              class="sc-hHTYSt fJuwLg"
             >
               <span
                 class="sc-gswNZR iZwDAZ api-docsstyles__Method-sc-4t6xyo-2 jGEmiL"
@@ -2426,14 +2570,14 @@ exports[`<ApiDocs /> should render correctly 1`] = `
               </span>
             </th>
             <th
-              class="sc-dIfARi jImzib"
+              class="sc-hHTYSt fJuwLg"
             >
               <span
                 class="sc-gswNZR iZwDAZ"
               />
             </th>
             <th
-              class="sc-dIfARi jImzib"
+              class="sc-hHTYSt fJuwLg"
             >
               <span
                 class="sc-gswNZR iZwDAZ"
@@ -2442,7 +2586,7 @@ exports[`<ApiDocs /> should render correctly 1`] = `
               </span>
             </th>
             <th
-              class="sc-dIfARi jImzib"
+              class="sc-hHTYSt fJuwLg"
             >
               <span
                 class="sc-gswNZR iZwDAZ api-docsstyles__Description-sc-4t6xyo-1 dkIedw"
@@ -2452,24 +2596,28 @@ exports[`<ApiDocs /> should render correctly 1`] = `
             </th>
           </tr>
           <tr
-            class="sc-idXgbr"
+            class="sc-dIfARi"
           >
             <th
-              class="sc-dIfARi jImzib"
+              class="sc-hHTYSt fJuwLg"
             >
               <a
                 aria-label="/payments/load-all (opens in a new tab)"
-                class="sc-pyfCe kHwuaX"
+                class="sc-hLBbgP lcnCbW"
                 href="https://www.georgegillams.co.uk/api/payments/load-all"
                 rel="noopener noreferrer"
                 target="_blank"
               >
-                /payments/load-all
+                <span
+                  class="sc-jrcTuL ddyEiV"
+                >
+                  /payments/load-all
+                </span>
                 <div
-                  class="sc-jrcTuL QvVN"
+                  class="sc-eDvSVe kRlCjo"
                 >
                   <svg
-                    class="sc-ftTHYK fjjwty sc-kDvujY fYbYDQ"
+                    class="sc-dkrFOg bLfPgZ sc-jSUZER kDBwKa"
                     height="18"
                     viewBox="0 0 24 24"
                     width="18"
@@ -2483,7 +2631,7 @@ exports[`<ApiDocs /> should render correctly 1`] = `
               </a>
             </th>
             <th
-              class="sc-dIfARi jImzib"
+              class="sc-hHTYSt fJuwLg"
             >
               <span
                 class="sc-gswNZR iZwDAZ api-docsstyles__Method-sc-4t6xyo-2 jGEmiL"
@@ -2492,14 +2640,14 @@ exports[`<ApiDocs /> should render correctly 1`] = `
               </span>
             </th>
             <th
-              class="sc-dIfARi jImzib"
+              class="sc-hHTYSt fJuwLg"
             >
               <span
                 class="sc-gswNZR iZwDAZ"
               />
             </th>
             <th
-              class="sc-dIfARi jImzib"
+              class="sc-hHTYSt fJuwLg"
             >
               <span
                 class="sc-gswNZR iZwDAZ"
@@ -2508,7 +2656,7 @@ exports[`<ApiDocs /> should render correctly 1`] = `
               </span>
             </th>
             <th
-              class="sc-dIfARi jImzib"
+              class="sc-hHTYSt fJuwLg"
             >
               <span
                 class="sc-gswNZR iZwDAZ api-docsstyles__Description-sc-4t6xyo-1 dkIedw"
@@ -2518,24 +2666,28 @@ exports[`<ApiDocs /> should render correctly 1`] = `
             </th>
           </tr>
           <tr
-            class="sc-idXgbr"
+            class="sc-dIfARi"
           >
             <th
-              class="sc-dIfARi jImzib"
+              class="sc-hHTYSt fJuwLg"
             >
               <a
                 aria-label="/support/create (opens in a new tab)"
-                class="sc-pyfCe kHwuaX"
+                class="sc-hLBbgP lcnCbW"
                 href="https://www.georgegillams.co.uk/api/support/create"
                 rel="noopener noreferrer"
                 target="_blank"
               >
-                /support/create
+                <span
+                  class="sc-jrcTuL ddyEiV"
+                >
+                  /support/create
+                </span>
                 <div
-                  class="sc-jrcTuL QvVN"
+                  class="sc-eDvSVe kRlCjo"
                 >
                   <svg
-                    class="sc-ftTHYK fjjwty sc-kDvujY fYbYDQ"
+                    class="sc-dkrFOg bLfPgZ sc-jSUZER kDBwKa"
                     height="18"
                     viewBox="0 0 24 24"
                     width="18"
@@ -2549,7 +2701,7 @@ exports[`<ApiDocs /> should render correctly 1`] = `
               </a>
             </th>
             <th
-              class="sc-dIfARi jImzib"
+              class="sc-hHTYSt fJuwLg"
             >
               <span
                 class="sc-gswNZR iZwDAZ api-docsstyles__Method-sc-4t6xyo-2 jGEmiL"
@@ -2558,14 +2710,14 @@ exports[`<ApiDocs /> should render correctly 1`] = `
               </span>
             </th>
             <th
-              class="sc-dIfARi jImzib"
+              class="sc-hHTYSt fJuwLg"
             >
               <span
                 class="sc-gswNZR iZwDAZ"
               />
             </th>
             <th
-              class="sc-dIfARi jImzib"
+              class="sc-hHTYSt fJuwLg"
             >
               <span
                 class="sc-gswNZR iZwDAZ"
@@ -2574,7 +2726,7 @@ exports[`<ApiDocs /> should render correctly 1`] = `
               </span>
             </th>
             <th
-              class="sc-dIfARi jImzib"
+              class="sc-hHTYSt fJuwLg"
             >
               <span
                 class="sc-gswNZR iZwDAZ api-docsstyles__Description-sc-4t6xyo-1 dkIedw"
@@ -2584,24 +2736,28 @@ exports[`<ApiDocs /> should render correctly 1`] = `
             </th>
           </tr>
           <tr
-            class="sc-idXgbr"
+            class="sc-dIfARi"
           >
             <th
-              class="sc-dIfARi jImzib"
+              class="sc-hHTYSt fJuwLg"
             >
               <a
                 aria-label="/support/delete (opens in a new tab)"
-                class="sc-pyfCe kHwuaX"
+                class="sc-hLBbgP lcnCbW"
                 href="https://www.georgegillams.co.uk/api/support/delete"
                 rel="noopener noreferrer"
                 target="_blank"
               >
-                /support/delete
+                <span
+                  class="sc-jrcTuL ddyEiV"
+                >
+                  /support/delete
+                </span>
                 <div
-                  class="sc-jrcTuL QvVN"
+                  class="sc-eDvSVe kRlCjo"
                 >
                   <svg
-                    class="sc-ftTHYK fjjwty sc-kDvujY fYbYDQ"
+                    class="sc-dkrFOg bLfPgZ sc-jSUZER kDBwKa"
                     height="18"
                     viewBox="0 0 24 24"
                     width="18"
@@ -2615,7 +2771,7 @@ exports[`<ApiDocs /> should render correctly 1`] = `
               </a>
             </th>
             <th
-              class="sc-dIfARi jImzib"
+              class="sc-hHTYSt fJuwLg"
             >
               <span
                 class="sc-gswNZR iZwDAZ api-docsstyles__Method-sc-4t6xyo-2 jGEmiL"
@@ -2624,14 +2780,14 @@ exports[`<ApiDocs /> should render correctly 1`] = `
               </span>
             </th>
             <th
-              class="sc-dIfARi jImzib"
+              class="sc-hHTYSt fJuwLg"
             >
               <span
                 class="sc-gswNZR iZwDAZ"
               />
             </th>
             <th
-              class="sc-dIfARi jImzib"
+              class="sc-hHTYSt fJuwLg"
             >
               <span
                 class="sc-gswNZR iZwDAZ"
@@ -2640,7 +2796,7 @@ exports[`<ApiDocs /> should render correctly 1`] = `
               </span>
             </th>
             <th
-              class="sc-dIfARi jImzib"
+              class="sc-hHTYSt fJuwLg"
             >
               <span
                 class="sc-gswNZR iZwDAZ api-docsstyles__Description-sc-4t6xyo-1 dkIedw"
@@ -2650,24 +2806,28 @@ exports[`<ApiDocs /> should render correctly 1`] = `
             </th>
           </tr>
           <tr
-            class="sc-idXgbr"
+            class="sc-dIfARi"
           >
             <th
-              class="sc-dIfARi jImzib"
+              class="sc-hHTYSt fJuwLg"
             >
               <a
                 aria-label="/support/load (opens in a new tab)"
-                class="sc-pyfCe kHwuaX"
+                class="sc-hLBbgP lcnCbW"
                 href="https://www.georgegillams.co.uk/api/support/load"
                 rel="noopener noreferrer"
                 target="_blank"
               >
-                /support/load
+                <span
+                  class="sc-jrcTuL ddyEiV"
+                >
+                  /support/load
+                </span>
                 <div
-                  class="sc-jrcTuL QvVN"
+                  class="sc-eDvSVe kRlCjo"
                 >
                   <svg
-                    class="sc-ftTHYK fjjwty sc-kDvujY fYbYDQ"
+                    class="sc-dkrFOg bLfPgZ sc-jSUZER kDBwKa"
                     height="18"
                     viewBox="0 0 24 24"
                     width="18"
@@ -2681,7 +2841,7 @@ exports[`<ApiDocs /> should render correctly 1`] = `
               </a>
             </th>
             <th
-              class="sc-dIfARi jImzib"
+              class="sc-hHTYSt fJuwLg"
             >
               <span
                 class="sc-gswNZR iZwDAZ api-docsstyles__Method-sc-4t6xyo-2 jGEmiL"
@@ -2690,14 +2850,14 @@ exports[`<ApiDocs /> should render correctly 1`] = `
               </span>
             </th>
             <th
-              class="sc-dIfARi jImzib"
+              class="sc-hHTYSt fJuwLg"
             >
               <span
                 class="sc-gswNZR iZwDAZ"
               />
             </th>
             <th
-              class="sc-dIfARi jImzib"
+              class="sc-hHTYSt fJuwLg"
             >
               <span
                 class="sc-gswNZR iZwDAZ"
@@ -2706,7 +2866,7 @@ exports[`<ApiDocs /> should render correctly 1`] = `
               </span>
             </th>
             <th
-              class="sc-dIfARi jImzib"
+              class="sc-hHTYSt fJuwLg"
             >
               <span
                 class="sc-gswNZR iZwDAZ api-docsstyles__Description-sc-4t6xyo-1 dkIedw"
@@ -2716,24 +2876,28 @@ exports[`<ApiDocs /> should render correctly 1`] = `
             </th>
           </tr>
           <tr
-            class="sc-idXgbr"
+            class="sc-dIfARi"
           >
             <th
-              class="sc-dIfARi jImzib"
+              class="sc-hHTYSt fJuwLg"
             >
               <a
                 aria-label="/photo-showcase/load-all (opens in a new tab)"
-                class="sc-pyfCe kHwuaX"
+                class="sc-hLBbgP lcnCbW"
                 href="https://www.georgegillams.co.uk/api/photo-showcase/load-all"
                 rel="noopener noreferrer"
                 target="_blank"
               >
-                /photo-showcase/load-all
+                <span
+                  class="sc-jrcTuL ddyEiV"
+                >
+                  /photo-showcase/load-all
+                </span>
                 <div
-                  class="sc-jrcTuL QvVN"
+                  class="sc-eDvSVe kRlCjo"
                 >
                   <svg
-                    class="sc-ftTHYK fjjwty sc-kDvujY fYbYDQ"
+                    class="sc-dkrFOg bLfPgZ sc-jSUZER kDBwKa"
                     height="18"
                     viewBox="0 0 24 24"
                     width="18"
@@ -2747,7 +2911,7 @@ exports[`<ApiDocs /> should render correctly 1`] = `
               </a>
             </th>
             <th
-              class="sc-dIfARi jImzib"
+              class="sc-hHTYSt fJuwLg"
             >
               <span
                 class="sc-gswNZR iZwDAZ api-docsstyles__Method-sc-4t6xyo-2 jGEmiL"
@@ -2756,14 +2920,14 @@ exports[`<ApiDocs /> should render correctly 1`] = `
               </span>
             </th>
             <th
-              class="sc-dIfARi jImzib"
+              class="sc-hHTYSt fJuwLg"
             >
               <span
                 class="sc-gswNZR iZwDAZ"
               />
             </th>
             <th
-              class="sc-dIfARi jImzib"
+              class="sc-hHTYSt fJuwLg"
             >
               <span
                 class="sc-gswNZR iZwDAZ"
@@ -2772,7 +2936,7 @@ exports[`<ApiDocs /> should render correctly 1`] = `
               </span>
             </th>
             <th
-              class="sc-dIfARi jImzib"
+              class="sc-hHTYSt fJuwLg"
             >
               <span
                 class="sc-gswNZR iZwDAZ api-docsstyles__Description-sc-4t6xyo-1 dkIedw"

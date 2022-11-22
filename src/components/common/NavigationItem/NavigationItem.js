@@ -4,10 +4,10 @@ import Button from 'components/common/Button';
 import { BUTTON_TYPES } from '@george-gillams/components/button/constants';
 
 const NavigationItem = props => {
-  const { name, href, ...rest } = props;
+  const { name, ...rest } = props;
 
   return (
-    <Button href={href} buttonType={BUTTON_TYPES.bouncy} {...rest}>
+    <Button buttonType={BUTTON_TYPES.bouncy} {...rest}>
       {name}
     </Button>
   );
@@ -15,8 +15,8 @@ const NavigationItem = props => {
 
 NavigationItem.propTypes = {
   name: PropTypes.string.isRequired,
-  href: PropTypes.string.isRequired,
 };
+
 NavigationItem.defaultProps = {};
 
 export default NavigationItem;

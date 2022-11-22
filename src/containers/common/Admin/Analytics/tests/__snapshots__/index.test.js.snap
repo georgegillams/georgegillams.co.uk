@@ -3,24 +3,28 @@
 exports[`<AdminAnalytics /> should render correctly - index 1`] = `
 <div>
   <div
-    class="sc-ksBlkl gDlyuV"
+    class="sc-hBxehG julUME"
   >
     <h1
-      class="sc-gswNZR gzqAHo sc-fEXmlR cIHzsJ"
+      class="sc-jSUZER glQaLI sc-bjfHbI cBkNPA"
       id="admin-only"
     >
       Admin only
     </h1>
     <span
-      class="sc-dIfARi gupYKT"
+      class="sc-hHTYSt cRxHgE"
     >
       You need to be logged in with an admin account to view this content.
       <br />
       <a
-        class="sc-iBYQkv jNlLug"
+        class="sc-gswNZR bbFtvE"
         href="/login"
       >
-        Got a different admin account? Log in here.
+        <span
+          class="sc-ftTHYK cRFGYD"
+        >
+          Got a different admin account? Log in here.
+        </span>
       </a>
     </span>
   </div>
@@ -37,10 +41,14 @@ exports[`<AdminAnalytics /> should render correctly with admin user 1`] = `
         class="sc-kDvujY bJLGdG"
       >
         <a
-          class="sc-iBYQkv jNlLug"
+          class="sc-gswNZR bbFtvE"
           href="/admin"
         >
-          ⇠ Admin
+          <span
+            class="sc-ftTHYK cRFGYD"
+          >
+            ⇠ Admin
+          </span>
         </a>
       </div>
     </div>
@@ -48,7 +56,7 @@ exports[`<AdminAnalytics /> should render correctly with admin user 1`] = `
       class="sc-bqWxrE VcTDu"
     >
       <h1
-        class="sc-bcXHqe bHgOFy sc-jrcTuL jiMlto"
+        class="sc-eDvSVe fsBEuM sc-jrcTuL jiMlto"
       >
         Admin analytics
       </h1>
@@ -56,21 +64,21 @@ exports[`<AdminAnalytics /> should render correctly with admin user 1`] = `
   </div>
   <div>
     <button
-      class="sc-ezOQGI ceLOaQ admin-analyticsstyles__Control-sc-gt0i0n-2 dSUxYS"
+      class="sc-bYMpWt eOjxid admin-analyticsstyles__Control-sc-gt0i0n-2 dSUxYS"
       type="button"
     >
       <span
-        class="sc-kMjNwy cvYAst"
+        class="sc-ilhmMj ekZiiW"
       >
         Reload analytics
       </span>
     </button>
     <button
-      class="sc-ezOQGI ceLOaQ admin-analyticsstyles__Control-sc-gt0i0n-2 dSUxYS"
+      class="sc-bYMpWt eOjxid admin-analyticsstyles__Control-sc-gt0i0n-2 dSUxYS"
       type="button"
     >
       <span
-        class="sc-kMjNwy cvYAst"
+        class="sc-ilhmMj ekZiiW"
       >
         Show filters
       </span>
@@ -92,10 +100,14 @@ exports[`<AdminAnalytics /> should render correctly with analytics 1`] = `
         class="sc-kDvujY bJLGdG"
       >
         <a
-          class="sc-iBYQkv jNlLug"
+          class="sc-gswNZR bbFtvE"
           href="/admin"
         >
-          ⇠ Admin
+          <span
+            class="sc-ftTHYK cRFGYD"
+          >
+            ⇠ Admin
+          </span>
         </a>
       </div>
     </div>
@@ -103,7 +115,7 @@ exports[`<AdminAnalytics /> should render correctly with analytics 1`] = `
       class="sc-bqWxrE VcTDu"
     >
       <h1
-        class="sc-bcXHqe bHgOFy sc-jrcTuL jiMlto"
+        class="sc-eDvSVe fsBEuM sc-jrcTuL jiMlto"
       >
         Admin analytics
       </h1>
@@ -111,21 +123,21 @@ exports[`<AdminAnalytics /> should render correctly with analytics 1`] = `
   </div>
   <div>
     <button
-      class="sc-ezOQGI ceLOaQ admin-analyticsstyles__Control-sc-gt0i0n-2 dSUxYS"
+      class="sc-bYMpWt eOjxid admin-analyticsstyles__Control-sc-gt0i0n-2 dSUxYS"
       type="button"
     >
       <span
-        class="sc-kMjNwy cvYAst"
+        class="sc-ilhmMj ekZiiW"
       >
         Reload analytics
       </span>
     </button>
     <button
-      class="sc-ezOQGI ceLOaQ admin-analyticsstyles__Control-sc-gt0i0n-2 dSUxYS"
+      class="sc-bYMpWt eOjxid admin-analyticsstyles__Control-sc-gt0i0n-2 dSUxYS"
       type="button"
     >
       <span
-        class="sc-kMjNwy cvYAst"
+        class="sc-ilhmMj ekZiiW"
       >
         Show filters
       </span>
@@ -140,24 +152,28 @@ exports[`<AdminAnalytics /> should render correctly with analytics 1`] = `
 exports[`<AdminAnalytics /> should render correctly with initial state 1`] = `
 <div>
   <div
-    class="sc-ksBlkl gDlyuV"
+    class="sc-hBxehG julUME"
   >
     <h1
-      class="sc-gswNZR gzqAHo sc-fEXmlR cIHzsJ"
+      class="sc-jSUZER glQaLI sc-bjfHbI cBkNPA"
       id="admin-only"
     >
       Admin only
     </h1>
     <span
-      class="sc-dIfARi gupYKT"
+      class="sc-hHTYSt cRxHgE"
     >
       You need to be logged in with an admin account to view this content.
       <br />
       <a
-        class="sc-iBYQkv jNlLug"
+        class="sc-gswNZR bbFtvE"
         href="/login"
       >
-        Got a different admin account? Log in here.
+        <span
+          class="sc-ftTHYK cRFGYD"
+        >
+          Got a different admin account? Log in here.
+        </span>
       </a>
     </span>
   </div>
@@ -168,59 +184,59 @@ exports[`<AdminAnalytics /> should render correctly with loadError 1`] = `
 <div>
   <div
     aria-label="Loading"
-    class="sc-hHTYSt SeJTL page-containerstyles__StyledPageContainer-sc-19l7k4-0"
+    class="sc-dmctIk kfbqRZ page-containerstyles__StyledPageContainer-sc-19l7k4-0"
     width="default"
   >
     <div
-      class="sc-bjfHbI ibzWhy"
+      class="sc-idXgbr irOVYZ"
     >
       <div
-        class="sc-idXgbr jlSlT"
+        class="sc-dIfARi hEqwgc"
         style="margin-left: -0px;"
       />
     </div>
     <div
-      class="sc-bjfHbI hINqGN"
+      class="sc-idXgbr kBIQoq"
       style="margin-top: 1.2rem;"
     >
       <div
-        class="sc-idXgbr jlSlT"
+        class="sc-dIfARi hEqwgc"
         style="margin-left: -0px;"
       />
     </div>
     <div
-      class="sc-bjfHbI hINqGN"
+      class="sc-idXgbr kBIQoq"
       style="margin-top: 1.2rem;"
     >
       <div
-        class="sc-idXgbr jlSlT"
+        class="sc-dIfARi hEqwgc"
         style="margin-left: -0px;"
       />
     </div>
     <div
-      class="sc-bjfHbI hINqGN"
+      class="sc-idXgbr kBIQoq"
       style="margin-top: 1.2rem;"
     >
       <div
-        class="sc-idXgbr jlSlT"
+        class="sc-dIfARi hEqwgc"
         style="margin-left: -0px;"
       />
     </div>
     <div
-      class="sc-bjfHbI hINqGN"
+      class="sc-idXgbr kBIQoq"
       style="margin-top: 1.2rem;"
     >
       <div
-        class="sc-idXgbr jlSlT"
+        class="sc-dIfARi hEqwgc"
         style="margin-left: -0px;"
       />
     </div>
   </div>
   <div
-    class="sc-ksBlkl gDlyuV"
+    class="sc-hBxehG julUME"
   >
     <h1
-      class="sc-dkrFOg eRKGDm sc-fEXmlR eZgzot"
+      class="sc-gKPRtg jJVvWo sc-bjfHbI iYWdbA"
       id="this-is-taking-a-while.-maybe-something-isn't-quite-right..."
     >
       This is taking a while. Maybe something isn't quite right...
@@ -239,10 +255,14 @@ exports[`<AdminAnalytics /> should render correctly with loading=true 1`] = `
         class="sc-kDvujY bJLGdG"
       >
         <a
-          class="sc-iBYQkv jNlLug"
+          class="sc-gswNZR bbFtvE"
           href="/admin"
         >
-          ⇠ Admin
+          <span
+            class="sc-ftTHYK cRFGYD"
+          >
+            ⇠ Admin
+          </span>
         </a>
       </div>
     </div>
@@ -250,7 +270,7 @@ exports[`<AdminAnalytics /> should render correctly with loading=true 1`] = `
       class="sc-bqWxrE VcTDu"
     >
       <h1
-        class="sc-bcXHqe bHgOFy sc-jrcTuL jiMlto"
+        class="sc-eDvSVe fsBEuM sc-jrcTuL jiMlto"
       >
         Admin analytics
       </h1>
@@ -258,55 +278,55 @@ exports[`<AdminAnalytics /> should render correctly with loading=true 1`] = `
   </div>
   <div>
     <button
-      class="sc-ezOQGI jMCGyQ admin-analyticsstyles__Control-sc-gt0i0n-2 dSUxYS"
+      class="sc-bYMpWt euNhlh admin-analyticsstyles__Control-sc-gt0i0n-2 dSUxYS"
       disabled=""
       type="button"
     >
       <span
-        class="sc-kMjNwy jFBNxq"
+        class="sc-ilhmMj fGBSrt"
       >
         Reload analytics
       </span>
       <div
         aria-hidden="true"
-        class="sc-ilhmMj cMPRth"
+        class="sc-jIRcFI feQYRn"
       >
         <div
-          class="sc-iJnaPW dqvaia"
+          class="sc-gikAfH jgusFv"
         >
           <div
-            class="sc-gikAfH hIVtvg"
+            class="sc-ezOQGI qqaaF"
           />
           <div
-            class="sc-gikAfH cAXpTw"
+            class="sc-ezOQGI ueiuF"
           />
           <div
-            class="sc-gikAfH dIHoGf"
+            class="sc-ezOQGI jCjbUy"
           />
           <div
-            class="sc-gikAfH JVdmW"
+            class="sc-ezOQGI kILeMD"
           />
           <div
-            class="sc-gikAfH jwhdAx"
+            class="sc-ezOQGI hgSieA"
           />
           <div
-            class="sc-gikAfH grIEyI"
+            class="sc-ezOQGI bOddnZ"
           />
           <div
-            class="sc-gikAfH eFMqec"
+            class="sc-ezOQGI isdZGN"
           />
           <div
-            class="sc-gikAfH diHFLs"
+            class="sc-ezOQGI ePwHxN"
           />
         </div>
       </div>
     </button>
     <button
-      class="sc-ezOQGI ceLOaQ admin-analyticsstyles__Control-sc-gt0i0n-2 dSUxYS"
+      class="sc-bYMpWt eOjxid admin-analyticsstyles__Control-sc-gt0i0n-2 dSUxYS"
       type="button"
     >
       <span
-        class="sc-kMjNwy cvYAst"
+        class="sc-ilhmMj ekZiiW"
       >
         Show filters
       </span>
@@ -321,24 +341,28 @@ exports[`<AdminAnalytics /> should render correctly with loading=true 1`] = `
 exports[`<AdminAnalytics /> should render correctly with user 1`] = `
 <div>
   <div
-    class="sc-ksBlkl gDlyuV"
+    class="sc-hBxehG julUME"
   >
     <h1
-      class="sc-gswNZR gzqAHo sc-fEXmlR cIHzsJ"
+      class="sc-jSUZER glQaLI sc-bjfHbI cBkNPA"
       id="admin-only"
     >
       Admin only
     </h1>
     <span
-      class="sc-dIfARi gupYKT"
+      class="sc-hHTYSt cRxHgE"
     >
       You need to be logged in with an admin account to view this content.
       <br />
       <a
-        class="sc-iBYQkv jNlLug"
+        class="sc-gswNZR bbFtvE"
         href="/login"
       >
-        Got a different admin account? Log in here.
+        <span
+          class="sc-ftTHYK cRFGYD"
+        >
+          Got a different admin account? Log in here.
+        </span>
       </a>
     </span>
   </div>

@@ -10,7 +10,7 @@ exports[`<NotFound /> should render correctly 1`] = `
       class="sc-hBxehG kRpDOl"
     >
       <h1
-        class="sc-dkrFOg eTlLCY sc-ipEyDJ jfsqCE"
+        class="sc-gKPRtg kZXQcu sc-ipEyDJ jfsqCE"
       >
         Oops.
       </h1>
@@ -33,10 +33,14 @@ exports[`<NotFound /> should render correctly 1`] = `
           <br />
           Maybe the 
           <a
-            class="sc-pyfCe kHwuaX"
+            class="sc-hLBbgP lcnCbW"
             href="/sitemap"
           >
-            site map
+            <span
+              class="sc-jrcTuL ddyEiV"
+            >
+              site map
+            </span>
           </a>
            can help
         </span>
