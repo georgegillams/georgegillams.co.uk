@@ -34,7 +34,7 @@ export default async function loadAll() {
   const photosWithInformation = await Promise.all(photos.map(photo => attachPhotoInformation(photo)));
   return {
     photos: photosWithInformation.map(photo => ({
-      id: photo.id,
+      key: photo.id,
       ...photo.size,
       alt: photo.information.description,
     })),

@@ -3,14 +3,14 @@
 exports[`<Photography /> should render correctly - index 1`] = `
 <div>
   <div
-    class="sc-idXgbr gArMUg page-containerstyles__StyledPageContainer-sc-19l7k4-0"
+    class="sc-dIfARi fTaCDP page-containerstyles__StyledPageContainer-sc-19l7k4-0"
     width="default"
   >
     <div
       class="sc-bqWxrE VcTDu"
     >
       <h1
-        class="sc-bcXHqe bHgOFy sc-jrcTuL ewlzmZ"
+        class="sc-eDvSVe fsBEuM sc-jrcTuL ewlzmZ"
       >
         Photography
       </h1>
@@ -32,17 +32,21 @@ exports[`<Photography /> should render correctly - index 1`] = `
         >
           <a
             aria-label="Find me on Flickr (opens in a new tab)"
-            class="sc-iBYQkv jNlLug"
+            class="sc-gswNZR bbFtvE"
             href="https://www.flickr.com/people/georgegillams/"
             rel="noopener noreferrer"
             target="_blank"
           >
-            Find me on Flickr
+            <span
+              class="sc-ftTHYK cRFGYD"
+            >
+              Find me on Flickr
+            </span>
             <div
-              class="sc-ftTHYK dbfjGz"
+              class="sc-dkrFOg dOaeSw"
             >
               <svg
-                class="sc-gKPRtg eSdzmv sc-pyfCe hLCbyO"
+                class="sc-bcXHqe cbaReT sc-hLBbgP eKXpFg"
                 height="18"
                 viewBox="0 0 24 24"
                 width="18"
@@ -56,17 +60,21 @@ exports[`<Photography /> should render correctly - index 1`] = `
           </a>
           <a
             aria-label="Find me on Unsplash (opens in a new tab)"
-            class="sc-iBYQkv jNlLug"
+            class="sc-gswNZR bbFtvE"
             href="https://unsplash.com/@georgegillams"
             rel="noopener noreferrer"
             target="_blank"
           >
-            Find me on Unsplash
+            <span
+              class="sc-ftTHYK cRFGYD"
+            >
+              Find me on Unsplash
+            </span>
             <div
-              class="sc-ftTHYK dbfjGz"
+              class="sc-dkrFOg dOaeSw"
             >
               <svg
-                class="sc-gKPRtg eSdzmv sc-pyfCe hLCbyO"
+                class="sc-bcXHqe cbaReT sc-hLBbgP eKXpFg"
                 height="18"
                 viewBox="0 0 24 24"
                 width="18"
@@ -80,17 +88,21 @@ exports[`<Photography /> should render correctly - index 1`] = `
           </a>
           <a
             aria-label="Find me on GuruShots (opens in a new tab)"
-            class="sc-iBYQkv jNlLug"
+            class="sc-gswNZR bbFtvE"
             href="https://gurushots.com/georgegillams/achievements"
             rel="noopener noreferrer"
             target="_blank"
           >
-            Find me on GuruShots
+            <span
+              class="sc-ftTHYK cRFGYD"
+            >
+              Find me on GuruShots
+            </span>
             <div
-              class="sc-ftTHYK dbfjGz"
+              class="sc-dkrFOg dOaeSw"
             >
               <svg
-                class="sc-gKPRtg eSdzmv sc-pyfCe hLCbyO"
+                class="sc-bcXHqe cbaReT sc-hLBbgP eKXpFg"
                 height="18"
                 viewBox="0 0 24 24"
                 width="18"
@@ -103,10 +115,14 @@ exports[`<Photography /> should render correctly - index 1`] = `
             </div>
           </a>
           <a
-            class="sc-iBYQkv jNlLug"
+            class="sc-gswNZR bbFtvE"
             href="/contact"
           >
-            Contact me about photography work
+            <span
+              class="sc-ftTHYK cRFGYD"
+            >
+              Contact me about photography work
+            </span>
           </a>
         </div>
       </div>
@@ -124,11 +140,11 @@ exports[`<Photography /> should render correctly - index 1`] = `
         class="sc-ipEyDJ hsNbKX animated-content__wrapper--hidden"
       >
         <div
-          class="sc-dIfARi vcnqE"
+          class="sc-hHTYSt jkmwNj"
           style="width: 100%;"
         >
           <div
-            class="sc-hHTYSt fkOjYj"
+            class="sc-dmctIk cOGJAF"
             style="margin-left: -0px;"
           />
         </div>
@@ -153,32 +169,36 @@ exports[`<Photography /> should render correctly - index 1`] = `
           class="creative-commonssyles__Background-sc-qff226-1 gREbZK"
         />
         <div
-          class="sc-hBxehG julUME creative-commonssyles__Inner-sc-qff226-2 jkifKu"
+          class="sc-fnGiBr cWeZey creative-commonssyles__Inner-sc-qff226-2 jkifKu"
         >
           <h1
-            class="sc-dkrFOg eRKGDm sc-bjfHbI imHHeA"
+            class="sc-gKPRtg jJVvWo sc-idXgbr bJsfvb"
             id="copyright"
           >
             Copyright
           </h1>
           <span
-            class="sc-ksBlkl bLCpBX"
+            class="sc-hBxehG jiKGja"
           >
             Most of my photos are licensed under
              
             <a
               aria-label="Creative Commons BY-SA 3.0 (opens in a new tab)"
-              class="sc-iBYQkv jNlLug"
+              class="sc-gswNZR bbFtvE"
               href="https://creativecommons.org/licenses/by-sa/3.0/"
               rel="noopener noreferrer"
               target="_blank"
             >
-              Creative Commons BY-SA 3.0
+              <span
+                class="sc-ftTHYK cRFGYD"
+              >
+                Creative Commons BY-SA 3.0
+              </span>
               <div
-                class="sc-ftTHYK dbfjGz"
+                class="sc-dkrFOg dOaeSw"
               >
                 <svg
-                  class="sc-gKPRtg eSdzmv sc-pyfCe hLCbyO"
+                  class="sc-bcXHqe cbaReT sc-hLBbgP eKXpFg"
                   height="18"
                   viewBox="0 0 24 24"
                   width="18"
@@ -194,10 +214,14 @@ exports[`<Photography /> should render correctly - index 1`] = `
             <br />
             If you are unsure about your right to use them please 
             <a
-              class="sc-iBYQkv jNlLug"
+              class="sc-gswNZR bbFtvE"
               href="/contact"
             >
-              contact me
+              <span
+                class="sc-ftTHYK cRFGYD"
+              >
+                contact me
+              </span>
             </a>
             .
           </span>
@@ -211,14 +235,14 @@ exports[`<Photography /> should render correctly - index 1`] = `
 exports[`<Photography /> should render correctly when loading 1`] = `
 <div>
   <div
-    class="sc-idXgbr gArMUg page-containerstyles__StyledPageContainer-sc-19l7k4-0"
+    class="sc-dIfARi fTaCDP page-containerstyles__StyledPageContainer-sc-19l7k4-0"
     width="default"
   >
     <div
       class="sc-bqWxrE VcTDu"
     >
       <h1
-        class="sc-bcXHqe bHgOFy sc-jrcTuL ewlzmZ"
+        class="sc-eDvSVe fsBEuM sc-jrcTuL ewlzmZ"
       >
         Photography
       </h1>
@@ -240,17 +264,21 @@ exports[`<Photography /> should render correctly when loading 1`] = `
         >
           <a
             aria-label="Find me on Flickr (opens in a new tab)"
-            class="sc-iBYQkv jNlLug"
+            class="sc-gswNZR bbFtvE"
             href="https://www.flickr.com/people/georgegillams/"
             rel="noopener noreferrer"
             target="_blank"
           >
-            Find me on Flickr
+            <span
+              class="sc-ftTHYK cRFGYD"
+            >
+              Find me on Flickr
+            </span>
             <div
-              class="sc-ftTHYK dbfjGz"
+              class="sc-dkrFOg dOaeSw"
             >
               <svg
-                class="sc-gKPRtg eSdzmv sc-pyfCe hLCbyO"
+                class="sc-bcXHqe cbaReT sc-hLBbgP eKXpFg"
                 height="18"
                 viewBox="0 0 24 24"
                 width="18"
@@ -264,17 +292,21 @@ exports[`<Photography /> should render correctly when loading 1`] = `
           </a>
           <a
             aria-label="Find me on Unsplash (opens in a new tab)"
-            class="sc-iBYQkv jNlLug"
+            class="sc-gswNZR bbFtvE"
             href="https://unsplash.com/@georgegillams"
             rel="noopener noreferrer"
             target="_blank"
           >
-            Find me on Unsplash
+            <span
+              class="sc-ftTHYK cRFGYD"
+            >
+              Find me on Unsplash
+            </span>
             <div
-              class="sc-ftTHYK dbfjGz"
+              class="sc-dkrFOg dOaeSw"
             >
               <svg
-                class="sc-gKPRtg eSdzmv sc-pyfCe hLCbyO"
+                class="sc-bcXHqe cbaReT sc-hLBbgP eKXpFg"
                 height="18"
                 viewBox="0 0 24 24"
                 width="18"
@@ -288,17 +320,21 @@ exports[`<Photography /> should render correctly when loading 1`] = `
           </a>
           <a
             aria-label="Find me on GuruShots (opens in a new tab)"
-            class="sc-iBYQkv jNlLug"
+            class="sc-gswNZR bbFtvE"
             href="https://gurushots.com/georgegillams/achievements"
             rel="noopener noreferrer"
             target="_blank"
           >
-            Find me on GuruShots
+            <span
+              class="sc-ftTHYK cRFGYD"
+            >
+              Find me on GuruShots
+            </span>
             <div
-              class="sc-ftTHYK dbfjGz"
+              class="sc-dkrFOg dOaeSw"
             >
               <svg
-                class="sc-gKPRtg eSdzmv sc-pyfCe hLCbyO"
+                class="sc-bcXHqe cbaReT sc-hLBbgP eKXpFg"
                 height="18"
                 viewBox="0 0 24 24"
                 width="18"
@@ -311,10 +347,14 @@ exports[`<Photography /> should render correctly when loading 1`] = `
             </div>
           </a>
           <a
-            class="sc-iBYQkv jNlLug"
+            class="sc-gswNZR bbFtvE"
             href="/contact"
           >
-            Contact me about photography work
+            <span
+              class="sc-ftTHYK cRFGYD"
+            >
+              Contact me about photography work
+            </span>
           </a>
         </div>
       </div>
@@ -332,11 +372,11 @@ exports[`<Photography /> should render correctly when loading 1`] = `
         class="sc-ipEyDJ hsNbKX animated-content__wrapper--hidden"
       >
         <div
-          class="sc-dIfARi vcnqE"
+          class="sc-hHTYSt jkmwNj"
           style="width: 100%;"
         >
           <div
-            class="sc-hHTYSt fkOjYj"
+            class="sc-dmctIk cOGJAF"
             style="margin-left: -0px;"
           />
         </div>
@@ -361,32 +401,36 @@ exports[`<Photography /> should render correctly when loading 1`] = `
           class="creative-commonssyles__Background-sc-qff226-1 gREbZK"
         />
         <div
-          class="sc-hBxehG julUME creative-commonssyles__Inner-sc-qff226-2 jkifKu"
+          class="sc-fnGiBr cWeZey creative-commonssyles__Inner-sc-qff226-2 jkifKu"
         >
           <h1
-            class="sc-dkrFOg eRKGDm sc-bjfHbI imHHeA"
+            class="sc-gKPRtg jJVvWo sc-idXgbr bJsfvb"
             id="copyright"
           >
             Copyright
           </h1>
           <span
-            class="sc-ksBlkl bLCpBX"
+            class="sc-hBxehG jiKGja"
           >
             Most of my photos are licensed under
              
             <a
               aria-label="Creative Commons BY-SA 3.0 (opens in a new tab)"
-              class="sc-iBYQkv jNlLug"
+              class="sc-gswNZR bbFtvE"
               href="https://creativecommons.org/licenses/by-sa/3.0/"
               rel="noopener noreferrer"
               target="_blank"
             >
-              Creative Commons BY-SA 3.0
+              <span
+                class="sc-ftTHYK cRFGYD"
+              >
+                Creative Commons BY-SA 3.0
+              </span>
               <div
-                class="sc-ftTHYK dbfjGz"
+                class="sc-dkrFOg dOaeSw"
               >
                 <svg
-                  class="sc-gKPRtg eSdzmv sc-pyfCe hLCbyO"
+                  class="sc-bcXHqe cbaReT sc-hLBbgP eKXpFg"
                   height="18"
                   viewBox="0 0 24 24"
                   width="18"
@@ -402,10 +446,14 @@ exports[`<Photography /> should render correctly when loading 1`] = `
             <br />
             If you are unsure about your right to use them please 
             <a
-              class="sc-iBYQkv jNlLug"
+              class="sc-gswNZR bbFtvE"
               href="/contact"
             >
-              contact me
+              <span
+                class="sc-ftTHYK cRFGYD"
+              >
+                contact me
+              </span>
             </a>
             .
           </span>
@@ -419,14 +467,14 @@ exports[`<Photography /> should render correctly when loading 1`] = `
 exports[`<Photography /> should render correctly with initial state 1`] = `
 <div>
   <div
-    class="sc-idXgbr gArMUg page-containerstyles__StyledPageContainer-sc-19l7k4-0"
+    class="sc-dIfARi fTaCDP page-containerstyles__StyledPageContainer-sc-19l7k4-0"
     width="default"
   >
     <div
       class="sc-bqWxrE VcTDu"
     >
       <h1
-        class="sc-bcXHqe bHgOFy sc-jrcTuL ewlzmZ"
+        class="sc-eDvSVe fsBEuM sc-jrcTuL ewlzmZ"
       >
         Photography
       </h1>
@@ -448,17 +496,21 @@ exports[`<Photography /> should render correctly with initial state 1`] = `
         >
           <a
             aria-label="Find me on Flickr (opens in a new tab)"
-            class="sc-iBYQkv jNlLug"
+            class="sc-gswNZR bbFtvE"
             href="https://www.flickr.com/people/georgegillams/"
             rel="noopener noreferrer"
             target="_blank"
           >
-            Find me on Flickr
+            <span
+              class="sc-ftTHYK cRFGYD"
+            >
+              Find me on Flickr
+            </span>
             <div
-              class="sc-ftTHYK dbfjGz"
+              class="sc-dkrFOg dOaeSw"
             >
               <svg
-                class="sc-gKPRtg eSdzmv sc-pyfCe hLCbyO"
+                class="sc-bcXHqe cbaReT sc-hLBbgP eKXpFg"
                 height="18"
                 viewBox="0 0 24 24"
                 width="18"
@@ -472,17 +524,21 @@ exports[`<Photography /> should render correctly with initial state 1`] = `
           </a>
           <a
             aria-label="Find me on Unsplash (opens in a new tab)"
-            class="sc-iBYQkv jNlLug"
+            class="sc-gswNZR bbFtvE"
             href="https://unsplash.com/@georgegillams"
             rel="noopener noreferrer"
             target="_blank"
           >
-            Find me on Unsplash
+            <span
+              class="sc-ftTHYK cRFGYD"
+            >
+              Find me on Unsplash
+            </span>
             <div
-              class="sc-ftTHYK dbfjGz"
+              class="sc-dkrFOg dOaeSw"
             >
               <svg
-                class="sc-gKPRtg eSdzmv sc-pyfCe hLCbyO"
+                class="sc-bcXHqe cbaReT sc-hLBbgP eKXpFg"
                 height="18"
                 viewBox="0 0 24 24"
                 width="18"
@@ -496,17 +552,21 @@ exports[`<Photography /> should render correctly with initial state 1`] = `
           </a>
           <a
             aria-label="Find me on GuruShots (opens in a new tab)"
-            class="sc-iBYQkv jNlLug"
+            class="sc-gswNZR bbFtvE"
             href="https://gurushots.com/georgegillams/achievements"
             rel="noopener noreferrer"
             target="_blank"
           >
-            Find me on GuruShots
+            <span
+              class="sc-ftTHYK cRFGYD"
+            >
+              Find me on GuruShots
+            </span>
             <div
-              class="sc-ftTHYK dbfjGz"
+              class="sc-dkrFOg dOaeSw"
             >
               <svg
-                class="sc-gKPRtg eSdzmv sc-pyfCe hLCbyO"
+                class="sc-bcXHqe cbaReT sc-hLBbgP eKXpFg"
                 height="18"
                 viewBox="0 0 24 24"
                 width="18"
@@ -519,10 +579,14 @@ exports[`<Photography /> should render correctly with initial state 1`] = `
             </div>
           </a>
           <a
-            class="sc-iBYQkv jNlLug"
+            class="sc-gswNZR bbFtvE"
             href="/contact"
           >
-            Contact me about photography work
+            <span
+              class="sc-ftTHYK cRFGYD"
+            >
+              Contact me about photography work
+            </span>
           </a>
         </div>
       </div>
@@ -540,11 +604,11 @@ exports[`<Photography /> should render correctly with initial state 1`] = `
         class="sc-ipEyDJ hsNbKX animated-content__wrapper--hidden"
       >
         <div
-          class="sc-dIfARi vcnqE"
+          class="sc-hHTYSt jkmwNj"
           style="width: 100%;"
         >
           <div
-            class="sc-hHTYSt fkOjYj"
+            class="sc-dmctIk cOGJAF"
             style="margin-left: -0px;"
           />
         </div>
@@ -569,32 +633,36 @@ exports[`<Photography /> should render correctly with initial state 1`] = `
           class="creative-commonssyles__Background-sc-qff226-1 gREbZK"
         />
         <div
-          class="sc-hBxehG julUME creative-commonssyles__Inner-sc-qff226-2 jkifKu"
+          class="sc-fnGiBr cWeZey creative-commonssyles__Inner-sc-qff226-2 jkifKu"
         >
           <h1
-            class="sc-dkrFOg eRKGDm sc-bjfHbI imHHeA"
+            class="sc-gKPRtg jJVvWo sc-idXgbr bJsfvb"
             id="copyright"
           >
             Copyright
           </h1>
           <span
-            class="sc-ksBlkl bLCpBX"
+            class="sc-hBxehG jiKGja"
           >
             Most of my photos are licensed under
              
             <a
               aria-label="Creative Commons BY-SA 3.0 (opens in a new tab)"
-              class="sc-iBYQkv jNlLug"
+              class="sc-gswNZR bbFtvE"
               href="https://creativecommons.org/licenses/by-sa/3.0/"
               rel="noopener noreferrer"
               target="_blank"
             >
-              Creative Commons BY-SA 3.0
+              <span
+                class="sc-ftTHYK cRFGYD"
+              >
+                Creative Commons BY-SA 3.0
+              </span>
               <div
-                class="sc-ftTHYK dbfjGz"
+                class="sc-dkrFOg dOaeSw"
               >
                 <svg
-                  class="sc-gKPRtg eSdzmv sc-pyfCe hLCbyO"
+                  class="sc-bcXHqe cbaReT sc-hLBbgP eKXpFg"
                   height="18"
                   viewBox="0 0 24 24"
                   width="18"
@@ -610,10 +678,14 @@ exports[`<Photography /> should render correctly with initial state 1`] = `
             <br />
             If you are unsure about your right to use them please 
             <a
-              class="sc-iBYQkv jNlLug"
+              class="sc-gswNZR bbFtvE"
               href="/contact"
             >
-              contact me
+              <span
+                class="sc-ftTHYK cRFGYD"
+              >
+                contact me
+              </span>
             </a>
             .
           </span>
@@ -627,14 +699,14 @@ exports[`<Photography /> should render correctly with initial state 1`] = `
 exports[`<Photography /> should render correctly with loadError 1`] = `
 <div>
   <div
-    class="sc-idXgbr gArMUg page-containerstyles__StyledPageContainer-sc-19l7k4-0"
+    class="sc-dIfARi fTaCDP page-containerstyles__StyledPageContainer-sc-19l7k4-0"
     width="default"
   >
     <div
       class="sc-bqWxrE VcTDu"
     >
       <h1
-        class="sc-bcXHqe bHgOFy sc-jrcTuL ewlzmZ"
+        class="sc-eDvSVe fsBEuM sc-jrcTuL ewlzmZ"
       >
         Photography
       </h1>
@@ -656,17 +728,21 @@ exports[`<Photography /> should render correctly with loadError 1`] = `
         >
           <a
             aria-label="Find me on Flickr (opens in a new tab)"
-            class="sc-iBYQkv jNlLug"
+            class="sc-gswNZR bbFtvE"
             href="https://www.flickr.com/people/georgegillams/"
             rel="noopener noreferrer"
             target="_blank"
           >
-            Find me on Flickr
+            <span
+              class="sc-ftTHYK cRFGYD"
+            >
+              Find me on Flickr
+            </span>
             <div
-              class="sc-ftTHYK dbfjGz"
+              class="sc-dkrFOg dOaeSw"
             >
               <svg
-                class="sc-gKPRtg eSdzmv sc-pyfCe hLCbyO"
+                class="sc-bcXHqe cbaReT sc-hLBbgP eKXpFg"
                 height="18"
                 viewBox="0 0 24 24"
                 width="18"
@@ -680,17 +756,21 @@ exports[`<Photography /> should render correctly with loadError 1`] = `
           </a>
           <a
             aria-label="Find me on Unsplash (opens in a new tab)"
-            class="sc-iBYQkv jNlLug"
+            class="sc-gswNZR bbFtvE"
             href="https://unsplash.com/@georgegillams"
             rel="noopener noreferrer"
             target="_blank"
           >
-            Find me on Unsplash
+            <span
+              class="sc-ftTHYK cRFGYD"
+            >
+              Find me on Unsplash
+            </span>
             <div
-              class="sc-ftTHYK dbfjGz"
+              class="sc-dkrFOg dOaeSw"
             >
               <svg
-                class="sc-gKPRtg eSdzmv sc-pyfCe hLCbyO"
+                class="sc-bcXHqe cbaReT sc-hLBbgP eKXpFg"
                 height="18"
                 viewBox="0 0 24 24"
                 width="18"
@@ -704,17 +784,21 @@ exports[`<Photography /> should render correctly with loadError 1`] = `
           </a>
           <a
             aria-label="Find me on GuruShots (opens in a new tab)"
-            class="sc-iBYQkv jNlLug"
+            class="sc-gswNZR bbFtvE"
             href="https://gurushots.com/georgegillams/achievements"
             rel="noopener noreferrer"
             target="_blank"
           >
-            Find me on GuruShots
+            <span
+              class="sc-ftTHYK cRFGYD"
+            >
+              Find me on GuruShots
+            </span>
             <div
-              class="sc-ftTHYK dbfjGz"
+              class="sc-dkrFOg dOaeSw"
             >
               <svg
-                class="sc-gKPRtg eSdzmv sc-pyfCe hLCbyO"
+                class="sc-bcXHqe cbaReT sc-hLBbgP eKXpFg"
                 height="18"
                 viewBox="0 0 24 24"
                 width="18"
@@ -727,10 +811,14 @@ exports[`<Photography /> should render correctly with loadError 1`] = `
             </div>
           </a>
           <a
-            class="sc-iBYQkv jNlLug"
+            class="sc-gswNZR bbFtvE"
             href="/contact"
           >
-            Contact me about photography work
+            <span
+              class="sc-ftTHYK cRFGYD"
+            >
+              Contact me about photography work
+            </span>
           </a>
         </div>
       </div>
@@ -748,11 +836,11 @@ exports[`<Photography /> should render correctly with loadError 1`] = `
         class="sc-ipEyDJ hsNbKX animated-content__wrapper--hidden"
       >
         <div
-          class="sc-dIfARi vcnqE"
+          class="sc-hHTYSt jkmwNj"
           style="width: 100%;"
         >
           <div
-            class="sc-hHTYSt fkOjYj"
+            class="sc-dmctIk cOGJAF"
             style="margin-left: -0px;"
           />
         </div>
@@ -777,32 +865,36 @@ exports[`<Photography /> should render correctly with loadError 1`] = `
           class="creative-commonssyles__Background-sc-qff226-1 gREbZK"
         />
         <div
-          class="sc-hBxehG julUME creative-commonssyles__Inner-sc-qff226-2 jkifKu"
+          class="sc-fnGiBr cWeZey creative-commonssyles__Inner-sc-qff226-2 jkifKu"
         >
           <h1
-            class="sc-dkrFOg eRKGDm sc-bjfHbI imHHeA"
+            class="sc-gKPRtg jJVvWo sc-idXgbr bJsfvb"
             id="copyright"
           >
             Copyright
           </h1>
           <span
-            class="sc-ksBlkl bLCpBX"
+            class="sc-hBxehG jiKGja"
           >
             Most of my photos are licensed under
              
             <a
               aria-label="Creative Commons BY-SA 3.0 (opens in a new tab)"
-              class="sc-iBYQkv jNlLug"
+              class="sc-gswNZR bbFtvE"
               href="https://creativecommons.org/licenses/by-sa/3.0/"
               rel="noopener noreferrer"
               target="_blank"
             >
-              Creative Commons BY-SA 3.0
+              <span
+                class="sc-ftTHYK cRFGYD"
+              >
+                Creative Commons BY-SA 3.0
+              </span>
               <div
-                class="sc-ftTHYK dbfjGz"
+                class="sc-dkrFOg dOaeSw"
               >
                 <svg
-                  class="sc-gKPRtg eSdzmv sc-pyfCe hLCbyO"
+                  class="sc-bcXHqe cbaReT sc-hLBbgP eKXpFg"
                   height="18"
                   viewBox="0 0 24 24"
                   width="18"
@@ -818,10 +910,14 @@ exports[`<Photography /> should render correctly with loadError 1`] = `
             <br />
             If you are unsure about your right to use them please 
             <a
-              class="sc-iBYQkv jNlLug"
+              class="sc-gswNZR bbFtvE"
               href="/contact"
             >
-              contact me
+              <span
+                class="sc-ftTHYK cRFGYD"
+              >
+                contact me
+              </span>
             </a>
             .
           </span>
@@ -835,14 +931,14 @@ exports[`<Photography /> should render correctly with loadError 1`] = `
 exports[`<Photography /> should render correctly with photos 1`] = `
 <div>
   <div
-    class="sc-idXgbr gArMUg page-containerstyles__StyledPageContainer-sc-19l7k4-0"
+    class="sc-dIfARi fTaCDP page-containerstyles__StyledPageContainer-sc-19l7k4-0"
     width="default"
   >
     <div
       class="sc-bqWxrE VcTDu"
     >
       <h1
-        class="sc-bcXHqe bHgOFy sc-jrcTuL ewlzmZ"
+        class="sc-eDvSVe fsBEuM sc-jrcTuL ewlzmZ"
       >
         Photography
       </h1>
@@ -864,17 +960,21 @@ exports[`<Photography /> should render correctly with photos 1`] = `
         >
           <a
             aria-label="Find me on Flickr (opens in a new tab)"
-            class="sc-iBYQkv jNlLug"
+            class="sc-gswNZR bbFtvE"
             href="https://www.flickr.com/people/georgegillams/"
             rel="noopener noreferrer"
             target="_blank"
           >
-            Find me on Flickr
+            <span
+              class="sc-ftTHYK cRFGYD"
+            >
+              Find me on Flickr
+            </span>
             <div
-              class="sc-ftTHYK dbfjGz"
+              class="sc-dkrFOg dOaeSw"
             >
               <svg
-                class="sc-gKPRtg eSdzmv sc-pyfCe hLCbyO"
+                class="sc-bcXHqe cbaReT sc-hLBbgP eKXpFg"
                 height="18"
                 viewBox="0 0 24 24"
                 width="18"
@@ -888,17 +988,21 @@ exports[`<Photography /> should render correctly with photos 1`] = `
           </a>
           <a
             aria-label="Find me on Unsplash (opens in a new tab)"
-            class="sc-iBYQkv jNlLug"
+            class="sc-gswNZR bbFtvE"
             href="https://unsplash.com/@georgegillams"
             rel="noopener noreferrer"
             target="_blank"
           >
-            Find me on Unsplash
+            <span
+              class="sc-ftTHYK cRFGYD"
+            >
+              Find me on Unsplash
+            </span>
             <div
-              class="sc-ftTHYK dbfjGz"
+              class="sc-dkrFOg dOaeSw"
             >
               <svg
-                class="sc-gKPRtg eSdzmv sc-pyfCe hLCbyO"
+                class="sc-bcXHqe cbaReT sc-hLBbgP eKXpFg"
                 height="18"
                 viewBox="0 0 24 24"
                 width="18"
@@ -912,17 +1016,21 @@ exports[`<Photography /> should render correctly with photos 1`] = `
           </a>
           <a
             aria-label="Find me on GuruShots (opens in a new tab)"
-            class="sc-iBYQkv jNlLug"
+            class="sc-gswNZR bbFtvE"
             href="https://gurushots.com/georgegillams/achievements"
             rel="noopener noreferrer"
             target="_blank"
           >
-            Find me on GuruShots
+            <span
+              class="sc-ftTHYK cRFGYD"
+            >
+              Find me on GuruShots
+            </span>
             <div
-              class="sc-ftTHYK dbfjGz"
+              class="sc-dkrFOg dOaeSw"
             >
               <svg
-                class="sc-gKPRtg eSdzmv sc-pyfCe hLCbyO"
+                class="sc-bcXHqe cbaReT sc-hLBbgP eKXpFg"
                 height="18"
                 viewBox="0 0 24 24"
                 width="18"
@@ -935,10 +1043,14 @@ exports[`<Photography /> should render correctly with photos 1`] = `
             </div>
           </a>
           <a
-            class="sc-iBYQkv jNlLug"
+            class="sc-gswNZR bbFtvE"
             href="/contact"
           >
-            Contact me about photography work
+            <span
+              class="sc-ftTHYK cRFGYD"
+            >
+              Contact me about photography work
+            </span>
           </a>
         </div>
       </div>
@@ -956,11 +1068,11 @@ exports[`<Photography /> should render correctly with photos 1`] = `
         class="sc-ipEyDJ hsNbKX animated-content__wrapper--hidden"
       >
         <div
-          class="sc-dIfARi vcnqE"
+          class="sc-hHTYSt jkmwNj"
           style="width: 100%;"
         >
           <div
-            class="sc-hHTYSt fkOjYj"
+            class="sc-dmctIk cOGJAF"
             style="margin-left: -0px;"
           />
         </div>
@@ -985,32 +1097,36 @@ exports[`<Photography /> should render correctly with photos 1`] = `
           class="creative-commonssyles__Background-sc-qff226-1 gREbZK"
         />
         <div
-          class="sc-hBxehG julUME creative-commonssyles__Inner-sc-qff226-2 jkifKu"
+          class="sc-fnGiBr cWeZey creative-commonssyles__Inner-sc-qff226-2 jkifKu"
         >
           <h1
-            class="sc-dkrFOg eRKGDm sc-bjfHbI imHHeA"
+            class="sc-gKPRtg jJVvWo sc-idXgbr bJsfvb"
             id="copyright"
           >
             Copyright
           </h1>
           <span
-            class="sc-ksBlkl bLCpBX"
+            class="sc-hBxehG jiKGja"
           >
             Most of my photos are licensed under
              
             <a
               aria-label="Creative Commons BY-SA 3.0 (opens in a new tab)"
-              class="sc-iBYQkv jNlLug"
+              class="sc-gswNZR bbFtvE"
               href="https://creativecommons.org/licenses/by-sa/3.0/"
               rel="noopener noreferrer"
               target="_blank"
             >
-              Creative Commons BY-SA 3.0
+              <span
+                class="sc-ftTHYK cRFGYD"
+              >
+                Creative Commons BY-SA 3.0
+              </span>
               <div
-                class="sc-ftTHYK dbfjGz"
+                class="sc-dkrFOg dOaeSw"
               >
                 <svg
-                  class="sc-gKPRtg eSdzmv sc-pyfCe hLCbyO"
+                  class="sc-bcXHqe cbaReT sc-hLBbgP eKXpFg"
                   height="18"
                   viewBox="0 0 24 24"
                   width="18"
@@ -1026,10 +1142,14 @@ exports[`<Photography /> should render correctly with photos 1`] = `
             <br />
             If you are unsure about your right to use them please 
             <a
-              class="sc-iBYQkv jNlLug"
+              class="sc-gswNZR bbFtvE"
               href="/contact"
             >
-              contact me
+              <span
+                class="sc-ftTHYK cRFGYD"
+              >
+                contact me
+              </span>
             </a>
             .
           </span>

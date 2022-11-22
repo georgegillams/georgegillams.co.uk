@@ -21,10 +21,14 @@ exports[`<LoggedOutOnly /> Should render correctly with user 1`] = `
       class="sc-bcXHqe huaqIH"
     >
       <a
-        class="sc-ftTHYK dpmGDG"
+        class="sc-ftTHYK cJafwd"
         href="/account"
       >
-        Go to your account.
+        <span
+          class="sc-jSUZER bjWoVS"
+        >
+          Go to your account.
+        </span>
       </a>
     </span>
   </div>

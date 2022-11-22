@@ -17,10 +17,14 @@ exports[`<AdminOnly /> Should render correctly 1`] = `
       You need to be logged in with an admin account to view this content.
       <br />
       <a
-        class="sc-ftTHYK dpmGDG"
+        class="sc-ftTHYK cJafwd"
         href="/login"
       >
-        Got a different admin account? Log in here.
+        <span
+          class="sc-jSUZER bjWoVS"
+        >
+          Got a different admin account? Log in here.
+        </span>
       </a>
     </span>
   </div>
@@ -50,10 +54,14 @@ exports[`<AdminOnly /> Should render correctly with user 1`] = `
       You need to be logged in with an admin account to view this content.
       <br />
       <a
-        class="sc-ftTHYK dpmGDG"
+        class="sc-ftTHYK cJafwd"
         href="/login"
       >
-        Got a different admin account? Log in here.
+        <span
+          class="sc-jSUZER bjWoVS"
+        >
+          Got a different admin account? Log in here.
+        </span>
       </a>
     </span>
   </div>

@@ -11,7 +11,7 @@ exports[`<Layout /> Should render correctly 1`] = `
     </div>
   </main>
   <div
-    class="sc-ipEyDJ cGLKSq"
+    class="sc-csuSiG icikwB"
   >
     <style>
       .js .animated-content__wrapper--hidden {
@@ -19,7 +19,7 @@ exports[`<Layout /> Should render correctly 1`] = `
 }
     </style>
     <div
-      class="sc-kDvujY gFLbNj animated-content__wrapper--hidden"
+      class="sc-ipEyDJ hsNbKX animated-content__wrapper--hidden"
     >
       <footer
         class="footerstyles__Container-sc-ojjd19-0 jPsmbi"
@@ -44,7 +44,7 @@ exports[`<Layout /> Should render correctly 1`] = `
           class="footerstyles__StyledTechSpecs-sc-ojjd19-2 jckxzC"
         >
           <span
-            class="sc-jrcTuL dRJySQ tech-specsstyles__StyledParagraph-sc-1ysn53a-0 hLsLJb"
+            class="sc-kDvujY bffeOZ tech-specsstyles__StyledParagraph-sc-1ysn53a-0 hLsLJb"
           >
             Built in
             <a
@@ -95,56 +95,88 @@ exports[`<Layout /> Should render correctly 1`] = `
             class="footer-navstyles__Section-sc-7lmnsj-1 bcuhSW"
           >
             <a
-              class="sc-iBYQkv cCatJA"
+              class="sc-gswNZR gltAA"
               href="/blog"
             >
-              Blog
+              <span
+                class="sc-ftTHYK cRFGYD"
+              >
+                Blog
+              </span>
             </a>
             <a
-              class="sc-iBYQkv cCatJA"
+              class="sc-gswNZR gltAA"
               href="/photography"
             >
-              Photography
+              <span
+                class="sc-ftTHYK cRFGYD"
+              >
+                Photography
+              </span>
             </a>
             <a
-              class="sc-iBYQkv cCatJA"
+              class="sc-gswNZR gltAA"
               href="/work"
             >
-              Work
+              <span
+                class="sc-ftTHYK cRFGYD"
+              >
+                Work
+              </span>
             </a>
             <a
-              class="sc-iBYQkv cCatJA"
+              class="sc-gswNZR gltAA"
               href="/contact"
             >
-              Contact
+              <span
+                class="sc-ftTHYK cRFGYD"
+              >
+                Contact
+              </span>
             </a>
           </div>
           <div
             class="footer-navstyles__Section-sc-7lmnsj-1 bcuhSW"
           >
             <a
-              class="sc-iBYQkv cCatJA"
+              class="sc-gswNZR gltAA"
               href="/sitemap"
             >
-              Site map
+              <span
+                class="sc-ftTHYK cRFGYD"
+              >
+                Site map
+              </span>
             </a>
             <a
-              class="sc-iBYQkv cCatJA"
+              class="sc-gswNZR gltAA"
               href="/privacy-policy"
             >
-              Privacy
+              <span
+                class="sc-ftTHYK cRFGYD"
+              >
+                Privacy
+              </span>
             </a>
             <a
-              class="sc-iBYQkv cCatJA"
+              class="sc-gswNZR gltAA"
               href="/login"
             >
-              Login/Account
+              <span
+                class="sc-ftTHYK cRFGYD"
+              >
+                Login/Account
+              </span>
             </a>
             <a
-              class="sc-iBYQkv cCatJA"
+              class="sc-gswNZR gltAA"
               href="/status"
             >
-              Status
+              <span
+                class="sc-ftTHYK cRFGYD"
+              >
+                Status
+              </span>
             </a>
           </div>
         </div>
@@ -165,7 +197,7 @@ exports[`<Layout /> Should render correctly with spread props 1`] = `
     </div>
   </main>
   <div
-    class="sc-ipEyDJ cGLKSq"
+    class="sc-csuSiG icikwB"
   >
     <style>
       .js .animated-content__wrapper--hidden {
@@ -173,7 +205,7 @@ exports[`<Layout /> Should render correctly with spread props 1`] = `
 }
     </style>
     <div
-      class="sc-kDvujY gFLbNj animated-content__wrapper--hidden"
+      class="sc-ipEyDJ hsNbKX animated-content__wrapper--hidden"
     >
       <footer
         class="footerstyles__Container-sc-ojjd19-0 jPsmbi"
@@ -198,7 +230,7 @@ exports[`<Layout /> Should render correctly with spread props 1`] = `
           class="footerstyles__StyledTechSpecs-sc-ojjd19-2 jckxzC"
         >
           <span
-            class="sc-jrcTuL dRJySQ tech-specsstyles__StyledParagraph-sc-1ysn53a-0 hLsLJb"
+            class="sc-kDvujY bffeOZ tech-specsstyles__StyledParagraph-sc-1ysn53a-0 hLsLJb"
           >
             Built in
             <a
@@ -249,56 +281,88 @@ exports[`<Layout /> Should render correctly with spread props 1`] = `
             class="footer-navstyles__Section-sc-7lmnsj-1 bcuhSW"
           >
             <a
-              class="sc-iBYQkv cCatJA"
+              class="sc-gswNZR gltAA"
               href="/blog"
             >
-              Blog
+              <span
+                class="sc-ftTHYK cRFGYD"
+              >
+                Blog
+              </span>
             </a>
             <a
-              class="sc-iBYQkv cCatJA"
+              class="sc-gswNZR gltAA"
               href="/photography"
             >
-              Photography
+              <span
+                class="sc-ftTHYK cRFGYD"
+              >
+                Photography
+              </span>
             </a>
             <a
-              class="sc-iBYQkv cCatJA"
+              class="sc-gswNZR gltAA"
               href="/work"
             >
-              Work
+              <span
+                class="sc-ftTHYK cRFGYD"
+              >
+                Work
+              </span>
             </a>
             <a
-              class="sc-iBYQkv cCatJA"
+              class="sc-gswNZR gltAA"
               href="/contact"
             >
-              Contact
+              <span
+                class="sc-ftTHYK cRFGYD"
+              >
+                Contact
+              </span>
             </a>
           </div>
           <div
             class="footer-navstyles__Section-sc-7lmnsj-1 bcuhSW"
           >
             <a
-              class="sc-iBYQkv cCatJA"
+              class="sc-gswNZR gltAA"
               href="/sitemap"
             >
-              Site map
+              <span
+                class="sc-ftTHYK cRFGYD"
+              >
+                Site map
+              </span>
             </a>
             <a
-              class="sc-iBYQkv cCatJA"
+              class="sc-gswNZR gltAA"
               href="/privacy-policy"
             >
-              Privacy
+              <span
+                class="sc-ftTHYK cRFGYD"
+              >
+                Privacy
+              </span>
             </a>
             <a
-              class="sc-iBYQkv cCatJA"
+              class="sc-gswNZR gltAA"
               href="/login"
             >
-              Login/Account
+              <span
+                class="sc-ftTHYK cRFGYD"
+              >
+                Login/Account
+              </span>
             </a>
             <a
-              class="sc-iBYQkv cCatJA"
+              class="sc-gswNZR gltAA"
               href="/status"
             >
-              Status
+              <span
+                class="sc-ftTHYK cRFGYD"
+              >
+                Status
+              </span>
             </a>
           </div>
         </div>

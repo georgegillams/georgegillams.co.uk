@@ -6,10 +6,10 @@ exports[`<AdminNavigation /> should render correctly - index 1`] = `
     aria-label="Loading"
   >
     <div
-      class="sc-bjfHbI ibzWhy"
+      class="sc-idXgbr irOVYZ"
     >
       <div
-        class="sc-idXgbr jlSlT"
+        class="sc-dIfARi hEqwgc"
         style="margin-left: -0px;"
       />
     </div>
@@ -17,26 +17,26 @@ exports[`<AdminNavigation /> should render correctly - index 1`] = `
       class="admin-navigationstyles__CardContainer-sc-n2t86e-0 dKRGMR"
     >
       <div
-        class="sc-bjfHbI hINqGN"
+        class="sc-idXgbr kBIQoq"
       >
         <div
-          class="sc-idXgbr jlSlT"
+          class="sc-dIfARi hEqwgc"
           style="margin-left: -0px;"
         />
       </div>
       <div
-        class="sc-bjfHbI hINqGN"
+        class="sc-idXgbr kBIQoq"
       >
         <div
-          class="sc-idXgbr jlSlT"
+          class="sc-dIfARi hEqwgc"
           style="margin-left: -0px;"
         />
       </div>
       <div
-        class="sc-bjfHbI hINqGN"
+        class="sc-idXgbr kBIQoq"
       >
         <div
-          class="sc-idXgbr jlSlT"
+          class="sc-dIfARi hEqwgc"
           style="margin-left: -0px;"
         />
       </div>
@@ -48,14 +48,14 @@ exports[`<AdminNavigation /> should render correctly - index 1`] = `
 exports[`<AdminNavigation /> should render correctly with admin user 1`] = `
 <div>
   <div
-    class="sc-cabOPr izEZLk"
+    class="sc-iAEawV hlvFhc"
     width="default"
   >
     <div
       class="sc-bqWxrE VcTDu"
     >
       <h1
-        class="sc-bcXHqe bHgOFy sc-jrcTuL ewlzmZ"
+        class="sc-eDvSVe fsBEuM sc-jrcTuL ewlzmZ"
       >
         Admin
       </h1>
@@ -63,176 +63,146 @@ exports[`<AdminNavigation /> should render correctly with admin user 1`] = `
     <div
       class="admin-navigationstyles__CardContainer-sc-n2t86e-0 dKRGMR"
     >
-      <a
-        aria-label="Debug"
-        class="sc-hHTYSt dJqYyE sc-ezOQGI dgAItK admin-navigationstyles__StyledFeatureCard-sc-n2t86e-1 bdqyNM"
-        href="/debug"
+      <div
+        class="sc-kgTSHT eWpXqd"
       >
         <div
-          class="sc-dmctIk dLbmIq"
+          class="sc-fLcnxK cUOGbq"
+        />
+        <div
+          class="sc-bBABsx kLHrUJ"
         >
           <div
-            class="sc-kgTSHT kEGyrt"
-          />
-          <div
-            class="sc-fLcnxK eRATcF"
+            aria-hidden="true"
+            class="sc-kMjNwy cmaPuj"
           >
             <div
-              aria-hidden="true"
-              class="sc-bYMpWt bPVUKW"
+              class="sc-ilhmMj fwSest date container"
+            />
+            <div
+              class="sc-jIRcFI hPSbcn"
             >
-              <div
-                class="sc-kMjNwy hvofle date container"
-              />
-              <div
-                class="sc-ilhmMj gLYSyF"
+              <h1
+                class="sc-jSUZER glQaLI"
               >
-                <h1
-                  class="sc-gswNZR gzqAHo"
-                >
-                  Debug
-                </h1>
-              </div>
+                Debug
+              </h1>
             </div>
           </div>
         </div>
-      </a>
-      <a
-        aria-label="Analytics"
-        class="sc-hHTYSt dJqYyE sc-ezOQGI dgAItK admin-navigationstyles__StyledFeatureCard-sc-n2t86e-1 bdqyNM"
-        href="/admin/analytics"
+      </div>
+      <div
+        class="sc-kgTSHT eWpXqd"
       >
         <div
-          class="sc-dmctIk dLbmIq"
+          class="sc-fLcnxK cUOGbq"
+        />
+        <div
+          class="sc-bBABsx kLHrUJ"
         >
           <div
-            class="sc-kgTSHT kEGyrt"
-          />
-          <div
-            class="sc-fLcnxK eRATcF"
+            aria-hidden="true"
+            class="sc-kMjNwy cmaPuj"
           >
             <div
-              aria-hidden="true"
-              class="sc-bYMpWt bPVUKW"
+              class="sc-ilhmMj fwSest date container"
+            />
+            <div
+              class="sc-jIRcFI hPSbcn"
             >
-              <div
-                class="sc-kMjNwy hvofle date container"
-              />
-              <div
-                class="sc-ilhmMj gLYSyF"
+              <h1
+                class="sc-jSUZER glQaLI"
               >
-                <h1
-                  class="sc-gswNZR gzqAHo"
-                >
-                  Analytics
-                </h1>
-              </div>
+                Analytics
+              </h1>
             </div>
           </div>
         </div>
-      </a>
-      <a
-        aria-label="Emails"
-        class="sc-hHTYSt dJqYyE sc-ezOQGI dgAItK admin-navigationstyles__StyledFeatureCard-sc-n2t86e-1 bdqyNM"
-        href="/admin/emails"
+      </div>
+      <div
+        class="sc-kgTSHT eWpXqd"
       >
         <div
-          class="sc-dmctIk dLbmIq"
+          class="sc-fLcnxK cUOGbq"
+        />
+        <div
+          class="sc-bBABsx kLHrUJ"
         >
           <div
-            class="sc-kgTSHT kEGyrt"
-          />
-          <div
-            class="sc-fLcnxK eRATcF"
+            aria-hidden="true"
+            class="sc-kMjNwy cmaPuj"
           >
             <div
-              aria-hidden="true"
-              class="sc-bYMpWt bPVUKW"
+              class="sc-ilhmMj fwSest date container"
+            />
+            <div
+              class="sc-jIRcFI hPSbcn"
             >
-              <div
-                class="sc-kMjNwy hvofle date container"
-              />
-              <div
-                class="sc-ilhmMj gLYSyF"
+              <h1
+                class="sc-jSUZER glQaLI"
               >
-                <h1
-                  class="sc-gswNZR gzqAHo"
-                >
-                  Emails
-                </h1>
-              </div>
+                Emails
+              </h1>
             </div>
           </div>
         </div>
-      </a>
-      <a
-        aria-label="Notifications"
-        class="sc-hHTYSt dJqYyE sc-ezOQGI dgAItK admin-navigationstyles__StyledFeatureCard-sc-n2t86e-1 bdqyNM"
-        href="/admin/notifications"
+      </div>
+      <div
+        class="sc-kgTSHT eWpXqd"
       >
         <div
-          class="sc-dmctIk dLbmIq"
+          class="sc-fLcnxK cUOGbq"
+        />
+        <div
+          class="sc-bBABsx kLHrUJ"
         >
           <div
-            class="sc-kgTSHT kEGyrt"
-          />
-          <div
-            class="sc-fLcnxK eRATcF"
+            aria-hidden="true"
+            class="sc-kMjNwy cmaPuj"
           >
             <div
-              aria-hidden="true"
-              class="sc-bYMpWt bPVUKW"
+              class="sc-ilhmMj fwSest date container"
+            />
+            <div
+              class="sc-jIRcFI hPSbcn"
             >
-              <div
-                class="sc-kMjNwy hvofle date container"
-              />
-              <div
-                class="sc-ilhmMj gLYSyF"
+              <h1
+                class="sc-jSUZER glQaLI"
               >
-                <h1
-                  class="sc-gswNZR gzqAHo"
-                >
-                  Notifications
-                </h1>
-              </div>
+                Notifications
+              </h1>
             </div>
           </div>
         </div>
-      </a>
-      <a
-        aria-label="Users"
-        class="sc-hHTYSt dJqYyE sc-ezOQGI dgAItK admin-navigationstyles__StyledFeatureCard-sc-n2t86e-1 bdqyNM"
-        href="/admin/users"
+      </div>
+      <div
+        class="sc-kgTSHT eWpXqd"
       >
         <div
-          class="sc-dmctIk dLbmIq"
+          class="sc-fLcnxK cUOGbq"
+        />
+        <div
+          class="sc-bBABsx kLHrUJ"
         >
           <div
-            class="sc-kgTSHT kEGyrt"
-          />
-          <div
-            class="sc-fLcnxK eRATcF"
+            aria-hidden="true"
+            class="sc-kMjNwy cmaPuj"
           >
             <div
-              aria-hidden="true"
-              class="sc-bYMpWt bPVUKW"
+              class="sc-ilhmMj fwSest date container"
+            />
+            <div
+              class="sc-jIRcFI hPSbcn"
             >
-              <div
-                class="sc-kMjNwy hvofle date container"
-              />
-              <div
-                class="sc-ilhmMj gLYSyF"
+              <h1
+                class="sc-jSUZER glQaLI"
               >
-                <h1
-                  class="sc-gswNZR gzqAHo"
-                >
-                  Users
-                </h1>
-              </div>
+                Users
+              </h1>
             </div>
           </div>
         </div>
-      </a>
+      </div>
     </div>
   </div>
 </div>
@@ -244,10 +214,10 @@ exports[`<AdminNavigation /> should render correctly with auth error 1`] = `
     aria-label="Loading"
   >
     <div
-      class="sc-bjfHbI ibzWhy"
+      class="sc-idXgbr irOVYZ"
     >
       <div
-        class="sc-idXgbr jlSlT"
+        class="sc-dIfARi hEqwgc"
         style="margin-left: -0px;"
       />
     </div>
@@ -255,36 +225,36 @@ exports[`<AdminNavigation /> should render correctly with auth error 1`] = `
       class="admin-navigationstyles__CardContainer-sc-n2t86e-0 dKRGMR"
     >
       <div
-        class="sc-bjfHbI hINqGN"
+        class="sc-idXgbr kBIQoq"
       >
         <div
-          class="sc-idXgbr jlSlT"
+          class="sc-dIfARi hEqwgc"
           style="margin-left: -0px;"
         />
       </div>
       <div
-        class="sc-bjfHbI hINqGN"
+        class="sc-idXgbr kBIQoq"
       >
         <div
-          class="sc-idXgbr jlSlT"
+          class="sc-dIfARi hEqwgc"
           style="margin-left: -0px;"
         />
       </div>
       <div
-        class="sc-bjfHbI hINqGN"
+        class="sc-idXgbr kBIQoq"
       >
         <div
-          class="sc-idXgbr jlSlT"
+          class="sc-dIfARi hEqwgc"
           style="margin-left: -0px;"
         />
       </div>
     </div>
   </div>
   <div
-    class="sc-ksBlkl gDlyuV"
+    class="sc-hBxehG julUME"
   >
     <h1
-      class="sc-dkrFOg eRKGDm sc-fEXmlR eZgzot"
+      class="sc-gKPRtg jJVvWo sc-bjfHbI iYWdbA"
       id="this-is-taking-a-while.-maybe-something-isn't-quite-right..."
     >
       This is taking a while. Maybe something isn't quite right...
@@ -299,10 +269,10 @@ exports[`<AdminNavigation /> should render correctly with initial state 1`] = `
     aria-label="Loading"
   >
     <div
-      class="sc-bjfHbI ibzWhy"
+      class="sc-idXgbr irOVYZ"
     >
       <div
-        class="sc-idXgbr jlSlT"
+        class="sc-dIfARi hEqwgc"
         style="margin-left: -0px;"
       />
     </div>
@@ -310,26 +280,26 @@ exports[`<AdminNavigation /> should render correctly with initial state 1`] = `
       class="admin-navigationstyles__CardContainer-sc-n2t86e-0 dKRGMR"
     >
       <div
-        class="sc-bjfHbI hINqGN"
+        class="sc-idXgbr kBIQoq"
       >
         <div
-          class="sc-idXgbr jlSlT"
+          class="sc-dIfARi hEqwgc"
           style="margin-left: -0px;"
         />
       </div>
       <div
-        class="sc-bjfHbI hINqGN"
+        class="sc-idXgbr kBIQoq"
       >
         <div
-          class="sc-idXgbr jlSlT"
+          class="sc-dIfARi hEqwgc"
           style="margin-left: -0px;"
         />
       </div>
       <div
-        class="sc-bjfHbI hINqGN"
+        class="sc-idXgbr kBIQoq"
       >
         <div
-          class="sc-idXgbr jlSlT"
+          class="sc-dIfARi hEqwgc"
           style="margin-left: -0px;"
         />
       </div>
@@ -341,28 +311,32 @@ exports[`<AdminNavigation /> should render correctly with initial state 1`] = `
 exports[`<AdminNavigation /> should render correctly with user 1`] = `
 <div>
   <div
-    class="sc-cabOPr izEZLk"
+    class="sc-iAEawV hlvFhc"
     width="default"
   >
     <div
-      class="sc-ksBlkl gDlyuV"
+      class="sc-hBxehG julUME"
     >
       <h1
-        class="sc-gswNZR gzqAHo sc-fEXmlR cIHzsJ"
+        class="sc-jSUZER glQaLI sc-bjfHbI cBkNPA"
         id="admin-only"
       >
         Admin only
       </h1>
       <span
-        class="sc-jcMfQk djCNkC"
+        class="sc-iTFTee diVeHp"
       >
         You need to be logged in with an admin account to view this content.
         <br />
         <a
-          class="sc-iBYQkv jNlLug"
+          class="sc-gswNZR bbFtvE"
           href="/login"
         >
-          Got a different admin account? Log in here.
+          <span
+            class="sc-ftTHYK cRFGYD"
+          >
+            Got a different admin account? Log in here.
+          </span>
         </a>
       </span>
     </div>

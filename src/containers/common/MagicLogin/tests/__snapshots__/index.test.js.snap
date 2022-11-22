@@ -3,44 +3,44 @@
 exports[`<MagicLogin /> should render correctly - index 1`] = `
 <div>
   <div
-    class="sc-bjfHbI gUxyYC page-containerstyles__StyledPageContainer-sc-19l7k4-0"
+    class="sc-idXgbr huQjaB page-containerstyles__StyledPageContainer-sc-19l7k4-0"
     width="default"
   >
     <div
       class="sc-bqWxrE VcTDu"
     >
       <h1
-        class="sc-bcXHqe bHgOFy sc-jrcTuL ewlzmZ"
+        class="sc-eDvSVe fsBEuM sc-jrcTuL ewlzmZ"
       >
         Logging in
       </h1>
     </div>
     <div
-      class="sc-fnGiBr ghqBZI"
+      class="sc-fEXmlR gRuFyG"
     >
       <div
-        class="sc-fEXmlR hcKaJa"
+        class="sc-bjfHbI sLlBn"
       />
       <div
-        class="sc-fEXmlR fMRprO"
+        class="sc-bjfHbI cZxaTL"
       />
       <div
-        class="sc-fEXmlR XoYlN"
+        class="sc-bjfHbI fGfEDI"
       />
       <div
-        class="sc-fEXmlR fKhhgo"
+        class="sc-bjfHbI dVCdIB"
       />
       <div
-        class="sc-fEXmlR chaStn"
+        class="sc-bjfHbI hKVvxq"
       />
       <div
-        class="sc-fEXmlR ivBCES"
+        class="sc-bjfHbI bOhkuX"
       />
       <div
-        class="sc-fEXmlR eKErEm"
+        class="sc-bjfHbI EhuPD"
       />
       <div
-        class="sc-fEXmlR kiHAOG"
+        class="sc-bjfHbI hnHELH"
       />
     </div>
   </div>
@@ -50,44 +50,44 @@ exports[`<MagicLogin /> should render correctly - index 1`] = `
 exports[`<MagicLogin /> should render correctly with initial state 1`] = `
 <div>
   <div
-    class="sc-bjfHbI gUxyYC page-containerstyles__StyledPageContainer-sc-19l7k4-0"
+    class="sc-idXgbr huQjaB page-containerstyles__StyledPageContainer-sc-19l7k4-0"
     width="default"
   >
     <div
       class="sc-bqWxrE VcTDu"
     >
       <h1
-        class="sc-bcXHqe bHgOFy sc-jrcTuL ewlzmZ"
+        class="sc-eDvSVe fsBEuM sc-jrcTuL ewlzmZ"
       >
         Logging in
       </h1>
     </div>
     <div
-      class="sc-fnGiBr ghqBZI"
+      class="sc-fEXmlR gRuFyG"
     >
       <div
-        class="sc-fEXmlR hcKaJa"
+        class="sc-bjfHbI sLlBn"
       />
       <div
-        class="sc-fEXmlR fMRprO"
+        class="sc-bjfHbI cZxaTL"
       />
       <div
-        class="sc-fEXmlR XoYlN"
+        class="sc-bjfHbI fGfEDI"
       />
       <div
-        class="sc-fEXmlR fKhhgo"
+        class="sc-bjfHbI dVCdIB"
       />
       <div
-        class="sc-fEXmlR chaStn"
+        class="sc-bjfHbI hKVvxq"
       />
       <div
-        class="sc-fEXmlR ivBCES"
+        class="sc-bjfHbI bOhkuX"
       />
       <div
-        class="sc-fEXmlR eKErEm"
+        class="sc-bjfHbI EhuPD"
       />
       <div
-        class="sc-fEXmlR kiHAOG"
+        class="sc-bjfHbI hnHELH"
       />
     </div>
   </div>
@@ -97,61 +97,65 @@ exports[`<MagicLogin /> should render correctly with initial state 1`] = `
 exports[`<MagicLogin /> should render correctly with logInError 1`] = `
 <div>
   <div
-    class="sc-bjfHbI gUxyYC page-containerstyles__StyledPageContainer-sc-19l7k4-0"
+    class="sc-idXgbr huQjaB page-containerstyles__StyledPageContainer-sc-19l7k4-0"
     width="default"
   >
     <div
       class="sc-bqWxrE VcTDu"
     >
       <h1
-        class="sc-bcXHqe bHgOFy sc-jrcTuL ewlzmZ"
+        class="sc-eDvSVe fsBEuM sc-jrcTuL ewlzmZ"
       >
         Logging in
       </h1>
     </div>
     <div
-      class="sc-fnGiBr ghqBZI"
+      class="sc-fEXmlR gRuFyG"
     >
       <div
-        class="sc-fEXmlR hcKaJa"
+        class="sc-bjfHbI sLlBn"
       />
       <div
-        class="sc-fEXmlR fMRprO"
+        class="sc-bjfHbI cZxaTL"
       />
       <div
-        class="sc-fEXmlR XoYlN"
+        class="sc-bjfHbI fGfEDI"
       />
       <div
-        class="sc-fEXmlR fKhhgo"
+        class="sc-bjfHbI dVCdIB"
       />
       <div
-        class="sc-fEXmlR chaStn"
+        class="sc-bjfHbI hKVvxq"
       />
       <div
-        class="sc-fEXmlR ivBCES"
+        class="sc-bjfHbI bOhkuX"
       />
       <div
-        class="sc-fEXmlR eKErEm"
+        class="sc-bjfHbI EhuPD"
       />
       <div
-        class="sc-fEXmlR kiHAOG"
+        class="sc-bjfHbI hnHELH"
       />
     </div>
     <span
-      class="sc-ksBlkl bLCpBX"
+      class="sc-hBxehG jiKGja"
     >
       <span
-        class="sc-hBxehG cqQowO"
+        class="sc-fnGiBr fmcxCo"
       >
         Something went wrong logging you in
         <br />
         Invalid session
         <br />
         <a
-          class="sc-iBYQkv jNlLug"
+          class="sc-gswNZR bbFtvE"
           href="/login"
         >
-          Try logging in again
+          <span
+            class="sc-ftTHYK cRFGYD"
+          >
+            Try logging in again
+          </span>
         </a>
       </span>
     </span>
@@ -162,44 +166,44 @@ exports[`<MagicLogin /> should render correctly with logInError 1`] = `
 exports[`<MagicLogin /> should render correctly with loggingIn=true 1`] = `
 <div>
   <div
-    class="sc-bjfHbI gUxyYC page-containerstyles__StyledPageContainer-sc-19l7k4-0"
+    class="sc-idXgbr huQjaB page-containerstyles__StyledPageContainer-sc-19l7k4-0"
     width="default"
   >
     <div
       class="sc-bqWxrE VcTDu"
     >
       <h1
-        class="sc-bcXHqe bHgOFy sc-jrcTuL ewlzmZ"
+        class="sc-eDvSVe fsBEuM sc-jrcTuL ewlzmZ"
       >
         Logging in
       </h1>
     </div>
     <div
-      class="sc-fnGiBr ghqBZI"
+      class="sc-fEXmlR gRuFyG"
     >
       <div
-        class="sc-fEXmlR hcKaJa"
+        class="sc-bjfHbI sLlBn"
       />
       <div
-        class="sc-fEXmlR fMRprO"
+        class="sc-bjfHbI cZxaTL"
       />
       <div
-        class="sc-fEXmlR XoYlN"
+        class="sc-bjfHbI fGfEDI"
       />
       <div
-        class="sc-fEXmlR fKhhgo"
+        class="sc-bjfHbI dVCdIB"
       />
       <div
-        class="sc-fEXmlR chaStn"
+        class="sc-bjfHbI hKVvxq"
       />
       <div
-        class="sc-fEXmlR ivBCES"
+        class="sc-bjfHbI bOhkuX"
       />
       <div
-        class="sc-fEXmlR eKErEm"
+        class="sc-bjfHbI EhuPD"
       />
       <div
-        class="sc-fEXmlR kiHAOG"
+        class="sc-bjfHbI hnHELH"
       />
     </div>
   </div>
@@ -209,20 +213,20 @@ exports[`<MagicLogin /> should render correctly with loggingIn=true 1`] = `
 exports[`<MagicLogin /> should render correctly with user 1`] = `
 <div>
   <div
-    class="sc-bjfHbI gUxyYC page-containerstyles__StyledPageContainer-sc-19l7k4-0"
+    class="sc-idXgbr huQjaB page-containerstyles__StyledPageContainer-sc-19l7k4-0"
     width="default"
   >
     <div
       class="sc-bqWxrE VcTDu"
     >
       <h1
-        class="sc-bcXHqe bHgOFy sc-jrcTuL ewlzmZ"
+        class="sc-eDvSVe fsBEuM sc-jrcTuL ewlzmZ"
       >
         Logged in
       </h1>
     </div>
     <span
-      class="sc-ksBlkl bLCpBX"
+      class="sc-hBxehG jiKGja"
     >
       Logged in!
       <br />
@@ -231,38 +235,42 @@ exports[`<MagicLogin /> should render correctly with user 1`] = `
        page
       <br />
       <a
-        class="sc-iBYQkv jNlLug"
+        class="sc-gswNZR bbFtvE"
         href="account"
       >
-        Not been redirected? Click here
+        <span
+          class="sc-ftTHYK cRFGYD"
+        >
+          Not been redirected? Click here
+        </span>
       </a>
     </span>
     <div
-      class="sc-fnGiBr ghqBZI"
+      class="sc-fEXmlR gRuFyG"
     >
       <div
-        class="sc-fEXmlR hcKaJa"
+        class="sc-bjfHbI sLlBn"
       />
       <div
-        class="sc-fEXmlR fMRprO"
+        class="sc-bjfHbI cZxaTL"
       />
       <div
-        class="sc-fEXmlR XoYlN"
+        class="sc-bjfHbI fGfEDI"
       />
       <div
-        class="sc-fEXmlR fKhhgo"
+        class="sc-bjfHbI dVCdIB"
       />
       <div
-        class="sc-fEXmlR chaStn"
+        class="sc-bjfHbI hKVvxq"
       />
       <div
-        class="sc-fEXmlR ivBCES"
+        class="sc-bjfHbI bOhkuX"
       />
       <div
-        class="sc-fEXmlR eKErEm"
+        class="sc-bjfHbI EhuPD"
       />
       <div
-        class="sc-fEXmlR kiHAOG"
+        class="sc-bjfHbI hnHELH"
       />
     </div>
   </div>

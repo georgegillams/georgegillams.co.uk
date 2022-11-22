@@ -4,50 +4,50 @@ exports[`<AdminEmails /> should render correctly - index 1`] = `
 <div>
   <div
     aria-label="Loading"
-    class="sc-hHTYSt SeJTL page-containerstyles__StyledPageContainer-sc-19l7k4-0"
+    class="sc-dmctIk kfbqRZ page-containerstyles__StyledPageContainer-sc-19l7k4-0"
     width="default"
   >
     <div
-      class="sc-bjfHbI ibzWhy"
+      class="sc-idXgbr irOVYZ"
     >
       <div
-        class="sc-idXgbr jlSlT"
+        class="sc-dIfARi hEqwgc"
         style="margin-left: -0px;"
       />
     </div>
     <div
-      class="sc-bjfHbI jVoIxg"
+      class="sc-idXgbr hApKDz"
       style="margin-top: 1.2rem;"
     >
       <div
-        class="sc-idXgbr jlSlT"
+        class="sc-dIfARi hEqwgc"
         style="margin-left: -0px;"
       />
     </div>
     <div
-      class="sc-bjfHbI jVoIxg"
+      class="sc-idXgbr hApKDz"
       style="margin-top: 1.2rem;"
     >
       <div
-        class="sc-idXgbr jlSlT"
+        class="sc-dIfARi hEqwgc"
         style="margin-left: -0px;"
       />
     </div>
     <div
-      class="sc-bjfHbI jVoIxg"
+      class="sc-idXgbr hApKDz"
       style="margin-top: 1.2rem;"
     >
       <div
-        class="sc-idXgbr jlSlT"
+        class="sc-dIfARi hEqwgc"
         style="margin-left: -0px;"
       />
     </div>
     <div
-      class="sc-bjfHbI jVoIxg"
+      class="sc-idXgbr hApKDz"
       style="margin-top: 1.2rem;"
     >
       <div
-        class="sc-idXgbr jlSlT"
+        class="sc-dIfARi hEqwgc"
         style="margin-left: -0px;"
       />
     </div>
@@ -65,10 +65,14 @@ exports[`<AdminEmails /> should render correctly with admin user 1`] = `
         class="sc-kDvujY bJLGdG"
       >
         <a
-          class="sc-iBYQkv jNlLug"
+          class="sc-gswNZR bbFtvE"
           href="/admin"
         >
-          ⇠ Admin
+          <span
+            class="sc-ftTHYK cRFGYD"
+          >
+            ⇠ Admin
+          </span>
         </a>
       </div>
     </div>
@@ -76,7 +80,7 @@ exports[`<AdminEmails /> should render correctly with admin user 1`] = `
       class="sc-bqWxrE VcTDu"
     >
       <h1
-        class="sc-bcXHqe bHgOFy sc-jrcTuL jiMlto"
+        class="sc-eDvSVe fsBEuM sc-jrcTuL jiMlto"
       >
         Admin emails
       </h1>
@@ -84,11 +88,11 @@ exports[`<AdminEmails /> should render correctly with admin user 1`] = `
   </div>
   <div>
     <button
-      class="sc-bBABsx elxOCD admin-emailsstyles__StyledButton-sc-zq6ujt-0 ePDeuD"
+      class="sc-iveFHk gNuiIb admin-emailsstyles__StyledButton-sc-zq6ujt-0 ePDeuD"
       type="button"
     >
       <span
-        class="sc-cwSeag ldoACd"
+        class="sc-lllmON IAMKh"
       >
         Reload emails
       </span>
@@ -118,10 +122,14 @@ exports[`<AdminEmails /> should render correctly with emails 1`] = `
         class="sc-kDvujY bJLGdG"
       >
         <a
-          class="sc-iBYQkv jNlLug"
+          class="sc-gswNZR bbFtvE"
           href="/admin"
         >
-          ⇠ Admin
+          <span
+            class="sc-ftTHYK cRFGYD"
+          >
+            ⇠ Admin
+          </span>
         </a>
       </div>
     </div>
@@ -129,7 +137,7 @@ exports[`<AdminEmails /> should render correctly with emails 1`] = `
       class="sc-bqWxrE VcTDu"
     >
       <h1
-        class="sc-bcXHqe bHgOFy sc-jrcTuL jiMlto"
+        class="sc-eDvSVe fsBEuM sc-jrcTuL jiMlto"
       >
         Admin emails
       </h1>
@@ -137,18 +145,18 @@ exports[`<AdminEmails /> should render correctly with emails 1`] = `
   </div>
   <div>
     <button
-      class="sc-bBABsx elxOCD admin-emailsstyles__StyledButton-sc-zq6ujt-0 ePDeuD"
+      class="sc-iveFHk gNuiIb admin-emailsstyles__StyledButton-sc-zq6ujt-0 ePDeuD"
       type="button"
     >
       <span
-        class="sc-cwSeag ldoACd"
+        class="sc-lllmON IAMKh"
       >
         Reload emails
       </span>
     </button>
   </div>
   <span
-    class="sc-dIfARi gupYKT admin-emailsstyles__Count-sc-zq6ujt-2 kkfqmh"
+    class="sc-hHTYSt cRxHgE admin-emailsstyles__Count-sc-zq6ujt-2 kkfqmh"
   >
     Showing 
     3
@@ -165,120 +173,102 @@ exports[`<AdminEmails /> should render correctly with emails 1`] = `
       <div
         class="stackstyles__StyledVStack-sc-1m733wj-0 dmknRP"
       >
-        <a
-          class="sc-gikAfH hVsAMM"
-          href="/admin/emails?highlight=1"
-          id="1"
+        <div
+          class="sc-kMjNwy fhpiGi"
         >
           <div
-            class="sc-ezOQGI jZAtcZ"
+            class="sc-ilhmMj imOtvJ"
+          />
+          <div
+            class="sc-jIRcFI kILCAE"
           >
             <div
-              class="sc-bYMpWt czcfYD"
-            />
-            <div
-              class="sc-kMjNwy kasXmx"
+              class="split-detail-itemstyles__Item-sc-5gess9-0 eDQpMP"
             >
               <div
-                class="split-detail-itemstyles__Item-sc-5gess9-0 eDQpMP"
+                class="sc-hBxehG julUME"
               >
-                <div
-                  class="sc-ksBlkl gDlyuV"
+                <h1
+                  class="sc-gKPRtg jJVvWo sc-bjfHbI iYWdbA"
+                  id="email-1"
                 >
-                  <h1
-                    class="sc-dkrFOg eRKGDm sc-fEXmlR eZgzot"
-                    id="email-1"
-                  >
-                    Email 1
-                  </h1>
-                  <span
-                    class="sc-dIfARi gupYKT"
-                  >
-                    <br />
-                    id: 
-                    1
-                  </span>
-                </div>
+                  Email 1
+                </h1>
+                <span
+                  class="sc-hHTYSt cRxHgE"
+                >
+                  <br />
+                  id: 
+                  1
+                </span>
               </div>
             </div>
           </div>
-        </a>
-        <a
-          class="sc-gikAfH hVsAMM"
-          href="/admin/emails?highlight=2"
-          id="2"
+        </div>
+        <div
+          class="sc-kMjNwy fhpiGi"
         >
           <div
-            class="sc-ezOQGI jZAtcZ"
+            class="sc-ilhmMj imOtvJ"
+          />
+          <div
+            class="sc-jIRcFI kILCAE"
           >
             <div
-              class="sc-bYMpWt czcfYD"
-            />
-            <div
-              class="sc-kMjNwy kasXmx"
+              class="split-detail-itemstyles__Item-sc-5gess9-0 eDQpMP"
             >
               <div
-                class="split-detail-itemstyles__Item-sc-5gess9-0 eDQpMP"
+                class="sc-hBxehG julUME"
               >
-                <div
-                  class="sc-ksBlkl gDlyuV"
+                <h1
+                  class="sc-gKPRtg jJVvWo sc-bjfHbI iYWdbA"
+                  id="email-2"
                 >
-                  <h1
-                    class="sc-dkrFOg eRKGDm sc-fEXmlR eZgzot"
-                    id="email-2"
-                  >
-                    Email 2
-                  </h1>
-                  <span
-                    class="sc-dIfARi gupYKT"
-                  >
-                    <br />
-                    id: 
-                    2
-                  </span>
-                </div>
+                  Email 2
+                </h1>
+                <span
+                  class="sc-hHTYSt cRxHgE"
+                >
+                  <br />
+                  id: 
+                  2
+                </span>
               </div>
             </div>
           </div>
-        </a>
-        <a
-          class="sc-gikAfH hVsAMM"
-          href="/admin/emails?highlight=3"
-          id="3"
+        </div>
+        <div
+          class="sc-kMjNwy fhpiGi"
         >
           <div
-            class="sc-ezOQGI jZAtcZ"
+            class="sc-ilhmMj imOtvJ"
+          />
+          <div
+            class="sc-jIRcFI kILCAE"
           >
             <div
-              class="sc-bYMpWt czcfYD"
-            />
-            <div
-              class="sc-kMjNwy kasXmx"
+              class="split-detail-itemstyles__Item-sc-5gess9-0 eDQpMP"
             >
               <div
-                class="split-detail-itemstyles__Item-sc-5gess9-0 eDQpMP"
+                class="sc-hBxehG julUME"
               >
-                <div
-                  class="sc-ksBlkl gDlyuV"
+                <h1
+                  class="sc-gKPRtg jJVvWo sc-bjfHbI iYWdbA"
+                  id="email-3"
                 >
-                  <h1
-                    class="sc-dkrFOg eRKGDm sc-fEXmlR eZgzot"
-                    id="email-3"
-                  >
-                    Email 3
-                  </h1>
-                  <span
-                    class="sc-dIfARi gupYKT"
-                  >
-                    <br />
-                    id: 
-                    3
-                  </span>
-                </div>
+                  Email 3
+                </h1>
+                <span
+                  class="sc-hHTYSt cRxHgE"
+                >
+                  <br />
+                  id: 
+                  3
+                </span>
               </div>
             </div>
           </div>
-        </a>
+        </div>
       </div>
     </div>
   </div>
@@ -289,50 +279,50 @@ exports[`<AdminEmails /> should render correctly with initial state 1`] = `
 <div>
   <div
     aria-label="Loading"
-    class="sc-hHTYSt SeJTL page-containerstyles__StyledPageContainer-sc-19l7k4-0"
+    class="sc-dmctIk kfbqRZ page-containerstyles__StyledPageContainer-sc-19l7k4-0"
     width="default"
   >
     <div
-      class="sc-bjfHbI ibzWhy"
+      class="sc-idXgbr irOVYZ"
     >
       <div
-        class="sc-idXgbr jlSlT"
+        class="sc-dIfARi hEqwgc"
         style="margin-left: -0px;"
       />
     </div>
     <div
-      class="sc-bjfHbI jVoIxg"
+      class="sc-idXgbr hApKDz"
       style="margin-top: 1.2rem;"
     >
       <div
-        class="sc-idXgbr jlSlT"
+        class="sc-dIfARi hEqwgc"
         style="margin-left: -0px;"
       />
     </div>
     <div
-      class="sc-bjfHbI jVoIxg"
+      class="sc-idXgbr hApKDz"
       style="margin-top: 1.2rem;"
     >
       <div
-        class="sc-idXgbr jlSlT"
+        class="sc-dIfARi hEqwgc"
         style="margin-left: -0px;"
       />
     </div>
     <div
-      class="sc-bjfHbI jVoIxg"
+      class="sc-idXgbr hApKDz"
       style="margin-top: 1.2rem;"
     >
       <div
-        class="sc-idXgbr jlSlT"
+        class="sc-dIfARi hEqwgc"
         style="margin-left: -0px;"
       />
     </div>
     <div
-      class="sc-bjfHbI jVoIxg"
+      class="sc-idXgbr hApKDz"
       style="margin-top: 1.2rem;"
     >
       <div
-        class="sc-idXgbr jlSlT"
+        class="sc-dIfARi hEqwgc"
         style="margin-left: -0px;"
       />
     </div>
@@ -350,10 +340,14 @@ exports[`<AdminEmails /> should render correctly with loadError 1`] = `
         class="sc-kDvujY bJLGdG"
       >
         <a
-          class="sc-iBYQkv jNlLug"
+          class="sc-gswNZR bbFtvE"
           href="/admin"
         >
-          ⇠ Admin
+          <span
+            class="sc-ftTHYK cRFGYD"
+          >
+            ⇠ Admin
+          </span>
         </a>
       </div>
     </div>
@@ -361,7 +355,7 @@ exports[`<AdminEmails /> should render correctly with loadError 1`] = `
       class="sc-bqWxrE VcTDu"
     >
       <h1
-        class="sc-bcXHqe bHgOFy sc-jrcTuL jiMlto"
+        class="sc-eDvSVe fsBEuM sc-jrcTuL jiMlto"
       >
         Admin emails
       </h1>
@@ -369,21 +363,21 @@ exports[`<AdminEmails /> should render correctly with loadError 1`] = `
   </div>
   <div>
     <button
-      class="sc-bBABsx elxOCD admin-emailsstyles__StyledButton-sc-zq6ujt-0 ePDeuD"
+      class="sc-iveFHk gNuiIb admin-emailsstyles__StyledButton-sc-zq6ujt-0 ePDeuD"
       type="button"
     >
       <span
-        class="sc-cwSeag ldoACd"
+        class="sc-lllmON IAMKh"
       >
         Reload emails
       </span>
     </button>
   </div>
   <span
-    class="sc-dIfARi gupYKT"
+    class="sc-hHTYSt cRxHgE"
   >
     <span
-      class="sc-dmctIk etLiaK"
+      class="sc-kgTSHT lXHmp"
     >
       Could not load emails
       <br />
@@ -414,10 +408,14 @@ exports[`<AdminEmails /> should render correctly with loading=true 1`] = `
         class="sc-kDvujY bJLGdG"
       >
         <a
-          class="sc-iBYQkv jNlLug"
+          class="sc-gswNZR bbFtvE"
           href="/admin"
         >
-          ⇠ Admin
+          <span
+            class="sc-ftTHYK cRFGYD"
+          >
+            ⇠ Admin
+          </span>
         </a>
       </div>
     </div>
@@ -425,7 +423,7 @@ exports[`<AdminEmails /> should render correctly with loading=true 1`] = `
       class="sc-bqWxrE VcTDu"
     >
       <h1
-        class="sc-bcXHqe bHgOFy sc-jrcTuL jiMlto"
+        class="sc-eDvSVe fsBEuM sc-jrcTuL jiMlto"
       >
         Admin emails
       </h1>
@@ -433,45 +431,45 @@ exports[`<AdminEmails /> should render correctly with loading=true 1`] = `
   </div>
   <div>
     <button
-      class="sc-bBABsx crSlFX admin-emailsstyles__StyledButton-sc-zq6ujt-0 ePDeuD"
+      class="sc-iveFHk cGNplD admin-emailsstyles__StyledButton-sc-zq6ujt-0 ePDeuD"
       disabled=""
       type="button"
     >
       <span
-        class="sc-cwSeag hUEZzG"
+        class="sc-lllmON MPtua"
       >
         Reload emails
       </span>
       <div
         aria-hidden="true"
-        class="sc-lllmON focSiu"
+        class="sc-iJnaPW cQNAUh"
       >
         <div
-          class="sc-kgTSHT BbBzy"
+          class="sc-fLcnxK ctWOPR"
         >
           <div
-            class="sc-fLcnxK gmOgZi"
+            class="sc-bBABsx kEWXMq"
           />
           <div
-            class="sc-fLcnxK hReprW"
+            class="sc-bBABsx eWwMTe"
           />
           <div
-            class="sc-fLcnxK gTONWR"
+            class="sc-bBABsx jTtRPd"
           />
           <div
-            class="sc-fLcnxK cfUqzA"
+            class="sc-bBABsx imnVtM"
           />
           <div
-            class="sc-fLcnxK kZCmzD"
+            class="sc-bBABsx jwDXhX"
           />
           <div
-            class="sc-fLcnxK cngVGS"
+            class="sc-bBABsx dNrBwy"
           />
           <div
-            class="sc-fLcnxK fklgdW"
+            class="sc-bBABsx kbAARu"
           />
           <div
-            class="sc-fLcnxK gzoOKO"
+            class="sc-bBABsx bGgwNy"
           />
         </div>
       </div>
@@ -501,10 +499,14 @@ exports[`<AdminEmails /> should render correctly with resendError 1`] = `
         class="sc-kDvujY bJLGdG"
       >
         <a
-          class="sc-iBYQkv jNlLug"
+          class="sc-gswNZR bbFtvE"
           href="/admin"
         >
-          ⇠ Admin
+          <span
+            class="sc-ftTHYK cRFGYD"
+          >
+            ⇠ Admin
+          </span>
         </a>
       </div>
     </div>
@@ -512,7 +514,7 @@ exports[`<AdminEmails /> should render correctly with resendError 1`] = `
       class="sc-bqWxrE VcTDu"
     >
       <h1
-        class="sc-bcXHqe bHgOFy sc-jrcTuL jiMlto"
+        class="sc-eDvSVe fsBEuM sc-jrcTuL jiMlto"
       >
         Admin emails
       </h1>
@@ -520,11 +522,11 @@ exports[`<AdminEmails /> should render correctly with resendError 1`] = `
   </div>
   <div>
     <button
-      class="sc-bBABsx elxOCD admin-emailsstyles__StyledButton-sc-zq6ujt-0 ePDeuD"
+      class="sc-iveFHk gNuiIb admin-emailsstyles__StyledButton-sc-zq6ujt-0 ePDeuD"
       type="button"
     >
       <span
-        class="sc-cwSeag ldoACd"
+        class="sc-lllmON IAMKh"
       >
         Reload emails
       </span>
@@ -554,10 +556,14 @@ exports[`<AdminEmails /> should render correctly with resending=true 1`] = `
         class="sc-kDvujY bJLGdG"
       >
         <a
-          class="sc-iBYQkv jNlLug"
+          class="sc-gswNZR bbFtvE"
           href="/admin"
         >
-          ⇠ Admin
+          <span
+            class="sc-ftTHYK cRFGYD"
+          >
+            ⇠ Admin
+          </span>
         </a>
       </div>
     </div>
@@ -565,7 +571,7 @@ exports[`<AdminEmails /> should render correctly with resending=true 1`] = `
       class="sc-bqWxrE VcTDu"
     >
       <h1
-        class="sc-bcXHqe bHgOFy sc-jrcTuL jiMlto"
+        class="sc-eDvSVe fsBEuM sc-jrcTuL jiMlto"
       >
         Admin emails
       </h1>
@@ -573,11 +579,11 @@ exports[`<AdminEmails /> should render correctly with resending=true 1`] = `
   </div>
   <div>
     <button
-      class="sc-bBABsx elxOCD admin-emailsstyles__StyledButton-sc-zq6ujt-0 ePDeuD"
+      class="sc-iveFHk gNuiIb admin-emailsstyles__StyledButton-sc-zq6ujt-0 ePDeuD"
       type="button"
     >
       <span
-        class="sc-cwSeag ldoACd"
+        class="sc-lllmON IAMKh"
       >
         Reload emails
       </span>
@@ -600,24 +606,28 @@ exports[`<AdminEmails /> should render correctly with resending=true 1`] = `
 exports[`<AdminEmails /> should render correctly with user 1`] = `
 <div>
   <div
-    class="sc-ksBlkl gDlyuV"
+    class="sc-hBxehG julUME"
   >
     <h1
-      class="sc-gswNZR gzqAHo sc-fEXmlR cIHzsJ"
+      class="sc-jSUZER glQaLI sc-bjfHbI cBkNPA"
       id="admin-only"
     >
       Admin only
     </h1>
     <span
-      class="sc-dIfARi gupYKT"
+      class="sc-hHTYSt cRxHgE"
     >
       You need to be logged in with an admin account to view this content.
       <br />
       <a
-        class="sc-iBYQkv jNlLug"
+        class="sc-gswNZR bbFtvE"
         href="/login"
       >
-        Got a different admin account? Log in here.
+        <span
+          class="sc-ftTHYK cRFGYD"
+        >
+          Got a different admin account? Log in here.
+        </span>
       </a>
     </span>
   </div>

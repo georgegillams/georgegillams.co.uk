@@ -18,17 +18,25 @@ exports[`<LoggedInOnly /> Should render correctly 1`] = `
       view this content
       <br />
       <a
-        class="sc-ftTHYK dpmGDG"
+        class="sc-ftTHYK cJafwd"
         href="/sign-up"
       >
-        Register here - it's quick and easy.
+        <span
+          class="sc-jSUZER bjWoVS"
+        >
+          Register here - it's quick and easy.
+        </span>
       </a>
       <br />
       <a
-        class="sc-ftTHYK dpmGDG"
+        class="sc-ftTHYK cJafwd"
         href="/login"
       >
-        Already got an account? Log in here.
+        <span
+          class="sc-jSUZER bjWoVS"
+        >
+          Already got an account? Log in here.
+        </span>
       </a>
     </span>
   </div>

@@ -2,753 +2,711 @@
 
 exports[`<BlogCard /> Should render correctly 1`] = `
 <div>
-  <a
-    aria-label="Blog 1 , NaN Invalid Date"
-    class="sc-iBYQkv bOutrg sc-fEXmlR dIXePG"
-    href="/blog/asdfg"
+  <div
+    class="sc-pyfCe ioMYCD"
   >
     <div
-      class="sc-ftTHYK kgGuVS"
+      class="sc-jrcTuL dUmKw"
+    />
+    <div
+      class="sc-kDvujY bOLdOS"
     >
       <div
-        class="sc-pyfCe hIuAmP"
-      />
-      <div
-        class="sc-jrcTuL bNrLFz"
+        aria-hidden="true"
+        class="sc-idXgbr gfmFsp"
       >
         <div
-          aria-hidden="true"
-          class="sc-bjfHbI iUbfsq"
+          class="sc-dIfARi dgunAK date container"
         >
           <div
-            class="sc-idXgbr kTdaNJ date container"
+            class="sc-kgTSHT deXyHd"
           >
-            <div
-              class="sc-dmctIk eXRkVq"
+            <span
+              class="sc-ezOQGI jUiNOC"
             >
-              <span
-                class="sc-gikAfH bJDgJT"
-              >
-                NaN Invalid Date
-              </span>
-            </div>
-            <div
-              class="sc-kgTSHT dYPYRT"
-            >
-              <span
-                class="sc-gikAfH bJDgJT"
-              >
-                NaN
-              </span>
-            </div>
-            <div
-              class="sc-kgTSHT dYPYRT"
-            >
-              <span
-                class="sc-gikAfH bJDgJT"
-              >
-                Invalid Date
-              </span>
-            </div>
+              NaN Invalid Date
+            </span>
           </div>
           <div
-            class="sc-dIfARi dFDwOP"
+            class="sc-fLcnxK fsTTzg"
           >
-            <h1
-              class="sc-cwSeag klDffp"
+            <span
+              class="sc-ezOQGI jUiNOC"
             >
-              Blog 1 
-            </h1>
+              NaN
+            </span>
           </div>
+          <div
+            class="sc-fLcnxK fsTTzg"
+          >
+            <span
+              class="sc-ezOQGI jUiNOC"
+            >
+              Invalid Date
+            </span>
+          </div>
+        </div>
+        <div
+          class="sc-hHTYSt fLfAqY"
+        >
+          <h1
+            class="sc-lllmON bhqFzd"
+          >
+            Blog 1 
+          </h1>
         </div>
       </div>
     </div>
-  </a>
+  </div>
 </div>
 `;
 
 exports[`<BlogCard /> Should render correctly when deleted 1`] = `
 <div>
-  <a
-    aria-label="Untitled blog (DELETED), 23to30 Dec, Tagged travel"
-    class="sc-iBYQkv bOutrg sc-fEXmlR dIXePG"
-    href="/blog/mndyd8"
+  <div
+    class="sc-pyfCe ioMYCD"
   >
     <div
-      class="sc-ftTHYK kgGuVS"
+      class="sc-jrcTuL dUmKw"
+    />
+    <div
+      class="sc-kDvujY bOLdOS"
     >
       <div
-        class="sc-pyfCe hIuAmP"
-      />
-      <div
-        class="sc-jrcTuL bNrLFz"
+        aria-hidden="true"
+        class="sc-idXgbr gfmFsp"
       >
         <div
-          aria-hidden="true"
-          class="sc-bjfHbI iUbfsq"
+          class="sc-dIfARi dgunAK date container"
         >
           <div
-            class="sc-idXgbr kTdaNJ date container"
+            class="sc-kgTSHT deXyHd"
+          >
+            <span
+              class="sc-ezOQGI jUiNOC"
+            >
+              23-30 Dec
+            </span>
+          </div>
+          <div
+            class="sc-fLcnxK fsTTzg"
+          >
+            <span
+              class="sc-ezOQGI jUiNOC"
+            >
+              23-30
+            </span>
+          </div>
+          <div
+            class="sc-fLcnxK fsTTzg"
+          >
+            <span
+              class="sc-ezOQGI jUiNOC"
+            >
+              Dec
+            </span>
+          </div>
+        </div>
+        <div
+          class="sc-hHTYSt fLfAqY"
+        >
+          <h1
+            class="sc-lllmON bhqFzd"
+          >
+            Untitled blog (DELETED)
+          </h1>
+          <div
+            class="sc-iveFHk bFdmXo"
           >
             <div
-              class="sc-dmctIk eXRkVq"
+              class="sc-ilhmMj"
             >
               <span
-                class="sc-gikAfH bJDgJT"
+                class="sc-jIRcFI dKyCGb"
+                type="travel"
               >
-                23-30 Dec
-              </span>
-            </div>
-            <div
-              class="sc-kgTSHT dYPYRT"
-            >
-              <span
-                class="sc-gikAfH bJDgJT"
-              >
-                23-30
-              </span>
-            </div>
-            <div
-              class="sc-kgTSHT dYPYRT"
-            >
-              <span
-                class="sc-gikAfH bJDgJT"
-              >
-                Dec
+                Travel
               </span>
             </div>
           </div>
+        </div>
+        <div
+          class="sc-dmctIk kewHjU"
+        >
           <div
-            class="sc-dIfARi dFDwOP"
+            class="sc-eDWCr hezuNh sc-bBABsx gJAByb"
           >
-            <h1
-              class="sc-cwSeag klDffp"
-            >
-              Untitled blog (DELETED)
-            </h1>
-            <div
-              class="sc-bBABsx cunnvH"
-            >
-              <div
-                class="sc-bYMpWt"
-              >
-                <span
-                  class="sc-kMjNwy eqCJMi"
-                  type="travel"
-                >
-                  Travel
-                </span>
-              </div>
-            </div>
-          </div>
-          <div
-            class="sc-hHTYSt kttPzG"
-          >
-            <div
-              class="sc-csuSiG hrlAfi sc-fLcnxK gWRaxH"
-            >
-              <style>
-                
+            <style>
+              
           .js .gg-image__img--hide-js {display: none;}
           .no-js .gg-image__img--hide-no-js {display: none;}
         
-              </style>
+            </style>
+            <div
+              class="sc-bqWxrE llbmDz"
+              style="padding-bottom: 100%;"
+            >
               <div
-                class="sc-eDWCr ehKXvD"
-                style="padding-bottom: 100%;"
+                class="sc-ksBlkl bneFOf"
               >
                 <div
-                  class="sc-bqWxrE cXngGV"
+                  class="sc-ipEyDJ giwvRO sc-hBxehG larhnz"
                 >
                   <div
-                    class="sc-kDvujY dXQYaa sc-ksBlkl bJWrYm"
-                  >
-                    <div
-                      class="sc-ipEyDJ iUsWHm"
-                      style="margin-left: -0px;"
-                    />
-                  </div>
-                </div>
-                <div
-                  class="gg-image__img--hide-no-js"
-                >
-                  <img
-                    alt="card"
-                    class="sc-hBxehG eeNmOb"
-                    src="https://i.imgur.com/ppPEuDs.jpg"
-                  />
-                  <img
-                    alt="card"
-                    class="sc-fnGiBr bPPEnj"
-                    src="https://i.imgur.com/ppPEuDs.jpg"
+                    class="sc-csuSiG FGYJx"
+                    style="margin-left: -0px;"
                   />
                 </div>
-                <div
-                  class="gg-image__img--hide-js"
-                >
-                  <img
-                    alt="card"
-                    class="sc-hBxehG kMubnv"
-                    src="https://i.imgur.com/ppPEuDs.jpg"
-                  />
-                  <img
-                    alt="card"
-                    class="sc-fnGiBr hCjKzr"
-                    src="https://i.imgur.com/ppPEuDs.jpg"
-                  />
-                </div>
+              </div>
+              <div
+                class="gg-image__img--hide-no-js"
+              >
+                <img
+                  alt="card"
+                  class="sc-fnGiBr hAYXVm"
+                  src="https://i.imgur.com/ppPEuDs.jpg"
+                />
+                <img
+                  alt="card"
+                  class="sc-fEXmlR bJmlUm"
+                  src="https://i.imgur.com/ppPEuDs.jpg"
+                />
+              </div>
+              <div
+                class="gg-image__img--hide-js"
+              >
+                <img
+                  alt="card"
+                  class="sc-fnGiBr hImQle"
+                  src="https://i.imgur.com/ppPEuDs.jpg"
+                />
+                <img
+                  alt="card"
+                  class="sc-fEXmlR buIvvi"
+                  src="https://i.imgur.com/ppPEuDs.jpg"
+                />
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </a>
+  </div>
 </div>
 `;
 
 exports[`<BlogCard /> Should render correctly with all parameters supplied 1`] = `
 <div>
-  <a
-    aria-label="St Ives  2018, 23to30 Dec, Tagged travel"
-    class="sc-iBYQkv bOutrg sc-fEXmlR dIXePG"
-    href="/blog/zxywvuts"
+  <div
+    class="sc-pyfCe ioMYCD"
   >
     <div
-      class="sc-ftTHYK kgGuVS"
+      class="sc-jrcTuL dUmKw"
+    />
+    <div
+      class="sc-kDvujY bOLdOS"
     >
       <div
-        class="sc-pyfCe hIuAmP"
-      />
-      <div
-        class="sc-jrcTuL bNrLFz"
+        aria-hidden="true"
+        class="sc-idXgbr gfmFsp"
       >
         <div
-          aria-hidden="true"
-          class="sc-bjfHbI iUbfsq"
+          class="sc-dIfARi dgunAK date container"
         >
           <div
-            class="sc-idXgbr kTdaNJ date container"
+            class="sc-kgTSHT deXyHd"
+          >
+            <span
+              class="sc-ezOQGI jUiNOC"
+            >
+              23-30 Dec
+            </span>
+          </div>
+          <div
+            class="sc-fLcnxK fsTTzg"
+          >
+            <span
+              class="sc-ezOQGI jUiNOC"
+            >
+              23-30
+            </span>
+          </div>
+          <div
+            class="sc-fLcnxK fsTTzg"
+          >
+            <span
+              class="sc-ezOQGI jUiNOC"
+            >
+              Dec
+            </span>
+          </div>
+        </div>
+        <div
+          class="sc-hHTYSt fLfAqY"
+        >
+          <h1
+            class="sc-lllmON bhqFzd"
+          >
+            St Ives  2018
+          </h1>
+          <div
+            class="sc-iveFHk bFdmXo"
           >
             <div
-              class="sc-dmctIk eXRkVq"
+              class="sc-ilhmMj"
             >
               <span
-                class="sc-gikAfH bJDgJT"
+                class="sc-jIRcFI dKyCGb"
+                type="travel"
               >
-                23-30 Dec
-              </span>
-            </div>
-            <div
-              class="sc-kgTSHT dYPYRT"
-            >
-              <span
-                class="sc-gikAfH bJDgJT"
-              >
-                23-30
-              </span>
-            </div>
-            <div
-              class="sc-kgTSHT dYPYRT"
-            >
-              <span
-                class="sc-gikAfH bJDgJT"
-              >
-                Dec
+                Travel
               </span>
             </div>
           </div>
+        </div>
+        <div
+          class="sc-dmctIk kewHjU"
+        >
           <div
-            class="sc-dIfARi dFDwOP"
+            class="sc-eDWCr hezuNh sc-bBABsx gJAByb"
           >
-            <h1
-              class="sc-cwSeag klDffp"
-            >
-              St Ives  2018
-            </h1>
-            <div
-              class="sc-bBABsx cunnvH"
-            >
-              <div
-                class="sc-bYMpWt"
-              >
-                <span
-                  class="sc-kMjNwy eqCJMi"
-                  type="travel"
-                >
-                  Travel
-                </span>
-              </div>
-            </div>
-          </div>
-          <div
-            class="sc-hHTYSt kttPzG"
-          >
-            <div
-              class="sc-csuSiG hrlAfi sc-fLcnxK gWRaxH"
-            >
-              <style>
-                
+            <style>
+              
           .js .gg-image__img--hide-js {display: none;}
           .no-js .gg-image__img--hide-no-js {display: none;}
         
-              </style>
+            </style>
+            <div
+              class="sc-bqWxrE llbmDz"
+              style="padding-bottom: 100%;"
+            >
               <div
-                class="sc-eDWCr ehKXvD"
-                style="padding-bottom: 100%;"
+                class="sc-ksBlkl bneFOf"
               >
                 <div
-                  class="sc-bqWxrE cXngGV"
+                  class="sc-ipEyDJ giwvRO sc-hBxehG larhnz"
                 >
                   <div
-                    class="sc-kDvujY dXQYaa sc-ksBlkl bJWrYm"
-                  >
-                    <div
-                      class="sc-ipEyDJ iUsWHm"
-                      style="margin-left: -0px;"
-                    />
-                  </div>
-                </div>
-                <div
-                  class="gg-image__img--hide-no-js"
-                >
-                  <img
-                    alt="card"
-                    class="sc-hBxehG eeNmOb"
-                    src="https://i.imgur.com/ppPEuDs.jpg"
-                  />
-                  <img
-                    alt="card"
-                    class="sc-fnGiBr bPPEnj"
-                    src="https://i.imgur.com/ppPEuDs.jpg"
+                    class="sc-csuSiG FGYJx"
+                    style="margin-left: -0px;"
                   />
                 </div>
-                <div
-                  class="gg-image__img--hide-js"
-                >
-                  <img
-                    alt="card"
-                    class="sc-hBxehG kMubnv"
-                    src="https://i.imgur.com/ppPEuDs.jpg"
-                  />
-                  <img
-                    alt="card"
-                    class="sc-fnGiBr hCjKzr"
-                    src="https://i.imgur.com/ppPEuDs.jpg"
-                  />
-                </div>
+              </div>
+              <div
+                class="gg-image__img--hide-no-js"
+              >
+                <img
+                  alt="card"
+                  class="sc-fnGiBr hAYXVm"
+                  src="https://i.imgur.com/ppPEuDs.jpg"
+                />
+                <img
+                  alt="card"
+                  class="sc-fEXmlR bJmlUm"
+                  src="https://i.imgur.com/ppPEuDs.jpg"
+                />
+              </div>
+              <div
+                class="gg-image__img--hide-js"
+              >
+                <img
+                  alt="card"
+                  class="sc-fnGiBr hImQle"
+                  src="https://i.imgur.com/ppPEuDs.jpg"
+                />
+                <img
+                  alt="card"
+                  class="sc-fEXmlR buIvvi"
+                  src="https://i.imgur.com/ppPEuDs.jpg"
+                />
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </a>
+  </div>
 </div>
 `;
 
 exports[`<BlogCard /> Should render correctly with custom className 1`] = `
 <div>
-  <a
-    aria-label="Blog 1 , NaN Invalid Date"
-    class="sc-iBYQkv bOutrg sc-fEXmlR dIXePG test-custom-classname"
-    href="/blog/asdfg"
+  <div
+    class="sc-pyfCe ioMYCD"
   >
     <div
-      class="sc-ftTHYK kgGuVS"
+      class="sc-jrcTuL dUmKw"
+    />
+    <div
+      class="sc-kDvujY bOLdOS"
     >
       <div
-        class="sc-pyfCe hIuAmP"
-      />
-      <div
-        class="sc-jrcTuL bNrLFz"
+        aria-hidden="true"
+        class="sc-idXgbr gfmFsp"
       >
         <div
-          aria-hidden="true"
-          class="sc-bjfHbI iUbfsq"
+          class="sc-dIfARi dgunAK date container"
         >
           <div
-            class="sc-idXgbr kTdaNJ date container"
+            class="sc-kgTSHT deXyHd"
           >
-            <div
-              class="sc-dmctIk eXRkVq"
+            <span
+              class="sc-ezOQGI jUiNOC"
             >
-              <span
-                class="sc-gikAfH bJDgJT"
-              >
-                NaN Invalid Date
-              </span>
-            </div>
-            <div
-              class="sc-kgTSHT dYPYRT"
-            >
-              <span
-                class="sc-gikAfH bJDgJT"
-              >
-                NaN
-              </span>
-            </div>
-            <div
-              class="sc-kgTSHT dYPYRT"
-            >
-              <span
-                class="sc-gikAfH bJDgJT"
-              >
-                Invalid Date
-              </span>
-            </div>
+              NaN Invalid Date
+            </span>
           </div>
           <div
-            class="sc-dIfARi dFDwOP"
+            class="sc-fLcnxK fsTTzg"
           >
-            <h1
-              class="sc-cwSeag klDffp"
+            <span
+              class="sc-ezOQGI jUiNOC"
             >
-              Blog 1 
-            </h1>
+              NaN
+            </span>
           </div>
+          <div
+            class="sc-fLcnxK fsTTzg"
+          >
+            <span
+              class="sc-ezOQGI jUiNOC"
+            >
+              Invalid Date
+            </span>
+          </div>
+        </div>
+        <div
+          class="sc-hHTYSt fLfAqY"
+        >
+          <h1
+            class="sc-lllmON bhqFzd"
+          >
+            Blog 1 
+          </h1>
         </div>
       </div>
     </div>
-  </a>
+  </div>
 </div>
 `;
 
 exports[`<BlogsList /> Should render correctly 1`] = `
 <div>
   <div>
-    <a
-      aria-label="Blog 1 , NaN Invalid Date"
-      class="sc-iBYQkv bOutrg sc-fEXmlR dIXePG blogs-liststyles__StyledBlogCard-sc-if7ctk-1 dxPvVZ"
-      href="/blog/asdfg"
+    <div
+      class="sc-pyfCe ioMYCD"
     >
       <div
-        class="sc-ftTHYK kgGuVS"
+        class="sc-jrcTuL dUmKw"
+      />
+      <div
+        class="sc-kDvujY bOLdOS"
       >
         <div
-          class="sc-pyfCe hIuAmP"
-        />
-        <div
-          class="sc-jrcTuL bNrLFz"
+          aria-hidden="true"
+          class="sc-idXgbr gfmFsp"
         >
           <div
-            aria-hidden="true"
-            class="sc-bjfHbI iUbfsq"
+            class="sc-dIfARi dgunAK date container"
           >
             <div
-              class="sc-idXgbr kTdaNJ date container"
+              class="sc-kgTSHT deXyHd"
             >
-              <div
-                class="sc-dmctIk eXRkVq"
+              <span
+                class="sc-ezOQGI jUiNOC"
               >
-                <span
-                  class="sc-gikAfH bJDgJT"
-                >
-                  NaN Invalid Date
-                </span>
-              </div>
-              <div
-                class="sc-kgTSHT dYPYRT"
-              >
-                <span
-                  class="sc-gikAfH bJDgJT"
-                >
-                  NaN
-                </span>
-              </div>
-              <div
-                class="sc-kgTSHT dYPYRT"
-              >
-                <span
-                  class="sc-gikAfH bJDgJT"
-                >
-                  Invalid Date
-                </span>
-              </div>
+                NaN Invalid Date
+              </span>
             </div>
             <div
-              class="sc-dIfARi dFDwOP"
+              class="sc-fLcnxK fsTTzg"
             >
-              <h1
-                class="sc-cwSeag klDffp"
+              <span
+                class="sc-ezOQGI jUiNOC"
               >
-                Blog 1 
-              </h1>
+                NaN
+              </span>
             </div>
+            <div
+              class="sc-fLcnxK fsTTzg"
+            >
+              <span
+                class="sc-ezOQGI jUiNOC"
+              >
+                Invalid Date
+              </span>
+            </div>
+          </div>
+          <div
+            class="sc-hHTYSt fLfAqY"
+          >
+            <h1
+              class="sc-lllmON bhqFzd"
+            >
+              Blog 1 
+            </h1>
           </div>
         </div>
       </div>
-    </a>
-    <a
-      aria-label="St Ives  2018, 23to30 Dec, Tagged travel"
-      class="sc-iBYQkv bOutrg sc-fEXmlR dIXePG blogs-liststyles__StyledBlogCard-sc-if7ctk-1 dxPvVZ"
-      href="/blog/zxywvuts"
+    </div>
+    <div
+      class="sc-pyfCe ioMYCD"
     >
       <div
-        class="sc-ftTHYK kgGuVS"
+        class="sc-jrcTuL dUmKw"
+      />
+      <div
+        class="sc-kDvujY bOLdOS"
       >
         <div
-          class="sc-pyfCe hIuAmP"
-        />
-        <div
-          class="sc-jrcTuL bNrLFz"
+          aria-hidden="true"
+          class="sc-idXgbr gfmFsp"
         >
           <div
-            aria-hidden="true"
-            class="sc-bjfHbI iUbfsq"
+            class="sc-dIfARi dgunAK date container"
           >
             <div
-              class="sc-idXgbr kTdaNJ date container"
+              class="sc-kgTSHT deXyHd"
+            >
+              <span
+                class="sc-ezOQGI jUiNOC"
+              >
+                23-30 Dec
+              </span>
+            </div>
+            <div
+              class="sc-fLcnxK fsTTzg"
+            >
+              <span
+                class="sc-ezOQGI jUiNOC"
+              >
+                23-30
+              </span>
+            </div>
+            <div
+              class="sc-fLcnxK fsTTzg"
+            >
+              <span
+                class="sc-ezOQGI jUiNOC"
+              >
+                Dec
+              </span>
+            </div>
+          </div>
+          <div
+            class="sc-hHTYSt fLfAqY"
+          >
+            <h1
+              class="sc-lllmON bhqFzd"
+            >
+              St Ives  2018
+            </h1>
+            <div
+              class="sc-iveFHk bFdmXo"
             >
               <div
-                class="sc-dmctIk eXRkVq"
+                class="sc-ilhmMj"
               >
                 <span
-                  class="sc-gikAfH bJDgJT"
+                  class="sc-jIRcFI dKyCGb"
+                  type="travel"
                 >
-                  23-30 Dec
-                </span>
-              </div>
-              <div
-                class="sc-kgTSHT dYPYRT"
-              >
-                <span
-                  class="sc-gikAfH bJDgJT"
-                >
-                  23-30
-                </span>
-              </div>
-              <div
-                class="sc-kgTSHT dYPYRT"
-              >
-                <span
-                  class="sc-gikAfH bJDgJT"
-                >
-                  Dec
+                  Travel
                 </span>
               </div>
             </div>
+          </div>
+          <div
+            class="sc-dmctIk kewHjU"
+          >
             <div
-              class="sc-dIfARi dFDwOP"
+              class="sc-eDWCr hezuNh sc-bBABsx gJAByb"
             >
-              <h1
-                class="sc-cwSeag klDffp"
-              >
-                St Ives  2018
-              </h1>
-              <div
-                class="sc-bBABsx cunnvH"
-              >
-                <div
-                  class="sc-bYMpWt"
-                >
-                  <span
-                    class="sc-kMjNwy eqCJMi"
-                    type="travel"
-                  >
-                    Travel
-                  </span>
-                </div>
-              </div>
-            </div>
-            <div
-              class="sc-hHTYSt kttPzG"
-            >
-              <div
-                class="sc-csuSiG hrlAfi sc-fLcnxK gWRaxH"
-              >
-                <style>
-                  
+              <style>
+                
           .js .gg-image__img--hide-js {display: none;}
           .no-js .gg-image__img--hide-no-js {display: none;}
         
-                </style>
+              </style>
+              <div
+                class="sc-bqWxrE llbmDz"
+                style="padding-bottom: 100%;"
+              >
                 <div
-                  class="sc-eDWCr ehKXvD"
-                  style="padding-bottom: 100%;"
+                  class="sc-ksBlkl bneFOf"
                 >
                   <div
-                    class="sc-bqWxrE cXngGV"
+                    class="sc-ipEyDJ giwvRO sc-hBxehG larhnz"
                   >
                     <div
-                      class="sc-kDvujY dXQYaa sc-ksBlkl bJWrYm"
-                    >
-                      <div
-                        class="sc-ipEyDJ iUsWHm"
-                        style="margin-left: -0px;"
-                      />
-                    </div>
-                  </div>
-                  <div
-                    class="gg-image__img--hide-no-js"
-                  >
-                    <img
-                      alt="card"
-                      class="sc-hBxehG eeNmOb"
-                      src="https://i.imgur.com/ppPEuDs.jpg"
-                    />
-                    <img
-                      alt="card"
-                      class="sc-fnGiBr bPPEnj"
-                      src="https://i.imgur.com/ppPEuDs.jpg"
+                      class="sc-csuSiG FGYJx"
+                      style="margin-left: -0px;"
                     />
                   </div>
-                  <div
-                    class="gg-image__img--hide-js"
-                  >
-                    <img
-                      alt="card"
-                      class="sc-hBxehG kMubnv"
-                      src="https://i.imgur.com/ppPEuDs.jpg"
-                    />
-                    <img
-                      alt="card"
-                      class="sc-fnGiBr hCjKzr"
-                      src="https://i.imgur.com/ppPEuDs.jpg"
-                    />
-                  </div>
+                </div>
+                <div
+                  class="gg-image__img--hide-no-js"
+                >
+                  <img
+                    alt="card"
+                    class="sc-fnGiBr hAYXVm"
+                    src="https://i.imgur.com/ppPEuDs.jpg"
+                  />
+                  <img
+                    alt="card"
+                    class="sc-fEXmlR bJmlUm"
+                    src="https://i.imgur.com/ppPEuDs.jpg"
+                  />
+                </div>
+                <div
+                  class="gg-image__img--hide-js"
+                >
+                  <img
+                    alt="card"
+                    class="sc-fnGiBr hImQle"
+                    src="https://i.imgur.com/ppPEuDs.jpg"
+                  />
+                  <img
+                    alt="card"
+                    class="sc-fEXmlR buIvvi"
+                    src="https://i.imgur.com/ppPEuDs.jpg"
+                  />
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </a>
-    <a
-      aria-label="Untitled blog (DELETED), 23to30 Dec, Tagged travel"
-      class="sc-iBYQkv bOutrg sc-fEXmlR dIXePG blogs-liststyles__StyledBlogCard-sc-if7ctk-1 dxPvVZ"
-      href="/blog/mndyd8"
+    </div>
+    <div
+      class="sc-pyfCe ioMYCD"
     >
       <div
-        class="sc-ftTHYK kgGuVS"
+        class="sc-jrcTuL dUmKw"
+      />
+      <div
+        class="sc-kDvujY bOLdOS"
       >
         <div
-          class="sc-pyfCe hIuAmP"
-        />
-        <div
-          class="sc-jrcTuL bNrLFz"
+          aria-hidden="true"
+          class="sc-idXgbr gfmFsp"
         >
           <div
-            aria-hidden="true"
-            class="sc-bjfHbI iUbfsq"
+            class="sc-dIfARi dgunAK date container"
           >
             <div
-              class="sc-idXgbr kTdaNJ date container"
+              class="sc-kgTSHT deXyHd"
+            >
+              <span
+                class="sc-ezOQGI jUiNOC"
+              >
+                23-30 Dec
+              </span>
+            </div>
+            <div
+              class="sc-fLcnxK fsTTzg"
+            >
+              <span
+                class="sc-ezOQGI jUiNOC"
+              >
+                23-30
+              </span>
+            </div>
+            <div
+              class="sc-fLcnxK fsTTzg"
+            >
+              <span
+                class="sc-ezOQGI jUiNOC"
+              >
+                Dec
+              </span>
+            </div>
+          </div>
+          <div
+            class="sc-hHTYSt fLfAqY"
+          >
+            <h1
+              class="sc-lllmON bhqFzd"
+            >
+              Untitled blog (DELETED)
+            </h1>
+            <div
+              class="sc-iveFHk bFdmXo"
             >
               <div
-                class="sc-dmctIk eXRkVq"
+                class="sc-ilhmMj"
               >
                 <span
-                  class="sc-gikAfH bJDgJT"
+                  class="sc-jIRcFI dKyCGb"
+                  type="travel"
                 >
-                  23-30 Dec
-                </span>
-              </div>
-              <div
-                class="sc-kgTSHT dYPYRT"
-              >
-                <span
-                  class="sc-gikAfH bJDgJT"
-                >
-                  23-30
-                </span>
-              </div>
-              <div
-                class="sc-kgTSHT dYPYRT"
-              >
-                <span
-                  class="sc-gikAfH bJDgJT"
-                >
-                  Dec
+                  Travel
                 </span>
               </div>
             </div>
+          </div>
+          <div
+            class="sc-dmctIk kewHjU"
+          >
             <div
-              class="sc-dIfARi dFDwOP"
+              class="sc-eDWCr hezuNh sc-bBABsx gJAByb"
             >
-              <h1
-                class="sc-cwSeag klDffp"
-              >
-                Untitled blog (DELETED)
-              </h1>
-              <div
-                class="sc-bBABsx cunnvH"
-              >
-                <div
-                  class="sc-bYMpWt"
-                >
-                  <span
-                    class="sc-kMjNwy eqCJMi"
-                    type="travel"
-                  >
-                    Travel
-                  </span>
-                </div>
-              </div>
-            </div>
-            <div
-              class="sc-hHTYSt kttPzG"
-            >
-              <div
-                class="sc-csuSiG hrlAfi sc-fLcnxK gWRaxH"
-              >
-                <style>
-                  
+              <style>
+                
           .js .gg-image__img--hide-js {display: none;}
           .no-js .gg-image__img--hide-no-js {display: none;}
         
-                </style>
+              </style>
+              <div
+                class="sc-bqWxrE llbmDz"
+                style="padding-bottom: 100%;"
+              >
                 <div
-                  class="sc-eDWCr ehKXvD"
-                  style="padding-bottom: 100%;"
+                  class="sc-ksBlkl bneFOf"
                 >
                   <div
-                    class="sc-bqWxrE cXngGV"
+                    class="sc-ipEyDJ giwvRO sc-hBxehG larhnz"
                   >
                     <div
-                      class="sc-kDvujY dXQYaa sc-ksBlkl bJWrYm"
-                    >
-                      <div
-                        class="sc-ipEyDJ iUsWHm"
-                        style="margin-left: -0px;"
-                      />
-                    </div>
-                  </div>
-                  <div
-                    class="gg-image__img--hide-no-js"
-                  >
-                    <img
-                      alt="card"
-                      class="sc-hBxehG eeNmOb"
-                      src="https://i.imgur.com/ppPEuDs.jpg"
-                    />
-                    <img
-                      alt="card"
-                      class="sc-fnGiBr bPPEnj"
-                      src="https://i.imgur.com/ppPEuDs.jpg"
+                      class="sc-csuSiG FGYJx"
+                      style="margin-left: -0px;"
                     />
                   </div>
-                  <div
-                    class="gg-image__img--hide-js"
-                  >
-                    <img
-                      alt="card"
-                      class="sc-hBxehG kMubnv"
-                      src="https://i.imgur.com/ppPEuDs.jpg"
-                    />
-                    <img
-                      alt="card"
-                      class="sc-fnGiBr hCjKzr"
-                      src="https://i.imgur.com/ppPEuDs.jpg"
-                    />
-                  </div>
+                </div>
+                <div
+                  class="gg-image__img--hide-no-js"
+                >
+                  <img
+                    alt="card"
+                    class="sc-fnGiBr hAYXVm"
+                    src="https://i.imgur.com/ppPEuDs.jpg"
+                  />
+                  <img
+                    alt="card"
+                    class="sc-fEXmlR bJmlUm"
+                    src="https://i.imgur.com/ppPEuDs.jpg"
+                  />
+                </div>
+                <div
+                  class="gg-image__img--hide-js"
+                >
+                  <img
+                    alt="card"
+                    class="sc-fnGiBr hImQle"
+                    src="https://i.imgur.com/ppPEuDs.jpg"
+                  />
+                  <img
+                    alt="card"
+                    class="sc-fEXmlR buIvvi"
+                    src="https://i.imgur.com/ppPEuDs.jpg"
+                  />
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </a>
+    </div>
   </div>
 </div>
 `;
@@ -758,338 +716,320 @@ exports[`<BlogsList /> Should render correctly with custom className 1`] = `
   <div
     class="test-custom-classname"
   >
-    <a
-      aria-label="Blog 1 , NaN Invalid Date"
-      class="sc-iBYQkv bOutrg sc-fEXmlR dIXePG blogs-liststyles__StyledBlogCard-sc-if7ctk-1 dxPvVZ"
-      href="/blog/asdfg"
+    <div
+      class="sc-pyfCe ioMYCD"
     >
       <div
-        class="sc-ftTHYK kgGuVS"
+        class="sc-jrcTuL dUmKw"
+      />
+      <div
+        class="sc-kDvujY bOLdOS"
       >
         <div
-          class="sc-pyfCe hIuAmP"
-        />
-        <div
-          class="sc-jrcTuL bNrLFz"
+          aria-hidden="true"
+          class="sc-idXgbr gfmFsp"
         >
           <div
-            aria-hidden="true"
-            class="sc-bjfHbI iUbfsq"
+            class="sc-dIfARi dgunAK date container"
           >
             <div
-              class="sc-idXgbr kTdaNJ date container"
+              class="sc-kgTSHT deXyHd"
             >
-              <div
-                class="sc-dmctIk eXRkVq"
+              <span
+                class="sc-ezOQGI jUiNOC"
               >
-                <span
-                  class="sc-gikAfH bJDgJT"
-                >
-                  NaN Invalid Date
-                </span>
-              </div>
-              <div
-                class="sc-kgTSHT dYPYRT"
-              >
-                <span
-                  class="sc-gikAfH bJDgJT"
-                >
-                  NaN
-                </span>
-              </div>
-              <div
-                class="sc-kgTSHT dYPYRT"
-              >
-                <span
-                  class="sc-gikAfH bJDgJT"
-                >
-                  Invalid Date
-                </span>
-              </div>
+                NaN Invalid Date
+              </span>
             </div>
             <div
-              class="sc-dIfARi dFDwOP"
+              class="sc-fLcnxK fsTTzg"
             >
-              <h1
-                class="sc-cwSeag klDffp"
+              <span
+                class="sc-ezOQGI jUiNOC"
               >
-                Blog 1 
-              </h1>
+                NaN
+              </span>
             </div>
+            <div
+              class="sc-fLcnxK fsTTzg"
+            >
+              <span
+                class="sc-ezOQGI jUiNOC"
+              >
+                Invalid Date
+              </span>
+            </div>
+          </div>
+          <div
+            class="sc-hHTYSt fLfAqY"
+          >
+            <h1
+              class="sc-lllmON bhqFzd"
+            >
+              Blog 1 
+            </h1>
           </div>
         </div>
       </div>
-    </a>
-    <a
-      aria-label="St Ives  2018, 23to30 Dec, Tagged travel"
-      class="sc-iBYQkv bOutrg sc-fEXmlR dIXePG blogs-liststyles__StyledBlogCard-sc-if7ctk-1 dxPvVZ"
-      href="/blog/zxywvuts"
+    </div>
+    <div
+      class="sc-pyfCe ioMYCD"
     >
       <div
-        class="sc-ftTHYK kgGuVS"
+        class="sc-jrcTuL dUmKw"
+      />
+      <div
+        class="sc-kDvujY bOLdOS"
       >
         <div
-          class="sc-pyfCe hIuAmP"
-        />
-        <div
-          class="sc-jrcTuL bNrLFz"
+          aria-hidden="true"
+          class="sc-idXgbr gfmFsp"
         >
           <div
-            aria-hidden="true"
-            class="sc-bjfHbI iUbfsq"
+            class="sc-dIfARi dgunAK date container"
           >
             <div
-              class="sc-idXgbr kTdaNJ date container"
+              class="sc-kgTSHT deXyHd"
+            >
+              <span
+                class="sc-ezOQGI jUiNOC"
+              >
+                23-30 Dec
+              </span>
+            </div>
+            <div
+              class="sc-fLcnxK fsTTzg"
+            >
+              <span
+                class="sc-ezOQGI jUiNOC"
+              >
+                23-30
+              </span>
+            </div>
+            <div
+              class="sc-fLcnxK fsTTzg"
+            >
+              <span
+                class="sc-ezOQGI jUiNOC"
+              >
+                Dec
+              </span>
+            </div>
+          </div>
+          <div
+            class="sc-hHTYSt fLfAqY"
+          >
+            <h1
+              class="sc-lllmON bhqFzd"
+            >
+              St Ives  2018
+            </h1>
+            <div
+              class="sc-iveFHk bFdmXo"
             >
               <div
-                class="sc-dmctIk eXRkVq"
+                class="sc-ilhmMj"
               >
                 <span
-                  class="sc-gikAfH bJDgJT"
+                  class="sc-jIRcFI dKyCGb"
+                  type="travel"
                 >
-                  23-30 Dec
-                </span>
-              </div>
-              <div
-                class="sc-kgTSHT dYPYRT"
-              >
-                <span
-                  class="sc-gikAfH bJDgJT"
-                >
-                  23-30
-                </span>
-              </div>
-              <div
-                class="sc-kgTSHT dYPYRT"
-              >
-                <span
-                  class="sc-gikAfH bJDgJT"
-                >
-                  Dec
+                  Travel
                 </span>
               </div>
             </div>
+          </div>
+          <div
+            class="sc-dmctIk kewHjU"
+          >
             <div
-              class="sc-dIfARi dFDwOP"
+              class="sc-eDWCr hezuNh sc-bBABsx gJAByb"
             >
-              <h1
-                class="sc-cwSeag klDffp"
-              >
-                St Ives  2018
-              </h1>
-              <div
-                class="sc-bBABsx cunnvH"
-              >
-                <div
-                  class="sc-bYMpWt"
-                >
-                  <span
-                    class="sc-kMjNwy eqCJMi"
-                    type="travel"
-                  >
-                    Travel
-                  </span>
-                </div>
-              </div>
-            </div>
-            <div
-              class="sc-hHTYSt kttPzG"
-            >
-              <div
-                class="sc-csuSiG hrlAfi sc-fLcnxK gWRaxH"
-              >
-                <style>
-                  
+              <style>
+                
           .js .gg-image__img--hide-js {display: none;}
           .no-js .gg-image__img--hide-no-js {display: none;}
         
-                </style>
+              </style>
+              <div
+                class="sc-bqWxrE llbmDz"
+                style="padding-bottom: 100%;"
+              >
                 <div
-                  class="sc-eDWCr ehKXvD"
-                  style="padding-bottom: 100%;"
+                  class="sc-ksBlkl bneFOf"
                 >
                   <div
-                    class="sc-bqWxrE cXngGV"
+                    class="sc-ipEyDJ giwvRO sc-hBxehG larhnz"
                   >
                     <div
-                      class="sc-kDvujY dXQYaa sc-ksBlkl bJWrYm"
-                    >
-                      <div
-                        class="sc-ipEyDJ iUsWHm"
-                        style="margin-left: -0px;"
-                      />
-                    </div>
-                  </div>
-                  <div
-                    class="gg-image__img--hide-no-js"
-                  >
-                    <img
-                      alt="card"
-                      class="sc-hBxehG eeNmOb"
-                      src="https://i.imgur.com/ppPEuDs.jpg"
-                    />
-                    <img
-                      alt="card"
-                      class="sc-fnGiBr bPPEnj"
-                      src="https://i.imgur.com/ppPEuDs.jpg"
+                      class="sc-csuSiG FGYJx"
+                      style="margin-left: -0px;"
                     />
                   </div>
-                  <div
-                    class="gg-image__img--hide-js"
-                  >
-                    <img
-                      alt="card"
-                      class="sc-hBxehG kMubnv"
-                      src="https://i.imgur.com/ppPEuDs.jpg"
-                    />
-                    <img
-                      alt="card"
-                      class="sc-fnGiBr hCjKzr"
-                      src="https://i.imgur.com/ppPEuDs.jpg"
-                    />
-                  </div>
+                </div>
+                <div
+                  class="gg-image__img--hide-no-js"
+                >
+                  <img
+                    alt="card"
+                    class="sc-fnGiBr hAYXVm"
+                    src="https://i.imgur.com/ppPEuDs.jpg"
+                  />
+                  <img
+                    alt="card"
+                    class="sc-fEXmlR bJmlUm"
+                    src="https://i.imgur.com/ppPEuDs.jpg"
+                  />
+                </div>
+                <div
+                  class="gg-image__img--hide-js"
+                >
+                  <img
+                    alt="card"
+                    class="sc-fnGiBr hImQle"
+                    src="https://i.imgur.com/ppPEuDs.jpg"
+                  />
+                  <img
+                    alt="card"
+                    class="sc-fEXmlR buIvvi"
+                    src="https://i.imgur.com/ppPEuDs.jpg"
+                  />
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </a>
-    <a
-      aria-label="Untitled blog (DELETED), 23to30 Dec, Tagged travel"
-      class="sc-iBYQkv bOutrg sc-fEXmlR dIXePG blogs-liststyles__StyledBlogCard-sc-if7ctk-1 dxPvVZ"
-      href="/blog/mndyd8"
+    </div>
+    <div
+      class="sc-pyfCe ioMYCD"
     >
       <div
-        class="sc-ftTHYK kgGuVS"
+        class="sc-jrcTuL dUmKw"
+      />
+      <div
+        class="sc-kDvujY bOLdOS"
       >
         <div
-          class="sc-pyfCe hIuAmP"
-        />
-        <div
-          class="sc-jrcTuL bNrLFz"
+          aria-hidden="true"
+          class="sc-idXgbr gfmFsp"
         >
           <div
-            aria-hidden="true"
-            class="sc-bjfHbI iUbfsq"
+            class="sc-dIfARi dgunAK date container"
           >
             <div
-              class="sc-idXgbr kTdaNJ date container"
+              class="sc-kgTSHT deXyHd"
+            >
+              <span
+                class="sc-ezOQGI jUiNOC"
+              >
+                23-30 Dec
+              </span>
+            </div>
+            <div
+              class="sc-fLcnxK fsTTzg"
+            >
+              <span
+                class="sc-ezOQGI jUiNOC"
+              >
+                23-30
+              </span>
+            </div>
+            <div
+              class="sc-fLcnxK fsTTzg"
+            >
+              <span
+                class="sc-ezOQGI jUiNOC"
+              >
+                Dec
+              </span>
+            </div>
+          </div>
+          <div
+            class="sc-hHTYSt fLfAqY"
+          >
+            <h1
+              class="sc-lllmON bhqFzd"
+            >
+              Untitled blog (DELETED)
+            </h1>
+            <div
+              class="sc-iveFHk bFdmXo"
             >
               <div
-                class="sc-dmctIk eXRkVq"
+                class="sc-ilhmMj"
               >
                 <span
-                  class="sc-gikAfH bJDgJT"
+                  class="sc-jIRcFI dKyCGb"
+                  type="travel"
                 >
-                  23-30 Dec
-                </span>
-              </div>
-              <div
-                class="sc-kgTSHT dYPYRT"
-              >
-                <span
-                  class="sc-gikAfH bJDgJT"
-                >
-                  23-30
-                </span>
-              </div>
-              <div
-                class="sc-kgTSHT dYPYRT"
-              >
-                <span
-                  class="sc-gikAfH bJDgJT"
-                >
-                  Dec
+                  Travel
                 </span>
               </div>
             </div>
+          </div>
+          <div
+            class="sc-dmctIk kewHjU"
+          >
             <div
-              class="sc-dIfARi dFDwOP"
+              class="sc-eDWCr hezuNh sc-bBABsx gJAByb"
             >
-              <h1
-                class="sc-cwSeag klDffp"
-              >
-                Untitled blog (DELETED)
-              </h1>
-              <div
-                class="sc-bBABsx cunnvH"
-              >
-                <div
-                  class="sc-bYMpWt"
-                >
-                  <span
-                    class="sc-kMjNwy eqCJMi"
-                    type="travel"
-                  >
-                    Travel
-                  </span>
-                </div>
-              </div>
-            </div>
-            <div
-              class="sc-hHTYSt kttPzG"
-            >
-              <div
-                class="sc-csuSiG hrlAfi sc-fLcnxK gWRaxH"
-              >
-                <style>
-                  
+              <style>
+                
           .js .gg-image__img--hide-js {display: none;}
           .no-js .gg-image__img--hide-no-js {display: none;}
         
-                </style>
+              </style>
+              <div
+                class="sc-bqWxrE llbmDz"
+                style="padding-bottom: 100%;"
+              >
                 <div
-                  class="sc-eDWCr ehKXvD"
-                  style="padding-bottom: 100%;"
+                  class="sc-ksBlkl bneFOf"
                 >
                   <div
-                    class="sc-bqWxrE cXngGV"
+                    class="sc-ipEyDJ giwvRO sc-hBxehG larhnz"
                   >
                     <div
-                      class="sc-kDvujY dXQYaa sc-ksBlkl bJWrYm"
-                    >
-                      <div
-                        class="sc-ipEyDJ iUsWHm"
-                        style="margin-left: -0px;"
-                      />
-                    </div>
-                  </div>
-                  <div
-                    class="gg-image__img--hide-no-js"
-                  >
-                    <img
-                      alt="card"
-                      class="sc-hBxehG eeNmOb"
-                      src="https://i.imgur.com/ppPEuDs.jpg"
-                    />
-                    <img
-                      alt="card"
-                      class="sc-fnGiBr bPPEnj"
-                      src="https://i.imgur.com/ppPEuDs.jpg"
+                      class="sc-csuSiG FGYJx"
+                      style="margin-left: -0px;"
                     />
                   </div>
-                  <div
-                    class="gg-image__img--hide-js"
-                  >
-                    <img
-                      alt="card"
-                      class="sc-hBxehG kMubnv"
-                      src="https://i.imgur.com/ppPEuDs.jpg"
-                    />
-                    <img
-                      alt="card"
-                      class="sc-fnGiBr hCjKzr"
-                      src="https://i.imgur.com/ppPEuDs.jpg"
-                    />
-                  </div>
+                </div>
+                <div
+                  class="gg-image__img--hide-no-js"
+                >
+                  <img
+                    alt="card"
+                    class="sc-fnGiBr hAYXVm"
+                    src="https://i.imgur.com/ppPEuDs.jpg"
+                  />
+                  <img
+                    alt="card"
+                    class="sc-fEXmlR bJmlUm"
+                    src="https://i.imgur.com/ppPEuDs.jpg"
+                  />
+                </div>
+                <div
+                  class="gg-image__img--hide-js"
+                >
+                  <img
+                    alt="card"
+                    class="sc-fnGiBr hImQle"
+                    src="https://i.imgur.com/ppPEuDs.jpg"
+                  />
+                  <img
+                    alt="card"
+                    class="sc-fEXmlR buIvvi"
+                    src="https://i.imgur.com/ppPEuDs.jpg"
+                  />
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </a>
+    </div>
   </div>
 </div>
 `;
@@ -1097,70 +1037,64 @@ exports[`<BlogsList /> Should render correctly with custom className 1`] = `
 exports[`<BlogsList /> Should render correctly with deleteBlog function 1`] = `
 <div>
   <div>
-    <a
-      aria-label="Blog 1 , NaN Invalid Date"
-      class="sc-iBYQkv bOutrg sc-fEXmlR dIXePG blogs-liststyles__StyledBlogCard-sc-if7ctk-1 WAJUB"
-      href="/blog/asdfg"
+    <div
+      class="sc-pyfCe ioMYCD"
     >
       <div
-        class="sc-ftTHYK kgGuVS"
+        class="sc-jrcTuL dUmKw"
+      />
+      <div
+        class="sc-kDvujY bOLdOS"
       >
         <div
-          class="sc-pyfCe hIuAmP"
-        />
-        <div
-          class="sc-jrcTuL bNrLFz"
+          aria-hidden="true"
+          class="sc-idXgbr gfmFsp"
         >
           <div
-            aria-hidden="true"
-            class="sc-bjfHbI iUbfsq"
+            class="sc-dIfARi dgunAK date container"
           >
             <div
-              class="sc-idXgbr kTdaNJ date container"
+              class="sc-kgTSHT deXyHd"
             >
-              <div
-                class="sc-dmctIk eXRkVq"
+              <span
+                class="sc-ezOQGI jUiNOC"
               >
-                <span
-                  class="sc-gikAfH bJDgJT"
-                >
-                  NaN Invalid Date
-                </span>
-              </div>
-              <div
-                class="sc-kgTSHT dYPYRT"
-              >
-                <span
-                  class="sc-gikAfH bJDgJT"
-                >
-                  NaN
-                </span>
-              </div>
-              <div
-                class="sc-kgTSHT dYPYRT"
-              >
-                <span
-                  class="sc-gikAfH bJDgJT"
-                >
-                  Invalid Date
-                </span>
-              </div>
+                NaN Invalid Date
+              </span>
             </div>
             <div
-              class="sc-dIfARi dFDwOP"
+              class="sc-fLcnxK fsTTzg"
             >
-              <h1
-                class="sc-cwSeag klDffp"
+              <span
+                class="sc-ezOQGI jUiNOC"
               >
-                Blog 1 
-              </h1>
+                NaN
+              </span>
             </div>
+            <div
+              class="sc-fLcnxK fsTTzg"
+            >
+              <span
+                class="sc-ezOQGI jUiNOC"
+              >
+                Invalid Date
+              </span>
+            </div>
+          </div>
+          <div
+            class="sc-hHTYSt fLfAqY"
+          >
+            <h1
+              class="sc-lllmON bhqFzd"
+            >
+              Blog 1 
+            </h1>
           </div>
         </div>
       </div>
-    </a>
+    </div>
     <button
-      class="sc-dkrFOg gmDzvV blogs-liststyles__StyledButton-sc-if7ctk-2 gQJRQv"
+      class="sc-dkrFOg jBUywy blogs-liststyles__StyledButton-sc-if7ctk-2 gQJRQv"
       type="button"
     >
       <span
@@ -1169,143 +1103,137 @@ exports[`<BlogsList /> Should render correctly with deleteBlog function 1`] = `
         Delete blog
       </span>
     </button>
-    <a
-      aria-label="St Ives  2018, 23to30 Dec, Tagged travel"
-      class="sc-iBYQkv bOutrg sc-fEXmlR dIXePG blogs-liststyles__StyledBlogCard-sc-if7ctk-1 WAJUB"
-      href="/blog/zxywvuts"
+    <div
+      class="sc-pyfCe ioMYCD"
     >
       <div
-        class="sc-ftTHYK kgGuVS"
+        class="sc-jrcTuL dUmKw"
+      />
+      <div
+        class="sc-kDvujY bOLdOS"
       >
         <div
-          class="sc-pyfCe hIuAmP"
-        />
-        <div
-          class="sc-jrcTuL bNrLFz"
+          aria-hidden="true"
+          class="sc-idXgbr gfmFsp"
         >
           <div
-            aria-hidden="true"
-            class="sc-bjfHbI iUbfsq"
+            class="sc-dIfARi dgunAK date container"
           >
             <div
-              class="sc-idXgbr kTdaNJ date container"
+              class="sc-kgTSHT deXyHd"
+            >
+              <span
+                class="sc-ezOQGI jUiNOC"
+              >
+                23-30 Dec
+              </span>
+            </div>
+            <div
+              class="sc-fLcnxK fsTTzg"
+            >
+              <span
+                class="sc-ezOQGI jUiNOC"
+              >
+                23-30
+              </span>
+            </div>
+            <div
+              class="sc-fLcnxK fsTTzg"
+            >
+              <span
+                class="sc-ezOQGI jUiNOC"
+              >
+                Dec
+              </span>
+            </div>
+          </div>
+          <div
+            class="sc-hHTYSt fLfAqY"
+          >
+            <h1
+              class="sc-lllmON bhqFzd"
+            >
+              St Ives  2018
+            </h1>
+            <div
+              class="sc-iveFHk bFdmXo"
             >
               <div
-                class="sc-dmctIk eXRkVq"
+                class="sc-ilhmMj"
               >
                 <span
-                  class="sc-gikAfH bJDgJT"
+                  class="sc-jIRcFI dKyCGb"
+                  type="travel"
                 >
-                  23-30 Dec
-                </span>
-              </div>
-              <div
-                class="sc-kgTSHT dYPYRT"
-              >
-                <span
-                  class="sc-gikAfH bJDgJT"
-                >
-                  23-30
-                </span>
-              </div>
-              <div
-                class="sc-kgTSHT dYPYRT"
-              >
-                <span
-                  class="sc-gikAfH bJDgJT"
-                >
-                  Dec
+                  Travel
                 </span>
               </div>
             </div>
+          </div>
+          <div
+            class="sc-dmctIk kewHjU"
+          >
             <div
-              class="sc-dIfARi dFDwOP"
+              class="sc-eDWCr hezuNh sc-bBABsx gJAByb"
             >
-              <h1
-                class="sc-cwSeag klDffp"
-              >
-                St Ives  2018
-              </h1>
-              <div
-                class="sc-bBABsx cunnvH"
-              >
-                <div
-                  class="sc-bYMpWt"
-                >
-                  <span
-                    class="sc-kMjNwy eqCJMi"
-                    type="travel"
-                  >
-                    Travel
-                  </span>
-                </div>
-              </div>
-            </div>
-            <div
-              class="sc-hHTYSt kttPzG"
-            >
-              <div
-                class="sc-csuSiG hrlAfi sc-fLcnxK gWRaxH"
-              >
-                <style>
-                  
+              <style>
+                
           .js .gg-image__img--hide-js {display: none;}
           .no-js .gg-image__img--hide-no-js {display: none;}
         
-                </style>
+              </style>
+              <div
+                class="sc-bqWxrE llbmDz"
+                style="padding-bottom: 100%;"
+              >
                 <div
-                  class="sc-eDWCr ehKXvD"
-                  style="padding-bottom: 100%;"
+                  class="sc-ksBlkl bneFOf"
                 >
                   <div
-                    class="sc-bqWxrE cXngGV"
+                    class="sc-ipEyDJ giwvRO sc-hBxehG larhnz"
                   >
                     <div
-                      class="sc-kDvujY dXQYaa sc-ksBlkl bJWrYm"
-                    >
-                      <div
-                        class="sc-ipEyDJ iUsWHm"
-                        style="margin-left: -0px;"
-                      />
-                    </div>
-                  </div>
-                  <div
-                    class="gg-image__img--hide-no-js"
-                  >
-                    <img
-                      alt="card"
-                      class="sc-hBxehG eeNmOb"
-                      src="https://i.imgur.com/ppPEuDs.jpg"
-                    />
-                    <img
-                      alt="card"
-                      class="sc-fnGiBr bPPEnj"
-                      src="https://i.imgur.com/ppPEuDs.jpg"
+                      class="sc-csuSiG FGYJx"
+                      style="margin-left: -0px;"
                     />
                   </div>
-                  <div
-                    class="gg-image__img--hide-js"
-                  >
-                    <img
-                      alt="card"
-                      class="sc-hBxehG kMubnv"
-                      src="https://i.imgur.com/ppPEuDs.jpg"
-                    />
-                    <img
-                      alt="card"
-                      class="sc-fnGiBr hCjKzr"
-                      src="https://i.imgur.com/ppPEuDs.jpg"
-                    />
-                  </div>
+                </div>
+                <div
+                  class="gg-image__img--hide-no-js"
+                >
+                  <img
+                    alt="card"
+                    class="sc-fnGiBr hAYXVm"
+                    src="https://i.imgur.com/ppPEuDs.jpg"
+                  />
+                  <img
+                    alt="card"
+                    class="sc-fEXmlR bJmlUm"
+                    src="https://i.imgur.com/ppPEuDs.jpg"
+                  />
+                </div>
+                <div
+                  class="gg-image__img--hide-js"
+                >
+                  <img
+                    alt="card"
+                    class="sc-fnGiBr hImQle"
+                    src="https://i.imgur.com/ppPEuDs.jpg"
+                  />
+                  <img
+                    alt="card"
+                    class="sc-fEXmlR buIvvi"
+                    src="https://i.imgur.com/ppPEuDs.jpg"
+                  />
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </a>
+    </div>
     <button
-      class="sc-dkrFOg gmDzvV blogs-liststyles__StyledButton-sc-if7ctk-2 gQJRQv"
+      class="sc-dkrFOg jBUywy blogs-liststyles__StyledButton-sc-if7ctk-2 gQJRQv"
       type="button"
     >
       <span
@@ -1314,143 +1242,137 @@ exports[`<BlogsList /> Should render correctly with deleteBlog function 1`] = `
         Delete blog
       </span>
     </button>
-    <a
-      aria-label="Untitled blog (DELETED), 23to30 Dec, Tagged travel"
-      class="sc-iBYQkv bOutrg sc-fEXmlR dIXePG blogs-liststyles__StyledBlogCard-sc-if7ctk-1 WAJUB"
-      href="/blog/mndyd8"
+    <div
+      class="sc-pyfCe ioMYCD"
     >
       <div
-        class="sc-ftTHYK kgGuVS"
+        class="sc-jrcTuL dUmKw"
+      />
+      <div
+        class="sc-kDvujY bOLdOS"
       >
         <div
-          class="sc-pyfCe hIuAmP"
-        />
-        <div
-          class="sc-jrcTuL bNrLFz"
+          aria-hidden="true"
+          class="sc-idXgbr gfmFsp"
         >
           <div
-            aria-hidden="true"
-            class="sc-bjfHbI iUbfsq"
+            class="sc-dIfARi dgunAK date container"
           >
             <div
-              class="sc-idXgbr kTdaNJ date container"
+              class="sc-kgTSHT deXyHd"
+            >
+              <span
+                class="sc-ezOQGI jUiNOC"
+              >
+                23-30 Dec
+              </span>
+            </div>
+            <div
+              class="sc-fLcnxK fsTTzg"
+            >
+              <span
+                class="sc-ezOQGI jUiNOC"
+              >
+                23-30
+              </span>
+            </div>
+            <div
+              class="sc-fLcnxK fsTTzg"
+            >
+              <span
+                class="sc-ezOQGI jUiNOC"
+              >
+                Dec
+              </span>
+            </div>
+          </div>
+          <div
+            class="sc-hHTYSt fLfAqY"
+          >
+            <h1
+              class="sc-lllmON bhqFzd"
+            >
+              Untitled blog (DELETED)
+            </h1>
+            <div
+              class="sc-iveFHk bFdmXo"
             >
               <div
-                class="sc-dmctIk eXRkVq"
+                class="sc-ilhmMj"
               >
                 <span
-                  class="sc-gikAfH bJDgJT"
+                  class="sc-jIRcFI dKyCGb"
+                  type="travel"
                 >
-                  23-30 Dec
-                </span>
-              </div>
-              <div
-                class="sc-kgTSHT dYPYRT"
-              >
-                <span
-                  class="sc-gikAfH bJDgJT"
-                >
-                  23-30
-                </span>
-              </div>
-              <div
-                class="sc-kgTSHT dYPYRT"
-              >
-                <span
-                  class="sc-gikAfH bJDgJT"
-                >
-                  Dec
+                  Travel
                 </span>
               </div>
             </div>
+          </div>
+          <div
+            class="sc-dmctIk kewHjU"
+          >
             <div
-              class="sc-dIfARi dFDwOP"
+              class="sc-eDWCr hezuNh sc-bBABsx gJAByb"
             >
-              <h1
-                class="sc-cwSeag klDffp"
-              >
-                Untitled blog (DELETED)
-              </h1>
-              <div
-                class="sc-bBABsx cunnvH"
-              >
-                <div
-                  class="sc-bYMpWt"
-                >
-                  <span
-                    class="sc-kMjNwy eqCJMi"
-                    type="travel"
-                  >
-                    Travel
-                  </span>
-                </div>
-              </div>
-            </div>
-            <div
-              class="sc-hHTYSt kttPzG"
-            >
-              <div
-                class="sc-csuSiG hrlAfi sc-fLcnxK gWRaxH"
-              >
-                <style>
-                  
+              <style>
+                
           .js .gg-image__img--hide-js {display: none;}
           .no-js .gg-image__img--hide-no-js {display: none;}
         
-                </style>
+              </style>
+              <div
+                class="sc-bqWxrE llbmDz"
+                style="padding-bottom: 100%;"
+              >
                 <div
-                  class="sc-eDWCr ehKXvD"
-                  style="padding-bottom: 100%;"
+                  class="sc-ksBlkl bneFOf"
                 >
                   <div
-                    class="sc-bqWxrE cXngGV"
+                    class="sc-ipEyDJ giwvRO sc-hBxehG larhnz"
                   >
                     <div
-                      class="sc-kDvujY dXQYaa sc-ksBlkl bJWrYm"
-                    >
-                      <div
-                        class="sc-ipEyDJ iUsWHm"
-                        style="margin-left: -0px;"
-                      />
-                    </div>
-                  </div>
-                  <div
-                    class="gg-image__img--hide-no-js"
-                  >
-                    <img
-                      alt="card"
-                      class="sc-hBxehG eeNmOb"
-                      src="https://i.imgur.com/ppPEuDs.jpg"
-                    />
-                    <img
-                      alt="card"
-                      class="sc-fnGiBr bPPEnj"
-                      src="https://i.imgur.com/ppPEuDs.jpg"
+                      class="sc-csuSiG FGYJx"
+                      style="margin-left: -0px;"
                     />
                   </div>
-                  <div
-                    class="gg-image__img--hide-js"
-                  >
-                    <img
-                      alt="card"
-                      class="sc-hBxehG kMubnv"
-                      src="https://i.imgur.com/ppPEuDs.jpg"
-                    />
-                    <img
-                      alt="card"
-                      class="sc-fnGiBr hCjKzr"
-                      src="https://i.imgur.com/ppPEuDs.jpg"
-                    />
-                  </div>
+                </div>
+                <div
+                  class="gg-image__img--hide-no-js"
+                >
+                  <img
+                    alt="card"
+                    class="sc-fnGiBr hAYXVm"
+                    src="https://i.imgur.com/ppPEuDs.jpg"
+                  />
+                  <img
+                    alt="card"
+                    class="sc-fEXmlR bJmlUm"
+                    src="https://i.imgur.com/ppPEuDs.jpg"
+                  />
+                </div>
+                <div
+                  class="gg-image__img--hide-js"
+                >
+                  <img
+                    alt="card"
+                    class="sc-fnGiBr hImQle"
+                    src="https://i.imgur.com/ppPEuDs.jpg"
+                  />
+                  <img
+                    alt="card"
+                    class="sc-fEXmlR buIvvi"
+                    src="https://i.imgur.com/ppPEuDs.jpg"
+                  />
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </a>
+    </div>
     <button
-      class="sc-dkrFOg fjPSpx blogs-liststyles__StyledButton-sc-if7ctk-2 gQJRQv"
+      class="sc-dkrFOg gnxDVu blogs-liststyles__StyledButton-sc-if7ctk-2 gQJRQv"
       disabled=""
       type="button"
     >

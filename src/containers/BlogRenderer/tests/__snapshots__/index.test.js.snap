@@ -3,7 +3,7 @@
 exports[`<BlogRenderer /> should render correctly - index 1`] = `
 <div>
   <div
-    class="sc-cUEOzv fizLAr page-containerstyles__StyledPageContainer-sc-19l7k4-0"
+    class="sc-jOiSOi iCTOdK page-containerstyles__StyledPageContainer-sc-19l7k4-0"
     width="prose"
   >
     <div
@@ -24,7 +24,7 @@ exports[`<BlogRenderer /> should render correctly - index 1`] = `
     </div>
   </div>
   <div
-    class="sc-cjibBx FXeDp"
+    class="sc-jcMfQk fAHORx"
   >
     <style>
       .js .animated-content__wrapper--hidden {
@@ -32,7 +32,7 @@ exports[`<BlogRenderer /> should render correctly - index 1`] = `
 }
     </style>
     <div
-      class="sc-cCjUiG htyYId animated-content__wrapper--hidden"
+      class="sc-cjibBx iLaPmc animated-content__wrapper--hidden"
     >
       <div
         class="creative-commonssyles__Wrapper-sc-qff226-0 eObJgx"
@@ -56,12 +56,16 @@ exports[`<BlogRenderer /> should render correctly - index 1`] = `
              
             <a
               aria-label="Creative Commons BY-SA 3.0 (opens in a new tab)"
-              class="sc-iBYQkv jNlLug"
+              class="sc-iBYQkv jHA-DIX"
               href="https://creativecommons.org/licenses/by-sa/3.0/"
               rel="noopener noreferrer"
               target="_blank"
             >
-              Creative Commons BY-SA 3.0
+              <span
+                class="sc-eDvSVe ezgbKo"
+              >
+                Creative Commons BY-SA 3.0
+              </span>
               <div
                 class="sc-ftTHYK dbfjGz"
               >
@@ -82,10 +86,14 @@ exports[`<BlogRenderer /> should render correctly - index 1`] = `
             <br />
             If you are unsure about your right to use them please 
             <a
-              class="sc-iBYQkv jNlLug"
+              class="sc-iBYQkv jHA-DIX"
               href="/contact"
             >
-              contact me
+              <span
+                class="sc-eDvSVe ezgbKo"
+              >
+                contact me
+              </span>
             </a>
             .
           </span>
@@ -99,28 +107,32 @@ exports[`<BlogRenderer /> should render correctly - index 1`] = `
 exports[`<BlogRenderer /> should render correctly with blog 1`] = `
 <div>
   <div
-    class="sc-cUEOzv fizLAr page-containerstyles__StyledPageContainer-sc-19l7k4-0"
+    class="sc-jOiSOi iCTOdK page-containerstyles__StyledPageContainer-sc-19l7k4-0"
     width="prose"
   >
     <div
-      class="sc-cabOPr cxUFJc"
+      class="sc-iTFTee kmpefi"
     >
       <div
-        class="sc-gYbzsP bCTbDs"
+        class="sc-cCjUiG gIksrE"
       >
         <a
-          class="sc-iBYQkv jNlLug"
+          class="sc-iBYQkv jHA-DIX"
           href="/blogs"
         >
-          ⇠ Blogs
+          <span
+            class="sc-eDvSVe ezgbKo"
+          >
+            ⇠ Blogs
+          </span>
         </a>
       </div>
     </div>
     <div
-      class="sc-cabOPr cxUFJc"
+      class="sc-iTFTee kmpefi"
     >
       <h1
-        class="sc-bcXHqe bHgOFy sc-hhOBVt dpGXFh"
+        class="sc-bcXHqe bHgOFy sc-gYbzsP jkueZn"
       >
         St. Ives ⛵ 2018
       </h1>
@@ -139,10 +151,10 @@ exports[`<BlogRenderer /> should render correctly with blog 1`] = `
       class="blog-rendererstyles__TagList-sc-15d9dvh-2 cpiaZB"
     >
       <div
-        class="sc-iTFTee"
+        class="sc-iAEawV"
       >
         <span
-          class="sc-iAEawV buRgyr"
+          class="sc-eeMvmM koHgll"
           type="travel"
         >
           Travel
@@ -158,12 +170,16 @@ exports[`<BlogRenderer /> should render correctly with blog 1`] = `
         Some content with 
         <a
           aria-label="a link (opens in a new tab)"
-          class="sc-iBYQkv jNlLug"
+          class="sc-iBYQkv jHA-DIX"
           href="https://duckduckgo.com/"
           rel="noopener noreferrer"
           target="_blank"
         >
-          a link
+          <span
+            class="sc-eDvSVe ezgbKo"
+          >
+            a link
+          </span>
           <div
             class="sc-ftTHYK dbfjGz"
           >
@@ -185,7 +201,7 @@ exports[`<BlogRenderer /> should render correctly with blog 1`] = `
     </div>
   </div>
   <div
-    class="sc-cjibBx FXeDp"
+    class="sc-jcMfQk fAHORx"
   >
     <style>
       .js .animated-content__wrapper--hidden {
@@ -193,7 +209,7 @@ exports[`<BlogRenderer /> should render correctly with blog 1`] = `
 }
     </style>
     <div
-      class="sc-cCjUiG htyYId animated-content__wrapper--hidden"
+      class="sc-cjibBx iLaPmc animated-content__wrapper--hidden"
     >
       <div
         class="creative-commonssyles__Wrapper-sc-qff226-0 eObJgx"
@@ -217,12 +233,16 @@ exports[`<BlogRenderer /> should render correctly with blog 1`] = `
              
             <a
               aria-label="Creative Commons BY-SA 3.0 (opens in a new tab)"
-              class="sc-iBYQkv jNlLug"
+              class="sc-iBYQkv jHA-DIX"
               href="https://creativecommons.org/licenses/by-sa/3.0/"
               rel="noopener noreferrer"
               target="_blank"
             >
-              Creative Commons BY-SA 3.0
+              <span
+                class="sc-eDvSVe ezgbKo"
+              >
+                Creative Commons BY-SA 3.0
+              </span>
               <div
                 class="sc-ftTHYK dbfjGz"
               >
@@ -243,10 +263,14 @@ exports[`<BlogRenderer /> should render correctly with blog 1`] = `
             <br />
             If you are unsure about your right to use them please 
             <a
-              class="sc-iBYQkv jNlLug"
+              class="sc-iBYQkv jHA-DIX"
               href="/contact"
             >
-              contact me
+              <span
+                class="sc-eDvSVe ezgbKo"
+              >
+                contact me
+              </span>
             </a>
             .
           </span>
@@ -260,28 +284,32 @@ exports[`<BlogRenderer /> should render correctly with blog 1`] = `
 exports[`<BlogRenderer /> should render correctly with blog and admin 1`] = `
 <div>
   <div
-    class="sc-cUEOzv fizLAr page-containerstyles__StyledPageContainer-sc-19l7k4-0"
+    class="sc-jOiSOi iCTOdK page-containerstyles__StyledPageContainer-sc-19l7k4-0"
     width="prose"
   >
     <div
-      class="sc-cabOPr cxUFJc"
+      class="sc-iTFTee kmpefi"
     >
       <div
-        class="sc-gYbzsP bCTbDs"
+        class="sc-cCjUiG gIksrE"
       >
         <a
-          class="sc-iBYQkv jNlLug"
+          class="sc-iBYQkv jHA-DIX"
           href="/blogs"
         >
-          ⇠ Blogs
+          <span
+            class="sc-eDvSVe ezgbKo"
+          >
+            ⇠ Blogs
+          </span>
         </a>
       </div>
     </div>
     <div
-      class="sc-cabOPr cxUFJc"
+      class="sc-iTFTee kmpefi"
     >
       <h1
-        class="sc-bcXHqe bHgOFy sc-hhOBVt dpGXFh"
+        class="sc-bcXHqe bHgOFy sc-gYbzsP jkueZn"
       >
         St. Ives ⛵ 2018
       </h1>
@@ -300,10 +328,10 @@ exports[`<BlogRenderer /> should render correctly with blog and admin 1`] = `
       class="blog-rendererstyles__TagList-sc-15d9dvh-2 cpiaZB"
     >
       <div
-        class="sc-iTFTee"
+        class="sc-iAEawV"
       >
         <span
-          class="sc-iAEawV buRgyr"
+          class="sc-eeMvmM koHgll"
           type="travel"
         >
           Travel
@@ -319,12 +347,16 @@ exports[`<BlogRenderer /> should render correctly with blog and admin 1`] = `
         Some content with 
         <a
           aria-label="a link (opens in a new tab)"
-          class="sc-iBYQkv jNlLug"
+          class="sc-iBYQkv jHA-DIX"
           href="https://duckduckgo.com/"
           rel="noopener noreferrer"
           target="_blank"
         >
-          a link
+          <span
+            class="sc-eDvSVe ezgbKo"
+          >
+            a link
+          </span>
           <div
             class="sc-ftTHYK dbfjGz"
           >
@@ -359,7 +391,7 @@ exports[`<BlogRenderer /> should render correctly with blog and admin 1`] = `
     </div>
   </div>
   <div
-    class="sc-cjibBx FXeDp"
+    class="sc-jcMfQk fAHORx"
   >
     <style>
       .js .animated-content__wrapper--hidden {
@@ -367,7 +399,7 @@ exports[`<BlogRenderer /> should render correctly with blog and admin 1`] = `
 }
     </style>
     <div
-      class="sc-cCjUiG htyYId animated-content__wrapper--hidden"
+      class="sc-cjibBx iLaPmc animated-content__wrapper--hidden"
     >
       <div
         class="creative-commonssyles__Wrapper-sc-qff226-0 eObJgx"
@@ -391,12 +423,16 @@ exports[`<BlogRenderer /> should render correctly with blog and admin 1`] = `
              
             <a
               aria-label="Creative Commons BY-SA 3.0 (opens in a new tab)"
-              class="sc-iBYQkv jNlLug"
+              class="sc-iBYQkv jHA-DIX"
               href="https://creativecommons.org/licenses/by-sa/3.0/"
               rel="noopener noreferrer"
               target="_blank"
             >
-              Creative Commons BY-SA 3.0
+              <span
+                class="sc-eDvSVe ezgbKo"
+              >
+                Creative Commons BY-SA 3.0
+              </span>
               <div
                 class="sc-ftTHYK dbfjGz"
               >
@@ -417,10 +453,14 @@ exports[`<BlogRenderer /> should render correctly with blog and admin 1`] = `
             <br />
             If you are unsure about your right to use them please 
             <a
-              class="sc-iBYQkv jNlLug"
+              class="sc-iBYQkv jHA-DIX"
               href="/contact"
             >
-              contact me
+              <span
+                class="sc-eDvSVe ezgbKo"
+              >
+                contact me
+              </span>
             </a>
             .
           </span>
@@ -434,14 +474,14 @@ exports[`<BlogRenderer /> should render correctly with blog and admin 1`] = `
 exports[`<BlogRenderer /> should render correctly with blog load error 1`] = `
 <div>
   <div
-    class="sc-cUEOzv fizLAr page-containerstyles__StyledPageContainer-sc-19l7k4-0"
+    class="sc-jOiSOi iCTOdK page-containerstyles__StyledPageContainer-sc-19l7k4-0"
     width="prose"
   >
     <span
       class="sc-gikAfH buRiqg"
     >
       <span
-        class="sc-eeMvmM kyCQJh"
+        class="sc-cUEOzv igGDlC"
       >
         This blog couldn't be loaded
         <br />
@@ -476,7 +516,7 @@ exports[`<BlogRenderer /> should render correctly with blog load error 1`] = `
     </div>
   </div>
   <div
-    class="sc-cjibBx FXeDp"
+    class="sc-jcMfQk fAHORx"
   >
     <style>
       .js .animated-content__wrapper--hidden {
@@ -484,7 +524,7 @@ exports[`<BlogRenderer /> should render correctly with blog load error 1`] = `
 }
     </style>
     <div
-      class="sc-cCjUiG htyYId animated-content__wrapper--hidden"
+      class="sc-cjibBx iLaPmc animated-content__wrapper--hidden"
     >
       <div
         class="creative-commonssyles__Wrapper-sc-qff226-0 eObJgx"
@@ -508,12 +548,16 @@ exports[`<BlogRenderer /> should render correctly with blog load error 1`] = `
              
             <a
               aria-label="Creative Commons BY-SA 3.0 (opens in a new tab)"
-              class="sc-iBYQkv jNlLug"
+              class="sc-iBYQkv jHA-DIX"
               href="https://creativecommons.org/licenses/by-sa/3.0/"
               rel="noopener noreferrer"
               target="_blank"
             >
-              Creative Commons BY-SA 3.0
+              <span
+                class="sc-eDvSVe ezgbKo"
+              >
+                Creative Commons BY-SA 3.0
+              </span>
               <div
                 class="sc-ftTHYK dbfjGz"
               >
@@ -534,10 +578,14 @@ exports[`<BlogRenderer /> should render correctly with blog load error 1`] = `
             <br />
             If you are unsure about your right to use them please 
             <a
-              class="sc-iBYQkv jNlLug"
+              class="sc-iBYQkv jHA-DIX"
               href="/contact"
             >
-              contact me
+              <span
+                class="sc-eDvSVe ezgbKo"
+              >
+                contact me
+              </span>
             </a>
             .
           </span>
@@ -551,7 +599,7 @@ exports[`<BlogRenderer /> should render correctly with blog load error 1`] = `
 exports[`<BlogRenderer /> should render correctly with initial state 1`] = `
 <div>
   <div
-    class="sc-cUEOzv fizLAr page-containerstyles__StyledPageContainer-sc-19l7k4-0"
+    class="sc-jOiSOi iCTOdK page-containerstyles__StyledPageContainer-sc-19l7k4-0"
     width="prose"
   >
     <div
@@ -572,7 +620,7 @@ exports[`<BlogRenderer /> should render correctly with initial state 1`] = `
     </div>
   </div>
   <div
-    class="sc-cjibBx FXeDp"
+    class="sc-jcMfQk fAHORx"
   >
     <style>
       .js .animated-content__wrapper--hidden {
@@ -580,7 +628,7 @@ exports[`<BlogRenderer /> should render correctly with initial state 1`] = `
 }
     </style>
     <div
-      class="sc-cCjUiG htyYId animated-content__wrapper--hidden"
+      class="sc-cjibBx iLaPmc animated-content__wrapper--hidden"
     >
       <div
         class="creative-commonssyles__Wrapper-sc-qff226-0 eObJgx"
@@ -604,12 +652,16 @@ exports[`<BlogRenderer /> should render correctly with initial state 1`] = `
              
             <a
               aria-label="Creative Commons BY-SA 3.0 (opens in a new tab)"
-              class="sc-iBYQkv jNlLug"
+              class="sc-iBYQkv jHA-DIX"
               href="https://creativecommons.org/licenses/by-sa/3.0/"
               rel="noopener noreferrer"
               target="_blank"
             >
-              Creative Commons BY-SA 3.0
+              <span
+                class="sc-eDvSVe ezgbKo"
+              >
+                Creative Commons BY-SA 3.0
+              </span>
               <div
                 class="sc-ftTHYK dbfjGz"
               >
@@ -630,10 +682,14 @@ exports[`<BlogRenderer /> should render correctly with initial state 1`] = `
             <br />
             If you are unsure about your right to use them please 
             <a
-              class="sc-iBYQkv jNlLug"
+              class="sc-iBYQkv jHA-DIX"
               href="/contact"
             >
-              contact me
+              <span
+                class="sc-eDvSVe ezgbKo"
+              >
+                contact me
+              </span>
             </a>
             .
           </span>
@@ -647,28 +703,32 @@ exports[`<BlogRenderer /> should render correctly with initial state 1`] = `
 exports[`<BlogRenderer /> should render correctly with ssrBlog 1`] = `
 <div>
   <div
-    class="sc-cUEOzv fizLAr page-containerstyles__StyledPageContainer-sc-19l7k4-0"
+    class="sc-jOiSOi iCTOdK page-containerstyles__StyledPageContainer-sc-19l7k4-0"
     width="prose"
   >
     <div
-      class="sc-cabOPr cxUFJc"
+      class="sc-iTFTee kmpefi"
     >
       <div
-        class="sc-gYbzsP bCTbDs"
+        class="sc-cCjUiG gIksrE"
       >
         <a
-          class="sc-iBYQkv jNlLug"
+          class="sc-iBYQkv jHA-DIX"
           href="/blogs"
         >
-          ⇠ Blogs
+          <span
+            class="sc-eDvSVe ezgbKo"
+          >
+            ⇠ Blogs
+          </span>
         </a>
       </div>
     </div>
     <div
-      class="sc-cabOPr cxUFJc"
+      class="sc-iTFTee kmpefi"
     >
       <h1
-        class="sc-bcXHqe bHgOFy sc-hhOBVt dpGXFh"
+        class="sc-bcXHqe bHgOFy sc-gYbzsP jkueZn"
       >
         St. Ives ⛵ 2018
       </h1>
@@ -687,10 +747,10 @@ exports[`<BlogRenderer /> should render correctly with ssrBlog 1`] = `
       class="blog-rendererstyles__TagList-sc-15d9dvh-2 cpiaZB"
     >
       <div
-        class="sc-iTFTee"
+        class="sc-iAEawV"
       >
         <span
-          class="sc-iAEawV buRgyr"
+          class="sc-eeMvmM koHgll"
           type="travel"
         >
           Travel
@@ -706,12 +766,16 @@ exports[`<BlogRenderer /> should render correctly with ssrBlog 1`] = `
         Some content with 
         <a
           aria-label="a link (opens in a new tab)"
-          class="sc-iBYQkv jNlLug"
+          class="sc-iBYQkv jHA-DIX"
           href="https://duckduckgo.com/"
           rel="noopener noreferrer"
           target="_blank"
         >
-          a link
+          <span
+            class="sc-eDvSVe ezgbKo"
+          >
+            a link
+          </span>
           <div
             class="sc-ftTHYK dbfjGz"
           >
@@ -733,7 +797,7 @@ exports[`<BlogRenderer /> should render correctly with ssrBlog 1`] = `
     </div>
   </div>
   <div
-    class="sc-cjibBx FXeDp"
+    class="sc-jcMfQk fAHORx"
   >
     <style>
       .js .animated-content__wrapper--hidden {
@@ -741,7 +805,7 @@ exports[`<BlogRenderer /> should render correctly with ssrBlog 1`] = `
 }
     </style>
     <div
-      class="sc-cCjUiG htyYId animated-content__wrapper--hidden"
+      class="sc-cjibBx iLaPmc animated-content__wrapper--hidden"
     >
       <div
         class="creative-commonssyles__Wrapper-sc-qff226-0 eObJgx"
@@ -765,12 +829,16 @@ exports[`<BlogRenderer /> should render correctly with ssrBlog 1`] = `
              
             <a
               aria-label="Creative Commons BY-SA 3.0 (opens in a new tab)"
-              class="sc-iBYQkv jNlLug"
+              class="sc-iBYQkv jHA-DIX"
               href="https://creativecommons.org/licenses/by-sa/3.0/"
               rel="noopener noreferrer"
               target="_blank"
             >
-              Creative Commons BY-SA 3.0
+              <span
+                class="sc-eDvSVe ezgbKo"
+              >
+                Creative Commons BY-SA 3.0
+              </span>
               <div
                 class="sc-ftTHYK dbfjGz"
               >
@@ -791,10 +859,14 @@ exports[`<BlogRenderer /> should render correctly with ssrBlog 1`] = `
             <br />
             If you are unsure about your right to use them please 
             <a
-              class="sc-iBYQkv jNlLug"
+              class="sc-iBYQkv jHA-DIX"
               href="/contact"
             >
-              contact me
+              <span
+                class="sc-eDvSVe ezgbKo"
+              >
+                contact me
+              </span>
             </a>
             .
           </span>

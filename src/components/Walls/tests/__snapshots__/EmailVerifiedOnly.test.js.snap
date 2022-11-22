@@ -12,10 +12,14 @@ exports[`<EmailVerifiedOnly /> Should render correctly 1`] = `
       You need to verify your email before completing this step.
     </h1>
     <a
-      class="sc-ftTHYK dpmGDG"
+      class="sc-ftTHYK cJafwd"
       href="/account"
     >
-      Account
+      <span
+        class="sc-jSUZER bjWoVS"
+      >
+        Account
+      </span>
     </a>
   </div>
 </div>
@@ -33,10 +37,14 @@ exports[`<EmailVerifiedOnly /> Should render correctly with user 1`] = `
       You need to verify your email before completing this step.
     </h1>
     <a
-      class="sc-ftTHYK dpmGDG"
+      class="sc-ftTHYK cJafwd"
       href="/account"
     >
-      Account
+      <span
+        class="sc-jSUZER bjWoVS"
+      >
+        Account
+      </span>
     </a>
   </div>
 </div>

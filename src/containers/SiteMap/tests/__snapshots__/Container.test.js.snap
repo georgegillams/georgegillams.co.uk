@@ -3,20 +3,20 @@
 exports[`<SiteMap /> should render correctly - index 1`] = `
 <div>
   <div
-    class="sc-fEXmlR lhvDzD page-containerstyles__StyledPageContainer-sc-19l7k4-0"
+    class="sc-bjfHbI gUxyYC page-containerstyles__StyledPageContainer-sc-19l7k4-0"
     width="default"
   >
     <div
-      class="sc-fnGiBr bfiIDr"
+      class="sc-fEXmlR rMnCl"
     >
       <h1
-        class="sc-hLBbgP dguiMA sc-csuSiG hZrmqD"
+        class="sc-iBYQkv joDGmp sc-eDWCr fRcVBw"
       >
         Site map
       </h1>
     </div>
     <div
-      class="sc-ksBlkl fhBUpU"
+      class="sc-hBxehG hEuIQR"
     >
       <style>
         .js .animated-content__wrapper--hidden {
@@ -25,13 +25,13 @@ exports[`<SiteMap /> should render correctly - index 1`] = `
 }
       </style>
       <div
-        class="sc-bqWxrE bpjCNL animated-content__wrapper--hidden"
+        class="sc-ksBlkl jMYerx animated-content__wrapper--hidden"
       >
         <div
-          class="sc-bjfHbI bBecGJ site-mapstyles__StyledSubsection-sc-13l3sqp-0 evGhsU"
+          class="sc-idXgbr bVkxoK site-mapstyles__StyledSubsection-sc-13l3sqp-0 evGhsU"
         >
           <h1
-            class="sc-jSUZER jmoeZg sc-hHTYSt heAApr"
+            class="sc-pyfCe kmuKUY sc-dmctIk hibXxV"
             id="blog-📝"
           >
             Blog 📝
@@ -40,10 +40,14 @@ exports[`<SiteMap /> should render correctly - index 1`] = `
             class="sc-bcXHqe huaqIH"
           >
             <a
-              class="sc-jrcTuL gYzYAg"
+              class="sc-eDvSVe gaQKQy"
               href="/blog"
             >
-              Blog list
+              <span
+                class="sc-kDvujY dAKIQE"
+              >
+                Blog list
+              </span>
             </a>
             <br />
             <div
@@ -99,7 +103,7 @@ exports[`<SiteMap /> should render correctly - index 1`] = `
       </div>
     </div>
     <div
-      class="sc-ksBlkl fhBUpU"
+      class="sc-hBxehG hEuIQR"
     >
       <style>
         .js .animated-content__wrapper--hidden {
@@ -108,13 +112,13 @@ exports[`<SiteMap /> should render correctly - index 1`] = `
 }
       </style>
       <div
-        class="sc-bqWxrE bpjCNL animated-content__wrapper--hidden"
+        class="sc-ksBlkl jMYerx animated-content__wrapper--hidden"
       >
         <div
-          class="sc-bjfHbI bBecGJ site-mapstyles__StyledSubsection-sc-13l3sqp-0 evGhsU"
+          class="sc-idXgbr bVkxoK site-mapstyles__StyledSubsection-sc-13l3sqp-0 evGhsU"
         >
           <h1
-            class="sc-jSUZER jmoeZg sc-hHTYSt heAApr"
+            class="sc-pyfCe kmuKUY sc-dmctIk hibXxV"
             id="photography-📷"
           >
             Photography 📷
@@ -123,17 +127,21 @@ exports[`<SiteMap /> should render correctly - index 1`] = `
             class="sc-bcXHqe huaqIH"
           >
             <a
-              class="sc-jrcTuL gYzYAg"
+              class="sc-eDvSVe gaQKQy"
               href="/photography"
             >
-              Photography
+              <span
+                class="sc-kDvujY dAKIQE"
+              >
+                Photography
+              </span>
             </a>
           </span>
         </div>
       </div>
     </div>
     <div
-      class="sc-ksBlkl fhBUpU"
+      class="sc-hBxehG hEuIQR"
     >
       <style>
         .js .animated-content__wrapper--hidden {
@@ -142,13 +150,13 @@ exports[`<SiteMap /> should render correctly - index 1`] = `
 }
       </style>
       <div
-        class="sc-bqWxrE bpjCNL animated-content__wrapper--hidden"
+        class="sc-ksBlkl jMYerx animated-content__wrapper--hidden"
       >
         <div
-          class="sc-bjfHbI bBecGJ site-mapstyles__StyledSubsection-sc-13l3sqp-0 evGhsU"
+          class="sc-idXgbr bVkxoK site-mapstyles__StyledSubsection-sc-13l3sqp-0 evGhsU"
         >
           <h1
-            class="sc-jSUZER jmoeZg sc-hHTYSt heAApr"
+            class="sc-pyfCe kmuKUY sc-dmctIk hibXxV"
             id="medals-🏅"
           >
             Medals 🏅
@@ -157,17 +165,21 @@ exports[`<SiteMap /> should render correctly - index 1`] = `
             class="sc-bcXHqe huaqIH"
           >
             <a
-              class="sc-jrcTuL gYzYAg"
+              class="sc-eDvSVe gaQKQy"
               href="/medals"
             >
-              Medals
+              <span
+                class="sc-kDvujY dAKIQE"
+              >
+                Medals
+              </span>
             </a>
           </span>
         </div>
       </div>
     </div>
     <div
-      class="sc-ksBlkl fhBUpU"
+      class="sc-hBxehG hEuIQR"
     >
       <style>
         .js .animated-content__wrapper--hidden {
@@ -176,13 +188,13 @@ exports[`<SiteMap /> should render correctly - index 1`] = `
 }
       </style>
       <div
-        class="sc-bqWxrE bpjCNL animated-content__wrapper--hidden"
+        class="sc-ksBlkl jMYerx animated-content__wrapper--hidden"
       >
         <div
-          class="sc-bjfHbI bBecGJ site-mapstyles__StyledSubsection-sc-13l3sqp-0 evGhsU"
+          class="sc-idXgbr bVkxoK site-mapstyles__StyledSubsection-sc-13l3sqp-0 evGhsU"
         >
           <h1
-            class="sc-jSUZER jmoeZg sc-hHTYSt heAApr"
+            class="sc-pyfCe kmuKUY sc-dmctIk hibXxV"
             id="work-📱"
           >
             Work 📱
@@ -191,38 +203,54 @@ exports[`<SiteMap /> should render correctly - index 1`] = `
             class="sc-bcXHqe huaqIH"
           >
             <a
-              class="sc-jrcTuL gYzYAg"
+              class="sc-eDvSVe gaQKQy"
               href="/work"
             >
-              Overview
+              <span
+                class="sc-kDvujY dAKIQE"
+              >
+                Overview
+              </span>
             </a>
             <br />
             <a
-              class="sc-jrcTuL gYzYAg"
+              class="sc-eDvSVe gaQKQy"
               href="/work/backpack"
             >
-              Backpack
+              <span
+                class="sc-kDvujY dAKIQE"
+              >
+                Backpack
+              </span>
             </a>
             <br />
             <a
-              class="sc-jrcTuL gYzYAg"
+              class="sc-eDvSVe gaQKQy"
               href="/work/degree"
             >
-              Degree
+              <span
+                class="sc-kDvujY dAKIQE"
+              >
+                Degree
+              </span>
             </a>
             <br />
             <a
-              class="sc-jrcTuL gYzYAg"
+              class="sc-eDvSVe gaQKQy"
               href="/work/epicc"
             >
-              EPICC
+              <span
+                class="sc-kDvujY dAKIQE"
+              >
+                EPICC
+              </span>
             </a>
           </span>
         </div>
       </div>
     </div>
     <div
-      class="sc-ksBlkl fhBUpU"
+      class="sc-hBxehG hEuIQR"
     >
       <style>
         .js .animated-content__wrapper--hidden {
@@ -231,13 +259,13 @@ exports[`<SiteMap /> should render correctly - index 1`] = `
 }
       </style>
       <div
-        class="sc-bqWxrE bpjCNL animated-content__wrapper--hidden"
+        class="sc-ksBlkl jMYerx animated-content__wrapper--hidden"
       >
         <div
-          class="sc-bjfHbI bBecGJ site-mapstyles__StyledSubsection-sc-13l3sqp-0 evGhsU"
+          class="sc-idXgbr bVkxoK site-mapstyles__StyledSubsection-sc-13l3sqp-0 evGhsU"
         >
           <h1
-            class="sc-jSUZER jmoeZg sc-hHTYSt heAApr"
+            class="sc-pyfCe kmuKUY sc-dmctIk hibXxV"
             id="design-🎨"
           >
             Design 🎨
@@ -246,17 +274,21 @@ exports[`<SiteMap /> should render correctly - index 1`] = `
             class="sc-bcXHqe huaqIH"
           >
             <a
-              class="sc-jrcTuL gYzYAg"
+              class="sc-eDvSVe gaQKQy"
               href="/privacy-policy"
             >
-              Privacy Policy
+              <span
+                class="sc-kDvujY dAKIQE"
+              >
+                Privacy Policy
+              </span>
             </a>
           </span>
         </div>
       </div>
     </div>
     <div
-      class="sc-ksBlkl fhBUpU"
+      class="sc-hBxehG hEuIQR"
     >
       <style>
         .js .animated-content__wrapper--hidden {
@@ -265,13 +297,13 @@ exports[`<SiteMap /> should render correctly - index 1`] = `
 }
       </style>
       <div
-        class="sc-bqWxrE bpjCNL animated-content__wrapper--hidden"
+        class="sc-ksBlkl jMYerx animated-content__wrapper--hidden"
       >
         <div
-          class="sc-bjfHbI bBecGJ site-mapstyles__StyledSubsection-sc-13l3sqp-0 evGhsU"
+          class="sc-idXgbr bVkxoK site-mapstyles__StyledSubsection-sc-13l3sqp-0 evGhsU"
         >
           <h1
-            class="sc-jSUZER jmoeZg sc-hHTYSt heAApr"
+            class="sc-pyfCe kmuKUY sc-dmctIk hibXxV"
             id="other-stuff-🤷‍♂️"
           >
             Other stuff 🤷‍♂️
@@ -280,45 +312,65 @@ exports[`<SiteMap /> should render correctly - index 1`] = `
             class="sc-bcXHqe huaqIH"
           >
             <a
-              class="sc-jrcTuL gYzYAg"
+              class="sc-eDvSVe gaQKQy"
               href="/contact"
             >
-              Contact
+              <span
+                class="sc-kDvujY dAKIQE"
+              >
+                Contact
+              </span>
             </a>
             <br />
             <a
-              class="sc-jrcTuL gYzYAg"
+              class="sc-eDvSVe gaQKQy"
               href="/support"
             >
-              Support
+              <span
+                class="sc-kDvujY dAKIQE"
+              >
+                Support
+              </span>
             </a>
             <br />
             <a
-              class="sc-jrcTuL gYzYAg"
+              class="sc-eDvSVe gaQKQy"
               href="/debug"
             >
-              Debug tools
+              <span
+                class="sc-kDvujY dAKIQE"
+              >
+                Debug tools
+              </span>
             </a>
             <br />
             <a
-              class="sc-jrcTuL gYzYAg"
+              class="sc-eDvSVe gaQKQy"
               href="/status"
             >
-              Status
+              <span
+                class="sc-kDvujY dAKIQE"
+              >
+                Status
+              </span>
             </a>
             <br />
             <a
-              class="sc-jrcTuL gYzYAg"
+              class="sc-eDvSVe gaQKQy"
               href="/coffee"
             >
-              Coffee
+              <span
+                class="sc-kDvujY dAKIQE"
+              >
+                Coffee
+              </span>
             </a>
           </span>
         </div>
       </div>
     </div>
     <div
-      class="sc-ksBlkl fhBUpU"
+      class="sc-hBxehG hEuIQR"
     >
       <style>
         .js .animated-content__wrapper--hidden {
@@ -327,13 +379,13 @@ exports[`<SiteMap /> should render correctly - index 1`] = `
 }
       </style>
       <div
-        class="sc-bqWxrE bpjCNL animated-content__wrapper--hidden"
+        class="sc-ksBlkl jMYerx animated-content__wrapper--hidden"
       >
         <div
-          class="sc-bjfHbI bBecGJ site-mapstyles__StyledSubsection-sc-13l3sqp-0 evGhsU"
+          class="sc-idXgbr bVkxoK site-mapstyles__StyledSubsection-sc-13l3sqp-0 evGhsU"
         >
           <h1
-            class="sc-jSUZER jmoeZg sc-hHTYSt heAApr"
+            class="sc-pyfCe kmuKUY sc-dmctIk hibXxV"
             id="random-🐉"
           >
             Random 🐉
@@ -343,17 +395,21 @@ exports[`<SiteMap /> should render correctly - index 1`] = `
           >
             <a
               aria-label="Robots.txt (opens in a new tab)"
-              class="sc-jrcTuL gYzYAg"
+              class="sc-eDvSVe gaQKQy"
               href="/robots.txt"
               rel="noopener noreferrer"
               target="_blank"
             >
-              Robots.txt
+              <span
+                class="sc-kDvujY dAKIQE"
+              >
+                Robots.txt
+              </span>
               <div
-                class="sc-kDvujY eqIuxE"
+                class="sc-jSUZER ddQtRO"
               >
                 <svg
-                  class="sc-pyfCe eOkUPn sc-ipEyDJ iZDePM"
+                  class="sc-hLBbgP iyAiel sc-gKPRtg dWTLyC"
                   height="18"
                   viewBox="0 0 24 24"
                   width="18"
@@ -368,17 +424,21 @@ exports[`<SiteMap /> should render correctly - index 1`] = `
             <br />
             <a
               aria-label="SiteMap.xml (opens in a new tab)"
-              class="sc-jrcTuL gYzYAg"
+              class="sc-eDvSVe gaQKQy"
               href="/sitemap.xml"
               rel="noopener noreferrer"
               target="_blank"
             >
-              SiteMap.xml
+              <span
+                class="sc-kDvujY dAKIQE"
+              >
+                SiteMap.xml
+              </span>
               <div
-                class="sc-kDvujY eqIuxE"
+                class="sc-jSUZER ddQtRO"
               >
                 <svg
-                  class="sc-pyfCe eOkUPn sc-ipEyDJ iZDePM"
+                  class="sc-hLBbgP iyAiel sc-gKPRtg dWTLyC"
                   height="18"
                   viewBox="0 0 24 24"
                   width="18"
@@ -392,24 +452,32 @@ exports[`<SiteMap /> should render correctly - index 1`] = `
             </a>
             <br />
             <a
-              class="sc-jrcTuL gYzYAg"
+              class="sc-eDvSVe gaQKQy"
               href="/404"
             >
-              404 error page - not found
+              <span
+                class="sc-kDvujY dAKIQE"
+              >
+                404 error page - not found
+              </span>
             </a>
             <br />
             <a
-              class="sc-jrcTuL gYzYAg"
+              class="sc-eDvSVe gaQKQy"
               href="/teapot"
             >
-              418 error page - I'm a teapot
+              <span
+                class="sc-kDvujY dAKIQE"
+              >
+                418 error page - I'm a teapot
+              </span>
             </a>
           </span>
         </div>
       </div>
     </div>
     <div
-      class="sc-ksBlkl fhBUpU"
+      class="sc-hBxehG hEuIQR"
     >
       <style>
         .js .animated-content__wrapper--hidden {
@@ -418,13 +486,13 @@ exports[`<SiteMap /> should render correctly - index 1`] = `
 }
       </style>
       <div
-        class="sc-bqWxrE bpjCNL animated-content__wrapper--hidden"
+        class="sc-ksBlkl jMYerx animated-content__wrapper--hidden"
       >
         <div
-          class="sc-bjfHbI bBecGJ site-mapstyles__StyledSubsection-sc-13l3sqp-0 evGhsU"
+          class="sc-idXgbr bVkxoK site-mapstyles__StyledSubsection-sc-13l3sqp-0 evGhsU"
         >
           <h1
-            class="sc-jSUZER jmoeZg sc-hHTYSt heAApr"
+            class="sc-pyfCe kmuKUY sc-dmctIk hibXxV"
             id="api"
           >
             API
@@ -433,17 +501,21 @@ exports[`<SiteMap /> should render correctly - index 1`] = `
             class="sc-bcXHqe huaqIH"
           >
             <a
-              class="sc-jrcTuL gYzYAg"
+              class="sc-eDvSVe gaQKQy"
               href="/api-docs"
             >
-              API docs
+              <span
+                class="sc-kDvujY dAKIQE"
+              >
+                API docs
+              </span>
             </a>
           </span>
         </div>
       </div>
     </div>
     <div
-      class="sc-ksBlkl fhBUpU"
+      class="sc-hBxehG hEuIQR"
     >
       <style>
         .js .animated-content__wrapper--hidden {
@@ -452,13 +524,13 @@ exports[`<SiteMap /> should render correctly - index 1`] = `
 }
       </style>
       <div
-        class="sc-bqWxrE bpjCNL animated-content__wrapper--hidden"
+        class="sc-ksBlkl jMYerx animated-content__wrapper--hidden"
       >
         <div
-          class="sc-bjfHbI bBecGJ site-mapstyles__StyledSubsection-sc-13l3sqp-0 evGhsU"
+          class="sc-idXgbr bVkxoK site-mapstyles__StyledSubsection-sc-13l3sqp-0 evGhsU"
         >
           <h1
-            class="sc-jSUZER jmoeZg sc-hHTYSt heAApr"
+            class="sc-pyfCe kmuKUY sc-dmctIk hibXxV"
             id="accounts-🔑"
           >
             Accounts 🔑
@@ -467,45 +539,65 @@ exports[`<SiteMap /> should render correctly - index 1`] = `
             class="sc-bcXHqe huaqIH"
           >
             <a
-              class="sc-jrcTuL gYzYAg"
+              class="sc-eDvSVe gaQKQy"
               href="/account"
             >
-              Account
+              <span
+                class="sc-kDvujY dAKIQE"
+              >
+                Account
+              </span>
             </a>
             <br />
             <a
-              class="sc-jrcTuL gYzYAg"
+              class="sc-eDvSVe gaQKQy"
               href="/sign-up"
             >
-              Sign up
+              <span
+                class="sc-kDvujY dAKIQE"
+              >
+                Sign up
+              </span>
             </a>
             <br />
             <a
-              class="sc-jrcTuL gYzYAg"
+              class="sc-eDvSVe gaQKQy"
               href="/login"
             >
-              Log in
+              <span
+                class="sc-kDvujY dAKIQE"
+              >
+                Log in
+              </span>
             </a>
             <br />
             <a
-              class="sc-jrcTuL gYzYAg"
+              class="sc-eDvSVe gaQKQy"
               href="/email-verification"
             >
-              Email verification
+              <span
+                class="sc-kDvujY dAKIQE"
+              >
+                Email verification
+              </span>
             </a>
             <br />
             <a
-              class="sc-jrcTuL gYzYAg"
+              class="sc-eDvSVe gaQKQy"
               href="/magic-login"
             >
-              Magic login
+              <span
+                class="sc-kDvujY dAKIQE"
+              >
+                Magic login
+              </span>
             </a>
           </span>
         </div>
       </div>
     </div>
     <div
-      class="sc-ksBlkl fhBUpU"
+      class="sc-hBxehG hEuIQR"
     >
       <style>
         .js .animated-content__wrapper--hidden {
@@ -514,13 +606,13 @@ exports[`<SiteMap /> should render correctly - index 1`] = `
 }
       </style>
       <div
-        class="sc-bqWxrE bpjCNL animated-content__wrapper--hidden"
+        class="sc-ksBlkl jMYerx animated-content__wrapper--hidden"
       >
         <div
-          class="sc-bjfHbI bBecGJ site-mapstyles__StyledSubsection-sc-13l3sqp-0 evGhsU"
+          class="sc-idXgbr bVkxoK site-mapstyles__StyledSubsection-sc-13l3sqp-0 evGhsU"
         >
           <h1
-            class="sc-jSUZER jmoeZg sc-hHTYSt heAApr"
+            class="sc-pyfCe kmuKUY sc-dmctIk hibXxV"
             id="admin-👮‍♂️"
           >
             Admin 👮‍♂️
@@ -529,52 +621,76 @@ exports[`<SiteMap /> should render correctly - index 1`] = `
             class="sc-bcXHqe huaqIH"
           >
             <a
-              class="sc-jrcTuL gYzYAg"
+              class="sc-eDvSVe gaQKQy"
               href="/admin"
             >
-              Admin navigation
+              <span
+                class="sc-kDvujY dAKIQE"
+              >
+                Admin navigation
+              </span>
             </a>
             <br />
             <a
-              class="sc-jrcTuL gYzYAg"
+              class="sc-eDvSVe gaQKQy"
               href="/blog"
             >
-              Blogs
+              <span
+                class="sc-kDvujY dAKIQE"
+              >
+                Blogs
+              </span>
             </a>
             <br />
             <a
-              class="sc-jrcTuL gYzYAg"
+              class="sc-eDvSVe gaQKQy"
               href="/admin/analytics"
             >
-              Analytics
+              <span
+                class="sc-kDvujY dAKIQE"
+              >
+                Analytics
+              </span>
             </a>
             <br />
             <a
-              class="sc-jrcTuL gYzYAg"
+              class="sc-eDvSVe gaQKQy"
               href="/admin/emails"
             >
-              Emails
+              <span
+                class="sc-kDvujY dAKIQE"
+              >
+                Emails
+              </span>
             </a>
             <br />
             <a
-              class="sc-jrcTuL gYzYAg"
+              class="sc-eDvSVe gaQKQy"
               href="/admin/notifications"
             >
-              Notifications
+              <span
+                class="sc-kDvujY dAKIQE"
+              >
+                Notifications
+              </span>
             </a>
             <br />
             <a
-              class="sc-jrcTuL gYzYAg"
+              class="sc-eDvSVe gaQKQy"
               href="/admin/users"
             >
-              Users
+              <span
+                class="sc-kDvujY dAKIQE"
+              >
+                Users
+              </span>
             </a>
           </span>
         </div>
       </div>
     </div>
     <div
-      class="sc-ksBlkl fhBUpU"
+      class="sc-hBxehG hEuIQR"
     >
       <style>
         .js .animated-content__wrapper--hidden {
@@ -583,13 +699,13 @@ exports[`<SiteMap /> should render correctly - index 1`] = `
 }
       </style>
       <div
-        class="sc-bqWxrE bpjCNL animated-content__wrapper--hidden"
+        class="sc-ksBlkl jMYerx animated-content__wrapper--hidden"
       >
         <div
-          class="sc-bjfHbI bBecGJ site-mapstyles__StyledSubsection-sc-13l3sqp-0 evGhsU"
+          class="sc-idXgbr bVkxoK site-mapstyles__StyledSubsection-sc-13l3sqp-0 evGhsU"
         >
           <h1
-            class="sc-jSUZER jmoeZg sc-hHTYSt heAApr"
+            class="sc-pyfCe kmuKUY sc-dmctIk hibXxV"
             id="redirects-👉"
           >
             Redirects 👉
@@ -599,316 +715,456 @@ exports[`<SiteMap /> should render correctly - index 1`] = `
           >
             <div>
               <a
-                class="sc-jrcTuL gYzYAg"
+                class="sc-eDvSVe gaQKQy"
                 href="/codebase"
               >
-                /codebase ⇒ https://github.com/georgegillams/georgegillams.co.uk
+                <span
+                  class="sc-kDvujY dAKIQE"
+                >
+                  /codebase ⇒ https://github.com/georgegillams/georgegillams.co.uk
+                </span>
               </a>
               <br />
             </div>
             <div>
               <a
-                class="sc-jrcTuL gYzYAg"
+                class="sc-eDvSVe gaQKQy"
                 href="/copyright"
               >
-                /copyright ⇒ https://creativecommons.org/licenses/by-sa/3.0/
+                <span
+                  class="sc-kDvujY dAKIQE"
+                >
+                  /copyright ⇒ https://creativecommons.org/licenses/by-sa/3.0/
+                </span>
               </a>
               <br />
             </div>
             <div>
               <a
-                class="sc-jrcTuL gYzYAg"
+                class="sc-eDvSVe gaQKQy"
                 href="/flickr"
               >
-                /flickr ⇒ https://www.flickr.com/people/georgegillams
+                <span
+                  class="sc-kDvujY dAKIQE"
+                >
+                  /flickr ⇒ https://www.flickr.com/people/georgegillams
+                </span>
               </a>
               <br />
             </div>
             <div>
               <a
-                class="sc-jrcTuL gYzYAg"
+                class="sc-eDvSVe gaQKQy"
                 href="/monzo"
               >
-                /monzo ⇒ https://join.monzo.com/r/vjd3d74
+                <span
+                  class="sc-kDvujY dAKIQE"
+                >
+                  /monzo ⇒ https://join.monzo.com/r/vjd3d74
+                </span>
               </a>
               <br />
             </div>
             <div>
               <a
-                class="sc-jrcTuL gYzYAg"
+                class="sc-eDvSVe gaQKQy"
                 href="/github"
               >
-                /github ⇒ https://github.com/georgegillams
+                <span
+                  class="sc-kDvujY dAKIQE"
+                >
+                  /github ⇒ https://github.com/georgegillams
+                </span>
               </a>
               <br />
             </div>
             <div>
               <a
-                class="sc-jrcTuL gYzYAg"
+                class="sc-eDvSVe gaQKQy"
                 href="/stackoverflow"
               >
-                /stackoverflow ⇒ https://stackoverflow.com/users/14463713/georgegillams
+                <span
+                  class="sc-kDvujY dAKIQE"
+                >
+                  /stackoverflow ⇒ https://stackoverflow.com/users/14463713/georgegillams
+                </span>
               </a>
               <br />
             </div>
             <div>
               <a
-                class="sc-jrcTuL gYzYAg"
+                class="sc-eDvSVe gaQKQy"
                 href="/gurushots"
               >
-                /gurushots ⇒ https://gurushots.com/georgegillams/photos
+                <span
+                  class="sc-kDvujY dAKIQE"
+                >
+                  /gurushots ⇒ https://gurushots.com/georgegillams/photos
+                </span>
               </a>
               <br />
             </div>
             <div>
               <a
-                class="sc-jrcTuL gYzYAg"
+                class="sc-eDvSVe gaQKQy"
                 href="/unsplash"
               >
-                /unsplash ⇒ https://unsplash.com/@georgegillams/
+                <span
+                  class="sc-kDvujY dAKIQE"
+                >
+                  /unsplash ⇒ https://unsplash.com/@georgegillams/
+                </span>
               </a>
               <br />
             </div>
             <div>
               <a
-                class="sc-jrcTuL gYzYAg"
+                class="sc-eDvSVe gaQKQy"
                 href="/strava"
               >
-                /strava ⇒ https://www.strava.com/athletes/7221483
+                <span
+                  class="sc-kDvujY dAKIQE"
+                >
+                  /strava ⇒ https://www.strava.com/athletes/7221483
+                </span>
               </a>
               <br />
             </div>
             <div>
               <a
-                class="sc-jrcTuL gYzYAg"
+                class="sc-eDvSVe gaQKQy"
                 href="/linkedin"
               >
-                /linkedin ⇒ https://www.linkedin.com/in/george-gillams-37537077
+                <span
+                  class="sc-kDvujY dAKIQE"
+                >
+                  /linkedin ⇒ https://www.linkedin.com/in/george-gillams-37537077
+                </span>
               </a>
               <br />
             </div>
             <div>
               <a
-                class="sc-jrcTuL gYzYAg"
+                class="sc-eDvSVe gaQKQy"
                 href="/twitter"
               >
-                /twitter ⇒ https://twitter.com/georgegillams
+                <span
+                  class="sc-kDvujY dAKIQE"
+                >
+                  /twitter ⇒ https://twitter.com/georgegillams
+                </span>
               </a>
               <br />
             </div>
             <div>
               <a
-                class="sc-jrcTuL gYzYAg"
+                class="sc-eDvSVe gaQKQy"
                 href="/spartan"
               >
-                /spartan ⇒ https://uk.spartan.com/en/race/profile/3661120
+                <span
+                  class="sc-kDvujY dAKIQE"
+                >
+                  /spartan ⇒ https://uk.spartan.com/en/race/profile/3661120
+                </span>
               </a>
               <br />
             </div>
             <div>
               <a
-                class="sc-jrcTuL gYzYAg"
+                class="sc-eDvSVe gaQKQy"
                 href="/wp-admin"
               >
-                /wp-admin ⇒ /admin
+                <span
+                  class="sc-kDvujY dAKIQE"
+                >
+                  /wp-admin ⇒ /admin
+                </span>
               </a>
               <br />
             </div>
             <div>
               <a
-                class="sc-jrcTuL gYzYAg"
+                class="sc-eDvSVe gaQKQy"
                 href="/about"
               >
-                /about ⇒ /
+                <span
+                  class="sc-kDvujY dAKIQE"
+                >
+                  /about ⇒ /
+                </span>
               </a>
               <br />
             </div>
             <div>
               <a
-                class="sc-jrcTuL gYzYAg"
+                class="sc-eDvSVe gaQKQy"
                 href="/site-map"
               >
-                /site-map ⇒ /sitemap
+                <span
+                  class="sc-kDvujY dAKIQE"
+                >
+                  /site-map ⇒ /sitemap
+                </span>
               </a>
               <br />
             </div>
             <div>
               <a
-                class="sc-jrcTuL gYzYAg"
+                class="sc-eDvSVe gaQKQy"
                 href="/about/degree"
               >
-                /about/degree ⇒ /work/degree
+                <span
+                  class="sc-kDvujY dAKIQE"
+                >
+                  /about/degree ⇒ /work/degree
+                </span>
               </a>
               <br />
             </div>
             <div>
               <a
-                class="sc-jrcTuL gYzYAg"
+                class="sc-eDvSVe gaQKQy"
                 href="/articles/tough-mudder"
               >
-                /articles/tough-mudder ⇒ /blog/tough-mudder
+                <span
+                  class="sc-kDvujY dAKIQE"
+                >
+                  /articles/tough-mudder ⇒ /blog/tough-mudder
+                </span>
               </a>
               <br />
             </div>
             <div>
               <a
-                class="sc-jrcTuL gYzYAg"
+                class="sc-eDvSVe gaQKQy"
                 href="/articles/net-neutrality"
               >
-                /articles/net-neutrality ⇒ /blog/net-neutrality
+                <span
+                  class="sc-kDvujY dAKIQE"
+                >
+                  /articles/net-neutrality ⇒ /blog/net-neutrality
+                </span>
               </a>
               <br />
             </div>
             <div>
               <a
-                class="sc-jrcTuL gYzYAg"
+                class="sc-eDvSVe gaQKQy"
                 href="/articles/vim"
               >
-                /articles/vim ⇒ /blog/vim
+                <span
+                  class="sc-kDvujY dAKIQE"
+                >
+                  /articles/vim ⇒ /blog/vim
+                </span>
               </a>
               <br />
             </div>
             <div>
               <a
-                class="sc-jrcTuL gYzYAg"
+                class="sc-eDvSVe gaQKQy"
                 href="/articles/list"
               >
-                /articles/list ⇒ /blog
+                <span
+                  class="sc-kDvujY dAKIQE"
+                >
+                  /articles/list ⇒ /blog
+                </span>
               </a>
               <br />
             </div>
             <div>
               <a
-                class="sc-jrcTuL gYzYAg"
+                class="sc-eDvSVe gaQKQy"
                 href="/articles"
               >
-                /articles ⇒ /blog
+                <span
+                  class="sc-kDvujY dAKIQE"
+                >
+                  /articles ⇒ /blog
+                </span>
               </a>
               <br />
             </div>
             <div>
               <a
-                class="sc-jrcTuL gYzYAg"
+                class="sc-eDvSVe gaQKQy"
                 href="/net-neutrality"
               >
-                /net-neutrality ⇒ /blog/net-neutrality
+                <span
+                  class="sc-kDvujY dAKIQE"
+                >
+                  /net-neutrality ⇒ /blog/net-neutrality
+                </span>
               </a>
               <br />
             </div>
             <div>
               <a
-                class="sc-jrcTuL gYzYAg"
+                class="sc-eDvSVe gaQKQy"
                 href="/work/side-projects"
               >
-                /work/side-projects ⇒ /work
+                <span
+                  class="sc-kDvujY dAKIQE"
+                >
+                  /work/side-projects ⇒ /work
+                </span>
               </a>
               <br />
             </div>
             <div>
               <a
-                class="sc-jrcTuL gYzYAg"
+                class="sc-eDvSVe gaQKQy"
                 href="/blog/view"
               >
-                /blog/view ⇒ /blog
+                <span
+                  class="sc-kDvujY dAKIQE"
+                >
+                  /blog/view ⇒ /blog
+                </span>
               </a>
               <br />
             </div>
             <div>
               <a
-                class="sc-jrcTuL gYzYAg"
+                class="sc-eDvSVe gaQKQy"
                 href="/travel"
               >
-                /travel ⇒ /blog
+                <span
+                  class="sc-kDvujY dAKIQE"
+                >
+                  /travel ⇒ /blog
+                </span>
               </a>
               <br />
             </div>
             <div>
               <a
-                class="sc-jrcTuL gYzYAg"
+                class="sc-eDvSVe gaQKQy"
                 href="/travel/list"
               >
-                /travel/list ⇒ /blog
+                <span
+                  class="sc-kDvujY dAKIQE"
+                >
+                  /travel/list ⇒ /blog
+                </span>
               </a>
               <br />
             </div>
             <div>
               <a
-                class="sc-jrcTuL gYzYAg"
+                class="sc-eDvSVe gaQKQy"
                 href="/blog/view?id=tg5x7po9"
               >
-                /blog/view?id=tg5x7po9 ⇒ /blog/tough-mudder
+                <span
+                  class="sc-kDvujY dAKIQE"
+                >
+                  /blog/view?id=tg5x7po9 ⇒ /blog/tough-mudder
+                </span>
               </a>
               <br />
             </div>
             <div>
               <a
-                class="sc-jrcTuL gYzYAg"
+                class="sc-eDvSVe gaQKQy"
                 href="/blog/view?id=lqngy"
               >
-                /blog/view?id=lqngy ⇒ /blog/lightroom-workflow
+                <span
+                  class="sc-kDvujY dAKIQE"
+                >
+                  /blog/view?id=lqngy ⇒ /blog/lightroom-workflow
+                </span>
               </a>
               <br />
             </div>
             <div>
               <a
-                class="sc-jrcTuL gYzYAg"
+                class="sc-eDvSVe gaQKQy"
                 href="/blog/view?id=w85aht"
               >
-                /blog/view?id=w85aht ⇒ /blog/net-neutrality
+                <span
+                  class="sc-kDvujY dAKIQE"
+                >
+                  /blog/view?id=w85aht ⇒ /blog/net-neutrality
+                </span>
               </a>
               <br />
             </div>
             <div>
               <a
-                class="sc-jrcTuL gYzYAg"
+                class="sc-eDvSVe gaQKQy"
                 href="/blog/view?id=azcpjh"
               >
-                /blog/view?id=azcpjh ⇒ /blog/vim
+                <span
+                  class="sc-kDvujY dAKIQE"
+                >
+                  /blog/view?id=azcpjh ⇒ /blog/vim
+                </span>
               </a>
               <br />
             </div>
             <div>
               <a
-                class="sc-jrcTuL gYzYAg"
+                class="sc-eDvSVe gaQKQy"
                 href="/blog/view?id=y77dnh"
               >
-                /blog/view?id=y77dnh ⇒ /blog/uk-bank-security
+                <span
+                  class="sc-kDvujY dAKIQE"
+                >
+                  /blog/view?id=y77dnh ⇒ /blog/uk-bank-security
+                </span>
               </a>
               <br />
             </div>
             <div>
               <a
-                class="sc-jrcTuL gYzYAg"
+                class="sc-eDvSVe gaQKQy"
                 href="/art"
               >
-                /art ⇒ /photography
+                <span
+                  class="sc-kDvujY dAKIQE"
+                >
+                  /art ⇒ /photography
+                </span>
               </a>
               <br />
             </div>
             <div>
               <a
-                class="sc-jrcTuL gYzYAg"
+                class="sc-eDvSVe gaQKQy"
                 href="/photoshop"
               >
-                /photoshop ⇒ /photography
+                <span
+                  class="sc-kDvujY dAKIQE"
+                >
+                  /photoshop ⇒ /photography
+                </span>
               </a>
               <br />
             </div>
             <div>
               <a
-                class="sc-jrcTuL gYzYAg"
+                class="sc-eDvSVe gaQKQy"
                 href="/phot"
               >
-                /phot ⇒ /photography
+                <span
+                  class="sc-kDvujY dAKIQE"
+                >
+                  /phot ⇒ /photography
+                </span>
               </a>
               <br />
             </div>
             <div>
               <a
-                class="sc-jrcTuL gYzYAg"
+                class="sc-eDvSVe gaQKQy"
                 href="/photo"
               >
-                /photo ⇒ /photography
+                <span
+                  class="sc-kDvujY dAKIQE"
+                >
+                  /photo ⇒ /photography
+                </span>
               </a>
               <br />
             </div>
@@ -923,20 +1179,20 @@ exports[`<SiteMap /> should render correctly - index 1`] = `
 exports[`<SiteMap /> should render correctly 1`] = `
 <div>
   <div
-    class="sc-fEXmlR lhvDzD page-containerstyles__StyledPageContainer-sc-19l7k4-0"
+    class="sc-bjfHbI gUxyYC page-containerstyles__StyledPageContainer-sc-19l7k4-0"
     width="default"
   >
     <div
-      class="sc-fnGiBr bfiIDr"
+      class="sc-fEXmlR rMnCl"
     >
       <h1
-        class="sc-hLBbgP dguiMA sc-csuSiG hZrmqD"
+        class="sc-iBYQkv joDGmp sc-eDWCr fRcVBw"
       >
         Site map
       </h1>
     </div>
     <div
-      class="sc-ksBlkl fhBUpU"
+      class="sc-hBxehG hEuIQR"
     >
       <style>
         .js .animated-content__wrapper--hidden {
@@ -945,13 +1201,13 @@ exports[`<SiteMap /> should render correctly 1`] = `
 }
       </style>
       <div
-        class="sc-bqWxrE bpjCNL animated-content__wrapper--hidden"
+        class="sc-ksBlkl jMYerx animated-content__wrapper--hidden"
       >
         <div
-          class="sc-bjfHbI bBecGJ site-mapstyles__StyledSubsection-sc-13l3sqp-0 evGhsU"
+          class="sc-idXgbr bVkxoK site-mapstyles__StyledSubsection-sc-13l3sqp-0 evGhsU"
         >
           <h1
-            class="sc-jSUZER jmoeZg sc-hHTYSt heAApr"
+            class="sc-pyfCe kmuKUY sc-dmctIk hibXxV"
             id="blog-📝"
           >
             Blog 📝
@@ -960,10 +1216,14 @@ exports[`<SiteMap /> should render correctly 1`] = `
             class="sc-bcXHqe huaqIH"
           >
             <a
-              class="sc-jrcTuL gYzYAg"
+              class="sc-eDvSVe gaQKQy"
               href="/blog"
             >
-              Blog list
+              <span
+                class="sc-kDvujY dAKIQE"
+              >
+                Blog list
+              </span>
             </a>
             <br />
             <div
@@ -1019,7 +1279,7 @@ exports[`<SiteMap /> should render correctly 1`] = `
       </div>
     </div>
     <div
-      class="sc-ksBlkl fhBUpU"
+      class="sc-hBxehG hEuIQR"
     >
       <style>
         .js .animated-content__wrapper--hidden {
@@ -1028,13 +1288,13 @@ exports[`<SiteMap /> should render correctly 1`] = `
 }
       </style>
       <div
-        class="sc-bqWxrE bpjCNL animated-content__wrapper--hidden"
+        class="sc-ksBlkl jMYerx animated-content__wrapper--hidden"
       >
         <div
-          class="sc-bjfHbI bBecGJ site-mapstyles__StyledSubsection-sc-13l3sqp-0 evGhsU"
+          class="sc-idXgbr bVkxoK site-mapstyles__StyledSubsection-sc-13l3sqp-0 evGhsU"
         >
           <h1
-            class="sc-jSUZER jmoeZg sc-hHTYSt heAApr"
+            class="sc-pyfCe kmuKUY sc-dmctIk hibXxV"
             id="photography-📷"
           >
             Photography 📷
@@ -1043,17 +1303,21 @@ exports[`<SiteMap /> should render correctly 1`] = `
             class="sc-bcXHqe huaqIH"
           >
             <a
-              class="sc-jrcTuL gYzYAg"
+              class="sc-eDvSVe gaQKQy"
               href="/photography"
             >
-              Photography
+              <span
+                class="sc-kDvujY dAKIQE"
+              >
+                Photography
+              </span>
             </a>
           </span>
         </div>
       </div>
     </div>
     <div
-      class="sc-ksBlkl fhBUpU"
+      class="sc-hBxehG hEuIQR"
     >
       <style>
         .js .animated-content__wrapper--hidden {
@@ -1062,13 +1326,13 @@ exports[`<SiteMap /> should render correctly 1`] = `
 }
       </style>
       <div
-        class="sc-bqWxrE bpjCNL animated-content__wrapper--hidden"
+        class="sc-ksBlkl jMYerx animated-content__wrapper--hidden"
       >
         <div
-          class="sc-bjfHbI bBecGJ site-mapstyles__StyledSubsection-sc-13l3sqp-0 evGhsU"
+          class="sc-idXgbr bVkxoK site-mapstyles__StyledSubsection-sc-13l3sqp-0 evGhsU"
         >
           <h1
-            class="sc-jSUZER jmoeZg sc-hHTYSt heAApr"
+            class="sc-pyfCe kmuKUY sc-dmctIk hibXxV"
             id="medals-🏅"
           >
             Medals 🏅
@@ -1077,17 +1341,21 @@ exports[`<SiteMap /> should render correctly 1`] = `
             class="sc-bcXHqe huaqIH"
           >
             <a
-              class="sc-jrcTuL gYzYAg"
+              class="sc-eDvSVe gaQKQy"
               href="/medals"
             >
-              Medals
+              <span
+                class="sc-kDvujY dAKIQE"
+              >
+                Medals
+              </span>
             </a>
           </span>
         </div>
       </div>
     </div>
     <div
-      class="sc-ksBlkl fhBUpU"
+      class="sc-hBxehG hEuIQR"
     >
       <style>
         .js .animated-content__wrapper--hidden {
@@ -1096,13 +1364,13 @@ exports[`<SiteMap /> should render correctly 1`] = `
 }
       </style>
       <div
-        class="sc-bqWxrE bpjCNL animated-content__wrapper--hidden"
+        class="sc-ksBlkl jMYerx animated-content__wrapper--hidden"
       >
         <div
-          class="sc-bjfHbI bBecGJ site-mapstyles__StyledSubsection-sc-13l3sqp-0 evGhsU"
+          class="sc-idXgbr bVkxoK site-mapstyles__StyledSubsection-sc-13l3sqp-0 evGhsU"
         >
           <h1
-            class="sc-jSUZER jmoeZg sc-hHTYSt heAApr"
+            class="sc-pyfCe kmuKUY sc-dmctIk hibXxV"
             id="work-📱"
           >
             Work 📱
@@ -1111,38 +1379,54 @@ exports[`<SiteMap /> should render correctly 1`] = `
             class="sc-bcXHqe huaqIH"
           >
             <a
-              class="sc-jrcTuL gYzYAg"
+              class="sc-eDvSVe gaQKQy"
               href="/work"
             >
-              Overview
+              <span
+                class="sc-kDvujY dAKIQE"
+              >
+                Overview
+              </span>
             </a>
             <br />
             <a
-              class="sc-jrcTuL gYzYAg"
+              class="sc-eDvSVe gaQKQy"
               href="/work/backpack"
             >
-              Backpack
+              <span
+                class="sc-kDvujY dAKIQE"
+              >
+                Backpack
+              </span>
             </a>
             <br />
             <a
-              class="sc-jrcTuL gYzYAg"
+              class="sc-eDvSVe gaQKQy"
               href="/work/degree"
             >
-              Degree
+              <span
+                class="sc-kDvujY dAKIQE"
+              >
+                Degree
+              </span>
             </a>
             <br />
             <a
-              class="sc-jrcTuL gYzYAg"
+              class="sc-eDvSVe gaQKQy"
               href="/work/epicc"
             >
-              EPICC
+              <span
+                class="sc-kDvujY dAKIQE"
+              >
+                EPICC
+              </span>
             </a>
           </span>
         </div>
       </div>
     </div>
     <div
-      class="sc-ksBlkl fhBUpU"
+      class="sc-hBxehG hEuIQR"
     >
       <style>
         .js .animated-content__wrapper--hidden {
@@ -1151,13 +1435,13 @@ exports[`<SiteMap /> should render correctly 1`] = `
 }
       </style>
       <div
-        class="sc-bqWxrE bpjCNL animated-content__wrapper--hidden"
+        class="sc-ksBlkl jMYerx animated-content__wrapper--hidden"
       >
         <div
-          class="sc-bjfHbI bBecGJ site-mapstyles__StyledSubsection-sc-13l3sqp-0 evGhsU"
+          class="sc-idXgbr bVkxoK site-mapstyles__StyledSubsection-sc-13l3sqp-0 evGhsU"
         >
           <h1
-            class="sc-jSUZER jmoeZg sc-hHTYSt heAApr"
+            class="sc-pyfCe kmuKUY sc-dmctIk hibXxV"
             id="design-🎨"
           >
             Design 🎨
@@ -1166,17 +1450,21 @@ exports[`<SiteMap /> should render correctly 1`] = `
             class="sc-bcXHqe huaqIH"
           >
             <a
-              class="sc-jrcTuL gYzYAg"
+              class="sc-eDvSVe gaQKQy"
               href="/privacy-policy"
             >
-              Privacy Policy
+              <span
+                class="sc-kDvujY dAKIQE"
+              >
+                Privacy Policy
+              </span>
             </a>
           </span>
         </div>
       </div>
     </div>
     <div
-      class="sc-ksBlkl fhBUpU"
+      class="sc-hBxehG hEuIQR"
     >
       <style>
         .js .animated-content__wrapper--hidden {
@@ -1185,13 +1473,13 @@ exports[`<SiteMap /> should render correctly 1`] = `
 }
       </style>
       <div
-        class="sc-bqWxrE bpjCNL animated-content__wrapper--hidden"
+        class="sc-ksBlkl jMYerx animated-content__wrapper--hidden"
       >
         <div
-          class="sc-bjfHbI bBecGJ site-mapstyles__StyledSubsection-sc-13l3sqp-0 evGhsU"
+          class="sc-idXgbr bVkxoK site-mapstyles__StyledSubsection-sc-13l3sqp-0 evGhsU"
         >
           <h1
-            class="sc-jSUZER jmoeZg sc-hHTYSt heAApr"
+            class="sc-pyfCe kmuKUY sc-dmctIk hibXxV"
             id="other-stuff-🤷‍♂️"
           >
             Other stuff 🤷‍♂️
@@ -1200,45 +1488,65 @@ exports[`<SiteMap /> should render correctly 1`] = `
             class="sc-bcXHqe huaqIH"
           >
             <a
-              class="sc-jrcTuL gYzYAg"
+              class="sc-eDvSVe gaQKQy"
               href="/contact"
             >
-              Contact
+              <span
+                class="sc-kDvujY dAKIQE"
+              >
+                Contact
+              </span>
             </a>
             <br />
             <a
-              class="sc-jrcTuL gYzYAg"
+              class="sc-eDvSVe gaQKQy"
               href="/support"
             >
-              Support
+              <span
+                class="sc-kDvujY dAKIQE"
+              >
+                Support
+              </span>
             </a>
             <br />
             <a
-              class="sc-jrcTuL gYzYAg"
+              class="sc-eDvSVe gaQKQy"
               href="/debug"
             >
-              Debug tools
+              <span
+                class="sc-kDvujY dAKIQE"
+              >
+                Debug tools
+              </span>
             </a>
             <br />
             <a
-              class="sc-jrcTuL gYzYAg"
+              class="sc-eDvSVe gaQKQy"
               href="/status"
             >
-              Status
+              <span
+                class="sc-kDvujY dAKIQE"
+              >
+                Status
+              </span>
             </a>
             <br />
             <a
-              class="sc-jrcTuL gYzYAg"
+              class="sc-eDvSVe gaQKQy"
               href="/coffee"
             >
-              Coffee
+              <span
+                class="sc-kDvujY dAKIQE"
+              >
+                Coffee
+              </span>
             </a>
           </span>
         </div>
       </div>
     </div>
     <div
-      class="sc-ksBlkl fhBUpU"
+      class="sc-hBxehG hEuIQR"
     >
       <style>
         .js .animated-content__wrapper--hidden {
@@ -1247,13 +1555,13 @@ exports[`<SiteMap /> should render correctly 1`] = `
 }
       </style>
       <div
-        class="sc-bqWxrE bpjCNL animated-content__wrapper--hidden"
+        class="sc-ksBlkl jMYerx animated-content__wrapper--hidden"
       >
         <div
-          class="sc-bjfHbI bBecGJ site-mapstyles__StyledSubsection-sc-13l3sqp-0 evGhsU"
+          class="sc-idXgbr bVkxoK site-mapstyles__StyledSubsection-sc-13l3sqp-0 evGhsU"
         >
           <h1
-            class="sc-jSUZER jmoeZg sc-hHTYSt heAApr"
+            class="sc-pyfCe kmuKUY sc-dmctIk hibXxV"
             id="random-🐉"
           >
             Random 🐉
@@ -1263,17 +1571,21 @@ exports[`<SiteMap /> should render correctly 1`] = `
           >
             <a
               aria-label="Robots.txt (opens in a new tab)"
-              class="sc-jrcTuL gYzYAg"
+              class="sc-eDvSVe gaQKQy"
               href="/robots.txt"
               rel="noopener noreferrer"
               target="_blank"
             >
-              Robots.txt
+              <span
+                class="sc-kDvujY dAKIQE"
+              >
+                Robots.txt
+              </span>
               <div
-                class="sc-kDvujY eqIuxE"
+                class="sc-jSUZER ddQtRO"
               >
                 <svg
-                  class="sc-pyfCe eOkUPn sc-ipEyDJ iZDePM"
+                  class="sc-hLBbgP iyAiel sc-gKPRtg dWTLyC"
                   height="18"
                   viewBox="0 0 24 24"
                   width="18"
@@ -1288,17 +1600,21 @@ exports[`<SiteMap /> should render correctly 1`] = `
             <br />
             <a
               aria-label="SiteMap.xml (opens in a new tab)"
-              class="sc-jrcTuL gYzYAg"
+              class="sc-eDvSVe gaQKQy"
               href="/sitemap.xml"
               rel="noopener noreferrer"
               target="_blank"
             >
-              SiteMap.xml
+              <span
+                class="sc-kDvujY dAKIQE"
+              >
+                SiteMap.xml
+              </span>
               <div
-                class="sc-kDvujY eqIuxE"
+                class="sc-jSUZER ddQtRO"
               >
                 <svg
-                  class="sc-pyfCe eOkUPn sc-ipEyDJ iZDePM"
+                  class="sc-hLBbgP iyAiel sc-gKPRtg dWTLyC"
                   height="18"
                   viewBox="0 0 24 24"
                   width="18"
@@ -1312,24 +1628,32 @@ exports[`<SiteMap /> should render correctly 1`] = `
             </a>
             <br />
             <a
-              class="sc-jrcTuL gYzYAg"
+              class="sc-eDvSVe gaQKQy"
               href="/404"
             >
-              404 error page - not found
+              <span
+                class="sc-kDvujY dAKIQE"
+              >
+                404 error page - not found
+              </span>
             </a>
             <br />
             <a
-              class="sc-jrcTuL gYzYAg"
+              class="sc-eDvSVe gaQKQy"
               href="/teapot"
             >
-              418 error page - I'm a teapot
+              <span
+                class="sc-kDvujY dAKIQE"
+              >
+                418 error page - I'm a teapot
+              </span>
             </a>
           </span>
         </div>
       </div>
     </div>
     <div
-      class="sc-ksBlkl fhBUpU"
+      class="sc-hBxehG hEuIQR"
     >
       <style>
         .js .animated-content__wrapper--hidden {
@@ -1338,13 +1662,13 @@ exports[`<SiteMap /> should render correctly 1`] = `
 }
       </style>
       <div
-        class="sc-bqWxrE bpjCNL animated-content__wrapper--hidden"
+        class="sc-ksBlkl jMYerx animated-content__wrapper--hidden"
       >
         <div
-          class="sc-bjfHbI bBecGJ site-mapstyles__StyledSubsection-sc-13l3sqp-0 evGhsU"
+          class="sc-idXgbr bVkxoK site-mapstyles__StyledSubsection-sc-13l3sqp-0 evGhsU"
         >
           <h1
-            class="sc-jSUZER jmoeZg sc-hHTYSt heAApr"
+            class="sc-pyfCe kmuKUY sc-dmctIk hibXxV"
             id="api"
           >
             API
@@ -1353,17 +1677,21 @@ exports[`<SiteMap /> should render correctly 1`] = `
             class="sc-bcXHqe huaqIH"
           >
             <a
-              class="sc-jrcTuL gYzYAg"
+              class="sc-eDvSVe gaQKQy"
               href="/api-docs"
             >
-              API docs
+              <span
+                class="sc-kDvujY dAKIQE"
+              >
+                API docs
+              </span>
             </a>
           </span>
         </div>
       </div>
     </div>
     <div
-      class="sc-ksBlkl fhBUpU"
+      class="sc-hBxehG hEuIQR"
     >
       <style>
         .js .animated-content__wrapper--hidden {
@@ -1372,13 +1700,13 @@ exports[`<SiteMap /> should render correctly 1`] = `
 }
       </style>
       <div
-        class="sc-bqWxrE bpjCNL animated-content__wrapper--hidden"
+        class="sc-ksBlkl jMYerx animated-content__wrapper--hidden"
       >
         <div
-          class="sc-bjfHbI bBecGJ site-mapstyles__StyledSubsection-sc-13l3sqp-0 evGhsU"
+          class="sc-idXgbr bVkxoK site-mapstyles__StyledSubsection-sc-13l3sqp-0 evGhsU"
         >
           <h1
-            class="sc-jSUZER jmoeZg sc-hHTYSt heAApr"
+            class="sc-pyfCe kmuKUY sc-dmctIk hibXxV"
             id="accounts-🔑"
           >
             Accounts 🔑
@@ -1387,45 +1715,65 @@ exports[`<SiteMap /> should render correctly 1`] = `
             class="sc-bcXHqe huaqIH"
           >
             <a
-              class="sc-jrcTuL gYzYAg"
+              class="sc-eDvSVe gaQKQy"
               href="/account"
             >
-              Account
+              <span
+                class="sc-kDvujY dAKIQE"
+              >
+                Account
+              </span>
             </a>
             <br />
             <a
-              class="sc-jrcTuL gYzYAg"
+              class="sc-eDvSVe gaQKQy"
               href="/sign-up"
             >
-              Sign up
+              <span
+                class="sc-kDvujY dAKIQE"
+              >
+                Sign up
+              </span>
             </a>
             <br />
             <a
-              class="sc-jrcTuL gYzYAg"
+              class="sc-eDvSVe gaQKQy"
               href="/login"
             >
-              Log in
+              <span
+                class="sc-kDvujY dAKIQE"
+              >
+                Log in
+              </span>
             </a>
             <br />
             <a
-              class="sc-jrcTuL gYzYAg"
+              class="sc-eDvSVe gaQKQy"
               href="/email-verification"
             >
-              Email verification
+              <span
+                class="sc-kDvujY dAKIQE"
+              >
+                Email verification
+              </span>
             </a>
             <br />
             <a
-              class="sc-jrcTuL gYzYAg"
+              class="sc-eDvSVe gaQKQy"
               href="/magic-login"
             >
-              Magic login
+              <span
+                class="sc-kDvujY dAKIQE"
+              >
+                Magic login
+              </span>
             </a>
           </span>
         </div>
       </div>
     </div>
     <div
-      class="sc-ksBlkl fhBUpU"
+      class="sc-hBxehG hEuIQR"
     >
       <style>
         .js .animated-content__wrapper--hidden {
@@ -1434,13 +1782,13 @@ exports[`<SiteMap /> should render correctly 1`] = `
 }
       </style>
       <div
-        class="sc-bqWxrE bpjCNL animated-content__wrapper--hidden"
+        class="sc-ksBlkl jMYerx animated-content__wrapper--hidden"
       >
         <div
-          class="sc-bjfHbI bBecGJ site-mapstyles__StyledSubsection-sc-13l3sqp-0 evGhsU"
+          class="sc-idXgbr bVkxoK site-mapstyles__StyledSubsection-sc-13l3sqp-0 evGhsU"
         >
           <h1
-            class="sc-jSUZER jmoeZg sc-hHTYSt heAApr"
+            class="sc-pyfCe kmuKUY sc-dmctIk hibXxV"
             id="admin-👮‍♂️"
           >
             Admin 👮‍♂️
@@ -1449,52 +1797,76 @@ exports[`<SiteMap /> should render correctly 1`] = `
             class="sc-bcXHqe huaqIH"
           >
             <a
-              class="sc-jrcTuL gYzYAg"
+              class="sc-eDvSVe gaQKQy"
               href="/admin"
             >
-              Admin navigation
+              <span
+                class="sc-kDvujY dAKIQE"
+              >
+                Admin navigation
+              </span>
             </a>
             <br />
             <a
-              class="sc-jrcTuL gYzYAg"
+              class="sc-eDvSVe gaQKQy"
               href="/blog"
             >
-              Blogs
+              <span
+                class="sc-kDvujY dAKIQE"
+              >
+                Blogs
+              </span>
             </a>
             <br />
             <a
-              class="sc-jrcTuL gYzYAg"
+              class="sc-eDvSVe gaQKQy"
               href="/admin/analytics"
             >
-              Analytics
+              <span
+                class="sc-kDvujY dAKIQE"
+              >
+                Analytics
+              </span>
             </a>
             <br />
             <a
-              class="sc-jrcTuL gYzYAg"
+              class="sc-eDvSVe gaQKQy"
               href="/admin/emails"
             >
-              Emails
+              <span
+                class="sc-kDvujY dAKIQE"
+              >
+                Emails
+              </span>
             </a>
             <br />
             <a
-              class="sc-jrcTuL gYzYAg"
+              class="sc-eDvSVe gaQKQy"
               href="/admin/notifications"
             >
-              Notifications
+              <span
+                class="sc-kDvujY dAKIQE"
+              >
+                Notifications
+              </span>
             </a>
             <br />
             <a
-              class="sc-jrcTuL gYzYAg"
+              class="sc-eDvSVe gaQKQy"
               href="/admin/users"
             >
-              Users
+              <span
+                class="sc-kDvujY dAKIQE"
+              >
+                Users
+              </span>
             </a>
           </span>
         </div>
       </div>
     </div>
     <div
-      class="sc-ksBlkl fhBUpU"
+      class="sc-hBxehG hEuIQR"
     >
       <style>
         .js .animated-content__wrapper--hidden {
@@ -1503,13 +1875,13 @@ exports[`<SiteMap /> should render correctly 1`] = `
 }
       </style>
       <div
-        class="sc-bqWxrE bpjCNL animated-content__wrapper--hidden"
+        class="sc-ksBlkl jMYerx animated-content__wrapper--hidden"
       >
         <div
-          class="sc-bjfHbI bBecGJ site-mapstyles__StyledSubsection-sc-13l3sqp-0 evGhsU"
+          class="sc-idXgbr bVkxoK site-mapstyles__StyledSubsection-sc-13l3sqp-0 evGhsU"
         >
           <h1
-            class="sc-jSUZER jmoeZg sc-hHTYSt heAApr"
+            class="sc-pyfCe kmuKUY sc-dmctIk hibXxV"
             id="redirects-👉"
           >
             Redirects 👉
@@ -1519,316 +1891,456 @@ exports[`<SiteMap /> should render correctly 1`] = `
           >
             <div>
               <a
-                class="sc-jrcTuL gYzYAg"
+                class="sc-eDvSVe gaQKQy"
                 href="/codebase"
               >
-                /codebase ⇒ https://github.com/georgegillams/georgegillams.co.uk
+                <span
+                  class="sc-kDvujY dAKIQE"
+                >
+                  /codebase ⇒ https://github.com/georgegillams/georgegillams.co.uk
+                </span>
               </a>
               <br />
             </div>
             <div>
               <a
-                class="sc-jrcTuL gYzYAg"
+                class="sc-eDvSVe gaQKQy"
                 href="/copyright"
               >
-                /copyright ⇒ https://creativecommons.org/licenses/by-sa/3.0/
+                <span
+                  class="sc-kDvujY dAKIQE"
+                >
+                  /copyright ⇒ https://creativecommons.org/licenses/by-sa/3.0/
+                </span>
               </a>
               <br />
             </div>
             <div>
               <a
-                class="sc-jrcTuL gYzYAg"
+                class="sc-eDvSVe gaQKQy"
                 href="/flickr"
               >
-                /flickr ⇒ https://www.flickr.com/people/georgegillams
+                <span
+                  class="sc-kDvujY dAKIQE"
+                >
+                  /flickr ⇒ https://www.flickr.com/people/georgegillams
+                </span>
               </a>
               <br />
             </div>
             <div>
               <a
-                class="sc-jrcTuL gYzYAg"
+                class="sc-eDvSVe gaQKQy"
                 href="/monzo"
               >
-                /monzo ⇒ https://join.monzo.com/r/vjd3d74
+                <span
+                  class="sc-kDvujY dAKIQE"
+                >
+                  /monzo ⇒ https://join.monzo.com/r/vjd3d74
+                </span>
               </a>
               <br />
             </div>
             <div>
               <a
-                class="sc-jrcTuL gYzYAg"
+                class="sc-eDvSVe gaQKQy"
                 href="/github"
               >
-                /github ⇒ https://github.com/georgegillams
+                <span
+                  class="sc-kDvujY dAKIQE"
+                >
+                  /github ⇒ https://github.com/georgegillams
+                </span>
               </a>
               <br />
             </div>
             <div>
               <a
-                class="sc-jrcTuL gYzYAg"
+                class="sc-eDvSVe gaQKQy"
                 href="/stackoverflow"
               >
-                /stackoverflow ⇒ https://stackoverflow.com/users/14463713/georgegillams
+                <span
+                  class="sc-kDvujY dAKIQE"
+                >
+                  /stackoverflow ⇒ https://stackoverflow.com/users/14463713/georgegillams
+                </span>
               </a>
               <br />
             </div>
             <div>
               <a
-                class="sc-jrcTuL gYzYAg"
+                class="sc-eDvSVe gaQKQy"
                 href="/gurushots"
               >
-                /gurushots ⇒ https://gurushots.com/georgegillams/photos
+                <span
+                  class="sc-kDvujY dAKIQE"
+                >
+                  /gurushots ⇒ https://gurushots.com/georgegillams/photos
+                </span>
               </a>
               <br />
             </div>
             <div>
               <a
-                class="sc-jrcTuL gYzYAg"
+                class="sc-eDvSVe gaQKQy"
                 href="/unsplash"
               >
-                /unsplash ⇒ https://unsplash.com/@georgegillams/
+                <span
+                  class="sc-kDvujY dAKIQE"
+                >
+                  /unsplash ⇒ https://unsplash.com/@georgegillams/
+                </span>
               </a>
               <br />
             </div>
             <div>
               <a
-                class="sc-jrcTuL gYzYAg"
+                class="sc-eDvSVe gaQKQy"
                 href="/strava"
               >
-                /strava ⇒ https://www.strava.com/athletes/7221483
+                <span
+                  class="sc-kDvujY dAKIQE"
+                >
+                  /strava ⇒ https://www.strava.com/athletes/7221483
+                </span>
               </a>
               <br />
             </div>
             <div>
               <a
-                class="sc-jrcTuL gYzYAg"
+                class="sc-eDvSVe gaQKQy"
                 href="/linkedin"
               >
-                /linkedin ⇒ https://www.linkedin.com/in/george-gillams-37537077
+                <span
+                  class="sc-kDvujY dAKIQE"
+                >
+                  /linkedin ⇒ https://www.linkedin.com/in/george-gillams-37537077
+                </span>
               </a>
               <br />
             </div>
             <div>
               <a
-                class="sc-jrcTuL gYzYAg"
+                class="sc-eDvSVe gaQKQy"
                 href="/twitter"
               >
-                /twitter ⇒ https://twitter.com/georgegillams
+                <span
+                  class="sc-kDvujY dAKIQE"
+                >
+                  /twitter ⇒ https://twitter.com/georgegillams
+                </span>
               </a>
               <br />
             </div>
             <div>
               <a
-                class="sc-jrcTuL gYzYAg"
+                class="sc-eDvSVe gaQKQy"
                 href="/spartan"
               >
-                /spartan ⇒ https://uk.spartan.com/en/race/profile/3661120
+                <span
+                  class="sc-kDvujY dAKIQE"
+                >
+                  /spartan ⇒ https://uk.spartan.com/en/race/profile/3661120
+                </span>
               </a>
               <br />
             </div>
             <div>
               <a
-                class="sc-jrcTuL gYzYAg"
+                class="sc-eDvSVe gaQKQy"
                 href="/wp-admin"
               >
-                /wp-admin ⇒ /admin
+                <span
+                  class="sc-kDvujY dAKIQE"
+                >
+                  /wp-admin ⇒ /admin
+                </span>
               </a>
               <br />
             </div>
             <div>
               <a
-                class="sc-jrcTuL gYzYAg"
+                class="sc-eDvSVe gaQKQy"
                 href="/about"
               >
-                /about ⇒ /
+                <span
+                  class="sc-kDvujY dAKIQE"
+                >
+                  /about ⇒ /
+                </span>
               </a>
               <br />
             </div>
             <div>
               <a
-                class="sc-jrcTuL gYzYAg"
+                class="sc-eDvSVe gaQKQy"
                 href="/site-map"
               >
-                /site-map ⇒ /sitemap
+                <span
+                  class="sc-kDvujY dAKIQE"
+                >
+                  /site-map ⇒ /sitemap
+                </span>
               </a>
               <br />
             </div>
             <div>
               <a
-                class="sc-jrcTuL gYzYAg"
+                class="sc-eDvSVe gaQKQy"
                 href="/about/degree"
               >
-                /about/degree ⇒ /work/degree
+                <span
+                  class="sc-kDvujY dAKIQE"
+                >
+                  /about/degree ⇒ /work/degree
+                </span>
               </a>
               <br />
             </div>
             <div>
               <a
-                class="sc-jrcTuL gYzYAg"
+                class="sc-eDvSVe gaQKQy"
                 href="/articles/tough-mudder"
               >
-                /articles/tough-mudder ⇒ /blog/tough-mudder
+                <span
+                  class="sc-kDvujY dAKIQE"
+                >
+                  /articles/tough-mudder ⇒ /blog/tough-mudder
+                </span>
               </a>
               <br />
             </div>
             <div>
               <a
-                class="sc-jrcTuL gYzYAg"
+                class="sc-eDvSVe gaQKQy"
                 href="/articles/net-neutrality"
               >
-                /articles/net-neutrality ⇒ /blog/net-neutrality
+                <span
+                  class="sc-kDvujY dAKIQE"
+                >
+                  /articles/net-neutrality ⇒ /blog/net-neutrality
+                </span>
               </a>
               <br />
             </div>
             <div>
               <a
-                class="sc-jrcTuL gYzYAg"
+                class="sc-eDvSVe gaQKQy"
                 href="/articles/vim"
               >
-                /articles/vim ⇒ /blog/vim
+                <span
+                  class="sc-kDvujY dAKIQE"
+                >
+                  /articles/vim ⇒ /blog/vim
+                </span>
               </a>
               <br />
             </div>
             <div>
               <a
-                class="sc-jrcTuL gYzYAg"
+                class="sc-eDvSVe gaQKQy"
                 href="/articles/list"
               >
-                /articles/list ⇒ /blog
+                <span
+                  class="sc-kDvujY dAKIQE"
+                >
+                  /articles/list ⇒ /blog
+                </span>
               </a>
               <br />
             </div>
             <div>
               <a
-                class="sc-jrcTuL gYzYAg"
+                class="sc-eDvSVe gaQKQy"
                 href="/articles"
               >
-                /articles ⇒ /blog
+                <span
+                  class="sc-kDvujY dAKIQE"
+                >
+                  /articles ⇒ /blog
+                </span>
               </a>
               <br />
             </div>
             <div>
               <a
-                class="sc-jrcTuL gYzYAg"
+                class="sc-eDvSVe gaQKQy"
                 href="/net-neutrality"
               >
-                /net-neutrality ⇒ /blog/net-neutrality
+                <span
+                  class="sc-kDvujY dAKIQE"
+                >
+                  /net-neutrality ⇒ /blog/net-neutrality
+                </span>
               </a>
               <br />
             </div>
             <div>
               <a
-                class="sc-jrcTuL gYzYAg"
+                class="sc-eDvSVe gaQKQy"
                 href="/work/side-projects"
               >
-                /work/side-projects ⇒ /work
+                <span
+                  class="sc-kDvujY dAKIQE"
+                >
+                  /work/side-projects ⇒ /work
+                </span>
               </a>
               <br />
             </div>
             <div>
               <a
-                class="sc-jrcTuL gYzYAg"
+                class="sc-eDvSVe gaQKQy"
                 href="/blog/view"
               >
-                /blog/view ⇒ /blog
+                <span
+                  class="sc-kDvujY dAKIQE"
+                >
+                  /blog/view ⇒ /blog
+                </span>
               </a>
               <br />
             </div>
             <div>
               <a
-                class="sc-jrcTuL gYzYAg"
+                class="sc-eDvSVe gaQKQy"
                 href="/travel"
               >
-                /travel ⇒ /blog
+                <span
+                  class="sc-kDvujY dAKIQE"
+                >
+                  /travel ⇒ /blog
+                </span>
               </a>
               <br />
             </div>
             <div>
               <a
-                class="sc-jrcTuL gYzYAg"
+                class="sc-eDvSVe gaQKQy"
                 href="/travel/list"
               >
-                /travel/list ⇒ /blog
+                <span
+                  class="sc-kDvujY dAKIQE"
+                >
+                  /travel/list ⇒ /blog
+                </span>
               </a>
               <br />
             </div>
             <div>
               <a
-                class="sc-jrcTuL gYzYAg"
+                class="sc-eDvSVe gaQKQy"
                 href="/blog/view?id=tg5x7po9"
               >
-                /blog/view?id=tg5x7po9 ⇒ /blog/tough-mudder
+                <span
+                  class="sc-kDvujY dAKIQE"
+                >
+                  /blog/view?id=tg5x7po9 ⇒ /blog/tough-mudder
+                </span>
               </a>
               <br />
             </div>
             <div>
               <a
-                class="sc-jrcTuL gYzYAg"
+                class="sc-eDvSVe gaQKQy"
                 href="/blog/view?id=lqngy"
               >
-                /blog/view?id=lqngy ⇒ /blog/lightroom-workflow
+                <span
+                  class="sc-kDvujY dAKIQE"
+                >
+                  /blog/view?id=lqngy ⇒ /blog/lightroom-workflow
+                </span>
               </a>
               <br />
             </div>
             <div>
               <a
-                class="sc-jrcTuL gYzYAg"
+                class="sc-eDvSVe gaQKQy"
                 href="/blog/view?id=w85aht"
               >
-                /blog/view?id=w85aht ⇒ /blog/net-neutrality
+                <span
+                  class="sc-kDvujY dAKIQE"
+                >
+                  /blog/view?id=w85aht ⇒ /blog/net-neutrality
+                </span>
               </a>
               <br />
             </div>
             <div>
               <a
-                class="sc-jrcTuL gYzYAg"
+                class="sc-eDvSVe gaQKQy"
                 href="/blog/view?id=azcpjh"
               >
-                /blog/view?id=azcpjh ⇒ /blog/vim
+                <span
+                  class="sc-kDvujY dAKIQE"
+                >
+                  /blog/view?id=azcpjh ⇒ /blog/vim
+                </span>
               </a>
               <br />
             </div>
             <div>
               <a
-                class="sc-jrcTuL gYzYAg"
+                class="sc-eDvSVe gaQKQy"
                 href="/blog/view?id=y77dnh"
               >
-                /blog/view?id=y77dnh ⇒ /blog/uk-bank-security
+                <span
+                  class="sc-kDvujY dAKIQE"
+                >
+                  /blog/view?id=y77dnh ⇒ /blog/uk-bank-security
+                </span>
               </a>
               <br />
             </div>
             <div>
               <a
-                class="sc-jrcTuL gYzYAg"
+                class="sc-eDvSVe gaQKQy"
                 href="/art"
               >
-                /art ⇒ /photography
+                <span
+                  class="sc-kDvujY dAKIQE"
+                >
+                  /art ⇒ /photography
+                </span>
               </a>
               <br />
             </div>
             <div>
               <a
-                class="sc-jrcTuL gYzYAg"
+                class="sc-eDvSVe gaQKQy"
                 href="/photoshop"
               >
-                /photoshop ⇒ /photography
+                <span
+                  class="sc-kDvujY dAKIQE"
+                >
+                  /photoshop ⇒ /photography
+                </span>
               </a>
               <br />
             </div>
             <div>
               <a
-                class="sc-jrcTuL gYzYAg"
+                class="sc-eDvSVe gaQKQy"
                 href="/phot"
               >
-                /phot ⇒ /photography
+                <span
+                  class="sc-kDvujY dAKIQE"
+                >
+                  /phot ⇒ /photography
+                </span>
               </a>
               <br />
             </div>
             <div>
               <a
-                class="sc-jrcTuL gYzYAg"
+                class="sc-eDvSVe gaQKQy"
                 href="/photo"
               >
-                /photo ⇒ /photography
+                <span
+                  class="sc-kDvujY dAKIQE"
+                >
+                  /photo ⇒ /photography
+                </span>
               </a>
               <br />
             </div>
@@ -1843,20 +2355,20 @@ exports[`<SiteMap /> should render correctly 1`] = `
 exports[`<SiteMap /> should render correctly with blogs 1`] = `
 <div>
   <div
-    class="sc-fEXmlR lhvDzD page-containerstyles__StyledPageContainer-sc-19l7k4-0"
+    class="sc-bjfHbI gUxyYC page-containerstyles__StyledPageContainer-sc-19l7k4-0"
     width="default"
   >
     <div
-      class="sc-fnGiBr bfiIDr"
+      class="sc-fEXmlR rMnCl"
     >
       <h1
-        class="sc-hLBbgP dguiMA sc-csuSiG hZrmqD"
+        class="sc-iBYQkv joDGmp sc-eDWCr fRcVBw"
       >
         Site map
       </h1>
     </div>
     <div
-      class="sc-ksBlkl fhBUpU"
+      class="sc-hBxehG hEuIQR"
     >
       <style>
         .js .animated-content__wrapper--hidden {
@@ -1865,13 +2377,13 @@ exports[`<SiteMap /> should render correctly with blogs 1`] = `
 }
       </style>
       <div
-        class="sc-bqWxrE bpjCNL animated-content__wrapper--hidden"
+        class="sc-ksBlkl jMYerx animated-content__wrapper--hidden"
       >
         <div
-          class="sc-bjfHbI bBecGJ site-mapstyles__StyledSubsection-sc-13l3sqp-0 evGhsU"
+          class="sc-idXgbr bVkxoK site-mapstyles__StyledSubsection-sc-13l3sqp-0 evGhsU"
         >
           <h1
-            class="sc-jSUZER jmoeZg sc-hHTYSt heAApr"
+            class="sc-pyfCe kmuKUY sc-dmctIk hibXxV"
             id="blog-📝"
           >
             Blog 📝
@@ -1880,17 +2392,25 @@ exports[`<SiteMap /> should render correctly with blogs 1`] = `
             class="sc-bcXHqe huaqIH"
           >
             <a
-              class="sc-jrcTuL gYzYAg"
+              class="sc-eDvSVe gaQKQy"
               href="/blog"
             >
-              Blog list
+              <span
+                class="sc-kDvujY dAKIQE"
+              >
+                Blog list
+              </span>
             </a>
             <br />
             <a
-              class="sc-jrcTuL gYzYAg"
+              class="sc-eDvSVe gaQKQy"
               href="/blog/asdfg"
             >
-              Blog 1 🎉
+              <span
+                class="sc-kDvujY dAKIQE"
+              >
+                Blog 1 🎉
+              </span>
             </a>
             <br />
           </span>
@@ -1898,7 +2418,7 @@ exports[`<SiteMap /> should render correctly with blogs 1`] = `
       </div>
     </div>
     <div
-      class="sc-ksBlkl fhBUpU"
+      class="sc-hBxehG hEuIQR"
     >
       <style>
         .js .animated-content__wrapper--hidden {
@@ -1907,13 +2427,13 @@ exports[`<SiteMap /> should render correctly with blogs 1`] = `
 }
       </style>
       <div
-        class="sc-bqWxrE bpjCNL animated-content__wrapper--hidden"
+        class="sc-ksBlkl jMYerx animated-content__wrapper--hidden"
       >
         <div
-          class="sc-bjfHbI bBecGJ site-mapstyles__StyledSubsection-sc-13l3sqp-0 evGhsU"
+          class="sc-idXgbr bVkxoK site-mapstyles__StyledSubsection-sc-13l3sqp-0 evGhsU"
         >
           <h1
-            class="sc-jSUZER jmoeZg sc-hHTYSt heAApr"
+            class="sc-pyfCe kmuKUY sc-dmctIk hibXxV"
             id="photography-📷"
           >
             Photography 📷
@@ -1922,17 +2442,21 @@ exports[`<SiteMap /> should render correctly with blogs 1`] = `
             class="sc-bcXHqe huaqIH"
           >
             <a
-              class="sc-jrcTuL gYzYAg"
+              class="sc-eDvSVe gaQKQy"
               href="/photography"
             >
-              Photography
+              <span
+                class="sc-kDvujY dAKIQE"
+              >
+                Photography
+              </span>
             </a>
           </span>
         </div>
       </div>
     </div>
     <div
-      class="sc-ksBlkl fhBUpU"
+      class="sc-hBxehG hEuIQR"
     >
       <style>
         .js .animated-content__wrapper--hidden {
@@ -1941,13 +2465,13 @@ exports[`<SiteMap /> should render correctly with blogs 1`] = `
 }
       </style>
       <div
-        class="sc-bqWxrE bpjCNL animated-content__wrapper--hidden"
+        class="sc-ksBlkl jMYerx animated-content__wrapper--hidden"
       >
         <div
-          class="sc-bjfHbI bBecGJ site-mapstyles__StyledSubsection-sc-13l3sqp-0 evGhsU"
+          class="sc-idXgbr bVkxoK site-mapstyles__StyledSubsection-sc-13l3sqp-0 evGhsU"
         >
           <h1
-            class="sc-jSUZER jmoeZg sc-hHTYSt heAApr"
+            class="sc-pyfCe kmuKUY sc-dmctIk hibXxV"
             id="medals-🏅"
           >
             Medals 🏅
@@ -1956,17 +2480,21 @@ exports[`<SiteMap /> should render correctly with blogs 1`] = `
             class="sc-bcXHqe huaqIH"
           >
             <a
-              class="sc-jrcTuL gYzYAg"
+              class="sc-eDvSVe gaQKQy"
               href="/medals"
             >
-              Medals
+              <span
+                class="sc-kDvujY dAKIQE"
+              >
+                Medals
+              </span>
             </a>
           </span>
         </div>
       </div>
     </div>
     <div
-      class="sc-ksBlkl fhBUpU"
+      class="sc-hBxehG hEuIQR"
     >
       <style>
         .js .animated-content__wrapper--hidden {
@@ -1975,13 +2503,13 @@ exports[`<SiteMap /> should render correctly with blogs 1`] = `
 }
       </style>
       <div
-        class="sc-bqWxrE bpjCNL animated-content__wrapper--hidden"
+        class="sc-ksBlkl jMYerx animated-content__wrapper--hidden"
       >
         <div
-          class="sc-bjfHbI bBecGJ site-mapstyles__StyledSubsection-sc-13l3sqp-0 evGhsU"
+          class="sc-idXgbr bVkxoK site-mapstyles__StyledSubsection-sc-13l3sqp-0 evGhsU"
         >
           <h1
-            class="sc-jSUZER jmoeZg sc-hHTYSt heAApr"
+            class="sc-pyfCe kmuKUY sc-dmctIk hibXxV"
             id="work-📱"
           >
             Work 📱
@@ -1990,38 +2518,54 @@ exports[`<SiteMap /> should render correctly with blogs 1`] = `
             class="sc-bcXHqe huaqIH"
           >
             <a
-              class="sc-jrcTuL gYzYAg"
+              class="sc-eDvSVe gaQKQy"
               href="/work"
             >
-              Overview
+              <span
+                class="sc-kDvujY dAKIQE"
+              >
+                Overview
+              </span>
             </a>
             <br />
             <a
-              class="sc-jrcTuL gYzYAg"
+              class="sc-eDvSVe gaQKQy"
               href="/work/backpack"
             >
-              Backpack
+              <span
+                class="sc-kDvujY dAKIQE"
+              >
+                Backpack
+              </span>
             </a>
             <br />
             <a
-              class="sc-jrcTuL gYzYAg"
+              class="sc-eDvSVe gaQKQy"
               href="/work/degree"
             >
-              Degree
+              <span
+                class="sc-kDvujY dAKIQE"
+              >
+                Degree
+              </span>
             </a>
             <br />
             <a
-              class="sc-jrcTuL gYzYAg"
+              class="sc-eDvSVe gaQKQy"
               href="/work/epicc"
             >
-              EPICC
+              <span
+                class="sc-kDvujY dAKIQE"
+              >
+                EPICC
+              </span>
             </a>
           </span>
         </div>
       </div>
     </div>
     <div
-      class="sc-ksBlkl fhBUpU"
+      class="sc-hBxehG hEuIQR"
     >
       <style>
         .js .animated-content__wrapper--hidden {
@@ -2030,13 +2574,13 @@ exports[`<SiteMap /> should render correctly with blogs 1`] = `
 }
       </style>
       <div
-        class="sc-bqWxrE bpjCNL animated-content__wrapper--hidden"
+        class="sc-ksBlkl jMYerx animated-content__wrapper--hidden"
       >
         <div
-          class="sc-bjfHbI bBecGJ site-mapstyles__StyledSubsection-sc-13l3sqp-0 evGhsU"
+          class="sc-idXgbr bVkxoK site-mapstyles__StyledSubsection-sc-13l3sqp-0 evGhsU"
         >
           <h1
-            class="sc-jSUZER jmoeZg sc-hHTYSt heAApr"
+            class="sc-pyfCe kmuKUY sc-dmctIk hibXxV"
             id="design-🎨"
           >
             Design 🎨
@@ -2045,17 +2589,21 @@ exports[`<SiteMap /> should render correctly with blogs 1`] = `
             class="sc-bcXHqe huaqIH"
           >
             <a
-              class="sc-jrcTuL gYzYAg"
+              class="sc-eDvSVe gaQKQy"
               href="/privacy-policy"
             >
-              Privacy Policy
+              <span
+                class="sc-kDvujY dAKIQE"
+              >
+                Privacy Policy
+              </span>
             </a>
           </span>
         </div>
       </div>
     </div>
     <div
-      class="sc-ksBlkl fhBUpU"
+      class="sc-hBxehG hEuIQR"
     >
       <style>
         .js .animated-content__wrapper--hidden {
@@ -2064,13 +2612,13 @@ exports[`<SiteMap /> should render correctly with blogs 1`] = `
 }
       </style>
       <div
-        class="sc-bqWxrE bpjCNL animated-content__wrapper--hidden"
+        class="sc-ksBlkl jMYerx animated-content__wrapper--hidden"
       >
         <div
-          class="sc-bjfHbI bBecGJ site-mapstyles__StyledSubsection-sc-13l3sqp-0 evGhsU"
+          class="sc-idXgbr bVkxoK site-mapstyles__StyledSubsection-sc-13l3sqp-0 evGhsU"
         >
           <h1
-            class="sc-jSUZER jmoeZg sc-hHTYSt heAApr"
+            class="sc-pyfCe kmuKUY sc-dmctIk hibXxV"
             id="other-stuff-🤷‍♂️"
           >
             Other stuff 🤷‍♂️
@@ -2079,45 +2627,65 @@ exports[`<SiteMap /> should render correctly with blogs 1`] = `
             class="sc-bcXHqe huaqIH"
           >
             <a
-              class="sc-jrcTuL gYzYAg"
+              class="sc-eDvSVe gaQKQy"
               href="/contact"
             >
-              Contact
+              <span
+                class="sc-kDvujY dAKIQE"
+              >
+                Contact
+              </span>
             </a>
             <br />
             <a
-              class="sc-jrcTuL gYzYAg"
+              class="sc-eDvSVe gaQKQy"
               href="/support"
             >
-              Support
+              <span
+                class="sc-kDvujY dAKIQE"
+              >
+                Support
+              </span>
             </a>
             <br />
             <a
-              class="sc-jrcTuL gYzYAg"
+              class="sc-eDvSVe gaQKQy"
               href="/debug"
             >
-              Debug tools
+              <span
+                class="sc-kDvujY dAKIQE"
+              >
+                Debug tools
+              </span>
             </a>
             <br />
             <a
-              class="sc-jrcTuL gYzYAg"
+              class="sc-eDvSVe gaQKQy"
               href="/status"
             >
-              Status
+              <span
+                class="sc-kDvujY dAKIQE"
+              >
+                Status
+              </span>
             </a>
             <br />
             <a
-              class="sc-jrcTuL gYzYAg"
+              class="sc-eDvSVe gaQKQy"
               href="/coffee"
             >
-              Coffee
+              <span
+                class="sc-kDvujY dAKIQE"
+              >
+                Coffee
+              </span>
             </a>
           </span>
         </div>
       </div>
     </div>
     <div
-      class="sc-ksBlkl fhBUpU"
+      class="sc-hBxehG hEuIQR"
     >
       <style>
         .js .animated-content__wrapper--hidden {
@@ -2126,13 +2694,13 @@ exports[`<SiteMap /> should render correctly with blogs 1`] = `
 }
       </style>
       <div
-        class="sc-bqWxrE bpjCNL animated-content__wrapper--hidden"
+        class="sc-ksBlkl jMYerx animated-content__wrapper--hidden"
       >
         <div
-          class="sc-bjfHbI bBecGJ site-mapstyles__StyledSubsection-sc-13l3sqp-0 evGhsU"
+          class="sc-idXgbr bVkxoK site-mapstyles__StyledSubsection-sc-13l3sqp-0 evGhsU"
         >
           <h1
-            class="sc-jSUZER jmoeZg sc-hHTYSt heAApr"
+            class="sc-pyfCe kmuKUY sc-dmctIk hibXxV"
             id="random-🐉"
           >
             Random 🐉
@@ -2142,17 +2710,21 @@ exports[`<SiteMap /> should render correctly with blogs 1`] = `
           >
             <a
               aria-label="Robots.txt (opens in a new tab)"
-              class="sc-jrcTuL gYzYAg"
+              class="sc-eDvSVe gaQKQy"
               href="/robots.txt"
               rel="noopener noreferrer"
               target="_blank"
             >
-              Robots.txt
+              <span
+                class="sc-kDvujY dAKIQE"
+              >
+                Robots.txt
+              </span>
               <div
-                class="sc-kDvujY eqIuxE"
+                class="sc-jSUZER ddQtRO"
               >
                 <svg
-                  class="sc-pyfCe eOkUPn sc-ipEyDJ iZDePM"
+                  class="sc-hLBbgP iyAiel sc-gKPRtg dWTLyC"
                   height="18"
                   viewBox="0 0 24 24"
                   width="18"
@@ -2167,17 +2739,21 @@ exports[`<SiteMap /> should render correctly with blogs 1`] = `
             <br />
             <a
               aria-label="SiteMap.xml (opens in a new tab)"
-              class="sc-jrcTuL gYzYAg"
+              class="sc-eDvSVe gaQKQy"
               href="/sitemap.xml"
               rel="noopener noreferrer"
               target="_blank"
             >
-              SiteMap.xml
+              <span
+                class="sc-kDvujY dAKIQE"
+              >
+                SiteMap.xml
+              </span>
               <div
-                class="sc-kDvujY eqIuxE"
+                class="sc-jSUZER ddQtRO"
               >
                 <svg
-                  class="sc-pyfCe eOkUPn sc-ipEyDJ iZDePM"
+                  class="sc-hLBbgP iyAiel sc-gKPRtg dWTLyC"
                   height="18"
                   viewBox="0 0 24 24"
                   width="18"
@@ -2191,24 +2767,32 @@ exports[`<SiteMap /> should render correctly with blogs 1`] = `
             </a>
             <br />
             <a
-              class="sc-jrcTuL gYzYAg"
+              class="sc-eDvSVe gaQKQy"
               href="/404"
             >
-              404 error page - not found
+              <span
+                class="sc-kDvujY dAKIQE"
+              >
+                404 error page - not found
+              </span>
             </a>
             <br />
             <a
-              class="sc-jrcTuL gYzYAg"
+              class="sc-eDvSVe gaQKQy"
               href="/teapot"
             >
-              418 error page - I'm a teapot
+              <span
+                class="sc-kDvujY dAKIQE"
+              >
+                418 error page - I'm a teapot
+              </span>
             </a>
           </span>
         </div>
       </div>
     </div>
     <div
-      class="sc-ksBlkl fhBUpU"
+      class="sc-hBxehG hEuIQR"
     >
       <style>
         .js .animated-content__wrapper--hidden {
@@ -2217,13 +2801,13 @@ exports[`<SiteMap /> should render correctly with blogs 1`] = `
 }
       </style>
       <div
-        class="sc-bqWxrE bpjCNL animated-content__wrapper--hidden"
+        class="sc-ksBlkl jMYerx animated-content__wrapper--hidden"
       >
         <div
-          class="sc-bjfHbI bBecGJ site-mapstyles__StyledSubsection-sc-13l3sqp-0 evGhsU"
+          class="sc-idXgbr bVkxoK site-mapstyles__StyledSubsection-sc-13l3sqp-0 evGhsU"
         >
           <h1
-            class="sc-jSUZER jmoeZg sc-hHTYSt heAApr"
+            class="sc-pyfCe kmuKUY sc-dmctIk hibXxV"
             id="api"
           >
             API
@@ -2232,17 +2816,21 @@ exports[`<SiteMap /> should render correctly with blogs 1`] = `
             class="sc-bcXHqe huaqIH"
           >
             <a
-              class="sc-jrcTuL gYzYAg"
+              class="sc-eDvSVe gaQKQy"
               href="/api-docs"
             >
-              API docs
+              <span
+                class="sc-kDvujY dAKIQE"
+              >
+                API docs
+              </span>
             </a>
           </span>
         </div>
       </div>
     </div>
     <div
-      class="sc-ksBlkl fhBUpU"
+      class="sc-hBxehG hEuIQR"
     >
       <style>
         .js .animated-content__wrapper--hidden {
@@ -2251,13 +2839,13 @@ exports[`<SiteMap /> should render correctly with blogs 1`] = `
 }
       </style>
       <div
-        class="sc-bqWxrE bpjCNL animated-content__wrapper--hidden"
+        class="sc-ksBlkl jMYerx animated-content__wrapper--hidden"
       >
         <div
-          class="sc-bjfHbI bBecGJ site-mapstyles__StyledSubsection-sc-13l3sqp-0 evGhsU"
+          class="sc-idXgbr bVkxoK site-mapstyles__StyledSubsection-sc-13l3sqp-0 evGhsU"
         >
           <h1
-            class="sc-jSUZER jmoeZg sc-hHTYSt heAApr"
+            class="sc-pyfCe kmuKUY sc-dmctIk hibXxV"
             id="accounts-🔑"
           >
             Accounts 🔑
@@ -2266,45 +2854,65 @@ exports[`<SiteMap /> should render correctly with blogs 1`] = `
             class="sc-bcXHqe huaqIH"
           >
             <a
-              class="sc-jrcTuL gYzYAg"
+              class="sc-eDvSVe gaQKQy"
               href="/account"
             >
-              Account
+              <span
+                class="sc-kDvujY dAKIQE"
+              >
+                Account
+              </span>
             </a>
             <br />
             <a
-              class="sc-jrcTuL gYzYAg"
+              class="sc-eDvSVe gaQKQy"
               href="/sign-up"
             >
-              Sign up
+              <span
+                class="sc-kDvujY dAKIQE"
+              >
+                Sign up
+              </span>
             </a>
             <br />
             <a
-              class="sc-jrcTuL gYzYAg"
+              class="sc-eDvSVe gaQKQy"
               href="/login"
             >
-              Log in
+              <span
+                class="sc-kDvujY dAKIQE"
+              >
+                Log in
+              </span>
             </a>
             <br />
             <a
-              class="sc-jrcTuL gYzYAg"
+              class="sc-eDvSVe gaQKQy"
               href="/email-verification"
             >
-              Email verification
+              <span
+                class="sc-kDvujY dAKIQE"
+              >
+                Email verification
+              </span>
             </a>
             <br />
             <a
-              class="sc-jrcTuL gYzYAg"
+              class="sc-eDvSVe gaQKQy"
               href="/magic-login"
             >
-              Magic login
+              <span
+                class="sc-kDvujY dAKIQE"
+              >
+                Magic login
+              </span>
             </a>
           </span>
         </div>
       </div>
     </div>
     <div
-      class="sc-ksBlkl fhBUpU"
+      class="sc-hBxehG hEuIQR"
     >
       <style>
         .js .animated-content__wrapper--hidden {
@@ -2313,13 +2921,13 @@ exports[`<SiteMap /> should render correctly with blogs 1`] = `
 }
       </style>
       <div
-        class="sc-bqWxrE bpjCNL animated-content__wrapper--hidden"
+        class="sc-ksBlkl jMYerx animated-content__wrapper--hidden"
       >
         <div
-          class="sc-bjfHbI bBecGJ site-mapstyles__StyledSubsection-sc-13l3sqp-0 evGhsU"
+          class="sc-idXgbr bVkxoK site-mapstyles__StyledSubsection-sc-13l3sqp-0 evGhsU"
         >
           <h1
-            class="sc-jSUZER jmoeZg sc-hHTYSt heAApr"
+            class="sc-pyfCe kmuKUY sc-dmctIk hibXxV"
             id="admin-👮‍♂️"
           >
             Admin 👮‍♂️
@@ -2328,52 +2936,76 @@ exports[`<SiteMap /> should render correctly with blogs 1`] = `
             class="sc-bcXHqe huaqIH"
           >
             <a
-              class="sc-jrcTuL gYzYAg"
+              class="sc-eDvSVe gaQKQy"
               href="/admin"
             >
-              Admin navigation
+              <span
+                class="sc-kDvujY dAKIQE"
+              >
+                Admin navigation
+              </span>
             </a>
             <br />
             <a
-              class="sc-jrcTuL gYzYAg"
+              class="sc-eDvSVe gaQKQy"
               href="/blog"
             >
-              Blogs
+              <span
+                class="sc-kDvujY dAKIQE"
+              >
+                Blogs
+              </span>
             </a>
             <br />
             <a
-              class="sc-jrcTuL gYzYAg"
+              class="sc-eDvSVe gaQKQy"
               href="/admin/analytics"
             >
-              Analytics
+              <span
+                class="sc-kDvujY dAKIQE"
+              >
+                Analytics
+              </span>
             </a>
             <br />
             <a
-              class="sc-jrcTuL gYzYAg"
+              class="sc-eDvSVe gaQKQy"
               href="/admin/emails"
             >
-              Emails
+              <span
+                class="sc-kDvujY dAKIQE"
+              >
+                Emails
+              </span>
             </a>
             <br />
             <a
-              class="sc-jrcTuL gYzYAg"
+              class="sc-eDvSVe gaQKQy"
               href="/admin/notifications"
             >
-              Notifications
+              <span
+                class="sc-kDvujY dAKIQE"
+              >
+                Notifications
+              </span>
             </a>
             <br />
             <a
-              class="sc-jrcTuL gYzYAg"
+              class="sc-eDvSVe gaQKQy"
               href="/admin/users"
             >
-              Users
+              <span
+                class="sc-kDvujY dAKIQE"
+              >
+                Users
+              </span>
             </a>
           </span>
         </div>
       </div>
     </div>
     <div
-      class="sc-ksBlkl fhBUpU"
+      class="sc-hBxehG hEuIQR"
     >
       <style>
         .js .animated-content__wrapper--hidden {
@@ -2382,13 +3014,13 @@ exports[`<SiteMap /> should render correctly with blogs 1`] = `
 }
       </style>
       <div
-        class="sc-bqWxrE bpjCNL animated-content__wrapper--hidden"
+        class="sc-ksBlkl jMYerx animated-content__wrapper--hidden"
       >
         <div
-          class="sc-bjfHbI bBecGJ site-mapstyles__StyledSubsection-sc-13l3sqp-0 evGhsU"
+          class="sc-idXgbr bVkxoK site-mapstyles__StyledSubsection-sc-13l3sqp-0 evGhsU"
         >
           <h1
-            class="sc-jSUZER jmoeZg sc-hHTYSt heAApr"
+            class="sc-pyfCe kmuKUY sc-dmctIk hibXxV"
             id="redirects-👉"
           >
             Redirects 👉
@@ -2398,316 +3030,456 @@ exports[`<SiteMap /> should render correctly with blogs 1`] = `
           >
             <div>
               <a
-                class="sc-jrcTuL gYzYAg"
+                class="sc-eDvSVe gaQKQy"
                 href="/codebase"
               >
-                /codebase ⇒ https://github.com/georgegillams/georgegillams.co.uk
+                <span
+                  class="sc-kDvujY dAKIQE"
+                >
+                  /codebase ⇒ https://github.com/georgegillams/georgegillams.co.uk
+                </span>
               </a>
               <br />
             </div>
             <div>
               <a
-                class="sc-jrcTuL gYzYAg"
+                class="sc-eDvSVe gaQKQy"
                 href="/copyright"
               >
-                /copyright ⇒ https://creativecommons.org/licenses/by-sa/3.0/
+                <span
+                  class="sc-kDvujY dAKIQE"
+                >
+                  /copyright ⇒ https://creativecommons.org/licenses/by-sa/3.0/
+                </span>
               </a>
               <br />
             </div>
             <div>
               <a
-                class="sc-jrcTuL gYzYAg"
+                class="sc-eDvSVe gaQKQy"
                 href="/flickr"
               >
-                /flickr ⇒ https://www.flickr.com/people/georgegillams
+                <span
+                  class="sc-kDvujY dAKIQE"
+                >
+                  /flickr ⇒ https://www.flickr.com/people/georgegillams
+                </span>
               </a>
               <br />
             </div>
             <div>
               <a
-                class="sc-jrcTuL gYzYAg"
+                class="sc-eDvSVe gaQKQy"
                 href="/monzo"
               >
-                /monzo ⇒ https://join.monzo.com/r/vjd3d74
+                <span
+                  class="sc-kDvujY dAKIQE"
+                >
+                  /monzo ⇒ https://join.monzo.com/r/vjd3d74
+                </span>
               </a>
               <br />
             </div>
             <div>
               <a
-                class="sc-jrcTuL gYzYAg"
+                class="sc-eDvSVe gaQKQy"
                 href="/github"
               >
-                /github ⇒ https://github.com/georgegillams
+                <span
+                  class="sc-kDvujY dAKIQE"
+                >
+                  /github ⇒ https://github.com/georgegillams
+                </span>
               </a>
               <br />
             </div>
             <div>
               <a
-                class="sc-jrcTuL gYzYAg"
+                class="sc-eDvSVe gaQKQy"
                 href="/stackoverflow"
               >
-                /stackoverflow ⇒ https://stackoverflow.com/users/14463713/georgegillams
+                <span
+                  class="sc-kDvujY dAKIQE"
+                >
+                  /stackoverflow ⇒ https://stackoverflow.com/users/14463713/georgegillams
+                </span>
               </a>
               <br />
             </div>
             <div>
               <a
-                class="sc-jrcTuL gYzYAg"
+                class="sc-eDvSVe gaQKQy"
                 href="/gurushots"
               >
-                /gurushots ⇒ https://gurushots.com/georgegillams/photos
+                <span
+                  class="sc-kDvujY dAKIQE"
+                >
+                  /gurushots ⇒ https://gurushots.com/georgegillams/photos
+                </span>
               </a>
               <br />
             </div>
             <div>
               <a
-                class="sc-jrcTuL gYzYAg"
+                class="sc-eDvSVe gaQKQy"
                 href="/unsplash"
               >
-                /unsplash ⇒ https://unsplash.com/@georgegillams/
+                <span
+                  class="sc-kDvujY dAKIQE"
+                >
+                  /unsplash ⇒ https://unsplash.com/@georgegillams/
+                </span>
               </a>
               <br />
             </div>
             <div>
               <a
-                class="sc-jrcTuL gYzYAg"
+                class="sc-eDvSVe gaQKQy"
                 href="/strava"
               >
-                /strava ⇒ https://www.strava.com/athletes/7221483
+                <span
+                  class="sc-kDvujY dAKIQE"
+                >
+                  /strava ⇒ https://www.strava.com/athletes/7221483
+                </span>
               </a>
               <br />
             </div>
             <div>
               <a
-                class="sc-jrcTuL gYzYAg"
+                class="sc-eDvSVe gaQKQy"
                 href="/linkedin"
               >
-                /linkedin ⇒ https://www.linkedin.com/in/george-gillams-37537077
+                <span
+                  class="sc-kDvujY dAKIQE"
+                >
+                  /linkedin ⇒ https://www.linkedin.com/in/george-gillams-37537077
+                </span>
               </a>
               <br />
             </div>
             <div>
               <a
-                class="sc-jrcTuL gYzYAg"
+                class="sc-eDvSVe gaQKQy"
                 href="/twitter"
               >
-                /twitter ⇒ https://twitter.com/georgegillams
+                <span
+                  class="sc-kDvujY dAKIQE"
+                >
+                  /twitter ⇒ https://twitter.com/georgegillams
+                </span>
               </a>
               <br />
             </div>
             <div>
               <a
-                class="sc-jrcTuL gYzYAg"
+                class="sc-eDvSVe gaQKQy"
                 href="/spartan"
               >
-                /spartan ⇒ https://uk.spartan.com/en/race/profile/3661120
+                <span
+                  class="sc-kDvujY dAKIQE"
+                >
+                  /spartan ⇒ https://uk.spartan.com/en/race/profile/3661120
+                </span>
               </a>
               <br />
             </div>
             <div>
               <a
-                class="sc-jrcTuL gYzYAg"
+                class="sc-eDvSVe gaQKQy"
                 href="/wp-admin"
               >
-                /wp-admin ⇒ /admin
+                <span
+                  class="sc-kDvujY dAKIQE"
+                >
+                  /wp-admin ⇒ /admin
+                </span>
               </a>
               <br />
             </div>
             <div>
               <a
-                class="sc-jrcTuL gYzYAg"
+                class="sc-eDvSVe gaQKQy"
                 href="/about"
               >
-                /about ⇒ /
+                <span
+                  class="sc-kDvujY dAKIQE"
+                >
+                  /about ⇒ /
+                </span>
               </a>
               <br />
             </div>
             <div>
               <a
-                class="sc-jrcTuL gYzYAg"
+                class="sc-eDvSVe gaQKQy"
                 href="/site-map"
               >
-                /site-map ⇒ /sitemap
+                <span
+                  class="sc-kDvujY dAKIQE"
+                >
+                  /site-map ⇒ /sitemap
+                </span>
               </a>
               <br />
             </div>
             <div>
               <a
-                class="sc-jrcTuL gYzYAg"
+                class="sc-eDvSVe gaQKQy"
                 href="/about/degree"
               >
-                /about/degree ⇒ /work/degree
+                <span
+                  class="sc-kDvujY dAKIQE"
+                >
+                  /about/degree ⇒ /work/degree
+                </span>
               </a>
               <br />
             </div>
             <div>
               <a
-                class="sc-jrcTuL gYzYAg"
+                class="sc-eDvSVe gaQKQy"
                 href="/articles/tough-mudder"
               >
-                /articles/tough-mudder ⇒ /blog/tough-mudder
+                <span
+                  class="sc-kDvujY dAKIQE"
+                >
+                  /articles/tough-mudder ⇒ /blog/tough-mudder
+                </span>
               </a>
               <br />
             </div>
             <div>
               <a
-                class="sc-jrcTuL gYzYAg"
+                class="sc-eDvSVe gaQKQy"
                 href="/articles/net-neutrality"
               >
-                /articles/net-neutrality ⇒ /blog/net-neutrality
+                <span
+                  class="sc-kDvujY dAKIQE"
+                >
+                  /articles/net-neutrality ⇒ /blog/net-neutrality
+                </span>
               </a>
               <br />
             </div>
             <div>
               <a
-                class="sc-jrcTuL gYzYAg"
+                class="sc-eDvSVe gaQKQy"
                 href="/articles/vim"
               >
-                /articles/vim ⇒ /blog/vim
+                <span
+                  class="sc-kDvujY dAKIQE"
+                >
+                  /articles/vim ⇒ /blog/vim
+                </span>
               </a>
               <br />
             </div>
             <div>
               <a
-                class="sc-jrcTuL gYzYAg"
+                class="sc-eDvSVe gaQKQy"
                 href="/articles/list"
               >
-                /articles/list ⇒ /blog
+                <span
+                  class="sc-kDvujY dAKIQE"
+                >
+                  /articles/list ⇒ /blog
+                </span>
               </a>
               <br />
             </div>
             <div>
               <a
-                class="sc-jrcTuL gYzYAg"
+                class="sc-eDvSVe gaQKQy"
                 href="/articles"
               >
-                /articles ⇒ /blog
+                <span
+                  class="sc-kDvujY dAKIQE"
+                >
+                  /articles ⇒ /blog
+                </span>
               </a>
               <br />
             </div>
             <div>
               <a
-                class="sc-jrcTuL gYzYAg"
+                class="sc-eDvSVe gaQKQy"
                 href="/net-neutrality"
               >
-                /net-neutrality ⇒ /blog/net-neutrality
+                <span
+                  class="sc-kDvujY dAKIQE"
+                >
+                  /net-neutrality ⇒ /blog/net-neutrality
+                </span>
               </a>
               <br />
             </div>
             <div>
               <a
-                class="sc-jrcTuL gYzYAg"
+                class="sc-eDvSVe gaQKQy"
                 href="/work/side-projects"
               >
-                /work/side-projects ⇒ /work
+                <span
+                  class="sc-kDvujY dAKIQE"
+                >
+                  /work/side-projects ⇒ /work
+                </span>
               </a>
               <br />
             </div>
             <div>
               <a
-                class="sc-jrcTuL gYzYAg"
+                class="sc-eDvSVe gaQKQy"
                 href="/blog/view"
               >
-                /blog/view ⇒ /blog
+                <span
+                  class="sc-kDvujY dAKIQE"
+                >
+                  /blog/view ⇒ /blog
+                </span>
               </a>
               <br />
             </div>
             <div>
               <a
-                class="sc-jrcTuL gYzYAg"
+                class="sc-eDvSVe gaQKQy"
                 href="/travel"
               >
-                /travel ⇒ /blog
+                <span
+                  class="sc-kDvujY dAKIQE"
+                >
+                  /travel ⇒ /blog
+                </span>
               </a>
               <br />
             </div>
             <div>
               <a
-                class="sc-jrcTuL gYzYAg"
+                class="sc-eDvSVe gaQKQy"
                 href="/travel/list"
               >
-                /travel/list ⇒ /blog
+                <span
+                  class="sc-kDvujY dAKIQE"
+                >
+                  /travel/list ⇒ /blog
+                </span>
               </a>
               <br />
             </div>
             <div>
               <a
-                class="sc-jrcTuL gYzYAg"
+                class="sc-eDvSVe gaQKQy"
                 href="/blog/view?id=tg5x7po9"
               >
-                /blog/view?id=tg5x7po9 ⇒ /blog/tough-mudder
+                <span
+                  class="sc-kDvujY dAKIQE"
+                >
+                  /blog/view?id=tg5x7po9 ⇒ /blog/tough-mudder
+                </span>
               </a>
               <br />
             </div>
             <div>
               <a
-                class="sc-jrcTuL gYzYAg"
+                class="sc-eDvSVe gaQKQy"
                 href="/blog/view?id=lqngy"
               >
-                /blog/view?id=lqngy ⇒ /blog/lightroom-workflow
+                <span
+                  class="sc-kDvujY dAKIQE"
+                >
+                  /blog/view?id=lqngy ⇒ /blog/lightroom-workflow
+                </span>
               </a>
               <br />
             </div>
             <div>
               <a
-                class="sc-jrcTuL gYzYAg"
+                class="sc-eDvSVe gaQKQy"
                 href="/blog/view?id=w85aht"
               >
-                /blog/view?id=w85aht ⇒ /blog/net-neutrality
+                <span
+                  class="sc-kDvujY dAKIQE"
+                >
+                  /blog/view?id=w85aht ⇒ /blog/net-neutrality
+                </span>
               </a>
               <br />
             </div>
             <div>
               <a
-                class="sc-jrcTuL gYzYAg"
+                class="sc-eDvSVe gaQKQy"
                 href="/blog/view?id=azcpjh"
               >
-                /blog/view?id=azcpjh ⇒ /blog/vim
+                <span
+                  class="sc-kDvujY dAKIQE"
+                >
+                  /blog/view?id=azcpjh ⇒ /blog/vim
+                </span>
               </a>
               <br />
             </div>
             <div>
               <a
-                class="sc-jrcTuL gYzYAg"
+                class="sc-eDvSVe gaQKQy"
                 href="/blog/view?id=y77dnh"
               >
-                /blog/view?id=y77dnh ⇒ /blog/uk-bank-security
+                <span
+                  class="sc-kDvujY dAKIQE"
+                >
+                  /blog/view?id=y77dnh ⇒ /blog/uk-bank-security
+                </span>
               </a>
               <br />
             </div>
             <div>
               <a
-                class="sc-jrcTuL gYzYAg"
+                class="sc-eDvSVe gaQKQy"
                 href="/art"
               >
-                /art ⇒ /photography
+                <span
+                  class="sc-kDvujY dAKIQE"
+                >
+                  /art ⇒ /photography
+                </span>
               </a>
               <br />
             </div>
             <div>
               <a
-                class="sc-jrcTuL gYzYAg"
+                class="sc-eDvSVe gaQKQy"
                 href="/photoshop"
               >
-                /photoshop ⇒ /photography
+                <span
+                  class="sc-kDvujY dAKIQE"
+                >
+                  /photoshop ⇒ /photography
+                </span>
               </a>
               <br />
             </div>
             <div>
               <a
-                class="sc-jrcTuL gYzYAg"
+                class="sc-eDvSVe gaQKQy"
                 href="/phot"
               >
-                /phot ⇒ /photography
+                <span
+                  class="sc-kDvujY dAKIQE"
+                >
+                  /phot ⇒ /photography
+                </span>
               </a>
               <br />
             </div>
             <div>
               <a
-                class="sc-jrcTuL gYzYAg"
+                class="sc-eDvSVe gaQKQy"
                 href="/photo"
               >
-                /photo ⇒ /photography
+                <span
+                  class="sc-kDvujY dAKIQE"
+                >
+                  /photo ⇒ /photography
+                </span>
               </a>
               <br />
             </div>
@@ -2722,20 +3494,20 @@ exports[`<SiteMap /> should render correctly with blogs 1`] = `
 exports[`<SiteMap /> should render correctly with blogs and admin user 1`] = `
 <div>
   <div
-    class="sc-fEXmlR lhvDzD page-containerstyles__StyledPageContainer-sc-19l7k4-0"
+    class="sc-bjfHbI gUxyYC page-containerstyles__StyledPageContainer-sc-19l7k4-0"
     width="default"
   >
     <div
-      class="sc-fnGiBr bfiIDr"
+      class="sc-fEXmlR rMnCl"
     >
       <h1
-        class="sc-hLBbgP dguiMA sc-csuSiG hZrmqD"
+        class="sc-iBYQkv joDGmp sc-eDWCr fRcVBw"
       >
         Site map
       </h1>
     </div>
     <div
-      class="sc-ksBlkl fhBUpU"
+      class="sc-hBxehG hEuIQR"
     >
       <style>
         .js .animated-content__wrapper--hidden {
@@ -2744,13 +3516,13 @@ exports[`<SiteMap /> should render correctly with blogs and admin user 1`] = `
 }
       </style>
       <div
-        class="sc-bqWxrE bpjCNL animated-content__wrapper--hidden"
+        class="sc-ksBlkl jMYerx animated-content__wrapper--hidden"
       >
         <div
-          class="sc-bjfHbI bBecGJ site-mapstyles__StyledSubsection-sc-13l3sqp-0 evGhsU"
+          class="sc-idXgbr bVkxoK site-mapstyles__StyledSubsection-sc-13l3sqp-0 evGhsU"
         >
           <h1
-            class="sc-jSUZER jmoeZg sc-hHTYSt heAApr"
+            class="sc-pyfCe kmuKUY sc-dmctIk hibXxV"
             id="blog-📝"
           >
             Blog 📝
@@ -2759,17 +3531,25 @@ exports[`<SiteMap /> should render correctly with blogs and admin user 1`] = `
             class="sc-bcXHqe huaqIH"
           >
             <a
-              class="sc-jrcTuL gYzYAg"
+              class="sc-eDvSVe gaQKQy"
               href="/blog"
             >
-              Blog list
+              <span
+                class="sc-kDvujY dAKIQE"
+              >
+                Blog list
+              </span>
             </a>
             <br />
             <a
-              class="sc-jrcTuL gYzYAg"
+              class="sc-eDvSVe gaQKQy"
               href="/blog/asdfg"
             >
-              Blog 1 🎉
+              <span
+                class="sc-kDvujY dAKIQE"
+              >
+                Blog 1 🎉
+              </span>
             </a>
             <br />
           </span>
@@ -2777,7 +3557,7 @@ exports[`<SiteMap /> should render correctly with blogs and admin user 1`] = `
       </div>
     </div>
     <div
-      class="sc-ksBlkl fhBUpU"
+      class="sc-hBxehG hEuIQR"
     >
       <style>
         .js .animated-content__wrapper--hidden {
@@ -2786,13 +3566,13 @@ exports[`<SiteMap /> should render correctly with blogs and admin user 1`] = `
 }
       </style>
       <div
-        class="sc-bqWxrE bpjCNL animated-content__wrapper--hidden"
+        class="sc-ksBlkl jMYerx animated-content__wrapper--hidden"
       >
         <div
-          class="sc-bjfHbI bBecGJ site-mapstyles__StyledSubsection-sc-13l3sqp-0 evGhsU"
+          class="sc-idXgbr bVkxoK site-mapstyles__StyledSubsection-sc-13l3sqp-0 evGhsU"
         >
           <h1
-            class="sc-jSUZER jmoeZg sc-hHTYSt heAApr"
+            class="sc-pyfCe kmuKUY sc-dmctIk hibXxV"
             id="all-blogs"
           >
             All blogs
@@ -2801,32 +3581,48 @@ exports[`<SiteMap /> should render correctly with blogs and admin user 1`] = `
             class="sc-bcXHqe huaqIH"
           >
             <a
-              class="sc-jrcTuL gYzYAg"
+              class="sc-eDvSVe gaQKQy"
               href="/blog/asdfg"
             >
-              Blog 1 🎉
+              <span
+                class="sc-kDvujY dAKIQE"
+              >
+                Blog 1 🎉
+              </span>
             </a>
             <br />
             <a
-              class="sc-jrcTuL gYzYAg"
+              class="sc-eDvSVe gaQKQy"
               href="/blog/asdfg"
             >
-              Untitled blog
+              <span
+                class="sc-kDvujY dAKIQE"
+              >
+                Untitled blog
+              </span>
             </a>
             <br />
             <a
-              class="sc-jrcTuL gYzYAg"
+              class="sc-eDvSVe gaQKQy"
               href="/blog/zxywvuts"
             >
-              St. Ives ⛵ 2018
+              <span
+                class="sc-kDvujY dAKIQE"
+              >
+                St. Ives ⛵ 2018
+              </span>
             </a>
             <br />
             <a
-              class="sc-jrcTuL gYzYAg"
+              class="sc-eDvSVe gaQKQy"
               href="/blog/mndyd8"
             >
-              Untitled blog
-               (deleted)
+              <span
+                class="sc-kDvujY dAKIQE"
+              >
+                Untitled blog
+                 (deleted)
+              </span>
             </a>
             <br />
           </span>
@@ -2834,7 +3630,7 @@ exports[`<SiteMap /> should render correctly with blogs and admin user 1`] = `
       </div>
     </div>
     <div
-      class="sc-ksBlkl fhBUpU"
+      class="sc-hBxehG hEuIQR"
     >
       <style>
         .js .animated-content__wrapper--hidden {
@@ -2843,13 +3639,13 @@ exports[`<SiteMap /> should render correctly with blogs and admin user 1`] = `
 }
       </style>
       <div
-        class="sc-bqWxrE bpjCNL animated-content__wrapper--hidden"
+        class="sc-ksBlkl jMYerx animated-content__wrapper--hidden"
       >
         <div
-          class="sc-bjfHbI bBecGJ site-mapstyles__StyledSubsection-sc-13l3sqp-0 evGhsU"
+          class="sc-idXgbr bVkxoK site-mapstyles__StyledSubsection-sc-13l3sqp-0 evGhsU"
         >
           <h1
-            class="sc-jSUZER jmoeZg sc-hHTYSt heAApr"
+            class="sc-pyfCe kmuKUY sc-dmctIk hibXxV"
             id="photography-📷"
           >
             Photography 📷
@@ -2858,17 +3654,21 @@ exports[`<SiteMap /> should render correctly with blogs and admin user 1`] = `
             class="sc-bcXHqe huaqIH"
           >
             <a
-              class="sc-jrcTuL gYzYAg"
+              class="sc-eDvSVe gaQKQy"
               href="/photography"
             >
-              Photography
+              <span
+                class="sc-kDvujY dAKIQE"
+              >
+                Photography
+              </span>
             </a>
           </span>
         </div>
       </div>
     </div>
     <div
-      class="sc-ksBlkl fhBUpU"
+      class="sc-hBxehG hEuIQR"
     >
       <style>
         .js .animated-content__wrapper--hidden {
@@ -2877,13 +3677,13 @@ exports[`<SiteMap /> should render correctly with blogs and admin user 1`] = `
 }
       </style>
       <div
-        class="sc-bqWxrE bpjCNL animated-content__wrapper--hidden"
+        class="sc-ksBlkl jMYerx animated-content__wrapper--hidden"
       >
         <div
-          class="sc-bjfHbI bBecGJ site-mapstyles__StyledSubsection-sc-13l3sqp-0 evGhsU"
+          class="sc-idXgbr bVkxoK site-mapstyles__StyledSubsection-sc-13l3sqp-0 evGhsU"
         >
           <h1
-            class="sc-jSUZER jmoeZg sc-hHTYSt heAApr"
+            class="sc-pyfCe kmuKUY sc-dmctIk hibXxV"
             id="medals-🏅"
           >
             Medals 🏅
@@ -2892,17 +3692,21 @@ exports[`<SiteMap /> should render correctly with blogs and admin user 1`] = `
             class="sc-bcXHqe huaqIH"
           >
             <a
-              class="sc-jrcTuL gYzYAg"
+              class="sc-eDvSVe gaQKQy"
               href="/medals"
             >
-              Medals
+              <span
+                class="sc-kDvujY dAKIQE"
+              >
+                Medals
+              </span>
             </a>
           </span>
         </div>
       </div>
     </div>
     <div
-      class="sc-ksBlkl fhBUpU"
+      class="sc-hBxehG hEuIQR"
     >
       <style>
         .js .animated-content__wrapper--hidden {
@@ -2911,13 +3715,13 @@ exports[`<SiteMap /> should render correctly with blogs and admin user 1`] = `
 }
       </style>
       <div
-        class="sc-bqWxrE bpjCNL animated-content__wrapper--hidden"
+        class="sc-ksBlkl jMYerx animated-content__wrapper--hidden"
       >
         <div
-          class="sc-bjfHbI bBecGJ site-mapstyles__StyledSubsection-sc-13l3sqp-0 evGhsU"
+          class="sc-idXgbr bVkxoK site-mapstyles__StyledSubsection-sc-13l3sqp-0 evGhsU"
         >
           <h1
-            class="sc-jSUZER jmoeZg sc-hHTYSt heAApr"
+            class="sc-pyfCe kmuKUY sc-dmctIk hibXxV"
             id="work-📱"
           >
             Work 📱
@@ -2926,38 +3730,54 @@ exports[`<SiteMap /> should render correctly with blogs and admin user 1`] = `
             class="sc-bcXHqe huaqIH"
           >
             <a
-              class="sc-jrcTuL gYzYAg"
+              class="sc-eDvSVe gaQKQy"
               href="/work"
             >
-              Overview
+              <span
+                class="sc-kDvujY dAKIQE"
+              >
+                Overview
+              </span>
             </a>
             <br />
             <a
-              class="sc-jrcTuL gYzYAg"
+              class="sc-eDvSVe gaQKQy"
               href="/work/backpack"
             >
-              Backpack
+              <span
+                class="sc-kDvujY dAKIQE"
+              >
+                Backpack
+              </span>
             </a>
             <br />
             <a
-              class="sc-jrcTuL gYzYAg"
+              class="sc-eDvSVe gaQKQy"
               href="/work/degree"
             >
-              Degree
+              <span
+                class="sc-kDvujY dAKIQE"
+              >
+                Degree
+              </span>
             </a>
             <br />
             <a
-              class="sc-jrcTuL gYzYAg"
+              class="sc-eDvSVe gaQKQy"
               href="/work/epicc"
             >
-              EPICC
+              <span
+                class="sc-kDvujY dAKIQE"
+              >
+                EPICC
+              </span>
             </a>
           </span>
         </div>
       </div>
     </div>
     <div
-      class="sc-ksBlkl fhBUpU"
+      class="sc-hBxehG hEuIQR"
     >
       <style>
         .js .animated-content__wrapper--hidden {
@@ -2966,13 +3786,13 @@ exports[`<SiteMap /> should render correctly with blogs and admin user 1`] = `
 }
       </style>
       <div
-        class="sc-bqWxrE bpjCNL animated-content__wrapper--hidden"
+        class="sc-ksBlkl jMYerx animated-content__wrapper--hidden"
       >
         <div
-          class="sc-bjfHbI bBecGJ site-mapstyles__StyledSubsection-sc-13l3sqp-0 evGhsU"
+          class="sc-idXgbr bVkxoK site-mapstyles__StyledSubsection-sc-13l3sqp-0 evGhsU"
         >
           <h1
-            class="sc-jSUZER jmoeZg sc-hHTYSt heAApr"
+            class="sc-pyfCe kmuKUY sc-dmctIk hibXxV"
             id="design-🎨"
           >
             Design 🎨
@@ -2981,17 +3801,21 @@ exports[`<SiteMap /> should render correctly with blogs and admin user 1`] = `
             class="sc-bcXHqe huaqIH"
           >
             <a
-              class="sc-jrcTuL gYzYAg"
+              class="sc-eDvSVe gaQKQy"
               href="/privacy-policy"
             >
-              Privacy Policy
+              <span
+                class="sc-kDvujY dAKIQE"
+              >
+                Privacy Policy
+              </span>
             </a>
           </span>
         </div>
       </div>
     </div>
     <div
-      class="sc-ksBlkl fhBUpU"
+      class="sc-hBxehG hEuIQR"
     >
       <style>
         .js .animated-content__wrapper--hidden {
@@ -3000,13 +3824,13 @@ exports[`<SiteMap /> should render correctly with blogs and admin user 1`] = `
 }
       </style>
       <div
-        class="sc-bqWxrE bpjCNL animated-content__wrapper--hidden"
+        class="sc-ksBlkl jMYerx animated-content__wrapper--hidden"
       >
         <div
-          class="sc-bjfHbI bBecGJ site-mapstyles__StyledSubsection-sc-13l3sqp-0 evGhsU"
+          class="sc-idXgbr bVkxoK site-mapstyles__StyledSubsection-sc-13l3sqp-0 evGhsU"
         >
           <h1
-            class="sc-jSUZER jmoeZg sc-hHTYSt heAApr"
+            class="sc-pyfCe kmuKUY sc-dmctIk hibXxV"
             id="other-stuff-🤷‍♂️"
           >
             Other stuff 🤷‍♂️
@@ -3015,45 +3839,65 @@ exports[`<SiteMap /> should render correctly with blogs and admin user 1`] = `
             class="sc-bcXHqe huaqIH"
           >
             <a
-              class="sc-jrcTuL gYzYAg"
+              class="sc-eDvSVe gaQKQy"
               href="/contact"
             >
-              Contact
+              <span
+                class="sc-kDvujY dAKIQE"
+              >
+                Contact
+              </span>
             </a>
             <br />
             <a
-              class="sc-jrcTuL gYzYAg"
+              class="sc-eDvSVe gaQKQy"
               href="/support"
             >
-              Support
+              <span
+                class="sc-kDvujY dAKIQE"
+              >
+                Support
+              </span>
             </a>
             <br />
             <a
-              class="sc-jrcTuL gYzYAg"
+              class="sc-eDvSVe gaQKQy"
               href="/debug"
             >
-              Debug tools
+              <span
+                class="sc-kDvujY dAKIQE"
+              >
+                Debug tools
+              </span>
             </a>
             <br />
             <a
-              class="sc-jrcTuL gYzYAg"
+              class="sc-eDvSVe gaQKQy"
               href="/status"
             >
-              Status
+              <span
+                class="sc-kDvujY dAKIQE"
+              >
+                Status
+              </span>
             </a>
             <br />
             <a
-              class="sc-jrcTuL gYzYAg"
+              class="sc-eDvSVe gaQKQy"
               href="/coffee"
             >
-              Coffee
+              <span
+                class="sc-kDvujY dAKIQE"
+              >
+                Coffee
+              </span>
             </a>
           </span>
         </div>
       </div>
     </div>
     <div
-      class="sc-ksBlkl fhBUpU"
+      class="sc-hBxehG hEuIQR"
     >
       <style>
         .js .animated-content__wrapper--hidden {
@@ -3062,13 +3906,13 @@ exports[`<SiteMap /> should render correctly with blogs and admin user 1`] = `
 }
       </style>
       <div
-        class="sc-bqWxrE bpjCNL animated-content__wrapper--hidden"
+        class="sc-ksBlkl jMYerx animated-content__wrapper--hidden"
       >
         <div
-          class="sc-bjfHbI bBecGJ site-mapstyles__StyledSubsection-sc-13l3sqp-0 evGhsU"
+          class="sc-idXgbr bVkxoK site-mapstyles__StyledSubsection-sc-13l3sqp-0 evGhsU"
         >
           <h1
-            class="sc-jSUZER jmoeZg sc-hHTYSt heAApr"
+            class="sc-pyfCe kmuKUY sc-dmctIk hibXxV"
             id="random-🐉"
           >
             Random 🐉
@@ -3078,17 +3922,21 @@ exports[`<SiteMap /> should render correctly with blogs and admin user 1`] = `
           >
             <a
               aria-label="Robots.txt (opens in a new tab)"
-              class="sc-jrcTuL gYzYAg"
+              class="sc-eDvSVe gaQKQy"
               href="/robots.txt"
               rel="noopener noreferrer"
               target="_blank"
             >
-              Robots.txt
+              <span
+                class="sc-kDvujY dAKIQE"
+              >
+                Robots.txt
+              </span>
               <div
-                class="sc-kDvujY eqIuxE"
+                class="sc-jSUZER ddQtRO"
               >
                 <svg
-                  class="sc-pyfCe eOkUPn sc-ipEyDJ iZDePM"
+                  class="sc-hLBbgP iyAiel sc-gKPRtg dWTLyC"
                   height="18"
                   viewBox="0 0 24 24"
                   width="18"
@@ -3103,17 +3951,21 @@ exports[`<SiteMap /> should render correctly with blogs and admin user 1`] = `
             <br />
             <a
               aria-label="SiteMap.xml (opens in a new tab)"
-              class="sc-jrcTuL gYzYAg"
+              class="sc-eDvSVe gaQKQy"
               href="/sitemap.xml"
               rel="noopener noreferrer"
               target="_blank"
             >
-              SiteMap.xml
+              <span
+                class="sc-kDvujY dAKIQE"
+              >
+                SiteMap.xml
+              </span>
               <div
-                class="sc-kDvujY eqIuxE"
+                class="sc-jSUZER ddQtRO"
               >
                 <svg
-                  class="sc-pyfCe eOkUPn sc-ipEyDJ iZDePM"
+                  class="sc-hLBbgP iyAiel sc-gKPRtg dWTLyC"
                   height="18"
                   viewBox="0 0 24 24"
                   width="18"
@@ -3127,24 +3979,32 @@ exports[`<SiteMap /> should render correctly with blogs and admin user 1`] = `
             </a>
             <br />
             <a
-              class="sc-jrcTuL gYzYAg"
+              class="sc-eDvSVe gaQKQy"
               href="/404"
             >
-              404 error page - not found
+              <span
+                class="sc-kDvujY dAKIQE"
+              >
+                404 error page - not found
+              </span>
             </a>
             <br />
             <a
-              class="sc-jrcTuL gYzYAg"
+              class="sc-eDvSVe gaQKQy"
               href="/teapot"
             >
-              418 error page - I'm a teapot
+              <span
+                class="sc-kDvujY dAKIQE"
+              >
+                418 error page - I'm a teapot
+              </span>
             </a>
           </span>
         </div>
       </div>
     </div>
     <div
-      class="sc-ksBlkl fhBUpU"
+      class="sc-hBxehG hEuIQR"
     >
       <style>
         .js .animated-content__wrapper--hidden {
@@ -3153,13 +4013,13 @@ exports[`<SiteMap /> should render correctly with blogs and admin user 1`] = `
 }
       </style>
       <div
-        class="sc-bqWxrE bpjCNL animated-content__wrapper--hidden"
+        class="sc-ksBlkl jMYerx animated-content__wrapper--hidden"
       >
         <div
-          class="sc-bjfHbI bBecGJ site-mapstyles__StyledSubsection-sc-13l3sqp-0 evGhsU"
+          class="sc-idXgbr bVkxoK site-mapstyles__StyledSubsection-sc-13l3sqp-0 evGhsU"
         >
           <h1
-            class="sc-jSUZER jmoeZg sc-hHTYSt heAApr"
+            class="sc-pyfCe kmuKUY sc-dmctIk hibXxV"
             id="api"
           >
             API
@@ -3168,17 +4028,21 @@ exports[`<SiteMap /> should render correctly with blogs and admin user 1`] = `
             class="sc-bcXHqe huaqIH"
           >
             <a
-              class="sc-jrcTuL gYzYAg"
+              class="sc-eDvSVe gaQKQy"
               href="/api-docs"
             >
-              API docs
+              <span
+                class="sc-kDvujY dAKIQE"
+              >
+                API docs
+              </span>
             </a>
           </span>
         </div>
       </div>
     </div>
     <div
-      class="sc-ksBlkl fhBUpU"
+      class="sc-hBxehG hEuIQR"
     >
       <style>
         .js .animated-content__wrapper--hidden {
@@ -3187,13 +4051,13 @@ exports[`<SiteMap /> should render correctly with blogs and admin user 1`] = `
 }
       </style>
       <div
-        class="sc-bqWxrE bpjCNL animated-content__wrapper--hidden"
+        class="sc-ksBlkl jMYerx animated-content__wrapper--hidden"
       >
         <div
-          class="sc-bjfHbI bBecGJ site-mapstyles__StyledSubsection-sc-13l3sqp-0 evGhsU"
+          class="sc-idXgbr bVkxoK site-mapstyles__StyledSubsection-sc-13l3sqp-0 evGhsU"
         >
           <h1
-            class="sc-jSUZER jmoeZg sc-hHTYSt heAApr"
+            class="sc-pyfCe kmuKUY sc-dmctIk hibXxV"
             id="accounts-🔑"
           >
             Accounts 🔑
@@ -3202,45 +4066,65 @@ exports[`<SiteMap /> should render correctly with blogs and admin user 1`] = `
             class="sc-bcXHqe huaqIH"
           >
             <a
-              class="sc-jrcTuL gYzYAg"
+              class="sc-eDvSVe gaQKQy"
               href="/account"
             >
-              Account
+              <span
+                class="sc-kDvujY dAKIQE"
+              >
+                Account
+              </span>
             </a>
             <br />
             <a
-              class="sc-jrcTuL gYzYAg"
+              class="sc-eDvSVe gaQKQy"
               href="/sign-up"
             >
-              Sign up
+              <span
+                class="sc-kDvujY dAKIQE"
+              >
+                Sign up
+              </span>
             </a>
             <br />
             <a
-              class="sc-jrcTuL gYzYAg"
+              class="sc-eDvSVe gaQKQy"
               href="/login"
             >
-              Log in
+              <span
+                class="sc-kDvujY dAKIQE"
+              >
+                Log in
+              </span>
             </a>
             <br />
             <a
-              class="sc-jrcTuL gYzYAg"
+              class="sc-eDvSVe gaQKQy"
               href="/email-verification"
             >
-              Email verification
+              <span
+                class="sc-kDvujY dAKIQE"
+              >
+                Email verification
+              </span>
             </a>
             <br />
             <a
-              class="sc-jrcTuL gYzYAg"
+              class="sc-eDvSVe gaQKQy"
               href="/magic-login"
             >
-              Magic login
+              <span
+                class="sc-kDvujY dAKIQE"
+              >
+                Magic login
+              </span>
             </a>
           </span>
         </div>
       </div>
     </div>
     <div
-      class="sc-ksBlkl fhBUpU"
+      class="sc-hBxehG hEuIQR"
     >
       <style>
         .js .animated-content__wrapper--hidden {
@@ -3249,13 +4133,13 @@ exports[`<SiteMap /> should render correctly with blogs and admin user 1`] = `
 }
       </style>
       <div
-        class="sc-bqWxrE bpjCNL animated-content__wrapper--hidden"
+        class="sc-ksBlkl jMYerx animated-content__wrapper--hidden"
       >
         <div
-          class="sc-bjfHbI bBecGJ site-mapstyles__StyledSubsection-sc-13l3sqp-0 evGhsU"
+          class="sc-idXgbr bVkxoK site-mapstyles__StyledSubsection-sc-13l3sqp-0 evGhsU"
         >
           <h1
-            class="sc-jSUZER jmoeZg sc-hHTYSt heAApr"
+            class="sc-pyfCe kmuKUY sc-dmctIk hibXxV"
             id="admin-👮‍♂️"
           >
             Admin 👮‍♂️
@@ -3264,52 +4148,76 @@ exports[`<SiteMap /> should render correctly with blogs and admin user 1`] = `
             class="sc-bcXHqe huaqIH"
           >
             <a
-              class="sc-jrcTuL gYzYAg"
+              class="sc-eDvSVe gaQKQy"
               href="/admin"
             >
-              Admin navigation
+              <span
+                class="sc-kDvujY dAKIQE"
+              >
+                Admin navigation
+              </span>
             </a>
             <br />
             <a
-              class="sc-jrcTuL gYzYAg"
+              class="sc-eDvSVe gaQKQy"
               href="/blog"
             >
-              Blogs
+              <span
+                class="sc-kDvujY dAKIQE"
+              >
+                Blogs
+              </span>
             </a>
             <br />
             <a
-              class="sc-jrcTuL gYzYAg"
+              class="sc-eDvSVe gaQKQy"
               href="/admin/analytics"
             >
-              Analytics
+              <span
+                class="sc-kDvujY dAKIQE"
+              >
+                Analytics
+              </span>
             </a>
             <br />
             <a
-              class="sc-jrcTuL gYzYAg"
+              class="sc-eDvSVe gaQKQy"
               href="/admin/emails"
             >
-              Emails
+              <span
+                class="sc-kDvujY dAKIQE"
+              >
+                Emails
+              </span>
             </a>
             <br />
             <a
-              class="sc-jrcTuL gYzYAg"
+              class="sc-eDvSVe gaQKQy"
               href="/admin/notifications"
             >
-              Notifications
+              <span
+                class="sc-kDvujY dAKIQE"
+              >
+                Notifications
+              </span>
             </a>
             <br />
             <a
-              class="sc-jrcTuL gYzYAg"
+              class="sc-eDvSVe gaQKQy"
               href="/admin/users"
             >
-              Users
+              <span
+                class="sc-kDvujY dAKIQE"
+              >
+                Users
+              </span>
             </a>
           </span>
         </div>
       </div>
     </div>
     <div
-      class="sc-ksBlkl fhBUpU"
+      class="sc-hBxehG hEuIQR"
     >
       <style>
         .js .animated-content__wrapper--hidden {
@@ -3318,13 +4226,13 @@ exports[`<SiteMap /> should render correctly with blogs and admin user 1`] = `
 }
       </style>
       <div
-        class="sc-bqWxrE bpjCNL animated-content__wrapper--hidden"
+        class="sc-ksBlkl jMYerx animated-content__wrapper--hidden"
       >
         <div
-          class="sc-bjfHbI bBecGJ site-mapstyles__StyledSubsection-sc-13l3sqp-0 evGhsU"
+          class="sc-idXgbr bVkxoK site-mapstyles__StyledSubsection-sc-13l3sqp-0 evGhsU"
         >
           <h1
-            class="sc-jSUZER jmoeZg sc-hHTYSt heAApr"
+            class="sc-pyfCe kmuKUY sc-dmctIk hibXxV"
             id="redirects-👉"
           >
             Redirects 👉
@@ -3334,316 +4242,456 @@ exports[`<SiteMap /> should render correctly with blogs and admin user 1`] = `
           >
             <div>
               <a
-                class="sc-jrcTuL gYzYAg"
+                class="sc-eDvSVe gaQKQy"
                 href="/codebase"
               >
-                /codebase ⇒ https://github.com/georgegillams/georgegillams.co.uk
+                <span
+                  class="sc-kDvujY dAKIQE"
+                >
+                  /codebase ⇒ https://github.com/georgegillams/georgegillams.co.uk
+                </span>
               </a>
               <br />
             </div>
             <div>
               <a
-                class="sc-jrcTuL gYzYAg"
+                class="sc-eDvSVe gaQKQy"
                 href="/copyright"
               >
-                /copyright ⇒ https://creativecommons.org/licenses/by-sa/3.0/
+                <span
+                  class="sc-kDvujY dAKIQE"
+                >
+                  /copyright ⇒ https://creativecommons.org/licenses/by-sa/3.0/
+                </span>
               </a>
               <br />
             </div>
             <div>
               <a
-                class="sc-jrcTuL gYzYAg"
+                class="sc-eDvSVe gaQKQy"
                 href="/flickr"
               >
-                /flickr ⇒ https://www.flickr.com/people/georgegillams
+                <span
+                  class="sc-kDvujY dAKIQE"
+                >
+                  /flickr ⇒ https://www.flickr.com/people/georgegillams
+                </span>
               </a>
               <br />
             </div>
             <div>
               <a
-                class="sc-jrcTuL gYzYAg"
+                class="sc-eDvSVe gaQKQy"
                 href="/monzo"
               >
-                /monzo ⇒ https://join.monzo.com/r/vjd3d74
+                <span
+                  class="sc-kDvujY dAKIQE"
+                >
+                  /monzo ⇒ https://join.monzo.com/r/vjd3d74
+                </span>
               </a>
               <br />
             </div>
             <div>
               <a
-                class="sc-jrcTuL gYzYAg"
+                class="sc-eDvSVe gaQKQy"
                 href="/github"
               >
-                /github ⇒ https://github.com/georgegillams
+                <span
+                  class="sc-kDvujY dAKIQE"
+                >
+                  /github ⇒ https://github.com/georgegillams
+                </span>
               </a>
               <br />
             </div>
             <div>
               <a
-                class="sc-jrcTuL gYzYAg"
+                class="sc-eDvSVe gaQKQy"
                 href="/stackoverflow"
               >
-                /stackoverflow ⇒ https://stackoverflow.com/users/14463713/georgegillams
+                <span
+                  class="sc-kDvujY dAKIQE"
+                >
+                  /stackoverflow ⇒ https://stackoverflow.com/users/14463713/georgegillams
+                </span>
               </a>
               <br />
             </div>
             <div>
               <a
-                class="sc-jrcTuL gYzYAg"
+                class="sc-eDvSVe gaQKQy"
                 href="/gurushots"
               >
-                /gurushots ⇒ https://gurushots.com/georgegillams/photos
+                <span
+                  class="sc-kDvujY dAKIQE"
+                >
+                  /gurushots ⇒ https://gurushots.com/georgegillams/photos
+                </span>
               </a>
               <br />
             </div>
             <div>
               <a
-                class="sc-jrcTuL gYzYAg"
+                class="sc-eDvSVe gaQKQy"
                 href="/unsplash"
               >
-                /unsplash ⇒ https://unsplash.com/@georgegillams/
+                <span
+                  class="sc-kDvujY dAKIQE"
+                >
+                  /unsplash ⇒ https://unsplash.com/@georgegillams/
+                </span>
               </a>
               <br />
             </div>
             <div>
               <a
-                class="sc-jrcTuL gYzYAg"
+                class="sc-eDvSVe gaQKQy"
                 href="/strava"
               >
-                /strava ⇒ https://www.strava.com/athletes/7221483
+                <span
+                  class="sc-kDvujY dAKIQE"
+                >
+                  /strava ⇒ https://www.strava.com/athletes/7221483
+                </span>
               </a>
               <br />
             </div>
             <div>
               <a
-                class="sc-jrcTuL gYzYAg"
+                class="sc-eDvSVe gaQKQy"
                 href="/linkedin"
               >
-                /linkedin ⇒ https://www.linkedin.com/in/george-gillams-37537077
+                <span
+                  class="sc-kDvujY dAKIQE"
+                >
+                  /linkedin ⇒ https://www.linkedin.com/in/george-gillams-37537077
+                </span>
               </a>
               <br />
             </div>
             <div>
               <a
-                class="sc-jrcTuL gYzYAg"
+                class="sc-eDvSVe gaQKQy"
                 href="/twitter"
               >
-                /twitter ⇒ https://twitter.com/georgegillams
+                <span
+                  class="sc-kDvujY dAKIQE"
+                >
+                  /twitter ⇒ https://twitter.com/georgegillams
+                </span>
               </a>
               <br />
             </div>
             <div>
               <a
-                class="sc-jrcTuL gYzYAg"
+                class="sc-eDvSVe gaQKQy"
                 href="/spartan"
               >
-                /spartan ⇒ https://uk.spartan.com/en/race/profile/3661120
+                <span
+                  class="sc-kDvujY dAKIQE"
+                >
+                  /spartan ⇒ https://uk.spartan.com/en/race/profile/3661120
+                </span>
               </a>
               <br />
             </div>
             <div>
               <a
-                class="sc-jrcTuL gYzYAg"
+                class="sc-eDvSVe gaQKQy"
                 href="/wp-admin"
               >
-                /wp-admin ⇒ /admin
+                <span
+                  class="sc-kDvujY dAKIQE"
+                >
+                  /wp-admin ⇒ /admin
+                </span>
               </a>
               <br />
             </div>
             <div>
               <a
-                class="sc-jrcTuL gYzYAg"
+                class="sc-eDvSVe gaQKQy"
                 href="/about"
               >
-                /about ⇒ /
+                <span
+                  class="sc-kDvujY dAKIQE"
+                >
+                  /about ⇒ /
+                </span>
               </a>
               <br />
             </div>
             <div>
               <a
-                class="sc-jrcTuL gYzYAg"
+                class="sc-eDvSVe gaQKQy"
                 href="/site-map"
               >
-                /site-map ⇒ /sitemap
+                <span
+                  class="sc-kDvujY dAKIQE"
+                >
+                  /site-map ⇒ /sitemap
+                </span>
               </a>
               <br />
             </div>
             <div>
               <a
-                class="sc-jrcTuL gYzYAg"
+                class="sc-eDvSVe gaQKQy"
                 href="/about/degree"
               >
-                /about/degree ⇒ /work/degree
+                <span
+                  class="sc-kDvujY dAKIQE"
+                >
+                  /about/degree ⇒ /work/degree
+                </span>
               </a>
               <br />
             </div>
             <div>
               <a
-                class="sc-jrcTuL gYzYAg"
+                class="sc-eDvSVe gaQKQy"
                 href="/articles/tough-mudder"
               >
-                /articles/tough-mudder ⇒ /blog/tough-mudder
+                <span
+                  class="sc-kDvujY dAKIQE"
+                >
+                  /articles/tough-mudder ⇒ /blog/tough-mudder
+                </span>
               </a>
               <br />
             </div>
             <div>
               <a
-                class="sc-jrcTuL gYzYAg"
+                class="sc-eDvSVe gaQKQy"
                 href="/articles/net-neutrality"
               >
-                /articles/net-neutrality ⇒ /blog/net-neutrality
+                <span
+                  class="sc-kDvujY dAKIQE"
+                >
+                  /articles/net-neutrality ⇒ /blog/net-neutrality
+                </span>
               </a>
               <br />
             </div>
             <div>
               <a
-                class="sc-jrcTuL gYzYAg"
+                class="sc-eDvSVe gaQKQy"
                 href="/articles/vim"
               >
-                /articles/vim ⇒ /blog/vim
+                <span
+                  class="sc-kDvujY dAKIQE"
+                >
+                  /articles/vim ⇒ /blog/vim
+                </span>
               </a>
               <br />
             </div>
             <div>
               <a
-                class="sc-jrcTuL gYzYAg"
+                class="sc-eDvSVe gaQKQy"
                 href="/articles/list"
               >
-                /articles/list ⇒ /blog
+                <span
+                  class="sc-kDvujY dAKIQE"
+                >
+                  /articles/list ⇒ /blog
+                </span>
               </a>
               <br />
             </div>
             <div>
               <a
-                class="sc-jrcTuL gYzYAg"
+                class="sc-eDvSVe gaQKQy"
                 href="/articles"
               >
-                /articles ⇒ /blog
+                <span
+                  class="sc-kDvujY dAKIQE"
+                >
+                  /articles ⇒ /blog
+                </span>
               </a>
               <br />
             </div>
             <div>
               <a
-                class="sc-jrcTuL gYzYAg"
+                class="sc-eDvSVe gaQKQy"
                 href="/net-neutrality"
               >
-                /net-neutrality ⇒ /blog/net-neutrality
+                <span
+                  class="sc-kDvujY dAKIQE"
+                >
+                  /net-neutrality ⇒ /blog/net-neutrality
+                </span>
               </a>
               <br />
             </div>
             <div>
               <a
-                class="sc-jrcTuL gYzYAg"
+                class="sc-eDvSVe gaQKQy"
                 href="/work/side-projects"
               >
-                /work/side-projects ⇒ /work
+                <span
+                  class="sc-kDvujY dAKIQE"
+                >
+                  /work/side-projects ⇒ /work
+                </span>
               </a>
               <br />
             </div>
             <div>
               <a
-                class="sc-jrcTuL gYzYAg"
+                class="sc-eDvSVe gaQKQy"
                 href="/blog/view"
               >
-                /blog/view ⇒ /blog
+                <span
+                  class="sc-kDvujY dAKIQE"
+                >
+                  /blog/view ⇒ /blog
+                </span>
               </a>
               <br />
             </div>
             <div>
               <a
-                class="sc-jrcTuL gYzYAg"
+                class="sc-eDvSVe gaQKQy"
                 href="/travel"
               >
-                /travel ⇒ /blog
+                <span
+                  class="sc-kDvujY dAKIQE"
+                >
+                  /travel ⇒ /blog
+                </span>
               </a>
               <br />
             </div>
             <div>
               <a
-                class="sc-jrcTuL gYzYAg"
+                class="sc-eDvSVe gaQKQy"
                 href="/travel/list"
               >
-                /travel/list ⇒ /blog
+                <span
+                  class="sc-kDvujY dAKIQE"
+                >
+                  /travel/list ⇒ /blog
+                </span>
               </a>
               <br />
             </div>
             <div>
               <a
-                class="sc-jrcTuL gYzYAg"
+                class="sc-eDvSVe gaQKQy"
                 href="/blog/view?id=tg5x7po9"
               >
-                /blog/view?id=tg5x7po9 ⇒ /blog/tough-mudder
+                <span
+                  class="sc-kDvujY dAKIQE"
+                >
+                  /blog/view?id=tg5x7po9 ⇒ /blog/tough-mudder
+                </span>
               </a>
               <br />
             </div>
             <div>
               <a
-                class="sc-jrcTuL gYzYAg"
+                class="sc-eDvSVe gaQKQy"
                 href="/blog/view?id=lqngy"
               >
-                /blog/view?id=lqngy ⇒ /blog/lightroom-workflow
+                <span
+                  class="sc-kDvujY dAKIQE"
+                >
+                  /blog/view?id=lqngy ⇒ /blog/lightroom-workflow
+                </span>
               </a>
               <br />
             </div>
             <div>
               <a
-                class="sc-jrcTuL gYzYAg"
+                class="sc-eDvSVe gaQKQy"
                 href="/blog/view?id=w85aht"
               >
-                /blog/view?id=w85aht ⇒ /blog/net-neutrality
+                <span
+                  class="sc-kDvujY dAKIQE"
+                >
+                  /blog/view?id=w85aht ⇒ /blog/net-neutrality
+                </span>
               </a>
               <br />
             </div>
             <div>
               <a
-                class="sc-jrcTuL gYzYAg"
+                class="sc-eDvSVe gaQKQy"
                 href="/blog/view?id=azcpjh"
               >
-                /blog/view?id=azcpjh ⇒ /blog/vim
+                <span
+                  class="sc-kDvujY dAKIQE"
+                >
+                  /blog/view?id=azcpjh ⇒ /blog/vim
+                </span>
               </a>
               <br />
             </div>
             <div>
               <a
-                class="sc-jrcTuL gYzYAg"
+                class="sc-eDvSVe gaQKQy"
                 href="/blog/view?id=y77dnh"
               >
-                /blog/view?id=y77dnh ⇒ /blog/uk-bank-security
+                <span
+                  class="sc-kDvujY dAKIQE"
+                >
+                  /blog/view?id=y77dnh ⇒ /blog/uk-bank-security
+                </span>
               </a>
               <br />
             </div>
             <div>
               <a
-                class="sc-jrcTuL gYzYAg"
+                class="sc-eDvSVe gaQKQy"
                 href="/art"
               >
-                /art ⇒ /photography
+                <span
+                  class="sc-kDvujY dAKIQE"
+                >
+                  /art ⇒ /photography
+                </span>
               </a>
               <br />
             </div>
             <div>
               <a
-                class="sc-jrcTuL gYzYAg"
+                class="sc-eDvSVe gaQKQy"
                 href="/photoshop"
               >
-                /photoshop ⇒ /photography
+                <span
+                  class="sc-kDvujY dAKIQE"
+                >
+                  /photoshop ⇒ /photography
+                </span>
               </a>
               <br />
             </div>
             <div>
               <a
-                class="sc-jrcTuL gYzYAg"
+                class="sc-eDvSVe gaQKQy"
                 href="/phot"
               >
-                /phot ⇒ /photography
+                <span
+                  class="sc-kDvujY dAKIQE"
+                >
+                  /phot ⇒ /photography
+                </span>
               </a>
               <br />
             </div>
             <div>
               <a
-                class="sc-jrcTuL gYzYAg"
+                class="sc-eDvSVe gaQKQy"
                 href="/photo"
               >
-                /photo ⇒ /photography
+                <span
+                  class="sc-kDvujY dAKIQE"
+                >
+                  /photo ⇒ /photography
+                </span>
               </a>
               <br />
             </div>
@@ -3658,20 +4706,20 @@ exports[`<SiteMap /> should render correctly with blogs and admin user 1`] = `
 exports[`<SiteMap /> should render correctly with ssrBlogs 1`] = `
 <div>
   <div
-    class="sc-fEXmlR lhvDzD page-containerstyles__StyledPageContainer-sc-19l7k4-0"
+    class="sc-bjfHbI gUxyYC page-containerstyles__StyledPageContainer-sc-19l7k4-0"
     width="default"
   >
     <div
-      class="sc-fnGiBr bfiIDr"
+      class="sc-fEXmlR rMnCl"
     >
       <h1
-        class="sc-hLBbgP dguiMA sc-csuSiG hZrmqD"
+        class="sc-iBYQkv joDGmp sc-eDWCr fRcVBw"
       >
         Site map
       </h1>
     </div>
     <div
-      class="sc-ksBlkl fhBUpU"
+      class="sc-hBxehG hEuIQR"
     >
       <style>
         .js .animated-content__wrapper--hidden {
@@ -3680,13 +4728,13 @@ exports[`<SiteMap /> should render correctly with ssrBlogs 1`] = `
 }
       </style>
       <div
-        class="sc-bqWxrE bpjCNL animated-content__wrapper--hidden"
+        class="sc-ksBlkl jMYerx animated-content__wrapper--hidden"
       >
         <div
-          class="sc-bjfHbI bBecGJ site-mapstyles__StyledSubsection-sc-13l3sqp-0 evGhsU"
+          class="sc-idXgbr bVkxoK site-mapstyles__StyledSubsection-sc-13l3sqp-0 evGhsU"
         >
           <h1
-            class="sc-jSUZER jmoeZg sc-hHTYSt heAApr"
+            class="sc-pyfCe kmuKUY sc-dmctIk hibXxV"
             id="blog-📝"
           >
             Blog 📝
@@ -3695,17 +4743,25 @@ exports[`<SiteMap /> should render correctly with ssrBlogs 1`] = `
             class="sc-bcXHqe huaqIH"
           >
             <a
-              class="sc-jrcTuL gYzYAg"
+              class="sc-eDvSVe gaQKQy"
               href="/blog"
             >
-              Blog list
+              <span
+                class="sc-kDvujY dAKIQE"
+              >
+                Blog list
+              </span>
             </a>
             <br />
             <a
-              class="sc-jrcTuL gYzYAg"
+              class="sc-eDvSVe gaQKQy"
               href="/blog/asdfg"
             >
-              Blog 1 🎉
+              <span
+                class="sc-kDvujY dAKIQE"
+              >
+                Blog 1 🎉
+              </span>
             </a>
             <br />
           </span>
@@ -3713,7 +4769,7 @@ exports[`<SiteMap /> should render correctly with ssrBlogs 1`] = `
       </div>
     </div>
     <div
-      class="sc-ksBlkl fhBUpU"
+      class="sc-hBxehG hEuIQR"
     >
       <style>
         .js .animated-content__wrapper--hidden {
@@ -3722,13 +4778,13 @@ exports[`<SiteMap /> should render correctly with ssrBlogs 1`] = `
 }
       </style>
       <div
-        class="sc-bqWxrE bpjCNL animated-content__wrapper--hidden"
+        class="sc-ksBlkl jMYerx animated-content__wrapper--hidden"
       >
         <div
-          class="sc-bjfHbI bBecGJ site-mapstyles__StyledSubsection-sc-13l3sqp-0 evGhsU"
+          class="sc-idXgbr bVkxoK site-mapstyles__StyledSubsection-sc-13l3sqp-0 evGhsU"
         >
           <h1
-            class="sc-jSUZER jmoeZg sc-hHTYSt heAApr"
+            class="sc-pyfCe kmuKUY sc-dmctIk hibXxV"
             id="photography-📷"
           >
             Photography 📷
@@ -3737,17 +4793,21 @@ exports[`<SiteMap /> should render correctly with ssrBlogs 1`] = `
             class="sc-bcXHqe huaqIH"
           >
             <a
-              class="sc-jrcTuL gYzYAg"
+              class="sc-eDvSVe gaQKQy"
               href="/photography"
             >
-              Photography
+              <span
+                class="sc-kDvujY dAKIQE"
+              >
+                Photography
+              </span>
             </a>
           </span>
         </div>
       </div>
     </div>
     <div
-      class="sc-ksBlkl fhBUpU"
+      class="sc-hBxehG hEuIQR"
     >
       <style>
         .js .animated-content__wrapper--hidden {
@@ -3756,13 +4816,13 @@ exports[`<SiteMap /> should render correctly with ssrBlogs 1`] = `
 }
       </style>
       <div
-        class="sc-bqWxrE bpjCNL animated-content__wrapper--hidden"
+        class="sc-ksBlkl jMYerx animated-content__wrapper--hidden"
       >
         <div
-          class="sc-bjfHbI bBecGJ site-mapstyles__StyledSubsection-sc-13l3sqp-0 evGhsU"
+          class="sc-idXgbr bVkxoK site-mapstyles__StyledSubsection-sc-13l3sqp-0 evGhsU"
         >
           <h1
-            class="sc-jSUZER jmoeZg sc-hHTYSt heAApr"
+            class="sc-pyfCe kmuKUY sc-dmctIk hibXxV"
             id="medals-🏅"
           >
             Medals 🏅
@@ -3771,17 +4831,21 @@ exports[`<SiteMap /> should render correctly with ssrBlogs 1`] = `
             class="sc-bcXHqe huaqIH"
           >
             <a
-              class="sc-jrcTuL gYzYAg"
+              class="sc-eDvSVe gaQKQy"
               href="/medals"
             >
-              Medals
+              <span
+                class="sc-kDvujY dAKIQE"
+              >
+                Medals
+              </span>
             </a>
           </span>
         </div>
       </div>
     </div>
     <div
-      class="sc-ksBlkl fhBUpU"
+      class="sc-hBxehG hEuIQR"
     >
       <style>
         .js .animated-content__wrapper--hidden {
@@ -3790,13 +4854,13 @@ exports[`<SiteMap /> should render correctly with ssrBlogs 1`] = `
 }
       </style>
       <div
-        class="sc-bqWxrE bpjCNL animated-content__wrapper--hidden"
+        class="sc-ksBlkl jMYerx animated-content__wrapper--hidden"
       >
         <div
-          class="sc-bjfHbI bBecGJ site-mapstyles__StyledSubsection-sc-13l3sqp-0 evGhsU"
+          class="sc-idXgbr bVkxoK site-mapstyles__StyledSubsection-sc-13l3sqp-0 evGhsU"
         >
           <h1
-            class="sc-jSUZER jmoeZg sc-hHTYSt heAApr"
+            class="sc-pyfCe kmuKUY sc-dmctIk hibXxV"
             id="work-📱"
           >
             Work 📱
@@ -3805,38 +4869,54 @@ exports[`<SiteMap /> should render correctly with ssrBlogs 1`] = `
             class="sc-bcXHqe huaqIH"
           >
             <a
-              class="sc-jrcTuL gYzYAg"
+              class="sc-eDvSVe gaQKQy"
               href="/work"
             >
-              Overview
+              <span
+                class="sc-kDvujY dAKIQE"
+              >
+                Overview
+              </span>
             </a>
             <br />
             <a
-              class="sc-jrcTuL gYzYAg"
+              class="sc-eDvSVe gaQKQy"
               href="/work/backpack"
             >
-              Backpack
+              <span
+                class="sc-kDvujY dAKIQE"
+              >
+                Backpack
+              </span>
             </a>
             <br />
             <a
-              class="sc-jrcTuL gYzYAg"
+              class="sc-eDvSVe gaQKQy"
               href="/work/degree"
             >
-              Degree
+              <span
+                class="sc-kDvujY dAKIQE"
+              >
+                Degree
+              </span>
             </a>
             <br />
             <a
-              class="sc-jrcTuL gYzYAg"
+              class="sc-eDvSVe gaQKQy"
               href="/work/epicc"
             >
-              EPICC
+              <span
+                class="sc-kDvujY dAKIQE"
+              >
+                EPICC
+              </span>
             </a>
           </span>
         </div>
       </div>
     </div>
     <div
-      class="sc-ksBlkl fhBUpU"
+      class="sc-hBxehG hEuIQR"
     >
       <style>
         .js .animated-content__wrapper--hidden {
@@ -3845,13 +4925,13 @@ exports[`<SiteMap /> should render correctly with ssrBlogs 1`] = `
 }
       </style>
       <div
-        class="sc-bqWxrE bpjCNL animated-content__wrapper--hidden"
+        class="sc-ksBlkl jMYerx animated-content__wrapper--hidden"
       >
         <div
-          class="sc-bjfHbI bBecGJ site-mapstyles__StyledSubsection-sc-13l3sqp-0 evGhsU"
+          class="sc-idXgbr bVkxoK site-mapstyles__StyledSubsection-sc-13l3sqp-0 evGhsU"
         >
           <h1
-            class="sc-jSUZER jmoeZg sc-hHTYSt heAApr"
+            class="sc-pyfCe kmuKUY sc-dmctIk hibXxV"
             id="design-🎨"
           >
             Design 🎨
@@ -3860,17 +4940,21 @@ exports[`<SiteMap /> should render correctly with ssrBlogs 1`] = `
             class="sc-bcXHqe huaqIH"
           >
             <a
-              class="sc-jrcTuL gYzYAg"
+              class="sc-eDvSVe gaQKQy"
               href="/privacy-policy"
             >
-              Privacy Policy
+              <span
+                class="sc-kDvujY dAKIQE"
+              >
+                Privacy Policy
+              </span>
             </a>
           </span>
         </div>
       </div>
     </div>
     <div
-      class="sc-ksBlkl fhBUpU"
+      class="sc-hBxehG hEuIQR"
     >
       <style>
         .js .animated-content__wrapper--hidden {
@@ -3879,13 +4963,13 @@ exports[`<SiteMap /> should render correctly with ssrBlogs 1`] = `
 }
       </style>
       <div
-        class="sc-bqWxrE bpjCNL animated-content__wrapper--hidden"
+        class="sc-ksBlkl jMYerx animated-content__wrapper--hidden"
       >
         <div
-          class="sc-bjfHbI bBecGJ site-mapstyles__StyledSubsection-sc-13l3sqp-0 evGhsU"
+          class="sc-idXgbr bVkxoK site-mapstyles__StyledSubsection-sc-13l3sqp-0 evGhsU"
         >
           <h1
-            class="sc-jSUZER jmoeZg sc-hHTYSt heAApr"
+            class="sc-pyfCe kmuKUY sc-dmctIk hibXxV"
             id="other-stuff-🤷‍♂️"
           >
             Other stuff 🤷‍♂️
@@ -3894,45 +4978,65 @@ exports[`<SiteMap /> should render correctly with ssrBlogs 1`] = `
             class="sc-bcXHqe huaqIH"
           >
             <a
-              class="sc-jrcTuL gYzYAg"
+              class="sc-eDvSVe gaQKQy"
               href="/contact"
             >
-              Contact
+              <span
+                class="sc-kDvujY dAKIQE"
+              >
+                Contact
+              </span>
             </a>
             <br />
             <a
-              class="sc-jrcTuL gYzYAg"
+              class="sc-eDvSVe gaQKQy"
               href="/support"
             >
-              Support
+              <span
+                class="sc-kDvujY dAKIQE"
+              >
+                Support
+              </span>
             </a>
             <br />
             <a
-              class="sc-jrcTuL gYzYAg"
+              class="sc-eDvSVe gaQKQy"
               href="/debug"
             >
-              Debug tools
+              <span
+                class="sc-kDvujY dAKIQE"
+              >
+                Debug tools
+              </span>
             </a>
             <br />
             <a
-              class="sc-jrcTuL gYzYAg"
+              class="sc-eDvSVe gaQKQy"
               href="/status"
             >
-              Status
+              <span
+                class="sc-kDvujY dAKIQE"
+              >
+                Status
+              </span>
             </a>
             <br />
             <a
-              class="sc-jrcTuL gYzYAg"
+              class="sc-eDvSVe gaQKQy"
               href="/coffee"
             >
-              Coffee
+              <span
+                class="sc-kDvujY dAKIQE"
+              >
+                Coffee
+              </span>
             </a>
           </span>
         </div>
       </div>
     </div>
     <div
-      class="sc-ksBlkl fhBUpU"
+      class="sc-hBxehG hEuIQR"
     >
       <style>
         .js .animated-content__wrapper--hidden {
@@ -3941,13 +5045,13 @@ exports[`<SiteMap /> should render correctly with ssrBlogs 1`] = `
 }
       </style>
       <div
-        class="sc-bqWxrE bpjCNL animated-content__wrapper--hidden"
+        class="sc-ksBlkl jMYerx animated-content__wrapper--hidden"
       >
         <div
-          class="sc-bjfHbI bBecGJ site-mapstyles__StyledSubsection-sc-13l3sqp-0 evGhsU"
+          class="sc-idXgbr bVkxoK site-mapstyles__StyledSubsection-sc-13l3sqp-0 evGhsU"
         >
           <h1
-            class="sc-jSUZER jmoeZg sc-hHTYSt heAApr"
+            class="sc-pyfCe kmuKUY sc-dmctIk hibXxV"
             id="random-🐉"
           >
             Random 🐉
@@ -3957,17 +5061,21 @@ exports[`<SiteMap /> should render correctly with ssrBlogs 1`] = `
           >
             <a
               aria-label="Robots.txt (opens in a new tab)"
-              class="sc-jrcTuL gYzYAg"
+              class="sc-eDvSVe gaQKQy"
               href="/robots.txt"
               rel="noopener noreferrer"
               target="_blank"
             >
-              Robots.txt
+              <span
+                class="sc-kDvujY dAKIQE"
+              >
+                Robots.txt
+              </span>
               <div
-                class="sc-kDvujY eqIuxE"
+                class="sc-jSUZER ddQtRO"
               >
                 <svg
-                  class="sc-pyfCe eOkUPn sc-ipEyDJ iZDePM"
+                  class="sc-hLBbgP iyAiel sc-gKPRtg dWTLyC"
                   height="18"
                   viewBox="0 0 24 24"
                   width="18"
@@ -3982,17 +5090,21 @@ exports[`<SiteMap /> should render correctly with ssrBlogs 1`] = `
             <br />
             <a
               aria-label="SiteMap.xml (opens in a new tab)"
-              class="sc-jrcTuL gYzYAg"
+              class="sc-eDvSVe gaQKQy"
               href="/sitemap.xml"
               rel="noopener noreferrer"
               target="_blank"
             >
-              SiteMap.xml
+              <span
+                class="sc-kDvujY dAKIQE"
+              >
+                SiteMap.xml
+              </span>
               <div
-                class="sc-kDvujY eqIuxE"
+                class="sc-jSUZER ddQtRO"
               >
                 <svg
-                  class="sc-pyfCe eOkUPn sc-ipEyDJ iZDePM"
+                  class="sc-hLBbgP iyAiel sc-gKPRtg dWTLyC"
                   height="18"
                   viewBox="0 0 24 24"
                   width="18"
@@ -4006,24 +5118,32 @@ exports[`<SiteMap /> should render correctly with ssrBlogs 1`] = `
             </a>
             <br />
             <a
-              class="sc-jrcTuL gYzYAg"
+              class="sc-eDvSVe gaQKQy"
               href="/404"
             >
-              404 error page - not found
+              <span
+                class="sc-kDvujY dAKIQE"
+              >
+                404 error page - not found
+              </span>
             </a>
             <br />
             <a
-              class="sc-jrcTuL gYzYAg"
+              class="sc-eDvSVe gaQKQy"
               href="/teapot"
             >
-              418 error page - I'm a teapot
+              <span
+                class="sc-kDvujY dAKIQE"
+              >
+                418 error page - I'm a teapot
+              </span>
             </a>
           </span>
         </div>
       </div>
     </div>
     <div
-      class="sc-ksBlkl fhBUpU"
+      class="sc-hBxehG hEuIQR"
     >
       <style>
         .js .animated-content__wrapper--hidden {
@@ -4032,13 +5152,13 @@ exports[`<SiteMap /> should render correctly with ssrBlogs 1`] = `
 }
       </style>
       <div
-        class="sc-bqWxrE bpjCNL animated-content__wrapper--hidden"
+        class="sc-ksBlkl jMYerx animated-content__wrapper--hidden"
       >
         <div
-          class="sc-bjfHbI bBecGJ site-mapstyles__StyledSubsection-sc-13l3sqp-0 evGhsU"
+          class="sc-idXgbr bVkxoK site-mapstyles__StyledSubsection-sc-13l3sqp-0 evGhsU"
         >
           <h1
-            class="sc-jSUZER jmoeZg sc-hHTYSt heAApr"
+            class="sc-pyfCe kmuKUY sc-dmctIk hibXxV"
             id="api"
           >
             API
@@ -4047,17 +5167,21 @@ exports[`<SiteMap /> should render correctly with ssrBlogs 1`] = `
             class="sc-bcXHqe huaqIH"
           >
             <a
-              class="sc-jrcTuL gYzYAg"
+              class="sc-eDvSVe gaQKQy"
               href="/api-docs"
             >
-              API docs
+              <span
+                class="sc-kDvujY dAKIQE"
+              >
+                API docs
+              </span>
             </a>
           </span>
         </div>
       </div>
     </div>
     <div
-      class="sc-ksBlkl fhBUpU"
+      class="sc-hBxehG hEuIQR"
     >
       <style>
         .js .animated-content__wrapper--hidden {
@@ -4066,13 +5190,13 @@ exports[`<SiteMap /> should render correctly with ssrBlogs 1`] = `
 }
       </style>
       <div
-        class="sc-bqWxrE bpjCNL animated-content__wrapper--hidden"
+        class="sc-ksBlkl jMYerx animated-content__wrapper--hidden"
       >
         <div
-          class="sc-bjfHbI bBecGJ site-mapstyles__StyledSubsection-sc-13l3sqp-0 evGhsU"
+          class="sc-idXgbr bVkxoK site-mapstyles__StyledSubsection-sc-13l3sqp-0 evGhsU"
         >
           <h1
-            class="sc-jSUZER jmoeZg sc-hHTYSt heAApr"
+            class="sc-pyfCe kmuKUY sc-dmctIk hibXxV"
             id="accounts-🔑"
           >
             Accounts 🔑
@@ -4081,45 +5205,65 @@ exports[`<SiteMap /> should render correctly with ssrBlogs 1`] = `
             class="sc-bcXHqe huaqIH"
           >
             <a
-              class="sc-jrcTuL gYzYAg"
+              class="sc-eDvSVe gaQKQy"
               href="/account"
             >
-              Account
+              <span
+                class="sc-kDvujY dAKIQE"
+              >
+                Account
+              </span>
             </a>
             <br />
             <a
-              class="sc-jrcTuL gYzYAg"
+              class="sc-eDvSVe gaQKQy"
               href="/sign-up"
             >
-              Sign up
+              <span
+                class="sc-kDvujY dAKIQE"
+              >
+                Sign up
+              </span>
             </a>
             <br />
             <a
-              class="sc-jrcTuL gYzYAg"
+              class="sc-eDvSVe gaQKQy"
               href="/login"
             >
-              Log in
+              <span
+                class="sc-kDvujY dAKIQE"
+              >
+                Log in
+              </span>
             </a>
             <br />
             <a
-              class="sc-jrcTuL gYzYAg"
+              class="sc-eDvSVe gaQKQy"
               href="/email-verification"
             >
-              Email verification
+              <span
+                class="sc-kDvujY dAKIQE"
+              >
+                Email verification
+              </span>
             </a>
             <br />
             <a
-              class="sc-jrcTuL gYzYAg"
+              class="sc-eDvSVe gaQKQy"
               href="/magic-login"
             >
-              Magic login
+              <span
+                class="sc-kDvujY dAKIQE"
+              >
+                Magic login
+              </span>
             </a>
           </span>
         </div>
       </div>
     </div>
     <div
-      class="sc-ksBlkl fhBUpU"
+      class="sc-hBxehG hEuIQR"
     >
       <style>
         .js .animated-content__wrapper--hidden {
@@ -4128,13 +5272,13 @@ exports[`<SiteMap /> should render correctly with ssrBlogs 1`] = `
 }
       </style>
       <div
-        class="sc-bqWxrE bpjCNL animated-content__wrapper--hidden"
+        class="sc-ksBlkl jMYerx animated-content__wrapper--hidden"
       >
         <div
-          class="sc-bjfHbI bBecGJ site-mapstyles__StyledSubsection-sc-13l3sqp-0 evGhsU"
+          class="sc-idXgbr bVkxoK site-mapstyles__StyledSubsection-sc-13l3sqp-0 evGhsU"
         >
           <h1
-            class="sc-jSUZER jmoeZg sc-hHTYSt heAApr"
+            class="sc-pyfCe kmuKUY sc-dmctIk hibXxV"
             id="admin-👮‍♂️"
           >
             Admin 👮‍♂️
@@ -4143,52 +5287,76 @@ exports[`<SiteMap /> should render correctly with ssrBlogs 1`] = `
             class="sc-bcXHqe huaqIH"
           >
             <a
-              class="sc-jrcTuL gYzYAg"
+              class="sc-eDvSVe gaQKQy"
               href="/admin"
             >
-              Admin navigation
+              <span
+                class="sc-kDvujY dAKIQE"
+              >
+                Admin navigation
+              </span>
             </a>
             <br />
             <a
-              class="sc-jrcTuL gYzYAg"
+              class="sc-eDvSVe gaQKQy"
               href="/blog"
             >
-              Blogs
+              <span
+                class="sc-kDvujY dAKIQE"
+              >
+                Blogs
+              </span>
             </a>
             <br />
             <a
-              class="sc-jrcTuL gYzYAg"
+              class="sc-eDvSVe gaQKQy"
               href="/admin/analytics"
             >
-              Analytics
+              <span
+                class="sc-kDvujY dAKIQE"
+              >
+                Analytics
+              </span>
             </a>
             <br />
             <a
-              class="sc-jrcTuL gYzYAg"
+              class="sc-eDvSVe gaQKQy"
               href="/admin/emails"
             >
-              Emails
+              <span
+                class="sc-kDvujY dAKIQE"
+              >
+                Emails
+              </span>
             </a>
             <br />
             <a
-              class="sc-jrcTuL gYzYAg"
+              class="sc-eDvSVe gaQKQy"
               href="/admin/notifications"
             >
-              Notifications
+              <span
+                class="sc-kDvujY dAKIQE"
+              >
+                Notifications
+              </span>
             </a>
             <br />
             <a
-              class="sc-jrcTuL gYzYAg"
+              class="sc-eDvSVe gaQKQy"
               href="/admin/users"
             >
-              Users
+              <span
+                class="sc-kDvujY dAKIQE"
+              >
+                Users
+              </span>
             </a>
           </span>
         </div>
       </div>
     </div>
     <div
-      class="sc-ksBlkl fhBUpU"
+      class="sc-hBxehG hEuIQR"
     >
       <style>
         .js .animated-content__wrapper--hidden {
@@ -4197,13 +5365,13 @@ exports[`<SiteMap /> should render correctly with ssrBlogs 1`] = `
 }
       </style>
       <div
-        class="sc-bqWxrE bpjCNL animated-content__wrapper--hidden"
+        class="sc-ksBlkl jMYerx animated-content__wrapper--hidden"
       >
         <div
-          class="sc-bjfHbI bBecGJ site-mapstyles__StyledSubsection-sc-13l3sqp-0 evGhsU"
+          class="sc-idXgbr bVkxoK site-mapstyles__StyledSubsection-sc-13l3sqp-0 evGhsU"
         >
           <h1
-            class="sc-jSUZER jmoeZg sc-hHTYSt heAApr"
+            class="sc-pyfCe kmuKUY sc-dmctIk hibXxV"
             id="redirects-👉"
           >
             Redirects 👉
@@ -4213,316 +5381,456 @@ exports[`<SiteMap /> should render correctly with ssrBlogs 1`] = `
           >
             <div>
               <a
-                class="sc-jrcTuL gYzYAg"
+                class="sc-eDvSVe gaQKQy"
                 href="/codebase"
               >
-                /codebase ⇒ https://github.com/georgegillams/georgegillams.co.uk
+                <span
+                  class="sc-kDvujY dAKIQE"
+                >
+                  /codebase ⇒ https://github.com/georgegillams/georgegillams.co.uk
+                </span>
               </a>
               <br />
             </div>
             <div>
               <a
-                class="sc-jrcTuL gYzYAg"
+                class="sc-eDvSVe gaQKQy"
                 href="/copyright"
               >
-                /copyright ⇒ https://creativecommons.org/licenses/by-sa/3.0/
+                <span
+                  class="sc-kDvujY dAKIQE"
+                >
+                  /copyright ⇒ https://creativecommons.org/licenses/by-sa/3.0/
+                </span>
               </a>
               <br />
             </div>
             <div>
               <a
-                class="sc-jrcTuL gYzYAg"
+                class="sc-eDvSVe gaQKQy"
                 href="/flickr"
               >
-                /flickr ⇒ https://www.flickr.com/people/georgegillams
+                <span
+                  class="sc-kDvujY dAKIQE"
+                >
+                  /flickr ⇒ https://www.flickr.com/people/georgegillams
+                </span>
               </a>
               <br />
             </div>
             <div>
               <a
-                class="sc-jrcTuL gYzYAg"
+                class="sc-eDvSVe gaQKQy"
                 href="/monzo"
               >
-                /monzo ⇒ https://join.monzo.com/r/vjd3d74
+                <span
+                  class="sc-kDvujY dAKIQE"
+                >
+                  /monzo ⇒ https://join.monzo.com/r/vjd3d74
+                </span>
               </a>
               <br />
             </div>
             <div>
               <a
-                class="sc-jrcTuL gYzYAg"
+                class="sc-eDvSVe gaQKQy"
                 href="/github"
               >
-                /github ⇒ https://github.com/georgegillams
+                <span
+                  class="sc-kDvujY dAKIQE"
+                >
+                  /github ⇒ https://github.com/georgegillams
+                </span>
               </a>
               <br />
             </div>
             <div>
               <a
-                class="sc-jrcTuL gYzYAg"
+                class="sc-eDvSVe gaQKQy"
                 href="/stackoverflow"
               >
-                /stackoverflow ⇒ https://stackoverflow.com/users/14463713/georgegillams
+                <span
+                  class="sc-kDvujY dAKIQE"
+                >
+                  /stackoverflow ⇒ https://stackoverflow.com/users/14463713/georgegillams
+                </span>
               </a>
               <br />
             </div>
             <div>
               <a
-                class="sc-jrcTuL gYzYAg"
+                class="sc-eDvSVe gaQKQy"
                 href="/gurushots"
               >
-                /gurushots ⇒ https://gurushots.com/georgegillams/photos
+                <span
+                  class="sc-kDvujY dAKIQE"
+                >
+                  /gurushots ⇒ https://gurushots.com/georgegillams/photos
+                </span>
               </a>
               <br />
             </div>
             <div>
               <a
-                class="sc-jrcTuL gYzYAg"
+                class="sc-eDvSVe gaQKQy"
                 href="/unsplash"
               >
-                /unsplash ⇒ https://unsplash.com/@georgegillams/
+                <span
+                  class="sc-kDvujY dAKIQE"
+                >
+                  /unsplash ⇒ https://unsplash.com/@georgegillams/
+                </span>
               </a>
               <br />
             </div>
             <div>
               <a
-                class="sc-jrcTuL gYzYAg"
+                class="sc-eDvSVe gaQKQy"
                 href="/strava"
               >
-                /strava ⇒ https://www.strava.com/athletes/7221483
+                <span
+                  class="sc-kDvujY dAKIQE"
+                >
+                  /strava ⇒ https://www.strava.com/athletes/7221483
+                </span>
               </a>
               <br />
             </div>
             <div>
               <a
-                class="sc-jrcTuL gYzYAg"
+                class="sc-eDvSVe gaQKQy"
                 href="/linkedin"
               >
-                /linkedin ⇒ https://www.linkedin.com/in/george-gillams-37537077
+                <span
+                  class="sc-kDvujY dAKIQE"
+                >
+                  /linkedin ⇒ https://www.linkedin.com/in/george-gillams-37537077
+                </span>
               </a>
               <br />
             </div>
             <div>
               <a
-                class="sc-jrcTuL gYzYAg"
+                class="sc-eDvSVe gaQKQy"
                 href="/twitter"
               >
-                /twitter ⇒ https://twitter.com/georgegillams
+                <span
+                  class="sc-kDvujY dAKIQE"
+                >
+                  /twitter ⇒ https://twitter.com/georgegillams
+                </span>
               </a>
               <br />
             </div>
             <div>
               <a
-                class="sc-jrcTuL gYzYAg"
+                class="sc-eDvSVe gaQKQy"
                 href="/spartan"
               >
-                /spartan ⇒ https://uk.spartan.com/en/race/profile/3661120
+                <span
+                  class="sc-kDvujY dAKIQE"
+                >
+                  /spartan ⇒ https://uk.spartan.com/en/race/profile/3661120
+                </span>
               </a>
               <br />
             </div>
             <div>
               <a
-                class="sc-jrcTuL gYzYAg"
+                class="sc-eDvSVe gaQKQy"
                 href="/wp-admin"
               >
-                /wp-admin ⇒ /admin
+                <span
+                  class="sc-kDvujY dAKIQE"
+                >
+                  /wp-admin ⇒ /admin
+                </span>
               </a>
               <br />
             </div>
             <div>
               <a
-                class="sc-jrcTuL gYzYAg"
+                class="sc-eDvSVe gaQKQy"
                 href="/about"
               >
-                /about ⇒ /
+                <span
+                  class="sc-kDvujY dAKIQE"
+                >
+                  /about ⇒ /
+                </span>
               </a>
               <br />
             </div>
             <div>
               <a
-                class="sc-jrcTuL gYzYAg"
+                class="sc-eDvSVe gaQKQy"
                 href="/site-map"
               >
-                /site-map ⇒ /sitemap
+                <span
+                  class="sc-kDvujY dAKIQE"
+                >
+                  /site-map ⇒ /sitemap
+                </span>
               </a>
               <br />
             </div>
             <div>
               <a
-                class="sc-jrcTuL gYzYAg"
+                class="sc-eDvSVe gaQKQy"
                 href="/about/degree"
               >
-                /about/degree ⇒ /work/degree
+                <span
+                  class="sc-kDvujY dAKIQE"
+                >
+                  /about/degree ⇒ /work/degree
+                </span>
               </a>
               <br />
             </div>
             <div>
               <a
-                class="sc-jrcTuL gYzYAg"
+                class="sc-eDvSVe gaQKQy"
                 href="/articles/tough-mudder"
               >
-                /articles/tough-mudder ⇒ /blog/tough-mudder
+                <span
+                  class="sc-kDvujY dAKIQE"
+                >
+                  /articles/tough-mudder ⇒ /blog/tough-mudder
+                </span>
               </a>
               <br />
             </div>
             <div>
               <a
-                class="sc-jrcTuL gYzYAg"
+                class="sc-eDvSVe gaQKQy"
                 href="/articles/net-neutrality"
               >
-                /articles/net-neutrality ⇒ /blog/net-neutrality
+                <span
+                  class="sc-kDvujY dAKIQE"
+                >
+                  /articles/net-neutrality ⇒ /blog/net-neutrality
+                </span>
               </a>
               <br />
             </div>
             <div>
               <a
-                class="sc-jrcTuL gYzYAg"
+                class="sc-eDvSVe gaQKQy"
                 href="/articles/vim"
               >
-                /articles/vim ⇒ /blog/vim
+                <span
+                  class="sc-kDvujY dAKIQE"
+                >
+                  /articles/vim ⇒ /blog/vim
+                </span>
               </a>
               <br />
             </div>
             <div>
               <a
-                class="sc-jrcTuL gYzYAg"
+                class="sc-eDvSVe gaQKQy"
                 href="/articles/list"
               >
-                /articles/list ⇒ /blog
+                <span
+                  class="sc-kDvujY dAKIQE"
+                >
+                  /articles/list ⇒ /blog
+                </span>
               </a>
               <br />
             </div>
             <div>
               <a
-                class="sc-jrcTuL gYzYAg"
+                class="sc-eDvSVe gaQKQy"
                 href="/articles"
               >
-                /articles ⇒ /blog
+                <span
+                  class="sc-kDvujY dAKIQE"
+                >
+                  /articles ⇒ /blog
+                </span>
               </a>
               <br />
             </div>
             <div>
               <a
-                class="sc-jrcTuL gYzYAg"
+                class="sc-eDvSVe gaQKQy"
                 href="/net-neutrality"
               >
-                /net-neutrality ⇒ /blog/net-neutrality
+                <span
+                  class="sc-kDvujY dAKIQE"
+                >
+                  /net-neutrality ⇒ /blog/net-neutrality
+                </span>
               </a>
               <br />
             </div>
             <div>
               <a
-                class="sc-jrcTuL gYzYAg"
+                class="sc-eDvSVe gaQKQy"
                 href="/work/side-projects"
               >
-                /work/side-projects ⇒ /work
+                <span
+                  class="sc-kDvujY dAKIQE"
+                >
+                  /work/side-projects ⇒ /work
+                </span>
               </a>
               <br />
             </div>
             <div>
               <a
-                class="sc-jrcTuL gYzYAg"
+                class="sc-eDvSVe gaQKQy"
                 href="/blog/view"
               >
-                /blog/view ⇒ /blog
+                <span
+                  class="sc-kDvujY dAKIQE"
+                >
+                  /blog/view ⇒ /blog
+                </span>
               </a>
               <br />
             </div>
             <div>
               <a
-                class="sc-jrcTuL gYzYAg"
+                class="sc-eDvSVe gaQKQy"
                 href="/travel"
               >
-                /travel ⇒ /blog
+                <span
+                  class="sc-kDvujY dAKIQE"
+                >
+                  /travel ⇒ /blog
+                </span>
               </a>
               <br />
             </div>
             <div>
               <a
-                class="sc-jrcTuL gYzYAg"
+                class="sc-eDvSVe gaQKQy"
                 href="/travel/list"
               >
-                /travel/list ⇒ /blog
+                <span
+                  class="sc-kDvujY dAKIQE"
+                >
+                  /travel/list ⇒ /blog
+                </span>
               </a>
               <br />
             </div>
             <div>
               <a
-                class="sc-jrcTuL gYzYAg"
+                class="sc-eDvSVe gaQKQy"
                 href="/blog/view?id=tg5x7po9"
               >
-                /blog/view?id=tg5x7po9 ⇒ /blog/tough-mudder
+                <span
+                  class="sc-kDvujY dAKIQE"
+                >
+                  /blog/view?id=tg5x7po9 ⇒ /blog/tough-mudder
+                </span>
               </a>
               <br />
             </div>
             <div>
               <a
-                class="sc-jrcTuL gYzYAg"
+                class="sc-eDvSVe gaQKQy"
                 href="/blog/view?id=lqngy"
               >
-                /blog/view?id=lqngy ⇒ /blog/lightroom-workflow
+                <span
+                  class="sc-kDvujY dAKIQE"
+                >
+                  /blog/view?id=lqngy ⇒ /blog/lightroom-workflow
+                </span>
               </a>
               <br />
             </div>
             <div>
               <a
-                class="sc-jrcTuL gYzYAg"
+                class="sc-eDvSVe gaQKQy"
                 href="/blog/view?id=w85aht"
               >
-                /blog/view?id=w85aht ⇒ /blog/net-neutrality
+                <span
+                  class="sc-kDvujY dAKIQE"
+                >
+                  /blog/view?id=w85aht ⇒ /blog/net-neutrality
+                </span>
               </a>
               <br />
             </div>
             <div>
               <a
-                class="sc-jrcTuL gYzYAg"
+                class="sc-eDvSVe gaQKQy"
                 href="/blog/view?id=azcpjh"
               >
-                /blog/view?id=azcpjh ⇒ /blog/vim
+                <span
+                  class="sc-kDvujY dAKIQE"
+                >
+                  /blog/view?id=azcpjh ⇒ /blog/vim
+                </span>
               </a>
               <br />
             </div>
             <div>
               <a
-                class="sc-jrcTuL gYzYAg"
+                class="sc-eDvSVe gaQKQy"
                 href="/blog/view?id=y77dnh"
               >
-                /blog/view?id=y77dnh ⇒ /blog/uk-bank-security
+                <span
+                  class="sc-kDvujY dAKIQE"
+                >
+                  /blog/view?id=y77dnh ⇒ /blog/uk-bank-security
+                </span>
               </a>
               <br />
             </div>
             <div>
               <a
-                class="sc-jrcTuL gYzYAg"
+                class="sc-eDvSVe gaQKQy"
                 href="/art"
               >
-                /art ⇒ /photography
+                <span
+                  class="sc-kDvujY dAKIQE"
+                >
+                  /art ⇒ /photography
+                </span>
               </a>
               <br />
             </div>
             <div>
               <a
-                class="sc-jrcTuL gYzYAg"
+                class="sc-eDvSVe gaQKQy"
                 href="/photoshop"
               >
-                /photoshop ⇒ /photography
+                <span
+                  class="sc-kDvujY dAKIQE"
+                >
+                  /photoshop ⇒ /photography
+                </span>
               </a>
               <br />
             </div>
             <div>
               <a
-                class="sc-jrcTuL gYzYAg"
+                class="sc-eDvSVe gaQKQy"
                 href="/phot"
               >
-                /phot ⇒ /photography
+                <span
+                  class="sc-kDvujY dAKIQE"
+                >
+                  /phot ⇒ /photography
+                </span>
               </a>
               <br />
             </div>
             <div>
               <a
-                class="sc-jrcTuL gYzYAg"
+                class="sc-eDvSVe gaQKQy"
                 href="/photo"
               >
-                /photo ⇒ /photography
+                <span
+                  class="sc-kDvujY dAKIQE"
+                >
+                  /photo ⇒ /photography
+                </span>
               </a>
               <br />
             </div>
