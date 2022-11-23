@@ -7,29 +7,71 @@ exports[`<LoggedOutOnly /> Should render correctly 1`] = `
 `;
 
 exports[`<LoggedOutOnly /> Should render correctly with user 1`] = `
+.c3 {
+  display: inline-block;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  line-height: 1.5;
+  margin-top: 2rem;
+}
+
+.c3:first-of-type {
+  margin-top: 0.86rem;
+}
+
+.c1 {
+  margin: 0;
+  font-size: 2.2rem;
+  font-weight: bold;
+}
+
+.c4 {
+  margin: 0;
+}
+
+.c0 {
+  width: 100%;
+  color: #1e1e1e;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c2 {
+  margin: 3.34rem 0 0 0;
+}
+
+@media (prefers-color-scheme:dark) {
+  .c0 {
+    color: white;
+  }
+}
+
+@media (prefers-color-scheme:dark) {
+
+}
+
+@media (prefers-color-scheme:dark) {
+
+}
+
 <div>
   <div
-    class="sc-kDvujY jcGnlL"
+    class="c0"
   >
     <h1
-      class="sc-dkrFOg dYiSba sc-eDWCr wULAC"
+      class="c1 c2"
       id="you're-logged-in"
     >
       You're logged in
     </h1>
     <span
-      class="sc-bcXHqe huaqIH"
+      class="c3"
     >
-      <a
-        class="sc-ftTHYK cJafwd"
-        href="/account"
+      <span
+        class="c4"
       >
-        <span
-          class="sc-jSUZER bjWoVS"
-        >
-          Go to your account.
-        </span>
-      </a>
+        Go to your account.
+      </span>
     </span>
   </div>
 </div>

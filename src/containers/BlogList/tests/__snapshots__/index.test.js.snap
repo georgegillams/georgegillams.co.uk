@@ -1,54 +1,254 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<BlogList /> should render correctly - index 1`] = `
+.c6 {
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.c10 {
+  margin: 0;
+}
+
+.c12 {
+  width: 1.25rem;
+  height: 1.25rem;
+}
+
+.c9 {
+  display: inline-block;
+  border-radius: 0.25rem;
+  font-weight: bold;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  position: relative;
+  color: darkorchid;
+  fill: darkorchid;
+}
+
+.c9:focus-within,
+.c9:focus {
+  position: relative;
+  outline: none !important;
+}
+
+.c9:focus-within::after,
+.c9:focus::after {
+  position: absolute;
+  top: -0.35rem;
+  right: -0.35rem;
+  bottom: -0.35rem;
+  left: -0.35rem;
+  content: '';
+  display: block;
+  border: solid rgba(0,125,250,0.6) 0.2rem;
+  border-radius: 0.5rem;
+  pointer-events: none;
+}
+
+.c9:hover {
+  color: #44aeff;
+  fill: #44aeff;
+}
+
+.c11 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  width: 0.4rem;
+  height: 1rem;
+  margin-left: 0.55rem;
+}
+
+.c13 {
+  position: absolute;
+  width: 1rem;
+  height: 1rem;
+  margin-top: 0.12rem;
+  margin-left: -0.45rem;
+}
+
+.c4 {
+  width: 100%;
+  color: #1e1e1e;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c7 {
+  margin: 2.13rem 0 0 0;
+}
+
+.c0 {
+  position: relative;
+  width: 100%;
+  border-radius: 0.25rem;
+  background-color: rgb(238,238,238);
+  overflow: hidden;
+  width: 100%;
+  height: 10rem;
+  margin-bottom: 1.2rem;
+}
+
+.c1 {
+  position: absolute;
+  top: 0;
+  width: 13rem;
+  height: 100vh;
+  background-image: linear-gradient( 90deg, rgb(238,238,238), rgb(245,245,245), rgb(238,238,238) );
+  background-repeat: no-repeat;
+  background-size: 12.5rem 100%;
+  -webkit-animation: sjjMW 3.5s ease-in-out infinite;
+  animation: sjjMW 3.5s ease-in-out infinite;
+}
+
+.c8 {
+  display: inline-block;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  line-height: 1.5;
+  margin-top: 2rem;
+}
+
+.c8:first-of-type {
+  margin-top: 0.86rem;
+}
+
+.c2 {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  margin-top: 2rem;
+  margin-left: 0;
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.c3 {
+  position: absolute;
+  top: 0;
+  left: calc(50% - 50vw);
+  z-index: -1;
+  width: 100vw;
+  height: 100%;
+  background-color: #fbfbfb;
+}
+
+.c5 {
+  width: 100%;
+  padding-right: 1.875rem;
+  padding-left: 1.865rem;
+  text-align: center;
+}
+
+@media (prefers-color-scheme:dark) {
+  .c9:focus-within::after,
+  .c9:focus::after {
+    border-color: rgba(0,125,250,0.6);
+  }
+}
+
+@media (prefers-color-scheme:dark) {
+  .c9 {
+    color: orchid;
+    fill: orchid;
+  }
+
+  .c9:hover {
+    color: #44aeff;
+    fill: #44aeff;
+  }
+}
+
+@media (prefers-color-scheme:dark) {
+  .c4 {
+    color: white;
+  }
+}
+
+@media (prefers-color-scheme:dark) {
+  .c0 {
+    background-color: rgb(17,17,17);
+  }
+}
+
+@media (prefers-color-scheme:dark) {
+  .c1 {
+    background-image: linear-gradient( 90deg, rgb(17,17,17), rgb(50,50,50), rgb(17,17,17) );
+  }
+}
+
+@media (prefers-color-scheme:dark) {
+
+}
+
+@media (prefers-color-scheme:dark) {
+
+}
+
+@media (prefers-color-scheme:dark) {
+  .c3 {
+    background-color: #121313;
+  }
+}
+
 <div>
   <div
-    class="sc-jOiSOi ekQEkc page-containerstyles__StyledPageContainer-sc-19l7k4-0 containerstyles__StyledPageContainer-sc-1117fm5-0 cjeRLX"
+    class="page-containerstyles__StyledPageContainer-sc-19l7k4-0 "
     width="default"
   >
     <div
-      class="sc-eDWCr esSKbW"
+      class="c0"
     >
       <div
-        class="sc-bqWxrE cRkaeW"
+        class="c1"
         style="margin-left: -0px;"
       />
     </div>
     <div
-      class="sc-eDWCr esSKbW"
+      class="c0"
     >
       <div
-        class="sc-bqWxrE cRkaeW"
+        class="c1"
         style="margin-left: -0px;"
       />
     </div>
     <div
-      class="sc-eDWCr esSKbW"
+      class="c0"
     >
       <div
-        class="sc-bqWxrE cRkaeW"
+        class="c1"
         style="margin-left: -0px;"
       />
     </div>
     <div
-      class="sc-eDWCr esSKbW"
+      class="c0"
     >
       <div
-        class="sc-bqWxrE cRkaeW"
+        class="c1"
         style="margin-left: -0px;"
       />
     </div>
     <div
-      class="sc-eDWCr esSKbW"
+      class="c0"
     >
       <div
-        class="sc-bqWxrE cRkaeW"
+        class="c1"
         style="margin-left: -0px;"
       />
     </div>
   </div>
   <div
-    class="sc-bCfvAP dgXbpV"
+    class=""
   >
     <style>
       .js .animated-content__wrapper--hidden {
@@ -56,45 +256,45 @@ exports[`<BlogList /> should render correctly - index 1`] = `
 }
     </style>
     <div
-      class="sc-dPWrhe ihlYTc animated-content__wrapper--hidden"
+      class="animated-content__wrapper--hidden"
     >
       <div
-        class="creative-commonssyles__Wrapper-sc-qff226-0 eObJgx"
+        class="c2"
       >
         <div
-          class="creative-commonssyles__Background-sc-qff226-1 gREbZK"
+          class="c3"
         />
         <div
-          class="sc-jrcTuL drIieO creative-commonssyles__Inner-sc-qff226-2 jkifKu"
+          class="c4 c5"
         >
           <h1
-            class="sc-dkrFOg eRKGDm sc-csuSiG gvoVyF"
+            class="c6 c7"
             id="copyright"
           >
             Copyright
           </h1>
           <span
-            class="sc-ksBlkl bLCpBX"
+            class="c8"
           >
             Most of my photos are licensed under
              
             <a
               aria-label="Creative Commons BY-SA 3.0 (opens in a new tab)"
-              class="sc-iBYQkv jHA-DIX"
+              class="c9"
               href="https://creativecommons.org/licenses/by-sa/3.0/"
               rel="noopener noreferrer"
               target="_blank"
             >
               <span
-                class="sc-eDvSVe ezgbKo"
+                class="c10"
               >
                 Creative Commons BY-SA 3.0
               </span>
               <div
-                class="sc-ftTHYK dbfjGz"
+                class="c11"
               >
                 <svg
-                  class="sc-gKPRtg eSdzmv sc-pyfCe hLCbyO"
+                  class="c12 c13"
                   height="18"
                   viewBox="0 0 24 24"
                   width="18"
@@ -109,16 +309,11 @@ exports[`<BlogList /> should render correctly - index 1`] = `
             .
             <br />
             If you are unsure about your right to use them please 
-            <a
-              class="sc-iBYQkv jHA-DIX"
-              href="/contact"
+            <span
+              class="c10"
             >
-              <span
-                class="sc-eDvSVe ezgbKo"
-              >
-                contact me
-              </span>
-            </a>
+              contact me
+            </span>
             .
           </span>
         </div>
@@ -129,13 +324,222 @@ exports[`<BlogList /> should render correctly - index 1`] = `
 `;
 
 exports[`<BlogList /> should render correctly authenticated with blogs 1`] = `
+.c0 {
+  margin: 0;
+  font-size: 2.2rem;
+  font-weight: bold;
+}
+
+.c8 {
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.c1 {
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.c12 {
+  margin: 0;
+}
+
+.c14 {
+  width: 1.25rem;
+  height: 1.25rem;
+}
+
+.c11 {
+  display: inline-block;
+  border-radius: 0.25rem;
+  font-weight: bold;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  position: relative;
+  color: darkorchid;
+  fill: darkorchid;
+}
+
+.c11:focus-within,
+.c11:focus {
+  position: relative;
+  outline: none !important;
+}
+
+.c11:focus-within::after,
+.c11:focus::after {
+  position: absolute;
+  top: -0.35rem;
+  right: -0.35rem;
+  bottom: -0.35rem;
+  left: -0.35rem;
+  content: '';
+  display: block;
+  border: solid rgba(0,125,250,0.6) 0.2rem;
+  border-radius: 0.5rem;
+  pointer-events: none;
+}
+
+.c11:hover {
+  color: #44aeff;
+  fill: #44aeff;
+}
+
+.c13 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  width: 0.4rem;
+  height: 1rem;
+  margin-left: 0.55rem;
+}
+
+.c15 {
+  position: absolute;
+  width: 1rem;
+  height: 1rem;
+  margin-top: 0.12rem;
+  margin-left: -0.45rem;
+}
+
+.c6 {
+  width: 100%;
+  color: #1e1e1e;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c9 {
+  margin: 2.13rem 0 0 0;
+}
+
+.c2 {
+  position: relative;
+  width: 100%;
+  border-radius: 0.25rem;
+  background-color: rgb(238,238,238);
+  overflow: hidden;
+}
+
+.c3 {
+  position: absolute;
+  top: 0;
+  width: 13rem;
+  height: 100vh;
+  background-image: linear-gradient( 90deg, rgb(238,238,238), rgb(245,245,245), rgb(238,238,238) );
+  background-repeat: no-repeat;
+  background-size: 12.5rem 100%;
+  -webkit-animation: sjjMW 3.5s ease-in-out infinite;
+  animation: sjjMW 3.5s ease-in-out infinite;
+}
+
+.c10 {
+  display: inline-block;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  line-height: 1.5;
+  margin-top: 2rem;
+}
+
+.c10:first-of-type {
+  margin-top: 0.86rem;
+}
+
+.c4 {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  margin-top: 2rem;
+  margin-left: 0;
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.c5 {
+  position: absolute;
+  top: 0;
+  left: calc(50% - 50vw);
+  z-index: -1;
+  width: 100vw;
+  height: 100%;
+  background-color: #fbfbfb;
+}
+
+.c7 {
+  width: 100%;
+  padding-right: 1.875rem;
+  padding-left: 1.865rem;
+  text-align: center;
+}
+
+@media (prefers-color-scheme:dark) {
+  .c11:focus-within::after,
+  .c11:focus::after {
+    border-color: rgba(0,125,250,0.6);
+  }
+}
+
+@media (prefers-color-scheme:dark) {
+  .c11 {
+    color: orchid;
+    fill: orchid;
+  }
+
+  .c11:hover {
+    color: #44aeff;
+    fill: #44aeff;
+  }
+}
+
+@media (prefers-color-scheme:dark) {
+  .c6 {
+    color: white;
+  }
+}
+
+@media (prefers-color-scheme:dark) {
+  .c2 {
+    background-color: rgb(17,17,17);
+  }
+}
+
+@media (prefers-color-scheme:dark) {
+  .c3 {
+    background-image: linear-gradient( 90deg, rgb(17,17,17), rgb(50,50,50), rgb(17,17,17) );
+  }
+}
+
+@media (prefers-color-scheme:dark) {
+
+}
+
+@media (prefers-color-scheme:dark) {
+
+}
+
+@media (prefers-color-scheme:dark) {
+  .c5 {
+    background-color: #121313;
+  }
+}
+
 <div>
   <div
-    class="sc-jOiSOi ekQEkc page-containerstyles__StyledPageContainer-sc-19l7k4-0 containerstyles__StyledPageContainer-sc-1117fm5-0 cjeRLX"
+    class="page-containerstyles__StyledPageContainer-sc-19l7k4-0 "
     width="default"
   >
     <div
-      class="sc-bCfvAP dgXbpV"
+      class=""
     >
       <style>
         .js .animated-content__wrapper--hidden {
@@ -144,30 +548,30 @@ exports[`<BlogList /> should render correctly authenticated with blogs 1`] = `
 }
       </style>
       <div
-        class="sc-dPWrhe ihlYTc animated-content__wrapper--hidden"
+        class="animated-content__wrapper--hidden"
       >
         <div>
           <div
-            class="sc-bBABsx iCoEWm"
+            class=""
           >
             <div
-              class="sc-iveFHk dmKvZd"
+              class=""
             />
             <div
-              class="sc-cwSeag AjTsV"
+              class=""
             >
               <div
                 aria-hidden="true"
-                class="sc-jIRcFI kBGySO"
+                class=""
               >
                 <div
-                  class="sc-hhOBVt hSDQEk date container"
+                  class="date container"
                 />
                 <div
-                  class="sc-gYbzsP eKmnXz"
+                  class=""
                 >
                   <h1
-                    class="sc-gswNZR gzqAHo"
+                    class="c0"
                   >
                     Add a new blog
                   </h1>
@@ -176,54 +580,54 @@ exports[`<BlogList /> should render correctly authenticated with blogs 1`] = `
             </div>
           </div>
           <div
-            class="sc-bBABsx iCoEWm"
+            class=""
           >
             <div
-              class="sc-iveFHk dmKvZd"
+              class=""
             />
             <div
-              class="sc-cwSeag AjTsV"
+              class=""
             >
               <div
                 aria-hidden="true"
-                class="sc-jIRcFI kBGySO"
+                class=""
               >
                 <div
-                  class="sc-hhOBVt hSDQEk date container"
+                  class="date container"
                 >
                   <div
-                    class="sc-cjibBx EOWoG"
+                    class=""
                   >
                     <span
-                      class="sc-eDvSVe jJIXiK"
+                      class="c1"
                     >
                       NaN Invalid Date
                     </span>
                   </div>
                   <div
-                    class="sc-jcMfQk ioGdDY"
+                    class=""
                   >
                     <span
-                      class="sc-eDvSVe jJIXiK"
+                      class="c1"
                     >
                       NaN
                     </span>
                   </div>
                   <div
-                    class="sc-jcMfQk ioGdDY"
+                    class=""
                   >
                     <span
-                      class="sc-eDvSVe jJIXiK"
+                      class="c1"
                     >
                       Invalid Date
                     </span>
                   </div>
                 </div>
                 <div
-                  class="sc-gYbzsP eKmnXz"
+                  class=""
                 >
                   <h1
-                    class="sc-gswNZR gzqAHo"
+                    class="c0"
                   >
                     Blog 1 
                   </h1>
@@ -232,75 +636,75 @@ exports[`<BlogList /> should render correctly authenticated with blogs 1`] = `
             </div>
           </div>
           <button
-            class="sc-bjfHbI hKGGkM blogs-liststyles__StyledButton-sc-if7ctk-2 gQJRQv"
+            class=""
             type="button"
           >
             <span
-              class="sc-dIfARi ezgdcU"
+              class=""
             >
               Delete blog
             </span>
           </button>
           <div
-            class="sc-bBABsx iCoEWm"
+            class=""
           >
             <div
-              class="sc-iveFHk dmKvZd"
+              class=""
             />
             <div
-              class="sc-cwSeag AjTsV"
+              class=""
             >
               <div
                 aria-hidden="true"
-                class="sc-jIRcFI kBGySO"
+                class=""
               >
                 <div
-                  class="sc-hhOBVt hSDQEk date container"
+                  class="date container"
                 >
                   <div
-                    class="sc-cjibBx EOWoG"
+                    class=""
                   >
                     <span
-                      class="sc-eDvSVe jJIXiK"
+                      class="c1"
                     >
                       23-30 Dec
                     </span>
                   </div>
                   <div
-                    class="sc-jcMfQk ioGdDY"
+                    class=""
                   >
                     <span
-                      class="sc-eDvSVe jJIXiK"
+                      class="c1"
                     >
                       23-30
                     </span>
                   </div>
                   <div
-                    class="sc-jcMfQk ioGdDY"
+                    class=""
                   >
                     <span
-                      class="sc-eDvSVe jJIXiK"
+                      class="c1"
                     >
                       Dec
                     </span>
                   </div>
                 </div>
                 <div
-                  class="sc-gYbzsP eKmnXz"
+                  class=""
                 >
                   <h1
-                    class="sc-gswNZR gzqAHo"
+                    class="c0"
                   >
                     St Ives  2018
                   </h1>
                   <div
-                    class="sc-iTFTee eZqvaI"
+                    class=""
                   >
                     <div
-                      class="sc-eeMvmM"
+                      class=""
                     >
                       <span
-                        class="sc-cUEOzv hnJbeS"
+                        class=""
                         type="travel"
                       >
                         Travel
@@ -309,10 +713,10 @@ exports[`<BlogList /> should render correctly authenticated with blogs 1`] = `
                   </div>
                 </div>
                 <div
-                  class="sc-cCjUiG iIfruF"
+                  class=""
                 >
                   <div
-                    class="sc-lllmON bUkDOe sc-cabOPr fHLafW"
+                    class=""
                   >
                     <style>
                       
@@ -321,17 +725,17 @@ exports[`<BlogList /> should render correctly authenticated with blogs 1`] = `
         
                     </style>
                     <div
-                      class="sc-iJnaPW eRzWKn"
+                      class=""
                       style="padding-bottom: 100%;"
                     >
                       <div
-                        class="sc-gikAfH cZeErA"
+                        class=""
                       >
                         <div
-                          class="sc-eDWCr kticUa sc-ezOQGI dwrTOQ"
+                          class="c2 "
                         >
                           <div
-                            class="sc-bqWxrE cRkaeW"
+                            class="c3"
                             style="margin-left: -0px;"
                           />
                         </div>
@@ -341,12 +745,12 @@ exports[`<BlogList /> should render correctly authenticated with blogs 1`] = `
                       >
                         <img
                           alt="card"
-                          class="sc-bYMpWt bMLRvh"
+                          class=""
                           src="https://i.imgur.com/ppPEuDs.jpg"
                         />
                         <img
                           alt="card"
-                          class="sc-kMjNwy QrIki"
+                          class=""
                           src="https://i.imgur.com/ppPEuDs.jpg"
                         />
                       </div>
@@ -355,12 +759,12 @@ exports[`<BlogList /> should render correctly authenticated with blogs 1`] = `
                       >
                         <img
                           alt="card"
-                          class="sc-bYMpWt jbDEDp"
+                          class=""
                           src="https://i.imgur.com/ppPEuDs.jpg"
                         />
                         <img
                           alt="card"
-                          class="sc-kMjNwy eeONsG"
+                          class=""
                           src="https://i.imgur.com/ppPEuDs.jpg"
                         />
                       </div>
@@ -371,75 +775,75 @@ exports[`<BlogList /> should render correctly authenticated with blogs 1`] = `
             </div>
           </div>
           <button
-            class="sc-bjfHbI hKGGkM blogs-liststyles__StyledButton-sc-if7ctk-2 gQJRQv"
+            class=""
             type="button"
           >
             <span
-              class="sc-dIfARi ezgdcU"
+              class=""
             >
               Delete blog
             </span>
           </button>
           <div
-            class="sc-bBABsx iCoEWm"
+            class=""
           >
             <div
-              class="sc-iveFHk dmKvZd"
+              class=""
             />
             <div
-              class="sc-cwSeag AjTsV"
+              class=""
             >
               <div
                 aria-hidden="true"
-                class="sc-jIRcFI kBGySO"
+                class=""
               >
                 <div
-                  class="sc-hhOBVt hSDQEk date container"
+                  class="date container"
                 >
                   <div
-                    class="sc-cjibBx EOWoG"
+                    class=""
                   >
                     <span
-                      class="sc-eDvSVe jJIXiK"
+                      class="c1"
                     >
                       23-30 Dec
                     </span>
                   </div>
                   <div
-                    class="sc-jcMfQk ioGdDY"
+                    class=""
                   >
                     <span
-                      class="sc-eDvSVe jJIXiK"
+                      class="c1"
                     >
                       23-30
                     </span>
                   </div>
                   <div
-                    class="sc-jcMfQk ioGdDY"
+                    class=""
                   >
                     <span
-                      class="sc-eDvSVe jJIXiK"
+                      class="c1"
                     >
                       Dec
                     </span>
                   </div>
                 </div>
                 <div
-                  class="sc-gYbzsP eKmnXz"
+                  class=""
                 >
                   <h1
-                    class="sc-gswNZR gzqAHo"
+                    class="c0"
                   >
                     Untitled blog (DELETED)
                   </h1>
                   <div
-                    class="sc-iTFTee eZqvaI"
+                    class=""
                   >
                     <div
-                      class="sc-eeMvmM"
+                      class=""
                     >
                       <span
-                        class="sc-cUEOzv hnJbeS"
+                        class=""
                         type="travel"
                       >
                         Travel
@@ -448,10 +852,10 @@ exports[`<BlogList /> should render correctly authenticated with blogs 1`] = `
                   </div>
                 </div>
                 <div
-                  class="sc-cCjUiG iIfruF"
+                  class=""
                 >
                   <div
-                    class="sc-lllmON bUkDOe sc-cabOPr fHLafW"
+                    class=""
                   >
                     <style>
                       
@@ -460,17 +864,17 @@ exports[`<BlogList /> should render correctly authenticated with blogs 1`] = `
         
                     </style>
                     <div
-                      class="sc-iJnaPW eRzWKn"
+                      class=""
                       style="padding-bottom: 100%;"
                     >
                       <div
-                        class="sc-gikAfH cZeErA"
+                        class=""
                       >
                         <div
-                          class="sc-eDWCr kticUa sc-ezOQGI dwrTOQ"
+                          class="c2 "
                         >
                           <div
-                            class="sc-bqWxrE cRkaeW"
+                            class="c3"
                             style="margin-left: -0px;"
                           />
                         </div>
@@ -480,12 +884,12 @@ exports[`<BlogList /> should render correctly authenticated with blogs 1`] = `
                       >
                         <img
                           alt="card"
-                          class="sc-bYMpWt bMLRvh"
+                          class=""
                           src="https://i.imgur.com/ppPEuDs.jpg"
                         />
                         <img
                           alt="card"
-                          class="sc-kMjNwy QrIki"
+                          class=""
                           src="https://i.imgur.com/ppPEuDs.jpg"
                         />
                       </div>
@@ -494,12 +898,12 @@ exports[`<BlogList /> should render correctly authenticated with blogs 1`] = `
                       >
                         <img
                           alt="card"
-                          class="sc-bYMpWt jbDEDp"
+                          class=""
                           src="https://i.imgur.com/ppPEuDs.jpg"
                         />
                         <img
                           alt="card"
-                          class="sc-kMjNwy eeONsG"
+                          class=""
                           src="https://i.imgur.com/ppPEuDs.jpg"
                         />
                       </div>
@@ -510,12 +914,12 @@ exports[`<BlogList /> should render correctly authenticated with blogs 1`] = `
             </div>
           </div>
           <button
-            class="sc-bjfHbI kkGefk blogs-liststyles__StyledButton-sc-if7ctk-2 gQJRQv"
+            class=""
             disabled=""
             type="button"
           >
             <span
-              class="sc-dIfARi ezgdcU"
+              class=""
             >
               Delete blog
             </span>
@@ -525,7 +929,7 @@ exports[`<BlogList /> should render correctly authenticated with blogs 1`] = `
     </div>
   </div>
   <div
-    class="sc-bCfvAP dgXbpV"
+    class=""
   >
     <style>
       .js .animated-content__wrapper--hidden {
@@ -533,45 +937,45 @@ exports[`<BlogList /> should render correctly authenticated with blogs 1`] = `
 }
     </style>
     <div
-      class="sc-dPWrhe ihlYTc animated-content__wrapper--hidden"
+      class="animated-content__wrapper--hidden"
     >
       <div
-        class="creative-commonssyles__Wrapper-sc-qff226-0 eObJgx"
+        class="c4"
       >
         <div
-          class="creative-commonssyles__Background-sc-qff226-1 gREbZK"
+          class="c5"
         />
         <div
-          class="sc-jrcTuL drIieO creative-commonssyles__Inner-sc-qff226-2 jkifKu"
+          class="c6 c7"
         >
           <h1
-            class="sc-dkrFOg eRKGDm sc-csuSiG gvoVyF"
+            class="c8 c9"
             id="copyright"
           >
             Copyright
           </h1>
           <span
-            class="sc-ksBlkl bLCpBX"
+            class="c10"
           >
             Most of my photos are licensed under
              
             <a
               aria-label="Creative Commons BY-SA 3.0 (opens in a new tab)"
-              class="sc-iBYQkv jHA-DIX"
+              class="c11"
               href="https://creativecommons.org/licenses/by-sa/3.0/"
               rel="noopener noreferrer"
               target="_blank"
             >
               <span
-                class="sc-eDvSVe ezgbKo"
+                class="c12"
               >
                 Creative Commons BY-SA 3.0
               </span>
               <div
-                class="sc-ftTHYK dbfjGz"
+                class="c13"
               >
                 <svg
-                  class="sc-gKPRtg eSdzmv sc-pyfCe hLCbyO"
+                  class="c14 c15"
                   height="18"
                   viewBox="0 0 24 24"
                   width="18"
@@ -586,16 +990,11 @@ exports[`<BlogList /> should render correctly authenticated with blogs 1`] = `
             .
             <br />
             If you are unsure about your right to use them please 
-            <a
-              class="sc-iBYQkv jHA-DIX"
-              href="/contact"
+            <span
+              class="c12"
             >
-              <span
-                class="sc-eDvSVe ezgbKo"
-              >
-                contact me
-              </span>
-            </a>
+              contact me
+            </span>
             .
           </span>
         </div>
@@ -606,56 +1005,260 @@ exports[`<BlogList /> should render correctly authenticated with blogs 1`] = `
 `;
 
 exports[`<BlogList /> should render correctly with blog load error 1`] = `
+.c3 {
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.c11 {
+  margin: 0;
+}
+
+.c13 {
+  width: 1.25rem;
+  height: 1.25rem;
+}
+
+.c10 {
+  display: inline-block;
+  border-radius: 0.25rem;
+  font-weight: bold;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  position: relative;
+  color: darkorchid;
+  fill: darkorchid;
+}
+
+.c10:focus-within,
+.c10:focus {
+  position: relative;
+  outline: none !important;
+}
+
+.c10:focus-within::after,
+.c10:focus::after {
+  position: absolute;
+  top: -0.35rem;
+  right: -0.35rem;
+  bottom: -0.35rem;
+  left: -0.35rem;
+  content: '';
+  display: block;
+  border: solid rgba(0,125,250,0.6) 0.2rem;
+  border-radius: 0.5rem;
+  pointer-events: none;
+}
+
+.c10:hover {
+  color: #44aeff;
+  fill: #44aeff;
+}
+
+.c12 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  width: 0.4rem;
+  height: 1rem;
+  margin-left: 0.55rem;
+}
+
+.c14 {
+  position: absolute;
+  width: 1rem;
+  height: 1rem;
+  margin-top: 0.12rem;
+  margin-left: -0.45rem;
+}
+
+.c2 {
+  width: 100%;
+  color: #1e1e1e;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c4 {
+  margin: 0;
+}
+
+.c8 {
+  margin: 2.13rem 0 0 0;
+}
+
+.c0 {
+  position: relative;
+  width: 100%;
+  border-radius: 0.25rem;
+  background-color: rgb(238,238,238);
+  overflow: hidden;
+  width: 100%;
+  height: 10rem;
+  margin-bottom: 1.2rem;
+}
+
+.c1 {
+  position: absolute;
+  top: 0;
+  width: 13rem;
+  height: 100vh;
+  background-image: linear-gradient( 90deg, rgb(238,238,238), rgb(245,245,245), rgb(238,238,238) );
+  background-repeat: no-repeat;
+  background-size: 12.5rem 100%;
+  -webkit-animation: sjjMW 3.5s ease-in-out infinite;
+  animation: sjjMW 3.5s ease-in-out infinite;
+}
+
+.c9 {
+  display: inline-block;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  line-height: 1.5;
+  margin-top: 2rem;
+}
+
+.c9:first-of-type {
+  margin-top: 0.86rem;
+}
+
+.c5 {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  margin-top: 2rem;
+  margin-left: 0;
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.c6 {
+  position: absolute;
+  top: 0;
+  left: calc(50% - 50vw);
+  z-index: -1;
+  width: 100vw;
+  height: 100%;
+  background-color: #fbfbfb;
+}
+
+.c7 {
+  width: 100%;
+  padding-right: 1.875rem;
+  padding-left: 1.865rem;
+  text-align: center;
+}
+
+@media (prefers-color-scheme:dark) {
+  .c10:focus-within::after,
+  .c10:focus::after {
+    border-color: rgba(0,125,250,0.6);
+  }
+}
+
+@media (prefers-color-scheme:dark) {
+  .c10 {
+    color: orchid;
+    fill: orchid;
+  }
+
+  .c10:hover {
+    color: #44aeff;
+    fill: #44aeff;
+  }
+}
+
+@media (prefers-color-scheme:dark) {
+  .c2 {
+    color: white;
+  }
+}
+
+@media (prefers-color-scheme:dark) {
+  .c0 {
+    background-color: rgb(17,17,17);
+  }
+}
+
+@media (prefers-color-scheme:dark) {
+  .c1 {
+    background-image: linear-gradient( 90deg, rgb(17,17,17), rgb(50,50,50), rgb(17,17,17) );
+  }
+}
+
+@media (prefers-color-scheme:dark) {
+
+}
+
+@media (prefers-color-scheme:dark) {
+
+}
+
+@media (prefers-color-scheme:dark) {
+  .c6 {
+    background-color: #121313;
+  }
+}
+
 <div>
   <div
-    class="sc-jOiSOi ekQEkc page-containerstyles__StyledPageContainer-sc-19l7k4-0 containerstyles__StyledPageContainer-sc-1117fm5-0 cjeRLX"
+    class="page-containerstyles__StyledPageContainer-sc-19l7k4-0 "
     width="default"
   >
     <div
-      class="sc-eDWCr esSKbW"
+      class="c0"
     >
       <div
-        class="sc-bqWxrE cRkaeW"
+        class="c1"
         style="margin-left: -0px;"
       />
     </div>
     <div
-      class="sc-eDWCr esSKbW"
+      class="c0"
     >
       <div
-        class="sc-bqWxrE cRkaeW"
+        class="c1"
         style="margin-left: -0px;"
       />
     </div>
     <div
-      class="sc-eDWCr esSKbW"
+      class="c0"
     >
       <div
-        class="sc-bqWxrE cRkaeW"
+        class="c1"
         style="margin-left: -0px;"
       />
     </div>
     <div
-      class="sc-eDWCr esSKbW"
+      class="c0"
     >
       <div
-        class="sc-bqWxrE cRkaeW"
+        class="c1"
         style="margin-left: -0px;"
       />
     </div>
     <div
-      class="sc-eDWCr esSKbW"
+      class="c0"
     >
       <div
-        class="sc-bqWxrE cRkaeW"
+        class="c1"
         style="margin-left: -0px;"
       />
     </div>
     <div
-      class="sc-jrcTuL drIieO"
+      class="c2"
     >
       <h1
-        class="sc-dkrFOg eRKGDm sc-csuSiG kJUcBp"
+        class="c3 c4"
         id="this-is-taking-a-while.-maybe-something-isn't-quite-right..."
       >
         This is taking a while. Maybe something isn't quite right...
@@ -663,7 +1266,7 @@ exports[`<BlogList /> should render correctly with blog load error 1`] = `
     </div>
   </div>
   <div
-    class="sc-bCfvAP dgXbpV"
+    class=""
   >
     <style>
       .js .animated-content__wrapper--hidden {
@@ -671,45 +1274,45 @@ exports[`<BlogList /> should render correctly with blog load error 1`] = `
 }
     </style>
     <div
-      class="sc-dPWrhe ihlYTc animated-content__wrapper--hidden"
+      class="animated-content__wrapper--hidden"
     >
       <div
-        class="creative-commonssyles__Wrapper-sc-qff226-0 eObJgx"
+        class="c5"
       >
         <div
-          class="creative-commonssyles__Background-sc-qff226-1 gREbZK"
+          class="c6"
         />
         <div
-          class="sc-jrcTuL drIieO creative-commonssyles__Inner-sc-qff226-2 jkifKu"
+          class="c2 c7"
         >
           <h1
-            class="sc-dkrFOg eRKGDm sc-csuSiG gvoVyF"
+            class="c3 c8"
             id="copyright"
           >
             Copyright
           </h1>
           <span
-            class="sc-ksBlkl bLCpBX"
+            class="c9"
           >
             Most of my photos are licensed under
              
             <a
               aria-label="Creative Commons BY-SA 3.0 (opens in a new tab)"
-              class="sc-iBYQkv jHA-DIX"
+              class="c10"
               href="https://creativecommons.org/licenses/by-sa/3.0/"
               rel="noopener noreferrer"
               target="_blank"
             >
               <span
-                class="sc-eDvSVe ezgbKo"
+                class="c11"
               >
                 Creative Commons BY-SA 3.0
               </span>
               <div
-                class="sc-ftTHYK dbfjGz"
+                class="c12"
               >
                 <svg
-                  class="sc-gKPRtg eSdzmv sc-pyfCe hLCbyO"
+                  class="c13 c14"
                   height="18"
                   viewBox="0 0 24 24"
                   width="18"
@@ -724,16 +1327,11 @@ exports[`<BlogList /> should render correctly with blog load error 1`] = `
             .
             <br />
             If you are unsure about your right to use them please 
-            <a
-              class="sc-iBYQkv jHA-DIX"
-              href="/contact"
+            <span
+              class="c11"
             >
-              <span
-                class="sc-eDvSVe ezgbKo"
-              >
-                contact me
-              </span>
-            </a>
+              contact me
+            </span>
             .
           </span>
         </div>
@@ -744,13 +1342,222 @@ exports[`<BlogList /> should render correctly with blog load error 1`] = `
 `;
 
 exports[`<BlogList /> should render correctly with blogs 1`] = `
+.c1 {
+  margin: 0;
+  font-size: 2.2rem;
+  font-weight: bold;
+}
+
+.c8 {
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.c0 {
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.c12 {
+  margin: 0;
+}
+
+.c14 {
+  width: 1.25rem;
+  height: 1.25rem;
+}
+
+.c11 {
+  display: inline-block;
+  border-radius: 0.25rem;
+  font-weight: bold;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  position: relative;
+  color: darkorchid;
+  fill: darkorchid;
+}
+
+.c11:focus-within,
+.c11:focus {
+  position: relative;
+  outline: none !important;
+}
+
+.c11:focus-within::after,
+.c11:focus::after {
+  position: absolute;
+  top: -0.35rem;
+  right: -0.35rem;
+  bottom: -0.35rem;
+  left: -0.35rem;
+  content: '';
+  display: block;
+  border: solid rgba(0,125,250,0.6) 0.2rem;
+  border-radius: 0.5rem;
+  pointer-events: none;
+}
+
+.c11:hover {
+  color: #44aeff;
+  fill: #44aeff;
+}
+
+.c13 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  width: 0.4rem;
+  height: 1rem;
+  margin-left: 0.55rem;
+}
+
+.c15 {
+  position: absolute;
+  width: 1rem;
+  height: 1rem;
+  margin-top: 0.12rem;
+  margin-left: -0.45rem;
+}
+
+.c6 {
+  width: 100%;
+  color: #1e1e1e;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c9 {
+  margin: 2.13rem 0 0 0;
+}
+
+.c2 {
+  position: relative;
+  width: 100%;
+  border-radius: 0.25rem;
+  background-color: rgb(238,238,238);
+  overflow: hidden;
+}
+
+.c3 {
+  position: absolute;
+  top: 0;
+  width: 13rem;
+  height: 100vh;
+  background-image: linear-gradient( 90deg, rgb(238,238,238), rgb(245,245,245), rgb(238,238,238) );
+  background-repeat: no-repeat;
+  background-size: 12.5rem 100%;
+  -webkit-animation: sjjMW 3.5s ease-in-out infinite;
+  animation: sjjMW 3.5s ease-in-out infinite;
+}
+
+.c10 {
+  display: inline-block;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  line-height: 1.5;
+  margin-top: 2rem;
+}
+
+.c10:first-of-type {
+  margin-top: 0.86rem;
+}
+
+.c4 {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  margin-top: 2rem;
+  margin-left: 0;
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.c5 {
+  position: absolute;
+  top: 0;
+  left: calc(50% - 50vw);
+  z-index: -1;
+  width: 100vw;
+  height: 100%;
+  background-color: #fbfbfb;
+}
+
+.c7 {
+  width: 100%;
+  padding-right: 1.875rem;
+  padding-left: 1.865rem;
+  text-align: center;
+}
+
+@media (prefers-color-scheme:dark) {
+  .c11:focus-within::after,
+  .c11:focus::after {
+    border-color: rgba(0,125,250,0.6);
+  }
+}
+
+@media (prefers-color-scheme:dark) {
+  .c11 {
+    color: orchid;
+    fill: orchid;
+  }
+
+  .c11:hover {
+    color: #44aeff;
+    fill: #44aeff;
+  }
+}
+
+@media (prefers-color-scheme:dark) {
+  .c6 {
+    color: white;
+  }
+}
+
+@media (prefers-color-scheme:dark) {
+  .c2 {
+    background-color: rgb(17,17,17);
+  }
+}
+
+@media (prefers-color-scheme:dark) {
+  .c3 {
+    background-image: linear-gradient( 90deg, rgb(17,17,17), rgb(50,50,50), rgb(17,17,17) );
+  }
+}
+
+@media (prefers-color-scheme:dark) {
+
+}
+
+@media (prefers-color-scheme:dark) {
+
+}
+
+@media (prefers-color-scheme:dark) {
+  .c5 {
+    background-color: #121313;
+  }
+}
+
 <div>
   <div
-    class="sc-jOiSOi ekQEkc page-containerstyles__StyledPageContainer-sc-19l7k4-0 containerstyles__StyledPageContainer-sc-1117fm5-0 cjeRLX"
+    class="page-containerstyles__StyledPageContainer-sc-19l7k4-0 "
     width="default"
   >
     <div
-      class="sc-bCfvAP dgXbpV"
+      class=""
     >
       <style>
         .js .animated-content__wrapper--hidden {
@@ -759,58 +1566,58 @@ exports[`<BlogList /> should render correctly with blogs 1`] = `
 }
       </style>
       <div
-        class="sc-dPWrhe ihlYTc animated-content__wrapper--hidden"
+        class="animated-content__wrapper--hidden"
       >
         <div>
           <div
-            class="sc-bBABsx iCoEWm"
+            class=""
           >
             <div
-              class="sc-iveFHk dmKvZd"
+              class=""
             />
             <div
-              class="sc-cwSeag AjTsV"
+              class=""
             >
               <div
                 aria-hidden="true"
-                class="sc-jIRcFI kBGySO"
+                class=""
               >
                 <div
-                  class="sc-hhOBVt hSDQEk date container"
+                  class="date container"
                 >
                   <div
-                    class="sc-cjibBx EOWoG"
+                    class=""
                   >
                     <span
-                      class="sc-eDvSVe jJIXiK"
+                      class="c0"
                     >
                       NaN Invalid Date
                     </span>
                   </div>
                   <div
-                    class="sc-jcMfQk ioGdDY"
+                    class=""
                   >
                     <span
-                      class="sc-eDvSVe jJIXiK"
+                      class="c0"
                     >
                       NaN
                     </span>
                   </div>
                   <div
-                    class="sc-jcMfQk ioGdDY"
+                    class=""
                   >
                     <span
-                      class="sc-eDvSVe jJIXiK"
+                      class="c0"
                     >
                       Invalid Date
                     </span>
                   </div>
                 </div>
                 <div
-                  class="sc-gYbzsP eKmnXz"
+                  class=""
                 >
                   <h1
-                    class="sc-gswNZR gzqAHo"
+                    class="c1"
                   >
                     Blog 1 
                   </h1>
@@ -819,65 +1626,65 @@ exports[`<BlogList /> should render correctly with blogs 1`] = `
             </div>
           </div>
           <div
-            class="sc-bBABsx iCoEWm"
+            class=""
           >
             <div
-              class="sc-iveFHk dmKvZd"
+              class=""
             />
             <div
-              class="sc-cwSeag AjTsV"
+              class=""
             >
               <div
                 aria-hidden="true"
-                class="sc-jIRcFI kBGySO"
+                class=""
               >
                 <div
-                  class="sc-hhOBVt hSDQEk date container"
+                  class="date container"
                 >
                   <div
-                    class="sc-cjibBx EOWoG"
+                    class=""
                   >
                     <span
-                      class="sc-eDvSVe jJIXiK"
+                      class="c0"
                     >
                       23-30 Dec
                     </span>
                   </div>
                   <div
-                    class="sc-jcMfQk ioGdDY"
+                    class=""
                   >
                     <span
-                      class="sc-eDvSVe jJIXiK"
+                      class="c0"
                     >
                       23-30
                     </span>
                   </div>
                   <div
-                    class="sc-jcMfQk ioGdDY"
+                    class=""
                   >
                     <span
-                      class="sc-eDvSVe jJIXiK"
+                      class="c0"
                     >
                       Dec
                     </span>
                   </div>
                 </div>
                 <div
-                  class="sc-gYbzsP eKmnXz"
+                  class=""
                 >
                   <h1
-                    class="sc-gswNZR gzqAHo"
+                    class="c1"
                   >
                     St Ives  2018
                   </h1>
                   <div
-                    class="sc-iTFTee eZqvaI"
+                    class=""
                   >
                     <div
-                      class="sc-eeMvmM"
+                      class=""
                     >
                       <span
-                        class="sc-cUEOzv hnJbeS"
+                        class=""
                         type="travel"
                       >
                         Travel
@@ -886,10 +1693,10 @@ exports[`<BlogList /> should render correctly with blogs 1`] = `
                   </div>
                 </div>
                 <div
-                  class="sc-cCjUiG iIfruF"
+                  class=""
                 >
                   <div
-                    class="sc-lllmON bUkDOe sc-cabOPr fHLafW"
+                    class=""
                   >
                     <style>
                       
@@ -898,17 +1705,17 @@ exports[`<BlogList /> should render correctly with blogs 1`] = `
         
                     </style>
                     <div
-                      class="sc-iJnaPW eRzWKn"
+                      class=""
                       style="padding-bottom: 100%;"
                     >
                       <div
-                        class="sc-gikAfH cZeErA"
+                        class=""
                       >
                         <div
-                          class="sc-eDWCr kticUa sc-ezOQGI dwrTOQ"
+                          class="c2 "
                         >
                           <div
-                            class="sc-bqWxrE cRkaeW"
+                            class="c3"
                             style="margin-left: -0px;"
                           />
                         </div>
@@ -918,12 +1725,12 @@ exports[`<BlogList /> should render correctly with blogs 1`] = `
                       >
                         <img
                           alt="card"
-                          class="sc-bYMpWt bMLRvh"
+                          class=""
                           src="https://i.imgur.com/ppPEuDs.jpg"
                         />
                         <img
                           alt="card"
-                          class="sc-kMjNwy QrIki"
+                          class=""
                           src="https://i.imgur.com/ppPEuDs.jpg"
                         />
                       </div>
@@ -932,12 +1739,12 @@ exports[`<BlogList /> should render correctly with blogs 1`] = `
                       >
                         <img
                           alt="card"
-                          class="sc-bYMpWt jbDEDp"
+                          class=""
                           src="https://i.imgur.com/ppPEuDs.jpg"
                         />
                         <img
                           alt="card"
-                          class="sc-kMjNwy eeONsG"
+                          class=""
                           src="https://i.imgur.com/ppPEuDs.jpg"
                         />
                       </div>
@@ -948,65 +1755,65 @@ exports[`<BlogList /> should render correctly with blogs 1`] = `
             </div>
           </div>
           <div
-            class="sc-bBABsx iCoEWm"
+            class=""
           >
             <div
-              class="sc-iveFHk dmKvZd"
+              class=""
             />
             <div
-              class="sc-cwSeag AjTsV"
+              class=""
             >
               <div
                 aria-hidden="true"
-                class="sc-jIRcFI kBGySO"
+                class=""
               >
                 <div
-                  class="sc-hhOBVt hSDQEk date container"
+                  class="date container"
                 >
                   <div
-                    class="sc-cjibBx EOWoG"
+                    class=""
                   >
                     <span
-                      class="sc-eDvSVe jJIXiK"
+                      class="c0"
                     >
                       23-30 Dec
                     </span>
                   </div>
                   <div
-                    class="sc-jcMfQk ioGdDY"
+                    class=""
                   >
                     <span
-                      class="sc-eDvSVe jJIXiK"
+                      class="c0"
                     >
                       23-30
                     </span>
                   </div>
                   <div
-                    class="sc-jcMfQk ioGdDY"
+                    class=""
                   >
                     <span
-                      class="sc-eDvSVe jJIXiK"
+                      class="c0"
                     >
                       Dec
                     </span>
                   </div>
                 </div>
                 <div
-                  class="sc-gYbzsP eKmnXz"
+                  class=""
                 >
                   <h1
-                    class="sc-gswNZR gzqAHo"
+                    class="c1"
                   >
                     Untitled blog (DELETED)
                   </h1>
                   <div
-                    class="sc-iTFTee eZqvaI"
+                    class=""
                   >
                     <div
-                      class="sc-eeMvmM"
+                      class=""
                     >
                       <span
-                        class="sc-cUEOzv hnJbeS"
+                        class=""
                         type="travel"
                       >
                         Travel
@@ -1015,10 +1822,10 @@ exports[`<BlogList /> should render correctly with blogs 1`] = `
                   </div>
                 </div>
                 <div
-                  class="sc-cCjUiG iIfruF"
+                  class=""
                 >
                   <div
-                    class="sc-lllmON bUkDOe sc-cabOPr fHLafW"
+                    class=""
                   >
                     <style>
                       
@@ -1027,17 +1834,17 @@ exports[`<BlogList /> should render correctly with blogs 1`] = `
         
                     </style>
                     <div
-                      class="sc-iJnaPW eRzWKn"
+                      class=""
                       style="padding-bottom: 100%;"
                     >
                       <div
-                        class="sc-gikAfH cZeErA"
+                        class=""
                       >
                         <div
-                          class="sc-eDWCr kticUa sc-ezOQGI dwrTOQ"
+                          class="c2 "
                         >
                           <div
-                            class="sc-bqWxrE cRkaeW"
+                            class="c3"
                             style="margin-left: -0px;"
                           />
                         </div>
@@ -1047,12 +1854,12 @@ exports[`<BlogList /> should render correctly with blogs 1`] = `
                       >
                         <img
                           alt="card"
-                          class="sc-bYMpWt bMLRvh"
+                          class=""
                           src="https://i.imgur.com/ppPEuDs.jpg"
                         />
                         <img
                           alt="card"
-                          class="sc-kMjNwy QrIki"
+                          class=""
                           src="https://i.imgur.com/ppPEuDs.jpg"
                         />
                       </div>
@@ -1061,12 +1868,12 @@ exports[`<BlogList /> should render correctly with blogs 1`] = `
                       >
                         <img
                           alt="card"
-                          class="sc-bYMpWt jbDEDp"
+                          class=""
                           src="https://i.imgur.com/ppPEuDs.jpg"
                         />
                         <img
                           alt="card"
-                          class="sc-kMjNwy eeONsG"
+                          class=""
                           src="https://i.imgur.com/ppPEuDs.jpg"
                         />
                       </div>
@@ -1081,7 +1888,7 @@ exports[`<BlogList /> should render correctly with blogs 1`] = `
     </div>
   </div>
   <div
-    class="sc-bCfvAP dgXbpV"
+    class=""
   >
     <style>
       .js .animated-content__wrapper--hidden {
@@ -1089,45 +1896,45 @@ exports[`<BlogList /> should render correctly with blogs 1`] = `
 }
     </style>
     <div
-      class="sc-dPWrhe ihlYTc animated-content__wrapper--hidden"
+      class="animated-content__wrapper--hidden"
     >
       <div
-        class="creative-commonssyles__Wrapper-sc-qff226-0 eObJgx"
+        class="c4"
       >
         <div
-          class="creative-commonssyles__Background-sc-qff226-1 gREbZK"
+          class="c5"
         />
         <div
-          class="sc-jrcTuL drIieO creative-commonssyles__Inner-sc-qff226-2 jkifKu"
+          class="c6 c7"
         >
           <h1
-            class="sc-dkrFOg eRKGDm sc-csuSiG gvoVyF"
+            class="c8 c9"
             id="copyright"
           >
             Copyright
           </h1>
           <span
-            class="sc-ksBlkl bLCpBX"
+            class="c10"
           >
             Most of my photos are licensed under
              
             <a
               aria-label="Creative Commons BY-SA 3.0 (opens in a new tab)"
-              class="sc-iBYQkv jHA-DIX"
+              class="c11"
               href="https://creativecommons.org/licenses/by-sa/3.0/"
               rel="noopener noreferrer"
               target="_blank"
             >
               <span
-                class="sc-eDvSVe ezgbKo"
+                class="c12"
               >
                 Creative Commons BY-SA 3.0
               </span>
               <div
-                class="sc-ftTHYK dbfjGz"
+                class="c13"
               >
                 <svg
-                  class="sc-gKPRtg eSdzmv sc-pyfCe hLCbyO"
+                  class="c14 c15"
                   height="18"
                   viewBox="0 0 24 24"
                   width="18"
@@ -1142,16 +1949,11 @@ exports[`<BlogList /> should render correctly with blogs 1`] = `
             .
             <br />
             If you are unsure about your right to use them please 
-            <a
-              class="sc-iBYQkv jHA-DIX"
-              href="/contact"
+            <span
+              class="c12"
             >
-              <span
-                class="sc-eDvSVe ezgbKo"
-              >
-                contact me
-              </span>
-            </a>
+              contact me
+            </span>
             .
           </span>
         </div>
@@ -1162,54 +1964,254 @@ exports[`<BlogList /> should render correctly with blogs 1`] = `
 `;
 
 exports[`<BlogList /> should render correctly with initial state 1`] = `
+.c6 {
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.c10 {
+  margin: 0;
+}
+
+.c12 {
+  width: 1.25rem;
+  height: 1.25rem;
+}
+
+.c9 {
+  display: inline-block;
+  border-radius: 0.25rem;
+  font-weight: bold;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  position: relative;
+  color: darkorchid;
+  fill: darkorchid;
+}
+
+.c9:focus-within,
+.c9:focus {
+  position: relative;
+  outline: none !important;
+}
+
+.c9:focus-within::after,
+.c9:focus::after {
+  position: absolute;
+  top: -0.35rem;
+  right: -0.35rem;
+  bottom: -0.35rem;
+  left: -0.35rem;
+  content: '';
+  display: block;
+  border: solid rgba(0,125,250,0.6) 0.2rem;
+  border-radius: 0.5rem;
+  pointer-events: none;
+}
+
+.c9:hover {
+  color: #44aeff;
+  fill: #44aeff;
+}
+
+.c11 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  width: 0.4rem;
+  height: 1rem;
+  margin-left: 0.55rem;
+}
+
+.c13 {
+  position: absolute;
+  width: 1rem;
+  height: 1rem;
+  margin-top: 0.12rem;
+  margin-left: -0.45rem;
+}
+
+.c4 {
+  width: 100%;
+  color: #1e1e1e;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c7 {
+  margin: 2.13rem 0 0 0;
+}
+
+.c0 {
+  position: relative;
+  width: 100%;
+  border-radius: 0.25rem;
+  background-color: rgb(238,238,238);
+  overflow: hidden;
+  width: 100%;
+  height: 10rem;
+  margin-bottom: 1.2rem;
+}
+
+.c1 {
+  position: absolute;
+  top: 0;
+  width: 13rem;
+  height: 100vh;
+  background-image: linear-gradient( 90deg, rgb(238,238,238), rgb(245,245,245), rgb(238,238,238) );
+  background-repeat: no-repeat;
+  background-size: 12.5rem 100%;
+  -webkit-animation: sjjMW 3.5s ease-in-out infinite;
+  animation: sjjMW 3.5s ease-in-out infinite;
+}
+
+.c8 {
+  display: inline-block;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  line-height: 1.5;
+  margin-top: 2rem;
+}
+
+.c8:first-of-type {
+  margin-top: 0.86rem;
+}
+
+.c2 {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  margin-top: 2rem;
+  margin-left: 0;
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.c3 {
+  position: absolute;
+  top: 0;
+  left: calc(50% - 50vw);
+  z-index: -1;
+  width: 100vw;
+  height: 100%;
+  background-color: #fbfbfb;
+}
+
+.c5 {
+  width: 100%;
+  padding-right: 1.875rem;
+  padding-left: 1.865rem;
+  text-align: center;
+}
+
+@media (prefers-color-scheme:dark) {
+  .c9:focus-within::after,
+  .c9:focus::after {
+    border-color: rgba(0,125,250,0.6);
+  }
+}
+
+@media (prefers-color-scheme:dark) {
+  .c9 {
+    color: orchid;
+    fill: orchid;
+  }
+
+  .c9:hover {
+    color: #44aeff;
+    fill: #44aeff;
+  }
+}
+
+@media (prefers-color-scheme:dark) {
+  .c4 {
+    color: white;
+  }
+}
+
+@media (prefers-color-scheme:dark) {
+  .c0 {
+    background-color: rgb(17,17,17);
+  }
+}
+
+@media (prefers-color-scheme:dark) {
+  .c1 {
+    background-image: linear-gradient( 90deg, rgb(17,17,17), rgb(50,50,50), rgb(17,17,17) );
+  }
+}
+
+@media (prefers-color-scheme:dark) {
+
+}
+
+@media (prefers-color-scheme:dark) {
+
+}
+
+@media (prefers-color-scheme:dark) {
+  .c3 {
+    background-color: #121313;
+  }
+}
+
 <div>
   <div
-    class="sc-jOiSOi ekQEkc page-containerstyles__StyledPageContainer-sc-19l7k4-0 containerstyles__StyledPageContainer-sc-1117fm5-0 cjeRLX"
+    class="page-containerstyles__StyledPageContainer-sc-19l7k4-0 "
     width="default"
   >
     <div
-      class="sc-eDWCr esSKbW"
+      class="c0"
     >
       <div
-        class="sc-bqWxrE cRkaeW"
+        class="c1"
         style="margin-left: -0px;"
       />
     </div>
     <div
-      class="sc-eDWCr esSKbW"
+      class="c0"
     >
       <div
-        class="sc-bqWxrE cRkaeW"
+        class="c1"
         style="margin-left: -0px;"
       />
     </div>
     <div
-      class="sc-eDWCr esSKbW"
+      class="c0"
     >
       <div
-        class="sc-bqWxrE cRkaeW"
+        class="c1"
         style="margin-left: -0px;"
       />
     </div>
     <div
-      class="sc-eDWCr esSKbW"
+      class="c0"
     >
       <div
-        class="sc-bqWxrE cRkaeW"
+        class="c1"
         style="margin-left: -0px;"
       />
     </div>
     <div
-      class="sc-eDWCr esSKbW"
+      class="c0"
     >
       <div
-        class="sc-bqWxrE cRkaeW"
+        class="c1"
         style="margin-left: -0px;"
       />
     </div>
   </div>
   <div
-    class="sc-bCfvAP dgXbpV"
+    class=""
   >
     <style>
       .js .animated-content__wrapper--hidden {
@@ -1217,45 +2219,45 @@ exports[`<BlogList /> should render correctly with initial state 1`] = `
 }
     </style>
     <div
-      class="sc-dPWrhe ihlYTc animated-content__wrapper--hidden"
+      class="animated-content__wrapper--hidden"
     >
       <div
-        class="creative-commonssyles__Wrapper-sc-qff226-0 eObJgx"
+        class="c2"
       >
         <div
-          class="creative-commonssyles__Background-sc-qff226-1 gREbZK"
+          class="c3"
         />
         <div
-          class="sc-jrcTuL drIieO creative-commonssyles__Inner-sc-qff226-2 jkifKu"
+          class="c4 c5"
         >
           <h1
-            class="sc-dkrFOg eRKGDm sc-csuSiG gvoVyF"
+            class="c6 c7"
             id="copyright"
           >
             Copyright
           </h1>
           <span
-            class="sc-ksBlkl bLCpBX"
+            class="c8"
           >
             Most of my photos are licensed under
              
             <a
               aria-label="Creative Commons BY-SA 3.0 (opens in a new tab)"
-              class="sc-iBYQkv jHA-DIX"
+              class="c9"
               href="https://creativecommons.org/licenses/by-sa/3.0/"
               rel="noopener noreferrer"
               target="_blank"
             >
               <span
-                class="sc-eDvSVe ezgbKo"
+                class="c10"
               >
                 Creative Commons BY-SA 3.0
               </span>
               <div
-                class="sc-ftTHYK dbfjGz"
+                class="c11"
               >
                 <svg
-                  class="sc-gKPRtg eSdzmv sc-pyfCe hLCbyO"
+                  class="c12 c13"
                   height="18"
                   viewBox="0 0 24 24"
                   width="18"
@@ -1270,16 +2272,11 @@ exports[`<BlogList /> should render correctly with initial state 1`] = `
             .
             <br />
             If you are unsure about your right to use them please 
-            <a
-              class="sc-iBYQkv jHA-DIX"
-              href="/contact"
+            <span
+              class="c10"
             >
-              <span
-                class="sc-eDvSVe ezgbKo"
-              >
-                contact me
-              </span>
-            </a>
+              contact me
+            </span>
             .
           </span>
         </div>
@@ -1290,13 +2287,222 @@ exports[`<BlogList /> should render correctly with initial state 1`] = `
 `;
 
 exports[`<BlogList /> should render correctly with ssrBlogs 1`] = `
+.c1 {
+  margin: 0;
+  font-size: 2.2rem;
+  font-weight: bold;
+}
+
+.c8 {
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.c0 {
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.c12 {
+  margin: 0;
+}
+
+.c14 {
+  width: 1.25rem;
+  height: 1.25rem;
+}
+
+.c11 {
+  display: inline-block;
+  border-radius: 0.25rem;
+  font-weight: bold;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  position: relative;
+  color: darkorchid;
+  fill: darkorchid;
+}
+
+.c11:focus-within,
+.c11:focus {
+  position: relative;
+  outline: none !important;
+}
+
+.c11:focus-within::after,
+.c11:focus::after {
+  position: absolute;
+  top: -0.35rem;
+  right: -0.35rem;
+  bottom: -0.35rem;
+  left: -0.35rem;
+  content: '';
+  display: block;
+  border: solid rgba(0,125,250,0.6) 0.2rem;
+  border-radius: 0.5rem;
+  pointer-events: none;
+}
+
+.c11:hover {
+  color: #44aeff;
+  fill: #44aeff;
+}
+
+.c13 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  width: 0.4rem;
+  height: 1rem;
+  margin-left: 0.55rem;
+}
+
+.c15 {
+  position: absolute;
+  width: 1rem;
+  height: 1rem;
+  margin-top: 0.12rem;
+  margin-left: -0.45rem;
+}
+
+.c6 {
+  width: 100%;
+  color: #1e1e1e;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c9 {
+  margin: 2.13rem 0 0 0;
+}
+
+.c2 {
+  position: relative;
+  width: 100%;
+  border-radius: 0.25rem;
+  background-color: rgb(238,238,238);
+  overflow: hidden;
+}
+
+.c3 {
+  position: absolute;
+  top: 0;
+  width: 13rem;
+  height: 100vh;
+  background-image: linear-gradient( 90deg, rgb(238,238,238), rgb(245,245,245), rgb(238,238,238) );
+  background-repeat: no-repeat;
+  background-size: 12.5rem 100%;
+  -webkit-animation: sjjMW 3.5s ease-in-out infinite;
+  animation: sjjMW 3.5s ease-in-out infinite;
+}
+
+.c10 {
+  display: inline-block;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  line-height: 1.5;
+  margin-top: 2rem;
+}
+
+.c10:first-of-type {
+  margin-top: 0.86rem;
+}
+
+.c4 {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  margin-top: 2rem;
+  margin-left: 0;
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.c5 {
+  position: absolute;
+  top: 0;
+  left: calc(50% - 50vw);
+  z-index: -1;
+  width: 100vw;
+  height: 100%;
+  background-color: #fbfbfb;
+}
+
+.c7 {
+  width: 100%;
+  padding-right: 1.875rem;
+  padding-left: 1.865rem;
+  text-align: center;
+}
+
+@media (prefers-color-scheme:dark) {
+  .c11:focus-within::after,
+  .c11:focus::after {
+    border-color: rgba(0,125,250,0.6);
+  }
+}
+
+@media (prefers-color-scheme:dark) {
+  .c11 {
+    color: orchid;
+    fill: orchid;
+  }
+
+  .c11:hover {
+    color: #44aeff;
+    fill: #44aeff;
+  }
+}
+
+@media (prefers-color-scheme:dark) {
+  .c6 {
+    color: white;
+  }
+}
+
+@media (prefers-color-scheme:dark) {
+  .c2 {
+    background-color: rgb(17,17,17);
+  }
+}
+
+@media (prefers-color-scheme:dark) {
+  .c3 {
+    background-image: linear-gradient( 90deg, rgb(17,17,17), rgb(50,50,50), rgb(17,17,17) );
+  }
+}
+
+@media (prefers-color-scheme:dark) {
+
+}
+
+@media (prefers-color-scheme:dark) {
+
+}
+
+@media (prefers-color-scheme:dark) {
+  .c5 {
+    background-color: #121313;
+  }
+}
+
 <div>
   <div
-    class="sc-jOiSOi ekQEkc page-containerstyles__StyledPageContainer-sc-19l7k4-0 containerstyles__StyledPageContainer-sc-1117fm5-0 cjeRLX"
+    class="page-containerstyles__StyledPageContainer-sc-19l7k4-0 "
     width="default"
   >
     <div
-      class="sc-bCfvAP dgXbpV"
+      class=""
     >
       <style>
         .js .animated-content__wrapper--hidden {
@@ -1305,58 +2511,58 @@ exports[`<BlogList /> should render correctly with ssrBlogs 1`] = `
 }
       </style>
       <div
-        class="sc-dPWrhe ihlYTc animated-content__wrapper--hidden"
+        class="animated-content__wrapper--hidden"
       >
         <div>
           <div
-            class="sc-bBABsx iCoEWm"
+            class=""
           >
             <div
-              class="sc-iveFHk dmKvZd"
+              class=""
             />
             <div
-              class="sc-cwSeag AjTsV"
+              class=""
             >
               <div
                 aria-hidden="true"
-                class="sc-jIRcFI kBGySO"
+                class=""
               >
                 <div
-                  class="sc-hhOBVt hSDQEk date container"
+                  class="date container"
                 >
                   <div
-                    class="sc-cjibBx EOWoG"
+                    class=""
                   >
                     <span
-                      class="sc-eDvSVe jJIXiK"
+                      class="c0"
                     >
                       NaN Invalid Date
                     </span>
                   </div>
                   <div
-                    class="sc-jcMfQk ioGdDY"
+                    class=""
                   >
                     <span
-                      class="sc-eDvSVe jJIXiK"
+                      class="c0"
                     >
                       NaN
                     </span>
                   </div>
                   <div
-                    class="sc-jcMfQk ioGdDY"
+                    class=""
                   >
                     <span
-                      class="sc-eDvSVe jJIXiK"
+                      class="c0"
                     >
                       Invalid Date
                     </span>
                   </div>
                 </div>
                 <div
-                  class="sc-gYbzsP eKmnXz"
+                  class=""
                 >
                   <h1
-                    class="sc-gswNZR gzqAHo"
+                    class="c1"
                   >
                     Blog 1 
                   </h1>
@@ -1365,65 +2571,65 @@ exports[`<BlogList /> should render correctly with ssrBlogs 1`] = `
             </div>
           </div>
           <div
-            class="sc-bBABsx iCoEWm"
+            class=""
           >
             <div
-              class="sc-iveFHk dmKvZd"
+              class=""
             />
             <div
-              class="sc-cwSeag AjTsV"
+              class=""
             >
               <div
                 aria-hidden="true"
-                class="sc-jIRcFI kBGySO"
+                class=""
               >
                 <div
-                  class="sc-hhOBVt hSDQEk date container"
+                  class="date container"
                 >
                   <div
-                    class="sc-cjibBx EOWoG"
+                    class=""
                   >
                     <span
-                      class="sc-eDvSVe jJIXiK"
+                      class="c0"
                     >
                       23-30 Dec
                     </span>
                   </div>
                   <div
-                    class="sc-jcMfQk ioGdDY"
+                    class=""
                   >
                     <span
-                      class="sc-eDvSVe jJIXiK"
+                      class="c0"
                     >
                       23-30
                     </span>
                   </div>
                   <div
-                    class="sc-jcMfQk ioGdDY"
+                    class=""
                   >
                     <span
-                      class="sc-eDvSVe jJIXiK"
+                      class="c0"
                     >
                       Dec
                     </span>
                   </div>
                 </div>
                 <div
-                  class="sc-gYbzsP eKmnXz"
+                  class=""
                 >
                   <h1
-                    class="sc-gswNZR gzqAHo"
+                    class="c1"
                   >
                     St Ives  2018
                   </h1>
                   <div
-                    class="sc-iTFTee eZqvaI"
+                    class=""
                   >
                     <div
-                      class="sc-eeMvmM"
+                      class=""
                     >
                       <span
-                        class="sc-cUEOzv hnJbeS"
+                        class=""
                         type="travel"
                       >
                         Travel
@@ -1432,10 +2638,10 @@ exports[`<BlogList /> should render correctly with ssrBlogs 1`] = `
                   </div>
                 </div>
                 <div
-                  class="sc-cCjUiG iIfruF"
+                  class=""
                 >
                   <div
-                    class="sc-lllmON bUkDOe sc-cabOPr fHLafW"
+                    class=""
                   >
                     <style>
                       
@@ -1444,17 +2650,17 @@ exports[`<BlogList /> should render correctly with ssrBlogs 1`] = `
         
                     </style>
                     <div
-                      class="sc-iJnaPW eRzWKn"
+                      class=""
                       style="padding-bottom: 100%;"
                     >
                       <div
-                        class="sc-gikAfH cZeErA"
+                        class=""
                       >
                         <div
-                          class="sc-eDWCr kticUa sc-ezOQGI dwrTOQ"
+                          class="c2 "
                         >
                           <div
-                            class="sc-bqWxrE cRkaeW"
+                            class="c3"
                             style="margin-left: -0px;"
                           />
                         </div>
@@ -1464,12 +2670,12 @@ exports[`<BlogList /> should render correctly with ssrBlogs 1`] = `
                       >
                         <img
                           alt="card"
-                          class="sc-bYMpWt bMLRvh"
+                          class=""
                           src="https://i.imgur.com/ppPEuDs.jpg"
                         />
                         <img
                           alt="card"
-                          class="sc-kMjNwy QrIki"
+                          class=""
                           src="https://i.imgur.com/ppPEuDs.jpg"
                         />
                       </div>
@@ -1478,12 +2684,12 @@ exports[`<BlogList /> should render correctly with ssrBlogs 1`] = `
                       >
                         <img
                           alt="card"
-                          class="sc-bYMpWt jbDEDp"
+                          class=""
                           src="https://i.imgur.com/ppPEuDs.jpg"
                         />
                         <img
                           alt="card"
-                          class="sc-kMjNwy eeONsG"
+                          class=""
                           src="https://i.imgur.com/ppPEuDs.jpg"
                         />
                       </div>
@@ -1494,65 +2700,65 @@ exports[`<BlogList /> should render correctly with ssrBlogs 1`] = `
             </div>
           </div>
           <div
-            class="sc-bBABsx iCoEWm"
+            class=""
           >
             <div
-              class="sc-iveFHk dmKvZd"
+              class=""
             />
             <div
-              class="sc-cwSeag AjTsV"
+              class=""
             >
               <div
                 aria-hidden="true"
-                class="sc-jIRcFI kBGySO"
+                class=""
               >
                 <div
-                  class="sc-hhOBVt hSDQEk date container"
+                  class="date container"
                 >
                   <div
-                    class="sc-cjibBx EOWoG"
+                    class=""
                   >
                     <span
-                      class="sc-eDvSVe jJIXiK"
+                      class="c0"
                     >
                       23-30 Dec
                     </span>
                   </div>
                   <div
-                    class="sc-jcMfQk ioGdDY"
+                    class=""
                   >
                     <span
-                      class="sc-eDvSVe jJIXiK"
+                      class="c0"
                     >
                       23-30
                     </span>
                   </div>
                   <div
-                    class="sc-jcMfQk ioGdDY"
+                    class=""
                   >
                     <span
-                      class="sc-eDvSVe jJIXiK"
+                      class="c0"
                     >
                       Dec
                     </span>
                   </div>
                 </div>
                 <div
-                  class="sc-gYbzsP eKmnXz"
+                  class=""
                 >
                   <h1
-                    class="sc-gswNZR gzqAHo"
+                    class="c1"
                   >
                     Untitled blog (DELETED)
                   </h1>
                   <div
-                    class="sc-iTFTee eZqvaI"
+                    class=""
                   >
                     <div
-                      class="sc-eeMvmM"
+                      class=""
                     >
                       <span
-                        class="sc-cUEOzv hnJbeS"
+                        class=""
                         type="travel"
                       >
                         Travel
@@ -1561,10 +2767,10 @@ exports[`<BlogList /> should render correctly with ssrBlogs 1`] = `
                   </div>
                 </div>
                 <div
-                  class="sc-cCjUiG iIfruF"
+                  class=""
                 >
                   <div
-                    class="sc-lllmON bUkDOe sc-cabOPr fHLafW"
+                    class=""
                   >
                     <style>
                       
@@ -1573,17 +2779,17 @@ exports[`<BlogList /> should render correctly with ssrBlogs 1`] = `
         
                     </style>
                     <div
-                      class="sc-iJnaPW eRzWKn"
+                      class=""
                       style="padding-bottom: 100%;"
                     >
                       <div
-                        class="sc-gikAfH cZeErA"
+                        class=""
                       >
                         <div
-                          class="sc-eDWCr kticUa sc-ezOQGI dwrTOQ"
+                          class="c2 "
                         >
                           <div
-                            class="sc-bqWxrE cRkaeW"
+                            class="c3"
                             style="margin-left: -0px;"
                           />
                         </div>
@@ -1593,12 +2799,12 @@ exports[`<BlogList /> should render correctly with ssrBlogs 1`] = `
                       >
                         <img
                           alt="card"
-                          class="sc-bYMpWt bMLRvh"
+                          class=""
                           src="https://i.imgur.com/ppPEuDs.jpg"
                         />
                         <img
                           alt="card"
-                          class="sc-kMjNwy QrIki"
+                          class=""
                           src="https://i.imgur.com/ppPEuDs.jpg"
                         />
                       </div>
@@ -1607,12 +2813,12 @@ exports[`<BlogList /> should render correctly with ssrBlogs 1`] = `
                       >
                         <img
                           alt="card"
-                          class="sc-bYMpWt jbDEDp"
+                          class=""
                           src="https://i.imgur.com/ppPEuDs.jpg"
                         />
                         <img
                           alt="card"
-                          class="sc-kMjNwy eeONsG"
+                          class=""
                           src="https://i.imgur.com/ppPEuDs.jpg"
                         />
                       </div>
@@ -1627,7 +2833,7 @@ exports[`<BlogList /> should render correctly with ssrBlogs 1`] = `
     </div>
   </div>
   <div
-    class="sc-bCfvAP dgXbpV"
+    class=""
   >
     <style>
       .js .animated-content__wrapper--hidden {
@@ -1635,45 +2841,45 @@ exports[`<BlogList /> should render correctly with ssrBlogs 1`] = `
 }
     </style>
     <div
-      class="sc-dPWrhe ihlYTc animated-content__wrapper--hidden"
+      class="animated-content__wrapper--hidden"
     >
       <div
-        class="creative-commonssyles__Wrapper-sc-qff226-0 eObJgx"
+        class="c4"
       >
         <div
-          class="creative-commonssyles__Background-sc-qff226-1 gREbZK"
+          class="c5"
         />
         <div
-          class="sc-jrcTuL drIieO creative-commonssyles__Inner-sc-qff226-2 jkifKu"
+          class="c6 c7"
         >
           <h1
-            class="sc-dkrFOg eRKGDm sc-csuSiG gvoVyF"
+            class="c8 c9"
             id="copyright"
           >
             Copyright
           </h1>
           <span
-            class="sc-ksBlkl bLCpBX"
+            class="c10"
           >
             Most of my photos are licensed under
              
             <a
               aria-label="Creative Commons BY-SA 3.0 (opens in a new tab)"
-              class="sc-iBYQkv jHA-DIX"
+              class="c11"
               href="https://creativecommons.org/licenses/by-sa/3.0/"
               rel="noopener noreferrer"
               target="_blank"
             >
               <span
-                class="sc-eDvSVe ezgbKo"
+                class="c12"
               >
                 Creative Commons BY-SA 3.0
               </span>
               <div
-                class="sc-ftTHYK dbfjGz"
+                class="c13"
               >
                 <svg
-                  class="sc-gKPRtg eSdzmv sc-pyfCe hLCbyO"
+                  class="c14 c15"
                   height="18"
                   viewBox="0 0 24 24"
                   width="18"
@@ -1688,16 +2894,11 @@ exports[`<BlogList /> should render correctly with ssrBlogs 1`] = `
             .
             <br />
             If you are unsure about your right to use them please 
-            <a
-              class="sc-iBYQkv jHA-DIX"
-              href="/contact"
+            <span
+              class="c12"
             >
-              <span
-                class="sc-eDvSVe ezgbKo"
-              >
-                contact me
-              </span>
-            </a>
+              contact me
+            </span>
             .
           </span>
         </div>

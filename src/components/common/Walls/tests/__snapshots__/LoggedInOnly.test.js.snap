@@ -1,43 +1,80 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<LoggedInOnly /> Should render correctly 1`] = `
+.c3 {
+  display: inline-block;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  line-height: 1.5;
+  margin-top: 2rem;
+}
+
+.c3:first-of-type {
+  margin-top: 0.86rem;
+}
+
+.c1 {
+  margin: 0;
+  font-size: 2.2rem;
+  font-weight: bold;
+}
+
+.c4 {
+  margin: 0;
+}
+
+.c0 {
+  width: 100%;
+  color: #1e1e1e;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c2 {
+  margin: 3.34rem 0 0 0;
+}
+
+@media (prefers-color-scheme:dark) {
+  .c0 {
+    color: white;
+  }
+}
+
+@media (prefers-color-scheme:dark) {
+
+}
+
+@media (prefers-color-scheme:dark) {
+
+}
+
 <div>
   <div
-    class="sc-kDvujY jcGnlL"
+    class="c0"
   >
     <h1
-      class="sc-dkrFOg dYiSba sc-eDWCr wULAC"
+      class="c1 c2"
       id="logged-out"
     >
       Logged out
     </h1>
     <span
-      class="sc-bcXHqe huaqIH"
+      class="c3"
     >
       You need to be logged in to 
       view this content
       <br />
-      <a
-        class="sc-ftTHYK cJafwd"
-        href="/sign-up"
+      <span
+        class="c4"
       >
-        <span
-          class="sc-jSUZER bjWoVS"
-        >
-          Register here - it's quick and easy.
-        </span>
-      </a>
+        Register here - it's quick and easy.
+      </span>
       <br />
-      <a
-        class="sc-ftTHYK cJafwd"
-        href="/login"
+      <span
+        class="c4"
       >
-        <span
-          class="sc-jSUZER bjWoVS"
-        >
-          Already got an account? Log in here.
-        </span>
-      </a>
+        Already got an account? Log in here.
+      </span>
     </span>
   </div>
 </div>

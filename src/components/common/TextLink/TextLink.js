@@ -10,7 +10,7 @@ const TextLink = props => {
     return <GGTextLink {...props} />;
   }
 
-  return <GGTextLink anchorLink={anchorComponent} {...rest} />;
+  return <GGTextLink anchorComponent={anchorComponent} {...rest} />;
 };
 
 TextLink.propTypes = {

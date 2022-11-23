@@ -1,9 +1,13 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<MainWrapper /> Should render correctly 1`] = `
+.c0 {
+  width: 100%;
+}
+
 <div>
   <main
-    class="main-wrapperstyles__StyledMainWrapper-sc-hveppy-0 llAgSZ"
+    class="c0"
     id="main"
   >
     <div>
@@ -14,9 +18,13 @@ exports[`<MainWrapper /> Should render correctly 1`] = `
 `;
 
 exports[`<MainWrapper /> Should render correctly with custom className 1`] = `
+.c0 {
+  width: 100%;
+}
+
 <div>
   <main
-    class="main-wrapperstyles__StyledMainWrapper-sc-hveppy-0 llAgSZ test-custom-classname"
+    class="c0 test-custom-classname"
     id="main"
   >
     <div>

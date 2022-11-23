@@ -1,30 +1,250 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<BlogRenderer /> should render correctly - index 1`] = `
+.c8 {
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.c12 {
+  margin: 0;
+}
+
+.c14 {
+  width: 1.25rem;
+  height: 1.25rem;
+}
+
+.c11 {
+  display: inline-block;
+  border-radius: 0.25rem;
+  font-weight: bold;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  position: relative;
+  color: darkorchid;
+  fill: darkorchid;
+}
+
+.c11:focus-within,
+.c11:focus {
+  position: relative;
+  outline: none !important;
+}
+
+.c11:focus-within::after,
+.c11:focus::after {
+  position: absolute;
+  top: -0.35rem;
+  right: -0.35rem;
+  bottom: -0.35rem;
+  left: -0.35rem;
+  content: '';
+  display: block;
+  border: solid rgba(0,125,250,0.6) 0.2rem;
+  border-radius: 0.5rem;
+  pointer-events: none;
+}
+
+.c11:hover {
+  color: #44aeff;
+  fill: #44aeff;
+}
+
+.c13 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  width: 0.4rem;
+  height: 1rem;
+  margin-left: 0.55rem;
+}
+
+.c15 {
+  position: absolute;
+  width: 1rem;
+  height: 1rem;
+  margin-top: 0.12rem;
+  margin-left: -0.45rem;
+}
+
+.c6 {
+  width: 100%;
+  color: #1e1e1e;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c9 {
+  margin: 2.13rem 0 0 0;
+}
+
+.c0 {
+  position: relative;
+  width: 100%;
+  border-radius: 0.25rem;
+  background-color: rgb(238,238,238);
+  overflow: hidden;
+  width: 8rem;
+  height: 2.2rem;
+  margin-top: 3.34rem;
+}
+
+.c2 {
+  position: relative;
+  width: 100%;
+  border-radius: 0.25rem;
+  background-color: rgb(238,238,238);
+  overflow: hidden;
+}
+
+.c1 {
+  position: absolute;
+  top: 0;
+  width: 13rem;
+  height: 100vh;
+  background-image: linear-gradient( 90deg, rgb(238,238,238), rgb(245,245,245), rgb(238,238,238) );
+  background-repeat: no-repeat;
+  background-size: 12.5rem 100%;
+  -webkit-animation: sjjMW 3.5s ease-in-out infinite;
+  animation: sjjMW 3.5s ease-in-out infinite;
+}
+
+.c10 {
+  display: inline-block;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  line-height: 1.5;
+  margin-top: 2rem;
+}
+
+.c10:first-of-type {
+  margin-top: 0.86rem;
+}
+
+.c3 {
+  width: 100%;
+  height: 50rem;
+  margin-top: 2rem;
+}
+
+.c4 {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  margin-top: 2rem;
+  margin-left: 0;
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.c5 {
+  position: absolute;
+  top: 0;
+  left: calc(50% - 50vw);
+  z-index: -1;
+  width: 100vw;
+  height: 100%;
+  background-color: #fbfbfb;
+}
+
+.c7 {
+  width: 100%;
+  padding-right: 1.875rem;
+  padding-left: 1.865rem;
+  text-align: center;
+}
+
+@media (prefers-color-scheme:dark) {
+  .c11:focus-within::after,
+  .c11:focus::after {
+    border-color: rgba(0,125,250,0.6);
+  }
+}
+
+@media (prefers-color-scheme:dark) {
+  .c11 {
+    color: orchid;
+    fill: orchid;
+  }
+
+  .c11:hover {
+    color: #44aeff;
+    fill: #44aeff;
+  }
+}
+
+@media (prefers-color-scheme:dark) {
+  .c6 {
+    color: white;
+  }
+}
+
+@media (prefers-color-scheme:dark) {
+  .c0 {
+    background-color: rgb(17,17,17);
+  }
+}
+
+@media (prefers-color-scheme:dark) {
+  .c2 {
+    background-color: rgb(17,17,17);
+  }
+}
+
+@media (prefers-color-scheme:dark) {
+  .c1 {
+    background-image: linear-gradient( 90deg, rgb(17,17,17), rgb(50,50,50), rgb(17,17,17) );
+  }
+}
+
+@media (prefers-color-scheme:dark) {
+
+}
+
+@media (prefers-color-scheme:dark) {
+
+}
+
+@media (prefers-color-scheme:dark) {
+  .c5 {
+    background-color: #121313;
+  }
+}
+
 <div>
   <div
-    class="sc-jOiSOi iCTOdK page-containerstyles__StyledPageContainer-sc-19l7k4-0"
+    class="page-containerstyles__StyledPageContainer-sc-19l7k4-0"
     width="prose"
   >
     <div
-      class="sc-eDWCr gfHLtc"
+      class="c0"
     >
       <div
-        class="sc-bqWxrE cRkaeW"
+        class="c1"
         style="margin-left: -0px;"
       />
     </div>
     <div
-      class="sc-eDWCr kticUa blog-rendererstyles__BodySkeleton-sc-15d9dvh-0 kzmwSy"
+      class="c2 c3"
     >
       <div
-        class="sc-bqWxrE cRkaeW"
+        class="c1"
         style="margin-left: -0px;"
       />
     </div>
   </div>
   <div
-    class="sc-jcMfQk fAHORx"
+    class=""
   >
     <style>
       .js .animated-content__wrapper--hidden {
@@ -32,45 +252,45 @@ exports[`<BlogRenderer /> should render correctly - index 1`] = `
 }
     </style>
     <div
-      class="sc-cjibBx iLaPmc animated-content__wrapper--hidden"
+      class="animated-content__wrapper--hidden"
     >
       <div
-        class="creative-commonssyles__Wrapper-sc-qff226-0 eObJgx"
+        class="c4"
       >
         <div
-          class="creative-commonssyles__Background-sc-qff226-1 gREbZK"
+          class="c5"
         />
         <div
-          class="sc-jrcTuL drIieO creative-commonssyles__Inner-sc-qff226-2 jkifKu"
+          class="c6 c7"
         >
           <h1
-            class="sc-dkrFOg eRKGDm sc-csuSiG gvoVyF"
+            class="c8 c9"
             id="copyright"
           >
             Copyright
           </h1>
           <span
-            class="sc-gikAfH buRiqg"
+            class="c10"
           >
             Most of my photos are licensed under
              
             <a
               aria-label="Creative Commons BY-SA 3.0 (opens in a new tab)"
-              class="sc-iBYQkv jHA-DIX"
+              class="c11"
               href="https://creativecommons.org/licenses/by-sa/3.0/"
               rel="noopener noreferrer"
               target="_blank"
             >
               <span
-                class="sc-eDvSVe ezgbKo"
+                class="c12"
               >
                 Creative Commons BY-SA 3.0
               </span>
               <div
-                class="sc-ftTHYK dbfjGz"
+                class="c13"
               >
                 <svg
-                  class="sc-gKPRtg eSdzmv sc-pyfCe hLCbyO"
+                  class="c14 c15"
                   height="18"
                   viewBox="0 0 24 24"
                   width="18"
@@ -85,16 +305,11 @@ exports[`<BlogRenderer /> should render correctly - index 1`] = `
             .
             <br />
             If you are unsure about your right to use them please 
-            <a
-              class="sc-iBYQkv jHA-DIX"
-              href="/contact"
+            <span
+              class="c12"
             >
-              <span
-                class="sc-eDvSVe ezgbKo"
-              >
-                contact me
-              </span>
-            </a>
+              contact me
+            </span>
             .
           </span>
         </div>
@@ -105,56 +320,259 @@ exports[`<BlogRenderer /> should render correctly - index 1`] = `
 `;
 
 exports[`<BlogRenderer /> should render correctly with blog 1`] = `
+.c1 {
+  margin: 0;
+  font-size: 2.4rem;
+  font-weight: bold;
+}
+
+.c16 {
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.c0 {
+  margin: 0;
+}
+
+.c10 {
+  width: 1.25rem;
+  height: 1.25rem;
+}
+
+.c8 {
+  display: inline-block;
+  border-radius: 0.25rem;
+  font-weight: bold;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  position: relative;
+  color: darkorchid;
+  fill: darkorchid;
+}
+
+.c8:focus-within,
+.c8:focus {
+  position: relative;
+  outline: none !important;
+}
+
+.c8:focus-within::after,
+.c8:focus::after {
+  position: absolute;
+  top: -0.35rem;
+  right: -0.35rem;
+  bottom: -0.35rem;
+  left: -0.35rem;
+  content: '';
+  display: block;
+  border: solid rgba(0,125,250,0.6) 0.2rem;
+  border-radius: 0.5rem;
+  pointer-events: none;
+}
+
+.c8:hover {
+  color: #44aeff;
+  fill: #44aeff;
+}
+
+.c9 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  width: 0.4rem;
+  height: 1rem;
+  margin-left: 0.55rem;
+}
+
+.c11 {
+  position: absolute;
+  width: 1rem;
+  height: 1rem;
+  margin-top: 0.12rem;
+  margin-left: -0.45rem;
+}
+
+.c14 {
+  width: 100%;
+  color: #1e1e1e;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c17 {
+  margin: 2.13rem 0 0 0;
+}
+
+.c3 {
+  font-style: italic;
+  padding-bottom: 0.5rem;
+}
+
+.c6 {
+  display: inline-block;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  line-height: 1.5;
+  margin-top: 2rem;
+}
+
+.c6:first-of-type {
+  margin-top: 0.86rem;
+}
+
+.c5 {
+  display: inline;
+  color: #1e1e1e;
+}
+
+.c5 .markdown-renderer__element {
+  max-width: 100%;
+}
+
+.c7 {
+  width: 100%;
+}
+
+.c2 {
+  margin-top: 0.86rem;
+  margin-bottom: 1rem;
+}
+
+.c4 {
+  margin-bottom: 1rem;
+}
+
+.c4 > * {
+  margin: 0 0.375rem 0.375rem 0;
+}
+
+.c12 {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  margin-top: 2rem;
+  margin-left: 0;
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.c13 {
+  position: absolute;
+  top: 0;
+  left: calc(50% - 50vw);
+  z-index: -1;
+  width: 100vw;
+  height: 100%;
+  background-color: #fbfbfb;
+}
+
+.c15 {
+  width: 100%;
+  padding-right: 1.875rem;
+  padding-left: 1.865rem;
+  text-align: center;
+}
+
+@media (prefers-color-scheme:dark) {
+  .c8:focus-within::after,
+  .c8:focus::after {
+    border-color: rgba(0,125,250,0.6);
+  }
+}
+
+@media (prefers-color-scheme:dark) {
+  .c8 {
+    color: orchid;
+    fill: orchid;
+  }
+
+  .c8:hover {
+    color: #44aeff;
+    fill: #44aeff;
+  }
+}
+
+@media (prefers-color-scheme:dark) {
+  .c14 {
+    color: white;
+  }
+}
+
+@media (prefers-color-scheme:dark) {
+  .c5 {
+    color: white;
+  }
+}
+
+@media (prefers-color-scheme:dark) {
+
+}
+
+@media (prefers-color-scheme:dark) {
+
+}
+
+@media (prefers-color-scheme:dark) {
+  .c13 {
+    background-color: #121313;
+  }
+}
+
 <div>
   <div
-    class="sc-jOiSOi iCTOdK page-containerstyles__StyledPageContainer-sc-19l7k4-0"
+    class="page-containerstyles__StyledPageContainer-sc-19l7k4-0"
     width="prose"
   >
     <div
-      class="sc-iTFTee kmpefi"
+      class=""
     >
       <div
-        class="sc-cCjUiG gIksrE"
+        class=""
       >
-        <a
-          class="sc-iBYQkv jHA-DIX"
-          href="/blogs"
+        <span
+          class="c0"
         >
-          <span
-            class="sc-eDvSVe ezgbKo"
-          >
-            ⇠ Blogs
-          </span>
-        </a>
+          ⇠ Blogs
+        </span>
       </div>
     </div>
     <div
-      class="sc-iTFTee kmpefi"
+      class=""
     >
       <h1
-        class="sc-bcXHqe bHgOFy sc-gYbzsP jkueZn"
+        class="c1 "
       >
         St. Ives ⛵ 2018
       </h1>
     </div>
     <div
-      class="blog-rendererstyles__DateContainer-sc-15d9dvh-1 kuvyGk"
+      class="c2"
     >
       <span
-        class="sc-eDvSVe ezgbKo sc-ksBlkl iiDSod"
+        class="c0 c3"
       >
         Published 
         TEST_DATE
       </span>
     </div>
     <div
-      class="blog-rendererstyles__TagList-sc-15d9dvh-2 cpiaZB"
+      class="c4"
     >
       <div
-        class="sc-iAEawV"
+        class=""
       >
         <span
-          class="sc-eeMvmM koHgll"
+          class=""
           type="travel"
         >
           Travel
@@ -162,29 +580,29 @@ exports[`<BlogRenderer /> should render correctly with blog 1`] = `
       </div>
     </div>
     <div
-      class="sc-bYMpWt jdetWK"
+      class="c5"
     >
       <span
-        class="sc-gikAfH buRiqg sc-kMjNwy bEnXPJ markdown-renderer__element"
+        class="c6 c7 markdown-renderer__element"
       >
         Some content with 
         <a
           aria-label="a link (opens in a new tab)"
-          class="sc-iBYQkv jHA-DIX"
+          class="c8"
           href="https://duckduckgo.com/"
           rel="noopener noreferrer"
           target="_blank"
         >
           <span
-            class="sc-eDvSVe ezgbKo"
+            class="c0"
           >
             a link
           </span>
           <div
-            class="sc-ftTHYK dbfjGz"
+            class="c9"
           >
             <svg
-              class="sc-gKPRtg eSdzmv sc-pyfCe hLCbyO"
+              class="c10 c11"
               height="18"
               viewBox="0 0 24 24"
               width="18"
@@ -201,7 +619,7 @@ exports[`<BlogRenderer /> should render correctly with blog 1`] = `
     </div>
   </div>
   <div
-    class="sc-jcMfQk fAHORx"
+    class=""
   >
     <style>
       .js .animated-content__wrapper--hidden {
@@ -209,45 +627,45 @@ exports[`<BlogRenderer /> should render correctly with blog 1`] = `
 }
     </style>
     <div
-      class="sc-cjibBx iLaPmc animated-content__wrapper--hidden"
+      class="animated-content__wrapper--hidden"
     >
       <div
-        class="creative-commonssyles__Wrapper-sc-qff226-0 eObJgx"
+        class="c12"
       >
         <div
-          class="creative-commonssyles__Background-sc-qff226-1 gREbZK"
+          class="c13"
         />
         <div
-          class="sc-jrcTuL drIieO creative-commonssyles__Inner-sc-qff226-2 jkifKu"
+          class="c14 c15"
         >
           <h1
-            class="sc-dkrFOg eRKGDm sc-csuSiG gvoVyF"
+            class="c16 c17"
             id="copyright"
           >
             Copyright
           </h1>
           <span
-            class="sc-gikAfH buRiqg"
+            class="c6"
           >
             Most of my photos are licensed under
              
             <a
               aria-label="Creative Commons BY-SA 3.0 (opens in a new tab)"
-              class="sc-iBYQkv jHA-DIX"
+              class="c8"
               href="https://creativecommons.org/licenses/by-sa/3.0/"
               rel="noopener noreferrer"
               target="_blank"
             >
               <span
-                class="sc-eDvSVe ezgbKo"
+                class="c0"
               >
                 Creative Commons BY-SA 3.0
               </span>
               <div
-                class="sc-ftTHYK dbfjGz"
+                class="c9"
               >
                 <svg
-                  class="sc-gKPRtg eSdzmv sc-pyfCe hLCbyO"
+                  class="c10 c11"
                   height="18"
                   viewBox="0 0 24 24"
                   width="18"
@@ -262,16 +680,11 @@ exports[`<BlogRenderer /> should render correctly with blog 1`] = `
             .
             <br />
             If you are unsure about your right to use them please 
-            <a
-              class="sc-iBYQkv jHA-DIX"
-              href="/contact"
+            <span
+              class="c0"
             >
-              <span
-                class="sc-eDvSVe ezgbKo"
-              >
-                contact me
-              </span>
-            </a>
+              contact me
+            </span>
             .
           </span>
         </div>
@@ -282,56 +695,269 @@ exports[`<BlogRenderer /> should render correctly with blog 1`] = `
 `;
 
 exports[`<BlogRenderer /> should render correctly with blog and admin 1`] = `
+.c1 {
+  margin: 0;
+  font-size: 2.4rem;
+  font-weight: bold;
+}
+
+.c13 {
+  margin: 0;
+  font-size: 2.2rem;
+  font-weight: bold;
+}
+
+.c18 {
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.c0 {
+  margin: 0;
+}
+
+.c10 {
+  width: 1.25rem;
+  height: 1.25rem;
+}
+
+.c8 {
+  display: inline-block;
+  border-radius: 0.25rem;
+  font-weight: bold;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  position: relative;
+  color: darkorchid;
+  fill: darkorchid;
+}
+
+.c8:focus-within,
+.c8:focus {
+  position: relative;
+  outline: none !important;
+}
+
+.c8:focus-within::after,
+.c8:focus::after {
+  position: absolute;
+  top: -0.35rem;
+  right: -0.35rem;
+  bottom: -0.35rem;
+  left: -0.35rem;
+  content: '';
+  display: block;
+  border: solid rgba(0,125,250,0.6) 0.2rem;
+  border-radius: 0.5rem;
+  pointer-events: none;
+}
+
+.c8:hover {
+  color: #44aeff;
+  fill: #44aeff;
+}
+
+.c9 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  width: 0.4rem;
+  height: 1rem;
+  margin-left: 0.55rem;
+}
+
+.c11 {
+  position: absolute;
+  width: 1rem;
+  height: 1rem;
+  margin-top: 0.12rem;
+  margin-left: -0.45rem;
+}
+
+.c12 {
+  width: 100%;
+  color: #1e1e1e;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c14 {
+  margin: 3.34rem 0 0 0;
+}
+
+.c19 {
+  margin: 2.13rem 0 0 0;
+}
+
+.c3 {
+  font-style: italic;
+  padding-bottom: 0.5rem;
+}
+
+.c6 {
+  display: inline-block;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  line-height: 1.5;
+  margin-top: 2rem;
+}
+
+.c6:first-of-type {
+  margin-top: 0.86rem;
+}
+
+.c5 {
+  display: inline;
+  color: #1e1e1e;
+}
+
+.c5 .markdown-renderer__element {
+  max-width: 100%;
+}
+
+.c7 {
+  width: 100%;
+}
+
+.c2 {
+  margin-top: 0.86rem;
+  margin-bottom: 1rem;
+}
+
+.c4 {
+  margin-bottom: 1rem;
+}
+
+.c4 > * {
+  margin: 0 0.375rem 0.375rem 0;
+}
+
+.c15 {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  margin-top: 2rem;
+  margin-left: 0;
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.c16 {
+  position: absolute;
+  top: 0;
+  left: calc(50% - 50vw);
+  z-index: -1;
+  width: 100vw;
+  height: 100%;
+  background-color: #fbfbfb;
+}
+
+.c17 {
+  width: 100%;
+  padding-right: 1.875rem;
+  padding-left: 1.865rem;
+  text-align: center;
+}
+
+@media (prefers-color-scheme:dark) {
+  .c8:focus-within::after,
+  .c8:focus::after {
+    border-color: rgba(0,125,250,0.6);
+  }
+}
+
+@media (prefers-color-scheme:dark) {
+  .c8 {
+    color: orchid;
+    fill: orchid;
+  }
+
+  .c8:hover {
+    color: #44aeff;
+    fill: #44aeff;
+  }
+}
+
+@media (prefers-color-scheme:dark) {
+  .c12 {
+    color: white;
+  }
+}
+
+@media (prefers-color-scheme:dark) {
+  .c5 {
+    color: white;
+  }
+}
+
+@media (prefers-color-scheme:dark) {
+
+}
+
+@media (prefers-color-scheme:dark) {
+
+}
+
+@media (prefers-color-scheme:dark) {
+  .c16 {
+    background-color: #121313;
+  }
+}
+
 <div>
   <div
-    class="sc-jOiSOi iCTOdK page-containerstyles__StyledPageContainer-sc-19l7k4-0"
+    class="page-containerstyles__StyledPageContainer-sc-19l7k4-0"
     width="prose"
   >
     <div
-      class="sc-iTFTee kmpefi"
+      class=""
     >
       <div
-        class="sc-cCjUiG gIksrE"
+        class=""
       >
-        <a
-          class="sc-iBYQkv jHA-DIX"
-          href="/blogs"
+        <span
+          class="c0"
         >
-          <span
-            class="sc-eDvSVe ezgbKo"
-          >
-            ⇠ Blogs
-          </span>
-        </a>
+          ⇠ Blogs
+        </span>
       </div>
     </div>
     <div
-      class="sc-iTFTee kmpefi"
+      class=""
     >
       <h1
-        class="sc-bcXHqe bHgOFy sc-gYbzsP jkueZn"
+        class="c1 "
       >
         St. Ives ⛵ 2018
       </h1>
     </div>
     <div
-      class="blog-rendererstyles__DateContainer-sc-15d9dvh-1 kuvyGk"
+      class="c2"
     >
       <span
-        class="sc-eDvSVe ezgbKo sc-ksBlkl iiDSod"
+        class="c0 c3"
       >
         Published 
         TEST_DATE
       </span>
     </div>
     <div
-      class="blog-rendererstyles__TagList-sc-15d9dvh-2 cpiaZB"
+      class="c4"
     >
       <div
-        class="sc-iAEawV"
+        class=""
       >
         <span
-          class="sc-eeMvmM koHgll"
+          class=""
           type="travel"
         >
           Travel
@@ -339,29 +965,29 @@ exports[`<BlogRenderer /> should render correctly with blog and admin 1`] = `
       </div>
     </div>
     <div
-      class="sc-bYMpWt jdetWK"
+      class="c5"
     >
       <span
-        class="sc-gikAfH buRiqg sc-kMjNwy bEnXPJ markdown-renderer__element"
+        class="c6 c7 markdown-renderer__element"
       >
         Some content with 
         <a
           aria-label="a link (opens in a new tab)"
-          class="sc-iBYQkv jHA-DIX"
+          class="c8"
           href="https://duckduckgo.com/"
           rel="noopener noreferrer"
           target="_blank"
         >
           <span
-            class="sc-eDvSVe ezgbKo"
+            class="c0"
           >
             a link
           </span>
           <div
-            class="sc-ftTHYK dbfjGz"
+            class="c9"
           >
             <svg
-              class="sc-gKPRtg eSdzmv sc-pyfCe hLCbyO"
+              class="c10 c11"
               height="18"
               viewBox="0 0 24 24"
               width="18"
@@ -377,10 +1003,10 @@ exports[`<BlogRenderer /> should render correctly with blog and admin 1`] = `
       </span>
     </div>
     <div
-      class="sc-jrcTuL drIieO"
+      class="c12"
     >
       <h1
-        class="sc-gswNZR gzqAHo sc-csuSiG hpbHKR"
+        class="c13 c14"
         id="edit-blog"
       >
         EDIT BLOG
@@ -391,7 +1017,7 @@ exports[`<BlogRenderer /> should render correctly with blog and admin 1`] = `
     </div>
   </div>
   <div
-    class="sc-jcMfQk fAHORx"
+    class=""
   >
     <style>
       .js .animated-content__wrapper--hidden {
@@ -399,45 +1025,45 @@ exports[`<BlogRenderer /> should render correctly with blog and admin 1`] = `
 }
     </style>
     <div
-      class="sc-cjibBx iLaPmc animated-content__wrapper--hidden"
+      class="animated-content__wrapper--hidden"
     >
       <div
-        class="creative-commonssyles__Wrapper-sc-qff226-0 eObJgx"
+        class="c15"
       >
         <div
-          class="creative-commonssyles__Background-sc-qff226-1 gREbZK"
+          class="c16"
         />
         <div
-          class="sc-jrcTuL drIieO creative-commonssyles__Inner-sc-qff226-2 jkifKu"
+          class="c12 c17"
         >
           <h1
-            class="sc-dkrFOg eRKGDm sc-csuSiG gvoVyF"
+            class="c18 c19"
             id="copyright"
           >
             Copyright
           </h1>
           <span
-            class="sc-gikAfH buRiqg"
+            class="c6"
           >
             Most of my photos are licensed under
              
             <a
               aria-label="Creative Commons BY-SA 3.0 (opens in a new tab)"
-              class="sc-iBYQkv jHA-DIX"
+              class="c8"
               href="https://creativecommons.org/licenses/by-sa/3.0/"
               rel="noopener noreferrer"
               target="_blank"
             >
               <span
-                class="sc-eDvSVe ezgbKo"
+                class="c0"
               >
                 Creative Commons BY-SA 3.0
               </span>
               <div
-                class="sc-ftTHYK dbfjGz"
+                class="c9"
               >
                 <svg
-                  class="sc-gKPRtg eSdzmv sc-pyfCe hLCbyO"
+                  class="c10 c11"
                   height="18"
                   viewBox="0 0 24 24"
                   width="18"
@@ -452,16 +1078,11 @@ exports[`<BlogRenderer /> should render correctly with blog and admin 1`] = `
             .
             <br />
             If you are unsure about your right to use them please 
-            <a
-              class="sc-iBYQkv jHA-DIX"
-              href="/contact"
+            <span
+              class="c0"
             >
-              <span
-                class="sc-eDvSVe ezgbKo"
-              >
-                contact me
-              </span>
-            </a>
+              contact me
+            </span>
             .
           </span>
         </div>
@@ -472,16 +1093,240 @@ exports[`<BlogRenderer /> should render correctly with blog and admin 1`] = `
 `;
 
 exports[`<BlogRenderer /> should render correctly with blog load error 1`] = `
+.c6 {
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.c13 {
+  margin: 0;
+}
+
+.c15 {
+  width: 1.25rem;
+  height: 1.25rem;
+}
+
+.c12 {
+  display: inline-block;
+  border-radius: 0.25rem;
+  font-weight: bold;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  position: relative;
+  color: darkorchid;
+  fill: darkorchid;
+}
+
+.c12:focus-within,
+.c12:focus {
+  position: relative;
+  outline: none !important;
+}
+
+.c12:focus-within::after,
+.c12:focus::after {
+  position: absolute;
+  top: -0.35rem;
+  right: -0.35rem;
+  bottom: -0.35rem;
+  left: -0.35rem;
+  content: '';
+  display: block;
+  border: solid rgba(0,125,250,0.6) 0.2rem;
+  border-radius: 0.5rem;
+  pointer-events: none;
+}
+
+.c12:hover {
+  color: #44aeff;
+  fill: #44aeff;
+}
+
+.c14 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  width: 0.4rem;
+  height: 1rem;
+  margin-left: 0.55rem;
+}
+
+.c16 {
+  position: absolute;
+  width: 1rem;
+  height: 1rem;
+  margin-top: 0.12rem;
+  margin-left: -0.45rem;
+}
+
+.c5 {
+  width: 100%;
+  color: #1e1e1e;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c7 {
+  margin: 0;
+}
+
+.c11 {
+  margin: 2.13rem 0 0 0;
+}
+
+.c1 {
+  position: relative;
+  width: 100%;
+  border-radius: 0.25rem;
+  background-color: rgb(238,238,238);
+  overflow: hidden;
+  width: 8rem;
+  height: 2.2rem;
+  margin-top: 3.34rem;
+}
+
+.c3 {
+  position: relative;
+  width: 100%;
+  border-radius: 0.25rem;
+  background-color: rgb(238,238,238);
+  overflow: hidden;
+}
+
+.c2 {
+  position: absolute;
+  top: 0;
+  width: 13rem;
+  height: 100vh;
+  background-image: linear-gradient( 90deg, rgb(238,238,238), rgb(245,245,245), rgb(238,238,238) );
+  background-repeat: no-repeat;
+  background-size: 12.5rem 100%;
+  -webkit-animation: sjjMW 3.5s ease-in-out infinite;
+  animation: sjjMW 3.5s ease-in-out infinite;
+}
+
+.c0 {
+  display: inline-block;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  line-height: 1.5;
+  margin-top: 2rem;
+}
+
+.c0:first-of-type {
+  margin-top: 0.86rem;
+}
+
+.c4 {
+  width: 100%;
+  height: 50rem;
+  margin-top: 2rem;
+}
+
+.c8 {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  margin-top: 2rem;
+  margin-left: 0;
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.c9 {
+  position: absolute;
+  top: 0;
+  left: calc(50% - 50vw);
+  z-index: -1;
+  width: 100vw;
+  height: 100%;
+  background-color: #fbfbfb;
+}
+
+.c10 {
+  width: 100%;
+  padding-right: 1.875rem;
+  padding-left: 1.865rem;
+  text-align: center;
+}
+
+@media (prefers-color-scheme:dark) {
+  .c12:focus-within::after,
+  .c12:focus::after {
+    border-color: rgba(0,125,250,0.6);
+  }
+}
+
+@media (prefers-color-scheme:dark) {
+  .c12 {
+    color: orchid;
+    fill: orchid;
+  }
+
+  .c12:hover {
+    color: #44aeff;
+    fill: #44aeff;
+  }
+}
+
+@media (prefers-color-scheme:dark) {
+  .c5 {
+    color: white;
+  }
+}
+
+@media (prefers-color-scheme:dark) {
+  .c1 {
+    background-color: rgb(17,17,17);
+  }
+}
+
+@media (prefers-color-scheme:dark) {
+  .c3 {
+    background-color: rgb(17,17,17);
+  }
+}
+
+@media (prefers-color-scheme:dark) {
+  .c2 {
+    background-image: linear-gradient( 90deg, rgb(17,17,17), rgb(50,50,50), rgb(17,17,17) );
+  }
+}
+
+@media (prefers-color-scheme:dark) {
+
+}
+
+@media (prefers-color-scheme:dark) {
+
+}
+
+@media (prefers-color-scheme:dark) {
+  .c9 {
+    background-color: #121313;
+  }
+}
+
 <div>
   <div
-    class="sc-jOiSOi iCTOdK page-containerstyles__StyledPageContainer-sc-19l7k4-0"
+    class="page-containerstyles__StyledPageContainer-sc-19l7k4-0"
     width="prose"
   >
     <span
-      class="sc-gikAfH buRiqg"
+      class="c0"
     >
       <span
-        class="sc-cUEOzv igGDlC"
+        class=""
       >
         This blog couldn't be loaded
         <br />
@@ -489,26 +1334,26 @@ exports[`<BlogRenderer /> should render correctly with blog load error 1`] = `
       </span>
     </span>
     <div
-      class="sc-eDWCr gfHLtc"
+      class="c1"
     >
       <div
-        class="sc-bqWxrE cRkaeW"
+        class="c2"
         style="margin-left: -0px;"
       />
     </div>
     <div
-      class="sc-eDWCr kticUa blog-rendererstyles__BodySkeleton-sc-15d9dvh-0 kzmwSy"
+      class="c3 c4"
     >
       <div
-        class="sc-bqWxrE cRkaeW"
+        class="c2"
         style="margin-left: -0px;"
       />
     </div>
     <div
-      class="sc-jrcTuL drIieO"
+      class="c5"
     >
       <h1
-        class="sc-dkrFOg eRKGDm sc-csuSiG kJUcBp"
+        class="c6 c7"
         id="this-is-taking-a-while.-maybe-something-isn't-quite-right..."
       >
         This is taking a while. Maybe something isn't quite right...
@@ -516,7 +1361,7 @@ exports[`<BlogRenderer /> should render correctly with blog load error 1`] = `
     </div>
   </div>
   <div
-    class="sc-jcMfQk fAHORx"
+    class=""
   >
     <style>
       .js .animated-content__wrapper--hidden {
@@ -524,45 +1369,45 @@ exports[`<BlogRenderer /> should render correctly with blog load error 1`] = `
 }
     </style>
     <div
-      class="sc-cjibBx iLaPmc animated-content__wrapper--hidden"
+      class="animated-content__wrapper--hidden"
     >
       <div
-        class="creative-commonssyles__Wrapper-sc-qff226-0 eObJgx"
+        class="c8"
       >
         <div
-          class="creative-commonssyles__Background-sc-qff226-1 gREbZK"
+          class="c9"
         />
         <div
-          class="sc-jrcTuL drIieO creative-commonssyles__Inner-sc-qff226-2 jkifKu"
+          class="c5 c10"
         >
           <h1
-            class="sc-dkrFOg eRKGDm sc-csuSiG gvoVyF"
+            class="c6 c11"
             id="copyright"
           >
             Copyright
           </h1>
           <span
-            class="sc-gikAfH buRiqg"
+            class="c0"
           >
             Most of my photos are licensed under
              
             <a
               aria-label="Creative Commons BY-SA 3.0 (opens in a new tab)"
-              class="sc-iBYQkv jHA-DIX"
+              class="c12"
               href="https://creativecommons.org/licenses/by-sa/3.0/"
               rel="noopener noreferrer"
               target="_blank"
             >
               <span
-                class="sc-eDvSVe ezgbKo"
+                class="c13"
               >
                 Creative Commons BY-SA 3.0
               </span>
               <div
-                class="sc-ftTHYK dbfjGz"
+                class="c14"
               >
                 <svg
-                  class="sc-gKPRtg eSdzmv sc-pyfCe hLCbyO"
+                  class="c15 c16"
                   height="18"
                   viewBox="0 0 24 24"
                   width="18"
@@ -577,16 +1422,11 @@ exports[`<BlogRenderer /> should render correctly with blog load error 1`] = `
             .
             <br />
             If you are unsure about your right to use them please 
-            <a
-              class="sc-iBYQkv jHA-DIX"
-              href="/contact"
+            <span
+              class="c13"
             >
-              <span
-                class="sc-eDvSVe ezgbKo"
-              >
-                contact me
-              </span>
-            </a>
+              contact me
+            </span>
             .
           </span>
         </div>
@@ -597,30 +1437,250 @@ exports[`<BlogRenderer /> should render correctly with blog load error 1`] = `
 `;
 
 exports[`<BlogRenderer /> should render correctly with initial state 1`] = `
+.c8 {
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.c12 {
+  margin: 0;
+}
+
+.c14 {
+  width: 1.25rem;
+  height: 1.25rem;
+}
+
+.c11 {
+  display: inline-block;
+  border-radius: 0.25rem;
+  font-weight: bold;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  position: relative;
+  color: darkorchid;
+  fill: darkorchid;
+}
+
+.c11:focus-within,
+.c11:focus {
+  position: relative;
+  outline: none !important;
+}
+
+.c11:focus-within::after,
+.c11:focus::after {
+  position: absolute;
+  top: -0.35rem;
+  right: -0.35rem;
+  bottom: -0.35rem;
+  left: -0.35rem;
+  content: '';
+  display: block;
+  border: solid rgba(0,125,250,0.6) 0.2rem;
+  border-radius: 0.5rem;
+  pointer-events: none;
+}
+
+.c11:hover {
+  color: #44aeff;
+  fill: #44aeff;
+}
+
+.c13 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  width: 0.4rem;
+  height: 1rem;
+  margin-left: 0.55rem;
+}
+
+.c15 {
+  position: absolute;
+  width: 1rem;
+  height: 1rem;
+  margin-top: 0.12rem;
+  margin-left: -0.45rem;
+}
+
+.c6 {
+  width: 100%;
+  color: #1e1e1e;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c9 {
+  margin: 2.13rem 0 0 0;
+}
+
+.c0 {
+  position: relative;
+  width: 100%;
+  border-radius: 0.25rem;
+  background-color: rgb(238,238,238);
+  overflow: hidden;
+  width: 8rem;
+  height: 2.2rem;
+  margin-top: 3.34rem;
+}
+
+.c2 {
+  position: relative;
+  width: 100%;
+  border-radius: 0.25rem;
+  background-color: rgb(238,238,238);
+  overflow: hidden;
+}
+
+.c1 {
+  position: absolute;
+  top: 0;
+  width: 13rem;
+  height: 100vh;
+  background-image: linear-gradient( 90deg, rgb(238,238,238), rgb(245,245,245), rgb(238,238,238) );
+  background-repeat: no-repeat;
+  background-size: 12.5rem 100%;
+  -webkit-animation: sjjMW 3.5s ease-in-out infinite;
+  animation: sjjMW 3.5s ease-in-out infinite;
+}
+
+.c10 {
+  display: inline-block;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  line-height: 1.5;
+  margin-top: 2rem;
+}
+
+.c10:first-of-type {
+  margin-top: 0.86rem;
+}
+
+.c3 {
+  width: 100%;
+  height: 50rem;
+  margin-top: 2rem;
+}
+
+.c4 {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  margin-top: 2rem;
+  margin-left: 0;
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.c5 {
+  position: absolute;
+  top: 0;
+  left: calc(50% - 50vw);
+  z-index: -1;
+  width: 100vw;
+  height: 100%;
+  background-color: #fbfbfb;
+}
+
+.c7 {
+  width: 100%;
+  padding-right: 1.875rem;
+  padding-left: 1.865rem;
+  text-align: center;
+}
+
+@media (prefers-color-scheme:dark) {
+  .c11:focus-within::after,
+  .c11:focus::after {
+    border-color: rgba(0,125,250,0.6);
+  }
+}
+
+@media (prefers-color-scheme:dark) {
+  .c11 {
+    color: orchid;
+    fill: orchid;
+  }
+
+  .c11:hover {
+    color: #44aeff;
+    fill: #44aeff;
+  }
+}
+
+@media (prefers-color-scheme:dark) {
+  .c6 {
+    color: white;
+  }
+}
+
+@media (prefers-color-scheme:dark) {
+  .c0 {
+    background-color: rgb(17,17,17);
+  }
+}
+
+@media (prefers-color-scheme:dark) {
+  .c2 {
+    background-color: rgb(17,17,17);
+  }
+}
+
+@media (prefers-color-scheme:dark) {
+  .c1 {
+    background-image: linear-gradient( 90deg, rgb(17,17,17), rgb(50,50,50), rgb(17,17,17) );
+  }
+}
+
+@media (prefers-color-scheme:dark) {
+
+}
+
+@media (prefers-color-scheme:dark) {
+
+}
+
+@media (prefers-color-scheme:dark) {
+  .c5 {
+    background-color: #121313;
+  }
+}
+
 <div>
   <div
-    class="sc-jOiSOi iCTOdK page-containerstyles__StyledPageContainer-sc-19l7k4-0"
+    class="page-containerstyles__StyledPageContainer-sc-19l7k4-0"
     width="prose"
   >
     <div
-      class="sc-eDWCr gfHLtc"
+      class="c0"
     >
       <div
-        class="sc-bqWxrE cRkaeW"
+        class="c1"
         style="margin-left: -0px;"
       />
     </div>
     <div
-      class="sc-eDWCr kticUa blog-rendererstyles__BodySkeleton-sc-15d9dvh-0 kzmwSy"
+      class="c2 c3"
     >
       <div
-        class="sc-bqWxrE cRkaeW"
+        class="c1"
         style="margin-left: -0px;"
       />
     </div>
   </div>
   <div
-    class="sc-jcMfQk fAHORx"
+    class=""
   >
     <style>
       .js .animated-content__wrapper--hidden {
@@ -628,45 +1688,45 @@ exports[`<BlogRenderer /> should render correctly with initial state 1`] = `
 }
     </style>
     <div
-      class="sc-cjibBx iLaPmc animated-content__wrapper--hidden"
+      class="animated-content__wrapper--hidden"
     >
       <div
-        class="creative-commonssyles__Wrapper-sc-qff226-0 eObJgx"
+        class="c4"
       >
         <div
-          class="creative-commonssyles__Background-sc-qff226-1 gREbZK"
+          class="c5"
         />
         <div
-          class="sc-jrcTuL drIieO creative-commonssyles__Inner-sc-qff226-2 jkifKu"
+          class="c6 c7"
         >
           <h1
-            class="sc-dkrFOg eRKGDm sc-csuSiG gvoVyF"
+            class="c8 c9"
             id="copyright"
           >
             Copyright
           </h1>
           <span
-            class="sc-gikAfH buRiqg"
+            class="c10"
           >
             Most of my photos are licensed under
              
             <a
               aria-label="Creative Commons BY-SA 3.0 (opens in a new tab)"
-              class="sc-iBYQkv jHA-DIX"
+              class="c11"
               href="https://creativecommons.org/licenses/by-sa/3.0/"
               rel="noopener noreferrer"
               target="_blank"
             >
               <span
-                class="sc-eDvSVe ezgbKo"
+                class="c12"
               >
                 Creative Commons BY-SA 3.0
               </span>
               <div
-                class="sc-ftTHYK dbfjGz"
+                class="c13"
               >
                 <svg
-                  class="sc-gKPRtg eSdzmv sc-pyfCe hLCbyO"
+                  class="c14 c15"
                   height="18"
                   viewBox="0 0 24 24"
                   width="18"
@@ -681,16 +1741,11 @@ exports[`<BlogRenderer /> should render correctly with initial state 1`] = `
             .
             <br />
             If you are unsure about your right to use them please 
-            <a
-              class="sc-iBYQkv jHA-DIX"
-              href="/contact"
+            <span
+              class="c12"
             >
-              <span
-                class="sc-eDvSVe ezgbKo"
-              >
-                contact me
-              </span>
-            </a>
+              contact me
+            </span>
             .
           </span>
         </div>
@@ -701,56 +1756,259 @@ exports[`<BlogRenderer /> should render correctly with initial state 1`] = `
 `;
 
 exports[`<BlogRenderer /> should render correctly with ssrBlog 1`] = `
+.c1 {
+  margin: 0;
+  font-size: 2.4rem;
+  font-weight: bold;
+}
+
+.c16 {
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.c0 {
+  margin: 0;
+}
+
+.c10 {
+  width: 1.25rem;
+  height: 1.25rem;
+}
+
+.c8 {
+  display: inline-block;
+  border-radius: 0.25rem;
+  font-weight: bold;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  position: relative;
+  color: darkorchid;
+  fill: darkorchid;
+}
+
+.c8:focus-within,
+.c8:focus {
+  position: relative;
+  outline: none !important;
+}
+
+.c8:focus-within::after,
+.c8:focus::after {
+  position: absolute;
+  top: -0.35rem;
+  right: -0.35rem;
+  bottom: -0.35rem;
+  left: -0.35rem;
+  content: '';
+  display: block;
+  border: solid rgba(0,125,250,0.6) 0.2rem;
+  border-radius: 0.5rem;
+  pointer-events: none;
+}
+
+.c8:hover {
+  color: #44aeff;
+  fill: #44aeff;
+}
+
+.c9 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  width: 0.4rem;
+  height: 1rem;
+  margin-left: 0.55rem;
+}
+
+.c11 {
+  position: absolute;
+  width: 1rem;
+  height: 1rem;
+  margin-top: 0.12rem;
+  margin-left: -0.45rem;
+}
+
+.c14 {
+  width: 100%;
+  color: #1e1e1e;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c17 {
+  margin: 2.13rem 0 0 0;
+}
+
+.c3 {
+  font-style: italic;
+  padding-bottom: 0.5rem;
+}
+
+.c6 {
+  display: inline-block;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  line-height: 1.5;
+  margin-top: 2rem;
+}
+
+.c6:first-of-type {
+  margin-top: 0.86rem;
+}
+
+.c5 {
+  display: inline;
+  color: #1e1e1e;
+}
+
+.c5 .markdown-renderer__element {
+  max-width: 100%;
+}
+
+.c7 {
+  width: 100%;
+}
+
+.c2 {
+  margin-top: 0.86rem;
+  margin-bottom: 1rem;
+}
+
+.c4 {
+  margin-bottom: 1rem;
+}
+
+.c4 > * {
+  margin: 0 0.375rem 0.375rem 0;
+}
+
+.c12 {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  margin-top: 2rem;
+  margin-left: 0;
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.c13 {
+  position: absolute;
+  top: 0;
+  left: calc(50% - 50vw);
+  z-index: -1;
+  width: 100vw;
+  height: 100%;
+  background-color: #fbfbfb;
+}
+
+.c15 {
+  width: 100%;
+  padding-right: 1.875rem;
+  padding-left: 1.865rem;
+  text-align: center;
+}
+
+@media (prefers-color-scheme:dark) {
+  .c8:focus-within::after,
+  .c8:focus::after {
+    border-color: rgba(0,125,250,0.6);
+  }
+}
+
+@media (prefers-color-scheme:dark) {
+  .c8 {
+    color: orchid;
+    fill: orchid;
+  }
+
+  .c8:hover {
+    color: #44aeff;
+    fill: #44aeff;
+  }
+}
+
+@media (prefers-color-scheme:dark) {
+  .c14 {
+    color: white;
+  }
+}
+
+@media (prefers-color-scheme:dark) {
+  .c5 {
+    color: white;
+  }
+}
+
+@media (prefers-color-scheme:dark) {
+
+}
+
+@media (prefers-color-scheme:dark) {
+
+}
+
+@media (prefers-color-scheme:dark) {
+  .c13 {
+    background-color: #121313;
+  }
+}
+
 <div>
   <div
-    class="sc-jOiSOi iCTOdK page-containerstyles__StyledPageContainer-sc-19l7k4-0"
+    class="page-containerstyles__StyledPageContainer-sc-19l7k4-0"
     width="prose"
   >
     <div
-      class="sc-iTFTee kmpefi"
+      class=""
     >
       <div
-        class="sc-cCjUiG gIksrE"
+        class=""
       >
-        <a
-          class="sc-iBYQkv jHA-DIX"
-          href="/blogs"
+        <span
+          class="c0"
         >
-          <span
-            class="sc-eDvSVe ezgbKo"
-          >
-            ⇠ Blogs
-          </span>
-        </a>
+          ⇠ Blogs
+        </span>
       </div>
     </div>
     <div
-      class="sc-iTFTee kmpefi"
+      class=""
     >
       <h1
-        class="sc-bcXHqe bHgOFy sc-gYbzsP jkueZn"
+        class="c1 "
       >
         St. Ives ⛵ 2018
       </h1>
     </div>
     <div
-      class="blog-rendererstyles__DateContainer-sc-15d9dvh-1 kuvyGk"
+      class="c2"
     >
       <span
-        class="sc-eDvSVe ezgbKo sc-ksBlkl iiDSod"
+        class="c0 c3"
       >
         Published 
         TEST_DATE
       </span>
     </div>
     <div
-      class="blog-rendererstyles__TagList-sc-15d9dvh-2 cpiaZB"
+      class="c4"
     >
       <div
-        class="sc-iAEawV"
+        class=""
       >
         <span
-          class="sc-eeMvmM koHgll"
+          class=""
           type="travel"
         >
           Travel
@@ -758,29 +2016,29 @@ exports[`<BlogRenderer /> should render correctly with ssrBlog 1`] = `
       </div>
     </div>
     <div
-      class="sc-bYMpWt jdetWK"
+      class="c5"
     >
       <span
-        class="sc-gikAfH buRiqg sc-kMjNwy bEnXPJ markdown-renderer__element"
+        class="c6 c7 markdown-renderer__element"
       >
         Some content with 
         <a
           aria-label="a link (opens in a new tab)"
-          class="sc-iBYQkv jHA-DIX"
+          class="c8"
           href="https://duckduckgo.com/"
           rel="noopener noreferrer"
           target="_blank"
         >
           <span
-            class="sc-eDvSVe ezgbKo"
+            class="c0"
           >
             a link
           </span>
           <div
-            class="sc-ftTHYK dbfjGz"
+            class="c9"
           >
             <svg
-              class="sc-gKPRtg eSdzmv sc-pyfCe hLCbyO"
+              class="c10 c11"
               height="18"
               viewBox="0 0 24 24"
               width="18"
@@ -797,7 +2055,7 @@ exports[`<BlogRenderer /> should render correctly with ssrBlog 1`] = `
     </div>
   </div>
   <div
-    class="sc-jcMfQk fAHORx"
+    class=""
   >
     <style>
       .js .animated-content__wrapper--hidden {
@@ -805,45 +2063,45 @@ exports[`<BlogRenderer /> should render correctly with ssrBlog 1`] = `
 }
     </style>
     <div
-      class="sc-cjibBx iLaPmc animated-content__wrapper--hidden"
+      class="animated-content__wrapper--hidden"
     >
       <div
-        class="creative-commonssyles__Wrapper-sc-qff226-0 eObJgx"
+        class="c12"
       >
         <div
-          class="creative-commonssyles__Background-sc-qff226-1 gREbZK"
+          class="c13"
         />
         <div
-          class="sc-jrcTuL drIieO creative-commonssyles__Inner-sc-qff226-2 jkifKu"
+          class="c14 c15"
         >
           <h1
-            class="sc-dkrFOg eRKGDm sc-csuSiG gvoVyF"
+            class="c16 c17"
             id="copyright"
           >
             Copyright
           </h1>
           <span
-            class="sc-gikAfH buRiqg"
+            class="c6"
           >
             Most of my photos are licensed under
              
             <a
               aria-label="Creative Commons BY-SA 3.0 (opens in a new tab)"
-              class="sc-iBYQkv jHA-DIX"
+              class="c8"
               href="https://creativecommons.org/licenses/by-sa/3.0/"
               rel="noopener noreferrer"
               target="_blank"
             >
               <span
-                class="sc-eDvSVe ezgbKo"
+                class="c0"
               >
                 Creative Commons BY-SA 3.0
               </span>
               <div
-                class="sc-ftTHYK dbfjGz"
+                class="c9"
               >
                 <svg
-                  class="sc-gKPRtg eSdzmv sc-pyfCe hLCbyO"
+                  class="c10 c11"
                   height="18"
                   viewBox="0 0 24 24"
                   width="18"
@@ -858,16 +2116,11 @@ exports[`<BlogRenderer /> should render correctly with ssrBlog 1`] = `
             .
             <br />
             If you are unsure about your right to use them please 
-            <a
-              class="sc-iBYQkv jHA-DIX"
-              href="/contact"
+            <span
+              class="c0"
             >
-              <span
-                class="sc-eDvSVe ezgbKo"
-              >
-                contact me
-              </span>
-            </a>
+              contact me
+            </span>
             .
           </span>
         </div>

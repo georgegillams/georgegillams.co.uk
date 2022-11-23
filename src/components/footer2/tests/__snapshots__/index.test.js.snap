@@ -1,31 +1,267 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<Footer /> Should render correctly 1`] = `
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding-bottom: 1rem;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-transition: -webkit-transform 0.2s;
+  -webkit-transition: transform 0.2s;
+  transition: transform 0.2s;
+  border-radius: 0.25rem;
+  outline: none;
+  padding-right: 2rem;
+  padding-left: 2rem;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 0;
+}
+
+.c3 {
+  border-radius: 0.25rem;
+}
+
+.c3:focus-within,
+.c3:focus {
+  position: relative;
+  outline: none !important;
+}
+
+.c3:focus-within::after,
+.c3:focus::after {
+  position: absolute;
+  top: -0.35rem;
+  right: -0.35rem;
+  bottom: -0.35rem;
+  left: -0.35rem;
+  content: '';
+  display: block;
+  border: solid rgba(0,125,250,0.6) 0.2rem;
+  border-radius: 0.5rem;
+  pointer-events: none;
+}
+
+.c3:hover,
+.c3:active,
+.c3:focus {
+  -webkit-animation-duration: 0.4s;
+  animation-duration: 0.4s;
+  -webkit-animation-name: cMFrpC;
+  animation-name: cMFrpC;
+}
+
+.c4 {
+  display: inline-block;
+  padding-top: 0.1rem;
+  border-radius: 0.25rem;
+  color: #44aeff;
+  font-size: 2.6rem;
+  line-height: 1.2;
+  font-weight: bold;
+}
+
+.c11 {
+  margin: 0;
+}
+
+.c9 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: space-around;
+  -webkit-justify-content: space-around;
+  -ms-flex-pack: space-around;
+  justify-content: space-around;
+  max-width: 45rem;
+  margin: auto;
+}
+
+.c10 > * {
+  margin: 0.5rem 0.5rem 0 0.5rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c6 {
+  display: inline-block;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  line-height: 1.5;
+  margin-top: 2rem;
+}
+
+.c6:first-of-type {
+  margin-top: 0.86rem;
+}
+
+.c7 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  margin-top: 0.5rem;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c8 {
+  display: inline-block;
+  width: 100%;
+  max-width: 2.3rem;
+  height: 100%;
+  max-height: 2.3rem;
+  padding: 0 0.5rem 0 0.2rem;
+  -webkit-filter: brightness(0) invert(1);
+  filter: brightness(0) invert(1);
+}
+
+.c8:hover {
+  -webkit-filter: brightness(0) invert(1) opacity(70%);
+  filter: brightness(0) invert(1) opacity(70%);
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 2rem 1rem;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: space-around;
+  -webkit-justify-content: space-around;
+  -ms-flex-pack: space-around;
+  justify-content: space-around;
+  border-top: solid #1e1e1e 0.15rem;
+  background-color: #1e1e1e;
+  background-position: center;
+  background-size: cover;
+  color: white;
+}
+
+.c2 {
+  text-align: center;
+}
+
+.c5 {
+  text-align: center;
+}
+
+@media (min-width:50.25rem) {
+  .c1 {
+    padding-right: unset;
+    padding-left: unset;
+    -webkit-align-items: unset;
+    -webkit-box-align: unset;
+    -ms-flex-align: unset;
+    align-items: unset;
+  }
+}
+
+@media (prefers-color-scheme:dark) {
+  .c3:focus-within::after,
+  .c3:focus::after {
+    border-color: rgba(0,125,250,0.6);
+  }
+}
+
+@media (min-width:32.25rem) {
+  .c4 {
+    font-size: 3rem;
+  }
+}
+
+@media (prefers-color-scheme:dark) {
+  .c4 {
+    color: white;
+  }
+}
+
+@media (prefers-color-scheme:dark) {
+
+}
+
+@media (prefers-color-scheme:dark) {
+
+}
+
+@media (min-width:32.25rem) {
+  .c0 {
+    padding: 2rem 2rem;
+  }
+}
+
+@media (prefers-color-scheme:dark) {
+  .c0 {
+    border-top: solid #44aeff 0.15rem;
+    background-color: #050d1b;
+  }
+}
+
 <div>
   <footer
-    class="footerstyles__Container-sc-ojjd19-0 jPsmbi"
+    class="c0"
     id="footer"
   >
     <div
-      class="logostyles__OuterContainer-sc-1fentac-0 hLzBQR footerstyles__StyledLogo-sc-ojjd19-1 iDMNXa"
+      class="c1 c2"
     >
       <a
-        class="logostyles__StyledLink-sc-1fentac-1 faHbaV"
+        class="c3"
         href="/"
       >
         <span
           aria-label="Home page"
-          class="logostyles__LargeText-sc-1fentac-2 cachOr"
+          class="c4"
         >
           G
         </span>
       </a>
     </div>
     <div
-      class="footerstyles__StyledTechSpecs-sc-ojjd19-2 jckxzC"
+      class="c5"
     >
       <span
-        class="sc-kDvujY bffeOZ tech-specsstyles__StyledParagraph-sc-1ysn53a-0 hLsLJb"
+        class="c6 c7"
       >
         Built in
         <a
@@ -35,7 +271,7 @@ exports[`<Footer /> Should render correctly 1`] = `
         >
           <img
             alt="React"
-            class="tech-specsstyles__Icon-sc-1ysn53a-1 ifSCys"
+            class="c8"
             height="5"
             width="5"
           />
@@ -48,7 +284,7 @@ exports[`<Footer /> Should render correctly 1`] = `
         >
           <img
             alt="Redux"
-            class="tech-specsstyles__Icon-sc-1ysn53a-1 ifSCys"
+            class="c8"
             height="5"
             width="5"
           />
@@ -61,7 +297,7 @@ exports[`<Footer /> Should render correctly 1`] = `
         >
           <img
             alt="Amazon Web Services"
-            class="tech-specsstyles__Icon-sc-1ysn53a-1 ifSCys"
+            class="c8"
             height="5"
             style="margin-top: .8rem; max-width: 2.9rem;"
             width="8.28"
@@ -70,95 +306,55 @@ exports[`<Footer /> Should render correctly 1`] = `
       </span>
     </div>
     <div
-      class="footer-navstyles__Wrapper-sc-7lmnsj-0 bCyRIt footerstyles__StyledFooterNav-sc-ojjd19-3"
+      class="c9 "
     >
       <div
-        class="footer-navstyles__Section-sc-7lmnsj-1 bcuhSW"
+        class="c10"
       >
-        <a
-          class="sc-gswNZR gltAA"
-          href="/blog"
+        <span
+          class="c11"
         >
-          <span
-            class="sc-ftTHYK cRFGYD"
-          >
-            Blog
-          </span>
-        </a>
-        <a
-          class="sc-gswNZR gltAA"
-          href="/photography"
+          Blog
+        </span>
+        <span
+          class="c11"
         >
-          <span
-            class="sc-ftTHYK cRFGYD"
-          >
-            Photography
-          </span>
-        </a>
-        <a
-          class="sc-gswNZR gltAA"
-          href="/work"
+          Photography
+        </span>
+        <span
+          class="c11"
         >
-          <span
-            class="sc-ftTHYK cRFGYD"
-          >
-            Work
-          </span>
-        </a>
-        <a
-          class="sc-gswNZR gltAA"
-          href="/contact"
+          Work
+        </span>
+        <span
+          class="c11"
         >
-          <span
-            class="sc-ftTHYK cRFGYD"
-          >
-            Contact
-          </span>
-        </a>
+          Contact
+        </span>
       </div>
       <div
-        class="footer-navstyles__Section-sc-7lmnsj-1 bcuhSW"
+        class="c10"
       >
-        <a
-          class="sc-gswNZR gltAA"
-          href="/sitemap"
+        <span
+          class="c11"
         >
-          <span
-            class="sc-ftTHYK cRFGYD"
-          >
-            Site map
-          </span>
-        </a>
-        <a
-          class="sc-gswNZR gltAA"
-          href="/privacy-policy"
+          Site map
+        </span>
+        <span
+          class="c11"
         >
-          <span
-            class="sc-ftTHYK cRFGYD"
-          >
-            Privacy
-          </span>
-        </a>
-        <a
-          class="sc-gswNZR gltAA"
-          href="/login"
+          Privacy
+        </span>
+        <span
+          class="c11"
         >
-          <span
-            class="sc-ftTHYK cRFGYD"
-          >
-            Login/Account
-          </span>
-        </a>
-        <a
-          class="sc-gswNZR gltAA"
-          href="/status"
+          Login/Account
+        </span>
+        <span
+          class="c11"
         >
-          <span
-            class="sc-ftTHYK cRFGYD"
-          >
-            Status
-          </span>
-        </a>
+          Status
+        </span>
       </div>
     </div>
   </footer>
@@ -166,31 +362,267 @@ exports[`<Footer /> Should render correctly 1`] = `
 `;
 
 exports[`<Footer /> Should render correctly with custom className 1`] = `
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding-bottom: 1rem;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-transition: -webkit-transform 0.2s;
+  -webkit-transition: transform 0.2s;
+  transition: transform 0.2s;
+  border-radius: 0.25rem;
+  outline: none;
+  padding-right: 2rem;
+  padding-left: 2rem;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 0;
+}
+
+.c3 {
+  border-radius: 0.25rem;
+}
+
+.c3:focus-within,
+.c3:focus {
+  position: relative;
+  outline: none !important;
+}
+
+.c3:focus-within::after,
+.c3:focus::after {
+  position: absolute;
+  top: -0.35rem;
+  right: -0.35rem;
+  bottom: -0.35rem;
+  left: -0.35rem;
+  content: '';
+  display: block;
+  border: solid rgba(0,125,250,0.6) 0.2rem;
+  border-radius: 0.5rem;
+  pointer-events: none;
+}
+
+.c3:hover,
+.c3:active,
+.c3:focus {
+  -webkit-animation-duration: 0.4s;
+  animation-duration: 0.4s;
+  -webkit-animation-name: cMFrpC;
+  animation-name: cMFrpC;
+}
+
+.c4 {
+  display: inline-block;
+  padding-top: 0.1rem;
+  border-radius: 0.25rem;
+  color: #44aeff;
+  font-size: 2.6rem;
+  line-height: 1.2;
+  font-weight: bold;
+}
+
+.c11 {
+  margin: 0;
+}
+
+.c9 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: space-around;
+  -webkit-justify-content: space-around;
+  -ms-flex-pack: space-around;
+  justify-content: space-around;
+  max-width: 45rem;
+  margin: auto;
+}
+
+.c10 > * {
+  margin: 0.5rem 0.5rem 0 0.5rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c6 {
+  display: inline-block;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  line-height: 1.5;
+  margin-top: 2rem;
+}
+
+.c6:first-of-type {
+  margin-top: 0.86rem;
+}
+
+.c7 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  margin-top: 0.5rem;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c8 {
+  display: inline-block;
+  width: 100%;
+  max-width: 2.3rem;
+  height: 100%;
+  max-height: 2.3rem;
+  padding: 0 0.5rem 0 0.2rem;
+  -webkit-filter: brightness(0) invert(1);
+  filter: brightness(0) invert(1);
+}
+
+.c8:hover {
+  -webkit-filter: brightness(0) invert(1) opacity(70%);
+  filter: brightness(0) invert(1) opacity(70%);
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 2rem 1rem;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: space-around;
+  -webkit-justify-content: space-around;
+  -ms-flex-pack: space-around;
+  justify-content: space-around;
+  border-top: solid #1e1e1e 0.15rem;
+  background-color: #1e1e1e;
+  background-position: center;
+  background-size: cover;
+  color: white;
+}
+
+.c2 {
+  text-align: center;
+}
+
+.c5 {
+  text-align: center;
+}
+
+@media (min-width:50.25rem) {
+  .c1 {
+    padding-right: unset;
+    padding-left: unset;
+    -webkit-align-items: unset;
+    -webkit-box-align: unset;
+    -ms-flex-align: unset;
+    align-items: unset;
+  }
+}
+
+@media (prefers-color-scheme:dark) {
+  .c3:focus-within::after,
+  .c3:focus::after {
+    border-color: rgba(0,125,250,0.6);
+  }
+}
+
+@media (min-width:32.25rem) {
+  .c4 {
+    font-size: 3rem;
+  }
+}
+
+@media (prefers-color-scheme:dark) {
+  .c4 {
+    color: white;
+  }
+}
+
+@media (prefers-color-scheme:dark) {
+
+}
+
+@media (prefers-color-scheme:dark) {
+
+}
+
+@media (min-width:32.25rem) {
+  .c0 {
+    padding: 2rem 2rem;
+  }
+}
+
+@media (prefers-color-scheme:dark) {
+  .c0 {
+    border-top: solid #44aeff 0.15rem;
+    background-color: #050d1b;
+  }
+}
+
 <div>
   <footer
-    class="footerstyles__Container-sc-ojjd19-0 jPsmbi test-custom-className"
+    class="c0 test-custom-className"
     id="footer"
   >
     <div
-      class="logostyles__OuterContainer-sc-1fentac-0 hLzBQR footerstyles__StyledLogo-sc-ojjd19-1 iDMNXa"
+      class="c1 c2"
     >
       <a
-        class="logostyles__StyledLink-sc-1fentac-1 faHbaV"
+        class="c3"
         href="/"
       >
         <span
           aria-label="Home page"
-          class="logostyles__LargeText-sc-1fentac-2 cachOr"
+          class="c4"
         >
           G
         </span>
       </a>
     </div>
     <div
-      class="footerstyles__StyledTechSpecs-sc-ojjd19-2 jckxzC"
+      class="c5"
     >
       <span
-        class="sc-kDvujY bffeOZ tech-specsstyles__StyledParagraph-sc-1ysn53a-0 hLsLJb"
+        class="c6 c7"
       >
         Built in
         <a
@@ -200,7 +632,7 @@ exports[`<Footer /> Should render correctly with custom className 1`] = `
         >
           <img
             alt="React"
-            class="tech-specsstyles__Icon-sc-1ysn53a-1 ifSCys"
+            class="c8"
             height="5"
             width="5"
           />
@@ -213,7 +645,7 @@ exports[`<Footer /> Should render correctly with custom className 1`] = `
         >
           <img
             alt="Redux"
-            class="tech-specsstyles__Icon-sc-1ysn53a-1 ifSCys"
+            class="c8"
             height="5"
             width="5"
           />
@@ -226,7 +658,7 @@ exports[`<Footer /> Should render correctly with custom className 1`] = `
         >
           <img
             alt="Amazon Web Services"
-            class="tech-specsstyles__Icon-sc-1ysn53a-1 ifSCys"
+            class="c8"
             height="5"
             style="margin-top: .8rem; max-width: 2.9rem;"
             width="8.28"
@@ -235,95 +667,55 @@ exports[`<Footer /> Should render correctly with custom className 1`] = `
       </span>
     </div>
     <div
-      class="footer-navstyles__Wrapper-sc-7lmnsj-0 bCyRIt footerstyles__StyledFooterNav-sc-ojjd19-3"
+      class="c9 "
     >
       <div
-        class="footer-navstyles__Section-sc-7lmnsj-1 bcuhSW"
+        class="c10"
       >
-        <a
-          class="sc-gswNZR gltAA"
-          href="/blog"
+        <span
+          class="c11"
         >
-          <span
-            class="sc-ftTHYK cRFGYD"
-          >
-            Blog
-          </span>
-        </a>
-        <a
-          class="sc-gswNZR gltAA"
-          href="/photography"
+          Blog
+        </span>
+        <span
+          class="c11"
         >
-          <span
-            class="sc-ftTHYK cRFGYD"
-          >
-            Photography
-          </span>
-        </a>
-        <a
-          class="sc-gswNZR gltAA"
-          href="/work"
+          Photography
+        </span>
+        <span
+          class="c11"
         >
-          <span
-            class="sc-ftTHYK cRFGYD"
-          >
-            Work
-          </span>
-        </a>
-        <a
-          class="sc-gswNZR gltAA"
-          href="/contact"
+          Work
+        </span>
+        <span
+          class="c11"
         >
-          <span
-            class="sc-ftTHYK cRFGYD"
-          >
-            Contact
-          </span>
-        </a>
+          Contact
+        </span>
       </div>
       <div
-        class="footer-navstyles__Section-sc-7lmnsj-1 bcuhSW"
+        class="c10"
       >
-        <a
-          class="sc-gswNZR gltAA"
-          href="/sitemap"
+        <span
+          class="c11"
         >
-          <span
-            class="sc-ftTHYK cRFGYD"
-          >
-            Site map
-          </span>
-        </a>
-        <a
-          class="sc-gswNZR gltAA"
-          href="/privacy-policy"
+          Site map
+        </span>
+        <span
+          class="c11"
         >
-          <span
-            class="sc-ftTHYK cRFGYD"
-          >
-            Privacy
-          </span>
-        </a>
-        <a
-          class="sc-gswNZR gltAA"
-          href="/login"
+          Privacy
+        </span>
+        <span
+          class="c11"
         >
-          <span
-            class="sc-ftTHYK cRFGYD"
-          >
-            Login/Account
-          </span>
-        </a>
-        <a
-          class="sc-gswNZR gltAA"
-          href="/status"
+          Login/Account
+        </span>
+        <span
+          class="c11"
         >
-          <span
-            class="sc-ftTHYK cRFGYD"
-          >
-            Status
-          </span>
-        </a>
+          Status
+        </span>
       </div>
     </div>
   </footer>

@@ -1,9 +1,318 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<Authenticator /> should render correctly - index 1`] = `
+.c5 {
+  width: 2rem;
+  height: 2rem;
+  padding: 0.5rem;
+  border: none;
+  border-radius: 0.5rem;
+  background-color: transparent;
+}
+
+.c5:focus-within,
+.c5:focus {
+  position: relative;
+  outline: none !important;
+}
+
+.c5:focus-within::after,
+.c5:focus::after {
+  position: absolute;
+  top: -0.35rem;
+  right: -0.35rem;
+  bottom: -0.35rem;
+  left: -0.35rem;
+  content: '';
+  display: block;
+  border: solid rgba(0,125,250,0.6) 0.2rem;
+  border-radius: 0.5rem;
+  pointer-events: none;
+}
+
+.c6 {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.c7 {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 0.1rem;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  background-color: #1e1e1e;
+}
+
+.c7:nth-child(1n) {
+  top: calc(25% - 0.05rem);
+}
+
+.c7:nth-child(2n) {
+  top: calc(50% - 0.05rem);
+}
+
+.c7:nth-child(3n) {
+  top: calc(75% - 0.05rem);
+}
+
+.c0 {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  -webkit-animation: kvNbHS 0.4s ease-in-out;
+  animation: kvNbHS 0.4s ease-in-out;
+}
+
+.c1 {
+  width: 100%;
+  padding: 0.4rem 0.2rem;
+  box-shadow: 0 0.05rem 0.5rem rgba(0,0,0,0.173);
+  position: inherit;
+  background-color: white;
+  -webkit-backdrop-filter: unset;
+  backdrop-filter: unset;
+  -webkit-backdrop-filter: unset;
+}
+
+.c2 {
+  width: 100%;
+  max-width: 60rem;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 0.9375rem;
+  padding-left: 0.9375rem;
+}
+
+.c4 {
+  width: 2rem;
+  height: 2rem;
+}
+
+.c11 {
+  display: none;
+}
+
+.c11 > * {
+  margin-right: 2rem;
+}
+
+.c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100%;
+}
+
+.c12 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.c8 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding-bottom: 1rem;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-transition: -webkit-transform 0.2s;
+  -webkit-transition: transform 0.2s;
+  transition: transform 0.2s;
+  border-radius: 0.25rem;
+  outline: none;
+  padding-right: 2rem;
+  padding-left: 2rem;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 0;
+}
+
+.c9 {
+  border-radius: 0.25rem;
+}
+
+.c9:focus-within,
+.c9:focus {
+  position: relative;
+  outline: none !important;
+}
+
+.c9:focus-within::after,
+.c9:focus::after {
+  position: absolute;
+  top: -0.35rem;
+  right: -0.35rem;
+  bottom: -0.35rem;
+  left: -0.35rem;
+  content: '';
+  display: block;
+  border: solid rgba(0,125,250,0.6) 0.2rem;
+  border-radius: 0.5rem;
+  pointer-events: none;
+}
+
+.c9:hover,
+.c9:active,
+.c9:focus {
+  -webkit-animation-duration: 0.4s;
+  animation-duration: 0.4s;
+  -webkit-animation-name: cMFrpC;
+  animation-name: cMFrpC;
+}
+
+.c10 {
+  display: inline-block;
+  padding-top: 0.1rem;
+  border-radius: 0.25rem;
+  color: #44aeff;
+  font-size: 2.6rem;
+  line-height: 1.2;
+  font-weight: bold;
+}
+
+@media (prefers-color-scheme:dark) {
+  .c5:focus-within::after,
+  .c5:focus::after {
+    border-color: rgba(0,125,250,0.6);
+  }
+}
+
+@media (prefers-color-scheme:dark) {
+  .c7 {
+    background-color: white;
+  }
+}
+
+@supports (-webkit-backdrop-filter:blur(1rem)) or (-webkit-backdrop-filter:blur(1rem)) or (backdrop-filter:blur(1rem)) or (-webkit-backdrop-filter:blur(1rem)) {
+  .c1 {
+    background-color: rgba(255,255,255,0.7);
+    -webkit-backdrop-filter: saturate(180%) blur(20px);
+    backdrop-filter: saturate(180%) blur(20px);
+    -webkit-backdrop-filter: saturate(180%) blur(20px);
+  }
+}
+
+@media (prefers-color-scheme:dark) {
+  .c1 {
+    -webkit-backdrop-filter: unset;
+    backdrop-filter: unset;
+    -webkit-backdrop-filter: unset;
+  }
+}
+
+@media (prefers-color-scheme:dark) {
+  .c1 {
+    box-shadow: unset;
+  }
+}
+
+@media (min-width:50.25rem) {
+  .c2 {
+    padding-right: 1.875rem;
+    padding-left: 1.875rem;
+  }
+}
+
+@media (min-width:50.25rem) {
+  .c11 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 100%;
+  }
+}
+
+@media (min-width:50.25rem) {
+  .c3 {
+    display: none;
+  }
+}
+
+@media (prefers-color-scheme:dark) {
+
+}
+
+@media (prefers-color-scheme:dark) {
+
+}
+
+@media (prefers-color-scheme:dark) {
+
+}
+
+@media (prefers-color-scheme:dark) {
+
+}
+
+@media (prefers-color-scheme:dark) {
+
+}
+
+@media (min-width:50.25rem) {
+  .c8 {
+    padding-right: unset;
+    padding-left: unset;
+    -webkit-align-items: unset;
+    -webkit-box-align: unset;
+    -ms-flex-align: unset;
+    align-items: unset;
+  }
+}
+
+@media (prefers-color-scheme:dark) {
+  .c9:focus-within::after,
+  .c9:focus::after {
+    border-color: rgba(0,125,250,0.6);
+  }
+}
+
+@media (min-width:32.25rem) {
+  .c10 {
+    font-size: 3rem;
+  }
+}
+
+@media (prefers-color-scheme:dark) {
+  .c10 {
+    color: white;
+  }
+}
+
 <div>
   <header
-    class="sc-hLBbgP ijUMmM"
+    class="c0"
     role="banner"
   >
     <style>
@@ -13,34 +322,34 @@ exports[`<Authenticator /> should render correctly - index 1`] = `
         
     </style>
     <nav
-      class="sc-jSUZER giuvLu"
+      class="c1"
     >
       <div
-        class="sc-gKPRtg fZCFGT"
+        class="c2"
       >
         <div
-          class="sc-pyfCe hCputG"
+          class="c3"
         >
           <div
-            class="sc-iBYQkv fkeGUo"
+            class="c4"
           >
             <button
               aria-expanded="false"
               aria-label="Menu"
-              class="sc-bcXHqe gQKgVP navigation-bar__burger-wrapper--js"
+              class="c5 navigation-bar__burger-wrapper--js"
               type="button"
             >
               <div
-                class="sc-gswNZR cUYZCO"
+                class="c6"
               >
                 <div
-                  class="sc-dkrFOg eMMepS"
+                  class="c7"
                 />
                 <div
-                  class="sc-dkrFOg eMMepS"
+                  class="c7"
                 />
                 <div
-                  class="sc-dkrFOg eMMepS"
+                  class="c7"
                 />
               </div>
             </button>
@@ -53,79 +362,79 @@ exports[`<Authenticator /> should render correctly - index 1`] = `
                 aria-expanded="false"
                 aria-hidden="true"
                 aria-label="Menu"
-                class="sc-bcXHqe gQKgVP"
+                class="c5"
                 type="button"
               >
                 <div
-                  class="sc-gswNZR cUYZCO"
+                  class="c6"
                 >
                   <div
-                    class="sc-dkrFOg eMMepS"
+                    class="c7"
                   />
                   <div
-                    class="sc-dkrFOg eMMepS"
+                    class="c7"
                   />
                   <div
-                    class="sc-dkrFOg eMMepS"
+                    class="c7"
                   />
                 </div>
               </button>
             </a>
           </div>
           <div
-            class="logostyles__OuterContainer-sc-1fentac-0 kkZAfR"
+            class="c8"
           >
             <a
-              class="logostyles__StyledLink-sc-1fentac-1 faHbaV"
+              class="c9"
               href="/"
             >
               <span
                 aria-label="Home page"
-                class="logostyles__LargeText-sc-1fentac-2 cachOr"
+                class="c10"
               >
                 G
               </span>
             </a>
           </div>
           <div
-            class="sc-iBYQkv fkeGUo"
+            class="c4"
           />
         </div>
         <div
-          class="sc-ftTHYK gqpHHI"
+          class="c11"
         >
           <div
-            class="logostyles__OuterContainer-sc-1fentac-0 kkZAfR"
+            class="c8"
           >
             <a
-              class="logostyles__StyledLink-sc-1fentac-1 faHbaV"
+              class="c9"
               href="/"
             >
               <span
                 aria-label="Home page"
-                class="logostyles__LargeText-sc-1fentac-2 cachOr"
+                class="c10"
               >
                 G
               </span>
             </a>
           </div>
           <span
-            class="sc-ksBlkl aEVfs"
+            class="c12"
           >
             Blog
           </span>
           <span
-            class="sc-ksBlkl aEVfs"
+            class="c12"
           >
             Photography
           </span>
           <span
-            class="sc-ksBlkl aEVfs"
+            class="c12"
           >
             Work
           </span>
           <span
-            class="sc-ksBlkl aEVfs"
+            class="c12"
           >
             Contact
           </span>
@@ -137,9 +446,318 @@ exports[`<Authenticator /> should render correctly - index 1`] = `
 `;
 
 exports[`<Authenticator /> should render correctly with default state 1`] = `
+.c5 {
+  width: 2rem;
+  height: 2rem;
+  padding: 0.5rem;
+  border: none;
+  border-radius: 0.5rem;
+  background-color: transparent;
+}
+
+.c5:focus-within,
+.c5:focus {
+  position: relative;
+  outline: none !important;
+}
+
+.c5:focus-within::after,
+.c5:focus::after {
+  position: absolute;
+  top: -0.35rem;
+  right: -0.35rem;
+  bottom: -0.35rem;
+  left: -0.35rem;
+  content: '';
+  display: block;
+  border: solid rgba(0,125,250,0.6) 0.2rem;
+  border-radius: 0.5rem;
+  pointer-events: none;
+}
+
+.c6 {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.c7 {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 0.1rem;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  background-color: #1e1e1e;
+}
+
+.c7:nth-child(1n) {
+  top: calc(25% - 0.05rem);
+}
+
+.c7:nth-child(2n) {
+  top: calc(50% - 0.05rem);
+}
+
+.c7:nth-child(3n) {
+  top: calc(75% - 0.05rem);
+}
+
+.c0 {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  -webkit-animation: kvNbHS 0.4s ease-in-out;
+  animation: kvNbHS 0.4s ease-in-out;
+}
+
+.c1 {
+  width: 100%;
+  padding: 0.4rem 0.2rem;
+  box-shadow: 0 0.05rem 0.5rem rgba(0,0,0,0.173);
+  position: inherit;
+  background-color: white;
+  -webkit-backdrop-filter: unset;
+  backdrop-filter: unset;
+  -webkit-backdrop-filter: unset;
+}
+
+.c2 {
+  width: 100%;
+  max-width: 60rem;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 0.9375rem;
+  padding-left: 0.9375rem;
+}
+
+.c4 {
+  width: 2rem;
+  height: 2rem;
+}
+
+.c11 {
+  display: none;
+}
+
+.c11 > * {
+  margin-right: 2rem;
+}
+
+.c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100%;
+}
+
+.c12 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.c8 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding-bottom: 1rem;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-transition: -webkit-transform 0.2s;
+  -webkit-transition: transform 0.2s;
+  transition: transform 0.2s;
+  border-radius: 0.25rem;
+  outline: none;
+  padding-right: 2rem;
+  padding-left: 2rem;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 0;
+}
+
+.c9 {
+  border-radius: 0.25rem;
+}
+
+.c9:focus-within,
+.c9:focus {
+  position: relative;
+  outline: none !important;
+}
+
+.c9:focus-within::after,
+.c9:focus::after {
+  position: absolute;
+  top: -0.35rem;
+  right: -0.35rem;
+  bottom: -0.35rem;
+  left: -0.35rem;
+  content: '';
+  display: block;
+  border: solid rgba(0,125,250,0.6) 0.2rem;
+  border-radius: 0.5rem;
+  pointer-events: none;
+}
+
+.c9:hover,
+.c9:active,
+.c9:focus {
+  -webkit-animation-duration: 0.4s;
+  animation-duration: 0.4s;
+  -webkit-animation-name: cMFrpC;
+  animation-name: cMFrpC;
+}
+
+.c10 {
+  display: inline-block;
+  padding-top: 0.1rem;
+  border-radius: 0.25rem;
+  color: #44aeff;
+  font-size: 2.6rem;
+  line-height: 1.2;
+  font-weight: bold;
+}
+
+@media (prefers-color-scheme:dark) {
+  .c5:focus-within::after,
+  .c5:focus::after {
+    border-color: rgba(0,125,250,0.6);
+  }
+}
+
+@media (prefers-color-scheme:dark) {
+  .c7 {
+    background-color: white;
+  }
+}
+
+@supports (-webkit-backdrop-filter:blur(1rem)) or (-webkit-backdrop-filter:blur(1rem)) or (backdrop-filter:blur(1rem)) or (-webkit-backdrop-filter:blur(1rem)) {
+  .c1 {
+    background-color: rgba(255,255,255,0.7);
+    -webkit-backdrop-filter: saturate(180%) blur(20px);
+    backdrop-filter: saturate(180%) blur(20px);
+    -webkit-backdrop-filter: saturate(180%) blur(20px);
+  }
+}
+
+@media (prefers-color-scheme:dark) {
+  .c1 {
+    -webkit-backdrop-filter: unset;
+    backdrop-filter: unset;
+    -webkit-backdrop-filter: unset;
+  }
+}
+
+@media (prefers-color-scheme:dark) {
+  .c1 {
+    box-shadow: unset;
+  }
+}
+
+@media (min-width:50.25rem) {
+  .c2 {
+    padding-right: 1.875rem;
+    padding-left: 1.875rem;
+  }
+}
+
+@media (min-width:50.25rem) {
+  .c11 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 100%;
+  }
+}
+
+@media (min-width:50.25rem) {
+  .c3 {
+    display: none;
+  }
+}
+
+@media (prefers-color-scheme:dark) {
+
+}
+
+@media (prefers-color-scheme:dark) {
+
+}
+
+@media (prefers-color-scheme:dark) {
+
+}
+
+@media (prefers-color-scheme:dark) {
+
+}
+
+@media (prefers-color-scheme:dark) {
+
+}
+
+@media (min-width:50.25rem) {
+  .c8 {
+    padding-right: unset;
+    padding-left: unset;
+    -webkit-align-items: unset;
+    -webkit-box-align: unset;
+    -ms-flex-align: unset;
+    align-items: unset;
+  }
+}
+
+@media (prefers-color-scheme:dark) {
+  .c9:focus-within::after,
+  .c9:focus::after {
+    border-color: rgba(0,125,250,0.6);
+  }
+}
+
+@media (min-width:32.25rem) {
+  .c10 {
+    font-size: 3rem;
+  }
+}
+
+@media (prefers-color-scheme:dark) {
+  .c10 {
+    color: white;
+  }
+}
+
 <div>
   <header
-    class="sc-hLBbgP ijUMmM"
+    class="c0"
     role="banner"
   >
     <style>
@@ -149,34 +767,34 @@ exports[`<Authenticator /> should render correctly with default state 1`] = `
         
     </style>
     <nav
-      class="sc-jSUZER giuvLu"
+      class="c1"
     >
       <div
-        class="sc-gKPRtg fZCFGT"
+        class="c2"
       >
         <div
-          class="sc-pyfCe hCputG"
+          class="c3"
         >
           <div
-            class="sc-iBYQkv fkeGUo"
+            class="c4"
           >
             <button
               aria-expanded="false"
               aria-label="Menu"
-              class="sc-bcXHqe gQKgVP navigation-bar__burger-wrapper--js"
+              class="c5 navigation-bar__burger-wrapper--js"
               type="button"
             >
               <div
-                class="sc-gswNZR cUYZCO"
+                class="c6"
               >
                 <div
-                  class="sc-dkrFOg eMMepS"
+                  class="c7"
                 />
                 <div
-                  class="sc-dkrFOg eMMepS"
+                  class="c7"
                 />
                 <div
-                  class="sc-dkrFOg eMMepS"
+                  class="c7"
                 />
               </div>
             </button>
@@ -189,79 +807,79 @@ exports[`<Authenticator /> should render correctly with default state 1`] = `
                 aria-expanded="false"
                 aria-hidden="true"
                 aria-label="Menu"
-                class="sc-bcXHqe gQKgVP"
+                class="c5"
                 type="button"
               >
                 <div
-                  class="sc-gswNZR cUYZCO"
+                  class="c6"
                 >
                   <div
-                    class="sc-dkrFOg eMMepS"
+                    class="c7"
                   />
                   <div
-                    class="sc-dkrFOg eMMepS"
+                    class="c7"
                   />
                   <div
-                    class="sc-dkrFOg eMMepS"
+                    class="c7"
                   />
                 </div>
               </button>
             </a>
           </div>
           <div
-            class="logostyles__OuterContainer-sc-1fentac-0 kkZAfR"
+            class="c8"
           >
             <a
-              class="logostyles__StyledLink-sc-1fentac-1 faHbaV"
+              class="c9"
               href="/"
             >
               <span
                 aria-label="Home page"
-                class="logostyles__LargeText-sc-1fentac-2 cachOr"
+                class="c10"
               >
                 G
               </span>
             </a>
           </div>
           <div
-            class="sc-iBYQkv fkeGUo"
+            class="c4"
           />
         </div>
         <div
-          class="sc-ftTHYK gqpHHI"
+          class="c11"
         >
           <div
-            class="logostyles__OuterContainer-sc-1fentac-0 kkZAfR"
+            class="c8"
           >
             <a
-              class="logostyles__StyledLink-sc-1fentac-1 faHbaV"
+              class="c9"
               href="/"
             >
               <span
                 aria-label="Home page"
-                class="logostyles__LargeText-sc-1fentac-2 cachOr"
+                class="c10"
               >
                 G
               </span>
             </a>
           </div>
           <span
-            class="sc-ksBlkl aEVfs"
+            class="c12"
           >
             Blog
           </span>
           <span
-            class="sc-ksBlkl aEVfs"
+            class="c12"
           >
             Photography
           </span>
           <span
-            class="sc-ksBlkl aEVfs"
+            class="c12"
           >
             Work
           </span>
           <span
-            class="sc-ksBlkl aEVfs"
+            class="c12"
           >
             Contact
           </span>
@@ -273,9 +891,318 @@ exports[`<Authenticator /> should render correctly with default state 1`] = `
 `;
 
 exports[`<Authenticator /> should render correctly with null user 1`] = `
+.c5 {
+  width: 2rem;
+  height: 2rem;
+  padding: 0.5rem;
+  border: none;
+  border-radius: 0.5rem;
+  background-color: transparent;
+}
+
+.c5:focus-within,
+.c5:focus {
+  position: relative;
+  outline: none !important;
+}
+
+.c5:focus-within::after,
+.c5:focus::after {
+  position: absolute;
+  top: -0.35rem;
+  right: -0.35rem;
+  bottom: -0.35rem;
+  left: -0.35rem;
+  content: '';
+  display: block;
+  border: solid rgba(0,125,250,0.6) 0.2rem;
+  border-radius: 0.5rem;
+  pointer-events: none;
+}
+
+.c6 {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.c7 {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 0.1rem;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  background-color: #1e1e1e;
+}
+
+.c7:nth-child(1n) {
+  top: calc(25% - 0.05rem);
+}
+
+.c7:nth-child(2n) {
+  top: calc(50% - 0.05rem);
+}
+
+.c7:nth-child(3n) {
+  top: calc(75% - 0.05rem);
+}
+
+.c0 {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  -webkit-animation: kvNbHS 0.4s ease-in-out;
+  animation: kvNbHS 0.4s ease-in-out;
+}
+
+.c1 {
+  width: 100%;
+  padding: 0.4rem 0.2rem;
+  box-shadow: 0 0.05rem 0.5rem rgba(0,0,0,0.173);
+  position: inherit;
+  background-color: white;
+  -webkit-backdrop-filter: unset;
+  backdrop-filter: unset;
+  -webkit-backdrop-filter: unset;
+}
+
+.c2 {
+  width: 100%;
+  max-width: 60rem;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 0.9375rem;
+  padding-left: 0.9375rem;
+}
+
+.c4 {
+  width: 2rem;
+  height: 2rem;
+}
+
+.c11 {
+  display: none;
+}
+
+.c11 > * {
+  margin-right: 2rem;
+}
+
+.c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100%;
+}
+
+.c12 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.c8 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding-bottom: 1rem;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-transition: -webkit-transform 0.2s;
+  -webkit-transition: transform 0.2s;
+  transition: transform 0.2s;
+  border-radius: 0.25rem;
+  outline: none;
+  padding-right: 2rem;
+  padding-left: 2rem;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 0;
+}
+
+.c9 {
+  border-radius: 0.25rem;
+}
+
+.c9:focus-within,
+.c9:focus {
+  position: relative;
+  outline: none !important;
+}
+
+.c9:focus-within::after,
+.c9:focus::after {
+  position: absolute;
+  top: -0.35rem;
+  right: -0.35rem;
+  bottom: -0.35rem;
+  left: -0.35rem;
+  content: '';
+  display: block;
+  border: solid rgba(0,125,250,0.6) 0.2rem;
+  border-radius: 0.5rem;
+  pointer-events: none;
+}
+
+.c9:hover,
+.c9:active,
+.c9:focus {
+  -webkit-animation-duration: 0.4s;
+  animation-duration: 0.4s;
+  -webkit-animation-name: cMFrpC;
+  animation-name: cMFrpC;
+}
+
+.c10 {
+  display: inline-block;
+  padding-top: 0.1rem;
+  border-radius: 0.25rem;
+  color: #44aeff;
+  font-size: 2.6rem;
+  line-height: 1.2;
+  font-weight: bold;
+}
+
+@media (prefers-color-scheme:dark) {
+  .c5:focus-within::after,
+  .c5:focus::after {
+    border-color: rgba(0,125,250,0.6);
+  }
+}
+
+@media (prefers-color-scheme:dark) {
+  .c7 {
+    background-color: white;
+  }
+}
+
+@supports (-webkit-backdrop-filter:blur(1rem)) or (-webkit-backdrop-filter:blur(1rem)) or (backdrop-filter:blur(1rem)) or (-webkit-backdrop-filter:blur(1rem)) {
+  .c1 {
+    background-color: rgba(255,255,255,0.7);
+    -webkit-backdrop-filter: saturate(180%) blur(20px);
+    backdrop-filter: saturate(180%) blur(20px);
+    -webkit-backdrop-filter: saturate(180%) blur(20px);
+  }
+}
+
+@media (prefers-color-scheme:dark) {
+  .c1 {
+    -webkit-backdrop-filter: unset;
+    backdrop-filter: unset;
+    -webkit-backdrop-filter: unset;
+  }
+}
+
+@media (prefers-color-scheme:dark) {
+  .c1 {
+    box-shadow: unset;
+  }
+}
+
+@media (min-width:50.25rem) {
+  .c2 {
+    padding-right: 1.875rem;
+    padding-left: 1.875rem;
+  }
+}
+
+@media (min-width:50.25rem) {
+  .c11 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 100%;
+  }
+}
+
+@media (min-width:50.25rem) {
+  .c3 {
+    display: none;
+  }
+}
+
+@media (prefers-color-scheme:dark) {
+
+}
+
+@media (prefers-color-scheme:dark) {
+
+}
+
+@media (prefers-color-scheme:dark) {
+
+}
+
+@media (prefers-color-scheme:dark) {
+
+}
+
+@media (prefers-color-scheme:dark) {
+
+}
+
+@media (min-width:50.25rem) {
+  .c8 {
+    padding-right: unset;
+    padding-left: unset;
+    -webkit-align-items: unset;
+    -webkit-box-align: unset;
+    -ms-flex-align: unset;
+    align-items: unset;
+  }
+}
+
+@media (prefers-color-scheme:dark) {
+  .c9:focus-within::after,
+  .c9:focus::after {
+    border-color: rgba(0,125,250,0.6);
+  }
+}
+
+@media (min-width:32.25rem) {
+  .c10 {
+    font-size: 3rem;
+  }
+}
+
+@media (prefers-color-scheme:dark) {
+  .c10 {
+    color: white;
+  }
+}
+
 <div>
   <header
-    class="sc-hLBbgP ijUMmM"
+    class="c0"
     role="banner"
   >
     <style>
@@ -285,34 +1212,34 @@ exports[`<Authenticator /> should render correctly with null user 1`] = `
         
     </style>
     <nav
-      class="sc-jSUZER giuvLu"
+      class="c1"
     >
       <div
-        class="sc-gKPRtg fZCFGT"
+        class="c2"
       >
         <div
-          class="sc-pyfCe hCputG"
+          class="c3"
         >
           <div
-            class="sc-iBYQkv fkeGUo"
+            class="c4"
           >
             <button
               aria-expanded="false"
               aria-label="Menu"
-              class="sc-bcXHqe gQKgVP navigation-bar__burger-wrapper--js"
+              class="c5 navigation-bar__burger-wrapper--js"
               type="button"
             >
               <div
-                class="sc-gswNZR cUYZCO"
+                class="c6"
               >
                 <div
-                  class="sc-dkrFOg eMMepS"
+                  class="c7"
                 />
                 <div
-                  class="sc-dkrFOg eMMepS"
+                  class="c7"
                 />
                 <div
-                  class="sc-dkrFOg eMMepS"
+                  class="c7"
                 />
               </div>
             </button>
@@ -325,79 +1252,79 @@ exports[`<Authenticator /> should render correctly with null user 1`] = `
                 aria-expanded="false"
                 aria-hidden="true"
                 aria-label="Menu"
-                class="sc-bcXHqe gQKgVP"
+                class="c5"
                 type="button"
               >
                 <div
-                  class="sc-gswNZR cUYZCO"
+                  class="c6"
                 >
                   <div
-                    class="sc-dkrFOg eMMepS"
+                    class="c7"
                   />
                   <div
-                    class="sc-dkrFOg eMMepS"
+                    class="c7"
                   />
                   <div
-                    class="sc-dkrFOg eMMepS"
+                    class="c7"
                   />
                 </div>
               </button>
             </a>
           </div>
           <div
-            class="logostyles__OuterContainer-sc-1fentac-0 kkZAfR"
+            class="c8"
           >
             <a
-              class="logostyles__StyledLink-sc-1fentac-1 faHbaV"
+              class="c9"
               href="/"
             >
               <span
                 aria-label="Home page"
-                class="logostyles__LargeText-sc-1fentac-2 cachOr"
+                class="c10"
               >
                 G
               </span>
             </a>
           </div>
           <div
-            class="sc-iBYQkv fkeGUo"
+            class="c4"
           />
         </div>
         <div
-          class="sc-ftTHYK gqpHHI"
+          class="c11"
         >
           <div
-            class="logostyles__OuterContainer-sc-1fentac-0 kkZAfR"
+            class="c8"
           >
             <a
-              class="logostyles__StyledLink-sc-1fentac-1 faHbaV"
+              class="c9"
               href="/"
             >
               <span
                 aria-label="Home page"
-                class="logostyles__LargeText-sc-1fentac-2 cachOr"
+                class="c10"
               >
                 G
               </span>
             </a>
           </div>
           <span
-            class="sc-ksBlkl aEVfs"
+            class="c12"
           >
             Blog
           </span>
           <span
-            class="sc-ksBlkl aEVfs"
+            class="c12"
           >
             Photography
           </span>
           <span
-            class="sc-ksBlkl aEVfs"
+            class="c12"
           >
             Work
           </span>
           <span
-            class="sc-ksBlkl aEVfs"
+            class="c12"
           >
             Contact
           </span>
@@ -409,9 +1336,318 @@ exports[`<Authenticator /> should render correctly with null user 1`] = `
 `;
 
 exports[`<Authenticator /> should render correctly with user 1`] = `
+.c5 {
+  width: 2rem;
+  height: 2rem;
+  padding: 0.5rem;
+  border: none;
+  border-radius: 0.5rem;
+  background-color: transparent;
+}
+
+.c5:focus-within,
+.c5:focus {
+  position: relative;
+  outline: none !important;
+}
+
+.c5:focus-within::after,
+.c5:focus::after {
+  position: absolute;
+  top: -0.35rem;
+  right: -0.35rem;
+  bottom: -0.35rem;
+  left: -0.35rem;
+  content: '';
+  display: block;
+  border: solid rgba(0,125,250,0.6) 0.2rem;
+  border-radius: 0.5rem;
+  pointer-events: none;
+}
+
+.c6 {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.c7 {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 0.1rem;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  background-color: #1e1e1e;
+}
+
+.c7:nth-child(1n) {
+  top: calc(25% - 0.05rem);
+}
+
+.c7:nth-child(2n) {
+  top: calc(50% - 0.05rem);
+}
+
+.c7:nth-child(3n) {
+  top: calc(75% - 0.05rem);
+}
+
+.c0 {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  -webkit-animation: kvNbHS 0.4s ease-in-out;
+  animation: kvNbHS 0.4s ease-in-out;
+}
+
+.c1 {
+  width: 100%;
+  padding: 0.4rem 0.2rem;
+  box-shadow: 0 0.05rem 0.5rem rgba(0,0,0,0.173);
+  position: inherit;
+  background-color: white;
+  -webkit-backdrop-filter: unset;
+  backdrop-filter: unset;
+  -webkit-backdrop-filter: unset;
+}
+
+.c2 {
+  width: 100%;
+  max-width: 60rem;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 0.9375rem;
+  padding-left: 0.9375rem;
+}
+
+.c4 {
+  width: 2rem;
+  height: 2rem;
+}
+
+.c11 {
+  display: none;
+}
+
+.c11 > * {
+  margin-right: 2rem;
+}
+
+.c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100%;
+}
+
+.c12 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.c8 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding-bottom: 1rem;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-transition: -webkit-transform 0.2s;
+  -webkit-transition: transform 0.2s;
+  transition: transform 0.2s;
+  border-radius: 0.25rem;
+  outline: none;
+  padding-right: 2rem;
+  padding-left: 2rem;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 0;
+}
+
+.c9 {
+  border-radius: 0.25rem;
+}
+
+.c9:focus-within,
+.c9:focus {
+  position: relative;
+  outline: none !important;
+}
+
+.c9:focus-within::after,
+.c9:focus::after {
+  position: absolute;
+  top: -0.35rem;
+  right: -0.35rem;
+  bottom: -0.35rem;
+  left: -0.35rem;
+  content: '';
+  display: block;
+  border: solid rgba(0,125,250,0.6) 0.2rem;
+  border-radius: 0.5rem;
+  pointer-events: none;
+}
+
+.c9:hover,
+.c9:active,
+.c9:focus {
+  -webkit-animation-duration: 0.4s;
+  animation-duration: 0.4s;
+  -webkit-animation-name: cMFrpC;
+  animation-name: cMFrpC;
+}
+
+.c10 {
+  display: inline-block;
+  padding-top: 0.1rem;
+  border-radius: 0.25rem;
+  color: #44aeff;
+  font-size: 2.6rem;
+  line-height: 1.2;
+  font-weight: bold;
+}
+
+@media (prefers-color-scheme:dark) {
+  .c5:focus-within::after,
+  .c5:focus::after {
+    border-color: rgba(0,125,250,0.6);
+  }
+}
+
+@media (prefers-color-scheme:dark) {
+  .c7 {
+    background-color: white;
+  }
+}
+
+@supports (-webkit-backdrop-filter:blur(1rem)) or (-webkit-backdrop-filter:blur(1rem)) or (backdrop-filter:blur(1rem)) or (-webkit-backdrop-filter:blur(1rem)) {
+  .c1 {
+    background-color: rgba(255,255,255,0.7);
+    -webkit-backdrop-filter: saturate(180%) blur(20px);
+    backdrop-filter: saturate(180%) blur(20px);
+    -webkit-backdrop-filter: saturate(180%) blur(20px);
+  }
+}
+
+@media (prefers-color-scheme:dark) {
+  .c1 {
+    -webkit-backdrop-filter: unset;
+    backdrop-filter: unset;
+    -webkit-backdrop-filter: unset;
+  }
+}
+
+@media (prefers-color-scheme:dark) {
+  .c1 {
+    box-shadow: unset;
+  }
+}
+
+@media (min-width:50.25rem) {
+  .c2 {
+    padding-right: 1.875rem;
+    padding-left: 1.875rem;
+  }
+}
+
+@media (min-width:50.25rem) {
+  .c11 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 100%;
+  }
+}
+
+@media (min-width:50.25rem) {
+  .c3 {
+    display: none;
+  }
+}
+
+@media (prefers-color-scheme:dark) {
+
+}
+
+@media (prefers-color-scheme:dark) {
+
+}
+
+@media (prefers-color-scheme:dark) {
+
+}
+
+@media (prefers-color-scheme:dark) {
+
+}
+
+@media (prefers-color-scheme:dark) {
+
+}
+
+@media (min-width:50.25rem) {
+  .c8 {
+    padding-right: unset;
+    padding-left: unset;
+    -webkit-align-items: unset;
+    -webkit-box-align: unset;
+    -ms-flex-align: unset;
+    align-items: unset;
+  }
+}
+
+@media (prefers-color-scheme:dark) {
+  .c9:focus-within::after,
+  .c9:focus::after {
+    border-color: rgba(0,125,250,0.6);
+  }
+}
+
+@media (min-width:32.25rem) {
+  .c10 {
+    font-size: 3rem;
+  }
+}
+
+@media (prefers-color-scheme:dark) {
+  .c10 {
+    color: white;
+  }
+}
+
 <div>
   <header
-    class="sc-hLBbgP ijUMmM"
+    class="c0"
     role="banner"
   >
     <style>
@@ -421,34 +1657,34 @@ exports[`<Authenticator /> should render correctly with user 1`] = `
         
     </style>
     <nav
-      class="sc-jSUZER giuvLu"
+      class="c1"
     >
       <div
-        class="sc-gKPRtg fZCFGT"
+        class="c2"
       >
         <div
-          class="sc-pyfCe hCputG"
+          class="c3"
         >
           <div
-            class="sc-iBYQkv fkeGUo"
+            class="c4"
           >
             <button
               aria-expanded="false"
               aria-label="Menu"
-              class="sc-bcXHqe gQKgVP navigation-bar__burger-wrapper--js"
+              class="c5 navigation-bar__burger-wrapper--js"
               type="button"
             >
               <div
-                class="sc-gswNZR cUYZCO"
+                class="c6"
               >
                 <div
-                  class="sc-dkrFOg eMMepS"
+                  class="c7"
                 />
                 <div
-                  class="sc-dkrFOg eMMepS"
+                  class="c7"
                 />
                 <div
-                  class="sc-dkrFOg eMMepS"
+                  class="c7"
                 />
               </div>
             </button>
@@ -461,79 +1697,79 @@ exports[`<Authenticator /> should render correctly with user 1`] = `
                 aria-expanded="false"
                 aria-hidden="true"
                 aria-label="Menu"
-                class="sc-bcXHqe gQKgVP"
+                class="c5"
                 type="button"
               >
                 <div
-                  class="sc-gswNZR cUYZCO"
+                  class="c6"
                 >
                   <div
-                    class="sc-dkrFOg eMMepS"
+                    class="c7"
                   />
                   <div
-                    class="sc-dkrFOg eMMepS"
+                    class="c7"
                   />
                   <div
-                    class="sc-dkrFOg eMMepS"
+                    class="c7"
                   />
                 </div>
               </button>
             </a>
           </div>
           <div
-            class="logostyles__OuterContainer-sc-1fentac-0 kkZAfR"
+            class="c8"
           >
             <a
-              class="logostyles__StyledLink-sc-1fentac-1 faHbaV"
+              class="c9"
               href="/"
             >
               <span
                 aria-label="Home page"
-                class="logostyles__LargeText-sc-1fentac-2 cachOr"
+                class="c10"
               >
                 G
               </span>
             </a>
           </div>
           <div
-            class="sc-iBYQkv fkeGUo"
+            class="c4"
           />
         </div>
         <div
-          class="sc-ftTHYK gqpHHI"
+          class="c11"
         >
           <div
-            class="logostyles__OuterContainer-sc-1fentac-0 kkZAfR"
+            class="c8"
           >
             <a
-              class="logostyles__StyledLink-sc-1fentac-1 faHbaV"
+              class="c9"
               href="/"
             >
               <span
                 aria-label="Home page"
-                class="logostyles__LargeText-sc-1fentac-2 cachOr"
+                class="c10"
               >
                 G
               </span>
             </a>
           </div>
           <span
-            class="sc-ksBlkl aEVfs"
+            class="c12"
           >
             Blog
           </span>
           <span
-            class="sc-ksBlkl aEVfs"
+            class="c12"
           >
             Photography
           </span>
           <span
-            class="sc-ksBlkl aEVfs"
+            class="c12"
           >
             Work
           </span>
           <span
-            class="sc-ksBlkl aEVfs"
+            class="c12"
           >
             Contact
           </span>

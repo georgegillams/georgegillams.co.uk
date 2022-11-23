@@ -1,26 +1,938 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<HomePage /> should render correctly 1`] = `
+.c2 {
+  display: block;
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  text-align: center;
+  max-width: 60rem;
+  padding-right: 1rem;
+  padding-left: 1rem;
+}
+
+.c19 {
+  width: 1.25rem;
+  height: 1.25rem;
+}
+
+.c16 {
+  display: inline-block;
+  border-radius: 0.25rem;
+  font-weight: bold;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  position: relative;
+  color: darkorchid;
+  fill: darkorchid;
+}
+
+.c16:focus-within,
+.c16:focus {
+  position: relative;
+  outline: none !important;
+}
+
+.c16:focus-within::after,
+.c16:focus::after {
+  position: absolute;
+  top: -0.35rem;
+  right: -0.35rem;
+  bottom: -0.35rem;
+  left: -0.35rem;
+  content: '';
+  display: block;
+  border: solid rgba(0,125,250,0.6) 0.2rem;
+  border-radius: 0.5rem;
+  pointer-events: none;
+}
+
+.c16:hover {
+  color: #44aeff;
+  fill: #44aeff;
+}
+
+.c18 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  width: 0.4rem;
+  height: 1rem;
+  margin-left: 0.55rem;
+}
+
+.c20 {
+  position: absolute;
+  width: 1rem;
+  height: 1rem;
+  margin-top: 0.12rem;
+  margin-left: -0.45rem;
+}
+
+.c4 {
+  margin: 0;
+  font-size: 2.4rem;
+  font-weight: bold;
+}
+
+.c12 {
+  margin: 0;
+  font-size: 2.2rem;
+  font-weight: bold;
+}
+
+.c17 {
+  margin: 0;
+}
+
+.c5 {
+  margin: 2.3rem 0 0 0;
+}
+
+.c7 {
+  padding-top: 0;
+  opacity: 1;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+.c6 {
+  width: 100%;
+}
+
+.c3 {
+  -webkit-animation: bbwGtI 0.4s ease-in-out;
+  animation: bbwGtI 0.4s ease-in-out;
+}
+
+.c11 {
+  width: 100%;
+  color: #1e1e1e;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c13 {
+  margin: 3.34rem 0 0 0;
+}
+
+.c14 {
+  display: inline-block;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  line-height: 1.5;
+  margin-top: 2rem;
+}
+
+.c14:first-of-type {
+  margin-top: 0.86rem;
+}
+
+.c29 {
+  position: relative;
+  width: 100%;
+  border-radius: 0.25rem;
+  background-color: rgb(238,238,238);
+  overflow: hidden;
+}
+
+.c31 {
+  position: absolute;
+  top: 0;
+  width: 13rem;
+  height: 100vh;
+  background-image: linear-gradient( 90deg, rgb(238,238,238), rgb(245,245,245), rgb(238,238,238) );
+  background-repeat: no-repeat;
+  background-size: 12.5rem 100%;
+  -webkit-animation: sjjMW 3.5s ease-in-out infinite;
+  animation: sjjMW 3.5s ease-in-out infinite;
+}
+
+.c25 {
+  position: relative;
+}
+
+.c27 {
+  height: 0;
+}
+
+.c28 {
+  position: absolute;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c30 {
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+}
+
+.c32 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  -webkit-transition: opacity ease-in-out 0.4s;
+  transition: opacity ease-in-out 0.4s;
+  opacity: 0;
+}
+
+.c34 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  -webkit-transition: opacity ease-in-out 0.4s;
+  transition: opacity ease-in-out 0.4s;
+}
+
+.c33 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  -webkit-transition: opacity ease-in-out 0.4s;
+  transition: opacity ease-in-out 0.4s;
+  opacity: 0;
+  display: none;
+}
+
+.c35 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  -webkit-transition: opacity ease-in-out 0.4s;
+  transition: opacity ease-in-out 0.4s;
+  display: none;
+}
+
+.c23 {
+  position: relative;
+  width: 20%;
+  height: 0;
+  padding-bottom: 38.5%;
+}
+
+.c26 {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  opacity: 1;
+  -webkit-transition: all 0.8s ease-in-out;
+  transition: all 0.8s ease-in-out;
+}
+
+.c21 {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 11rem;
+  padding-top: 0;
+  -webkit-box-pack: space-around;
+  -webkit-justify-content: space-around;
+  -ms-flex-pack: space-around;
+  justify-content: space-around;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c24 {
+  -webkit-transform: rotate(-30deg);
+  -ms-transform: rotate(-30deg);
+  transform: rotate(-30deg);
+  top: 10%;
+}
+
+.c9 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  text-align: center;
+}
+
+.c10 {
+  width: 100%;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  max-width: 25rem;
+  margin-right: 0;
+}
+
+.c22 {
+  width: 100%;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  max-width: 25rem;
+  margin-left: 0;
+}
+
+.c15 {
+  font-size: 1.2rem;
+}
+
+.c37 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: space-around;
+  -webkit-justify-content: space-around;
+  -ms-flex-pack: space-around;
+  justify-content: space-around;
+  height: unset;
+  margin-bottom: 2rem;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  text-align: center;
+}
+
+.c40 {
+  font-size: 1.2rem;
+}
+
+.c39 {
+  width: 100%;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  max-width: unset;
+  margin: 0 0 1rem 0;
+}
+
+.c38 {
+  width: 100%;
+  -webkit-transition: margin 0.4s ease-in-out,-webkit-transform 0.4s ease-in-out;
+  -webkit-transition: margin 0.4s ease-in-out,transform 0.4s ease-in-out;
+  transition: margin 0.4s ease-in-out,transform 0.4s ease-in-out;
+  display: none;
+  width: 35%;
+}
+
+.c41 {
+  width: 100%;
+  -webkit-transition: margin 0.4s ease-in-out,-webkit-transform 0.4s ease-in-out;
+  -webkit-transition: margin 0.4s ease-in-out,transform 0.4s ease-in-out;
+  transition: margin 0.4s ease-in-out,transform 0.4s ease-in-out;
+  display: none;
+  width: 55%;
+}
+
+.c42 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 90%;
+  margin-left: 5%;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.c43 {
+  width: 48%;
+  width: 30%;
+  -webkit-transition: margin 0.8s ease-in-out,opacity 0.8s ease-in-out;
+  transition: margin 0.8s ease-in-out,opacity 0.8s ease-in-out;
+}
+
+.c44 {
+  width: 48%;
+  width: 68%;
+  -webkit-transition: margin 0.8s ease-in-out,opacity 0.8s ease-in-out;
+  transition: margin 0.8s ease-in-out,opacity 0.8s ease-in-out;
+  -webkit-transition-delay: 0.4s;
+  transition-delay: 0.4s;
+}
+
+.c48 {
+  position: relative;
+  height: 0;
+  padding-bottom: 75%;
+}
+
+.c49 {
+  position: absolute;
+  width: 100%;
+  -webkit-transition: all 0.8s ease-in-out;
+  transition: all 0.8s ease-in-out;
+  top: 0;
+  opacity: 1;
+}
+
+.c46 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.c47 {
+  width: 100%;
+  max-width: 90%;
+}
+
+.c53 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  min-height: 10rem;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.c54 {
+  position: relative;
+}
+
+.c55 {
+  position: absolute;
+  top: -400%;
+  width: 20rem;
+  height: 20rem;
+  -webkit-transform: rotate(20deg);
+  -ms-transform: rotate(20deg);
+  transform: rotate(20deg);
+  -webkit-transition: left 0.4s ease-in-out;
+  transition: left 0.4s ease-in-out;
+  background-color: white;
+  -webkit-filter: blur(1.5rem);
+  filter: blur(1.5rem);
+  pointer-events: none;
+}
+
+.c51 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  text-align: left;
+}
+
+.c52 {
+  font-size: 1.2rem;
+}
+
+.c8 {
+  width: 100%;
+  margin-top: 1rem;
+}
+
+.c36 {
+  width: 100%;
+  margin-top: 2rem;
+}
+
+.c45 {
+  width: 100%;
+  margin-top: 2rem;
+}
+
+.c50 {
+  width: 100%;
+  margin-top: 2rem;
+}
+
+.c57 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding-bottom: 1rem;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-transition: -webkit-transform 0.2s;
+  -webkit-transition: transform 0.2s;
+  transition: transform 0.2s;
+  border-radius: 0.25rem;
+  outline: none;
+  padding-right: 2rem;
+  padding-left: 2rem;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 0;
+}
+
+.c59 {
+  border-radius: 0.25rem;
+}
+
+.c59:focus-within,
+.c59:focus {
+  position: relative;
+  outline: none !important;
+}
+
+.c59:focus-within::after,
+.c59:focus::after {
+  position: absolute;
+  top: -0.35rem;
+  right: -0.35rem;
+  bottom: -0.35rem;
+  left: -0.35rem;
+  content: '';
+  display: block;
+  border: solid rgba(0,125,250,0.6) 0.2rem;
+  border-radius: 0.5rem;
+  pointer-events: none;
+}
+
+.c59:hover,
+.c59:active,
+.c59:focus {
+  -webkit-animation-duration: 0.4s;
+  animation-duration: 0.4s;
+  -webkit-animation-name: cMFrpC;
+  animation-name: cMFrpC;
+}
+
+.c60 {
+  display: inline-block;
+  padding-top: 0.1rem;
+  border-radius: 0.25rem;
+  color: #44aeff;
+  font-size: 2.6rem;
+  line-height: 1.2;
+  font-weight: bold;
+}
+
+.c64 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: space-around;
+  -webkit-justify-content: space-around;
+  -ms-flex-pack: space-around;
+  justify-content: space-around;
+  max-width: 45rem;
+  margin: auto;
+}
+
+.c65 > * {
+  margin: 0.5rem 0.5rem 0 0.5rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c62 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  margin-top: 0.5rem;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c63 {
+  display: inline-block;
+  width: 100%;
+  max-width: 2.3rem;
+  height: 100%;
+  max-height: 2.3rem;
+  padding: 0 0.5rem 0 0.2rem;
+  -webkit-filter: brightness(0) invert(1);
+  filter: brightness(0) invert(1);
+}
+
+.c63:hover {
+  -webkit-filter: brightness(0) invert(1) opacity(70%);
+  filter: brightness(0) invert(1) opacity(70%);
+}
+
+.c56 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 2rem 1rem;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: space-around;
+  -webkit-justify-content: space-around;
+  -ms-flex-pack: space-around;
+  justify-content: space-around;
+  border-top: solid #1e1e1e 0.15rem;
+  background-color: #1e1e1e;
+  background-position: center;
+  background-size: cover;
+  color: white;
+}
+
+.c58 {
+  text-align: center;
+}
+
+.c61 {
+  text-align: center;
+}
+
+.c0 {
+  width: 100%;
+}
+
+.c1 {
+  -webkit-flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+}
+
+@media (min-width:50.25rem) {
+  .c2 {
+    padding-right: 2rem;
+    padding-left: 2rem;
+  }
+}
+
+@media (prefers-color-scheme:dark) {
+  .c16:focus-within::after,
+  .c16:focus::after {
+    border-color: rgba(0,125,250,0.6);
+  }
+}
+
+@media (prefers-color-scheme:dark) {
+  .c16 {
+    color: orchid;
+    fill: orchid;
+  }
+
+  .c16:hover {
+    color: #44aeff;
+    fill: #44aeff;
+  }
+}
+
+@media (prefers-color-scheme:dark) {
+
+}
+
+@media (prefers-color-scheme:dark) {
+
+}
+
+@media (prefers-color-scheme:dark) {
+
+}
+
+@media (prefers-color-scheme:dark) {
+
+}
+
+@media (prefers-color-scheme:dark) {
+  .c11 {
+    color: white;
+  }
+}
+
+@media (prefers-color-scheme:dark) {
+  .c29 {
+    background-color: rgb(17,17,17);
+  }
+}
+
+@media (prefers-color-scheme:dark) {
+  .c31 {
+    background-image: linear-gradient( 90deg, rgb(17,17,17), rgb(50,50,50), rgb(17,17,17) );
+  }
+}
+
+@media (prefers-color-scheme:dark) {
+  .c32 {
+    display: none;
+  }
+}
+
+@media (prefers-color-scheme:dark) {
+  .c34 {
+    display: none;
+  }
+}
+
+@media (prefers-color-scheme:dark) {
+  .c33 {
+    display: unset;
+  }
+}
+
+@media (prefers-color-scheme:dark) {
+  .c35 {
+    display: unset;
+  }
+}
+
+@media (min-width:50.25rem) {
+  .c21 {
+    height: 15rem;
+    padding-top: 2rem;
+  }
+}
+
+@media (min-width:50.25rem) {
+  .c9 {
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    text-align: left;
+  }
+}
+
+@media (min-width:50.25rem) {
+  .c10 {
+    max-width: 50%;
+    margin-right: 0.5rem;
+  }
+}
+
+@media (min-width:50.25rem) {
+  .c22 {
+    max-width: 50%;
+    margin-left: 0.5rem;
+  }
+}
+
+@media (min-width:50.25rem) {
+  .c37 {
+    height: 21.6875rem;
+    margin-bottom: unset;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    text-align: left;
+  }
+}
+
+@media (min-width:50.25rem) {
+  .c39 {
+    max-width: 20rem;
+    margin: 0 3rem;
+  }
+}
+
+@media (min-width:50.25rem) {
+  .c38 {
+    display: unset;
+  }
+}
+
+@media (min-width:50.25rem) {
+  .c41 {
+    display: unset;
+  }
+}
+
+@media (min-width:50.25rem) {
+  .c42 {
+    display: none;
+  }
+}
+
+@media (min-width:50.25rem) {
+  .c47 {
+    max-width: 70%;
+  }
+}
+
+@media (prefers-color-scheme:dark) {
+  .c55 {
+    background-color: black;
+  }
+}
+
+@media (min-width:50.25rem) {
+  .c8 {
+    margin-top: 2rem;
+  }
+}
+
+@media (min-width:50.25rem) {
+  .c36 {
+    margin-top: 4rem;
+  }
+}
+
+@media (min-width:50.25rem) {
+  .c45 {
+    margin-top: 6rem;
+  }
+}
+
+@media (min-width:50.25rem) {
+  .c50 {
+    margin-top: 6rem;
+  }
+}
+
+@media (min-width:50.25rem) {
+  .c57 {
+    padding-right: unset;
+    padding-left: unset;
+    -webkit-align-items: unset;
+    -webkit-box-align: unset;
+    -ms-flex-align: unset;
+    align-items: unset;
+  }
+}
+
+@media (prefers-color-scheme:dark) {
+  .c59:focus-within::after,
+  .c59:focus::after {
+    border-color: rgba(0,125,250,0.6);
+  }
+}
+
+@media (min-width:32.25rem) {
+  .c60 {
+    font-size: 3rem;
+  }
+}
+
+@media (prefers-color-scheme:dark) {
+  .c60 {
+    color: white;
+  }
+}
+
+@media (min-width:32.25rem) {
+  .c56 {
+    padding: 2rem 2rem;
+  }
+}
+
+@media (prefers-color-scheme:dark) {
+  .c56 {
+    border-top: solid #44aeff 0.15rem;
+    background-color: #050d1b;
+  }
+}
+
 <div>
   <main
-    class="main-wrapperstyles__StyledMainWrapper-sc-hveppy-0 llAgSZ common-layoutstyles__StyledMainWrapper-sc-1orix3m-0 ccuVuN"
+    class="c0 c1"
     id="main"
   >
     <div
-      class="sc-bcXHqe fjKhSJ page-containerstyles__StyledPageContainer-sc-19l7k4-0"
+      class="c2 page-containerstyles__StyledPageContainer-sc-19l7k4-0"
       width="default"
     >
       <div
-        class="sc-ksBlkl iCvzgk"
+        class="c3"
       >
         <h1
-          class="sc-jSUZER bliipu sc-kDvujY jlGjEY"
+          class="c4 c5"
         >
           Hey! I'm George.
         </h1>
       </div>
       <div
-        class="sc-eDWCr himBEe"
+        class="c6"
       >
         <style>
           .js .animated-content__wrapper--hidden {
@@ -29,48 +941,48 @@ exports[`<HomePage /> should render correctly 1`] = `
 }
         </style>
         <div
-          class="sc-csuSiG bimhCI animated-content__wrapper--hidden"
+          class="c7 animated-content__wrapper--hidden"
         >
           <div
-            class="homestyles__StyledWorkSection-sc-d0smz9-0 fjVlPe"
+            class="c8"
           >
             <div
-              class="work-sectionstyles__Wrapper-sc-1t4zqac-0 ehSGLm"
+              class="c9"
             >
               <div
-                class="work-sectionstyles__Content-sc-1t4zqac-1 cFtcfy"
+                class="c10"
               >
                 <div
-                  class="sc-fnGiBr cWeZey"
+                  class="c11"
                 >
                   <h1
-                    class="sc-gKPRtg cFtFE sc-idXgbr CjtXn"
+                    class="c12 c13"
                     id="work"
                   >
                     Work
                   </h1>
                   <span
-                    class="sc-dIfARi gupYKT work-sectionstyles__StyledParagraph-sc-1t4zqac-3 cXOZzD"
+                    class="c14 c15"
                   >
                     I'm a web developer at
                      
                     <a
                       aria-label="Typeform (opens in a new tab)"
-                      class="sc-dkrFOg goDQJi"
+                      class="c16"
                       href="https://typeform.com/"
                       rel="noopener noreferrer"
                       target="_blank"
                     >
                       <span
-                        class="sc-pyfCe TBvmW"
+                        class="c17"
                       >
                         Typeform
                       </span>
                       <div
-                        class="sc-hLBbgP dPpdAU"
+                        class="c18"
                       >
                         <svg
-                          class="sc-gswNZR hanptH sc-eDvSVe emXavc"
+                          class="c19 c20"
                           height="18"
                           viewBox="0 0 24 24"
                           width="18"
@@ -87,24 +999,19 @@ exports[`<HomePage /> should render correctly 1`] = `
                     <br />
                     I’m also an accessibility champion and design system enthusiast.
                     <br />
-                    <a
-                      class="sc-dkrFOg goDQJi"
-                      href="/work"
+                    <span
+                      class="c17"
                     >
-                      <span
-                        class="sc-pyfCe TBvmW"
-                      >
-                        Learn more about my work
-                      </span>
-                    </a>
+                      Learn more about my work
+                    </span>
                   </span>
                 </div>
               </div>
               <div
-                class="phonesstyles__Wrapper-sc-qc041h-0 kOTBXS work-sectionstyles__Graphic-sc-1t4zqac-2 bDqRgi"
+                class="c21 c22"
               >
                 <div
-                  class="sliding-phonestyles__Wrapper-sc-1ngyhd8-0 ceORcu phonesstyles__StyledSlidingPhone-sc-qc041h-1 gkZvSd"
+                  class="c23 c24"
                 >
                   <style>
                     .js .home__sliding-phone--hidden {
@@ -113,7 +1020,7 @@ exports[`<HomePage /> should render correctly 1`] = `
       }
                   </style>
                   <div
-                    class="sc-kgTSHT eUhlhh sliding-phonestyles__StyledImage-sc-1ngyhd8-1 cObRhL home__sliding-phone--hidden"
+                    class="c25 c26 home__sliding-phone--hidden"
                   >
                     <style>
                       
@@ -122,17 +1029,17 @@ exports[`<HomePage /> should render correctly 1`] = `
         
                     </style>
                     <div
-                      class="sc-fLcnxK hbXkzo"
+                      class="c27"
                       style="padding-bottom: 197.80876494023903%;"
                     >
                       <div
-                        class="sc-bBABsx fzMRrO"
+                        class="c28"
                       >
                         <div
-                          class="sc-hHTYSt jkmwNj sc-iveFHk icHhkY"
+                          class="c29 c30"
                         >
                           <div
-                            class="sc-dmctIk cOGJAF"
+                            class="c31"
                             style="margin-left: -0px;"
                           />
                         </div>
@@ -142,11 +1049,11 @@ exports[`<HomePage /> should render correctly 1`] = `
                       >
                         <img
                           alt="A screenshot of our Backpack design principles"
-                          class="sc-cwSeag jzhngs"
+                          class="c32"
                         />
                         <img
                           alt="A screenshot of our Backpack design principles"
-                          class="sc-lllmON ibCXxG"
+                          class="c33"
                         />
                       </div>
                       <div
@@ -154,18 +1061,18 @@ exports[`<HomePage /> should render correctly 1`] = `
                       >
                         <img
                           alt="A screenshot of our Backpack design principles"
-                          class="sc-cwSeag kquVus"
+                          class="c34"
                         />
                         <img
                           alt="A screenshot of our Backpack design principles"
-                          class="sc-lllmON hxptFy"
+                          class="c35"
                         />
                       </div>
                     </div>
                   </div>
                 </div>
                 <div
-                  class="sliding-phonestyles__Wrapper-sc-1ngyhd8-0 ceORcu phonesstyles__StyledSlidingPhone-sc-qc041h-1 gkZvSd"
+                  class="c23 c24"
                 >
                   <style>
                     .js .home__sliding-phone--hidden {
@@ -174,7 +1081,7 @@ exports[`<HomePage /> should render correctly 1`] = `
       }
                   </style>
                   <div
-                    class="sc-kgTSHT eUhlhh sliding-phonestyles__StyledImage-sc-1ngyhd8-1 cObRhL home__sliding-phone--hidden"
+                    class="c25 c26 home__sliding-phone--hidden"
                   >
                     <style>
                       
@@ -183,17 +1090,17 @@ exports[`<HomePage /> should render correctly 1`] = `
         
                     </style>
                     <div
-                      class="sc-fLcnxK hbXkzo"
+                      class="c27"
                       style="padding-bottom: 197.80876494023903%;"
                     >
                       <div
-                        class="sc-bBABsx fzMRrO"
+                        class="c28"
                       >
                         <div
-                          class="sc-hHTYSt jkmwNj sc-iveFHk icHhkY"
+                          class="c29 c30"
                         >
                           <div
-                            class="sc-dmctIk cOGJAF"
+                            class="c31"
                             style="margin-left: -0px;"
                           />
                         </div>
@@ -203,11 +1110,11 @@ exports[`<HomePage /> should render correctly 1`] = `
                       >
                         <img
                           alt="A screenshot of our bar chart component on iOS"
-                          class="sc-cwSeag jzhngs"
+                          class="c32"
                         />
                         <img
                           alt="A screenshot of our bar chart component on iOS"
-                          class="sc-lllmON ibCXxG"
+                          class="c33"
                         />
                       </div>
                       <div
@@ -215,18 +1122,18 @@ exports[`<HomePage /> should render correctly 1`] = `
                       >
                         <img
                           alt="A screenshot of our bar chart component on iOS"
-                          class="sc-cwSeag kquVus"
+                          class="c34"
                         />
                         <img
                           alt="A screenshot of our bar chart component on iOS"
-                          class="sc-lllmON hxptFy"
+                          class="c35"
                         />
                       </div>
                     </div>
                   </div>
                 </div>
                 <div
-                  class="sliding-phonestyles__Wrapper-sc-1ngyhd8-0 ceORcu phonesstyles__StyledSlidingPhone-sc-qc041h-1 gkZvSd"
+                  class="c23 c24"
                 >
                   <style>
                     .js .home__sliding-phone--hidden {
@@ -235,7 +1142,7 @@ exports[`<HomePage /> should render correctly 1`] = `
       }
                   </style>
                   <div
-                    class="sc-kgTSHT eUhlhh sliding-phonestyles__StyledImage-sc-1ngyhd8-1 cObRhL home__sliding-phone--hidden"
+                    class="c25 c26 home__sliding-phone--hidden"
                   >
                     <style>
                       
@@ -244,17 +1151,17 @@ exports[`<HomePage /> should render correctly 1`] = `
         
                     </style>
                     <div
-                      class="sc-fLcnxK hbXkzo"
+                      class="c27"
                       style="padding-bottom: 197.80876494023903%;"
                     >
                       <div
-                        class="sc-bBABsx fzMRrO"
+                        class="c28"
                       >
                         <div
-                          class="sc-hHTYSt jkmwNj sc-iveFHk icHhkY"
+                          class="c29 c30"
                         >
                           <div
-                            class="sc-dmctIk cOGJAF"
+                            class="c31"
                             style="margin-left: -0px;"
                           />
                         </div>
@@ -264,11 +1171,11 @@ exports[`<HomePage /> should render correctly 1`] = `
                       >
                         <img
                           alt="A screenshot of our flare view component on web"
-                          class="sc-cwSeag jzhngs"
+                          class="c32"
                         />
                         <img
                           alt="A screenshot of our flare view component on web"
-                          class="sc-lllmON ibCXxG"
+                          class="c33"
                         />
                       </div>
                       <div
@@ -276,11 +1183,11 @@ exports[`<HomePage /> should render correctly 1`] = `
                       >
                         <img
                           alt="A screenshot of our flare view component on web"
-                          class="sc-cwSeag kquVus"
+                          class="c34"
                         />
                         <img
                           alt="A screenshot of our flare view component on web"
-                          class="sc-lllmON hxptFy"
+                          class="c35"
                         />
                       </div>
                     </div>
@@ -292,7 +1199,7 @@ exports[`<HomePage /> should render correctly 1`] = `
         </div>
       </div>
       <div
-        class="sc-eDWCr himBEe"
+        class="c6"
       >
         <style>
           .js .animated-content__wrapper--hidden {
@@ -301,16 +1208,16 @@ exports[`<HomePage /> should render correctly 1`] = `
 }
         </style>
         <div
-          class="sc-csuSiG bimhCI animated-content__wrapper--hidden"
+          class="c7 animated-content__wrapper--hidden"
         >
           <div
-            class="homestyles__StyledLifeSection-sc-d0smz9-1 HnNWF"
+            class="c36"
           >
             <div
-              class="life-sectionstyles__Wrapper-sc-17amgn9-0 Dfoqm"
+              class="c37"
             >
               <div
-                class="sc-kgTSHT eUhlhh life-sectionstyles__ImageAboveTabletLeft-sc-17amgn9-3 iRfPSu"
+                class="c25 c38"
                 style="margin-top: 2.6rem; transform: rotate(-10.6deg);"
               >
                 <style>
@@ -320,17 +1227,17 @@ exports[`<HomePage /> should render correctly 1`] = `
         
                 </style>
                 <div
-                  class="sc-fLcnxK hbXkzo"
+                  class="c27"
                   style="padding-bottom: 150%;"
                 >
                   <div
-                    class="sc-bBABsx fzMRrO"
+                    class="c28"
                   >
                     <div
-                      class="sc-hHTYSt jkmwNj sc-iveFHk icHhkY"
+                      class="c29 c30"
                     >
                       <div
-                        class="sc-dmctIk cOGJAF"
+                        class="c31"
                         style="margin-left: -0px;"
                       />
                     </div>
@@ -340,11 +1247,11 @@ exports[`<HomePage /> should render correctly 1`] = `
                   >
                     <img
                       alt=""
-                      class="sc-cwSeag jzhngs"
+                      class="c32"
                     />
                     <img
                       alt=""
-                      class="sc-lllmON ibCXxG"
+                      class="c33"
                     />
                   </div>
                   <div
@@ -352,63 +1259,53 @@ exports[`<HomePage /> should render correctly 1`] = `
                   >
                     <img
                       alt=""
-                      class="sc-cwSeag kquVus"
+                      class="c34"
                     />
                     <img
                       alt=""
-                      class="sc-lllmON hxptFy"
+                      class="c35"
                     />
                   </div>
                 </div>
               </div>
               <div
-                class="life-sectionstyles__Content-sc-17amgn9-2 iyExnr"
+                class="c39"
               >
                 <div
-                  class="sc-fnGiBr cWeZey"
+                  class="c11"
                 >
                   <h1
-                    class="sc-gKPRtg cFtFE sc-idXgbr CjtXn"
+                    class="c12 c13"
                     id="life"
                   >
                     Life
                   </h1>
                   <span
-                    class="sc-dIfARi gupYKT life-sectionstyles__StyledParagraph-sc-17amgn9-1 iBdBcU"
+                    class="c14 c40"
                   >
                     I love travel, photography, and obstacle course racing.
                     <br />
-                    <a
-                      class="sc-dkrFOg goDQJi"
-                      href="/blog"
+                    <span
+                      class="c17"
                     >
-                      <span
-                        class="sc-pyfCe TBvmW"
-                      >
-                        Blog
-                      </span>
-                    </a>
+                      Blog
+                    </span>
                     <br />
-                    <a
-                      class="sc-dkrFOg goDQJi"
-                      href="/photography"
+                    <span
+                      class="c17"
                     >
-                      <span
-                        class="sc-pyfCe TBvmW"
-                      >
-                        Photography
-                      </span>
-                    </a>
+                      Photography
+                    </span>
                   </span>
                 </div>
                 <span
-                  class="sc-dIfARi gupYKT life-sectionstyles__StyledParagraph-sc-17amgn9-1 iBdBcU"
+                  class="c14 c40"
                 >
                   I live on the south coast of the UK with my wife, cat and dog.
                 </span>
               </div>
               <div
-                class="sc-kgTSHT eUhlhh life-sectionstyles__ImageAboveTabletRight-sc-17amgn9-4 hWXkmE"
+                class="c25 c41"
                 style="margin-top: -0.39999999999999947rem; transform: rotate(4.6deg);"
               >
                 <style>
@@ -418,17 +1315,17 @@ exports[`<HomePage /> should render correctly 1`] = `
         
                 </style>
                 <div
-                  class="sc-fLcnxK hbXkzo"
+                  class="c27"
                   style="padding-bottom: 66.66666666666667%;"
                 >
                   <div
-                    class="sc-bBABsx fzMRrO"
+                    class="c28"
                   >
                     <div
-                      class="sc-hHTYSt jkmwNj sc-iveFHk icHhkY"
+                      class="c29 c30"
                     >
                       <div
-                        class="sc-dmctIk cOGJAF"
+                        class="c31"
                         style="margin-left: -0px;"
                       />
                     </div>
@@ -438,11 +1335,11 @@ exports[`<HomePage /> should render correctly 1`] = `
                   >
                     <img
                       alt=""
-                      class="sc-cwSeag jzhngs"
+                      class="c32"
                     />
                     <img
                       alt=""
-                      class="sc-lllmON ibCXxG"
+                      class="c33"
                     />
                   </div>
                   <div
@@ -450,17 +1347,17 @@ exports[`<HomePage /> should render correctly 1`] = `
                   >
                     <img
                       alt=""
-                      class="sc-cwSeag kquVus"
+                      class="c34"
                     />
                     <img
                       alt=""
-                      class="sc-lllmON hxptFy"
+                      class="c35"
                     />
                   </div>
                 </div>
               </div>
               <div
-                class="life-sectionstyles__MobileImageWrapper-sc-17amgn9-5 mjRmV"
+                class="c42"
               >
                 <style>
                   
@@ -475,10 +1372,10 @@ exports[`<HomePage /> should render correctly 1`] = `
           
                 </style>
                 <div
-                  class="life-sectionstyles__MobileImageInnerWrapperLeft-sc-17amgn9-6 dmHVWz home__life-section-image--left-hide"
+                  class="c43 home__life-section-image--left-hide"
                 >
                   <div
-                    class="sc-kgTSHT eUhlhh"
+                    class="c25"
                   >
                     <style>
                       
@@ -487,17 +1384,17 @@ exports[`<HomePage /> should render correctly 1`] = `
         
                     </style>
                     <div
-                      class="sc-fLcnxK hbXkzo"
+                      class="c27"
                       style="padding-bottom: 150%;"
                     >
                       <div
-                        class="sc-bBABsx fzMRrO"
+                        class="c28"
                       >
                         <div
-                          class="sc-hHTYSt jkmwNj sc-iveFHk icHhkY"
+                          class="c29 c30"
                         >
                           <div
-                            class="sc-dmctIk cOGJAF"
+                            class="c31"
                             style="margin-left: -0px;"
                           />
                         </div>
@@ -507,11 +1404,11 @@ exports[`<HomePage /> should render correctly 1`] = `
                       >
                         <img
                           alt=""
-                          class="sc-cwSeag jzhngs"
+                          class="c32"
                         />
                         <img
                           alt=""
-                          class="sc-lllmON ibCXxG"
+                          class="c33"
                         />
                       </div>
                       <div
@@ -519,21 +1416,21 @@ exports[`<HomePage /> should render correctly 1`] = `
                       >
                         <img
                           alt=""
-                          class="sc-cwSeag kquVus"
+                          class="c34"
                         />
                         <img
                           alt=""
-                          class="sc-lllmON hxptFy"
+                          class="c35"
                         />
                       </div>
                     </div>
                   </div>
                 </div>
                 <div
-                  class="life-sectionstyles__MobileImageInnerWrapperRight-sc-17amgn9-7 bOxRrT home__life-section-image--right-hide"
+                  class="c44 home__life-section-image--right-hide"
                 >
                   <div
-                    class="sc-kgTSHT eUhlhh"
+                    class="c25"
                   >
                     <style>
                       
@@ -542,17 +1439,17 @@ exports[`<HomePage /> should render correctly 1`] = `
         
                     </style>
                     <div
-                      class="sc-fLcnxK hbXkzo"
+                      class="c27"
                       style="padding-bottom: 66.66666666666667%;"
                     >
                       <div
-                        class="sc-bBABsx fzMRrO"
+                        class="c28"
                       >
                         <div
-                          class="sc-hHTYSt jkmwNj sc-iveFHk icHhkY"
+                          class="c29 c30"
                         >
                           <div
-                            class="sc-dmctIk cOGJAF"
+                            class="c31"
                             style="margin-left: -0px;"
                           />
                         </div>
@@ -562,11 +1459,11 @@ exports[`<HomePage /> should render correctly 1`] = `
                       >
                         <img
                           alt=""
-                          class="sc-cwSeag jzhngs"
+                          class="c32"
                         />
                         <img
                           alt=""
-                          class="sc-lllmON ibCXxG"
+                          class="c33"
                         />
                       </div>
                       <div
@@ -574,11 +1471,11 @@ exports[`<HomePage /> should render correctly 1`] = `
                       >
                         <img
                           alt=""
-                          class="sc-cwSeag kquVus"
+                          class="c34"
                         />
                         <img
                           alt=""
-                          class="sc-lllmON hxptFy"
+                          class="c35"
                         />
                       </div>
                     </div>
@@ -590,16 +1487,16 @@ exports[`<HomePage /> should render correctly 1`] = `
         </div>
       </div>
       <div
-        class="homestyles__StyledPhotoSection-sc-d0smz9-2 iKAEPq"
+        class="c45"
       >
         <div
-          class="photo-sectionstyles__Wrapper-sc-1vxd7ly-0 uQuQj"
+          class="c46"
         >
           <div
-            class="photo-sectionstyles__Content-sc-1vxd7ly-1 NmlDX"
+            class="c47"
           >
             <div
-              class="animated-imagestyles__Wrapper-sc-1ah0zqa-0 THYXl"
+              class="c48"
             >
               <style>
                 .js .home__animated-image--hidden {
@@ -608,7 +1505,7 @@ exports[`<HomePage /> should render correctly 1`] = `
           }
               </style>
               <div
-                class="sc-kgTSHT eUhlhh animated-imagestyles__StyledImage-sc-1ah0zqa-1 iHRNaq home__animated-image--hidden"
+                class="c25 c49 home__animated-image--hidden"
               >
                 <style>
                   
@@ -617,17 +1514,17 @@ exports[`<HomePage /> should render correctly 1`] = `
         
                 </style>
                 <div
-                  class="sc-fLcnxK hbXkzo"
+                  class="c27"
                   style="padding-bottom: 70.79494321834154%;"
                 >
                   <div
-                    class="sc-bBABsx fzMRrO"
+                    class="c28"
                   >
                     <div
-                      class="sc-hHTYSt jkmwNj sc-iveFHk icHhkY"
+                      class="c29 c30"
                     >
                       <div
-                        class="sc-dmctIk cOGJAF"
+                        class="c31"
                         style="margin-left: -0px;"
                       />
                     </div>
@@ -637,12 +1534,12 @@ exports[`<HomePage /> should render correctly 1`] = `
                   >
                     <img
                       alt="Me"
-                      class="sc-cwSeag jzhngs"
+                      class="c32"
                       src="https://i.imgur.com/L0Rm1ZC.jpg"
                     />
                     <img
                       alt="Me"
-                      class="sc-lllmON ibCXxG"
+                      class="c33"
                       src="https://i.imgur.com/L0Rm1ZC.jpg"
                     />
                   </div>
@@ -651,12 +1548,12 @@ exports[`<HomePage /> should render correctly 1`] = `
                   >
                     <img
                       alt="Me"
-                      class="sc-cwSeag kquVus"
+                      class="c34"
                       src="https://i.imgur.com/L0Rm1ZC.jpg"
                     />
                     <img
                       alt="Me"
-                      class="sc-lllmON hxptFy"
+                      class="c35"
                       src="https://i.imgur.com/L0Rm1ZC.jpg"
                     />
                   </div>
@@ -667,7 +1564,7 @@ exports[`<HomePage /> should render correctly 1`] = `
         </div>
       </div>
       <div
-        class="sc-eDWCr himBEe"
+        class="c6"
       >
         <style>
           .js .animated-content__wrapper--hidden {
@@ -676,36 +1573,36 @@ exports[`<HomePage /> should render correctly 1`] = `
 }
         </style>
         <div
-          class="sc-csuSiG bimhCI animated-content__wrapper--hidden"
+          class="c7 animated-content__wrapper--hidden"
         >
           <div
-            class="homestyles__StyledAboutSection-sc-d0smz9-3 kXAVhO"
+            class="c50"
           >
             <div
-              class="about-sectionstyles__Wrapper-sc-161fh79-0 dfgKZa"
+              class="c51"
             >
               <span
-                class="sc-dIfARi gupYKT about-sectionstyles__StyledParagraph-sc-161fh79-1 kZkWBL"
+                class="c14 c52"
               >
                 This site is built in
                  
                 <a
                   aria-label="React (opens in a new tab)"
-                  class="sc-dkrFOg goDQJi"
+                  class="c16"
                   href="https://reactjs.org/"
                   rel="noopener noreferrer"
                   target="_blank"
                 >
                   <span
-                    class="sc-pyfCe TBvmW"
+                    class="c17"
                   >
                     React
                   </span>
                   <div
-                    class="sc-hLBbgP dPpdAU"
+                    class="c18"
                   >
                     <svg
-                      class="sc-gswNZR hanptH sc-eDvSVe emXavc"
+                      class="c19 c20"
                       height="18"
                       viewBox="0 0 24 24"
                       width="18"
@@ -722,21 +1619,21 @@ exports[`<HomePage /> should render correctly 1`] = `
                  
                 <a
                   aria-label="Redux (opens in a new tab)"
-                  class="sc-dkrFOg goDQJi"
+                  class="c16"
                   href="https://redux.js.org/"
                   rel="noopener noreferrer"
                   target="_blank"
                 >
                   <span
-                    class="sc-pyfCe TBvmW"
+                    class="c17"
                   >
                     Redux
                   </span>
                   <div
-                    class="sc-hLBbgP dPpdAU"
+                    class="c18"
                   >
                     <svg
-                      class="sc-gswNZR hanptH sc-eDvSVe emXavc"
+                      class="c19 c20"
                       height="18"
                       viewBox="0 0 24 24"
                       width="18"
@@ -753,21 +1650,21 @@ exports[`<HomePage /> should render correctly 1`] = `
                  
                 <a
                   aria-label="Next.js (opens in a new tab)"
-                  class="sc-dkrFOg goDQJi"
+                  class="c16"
                   href="https://nextjs.org/"
                   rel="noopener noreferrer"
                   target="_blank"
                 >
                   <span
-                    class="sc-pyfCe TBvmW"
+                    class="c17"
                   >
                     Next.js
                   </span>
                   <div
-                    class="sc-hLBbgP dPpdAU"
+                    class="c18"
                   >
                     <svg
-                      class="sc-gswNZR hanptH sc-eDvSVe emXavc"
+                      class="c19 c20"
                       height="18"
                       viewBox="0 0 24 24"
                       width="18"
@@ -783,21 +1680,21 @@ exports[`<HomePage /> should render correctly 1`] = `
                  
                 <a
                   aria-label="AWS (opens in a new tab)"
-                  class="sc-dkrFOg goDQJi"
+                  class="c16"
                   href="https://aws.amazon.com/"
                   rel="noopener noreferrer"
                   target="_blank"
                 >
                   <span
-                    class="sc-pyfCe TBvmW"
+                    class="c17"
                   >
                     AWS
                   </span>
                   <div
-                    class="sc-hLBbgP dPpdAU"
+                    class="c18"
                   >
                     <svg
-                      class="sc-gswNZR hanptH sc-eDvSVe emXavc"
+                      class="c19 c20"
                       height="18"
                       viewBox="0 0 24 24"
                       width="18"
@@ -812,7 +1709,7 @@ exports[`<HomePage /> should render correctly 1`] = `
                 . I use it to experiment with things, share stuff I've figured out, and allow people to contact me.
               </span>
               <div
-                class="contact-linkstyles__Wrapper-sc-1f9dgs5-0 empxtt"
+                class="c53"
               >
                 <style>
                   
@@ -821,20 +1718,15 @@ exports[`<HomePage /> should render correctly 1`] = `
         }
                 </style>
                 <div
-                  class="contact-linkstyles__Content-sc-1f9dgs5-1 ktkYdY"
+                  class="c54"
                 >
-                  <a
-                    class="sc-dkrFOg goDQJi contact-linkstyles__StyledTextLink-sc-1f9dgs5-2 ePjaBV"
-                    href="/contact"
+                  <span
+                    class="c17"
                   >
-                    <span
-                      class="sc-pyfCe TBvmW"
-                    >
-                      Get in touch
-                    </span>
-                  </a>
+                    Get in touch
+                  </span>
                   <div
-                    class="contact-linkstyles__Cloud-sc-1f9dgs5-3 laVHCj home__contact--hide"
+                    class="c55 home__contact--hide"
                     style="left: 300%;"
                   />
                 </div>
@@ -846,7 +1738,7 @@ exports[`<HomePage /> should render correctly 1`] = `
     </div>
   </main>
   <div
-    class="sc-eDWCr himBEe"
+    class="c6"
   >
     <style>
       .js .animated-content__wrapper--hidden {
@@ -854,32 +1746,32 @@ exports[`<HomePage /> should render correctly 1`] = `
 }
     </style>
     <div
-      class="sc-csuSiG bimhCI animated-content__wrapper--hidden"
+      class="c7 animated-content__wrapper--hidden"
     >
       <footer
-        class="footerstyles__Container-sc-ojjd19-0 jPsmbi"
+        class="c56"
         id="footer"
       >
         <div
-          class="logostyles__OuterContainer-sc-1fentac-0 hLzBQR footerstyles__StyledLogo-sc-ojjd19-1 iDMNXa"
+          class="c57 c58"
         >
           <a
-            class="logostyles__StyledLink-sc-1fentac-1 faHbaV"
+            class="c59"
             href="/"
           >
             <span
               aria-label="Home page"
-              class="logostyles__LargeText-sc-1fentac-2 cachOr"
+              class="c60"
             >
               G
             </span>
           </a>
         </div>
         <div
-          class="footerstyles__StyledTechSpecs-sc-ojjd19-2 jckxzC"
+          class="c61"
         >
           <span
-            class="sc-dIfARi gupYKT tech-specsstyles__StyledParagraph-sc-1ysn53a-0 hLsLJb"
+            class="c14 c62"
           >
             Built in
             <a
@@ -889,7 +1781,7 @@ exports[`<HomePage /> should render correctly 1`] = `
             >
               <img
                 alt="React"
-                class="tech-specsstyles__Icon-sc-1ysn53a-1 ifSCys"
+                class="c63"
                 height="5"
                 width="5"
               />
@@ -902,7 +1794,7 @@ exports[`<HomePage /> should render correctly 1`] = `
             >
               <img
                 alt="Redux"
-                class="tech-specsstyles__Icon-sc-1ysn53a-1 ifSCys"
+                class="c63"
                 height="5"
                 width="5"
               />
@@ -915,7 +1807,7 @@ exports[`<HomePage /> should render correctly 1`] = `
             >
               <img
                 alt="Amazon Web Services"
-                class="tech-specsstyles__Icon-sc-1ysn53a-1 ifSCys"
+                class="c63"
                 height="5"
                 style="margin-top: .8rem; max-width: 2.9rem;"
                 width="8.28"
@@ -924,95 +1816,55 @@ exports[`<HomePage /> should render correctly 1`] = `
           </span>
         </div>
         <div
-          class="footer-navstyles__Wrapper-sc-7lmnsj-0 bCyRIt footerstyles__StyledFooterNav-sc-ojjd19-3"
+          class="c64 "
         >
           <div
-            class="footer-navstyles__Section-sc-7lmnsj-1 bcuhSW"
+            class="c65"
           >
-            <a
-              class="sc-dkrFOg bjTxWu"
-              href="/blog"
+            <span
+              class="c17"
             >
-              <span
-                class="sc-pyfCe TBvmW"
-              >
-                Blog
-              </span>
-            </a>
-            <a
-              class="sc-dkrFOg bjTxWu"
-              href="/photography"
+              Blog
+            </span>
+            <span
+              class="c17"
             >
-              <span
-                class="sc-pyfCe TBvmW"
-              >
-                Photography
-              </span>
-            </a>
-            <a
-              class="sc-dkrFOg bjTxWu"
-              href="/work"
+              Photography
+            </span>
+            <span
+              class="c17"
             >
-              <span
-                class="sc-pyfCe TBvmW"
-              >
-                Work
-              </span>
-            </a>
-            <a
-              class="sc-dkrFOg bjTxWu"
-              href="/contact"
+              Work
+            </span>
+            <span
+              class="c17"
             >
-              <span
-                class="sc-pyfCe TBvmW"
-              >
-                Contact
-              </span>
-            </a>
+              Contact
+            </span>
           </div>
           <div
-            class="footer-navstyles__Section-sc-7lmnsj-1 bcuhSW"
+            class="c65"
           >
-            <a
-              class="sc-dkrFOg bjTxWu"
-              href="/sitemap"
+            <span
+              class="c17"
             >
-              <span
-                class="sc-pyfCe TBvmW"
-              >
-                Site map
-              </span>
-            </a>
-            <a
-              class="sc-dkrFOg bjTxWu"
-              href="/privacy-policy"
+              Site map
+            </span>
+            <span
+              class="c17"
             >
-              <span
-                class="sc-pyfCe TBvmW"
-              >
-                Privacy
-              </span>
-            </a>
-            <a
-              class="sc-dkrFOg bjTxWu"
-              href="/login"
+              Privacy
+            </span>
+            <span
+              class="c17"
             >
-              <span
-                class="sc-pyfCe TBvmW"
-              >
-                Login/Account
-              </span>
-            </a>
-            <a
-              class="sc-dkrFOg bjTxWu"
-              href="/status"
+              Login/Account
+            </span>
+            <span
+              class="c17"
             >
-              <span
-                class="sc-pyfCe TBvmW"
-              >
-                Status
-              </span>
-            </a>
+              Status
+            </span>
           </div>
         </div>
       </footer>

@@ -1,22 +1,103 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<NotFound /> should render correctly 1`] = `
+.c0 {
+  display: block;
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  overflow: hidden;
+  padding-bottom: 2rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  text-align: center;
+  max-width: 60rem;
+  padding-right: 1rem;
+  padding-left: 1rem;
+}
+
+.c6 {
+  display: inline-block;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  line-height: 1.5;
+  margin-top: 2rem;
+}
+
+.c6:first-of-type {
+  margin-top: 0.86rem;
+}
+
+.c2 {
+  margin: 0;
+  font-size: 2.4rem;
+  font-weight: bold;
+}
+
+.c7 {
+  margin: 0;
+}
+
+.c3 {
+  margin: 2.3rem 0 0 0;
+}
+
+.c5 {
+  padding-top: 0;
+  opacity: 1;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+.c4 {
+  width: 100%;
+}
+
+.c1 {
+  -webkit-animation: bbwGtI 0.4s ease-in-out;
+  animation: bbwGtI 0.4s ease-in-out;
+}
+
+@media (min-width:50.25rem) {
+  .c0 {
+    padding-right: 2rem;
+    padding-left: 2rem;
+  }
+}
+
+@media (prefers-color-scheme:dark) {
+
+}
+
+@media (prefers-color-scheme:dark) {
+
+}
+
 <div>
   <div
-    class="sc-bcXHqe izJKIX page-containerstyles__StyledPageContainer-sc-19l7k4-0"
+    class="c0 page-containerstyles__StyledPageContainer-sc-19l7k4-0"
     width="default"
   >
     <div
-      class="sc-hBxehG kRpDOl"
+      class="c1"
     >
       <h1
-        class="sc-gKPRtg kZXQcu sc-ipEyDJ jfsqCE"
+        class="c2 c3"
       >
         Oops.
       </h1>
     </div>
     <div
-      class="sc-bqWxrE dacVvm"
+      class="c4"
     >
       <style>
         .js .animated-content__wrapper--hidden {
@@ -24,24 +105,19 @@ exports[`<NotFound /> should render correctly 1`] = `
 }
       </style>
       <div
-        class="sc-eDWCr fyEwVX animated-content__wrapper--hidden"
+        class="c5 animated-content__wrapper--hidden"
       >
         <span
-          class="sc-gswNZR ekTDXf"
+          class="c6"
         >
           The page you're looking for doesn't exist, or you don't have permission to view it.
           <br />
           Maybe the 
-          <a
-            class="sc-hLBbgP lcnCbW"
-            href="/sitemap"
+          <span
+            class="c7"
           >
-            <span
-              class="sc-jrcTuL ddyEiV"
-            >
-              site map
-            </span>
-          </a>
+            site map
+          </span>
            can help
         </span>
       </div>

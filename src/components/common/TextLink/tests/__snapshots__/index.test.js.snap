@@ -1,46 +1,67 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<TextLink /> Should render correctly 1`] = `
+.c0 {
+  margin: 0;
+}
+
+@media (prefers-color-scheme:dark) {
+
+}
+
+@media (prefers-color-scheme:dark) {
+
+}
+
 <div>
-  <a
-    class="sc-gswNZR bbFtvE"
-    href="/test"
+  <span
+    class="c0"
   >
-    <span
-      class="sc-ftTHYK cRFGYD"
-    >
-      some text
-    </span>
-  </a>
+    some text
+  </span>
 </div>
 `;
 
 exports[`<TextLink /> Should render correctly with custom className 1`] = `
+.c0 {
+  margin: 0;
+}
+
+@media (prefers-color-scheme:dark) {
+
+}
+
+@media (prefers-color-scheme:dark) {
+
+}
+
 <div>
-  <a
-    class="sc-gswNZR bbFtvE test-custom-classname"
-    href="/test"
+  <span
+    class="c0"
   >
-    <span
-      class="sc-ftTHYK cRFGYD"
-    >
-      some text
-    </span>
-  </a>
+    some text
+  </span>
 </div>
 `;
 
 exports[`<TextLink /> Should render with nextified href 1`] = `
+.c0 {
+  margin: 0;
+}
+
+@media (prefers-color-scheme:dark) {
+
+}
+
+@media (prefers-color-scheme:dark) {
+
+}
+
 <div>
-  <a
-    class="sc-gswNZR bbFtvE"
-    href="/blog/test"
+  <span
+    class="c0"
   >
-    <span
-      class="sc-ftTHYK cRFGYD"
-    >
-      some text
-    </span>
-  </a>
+    some text
+  </span>
 </div>
 `;

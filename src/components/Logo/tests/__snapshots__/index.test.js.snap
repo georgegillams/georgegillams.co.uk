@@ -1,17 +1,114 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<Logo /> Should render correctly 1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding-bottom: 1rem;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-transition: -webkit-transform 0.2s;
+  -webkit-transition: transform 0.2s;
+  transition: transform 0.2s;
+  border-radius: 0.25rem;
+  outline: none;
+  padding-right: 2rem;
+  padding-left: 2rem;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c1 {
+  border-radius: 0.25rem;
+}
+
+.c1:focus-within,
+.c1:focus {
+  position: relative;
+  outline: none !important;
+}
+
+.c1:focus-within::after,
+.c1:focus::after {
+  position: absolute;
+  top: -0.35rem;
+  right: -0.35rem;
+  bottom: -0.35rem;
+  left: -0.35rem;
+  content: '';
+  display: block;
+  border: solid rgba(0,125,250,0.6) 0.2rem;
+  border-radius: 0.5rem;
+  pointer-events: none;
+}
+
+.c1:hover,
+.c1:active,
+.c1:focus {
+  -webkit-animation-duration: 0.4s;
+  animation-duration: 0.4s;
+  -webkit-animation-name: cMFrpC;
+  animation-name: cMFrpC;
+}
+
+.c2 {
+  display: inline-block;
+  padding-top: 0.1rem;
+  border-radius: 0.25rem;
+  color: #44aeff;
+  font-size: 2.6rem;
+  line-height: 1.2;
+  font-weight: bold;
+  margin: 0;
+  line-height: normal;
+}
+
+@media (min-width:50.25rem) {
+  .c0 {
+    padding-right: unset;
+    padding-left: unset;
+    -webkit-align-items: unset;
+    -webkit-box-align: unset;
+    -ms-flex-align: unset;
+    align-items: unset;
+  }
+}
+
+@media (prefers-color-scheme:dark) {
+  .c1:focus-within::after,
+  .c1:focus::after {
+    border-color: rgba(0,125,250,0.6);
+  }
+}
+
+@media (min-width:32.25rem) {
+  .c2 {
+    font-size: 3rem;
+  }
+}
+
+@media (prefers-color-scheme:dark) {
+  .c2 {
+    color: white;
+  }
+}
+
 <div>
   <div
-    class="logostyles__OuterContainer-sc-1fentac-0 gNzSDR"
+    class="c0"
   >
     <a
-      class="logostyles__StyledLink-sc-1fentac-1 faHbaV"
+      class="c1"
       href="/"
     >
       <span
         aria-label="Home page"
-        class="logostyles__LargeText-sc-1fentac-2 iQpcfC"
+        class="c2"
       >
         G
       </span>
@@ -21,17 +118,114 @@ exports[`<Logo /> Should render correctly 1`] = `
 `;
 
 exports[`<Logo /> Should render correctly animated 1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding-bottom: 1rem;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-transition: -webkit-transform 0.2s;
+  -webkit-transition: transform 0.2s;
+  transition: transform 0.2s;
+  border-radius: 0.25rem;
+  outline: none;
+  padding-right: 2rem;
+  padding-left: 2rem;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c1 {
+  border-radius: 0.25rem;
+}
+
+.c1:focus-within,
+.c1:focus {
+  position: relative;
+  outline: none !important;
+}
+
+.c1:focus-within::after,
+.c1:focus::after {
+  position: absolute;
+  top: -0.35rem;
+  right: -0.35rem;
+  bottom: -0.35rem;
+  left: -0.35rem;
+  content: '';
+  display: block;
+  border: solid rgba(0,125,250,0.6) 0.2rem;
+  border-radius: 0.5rem;
+  pointer-events: none;
+}
+
+.c1:hover,
+.c1:active,
+.c1:focus {
+  -webkit-animation-duration: 0.4s;
+  animation-duration: 0.4s;
+  -webkit-animation-name: cMFrpC;
+  animation-name: cMFrpC;
+}
+
+.c2 {
+  display: inline-block;
+  padding-top: 0.1rem;
+  border-radius: 0.25rem;
+  color: #44aeff;
+  font-size: 2.6rem;
+  line-height: 1.2;
+  font-weight: bold;
+  margin: 0;
+  line-height: normal;
+}
+
+@media (min-width:50.25rem) {
+  .c0 {
+    padding-right: unset;
+    padding-left: unset;
+    -webkit-align-items: unset;
+    -webkit-box-align: unset;
+    -ms-flex-align: unset;
+    align-items: unset;
+  }
+}
+
+@media (prefers-color-scheme:dark) {
+  .c1:focus-within::after,
+  .c1:focus::after {
+    border-color: rgba(0,125,250,0.6);
+  }
+}
+
+@media (min-width:32.25rem) {
+  .c2 {
+    font-size: 3rem;
+  }
+}
+
+@media (prefers-color-scheme:dark) {
+  .c2 {
+    color: white;
+  }
+}
+
 <div>
   <div
-    class="logostyles__OuterContainer-sc-1fentac-0 gNzSDR"
+    class="c0"
   >
     <a
-      class="logostyles__StyledLink-sc-1fentac-1 faHbaV"
+      class="c1"
       href="/"
     >
       <span
         aria-label="Home page"
-        class="logostyles__LargeText-sc-1fentac-2 iQpcfC"
+        class="c2"
       >
         G
       </span>
@@ -41,17 +235,122 @@ exports[`<Logo /> Should render correctly animated 1`] = `
 `;
 
 exports[`<Logo /> Should render correctly pride 1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding-bottom: 1rem;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-transition: -webkit-transform 0.2s;
+  -webkit-transition: transform 0.2s;
+  transition: transform 0.2s;
+  border-radius: 0.25rem;
+  outline: none;
+  padding-right: 2rem;
+  padding-left: 2rem;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c1 {
+  border-radius: 0.25rem;
+}
+
+.c1:focus-within,
+.c1:focus {
+  position: relative;
+  outline: none !important;
+}
+
+.c1:focus-within::after,
+.c1:focus::after {
+  position: absolute;
+  top: -0.35rem;
+  right: -0.35rem;
+  bottom: -0.35rem;
+  left: -0.35rem;
+  content: '';
+  display: block;
+  border: solid rgba(0,125,250,0.6) 0.2rem;
+  border-radius: 0.5rem;
+  pointer-events: none;
+}
+
+.c1:hover,
+.c1:active,
+.c1:focus {
+  -webkit-animation-duration: 0.4s;
+  animation-duration: 0.4s;
+  -webkit-animation-name: cMFrpC;
+  animation-name: cMFrpC;
+}
+
+.c2 {
+  display: inline-block;
+  padding-top: 0.1rem;
+  border-radius: 0.25rem;
+  color: #44aeff;
+  font-size: 2.6rem;
+  line-height: 1.2;
+  font-weight: bold;
+  margin: 0;
+  line-height: normal;
+}
+
+@media (min-width:50.25rem) {
+  .c0 {
+    padding-right: unset;
+    padding-left: unset;
+    -webkit-align-items: unset;
+    -webkit-box-align: unset;
+    -ms-flex-align: unset;
+    align-items: unset;
+  }
+}
+
+@media (prefers-color-scheme:dark) {
+  .c1:focus-within::after,
+  .c1:focus::after {
+    border-color: rgba(0,125,250,0.6);
+  }
+}
+
+@media (min-width:32.25rem) {
+  .c2 {
+    font-size: 3rem;
+  }
+}
+
+@media (prefers-color-scheme:dark) {
+  .c2 {
+    color: white;
+  }
+}
+
+@supports (background-clip:text) {
+  .c2 {
+    background-image: linear-gradient( to bottom right,rgb(136,65,136),rgb(136,65,136),rgb(136,65,136),rgb(126,60,173),rgb(56,56,192),rgb(47,177,47),rgb(216,216,0),rgb(209,136,1),rgb(209,28,28),rgb(209,28,28),rgb(209,28,28) );
+    color: transparent;
+    background-clip: text;
+  }
+}
+
 <div>
   <div
-    class="logostyles__OuterContainer-sc-1fentac-0 gNzSDR"
+    class="c0"
   >
     <a
-      class="logostyles__StyledLink-sc-1fentac-1 faHbaV"
+      class="c1"
       href="/"
     >
       <span
         aria-label="Home page"
-        class="logostyles__LargeText-sc-1fentac-2 dpLiXz"
+        class="c2"
       >
         G
       </span>
@@ -61,17 +360,114 @@ exports[`<Logo /> Should render correctly pride 1`] = `
 `;
 
 exports[`<Logo /> Should render correctly with custom className 1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding-bottom: 1rem;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-transition: -webkit-transform 0.2s;
+  -webkit-transition: transform 0.2s;
+  transition: transform 0.2s;
+  border-radius: 0.25rem;
+  outline: none;
+  padding-right: 2rem;
+  padding-left: 2rem;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c1 {
+  border-radius: 0.25rem;
+}
+
+.c1:focus-within,
+.c1:focus {
+  position: relative;
+  outline: none !important;
+}
+
+.c1:focus-within::after,
+.c1:focus::after {
+  position: absolute;
+  top: -0.35rem;
+  right: -0.35rem;
+  bottom: -0.35rem;
+  left: -0.35rem;
+  content: '';
+  display: block;
+  border: solid rgba(0,125,250,0.6) 0.2rem;
+  border-radius: 0.5rem;
+  pointer-events: none;
+}
+
+.c1:hover,
+.c1:active,
+.c1:focus {
+  -webkit-animation-duration: 0.4s;
+  animation-duration: 0.4s;
+  -webkit-animation-name: cMFrpC;
+  animation-name: cMFrpC;
+}
+
+.c2 {
+  display: inline-block;
+  padding-top: 0.1rem;
+  border-radius: 0.25rem;
+  color: #44aeff;
+  font-size: 2.6rem;
+  line-height: 1.2;
+  font-weight: bold;
+  margin: 0;
+  line-height: normal;
+}
+
+@media (min-width:50.25rem) {
+  .c0 {
+    padding-right: unset;
+    padding-left: unset;
+    -webkit-align-items: unset;
+    -webkit-box-align: unset;
+    -ms-flex-align: unset;
+    align-items: unset;
+  }
+}
+
+@media (prefers-color-scheme:dark) {
+  .c1:focus-within::after,
+  .c1:focus::after {
+    border-color: rgba(0,125,250,0.6);
+  }
+}
+
+@media (min-width:32.25rem) {
+  .c2 {
+    font-size: 3rem;
+  }
+}
+
+@media (prefers-color-scheme:dark) {
+  .c2 {
+    color: white;
+  }
+}
+
 <div>
   <div
-    class="logostyles__OuterContainer-sc-1fentac-0 gNzSDR test-custom-classname"
+    class="c0 test-custom-classname"
   >
     <a
-      class="logostyles__StyledLink-sc-1fentac-1 faHbaV"
+      class="c1"
       href="/"
     >
       <span
         aria-label="Home page"
-        class="logostyles__LargeText-sc-1fentac-2 iQpcfC"
+        class="c2"
       >
         G
       </span>

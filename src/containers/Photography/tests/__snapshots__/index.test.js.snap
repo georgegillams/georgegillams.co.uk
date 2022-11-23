@@ -1,22 +1,213 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<Photography /> should render correctly - index 1`] = `
+.c8 {
+  width: 1.25rem;
+  height: 1.25rem;
+}
+
+.c5 {
+  display: inline-block;
+  border-radius: 0.25rem;
+  font-weight: bold;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  position: relative;
+  color: darkorchid;
+  fill: darkorchid;
+}
+
+.c5:focus-within,
+.c5:focus {
+  position: relative;
+  outline: none !important;
+}
+
+.c5:focus-within::after,
+.c5:focus::after {
+  position: absolute;
+  top: -0.35rem;
+  right: -0.35rem;
+  bottom: -0.35rem;
+  left: -0.35rem;
+  content: '';
+  display: block;
+  border: solid rgba(0,125,250,0.6) 0.2rem;
+  border-radius: 0.5rem;
+  pointer-events: none;
+}
+
+.c5:hover {
+  color: #44aeff;
+  fill: #44aeff;
+}
+
+.c7 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  width: 0.4rem;
+  height: 1rem;
+  margin-left: 0.55rem;
+}
+
+.c9 {
+  position: absolute;
+  width: 1rem;
+  height: 1rem;
+  margin-top: 0.12rem;
+  margin-left: -0.45rem;
+}
+
+.c1 {
+  margin: 0;
+  font-size: 2.4rem;
+  font-weight: bold;
+}
+
+.c14 {
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.c6 {
+  margin: 0;
+}
+
+.c2 {
+  margin: 2.3rem 0 0 0;
+}
+
+.c4 {
+  padding-top: 0;
+  opacity: 1;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+.c3 {
+  width: 100%;
+}
+
+.c0 {
+  -webkit-animation: bbwGtI 0.4s ease-in-out;
+  animation: bbwGtI 0.4s ease-in-out;
+}
+
+.c16 {
+  display: inline-block;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  line-height: 1.5;
+  margin-top: 2rem;
+}
+
+.c16:first-of-type {
+  margin-top: 0.86rem;
+}
+
+.c12 {
+  width: 100%;
+  color: #1e1e1e;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c15 {
+  margin: 2.13rem 0 0 0;
+}
+
+.c10 {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  margin-top: 2rem;
+  margin-left: 0;
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.c11 {
+  position: absolute;
+  top: 0;
+  left: calc(50% - 50vw);
+  z-index: -1;
+  width: 100vw;
+  height: 100%;
+  background-color: #fbfbfb;
+}
+
+.c13 {
+  width: 100%;
+  padding-right: 1.875rem;
+  padding-left: 1.865rem;
+  text-align: center;
+}
+
+@media (prefers-color-scheme:dark) {
+  .c5:focus-within::after,
+  .c5:focus::after {
+    border-color: rgba(0,125,250,0.6);
+  }
+}
+
+@media (prefers-color-scheme:dark) {
+  .c5 {
+    color: orchid;
+    fill: orchid;
+  }
+
+  .c5:hover {
+    color: #44aeff;
+    fill: #44aeff;
+  }
+}
+
+@media (prefers-color-scheme:dark) {
+
+}
+
+@media (prefers-color-scheme:dark) {
+
+}
+
+@media (prefers-color-scheme:dark) {
+  .c12 {
+    color: white;
+  }
+}
+
+@media (prefers-color-scheme:dark) {
+  .c11 {
+    background-color: #121313;
+  }
+}
+
 <div>
   <div
-    class="sc-dIfARi fTaCDP page-containerstyles__StyledPageContainer-sc-19l7k4-0"
+    class="page-containerstyles__StyledPageContainer-sc-19l7k4-0"
     width="default"
   >
     <div
-      class="sc-bqWxrE VcTDu"
+      class="c0"
     >
       <h1
-        class="sc-eDvSVe fsBEuM sc-jrcTuL ewlzmZ"
+        class="c1 c2"
       >
         Photography
       </h1>
     </div>
     <div
-      class="sc-csuSiG icikwB"
+      class="c3"
     >
       <style>
         .js .animated-content__wrapper--hidden {
@@ -25,28 +216,28 @@ exports[`<Photography /> should render correctly - index 1`] = `
 }
       </style>
       <div
-        class="sc-ipEyDJ hsNbKX animated-content__wrapper--hidden"
+        class="c4 animated-content__wrapper--hidden"
       >
         <div
-          class="photographystyles__LinkContainer-sc-a0s7o0-0 ffPdvo"
+          class=""
         >
           <a
             aria-label="Find me on Flickr (opens in a new tab)"
-            class="sc-gswNZR bbFtvE"
+            class="c5"
             href="https://www.flickr.com/people/georgegillams/"
             rel="noopener noreferrer"
             target="_blank"
           >
             <span
-              class="sc-ftTHYK cRFGYD"
+              class="c6"
             >
               Find me on Flickr
             </span>
             <div
-              class="sc-dkrFOg dOaeSw"
+              class="c7"
             >
               <svg
-                class="sc-bcXHqe cbaReT sc-hLBbgP eKXpFg"
+                class="c8 c9"
                 height="18"
                 viewBox="0 0 24 24"
                 width="18"
@@ -60,21 +251,21 @@ exports[`<Photography /> should render correctly - index 1`] = `
           </a>
           <a
             aria-label="Find me on Unsplash (opens in a new tab)"
-            class="sc-gswNZR bbFtvE"
+            class="c5"
             href="https://unsplash.com/@georgegillams"
             rel="noopener noreferrer"
             target="_blank"
           >
             <span
-              class="sc-ftTHYK cRFGYD"
+              class="c6"
             >
               Find me on Unsplash
             </span>
             <div
-              class="sc-dkrFOg dOaeSw"
+              class="c7"
             >
               <svg
-                class="sc-bcXHqe cbaReT sc-hLBbgP eKXpFg"
+                class="c8 c9"
                 height="18"
                 viewBox="0 0 24 24"
                 width="18"
@@ -88,21 +279,21 @@ exports[`<Photography /> should render correctly - index 1`] = `
           </a>
           <a
             aria-label="Find me on GuruShots (opens in a new tab)"
-            class="sc-gswNZR bbFtvE"
+            class="c5"
             href="https://gurushots.com/georgegillams/achievements"
             rel="noopener noreferrer"
             target="_blank"
           >
             <span
-              class="sc-ftTHYK cRFGYD"
+              class="c6"
             >
               Find me on GuruShots
             </span>
             <div
-              class="sc-dkrFOg dOaeSw"
+              class="c7"
             >
               <svg
-                class="sc-bcXHqe cbaReT sc-hLBbgP eKXpFg"
+                class="c8 c9"
                 height="18"
                 viewBox="0 0 24 24"
                 width="18"
@@ -114,21 +305,16 @@ exports[`<Photography /> should render correctly - index 1`] = `
               </svg>
             </div>
           </a>
-          <a
-            class="sc-gswNZR bbFtvE"
-            href="/contact"
+          <span
+            class="c6"
           >
-            <span
-              class="sc-ftTHYK cRFGYD"
-            >
-              Contact me about photography work
-            </span>
-          </a>
+            Contact me about photography work
+          </span>
         </div>
       </div>
     </div>
     <div
-      class="sc-csuSiG icikwB"
+      class="c3"
     >
       <style>
         .js .animated-content__wrapper--hidden {
@@ -137,14 +323,14 @@ exports[`<Photography /> should render correctly - index 1`] = `
 }
       </style>
       <div
-        class="sc-ipEyDJ hsNbKX animated-content__wrapper--hidden"
+        class="c4 animated-content__wrapper--hidden"
       >
         <div
-          class="sc-hHTYSt jkmwNj"
+          class=""
           style="width: 100%;"
         >
           <div
-            class="sc-dmctIk cOGJAF"
+            class=""
             style="margin-left: -0px;"
           />
         </div>
@@ -152,7 +338,7 @@ exports[`<Photography /> should render correctly - index 1`] = `
     </div>
   </div>
   <div
-    class="sc-csuSiG icikwB"
+    class="c3"
   >
     <style>
       .js .animated-content__wrapper--hidden {
@@ -160,45 +346,45 @@ exports[`<Photography /> should render correctly - index 1`] = `
 }
     </style>
     <div
-      class="sc-ipEyDJ hsNbKX animated-content__wrapper--hidden"
+      class="c4 animated-content__wrapper--hidden"
     >
       <div
-        class="creative-commonssyles__Wrapper-sc-qff226-0 eObJgx"
+        class="c10"
       >
         <div
-          class="creative-commonssyles__Background-sc-qff226-1 gREbZK"
+          class="c11"
         />
         <div
-          class="sc-fnGiBr cWeZey creative-commonssyles__Inner-sc-qff226-2 jkifKu"
+          class="c12 c13"
         >
           <h1
-            class="sc-gKPRtg jJVvWo sc-idXgbr bJsfvb"
+            class="c14 c15"
             id="copyright"
           >
             Copyright
           </h1>
           <span
-            class="sc-hBxehG jiKGja"
+            class="c16"
           >
             Most of my photos are licensed under
              
             <a
               aria-label="Creative Commons BY-SA 3.0 (opens in a new tab)"
-              class="sc-gswNZR bbFtvE"
+              class="c5"
               href="https://creativecommons.org/licenses/by-sa/3.0/"
               rel="noopener noreferrer"
               target="_blank"
             >
               <span
-                class="sc-ftTHYK cRFGYD"
+                class="c6"
               >
                 Creative Commons BY-SA 3.0
               </span>
               <div
-                class="sc-dkrFOg dOaeSw"
+                class="c7"
               >
                 <svg
-                  class="sc-bcXHqe cbaReT sc-hLBbgP eKXpFg"
+                  class="c8 c9"
                   height="18"
                   viewBox="0 0 24 24"
                   width="18"
@@ -213,16 +399,11 @@ exports[`<Photography /> should render correctly - index 1`] = `
             .
             <br />
             If you are unsure about your right to use them please 
-            <a
-              class="sc-gswNZR bbFtvE"
-              href="/contact"
+            <span
+              class="c6"
             >
-              <span
-                class="sc-ftTHYK cRFGYD"
-              >
-                contact me
-              </span>
-            </a>
+              contact me
+            </span>
             .
           </span>
         </div>
@@ -233,22 +414,213 @@ exports[`<Photography /> should render correctly - index 1`] = `
 `;
 
 exports[`<Photography /> should render correctly when loading 1`] = `
+.c8 {
+  width: 1.25rem;
+  height: 1.25rem;
+}
+
+.c5 {
+  display: inline-block;
+  border-radius: 0.25rem;
+  font-weight: bold;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  position: relative;
+  color: darkorchid;
+  fill: darkorchid;
+}
+
+.c5:focus-within,
+.c5:focus {
+  position: relative;
+  outline: none !important;
+}
+
+.c5:focus-within::after,
+.c5:focus::after {
+  position: absolute;
+  top: -0.35rem;
+  right: -0.35rem;
+  bottom: -0.35rem;
+  left: -0.35rem;
+  content: '';
+  display: block;
+  border: solid rgba(0,125,250,0.6) 0.2rem;
+  border-radius: 0.5rem;
+  pointer-events: none;
+}
+
+.c5:hover {
+  color: #44aeff;
+  fill: #44aeff;
+}
+
+.c7 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  width: 0.4rem;
+  height: 1rem;
+  margin-left: 0.55rem;
+}
+
+.c9 {
+  position: absolute;
+  width: 1rem;
+  height: 1rem;
+  margin-top: 0.12rem;
+  margin-left: -0.45rem;
+}
+
+.c1 {
+  margin: 0;
+  font-size: 2.4rem;
+  font-weight: bold;
+}
+
+.c14 {
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.c6 {
+  margin: 0;
+}
+
+.c2 {
+  margin: 2.3rem 0 0 0;
+}
+
+.c4 {
+  padding-top: 0;
+  opacity: 1;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+.c3 {
+  width: 100%;
+}
+
+.c0 {
+  -webkit-animation: bbwGtI 0.4s ease-in-out;
+  animation: bbwGtI 0.4s ease-in-out;
+}
+
+.c16 {
+  display: inline-block;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  line-height: 1.5;
+  margin-top: 2rem;
+}
+
+.c16:first-of-type {
+  margin-top: 0.86rem;
+}
+
+.c12 {
+  width: 100%;
+  color: #1e1e1e;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c15 {
+  margin: 2.13rem 0 0 0;
+}
+
+.c10 {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  margin-top: 2rem;
+  margin-left: 0;
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.c11 {
+  position: absolute;
+  top: 0;
+  left: calc(50% - 50vw);
+  z-index: -1;
+  width: 100vw;
+  height: 100%;
+  background-color: #fbfbfb;
+}
+
+.c13 {
+  width: 100%;
+  padding-right: 1.875rem;
+  padding-left: 1.865rem;
+  text-align: center;
+}
+
+@media (prefers-color-scheme:dark) {
+  .c5:focus-within::after,
+  .c5:focus::after {
+    border-color: rgba(0,125,250,0.6);
+  }
+}
+
+@media (prefers-color-scheme:dark) {
+  .c5 {
+    color: orchid;
+    fill: orchid;
+  }
+
+  .c5:hover {
+    color: #44aeff;
+    fill: #44aeff;
+  }
+}
+
+@media (prefers-color-scheme:dark) {
+
+}
+
+@media (prefers-color-scheme:dark) {
+
+}
+
+@media (prefers-color-scheme:dark) {
+  .c12 {
+    color: white;
+  }
+}
+
+@media (prefers-color-scheme:dark) {
+  .c11 {
+    background-color: #121313;
+  }
+}
+
 <div>
   <div
-    class="sc-dIfARi fTaCDP page-containerstyles__StyledPageContainer-sc-19l7k4-0"
+    class="page-containerstyles__StyledPageContainer-sc-19l7k4-0"
     width="default"
   >
     <div
-      class="sc-bqWxrE VcTDu"
+      class="c0"
     >
       <h1
-        class="sc-eDvSVe fsBEuM sc-jrcTuL ewlzmZ"
+        class="c1 c2"
       >
         Photography
       </h1>
     </div>
     <div
-      class="sc-csuSiG icikwB"
+      class="c3"
     >
       <style>
         .js .animated-content__wrapper--hidden {
@@ -257,28 +629,28 @@ exports[`<Photography /> should render correctly when loading 1`] = `
 }
       </style>
       <div
-        class="sc-ipEyDJ hsNbKX animated-content__wrapper--hidden"
+        class="c4 animated-content__wrapper--hidden"
       >
         <div
-          class="photographystyles__LinkContainer-sc-a0s7o0-0 ffPdvo"
+          class=""
         >
           <a
             aria-label="Find me on Flickr (opens in a new tab)"
-            class="sc-gswNZR bbFtvE"
+            class="c5"
             href="https://www.flickr.com/people/georgegillams/"
             rel="noopener noreferrer"
             target="_blank"
           >
             <span
-              class="sc-ftTHYK cRFGYD"
+              class="c6"
             >
               Find me on Flickr
             </span>
             <div
-              class="sc-dkrFOg dOaeSw"
+              class="c7"
             >
               <svg
-                class="sc-bcXHqe cbaReT sc-hLBbgP eKXpFg"
+                class="c8 c9"
                 height="18"
                 viewBox="0 0 24 24"
                 width="18"
@@ -292,21 +664,21 @@ exports[`<Photography /> should render correctly when loading 1`] = `
           </a>
           <a
             aria-label="Find me on Unsplash (opens in a new tab)"
-            class="sc-gswNZR bbFtvE"
+            class="c5"
             href="https://unsplash.com/@georgegillams"
             rel="noopener noreferrer"
             target="_blank"
           >
             <span
-              class="sc-ftTHYK cRFGYD"
+              class="c6"
             >
               Find me on Unsplash
             </span>
             <div
-              class="sc-dkrFOg dOaeSw"
+              class="c7"
             >
               <svg
-                class="sc-bcXHqe cbaReT sc-hLBbgP eKXpFg"
+                class="c8 c9"
                 height="18"
                 viewBox="0 0 24 24"
                 width="18"
@@ -320,21 +692,21 @@ exports[`<Photography /> should render correctly when loading 1`] = `
           </a>
           <a
             aria-label="Find me on GuruShots (opens in a new tab)"
-            class="sc-gswNZR bbFtvE"
+            class="c5"
             href="https://gurushots.com/georgegillams/achievements"
             rel="noopener noreferrer"
             target="_blank"
           >
             <span
-              class="sc-ftTHYK cRFGYD"
+              class="c6"
             >
               Find me on GuruShots
             </span>
             <div
-              class="sc-dkrFOg dOaeSw"
+              class="c7"
             >
               <svg
-                class="sc-bcXHqe cbaReT sc-hLBbgP eKXpFg"
+                class="c8 c9"
                 height="18"
                 viewBox="0 0 24 24"
                 width="18"
@@ -346,21 +718,16 @@ exports[`<Photography /> should render correctly when loading 1`] = `
               </svg>
             </div>
           </a>
-          <a
-            class="sc-gswNZR bbFtvE"
-            href="/contact"
+          <span
+            class="c6"
           >
-            <span
-              class="sc-ftTHYK cRFGYD"
-            >
-              Contact me about photography work
-            </span>
-          </a>
+            Contact me about photography work
+          </span>
         </div>
       </div>
     </div>
     <div
-      class="sc-csuSiG icikwB"
+      class="c3"
     >
       <style>
         .js .animated-content__wrapper--hidden {
@@ -369,14 +736,14 @@ exports[`<Photography /> should render correctly when loading 1`] = `
 }
       </style>
       <div
-        class="sc-ipEyDJ hsNbKX animated-content__wrapper--hidden"
+        class="c4 animated-content__wrapper--hidden"
       >
         <div
-          class="sc-hHTYSt jkmwNj"
+          class=""
           style="width: 100%;"
         >
           <div
-            class="sc-dmctIk cOGJAF"
+            class=""
             style="margin-left: -0px;"
           />
         </div>
@@ -384,7 +751,7 @@ exports[`<Photography /> should render correctly when loading 1`] = `
     </div>
   </div>
   <div
-    class="sc-csuSiG icikwB"
+    class="c3"
   >
     <style>
       .js .animated-content__wrapper--hidden {
@@ -392,45 +759,45 @@ exports[`<Photography /> should render correctly when loading 1`] = `
 }
     </style>
     <div
-      class="sc-ipEyDJ hsNbKX animated-content__wrapper--hidden"
+      class="c4 animated-content__wrapper--hidden"
     >
       <div
-        class="creative-commonssyles__Wrapper-sc-qff226-0 eObJgx"
+        class="c10"
       >
         <div
-          class="creative-commonssyles__Background-sc-qff226-1 gREbZK"
+          class="c11"
         />
         <div
-          class="sc-fnGiBr cWeZey creative-commonssyles__Inner-sc-qff226-2 jkifKu"
+          class="c12 c13"
         >
           <h1
-            class="sc-gKPRtg jJVvWo sc-idXgbr bJsfvb"
+            class="c14 c15"
             id="copyright"
           >
             Copyright
           </h1>
           <span
-            class="sc-hBxehG jiKGja"
+            class="c16"
           >
             Most of my photos are licensed under
              
             <a
               aria-label="Creative Commons BY-SA 3.0 (opens in a new tab)"
-              class="sc-gswNZR bbFtvE"
+              class="c5"
               href="https://creativecommons.org/licenses/by-sa/3.0/"
               rel="noopener noreferrer"
               target="_blank"
             >
               <span
-                class="sc-ftTHYK cRFGYD"
+                class="c6"
               >
                 Creative Commons BY-SA 3.0
               </span>
               <div
-                class="sc-dkrFOg dOaeSw"
+                class="c7"
               >
                 <svg
-                  class="sc-bcXHqe cbaReT sc-hLBbgP eKXpFg"
+                  class="c8 c9"
                   height="18"
                   viewBox="0 0 24 24"
                   width="18"
@@ -445,16 +812,11 @@ exports[`<Photography /> should render correctly when loading 1`] = `
             .
             <br />
             If you are unsure about your right to use them please 
-            <a
-              class="sc-gswNZR bbFtvE"
-              href="/contact"
+            <span
+              class="c6"
             >
-              <span
-                class="sc-ftTHYK cRFGYD"
-              >
-                contact me
-              </span>
-            </a>
+              contact me
+            </span>
             .
           </span>
         </div>
@@ -465,22 +827,213 @@ exports[`<Photography /> should render correctly when loading 1`] = `
 `;
 
 exports[`<Photography /> should render correctly with initial state 1`] = `
+.c8 {
+  width: 1.25rem;
+  height: 1.25rem;
+}
+
+.c5 {
+  display: inline-block;
+  border-radius: 0.25rem;
+  font-weight: bold;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  position: relative;
+  color: darkorchid;
+  fill: darkorchid;
+}
+
+.c5:focus-within,
+.c5:focus {
+  position: relative;
+  outline: none !important;
+}
+
+.c5:focus-within::after,
+.c5:focus::after {
+  position: absolute;
+  top: -0.35rem;
+  right: -0.35rem;
+  bottom: -0.35rem;
+  left: -0.35rem;
+  content: '';
+  display: block;
+  border: solid rgba(0,125,250,0.6) 0.2rem;
+  border-radius: 0.5rem;
+  pointer-events: none;
+}
+
+.c5:hover {
+  color: #44aeff;
+  fill: #44aeff;
+}
+
+.c7 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  width: 0.4rem;
+  height: 1rem;
+  margin-left: 0.55rem;
+}
+
+.c9 {
+  position: absolute;
+  width: 1rem;
+  height: 1rem;
+  margin-top: 0.12rem;
+  margin-left: -0.45rem;
+}
+
+.c1 {
+  margin: 0;
+  font-size: 2.4rem;
+  font-weight: bold;
+}
+
+.c14 {
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.c6 {
+  margin: 0;
+}
+
+.c2 {
+  margin: 2.3rem 0 0 0;
+}
+
+.c4 {
+  padding-top: 0;
+  opacity: 1;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+.c3 {
+  width: 100%;
+}
+
+.c0 {
+  -webkit-animation: bbwGtI 0.4s ease-in-out;
+  animation: bbwGtI 0.4s ease-in-out;
+}
+
+.c16 {
+  display: inline-block;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  line-height: 1.5;
+  margin-top: 2rem;
+}
+
+.c16:first-of-type {
+  margin-top: 0.86rem;
+}
+
+.c12 {
+  width: 100%;
+  color: #1e1e1e;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c15 {
+  margin: 2.13rem 0 0 0;
+}
+
+.c10 {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  margin-top: 2rem;
+  margin-left: 0;
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.c11 {
+  position: absolute;
+  top: 0;
+  left: calc(50% - 50vw);
+  z-index: -1;
+  width: 100vw;
+  height: 100%;
+  background-color: #fbfbfb;
+}
+
+.c13 {
+  width: 100%;
+  padding-right: 1.875rem;
+  padding-left: 1.865rem;
+  text-align: center;
+}
+
+@media (prefers-color-scheme:dark) {
+  .c5:focus-within::after,
+  .c5:focus::after {
+    border-color: rgba(0,125,250,0.6);
+  }
+}
+
+@media (prefers-color-scheme:dark) {
+  .c5 {
+    color: orchid;
+    fill: orchid;
+  }
+
+  .c5:hover {
+    color: #44aeff;
+    fill: #44aeff;
+  }
+}
+
+@media (prefers-color-scheme:dark) {
+
+}
+
+@media (prefers-color-scheme:dark) {
+
+}
+
+@media (prefers-color-scheme:dark) {
+  .c12 {
+    color: white;
+  }
+}
+
+@media (prefers-color-scheme:dark) {
+  .c11 {
+    background-color: #121313;
+  }
+}
+
 <div>
   <div
-    class="sc-dIfARi fTaCDP page-containerstyles__StyledPageContainer-sc-19l7k4-0"
+    class="page-containerstyles__StyledPageContainer-sc-19l7k4-0"
     width="default"
   >
     <div
-      class="sc-bqWxrE VcTDu"
+      class="c0"
     >
       <h1
-        class="sc-eDvSVe fsBEuM sc-jrcTuL ewlzmZ"
+        class="c1 c2"
       >
         Photography
       </h1>
     </div>
     <div
-      class="sc-csuSiG icikwB"
+      class="c3"
     >
       <style>
         .js .animated-content__wrapper--hidden {
@@ -489,28 +1042,28 @@ exports[`<Photography /> should render correctly with initial state 1`] = `
 }
       </style>
       <div
-        class="sc-ipEyDJ hsNbKX animated-content__wrapper--hidden"
+        class="c4 animated-content__wrapper--hidden"
       >
         <div
-          class="photographystyles__LinkContainer-sc-a0s7o0-0 ffPdvo"
+          class=""
         >
           <a
             aria-label="Find me on Flickr (opens in a new tab)"
-            class="sc-gswNZR bbFtvE"
+            class="c5"
             href="https://www.flickr.com/people/georgegillams/"
             rel="noopener noreferrer"
             target="_blank"
           >
             <span
-              class="sc-ftTHYK cRFGYD"
+              class="c6"
             >
               Find me on Flickr
             </span>
             <div
-              class="sc-dkrFOg dOaeSw"
+              class="c7"
             >
               <svg
-                class="sc-bcXHqe cbaReT sc-hLBbgP eKXpFg"
+                class="c8 c9"
                 height="18"
                 viewBox="0 0 24 24"
                 width="18"
@@ -524,21 +1077,21 @@ exports[`<Photography /> should render correctly with initial state 1`] = `
           </a>
           <a
             aria-label="Find me on Unsplash (opens in a new tab)"
-            class="sc-gswNZR bbFtvE"
+            class="c5"
             href="https://unsplash.com/@georgegillams"
             rel="noopener noreferrer"
             target="_blank"
           >
             <span
-              class="sc-ftTHYK cRFGYD"
+              class="c6"
             >
               Find me on Unsplash
             </span>
             <div
-              class="sc-dkrFOg dOaeSw"
+              class="c7"
             >
               <svg
-                class="sc-bcXHqe cbaReT sc-hLBbgP eKXpFg"
+                class="c8 c9"
                 height="18"
                 viewBox="0 0 24 24"
                 width="18"
@@ -552,21 +1105,21 @@ exports[`<Photography /> should render correctly with initial state 1`] = `
           </a>
           <a
             aria-label="Find me on GuruShots (opens in a new tab)"
-            class="sc-gswNZR bbFtvE"
+            class="c5"
             href="https://gurushots.com/georgegillams/achievements"
             rel="noopener noreferrer"
             target="_blank"
           >
             <span
-              class="sc-ftTHYK cRFGYD"
+              class="c6"
             >
               Find me on GuruShots
             </span>
             <div
-              class="sc-dkrFOg dOaeSw"
+              class="c7"
             >
               <svg
-                class="sc-bcXHqe cbaReT sc-hLBbgP eKXpFg"
+                class="c8 c9"
                 height="18"
                 viewBox="0 0 24 24"
                 width="18"
@@ -578,21 +1131,16 @@ exports[`<Photography /> should render correctly with initial state 1`] = `
               </svg>
             </div>
           </a>
-          <a
-            class="sc-gswNZR bbFtvE"
-            href="/contact"
+          <span
+            class="c6"
           >
-            <span
-              class="sc-ftTHYK cRFGYD"
-            >
-              Contact me about photography work
-            </span>
-          </a>
+            Contact me about photography work
+          </span>
         </div>
       </div>
     </div>
     <div
-      class="sc-csuSiG icikwB"
+      class="c3"
     >
       <style>
         .js .animated-content__wrapper--hidden {
@@ -601,14 +1149,14 @@ exports[`<Photography /> should render correctly with initial state 1`] = `
 }
       </style>
       <div
-        class="sc-ipEyDJ hsNbKX animated-content__wrapper--hidden"
+        class="c4 animated-content__wrapper--hidden"
       >
         <div
-          class="sc-hHTYSt jkmwNj"
+          class=""
           style="width: 100%;"
         >
           <div
-            class="sc-dmctIk cOGJAF"
+            class=""
             style="margin-left: -0px;"
           />
         </div>
@@ -616,7 +1164,7 @@ exports[`<Photography /> should render correctly with initial state 1`] = `
     </div>
   </div>
   <div
-    class="sc-csuSiG icikwB"
+    class="c3"
   >
     <style>
       .js .animated-content__wrapper--hidden {
@@ -624,45 +1172,45 @@ exports[`<Photography /> should render correctly with initial state 1`] = `
 }
     </style>
     <div
-      class="sc-ipEyDJ hsNbKX animated-content__wrapper--hidden"
+      class="c4 animated-content__wrapper--hidden"
     >
       <div
-        class="creative-commonssyles__Wrapper-sc-qff226-0 eObJgx"
+        class="c10"
       >
         <div
-          class="creative-commonssyles__Background-sc-qff226-1 gREbZK"
+          class="c11"
         />
         <div
-          class="sc-fnGiBr cWeZey creative-commonssyles__Inner-sc-qff226-2 jkifKu"
+          class="c12 c13"
         >
           <h1
-            class="sc-gKPRtg jJVvWo sc-idXgbr bJsfvb"
+            class="c14 c15"
             id="copyright"
           >
             Copyright
           </h1>
           <span
-            class="sc-hBxehG jiKGja"
+            class="c16"
           >
             Most of my photos are licensed under
              
             <a
               aria-label="Creative Commons BY-SA 3.0 (opens in a new tab)"
-              class="sc-gswNZR bbFtvE"
+              class="c5"
               href="https://creativecommons.org/licenses/by-sa/3.0/"
               rel="noopener noreferrer"
               target="_blank"
             >
               <span
-                class="sc-ftTHYK cRFGYD"
+                class="c6"
               >
                 Creative Commons BY-SA 3.0
               </span>
               <div
-                class="sc-dkrFOg dOaeSw"
+                class="c7"
               >
                 <svg
-                  class="sc-bcXHqe cbaReT sc-hLBbgP eKXpFg"
+                  class="c8 c9"
                   height="18"
                   viewBox="0 0 24 24"
                   width="18"
@@ -677,16 +1225,11 @@ exports[`<Photography /> should render correctly with initial state 1`] = `
             .
             <br />
             If you are unsure about your right to use them please 
-            <a
-              class="sc-gswNZR bbFtvE"
-              href="/contact"
+            <span
+              class="c6"
             >
-              <span
-                class="sc-ftTHYK cRFGYD"
-              >
-                contact me
-              </span>
-            </a>
+              contact me
+            </span>
             .
           </span>
         </div>
@@ -697,22 +1240,213 @@ exports[`<Photography /> should render correctly with initial state 1`] = `
 `;
 
 exports[`<Photography /> should render correctly with loadError 1`] = `
+.c8 {
+  width: 1.25rem;
+  height: 1.25rem;
+}
+
+.c5 {
+  display: inline-block;
+  border-radius: 0.25rem;
+  font-weight: bold;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  position: relative;
+  color: darkorchid;
+  fill: darkorchid;
+}
+
+.c5:focus-within,
+.c5:focus {
+  position: relative;
+  outline: none !important;
+}
+
+.c5:focus-within::after,
+.c5:focus::after {
+  position: absolute;
+  top: -0.35rem;
+  right: -0.35rem;
+  bottom: -0.35rem;
+  left: -0.35rem;
+  content: '';
+  display: block;
+  border: solid rgba(0,125,250,0.6) 0.2rem;
+  border-radius: 0.5rem;
+  pointer-events: none;
+}
+
+.c5:hover {
+  color: #44aeff;
+  fill: #44aeff;
+}
+
+.c7 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  width: 0.4rem;
+  height: 1rem;
+  margin-left: 0.55rem;
+}
+
+.c9 {
+  position: absolute;
+  width: 1rem;
+  height: 1rem;
+  margin-top: 0.12rem;
+  margin-left: -0.45rem;
+}
+
+.c1 {
+  margin: 0;
+  font-size: 2.4rem;
+  font-weight: bold;
+}
+
+.c14 {
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.c6 {
+  margin: 0;
+}
+
+.c2 {
+  margin: 2.3rem 0 0 0;
+}
+
+.c4 {
+  padding-top: 0;
+  opacity: 1;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+.c3 {
+  width: 100%;
+}
+
+.c0 {
+  -webkit-animation: bbwGtI 0.4s ease-in-out;
+  animation: bbwGtI 0.4s ease-in-out;
+}
+
+.c16 {
+  display: inline-block;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  line-height: 1.5;
+  margin-top: 2rem;
+}
+
+.c16:first-of-type {
+  margin-top: 0.86rem;
+}
+
+.c12 {
+  width: 100%;
+  color: #1e1e1e;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c15 {
+  margin: 2.13rem 0 0 0;
+}
+
+.c10 {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  margin-top: 2rem;
+  margin-left: 0;
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.c11 {
+  position: absolute;
+  top: 0;
+  left: calc(50% - 50vw);
+  z-index: -1;
+  width: 100vw;
+  height: 100%;
+  background-color: #fbfbfb;
+}
+
+.c13 {
+  width: 100%;
+  padding-right: 1.875rem;
+  padding-left: 1.865rem;
+  text-align: center;
+}
+
+@media (prefers-color-scheme:dark) {
+  .c5:focus-within::after,
+  .c5:focus::after {
+    border-color: rgba(0,125,250,0.6);
+  }
+}
+
+@media (prefers-color-scheme:dark) {
+  .c5 {
+    color: orchid;
+    fill: orchid;
+  }
+
+  .c5:hover {
+    color: #44aeff;
+    fill: #44aeff;
+  }
+}
+
+@media (prefers-color-scheme:dark) {
+
+}
+
+@media (prefers-color-scheme:dark) {
+
+}
+
+@media (prefers-color-scheme:dark) {
+  .c12 {
+    color: white;
+  }
+}
+
+@media (prefers-color-scheme:dark) {
+  .c11 {
+    background-color: #121313;
+  }
+}
+
 <div>
   <div
-    class="sc-dIfARi fTaCDP page-containerstyles__StyledPageContainer-sc-19l7k4-0"
+    class="page-containerstyles__StyledPageContainer-sc-19l7k4-0"
     width="default"
   >
     <div
-      class="sc-bqWxrE VcTDu"
+      class="c0"
     >
       <h1
-        class="sc-eDvSVe fsBEuM sc-jrcTuL ewlzmZ"
+        class="c1 c2"
       >
         Photography
       </h1>
     </div>
     <div
-      class="sc-csuSiG icikwB"
+      class="c3"
     >
       <style>
         .js .animated-content__wrapper--hidden {
@@ -721,28 +1455,28 @@ exports[`<Photography /> should render correctly with loadError 1`] = `
 }
       </style>
       <div
-        class="sc-ipEyDJ hsNbKX animated-content__wrapper--hidden"
+        class="c4 animated-content__wrapper--hidden"
       >
         <div
-          class="photographystyles__LinkContainer-sc-a0s7o0-0 ffPdvo"
+          class=""
         >
           <a
             aria-label="Find me on Flickr (opens in a new tab)"
-            class="sc-gswNZR bbFtvE"
+            class="c5"
             href="https://www.flickr.com/people/georgegillams/"
             rel="noopener noreferrer"
             target="_blank"
           >
             <span
-              class="sc-ftTHYK cRFGYD"
+              class="c6"
             >
               Find me on Flickr
             </span>
             <div
-              class="sc-dkrFOg dOaeSw"
+              class="c7"
             >
               <svg
-                class="sc-bcXHqe cbaReT sc-hLBbgP eKXpFg"
+                class="c8 c9"
                 height="18"
                 viewBox="0 0 24 24"
                 width="18"
@@ -756,21 +1490,21 @@ exports[`<Photography /> should render correctly with loadError 1`] = `
           </a>
           <a
             aria-label="Find me on Unsplash (opens in a new tab)"
-            class="sc-gswNZR bbFtvE"
+            class="c5"
             href="https://unsplash.com/@georgegillams"
             rel="noopener noreferrer"
             target="_blank"
           >
             <span
-              class="sc-ftTHYK cRFGYD"
+              class="c6"
             >
               Find me on Unsplash
             </span>
             <div
-              class="sc-dkrFOg dOaeSw"
+              class="c7"
             >
               <svg
-                class="sc-bcXHqe cbaReT sc-hLBbgP eKXpFg"
+                class="c8 c9"
                 height="18"
                 viewBox="0 0 24 24"
                 width="18"
@@ -784,21 +1518,21 @@ exports[`<Photography /> should render correctly with loadError 1`] = `
           </a>
           <a
             aria-label="Find me on GuruShots (opens in a new tab)"
-            class="sc-gswNZR bbFtvE"
+            class="c5"
             href="https://gurushots.com/georgegillams/achievements"
             rel="noopener noreferrer"
             target="_blank"
           >
             <span
-              class="sc-ftTHYK cRFGYD"
+              class="c6"
             >
               Find me on GuruShots
             </span>
             <div
-              class="sc-dkrFOg dOaeSw"
+              class="c7"
             >
               <svg
-                class="sc-bcXHqe cbaReT sc-hLBbgP eKXpFg"
+                class="c8 c9"
                 height="18"
                 viewBox="0 0 24 24"
                 width="18"
@@ -810,21 +1544,16 @@ exports[`<Photography /> should render correctly with loadError 1`] = `
               </svg>
             </div>
           </a>
-          <a
-            class="sc-gswNZR bbFtvE"
-            href="/contact"
+          <span
+            class="c6"
           >
-            <span
-              class="sc-ftTHYK cRFGYD"
-            >
-              Contact me about photography work
-            </span>
-          </a>
+            Contact me about photography work
+          </span>
         </div>
       </div>
     </div>
     <div
-      class="sc-csuSiG icikwB"
+      class="c3"
     >
       <style>
         .js .animated-content__wrapper--hidden {
@@ -833,14 +1562,14 @@ exports[`<Photography /> should render correctly with loadError 1`] = `
 }
       </style>
       <div
-        class="sc-ipEyDJ hsNbKX animated-content__wrapper--hidden"
+        class="c4 animated-content__wrapper--hidden"
       >
         <div
-          class="sc-hHTYSt jkmwNj"
+          class=""
           style="width: 100%;"
         >
           <div
-            class="sc-dmctIk cOGJAF"
+            class=""
             style="margin-left: -0px;"
           />
         </div>
@@ -848,7 +1577,7 @@ exports[`<Photography /> should render correctly with loadError 1`] = `
     </div>
   </div>
   <div
-    class="sc-csuSiG icikwB"
+    class="c3"
   >
     <style>
       .js .animated-content__wrapper--hidden {
@@ -856,45 +1585,45 @@ exports[`<Photography /> should render correctly with loadError 1`] = `
 }
     </style>
     <div
-      class="sc-ipEyDJ hsNbKX animated-content__wrapper--hidden"
+      class="c4 animated-content__wrapper--hidden"
     >
       <div
-        class="creative-commonssyles__Wrapper-sc-qff226-0 eObJgx"
+        class="c10"
       >
         <div
-          class="creative-commonssyles__Background-sc-qff226-1 gREbZK"
+          class="c11"
         />
         <div
-          class="sc-fnGiBr cWeZey creative-commonssyles__Inner-sc-qff226-2 jkifKu"
+          class="c12 c13"
         >
           <h1
-            class="sc-gKPRtg jJVvWo sc-idXgbr bJsfvb"
+            class="c14 c15"
             id="copyright"
           >
             Copyright
           </h1>
           <span
-            class="sc-hBxehG jiKGja"
+            class="c16"
           >
             Most of my photos are licensed under
              
             <a
               aria-label="Creative Commons BY-SA 3.0 (opens in a new tab)"
-              class="sc-gswNZR bbFtvE"
+              class="c5"
               href="https://creativecommons.org/licenses/by-sa/3.0/"
               rel="noopener noreferrer"
               target="_blank"
             >
               <span
-                class="sc-ftTHYK cRFGYD"
+                class="c6"
               >
                 Creative Commons BY-SA 3.0
               </span>
               <div
-                class="sc-dkrFOg dOaeSw"
+                class="c7"
               >
                 <svg
-                  class="sc-bcXHqe cbaReT sc-hLBbgP eKXpFg"
+                  class="c8 c9"
                   height="18"
                   viewBox="0 0 24 24"
                   width="18"
@@ -909,16 +1638,11 @@ exports[`<Photography /> should render correctly with loadError 1`] = `
             .
             <br />
             If you are unsure about your right to use them please 
-            <a
-              class="sc-gswNZR bbFtvE"
-              href="/contact"
+            <span
+              class="c6"
             >
-              <span
-                class="sc-ftTHYK cRFGYD"
-              >
-                contact me
-              </span>
-            </a>
+              contact me
+            </span>
             .
           </span>
         </div>
@@ -929,22 +1653,213 @@ exports[`<Photography /> should render correctly with loadError 1`] = `
 `;
 
 exports[`<Photography /> should render correctly with photos 1`] = `
+.c8 {
+  width: 1.25rem;
+  height: 1.25rem;
+}
+
+.c5 {
+  display: inline-block;
+  border-radius: 0.25rem;
+  font-weight: bold;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  position: relative;
+  color: darkorchid;
+  fill: darkorchid;
+}
+
+.c5:focus-within,
+.c5:focus {
+  position: relative;
+  outline: none !important;
+}
+
+.c5:focus-within::after,
+.c5:focus::after {
+  position: absolute;
+  top: -0.35rem;
+  right: -0.35rem;
+  bottom: -0.35rem;
+  left: -0.35rem;
+  content: '';
+  display: block;
+  border: solid rgba(0,125,250,0.6) 0.2rem;
+  border-radius: 0.5rem;
+  pointer-events: none;
+}
+
+.c5:hover {
+  color: #44aeff;
+  fill: #44aeff;
+}
+
+.c7 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  width: 0.4rem;
+  height: 1rem;
+  margin-left: 0.55rem;
+}
+
+.c9 {
+  position: absolute;
+  width: 1rem;
+  height: 1rem;
+  margin-top: 0.12rem;
+  margin-left: -0.45rem;
+}
+
+.c1 {
+  margin: 0;
+  font-size: 2.4rem;
+  font-weight: bold;
+}
+
+.c14 {
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.c6 {
+  margin: 0;
+}
+
+.c2 {
+  margin: 2.3rem 0 0 0;
+}
+
+.c4 {
+  padding-top: 0;
+  opacity: 1;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+.c3 {
+  width: 100%;
+}
+
+.c0 {
+  -webkit-animation: bbwGtI 0.4s ease-in-out;
+  animation: bbwGtI 0.4s ease-in-out;
+}
+
+.c16 {
+  display: inline-block;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  line-height: 1.5;
+  margin-top: 2rem;
+}
+
+.c16:first-of-type {
+  margin-top: 0.86rem;
+}
+
+.c12 {
+  width: 100%;
+  color: #1e1e1e;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c15 {
+  margin: 2.13rem 0 0 0;
+}
+
+.c10 {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  margin-top: 2rem;
+  margin-left: 0;
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.c11 {
+  position: absolute;
+  top: 0;
+  left: calc(50% - 50vw);
+  z-index: -1;
+  width: 100vw;
+  height: 100%;
+  background-color: #fbfbfb;
+}
+
+.c13 {
+  width: 100%;
+  padding-right: 1.875rem;
+  padding-left: 1.865rem;
+  text-align: center;
+}
+
+@media (prefers-color-scheme:dark) {
+  .c5:focus-within::after,
+  .c5:focus::after {
+    border-color: rgba(0,125,250,0.6);
+  }
+}
+
+@media (prefers-color-scheme:dark) {
+  .c5 {
+    color: orchid;
+    fill: orchid;
+  }
+
+  .c5:hover {
+    color: #44aeff;
+    fill: #44aeff;
+  }
+}
+
+@media (prefers-color-scheme:dark) {
+
+}
+
+@media (prefers-color-scheme:dark) {
+
+}
+
+@media (prefers-color-scheme:dark) {
+  .c12 {
+    color: white;
+  }
+}
+
+@media (prefers-color-scheme:dark) {
+  .c11 {
+    background-color: #121313;
+  }
+}
+
 <div>
   <div
-    class="sc-dIfARi fTaCDP page-containerstyles__StyledPageContainer-sc-19l7k4-0"
+    class="page-containerstyles__StyledPageContainer-sc-19l7k4-0"
     width="default"
   >
     <div
-      class="sc-bqWxrE VcTDu"
+      class="c0"
     >
       <h1
-        class="sc-eDvSVe fsBEuM sc-jrcTuL ewlzmZ"
+        class="c1 c2"
       >
         Photography
       </h1>
     </div>
     <div
-      class="sc-csuSiG icikwB"
+      class="c3"
     >
       <style>
         .js .animated-content__wrapper--hidden {
@@ -953,28 +1868,28 @@ exports[`<Photography /> should render correctly with photos 1`] = `
 }
       </style>
       <div
-        class="sc-ipEyDJ hsNbKX animated-content__wrapper--hidden"
+        class="c4 animated-content__wrapper--hidden"
       >
         <div
-          class="photographystyles__LinkContainer-sc-a0s7o0-0 ffPdvo"
+          class=""
         >
           <a
             aria-label="Find me on Flickr (opens in a new tab)"
-            class="sc-gswNZR bbFtvE"
+            class="c5"
             href="https://www.flickr.com/people/georgegillams/"
             rel="noopener noreferrer"
             target="_blank"
           >
             <span
-              class="sc-ftTHYK cRFGYD"
+              class="c6"
             >
               Find me on Flickr
             </span>
             <div
-              class="sc-dkrFOg dOaeSw"
+              class="c7"
             >
               <svg
-                class="sc-bcXHqe cbaReT sc-hLBbgP eKXpFg"
+                class="c8 c9"
                 height="18"
                 viewBox="0 0 24 24"
                 width="18"
@@ -988,21 +1903,21 @@ exports[`<Photography /> should render correctly with photos 1`] = `
           </a>
           <a
             aria-label="Find me on Unsplash (opens in a new tab)"
-            class="sc-gswNZR bbFtvE"
+            class="c5"
             href="https://unsplash.com/@georgegillams"
             rel="noopener noreferrer"
             target="_blank"
           >
             <span
-              class="sc-ftTHYK cRFGYD"
+              class="c6"
             >
               Find me on Unsplash
             </span>
             <div
-              class="sc-dkrFOg dOaeSw"
+              class="c7"
             >
               <svg
-                class="sc-bcXHqe cbaReT sc-hLBbgP eKXpFg"
+                class="c8 c9"
                 height="18"
                 viewBox="0 0 24 24"
                 width="18"
@@ -1016,21 +1931,21 @@ exports[`<Photography /> should render correctly with photos 1`] = `
           </a>
           <a
             aria-label="Find me on GuruShots (opens in a new tab)"
-            class="sc-gswNZR bbFtvE"
+            class="c5"
             href="https://gurushots.com/georgegillams/achievements"
             rel="noopener noreferrer"
             target="_blank"
           >
             <span
-              class="sc-ftTHYK cRFGYD"
+              class="c6"
             >
               Find me on GuruShots
             </span>
             <div
-              class="sc-dkrFOg dOaeSw"
+              class="c7"
             >
               <svg
-                class="sc-bcXHqe cbaReT sc-hLBbgP eKXpFg"
+                class="c8 c9"
                 height="18"
                 viewBox="0 0 24 24"
                 width="18"
@@ -1042,21 +1957,16 @@ exports[`<Photography /> should render correctly with photos 1`] = `
               </svg>
             </div>
           </a>
-          <a
-            class="sc-gswNZR bbFtvE"
-            href="/contact"
+          <span
+            class="c6"
           >
-            <span
-              class="sc-ftTHYK cRFGYD"
-            >
-              Contact me about photography work
-            </span>
-          </a>
+            Contact me about photography work
+          </span>
         </div>
       </div>
     </div>
     <div
-      class="sc-csuSiG icikwB"
+      class="c3"
     >
       <style>
         .js .animated-content__wrapper--hidden {
@@ -1065,14 +1975,14 @@ exports[`<Photography /> should render correctly with photos 1`] = `
 }
       </style>
       <div
-        class="sc-ipEyDJ hsNbKX animated-content__wrapper--hidden"
+        class="c4 animated-content__wrapper--hidden"
       >
         <div
-          class="sc-hHTYSt jkmwNj"
+          class=""
           style="width: 100%;"
         >
           <div
-            class="sc-dmctIk cOGJAF"
+            class=""
             style="margin-left: -0px;"
           />
         </div>
@@ -1080,7 +1990,7 @@ exports[`<Photography /> should render correctly with photos 1`] = `
     </div>
   </div>
   <div
-    class="sc-csuSiG icikwB"
+    class="c3"
   >
     <style>
       .js .animated-content__wrapper--hidden {
@@ -1088,45 +1998,45 @@ exports[`<Photography /> should render correctly with photos 1`] = `
 }
     </style>
     <div
-      class="sc-ipEyDJ hsNbKX animated-content__wrapper--hidden"
+      class="c4 animated-content__wrapper--hidden"
     >
       <div
-        class="creative-commonssyles__Wrapper-sc-qff226-0 eObJgx"
+        class="c10"
       >
         <div
-          class="creative-commonssyles__Background-sc-qff226-1 gREbZK"
+          class="c11"
         />
         <div
-          class="sc-fnGiBr cWeZey creative-commonssyles__Inner-sc-qff226-2 jkifKu"
+          class="c12 c13"
         >
           <h1
-            class="sc-gKPRtg jJVvWo sc-idXgbr bJsfvb"
+            class="c14 c15"
             id="copyright"
           >
             Copyright
           </h1>
           <span
-            class="sc-hBxehG jiKGja"
+            class="c16"
           >
             Most of my photos are licensed under
              
             <a
               aria-label="Creative Commons BY-SA 3.0 (opens in a new tab)"
-              class="sc-gswNZR bbFtvE"
+              class="c5"
               href="https://creativecommons.org/licenses/by-sa/3.0/"
               rel="noopener noreferrer"
               target="_blank"
             >
               <span
-                class="sc-ftTHYK cRFGYD"
+                class="c6"
               >
                 Creative Commons BY-SA 3.0
               </span>
               <div
-                class="sc-dkrFOg dOaeSw"
+                class="c7"
               >
                 <svg
-                  class="sc-bcXHqe cbaReT sc-hLBbgP eKXpFg"
+                  class="c8 c9"
                   height="18"
                   viewBox="0 0 24 24"
                   width="18"
@@ -1141,16 +2051,11 @@ exports[`<Photography /> should render correctly with photos 1`] = `
             .
             <br />
             If you are unsure about your right to use them please 
-            <a
-              class="sc-gswNZR bbFtvE"
-              href="/contact"
+            <span
+              class="c6"
             >
-              <span
-                class="sc-ftTHYK cRFGYD"
-              >
-                contact me
-              </span>
-            </a>
+              contact me
+            </span>
             .
           </span>
         </div>

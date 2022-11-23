@@ -1,40 +1,235 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<Support /> should render correctly - index 1`] = `
+.c2 {
+  margin: 0;
+  font-size: 2.4rem;
+  font-weight: bold;
+}
+
+.c7 {
+  position: relative;
+  width: 100%;
+  border-radius: 0.25rem;
+  background-color: rgb(238,238,238);
+  overflow: hidden;
+  width: 100%;
+  height: 10rem;
+  margin-bottom: 1.2rem;
+}
+
+.c8 {
+  position: absolute;
+  top: 0;
+  width: 13rem;
+  height: 100vh;
+  background-image: linear-gradient( 90deg, rgb(238,238,238), rgb(245,245,245), rgb(238,238,238) );
+  background-repeat: no-repeat;
+  background-size: 12.5rem 100%;
+  -webkit-animation: sjjMW 3.5s ease-in-out infinite;
+  animation: sjjMW 3.5s ease-in-out infinite;
+}
+
+.c3 {
+  margin: 2.3rem 0 0 0;
+}
+
+.c1 {
+  -webkit-animation: bbwGtI 0.4s ease-in-out;
+  animation: bbwGtI 0.4s ease-in-out;
+}
+
+.c5 {
+  position: relative;
+  min-width: 5rem;
+  padding: 0.43rem 1.125rem 0.32rem 1.125rem;
+  -webkit-transition: filter 0.3s;
+  transition: filter 0.3s;
+  border: none;
+  border-radius: 0.25rem;
+  font-size: 1.4rem;
+  font-weight: bold;
+  cursor: pointer;
+  -webkit-text-decoration-color: transparent;
+  text-decoration-color: transparent;
+  -webkit-text-decoration-line: none;
+  text-decoration-line: none;
+  background-color: #0067B7;
+  color: white;
+  cursor: default;
+}
+
+.c5:focus-within,
+.c5:focus {
+  outline: none !important;
+}
+
+.c5:focus-within::after,
+.c5:focus::after {
+  position: absolute;
+  top: -0.35rem;
+  right: -0.35rem;
+  bottom: -0.35rem;
+  left: -0.35rem;
+  content: '';
+  display: block;
+  border: solid rgba(0,125,250,0.6) 0.2rem;
+  border-radius: 0.5rem;
+  pointer-events: none;
+}
+
+.c5:focus,
+.c5:hover {
+  background-color: #004F8C;
+  color: white;
+}
+
+.c5:active {
+  background-color: #003E6F;
+}
+
+.c5:disabled {
+  background-color: #cdcdd7;
+  color: rgb(100,100,100);
+}
+
+.c6 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.c0 {
+  display: block;
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  overflow: hidden;
+  padding-bottom: 2rem;
+  max-width: 60rem;
+  padding-right: 1rem;
+  padding-left: 1rem;
+}
+
+.c4 {
+  width: 100%;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+@media (prefers-color-scheme:dark) {
+  .c7 {
+    background-color: rgb(17,17,17);
+  }
+}
+
+@media (prefers-color-scheme:dark) {
+  .c8 {
+    background-image: linear-gradient( 90deg, rgb(17,17,17), rgb(50,50,50), rgb(17,17,17) );
+  }
+}
+
+@media (prefers-color-scheme:dark) {
+
+}
+
+@media (prefers-color-scheme:dark) {
+
+}
+
+@media (prefers-color-scheme:dark) {
+
+}
+
+@media (prefers-color-scheme:dark) {
+
+}
+
+@media (prefers-color-scheme:dark) {
+
+}
+
+@media (prefers-color-scheme:dark) {
+  .c5:focus-within::after,
+  .c5:focus::after {
+    border-color: rgba(0,125,250,0.6);
+  }
+}
+
+@media (prefers-color-scheme:dark) {
+  .c5 {
+    background-color: #025CA2;
+    color: white;
+  }
+}
+
+@media (prefers-color-scheme:dark) {
+  .c5:focus,
+  .c5:hover {
+    background-color: #004479;
+    color: white;
+  }
+}
+
+@media (prefers-color-scheme:dark) {
+  .c5:active {
+    background-color: #003965;
+  }
+}
+
+@media (prefers-color-scheme:dark) {
+  .c5:disabled {
+    background-color: rgb(89,89,89);
+    color: darkgray;
+  }
+}
+
+@media (min-width:50.25rem) {
+  .c0 {
+    padding-right: 2rem;
+    padding-left: 2rem;
+  }
+}
+
 <div>
   <div
-    class="sc-gikAfH bpOAYB page-containerstyles__StyledPageContainer-sc-19l7k4-0"
+    class="c0 page-containerstyles__StyledPageContainer-sc-19l7k4-0"
     width="default"
   >
     <div
-      class="sc-idXgbr bDNeyb"
+      class="c1"
     >
       <h1
-        class="sc-bcXHqe bHgOFy sc-ksBlkl fxhFVy"
+        class="c2 c3"
       >
         Support
       </h1>
     </div>
     <div
-      class="supportstyles__Controls-sc-yym0gw-0 hsVOOk"
+      class="c4"
     >
       <button
-        class="sc-kgTSHT kfSbgz outer"
+        class="c5 outer"
         disabled=""
         type="button"
       >
         <span
-          class="sc-bBABsx fsRcPl"
+          class="c6"
         >
           Reload
         </span>
       </button>
     </div>
     <div
-      class="sc-eDWCr esSKbW support__body-skeleton"
+      class="c7 support__body-skeleton"
     >
       <div
-        class="sc-bqWxrE cRkaeW"
+        class="c8"
         style="margin-left: -0px;"
       />
     </div>
@@ -43,40 +238,215 @@ exports[`<Support /> should render correctly - index 1`] = `
 `;
 
 exports[`<Support /> should render correctly when loading 1`] = `
+.c2 {
+  margin: 0;
+  font-size: 2.4rem;
+  font-weight: bold;
+}
+
+.c7 {
+  position: relative;
+  width: 100%;
+  border-radius: 0.25rem;
+  background-color: rgb(238,238,238);
+  overflow: hidden;
+  width: 100%;
+  height: 10rem;
+  margin-bottom: 1.2rem;
+}
+
+.c8 {
+  position: absolute;
+  top: 0;
+  width: 13rem;
+  height: 100vh;
+  background-image: linear-gradient( 90deg, rgb(238,238,238), rgb(245,245,245), rgb(238,238,238) );
+  background-repeat: no-repeat;
+  background-size: 12.5rem 100%;
+  -webkit-animation: sjjMW 3.5s ease-in-out infinite;
+  animation: sjjMW 3.5s ease-in-out infinite;
+}
+
+.c3 {
+  margin: 2.3rem 0 0 0;
+}
+
+.c1 {
+  -webkit-animation: bbwGtI 0.4s ease-in-out;
+  animation: bbwGtI 0.4s ease-in-out;
+}
+
+.c5 {
+  position: relative;
+  min-width: 5rem;
+  padding: 0.43rem 1.125rem 0.32rem 1.125rem;
+  -webkit-transition: filter 0.3s;
+  transition: filter 0.3s;
+  border: none;
+  border-radius: 0.25rem;
+  font-size: 1.4rem;
+  font-weight: bold;
+  cursor: pointer;
+  -webkit-text-decoration-color: transparent;
+  text-decoration-color: transparent;
+  -webkit-text-decoration-line: none;
+  text-decoration-line: none;
+  background-color: #0067B7;
+  color: white;
+  cursor: default;
+}
+
+.c5:focus-within,
+.c5:focus {
+  outline: none !important;
+}
+
+.c5:focus-within::after,
+.c5:focus::after {
+  position: absolute;
+  top: -0.35rem;
+  right: -0.35rem;
+  bottom: -0.35rem;
+  left: -0.35rem;
+  content: '';
+  display: block;
+  border: solid rgba(0,125,250,0.6) 0.2rem;
+  border-radius: 0.5rem;
+  pointer-events: none;
+}
+
+.c5:focus,
+.c5:hover {
+  background-color: #004F8C;
+  color: white;
+}
+
+.c5:active {
+  background-color: #003E6F;
+}
+
+.c5:disabled {
+  background-color: #cdcdd7;
+  color: rgb(100,100,100);
+}
+
+.c6 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.c0 {
+  display: block;
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  overflow: hidden;
+  padding-bottom: 2rem;
+  max-width: 60rem;
+  padding-right: 1rem;
+  padding-left: 1rem;
+}
+
+.c4 {
+  width: 100%;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+@media (prefers-color-scheme:dark) {
+  .c7 {
+    background-color: rgb(17,17,17);
+  }
+}
+
+@media (prefers-color-scheme:dark) {
+  .c8 {
+    background-image: linear-gradient( 90deg, rgb(17,17,17), rgb(50,50,50), rgb(17,17,17) );
+  }
+}
+
+@media (prefers-color-scheme:dark) {
+  .c5:focus-within::after,
+  .c5:focus::after {
+    border-color: rgba(0,125,250,0.6);
+  }
+}
+
+@media (prefers-color-scheme:dark) {
+  .c5 {
+    background-color: #025CA2;
+    color: white;
+  }
+}
+
+@media (prefers-color-scheme:dark) {
+  .c5:focus,
+  .c5:hover {
+    background-color: #004479;
+    color: white;
+  }
+}
+
+@media (prefers-color-scheme:dark) {
+  .c5:active {
+    background-color: #003965;
+  }
+}
+
+@media (prefers-color-scheme:dark) {
+  .c5:disabled {
+    background-color: rgb(89,89,89);
+    color: darkgray;
+  }
+}
+
+@media (min-width:50.25rem) {
+  .c0 {
+    padding-right: 2rem;
+    padding-left: 2rem;
+  }
+}
+
 <div>
   <div
-    class="sc-gikAfH bpOAYB page-containerstyles__StyledPageContainer-sc-19l7k4-0"
+    class="c0 page-containerstyles__StyledPageContainer-sc-19l7k4-0"
     width="default"
   >
     <div
-      class="sc-idXgbr bDNeyb"
+      class="c1"
     >
       <h1
-        class="sc-bcXHqe bHgOFy sc-ksBlkl fxhFVy"
+        class="c2 c3"
       >
         Support
       </h1>
     </div>
     <div
-      class="supportstyles__Controls-sc-yym0gw-0 hsVOOk"
+      class="c4"
     >
       <button
-        class="sc-kgTSHT kfSbgz outer"
+        class="c5 outer"
         disabled=""
         type="button"
       >
         <span
-          class="sc-bBABsx fsRcPl"
+          class="c6"
         >
           Reload
         </span>
       </button>
     </div>
     <div
-      class="sc-eDWCr esSKbW support__body-skeleton"
+      class="c7 support__body-skeleton"
     >
       <div
-        class="sc-bqWxrE cRkaeW"
+        class="c8"
         style="margin-left: -0px;"
       />
     </div>
@@ -85,47 +455,244 @@ exports[`<Support /> should render correctly when loading 1`] = `
 `;
 
 exports[`<Support /> should render correctly with admin 1`] = `
+.c2 {
+  margin: 0;
+  font-size: 2.4rem;
+  font-weight: bold;
+}
+
+.c10 {
+  margin: 0;
+  font-size: 2.2rem;
+  font-weight: bold;
+}
+
+.c9 {
+  width: 100%;
+  color: #1e1e1e;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c11 {
+  margin: 3.34rem 0 0 0;
+}
+
+.c7 {
+  position: relative;
+  width: 100%;
+  border-radius: 0.25rem;
+  background-color: rgb(238,238,238);
+  overflow: hidden;
+  width: 100%;
+  height: 10rem;
+  margin-bottom: 1.2rem;
+}
+
+.c8 {
+  position: absolute;
+  top: 0;
+  width: 13rem;
+  height: 100vh;
+  background-image: linear-gradient( 90deg, rgb(238,238,238), rgb(245,245,245), rgb(238,238,238) );
+  background-repeat: no-repeat;
+  background-size: 12.5rem 100%;
+  -webkit-animation: sjjMW 3.5s ease-in-out infinite;
+  animation: sjjMW 3.5s ease-in-out infinite;
+}
+
+.c3 {
+  margin: 2.3rem 0 0 0;
+}
+
+.c1 {
+  -webkit-animation: bbwGtI 0.4s ease-in-out;
+  animation: bbwGtI 0.4s ease-in-out;
+}
+
+.c5 {
+  position: relative;
+  min-width: 5rem;
+  padding: 0.43rem 1.125rem 0.32rem 1.125rem;
+  -webkit-transition: filter 0.3s;
+  transition: filter 0.3s;
+  border: none;
+  border-radius: 0.25rem;
+  font-size: 1.4rem;
+  font-weight: bold;
+  cursor: pointer;
+  -webkit-text-decoration-color: transparent;
+  text-decoration-color: transparent;
+  -webkit-text-decoration-line: none;
+  text-decoration-line: none;
+  background-color: #0067B7;
+  color: white;
+}
+
+.c5:focus-within,
+.c5:focus {
+  outline: none !important;
+}
+
+.c5:focus-within::after,
+.c5:focus::after {
+  position: absolute;
+  top: -0.35rem;
+  right: -0.35rem;
+  bottom: -0.35rem;
+  left: -0.35rem;
+  content: '';
+  display: block;
+  border: solid rgba(0,125,250,0.6) 0.2rem;
+  border-radius: 0.5rem;
+  pointer-events: none;
+}
+
+.c5:focus,
+.c5:hover {
+  background-color: #004F8C;
+  color: white;
+}
+
+.c5:active {
+  background-color: #003E6F;
+}
+
+.c5:disabled {
+  background-color: #cdcdd7;
+  color: rgb(100,100,100);
+}
+
+.c6 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.c0 {
+  display: block;
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  overflow: hidden;
+  padding-bottom: 2rem;
+  max-width: 60rem;
+  padding-right: 1rem;
+  padding-left: 1rem;
+}
+
+.c4 {
+  width: 100%;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+@media (prefers-color-scheme:dark) {
+  .c9 {
+    color: white;
+  }
+}
+
+@media (prefers-color-scheme:dark) {
+  .c7 {
+    background-color: rgb(17,17,17);
+  }
+}
+
+@media (prefers-color-scheme:dark) {
+  .c8 {
+    background-image: linear-gradient( 90deg, rgb(17,17,17), rgb(50,50,50), rgb(17,17,17) );
+  }
+}
+
+@media (prefers-color-scheme:dark) {
+  .c5:focus-within::after,
+  .c5:focus::after {
+    border-color: rgba(0,125,250,0.6);
+  }
+}
+
+@media (prefers-color-scheme:dark) {
+  .c5 {
+    background-color: #025CA2;
+    color: white;
+  }
+}
+
+@media (prefers-color-scheme:dark) {
+  .c5:focus,
+  .c5:hover {
+    background-color: #004479;
+    color: white;
+  }
+}
+
+@media (prefers-color-scheme:dark) {
+  .c5:active {
+    background-color: #003965;
+  }
+}
+
+@media (prefers-color-scheme:dark) {
+  .c5:disabled {
+    background-color: rgb(89,89,89);
+    color: darkgray;
+  }
+}
+
+@media (min-width:50.25rem) {
+  .c0 {
+    padding-right: 2rem;
+    padding-left: 2rem;
+  }
+}
+
 <div>
   <div
-    class="sc-gikAfH bpOAYB page-containerstyles__StyledPageContainer-sc-19l7k4-0"
+    class="c0 page-containerstyles__StyledPageContainer-sc-19l7k4-0"
     width="default"
   >
     <div
-      class="sc-idXgbr bDNeyb"
+      class="c1"
     >
       <h1
-        class="sc-bcXHqe bHgOFy sc-ksBlkl fxhFVy"
+        class="c2 c3"
       >
         Support
       </h1>
     </div>
     <div
-      class="supportstyles__Controls-sc-yym0gw-0 hsVOOk"
+      class="c4"
     >
       <button
-        class="sc-kgTSHT bVHzyr outer"
+        class="c5 outer"
         type="button"
       >
         <span
-          class="sc-bBABsx fsRcPl"
+          class="c6"
         >
           Reload
         </span>
       </button>
     </div>
     <div
-      class="sc-eDWCr esSKbW support__body-skeleton"
+      class="c7 support__body-skeleton"
     >
       <div
-        class="sc-bqWxrE cRkaeW"
+        class="c8"
         style="margin-left: -0px;"
       />
     </div>
     <div
-      class="sc-jrcTuL drIieO"
+      class="c9"
     >
       <h1
-        class="sc-gswNZR gzqAHo sc-csuSiG hpbHKR"
+        class="c10 c11"
         id="add-link"
       >
         ADD LINK
@@ -139,56 +706,277 @@ exports[`<Support /> should render correctly with admin 1`] = `
 `;
 
 exports[`<Support /> should render correctly with admin and createLinkError 1`] = `
+.c2 {
+  margin: 0;
+  font-size: 2.4rem;
+  font-weight: bold;
+}
+
+.c10 {
+  margin: 0;
+  font-size: 2.2rem;
+  font-weight: bold;
+}
+
+.c9 {
+  width: 100%;
+  color: #1e1e1e;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c11 {
+  margin: 3.34rem 0 0 0;
+}
+
+.c7 {
+  position: relative;
+  width: 100%;
+  border-radius: 0.25rem;
+  background-color: rgb(238,238,238);
+  overflow: hidden;
+  width: 100%;
+  height: 10rem;
+  margin-bottom: 1.2rem;
+}
+
+.c8 {
+  position: absolute;
+  top: 0;
+  width: 13rem;
+  height: 100vh;
+  background-image: linear-gradient( 90deg, rgb(238,238,238), rgb(245,245,245), rgb(238,238,238) );
+  background-repeat: no-repeat;
+  background-size: 12.5rem 100%;
+  -webkit-animation: sjjMW 3.5s ease-in-out infinite;
+  animation: sjjMW 3.5s ease-in-out infinite;
+}
+
+.c3 {
+  margin: 2.3rem 0 0 0;
+}
+
+.c1 {
+  -webkit-animation: bbwGtI 0.4s ease-in-out;
+  animation: bbwGtI 0.4s ease-in-out;
+}
+
+.c5 {
+  position: relative;
+  min-width: 5rem;
+  padding: 0.43rem 1.125rem 0.32rem 1.125rem;
+  -webkit-transition: filter 0.3s;
+  transition: filter 0.3s;
+  border: none;
+  border-radius: 0.25rem;
+  font-size: 1.4rem;
+  font-weight: bold;
+  cursor: pointer;
+  -webkit-text-decoration-color: transparent;
+  text-decoration-color: transparent;
+  -webkit-text-decoration-line: none;
+  text-decoration-line: none;
+  background-color: #0067B7;
+  color: white;
+}
+
+.c5:focus-within,
+.c5:focus {
+  outline: none !important;
+}
+
+.c5:focus-within::after,
+.c5:focus::after {
+  position: absolute;
+  top: -0.35rem;
+  right: -0.35rem;
+  bottom: -0.35rem;
+  left: -0.35rem;
+  content: '';
+  display: block;
+  border: solid rgba(0,125,250,0.6) 0.2rem;
+  border-radius: 0.5rem;
+  pointer-events: none;
+}
+
+.c5:focus,
+.c5:hover {
+  background-color: #004F8C;
+  color: white;
+}
+
+.c5:active {
+  background-color: #003E6F;
+}
+
+.c5:disabled {
+  background-color: #cdcdd7;
+  color: rgb(100,100,100);
+}
+
+.c6 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.c12 {
+  display: inline-block;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  line-height: 1.5;
+  margin-top: 2rem;
+}
+
+.c12:first-of-type {
+  margin-top: 0.86rem;
+}
+
+.c13 {
+  color: #E02626;
+  fill: #E02626;
+}
+
+.c0 {
+  display: block;
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  overflow: hidden;
+  padding-bottom: 2rem;
+  max-width: 60rem;
+  padding-right: 1rem;
+  padding-left: 1rem;
+}
+
+.c4 {
+  width: 100%;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+@media (prefers-color-scheme:dark) {
+  .c9 {
+    color: white;
+  }
+}
+
+@media (prefers-color-scheme:dark) {
+  .c7 {
+    background-color: rgb(17,17,17);
+  }
+}
+
+@media (prefers-color-scheme:dark) {
+  .c8 {
+    background-image: linear-gradient( 90deg, rgb(17,17,17), rgb(50,50,50), rgb(17,17,17) );
+  }
+}
+
+@media (prefers-color-scheme:dark) {
+  .c5:focus-within::after,
+  .c5:focus::after {
+    border-color: rgba(0,125,250,0.6);
+  }
+}
+
+@media (prefers-color-scheme:dark) {
+  .c5 {
+    background-color: #025CA2;
+    color: white;
+  }
+}
+
+@media (prefers-color-scheme:dark) {
+  .c5:focus,
+  .c5:hover {
+    background-color: #004479;
+    color: white;
+  }
+}
+
+@media (prefers-color-scheme:dark) {
+  .c5:active {
+    background-color: #003965;
+  }
+}
+
+@media (prefers-color-scheme:dark) {
+  .c5:disabled {
+    background-color: rgb(89,89,89);
+    color: darkgray;
+  }
+}
+
+@media (prefers-color-scheme:dark) {
+  .c13 {
+    color: #CA2020;
+    fill: #CA2020;
+  }
+}
+
+@media (min-width:50.25rem) {
+  .c0 {
+    padding-right: 2rem;
+    padding-left: 2rem;
+  }
+}
+
 <div>
   <div
-    class="sc-gikAfH bpOAYB page-containerstyles__StyledPageContainer-sc-19l7k4-0"
+    class="c0 page-containerstyles__StyledPageContainer-sc-19l7k4-0"
     width="default"
   >
     <div
-      class="sc-idXgbr bDNeyb"
+      class="c1"
     >
       <h1
-        class="sc-bcXHqe bHgOFy sc-ksBlkl fxhFVy"
+        class="c2 c3"
       >
         Support
       </h1>
     </div>
     <div
-      class="supportstyles__Controls-sc-yym0gw-0 hsVOOk"
+      class="c4"
     >
       <button
-        class="sc-kgTSHT bVHzyr outer"
+        class="c5 outer"
         type="button"
       >
         <span
-          class="sc-bBABsx fsRcPl"
+          class="c6"
         >
           Reload
         </span>
       </button>
     </div>
     <div
-      class="sc-eDWCr esSKbW support__body-skeleton"
+      class="c7 support__body-skeleton"
     >
       <div
-        class="sc-bqWxrE cRkaeW"
+        class="c8"
         style="margin-left: -0px;"
       />
     </div>
     <div
-      class="sc-jrcTuL drIieO"
+      class="c9"
     >
       <h1
-        class="sc-gswNZR gzqAHo sc-csuSiG hpbHKR"
+        class="c10 c11"
         id="add-link"
       >
         ADD LINK
       </h1>
       <span
-        class="sc-lllmON bWRUFa"
+        class="c12"
       >
         <span
-          class="sc-iJnaPW MQrzp"
+          class="c13"
         >
           Failed to add link
           <br />
@@ -204,56 +992,277 @@ exports[`<Support /> should render correctly with admin and createLinkError 1`] 
 `;
 
 exports[`<Support /> should render correctly with admin and deleteLinkError 1`] = `
+.c2 {
+  margin: 0;
+  font-size: 2.4rem;
+  font-weight: bold;
+}
+
+.c10 {
+  margin: 0;
+  font-size: 2.2rem;
+  font-weight: bold;
+}
+
+.c9 {
+  width: 100%;
+  color: #1e1e1e;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c11 {
+  margin: 3.34rem 0 0 0;
+}
+
+.c7 {
+  position: relative;
+  width: 100%;
+  border-radius: 0.25rem;
+  background-color: rgb(238,238,238);
+  overflow: hidden;
+  width: 100%;
+  height: 10rem;
+  margin-bottom: 1.2rem;
+}
+
+.c8 {
+  position: absolute;
+  top: 0;
+  width: 13rem;
+  height: 100vh;
+  background-image: linear-gradient( 90deg, rgb(238,238,238), rgb(245,245,245), rgb(238,238,238) );
+  background-repeat: no-repeat;
+  background-size: 12.5rem 100%;
+  -webkit-animation: sjjMW 3.5s ease-in-out infinite;
+  animation: sjjMW 3.5s ease-in-out infinite;
+}
+
+.c3 {
+  margin: 2.3rem 0 0 0;
+}
+
+.c1 {
+  -webkit-animation: bbwGtI 0.4s ease-in-out;
+  animation: bbwGtI 0.4s ease-in-out;
+}
+
+.c5 {
+  position: relative;
+  min-width: 5rem;
+  padding: 0.43rem 1.125rem 0.32rem 1.125rem;
+  -webkit-transition: filter 0.3s;
+  transition: filter 0.3s;
+  border: none;
+  border-radius: 0.25rem;
+  font-size: 1.4rem;
+  font-weight: bold;
+  cursor: pointer;
+  -webkit-text-decoration-color: transparent;
+  text-decoration-color: transparent;
+  -webkit-text-decoration-line: none;
+  text-decoration-line: none;
+  background-color: #0067B7;
+  color: white;
+}
+
+.c5:focus-within,
+.c5:focus {
+  outline: none !important;
+}
+
+.c5:focus-within::after,
+.c5:focus::after {
+  position: absolute;
+  top: -0.35rem;
+  right: -0.35rem;
+  bottom: -0.35rem;
+  left: -0.35rem;
+  content: '';
+  display: block;
+  border: solid rgba(0,125,250,0.6) 0.2rem;
+  border-radius: 0.5rem;
+  pointer-events: none;
+}
+
+.c5:focus,
+.c5:hover {
+  background-color: #004F8C;
+  color: white;
+}
+
+.c5:active {
+  background-color: #003E6F;
+}
+
+.c5:disabled {
+  background-color: #cdcdd7;
+  color: rgb(100,100,100);
+}
+
+.c6 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.c12 {
+  display: inline-block;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  line-height: 1.5;
+  margin-top: 2rem;
+}
+
+.c12:first-of-type {
+  margin-top: 0.86rem;
+}
+
+.c13 {
+  color: #E02626;
+  fill: #E02626;
+}
+
+.c0 {
+  display: block;
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  overflow: hidden;
+  padding-bottom: 2rem;
+  max-width: 60rem;
+  padding-right: 1rem;
+  padding-left: 1rem;
+}
+
+.c4 {
+  width: 100%;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+@media (prefers-color-scheme:dark) {
+  .c9 {
+    color: white;
+  }
+}
+
+@media (prefers-color-scheme:dark) {
+  .c7 {
+    background-color: rgb(17,17,17);
+  }
+}
+
+@media (prefers-color-scheme:dark) {
+  .c8 {
+    background-image: linear-gradient( 90deg, rgb(17,17,17), rgb(50,50,50), rgb(17,17,17) );
+  }
+}
+
+@media (prefers-color-scheme:dark) {
+  .c5:focus-within::after,
+  .c5:focus::after {
+    border-color: rgba(0,125,250,0.6);
+  }
+}
+
+@media (prefers-color-scheme:dark) {
+  .c5 {
+    background-color: #025CA2;
+    color: white;
+  }
+}
+
+@media (prefers-color-scheme:dark) {
+  .c5:focus,
+  .c5:hover {
+    background-color: #004479;
+    color: white;
+  }
+}
+
+@media (prefers-color-scheme:dark) {
+  .c5:active {
+    background-color: #003965;
+  }
+}
+
+@media (prefers-color-scheme:dark) {
+  .c5:disabled {
+    background-color: rgb(89,89,89);
+    color: darkgray;
+  }
+}
+
+@media (prefers-color-scheme:dark) {
+  .c13 {
+    color: #CA2020;
+    fill: #CA2020;
+  }
+}
+
+@media (min-width:50.25rem) {
+  .c0 {
+    padding-right: 2rem;
+    padding-left: 2rem;
+  }
+}
+
 <div>
   <div
-    class="sc-gikAfH bpOAYB page-containerstyles__StyledPageContainer-sc-19l7k4-0"
+    class="c0 page-containerstyles__StyledPageContainer-sc-19l7k4-0"
     width="default"
   >
     <div
-      class="sc-idXgbr bDNeyb"
+      class="c1"
     >
       <h1
-        class="sc-bcXHqe bHgOFy sc-ksBlkl fxhFVy"
+        class="c2 c3"
       >
         Support
       </h1>
     </div>
     <div
-      class="supportstyles__Controls-sc-yym0gw-0 hsVOOk"
+      class="c4"
     >
       <button
-        class="sc-kgTSHT bVHzyr outer"
+        class="c5 outer"
         type="button"
       >
         <span
-          class="sc-bBABsx fsRcPl"
+          class="c6"
         >
           Reload
         </span>
       </button>
     </div>
     <div
-      class="sc-eDWCr esSKbW support__body-skeleton"
+      class="c7 support__body-skeleton"
     >
       <div
-        class="sc-bqWxrE cRkaeW"
+        class="c8"
         style="margin-left: -0px;"
       />
     </div>
     <div
-      class="sc-jrcTuL drIieO"
+      class="c9"
     >
       <h1
-        class="sc-gswNZR gzqAHo sc-csuSiG hpbHKR"
+        class="c10 c11"
         id="add-link"
       >
         ADD LINK
       </h1>
       <span
-        class="sc-lllmON bWRUFa"
+        class="c12"
       >
         <span
-          class="sc-iJnaPW MQrzp"
+          class="c13"
         >
           Failed to delete link
           <br />
@@ -269,39 +1278,213 @@ exports[`<Support /> should render correctly with admin and deleteLinkError 1`] 
 `;
 
 exports[`<Support /> should render correctly with initial state 1`] = `
+.c2 {
+  margin: 0;
+  font-size: 2.4rem;
+  font-weight: bold;
+}
+
+.c7 {
+  position: relative;
+  width: 100%;
+  border-radius: 0.25rem;
+  background-color: rgb(238,238,238);
+  overflow: hidden;
+  width: 100%;
+  height: 10rem;
+  margin-bottom: 1.2rem;
+}
+
+.c8 {
+  position: absolute;
+  top: 0;
+  width: 13rem;
+  height: 100vh;
+  background-image: linear-gradient( 90deg, rgb(238,238,238), rgb(245,245,245), rgb(238,238,238) );
+  background-repeat: no-repeat;
+  background-size: 12.5rem 100%;
+  -webkit-animation: sjjMW 3.5s ease-in-out infinite;
+  animation: sjjMW 3.5s ease-in-out infinite;
+}
+
+.c3 {
+  margin: 2.3rem 0 0 0;
+}
+
+.c1 {
+  -webkit-animation: bbwGtI 0.4s ease-in-out;
+  animation: bbwGtI 0.4s ease-in-out;
+}
+
+.c5 {
+  position: relative;
+  min-width: 5rem;
+  padding: 0.43rem 1.125rem 0.32rem 1.125rem;
+  -webkit-transition: filter 0.3s;
+  transition: filter 0.3s;
+  border: none;
+  border-radius: 0.25rem;
+  font-size: 1.4rem;
+  font-weight: bold;
+  cursor: pointer;
+  -webkit-text-decoration-color: transparent;
+  text-decoration-color: transparent;
+  -webkit-text-decoration-line: none;
+  text-decoration-line: none;
+  background-color: #0067B7;
+  color: white;
+}
+
+.c5:focus-within,
+.c5:focus {
+  outline: none !important;
+}
+
+.c5:focus-within::after,
+.c5:focus::after {
+  position: absolute;
+  top: -0.35rem;
+  right: -0.35rem;
+  bottom: -0.35rem;
+  left: -0.35rem;
+  content: '';
+  display: block;
+  border: solid rgba(0,125,250,0.6) 0.2rem;
+  border-radius: 0.5rem;
+  pointer-events: none;
+}
+
+.c5:focus,
+.c5:hover {
+  background-color: #004F8C;
+  color: white;
+}
+
+.c5:active {
+  background-color: #003E6F;
+}
+
+.c5:disabled {
+  background-color: #cdcdd7;
+  color: rgb(100,100,100);
+}
+
+.c6 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.c0 {
+  display: block;
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  overflow: hidden;
+  padding-bottom: 2rem;
+  max-width: 60rem;
+  padding-right: 1rem;
+  padding-left: 1rem;
+}
+
+.c4 {
+  width: 100%;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+@media (prefers-color-scheme:dark) {
+  .c7 {
+    background-color: rgb(17,17,17);
+  }
+}
+
+@media (prefers-color-scheme:dark) {
+  .c8 {
+    background-image: linear-gradient( 90deg, rgb(17,17,17), rgb(50,50,50), rgb(17,17,17) );
+  }
+}
+
+@media (prefers-color-scheme:dark) {
+  .c5:focus-within::after,
+  .c5:focus::after {
+    border-color: rgba(0,125,250,0.6);
+  }
+}
+
+@media (prefers-color-scheme:dark) {
+  .c5 {
+    background-color: #025CA2;
+    color: white;
+  }
+}
+
+@media (prefers-color-scheme:dark) {
+  .c5:focus,
+  .c5:hover {
+    background-color: #004479;
+    color: white;
+  }
+}
+
+@media (prefers-color-scheme:dark) {
+  .c5:active {
+    background-color: #003965;
+  }
+}
+
+@media (prefers-color-scheme:dark) {
+  .c5:disabled {
+    background-color: rgb(89,89,89);
+    color: darkgray;
+  }
+}
+
+@media (min-width:50.25rem) {
+  .c0 {
+    padding-right: 2rem;
+    padding-left: 2rem;
+  }
+}
+
 <div>
   <div
-    class="sc-gikAfH bpOAYB page-containerstyles__StyledPageContainer-sc-19l7k4-0"
+    class="c0 page-containerstyles__StyledPageContainer-sc-19l7k4-0"
     width="default"
   >
     <div
-      class="sc-idXgbr bDNeyb"
+      class="c1"
     >
       <h1
-        class="sc-bcXHqe bHgOFy sc-ksBlkl fxhFVy"
+        class="c2 c3"
       >
         Support
       </h1>
     </div>
     <div
-      class="supportstyles__Controls-sc-yym0gw-0 hsVOOk"
+      class="c4"
     >
       <button
-        class="sc-kgTSHT bVHzyr outer"
+        class="c5 outer"
         type="button"
       >
         <span
-          class="sc-bBABsx fsRcPl"
+          class="c6"
         >
           Reload
         </span>
       </button>
     </div>
     <div
-      class="sc-eDWCr esSKbW support__body-skeleton"
+      class="c7 support__body-skeleton"
     >
       <div
-        class="sc-bqWxrE cRkaeW"
+        class="c8"
         style="margin-left: -0px;"
       />
     </div>
@@ -310,63 +1493,325 @@ exports[`<Support /> should render correctly with initial state 1`] = `
 `;
 
 exports[`<Support /> should render correctly with links 1`] = `
+.c2 {
+  margin: 0;
+  font-size: 2.4rem;
+  font-weight: bold;
+}
+
+.c8 {
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.c13 {
+  margin: 0;
+}
+
+.c15 {
+  width: 1.25rem;
+  height: 1.25rem;
+}
+
+.c12 {
+  display: inline-block;
+  border-radius: 0.25rem;
+  font-weight: bold;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  position: relative;
+  color: darkorchid;
+  fill: darkorchid;
+}
+
+.c12:focus-within,
+.c12:focus {
+  position: relative;
+  outline: none !important;
+}
+
+.c12:focus-within::after,
+.c12:focus::after {
+  position: absolute;
+  top: -0.35rem;
+  right: -0.35rem;
+  bottom: -0.35rem;
+  left: -0.35rem;
+  content: '';
+  display: block;
+  border: solid rgba(0,125,250,0.6) 0.2rem;
+  border-radius: 0.5rem;
+  pointer-events: none;
+}
+
+.c12:hover {
+  color: #44aeff;
+  fill: #44aeff;
+}
+
+.c14 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  width: 0.4rem;
+  height: 1rem;
+  margin-left: 0.55rem;
+}
+
+.c16 {
+  position: absolute;
+  width: 1rem;
+  height: 1rem;
+  margin-top: 0.12rem;
+  margin-left: -0.45rem;
+}
+
+.c7 {
+  width: 100%;
+  color: #1e1e1e;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c9 {
+  margin: 2.13rem 0 0 0;
+}
+
+.c3 {
+  margin: 2.3rem 0 0 0;
+}
+
+.c1 {
+  -webkit-animation: bbwGtI 0.4s ease-in-out;
+  animation: bbwGtI 0.4s ease-in-out;
+}
+
+.c5 {
+  position: relative;
+  min-width: 5rem;
+  padding: 0.43rem 1.125rem 0.32rem 1.125rem;
+  -webkit-transition: filter 0.3s;
+  transition: filter 0.3s;
+  border: none;
+  border-radius: 0.25rem;
+  font-size: 1.4rem;
+  font-weight: bold;
+  cursor: pointer;
+  -webkit-text-decoration-color: transparent;
+  text-decoration-color: transparent;
+  -webkit-text-decoration-line: none;
+  text-decoration-line: none;
+  background-color: #0067B7;
+  color: white;
+}
+
+.c5:focus-within,
+.c5:focus {
+  outline: none !important;
+}
+
+.c5:focus-within::after,
+.c5:focus::after {
+  position: absolute;
+  top: -0.35rem;
+  right: -0.35rem;
+  bottom: -0.35rem;
+  left: -0.35rem;
+  content: '';
+  display: block;
+  border: solid rgba(0,125,250,0.6) 0.2rem;
+  border-radius: 0.5rem;
+  pointer-events: none;
+}
+
+.c5:focus,
+.c5:hover {
+  background-color: #004F8C;
+  color: white;
+}
+
+.c5:active {
+  background-color: #003E6F;
+}
+
+.c5:disabled {
+  background-color: #cdcdd7;
+  color: rgb(100,100,100);
+}
+
+.c6 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.c10 {
+  display: inline-block;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  line-height: 1.5;
+  margin-top: 2rem;
+}
+
+.c10:first-of-type {
+  margin-top: 0.86rem;
+}
+
+.c11 {
+  display: inline-block;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.c0 {
+  display: block;
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  overflow: hidden;
+  padding-bottom: 2rem;
+  max-width: 60rem;
+  padding-right: 1rem;
+  padding-left: 1rem;
+}
+
+.c4 {
+  width: 100%;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+@media (prefers-color-scheme:dark) {
+  .c12:focus-within::after,
+  .c12:focus::after {
+    border-color: rgba(0,125,250,0.6);
+  }
+}
+
+@media (prefers-color-scheme:dark) {
+  .c12 {
+    color: orchid;
+    fill: orchid;
+  }
+
+  .c12:hover {
+    color: #44aeff;
+    fill: #44aeff;
+  }
+}
+
+@media (prefers-color-scheme:dark) {
+  .c7 {
+    color: white;
+  }
+}
+
+@media (prefers-color-scheme:dark) {
+  .c5:focus-within::after,
+  .c5:focus::after {
+    border-color: rgba(0,125,250,0.6);
+  }
+}
+
+@media (prefers-color-scheme:dark) {
+  .c5 {
+    background-color: #025CA2;
+    color: white;
+  }
+}
+
+@media (prefers-color-scheme:dark) {
+  .c5:focus,
+  .c5:hover {
+    background-color: #004479;
+    color: white;
+  }
+}
+
+@media (prefers-color-scheme:dark) {
+  .c5:active {
+    background-color: #003965;
+  }
+}
+
+@media (prefers-color-scheme:dark) {
+  .c5:disabled {
+    background-color: rgb(89,89,89);
+    color: darkgray;
+  }
+}
+
+@media (min-width:50.25rem) {
+  .c0 {
+    padding-right: 2rem;
+    padding-left: 2rem;
+  }
+}
+
 <div>
   <div
-    class="sc-gikAfH bpOAYB page-containerstyles__StyledPageContainer-sc-19l7k4-0"
+    class="c0 page-containerstyles__StyledPageContainer-sc-19l7k4-0"
     width="default"
   >
     <div
-      class="sc-idXgbr bDNeyb"
+      class="c1"
     >
       <h1
-        class="sc-bcXHqe bHgOFy sc-ksBlkl fxhFVy"
+        class="c2 c3"
       >
         Support
       </h1>
     </div>
     <div
-      class="supportstyles__Controls-sc-yym0gw-0 hsVOOk"
+      class="c4"
     >
       <button
-        class="sc-kgTSHT bVHzyr outer"
+        class="c5 outer"
         type="button"
       >
         <span
-          class="sc-bBABsx fsRcPl"
+          class="c6"
         >
           Reload
         </span>
       </button>
     </div>
     <div
-      class="sc-jrcTuL drIieO"
+      class="c7"
     >
       <h1
-        class="sc-dkrFOg eRKGDm sc-csuSiG gvoVyF"
+        class="c8 c9"
         id="name-1"
       >
         name 1
       </h1>
       <span
-        class="sc-lllmON bWRUFa support-linkstyles__StyledParagraph-sc-1088mlq-0 vfHQA"
+        class="c10 c11"
       >
         <a
           aria-label="URL_1 (opens in a new tab)"
-          class="sc-iBYQkv jHA-DIX"
+          class="c12"
           href="URL_1"
           rel="noopener noreferrer"
           target="_blank"
         >
           <span
-            class="sc-eDvSVe ezgbKo"
+            class="c13"
           >
             URL_1
           </span>
           <div
-            class="sc-ftTHYK dbfjGz"
+            class="c14"
           >
             <svg
-              class="sc-gKPRtg eSdzmv sc-pyfCe hLCbyO"
+              class="c15 c16"
               height="18"
               viewBox="0 0 24 24"
               width="18"
@@ -383,34 +1828,34 @@ exports[`<Support /> should render correctly with links 1`] = `
       </span>
     </div>
     <div
-      class="sc-jrcTuL drIieO"
+      class="c7"
     >
       <h1
-        class="sc-dkrFOg eRKGDm sc-csuSiG gvoVyF"
+        class="c8 c9"
         id="name-2"
       >
         name 2
       </h1>
       <span
-        class="sc-lllmON bWRUFa support-linkstyles__StyledParagraph-sc-1088mlq-0 vfHQA"
+        class="c10 c11"
       >
         <a
           aria-label="URL_2 (opens in a new tab)"
-          class="sc-iBYQkv jHA-DIX"
+          class="c12"
           href="URL_2"
           rel="noopener noreferrer"
           target="_blank"
         >
           <span
-            class="sc-eDvSVe ezgbKo"
+            class="c13"
           >
             URL_2
           </span>
           <div
-            class="sc-ftTHYK dbfjGz"
+            class="c14"
           >
             <svg
-              class="sc-gKPRtg eSdzmv sc-pyfCe hLCbyO"
+              class="c15 c16"
               height="18"
               viewBox="0 0 24 24"
               width="18"
@@ -431,39 +1876,237 @@ exports[`<Support /> should render correctly with links 1`] = `
 `;
 
 exports[`<Support /> should render correctly with loadError 1`] = `
+.c2 {
+  margin: 0;
+  font-size: 2.4rem;
+  font-weight: bold;
+}
+
+.c9 {
+  position: relative;
+  width: 100%;
+  border-radius: 0.25rem;
+  background-color: rgb(238,238,238);
+  overflow: hidden;
+  width: 100%;
+  height: 10rem;
+  margin-bottom: 1.2rem;
+}
+
+.c10 {
+  position: absolute;
+  top: 0;
+  width: 13rem;
+  height: 100vh;
+  background-image: linear-gradient( 90deg, rgb(238,238,238), rgb(245,245,245), rgb(238,238,238) );
+  background-repeat: no-repeat;
+  background-size: 12.5rem 100%;
+  -webkit-animation: sjjMW 3.5s ease-in-out infinite;
+  animation: sjjMW 3.5s ease-in-out infinite;
+}
+
+.c3 {
+  margin: 2.3rem 0 0 0;
+}
+
+.c1 {
+  -webkit-animation: bbwGtI 0.4s ease-in-out;
+  animation: bbwGtI 0.4s ease-in-out;
+}
+
+.c5 {
+  position: relative;
+  min-width: 5rem;
+  padding: 0.43rem 1.125rem 0.32rem 1.125rem;
+  -webkit-transition: filter 0.3s;
+  transition: filter 0.3s;
+  border: none;
+  border-radius: 0.25rem;
+  font-size: 1.4rem;
+  font-weight: bold;
+  cursor: pointer;
+  -webkit-text-decoration-color: transparent;
+  text-decoration-color: transparent;
+  -webkit-text-decoration-line: none;
+  text-decoration-line: none;
+  background-color: #0067B7;
+  color: white;
+}
+
+.c5:focus-within,
+.c5:focus {
+  outline: none !important;
+}
+
+.c5:focus-within::after,
+.c5:focus::after {
+  position: absolute;
+  top: -0.35rem;
+  right: -0.35rem;
+  bottom: -0.35rem;
+  left: -0.35rem;
+  content: '';
+  display: block;
+  border: solid rgba(0,125,250,0.6) 0.2rem;
+  border-radius: 0.5rem;
+  pointer-events: none;
+}
+
+.c5:focus,
+.c5:hover {
+  background-color: #004F8C;
+  color: white;
+}
+
+.c5:active {
+  background-color: #003E6F;
+}
+
+.c5:disabled {
+  background-color: #cdcdd7;
+  color: rgb(100,100,100);
+}
+
+.c6 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.c7 {
+  display: inline-block;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  line-height: 1.5;
+  margin-top: 2rem;
+}
+
+.c7:first-of-type {
+  margin-top: 0.86rem;
+}
+
+.c8 {
+  color: #E02626;
+  fill: #E02626;
+}
+
+.c0 {
+  display: block;
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  overflow: hidden;
+  padding-bottom: 2rem;
+  max-width: 60rem;
+  padding-right: 1rem;
+  padding-left: 1rem;
+}
+
+.c4 {
+  width: 100%;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+@media (prefers-color-scheme:dark) {
+  .c9 {
+    background-color: rgb(17,17,17);
+  }
+}
+
+@media (prefers-color-scheme:dark) {
+  .c10 {
+    background-image: linear-gradient( 90deg, rgb(17,17,17), rgb(50,50,50), rgb(17,17,17) );
+  }
+}
+
+@media (prefers-color-scheme:dark) {
+  .c5:focus-within::after,
+  .c5:focus::after {
+    border-color: rgba(0,125,250,0.6);
+  }
+}
+
+@media (prefers-color-scheme:dark) {
+  .c5 {
+    background-color: #025CA2;
+    color: white;
+  }
+}
+
+@media (prefers-color-scheme:dark) {
+  .c5:focus,
+  .c5:hover {
+    background-color: #004479;
+    color: white;
+  }
+}
+
+@media (prefers-color-scheme:dark) {
+  .c5:active {
+    background-color: #003965;
+  }
+}
+
+@media (prefers-color-scheme:dark) {
+  .c5:disabled {
+    background-color: rgb(89,89,89);
+    color: darkgray;
+  }
+}
+
+@media (prefers-color-scheme:dark) {
+  .c8 {
+    color: #CA2020;
+    fill: #CA2020;
+  }
+}
+
+@media (min-width:50.25rem) {
+  .c0 {
+    padding-right: 2rem;
+    padding-left: 2rem;
+  }
+}
+
 <div>
   <div
-    class="sc-gikAfH bpOAYB page-containerstyles__StyledPageContainer-sc-19l7k4-0"
+    class="c0 page-containerstyles__StyledPageContainer-sc-19l7k4-0"
     width="default"
   >
     <div
-      class="sc-idXgbr bDNeyb"
+      class="c1"
     >
       <h1
-        class="sc-bcXHqe bHgOFy sc-ksBlkl fxhFVy"
+        class="c2 c3"
       >
         Support
       </h1>
     </div>
     <div
-      class="supportstyles__Controls-sc-yym0gw-0 hsVOOk"
+      class="c4"
     >
       <button
-        class="sc-kgTSHT bVHzyr outer"
+        class="c5 outer"
         type="button"
       >
         <span
-          class="sc-bBABsx fsRcPl"
+          class="c6"
         >
           Reload
         </span>
       </button>
     </div>
     <span
-      class="sc-lllmON bWRUFa"
+      class="c7"
     >
       <span
-        class="sc-iJnaPW MQrzp"
+        class="c8"
       >
         The support session failed to load
         <br />
@@ -471,10 +2114,10 @@ exports[`<Support /> should render correctly with loadError 1`] = `
       </span>
     </span>
     <div
-      class="sc-eDWCr esSKbW support__body-skeleton"
+      class="c9 support__body-skeleton"
     >
       <div
-        class="sc-bqWxrE cRkaeW"
+        class="c10"
         style="margin-left: -0px;"
       />
     </div>

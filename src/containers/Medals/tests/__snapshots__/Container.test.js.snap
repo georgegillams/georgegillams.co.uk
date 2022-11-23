@@ -1,22 +1,956 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<Medals /> should render correctly 1`] = `
+.c2 {
+  margin: 0;
+  font-size: 2.4rem;
+  font-weight: bold;
+}
+
+.c7 {
+  margin: 0;
+  font-size: 2.2rem;
+  font-weight: bold;
+}
+
+.c21 {
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.c12 {
+  margin: 0;
+  font-size: 2.4rem;
+  font-weight: bold;
+}
+
+.c14 {
+  margin: 0;
+}
+
+.c18 {
+  width: 1.25rem;
+  height: 1.25rem;
+  width: 2rem;
+  height: 2rem;
+}
+
+.c40 {
+  width: 1.25rem;
+  height: 1.25rem;
+}
+
+.c17 {
+  display: inline-block;
+  border-radius: 0.25rem;
+  font-weight: bold;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  position: relative;
+  color: #1e1e1e;
+  fill: #1e1e1e;
+}
+
+.c17:focus-within,
+.c17:focus {
+  position: relative;
+  outline: none !important;
+}
+
+.c17:focus-within::after,
+.c17:focus::after {
+  position: absolute;
+  top: -0.35rem;
+  right: -0.35rem;
+  bottom: -0.35rem;
+  left: -0.35rem;
+  content: '';
+  display: block;
+  border: solid rgba(0,125,250,0.6) 0.2rem;
+  border-radius: 0.5rem;
+  pointer-events: none;
+}
+
+.c17:hover {
+  color: #44aeff;
+  fill: #44aeff;
+}
+
+.c20 {
+  display: inline-block;
+  border-radius: 0.25rem;
+  font-weight: bold;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  position: relative;
+  color: rgb(255,120,26);
+  fill: rgb(255,120,26);
+}
+
+.c20:focus-within,
+.c20:focus {
+  position: relative;
+  outline: none !important;
+}
+
+.c20:focus-within::after,
+.c20:focus::after {
+  position: absolute;
+  top: -0.35rem;
+  right: -0.35rem;
+  bottom: -0.35rem;
+  left: -0.35rem;
+  content: '';
+  display: block;
+  border: solid rgba(0,125,250,0.6) 0.2rem;
+  border-radius: 0.5rem;
+  pointer-events: none;
+}
+
+.c20:hover {
+  color: #44aeff;
+  fill: #44aeff;
+}
+
+.c39 {
+  display: inline-block;
+  border-radius: 0.25rem;
+  font-weight: bold;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  position: relative;
+  color: #C50722;
+  fill: #C50722;
+}
+
+.c39:focus-within,
+.c39:focus {
+  position: relative;
+  outline: none !important;
+}
+
+.c39:focus-within::after,
+.c39:focus::after {
+  position: absolute;
+  top: -0.35rem;
+  right: -0.35rem;
+  bottom: -0.35rem;
+  left: -0.35rem;
+  content: '';
+  display: block;
+  border: solid rgba(0,125,250,0.6) 0.2rem;
+  border-radius: 0.5rem;
+  pointer-events: none;
+}
+
+.c39:hover {
+  color: #44aeff;
+  fill: #44aeff;
+}
+
+.c42 {
+  display: inline-block;
+  border-radius: 0.25rem;
+  font-weight: bold;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  position: relative;
+  color: #11388E;
+  fill: #11388E;
+}
+
+.c42:focus-within,
+.c42:focus {
+  position: relative;
+  outline: none !important;
+}
+
+.c42:focus-within::after,
+.c42:focus::after {
+  position: absolute;
+  top: -0.35rem;
+  right: -0.35rem;
+  bottom: -0.35rem;
+  left: -0.35rem;
+  content: '';
+  display: block;
+  border: solid rgba(0,125,250,0.6) 0.2rem;
+  border-radius: 0.5rem;
+  pointer-events: none;
+}
+
+.c42:hover {
+  color: #44aeff;
+  fill: #44aeff;
+}
+
+.c44 {
+  display: inline-block;
+  border-radius: 0.25rem;
+  font-weight: bold;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  position: relative;
+  color: #549C00;
+  fill: #549C00;
+}
+
+.c44:focus-within,
+.c44:focus {
+  position: relative;
+  outline: none !important;
+}
+
+.c44:focus-within::after,
+.c44:focus::after {
+  position: absolute;
+  top: -0.35rem;
+  right: -0.35rem;
+  bottom: -0.35rem;
+  left: -0.35rem;
+  content: '';
+  display: block;
+  border: solid rgba(0,125,250,0.6) 0.2rem;
+  border-radius: 0.5rem;
+  pointer-events: none;
+}
+
+.c44:hover {
+  color: #44aeff;
+  fill: #44aeff;
+}
+
+.c69 {
+  display: inline-block;
+  border-radius: 0.25rem;
+  font-weight: bold;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  position: relative;
+  color: #CE9708;
+  fill: #CE9708;
+}
+
+.c69:focus-within,
+.c69:focus {
+  position: relative;
+  outline: none !important;
+}
+
+.c69:focus-within::after,
+.c69:focus::after {
+  position: absolute;
+  top: -0.35rem;
+  right: -0.35rem;
+  bottom: -0.35rem;
+  left: -0.35rem;
+  content: '';
+  display: block;
+  border: solid rgba(0,125,250,0.6) 0.2rem;
+  border-radius: 0.5rem;
+  pointer-events: none;
+}
+
+.c69:hover {
+  color: #44aeff;
+  fill: #44aeff;
+}
+
+.c71 {
+  display: inline-block;
+  border-radius: 0.25rem;
+  font-weight: bold;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  position: relative;
+  color: white;
+  fill: white;
+}
+
+.c71:focus-within,
+.c71:focus {
+  position: relative;
+  outline: none !important;
+}
+
+.c71:focus-within::after,
+.c71:focus::after {
+  position: absolute;
+  top: -0.35rem;
+  right: -0.35rem;
+  bottom: -0.35rem;
+  left: -0.35rem;
+  content: '';
+  display: block;
+  border: solid rgba(0,125,250,0.6) 0.2rem;
+  border-radius: 0.5rem;
+  pointer-events: none;
+}
+
+.c71:hover {
+  color: #44aeff;
+  fill: #44aeff;
+}
+
+.c6 {
+  width: 100%;
+  color: #1e1e1e;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c8 {
+  margin: 3.34rem 0 0 0;
+}
+
+.c22 {
+  margin: 2.13rem 0 0 0;
+}
+
+.c3 {
+  margin: 2.3rem 0 0 0;
+}
+
+.c5 {
+  padding-top: 0;
+  opacity: 1;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+.c4 {
+  width: 100%;
+}
+
+.c1 {
+  -webkit-animation: bbwGtI 0.4s ease-in-out;
+  animation: bbwGtI 0.4s ease-in-out;
+}
+
+.c0 {
+  display: block;
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  overflow: hidden;
+  padding-bottom: 2rem;
+  max-width: 60rem;
+  padding-right: 1rem;
+  padding-left: 1rem;
+}
+
+.c11 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: calc(3 * 1rem);
+  min-width: calc(8 * 2rem);
+  border-radius: 0.375rem;
+  box-shadow: 0.2rem 0.2rem 0.5rem 0 rgba(37,32,31,0.3);
+  background: rgb(255,120,26);
+  color: #1e1e1e;
+  fill: #1e1e1e;
+}
+
+.c19 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: calc(3 * 1rem);
+  min-width: calc(8 * 2rem);
+  border-radius: 0.375rem;
+  box-shadow: 0.2rem 0.2rem 0.5rem 0 rgba(37,32,31,0.3);
+  background: white;
+  color: rgb(255,120,26);
+  fill: rgb(255,120,26);
+}
+
+.c23 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: calc(3 * 1rem);
+  min-width: calc(8 * 2rem);
+  border-radius: 0.375rem;
+  box-shadow: 0.2rem 0.2rem 0.5rem 0 rgba(37,32,31,0.3);
+  background: #94e564;
+  color: #1e1e1e;
+  fill: #1e1e1e;
+}
+
+.c24 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: calc(3 * 1rem);
+  min-width: calc(8 * 2rem);
+  border-radius: 0.375rem;
+  box-shadow: 0.2rem 0.2rem 0.5rem 0 rgba(37,32,31,0.3);
+  background: #11aadd;
+  color: #1e1e1e;
+  fill: #1e1e1e;
+}
+
+.c25 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: calc(3 * 1rem);
+  min-width: calc(8 * 2rem);
+  border-radius: 0.375rem;
+  box-shadow: 0.2rem 0.2rem 0.5rem 0 rgba(37,32,31,0.3);
+  background: #f1fc58;
+  color: #1e1e1e;
+  fill: #1e1e1e;
+}
+
+.c67 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: calc(3 * 1rem);
+  min-width: calc(8 * 2rem);
+  border-radius: 0.375rem;
+  box-shadow: 0.2rem 0.2rem 0.5rem 0 rgba(37,32,31,0.3);
+  background: #93D50A;
+  color: #1e1e1e;
+  fill: #1e1e1e;
+}
+
+.c68 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: calc(3 * 1rem);
+  min-width: calc(8 * 2rem);
+  border-radius: 0.375rem;
+  box-shadow: 0.2rem 0.2rem 0.5rem 0 rgba(37,32,31,0.3);
+  background: #0D313D;
+  color: #CE9708;
+  fill: #CE9708;
+}
+
+.c70 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: calc(3 * 1rem);
+  min-width: calc(8 * 2rem);
+  border-radius: 0.375rem;
+  box-shadow: 0.2rem 0.2rem 0.5rem 0 rgba(37,32,31,0.3);
+  background: #0D492C;
+  color: white;
+  fill: white;
+}
+
+.c13 {
+  text-align: center;
+}
+
+.c15 {
+  margin-top: 0.375rem;
+}
+
+.c16 {
+  position: absolute;
+  right: 0.375rem;
+  bottom: 0.375rem;
+}
+
+.c37 {
+  width: 14rem;
+  height: 14rem;
+  fill: none;
+  -webkit-filter: drop-shadow(0px 0px 0.4px #1e1e1e);
+  filter: drop-shadow(0px 0px 0.4px #1e1e1e);
+}
+
+.c26 {
+  position: relative;
+  width: 14rem;
+  height: 14rem;
+}
+
+.c27 {
+  width: 14rem;
+  height: 14rem;
+}
+
+.c28 {
+  fill: #a0a0a0;
+}
+
+.c29 {
+  fill: #d9d9d9;
+}
+
+.c30 {
+  fill: #C50722;
+}
+
+.c41 {
+  fill: #11388E;
+}
+
+.c43 {
+  fill: #549C00;
+}
+
+.c31 {
+  fill: none;
+}
+
+.c32 {
+  font-size: 0.3rem;
+  font-weight: bold;
+  fill: white;
+}
+
+.c33 {
+  text-shadow: 0px 0px 3px white;
+}
+
+.c34 {
+  fill: none;
+}
+
+.c35 {
+  font-size: 0.5rem;
+  font-weight: bold;
+  fill: #d9d9d9;
+}
+
+.c36 {
+  text-shadow: 1px 1px 2px #1e1e1e;
+}
+
+.c38 {
+  position: absolute;
+  right: calc(14rem / 2);
+  bottom: 0;
+}
+
+.c50 {
+  width: 18.6rem;
+  height: 18.6rem;
+}
+
+.c52 {
+  fill: #a0a0a0;
+}
+
+.c66 {
+  fill: #a0a0a0;
+  fill: white;
+}
+
+.c53 {
+  fill: #d9d9d9;
+}
+
+.c54 {
+  stroke: #1e1e1e;
+  fill: none;
+}
+
+.c55 {
+  fill: #C50722;
+}
+
+.c63 {
+  fill: #11388E;
+}
+
+.c65 {
+  fill: #549C00;
+}
+
+.c56 {
+  fill: none;
+}
+
+.c57 {
+  font-size: 0.65rem;
+  font-weight: light;
+  fill: white;
+  -webkit-letter-spacing: 0.25rem;
+  -moz-letter-spacing: 0.25rem;
+  -ms-letter-spacing: 0.25rem;
+  letter-spacing: 0.25rem;
+}
+
+.c58 {
+  text-shadow: 0px 0px 3px white;
+}
+
+.c59 {
+  fill: none;
+}
+
+.c60 {
+  font-size: 0.65rem;
+  font-weight: light;
+  fill: white;
+  -webkit-letter-spacing: 0.1rem;
+  -moz-letter-spacing: 0.1rem;
+  -ms-letter-spacing: 0.1rem;
+  letter-spacing: 0.1rem;
+}
+
+.c61 {
+  text-shadow: 0px 0px 3px white;
+}
+
+.c45 {
+  width: 23.15rem;
+  height: 23.15rem;
+}
+
+.c46 {
+  fill: #d9d9d9;
+}
+
+.c51 {
+  -webkit-clip-path: path('M0 22.5L0 0H100V22.5L50 50L0 22.5Z');
+  clip-path: path('M0 22.5L0 0H100V22.5L50 50L0 22.5Z');
+}
+
+.c62 {
+  -webkit-clip-path: path('M50 50L0 22.5V100H50V50Z');
+  clip-path: path('M50 50L0 22.5V100H50V50Z');
+}
+
+.c64 {
+  -webkit-clip-path: path('M100 100V22.5L50 50V100H100Z');
+  clip-path: path('M100 100V22.5L50 50V100H100Z');
+}
+
+.c47 {
+  fill: none;
+}
+
+.c48 {
+  font-size: 0.5rem;
+  font-weight: bold;
+  fill: #1e1e1e;
+}
+
+.c49 {
+  text-shadow: 1px 1px 2px white;
+}
+
+.c9 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-top: -2rem;
+  margin-left: -2rem;
+}
+
+.c9 > * {
+  margin-top: 2rem;
+  margin-left: 2rem;
+}
+
+.c10 {
+  margin-top: 0.375rem;
+}
+
+@media (prefers-color-scheme:dark) {
+  .c17:focus-within::after,
+  .c17:focus::after {
+    border-color: rgba(0,125,250,0.6);
+  }
+}
+
+@media (prefers-color-scheme:dark) {
+  .c17 {
+    color: #1e1e1e;
+    fill: #1e1e1e;
+  }
+
+  .c17:hover {
+    color: #44aeff;
+    fill: #44aeff;
+  }
+}
+
+@media (prefers-color-scheme:dark) {
+  .c20:focus-within::after,
+  .c20:focus::after {
+    border-color: rgba(0,125,250,0.6);
+  }
+}
+
+@media (prefers-color-scheme:dark) {
+  .c20 {
+    color: rgb(255,120,26);
+    fill: rgb(255,120,26);
+  }
+
+  .c20:hover {
+    color: #44aeff;
+    fill: #44aeff;
+  }
+}
+
+@media (prefers-color-scheme:dark) {
+  .c39:focus-within::after,
+  .c39:focus::after {
+    border-color: rgba(0,125,250,0.6);
+  }
+}
+
+@media (prefers-color-scheme:dark) {
+  .c39 {
+    color: #C50722;
+    fill: #C50722;
+  }
+
+  .c39:hover {
+    color: #44aeff;
+    fill: #44aeff;
+  }
+}
+
+@media (prefers-color-scheme:dark) {
+  .c42:focus-within::after,
+  .c42:focus::after {
+    border-color: rgba(0,125,250,0.6);
+  }
+}
+
+@media (prefers-color-scheme:dark) {
+  .c42 {
+    color: #11388E;
+    fill: #11388E;
+  }
+
+  .c42:hover {
+    color: #44aeff;
+    fill: #44aeff;
+  }
+}
+
+@media (prefers-color-scheme:dark) {
+  .c44:focus-within::after,
+  .c44:focus::after {
+    border-color: rgba(0,125,250,0.6);
+  }
+}
+
+@media (prefers-color-scheme:dark) {
+  .c44 {
+    color: #549C00;
+    fill: #549C00;
+  }
+
+  .c44:hover {
+    color: #44aeff;
+    fill: #44aeff;
+  }
+}
+
+@media (prefers-color-scheme:dark) {
+  .c69:focus-within::after,
+  .c69:focus::after {
+    border-color: rgba(0,125,250,0.6);
+  }
+}
+
+@media (prefers-color-scheme:dark) {
+  .c69 {
+    color: #CE9708;
+    fill: #CE9708;
+  }
+
+  .c69:hover {
+    color: #44aeff;
+    fill: #44aeff;
+  }
+}
+
+@media (prefers-color-scheme:dark) {
+  .c71:focus-within::after,
+  .c71:focus::after {
+    border-color: rgba(0,125,250,0.6);
+  }
+}
+
+@media (prefers-color-scheme:dark) {
+  .c71 {
+    color: white;
+    fill: white;
+  }
+
+  .c71:hover {
+    color: #44aeff;
+    fill: #44aeff;
+  }
+}
+
+@media (prefers-color-scheme:dark) {
+  .c6 {
+    color: white;
+  }
+}
+
+@media (min-width:50.25rem) {
+  .c0 {
+    padding-right: 2rem;
+    padding-left: 2rem;
+  }
+}
+
+@media (prefers-color-scheme:dark) {
+
+}
+
+@media (prefers-color-scheme:dark) {
+
+}
+
+@media (prefers-color-scheme:dark) {
+
+}
+
+@media (prefers-color-scheme:dark) {
+
+}
+
+@media (prefers-color-scheme:dark) {
+
+}
+
+@media (prefers-color-scheme:dark) {
+
+}
+
+@media (prefers-color-scheme:dark) {
+
+}
+
+@media (prefers-color-scheme:dark) {
+
+}
+
 <div>
   <div
-    class="sc-idXgbr huQjaB page-containerstyles__StyledPageContainer-sc-19l7k4-0"
+    class="c0 page-containerstyles__StyledPageContainer-sc-19l7k4-0"
     width="default"
   >
     <div
-      class="sc-fEXmlR rMnCl"
+      class="c1"
     >
       <h1
-        class="sc-bcXHqe bHgOFy sc-eDWCr fRcVBw"
+        class="c2 c3"
       >
         Medals
       </h1>
     </div>
     <div
-      class="sc-hBxehG hEuIQR"
+      class="c4"
     >
       <style>
         .js .animated-content__wrapper--hidden {
@@ -25,50 +959,50 @@ exports[`<Medals /> should render correctly 1`] = `
 }
       </style>
       <div
-        class="sc-ksBlkl jMYerx animated-content__wrapper--hidden"
+        class="c5 animated-content__wrapper--hidden"
       >
         <div
-          class="sc-jrcTuL drIieO"
+          class="c6"
         >
           <h1
-            class="sc-gswNZR gzqAHo sc-csuSiG hpbHKR"
+            class="c7 c8"
             id="tough-mudder"
           >
             Tough Mudder
           </h1>
           <div
-            class="sc-jrcTuL drIieO"
+            class="c6"
           >
             <div
-              class="sc-eJDSGI gveDit containerstyles__StyledMedalShelf-sc-153xxqc-0 bfWugp"
+              class="c9 c10"
             >
               <div
-                class="sc-dIfARi hfQxfY"
+                class="c11"
               >
                 <span
-                  class="sc-eDvSVe fsBEuM sc-hHTYSt faEtNj"
+                  class="c12 c13"
                 >
                   FULL
                 </span>
                 <span
-                  class="sc-eDvSVe ezgbKo sc-dmctIk hibDdF"
+                  class="c14 c15"
                 >
                   2016
                 </span>
                 <div
-                  class="sc-kgTSHT djQYTh"
+                  class="c16"
                 >
                   <a
-                    class="sc-iBYQkv leBbQr sc-fLcnxK"
+                    class="c17 "
                     href="https://www.strava.com/activities/787876867"
                     rel="noopener noreferrer"
                     target="_blank"
                   >
                     <span
-                      class="sc-eDvSVe ezgbKo"
+                      class="c14"
                     >
                       <svg
-                        class="sc-gKPRtg eIDWlk"
+                        class="c18"
                         height="18"
                         viewBox="0 0 24 24"
                         width="18"
@@ -87,32 +1021,32 @@ exports[`<Medals /> should render correctly 1`] = `
                 </div>
               </div>
               <div
-                class="sc-dIfARi jOAfXo"
+                class="c19"
               >
                 <span
-                  class="sc-eDvSVe fsBEuM sc-hHTYSt faEtNj"
+                  class="c12 c13"
                 >
                   HALF
                 </span>
                 <span
-                  class="sc-eDvSVe ezgbKo sc-dmctIk hibDdF"
+                  class="c14 c15"
                 >
                   2016
                 </span>
                 <div
-                  class="sc-kgTSHT djQYTh"
+                  class="c16"
                 >
                   <a
-                    class="sc-iBYQkv hPjeAH sc-fLcnxK"
+                    class="c20 "
                     href="https://www.strava.com/activities/787876472"
                     rel="noopener noreferrer"
                     target="_blank"
                   >
                     <span
-                      class="sc-eDvSVe ezgbKo"
+                      class="c14"
                     >
                       <svg
-                        class="sc-gKPRtg eIDWlk"
+                        class="c18"
                         height="18"
                         viewBox="0 0 24 24"
                         width="18"
@@ -131,32 +1065,32 @@ exports[`<Medals /> should render correctly 1`] = `
                 </div>
               </div>
               <div
-                class="sc-dIfARi hfQxfY"
+                class="c11"
               >
                 <span
-                  class="sc-eDvSVe fsBEuM sc-hHTYSt faEtNj"
+                  class="c12 c13"
                 >
                   FULL
                 </span>
                 <span
-                  class="sc-eDvSVe ezgbKo sc-dmctIk hibDdF"
+                  class="c14 c15"
                 >
                   2017
                 </span>
                 <div
-                  class="sc-kgTSHT djQYTh"
+                  class="c16"
                 >
                   <a
-                    class="sc-iBYQkv leBbQr sc-fLcnxK"
+                    class="c17 "
                     href="https://www.strava.com/activities/973508848"
                     rel="noopener noreferrer"
                     target="_blank"
                   >
                     <span
-                      class="sc-eDvSVe ezgbKo"
+                      class="c14"
                     >
                       <svg
-                        class="sc-gKPRtg eIDWlk"
+                        class="c18"
                         height="18"
                         viewBox="0 0 24 24"
                         width="18"
@@ -175,32 +1109,32 @@ exports[`<Medals /> should render correctly 1`] = `
                 </div>
               </div>
               <div
-                class="sc-dIfARi hfQxfY"
+                class="c11"
               >
                 <span
-                  class="sc-eDvSVe fsBEuM sc-hHTYSt faEtNj"
+                  class="c12 c13"
                 >
                   FULL
                 </span>
                 <span
-                  class="sc-eDvSVe ezgbKo sc-dmctIk hibDdF"
+                  class="c14 c15"
                 >
                   2017
                 </span>
                 <div
-                  class="sc-kgTSHT djQYTh"
+                  class="c16"
                 >
                   <a
-                    class="sc-iBYQkv leBbQr sc-fLcnxK"
+                    class="c17 "
                     href="https://www.strava.com/activities/998731470"
                     rel="noopener noreferrer"
                     target="_blank"
                   >
                     <span
-                      class="sc-eDvSVe ezgbKo"
+                      class="c14"
                     >
                       <svg
-                        class="sc-gKPRtg eIDWlk"
+                        class="c18"
                         height="18"
                         viewBox="0 0 24 24"
                         width="18"
@@ -219,32 +1153,32 @@ exports[`<Medals /> should render correctly 1`] = `
                 </div>
               </div>
               <div
-                class="sc-dIfARi hfQxfY"
+                class="c11"
               >
                 <span
-                  class="sc-eDvSVe fsBEuM sc-hHTYSt faEtNj"
+                  class="c12 c13"
                 >
                   FULL
                 </span>
                 <span
-                  class="sc-eDvSVe ezgbKo sc-dmctIk hibDdF"
+                  class="c14 c15"
                 >
                   2018
                 </span>
                 <div
-                  class="sc-kgTSHT djQYTh"
+                  class="c16"
                 >
                   <a
-                    class="sc-iBYQkv leBbQr sc-fLcnxK"
+                    class="c17 "
                     href="https://www.strava.com/activities/1551224197"
                     rel="noopener noreferrer"
                     target="_blank"
                   >
                     <span
-                      class="sc-eDvSVe ezgbKo"
+                      class="c14"
                     >
                       <svg
-                        class="sc-gKPRtg eIDWlk"
+                        class="c18"
                         height="18"
                         viewBox="0 0 24 24"
                         width="18"
@@ -265,51 +1199,51 @@ exports[`<Medals /> should render correctly 1`] = `
             </div>
           </div>
           <div
-            class="sc-jrcTuL drIieO"
+            class="c6"
           >
             <h1
-              class="sc-dkrFOg eRKGDm sc-csuSiG gvoVyF"
+              class="c21 c22"
               id="legionaire"
             >
               Legionaire
             </h1>
             <div
-              class="sc-eJDSGI gveDit containerstyles__StyledMedalShelf-sc-153xxqc-0 bfWugp"
+              class="c9 c10"
             >
               <div
-                class="sc-dIfARi fLygor"
+                class="c23"
               >
                 <span
-                  class="sc-eDvSVe fsBEuM sc-hHTYSt faEtNj"
+                  class="c12 c13"
                 >
                   2X TOUGH MUDDER
                 </span>
                 <div
-                  class="sc-kgTSHT djQYTh"
+                  class="c16"
                 />
               </div>
               <div
-                class="sc-dIfARi bwxhLI"
+                class="c24"
               >
                 <span
-                  class="sc-eDvSVe fsBEuM sc-hHTYSt faEtNj"
+                  class="c12 c13"
                 >
                   3X TOUGH MUDDER
                 </span>
                 <div
-                  class="sc-kgTSHT djQYTh"
+                  class="c16"
                 />
               </div>
               <div
-                class="sc-dIfARi dPpFFT"
+                class="c25"
               >
                 <span
-                  class="sc-eDvSVe fsBEuM sc-hHTYSt faEtNj"
+                  class="c12 c13"
                 >
                   4-6X TOUGH MUDDER
                 </span>
                 <div
-                  class="sc-kgTSHT djQYTh"
+                  class="c16"
                 />
               </div>
             </div>
@@ -318,7 +1252,7 @@ exports[`<Medals /> should render correctly 1`] = `
       </div>
     </div>
     <div
-      class="sc-hBxehG hEuIQR"
+      class="c4"
     >
       <style>
         .js .animated-content__wrapper--hidden {
@@ -327,63 +1261,63 @@ exports[`<Medals /> should render correctly 1`] = `
 }
       </style>
       <div
-        class="sc-ksBlkl jMYerx animated-content__wrapper--hidden"
+        class="c5 animated-content__wrapper--hidden"
       >
         <div
-          class="sc-jrcTuL drIieO"
+          class="c6"
         >
           <h1
-            class="sc-gswNZR gzqAHo sc-csuSiG hpbHKR"
+            class="c7 c8"
             id="spartan"
           >
             Spartan
           </h1>
           <div
-            class="sc-jrcTuL drIieO"
+            class="c6"
           >
             <div
-              class="sc-eJDSGI gveDit containerstyles__StyledMedalShelf-sc-153xxqc-0 bfWugp"
+              class="c9 c10"
             >
               <div
-                class="sc-iveFHk bQNbgU"
+                class="c26"
               >
                 <svg
-                  class="sc-cwSeag drvoVF"
+                  class="c27"
                   height="75"
                   viewBox="0 0 75 75"
                   width="75"
                   xmlns="http://www.w3.org/2000/svg"
                 >
                   <circle
-                    class="sc-lllmON guzdjJ"
+                    class="c28"
                     cx="37.5"
                     cy="37.5"
                     r="37.5"
                   />
                   <circle
-                    class="sc-iJnaPW eIMSeW"
+                    class="c29"
                     cx="37.5"
                     cy="37.5"
                     r="25.5"
                   />
                   <path
-                    class="sc-gikAfH zCPpr"
+                    class="c30"
                     color="#C50722"
                     d="M37.5 75C47.4456 75 56.9839 71.0491 64.0165 64.0165C71.0491 56.9839 75 47.4456 75 37.5C75 27.5544 71.0491 18.0161 64.0165 10.9835C56.9839 3.95088 47.4456 -1.186e-07 37.5 0V8.59567C45.1659 8.59567 52.5178 11.6409 57.9384 17.0616C63.3591 22.4822 66.4043 29.8341 66.4043 37.5C66.4043 45.1659 63.3591 52.5178 57.9384 57.9384C52.5178 63.3591 45.1659 66.4043 37.5 66.4043V75Z"
                   />
                   <path
-                    class="sc-ezOQGI jKXloR"
+                    class="c31"
                     d="M38 6C54.7705 6 69 20.7339 69 36.9919C69 53.7581 55.7869 69 38 69"
                     id="textLine1"
                   />
                   <text
-                    class="sc-bYMpWt kYzGbS"
+                    class="c32"
                     color="white"
                     width="500"
                   >
                     <textpath
                       alignment-baseline="center"
-                      class="sc-kMjNwy hTQqoh"
+                      class="c33"
                       startOffset="15"
                       xlink:href="#textLine1"
                     >
@@ -394,17 +1328,17 @@ exports[`<Medals /> should render correctly 1`] = `
                     </textpath>
                   </text>
                   <path
-                    class="sc-ilhmMj eqKIkt"
+                    class="c34"
                     d="M37 66C21.8525 66 8.99999 52.6694 9 37.9597C9 22.7903 20.9344 9 37 9"
                     id="textLine2"
                   />
                   <text
-                    class="sc-jIRcFI bperrJ"
+                    class="c35"
                     width="500"
                   >
                     <textpath
                       alignment-baseline="center"
-                      class="sc-hhOBVt zHyds"
+                      class="c36"
                       startOffset="16"
                       xlink:href="#textLine2"
                     >
@@ -414,7 +1348,7 @@ exports[`<Medals /> should render correctly 1`] = `
                     </textpath>
                   </text>
                   <svg
-                    class="sc-bBABsx cKsfHp sc-gYbzsP sc-gYbzsP"
+                    class="c37 "
                     height="44"
                     viewBox="0 0 200 200"
                     width="44"
@@ -466,19 +1400,19 @@ exports[`<Medals /> should render correctly 1`] = `
                   </svg>
                 </svg>
                 <div
-                  class="sc-cCjUiG eRcrJi"
+                  class="c38"
                 >
                   <a
-                    class="sc-iBYQkv eXunf sc-cjibBx"
+                    class="c39 "
                     href="https://www.strava.com/activities/7297440877"
                     rel="noopener noreferrer"
                     target="_blank"
                   >
                     <span
-                      class="sc-eDvSVe ezgbKo"
+                      class="c14"
                     >
                       <svg
-                        class="sc-gKPRtg eSdzmv"
+                        class="c40"
                         height="18"
                         viewBox="0 0 24 24"
                         width="18"
@@ -497,45 +1431,45 @@ exports[`<Medals /> should render correctly 1`] = `
                 </div>
               </div>
               <div
-                class="sc-iveFHk bQNbgU"
+                class="c26"
               >
                 <svg
-                  class="sc-cwSeag drvoVF"
+                  class="c27"
                   height="75"
                   viewBox="0 0 75 75"
                   width="75"
                   xmlns="http://www.w3.org/2000/svg"
                 >
                   <circle
-                    class="sc-lllmON guzdjJ"
+                    class="c28"
                     cx="37.5"
                     cy="37.5"
                     r="37.5"
                   />
                   <circle
-                    class="sc-iJnaPW eIMSeW"
+                    class="c29"
                     cx="37.5"
                     cy="37.5"
                     r="25.5"
                   />
                   <path
-                    class="sc-gikAfH kiauBU"
+                    class="c41"
                     color="#11388E"
                     d="M37.5 75C47.4456 75 56.9839 71.0491 64.0165 64.0165C71.0491 56.9839 75 47.4456 75 37.5C75 27.5544 71.0491 18.0161 64.0165 10.9835C56.9839 3.95088 47.4456 -1.186e-07 37.5 0V8.59567C45.1659 8.59567 52.5178 11.6409 57.9384 17.0616C63.3591 22.4822 66.4043 29.8341 66.4043 37.5C66.4043 45.1659 63.3591 52.5178 57.9384 57.9384C52.5178 63.3591 45.1659 66.4043 37.5 66.4043V75Z"
                   />
                   <path
-                    class="sc-ezOQGI jKXloR"
+                    class="c31"
                     d="M38 6C54.7705 6 69 20.7339 69 36.9919C69 53.7581 55.7869 69 38 69"
                     id="textLine1"
                   />
                   <text
-                    class="sc-bYMpWt kYzGbS"
+                    class="c32"
                     color="white"
                     width="500"
                   >
                     <textpath
                       alignment-baseline="center"
-                      class="sc-kMjNwy hTQqoh"
+                      class="c33"
                       startOffset="15"
                       xlink:href="#textLine1"
                     >
@@ -546,17 +1480,17 @@ exports[`<Medals /> should render correctly 1`] = `
                     </textpath>
                   </text>
                   <path
-                    class="sc-ilhmMj eqKIkt"
+                    class="c34"
                     d="M37 66C21.8525 66 8.99999 52.6694 9 37.9597C9 22.7903 20.9344 9 37 9"
                     id="textLine2"
                   />
                   <text
-                    class="sc-jIRcFI bperrJ"
+                    class="c35"
                     width="500"
                   >
                     <textpath
                       alignment-baseline="center"
-                      class="sc-hhOBVt zHyds"
+                      class="c36"
                       startOffset="16"
                       xlink:href="#textLine2"
                     >
@@ -566,7 +1500,7 @@ exports[`<Medals /> should render correctly 1`] = `
                     </textpath>
                   </text>
                   <svg
-                    class="sc-bBABsx cKsfHp sc-gYbzsP sc-gYbzsP"
+                    class="c37 "
                     height="44"
                     viewBox="0 0 200 200"
                     width="44"
@@ -618,19 +1552,19 @@ exports[`<Medals /> should render correctly 1`] = `
                   </svg>
                 </svg>
                 <div
-                  class="sc-cCjUiG eRcrJi"
+                  class="c38"
                 >
                   <a
-                    class="sc-iBYQkv etXXuj sc-cjibBx"
+                    class="c42 "
                     href="https://www.strava.com/activities/7484273069"
                     rel="noopener noreferrer"
                     target="_blank"
                   >
                     <span
-                      class="sc-eDvSVe ezgbKo"
+                      class="c14"
                     >
                       <svg
-                        class="sc-gKPRtg eSdzmv"
+                        class="c40"
                         height="18"
                         viewBox="0 0 24 24"
                         width="18"
@@ -649,45 +1583,45 @@ exports[`<Medals /> should render correctly 1`] = `
                 </div>
               </div>
               <div
-                class="sc-iveFHk bQNbgU"
+                class="c26"
               >
                 <svg
-                  class="sc-cwSeag drvoVF"
+                  class="c27"
                   height="75"
                   viewBox="0 0 75 75"
                   width="75"
                   xmlns="http://www.w3.org/2000/svg"
                 >
                   <circle
-                    class="sc-lllmON guzdjJ"
+                    class="c28"
                     cx="37.5"
                     cy="37.5"
                     r="37.5"
                   />
                   <circle
-                    class="sc-iJnaPW eIMSeW"
+                    class="c29"
                     cx="37.5"
                     cy="37.5"
                     r="25.5"
                   />
                   <path
-                    class="sc-gikAfH gdtKmx"
+                    class="c43"
                     color="#549C00"
                     d="M37.5 75C47.4456 75 56.9839 71.0491 64.0165 64.0165C71.0491 56.9839 75 47.4456 75 37.5C75 27.5544 71.0491 18.0161 64.0165 10.9835C56.9839 3.95088 47.4456 -1.186e-07 37.5 0V8.59567C45.1659 8.59567 52.5178 11.6409 57.9384 17.0616C63.3591 22.4822 66.4043 29.8341 66.4043 37.5C66.4043 45.1659 63.3591 52.5178 57.9384 57.9384C52.5178 63.3591 45.1659 66.4043 37.5 66.4043V75Z"
                   />
                   <path
-                    class="sc-ezOQGI jKXloR"
+                    class="c31"
                     d="M38 6C54.7705 6 69 20.7339 69 36.9919C69 53.7581 55.7869 69 38 69"
                     id="textLine1"
                   />
                   <text
-                    class="sc-bYMpWt kYzGbS"
+                    class="c32"
                     color="white"
                     width="500"
                   >
                     <textpath
                       alignment-baseline="center"
-                      class="sc-kMjNwy hTQqoh"
+                      class="c33"
                       startOffset="15"
                       xlink:href="#textLine1"
                     >
@@ -698,17 +1632,17 @@ exports[`<Medals /> should render correctly 1`] = `
                     </textpath>
                   </text>
                   <path
-                    class="sc-ilhmMj eqKIkt"
+                    class="c34"
                     d="M37 66C21.8525 66 8.99999 52.6694 9 37.9597C9 22.7903 20.9344 9 37 9"
                     id="textLine2"
                   />
                   <text
-                    class="sc-jIRcFI bperrJ"
+                    class="c35"
                     width="500"
                   >
                     <textpath
                       alignment-baseline="center"
-                      class="sc-hhOBVt zHyds"
+                      class="c36"
                       startOffset="16"
                       xlink:href="#textLine2"
                     >
@@ -718,7 +1652,7 @@ exports[`<Medals /> should render correctly 1`] = `
                     </textpath>
                   </text>
                   <svg
-                    class="sc-bBABsx cKsfHp sc-gYbzsP sc-gYbzsP"
+                    class="c37 "
                     height="44"
                     viewBox="0 0 200 200"
                     width="44"
@@ -770,19 +1704,19 @@ exports[`<Medals /> should render correctly 1`] = `
                   </svg>
                 </svg>
                 <div
-                  class="sc-cCjUiG eRcrJi"
+                  class="c38"
                 >
                   <a
-                    class="sc-iBYQkv buOSyj sc-cjibBx"
+                    class="c44 "
                     href="https://www.strava.com/activities/7931592133"
                     rel="noopener noreferrer"
                     target="_blank"
                   >
                     <span
-                      class="sc-eDvSVe ezgbKo"
+                      class="c14"
                     >
                       <svg
-                        class="sc-gKPRtg eSdzmv"
+                        class="c40"
                         height="18"
                         viewBox="0 0 24 24"
                         width="18"
@@ -803,45 +1737,45 @@ exports[`<Medals /> should render correctly 1`] = `
             </div>
           </div>
           <div
-            class="sc-jrcTuL drIieO"
+            class="c6"
           >
             <h1
-              class="sc-dkrFOg eRKGDm sc-csuSiG gvoVyF"
+              class="c21 c22"
               id="trifectas"
             >
               Trifectas
             </h1>
             <div
-              class="sc-eJDSGI gveDit containerstyles__StyledMedalShelf-sc-153xxqc-0 bfWugp"
+              class="c9 c10"
             >
               <svg
-                class="sc-hTBuwn fafXRX"
+                class="c45"
                 height="124"
                 viewBox="0 0 124 124"
                 width="124"
                 xmlns="http://www.w3.org/2000/svg"
               >
                 <circle
-                  class="sc-jfTVlA EkiIa"
+                  class="c46"
                   cx="62"
                   cy="62"
                   r="62"
                 />
                 <circle
-                  class="sc-lbVpMG bCFEbk"
+                  class="c47"
                   cx="62"
                   cy="62"
                   id="outerTextLine"
                   r="53"
                 />
                 <text
-                  class="sc-iOeugr hAuyFK"
+                  class="c48"
                   color="#1e1e1e"
                   width="500"
                 >
                   <textpath
                     alignment-baseline="center"
-                    class="sc-jfvxQR kNnyAR"
+                    class="c49"
                     startOffset="166"
                     xlink:href="#outerTextLine"
                   >
@@ -849,7 +1783,7 @@ exports[`<Medals /> should render correctly 1`] = `
                   </textpath>
                   <textpath
                     alignment-baseline="center"
-                    class="sc-jfvxQR kNnyAR"
+                    class="c49"
                     startOffset="286"
                     xlink:href="#outerTextLine"
                   >
@@ -857,7 +1791,7 @@ exports[`<Medals /> should render correctly 1`] = `
                   </textpath>
                   <textpath
                     alignment-baseline="center"
-                    class="sc-jfvxQR kNnyAR"
+                    class="c49"
                     startOffset="58"
                     xlink:href="#outerTextLine"
                   >
@@ -865,7 +1799,7 @@ exports[`<Medals /> should render correctly 1`] = `
                   </textpath>
                 </text>
                 <svg
-                  class="sc-jcMfQk ckVvDJ sc-gScZFl hbWAYa"
+                  class="c50 c51"
                   height="100"
                   viewBox="0 0 100 100"
                   width="100"
@@ -874,41 +1808,41 @@ exports[`<Medals /> should render correctly 1`] = `
                   y="12"
                 >
                   <circle
-                    class="sc-cabOPr jzPQkF"
+                    class="c52"
                     cx="50"
                     cy="50"
                     r="50"
                   />
                   <circle
-                    class="sc-iTFTee klSjMC"
+                    class="c53"
                     cx="50"
                     cy="50"
                     r="31.5"
                   />
                   <circle
-                    class="sc-iAEawV dQEKSk"
+                    class="c54"
                     cx="50"
                     cy="50"
                     r="31.5"
                   />
                   <path
-                    class="sc-eeMvmM gDmQXO"
+                    class="c55"
                     color="#C50722"
                     d="M6 50C6 74.3005 25.6995 94 50 94C74.3005 94 94 74.3005 94 50C94 25.6995 74.3005 6 50 6C25.6995 6 6 25.6995 6 50ZM85.485 50C85.485 69.5978 69.5978 85.485 50 85.485C30.4022 85.485 14.515 69.5978 14.515 50C14.515 30.4022 30.4022 14.515 50 14.515C69.5978 14.515 85.485 30.4022 85.485 50Z"
                   />
                   <path
-                    class="sc-cUEOzv GrWZq"
+                    class="c56"
                     d="M13.5 49.75C13.5 29.1786 31.0761 13.75 50 13.75C68.9239 13.75 86.5 29.1786 86.5 49.75"
                     id="textLineTop0"
                   />
                   <text
-                    class="sc-jOiSOi dJOxnz"
+                    class="c57"
                     color="white"
                     width="500"
                   >
                     <textpath
                       alignment-baseline="center"
-                      class="sc-dPWrhe cssFHl"
+                      class="c58"
                       startOffset="0.5"
                       xlink:href="#textLineTop0"
                     >
@@ -917,18 +1851,18 @@ exports[`<Medals /> should render correctly 1`] = `
                     </textpath>
                   </text>
                   <path
-                    class="sc-bCfvAP hvSKku"
+                    class="c59"
                     d="M5.5 48.75C5.5 71.5024 24.9509 93.6081 49.2514 93.7493C73.4158 93.8897 93.5 74.0305 93.5 49.7612"
                     id="textLineBottom0"
                   />
                   <text
-                    class="sc-cOxWqc bmGlRK"
+                    class="c60"
                     color="white"
                     width="500"
                   >
                     <textpath
                       alignment-baseline="center"
-                      class="sc-AHaJN blCjmF"
+                      class="c61"
                       startOffset="23"
                       xlink:href="#textLineBottom0"
                     >
@@ -936,7 +1870,7 @@ exports[`<Medals /> should render correctly 1`] = `
                     </textpath>
                   </text>
                   <svg
-                    class="sc-bBABsx cKsfHp sc-khsqcC sc-khsqcC"
+                    class="c37 "
                     height="55"
                     viewBox="0 0 200 200"
                     width="55"
@@ -988,7 +1922,7 @@ exports[`<Medals /> should render correctly 1`] = `
                   </svg>
                 </svg>
                 <svg
-                  class="sc-jcMfQk ckVvDJ sc-gScZFl aWbKo"
+                  class="c50 c62"
                   height="100"
                   viewBox="0 0 100 100"
                   width="100"
@@ -997,41 +1931,41 @@ exports[`<Medals /> should render correctly 1`] = `
                   y="12"
                 >
                   <circle
-                    class="sc-cabOPr jzPQkF"
+                    class="c52"
                     cx="50"
                     cy="50"
                     r="50"
                   />
                   <circle
-                    class="sc-iTFTee klSjMC"
+                    class="c53"
                     cx="50"
                     cy="50"
                     r="31.5"
                   />
                   <circle
-                    class="sc-iAEawV dQEKSk"
+                    class="c54"
                     cx="50"
                     cy="50"
                     r="31.5"
                   />
                   <path
-                    class="sc-eeMvmM caUKeR"
+                    class="c63"
                     color="#11388E"
                     d="M6 50C6 74.3005 25.6995 94 50 94C74.3005 94 94 74.3005 94 50C94 25.6995 74.3005 6 50 6C25.6995 6 6 25.6995 6 50ZM85.485 50C85.485 69.5978 69.5978 85.485 50 85.485C30.4022 85.485 14.515 69.5978 14.515 50C14.515 30.4022 30.4022 14.515 50 14.515C69.5978 14.515 85.485 30.4022 85.485 50Z"
                   />
                   <path
-                    class="sc-cUEOzv GrWZq"
+                    class="c56"
                     d="M13.5 49.75C13.5 29.1786 31.0761 13.75 50 13.75C68.9239 13.75 86.5 29.1786 86.5 49.75"
                     id="textLineTop1"
                   />
                   <text
-                    class="sc-jOiSOi dJOxnz"
+                    class="c57"
                     color="white"
                     width="500"
                   >
                     <textpath
                       alignment-baseline="center"
-                      class="sc-dPWrhe cssFHl"
+                      class="c58"
                       startOffset="0.5"
                       xlink:href="#textLineTop1"
                     >
@@ -1040,18 +1974,18 @@ exports[`<Medals /> should render correctly 1`] = `
                     </textpath>
                   </text>
                   <path
-                    class="sc-bCfvAP hvSKku"
+                    class="c59"
                     d="M5.5 48.75C5.5 71.5024 24.9509 93.6081 49.2514 93.7493C73.4158 93.8897 93.5 74.0305 93.5 49.7612"
                     id="textLineBottom1"
                   />
                   <text
-                    class="sc-cOxWqc bmGlRK"
+                    class="c60"
                     color="white"
                     width="500"
                   >
                     <textpath
                       alignment-baseline="center"
-                      class="sc-AHaJN blCjmF"
+                      class="c61"
                       startOffset="23"
                       xlink:href="#textLineBottom1"
                     >
@@ -1059,7 +1993,7 @@ exports[`<Medals /> should render correctly 1`] = `
                     </textpath>
                   </text>
                   <svg
-                    class="sc-bBABsx cKsfHp sc-khsqcC sc-khsqcC"
+                    class="c37 "
                     height="55"
                     viewBox="0 0 200 200"
                     width="55"
@@ -1111,7 +2045,7 @@ exports[`<Medals /> should render correctly 1`] = `
                   </svg>
                 </svg>
                 <svg
-                  class="sc-jcMfQk ckVvDJ sc-gScZFl bOrMap"
+                  class="c50 c64"
                   height="100"
                   viewBox="0 0 100 100"
                   width="100"
@@ -1120,41 +2054,41 @@ exports[`<Medals /> should render correctly 1`] = `
                   y="12"
                 >
                   <circle
-                    class="sc-cabOPr jzPQkF"
+                    class="c52"
                     cx="50"
                     cy="50"
                     r="50"
                   />
                   <circle
-                    class="sc-iTFTee klSjMC"
+                    class="c53"
                     cx="50"
                     cy="50"
                     r="31.5"
                   />
                   <circle
-                    class="sc-iAEawV dQEKSk"
+                    class="c54"
                     cx="50"
                     cy="50"
                     r="31.5"
                   />
                   <path
-                    class="sc-eeMvmM jLFUmg"
+                    class="c65"
                     color="#549C00"
                     d="M6 50C6 74.3005 25.6995 94 50 94C74.3005 94 94 74.3005 94 50C94 25.6995 74.3005 6 50 6C25.6995 6 6 25.6995 6 50ZM85.485 50C85.485 69.5978 69.5978 85.485 50 85.485C30.4022 85.485 14.515 69.5978 14.515 50C14.515 30.4022 30.4022 14.515 50 14.515C69.5978 14.515 85.485 30.4022 85.485 50Z"
                   />
                   <path
-                    class="sc-cUEOzv GrWZq"
+                    class="c56"
                     d="M13.5 49.75C13.5 29.1786 31.0761 13.75 50 13.75C68.9239 13.75 86.5 29.1786 86.5 49.75"
                     id="textLineTop2"
                   />
                   <text
-                    class="sc-jOiSOi dJOxnz"
+                    class="c57"
                     color="white"
                     width="500"
                   >
                     <textpath
                       alignment-baseline="center"
-                      class="sc-dPWrhe cssFHl"
+                      class="c58"
                       startOffset="0.5"
                       xlink:href="#textLineTop2"
                     >
@@ -1163,18 +2097,18 @@ exports[`<Medals /> should render correctly 1`] = `
                     </textpath>
                   </text>
                   <path
-                    class="sc-bCfvAP hvSKku"
+                    class="c59"
                     d="M5.5 48.75C5.5 71.5024 24.9509 93.6081 49.2514 93.7493C73.4158 93.8897 93.5 74.0305 93.5 49.7612"
                     id="textLineBottom2"
                   />
                   <text
-                    class="sc-cOxWqc bmGlRK"
+                    class="c60"
                     color="white"
                     width="500"
                   >
                     <textpath
                       alignment-baseline="center"
-                      class="sc-AHaJN blCjmF"
+                      class="c61"
                       startOffset="23"
                       xlink:href="#textLineBottom2"
                     >
@@ -1182,7 +2116,7 @@ exports[`<Medals /> should render correctly 1`] = `
                     </textpath>
                   </text>
                   <svg
-                    class="sc-bBABsx cKsfHp sc-khsqcC sc-khsqcC"
+                    class="c37 "
                     height="55"
                     viewBox="0 0 200 200"
                     width="55"
@@ -1237,45 +2171,45 @@ exports[`<Medals /> should render correctly 1`] = `
             </div>
           </div>
           <div
-            class="sc-jrcTuL drIieO"
+            class="c6"
           >
             <h1
-              class="sc-dkrFOg eRKGDm sc-csuSiG gvoVyF"
+              class="c21 c22"
               id="other-wedges"
             >
               Other wedges
             </h1>
             <div
-              class="sc-eJDSGI gveDit containerstyles__StyledMedalShelf-sc-153xxqc-0 bfWugp"
+              class="c9 c10"
             >
               <svg
-                class="sc-hTBuwn fafXRX"
+                class="c45"
                 height="124"
                 viewBox="0 0 124 124"
                 width="124"
                 xmlns="http://www.w3.org/2000/svg"
               >
                 <circle
-                  class="sc-jfTVlA EkiIa"
+                  class="c46"
                   cx="62"
                   cy="62"
                   r="62"
                 />
                 <circle
-                  class="sc-lbVpMG bCFEbk"
+                  class="c47"
                   cx="62"
                   cy="62"
                   id="outerTextLine"
                   r="53"
                 />
                 <text
-                  class="sc-iOeugr hAuyFK"
+                  class="c48"
                   color="#1e1e1e"
                   width="500"
                 >
                   <textpath
                     alignment-baseline="center"
-                    class="sc-jfvxQR kNnyAR"
+                    class="c49"
                     startOffset="166"
                     xlink:href="#outerTextLine"
                   >
@@ -1283,7 +2217,7 @@ exports[`<Medals /> should render correctly 1`] = `
                   </textpath>
                   <textpath
                     alignment-baseline="center"
-                    class="sc-jfvxQR kNnyAR"
+                    class="c49"
                     startOffset="286"
                     xlink:href="#outerTextLine"
                   >
@@ -1291,7 +2225,7 @@ exports[`<Medals /> should render correctly 1`] = `
                   </textpath>
                   <textpath
                     alignment-baseline="center"
-                    class="sc-jfvxQR kNnyAR"
+                    class="c49"
                     startOffset="58"
                     xlink:href="#outerTextLine"
                   >
@@ -1299,7 +2233,7 @@ exports[`<Medals /> should render correctly 1`] = `
                   </textpath>
                 </text>
                 <svg
-                  class="sc-jcMfQk ckVvDJ sc-gScZFl hbWAYa"
+                  class="c50 c51"
                   height="100"
                   viewBox="0 0 100 100"
                   width="100"
@@ -1308,13 +2242,13 @@ exports[`<Medals /> should render correctly 1`] = `
                   y="12"
                 >
                   <circle
-                    class="sc-cabOPr htnTxs"
+                    class="c66"
                     cx="50"
                     cy="50"
                     r="50"
                   />
                   <svg
-                    class="sc-bBABsx cKsfHp sc-khsqcC sc-khsqcC"
+                    class="c37 "
                     height="18.6rem"
                     viewBox="0 0 200 200"
                     width="18.6rem"
@@ -1372,7 +2306,7 @@ exports[`<Medals /> should render correctly 1`] = `
       </div>
     </div>
     <div
-      class="sc-hBxehG hEuIQR"
+      class="c4"
     >
       <style>
         .js .animated-content__wrapper--hidden {
@@ -1381,50 +2315,50 @@ exports[`<Medals /> should render correctly 1`] = `
 }
       </style>
       <div
-        class="sc-ksBlkl jMYerx animated-content__wrapper--hidden"
+        class="c5 animated-content__wrapper--hidden"
       >
         <div
-          class="sc-jrcTuL drIieO"
+          class="c6"
         >
           <h1
-            class="sc-gswNZR gzqAHo sc-csuSiG hpbHKR"
+            class="c7 c8"
             id="runs"
           >
             Runs
           </h1>
           <div
-            class="sc-jrcTuL drIieO"
+            class="c6"
           >
             <div
-              class="sc-eJDSGI gveDit containerstyles__StyledMedalShelf-sc-153xxqc-0 bfWugp"
+              class="c9 c10"
             >
               <div
-                class="sc-dIfARi klElyS"
+                class="c67"
               >
                 <span
-                  class="sc-eDvSVe fsBEuM sc-hHTYSt faEtNj"
+                  class="c12 c13"
                 >
                   New Forest Half Marathon
                 </span>
                 <span
-                  class="sc-eDvSVe ezgbKo sc-dmctIk hibDdF"
+                  class="c14 c15"
                 >
                   2022
                 </span>
                 <div
-                  class="sc-kgTSHT djQYTh"
+                  class="c16"
                 >
                   <a
-                    class="sc-iBYQkv leBbQr sc-fLcnxK"
+                    class="c17 "
                     href="https://www.strava.com/activities/7790895383"
                     rel="noopener noreferrer"
                     target="_blank"
                   >
                     <span
-                      class="sc-eDvSVe ezgbKo"
+                      class="c14"
                     >
                       <svg
-                        class="sc-gKPRtg eIDWlk"
+                        class="c18"
                         height="18"
                         viewBox="0 0 24 24"
                         width="18"
@@ -1448,7 +2382,7 @@ exports[`<Medals /> should render correctly 1`] = `
       </div>
     </div>
     <div
-      class="sc-hBxehG hEuIQR"
+      class="c4"
     >
       <style>
         .js .animated-content__wrapper--hidden {
@@ -1457,50 +2391,50 @@ exports[`<Medals /> should render correctly 1`] = `
 }
       </style>
       <div
-        class="sc-ksBlkl jMYerx animated-content__wrapper--hidden"
+        class="c5 animated-content__wrapper--hidden"
       >
         <div
-          class="sc-jrcTuL drIieO"
+          class="c6"
         >
           <h1
-            class="sc-gswNZR gzqAHo sc-csuSiG hpbHKR"
+            class="c7 c8"
             id="treks"
           >
             Treks
           </h1>
           <div
-            class="sc-jrcTuL drIieO"
+            class="c6"
           >
             <div
-              class="sc-eJDSGI gveDit containerstyles__StyledMedalShelf-sc-153xxqc-0 bfWugp"
+              class="c9 c10"
             >
               <div
-                class="sc-dIfARi bkXQAV"
+                class="c68"
               >
                 <span
-                  class="sc-eDvSVe fsBEuM sc-hHTYSt faEtNj"
+                  class="c12 c13"
                 >
                   Trekfest 50km
                 </span>
                 <span
-                  class="sc-eDvSVe ezgbKo sc-dmctIk hibDdF"
+                  class="c14 c15"
                 >
                   2017
                 </span>
                 <div
-                  class="sc-kgTSHT djQYTh"
+                  class="c16"
                 >
                   <a
-                    class="sc-iBYQkv cIQYRn sc-fLcnxK"
+                    class="c69 "
                     href="https://www.strava.com/activities/1019627751"
                     rel="noopener noreferrer"
                     target="_blank"
                   >
                     <span
-                      class="sc-eDvSVe ezgbKo"
+                      class="c14"
                     >
                       <svg
-                        class="sc-gKPRtg eIDWlk"
+                        class="c18"
                         height="18"
                         viewBox="0 0 24 24"
                         width="18"
@@ -1519,32 +2453,32 @@ exports[`<Medals /> should render correctly 1`] = `
                 </div>
               </div>
               <div
-                class="sc-dIfARi bLEAlc"
+                class="c70"
               >
                 <span
-                  class="sc-eDvSVe fsBEuM sc-hHTYSt faEtNj"
+                  class="c12 c13"
                 >
                   Chiltern 50km Ultra Challenge
                 </span>
                 <span
-                  class="sc-eDvSVe ezgbKo sc-dmctIk hibDdF"
+                  class="c14 c15"
                 >
                   2022
                 </span>
                 <div
-                  class="sc-kgTSHT djQYTh"
+                  class="c16"
                 >
                   <a
-                    class="sc-iBYQkv kTMdxn sc-fLcnxK"
+                    class="c71 "
                     href="https://www.strava.com/activities/7859623082"
                     rel="noopener noreferrer"
                     target="_blank"
                   >
                     <span
-                      class="sc-eDvSVe ezgbKo"
+                      class="c14"
                     >
                       <svg
-                        class="sc-gKPRtg eIDWlk"
+                        class="c18"
                         height="18"
                         viewBox="0 0 24 24"
                         width="18"

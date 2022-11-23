@@ -1,13 +1,166 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<Coffee /> should render correctly 1`] = `
+.c11 {
+  width: 1.25rem;
+  height: 1.25rem;
+}
+
+.c8 {
+  display: inline-block;
+  border-radius: 0.25rem;
+  font-weight: bold;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  position: relative;
+  color: darkorchid;
+  fill: darkorchid;
+}
+
+.c8:focus-within,
+.c8:focus {
+  position: relative;
+  outline: none !important;
+}
+
+.c8:focus-within::after,
+.c8:focus::after {
+  position: absolute;
+  top: -0.35rem;
+  right: -0.35rem;
+  bottom: -0.35rem;
+  left: -0.35rem;
+  content: '';
+  display: block;
+  border: solid rgba(0,125,250,0.6) 0.2rem;
+  border-radius: 0.5rem;
+  pointer-events: none;
+}
+
+.c8:hover {
+  color: #44aeff;
+  fill: #44aeff;
+}
+
+.c10 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  width: 0.4rem;
+  height: 1rem;
+  margin-left: 0.55rem;
+}
+
+.c12 {
+  position: absolute;
+  width: 1rem;
+  height: 1rem;
+  margin-top: 0.12rem;
+  margin-left: -0.45rem;
+}
+
+.c4 {
+  margin: 0;
+  font-size: 2.4rem;
+  font-weight: bold;
+}
+
+.c9 {
+  margin: 0;
+}
+
+.c5 {
+  margin: 2.3rem 0 0 0;
+}
+
+.c2 {
+  padding-top: 0;
+  opacity: 1;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+.c1 {
+  width: 100%;
+}
+
+.c3 {
+  -webkit-animation: bbwGtI 0.4s ease-in-out;
+  animation: bbwGtI 0.4s ease-in-out;
+}
+
+.c0 {
+  display: block;
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  overflow: hidden;
+  padding-bottom: 2rem;
+  max-width: 60rem;
+  padding-right: 1rem;
+  padding-left: 1rem;
+}
+
+.c6 {
+  display: inline-block;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  line-height: 1.5;
+  margin-top: 2rem;
+}
+
+.c6:first-of-type {
+  margin-top: 0.86rem;
+}
+
+.c7 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.c7 > *:not(:first-child) {
+  margin-top: 1rem;
+}
+
+@media (prefers-color-scheme:dark) {
+  .c8:focus-within::after,
+  .c8:focus::after {
+    border-color: rgba(0,125,250,0.6);
+  }
+}
+
+@media (prefers-color-scheme:dark) {
+  .c8 {
+    color: orchid;
+    fill: orchid;
+  }
+
+  .c8:hover {
+    color: #44aeff;
+    fill: #44aeff;
+  }
+}
+
+@media (min-width:50.25rem) {
+  .c0 {
+    padding-right: 2rem;
+    padding-left: 2rem;
+  }
+}
+
 <div>
   <div
-    class="sc-hBxehG ekKVJL page-containerstyles__StyledPageContainer-sc-19l7k4-0"
+    class="c0 page-containerstyles__StyledPageContainer-sc-19l7k4-0"
     width="default"
   >
     <div
-      class="sc-csuSiG icikwB"
+      class="c1"
     >
       <style>
         .js .animated-content__wrapper--hidden {
@@ -15,48 +168,48 @@ exports[`<Coffee /> should render correctly 1`] = `
 }
       </style>
       <div
-        class="sc-ipEyDJ hsNbKX animated-content__wrapper--hidden"
+        class="c2 animated-content__wrapper--hidden"
       >
         <div
-          class="sc-bqWxrE VcTDu"
+          class="c3"
         >
           <h1
-            class="sc-eDvSVe fsBEuM sc-jrcTuL ewlzmZ"
+            class="c4 c5"
           >
             Buy me a coffee
           </h1>
         </div>
         <span
-          class="sc-fnGiBr hCJYcY"
+          class="c6"
         >
           Thanks for thinking of me and considering sending some cash my way. As a developer of free apps, I really appreciate people who want to pay me for my work.
         </span>
         <span
-          class="sc-fnGiBr hCJYcY"
+          class="c6"
         >
           The world is kinda on fire right now though, so if you have spare cash, please consider sending it to one of these great causes instead:
         </span>
         <div
-          class="stackstyles__StyledVStack-sc-1m733wj-0 dmknRP"
+          class="c7"
           style="margin-top: 1rem;"
         >
           <a
             aria-label="DEC Ukraine Humanitarian Appeal (opens in a new tab)"
-            class="sc-gswNZR bbFtvE"
+            class="c8"
             href="https://donation.dec.org.uk/ukraine-humanitarian-appeal"
             rel="noopener noreferrer"
             target="_blank"
           >
             <span
-              class="sc-ftTHYK cRFGYD"
+              class="c9"
             >
               DEC Ukraine Humanitarian Appeal
             </span>
             <div
-              class="sc-dkrFOg dOaeSw"
+              class="c10"
             >
               <svg
-                class="sc-bcXHqe cbaReT sc-hLBbgP eKXpFg"
+                class="c11 c12"
                 height="18"
                 viewBox="0 0 24 24"
                 width="18"
@@ -70,21 +223,21 @@ exports[`<Coffee /> should render correctly 1`] = `
           </a>
           <a
             aria-label="Red Cross (opens in a new tab)"
-            class="sc-gswNZR bbFtvE"
+            class="c8"
             href="https://www.redcross.org.uk/"
             rel="noopener noreferrer"
             target="_blank"
           >
             <span
-              class="sc-ftTHYK cRFGYD"
+              class="c9"
             >
               Red Cross
             </span>
             <div
-              class="sc-dkrFOg dOaeSw"
+              class="c10"
             >
               <svg
-                class="sc-bcXHqe cbaReT sc-hLBbgP eKXpFg"
+                class="c11 c12"
                 height="18"
                 viewBox="0 0 24 24"
                 width="18"
@@ -98,21 +251,21 @@ exports[`<Coffee /> should render correctly 1`] = `
           </a>
           <a
             aria-label="Beat (opens in a new tab)"
-            class="sc-gswNZR bbFtvE"
+            class="c8"
             href="https://www.beateatingdisorders.org.uk/"
             rel="noopener noreferrer"
             target="_blank"
           >
             <span
-              class="sc-ftTHYK cRFGYD"
+              class="c9"
             >
               Beat
             </span>
             <div
-              class="sc-dkrFOg dOaeSw"
+              class="c10"
             >
               <svg
-                class="sc-bcXHqe cbaReT sc-hLBbgP eKXpFg"
+                class="c11 c12"
                 height="18"
                 viewBox="0 0 24 24"
                 width="18"
