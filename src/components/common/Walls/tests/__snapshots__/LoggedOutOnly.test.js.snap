@@ -25,8 +25,44 @@ exports[`<LoggedOutOnly /> Should render correctly with user 1`] = `
   font-weight: bold;
 }
 
-.c4 {
+.c5 {
   margin: 0;
+}
+
+.c4 {
+  display: inline-block;
+  border-radius: 0.25rem;
+  font-weight: bold;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  position: relative;
+  color: darkorchid;
+  fill: darkorchid;
+}
+
+.c4:focus-within,
+.c4:focus {
+  position: relative;
+  outline: none !important;
+}
+
+.c4:focus-within::after,
+.c4:focus::after {
+  position: absolute;
+  top: -0.35rem;
+  right: -0.35rem;
+  bottom: -0.35rem;
+  left: -0.35rem;
+  content: '';
+  display: block;
+  border: solid rgba(0,125,250,0.6) 0.2rem;
+  border-radius: 0.5rem;
+  pointer-events: none;
+}
+
+.c4:hover {
+  color: #44aeff;
+  fill: #44aeff;
 }
 
 .c0 {
@@ -41,17 +77,28 @@ exports[`<LoggedOutOnly /> Should render correctly with user 1`] = `
 }
 
 @media (prefers-color-scheme:dark) {
-  .c0 {
-    color: white;
+  .c4:focus-within::after,
+  .c4:focus::after {
+    border-color: rgba(0,125,250,0.6);
   }
 }
 
 @media (prefers-color-scheme:dark) {
+  .c4 {
+    color: orchid;
+    fill: orchid;
+  }
 
+  .c4:hover {
+    color: #44aeff;
+    fill: #44aeff;
+  }
 }
 
 @media (prefers-color-scheme:dark) {
-
+  .c0 {
+    color: white;
+  }
 }
 
 <div>
@@ -67,11 +114,16 @@ exports[`<LoggedOutOnly /> Should render correctly with user 1`] = `
     <span
       class="c3"
     >
-      <span
+      <a
         class="c4"
+        href="/account"
       >
-        Go to your account.
-      </span>
+        <span
+          class="c5"
+        >
+          Go to your account.
+        </span>
+      </a>
     </span>
   </div>
 </div>

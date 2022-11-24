@@ -7,8 +7,44 @@ exports[`<EmailVerifiedOnly /> Should render correctly 1`] = `
   font-weight: bold;
 }
 
-.c3 {
+.c4 {
   margin: 0;
+}
+
+.c3 {
+  display: inline-block;
+  border-radius: 0.25rem;
+  font-weight: bold;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  position: relative;
+  color: darkorchid;
+  fill: darkorchid;
+}
+
+.c3:focus-within,
+.c3:focus {
+  position: relative;
+  outline: none !important;
+}
+
+.c3:focus-within::after,
+.c3:focus::after {
+  position: absolute;
+  top: -0.35rem;
+  right: -0.35rem;
+  bottom: -0.35rem;
+  left: -0.35rem;
+  content: '';
+  display: block;
+  border: solid rgba(0,125,250,0.6) 0.2rem;
+  border-radius: 0.5rem;
+  pointer-events: none;
+}
+
+.c3:hover {
+  color: #44aeff;
+  fill: #44aeff;
 }
 
 .c0 {
@@ -23,17 +59,28 @@ exports[`<EmailVerifiedOnly /> Should render correctly 1`] = `
 }
 
 @media (prefers-color-scheme:dark) {
-  .c0 {
-    color: white;
+  .c3:focus-within::after,
+  .c3:focus::after {
+    border-color: rgba(0,125,250,0.6);
   }
 }
 
 @media (prefers-color-scheme:dark) {
+  .c3 {
+    color: orchid;
+    fill: orchid;
+  }
 
+  .c3:hover {
+    color: #44aeff;
+    fill: #44aeff;
+  }
 }
 
 @media (prefers-color-scheme:dark) {
-
+  .c0 {
+    color: white;
+  }
 }
 
 <div>
@@ -46,11 +93,16 @@ exports[`<EmailVerifiedOnly /> Should render correctly 1`] = `
     >
       You need to verify your email before completing this step.
     </h1>
-    <span
+    <a
       class="c3"
+      href="/account"
     >
-      Account
-    </span>
+      <span
+        class="c4"
+      >
+        Account
+      </span>
+    </a>
   </div>
 </div>
 `;
@@ -62,8 +114,44 @@ exports[`<EmailVerifiedOnly /> Should render correctly with user 1`] = `
   font-weight: bold;
 }
 
-.c3 {
+.c4 {
   margin: 0;
+}
+
+.c3 {
+  display: inline-block;
+  border-radius: 0.25rem;
+  font-weight: bold;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  position: relative;
+  color: darkorchid;
+  fill: darkorchid;
+}
+
+.c3:focus-within,
+.c3:focus {
+  position: relative;
+  outline: none !important;
+}
+
+.c3:focus-within::after,
+.c3:focus::after {
+  position: absolute;
+  top: -0.35rem;
+  right: -0.35rem;
+  bottom: -0.35rem;
+  left: -0.35rem;
+  content: '';
+  display: block;
+  border: solid rgba(0,125,250,0.6) 0.2rem;
+  border-radius: 0.5rem;
+  pointer-events: none;
+}
+
+.c3:hover {
+  color: #44aeff;
+  fill: #44aeff;
 }
 
 .c0 {
@@ -78,17 +166,28 @@ exports[`<EmailVerifiedOnly /> Should render correctly with user 1`] = `
 }
 
 @media (prefers-color-scheme:dark) {
-  .c0 {
-    color: white;
+  .c3:focus-within::after,
+  .c3:focus::after {
+    border-color: rgba(0,125,250,0.6);
   }
 }
 
 @media (prefers-color-scheme:dark) {
+  .c3 {
+    color: orchid;
+    fill: orchid;
+  }
 
+  .c3:hover {
+    color: #44aeff;
+    fill: #44aeff;
+  }
 }
 
 @media (prefers-color-scheme:dark) {
-
+  .c0 {
+    color: white;
+  }
 }
 
 <div>
@@ -101,11 +200,16 @@ exports[`<EmailVerifiedOnly /> Should render correctly with user 1`] = `
     >
       You need to verify your email before completing this step.
     </h1>
-    <span
+    <a
       class="c3"
+      href="/account"
     >
-      Account
-    </span>
+      <span
+        class="c4"
+      >
+        Account
+      </span>
+    </a>
   </div>
 </div>
 `;

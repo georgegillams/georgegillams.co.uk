@@ -15,6 +15,7 @@ const nextConfig = {
     PORT: process.env.PORT,
     PROJECT_UNDER_TEST: process.env.PROJECT_UNDER_TEST,
     HOST: process.env.HOST,
+    ENABLE_SOFT_LINKS: process.env.ENABLE_SOFT_LINKS,
   },
   compiler: {
     // Enables the styled-components SWC transform

@@ -173,14 +173,6 @@ exports[`<Photography /> should render correctly - index 1`] = `
 }
 
 @media (prefers-color-scheme:dark) {
-
-}
-
-@media (prefers-color-scheme:dark) {
-
-}
-
-@media (prefers-color-scheme:dark) {
   .c12 {
     color: white;
   }
@@ -305,11 +297,16 @@ exports[`<Photography /> should render correctly - index 1`] = `
               </svg>
             </div>
           </a>
-          <span
-            class="c6"
+          <a
+            class="c5"
+            href="/contact"
           >
-            Contact me about photography work
-          </span>
+            <span
+              class="c6"
+            >
+              Contact me about photography work
+            </span>
+          </a>
         </div>
       </div>
     </div>
@@ -399,11 +396,16 @@ exports[`<Photography /> should render correctly - index 1`] = `
             .
             <br />
             If you are unsure about your right to use them please 
-            <span
-              class="c6"
+            <a
+              class="c5"
+              href="/contact"
             >
-              contact me
-            </span>
+              <span
+                class="c6"
+              >
+                contact me
+              </span>
+            </a>
             .
           </span>
         </div>
@@ -586,14 +588,6 @@ exports[`<Photography /> should render correctly when loading 1`] = `
 }
 
 @media (prefers-color-scheme:dark) {
-
-}
-
-@media (prefers-color-scheme:dark) {
-
-}
-
-@media (prefers-color-scheme:dark) {
   .c12 {
     color: white;
   }
@@ -718,11 +712,16 @@ exports[`<Photography /> should render correctly when loading 1`] = `
               </svg>
             </div>
           </a>
-          <span
-            class="c6"
+          <a
+            class="c5"
+            href="/contact"
           >
-            Contact me about photography work
-          </span>
+            <span
+              class="c6"
+            >
+              Contact me about photography work
+            </span>
+          </a>
         </div>
       </div>
     </div>
@@ -812,11 +811,16 @@ exports[`<Photography /> should render correctly when loading 1`] = `
             .
             <br />
             If you are unsure about your right to use them please 
-            <span
-              class="c6"
+            <a
+              class="c5"
+              href="/contact"
             >
-              contact me
-            </span>
+              <span
+                class="c6"
+              >
+                contact me
+              </span>
+            </a>
             .
           </span>
         </div>
@@ -999,14 +1003,6 @@ exports[`<Photography /> should render correctly with initial state 1`] = `
 }
 
 @media (prefers-color-scheme:dark) {
-
-}
-
-@media (prefers-color-scheme:dark) {
-
-}
-
-@media (prefers-color-scheme:dark) {
   .c12 {
     color: white;
   }
@@ -1131,11 +1127,16 @@ exports[`<Photography /> should render correctly with initial state 1`] = `
               </svg>
             </div>
           </a>
-          <span
-            class="c6"
+          <a
+            class="c5"
+            href="/contact"
           >
-            Contact me about photography work
-          </span>
+            <span
+              class="c6"
+            >
+              Contact me about photography work
+            </span>
+          </a>
         </div>
       </div>
     </div>
@@ -1225,11 +1226,16 @@ exports[`<Photography /> should render correctly with initial state 1`] = `
             .
             <br />
             If you are unsure about your right to use them please 
-            <span
-              class="c6"
+            <a
+              class="c5"
+              href="/contact"
             >
-              contact me
-            </span>
+              <span
+                class="c6"
+              >
+                contact me
+              </span>
+            </a>
             .
           </span>
         </div>
@@ -1412,14 +1418,6 @@ exports[`<Photography /> should render correctly with loadError 1`] = `
 }
 
 @media (prefers-color-scheme:dark) {
-
-}
-
-@media (prefers-color-scheme:dark) {
-
-}
-
-@media (prefers-color-scheme:dark) {
   .c12 {
     color: white;
   }
@@ -1544,11 +1542,16 @@ exports[`<Photography /> should render correctly with loadError 1`] = `
               </svg>
             </div>
           </a>
-          <span
-            class="c6"
+          <a
+            class="c5"
+            href="/contact"
           >
-            Contact me about photography work
-          </span>
+            <span
+              class="c6"
+            >
+              Contact me about photography work
+            </span>
+          </a>
         </div>
       </div>
     </div>
@@ -1638,11 +1641,16 @@ exports[`<Photography /> should render correctly with loadError 1`] = `
             .
             <br />
             If you are unsure about your right to use them please 
-            <span
-              class="c6"
+            <a
+              class="c5"
+              href="/contact"
             >
-              contact me
-            </span>
+              <span
+                class="c6"
+              >
+                contact me
+              </span>
+            </a>
             .
           </span>
         </div>
@@ -1825,14 +1833,6 @@ exports[`<Photography /> should render correctly with photos 1`] = `
 }
 
 @media (prefers-color-scheme:dark) {
-
-}
-
-@media (prefers-color-scheme:dark) {
-
-}
-
-@media (prefers-color-scheme:dark) {
   .c12 {
     color: white;
   }
@@ -1957,11 +1957,16 @@ exports[`<Photography /> should render correctly with photos 1`] = `
               </svg>
             </div>
           </a>
-          <span
-            class="c6"
+          <a
+            class="c5"
+            href="/contact"
           >
-            Contact me about photography work
-          </span>
+            <span
+              class="c6"
+            >
+              Contact me about photography work
+            </span>
+          </a>
         </div>
       </div>
     </div>
@@ -2051,11 +2056,16 @@ exports[`<Photography /> should render correctly with photos 1`] = `
             .
             <br />
             If you are unsure about your right to use them please 
-            <span
-              class="c6"
+            <a
+              class="c5"
+              href="/contact"
             >
-              contact me
-            </span>
+              <span
+                class="c6"
+              >
+                contact me
+              </span>
+            </a>
             .
           </span>
         </div>

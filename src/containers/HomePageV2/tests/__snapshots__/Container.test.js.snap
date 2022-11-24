@@ -450,6 +450,10 @@ exports[`<Home /> should render correctly 1`] = `
 }
 
 .c53 {
+  font-size: 2.2rem;
+}
+
+.c54 {
   position: absolute;
   top: -400%;
   width: 20rem;
@@ -529,14 +533,6 @@ exports[`<Home /> should render correctly 1`] = `
     color: #44aeff;
     fill: #44aeff;
   }
-}
-
-@media (prefers-color-scheme:dark) {
-
-}
-
-@media (prefers-color-scheme:dark) {
-
 }
 
 @media (prefers-color-scheme:dark) {
@@ -654,7 +650,7 @@ exports[`<Home /> should render correctly 1`] = `
 }
 
 @media (prefers-color-scheme:dark) {
-  .c53 {
+  .c54 {
     background-color: black;
   }
 }
@@ -765,11 +761,16 @@ exports[`<Home /> should render correctly 1`] = `
                   <br />
                   I’m also an accessibility champion and design system enthusiast.
                   <br />
-                  <span
-                    class="c15"
+                  <a
+                    class="c14"
+                    href="/work"
                   >
-                    Learn more about my work
-                  </span>
+                    <span
+                      class="c15"
+                    >
+                      Learn more about my work
+                    </span>
+                  </a>
                 </span>
               </div>
             </div>
@@ -1051,17 +1052,27 @@ exports[`<Home /> should render correctly 1`] = `
                 >
                   I love travel, photography, and obstacle course racing.
                   <br />
-                  <span
-                    class="c15"
+                  <a
+                    class="c14"
+                    href="/blog"
                   >
-                    Blog
-                  </span>
+                    <span
+                      class="c15"
+                    >
+                      Blog
+                    </span>
+                  </a>
                   <br />
-                  <span
-                    class="c15"
+                  <a
+                    class="c14"
+                    href="/photography"
                   >
-                    Photography
-                  </span>
+                    <span
+                      class="c15"
+                    >
+                      Photography
+                    </span>
+                  </a>
                 </span>
               </div>
               <span
@@ -1486,13 +1497,18 @@ exports[`<Home /> should render correctly 1`] = `
               <div
                 class="c52"
               >
-                <span
-                  class="c15"
+                <a
+                  class="c14 c53"
+                  href="/contact"
                 >
-                  Get in touch
-                </span>
+                  <span
+                    class="c15"
+                  >
+                    Get in touch
+                  </span>
+                </a>
                 <div
-                  class="c53 home__contact--hide"
+                  class="c54 home__contact--hide"
                   style="left: 300%;"
                 />
               </div>
@@ -1955,6 +1971,10 @@ exports[`<Home /> should render correctly with admin user 1`] = `
 }
 
 .c53 {
+  font-size: 2.2rem;
+}
+
+.c54 {
   position: absolute;
   top: -400%;
   width: 20rem;
@@ -2034,14 +2054,6 @@ exports[`<Home /> should render correctly with admin user 1`] = `
     color: #44aeff;
     fill: #44aeff;
   }
-}
-
-@media (prefers-color-scheme:dark) {
-
-}
-
-@media (prefers-color-scheme:dark) {
-
 }
 
 @media (prefers-color-scheme:dark) {
@@ -2159,7 +2171,7 @@ exports[`<Home /> should render correctly with admin user 1`] = `
 }
 
 @media (prefers-color-scheme:dark) {
-  .c53 {
+  .c54 {
     background-color: black;
   }
 }
@@ -2270,11 +2282,16 @@ exports[`<Home /> should render correctly with admin user 1`] = `
                   <br />
                   I’m also an accessibility champion and design system enthusiast.
                   <br />
-                  <span
-                    class="c15"
+                  <a
+                    class="c14"
+                    href="/work"
                   >
-                    Learn more about my work
-                  </span>
+                    <span
+                      class="c15"
+                    >
+                      Learn more about my work
+                    </span>
+                  </a>
                 </span>
               </div>
             </div>
@@ -2556,17 +2573,27 @@ exports[`<Home /> should render correctly with admin user 1`] = `
                 >
                   I love travel, photography, and obstacle course racing.
                   <br />
-                  <span
-                    class="c15"
+                  <a
+                    class="c14"
+                    href="/blog"
                   >
-                    Blog
-                  </span>
+                    <span
+                      class="c15"
+                    >
+                      Blog
+                    </span>
+                  </a>
                   <br />
-                  <span
-                    class="c15"
+                  <a
+                    class="c14"
+                    href="/photography"
                   >
-                    Photography
-                  </span>
+                    <span
+                      class="c15"
+                    >
+                      Photography
+                    </span>
+                  </a>
                 </span>
               </div>
               <span
@@ -2991,13 +3018,18 @@ exports[`<Home /> should render correctly with admin user 1`] = `
               <div
                 class="c52"
               >
-                <span
-                  class="c15"
+                <a
+                  class="c14 c53"
+                  href="/contact"
                 >
-                  Get in touch
-                </span>
+                  <span
+                    class="c15"
+                  >
+                    Get in touch
+                  </span>
+                </a>
                 <div
-                  class="c53 home__contact--hide"
+                  class="c54 home__contact--hide"
                   style="left: 300%;"
                 />
               </div>
@@ -3460,6 +3492,10 @@ exports[`<Home /> should render correctly with no user 1`] = `
 }
 
 .c53 {
+  font-size: 2.2rem;
+}
+
+.c54 {
   position: absolute;
   top: -400%;
   width: 20rem;
@@ -3539,14 +3575,6 @@ exports[`<Home /> should render correctly with no user 1`] = `
     color: #44aeff;
     fill: #44aeff;
   }
-}
-
-@media (prefers-color-scheme:dark) {
-
-}
-
-@media (prefers-color-scheme:dark) {
-
 }
 
 @media (prefers-color-scheme:dark) {
@@ -3664,7 +3692,7 @@ exports[`<Home /> should render correctly with no user 1`] = `
 }
 
 @media (prefers-color-scheme:dark) {
-  .c53 {
+  .c54 {
     background-color: black;
   }
 }
@@ -3775,11 +3803,16 @@ exports[`<Home /> should render correctly with no user 1`] = `
                   <br />
                   I’m also an accessibility champion and design system enthusiast.
                   <br />
-                  <span
-                    class="c15"
+                  <a
+                    class="c14"
+                    href="/work"
                   >
-                    Learn more about my work
-                  </span>
+                    <span
+                      class="c15"
+                    >
+                      Learn more about my work
+                    </span>
+                  </a>
                 </span>
               </div>
             </div>
@@ -4061,17 +4094,27 @@ exports[`<Home /> should render correctly with no user 1`] = `
                 >
                   I love travel, photography, and obstacle course racing.
                   <br />
-                  <span
-                    class="c15"
+                  <a
+                    class="c14"
+                    href="/blog"
                   >
-                    Blog
-                  </span>
+                    <span
+                      class="c15"
+                    >
+                      Blog
+                    </span>
+                  </a>
                   <br />
-                  <span
-                    class="c15"
+                  <a
+                    class="c14"
+                    href="/photography"
                   >
-                    Photography
-                  </span>
+                    <span
+                      class="c15"
+                    >
+                      Photography
+                    </span>
+                  </a>
                 </span>
               </div>
               <span
@@ -4496,13 +4539,18 @@ exports[`<Home /> should render correctly with no user 1`] = `
               <div
                 class="c52"
               >
-                <span
-                  class="c15"
+                <a
+                  class="c14 c53"
+                  href="/contact"
                 >
-                  Get in touch
-                </span>
+                  <span
+                    class="c15"
+                  >
+                    Get in touch
+                  </span>
+                </a>
                 <div
-                  class="c53 home__contact--hide"
+                  class="c54 home__contact--hide"
                   style="left: 300%;"
                 />
               </div>
@@ -4965,6 +5013,10 @@ exports[`<Home /> should render correctly with user 1`] = `
 }
 
 .c53 {
+  font-size: 2.2rem;
+}
+
+.c54 {
   position: absolute;
   top: -400%;
   width: 20rem;
@@ -5044,14 +5096,6 @@ exports[`<Home /> should render correctly with user 1`] = `
     color: #44aeff;
     fill: #44aeff;
   }
-}
-
-@media (prefers-color-scheme:dark) {
-
-}
-
-@media (prefers-color-scheme:dark) {
-
 }
 
 @media (prefers-color-scheme:dark) {
@@ -5169,7 +5213,7 @@ exports[`<Home /> should render correctly with user 1`] = `
 }
 
 @media (prefers-color-scheme:dark) {
-  .c53 {
+  .c54 {
     background-color: black;
   }
 }
@@ -5280,11 +5324,16 @@ exports[`<Home /> should render correctly with user 1`] = `
                   <br />
                   I’m also an accessibility champion and design system enthusiast.
                   <br />
-                  <span
-                    class="c15"
+                  <a
+                    class="c14"
+                    href="/work"
                   >
-                    Learn more about my work
-                  </span>
+                    <span
+                      class="c15"
+                    >
+                      Learn more about my work
+                    </span>
+                  </a>
                 </span>
               </div>
             </div>
@@ -5566,17 +5615,27 @@ exports[`<Home /> should render correctly with user 1`] = `
                 >
                   I love travel, photography, and obstacle course racing.
                   <br />
-                  <span
-                    class="c15"
+                  <a
+                    class="c14"
+                    href="/blog"
                   >
-                    Blog
-                  </span>
+                    <span
+                      class="c15"
+                    >
+                      Blog
+                    </span>
+                  </a>
                   <br />
-                  <span
-                    class="c15"
+                  <a
+                    class="c14"
+                    href="/photography"
                   >
-                    Photography
-                  </span>
+                    <span
+                      class="c15"
+                    >
+                      Photography
+                    </span>
+                  </a>
                 </span>
               </div>
               <span
@@ -6001,13 +6060,18 @@ exports[`<Home /> should render correctly with user 1`] = `
               <div
                 class="c52"
               >
-                <span
-                  class="c15"
+                <a
+                  class="c14 c53"
+                  href="/contact"
                 >
-                  Get in touch
-                </span>
+                  <span
+                    class="c15"
+                  >
+                    Get in touch
+                  </span>
+                </a>
                 <div
-                  class="c53 home__contact--hide"
+                  class="c54 home__contact--hide"
                   style="left: 300%;"
                 />
               </div>

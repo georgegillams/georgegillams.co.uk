@@ -117,6 +117,72 @@ exports[`<Authenticator /> should render correctly - index 1`] = `
 }
 
 .c12 {
+  position: relative;
+  min-width: 5rem;
+  padding: 0.43rem 1.125rem 0.32rem 1.125rem;
+  -webkit-transition: filter 0.3s;
+  transition: filter 0.3s;
+  border: none;
+  border-radius: 0.25rem;
+  font-size: 1.4rem;
+  font-weight: bold;
+  cursor: pointer;
+  -webkit-text-decoration-color: transparent;
+  text-decoration-color: transparent;
+  -webkit-text-decoration-line: none;
+  text-decoration-line: none;
+  background-color: transparent;
+  color: #1e1e1e;
+  min-width: unset;
+  padding: 0.2rem 0.8rem;
+  font-weight: normal;
+  display: inline-block;
+}
+
+.c12:focus-within,
+.c12:focus {
+  outline: none !important;
+}
+
+.c12:focus-within::after,
+.c12:focus::after {
+  position: absolute;
+  top: -0.35rem;
+  right: -0.35rem;
+  bottom: -0.35rem;
+  left: -0.35rem;
+  content: '';
+  display: block;
+  border: solid rgba(0,125,250,0.6) 0.2rem;
+  border-radius: 0.5rem;
+  pointer-events: none;
+}
+
+.c12:focus,
+.c12:hover {
+  background-color: #004F8C;
+  color: white;
+}
+
+.c12:active {
+  background-color: #003E6F;
+}
+
+.c12:disabled {
+  background-color: #cdcdd7;
+  color: rgb(100,100,100);
+}
+
+.c12:focus,
+.c12:active,
+.c12:hover {
+  -webkit-animation-duration: 0.4s;
+  animation-duration: 0.4s;
+  -webkit-animation-name: byvRAa;
+  animation-name: byvRAa;
+}
+
+.c13 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -261,23 +327,38 @@ exports[`<Authenticator /> should render correctly - index 1`] = `
 }
 
 @media (prefers-color-scheme:dark) {
-
+  .c12:focus-within::after,
+  .c12:focus::after {
+    border-color: rgba(0,125,250,0.6);
+  }
 }
 
 @media (prefers-color-scheme:dark) {
-
+  .c12 {
+    background-color: transparent;
+    color: white;
+  }
 }
 
 @media (prefers-color-scheme:dark) {
-
+  .c12:focus,
+  .c12:hover {
+    background-color: #004479;
+    color: white;
+  }
 }
 
 @media (prefers-color-scheme:dark) {
-
+  .c12:active {
+    background-color: #003965;
+  }
 }
 
 @media (prefers-color-scheme:dark) {
-
+  .c12:disabled {
+    background-color: rgb(89,89,89);
+    color: darkgray;
+  }
 }
 
 @media (min-width:50.25rem) {
@@ -418,26 +499,50 @@ exports[`<Authenticator /> should render correctly - index 1`] = `
               </span>
             </a>
           </div>
-          <span
+          <a
+            aria-label="Blog"
             class="c12"
+            href="/blog"
           >
-            Blog
-          </span>
-          <span
+            <span
+              class="c13"
+            >
+              Blog
+            </span>
+          </a>
+          <a
+            aria-label="Photography"
             class="c12"
+            href="/photography"
           >
-            Photography
-          </span>
-          <span
+            <span
+              class="c13"
+            >
+              Photography
+            </span>
+          </a>
+          <a
+            aria-label="Work"
             class="c12"
+            href="/work"
           >
-            Work
-          </span>
-          <span
+            <span
+              class="c13"
+            >
+              Work
+            </span>
+          </a>
+          <a
+            aria-label="Contact"
             class="c12"
+            href="/contact"
           >
-            Contact
-          </span>
+            <span
+              class="c13"
+            >
+              Contact
+            </span>
+          </a>
         </div>
       </div>
     </nav>
@@ -562,6 +667,72 @@ exports[`<Authenticator /> should render correctly with default state 1`] = `
 }
 
 .c12 {
+  position: relative;
+  min-width: 5rem;
+  padding: 0.43rem 1.125rem 0.32rem 1.125rem;
+  -webkit-transition: filter 0.3s;
+  transition: filter 0.3s;
+  border: none;
+  border-radius: 0.25rem;
+  font-size: 1.4rem;
+  font-weight: bold;
+  cursor: pointer;
+  -webkit-text-decoration-color: transparent;
+  text-decoration-color: transparent;
+  -webkit-text-decoration-line: none;
+  text-decoration-line: none;
+  background-color: transparent;
+  color: #1e1e1e;
+  min-width: unset;
+  padding: 0.2rem 0.8rem;
+  font-weight: normal;
+  display: inline-block;
+}
+
+.c12:focus-within,
+.c12:focus {
+  outline: none !important;
+}
+
+.c12:focus-within::after,
+.c12:focus::after {
+  position: absolute;
+  top: -0.35rem;
+  right: -0.35rem;
+  bottom: -0.35rem;
+  left: -0.35rem;
+  content: '';
+  display: block;
+  border: solid rgba(0,125,250,0.6) 0.2rem;
+  border-radius: 0.5rem;
+  pointer-events: none;
+}
+
+.c12:focus,
+.c12:hover {
+  background-color: #004F8C;
+  color: white;
+}
+
+.c12:active {
+  background-color: #003E6F;
+}
+
+.c12:disabled {
+  background-color: #cdcdd7;
+  color: rgb(100,100,100);
+}
+
+.c12:focus,
+.c12:active,
+.c12:hover {
+  -webkit-animation-duration: 0.4s;
+  animation-duration: 0.4s;
+  -webkit-animation-name: byvRAa;
+  animation-name: byvRAa;
+}
+
+.c13 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -706,23 +877,38 @@ exports[`<Authenticator /> should render correctly with default state 1`] = `
 }
 
 @media (prefers-color-scheme:dark) {
-
+  .c12:focus-within::after,
+  .c12:focus::after {
+    border-color: rgba(0,125,250,0.6);
+  }
 }
 
 @media (prefers-color-scheme:dark) {
-
+  .c12 {
+    background-color: transparent;
+    color: white;
+  }
 }
 
 @media (prefers-color-scheme:dark) {
-
+  .c12:focus,
+  .c12:hover {
+    background-color: #004479;
+    color: white;
+  }
 }
 
 @media (prefers-color-scheme:dark) {
-
+  .c12:active {
+    background-color: #003965;
+  }
 }
 
 @media (prefers-color-scheme:dark) {
-
+  .c12:disabled {
+    background-color: rgb(89,89,89);
+    color: darkgray;
+  }
 }
 
 @media (min-width:50.25rem) {
@@ -863,26 +1049,50 @@ exports[`<Authenticator /> should render correctly with default state 1`] = `
               </span>
             </a>
           </div>
-          <span
+          <a
+            aria-label="Blog"
             class="c12"
+            href="/blog"
           >
-            Blog
-          </span>
-          <span
+            <span
+              class="c13"
+            >
+              Blog
+            </span>
+          </a>
+          <a
+            aria-label="Photography"
             class="c12"
+            href="/photography"
           >
-            Photography
-          </span>
-          <span
+            <span
+              class="c13"
+            >
+              Photography
+            </span>
+          </a>
+          <a
+            aria-label="Work"
             class="c12"
+            href="/work"
           >
-            Work
-          </span>
-          <span
+            <span
+              class="c13"
+            >
+              Work
+            </span>
+          </a>
+          <a
+            aria-label="Contact"
             class="c12"
+            href="/contact"
           >
-            Contact
-          </span>
+            <span
+              class="c13"
+            >
+              Contact
+            </span>
+          </a>
         </div>
       </div>
     </nav>
@@ -1007,6 +1217,72 @@ exports[`<Authenticator /> should render correctly with null user 1`] = `
 }
 
 .c12 {
+  position: relative;
+  min-width: 5rem;
+  padding: 0.43rem 1.125rem 0.32rem 1.125rem;
+  -webkit-transition: filter 0.3s;
+  transition: filter 0.3s;
+  border: none;
+  border-radius: 0.25rem;
+  font-size: 1.4rem;
+  font-weight: bold;
+  cursor: pointer;
+  -webkit-text-decoration-color: transparent;
+  text-decoration-color: transparent;
+  -webkit-text-decoration-line: none;
+  text-decoration-line: none;
+  background-color: transparent;
+  color: #1e1e1e;
+  min-width: unset;
+  padding: 0.2rem 0.8rem;
+  font-weight: normal;
+  display: inline-block;
+}
+
+.c12:focus-within,
+.c12:focus {
+  outline: none !important;
+}
+
+.c12:focus-within::after,
+.c12:focus::after {
+  position: absolute;
+  top: -0.35rem;
+  right: -0.35rem;
+  bottom: -0.35rem;
+  left: -0.35rem;
+  content: '';
+  display: block;
+  border: solid rgba(0,125,250,0.6) 0.2rem;
+  border-radius: 0.5rem;
+  pointer-events: none;
+}
+
+.c12:focus,
+.c12:hover {
+  background-color: #004F8C;
+  color: white;
+}
+
+.c12:active {
+  background-color: #003E6F;
+}
+
+.c12:disabled {
+  background-color: #cdcdd7;
+  color: rgb(100,100,100);
+}
+
+.c12:focus,
+.c12:active,
+.c12:hover {
+  -webkit-animation-duration: 0.4s;
+  animation-duration: 0.4s;
+  -webkit-animation-name: byvRAa;
+  animation-name: byvRAa;
+}
+
+.c13 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1151,23 +1427,38 @@ exports[`<Authenticator /> should render correctly with null user 1`] = `
 }
 
 @media (prefers-color-scheme:dark) {
-
+  .c12:focus-within::after,
+  .c12:focus::after {
+    border-color: rgba(0,125,250,0.6);
+  }
 }
 
 @media (prefers-color-scheme:dark) {
-
+  .c12 {
+    background-color: transparent;
+    color: white;
+  }
 }
 
 @media (prefers-color-scheme:dark) {
-
+  .c12:focus,
+  .c12:hover {
+    background-color: #004479;
+    color: white;
+  }
 }
 
 @media (prefers-color-scheme:dark) {
-
+  .c12:active {
+    background-color: #003965;
+  }
 }
 
 @media (prefers-color-scheme:dark) {
-
+  .c12:disabled {
+    background-color: rgb(89,89,89);
+    color: darkgray;
+  }
 }
 
 @media (min-width:50.25rem) {
@@ -1308,26 +1599,50 @@ exports[`<Authenticator /> should render correctly with null user 1`] = `
               </span>
             </a>
           </div>
-          <span
+          <a
+            aria-label="Blog"
             class="c12"
+            href="/blog"
           >
-            Blog
-          </span>
-          <span
+            <span
+              class="c13"
+            >
+              Blog
+            </span>
+          </a>
+          <a
+            aria-label="Photography"
             class="c12"
+            href="/photography"
           >
-            Photography
-          </span>
-          <span
+            <span
+              class="c13"
+            >
+              Photography
+            </span>
+          </a>
+          <a
+            aria-label="Work"
             class="c12"
+            href="/work"
           >
-            Work
-          </span>
-          <span
+            <span
+              class="c13"
+            >
+              Work
+            </span>
+          </a>
+          <a
+            aria-label="Contact"
             class="c12"
+            href="/contact"
           >
-            Contact
-          </span>
+            <span
+              class="c13"
+            >
+              Contact
+            </span>
+          </a>
         </div>
       </div>
     </nav>
@@ -1452,6 +1767,72 @@ exports[`<Authenticator /> should render correctly with user 1`] = `
 }
 
 .c12 {
+  position: relative;
+  min-width: 5rem;
+  padding: 0.43rem 1.125rem 0.32rem 1.125rem;
+  -webkit-transition: filter 0.3s;
+  transition: filter 0.3s;
+  border: none;
+  border-radius: 0.25rem;
+  font-size: 1.4rem;
+  font-weight: bold;
+  cursor: pointer;
+  -webkit-text-decoration-color: transparent;
+  text-decoration-color: transparent;
+  -webkit-text-decoration-line: none;
+  text-decoration-line: none;
+  background-color: transparent;
+  color: #1e1e1e;
+  min-width: unset;
+  padding: 0.2rem 0.8rem;
+  font-weight: normal;
+  display: inline-block;
+}
+
+.c12:focus-within,
+.c12:focus {
+  outline: none !important;
+}
+
+.c12:focus-within::after,
+.c12:focus::after {
+  position: absolute;
+  top: -0.35rem;
+  right: -0.35rem;
+  bottom: -0.35rem;
+  left: -0.35rem;
+  content: '';
+  display: block;
+  border: solid rgba(0,125,250,0.6) 0.2rem;
+  border-radius: 0.5rem;
+  pointer-events: none;
+}
+
+.c12:focus,
+.c12:hover {
+  background-color: #004F8C;
+  color: white;
+}
+
+.c12:active {
+  background-color: #003E6F;
+}
+
+.c12:disabled {
+  background-color: #cdcdd7;
+  color: rgb(100,100,100);
+}
+
+.c12:focus,
+.c12:active,
+.c12:hover {
+  -webkit-animation-duration: 0.4s;
+  animation-duration: 0.4s;
+  -webkit-animation-name: byvRAa;
+  animation-name: byvRAa;
+}
+
+.c13 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1596,23 +1977,38 @@ exports[`<Authenticator /> should render correctly with user 1`] = `
 }
 
 @media (prefers-color-scheme:dark) {
-
+  .c12:focus-within::after,
+  .c12:focus::after {
+    border-color: rgba(0,125,250,0.6);
+  }
 }
 
 @media (prefers-color-scheme:dark) {
-
+  .c12 {
+    background-color: transparent;
+    color: white;
+  }
 }
 
 @media (prefers-color-scheme:dark) {
-
+  .c12:focus,
+  .c12:hover {
+    background-color: #004479;
+    color: white;
+  }
 }
 
 @media (prefers-color-scheme:dark) {
-
+  .c12:active {
+    background-color: #003965;
+  }
 }
 
 @media (prefers-color-scheme:dark) {
-
+  .c12:disabled {
+    background-color: rgb(89,89,89);
+    color: darkgray;
+  }
 }
 
 @media (min-width:50.25rem) {
@@ -1753,26 +2149,50 @@ exports[`<Authenticator /> should render correctly with user 1`] = `
               </span>
             </a>
           </div>
-          <span
+          <a
+            aria-label="Blog"
             class="c12"
+            href="/blog"
           >
-            Blog
-          </span>
-          <span
+            <span
+              class="c13"
+            >
+              Blog
+            </span>
+          </a>
+          <a
+            aria-label="Photography"
             class="c12"
+            href="/photography"
           >
-            Photography
-          </span>
-          <span
+            <span
+              class="c13"
+            >
+              Photography
+            </span>
+          </a>
+          <a
+            aria-label="Work"
             class="c12"
+            href="/work"
           >
-            Work
-          </span>
-          <span
+            <span
+              class="c13"
+            >
+              Work
+            </span>
+          </a>
+          <a
+            aria-label="Contact"
             class="c12"
+            href="/contact"
           >
-            Contact
-          </span>
+            <span
+              class="c13"
+            >
+              Contact
+            </span>
+          </a>
         </div>
       </div>
     </nav>

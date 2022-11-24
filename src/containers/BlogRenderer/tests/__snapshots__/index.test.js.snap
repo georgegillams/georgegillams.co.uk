@@ -208,14 +208,6 @@ exports[`<BlogRenderer /> should render correctly - index 1`] = `
 }
 
 @media (prefers-color-scheme:dark) {
-
-}
-
-@media (prefers-color-scheme:dark) {
-
-}
-
-@media (prefers-color-scheme:dark) {
   .c5 {
     background-color: #121313;
   }
@@ -305,11 +297,16 @@ exports[`<BlogRenderer /> should render correctly - index 1`] = `
             .
             <br />
             If you are unsure about your right to use them please 
-            <span
-              class="c12"
+            <a
+              class="c11"
+              href="/contact"
             >
-              contact me
-            </span>
+              <span
+                class="c12"
+              >
+                contact me
+              </span>
+            </a>
             .
           </span>
         </div>
@@ -320,7 +317,7 @@ exports[`<BlogRenderer /> should render correctly - index 1`] = `
 `;
 
 exports[`<BlogRenderer /> should render correctly with blog 1`] = `
-.c1 {
+.c2 {
   margin: 0;
   font-size: 2.4rem;
   font-weight: bold;
@@ -332,7 +329,7 @@ exports[`<BlogRenderer /> should render correctly with blog 1`] = `
   font-weight: bold;
 }
 
-.c0 {
+.c1 {
   margin: 0;
 }
 
@@ -341,7 +338,7 @@ exports[`<BlogRenderer /> should render correctly with blog 1`] = `
   height: 1.25rem;
 }
 
-.c8 {
+.c0 {
   display: inline-block;
   border-radius: 0.25rem;
   font-weight: bold;
@@ -352,14 +349,14 @@ exports[`<BlogRenderer /> should render correctly with blog 1`] = `
   fill: darkorchid;
 }
 
-.c8:focus-within,
-.c8:focus {
+.c0:focus-within,
+.c0:focus {
   position: relative;
   outline: none !important;
 }
 
-.c8:focus-within::after,
-.c8:focus::after {
+.c0:focus-within::after,
+.c0:focus::after {
   position: absolute;
   top: -0.35rem;
   right: -0.35rem;
@@ -372,7 +369,7 @@ exports[`<BlogRenderer /> should render correctly with blog 1`] = `
   pointer-events: none;
 }
 
-.c8:hover {
+.c0:hover {
   color: #44aeff;
   fill: #44aeff;
 }
@@ -406,12 +403,12 @@ exports[`<BlogRenderer /> should render correctly with blog 1`] = `
   margin: 2.13rem 0 0 0;
 }
 
-.c3 {
+.c4 {
   font-style: italic;
   padding-bottom: 0.5rem;
 }
 
-.c6 {
+.c7 {
   display: inline-block;
   margin-bottom: 0;
   padding-bottom: 0;
@@ -419,33 +416,33 @@ exports[`<BlogRenderer /> should render correctly with blog 1`] = `
   margin-top: 2rem;
 }
 
-.c6:first-of-type {
+.c7:first-of-type {
   margin-top: 0.86rem;
 }
 
-.c5 {
+.c6 {
   display: inline;
   color: #1e1e1e;
 }
 
-.c5 .markdown-renderer__element {
+.c6 .markdown-renderer__element {
   max-width: 100%;
 }
 
-.c7 {
+.c8 {
   width: 100%;
 }
 
-.c2 {
+.c3 {
   margin-top: 0.86rem;
   margin-bottom: 1rem;
 }
 
-.c4 {
+.c5 {
   margin-bottom: 1rem;
 }
 
-.c4 > * {
+.c5 > * {
   margin: 0 0.375rem 0.375rem 0;
 }
 
@@ -484,19 +481,19 @@ exports[`<BlogRenderer /> should render correctly with blog 1`] = `
 }
 
 @media (prefers-color-scheme:dark) {
-  .c8:focus-within::after,
-  .c8:focus::after {
+  .c0:focus-within::after,
+  .c0:focus::after {
     border-color: rgba(0,125,250,0.6);
   }
 }
 
 @media (prefers-color-scheme:dark) {
-  .c8 {
+  .c0 {
     color: orchid;
     fill: orchid;
   }
 
-  .c8:hover {
+  .c0:hover {
     color: #44aeff;
     fill: #44aeff;
   }
@@ -509,17 +506,9 @@ exports[`<BlogRenderer /> should render correctly with blog 1`] = `
 }
 
 @media (prefers-color-scheme:dark) {
-  .c5 {
+  .c6 {
     color: white;
   }
-}
-
-@media (prefers-color-scheme:dark) {
-
-}
-
-@media (prefers-color-scheme:dark) {
-
 }
 
 @media (prefers-color-scheme:dark) {
@@ -539,34 +528,39 @@ exports[`<BlogRenderer /> should render correctly with blog 1`] = `
       <div
         class=""
       >
-        <span
+        <a
           class="c0"
+          href="/blogs"
         >
-          ⇠ Blogs
-        </span>
+          <span
+            class="c1"
+          >
+            ⇠ Blogs
+          </span>
+        </a>
       </div>
     </div>
     <div
       class=""
     >
       <h1
-        class="c1 "
+        class="c2 "
       >
         St. Ives ⛵ 2018
       </h1>
     </div>
     <div
-      class="c2"
+      class="c3"
     >
       <span
-        class="c0 c3"
+        class="c1 c4"
       >
         Published 
         TEST_DATE
       </span>
     </div>
     <div
-      class="c4"
+      class="c5"
     >
       <div
         class=""
@@ -580,21 +574,21 @@ exports[`<BlogRenderer /> should render correctly with blog 1`] = `
       </div>
     </div>
     <div
-      class="c5"
+      class="c6"
     >
       <span
-        class="c6 c7 markdown-renderer__element"
+        class="c7 c8 markdown-renderer__element"
       >
         Some content with 
         <a
           aria-label="a link (opens in a new tab)"
-          class="c8"
+          class="c0"
           href="https://duckduckgo.com/"
           rel="noopener noreferrer"
           target="_blank"
         >
           <span
-            class="c0"
+            class="c1"
           >
             a link
           </span>
@@ -645,19 +639,19 @@ exports[`<BlogRenderer /> should render correctly with blog 1`] = `
             Copyright
           </h1>
           <span
-            class="c6"
+            class="c7"
           >
             Most of my photos are licensed under
              
             <a
               aria-label="Creative Commons BY-SA 3.0 (opens in a new tab)"
-              class="c8"
+              class="c0"
               href="https://creativecommons.org/licenses/by-sa/3.0/"
               rel="noopener noreferrer"
               target="_blank"
             >
               <span
-                class="c0"
+                class="c1"
               >
                 Creative Commons BY-SA 3.0
               </span>
@@ -680,11 +674,16 @@ exports[`<BlogRenderer /> should render correctly with blog 1`] = `
             .
             <br />
             If you are unsure about your right to use them please 
-            <span
+            <a
               class="c0"
+              href="/contact"
             >
-              contact me
-            </span>
+              <span
+                class="c1"
+              >
+                contact me
+              </span>
+            </a>
             .
           </span>
         </div>
@@ -695,7 +694,7 @@ exports[`<BlogRenderer /> should render correctly with blog 1`] = `
 `;
 
 exports[`<BlogRenderer /> should render correctly with blog and admin 1`] = `
-.c1 {
+.c2 {
   margin: 0;
   font-size: 2.4rem;
   font-weight: bold;
@@ -713,7 +712,7 @@ exports[`<BlogRenderer /> should render correctly with blog and admin 1`] = `
   font-weight: bold;
 }
 
-.c0 {
+.c1 {
   margin: 0;
 }
 
@@ -722,7 +721,7 @@ exports[`<BlogRenderer /> should render correctly with blog and admin 1`] = `
   height: 1.25rem;
 }
 
-.c8 {
+.c0 {
   display: inline-block;
   border-radius: 0.25rem;
   font-weight: bold;
@@ -733,14 +732,14 @@ exports[`<BlogRenderer /> should render correctly with blog and admin 1`] = `
   fill: darkorchid;
 }
 
-.c8:focus-within,
-.c8:focus {
+.c0:focus-within,
+.c0:focus {
   position: relative;
   outline: none !important;
 }
 
-.c8:focus-within::after,
-.c8:focus::after {
+.c0:focus-within::after,
+.c0:focus::after {
   position: absolute;
   top: -0.35rem;
   right: -0.35rem;
@@ -753,7 +752,7 @@ exports[`<BlogRenderer /> should render correctly with blog and admin 1`] = `
   pointer-events: none;
 }
 
-.c8:hover {
+.c0:hover {
   color: #44aeff;
   fill: #44aeff;
 }
@@ -791,12 +790,12 @@ exports[`<BlogRenderer /> should render correctly with blog and admin 1`] = `
   margin: 2.13rem 0 0 0;
 }
 
-.c3 {
+.c4 {
   font-style: italic;
   padding-bottom: 0.5rem;
 }
 
-.c6 {
+.c7 {
   display: inline-block;
   margin-bottom: 0;
   padding-bottom: 0;
@@ -804,33 +803,33 @@ exports[`<BlogRenderer /> should render correctly with blog and admin 1`] = `
   margin-top: 2rem;
 }
 
-.c6:first-of-type {
+.c7:first-of-type {
   margin-top: 0.86rem;
 }
 
-.c5 {
+.c6 {
   display: inline;
   color: #1e1e1e;
 }
 
-.c5 .markdown-renderer__element {
+.c6 .markdown-renderer__element {
   max-width: 100%;
 }
 
-.c7 {
+.c8 {
   width: 100%;
 }
 
-.c2 {
+.c3 {
   margin-top: 0.86rem;
   margin-bottom: 1rem;
 }
 
-.c4 {
+.c5 {
   margin-bottom: 1rem;
 }
 
-.c4 > * {
+.c5 > * {
   margin: 0 0.375rem 0.375rem 0;
 }
 
@@ -869,19 +868,19 @@ exports[`<BlogRenderer /> should render correctly with blog and admin 1`] = `
 }
 
 @media (prefers-color-scheme:dark) {
-  .c8:focus-within::after,
-  .c8:focus::after {
+  .c0:focus-within::after,
+  .c0:focus::after {
     border-color: rgba(0,125,250,0.6);
   }
 }
 
 @media (prefers-color-scheme:dark) {
-  .c8 {
+  .c0 {
     color: orchid;
     fill: orchid;
   }
 
-  .c8:hover {
+  .c0:hover {
     color: #44aeff;
     fill: #44aeff;
   }
@@ -894,17 +893,9 @@ exports[`<BlogRenderer /> should render correctly with blog and admin 1`] = `
 }
 
 @media (prefers-color-scheme:dark) {
-  .c5 {
+  .c6 {
     color: white;
   }
-}
-
-@media (prefers-color-scheme:dark) {
-
-}
-
-@media (prefers-color-scheme:dark) {
-
 }
 
 @media (prefers-color-scheme:dark) {
@@ -924,34 +915,39 @@ exports[`<BlogRenderer /> should render correctly with blog and admin 1`] = `
       <div
         class=""
       >
-        <span
+        <a
           class="c0"
+          href="/blogs"
         >
-          ⇠ Blogs
-        </span>
+          <span
+            class="c1"
+          >
+            ⇠ Blogs
+          </span>
+        </a>
       </div>
     </div>
     <div
       class=""
     >
       <h1
-        class="c1 "
+        class="c2 "
       >
         St. Ives ⛵ 2018
       </h1>
     </div>
     <div
-      class="c2"
+      class="c3"
     >
       <span
-        class="c0 c3"
+        class="c1 c4"
       >
         Published 
         TEST_DATE
       </span>
     </div>
     <div
-      class="c4"
+      class="c5"
     >
       <div
         class=""
@@ -965,21 +961,21 @@ exports[`<BlogRenderer /> should render correctly with blog and admin 1`] = `
       </div>
     </div>
     <div
-      class="c5"
+      class="c6"
     >
       <span
-        class="c6 c7 markdown-renderer__element"
+        class="c7 c8 markdown-renderer__element"
       >
         Some content with 
         <a
           aria-label="a link (opens in a new tab)"
-          class="c8"
+          class="c0"
           href="https://duckduckgo.com/"
           rel="noopener noreferrer"
           target="_blank"
         >
           <span
-            class="c0"
+            class="c1"
           >
             a link
           </span>
@@ -1043,19 +1039,19 @@ exports[`<BlogRenderer /> should render correctly with blog and admin 1`] = `
             Copyright
           </h1>
           <span
-            class="c6"
+            class="c7"
           >
             Most of my photos are licensed under
              
             <a
               aria-label="Creative Commons BY-SA 3.0 (opens in a new tab)"
-              class="c8"
+              class="c0"
               href="https://creativecommons.org/licenses/by-sa/3.0/"
               rel="noopener noreferrer"
               target="_blank"
             >
               <span
-                class="c0"
+                class="c1"
               >
                 Creative Commons BY-SA 3.0
               </span>
@@ -1078,11 +1074,16 @@ exports[`<BlogRenderer /> should render correctly with blog and admin 1`] = `
             .
             <br />
             If you are unsure about your right to use them please 
-            <span
+            <a
               class="c0"
+              href="/contact"
             >
-              contact me
-            </span>
+              <span
+                class="c1"
+              >
+                contact me
+              </span>
+            </a>
             .
           </span>
         </div>
@@ -1304,14 +1305,6 @@ exports[`<BlogRenderer /> should render correctly with blog load error 1`] = `
 }
 
 @media (prefers-color-scheme:dark) {
-
-}
-
-@media (prefers-color-scheme:dark) {
-
-}
-
-@media (prefers-color-scheme:dark) {
   .c9 {
     background-color: #121313;
   }
@@ -1422,11 +1415,16 @@ exports[`<BlogRenderer /> should render correctly with blog load error 1`] = `
             .
             <br />
             If you are unsure about your right to use them please 
-            <span
-              class="c13"
+            <a
+              class="c12"
+              href="/contact"
             >
-              contact me
-            </span>
+              <span
+                class="c13"
+              >
+                contact me
+              </span>
+            </a>
             .
           </span>
         </div>
@@ -1644,14 +1642,6 @@ exports[`<BlogRenderer /> should render correctly with initial state 1`] = `
 }
 
 @media (prefers-color-scheme:dark) {
-
-}
-
-@media (prefers-color-scheme:dark) {
-
-}
-
-@media (prefers-color-scheme:dark) {
   .c5 {
     background-color: #121313;
   }
@@ -1741,11 +1731,16 @@ exports[`<BlogRenderer /> should render correctly with initial state 1`] = `
             .
             <br />
             If you are unsure about your right to use them please 
-            <span
-              class="c12"
+            <a
+              class="c11"
+              href="/contact"
             >
-              contact me
-            </span>
+              <span
+                class="c12"
+              >
+                contact me
+              </span>
+            </a>
             .
           </span>
         </div>
@@ -1756,7 +1751,7 @@ exports[`<BlogRenderer /> should render correctly with initial state 1`] = `
 `;
 
 exports[`<BlogRenderer /> should render correctly with ssrBlog 1`] = `
-.c1 {
+.c2 {
   margin: 0;
   font-size: 2.4rem;
   font-weight: bold;
@@ -1768,7 +1763,7 @@ exports[`<BlogRenderer /> should render correctly with ssrBlog 1`] = `
   font-weight: bold;
 }
 
-.c0 {
+.c1 {
   margin: 0;
 }
 
@@ -1777,7 +1772,7 @@ exports[`<BlogRenderer /> should render correctly with ssrBlog 1`] = `
   height: 1.25rem;
 }
 
-.c8 {
+.c0 {
   display: inline-block;
   border-radius: 0.25rem;
   font-weight: bold;
@@ -1788,14 +1783,14 @@ exports[`<BlogRenderer /> should render correctly with ssrBlog 1`] = `
   fill: darkorchid;
 }
 
-.c8:focus-within,
-.c8:focus {
+.c0:focus-within,
+.c0:focus {
   position: relative;
   outline: none !important;
 }
 
-.c8:focus-within::after,
-.c8:focus::after {
+.c0:focus-within::after,
+.c0:focus::after {
   position: absolute;
   top: -0.35rem;
   right: -0.35rem;
@@ -1808,7 +1803,7 @@ exports[`<BlogRenderer /> should render correctly with ssrBlog 1`] = `
   pointer-events: none;
 }
 
-.c8:hover {
+.c0:hover {
   color: #44aeff;
   fill: #44aeff;
 }
@@ -1842,12 +1837,12 @@ exports[`<BlogRenderer /> should render correctly with ssrBlog 1`] = `
   margin: 2.13rem 0 0 0;
 }
 
-.c3 {
+.c4 {
   font-style: italic;
   padding-bottom: 0.5rem;
 }
 
-.c6 {
+.c7 {
   display: inline-block;
   margin-bottom: 0;
   padding-bottom: 0;
@@ -1855,33 +1850,33 @@ exports[`<BlogRenderer /> should render correctly with ssrBlog 1`] = `
   margin-top: 2rem;
 }
 
-.c6:first-of-type {
+.c7:first-of-type {
   margin-top: 0.86rem;
 }
 
-.c5 {
+.c6 {
   display: inline;
   color: #1e1e1e;
 }
 
-.c5 .markdown-renderer__element {
+.c6 .markdown-renderer__element {
   max-width: 100%;
 }
 
-.c7 {
+.c8 {
   width: 100%;
 }
 
-.c2 {
+.c3 {
   margin-top: 0.86rem;
   margin-bottom: 1rem;
 }
 
-.c4 {
+.c5 {
   margin-bottom: 1rem;
 }
 
-.c4 > * {
+.c5 > * {
   margin: 0 0.375rem 0.375rem 0;
 }
 
@@ -1920,19 +1915,19 @@ exports[`<BlogRenderer /> should render correctly with ssrBlog 1`] = `
 }
 
 @media (prefers-color-scheme:dark) {
-  .c8:focus-within::after,
-  .c8:focus::after {
+  .c0:focus-within::after,
+  .c0:focus::after {
     border-color: rgba(0,125,250,0.6);
   }
 }
 
 @media (prefers-color-scheme:dark) {
-  .c8 {
+  .c0 {
     color: orchid;
     fill: orchid;
   }
 
-  .c8:hover {
+  .c0:hover {
     color: #44aeff;
     fill: #44aeff;
   }
@@ -1945,17 +1940,9 @@ exports[`<BlogRenderer /> should render correctly with ssrBlog 1`] = `
 }
 
 @media (prefers-color-scheme:dark) {
-  .c5 {
+  .c6 {
     color: white;
   }
-}
-
-@media (prefers-color-scheme:dark) {
-
-}
-
-@media (prefers-color-scheme:dark) {
-
 }
 
 @media (prefers-color-scheme:dark) {
@@ -1975,34 +1962,39 @@ exports[`<BlogRenderer /> should render correctly with ssrBlog 1`] = `
       <div
         class=""
       >
-        <span
+        <a
           class="c0"
+          href="/blogs"
         >
-          ⇠ Blogs
-        </span>
+          <span
+            class="c1"
+          >
+            ⇠ Blogs
+          </span>
+        </a>
       </div>
     </div>
     <div
       class=""
     >
       <h1
-        class="c1 "
+        class="c2 "
       >
         St. Ives ⛵ 2018
       </h1>
     </div>
     <div
-      class="c2"
+      class="c3"
     >
       <span
-        class="c0 c3"
+        class="c1 c4"
       >
         Published 
         TEST_DATE
       </span>
     </div>
     <div
-      class="c4"
+      class="c5"
     >
       <div
         class=""
@@ -2016,21 +2008,21 @@ exports[`<BlogRenderer /> should render correctly with ssrBlog 1`] = `
       </div>
     </div>
     <div
-      class="c5"
+      class="c6"
     >
       <span
-        class="c6 c7 markdown-renderer__element"
+        class="c7 c8 markdown-renderer__element"
       >
         Some content with 
         <a
           aria-label="a link (opens in a new tab)"
-          class="c8"
+          class="c0"
           href="https://duckduckgo.com/"
           rel="noopener noreferrer"
           target="_blank"
         >
           <span
-            class="c0"
+            class="c1"
           >
             a link
           </span>
@@ -2081,19 +2073,19 @@ exports[`<BlogRenderer /> should render correctly with ssrBlog 1`] = `
             Copyright
           </h1>
           <span
-            class="c6"
+            class="c7"
           >
             Most of my photos are licensed under
              
             <a
               aria-label="Creative Commons BY-SA 3.0 (opens in a new tab)"
-              class="c8"
+              class="c0"
               href="https://creativecommons.org/licenses/by-sa/3.0/"
               rel="noopener noreferrer"
               target="_blank"
             >
               <span
-                class="c0"
+                class="c1"
               >
                 Creative Commons BY-SA 3.0
               </span>
@@ -2116,11 +2108,16 @@ exports[`<BlogRenderer /> should render correctly with ssrBlog 1`] = `
             .
             <br />
             If you are unsure about your right to use them please 
-            <span
+            <a
               class="c0"
+              href="/contact"
             >
-              contact me
-            </span>
+              <span
+                class="c1"
+              >
+                contact me
+              </span>
+            </a>
             .
           </span>
         </div>

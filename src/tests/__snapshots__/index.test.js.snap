@@ -65,6 +65,42 @@ exports[`<HomePage /> should render correctly 1`] = `
   fill: #44aeff;
 }
 
+.c67 {
+  display: inline-block;
+  border-radius: 0.25rem;
+  font-weight: bold;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  position: relative;
+  color: white;
+  fill: white;
+}
+
+.c67:focus-within,
+.c67:focus {
+  position: relative;
+  outline: none !important;
+}
+
+.c67:focus-within::after,
+.c67:focus::after {
+  position: absolute;
+  top: -0.35rem;
+  right: -0.35rem;
+  bottom: -0.35rem;
+  left: -0.35rem;
+  content: '';
+  display: block;
+  border: solid rgba(0,125,250,0.6) 0.2rem;
+  border-radius: 0.5rem;
+  pointer-events: none;
+}
+
+.c67:hover {
+  color: white;
+  fill: white;
+}
+
 .c18 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -450,6 +486,10 @@ exports[`<HomePage /> should render correctly 1`] = `
 }
 
 .c55 {
+  font-size: 2.2rem;
+}
+
+.c56 {
   position: absolute;
   top: -400%;
   width: 20rem;
@@ -505,7 +545,7 @@ exports[`<HomePage /> should render correctly 1`] = `
   margin-top: 2rem;
 }
 
-.c57 {
+.c58 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -532,18 +572,18 @@ exports[`<HomePage /> should render correctly 1`] = `
   padding: 0;
 }
 
-.c59 {
+.c60 {
   border-radius: 0.25rem;
 }
 
-.c59:focus-within,
-.c59:focus {
+.c60:focus-within,
+.c60:focus {
   position: relative;
   outline: none !important;
 }
 
-.c59:focus-within::after,
-.c59:focus::after {
+.c60:focus-within::after,
+.c60:focus::after {
   position: absolute;
   top: -0.35rem;
   right: -0.35rem;
@@ -556,16 +596,16 @@ exports[`<HomePage /> should render correctly 1`] = `
   pointer-events: none;
 }
 
-.c59:hover,
-.c59:active,
-.c59:focus {
+.c60:hover,
+.c60:active,
+.c60:focus {
   -webkit-animation-duration: 0.4s;
   animation-duration: 0.4s;
   -webkit-animation-name: cMFrpC;
   animation-name: cMFrpC;
 }
 
-.c60 {
+.c61 {
   display: inline-block;
   padding-top: 0.1rem;
   border-radius: 0.25rem;
@@ -575,7 +615,7 @@ exports[`<HomePage /> should render correctly 1`] = `
   font-weight: bold;
 }
 
-.c64 {
+.c65 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -595,7 +635,7 @@ exports[`<HomePage /> should render correctly 1`] = `
   margin: auto;
 }
 
-.c65 > * {
+.c66 > * {
   margin: 0.5rem 0.5rem 0 0.5rem;
   display: -webkit-box;
   display: -webkit-flex;
@@ -610,7 +650,7 @@ exports[`<HomePage /> should render correctly 1`] = `
   align-items: center;
 }
 
-.c62 {
+.c63 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -630,7 +670,7 @@ exports[`<HomePage /> should render correctly 1`] = `
   align-items: center;
 }
 
-.c63 {
+.c64 {
   display: inline-block;
   width: 100%;
   max-width: 2.3rem;
@@ -641,12 +681,12 @@ exports[`<HomePage /> should render correctly 1`] = `
   filter: brightness(0) invert(1);
 }
 
-.c63:hover {
+.c64:hover {
   -webkit-filter: brightness(0) invert(1) opacity(70%);
   filter: brightness(0) invert(1) opacity(70%);
 }
 
-.c56 {
+.c57 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -666,11 +706,11 @@ exports[`<HomePage /> should render correctly 1`] = `
   color: white;
 }
 
-.c58 {
+.c59 {
   text-align: center;
 }
 
-.c61 {
+.c62 {
   text-align: center;
 }
 
@@ -711,19 +751,22 @@ exports[`<HomePage /> should render correctly 1`] = `
 }
 
 @media (prefers-color-scheme:dark) {
-
+  .c67:focus-within::after,
+  .c67:focus::after {
+    border-color: rgba(0,125,250,0.6);
+  }
 }
 
 @media (prefers-color-scheme:dark) {
+  .c67 {
+    color: white;
+    fill: white;
+  }
 
-}
-
-@media (prefers-color-scheme:dark) {
-
-}
-
-@media (prefers-color-scheme:dark) {
-
+  .c67:hover {
+    color: white;
+    fill: white;
+  }
 }
 
 @media (prefers-color-scheme:dark) {
@@ -841,7 +884,7 @@ exports[`<HomePage /> should render correctly 1`] = `
 }
 
 @media (prefers-color-scheme:dark) {
-  .c55 {
+  .c56 {
     background-color: black;
   }
 }
@@ -871,7 +914,7 @@ exports[`<HomePage /> should render correctly 1`] = `
 }
 
 @media (min-width:50.25rem) {
-  .c57 {
+  .c58 {
     padding-right: unset;
     padding-left: unset;
     -webkit-align-items: unset;
@@ -882,32 +925,32 @@ exports[`<HomePage /> should render correctly 1`] = `
 }
 
 @media (prefers-color-scheme:dark) {
-  .c59:focus-within::after,
-  .c59:focus::after {
+  .c60:focus-within::after,
+  .c60:focus::after {
     border-color: rgba(0,125,250,0.6);
   }
 }
 
 @media (min-width:32.25rem) {
-  .c60 {
+  .c61 {
     font-size: 3rem;
   }
 }
 
 @media (prefers-color-scheme:dark) {
-  .c60 {
+  .c61 {
     color: white;
   }
 }
 
 @media (min-width:32.25rem) {
-  .c56 {
+  .c57 {
     padding: 2rem 2rem;
   }
 }
 
 @media (prefers-color-scheme:dark) {
-  .c56 {
+  .c57 {
     border-top: solid #44aeff 0.15rem;
     background-color: #050d1b;
   }
@@ -999,11 +1042,16 @@ exports[`<HomePage /> should render correctly 1`] = `
                     <br />
                     I’m also an accessibility champion and design system enthusiast.
                     <br />
-                    <span
-                      class="c17"
+                    <a
+                      class="c16"
+                      href="/work"
                     >
-                      Learn more about my work
-                    </span>
+                      <span
+                        class="c17"
+                      >
+                        Learn more about my work
+                      </span>
+                    </a>
                   </span>
                 </div>
               </div>
@@ -1285,17 +1333,27 @@ exports[`<HomePage /> should render correctly 1`] = `
                   >
                     I love travel, photography, and obstacle course racing.
                     <br />
-                    <span
-                      class="c17"
+                    <a
+                      class="c16"
+                      href="/blog"
                     >
-                      Blog
-                    </span>
+                      <span
+                        class="c17"
+                      >
+                        Blog
+                      </span>
+                    </a>
                     <br />
-                    <span
-                      class="c17"
+                    <a
+                      class="c16"
+                      href="/photography"
                     >
-                      Photography
-                    </span>
+                      <span
+                        class="c17"
+                      >
+                        Photography
+                      </span>
+                    </a>
                   </span>
                 </div>
                 <span
@@ -1720,13 +1778,18 @@ exports[`<HomePage /> should render correctly 1`] = `
                 <div
                   class="c54"
                 >
-                  <span
-                    class="c17"
+                  <a
+                    class="c16 c55"
+                    href="/contact"
                   >
-                    Get in touch
-                  </span>
+                    <span
+                      class="c17"
+                    >
+                      Get in touch
+                    </span>
+                  </a>
                   <div
-                    class="c55 home__contact--hide"
+                    class="c56 home__contact--hide"
                     style="left: 300%;"
                   />
                 </div>
@@ -1749,29 +1812,29 @@ exports[`<HomePage /> should render correctly 1`] = `
       class="c7 animated-content__wrapper--hidden"
     >
       <footer
-        class="c56"
+        class="c57"
         id="footer"
       >
         <div
-          class="c57 c58"
+          class="c58 c59"
         >
           <a
-            class="c59"
+            class="c60"
             href="/"
           >
             <span
               aria-label="Home page"
-              class="c60"
+              class="c61"
             >
               G
             </span>
           </a>
         </div>
         <div
-          class="c61"
+          class="c62"
         >
           <span
-            class="c14 c62"
+            class="c14 c63"
           >
             Built in
             <a
@@ -1781,7 +1844,7 @@ exports[`<HomePage /> should render correctly 1`] = `
             >
               <img
                 alt="React"
-                class="c63"
+                class="c64"
                 height="5"
                 width="5"
               />
@@ -1794,7 +1857,7 @@ exports[`<HomePage /> should render correctly 1`] = `
             >
               <img
                 alt="Redux"
-                class="c63"
+                class="c64"
                 height="5"
                 width="5"
               />
@@ -1807,7 +1870,7 @@ exports[`<HomePage /> should render correctly 1`] = `
             >
               <img
                 alt="Amazon Web Services"
-                class="c63"
+                class="c64"
                 height="5"
                 style="margin-top: .8rem; max-width: 2.9rem;"
                 width="8.28"
@@ -1816,55 +1879,95 @@ exports[`<HomePage /> should render correctly 1`] = `
           </span>
         </div>
         <div
-          class="c64 "
+          class="c65 "
         >
           <div
-            class="c65"
+            class="c66"
           >
-            <span
-              class="c17"
+            <a
+              class="c67"
+              href="/blog"
             >
-              Blog
-            </span>
-            <span
-              class="c17"
+              <span
+                class="c17"
+              >
+                Blog
+              </span>
+            </a>
+            <a
+              class="c67"
+              href="/photography"
             >
-              Photography
-            </span>
-            <span
-              class="c17"
+              <span
+                class="c17"
+              >
+                Photography
+              </span>
+            </a>
+            <a
+              class="c67"
+              href="/work"
             >
-              Work
-            </span>
-            <span
-              class="c17"
+              <span
+                class="c17"
+              >
+                Work
+              </span>
+            </a>
+            <a
+              class="c67"
+              href="/contact"
             >
-              Contact
-            </span>
+              <span
+                class="c17"
+              >
+                Contact
+              </span>
+            </a>
           </div>
           <div
-            class="c65"
+            class="c66"
           >
-            <span
-              class="c17"
+            <a
+              class="c67"
+              href="/sitemap"
             >
-              Site map
-            </span>
-            <span
-              class="c17"
+              <span
+                class="c17"
+              >
+                Site map
+              </span>
+            </a>
+            <a
+              class="c67"
+              href="/privacy-policy"
             >
-              Privacy
-            </span>
-            <span
-              class="c17"
+              <span
+                class="c17"
+              >
+                Privacy
+              </span>
+            </a>
+            <a
+              class="c67"
+              href="/login"
             >
-              Login/Account
-            </span>
-            <span
-              class="c17"
+              <span
+                class="c17"
+              >
+                Login/Account
+              </span>
+            </a>
+            <a
+              class="c67"
+              href="/status"
             >
-              Status
-            </span>
+              <span
+                class="c17"
+              >
+                Status
+              </span>
+            </a>
           </div>
         </div>
       </footer>

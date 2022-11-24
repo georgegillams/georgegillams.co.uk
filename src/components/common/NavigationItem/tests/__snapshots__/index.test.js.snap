@@ -2,6 +2,72 @@
 
 exports[`<NavigationItem /> Should render correctly 1`] = `
 .c0 {
+  position: relative;
+  min-width: 5rem;
+  padding: 0.43rem 1.125rem 0.32rem 1.125rem;
+  -webkit-transition: filter 0.3s;
+  transition: filter 0.3s;
+  border: none;
+  border-radius: 0.25rem;
+  font-size: 1.4rem;
+  font-weight: bold;
+  cursor: pointer;
+  -webkit-text-decoration-color: transparent;
+  text-decoration-color: transparent;
+  -webkit-text-decoration-line: none;
+  text-decoration-line: none;
+  background-color: transparent;
+  color: #1e1e1e;
+  min-width: unset;
+  padding: 0.2rem 0.8rem;
+  font-weight: normal;
+  display: inline-block;
+}
+
+.c0:focus-within,
+.c0:focus {
+  outline: none !important;
+}
+
+.c0:focus-within::after,
+.c0:focus::after {
+  position: absolute;
+  top: -0.35rem;
+  right: -0.35rem;
+  bottom: -0.35rem;
+  left: -0.35rem;
+  content: '';
+  display: block;
+  border: solid rgba(0,125,250,0.6) 0.2rem;
+  border-radius: 0.5rem;
+  pointer-events: none;
+}
+
+.c0:focus,
+.c0:hover {
+  background-color: #004F8C;
+  color: white;
+}
+
+.c0:active {
+  background-color: #003E6F;
+}
+
+.c0:disabled {
+  background-color: #cdcdd7;
+  color: rgb(100,100,100);
+}
+
+.c0:focus,
+.c0:active,
+.c0:hover {
+  -webkit-animation-duration: 0.4s;
+  animation-duration: 0.4s;
+  -webkit-animation-name: byvRAa;
+  animation-name: byvRAa;
+}
+
+.c1 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -13,36 +79,123 @@ exports[`<NavigationItem /> Should render correctly 1`] = `
 }
 
 @media (prefers-color-scheme:dark) {
-
+  .c0:focus-within::after,
+  .c0:focus::after {
+    border-color: rgba(0,125,250,0.6);
+  }
 }
 
 @media (prefers-color-scheme:dark) {
-
+  .c0 {
+    background-color: transparent;
+    color: white;
+  }
 }
 
 @media (prefers-color-scheme:dark) {
-
+  .c0:focus,
+  .c0:hover {
+    background-color: #004479;
+    color: white;
+  }
 }
 
 @media (prefers-color-scheme:dark) {
-
+  .c0:active {
+    background-color: #003965;
+  }
 }
 
 @media (prefers-color-scheme:dark) {
-
+  .c0:disabled {
+    background-color: rgb(89,89,89);
+    color: darkgray;
+  }
 }
 
 <div>
-  <span
+  <a
+    aria-label="name"
     class="c0"
+    href="/test"
   >
-    name
-  </span>
+    <span
+      class="c1"
+    >
+      name
+    </span>
+  </a>
 </div>
 `;
 
 exports[`<NavigationItem /> Should render correctly hrefExternal 1`] = `
 .c0 {
+  position: relative;
+  min-width: 5rem;
+  padding: 0.43rem 1.125rem 0.32rem 1.125rem;
+  -webkit-transition: filter 0.3s;
+  transition: filter 0.3s;
+  border: none;
+  border-radius: 0.25rem;
+  font-size: 1.4rem;
+  font-weight: bold;
+  cursor: pointer;
+  -webkit-text-decoration-color: transparent;
+  text-decoration-color: transparent;
+  -webkit-text-decoration-line: none;
+  text-decoration-line: none;
+  background-color: transparent;
+  color: #1e1e1e;
+  min-width: unset;
+  padding: 0.2rem 0.8rem;
+  font-weight: normal;
+  display: inline-block;
+}
+
+.c0:focus-within,
+.c0:focus {
+  outline: none !important;
+}
+
+.c0:focus-within::after,
+.c0:focus::after {
+  position: absolute;
+  top: -0.35rem;
+  right: -0.35rem;
+  bottom: -0.35rem;
+  left: -0.35rem;
+  content: '';
+  display: block;
+  border: solid rgba(0,125,250,0.6) 0.2rem;
+  border-radius: 0.5rem;
+  pointer-events: none;
+}
+
+.c0:focus,
+.c0:hover {
+  background-color: #004F8C;
+  color: white;
+}
+
+.c0:active {
+  background-color: #003E6F;
+}
+
+.c0:disabled {
+  background-color: #cdcdd7;
+  color: rgb(100,100,100);
+}
+
+.c0:focus,
+.c0:active,
+.c0:hover {
+  -webkit-animation-duration: 0.4s;
+  animation-duration: 0.4s;
+  -webkit-animation-name: byvRAa;
+  animation-name: byvRAa;
+}
+
+.c1 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -54,36 +207,125 @@ exports[`<NavigationItem /> Should render correctly hrefExternal 1`] = `
 }
 
 @media (prefers-color-scheme:dark) {
-
+  .c0:focus-within::after,
+  .c0:focus::after {
+    border-color: rgba(0,125,250,0.6);
+  }
 }
 
 @media (prefers-color-scheme:dark) {
-
+  .c0 {
+    background-color: transparent;
+    color: white;
+  }
 }
 
 @media (prefers-color-scheme:dark) {
-
+  .c0:focus,
+  .c0:hover {
+    background-color: #004479;
+    color: white;
+  }
 }
 
 @media (prefers-color-scheme:dark) {
-
+  .c0:active {
+    background-color: #003965;
+  }
 }
 
 @media (prefers-color-scheme:dark) {
-
+  .c0:disabled {
+    background-color: rgb(89,89,89);
+    color: darkgray;
+  }
 }
 
 <div>
-  <span
+  <a
+    aria-label="name"
     class="c0"
+    href="/test"
+    rel="noopener noreferrer"
+    target="_blank"
   >
-    name
-  </span>
+    <span
+      class="c1"
+    >
+      name
+    </span>
+  </a>
 </div>
 `;
 
 exports[`<NavigationItem /> Should render correctly with custom className 1`] = `
 .c0 {
+  position: relative;
+  min-width: 5rem;
+  padding: 0.43rem 1.125rem 0.32rem 1.125rem;
+  -webkit-transition: filter 0.3s;
+  transition: filter 0.3s;
+  border: none;
+  border-radius: 0.25rem;
+  font-size: 1.4rem;
+  font-weight: bold;
+  cursor: pointer;
+  -webkit-text-decoration-color: transparent;
+  text-decoration-color: transparent;
+  -webkit-text-decoration-line: none;
+  text-decoration-line: none;
+  background-color: transparent;
+  color: #1e1e1e;
+  min-width: unset;
+  padding: 0.2rem 0.8rem;
+  font-weight: normal;
+  display: inline-block;
+}
+
+.c0:focus-within,
+.c0:focus {
+  outline: none !important;
+}
+
+.c0:focus-within::after,
+.c0:focus::after {
+  position: absolute;
+  top: -0.35rem;
+  right: -0.35rem;
+  bottom: -0.35rem;
+  left: -0.35rem;
+  content: '';
+  display: block;
+  border: solid rgba(0,125,250,0.6) 0.2rem;
+  border-radius: 0.5rem;
+  pointer-events: none;
+}
+
+.c0:focus,
+.c0:hover {
+  background-color: #004F8C;
+  color: white;
+}
+
+.c0:active {
+  background-color: #003E6F;
+}
+
+.c0:disabled {
+  background-color: #cdcdd7;
+  color: rgb(100,100,100);
+}
+
+.c0:focus,
+.c0:active,
+.c0:hover {
+  -webkit-animation-duration: 0.4s;
+  animation-duration: 0.4s;
+  -webkit-animation-name: byvRAa;
+  animation-name: byvRAa;
+}
+
+.c1 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -95,30 +337,51 @@ exports[`<NavigationItem /> Should render correctly with custom className 1`] = 
 }
 
 @media (prefers-color-scheme:dark) {
-
+  .c0:focus-within::after,
+  .c0:focus::after {
+    border-color: rgba(0,125,250,0.6);
+  }
 }
 
 @media (prefers-color-scheme:dark) {
-
+  .c0 {
+    background-color: transparent;
+    color: white;
+  }
 }
 
 @media (prefers-color-scheme:dark) {
-
+  .c0:focus,
+  .c0:hover {
+    background-color: #004479;
+    color: white;
+  }
 }
 
 @media (prefers-color-scheme:dark) {
-
+  .c0:active {
+    background-color: #003965;
+  }
 }
 
 @media (prefers-color-scheme:dark) {
-
+  .c0:disabled {
+    background-color: rgb(89,89,89);
+    color: darkgray;
+  }
 }
 
 <div>
-  <span
-    class="c0"
+  <a
+    aria-label="name"
+    class="c0 test-custom-classname"
+    href="/test"
   >
-    name
-  </span>
+    <span
+      class="c1"
+    >
+      name
+    </span>
+  </a>
 </div>
 `;
