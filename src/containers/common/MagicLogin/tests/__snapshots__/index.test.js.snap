@@ -643,13 +643,49 @@ exports[`<MagicLogin /> should render correctly with initial state 1`] = `
 `;
 
 exports[`<MagicLogin /> should render correctly with logInError 1`] = `
+.c15 {
+  display: inline-block;
+  border-radius: 0.25rem;
+  font-weight: bold;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  position: relative;
+  color: darkorchid;
+  fill: darkorchid;
+}
+
+.c15:focus-within,
+.c15:focus {
+  position: relative;
+  outline: none !important;
+}
+
+.c15:focus-within::after,
+.c15:focus::after {
+  position: absolute;
+  top: -0.35rem;
+  right: -0.35rem;
+  bottom: -0.35rem;
+  left: -0.35rem;
+  content: '';
+  display: block;
+  border: solid rgba(0,125,250,0.6) 0.2rem;
+  border-radius: 0.5rem;
+  pointer-events: none;
+}
+
+.c15:hover {
+  color: #44aeff;
+  fill: #44aeff;
+}
+
 .c2 {
   margin: 0;
   font-size: 2.4rem;
   font-weight: bold;
 }
 
-.c15 {
+.c16 {
   margin: 0;
 }
 
@@ -926,11 +962,22 @@ exports[`<MagicLogin /> should render correctly with logInError 1`] = `
 }
 
 @media (prefers-color-scheme:dark) {
-
+  .c15:focus-within::after,
+  .c15:focus::after {
+    border-color: rgba(0,125,250,0.6);
+  }
 }
 
 @media (prefers-color-scheme:dark) {
+  .c15 {
+    color: orchid;
+    fill: orchid;
+  }
 
+  .c15:hover {
+    color: #44aeff;
+    fill: #44aeff;
+  }
 }
 
 @media (prefers-color-scheme:dark) {
@@ -1005,11 +1052,16 @@ exports[`<MagicLogin /> should render correctly with logInError 1`] = `
         <br />
         Invalid session
         <br />
-        <span
+        <a
           class="c15"
+          href="/login"
         >
-          Try logging in again
-        </span>
+          <span
+            class="c16"
+          >
+            Try logging in again
+          </span>
+        </a>
       </span>
     </span>
   </div>
@@ -1338,13 +1390,49 @@ exports[`<MagicLogin /> should render correctly with loggingIn=true 1`] = `
 `;
 
 exports[`<MagicLogin /> should render correctly with user 1`] = `
+.c5 {
+  display: inline-block;
+  border-radius: 0.25rem;
+  font-weight: bold;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  position: relative;
+  color: darkorchid;
+  fill: darkorchid;
+}
+
+.c5:focus-within,
+.c5:focus {
+  position: relative;
+  outline: none !important;
+}
+
+.c5:focus-within::after,
+.c5:focus::after {
+  position: absolute;
+  top: -0.35rem;
+  right: -0.35rem;
+  bottom: -0.35rem;
+  left: -0.35rem;
+  content: '';
+  display: block;
+  border: solid rgba(0,125,250,0.6) 0.2rem;
+  border-radius: 0.5rem;
+  pointer-events: none;
+}
+
+.c5:hover {
+  color: #44aeff;
+  fill: #44aeff;
+}
+
 .c2 {
   margin: 0;
   font-size: 2.4rem;
   font-weight: bold;
 }
 
-.c5 {
+.c6 {
   margin: 0;
 }
 
@@ -1369,7 +1457,7 @@ exports[`<MagicLogin /> should render correctly with user 1`] = `
   margin-top: 0.86rem;
 }
 
-.c6 {
+.c7 {
   position: relative;
   display: inline-block;
   width: 1.125rem;
@@ -1379,7 +1467,7 @@ exports[`<MagicLogin /> should render correctly with user 1`] = `
   height: 2.375rem;
 }
 
-.c7 {
+.c8 {
   position: absolute;
   bottom: 0.05rem;
   left: 0.5rem;
@@ -1407,7 +1495,7 @@ exports[`<MagicLogin /> should render correctly with user 1`] = `
   transform-origin: center -0.34em;
 }
 
-.c8 {
+.c9 {
   position: absolute;
   bottom: 0.05rem;
   left: 0.5rem;
@@ -1435,7 +1523,7 @@ exports[`<MagicLogin /> should render correctly with user 1`] = `
   transform-origin: center -0.34em;
 }
 
-.c9 {
+.c10 {
   position: absolute;
   bottom: 0.05rem;
   left: 0.5rem;
@@ -1463,7 +1551,7 @@ exports[`<MagicLogin /> should render correctly with user 1`] = `
   transform-origin: center -0.34em;
 }
 
-.c10 {
+.c11 {
   position: absolute;
   bottom: 0.05rem;
   left: 0.5rem;
@@ -1491,7 +1579,7 @@ exports[`<MagicLogin /> should render correctly with user 1`] = `
   transform-origin: center -0.34em;
 }
 
-.c11 {
+.c12 {
   position: absolute;
   bottom: 0.05rem;
   left: 0.5rem;
@@ -1519,7 +1607,7 @@ exports[`<MagicLogin /> should render correctly with user 1`] = `
   transform-origin: center -0.34em;
 }
 
-.c12 {
+.c13 {
   position: absolute;
   bottom: 0.05rem;
   left: 0.5rem;
@@ -1547,7 +1635,7 @@ exports[`<MagicLogin /> should render correctly with user 1`] = `
   transform-origin: center -0.34em;
 }
 
-.c13 {
+.c14 {
   position: absolute;
   bottom: 0.05rem;
   left: 0.5rem;
@@ -1575,7 +1663,7 @@ exports[`<MagicLogin /> should render correctly with user 1`] = `
   transform-origin: center -0.34em;
 }
 
-.c14 {
+.c15 {
   position: absolute;
   bottom: 0.05rem;
   left: 0.5rem;
@@ -1616,15 +1704,26 @@ exports[`<MagicLogin /> should render correctly with user 1`] = `
 }
 
 @media (prefers-color-scheme:dark) {
-
+  .c5:focus-within::after,
+  .c5:focus::after {
+    border-color: rgba(0,125,250,0.6);
+  }
 }
 
 @media (prefers-color-scheme:dark) {
+  .c5 {
+    color: orchid;
+    fill: orchid;
+  }
 
+  .c5:hover {
+    color: #44aeff;
+    fill: #44aeff;
+  }
 }
 
 @media (prefers-color-scheme:dark) {
-  .c6 {
+  .c7 {
     color: white;
   }
 }
@@ -1659,18 +1758,20 @@ exports[`<MagicLogin /> should render correctly with user 1`] = `
       account
        page
       <br />
-      <span
+      <a
         class="c5"
+        href="account"
       >
-        Not been redirected? Click here
-      </span>
+        <span
+          class="c6"
+        >
+          Not been redirected? Click here
+        </span>
+      </a>
     </span>
     <div
-      class="c6"
+      class="c7"
     >
-      <div
-        class="c7"
-      />
       <div
         class="c8"
       />
@@ -1691,6 +1792,9 @@ exports[`<MagicLogin /> should render correctly with user 1`] = `
       />
       <div
         class="c14"
+      />
+      <div
+        class="c15"
       />
     </div>
   </div>

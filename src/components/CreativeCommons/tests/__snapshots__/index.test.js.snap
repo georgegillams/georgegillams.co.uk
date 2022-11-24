@@ -147,14 +147,6 @@ exports[`<CreativeCommons /> Should render correctly 1`] = `
 }
 
 @media (prefers-color-scheme:dark) {
-
-}
-
-@media (prefers-color-scheme:dark) {
-
-}
-
-@media (prefers-color-scheme:dark) {
   .c2 {
     color: white;
   }
@@ -218,11 +210,16 @@ exports[`<CreativeCommons /> Should render correctly 1`] = `
         .
         <br />
         If you are unsure about your right to use them please 
-        <span
-          class="c8"
+        <a
+          class="c7"
+          href="/contact"
         >
-          contact me
-        </span>
+          <span
+            class="c8"
+          >
+            contact me
+          </span>
+        </a>
         .
       </span>
     </div>
@@ -377,14 +374,6 @@ exports[`<CreativeCommons /> Should render correctly with custom className 1`] =
 }
 
 @media (prefers-color-scheme:dark) {
-
-}
-
-@media (prefers-color-scheme:dark) {
-
-}
-
-@media (prefers-color-scheme:dark) {
   .c2 {
     color: white;
   }
@@ -448,11 +437,16 @@ exports[`<CreativeCommons /> Should render correctly with custom className 1`] =
         .
         <br />
         If you are unsure about your right to use them please 
-        <span
-          class="c8"
+        <a
+          class="c7"
+          href="/contact"
         >
-          contact me
-        </span>
+          <span
+            class="c8"
+          >
+            contact me
+          </span>
+        </a>
         .
       </span>
     </div>

@@ -72,6 +72,42 @@ exports[`<Footer /> Should render correctly 1`] = `
 }
 
 .c11 {
+  display: inline-block;
+  border-radius: 0.25rem;
+  font-weight: bold;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  position: relative;
+  color: white;
+  fill: white;
+}
+
+.c11:focus-within,
+.c11:focus {
+  position: relative;
+  outline: none !important;
+}
+
+.c11:focus-within::after,
+.c11:focus::after {
+  position: absolute;
+  top: -0.35rem;
+  right: -0.35rem;
+  bottom: -0.35rem;
+  left: -0.35rem;
+  content: '';
+  display: block;
+  border: solid rgba(0,125,250,0.6) 0.2rem;
+  border-radius: 0.5rem;
+  pointer-events: none;
+}
+
+.c11:hover {
+  color: white;
+  fill: white;
+}
+
+.c12 {
   margin: 0;
 }
 
@@ -217,11 +253,22 @@ exports[`<Footer /> Should render correctly 1`] = `
 }
 
 @media (prefers-color-scheme:dark) {
-
+  .c11:focus-within::after,
+  .c11:focus::after {
+    border-color: rgba(0,125,250,0.6);
+  }
 }
 
 @media (prefers-color-scheme:dark) {
+  .c11 {
+    color: white;
+    fill: white;
+  }
 
+  .c11:hover {
+    color: white;
+    fill: white;
+  }
 }
 
 @media (min-width:32.25rem) {
@@ -311,50 +358,90 @@ exports[`<Footer /> Should render correctly 1`] = `
       <div
         class="c10"
       >
-        <span
+        <a
           class="c11"
+          href="/blog"
         >
-          Blog
-        </span>
-        <span
+          <span
+            class="c12"
+          >
+            Blog
+          </span>
+        </a>
+        <a
           class="c11"
+          href="/photography"
         >
-          Photography
-        </span>
-        <span
+          <span
+            class="c12"
+          >
+            Photography
+          </span>
+        </a>
+        <a
           class="c11"
+          href="/work"
         >
-          Work
-        </span>
-        <span
+          <span
+            class="c12"
+          >
+            Work
+          </span>
+        </a>
+        <a
           class="c11"
+          href="/contact"
         >
-          Contact
-        </span>
+          <span
+            class="c12"
+          >
+            Contact
+          </span>
+        </a>
       </div>
       <div
         class="c10"
       >
-        <span
+        <a
           class="c11"
+          href="/sitemap"
         >
-          Site map
-        </span>
-        <span
+          <span
+            class="c12"
+          >
+            Site map
+          </span>
+        </a>
+        <a
           class="c11"
+          href="/privacy-policy"
         >
-          Privacy
-        </span>
-        <span
+          <span
+            class="c12"
+          >
+            Privacy
+          </span>
+        </a>
+        <a
           class="c11"
+          href="/login"
         >
-          Login/Account
-        </span>
-        <span
+          <span
+            class="c12"
+          >
+            Login/Account
+          </span>
+        </a>
+        <a
           class="c11"
+          href="/status"
         >
-          Status
-        </span>
+          <span
+            class="c12"
+          >
+            Status
+          </span>
+        </a>
       </div>
     </div>
   </footer>
@@ -433,6 +520,42 @@ exports[`<Footer /> Should render correctly with custom className 1`] = `
 }
 
 .c11 {
+  display: inline-block;
+  border-radius: 0.25rem;
+  font-weight: bold;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  position: relative;
+  color: white;
+  fill: white;
+}
+
+.c11:focus-within,
+.c11:focus {
+  position: relative;
+  outline: none !important;
+}
+
+.c11:focus-within::after,
+.c11:focus::after {
+  position: absolute;
+  top: -0.35rem;
+  right: -0.35rem;
+  bottom: -0.35rem;
+  left: -0.35rem;
+  content: '';
+  display: block;
+  border: solid rgba(0,125,250,0.6) 0.2rem;
+  border-radius: 0.5rem;
+  pointer-events: none;
+}
+
+.c11:hover {
+  color: white;
+  fill: white;
+}
+
+.c12 {
   margin: 0;
 }
 
@@ -578,11 +701,22 @@ exports[`<Footer /> Should render correctly with custom className 1`] = `
 }
 
 @media (prefers-color-scheme:dark) {
-
+  .c11:focus-within::after,
+  .c11:focus::after {
+    border-color: rgba(0,125,250,0.6);
+  }
 }
 
 @media (prefers-color-scheme:dark) {
+  .c11 {
+    color: white;
+    fill: white;
+  }
 
+  .c11:hover {
+    color: white;
+    fill: white;
+  }
 }
 
 @media (min-width:32.25rem) {
@@ -672,50 +806,90 @@ exports[`<Footer /> Should render correctly with custom className 1`] = `
       <div
         class="c10"
       >
-        <span
+        <a
           class="c11"
+          href="/blog"
         >
-          Blog
-        </span>
-        <span
+          <span
+            class="c12"
+          >
+            Blog
+          </span>
+        </a>
+        <a
           class="c11"
+          href="/photography"
         >
-          Photography
-        </span>
-        <span
+          <span
+            class="c12"
+          >
+            Photography
+          </span>
+        </a>
+        <a
           class="c11"
+          href="/work"
         >
-          Work
-        </span>
-        <span
+          <span
+            class="c12"
+          >
+            Work
+          </span>
+        </a>
+        <a
           class="c11"
+          href="/contact"
         >
-          Contact
-        </span>
+          <span
+            class="c12"
+          >
+            Contact
+          </span>
+        </a>
       </div>
       <div
         class="c10"
       >
-        <span
+        <a
           class="c11"
+          href="/sitemap"
         >
-          Site map
-        </span>
-        <span
+          <span
+            class="c12"
+          >
+            Site map
+          </span>
+        </a>
+        <a
           class="c11"
+          href="/privacy-policy"
         >
-          Privacy
-        </span>
-        <span
+          <span
+            class="c12"
+          >
+            Privacy
+          </span>
+        </a>
+        <a
           class="c11"
+          href="/login"
         >
-          Login/Account
-        </span>
-        <span
+          <span
+            class="c12"
+          >
+            Login/Account
+          </span>
+        </a>
+        <a
           class="c11"
+          href="/status"
         >
-          Status
-        </span>
+          <span
+            class="c12"
+          >
+            Status
+          </span>
+        </a>
       </div>
     </div>
   </footer>

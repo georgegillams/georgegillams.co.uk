@@ -1,13 +1,49 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<AdminAnalytics /> should render correctly - index 1`] = `
+.c4 {
+  display: inline-block;
+  border-radius: 0.25rem;
+  font-weight: bold;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  position: relative;
+  color: darkorchid;
+  fill: darkorchid;
+}
+
+.c4:focus-within,
+.c4:focus {
+  position: relative;
+  outline: none !important;
+}
+
+.c4:focus-within::after,
+.c4:focus::after {
+  position: absolute;
+  top: -0.35rem;
+  right: -0.35rem;
+  bottom: -0.35rem;
+  left: -0.35rem;
+  content: '';
+  display: block;
+  border: solid rgba(0,125,250,0.6) 0.2rem;
+  border-radius: 0.5rem;
+  pointer-events: none;
+}
+
+.c4:hover {
+  color: #44aeff;
+  fill: #44aeff;
+}
+
 .c1 {
   margin: 0;
   font-size: 2.2rem;
   font-weight: bold;
 }
 
-.c4 {
+.c5 {
   margin: 0;
 }
 
@@ -35,11 +71,22 @@ exports[`<AdminAnalytics /> should render correctly - index 1`] = `
 }
 
 @media (prefers-color-scheme:dark) {
-
+  .c4:focus-within::after,
+  .c4:focus::after {
+    border-color: rgba(0,125,250,0.6);
+  }
 }
 
 @media (prefers-color-scheme:dark) {
+  .c4 {
+    color: orchid;
+    fill: orchid;
+  }
 
+  .c4:hover {
+    color: #44aeff;
+    fill: #44aeff;
+  }
 }
 
 @media (prefers-color-scheme:dark) {
@@ -63,28 +110,69 @@ exports[`<AdminAnalytics /> should render correctly - index 1`] = `
     >
       You need to be logged in with an admin account to view this content.
       <br />
-      <span
+      <a
         class="c4"
+        href="/login"
       >
-        Got a different admin account? Log in here.
-      </span>
+        <span
+          class="c5"
+        >
+          Got a different admin account? Log in here.
+        </span>
+      </a>
     </span>
   </div>
 </div>
 `;
 
 exports[`<AdminAnalytics /> should render correctly with admin user 1`] = `
-.c3 {
+.c2 {
+  display: inline-block;
+  border-radius: 0.25rem;
+  font-weight: bold;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  position: relative;
+  color: darkorchid;
+  fill: darkorchid;
+}
+
+.c2:focus-within,
+.c2:focus {
+  position: relative;
+  outline: none !important;
+}
+
+.c2:focus-within::after,
+.c2:focus::after {
+  position: absolute;
+  top: -0.35rem;
+  right: -0.35rem;
+  bottom: -0.35rem;
+  left: -0.35rem;
+  content: '';
+  display: block;
+  border: solid rgba(0,125,250,0.6) 0.2rem;
+  border-radius: 0.5rem;
+  pointer-events: none;
+}
+
+.c2:hover {
+  color: #44aeff;
+  fill: #44aeff;
+}
+
+.c4 {
   margin: 0;
   font-size: 2.4rem;
   font-weight: bold;
 }
 
-.c2 {
+.c3 {
   margin: 0;
 }
 
-.c4 {
+.c5 {
   margin: 2.3rem 0 0 0;
   margin-top: 1.5rem;
 }
@@ -98,7 +186,7 @@ exports[`<AdminAnalytics /> should render correctly with admin user 1`] = `
   animation: bbwGtI 0.4s ease-in-out;
 }
 
-.c5 {
+.c6 {
   position: relative;
   min-width: 5rem;
   padding: 0.43rem 1.125rem 0.32rem 1.125rem;
@@ -117,13 +205,13 @@ exports[`<AdminAnalytics /> should render correctly with admin user 1`] = `
   color: white;
 }
 
-.c5:focus-within,
-.c5:focus {
+.c6:focus-within,
+.c6:focus {
   outline: none !important;
 }
 
-.c5:focus-within::after,
-.c5:focus::after {
+.c6:focus-within::after,
+.c6:focus::after {
   position: absolute;
   top: -0.35rem;
   right: -0.35rem;
@@ -136,22 +224,22 @@ exports[`<AdminAnalytics /> should render correctly with admin user 1`] = `
   pointer-events: none;
 }
 
-.c5:focus,
-.c5:hover {
+.c6:focus,
+.c6:hover {
   background-color: #004F8C;
   color: white;
 }
 
-.c5:active {
+.c6:active {
   background-color: #003E6F;
 }
 
-.c5:disabled {
+.c6:disabled {
   background-color: #cdcdd7;
   color: rgb(100,100,100);
 }
 
-.c7 {
+.c8 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -162,7 +250,7 @@ exports[`<AdminAnalytics /> should render correctly with admin user 1`] = `
   justify-content: center;
 }
 
-.c8 {
+.c9 {
   margin-bottom: 2rem;
   display: -webkit-box;
   display: -webkit-flex;
@@ -179,49 +267,60 @@ exports[`<AdminAnalytics /> should render correctly with admin user 1`] = `
   justify-content: space-around;
 }
 
-.c6 {
+.c7 {
   display: inline-block;
   margin: 1rem 1rem 0 0;
 }
 
 @media (prefers-color-scheme:dark) {
-
-}
-
-@media (prefers-color-scheme:dark) {
-
-}
-
-@media (prefers-color-scheme:dark) {
-  .c5:focus-within::after,
-  .c5:focus::after {
+  .c2:focus-within::after,
+  .c2:focus::after {
     border-color: rgba(0,125,250,0.6);
   }
 }
 
 @media (prefers-color-scheme:dark) {
-  .c5 {
+  .c2 {
+    color: orchid;
+    fill: orchid;
+  }
+
+  .c2:hover {
+    color: #44aeff;
+    fill: #44aeff;
+  }
+}
+
+@media (prefers-color-scheme:dark) {
+  .c6:focus-within::after,
+  .c6:focus::after {
+    border-color: rgba(0,125,250,0.6);
+  }
+}
+
+@media (prefers-color-scheme:dark) {
+  .c6 {
     background-color: #025CA2;
     color: white;
   }
 }
 
 @media (prefers-color-scheme:dark) {
-  .c5:focus,
-  .c5:hover {
+  .c6:focus,
+  .c6:hover {
     background-color: #004479;
     color: white;
   }
 }
 
 @media (prefers-color-scheme:dark) {
-  .c5:active {
+  .c6:active {
     background-color: #003965;
   }
 }
 
 @media (prefers-color-scheme:dark) {
-  .c5:disabled {
+  .c6:disabled {
     background-color: rgb(89,89,89);
     color: darkgray;
   }
@@ -235,18 +334,23 @@ exports[`<AdminAnalytics /> should render correctly with admin user 1`] = `
       <div
         class="c1"
       >
-        <span
+        <a
           class="c2"
+          href="/admin"
         >
-          ⇠ Admin
-        </span>
+          <span
+            class="c3"
+          >
+            ⇠ Admin
+          </span>
+        </a>
       </div>
     </div>
     <div
       class="c0"
     >
       <h1
-        class="c3 c4"
+        class="c4 c5"
       >
         Admin analytics
       </h1>
@@ -254,44 +358,80 @@ exports[`<AdminAnalytics /> should render correctly with admin user 1`] = `
   </div>
   <div>
     <button
-      class="c5 c6"
+      class="c6 c7"
       type="button"
     >
       <span
-        class="c7"
+        class="c8"
       >
         Reload analytics
       </span>
     </button>
     <button
-      class="c5 c6"
+      class="c6 c7"
       type="button"
     >
       <span
-        class="c7"
+        class="c8"
       >
         Show filters
       </span>
     </button>
   </div>
   <div
-    class="c8"
+    class="c9"
   />
 </div>
 `;
 
 exports[`<AdminAnalytics /> should render correctly with analytics 1`] = `
-.c3 {
+.c2 {
+  display: inline-block;
+  border-radius: 0.25rem;
+  font-weight: bold;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  position: relative;
+  color: darkorchid;
+  fill: darkorchid;
+}
+
+.c2:focus-within,
+.c2:focus {
+  position: relative;
+  outline: none !important;
+}
+
+.c2:focus-within::after,
+.c2:focus::after {
+  position: absolute;
+  top: -0.35rem;
+  right: -0.35rem;
+  bottom: -0.35rem;
+  left: -0.35rem;
+  content: '';
+  display: block;
+  border: solid rgba(0,125,250,0.6) 0.2rem;
+  border-radius: 0.5rem;
+  pointer-events: none;
+}
+
+.c2:hover {
+  color: #44aeff;
+  fill: #44aeff;
+}
+
+.c4 {
   margin: 0;
   font-size: 2.4rem;
   font-weight: bold;
 }
 
-.c2 {
+.c3 {
   margin: 0;
 }
 
-.c4 {
+.c5 {
   margin: 2.3rem 0 0 0;
   margin-top: 1.5rem;
 }
@@ -305,7 +445,7 @@ exports[`<AdminAnalytics /> should render correctly with analytics 1`] = `
   animation: bbwGtI 0.4s ease-in-out;
 }
 
-.c5 {
+.c6 {
   position: relative;
   min-width: 5rem;
   padding: 0.43rem 1.125rem 0.32rem 1.125rem;
@@ -324,13 +464,13 @@ exports[`<AdminAnalytics /> should render correctly with analytics 1`] = `
   color: white;
 }
 
-.c5:focus-within,
-.c5:focus {
+.c6:focus-within,
+.c6:focus {
   outline: none !important;
 }
 
-.c5:focus-within::after,
-.c5:focus::after {
+.c6:focus-within::after,
+.c6:focus::after {
   position: absolute;
   top: -0.35rem;
   right: -0.35rem;
@@ -343,22 +483,22 @@ exports[`<AdminAnalytics /> should render correctly with analytics 1`] = `
   pointer-events: none;
 }
 
-.c5:focus,
-.c5:hover {
+.c6:focus,
+.c6:hover {
   background-color: #004F8C;
   color: white;
 }
 
-.c5:active {
+.c6:active {
   background-color: #003E6F;
 }
 
-.c5:disabled {
+.c6:disabled {
   background-color: #cdcdd7;
   color: rgb(100,100,100);
 }
 
-.c7 {
+.c8 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -369,7 +509,7 @@ exports[`<AdminAnalytics /> should render correctly with analytics 1`] = `
   justify-content: center;
 }
 
-.c8 {
+.c9 {
   margin-bottom: 2rem;
   display: -webkit-box;
   display: -webkit-flex;
@@ -386,49 +526,60 @@ exports[`<AdminAnalytics /> should render correctly with analytics 1`] = `
   justify-content: space-around;
 }
 
-.c6 {
+.c7 {
   display: inline-block;
   margin: 1rem 1rem 0 0;
 }
 
 @media (prefers-color-scheme:dark) {
-
-}
-
-@media (prefers-color-scheme:dark) {
-
-}
-
-@media (prefers-color-scheme:dark) {
-  .c5:focus-within::after,
-  .c5:focus::after {
+  .c2:focus-within::after,
+  .c2:focus::after {
     border-color: rgba(0,125,250,0.6);
   }
 }
 
 @media (prefers-color-scheme:dark) {
-  .c5 {
+  .c2 {
+    color: orchid;
+    fill: orchid;
+  }
+
+  .c2:hover {
+    color: #44aeff;
+    fill: #44aeff;
+  }
+}
+
+@media (prefers-color-scheme:dark) {
+  .c6:focus-within::after,
+  .c6:focus::after {
+    border-color: rgba(0,125,250,0.6);
+  }
+}
+
+@media (prefers-color-scheme:dark) {
+  .c6 {
     background-color: #025CA2;
     color: white;
   }
 }
 
 @media (prefers-color-scheme:dark) {
-  .c5:focus,
-  .c5:hover {
+  .c6:focus,
+  .c6:hover {
     background-color: #004479;
     color: white;
   }
 }
 
 @media (prefers-color-scheme:dark) {
-  .c5:active {
+  .c6:active {
     background-color: #003965;
   }
 }
 
 @media (prefers-color-scheme:dark) {
-  .c5:disabled {
+  .c6:disabled {
     background-color: rgb(89,89,89);
     color: darkgray;
   }
@@ -442,18 +593,23 @@ exports[`<AdminAnalytics /> should render correctly with analytics 1`] = `
       <div
         class="c1"
       >
-        <span
+        <a
           class="c2"
+          href="/admin"
         >
-          ⇠ Admin
-        </span>
+          <span
+            class="c3"
+          >
+            ⇠ Admin
+          </span>
+        </a>
       </div>
     </div>
     <div
       class="c0"
     >
       <h1
-        class="c3 c4"
+        class="c4 c5"
       >
         Admin analytics
       </h1>
@@ -461,40 +617,76 @@ exports[`<AdminAnalytics /> should render correctly with analytics 1`] = `
   </div>
   <div>
     <button
-      class="c5 c6"
+      class="c6 c7"
       type="button"
     >
       <span
-        class="c7"
+        class="c8"
       >
         Reload analytics
       </span>
     </button>
     <button
-      class="c5 c6"
+      class="c6 c7"
       type="button"
     >
       <span
-        class="c7"
+        class="c8"
       >
         Show filters
       </span>
     </button>
   </div>
   <div
-    class="c8"
+    class="c9"
   />
 </div>
 `;
 
 exports[`<AdminAnalytics /> should render correctly with initial state 1`] = `
+.c4 {
+  display: inline-block;
+  border-radius: 0.25rem;
+  font-weight: bold;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  position: relative;
+  color: darkorchid;
+  fill: darkorchid;
+}
+
+.c4:focus-within,
+.c4:focus {
+  position: relative;
+  outline: none !important;
+}
+
+.c4:focus-within::after,
+.c4:focus::after {
+  position: absolute;
+  top: -0.35rem;
+  right: -0.35rem;
+  bottom: -0.35rem;
+  left: -0.35rem;
+  content: '';
+  display: block;
+  border: solid rgba(0,125,250,0.6) 0.2rem;
+  border-radius: 0.5rem;
+  pointer-events: none;
+}
+
+.c4:hover {
+  color: #44aeff;
+  fill: #44aeff;
+}
+
 .c1 {
   margin: 0;
   font-size: 2.2rem;
   font-weight: bold;
 }
 
-.c4 {
+.c5 {
   margin: 0;
 }
 
@@ -522,11 +714,22 @@ exports[`<AdminAnalytics /> should render correctly with initial state 1`] = `
 }
 
 @media (prefers-color-scheme:dark) {
-
+  .c4:focus-within::after,
+  .c4:focus::after {
+    border-color: rgba(0,125,250,0.6);
+  }
 }
 
 @media (prefers-color-scheme:dark) {
+  .c4 {
+    color: orchid;
+    fill: orchid;
+  }
 
+  .c4:hover {
+    color: #44aeff;
+    fill: #44aeff;
+  }
 }
 
 @media (prefers-color-scheme:dark) {
@@ -550,11 +753,16 @@ exports[`<AdminAnalytics /> should render correctly with initial state 1`] = `
     >
       You need to be logged in with an admin account to view this content.
       <br />
-      <span
+      <a
         class="c4"
+        href="/login"
       >
-        Got a different admin account? Log in here.
-      </span>
+        <span
+          class="c5"
+        >
+          Got a different admin account? Log in here.
+        </span>
+      </a>
     </span>
   </div>
 </div>
@@ -720,17 +928,53 @@ exports[`<AdminAnalytics /> should render correctly with loadError 1`] = `
 `;
 
 exports[`<AdminAnalytics /> should render correctly with loading=true 1`] = `
-.c3 {
+.c2 {
+  display: inline-block;
+  border-radius: 0.25rem;
+  font-weight: bold;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  position: relative;
+  color: darkorchid;
+  fill: darkorchid;
+}
+
+.c2:focus-within,
+.c2:focus {
+  position: relative;
+  outline: none !important;
+}
+
+.c2:focus-within::after,
+.c2:focus::after {
+  position: absolute;
+  top: -0.35rem;
+  right: -0.35rem;
+  bottom: -0.35rem;
+  left: -0.35rem;
+  content: '';
+  display: block;
+  border: solid rgba(0,125,250,0.6) 0.2rem;
+  border-radius: 0.5rem;
+  pointer-events: none;
+}
+
+.c2:hover {
+  color: #44aeff;
+  fill: #44aeff;
+}
+
+.c4 {
   margin: 0;
   font-size: 2.4rem;
   font-weight: bold;
 }
 
-.c2 {
+.c3 {
   margin: 0;
 }
 
-.c4 {
+.c5 {
   margin: 2.3rem 0 0 0;
   margin-top: 1.5rem;
 }
@@ -744,7 +988,7 @@ exports[`<AdminAnalytics /> should render correctly with loading=true 1`] = `
   animation: bbwGtI 0.4s ease-in-out;
 }
 
-.c9 {
+.c10 {
   position: relative;
   display: inline-block;
   width: 1.125rem;
@@ -752,7 +996,7 @@ exports[`<AdminAnalytics /> should render correctly with loading=true 1`] = `
   color: #1e1e1e;
 }
 
-.c10 {
+.c11 {
   position: absolute;
   bottom: 0.05rem;
   left: 0.5rem;
@@ -773,7 +1017,7 @@ exports[`<AdminAnalytics /> should render correctly with loading=true 1`] = `
   animation-delay: -0.15000000000000002s;
 }
 
-.c11 {
+.c12 {
   position: absolute;
   bottom: 0.05rem;
   left: 0.5rem;
@@ -794,7 +1038,7 @@ exports[`<AdminAnalytics /> should render correctly with loading=true 1`] = `
   animation-delay: -0.05000000000000002s;
 }
 
-.c12 {
+.c13 {
   position: absolute;
   bottom: 0.05rem;
   left: 0.5rem;
@@ -815,7 +1059,7 @@ exports[`<AdminAnalytics /> should render correctly with loading=true 1`] = `
   animation-delay: 0.04999999999999999s;
 }
 
-.c13 {
+.c14 {
   position: absolute;
   bottom: 0.05rem;
   left: 0.5rem;
@@ -836,7 +1080,7 @@ exports[`<AdminAnalytics /> should render correctly with loading=true 1`] = `
   animation-delay: 0.15000000000000002s;
 }
 
-.c14 {
+.c15 {
   position: absolute;
   bottom: 0.05rem;
   left: 0.5rem;
@@ -857,7 +1101,7 @@ exports[`<AdminAnalytics /> should render correctly with loading=true 1`] = `
   animation-delay: 0.25s;
 }
 
-.c15 {
+.c16 {
   position: absolute;
   bottom: 0.05rem;
   left: 0.5rem;
@@ -878,7 +1122,7 @@ exports[`<AdminAnalytics /> should render correctly with loading=true 1`] = `
   animation-delay: 0.35s;
 }
 
-.c16 {
+.c17 {
   position: absolute;
   bottom: 0.05rem;
   left: 0.5rem;
@@ -899,7 +1143,7 @@ exports[`<AdminAnalytics /> should render correctly with loading=true 1`] = `
   animation-delay: 0.45000000000000007s;
 }
 
-.c17 {
+.c18 {
   position: absolute;
   bottom: 0.05rem;
   left: 0.5rem;
@@ -920,7 +1164,7 @@ exports[`<AdminAnalytics /> should render correctly with loading=true 1`] = `
   animation-delay: 0.55s;
 }
 
-.c5 {
+.c6 {
   position: relative;
   min-width: 5rem;
   padding: 0.43rem 1.125rem 0.32rem 1.125rem;
@@ -940,13 +1184,13 @@ exports[`<AdminAnalytics /> should render correctly with loading=true 1`] = `
   cursor: default;
 }
 
-.c5:focus-within,
-.c5:focus {
+.c6:focus-within,
+.c6:focus {
   outline: none !important;
 }
 
-.c5:focus-within::after,
-.c5:focus::after {
+.c6:focus-within::after,
+.c6:focus::after {
   position: absolute;
   top: -0.35rem;
   right: -0.35rem;
@@ -959,22 +1203,22 @@ exports[`<AdminAnalytics /> should render correctly with loading=true 1`] = `
   pointer-events: none;
 }
 
-.c5:focus,
-.c5:hover {
+.c6:focus,
+.c6:hover {
   background-color: #004F8C;
   color: white;
 }
 
-.c5:active {
+.c6:active {
   background-color: #003E6F;
 }
 
-.c5:disabled {
+.c6:disabled {
   background-color: #cdcdd7;
   color: rgb(100,100,100);
 }
 
-.c18 {
+.c19 {
   position: relative;
   min-width: 5rem;
   padding: 0.43rem 1.125rem 0.32rem 1.125rem;
@@ -993,13 +1237,13 @@ exports[`<AdminAnalytics /> should render correctly with loading=true 1`] = `
   color: white;
 }
 
-.c18:focus-within,
-.c18:focus {
+.c19:focus-within,
+.c19:focus {
   outline: none !important;
 }
 
-.c18:focus-within::after,
-.c18:focus::after {
+.c19:focus-within::after,
+.c19:focus::after {
   position: absolute;
   top: -0.35rem;
   right: -0.35rem;
@@ -1012,22 +1256,22 @@ exports[`<AdminAnalytics /> should render correctly with loading=true 1`] = `
   pointer-events: none;
 }
 
-.c18:focus,
-.c18:hover {
+.c19:focus,
+.c19:hover {
   background-color: #004F8C;
   color: white;
 }
 
-.c18:active {
+.c19:active {
   background-color: #003E6F;
 }
 
-.c18:disabled {
+.c19:disabled {
   background-color: #cdcdd7;
   color: rgb(100,100,100);
 }
 
-.c7 {
+.c8 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1039,7 +1283,7 @@ exports[`<AdminAnalytics /> should render correctly with loading=true 1`] = `
   opacity: 0.1;
 }
 
-.c19 {
+.c20 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1050,7 +1294,7 @@ exports[`<AdminAnalytics /> should render correctly with loading=true 1`] = `
   justify-content: center;
 }
 
-.c8 {
+.c9 {
   position: absolute;
   top: 0;
   left: 0;
@@ -1070,7 +1314,7 @@ exports[`<AdminAnalytics /> should render correctly with loading=true 1`] = `
   align-items: center;
 }
 
-.c20 {
+.c21 {
   margin-bottom: 2rem;
   display: -webkit-box;
   display: -webkit-flex;
@@ -1087,90 +1331,101 @@ exports[`<AdminAnalytics /> should render correctly with loading=true 1`] = `
   justify-content: space-around;
 }
 
-.c6 {
+.c7 {
   display: inline-block;
   margin: 1rem 1rem 0 0;
 }
 
 @media (prefers-color-scheme:dark) {
-
-}
-
-@media (prefers-color-scheme:dark) {
-
-}
-
-@media (prefers-color-scheme:dark) {
-  .c9 {
-    color: white;
-  }
-}
-
-@media (prefers-color-scheme:dark) {
-  .c5:focus-within::after,
-  .c5:focus::after {
+  .c2:focus-within::after,
+  .c2:focus::after {
     border-color: rgba(0,125,250,0.6);
   }
 }
 
 @media (prefers-color-scheme:dark) {
-  .c5 {
+  .c2 {
+    color: orchid;
+    fill: orchid;
+  }
+
+  .c2:hover {
+    color: #44aeff;
+    fill: #44aeff;
+  }
+}
+
+@media (prefers-color-scheme:dark) {
+  .c10 {
+    color: white;
+  }
+}
+
+@media (prefers-color-scheme:dark) {
+  .c6:focus-within::after,
+  .c6:focus::after {
+    border-color: rgba(0,125,250,0.6);
+  }
+}
+
+@media (prefers-color-scheme:dark) {
+  .c6 {
     background-color: #025CA2;
     color: white;
   }
 }
 
 @media (prefers-color-scheme:dark) {
-  .c5:focus,
-  .c5:hover {
+  .c6:focus,
+  .c6:hover {
     background-color: #004479;
     color: white;
   }
 }
 
 @media (prefers-color-scheme:dark) {
-  .c5:active {
+  .c6:active {
     background-color: #003965;
   }
 }
 
 @media (prefers-color-scheme:dark) {
-  .c5:disabled {
+  .c6:disabled {
     background-color: rgb(89,89,89);
     color: darkgray;
   }
 }
 
 @media (prefers-color-scheme:dark) {
-  .c18:focus-within::after,
-  .c18:focus::after {
+  .c19:focus-within::after,
+  .c19:focus::after {
     border-color: rgba(0,125,250,0.6);
   }
 }
 
 @media (prefers-color-scheme:dark) {
-  .c18 {
+  .c19 {
     background-color: #025CA2;
     color: white;
   }
 }
 
 @media (prefers-color-scheme:dark) {
-  .c18:focus,
-  .c18:hover {
+  .c19:focus,
+  .c19:hover {
     background-color: #004479;
     color: white;
   }
 }
 
 @media (prefers-color-scheme:dark) {
-  .c18:active {
+  .c19:active {
     background-color: #003965;
   }
 }
 
 @media (prefers-color-scheme:dark) {
-  .c18:disabled {
+  .c19:disabled {
     background-color: rgb(89,89,89);
     color: darkgray;
   }
@@ -1184,18 +1439,23 @@ exports[`<AdminAnalytics /> should render correctly with loading=true 1`] = `
       <div
         class="c1"
       >
-        <span
+        <a
           class="c2"
+          href="/admin"
         >
-          ⇠ Admin
-        </span>
+          <span
+            class="c3"
+          >
+            ⇠ Admin
+          </span>
+        </a>
       </div>
     </div>
     <div
       class="c0"
     >
       <h1
-        class="c3 c4"
+        class="c4 c5"
       >
         Admin analytics
       </h1>
@@ -1203,25 +1463,22 @@ exports[`<AdminAnalytics /> should render correctly with loading=true 1`] = `
   </div>
   <div>
     <button
-      class="c5 c6"
+      class="c6 c7"
       disabled=""
       type="button"
     >
       <span
-        class="c7"
+        class="c8"
       >
         Reload analytics
       </span>
       <div
         aria-hidden="true"
-        class="c8"
+        class="c9"
       >
         <div
-          class="c9"
+          class="c10"
         >
-          <div
-            class="c10"
-          />
           <div
             class="c11"
           />
@@ -1243,34 +1500,73 @@ exports[`<AdminAnalytics /> should render correctly with loading=true 1`] = `
           <div
             class="c17"
           />
+          <div
+            class="c18"
+          />
         </div>
       </div>
     </button>
     <button
-      class="c18 c6"
+      class="c19 c7"
       type="button"
     >
       <span
-        class="c19"
+        class="c20"
       >
         Show filters
       </span>
     </button>
   </div>
   <div
-    class="c20"
+    class="c21"
   />
 </div>
 `;
 
 exports[`<AdminAnalytics /> should render correctly with user 1`] = `
+.c4 {
+  display: inline-block;
+  border-radius: 0.25rem;
+  font-weight: bold;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  position: relative;
+  color: darkorchid;
+  fill: darkorchid;
+}
+
+.c4:focus-within,
+.c4:focus {
+  position: relative;
+  outline: none !important;
+}
+
+.c4:focus-within::after,
+.c4:focus::after {
+  position: absolute;
+  top: -0.35rem;
+  right: -0.35rem;
+  bottom: -0.35rem;
+  left: -0.35rem;
+  content: '';
+  display: block;
+  border: solid rgba(0,125,250,0.6) 0.2rem;
+  border-radius: 0.5rem;
+  pointer-events: none;
+}
+
+.c4:hover {
+  color: #44aeff;
+  fill: #44aeff;
+}
+
 .c1 {
   margin: 0;
   font-size: 2.2rem;
   font-weight: bold;
 }
 
-.c4 {
+.c5 {
   margin: 0;
 }
 
@@ -1298,11 +1594,22 @@ exports[`<AdminAnalytics /> should render correctly with user 1`] = `
 }
 
 @media (prefers-color-scheme:dark) {
-
+  .c4:focus-within::after,
+  .c4:focus::after {
+    border-color: rgba(0,125,250,0.6);
+  }
 }
 
 @media (prefers-color-scheme:dark) {
+  .c4 {
+    color: orchid;
+    fill: orchid;
+  }
 
+  .c4:hover {
+    color: #44aeff;
+    fill: #44aeff;
+  }
 }
 
 @media (prefers-color-scheme:dark) {
@@ -1326,11 +1633,16 @@ exports[`<AdminAnalytics /> should render correctly with user 1`] = `
     >
       You need to be logged in with an admin account to view this content.
       <br />
-      <span
+      <a
         class="c4"
+        href="/login"
       >
-        Got a different admin account? Log in here.
-      </span>
+        <span
+          class="c5"
+        >
+          Got a different admin account? Log in here.
+        </span>
+      </a>
     </span>
   </div>
 </div>

@@ -751,13 +751,49 @@ exports[`<Login /> should render correctly with loginResult 1`] = `
 `;
 
 exports[`<Login /> should render correctly with user 1`] = `
+.c5 {
+  display: inline-block;
+  border-radius: 0.25rem;
+  font-weight: bold;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  position: relative;
+  color: darkorchid;
+  fill: darkorchid;
+}
+
+.c5:focus-within,
+.c5:focus {
+  position: relative;
+  outline: none !important;
+}
+
+.c5:focus-within::after,
+.c5:focus::after {
+  position: absolute;
+  top: -0.35rem;
+  right: -0.35rem;
+  bottom: -0.35rem;
+  left: -0.35rem;
+  content: '';
+  display: block;
+  border: solid rgba(0,125,250,0.6) 0.2rem;
+  border-radius: 0.5rem;
+  pointer-events: none;
+}
+
+.c5:hover {
+  color: #44aeff;
+  fill: #44aeff;
+}
+
 .c2 {
   margin: 0;
   font-size: 2.2rem;
   font-weight: bold;
 }
 
-.c5 {
+.c6 {
   margin: 0;
 }
 
@@ -797,11 +833,22 @@ exports[`<Login /> should render correctly with user 1`] = `
 }
 
 @media (prefers-color-scheme:dark) {
-
+  .c5:focus-within::after,
+  .c5:focus::after {
+    border-color: rgba(0,125,250,0.6);
+  }
 }
 
 @media (prefers-color-scheme:dark) {
+  .c5 {
+    color: orchid;
+    fill: orchid;
+  }
 
+  .c5:hover {
+    color: #44aeff;
+    fill: #44aeff;
+  }
 }
 
 @media (prefers-color-scheme:dark) {
@@ -834,11 +881,16 @@ exports[`<Login /> should render correctly with user 1`] = `
       <span
         class="c4"
       >
-        <span
+        <a
           class="c5"
+          href="/account"
         >
-          Go to your account.
-        </span>
+          <span
+            class="c6"
+          >
+            Go to your account.
+          </span>
+        </a>
       </span>
     </div>
   </div>

@@ -13,7 +13,7 @@ exports[`<SiteMap /> should render correctly - index 1`] = `
   margin-top: 0.86rem;
 }
 
-.c12 {
+.c13 {
   position: relative;
   width: 100%;
   border-radius: 0.25rem;
@@ -24,7 +24,7 @@ exports[`<SiteMap /> should render correctly - index 1`] = `
   border-radius: 10rem;
 }
 
-.c13 {
+.c14 {
   position: absolute;
   top: 0;
   width: 13rem;
@@ -41,7 +41,7 @@ exports[`<SiteMap /> should render correctly - index 1`] = `
   height: 1.25rem;
 }
 
-.c14 {
+.c11 {
   display: inline-block;
   border-radius: 0.25rem;
   font-weight: bold;
@@ -52,14 +52,14 @@ exports[`<SiteMap /> should render correctly - index 1`] = `
   fill: darkorchid;
 }
 
-.c14:focus-within,
-.c14:focus {
+.c11:focus-within,
+.c11:focus {
   position: relative;
   outline: none !important;
 }
 
-.c14:focus-within::after,
-.c14:focus::after {
+.c11:focus-within::after,
+.c11:focus::after {
   position: absolute;
   top: -0.35rem;
   right: -0.35rem;
@@ -72,7 +72,7 @@ exports[`<SiteMap /> should render correctly - index 1`] = `
   pointer-events: none;
 }
 
-.c14:hover {
+.c11:hover {
   color: #44aeff;
   fill: #44aeff;
 }
@@ -107,7 +107,7 @@ exports[`<SiteMap /> should render correctly - index 1`] = `
   font-weight: bold;
 }
 
-.c11 {
+.c12 {
   margin: 0;
 }
 
@@ -159,42 +159,34 @@ exports[`<SiteMap /> should render correctly - index 1`] = `
 }
 
 @media (prefers-color-scheme:dark) {
-  .c12 {
+  .c13 {
     background-color: rgb(17,17,17);
   }
 }
 
 @media (prefers-color-scheme:dark) {
-  .c13 {
+  .c14 {
     background-image: linear-gradient( 90deg, rgb(17,17,17), rgb(50,50,50), rgb(17,17,17) );
   }
 }
 
 @media (prefers-color-scheme:dark) {
-  .c14:focus-within::after,
-  .c14:focus::after {
+  .c11:focus-within::after,
+  .c11:focus::after {
     border-color: rgba(0,125,250,0.6);
   }
 }
 
 @media (prefers-color-scheme:dark) {
-  .c14 {
+  .c11 {
     color: orchid;
     fill: orchid;
   }
 
-  .c14:hover {
+  .c11:hover {
     color: #44aeff;
     fill: #44aeff;
   }
-}
-
-@media (prefers-color-scheme:dark) {
-
-}
-
-@media (prefers-color-scheme:dark) {
-
 }
 
 @media (min-width:50.25rem) {
@@ -248,57 +240,62 @@ exports[`<SiteMap /> should render correctly - index 1`] = `
           <span
             class="c10"
           >
-            <span
+            <a
               class="c11"
+              href="/blog"
             >
-              Blog list
-            </span>
+              <span
+                class="c12"
+              >
+                Blog list
+              </span>
+            </a>
             <br />
             <div
-              class="c12"
+              class="c13"
             >
               <div
-                class="c13"
+                class="c14"
                 style="margin-left: -0px;"
               />
             </div>
             <div
-              class="c12"
+              class="c13"
             >
               <div
-                class="c13"
+                class="c14"
                 style="margin-left: -0px;"
               />
             </div>
             <div
-              class="c12"
+              class="c13"
             >
               <div
-                class="c13"
+                class="c14"
                 style="margin-left: -0px;"
               />
             </div>
             <div
-              class="c12"
+              class="c13"
             >
               <div
-                class="c13"
+                class="c14"
                 style="margin-left: -0px;"
               />
             </div>
             <div
-              class="c12"
+              class="c13"
             >
               <div
-                class="c13"
+                class="c14"
                 style="margin-left: -0px;"
               />
             </div>
             <div
-              class="c12"
+              class="c13"
             >
               <div
-                class="c13"
+                class="c14"
                 style="margin-left: -0px;"
               />
             </div>
@@ -330,11 +327,16 @@ exports[`<SiteMap /> should render correctly - index 1`] = `
           <span
             class="c10"
           >
-            <span
+            <a
               class="c11"
+              href="/photography"
             >
-              Photography
-            </span>
+              <span
+                class="c12"
+              >
+                Photography
+              </span>
+            </a>
           </span>
         </div>
       </div>
@@ -363,11 +365,16 @@ exports[`<SiteMap /> should render correctly - index 1`] = `
           <span
             class="c10"
           >
-            <span
+            <a
               class="c11"
+              href="/medals"
             >
-              Medals
-            </span>
+              <span
+                class="c12"
+              >
+                Medals
+              </span>
+            </a>
           </span>
         </div>
       </div>
@@ -396,29 +403,49 @@ exports[`<SiteMap /> should render correctly - index 1`] = `
           <span
             class="c10"
           >
-            <span
+            <a
               class="c11"
+              href="/work"
             >
-              Overview
-            </span>
+              <span
+                class="c12"
+              >
+                Overview
+              </span>
+            </a>
             <br />
-            <span
+            <a
               class="c11"
+              href="/work/backpack"
             >
-              Backpack
-            </span>
+              <span
+                class="c12"
+              >
+                Backpack
+              </span>
+            </a>
             <br />
-            <span
+            <a
               class="c11"
+              href="/work/degree"
             >
-              Degree
-            </span>
+              <span
+                class="c12"
+              >
+                Degree
+              </span>
+            </a>
             <br />
-            <span
+            <a
               class="c11"
+              href="/work/epicc"
             >
-              EPICC
-            </span>
+              <span
+                class="c12"
+              >
+                EPICC
+              </span>
+            </a>
           </span>
         </div>
       </div>
@@ -447,11 +474,16 @@ exports[`<SiteMap /> should render correctly - index 1`] = `
           <span
             class="c10"
           >
-            <span
+            <a
               class="c11"
+              href="/privacy-policy"
             >
-              Privacy Policy
-            </span>
+              <span
+                class="c12"
+              >
+                Privacy Policy
+              </span>
+            </a>
           </span>
         </div>
       </div>
@@ -480,35 +512,60 @@ exports[`<SiteMap /> should render correctly - index 1`] = `
           <span
             class="c10"
           >
-            <span
+            <a
               class="c11"
+              href="/contact"
             >
-              Contact
-            </span>
+              <span
+                class="c12"
+              >
+                Contact
+              </span>
+            </a>
             <br />
-            <span
+            <a
               class="c11"
+              href="/support"
             >
-              Support
-            </span>
+              <span
+                class="c12"
+              >
+                Support
+              </span>
+            </a>
             <br />
-            <span
+            <a
               class="c11"
+              href="/debug"
             >
-              Debug tools
-            </span>
+              <span
+                class="c12"
+              >
+                Debug tools
+              </span>
+            </a>
             <br />
-            <span
+            <a
               class="c11"
+              href="/status"
             >
-              Status
-            </span>
+              <span
+                class="c12"
+              >
+                Status
+              </span>
+            </a>
             <br />
-            <span
+            <a
               class="c11"
+              href="/coffee"
             >
-              Coffee
-            </span>
+              <span
+                class="c12"
+              >
+                Coffee
+              </span>
+            </a>
           </span>
         </div>
       </div>
@@ -539,13 +596,13 @@ exports[`<SiteMap /> should render correctly - index 1`] = `
           >
             <a
               aria-label="Robots.txt (opens in a new tab)"
-              class="c14"
+              class="c11"
               href="/robots.txt"
               rel="noopener noreferrer"
               target="_blank"
             >
               <span
-                class="c11"
+                class="c12"
               >
                 Robots.txt
               </span>
@@ -568,13 +625,13 @@ exports[`<SiteMap /> should render correctly - index 1`] = `
             <br />
             <a
               aria-label="SiteMap.xml (opens in a new tab)"
-              class="c14"
+              class="c11"
               href="/sitemap.xml"
               rel="noopener noreferrer"
               target="_blank"
             >
               <span
-                class="c11"
+                class="c12"
               >
                 SiteMap.xml
               </span>
@@ -595,17 +652,27 @@ exports[`<SiteMap /> should render correctly - index 1`] = `
               </div>
             </a>
             <br />
-            <span
+            <a
               class="c11"
+              href="/404"
             >
-              404 error page - not found
-            </span>
+              <span
+                class="c12"
+              >
+                404 error page - not found
+              </span>
+            </a>
             <br />
-            <span
+            <a
               class="c11"
+              href="/teapot"
             >
-              418 error page - I'm a teapot
-            </span>
+              <span
+                class="c12"
+              >
+                418 error page - I'm a teapot
+              </span>
+            </a>
           </span>
         </div>
       </div>
@@ -634,11 +701,16 @@ exports[`<SiteMap /> should render correctly - index 1`] = `
           <span
             class="c10"
           >
-            <span
+            <a
               class="c11"
+              href="/api-docs"
             >
-              API docs
-            </span>
+              <span
+                class="c12"
+              >
+                API docs
+              </span>
+            </a>
           </span>
         </div>
       </div>
@@ -667,35 +739,60 @@ exports[`<SiteMap /> should render correctly - index 1`] = `
           <span
             class="c10"
           >
-            <span
+            <a
               class="c11"
+              href="/account"
             >
-              Account
-            </span>
+              <span
+                class="c12"
+              >
+                Account
+              </span>
+            </a>
             <br />
-            <span
+            <a
               class="c11"
+              href="/sign-up"
             >
-              Sign up
-            </span>
+              <span
+                class="c12"
+              >
+                Sign up
+              </span>
+            </a>
             <br />
-            <span
+            <a
               class="c11"
+              href="/login"
             >
-              Log in
-            </span>
+              <span
+                class="c12"
+              >
+                Log in
+              </span>
+            </a>
             <br />
-            <span
+            <a
               class="c11"
+              href="/email-verification"
             >
-              Email verification
-            </span>
+              <span
+                class="c12"
+              >
+                Email verification
+              </span>
+            </a>
             <br />
-            <span
+            <a
               class="c11"
+              href="/magic-login"
             >
-              Magic login
-            </span>
+              <span
+                class="c12"
+              >
+                Magic login
+              </span>
+            </a>
           </span>
         </div>
       </div>
@@ -724,41 +821,71 @@ exports[`<SiteMap /> should render correctly - index 1`] = `
           <span
             class="c10"
           >
-            <span
+            <a
               class="c11"
+              href="/admin"
             >
-              Admin navigation
-            </span>
+              <span
+                class="c12"
+              >
+                Admin navigation
+              </span>
+            </a>
             <br />
-            <span
+            <a
               class="c11"
+              href="/blog"
             >
-              Blogs
-            </span>
+              <span
+                class="c12"
+              >
+                Blogs
+              </span>
+            </a>
             <br />
-            <span
+            <a
               class="c11"
+              href="/admin/analytics"
             >
-              Analytics
-            </span>
+              <span
+                class="c12"
+              >
+                Analytics
+              </span>
+            </a>
             <br />
-            <span
+            <a
               class="c11"
+              href="/admin/emails"
             >
-              Emails
-            </span>
+              <span
+                class="c12"
+              >
+                Emails
+              </span>
+            </a>
             <br />
-            <span
+            <a
               class="c11"
+              href="/admin/notifications"
             >
-              Notifications
-            </span>
+              <span
+                class="c12"
+              >
+                Notifications
+              </span>
+            </a>
             <br />
-            <span
+            <a
               class="c11"
+              href="/admin/users"
             >
-              Users
-            </span>
+              <span
+                class="c12"
+              >
+                Users
+              </span>
+            </a>
           </span>
         </div>
       </div>
@@ -788,283 +915,458 @@ exports[`<SiteMap /> should render correctly - index 1`] = `
             class="c10"
           >
             <div>
-              <span
+              <a
                 class="c11"
+                href="/codebase"
               >
-                /codebase ⇒ https://github.com/georgegillams/georgegillams.co.uk
-              </span>
+                <span
+                  class="c12"
+                >
+                  /codebase ⇒ https://github.com/georgegillams/georgegillams.co.uk
+                </span>
+              </a>
               <br />
             </div>
             <div>
-              <span
+              <a
                 class="c11"
+                href="/copyright"
               >
-                /copyright ⇒ https://creativecommons.org/licenses/by-sa/3.0/
-              </span>
+                <span
+                  class="c12"
+                >
+                  /copyright ⇒ https://creativecommons.org/licenses/by-sa/3.0/
+                </span>
+              </a>
               <br />
             </div>
             <div>
-              <span
+              <a
                 class="c11"
+                href="/flickr"
               >
-                /flickr ⇒ https://www.flickr.com/people/georgegillams
-              </span>
+                <span
+                  class="c12"
+                >
+                  /flickr ⇒ https://www.flickr.com/people/georgegillams
+                </span>
+              </a>
               <br />
             </div>
             <div>
-              <span
+              <a
                 class="c11"
+                href="/monzo"
               >
-                /monzo ⇒ https://join.monzo.com/r/vjd3d74
-              </span>
+                <span
+                  class="c12"
+                >
+                  /monzo ⇒ https://join.monzo.com/r/vjd3d74
+                </span>
+              </a>
               <br />
             </div>
             <div>
-              <span
+              <a
                 class="c11"
+                href="/github"
               >
-                /github ⇒ https://github.com/georgegillams
-              </span>
+                <span
+                  class="c12"
+                >
+                  /github ⇒ https://github.com/georgegillams
+                </span>
+              </a>
               <br />
             </div>
             <div>
-              <span
+              <a
                 class="c11"
+                href="/stackoverflow"
               >
-                /stackoverflow ⇒ https://stackoverflow.com/users/14463713/georgegillams
-              </span>
+                <span
+                  class="c12"
+                >
+                  /stackoverflow ⇒ https://stackoverflow.com/users/14463713/georgegillams
+                </span>
+              </a>
               <br />
             </div>
             <div>
-              <span
+              <a
                 class="c11"
+                href="/gurushots"
               >
-                /gurushots ⇒ https://gurushots.com/georgegillams/photos
-              </span>
+                <span
+                  class="c12"
+                >
+                  /gurushots ⇒ https://gurushots.com/georgegillams/photos
+                </span>
+              </a>
               <br />
             </div>
             <div>
-              <span
+              <a
                 class="c11"
+                href="/unsplash"
               >
-                /unsplash ⇒ https://unsplash.com/@georgegillams/
-              </span>
+                <span
+                  class="c12"
+                >
+                  /unsplash ⇒ https://unsplash.com/@georgegillams/
+                </span>
+              </a>
               <br />
             </div>
             <div>
-              <span
+              <a
                 class="c11"
+                href="/strava"
               >
-                /strava ⇒ https://www.strava.com/athletes/7221483
-              </span>
+                <span
+                  class="c12"
+                >
+                  /strava ⇒ https://www.strava.com/athletes/7221483
+                </span>
+              </a>
               <br />
             </div>
             <div>
-              <span
+              <a
                 class="c11"
+                href="/linkedin"
               >
-                /linkedin ⇒ https://www.linkedin.com/in/george-gillams-37537077
-              </span>
+                <span
+                  class="c12"
+                >
+                  /linkedin ⇒ https://www.linkedin.com/in/george-gillams-37537077
+                </span>
+              </a>
               <br />
             </div>
             <div>
-              <span
+              <a
                 class="c11"
+                href="/twitter"
               >
-                /twitter ⇒ https://twitter.com/georgegillams
-              </span>
+                <span
+                  class="c12"
+                >
+                  /twitter ⇒ https://twitter.com/georgegillams
+                </span>
+              </a>
               <br />
             </div>
             <div>
-              <span
+              <a
                 class="c11"
+                href="/spartan"
               >
-                /spartan ⇒ https://uk.spartan.com/en/race/profile/3661120
-              </span>
+                <span
+                  class="c12"
+                >
+                  /spartan ⇒ https://uk.spartan.com/en/race/profile/3661120
+                </span>
+              </a>
               <br />
             </div>
             <div>
-              <span
+              <a
                 class="c11"
+                href="/wp-admin"
               >
-                /wp-admin ⇒ /admin
-              </span>
+                <span
+                  class="c12"
+                >
+                  /wp-admin ⇒ /admin
+                </span>
+              </a>
               <br />
             </div>
             <div>
-              <span
+              <a
                 class="c11"
+                href="/about"
               >
-                /about ⇒ /
-              </span>
+                <span
+                  class="c12"
+                >
+                  /about ⇒ /
+                </span>
+              </a>
               <br />
             </div>
             <div>
-              <span
+              <a
                 class="c11"
+                href="/site-map"
               >
-                /site-map ⇒ /sitemap
-              </span>
+                <span
+                  class="c12"
+                >
+                  /site-map ⇒ /sitemap
+                </span>
+              </a>
               <br />
             </div>
             <div>
-              <span
+              <a
                 class="c11"
+                href="/about/degree"
               >
-                /about/degree ⇒ /work/degree
-              </span>
+                <span
+                  class="c12"
+                >
+                  /about/degree ⇒ /work/degree
+                </span>
+              </a>
               <br />
             </div>
             <div>
-              <span
+              <a
                 class="c11"
+                href="/articles/tough-mudder"
               >
-                /articles/tough-mudder ⇒ /blog/tough-mudder
-              </span>
+                <span
+                  class="c12"
+                >
+                  /articles/tough-mudder ⇒ /blog/tough-mudder
+                </span>
+              </a>
               <br />
             </div>
             <div>
-              <span
+              <a
                 class="c11"
+                href="/articles/net-neutrality"
               >
-                /articles/net-neutrality ⇒ /blog/net-neutrality
-              </span>
+                <span
+                  class="c12"
+                >
+                  /articles/net-neutrality ⇒ /blog/net-neutrality
+                </span>
+              </a>
               <br />
             </div>
             <div>
-              <span
+              <a
                 class="c11"
+                href="/articles/vim"
               >
-                /articles/vim ⇒ /blog/vim
-              </span>
+                <span
+                  class="c12"
+                >
+                  /articles/vim ⇒ /blog/vim
+                </span>
+              </a>
               <br />
             </div>
             <div>
-              <span
+              <a
                 class="c11"
+                href="/articles/list"
               >
-                /articles/list ⇒ /blog
-              </span>
+                <span
+                  class="c12"
+                >
+                  /articles/list ⇒ /blog
+                </span>
+              </a>
               <br />
             </div>
             <div>
-              <span
+              <a
                 class="c11"
+                href="/articles"
               >
-                /articles ⇒ /blog
-              </span>
+                <span
+                  class="c12"
+                >
+                  /articles ⇒ /blog
+                </span>
+              </a>
               <br />
             </div>
             <div>
-              <span
+              <a
                 class="c11"
+                href="/net-neutrality"
               >
-                /net-neutrality ⇒ /blog/net-neutrality
-              </span>
+                <span
+                  class="c12"
+                >
+                  /net-neutrality ⇒ /blog/net-neutrality
+                </span>
+              </a>
               <br />
             </div>
             <div>
-              <span
+              <a
                 class="c11"
+                href="/work/side-projects"
               >
-                /work/side-projects ⇒ /work
-              </span>
+                <span
+                  class="c12"
+                >
+                  /work/side-projects ⇒ /work
+                </span>
+              </a>
               <br />
             </div>
             <div>
-              <span
+              <a
                 class="c11"
+                href="/blog/view"
               >
-                /blog/view ⇒ /blog
-              </span>
+                <span
+                  class="c12"
+                >
+                  /blog/view ⇒ /blog
+                </span>
+              </a>
               <br />
             </div>
             <div>
-              <span
+              <a
                 class="c11"
+                href="/travel"
               >
-                /travel ⇒ /blog
-              </span>
+                <span
+                  class="c12"
+                >
+                  /travel ⇒ /blog
+                </span>
+              </a>
               <br />
             </div>
             <div>
-              <span
+              <a
                 class="c11"
+                href="/travel/list"
               >
-                /travel/list ⇒ /blog
-              </span>
+                <span
+                  class="c12"
+                >
+                  /travel/list ⇒ /blog
+                </span>
+              </a>
               <br />
             </div>
             <div>
-              <span
+              <a
                 class="c11"
+                href="/blog/view?id=tg5x7po9"
               >
-                /blog/view?id=tg5x7po9 ⇒ /blog/tough-mudder
-              </span>
+                <span
+                  class="c12"
+                >
+                  /blog/view?id=tg5x7po9 ⇒ /blog/tough-mudder
+                </span>
+              </a>
               <br />
             </div>
             <div>
-              <span
+              <a
                 class="c11"
+                href="/blog/view?id=lqngy"
               >
-                /blog/view?id=lqngy ⇒ /blog/lightroom-workflow
-              </span>
+                <span
+                  class="c12"
+                >
+                  /blog/view?id=lqngy ⇒ /blog/lightroom-workflow
+                </span>
+              </a>
               <br />
             </div>
             <div>
-              <span
+              <a
                 class="c11"
+                href="/blog/view?id=w85aht"
               >
-                /blog/view?id=w85aht ⇒ /blog/net-neutrality
-              </span>
+                <span
+                  class="c12"
+                >
+                  /blog/view?id=w85aht ⇒ /blog/net-neutrality
+                </span>
+              </a>
               <br />
             </div>
             <div>
-              <span
+              <a
                 class="c11"
+                href="/blog/view?id=azcpjh"
               >
-                /blog/view?id=azcpjh ⇒ /blog/vim
-              </span>
+                <span
+                  class="c12"
+                >
+                  /blog/view?id=azcpjh ⇒ /blog/vim
+                </span>
+              </a>
               <br />
             </div>
             <div>
-              <span
+              <a
                 class="c11"
+                href="/blog/view?id=y77dnh"
               >
-                /blog/view?id=y77dnh ⇒ /blog/uk-bank-security
-              </span>
+                <span
+                  class="c12"
+                >
+                  /blog/view?id=y77dnh ⇒ /blog/uk-bank-security
+                </span>
+              </a>
               <br />
             </div>
             <div>
-              <span
+              <a
                 class="c11"
+                href="/art"
               >
-                /art ⇒ /photography
-              </span>
+                <span
+                  class="c12"
+                >
+                  /art ⇒ /photography
+                </span>
+              </a>
               <br />
             </div>
             <div>
-              <span
+              <a
                 class="c11"
+                href="/photoshop"
               >
-                /photoshop ⇒ /photography
-              </span>
+                <span
+                  class="c12"
+                >
+                  /photoshop ⇒ /photography
+                </span>
+              </a>
               <br />
             </div>
             <div>
-              <span
+              <a
                 class="c11"
+                href="/phot"
               >
-                /phot ⇒ /photography
-              </span>
+                <span
+                  class="c12"
+                >
+                  /phot ⇒ /photography
+                </span>
+              </a>
               <br />
             </div>
             <div>
-              <span
+              <a
                 class="c11"
+                href="/photo"
               >
-                /photo ⇒ /photography
-              </span>
+                <span
+                  class="c12"
+                >
+                  /photo ⇒ /photography
+                </span>
+              </a>
               <br />
             </div>
           </span>
@@ -1088,7 +1390,7 @@ exports[`<SiteMap /> should render correctly 1`] = `
   margin-top: 0.86rem;
 }
 
-.c12 {
+.c13 {
   position: relative;
   width: 100%;
   border-radius: 0.25rem;
@@ -1099,7 +1401,7 @@ exports[`<SiteMap /> should render correctly 1`] = `
   border-radius: 10rem;
 }
 
-.c13 {
+.c14 {
   position: absolute;
   top: 0;
   width: 13rem;
@@ -1116,7 +1418,7 @@ exports[`<SiteMap /> should render correctly 1`] = `
   height: 1.25rem;
 }
 
-.c14 {
+.c11 {
   display: inline-block;
   border-radius: 0.25rem;
   font-weight: bold;
@@ -1127,14 +1429,14 @@ exports[`<SiteMap /> should render correctly 1`] = `
   fill: darkorchid;
 }
 
-.c14:focus-within,
-.c14:focus {
+.c11:focus-within,
+.c11:focus {
   position: relative;
   outline: none !important;
 }
 
-.c14:focus-within::after,
-.c14:focus::after {
+.c11:focus-within::after,
+.c11:focus::after {
   position: absolute;
   top: -0.35rem;
   right: -0.35rem;
@@ -1147,7 +1449,7 @@ exports[`<SiteMap /> should render correctly 1`] = `
   pointer-events: none;
 }
 
-.c14:hover {
+.c11:hover {
   color: #44aeff;
   fill: #44aeff;
 }
@@ -1182,7 +1484,7 @@ exports[`<SiteMap /> should render correctly 1`] = `
   font-weight: bold;
 }
 
-.c11 {
+.c12 {
   margin: 0;
 }
 
@@ -1234,42 +1536,34 @@ exports[`<SiteMap /> should render correctly 1`] = `
 }
 
 @media (prefers-color-scheme:dark) {
-  .c12 {
+  .c13 {
     background-color: rgb(17,17,17);
   }
 }
 
 @media (prefers-color-scheme:dark) {
-  .c13 {
+  .c14 {
     background-image: linear-gradient( 90deg, rgb(17,17,17), rgb(50,50,50), rgb(17,17,17) );
   }
 }
 
 @media (prefers-color-scheme:dark) {
-  .c14:focus-within::after,
-  .c14:focus::after {
+  .c11:focus-within::after,
+  .c11:focus::after {
     border-color: rgba(0,125,250,0.6);
   }
 }
 
 @media (prefers-color-scheme:dark) {
-  .c14 {
+  .c11 {
     color: orchid;
     fill: orchid;
   }
 
-  .c14:hover {
+  .c11:hover {
     color: #44aeff;
     fill: #44aeff;
   }
-}
-
-@media (prefers-color-scheme:dark) {
-
-}
-
-@media (prefers-color-scheme:dark) {
-
 }
 
 @media (min-width:50.25rem) {
@@ -1323,57 +1617,62 @@ exports[`<SiteMap /> should render correctly 1`] = `
           <span
             class="c10"
           >
-            <span
+            <a
               class="c11"
+              href="/blog"
             >
-              Blog list
-            </span>
+              <span
+                class="c12"
+              >
+                Blog list
+              </span>
+            </a>
             <br />
             <div
-              class="c12"
+              class="c13"
             >
               <div
-                class="c13"
+                class="c14"
                 style="margin-left: -0px;"
               />
             </div>
             <div
-              class="c12"
+              class="c13"
             >
               <div
-                class="c13"
+                class="c14"
                 style="margin-left: -0px;"
               />
             </div>
             <div
-              class="c12"
+              class="c13"
             >
               <div
-                class="c13"
+                class="c14"
                 style="margin-left: -0px;"
               />
             </div>
             <div
-              class="c12"
+              class="c13"
             >
               <div
-                class="c13"
+                class="c14"
                 style="margin-left: -0px;"
               />
             </div>
             <div
-              class="c12"
+              class="c13"
             >
               <div
-                class="c13"
+                class="c14"
                 style="margin-left: -0px;"
               />
             </div>
             <div
-              class="c12"
+              class="c13"
             >
               <div
-                class="c13"
+                class="c14"
                 style="margin-left: -0px;"
               />
             </div>
@@ -1405,11 +1704,16 @@ exports[`<SiteMap /> should render correctly 1`] = `
           <span
             class="c10"
           >
-            <span
+            <a
               class="c11"
+              href="/photography"
             >
-              Photography
-            </span>
+              <span
+                class="c12"
+              >
+                Photography
+              </span>
+            </a>
           </span>
         </div>
       </div>
@@ -1438,11 +1742,16 @@ exports[`<SiteMap /> should render correctly 1`] = `
           <span
             class="c10"
           >
-            <span
+            <a
               class="c11"
+              href="/medals"
             >
-              Medals
-            </span>
+              <span
+                class="c12"
+              >
+                Medals
+              </span>
+            </a>
           </span>
         </div>
       </div>
@@ -1471,29 +1780,49 @@ exports[`<SiteMap /> should render correctly 1`] = `
           <span
             class="c10"
           >
-            <span
+            <a
               class="c11"
+              href="/work"
             >
-              Overview
-            </span>
+              <span
+                class="c12"
+              >
+                Overview
+              </span>
+            </a>
             <br />
-            <span
+            <a
               class="c11"
+              href="/work/backpack"
             >
-              Backpack
-            </span>
+              <span
+                class="c12"
+              >
+                Backpack
+              </span>
+            </a>
             <br />
-            <span
+            <a
               class="c11"
+              href="/work/degree"
             >
-              Degree
-            </span>
+              <span
+                class="c12"
+              >
+                Degree
+              </span>
+            </a>
             <br />
-            <span
+            <a
               class="c11"
+              href="/work/epicc"
             >
-              EPICC
-            </span>
+              <span
+                class="c12"
+              >
+                EPICC
+              </span>
+            </a>
           </span>
         </div>
       </div>
@@ -1522,11 +1851,16 @@ exports[`<SiteMap /> should render correctly 1`] = `
           <span
             class="c10"
           >
-            <span
+            <a
               class="c11"
+              href="/privacy-policy"
             >
-              Privacy Policy
-            </span>
+              <span
+                class="c12"
+              >
+                Privacy Policy
+              </span>
+            </a>
           </span>
         </div>
       </div>
@@ -1555,35 +1889,60 @@ exports[`<SiteMap /> should render correctly 1`] = `
           <span
             class="c10"
           >
-            <span
+            <a
               class="c11"
+              href="/contact"
             >
-              Contact
-            </span>
+              <span
+                class="c12"
+              >
+                Contact
+              </span>
+            </a>
             <br />
-            <span
+            <a
               class="c11"
+              href="/support"
             >
-              Support
-            </span>
+              <span
+                class="c12"
+              >
+                Support
+              </span>
+            </a>
             <br />
-            <span
+            <a
               class="c11"
+              href="/debug"
             >
-              Debug tools
-            </span>
+              <span
+                class="c12"
+              >
+                Debug tools
+              </span>
+            </a>
             <br />
-            <span
+            <a
               class="c11"
+              href="/status"
             >
-              Status
-            </span>
+              <span
+                class="c12"
+              >
+                Status
+              </span>
+            </a>
             <br />
-            <span
+            <a
               class="c11"
+              href="/coffee"
             >
-              Coffee
-            </span>
+              <span
+                class="c12"
+              >
+                Coffee
+              </span>
+            </a>
           </span>
         </div>
       </div>
@@ -1614,13 +1973,13 @@ exports[`<SiteMap /> should render correctly 1`] = `
           >
             <a
               aria-label="Robots.txt (opens in a new tab)"
-              class="c14"
+              class="c11"
               href="/robots.txt"
               rel="noopener noreferrer"
               target="_blank"
             >
               <span
-                class="c11"
+                class="c12"
               >
                 Robots.txt
               </span>
@@ -1643,13 +2002,13 @@ exports[`<SiteMap /> should render correctly 1`] = `
             <br />
             <a
               aria-label="SiteMap.xml (opens in a new tab)"
-              class="c14"
+              class="c11"
               href="/sitemap.xml"
               rel="noopener noreferrer"
               target="_blank"
             >
               <span
-                class="c11"
+                class="c12"
               >
                 SiteMap.xml
               </span>
@@ -1670,17 +2029,27 @@ exports[`<SiteMap /> should render correctly 1`] = `
               </div>
             </a>
             <br />
-            <span
+            <a
               class="c11"
+              href="/404"
             >
-              404 error page - not found
-            </span>
+              <span
+                class="c12"
+              >
+                404 error page - not found
+              </span>
+            </a>
             <br />
-            <span
+            <a
               class="c11"
+              href="/teapot"
             >
-              418 error page - I'm a teapot
-            </span>
+              <span
+                class="c12"
+              >
+                418 error page - I'm a teapot
+              </span>
+            </a>
           </span>
         </div>
       </div>
@@ -1709,11 +2078,16 @@ exports[`<SiteMap /> should render correctly 1`] = `
           <span
             class="c10"
           >
-            <span
+            <a
               class="c11"
+              href="/api-docs"
             >
-              API docs
-            </span>
+              <span
+                class="c12"
+              >
+                API docs
+              </span>
+            </a>
           </span>
         </div>
       </div>
@@ -1742,35 +2116,60 @@ exports[`<SiteMap /> should render correctly 1`] = `
           <span
             class="c10"
           >
-            <span
+            <a
               class="c11"
+              href="/account"
             >
-              Account
-            </span>
+              <span
+                class="c12"
+              >
+                Account
+              </span>
+            </a>
             <br />
-            <span
+            <a
               class="c11"
+              href="/sign-up"
             >
-              Sign up
-            </span>
+              <span
+                class="c12"
+              >
+                Sign up
+              </span>
+            </a>
             <br />
-            <span
+            <a
               class="c11"
+              href="/login"
             >
-              Log in
-            </span>
+              <span
+                class="c12"
+              >
+                Log in
+              </span>
+            </a>
             <br />
-            <span
+            <a
               class="c11"
+              href="/email-verification"
             >
-              Email verification
-            </span>
+              <span
+                class="c12"
+              >
+                Email verification
+              </span>
+            </a>
             <br />
-            <span
+            <a
               class="c11"
+              href="/magic-login"
             >
-              Magic login
-            </span>
+              <span
+                class="c12"
+              >
+                Magic login
+              </span>
+            </a>
           </span>
         </div>
       </div>
@@ -1799,41 +2198,71 @@ exports[`<SiteMap /> should render correctly 1`] = `
           <span
             class="c10"
           >
-            <span
+            <a
               class="c11"
+              href="/admin"
             >
-              Admin navigation
-            </span>
+              <span
+                class="c12"
+              >
+                Admin navigation
+              </span>
+            </a>
             <br />
-            <span
+            <a
               class="c11"
+              href="/blog"
             >
-              Blogs
-            </span>
+              <span
+                class="c12"
+              >
+                Blogs
+              </span>
+            </a>
             <br />
-            <span
+            <a
               class="c11"
+              href="/admin/analytics"
             >
-              Analytics
-            </span>
+              <span
+                class="c12"
+              >
+                Analytics
+              </span>
+            </a>
             <br />
-            <span
+            <a
               class="c11"
+              href="/admin/emails"
             >
-              Emails
-            </span>
+              <span
+                class="c12"
+              >
+                Emails
+              </span>
+            </a>
             <br />
-            <span
+            <a
               class="c11"
+              href="/admin/notifications"
             >
-              Notifications
-            </span>
+              <span
+                class="c12"
+              >
+                Notifications
+              </span>
+            </a>
             <br />
-            <span
+            <a
               class="c11"
+              href="/admin/users"
             >
-              Users
-            </span>
+              <span
+                class="c12"
+              >
+                Users
+              </span>
+            </a>
           </span>
         </div>
       </div>
@@ -1863,283 +2292,458 @@ exports[`<SiteMap /> should render correctly 1`] = `
             class="c10"
           >
             <div>
-              <span
+              <a
                 class="c11"
+                href="/codebase"
               >
-                /codebase ⇒ https://github.com/georgegillams/georgegillams.co.uk
-              </span>
+                <span
+                  class="c12"
+                >
+                  /codebase ⇒ https://github.com/georgegillams/georgegillams.co.uk
+                </span>
+              </a>
               <br />
             </div>
             <div>
-              <span
+              <a
                 class="c11"
+                href="/copyright"
               >
-                /copyright ⇒ https://creativecommons.org/licenses/by-sa/3.0/
-              </span>
+                <span
+                  class="c12"
+                >
+                  /copyright ⇒ https://creativecommons.org/licenses/by-sa/3.0/
+                </span>
+              </a>
               <br />
             </div>
             <div>
-              <span
+              <a
                 class="c11"
+                href="/flickr"
               >
-                /flickr ⇒ https://www.flickr.com/people/georgegillams
-              </span>
+                <span
+                  class="c12"
+                >
+                  /flickr ⇒ https://www.flickr.com/people/georgegillams
+                </span>
+              </a>
               <br />
             </div>
             <div>
-              <span
+              <a
                 class="c11"
+                href="/monzo"
               >
-                /monzo ⇒ https://join.monzo.com/r/vjd3d74
-              </span>
+                <span
+                  class="c12"
+                >
+                  /monzo ⇒ https://join.monzo.com/r/vjd3d74
+                </span>
+              </a>
               <br />
             </div>
             <div>
-              <span
+              <a
                 class="c11"
+                href="/github"
               >
-                /github ⇒ https://github.com/georgegillams
-              </span>
+                <span
+                  class="c12"
+                >
+                  /github ⇒ https://github.com/georgegillams
+                </span>
+              </a>
               <br />
             </div>
             <div>
-              <span
+              <a
                 class="c11"
+                href="/stackoverflow"
               >
-                /stackoverflow ⇒ https://stackoverflow.com/users/14463713/georgegillams
-              </span>
+                <span
+                  class="c12"
+                >
+                  /stackoverflow ⇒ https://stackoverflow.com/users/14463713/georgegillams
+                </span>
+              </a>
               <br />
             </div>
             <div>
-              <span
+              <a
                 class="c11"
+                href="/gurushots"
               >
-                /gurushots ⇒ https://gurushots.com/georgegillams/photos
-              </span>
+                <span
+                  class="c12"
+                >
+                  /gurushots ⇒ https://gurushots.com/georgegillams/photos
+                </span>
+              </a>
               <br />
             </div>
             <div>
-              <span
+              <a
                 class="c11"
+                href="/unsplash"
               >
-                /unsplash ⇒ https://unsplash.com/@georgegillams/
-              </span>
+                <span
+                  class="c12"
+                >
+                  /unsplash ⇒ https://unsplash.com/@georgegillams/
+                </span>
+              </a>
               <br />
             </div>
             <div>
-              <span
+              <a
                 class="c11"
+                href="/strava"
               >
-                /strava ⇒ https://www.strava.com/athletes/7221483
-              </span>
+                <span
+                  class="c12"
+                >
+                  /strava ⇒ https://www.strava.com/athletes/7221483
+                </span>
+              </a>
               <br />
             </div>
             <div>
-              <span
+              <a
                 class="c11"
+                href="/linkedin"
               >
-                /linkedin ⇒ https://www.linkedin.com/in/george-gillams-37537077
-              </span>
+                <span
+                  class="c12"
+                >
+                  /linkedin ⇒ https://www.linkedin.com/in/george-gillams-37537077
+                </span>
+              </a>
               <br />
             </div>
             <div>
-              <span
+              <a
                 class="c11"
+                href="/twitter"
               >
-                /twitter ⇒ https://twitter.com/georgegillams
-              </span>
+                <span
+                  class="c12"
+                >
+                  /twitter ⇒ https://twitter.com/georgegillams
+                </span>
+              </a>
               <br />
             </div>
             <div>
-              <span
+              <a
                 class="c11"
+                href="/spartan"
               >
-                /spartan ⇒ https://uk.spartan.com/en/race/profile/3661120
-              </span>
+                <span
+                  class="c12"
+                >
+                  /spartan ⇒ https://uk.spartan.com/en/race/profile/3661120
+                </span>
+              </a>
               <br />
             </div>
             <div>
-              <span
+              <a
                 class="c11"
+                href="/wp-admin"
               >
-                /wp-admin ⇒ /admin
-              </span>
+                <span
+                  class="c12"
+                >
+                  /wp-admin ⇒ /admin
+                </span>
+              </a>
               <br />
             </div>
             <div>
-              <span
+              <a
                 class="c11"
+                href="/about"
               >
-                /about ⇒ /
-              </span>
+                <span
+                  class="c12"
+                >
+                  /about ⇒ /
+                </span>
+              </a>
               <br />
             </div>
             <div>
-              <span
+              <a
                 class="c11"
+                href="/site-map"
               >
-                /site-map ⇒ /sitemap
-              </span>
+                <span
+                  class="c12"
+                >
+                  /site-map ⇒ /sitemap
+                </span>
+              </a>
               <br />
             </div>
             <div>
-              <span
+              <a
                 class="c11"
+                href="/about/degree"
               >
-                /about/degree ⇒ /work/degree
-              </span>
+                <span
+                  class="c12"
+                >
+                  /about/degree ⇒ /work/degree
+                </span>
+              </a>
               <br />
             </div>
             <div>
-              <span
+              <a
                 class="c11"
+                href="/articles/tough-mudder"
               >
-                /articles/tough-mudder ⇒ /blog/tough-mudder
-              </span>
+                <span
+                  class="c12"
+                >
+                  /articles/tough-mudder ⇒ /blog/tough-mudder
+                </span>
+              </a>
               <br />
             </div>
             <div>
-              <span
+              <a
                 class="c11"
+                href="/articles/net-neutrality"
               >
-                /articles/net-neutrality ⇒ /blog/net-neutrality
-              </span>
+                <span
+                  class="c12"
+                >
+                  /articles/net-neutrality ⇒ /blog/net-neutrality
+                </span>
+              </a>
               <br />
             </div>
             <div>
-              <span
+              <a
                 class="c11"
+                href="/articles/vim"
               >
-                /articles/vim ⇒ /blog/vim
-              </span>
+                <span
+                  class="c12"
+                >
+                  /articles/vim ⇒ /blog/vim
+                </span>
+              </a>
               <br />
             </div>
             <div>
-              <span
+              <a
                 class="c11"
+                href="/articles/list"
               >
-                /articles/list ⇒ /blog
-              </span>
+                <span
+                  class="c12"
+                >
+                  /articles/list ⇒ /blog
+                </span>
+              </a>
               <br />
             </div>
             <div>
-              <span
+              <a
                 class="c11"
+                href="/articles"
               >
-                /articles ⇒ /blog
-              </span>
+                <span
+                  class="c12"
+                >
+                  /articles ⇒ /blog
+                </span>
+              </a>
               <br />
             </div>
             <div>
-              <span
+              <a
                 class="c11"
+                href="/net-neutrality"
               >
-                /net-neutrality ⇒ /blog/net-neutrality
-              </span>
+                <span
+                  class="c12"
+                >
+                  /net-neutrality ⇒ /blog/net-neutrality
+                </span>
+              </a>
               <br />
             </div>
             <div>
-              <span
+              <a
                 class="c11"
+                href="/work/side-projects"
               >
-                /work/side-projects ⇒ /work
-              </span>
+                <span
+                  class="c12"
+                >
+                  /work/side-projects ⇒ /work
+                </span>
+              </a>
               <br />
             </div>
             <div>
-              <span
+              <a
                 class="c11"
+                href="/blog/view"
               >
-                /blog/view ⇒ /blog
-              </span>
+                <span
+                  class="c12"
+                >
+                  /blog/view ⇒ /blog
+                </span>
+              </a>
               <br />
             </div>
             <div>
-              <span
+              <a
                 class="c11"
+                href="/travel"
               >
-                /travel ⇒ /blog
-              </span>
+                <span
+                  class="c12"
+                >
+                  /travel ⇒ /blog
+                </span>
+              </a>
               <br />
             </div>
             <div>
-              <span
+              <a
                 class="c11"
+                href="/travel/list"
               >
-                /travel/list ⇒ /blog
-              </span>
+                <span
+                  class="c12"
+                >
+                  /travel/list ⇒ /blog
+                </span>
+              </a>
               <br />
             </div>
             <div>
-              <span
+              <a
                 class="c11"
+                href="/blog/view?id=tg5x7po9"
               >
-                /blog/view?id=tg5x7po9 ⇒ /blog/tough-mudder
-              </span>
+                <span
+                  class="c12"
+                >
+                  /blog/view?id=tg5x7po9 ⇒ /blog/tough-mudder
+                </span>
+              </a>
               <br />
             </div>
             <div>
-              <span
+              <a
                 class="c11"
+                href="/blog/view?id=lqngy"
               >
-                /blog/view?id=lqngy ⇒ /blog/lightroom-workflow
-              </span>
+                <span
+                  class="c12"
+                >
+                  /blog/view?id=lqngy ⇒ /blog/lightroom-workflow
+                </span>
+              </a>
               <br />
             </div>
             <div>
-              <span
+              <a
                 class="c11"
+                href="/blog/view?id=w85aht"
               >
-                /blog/view?id=w85aht ⇒ /blog/net-neutrality
-              </span>
+                <span
+                  class="c12"
+                >
+                  /blog/view?id=w85aht ⇒ /blog/net-neutrality
+                </span>
+              </a>
               <br />
             </div>
             <div>
-              <span
+              <a
                 class="c11"
+                href="/blog/view?id=azcpjh"
               >
-                /blog/view?id=azcpjh ⇒ /blog/vim
-              </span>
+                <span
+                  class="c12"
+                >
+                  /blog/view?id=azcpjh ⇒ /blog/vim
+                </span>
+              </a>
               <br />
             </div>
             <div>
-              <span
+              <a
                 class="c11"
+                href="/blog/view?id=y77dnh"
               >
-                /blog/view?id=y77dnh ⇒ /blog/uk-bank-security
-              </span>
+                <span
+                  class="c12"
+                >
+                  /blog/view?id=y77dnh ⇒ /blog/uk-bank-security
+                </span>
+              </a>
               <br />
             </div>
             <div>
-              <span
+              <a
                 class="c11"
+                href="/art"
               >
-                /art ⇒ /photography
-              </span>
+                <span
+                  class="c12"
+                >
+                  /art ⇒ /photography
+                </span>
+              </a>
               <br />
             </div>
             <div>
-              <span
+              <a
                 class="c11"
+                href="/photoshop"
               >
-                /photoshop ⇒ /photography
-              </span>
+                <span
+                  class="c12"
+                >
+                  /photoshop ⇒ /photography
+                </span>
+              </a>
               <br />
             </div>
             <div>
-              <span
+              <a
                 class="c11"
+                href="/phot"
               >
-                /phot ⇒ /photography
-              </span>
+                <span
+                  class="c12"
+                >
+                  /phot ⇒ /photography
+                </span>
+              </a>
               <br />
             </div>
             <div>
-              <span
+              <a
                 class="c11"
+                href="/photo"
               >
-                /photo ⇒ /photography
-              </span>
+                <span
+                  class="c12"
+                >
+                  /photo ⇒ /photography
+                </span>
+              </a>
               <br />
             </div>
           </span>
@@ -2168,7 +2772,7 @@ exports[`<SiteMap /> should render correctly with blogs 1`] = `
   height: 1.25rem;
 }
 
-.c12 {
+.c11 {
   display: inline-block;
   border-radius: 0.25rem;
   font-weight: bold;
@@ -2179,14 +2783,14 @@ exports[`<SiteMap /> should render correctly with blogs 1`] = `
   fill: darkorchid;
 }
 
-.c12:focus-within,
-.c12:focus {
+.c11:focus-within,
+.c11:focus {
   position: relative;
   outline: none !important;
 }
 
-.c12:focus-within::after,
-.c12:focus::after {
+.c11:focus-within::after,
+.c11:focus::after {
   position: absolute;
   top: -0.35rem;
   right: -0.35rem;
@@ -2199,7 +2803,7 @@ exports[`<SiteMap /> should render correctly with blogs 1`] = `
   pointer-events: none;
 }
 
-.c12:hover {
+.c11:hover {
   color: #44aeff;
   fill: #44aeff;
 }
@@ -2234,7 +2838,7 @@ exports[`<SiteMap /> should render correctly with blogs 1`] = `
   font-weight: bold;
 }
 
-.c11 {
+.c12 {
   margin: 0;
 }
 
@@ -2286,30 +2890,22 @@ exports[`<SiteMap /> should render correctly with blogs 1`] = `
 }
 
 @media (prefers-color-scheme:dark) {
-  .c12:focus-within::after,
-  .c12:focus::after {
+  .c11:focus-within::after,
+  .c11:focus::after {
     border-color: rgba(0,125,250,0.6);
   }
 }
 
 @media (prefers-color-scheme:dark) {
-  .c12 {
+  .c11 {
     color: orchid;
     fill: orchid;
   }
 
-  .c12:hover {
+  .c11:hover {
     color: #44aeff;
     fill: #44aeff;
   }
-}
-
-@media (prefers-color-scheme:dark) {
-
-}
-
-@media (prefers-color-scheme:dark) {
-
 }
 
 @media (min-width:50.25rem) {
@@ -2363,17 +2959,27 @@ exports[`<SiteMap /> should render correctly with blogs 1`] = `
           <span
             class="c10"
           >
-            <span
+            <a
               class="c11"
+              href="/blog"
             >
-              Blog list
-            </span>
+              <span
+                class="c12"
+              >
+                Blog list
+              </span>
+            </a>
             <br />
-            <span
+            <a
               class="c11"
+              href="/blog/asdfg"
             >
-              Blog 1 🎉
-            </span>
+              <span
+                class="c12"
+              >
+                Blog 1 🎉
+              </span>
+            </a>
             <br />
           </span>
         </div>
@@ -2403,11 +3009,16 @@ exports[`<SiteMap /> should render correctly with blogs 1`] = `
           <span
             class="c10"
           >
-            <span
+            <a
               class="c11"
+              href="/photography"
             >
-              Photography
-            </span>
+              <span
+                class="c12"
+              >
+                Photography
+              </span>
+            </a>
           </span>
         </div>
       </div>
@@ -2436,11 +3047,16 @@ exports[`<SiteMap /> should render correctly with blogs 1`] = `
           <span
             class="c10"
           >
-            <span
+            <a
               class="c11"
+              href="/medals"
             >
-              Medals
-            </span>
+              <span
+                class="c12"
+              >
+                Medals
+              </span>
+            </a>
           </span>
         </div>
       </div>
@@ -2469,29 +3085,49 @@ exports[`<SiteMap /> should render correctly with blogs 1`] = `
           <span
             class="c10"
           >
-            <span
+            <a
               class="c11"
+              href="/work"
             >
-              Overview
-            </span>
+              <span
+                class="c12"
+              >
+                Overview
+              </span>
+            </a>
             <br />
-            <span
+            <a
               class="c11"
+              href="/work/backpack"
             >
-              Backpack
-            </span>
+              <span
+                class="c12"
+              >
+                Backpack
+              </span>
+            </a>
             <br />
-            <span
+            <a
               class="c11"
+              href="/work/degree"
             >
-              Degree
-            </span>
+              <span
+                class="c12"
+              >
+                Degree
+              </span>
+            </a>
             <br />
-            <span
+            <a
               class="c11"
+              href="/work/epicc"
             >
-              EPICC
-            </span>
+              <span
+                class="c12"
+              >
+                EPICC
+              </span>
+            </a>
           </span>
         </div>
       </div>
@@ -2520,11 +3156,16 @@ exports[`<SiteMap /> should render correctly with blogs 1`] = `
           <span
             class="c10"
           >
-            <span
+            <a
               class="c11"
+              href="/privacy-policy"
             >
-              Privacy Policy
-            </span>
+              <span
+                class="c12"
+              >
+                Privacy Policy
+              </span>
+            </a>
           </span>
         </div>
       </div>
@@ -2553,35 +3194,60 @@ exports[`<SiteMap /> should render correctly with blogs 1`] = `
           <span
             class="c10"
           >
-            <span
+            <a
               class="c11"
+              href="/contact"
             >
-              Contact
-            </span>
+              <span
+                class="c12"
+              >
+                Contact
+              </span>
+            </a>
             <br />
-            <span
+            <a
               class="c11"
+              href="/support"
             >
-              Support
-            </span>
+              <span
+                class="c12"
+              >
+                Support
+              </span>
+            </a>
             <br />
-            <span
+            <a
               class="c11"
+              href="/debug"
             >
-              Debug tools
-            </span>
+              <span
+                class="c12"
+              >
+                Debug tools
+              </span>
+            </a>
             <br />
-            <span
+            <a
               class="c11"
+              href="/status"
             >
-              Status
-            </span>
+              <span
+                class="c12"
+              >
+                Status
+              </span>
+            </a>
             <br />
-            <span
+            <a
               class="c11"
+              href="/coffee"
             >
-              Coffee
-            </span>
+              <span
+                class="c12"
+              >
+                Coffee
+              </span>
+            </a>
           </span>
         </div>
       </div>
@@ -2612,13 +3278,13 @@ exports[`<SiteMap /> should render correctly with blogs 1`] = `
           >
             <a
               aria-label="Robots.txt (opens in a new tab)"
-              class="c12"
+              class="c11"
               href="/robots.txt"
               rel="noopener noreferrer"
               target="_blank"
             >
               <span
-                class="c11"
+                class="c12"
               >
                 Robots.txt
               </span>
@@ -2641,13 +3307,13 @@ exports[`<SiteMap /> should render correctly with blogs 1`] = `
             <br />
             <a
               aria-label="SiteMap.xml (opens in a new tab)"
-              class="c12"
+              class="c11"
               href="/sitemap.xml"
               rel="noopener noreferrer"
               target="_blank"
             >
               <span
-                class="c11"
+                class="c12"
               >
                 SiteMap.xml
               </span>
@@ -2668,17 +3334,27 @@ exports[`<SiteMap /> should render correctly with blogs 1`] = `
               </div>
             </a>
             <br />
-            <span
+            <a
               class="c11"
+              href="/404"
             >
-              404 error page - not found
-            </span>
+              <span
+                class="c12"
+              >
+                404 error page - not found
+              </span>
+            </a>
             <br />
-            <span
+            <a
               class="c11"
+              href="/teapot"
             >
-              418 error page - I'm a teapot
-            </span>
+              <span
+                class="c12"
+              >
+                418 error page - I'm a teapot
+              </span>
+            </a>
           </span>
         </div>
       </div>
@@ -2707,11 +3383,16 @@ exports[`<SiteMap /> should render correctly with blogs 1`] = `
           <span
             class="c10"
           >
-            <span
+            <a
               class="c11"
+              href="/api-docs"
             >
-              API docs
-            </span>
+              <span
+                class="c12"
+              >
+                API docs
+              </span>
+            </a>
           </span>
         </div>
       </div>
@@ -2740,35 +3421,60 @@ exports[`<SiteMap /> should render correctly with blogs 1`] = `
           <span
             class="c10"
           >
-            <span
+            <a
               class="c11"
+              href="/account"
             >
-              Account
-            </span>
+              <span
+                class="c12"
+              >
+                Account
+              </span>
+            </a>
             <br />
-            <span
+            <a
               class="c11"
+              href="/sign-up"
             >
-              Sign up
-            </span>
+              <span
+                class="c12"
+              >
+                Sign up
+              </span>
+            </a>
             <br />
-            <span
+            <a
               class="c11"
+              href="/login"
             >
-              Log in
-            </span>
+              <span
+                class="c12"
+              >
+                Log in
+              </span>
+            </a>
             <br />
-            <span
+            <a
               class="c11"
+              href="/email-verification"
             >
-              Email verification
-            </span>
+              <span
+                class="c12"
+              >
+                Email verification
+              </span>
+            </a>
             <br />
-            <span
+            <a
               class="c11"
+              href="/magic-login"
             >
-              Magic login
-            </span>
+              <span
+                class="c12"
+              >
+                Magic login
+              </span>
+            </a>
           </span>
         </div>
       </div>
@@ -2797,41 +3503,71 @@ exports[`<SiteMap /> should render correctly with blogs 1`] = `
           <span
             class="c10"
           >
-            <span
+            <a
               class="c11"
+              href="/admin"
             >
-              Admin navigation
-            </span>
+              <span
+                class="c12"
+              >
+                Admin navigation
+              </span>
+            </a>
             <br />
-            <span
+            <a
               class="c11"
+              href="/blog"
             >
-              Blogs
-            </span>
+              <span
+                class="c12"
+              >
+                Blogs
+              </span>
+            </a>
             <br />
-            <span
+            <a
               class="c11"
+              href="/admin/analytics"
             >
-              Analytics
-            </span>
+              <span
+                class="c12"
+              >
+                Analytics
+              </span>
+            </a>
             <br />
-            <span
+            <a
               class="c11"
+              href="/admin/emails"
             >
-              Emails
-            </span>
+              <span
+                class="c12"
+              >
+                Emails
+              </span>
+            </a>
             <br />
-            <span
+            <a
               class="c11"
+              href="/admin/notifications"
             >
-              Notifications
-            </span>
+              <span
+                class="c12"
+              >
+                Notifications
+              </span>
+            </a>
             <br />
-            <span
+            <a
               class="c11"
+              href="/admin/users"
             >
-              Users
-            </span>
+              <span
+                class="c12"
+              >
+                Users
+              </span>
+            </a>
           </span>
         </div>
       </div>
@@ -2861,283 +3597,458 @@ exports[`<SiteMap /> should render correctly with blogs 1`] = `
             class="c10"
           >
             <div>
-              <span
+              <a
                 class="c11"
+                href="/codebase"
               >
-                /codebase ⇒ https://github.com/georgegillams/georgegillams.co.uk
-              </span>
+                <span
+                  class="c12"
+                >
+                  /codebase ⇒ https://github.com/georgegillams/georgegillams.co.uk
+                </span>
+              </a>
               <br />
             </div>
             <div>
-              <span
+              <a
                 class="c11"
+                href="/copyright"
               >
-                /copyright ⇒ https://creativecommons.org/licenses/by-sa/3.0/
-              </span>
+                <span
+                  class="c12"
+                >
+                  /copyright ⇒ https://creativecommons.org/licenses/by-sa/3.0/
+                </span>
+              </a>
               <br />
             </div>
             <div>
-              <span
+              <a
                 class="c11"
+                href="/flickr"
               >
-                /flickr ⇒ https://www.flickr.com/people/georgegillams
-              </span>
+                <span
+                  class="c12"
+                >
+                  /flickr ⇒ https://www.flickr.com/people/georgegillams
+                </span>
+              </a>
               <br />
             </div>
             <div>
-              <span
+              <a
                 class="c11"
+                href="/monzo"
               >
-                /monzo ⇒ https://join.monzo.com/r/vjd3d74
-              </span>
+                <span
+                  class="c12"
+                >
+                  /monzo ⇒ https://join.monzo.com/r/vjd3d74
+                </span>
+              </a>
               <br />
             </div>
             <div>
-              <span
+              <a
                 class="c11"
+                href="/github"
               >
-                /github ⇒ https://github.com/georgegillams
-              </span>
+                <span
+                  class="c12"
+                >
+                  /github ⇒ https://github.com/georgegillams
+                </span>
+              </a>
               <br />
             </div>
             <div>
-              <span
+              <a
                 class="c11"
+                href="/stackoverflow"
               >
-                /stackoverflow ⇒ https://stackoverflow.com/users/14463713/georgegillams
-              </span>
+                <span
+                  class="c12"
+                >
+                  /stackoverflow ⇒ https://stackoverflow.com/users/14463713/georgegillams
+                </span>
+              </a>
               <br />
             </div>
             <div>
-              <span
+              <a
                 class="c11"
+                href="/gurushots"
               >
-                /gurushots ⇒ https://gurushots.com/georgegillams/photos
-              </span>
+                <span
+                  class="c12"
+                >
+                  /gurushots ⇒ https://gurushots.com/georgegillams/photos
+                </span>
+              </a>
               <br />
             </div>
             <div>
-              <span
+              <a
                 class="c11"
+                href="/unsplash"
               >
-                /unsplash ⇒ https://unsplash.com/@georgegillams/
-              </span>
+                <span
+                  class="c12"
+                >
+                  /unsplash ⇒ https://unsplash.com/@georgegillams/
+                </span>
+              </a>
               <br />
             </div>
             <div>
-              <span
+              <a
                 class="c11"
+                href="/strava"
               >
-                /strava ⇒ https://www.strava.com/athletes/7221483
-              </span>
+                <span
+                  class="c12"
+                >
+                  /strava ⇒ https://www.strava.com/athletes/7221483
+                </span>
+              </a>
               <br />
             </div>
             <div>
-              <span
+              <a
                 class="c11"
+                href="/linkedin"
               >
-                /linkedin ⇒ https://www.linkedin.com/in/george-gillams-37537077
-              </span>
+                <span
+                  class="c12"
+                >
+                  /linkedin ⇒ https://www.linkedin.com/in/george-gillams-37537077
+                </span>
+              </a>
               <br />
             </div>
             <div>
-              <span
+              <a
                 class="c11"
+                href="/twitter"
               >
-                /twitter ⇒ https://twitter.com/georgegillams
-              </span>
+                <span
+                  class="c12"
+                >
+                  /twitter ⇒ https://twitter.com/georgegillams
+                </span>
+              </a>
               <br />
             </div>
             <div>
-              <span
+              <a
                 class="c11"
+                href="/spartan"
               >
-                /spartan ⇒ https://uk.spartan.com/en/race/profile/3661120
-              </span>
+                <span
+                  class="c12"
+                >
+                  /spartan ⇒ https://uk.spartan.com/en/race/profile/3661120
+                </span>
+              </a>
               <br />
             </div>
             <div>
-              <span
+              <a
                 class="c11"
+                href="/wp-admin"
               >
-                /wp-admin ⇒ /admin
-              </span>
+                <span
+                  class="c12"
+                >
+                  /wp-admin ⇒ /admin
+                </span>
+              </a>
               <br />
             </div>
             <div>
-              <span
+              <a
                 class="c11"
+                href="/about"
               >
-                /about ⇒ /
-              </span>
+                <span
+                  class="c12"
+                >
+                  /about ⇒ /
+                </span>
+              </a>
               <br />
             </div>
             <div>
-              <span
+              <a
                 class="c11"
+                href="/site-map"
               >
-                /site-map ⇒ /sitemap
-              </span>
+                <span
+                  class="c12"
+                >
+                  /site-map ⇒ /sitemap
+                </span>
+              </a>
               <br />
             </div>
             <div>
-              <span
+              <a
                 class="c11"
+                href="/about/degree"
               >
-                /about/degree ⇒ /work/degree
-              </span>
+                <span
+                  class="c12"
+                >
+                  /about/degree ⇒ /work/degree
+                </span>
+              </a>
               <br />
             </div>
             <div>
-              <span
+              <a
                 class="c11"
+                href="/articles/tough-mudder"
               >
-                /articles/tough-mudder ⇒ /blog/tough-mudder
-              </span>
+                <span
+                  class="c12"
+                >
+                  /articles/tough-mudder ⇒ /blog/tough-mudder
+                </span>
+              </a>
               <br />
             </div>
             <div>
-              <span
+              <a
                 class="c11"
+                href="/articles/net-neutrality"
               >
-                /articles/net-neutrality ⇒ /blog/net-neutrality
-              </span>
+                <span
+                  class="c12"
+                >
+                  /articles/net-neutrality ⇒ /blog/net-neutrality
+                </span>
+              </a>
               <br />
             </div>
             <div>
-              <span
+              <a
                 class="c11"
+                href="/articles/vim"
               >
-                /articles/vim ⇒ /blog/vim
-              </span>
+                <span
+                  class="c12"
+                >
+                  /articles/vim ⇒ /blog/vim
+                </span>
+              </a>
               <br />
             </div>
             <div>
-              <span
+              <a
                 class="c11"
+                href="/articles/list"
               >
-                /articles/list ⇒ /blog
-              </span>
+                <span
+                  class="c12"
+                >
+                  /articles/list ⇒ /blog
+                </span>
+              </a>
               <br />
             </div>
             <div>
-              <span
+              <a
                 class="c11"
+                href="/articles"
               >
-                /articles ⇒ /blog
-              </span>
+                <span
+                  class="c12"
+                >
+                  /articles ⇒ /blog
+                </span>
+              </a>
               <br />
             </div>
             <div>
-              <span
+              <a
                 class="c11"
+                href="/net-neutrality"
               >
-                /net-neutrality ⇒ /blog/net-neutrality
-              </span>
+                <span
+                  class="c12"
+                >
+                  /net-neutrality ⇒ /blog/net-neutrality
+                </span>
+              </a>
               <br />
             </div>
             <div>
-              <span
+              <a
                 class="c11"
+                href="/work/side-projects"
               >
-                /work/side-projects ⇒ /work
-              </span>
+                <span
+                  class="c12"
+                >
+                  /work/side-projects ⇒ /work
+                </span>
+              </a>
               <br />
             </div>
             <div>
-              <span
+              <a
                 class="c11"
+                href="/blog/view"
               >
-                /blog/view ⇒ /blog
-              </span>
+                <span
+                  class="c12"
+                >
+                  /blog/view ⇒ /blog
+                </span>
+              </a>
               <br />
             </div>
             <div>
-              <span
+              <a
                 class="c11"
+                href="/travel"
               >
-                /travel ⇒ /blog
-              </span>
+                <span
+                  class="c12"
+                >
+                  /travel ⇒ /blog
+                </span>
+              </a>
               <br />
             </div>
             <div>
-              <span
+              <a
                 class="c11"
+                href="/travel/list"
               >
-                /travel/list ⇒ /blog
-              </span>
+                <span
+                  class="c12"
+                >
+                  /travel/list ⇒ /blog
+                </span>
+              </a>
               <br />
             </div>
             <div>
-              <span
+              <a
                 class="c11"
+                href="/blog/view?id=tg5x7po9"
               >
-                /blog/view?id=tg5x7po9 ⇒ /blog/tough-mudder
-              </span>
+                <span
+                  class="c12"
+                >
+                  /blog/view?id=tg5x7po9 ⇒ /blog/tough-mudder
+                </span>
+              </a>
               <br />
             </div>
             <div>
-              <span
+              <a
                 class="c11"
+                href="/blog/view?id=lqngy"
               >
-                /blog/view?id=lqngy ⇒ /blog/lightroom-workflow
-              </span>
+                <span
+                  class="c12"
+                >
+                  /blog/view?id=lqngy ⇒ /blog/lightroom-workflow
+                </span>
+              </a>
               <br />
             </div>
             <div>
-              <span
+              <a
                 class="c11"
+                href="/blog/view?id=w85aht"
               >
-                /blog/view?id=w85aht ⇒ /blog/net-neutrality
-              </span>
+                <span
+                  class="c12"
+                >
+                  /blog/view?id=w85aht ⇒ /blog/net-neutrality
+                </span>
+              </a>
               <br />
             </div>
             <div>
-              <span
+              <a
                 class="c11"
+                href="/blog/view?id=azcpjh"
               >
-                /blog/view?id=azcpjh ⇒ /blog/vim
-              </span>
+                <span
+                  class="c12"
+                >
+                  /blog/view?id=azcpjh ⇒ /blog/vim
+                </span>
+              </a>
               <br />
             </div>
             <div>
-              <span
+              <a
                 class="c11"
+                href="/blog/view?id=y77dnh"
               >
-                /blog/view?id=y77dnh ⇒ /blog/uk-bank-security
-              </span>
+                <span
+                  class="c12"
+                >
+                  /blog/view?id=y77dnh ⇒ /blog/uk-bank-security
+                </span>
+              </a>
               <br />
             </div>
             <div>
-              <span
+              <a
                 class="c11"
+                href="/art"
               >
-                /art ⇒ /photography
-              </span>
+                <span
+                  class="c12"
+                >
+                  /art ⇒ /photography
+                </span>
+              </a>
               <br />
             </div>
             <div>
-              <span
+              <a
                 class="c11"
+                href="/photoshop"
               >
-                /photoshop ⇒ /photography
-              </span>
+                <span
+                  class="c12"
+                >
+                  /photoshop ⇒ /photography
+                </span>
+              </a>
               <br />
             </div>
             <div>
-              <span
+              <a
                 class="c11"
+                href="/phot"
               >
-                /phot ⇒ /photography
-              </span>
+                <span
+                  class="c12"
+                >
+                  /phot ⇒ /photography
+                </span>
+              </a>
               <br />
             </div>
             <div>
-              <span
+              <a
                 class="c11"
+                href="/photo"
               >
-                /photo ⇒ /photography
-              </span>
+                <span
+                  class="c12"
+                >
+                  /photo ⇒ /photography
+                </span>
+              </a>
               <br />
             </div>
           </span>
@@ -3166,7 +4077,7 @@ exports[`<SiteMap /> should render correctly with blogs and admin user 1`] = `
   height: 1.25rem;
 }
 
-.c12 {
+.c11 {
   display: inline-block;
   border-radius: 0.25rem;
   font-weight: bold;
@@ -3177,14 +4088,14 @@ exports[`<SiteMap /> should render correctly with blogs and admin user 1`] = `
   fill: darkorchid;
 }
 
-.c12:focus-within,
-.c12:focus {
+.c11:focus-within,
+.c11:focus {
   position: relative;
   outline: none !important;
 }
 
-.c12:focus-within::after,
-.c12:focus::after {
+.c11:focus-within::after,
+.c11:focus::after {
   position: absolute;
   top: -0.35rem;
   right: -0.35rem;
@@ -3197,7 +4108,7 @@ exports[`<SiteMap /> should render correctly with blogs and admin user 1`] = `
   pointer-events: none;
 }
 
-.c12:hover {
+.c11:hover {
   color: #44aeff;
   fill: #44aeff;
 }
@@ -3232,7 +4143,7 @@ exports[`<SiteMap /> should render correctly with blogs and admin user 1`] = `
   font-weight: bold;
 }
 
-.c11 {
+.c12 {
   margin: 0;
 }
 
@@ -3284,30 +4195,22 @@ exports[`<SiteMap /> should render correctly with blogs and admin user 1`] = `
 }
 
 @media (prefers-color-scheme:dark) {
-  .c12:focus-within::after,
-  .c12:focus::after {
+  .c11:focus-within::after,
+  .c11:focus::after {
     border-color: rgba(0,125,250,0.6);
   }
 }
 
 @media (prefers-color-scheme:dark) {
-  .c12 {
+  .c11 {
     color: orchid;
     fill: orchid;
   }
 
-  .c12:hover {
+  .c11:hover {
     color: #44aeff;
     fill: #44aeff;
   }
-}
-
-@media (prefers-color-scheme:dark) {
-
-}
-
-@media (prefers-color-scheme:dark) {
-
 }
 
 @media (min-width:50.25rem) {
@@ -3361,17 +4264,27 @@ exports[`<SiteMap /> should render correctly with blogs and admin user 1`] = `
           <span
             class="c10"
           >
-            <span
+            <a
               class="c11"
+              href="/blog"
             >
-              Blog list
-            </span>
+              <span
+                class="c12"
+              >
+                Blog list
+              </span>
+            </a>
             <br />
-            <span
+            <a
               class="c11"
+              href="/blog/asdfg"
             >
-              Blog 1 🎉
-            </span>
+              <span
+                class="c12"
+              >
+                Blog 1 🎉
+              </span>
+            </a>
             <br />
           </span>
         </div>
@@ -3401,30 +4314,50 @@ exports[`<SiteMap /> should render correctly with blogs and admin user 1`] = `
           <span
             class="c10"
           >
-            <span
+            <a
               class="c11"
+              href="/blog/asdfg"
             >
-              Blog 1 🎉
-            </span>
+              <span
+                class="c12"
+              >
+                Blog 1 🎉
+              </span>
+            </a>
             <br />
-            <span
+            <a
               class="c11"
+              href="/blog/asdfg"
             >
-              Untitled blog
-            </span>
+              <span
+                class="c12"
+              >
+                Untitled blog
+              </span>
+            </a>
             <br />
-            <span
+            <a
               class="c11"
+              href="/blog/zxywvuts"
             >
-              St. Ives ⛵ 2018
-            </span>
+              <span
+                class="c12"
+              >
+                St. Ives ⛵ 2018
+              </span>
+            </a>
             <br />
-            <span
+            <a
               class="c11"
+              href="/blog/mndyd8"
             >
-              Untitled blog
-               (deleted)
-            </span>
+              <span
+                class="c12"
+              >
+                Untitled blog
+                 (deleted)
+              </span>
+            </a>
             <br />
           </span>
         </div>
@@ -3454,11 +4387,16 @@ exports[`<SiteMap /> should render correctly with blogs and admin user 1`] = `
           <span
             class="c10"
           >
-            <span
+            <a
               class="c11"
+              href="/photography"
             >
-              Photography
-            </span>
+              <span
+                class="c12"
+              >
+                Photography
+              </span>
+            </a>
           </span>
         </div>
       </div>
@@ -3487,11 +4425,16 @@ exports[`<SiteMap /> should render correctly with blogs and admin user 1`] = `
           <span
             class="c10"
           >
-            <span
+            <a
               class="c11"
+              href="/medals"
             >
-              Medals
-            </span>
+              <span
+                class="c12"
+              >
+                Medals
+              </span>
+            </a>
           </span>
         </div>
       </div>
@@ -3520,29 +4463,49 @@ exports[`<SiteMap /> should render correctly with blogs and admin user 1`] = `
           <span
             class="c10"
           >
-            <span
+            <a
               class="c11"
+              href="/work"
             >
-              Overview
-            </span>
+              <span
+                class="c12"
+              >
+                Overview
+              </span>
+            </a>
             <br />
-            <span
+            <a
               class="c11"
+              href="/work/backpack"
             >
-              Backpack
-            </span>
+              <span
+                class="c12"
+              >
+                Backpack
+              </span>
+            </a>
             <br />
-            <span
+            <a
               class="c11"
+              href="/work/degree"
             >
-              Degree
-            </span>
+              <span
+                class="c12"
+              >
+                Degree
+              </span>
+            </a>
             <br />
-            <span
+            <a
               class="c11"
+              href="/work/epicc"
             >
-              EPICC
-            </span>
+              <span
+                class="c12"
+              >
+                EPICC
+              </span>
+            </a>
           </span>
         </div>
       </div>
@@ -3571,11 +4534,16 @@ exports[`<SiteMap /> should render correctly with blogs and admin user 1`] = `
           <span
             class="c10"
           >
-            <span
+            <a
               class="c11"
+              href="/privacy-policy"
             >
-              Privacy Policy
-            </span>
+              <span
+                class="c12"
+              >
+                Privacy Policy
+              </span>
+            </a>
           </span>
         </div>
       </div>
@@ -3604,35 +4572,60 @@ exports[`<SiteMap /> should render correctly with blogs and admin user 1`] = `
           <span
             class="c10"
           >
-            <span
+            <a
               class="c11"
+              href="/contact"
             >
-              Contact
-            </span>
+              <span
+                class="c12"
+              >
+                Contact
+              </span>
+            </a>
             <br />
-            <span
+            <a
               class="c11"
+              href="/support"
             >
-              Support
-            </span>
+              <span
+                class="c12"
+              >
+                Support
+              </span>
+            </a>
             <br />
-            <span
+            <a
               class="c11"
+              href="/debug"
             >
-              Debug tools
-            </span>
+              <span
+                class="c12"
+              >
+                Debug tools
+              </span>
+            </a>
             <br />
-            <span
+            <a
               class="c11"
+              href="/status"
             >
-              Status
-            </span>
+              <span
+                class="c12"
+              >
+                Status
+              </span>
+            </a>
             <br />
-            <span
+            <a
               class="c11"
+              href="/coffee"
             >
-              Coffee
-            </span>
+              <span
+                class="c12"
+              >
+                Coffee
+              </span>
+            </a>
           </span>
         </div>
       </div>
@@ -3663,13 +4656,13 @@ exports[`<SiteMap /> should render correctly with blogs and admin user 1`] = `
           >
             <a
               aria-label="Robots.txt (opens in a new tab)"
-              class="c12"
+              class="c11"
               href="/robots.txt"
               rel="noopener noreferrer"
               target="_blank"
             >
               <span
-                class="c11"
+                class="c12"
               >
                 Robots.txt
               </span>
@@ -3692,13 +4685,13 @@ exports[`<SiteMap /> should render correctly with blogs and admin user 1`] = `
             <br />
             <a
               aria-label="SiteMap.xml (opens in a new tab)"
-              class="c12"
+              class="c11"
               href="/sitemap.xml"
               rel="noopener noreferrer"
               target="_blank"
             >
               <span
-                class="c11"
+                class="c12"
               >
                 SiteMap.xml
               </span>
@@ -3719,17 +4712,27 @@ exports[`<SiteMap /> should render correctly with blogs and admin user 1`] = `
               </div>
             </a>
             <br />
-            <span
+            <a
               class="c11"
+              href="/404"
             >
-              404 error page - not found
-            </span>
+              <span
+                class="c12"
+              >
+                404 error page - not found
+              </span>
+            </a>
             <br />
-            <span
+            <a
               class="c11"
+              href="/teapot"
             >
-              418 error page - I'm a teapot
-            </span>
+              <span
+                class="c12"
+              >
+                418 error page - I'm a teapot
+              </span>
+            </a>
           </span>
         </div>
       </div>
@@ -3758,11 +4761,16 @@ exports[`<SiteMap /> should render correctly with blogs and admin user 1`] = `
           <span
             class="c10"
           >
-            <span
+            <a
               class="c11"
+              href="/api-docs"
             >
-              API docs
-            </span>
+              <span
+                class="c12"
+              >
+                API docs
+              </span>
+            </a>
           </span>
         </div>
       </div>
@@ -3791,35 +4799,60 @@ exports[`<SiteMap /> should render correctly with blogs and admin user 1`] = `
           <span
             class="c10"
           >
-            <span
+            <a
               class="c11"
+              href="/account"
             >
-              Account
-            </span>
+              <span
+                class="c12"
+              >
+                Account
+              </span>
+            </a>
             <br />
-            <span
+            <a
               class="c11"
+              href="/sign-up"
             >
-              Sign up
-            </span>
+              <span
+                class="c12"
+              >
+                Sign up
+              </span>
+            </a>
             <br />
-            <span
+            <a
               class="c11"
+              href="/login"
             >
-              Log in
-            </span>
+              <span
+                class="c12"
+              >
+                Log in
+              </span>
+            </a>
             <br />
-            <span
+            <a
               class="c11"
+              href="/email-verification"
             >
-              Email verification
-            </span>
+              <span
+                class="c12"
+              >
+                Email verification
+              </span>
+            </a>
             <br />
-            <span
+            <a
               class="c11"
+              href="/magic-login"
             >
-              Magic login
-            </span>
+              <span
+                class="c12"
+              >
+                Magic login
+              </span>
+            </a>
           </span>
         </div>
       </div>
@@ -3848,41 +4881,71 @@ exports[`<SiteMap /> should render correctly with blogs and admin user 1`] = `
           <span
             class="c10"
           >
-            <span
+            <a
               class="c11"
+              href="/admin"
             >
-              Admin navigation
-            </span>
+              <span
+                class="c12"
+              >
+                Admin navigation
+              </span>
+            </a>
             <br />
-            <span
+            <a
               class="c11"
+              href="/blog"
             >
-              Blogs
-            </span>
+              <span
+                class="c12"
+              >
+                Blogs
+              </span>
+            </a>
             <br />
-            <span
+            <a
               class="c11"
+              href="/admin/analytics"
             >
-              Analytics
-            </span>
+              <span
+                class="c12"
+              >
+                Analytics
+              </span>
+            </a>
             <br />
-            <span
+            <a
               class="c11"
+              href="/admin/emails"
             >
-              Emails
-            </span>
+              <span
+                class="c12"
+              >
+                Emails
+              </span>
+            </a>
             <br />
-            <span
+            <a
               class="c11"
+              href="/admin/notifications"
             >
-              Notifications
-            </span>
+              <span
+                class="c12"
+              >
+                Notifications
+              </span>
+            </a>
             <br />
-            <span
+            <a
               class="c11"
+              href="/admin/users"
             >
-              Users
-            </span>
+              <span
+                class="c12"
+              >
+                Users
+              </span>
+            </a>
           </span>
         </div>
       </div>
@@ -3912,283 +4975,458 @@ exports[`<SiteMap /> should render correctly with blogs and admin user 1`] = `
             class="c10"
           >
             <div>
-              <span
+              <a
                 class="c11"
+                href="/codebase"
               >
-                /codebase ⇒ https://github.com/georgegillams/georgegillams.co.uk
-              </span>
+                <span
+                  class="c12"
+                >
+                  /codebase ⇒ https://github.com/georgegillams/georgegillams.co.uk
+                </span>
+              </a>
               <br />
             </div>
             <div>
-              <span
+              <a
                 class="c11"
+                href="/copyright"
               >
-                /copyright ⇒ https://creativecommons.org/licenses/by-sa/3.0/
-              </span>
+                <span
+                  class="c12"
+                >
+                  /copyright ⇒ https://creativecommons.org/licenses/by-sa/3.0/
+                </span>
+              </a>
               <br />
             </div>
             <div>
-              <span
+              <a
                 class="c11"
+                href="/flickr"
               >
-                /flickr ⇒ https://www.flickr.com/people/georgegillams
-              </span>
+                <span
+                  class="c12"
+                >
+                  /flickr ⇒ https://www.flickr.com/people/georgegillams
+                </span>
+              </a>
               <br />
             </div>
             <div>
-              <span
+              <a
                 class="c11"
+                href="/monzo"
               >
-                /monzo ⇒ https://join.monzo.com/r/vjd3d74
-              </span>
+                <span
+                  class="c12"
+                >
+                  /monzo ⇒ https://join.monzo.com/r/vjd3d74
+                </span>
+              </a>
               <br />
             </div>
             <div>
-              <span
+              <a
                 class="c11"
+                href="/github"
               >
-                /github ⇒ https://github.com/georgegillams
-              </span>
+                <span
+                  class="c12"
+                >
+                  /github ⇒ https://github.com/georgegillams
+                </span>
+              </a>
               <br />
             </div>
             <div>
-              <span
+              <a
                 class="c11"
+                href="/stackoverflow"
               >
-                /stackoverflow ⇒ https://stackoverflow.com/users/14463713/georgegillams
-              </span>
+                <span
+                  class="c12"
+                >
+                  /stackoverflow ⇒ https://stackoverflow.com/users/14463713/georgegillams
+                </span>
+              </a>
               <br />
             </div>
             <div>
-              <span
+              <a
                 class="c11"
+                href="/gurushots"
               >
-                /gurushots ⇒ https://gurushots.com/georgegillams/photos
-              </span>
+                <span
+                  class="c12"
+                >
+                  /gurushots ⇒ https://gurushots.com/georgegillams/photos
+                </span>
+              </a>
               <br />
             </div>
             <div>
-              <span
+              <a
                 class="c11"
+                href="/unsplash"
               >
-                /unsplash ⇒ https://unsplash.com/@georgegillams/
-              </span>
+                <span
+                  class="c12"
+                >
+                  /unsplash ⇒ https://unsplash.com/@georgegillams/
+                </span>
+              </a>
               <br />
             </div>
             <div>
-              <span
+              <a
                 class="c11"
+                href="/strava"
               >
-                /strava ⇒ https://www.strava.com/athletes/7221483
-              </span>
+                <span
+                  class="c12"
+                >
+                  /strava ⇒ https://www.strava.com/athletes/7221483
+                </span>
+              </a>
               <br />
             </div>
             <div>
-              <span
+              <a
                 class="c11"
+                href="/linkedin"
               >
-                /linkedin ⇒ https://www.linkedin.com/in/george-gillams-37537077
-              </span>
+                <span
+                  class="c12"
+                >
+                  /linkedin ⇒ https://www.linkedin.com/in/george-gillams-37537077
+                </span>
+              </a>
               <br />
             </div>
             <div>
-              <span
+              <a
                 class="c11"
+                href="/twitter"
               >
-                /twitter ⇒ https://twitter.com/georgegillams
-              </span>
+                <span
+                  class="c12"
+                >
+                  /twitter ⇒ https://twitter.com/georgegillams
+                </span>
+              </a>
               <br />
             </div>
             <div>
-              <span
+              <a
                 class="c11"
+                href="/spartan"
               >
-                /spartan ⇒ https://uk.spartan.com/en/race/profile/3661120
-              </span>
+                <span
+                  class="c12"
+                >
+                  /spartan ⇒ https://uk.spartan.com/en/race/profile/3661120
+                </span>
+              </a>
               <br />
             </div>
             <div>
-              <span
+              <a
                 class="c11"
+                href="/wp-admin"
               >
-                /wp-admin ⇒ /admin
-              </span>
+                <span
+                  class="c12"
+                >
+                  /wp-admin ⇒ /admin
+                </span>
+              </a>
               <br />
             </div>
             <div>
-              <span
+              <a
                 class="c11"
+                href="/about"
               >
-                /about ⇒ /
-              </span>
+                <span
+                  class="c12"
+                >
+                  /about ⇒ /
+                </span>
+              </a>
               <br />
             </div>
             <div>
-              <span
+              <a
                 class="c11"
+                href="/site-map"
               >
-                /site-map ⇒ /sitemap
-              </span>
+                <span
+                  class="c12"
+                >
+                  /site-map ⇒ /sitemap
+                </span>
+              </a>
               <br />
             </div>
             <div>
-              <span
+              <a
                 class="c11"
+                href="/about/degree"
               >
-                /about/degree ⇒ /work/degree
-              </span>
+                <span
+                  class="c12"
+                >
+                  /about/degree ⇒ /work/degree
+                </span>
+              </a>
               <br />
             </div>
             <div>
-              <span
+              <a
                 class="c11"
+                href="/articles/tough-mudder"
               >
-                /articles/tough-mudder ⇒ /blog/tough-mudder
-              </span>
+                <span
+                  class="c12"
+                >
+                  /articles/tough-mudder ⇒ /blog/tough-mudder
+                </span>
+              </a>
               <br />
             </div>
             <div>
-              <span
+              <a
                 class="c11"
+                href="/articles/net-neutrality"
               >
-                /articles/net-neutrality ⇒ /blog/net-neutrality
-              </span>
+                <span
+                  class="c12"
+                >
+                  /articles/net-neutrality ⇒ /blog/net-neutrality
+                </span>
+              </a>
               <br />
             </div>
             <div>
-              <span
+              <a
                 class="c11"
+                href="/articles/vim"
               >
-                /articles/vim ⇒ /blog/vim
-              </span>
+                <span
+                  class="c12"
+                >
+                  /articles/vim ⇒ /blog/vim
+                </span>
+              </a>
               <br />
             </div>
             <div>
-              <span
+              <a
                 class="c11"
+                href="/articles/list"
               >
-                /articles/list ⇒ /blog
-              </span>
+                <span
+                  class="c12"
+                >
+                  /articles/list ⇒ /blog
+                </span>
+              </a>
               <br />
             </div>
             <div>
-              <span
+              <a
                 class="c11"
+                href="/articles"
               >
-                /articles ⇒ /blog
-              </span>
+                <span
+                  class="c12"
+                >
+                  /articles ⇒ /blog
+                </span>
+              </a>
               <br />
             </div>
             <div>
-              <span
+              <a
                 class="c11"
+                href="/net-neutrality"
               >
-                /net-neutrality ⇒ /blog/net-neutrality
-              </span>
+                <span
+                  class="c12"
+                >
+                  /net-neutrality ⇒ /blog/net-neutrality
+                </span>
+              </a>
               <br />
             </div>
             <div>
-              <span
+              <a
                 class="c11"
+                href="/work/side-projects"
               >
-                /work/side-projects ⇒ /work
-              </span>
+                <span
+                  class="c12"
+                >
+                  /work/side-projects ⇒ /work
+                </span>
+              </a>
               <br />
             </div>
             <div>
-              <span
+              <a
                 class="c11"
+                href="/blog/view"
               >
-                /blog/view ⇒ /blog
-              </span>
+                <span
+                  class="c12"
+                >
+                  /blog/view ⇒ /blog
+                </span>
+              </a>
               <br />
             </div>
             <div>
-              <span
+              <a
                 class="c11"
+                href="/travel"
               >
-                /travel ⇒ /blog
-              </span>
+                <span
+                  class="c12"
+                >
+                  /travel ⇒ /blog
+                </span>
+              </a>
               <br />
             </div>
             <div>
-              <span
+              <a
                 class="c11"
+                href="/travel/list"
               >
-                /travel/list ⇒ /blog
-              </span>
+                <span
+                  class="c12"
+                >
+                  /travel/list ⇒ /blog
+                </span>
+              </a>
               <br />
             </div>
             <div>
-              <span
+              <a
                 class="c11"
+                href="/blog/view?id=tg5x7po9"
               >
-                /blog/view?id=tg5x7po9 ⇒ /blog/tough-mudder
-              </span>
+                <span
+                  class="c12"
+                >
+                  /blog/view?id=tg5x7po9 ⇒ /blog/tough-mudder
+                </span>
+              </a>
               <br />
             </div>
             <div>
-              <span
+              <a
                 class="c11"
+                href="/blog/view?id=lqngy"
               >
-                /blog/view?id=lqngy ⇒ /blog/lightroom-workflow
-              </span>
+                <span
+                  class="c12"
+                >
+                  /blog/view?id=lqngy ⇒ /blog/lightroom-workflow
+                </span>
+              </a>
               <br />
             </div>
             <div>
-              <span
+              <a
                 class="c11"
+                href="/blog/view?id=w85aht"
               >
-                /blog/view?id=w85aht ⇒ /blog/net-neutrality
-              </span>
+                <span
+                  class="c12"
+                >
+                  /blog/view?id=w85aht ⇒ /blog/net-neutrality
+                </span>
+              </a>
               <br />
             </div>
             <div>
-              <span
+              <a
                 class="c11"
+                href="/blog/view?id=azcpjh"
               >
-                /blog/view?id=azcpjh ⇒ /blog/vim
-              </span>
+                <span
+                  class="c12"
+                >
+                  /blog/view?id=azcpjh ⇒ /blog/vim
+                </span>
+              </a>
               <br />
             </div>
             <div>
-              <span
+              <a
                 class="c11"
+                href="/blog/view?id=y77dnh"
               >
-                /blog/view?id=y77dnh ⇒ /blog/uk-bank-security
-              </span>
+                <span
+                  class="c12"
+                >
+                  /blog/view?id=y77dnh ⇒ /blog/uk-bank-security
+                </span>
+              </a>
               <br />
             </div>
             <div>
-              <span
+              <a
                 class="c11"
+                href="/art"
               >
-                /art ⇒ /photography
-              </span>
+                <span
+                  class="c12"
+                >
+                  /art ⇒ /photography
+                </span>
+              </a>
               <br />
             </div>
             <div>
-              <span
+              <a
                 class="c11"
+                href="/photoshop"
               >
-                /photoshop ⇒ /photography
-              </span>
+                <span
+                  class="c12"
+                >
+                  /photoshop ⇒ /photography
+                </span>
+              </a>
               <br />
             </div>
             <div>
-              <span
+              <a
                 class="c11"
+                href="/phot"
               >
-                /phot ⇒ /photography
-              </span>
+                <span
+                  class="c12"
+                >
+                  /phot ⇒ /photography
+                </span>
+              </a>
               <br />
             </div>
             <div>
-              <span
+              <a
                 class="c11"
+                href="/photo"
               >
-                /photo ⇒ /photography
-              </span>
+                <span
+                  class="c12"
+                >
+                  /photo ⇒ /photography
+                </span>
+              </a>
               <br />
             </div>
           </span>
@@ -4217,7 +5455,7 @@ exports[`<SiteMap /> should render correctly with ssrBlogs 1`] = `
   height: 1.25rem;
 }
 
-.c12 {
+.c11 {
   display: inline-block;
   border-radius: 0.25rem;
   font-weight: bold;
@@ -4228,14 +5466,14 @@ exports[`<SiteMap /> should render correctly with ssrBlogs 1`] = `
   fill: darkorchid;
 }
 
-.c12:focus-within,
-.c12:focus {
+.c11:focus-within,
+.c11:focus {
   position: relative;
   outline: none !important;
 }
 
-.c12:focus-within::after,
-.c12:focus::after {
+.c11:focus-within::after,
+.c11:focus::after {
   position: absolute;
   top: -0.35rem;
   right: -0.35rem;
@@ -4248,7 +5486,7 @@ exports[`<SiteMap /> should render correctly with ssrBlogs 1`] = `
   pointer-events: none;
 }
 
-.c12:hover {
+.c11:hover {
   color: #44aeff;
   fill: #44aeff;
 }
@@ -4283,7 +5521,7 @@ exports[`<SiteMap /> should render correctly with ssrBlogs 1`] = `
   font-weight: bold;
 }
 
-.c11 {
+.c12 {
   margin: 0;
 }
 
@@ -4335,30 +5573,22 @@ exports[`<SiteMap /> should render correctly with ssrBlogs 1`] = `
 }
 
 @media (prefers-color-scheme:dark) {
-  .c12:focus-within::after,
-  .c12:focus::after {
+  .c11:focus-within::after,
+  .c11:focus::after {
     border-color: rgba(0,125,250,0.6);
   }
 }
 
 @media (prefers-color-scheme:dark) {
-  .c12 {
+  .c11 {
     color: orchid;
     fill: orchid;
   }
 
-  .c12:hover {
+  .c11:hover {
     color: #44aeff;
     fill: #44aeff;
   }
-}
-
-@media (prefers-color-scheme:dark) {
-
-}
-
-@media (prefers-color-scheme:dark) {
-
 }
 
 @media (min-width:50.25rem) {
@@ -4412,17 +5642,27 @@ exports[`<SiteMap /> should render correctly with ssrBlogs 1`] = `
           <span
             class="c10"
           >
-            <span
+            <a
               class="c11"
+              href="/blog"
             >
-              Blog list
-            </span>
+              <span
+                class="c12"
+              >
+                Blog list
+              </span>
+            </a>
             <br />
-            <span
+            <a
               class="c11"
+              href="/blog/asdfg"
             >
-              Blog 1 🎉
-            </span>
+              <span
+                class="c12"
+              >
+                Blog 1 🎉
+              </span>
+            </a>
             <br />
           </span>
         </div>
@@ -4452,11 +5692,16 @@ exports[`<SiteMap /> should render correctly with ssrBlogs 1`] = `
           <span
             class="c10"
           >
-            <span
+            <a
               class="c11"
+              href="/photography"
             >
-              Photography
-            </span>
+              <span
+                class="c12"
+              >
+                Photography
+              </span>
+            </a>
           </span>
         </div>
       </div>
@@ -4485,11 +5730,16 @@ exports[`<SiteMap /> should render correctly with ssrBlogs 1`] = `
           <span
             class="c10"
           >
-            <span
+            <a
               class="c11"
+              href="/medals"
             >
-              Medals
-            </span>
+              <span
+                class="c12"
+              >
+                Medals
+              </span>
+            </a>
           </span>
         </div>
       </div>
@@ -4518,29 +5768,49 @@ exports[`<SiteMap /> should render correctly with ssrBlogs 1`] = `
           <span
             class="c10"
           >
-            <span
+            <a
               class="c11"
+              href="/work"
             >
-              Overview
-            </span>
+              <span
+                class="c12"
+              >
+                Overview
+              </span>
+            </a>
             <br />
-            <span
+            <a
               class="c11"
+              href="/work/backpack"
             >
-              Backpack
-            </span>
+              <span
+                class="c12"
+              >
+                Backpack
+              </span>
+            </a>
             <br />
-            <span
+            <a
               class="c11"
+              href="/work/degree"
             >
-              Degree
-            </span>
+              <span
+                class="c12"
+              >
+                Degree
+              </span>
+            </a>
             <br />
-            <span
+            <a
               class="c11"
+              href="/work/epicc"
             >
-              EPICC
-            </span>
+              <span
+                class="c12"
+              >
+                EPICC
+              </span>
+            </a>
           </span>
         </div>
       </div>
@@ -4569,11 +5839,16 @@ exports[`<SiteMap /> should render correctly with ssrBlogs 1`] = `
           <span
             class="c10"
           >
-            <span
+            <a
               class="c11"
+              href="/privacy-policy"
             >
-              Privacy Policy
-            </span>
+              <span
+                class="c12"
+              >
+                Privacy Policy
+              </span>
+            </a>
           </span>
         </div>
       </div>
@@ -4602,35 +5877,60 @@ exports[`<SiteMap /> should render correctly with ssrBlogs 1`] = `
           <span
             class="c10"
           >
-            <span
+            <a
               class="c11"
+              href="/contact"
             >
-              Contact
-            </span>
+              <span
+                class="c12"
+              >
+                Contact
+              </span>
+            </a>
             <br />
-            <span
+            <a
               class="c11"
+              href="/support"
             >
-              Support
-            </span>
+              <span
+                class="c12"
+              >
+                Support
+              </span>
+            </a>
             <br />
-            <span
+            <a
               class="c11"
+              href="/debug"
             >
-              Debug tools
-            </span>
+              <span
+                class="c12"
+              >
+                Debug tools
+              </span>
+            </a>
             <br />
-            <span
+            <a
               class="c11"
+              href="/status"
             >
-              Status
-            </span>
+              <span
+                class="c12"
+              >
+                Status
+              </span>
+            </a>
             <br />
-            <span
+            <a
               class="c11"
+              href="/coffee"
             >
-              Coffee
-            </span>
+              <span
+                class="c12"
+              >
+                Coffee
+              </span>
+            </a>
           </span>
         </div>
       </div>
@@ -4661,13 +5961,13 @@ exports[`<SiteMap /> should render correctly with ssrBlogs 1`] = `
           >
             <a
               aria-label="Robots.txt (opens in a new tab)"
-              class="c12"
+              class="c11"
               href="/robots.txt"
               rel="noopener noreferrer"
               target="_blank"
             >
               <span
-                class="c11"
+                class="c12"
               >
                 Robots.txt
               </span>
@@ -4690,13 +5990,13 @@ exports[`<SiteMap /> should render correctly with ssrBlogs 1`] = `
             <br />
             <a
               aria-label="SiteMap.xml (opens in a new tab)"
-              class="c12"
+              class="c11"
               href="/sitemap.xml"
               rel="noopener noreferrer"
               target="_blank"
             >
               <span
-                class="c11"
+                class="c12"
               >
                 SiteMap.xml
               </span>
@@ -4717,17 +6017,27 @@ exports[`<SiteMap /> should render correctly with ssrBlogs 1`] = `
               </div>
             </a>
             <br />
-            <span
+            <a
               class="c11"
+              href="/404"
             >
-              404 error page - not found
-            </span>
+              <span
+                class="c12"
+              >
+                404 error page - not found
+              </span>
+            </a>
             <br />
-            <span
+            <a
               class="c11"
+              href="/teapot"
             >
-              418 error page - I'm a teapot
-            </span>
+              <span
+                class="c12"
+              >
+                418 error page - I'm a teapot
+              </span>
+            </a>
           </span>
         </div>
       </div>
@@ -4756,11 +6066,16 @@ exports[`<SiteMap /> should render correctly with ssrBlogs 1`] = `
           <span
             class="c10"
           >
-            <span
+            <a
               class="c11"
+              href="/api-docs"
             >
-              API docs
-            </span>
+              <span
+                class="c12"
+              >
+                API docs
+              </span>
+            </a>
           </span>
         </div>
       </div>
@@ -4789,35 +6104,60 @@ exports[`<SiteMap /> should render correctly with ssrBlogs 1`] = `
           <span
             class="c10"
           >
-            <span
+            <a
               class="c11"
+              href="/account"
             >
-              Account
-            </span>
+              <span
+                class="c12"
+              >
+                Account
+              </span>
+            </a>
             <br />
-            <span
+            <a
               class="c11"
+              href="/sign-up"
             >
-              Sign up
-            </span>
+              <span
+                class="c12"
+              >
+                Sign up
+              </span>
+            </a>
             <br />
-            <span
+            <a
               class="c11"
+              href="/login"
             >
-              Log in
-            </span>
+              <span
+                class="c12"
+              >
+                Log in
+              </span>
+            </a>
             <br />
-            <span
+            <a
               class="c11"
+              href="/email-verification"
             >
-              Email verification
-            </span>
+              <span
+                class="c12"
+              >
+                Email verification
+              </span>
+            </a>
             <br />
-            <span
+            <a
               class="c11"
+              href="/magic-login"
             >
-              Magic login
-            </span>
+              <span
+                class="c12"
+              >
+                Magic login
+              </span>
+            </a>
           </span>
         </div>
       </div>
@@ -4846,41 +6186,71 @@ exports[`<SiteMap /> should render correctly with ssrBlogs 1`] = `
           <span
             class="c10"
           >
-            <span
+            <a
               class="c11"
+              href="/admin"
             >
-              Admin navigation
-            </span>
+              <span
+                class="c12"
+              >
+                Admin navigation
+              </span>
+            </a>
             <br />
-            <span
+            <a
               class="c11"
+              href="/blog"
             >
-              Blogs
-            </span>
+              <span
+                class="c12"
+              >
+                Blogs
+              </span>
+            </a>
             <br />
-            <span
+            <a
               class="c11"
+              href="/admin/analytics"
             >
-              Analytics
-            </span>
+              <span
+                class="c12"
+              >
+                Analytics
+              </span>
+            </a>
             <br />
-            <span
+            <a
               class="c11"
+              href="/admin/emails"
             >
-              Emails
-            </span>
+              <span
+                class="c12"
+              >
+                Emails
+              </span>
+            </a>
             <br />
-            <span
+            <a
               class="c11"
+              href="/admin/notifications"
             >
-              Notifications
-            </span>
+              <span
+                class="c12"
+              >
+                Notifications
+              </span>
+            </a>
             <br />
-            <span
+            <a
               class="c11"
+              href="/admin/users"
             >
-              Users
-            </span>
+              <span
+                class="c12"
+              >
+                Users
+              </span>
+            </a>
           </span>
         </div>
       </div>
@@ -4910,283 +6280,458 @@ exports[`<SiteMap /> should render correctly with ssrBlogs 1`] = `
             class="c10"
           >
             <div>
-              <span
+              <a
                 class="c11"
+                href="/codebase"
               >
-                /codebase ⇒ https://github.com/georgegillams/georgegillams.co.uk
-              </span>
+                <span
+                  class="c12"
+                >
+                  /codebase ⇒ https://github.com/georgegillams/georgegillams.co.uk
+                </span>
+              </a>
               <br />
             </div>
             <div>
-              <span
+              <a
                 class="c11"
+                href="/copyright"
               >
-                /copyright ⇒ https://creativecommons.org/licenses/by-sa/3.0/
-              </span>
+                <span
+                  class="c12"
+                >
+                  /copyright ⇒ https://creativecommons.org/licenses/by-sa/3.0/
+                </span>
+              </a>
               <br />
             </div>
             <div>
-              <span
+              <a
                 class="c11"
+                href="/flickr"
               >
-                /flickr ⇒ https://www.flickr.com/people/georgegillams
-              </span>
+                <span
+                  class="c12"
+                >
+                  /flickr ⇒ https://www.flickr.com/people/georgegillams
+                </span>
+              </a>
               <br />
             </div>
             <div>
-              <span
+              <a
                 class="c11"
+                href="/monzo"
               >
-                /monzo ⇒ https://join.monzo.com/r/vjd3d74
-              </span>
+                <span
+                  class="c12"
+                >
+                  /monzo ⇒ https://join.monzo.com/r/vjd3d74
+                </span>
+              </a>
               <br />
             </div>
             <div>
-              <span
+              <a
                 class="c11"
+                href="/github"
               >
-                /github ⇒ https://github.com/georgegillams
-              </span>
+                <span
+                  class="c12"
+                >
+                  /github ⇒ https://github.com/georgegillams
+                </span>
+              </a>
               <br />
             </div>
             <div>
-              <span
+              <a
                 class="c11"
+                href="/stackoverflow"
               >
-                /stackoverflow ⇒ https://stackoverflow.com/users/14463713/georgegillams
-              </span>
+                <span
+                  class="c12"
+                >
+                  /stackoverflow ⇒ https://stackoverflow.com/users/14463713/georgegillams
+                </span>
+              </a>
               <br />
             </div>
             <div>
-              <span
+              <a
                 class="c11"
+                href="/gurushots"
               >
-                /gurushots ⇒ https://gurushots.com/georgegillams/photos
-              </span>
+                <span
+                  class="c12"
+                >
+                  /gurushots ⇒ https://gurushots.com/georgegillams/photos
+                </span>
+              </a>
               <br />
             </div>
             <div>
-              <span
+              <a
                 class="c11"
+                href="/unsplash"
               >
-                /unsplash ⇒ https://unsplash.com/@georgegillams/
-              </span>
+                <span
+                  class="c12"
+                >
+                  /unsplash ⇒ https://unsplash.com/@georgegillams/
+                </span>
+              </a>
               <br />
             </div>
             <div>
-              <span
+              <a
                 class="c11"
+                href="/strava"
               >
-                /strava ⇒ https://www.strava.com/athletes/7221483
-              </span>
+                <span
+                  class="c12"
+                >
+                  /strava ⇒ https://www.strava.com/athletes/7221483
+                </span>
+              </a>
               <br />
             </div>
             <div>
-              <span
+              <a
                 class="c11"
+                href="/linkedin"
               >
-                /linkedin ⇒ https://www.linkedin.com/in/george-gillams-37537077
-              </span>
+                <span
+                  class="c12"
+                >
+                  /linkedin ⇒ https://www.linkedin.com/in/george-gillams-37537077
+                </span>
+              </a>
               <br />
             </div>
             <div>
-              <span
+              <a
                 class="c11"
+                href="/twitter"
               >
-                /twitter ⇒ https://twitter.com/georgegillams
-              </span>
+                <span
+                  class="c12"
+                >
+                  /twitter ⇒ https://twitter.com/georgegillams
+                </span>
+              </a>
               <br />
             </div>
             <div>
-              <span
+              <a
                 class="c11"
+                href="/spartan"
               >
-                /spartan ⇒ https://uk.spartan.com/en/race/profile/3661120
-              </span>
+                <span
+                  class="c12"
+                >
+                  /spartan ⇒ https://uk.spartan.com/en/race/profile/3661120
+                </span>
+              </a>
               <br />
             </div>
             <div>
-              <span
+              <a
                 class="c11"
+                href="/wp-admin"
               >
-                /wp-admin ⇒ /admin
-              </span>
+                <span
+                  class="c12"
+                >
+                  /wp-admin ⇒ /admin
+                </span>
+              </a>
               <br />
             </div>
             <div>
-              <span
+              <a
                 class="c11"
+                href="/about"
               >
-                /about ⇒ /
-              </span>
+                <span
+                  class="c12"
+                >
+                  /about ⇒ /
+                </span>
+              </a>
               <br />
             </div>
             <div>
-              <span
+              <a
                 class="c11"
+                href="/site-map"
               >
-                /site-map ⇒ /sitemap
-              </span>
+                <span
+                  class="c12"
+                >
+                  /site-map ⇒ /sitemap
+                </span>
+              </a>
               <br />
             </div>
             <div>
-              <span
+              <a
                 class="c11"
+                href="/about/degree"
               >
-                /about/degree ⇒ /work/degree
-              </span>
+                <span
+                  class="c12"
+                >
+                  /about/degree ⇒ /work/degree
+                </span>
+              </a>
               <br />
             </div>
             <div>
-              <span
+              <a
                 class="c11"
+                href="/articles/tough-mudder"
               >
-                /articles/tough-mudder ⇒ /blog/tough-mudder
-              </span>
+                <span
+                  class="c12"
+                >
+                  /articles/tough-mudder ⇒ /blog/tough-mudder
+                </span>
+              </a>
               <br />
             </div>
             <div>
-              <span
+              <a
                 class="c11"
+                href="/articles/net-neutrality"
               >
-                /articles/net-neutrality ⇒ /blog/net-neutrality
-              </span>
+                <span
+                  class="c12"
+                >
+                  /articles/net-neutrality ⇒ /blog/net-neutrality
+                </span>
+              </a>
               <br />
             </div>
             <div>
-              <span
+              <a
                 class="c11"
+                href="/articles/vim"
               >
-                /articles/vim ⇒ /blog/vim
-              </span>
+                <span
+                  class="c12"
+                >
+                  /articles/vim ⇒ /blog/vim
+                </span>
+              </a>
               <br />
             </div>
             <div>
-              <span
+              <a
                 class="c11"
+                href="/articles/list"
               >
-                /articles/list ⇒ /blog
-              </span>
+                <span
+                  class="c12"
+                >
+                  /articles/list ⇒ /blog
+                </span>
+              </a>
               <br />
             </div>
             <div>
-              <span
+              <a
                 class="c11"
+                href="/articles"
               >
-                /articles ⇒ /blog
-              </span>
+                <span
+                  class="c12"
+                >
+                  /articles ⇒ /blog
+                </span>
+              </a>
               <br />
             </div>
             <div>
-              <span
+              <a
                 class="c11"
+                href="/net-neutrality"
               >
-                /net-neutrality ⇒ /blog/net-neutrality
-              </span>
+                <span
+                  class="c12"
+                >
+                  /net-neutrality ⇒ /blog/net-neutrality
+                </span>
+              </a>
               <br />
             </div>
             <div>
-              <span
+              <a
                 class="c11"
+                href="/work/side-projects"
               >
-                /work/side-projects ⇒ /work
-              </span>
+                <span
+                  class="c12"
+                >
+                  /work/side-projects ⇒ /work
+                </span>
+              </a>
               <br />
             </div>
             <div>
-              <span
+              <a
                 class="c11"
+                href="/blog/view"
               >
-                /blog/view ⇒ /blog
-              </span>
+                <span
+                  class="c12"
+                >
+                  /blog/view ⇒ /blog
+                </span>
+              </a>
               <br />
             </div>
             <div>
-              <span
+              <a
                 class="c11"
+                href="/travel"
               >
-                /travel ⇒ /blog
-              </span>
+                <span
+                  class="c12"
+                >
+                  /travel ⇒ /blog
+                </span>
+              </a>
               <br />
             </div>
             <div>
-              <span
+              <a
                 class="c11"
+                href="/travel/list"
               >
-                /travel/list ⇒ /blog
-              </span>
+                <span
+                  class="c12"
+                >
+                  /travel/list ⇒ /blog
+                </span>
+              </a>
               <br />
             </div>
             <div>
-              <span
+              <a
                 class="c11"
+                href="/blog/view?id=tg5x7po9"
               >
-                /blog/view?id=tg5x7po9 ⇒ /blog/tough-mudder
-              </span>
+                <span
+                  class="c12"
+                >
+                  /blog/view?id=tg5x7po9 ⇒ /blog/tough-mudder
+                </span>
+              </a>
               <br />
             </div>
             <div>
-              <span
+              <a
                 class="c11"
+                href="/blog/view?id=lqngy"
               >
-                /blog/view?id=lqngy ⇒ /blog/lightroom-workflow
-              </span>
+                <span
+                  class="c12"
+                >
+                  /blog/view?id=lqngy ⇒ /blog/lightroom-workflow
+                </span>
+              </a>
               <br />
             </div>
             <div>
-              <span
+              <a
                 class="c11"
+                href="/blog/view?id=w85aht"
               >
-                /blog/view?id=w85aht ⇒ /blog/net-neutrality
-              </span>
+                <span
+                  class="c12"
+                >
+                  /blog/view?id=w85aht ⇒ /blog/net-neutrality
+                </span>
+              </a>
               <br />
             </div>
             <div>
-              <span
+              <a
                 class="c11"
+                href="/blog/view?id=azcpjh"
               >
-                /blog/view?id=azcpjh ⇒ /blog/vim
-              </span>
+                <span
+                  class="c12"
+                >
+                  /blog/view?id=azcpjh ⇒ /blog/vim
+                </span>
+              </a>
               <br />
             </div>
             <div>
-              <span
+              <a
                 class="c11"
+                href="/blog/view?id=y77dnh"
               >
-                /blog/view?id=y77dnh ⇒ /blog/uk-bank-security
-              </span>
+                <span
+                  class="c12"
+                >
+                  /blog/view?id=y77dnh ⇒ /blog/uk-bank-security
+                </span>
+              </a>
               <br />
             </div>
             <div>
-              <span
+              <a
                 class="c11"
+                href="/art"
               >
-                /art ⇒ /photography
-              </span>
+                <span
+                  class="c12"
+                >
+                  /art ⇒ /photography
+                </span>
+              </a>
               <br />
             </div>
             <div>
-              <span
+              <a
                 class="c11"
+                href="/photoshop"
               >
-                /photoshop ⇒ /photography
-              </span>
+                <span
+                  class="c12"
+                >
+                  /photoshop ⇒ /photography
+                </span>
+              </a>
               <br />
             </div>
             <div>
-              <span
+              <a
                 class="c11"
+                href="/phot"
               >
-                /phot ⇒ /photography
-              </span>
+                <span
+                  class="c12"
+                >
+                  /phot ⇒ /photography
+                </span>
+              </a>
               <br />
             </div>
             <div>
-              <span
+              <a
                 class="c11"
+                href="/photo"
               >
-                /photo ⇒ /photography
-              </span>
+                <span
+                  class="c12"
+                >
+                  /photo ⇒ /photography
+                </span>
+              </a>
               <br />
             </div>
           </span>

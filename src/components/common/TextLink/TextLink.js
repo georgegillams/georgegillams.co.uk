@@ -6,11 +6,11 @@ import Link from 'next/link';
 const anchorComponent = applyStylesToAnchor(Link);
 const TextLink = props => {
   const { hrefExternal, ...rest } = props;
-  if (hrefExternal) {
+  if (hrefExternal || !process.env.ENABLE_SOFT_LINKS) {
     return <GGTextLink {...props} />;
   }
 
-  return <GGTextLink anchorComponent={anchorComponent} {...rest} />;
+  return <GGTextLink anchorComponent={process.env.ENABLE_SOFT_LINKS ? anchorComponent : null} {...rest} />;
 };
 
 TextLink.propTypes = {

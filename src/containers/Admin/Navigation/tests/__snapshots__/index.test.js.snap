@@ -121,7 +121,7 @@ exports[`<AdminNavigation /> should render correctly with admin user 1`] = `
   font-weight: bold;
 }
 
-.c11 {
+.c14 {
   margin: 0;
   font-size: 2.2rem;
   font-weight: bold;
@@ -138,13 +138,41 @@ exports[`<AdminNavigation /> should render correctly with admin user 1`] = `
 
 .c5 {
   position: relative;
+  display: inline-block;
+  z-index: 1;
+  width: 100%;
+  padding: 0;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+  border: none;
+  border-radius: 0.35rem;
+  background: none;
+  text-align: left;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  box-shadow: 0.2rem 0.2rem 0.5rem 0 rgba(37,32,31,0.3);
+  cursor: pointer;
+  box-sizing: border-box;
+}
+
+.c5:disabled {
+  cursor: not-allowed;
+}
+
+.c5:not(:disabled):focus,.c5:not(:disabled):focus-within,
+.c5:not(:disabled):active,.c5:not(:disabled):hover {
+  box-shadow: 0.4rem 0.4rem 1rem 0 rgba(37,32,31,0.3);
+}
+
+.c8 {
+  position: relative;
   width: 100%;
   height: 100%;
   border-radius: 0.35rem;
   overflow: hidden;
 }
 
-.c6 {
+.c9 {
   position: absolute;
   top: 0;
   left: 0;
@@ -158,11 +186,23 @@ exports[`<AdminNavigation /> should render correctly with admin user 1`] = `
   background-size: cover;
 }
 
-.c7 {
+.c10 {
   padding: 2rem;
 }
 
-.c8 {
+.c6 {
+  color: #1e1e1e;
+  width: 25rem;
+  max-width: 25rem;
+}
+
+.c6:focus,
+.c6:active,
+.c6:hover {
+  color: #44aeff;
+}
+
+.c11 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -179,7 +219,7 @@ exports[`<AdminNavigation /> should render correctly with admin user 1`] = `
   box-sizing: border-box;
 }
 
-.c9 {
+.c12 {
   position: relative;
   z-index: 3;
   border-radius: 0.35rem;
@@ -194,7 +234,7 @@ exports[`<AdminNavigation /> should render correctly with admin user 1`] = `
   display: none;
 }
 
-.c10 {
+.c13 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -230,6 +270,10 @@ exports[`<AdminNavigation /> should render correctly with admin user 1`] = `
   justify-content: space-around;
 }
 
+.c7 {
+  margin: 0 0.5rem 1rem 0.5rem;
+}
+
 .c0 {
   display: block;
   width: 100%;
@@ -242,21 +286,40 @@ exports[`<AdminNavigation /> should render correctly with admin user 1`] = `
 }
 
 @media (prefers-color-scheme:dark) {
-  .c6 {
+  .c5 {
+    box-shadow: 0.44rem 0.44rem 1rem 0 transparent;
+  }
+}
+
+@media (prefers-color-scheme:dark) {
+  .c5:not(:disabled):focus,.c5:not(:disabled):focus-within,
+  .c5:not(:disabled):active,.c5:not(:disabled):hover {
+    box-shadow: 0.2rem 0.2rem 0.5rem 0 transparent;
+  }
+}
+
+@media (prefers-color-scheme:dark) {
+  .c9 {
     background-color: #1e1e1e;
   }
 }
 
 @media (prefers-color-scheme:dark) {
-
+  .c6 {
+    color: white;
+  }
 }
 
 @media (prefers-color-scheme:dark) {
-
+  .c6:focus,
+  .c6:active,
+  .c6:hover {
+    color: #44aeff;
+  }
 }
 
 @media (min-width:32.25rem) {
-  .c8 {
+  .c11 {
     -webkit-flex-direction: row;
     -ms-flex-direction: row;
     flex-direction: row;
@@ -267,18 +330,10 @@ exports[`<AdminNavigation /> should render correctly with admin user 1`] = `
 }
 
 @media (min-width:32.25rem) {
-  .c10 {
+  .c13 {
     min-width: 10rem;
     text-align: unset;
   }
-}
-
-@media (prefers-color-scheme:dark) {
-
-}
-
-@media (prefers-color-scheme:dark) {
-
 }
 
 @media (min-width:50.25rem) {
@@ -305,146 +360,176 @@ exports[`<AdminNavigation /> should render correctly with admin user 1`] = `
     <div
       class="c4"
     >
-      <div
-        class="c5"
+      <a
+        aria-label="Debug"
+        class="c5 c6 c7"
+        href="/debug"
       >
         <div
-          class="c6"
-        />
-        <div
-          class="c7"
+          class="c8"
         >
           <div
-            aria-hidden="true"
-            class="c8"
+            class="c9"
+          />
+          <div
+            class="c10"
           >
             <div
-              class="c9 date container"
-            />
-            <div
-              class="c10"
+              aria-hidden="true"
+              class="c11"
             >
-              <h1
-                class="c11"
+              <div
+                class="c12 date container"
+              />
+              <div
+                class="c13"
               >
-                Debug
-              </h1>
+                <h1
+                  class="c14"
+                >
+                  Debug
+                </h1>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-      <div
-        class="c5"
+      </a>
+      <a
+        aria-label="Analytics"
+        class="c5 c6 c7"
+        href="/admin/analytics"
       >
         <div
-          class="c6"
-        />
-        <div
-          class="c7"
+          class="c8"
         >
           <div
-            aria-hidden="true"
-            class="c8"
+            class="c9"
+          />
+          <div
+            class="c10"
           >
             <div
-              class="c9 date container"
-            />
-            <div
-              class="c10"
+              aria-hidden="true"
+              class="c11"
             >
-              <h1
-                class="c11"
+              <div
+                class="c12 date container"
+              />
+              <div
+                class="c13"
               >
-                Analytics
-              </h1>
+                <h1
+                  class="c14"
+                >
+                  Analytics
+                </h1>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-      <div
-        class="c5"
+      </a>
+      <a
+        aria-label="Emails"
+        class="c5 c6 c7"
+        href="/admin/emails"
       >
         <div
-          class="c6"
-        />
-        <div
-          class="c7"
+          class="c8"
         >
           <div
-            aria-hidden="true"
-            class="c8"
+            class="c9"
+          />
+          <div
+            class="c10"
           >
             <div
-              class="c9 date container"
-            />
-            <div
-              class="c10"
+              aria-hidden="true"
+              class="c11"
             >
-              <h1
-                class="c11"
+              <div
+                class="c12 date container"
+              />
+              <div
+                class="c13"
               >
-                Emails
-              </h1>
+                <h1
+                  class="c14"
+                >
+                  Emails
+                </h1>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-      <div
-        class="c5"
+      </a>
+      <a
+        aria-label="Notifications"
+        class="c5 c6 c7"
+        href="/admin/notifications"
       >
         <div
-          class="c6"
-        />
-        <div
-          class="c7"
+          class="c8"
         >
           <div
-            aria-hidden="true"
-            class="c8"
+            class="c9"
+          />
+          <div
+            class="c10"
           >
             <div
-              class="c9 date container"
-            />
-            <div
-              class="c10"
+              aria-hidden="true"
+              class="c11"
             >
-              <h1
-                class="c11"
+              <div
+                class="c12 date container"
+              />
+              <div
+                class="c13"
               >
-                Notifications
-              </h1>
+                <h1
+                  class="c14"
+                >
+                  Notifications
+                </h1>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-      <div
-        class="c5"
+      </a>
+      <a
+        aria-label="Users"
+        class="c5 c6 c7"
+        href="/admin/users"
       >
         <div
-          class="c6"
-        />
-        <div
-          class="c7"
+          class="c8"
         >
           <div
-            aria-hidden="true"
-            class="c8"
+            class="c9"
+          />
+          <div
+            class="c10"
           >
             <div
-              class="c9 date container"
-            />
-            <div
-              class="c10"
+              aria-hidden="true"
+              class="c11"
             >
-              <h1
-                class="c11"
+              <div
+                class="c12 date container"
+              />
+              <div
+                class="c13"
               >
-                Users
-              </h1>
+                <h1
+                  class="c14"
+                >
+                  Users
+                </h1>
+              </div>
             </div>
           </div>
         </div>
-      </div>
+      </a>
     </div>
   </div>
 </div>
@@ -712,13 +797,49 @@ exports[`<AdminNavigation /> should render correctly with initial state 1`] = `
 `;
 
 exports[`<AdminNavigation /> should render correctly with user 1`] = `
+.c5 {
+  display: inline-block;
+  border-radius: 0.25rem;
+  font-weight: bold;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  position: relative;
+  color: darkorchid;
+  fill: darkorchid;
+}
+
+.c5:focus-within,
+.c5:focus {
+  position: relative;
+  outline: none !important;
+}
+
+.c5:focus-within::after,
+.c5:focus::after {
+  position: absolute;
+  top: -0.35rem;
+  right: -0.35rem;
+  bottom: -0.35rem;
+  left: -0.35rem;
+  content: '';
+  display: block;
+  border: solid rgba(0,125,250,0.6) 0.2rem;
+  border-radius: 0.5rem;
+  pointer-events: none;
+}
+
+.c5:hover {
+  color: #44aeff;
+  fill: #44aeff;
+}
+
 .c2 {
   margin: 0;
   font-size: 2.2rem;
   font-weight: bold;
 }
 
-.c5 {
+.c6 {
   margin: 0;
 }
 
@@ -757,11 +878,22 @@ exports[`<AdminNavigation /> should render correctly with user 1`] = `
 }
 
 @media (prefers-color-scheme:dark) {
-
+  .c5:focus-within::after,
+  .c5:focus::after {
+    border-color: rgba(0,125,250,0.6);
+  }
 }
 
 @media (prefers-color-scheme:dark) {
+  .c5 {
+    color: orchid;
+    fill: orchid;
+  }
 
+  .c5:hover {
+    color: #44aeff;
+    fill: #44aeff;
+  }
 }
 
 @media (prefers-color-scheme:dark) {
@@ -796,11 +928,16 @@ exports[`<AdminNavigation /> should render correctly with user 1`] = `
       >
         You need to be logged in with an admin account to view this content.
         <br />
-        <span
+        <a
           class="c5"
+          href="/login"
         >
-          Got a different admin account? Log in here.
-        </span>
+          <span
+            class="c6"
+          >
+            Got a different admin account? Log in here.
+          </span>
+        </a>
       </span>
     </div>
   </div>

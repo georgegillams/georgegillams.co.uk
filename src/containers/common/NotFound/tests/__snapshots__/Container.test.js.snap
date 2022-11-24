@@ -37,13 +37,49 @@ exports[`<NotFound /> should render correctly 1`] = `
   margin-top: 0.86rem;
 }
 
+.c7 {
+  display: inline-block;
+  border-radius: 0.25rem;
+  font-weight: bold;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  position: relative;
+  color: darkorchid;
+  fill: darkorchid;
+}
+
+.c7:focus-within,
+.c7:focus {
+  position: relative;
+  outline: none !important;
+}
+
+.c7:focus-within::after,
+.c7:focus::after {
+  position: absolute;
+  top: -0.35rem;
+  right: -0.35rem;
+  bottom: -0.35rem;
+  left: -0.35rem;
+  content: '';
+  display: block;
+  border: solid rgba(0,125,250,0.6) 0.2rem;
+  border-radius: 0.5rem;
+  pointer-events: none;
+}
+
+.c7:hover {
+  color: #44aeff;
+  fill: #44aeff;
+}
+
 .c2 {
   margin: 0;
   font-size: 2.4rem;
   font-weight: bold;
 }
 
-.c7 {
+.c8 {
   margin: 0;
 }
 
@@ -75,11 +111,22 @@ exports[`<NotFound /> should render correctly 1`] = `
 }
 
 @media (prefers-color-scheme:dark) {
-
+  .c7:focus-within::after,
+  .c7:focus::after {
+    border-color: rgba(0,125,250,0.6);
+  }
 }
 
 @media (prefers-color-scheme:dark) {
+  .c7 {
+    color: orchid;
+    fill: orchid;
+  }
 
+  .c7:hover {
+    color: #44aeff;
+    fill: #44aeff;
+  }
 }
 
 <div>
@@ -113,11 +160,16 @@ exports[`<NotFound /> should render correctly 1`] = `
           The page you're looking for doesn't exist, or you don't have permission to view it.
           <br />
           Maybe the 
-          <span
+          <a
             class="c7"
+            href="/sitemap"
           >
-            site map
-          </span>
+            <span
+              class="c8"
+            >
+              site map
+            </span>
+          </a>
            can help
         </span>
       </div>
