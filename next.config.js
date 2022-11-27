@@ -23,7 +23,7 @@ const nextConfig = {
   },
 };
 
-const withTM = nextTranspileModules(['@george-gillams/components']);
+const withTM = nextTranspileModules(['@george-gillams/components', 'chalk']);
 
 const withBundleAnalyzer = bundleAnalyzer({
   enabled: process.env.ANALYZE === 'true',
