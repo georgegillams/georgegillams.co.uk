@@ -1,15 +1,15 @@
 {
   "compilerOptions": {
-    "baseUrl": ".",
+    "baseUrl": "./src",
     "paths": {
       "helpers/*": [
-        "./shared/helpers/*"
+        "../shared/helpers/*"
       ],
       "server-utils/*": [
-        "./server/utils/*"
+        "../server/utils/*"
       ],
       "client-utils/*": [
-        "src/utils/*"
+        "./utils/*"
       ]
     }
   },
