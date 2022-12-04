@@ -1,6 +1,7 @@
 import { primaryColor, primaryColorDarkMode } from '@george-gillams/components/constants/colors';
 import { breakpointMd, breakpointSm, spacingBase, spacingLg } from '@george-gillams/components/constants/layout';
 import { focusStyle } from '@george-gillams/components/constants/styles';
+import Link from 'next/link';
 import styled, { css, keyframes } from 'styled-components';
 
 export const OuterContainer = styled.div`
@@ -45,7 +46,7 @@ const bounceHoverEffect = keyframes`
     }
 `;
 
-export const StyledLink = styled.a`
+const linkStyles = css`
   border-radius: 0.25rem;
 
   ${focusStyle(true)}
@@ -56,6 +57,14 @@ export const StyledLink = styled.a`
     animation-duration: 0.4s;
     animation-name: ${bounceHoverEffect};
   }
+`;
+
+export const StyledLink = styled.a`
+  ${linkStyles}
+`;
+
+export const StyledNextLink = styled(Link)`
+  ${linkStyles}
 `;
 
 export const LargeText = styled.span`

@@ -1,21 +1,20 @@
-import React from 'react';
+import React, { useMemo } from 'react';
 import PropTypes from 'prop-types';
-import Link from 'next/link';
-import { LargeText, OuterContainer, StyledLink } from './logo.styles';
+import { LargeText, OuterContainer, StyledLink, StyledNextLink } from './logo.styles';
 import withStyledTheme from '@george-gillams/components/styled-theming/with-styled-theme';
 
 const Logo = props => {
   const { padding, animated, alwaysCentred, pride, theme, ...rest } = props;
 
+  const LinkComponent = useMemo(() => (process.env.ENABLE_SOFT_LINKS ? StyledNextLink : StyledLink), []);
+
   return (
     <OuterContainer alwaysCentred={alwaysCentred} padding={padding} {...rest}>
-      <Link href="/" legacyBehavior>
-        <StyledLink href="/">
-          <LargeText theme={theme} animated={animated} pride={pride} padding={padding} aria-label="Home page">
-            G
-          </LargeText>
-        </StyledLink>
-      </Link>
+      <LinkComponent href="/">
+        <LargeText theme={theme} animated={animated} pride={pride} padding={padding} aria-label="Home page">
+          G
+        </LargeText>
+      </LinkComponent>
     </OuterContainer>
   );
 };

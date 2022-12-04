@@ -451,7 +451,7 @@ exports[`<AdminEmails /> should render correctly with emails 1`] = `
   font-weight: bold;
 }
 
-.c19 {
+.c20 {
   margin: 0;
   font-size: 1.5rem;
   font-weight: bold;
@@ -475,14 +475,14 @@ exports[`<AdminEmails /> should render correctly with emails 1`] = `
   animation: bbwGtI 0.4s ease-in-out;
 }
 
-.c18 {
+.c19 {
   width: 100%;
   color: #1e1e1e;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
-.c20 {
+.c21 {
   margin: 0;
 }
 
@@ -578,7 +578,7 @@ exports[`<AdminEmails /> should render correctly with emails 1`] = `
   overflow: scroll;
 }
 
-.c15 {
+.c16 {
   position: relative;
   width: 100%;
   height: 100%;
@@ -586,7 +586,7 @@ exports[`<AdminEmails /> should render correctly with emails 1`] = `
   overflow: hidden;
 }
 
-.c16 {
+.c17 {
   position: absolute;
   top: 0;
   left: 0;
@@ -600,7 +600,7 @@ exports[`<AdminEmails /> should render correctly with emails 1`] = `
   background-size: cover;
 }
 
-.c17 {
+.c18 {
   padding: 1.2rem 0.8rem 0.8rem 1.2rem;
 }
 
@@ -635,6 +635,90 @@ exports[`<AdminEmails /> should render correctly with emails 1`] = `
   margin-top: 1rem;
 }
 
+.c15 {
+  position: relative;
+  display: inline-block;
+  z-index: 1;
+  width: 100%;
+  padding: 0;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+  border: none;
+  border-radius: 0.35rem;
+  background: none;
+  text-align: left;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  box-shadow: 0.2rem 0.2rem 0.5rem 0 rgba(37,32,31,0.3);
+  cursor: pointer;
+  box-sizing: border-box;
+}
+
+.c15:disabled {
+  cursor: not-allowed;
+}
+
+.c15:not(:disabled):focus,.c15:not(:disabled):focus-within,
+.c15:not(:disabled):active,.c15:not(:disabled):hover {
+  box-shadow: 0.4rem 0.4rem 1rem 0 rgba(37,32,31,0.3);
+}
+
+.c22 {
+  position: relative;
+  display: inline-block;
+  z-index: 1;
+  width: 100%;
+  padding: 0;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+  border: none;
+  border-radius: 0.35rem;
+  background: none;
+  text-align: left;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  box-shadow: 0.2rem 0.2rem 0.5rem 0 rgba(37,32,31,0.3);
+  cursor: pointer;
+  box-sizing: border-box;
+}
+
+.c22:disabled {
+  cursor: not-allowed;
+}
+
+.c22:not(:disabled):focus,.c22:not(:disabled):focus-within,
+.c22:not(:disabled):active,.c22:not(:disabled):hover {
+  box-shadow: 0.4rem 0.4rem 1rem 0 rgba(37,32,31,0.3);
+}
+
+.c23 {
+  position: relative;
+  display: inline-block;
+  z-index: 1;
+  width: 100%;
+  padding: 0;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+  border: none;
+  border-radius: 0.35rem;
+  background: none;
+  text-align: left;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  box-shadow: 0.2rem 0.2rem 0.5rem 0 rgba(37,32,31,0.3);
+  cursor: pointer;
+  box-sizing: border-box;
+}
+
+.c23:disabled {
+  cursor: not-allowed;
+}
+
+.c23:not(:disabled):focus,.c23:not(:disabled):focus-within,
+.c23:not(:disabled):active,.c23:not(:disabled):hover {
+  box-shadow: 0.4rem 0.4rem 1rem 0 rgba(37,32,31,0.3);
+}
+
 @media (prefers-color-scheme:dark) {
   .c2:focus-within::after,
   .c2:focus::after {
@@ -655,7 +739,7 @@ exports[`<AdminEmails /> should render correctly with emails 1`] = `
 }
 
 @media (prefers-color-scheme:dark) {
-  .c18 {
+  .c19 {
     color: white;
   }
 }
@@ -705,7 +789,7 @@ exports[`<AdminEmails /> should render correctly with emails 1`] = `
 }
 
 @media (prefers-color-scheme:dark) {
-  .c16 {
+  .c17 {
     background-color: #1e1e1e;
   }
 }
@@ -735,27 +819,42 @@ exports[`<AdminEmails /> should render correctly with emails 1`] = `
 }
 
 @media (prefers-color-scheme:dark) {
-
+  .c15 {
+    box-shadow: 0.44rem 0.44rem 1rem 0 transparent;
+  }
 }
 
 @media (prefers-color-scheme:dark) {
-
+  .c15:not(:disabled):focus,.c15:not(:disabled):focus-within,
+  .c15:not(:disabled):active,.c15:not(:disabled):hover {
+    box-shadow: 0.2rem 0.2rem 0.5rem 0 transparent;
+  }
 }
 
 @media (prefers-color-scheme:dark) {
-
+  .c22 {
+    box-shadow: 0.44rem 0.44rem 1rem 0 transparent;
+  }
 }
 
 @media (prefers-color-scheme:dark) {
-
+  .c22:not(:disabled):focus,.c22:not(:disabled):focus-within,
+  .c22:not(:disabled):active,.c22:not(:disabled):hover {
+    box-shadow: 0.2rem 0.2rem 0.5rem 0 transparent;
+  }
 }
 
 @media (prefers-color-scheme:dark) {
-
+  .c23 {
+    box-shadow: 0.44rem 0.44rem 1rem 0 transparent;
+  }
 }
 
 @media (prefers-color-scheme:dark) {
-
+  .c23:not(:disabled):focus,.c23:not(:disabled):focus-within,
+  .c23:not(:disabled):active,.c23:not(:disabled):hover {
+    box-shadow: 0.2rem 0.2rem 0.5rem 0 transparent;
+  }
 }
 
 <div>
@@ -818,102 +917,120 @@ exports[`<AdminEmails /> should render correctly with emails 1`] = `
       <div
         class="c14"
       >
-        <div
+        <a
           class="c15"
+          href="/admin/emails?highlight=1"
+          id="1"
         >
           <div
             class="c16"
-          />
-          <div
-            class=""
           >
             <div
               class="c17"
+            />
+            <div
+              class=""
             >
               <div
                 class="c18"
               >
-                <h1
-                  class="c19 c20"
-                  id="email-1"
+                <div
+                  class="c19"
                 >
-                  Email 1
-                </h1>
-                <span
-                  class="c9"
-                >
-                  <br />
-                  id: 
-                  1
-                </span>
+                  <h1
+                    class="c20 c21"
+                    id="email-1"
+                  >
+                    Email 1
+                  </h1>
+                  <span
+                    class="c9"
+                  >
+                    <br />
+                    id: 
+                    1
+                  </span>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-        <div
-          class="c15"
+        </a>
+        <a
+          class="c22"
+          href="/admin/emails?highlight=2"
+          id="2"
         >
           <div
             class="c16"
-          />
-          <div
-            class=""
           >
             <div
               class="c17"
+            />
+            <div
+              class=""
             >
               <div
                 class="c18"
               >
-                <h1
-                  class="c19 c20"
-                  id="email-2"
+                <div
+                  class="c19"
                 >
-                  Email 2
-                </h1>
-                <span
-                  class="c9"
-                >
-                  <br />
-                  id: 
-                  2
-                </span>
+                  <h1
+                    class="c20 c21"
+                    id="email-2"
+                  >
+                    Email 2
+                  </h1>
+                  <span
+                    class="c9"
+                  >
+                    <br />
+                    id: 
+                    2
+                  </span>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-        <div
-          class="c15"
+        </a>
+        <a
+          class="c23"
+          href="/admin/emails?highlight=3"
+          id="3"
         >
           <div
             class="c16"
-          />
-          <div
-            class=""
           >
             <div
               class="c17"
+            />
+            <div
+              class=""
             >
               <div
                 class="c18"
               >
-                <h1
-                  class="c19 c20"
-                  id="email-3"
+                <div
+                  class="c19"
                 >
-                  Email 3
-                </h1>
-                <span
-                  class="c9"
-                >
-                  <br />
-                  id: 
-                  3
-                </span>
+                  <h1
+                    class="c20 c21"
+                    id="email-3"
+                  >
+                    Email 3
+                  </h1>
+                  <span
+                    class="c9"
+                  >
+                    <br />
+                    id: 
+                    3
+                  </span>
+                </div>
               </div>
             </div>
           </div>
-        </div>
+        </a>
       </div>
     </div>
   </div>
