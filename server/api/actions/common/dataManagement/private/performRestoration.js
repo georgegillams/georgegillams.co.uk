@@ -7,12 +7,13 @@ import redis from 'server-utils/common/redis';
  * @returns {null} none
  */
 
-export default function performRestoration(data) {
-  Object.keys(data).forEach(key => {
-    redis.del(`${appConfig.projectName}_${key}`);
+export default async function performRestoration(data) {
+  for (let key of Object.keys(data)) {
+    await redis.del(`${appConfig.projectName}_${key}`);
     if (data[key].length > 0) {
       const newData = data[key].map(d => JSON.stringify(d));
-      redis.rpush([`${appConfig.projectName}_${key}`, ...newData]);
+      await redis.rpush([`${appConfig.projectName}_${key}`, ...newData]);
     }
-  });
+  }
+  return true;
 }

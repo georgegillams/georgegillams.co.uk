@@ -47,10 +47,12 @@ const EMAIL_LOGO_HEADER = `<tr>
         </tr>`;
 
 function sendEmail(email) {
-  return lockPromise('emails', () =>
-    dbCreate({ redisKey: 'emails' }, { body: email }).then(() => sendMailPromise(email))
-  );
+  return lockPromise('emails', async () => {
+    await dbCreate({ redisKey: 'emails' }, { body: email });
+    return await sendMailPromise(email);
+  });
 }
+
 export default sendEmail;
 export {
   sendEmail,

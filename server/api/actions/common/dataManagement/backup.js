@@ -10,29 +10,27 @@ const serverDir = 'server';
 const serverContentDir = `${serverDir}/server_content`;
 const dataFilePath = `${serverContentDir}/data.json`;
 
-export default function load(req) {
-  return authentication(req)
-    .then(user => {
-      if (user && user.admin) {
-        return loadAllData();
-      }
-      throw UNAUTHORISED_READ;
-    })
-    .then(data => {
-      const dataAnnotated = {
-        projectName: appConfig.projectName,
-        timestamp: Date.now(),
-        data,
-      };
-      return res => {
-        if (!fs.existsSync(serverDir)) {
-          fs.mkdirSync(serverDir);
-        }
-        if (!fs.existsSync(serverContentDir)) {
-          fs.mkdirSync(serverContentDir);
-        }
-        fs.writeFileSync(dataFilePath, JSON.stringify(dataAnnotated));
-        res.download(dataFilePath);
-      };
-    });
+export default async function load(req) {
+  let data;
+  let user = await authentication(req);
+  if (user && user.admin) {
+    data = await loadAllData();
+  } else {
+    throw UNAUTHORISED_READ;
+  }
+  const dataAnnotated = {
+    projectName: appConfig.projectName,
+    timestamp: Date.now(),
+    data,
+  };
+  return res => {
+    if (!fs.existsSync(serverDir)) {
+      fs.mkdirSync(serverDir);
+    }
+    if (!fs.existsSync(serverContentDir)) {
+      fs.mkdirSync(serverContentDir);
+    }
+    fs.writeFileSync(dataFilePath, JSON.stringify(dataAnnotated));
+    res.download(dataFilePath);
+  };
 }

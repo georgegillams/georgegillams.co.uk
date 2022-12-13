@@ -48,7 +48,8 @@ ${emailVerificationLink}\n\nIt will expire ${oneDaysTime.toString()}`,
 ${EMAIL_OUTER_END}`,
   };
 
-  return lockPromise('emailVerificationCodes', () =>
-    dbCreate({ redisKey: 'emailVerificationCodes' }, { body: verificationLink }).then(() => sendEmail(email))
-  );
+  return lockPromise('emailVerificationCodes', async () => {
+    await dbCreate({ redisKey: 'emailVerificationCodes' }, { body: verificationLink });
+    return await sendEmail(email);
+  });
 }

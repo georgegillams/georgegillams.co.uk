@@ -4,12 +4,11 @@ import authentication from 'server-utils/common/authentication';
 import { UNAUTHORISED_WRITE } from 'server-utils/common/errorConstants';
 
 export default function create(req) {
-  return lockPromise('blogs', () =>
-    authentication(req).then(user => {
-      if (user && user.admin) {
-        return dbCreate({ redisKey: 'blogs', user }, req);
-      }
-      throw UNAUTHORISED_WRITE;
-    })
-  );
+  return lockPromise('blogs', async () => {
+    let user = await authentication(req);
+    if (user && user.admin) {
+      return dbCreate({ redisKey: 'blogs', user }, req);
+    }
+    throw UNAUTHORISED_WRITE;
+  });
 }

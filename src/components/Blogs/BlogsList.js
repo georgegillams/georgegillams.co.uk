@@ -11,7 +11,7 @@ const BlogsList = props => {
     <div {...rest}>
       {admin && <StyledFeatureCard title="Add a new blog" href="/create-blog" />}
       {blogs.map(blog => (
-        <>
+        <div key={blog.id}>
           <StyledBlogCard key={`card_${blog.id}`} blog={blog} linkPrefix={linkPrefix} withControls={!!deleteBlog} />
           {deleteBlog && (
             <StyledButton
@@ -22,7 +22,7 @@ const BlogsList = props => {
               Delete blog
             </StyledButton>
           )}
-        </>
+        </div>
       ))}
     </div>
   );

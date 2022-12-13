@@ -15,35 +15,26 @@ const deleteEntityAllowedAttributes = [
   { attribute: 'id', pattern: ID_REGEX },
 ];
 
-export default function deleteEntity(req) {
+export default async function deleteEntity(req) {
   reqSecure(req, deleteEntityAllowedAttributes);
-  let collectionToDeleteFrom = null;
-  let idToDelete = null;
-  return authentication(req)
-    .then(user => {
-      if (!user || !user.admin) {
-        throw UNAUTHORISED_WRITE;
-      }
-      const { collectionName, id } = req.body;
-      collectionToDeleteFrom = collectionName;
-      idToDelete = id;
-      return dbLoad({
-        redisKey: collectionToDeleteFrom,
-        includeDeleted: true,
-      });
-    })
-    .then(collectionData => {
-      const { existingValue, existingValueIndex } = find(collectionData, idToDelete);
-      if (!existingValue) {
-        throw RESOURCE_NOT_FOUND;
-      }
-      if (!existingValue.deleted) {
-        throw new AuthError('Only deleted entities can be permanently removed.');
-      }
-      logger.log(`Permanently removing ${existingValue.id} at index ${existingValueIndex}`);
-      redis.lrem(`${appConfig.projectName}_${collectionToDeleteFrom}`, 1, JSON.stringify(existingValue));
-      return true;
-    })
-    .then(() => setContentLastUpdatedTimestamp())
-    .then(() => true);
+  const user = await authentication(req);
+  if (!user || !user.admin) {
+    throw UNAUTHORISED_WRITE;
+  }
+  const { collectionName, id: idToDelete } = req.body;
+  const collectionData = await dbLoad({
+    redisKey: collectionName,
+    includeDeleted: true,
+  });
+  const { existingValue, existingValueIndex } = find(collectionData, idToDelete);
+  if (!existingValue) {
+    throw RESOURCE_NOT_FOUND;
+  }
+  if (!existingValue.deleted) {
+    throw new AuthError('Only deleted entities can be permanently removed.');
+  }
+  logger.log(`Permanently removing ${existingValue.id} at index ${existingValueIndex}`);
+  await redis.lrem(`${appConfig.projectName}_${collectionName}`, 1, JSON.stringify(existingValue));
+  await setContentLastUpdatedTimestamp();
+  return true;
 }

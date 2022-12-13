@@ -5,14 +5,9 @@ import usersAllowedAttributes from './private/usersAllowedAttributes';
 
 import reqSecure from 'server-utils/common/reqSecure';
 
-export default function signUp(req) {
+export default async function signUp(req) {
   reqSecure(req, usersAllowedAttributes);
-  let newUser = null;
-  return create(req)
-    .then(result => {
-      newUser = result.newUser;
-      return true;
-    })
-    .then(() => loginUser(newUser))
-    .then(sessionKey => ({ ...newUser, session: sessionKey }));
+  const { newUser } = await create(req);
+  const sessionKey = await loginUser(newUser);
+  return { ...newUser, session: sessionKey };
 }

@@ -8,16 +8,15 @@ import { ipPrefix } from 'server-utils/common/ipAddress';
 
 export default function create(req) {
   reqSecure(req, analyticsAllowedAttributes);
-  return lockPromise('analytics', () =>
-    authentication(req).then(user => {
-      let ipAddress = req.connection.remoteAddress;
-      if (req.headers['x-forwarded-for']) {
-        ipAddress = req.headers['x-forwarded-for'];
-      }
-      if (ipAddress) {
-        req.body.ipAddressPrefix = ipPrefix(ipAddress);
-      }
-      return dbCreate({ redisKey: 'analytics', user }, req);
-    })
-  );
+  return lockPromise('analytics', async () => {
+    const user = await authentication(req);
+    let ipAddress = req.connection.remoteAddress;
+    if (req.headers['x-forwarded-for']) {
+      ipAddress = req.headers['x-forwarded-for'];
+    }
+    if (ipAddress) {
+      req.body.ipAddressPrefix = ipPrefix(ipAddress);
+    }
+    return await dbCreate({ redisKey: 'analytics', user }, req);
+  });
 }

@@ -6,19 +6,10 @@ import { REDIS_INFORMATION_STORES } from './redisStores';
  * @returns {promise} A promise that resolves the data
  */
 
-export default function loadAllData() {
+export default async function loadAllData() {
   const data = {};
-  const loadPromises = [];
-  REDIS_INFORMATION_STORES.forEach(redisKey => {
-    loadPromises.push(
-      dbLoad({
-        redisKey,
-        includeDeleted: true,
-      }).then(loadedData => {
-        data[redisKey] = loadedData;
-        return true;
-      })
-    );
-  });
-  return Promise.all(loadPromises).then(() => data);
+  for (let redisKey of REDIS_INFORMATION_STORES) {
+    data[redisKey] = await dbLoad({ redisKey, includeDeleted: true });
+  }
+  return data;
 }

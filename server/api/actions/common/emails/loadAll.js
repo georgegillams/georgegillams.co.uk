@@ -2,16 +2,14 @@ import { dbLoad } from 'server-utils/common/database';
 import authentication from 'server-utils/common/authentication';
 import { UNAUTHORISED_READ } from 'server-utils/common/errorConstants';
 
-export default function loadAll(req) {
-  return authentication(req)
-    .then(user => {
-      if (user && user.admin) {
-        return dbLoad({
-          redisKey: 'emails',
-          includeDeleted: true,
-        });
-      }
-      throw UNAUTHORISED_READ;
-    })
-    .then(result => ({ emails: result.reverse() }));
+export default async function loadAll(req) {
+  let user = await authentication(req);
+  if (!user || !user.admin) {
+    throw UNAUTHORISED_READ;
+  }
+  const result = await dbLoad({
+    redisKey: 'emails',
+    includeDeleted: true,
+  });
+  return { emails: result.reverse() };
 }

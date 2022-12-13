@@ -8,12 +8,11 @@ import reqSecure from 'server-utils/common/reqSecure';
 
 export default function update(req) {
   reqSecure(req, notificationsAllowedAttributes);
-  return lockPromise('notifications', () =>
-    authentication(req).then(user => {
-      if (user && user.admin) {
-        return dbUpdate({ redisKey: 'notifications' }, req);
-      }
+  return lockPromise('notifications', async () => {
+    const user = await authentication(req);
+    if (!user || !user.admin) {
       throw UNAUTHORISED_WRITE;
-    })
-  );
+    }
+    return await dbUpdate({ redisKey: 'notifications' }, req);
+  });
 }

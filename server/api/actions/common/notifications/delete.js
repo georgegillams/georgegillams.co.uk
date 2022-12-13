@@ -5,12 +5,11 @@ import authentication from 'server-utils/common/authentication';
 import { UNAUTHORISED_WRITE } from 'server-utils/common/errorConstants';
 import reqSecure from 'server-utils/common/reqSecure';
 
-export default function remove(req) {
+export default async function remove(req) {
   reqSecure(req, notificationsAllowedAttributes);
-  return authentication(req).then(user => {
-    if (user && user.admin) {
-      return dbRemove({ redisKey: 'notifications' }, req);
-    }
-    throw UNAUTHORISED_WRITE;
-  });
+  const user = await authentication(req);
+  if (user && user.admin) {
+    return await dbRemove({ redisKey: 'notifications' }, req);
+  }
+  throw UNAUTHORISED_WRITE;
 }

@@ -1997,338 +1997,344 @@ exports[`<BlogsList /> Should render correctly 1`] = `
 
 <div>
   <div>
-    <a
-      aria-label="Blog 1 , NaN Invalid Date"
-      class="c0 c1 c2"
-      href="/blog/asdfg"
-    >
-      <div
-        class="c3"
+    <div>
+      <a
+        aria-label="Blog 1 , NaN Invalid Date"
+        class="c0 c1 c2"
+        href="/blog/asdfg"
       >
         <div
-          class="c4"
-        />
-        <div
-          class="c5"
+          class="c3"
         >
           <div
-            aria-hidden="true"
-            class="c6"
-          >
-            <div
-              class="c7 date container"
-            >
-              <div
-                class="c8"
-              >
-                <span
-                  class="c9"
-                >
-                  NaN Invalid Date
-                </span>
-              </div>
-              <div
-                class="c10"
-              >
-                <span
-                  class="c9"
-                >
-                  NaN
-                </span>
-              </div>
-              <div
-                class="c10"
-              >
-                <span
-                  class="c9"
-                >
-                  Invalid Date
-                </span>
-              </div>
-            </div>
-            <div
-              class="c11"
-            >
-              <h1
-                class="c12"
-              >
-                Blog 1 
-              </h1>
-            </div>
-          </div>
-        </div>
-      </div>
-    </a>
-    <a
-      aria-label="St Ives  2018, 23to30 Dec, Tagged travel"
-      class="c0 c1 c2"
-      href="/blog/zxywvuts"
-    >
-      <div
-        class="c3"
-      >
-        <div
-          class="c4"
-        />
-        <div
-          class="c5"
-        >
+            class="c4"
+          />
           <div
-            aria-hidden="true"
-            class="c6"
+            class="c5"
           >
             <div
-              class="c7 date container"
+              aria-hidden="true"
+              class="c6"
             >
               <div
-                class="c8"
-              >
-                <span
-                  class="c9"
-                >
-                  23-30 Dec
-                </span>
-              </div>
-              <div
-                class="c10"
-              >
-                <span
-                  class="c9"
-                >
-                  23-30
-                </span>
-              </div>
-              <div
-                class="c10"
-              >
-                <span
-                  class="c9"
-                >
-                  Dec
-                </span>
-              </div>
-            </div>
-            <div
-              class="c11"
-            >
-              <h1
-                class="c12"
-              >
-                St Ives  2018
-              </h1>
-              <div
-                class="c13"
+                class="c7 date container"
               >
                 <div
-                  class=""
+                  class="c8"
                 >
                   <span
-                    class="c14"
-                    type="travel"
+                    class="c9"
                   >
-                    Travel
+                    NaN Invalid Date
+                  </span>
+                </div>
+                <div
+                  class="c10"
+                >
+                  <span
+                    class="c9"
+                  >
+                    NaN
+                  </span>
+                </div>
+                <div
+                  class="c10"
+                >
+                  <span
+                    class="c9"
+                  >
+                    Invalid Date
                   </span>
                 </div>
               </div>
-            </div>
-            <div
-              class="c15"
-            >
               <div
-                class="c16 c17"
+                class="c11"
               >
-                <style>
-                  
-          .js .gg-image__img--hide-js {display: none;}
-          .no-js .gg-image__img--hide-no-js {display: none;}
-        
-                </style>
-                <div
-                  class="c18"
-                  style="padding-bottom: 100%;"
+                <h1
+                  class="c12"
                 >
-                  <div
-                    class="c19"
-                  >
-                    <div
-                      class="c20 c21"
-                    >
-                      <div
-                        class="c22"
-                        style="margin-left: -0px;"
-                      />
-                    </div>
-                  </div>
-                  <div
-                    class="gg-image__img--hide-no-js"
-                  >
-                    <img
-                      alt="card"
-                      class="c23"
-                      src="https://i.imgur.com/ppPEuDs.jpg"
-                    />
-                    <img
-                      alt="card"
-                      class="c24"
-                      src="https://i.imgur.com/ppPEuDs.jpg"
-                    />
-                  </div>
-                  <div
-                    class="gg-image__img--hide-js"
-                  >
-                    <img
-                      alt="card"
-                      class="c25"
-                      src="https://i.imgur.com/ppPEuDs.jpg"
-                    />
-                    <img
-                      alt="card"
-                      class="c26"
-                      src="https://i.imgur.com/ppPEuDs.jpg"
-                    />
-                  </div>
-                </div>
+                  Blog 1 
+                </h1>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </a>
-    <a
-      aria-label="Untitled blog (DELETED), 23to30 Dec, Tagged travel"
-      class="c0 c1 c2"
-      href="/blog/mndyd8"
-    >
-      <div
-        class="c3"
+      </a>
+    </div>
+    <div>
+      <a
+        aria-label="St Ives  2018, 23to30 Dec, Tagged travel"
+        class="c0 c1 c2"
+        href="/blog/zxywvuts"
       >
         <div
-          class="c4"
-        />
-        <div
-          class="c5"
+          class="c3"
         >
           <div
-            aria-hidden="true"
-            class="c6"
+            class="c4"
+          />
+          <div
+            class="c5"
           >
             <div
-              class="c7 date container"
+              aria-hidden="true"
+              class="c6"
             >
               <div
-                class="c8"
-              >
-                <span
-                  class="c9"
-                >
-                  23-30 Dec
-                </span>
-              </div>
-              <div
-                class="c10"
-              >
-                <span
-                  class="c9"
-                >
-                  23-30
-                </span>
-              </div>
-              <div
-                class="c10"
-              >
-                <span
-                  class="c9"
-                >
-                  Dec
-                </span>
-              </div>
-            </div>
-            <div
-              class="c11"
-            >
-              <h1
-                class="c12"
-              >
-                Untitled blog (DELETED)
-              </h1>
-              <div
-                class="c13"
+                class="c7 date container"
               >
                 <div
-                  class=""
+                  class="c8"
                 >
                   <span
-                    class="c14"
-                    type="travel"
+                    class="c9"
                   >
-                    Travel
+                    23-30 Dec
+                  </span>
+                </div>
+                <div
+                  class="c10"
+                >
+                  <span
+                    class="c9"
+                  >
+                    23-30
+                  </span>
+                </div>
+                <div
+                  class="c10"
+                >
+                  <span
+                    class="c9"
+                  >
+                    Dec
                   </span>
                 </div>
               </div>
-            </div>
-            <div
-              class="c15"
-            >
               <div
-                class="c16 c17"
+                class="c11"
               >
-                <style>
-                  
+                <h1
+                  class="c12"
+                >
+                  St Ives  2018
+                </h1>
+                <div
+                  class="c13"
+                >
+                  <div
+                    class=""
+                  >
+                    <span
+                      class="c14"
+                      type="travel"
+                    >
+                      Travel
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="c15"
+              >
+                <div
+                  class="c16 c17"
+                >
+                  <style>
+                    
           .js .gg-image__img--hide-js {display: none;}
           .no-js .gg-image__img--hide-no-js {display: none;}
         
-                </style>
-                <div
-                  class="c18"
-                  style="padding-bottom: 100%;"
-                >
+                  </style>
                   <div
-                    class="c19"
+                    class="c18"
+                    style="padding-bottom: 100%;"
                   >
                     <div
-                      class="c20 c21"
+                      class="c19"
                     >
                       <div
-                        class="c22"
-                        style="margin-left: -0px;"
+                        class="c20 c21"
+                      >
+                        <div
+                          class="c22"
+                          style="margin-left: -0px;"
+                        />
+                      </div>
+                    </div>
+                    <div
+                      class="gg-image__img--hide-no-js"
+                    >
+                      <img
+                        alt="card"
+                        class="c23"
+                        src="https://i.imgur.com/ppPEuDs.jpg"
+                      />
+                      <img
+                        alt="card"
+                        class="c24"
+                        src="https://i.imgur.com/ppPEuDs.jpg"
                       />
                     </div>
-                  </div>
-                  <div
-                    class="gg-image__img--hide-no-js"
-                  >
-                    <img
-                      alt="card"
-                      class="c23"
-                      src="https://i.imgur.com/ppPEuDs.jpg"
-                    />
-                    <img
-                      alt="card"
-                      class="c24"
-                      src="https://i.imgur.com/ppPEuDs.jpg"
-                    />
-                  </div>
-                  <div
-                    class="gg-image__img--hide-js"
-                  >
-                    <img
-                      alt="card"
-                      class="c25"
-                      src="https://i.imgur.com/ppPEuDs.jpg"
-                    />
-                    <img
-                      alt="card"
-                      class="c26"
-                      src="https://i.imgur.com/ppPEuDs.jpg"
-                    />
+                    <div
+                      class="gg-image__img--hide-js"
+                    >
+                      <img
+                        alt="card"
+                        class="c25"
+                        src="https://i.imgur.com/ppPEuDs.jpg"
+                      />
+                      <img
+                        alt="card"
+                        class="c26"
+                        src="https://i.imgur.com/ppPEuDs.jpg"
+                      />
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </a>
+      </a>
+    </div>
+    <div>
+      <a
+        aria-label="Untitled blog (DELETED), 23to30 Dec, Tagged travel"
+        class="c0 c1 c2"
+        href="/blog/mndyd8"
+      >
+        <div
+          class="c3"
+        >
+          <div
+            class="c4"
+          />
+          <div
+            class="c5"
+          >
+            <div
+              aria-hidden="true"
+              class="c6"
+            >
+              <div
+                class="c7 date container"
+              >
+                <div
+                  class="c8"
+                >
+                  <span
+                    class="c9"
+                  >
+                    23-30 Dec
+                  </span>
+                </div>
+                <div
+                  class="c10"
+                >
+                  <span
+                    class="c9"
+                  >
+                    23-30
+                  </span>
+                </div>
+                <div
+                  class="c10"
+                >
+                  <span
+                    class="c9"
+                  >
+                    Dec
+                  </span>
+                </div>
+              </div>
+              <div
+                class="c11"
+              >
+                <h1
+                  class="c12"
+                >
+                  Untitled blog (DELETED)
+                </h1>
+                <div
+                  class="c13"
+                >
+                  <div
+                    class=""
+                  >
+                    <span
+                      class="c14"
+                      type="travel"
+                    >
+                      Travel
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="c15"
+              >
+                <div
+                  class="c16 c17"
+                >
+                  <style>
+                    
+          .js .gg-image__img--hide-js {display: none;}
+          .no-js .gg-image__img--hide-no-js {display: none;}
+        
+                  </style>
+                  <div
+                    class="c18"
+                    style="padding-bottom: 100%;"
+                  >
+                    <div
+                      class="c19"
+                    >
+                      <div
+                        class="c20 c21"
+                      >
+                        <div
+                          class="c22"
+                          style="margin-left: -0px;"
+                        />
+                      </div>
+                    </div>
+                    <div
+                      class="gg-image__img--hide-no-js"
+                    >
+                      <img
+                        alt="card"
+                        class="c23"
+                        src="https://i.imgur.com/ppPEuDs.jpg"
+                      />
+                      <img
+                        alt="card"
+                        class="c24"
+                        src="https://i.imgur.com/ppPEuDs.jpg"
+                      />
+                    </div>
+                    <div
+                      class="gg-image__img--hide-js"
+                    >
+                      <img
+                        alt="card"
+                        class="c25"
+                        src="https://i.imgur.com/ppPEuDs.jpg"
+                      />
+                      <img
+                        alt="card"
+                        class="c26"
+                        src="https://i.imgur.com/ppPEuDs.jpg"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </a>
+    </div>
   </div>
 </div>
 `;
@@ -2740,338 +2746,344 @@ exports[`<BlogsList /> Should render correctly with custom className 1`] = `
   <div
     class="test-custom-classname"
   >
-    <a
-      aria-label="Blog 1 , NaN Invalid Date"
-      class="c0 c1 c2"
-      href="/blog/asdfg"
-    >
-      <div
-        class="c3"
+    <div>
+      <a
+        aria-label="Blog 1 , NaN Invalid Date"
+        class="c0 c1 c2"
+        href="/blog/asdfg"
       >
         <div
-          class="c4"
-        />
-        <div
-          class="c5"
+          class="c3"
         >
           <div
-            aria-hidden="true"
-            class="c6"
-          >
-            <div
-              class="c7 date container"
-            >
-              <div
-                class="c8"
-              >
-                <span
-                  class="c9"
-                >
-                  NaN Invalid Date
-                </span>
-              </div>
-              <div
-                class="c10"
-              >
-                <span
-                  class="c9"
-                >
-                  NaN
-                </span>
-              </div>
-              <div
-                class="c10"
-              >
-                <span
-                  class="c9"
-                >
-                  Invalid Date
-                </span>
-              </div>
-            </div>
-            <div
-              class="c11"
-            >
-              <h1
-                class="c12"
-              >
-                Blog 1 
-              </h1>
-            </div>
-          </div>
-        </div>
-      </div>
-    </a>
-    <a
-      aria-label="St Ives  2018, 23to30 Dec, Tagged travel"
-      class="c0 c1 c2"
-      href="/blog/zxywvuts"
-    >
-      <div
-        class="c3"
-      >
-        <div
-          class="c4"
-        />
-        <div
-          class="c5"
-        >
+            class="c4"
+          />
           <div
-            aria-hidden="true"
-            class="c6"
+            class="c5"
           >
             <div
-              class="c7 date container"
+              aria-hidden="true"
+              class="c6"
             >
               <div
-                class="c8"
-              >
-                <span
-                  class="c9"
-                >
-                  23-30 Dec
-                </span>
-              </div>
-              <div
-                class="c10"
-              >
-                <span
-                  class="c9"
-                >
-                  23-30
-                </span>
-              </div>
-              <div
-                class="c10"
-              >
-                <span
-                  class="c9"
-                >
-                  Dec
-                </span>
-              </div>
-            </div>
-            <div
-              class="c11"
-            >
-              <h1
-                class="c12"
-              >
-                St Ives  2018
-              </h1>
-              <div
-                class="c13"
+                class="c7 date container"
               >
                 <div
-                  class=""
+                  class="c8"
                 >
                   <span
-                    class="c14"
-                    type="travel"
+                    class="c9"
                   >
-                    Travel
+                    NaN Invalid Date
+                  </span>
+                </div>
+                <div
+                  class="c10"
+                >
+                  <span
+                    class="c9"
+                  >
+                    NaN
+                  </span>
+                </div>
+                <div
+                  class="c10"
+                >
+                  <span
+                    class="c9"
+                  >
+                    Invalid Date
                   </span>
                 </div>
               </div>
-            </div>
-            <div
-              class="c15"
-            >
               <div
-                class="c16 c17"
+                class="c11"
               >
-                <style>
-                  
-          .js .gg-image__img--hide-js {display: none;}
-          .no-js .gg-image__img--hide-no-js {display: none;}
-        
-                </style>
-                <div
-                  class="c18"
-                  style="padding-bottom: 100%;"
+                <h1
+                  class="c12"
                 >
-                  <div
-                    class="c19"
-                  >
-                    <div
-                      class="c20 c21"
-                    >
-                      <div
-                        class="c22"
-                        style="margin-left: -0px;"
-                      />
-                    </div>
-                  </div>
-                  <div
-                    class="gg-image__img--hide-no-js"
-                  >
-                    <img
-                      alt="card"
-                      class="c23"
-                      src="https://i.imgur.com/ppPEuDs.jpg"
-                    />
-                    <img
-                      alt="card"
-                      class="c24"
-                      src="https://i.imgur.com/ppPEuDs.jpg"
-                    />
-                  </div>
-                  <div
-                    class="gg-image__img--hide-js"
-                  >
-                    <img
-                      alt="card"
-                      class="c25"
-                      src="https://i.imgur.com/ppPEuDs.jpg"
-                    />
-                    <img
-                      alt="card"
-                      class="c26"
-                      src="https://i.imgur.com/ppPEuDs.jpg"
-                    />
-                  </div>
-                </div>
+                  Blog 1 
+                </h1>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </a>
-    <a
-      aria-label="Untitled blog (DELETED), 23to30 Dec, Tagged travel"
-      class="c0 c1 c2"
-      href="/blog/mndyd8"
-    >
-      <div
-        class="c3"
+      </a>
+    </div>
+    <div>
+      <a
+        aria-label="St Ives  2018, 23to30 Dec, Tagged travel"
+        class="c0 c1 c2"
+        href="/blog/zxywvuts"
       >
         <div
-          class="c4"
-        />
-        <div
-          class="c5"
+          class="c3"
         >
           <div
-            aria-hidden="true"
-            class="c6"
+            class="c4"
+          />
+          <div
+            class="c5"
           >
             <div
-              class="c7 date container"
+              aria-hidden="true"
+              class="c6"
             >
               <div
-                class="c8"
-              >
-                <span
-                  class="c9"
-                >
-                  23-30 Dec
-                </span>
-              </div>
-              <div
-                class="c10"
-              >
-                <span
-                  class="c9"
-                >
-                  23-30
-                </span>
-              </div>
-              <div
-                class="c10"
-              >
-                <span
-                  class="c9"
-                >
-                  Dec
-                </span>
-              </div>
-            </div>
-            <div
-              class="c11"
-            >
-              <h1
-                class="c12"
-              >
-                Untitled blog (DELETED)
-              </h1>
-              <div
-                class="c13"
+                class="c7 date container"
               >
                 <div
-                  class=""
+                  class="c8"
                 >
                   <span
-                    class="c14"
-                    type="travel"
+                    class="c9"
                   >
-                    Travel
+                    23-30 Dec
+                  </span>
+                </div>
+                <div
+                  class="c10"
+                >
+                  <span
+                    class="c9"
+                  >
+                    23-30
+                  </span>
+                </div>
+                <div
+                  class="c10"
+                >
+                  <span
+                    class="c9"
+                  >
+                    Dec
                   </span>
                 </div>
               </div>
-            </div>
-            <div
-              class="c15"
-            >
               <div
-                class="c16 c17"
+                class="c11"
               >
-                <style>
-                  
+                <h1
+                  class="c12"
+                >
+                  St Ives  2018
+                </h1>
+                <div
+                  class="c13"
+                >
+                  <div
+                    class=""
+                  >
+                    <span
+                      class="c14"
+                      type="travel"
+                    >
+                      Travel
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="c15"
+              >
+                <div
+                  class="c16 c17"
+                >
+                  <style>
+                    
           .js .gg-image__img--hide-js {display: none;}
           .no-js .gg-image__img--hide-no-js {display: none;}
         
-                </style>
-                <div
-                  class="c18"
-                  style="padding-bottom: 100%;"
-                >
+                  </style>
                   <div
-                    class="c19"
+                    class="c18"
+                    style="padding-bottom: 100%;"
                   >
                     <div
-                      class="c20 c21"
+                      class="c19"
                     >
                       <div
-                        class="c22"
-                        style="margin-left: -0px;"
+                        class="c20 c21"
+                      >
+                        <div
+                          class="c22"
+                          style="margin-left: -0px;"
+                        />
+                      </div>
+                    </div>
+                    <div
+                      class="gg-image__img--hide-no-js"
+                    >
+                      <img
+                        alt="card"
+                        class="c23"
+                        src="https://i.imgur.com/ppPEuDs.jpg"
+                      />
+                      <img
+                        alt="card"
+                        class="c24"
+                        src="https://i.imgur.com/ppPEuDs.jpg"
                       />
                     </div>
-                  </div>
-                  <div
-                    class="gg-image__img--hide-no-js"
-                  >
-                    <img
-                      alt="card"
-                      class="c23"
-                      src="https://i.imgur.com/ppPEuDs.jpg"
-                    />
-                    <img
-                      alt="card"
-                      class="c24"
-                      src="https://i.imgur.com/ppPEuDs.jpg"
-                    />
-                  </div>
-                  <div
-                    class="gg-image__img--hide-js"
-                  >
-                    <img
-                      alt="card"
-                      class="c25"
-                      src="https://i.imgur.com/ppPEuDs.jpg"
-                    />
-                    <img
-                      alt="card"
-                      class="c26"
-                      src="https://i.imgur.com/ppPEuDs.jpg"
-                    />
+                    <div
+                      class="gg-image__img--hide-js"
+                    >
+                      <img
+                        alt="card"
+                        class="c25"
+                        src="https://i.imgur.com/ppPEuDs.jpg"
+                      />
+                      <img
+                        alt="card"
+                        class="c26"
+                        src="https://i.imgur.com/ppPEuDs.jpg"
+                      />
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </a>
+      </a>
+    </div>
+    <div>
+      <a
+        aria-label="Untitled blog (DELETED), 23to30 Dec, Tagged travel"
+        class="c0 c1 c2"
+        href="/blog/mndyd8"
+      >
+        <div
+          class="c3"
+        >
+          <div
+            class="c4"
+          />
+          <div
+            class="c5"
+          >
+            <div
+              aria-hidden="true"
+              class="c6"
+            >
+              <div
+                class="c7 date container"
+              >
+                <div
+                  class="c8"
+                >
+                  <span
+                    class="c9"
+                  >
+                    23-30 Dec
+                  </span>
+                </div>
+                <div
+                  class="c10"
+                >
+                  <span
+                    class="c9"
+                  >
+                    23-30
+                  </span>
+                </div>
+                <div
+                  class="c10"
+                >
+                  <span
+                    class="c9"
+                  >
+                    Dec
+                  </span>
+                </div>
+              </div>
+              <div
+                class="c11"
+              >
+                <h1
+                  class="c12"
+                >
+                  Untitled blog (DELETED)
+                </h1>
+                <div
+                  class="c13"
+                >
+                  <div
+                    class=""
+                  >
+                    <span
+                      class="c14"
+                      type="travel"
+                    >
+                      Travel
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="c15"
+              >
+                <div
+                  class="c16 c17"
+                >
+                  <style>
+                    
+          .js .gg-image__img--hide-js {display: none;}
+          .no-js .gg-image__img--hide-no-js {display: none;}
+        
+                  </style>
+                  <div
+                    class="c18"
+                    style="padding-bottom: 100%;"
+                  >
+                    <div
+                      class="c19"
+                    >
+                      <div
+                        class="c20 c21"
+                      >
+                        <div
+                          class="c22"
+                          style="margin-left: -0px;"
+                        />
+                      </div>
+                    </div>
+                    <div
+                      class="gg-image__img--hide-no-js"
+                    >
+                      <img
+                        alt="card"
+                        class="c23"
+                        src="https://i.imgur.com/ppPEuDs.jpg"
+                      />
+                      <img
+                        alt="card"
+                        class="c24"
+                        src="https://i.imgur.com/ppPEuDs.jpg"
+                      />
+                    </div>
+                    <div
+                      class="gg-image__img--hide-js"
+                    >
+                      <img
+                        alt="card"
+                        class="c25"
+                        src="https://i.imgur.com/ppPEuDs.jpg"
+                      />
+                      <img
+                        alt="card"
+                        class="c26"
+                        src="https://i.imgur.com/ppPEuDs.jpg"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </a>
+    </div>
   </div>
 </div>
 `;
@@ -3675,369 +3687,375 @@ exports[`<BlogsList /> Should render correctly with deleteBlog function 1`] = `
 
 <div>
   <div>
-    <a
-      aria-label="Blog 1 , NaN Invalid Date"
-      class="c0 c1 c2"
-      href="/blog/asdfg"
-    >
-      <div
-        class="c3"
+    <div>
+      <a
+        aria-label="Blog 1 , NaN Invalid Date"
+        class="c0 c1 c2"
+        href="/blog/asdfg"
       >
         <div
-          class="c4"
-        />
-        <div
-          class="c5"
+          class="c3"
         >
           <div
-            aria-hidden="true"
-            class="c6"
-          >
-            <div
-              class="c7 date container"
-            >
-              <div
-                class="c8"
-              >
-                <span
-                  class="c9"
-                >
-                  NaN Invalid Date
-                </span>
-              </div>
-              <div
-                class="c10"
-              >
-                <span
-                  class="c9"
-                >
-                  NaN
-                </span>
-              </div>
-              <div
-                class="c10"
-              >
-                <span
-                  class="c9"
-                >
-                  Invalid Date
-                </span>
-              </div>
-            </div>
-            <div
-              class="c11"
-            >
-              <h1
-                class="c12"
-              >
-                Blog 1 
-              </h1>
-            </div>
-          </div>
-        </div>
-      </div>
-    </a>
-    <button
-      class="c13 c14"
-      type="button"
-    >
-      <span
-        class="c15"
-      >
-        Delete blog
-      </span>
-    </button>
-    <a
-      aria-label="St Ives  2018, 23to30 Dec, Tagged travel"
-      class="c0 c1 c2"
-      href="/blog/zxywvuts"
-    >
-      <div
-        class="c3"
-      >
-        <div
-          class="c4"
-        />
-        <div
-          class="c5"
-        >
+            class="c4"
+          />
           <div
-            aria-hidden="true"
-            class="c6"
+            class="c5"
           >
             <div
-              class="c7 date container"
+              aria-hidden="true"
+              class="c6"
             >
               <div
-                class="c8"
-              >
-                <span
-                  class="c9"
-                >
-                  23-30 Dec
-                </span>
-              </div>
-              <div
-                class="c10"
-              >
-                <span
-                  class="c9"
-                >
-                  23-30
-                </span>
-              </div>
-              <div
-                class="c10"
-              >
-                <span
-                  class="c9"
-                >
-                  Dec
-                </span>
-              </div>
-            </div>
-            <div
-              class="c11"
-            >
-              <h1
-                class="c12"
-              >
-                St Ives  2018
-              </h1>
-              <div
-                class="c16"
+                class="c7 date container"
               >
                 <div
-                  class=""
+                  class="c8"
                 >
                   <span
-                    class="c17"
-                    type="travel"
+                    class="c9"
                   >
-                    Travel
+                    NaN Invalid Date
+                  </span>
+                </div>
+                <div
+                  class="c10"
+                >
+                  <span
+                    class="c9"
+                  >
+                    NaN
+                  </span>
+                </div>
+                <div
+                  class="c10"
+                >
+                  <span
+                    class="c9"
+                  >
+                    Invalid Date
                   </span>
                 </div>
               </div>
-            </div>
-            <div
-              class="c18"
-            >
               <div
-                class="c19 c20"
+                class="c11"
               >
-                <style>
-                  
-          .js .gg-image__img--hide-js {display: none;}
-          .no-js .gg-image__img--hide-no-js {display: none;}
-        
-                </style>
-                <div
-                  class="c21"
-                  style="padding-bottom: 100%;"
+                <h1
+                  class="c12"
                 >
-                  <div
-                    class="c22"
-                  >
-                    <div
-                      class="c23 c24"
-                    >
-                      <div
-                        class="c25"
-                        style="margin-left: -0px;"
-                      />
-                    </div>
-                  </div>
-                  <div
-                    class="gg-image__img--hide-no-js"
-                  >
-                    <img
-                      alt="card"
-                      class="c26"
-                      src="https://i.imgur.com/ppPEuDs.jpg"
-                    />
-                    <img
-                      alt="card"
-                      class="c27"
-                      src="https://i.imgur.com/ppPEuDs.jpg"
-                    />
-                  </div>
-                  <div
-                    class="gg-image__img--hide-js"
-                  >
-                    <img
-                      alt="card"
-                      class="c28"
-                      src="https://i.imgur.com/ppPEuDs.jpg"
-                    />
-                    <img
-                      alt="card"
-                      class="c29"
-                      src="https://i.imgur.com/ppPEuDs.jpg"
-                    />
-                  </div>
-                </div>
+                  Blog 1 
+                </h1>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </a>
-    <button
-      class="c13 c14"
-      type="button"
-    >
-      <span
-        class="c15"
+      </a>
+      <button
+        class="c13 c14"
+        type="button"
       >
-        Delete blog
-      </span>
-    </button>
-    <a
-      aria-label="Untitled blog (DELETED), 23to30 Dec, Tagged travel"
-      class="c0 c1 c2"
-      href="/blog/mndyd8"
-    >
-      <div
-        class="c3"
+        <span
+          class="c15"
+        >
+          Delete blog
+        </span>
+      </button>
+    </div>
+    <div>
+      <a
+        aria-label="St Ives  2018, 23to30 Dec, Tagged travel"
+        class="c0 c1 c2"
+        href="/blog/zxywvuts"
       >
         <div
-          class="c4"
-        />
-        <div
-          class="c5"
+          class="c3"
         >
           <div
-            aria-hidden="true"
-            class="c6"
+            class="c4"
+          />
+          <div
+            class="c5"
           >
             <div
-              class="c7 date container"
+              aria-hidden="true"
+              class="c6"
             >
               <div
-                class="c8"
-              >
-                <span
-                  class="c9"
-                >
-                  23-30 Dec
-                </span>
-              </div>
-              <div
-                class="c10"
-              >
-                <span
-                  class="c9"
-                >
-                  23-30
-                </span>
-              </div>
-              <div
-                class="c10"
-              >
-                <span
-                  class="c9"
-                >
-                  Dec
-                </span>
-              </div>
-            </div>
-            <div
-              class="c11"
-            >
-              <h1
-                class="c12"
-              >
-                Untitled blog (DELETED)
-              </h1>
-              <div
-                class="c16"
+                class="c7 date container"
               >
                 <div
-                  class=""
+                  class="c8"
                 >
                   <span
-                    class="c17"
-                    type="travel"
+                    class="c9"
                   >
-                    Travel
+                    23-30 Dec
+                  </span>
+                </div>
+                <div
+                  class="c10"
+                >
+                  <span
+                    class="c9"
+                  >
+                    23-30
+                  </span>
+                </div>
+                <div
+                  class="c10"
+                >
+                  <span
+                    class="c9"
+                  >
+                    Dec
                   </span>
                 </div>
               </div>
-            </div>
-            <div
-              class="c18"
-            >
               <div
-                class="c19 c20"
+                class="c11"
               >
-                <style>
-                  
+                <h1
+                  class="c12"
+                >
+                  St Ives  2018
+                </h1>
+                <div
+                  class="c16"
+                >
+                  <div
+                    class=""
+                  >
+                    <span
+                      class="c17"
+                      type="travel"
+                    >
+                      Travel
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="c18"
+              >
+                <div
+                  class="c19 c20"
+                >
+                  <style>
+                    
           .js .gg-image__img--hide-js {display: none;}
           .no-js .gg-image__img--hide-no-js {display: none;}
         
-                </style>
-                <div
-                  class="c21"
-                  style="padding-bottom: 100%;"
-                >
+                  </style>
                   <div
-                    class="c22"
+                    class="c21"
+                    style="padding-bottom: 100%;"
                   >
                     <div
-                      class="c23 c24"
+                      class="c22"
                     >
                       <div
-                        class="c25"
-                        style="margin-left: -0px;"
+                        class="c23 c24"
+                      >
+                        <div
+                          class="c25"
+                          style="margin-left: -0px;"
+                        />
+                      </div>
+                    </div>
+                    <div
+                      class="gg-image__img--hide-no-js"
+                    >
+                      <img
+                        alt="card"
+                        class="c26"
+                        src="https://i.imgur.com/ppPEuDs.jpg"
+                      />
+                      <img
+                        alt="card"
+                        class="c27"
+                        src="https://i.imgur.com/ppPEuDs.jpg"
                       />
                     </div>
-                  </div>
-                  <div
-                    class="gg-image__img--hide-no-js"
-                  >
-                    <img
-                      alt="card"
-                      class="c26"
-                      src="https://i.imgur.com/ppPEuDs.jpg"
-                    />
-                    <img
-                      alt="card"
-                      class="c27"
-                      src="https://i.imgur.com/ppPEuDs.jpg"
-                    />
-                  </div>
-                  <div
-                    class="gg-image__img--hide-js"
-                  >
-                    <img
-                      alt="card"
-                      class="c28"
-                      src="https://i.imgur.com/ppPEuDs.jpg"
-                    />
-                    <img
-                      alt="card"
-                      class="c29"
-                      src="https://i.imgur.com/ppPEuDs.jpg"
-                    />
+                    <div
+                      class="gg-image__img--hide-js"
+                    >
+                      <img
+                        alt="card"
+                        class="c28"
+                        src="https://i.imgur.com/ppPEuDs.jpg"
+                      />
+                      <img
+                        alt="card"
+                        class="c29"
+                        src="https://i.imgur.com/ppPEuDs.jpg"
+                      />
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </a>
-    <button
-      class="c30 c14"
-      disabled=""
-      type="button"
-    >
-      <span
-        class="c15"
+      </a>
+      <button
+        class="c13 c14"
+        type="button"
       >
-        Delete blog
-      </span>
-    </button>
+        <span
+          class="c15"
+        >
+          Delete blog
+        </span>
+      </button>
+    </div>
+    <div>
+      <a
+        aria-label="Untitled blog (DELETED), 23to30 Dec, Tagged travel"
+        class="c0 c1 c2"
+        href="/blog/mndyd8"
+      >
+        <div
+          class="c3"
+        >
+          <div
+            class="c4"
+          />
+          <div
+            class="c5"
+          >
+            <div
+              aria-hidden="true"
+              class="c6"
+            >
+              <div
+                class="c7 date container"
+              >
+                <div
+                  class="c8"
+                >
+                  <span
+                    class="c9"
+                  >
+                    23-30 Dec
+                  </span>
+                </div>
+                <div
+                  class="c10"
+                >
+                  <span
+                    class="c9"
+                  >
+                    23-30
+                  </span>
+                </div>
+                <div
+                  class="c10"
+                >
+                  <span
+                    class="c9"
+                  >
+                    Dec
+                  </span>
+                </div>
+              </div>
+              <div
+                class="c11"
+              >
+                <h1
+                  class="c12"
+                >
+                  Untitled blog (DELETED)
+                </h1>
+                <div
+                  class="c16"
+                >
+                  <div
+                    class=""
+                  >
+                    <span
+                      class="c17"
+                      type="travel"
+                    >
+                      Travel
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="c18"
+              >
+                <div
+                  class="c19 c20"
+                >
+                  <style>
+                    
+          .js .gg-image__img--hide-js {display: none;}
+          .no-js .gg-image__img--hide-no-js {display: none;}
+        
+                  </style>
+                  <div
+                    class="c21"
+                    style="padding-bottom: 100%;"
+                  >
+                    <div
+                      class="c22"
+                    >
+                      <div
+                        class="c23 c24"
+                      >
+                        <div
+                          class="c25"
+                          style="margin-left: -0px;"
+                        />
+                      </div>
+                    </div>
+                    <div
+                      class="gg-image__img--hide-no-js"
+                    >
+                      <img
+                        alt="card"
+                        class="c26"
+                        src="https://i.imgur.com/ppPEuDs.jpg"
+                      />
+                      <img
+                        alt="card"
+                        class="c27"
+                        src="https://i.imgur.com/ppPEuDs.jpg"
+                      />
+                    </div>
+                    <div
+                      class="gg-image__img--hide-js"
+                    >
+                      <img
+                        alt="card"
+                        class="c28"
+                        src="https://i.imgur.com/ppPEuDs.jpg"
+                      />
+                      <img
+                        alt="card"
+                        class="c29"
+                        src="https://i.imgur.com/ppPEuDs.jpg"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </a>
+      <button
+        class="c30 c14"
+        disabled=""
+        type="button"
+      >
+        <span
+          class="c15"
+        >
+          Delete blog
+        </span>
+      </button>
+    </div>
   </div>
 </div>
 `;
