@@ -160,7 +160,7 @@ exports[`<Home /> should render correctly 1`] = `
   padding: 0.375rem;
   background: rgba(0,0,0,0.1);
   border-radius: 0.2rem;
-  outline: #1e1e1e solid 1px;
+  box-shadow: 0px 0px 0px 1px #1e1e1e inset;
   color: #1e1e1e;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -175,13 +175,14 @@ exports[`<Home /> should render correctly 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  outline: none;
 }
 
 .c21:hover,
 .c21:focus,
 .c21:active {
   background: rgba(0,0,0,0.2);
-  outline-width: 2px;
+  box-shadow: 0px 0px 0px 1px #1e1e1e inset;
 }
 
 .c20 {
@@ -213,7 +214,7 @@ exports[`<Home /> should render correctly 1`] = `
   height: 1.2rem;
   background: rgba(255,255,255,0.14);
   border-radius: 0.2rem;
-  outline: #1e1e1e solid 1px;
+  box-shadow: 0px 0px 0px 1px #1e1e1e inset;
   margin-right: 0.375rem;
   display: -webkit-box;
   display: -webkit-flex;
@@ -617,7 +618,7 @@ exports[`<Home /> should render correctly 1`] = `
 @media (prefers-color-scheme:dark) {
   .c21 {
     background: rgba(255,255,255,0.2);
-    outline-color: white;
+    box-shadow: 0px 0px 0px 1px white inset;
     color: white;
   }
 }
@@ -627,13 +628,14 @@ exports[`<Home /> should render correctly 1`] = `
   .c21:focus,
   .c21:active {
     background: rgba(255,255,255,0.4);
+    box-shadow: 0px 0px 0px 2px white inset;
   }
 }
 
 @media (prefers-color-scheme:dark) {
   .c22 {
     background: rgba(0,0,0,0.2);
-    outline-color: white;
+    box-shadow: 0px 0px 0px 1px white inset;
   }
 }
 
@@ -1652,7 +1654,7 @@ exports[`<Home /> should render correctly with admin user 1`] = `
   padding: 0.375rem;
   background: rgba(0,0,0,0.1);
   border-radius: 0.2rem;
-  outline: #1e1e1e solid 1px;
+  box-shadow: 0px 0px 0px 1px #1e1e1e inset;
   color: #1e1e1e;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -1667,13 +1669,14 @@ exports[`<Home /> should render correctly with admin user 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  outline: none;
 }
 
 .c21:hover,
 .c21:focus,
 .c21:active {
   background: rgba(0,0,0,0.2);
-  outline-width: 2px;
+  box-shadow: 0px 0px 0px 1px #1e1e1e inset;
 }
 
 .c20 {
@@ -1705,7 +1708,7 @@ exports[`<Home /> should render correctly with admin user 1`] = `
   height: 1.2rem;
   background: rgba(255,255,255,0.14);
   border-radius: 0.2rem;
-  outline: #1e1e1e solid 1px;
+  box-shadow: 0px 0px 0px 1px #1e1e1e inset;
   margin-right: 0.375rem;
   display: -webkit-box;
   display: -webkit-flex;
@@ -2109,7 +2112,7 @@ exports[`<Home /> should render correctly with admin user 1`] = `
 @media (prefers-color-scheme:dark) {
   .c21 {
     background: rgba(255,255,255,0.2);
-    outline-color: white;
+    box-shadow: 0px 0px 0px 1px white inset;
     color: white;
   }
 }
@@ -2119,13 +2122,14 @@ exports[`<Home /> should render correctly with admin user 1`] = `
   .c21:focus,
   .c21:active {
     background: rgba(255,255,255,0.4);
+    box-shadow: 0px 0px 0px 2px white inset;
   }
 }
 
 @media (prefers-color-scheme:dark) {
   .c22 {
     background: rgba(0,0,0,0.2);
-    outline-color: white;
+    box-shadow: 0px 0px 0px 1px white inset;
   }
 }
 
@@ -3144,7 +3148,7 @@ exports[`<Home /> should render correctly with no user 1`] = `
   padding: 0.375rem;
   background: rgba(0,0,0,0.1);
   border-radius: 0.2rem;
-  outline: #1e1e1e solid 1px;
+  box-shadow: 0px 0px 0px 1px #1e1e1e inset;
   color: #1e1e1e;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -3159,13 +3163,14 @@ exports[`<Home /> should render correctly with no user 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  outline: none;
 }
 
 .c21:hover,
 .c21:focus,
 .c21:active {
   background: rgba(0,0,0,0.2);
-  outline-width: 2px;
+  box-shadow: 0px 0px 0px 1px #1e1e1e inset;
 }
 
 .c20 {
@@ -3197,7 +3202,7 @@ exports[`<Home /> should render correctly with no user 1`] = `
   height: 1.2rem;
   background: rgba(255,255,255,0.14);
   border-radius: 0.2rem;
-  outline: #1e1e1e solid 1px;
+  box-shadow: 0px 0px 0px 1px #1e1e1e inset;
   margin-right: 0.375rem;
   display: -webkit-box;
   display: -webkit-flex;
@@ -3601,7 +3606,7 @@ exports[`<Home /> should render correctly with no user 1`] = `
 @media (prefers-color-scheme:dark) {
   .c21 {
     background: rgba(255,255,255,0.2);
-    outline-color: white;
+    box-shadow: 0px 0px 0px 1px white inset;
     color: white;
   }
 }
@@ -3611,13 +3616,14 @@ exports[`<Home /> should render correctly with no user 1`] = `
   .c21:focus,
   .c21:active {
     background: rgba(255,255,255,0.4);
+    box-shadow: 0px 0px 0px 2px white inset;
   }
 }
 
 @media (prefers-color-scheme:dark) {
   .c22 {
     background: rgba(0,0,0,0.2);
-    outline-color: white;
+    box-shadow: 0px 0px 0px 1px white inset;
   }
 }
 
@@ -4636,7 +4642,7 @@ exports[`<Home /> should render correctly with user 1`] = `
   padding: 0.375rem;
   background: rgba(0,0,0,0.1);
   border-radius: 0.2rem;
-  outline: #1e1e1e solid 1px;
+  box-shadow: 0px 0px 0px 1px #1e1e1e inset;
   color: #1e1e1e;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -4651,13 +4657,14 @@ exports[`<Home /> should render correctly with user 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  outline: none;
 }
 
 .c21:hover,
 .c21:focus,
 .c21:active {
   background: rgba(0,0,0,0.2);
-  outline-width: 2px;
+  box-shadow: 0px 0px 0px 1px #1e1e1e inset;
 }
 
 .c20 {
@@ -4689,7 +4696,7 @@ exports[`<Home /> should render correctly with user 1`] = `
   height: 1.2rem;
   background: rgba(255,255,255,0.14);
   border-radius: 0.2rem;
-  outline: #1e1e1e solid 1px;
+  box-shadow: 0px 0px 0px 1px #1e1e1e inset;
   margin-right: 0.375rem;
   display: -webkit-box;
   display: -webkit-flex;
@@ -5093,7 +5100,7 @@ exports[`<Home /> should render correctly with user 1`] = `
 @media (prefers-color-scheme:dark) {
   .c21 {
     background: rgba(255,255,255,0.2);
-    outline-color: white;
+    box-shadow: 0px 0px 0px 1px white inset;
     color: white;
   }
 }
@@ -5103,13 +5110,14 @@ exports[`<Home /> should render correctly with user 1`] = `
   .c21:focus,
   .c21:active {
     background: rgba(255,255,255,0.4);
+    box-shadow: 0px 0px 0px 2px white inset;
   }
 }
 
 @media (prefers-color-scheme:dark) {
   .c22 {
     background: rgba(0,0,0,0.2);
-    outline-color: white;
+    box-shadow: 0px 0px 0px 1px white inset;
   }
 }
 

@@ -38,17 +38,18 @@ export const TFOptionLink = styled.a`
   padding: ${spacingXs};
   background: rgba(0, 0, 0, 0.1);
   border-radius: 0.2rem;
-  outline: ${notBlack} solid 1px;
+  box-shadow: 0px 0px 0px 1px ${notBlack} inset;
   color: ${notBlack};
   text-decoration: none;
   display: flex;
   transition: background 0.2s ease;
   min-width: calc(4 * ${spacingLg});
   align-items: center;
+  outline: none;
 
   @media (prefers-color-scheme: dark) {
     background: rgba(255, 255, 255, 0.2);
-    outline-color: white;
+    box-shadow: 0px 0px 0px 1px white inset;
     color: white;
   }
 
@@ -56,10 +57,11 @@ export const TFOptionLink = styled.a`
   &:focus,
   &:active {
     background: rgba(0, 0, 0, 0.2);
-    outline-width: 2px;
+    box-shadow: 0px 0px 0px 1px ${notBlack} inset;
 
     @media (prefers-color-scheme: dark) {
       background: rgba(255, 255, 255, 0.4);
+      box-shadow: 0px 0px 0px 2px white inset;
     }
   }
 `;
@@ -85,7 +87,7 @@ export const TFAnswerLetter = styled.div`
   height: 1.2rem;
   background: rgba(255, 255, 255, 0.14);
   border-radius: 0.2rem;
-  outline: ${notBlack} solid 1px;
+  box-shadow: 0px 0px 0px 1px ${notBlack} inset;
   margin-right: ${spacingSm};
   display: flex;
   justify-content: center;
@@ -93,6 +95,6 @@ export const TFAnswerLetter = styled.div`
 
   @media (prefers-color-scheme: dark) {
     background: rgba(0, 0, 0, 0.2);
-    outline-color: white;
+    box-shadow: 0px 0px 0px 1px white inset;
   }
 `;
