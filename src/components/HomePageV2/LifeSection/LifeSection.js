@@ -61,7 +61,7 @@ const LifeSection = props => {
         darkSrc={travel.src}
       />
       <Content>
-        <Section name="Life">
+        <Section name="Me">
           <StyledParagraph>
             I love travel, photography, and obstacle course racing.
             <br />
