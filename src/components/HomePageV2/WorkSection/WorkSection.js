@@ -2,9 +2,13 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 import withScroll, { cleanRestScrollProps } from '@george-gillams/components/scroll-container';
-import Section from '@george-gillams/components/section';
 import TextLink from 'components/common/TextLink';
-import { Content, Graphic, StyledParagraph, Wrapper } from './work-section.styles';
+import { AnimatedWrapperInner, AnimatedWrapperOuter, Content, StyledParagraph, Wrapper } from './work-section.styles';
+import { breakpointSm } from '@george-gillams/components/constants/layout';
+import { JS_CLASSNAME } from '@george-gillams/components/js-feature-detector';
+import FakeTypeform from './fake-typeform';
+
+const HIDE_CLASS_NAME = `home-page-work-seciton__typeform--hide`;
 
 const WorkSection = props => {
   const { hasBeenMostlyInView, hasBeenFullyInView, ...rest } = props;
@@ -13,22 +17,45 @@ const WorkSection = props => {
 
   return (
     <Wrapper {...rest}>
+      <style>
+        {`
+          .${JS_CLASSNAME} .${HIDE_CLASS_NAME} {
+            left: 10rem;
+            opacity: 0;
+          }
+
+          @media (min-width: ${breakpointSm}) {
+            .${JS_CLASSNAME} .${HIDE_CLASS_NAME} {
+              left: 4rem;
+              opacity: 0;
+            }
+          }
+          `}
+      </style>
       <Content>
-        <Section name="Work">
-          <StyledParagraph>
-            I&#39;m a web developer at{' '}
-            <TextLink hrefExternal href="https://typeform.com/">
-              Typeform
-            </TextLink>{' '}
-            .
-            <br />
-            I’m also an accessibility champion and design system enthusiast.
-            <br />
-            <TextLink href="/work">Learn more about my work</TextLink>
-          </StyledParagraph>
-        </Section>
+        <StyledParagraph>
+          I&#39;m a web developer at{' '}
+          <TextLink hrefExternal href="https://typeform.com/">
+            Typeform
+          </TextLink>{' '}
+          .
+          <br />
+          I’m also an accessibility champion and design system enthusiast.
+          <br />
+          <TextLink href="/work">Learn more about my work</TextLink>
+        </StyledParagraph>
       </Content>
-      <Graphic hasBeenMostlyInView={hasBeenMostlyInView || hasBeenFullyInView} />
+      <AnimatedWrapperOuter>
+        <AnimatedWrapperInner className={hasBeenMostlyInView || hasBeenFullyInView ? '' : HIDE_CLASS_NAME}>
+          <FakeTypeform
+            questionTitle="Where to?"
+            links={[
+              { text: 'My work', href: '/work' },
+              { text: 'Typeform', href: 'https://typeform.com' },
+            ]}
+          />
+        </AnimatedWrapperInner>
+      </AnimatedWrapperOuter>
     </Wrapper>
   );
 };

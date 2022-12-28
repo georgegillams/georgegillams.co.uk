@@ -24,12 +24,12 @@ exports[`<Home /> should render correctly 1`] = `
   padding-left: 1rem;
 }
 
-.c17 {
+.c14 {
   width: 1.25rem;
   height: 1.25rem;
 }
 
-.c14 {
+.c11 {
   display: inline-block;
   border-radius: 0.25rem;
   font-weight: bold;
@@ -40,14 +40,14 @@ exports[`<Home /> should render correctly 1`] = `
   fill: darkorchid;
 }
 
-.c14:focus-within,
-.c14:focus {
+.c11:focus-within,
+.c11:focus {
   position: relative;
   outline: none !important;
 }
 
-.c14:focus-within::after,
-.c14:focus::after {
+.c11:focus-within::after,
+.c11:focus::after {
   position: absolute;
   top: -0.35rem;
   right: -0.35rem;
@@ -60,12 +60,12 @@ exports[`<Home /> should render correctly 1`] = `
   pointer-events: none;
 }
 
-.c14:hover {
+.c11:hover {
   color: #44aeff;
   fill: #44aeff;
 }
 
-.c16 {
+.c13 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -75,7 +75,7 @@ exports[`<Home /> should render correctly 1`] = `
   margin-left: 0.55rem;
 }
 
-.c18 {
+.c15 {
   position: absolute;
   width: 1rem;
   height: 1rem;
@@ -89,14 +89,19 @@ exports[`<Home /> should render correctly 1`] = `
   font-weight: bold;
 }
 
-.c10 {
+.c39 {
   margin: 0;
   font-size: 2.2rem;
   font-weight: bold;
 }
 
-.c15 {
+.c12 {
   margin: 0;
+}
+
+.c19 {
+  margin: 0;
+  font-size: 1.2rem;
 }
 
 .c3 {
@@ -120,17 +125,6 @@ exports[`<Home /> should render correctly 1`] = `
 }
 
 .c9 {
-  width: 100%;
-  color: #1e1e1e;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-}
-
-.c11 {
-  margin: 3.34rem 0 0 0;
-}
-
-.c12 {
   display: inline-block;
   margin-bottom: 0;
   padding-bottom: 0;
@@ -138,11 +132,155 @@ exports[`<Home /> should render correctly 1`] = `
   margin-top: 2rem;
 }
 
-.c12:first-of-type {
+.c9:first-of-type {
   margin-top: 0.86rem;
 }
 
-.c27 {
+.c18 {
+  width: 24rem;
+  text-align: left;
+  height: 16rem;
+  background: #44aeff;
+  padding: 2rem;
+  border-radius: 0.375rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.c21 {
+  padding: 0.375rem;
+  background: rgba(0,0,0,0.1);
+  border-radius: 0.2rem;
+  outline: #1e1e1e solid 1px;
+  color: #1e1e1e;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-transition: background 0.2s ease;
+  transition: background 0.2s ease;
+  min-width: calc(4 * 2rem);
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c21:hover,
+.c21:focus,
+.c21:active {
+  background: rgba(0,0,0,0.2);
+  outline-width: 2px;
+}
+
+.c20 {
+  margin-top: 1rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+}
+
+.c20 > * {
+  margin-top: 1rem;
+}
+
+.c23 {
+  padding-top: 0.1rem;
+}
+
+.c22 {
+  padding-top: 0.1rem;
+  width: 1.2rem;
+  height: 1.2rem;
+  background: rgba(255,255,255,0.14);
+  border-radius: 0.2rem;
+  outline: #1e1e1e solid 1px;
+  margin-right: 0.375rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c7 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  text-align: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin-top: 2rem;
+}
+
+.c8 {
+  width: 100%;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  max-width: 25rem;
+  margin-right: 0;
+}
+
+.c10 {
+  font-size: 1.2rem;
+}
+
+.c16 {
+  position: relative;
+  width: 24rem;
+  height: 16rem;
+  margin-top: 2rem;
+}
+
+.c17 {
+  position: absolute;
+  left: 4rem;
+  -webkit-transition: all 0.8s ease;
+  transition: all 0.8s ease;
+  -webkit-transition-delay: 0.4s;
+  transition-delay: 0.4s;
+}
+
+.c30 {
   position: relative;
   width: 100%;
   border-radius: 0.25rem;
@@ -150,7 +288,7 @@ exports[`<Home /> should render correctly 1`] = `
   overflow: hidden;
 }
 
-.c29 {
+.c32 {
   position: absolute;
   top: 0;
   width: 13rem;
@@ -162,15 +300,15 @@ exports[`<Home /> should render correctly 1`] = `
   animation: sjjMW 3.5s ease-in-out infinite;
 }
 
-.c23 {
+.c26 {
   position: relative;
 }
 
-.c25 {
+.c28 {
   height: 0;
 }
 
-.c26 {
+.c29 {
   position: absolute;
   display: -webkit-box;
   display: -webkit-flex;
@@ -188,40 +326,10 @@ exports[`<Home /> should render correctly 1`] = `
   align-items: center;
 }
 
-.c28 {
+.c31 {
   z-index: -1;
   width: 100%;
   height: 100%;
-}
-
-.c30 {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  -webkit-transition: opacity ease-in-out 0.4s;
-  transition: opacity ease-in-out 0.4s;
-  opacity: 0;
-}
-
-.c32 {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  -webkit-transition: opacity ease-in-out 0.4s;
-  transition: opacity ease-in-out 0.4s;
-}
-
-.c31 {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  -webkit-transition: opacity ease-in-out 0.4s;
-  transition: opacity ease-in-out 0.4s;
-  opacity: 0;
-  display: none;
 }
 
 .c33 {
@@ -231,92 +339,51 @@ exports[`<Home /> should render correctly 1`] = `
   width: 100%;
   -webkit-transition: opacity ease-in-out 0.4s;
   transition: opacity ease-in-out 0.4s;
-  display: none;
-}
-
-.c21 {
-  position: relative;
-  width: 20%;
-  height: 0;
-  padding-bottom: 38.5%;
-}
-
-.c24 {
-  position: absolute;
-  top: 0;
-  width: 100%;
-  opacity: 1;
-  -webkit-transition: all 0.8s ease-in-out;
-  transition: all 0.8s ease-in-out;
-}
-
-.c19 {
-  position: relative;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  width: 100%;
-  height: 11rem;
-  padding-top: 0;
-  -webkit-box-pack: space-around;
-  -webkit-justify-content: space-around;
-  -ms-flex-pack: space-around;
-  justify-content: space-around;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.c22 {
-  -webkit-transform: rotate(-30deg);
-  -ms-transform: rotate(-30deg);
-  transform: rotate(-30deg);
-  top: 10%;
-}
-
-.c7 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  width: 100%;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  text-align: center;
-}
-
-.c8 {
-  width: 100%;
-  -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
-  max-width: 25rem;
-  margin-right: 0;
-}
-
-.c20 {
-  width: 100%;
-  -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
-  max-width: 25rem;
-  margin-left: 0;
-}
-
-.c13 {
-  font-size: 1.2rem;
+  opacity: 0;
 }
 
 .c35 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  -webkit-transition: opacity ease-in-out 0.4s;
+  transition: opacity ease-in-out 0.4s;
+}
+
+.c34 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  -webkit-transition: opacity ease-in-out 0.4s;
+  transition: opacity ease-in-out 0.4s;
+  opacity: 0;
+  display: none;
+}
+
+.c36 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  -webkit-transition: opacity ease-in-out 0.4s;
+  transition: opacity ease-in-out 0.4s;
+  display: none;
+}
+
+.c38 {
+  width: 100%;
+  color: #1e1e1e;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c40 {
+  margin: 3.34rem 0 0 0;
+}
+
+.c25 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -334,7 +401,7 @@ exports[`<Home /> should render correctly 1`] = `
   text-align: center;
 }
 
-.c38 {
+.c41 {
   font-size: 1.2rem;
 }
 
@@ -348,7 +415,7 @@ exports[`<Home /> should render correctly 1`] = `
   margin: 0 0 1rem 0;
 }
 
-.c36 {
+.c27 {
   width: 100%;
   -webkit-transition: margin 0.4s ease-in-out,-webkit-transform 0.4s ease-in-out;
   -webkit-transition: margin 0.4s ease-in-out,transform 0.4s ease-in-out;
@@ -357,7 +424,7 @@ exports[`<Home /> should render correctly 1`] = `
   width: 35%;
 }
 
-.c39 {
+.c42 {
   width: 100%;
   -webkit-transition: margin 0.4s ease-in-out,-webkit-transform 0.4s ease-in-out;
   -webkit-transition: margin 0.4s ease-in-out,transform 0.4s ease-in-out;
@@ -366,7 +433,7 @@ exports[`<Home /> should render correctly 1`] = `
   width: 55%;
 }
 
-.c40 {
+.c43 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -379,14 +446,14 @@ exports[`<Home /> should render correctly 1`] = `
   justify-content: space-between;
 }
 
-.c41 {
+.c44 {
   width: 48%;
   width: 30%;
   -webkit-transition: margin 0.8s ease-in-out,opacity 0.8s ease-in-out;
   transition: margin 0.8s ease-in-out,opacity 0.8s ease-in-out;
 }
 
-.c42 {
+.c45 {
   width: 48%;
   width: 68%;
   -webkit-transition: margin 0.8s ease-in-out,opacity 0.8s ease-in-out;
@@ -395,13 +462,13 @@ exports[`<Home /> should render correctly 1`] = `
   transition-delay: 0.4s;
 }
 
-.c46 {
+.c49 {
   position: relative;
   height: 0;
   padding-bottom: 75%;
 }
 
-.c47 {
+.c50 {
   position: absolute;
   width: 100%;
   -webkit-transition: all 0.8s ease-in-out;
@@ -410,7 +477,7 @@ exports[`<Home /> should render correctly 1`] = `
   opacity: 1;
 }
 
-.c44 {
+.c47 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -422,12 +489,12 @@ exports[`<Home /> should render correctly 1`] = `
   justify-content: center;
 }
 
-.c45 {
+.c48 {
   width: 100%;
   max-width: 90%;
 }
 
-.c51 {
+.c54 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -445,15 +512,15 @@ exports[`<Home /> should render correctly 1`] = `
   overflow: hidden;
 }
 
-.c52 {
+.c55 {
   position: relative;
 }
 
-.c53 {
+.c56 {
   font-size: 2.2rem;
 }
 
-.c54 {
+.c57 {
   position: absolute;
   top: -400%;
   width: 20rem;
@@ -469,7 +536,7 @@ exports[`<Home /> should render correctly 1`] = `
   pointer-events: none;
 }
 
-.c49 {
+.c52 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -485,7 +552,7 @@ exports[`<Home /> should render correctly 1`] = `
   text-align: left;
 }
 
-.c50 {
+.c53 {
   font-size: 1.2rem;
 }
 
@@ -494,17 +561,17 @@ exports[`<Home /> should render correctly 1`] = `
   margin-top: 1rem;
 }
 
-.c34 {
+.c24 {
   width: 100%;
   margin-top: 2rem;
 }
 
-.c43 {
+.c46 {
   width: 100%;
   margin-top: 2rem;
 }
 
-.c48 {
+.c51 {
   width: 100%;
   margin-top: 2rem;
 }
@@ -517,70 +584,56 @@ exports[`<Home /> should render correctly 1`] = `
 }
 
 @media (prefers-color-scheme:dark) {
-  .c14:focus-within::after,
-  .c14:focus::after {
+  .c11:focus-within::after,
+  .c11:focus::after {
     border-color: rgba(0,125,250,0.6);
   }
 }
 
 @media (prefers-color-scheme:dark) {
-  .c14 {
+  .c11 {
     color: orchid;
     fill: orchid;
   }
 
-  .c14:hover {
+  .c11:hover {
     color: #44aeff;
     fill: #44aeff;
   }
 }
 
 @media (prefers-color-scheme:dark) {
-  .c9 {
+  .c18 {
+    background: #005da3;
+  }
+}
+
+@media (min-width:32.25rem) {
+  .c18 {
+    padding: calc(2 * 2rem);
+  }
+}
+
+@media (prefers-color-scheme:dark) {
+  .c21 {
+    background: rgba(255,255,255,0.2);
+    outline-color: white;
     color: white;
   }
 }
 
 @media (prefers-color-scheme:dark) {
-  .c27 {
-    background-color: rgb(17,17,17);
+  .c21:hover,
+  .c21:focus,
+  .c21:active {
+    background: rgba(255,255,255,0.4);
   }
 }
 
 @media (prefers-color-scheme:dark) {
-  .c29 {
-    background-image: linear-gradient( 90deg, rgb(17,17,17), rgb(50,50,50), rgb(17,17,17) );
-  }
-}
-
-@media (prefers-color-scheme:dark) {
-  .c30 {
-    display: none;
-  }
-}
-
-@media (prefers-color-scheme:dark) {
-  .c32 {
-    display: none;
-  }
-}
-
-@media (prefers-color-scheme:dark) {
-  .c31 {
-    display: unset;
-  }
-}
-
-@media (prefers-color-scheme:dark) {
-  .c33 {
-    display: unset;
-  }
-}
-
-@media (min-width:50.25rem) {
-  .c19 {
-    height: 15rem;
-    padding-top: 2rem;
+  .c22 {
+    background: rgba(0,0,0,0.2);
+    outline-color: white;
   }
 }
 
@@ -590,6 +643,7 @@ exports[`<Home /> should render correctly 1`] = `
     -ms-flex-direction: row;
     flex-direction: row;
     text-align: left;
+    margin-top: calc(2 * 2rem);
   }
 }
 
@@ -601,14 +655,61 @@ exports[`<Home /> should render correctly 1`] = `
 }
 
 @media (min-width:50.25rem) {
-  .c20 {
-    max-width: 50%;
-    margin-left: 0.5rem;
+  .c16 {
+    margin-top: 0;
+  }
+}
+
+@media (min-width:32.25rem) {
+  .c17 {
+    left: 0;
+  }
+}
+
+@media (prefers-color-scheme:dark) {
+  .c30 {
+    background-color: rgb(17,17,17);
+  }
+}
+
+@media (prefers-color-scheme:dark) {
+  .c32 {
+    background-image: linear-gradient( 90deg, rgb(17,17,17), rgb(50,50,50), rgb(17,17,17) );
+  }
+}
+
+@media (prefers-color-scheme:dark) {
+  .c33 {
+    display: none;
+  }
+}
+
+@media (prefers-color-scheme:dark) {
+  .c35 {
+    display: none;
+  }
+}
+
+@media (prefers-color-scheme:dark) {
+  .c34 {
+    display: unset;
+  }
+}
+
+@media (prefers-color-scheme:dark) {
+  .c36 {
+    display: unset;
+  }
+}
+
+@media (prefers-color-scheme:dark) {
+  .c38 {
+    color: white;
   }
 }
 
 @media (min-width:50.25rem) {
-  .c35 {
+  .c25 {
     height: 21.6875rem;
     margin-bottom: unset;
     -webkit-flex-direction: row;
@@ -626,31 +727,31 @@ exports[`<Home /> should render correctly 1`] = `
 }
 
 @media (min-width:50.25rem) {
-  .c36 {
+  .c27 {
     display: unset;
   }
 }
 
 @media (min-width:50.25rem) {
-  .c39 {
+  .c42 {
     display: unset;
   }
 }
 
 @media (min-width:50.25rem) {
-  .c40 {
+  .c43 {
     display: none;
   }
 }
 
 @media (min-width:50.25rem) {
-  .c45 {
+  .c48 {
     max-width: 70%;
   }
 }
 
 @media (prefers-color-scheme:dark) {
-  .c54 {
+  .c57 {
     background-color: black;
   }
 }
@@ -662,19 +763,19 @@ exports[`<Home /> should render correctly 1`] = `
 }
 
 @media (min-width:50.25rem) {
-  .c34 {
+  .c24 {
     margin-top: 4rem;
   }
 }
 
 @media (min-width:50.25rem) {
-  .c43 {
+  .c46 {
     margin-top: 6rem;
   }
 }
 
 @media (min-width:50.25rem) {
-  .c48 {
+  .c51 {
     margin-top: 6rem;
   }
 }
@@ -711,252 +812,122 @@ exports[`<Home /> should render correctly 1`] = `
           <div
             class="c7"
           >
+            <style>
+              
+          .js .home-page-work-seciton__typeform--hide {
+            left: 10rem;
+            opacity: 0;
+          }
+
+          @media (min-width: 32.25rem) {
+            .js .home-page-work-seciton__typeform--hide {
+              left: 4rem;
+              opacity: 0;
+            }
+          }
+          
+            </style>
             <div
               class="c8"
             >
-              <div
-                class="c9"
+              <span
+                class="c9 c10"
               >
-                <h1
-                  class="c10 c11"
-                  id="work"
+                I'm a web developer at
+                 
+                <a
+                  aria-label="Typeform (opens in a new tab)"
+                  class="c11"
+                  href="https://typeform.com/"
+                  rel="noopener noreferrer"
+                  target="_blank"
                 >
-                  Work
-                </h1>
-                <span
-                  class="c12 c13"
+                  <span
+                    class="c12"
+                  >
+                    Typeform
+                  </span>
+                  <div
+                    class="c13"
+                  >
+                    <svg
+                      class="c14 c15"
+                      height="18"
+                      viewBox="0 0 24 24"
+                      width="18"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M12.5 11.3c.4.4 1 .4 1.4 0L19 6.2V9c0 .6.4 1 1 1s1-.4 1-1V4c0-.6-.4-1-1-1h-5c-.6 0-1 .4-1 1s.4 1 1 1h2.4l-4.9 4.9c-.4.4-.4 1 0 1.4zM19 19c0 1.1-.9 2-2 2H5c-1.1 0-2-.9-2-2V7c0-1.1.9-2 2-2h7v2H5v12h12v-7h2"
+                      />
+                    </svg>
+                  </div>
+                </a>
+                 
+                .
+                <br />
+                I’m also an accessibility champion and design system enthusiast.
+                <br />
+                <a
+                  class="c11"
+                  href="/work"
                 >
-                  I'm a web developer at
-                   
-                  <a
-                    aria-label="Typeform (opens in a new tab)"
-                    class="c14"
-                    href="https://typeform.com/"
-                    rel="noopener noreferrer"
-                    target="_blank"
+                  <span
+                    class="c12"
                   >
-                    <span
-                      class="c15"
-                    >
-                      Typeform
-                    </span>
-                    <div
-                      class="c16"
-                    >
-                      <svg
-                        class="c17 c18"
-                        height="18"
-                        viewBox="0 0 24 24"
-                        width="18"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M12.5 11.3c.4.4 1 .4 1.4 0L19 6.2V9c0 .6.4 1 1 1s1-.4 1-1V4c0-.6-.4-1-1-1h-5c-.6 0-1 .4-1 1s.4 1 1 1h2.4l-4.9 4.9c-.4.4-.4 1 0 1.4zM19 19c0 1.1-.9 2-2 2H5c-1.1 0-2-.9-2-2V7c0-1.1.9-2 2-2h7v2H5v12h12v-7h2"
-                        />
-                      </svg>
-                    </div>
-                  </a>
-                   
-                  .
-                  <br />
-                  I’m also an accessibility champion and design system enthusiast.
-                  <br />
-                  <a
-                    class="c14"
-                    href="/work"
-                  >
-                    <span
-                      class="c15"
-                    >
-                      Learn more about my work
-                    </span>
-                  </a>
-                </span>
-              </div>
+                    Learn more about my work
+                  </span>
+                </a>
+              </span>
             </div>
             <div
-              class="c19 c20"
+              class="c16"
             >
               <div
-                class="c21 c22"
+                class="c17 home-page-work-seciton__typeform--hide"
               >
-                <style>
-                  .js .home__sliding-phone--hidden {
-        top: 6rem;
-        opacity: 0;
-      }
-                </style>
                 <div
-                  class="c23 c24 home__sliding-phone--hidden"
+                  class="c18"
                 >
-                  <style>
-                    
-          .js .gg-image__img--hide-js {display: none;}
-          .no-js .gg-image__img--hide-no-js {display: none;}
-        
-                  </style>
-                  <div
-                    class="c25"
-                    style="padding-bottom: 197.80876494023903%;"
+                  <span
+                    class="c19"
                   >
-                    <div
-                      class="c26"
+                    1. 
+                    Where to?
+                  </span>
+                  <div
+                    class="c20"
+                  >
+                    <a
+                      class="c21"
+                      href="/work"
                     >
                       <div
-                        class="c27 c28"
+                        class="c22"
                       >
-                        <div
-                          class="c29"
-                          style="margin-left: -0px;"
-                        />
+                        A
                       </div>
-                    </div>
-                    <div
-                      class="gg-image__img--hide-no-js"
-                    >
-                      <img
-                        alt="A screenshot of our Backpack design principles"
-                        class="c30"
-                      />
-                      <img
-                        alt="A screenshot of our Backpack design principles"
-                        class="c31"
-                      />
-                    </div>
-                    <div
-                      class="gg-image__img--hide-js"
-                    >
-                      <img
-                        alt="A screenshot of our Backpack design principles"
-                        class="c32"
-                      />
-                      <img
-                        alt="A screenshot of our Backpack design principles"
-                        class="c33"
-                      />
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div
-                class="c21 c22"
-              >
-                <style>
-                  .js .home__sliding-phone--hidden {
-        top: 6rem;
-        opacity: 0;
-      }
-                </style>
-                <div
-                  class="c23 c24 home__sliding-phone--hidden"
-                >
-                  <style>
-                    
-          .js .gg-image__img--hide-js {display: none;}
-          .no-js .gg-image__img--hide-no-js {display: none;}
-        
-                  </style>
-                  <div
-                    class="c25"
-                    style="padding-bottom: 197.80876494023903%;"
-                  >
-                    <div
-                      class="c26"
+                      <span
+                        class="c12 c23"
+                      >
+                        My work
+                      </span>
+                    </a>
+                    <a
+                      class="c21"
+                      href="https://typeform.com"
                     >
                       <div
-                        class="c27 c28"
+                        class="c22"
                       >
-                        <div
-                          class="c29"
-                          style="margin-left: -0px;"
-                        />
+                        B
                       </div>
-                    </div>
-                    <div
-                      class="gg-image__img--hide-no-js"
-                    >
-                      <img
-                        alt="A screenshot of our bar chart component on iOS"
-                        class="c30"
-                      />
-                      <img
-                        alt="A screenshot of our bar chart component on iOS"
-                        class="c31"
-                      />
-                    </div>
-                    <div
-                      class="gg-image__img--hide-js"
-                    >
-                      <img
-                        alt="A screenshot of our bar chart component on iOS"
-                        class="c32"
-                      />
-                      <img
-                        alt="A screenshot of our bar chart component on iOS"
-                        class="c33"
-                      />
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div
-                class="c21 c22"
-              >
-                <style>
-                  .js .home__sliding-phone--hidden {
-        top: 6rem;
-        opacity: 0;
-      }
-                </style>
-                <div
-                  class="c23 c24 home__sliding-phone--hidden"
-                >
-                  <style>
-                    
-          .js .gg-image__img--hide-js {display: none;}
-          .no-js .gg-image__img--hide-no-js {display: none;}
-        
-                  </style>
-                  <div
-                    class="c25"
-                    style="padding-bottom: 197.80876494023903%;"
-                  >
-                    <div
-                      class="c26"
-                    >
-                      <div
-                        class="c27 c28"
+                      <span
+                        class="c12 c23"
                       >
-                        <div
-                          class="c29"
-                          style="margin-left: -0px;"
-                        />
-                      </div>
-                    </div>
-                    <div
-                      class="gg-image__img--hide-no-js"
-                    >
-                      <img
-                        alt="A screenshot of our flare view component on web"
-                        class="c30"
-                      />
-                      <img
-                        alt="A screenshot of our flare view component on web"
-                        class="c31"
-                      />
-                    </div>
-                    <div
-                      class="gg-image__img--hide-js"
-                    >
-                      <img
-                        alt="A screenshot of our flare view component on web"
-                        class="c32"
-                      />
-                      <img
-                        alt="A screenshot of our flare view component on web"
-                        class="c33"
-                      />
-                    </div>
+                        Typeform
+                      </span>
+                    </a>
                   </div>
                 </div>
               </div>
@@ -978,13 +949,13 @@ exports[`<Home /> should render correctly 1`] = `
         class="c5 animated-content__wrapper--hidden"
       >
         <div
-          class="c34"
+          class="c24"
         >
           <div
-            class="c35"
+            class="c25"
           >
             <div
-              class="c23 c36"
+              class="c26 c27"
               style="margin-top: 2.6rem; transform: rotate(-10.6deg);"
             >
               <style>
@@ -994,17 +965,17 @@ exports[`<Home /> should render correctly 1`] = `
         
               </style>
               <div
-                class="c25"
+                class="c28"
                 style="padding-bottom: 150%;"
               >
                 <div
-                  class="c26"
+                  class="c29"
                 >
                   <div
-                    class="c27 c28"
+                    class="c30 c31"
                   >
                     <div
-                      class="c29"
+                      class="c32"
                       style="margin-left: -0px;"
                     />
                   </div>
@@ -1014,11 +985,11 @@ exports[`<Home /> should render correctly 1`] = `
                 >
                   <img
                     alt=""
-                    class="c30"
+                    class="c33"
                   />
                   <img
                     alt=""
-                    class="c31"
+                    class="c34"
                   />
                 </div>
                 <div
@@ -1026,11 +997,11 @@ exports[`<Home /> should render correctly 1`] = `
                 >
                   <img
                     alt=""
-                    class="c32"
+                    class="c35"
                   />
                   <img
                     alt=""
-                    class="c33"
+                    class="c36"
                   />
                 </div>
               </div>
@@ -1039,36 +1010,36 @@ exports[`<Home /> should render correctly 1`] = `
               class="c37"
             >
               <div
-                class="c9"
+                class="c38"
               >
                 <h1
-                  class="c10 c11"
-                  id="life"
+                  class="c39 c40"
+                  id="me"
                 >
-                  Life
+                  Me
                 </h1>
                 <span
-                  class="c12 c38"
+                  class="c9 c41"
                 >
                   I love travel, photography, and obstacle course racing.
                   <br />
                   <a
-                    class="c14"
+                    class="c11"
                     href="/blog"
                   >
                     <span
-                      class="c15"
+                      class="c12"
                     >
                       Blog
                     </span>
                   </a>
                   <br />
                   <a
-                    class="c14"
+                    class="c11"
                     href="/photography"
                   >
                     <span
-                      class="c15"
+                      class="c12"
                     >
                       Photography
                     </span>
@@ -1076,13 +1047,13 @@ exports[`<Home /> should render correctly 1`] = `
                 </span>
               </div>
               <span
-                class="c12 c38"
+                class="c9 c41"
               >
                 I live on the south coast of the UK with my wife, cat and dog.
               </span>
             </div>
             <div
-              class="c23 c39"
+              class="c26 c42"
               style="margin-top: -0.39999999999999947rem; transform: rotate(4.6deg);"
             >
               <style>
@@ -1092,17 +1063,17 @@ exports[`<Home /> should render correctly 1`] = `
         
               </style>
               <div
-                class="c25"
+                class="c28"
                 style="padding-bottom: 66.66666666666667%;"
               >
                 <div
-                  class="c26"
+                  class="c29"
                 >
                   <div
-                    class="c27 c28"
+                    class="c30 c31"
                   >
                     <div
-                      class="c29"
+                      class="c32"
                       style="margin-left: -0px;"
                     />
                   </div>
@@ -1112,11 +1083,11 @@ exports[`<Home /> should render correctly 1`] = `
                 >
                   <img
                     alt=""
-                    class="c30"
+                    class="c33"
                   />
                   <img
                     alt=""
-                    class="c31"
+                    class="c34"
                   />
                 </div>
                 <div
@@ -1124,17 +1095,17 @@ exports[`<Home /> should render correctly 1`] = `
                 >
                   <img
                     alt=""
-                    class="c32"
+                    class="c35"
                   />
                   <img
                     alt=""
-                    class="c33"
+                    class="c36"
                   />
                 </div>
               </div>
             </div>
             <div
-              class="c40"
+              class="c43"
             >
               <style>
                 
@@ -1149,10 +1120,10 @@ exports[`<Home /> should render correctly 1`] = `
           
               </style>
               <div
-                class="c41 home__life-section-image--left-hide"
+                class="c44 home__life-section-image--left-hide"
               >
                 <div
-                  class="c23"
+                  class="c26"
                 >
                   <style>
                     
@@ -1161,17 +1132,17 @@ exports[`<Home /> should render correctly 1`] = `
         
                   </style>
                   <div
-                    class="c25"
+                    class="c28"
                     style="padding-bottom: 150%;"
                   >
                     <div
-                      class="c26"
+                      class="c29"
                     >
                       <div
-                        class="c27 c28"
+                        class="c30 c31"
                       >
                         <div
-                          class="c29"
+                          class="c32"
                           style="margin-left: -0px;"
                         />
                       </div>
@@ -1181,11 +1152,11 @@ exports[`<Home /> should render correctly 1`] = `
                     >
                       <img
                         alt=""
-                        class="c30"
+                        class="c33"
                       />
                       <img
                         alt=""
-                        class="c31"
+                        class="c34"
                       />
                     </div>
                     <div
@@ -1193,21 +1164,21 @@ exports[`<Home /> should render correctly 1`] = `
                     >
                       <img
                         alt=""
-                        class="c32"
+                        class="c35"
                       />
                       <img
                         alt=""
-                        class="c33"
+                        class="c36"
                       />
                     </div>
                   </div>
                 </div>
               </div>
               <div
-                class="c42 home__life-section-image--right-hide"
+                class="c45 home__life-section-image--right-hide"
               >
                 <div
-                  class="c23"
+                  class="c26"
                 >
                   <style>
                     
@@ -1216,17 +1187,17 @@ exports[`<Home /> should render correctly 1`] = `
         
                   </style>
                   <div
-                    class="c25"
+                    class="c28"
                     style="padding-bottom: 66.66666666666667%;"
                   >
                     <div
-                      class="c26"
+                      class="c29"
                     >
                       <div
-                        class="c27 c28"
+                        class="c30 c31"
                       >
                         <div
-                          class="c29"
+                          class="c32"
                           style="margin-left: -0px;"
                         />
                       </div>
@@ -1236,11 +1207,11 @@ exports[`<Home /> should render correctly 1`] = `
                     >
                       <img
                         alt=""
-                        class="c30"
+                        class="c33"
                       />
                       <img
                         alt=""
-                        class="c31"
+                        class="c34"
                       />
                     </div>
                     <div
@@ -1248,11 +1219,11 @@ exports[`<Home /> should render correctly 1`] = `
                     >
                       <img
                         alt=""
-                        class="c32"
+                        class="c35"
                       />
                       <img
                         alt=""
-                        class="c33"
+                        class="c36"
                       />
                     </div>
                   </div>
@@ -1264,16 +1235,16 @@ exports[`<Home /> should render correctly 1`] = `
       </div>
     </div>
     <div
-      class="c43"
+      class="c46"
     >
       <div
-        class="c44"
+        class="c47"
       >
         <div
-          class="c45"
+          class="c48"
         >
           <div
-            class="c46"
+            class="c49"
           >
             <style>
               .js .home__animated-image--hidden {
@@ -1282,7 +1253,7 @@ exports[`<Home /> should render correctly 1`] = `
           }
             </style>
             <div
-              class="c23 c47 home__animated-image--hidden"
+              class="c26 c50 home__animated-image--hidden"
             >
               <style>
                 
@@ -1291,17 +1262,17 @@ exports[`<Home /> should render correctly 1`] = `
         
               </style>
               <div
-                class="c25"
+                class="c28"
                 style="padding-bottom: 70.79494321834154%;"
               >
                 <div
-                  class="c26"
+                  class="c29"
                 >
                   <div
-                    class="c27 c28"
+                    class="c30 c31"
                   >
                     <div
-                      class="c29"
+                      class="c32"
                       style="margin-left: -0px;"
                     />
                   </div>
@@ -1311,12 +1282,12 @@ exports[`<Home /> should render correctly 1`] = `
                 >
                   <img
                     alt="Me"
-                    class="c30"
+                    class="c33"
                     src="https://i.imgur.com/L0Rm1ZC.jpg"
                   />
                   <img
                     alt="Me"
-                    class="c31"
+                    class="c34"
                     src="https://i.imgur.com/L0Rm1ZC.jpg"
                   />
                 </div>
@@ -1325,12 +1296,12 @@ exports[`<Home /> should render correctly 1`] = `
                 >
                   <img
                     alt="Me"
-                    class="c32"
+                    class="c35"
                     src="https://i.imgur.com/L0Rm1ZC.jpg"
                   />
                   <img
                     alt="Me"
-                    class="c33"
+                    class="c36"
                     src="https://i.imgur.com/L0Rm1ZC.jpg"
                   />
                 </div>
@@ -1353,33 +1324,33 @@ exports[`<Home /> should render correctly 1`] = `
         class="c5 animated-content__wrapper--hidden"
       >
         <div
-          class="c48"
+          class="c51"
         >
           <div
-            class="c49"
+            class="c52"
           >
             <span
-              class="c12 c50"
+              class="c9 c53"
             >
               This site is built in
                
               <a
                 aria-label="React (opens in a new tab)"
-                class="c14"
+                class="c11"
                 href="https://reactjs.org/"
                 rel="noopener noreferrer"
                 target="_blank"
               >
                 <span
-                  class="c15"
+                  class="c12"
                 >
                   React
                 </span>
                 <div
-                  class="c16"
+                  class="c13"
                 >
                   <svg
-                    class="c17 c18"
+                    class="c14 c15"
                     height="18"
                     viewBox="0 0 24 24"
                     width="18"
@@ -1396,21 +1367,21 @@ exports[`<Home /> should render correctly 1`] = `
                
               <a
                 aria-label="Redux (opens in a new tab)"
-                class="c14"
+                class="c11"
                 href="https://redux.js.org/"
                 rel="noopener noreferrer"
                 target="_blank"
               >
                 <span
-                  class="c15"
+                  class="c12"
                 >
                   Redux
                 </span>
                 <div
-                  class="c16"
+                  class="c13"
                 >
                   <svg
-                    class="c17 c18"
+                    class="c14 c15"
                     height="18"
                     viewBox="0 0 24 24"
                     width="18"
@@ -1427,21 +1398,21 @@ exports[`<Home /> should render correctly 1`] = `
                
               <a
                 aria-label="Next.js (opens in a new tab)"
-                class="c14"
+                class="c11"
                 href="https://nextjs.org/"
                 rel="noopener noreferrer"
                 target="_blank"
               >
                 <span
-                  class="c15"
+                  class="c12"
                 >
                   Next.js
                 </span>
                 <div
-                  class="c16"
+                  class="c13"
                 >
                   <svg
-                    class="c17 c18"
+                    class="c14 c15"
                     height="18"
                     viewBox="0 0 24 24"
                     width="18"
@@ -1457,21 +1428,21 @@ exports[`<Home /> should render correctly 1`] = `
                
               <a
                 aria-label="AWS (opens in a new tab)"
-                class="c14"
+                class="c11"
                 href="https://aws.amazon.com/"
                 rel="noopener noreferrer"
                 target="_blank"
               >
                 <span
-                  class="c15"
+                  class="c12"
                 >
                   AWS
                 </span>
                 <div
-                  class="c16"
+                  class="c13"
                 >
                   <svg
-                    class="c17 c18"
+                    class="c14 c15"
                     height="18"
                     viewBox="0 0 24 24"
                     width="18"
@@ -1486,7 +1457,7 @@ exports[`<Home /> should render correctly 1`] = `
               . I use it to experiment with things, share stuff I've figured out, and allow people to contact me.
             </span>
             <div
-              class="c51"
+              class="c54"
             >
               <style>
                 
@@ -1495,20 +1466,20 @@ exports[`<Home /> should render correctly 1`] = `
         }
               </style>
               <div
-                class="c52"
+                class="c55"
               >
                 <a
-                  class="c14 c53"
+                  class="c11 c56"
                   href="/contact"
                 >
                   <span
-                    class="c15"
+                    class="c12"
                   >
                     Get in touch
                   </span>
                 </a>
                 <div
-                  class="c54 home__contact--hide"
+                  class="c57 home__contact--hide"
                   style="left: 300%;"
                 />
               </div>
@@ -1545,12 +1516,12 @@ exports[`<Home /> should render correctly with admin user 1`] = `
   padding-left: 1rem;
 }
 
-.c17 {
+.c14 {
   width: 1.25rem;
   height: 1.25rem;
 }
 
-.c14 {
+.c11 {
   display: inline-block;
   border-radius: 0.25rem;
   font-weight: bold;
@@ -1561,14 +1532,14 @@ exports[`<Home /> should render correctly with admin user 1`] = `
   fill: darkorchid;
 }
 
-.c14:focus-within,
-.c14:focus {
+.c11:focus-within,
+.c11:focus {
   position: relative;
   outline: none !important;
 }
 
-.c14:focus-within::after,
-.c14:focus::after {
+.c11:focus-within::after,
+.c11:focus::after {
   position: absolute;
   top: -0.35rem;
   right: -0.35rem;
@@ -1581,12 +1552,12 @@ exports[`<Home /> should render correctly with admin user 1`] = `
   pointer-events: none;
 }
 
-.c14:hover {
+.c11:hover {
   color: #44aeff;
   fill: #44aeff;
 }
 
-.c16 {
+.c13 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -1596,7 +1567,7 @@ exports[`<Home /> should render correctly with admin user 1`] = `
   margin-left: 0.55rem;
 }
 
-.c18 {
+.c15 {
   position: absolute;
   width: 1rem;
   height: 1rem;
@@ -1610,14 +1581,19 @@ exports[`<Home /> should render correctly with admin user 1`] = `
   font-weight: bold;
 }
 
-.c10 {
+.c39 {
   margin: 0;
   font-size: 2.2rem;
   font-weight: bold;
 }
 
-.c15 {
+.c12 {
   margin: 0;
+}
+
+.c19 {
+  margin: 0;
+  font-size: 1.2rem;
 }
 
 .c3 {
@@ -1641,17 +1617,6 @@ exports[`<Home /> should render correctly with admin user 1`] = `
 }
 
 .c9 {
-  width: 100%;
-  color: #1e1e1e;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-}
-
-.c11 {
-  margin: 3.34rem 0 0 0;
-}
-
-.c12 {
   display: inline-block;
   margin-bottom: 0;
   padding-bottom: 0;
@@ -1659,11 +1624,155 @@ exports[`<Home /> should render correctly with admin user 1`] = `
   margin-top: 2rem;
 }
 
-.c12:first-of-type {
+.c9:first-of-type {
   margin-top: 0.86rem;
 }
 
-.c27 {
+.c18 {
+  width: 24rem;
+  text-align: left;
+  height: 16rem;
+  background: #44aeff;
+  padding: 2rem;
+  border-radius: 0.375rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.c21 {
+  padding: 0.375rem;
+  background: rgba(0,0,0,0.1);
+  border-radius: 0.2rem;
+  outline: #1e1e1e solid 1px;
+  color: #1e1e1e;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-transition: background 0.2s ease;
+  transition: background 0.2s ease;
+  min-width: calc(4 * 2rem);
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c21:hover,
+.c21:focus,
+.c21:active {
+  background: rgba(0,0,0,0.2);
+  outline-width: 2px;
+}
+
+.c20 {
+  margin-top: 1rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+}
+
+.c20 > * {
+  margin-top: 1rem;
+}
+
+.c23 {
+  padding-top: 0.1rem;
+}
+
+.c22 {
+  padding-top: 0.1rem;
+  width: 1.2rem;
+  height: 1.2rem;
+  background: rgba(255,255,255,0.14);
+  border-radius: 0.2rem;
+  outline: #1e1e1e solid 1px;
+  margin-right: 0.375rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c7 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  text-align: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin-top: 2rem;
+}
+
+.c8 {
+  width: 100%;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  max-width: 25rem;
+  margin-right: 0;
+}
+
+.c10 {
+  font-size: 1.2rem;
+}
+
+.c16 {
+  position: relative;
+  width: 24rem;
+  height: 16rem;
+  margin-top: 2rem;
+}
+
+.c17 {
+  position: absolute;
+  left: 4rem;
+  -webkit-transition: all 0.8s ease;
+  transition: all 0.8s ease;
+  -webkit-transition-delay: 0.4s;
+  transition-delay: 0.4s;
+}
+
+.c30 {
   position: relative;
   width: 100%;
   border-radius: 0.25rem;
@@ -1671,7 +1780,7 @@ exports[`<Home /> should render correctly with admin user 1`] = `
   overflow: hidden;
 }
 
-.c29 {
+.c32 {
   position: absolute;
   top: 0;
   width: 13rem;
@@ -1683,15 +1792,15 @@ exports[`<Home /> should render correctly with admin user 1`] = `
   animation: sjjMW 3.5s ease-in-out infinite;
 }
 
-.c23 {
+.c26 {
   position: relative;
 }
 
-.c25 {
+.c28 {
   height: 0;
 }
 
-.c26 {
+.c29 {
   position: absolute;
   display: -webkit-box;
   display: -webkit-flex;
@@ -1709,40 +1818,10 @@ exports[`<Home /> should render correctly with admin user 1`] = `
   align-items: center;
 }
 
-.c28 {
+.c31 {
   z-index: -1;
   width: 100%;
   height: 100%;
-}
-
-.c30 {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  -webkit-transition: opacity ease-in-out 0.4s;
-  transition: opacity ease-in-out 0.4s;
-  opacity: 0;
-}
-
-.c32 {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  -webkit-transition: opacity ease-in-out 0.4s;
-  transition: opacity ease-in-out 0.4s;
-}
-
-.c31 {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  -webkit-transition: opacity ease-in-out 0.4s;
-  transition: opacity ease-in-out 0.4s;
-  opacity: 0;
-  display: none;
 }
 
 .c33 {
@@ -1752,92 +1831,51 @@ exports[`<Home /> should render correctly with admin user 1`] = `
   width: 100%;
   -webkit-transition: opacity ease-in-out 0.4s;
   transition: opacity ease-in-out 0.4s;
-  display: none;
-}
-
-.c21 {
-  position: relative;
-  width: 20%;
-  height: 0;
-  padding-bottom: 38.5%;
-}
-
-.c24 {
-  position: absolute;
-  top: 0;
-  width: 100%;
-  opacity: 1;
-  -webkit-transition: all 0.8s ease-in-out;
-  transition: all 0.8s ease-in-out;
-}
-
-.c19 {
-  position: relative;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  width: 100%;
-  height: 11rem;
-  padding-top: 0;
-  -webkit-box-pack: space-around;
-  -webkit-justify-content: space-around;
-  -ms-flex-pack: space-around;
-  justify-content: space-around;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.c22 {
-  -webkit-transform: rotate(-30deg);
-  -ms-transform: rotate(-30deg);
-  transform: rotate(-30deg);
-  top: 10%;
-}
-
-.c7 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  width: 100%;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  text-align: center;
-}
-
-.c8 {
-  width: 100%;
-  -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
-  max-width: 25rem;
-  margin-right: 0;
-}
-
-.c20 {
-  width: 100%;
-  -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
-  max-width: 25rem;
-  margin-left: 0;
-}
-
-.c13 {
-  font-size: 1.2rem;
+  opacity: 0;
 }
 
 .c35 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  -webkit-transition: opacity ease-in-out 0.4s;
+  transition: opacity ease-in-out 0.4s;
+}
+
+.c34 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  -webkit-transition: opacity ease-in-out 0.4s;
+  transition: opacity ease-in-out 0.4s;
+  opacity: 0;
+  display: none;
+}
+
+.c36 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  -webkit-transition: opacity ease-in-out 0.4s;
+  transition: opacity ease-in-out 0.4s;
+  display: none;
+}
+
+.c38 {
+  width: 100%;
+  color: #1e1e1e;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c40 {
+  margin: 3.34rem 0 0 0;
+}
+
+.c25 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1855,7 +1893,7 @@ exports[`<Home /> should render correctly with admin user 1`] = `
   text-align: center;
 }
 
-.c38 {
+.c41 {
   font-size: 1.2rem;
 }
 
@@ -1869,7 +1907,7 @@ exports[`<Home /> should render correctly with admin user 1`] = `
   margin: 0 0 1rem 0;
 }
 
-.c36 {
+.c27 {
   width: 100%;
   -webkit-transition: margin 0.4s ease-in-out,-webkit-transform 0.4s ease-in-out;
   -webkit-transition: margin 0.4s ease-in-out,transform 0.4s ease-in-out;
@@ -1878,7 +1916,7 @@ exports[`<Home /> should render correctly with admin user 1`] = `
   width: 35%;
 }
 
-.c39 {
+.c42 {
   width: 100%;
   -webkit-transition: margin 0.4s ease-in-out,-webkit-transform 0.4s ease-in-out;
   -webkit-transition: margin 0.4s ease-in-out,transform 0.4s ease-in-out;
@@ -1887,7 +1925,7 @@ exports[`<Home /> should render correctly with admin user 1`] = `
   width: 55%;
 }
 
-.c40 {
+.c43 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1900,14 +1938,14 @@ exports[`<Home /> should render correctly with admin user 1`] = `
   justify-content: space-between;
 }
 
-.c41 {
+.c44 {
   width: 48%;
   width: 30%;
   -webkit-transition: margin 0.8s ease-in-out,opacity 0.8s ease-in-out;
   transition: margin 0.8s ease-in-out,opacity 0.8s ease-in-out;
 }
 
-.c42 {
+.c45 {
   width: 48%;
   width: 68%;
   -webkit-transition: margin 0.8s ease-in-out,opacity 0.8s ease-in-out;
@@ -1916,13 +1954,13 @@ exports[`<Home /> should render correctly with admin user 1`] = `
   transition-delay: 0.4s;
 }
 
-.c46 {
+.c49 {
   position: relative;
   height: 0;
   padding-bottom: 75%;
 }
 
-.c47 {
+.c50 {
   position: absolute;
   width: 100%;
   -webkit-transition: all 0.8s ease-in-out;
@@ -1931,7 +1969,7 @@ exports[`<Home /> should render correctly with admin user 1`] = `
   opacity: 1;
 }
 
-.c44 {
+.c47 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1943,12 +1981,12 @@ exports[`<Home /> should render correctly with admin user 1`] = `
   justify-content: center;
 }
 
-.c45 {
+.c48 {
   width: 100%;
   max-width: 90%;
 }
 
-.c51 {
+.c54 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1966,15 +2004,15 @@ exports[`<Home /> should render correctly with admin user 1`] = `
   overflow: hidden;
 }
 
-.c52 {
+.c55 {
   position: relative;
 }
 
-.c53 {
+.c56 {
   font-size: 2.2rem;
 }
 
-.c54 {
+.c57 {
   position: absolute;
   top: -400%;
   width: 20rem;
@@ -1990,7 +2028,7 @@ exports[`<Home /> should render correctly with admin user 1`] = `
   pointer-events: none;
 }
 
-.c49 {
+.c52 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2006,7 +2044,7 @@ exports[`<Home /> should render correctly with admin user 1`] = `
   text-align: left;
 }
 
-.c50 {
+.c53 {
   font-size: 1.2rem;
 }
 
@@ -2015,17 +2053,17 @@ exports[`<Home /> should render correctly with admin user 1`] = `
   margin-top: 1rem;
 }
 
-.c34 {
+.c24 {
   width: 100%;
   margin-top: 2rem;
 }
 
-.c43 {
+.c46 {
   width: 100%;
   margin-top: 2rem;
 }
 
-.c48 {
+.c51 {
   width: 100%;
   margin-top: 2rem;
 }
@@ -2038,70 +2076,56 @@ exports[`<Home /> should render correctly with admin user 1`] = `
 }
 
 @media (prefers-color-scheme:dark) {
-  .c14:focus-within::after,
-  .c14:focus::after {
+  .c11:focus-within::after,
+  .c11:focus::after {
     border-color: rgba(0,125,250,0.6);
   }
 }
 
 @media (prefers-color-scheme:dark) {
-  .c14 {
+  .c11 {
     color: orchid;
     fill: orchid;
   }
 
-  .c14:hover {
+  .c11:hover {
     color: #44aeff;
     fill: #44aeff;
   }
 }
 
 @media (prefers-color-scheme:dark) {
-  .c9 {
+  .c18 {
+    background: #005da3;
+  }
+}
+
+@media (min-width:32.25rem) {
+  .c18 {
+    padding: calc(2 * 2rem);
+  }
+}
+
+@media (prefers-color-scheme:dark) {
+  .c21 {
+    background: rgba(255,255,255,0.2);
+    outline-color: white;
     color: white;
   }
 }
 
 @media (prefers-color-scheme:dark) {
-  .c27 {
-    background-color: rgb(17,17,17);
+  .c21:hover,
+  .c21:focus,
+  .c21:active {
+    background: rgba(255,255,255,0.4);
   }
 }
 
 @media (prefers-color-scheme:dark) {
-  .c29 {
-    background-image: linear-gradient( 90deg, rgb(17,17,17), rgb(50,50,50), rgb(17,17,17) );
-  }
-}
-
-@media (prefers-color-scheme:dark) {
-  .c30 {
-    display: none;
-  }
-}
-
-@media (prefers-color-scheme:dark) {
-  .c32 {
-    display: none;
-  }
-}
-
-@media (prefers-color-scheme:dark) {
-  .c31 {
-    display: unset;
-  }
-}
-
-@media (prefers-color-scheme:dark) {
-  .c33 {
-    display: unset;
-  }
-}
-
-@media (min-width:50.25rem) {
-  .c19 {
-    height: 15rem;
-    padding-top: 2rem;
+  .c22 {
+    background: rgba(0,0,0,0.2);
+    outline-color: white;
   }
 }
 
@@ -2111,6 +2135,7 @@ exports[`<Home /> should render correctly with admin user 1`] = `
     -ms-flex-direction: row;
     flex-direction: row;
     text-align: left;
+    margin-top: calc(2 * 2rem);
   }
 }
 
@@ -2122,14 +2147,61 @@ exports[`<Home /> should render correctly with admin user 1`] = `
 }
 
 @media (min-width:50.25rem) {
-  .c20 {
-    max-width: 50%;
-    margin-left: 0.5rem;
+  .c16 {
+    margin-top: 0;
+  }
+}
+
+@media (min-width:32.25rem) {
+  .c17 {
+    left: 0;
+  }
+}
+
+@media (prefers-color-scheme:dark) {
+  .c30 {
+    background-color: rgb(17,17,17);
+  }
+}
+
+@media (prefers-color-scheme:dark) {
+  .c32 {
+    background-image: linear-gradient( 90deg, rgb(17,17,17), rgb(50,50,50), rgb(17,17,17) );
+  }
+}
+
+@media (prefers-color-scheme:dark) {
+  .c33 {
+    display: none;
+  }
+}
+
+@media (prefers-color-scheme:dark) {
+  .c35 {
+    display: none;
+  }
+}
+
+@media (prefers-color-scheme:dark) {
+  .c34 {
+    display: unset;
+  }
+}
+
+@media (prefers-color-scheme:dark) {
+  .c36 {
+    display: unset;
+  }
+}
+
+@media (prefers-color-scheme:dark) {
+  .c38 {
+    color: white;
   }
 }
 
 @media (min-width:50.25rem) {
-  .c35 {
+  .c25 {
     height: 21.6875rem;
     margin-bottom: unset;
     -webkit-flex-direction: row;
@@ -2147,31 +2219,31 @@ exports[`<Home /> should render correctly with admin user 1`] = `
 }
 
 @media (min-width:50.25rem) {
-  .c36 {
+  .c27 {
     display: unset;
   }
 }
 
 @media (min-width:50.25rem) {
-  .c39 {
+  .c42 {
     display: unset;
   }
 }
 
 @media (min-width:50.25rem) {
-  .c40 {
+  .c43 {
     display: none;
   }
 }
 
 @media (min-width:50.25rem) {
-  .c45 {
+  .c48 {
     max-width: 70%;
   }
 }
 
 @media (prefers-color-scheme:dark) {
-  .c54 {
+  .c57 {
     background-color: black;
   }
 }
@@ -2183,19 +2255,19 @@ exports[`<Home /> should render correctly with admin user 1`] = `
 }
 
 @media (min-width:50.25rem) {
-  .c34 {
+  .c24 {
     margin-top: 4rem;
   }
 }
 
 @media (min-width:50.25rem) {
-  .c43 {
+  .c46 {
     margin-top: 6rem;
   }
 }
 
 @media (min-width:50.25rem) {
-  .c48 {
+  .c51 {
     margin-top: 6rem;
   }
 }
@@ -2232,252 +2304,122 @@ exports[`<Home /> should render correctly with admin user 1`] = `
           <div
             class="c7"
           >
+            <style>
+              
+          .js .home-page-work-seciton__typeform--hide {
+            left: 10rem;
+            opacity: 0;
+          }
+
+          @media (min-width: 32.25rem) {
+            .js .home-page-work-seciton__typeform--hide {
+              left: 4rem;
+              opacity: 0;
+            }
+          }
+          
+            </style>
             <div
               class="c8"
             >
-              <div
-                class="c9"
+              <span
+                class="c9 c10"
               >
-                <h1
-                  class="c10 c11"
-                  id="work"
+                I'm a web developer at
+                 
+                <a
+                  aria-label="Typeform (opens in a new tab)"
+                  class="c11"
+                  href="https://typeform.com/"
+                  rel="noopener noreferrer"
+                  target="_blank"
                 >
-                  Work
-                </h1>
-                <span
-                  class="c12 c13"
+                  <span
+                    class="c12"
+                  >
+                    Typeform
+                  </span>
+                  <div
+                    class="c13"
+                  >
+                    <svg
+                      class="c14 c15"
+                      height="18"
+                      viewBox="0 0 24 24"
+                      width="18"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M12.5 11.3c.4.4 1 .4 1.4 0L19 6.2V9c0 .6.4 1 1 1s1-.4 1-1V4c0-.6-.4-1-1-1h-5c-.6 0-1 .4-1 1s.4 1 1 1h2.4l-4.9 4.9c-.4.4-.4 1 0 1.4zM19 19c0 1.1-.9 2-2 2H5c-1.1 0-2-.9-2-2V7c0-1.1.9-2 2-2h7v2H5v12h12v-7h2"
+                      />
+                    </svg>
+                  </div>
+                </a>
+                 
+                .
+                <br />
+                I’m also an accessibility champion and design system enthusiast.
+                <br />
+                <a
+                  class="c11"
+                  href="/work"
                 >
-                  I'm a web developer at
-                   
-                  <a
-                    aria-label="Typeform (opens in a new tab)"
-                    class="c14"
-                    href="https://typeform.com/"
-                    rel="noopener noreferrer"
-                    target="_blank"
+                  <span
+                    class="c12"
                   >
-                    <span
-                      class="c15"
-                    >
-                      Typeform
-                    </span>
-                    <div
-                      class="c16"
-                    >
-                      <svg
-                        class="c17 c18"
-                        height="18"
-                        viewBox="0 0 24 24"
-                        width="18"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M12.5 11.3c.4.4 1 .4 1.4 0L19 6.2V9c0 .6.4 1 1 1s1-.4 1-1V4c0-.6-.4-1-1-1h-5c-.6 0-1 .4-1 1s.4 1 1 1h2.4l-4.9 4.9c-.4.4-.4 1 0 1.4zM19 19c0 1.1-.9 2-2 2H5c-1.1 0-2-.9-2-2V7c0-1.1.9-2 2-2h7v2H5v12h12v-7h2"
-                        />
-                      </svg>
-                    </div>
-                  </a>
-                   
-                  .
-                  <br />
-                  I’m also an accessibility champion and design system enthusiast.
-                  <br />
-                  <a
-                    class="c14"
-                    href="/work"
-                  >
-                    <span
-                      class="c15"
-                    >
-                      Learn more about my work
-                    </span>
-                  </a>
-                </span>
-              </div>
+                    Learn more about my work
+                  </span>
+                </a>
+              </span>
             </div>
             <div
-              class="c19 c20"
+              class="c16"
             >
               <div
-                class="c21 c22"
+                class="c17 home-page-work-seciton__typeform--hide"
               >
-                <style>
-                  .js .home__sliding-phone--hidden {
-        top: 6rem;
-        opacity: 0;
-      }
-                </style>
                 <div
-                  class="c23 c24 home__sliding-phone--hidden"
+                  class="c18"
                 >
-                  <style>
-                    
-          .js .gg-image__img--hide-js {display: none;}
-          .no-js .gg-image__img--hide-no-js {display: none;}
-        
-                  </style>
-                  <div
-                    class="c25"
-                    style="padding-bottom: 197.80876494023903%;"
+                  <span
+                    class="c19"
                   >
-                    <div
-                      class="c26"
+                    1. 
+                    Where to?
+                  </span>
+                  <div
+                    class="c20"
+                  >
+                    <a
+                      class="c21"
+                      href="/work"
                     >
                       <div
-                        class="c27 c28"
+                        class="c22"
                       >
-                        <div
-                          class="c29"
-                          style="margin-left: -0px;"
-                        />
+                        A
                       </div>
-                    </div>
-                    <div
-                      class="gg-image__img--hide-no-js"
-                    >
-                      <img
-                        alt="A screenshot of our Backpack design principles"
-                        class="c30"
-                      />
-                      <img
-                        alt="A screenshot of our Backpack design principles"
-                        class="c31"
-                      />
-                    </div>
-                    <div
-                      class="gg-image__img--hide-js"
-                    >
-                      <img
-                        alt="A screenshot of our Backpack design principles"
-                        class="c32"
-                      />
-                      <img
-                        alt="A screenshot of our Backpack design principles"
-                        class="c33"
-                      />
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div
-                class="c21 c22"
-              >
-                <style>
-                  .js .home__sliding-phone--hidden {
-        top: 6rem;
-        opacity: 0;
-      }
-                </style>
-                <div
-                  class="c23 c24 home__sliding-phone--hidden"
-                >
-                  <style>
-                    
-          .js .gg-image__img--hide-js {display: none;}
-          .no-js .gg-image__img--hide-no-js {display: none;}
-        
-                  </style>
-                  <div
-                    class="c25"
-                    style="padding-bottom: 197.80876494023903%;"
-                  >
-                    <div
-                      class="c26"
+                      <span
+                        class="c12 c23"
+                      >
+                        My work
+                      </span>
+                    </a>
+                    <a
+                      class="c21"
+                      href="https://typeform.com"
                     >
                       <div
-                        class="c27 c28"
+                        class="c22"
                       >
-                        <div
-                          class="c29"
-                          style="margin-left: -0px;"
-                        />
+                        B
                       </div>
-                    </div>
-                    <div
-                      class="gg-image__img--hide-no-js"
-                    >
-                      <img
-                        alt="A screenshot of our bar chart component on iOS"
-                        class="c30"
-                      />
-                      <img
-                        alt="A screenshot of our bar chart component on iOS"
-                        class="c31"
-                      />
-                    </div>
-                    <div
-                      class="gg-image__img--hide-js"
-                    >
-                      <img
-                        alt="A screenshot of our bar chart component on iOS"
-                        class="c32"
-                      />
-                      <img
-                        alt="A screenshot of our bar chart component on iOS"
-                        class="c33"
-                      />
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div
-                class="c21 c22"
-              >
-                <style>
-                  .js .home__sliding-phone--hidden {
-        top: 6rem;
-        opacity: 0;
-      }
-                </style>
-                <div
-                  class="c23 c24 home__sliding-phone--hidden"
-                >
-                  <style>
-                    
-          .js .gg-image__img--hide-js {display: none;}
-          .no-js .gg-image__img--hide-no-js {display: none;}
-        
-                  </style>
-                  <div
-                    class="c25"
-                    style="padding-bottom: 197.80876494023903%;"
-                  >
-                    <div
-                      class="c26"
-                    >
-                      <div
-                        class="c27 c28"
+                      <span
+                        class="c12 c23"
                       >
-                        <div
-                          class="c29"
-                          style="margin-left: -0px;"
-                        />
-                      </div>
-                    </div>
-                    <div
-                      class="gg-image__img--hide-no-js"
-                    >
-                      <img
-                        alt="A screenshot of our flare view component on web"
-                        class="c30"
-                      />
-                      <img
-                        alt="A screenshot of our flare view component on web"
-                        class="c31"
-                      />
-                    </div>
-                    <div
-                      class="gg-image__img--hide-js"
-                    >
-                      <img
-                        alt="A screenshot of our flare view component on web"
-                        class="c32"
-                      />
-                      <img
-                        alt="A screenshot of our flare view component on web"
-                        class="c33"
-                      />
-                    </div>
+                        Typeform
+                      </span>
+                    </a>
                   </div>
                 </div>
               </div>
@@ -2499,13 +2441,13 @@ exports[`<Home /> should render correctly with admin user 1`] = `
         class="c5 animated-content__wrapper--hidden"
       >
         <div
-          class="c34"
+          class="c24"
         >
           <div
-            class="c35"
+            class="c25"
           >
             <div
-              class="c23 c36"
+              class="c26 c27"
               style="margin-top: 2.6rem; transform: rotate(-10.6deg);"
             >
               <style>
@@ -2515,17 +2457,17 @@ exports[`<Home /> should render correctly with admin user 1`] = `
         
               </style>
               <div
-                class="c25"
+                class="c28"
                 style="padding-bottom: 150%;"
               >
                 <div
-                  class="c26"
+                  class="c29"
                 >
                   <div
-                    class="c27 c28"
+                    class="c30 c31"
                   >
                     <div
-                      class="c29"
+                      class="c32"
                       style="margin-left: -0px;"
                     />
                   </div>
@@ -2535,11 +2477,11 @@ exports[`<Home /> should render correctly with admin user 1`] = `
                 >
                   <img
                     alt=""
-                    class="c30"
+                    class="c33"
                   />
                   <img
                     alt=""
-                    class="c31"
+                    class="c34"
                   />
                 </div>
                 <div
@@ -2547,11 +2489,11 @@ exports[`<Home /> should render correctly with admin user 1`] = `
                 >
                   <img
                     alt=""
-                    class="c32"
+                    class="c35"
                   />
                   <img
                     alt=""
-                    class="c33"
+                    class="c36"
                   />
                 </div>
               </div>
@@ -2560,36 +2502,36 @@ exports[`<Home /> should render correctly with admin user 1`] = `
               class="c37"
             >
               <div
-                class="c9"
+                class="c38"
               >
                 <h1
-                  class="c10 c11"
-                  id="life"
+                  class="c39 c40"
+                  id="me"
                 >
-                  Life
+                  Me
                 </h1>
                 <span
-                  class="c12 c38"
+                  class="c9 c41"
                 >
                   I love travel, photography, and obstacle course racing.
                   <br />
                   <a
-                    class="c14"
+                    class="c11"
                     href="/blog"
                   >
                     <span
-                      class="c15"
+                      class="c12"
                     >
                       Blog
                     </span>
                   </a>
                   <br />
                   <a
-                    class="c14"
+                    class="c11"
                     href="/photography"
                   >
                     <span
-                      class="c15"
+                      class="c12"
                     >
                       Photography
                     </span>
@@ -2597,13 +2539,13 @@ exports[`<Home /> should render correctly with admin user 1`] = `
                 </span>
               </div>
               <span
-                class="c12 c38"
+                class="c9 c41"
               >
                 I live on the south coast of the UK with my wife, cat and dog.
               </span>
             </div>
             <div
-              class="c23 c39"
+              class="c26 c42"
               style="margin-top: -0.39999999999999947rem; transform: rotate(4.6deg);"
             >
               <style>
@@ -2613,17 +2555,17 @@ exports[`<Home /> should render correctly with admin user 1`] = `
         
               </style>
               <div
-                class="c25"
+                class="c28"
                 style="padding-bottom: 66.66666666666667%;"
               >
                 <div
-                  class="c26"
+                  class="c29"
                 >
                   <div
-                    class="c27 c28"
+                    class="c30 c31"
                   >
                     <div
-                      class="c29"
+                      class="c32"
                       style="margin-left: -0px;"
                     />
                   </div>
@@ -2633,11 +2575,11 @@ exports[`<Home /> should render correctly with admin user 1`] = `
                 >
                   <img
                     alt=""
-                    class="c30"
+                    class="c33"
                   />
                   <img
                     alt=""
-                    class="c31"
+                    class="c34"
                   />
                 </div>
                 <div
@@ -2645,17 +2587,17 @@ exports[`<Home /> should render correctly with admin user 1`] = `
                 >
                   <img
                     alt=""
-                    class="c32"
+                    class="c35"
                   />
                   <img
                     alt=""
-                    class="c33"
+                    class="c36"
                   />
                 </div>
               </div>
             </div>
             <div
-              class="c40"
+              class="c43"
             >
               <style>
                 
@@ -2670,10 +2612,10 @@ exports[`<Home /> should render correctly with admin user 1`] = `
           
               </style>
               <div
-                class="c41 home__life-section-image--left-hide"
+                class="c44 home__life-section-image--left-hide"
               >
                 <div
-                  class="c23"
+                  class="c26"
                 >
                   <style>
                     
@@ -2682,17 +2624,17 @@ exports[`<Home /> should render correctly with admin user 1`] = `
         
                   </style>
                   <div
-                    class="c25"
+                    class="c28"
                     style="padding-bottom: 150%;"
                   >
                     <div
-                      class="c26"
+                      class="c29"
                     >
                       <div
-                        class="c27 c28"
+                        class="c30 c31"
                       >
                         <div
-                          class="c29"
+                          class="c32"
                           style="margin-left: -0px;"
                         />
                       </div>
@@ -2702,11 +2644,11 @@ exports[`<Home /> should render correctly with admin user 1`] = `
                     >
                       <img
                         alt=""
-                        class="c30"
+                        class="c33"
                       />
                       <img
                         alt=""
-                        class="c31"
+                        class="c34"
                       />
                     </div>
                     <div
@@ -2714,21 +2656,21 @@ exports[`<Home /> should render correctly with admin user 1`] = `
                     >
                       <img
                         alt=""
-                        class="c32"
+                        class="c35"
                       />
                       <img
                         alt=""
-                        class="c33"
+                        class="c36"
                       />
                     </div>
                   </div>
                 </div>
               </div>
               <div
-                class="c42 home__life-section-image--right-hide"
+                class="c45 home__life-section-image--right-hide"
               >
                 <div
-                  class="c23"
+                  class="c26"
                 >
                   <style>
                     
@@ -2737,17 +2679,17 @@ exports[`<Home /> should render correctly with admin user 1`] = `
         
                   </style>
                   <div
-                    class="c25"
+                    class="c28"
                     style="padding-bottom: 66.66666666666667%;"
                   >
                     <div
-                      class="c26"
+                      class="c29"
                     >
                       <div
-                        class="c27 c28"
+                        class="c30 c31"
                       >
                         <div
-                          class="c29"
+                          class="c32"
                           style="margin-left: -0px;"
                         />
                       </div>
@@ -2757,11 +2699,11 @@ exports[`<Home /> should render correctly with admin user 1`] = `
                     >
                       <img
                         alt=""
-                        class="c30"
+                        class="c33"
                       />
                       <img
                         alt=""
-                        class="c31"
+                        class="c34"
                       />
                     </div>
                     <div
@@ -2769,11 +2711,11 @@ exports[`<Home /> should render correctly with admin user 1`] = `
                     >
                       <img
                         alt=""
-                        class="c32"
+                        class="c35"
                       />
                       <img
                         alt=""
-                        class="c33"
+                        class="c36"
                       />
                     </div>
                   </div>
@@ -2785,16 +2727,16 @@ exports[`<Home /> should render correctly with admin user 1`] = `
       </div>
     </div>
     <div
-      class="c43"
+      class="c46"
     >
       <div
-        class="c44"
+        class="c47"
       >
         <div
-          class="c45"
+          class="c48"
         >
           <div
-            class="c46"
+            class="c49"
           >
             <style>
               .js .home__animated-image--hidden {
@@ -2803,7 +2745,7 @@ exports[`<Home /> should render correctly with admin user 1`] = `
           }
             </style>
             <div
-              class="c23 c47 home__animated-image--hidden"
+              class="c26 c50 home__animated-image--hidden"
             >
               <style>
                 
@@ -2812,17 +2754,17 @@ exports[`<Home /> should render correctly with admin user 1`] = `
         
               </style>
               <div
-                class="c25"
+                class="c28"
                 style="padding-bottom: 70.79494321834154%;"
               >
                 <div
-                  class="c26"
+                  class="c29"
                 >
                   <div
-                    class="c27 c28"
+                    class="c30 c31"
                   >
                     <div
-                      class="c29"
+                      class="c32"
                       style="margin-left: -0px;"
                     />
                   </div>
@@ -2832,12 +2774,12 @@ exports[`<Home /> should render correctly with admin user 1`] = `
                 >
                   <img
                     alt="Me"
-                    class="c30"
+                    class="c33"
                     src="https://i.imgur.com/L0Rm1ZC.jpg"
                   />
                   <img
                     alt="Me"
-                    class="c31"
+                    class="c34"
                     src="https://i.imgur.com/L0Rm1ZC.jpg"
                   />
                 </div>
@@ -2846,12 +2788,12 @@ exports[`<Home /> should render correctly with admin user 1`] = `
                 >
                   <img
                     alt="Me"
-                    class="c32"
+                    class="c35"
                     src="https://i.imgur.com/L0Rm1ZC.jpg"
                   />
                   <img
                     alt="Me"
-                    class="c33"
+                    class="c36"
                     src="https://i.imgur.com/L0Rm1ZC.jpg"
                   />
                 </div>
@@ -2874,33 +2816,33 @@ exports[`<Home /> should render correctly with admin user 1`] = `
         class="c5 animated-content__wrapper--hidden"
       >
         <div
-          class="c48"
+          class="c51"
         >
           <div
-            class="c49"
+            class="c52"
           >
             <span
-              class="c12 c50"
+              class="c9 c53"
             >
               This site is built in
                
               <a
                 aria-label="React (opens in a new tab)"
-                class="c14"
+                class="c11"
                 href="https://reactjs.org/"
                 rel="noopener noreferrer"
                 target="_blank"
               >
                 <span
-                  class="c15"
+                  class="c12"
                 >
                   React
                 </span>
                 <div
-                  class="c16"
+                  class="c13"
                 >
                   <svg
-                    class="c17 c18"
+                    class="c14 c15"
                     height="18"
                     viewBox="0 0 24 24"
                     width="18"
@@ -2917,21 +2859,21 @@ exports[`<Home /> should render correctly with admin user 1`] = `
                
               <a
                 aria-label="Redux (opens in a new tab)"
-                class="c14"
+                class="c11"
                 href="https://redux.js.org/"
                 rel="noopener noreferrer"
                 target="_blank"
               >
                 <span
-                  class="c15"
+                  class="c12"
                 >
                   Redux
                 </span>
                 <div
-                  class="c16"
+                  class="c13"
                 >
                   <svg
-                    class="c17 c18"
+                    class="c14 c15"
                     height="18"
                     viewBox="0 0 24 24"
                     width="18"
@@ -2948,21 +2890,21 @@ exports[`<Home /> should render correctly with admin user 1`] = `
                
               <a
                 aria-label="Next.js (opens in a new tab)"
-                class="c14"
+                class="c11"
                 href="https://nextjs.org/"
                 rel="noopener noreferrer"
                 target="_blank"
               >
                 <span
-                  class="c15"
+                  class="c12"
                 >
                   Next.js
                 </span>
                 <div
-                  class="c16"
+                  class="c13"
                 >
                   <svg
-                    class="c17 c18"
+                    class="c14 c15"
                     height="18"
                     viewBox="0 0 24 24"
                     width="18"
@@ -2978,21 +2920,21 @@ exports[`<Home /> should render correctly with admin user 1`] = `
                
               <a
                 aria-label="AWS (opens in a new tab)"
-                class="c14"
+                class="c11"
                 href="https://aws.amazon.com/"
                 rel="noopener noreferrer"
                 target="_blank"
               >
                 <span
-                  class="c15"
+                  class="c12"
                 >
                   AWS
                 </span>
                 <div
-                  class="c16"
+                  class="c13"
                 >
                   <svg
-                    class="c17 c18"
+                    class="c14 c15"
                     height="18"
                     viewBox="0 0 24 24"
                     width="18"
@@ -3007,7 +2949,7 @@ exports[`<Home /> should render correctly with admin user 1`] = `
               . I use it to experiment with things, share stuff I've figured out, and allow people to contact me.
             </span>
             <div
-              class="c51"
+              class="c54"
             >
               <style>
                 
@@ -3016,20 +2958,20 @@ exports[`<Home /> should render correctly with admin user 1`] = `
         }
               </style>
               <div
-                class="c52"
+                class="c55"
               >
                 <a
-                  class="c14 c53"
+                  class="c11 c56"
                   href="/contact"
                 >
                   <span
-                    class="c15"
+                    class="c12"
                   >
                     Get in touch
                   </span>
                 </a>
                 <div
-                  class="c54 home__contact--hide"
+                  class="c57 home__contact--hide"
                   style="left: 300%;"
                 />
               </div>
@@ -3066,12 +3008,12 @@ exports[`<Home /> should render correctly with no user 1`] = `
   padding-left: 1rem;
 }
 
-.c17 {
+.c14 {
   width: 1.25rem;
   height: 1.25rem;
 }
 
-.c14 {
+.c11 {
   display: inline-block;
   border-radius: 0.25rem;
   font-weight: bold;
@@ -3082,14 +3024,14 @@ exports[`<Home /> should render correctly with no user 1`] = `
   fill: darkorchid;
 }
 
-.c14:focus-within,
-.c14:focus {
+.c11:focus-within,
+.c11:focus {
   position: relative;
   outline: none !important;
 }
 
-.c14:focus-within::after,
-.c14:focus::after {
+.c11:focus-within::after,
+.c11:focus::after {
   position: absolute;
   top: -0.35rem;
   right: -0.35rem;
@@ -3102,12 +3044,12 @@ exports[`<Home /> should render correctly with no user 1`] = `
   pointer-events: none;
 }
 
-.c14:hover {
+.c11:hover {
   color: #44aeff;
   fill: #44aeff;
 }
 
-.c16 {
+.c13 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -3117,7 +3059,7 @@ exports[`<Home /> should render correctly with no user 1`] = `
   margin-left: 0.55rem;
 }
 
-.c18 {
+.c15 {
   position: absolute;
   width: 1rem;
   height: 1rem;
@@ -3131,14 +3073,19 @@ exports[`<Home /> should render correctly with no user 1`] = `
   font-weight: bold;
 }
 
-.c10 {
+.c39 {
   margin: 0;
   font-size: 2.2rem;
   font-weight: bold;
 }
 
-.c15 {
+.c12 {
   margin: 0;
+}
+
+.c19 {
+  margin: 0;
+  font-size: 1.2rem;
 }
 
 .c3 {
@@ -3162,17 +3109,6 @@ exports[`<Home /> should render correctly with no user 1`] = `
 }
 
 .c9 {
-  width: 100%;
-  color: #1e1e1e;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-}
-
-.c11 {
-  margin: 3.34rem 0 0 0;
-}
-
-.c12 {
   display: inline-block;
   margin-bottom: 0;
   padding-bottom: 0;
@@ -3180,11 +3116,155 @@ exports[`<Home /> should render correctly with no user 1`] = `
   margin-top: 2rem;
 }
 
-.c12:first-of-type {
+.c9:first-of-type {
   margin-top: 0.86rem;
 }
 
-.c27 {
+.c18 {
+  width: 24rem;
+  text-align: left;
+  height: 16rem;
+  background: #44aeff;
+  padding: 2rem;
+  border-radius: 0.375rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.c21 {
+  padding: 0.375rem;
+  background: rgba(0,0,0,0.1);
+  border-radius: 0.2rem;
+  outline: #1e1e1e solid 1px;
+  color: #1e1e1e;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-transition: background 0.2s ease;
+  transition: background 0.2s ease;
+  min-width: calc(4 * 2rem);
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c21:hover,
+.c21:focus,
+.c21:active {
+  background: rgba(0,0,0,0.2);
+  outline-width: 2px;
+}
+
+.c20 {
+  margin-top: 1rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+}
+
+.c20 > * {
+  margin-top: 1rem;
+}
+
+.c23 {
+  padding-top: 0.1rem;
+}
+
+.c22 {
+  padding-top: 0.1rem;
+  width: 1.2rem;
+  height: 1.2rem;
+  background: rgba(255,255,255,0.14);
+  border-radius: 0.2rem;
+  outline: #1e1e1e solid 1px;
+  margin-right: 0.375rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c7 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  text-align: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin-top: 2rem;
+}
+
+.c8 {
+  width: 100%;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  max-width: 25rem;
+  margin-right: 0;
+}
+
+.c10 {
+  font-size: 1.2rem;
+}
+
+.c16 {
+  position: relative;
+  width: 24rem;
+  height: 16rem;
+  margin-top: 2rem;
+}
+
+.c17 {
+  position: absolute;
+  left: 4rem;
+  -webkit-transition: all 0.8s ease;
+  transition: all 0.8s ease;
+  -webkit-transition-delay: 0.4s;
+  transition-delay: 0.4s;
+}
+
+.c30 {
   position: relative;
   width: 100%;
   border-radius: 0.25rem;
@@ -3192,7 +3272,7 @@ exports[`<Home /> should render correctly with no user 1`] = `
   overflow: hidden;
 }
 
-.c29 {
+.c32 {
   position: absolute;
   top: 0;
   width: 13rem;
@@ -3204,15 +3284,15 @@ exports[`<Home /> should render correctly with no user 1`] = `
   animation: sjjMW 3.5s ease-in-out infinite;
 }
 
-.c23 {
+.c26 {
   position: relative;
 }
 
-.c25 {
+.c28 {
   height: 0;
 }
 
-.c26 {
+.c29 {
   position: absolute;
   display: -webkit-box;
   display: -webkit-flex;
@@ -3230,40 +3310,10 @@ exports[`<Home /> should render correctly with no user 1`] = `
   align-items: center;
 }
 
-.c28 {
+.c31 {
   z-index: -1;
   width: 100%;
   height: 100%;
-}
-
-.c30 {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  -webkit-transition: opacity ease-in-out 0.4s;
-  transition: opacity ease-in-out 0.4s;
-  opacity: 0;
-}
-
-.c32 {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  -webkit-transition: opacity ease-in-out 0.4s;
-  transition: opacity ease-in-out 0.4s;
-}
-
-.c31 {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  -webkit-transition: opacity ease-in-out 0.4s;
-  transition: opacity ease-in-out 0.4s;
-  opacity: 0;
-  display: none;
 }
 
 .c33 {
@@ -3273,92 +3323,51 @@ exports[`<Home /> should render correctly with no user 1`] = `
   width: 100%;
   -webkit-transition: opacity ease-in-out 0.4s;
   transition: opacity ease-in-out 0.4s;
-  display: none;
-}
-
-.c21 {
-  position: relative;
-  width: 20%;
-  height: 0;
-  padding-bottom: 38.5%;
-}
-
-.c24 {
-  position: absolute;
-  top: 0;
-  width: 100%;
-  opacity: 1;
-  -webkit-transition: all 0.8s ease-in-out;
-  transition: all 0.8s ease-in-out;
-}
-
-.c19 {
-  position: relative;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  width: 100%;
-  height: 11rem;
-  padding-top: 0;
-  -webkit-box-pack: space-around;
-  -webkit-justify-content: space-around;
-  -ms-flex-pack: space-around;
-  justify-content: space-around;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.c22 {
-  -webkit-transform: rotate(-30deg);
-  -ms-transform: rotate(-30deg);
-  transform: rotate(-30deg);
-  top: 10%;
-}
-
-.c7 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  width: 100%;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  text-align: center;
-}
-
-.c8 {
-  width: 100%;
-  -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
-  max-width: 25rem;
-  margin-right: 0;
-}
-
-.c20 {
-  width: 100%;
-  -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
-  max-width: 25rem;
-  margin-left: 0;
-}
-
-.c13 {
-  font-size: 1.2rem;
+  opacity: 0;
 }
 
 .c35 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  -webkit-transition: opacity ease-in-out 0.4s;
+  transition: opacity ease-in-out 0.4s;
+}
+
+.c34 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  -webkit-transition: opacity ease-in-out 0.4s;
+  transition: opacity ease-in-out 0.4s;
+  opacity: 0;
+  display: none;
+}
+
+.c36 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  -webkit-transition: opacity ease-in-out 0.4s;
+  transition: opacity ease-in-out 0.4s;
+  display: none;
+}
+
+.c38 {
+  width: 100%;
+  color: #1e1e1e;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c40 {
+  margin: 3.34rem 0 0 0;
+}
+
+.c25 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -3376,7 +3385,7 @@ exports[`<Home /> should render correctly with no user 1`] = `
   text-align: center;
 }
 
-.c38 {
+.c41 {
   font-size: 1.2rem;
 }
 
@@ -3390,7 +3399,7 @@ exports[`<Home /> should render correctly with no user 1`] = `
   margin: 0 0 1rem 0;
 }
 
-.c36 {
+.c27 {
   width: 100%;
   -webkit-transition: margin 0.4s ease-in-out,-webkit-transform 0.4s ease-in-out;
   -webkit-transition: margin 0.4s ease-in-out,transform 0.4s ease-in-out;
@@ -3399,7 +3408,7 @@ exports[`<Home /> should render correctly with no user 1`] = `
   width: 35%;
 }
 
-.c39 {
+.c42 {
   width: 100%;
   -webkit-transition: margin 0.4s ease-in-out,-webkit-transform 0.4s ease-in-out;
   -webkit-transition: margin 0.4s ease-in-out,transform 0.4s ease-in-out;
@@ -3408,7 +3417,7 @@ exports[`<Home /> should render correctly with no user 1`] = `
   width: 55%;
 }
 
-.c40 {
+.c43 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -3421,14 +3430,14 @@ exports[`<Home /> should render correctly with no user 1`] = `
   justify-content: space-between;
 }
 
-.c41 {
+.c44 {
   width: 48%;
   width: 30%;
   -webkit-transition: margin 0.8s ease-in-out,opacity 0.8s ease-in-out;
   transition: margin 0.8s ease-in-out,opacity 0.8s ease-in-out;
 }
 
-.c42 {
+.c45 {
   width: 48%;
   width: 68%;
   -webkit-transition: margin 0.8s ease-in-out,opacity 0.8s ease-in-out;
@@ -3437,13 +3446,13 @@ exports[`<Home /> should render correctly with no user 1`] = `
   transition-delay: 0.4s;
 }
 
-.c46 {
+.c49 {
   position: relative;
   height: 0;
   padding-bottom: 75%;
 }
 
-.c47 {
+.c50 {
   position: absolute;
   width: 100%;
   -webkit-transition: all 0.8s ease-in-out;
@@ -3452,7 +3461,7 @@ exports[`<Home /> should render correctly with no user 1`] = `
   opacity: 1;
 }
 
-.c44 {
+.c47 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -3464,12 +3473,12 @@ exports[`<Home /> should render correctly with no user 1`] = `
   justify-content: center;
 }
 
-.c45 {
+.c48 {
   width: 100%;
   max-width: 90%;
 }
 
-.c51 {
+.c54 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -3487,15 +3496,15 @@ exports[`<Home /> should render correctly with no user 1`] = `
   overflow: hidden;
 }
 
-.c52 {
+.c55 {
   position: relative;
 }
 
-.c53 {
+.c56 {
   font-size: 2.2rem;
 }
 
-.c54 {
+.c57 {
   position: absolute;
   top: -400%;
   width: 20rem;
@@ -3511,7 +3520,7 @@ exports[`<Home /> should render correctly with no user 1`] = `
   pointer-events: none;
 }
 
-.c49 {
+.c52 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -3527,7 +3536,7 @@ exports[`<Home /> should render correctly with no user 1`] = `
   text-align: left;
 }
 
-.c50 {
+.c53 {
   font-size: 1.2rem;
 }
 
@@ -3536,17 +3545,17 @@ exports[`<Home /> should render correctly with no user 1`] = `
   margin-top: 1rem;
 }
 
-.c34 {
+.c24 {
   width: 100%;
   margin-top: 2rem;
 }
 
-.c43 {
+.c46 {
   width: 100%;
   margin-top: 2rem;
 }
 
-.c48 {
+.c51 {
   width: 100%;
   margin-top: 2rem;
 }
@@ -3559,70 +3568,56 @@ exports[`<Home /> should render correctly with no user 1`] = `
 }
 
 @media (prefers-color-scheme:dark) {
-  .c14:focus-within::after,
-  .c14:focus::after {
+  .c11:focus-within::after,
+  .c11:focus::after {
     border-color: rgba(0,125,250,0.6);
   }
 }
 
 @media (prefers-color-scheme:dark) {
-  .c14 {
+  .c11 {
     color: orchid;
     fill: orchid;
   }
 
-  .c14:hover {
+  .c11:hover {
     color: #44aeff;
     fill: #44aeff;
   }
 }
 
 @media (prefers-color-scheme:dark) {
-  .c9 {
+  .c18 {
+    background: #005da3;
+  }
+}
+
+@media (min-width:32.25rem) {
+  .c18 {
+    padding: calc(2 * 2rem);
+  }
+}
+
+@media (prefers-color-scheme:dark) {
+  .c21 {
+    background: rgba(255,255,255,0.2);
+    outline-color: white;
     color: white;
   }
 }
 
 @media (prefers-color-scheme:dark) {
-  .c27 {
-    background-color: rgb(17,17,17);
+  .c21:hover,
+  .c21:focus,
+  .c21:active {
+    background: rgba(255,255,255,0.4);
   }
 }
 
 @media (prefers-color-scheme:dark) {
-  .c29 {
-    background-image: linear-gradient( 90deg, rgb(17,17,17), rgb(50,50,50), rgb(17,17,17) );
-  }
-}
-
-@media (prefers-color-scheme:dark) {
-  .c30 {
-    display: none;
-  }
-}
-
-@media (prefers-color-scheme:dark) {
-  .c32 {
-    display: none;
-  }
-}
-
-@media (prefers-color-scheme:dark) {
-  .c31 {
-    display: unset;
-  }
-}
-
-@media (prefers-color-scheme:dark) {
-  .c33 {
-    display: unset;
-  }
-}
-
-@media (min-width:50.25rem) {
-  .c19 {
-    height: 15rem;
-    padding-top: 2rem;
+  .c22 {
+    background: rgba(0,0,0,0.2);
+    outline-color: white;
   }
 }
 
@@ -3632,6 +3627,7 @@ exports[`<Home /> should render correctly with no user 1`] = `
     -ms-flex-direction: row;
     flex-direction: row;
     text-align: left;
+    margin-top: calc(2 * 2rem);
   }
 }
 
@@ -3643,14 +3639,61 @@ exports[`<Home /> should render correctly with no user 1`] = `
 }
 
 @media (min-width:50.25rem) {
-  .c20 {
-    max-width: 50%;
-    margin-left: 0.5rem;
+  .c16 {
+    margin-top: 0;
+  }
+}
+
+@media (min-width:32.25rem) {
+  .c17 {
+    left: 0;
+  }
+}
+
+@media (prefers-color-scheme:dark) {
+  .c30 {
+    background-color: rgb(17,17,17);
+  }
+}
+
+@media (prefers-color-scheme:dark) {
+  .c32 {
+    background-image: linear-gradient( 90deg, rgb(17,17,17), rgb(50,50,50), rgb(17,17,17) );
+  }
+}
+
+@media (prefers-color-scheme:dark) {
+  .c33 {
+    display: none;
+  }
+}
+
+@media (prefers-color-scheme:dark) {
+  .c35 {
+    display: none;
+  }
+}
+
+@media (prefers-color-scheme:dark) {
+  .c34 {
+    display: unset;
+  }
+}
+
+@media (prefers-color-scheme:dark) {
+  .c36 {
+    display: unset;
+  }
+}
+
+@media (prefers-color-scheme:dark) {
+  .c38 {
+    color: white;
   }
 }
 
 @media (min-width:50.25rem) {
-  .c35 {
+  .c25 {
     height: 21.6875rem;
     margin-bottom: unset;
     -webkit-flex-direction: row;
@@ -3668,31 +3711,31 @@ exports[`<Home /> should render correctly with no user 1`] = `
 }
 
 @media (min-width:50.25rem) {
-  .c36 {
+  .c27 {
     display: unset;
   }
 }
 
 @media (min-width:50.25rem) {
-  .c39 {
+  .c42 {
     display: unset;
   }
 }
 
 @media (min-width:50.25rem) {
-  .c40 {
+  .c43 {
     display: none;
   }
 }
 
 @media (min-width:50.25rem) {
-  .c45 {
+  .c48 {
     max-width: 70%;
   }
 }
 
 @media (prefers-color-scheme:dark) {
-  .c54 {
+  .c57 {
     background-color: black;
   }
 }
@@ -3704,19 +3747,19 @@ exports[`<Home /> should render correctly with no user 1`] = `
 }
 
 @media (min-width:50.25rem) {
-  .c34 {
+  .c24 {
     margin-top: 4rem;
   }
 }
 
 @media (min-width:50.25rem) {
-  .c43 {
+  .c46 {
     margin-top: 6rem;
   }
 }
 
 @media (min-width:50.25rem) {
-  .c48 {
+  .c51 {
     margin-top: 6rem;
   }
 }
@@ -3753,252 +3796,122 @@ exports[`<Home /> should render correctly with no user 1`] = `
           <div
             class="c7"
           >
+            <style>
+              
+          .js .home-page-work-seciton__typeform--hide {
+            left: 10rem;
+            opacity: 0;
+          }
+
+          @media (min-width: 32.25rem) {
+            .js .home-page-work-seciton__typeform--hide {
+              left: 4rem;
+              opacity: 0;
+            }
+          }
+          
+            </style>
             <div
               class="c8"
             >
-              <div
-                class="c9"
+              <span
+                class="c9 c10"
               >
-                <h1
-                  class="c10 c11"
-                  id="work"
+                I'm a web developer at
+                 
+                <a
+                  aria-label="Typeform (opens in a new tab)"
+                  class="c11"
+                  href="https://typeform.com/"
+                  rel="noopener noreferrer"
+                  target="_blank"
                 >
-                  Work
-                </h1>
-                <span
-                  class="c12 c13"
+                  <span
+                    class="c12"
+                  >
+                    Typeform
+                  </span>
+                  <div
+                    class="c13"
+                  >
+                    <svg
+                      class="c14 c15"
+                      height="18"
+                      viewBox="0 0 24 24"
+                      width="18"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M12.5 11.3c.4.4 1 .4 1.4 0L19 6.2V9c0 .6.4 1 1 1s1-.4 1-1V4c0-.6-.4-1-1-1h-5c-.6 0-1 .4-1 1s.4 1 1 1h2.4l-4.9 4.9c-.4.4-.4 1 0 1.4zM19 19c0 1.1-.9 2-2 2H5c-1.1 0-2-.9-2-2V7c0-1.1.9-2 2-2h7v2H5v12h12v-7h2"
+                      />
+                    </svg>
+                  </div>
+                </a>
+                 
+                .
+                <br />
+                I’m also an accessibility champion and design system enthusiast.
+                <br />
+                <a
+                  class="c11"
+                  href="/work"
                 >
-                  I'm a web developer at
-                   
-                  <a
-                    aria-label="Typeform (opens in a new tab)"
-                    class="c14"
-                    href="https://typeform.com/"
-                    rel="noopener noreferrer"
-                    target="_blank"
+                  <span
+                    class="c12"
                   >
-                    <span
-                      class="c15"
-                    >
-                      Typeform
-                    </span>
-                    <div
-                      class="c16"
-                    >
-                      <svg
-                        class="c17 c18"
-                        height="18"
-                        viewBox="0 0 24 24"
-                        width="18"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M12.5 11.3c.4.4 1 .4 1.4 0L19 6.2V9c0 .6.4 1 1 1s1-.4 1-1V4c0-.6-.4-1-1-1h-5c-.6 0-1 .4-1 1s.4 1 1 1h2.4l-4.9 4.9c-.4.4-.4 1 0 1.4zM19 19c0 1.1-.9 2-2 2H5c-1.1 0-2-.9-2-2V7c0-1.1.9-2 2-2h7v2H5v12h12v-7h2"
-                        />
-                      </svg>
-                    </div>
-                  </a>
-                   
-                  .
-                  <br />
-                  I’m also an accessibility champion and design system enthusiast.
-                  <br />
-                  <a
-                    class="c14"
-                    href="/work"
-                  >
-                    <span
-                      class="c15"
-                    >
-                      Learn more about my work
-                    </span>
-                  </a>
-                </span>
-              </div>
+                    Learn more about my work
+                  </span>
+                </a>
+              </span>
             </div>
             <div
-              class="c19 c20"
+              class="c16"
             >
               <div
-                class="c21 c22"
+                class="c17 home-page-work-seciton__typeform--hide"
               >
-                <style>
-                  .js .home__sliding-phone--hidden {
-        top: 6rem;
-        opacity: 0;
-      }
-                </style>
                 <div
-                  class="c23 c24 home__sliding-phone--hidden"
+                  class="c18"
                 >
-                  <style>
-                    
-          .js .gg-image__img--hide-js {display: none;}
-          .no-js .gg-image__img--hide-no-js {display: none;}
-        
-                  </style>
-                  <div
-                    class="c25"
-                    style="padding-bottom: 197.80876494023903%;"
+                  <span
+                    class="c19"
                   >
-                    <div
-                      class="c26"
+                    1. 
+                    Where to?
+                  </span>
+                  <div
+                    class="c20"
+                  >
+                    <a
+                      class="c21"
+                      href="/work"
                     >
                       <div
-                        class="c27 c28"
+                        class="c22"
                       >
-                        <div
-                          class="c29"
-                          style="margin-left: -0px;"
-                        />
+                        A
                       </div>
-                    </div>
-                    <div
-                      class="gg-image__img--hide-no-js"
-                    >
-                      <img
-                        alt="A screenshot of our Backpack design principles"
-                        class="c30"
-                      />
-                      <img
-                        alt="A screenshot of our Backpack design principles"
-                        class="c31"
-                      />
-                    </div>
-                    <div
-                      class="gg-image__img--hide-js"
-                    >
-                      <img
-                        alt="A screenshot of our Backpack design principles"
-                        class="c32"
-                      />
-                      <img
-                        alt="A screenshot of our Backpack design principles"
-                        class="c33"
-                      />
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div
-                class="c21 c22"
-              >
-                <style>
-                  .js .home__sliding-phone--hidden {
-        top: 6rem;
-        opacity: 0;
-      }
-                </style>
-                <div
-                  class="c23 c24 home__sliding-phone--hidden"
-                >
-                  <style>
-                    
-          .js .gg-image__img--hide-js {display: none;}
-          .no-js .gg-image__img--hide-no-js {display: none;}
-        
-                  </style>
-                  <div
-                    class="c25"
-                    style="padding-bottom: 197.80876494023903%;"
-                  >
-                    <div
-                      class="c26"
+                      <span
+                        class="c12 c23"
+                      >
+                        My work
+                      </span>
+                    </a>
+                    <a
+                      class="c21"
+                      href="https://typeform.com"
                     >
                       <div
-                        class="c27 c28"
+                        class="c22"
                       >
-                        <div
-                          class="c29"
-                          style="margin-left: -0px;"
-                        />
+                        B
                       </div>
-                    </div>
-                    <div
-                      class="gg-image__img--hide-no-js"
-                    >
-                      <img
-                        alt="A screenshot of our bar chart component on iOS"
-                        class="c30"
-                      />
-                      <img
-                        alt="A screenshot of our bar chart component on iOS"
-                        class="c31"
-                      />
-                    </div>
-                    <div
-                      class="gg-image__img--hide-js"
-                    >
-                      <img
-                        alt="A screenshot of our bar chart component on iOS"
-                        class="c32"
-                      />
-                      <img
-                        alt="A screenshot of our bar chart component on iOS"
-                        class="c33"
-                      />
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div
-                class="c21 c22"
-              >
-                <style>
-                  .js .home__sliding-phone--hidden {
-        top: 6rem;
-        opacity: 0;
-      }
-                </style>
-                <div
-                  class="c23 c24 home__sliding-phone--hidden"
-                >
-                  <style>
-                    
-          .js .gg-image__img--hide-js {display: none;}
-          .no-js .gg-image__img--hide-no-js {display: none;}
-        
-                  </style>
-                  <div
-                    class="c25"
-                    style="padding-bottom: 197.80876494023903%;"
-                  >
-                    <div
-                      class="c26"
-                    >
-                      <div
-                        class="c27 c28"
+                      <span
+                        class="c12 c23"
                       >
-                        <div
-                          class="c29"
-                          style="margin-left: -0px;"
-                        />
-                      </div>
-                    </div>
-                    <div
-                      class="gg-image__img--hide-no-js"
-                    >
-                      <img
-                        alt="A screenshot of our flare view component on web"
-                        class="c30"
-                      />
-                      <img
-                        alt="A screenshot of our flare view component on web"
-                        class="c31"
-                      />
-                    </div>
-                    <div
-                      class="gg-image__img--hide-js"
-                    >
-                      <img
-                        alt="A screenshot of our flare view component on web"
-                        class="c32"
-                      />
-                      <img
-                        alt="A screenshot of our flare view component on web"
-                        class="c33"
-                      />
-                    </div>
+                        Typeform
+                      </span>
+                    </a>
                   </div>
                 </div>
               </div>
@@ -4020,13 +3933,13 @@ exports[`<Home /> should render correctly with no user 1`] = `
         class="c5 animated-content__wrapper--hidden"
       >
         <div
-          class="c34"
+          class="c24"
         >
           <div
-            class="c35"
+            class="c25"
           >
             <div
-              class="c23 c36"
+              class="c26 c27"
               style="margin-top: 2.6rem; transform: rotate(-10.6deg);"
             >
               <style>
@@ -4036,17 +3949,17 @@ exports[`<Home /> should render correctly with no user 1`] = `
         
               </style>
               <div
-                class="c25"
+                class="c28"
                 style="padding-bottom: 150%;"
               >
                 <div
-                  class="c26"
+                  class="c29"
                 >
                   <div
-                    class="c27 c28"
+                    class="c30 c31"
                   >
                     <div
-                      class="c29"
+                      class="c32"
                       style="margin-left: -0px;"
                     />
                   </div>
@@ -4056,11 +3969,11 @@ exports[`<Home /> should render correctly with no user 1`] = `
                 >
                   <img
                     alt=""
-                    class="c30"
+                    class="c33"
                   />
                   <img
                     alt=""
-                    class="c31"
+                    class="c34"
                   />
                 </div>
                 <div
@@ -4068,11 +3981,11 @@ exports[`<Home /> should render correctly with no user 1`] = `
                 >
                   <img
                     alt=""
-                    class="c32"
+                    class="c35"
                   />
                   <img
                     alt=""
-                    class="c33"
+                    class="c36"
                   />
                 </div>
               </div>
@@ -4081,36 +3994,36 @@ exports[`<Home /> should render correctly with no user 1`] = `
               class="c37"
             >
               <div
-                class="c9"
+                class="c38"
               >
                 <h1
-                  class="c10 c11"
-                  id="life"
+                  class="c39 c40"
+                  id="me"
                 >
-                  Life
+                  Me
                 </h1>
                 <span
-                  class="c12 c38"
+                  class="c9 c41"
                 >
                   I love travel, photography, and obstacle course racing.
                   <br />
                   <a
-                    class="c14"
+                    class="c11"
                     href="/blog"
                   >
                     <span
-                      class="c15"
+                      class="c12"
                     >
                       Blog
                     </span>
                   </a>
                   <br />
                   <a
-                    class="c14"
+                    class="c11"
                     href="/photography"
                   >
                     <span
-                      class="c15"
+                      class="c12"
                     >
                       Photography
                     </span>
@@ -4118,13 +4031,13 @@ exports[`<Home /> should render correctly with no user 1`] = `
                 </span>
               </div>
               <span
-                class="c12 c38"
+                class="c9 c41"
               >
                 I live on the south coast of the UK with my wife, cat and dog.
               </span>
             </div>
             <div
-              class="c23 c39"
+              class="c26 c42"
               style="margin-top: -0.39999999999999947rem; transform: rotate(4.6deg);"
             >
               <style>
@@ -4134,17 +4047,17 @@ exports[`<Home /> should render correctly with no user 1`] = `
         
               </style>
               <div
-                class="c25"
+                class="c28"
                 style="padding-bottom: 66.66666666666667%;"
               >
                 <div
-                  class="c26"
+                  class="c29"
                 >
                   <div
-                    class="c27 c28"
+                    class="c30 c31"
                   >
                     <div
-                      class="c29"
+                      class="c32"
                       style="margin-left: -0px;"
                     />
                   </div>
@@ -4154,11 +4067,11 @@ exports[`<Home /> should render correctly with no user 1`] = `
                 >
                   <img
                     alt=""
-                    class="c30"
+                    class="c33"
                   />
                   <img
                     alt=""
-                    class="c31"
+                    class="c34"
                   />
                 </div>
                 <div
@@ -4166,17 +4079,17 @@ exports[`<Home /> should render correctly with no user 1`] = `
                 >
                   <img
                     alt=""
-                    class="c32"
+                    class="c35"
                   />
                   <img
                     alt=""
-                    class="c33"
+                    class="c36"
                   />
                 </div>
               </div>
             </div>
             <div
-              class="c40"
+              class="c43"
             >
               <style>
                 
@@ -4191,10 +4104,10 @@ exports[`<Home /> should render correctly with no user 1`] = `
           
               </style>
               <div
-                class="c41 home__life-section-image--left-hide"
+                class="c44 home__life-section-image--left-hide"
               >
                 <div
-                  class="c23"
+                  class="c26"
                 >
                   <style>
                     
@@ -4203,17 +4116,17 @@ exports[`<Home /> should render correctly with no user 1`] = `
         
                   </style>
                   <div
-                    class="c25"
+                    class="c28"
                     style="padding-bottom: 150%;"
                   >
                     <div
-                      class="c26"
+                      class="c29"
                     >
                       <div
-                        class="c27 c28"
+                        class="c30 c31"
                       >
                         <div
-                          class="c29"
+                          class="c32"
                           style="margin-left: -0px;"
                         />
                       </div>
@@ -4223,11 +4136,11 @@ exports[`<Home /> should render correctly with no user 1`] = `
                     >
                       <img
                         alt=""
-                        class="c30"
+                        class="c33"
                       />
                       <img
                         alt=""
-                        class="c31"
+                        class="c34"
                       />
                     </div>
                     <div
@@ -4235,21 +4148,21 @@ exports[`<Home /> should render correctly with no user 1`] = `
                     >
                       <img
                         alt=""
-                        class="c32"
+                        class="c35"
                       />
                       <img
                         alt=""
-                        class="c33"
+                        class="c36"
                       />
                     </div>
                   </div>
                 </div>
               </div>
               <div
-                class="c42 home__life-section-image--right-hide"
+                class="c45 home__life-section-image--right-hide"
               >
                 <div
-                  class="c23"
+                  class="c26"
                 >
                   <style>
                     
@@ -4258,17 +4171,17 @@ exports[`<Home /> should render correctly with no user 1`] = `
         
                   </style>
                   <div
-                    class="c25"
+                    class="c28"
                     style="padding-bottom: 66.66666666666667%;"
                   >
                     <div
-                      class="c26"
+                      class="c29"
                     >
                       <div
-                        class="c27 c28"
+                        class="c30 c31"
                       >
                         <div
-                          class="c29"
+                          class="c32"
                           style="margin-left: -0px;"
                         />
                       </div>
@@ -4278,11 +4191,11 @@ exports[`<Home /> should render correctly with no user 1`] = `
                     >
                       <img
                         alt=""
-                        class="c30"
+                        class="c33"
                       />
                       <img
                         alt=""
-                        class="c31"
+                        class="c34"
                       />
                     </div>
                     <div
@@ -4290,11 +4203,11 @@ exports[`<Home /> should render correctly with no user 1`] = `
                     >
                       <img
                         alt=""
-                        class="c32"
+                        class="c35"
                       />
                       <img
                         alt=""
-                        class="c33"
+                        class="c36"
                       />
                     </div>
                   </div>
@@ -4306,16 +4219,16 @@ exports[`<Home /> should render correctly with no user 1`] = `
       </div>
     </div>
     <div
-      class="c43"
+      class="c46"
     >
       <div
-        class="c44"
+        class="c47"
       >
         <div
-          class="c45"
+          class="c48"
         >
           <div
-            class="c46"
+            class="c49"
           >
             <style>
               .js .home__animated-image--hidden {
@@ -4324,7 +4237,7 @@ exports[`<Home /> should render correctly with no user 1`] = `
           }
             </style>
             <div
-              class="c23 c47 home__animated-image--hidden"
+              class="c26 c50 home__animated-image--hidden"
             >
               <style>
                 
@@ -4333,17 +4246,17 @@ exports[`<Home /> should render correctly with no user 1`] = `
         
               </style>
               <div
-                class="c25"
+                class="c28"
                 style="padding-bottom: 70.79494321834154%;"
               >
                 <div
-                  class="c26"
+                  class="c29"
                 >
                   <div
-                    class="c27 c28"
+                    class="c30 c31"
                   >
                     <div
-                      class="c29"
+                      class="c32"
                       style="margin-left: -0px;"
                     />
                   </div>
@@ -4353,12 +4266,12 @@ exports[`<Home /> should render correctly with no user 1`] = `
                 >
                   <img
                     alt="Me"
-                    class="c30"
+                    class="c33"
                     src="https://i.imgur.com/L0Rm1ZC.jpg"
                   />
                   <img
                     alt="Me"
-                    class="c31"
+                    class="c34"
                     src="https://i.imgur.com/L0Rm1ZC.jpg"
                   />
                 </div>
@@ -4367,12 +4280,12 @@ exports[`<Home /> should render correctly with no user 1`] = `
                 >
                   <img
                     alt="Me"
-                    class="c32"
+                    class="c35"
                     src="https://i.imgur.com/L0Rm1ZC.jpg"
                   />
                   <img
                     alt="Me"
-                    class="c33"
+                    class="c36"
                     src="https://i.imgur.com/L0Rm1ZC.jpg"
                   />
                 </div>
@@ -4395,33 +4308,33 @@ exports[`<Home /> should render correctly with no user 1`] = `
         class="c5 animated-content__wrapper--hidden"
       >
         <div
-          class="c48"
+          class="c51"
         >
           <div
-            class="c49"
+            class="c52"
           >
             <span
-              class="c12 c50"
+              class="c9 c53"
             >
               This site is built in
                
               <a
                 aria-label="React (opens in a new tab)"
-                class="c14"
+                class="c11"
                 href="https://reactjs.org/"
                 rel="noopener noreferrer"
                 target="_blank"
               >
                 <span
-                  class="c15"
+                  class="c12"
                 >
                   React
                 </span>
                 <div
-                  class="c16"
+                  class="c13"
                 >
                   <svg
-                    class="c17 c18"
+                    class="c14 c15"
                     height="18"
                     viewBox="0 0 24 24"
                     width="18"
@@ -4438,21 +4351,21 @@ exports[`<Home /> should render correctly with no user 1`] = `
                
               <a
                 aria-label="Redux (opens in a new tab)"
-                class="c14"
+                class="c11"
                 href="https://redux.js.org/"
                 rel="noopener noreferrer"
                 target="_blank"
               >
                 <span
-                  class="c15"
+                  class="c12"
                 >
                   Redux
                 </span>
                 <div
-                  class="c16"
+                  class="c13"
                 >
                   <svg
-                    class="c17 c18"
+                    class="c14 c15"
                     height="18"
                     viewBox="0 0 24 24"
                     width="18"
@@ -4469,21 +4382,21 @@ exports[`<Home /> should render correctly with no user 1`] = `
                
               <a
                 aria-label="Next.js (opens in a new tab)"
-                class="c14"
+                class="c11"
                 href="https://nextjs.org/"
                 rel="noopener noreferrer"
                 target="_blank"
               >
                 <span
-                  class="c15"
+                  class="c12"
                 >
                   Next.js
                 </span>
                 <div
-                  class="c16"
+                  class="c13"
                 >
                   <svg
-                    class="c17 c18"
+                    class="c14 c15"
                     height="18"
                     viewBox="0 0 24 24"
                     width="18"
@@ -4499,21 +4412,21 @@ exports[`<Home /> should render correctly with no user 1`] = `
                
               <a
                 aria-label="AWS (opens in a new tab)"
-                class="c14"
+                class="c11"
                 href="https://aws.amazon.com/"
                 rel="noopener noreferrer"
                 target="_blank"
               >
                 <span
-                  class="c15"
+                  class="c12"
                 >
                   AWS
                 </span>
                 <div
-                  class="c16"
+                  class="c13"
                 >
                   <svg
-                    class="c17 c18"
+                    class="c14 c15"
                     height="18"
                     viewBox="0 0 24 24"
                     width="18"
@@ -4528,7 +4441,7 @@ exports[`<Home /> should render correctly with no user 1`] = `
               . I use it to experiment with things, share stuff I've figured out, and allow people to contact me.
             </span>
             <div
-              class="c51"
+              class="c54"
             >
               <style>
                 
@@ -4537,20 +4450,20 @@ exports[`<Home /> should render correctly with no user 1`] = `
         }
               </style>
               <div
-                class="c52"
+                class="c55"
               >
                 <a
-                  class="c14 c53"
+                  class="c11 c56"
                   href="/contact"
                 >
                   <span
-                    class="c15"
+                    class="c12"
                   >
                     Get in touch
                   </span>
                 </a>
                 <div
-                  class="c54 home__contact--hide"
+                  class="c57 home__contact--hide"
                   style="left: 300%;"
                 />
               </div>
@@ -4587,12 +4500,12 @@ exports[`<Home /> should render correctly with user 1`] = `
   padding-left: 1rem;
 }
 
-.c17 {
+.c14 {
   width: 1.25rem;
   height: 1.25rem;
 }
 
-.c14 {
+.c11 {
   display: inline-block;
   border-radius: 0.25rem;
   font-weight: bold;
@@ -4603,14 +4516,14 @@ exports[`<Home /> should render correctly with user 1`] = `
   fill: darkorchid;
 }
 
-.c14:focus-within,
-.c14:focus {
+.c11:focus-within,
+.c11:focus {
   position: relative;
   outline: none !important;
 }
 
-.c14:focus-within::after,
-.c14:focus::after {
+.c11:focus-within::after,
+.c11:focus::after {
   position: absolute;
   top: -0.35rem;
   right: -0.35rem;
@@ -4623,12 +4536,12 @@ exports[`<Home /> should render correctly with user 1`] = `
   pointer-events: none;
 }
 
-.c14:hover {
+.c11:hover {
   color: #44aeff;
   fill: #44aeff;
 }
 
-.c16 {
+.c13 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -4638,7 +4551,7 @@ exports[`<Home /> should render correctly with user 1`] = `
   margin-left: 0.55rem;
 }
 
-.c18 {
+.c15 {
   position: absolute;
   width: 1rem;
   height: 1rem;
@@ -4652,14 +4565,19 @@ exports[`<Home /> should render correctly with user 1`] = `
   font-weight: bold;
 }
 
-.c10 {
+.c39 {
   margin: 0;
   font-size: 2.2rem;
   font-weight: bold;
 }
 
-.c15 {
+.c12 {
   margin: 0;
+}
+
+.c19 {
+  margin: 0;
+  font-size: 1.2rem;
 }
 
 .c3 {
@@ -4683,17 +4601,6 @@ exports[`<Home /> should render correctly with user 1`] = `
 }
 
 .c9 {
-  width: 100%;
-  color: #1e1e1e;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-}
-
-.c11 {
-  margin: 3.34rem 0 0 0;
-}
-
-.c12 {
   display: inline-block;
   margin-bottom: 0;
   padding-bottom: 0;
@@ -4701,11 +4608,155 @@ exports[`<Home /> should render correctly with user 1`] = `
   margin-top: 2rem;
 }
 
-.c12:first-of-type {
+.c9:first-of-type {
   margin-top: 0.86rem;
 }
 
-.c27 {
+.c18 {
+  width: 24rem;
+  text-align: left;
+  height: 16rem;
+  background: #44aeff;
+  padding: 2rem;
+  border-radius: 0.375rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.c21 {
+  padding: 0.375rem;
+  background: rgba(0,0,0,0.1);
+  border-radius: 0.2rem;
+  outline: #1e1e1e solid 1px;
+  color: #1e1e1e;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-transition: background 0.2s ease;
+  transition: background 0.2s ease;
+  min-width: calc(4 * 2rem);
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c21:hover,
+.c21:focus,
+.c21:active {
+  background: rgba(0,0,0,0.2);
+  outline-width: 2px;
+}
+
+.c20 {
+  margin-top: 1rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+}
+
+.c20 > * {
+  margin-top: 1rem;
+}
+
+.c23 {
+  padding-top: 0.1rem;
+}
+
+.c22 {
+  padding-top: 0.1rem;
+  width: 1.2rem;
+  height: 1.2rem;
+  background: rgba(255,255,255,0.14);
+  border-radius: 0.2rem;
+  outline: #1e1e1e solid 1px;
+  margin-right: 0.375rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c7 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  text-align: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin-top: 2rem;
+}
+
+.c8 {
+  width: 100%;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  max-width: 25rem;
+  margin-right: 0;
+}
+
+.c10 {
+  font-size: 1.2rem;
+}
+
+.c16 {
+  position: relative;
+  width: 24rem;
+  height: 16rem;
+  margin-top: 2rem;
+}
+
+.c17 {
+  position: absolute;
+  left: 4rem;
+  -webkit-transition: all 0.8s ease;
+  transition: all 0.8s ease;
+  -webkit-transition-delay: 0.4s;
+  transition-delay: 0.4s;
+}
+
+.c30 {
   position: relative;
   width: 100%;
   border-radius: 0.25rem;
@@ -4713,7 +4764,7 @@ exports[`<Home /> should render correctly with user 1`] = `
   overflow: hidden;
 }
 
-.c29 {
+.c32 {
   position: absolute;
   top: 0;
   width: 13rem;
@@ -4725,15 +4776,15 @@ exports[`<Home /> should render correctly with user 1`] = `
   animation: sjjMW 3.5s ease-in-out infinite;
 }
 
-.c23 {
+.c26 {
   position: relative;
 }
 
-.c25 {
+.c28 {
   height: 0;
 }
 
-.c26 {
+.c29 {
   position: absolute;
   display: -webkit-box;
   display: -webkit-flex;
@@ -4751,40 +4802,10 @@ exports[`<Home /> should render correctly with user 1`] = `
   align-items: center;
 }
 
-.c28 {
+.c31 {
   z-index: -1;
   width: 100%;
   height: 100%;
-}
-
-.c30 {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  -webkit-transition: opacity ease-in-out 0.4s;
-  transition: opacity ease-in-out 0.4s;
-  opacity: 0;
-}
-
-.c32 {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  -webkit-transition: opacity ease-in-out 0.4s;
-  transition: opacity ease-in-out 0.4s;
-}
-
-.c31 {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  -webkit-transition: opacity ease-in-out 0.4s;
-  transition: opacity ease-in-out 0.4s;
-  opacity: 0;
-  display: none;
 }
 
 .c33 {
@@ -4794,92 +4815,51 @@ exports[`<Home /> should render correctly with user 1`] = `
   width: 100%;
   -webkit-transition: opacity ease-in-out 0.4s;
   transition: opacity ease-in-out 0.4s;
-  display: none;
-}
-
-.c21 {
-  position: relative;
-  width: 20%;
-  height: 0;
-  padding-bottom: 38.5%;
-}
-
-.c24 {
-  position: absolute;
-  top: 0;
-  width: 100%;
-  opacity: 1;
-  -webkit-transition: all 0.8s ease-in-out;
-  transition: all 0.8s ease-in-out;
-}
-
-.c19 {
-  position: relative;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  width: 100%;
-  height: 11rem;
-  padding-top: 0;
-  -webkit-box-pack: space-around;
-  -webkit-justify-content: space-around;
-  -ms-flex-pack: space-around;
-  justify-content: space-around;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.c22 {
-  -webkit-transform: rotate(-30deg);
-  -ms-transform: rotate(-30deg);
-  transform: rotate(-30deg);
-  top: 10%;
-}
-
-.c7 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  width: 100%;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  text-align: center;
-}
-
-.c8 {
-  width: 100%;
-  -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
-  max-width: 25rem;
-  margin-right: 0;
-}
-
-.c20 {
-  width: 100%;
-  -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
-  max-width: 25rem;
-  margin-left: 0;
-}
-
-.c13 {
-  font-size: 1.2rem;
+  opacity: 0;
 }
 
 .c35 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  -webkit-transition: opacity ease-in-out 0.4s;
+  transition: opacity ease-in-out 0.4s;
+}
+
+.c34 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  -webkit-transition: opacity ease-in-out 0.4s;
+  transition: opacity ease-in-out 0.4s;
+  opacity: 0;
+  display: none;
+}
+
+.c36 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  -webkit-transition: opacity ease-in-out 0.4s;
+  transition: opacity ease-in-out 0.4s;
+  display: none;
+}
+
+.c38 {
+  width: 100%;
+  color: #1e1e1e;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c40 {
+  margin: 3.34rem 0 0 0;
+}
+
+.c25 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -4897,7 +4877,7 @@ exports[`<Home /> should render correctly with user 1`] = `
   text-align: center;
 }
 
-.c38 {
+.c41 {
   font-size: 1.2rem;
 }
 
@@ -4911,7 +4891,7 @@ exports[`<Home /> should render correctly with user 1`] = `
   margin: 0 0 1rem 0;
 }
 
-.c36 {
+.c27 {
   width: 100%;
   -webkit-transition: margin 0.4s ease-in-out,-webkit-transform 0.4s ease-in-out;
   -webkit-transition: margin 0.4s ease-in-out,transform 0.4s ease-in-out;
@@ -4920,7 +4900,7 @@ exports[`<Home /> should render correctly with user 1`] = `
   width: 35%;
 }
 
-.c39 {
+.c42 {
   width: 100%;
   -webkit-transition: margin 0.4s ease-in-out,-webkit-transform 0.4s ease-in-out;
   -webkit-transition: margin 0.4s ease-in-out,transform 0.4s ease-in-out;
@@ -4929,7 +4909,7 @@ exports[`<Home /> should render correctly with user 1`] = `
   width: 55%;
 }
 
-.c40 {
+.c43 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -4942,14 +4922,14 @@ exports[`<Home /> should render correctly with user 1`] = `
   justify-content: space-between;
 }
 
-.c41 {
+.c44 {
   width: 48%;
   width: 30%;
   -webkit-transition: margin 0.8s ease-in-out,opacity 0.8s ease-in-out;
   transition: margin 0.8s ease-in-out,opacity 0.8s ease-in-out;
 }
 
-.c42 {
+.c45 {
   width: 48%;
   width: 68%;
   -webkit-transition: margin 0.8s ease-in-out,opacity 0.8s ease-in-out;
@@ -4958,13 +4938,13 @@ exports[`<Home /> should render correctly with user 1`] = `
   transition-delay: 0.4s;
 }
 
-.c46 {
+.c49 {
   position: relative;
   height: 0;
   padding-bottom: 75%;
 }
 
-.c47 {
+.c50 {
   position: absolute;
   width: 100%;
   -webkit-transition: all 0.8s ease-in-out;
@@ -4973,7 +4953,7 @@ exports[`<Home /> should render correctly with user 1`] = `
   opacity: 1;
 }
 
-.c44 {
+.c47 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -4985,12 +4965,12 @@ exports[`<Home /> should render correctly with user 1`] = `
   justify-content: center;
 }
 
-.c45 {
+.c48 {
   width: 100%;
   max-width: 90%;
 }
 
-.c51 {
+.c54 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -5008,15 +4988,15 @@ exports[`<Home /> should render correctly with user 1`] = `
   overflow: hidden;
 }
 
-.c52 {
+.c55 {
   position: relative;
 }
 
-.c53 {
+.c56 {
   font-size: 2.2rem;
 }
 
-.c54 {
+.c57 {
   position: absolute;
   top: -400%;
   width: 20rem;
@@ -5032,7 +5012,7 @@ exports[`<Home /> should render correctly with user 1`] = `
   pointer-events: none;
 }
 
-.c49 {
+.c52 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -5048,7 +5028,7 @@ exports[`<Home /> should render correctly with user 1`] = `
   text-align: left;
 }
 
-.c50 {
+.c53 {
   font-size: 1.2rem;
 }
 
@@ -5057,17 +5037,17 @@ exports[`<Home /> should render correctly with user 1`] = `
   margin-top: 1rem;
 }
 
-.c34 {
+.c24 {
   width: 100%;
   margin-top: 2rem;
 }
 
-.c43 {
+.c46 {
   width: 100%;
   margin-top: 2rem;
 }
 
-.c48 {
+.c51 {
   width: 100%;
   margin-top: 2rem;
 }
@@ -5080,70 +5060,56 @@ exports[`<Home /> should render correctly with user 1`] = `
 }
 
 @media (prefers-color-scheme:dark) {
-  .c14:focus-within::after,
-  .c14:focus::after {
+  .c11:focus-within::after,
+  .c11:focus::after {
     border-color: rgba(0,125,250,0.6);
   }
 }
 
 @media (prefers-color-scheme:dark) {
-  .c14 {
+  .c11 {
     color: orchid;
     fill: orchid;
   }
 
-  .c14:hover {
+  .c11:hover {
     color: #44aeff;
     fill: #44aeff;
   }
 }
 
 @media (prefers-color-scheme:dark) {
-  .c9 {
+  .c18 {
+    background: #005da3;
+  }
+}
+
+@media (min-width:32.25rem) {
+  .c18 {
+    padding: calc(2 * 2rem);
+  }
+}
+
+@media (prefers-color-scheme:dark) {
+  .c21 {
+    background: rgba(255,255,255,0.2);
+    outline-color: white;
     color: white;
   }
 }
 
 @media (prefers-color-scheme:dark) {
-  .c27 {
-    background-color: rgb(17,17,17);
+  .c21:hover,
+  .c21:focus,
+  .c21:active {
+    background: rgba(255,255,255,0.4);
   }
 }
 
 @media (prefers-color-scheme:dark) {
-  .c29 {
-    background-image: linear-gradient( 90deg, rgb(17,17,17), rgb(50,50,50), rgb(17,17,17) );
-  }
-}
-
-@media (prefers-color-scheme:dark) {
-  .c30 {
-    display: none;
-  }
-}
-
-@media (prefers-color-scheme:dark) {
-  .c32 {
-    display: none;
-  }
-}
-
-@media (prefers-color-scheme:dark) {
-  .c31 {
-    display: unset;
-  }
-}
-
-@media (prefers-color-scheme:dark) {
-  .c33 {
-    display: unset;
-  }
-}
-
-@media (min-width:50.25rem) {
-  .c19 {
-    height: 15rem;
-    padding-top: 2rem;
+  .c22 {
+    background: rgba(0,0,0,0.2);
+    outline-color: white;
   }
 }
 
@@ -5153,6 +5119,7 @@ exports[`<Home /> should render correctly with user 1`] = `
     -ms-flex-direction: row;
     flex-direction: row;
     text-align: left;
+    margin-top: calc(2 * 2rem);
   }
 }
 
@@ -5164,14 +5131,61 @@ exports[`<Home /> should render correctly with user 1`] = `
 }
 
 @media (min-width:50.25rem) {
-  .c20 {
-    max-width: 50%;
-    margin-left: 0.5rem;
+  .c16 {
+    margin-top: 0;
+  }
+}
+
+@media (min-width:32.25rem) {
+  .c17 {
+    left: 0;
+  }
+}
+
+@media (prefers-color-scheme:dark) {
+  .c30 {
+    background-color: rgb(17,17,17);
+  }
+}
+
+@media (prefers-color-scheme:dark) {
+  .c32 {
+    background-image: linear-gradient( 90deg, rgb(17,17,17), rgb(50,50,50), rgb(17,17,17) );
+  }
+}
+
+@media (prefers-color-scheme:dark) {
+  .c33 {
+    display: none;
+  }
+}
+
+@media (prefers-color-scheme:dark) {
+  .c35 {
+    display: none;
+  }
+}
+
+@media (prefers-color-scheme:dark) {
+  .c34 {
+    display: unset;
+  }
+}
+
+@media (prefers-color-scheme:dark) {
+  .c36 {
+    display: unset;
+  }
+}
+
+@media (prefers-color-scheme:dark) {
+  .c38 {
+    color: white;
   }
 }
 
 @media (min-width:50.25rem) {
-  .c35 {
+  .c25 {
     height: 21.6875rem;
     margin-bottom: unset;
     -webkit-flex-direction: row;
@@ -5189,31 +5203,31 @@ exports[`<Home /> should render correctly with user 1`] = `
 }
 
 @media (min-width:50.25rem) {
-  .c36 {
+  .c27 {
     display: unset;
   }
 }
 
 @media (min-width:50.25rem) {
-  .c39 {
+  .c42 {
     display: unset;
   }
 }
 
 @media (min-width:50.25rem) {
-  .c40 {
+  .c43 {
     display: none;
   }
 }
 
 @media (min-width:50.25rem) {
-  .c45 {
+  .c48 {
     max-width: 70%;
   }
 }
 
 @media (prefers-color-scheme:dark) {
-  .c54 {
+  .c57 {
     background-color: black;
   }
 }
@@ -5225,19 +5239,19 @@ exports[`<Home /> should render correctly with user 1`] = `
 }
 
 @media (min-width:50.25rem) {
-  .c34 {
+  .c24 {
     margin-top: 4rem;
   }
 }
 
 @media (min-width:50.25rem) {
-  .c43 {
+  .c46 {
     margin-top: 6rem;
   }
 }
 
 @media (min-width:50.25rem) {
-  .c48 {
+  .c51 {
     margin-top: 6rem;
   }
 }
@@ -5274,252 +5288,122 @@ exports[`<Home /> should render correctly with user 1`] = `
           <div
             class="c7"
           >
+            <style>
+              
+          .js .home-page-work-seciton__typeform--hide {
+            left: 10rem;
+            opacity: 0;
+          }
+
+          @media (min-width: 32.25rem) {
+            .js .home-page-work-seciton__typeform--hide {
+              left: 4rem;
+              opacity: 0;
+            }
+          }
+          
+            </style>
             <div
               class="c8"
             >
-              <div
-                class="c9"
+              <span
+                class="c9 c10"
               >
-                <h1
-                  class="c10 c11"
-                  id="work"
+                I'm a web developer at
+                 
+                <a
+                  aria-label="Typeform (opens in a new tab)"
+                  class="c11"
+                  href="https://typeform.com/"
+                  rel="noopener noreferrer"
+                  target="_blank"
                 >
-                  Work
-                </h1>
-                <span
-                  class="c12 c13"
+                  <span
+                    class="c12"
+                  >
+                    Typeform
+                  </span>
+                  <div
+                    class="c13"
+                  >
+                    <svg
+                      class="c14 c15"
+                      height="18"
+                      viewBox="0 0 24 24"
+                      width="18"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M12.5 11.3c.4.4 1 .4 1.4 0L19 6.2V9c0 .6.4 1 1 1s1-.4 1-1V4c0-.6-.4-1-1-1h-5c-.6 0-1 .4-1 1s.4 1 1 1h2.4l-4.9 4.9c-.4.4-.4 1 0 1.4zM19 19c0 1.1-.9 2-2 2H5c-1.1 0-2-.9-2-2V7c0-1.1.9-2 2-2h7v2H5v12h12v-7h2"
+                      />
+                    </svg>
+                  </div>
+                </a>
+                 
+                .
+                <br />
+                I’m also an accessibility champion and design system enthusiast.
+                <br />
+                <a
+                  class="c11"
+                  href="/work"
                 >
-                  I'm a web developer at
-                   
-                  <a
-                    aria-label="Typeform (opens in a new tab)"
-                    class="c14"
-                    href="https://typeform.com/"
-                    rel="noopener noreferrer"
-                    target="_blank"
+                  <span
+                    class="c12"
                   >
-                    <span
-                      class="c15"
-                    >
-                      Typeform
-                    </span>
-                    <div
-                      class="c16"
-                    >
-                      <svg
-                        class="c17 c18"
-                        height="18"
-                        viewBox="0 0 24 24"
-                        width="18"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M12.5 11.3c.4.4 1 .4 1.4 0L19 6.2V9c0 .6.4 1 1 1s1-.4 1-1V4c0-.6-.4-1-1-1h-5c-.6 0-1 .4-1 1s.4 1 1 1h2.4l-4.9 4.9c-.4.4-.4 1 0 1.4zM19 19c0 1.1-.9 2-2 2H5c-1.1 0-2-.9-2-2V7c0-1.1.9-2 2-2h7v2H5v12h12v-7h2"
-                        />
-                      </svg>
-                    </div>
-                  </a>
-                   
-                  .
-                  <br />
-                  I’m also an accessibility champion and design system enthusiast.
-                  <br />
-                  <a
-                    class="c14"
-                    href="/work"
-                  >
-                    <span
-                      class="c15"
-                    >
-                      Learn more about my work
-                    </span>
-                  </a>
-                </span>
-              </div>
+                    Learn more about my work
+                  </span>
+                </a>
+              </span>
             </div>
             <div
-              class="c19 c20"
+              class="c16"
             >
               <div
-                class="c21 c22"
+                class="c17 home-page-work-seciton__typeform--hide"
               >
-                <style>
-                  .js .home__sliding-phone--hidden {
-        top: 6rem;
-        opacity: 0;
-      }
-                </style>
                 <div
-                  class="c23 c24 home__sliding-phone--hidden"
+                  class="c18"
                 >
-                  <style>
-                    
-          .js .gg-image__img--hide-js {display: none;}
-          .no-js .gg-image__img--hide-no-js {display: none;}
-        
-                  </style>
-                  <div
-                    class="c25"
-                    style="padding-bottom: 197.80876494023903%;"
+                  <span
+                    class="c19"
                   >
-                    <div
-                      class="c26"
+                    1. 
+                    Where to?
+                  </span>
+                  <div
+                    class="c20"
+                  >
+                    <a
+                      class="c21"
+                      href="/work"
                     >
                       <div
-                        class="c27 c28"
+                        class="c22"
                       >
-                        <div
-                          class="c29"
-                          style="margin-left: -0px;"
-                        />
+                        A
                       </div>
-                    </div>
-                    <div
-                      class="gg-image__img--hide-no-js"
-                    >
-                      <img
-                        alt="A screenshot of our Backpack design principles"
-                        class="c30"
-                      />
-                      <img
-                        alt="A screenshot of our Backpack design principles"
-                        class="c31"
-                      />
-                    </div>
-                    <div
-                      class="gg-image__img--hide-js"
-                    >
-                      <img
-                        alt="A screenshot of our Backpack design principles"
-                        class="c32"
-                      />
-                      <img
-                        alt="A screenshot of our Backpack design principles"
-                        class="c33"
-                      />
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div
-                class="c21 c22"
-              >
-                <style>
-                  .js .home__sliding-phone--hidden {
-        top: 6rem;
-        opacity: 0;
-      }
-                </style>
-                <div
-                  class="c23 c24 home__sliding-phone--hidden"
-                >
-                  <style>
-                    
-          .js .gg-image__img--hide-js {display: none;}
-          .no-js .gg-image__img--hide-no-js {display: none;}
-        
-                  </style>
-                  <div
-                    class="c25"
-                    style="padding-bottom: 197.80876494023903%;"
-                  >
-                    <div
-                      class="c26"
+                      <span
+                        class="c12 c23"
+                      >
+                        My work
+                      </span>
+                    </a>
+                    <a
+                      class="c21"
+                      href="https://typeform.com"
                     >
                       <div
-                        class="c27 c28"
+                        class="c22"
                       >
-                        <div
-                          class="c29"
-                          style="margin-left: -0px;"
-                        />
+                        B
                       </div>
-                    </div>
-                    <div
-                      class="gg-image__img--hide-no-js"
-                    >
-                      <img
-                        alt="A screenshot of our bar chart component on iOS"
-                        class="c30"
-                      />
-                      <img
-                        alt="A screenshot of our bar chart component on iOS"
-                        class="c31"
-                      />
-                    </div>
-                    <div
-                      class="gg-image__img--hide-js"
-                    >
-                      <img
-                        alt="A screenshot of our bar chart component on iOS"
-                        class="c32"
-                      />
-                      <img
-                        alt="A screenshot of our bar chart component on iOS"
-                        class="c33"
-                      />
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div
-                class="c21 c22"
-              >
-                <style>
-                  .js .home__sliding-phone--hidden {
-        top: 6rem;
-        opacity: 0;
-      }
-                </style>
-                <div
-                  class="c23 c24 home__sliding-phone--hidden"
-                >
-                  <style>
-                    
-          .js .gg-image__img--hide-js {display: none;}
-          .no-js .gg-image__img--hide-no-js {display: none;}
-        
-                  </style>
-                  <div
-                    class="c25"
-                    style="padding-bottom: 197.80876494023903%;"
-                  >
-                    <div
-                      class="c26"
-                    >
-                      <div
-                        class="c27 c28"
+                      <span
+                        class="c12 c23"
                       >
-                        <div
-                          class="c29"
-                          style="margin-left: -0px;"
-                        />
-                      </div>
-                    </div>
-                    <div
-                      class="gg-image__img--hide-no-js"
-                    >
-                      <img
-                        alt="A screenshot of our flare view component on web"
-                        class="c30"
-                      />
-                      <img
-                        alt="A screenshot of our flare view component on web"
-                        class="c31"
-                      />
-                    </div>
-                    <div
-                      class="gg-image__img--hide-js"
-                    >
-                      <img
-                        alt="A screenshot of our flare view component on web"
-                        class="c32"
-                      />
-                      <img
-                        alt="A screenshot of our flare view component on web"
-                        class="c33"
-                      />
-                    </div>
+                        Typeform
+                      </span>
+                    </a>
                   </div>
                 </div>
               </div>
@@ -5541,13 +5425,13 @@ exports[`<Home /> should render correctly with user 1`] = `
         class="c5 animated-content__wrapper--hidden"
       >
         <div
-          class="c34"
+          class="c24"
         >
           <div
-            class="c35"
+            class="c25"
           >
             <div
-              class="c23 c36"
+              class="c26 c27"
               style="margin-top: 2.6rem; transform: rotate(-10.6deg);"
             >
               <style>
@@ -5557,17 +5441,17 @@ exports[`<Home /> should render correctly with user 1`] = `
         
               </style>
               <div
-                class="c25"
+                class="c28"
                 style="padding-bottom: 150%;"
               >
                 <div
-                  class="c26"
+                  class="c29"
                 >
                   <div
-                    class="c27 c28"
+                    class="c30 c31"
                   >
                     <div
-                      class="c29"
+                      class="c32"
                       style="margin-left: -0px;"
                     />
                   </div>
@@ -5577,11 +5461,11 @@ exports[`<Home /> should render correctly with user 1`] = `
                 >
                   <img
                     alt=""
-                    class="c30"
+                    class="c33"
                   />
                   <img
                     alt=""
-                    class="c31"
+                    class="c34"
                   />
                 </div>
                 <div
@@ -5589,11 +5473,11 @@ exports[`<Home /> should render correctly with user 1`] = `
                 >
                   <img
                     alt=""
-                    class="c32"
+                    class="c35"
                   />
                   <img
                     alt=""
-                    class="c33"
+                    class="c36"
                   />
                 </div>
               </div>
@@ -5602,36 +5486,36 @@ exports[`<Home /> should render correctly with user 1`] = `
               class="c37"
             >
               <div
-                class="c9"
+                class="c38"
               >
                 <h1
-                  class="c10 c11"
-                  id="life"
+                  class="c39 c40"
+                  id="me"
                 >
-                  Life
+                  Me
                 </h1>
                 <span
-                  class="c12 c38"
+                  class="c9 c41"
                 >
                   I love travel, photography, and obstacle course racing.
                   <br />
                   <a
-                    class="c14"
+                    class="c11"
                     href="/blog"
                   >
                     <span
-                      class="c15"
+                      class="c12"
                     >
                       Blog
                     </span>
                   </a>
                   <br />
                   <a
-                    class="c14"
+                    class="c11"
                     href="/photography"
                   >
                     <span
-                      class="c15"
+                      class="c12"
                     >
                       Photography
                     </span>
@@ -5639,13 +5523,13 @@ exports[`<Home /> should render correctly with user 1`] = `
                 </span>
               </div>
               <span
-                class="c12 c38"
+                class="c9 c41"
               >
                 I live on the south coast of the UK with my wife, cat and dog.
               </span>
             </div>
             <div
-              class="c23 c39"
+              class="c26 c42"
               style="margin-top: -0.39999999999999947rem; transform: rotate(4.6deg);"
             >
               <style>
@@ -5655,17 +5539,17 @@ exports[`<Home /> should render correctly with user 1`] = `
         
               </style>
               <div
-                class="c25"
+                class="c28"
                 style="padding-bottom: 66.66666666666667%;"
               >
                 <div
-                  class="c26"
+                  class="c29"
                 >
                   <div
-                    class="c27 c28"
+                    class="c30 c31"
                   >
                     <div
-                      class="c29"
+                      class="c32"
                       style="margin-left: -0px;"
                     />
                   </div>
@@ -5675,11 +5559,11 @@ exports[`<Home /> should render correctly with user 1`] = `
                 >
                   <img
                     alt=""
-                    class="c30"
+                    class="c33"
                   />
                   <img
                     alt=""
-                    class="c31"
+                    class="c34"
                   />
                 </div>
                 <div
@@ -5687,17 +5571,17 @@ exports[`<Home /> should render correctly with user 1`] = `
                 >
                   <img
                     alt=""
-                    class="c32"
+                    class="c35"
                   />
                   <img
                     alt=""
-                    class="c33"
+                    class="c36"
                   />
                 </div>
               </div>
             </div>
             <div
-              class="c40"
+              class="c43"
             >
               <style>
                 
@@ -5712,10 +5596,10 @@ exports[`<Home /> should render correctly with user 1`] = `
           
               </style>
               <div
-                class="c41 home__life-section-image--left-hide"
+                class="c44 home__life-section-image--left-hide"
               >
                 <div
-                  class="c23"
+                  class="c26"
                 >
                   <style>
                     
@@ -5724,17 +5608,17 @@ exports[`<Home /> should render correctly with user 1`] = `
         
                   </style>
                   <div
-                    class="c25"
+                    class="c28"
                     style="padding-bottom: 150%;"
                   >
                     <div
-                      class="c26"
+                      class="c29"
                     >
                       <div
-                        class="c27 c28"
+                        class="c30 c31"
                       >
                         <div
-                          class="c29"
+                          class="c32"
                           style="margin-left: -0px;"
                         />
                       </div>
@@ -5744,11 +5628,11 @@ exports[`<Home /> should render correctly with user 1`] = `
                     >
                       <img
                         alt=""
-                        class="c30"
+                        class="c33"
                       />
                       <img
                         alt=""
-                        class="c31"
+                        class="c34"
                       />
                     </div>
                     <div
@@ -5756,21 +5640,21 @@ exports[`<Home /> should render correctly with user 1`] = `
                     >
                       <img
                         alt=""
-                        class="c32"
+                        class="c35"
                       />
                       <img
                         alt=""
-                        class="c33"
+                        class="c36"
                       />
                     </div>
                   </div>
                 </div>
               </div>
               <div
-                class="c42 home__life-section-image--right-hide"
+                class="c45 home__life-section-image--right-hide"
               >
                 <div
-                  class="c23"
+                  class="c26"
                 >
                   <style>
                     
@@ -5779,17 +5663,17 @@ exports[`<Home /> should render correctly with user 1`] = `
         
                   </style>
                   <div
-                    class="c25"
+                    class="c28"
                     style="padding-bottom: 66.66666666666667%;"
                   >
                     <div
-                      class="c26"
+                      class="c29"
                     >
                       <div
-                        class="c27 c28"
+                        class="c30 c31"
                       >
                         <div
-                          class="c29"
+                          class="c32"
                           style="margin-left: -0px;"
                         />
                       </div>
@@ -5799,11 +5683,11 @@ exports[`<Home /> should render correctly with user 1`] = `
                     >
                       <img
                         alt=""
-                        class="c30"
+                        class="c33"
                       />
                       <img
                         alt=""
-                        class="c31"
+                        class="c34"
                       />
                     </div>
                     <div
@@ -5811,11 +5695,11 @@ exports[`<Home /> should render correctly with user 1`] = `
                     >
                       <img
                         alt=""
-                        class="c32"
+                        class="c35"
                       />
                       <img
                         alt=""
-                        class="c33"
+                        class="c36"
                       />
                     </div>
                   </div>
@@ -5827,16 +5711,16 @@ exports[`<Home /> should render correctly with user 1`] = `
       </div>
     </div>
     <div
-      class="c43"
+      class="c46"
     >
       <div
-        class="c44"
+        class="c47"
       >
         <div
-          class="c45"
+          class="c48"
         >
           <div
-            class="c46"
+            class="c49"
           >
             <style>
               .js .home__animated-image--hidden {
@@ -5845,7 +5729,7 @@ exports[`<Home /> should render correctly with user 1`] = `
           }
             </style>
             <div
-              class="c23 c47 home__animated-image--hidden"
+              class="c26 c50 home__animated-image--hidden"
             >
               <style>
                 
@@ -5854,17 +5738,17 @@ exports[`<Home /> should render correctly with user 1`] = `
         
               </style>
               <div
-                class="c25"
+                class="c28"
                 style="padding-bottom: 70.79494321834154%;"
               >
                 <div
-                  class="c26"
+                  class="c29"
                 >
                   <div
-                    class="c27 c28"
+                    class="c30 c31"
                   >
                     <div
-                      class="c29"
+                      class="c32"
                       style="margin-left: -0px;"
                     />
                   </div>
@@ -5874,12 +5758,12 @@ exports[`<Home /> should render correctly with user 1`] = `
                 >
                   <img
                     alt="Me"
-                    class="c30"
+                    class="c33"
                     src="https://i.imgur.com/L0Rm1ZC.jpg"
                   />
                   <img
                     alt="Me"
-                    class="c31"
+                    class="c34"
                     src="https://i.imgur.com/L0Rm1ZC.jpg"
                   />
                 </div>
@@ -5888,12 +5772,12 @@ exports[`<Home /> should render correctly with user 1`] = `
                 >
                   <img
                     alt="Me"
-                    class="c32"
+                    class="c35"
                     src="https://i.imgur.com/L0Rm1ZC.jpg"
                   />
                   <img
                     alt="Me"
-                    class="c33"
+                    class="c36"
                     src="https://i.imgur.com/L0Rm1ZC.jpg"
                   />
                 </div>
@@ -5916,33 +5800,33 @@ exports[`<Home /> should render correctly with user 1`] = `
         class="c5 animated-content__wrapper--hidden"
       >
         <div
-          class="c48"
+          class="c51"
         >
           <div
-            class="c49"
+            class="c52"
           >
             <span
-              class="c12 c50"
+              class="c9 c53"
             >
               This site is built in
                
               <a
                 aria-label="React (opens in a new tab)"
-                class="c14"
+                class="c11"
                 href="https://reactjs.org/"
                 rel="noopener noreferrer"
                 target="_blank"
               >
                 <span
-                  class="c15"
+                  class="c12"
                 >
                   React
                 </span>
                 <div
-                  class="c16"
+                  class="c13"
                 >
                   <svg
-                    class="c17 c18"
+                    class="c14 c15"
                     height="18"
                     viewBox="0 0 24 24"
                     width="18"
@@ -5959,21 +5843,21 @@ exports[`<Home /> should render correctly with user 1`] = `
                
               <a
                 aria-label="Redux (opens in a new tab)"
-                class="c14"
+                class="c11"
                 href="https://redux.js.org/"
                 rel="noopener noreferrer"
                 target="_blank"
               >
                 <span
-                  class="c15"
+                  class="c12"
                 >
                   Redux
                 </span>
                 <div
-                  class="c16"
+                  class="c13"
                 >
                   <svg
-                    class="c17 c18"
+                    class="c14 c15"
                     height="18"
                     viewBox="0 0 24 24"
                     width="18"
@@ -5990,21 +5874,21 @@ exports[`<Home /> should render correctly with user 1`] = `
                
               <a
                 aria-label="Next.js (opens in a new tab)"
-                class="c14"
+                class="c11"
                 href="https://nextjs.org/"
                 rel="noopener noreferrer"
                 target="_blank"
               >
                 <span
-                  class="c15"
+                  class="c12"
                 >
                   Next.js
                 </span>
                 <div
-                  class="c16"
+                  class="c13"
                 >
                   <svg
-                    class="c17 c18"
+                    class="c14 c15"
                     height="18"
                     viewBox="0 0 24 24"
                     width="18"
@@ -6020,21 +5904,21 @@ exports[`<Home /> should render correctly with user 1`] = `
                
               <a
                 aria-label="AWS (opens in a new tab)"
-                class="c14"
+                class="c11"
                 href="https://aws.amazon.com/"
                 rel="noopener noreferrer"
                 target="_blank"
               >
                 <span
-                  class="c15"
+                  class="c12"
                 >
                   AWS
                 </span>
                 <div
-                  class="c16"
+                  class="c13"
                 >
                   <svg
-                    class="c17 c18"
+                    class="c14 c15"
                     height="18"
                     viewBox="0 0 24 24"
                     width="18"
@@ -6049,7 +5933,7 @@ exports[`<Home /> should render correctly with user 1`] = `
               . I use it to experiment with things, share stuff I've figured out, and allow people to contact me.
             </span>
             <div
-              class="c51"
+              class="c54"
             >
               <style>
                 
@@ -6058,20 +5942,20 @@ exports[`<Home /> should render correctly with user 1`] = `
         }
               </style>
               <div
-                class="c52"
+                class="c55"
               >
                 <a
-                  class="c14 c53"
+                  class="c11 c56"
                   href="/contact"
                 >
                   <span
-                    class="c15"
+                    class="c12"
                   >
                     Get in touch
                   </span>
                 </a>
                 <div
-                  class="c54 home__contact--hide"
+                  class="c57 home__contact--hide"
                   style="left: 300%;"
                 />
               </div>
