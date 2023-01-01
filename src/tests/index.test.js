@@ -10,7 +10,15 @@ describe('<HomePage />', () => {
   let store;
 
   beforeAll(() => {
+    jest.clearAllMocks();
+
     store = configureStore({});
+
+    global.fetch = jest.fn(() =>
+      Promise.resolve({
+        json: () => Promise.resolve({ photos: [] }),
+      })
+    );
   });
 
   it('should render correctly', () => {

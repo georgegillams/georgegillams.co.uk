@@ -24,6 +24,7 @@ exports[`<Card /> Should render correctly 1`] = `
 }
 
 .c3 {
+  height: 100%;
   padding: 2rem;
 }
 
@@ -117,6 +118,7 @@ exports[`<Card /> Should render correctly hrefExternal 1`] = `
 }
 
 .c3 {
+  height: 100%;
   padding: 2rem;
 }
 
@@ -210,6 +212,7 @@ exports[`<Card /> Should render correctly with custom className 1`] = `
 }
 
 .c3 {
+  height: 100%;
   padding: 2rem;
 }
 
@@ -303,6 +306,7 @@ exports[`<Card /> Should render with nextified href 1`] = `
 }
 
 .c3 {
+  height: 100%;
   padding: 2rem;
 }
 

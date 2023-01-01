@@ -1,84 +1,83 @@
-import styled, { css } from 'styled-components';
+import styled from 'styled-components';
 import { breakpointMd, spacingLg } from '@george-gillams/components/constants/layout';
 import { fontSizeMd } from '@george-gillams/components/constants/font';
-import Image from '@george-gillams/components/image';
 import Paragraph from '@george-gillams/components/paragraph';
+import HomepageCard from './HomepageCard';
+import PhotoGallery from './PhotoGallery';
+import MedalGallery from './MedalGallery';
 
-export const Wrapper = styled.div`
-  display: flex;
-  width: 100%;
-  justify-content: space-around;
-  height: unset;
-  margin-bottom: ${spacingLg};
-  flex-direction: column;
-  text-align: center;
-
-  @media (min-width: ${breakpointMd}) {
-    height: 21.6875rem;
-    margin-bottom: unset;
-    flex-direction: row;
-    text-align: left;
-  }
-`;
+export const Wrapper = styled.div``;
 
 export const StyledParagraph = styled(Paragraph)`
   font-size: ${fontSizeMd};
 `;
 
-export const Content = styled.div`
-  width: 100%;
-  flex-grow: 1;
-  max-width: unset;
-  margin: 0 0 1rem 0;
-
-  @media (min-width: ${breakpointMd}) {
-    max-width: 20rem;
-    margin: 0 3rem;
-  }
-`;
-
-const imageAboveTabletStyles = css`
-  width: 100%;
-  transition: margin 0.4s ease-in-out, transform 0.4s ease-in-out;
-  display: none;
-
-  @media (min-width: ${breakpointMd}) {
-    display: unset;
-  }
-`;
-
-export const ImageAboveTabletLeft = styled(Image)`
-  ${imageAboveTabletStyles}
-
-  width: 35%;
-`;
-
-export const ImageAboveTabletRight = styled(Image)`
-  ${imageAboveTabletStyles}
-
-  width: 55%;
-`;
-
-export const MobileImageWrapper = styled.div`
+export const DualCardWrapper = styled.div`
+  margin-top: ${spacingLg};
   display: flex;
-  width: 90%;
-  margin-left: 5%;
-  justify-content: space-between;
+  flex-direction: column;
 
   @media (min-width: ${breakpointMd}) {
-    display: none;
+    flex-direction: row;
+    align-items: stretch;
+    margin-top: calc(2 * ${spacingLg});
   }
 `;
 
-export const MobileImageInnerWrapperLeft = styled.div`
-  width: 48%;
-  width: 30%;
-  transition: margin 0.8s ease-in-out, opacity 0.8s ease-in-out;
+export const StyledBlogCard = styled(HomepageCard)`
+  margin-bottom: ${spacingLg};
+  width: 100%;
+  max-width: 24rem;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media (min-width: ${breakpointMd}) {
+    width: 32rem;
+    margin-right: ${spacingLg};
+    margin-left: unset;
+  }
 `;
 
-export const MobileImageInnerWrapperRight = styled.div`
-  width: 48%;
-  width: 68%;
-  transition: margin 0.8s ease-in-out, opacity 0.8s ease-in-out;
-  transition-delay: 0.4s;
+export const StyledPhotographyCard = styled(HomepageCard)`
+  flex-grow: 1;
+  margin-bottom: ${spacingLg};
+  max-width: 24rem;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media (min-width: ${breakpointMd}) {
+    max-width: unset;
+    margin-left: unset;
+    margin-right: unset;
+  }
+`;
+
+export const StyledMedalCard = styled(HomepageCard)`
+  width: 100%;
+  max-width: 24rem;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media (min-width: ${breakpointMd}) {
+    max-width: unset;
+    margin-left: unset;
+    margin-right: unset;
+  }
+`;
+
+export const StyledPhotoGallery = styled(PhotoGallery)`
+  width: 100%;
+  height: 100%;
+`;
+
+export const StyledBlogGallery = styled.div`
+  width: 100%;
+  height: 100%;
+  min-height: 7.5rem;
+  background: green;
+`;
+
+export const StyledMedals = styled(MedalGallery)`
+  width: 100%;
+  height: 100%;
 `;
