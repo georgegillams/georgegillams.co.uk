@@ -4,6 +4,16 @@ import { render } from '@testing-library/react';
 import Home from '../Container';
 
 describe('<Home />', () => {
+  beforeEach(() => {
+    jest.clearAllMocks();
+
+    global.fetch = jest.fn(() =>
+      Promise.resolve({
+        json: () => Promise.resolve({ photos: [] }),
+      })
+    );
+  });
+
   it('should render correctly', () => {
     const { container } = render(<Home authenticatorState={{ user: undefined }} />);
 

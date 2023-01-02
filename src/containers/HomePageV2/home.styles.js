@@ -3,7 +3,6 @@
 import styled from 'styled-components';
 import WorkSection from 'components/HomePageV2/WorkSection';
 import LifeSection from 'components/HomePageV2/LifeSection';
-import PhotoSection from 'components/HomePageV2/PhotoSection';
 import AboutSection from 'components/HomePageV2/AboutSection';
 import { breakpointMd, spacingBase, spacingLg } from '@george-gillams/components/constants/layout';
 
@@ -22,15 +21,6 @@ export const StyledLifeSection = styled(LifeSection)`
 
   @media (min-width: ${breakpointMd}) {
     margin-top: 4rem;
-  }
-`;
-
-export const StyledPhotoSection = styled(PhotoSection)`
-  width: 100%;
-  margin-top: 2rem;
-
-  @media (min-width: ${breakpointMd}) {
-    margin-top: 6rem;
   }
 `;
 

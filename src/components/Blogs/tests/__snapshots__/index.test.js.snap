@@ -52,6 +52,7 @@ exports[`<BlogCard /> Should render correctly 1`] = `
 }
 
 .c4 {
+  height: 100%;
   padding: 2rem;
 }
 
@@ -313,6 +314,7 @@ exports[`<BlogCard /> Should render correctly when deleted 1`] = `
 }
 
 .c4 {
+  height: 100%;
   padding: 2rem;
 }
 
@@ -848,6 +850,7 @@ exports[`<BlogCard /> Should render correctly with all parameters supplied 1`] =
 }
 
 .c4 {
+  height: 100%;
   padding: 2rem;
 }
 
@@ -1383,6 +1386,7 @@ exports[`<BlogCard /> Should render correctly with custom className 1`] = `
 }
 
 .c4 {
+  height: 100%;
   padding: 2rem;
 }
 
@@ -1644,6 +1648,7 @@ exports[`<BlogsList /> Should render correctly 1`] = `
 }
 
 .c5 {
+  height: 100%;
   padding: 2rem;
 }
 
@@ -2391,6 +2396,7 @@ exports[`<BlogsList /> Should render correctly with custom className 1`] = `
 }
 
 .c5 {
+  height: 100%;
   padding: 2rem;
 }
 
@@ -3258,6 +3264,7 @@ exports[`<BlogsList /> Should render correctly with deleteBlog function 1`] = `
 }
 
 .c5 {
+  height: 100%;
   padding: 2rem;
 }
 
