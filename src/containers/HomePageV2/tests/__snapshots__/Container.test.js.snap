@@ -942,7 +942,6 @@ exports[`<Home /> should render correctly 1`] = `
 
 @media (min-width:50.25rem) {
   .c32 {
-    width: 20rem;
     max-width: 20rem;
     margin-right: 2rem;
     margin-left: unset;
@@ -3550,7 +3549,6 @@ exports[`<Home /> should render correctly with admin user 1`] = `
 
 @media (min-width:50.25rem) {
   .c32 {
-    width: 20rem;
     max-width: 20rem;
     margin-right: 2rem;
     margin-left: unset;
@@ -6158,7 +6156,6 @@ exports[`<Home /> should render correctly with no user 1`] = `
 
 @media (min-width:50.25rem) {
   .c32 {
-    width: 20rem;
     max-width: 20rem;
     margin-right: 2rem;
     margin-left: unset;
@@ -8766,7 +8763,6 @@ exports[`<Home /> should render correctly with user 1`] = `
 
 @media (min-width:50.25rem) {
   .c32 {
-    width: 20rem;
     max-width: 20rem;
     margin-right: 2rem;
     margin-left: unset;
