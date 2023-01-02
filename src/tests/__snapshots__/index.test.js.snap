@@ -649,9 +649,9 @@ exports[`<HomePage /> should render correctly 1`] = `
 }
 
 .c60 {
-  width: 6rem;
-  height: 6rem;
-  margin: 0 2rem 0 0;
+  width: 14rem;
+  height: 14rem;
+  margin: 0 calc(2rem - 7rem) 0 0;
   -webkit-transform: scale(0.5);
   -ms-transform: scale(0.5);
   transform: scale(0.5);
@@ -1157,7 +1157,7 @@ exports[`<HomePage /> should render correctly 1`] = `
 
 @media (min-width:50.25rem) {
   .c60 {
-    margin: 0 calc(4 * 2rem) 0 0;
+    margin: 0 calc(4 * 2rem - 7rem) 0 0;
   }
 }
 
@@ -1176,7 +1176,8 @@ exports[`<HomePage /> should render correctly 1`] = `
 
 @media (min-width:50.25rem) {
   .c34 {
-    width: 32rem;
+    width: 20rem;
+    max-width: 20rem;
     margin-right: 2rem;
     margin-left: unset;
   }
@@ -1607,28 +1608,6 @@ exports[`<HomePage /> should render correctly 1`] = `
                                     <div
                                       class="c52"
                                     />
-                                  </div>
-                                  <div
-                                    class="c51"
-                                  >
-                                    <div
-                                      class="c52"
-                                    />
-                                    <div
-                                      class="c52"
-                                    />
-                                    <div
-                                      class="c52"
-                                    />
-                                    <div
-                                      class="c52"
-                                    />
-                                    <div
-                                      class="c52"
-                                    />
-                                    <div
-                                      class="c52"
-                                    />
                                     <div
                                       class="c52"
                                     />
@@ -1639,28 +1618,6 @@ exports[`<HomePage /> should render correctly 1`] = `
                                     <div
                                       class="c52"
                                     />
-                                    <div
-                                      class="c52"
-                                    />
-                                    <div
-                                      class="c52"
-                                    />
-                                    <div
-                                      class="c52"
-                                    />
-                                    <div
-                                      class="c52"
-                                    />
-                                    <div
-                                      class="c52"
-                                    />
-                                    <div
-                                      class="c52"
-                                    />
-                                  </div>
-                                  <div
-                                    class="c51"
-                                  >
                                     <div
                                       class="c52"
                                     />
@@ -1707,28 +1664,6 @@ exports[`<HomePage /> should render correctly 1`] = `
                                     <div
                                       class="c52"
                                     />
-                                  </div>
-                                  <div
-                                    class="c51"
-                                  >
-                                    <div
-                                      class="c52"
-                                    />
-                                    <div
-                                      class="c52"
-                                    />
-                                    <div
-                                      class="c52"
-                                    />
-                                    <div
-                                      class="c52"
-                                    />
-                                    <div
-                                      class="c52"
-                                    />
-                                    <div
-                                      class="c52"
-                                    />
                                     <div
                                       class="c52"
                                     />
@@ -1739,28 +1674,6 @@ exports[`<HomePage /> should render correctly 1`] = `
                                     <div
                                       class="c52"
                                     />
-                                    <div
-                                      class="c52"
-                                    />
-                                    <div
-                                      class="c52"
-                                    />
-                                    <div
-                                      class="c52"
-                                    />
-                                    <div
-                                      class="c52"
-                                    />
-                                    <div
-                                      class="c52"
-                                    />
-                                    <div
-                                      class="c52"
-                                    />
-                                  </div>
-                                  <div
-                                    class="c51"
-                                  >
                                     <div
                                       class="c52"
                                     />
@@ -1807,10 +1720,128 @@ exports[`<HomePage /> should render correctly 1`] = `
                                     <div
                                       class="c52"
                                     />
+                                    <div
+                                      class="c52"
+                                    />
                                   </div>
                                   <div
                                     class="c51"
                                   >
+                                    <div
+                                      class="c52"
+                                    />
+                                    <div
+                                      class="c52"
+                                    />
+                                    <div
+                                      class="c52"
+                                    />
+                                    <div
+                                      class="c52"
+                                    />
+                                    <div
+                                      class="c52"
+                                    />
+                                    <div
+                                      class="c52"
+                                    />
+                                    <div
+                                      class="c52"
+                                    />
+                                    <div
+                                      class="c52"
+                                    />
+                                  </div>
+                                  <div
+                                    class="c51"
+                                  >
+                                    <div
+                                      class="c52"
+                                    />
+                                    <div
+                                      class="c52"
+                                    />
+                                    <div
+                                      class="c52"
+                                    />
+                                    <div
+                                      class="c52"
+                                    />
+                                    <div
+                                      class="c52"
+                                    />
+                                    <div
+                                      class="c52"
+                                    />
+                                    <div
+                                      class="c52"
+                                    />
+                                    <div
+                                      class="c52"
+                                    />
+                                  </div>
+                                  <div
+                                    class="c51"
+                                  >
+                                    <div
+                                      class="c52"
+                                    />
+                                    <div
+                                      class="c52"
+                                    />
+                                    <div
+                                      class="c52"
+                                    />
+                                    <div
+                                      class="c52"
+                                    />
+                                    <div
+                                      class="c52"
+                                    />
+                                    <div
+                                      class="c52"
+                                    />
+                                    <div
+                                      class="c52"
+                                    />
+                                    <div
+                                      class="c52"
+                                    />
+                                  </div>
+                                  <div
+                                    class="c51"
+                                  >
+                                    <div
+                                      class="c52"
+                                    />
+                                    <div
+                                      class="c52"
+                                    />
+                                    <div
+                                      class="c52"
+                                    />
+                                    <div
+                                      class="c52"
+                                    />
+                                    <div
+                                      class="c52"
+                                    />
+                                    <div
+                                      class="c52"
+                                    />
+                                    <div
+                                      class="c52"
+                                    />
+                                    <div
+                                      class="c52"
+                                    />
+                                  </div>
+                                  <div
+                                    class="c51"
+                                  >
+                                    <div
+                                      class="c52"
+                                    />
                                     <div
                                       class="c52"
                                     />

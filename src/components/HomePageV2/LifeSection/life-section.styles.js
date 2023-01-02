@@ -32,7 +32,8 @@ export const StyledBlogCard = styled(HomepageCard)`
   margin-right: auto;
 
   @media (min-width: ${breakpointMd}) {
-    width: 32rem;
+    width: 20rem;
+    max-width: 20rem;
     margin-right: ${spacingLg};
     margin-left: unset;
   }

@@ -30,13 +30,13 @@ const InnerWrapper = styled.div`
 `;
 
 const Medal = styled(SpartanMedal)`
-  width: 6rem;
-  height: 6rem;
-  margin: 0 ${spacingLg} 0 0;
+  width: 14rem;
+  height: 14rem;
+  margin: 0 calc(${spacingLg} - 7rem) 0 0;
   transform: scale(0.5);
 
   @media (min-width: ${breakpointMd}) {
-    margin: 0 calc(4 * ${spacingLg}) 0 0;
+    margin: 0 calc(4 * ${spacingLg} - 7rem) 0 0;
   }
 `;
 
