@@ -8,7 +8,9 @@ import {
   alternatingBackgroundColor2DarkMode,
 } from '@george-gillams/components/constants/colors';
 
-const REQUIRED_PHOTOS_ARRAY_LENGTH = 70;
+const REQUIRED_PHOTOS_COLUMNS = 8;
+const REQUIRED_PHOTOS_ROWS = 10;
+const REQUIRED_PHOTOS_ARRAY_LENGTH = REQUIRED_PHOTOS_COLUMNS * REQUIRED_PHOTOS_ROWS;
 
 const OuterWrapper = styled.div`
   position: relative;
@@ -90,10 +92,13 @@ const PhotoGallery = props => {
       photosArray = [...photosArray, ...photosArray];
     }
 
-    const numberOfRows = Math.ceil(photosArray.length / 7);
+    const numberOfRows = Math.ceil(photosArray.length / REQUIRED_PHOTOS_COLUMNS);
     const rows = [];
     for (let i = 0; i < numberOfRows; i += 1) {
-      rows.push({ key: `row${i}`, photos: photosArray.slice(i * 7, (i + 1) * 7) });
+      rows.push({
+        key: `row${i}`,
+        photos: photosArray.slice(i * REQUIRED_PHOTOS_COLUMNS, (i + 1) * REQUIRED_PHOTOS_COLUMNS),
+      });
     }
 
     return rows;
