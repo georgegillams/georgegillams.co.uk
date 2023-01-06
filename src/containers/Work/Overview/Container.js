@@ -16,11 +16,32 @@ const Work = () => (
     <PageTitle name="Work">
       <SubsectionWithScroll name="Typeform">
         <Paragraph>
-          I work on{' '}
+          I maintain{' '}
           <TextLink href="https://www.typeform.com/" hrefExternal>
             Typeform&#39;s
           </TextLink>{' '}
-          public front-end apps.
+          public sites, including{' '}
+          <TextLink href="https://www.typeform.com/surveys/" hrefExternal>
+            landing pages
+          </TextLink>
+          ,{' '}
+          <TextLink href="https://www.typeform.com/blog/" hrefExternal>
+            blogs
+          </TextLink>
+          ,{' '}
+          <TextLink href="https://www.typeform.com/templates/" hrefExternal>
+            templates
+          </TextLink>
+          ,{' '}
+          <TextLink href="https://www.typeform.com/connect/" hrefExternal>
+            integrations
+          </TextLink>
+          , and{' '}
+          <TextLink href="https://www.typeform.com/signup/" hrefExternal>
+            signup
+          </TextLink>
+          . They&#39;re built using React, Styled Components and Next.js. We have a strong focus on SEO, speed, and
+          empowering content creators to deliver content/experiments with as little friction as possible.
         </Paragraph>
       </SubsectionWithScroll>
 
