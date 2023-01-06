@@ -6,10 +6,10 @@ import { breakpointMd, spacingLg } from '@george-gillams/components/constants/la
 
 const scrollAnimation = keyframes`
  from { 
-  transform:  translate(0, 0);
+  transform:  translate(-4rem, 0);
  }
  to { 
-  transform:  translate(-50%, 0);
+  transform:  translate(calc(-4rem - 50%), 0);
  }
   `;
 
