@@ -1311,10 +1311,10 @@
     recompose "^0.30.0"
     youtube-embed-video "^1.2.1"
 
-"@george-gillams/webapp@1.0.3":
-  version "1.0.3"
-  resolved "https://registry.yarnpkg.com/@george-gillams/webapp/-/webapp-1.0.3.tgz#efc203d0267c6454c774be0a27236b7eb37972bd"
-  integrity sha512-8yVKbwvKHLiq0IJ8ziFy4nVFfIWRjxRwLEljqEWJGEFulHyq8O9fji8s5+qa4/ccujOQ7kuV6wh1F3/q0+Eh9Q==
+"@george-gillams/webapp@1.0.4":
+  version "1.0.4"
+  resolved "https://registry.yarnpkg.com/@george-gillams/webapp/-/webapp-1.0.4.tgz#8c123bcf74e6a907f88686f51d6bf8b2a9242608"
+  integrity sha512-zG7Exc+dGxcKtYmMT4FJdfAsQj8pewJvizcqNH14rSpsYVFYUdItarKolIYgmOIZ5gI+w9gvy0K5DbrK/YeecQ==
   dependencies:
     date-fns "^2.29.3"
     detect-browser "^5.3.0"
