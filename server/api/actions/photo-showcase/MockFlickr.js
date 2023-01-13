@@ -10,8 +10,8 @@ const landscapeSize = label => ({
   height: 4000,
   source: 'https://via.placeholder.com/3000x4000',
 });
-const portraitSizes = [portraitSize('Original'), portraitSize('Large')];
-const landscapeSizes = [landscapeSize('Original'), landscapeSize('Large')];
+const portraitSizes = [portraitSize('Original'), portraitSize('Large'), portraitSize('Large square')];
+const landscapeSizes = [landscapeSize('Original'), landscapeSize('Large'), landscapeSize('Large square')];
 
 export default class MockFlickr {
   constructor() {
