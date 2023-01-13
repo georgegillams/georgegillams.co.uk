@@ -84,7 +84,12 @@ const PhotoGallery = props => {
           key: `photo${i}`,
         }));
     } else {
-      photosArray = loadedPhotos;
+      photosArray = loadedPhotos.map(({ thumbnailSrc, ...rest }) => ({
+        ...rest,
+        // override src and thumbnailSrc so that we use thumbnails for the gallery
+        src: thumbnailSrc,
+        thumbnailSrc: undefined,
+      }));
       while (photosArray.length < REQUIRED_PHOTOS_ARRAY_LENGTH / 2) {
         photosArray = [...photosArray, ...loadedPhotos];
       }

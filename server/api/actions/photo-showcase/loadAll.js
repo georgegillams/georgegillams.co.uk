@@ -8,10 +8,12 @@ const getPhotoSize = async photoId => {
   const sizes = res.body.sizes.size;
   const originalSize = sizes.find(size => size.label === 'Original');
   const largeSize = sizes.find(size => size.label === 'Large');
+  const smallSize = sizes.find(size => size.label === 'Large Square');
   return {
     width: originalSize?.width || 0,
     height: originalSize?.height || 0,
     src: largeSize?.source || originalSize?.source || '',
+    thumbnailSrc: smallSize?.source || originalSize?.source || '',
   };
 };
 
