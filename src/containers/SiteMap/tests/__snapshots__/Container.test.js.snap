@@ -427,6 +427,17 @@ exports[`<SiteMap /> should render correctly - index 1`] = `
             <br />
             <a
               class="c11"
+              href="/work/qualifications"
+            >
+              <span
+                class="c12"
+              >
+                Qualifications
+              </span>
+            </a>
+            <br />
+            <a
+              class="c11"
               href="/work/backpack"
             >
               <span
@@ -1815,6 +1826,17 @@ exports[`<SiteMap /> should render correctly 1`] = `
             <br />
             <a
               class="c11"
+              href="/work/qualifications"
+            >
+              <span
+                class="c12"
+              >
+                Qualifications
+              </span>
+            </a>
+            <br />
+            <a
+              class="c11"
               href="/work/backpack"
             >
               <span
@@ -3126,6 +3148,17 @@ exports[`<SiteMap /> should render correctly with blogs 1`] = `
                 class="c12"
               >
                 Overview
+              </span>
+            </a>
+            <br />
+            <a
+              class="c11"
+              href="/work/qualifications"
+            >
+              <span
+                class="c12"
+              >
+                Qualifications
               </span>
             </a>
             <br />
@@ -4520,6 +4553,17 @@ exports[`<SiteMap /> should render correctly with blogs and admin user 1`] = `
             <br />
             <a
               class="c11"
+              href="/work/qualifications"
+            >
+              <span
+                class="c12"
+              >
+                Qualifications
+              </span>
+            </a>
+            <br />
+            <a
+              class="c11"
               href="/work/backpack"
             >
               <span
@@ -5831,6 +5875,17 @@ exports[`<SiteMap /> should render correctly with ssrBlogs 1`] = `
                 class="c12"
               >
                 Overview
+              </span>
+            </a>
+            <br />
+            <a
+              class="c11"
+              href="/work/qualifications"
+            >
+              <span
+                class="c12"
+              >
+                Qualifications
               </span>
             </a>
             <br />
