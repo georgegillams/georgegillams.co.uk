@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import Skeleton from '@george-gillams/components/skeleton';
-import { paragraphMarginTop, paragraphMarginTopFirst } from '@george-gillams/components/constants/font.js';
+import { paragraphMarginTop, paragraphMarginTopFirst } from '@george-gillams/components/constants/font';
 import { spacingBase, spacingSm } from '@george-gillams/components/constants/layout';
 
 export const BodySkeleton = styled(Skeleton)`

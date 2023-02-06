@@ -1,14 +1,14 @@
 const portraitSize = label => ({
   label: label,
-  width: 4000,
-  height: 3000,
-  source: 'https://via.placeholder.com/4000x3000',
+  width: 400,
+  height: 300,
+  source: 'https://via.placeholder.com/400x300',
 });
 const landscapeSize = label => ({
   label: label,
-  width: 3000,
-  height: 4000,
-  source: 'https://via.placeholder.com/3000x4000',
+  width: 300,
+  height: 400,
+  source: 'https://via.placeholder.com/300x400',
 });
 const portraitSizes = [portraitSize('Original'), portraitSize('Large'), portraitSize('Large square')];
 const landscapeSizes = [landscapeSize('Original'), landscapeSize('Large'), landscapeSize('Large square')];

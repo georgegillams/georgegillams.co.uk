@@ -141,6 +141,11 @@ exports[`<AdminNavigation /> should render correctly with admin user 1`] = `
   display: inline-block;
   z-index: 1;
   width: 100%;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  box-shadow: 0.2rem 0.2rem 0.5rem 0 rgba(37,32,31,0.3);
+  cursor: pointer;
+  box-sizing: border-box;
   padding: 0;
   -webkit-transition: all 0.4s;
   transition: all 0.4s;
@@ -148,11 +153,6 @@ exports[`<AdminNavigation /> should render correctly with admin user 1`] = `
   border-radius: 0.35rem;
   background: none;
   text-align: left;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  box-shadow: 0.2rem 0.2rem 0.5rem 0 rgba(37,32,31,0.3);
-  cursor: pointer;
-  box-sizing: border-box;
 }
 
 .c5:disabled {

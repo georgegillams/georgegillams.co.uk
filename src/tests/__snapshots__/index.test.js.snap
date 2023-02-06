@@ -343,6 +343,11 @@ exports[`<HomePage /> should render correctly 1`] = `
   display: inline-block;
   z-index: 1;
   width: 100%;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  box-shadow: 0.2rem 0.2rem 0.5rem 0 rgba(37,32,31,0.3);
+  cursor: pointer;
+  box-sizing: border-box;
   padding: 0;
   -webkit-transition: all 0.4s;
   transition: all 0.4s;
@@ -350,11 +355,6 @@ exports[`<HomePage /> should render correctly 1`] = `
   border-radius: 0.35rem;
   background: none;
   text-align: left;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  box-shadow: 0.2rem 0.2rem 0.5rem 0 rgba(37,32,31,0.3);
-  cursor: pointer;
-  box-sizing: border-box;
 }
 
 .c32:disabled {
@@ -1471,7 +1471,6 @@ exports[`<HomePage /> should render correctly 1`] = `
                   >
                     <div
                       class="c32 c33 c34"
-                      href="/blog"
                       role="group"
                       tabindex="-1"
                     >
@@ -1526,7 +1525,6 @@ exports[`<HomePage /> should render correctly 1`] = `
                     </div>
                     <div
                       class="c32 c33 c47"
-                      href="/photography"
                       role="group"
                       tabindex="-1"
                     >
@@ -1887,7 +1885,6 @@ exports[`<HomePage /> should render correctly 1`] = `
                 >
                   <div
                     class="c32 c33 c53"
-                    href="/medals"
                     role="group"
                     tabindex="-1"
                   >

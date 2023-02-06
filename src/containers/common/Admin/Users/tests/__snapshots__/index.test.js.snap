@@ -343,6 +343,11 @@ exports[`<AdminUsers /> should render correctly with admin user 1`] = `
   display: inline-block;
   z-index: 1;
   width: 100%;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  box-shadow: 0.2rem 0.2rem 0.5rem 0 rgba(37,32,31,0.3);
+  cursor: pointer;
+  box-sizing: border-box;
   padding: 0;
   -webkit-transition: all 0.4s;
   transition: all 0.4s;
@@ -350,11 +355,6 @@ exports[`<AdminUsers /> should render correctly with admin user 1`] = `
   border-radius: 0.35rem;
   background: none;
   text-align: left;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  box-shadow: 0.2rem 0.2rem 0.5rem 0 rgba(37,32,31,0.3);
-  cursor: pointer;
-  box-sizing: border-box;
 }
 
 .c12:disabled {
@@ -782,6 +782,11 @@ exports[`<AdminUsers /> should render correctly with createError 1`] = `
   display: inline-block;
   z-index: 1;
   width: 100%;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  box-shadow: 0.2rem 0.2rem 0.5rem 0 rgba(37,32,31,0.3);
+  cursor: pointer;
+  box-sizing: border-box;
   padding: 0;
   -webkit-transition: all 0.4s;
   transition: all 0.4s;
@@ -789,11 +794,6 @@ exports[`<AdminUsers /> should render correctly with createError 1`] = `
   border-radius: 0.35rem;
   background: none;
   text-align: left;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  box-shadow: 0.2rem 0.2rem 0.5rem 0 rgba(37,32,31,0.3);
-  cursor: pointer;
-  box-sizing: border-box;
 }
 
 .c12:disabled {
@@ -1221,6 +1221,11 @@ exports[`<AdminUsers /> should render correctly with creating=true 1`] = `
   display: inline-block;
   z-index: 1;
   width: 100%;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  box-shadow: 0.2rem 0.2rem 0.5rem 0 rgba(37,32,31,0.3);
+  cursor: pointer;
+  box-sizing: border-box;
   padding: 0;
   -webkit-transition: all 0.4s;
   transition: all 0.4s;
@@ -1228,11 +1233,6 @@ exports[`<AdminUsers /> should render correctly with creating=true 1`] = `
   border-radius: 0.35rem;
   background: none;
   text-align: left;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  box-shadow: 0.2rem 0.2rem 0.5rem 0 rgba(37,32,31,0.3);
-  cursor: pointer;
-  box-sizing: border-box;
 }
 
 .c12:disabled {
@@ -1799,6 +1799,11 @@ exports[`<AdminUsers /> should render correctly with loadError 1`] = `
   display: inline-block;
   z-index: 1;
   width: 100%;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  box-shadow: 0.2rem 0.2rem 0.5rem 0 rgba(37,32,31,0.3);
+  cursor: pointer;
+  box-sizing: border-box;
   padding: 0;
   -webkit-transition: all 0.4s;
   transition: all 0.4s;
@@ -1806,11 +1811,6 @@ exports[`<AdminUsers /> should render correctly with loadError 1`] = `
   border-radius: 0.35rem;
   background: none;
   text-align: left;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  box-shadow: 0.2rem 0.2rem 0.5rem 0 rgba(37,32,31,0.3);
-  cursor: pointer;
-  box-sizing: border-box;
 }
 
 .c14:disabled {
@@ -2518,6 +2518,11 @@ exports[`<AdminUsers /> should render correctly with loading=true 1`] = `
   display: inline-block;
   z-index: 1;
   width: 100%;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  box-shadow: 0.2rem 0.2rem 0.5rem 0 rgba(37,32,31,0.3);
+  cursor: pointer;
+  box-sizing: border-box;
   padding: 0;
   -webkit-transition: all 0.4s;
   transition: all 0.4s;
@@ -2525,11 +2530,6 @@ exports[`<AdminUsers /> should render correctly with loading=true 1`] = `
   border-radius: 0.35rem;
   background: none;
   text-align: left;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  box-shadow: 0.2rem 0.2rem 0.5rem 0 rgba(37,32,31,0.3);
-  cursor: pointer;
-  box-sizing: border-box;
 }
 
 .c24:disabled {
@@ -3032,6 +3032,11 @@ exports[`<AdminUsers /> should render correctly with removeError 1`] = `
   display: inline-block;
   z-index: 1;
   width: 100%;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  box-shadow: 0.2rem 0.2rem 0.5rem 0 rgba(37,32,31,0.3);
+  cursor: pointer;
+  box-sizing: border-box;
   padding: 0;
   -webkit-transition: all 0.4s;
   transition: all 0.4s;
@@ -3039,11 +3044,6 @@ exports[`<AdminUsers /> should render correctly with removeError 1`] = `
   border-radius: 0.35rem;
   background: none;
   text-align: left;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  box-shadow: 0.2rem 0.2rem 0.5rem 0 rgba(37,32,31,0.3);
-  cursor: pointer;
-  box-sizing: border-box;
 }
 
 .c12:disabled {
@@ -3471,6 +3471,11 @@ exports[`<AdminUsers /> should render correctly with removing=true 1`] = `
   display: inline-block;
   z-index: 1;
   width: 100%;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  box-shadow: 0.2rem 0.2rem 0.5rem 0 rgba(37,32,31,0.3);
+  cursor: pointer;
+  box-sizing: border-box;
   padding: 0;
   -webkit-transition: all 0.4s;
   transition: all 0.4s;
@@ -3478,11 +3483,6 @@ exports[`<AdminUsers /> should render correctly with removing=true 1`] = `
   border-radius: 0.35rem;
   background: none;
   text-align: left;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  box-shadow: 0.2rem 0.2rem 0.5rem 0 rgba(37,32,31,0.3);
-  cursor: pointer;
-  box-sizing: border-box;
 }
 
 .c12:disabled {
@@ -3910,6 +3910,11 @@ exports[`<AdminUsers /> should render correctly with requestError 1`] = `
   display: inline-block;
   z-index: 1;
   width: 100%;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  box-shadow: 0.2rem 0.2rem 0.5rem 0 rgba(37,32,31,0.3);
+  cursor: pointer;
+  box-sizing: border-box;
   padding: 0;
   -webkit-transition: all 0.4s;
   transition: all 0.4s;
@@ -3917,11 +3922,6 @@ exports[`<AdminUsers /> should render correctly with requestError 1`] = `
   border-radius: 0.35rem;
   background: none;
   text-align: left;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  box-shadow: 0.2rem 0.2rem 0.5rem 0 rgba(37,32,31,0.3);
-  cursor: pointer;
-  box-sizing: border-box;
 }
 
 .c12:disabled {
@@ -4349,6 +4349,11 @@ exports[`<AdminUsers /> should render correctly with requesting=true 1`] = `
   display: inline-block;
   z-index: 1;
   width: 100%;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  box-shadow: 0.2rem 0.2rem 0.5rem 0 rgba(37,32,31,0.3);
+  cursor: pointer;
+  box-sizing: border-box;
   padding: 0;
   -webkit-transition: all 0.4s;
   transition: all 0.4s;
@@ -4356,11 +4361,6 @@ exports[`<AdminUsers /> should render correctly with requesting=true 1`] = `
   border-radius: 0.35rem;
   background: none;
   text-align: left;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  box-shadow: 0.2rem 0.2rem 0.5rem 0 rgba(37,32,31,0.3);
-  cursor: pointer;
-  box-sizing: border-box;
 }
 
 .c12:disabled {
@@ -4788,6 +4788,11 @@ exports[`<AdminUsers /> should render correctly with updateError 1`] = `
   display: inline-block;
   z-index: 1;
   width: 100%;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  box-shadow: 0.2rem 0.2rem 0.5rem 0 rgba(37,32,31,0.3);
+  cursor: pointer;
+  box-sizing: border-box;
   padding: 0;
   -webkit-transition: all 0.4s;
   transition: all 0.4s;
@@ -4795,11 +4800,6 @@ exports[`<AdminUsers /> should render correctly with updateError 1`] = `
   border-radius: 0.35rem;
   background: none;
   text-align: left;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  box-shadow: 0.2rem 0.2rem 0.5rem 0 rgba(37,32,31,0.3);
-  cursor: pointer;
-  box-sizing: border-box;
 }
 
 .c12:disabled {
@@ -5227,6 +5227,11 @@ exports[`<AdminUsers /> should render correctly with updating=true 1`] = `
   display: inline-block;
   z-index: 1;
   width: 100%;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  box-shadow: 0.2rem 0.2rem 0.5rem 0 rgba(37,32,31,0.3);
+  cursor: pointer;
+  box-sizing: border-box;
   padding: 0;
   -webkit-transition: all 0.4s;
   transition: all 0.4s;
@@ -5234,11 +5239,6 @@ exports[`<AdminUsers /> should render correctly with updating=true 1`] = `
   border-radius: 0.35rem;
   background: none;
   text-align: left;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  box-shadow: 0.2rem 0.2rem 0.5rem 0 rgba(37,32,31,0.3);
-  cursor: pointer;
-  box-sizing: border-box;
 }
 
 .c12:disabled {
@@ -5808,6 +5808,11 @@ exports[`<AdminUsers /> should render correctly with users 1`] = `
   display: inline-block;
   z-index: 1;
   width: 100%;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  box-shadow: 0.2rem 0.2rem 0.5rem 0 rgba(37,32,31,0.3);
+  cursor: pointer;
+  box-sizing: border-box;
   padding: 0;
   -webkit-transition: all 0.4s;
   transition: all 0.4s;
@@ -5815,11 +5820,6 @@ exports[`<AdminUsers /> should render correctly with users 1`] = `
   border-radius: 0.35rem;
   background: none;
   text-align: left;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  box-shadow: 0.2rem 0.2rem 0.5rem 0 rgba(37,32,31,0.3);
-  cursor: pointer;
-  box-sizing: border-box;
 }
 
 .c14:disabled {
@@ -5836,6 +5836,11 @@ exports[`<AdminUsers /> should render correctly with users 1`] = `
   display: inline-block;
   z-index: 1;
   width: 100%;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  box-shadow: 0.2rem 0.2rem 0.5rem 0 rgba(37,32,31,0.3);
+  cursor: pointer;
+  box-sizing: border-box;
   padding: 0;
   -webkit-transition: all 0.4s;
   transition: all 0.4s;
@@ -5843,11 +5848,6 @@ exports[`<AdminUsers /> should render correctly with users 1`] = `
   border-radius: 0.35rem;
   background: none;
   text-align: left;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  box-shadow: 0.2rem 0.2rem 0.5rem 0 rgba(37,32,31,0.3);
-  cursor: pointer;
-  box-sizing: border-box;
 }
 
 .c22:disabled {
@@ -5864,6 +5864,11 @@ exports[`<AdminUsers /> should render correctly with users 1`] = `
   display: inline-block;
   z-index: 1;
   width: 100%;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  box-shadow: 0.2rem 0.2rem 0.5rem 0 rgba(37,32,31,0.3);
+  cursor: pointer;
+  box-sizing: border-box;
   padding: 0;
   -webkit-transition: all 0.4s;
   transition: all 0.4s;
@@ -5871,11 +5876,6 @@ exports[`<AdminUsers /> should render correctly with users 1`] = `
   border-radius: 0.35rem;
   background: none;
   text-align: left;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  box-shadow: 0.2rem 0.2rem 0.5rem 0 rgba(37,32,31,0.3);
-  cursor: pointer;
-  box-sizing: border-box;
 }
 
 .c23:disabled {
@@ -5892,6 +5892,11 @@ exports[`<AdminUsers /> should render correctly with users 1`] = `
   display: inline-block;
   z-index: 1;
   width: 100%;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  box-shadow: 0.2rem 0.2rem 0.5rem 0 rgba(37,32,31,0.3);
+  cursor: pointer;
+  box-sizing: border-box;
   padding: 0;
   -webkit-transition: all 0.4s;
   transition: all 0.4s;
@@ -5899,11 +5904,6 @@ exports[`<AdminUsers /> should render correctly with users 1`] = `
   border-radius: 0.35rem;
   background: none;
   text-align: left;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  box-shadow: 0.2rem 0.2rem 0.5rem 0 rgba(37,32,31,0.3);
-  cursor: pointer;
-  box-sizing: border-box;
 }
 
 .c24:disabled {
