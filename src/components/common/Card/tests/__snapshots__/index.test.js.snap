@@ -33,6 +33,11 @@ exports[`<Card /> Should render correctly 1`] = `
   display: inline-block;
   z-index: 1;
   width: 100%;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  box-shadow: 0.2rem 0.2rem 0.5rem 0 rgba(37,32,31,0.3);
+  cursor: pointer;
+  box-sizing: border-box;
   padding: 0;
   -webkit-transition: all 0.4s;
   transition: all 0.4s;
@@ -40,11 +45,6 @@ exports[`<Card /> Should render correctly 1`] = `
   border-radius: 0.35rem;
   background: none;
   text-align: left;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  box-shadow: 0.2rem 0.2rem 0.5rem 0 rgba(37,32,31,0.3);
-  cursor: pointer;
-  box-sizing: border-box;
 }
 
 .c0:disabled {
@@ -127,6 +127,11 @@ exports[`<Card /> Should render correctly hrefExternal 1`] = `
   display: inline-block;
   z-index: 1;
   width: 100%;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  box-shadow: 0.2rem 0.2rem 0.5rem 0 rgba(37,32,31,0.3);
+  cursor: pointer;
+  box-sizing: border-box;
   padding: 0;
   -webkit-transition: all 0.4s;
   transition: all 0.4s;
@@ -134,11 +139,6 @@ exports[`<Card /> Should render correctly hrefExternal 1`] = `
   border-radius: 0.35rem;
   background: none;
   text-align: left;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  box-shadow: 0.2rem 0.2rem 0.5rem 0 rgba(37,32,31,0.3);
-  cursor: pointer;
-  box-sizing: border-box;
 }
 
 .c0:disabled {
@@ -221,6 +221,11 @@ exports[`<Card /> Should render correctly with custom className 1`] = `
   display: inline-block;
   z-index: 1;
   width: 100%;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  box-shadow: 0.2rem 0.2rem 0.5rem 0 rgba(37,32,31,0.3);
+  cursor: pointer;
+  box-sizing: border-box;
   padding: 0;
   -webkit-transition: all 0.4s;
   transition: all 0.4s;
@@ -228,11 +233,6 @@ exports[`<Card /> Should render correctly with custom className 1`] = `
   border-radius: 0.35rem;
   background: none;
   text-align: left;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  box-shadow: 0.2rem 0.2rem 0.5rem 0 rgba(37,32,31,0.3);
-  cursor: pointer;
-  box-sizing: border-box;
 }
 
 .c0:disabled {
@@ -315,6 +315,11 @@ exports[`<Card /> Should render with nextified href 1`] = `
   display: inline-block;
   z-index: 1;
   width: 100%;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  box-shadow: 0.2rem 0.2rem 0.5rem 0 rgba(37,32,31,0.3);
+  cursor: pointer;
+  box-sizing: border-box;
   padding: 0;
   -webkit-transition: all 0.4s;
   transition: all 0.4s;
@@ -322,11 +327,6 @@ exports[`<Card /> Should render with nextified href 1`] = `
   border-radius: 0.35rem;
   background: none;
   text-align: left;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  box-shadow: 0.2rem 0.2rem 0.5rem 0 rgba(37,32,31,0.3);
-  cursor: pointer;
-  box-sizing: border-box;
 }
 
 .c0:disabled {
