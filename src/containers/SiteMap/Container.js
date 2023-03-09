@@ -83,6 +83,8 @@ const SiteMap = props => {
         <StyledSubsectionWithScroll anchor={false} name="Photography 📷">
           <Paragraph>
             <TextLink href="/photography">Photography</TextLink>
+            <br />
+            <TextLink href="/drone">Drone certification and Operator IDs</TextLink>
           </Paragraph>
         </StyledSubsectionWithScroll>
         <StyledSubsectionWithScroll anchor={false} name="Medals 🏅">

@@ -337,6 +337,17 @@ exports[`<SiteMap /> should render correctly - index 1`] = `
                 Photography
               </span>
             </a>
+            <br />
+            <a
+              class="c11"
+              href="/drone"
+            >
+              <span
+                class="c12"
+              >
+                Drone certification and Operator IDs
+              </span>
+            </a>
           </span>
         </div>
       </div>
@@ -1714,6 +1725,17 @@ exports[`<SiteMap /> should render correctly 1`] = `
                 Photography
               </span>
             </a>
+            <br />
+            <a
+              class="c11"
+              href="/drone"
+            >
+              <span
+                class="c12"
+              >
+                Drone certification and Operator IDs
+              </span>
+            </a>
           </span>
         </div>
       </div>
@@ -3017,6 +3039,17 @@ exports[`<SiteMap /> should render correctly with blogs 1`] = `
                 class="c12"
               >
                 Photography
+              </span>
+            </a>
+            <br />
+            <a
+              class="c11"
+              href="/drone"
+            >
+              <span
+                class="c12"
+              >
+                Drone certification and Operator IDs
               </span>
             </a>
           </span>
@@ -4397,6 +4430,17 @@ exports[`<SiteMap /> should render correctly with blogs and admin user 1`] = `
                 Photography
               </span>
             </a>
+            <br />
+            <a
+              class="c11"
+              href="/drone"
+            >
+              <span
+                class="c12"
+              >
+                Drone certification and Operator IDs
+              </span>
+            </a>
           </span>
         </div>
       </div>
@@ -5700,6 +5744,17 @@ exports[`<SiteMap /> should render correctly with ssrBlogs 1`] = `
                 class="c12"
               >
                 Photography
+              </span>
+            </a>
+            <br />
+            <a
+              class="c11"
+              href="/drone"
+            >
+              <span
+                class="c12"
+              >
+                Drone certification and Operator IDs
               </span>
             </a>
           </span>
