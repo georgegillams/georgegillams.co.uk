@@ -1,6 +1,7 @@
 import React from 'react';
 
 import Section from '@george-gillams/components/section';
+import Subsection from '@george-gillams/components/subsection';
 import PageTitle from 'components/common/PageTitle';
 
 import PageContainer, { WIDTHS } from 'components/common/PageContainer';
@@ -14,22 +15,31 @@ const Contact = () => {
     <PageContainer width={WIDTHS.default} bottomPadding>
       <PageTitle name="Drone">
         <Section name="Proof of completion of online training">
-          <StyledImage lightSrc={ukCaaFlyerId.src} darkSrc={ukCaaFlyerId.src} aspectX={1916} aspectY={1354} />
-          <StyledImage
-            lightSrc={norwayCaaCompetency.src}
-            darkSrc={norwayCaaCompetency.src}
-            aspectX={2098}
-            aspectY={1384}
-          />
+          <Subsection name="UK">
+            <StyledImage lightSrc={ukCaaFlyerId.src} darkSrc={ukCaaFlyerId.src} aspectX={1916} aspectY={1354} />
+            <Paragraph>GBR-RP-B88RNYQSNJ62 — expires 8 March 2028</Paragraph>
+          </Subsection>
+          <Subsection name="Norway and EASA member states">
+            <StyledImage
+              lightSrc={norwayCaaCompetency.src}
+              darkSrc={norwayCaaCompetency.src}
+              aspectX={2098}
+              aspectY={1384}
+            />
+            <Paragraph>NOR-RP-4zb7de1751cj — expires 8 March 2028</Paragraph>
+          </Subsection>
         </Section>
         <Section name="Operator ID">
-          <Paragraph>UK CAA Operator ID: GBR-OP-267ZQHMWPYGR — expires 8 March 2024</Paragraph>
-          <Paragraph>Norwegian CAA Operator ID: NOR5p8cfumh4phal — expires 8 March 2024</Paragraph>
+          <Subsection name="UK"></Subsection>
+          <Paragraph>GBR-OP-267ZQHMWPYGR — expires 8 March 2024</Paragraph>
+          <Subsection name="Norway and EASA member states">
+            <Paragraph>NOR5p8cfumh4phal — expires 8 March 2024</Paragraph>
+          </Subsection>
         </Section>
         <Section name="Public Liability Insurance">
           <Paragraph>
-            Insured Worldwide by Starr International (Europe) Limited (SIEL) to own and operate of Unmanned Aerial
-            Systems (UAS) — expires 8 March 2024.
+            Insured Worldwide by Starr International (Europe) Limited (SIEL) to own and operate Unmanned Aerial Systems
+            (UAS) — expires 8 March 2024.
           </Paragraph>
         </Section>
       </PageTitle>
