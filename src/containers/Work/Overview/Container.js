@@ -14,6 +14,12 @@ const SubsectionWithScroll = withScrollAnimation(Subsection);
 const Work = () => (
   <PageContainer width={WIDTHS.prose} bottomPadding>
     <PageTitle name="Work">
+      <SubsectionWithScroll name="Courses and qualifications">
+        <Paragraph>I have completed several courses and qualifications alongside my work.</Paragraph>
+        <br />
+        <StyledButton href="/work/qualifications">Qualifications →</StyledButton>
+      </SubsectionWithScroll>
+
       <SubsectionWithScroll name="Typeform">
         <Paragraph>
           I maintain{' '}
