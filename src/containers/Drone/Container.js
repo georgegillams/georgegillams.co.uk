@@ -30,8 +30,8 @@ const Contact = () => {
         </SectionWithScroll>
         <SectionWithScroll name="Flight rules">
           <Paragraph>
-            My drone weights &lt; 250g and falls into the Open A1 category. My training permits me to fly in Open A1 and
-            Open A3 categories.
+            My drone weights &lt; 250g and falls into the Open A1 category. I have completed training that allows me me
+            to fly drones in Open A1 and Open A3 categories.
           </Paragraph>
           <Subsection name="UK">
             <Paragraph>
