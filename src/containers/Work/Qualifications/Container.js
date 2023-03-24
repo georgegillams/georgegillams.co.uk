@@ -12,6 +12,8 @@ import TotalTypescriptCertificate1 from './images/total-typescript/1-certificate
 import TotalTypescriptCertificate2 from './images/total-typescript/2-certificate.png';
 // import TotalTypescriptCertificate3 from './images/total-typescript/3-certificate.png';
 
+import ProductPsychologyMasterclassCertificate from './images/product-psychology-masterclass-certificate.jpg';
+
 const SubsectionWithScroll = withScrollAnimation(Subsection);
 const ParagraphWithScroll = withScrollAnimation(Paragraph);
 
@@ -80,24 +82,24 @@ const WorkQualifications = () => (
           darkSrc={TotalTypescriptCertificate3.src}
         /> */}
       </SubsectionWithScroll>
-      {/* <SubsectionWithScroll name="Product Psychology Masterclass">
+      <SubsectionWithScroll name="Product Psychology Masterclass">
         <Paragraph>
           I have completed growth.design&#39;s{' '}
           <TextLink hrefExternal href="https://growth.design/course">
             Product Psychology Masterclass
           </TextLink>
-          .
+          , giving me tools to find gaps in products and create effective solutions based on proven psychology.
         </Paragraph>
-        <Image
+        <StyledImage
           imgProps={{
-            alt: 'Screenshots of the Skyscanner app sporting the new brand.',
+            alt: "Certificate of Completion of growth.design's Product Psychology Masterclass.",
           }}
-          aspectX={3248}
-          aspectY={1986}
-          lightSrc={brandLight.src}
-          darkSrc={brandDark.src}
+          aspectX={2187}
+          aspectY={1690}
+          lightSrc={ProductPsychologyMasterclassCertificate.src}
+          darkSrc={ProductPsychologyMasterclassCertificate.src}
         />
-      </SubsectionWithScroll> */}
+      </SubsectionWithScroll>
       {/* <SubsectionWithScroll name="Photography Diploma — IOP">
         <Paragraph>
           I have completed a Professional Diploma in Photography from the{' '}
