@@ -7,6 +7,8 @@ const redirects = [
   },
   { from: '/copyright', to: 'https://creativecommons.org/licenses/by-sa/3.0/' },
   { from: '/flickr', to: 'https://www.flickr.com/people/georgegillams' },
+  { from: '/youtube', to: 'https://www.youtube.com/channel/UCT42ju8eCIWexjzT2whVOgQ' },
+  { from: '/typeform', to: 'https://form.typeform.com/to/WJSWmnKh' },
   { from: '/monzo', to: 'https://join.monzo.com/r/vjd3d74' },
   { from: '/github', to: 'https://github.com/georgegillams' },
   { from: '/stackoverflow', to: 'https://stackoverflow.com/users/14463713/georgegillams' },
