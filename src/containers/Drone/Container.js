@@ -39,7 +39,6 @@ const Contact = () => {
               <TextLink hrefExternal href="https://register-drones.caa.co.uk/drone-code/the_drone_code.pdf">
                 UK Civil Aviation Authority Drone and Model Aircraft Code
               </TextLink>
-              .
             </Paragraph>
           </Subsection>
           <Subsection name="Spain">
@@ -50,7 +49,6 @@ const Contact = () => {
                 href="https://www.seguridadaerea.gob.es/es/ambitos/drones/how-to-fly-a-uas-in-spain">
                 Agencia Estatal De Seguridad Aerea (State air safety agency) UAS flying rules
               </TextLink>
-              .
             </Paragraph>
           </Subsection>
           <Subsection name="Norway">
@@ -59,7 +57,6 @@ const Contact = () => {
               <TextLink hrefExternal href="https://luftfartstilsynet.no/en/drones/">
                 Norwegian Civil Aviation Authority Drone Rules
               </TextLink>
-              .
             </Paragraph>
           </Subsection>
         </SectionWithScroll>
