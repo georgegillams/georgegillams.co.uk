@@ -51,8 +51,10 @@ const updateCachedValue = async () => {
   cache.value = apiResult;
 };
 
-export default async function loadAll() {
-  if (!cache.value) {
+export default async function loadAll(req) {
+  const reCache = req.query['re-cache'] === 'true';
+
+  if (!cache.value || reCache) {
     // If no cached value, we have to wait for it to be fetched and then return it
     await updateCachedValue();
   } else if (cache.expiry < Date.now()) {

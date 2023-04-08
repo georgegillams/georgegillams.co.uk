@@ -22,8 +22,13 @@ Page.getInitialProps = async context => {
   }
 
   // Load photos from API and pass to props.
-  const requestUrl = apiStructure.loadShowcaseImages.fullPath;
-  const ssrPhotos = await fetch(requestUrl)
+  const requestUrl = new URL(apiStructure.loadShowcaseImages.fullPath);
+  const reCache = context.req.query['re-cache'] === 'true';
+  if (reCache) {
+    requestUrl.searchParams.append('re-cache', 'true');
+  }
+
+  const ssrPhotos = await fetch(requestUrl.toString())
     .then(data => data.json())
     .then(result => result.photos);
 
