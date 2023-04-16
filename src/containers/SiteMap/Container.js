@@ -105,6 +105,11 @@ const SiteMap = props => {
             <TextLink href="/work/epicc">EPICC</TextLink>
           </Paragraph>
         </StyledSubsectionWithScroll>
+        <StyledSubsectionWithScroll anchor={false} name="Apps 🖥️">
+          <Paragraph>
+            <TextLink href="/app-privacy-policy">App privacy Policy</TextLink>
+          </Paragraph>
+        </StyledSubsectionWithScroll>
         <StyledSubsectionWithScroll anchor={false} name="Design 🎨">
           <Paragraph>
             <TextLink href="/privacy-policy">Privacy Policy</TextLink>
