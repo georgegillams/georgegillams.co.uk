@@ -6,7 +6,9 @@ import PageTitle from 'components/common/PageTitle';
 import PageContainer, { WIDTHS } from 'components/common/PageContainer';
 import { withScrollAnimation } from '@george-gillams/components/effects';
 import Button from '@george-gillams/components/button';
-import { StyledImage } from './qualifications.styles';
+import { StyledImage, StyledSpartanTrifectaWedge } from './qualifications.styles';
+
+import { EVENT_TYPE as SPARTAN_EVENT_TYPE } from '@george-gillams/components/spartan-medal';
 
 import TotalTypescriptCertificate1 from './images/total-typescript/1-certificate.png';
 import TotalTypescriptCertificate2 from './images/total-typescript/2-certificate.png';
@@ -43,6 +45,13 @@ const WorkQualifications = () => (
         <Paragraph>
           <Button href="/drone">See my drone IDs →</Button>
         </Paragraph>
+      </SubsectionWithScroll>
+      <SubsectionWithScroll name="Spartan Obstacle Specialist Workshop">
+        <Paragraph>
+          I attended the first UK Spartan Obstacle Specialist Workshop, which works on varied techniques for overcoming
+          typical Spartan obstacles in mixed conditions.
+        </Paragraph>
+        <StyledSpartanTrifectaWedge type={SPARTAN_EVENT_TYPE.obstacleSpecialistWorkshop} year={2022} />
       </SubsectionWithScroll>
       <SubsectionWithScroll name="Total TypeScript">
         <Paragraph>
