@@ -76,18 +76,18 @@ const Medals = () => {
             <SpartanMedal
               type={SPARTAN_EVENT_TYPE.beast}
               year={2023}
-              stravaLink="https://www.strava.com/activities/TODO"
+              stravaLink="https://www.strava.com/activities/8976887050"
             />
-            {/* <SpartanMedal
+            <SpartanMedal
               type={SPARTAN_EVENT_TYPE.super}
               year={2023}
-              stravaLink="https://www.strava.com/activities/TODO"
+              stravaLink="https://www.strava.com/activities/8982453371"
             />
             <SpartanMedal
               type={SPARTAN_EVENT_TYPE.sprint}
               year={2023}
-              stravaLink="https://www.strava.com/activities/TODO"
-            /> */}
+              stravaLink="https://www.strava.com/activities/8985253651"
+            />
           </StyledMedalShelf>
         </Subsection>
         <Subsection anchor={false} name="Trifectas">
@@ -96,11 +96,10 @@ const Medals = () => {
               wedges={[SPARTAN_EVENT_TYPE.sprint, SPARTAN_EVENT_TYPE.super, SPARTAN_EVENT_TYPE.beast]}
               year={2022}
             />
-            <SpartanTrifectaDisplay wedges={[null, null, SPARTAN_EVENT_TYPE.beast]} year={2023} />
-            {/* <SpartanTrifectaDisplay
+            <SpartanTrifectaDisplay
               wedges={[SPARTAN_EVENT_TYPE.sprint, SPARTAN_EVENT_TYPE.super, SPARTAN_EVENT_TYPE.beast]}
               year={2023}
-            /> */}
+            />
           </StyledMedalShelf>
         </Subsection>
         <Subsection anchor={false} name="Other wedges">
