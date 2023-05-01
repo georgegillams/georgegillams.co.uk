@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<Layout /> Should render correctly 1`] = `
-.c5 {
+.c4 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -28,18 +28,18 @@ exports[`<Layout /> Should render correctly 1`] = `
   padding: 0;
 }
 
-.c7 {
+.c6 {
   border-radius: 0.25rem;
 }
 
-.c7:focus-within,
-.c7:focus {
+.c6:focus-within,
+.c6:focus {
   position: relative;
   outline: none !important;
 }
 
-.c7:focus-within::after,
-.c7:focus::after {
+.c6:focus-within::after,
+.c6:focus::after {
   position: absolute;
   top: -0.35rem;
   right: -0.35rem;
@@ -52,16 +52,16 @@ exports[`<Layout /> Should render correctly 1`] = `
   pointer-events: none;
 }
 
-.c7:hover,
-.c7:active,
-.c7:focus {
+.c6:hover,
+.c6:active,
+.c6:focus {
   -webkit-animation-duration: 0.4s;
   animation-duration: 0.4s;
   -webkit-animation-name: cMFrpC;
   animation-name: cMFrpC;
 }
 
-.c8 {
+.c7 {
   display: inline-block;
   padding-top: 0.1rem;
   border-radius: 0.25rem;
@@ -71,7 +71,7 @@ exports[`<Layout /> Should render correctly 1`] = `
   font-weight: bold;
 }
 
-.c15 {
+.c14 {
   display: inline-block;
   border-radius: 0.25rem;
   font-weight: bold;
@@ -82,14 +82,14 @@ exports[`<Layout /> Should render correctly 1`] = `
   fill: white;
 }
 
-.c15:focus-within,
-.c15:focus {
+.c14:focus-within,
+.c14:focus {
   position: relative;
   outline: none !important;
 }
 
-.c15:focus-within::after,
-.c15:focus::after {
+.c14:focus-within::after,
+.c14:focus::after {
   position: absolute;
   top: -0.35rem;
   right: -0.35rem;
@@ -102,16 +102,16 @@ exports[`<Layout /> Should render correctly 1`] = `
   pointer-events: none;
 }
 
-.c15:hover {
+.c14:hover {
   color: white;
   fill: white;
 }
 
-.c16 {
+.c15 {
   margin: 0;
 }
 
-.c13 {
+.c12 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -131,7 +131,7 @@ exports[`<Layout /> Should render correctly 1`] = `
   margin: auto;
 }
 
-.c14 > * {
+.c13 > * {
   margin: 0.5rem 0.5rem 0 0.5rem;
   display: -webkit-box;
   display: -webkit-flex;
@@ -146,7 +146,7 @@ exports[`<Layout /> Should render correctly 1`] = `
   align-items: center;
 }
 
-.c10 {
+.c9 {
   display: inline-block;
   margin-bottom: 0;
   padding-bottom: 0;
@@ -154,11 +154,11 @@ exports[`<Layout /> Should render correctly 1`] = `
   margin-top: 2rem;
 }
 
-.c10:first-of-type {
+.c9:first-of-type {
   margin-top: 0.86rem;
 }
 
-.c11 {
+.c10 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -178,7 +178,7 @@ exports[`<Layout /> Should render correctly 1`] = `
   align-items: center;
 }
 
-.c12 {
+.c11 {
   display: inline-block;
   width: 100%;
   max-width: 2.3rem;
@@ -189,12 +189,12 @@ exports[`<Layout /> Should render correctly 1`] = `
   filter: brightness(0) invert(1);
 }
 
-.c12:hover {
+.c11:hover {
   -webkit-filter: brightness(0) invert(1) opacity(70%);
   filter: brightness(0) invert(1) opacity(70%);
 }
 
-.c4 {
+.c3 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -214,11 +214,11 @@ exports[`<Layout /> Should render correctly 1`] = `
   color: white;
 }
 
-.c6 {
+.c5 {
   text-align: center;
 }
 
-.c9 {
+.c8 {
   text-align: center;
 }
 
@@ -232,19 +232,15 @@ exports[`<Layout /> Should render correctly 1`] = `
   flex: 1 1 auto;
 }
 
-.c3 {
+.c2 {
   padding-top: 0;
   opacity: 1;
   -webkit-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;
 }
 
-.c2 {
-  width: 100%;
-}
-
 @media (min-width:50.25rem) {
-  .c5 {
+  .c4 {
     padding-right: unset;
     padding-left: unset;
     -webkit-align-items: unset;
@@ -255,51 +251,51 @@ exports[`<Layout /> Should render correctly 1`] = `
 }
 
 @media (prefers-color-scheme:dark) {
-  .c7:focus-within::after,
-  .c7:focus::after {
+  .c6:focus-within::after,
+  .c6:focus::after {
     border-color: rgba(0,125,250,0.6);
   }
 }
 
 @media (min-width:32.25rem) {
-  .c8 {
+  .c7 {
     font-size: 3rem;
   }
 }
 
 @media (prefers-color-scheme:dark) {
-  .c8 {
+  .c7 {
     color: white;
   }
 }
 
 @media (prefers-color-scheme:dark) {
-  .c15:focus-within::after,
-  .c15:focus::after {
+  .c14:focus-within::after,
+  .c14:focus::after {
     border-color: rgba(0,125,250,0.6);
   }
 }
 
 @media (prefers-color-scheme:dark) {
-  .c15 {
+  .c14 {
     color: white;
     fill: white;
   }
 
-  .c15:hover {
+  .c14:hover {
     color: white;
     fill: white;
   }
 }
 
 @media (min-width:32.25rem) {
-  .c4 {
+  .c3 {
     padding: 2rem 2rem;
   }
 }
 
 @media (prefers-color-scheme:dark) {
-  .c4 {
+  .c3 {
     border-top: solid #44aeff 0.15rem;
     background-color: #050d1b;
   }
@@ -314,41 +310,39 @@ exports[`<Layout /> Should render correctly 1`] = `
       some text
     </div>
   </main>
-  <div
-    class="c2"
-  >
+  <div>
     <style>
       .js .animated-content__wrapper--hidden {
   opacity: 0.01;
 }
     </style>
     <div
-      class="c3 animated-content__wrapper--hidden"
+      class="c2 animated-content__wrapper--hidden"
     >
       <footer
-        class="c4"
+        class="c3"
         id="footer"
       >
         <div
-          class="c5 c6"
+          class="c4 c5"
         >
           <a
-            class="c7"
+            class="c6"
             href="/"
           >
             <span
               aria-label="Home page"
-              class="c8"
+              class="c7"
             >
               G
             </span>
           </a>
         </div>
         <div
-          class="c9"
+          class="c8"
         >
           <span
-            class="c10 c11"
+            class="c9 c10"
           >
             Built in
             <a
@@ -358,7 +352,7 @@ exports[`<Layout /> Should render correctly 1`] = `
             >
               <img
                 alt="React"
-                class="c12"
+                class="c11"
                 height="5"
                 width="5"
               />
@@ -371,7 +365,7 @@ exports[`<Layout /> Should render correctly 1`] = `
             >
               <img
                 alt="Redux"
-                class="c12"
+                class="c11"
                 height="5"
                 width="5"
               />
@@ -384,7 +378,7 @@ exports[`<Layout /> Should render correctly 1`] = `
             >
               <img
                 alt="Amazon Web Services"
-                class="c12"
+                class="c11"
                 height="5"
                 style="margin-top: .8rem; max-width: 2.9rem;"
                 width="8.28"
@@ -393,91 +387,91 @@ exports[`<Layout /> Should render correctly 1`] = `
           </span>
         </div>
         <div
-          class="c13 "
+          class="c12 "
         >
           <div
-            class="c14"
+            class="c13"
           >
             <a
-              class="c15"
+              class="c14"
               href="/blog"
             >
               <span
-                class="c16"
+                class="c15"
               >
                 Blog
               </span>
             </a>
             <a
-              class="c15"
+              class="c14"
               href="/photography"
             >
               <span
-                class="c16"
+                class="c15"
               >
                 Photography
               </span>
             </a>
             <a
-              class="c15"
+              class="c14"
               href="/work"
             >
               <span
-                class="c16"
+                class="c15"
               >
                 Work
               </span>
             </a>
             <a
-              class="c15"
+              class="c14"
               href="/contact"
             >
               <span
-                class="c16"
+                class="c15"
               >
                 Contact
               </span>
             </a>
           </div>
           <div
-            class="c14"
+            class="c13"
           >
             <a
-              class="c15"
+              class="c14"
               href="/sitemap"
             >
               <span
-                class="c16"
+                class="c15"
               >
                 Site map
               </span>
             </a>
             <a
-              class="c15"
+              class="c14"
               href="/privacy-policy"
             >
               <span
-                class="c16"
+                class="c15"
               >
                 Privacy
               </span>
             </a>
             <a
-              class="c15"
+              class="c14"
               href="/login"
             >
               <span
-                class="c16"
+                class="c15"
               >
                 Login/Account
               </span>
             </a>
             <a
-              class="c15"
+              class="c14"
               href="/status"
             >
               <span
-                class="c16"
+                class="c15"
               >
                 Status
               </span>
@@ -491,7 +485,7 @@ exports[`<Layout /> Should render correctly 1`] = `
 `;
 
 exports[`<Layout /> Should render correctly with spread props 1`] = `
-.c5 {
+.c4 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -518,18 +512,18 @@ exports[`<Layout /> Should render correctly with spread props 1`] = `
   padding: 0;
 }
 
-.c7 {
+.c6 {
   border-radius: 0.25rem;
 }
 
-.c7:focus-within,
-.c7:focus {
+.c6:focus-within,
+.c6:focus {
   position: relative;
   outline: none !important;
 }
 
-.c7:focus-within::after,
-.c7:focus::after {
+.c6:focus-within::after,
+.c6:focus::after {
   position: absolute;
   top: -0.35rem;
   right: -0.35rem;
@@ -542,16 +536,16 @@ exports[`<Layout /> Should render correctly with spread props 1`] = `
   pointer-events: none;
 }
 
-.c7:hover,
-.c7:active,
-.c7:focus {
+.c6:hover,
+.c6:active,
+.c6:focus {
   -webkit-animation-duration: 0.4s;
   animation-duration: 0.4s;
   -webkit-animation-name: cMFrpC;
   animation-name: cMFrpC;
 }
 
-.c8 {
+.c7 {
   display: inline-block;
   padding-top: 0.1rem;
   border-radius: 0.25rem;
@@ -561,7 +555,7 @@ exports[`<Layout /> Should render correctly with spread props 1`] = `
   font-weight: bold;
 }
 
-.c15 {
+.c14 {
   display: inline-block;
   border-radius: 0.25rem;
   font-weight: bold;
@@ -572,14 +566,14 @@ exports[`<Layout /> Should render correctly with spread props 1`] = `
   fill: white;
 }
 
-.c15:focus-within,
-.c15:focus {
+.c14:focus-within,
+.c14:focus {
   position: relative;
   outline: none !important;
 }
 
-.c15:focus-within::after,
-.c15:focus::after {
+.c14:focus-within::after,
+.c14:focus::after {
   position: absolute;
   top: -0.35rem;
   right: -0.35rem;
@@ -592,16 +586,16 @@ exports[`<Layout /> Should render correctly with spread props 1`] = `
   pointer-events: none;
 }
 
-.c15:hover {
+.c14:hover {
   color: white;
   fill: white;
 }
 
-.c16 {
+.c15 {
   margin: 0;
 }
 
-.c13 {
+.c12 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -621,7 +615,7 @@ exports[`<Layout /> Should render correctly with spread props 1`] = `
   margin: auto;
 }
 
-.c14 > * {
+.c13 > * {
   margin: 0.5rem 0.5rem 0 0.5rem;
   display: -webkit-box;
   display: -webkit-flex;
@@ -636,7 +630,7 @@ exports[`<Layout /> Should render correctly with spread props 1`] = `
   align-items: center;
 }
 
-.c10 {
+.c9 {
   display: inline-block;
   margin-bottom: 0;
   padding-bottom: 0;
@@ -644,11 +638,11 @@ exports[`<Layout /> Should render correctly with spread props 1`] = `
   margin-top: 2rem;
 }
 
-.c10:first-of-type {
+.c9:first-of-type {
   margin-top: 0.86rem;
 }
 
-.c11 {
+.c10 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -668,7 +662,7 @@ exports[`<Layout /> Should render correctly with spread props 1`] = `
   align-items: center;
 }
 
-.c12 {
+.c11 {
   display: inline-block;
   width: 100%;
   max-width: 2.3rem;
@@ -679,12 +673,12 @@ exports[`<Layout /> Should render correctly with spread props 1`] = `
   filter: brightness(0) invert(1);
 }
 
-.c12:hover {
+.c11:hover {
   -webkit-filter: brightness(0) invert(1) opacity(70%);
   filter: brightness(0) invert(1) opacity(70%);
 }
 
-.c4 {
+.c3 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -704,11 +698,11 @@ exports[`<Layout /> Should render correctly with spread props 1`] = `
   color: white;
 }
 
-.c6 {
+.c5 {
   text-align: center;
 }
 
-.c9 {
+.c8 {
   text-align: center;
 }
 
@@ -722,19 +716,15 @@ exports[`<Layout /> Should render correctly with spread props 1`] = `
   flex: 1 1 auto;
 }
 
-.c3 {
+.c2 {
   padding-top: 0;
   opacity: 1;
   -webkit-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;
 }
 
-.c2 {
-  width: 100%;
-}
-
 @media (min-width:50.25rem) {
-  .c5 {
+  .c4 {
     padding-right: unset;
     padding-left: unset;
     -webkit-align-items: unset;
@@ -745,51 +735,51 @@ exports[`<Layout /> Should render correctly with spread props 1`] = `
 }
 
 @media (prefers-color-scheme:dark) {
-  .c7:focus-within::after,
-  .c7:focus::after {
+  .c6:focus-within::after,
+  .c6:focus::after {
     border-color: rgba(0,125,250,0.6);
   }
 }
 
 @media (min-width:32.25rem) {
-  .c8 {
+  .c7 {
     font-size: 3rem;
   }
 }
 
 @media (prefers-color-scheme:dark) {
-  .c8 {
+  .c7 {
     color: white;
   }
 }
 
 @media (prefers-color-scheme:dark) {
-  .c15:focus-within::after,
-  .c15:focus::after {
+  .c14:focus-within::after,
+  .c14:focus::after {
     border-color: rgba(0,125,250,0.6);
   }
 }
 
 @media (prefers-color-scheme:dark) {
-  .c15 {
+  .c14 {
     color: white;
     fill: white;
   }
 
-  .c15:hover {
+  .c14:hover {
     color: white;
     fill: white;
   }
 }
 
 @media (min-width:32.25rem) {
-  .c4 {
+  .c3 {
     padding: 2rem 2rem;
   }
 }
 
 @media (prefers-color-scheme:dark) {
-  .c4 {
+  .c3 {
     border-top: solid #44aeff 0.15rem;
     background-color: #050d1b;
   }
@@ -804,41 +794,39 @@ exports[`<Layout /> Should render correctly with spread props 1`] = `
       some text
     </div>
   </main>
-  <div
-    class="c2"
-  >
+  <div>
     <style>
       .js .animated-content__wrapper--hidden {
   opacity: 0.01;
 }
     </style>
     <div
-      class="c3 animated-content__wrapper--hidden"
+      class="c2 animated-content__wrapper--hidden"
     >
       <footer
-        class="c4"
+        class="c3"
         id="footer"
       >
         <div
-          class="c5 c6"
+          class="c4 c5"
         >
           <a
-            class="c7"
+            class="c6"
             href="/"
           >
             <span
               aria-label="Home page"
-              class="c8"
+              class="c7"
             >
               G
             </span>
           </a>
         </div>
         <div
-          class="c9"
+          class="c8"
         >
           <span
-            class="c10 c11"
+            class="c9 c10"
           >
             Built in
             <a
@@ -848,7 +836,7 @@ exports[`<Layout /> Should render correctly with spread props 1`] = `
             >
               <img
                 alt="React"
-                class="c12"
+                class="c11"
                 height="5"
                 width="5"
               />
@@ -861,7 +849,7 @@ exports[`<Layout /> Should render correctly with spread props 1`] = `
             >
               <img
                 alt="Redux"
-                class="c12"
+                class="c11"
                 height="5"
                 width="5"
               />
@@ -874,7 +862,7 @@ exports[`<Layout /> Should render correctly with spread props 1`] = `
             >
               <img
                 alt="Amazon Web Services"
-                class="c12"
+                class="c11"
                 height="5"
                 style="margin-top: .8rem; max-width: 2.9rem;"
                 width="8.28"
@@ -883,91 +871,91 @@ exports[`<Layout /> Should render correctly with spread props 1`] = `
           </span>
         </div>
         <div
-          class="c13 "
+          class="c12 "
         >
           <div
-            class="c14"
+            class="c13"
           >
             <a
-              class="c15"
+              class="c14"
               href="/blog"
             >
               <span
-                class="c16"
+                class="c15"
               >
                 Blog
               </span>
             </a>
             <a
-              class="c15"
+              class="c14"
               href="/photography"
             >
               <span
-                class="c16"
+                class="c15"
               >
                 Photography
               </span>
             </a>
             <a
-              class="c15"
+              class="c14"
               href="/work"
             >
               <span
-                class="c16"
+                class="c15"
               >
                 Work
               </span>
             </a>
             <a
-              class="c15"
+              class="c14"
               href="/contact"
             >
               <span
-                class="c16"
+                class="c15"
               >
                 Contact
               </span>
             </a>
           </div>
           <div
-            class="c14"
+            class="c13"
           >
             <a
-              class="c15"
+              class="c14"
               href="/sitemap"
             >
               <span
-                class="c16"
+                class="c15"
               >
                 Site map
               </span>
             </a>
             <a
-              class="c15"
+              class="c14"
               href="/privacy-policy"
             >
               <span
-                class="c16"
+                class="c15"
               >
                 Privacy
               </span>
             </a>
             <a
-              class="c15"
+              class="c14"
               href="/login"
             >
               <span
-                class="c16"
+                class="c15"
               >
                 Login/Account
               </span>
             </a>
             <a
-              class="c15"
+              class="c14"
               href="/status"
             >
               <span
-                class="c16"
+                class="c15"
               >
                 Status
               </span>

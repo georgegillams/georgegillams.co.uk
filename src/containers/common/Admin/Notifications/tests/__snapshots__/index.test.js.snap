@@ -258,6 +258,7 @@ exports[`<AdminNotifications /> should render correctly with admin user 1`] = `
 
 .c15:active {
   background-color: #003E6F;
+  color: white;
 }
 
 .c15:disabled {
@@ -445,6 +446,7 @@ exports[`<AdminNotifications /> should render correctly with admin user 1`] = `
 @media (prefers-color-scheme:dark) {
   .c15:active {
     background-color: #003965;
+    color: white;
   }
 }
 
@@ -908,6 +910,7 @@ exports[`<AdminNotifications /> should render correctly with loadError 1`] = `
 
 .c15:active {
   background-color: #003E6F;
+  color: white;
 }
 
 .c15:disabled {
@@ -1112,6 +1115,7 @@ exports[`<AdminNotifications /> should render correctly with loadError 1`] = `
 @media (prefers-color-scheme:dark) {
   .c15:active {
     background-color: #003965;
+    color: white;
   }
 }
 
@@ -1624,6 +1628,7 @@ exports[`<AdminNotifications /> should render correctly with loading=true 1`] = 
 
 .c15:active {
   background-color: #003E6F;
+  color: white;
 }
 
 .c15:disabled {
@@ -1678,6 +1683,7 @@ exports[`<AdminNotifications /> should render correctly with loading=true 1`] = 
 
 .c18:active {
   background-color: #003E6F;
+  color: white;
 }
 
 .c18:disabled {
@@ -1903,6 +1909,7 @@ exports[`<AdminNotifications /> should render correctly with loading=true 1`] = 
 @media (prefers-color-scheme:dark) {
   .c15:active {
     background-color: #003965;
+    color: white;
   }
 }
 
@@ -1938,6 +1945,7 @@ exports[`<AdminNotifications /> should render correctly with loading=true 1`] = 
 @media (prefers-color-scheme:dark) {
   .c18:active {
     background-color: #003965;
+    color: white;
   }
 }
 
@@ -2289,6 +2297,7 @@ exports[`<AdminNotifications /> should render correctly with notifications 1`] =
 
 .c15:active {
   background-color: #003E6F;
+  color: white;
 }
 
 .c15:disabled {
@@ -2342,6 +2351,7 @@ exports[`<AdminNotifications /> should render correctly with notifications 1`] =
 
 .c20:active {
   background-color: #9F1717;
+  color: white;
 }
 
 .c20:disabled {
@@ -2607,6 +2617,7 @@ exports[`<AdminNotifications /> should render correctly with notifications 1`] =
 @media (prefers-color-scheme:dark) {
   .c15:active {
     background-color: #003965;
+    color: white;
   }
 }
 
@@ -2642,6 +2653,7 @@ exports[`<AdminNotifications /> should render correctly with notifications 1`] =
 @media (prefers-color-scheme:dark) {
   .c20:active {
     background-color: #730D0D;
+    color: white;
   }
 }
 

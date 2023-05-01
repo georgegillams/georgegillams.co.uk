@@ -235,9 +235,7 @@ exports[`<BlogRenderer /> should render correctly - index 1`] = `
       />
     </div>
   </div>
-  <div
-    class=""
-  >
+  <div>
     <style>
       .js .animated-content__wrapper--hidden {
   opacity: 0.01;
@@ -612,9 +610,7 @@ exports[`<BlogRenderer /> should render correctly with blog 1`] = `
       </span>
     </div>
   </div>
-  <div
-    class=""
-  >
+  <div>
     <style>
       .js .animated-content__wrapper--hidden {
   opacity: 0.01;
@@ -1012,9 +1008,7 @@ exports[`<BlogRenderer /> should render correctly with blog and admin 1`] = `
       </div>
     </div>
   </div>
-  <div
-    class=""
-  >
+  <div>
     <style>
       .js .animated-content__wrapper--hidden {
   opacity: 0.01;
@@ -1353,9 +1347,7 @@ exports[`<BlogRenderer /> should render correctly with blog load error 1`] = `
       </h1>
     </div>
   </div>
-  <div
-    class=""
-  >
+  <div>
     <style>
       .js .animated-content__wrapper--hidden {
   opacity: 0.01;
@@ -1669,9 +1661,7 @@ exports[`<BlogRenderer /> should render correctly with initial state 1`] = `
       />
     </div>
   </div>
-  <div
-    class=""
-  >
+  <div>
     <style>
       .js .animated-content__wrapper--hidden {
   opacity: 0.01;
@@ -2046,9 +2036,7 @@ exports[`<BlogRenderer /> should render correctly with ssrBlog 1`] = `
       </span>
     </div>
   </div>
-  <div
-    class=""
-  >
+  <div>
     <style>
       .js .animated-content__wrapper--hidden {
   opacity: 0.01;

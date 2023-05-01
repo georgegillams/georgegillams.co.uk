@@ -7,41 +7,41 @@ exports[`<Medals /> should render correctly 1`] = `
   font-weight: bold;
 }
 
-.c7 {
+.c6 {
   margin: 0;
   font-size: 2.2rem;
   font-weight: bold;
 }
 
-.c21 {
+.c20 {
   margin: 0;
   font-size: 1.5rem;
   font-weight: bold;
 }
 
-.c12 {
+.c11 {
   margin: 0;
   font-size: 2.4rem;
   font-weight: bold;
 }
 
-.c14 {
+.c13 {
   margin: 0;
 }
 
-.c18 {
+.c17 {
   width: 1.25rem;
   height: 1.25rem;
   width: 2rem;
   height: 2rem;
 }
 
-.c40 {
+.c39 {
   width: 1.25rem;
   height: 1.25rem;
 }
 
-.c17 {
+.c16 {
   display: inline-block;
   border-radius: 0.25rem;
   font-weight: bold;
@@ -52,14 +52,14 @@ exports[`<Medals /> should render correctly 1`] = `
   fill: #1e1e1e;
 }
 
-.c17:focus-within,
-.c17:focus {
+.c16:focus-within,
+.c16:focus {
   position: relative;
   outline: none !important;
 }
 
-.c17:focus-within::after,
-.c17:focus::after {
+.c16:focus-within::after,
+.c16:focus::after {
   position: absolute;
   top: -0.35rem;
   right: -0.35rem;
@@ -72,12 +72,12 @@ exports[`<Medals /> should render correctly 1`] = `
   pointer-events: none;
 }
 
-.c17:hover {
+.c16:hover {
   color: #44aeff;
   fill: #44aeff;
 }
 
-.c20 {
+.c19 {
   display: inline-block;
   border-radius: 0.25rem;
   font-weight: bold;
@@ -88,14 +88,14 @@ exports[`<Medals /> should render correctly 1`] = `
   fill: rgb(255,120,26);
 }
 
-.c20:focus-within,
-.c20:focus {
+.c19:focus-within,
+.c19:focus {
   position: relative;
   outline: none !important;
 }
 
-.c20:focus-within::after,
-.c20:focus::after {
+.c19:focus-within::after,
+.c19:focus::after {
   position: absolute;
   top: -0.35rem;
   right: -0.35rem;
@@ -108,12 +108,12 @@ exports[`<Medals /> should render correctly 1`] = `
   pointer-events: none;
 }
 
-.c20:hover {
+.c19:hover {
   color: #44aeff;
   fill: #44aeff;
 }
 
-.c39 {
+.c38 {
   display: inline-block;
   border-radius: 0.25rem;
   font-weight: bold;
@@ -124,14 +124,14 @@ exports[`<Medals /> should render correctly 1`] = `
   fill: #C50722;
 }
 
-.c39:focus-within,
-.c39:focus {
+.c38:focus-within,
+.c38:focus {
   position: relative;
   outline: none !important;
 }
 
-.c39:focus-within::after,
-.c39:focus::after {
+.c38:focus-within::after,
+.c38:focus::after {
   position: absolute;
   top: -0.35rem;
   right: -0.35rem;
@@ -144,12 +144,12 @@ exports[`<Medals /> should render correctly 1`] = `
   pointer-events: none;
 }
 
-.c39:hover {
+.c38:hover {
   color: #44aeff;
   fill: #44aeff;
 }
 
-.c42 {
+.c41 {
   display: inline-block;
   border-radius: 0.25rem;
   font-weight: bold;
@@ -160,14 +160,14 @@ exports[`<Medals /> should render correctly 1`] = `
   fill: #11388E;
 }
 
-.c42:focus-within,
-.c42:focus {
+.c41:focus-within,
+.c41:focus {
   position: relative;
   outline: none !important;
 }
 
-.c42:focus-within::after,
-.c42:focus::after {
+.c41:focus-within::after,
+.c41:focus::after {
   position: absolute;
   top: -0.35rem;
   right: -0.35rem;
@@ -180,12 +180,12 @@ exports[`<Medals /> should render correctly 1`] = `
   pointer-events: none;
 }
 
-.c42:hover {
+.c41:hover {
   color: #44aeff;
   fill: #44aeff;
 }
 
-.c44 {
+.c43 {
   display: inline-block;
   border-radius: 0.25rem;
   font-weight: bold;
@@ -196,14 +196,14 @@ exports[`<Medals /> should render correctly 1`] = `
   fill: #549C00;
 }
 
-.c44:focus-within,
-.c44:focus {
+.c43:focus-within,
+.c43:focus {
   position: relative;
   outline: none !important;
 }
 
-.c44:focus-within::after,
-.c44:focus::after {
+.c43:focus-within::after,
+.c43:focus::after {
   position: absolute;
   top: -0.35rem;
   right: -0.35rem;
@@ -216,12 +216,12 @@ exports[`<Medals /> should render correctly 1`] = `
   pointer-events: none;
 }
 
-.c44:hover {
+.c43:hover {
   color: #44aeff;
   fill: #44aeff;
 }
 
-.c69 {
+.c68 {
   display: inline-block;
   border-radius: 0.25rem;
   font-weight: bold;
@@ -232,14 +232,14 @@ exports[`<Medals /> should render correctly 1`] = `
   fill: white;
 }
 
-.c69:focus-within,
-.c69:focus {
+.c68:focus-within,
+.c68:focus {
   position: relative;
   outline: none !important;
 }
 
-.c69:focus-within::after,
-.c69:focus::after {
+.c68:focus-within::after,
+.c68:focus::after {
   position: absolute;
   top: -0.35rem;
   right: -0.35rem;
@@ -252,12 +252,12 @@ exports[`<Medals /> should render correctly 1`] = `
   pointer-events: none;
 }
 
-.c69:hover {
+.c68:hover {
   color: #44aeff;
   fill: #44aeff;
 }
 
-.c71 {
+.c70 {
   display: inline-block;
   border-radius: 0.25rem;
   font-weight: bold;
@@ -268,14 +268,14 @@ exports[`<Medals /> should render correctly 1`] = `
   fill: #CE9708;
 }
 
-.c71:focus-within,
-.c71:focus {
+.c70:focus-within,
+.c70:focus {
   position: relative;
   outline: none !important;
 }
 
-.c71:focus-within::after,
-.c71:focus::after {
+.c70:focus-within::after,
+.c70:focus::after {
   position: absolute;
   top: -0.35rem;
   right: -0.35rem;
@@ -288,23 +288,23 @@ exports[`<Medals /> should render correctly 1`] = `
   pointer-events: none;
 }
 
-.c71:hover {
+.c70:hover {
   color: #44aeff;
   fill: #44aeff;
 }
 
-.c6 {
+.c5 {
   width: 100%;
   color: #1e1e1e;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
-.c8 {
+.c7 {
   margin: 3.34rem 0 0 0;
 }
 
-.c22 {
+.c21 {
   margin: 2.13rem 0 0 0;
 }
 
@@ -312,15 +312,11 @@ exports[`<Medals /> should render correctly 1`] = `
   margin: 2.3rem 0 0 0;
 }
 
-.c5 {
+.c4 {
   padding-top: 0;
   opacity: 1;
   -webkit-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;
-}
-
-.c4 {
-  width: 100%;
 }
 
 .c1 {
@@ -340,7 +336,7 @@ exports[`<Medals /> should render correctly 1`] = `
   padding-left: 1rem;
 }
 
-.c11 {
+.c10 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -365,7 +361,7 @@ exports[`<Medals /> should render correctly 1`] = `
   fill: #1e1e1e;
 }
 
-.c19 {
+.c18 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -390,7 +386,7 @@ exports[`<Medals /> should render correctly 1`] = `
   fill: rgb(255,120,26);
 }
 
-.c23 {
+.c22 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -415,7 +411,7 @@ exports[`<Medals /> should render correctly 1`] = `
   fill: #1e1e1e;
 }
 
-.c24 {
+.c23 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -440,7 +436,7 @@ exports[`<Medals /> should render correctly 1`] = `
   fill: #1e1e1e;
 }
 
-.c25 {
+.c24 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -465,7 +461,7 @@ exports[`<Medals /> should render correctly 1`] = `
   fill: #1e1e1e;
 }
 
-.c67 {
+.c66 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -490,7 +486,7 @@ exports[`<Medals /> should render correctly 1`] = `
   fill: #1e1e1e;
 }
 
-.c68 {
+.c67 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -515,7 +511,7 @@ exports[`<Medals /> should render correctly 1`] = `
   fill: white;
 }
 
-.c70 {
+.c69 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -540,7 +536,7 @@ exports[`<Medals /> should render correctly 1`] = `
   fill: #CE9708;
 }
 
-.c72 {
+.c71 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -565,21 +561,21 @@ exports[`<Medals /> should render correctly 1`] = `
   fill: white;
 }
 
-.c13 {
+.c12 {
   text-align: center;
 }
 
-.c15 {
+.c14 {
   margin-top: 0.375rem;
 }
 
-.c16 {
+.c15 {
   position: absolute;
   right: 0.375rem;
   bottom: 0.375rem;
 }
 
-.c37 {
+.c36 {
   width: 14rem;
   height: 14rem;
   fill: none;
@@ -587,111 +583,111 @@ exports[`<Medals /> should render correctly 1`] = `
   filter: drop-shadow(0px 0px 0.4px #1e1e1e);
 }
 
-.c26 {
+.c25 {
   position: relative;
   width: 14rem;
   height: 14rem;
 }
 
-.c27 {
+.c26 {
   width: 14rem;
   height: 14rem;
 }
 
-.c28 {
+.c27 {
   fill: #a0a0a0;
 }
 
-.c29 {
+.c28 {
   fill: #d9d9d9;
 }
 
-.c30 {
+.c29 {
   fill: #C50722;
 }
 
-.c41 {
+.c40 {
   fill: #11388E;
 }
 
-.c43 {
+.c42 {
   fill: #549C00;
 }
 
-.c31 {
+.c30 {
   fill: none;
 }
 
-.c32 {
+.c31 {
   font-size: 0.3rem;
   font-weight: bold;
   fill: white;
 }
 
-.c33 {
+.c32 {
   text-shadow: 0px 0px 3px white;
 }
 
-.c34 {
+.c33 {
   fill: none;
 }
 
-.c35 {
+.c34 {
   font-size: 0.5rem;
   font-weight: bold;
   fill: #d9d9d9;
 }
 
-.c36 {
+.c35 {
   text-shadow: 1px 1px 2px #1e1e1e;
 }
 
-.c38 {
+.c37 {
   position: absolute;
   right: calc(14rem / 2);
   bottom: 0;
 }
 
-.c50 {
+.c49 {
   width: 18.6rem;
   height: 18.6rem;
 }
 
-.c52 {
+.c51 {
   fill: #a0a0a0;
 }
 
-.c66 {
+.c65 {
   fill: #a0a0a0;
   fill: white;
 }
 
-.c53 {
+.c52 {
   fill: #d9d9d9;
 }
 
-.c54 {
+.c53 {
   stroke: #1e1e1e;
   fill: none;
 }
 
-.c55 {
+.c54 {
   fill: #C50722;
 }
 
-.c63 {
+.c62 {
   fill: #11388E;
 }
 
-.c65 {
+.c64 {
   fill: #549C00;
 }
 
-.c56 {
+.c55 {
   fill: none;
 }
 
-.c57 {
+.c56 {
   font-size: 0.65rem;
   font-weight: light;
   fill: white;
@@ -701,15 +697,15 @@ exports[`<Medals /> should render correctly 1`] = `
   letter-spacing: 0.25rem;
 }
 
-.c58 {
+.c57 {
   text-shadow: 0px 0px 3px white;
 }
 
-.c59 {
+.c58 {
   fill: none;
 }
 
-.c60 {
+.c59 {
   font-size: 0.65rem;
   font-weight: light;
   fill: white;
@@ -719,49 +715,49 @@ exports[`<Medals /> should render correctly 1`] = `
   letter-spacing: 0.1rem;
 }
 
-.c61 {
+.c60 {
   text-shadow: 0px 0px 3px white;
 }
 
-.c45 {
+.c44 {
   width: 23.15rem;
   height: 23.15rem;
 }
 
-.c46 {
+.c45 {
   fill: #d9d9d9;
 }
 
-.c51 {
+.c50 {
   -webkit-clip-path: path('M0 22.5L0 0H100V22.5L50 50L0 22.5Z');
   clip-path: path('M0 22.5L0 0H100V22.5L50 50L0 22.5Z');
 }
 
-.c62 {
+.c61 {
   -webkit-clip-path: path('M50 50L0 22.5V100H50V50Z');
   clip-path: path('M50 50L0 22.5V100H50V50Z');
 }
 
-.c64 {
+.c63 {
   -webkit-clip-path: path('M100 100V22.5L50 50V100H100Z');
   clip-path: path('M100 100V22.5L50 50V100H100Z');
 }
 
-.c47 {
+.c46 {
   fill: none;
 }
 
-.c48 {
+.c47 {
   font-size: 0.5rem;
   font-weight: bold;
   fill: #1e1e1e;
 }
 
-.c49 {
+.c48 {
   text-shadow: 1px 1px 2px white;
 }
 
-.c9 {
+.c8 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -773,150 +769,150 @@ exports[`<Medals /> should render correctly 1`] = `
   margin-left: -2rem;
 }
 
-.c9 > * {
+.c8 > * {
   margin-top: 2rem;
   margin-left: 2rem;
 }
 
-.c10 {
+.c9 {
   margin-top: 0.375rem;
 }
 
 @media (prefers-color-scheme:dark) {
-  .c17:focus-within::after,
-  .c17:focus::after {
+  .c16:focus-within::after,
+  .c16:focus::after {
     border-color: rgba(0,125,250,0.6);
   }
 }
 
 @media (prefers-color-scheme:dark) {
-  .c17 {
+  .c16 {
     color: #1e1e1e;
     fill: #1e1e1e;
   }
 
-  .c17:hover {
+  .c16:hover {
     color: #44aeff;
     fill: #44aeff;
   }
 }
 
 @media (prefers-color-scheme:dark) {
-  .c20:focus-within::after,
-  .c20:focus::after {
+  .c19:focus-within::after,
+  .c19:focus::after {
     border-color: rgba(0,125,250,0.6);
   }
 }
 
 @media (prefers-color-scheme:dark) {
-  .c20 {
+  .c19 {
     color: rgb(255,120,26);
     fill: rgb(255,120,26);
   }
 
-  .c20:hover {
+  .c19:hover {
     color: #44aeff;
     fill: #44aeff;
   }
 }
 
 @media (prefers-color-scheme:dark) {
-  .c39:focus-within::after,
-  .c39:focus::after {
+  .c38:focus-within::after,
+  .c38:focus::after {
     border-color: rgba(0,125,250,0.6);
   }
 }
 
 @media (prefers-color-scheme:dark) {
-  .c39 {
+  .c38 {
     color: #C50722;
     fill: #C50722;
   }
 
-  .c39:hover {
+  .c38:hover {
     color: #44aeff;
     fill: #44aeff;
   }
 }
 
 @media (prefers-color-scheme:dark) {
-  .c42:focus-within::after,
-  .c42:focus::after {
+  .c41:focus-within::after,
+  .c41:focus::after {
     border-color: rgba(0,125,250,0.6);
   }
 }
 
 @media (prefers-color-scheme:dark) {
-  .c42 {
+  .c41 {
     color: #11388E;
     fill: #11388E;
   }
 
-  .c42:hover {
+  .c41:hover {
     color: #44aeff;
     fill: #44aeff;
   }
 }
 
 @media (prefers-color-scheme:dark) {
-  .c44:focus-within::after,
-  .c44:focus::after {
+  .c43:focus-within::after,
+  .c43:focus::after {
     border-color: rgba(0,125,250,0.6);
   }
 }
 
 @media (prefers-color-scheme:dark) {
-  .c44 {
+  .c43 {
     color: #549C00;
     fill: #549C00;
   }
 
-  .c44:hover {
+  .c43:hover {
     color: #44aeff;
     fill: #44aeff;
   }
 }
 
 @media (prefers-color-scheme:dark) {
-  .c69:focus-within::after,
-  .c69:focus::after {
+  .c68:focus-within::after,
+  .c68:focus::after {
     border-color: rgba(0,125,250,0.6);
   }
 }
 
 @media (prefers-color-scheme:dark) {
-  .c69 {
+  .c68 {
     color: white;
     fill: white;
   }
 
-  .c69:hover {
+  .c68:hover {
     color: #44aeff;
     fill: #44aeff;
   }
 }
 
 @media (prefers-color-scheme:dark) {
-  .c71:focus-within::after,
-  .c71:focus::after {
+  .c70:focus-within::after,
+  .c70:focus::after {
     border-color: rgba(0,125,250,0.6);
   }
 }
 
 @media (prefers-color-scheme:dark) {
-  .c71 {
+  .c70 {
     color: #CE9708;
     fill: #CE9708;
   }
 
-  .c71:hover {
+  .c70:hover {
     color: #44aeff;
     fill: #44aeff;
   }
 }
 
 @media (prefers-color-scheme:dark) {
-  .c6 {
+  .c5 {
     color: white;
   }
 }
@@ -929,39 +925,57 @@ exports[`<Medals /> should render correctly 1`] = `
 }
 
 @media (prefers-color-scheme:dark) {
-
+  .c10 {
+    box-shadow: 0.44rem 0.44rem 1rem 0 transparent;
+  }
 }
 
 @media (prefers-color-scheme:dark) {
-
+  .c18 {
+    box-shadow: 0.44rem 0.44rem 1rem 0 transparent;
+  }
 }
 
 @media (prefers-color-scheme:dark) {
-
+  .c22 {
+    box-shadow: 0.44rem 0.44rem 1rem 0 transparent;
+  }
 }
 
 @media (prefers-color-scheme:dark) {
-
+  .c23 {
+    box-shadow: 0.44rem 0.44rem 1rem 0 transparent;
+  }
 }
 
 @media (prefers-color-scheme:dark) {
-
+  .c24 {
+    box-shadow: 0.44rem 0.44rem 1rem 0 transparent;
+  }
 }
 
 @media (prefers-color-scheme:dark) {
-
+  .c66 {
+    box-shadow: 0.44rem 0.44rem 1rem 0 transparent;
+  }
 }
 
 @media (prefers-color-scheme:dark) {
-
+  .c67 {
+    box-shadow: 0.44rem 0.44rem 1rem 0 transparent;
+  }
 }
 
 @media (prefers-color-scheme:dark) {
-
+  .c69 {
+    box-shadow: 0.44rem 0.44rem 1rem 0 transparent;
+  }
 }
 
 @media (prefers-color-scheme:dark) {
-
+  .c71 {
+    box-shadow: 0.44rem 0.44rem 1rem 0 transparent;
+  }
 }
 
 <div>
@@ -978,9 +992,7 @@ exports[`<Medals /> should render correctly 1`] = `
         Medals
       </h1>
     </div>
-    <div
-      class="c4"
-    >
+    <div>
       <style>
         .js .animated-content__wrapper--hidden {
   padding-top: 4rem;
@@ -988,50 +1000,50 @@ exports[`<Medals /> should render correctly 1`] = `
 }
       </style>
       <div
-        class="c5 animated-content__wrapper--hidden"
+        class="c4 animated-content__wrapper--hidden"
       >
         <div
-          class="c6"
+          class="c5"
         >
           <h1
-            class="c7 c8"
+            class="c6 c7"
             id="tough-mudder"
           >
             Tough Mudder
           </h1>
           <div
-            class="c6"
+            class="c5"
           >
             <div
-              class="c9 c10"
+              class="c8 c9"
             >
               <div
-                class="c11"
+                class="c10"
               >
                 <span
-                  class="c12 c13"
+                  class="c11 c12"
                 >
                   FULL
                 </span>
                 <span
-                  class="c14 c15"
+                  class="c13 c14"
                 >
                   2016
                 </span>
                 <div
-                  class="c16"
+                  class="c15"
                 >
                   <a
-                    class="c17 "
+                    class="c16 "
                     href="https://www.strava.com/activities/787876867"
                     rel="noopener noreferrer"
                     target="_blank"
                   >
                     <span
-                      class="c14"
+                      class="c13"
                     >
                       <svg
-                        class="c18"
+                        class="c17"
                         height="18"
                         viewBox="0 0 24 24"
                         width="18"
@@ -1050,32 +1062,32 @@ exports[`<Medals /> should render correctly 1`] = `
                 </div>
               </div>
               <div
-                class="c19"
+                class="c18"
               >
                 <span
-                  class="c12 c13"
+                  class="c11 c12"
                 >
                   HALF
                 </span>
                 <span
-                  class="c14 c15"
+                  class="c13 c14"
                 >
                   2016
                 </span>
                 <div
-                  class="c16"
+                  class="c15"
                 >
                   <a
-                    class="c20 "
+                    class="c19 "
                     href="https://www.strava.com/activities/787876472"
                     rel="noopener noreferrer"
                     target="_blank"
                   >
                     <span
-                      class="c14"
+                      class="c13"
                     >
                       <svg
-                        class="c18"
+                        class="c17"
                         height="18"
                         viewBox="0 0 24 24"
                         width="18"
@@ -1094,32 +1106,32 @@ exports[`<Medals /> should render correctly 1`] = `
                 </div>
               </div>
               <div
-                class="c11"
+                class="c10"
               >
                 <span
-                  class="c12 c13"
+                  class="c11 c12"
                 >
                   FULL
                 </span>
                 <span
-                  class="c14 c15"
+                  class="c13 c14"
                 >
                   2017
                 </span>
                 <div
-                  class="c16"
+                  class="c15"
                 >
                   <a
-                    class="c17 "
+                    class="c16 "
                     href="https://www.strava.com/activities/973508848"
                     rel="noopener noreferrer"
                     target="_blank"
                   >
                     <span
-                      class="c14"
+                      class="c13"
                     >
                       <svg
-                        class="c18"
+                        class="c17"
                         height="18"
                         viewBox="0 0 24 24"
                         width="18"
@@ -1138,32 +1150,32 @@ exports[`<Medals /> should render correctly 1`] = `
                 </div>
               </div>
               <div
-                class="c11"
+                class="c10"
               >
                 <span
-                  class="c12 c13"
+                  class="c11 c12"
                 >
                   FULL
                 </span>
                 <span
-                  class="c14 c15"
+                  class="c13 c14"
                 >
                   2017
                 </span>
                 <div
-                  class="c16"
+                  class="c15"
                 >
                   <a
-                    class="c17 "
+                    class="c16 "
                     href="https://www.strava.com/activities/998731470"
                     rel="noopener noreferrer"
                     target="_blank"
                   >
                     <span
-                      class="c14"
+                      class="c13"
                     >
                       <svg
-                        class="c18"
+                        class="c17"
                         height="18"
                         viewBox="0 0 24 24"
                         width="18"
@@ -1182,32 +1194,32 @@ exports[`<Medals /> should render correctly 1`] = `
                 </div>
               </div>
               <div
-                class="c11"
+                class="c10"
               >
                 <span
-                  class="c12 c13"
+                  class="c11 c12"
                 >
                   FULL
                 </span>
                 <span
-                  class="c14 c15"
+                  class="c13 c14"
                 >
                   2018
                 </span>
                 <div
-                  class="c16"
+                  class="c15"
                 >
                   <a
-                    class="c17 "
+                    class="c16 "
                     href="https://www.strava.com/activities/1551224197"
                     rel="noopener noreferrer"
                     target="_blank"
                   >
                     <span
-                      class="c14"
+                      class="c13"
                     >
                       <svg
-                        class="c18"
+                        class="c17"
                         height="18"
                         viewBox="0 0 24 24"
                         width="18"
@@ -1228,51 +1240,51 @@ exports[`<Medals /> should render correctly 1`] = `
             </div>
           </div>
           <div
-            class="c6"
+            class="c5"
           >
             <h1
-              class="c21 c22"
+              class="c20 c21"
               id="legionaire"
             >
               Legionaire
             </h1>
             <div
-              class="c9 c10"
+              class="c8 c9"
             >
               <div
-                class="c23"
+                class="c22"
               >
                 <span
-                  class="c12 c13"
+                  class="c11 c12"
                 >
                   2X TOUGH MUDDER
                 </span>
                 <div
-                  class="c16"
+                  class="c15"
+                />
+              </div>
+              <div
+                class="c23"
+              >
+                <span
+                  class="c11 c12"
+                >
+                  3X TOUGH MUDDER
+                </span>
+                <div
+                  class="c15"
                 />
               </div>
               <div
                 class="c24"
               >
                 <span
-                  class="c12 c13"
-                >
-                  3X TOUGH MUDDER
-                </span>
-                <div
-                  class="c16"
-                />
-              </div>
-              <div
-                class="c25"
-              >
-                <span
-                  class="c12 c13"
+                  class="c11 c12"
                 >
                   4-6X TOUGH MUDDER
                 </span>
                 <div
-                  class="c16"
+                  class="c15"
                 />
               </div>
             </div>
@@ -1280,9 +1292,7 @@ exports[`<Medals /> should render correctly 1`] = `
         </div>
       </div>
     </div>
-    <div
-      class="c4"
-    >
+    <div>
       <style>
         .js .animated-content__wrapper--hidden {
   padding-top: 4rem;
@@ -1290,63 +1300,63 @@ exports[`<Medals /> should render correctly 1`] = `
 }
       </style>
       <div
-        class="c5 animated-content__wrapper--hidden"
+        class="c4 animated-content__wrapper--hidden"
       >
         <div
-          class="c6"
+          class="c5"
         >
           <h1
-            class="c7 c8"
+            class="c6 c7"
             id="spartan"
           >
             Spartan
           </h1>
           <div
-            class="c6"
+            class="c5"
           >
             <div
-              class="c9 c10"
+              class="c8 c9"
             >
               <div
-                class="c26"
+                class="c25"
               >
                 <svg
-                  class="c27"
+                  class="c26"
                   height="75"
                   viewBox="0 0 75 75"
                   width="75"
                   xmlns="http://www.w3.org/2000/svg"
                 >
                   <circle
-                    class="c28"
+                    class="c27"
                     cx="37.5"
                     cy="37.5"
                     r="37.5"
                   />
                   <circle
-                    class="c29"
+                    class="c28"
                     cx="37.5"
                     cy="37.5"
                     r="25.5"
                   />
                   <path
-                    class="c30"
+                    class="c29"
                     color="#C50722"
                     d="M37.5 75C47.4456 75 56.9839 71.0491 64.0165 64.0165C71.0491 56.9839 75 47.4456 75 37.5C75 27.5544 71.0491 18.0161 64.0165 10.9835C56.9839 3.95088 47.4456 -1.186e-07 37.5 0V8.59567C45.1659 8.59567 52.5178 11.6409 57.9384 17.0616C63.3591 22.4822 66.4043 29.8341 66.4043 37.5C66.4043 45.1659 63.3591 52.5178 57.9384 57.9384C52.5178 63.3591 45.1659 66.4043 37.5 66.4043V75Z"
                   />
                   <path
-                    class="c31"
+                    class="c30"
                     d="M38 6C54.7705 6 69 20.7339 69 36.9919C69 53.7581 55.7869 69 38 69"
                     id="textLine1"
                   />
                   <text
-                    class="c32"
+                    class="c31"
                     color="white"
                     width="500"
                   >
                     <textpath
-                      alignment-baseline="center"
-                      class="c33"
+                      alignment-baseline="central"
+                      class="c32"
                       startOffset="15"
                       xlink:href="#textLine1"
                     >
@@ -1357,17 +1367,17 @@ exports[`<Medals /> should render correctly 1`] = `
                     </textpath>
                   </text>
                   <path
-                    class="c34"
+                    class="c33"
                     d="M37 66C21.8525 66 8.99999 52.6694 9 37.9597C9 22.7903 20.9344 9 37 9"
                     id="textLine2"
                   />
                   <text
-                    class="c35"
+                    class="c34"
                     width="500"
                   >
                     <textpath
-                      alignment-baseline="center"
-                      class="c36"
+                      alignment-baseline="central"
+                      class="c35"
                       startOffset="16"
                       xlink:href="#textLine2"
                     >
@@ -1377,7 +1387,7 @@ exports[`<Medals /> should render correctly 1`] = `
                     </textpath>
                   </text>
                   <svg
-                    class="c37 "
+                    class="c36 "
                     height="44"
                     viewBox="0 0 200 200"
                     width="44"
@@ -1429,19 +1439,19 @@ exports[`<Medals /> should render correctly 1`] = `
                   </svg>
                 </svg>
                 <div
-                  class="c38"
+                  class="c37"
                 >
                   <a
-                    class="c39 "
+                    class="c38 "
                     href="https://www.strava.com/activities/7297440877"
                     rel="noopener noreferrer"
                     target="_blank"
                   >
                     <span
-                      class="c14"
+                      class="c13"
                     >
                       <svg
-                        class="c40"
+                        class="c39"
                         height="18"
                         viewBox="0 0 24 24"
                         width="18"
@@ -1460,45 +1470,45 @@ exports[`<Medals /> should render correctly 1`] = `
                 </div>
               </div>
               <div
-                class="c26"
+                class="c25"
               >
                 <svg
-                  class="c27"
+                  class="c26"
                   height="75"
                   viewBox="0 0 75 75"
                   width="75"
                   xmlns="http://www.w3.org/2000/svg"
                 >
                   <circle
-                    class="c28"
+                    class="c27"
                     cx="37.5"
                     cy="37.5"
                     r="37.5"
                   />
                   <circle
-                    class="c29"
+                    class="c28"
                     cx="37.5"
                     cy="37.5"
                     r="25.5"
                   />
                   <path
-                    class="c41"
+                    class="c40"
                     color="#11388E"
                     d="M37.5 75C47.4456 75 56.9839 71.0491 64.0165 64.0165C71.0491 56.9839 75 47.4456 75 37.5C75 27.5544 71.0491 18.0161 64.0165 10.9835C56.9839 3.95088 47.4456 -1.186e-07 37.5 0V8.59567C45.1659 8.59567 52.5178 11.6409 57.9384 17.0616C63.3591 22.4822 66.4043 29.8341 66.4043 37.5C66.4043 45.1659 63.3591 52.5178 57.9384 57.9384C52.5178 63.3591 45.1659 66.4043 37.5 66.4043V75Z"
                   />
                   <path
-                    class="c31"
+                    class="c30"
                     d="M38 6C54.7705 6 69 20.7339 69 36.9919C69 53.7581 55.7869 69 38 69"
                     id="textLine1"
                   />
                   <text
-                    class="c32"
+                    class="c31"
                     color="white"
                     width="500"
                   >
                     <textpath
-                      alignment-baseline="center"
-                      class="c33"
+                      alignment-baseline="central"
+                      class="c32"
                       startOffset="15"
                       xlink:href="#textLine1"
                     >
@@ -1509,17 +1519,17 @@ exports[`<Medals /> should render correctly 1`] = `
                     </textpath>
                   </text>
                   <path
-                    class="c34"
+                    class="c33"
                     d="M37 66C21.8525 66 8.99999 52.6694 9 37.9597C9 22.7903 20.9344 9 37 9"
                     id="textLine2"
                   />
                   <text
-                    class="c35"
+                    class="c34"
                     width="500"
                   >
                     <textpath
-                      alignment-baseline="center"
-                      class="c36"
+                      alignment-baseline="central"
+                      class="c35"
                       startOffset="16"
                       xlink:href="#textLine2"
                     >
@@ -1529,7 +1539,7 @@ exports[`<Medals /> should render correctly 1`] = `
                     </textpath>
                   </text>
                   <svg
-                    class="c37 "
+                    class="c36 "
                     height="44"
                     viewBox="0 0 200 200"
                     width="44"
@@ -1581,19 +1591,19 @@ exports[`<Medals /> should render correctly 1`] = `
                   </svg>
                 </svg>
                 <div
-                  class="c38"
+                  class="c37"
                 >
                   <a
-                    class="c42 "
+                    class="c41 "
                     href="https://www.strava.com/activities/7484273069"
                     rel="noopener noreferrer"
                     target="_blank"
                   >
                     <span
-                      class="c14"
+                      class="c13"
                     >
                       <svg
-                        class="c40"
+                        class="c39"
                         height="18"
                         viewBox="0 0 24 24"
                         width="18"
@@ -1612,45 +1622,45 @@ exports[`<Medals /> should render correctly 1`] = `
                 </div>
               </div>
               <div
-                class="c26"
+                class="c25"
               >
                 <svg
-                  class="c27"
+                  class="c26"
                   height="75"
                   viewBox="0 0 75 75"
                   width="75"
                   xmlns="http://www.w3.org/2000/svg"
                 >
                   <circle
-                    class="c28"
+                    class="c27"
                     cx="37.5"
                     cy="37.5"
                     r="37.5"
                   />
                   <circle
-                    class="c29"
+                    class="c28"
                     cx="37.5"
                     cy="37.5"
                     r="25.5"
                   />
                   <path
-                    class="c43"
+                    class="c42"
                     color="#549C00"
                     d="M37.5 75C47.4456 75 56.9839 71.0491 64.0165 64.0165C71.0491 56.9839 75 47.4456 75 37.5C75 27.5544 71.0491 18.0161 64.0165 10.9835C56.9839 3.95088 47.4456 -1.186e-07 37.5 0V8.59567C45.1659 8.59567 52.5178 11.6409 57.9384 17.0616C63.3591 22.4822 66.4043 29.8341 66.4043 37.5C66.4043 45.1659 63.3591 52.5178 57.9384 57.9384C52.5178 63.3591 45.1659 66.4043 37.5 66.4043V75Z"
                   />
                   <path
-                    class="c31"
+                    class="c30"
                     d="M38 6C54.7705 6 69 20.7339 69 36.9919C69 53.7581 55.7869 69 38 69"
                     id="textLine1"
                   />
                   <text
-                    class="c32"
+                    class="c31"
                     color="white"
                     width="500"
                   >
                     <textpath
-                      alignment-baseline="center"
-                      class="c33"
+                      alignment-baseline="central"
+                      class="c32"
                       startOffset="15"
                       xlink:href="#textLine1"
                     >
@@ -1661,17 +1671,17 @@ exports[`<Medals /> should render correctly 1`] = `
                     </textpath>
                   </text>
                   <path
-                    class="c34"
+                    class="c33"
                     d="M37 66C21.8525 66 8.99999 52.6694 9 37.9597C9 22.7903 20.9344 9 37 9"
                     id="textLine2"
                   />
                   <text
-                    class="c35"
+                    class="c34"
                     width="500"
                   >
                     <textpath
-                      alignment-baseline="center"
-                      class="c36"
+                      alignment-baseline="central"
+                      class="c35"
                       startOffset="16"
                       xlink:href="#textLine2"
                     >
@@ -1681,7 +1691,7 @@ exports[`<Medals /> should render correctly 1`] = `
                     </textpath>
                   </text>
                   <svg
-                    class="c37 "
+                    class="c36 "
                     height="44"
                     viewBox="0 0 200 200"
                     width="44"
@@ -1733,19 +1743,19 @@ exports[`<Medals /> should render correctly 1`] = `
                   </svg>
                 </svg>
                 <div
-                  class="c38"
+                  class="c37"
                 >
                   <a
-                    class="c44 "
+                    class="c43 "
                     href="https://www.strava.com/activities/7931592133"
                     rel="noopener noreferrer"
                     target="_blank"
                   >
                     <span
-                      class="c14"
+                      class="c13"
                     >
                       <svg
-                        class="c40"
+                        class="c39"
                         height="18"
                         viewBox="0 0 24 24"
                         width="18"
@@ -1764,45 +1774,45 @@ exports[`<Medals /> should render correctly 1`] = `
                 </div>
               </div>
               <div
-                class="c26"
+                class="c25"
               >
                 <svg
-                  class="c27"
+                  class="c26"
                   height="75"
                   viewBox="0 0 75 75"
                   width="75"
                   xmlns="http://www.w3.org/2000/svg"
                 >
                   <circle
-                    class="c28"
+                    class="c27"
                     cx="37.5"
                     cy="37.5"
                     r="37.5"
                   />
                   <circle
-                    class="c29"
+                    class="c28"
                     cx="37.5"
                     cy="37.5"
                     r="25.5"
                   />
                   <path
-                    class="c43"
+                    class="c42"
                     color="#549C00"
                     d="M37.5 75C47.4456 75 56.9839 71.0491 64.0165 64.0165C71.0491 56.9839 75 47.4456 75 37.5C75 27.5544 71.0491 18.0161 64.0165 10.9835C56.9839 3.95088 47.4456 -1.186e-07 37.5 0V8.59567C45.1659 8.59567 52.5178 11.6409 57.9384 17.0616C63.3591 22.4822 66.4043 29.8341 66.4043 37.5C66.4043 45.1659 63.3591 52.5178 57.9384 57.9384C52.5178 63.3591 45.1659 66.4043 37.5 66.4043V75Z"
                   />
                   <path
-                    class="c31"
+                    class="c30"
                     d="M38 6C54.7705 6 69 20.7339 69 36.9919C69 53.7581 55.7869 69 38 69"
                     id="textLine1"
                   />
                   <text
-                    class="c32"
+                    class="c31"
                     color="white"
                     width="500"
                   >
                     <textpath
-                      alignment-baseline="center"
-                      class="c33"
+                      alignment-baseline="central"
+                      class="c32"
                       startOffset="15"
                       xlink:href="#textLine1"
                     >
@@ -1813,17 +1823,17 @@ exports[`<Medals /> should render correctly 1`] = `
                     </textpath>
                   </text>
                   <path
-                    class="c34"
+                    class="c33"
                     d="M37 66C21.8525 66 8.99999 52.6694 9 37.9597C9 22.7903 20.9344 9 37 9"
                     id="textLine2"
                   />
                   <text
-                    class="c35"
+                    class="c34"
                     width="500"
                   >
                     <textpath
-                      alignment-baseline="center"
-                      class="c36"
+                      alignment-baseline="central"
+                      class="c35"
                       startOffset="16"
                       xlink:href="#textLine2"
                     >
@@ -1833,7 +1843,7 @@ exports[`<Medals /> should render correctly 1`] = `
                     </textpath>
                   </text>
                   <svg
-                    class="c37 "
+                    class="c36 "
                     height="44"
                     viewBox="0 0 200 200"
                     width="44"
@@ -1885,19 +1895,19 @@ exports[`<Medals /> should render correctly 1`] = `
                   </svg>
                 </svg>
                 <div
-                  class="c38"
+                  class="c37"
                 >
                   <a
-                    class="c44 "
+                    class="c43 "
                     href="https://www.strava.com/activities/8976887050"
                     rel="noopener noreferrer"
                     target="_blank"
                   >
                     <span
-                      class="c14"
+                      class="c13"
                     >
                       <svg
-                        class="c40"
+                        class="c39"
                         height="18"
                         viewBox="0 0 24 24"
                         width="18"
@@ -1916,45 +1926,45 @@ exports[`<Medals /> should render correctly 1`] = `
                 </div>
               </div>
               <div
-                class="c26"
+                class="c25"
               >
                 <svg
-                  class="c27"
+                  class="c26"
                   height="75"
                   viewBox="0 0 75 75"
                   width="75"
                   xmlns="http://www.w3.org/2000/svg"
                 >
                   <circle
-                    class="c28"
+                    class="c27"
                     cx="37.5"
                     cy="37.5"
                     r="37.5"
                   />
                   <circle
-                    class="c29"
+                    class="c28"
                     cx="37.5"
                     cy="37.5"
                     r="25.5"
                   />
                   <path
-                    class="c41"
+                    class="c40"
                     color="#11388E"
                     d="M37.5 75C47.4456 75 56.9839 71.0491 64.0165 64.0165C71.0491 56.9839 75 47.4456 75 37.5C75 27.5544 71.0491 18.0161 64.0165 10.9835C56.9839 3.95088 47.4456 -1.186e-07 37.5 0V8.59567C45.1659 8.59567 52.5178 11.6409 57.9384 17.0616C63.3591 22.4822 66.4043 29.8341 66.4043 37.5C66.4043 45.1659 63.3591 52.5178 57.9384 57.9384C52.5178 63.3591 45.1659 66.4043 37.5 66.4043V75Z"
                   />
                   <path
-                    class="c31"
+                    class="c30"
                     d="M38 6C54.7705 6 69 20.7339 69 36.9919C69 53.7581 55.7869 69 38 69"
                     id="textLine1"
                   />
                   <text
-                    class="c32"
+                    class="c31"
                     color="white"
                     width="500"
                   >
                     <textpath
-                      alignment-baseline="center"
-                      class="c33"
+                      alignment-baseline="central"
+                      class="c32"
                       startOffset="15"
                       xlink:href="#textLine1"
                     >
@@ -1965,17 +1975,17 @@ exports[`<Medals /> should render correctly 1`] = `
                     </textpath>
                   </text>
                   <path
-                    class="c34"
+                    class="c33"
                     d="M37 66C21.8525 66 8.99999 52.6694 9 37.9597C9 22.7903 20.9344 9 37 9"
                     id="textLine2"
                   />
                   <text
-                    class="c35"
+                    class="c34"
                     width="500"
                   >
                     <textpath
-                      alignment-baseline="center"
-                      class="c36"
+                      alignment-baseline="central"
+                      class="c35"
                       startOffset="16"
                       xlink:href="#textLine2"
                     >
@@ -1985,7 +1995,7 @@ exports[`<Medals /> should render correctly 1`] = `
                     </textpath>
                   </text>
                   <svg
-                    class="c37 "
+                    class="c36 "
                     height="44"
                     viewBox="0 0 200 200"
                     width="44"
@@ -2037,19 +2047,19 @@ exports[`<Medals /> should render correctly 1`] = `
                   </svg>
                 </svg>
                 <div
-                  class="c38"
+                  class="c37"
                 >
                   <a
-                    class="c42 "
+                    class="c41 "
                     href="https://www.strava.com/activities/8982453371"
                     rel="noopener noreferrer"
                     target="_blank"
                   >
                     <span
-                      class="c14"
+                      class="c13"
                     >
                       <svg
-                        class="c40"
+                        class="c39"
                         height="18"
                         viewBox="0 0 24 24"
                         width="18"
@@ -2068,45 +2078,45 @@ exports[`<Medals /> should render correctly 1`] = `
                 </div>
               </div>
               <div
-                class="c26"
+                class="c25"
               >
                 <svg
-                  class="c27"
+                  class="c26"
                   height="75"
                   viewBox="0 0 75 75"
                   width="75"
                   xmlns="http://www.w3.org/2000/svg"
                 >
                   <circle
-                    class="c28"
+                    class="c27"
                     cx="37.5"
                     cy="37.5"
                     r="37.5"
                   />
                   <circle
-                    class="c29"
+                    class="c28"
                     cx="37.5"
                     cy="37.5"
                     r="25.5"
                   />
                   <path
-                    class="c30"
+                    class="c29"
                     color="#C50722"
                     d="M37.5 75C47.4456 75 56.9839 71.0491 64.0165 64.0165C71.0491 56.9839 75 47.4456 75 37.5C75 27.5544 71.0491 18.0161 64.0165 10.9835C56.9839 3.95088 47.4456 -1.186e-07 37.5 0V8.59567C45.1659 8.59567 52.5178 11.6409 57.9384 17.0616C63.3591 22.4822 66.4043 29.8341 66.4043 37.5C66.4043 45.1659 63.3591 52.5178 57.9384 57.9384C52.5178 63.3591 45.1659 66.4043 37.5 66.4043V75Z"
                   />
                   <path
-                    class="c31"
+                    class="c30"
                     d="M38 6C54.7705 6 69 20.7339 69 36.9919C69 53.7581 55.7869 69 38 69"
                     id="textLine1"
                   />
                   <text
-                    class="c32"
+                    class="c31"
                     color="white"
                     width="500"
                   >
                     <textpath
-                      alignment-baseline="center"
-                      class="c33"
+                      alignment-baseline="central"
+                      class="c32"
                       startOffset="15"
                       xlink:href="#textLine1"
                     >
@@ -2117,17 +2127,17 @@ exports[`<Medals /> should render correctly 1`] = `
                     </textpath>
                   </text>
                   <path
-                    class="c34"
+                    class="c33"
                     d="M37 66C21.8525 66 8.99999 52.6694 9 37.9597C9 22.7903 20.9344 9 37 9"
                     id="textLine2"
                   />
                   <text
-                    class="c35"
+                    class="c34"
                     width="500"
                   >
                     <textpath
-                      alignment-baseline="center"
-                      class="c36"
+                      alignment-baseline="central"
+                      class="c35"
                       startOffset="16"
                       xlink:href="#textLine2"
                     >
@@ -2137,7 +2147,7 @@ exports[`<Medals /> should render correctly 1`] = `
                     </textpath>
                   </text>
                   <svg
-                    class="c37 "
+                    class="c36 "
                     height="44"
                     viewBox="0 0 200 200"
                     width="44"
@@ -2189,19 +2199,19 @@ exports[`<Medals /> should render correctly 1`] = `
                   </svg>
                 </svg>
                 <div
-                  class="c38"
+                  class="c37"
                 >
                   <a
-                    class="c39 "
+                    class="c38 "
                     href="https://www.strava.com/activities/8985253651"
                     rel="noopener noreferrer"
                     target="_blank"
                   >
                     <span
-                      class="c14"
+                      class="c13"
                     >
                       <svg
-                        class="c40"
+                        class="c39"
                         height="18"
                         viewBox="0 0 24 24"
                         width="18"
@@ -2222,61 +2232,61 @@ exports[`<Medals /> should render correctly 1`] = `
             </div>
           </div>
           <div
-            class="c6"
+            class="c5"
           >
             <h1
-              class="c21 c22"
+              class="c20 c21"
               id="trifectas"
             >
               Trifectas
             </h1>
             <div
-              class="c9 c10"
+              class="c8 c9"
             >
               <svg
-                class="c45"
+                class="c44"
                 height="124"
                 viewBox="0 0 124 124"
                 width="124"
                 xmlns="http://www.w3.org/2000/svg"
               >
                 <circle
-                  class="c46"
+                  class="c45"
                   cx="62"
                   cy="62"
                   r="62"
                 />
                 <circle
-                  class="c47"
+                  class="c46"
                   cx="62"
                   cy="62"
                   id="outerTextLine"
                   r="53"
                 />
                 <text
-                  class="c48"
+                  class="c47"
                   color="#1e1e1e"
                   width="500"
                 >
                   <textpath
-                    alignment-baseline="center"
-                    class="c49"
+                    alignment-baseline="central"
+                    class="c48"
                     startOffset="166"
                     xlink:href="#outerTextLine"
                   >
                     CAMARADERIE
                   </textpath>
                   <textpath
-                    alignment-baseline="center"
-                    class="c49"
+                    alignment-baseline="central"
+                    class="c48"
                     startOffset="286"
                     xlink:href="#outerTextLine"
                   >
                     COURAGE
                   </textpath>
                   <textpath
-                    alignment-baseline="center"
-                    class="c49"
+                    alignment-baseline="central"
+                    class="c48"
                     startOffset="58"
                     xlink:href="#outerTextLine"
                   >
@@ -2284,7 +2294,7 @@ exports[`<Medals /> should render correctly 1`] = `
                   </textpath>
                 </text>
                 <svg
-                  class="c50 c51"
+                  class="c49 c50"
                   height="100"
                   viewBox="0 0 100 100"
                   width="100"
@@ -2293,10 +2303,16 @@ exports[`<Medals /> should render correctly 1`] = `
                   y="12"
                 >
                   <circle
-                    class="c52"
+                    class="c51"
                     cx="50"
                     cy="50"
                     r="50"
+                  />
+                  <circle
+                    class="c52"
+                    cx="50"
+                    cy="50"
+                    r="31.5"
                   />
                   <circle
                     class="c53"
@@ -2304,30 +2320,24 @@ exports[`<Medals /> should render correctly 1`] = `
                     cy="50"
                     r="31.5"
                   />
-                  <circle
-                    class="c54"
-                    cx="50"
-                    cy="50"
-                    r="31.5"
-                  />
                   <path
-                    class="c55"
+                    class="c54"
                     color="#C50722"
                     d="M6 50C6 74.3005 25.6995 94 50 94C74.3005 94 94 74.3005 94 50C94 25.6995 74.3005 6 50 6C25.6995 6 6 25.6995 6 50ZM85.485 50C85.485 69.5978 69.5978 85.485 50 85.485C30.4022 85.485 14.515 69.5978 14.515 50C14.515 30.4022 30.4022 14.515 50 14.515C69.5978 14.515 85.485 30.4022 85.485 50Z"
                   />
                   <path
-                    class="c56"
+                    class="c55"
                     d="M13.5 49.75C13.5 29.1786 31.0761 13.75 50 13.75C68.9239 13.75 86.5 29.1786 86.5 49.75"
                     id="textLineTop0"
                   />
                   <text
-                    class="c57"
+                    class="c56"
                     color="white"
                     width="500"
                   >
                     <textpath
-                      alignment-baseline="center"
-                      class="c58"
+                      alignment-baseline="central"
+                      class="c57"
                       startOffset="0.5"
                       xlink:href="#textLineTop0"
                     >
@@ -2336,18 +2346,18 @@ exports[`<Medals /> should render correctly 1`] = `
                     </textpath>
                   </text>
                   <path
-                    class="c59"
+                    class="c58"
                     d="M5.5 48.75C5.5 71.5024 24.9509 93.6081 49.2514 93.7493C73.4158 93.8897 93.5 74.0305 93.5 49.7612"
                     id="textLineBottom0"
                   />
                   <text
-                    class="c60"
+                    class="c59"
                     color="white"
                     width="500"
                   >
                     <textpath
-                      alignment-baseline="center"
-                      class="c61"
+                      alignment-baseline="central"
+                      class="c60"
                       startOffset="23"
                       xlink:href="#textLineBottom0"
                     >
@@ -2355,7 +2365,7 @@ exports[`<Medals /> should render correctly 1`] = `
                     </textpath>
                   </text>
                   <svg
-                    class="c37 "
+                    class="c36 "
                     height="55"
                     viewBox="0 0 200 200"
                     width="55"
@@ -2407,7 +2417,7 @@ exports[`<Medals /> should render correctly 1`] = `
                   </svg>
                 </svg>
                 <svg
-                  class="c50 c62"
+                  class="c49 c61"
                   height="100"
                   viewBox="0 0 100 100"
                   width="100"
@@ -2416,10 +2426,16 @@ exports[`<Medals /> should render correctly 1`] = `
                   y="12"
                 >
                   <circle
-                    class="c52"
+                    class="c51"
                     cx="50"
                     cy="50"
                     r="50"
+                  />
+                  <circle
+                    class="c52"
+                    cx="50"
+                    cy="50"
+                    r="31.5"
                   />
                   <circle
                     class="c53"
@@ -2427,30 +2443,24 @@ exports[`<Medals /> should render correctly 1`] = `
                     cy="50"
                     r="31.5"
                   />
-                  <circle
-                    class="c54"
-                    cx="50"
-                    cy="50"
-                    r="31.5"
-                  />
                   <path
-                    class="c63"
+                    class="c62"
                     color="#11388E"
                     d="M6 50C6 74.3005 25.6995 94 50 94C74.3005 94 94 74.3005 94 50C94 25.6995 74.3005 6 50 6C25.6995 6 6 25.6995 6 50ZM85.485 50C85.485 69.5978 69.5978 85.485 50 85.485C30.4022 85.485 14.515 69.5978 14.515 50C14.515 30.4022 30.4022 14.515 50 14.515C69.5978 14.515 85.485 30.4022 85.485 50Z"
                   />
                   <path
-                    class="c56"
+                    class="c55"
                     d="M13.5 49.75C13.5 29.1786 31.0761 13.75 50 13.75C68.9239 13.75 86.5 29.1786 86.5 49.75"
                     id="textLineTop1"
                   />
                   <text
-                    class="c57"
+                    class="c56"
                     color="white"
                     width="500"
                   >
                     <textpath
-                      alignment-baseline="center"
-                      class="c58"
+                      alignment-baseline="central"
+                      class="c57"
                       startOffset="0.5"
                       xlink:href="#textLineTop1"
                     >
@@ -2459,18 +2469,18 @@ exports[`<Medals /> should render correctly 1`] = `
                     </textpath>
                   </text>
                   <path
-                    class="c59"
+                    class="c58"
                     d="M5.5 48.75C5.5 71.5024 24.9509 93.6081 49.2514 93.7493C73.4158 93.8897 93.5 74.0305 93.5 49.7612"
                     id="textLineBottom1"
                   />
                   <text
-                    class="c60"
+                    class="c59"
                     color="white"
                     width="500"
                   >
                     <textpath
-                      alignment-baseline="center"
-                      class="c61"
+                      alignment-baseline="central"
+                      class="c60"
                       startOffset="23"
                       xlink:href="#textLineBottom1"
                     >
@@ -2478,7 +2488,7 @@ exports[`<Medals /> should render correctly 1`] = `
                     </textpath>
                   </text>
                   <svg
-                    class="c37 "
+                    class="c36 "
                     height="55"
                     viewBox="0 0 200 200"
                     width="55"
@@ -2530,7 +2540,7 @@ exports[`<Medals /> should render correctly 1`] = `
                   </svg>
                 </svg>
                 <svg
-                  class="c50 c64"
+                  class="c49 c63"
                   height="100"
                   viewBox="0 0 100 100"
                   width="100"
@@ -2539,10 +2549,16 @@ exports[`<Medals /> should render correctly 1`] = `
                   y="12"
                 >
                   <circle
-                    class="c52"
+                    class="c51"
                     cx="50"
                     cy="50"
                     r="50"
+                  />
+                  <circle
+                    class="c52"
+                    cx="50"
+                    cy="50"
+                    r="31.5"
                   />
                   <circle
                     class="c53"
@@ -2550,30 +2566,24 @@ exports[`<Medals /> should render correctly 1`] = `
                     cy="50"
                     r="31.5"
                   />
-                  <circle
-                    class="c54"
-                    cx="50"
-                    cy="50"
-                    r="31.5"
-                  />
                   <path
-                    class="c65"
+                    class="c64"
                     color="#549C00"
                     d="M6 50C6 74.3005 25.6995 94 50 94C74.3005 94 94 74.3005 94 50C94 25.6995 74.3005 6 50 6C25.6995 6 6 25.6995 6 50ZM85.485 50C85.485 69.5978 69.5978 85.485 50 85.485C30.4022 85.485 14.515 69.5978 14.515 50C14.515 30.4022 30.4022 14.515 50 14.515C69.5978 14.515 85.485 30.4022 85.485 50Z"
                   />
                   <path
-                    class="c56"
+                    class="c55"
                     d="M13.5 49.75C13.5 29.1786 31.0761 13.75 50 13.75C68.9239 13.75 86.5 29.1786 86.5 49.75"
                     id="textLineTop2"
                   />
                   <text
-                    class="c57"
+                    class="c56"
                     color="white"
                     width="500"
                   >
                     <textpath
-                      alignment-baseline="center"
-                      class="c58"
+                      alignment-baseline="central"
+                      class="c57"
                       startOffset="0.5"
                       xlink:href="#textLineTop2"
                     >
@@ -2582,18 +2592,18 @@ exports[`<Medals /> should render correctly 1`] = `
                     </textpath>
                   </text>
                   <path
-                    class="c59"
+                    class="c58"
                     d="M5.5 48.75C5.5 71.5024 24.9509 93.6081 49.2514 93.7493C73.4158 93.8897 93.5 74.0305 93.5 49.7612"
                     id="textLineBottom2"
                   />
                   <text
-                    class="c60"
+                    class="c59"
                     color="white"
                     width="500"
                   >
                     <textpath
-                      alignment-baseline="center"
-                      class="c61"
+                      alignment-baseline="central"
+                      class="c60"
                       startOffset="23"
                       xlink:href="#textLineBottom2"
                     >
@@ -2601,7 +2611,7 @@ exports[`<Medals /> should render correctly 1`] = `
                     </textpath>
                   </text>
                   <svg
-                    class="c37 "
+                    class="c36 "
                     height="55"
                     viewBox="0 0 200 200"
                     width="55"
@@ -2654,49 +2664,49 @@ exports[`<Medals /> should render correctly 1`] = `
                 </svg>
               </svg>
               <svg
-                class="c45"
+                class="c44"
                 height="124"
                 viewBox="0 0 124 124"
                 width="124"
                 xmlns="http://www.w3.org/2000/svg"
               >
                 <circle
-                  class="c46"
+                  class="c45"
                   cx="62"
                   cy="62"
                   r="62"
                 />
                 <circle
-                  class="c47"
+                  class="c46"
                   cx="62"
                   cy="62"
                   id="outerTextLine"
                   r="53"
                 />
                 <text
-                  class="c48"
+                  class="c47"
                   color="#1e1e1e"
                   width="500"
                 >
                   <textpath
-                    alignment-baseline="center"
-                    class="c49"
+                    alignment-baseline="central"
+                    class="c48"
                     startOffset="166"
                     xlink:href="#outerTextLine"
                   >
                     CAMARADERIE
                   </textpath>
                   <textpath
-                    alignment-baseline="center"
-                    class="c49"
+                    alignment-baseline="central"
+                    class="c48"
                     startOffset="286"
                     xlink:href="#outerTextLine"
                   >
                     COURAGE
                   </textpath>
                   <textpath
-                    alignment-baseline="center"
-                    class="c49"
+                    alignment-baseline="central"
+                    class="c48"
                     startOffset="58"
                     xlink:href="#outerTextLine"
                   >
@@ -2704,7 +2714,7 @@ exports[`<Medals /> should render correctly 1`] = `
                   </textpath>
                 </text>
                 <svg
-                  class="c50 c51"
+                  class="c49 c50"
                   height="100"
                   viewBox="0 0 100 100"
                   width="100"
@@ -2713,10 +2723,16 @@ exports[`<Medals /> should render correctly 1`] = `
                   y="12"
                 >
                   <circle
-                    class="c52"
+                    class="c51"
                     cx="50"
                     cy="50"
                     r="50"
+                  />
+                  <circle
+                    class="c52"
+                    cx="50"
+                    cy="50"
+                    r="31.5"
                   />
                   <circle
                     class="c53"
@@ -2724,30 +2740,24 @@ exports[`<Medals /> should render correctly 1`] = `
                     cy="50"
                     r="31.5"
                   />
-                  <circle
-                    class="c54"
-                    cx="50"
-                    cy="50"
-                    r="31.5"
-                  />
                   <path
-                    class="c55"
+                    class="c54"
                     color="#C50722"
                     d="M6 50C6 74.3005 25.6995 94 50 94C74.3005 94 94 74.3005 94 50C94 25.6995 74.3005 6 50 6C25.6995 6 6 25.6995 6 50ZM85.485 50C85.485 69.5978 69.5978 85.485 50 85.485C30.4022 85.485 14.515 69.5978 14.515 50C14.515 30.4022 30.4022 14.515 50 14.515C69.5978 14.515 85.485 30.4022 85.485 50Z"
                   />
                   <path
-                    class="c56"
+                    class="c55"
                     d="M13.5 49.75C13.5 29.1786 31.0761 13.75 50 13.75C68.9239 13.75 86.5 29.1786 86.5 49.75"
                     id="textLineTop0"
                   />
                   <text
-                    class="c57"
+                    class="c56"
                     color="white"
                     width="500"
                   >
                     <textpath
-                      alignment-baseline="center"
-                      class="c58"
+                      alignment-baseline="central"
+                      class="c57"
                       startOffset="0.5"
                       xlink:href="#textLineTop0"
                     >
@@ -2756,18 +2766,18 @@ exports[`<Medals /> should render correctly 1`] = `
                     </textpath>
                   </text>
                   <path
-                    class="c59"
+                    class="c58"
                     d="M5.5 48.75C5.5 71.5024 24.9509 93.6081 49.2514 93.7493C73.4158 93.8897 93.5 74.0305 93.5 49.7612"
                     id="textLineBottom0"
                   />
                   <text
-                    class="c60"
+                    class="c59"
                     color="white"
                     width="500"
                   >
                     <textpath
-                      alignment-baseline="center"
-                      class="c61"
+                      alignment-baseline="central"
+                      class="c60"
                       startOffset="23"
                       xlink:href="#textLineBottom0"
                     >
@@ -2775,7 +2785,7 @@ exports[`<Medals /> should render correctly 1`] = `
                     </textpath>
                   </text>
                   <svg
-                    class="c37 "
+                    class="c36 "
                     height="55"
                     viewBox="0 0 200 200"
                     width="55"
@@ -2827,7 +2837,7 @@ exports[`<Medals /> should render correctly 1`] = `
                   </svg>
                 </svg>
                 <svg
-                  class="c50 c62"
+                  class="c49 c61"
                   height="100"
                   viewBox="0 0 100 100"
                   width="100"
@@ -2836,10 +2846,16 @@ exports[`<Medals /> should render correctly 1`] = `
                   y="12"
                 >
                   <circle
-                    class="c52"
+                    class="c51"
                     cx="50"
                     cy="50"
                     r="50"
+                  />
+                  <circle
+                    class="c52"
+                    cx="50"
+                    cy="50"
+                    r="31.5"
                   />
                   <circle
                     class="c53"
@@ -2847,30 +2863,24 @@ exports[`<Medals /> should render correctly 1`] = `
                     cy="50"
                     r="31.5"
                   />
-                  <circle
-                    class="c54"
-                    cx="50"
-                    cy="50"
-                    r="31.5"
-                  />
                   <path
-                    class="c63"
+                    class="c62"
                     color="#11388E"
                     d="M6 50C6 74.3005 25.6995 94 50 94C74.3005 94 94 74.3005 94 50C94 25.6995 74.3005 6 50 6C25.6995 6 6 25.6995 6 50ZM85.485 50C85.485 69.5978 69.5978 85.485 50 85.485C30.4022 85.485 14.515 69.5978 14.515 50C14.515 30.4022 30.4022 14.515 50 14.515C69.5978 14.515 85.485 30.4022 85.485 50Z"
                   />
                   <path
-                    class="c56"
+                    class="c55"
                     d="M13.5 49.75C13.5 29.1786 31.0761 13.75 50 13.75C68.9239 13.75 86.5 29.1786 86.5 49.75"
                     id="textLineTop1"
                   />
                   <text
-                    class="c57"
+                    class="c56"
                     color="white"
                     width="500"
                   >
                     <textpath
-                      alignment-baseline="center"
-                      class="c58"
+                      alignment-baseline="central"
+                      class="c57"
                       startOffset="0.5"
                       xlink:href="#textLineTop1"
                     >
@@ -2879,18 +2889,18 @@ exports[`<Medals /> should render correctly 1`] = `
                     </textpath>
                   </text>
                   <path
-                    class="c59"
+                    class="c58"
                     d="M5.5 48.75C5.5 71.5024 24.9509 93.6081 49.2514 93.7493C73.4158 93.8897 93.5 74.0305 93.5 49.7612"
                     id="textLineBottom1"
                   />
                   <text
-                    class="c60"
+                    class="c59"
                     color="white"
                     width="500"
                   >
                     <textpath
-                      alignment-baseline="center"
-                      class="c61"
+                      alignment-baseline="central"
+                      class="c60"
                       startOffset="23"
                       xlink:href="#textLineBottom1"
                     >
@@ -2898,7 +2908,7 @@ exports[`<Medals /> should render correctly 1`] = `
                     </textpath>
                   </text>
                   <svg
-                    class="c37 "
+                    class="c36 "
                     height="55"
                     viewBox="0 0 200 200"
                     width="55"
@@ -2950,7 +2960,7 @@ exports[`<Medals /> should render correctly 1`] = `
                   </svg>
                 </svg>
                 <svg
-                  class="c50 c64"
+                  class="c49 c63"
                   height="100"
                   viewBox="0 0 100 100"
                   width="100"
@@ -2959,10 +2969,16 @@ exports[`<Medals /> should render correctly 1`] = `
                   y="12"
                 >
                   <circle
-                    class="c52"
+                    class="c51"
                     cx="50"
                     cy="50"
                     r="50"
+                  />
+                  <circle
+                    class="c52"
+                    cx="50"
+                    cy="50"
+                    r="31.5"
                   />
                   <circle
                     class="c53"
@@ -2970,30 +2986,24 @@ exports[`<Medals /> should render correctly 1`] = `
                     cy="50"
                     r="31.5"
                   />
-                  <circle
-                    class="c54"
-                    cx="50"
-                    cy="50"
-                    r="31.5"
-                  />
                   <path
-                    class="c65"
+                    class="c64"
                     color="#549C00"
                     d="M6 50C6 74.3005 25.6995 94 50 94C74.3005 94 94 74.3005 94 50C94 25.6995 74.3005 6 50 6C25.6995 6 6 25.6995 6 50ZM85.485 50C85.485 69.5978 69.5978 85.485 50 85.485C30.4022 85.485 14.515 69.5978 14.515 50C14.515 30.4022 30.4022 14.515 50 14.515C69.5978 14.515 85.485 30.4022 85.485 50Z"
                   />
                   <path
-                    class="c56"
+                    class="c55"
                     d="M13.5 49.75C13.5 29.1786 31.0761 13.75 50 13.75C68.9239 13.75 86.5 29.1786 86.5 49.75"
                     id="textLineTop2"
                   />
                   <text
-                    class="c57"
+                    class="c56"
                     color="white"
                     width="500"
                   >
                     <textpath
-                      alignment-baseline="center"
-                      class="c58"
+                      alignment-baseline="central"
+                      class="c57"
                       startOffset="0.5"
                       xlink:href="#textLineTop2"
                     >
@@ -3002,18 +3012,18 @@ exports[`<Medals /> should render correctly 1`] = `
                     </textpath>
                   </text>
                   <path
-                    class="c59"
+                    class="c58"
                     d="M5.5 48.75C5.5 71.5024 24.9509 93.6081 49.2514 93.7493C73.4158 93.8897 93.5 74.0305 93.5 49.7612"
                     id="textLineBottom2"
                   />
                   <text
-                    class="c60"
+                    class="c59"
                     color="white"
                     width="500"
                   >
                     <textpath
-                      alignment-baseline="center"
-                      class="c61"
+                      alignment-baseline="central"
+                      class="c60"
                       startOffset="23"
                       xlink:href="#textLineBottom2"
                     >
@@ -3021,7 +3031,7 @@ exports[`<Medals /> should render correctly 1`] = `
                     </textpath>
                   </text>
                   <svg
-                    class="c37 "
+                    class="c36 "
                     height="55"
                     viewBox="0 0 200 200"
                     width="55"
@@ -3076,61 +3086,61 @@ exports[`<Medals /> should render correctly 1`] = `
             </div>
           </div>
           <div
-            class="c6"
+            class="c5"
           >
             <h1
-              class="c21 c22"
+              class="c20 c21"
               id="other-wedges"
             >
               Other wedges
             </h1>
             <div
-              class="c9 c10"
+              class="c8 c9"
             >
               <svg
-                class="c45"
+                class="c44"
                 height="124"
                 viewBox="0 0 124 124"
                 width="124"
                 xmlns="http://www.w3.org/2000/svg"
               >
                 <circle
-                  class="c46"
+                  class="c45"
                   cx="62"
                   cy="62"
                   r="62"
                 />
                 <circle
-                  class="c47"
+                  class="c46"
                   cx="62"
                   cy="62"
                   id="outerTextLine"
                   r="53"
                 />
                 <text
-                  class="c48"
+                  class="c47"
                   color="#1e1e1e"
                   width="500"
                 >
                   <textpath
-                    alignment-baseline="center"
-                    class="c49"
+                    alignment-baseline="central"
+                    class="c48"
                     startOffset="166"
                     xlink:href="#outerTextLine"
                   >
                     CAMARADERIE
                   </textpath>
                   <textpath
-                    alignment-baseline="center"
-                    class="c49"
+                    alignment-baseline="central"
+                    class="c48"
                     startOffset="286"
                     xlink:href="#outerTextLine"
                   >
                     COURAGE
                   </textpath>
                   <textpath
-                    alignment-baseline="center"
-                    class="c49"
+                    alignment-baseline="central"
+                    class="c48"
                     startOffset="58"
                     xlink:href="#outerTextLine"
                   >
@@ -3138,7 +3148,7 @@ exports[`<Medals /> should render correctly 1`] = `
                   </textpath>
                 </text>
                 <svg
-                  class="c50 c51"
+                  class="c49 c50"
                   height="100"
                   viewBox="0 0 100 100"
                   width="100"
@@ -3147,13 +3157,13 @@ exports[`<Medals /> should render correctly 1`] = `
                   y="12"
                 >
                   <circle
-                    class="c66"
+                    class="c65"
                     cx="50"
                     cy="50"
                     r="50"
                   />
                   <svg
-                    class="c37 "
+                    class="c36 "
                     height="18.6rem"
                     viewBox="0 0 200 200"
                     width="18.6rem"
@@ -3210,9 +3220,7 @@ exports[`<Medals /> should render correctly 1`] = `
         </div>
       </div>
     </div>
-    <div
-      class="c4"
-    >
+    <div>
       <style>
         .js .animated-content__wrapper--hidden {
   padding-top: 4rem;
@@ -3220,50 +3228,50 @@ exports[`<Medals /> should render correctly 1`] = `
 }
       </style>
       <div
-        class="c5 animated-content__wrapper--hidden"
+        class="c4 animated-content__wrapper--hidden"
       >
         <div
-          class="c6"
+          class="c5"
         >
           <h1
-            class="c7 c8"
+            class="c6 c7"
             id="runs"
           >
             Runs
           </h1>
           <div
-            class="c6"
+            class="c5"
           >
             <div
-              class="c9 c10"
+              class="c8 c9"
             >
               <div
-                class="c67"
+                class="c66"
               >
                 <span
-                  class="c12 c13"
+                  class="c11 c12"
                 >
                   New Forest Half Marathon
                 </span>
                 <span
-                  class="c14 c15"
+                  class="c13 c14"
                 >
                   2022
                 </span>
                 <div
-                  class="c16"
+                  class="c15"
                 >
                   <a
-                    class="c17 "
+                    class="c16 "
                     href="https://www.strava.com/activities/7790895383"
                     rel="noopener noreferrer"
                     target="_blank"
                   >
                     <span
-                      class="c14"
+                      class="c13"
                     >
                       <svg
-                        class="c18"
+                        class="c17"
                         height="18"
                         viewBox="0 0 24 24"
                         width="18"
@@ -3282,32 +3290,32 @@ exports[`<Medals /> should render correctly 1`] = `
                 </div>
               </div>
               <div
-                class="c68"
+                class="c67"
               >
                 <span
-                  class="c12 c13"
+                  class="c11 c12"
                 >
                   New Forest Half Marathon
                 </span>
                 <span
-                  class="c14 c15"
+                  class="c13 c14"
                 >
                   2023
                 </span>
                 <div
-                  class="c16"
+                  class="c15"
                 >
                   <a
-                    class="c69 "
+                    class="c68 "
                     href="https://www.strava.com/activities/8427549008"
                     rel="noopener noreferrer"
                     target="_blank"
                   >
                     <span
-                      class="c14"
+                      class="c13"
                     >
                       <svg
-                        class="c18"
+                        class="c17"
                         height="18"
                         viewBox="0 0 24 24"
                         width="18"
@@ -3330,9 +3338,7 @@ exports[`<Medals /> should render correctly 1`] = `
         </div>
       </div>
     </div>
-    <div
-      class="c4"
-    >
+    <div>
       <style>
         .js .animated-content__wrapper--hidden {
   padding-top: 4rem;
@@ -3340,50 +3346,50 @@ exports[`<Medals /> should render correctly 1`] = `
 }
       </style>
       <div
-        class="c5 animated-content__wrapper--hidden"
+        class="c4 animated-content__wrapper--hidden"
       >
         <div
-          class="c6"
+          class="c5"
         >
           <h1
-            class="c7 c8"
+            class="c6 c7"
             id="treks"
           >
             Treks
           </h1>
           <div
-            class="c6"
+            class="c5"
           >
             <div
-              class="c9 c10"
+              class="c8 c9"
             >
               <div
-                class="c70"
+                class="c69"
               >
                 <span
-                  class="c12 c13"
+                  class="c11 c12"
                 >
                   Trekfest 50km
                 </span>
                 <span
-                  class="c14 c15"
+                  class="c13 c14"
                 >
                   2017
                 </span>
                 <div
-                  class="c16"
+                  class="c15"
                 >
                   <a
-                    class="c71 "
+                    class="c70 "
                     href="https://www.strava.com/activities/1019627751"
                     rel="noopener noreferrer"
                     target="_blank"
                   >
                     <span
-                      class="c14"
+                      class="c13"
                     >
                       <svg
-                        class="c18"
+                        class="c17"
                         height="18"
                         viewBox="0 0 24 24"
                         width="18"
@@ -3402,32 +3408,32 @@ exports[`<Medals /> should render correctly 1`] = `
                 </div>
               </div>
               <div
-                class="c72"
+                class="c71"
               >
                 <span
-                  class="c12 c13"
+                  class="c11 c12"
                 >
                   Chiltern 50km Ultra Challenge
                 </span>
                 <span
-                  class="c14 c15"
+                  class="c13 c14"
                 >
                   2022
                 </span>
                 <div
-                  class="c16"
+                  class="c15"
                 >
                   <a
-                    class="c69 "
+                    class="c68 "
                     href="https://www.strava.com/activities/7859623082"
                     rel="noopener noreferrer"
                     target="_blank"
                   >
                     <span
-                      class="c14"
+                      class="c13"
                     >
                       <svg
-                        class="c18"
+                        class="c17"
                         height="18"
                         viewBox="0 0 24 24"
                         width="18"

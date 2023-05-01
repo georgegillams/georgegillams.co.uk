@@ -47,6 +47,7 @@ exports[`<BlogForm /> Should render correctly 1`] = `
 
 .c14:active {
   background-color: #003E6F;
+  color: white;
 }
 
 .c14:disabled {
@@ -267,6 +268,7 @@ exports[`<BlogForm /> Should render correctly 1`] = `
 @media (prefers-color-scheme:dark) {
   .c14:active {
     background-color: #003965;
+    color: white;
   }
 }
 
@@ -722,6 +724,7 @@ exports[`<BlogForm /> Should render correctly with no blog id 1`] = `
 
 .c14:active {
   background-color: #003E6F;
+  color: white;
 }
 
 .c14:disabled {
@@ -942,6 +945,7 @@ exports[`<BlogForm /> Should render correctly with no blog id 1`] = `
 @media (prefers-color-scheme:dark) {
   .c14:active {
     background-color: #003965;
+    color: white;
   }
 }
 

@@ -232,6 +232,7 @@ exports[`<AdminAnalytics /> should render correctly with admin user 1`] = `
 
 .c6:active {
   background-color: #003E6F;
+  color: white;
 }
 
 .c6:disabled {
@@ -316,6 +317,7 @@ exports[`<AdminAnalytics /> should render correctly with admin user 1`] = `
 @media (prefers-color-scheme:dark) {
   .c6:active {
     background-color: #003965;
+    color: white;
   }
 }
 
@@ -491,6 +493,7 @@ exports[`<AdminAnalytics /> should render correctly with analytics 1`] = `
 
 .c6:active {
   background-color: #003E6F;
+  color: white;
 }
 
 .c6:disabled {
@@ -575,6 +578,7 @@ exports[`<AdminAnalytics /> should render correctly with analytics 1`] = `
 @media (prefers-color-scheme:dark) {
   .c6:active {
     background-color: #003965;
+    color: white;
   }
 }
 
@@ -1211,6 +1215,7 @@ exports[`<AdminAnalytics /> should render correctly with loading=true 1`] = `
 
 .c6:active {
   background-color: #003E6F;
+  color: white;
 }
 
 .c6:disabled {
@@ -1264,6 +1269,7 @@ exports[`<AdminAnalytics /> should render correctly with loading=true 1`] = `
 
 .c19:active {
   background-color: #003E6F;
+  color: white;
 }
 
 .c19:disabled {
@@ -1386,6 +1392,7 @@ exports[`<AdminAnalytics /> should render correctly with loading=true 1`] = `
 @media (prefers-color-scheme:dark) {
   .c6:active {
     background-color: #003965;
+    color: white;
   }
 }
 
@@ -1421,6 +1428,7 @@ exports[`<AdminAnalytics /> should render correctly with loading=true 1`] = `
 @media (prefers-color-scheme:dark) {
   .c19:active {
     background-color: #003965;
+    color: white;
   }
 }
 
