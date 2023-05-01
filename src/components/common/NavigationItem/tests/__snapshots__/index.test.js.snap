@@ -51,6 +51,7 @@ exports[`<NavigationItem /> Should render correctly 1`] = `
 
 .c0:active {
   background-color: #003E6F;
+  color: white;
 }
 
 .c0:disabled {
@@ -103,6 +104,7 @@ exports[`<NavigationItem /> Should render correctly 1`] = `
 @media (prefers-color-scheme:dark) {
   .c0:active {
     background-color: #003965;
+    color: white;
   }
 }
 
@@ -179,6 +181,7 @@ exports[`<NavigationItem /> Should render correctly hrefExternal 1`] = `
 
 .c0:active {
   background-color: #003E6F;
+  color: white;
 }
 
 .c0:disabled {
@@ -231,6 +234,7 @@ exports[`<NavigationItem /> Should render correctly hrefExternal 1`] = `
 @media (prefers-color-scheme:dark) {
   .c0:active {
     background-color: #003965;
+    color: white;
   }
 }
 
@@ -309,6 +313,7 @@ exports[`<NavigationItem /> Should render correctly with custom className 1`] = 
 
 .c0:active {
   background-color: #003E6F;
+  color: white;
 }
 
 .c0:disabled {
@@ -361,6 +366,7 @@ exports[`<NavigationItem /> Should render correctly with custom className 1`] = 
 @media (prefers-color-scheme:dark) {
   .c0:active {
     background-color: #003965;
+    color: white;
   }
 }
 

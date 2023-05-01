@@ -86,6 +86,7 @@ exports[`<Support /> should render correctly - index 1`] = `
 
 .c5:active {
   background-color: #003E6F;
+  color: white;
 }
 
 .c5:disabled {
@@ -179,6 +180,7 @@ exports[`<Support /> should render correctly - index 1`] = `
 @media (prefers-color-scheme:dark) {
   .c5:active {
     background-color: #003965;
+    color: white;
   }
 }
 
@@ -323,6 +325,7 @@ exports[`<Support /> should render correctly when loading 1`] = `
 
 .c5:active {
   background-color: #003E6F;
+  color: white;
 }
 
 .c5:disabled {
@@ -396,6 +399,7 @@ exports[`<Support /> should render correctly when loading 1`] = `
 @media (prefers-color-scheme:dark) {
   .c5:active {
     background-color: #003965;
+    color: white;
   }
 }
 
@@ -556,6 +560,7 @@ exports[`<Support /> should render correctly with admin 1`] = `
 
 .c5:active {
   background-color: #003E6F;
+  color: white;
 }
 
 .c5:disabled {
@@ -635,6 +640,7 @@ exports[`<Support /> should render correctly with admin 1`] = `
 @media (prefers-color-scheme:dark) {
   .c5:active {
     background-color: #003965;
+    color: white;
   }
 }
 
@@ -807,6 +813,7 @@ exports[`<Support /> should render correctly with admin and createLinkError 1`] 
 
 .c5:active {
   background-color: #003E6F;
+  color: white;
 }
 
 .c5:disabled {
@@ -903,6 +910,7 @@ exports[`<Support /> should render correctly with admin and createLinkError 1`] 
 @media (prefers-color-scheme:dark) {
   .c5:active {
     background-color: #003965;
+    color: white;
   }
 }
 
@@ -1093,6 +1101,7 @@ exports[`<Support /> should render correctly with admin and deleteLinkError 1`] 
 
 .c5:active {
   background-color: #003E6F;
+  color: white;
 }
 
 .c5:disabled {
@@ -1189,6 +1198,7 @@ exports[`<Support /> should render correctly with admin and deleteLinkError 1`] 
 @media (prefers-color-scheme:dark) {
   .c5:active {
     background-color: #003965;
+    color: white;
   }
 }
 
@@ -1362,6 +1372,7 @@ exports[`<Support /> should render correctly with initial state 1`] = `
 
 .c5:active {
   background-color: #003E6F;
+  color: white;
 }
 
 .c5:disabled {
@@ -1435,6 +1446,7 @@ exports[`<Support /> should render correctly with initial state 1`] = `
 @media (prefers-color-scheme:dark) {
   .c5:active {
     background-color: #003965;
+    color: white;
   }
 }
 
@@ -1634,6 +1646,7 @@ exports[`<Support /> should render correctly with links 1`] = `
 
 .c5:active {
   background-color: #003E6F;
+  color: white;
 }
 
 .c5:disabled {
@@ -1738,6 +1751,7 @@ exports[`<Support /> should render correctly with links 1`] = `
 @media (prefers-color-scheme:dark) {
   .c5:active {
     background-color: #003965;
+    color: white;
   }
 }
 
@@ -1960,6 +1974,7 @@ exports[`<Support /> should render correctly with loadError 1`] = `
 
 .c5:active {
   background-color: #003E6F;
+  color: white;
 }
 
 .c5:disabled {
@@ -2050,6 +2065,7 @@ exports[`<Support /> should render correctly with loadError 1`] = `
 @media (prefers-color-scheme:dark) {
   .c5:active {
     background-color: #003965;
+    color: white;
   }
 }
 

@@ -47,6 +47,7 @@ exports[`<LoginForm /> Should render correctly 1`] = `
 
 .c7:active {
   background-color: #003E6F;
+  color: white;
 }
 
 .c7:disabled {
@@ -177,6 +178,7 @@ exports[`<LoginForm /> Should render correctly 1`] = `
 @media (prefers-color-scheme:dark) {
   .c7:active {
     background-color: #003965;
+    color: white;
   }
 }
 

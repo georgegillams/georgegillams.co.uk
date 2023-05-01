@@ -48,6 +48,7 @@ exports[`<Button /> Should render correctly 1`] = `
 
 .c0:active {
   background-color: #003E6F;
+  color: white;
 }
 
 .c0:disabled {
@@ -91,6 +92,7 @@ exports[`<Button /> Should render correctly 1`] = `
 @media (prefers-color-scheme:dark) {
   .c0:active {
     background-color: #003965;
+    color: white;
   }
 }
 
@@ -161,6 +163,7 @@ exports[`<Button /> Should render correctly hrefExternal 1`] = `
 
 .c0:active {
   background-color: #003E6F;
+  color: white;
 }
 
 .c0:disabled {
@@ -204,6 +207,7 @@ exports[`<Button /> Should render correctly hrefExternal 1`] = `
 @media (prefers-color-scheme:dark) {
   .c0:active {
     background-color: #003965;
+    color: white;
   }
 }
 
@@ -276,6 +280,7 @@ exports[`<Button /> Should render with nextified href 1`] = `
 
 .c0:active {
   background-color: #003E6F;
+  color: white;
 }
 
 .c0:disabled {
@@ -319,6 +324,7 @@ exports[`<Button /> Should render with nextified href 1`] = `
 @media (prefers-color-scheme:dark) {
   .c0:active {
     background-color: #003965;
+    color: white;
   }
 }
 

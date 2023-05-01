@@ -47,6 +47,7 @@ exports[`<SupportForm /> Should render correctly 1`] = `
 
 .c6:active {
   background-color: #003E6F;
+  color: white;
 }
 
 .c6:disabled {
@@ -172,6 +173,7 @@ exports[`<SupportForm /> Should render correctly 1`] = `
 @media (prefers-color-scheme:dark) {
   .c6:active {
     background-color: #003965;
+    color: white;
   }
 }
 
@@ -339,6 +341,7 @@ exports[`<SupportForm /> Should render correctly with no link id 1`] = `
 
 .c6:active {
   background-color: #003E6F;
+  color: white;
 }
 
 .c6:disabled {
@@ -464,6 +467,7 @@ exports[`<SupportForm /> Should render correctly with no link id 1`] = `
 @media (prefers-color-scheme:dark) {
   .c6:active {
     background-color: #003965;
+    color: white;
   }
 }
 

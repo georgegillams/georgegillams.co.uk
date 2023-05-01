@@ -1,12 +1,12 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<Photography /> should render correctly - index 1`] = `
-.c8 {
+.c7 {
   width: 1.25rem;
   height: 1.25rem;
 }
 
-.c5 {
+.c4 {
   display: inline-block;
   border-radius: 0.25rem;
   font-weight: bold;
@@ -17,14 +17,14 @@ exports[`<Photography /> should render correctly - index 1`] = `
   fill: darkorchid;
 }
 
-.c5:focus-within,
-.c5:focus {
+.c4:focus-within,
+.c4:focus {
   position: relative;
   outline: none !important;
 }
 
-.c5:focus-within::after,
-.c5:focus::after {
+.c4:focus-within::after,
+.c4:focus::after {
   position: absolute;
   top: -0.35rem;
   right: -0.35rem;
@@ -37,12 +37,12 @@ exports[`<Photography /> should render correctly - index 1`] = `
   pointer-events: none;
 }
 
-.c5:hover {
+.c4:hover {
   color: #44aeff;
   fill: #44aeff;
 }
 
-.c7 {
+.c6 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -52,7 +52,7 @@ exports[`<Photography /> should render correctly - index 1`] = `
   margin-left: 0.55rem;
 }
 
-.c9 {
+.c8 {
   position: absolute;
   width: 1rem;
   height: 1rem;
@@ -66,13 +66,13 @@ exports[`<Photography /> should render correctly - index 1`] = `
   font-weight: bold;
 }
 
-.c14 {
+.c13 {
   margin: 0;
   font-size: 1.5rem;
   font-weight: bold;
 }
 
-.c6 {
+.c5 {
   margin: 0;
 }
 
@@ -80,15 +80,11 @@ exports[`<Photography /> should render correctly - index 1`] = `
   margin: 2.3rem 0 0 0;
 }
 
-.c4 {
+.c3 {
   padding-top: 0;
   opacity: 1;
   -webkit-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;
-}
-
-.c3 {
-  width: 100%;
 }
 
 .c0 {
@@ -96,7 +92,7 @@ exports[`<Photography /> should render correctly - index 1`] = `
   animation: bbwGtI 0.4s ease-in-out;
 }
 
-.c16 {
+.c15 {
   display: inline-block;
   margin-bottom: 0;
   padding-bottom: 0;
@@ -104,22 +100,22 @@ exports[`<Photography /> should render correctly - index 1`] = `
   margin-top: 2rem;
 }
 
-.c16:first-of-type {
+.c15:first-of-type {
   margin-top: 0.86rem;
 }
 
-.c12 {
+.c11 {
   width: 100%;
   color: #1e1e1e;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
-.c15 {
+.c14 {
   margin: 2.13rem 0 0 0;
 }
 
-.c10 {
+.c9 {
   position: relative;
   display: -webkit-box;
   display: -webkit-flex;
@@ -136,7 +132,7 @@ exports[`<Photography /> should render correctly - index 1`] = `
   justify-content: center;
 }
 
-.c11 {
+.c10 {
   position: absolute;
   top: 0;
   left: calc(50% - 50vw);
@@ -146,7 +142,7 @@ exports[`<Photography /> should render correctly - index 1`] = `
   background-color: #fbfbfb;
 }
 
-.c13 {
+.c12 {
   width: 100%;
   padding-right: 1.875rem;
   padding-left: 1.865rem;
@@ -154,32 +150,32 @@ exports[`<Photography /> should render correctly - index 1`] = `
 }
 
 @media (prefers-color-scheme:dark) {
-  .c5:focus-within::after,
-  .c5:focus::after {
+  .c4:focus-within::after,
+  .c4:focus::after {
     border-color: rgba(0,125,250,0.6);
   }
 }
 
 @media (prefers-color-scheme:dark) {
-  .c5 {
+  .c4 {
     color: orchid;
     fill: orchid;
   }
 
-  .c5:hover {
+  .c4:hover {
     color: #44aeff;
     fill: #44aeff;
   }
 }
 
 @media (prefers-color-scheme:dark) {
-  .c12 {
+  .c11 {
     color: white;
   }
 }
 
 @media (prefers-color-scheme:dark) {
-  .c11 {
+  .c10 {
     background-color: #121313;
   }
 }
@@ -198,9 +194,7 @@ exports[`<Photography /> should render correctly - index 1`] = `
         Photography
       </h1>
     </div>
-    <div
-      class="c3"
-    >
+    <div>
       <style>
         .js .animated-content__wrapper--hidden {
   padding-top: 4rem;
@@ -208,28 +202,28 @@ exports[`<Photography /> should render correctly - index 1`] = `
 }
       </style>
       <div
-        class="c4 animated-content__wrapper--hidden"
+        class="c3 animated-content__wrapper--hidden"
       >
         <div
           class=""
         >
           <a
             aria-label="Find me on Flickr (opens in a new tab)"
-            class="c5"
+            class="c4"
             href="https://www.flickr.com/people/georgegillams/"
             rel="noopener noreferrer"
             target="_blank"
           >
             <span
-              class="c6"
+              class="c5"
             >
               Find me on Flickr
             </span>
             <div
-              class="c7"
+              class="c6"
             >
               <svg
-                class="c8 c9"
+                class="c7 c8"
                 height="18"
                 viewBox="0 0 24 24"
                 width="18"
@@ -243,21 +237,21 @@ exports[`<Photography /> should render correctly - index 1`] = `
           </a>
           <a
             aria-label="Find me on Unsplash (opens in a new tab)"
-            class="c5"
+            class="c4"
             href="https://unsplash.com/@georgegillams"
             rel="noopener noreferrer"
             target="_blank"
           >
             <span
-              class="c6"
+              class="c5"
             >
               Find me on Unsplash
             </span>
             <div
-              class="c7"
+              class="c6"
             >
               <svg
-                class="c8 c9"
+                class="c7 c8"
                 height="18"
                 viewBox="0 0 24 24"
                 width="18"
@@ -271,21 +265,21 @@ exports[`<Photography /> should render correctly - index 1`] = `
           </a>
           <a
             aria-label="Find me on GuruShots (opens in a new tab)"
-            class="c5"
+            class="c4"
             href="https://gurushots.com/georgegillams/achievements"
             rel="noopener noreferrer"
             target="_blank"
           >
             <span
-              class="c6"
+              class="c5"
             >
               Find me on GuruShots
             </span>
             <div
-              class="c7"
+              class="c6"
             >
               <svg
-                class="c8 c9"
+                class="c7 c8"
                 height="18"
                 viewBox="0 0 24 24"
                 width="18"
@@ -298,11 +292,11 @@ exports[`<Photography /> should render correctly - index 1`] = `
             </div>
           </a>
           <a
-            class="c5"
+            class="c4"
             href="/contact"
           >
             <span
-              class="c6"
+              class="c5"
             >
               Contact me about photography work
             </span>
@@ -310,9 +304,7 @@ exports[`<Photography /> should render correctly - index 1`] = `
         </div>
       </div>
     </div>
-    <div
-      class="c3"
-    >
+    <div>
       <style>
         .js .animated-content__wrapper--hidden {
   padding-top: 4rem;
@@ -320,7 +312,7 @@ exports[`<Photography /> should render correctly - index 1`] = `
 }
       </style>
       <div
-        class="c4 animated-content__wrapper--hidden"
+        class="c3 animated-content__wrapper--hidden"
       >
         <div
           class=""
@@ -334,54 +326,52 @@ exports[`<Photography /> should render correctly - index 1`] = `
       </div>
     </div>
   </div>
-  <div
-    class="c3"
-  >
+  <div>
     <style>
       .js .animated-content__wrapper--hidden {
   opacity: 0.01;
 }
     </style>
     <div
-      class="c4 animated-content__wrapper--hidden"
+      class="c3 animated-content__wrapper--hidden"
     >
       <div
-        class="c10"
+        class="c9"
       >
         <div
-          class="c11"
+          class="c10"
         />
         <div
-          class="c12 c13"
+          class="c11 c12"
         >
           <h1
-            class="c14 c15"
+            class="c13 c14"
             id="copyright"
           >
             Copyright
           </h1>
           <span
-            class="c16"
+            class="c15"
           >
             Most of my photos are licensed under
              
             <a
               aria-label="Creative Commons BY-SA 3.0 (opens in a new tab)"
-              class="c5"
+              class="c4"
               href="https://creativecommons.org/licenses/by-sa/3.0/"
               rel="noopener noreferrer"
               target="_blank"
             >
               <span
-                class="c6"
+                class="c5"
               >
                 Creative Commons BY-SA 3.0
               </span>
               <div
-                class="c7"
+                class="c6"
               >
                 <svg
-                  class="c8 c9"
+                  class="c7 c8"
                   height="18"
                   viewBox="0 0 24 24"
                   width="18"
@@ -397,11 +387,11 @@ exports[`<Photography /> should render correctly - index 1`] = `
             <br />
             If you are unsure about your right to use them please 
             <a
-              class="c5"
+              class="c4"
               href="/contact"
             >
               <span
-                class="c6"
+                class="c5"
               >
                 contact me
               </span>
@@ -416,12 +406,12 @@ exports[`<Photography /> should render correctly - index 1`] = `
 `;
 
 exports[`<Photography /> should render correctly when loading 1`] = `
-.c8 {
+.c7 {
   width: 1.25rem;
   height: 1.25rem;
 }
 
-.c5 {
+.c4 {
   display: inline-block;
   border-radius: 0.25rem;
   font-weight: bold;
@@ -432,14 +422,14 @@ exports[`<Photography /> should render correctly when loading 1`] = `
   fill: darkorchid;
 }
 
-.c5:focus-within,
-.c5:focus {
+.c4:focus-within,
+.c4:focus {
   position: relative;
   outline: none !important;
 }
 
-.c5:focus-within::after,
-.c5:focus::after {
+.c4:focus-within::after,
+.c4:focus::after {
   position: absolute;
   top: -0.35rem;
   right: -0.35rem;
@@ -452,12 +442,12 @@ exports[`<Photography /> should render correctly when loading 1`] = `
   pointer-events: none;
 }
 
-.c5:hover {
+.c4:hover {
   color: #44aeff;
   fill: #44aeff;
 }
 
-.c7 {
+.c6 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -467,7 +457,7 @@ exports[`<Photography /> should render correctly when loading 1`] = `
   margin-left: 0.55rem;
 }
 
-.c9 {
+.c8 {
   position: absolute;
   width: 1rem;
   height: 1rem;
@@ -481,13 +471,13 @@ exports[`<Photography /> should render correctly when loading 1`] = `
   font-weight: bold;
 }
 
-.c14 {
+.c13 {
   margin: 0;
   font-size: 1.5rem;
   font-weight: bold;
 }
 
-.c6 {
+.c5 {
   margin: 0;
 }
 
@@ -495,15 +485,11 @@ exports[`<Photography /> should render correctly when loading 1`] = `
   margin: 2.3rem 0 0 0;
 }
 
-.c4 {
+.c3 {
   padding-top: 0;
   opacity: 1;
   -webkit-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;
-}
-
-.c3 {
-  width: 100%;
 }
 
 .c0 {
@@ -511,7 +497,7 @@ exports[`<Photography /> should render correctly when loading 1`] = `
   animation: bbwGtI 0.4s ease-in-out;
 }
 
-.c16 {
+.c15 {
   display: inline-block;
   margin-bottom: 0;
   padding-bottom: 0;
@@ -519,22 +505,22 @@ exports[`<Photography /> should render correctly when loading 1`] = `
   margin-top: 2rem;
 }
 
-.c16:first-of-type {
+.c15:first-of-type {
   margin-top: 0.86rem;
 }
 
-.c12 {
+.c11 {
   width: 100%;
   color: #1e1e1e;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
-.c15 {
+.c14 {
   margin: 2.13rem 0 0 0;
 }
 
-.c10 {
+.c9 {
   position: relative;
   display: -webkit-box;
   display: -webkit-flex;
@@ -551,7 +537,7 @@ exports[`<Photography /> should render correctly when loading 1`] = `
   justify-content: center;
 }
 
-.c11 {
+.c10 {
   position: absolute;
   top: 0;
   left: calc(50% - 50vw);
@@ -561,7 +547,7 @@ exports[`<Photography /> should render correctly when loading 1`] = `
   background-color: #fbfbfb;
 }
 
-.c13 {
+.c12 {
   width: 100%;
   padding-right: 1.875rem;
   padding-left: 1.865rem;
@@ -569,32 +555,32 @@ exports[`<Photography /> should render correctly when loading 1`] = `
 }
 
 @media (prefers-color-scheme:dark) {
-  .c5:focus-within::after,
-  .c5:focus::after {
+  .c4:focus-within::after,
+  .c4:focus::after {
     border-color: rgba(0,125,250,0.6);
   }
 }
 
 @media (prefers-color-scheme:dark) {
-  .c5 {
+  .c4 {
     color: orchid;
     fill: orchid;
   }
 
-  .c5:hover {
+  .c4:hover {
     color: #44aeff;
     fill: #44aeff;
   }
 }
 
 @media (prefers-color-scheme:dark) {
-  .c12 {
+  .c11 {
     color: white;
   }
 }
 
 @media (prefers-color-scheme:dark) {
-  .c11 {
+  .c10 {
     background-color: #121313;
   }
 }
@@ -613,9 +599,7 @@ exports[`<Photography /> should render correctly when loading 1`] = `
         Photography
       </h1>
     </div>
-    <div
-      class="c3"
-    >
+    <div>
       <style>
         .js .animated-content__wrapper--hidden {
   padding-top: 4rem;
@@ -623,28 +607,28 @@ exports[`<Photography /> should render correctly when loading 1`] = `
 }
       </style>
       <div
-        class="c4 animated-content__wrapper--hidden"
+        class="c3 animated-content__wrapper--hidden"
       >
         <div
           class=""
         >
           <a
             aria-label="Find me on Flickr (opens in a new tab)"
-            class="c5"
+            class="c4"
             href="https://www.flickr.com/people/georgegillams/"
             rel="noopener noreferrer"
             target="_blank"
           >
             <span
-              class="c6"
+              class="c5"
             >
               Find me on Flickr
             </span>
             <div
-              class="c7"
+              class="c6"
             >
               <svg
-                class="c8 c9"
+                class="c7 c8"
                 height="18"
                 viewBox="0 0 24 24"
                 width="18"
@@ -658,21 +642,21 @@ exports[`<Photography /> should render correctly when loading 1`] = `
           </a>
           <a
             aria-label="Find me on Unsplash (opens in a new tab)"
-            class="c5"
+            class="c4"
             href="https://unsplash.com/@georgegillams"
             rel="noopener noreferrer"
             target="_blank"
           >
             <span
-              class="c6"
+              class="c5"
             >
               Find me on Unsplash
             </span>
             <div
-              class="c7"
+              class="c6"
             >
               <svg
-                class="c8 c9"
+                class="c7 c8"
                 height="18"
                 viewBox="0 0 24 24"
                 width="18"
@@ -686,21 +670,21 @@ exports[`<Photography /> should render correctly when loading 1`] = `
           </a>
           <a
             aria-label="Find me on GuruShots (opens in a new tab)"
-            class="c5"
+            class="c4"
             href="https://gurushots.com/georgegillams/achievements"
             rel="noopener noreferrer"
             target="_blank"
           >
             <span
-              class="c6"
+              class="c5"
             >
               Find me on GuruShots
             </span>
             <div
-              class="c7"
+              class="c6"
             >
               <svg
-                class="c8 c9"
+                class="c7 c8"
                 height="18"
                 viewBox="0 0 24 24"
                 width="18"
@@ -713,11 +697,11 @@ exports[`<Photography /> should render correctly when loading 1`] = `
             </div>
           </a>
           <a
-            class="c5"
+            class="c4"
             href="/contact"
           >
             <span
-              class="c6"
+              class="c5"
             >
               Contact me about photography work
             </span>
@@ -725,9 +709,7 @@ exports[`<Photography /> should render correctly when loading 1`] = `
         </div>
       </div>
     </div>
-    <div
-      class="c3"
-    >
+    <div>
       <style>
         .js .animated-content__wrapper--hidden {
   padding-top: 4rem;
@@ -735,7 +717,7 @@ exports[`<Photography /> should render correctly when loading 1`] = `
 }
       </style>
       <div
-        class="c4 animated-content__wrapper--hidden"
+        class="c3 animated-content__wrapper--hidden"
       >
         <div
           class=""
@@ -749,54 +731,52 @@ exports[`<Photography /> should render correctly when loading 1`] = `
       </div>
     </div>
   </div>
-  <div
-    class="c3"
-  >
+  <div>
     <style>
       .js .animated-content__wrapper--hidden {
   opacity: 0.01;
 }
     </style>
     <div
-      class="c4 animated-content__wrapper--hidden"
+      class="c3 animated-content__wrapper--hidden"
     >
       <div
-        class="c10"
+        class="c9"
       >
         <div
-          class="c11"
+          class="c10"
         />
         <div
-          class="c12 c13"
+          class="c11 c12"
         >
           <h1
-            class="c14 c15"
+            class="c13 c14"
             id="copyright"
           >
             Copyright
           </h1>
           <span
-            class="c16"
+            class="c15"
           >
             Most of my photos are licensed under
              
             <a
               aria-label="Creative Commons BY-SA 3.0 (opens in a new tab)"
-              class="c5"
+              class="c4"
               href="https://creativecommons.org/licenses/by-sa/3.0/"
               rel="noopener noreferrer"
               target="_blank"
             >
               <span
-                class="c6"
+                class="c5"
               >
                 Creative Commons BY-SA 3.0
               </span>
               <div
-                class="c7"
+                class="c6"
               >
                 <svg
-                  class="c8 c9"
+                  class="c7 c8"
                   height="18"
                   viewBox="0 0 24 24"
                   width="18"
@@ -812,11 +792,11 @@ exports[`<Photography /> should render correctly when loading 1`] = `
             <br />
             If you are unsure about your right to use them please 
             <a
-              class="c5"
+              class="c4"
               href="/contact"
             >
               <span
-                class="c6"
+                class="c5"
               >
                 contact me
               </span>
@@ -831,12 +811,12 @@ exports[`<Photography /> should render correctly when loading 1`] = `
 `;
 
 exports[`<Photography /> should render correctly with initial state 1`] = `
-.c8 {
+.c7 {
   width: 1.25rem;
   height: 1.25rem;
 }
 
-.c5 {
+.c4 {
   display: inline-block;
   border-radius: 0.25rem;
   font-weight: bold;
@@ -847,14 +827,14 @@ exports[`<Photography /> should render correctly with initial state 1`] = `
   fill: darkorchid;
 }
 
-.c5:focus-within,
-.c5:focus {
+.c4:focus-within,
+.c4:focus {
   position: relative;
   outline: none !important;
 }
 
-.c5:focus-within::after,
-.c5:focus::after {
+.c4:focus-within::after,
+.c4:focus::after {
   position: absolute;
   top: -0.35rem;
   right: -0.35rem;
@@ -867,12 +847,12 @@ exports[`<Photography /> should render correctly with initial state 1`] = `
   pointer-events: none;
 }
 
-.c5:hover {
+.c4:hover {
   color: #44aeff;
   fill: #44aeff;
 }
 
-.c7 {
+.c6 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -882,7 +862,7 @@ exports[`<Photography /> should render correctly with initial state 1`] = `
   margin-left: 0.55rem;
 }
 
-.c9 {
+.c8 {
   position: absolute;
   width: 1rem;
   height: 1rem;
@@ -896,13 +876,13 @@ exports[`<Photography /> should render correctly with initial state 1`] = `
   font-weight: bold;
 }
 
-.c14 {
+.c13 {
   margin: 0;
   font-size: 1.5rem;
   font-weight: bold;
 }
 
-.c6 {
+.c5 {
   margin: 0;
 }
 
@@ -910,15 +890,11 @@ exports[`<Photography /> should render correctly with initial state 1`] = `
   margin: 2.3rem 0 0 0;
 }
 
-.c4 {
+.c3 {
   padding-top: 0;
   opacity: 1;
   -webkit-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;
-}
-
-.c3 {
-  width: 100%;
 }
 
 .c0 {
@@ -926,7 +902,7 @@ exports[`<Photography /> should render correctly with initial state 1`] = `
   animation: bbwGtI 0.4s ease-in-out;
 }
 
-.c16 {
+.c15 {
   display: inline-block;
   margin-bottom: 0;
   padding-bottom: 0;
@@ -934,22 +910,22 @@ exports[`<Photography /> should render correctly with initial state 1`] = `
   margin-top: 2rem;
 }
 
-.c16:first-of-type {
+.c15:first-of-type {
   margin-top: 0.86rem;
 }
 
-.c12 {
+.c11 {
   width: 100%;
   color: #1e1e1e;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
-.c15 {
+.c14 {
   margin: 2.13rem 0 0 0;
 }
 
-.c10 {
+.c9 {
   position: relative;
   display: -webkit-box;
   display: -webkit-flex;
@@ -966,7 +942,7 @@ exports[`<Photography /> should render correctly with initial state 1`] = `
   justify-content: center;
 }
 
-.c11 {
+.c10 {
   position: absolute;
   top: 0;
   left: calc(50% - 50vw);
@@ -976,7 +952,7 @@ exports[`<Photography /> should render correctly with initial state 1`] = `
   background-color: #fbfbfb;
 }
 
-.c13 {
+.c12 {
   width: 100%;
   padding-right: 1.875rem;
   padding-left: 1.865rem;
@@ -984,32 +960,32 @@ exports[`<Photography /> should render correctly with initial state 1`] = `
 }
 
 @media (prefers-color-scheme:dark) {
-  .c5:focus-within::after,
-  .c5:focus::after {
+  .c4:focus-within::after,
+  .c4:focus::after {
     border-color: rgba(0,125,250,0.6);
   }
 }
 
 @media (prefers-color-scheme:dark) {
-  .c5 {
+  .c4 {
     color: orchid;
     fill: orchid;
   }
 
-  .c5:hover {
+  .c4:hover {
     color: #44aeff;
     fill: #44aeff;
   }
 }
 
 @media (prefers-color-scheme:dark) {
-  .c12 {
+  .c11 {
     color: white;
   }
 }
 
 @media (prefers-color-scheme:dark) {
-  .c11 {
+  .c10 {
     background-color: #121313;
   }
 }
@@ -1028,9 +1004,7 @@ exports[`<Photography /> should render correctly with initial state 1`] = `
         Photography
       </h1>
     </div>
-    <div
-      class="c3"
-    >
+    <div>
       <style>
         .js .animated-content__wrapper--hidden {
   padding-top: 4rem;
@@ -1038,28 +1012,28 @@ exports[`<Photography /> should render correctly with initial state 1`] = `
 }
       </style>
       <div
-        class="c4 animated-content__wrapper--hidden"
+        class="c3 animated-content__wrapper--hidden"
       >
         <div
           class=""
         >
           <a
             aria-label="Find me on Flickr (opens in a new tab)"
-            class="c5"
+            class="c4"
             href="https://www.flickr.com/people/georgegillams/"
             rel="noopener noreferrer"
             target="_blank"
           >
             <span
-              class="c6"
+              class="c5"
             >
               Find me on Flickr
             </span>
             <div
-              class="c7"
+              class="c6"
             >
               <svg
-                class="c8 c9"
+                class="c7 c8"
                 height="18"
                 viewBox="0 0 24 24"
                 width="18"
@@ -1073,21 +1047,21 @@ exports[`<Photography /> should render correctly with initial state 1`] = `
           </a>
           <a
             aria-label="Find me on Unsplash (opens in a new tab)"
-            class="c5"
+            class="c4"
             href="https://unsplash.com/@georgegillams"
             rel="noopener noreferrer"
             target="_blank"
           >
             <span
-              class="c6"
+              class="c5"
             >
               Find me on Unsplash
             </span>
             <div
-              class="c7"
+              class="c6"
             >
               <svg
-                class="c8 c9"
+                class="c7 c8"
                 height="18"
                 viewBox="0 0 24 24"
                 width="18"
@@ -1101,21 +1075,21 @@ exports[`<Photography /> should render correctly with initial state 1`] = `
           </a>
           <a
             aria-label="Find me on GuruShots (opens in a new tab)"
-            class="c5"
+            class="c4"
             href="https://gurushots.com/georgegillams/achievements"
             rel="noopener noreferrer"
             target="_blank"
           >
             <span
-              class="c6"
+              class="c5"
             >
               Find me on GuruShots
             </span>
             <div
-              class="c7"
+              class="c6"
             >
               <svg
-                class="c8 c9"
+                class="c7 c8"
                 height="18"
                 viewBox="0 0 24 24"
                 width="18"
@@ -1128,11 +1102,11 @@ exports[`<Photography /> should render correctly with initial state 1`] = `
             </div>
           </a>
           <a
-            class="c5"
+            class="c4"
             href="/contact"
           >
             <span
-              class="c6"
+              class="c5"
             >
               Contact me about photography work
             </span>
@@ -1140,9 +1114,7 @@ exports[`<Photography /> should render correctly with initial state 1`] = `
         </div>
       </div>
     </div>
-    <div
-      class="c3"
-    >
+    <div>
       <style>
         .js .animated-content__wrapper--hidden {
   padding-top: 4rem;
@@ -1150,7 +1122,7 @@ exports[`<Photography /> should render correctly with initial state 1`] = `
 }
       </style>
       <div
-        class="c4 animated-content__wrapper--hidden"
+        class="c3 animated-content__wrapper--hidden"
       >
         <div
           class=""
@@ -1164,54 +1136,52 @@ exports[`<Photography /> should render correctly with initial state 1`] = `
       </div>
     </div>
   </div>
-  <div
-    class="c3"
-  >
+  <div>
     <style>
       .js .animated-content__wrapper--hidden {
   opacity: 0.01;
 }
     </style>
     <div
-      class="c4 animated-content__wrapper--hidden"
+      class="c3 animated-content__wrapper--hidden"
     >
       <div
-        class="c10"
+        class="c9"
       >
         <div
-          class="c11"
+          class="c10"
         />
         <div
-          class="c12 c13"
+          class="c11 c12"
         >
           <h1
-            class="c14 c15"
+            class="c13 c14"
             id="copyright"
           >
             Copyright
           </h1>
           <span
-            class="c16"
+            class="c15"
           >
             Most of my photos are licensed under
              
             <a
               aria-label="Creative Commons BY-SA 3.0 (opens in a new tab)"
-              class="c5"
+              class="c4"
               href="https://creativecommons.org/licenses/by-sa/3.0/"
               rel="noopener noreferrer"
               target="_blank"
             >
               <span
-                class="c6"
+                class="c5"
               >
                 Creative Commons BY-SA 3.0
               </span>
               <div
-                class="c7"
+                class="c6"
               >
                 <svg
-                  class="c8 c9"
+                  class="c7 c8"
                   height="18"
                   viewBox="0 0 24 24"
                   width="18"
@@ -1227,11 +1197,11 @@ exports[`<Photography /> should render correctly with initial state 1`] = `
             <br />
             If you are unsure about your right to use them please 
             <a
-              class="c5"
+              class="c4"
               href="/contact"
             >
               <span
-                class="c6"
+                class="c5"
               >
                 contact me
               </span>
@@ -1246,12 +1216,12 @@ exports[`<Photography /> should render correctly with initial state 1`] = `
 `;
 
 exports[`<Photography /> should render correctly with loadError 1`] = `
-.c8 {
+.c7 {
   width: 1.25rem;
   height: 1.25rem;
 }
 
-.c5 {
+.c4 {
   display: inline-block;
   border-radius: 0.25rem;
   font-weight: bold;
@@ -1262,14 +1232,14 @@ exports[`<Photography /> should render correctly with loadError 1`] = `
   fill: darkorchid;
 }
 
-.c5:focus-within,
-.c5:focus {
+.c4:focus-within,
+.c4:focus {
   position: relative;
   outline: none !important;
 }
 
-.c5:focus-within::after,
-.c5:focus::after {
+.c4:focus-within::after,
+.c4:focus::after {
   position: absolute;
   top: -0.35rem;
   right: -0.35rem;
@@ -1282,12 +1252,12 @@ exports[`<Photography /> should render correctly with loadError 1`] = `
   pointer-events: none;
 }
 
-.c5:hover {
+.c4:hover {
   color: #44aeff;
   fill: #44aeff;
 }
 
-.c7 {
+.c6 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -1297,7 +1267,7 @@ exports[`<Photography /> should render correctly with loadError 1`] = `
   margin-left: 0.55rem;
 }
 
-.c9 {
+.c8 {
   position: absolute;
   width: 1rem;
   height: 1rem;
@@ -1311,13 +1281,13 @@ exports[`<Photography /> should render correctly with loadError 1`] = `
   font-weight: bold;
 }
 
-.c14 {
+.c13 {
   margin: 0;
   font-size: 1.5rem;
   font-weight: bold;
 }
 
-.c6 {
+.c5 {
   margin: 0;
 }
 
@@ -1325,15 +1295,11 @@ exports[`<Photography /> should render correctly with loadError 1`] = `
   margin: 2.3rem 0 0 0;
 }
 
-.c4 {
+.c3 {
   padding-top: 0;
   opacity: 1;
   -webkit-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;
-}
-
-.c3 {
-  width: 100%;
 }
 
 .c0 {
@@ -1341,7 +1307,7 @@ exports[`<Photography /> should render correctly with loadError 1`] = `
   animation: bbwGtI 0.4s ease-in-out;
 }
 
-.c16 {
+.c15 {
   display: inline-block;
   margin-bottom: 0;
   padding-bottom: 0;
@@ -1349,22 +1315,22 @@ exports[`<Photography /> should render correctly with loadError 1`] = `
   margin-top: 2rem;
 }
 
-.c16:first-of-type {
+.c15:first-of-type {
   margin-top: 0.86rem;
 }
 
-.c12 {
+.c11 {
   width: 100%;
   color: #1e1e1e;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
-.c15 {
+.c14 {
   margin: 2.13rem 0 0 0;
 }
 
-.c10 {
+.c9 {
   position: relative;
   display: -webkit-box;
   display: -webkit-flex;
@@ -1381,7 +1347,7 @@ exports[`<Photography /> should render correctly with loadError 1`] = `
   justify-content: center;
 }
 
-.c11 {
+.c10 {
   position: absolute;
   top: 0;
   left: calc(50% - 50vw);
@@ -1391,7 +1357,7 @@ exports[`<Photography /> should render correctly with loadError 1`] = `
   background-color: #fbfbfb;
 }
 
-.c13 {
+.c12 {
   width: 100%;
   padding-right: 1.875rem;
   padding-left: 1.865rem;
@@ -1399,32 +1365,32 @@ exports[`<Photography /> should render correctly with loadError 1`] = `
 }
 
 @media (prefers-color-scheme:dark) {
-  .c5:focus-within::after,
-  .c5:focus::after {
+  .c4:focus-within::after,
+  .c4:focus::after {
     border-color: rgba(0,125,250,0.6);
   }
 }
 
 @media (prefers-color-scheme:dark) {
-  .c5 {
+  .c4 {
     color: orchid;
     fill: orchid;
   }
 
-  .c5:hover {
+  .c4:hover {
     color: #44aeff;
     fill: #44aeff;
   }
 }
 
 @media (prefers-color-scheme:dark) {
-  .c12 {
+  .c11 {
     color: white;
   }
 }
 
 @media (prefers-color-scheme:dark) {
-  .c11 {
+  .c10 {
     background-color: #121313;
   }
 }
@@ -1443,9 +1409,7 @@ exports[`<Photography /> should render correctly with loadError 1`] = `
         Photography
       </h1>
     </div>
-    <div
-      class="c3"
-    >
+    <div>
       <style>
         .js .animated-content__wrapper--hidden {
   padding-top: 4rem;
@@ -1453,28 +1417,28 @@ exports[`<Photography /> should render correctly with loadError 1`] = `
 }
       </style>
       <div
-        class="c4 animated-content__wrapper--hidden"
+        class="c3 animated-content__wrapper--hidden"
       >
         <div
           class=""
         >
           <a
             aria-label="Find me on Flickr (opens in a new tab)"
-            class="c5"
+            class="c4"
             href="https://www.flickr.com/people/georgegillams/"
             rel="noopener noreferrer"
             target="_blank"
           >
             <span
-              class="c6"
+              class="c5"
             >
               Find me on Flickr
             </span>
             <div
-              class="c7"
+              class="c6"
             >
               <svg
-                class="c8 c9"
+                class="c7 c8"
                 height="18"
                 viewBox="0 0 24 24"
                 width="18"
@@ -1488,21 +1452,21 @@ exports[`<Photography /> should render correctly with loadError 1`] = `
           </a>
           <a
             aria-label="Find me on Unsplash (opens in a new tab)"
-            class="c5"
+            class="c4"
             href="https://unsplash.com/@georgegillams"
             rel="noopener noreferrer"
             target="_blank"
           >
             <span
-              class="c6"
+              class="c5"
             >
               Find me on Unsplash
             </span>
             <div
-              class="c7"
+              class="c6"
             >
               <svg
-                class="c8 c9"
+                class="c7 c8"
                 height="18"
                 viewBox="0 0 24 24"
                 width="18"
@@ -1516,21 +1480,21 @@ exports[`<Photography /> should render correctly with loadError 1`] = `
           </a>
           <a
             aria-label="Find me on GuruShots (opens in a new tab)"
-            class="c5"
+            class="c4"
             href="https://gurushots.com/georgegillams/achievements"
             rel="noopener noreferrer"
             target="_blank"
           >
             <span
-              class="c6"
+              class="c5"
             >
               Find me on GuruShots
             </span>
             <div
-              class="c7"
+              class="c6"
             >
               <svg
-                class="c8 c9"
+                class="c7 c8"
                 height="18"
                 viewBox="0 0 24 24"
                 width="18"
@@ -1543,11 +1507,11 @@ exports[`<Photography /> should render correctly with loadError 1`] = `
             </div>
           </a>
           <a
-            class="c5"
+            class="c4"
             href="/contact"
           >
             <span
-              class="c6"
+              class="c5"
             >
               Contact me about photography work
             </span>
@@ -1555,9 +1519,7 @@ exports[`<Photography /> should render correctly with loadError 1`] = `
         </div>
       </div>
     </div>
-    <div
-      class="c3"
-    >
+    <div>
       <style>
         .js .animated-content__wrapper--hidden {
   padding-top: 4rem;
@@ -1565,7 +1527,7 @@ exports[`<Photography /> should render correctly with loadError 1`] = `
 }
       </style>
       <div
-        class="c4 animated-content__wrapper--hidden"
+        class="c3 animated-content__wrapper--hidden"
       >
         <div
           class=""
@@ -1579,54 +1541,52 @@ exports[`<Photography /> should render correctly with loadError 1`] = `
       </div>
     </div>
   </div>
-  <div
-    class="c3"
-  >
+  <div>
     <style>
       .js .animated-content__wrapper--hidden {
   opacity: 0.01;
 }
     </style>
     <div
-      class="c4 animated-content__wrapper--hidden"
+      class="c3 animated-content__wrapper--hidden"
     >
       <div
-        class="c10"
+        class="c9"
       >
         <div
-          class="c11"
+          class="c10"
         />
         <div
-          class="c12 c13"
+          class="c11 c12"
         >
           <h1
-            class="c14 c15"
+            class="c13 c14"
             id="copyright"
           >
             Copyright
           </h1>
           <span
-            class="c16"
+            class="c15"
           >
             Most of my photos are licensed under
              
             <a
               aria-label="Creative Commons BY-SA 3.0 (opens in a new tab)"
-              class="c5"
+              class="c4"
               href="https://creativecommons.org/licenses/by-sa/3.0/"
               rel="noopener noreferrer"
               target="_blank"
             >
               <span
-                class="c6"
+                class="c5"
               >
                 Creative Commons BY-SA 3.0
               </span>
               <div
-                class="c7"
+                class="c6"
               >
                 <svg
-                  class="c8 c9"
+                  class="c7 c8"
                   height="18"
                   viewBox="0 0 24 24"
                   width="18"
@@ -1642,11 +1602,11 @@ exports[`<Photography /> should render correctly with loadError 1`] = `
             <br />
             If you are unsure about your right to use them please 
             <a
-              class="c5"
+              class="c4"
               href="/contact"
             >
               <span
-                class="c6"
+                class="c5"
               >
                 contact me
               </span>
@@ -1661,12 +1621,12 @@ exports[`<Photography /> should render correctly with loadError 1`] = `
 `;
 
 exports[`<Photography /> should render correctly with photos 1`] = `
-.c8 {
+.c7 {
   width: 1.25rem;
   height: 1.25rem;
 }
 
-.c5 {
+.c4 {
   display: inline-block;
   border-radius: 0.25rem;
   font-weight: bold;
@@ -1677,14 +1637,14 @@ exports[`<Photography /> should render correctly with photos 1`] = `
   fill: darkorchid;
 }
 
-.c5:focus-within,
-.c5:focus {
+.c4:focus-within,
+.c4:focus {
   position: relative;
   outline: none !important;
 }
 
-.c5:focus-within::after,
-.c5:focus::after {
+.c4:focus-within::after,
+.c4:focus::after {
   position: absolute;
   top: -0.35rem;
   right: -0.35rem;
@@ -1697,12 +1657,12 @@ exports[`<Photography /> should render correctly with photos 1`] = `
   pointer-events: none;
 }
 
-.c5:hover {
+.c4:hover {
   color: #44aeff;
   fill: #44aeff;
 }
 
-.c7 {
+.c6 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -1712,7 +1672,7 @@ exports[`<Photography /> should render correctly with photos 1`] = `
   margin-left: 0.55rem;
 }
 
-.c9 {
+.c8 {
   position: absolute;
   width: 1rem;
   height: 1rem;
@@ -1726,13 +1686,13 @@ exports[`<Photography /> should render correctly with photos 1`] = `
   font-weight: bold;
 }
 
-.c14 {
+.c13 {
   margin: 0;
   font-size: 1.5rem;
   font-weight: bold;
 }
 
-.c6 {
+.c5 {
   margin: 0;
 }
 
@@ -1740,15 +1700,11 @@ exports[`<Photography /> should render correctly with photos 1`] = `
   margin: 2.3rem 0 0 0;
 }
 
-.c4 {
+.c3 {
   padding-top: 0;
   opacity: 1;
   -webkit-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;
-}
-
-.c3 {
-  width: 100%;
 }
 
 .c0 {
@@ -1756,7 +1712,7 @@ exports[`<Photography /> should render correctly with photos 1`] = `
   animation: bbwGtI 0.4s ease-in-out;
 }
 
-.c16 {
+.c15 {
   display: inline-block;
   margin-bottom: 0;
   padding-bottom: 0;
@@ -1764,22 +1720,22 @@ exports[`<Photography /> should render correctly with photos 1`] = `
   margin-top: 2rem;
 }
 
-.c16:first-of-type {
+.c15:first-of-type {
   margin-top: 0.86rem;
 }
 
-.c12 {
+.c11 {
   width: 100%;
   color: #1e1e1e;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
-.c15 {
+.c14 {
   margin: 2.13rem 0 0 0;
 }
 
-.c10 {
+.c9 {
   position: relative;
   display: -webkit-box;
   display: -webkit-flex;
@@ -1796,7 +1752,7 @@ exports[`<Photography /> should render correctly with photos 1`] = `
   justify-content: center;
 }
 
-.c11 {
+.c10 {
   position: absolute;
   top: 0;
   left: calc(50% - 50vw);
@@ -1806,7 +1762,7 @@ exports[`<Photography /> should render correctly with photos 1`] = `
   background-color: #fbfbfb;
 }
 
-.c13 {
+.c12 {
   width: 100%;
   padding-right: 1.875rem;
   padding-left: 1.865rem;
@@ -1814,32 +1770,32 @@ exports[`<Photography /> should render correctly with photos 1`] = `
 }
 
 @media (prefers-color-scheme:dark) {
-  .c5:focus-within::after,
-  .c5:focus::after {
+  .c4:focus-within::after,
+  .c4:focus::after {
     border-color: rgba(0,125,250,0.6);
   }
 }
 
 @media (prefers-color-scheme:dark) {
-  .c5 {
+  .c4 {
     color: orchid;
     fill: orchid;
   }
 
-  .c5:hover {
+  .c4:hover {
     color: #44aeff;
     fill: #44aeff;
   }
 }
 
 @media (prefers-color-scheme:dark) {
-  .c12 {
+  .c11 {
     color: white;
   }
 }
 
 @media (prefers-color-scheme:dark) {
-  .c11 {
+  .c10 {
     background-color: #121313;
   }
 }
@@ -1858,9 +1814,7 @@ exports[`<Photography /> should render correctly with photos 1`] = `
         Photography
       </h1>
     </div>
-    <div
-      class="c3"
-    >
+    <div>
       <style>
         .js .animated-content__wrapper--hidden {
   padding-top: 4rem;
@@ -1868,28 +1822,28 @@ exports[`<Photography /> should render correctly with photos 1`] = `
 }
       </style>
       <div
-        class="c4 animated-content__wrapper--hidden"
+        class="c3 animated-content__wrapper--hidden"
       >
         <div
           class=""
         >
           <a
             aria-label="Find me on Flickr (opens in a new tab)"
-            class="c5"
+            class="c4"
             href="https://www.flickr.com/people/georgegillams/"
             rel="noopener noreferrer"
             target="_blank"
           >
             <span
-              class="c6"
+              class="c5"
             >
               Find me on Flickr
             </span>
             <div
-              class="c7"
+              class="c6"
             >
               <svg
-                class="c8 c9"
+                class="c7 c8"
                 height="18"
                 viewBox="0 0 24 24"
                 width="18"
@@ -1903,21 +1857,21 @@ exports[`<Photography /> should render correctly with photos 1`] = `
           </a>
           <a
             aria-label="Find me on Unsplash (opens in a new tab)"
-            class="c5"
+            class="c4"
             href="https://unsplash.com/@georgegillams"
             rel="noopener noreferrer"
             target="_blank"
           >
             <span
-              class="c6"
+              class="c5"
             >
               Find me on Unsplash
             </span>
             <div
-              class="c7"
+              class="c6"
             >
               <svg
-                class="c8 c9"
+                class="c7 c8"
                 height="18"
                 viewBox="0 0 24 24"
                 width="18"
@@ -1931,21 +1885,21 @@ exports[`<Photography /> should render correctly with photos 1`] = `
           </a>
           <a
             aria-label="Find me on GuruShots (opens in a new tab)"
-            class="c5"
+            class="c4"
             href="https://gurushots.com/georgegillams/achievements"
             rel="noopener noreferrer"
             target="_blank"
           >
             <span
-              class="c6"
+              class="c5"
             >
               Find me on GuruShots
             </span>
             <div
-              class="c7"
+              class="c6"
             >
               <svg
-                class="c8 c9"
+                class="c7 c8"
                 height="18"
                 viewBox="0 0 24 24"
                 width="18"
@@ -1958,11 +1912,11 @@ exports[`<Photography /> should render correctly with photos 1`] = `
             </div>
           </a>
           <a
-            class="c5"
+            class="c4"
             href="/contact"
           >
             <span
-              class="c6"
+              class="c5"
             >
               Contact me about photography work
             </span>
@@ -1970,9 +1924,7 @@ exports[`<Photography /> should render correctly with photos 1`] = `
         </div>
       </div>
     </div>
-    <div
-      class="c3"
-    >
+    <div>
       <style>
         .js .animated-content__wrapper--hidden {
   padding-top: 4rem;
@@ -1980,7 +1932,7 @@ exports[`<Photography /> should render correctly with photos 1`] = `
 }
       </style>
       <div
-        class="c4 animated-content__wrapper--hidden"
+        class="c3 animated-content__wrapper--hidden"
       >
         <div
           class=""
@@ -1994,54 +1946,52 @@ exports[`<Photography /> should render correctly with photos 1`] = `
       </div>
     </div>
   </div>
-  <div
-    class="c3"
-  >
+  <div>
     <style>
       .js .animated-content__wrapper--hidden {
   opacity: 0.01;
 }
     </style>
     <div
-      class="c4 animated-content__wrapper--hidden"
+      class="c3 animated-content__wrapper--hidden"
     >
       <div
-        class="c10"
+        class="c9"
       >
         <div
-          class="c11"
+          class="c10"
         />
         <div
-          class="c12 c13"
+          class="c11 c12"
         >
           <h1
-            class="c14 c15"
+            class="c13 c14"
             id="copyright"
           >
             Copyright
           </h1>
           <span
-            class="c16"
+            class="c15"
           >
             Most of my photos are licensed under
              
             <a
               aria-label="Creative Commons BY-SA 3.0 (opens in a new tab)"
-              class="c5"
+              class="c4"
               href="https://creativecommons.org/licenses/by-sa/3.0/"
               rel="noopener noreferrer"
               target="_blank"
             >
               <span
-                class="c6"
+                class="c5"
               >
                 Creative Commons BY-SA 3.0
               </span>
               <div
-                class="c7"
+                class="c6"
               >
                 <svg
-                  class="c8 c9"
+                  class="c7 c8"
                   height="18"
                   viewBox="0 0 24 24"
                   width="18"
@@ -2057,11 +2007,11 @@ exports[`<Photography /> should render correctly with photos 1`] = `
             <br />
             If you are unsure about your right to use them please 
             <a
-              class="c5"
+              class="c4"
               href="/contact"
             >
               <span
-                class="c6"
+                class="c5"
               >
                 contact me
               </span>

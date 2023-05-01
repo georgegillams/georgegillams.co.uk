@@ -47,6 +47,7 @@ exports[`<UserEditForm /> Should render correctly 1`] = `
 
 .c6:active {
   background-color: #003E6F;
+  color: white;
 }
 
 .c6:disabled {
@@ -172,6 +173,7 @@ exports[`<UserEditForm /> Should render correctly 1`] = `
 @media (prefers-color-scheme:dark) {
   .c6:active {
     background-color: #003965;
+    color: white;
   }
 }
 
@@ -374,6 +376,7 @@ exports[`<UserEditForm /> Should render correctly with admin controls shown 1`] 
 
 .c12:active {
   background-color: #003E6F;
+  color: white;
 }
 
 .c12:disabled {
@@ -573,6 +576,7 @@ exports[`<UserEditForm /> Should render correctly with admin controls shown 1`] 
 @media (prefers-color-scheme:dark) {
   .c12:active {
     background-color: #003965;
+    color: white;
   }
 }
 

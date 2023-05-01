@@ -25,7 +25,7 @@ exports[`<NotFound /> should render correctly 1`] = `
   padding-left: 1rem;
 }
 
-.c6 {
+.c5 {
   display: inline-block;
   margin-bottom: 0;
   padding-bottom: 0;
@@ -33,11 +33,11 @@ exports[`<NotFound /> should render correctly 1`] = `
   margin-top: 2rem;
 }
 
-.c6:first-of-type {
+.c5:first-of-type {
   margin-top: 0.86rem;
 }
 
-.c7 {
+.c6 {
   display: inline-block;
   border-radius: 0.25rem;
   font-weight: bold;
@@ -48,14 +48,14 @@ exports[`<NotFound /> should render correctly 1`] = `
   fill: darkorchid;
 }
 
-.c7:focus-within,
-.c7:focus {
+.c6:focus-within,
+.c6:focus {
   position: relative;
   outline: none !important;
 }
 
-.c7:focus-within::after,
-.c7:focus::after {
+.c6:focus-within::after,
+.c6:focus::after {
   position: absolute;
   top: -0.35rem;
   right: -0.35rem;
@@ -68,7 +68,7 @@ exports[`<NotFound /> should render correctly 1`] = `
   pointer-events: none;
 }
 
-.c7:hover {
+.c6:hover {
   color: #44aeff;
   fill: #44aeff;
 }
@@ -79,7 +79,7 @@ exports[`<NotFound /> should render correctly 1`] = `
   font-weight: bold;
 }
 
-.c8 {
+.c7 {
   margin: 0;
 }
 
@@ -87,15 +87,11 @@ exports[`<NotFound /> should render correctly 1`] = `
   margin: 2.3rem 0 0 0;
 }
 
-.c5 {
+.c4 {
   padding-top: 0;
   opacity: 1;
   -webkit-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;
-}
-
-.c4 {
-  width: 100%;
 }
 
 .c1 {
@@ -111,19 +107,19 @@ exports[`<NotFound /> should render correctly 1`] = `
 }
 
 @media (prefers-color-scheme:dark) {
-  .c7:focus-within::after,
-  .c7:focus::after {
+  .c6:focus-within::after,
+  .c6:focus::after {
     border-color: rgba(0,125,250,0.6);
   }
 }
 
 @media (prefers-color-scheme:dark) {
-  .c7 {
+  .c6 {
     color: orchid;
     fill: orchid;
   }
 
-  .c7:hover {
+  .c6:hover {
     color: #44aeff;
     fill: #44aeff;
   }
@@ -143,29 +139,27 @@ exports[`<NotFound /> should render correctly 1`] = `
         Oops.
       </h1>
     </div>
-    <div
-      class="c4"
-    >
+    <div>
       <style>
         .js .animated-content__wrapper--hidden {
   opacity: 0.01;
 }
       </style>
       <div
-        class="c5 animated-content__wrapper--hidden"
+        class="c4 animated-content__wrapper--hidden"
       >
         <span
-          class="c6"
+          class="c5"
         >
           The page you're looking for doesn't exist, or you don't have permission to view it.
           <br />
           Maybe the 
           <a
-            class="c7"
+            class="c6"
             href="/sitemap"
           >
             <span
-              class="c8"
+              class="c7"
             >
               site map
             </span>

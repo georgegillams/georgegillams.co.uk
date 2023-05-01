@@ -218,6 +218,10 @@ exports[`<AdminNavigation /> should render correctly with admin user 1`] = `
   -ms-flex-align: center;
   align-items: center;
   box-sizing: border-box;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 .c12 {

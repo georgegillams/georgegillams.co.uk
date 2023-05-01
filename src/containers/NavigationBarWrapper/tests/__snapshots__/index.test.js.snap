@@ -166,6 +166,7 @@ exports[`<Authenticator /> should render correctly - index 1`] = `
 
 .c12:active {
   background-color: #003E6F;
+  color: white;
 }
 
 .c12:disabled {
@@ -351,6 +352,7 @@ exports[`<Authenticator /> should render correctly - index 1`] = `
 @media (prefers-color-scheme:dark) {
   .c12:active {
     background-color: #003965;
+    color: white;
   }
 }
 
@@ -716,6 +718,7 @@ exports[`<Authenticator /> should render correctly with default state 1`] = `
 
 .c12:active {
   background-color: #003E6F;
+  color: white;
 }
 
 .c12:disabled {
@@ -901,6 +904,7 @@ exports[`<Authenticator /> should render correctly with default state 1`] = `
 @media (prefers-color-scheme:dark) {
   .c12:active {
     background-color: #003965;
+    color: white;
   }
 }
 
@@ -1266,6 +1270,7 @@ exports[`<Authenticator /> should render correctly with null user 1`] = `
 
 .c12:active {
   background-color: #003E6F;
+  color: white;
 }
 
 .c12:disabled {
@@ -1451,6 +1456,7 @@ exports[`<Authenticator /> should render correctly with null user 1`] = `
 @media (prefers-color-scheme:dark) {
   .c12:active {
     background-color: #003965;
+    color: white;
   }
 }
 
@@ -1816,6 +1822,7 @@ exports[`<Authenticator /> should render correctly with user 1`] = `
 
 .c12:active {
   background-color: #003E6F;
+  color: white;
 }
 
 .c12:disabled {
@@ -2001,6 +2008,7 @@ exports[`<Authenticator /> should render correctly with user 1`] = `
 @media (prefers-color-scheme:dark) {
   .c12:active {
     background-color: #003965;
+    color: white;
   }
 }
 

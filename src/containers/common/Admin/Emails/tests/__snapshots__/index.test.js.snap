@@ -229,6 +229,7 @@ exports[`<AdminEmails /> should render correctly with admin user 1`] = `
 
 .c6:active {
   background-color: #003E6F;
+  color: white;
 }
 
 .c6:disabled {
@@ -333,6 +334,7 @@ exports[`<AdminEmails /> should render correctly with admin user 1`] = `
 @media (prefers-color-scheme:dark) {
   .c6:active {
     background-color: #003965;
+    color: white;
   }
 }
 
@@ -544,6 +546,7 @@ exports[`<AdminEmails /> should render correctly with emails 1`] = `
 
 .c6:active {
   background-color: #003E6F;
+  color: white;
 }
 
 .c6:disabled {
@@ -773,6 +776,7 @@ exports[`<AdminEmails /> should render correctly with emails 1`] = `
 @media (prefers-color-scheme:dark) {
   .c6:active {
     background-color: #003965;
+    color: white;
   }
 }
 
@@ -1287,6 +1291,7 @@ exports[`<AdminEmails /> should render correctly with loadError 1`] = `
 
 .c6:active {
   background-color: #003E6F;
+  color: white;
 }
 
 .c6:disabled {
@@ -1398,6 +1403,7 @@ exports[`<AdminEmails /> should render correctly with loadError 1`] = `
 @media (prefers-color-scheme:dark) {
   .c6:active {
     background-color: #003965;
+    color: white;
   }
 }
 
@@ -1768,6 +1774,7 @@ exports[`<AdminEmails /> should render correctly with loading=true 1`] = `
 
 .c6:active {
   background-color: #003E6F;
+  color: white;
 }
 
 .c6:disabled {
@@ -1899,6 +1906,7 @@ exports[`<AdminEmails /> should render correctly with loading=true 1`] = `
 @media (prefers-color-scheme:dark) {
   .c6:active {
     background-color: #003965;
+    color: white;
   }
 }
 
@@ -2115,6 +2123,7 @@ exports[`<AdminEmails /> should render correctly with resendError 1`] = `
 
 .c6:active {
   background-color: #003E6F;
+  color: white;
 }
 
 .c6:disabled {
@@ -2219,6 +2228,7 @@ exports[`<AdminEmails /> should render correctly with resendError 1`] = `
 @media (prefers-color-scheme:dark) {
   .c6:active {
     background-color: #003965;
+    color: white;
   }
 }
 
@@ -2401,6 +2411,7 @@ exports[`<AdminEmails /> should render correctly with resending=true 1`] = `
 
 .c6:active {
   background-color: #003E6F;
+  color: white;
 }
 
 .c6:disabled {
@@ -2505,6 +2516,7 @@ exports[`<AdminEmails /> should render correctly with resending=true 1`] = `
 @media (prefers-color-scheme:dark) {
   .c6:active {
     background-color: #003965;
+    color: white;
   }
 }
 

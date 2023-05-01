@@ -246,6 +246,7 @@ exports[`<AdminUsers /> should render correctly with admin user 1`] = `
 
 .c7:active {
   background-color: #003E6F;
+  color: white;
 }
 
 .c7:disabled {
@@ -416,6 +417,7 @@ exports[`<AdminUsers /> should render correctly with admin user 1`] = `
 @media (prefers-color-scheme:dark) {
   .c7:active {
     background-color: #003965;
+    color: white;
   }
 }
 
@@ -685,6 +687,7 @@ exports[`<AdminUsers /> should render correctly with createError 1`] = `
 
 .c7:active {
   background-color: #003E6F;
+  color: white;
 }
 
 .c7:disabled {
@@ -855,6 +858,7 @@ exports[`<AdminUsers /> should render correctly with createError 1`] = `
 @media (prefers-color-scheme:dark) {
   .c7:active {
     background-color: #003965;
+    color: white;
   }
 }
 
@@ -1124,6 +1128,7 @@ exports[`<AdminUsers /> should render correctly with creating=true 1`] = `
 
 .c7:active {
   background-color: #003E6F;
+  color: white;
 }
 
 .c7:disabled {
@@ -1294,6 +1299,7 @@ exports[`<AdminUsers /> should render correctly with creating=true 1`] = `
 @media (prefers-color-scheme:dark) {
   .c7:active {
     background-color: #003965;
+    color: white;
   }
 }
 
@@ -1685,6 +1691,7 @@ exports[`<AdminUsers /> should render correctly with loadError 1`] = `
 
 .c7:active {
   background-color: #003E6F;
+  color: white;
 }
 
 .c7:disabled {
@@ -1872,6 +1879,7 @@ exports[`<AdminUsers /> should render correctly with loadError 1`] = `
 @media (prefers-color-scheme:dark) {
   .c7:active {
     background-color: #003965;
+    color: white;
   }
 }
 
@@ -2336,6 +2344,7 @@ exports[`<AdminUsers /> should render correctly with loading=true 1`] = `
 
 .c7:active {
   background-color: #003E6F;
+  color: white;
 }
 
 .c7:disabled {
@@ -2389,6 +2398,7 @@ exports[`<AdminUsers /> should render correctly with loading=true 1`] = `
 
 .c19:active {
   background-color: #003E6F;
+  color: white;
 }
 
 .c19:disabled {
@@ -2597,6 +2607,7 @@ exports[`<AdminUsers /> should render correctly with loading=true 1`] = `
 @media (prefers-color-scheme:dark) {
   .c7:active {
     background-color: #003965;
+    color: white;
   }
 }
 
@@ -2632,6 +2643,7 @@ exports[`<AdminUsers /> should render correctly with loading=true 1`] = `
 @media (prefers-color-scheme:dark) {
   .c19:active {
     background-color: #003965;
+    color: white;
   }
 }
 
@@ -2935,6 +2947,7 @@ exports[`<AdminUsers /> should render correctly with removeError 1`] = `
 
 .c7:active {
   background-color: #003E6F;
+  color: white;
 }
 
 .c7:disabled {
@@ -3105,6 +3118,7 @@ exports[`<AdminUsers /> should render correctly with removeError 1`] = `
 @media (prefers-color-scheme:dark) {
   .c7:active {
     background-color: #003965;
+    color: white;
   }
 }
 
@@ -3374,6 +3388,7 @@ exports[`<AdminUsers /> should render correctly with removing=true 1`] = `
 
 .c7:active {
   background-color: #003E6F;
+  color: white;
 }
 
 .c7:disabled {
@@ -3544,6 +3559,7 @@ exports[`<AdminUsers /> should render correctly with removing=true 1`] = `
 @media (prefers-color-scheme:dark) {
   .c7:active {
     background-color: #003965;
+    color: white;
   }
 }
 
@@ -3813,6 +3829,7 @@ exports[`<AdminUsers /> should render correctly with requestError 1`] = `
 
 .c7:active {
   background-color: #003E6F;
+  color: white;
 }
 
 .c7:disabled {
@@ -3983,6 +4000,7 @@ exports[`<AdminUsers /> should render correctly with requestError 1`] = `
 @media (prefers-color-scheme:dark) {
   .c7:active {
     background-color: #003965;
+    color: white;
   }
 }
 
@@ -4252,6 +4270,7 @@ exports[`<AdminUsers /> should render correctly with requesting=true 1`] = `
 
 .c7:active {
   background-color: #003E6F;
+  color: white;
 }
 
 .c7:disabled {
@@ -4422,6 +4441,7 @@ exports[`<AdminUsers /> should render correctly with requesting=true 1`] = `
 @media (prefers-color-scheme:dark) {
   .c7:active {
     background-color: #003965;
+    color: white;
   }
 }
 
@@ -4691,6 +4711,7 @@ exports[`<AdminUsers /> should render correctly with updateError 1`] = `
 
 .c7:active {
   background-color: #003E6F;
+  color: white;
 }
 
 .c7:disabled {
@@ -4861,6 +4882,7 @@ exports[`<AdminUsers /> should render correctly with updateError 1`] = `
 @media (prefers-color-scheme:dark) {
   .c7:active {
     background-color: #003965;
+    color: white;
   }
 }
 
@@ -5130,6 +5152,7 @@ exports[`<AdminUsers /> should render correctly with updating=true 1`] = `
 
 .c7:active {
   background-color: #003E6F;
+  color: white;
 }
 
 .c7:disabled {
@@ -5300,6 +5323,7 @@ exports[`<AdminUsers /> should render correctly with updating=true 1`] = `
 @media (prefers-color-scheme:dark) {
   .c7:active {
     background-color: #003965;
+    color: white;
   }
 }
 
@@ -5694,6 +5718,7 @@ exports[`<AdminUsers /> should render correctly with users 1`] = `
 
 .c7:active {
   background-color: #003E6F;
+  color: white;
 }
 
 .c7:disabled {
@@ -5965,6 +5990,7 @@ exports[`<AdminUsers /> should render correctly with users 1`] = `
 @media (prefers-color-scheme:dark) {
   .c7:active {
     background-color: #003965;
+    color: white;
   }
 }
 

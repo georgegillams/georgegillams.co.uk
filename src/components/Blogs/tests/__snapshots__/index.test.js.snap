@@ -81,6 +81,13 @@ exports[`<BlogCard /> Should render correctly 1`] = `
   -ms-flex-align: center;
   align-items: center;
   box-sizing: border-box;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-content: space-around;
+  -ms-flex-line-pack: space-around;
+  align-content: space-around;
 }
 
 .c6 {
@@ -174,6 +181,18 @@ exports[`<BlogCard /> Should render correctly 1`] = `
     -webkit-flex-wrap: wrap;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
+  }
+}
+
+@media (min-width:32.25rem) {
+  .c5 {
+    -webkit-box-pack: unset;
+    -webkit-justify-content: unset;
+    -ms-flex-pack: unset;
+    justify-content: unset;
+    -webkit-align-content: unset;
+    -ms-flex-line-pack: unset;
+    align-content: unset;
   }
 }
 
@@ -435,6 +454,13 @@ exports[`<BlogCard /> Should render correctly when deleted 1`] = `
   -ms-flex-align: center;
   align-items: center;
   box-sizing: border-box;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-content: space-around;
+  -ms-flex-line-pack: space-around;
+  align-content: space-around;
 }
 
 .c6 {
@@ -637,6 +663,18 @@ exports[`<BlogCard /> Should render correctly when deleted 1`] = `
     -webkit-flex-wrap: wrap;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
+  }
+}
+
+@media (min-width:32.25rem) {
+  .c5 {
+    -webkit-box-pack: unset;
+    -webkit-justify-content: unset;
+    -ms-flex-pack: unset;
+    justify-content: unset;
+    -webkit-align-content: unset;
+    -ms-flex-line-pack: unset;
+    align-content: unset;
   }
 }
 
@@ -971,6 +1009,13 @@ exports[`<BlogCard /> Should render correctly with all parameters supplied 1`] =
   -ms-flex-align: center;
   align-items: center;
   box-sizing: border-box;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-content: space-around;
+  -ms-flex-line-pack: space-around;
+  align-content: space-around;
 }
 
 .c6 {
@@ -1173,6 +1218,18 @@ exports[`<BlogCard /> Should render correctly with all parameters supplied 1`] =
     -webkit-flex-wrap: wrap;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
+  }
+}
+
+@media (min-width:32.25rem) {
+  .c5 {
+    -webkit-box-pack: unset;
+    -webkit-justify-content: unset;
+    -ms-flex-pack: unset;
+    justify-content: unset;
+    -webkit-align-content: unset;
+    -ms-flex-line-pack: unset;
+    align-content: unset;
   }
 }
 
@@ -1415,6 +1472,13 @@ exports[`<BlogCard /> Should render correctly with custom className 1`] = `
   -ms-flex-align: center;
   align-items: center;
   box-sizing: border-box;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-content: space-around;
+  -ms-flex-line-pack: space-around;
+  align-content: space-around;
 }
 
 .c6 {
@@ -1508,6 +1572,18 @@ exports[`<BlogCard /> Should render correctly with custom className 1`] = `
     -webkit-flex-wrap: wrap;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
+  }
+}
+
+@media (min-width:32.25rem) {
+  .c5 {
+    -webkit-box-pack: unset;
+    -webkit-justify-content: unset;
+    -ms-flex-pack: unset;
+    justify-content: unset;
+    -webkit-align-content: unset;
+    -ms-flex-line-pack: unset;
+    align-content: unset;
   }
 }
 
@@ -1769,6 +1845,13 @@ exports[`<BlogsList /> Should render correctly 1`] = `
   -ms-flex-align: center;
   align-items: center;
   box-sizing: border-box;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-content: space-around;
+  -ms-flex-line-pack: space-around;
+  align-content: space-around;
 }
 
 .c7 {
@@ -1978,6 +2061,18 @@ exports[`<BlogsList /> Should render correctly 1`] = `
     -webkit-flex-wrap: wrap;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
+  }
+}
+
+@media (min-width:32.25rem) {
+  .c6 {
+    -webkit-box-pack: unset;
+    -webkit-justify-content: unset;
+    -ms-flex-pack: unset;
+    justify-content: unset;
+    -webkit-align-content: unset;
+    -ms-flex-line-pack: unset;
+    align-content: unset;
   }
 }
 
@@ -2517,6 +2612,13 @@ exports[`<BlogsList /> Should render correctly with custom className 1`] = `
   -ms-flex-align: center;
   align-items: center;
   box-sizing: border-box;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-content: space-around;
+  -ms-flex-line-pack: space-around;
+  align-content: space-around;
 }
 
 .c7 {
@@ -2726,6 +2828,18 @@ exports[`<BlogsList /> Should render correctly with custom className 1`] = `
     -webkit-flex-wrap: wrap;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
+  }
+}
+
+@media (min-width:32.25rem) {
+  .c6 {
+    -webkit-box-pack: unset;
+    -webkit-justify-content: unset;
+    -ms-flex-pack: unset;
+    justify-content: unset;
+    -webkit-align-content: unset;
+    -ms-flex-line-pack: unset;
+    align-content: unset;
   }
 }
 
@@ -3141,6 +3255,7 @@ exports[`<BlogsList /> Should render correctly with deleteBlog function 1`] = `
 
 .c13:active {
   background-color: #9F1717;
+  color: white;
 }
 
 .c13:disabled {
@@ -3195,6 +3310,7 @@ exports[`<BlogsList /> Should render correctly with deleteBlog function 1`] = `
 
 .c30:active {
   background-color: #9F1717;
+  color: white;
 }
 
 .c30:disabled {
@@ -3385,6 +3501,13 @@ exports[`<BlogsList /> Should render correctly with deleteBlog function 1`] = `
   -ms-flex-align: center;
   align-items: center;
   box-sizing: border-box;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-content: space-around;
+  -ms-flex-line-pack: space-around;
+  align-content: space-around;
 }
 
 .c7 {
@@ -3548,6 +3671,7 @@ exports[`<BlogsList /> Should render correctly with deleteBlog function 1`] = `
 @media (prefers-color-scheme:dark) {
   .c13:active {
     background-color: #730D0D;
+    color: white;
   }
 }
 
@@ -3583,6 +3707,7 @@ exports[`<BlogsList /> Should render correctly with deleteBlog function 1`] = `
 @media (prefers-color-scheme:dark) {
   .c30:active {
     background-color: #730D0D;
+    color: white;
   }
 }
 
@@ -3670,6 +3795,18 @@ exports[`<BlogsList /> Should render correctly with deleteBlog function 1`] = `
     -webkit-flex-wrap: wrap;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
+  }
+}
+
+@media (min-width:32.25rem) {
+  .c6 {
+    -webkit-box-pack: unset;
+    -webkit-justify-content: unset;
+    -ms-flex-pack: unset;
+    justify-content: unset;
+    -webkit-align-content: unset;
+    -ms-flex-line-pack: unset;
+    align-content: unset;
   }
 }
 

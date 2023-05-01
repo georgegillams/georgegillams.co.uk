@@ -19,7 +19,7 @@ exports[`<AppPrivacyPolicy /> should render correctly - index 1`] = `
   font-weight: bold;
 }
 
-.c7 {
+.c6 {
   margin: 0;
   font-size: 1.5rem;
   font-weight: bold;
@@ -29,15 +29,11 @@ exports[`<AppPrivacyPolicy /> should render correctly - index 1`] = `
   margin: 2.3rem 0 0 0;
 }
 
-.c5 {
+.c4 {
   padding-top: 0;
   opacity: 1;
   -webkit-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;
-}
-
-.c4 {
-  width: 100%;
 }
 
 .c1 {
@@ -45,7 +41,7 @@ exports[`<AppPrivacyPolicy /> should render correctly - index 1`] = `
   animation: bbwGtI 0.4s ease-in-out;
 }
 
-.c9 {
+.c8 {
   display: inline-block;
   margin-bottom: 0;
   padding-bottom: 0;
@@ -53,18 +49,18 @@ exports[`<AppPrivacyPolicy /> should render correctly - index 1`] = `
   margin-top: 2rem;
 }
 
-.c9:first-of-type {
+.c8:first-of-type {
   margin-top: 0.86rem;
 }
 
-.c6 {
+.c5 {
   width: 100%;
   color: #1e1e1e;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
-.c8 {
+.c7 {
   margin: 2.13rem 0 0 0;
 }
 
@@ -76,7 +72,7 @@ exports[`<AppPrivacyPolicy /> should render correctly - index 1`] = `
 }
 
 @media (prefers-color-scheme:dark) {
-  .c6 {
+  .c5 {
     color: white;
   }
 }
@@ -95,9 +91,7 @@ exports[`<AppPrivacyPolicy /> should render correctly - index 1`] = `
         App privacy policy
       </h1>
     </div>
-    <div
-      class="c4"
-    >
+    <div>
       <style>
         .js .animated-content__wrapper--hidden {
   padding-top: 4rem;
@@ -105,28 +99,26 @@ exports[`<AppPrivacyPolicy /> should render correctly - index 1`] = `
 }
       </style>
       <div
-        class="c5 animated-content__wrapper--hidden"
+        class="c4 animated-content__wrapper--hidden"
       >
         <div
-          class="c6"
+          class="c5"
         >
           <h1
-            class="c7 c8"
+            class="c6 c7"
             id="data-and-analytics"
           >
             Data and analytics
           </h1>
           <span
-            class="c9"
+            class="c8"
           >
             My apps don't collect any data from your device. Any information the apps save is stored locally on your device. They don't even collect any analytics. I may add analytics to my apps in the future to understand how they are used and help prioritise features, but I will never collect or sell your personal data.
           </span>
         </div>
       </div>
     </div>
-    <div
-      class="c4"
-    >
+    <div>
       <style>
         .js .animated-content__wrapper--hidden {
   padding-top: 4rem;
@@ -134,28 +126,26 @@ exports[`<AppPrivacyPolicy /> should render correctly - index 1`] = `
 }
       </style>
       <div
-        class="c5 animated-content__wrapper--hidden"
+        class="c4 animated-content__wrapper--hidden"
       >
         <div
-          class="c6"
+          class="c5"
         >
           <h1
-            class="c7 c8"
+            class="c6 c7"
             id="cookies"
           >
             Cookies
           </h1>
           <span
-            class="c9"
+            class="c8"
           >
             None of my apps have any reason to store cookies or session information. So they don't.
           </span>
         </div>
       </div>
     </div>
-    <div
-      class="c4"
-    >
+    <div>
       <style>
         .js .animated-content__wrapper--hidden {
   padding-top: 4rem;
@@ -163,19 +153,19 @@ exports[`<AppPrivacyPolicy /> should render correctly - index 1`] = `
 }
       </style>
       <div
-        class="c5 animated-content__wrapper--hidden"
+        class="c4 animated-content__wrapper--hidden"
       >
         <div
-          class="c6"
+          class="c5"
         >
           <h1
-            class="c7 c8"
+            class="c6 c7"
             id="version"
           >
             Version
           </h1>
           <span
-            class="c9"
+            class="c8"
           >
             This is version 1 of my app privacy policy.
           </span>

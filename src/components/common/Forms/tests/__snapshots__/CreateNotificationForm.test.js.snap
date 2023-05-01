@@ -47,6 +47,7 @@ exports[`<CreateNotificationForm /> Should render correctly 1`] = `
 
 .c8:active {
   background-color: #003E6F;
+  color: white;
 }
 
 .c8:disabled {
@@ -193,6 +194,7 @@ exports[`<CreateNotificationForm /> Should render correctly 1`] = `
 @media (prefers-color-scheme:dark) {
   .c8:active {
     background-color: #003965;
+    color: white;
   }
 }
 
