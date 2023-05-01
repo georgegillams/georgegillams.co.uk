@@ -60,32 +60,32 @@ const Medals = () => {
           <StyledMedalShelf>
             <SpartanMedal
               type={SPARTAN_EVENT_TYPE.sprint}
-              year={2022}
+              year="2022"
               stravaLink="https://www.strava.com/activities/7297440877"
             />
             <SpartanMedal
               type={SPARTAN_EVENT_TYPE.super}
-              year={2022}
+              year="2022"
               stravaLink="https://www.strava.com/activities/7484273069"
             />
             <SpartanMedal
               type={SPARTAN_EVENT_TYPE.beast}
-              year={2022}
+              year="2022"
               stravaLink="https://www.strava.com/activities/7931592133"
             />
             <SpartanMedal
               type={SPARTAN_EVENT_TYPE.beast}
-              year={2023}
+              year="2023"
               stravaLink="https://www.strava.com/activities/8976887050"
             />
             <SpartanMedal
               type={SPARTAN_EVENT_TYPE.super}
-              year={2023}
+              year="2023"
               stravaLink="https://www.strava.com/activities/8982453371"
             />
             <SpartanMedal
               type={SPARTAN_EVENT_TYPE.sprint}
-              year={2023}
+              year="2023"
               stravaLink="https://www.strava.com/activities/8985253651"
             />
           </StyledMedalShelf>
@@ -94,11 +94,11 @@ const Medals = () => {
           <StyledMedalShelf>
             <SpartanTrifectaDisplay
               wedges={[SPARTAN_EVENT_TYPE.sprint, SPARTAN_EVENT_TYPE.super, SPARTAN_EVENT_TYPE.beast]}
-              year={2022}
+              year="2022"
             />
             <SpartanTrifectaDisplay
               wedges={[SPARTAN_EVENT_TYPE.sprint, SPARTAN_EVENT_TYPE.super, SPARTAN_EVENT_TYPE.beast]}
-              year={2023}
+              year="2023"
             />
           </StyledMedalShelf>
         </Subsection>
@@ -115,14 +115,14 @@ const Medals = () => {
               background="#93D50A"
               foreground={notBlack}
               title="New Forest Half Marathon"
-              year={2022}
+              year="2022"
               stravaLink="https://www.strava.com/activities/7790895383"
             />
             <EventPatch
               background="#FF4E00"
               foreground="white"
               title="New Forest Half Marathon"
-              year={2023}
+              year="2023"
               stravaLink="https://www.strava.com/activities/8427549008"
             />
           </StyledMedalShelf>
@@ -142,7 +142,7 @@ const Medals = () => {
               background="#0D492C"
               foreground="white"
               title="Chiltern 50km Ultra Challenge"
-              year={2022}
+              year="2022"
               stravaLink="https://www.strava.com/activities/7859623082"
             />
           </StyledMedalShelf>
