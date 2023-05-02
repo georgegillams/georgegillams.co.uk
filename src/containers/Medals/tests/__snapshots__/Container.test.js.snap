@@ -721,6 +721,10 @@ exports[`<Medals /> should render correctly 1`] = `
 .c57 {
   font-size: 0.233rem;
   font-weight: bold;
+  -webkit-letter-spacing: .13px;
+  -moz-letter-spacing: .13px;
+  -ms-letter-spacing: .13px;
+  letter-spacing: .13px;
   fill: #d9d9d9;
 }
 
@@ -1455,7 +1459,7 @@ exports[`<Medals /> should render correctly 1`] = `
                   />
                   <path
                     class="c30"
-                    d="M38 6C54.7705 6 69 20.7339 69 36.9919C69 53.7581 55.7869 69 38 69"
+                    d="M39 5C55.7705 5 70 20.2016 70 36.9758C70 54.2742 56.7869 70 39 70"
                     id="textLine1"
                   />
                   <text
@@ -1466,7 +1470,7 @@ exports[`<Medals /> should render correctly 1`] = `
                     <textpath
                       alignment-baseline="central"
                       class="c32"
-                      startOffset="15"
+                      startOffset="17"
                       xlink:href="#textLine1"
                     >
                       5
@@ -1477,7 +1481,7 @@ exports[`<Medals /> should render correctly 1`] = `
                   </text>
                   <path
                     class="c33"
-                    d="M37 66C21.8525 66 8.99999 52.6694 9 37.9597C9 22.7903 20.9344 9 37 9"
+                    d="M36 69C19.7705 69 6 54.2661 6 38.0081C6 21.2419 18.7869 6 36 6"
                     id="textLine2"
                   />
                   <text
@@ -1487,7 +1491,7 @@ exports[`<Medals /> should render correctly 1`] = `
                     <textpath
                       alignment-baseline="central"
                       class="c35"
-                      startOffset="16"
+                      startOffset="18"
                       xlink:href="#textLine2"
                     >
                       SPRINT
@@ -1607,7 +1611,7 @@ exports[`<Medals /> should render correctly 1`] = `
                   />
                   <path
                     class="c30"
-                    d="M38 6C54.7705 6 69 20.7339 69 36.9919C69 53.7581 55.7869 69 38 69"
+                    d="M39 5C55.7705 5 70 20.2016 70 36.9758C70 54.2742 56.7869 70 39 70"
                     id="textLine1"
                   />
                   <text
@@ -1618,7 +1622,7 @@ exports[`<Medals /> should render correctly 1`] = `
                     <textpath
                       alignment-baseline="central"
                       class="c32"
-                      startOffset="15"
+                      startOffset="17"
                       xlink:href="#textLine1"
                     >
                       10
@@ -1629,7 +1633,7 @@ exports[`<Medals /> should render correctly 1`] = `
                   </text>
                   <path
                     class="c33"
-                    d="M37 66C21.8525 66 8.99999 52.6694 9 37.9597C9 22.7903 20.9344 9 37 9"
+                    d="M36 69C19.7705 69 6 54.2661 6 38.0081C6 21.2419 18.7869 6 36 6"
                     id="textLine2"
                   />
                   <text
@@ -1639,7 +1643,7 @@ exports[`<Medals /> should render correctly 1`] = `
                     <textpath
                       alignment-baseline="central"
                       class="c35"
-                      startOffset="16"
+                      startOffset="18"
                       xlink:href="#textLine2"
                     >
                       SUPER
@@ -1759,7 +1763,7 @@ exports[`<Medals /> should render correctly 1`] = `
                   />
                   <path
                     class="c30"
-                    d="M38 6C54.7705 6 69 20.7339 69 36.9919C69 53.7581 55.7869 69 38 69"
+                    d="M39 5C55.7705 5 70 20.2016 70 36.9758C70 54.2742 56.7869 70 39 70"
                     id="textLine1"
                   />
                   <text
@@ -1770,7 +1774,7 @@ exports[`<Medals /> should render correctly 1`] = `
                     <textpath
                       alignment-baseline="central"
                       class="c32"
-                      startOffset="15"
+                      startOffset="17"
                       xlink:href="#textLine1"
                     >
                       21
@@ -1781,7 +1785,7 @@ exports[`<Medals /> should render correctly 1`] = `
                   </text>
                   <path
                     class="c33"
-                    d="M37 66C21.8525 66 8.99999 52.6694 9 37.9597C9 22.7903 20.9344 9 37 9"
+                    d="M36 69C19.7705 69 6 54.2661 6 38.0081C6 21.2419 18.7869 6 36 6"
                     id="textLine2"
                   />
                   <text
@@ -1791,7 +1795,7 @@ exports[`<Medals /> should render correctly 1`] = `
                     <textpath
                       alignment-baseline="central"
                       class="c35"
-                      startOffset="16"
+                      startOffset="18"
                       xlink:href="#textLine2"
                     >
                       BEAST
@@ -1932,7 +1936,7 @@ exports[`<Medals /> should render correctly 1`] = `
                   />
                   <path
                     class="c53"
-                    d="M5.74597 36.5927C5.74597 18.7932 21.0367 5.44353 37.5 5.44353C53.9633 5.44353 69.2541 18.7932 69.2541 36.5927"
+                    d="M5 36.5C5 18.2143 20.6499 4.5 37.5 4.5C54.3501 4.5 70 18.2143 70 36.5"
                     id="textLine2023_1"
                   />
                   <text
@@ -1942,7 +1946,7 @@ exports[`<Medals /> should render correctly 1`] = `
                     <textpath
                       alignment-baseline="central"
                       class="c55"
-                      startOffset="1.6000000000000014"
+                      startOffset="3.6000000000000014"
                       xlink:href="#textLine2023_1"
                     >
                       SPARTAN BEAST FINISHER | 21K | 30 OBSTACLES
@@ -1953,7 +1957,7 @@ exports[`<Medals /> should render correctly 1`] = `
                     cx="37.5"
                     cy="37.5"
                     id="textLine2023_2"
-                    r="16"
+                    r="17"
                     transform="rotate(220 37.5 37.5)"
                   />
                   <text
@@ -2110,7 +2114,7 @@ exports[`<Medals /> should render correctly 1`] = `
                   />
                   <path
                     class="c53"
-                    d="M5.74597 36.5927C5.74597 18.7932 21.0367 5.44353 37.5 5.44353C53.9633 5.44353 69.2541 18.7932 69.2541 36.5927"
+                    d="M5 36.5C5 18.2143 20.6499 4.5 37.5 4.5C54.3501 4.5 70 18.2143 70 36.5"
                     id="textLine2023_1"
                   />
                   <text
@@ -2120,7 +2124,7 @@ exports[`<Medals /> should render correctly 1`] = `
                     <textpath
                       alignment-baseline="central"
                       class="c55"
-                      startOffset="1.6000000000000014"
+                      startOffset="3.6000000000000014"
                       xlink:href="#textLine2023_1"
                     >
                       SPARTAN SUPER FINISHER | 10K | 25 OBSTACLES
@@ -2131,7 +2135,7 @@ exports[`<Medals /> should render correctly 1`] = `
                     cx="37.5"
                     cy="37.5"
                     id="textLine2023_2"
-                    r="16"
+                    r="17"
                     transform="rotate(220 37.5 37.5)"
                   />
                   <text
@@ -2288,7 +2292,7 @@ exports[`<Medals /> should render correctly 1`] = `
                   />
                   <path
                     class="c53"
-                    d="M5.74597 36.5927C5.74597 18.7932 21.0367 5.44353 37.5 5.44353C53.9633 5.44353 69.2541 18.7932 69.2541 36.5927"
+                    d="M5 36.5C5 18.2143 20.6499 4.5 37.5 4.5C54.3501 4.5 70 18.2143 70 36.5"
                     id="textLine2023_1"
                   />
                   <text
@@ -2298,7 +2302,7 @@ exports[`<Medals /> should render correctly 1`] = `
                     <textpath
                       alignment-baseline="central"
                       class="c55"
-                      startOffset="1.6000000000000014"
+                      startOffset="3.6000000000000014"
                       xlink:href="#textLine2023_1"
                     >
                       SPARTAN SPRINT FINISHER | 5K | 20 OBSTACLES
@@ -2309,7 +2313,7 @@ exports[`<Medals /> should render correctly 1`] = `
                     cx="37.5"
                     cy="37.5"
                     id="textLine2023_2"
-                    r="16"
+                    r="17"
                     transform="rotate(220 37.5 37.5)"
                   />
                   <text
