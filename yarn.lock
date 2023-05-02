@@ -1299,10 +1299,10 @@
     minimatch "^3.1.2"
     strip-json-comments "^3.1.1"
 
-"@george-gillams/components@^28.10.3":
-  version "28.10.3"
-  resolved "https://registry.yarnpkg.com/@george-gillams/components/-/components-28.10.3.tgz#4041e6dd29278315822ebafd0fcedffaf395f055"
-  integrity sha512-s4N1MwegdC7As3wlJGBKh4Hz9UOtQRa3oOigutjAswgNyCkzrkSdCDhD6lHZ8lLZVX+mP9oPQNNIgZSMRrulAQ==
+"@george-gillams/components@^28.10.4":
+  version "28.10.4"
+  resolved "https://registry.yarnpkg.com/@george-gillams/components/-/components-28.10.4.tgz#bb9956d0ef43a9b9010958472a289a922f2425b8"
+  integrity sha512-mMAUkfG1Lr8OUKf84itjKEBO589lX9MX3KaNuCn8IRLw/ndGr4/Soflu5NSucxNky4qJN8op8Y1F1BAA2NrmDg==
   dependencies:
     a11y-focus-scope "^1.1.3"
     date-fns "^2.29.3"
