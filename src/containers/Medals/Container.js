@@ -108,6 +108,19 @@ const Medals = () => {
           </StyledMedalShelf>
         </Subsection>
       </SectionWithScroll>
+      <SectionWithScroll name="Other OCR">
+        <Subsection>
+          <StyledMedalShelf>
+            <EventPatch
+              background={notBlack}
+              foreground="#FFF200"
+              title="Nuclear Rush 12km"
+              year="2023"
+              stravaLink="https://www.strava.com/activities/9070888539"
+            />
+          </StyledMedalShelf>
+        </Subsection>
+      </SectionWithScroll>
       <SectionWithScroll name="Runs">
         <Subsection>
           <StyledMedalShelf>
