@@ -20,6 +20,8 @@ const redirects = [
     to: 'https://www.linkedin.com/in/george-gillams-37537077',
   },
   { from: '/twitter', to: 'https://twitter.com/georgegillams' },
+  { from: '/facebook', to: 'https://www.facebook.com/profile.php?id=100073681786600' },
+  { from: '/instagram', to: 'https://www.instagram.com/georgegillams/' },
   { from: '/spartan', to: 'https://uk.spartan.com/en/race/profile/3661120' },
 
   { from: '/wp-admin', to: '/admin' },
