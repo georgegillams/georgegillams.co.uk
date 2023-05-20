@@ -208,16 +208,29 @@ exports[`<Photography /> should render correctly - index 1`] = `
           class=""
         >
           <a
-            aria-label="Find me on Flickr (opens in a new tab)"
+            aria-label="View all my photos on Flickr"
+            class=""
+            href="https://www.flickr.com/photos/georgegillams"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            <span
+              class=""
+            >
+              View all my photos on Flickr
+            </span>
+          </a>
+          <a
+            aria-label="See Tigger and Bamse's Instagram 😻 🐶 (opens in a new tab)"
             class="c4"
-            href="https://www.flickr.com/people/georgegillams/"
+            href="https://instagram.com/tiggy.and.bamse"
             rel="noopener noreferrer"
             target="_blank"
           >
             <span
               class="c5"
             >
-              Find me on Flickr
+              See Tigger and Bamse's Instagram 😻 🐶
             </span>
             <div
               class="c6"
@@ -236,7 +249,7 @@ exports[`<Photography /> should render correctly - index 1`] = `
             </div>
           </a>
           <a
-            aria-label="Find me on Unsplash (opens in a new tab)"
+            aria-label="View my profile on Unsplash (opens in a new tab)"
             class="c4"
             href="https://unsplash.com/@georgegillams"
             rel="noopener noreferrer"
@@ -245,7 +258,7 @@ exports[`<Photography /> should render correctly - index 1`] = `
             <span
               class="c5"
             >
-              Find me on Unsplash
+              View my profile on Unsplash
             </span>
             <div
               class="c6"
@@ -613,16 +626,29 @@ exports[`<Photography /> should render correctly when loading 1`] = `
           class=""
         >
           <a
-            aria-label="Find me on Flickr (opens in a new tab)"
+            aria-label="View all my photos on Flickr"
+            class=""
+            href="https://www.flickr.com/photos/georgegillams"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            <span
+              class=""
+            >
+              View all my photos on Flickr
+            </span>
+          </a>
+          <a
+            aria-label="See Tigger and Bamse's Instagram 😻 🐶 (opens in a new tab)"
             class="c4"
-            href="https://www.flickr.com/people/georgegillams/"
+            href="https://instagram.com/tiggy.and.bamse"
             rel="noopener noreferrer"
             target="_blank"
           >
             <span
               class="c5"
             >
-              Find me on Flickr
+              See Tigger and Bamse's Instagram 😻 🐶
             </span>
             <div
               class="c6"
@@ -641,7 +667,7 @@ exports[`<Photography /> should render correctly when loading 1`] = `
             </div>
           </a>
           <a
-            aria-label="Find me on Unsplash (opens in a new tab)"
+            aria-label="View my profile on Unsplash (opens in a new tab)"
             class="c4"
             href="https://unsplash.com/@georgegillams"
             rel="noopener noreferrer"
@@ -650,7 +676,7 @@ exports[`<Photography /> should render correctly when loading 1`] = `
             <span
               class="c5"
             >
-              Find me on Unsplash
+              View my profile on Unsplash
             </span>
             <div
               class="c6"
@@ -1018,16 +1044,29 @@ exports[`<Photography /> should render correctly with initial state 1`] = `
           class=""
         >
           <a
-            aria-label="Find me on Flickr (opens in a new tab)"
+            aria-label="View all my photos on Flickr"
+            class=""
+            href="https://www.flickr.com/photos/georgegillams"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            <span
+              class=""
+            >
+              View all my photos on Flickr
+            </span>
+          </a>
+          <a
+            aria-label="See Tigger and Bamse's Instagram 😻 🐶 (opens in a new tab)"
             class="c4"
-            href="https://www.flickr.com/people/georgegillams/"
+            href="https://instagram.com/tiggy.and.bamse"
             rel="noopener noreferrer"
             target="_blank"
           >
             <span
               class="c5"
             >
-              Find me on Flickr
+              See Tigger and Bamse's Instagram 😻 🐶
             </span>
             <div
               class="c6"
@@ -1046,7 +1085,7 @@ exports[`<Photography /> should render correctly with initial state 1`] = `
             </div>
           </a>
           <a
-            aria-label="Find me on Unsplash (opens in a new tab)"
+            aria-label="View my profile on Unsplash (opens in a new tab)"
             class="c4"
             href="https://unsplash.com/@georgegillams"
             rel="noopener noreferrer"
@@ -1055,7 +1094,7 @@ exports[`<Photography /> should render correctly with initial state 1`] = `
             <span
               class="c5"
             >
-              Find me on Unsplash
+              View my profile on Unsplash
             </span>
             <div
               class="c6"
@@ -1423,16 +1462,29 @@ exports[`<Photography /> should render correctly with loadError 1`] = `
           class=""
         >
           <a
-            aria-label="Find me on Flickr (opens in a new tab)"
+            aria-label="View all my photos on Flickr"
+            class=""
+            href="https://www.flickr.com/photos/georgegillams"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            <span
+              class=""
+            >
+              View all my photos on Flickr
+            </span>
+          </a>
+          <a
+            aria-label="See Tigger and Bamse's Instagram 😻 🐶 (opens in a new tab)"
             class="c4"
-            href="https://www.flickr.com/people/georgegillams/"
+            href="https://instagram.com/tiggy.and.bamse"
             rel="noopener noreferrer"
             target="_blank"
           >
             <span
               class="c5"
             >
-              Find me on Flickr
+              See Tigger and Bamse's Instagram 😻 🐶
             </span>
             <div
               class="c6"
@@ -1451,7 +1503,7 @@ exports[`<Photography /> should render correctly with loadError 1`] = `
             </div>
           </a>
           <a
-            aria-label="Find me on Unsplash (opens in a new tab)"
+            aria-label="View my profile on Unsplash (opens in a new tab)"
             class="c4"
             href="https://unsplash.com/@georgegillams"
             rel="noopener noreferrer"
@@ -1460,7 +1512,7 @@ exports[`<Photography /> should render correctly with loadError 1`] = `
             <span
               class="c5"
             >
-              Find me on Unsplash
+              View my profile on Unsplash
             </span>
             <div
               class="c6"
@@ -1828,16 +1880,29 @@ exports[`<Photography /> should render correctly with photos 1`] = `
           class=""
         >
           <a
-            aria-label="Find me on Flickr (opens in a new tab)"
+            aria-label="View all my photos on Flickr"
+            class=""
+            href="https://www.flickr.com/photos/georgegillams"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            <span
+              class=""
+            >
+              View all my photos on Flickr
+            </span>
+          </a>
+          <a
+            aria-label="See Tigger and Bamse's Instagram 😻 🐶 (opens in a new tab)"
             class="c4"
-            href="https://www.flickr.com/people/georgegillams/"
+            href="https://instagram.com/tiggy.and.bamse"
             rel="noopener noreferrer"
             target="_blank"
           >
             <span
               class="c5"
             >
-              Find me on Flickr
+              See Tigger and Bamse's Instagram 😻 🐶
             </span>
             <div
               class="c6"
@@ -1856,7 +1921,7 @@ exports[`<Photography /> should render correctly with photos 1`] = `
             </div>
           </a>
           <a
-            aria-label="Find me on Unsplash (opens in a new tab)"
+            aria-label="View my profile on Unsplash (opens in a new tab)"
             class="c4"
             href="https://unsplash.com/@georgegillams"
             rel="noopener noreferrer"
@@ -1865,7 +1930,7 @@ exports[`<Photography /> should render correctly with photos 1`] = `
             <span
               class="c5"
             >
-              Find me on Unsplash
+              View my profile on Unsplash
             </span>
             <div
               class="c6"

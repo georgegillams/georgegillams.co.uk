@@ -10,6 +10,7 @@ import LoadingCover from '@george-gillams/components/loading-cover';
 import { LinkContainer } from './photography.styles';
 import PhotoGallery from 'components/photo-gallery';
 import { ANIMATIONS, ScrollAnimationWrapper, withScrollAnimation } from '@george-gillams/components/effects';
+import Button from 'components/common/Button/Button';
 
 const CreativeCommonsWithScroll = withScrollAnimation(CreativeCommons, { animation: ANIMATIONS.fade });
 
@@ -28,11 +29,14 @@ const Photography = props => {
         <PageTitle anchor={false} name="Photography" />
         <ScrollAnimationWrapper>
           <LinkContainer>
-            <TextLink hrefExternal href="https://www.flickr.com/people/georgegillams/">
-              Find me on Flickr
+            <Button hrefExternal href="https://www.flickr.com/photos/georgegillams">
+              View all my photos on Flickr
+            </Button>
+            <TextLink hrefExternal href="https://instagram.com/tiggy.and.bamse">
+              See Tigger and Bamse&#39;s Instagram 😻 🐶
             </TextLink>
             <TextLink hrefExternal href="https://unsplash.com/@georgegillams">
-              Find me on Unsplash
+              View my profile on Unsplash
             </TextLink>
             <TextLink hrefExternal href="https://gurushots.com/georgegillams/achievements">
               Find me on GuruShots
