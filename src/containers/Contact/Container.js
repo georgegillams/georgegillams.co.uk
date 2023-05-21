@@ -91,7 +91,7 @@ const Contact = () => {
           cellStyle={INFO_CELL_STYLES.dark}
           title="Flickr"
           content={
-            <TextLink href="https://www.flickr.com/people/georgegillams" hrefExternal>
+            <TextLink href="https://www.flickr.com/photos/georgegillams" hrefExternal>
               See my profile on Flickr
             </TextLink>
           }
