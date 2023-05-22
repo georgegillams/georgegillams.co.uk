@@ -11,6 +11,8 @@ import flickrLogo from './flickr.svg';
 import githubLogo from './github.svg';
 import emailLogo from './email.svg';
 import unsplashLogo from './unsplash.svg';
+import facebookLogo from './facebook.svg';
+import instagramLogo from './instagram.svg';
 import formLogo from './form.svg';
 import PageContainer, { WIDTHS } from 'components/common/PageContainer';
 import { IconImage, ImageIconContainer, InfoCellContainer, Spacer, StyledInfoCellWithScroll } from './contact.styles';
@@ -45,6 +47,33 @@ const Contact = () => {
             aux={
               <ImageIconContainer>
                 <IconImage src={twitterLogo.src} />
+              </ImageIconContainer>
+            }
+          />
+          <StyledInfoCellWithScroll
+            title="Facebook"
+            content={
+              <TextLink href="https://www.facebook.com/profile.php?id=100073681786600" hrefExternal>
+                See my profile on Facebook
+              </TextLink>
+            }
+            aux={
+              <ImageIconContainer>
+                <IconImage src={facebookLogo.src} />
+              </ImageIconContainer>
+            }
+          />
+          <StyledInfoCellWithScroll
+            cellStyle={INFO_CELL_STYLES.dark}
+            title="Instagram"
+            content={
+              <TextLink href="https://www.instagram.com/georgegillams/" hrefExternal>
+                See my profile on Instagram
+              </TextLink>
+            }
+            aux={
+              <ImageIconContainer>
+                <IconImage src={instagramLogo.src} />
               </ImageIconContainer>
             }
           />
