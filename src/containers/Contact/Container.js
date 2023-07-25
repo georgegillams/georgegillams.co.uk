@@ -46,7 +46,7 @@ const Contact = () => {
             }
             aux={
               <ImageIconContainer>
-                <IconImage src={twitterLogo.src} />
+                <IconImage invertInDarkMode src={twitterLogo.src} />
               </ImageIconContainer>
             }
           />
