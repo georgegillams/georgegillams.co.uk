@@ -108,7 +108,7 @@ const Contact = () => {
             title="Email"
             content={
               <TextLink href="mailto:hello@georgegillams.co.uk" hrefExternal>
-                Email hello@georgegillams.co.uk
+                hello@georgegillams.co.uk
               </TextLink>
             }
             aux={
