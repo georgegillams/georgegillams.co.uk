@@ -15,6 +15,7 @@ import TotalTypescriptCertificate2 from './images/total-typescript/2-certificate
 // import TotalTypescriptCertificate3 from './images/total-typescript/3-certificate.png';
 
 import ProductPsychologyMasterclassCertificate from './images/product-psychology-masterclass-certificate.jpg';
+import DiplomaPhotographyCertificate from './images/diploma-photography-certificate.jpg';
 
 const SubsectionWithScroll = withScrollAnimation(Subsection);
 const ParagraphWithScroll = withScrollAnimation(Paragraph);
@@ -109,29 +110,29 @@ const WorkQualifications = () => (
           darkSrc={ProductPsychologyMasterclassCertificate.src}
         />
       </SubsectionWithScroll>
-      {/* <SubsectionWithScroll name="Photography Diploma — IOP">
+      <SubsectionWithScroll name="Professional Diploma — Institute of Photography">
         <Paragraph>
           I have completed a Professional Diploma in Photography from the{' '}
           <TextLink hrefExternal href="https://www.institute-of-photography.com/">
             Institute of Photography
           </TextLink>
-          . The CPD accredited course has formalised what I learned in the past, whilst adding to my technical
-          understanding of photography. As a result, I have now earned "Qualified" status within the{' '}
+          . The CPD accredited course has formalised my existing knowledg and added to my technical understanding of
+          photography. I am now a &quot;Qualified&quot; member of the{' '}
           <TextLink hrefExternal href="https://photoguild.co.uk/">
             Guild of Professional Photographers
           </TextLink>
           .
         </Paragraph>
-        <Image
+        <StyledImage
           imgProps={{
-            alt: 'Screenshots of the Skyscanner app sporting the new brand.',
+            alt: 'Certificate of Completion of the Professional Diploma in Photography.',
           }}
-          aspectX={3248}
-          aspectY={1986}
-          lightSrc={brandLight.src}
-          darkSrc={brandDark.src}
+          aspectX={2480}
+          aspectY={3507}
+          lightSrc={DiplomaPhotographyCertificate.src}
+          darkSrc={DiplomaPhotographyCertificate.src}
         />
-        </SubsectionWithScroll> */}
+      </SubsectionWithScroll>
     </PageTitle>
   </PageContainer>
 );

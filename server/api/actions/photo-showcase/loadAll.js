@@ -41,11 +41,13 @@ const updateCachedValue = async () => {
   const photos = res.body.photoset.photo.reverse();
   const photosWithInformation = await Promise.all(photos.map(photo => attachPhotoInformation(photo)));
   const apiResult = {
-    photos: photosWithInformation.map(photo => ({
-      key: photo.id,
-      ...photo.size,
-      alt: photo.information.description,
-    })),
+    photos: photosWithInformation
+      .map(photo => ({
+        key: photo.id,
+        ...photo.size,
+        alt: photo.information.description,
+      }))
+      .filter(photo => !!photo.alt),
   };
 
   cache.value = apiResult;
