@@ -7,10 +7,12 @@ import TextLink from 'components/common/TextLink';
 import PageContainer from 'components/common/PageContainer';
 import PhotographySkeleton from './PhotographySkeleton';
 import LoadingCover from '@george-gillams/components/loading-cover';
-import { LinkContainer } from './photography.styles';
+import { ImageWrapper, LinkContainer, StyledImage } from './photography.styles';
 import PhotoGallery from 'components/photo-gallery';
 import { ANIMATIONS, ScrollAnimationWrapper, withScrollAnimation } from '@george-gillams/components/effects';
 import Button from 'components/common/Button/Button';
+import IopMember from './images/iop-member.jpg';
+import GuildQualified from './images/guild-qualified.jpg';
 
 const CreativeCommonsWithScroll = withScrollAnimation(CreativeCommons, { animation: ANIMATIONS.fade });
 
@@ -43,6 +45,28 @@ const Photography = props => {
             </TextLink>
             <TextLink href="/contact">Contact me about photography work</TextLink>
           </LinkContainer>
+        </ScrollAnimationWrapper>
+        <ScrollAnimationWrapper>
+          <ImageWrapper>
+            <StyledImage
+              imgProps={{
+                alt: 'I have IOP membership having completed their Professional Diploma in Photography.',
+              }}
+              aspectX={1589}
+              aspectY={850}
+              lightSrc={IopMember.src}
+              darkSrc={IopMember.src}
+            />
+            <StyledImage
+              imgProps={{
+                alt: 'I am a qualified member of the Guild of Photography.',
+              }}
+              aspectX={1417}
+              aspectY={650}
+              lightSrc={GuildQualified.src}
+              darkSrc={GuildQualified.src}
+            />
+          </ImageWrapper>
         </ScrollAnimationWrapper>
         <ScrollAnimationWrapper>
           <LoadingCover
