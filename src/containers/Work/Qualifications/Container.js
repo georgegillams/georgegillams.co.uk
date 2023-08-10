@@ -16,6 +16,7 @@ import TotalTypescriptCertificate2 from './images/total-typescript/2-certificate
 
 import ProductPsychologyMasterclassCertificate from './images/product-psychology-masterclass-certificate.jpg';
 import DiplomaPhotographyCertificate from './images/diploma-photography-certificate.jpg';
+import QualifiedGuildMember from './images/qualified-guild-member.jpg';
 
 const SubsectionWithScroll = withScrollAnimation(Subsection);
 const ParagraphWithScroll = withScrollAnimation(Paragraph);
@@ -127,10 +128,19 @@ const WorkQualifications = () => (
           imgProps={{
             alt: 'Certificate of Completion of the Professional Diploma in Photography.',
           }}
-          aspectX={2480}
-          aspectY={3507}
+          aspectX={1600}
+          aspectY={2263}
           lightSrc={DiplomaPhotographyCertificate.src}
           darkSrc={DiplomaPhotographyCertificate.src}
+        />
+        <StyledImage
+          imgProps={{
+            alt: 'Certificate of Completion of the Professional Diploma in Photography.',
+          }}
+          aspectX={1600}
+          aspectY={2263}
+          lightSrc={QualifiedGuildMember.src}
+          darkSrc={QualifiedGuildMember.src}
         />
       </SubsectionWithScroll>
     </PageTitle>
