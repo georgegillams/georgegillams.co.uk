@@ -48,6 +48,8 @@ const redirects = [
   { from: '/photoshop', to: '/photography' },
   { from: '/phot', to: '/photography' },
   { from: '/photo', to: '/photography' },
+
+  { from: '/contraster-feedback', to: 'https://form.typeform.com/to/XhSSvzDp' },
 ];
 
 export default redirects;
