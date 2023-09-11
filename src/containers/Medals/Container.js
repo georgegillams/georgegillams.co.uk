@@ -163,6 +163,13 @@ const Medals = () => {
               year="2023"
               stravaLink="https://www.strava.com/activities/8427549008"
             />
+            <EventPatch
+              background="#93D50A"
+              foreground={notBlack}
+              title="New Forest Half Marathon"
+              year="2023"
+              stravaLink="https://www.strava.com/activities/9821124828"
+            />
           </StyledMedalShelf>
         </Subsection>
       </SectionWithScroll>
