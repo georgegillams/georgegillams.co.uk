@@ -11,6 +11,7 @@ const redirects = [
   { from: '/typeform', to: 'https://form.typeform.com/to/WJSWmnKh' },
   { from: '/monzo', to: 'https://join.monzo.com/r/vjd3d74' },
   { from: '/github', to: 'https://github.com/georgegillams' },
+  { from: '/dotfiles', to: 'https://github.com/georgegillams/dotfiles' },
   { from: '/stackoverflow', to: 'https://stackoverflow.com/users/14463713/georgegillams' },
   { from: '/gurushots', to: 'https://gurushots.com/georgegillams/photos' },
   { from: '/unsplash', to: 'https://unsplash.com/@georgegillams/' },
