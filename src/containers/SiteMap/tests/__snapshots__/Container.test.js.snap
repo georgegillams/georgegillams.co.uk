@@ -1040,6 +1040,19 @@ exports[`<SiteMap /> should render correctly - index 1`] = `
             <div>
               <a
                 class="c10"
+                href="/dotfiles"
+              >
+                <span
+                  class="c11"
+                >
+                  /dotfiles ⇒ https://github.com/georgegillams/dotfiles
+                </span>
+              </a>
+              <br />
+            </div>
+            <div>
+              <a
+                class="c10"
                 href="/stackoverflow"
               >
                 <span
@@ -2514,6 +2527,19 @@ exports[`<SiteMap /> should render correctly 1`] = `
             <div>
               <a
                 class="c10"
+                href="/dotfiles"
+              >
+                <span
+                  class="c11"
+                >
+                  /dotfiles ⇒ https://github.com/georgegillams/dotfiles
+                </span>
+              </a>
+              <br />
+            </div>
+            <div>
+              <a
+                class="c10"
                 href="/stackoverflow"
               >
                 <span
@@ -3909,6 +3935,19 @@ exports[`<SiteMap /> should render correctly with blogs 1`] = `
                   class="c11"
                 >
                   /github ⇒ https://github.com/georgegillams
+                </span>
+              </a>
+              <br />
+            </div>
+            <div>
+              <a
+                class="c10"
+                href="/dotfiles"
+              >
+                <span
+                  class="c11"
+                >
+                  /dotfiles ⇒ https://github.com/georgegillams/dotfiles
                 </span>
               </a>
               <br />
@@ -5389,6 +5428,19 @@ exports[`<SiteMap /> should render correctly with blogs and admin user 1`] = `
             <div>
               <a
                 class="c10"
+                href="/dotfiles"
+              >
+                <span
+                  class="c11"
+                >
+                  /dotfiles ⇒ https://github.com/georgegillams/dotfiles
+                </span>
+              </a>
+              <br />
+            </div>
+            <div>
+              <a
+                class="c10"
                 href="/stackoverflow"
               >
                 <span
@@ -6784,6 +6836,19 @@ exports[`<SiteMap /> should render correctly with ssrBlogs 1`] = `
                   class="c11"
                 >
                   /github ⇒ https://github.com/georgegillams
+                </span>
+              </a>
+              <br />
+            </div>
+            <div>
+              <a
+                class="c10"
+                href="/dotfiles"
+              >
+                <span
+                  class="c11"
+                >
+                  /dotfiles ⇒ https://github.com/georgegillams/dotfiles
                 </span>
               </a>
               <br />
