@@ -23,7 +23,16 @@ export default class MockFlickr {
           },
         },
       }),
-      getInfo: () => ({ body: { photo: { description: { _content: 'alt text' } } } }),
+      getInfo: () => ({
+        body: {
+          photo: {
+            description: { _content: 'alt text' },
+            dates: {
+              taken: '2019-01-01 00:00:00',
+            },
+          },
+        },
+      }),
     };
     this.photosets = {
       getPhotos: () => ({
