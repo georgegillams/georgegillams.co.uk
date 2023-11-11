@@ -271,7 +271,7 @@ exports[`<EmailVerification /> should render correctly - index 1`] = `
 
 @media (prefers-color-scheme:dark) {
   .c4 {
-    color: white;
+    color: #ffffff;
   }
 }
 
@@ -592,7 +592,7 @@ exports[`<EmailVerification /> should render correctly with initial state 1`] = 
 
 @media (prefers-color-scheme:dark) {
   .c4 {
-    color: white;
+    color: #ffffff;
   }
 }
 
@@ -925,7 +925,7 @@ exports[`<EmailVerification /> should render correctly with user 1`] = `
 
 @media (prefers-color-scheme:dark) {
   .c5 {
-    color: white;
+    color: #ffffff;
   }
 }
 
@@ -1275,7 +1275,7 @@ exports[`<EmailVerification /> should render correctly with verifyError 1`] = `
 
 @media (prefers-color-scheme:dark) {
   .c4 {
-    color: white;
+    color: #ffffff;
   }
 }
 
@@ -1607,7 +1607,7 @@ exports[`<EmailVerification /> should render correctly with verifying=true 1`] =
 
 @media (prefers-color-scheme:dark) {
   .c4 {
-    color: white;
+    color: #ffffff;
   }
 }
 

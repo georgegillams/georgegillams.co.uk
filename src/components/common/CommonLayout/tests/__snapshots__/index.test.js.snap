@@ -47,7 +47,7 @@ exports[`<Layout /> Should render correctly 1`] = `
   left: -0.35rem;
   content: '';
   display: block;
-  border: solid rgba(0,125,250,0.6) 0.2rem;
+  border: solid #007dfa3C 0.2rem;
   border-radius: 0.5rem;
   pointer-events: none;
 }
@@ -97,7 +97,7 @@ exports[`<Layout /> Should render correctly 1`] = `
   left: -0.35rem;
   content: '';
   display: block;
-  border: solid rgba(0,125,250,0.6) 0.2rem;
+  border: solid #007dfa3C 0.2rem;
   border-radius: 0.5rem;
   pointer-events: none;
 }
@@ -211,7 +211,7 @@ exports[`<Layout /> Should render correctly 1`] = `
   background-color: #1e1e1e;
   background-position: center;
   background-size: cover;
-  color: white;
+  color: #ffffff;
 }
 
 .c5 {
@@ -253,7 +253,7 @@ exports[`<Layout /> Should render correctly 1`] = `
 @media (prefers-color-scheme:dark) {
   .c6:focus-within::after,
   .c6:focus::after {
-    border-color: rgba(0,125,250,0.6);
+    border-color: #007dfa3C;
   }
 }
 
@@ -265,14 +265,14 @@ exports[`<Layout /> Should render correctly 1`] = `
 
 @media (prefers-color-scheme:dark) {
   .c7 {
-    color: white;
+    color: #ffffff;
   }
 }
 
 @media (prefers-color-scheme:dark) {
   .c14:focus-within::after,
   .c14:focus::after {
-    border-color: rgba(0,125,250,0.6);
+    border-color: #007dfa3C;
   }
 }
 
@@ -531,7 +531,7 @@ exports[`<Layout /> Should render correctly with spread props 1`] = `
   left: -0.35rem;
   content: '';
   display: block;
-  border: solid rgba(0,125,250,0.6) 0.2rem;
+  border: solid #007dfa3C 0.2rem;
   border-radius: 0.5rem;
   pointer-events: none;
 }
@@ -581,7 +581,7 @@ exports[`<Layout /> Should render correctly with spread props 1`] = `
   left: -0.35rem;
   content: '';
   display: block;
-  border: solid rgba(0,125,250,0.6) 0.2rem;
+  border: solid #007dfa3C 0.2rem;
   border-radius: 0.5rem;
   pointer-events: none;
 }
@@ -695,7 +695,7 @@ exports[`<Layout /> Should render correctly with spread props 1`] = `
   background-color: #1e1e1e;
   background-position: center;
   background-size: cover;
-  color: white;
+  color: #ffffff;
 }
 
 .c5 {
@@ -737,7 +737,7 @@ exports[`<Layout /> Should render correctly with spread props 1`] = `
 @media (prefers-color-scheme:dark) {
   .c6:focus-within::after,
   .c6:focus::after {
-    border-color: rgba(0,125,250,0.6);
+    border-color: #007dfa3C;
   }
 }
 
@@ -749,14 +749,14 @@ exports[`<Layout /> Should render correctly with spread props 1`] = `
 
 @media (prefers-color-scheme:dark) {
   .c7 {
-    color: white;
+    color: #ffffff;
   }
 }
 
 @media (prefers-color-scheme:dark) {
   .c14:focus-within::after,
   .c14:focus::after {
-    border-color: rgba(0,125,250,0.6);
+    border-color: #007dfa3C;
   }
 }
 

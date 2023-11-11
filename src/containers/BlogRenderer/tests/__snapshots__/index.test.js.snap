@@ -1,40 +1,40 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<BlogRenderer /> should render correctly - index 1`] = `
-.c8 {
+.c7 {
   margin: 0;
   font-size: 1.5rem;
   font-weight: bold;
 }
 
-.c12 {
+.c11 {
   margin: 0;
 }
 
-.c14 {
+.c13 {
   width: 1.25rem;
   height: 1.25rem;
 }
 
-.c11 {
+.c10 {
   display: inline-block;
   border-radius: 0.25rem;
   font-weight: bold;
   -webkit-text-decoration: none;
   text-decoration: none;
   position: relative;
-  color: darkorchid;
-  fill: darkorchid;
+  color: #9932cc;
+  fill: #9932cc;
 }
 
-.c11:focus-within,
-.c11:focus {
+.c10:focus-within,
+.c10:focus {
   position: relative;
   outline: none !important;
 }
 
-.c11:focus-within::after,
-.c11:focus::after {
+.c10:focus-within::after,
+.c10:focus::after {
   position: absolute;
   top: -0.35rem;
   right: -0.35rem;
@@ -42,17 +42,17 @@ exports[`<BlogRenderer /> should render correctly - index 1`] = `
   left: -0.35rem;
   content: '';
   display: block;
-  border: solid rgba(0,125,250,0.6) 0.2rem;
+  border: solid #007dfa3C 0.2rem;
   border-radius: 0.5rem;
   pointer-events: none;
 }
 
-.c11:hover {
+.c10:hover {
   color: #44aeff;
   fill: #44aeff;
 }
 
-.c13 {
+.c12 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -62,7 +62,7 @@ exports[`<BlogRenderer /> should render correctly - index 1`] = `
   margin-left: 0.55rem;
 }
 
-.c15 {
+.c14 {
   position: absolute;
   width: 1rem;
   height: 1rem;
@@ -70,14 +70,14 @@ exports[`<BlogRenderer /> should render correctly - index 1`] = `
   margin-left: -0.45rem;
 }
 
-.c6 {
+.c5 {
   width: 100%;
   color: #1e1e1e;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
-.c9 {
+.c8 {
   margin: 2.13rem 0 0 0;
 }
 
@@ -112,7 +112,7 @@ exports[`<BlogRenderer /> should render correctly - index 1`] = `
   animation: sjjMW 3.5s ease-in-out infinite;
 }
 
-.c10 {
+.c9 {
   display: inline-block;
   margin-bottom: 0;
   padding-bottom: 0;
@@ -120,7 +120,7 @@ exports[`<BlogRenderer /> should render correctly - index 1`] = `
   margin-top: 2rem;
 }
 
-.c10:first-of-type {
+.c9:first-of-type {
   margin-top: 0.86rem;
 }
 
@@ -131,7 +131,6 @@ exports[`<BlogRenderer /> should render correctly - index 1`] = `
 }
 
 .c4 {
-  position: relative;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -145,19 +144,10 @@ exports[`<BlogRenderer /> should render correctly - index 1`] = `
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-}
-
-.c5 {
-  position: absolute;
-  top: 0;
-  left: calc(50% - 50vw);
-  z-index: -1;
-  width: 100vw;
-  height: 100%;
   background-color: #fbfbfb;
 }
 
-.c7 {
+.c6 {
   width: 100%;
   padding-right: 1.875rem;
   padding-left: 1.865rem;
@@ -165,27 +155,27 @@ exports[`<BlogRenderer /> should render correctly - index 1`] = `
 }
 
 @media (prefers-color-scheme:dark) {
-  .c11:focus-within::after,
-  .c11:focus::after {
-    border-color: rgba(0,125,250,0.6);
+  .c10:focus-within::after,
+  .c10:focus::after {
+    border-color: #007dfa3C;
   }
 }
 
 @media (prefers-color-scheme:dark) {
-  .c11 {
-    color: orchid;
-    fill: orchid;
+  .c10 {
+    color: #da70d6;
+    fill: #da70d6;
   }
 
-  .c11:hover {
+  .c10:hover {
     color: #44aeff;
     fill: #44aeff;
   }
 }
 
 @media (prefers-color-scheme:dark) {
-  .c6 {
-    color: white;
+  .c5 {
+    color: #ffffff;
   }
 }
 
@@ -208,7 +198,7 @@ exports[`<BlogRenderer /> should render correctly - index 1`] = `
 }
 
 @media (prefers-color-scheme:dark) {
-  .c5 {
+  .c4 {
     background-color: #121313;
   }
 }
@@ -248,39 +238,36 @@ exports[`<BlogRenderer /> should render correctly - index 1`] = `
         class="c4"
       >
         <div
-          class="c5"
-        />
-        <div
-          class="c6 c7"
+          class="c5 c6"
         >
           <h1
-            class="c8 c9"
+            class="c7 c8"
             id="copyright"
           >
             Copyright
           </h1>
           <span
-            class="c10"
+            class="c9"
           >
             Most of my photos are licensed under
              
             <a
               aria-label="Creative Commons BY-SA 3.0 (opens in a new tab)"
-              class="c11"
+              class="c10"
               href="https://creativecommons.org/licenses/by-sa/3.0/"
               rel="noopener noreferrer"
               target="_blank"
             >
               <span
-                class="c12"
+                class="c11"
               >
                 Creative Commons BY-SA 3.0
               </span>
               <div
-                class="c13"
+                class="c12"
               >
                 <svg
-                  class="c14 c15"
+                  class="c13 c14"
                   height="18"
                   viewBox="0 0 24 24"
                   width="18"
@@ -296,11 +283,11 @@ exports[`<BlogRenderer /> should render correctly - index 1`] = `
             <br />
             If you are unsure about your right to use them please 
             <a
-              class="c11"
+              class="c10"
               href="/contact"
             >
               <span
-                class="c12"
+                class="c11"
               >
                 contact me
               </span>
@@ -321,7 +308,7 @@ exports[`<BlogRenderer /> should render correctly with blog 1`] = `
   font-weight: bold;
 }
 
-.c16 {
+.c15 {
   margin: 0;
   font-size: 1.5rem;
   font-weight: bold;
@@ -343,8 +330,8 @@ exports[`<BlogRenderer /> should render correctly with blog 1`] = `
   -webkit-text-decoration: none;
   text-decoration: none;
   position: relative;
-  color: darkorchid;
-  fill: darkorchid;
+  color: #9932cc;
+  fill: #9932cc;
 }
 
 .c0:focus-within,
@@ -362,7 +349,7 @@ exports[`<BlogRenderer /> should render correctly with blog 1`] = `
   left: -0.35rem;
   content: '';
   display: block;
-  border: solid rgba(0,125,250,0.6) 0.2rem;
+  border: solid #007dfa3C 0.2rem;
   border-radius: 0.5rem;
   pointer-events: none;
 }
@@ -390,14 +377,14 @@ exports[`<BlogRenderer /> should render correctly with blog 1`] = `
   margin-left: -0.45rem;
 }
 
-.c14 {
+.c13 {
   width: 100%;
   color: #1e1e1e;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
-.c17 {
+.c16 {
   margin: 2.13rem 0 0 0;
 }
 
@@ -445,7 +432,6 @@ exports[`<BlogRenderer /> should render correctly with blog 1`] = `
 }
 
 .c12 {
-  position: relative;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -459,19 +445,10 @@ exports[`<BlogRenderer /> should render correctly with blog 1`] = `
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-}
-
-.c13 {
-  position: absolute;
-  top: 0;
-  left: calc(50% - 50vw);
-  z-index: -1;
-  width: 100vw;
-  height: 100%;
   background-color: #fbfbfb;
 }
 
-.c15 {
+.c14 {
   width: 100%;
   padding-right: 1.875rem;
   padding-left: 1.865rem;
@@ -481,14 +458,14 @@ exports[`<BlogRenderer /> should render correctly with blog 1`] = `
 @media (prefers-color-scheme:dark) {
   .c0:focus-within::after,
   .c0:focus::after {
-    border-color: rgba(0,125,250,0.6);
+    border-color: #007dfa3C;
   }
 }
 
 @media (prefers-color-scheme:dark) {
   .c0 {
-    color: orchid;
-    fill: orchid;
+    color: #da70d6;
+    fill: #da70d6;
   }
 
   .c0:hover {
@@ -498,19 +475,19 @@ exports[`<BlogRenderer /> should render correctly with blog 1`] = `
 }
 
 @media (prefers-color-scheme:dark) {
-  .c14 {
-    color: white;
+  .c13 {
+    color: #ffffff;
   }
 }
 
 @media (prefers-color-scheme:dark) {
   .c6 {
-    color: white;
+    color: #ffffff;
   }
 }
 
 @media (prefers-color-scheme:dark) {
-  .c13 {
+  .c12 {
     background-color: #121313;
   }
 }
@@ -623,13 +600,10 @@ exports[`<BlogRenderer /> should render correctly with blog 1`] = `
         class="c12"
       >
         <div
-          class="c13"
-        />
-        <div
-          class="c14 c15"
+          class="c13 c14"
         >
           <h1
-            class="c16 c17"
+            class="c15 c16"
             id="copyright"
           >
             Copyright
@@ -702,7 +676,7 @@ exports[`<BlogRenderer /> should render correctly with blog and admin 1`] = `
   font-weight: bold;
 }
 
-.c18 {
+.c17 {
   margin: 0;
   font-size: 1.5rem;
   font-weight: bold;
@@ -724,8 +698,8 @@ exports[`<BlogRenderer /> should render correctly with blog and admin 1`] = `
   -webkit-text-decoration: none;
   text-decoration: none;
   position: relative;
-  color: darkorchid;
-  fill: darkorchid;
+  color: #9932cc;
+  fill: #9932cc;
 }
 
 .c0:focus-within,
@@ -743,7 +717,7 @@ exports[`<BlogRenderer /> should render correctly with blog and admin 1`] = `
   left: -0.35rem;
   content: '';
   display: block;
-  border: solid rgba(0,125,250,0.6) 0.2rem;
+  border: solid #007dfa3C 0.2rem;
   border-radius: 0.5rem;
   pointer-events: none;
 }
@@ -782,7 +756,7 @@ exports[`<BlogRenderer /> should render correctly with blog and admin 1`] = `
   margin: 3.34rem 0 0 0;
 }
 
-.c19 {
+.c18 {
   margin: 2.13rem 0 0 0;
 }
 
@@ -830,7 +804,6 @@ exports[`<BlogRenderer /> should render correctly with blog and admin 1`] = `
 }
 
 .c15 {
-  position: relative;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -844,19 +817,10 @@ exports[`<BlogRenderer /> should render correctly with blog and admin 1`] = `
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-}
-
-.c16 {
-  position: absolute;
-  top: 0;
-  left: calc(50% - 50vw);
-  z-index: -1;
-  width: 100vw;
-  height: 100%;
   background-color: #fbfbfb;
 }
 
-.c17 {
+.c16 {
   width: 100%;
   padding-right: 1.875rem;
   padding-left: 1.865rem;
@@ -866,14 +830,14 @@ exports[`<BlogRenderer /> should render correctly with blog and admin 1`] = `
 @media (prefers-color-scheme:dark) {
   .c0:focus-within::after,
   .c0:focus::after {
-    border-color: rgba(0,125,250,0.6);
+    border-color: #007dfa3C;
   }
 }
 
 @media (prefers-color-scheme:dark) {
   .c0 {
-    color: orchid;
-    fill: orchid;
+    color: #da70d6;
+    fill: #da70d6;
   }
 
   .c0:hover {
@@ -884,18 +848,18 @@ exports[`<BlogRenderer /> should render correctly with blog and admin 1`] = `
 
 @media (prefers-color-scheme:dark) {
   .c12 {
-    color: white;
+    color: #ffffff;
   }
 }
 
 @media (prefers-color-scheme:dark) {
   .c6 {
-    color: white;
+    color: #ffffff;
   }
 }
 
 @media (prefers-color-scheme:dark) {
-  .c16 {
+  .c15 {
     background-color: #121313;
   }
 }
@@ -1021,13 +985,10 @@ exports[`<BlogRenderer /> should render correctly with blog and admin 1`] = `
         class="c15"
       >
         <div
-          class="c16"
-        />
-        <div
-          class="c12 c17"
+          class="c12 c16"
         >
           <h1
-            class="c18 c19"
+            class="c17 c18"
             id="copyright"
           >
             Copyright
@@ -1094,34 +1055,34 @@ exports[`<BlogRenderer /> should render correctly with blog load error 1`] = `
   font-weight: bold;
 }
 
-.c13 {
+.c12 {
   margin: 0;
 }
 
-.c15 {
+.c14 {
   width: 1.25rem;
   height: 1.25rem;
 }
 
-.c12 {
+.c11 {
   display: inline-block;
   border-radius: 0.25rem;
   font-weight: bold;
   -webkit-text-decoration: none;
   text-decoration: none;
   position: relative;
-  color: darkorchid;
-  fill: darkorchid;
+  color: #9932cc;
+  fill: #9932cc;
 }
 
-.c12:focus-within,
-.c12:focus {
+.c11:focus-within,
+.c11:focus {
   position: relative;
   outline: none !important;
 }
 
-.c12:focus-within::after,
-.c12:focus::after {
+.c11:focus-within::after,
+.c11:focus::after {
   position: absolute;
   top: -0.35rem;
   right: -0.35rem;
@@ -1129,17 +1090,17 @@ exports[`<BlogRenderer /> should render correctly with blog load error 1`] = `
   left: -0.35rem;
   content: '';
   display: block;
-  border: solid rgba(0,125,250,0.6) 0.2rem;
+  border: solid #007dfa3C 0.2rem;
   border-radius: 0.5rem;
   pointer-events: none;
 }
 
-.c12:hover {
+.c11:hover {
   color: #44aeff;
   fill: #44aeff;
 }
 
-.c14 {
+.c13 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -1149,7 +1110,7 @@ exports[`<BlogRenderer /> should render correctly with blog load error 1`] = `
   margin-left: 0.55rem;
 }
 
-.c16 {
+.c15 {
   position: absolute;
   width: 1rem;
   height: 1rem;
@@ -1168,7 +1129,7 @@ exports[`<BlogRenderer /> should render correctly with blog load error 1`] = `
   margin: 0;
 }
 
-.c11 {
+.c10 {
   margin: 2.13rem 0 0 0;
 }
 
@@ -1222,7 +1183,6 @@ exports[`<BlogRenderer /> should render correctly with blog load error 1`] = `
 }
 
 .c8 {
-  position: relative;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1236,19 +1196,10 @@ exports[`<BlogRenderer /> should render correctly with blog load error 1`] = `
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-}
-
-.c9 {
-  position: absolute;
-  top: 0;
-  left: calc(50% - 50vw);
-  z-index: -1;
-  width: 100vw;
-  height: 100%;
   background-color: #fbfbfb;
 }
 
-.c10 {
+.c9 {
   width: 100%;
   padding-right: 1.875rem;
   padding-left: 1.865rem;
@@ -1256,19 +1207,19 @@ exports[`<BlogRenderer /> should render correctly with blog load error 1`] = `
 }
 
 @media (prefers-color-scheme:dark) {
-  .c12:focus-within::after,
-  .c12:focus::after {
-    border-color: rgba(0,125,250,0.6);
+  .c11:focus-within::after,
+  .c11:focus::after {
+    border-color: #007dfa3C;
   }
 }
 
 @media (prefers-color-scheme:dark) {
-  .c12 {
-    color: orchid;
-    fill: orchid;
+  .c11 {
+    color: #da70d6;
+    fill: #da70d6;
   }
 
-  .c12:hover {
+  .c11:hover {
     color: #44aeff;
     fill: #44aeff;
   }
@@ -1276,7 +1227,7 @@ exports[`<BlogRenderer /> should render correctly with blog load error 1`] = `
 
 @media (prefers-color-scheme:dark) {
   .c5 {
-    color: white;
+    color: #ffffff;
   }
 }
 
@@ -1299,7 +1250,7 @@ exports[`<BlogRenderer /> should render correctly with blog load error 1`] = `
 }
 
 @media (prefers-color-scheme:dark) {
-  .c9 {
+  .c8 {
     background-color: #121313;
   }
 }
@@ -1360,333 +1311,16 @@ exports[`<BlogRenderer /> should render correctly with blog load error 1`] = `
         class="c8"
       >
         <div
-          class="c9"
-        />
-        <div
-          class="c5 c10"
+          class="c5 c9"
         >
           <h1
-            class="c6 c11"
+            class="c6 c10"
             id="copyright"
           >
             Copyright
           </h1>
           <span
             class="c0"
-          >
-            Most of my photos are licensed under
-             
-            <a
-              aria-label="Creative Commons BY-SA 3.0 (opens in a new tab)"
-              class="c12"
-              href="https://creativecommons.org/licenses/by-sa/3.0/"
-              rel="noopener noreferrer"
-              target="_blank"
-            >
-              <span
-                class="c13"
-              >
-                Creative Commons BY-SA 3.0
-              </span>
-              <div
-                class="c14"
-              >
-                <svg
-                  class="c15 c16"
-                  height="18"
-                  viewBox="0 0 24 24"
-                  width="18"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M12.5 11.3c.4.4 1 .4 1.4 0L19 6.2V9c0 .6.4 1 1 1s1-.4 1-1V4c0-.6-.4-1-1-1h-5c-.6 0-1 .4-1 1s.4 1 1 1h2.4l-4.9 4.9c-.4.4-.4 1 0 1.4zM19 19c0 1.1-.9 2-2 2H5c-1.1 0-2-.9-2-2V7c0-1.1.9-2 2-2h7v2H5v12h12v-7h2"
-                  />
-                </svg>
-              </div>
-            </a>
-            .
-            <br />
-            If you are unsure about your right to use them please 
-            <a
-              class="c12"
-              href="/contact"
-            >
-              <span
-                class="c13"
-              >
-                contact me
-              </span>
-            </a>
-            .
-          </span>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-`;
-
-exports[`<BlogRenderer /> should render correctly with initial state 1`] = `
-.c8 {
-  margin: 0;
-  font-size: 1.5rem;
-  font-weight: bold;
-}
-
-.c12 {
-  margin: 0;
-}
-
-.c14 {
-  width: 1.25rem;
-  height: 1.25rem;
-}
-
-.c11 {
-  display: inline-block;
-  border-radius: 0.25rem;
-  font-weight: bold;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  position: relative;
-  color: darkorchid;
-  fill: darkorchid;
-}
-
-.c11:focus-within,
-.c11:focus {
-  position: relative;
-  outline: none !important;
-}
-
-.c11:focus-within::after,
-.c11:focus::after {
-  position: absolute;
-  top: -0.35rem;
-  right: -0.35rem;
-  bottom: -0.35rem;
-  left: -0.35rem;
-  content: '';
-  display: block;
-  border: solid rgba(0,125,250,0.6) 0.2rem;
-  border-radius: 0.5rem;
-  pointer-events: none;
-}
-
-.c11:hover {
-  color: #44aeff;
-  fill: #44aeff;
-}
-
-.c13 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  width: 0.4rem;
-  height: 1rem;
-  margin-left: 0.55rem;
-}
-
-.c15 {
-  position: absolute;
-  width: 1rem;
-  height: 1rem;
-  margin-top: 0.12rem;
-  margin-left: -0.45rem;
-}
-
-.c6 {
-  width: 100%;
-  color: #1e1e1e;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-}
-
-.c9 {
-  margin: 2.13rem 0 0 0;
-}
-
-.c0 {
-  position: relative;
-  width: 100%;
-  border-radius: 0.25rem;
-  background-color: rgb(238,238,238);
-  overflow: hidden;
-  width: 8rem;
-  height: 2.2rem;
-  margin-top: 3.34rem;
-}
-
-.c2 {
-  position: relative;
-  width: 100%;
-  border-radius: 0.25rem;
-  background-color: rgb(238,238,238);
-  overflow: hidden;
-}
-
-.c1 {
-  position: absolute;
-  top: 0;
-  width: 13rem;
-  height: 100vh;
-  background-image: linear-gradient( 90deg, rgb(238,238,238), rgb(245,245,245), rgb(238,238,238) );
-  background-repeat: no-repeat;
-  background-size: 12.5rem 100%;
-  -webkit-animation: sjjMW 3.5s ease-in-out infinite;
-  animation: sjjMW 3.5s ease-in-out infinite;
-}
-
-.c10 {
-  display: inline-block;
-  margin-bottom: 0;
-  padding-bottom: 0;
-  line-height: 1.5;
-  margin-top: 2rem;
-}
-
-.c10:first-of-type {
-  margin-top: 0.86rem;
-}
-
-.c3 {
-  width: 100%;
-  height: 50rem;
-  margin-top: 2rem;
-}
-
-.c4 {
-  position: relative;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  width: 100%;
-  margin-top: 2rem;
-  margin-left: 0;
-  padding-top: 1rem;
-  padding-bottom: 2rem;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-}
-
-.c5 {
-  position: absolute;
-  top: 0;
-  left: calc(50% - 50vw);
-  z-index: -1;
-  width: 100vw;
-  height: 100%;
-  background-color: #fbfbfb;
-}
-
-.c7 {
-  width: 100%;
-  padding-right: 1.875rem;
-  padding-left: 1.865rem;
-  text-align: center;
-}
-
-@media (prefers-color-scheme:dark) {
-  .c11:focus-within::after,
-  .c11:focus::after {
-    border-color: rgba(0,125,250,0.6);
-  }
-}
-
-@media (prefers-color-scheme:dark) {
-  .c11 {
-    color: orchid;
-    fill: orchid;
-  }
-
-  .c11:hover {
-    color: #44aeff;
-    fill: #44aeff;
-  }
-}
-
-@media (prefers-color-scheme:dark) {
-  .c6 {
-    color: white;
-  }
-}
-
-@media (prefers-color-scheme:dark) {
-  .c0 {
-    background-color: rgb(17,17,17);
-  }
-}
-
-@media (prefers-color-scheme:dark) {
-  .c2 {
-    background-color: rgb(17,17,17);
-  }
-}
-
-@media (prefers-color-scheme:dark) {
-  .c1 {
-    background-image: linear-gradient( 90deg, rgb(17,17,17), rgb(50,50,50), rgb(17,17,17) );
-  }
-}
-
-@media (prefers-color-scheme:dark) {
-  .c5 {
-    background-color: #121313;
-  }
-}
-
-<div>
-  <div
-    class="page-containerstyles__StyledPageContainer-sc-19l7k4-0"
-    width="prose"
-  >
-    <div
-      class="c0"
-    >
-      <div
-        class="c1"
-        style="margin-left: -0px;"
-      />
-    </div>
-    <div
-      class="c2 c3"
-    >
-      <div
-        class="c1"
-        style="margin-left: -0px;"
-      />
-    </div>
-  </div>
-  <div>
-    <style>
-      .js .animated-content__wrapper--hidden {
-  opacity: 0.01;
-}
-    </style>
-    <div
-      class="animated-content__wrapper--hidden"
-    >
-      <div
-        class="c4"
-      >
-        <div
-          class="c5"
-        />
-        <div
-          class="c6 c7"
-        >
-          <h1
-            class="c8 c9"
-            id="copyright"
-          >
-            Copyright
-          </h1>
-          <span
-            class="c10"
           >
             Most of my photos are licensed under
              
@@ -1740,6 +1374,307 @@ exports[`<BlogRenderer /> should render correctly with initial state 1`] = `
 </div>
 `;
 
+exports[`<BlogRenderer /> should render correctly with initial state 1`] = `
+.c7 {
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.c11 {
+  margin: 0;
+}
+
+.c13 {
+  width: 1.25rem;
+  height: 1.25rem;
+}
+
+.c10 {
+  display: inline-block;
+  border-radius: 0.25rem;
+  font-weight: bold;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  position: relative;
+  color: #9932cc;
+  fill: #9932cc;
+}
+
+.c10:focus-within,
+.c10:focus {
+  position: relative;
+  outline: none !important;
+}
+
+.c10:focus-within::after,
+.c10:focus::after {
+  position: absolute;
+  top: -0.35rem;
+  right: -0.35rem;
+  bottom: -0.35rem;
+  left: -0.35rem;
+  content: '';
+  display: block;
+  border: solid #007dfa3C 0.2rem;
+  border-radius: 0.5rem;
+  pointer-events: none;
+}
+
+.c10:hover {
+  color: #44aeff;
+  fill: #44aeff;
+}
+
+.c12 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  width: 0.4rem;
+  height: 1rem;
+  margin-left: 0.55rem;
+}
+
+.c14 {
+  position: absolute;
+  width: 1rem;
+  height: 1rem;
+  margin-top: 0.12rem;
+  margin-left: -0.45rem;
+}
+
+.c5 {
+  width: 100%;
+  color: #1e1e1e;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c8 {
+  margin: 2.13rem 0 0 0;
+}
+
+.c0 {
+  position: relative;
+  width: 100%;
+  border-radius: 0.25rem;
+  background-color: rgb(238,238,238);
+  overflow: hidden;
+  width: 8rem;
+  height: 2.2rem;
+  margin-top: 3.34rem;
+}
+
+.c2 {
+  position: relative;
+  width: 100%;
+  border-radius: 0.25rem;
+  background-color: rgb(238,238,238);
+  overflow: hidden;
+}
+
+.c1 {
+  position: absolute;
+  top: 0;
+  width: 13rem;
+  height: 100vh;
+  background-image: linear-gradient( 90deg, rgb(238,238,238), rgb(245,245,245), rgb(238,238,238) );
+  background-repeat: no-repeat;
+  background-size: 12.5rem 100%;
+  -webkit-animation: sjjMW 3.5s ease-in-out infinite;
+  animation: sjjMW 3.5s ease-in-out infinite;
+}
+
+.c9 {
+  display: inline-block;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  line-height: 1.5;
+  margin-top: 2rem;
+}
+
+.c9:first-of-type {
+  margin-top: 0.86rem;
+}
+
+.c3 {
+  width: 100%;
+  height: 50rem;
+  margin-top: 2rem;
+}
+
+.c4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  margin-top: 2rem;
+  margin-left: 0;
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  background-color: #fbfbfb;
+}
+
+.c6 {
+  width: 100%;
+  padding-right: 1.875rem;
+  padding-left: 1.865rem;
+  text-align: center;
+}
+
+@media (prefers-color-scheme:dark) {
+  .c10:focus-within::after,
+  .c10:focus::after {
+    border-color: #007dfa3C;
+  }
+}
+
+@media (prefers-color-scheme:dark) {
+  .c10 {
+    color: #da70d6;
+    fill: #da70d6;
+  }
+
+  .c10:hover {
+    color: #44aeff;
+    fill: #44aeff;
+  }
+}
+
+@media (prefers-color-scheme:dark) {
+  .c5 {
+    color: #ffffff;
+  }
+}
+
+@media (prefers-color-scheme:dark) {
+  .c0 {
+    background-color: rgb(17,17,17);
+  }
+}
+
+@media (prefers-color-scheme:dark) {
+  .c2 {
+    background-color: rgb(17,17,17);
+  }
+}
+
+@media (prefers-color-scheme:dark) {
+  .c1 {
+    background-image: linear-gradient( 90deg, rgb(17,17,17), rgb(50,50,50), rgb(17,17,17) );
+  }
+}
+
+@media (prefers-color-scheme:dark) {
+  .c4 {
+    background-color: #121313;
+  }
+}
+
+<div>
+  <div
+    class="page-containerstyles__StyledPageContainer-sc-19l7k4-0"
+    width="prose"
+  >
+    <div
+      class="c0"
+    >
+      <div
+        class="c1"
+        style="margin-left: -0px;"
+      />
+    </div>
+    <div
+      class="c2 c3"
+    >
+      <div
+        class="c1"
+        style="margin-left: -0px;"
+      />
+    </div>
+  </div>
+  <div>
+    <style>
+      .js .animated-content__wrapper--hidden {
+  opacity: 0.01;
+}
+    </style>
+    <div
+      class="animated-content__wrapper--hidden"
+    >
+      <div
+        class="c4"
+      >
+        <div
+          class="c5 c6"
+        >
+          <h1
+            class="c7 c8"
+            id="copyright"
+          >
+            Copyright
+          </h1>
+          <span
+            class="c9"
+          >
+            Most of my photos are licensed under
+             
+            <a
+              aria-label="Creative Commons BY-SA 3.0 (opens in a new tab)"
+              class="c10"
+              href="https://creativecommons.org/licenses/by-sa/3.0/"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              <span
+                class="c11"
+              >
+                Creative Commons BY-SA 3.0
+              </span>
+              <div
+                class="c12"
+              >
+                <svg
+                  class="c13 c14"
+                  height="18"
+                  viewBox="0 0 24 24"
+                  width="18"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M12.5 11.3c.4.4 1 .4 1.4 0L19 6.2V9c0 .6.4 1 1 1s1-.4 1-1V4c0-.6-.4-1-1-1h-5c-.6 0-1 .4-1 1s.4 1 1 1h2.4l-4.9 4.9c-.4.4-.4 1 0 1.4zM19 19c0 1.1-.9 2-2 2H5c-1.1 0-2-.9-2-2V7c0-1.1.9-2 2-2h7v2H5v12h12v-7h2"
+                  />
+                </svg>
+              </div>
+            </a>
+            .
+            <br />
+            If you are unsure about your right to use them please 
+            <a
+              class="c10"
+              href="/contact"
+            >
+              <span
+                class="c11"
+              >
+                contact me
+              </span>
+            </a>
+            .
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
 exports[`<BlogRenderer /> should render correctly with ssrBlog 1`] = `
 .c2 {
   margin: 0;
@@ -1747,7 +1682,7 @@ exports[`<BlogRenderer /> should render correctly with ssrBlog 1`] = `
   font-weight: bold;
 }
 
-.c16 {
+.c15 {
   margin: 0;
   font-size: 1.5rem;
   font-weight: bold;
@@ -1769,8 +1704,8 @@ exports[`<BlogRenderer /> should render correctly with ssrBlog 1`] = `
   -webkit-text-decoration: none;
   text-decoration: none;
   position: relative;
-  color: darkorchid;
-  fill: darkorchid;
+  color: #9932cc;
+  fill: #9932cc;
 }
 
 .c0:focus-within,
@@ -1788,7 +1723,7 @@ exports[`<BlogRenderer /> should render correctly with ssrBlog 1`] = `
   left: -0.35rem;
   content: '';
   display: block;
-  border: solid rgba(0,125,250,0.6) 0.2rem;
+  border: solid #007dfa3C 0.2rem;
   border-radius: 0.5rem;
   pointer-events: none;
 }
@@ -1816,14 +1751,14 @@ exports[`<BlogRenderer /> should render correctly with ssrBlog 1`] = `
   margin-left: -0.45rem;
 }
 
-.c14 {
+.c13 {
   width: 100%;
   color: #1e1e1e;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
-.c17 {
+.c16 {
   margin: 2.13rem 0 0 0;
 }
 
@@ -1871,7 +1806,6 @@ exports[`<BlogRenderer /> should render correctly with ssrBlog 1`] = `
 }
 
 .c12 {
-  position: relative;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1885,19 +1819,10 @@ exports[`<BlogRenderer /> should render correctly with ssrBlog 1`] = `
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-}
-
-.c13 {
-  position: absolute;
-  top: 0;
-  left: calc(50% - 50vw);
-  z-index: -1;
-  width: 100vw;
-  height: 100%;
   background-color: #fbfbfb;
 }
 
-.c15 {
+.c14 {
   width: 100%;
   padding-right: 1.875rem;
   padding-left: 1.865rem;
@@ -1907,14 +1832,14 @@ exports[`<BlogRenderer /> should render correctly with ssrBlog 1`] = `
 @media (prefers-color-scheme:dark) {
   .c0:focus-within::after,
   .c0:focus::after {
-    border-color: rgba(0,125,250,0.6);
+    border-color: #007dfa3C;
   }
 }
 
 @media (prefers-color-scheme:dark) {
   .c0 {
-    color: orchid;
-    fill: orchid;
+    color: #da70d6;
+    fill: #da70d6;
   }
 
   .c0:hover {
@@ -1924,19 +1849,19 @@ exports[`<BlogRenderer /> should render correctly with ssrBlog 1`] = `
 }
 
 @media (prefers-color-scheme:dark) {
-  .c14 {
-    color: white;
+  .c13 {
+    color: #ffffff;
   }
 }
 
 @media (prefers-color-scheme:dark) {
   .c6 {
-    color: white;
+    color: #ffffff;
   }
 }
 
 @media (prefers-color-scheme:dark) {
-  .c13 {
+  .c12 {
     background-color: #121313;
   }
 }
@@ -2049,13 +1974,10 @@ exports[`<BlogRenderer /> should render correctly with ssrBlog 1`] = `
         class="c12"
       >
         <div
-          class="c13"
-        />
-        <div
-          class="c14 c15"
+          class="c13 c14"
         >
           <h1
-            class="c16 c17"
+            class="c15 c16"
             id="copyright"
           >
             Copyright

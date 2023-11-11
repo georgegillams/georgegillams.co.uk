@@ -8,7 +8,7 @@ exports[`<NavigationItem /> Should render correctly 1`] = `
   width: 100%;
   -webkit-text-decoration: none;
   text-decoration: none;
-  box-shadow: 0.2rem 0.2rem 0.5rem 0 rgba(37,32,31,0.3);
+  box-shadow: 0.2rem 0.2rem 0.5rem 0 #25201f1E;
   cursor: pointer;
   box-sizing: border-box;
   padding: 0;
@@ -26,7 +26,7 @@ exports[`<NavigationItem /> Should render correctly 1`] = `
 
 .c0:not(:disabled):focus,.c0:not(:disabled):focus-within,
 .c0:not(:disabled):active,.c0:not(:disabled):hover {
-  box-shadow: 0.4rem 0.4rem 1rem 0 rgba(37,32,31,0.3);
+  box-shadow: 0.4rem 0.4rem 1rem 0 #25201f1E;
 }
 
 .c2 {
@@ -46,7 +46,7 @@ exports[`<NavigationItem /> Should render correctly 1`] = `
   height: calc(100% + 2rem);
   margin-top: -1rem;
   margin-left: -1rem;
-  background-color: white;
+  background-color: #ffffff;
   background-position: center;
   background-size: cover;
 }
@@ -132,14 +132,14 @@ exports[`<NavigationItem /> Should render correctly 1`] = `
 
 @media (prefers-color-scheme:dark) {
   .c0 {
-    box-shadow: 0.44rem 0.44rem 1rem 0 transparent;
+    box-shadow: 0.44rem 0.44rem 1rem 0 #00000000;
   }
 }
 
 @media (prefers-color-scheme:dark) {
   .c0:not(:disabled):focus,.c0:not(:disabled):focus-within,
   .c0:not(:disabled):active,.c0:not(:disabled):hover {
-    box-shadow: 0.2rem 0.2rem 0.5rem 0 transparent;
+    box-shadow: 0.2rem 0.2rem 0.5rem 0 #00000000;
   }
 }
 
@@ -151,7 +151,7 @@ exports[`<NavigationItem /> Should render correctly 1`] = `
 
 @media (prefers-color-scheme:dark) {
   .c1 {
-    color: white;
+    color: #ffffff;
   }
 }
 
@@ -236,7 +236,7 @@ exports[`<NavigationItem /> Should render correctly hrefExternal 1`] = `
   width: 100%;
   -webkit-text-decoration: none;
   text-decoration: none;
-  box-shadow: 0.2rem 0.2rem 0.5rem 0 rgba(37,32,31,0.3);
+  box-shadow: 0.2rem 0.2rem 0.5rem 0 #25201f1E;
   cursor: pointer;
   box-sizing: border-box;
   padding: 0;
@@ -254,7 +254,7 @@ exports[`<NavigationItem /> Should render correctly hrefExternal 1`] = `
 
 .c0:not(:disabled):focus,.c0:not(:disabled):focus-within,
 .c0:not(:disabled):active,.c0:not(:disabled):hover {
-  box-shadow: 0.4rem 0.4rem 1rem 0 rgba(37,32,31,0.3);
+  box-shadow: 0.4rem 0.4rem 1rem 0 #25201f1E;
 }
 
 .c2 {
@@ -274,7 +274,7 @@ exports[`<NavigationItem /> Should render correctly hrefExternal 1`] = `
   height: calc(100% + 2rem);
   margin-top: -1rem;
   margin-left: -1rem;
-  background-color: white;
+  background-color: #ffffff;
   background-position: center;
   background-size: cover;
 }
@@ -360,14 +360,14 @@ exports[`<NavigationItem /> Should render correctly hrefExternal 1`] = `
 
 @media (prefers-color-scheme:dark) {
   .c0 {
-    box-shadow: 0.44rem 0.44rem 1rem 0 transparent;
+    box-shadow: 0.44rem 0.44rem 1rem 0 #00000000;
   }
 }
 
 @media (prefers-color-scheme:dark) {
   .c0:not(:disabled):focus,.c0:not(:disabled):focus-within,
   .c0:not(:disabled):active,.c0:not(:disabled):hover {
-    box-shadow: 0.2rem 0.2rem 0.5rem 0 transparent;
+    box-shadow: 0.2rem 0.2rem 0.5rem 0 #00000000;
   }
 }
 
@@ -379,7 +379,7 @@ exports[`<NavigationItem /> Should render correctly hrefExternal 1`] = `
 
 @media (prefers-color-scheme:dark) {
   .c1 {
-    color: white;
+    color: #ffffff;
   }
 }
 
@@ -464,7 +464,7 @@ exports[`<NavigationItem /> Should render correctly with custom className 1`] = 
   width: 100%;
   -webkit-text-decoration: none;
   text-decoration: none;
-  box-shadow: 0.2rem 0.2rem 0.5rem 0 rgba(37,32,31,0.3);
+  box-shadow: 0.2rem 0.2rem 0.5rem 0 #25201f1E;
   cursor: pointer;
   box-sizing: border-box;
   padding: 0;
@@ -482,7 +482,7 @@ exports[`<NavigationItem /> Should render correctly with custom className 1`] = 
 
 .c0:not(:disabled):focus,.c0:not(:disabled):focus-within,
 .c0:not(:disabled):active,.c0:not(:disabled):hover {
-  box-shadow: 0.4rem 0.4rem 1rem 0 rgba(37,32,31,0.3);
+  box-shadow: 0.4rem 0.4rem 1rem 0 #25201f1E;
 }
 
 .c2 {
@@ -502,7 +502,7 @@ exports[`<NavigationItem /> Should render correctly with custom className 1`] = 
   height: calc(100% + 2rem);
   margin-top: -1rem;
   margin-left: -1rem;
-  background-color: white;
+  background-color: #ffffff;
   background-position: center;
   background-size: cover;
 }
@@ -588,14 +588,14 @@ exports[`<NavigationItem /> Should render correctly with custom className 1`] = 
 
 @media (prefers-color-scheme:dark) {
   .c0 {
-    box-shadow: 0.44rem 0.44rem 1rem 0 transparent;
+    box-shadow: 0.44rem 0.44rem 1rem 0 #00000000;
   }
 }
 
 @media (prefers-color-scheme:dark) {
   .c0:not(:disabled):focus,.c0:not(:disabled):focus-within,
   .c0:not(:disabled):active,.c0:not(:disabled):hover {
-    box-shadow: 0.2rem 0.2rem 0.5rem 0 transparent;
+    box-shadow: 0.2rem 0.2rem 0.5rem 0 #00000000;
   }
 }
 
@@ -607,7 +607,7 @@ exports[`<NavigationItem /> Should render correctly with custom className 1`] = 
 
 @media (prefers-color-scheme:dark) {
   .c1 {
-    color: white;
+    color: #ffffff;
   }
 }
 
@@ -692,7 +692,7 @@ exports[`<NavigationItem /> Should render with nextified href 1`] = `
   width: 100%;
   -webkit-text-decoration: none;
   text-decoration: none;
-  box-shadow: 0.2rem 0.2rem 0.5rem 0 rgba(37,32,31,0.3);
+  box-shadow: 0.2rem 0.2rem 0.5rem 0 #25201f1E;
   cursor: pointer;
   box-sizing: border-box;
   padding: 0;
@@ -710,7 +710,7 @@ exports[`<NavigationItem /> Should render with nextified href 1`] = `
 
 .c0:not(:disabled):focus,.c0:not(:disabled):focus-within,
 .c0:not(:disabled):active,.c0:not(:disabled):hover {
-  box-shadow: 0.4rem 0.4rem 1rem 0 rgba(37,32,31,0.3);
+  box-shadow: 0.4rem 0.4rem 1rem 0 #25201f1E;
 }
 
 .c2 {
@@ -730,7 +730,7 @@ exports[`<NavigationItem /> Should render with nextified href 1`] = `
   height: calc(100% + 2rem);
   margin-top: -1rem;
   margin-left: -1rem;
-  background-color: white;
+  background-color: #ffffff;
   background-position: center;
   background-size: cover;
 }
@@ -816,14 +816,14 @@ exports[`<NavigationItem /> Should render with nextified href 1`] = `
 
 @media (prefers-color-scheme:dark) {
   .c0 {
-    box-shadow: 0.44rem 0.44rem 1rem 0 transparent;
+    box-shadow: 0.44rem 0.44rem 1rem 0 #00000000;
   }
 }
 
 @media (prefers-color-scheme:dark) {
   .c0:not(:disabled):focus,.c0:not(:disabled):focus-within,
   .c0:not(:disabled):active,.c0:not(:disabled):hover {
-    box-shadow: 0.2rem 0.2rem 0.5rem 0 transparent;
+    box-shadow: 0.2rem 0.2rem 0.5rem 0 #00000000;
   }
 }
 
@@ -835,7 +835,7 @@ exports[`<NavigationItem /> Should render with nextified href 1`] = `
 
 @media (prefers-color-scheme:dark) {
   .c1 {
-    color: white;
+    color: #ffffff;
   }
 }
 

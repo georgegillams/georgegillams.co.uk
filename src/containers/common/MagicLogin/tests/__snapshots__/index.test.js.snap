@@ -264,7 +264,7 @@ exports[`<MagicLogin /> should render correctly - index 1`] = `
 
 @media (prefers-color-scheme:dark) {
   .c4 {
-    color: white;
+    color: #ffffff;
   }
 }
 
@@ -585,7 +585,7 @@ exports[`<MagicLogin /> should render correctly with initial state 1`] = `
 
 @media (prefers-color-scheme:dark) {
   .c4 {
-    color: white;
+    color: #ffffff;
   }
 }
 
@@ -650,8 +650,8 @@ exports[`<MagicLogin /> should render correctly with logInError 1`] = `
   -webkit-text-decoration: none;
   text-decoration: none;
   position: relative;
-  color: darkorchid;
-  fill: darkorchid;
+  color: #9932cc;
+  fill: #9932cc;
 }
 
 .c15:focus-within,
@@ -669,7 +669,7 @@ exports[`<MagicLogin /> should render correctly with logInError 1`] = `
   left: -0.35rem;
   content: '';
   display: block;
-  border: solid rgba(0,125,250,0.6) 0.2rem;
+  border: solid #007dfa3C 0.2rem;
   border-radius: 0.5rem;
   pointer-events: none;
 }
@@ -964,14 +964,14 @@ exports[`<MagicLogin /> should render correctly with logInError 1`] = `
 @media (prefers-color-scheme:dark) {
   .c15:focus-within::after,
   .c15:focus::after {
-    border-color: rgba(0,125,250,0.6);
+    border-color: #007dfa3C;
   }
 }
 
 @media (prefers-color-scheme:dark) {
   .c15 {
-    color: orchid;
-    fill: orchid;
+    color: #da70d6;
+    fill: #da70d6;
   }
 
   .c15:hover {
@@ -989,7 +989,7 @@ exports[`<MagicLogin /> should render correctly with logInError 1`] = `
 
 @media (prefers-color-scheme:dark) {
   .c4 {
-    color: white;
+    color: #ffffff;
   }
 }
 
@@ -1332,7 +1332,7 @@ exports[`<MagicLogin /> should render correctly with loggingIn=true 1`] = `
 
 @media (prefers-color-scheme:dark) {
   .c4 {
-    color: white;
+    color: #ffffff;
   }
 }
 
@@ -1397,8 +1397,8 @@ exports[`<MagicLogin /> should render correctly with user 1`] = `
   -webkit-text-decoration: none;
   text-decoration: none;
   position: relative;
-  color: darkorchid;
-  fill: darkorchid;
+  color: #9932cc;
+  fill: #9932cc;
 }
 
 .c5:focus-within,
@@ -1416,7 +1416,7 @@ exports[`<MagicLogin /> should render correctly with user 1`] = `
   left: -0.35rem;
   content: '';
   display: block;
-  border: solid rgba(0,125,250,0.6) 0.2rem;
+  border: solid #007dfa3C 0.2rem;
   border-radius: 0.5rem;
   pointer-events: none;
 }
@@ -1706,14 +1706,14 @@ exports[`<MagicLogin /> should render correctly with user 1`] = `
 @media (prefers-color-scheme:dark) {
   .c5:focus-within::after,
   .c5:focus::after {
-    border-color: rgba(0,125,250,0.6);
+    border-color: #007dfa3C;
   }
 }
 
 @media (prefers-color-scheme:dark) {
   .c5 {
-    color: orchid;
-    fill: orchid;
+    color: #da70d6;
+    fill: #da70d6;
   }
 
   .c5:hover {
@@ -1724,7 +1724,7 @@ exports[`<MagicLogin /> should render correctly with user 1`] = `
 
 @media (prefers-color-scheme:dark) {
   .c7 {
-    color: white;
+    color: #ffffff;
   }
 }
 

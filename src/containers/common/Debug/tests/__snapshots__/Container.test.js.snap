@@ -31,7 +31,7 @@ exports[`<Debug /> should render correctly 1`] = `
   height: 100%;
   margin: 0;
   border-radius: 0.2rem;
-  background: white;
+  background: #ffffff;
   box-shadow: 0 0 0 1px #cdcdd7 inset;
   cursor: pointer;
   -webkit-appearance: none;
@@ -55,7 +55,7 @@ exports[`<Debug /> should render correctly 1`] = `
   left: -0.35rem;
   content: '';
   display: block;
-  border: solid rgba(0,125,250,0.6) 0.2rem;
+  border: solid #007dfa3C 0.2rem;
   border-radius: 0.5rem;
   pointer-events: none;
 }
@@ -140,20 +140,20 @@ exports[`<Debug /> should render correctly 1`] = `
 @media (prefers-color-scheme:dark) {
   .c8:focus-within::after,
   .c8:focus::after {
-    border-color: rgba(0,125,250,0.6);
+    border-color: #007dfa3C;
   }
 }
 
 @media (prefers-color-scheme:dark) {
   .c8 {
-    background: black;
+    background: #000000;
   }
 }
 
 @media (prefers-color-scheme:dark) {
   .c10 {
-    color: white;
-    fill: white;
+    color: #ffffff;
+    fill: #ffffff;
   }
 }
 
@@ -163,7 +163,7 @@ exports[`<Debug /> should render correctly 1`] = `
 
 @media (prefers-color-scheme:dark) {
   .c11 {
-    color: white;
+    color: #ffffff;
   }
 }
 

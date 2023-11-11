@@ -42,7 +42,7 @@ exports[`<Logo /> Should render correctly 1`] = `
   left: -0.35rem;
   content: '';
   display: block;
-  border: solid rgba(0,125,250,0.6) 0.2rem;
+  border: solid #007dfa3C 0.2rem;
   border-radius: 0.5rem;
   pointer-events: none;
 }
@@ -82,7 +82,7 @@ exports[`<Logo /> Should render correctly 1`] = `
 @media (prefers-color-scheme:dark) {
   .c1:focus-within::after,
   .c1:focus::after {
-    border-color: rgba(0,125,250,0.6);
+    border-color: #007dfa3C;
   }
 }
 
@@ -94,7 +94,7 @@ exports[`<Logo /> Should render correctly 1`] = `
 
 @media (prefers-color-scheme:dark) {
   .c2 {
-    color: white;
+    color: #ffffff;
   }
 }
 
@@ -159,7 +159,7 @@ exports[`<Logo /> Should render correctly animated 1`] = `
   left: -0.35rem;
   content: '';
   display: block;
-  border: solid rgba(0,125,250,0.6) 0.2rem;
+  border: solid #007dfa3C 0.2rem;
   border-radius: 0.5rem;
   pointer-events: none;
 }
@@ -199,7 +199,7 @@ exports[`<Logo /> Should render correctly animated 1`] = `
 @media (prefers-color-scheme:dark) {
   .c1:focus-within::after,
   .c1:focus::after {
-    border-color: rgba(0,125,250,0.6);
+    border-color: #007dfa3C;
   }
 }
 
@@ -211,7 +211,7 @@ exports[`<Logo /> Should render correctly animated 1`] = `
 
 @media (prefers-color-scheme:dark) {
   .c2 {
-    color: white;
+    color: #ffffff;
   }
 }
 
@@ -276,7 +276,7 @@ exports[`<Logo /> Should render correctly pride 1`] = `
   left: -0.35rem;
   content: '';
   display: block;
-  border: solid rgba(0,125,250,0.6) 0.2rem;
+  border: solid #007dfa3C 0.2rem;
   border-radius: 0.5rem;
   pointer-events: none;
 }
@@ -316,7 +316,7 @@ exports[`<Logo /> Should render correctly pride 1`] = `
 @media (prefers-color-scheme:dark) {
   .c1:focus-within::after,
   .c1:focus::after {
-    border-color: rgba(0,125,250,0.6);
+    border-color: #007dfa3C;
   }
 }
 
@@ -328,7 +328,7 @@ exports[`<Logo /> Should render correctly pride 1`] = `
 
 @media (prefers-color-scheme:dark) {
   .c2 {
-    color: white;
+    color: #ffffff;
   }
 }
 
@@ -401,7 +401,7 @@ exports[`<Logo /> Should render correctly with custom className 1`] = `
   left: -0.35rem;
   content: '';
   display: block;
-  border: solid rgba(0,125,250,0.6) 0.2rem;
+  border: solid #007dfa3C 0.2rem;
   border-radius: 0.5rem;
   pointer-events: none;
 }
@@ -441,7 +441,7 @@ exports[`<Logo /> Should render correctly with custom className 1`] = `
 @media (prefers-color-scheme:dark) {
   .c1:focus-within::after,
   .c1:focus::after {
-    border-color: rgba(0,125,250,0.6);
+    border-color: #007dfa3C;
   }
 }
 
@@ -453,7 +453,7 @@ exports[`<Logo /> Should render correctly with custom className 1`] = `
 
 @media (prefers-color-scheme:dark) {
   .c2 {
-    color: white;
+    color: #ffffff;
   }
 }
 

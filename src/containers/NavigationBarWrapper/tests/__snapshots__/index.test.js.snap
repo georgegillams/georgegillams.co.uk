@@ -25,7 +25,7 @@ exports[`<Authenticator /> should render correctly - index 1`] = `
   left: -0.35rem;
   content: '';
   display: block;
-  border: solid rgba(0,125,250,0.6) 0.2rem;
+  border: solid #007dfa3C 0.2rem;
   border-radius: 0.5rem;
   pointer-events: none;
 }
@@ -72,7 +72,7 @@ exports[`<Authenticator /> should render correctly - index 1`] = `
   padding: 0.4rem 0.2rem;
   box-shadow: 0 0.05rem 0.5rem rgba(0,0,0,0.173);
   position: inherit;
-  background-color: white;
+  background-color: #ffffff;
   -webkit-backdrop-filter: unset;
   backdrop-filter: unset;
   -webkit-backdrop-filter: unset;
@@ -153,7 +153,7 @@ exports[`<Authenticator /> should render correctly - index 1`] = `
   left: -0.35rem;
   content: '';
   display: block;
-  border: solid rgba(0,125,250,0.6) 0.2rem;
+  border: solid #007dfa3C 0.2rem;
   border-radius: 0.5rem;
   pointer-events: none;
 }
@@ -171,7 +171,7 @@ exports[`<Authenticator /> should render correctly - index 1`] = `
 
 .c12:disabled {
   background-color: #cdcdd7;
-  color: rgb(100,100,100);
+  color: #646464;
 }
 
 .c12:focus,
@@ -236,7 +236,7 @@ exports[`<Authenticator /> should render correctly - index 1`] = `
   left: -0.35rem;
   content: '';
   display: block;
-  border: solid rgba(0,125,250,0.6) 0.2rem;
+  border: solid #007dfa3C 0.2rem;
   border-radius: 0.5rem;
   pointer-events: none;
 }
@@ -263,13 +263,13 @@ exports[`<Authenticator /> should render correctly - index 1`] = `
 @media (prefers-color-scheme:dark) {
   .c5:focus-within::after,
   .c5:focus::after {
-    border-color: rgba(0,125,250,0.6);
+    border-color: #007dfa3C;
   }
 }
 
 @media (prefers-color-scheme:dark) {
   .c7 {
-    background-color: white;
+    background-color: #ffffff;
   }
 }
 
@@ -330,7 +330,7 @@ exports[`<Authenticator /> should render correctly - index 1`] = `
 @media (prefers-color-scheme:dark) {
   .c12:focus-within::after,
   .c12:focus::after {
-    border-color: rgba(0,125,250,0.6);
+    border-color: #007dfa3C;
   }
 }
 
@@ -358,8 +358,8 @@ exports[`<Authenticator /> should render correctly - index 1`] = `
 
 @media (prefers-color-scheme:dark) {
   .c12:disabled {
-    background-color: rgb(89,89,89);
-    color: darkgray;
+    background-color: #595959;
+    color: #a9a9a9;
   }
 }
 
@@ -377,7 +377,7 @@ exports[`<Authenticator /> should render correctly - index 1`] = `
 @media (prefers-color-scheme:dark) {
   .c9:focus-within::after,
   .c9:focus::after {
-    border-color: rgba(0,125,250,0.6);
+    border-color: #007dfa3C;
   }
 }
 
@@ -389,7 +389,7 @@ exports[`<Authenticator /> should render correctly - index 1`] = `
 
 @media (prefers-color-scheme:dark) {
   .c10 {
-    color: white;
+    color: #ffffff;
   }
 }
 
@@ -577,7 +577,7 @@ exports[`<Authenticator /> should render correctly with default state 1`] = `
   left: -0.35rem;
   content: '';
   display: block;
-  border: solid rgba(0,125,250,0.6) 0.2rem;
+  border: solid #007dfa3C 0.2rem;
   border-radius: 0.5rem;
   pointer-events: none;
 }
@@ -624,7 +624,7 @@ exports[`<Authenticator /> should render correctly with default state 1`] = `
   padding: 0.4rem 0.2rem;
   box-shadow: 0 0.05rem 0.5rem rgba(0,0,0,0.173);
   position: inherit;
-  background-color: white;
+  background-color: #ffffff;
   -webkit-backdrop-filter: unset;
   backdrop-filter: unset;
   -webkit-backdrop-filter: unset;
@@ -705,7 +705,7 @@ exports[`<Authenticator /> should render correctly with default state 1`] = `
   left: -0.35rem;
   content: '';
   display: block;
-  border: solid rgba(0,125,250,0.6) 0.2rem;
+  border: solid #007dfa3C 0.2rem;
   border-radius: 0.5rem;
   pointer-events: none;
 }
@@ -723,7 +723,7 @@ exports[`<Authenticator /> should render correctly with default state 1`] = `
 
 .c12:disabled {
   background-color: #cdcdd7;
-  color: rgb(100,100,100);
+  color: #646464;
 }
 
 .c12:focus,
@@ -788,7 +788,7 @@ exports[`<Authenticator /> should render correctly with default state 1`] = `
   left: -0.35rem;
   content: '';
   display: block;
-  border: solid rgba(0,125,250,0.6) 0.2rem;
+  border: solid #007dfa3C 0.2rem;
   border-radius: 0.5rem;
   pointer-events: none;
 }
@@ -815,13 +815,13 @@ exports[`<Authenticator /> should render correctly with default state 1`] = `
 @media (prefers-color-scheme:dark) {
   .c5:focus-within::after,
   .c5:focus::after {
-    border-color: rgba(0,125,250,0.6);
+    border-color: #007dfa3C;
   }
 }
 
 @media (prefers-color-scheme:dark) {
   .c7 {
-    background-color: white;
+    background-color: #ffffff;
   }
 }
 
@@ -882,7 +882,7 @@ exports[`<Authenticator /> should render correctly with default state 1`] = `
 @media (prefers-color-scheme:dark) {
   .c12:focus-within::after,
   .c12:focus::after {
-    border-color: rgba(0,125,250,0.6);
+    border-color: #007dfa3C;
   }
 }
 
@@ -910,8 +910,8 @@ exports[`<Authenticator /> should render correctly with default state 1`] = `
 
 @media (prefers-color-scheme:dark) {
   .c12:disabled {
-    background-color: rgb(89,89,89);
-    color: darkgray;
+    background-color: #595959;
+    color: #a9a9a9;
   }
 }
 
@@ -929,7 +929,7 @@ exports[`<Authenticator /> should render correctly with default state 1`] = `
 @media (prefers-color-scheme:dark) {
   .c9:focus-within::after,
   .c9:focus::after {
-    border-color: rgba(0,125,250,0.6);
+    border-color: #007dfa3C;
   }
 }
 
@@ -941,7 +941,7 @@ exports[`<Authenticator /> should render correctly with default state 1`] = `
 
 @media (prefers-color-scheme:dark) {
   .c10 {
-    color: white;
+    color: #ffffff;
   }
 }
 
@@ -1129,7 +1129,7 @@ exports[`<Authenticator /> should render correctly with null user 1`] = `
   left: -0.35rem;
   content: '';
   display: block;
-  border: solid rgba(0,125,250,0.6) 0.2rem;
+  border: solid #007dfa3C 0.2rem;
   border-radius: 0.5rem;
   pointer-events: none;
 }
@@ -1176,7 +1176,7 @@ exports[`<Authenticator /> should render correctly with null user 1`] = `
   padding: 0.4rem 0.2rem;
   box-shadow: 0 0.05rem 0.5rem rgba(0,0,0,0.173);
   position: inherit;
-  background-color: white;
+  background-color: #ffffff;
   -webkit-backdrop-filter: unset;
   backdrop-filter: unset;
   -webkit-backdrop-filter: unset;
@@ -1257,7 +1257,7 @@ exports[`<Authenticator /> should render correctly with null user 1`] = `
   left: -0.35rem;
   content: '';
   display: block;
-  border: solid rgba(0,125,250,0.6) 0.2rem;
+  border: solid #007dfa3C 0.2rem;
   border-radius: 0.5rem;
   pointer-events: none;
 }
@@ -1275,7 +1275,7 @@ exports[`<Authenticator /> should render correctly with null user 1`] = `
 
 .c12:disabled {
   background-color: #cdcdd7;
-  color: rgb(100,100,100);
+  color: #646464;
 }
 
 .c12:focus,
@@ -1340,7 +1340,7 @@ exports[`<Authenticator /> should render correctly with null user 1`] = `
   left: -0.35rem;
   content: '';
   display: block;
-  border: solid rgba(0,125,250,0.6) 0.2rem;
+  border: solid #007dfa3C 0.2rem;
   border-radius: 0.5rem;
   pointer-events: none;
 }
@@ -1367,13 +1367,13 @@ exports[`<Authenticator /> should render correctly with null user 1`] = `
 @media (prefers-color-scheme:dark) {
   .c5:focus-within::after,
   .c5:focus::after {
-    border-color: rgba(0,125,250,0.6);
+    border-color: #007dfa3C;
   }
 }
 
 @media (prefers-color-scheme:dark) {
   .c7 {
-    background-color: white;
+    background-color: #ffffff;
   }
 }
 
@@ -1434,7 +1434,7 @@ exports[`<Authenticator /> should render correctly with null user 1`] = `
 @media (prefers-color-scheme:dark) {
   .c12:focus-within::after,
   .c12:focus::after {
-    border-color: rgba(0,125,250,0.6);
+    border-color: #007dfa3C;
   }
 }
 
@@ -1462,8 +1462,8 @@ exports[`<Authenticator /> should render correctly with null user 1`] = `
 
 @media (prefers-color-scheme:dark) {
   .c12:disabled {
-    background-color: rgb(89,89,89);
-    color: darkgray;
+    background-color: #595959;
+    color: #a9a9a9;
   }
 }
 
@@ -1481,7 +1481,7 @@ exports[`<Authenticator /> should render correctly with null user 1`] = `
 @media (prefers-color-scheme:dark) {
   .c9:focus-within::after,
   .c9:focus::after {
-    border-color: rgba(0,125,250,0.6);
+    border-color: #007dfa3C;
   }
 }
 
@@ -1493,7 +1493,7 @@ exports[`<Authenticator /> should render correctly with null user 1`] = `
 
 @media (prefers-color-scheme:dark) {
   .c10 {
-    color: white;
+    color: #ffffff;
   }
 }
 
@@ -1681,7 +1681,7 @@ exports[`<Authenticator /> should render correctly with user 1`] = `
   left: -0.35rem;
   content: '';
   display: block;
-  border: solid rgba(0,125,250,0.6) 0.2rem;
+  border: solid #007dfa3C 0.2rem;
   border-radius: 0.5rem;
   pointer-events: none;
 }
@@ -1728,7 +1728,7 @@ exports[`<Authenticator /> should render correctly with user 1`] = `
   padding: 0.4rem 0.2rem;
   box-shadow: 0 0.05rem 0.5rem rgba(0,0,0,0.173);
   position: inherit;
-  background-color: white;
+  background-color: #ffffff;
   -webkit-backdrop-filter: unset;
   backdrop-filter: unset;
   -webkit-backdrop-filter: unset;
@@ -1809,7 +1809,7 @@ exports[`<Authenticator /> should render correctly with user 1`] = `
   left: -0.35rem;
   content: '';
   display: block;
-  border: solid rgba(0,125,250,0.6) 0.2rem;
+  border: solid #007dfa3C 0.2rem;
   border-radius: 0.5rem;
   pointer-events: none;
 }
@@ -1827,7 +1827,7 @@ exports[`<Authenticator /> should render correctly with user 1`] = `
 
 .c12:disabled {
   background-color: #cdcdd7;
-  color: rgb(100,100,100);
+  color: #646464;
 }
 
 .c12:focus,
@@ -1892,7 +1892,7 @@ exports[`<Authenticator /> should render correctly with user 1`] = `
   left: -0.35rem;
   content: '';
   display: block;
-  border: solid rgba(0,125,250,0.6) 0.2rem;
+  border: solid #007dfa3C 0.2rem;
   border-radius: 0.5rem;
   pointer-events: none;
 }
@@ -1919,13 +1919,13 @@ exports[`<Authenticator /> should render correctly with user 1`] = `
 @media (prefers-color-scheme:dark) {
   .c5:focus-within::after,
   .c5:focus::after {
-    border-color: rgba(0,125,250,0.6);
+    border-color: #007dfa3C;
   }
 }
 
 @media (prefers-color-scheme:dark) {
   .c7 {
-    background-color: white;
+    background-color: #ffffff;
   }
 }
 
@@ -1986,7 +1986,7 @@ exports[`<Authenticator /> should render correctly with user 1`] = `
 @media (prefers-color-scheme:dark) {
   .c12:focus-within::after,
   .c12:focus::after {
-    border-color: rgba(0,125,250,0.6);
+    border-color: #007dfa3C;
   }
 }
 
@@ -2014,8 +2014,8 @@ exports[`<Authenticator /> should render correctly with user 1`] = `
 
 @media (prefers-color-scheme:dark) {
   .c12:disabled {
-    background-color: rgb(89,89,89);
-    color: darkgray;
+    background-color: #595959;
+    color: #a9a9a9;
   }
 }
 
@@ -2033,7 +2033,7 @@ exports[`<Authenticator /> should render correctly with user 1`] = `
 @media (prefers-color-scheme:dark) {
   .c9:focus-within::after,
   .c9:focus::after {
-    border-color: rgba(0,125,250,0.6);
+    border-color: #007dfa3C;
   }
 }
 
@@ -2045,7 +2045,7 @@ exports[`<Authenticator /> should render correctly with user 1`] = `
 
 @media (prefers-color-scheme:dark) {
   .c10 {
-    color: white;
+    color: #ffffff;
   }
 }
 

@@ -8,6 +8,7 @@ import {
 import { createGlobalStyle } from 'styled-components';
 import { normalize } from 'styled-normalize';
 import { quattrocento } from './quattrocento.styles';
+import { spacingLg, navigationBarHeight } from '@george-gillams/components/constants/layout';
 
 export default createGlobalStyle`
  ${normalize}
@@ -31,6 +32,11 @@ body {
   height: 100%;
   margin: 0;
   line-height: 1;
+}
+
+html {
+  /* Ensures that anchor links take the user slightly further down the page to allow for the nav bar height */
+  scroll-padding-top: calc(${navigationBarHeight} + ${spacingLg});
 }
 
 body {
