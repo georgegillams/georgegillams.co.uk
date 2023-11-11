@@ -24,7 +24,7 @@ const getPhotoSize = async photoId => {
 const getPhotoInformation = async photoId => {
   const res = await flickr.photos.getInfo({ photo_id: photoId });
   const info = res.body;
-  return { description: info.photo.description._content };
+  return { description: info.photo.description._content, dateTaken: info.photo.dates?.taken };
 };
 
 const attachPhotoInformation = async photo => {
@@ -39,7 +39,9 @@ const updateCachedValue = async () => {
   // https://www.flickr.com/services/api/flickr.photosets.getPhotos.html
   const res = await flickr.photosets.getPhotos({ photoset_id: '72177720301327018', user_id: '137198167@N03' });
   const photos = res.body.photoset.photo.reverse();
-  const photosWithInformation = await Promise.all(photos.map(photo => attachPhotoInformation(photo)));
+  const photosWithInformation = (await Promise.all(photos.map(photo => attachPhotoInformation(photo)))).sort(
+    (a, b) => new Date(b.information.dateTaken) - new Date(a.information.dateTaken)
+  );
   const apiResult = {
     photos: photosWithInformation
       .map(photo => ({
