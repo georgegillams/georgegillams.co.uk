@@ -1299,10 +1299,10 @@
     minimatch "^3.1.2"
     strip-json-comments "^3.1.1"
 
-"@george-gillams/components@^28.10.6":
-  version "28.10.6"
-  resolved "https://registry.yarnpkg.com/@george-gillams/components/-/components-28.10.6.tgz#d32432056c0221f21bc00860bdd0c6a9add71f46"
-  integrity sha512-gr28YfNaNC9uesWZRtfCs6n42t74YTqSn3LONIm84xCuTqSM5vt9L2sIB895xNCI/dwHELPlJuTUKQf7DXz79g==
+"@george-gillams/components@^28.11.3":
+  version "28.11.3"
+  resolved "https://registry.yarnpkg.com/@george-gillams/components/-/components-28.11.3.tgz#a0a546b1afb8948697578bfe133a6418ee4031be"
+  integrity sha512-eO0l0wvV7dW/Jsqfh1R/Tc5fzSSia6B7FUjznVWnuELrY0UVfMT9YJXwlg+xuHK0zpKp1K1MTFX+TLBGL5p9jg==
   dependencies:
     a11y-focus-scope "^1.1.3"
     date-fns "^2.29.3"
@@ -2738,9 +2738,9 @@ camelize@^1.0.0:
   integrity sha512-W2lPwkBkMZwFlPCXhIlYgxu+7gC/NUlCtdK652DAJ1JdgV0sTrvuPFshNPrFa1TY2JOkLhgdeEBplB4ezEa+xg==
 
 caniuse-lite@^1.0.30001332, caniuse-lite@^1.0.30001400, caniuse-lite@^1.0.30001406:
-  version "1.0.30001532"
-  resolved "https://registry.npmjs.org/caniuse-lite/-/caniuse-lite-1.0.30001532.tgz"
-  integrity sha512-FbDFnNat3nMnrROzqrsg314zhqN5LGQ1kyyMk2opcrwGbVGpHRhgCWtAgD5YJUqNAiQ+dklreil/c3Qf1dfCTw==
+  version "1.0.30001561"
+  resolved "https://registry.npmjs.org/caniuse-lite/-/caniuse-lite-1.0.30001561.tgz"
+  integrity sha512-NTt0DNoKe958Q0BE0j0c1V9jbUzhBxHIEJy7asmGrpE0yG63KTV7PLHPnK2E1O9RsQrQ081I3NLuXGS6zht3cw==
 
 caseless@~0.12.0:
   version "0.12.0"

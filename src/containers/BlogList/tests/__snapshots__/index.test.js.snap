@@ -1,40 +1,40 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<BlogList /> should render correctly - index 1`] = `
-.c6 {
+.c5 {
   margin: 0;
   font-size: 1.5rem;
   font-weight: bold;
 }
 
-.c10 {
+.c9 {
   margin: 0;
 }
 
-.c12 {
+.c11 {
   width: 1.25rem;
   height: 1.25rem;
 }
 
-.c9 {
+.c8 {
   display: inline-block;
   border-radius: 0.25rem;
   font-weight: bold;
   -webkit-text-decoration: none;
   text-decoration: none;
   position: relative;
-  color: darkorchid;
-  fill: darkorchid;
+  color: #9932cc;
+  fill: #9932cc;
 }
 
-.c9:focus-within,
-.c9:focus {
+.c8:focus-within,
+.c8:focus {
   position: relative;
   outline: none !important;
 }
 
-.c9:focus-within::after,
-.c9:focus::after {
+.c8:focus-within::after,
+.c8:focus::after {
   position: absolute;
   top: -0.35rem;
   right: -0.35rem;
@@ -42,17 +42,17 @@ exports[`<BlogList /> should render correctly - index 1`] = `
   left: -0.35rem;
   content: '';
   display: block;
-  border: solid rgba(0,125,250,0.6) 0.2rem;
+  border: solid #007dfa3C 0.2rem;
   border-radius: 0.5rem;
   pointer-events: none;
 }
 
-.c9:hover {
+.c8:hover {
   color: #44aeff;
   fill: #44aeff;
 }
 
-.c11 {
+.c10 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -62,7 +62,7 @@ exports[`<BlogList /> should render correctly - index 1`] = `
   margin-left: 0.55rem;
 }
 
-.c13 {
+.c12 {
   position: absolute;
   width: 1rem;
   height: 1rem;
@@ -70,14 +70,14 @@ exports[`<BlogList /> should render correctly - index 1`] = `
   margin-left: -0.45rem;
 }
 
-.c4 {
+.c3 {
   width: 100%;
   color: #1e1e1e;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
-.c7 {
+.c6 {
   margin: 2.13rem 0 0 0;
 }
 
@@ -104,7 +104,7 @@ exports[`<BlogList /> should render correctly - index 1`] = `
   animation: sjjMW 3.5s ease-in-out infinite;
 }
 
-.c8 {
+.c7 {
   display: inline-block;
   margin-bottom: 0;
   padding-bottom: 0;
@@ -112,12 +112,11 @@ exports[`<BlogList /> should render correctly - index 1`] = `
   margin-top: 2rem;
 }
 
-.c8:first-of-type {
+.c7:first-of-type {
   margin-top: 0.86rem;
 }
 
 .c2 {
-  position: relative;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -131,19 +130,10 @@ exports[`<BlogList /> should render correctly - index 1`] = `
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-}
-
-.c3 {
-  position: absolute;
-  top: 0;
-  left: calc(50% - 50vw);
-  z-index: -1;
-  width: 100vw;
-  height: 100%;
   background-color: #fbfbfb;
 }
 
-.c5 {
+.c4 {
   width: 100%;
   padding-right: 1.875rem;
   padding-left: 1.865rem;
@@ -151,27 +141,27 @@ exports[`<BlogList /> should render correctly - index 1`] = `
 }
 
 @media (prefers-color-scheme:dark) {
-  .c9:focus-within::after,
-  .c9:focus::after {
-    border-color: rgba(0,125,250,0.6);
+  .c8:focus-within::after,
+  .c8:focus::after {
+    border-color: #007dfa3C;
   }
 }
 
 @media (prefers-color-scheme:dark) {
-  .c9 {
-    color: orchid;
-    fill: orchid;
+  .c8 {
+    color: #da70d6;
+    fill: #da70d6;
   }
 
-  .c9:hover {
+  .c8:hover {
     color: #44aeff;
     fill: #44aeff;
   }
 }
 
 @media (prefers-color-scheme:dark) {
-  .c4 {
-    color: white;
+  .c3 {
+    color: #ffffff;
   }
 }
 
@@ -188,7 +178,7 @@ exports[`<BlogList /> should render correctly - index 1`] = `
 }
 
 @media (prefers-color-scheme:dark) {
-  .c3 {
+  .c2 {
     background-color: #121313;
   }
 }
@@ -252,39 +242,36 @@ exports[`<BlogList /> should render correctly - index 1`] = `
         class="c2"
       >
         <div
-          class="c3"
-        />
-        <div
-          class="c4 c5"
+          class="c3 c4"
         >
           <h1
-            class="c6 c7"
+            class="c5 c6"
             id="copyright"
           >
             Copyright
           </h1>
           <span
-            class="c8"
+            class="c7"
           >
             Most of my photos are licensed under
              
             <a
               aria-label="Creative Commons BY-SA 3.0 (opens in a new tab)"
-              class="c9"
+              class="c8"
               href="https://creativecommons.org/licenses/by-sa/3.0/"
               rel="noopener noreferrer"
               target="_blank"
             >
               <span
-                class="c10"
+                class="c9"
               >
                 Creative Commons BY-SA 3.0
               </span>
               <div
-                class="c11"
+                class="c10"
               >
                 <svg
-                  class="c12 c13"
+                  class="c11 c12"
                   height="18"
                   viewBox="0 0 24 24"
                   width="18"
@@ -300,11 +287,11 @@ exports[`<BlogList /> should render correctly - index 1`] = `
             <br />
             If you are unsure about your right to use them please 
             <a
-              class="c9"
+              class="c8"
               href="/contact"
             >
               <span
-                class="c10"
+                class="c9"
               >
                 contact me
               </span>
@@ -325,7 +312,7 @@ exports[`<BlogList /> should render correctly authenticated with blogs 1`] = `
   font-weight: bold;
 }
 
-.c8 {
+.c7 {
   margin: 0;
   font-size: 1.5rem;
   font-weight: bold;
@@ -337,34 +324,34 @@ exports[`<BlogList /> should render correctly authenticated with blogs 1`] = `
   font-weight: bold;
 }
 
-.c12 {
+.c11 {
   margin: 0;
 }
 
-.c14 {
+.c13 {
   width: 1.25rem;
   height: 1.25rem;
 }
 
-.c11 {
+.c10 {
   display: inline-block;
   border-radius: 0.25rem;
   font-weight: bold;
   -webkit-text-decoration: none;
   text-decoration: none;
   position: relative;
-  color: darkorchid;
-  fill: darkorchid;
+  color: #9932cc;
+  fill: #9932cc;
 }
 
-.c11:focus-within,
-.c11:focus {
+.c10:focus-within,
+.c10:focus {
   position: relative;
   outline: none !important;
 }
 
-.c11:focus-within::after,
-.c11:focus::after {
+.c10:focus-within::after,
+.c10:focus::after {
   position: absolute;
   top: -0.35rem;
   right: -0.35rem;
@@ -372,17 +359,17 @@ exports[`<BlogList /> should render correctly authenticated with blogs 1`] = `
   left: -0.35rem;
   content: '';
   display: block;
-  border: solid rgba(0,125,250,0.6) 0.2rem;
+  border: solid #007dfa3C 0.2rem;
   border-radius: 0.5rem;
   pointer-events: none;
 }
 
-.c11:hover {
+.c10:hover {
   color: #44aeff;
   fill: #44aeff;
 }
 
-.c13 {
+.c12 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -392,7 +379,7 @@ exports[`<BlogList /> should render correctly authenticated with blogs 1`] = `
   margin-left: 0.55rem;
 }
 
-.c15 {
+.c14 {
   position: absolute;
   width: 1rem;
   height: 1rem;
@@ -400,14 +387,14 @@ exports[`<BlogList /> should render correctly authenticated with blogs 1`] = `
   margin-left: -0.45rem;
 }
 
-.c6 {
+.c5 {
   width: 100%;
   color: #1e1e1e;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
-.c9 {
+.c8 {
   margin: 2.13rem 0 0 0;
 }
 
@@ -431,7 +418,7 @@ exports[`<BlogList /> should render correctly authenticated with blogs 1`] = `
   animation: sjjMW 3.5s ease-in-out infinite;
 }
 
-.c10 {
+.c9 {
   display: inline-block;
   margin-bottom: 0;
   padding-bottom: 0;
@@ -439,12 +426,11 @@ exports[`<BlogList /> should render correctly authenticated with blogs 1`] = `
   margin-top: 2rem;
 }
 
-.c10:first-of-type {
+.c9:first-of-type {
   margin-top: 0.86rem;
 }
 
 .c4 {
-  position: relative;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -458,19 +444,10 @@ exports[`<BlogList /> should render correctly authenticated with blogs 1`] = `
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-}
-
-.c5 {
-  position: absolute;
-  top: 0;
-  left: calc(50% - 50vw);
-  z-index: -1;
-  width: 100vw;
-  height: 100%;
   background-color: #fbfbfb;
 }
 
-.c7 {
+.c6 {
   width: 100%;
   padding-right: 1.875rem;
   padding-left: 1.865rem;
@@ -478,27 +455,27 @@ exports[`<BlogList /> should render correctly authenticated with blogs 1`] = `
 }
 
 @media (prefers-color-scheme:dark) {
-  .c11:focus-within::after,
-  .c11:focus::after {
-    border-color: rgba(0,125,250,0.6);
+  .c10:focus-within::after,
+  .c10:focus::after {
+    border-color: #007dfa3C;
   }
 }
 
 @media (prefers-color-scheme:dark) {
-  .c11 {
-    color: orchid;
-    fill: orchid;
+  .c10 {
+    color: #da70d6;
+    fill: #da70d6;
   }
 
-  .c11:hover {
+  .c10:hover {
     color: #44aeff;
     fill: #44aeff;
   }
 }
 
 @media (prefers-color-scheme:dark) {
-  .c6 {
-    color: white;
+  .c5 {
+    color: #ffffff;
   }
 }
 
@@ -515,7 +492,7 @@ exports[`<BlogList /> should render correctly authenticated with blogs 1`] = `
 }
 
 @media (prefers-color-scheme:dark) {
-  .c5 {
+  .c4 {
     background-color: #121313;
   }
 }
@@ -956,39 +933,36 @@ exports[`<BlogList /> should render correctly authenticated with blogs 1`] = `
         class="c4"
       >
         <div
-          class="c5"
-        />
-        <div
-          class="c6 c7"
+          class="c5 c6"
         >
           <h1
-            class="c8 c9"
+            class="c7 c8"
             id="copyright"
           >
             Copyright
           </h1>
           <span
-            class="c10"
+            class="c9"
           >
             Most of my photos are licensed under
              
             <a
               aria-label="Creative Commons BY-SA 3.0 (opens in a new tab)"
-              class="c11"
+              class="c10"
               href="https://creativecommons.org/licenses/by-sa/3.0/"
               rel="noopener noreferrer"
               target="_blank"
             >
               <span
-                class="c12"
+                class="c11"
               >
                 Creative Commons BY-SA 3.0
               </span>
               <div
-                class="c13"
+                class="c12"
               >
                 <svg
-                  class="c14 c15"
+                  class="c13 c14"
                   height="18"
                   viewBox="0 0 24 24"
                   width="18"
@@ -1004,11 +978,11 @@ exports[`<BlogList /> should render correctly authenticated with blogs 1`] = `
             <br />
             If you are unsure about your right to use them please 
             <a
-              class="c11"
+              class="c10"
               href="/contact"
             >
               <span
-                class="c12"
+                class="c11"
               >
                 contact me
               </span>
@@ -1029,34 +1003,34 @@ exports[`<BlogList /> should render correctly with blog load error 1`] = `
   font-weight: bold;
 }
 
-.c11 {
+.c10 {
   margin: 0;
 }
 
-.c13 {
+.c12 {
   width: 1.25rem;
   height: 1.25rem;
 }
 
-.c10 {
+.c9 {
   display: inline-block;
   border-radius: 0.25rem;
   font-weight: bold;
   -webkit-text-decoration: none;
   text-decoration: none;
   position: relative;
-  color: darkorchid;
-  fill: darkorchid;
+  color: #9932cc;
+  fill: #9932cc;
 }
 
-.c10:focus-within,
-.c10:focus {
+.c9:focus-within,
+.c9:focus {
   position: relative;
   outline: none !important;
 }
 
-.c10:focus-within::after,
-.c10:focus::after {
+.c9:focus-within::after,
+.c9:focus::after {
   position: absolute;
   top: -0.35rem;
   right: -0.35rem;
@@ -1064,17 +1038,17 @@ exports[`<BlogList /> should render correctly with blog load error 1`] = `
   left: -0.35rem;
   content: '';
   display: block;
-  border: solid rgba(0,125,250,0.6) 0.2rem;
+  border: solid #007dfa3C 0.2rem;
   border-radius: 0.5rem;
   pointer-events: none;
 }
 
-.c10:hover {
+.c9:hover {
   color: #44aeff;
   fill: #44aeff;
 }
 
-.c12 {
+.c11 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -1084,7 +1058,7 @@ exports[`<BlogList /> should render correctly with blog load error 1`] = `
   margin-left: 0.55rem;
 }
 
-.c14 {
+.c13 {
   position: absolute;
   width: 1rem;
   height: 1rem;
@@ -1103,7 +1077,7 @@ exports[`<BlogList /> should render correctly with blog load error 1`] = `
   margin: 0;
 }
 
-.c8 {
+.c7 {
   margin: 2.13rem 0 0 0;
 }
 
@@ -1130,7 +1104,7 @@ exports[`<BlogList /> should render correctly with blog load error 1`] = `
   animation: sjjMW 3.5s ease-in-out infinite;
 }
 
-.c9 {
+.c8 {
   display: inline-block;
   margin-bottom: 0;
   padding-bottom: 0;
@@ -1138,12 +1112,11 @@ exports[`<BlogList /> should render correctly with blog load error 1`] = `
   margin-top: 2rem;
 }
 
-.c9:first-of-type {
+.c8:first-of-type {
   margin-top: 0.86rem;
 }
 
 .c5 {
-  position: relative;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1157,19 +1130,10 @@ exports[`<BlogList /> should render correctly with blog load error 1`] = `
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-}
-
-.c6 {
-  position: absolute;
-  top: 0;
-  left: calc(50% - 50vw);
-  z-index: -1;
-  width: 100vw;
-  height: 100%;
   background-color: #fbfbfb;
 }
 
-.c7 {
+.c6 {
   width: 100%;
   padding-right: 1.875rem;
   padding-left: 1.865rem;
@@ -1177,19 +1141,19 @@ exports[`<BlogList /> should render correctly with blog load error 1`] = `
 }
 
 @media (prefers-color-scheme:dark) {
-  .c10:focus-within::after,
-  .c10:focus::after {
-    border-color: rgba(0,125,250,0.6);
+  .c9:focus-within::after,
+  .c9:focus::after {
+    border-color: #007dfa3C;
   }
 }
 
 @media (prefers-color-scheme:dark) {
-  .c10 {
-    color: orchid;
-    fill: orchid;
+  .c9 {
+    color: #da70d6;
+    fill: #da70d6;
   }
 
-  .c10:hover {
+  .c9:hover {
     color: #44aeff;
     fill: #44aeff;
   }
@@ -1197,7 +1161,7 @@ exports[`<BlogList /> should render correctly with blog load error 1`] = `
 
 @media (prefers-color-scheme:dark) {
   .c2 {
-    color: white;
+    color: #ffffff;
   }
 }
 
@@ -1214,7 +1178,7 @@ exports[`<BlogList /> should render correctly with blog load error 1`] = `
 }
 
 @media (prefers-color-scheme:dark) {
-  .c6 {
+  .c5 {
     background-color: #121313;
   }
 }
@@ -1288,39 +1252,36 @@ exports[`<BlogList /> should render correctly with blog load error 1`] = `
         class="c5"
       >
         <div
-          class="c6"
-        />
-        <div
-          class="c2 c7"
+          class="c2 c6"
         >
           <h1
-            class="c3 c8"
+            class="c3 c7"
             id="copyright"
           >
             Copyright
           </h1>
           <span
-            class="c9"
+            class="c8"
           >
             Most of my photos are licensed under
              
             <a
               aria-label="Creative Commons BY-SA 3.0 (opens in a new tab)"
-              class="c10"
+              class="c9"
               href="https://creativecommons.org/licenses/by-sa/3.0/"
               rel="noopener noreferrer"
               target="_blank"
             >
               <span
-                class="c11"
+                class="c10"
               >
                 Creative Commons BY-SA 3.0
               </span>
               <div
-                class="c12"
+                class="c11"
               >
                 <svg
-                  class="c13 c14"
+                  class="c12 c13"
                   height="18"
                   viewBox="0 0 24 24"
                   width="18"
@@ -1336,11 +1297,11 @@ exports[`<BlogList /> should render correctly with blog load error 1`] = `
             <br />
             If you are unsure about your right to use them please 
             <a
-              class="c10"
+              class="c9"
               href="/contact"
             >
               <span
-                class="c11"
+                class="c10"
               >
                 contact me
               </span>
@@ -1361,7 +1322,7 @@ exports[`<BlogList /> should render correctly with blogs 1`] = `
   font-weight: bold;
 }
 
-.c8 {
+.c7 {
   margin: 0;
   font-size: 1.5rem;
   font-weight: bold;
@@ -1373,34 +1334,34 @@ exports[`<BlogList /> should render correctly with blogs 1`] = `
   font-weight: bold;
 }
 
-.c12 {
+.c11 {
   margin: 0;
 }
 
-.c14 {
+.c13 {
   width: 1.25rem;
   height: 1.25rem;
 }
 
-.c11 {
+.c10 {
   display: inline-block;
   border-radius: 0.25rem;
   font-weight: bold;
   -webkit-text-decoration: none;
   text-decoration: none;
   position: relative;
-  color: darkorchid;
-  fill: darkorchid;
+  color: #9932cc;
+  fill: #9932cc;
 }
 
-.c11:focus-within,
-.c11:focus {
+.c10:focus-within,
+.c10:focus {
   position: relative;
   outline: none !important;
 }
 
-.c11:focus-within::after,
-.c11:focus::after {
+.c10:focus-within::after,
+.c10:focus::after {
   position: absolute;
   top: -0.35rem;
   right: -0.35rem;
@@ -1408,17 +1369,17 @@ exports[`<BlogList /> should render correctly with blogs 1`] = `
   left: -0.35rem;
   content: '';
   display: block;
-  border: solid rgba(0,125,250,0.6) 0.2rem;
+  border: solid #007dfa3C 0.2rem;
   border-radius: 0.5rem;
   pointer-events: none;
 }
 
-.c11:hover {
+.c10:hover {
   color: #44aeff;
   fill: #44aeff;
 }
 
-.c13 {
+.c12 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -1428,7 +1389,7 @@ exports[`<BlogList /> should render correctly with blogs 1`] = `
   margin-left: 0.55rem;
 }
 
-.c15 {
+.c14 {
   position: absolute;
   width: 1rem;
   height: 1rem;
@@ -1436,14 +1397,14 @@ exports[`<BlogList /> should render correctly with blogs 1`] = `
   margin-left: -0.45rem;
 }
 
-.c6 {
+.c5 {
   width: 100%;
   color: #1e1e1e;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
-.c9 {
+.c8 {
   margin: 2.13rem 0 0 0;
 }
 
@@ -1467,7 +1428,7 @@ exports[`<BlogList /> should render correctly with blogs 1`] = `
   animation: sjjMW 3.5s ease-in-out infinite;
 }
 
-.c10 {
+.c9 {
   display: inline-block;
   margin-bottom: 0;
   padding-bottom: 0;
@@ -1475,12 +1436,11 @@ exports[`<BlogList /> should render correctly with blogs 1`] = `
   margin-top: 2rem;
 }
 
-.c10:first-of-type {
+.c9:first-of-type {
   margin-top: 0.86rem;
 }
 
 .c4 {
-  position: relative;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1494,19 +1454,10 @@ exports[`<BlogList /> should render correctly with blogs 1`] = `
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-}
-
-.c5 {
-  position: absolute;
-  top: 0;
-  left: calc(50% - 50vw);
-  z-index: -1;
-  width: 100vw;
-  height: 100%;
   background-color: #fbfbfb;
 }
 
-.c7 {
+.c6 {
   width: 100%;
   padding-right: 1.875rem;
   padding-left: 1.865rem;
@@ -1514,27 +1465,27 @@ exports[`<BlogList /> should render correctly with blogs 1`] = `
 }
 
 @media (prefers-color-scheme:dark) {
-  .c11:focus-within::after,
-  .c11:focus::after {
-    border-color: rgba(0,125,250,0.6);
+  .c10:focus-within::after,
+  .c10:focus::after {
+    border-color: #007dfa3C;
   }
 }
 
 @media (prefers-color-scheme:dark) {
-  .c11 {
-    color: orchid;
-    fill: orchid;
+  .c10 {
+    color: #da70d6;
+    fill: #da70d6;
   }
 
-  .c11:hover {
+  .c10:hover {
     color: #44aeff;
     fill: #44aeff;
   }
 }
 
 @media (prefers-color-scheme:dark) {
-  .c6 {
-    color: white;
+  .c5 {
+    color: #ffffff;
   }
 }
 
@@ -1551,7 +1502,7 @@ exports[`<BlogList /> should render correctly with blogs 1`] = `
 }
 
 @media (prefers-color-scheme:dark) {
-  .c5 {
+  .c4 {
     background-color: #121313;
   }
 }
@@ -1927,39 +1878,36 @@ exports[`<BlogList /> should render correctly with blogs 1`] = `
         class="c4"
       >
         <div
-          class="c5"
-        />
-        <div
-          class="c6 c7"
+          class="c5 c6"
         >
           <h1
-            class="c8 c9"
+            class="c7 c8"
             id="copyright"
           >
             Copyright
           </h1>
           <span
-            class="c10"
+            class="c9"
           >
             Most of my photos are licensed under
              
             <a
               aria-label="Creative Commons BY-SA 3.0 (opens in a new tab)"
-              class="c11"
+              class="c10"
               href="https://creativecommons.org/licenses/by-sa/3.0/"
               rel="noopener noreferrer"
               target="_blank"
             >
               <span
-                class="c12"
+                class="c11"
               >
                 Creative Commons BY-SA 3.0
               </span>
               <div
-                class="c13"
+                class="c12"
               >
                 <svg
-                  class="c14 c15"
+                  class="c13 c14"
                   height="18"
                   viewBox="0 0 24 24"
                   width="18"
@@ -1975,11 +1923,11 @@ exports[`<BlogList /> should render correctly with blogs 1`] = `
             <br />
             If you are unsure about your right to use them please 
             <a
-              class="c11"
+              class="c10"
               href="/contact"
             >
               <span
-                class="c12"
+                class="c11"
               >
                 contact me
               </span>
@@ -1994,40 +1942,40 @@ exports[`<BlogList /> should render correctly with blogs 1`] = `
 `;
 
 exports[`<BlogList /> should render correctly with initial state 1`] = `
-.c6 {
+.c5 {
   margin: 0;
   font-size: 1.5rem;
   font-weight: bold;
 }
 
-.c10 {
+.c9 {
   margin: 0;
 }
 
-.c12 {
+.c11 {
   width: 1.25rem;
   height: 1.25rem;
 }
 
-.c9 {
+.c8 {
   display: inline-block;
   border-radius: 0.25rem;
   font-weight: bold;
   -webkit-text-decoration: none;
   text-decoration: none;
   position: relative;
-  color: darkorchid;
-  fill: darkorchid;
+  color: #9932cc;
+  fill: #9932cc;
 }
 
-.c9:focus-within,
-.c9:focus {
+.c8:focus-within,
+.c8:focus {
   position: relative;
   outline: none !important;
 }
 
-.c9:focus-within::after,
-.c9:focus::after {
+.c8:focus-within::after,
+.c8:focus::after {
   position: absolute;
   top: -0.35rem;
   right: -0.35rem;
@@ -2035,17 +1983,17 @@ exports[`<BlogList /> should render correctly with initial state 1`] = `
   left: -0.35rem;
   content: '';
   display: block;
-  border: solid rgba(0,125,250,0.6) 0.2rem;
+  border: solid #007dfa3C 0.2rem;
   border-radius: 0.5rem;
   pointer-events: none;
 }
 
-.c9:hover {
+.c8:hover {
   color: #44aeff;
   fill: #44aeff;
 }
 
-.c11 {
+.c10 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -2055,7 +2003,7 @@ exports[`<BlogList /> should render correctly with initial state 1`] = `
   margin-left: 0.55rem;
 }
 
-.c13 {
+.c12 {
   position: absolute;
   width: 1rem;
   height: 1rem;
@@ -2063,14 +2011,14 @@ exports[`<BlogList /> should render correctly with initial state 1`] = `
   margin-left: -0.45rem;
 }
 
-.c4 {
+.c3 {
   width: 100%;
   color: #1e1e1e;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
-.c7 {
+.c6 {
   margin: 2.13rem 0 0 0;
 }
 
@@ -2097,7 +2045,7 @@ exports[`<BlogList /> should render correctly with initial state 1`] = `
   animation: sjjMW 3.5s ease-in-out infinite;
 }
 
-.c8 {
+.c7 {
   display: inline-block;
   margin-bottom: 0;
   padding-bottom: 0;
@@ -2105,12 +2053,11 @@ exports[`<BlogList /> should render correctly with initial state 1`] = `
   margin-top: 2rem;
 }
 
-.c8:first-of-type {
+.c7:first-of-type {
   margin-top: 0.86rem;
 }
 
 .c2 {
-  position: relative;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2124,19 +2071,10 @@ exports[`<BlogList /> should render correctly with initial state 1`] = `
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-}
-
-.c3 {
-  position: absolute;
-  top: 0;
-  left: calc(50% - 50vw);
-  z-index: -1;
-  width: 100vw;
-  height: 100%;
   background-color: #fbfbfb;
 }
 
-.c5 {
+.c4 {
   width: 100%;
   padding-right: 1.875rem;
   padding-left: 1.865rem;
@@ -2144,27 +2082,27 @@ exports[`<BlogList /> should render correctly with initial state 1`] = `
 }
 
 @media (prefers-color-scheme:dark) {
-  .c9:focus-within::after,
-  .c9:focus::after {
-    border-color: rgba(0,125,250,0.6);
+  .c8:focus-within::after,
+  .c8:focus::after {
+    border-color: #007dfa3C;
   }
 }
 
 @media (prefers-color-scheme:dark) {
-  .c9 {
-    color: orchid;
-    fill: orchid;
+  .c8 {
+    color: #da70d6;
+    fill: #da70d6;
   }
 
-  .c9:hover {
+  .c8:hover {
     color: #44aeff;
     fill: #44aeff;
   }
 }
 
 @media (prefers-color-scheme:dark) {
-  .c4 {
-    color: white;
+  .c3 {
+    color: #ffffff;
   }
 }
 
@@ -2181,7 +2119,7 @@ exports[`<BlogList /> should render correctly with initial state 1`] = `
 }
 
 @media (prefers-color-scheme:dark) {
-  .c3 {
+  .c2 {
     background-color: #121313;
   }
 }
@@ -2245,39 +2183,36 @@ exports[`<BlogList /> should render correctly with initial state 1`] = `
         class="c2"
       >
         <div
-          class="c3"
-        />
-        <div
-          class="c4 c5"
+          class="c3 c4"
         >
           <h1
-            class="c6 c7"
+            class="c5 c6"
             id="copyright"
           >
             Copyright
           </h1>
           <span
-            class="c8"
+            class="c7"
           >
             Most of my photos are licensed under
              
             <a
               aria-label="Creative Commons BY-SA 3.0 (opens in a new tab)"
-              class="c9"
+              class="c8"
               href="https://creativecommons.org/licenses/by-sa/3.0/"
               rel="noopener noreferrer"
               target="_blank"
             >
               <span
-                class="c10"
+                class="c9"
               >
                 Creative Commons BY-SA 3.0
               </span>
               <div
-                class="c11"
+                class="c10"
               >
                 <svg
-                  class="c12 c13"
+                  class="c11 c12"
                   height="18"
                   viewBox="0 0 24 24"
                   width="18"
@@ -2293,11 +2228,11 @@ exports[`<BlogList /> should render correctly with initial state 1`] = `
             <br />
             If you are unsure about your right to use them please 
             <a
-              class="c9"
+              class="c8"
               href="/contact"
             >
               <span
-                class="c10"
+                class="c9"
               >
                 contact me
               </span>
@@ -2318,7 +2253,7 @@ exports[`<BlogList /> should render correctly with ssrBlogs 1`] = `
   font-weight: bold;
 }
 
-.c8 {
+.c7 {
   margin: 0;
   font-size: 1.5rem;
   font-weight: bold;
@@ -2330,34 +2265,34 @@ exports[`<BlogList /> should render correctly with ssrBlogs 1`] = `
   font-weight: bold;
 }
 
-.c12 {
+.c11 {
   margin: 0;
 }
 
-.c14 {
+.c13 {
   width: 1.25rem;
   height: 1.25rem;
 }
 
-.c11 {
+.c10 {
   display: inline-block;
   border-radius: 0.25rem;
   font-weight: bold;
   -webkit-text-decoration: none;
   text-decoration: none;
   position: relative;
-  color: darkorchid;
-  fill: darkorchid;
+  color: #9932cc;
+  fill: #9932cc;
 }
 
-.c11:focus-within,
-.c11:focus {
+.c10:focus-within,
+.c10:focus {
   position: relative;
   outline: none !important;
 }
 
-.c11:focus-within::after,
-.c11:focus::after {
+.c10:focus-within::after,
+.c10:focus::after {
   position: absolute;
   top: -0.35rem;
   right: -0.35rem;
@@ -2365,17 +2300,17 @@ exports[`<BlogList /> should render correctly with ssrBlogs 1`] = `
   left: -0.35rem;
   content: '';
   display: block;
-  border: solid rgba(0,125,250,0.6) 0.2rem;
+  border: solid #007dfa3C 0.2rem;
   border-radius: 0.5rem;
   pointer-events: none;
 }
 
-.c11:hover {
+.c10:hover {
   color: #44aeff;
   fill: #44aeff;
 }
 
-.c13 {
+.c12 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -2385,7 +2320,7 @@ exports[`<BlogList /> should render correctly with ssrBlogs 1`] = `
   margin-left: 0.55rem;
 }
 
-.c15 {
+.c14 {
   position: absolute;
   width: 1rem;
   height: 1rem;
@@ -2393,14 +2328,14 @@ exports[`<BlogList /> should render correctly with ssrBlogs 1`] = `
   margin-left: -0.45rem;
 }
 
-.c6 {
+.c5 {
   width: 100%;
   color: #1e1e1e;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
-.c9 {
+.c8 {
   margin: 2.13rem 0 0 0;
 }
 
@@ -2424,7 +2359,7 @@ exports[`<BlogList /> should render correctly with ssrBlogs 1`] = `
   animation: sjjMW 3.5s ease-in-out infinite;
 }
 
-.c10 {
+.c9 {
   display: inline-block;
   margin-bottom: 0;
   padding-bottom: 0;
@@ -2432,12 +2367,11 @@ exports[`<BlogList /> should render correctly with ssrBlogs 1`] = `
   margin-top: 2rem;
 }
 
-.c10:first-of-type {
+.c9:first-of-type {
   margin-top: 0.86rem;
 }
 
 .c4 {
-  position: relative;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2451,19 +2385,10 @@ exports[`<BlogList /> should render correctly with ssrBlogs 1`] = `
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-}
-
-.c5 {
-  position: absolute;
-  top: 0;
-  left: calc(50% - 50vw);
-  z-index: -1;
-  width: 100vw;
-  height: 100%;
   background-color: #fbfbfb;
 }
 
-.c7 {
+.c6 {
   width: 100%;
   padding-right: 1.875rem;
   padding-left: 1.865rem;
@@ -2471,27 +2396,27 @@ exports[`<BlogList /> should render correctly with ssrBlogs 1`] = `
 }
 
 @media (prefers-color-scheme:dark) {
-  .c11:focus-within::after,
-  .c11:focus::after {
-    border-color: rgba(0,125,250,0.6);
+  .c10:focus-within::after,
+  .c10:focus::after {
+    border-color: #007dfa3C;
   }
 }
 
 @media (prefers-color-scheme:dark) {
-  .c11 {
-    color: orchid;
-    fill: orchid;
+  .c10 {
+    color: #da70d6;
+    fill: #da70d6;
   }
 
-  .c11:hover {
+  .c10:hover {
     color: #44aeff;
     fill: #44aeff;
   }
 }
 
 @media (prefers-color-scheme:dark) {
-  .c6 {
-    color: white;
+  .c5 {
+    color: #ffffff;
   }
 }
 
@@ -2508,7 +2433,7 @@ exports[`<BlogList /> should render correctly with ssrBlogs 1`] = `
 }
 
 @media (prefers-color-scheme:dark) {
-  .c5 {
+  .c4 {
     background-color: #121313;
   }
 }
@@ -2884,39 +2809,36 @@ exports[`<BlogList /> should render correctly with ssrBlogs 1`] = `
         class="c4"
       >
         <div
-          class="c5"
-        />
-        <div
-          class="c6 c7"
+          class="c5 c6"
         >
           <h1
-            class="c8 c9"
+            class="c7 c8"
             id="copyright"
           >
             Copyright
           </h1>
           <span
-            class="c10"
+            class="c9"
           >
             Most of my photos are licensed under
              
             <a
               aria-label="Creative Commons BY-SA 3.0 (opens in a new tab)"
-              class="c11"
+              class="c10"
               href="https://creativecommons.org/licenses/by-sa/3.0/"
               rel="noopener noreferrer"
               target="_blank"
             >
               <span
-                class="c12"
+                class="c11"
               >
                 Creative Commons BY-SA 3.0
               </span>
               <div
-                class="c13"
+                class="c12"
               >
                 <svg
-                  class="c14 c15"
+                  class="c13 c14"
                   height="18"
                   viewBox="0 0 24 24"
                   width="18"
@@ -2932,11 +2854,11 @@ exports[`<BlogList /> should render correctly with ssrBlogs 1`] = `
             <br />
             If you are unsure about your right to use them please 
             <a
-              class="c11"
+              class="c10"
               href="/contact"
             >
               <span
-                class="c12"
+                class="c11"
               >
                 contact me
               </span>

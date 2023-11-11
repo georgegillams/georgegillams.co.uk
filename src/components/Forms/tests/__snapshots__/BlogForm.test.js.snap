@@ -34,7 +34,7 @@ exports[`<BlogForm /> Should render correctly 1`] = `
   left: -0.35rem;
   content: '';
   display: block;
-  border: solid rgba(0,125,250,0.6) 0.2rem;
+  border: solid #007dfa3C 0.2rem;
   border-radius: 0.5rem;
   pointer-events: none;
 }
@@ -52,7 +52,7 @@ exports[`<BlogForm /> Should render correctly 1`] = `
 
 .c14:disabled {
   background-color: #cdcdd7;
-  color: rgb(100,100,100);
+  color: #646464;
 }
 
 .c16 {
@@ -82,7 +82,7 @@ exports[`<BlogForm /> Should render correctly 1`] = `
   align-items: center;
   border: 1px #b2b2bf solid;
   border-radius: 0.25rem;
-  background-color: white;
+  background-color: #ffffff;
 }
 
 .c1:focus-within,
@@ -100,7 +100,7 @@ exports[`<BlogForm /> Should render correctly 1`] = `
   left: -0.35rem;
   content: '';
   display: block;
-  border: solid rgba(0,125,250,0.6) 0.2rem;
+  border: solid #007dfa3C 0.2rem;
   border-radius: 0.5rem;
   pointer-events: none;
 }
@@ -130,7 +130,7 @@ exports[`<BlogForm /> Should render correctly 1`] = `
   height: 100%;
   margin: 0;
   border-radius: 0.2rem;
-  background: white;
+  background: #ffffff;
   box-shadow: 0 0 0 1px #cdcdd7 inset;
   cursor: pointer;
   -webkit-appearance: none;
@@ -154,7 +154,7 @@ exports[`<BlogForm /> Should render correctly 1`] = `
   left: -0.35rem;
   content: '';
   display: block;
-  border: solid rgba(0,125,250,0.6) 0.2rem;
+  border: solid #007dfa3C 0.2rem;
   border-radius: 0.5rem;
   pointer-events: none;
 }
@@ -246,7 +246,7 @@ exports[`<BlogForm /> Should render correctly 1`] = `
 @media (prefers-color-scheme:dark) {
   .c14:focus-within::after,
   .c14:focus::after {
-    border-color: rgba(0,125,250,0.6);
+    border-color: #007dfa3C;
   }
 }
 
@@ -274,42 +274,42 @@ exports[`<BlogForm /> Should render correctly 1`] = `
 
 @media (prefers-color-scheme:dark) {
   .c14:disabled {
-    background-color: rgb(89,89,89);
-    color: darkgray;
+    background-color: #595959;
+    color: #a9a9a9;
   }
 }
 
 @media (prefers-color-scheme:dark) {
   .c1:focus-within::after,
   .c1:focus::after {
-    border-color: rgba(0,125,250,0.6);
+    border-color: #007dfa3C;
   }
 }
 
 @media (prefers-color-scheme:dark) {
   .c1 {
     border-color: white;
-    background-color: black;
+    background-color: #000000;
   }
 }
 
 @media (prefers-color-scheme:dark) {
   .c9:focus-within::after,
   .c9:focus::after {
-    border-color: rgba(0,125,250,0.6);
+    border-color: #007dfa3C;
   }
 }
 
 @media (prefers-color-scheme:dark) {
   .c9 {
-    background: black;
+    background: #000000;
   }
 }
 
 @media (prefers-color-scheme:dark) {
   .c10 {
-    color: white;
-    fill: white;
+    color: #ffffff;
+    fill: #ffffff;
   }
 }
 
@@ -319,19 +319,19 @@ exports[`<BlogForm /> Should render correctly 1`] = `
 
 @media (prefers-color-scheme:dark) {
   .c11 {
-    color: white;
+    color: #ffffff;
   }
 }
 
 @media (prefers-color-scheme:dark) {
   .c0 {
-    color: white;
+    color: #ffffff;
   }
 }
 
 @media (prefers-color-scheme:dark) {
   .c3 {
-    color: white;
+    color: #ffffff;
   }
 }
 
@@ -343,7 +343,7 @@ exports[`<BlogForm /> Should render correctly 1`] = `
 
 @media (prefers-color-scheme:dark) {
   .c13 {
-    color: white;
+    color: #ffffff;
   }
 }
 
@@ -711,7 +711,7 @@ exports[`<BlogForm /> Should render correctly with no blog id 1`] = `
   left: -0.35rem;
   content: '';
   display: block;
-  border: solid rgba(0,125,250,0.6) 0.2rem;
+  border: solid #007dfa3C 0.2rem;
   border-radius: 0.5rem;
   pointer-events: none;
 }
@@ -729,7 +729,7 @@ exports[`<BlogForm /> Should render correctly with no blog id 1`] = `
 
 .c14:disabled {
   background-color: #cdcdd7;
-  color: rgb(100,100,100);
+  color: #646464;
 }
 
 .c16 {
@@ -759,7 +759,7 @@ exports[`<BlogForm /> Should render correctly with no blog id 1`] = `
   align-items: center;
   border: 1px #b2b2bf solid;
   border-radius: 0.25rem;
-  background-color: white;
+  background-color: #ffffff;
 }
 
 .c1:focus-within,
@@ -777,7 +777,7 @@ exports[`<BlogForm /> Should render correctly with no blog id 1`] = `
   left: -0.35rem;
   content: '';
   display: block;
-  border: solid rgba(0,125,250,0.6) 0.2rem;
+  border: solid #007dfa3C 0.2rem;
   border-radius: 0.5rem;
   pointer-events: none;
 }
@@ -807,7 +807,7 @@ exports[`<BlogForm /> Should render correctly with no blog id 1`] = `
   height: 100%;
   margin: 0;
   border-radius: 0.2rem;
-  background: white;
+  background: #ffffff;
   box-shadow: 0 0 0 1px #cdcdd7 inset;
   cursor: pointer;
   -webkit-appearance: none;
@@ -831,7 +831,7 @@ exports[`<BlogForm /> Should render correctly with no blog id 1`] = `
   left: -0.35rem;
   content: '';
   display: block;
-  border: solid rgba(0,125,250,0.6) 0.2rem;
+  border: solid #007dfa3C 0.2rem;
   border-radius: 0.5rem;
   pointer-events: none;
 }
@@ -923,7 +923,7 @@ exports[`<BlogForm /> Should render correctly with no blog id 1`] = `
 @media (prefers-color-scheme:dark) {
   .c14:focus-within::after,
   .c14:focus::after {
-    border-color: rgba(0,125,250,0.6);
+    border-color: #007dfa3C;
   }
 }
 
@@ -951,42 +951,42 @@ exports[`<BlogForm /> Should render correctly with no blog id 1`] = `
 
 @media (prefers-color-scheme:dark) {
   .c14:disabled {
-    background-color: rgb(89,89,89);
-    color: darkgray;
+    background-color: #595959;
+    color: #a9a9a9;
   }
 }
 
 @media (prefers-color-scheme:dark) {
   .c1:focus-within::after,
   .c1:focus::after {
-    border-color: rgba(0,125,250,0.6);
+    border-color: #007dfa3C;
   }
 }
 
 @media (prefers-color-scheme:dark) {
   .c1 {
     border-color: white;
-    background-color: black;
+    background-color: #000000;
   }
 }
 
 @media (prefers-color-scheme:dark) {
   .c9:focus-within::after,
   .c9:focus::after {
-    border-color: rgba(0,125,250,0.6);
+    border-color: #007dfa3C;
   }
 }
 
 @media (prefers-color-scheme:dark) {
   .c9 {
-    background: black;
+    background: #000000;
   }
 }
 
 @media (prefers-color-scheme:dark) {
   .c10 {
-    color: white;
-    fill: white;
+    color: #ffffff;
+    fill: #ffffff;
   }
 }
 
@@ -996,19 +996,19 @@ exports[`<BlogForm /> Should render correctly with no blog id 1`] = `
 
 @media (prefers-color-scheme:dark) {
   .c11 {
-    color: white;
+    color: #ffffff;
   }
 }
 
 @media (prefers-color-scheme:dark) {
   .c0 {
-    color: white;
+    color: #ffffff;
   }
 }
 
 @media (prefers-color-scheme:dark) {
   .c3 {
-    color: white;
+    color: #ffffff;
   }
 }
 
@@ -1020,7 +1020,7 @@ exports[`<BlogForm /> Should render correctly with no blog id 1`] = `
 
 @media (prefers-color-scheme:dark) {
   .c13 {
-    color: white;
+    color: #ffffff;
   }
 }
 

@@ -7,7 +7,6 @@ import {
 import Subsection from '@george-gillams/components/subsection';
 
 export const Wrapper = styled.div`
-  position: relative;
   display: flex;
   width: 100%;
   margin-top: ${spacingLg};
@@ -15,15 +14,6 @@ export const Wrapper = styled.div`
   padding-top: ${spacingBase};
   padding-bottom: ${spacingLg};
   justify-content: center;
-`;
-
-export const Background = styled.div`
-  position: absolute;
-  top: 0;
-  left: calc(50% - 50vw);
-  z-index: -1;
-  width: 100vw;
-  height: 100%;
   background-color: ${alternatingBackgroundColor1};
 
   @media (prefers-color-scheme: dark) {

@@ -2,14 +2,13 @@ import React from 'react';
 
 import Paragraph from '@george-gillams/components/paragraph';
 import TextLink from 'components/common/TextLink';
-import { Background, Inner, Wrapper } from './creative-commons.syles';
+import { Inner, Wrapper } from './creative-commons.syles';
 
 const CreativeCommons = props => {
   const { ...rest } = props;
 
   return (
     <Wrapper {...rest}>
-      <Background />
       <Inner anchor={false} name="Copyright">
         <Paragraph>
           Most of my photos are licensed under{' '}

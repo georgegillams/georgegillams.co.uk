@@ -8,8 +8,8 @@ exports[`<AdminAnalytics /> should render correctly - index 1`] = `
   -webkit-text-decoration: none;
   text-decoration: none;
   position: relative;
-  color: darkorchid;
-  fill: darkorchid;
+  color: #9932cc;
+  fill: #9932cc;
 }
 
 .c4:focus-within,
@@ -27,7 +27,7 @@ exports[`<AdminAnalytics /> should render correctly - index 1`] = `
   left: -0.35rem;
   content: '';
   display: block;
-  border: solid rgba(0,125,250,0.6) 0.2rem;
+  border: solid #007dfa3C 0.2rem;
   border-radius: 0.5rem;
   pointer-events: none;
 }
@@ -73,14 +73,14 @@ exports[`<AdminAnalytics /> should render correctly - index 1`] = `
 @media (prefers-color-scheme:dark) {
   .c4:focus-within::after,
   .c4:focus::after {
-    border-color: rgba(0,125,250,0.6);
+    border-color: #007dfa3C;
   }
 }
 
 @media (prefers-color-scheme:dark) {
   .c4 {
-    color: orchid;
-    fill: orchid;
+    color: #da70d6;
+    fill: #da70d6;
   }
 
   .c4:hover {
@@ -91,7 +91,7 @@ exports[`<AdminAnalytics /> should render correctly - index 1`] = `
 
 @media (prefers-color-scheme:dark) {
   .c0 {
-    color: white;
+    color: #ffffff;
   }
 }
 
@@ -133,8 +133,8 @@ exports[`<AdminAnalytics /> should render correctly with admin user 1`] = `
   -webkit-text-decoration: none;
   text-decoration: none;
   position: relative;
-  color: darkorchid;
-  fill: darkorchid;
+  color: #9932cc;
+  fill: #9932cc;
 }
 
 .c2:focus-within,
@@ -152,7 +152,7 @@ exports[`<AdminAnalytics /> should render correctly with admin user 1`] = `
   left: -0.35rem;
   content: '';
   display: block;
-  border: solid rgba(0,125,250,0.6) 0.2rem;
+  border: solid #007dfa3C 0.2rem;
   border-radius: 0.5rem;
   pointer-events: none;
 }
@@ -219,7 +219,7 @@ exports[`<AdminAnalytics /> should render correctly with admin user 1`] = `
   left: -0.35rem;
   content: '';
   display: block;
-  border: solid rgba(0,125,250,0.6) 0.2rem;
+  border: solid #007dfa3C 0.2rem;
   border-radius: 0.5rem;
   pointer-events: none;
 }
@@ -237,7 +237,7 @@ exports[`<AdminAnalytics /> should render correctly with admin user 1`] = `
 
 .c6:disabled {
   background-color: #cdcdd7;
-  color: rgb(100,100,100);
+  color: #646464;
 }
 
 .c8 {
@@ -276,14 +276,14 @@ exports[`<AdminAnalytics /> should render correctly with admin user 1`] = `
 @media (prefers-color-scheme:dark) {
   .c2:focus-within::after,
   .c2:focus::after {
-    border-color: rgba(0,125,250,0.6);
+    border-color: #007dfa3C;
   }
 }
 
 @media (prefers-color-scheme:dark) {
   .c2 {
-    color: orchid;
-    fill: orchid;
+    color: #da70d6;
+    fill: #da70d6;
   }
 
   .c2:hover {
@@ -295,7 +295,7 @@ exports[`<AdminAnalytics /> should render correctly with admin user 1`] = `
 @media (prefers-color-scheme:dark) {
   .c6:focus-within::after,
   .c6:focus::after {
-    border-color: rgba(0,125,250,0.6);
+    border-color: #007dfa3C;
   }
 }
 
@@ -323,8 +323,8 @@ exports[`<AdminAnalytics /> should render correctly with admin user 1`] = `
 
 @media (prefers-color-scheme:dark) {
   .c6:disabled {
-    background-color: rgb(89,89,89);
-    color: darkgray;
+    background-color: #595959;
+    color: #a9a9a9;
   }
 }
 
@@ -394,8 +394,8 @@ exports[`<AdminAnalytics /> should render correctly with analytics 1`] = `
   -webkit-text-decoration: none;
   text-decoration: none;
   position: relative;
-  color: darkorchid;
-  fill: darkorchid;
+  color: #9932cc;
+  fill: #9932cc;
 }
 
 .c2:focus-within,
@@ -413,7 +413,7 @@ exports[`<AdminAnalytics /> should render correctly with analytics 1`] = `
   left: -0.35rem;
   content: '';
   display: block;
-  border: solid rgba(0,125,250,0.6) 0.2rem;
+  border: solid #007dfa3C 0.2rem;
   border-radius: 0.5rem;
   pointer-events: none;
 }
@@ -480,7 +480,7 @@ exports[`<AdminAnalytics /> should render correctly with analytics 1`] = `
   left: -0.35rem;
   content: '';
   display: block;
-  border: solid rgba(0,125,250,0.6) 0.2rem;
+  border: solid #007dfa3C 0.2rem;
   border-radius: 0.5rem;
   pointer-events: none;
 }
@@ -498,7 +498,7 @@ exports[`<AdminAnalytics /> should render correctly with analytics 1`] = `
 
 .c6:disabled {
   background-color: #cdcdd7;
-  color: rgb(100,100,100);
+  color: #646464;
 }
 
 .c8 {
@@ -537,14 +537,14 @@ exports[`<AdminAnalytics /> should render correctly with analytics 1`] = `
 @media (prefers-color-scheme:dark) {
   .c2:focus-within::after,
   .c2:focus::after {
-    border-color: rgba(0,125,250,0.6);
+    border-color: #007dfa3C;
   }
 }
 
 @media (prefers-color-scheme:dark) {
   .c2 {
-    color: orchid;
-    fill: orchid;
+    color: #da70d6;
+    fill: #da70d6;
   }
 
   .c2:hover {
@@ -556,7 +556,7 @@ exports[`<AdminAnalytics /> should render correctly with analytics 1`] = `
 @media (prefers-color-scheme:dark) {
   .c6:focus-within::after,
   .c6:focus::after {
-    border-color: rgba(0,125,250,0.6);
+    border-color: #007dfa3C;
   }
 }
 
@@ -584,8 +584,8 @@ exports[`<AdminAnalytics /> should render correctly with analytics 1`] = `
 
 @media (prefers-color-scheme:dark) {
   .c6:disabled {
-    background-color: rgb(89,89,89);
-    color: darkgray;
+    background-color: #595959;
+    color: #a9a9a9;
   }
 }
 
@@ -655,8 +655,8 @@ exports[`<AdminAnalytics /> should render correctly with initial state 1`] = `
   -webkit-text-decoration: none;
   text-decoration: none;
   position: relative;
-  color: darkorchid;
-  fill: darkorchid;
+  color: #9932cc;
+  fill: #9932cc;
 }
 
 .c4:focus-within,
@@ -674,7 +674,7 @@ exports[`<AdminAnalytics /> should render correctly with initial state 1`] = `
   left: -0.35rem;
   content: '';
   display: block;
-  border: solid rgba(0,125,250,0.6) 0.2rem;
+  border: solid #007dfa3C 0.2rem;
   border-radius: 0.5rem;
   pointer-events: none;
 }
@@ -720,14 +720,14 @@ exports[`<AdminAnalytics /> should render correctly with initial state 1`] = `
 @media (prefers-color-scheme:dark) {
   .c4:focus-within::after,
   .c4:focus::after {
-    border-color: rgba(0,125,250,0.6);
+    border-color: #007dfa3C;
   }
 }
 
 @media (prefers-color-scheme:dark) {
   .c4 {
-    color: orchid;
-    fill: orchid;
+    color: #da70d6;
+    fill: #da70d6;
   }
 
   .c4:hover {
@@ -738,7 +738,7 @@ exports[`<AdminAnalytics /> should render correctly with initial state 1`] = `
 
 @media (prefers-color-scheme:dark) {
   .c0 {
-    color: white;
+    color: #ffffff;
   }
 }
 
@@ -838,7 +838,7 @@ exports[`<AdminAnalytics /> should render correctly with loadError 1`] = `
 
 @media (prefers-color-scheme:dark) {
   .c4 {
-    color: white;
+    color: #ffffff;
   }
 }
 
@@ -939,8 +939,8 @@ exports[`<AdminAnalytics /> should render correctly with loading=true 1`] = `
   -webkit-text-decoration: none;
   text-decoration: none;
   position: relative;
-  color: darkorchid;
-  fill: darkorchid;
+  color: #9932cc;
+  fill: #9932cc;
 }
 
 .c2:focus-within,
@@ -958,7 +958,7 @@ exports[`<AdminAnalytics /> should render correctly with loading=true 1`] = `
   left: -0.35rem;
   content: '';
   display: block;
-  border: solid rgba(0,125,250,0.6) 0.2rem;
+  border: solid #007dfa3C 0.2rem;
   border-radius: 0.5rem;
   pointer-events: none;
 }
@@ -1202,7 +1202,7 @@ exports[`<AdminAnalytics /> should render correctly with loading=true 1`] = `
   left: -0.35rem;
   content: '';
   display: block;
-  border: solid rgba(0,125,250,0.6) 0.2rem;
+  border: solid #007dfa3C 0.2rem;
   border-radius: 0.5rem;
   pointer-events: none;
 }
@@ -1220,7 +1220,7 @@ exports[`<AdminAnalytics /> should render correctly with loading=true 1`] = `
 
 .c6:disabled {
   background-color: #cdcdd7;
-  color: rgb(100,100,100);
+  color: #646464;
 }
 
 .c19 {
@@ -1256,7 +1256,7 @@ exports[`<AdminAnalytics /> should render correctly with loading=true 1`] = `
   left: -0.35rem;
   content: '';
   display: block;
-  border: solid rgba(0,125,250,0.6) 0.2rem;
+  border: solid #007dfa3C 0.2rem;
   border-radius: 0.5rem;
   pointer-events: none;
 }
@@ -1274,7 +1274,7 @@ exports[`<AdminAnalytics /> should render correctly with loading=true 1`] = `
 
 .c19:disabled {
   background-color: #cdcdd7;
-  color: rgb(100,100,100);
+  color: #646464;
 }
 
 .c8 {
@@ -1345,14 +1345,14 @@ exports[`<AdminAnalytics /> should render correctly with loading=true 1`] = `
 @media (prefers-color-scheme:dark) {
   .c2:focus-within::after,
   .c2:focus::after {
-    border-color: rgba(0,125,250,0.6);
+    border-color: #007dfa3C;
   }
 }
 
 @media (prefers-color-scheme:dark) {
   .c2 {
-    color: orchid;
-    fill: orchid;
+    color: #da70d6;
+    fill: #da70d6;
   }
 
   .c2:hover {
@@ -1363,14 +1363,14 @@ exports[`<AdminAnalytics /> should render correctly with loading=true 1`] = `
 
 @media (prefers-color-scheme:dark) {
   .c10 {
-    color: white;
+    color: #ffffff;
   }
 }
 
 @media (prefers-color-scheme:dark) {
   .c6:focus-within::after,
   .c6:focus::after {
-    border-color: rgba(0,125,250,0.6);
+    border-color: #007dfa3C;
   }
 }
 
@@ -1398,15 +1398,15 @@ exports[`<AdminAnalytics /> should render correctly with loading=true 1`] = `
 
 @media (prefers-color-scheme:dark) {
   .c6:disabled {
-    background-color: rgb(89,89,89);
-    color: darkgray;
+    background-color: #595959;
+    color: #a9a9a9;
   }
 }
 
 @media (prefers-color-scheme:dark) {
   .c19:focus-within::after,
   .c19:focus::after {
-    border-color: rgba(0,125,250,0.6);
+    border-color: #007dfa3C;
   }
 }
 
@@ -1434,8 +1434,8 @@ exports[`<AdminAnalytics /> should render correctly with loading=true 1`] = `
 
 @media (prefers-color-scheme:dark) {
   .c19:disabled {
-    background-color: rgb(89,89,89);
-    color: darkgray;
+    background-color: #595959;
+    color: #a9a9a9;
   }
 }
 
@@ -1539,8 +1539,8 @@ exports[`<AdminAnalytics /> should render correctly with user 1`] = `
   -webkit-text-decoration: none;
   text-decoration: none;
   position: relative;
-  color: darkorchid;
-  fill: darkorchid;
+  color: #9932cc;
+  fill: #9932cc;
 }
 
 .c4:focus-within,
@@ -1558,7 +1558,7 @@ exports[`<AdminAnalytics /> should render correctly with user 1`] = `
   left: -0.35rem;
   content: '';
   display: block;
-  border: solid rgba(0,125,250,0.6) 0.2rem;
+  border: solid #007dfa3C 0.2rem;
   border-radius: 0.5rem;
   pointer-events: none;
 }
@@ -1604,14 +1604,14 @@ exports[`<AdminAnalytics /> should render correctly with user 1`] = `
 @media (prefers-color-scheme:dark) {
   .c4:focus-within::after,
   .c4:focus::after {
-    border-color: rgba(0,125,250,0.6);
+    border-color: #007dfa3C;
   }
 }
 
 @media (prefers-color-scheme:dark) {
   .c4 {
-    color: orchid;
-    fill: orchid;
+    color: #da70d6;
+    fill: #da70d6;
   }
 
   .c4:hover {
@@ -1622,7 +1622,7 @@ exports[`<AdminAnalytics /> should render correctly with user 1`] = `
 
 @media (prefers-color-scheme:dark) {
   .c0 {
-    color: white;
+    color: #ffffff;
   }
 }
 

@@ -67,7 +67,7 @@ exports[`<Medals /> should render correctly 1`] = `
   left: -0.35rem;
   content: '';
   display: block;
-  border: solid rgba(0,125,250,0.6) 0.2rem;
+  border: solid #007dfa3C 0.2rem;
   border-radius: 0.5rem;
   pointer-events: none;
 }
@@ -103,7 +103,7 @@ exports[`<Medals /> should render correctly 1`] = `
   left: -0.35rem;
   content: '';
   display: block;
-  border: solid rgba(0,125,250,0.6) 0.2rem;
+  border: solid #007dfa3C 0.2rem;
   border-radius: 0.5rem;
   pointer-events: none;
 }
@@ -139,7 +139,7 @@ exports[`<Medals /> should render correctly 1`] = `
   left: -0.35rem;
   content: '';
   display: block;
-  border: solid rgba(0,125,250,0.6) 0.2rem;
+  border: solid #007dfa3C 0.2rem;
   border-radius: 0.5rem;
   pointer-events: none;
 }
@@ -175,7 +175,7 @@ exports[`<Medals /> should render correctly 1`] = `
   left: -0.35rem;
   content: '';
   display: block;
-  border: solid rgba(0,125,250,0.6) 0.2rem;
+  border: solid #007dfa3C 0.2rem;
   border-radius: 0.5rem;
   pointer-events: none;
 }
@@ -211,7 +211,7 @@ exports[`<Medals /> should render correctly 1`] = `
   left: -0.35rem;
   content: '';
   display: block;
-  border: solid rgba(0,125,250,0.6) 0.2rem;
+  border: solid #007dfa3C 0.2rem;
   border-radius: 0.5rem;
   pointer-events: none;
 }
@@ -247,7 +247,7 @@ exports[`<Medals /> should render correctly 1`] = `
   left: -0.35rem;
   content: '';
   display: block;
-  border: solid rgba(0,125,250,0.6) 0.2rem;
+  border: solid #007dfa3C 0.2rem;
   border-radius: 0.5rem;
   pointer-events: none;
 }
@@ -283,7 +283,7 @@ exports[`<Medals /> should render correctly 1`] = `
   left: -0.35rem;
   content: '';
   display: block;
-  border: solid rgba(0,125,250,0.6) 0.2rem;
+  border: solid #007dfa3C 0.2rem;
   border-radius: 0.5rem;
   pointer-events: none;
 }
@@ -319,7 +319,7 @@ exports[`<Medals /> should render correctly 1`] = `
   left: -0.35rem;
   content: '';
   display: block;
-  border: solid rgba(0,125,250,0.6) 0.2rem;
+  border: solid #007dfa3C 0.2rem;
   border-radius: 0.5rem;
   pointer-events: none;
 }
@@ -391,7 +391,7 @@ exports[`<Medals /> should render correctly 1`] = `
   padding: calc(3 * 1rem);
   min-width: calc(8 * 2rem);
   border-radius: 0.375rem;
-  box-shadow: 0.2rem 0.2rem 0.5rem 0 rgba(37,32,31,0.3);
+  box-shadow: 0.2rem 0.2rem 0.5rem 0 #25201f1E;
   background: rgb(255,120,26);
   color: #1e1e1e;
   fill: #1e1e1e;
@@ -416,7 +416,7 @@ exports[`<Medals /> should render correctly 1`] = `
   padding: calc(3 * 1rem);
   min-width: calc(8 * 2rem);
   border-radius: 0.375rem;
-  box-shadow: 0.2rem 0.2rem 0.5rem 0 rgba(37,32,31,0.3);
+  box-shadow: 0.2rem 0.2rem 0.5rem 0 #25201f1E;
   background: white;
   color: rgb(255,120,26);
   fill: rgb(255,120,26);
@@ -441,7 +441,7 @@ exports[`<Medals /> should render correctly 1`] = `
   padding: calc(3 * 1rem);
   min-width: calc(8 * 2rem);
   border-radius: 0.375rem;
-  box-shadow: 0.2rem 0.2rem 0.5rem 0 rgba(37,32,31,0.3);
+  box-shadow: 0.2rem 0.2rem 0.5rem 0 #25201f1E;
   background: #94e564;
   color: #1e1e1e;
   fill: #1e1e1e;
@@ -466,7 +466,7 @@ exports[`<Medals /> should render correctly 1`] = `
   padding: calc(3 * 1rem);
   min-width: calc(8 * 2rem);
   border-radius: 0.375rem;
-  box-shadow: 0.2rem 0.2rem 0.5rem 0 rgba(37,32,31,0.3);
+  box-shadow: 0.2rem 0.2rem 0.5rem 0 #25201f1E;
   background: #11aadd;
   color: #1e1e1e;
   fill: #1e1e1e;
@@ -491,7 +491,7 @@ exports[`<Medals /> should render correctly 1`] = `
   padding: calc(3 * 1rem);
   min-width: calc(8 * 2rem);
   border-radius: 0.375rem;
-  box-shadow: 0.2rem 0.2rem 0.5rem 0 rgba(37,32,31,0.3);
+  box-shadow: 0.2rem 0.2rem 0.5rem 0 #25201f1E;
   background: #f1fc58;
   color: #1e1e1e;
   fill: #1e1e1e;
@@ -516,7 +516,7 @@ exports[`<Medals /> should render correctly 1`] = `
   padding: calc(3 * 1rem);
   min-width: calc(8 * 2rem);
   border-radius: 0.375rem;
-  box-shadow: 0.2rem 0.2rem 0.5rem 0 rgba(37,32,31,0.3);
+  box-shadow: 0.2rem 0.2rem 0.5rem 0 #25201f1E;
   background: #1e1e1e;
   color: #FFF200;
   fill: #FFF200;
@@ -541,7 +541,7 @@ exports[`<Medals /> should render correctly 1`] = `
   padding: calc(3 * 1rem);
   min-width: calc(8 * 2rem);
   border-radius: 0.375rem;
-  box-shadow: 0.2rem 0.2rem 0.5rem 0 rgba(37,32,31,0.3);
+  box-shadow: 0.2rem 0.2rem 0.5rem 0 #25201f1E;
   background: #93D50A;
   color: #1e1e1e;
   fill: #1e1e1e;
@@ -566,7 +566,7 @@ exports[`<Medals /> should render correctly 1`] = `
   padding: calc(3 * 1rem);
   min-width: calc(8 * 2rem);
   border-radius: 0.375rem;
-  box-shadow: 0.2rem 0.2rem 0.5rem 0 rgba(37,32,31,0.3);
+  box-shadow: 0.2rem 0.2rem 0.5rem 0 #25201f1E;
   background: #FF4E00;
   color: white;
   fill: white;
@@ -591,7 +591,7 @@ exports[`<Medals /> should render correctly 1`] = `
   padding: calc(3 * 1rem);
   min-width: calc(8 * 2rem);
   border-radius: 0.375rem;
-  box-shadow: 0.2rem 0.2rem 0.5rem 0 rgba(37,32,31,0.3);
+  box-shadow: 0.2rem 0.2rem 0.5rem 0 #25201f1E;
   background: #0D313D;
   color: #CE9708;
   fill: #CE9708;
@@ -616,7 +616,7 @@ exports[`<Medals /> should render correctly 1`] = `
   padding: calc(3 * 1rem);
   min-width: calc(8 * 2rem);
   border-radius: 0.375rem;
-  box-shadow: 0.2rem 0.2rem 0.5rem 0 rgba(37,32,31,0.3);
+  box-shadow: 0.2rem 0.2rem 0.5rem 0 #25201f1E;
   background: #0D492C;
   color: white;
   fill: white;
@@ -955,7 +955,7 @@ exports[`<Medals /> should render correctly 1`] = `
 @media (prefers-color-scheme:dark) {
   .c16:focus-within::after,
   .c16:focus::after {
-    border-color: rgba(0,125,250,0.6);
+    border-color: #007dfa3C;
   }
 }
 
@@ -974,7 +974,7 @@ exports[`<Medals /> should render correctly 1`] = `
 @media (prefers-color-scheme:dark) {
   .c19:focus-within::after,
   .c19:focus::after {
-    border-color: rgba(0,125,250,0.6);
+    border-color: #007dfa3C;
   }
 }
 
@@ -993,7 +993,7 @@ exports[`<Medals /> should render correctly 1`] = `
 @media (prefers-color-scheme:dark) {
   .c38:focus-within::after,
   .c38:focus::after {
-    border-color: rgba(0,125,250,0.6);
+    border-color: #007dfa3C;
   }
 }
 
@@ -1012,7 +1012,7 @@ exports[`<Medals /> should render correctly 1`] = `
 @media (prefers-color-scheme:dark) {
   .c41:focus-within::after,
   .c41:focus::after {
-    border-color: rgba(0,125,250,0.6);
+    border-color: #007dfa3C;
   }
 }
 
@@ -1031,7 +1031,7 @@ exports[`<Medals /> should render correctly 1`] = `
 @media (prefers-color-scheme:dark) {
   .c43:focus-within::after,
   .c43:focus::after {
-    border-color: rgba(0,125,250,0.6);
+    border-color: #007dfa3C;
   }
 }
 
@@ -1050,7 +1050,7 @@ exports[`<Medals /> should render correctly 1`] = `
 @media (prefers-color-scheme:dark) {
   .c86:focus-within::after,
   .c86:focus::after {
-    border-color: rgba(0,125,250,0.6);
+    border-color: #007dfa3C;
   }
 }
 
@@ -1069,7 +1069,7 @@ exports[`<Medals /> should render correctly 1`] = `
 @media (prefers-color-scheme:dark) {
   .c89:focus-within::after,
   .c89:focus::after {
-    border-color: rgba(0,125,250,0.6);
+    border-color: #007dfa3C;
   }
 }
 
@@ -1088,7 +1088,7 @@ exports[`<Medals /> should render correctly 1`] = `
 @media (prefers-color-scheme:dark) {
   .c91:focus-within::after,
   .c91:focus::after {
-    border-color: rgba(0,125,250,0.6);
+    border-color: #007dfa3C;
   }
 }
 
@@ -1106,7 +1106,7 @@ exports[`<Medals /> should render correctly 1`] = `
 
 @media (prefers-color-scheme:dark) {
   .c5 {
-    color: white;
+    color: #ffffff;
   }
 }
 
@@ -1119,61 +1119,61 @@ exports[`<Medals /> should render correctly 1`] = `
 
 @media (prefers-color-scheme:dark) {
   .c10 {
-    box-shadow: 0.44rem 0.44rem 1rem 0 transparent;
+    box-shadow: 0.44rem 0.44rem 1rem 0 #00000000;
   }
 }
 
 @media (prefers-color-scheme:dark) {
   .c18 {
-    box-shadow: 0.44rem 0.44rem 1rem 0 transparent;
+    box-shadow: 0.44rem 0.44rem 1rem 0 #00000000;
   }
 }
 
 @media (prefers-color-scheme:dark) {
   .c22 {
-    box-shadow: 0.44rem 0.44rem 1rem 0 transparent;
+    box-shadow: 0.44rem 0.44rem 1rem 0 #00000000;
   }
 }
 
 @media (prefers-color-scheme:dark) {
   .c23 {
-    box-shadow: 0.44rem 0.44rem 1rem 0 transparent;
+    box-shadow: 0.44rem 0.44rem 1rem 0 #00000000;
   }
 }
 
 @media (prefers-color-scheme:dark) {
   .c24 {
-    box-shadow: 0.44rem 0.44rem 1rem 0 transparent;
+    box-shadow: 0.44rem 0.44rem 1rem 0 #00000000;
   }
 }
 
 @media (prefers-color-scheme:dark) {
   .c85 {
-    box-shadow: 0.44rem 0.44rem 1rem 0 transparent;
+    box-shadow: 0.44rem 0.44rem 1rem 0 #00000000;
   }
 }
 
 @media (prefers-color-scheme:dark) {
   .c87 {
-    box-shadow: 0.44rem 0.44rem 1rem 0 transparent;
+    box-shadow: 0.44rem 0.44rem 1rem 0 #00000000;
   }
 }
 
 @media (prefers-color-scheme:dark) {
   .c88 {
-    box-shadow: 0.44rem 0.44rem 1rem 0 transparent;
+    box-shadow: 0.44rem 0.44rem 1rem 0 #00000000;
   }
 }
 
 @media (prefers-color-scheme:dark) {
   .c90 {
-    box-shadow: 0.44rem 0.44rem 1rem 0 transparent;
+    box-shadow: 0.44rem 0.44rem 1rem 0 #00000000;
   }
 }
 
 @media (prefers-color-scheme:dark) {
   .c92 {
-    box-shadow: 0.44rem 0.44rem 1rem 0 transparent;
+    box-shadow: 0.44rem 0.44rem 1rem 0 #00000000;
   }
 }
 

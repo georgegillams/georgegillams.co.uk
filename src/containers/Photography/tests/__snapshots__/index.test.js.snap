@@ -13,8 +13,8 @@ exports[`<Photography /> should render correctly - index 1`] = `
   -webkit-text-decoration: none;
   text-decoration: none;
   position: relative;
-  color: darkorchid;
-  fill: darkorchid;
+  color: #9932cc;
+  fill: #9932cc;
 }
 
 .c4:focus-within,
@@ -32,7 +32,7 @@ exports[`<Photography /> should render correctly - index 1`] = `
   left: -0.35rem;
   content: '';
   display: block;
-  border: solid rgba(0,125,250,0.6) 0.2rem;
+  border: solid #007dfa3C 0.2rem;
   border-radius: 0.5rem;
   pointer-events: none;
 }
@@ -66,7 +66,7 @@ exports[`<Photography /> should render correctly - index 1`] = `
   font-weight: bold;
 }
 
-.c13 {
+.c12 {
   margin: 0;
   font-size: 1.5rem;
   font-weight: bold;
@@ -92,7 +92,7 @@ exports[`<Photography /> should render correctly - index 1`] = `
   animation: bbwGtI 0.4s ease-in-out;
 }
 
-.c15 {
+.c14 {
   display: inline-block;
   margin-bottom: 0;
   padding-bottom: 0;
@@ -100,23 +100,22 @@ exports[`<Photography /> should render correctly - index 1`] = `
   margin-top: 2rem;
 }
 
-.c15:first-of-type {
+.c14:first-of-type {
   margin-top: 0.86rem;
 }
 
-.c11 {
+.c10 {
   width: 100%;
   color: #1e1e1e;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
-.c14 {
+.c13 {
   margin: 2.13rem 0 0 0;
 }
 
 .c9 {
-  position: relative;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -130,19 +129,10 @@ exports[`<Photography /> should render correctly - index 1`] = `
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-}
-
-.c10 {
-  position: absolute;
-  top: 0;
-  left: calc(50% - 50vw);
-  z-index: -1;
-  width: 100vw;
-  height: 100%;
   background-color: #fbfbfb;
 }
 
-.c12 {
+.c11 {
   width: 100%;
   padding-right: 1.875rem;
   padding-left: 1.865rem;
@@ -152,14 +142,14 @@ exports[`<Photography /> should render correctly - index 1`] = `
 @media (prefers-color-scheme:dark) {
   .c4:focus-within::after,
   .c4:focus::after {
-    border-color: rgba(0,125,250,0.6);
+    border-color: #007dfa3C;
   }
 }
 
 @media (prefers-color-scheme:dark) {
   .c4 {
-    color: orchid;
-    fill: orchid;
+    color: #da70d6;
+    fill: #da70d6;
   }
 
   .c4:hover {
@@ -169,13 +159,13 @@ exports[`<Photography /> should render correctly - index 1`] = `
 }
 
 @media (prefers-color-scheme:dark) {
-  .c11 {
-    color: white;
+  .c10 {
+    color: #ffffff;
   }
 }
 
 @media (prefers-color-scheme:dark) {
-  .c10 {
+  .c9 {
     background-color: #121313;
   }
 }
@@ -470,19 +460,16 @@ exports[`<Photography /> should render correctly - index 1`] = `
         class="c9"
       >
         <div
-          class="c10"
-        />
-        <div
-          class="c11 c12"
+          class="c10 c11"
         >
           <h1
-            class="c13 c14"
+            class="c12 c13"
             id="copyright"
           >
             Copyright
           </h1>
           <span
-            class="c15"
+            class="c14"
           >
             Most of my photos are licensed under
              
@@ -549,8 +536,8 @@ exports[`<Photography /> should render correctly when loading 1`] = `
   -webkit-text-decoration: none;
   text-decoration: none;
   position: relative;
-  color: darkorchid;
-  fill: darkorchid;
+  color: #9932cc;
+  fill: #9932cc;
 }
 
 .c4:focus-within,
@@ -568,7 +555,7 @@ exports[`<Photography /> should render correctly when loading 1`] = `
   left: -0.35rem;
   content: '';
   display: block;
-  border: solid rgba(0,125,250,0.6) 0.2rem;
+  border: solid #007dfa3C 0.2rem;
   border-radius: 0.5rem;
   pointer-events: none;
 }
@@ -602,7 +589,7 @@ exports[`<Photography /> should render correctly when loading 1`] = `
   font-weight: bold;
 }
 
-.c13 {
+.c12 {
   margin: 0;
   font-size: 1.5rem;
   font-weight: bold;
@@ -628,7 +615,7 @@ exports[`<Photography /> should render correctly when loading 1`] = `
   animation: bbwGtI 0.4s ease-in-out;
 }
 
-.c15 {
+.c14 {
   display: inline-block;
   margin-bottom: 0;
   padding-bottom: 0;
@@ -636,23 +623,22 @@ exports[`<Photography /> should render correctly when loading 1`] = `
   margin-top: 2rem;
 }
 
-.c15:first-of-type {
+.c14:first-of-type {
   margin-top: 0.86rem;
 }
 
-.c11 {
+.c10 {
   width: 100%;
   color: #1e1e1e;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
-.c14 {
+.c13 {
   margin: 2.13rem 0 0 0;
 }
 
 .c9 {
-  position: relative;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -666,19 +652,10 @@ exports[`<Photography /> should render correctly when loading 1`] = `
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-}
-
-.c10 {
-  position: absolute;
-  top: 0;
-  left: calc(50% - 50vw);
-  z-index: -1;
-  width: 100vw;
-  height: 100%;
   background-color: #fbfbfb;
 }
 
-.c12 {
+.c11 {
   width: 100%;
   padding-right: 1.875rem;
   padding-left: 1.865rem;
@@ -688,14 +665,14 @@ exports[`<Photography /> should render correctly when loading 1`] = `
 @media (prefers-color-scheme:dark) {
   .c4:focus-within::after,
   .c4:focus::after {
-    border-color: rgba(0,125,250,0.6);
+    border-color: #007dfa3C;
   }
 }
 
 @media (prefers-color-scheme:dark) {
   .c4 {
-    color: orchid;
-    fill: orchid;
+    color: #da70d6;
+    fill: #da70d6;
   }
 
   .c4:hover {
@@ -705,13 +682,13 @@ exports[`<Photography /> should render correctly when loading 1`] = `
 }
 
 @media (prefers-color-scheme:dark) {
-  .c11 {
-    color: white;
+  .c10 {
+    color: #ffffff;
   }
 }
 
 @media (prefers-color-scheme:dark) {
-  .c10 {
+  .c9 {
     background-color: #121313;
   }
 }
@@ -1006,19 +983,16 @@ exports[`<Photography /> should render correctly when loading 1`] = `
         class="c9"
       >
         <div
-          class="c10"
-        />
-        <div
-          class="c11 c12"
+          class="c10 c11"
         >
           <h1
-            class="c13 c14"
+            class="c12 c13"
             id="copyright"
           >
             Copyright
           </h1>
           <span
-            class="c15"
+            class="c14"
           >
             Most of my photos are licensed under
              
@@ -1085,8 +1059,8 @@ exports[`<Photography /> should render correctly with initial state 1`] = `
   -webkit-text-decoration: none;
   text-decoration: none;
   position: relative;
-  color: darkorchid;
-  fill: darkorchid;
+  color: #9932cc;
+  fill: #9932cc;
 }
 
 .c4:focus-within,
@@ -1104,7 +1078,7 @@ exports[`<Photography /> should render correctly with initial state 1`] = `
   left: -0.35rem;
   content: '';
   display: block;
-  border: solid rgba(0,125,250,0.6) 0.2rem;
+  border: solid #007dfa3C 0.2rem;
   border-radius: 0.5rem;
   pointer-events: none;
 }
@@ -1138,7 +1112,7 @@ exports[`<Photography /> should render correctly with initial state 1`] = `
   font-weight: bold;
 }
 
-.c13 {
+.c12 {
   margin: 0;
   font-size: 1.5rem;
   font-weight: bold;
@@ -1164,7 +1138,7 @@ exports[`<Photography /> should render correctly with initial state 1`] = `
   animation: bbwGtI 0.4s ease-in-out;
 }
 
-.c15 {
+.c14 {
   display: inline-block;
   margin-bottom: 0;
   padding-bottom: 0;
@@ -1172,23 +1146,22 @@ exports[`<Photography /> should render correctly with initial state 1`] = `
   margin-top: 2rem;
 }
 
-.c15:first-of-type {
+.c14:first-of-type {
   margin-top: 0.86rem;
 }
 
-.c11 {
+.c10 {
   width: 100%;
   color: #1e1e1e;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
-.c14 {
+.c13 {
   margin: 2.13rem 0 0 0;
 }
 
 .c9 {
-  position: relative;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1202,19 +1175,10 @@ exports[`<Photography /> should render correctly with initial state 1`] = `
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-}
-
-.c10 {
-  position: absolute;
-  top: 0;
-  left: calc(50% - 50vw);
-  z-index: -1;
-  width: 100vw;
-  height: 100%;
   background-color: #fbfbfb;
 }
 
-.c12 {
+.c11 {
   width: 100%;
   padding-right: 1.875rem;
   padding-left: 1.865rem;
@@ -1224,14 +1188,14 @@ exports[`<Photography /> should render correctly with initial state 1`] = `
 @media (prefers-color-scheme:dark) {
   .c4:focus-within::after,
   .c4:focus::after {
-    border-color: rgba(0,125,250,0.6);
+    border-color: #007dfa3C;
   }
 }
 
 @media (prefers-color-scheme:dark) {
   .c4 {
-    color: orchid;
-    fill: orchid;
+    color: #da70d6;
+    fill: #da70d6;
   }
 
   .c4:hover {
@@ -1241,13 +1205,13 @@ exports[`<Photography /> should render correctly with initial state 1`] = `
 }
 
 @media (prefers-color-scheme:dark) {
-  .c11 {
-    color: white;
+  .c10 {
+    color: #ffffff;
   }
 }
 
 @media (prefers-color-scheme:dark) {
-  .c10 {
+  .c9 {
     background-color: #121313;
   }
 }
@@ -1542,19 +1506,16 @@ exports[`<Photography /> should render correctly with initial state 1`] = `
         class="c9"
       >
         <div
-          class="c10"
-        />
-        <div
-          class="c11 c12"
+          class="c10 c11"
         >
           <h1
-            class="c13 c14"
+            class="c12 c13"
             id="copyright"
           >
             Copyright
           </h1>
           <span
-            class="c15"
+            class="c14"
           >
             Most of my photos are licensed under
              
@@ -1621,8 +1582,8 @@ exports[`<Photography /> should render correctly with loadError 1`] = `
   -webkit-text-decoration: none;
   text-decoration: none;
   position: relative;
-  color: darkorchid;
-  fill: darkorchid;
+  color: #9932cc;
+  fill: #9932cc;
 }
 
 .c4:focus-within,
@@ -1640,7 +1601,7 @@ exports[`<Photography /> should render correctly with loadError 1`] = `
   left: -0.35rem;
   content: '';
   display: block;
-  border: solid rgba(0,125,250,0.6) 0.2rem;
+  border: solid #007dfa3C 0.2rem;
   border-radius: 0.5rem;
   pointer-events: none;
 }
@@ -1674,7 +1635,7 @@ exports[`<Photography /> should render correctly with loadError 1`] = `
   font-weight: bold;
 }
 
-.c13 {
+.c12 {
   margin: 0;
   font-size: 1.5rem;
   font-weight: bold;
@@ -1700,7 +1661,7 @@ exports[`<Photography /> should render correctly with loadError 1`] = `
   animation: bbwGtI 0.4s ease-in-out;
 }
 
-.c15 {
+.c14 {
   display: inline-block;
   margin-bottom: 0;
   padding-bottom: 0;
@@ -1708,23 +1669,22 @@ exports[`<Photography /> should render correctly with loadError 1`] = `
   margin-top: 2rem;
 }
 
-.c15:first-of-type {
+.c14:first-of-type {
   margin-top: 0.86rem;
 }
 
-.c11 {
+.c10 {
   width: 100%;
   color: #1e1e1e;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
-.c14 {
+.c13 {
   margin: 2.13rem 0 0 0;
 }
 
 .c9 {
-  position: relative;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1738,19 +1698,10 @@ exports[`<Photography /> should render correctly with loadError 1`] = `
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-}
-
-.c10 {
-  position: absolute;
-  top: 0;
-  left: calc(50% - 50vw);
-  z-index: -1;
-  width: 100vw;
-  height: 100%;
   background-color: #fbfbfb;
 }
 
-.c12 {
+.c11 {
   width: 100%;
   padding-right: 1.875rem;
   padding-left: 1.865rem;
@@ -1760,14 +1711,14 @@ exports[`<Photography /> should render correctly with loadError 1`] = `
 @media (prefers-color-scheme:dark) {
   .c4:focus-within::after,
   .c4:focus::after {
-    border-color: rgba(0,125,250,0.6);
+    border-color: #007dfa3C;
   }
 }
 
 @media (prefers-color-scheme:dark) {
   .c4 {
-    color: orchid;
-    fill: orchid;
+    color: #da70d6;
+    fill: #da70d6;
   }
 
   .c4:hover {
@@ -1777,13 +1728,13 @@ exports[`<Photography /> should render correctly with loadError 1`] = `
 }
 
 @media (prefers-color-scheme:dark) {
-  .c11 {
-    color: white;
+  .c10 {
+    color: #ffffff;
   }
 }
 
 @media (prefers-color-scheme:dark) {
-  .c10 {
+  .c9 {
     background-color: #121313;
   }
 }
@@ -2078,19 +2029,16 @@ exports[`<Photography /> should render correctly with loadError 1`] = `
         class="c9"
       >
         <div
-          class="c10"
-        />
-        <div
-          class="c11 c12"
+          class="c10 c11"
         >
           <h1
-            class="c13 c14"
+            class="c12 c13"
             id="copyright"
           >
             Copyright
           </h1>
           <span
-            class="c15"
+            class="c14"
           >
             Most of my photos are licensed under
              
@@ -2157,8 +2105,8 @@ exports[`<Photography /> should render correctly with photos 1`] = `
   -webkit-text-decoration: none;
   text-decoration: none;
   position: relative;
-  color: darkorchid;
-  fill: darkorchid;
+  color: #9932cc;
+  fill: #9932cc;
 }
 
 .c4:focus-within,
@@ -2176,7 +2124,7 @@ exports[`<Photography /> should render correctly with photos 1`] = `
   left: -0.35rem;
   content: '';
   display: block;
-  border: solid rgba(0,125,250,0.6) 0.2rem;
+  border: solid #007dfa3C 0.2rem;
   border-radius: 0.5rem;
   pointer-events: none;
 }
@@ -2210,7 +2158,7 @@ exports[`<Photography /> should render correctly with photos 1`] = `
   font-weight: bold;
 }
 
-.c13 {
+.c12 {
   margin: 0;
   font-size: 1.5rem;
   font-weight: bold;
@@ -2236,7 +2184,7 @@ exports[`<Photography /> should render correctly with photos 1`] = `
   animation: bbwGtI 0.4s ease-in-out;
 }
 
-.c15 {
+.c14 {
   display: inline-block;
   margin-bottom: 0;
   padding-bottom: 0;
@@ -2244,23 +2192,22 @@ exports[`<Photography /> should render correctly with photos 1`] = `
   margin-top: 2rem;
 }
 
-.c15:first-of-type {
+.c14:first-of-type {
   margin-top: 0.86rem;
 }
 
-.c11 {
+.c10 {
   width: 100%;
   color: #1e1e1e;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
-.c14 {
+.c13 {
   margin: 2.13rem 0 0 0;
 }
 
 .c9 {
-  position: relative;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2274,19 +2221,10 @@ exports[`<Photography /> should render correctly with photos 1`] = `
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-}
-
-.c10 {
-  position: absolute;
-  top: 0;
-  left: calc(50% - 50vw);
-  z-index: -1;
-  width: 100vw;
-  height: 100%;
   background-color: #fbfbfb;
 }
 
-.c12 {
+.c11 {
   width: 100%;
   padding-right: 1.875rem;
   padding-left: 1.865rem;
@@ -2296,14 +2234,14 @@ exports[`<Photography /> should render correctly with photos 1`] = `
 @media (prefers-color-scheme:dark) {
   .c4:focus-within::after,
   .c4:focus::after {
-    border-color: rgba(0,125,250,0.6);
+    border-color: #007dfa3C;
   }
 }
 
 @media (prefers-color-scheme:dark) {
   .c4 {
-    color: orchid;
-    fill: orchid;
+    color: #da70d6;
+    fill: #da70d6;
   }
 
   .c4:hover {
@@ -2313,13 +2251,13 @@ exports[`<Photography /> should render correctly with photos 1`] = `
 }
 
 @media (prefers-color-scheme:dark) {
-  .c11 {
-    color: white;
+  .c10 {
+    color: #ffffff;
   }
 }
 
 @media (prefers-color-scheme:dark) {
-  .c10 {
+  .c9 {
     background-color: #121313;
   }
 }
@@ -2614,19 +2552,16 @@ exports[`<Photography /> should render correctly with photos 1`] = `
         class="c9"
       >
         <div
-          class="c10"
-        />
-        <div
-          class="c11 c12"
+          class="c10 c11"
         >
           <h1
-            class="c13 c14"
+            class="c12 c13"
             id="copyright"
           >
             Copyright
           </h1>
           <span
-            class="c15"
+            class="c14"
           >
             Most of my photos are licensed under
              

@@ -36,8 +36,8 @@ exports[`<HomePage /> should render correctly 1`] = `
   -webkit-text-decoration: none;
   text-decoration: none;
   position: relative;
-  color: darkorchid;
-  fill: darkorchid;
+  color: #9932cc;
+  fill: #9932cc;
 }
 
 .c11:focus-within,
@@ -55,7 +55,7 @@ exports[`<HomePage /> should render correctly 1`] = `
   left: -0.35rem;
   content: '';
   display: block;
-  border: solid rgba(0,125,250,0.6) 0.2rem;
+  border: solid #007dfa3C 0.2rem;
   border-radius: 0.5rem;
   pointer-events: none;
 }
@@ -91,7 +91,7 @@ exports[`<HomePage /> should render correctly 1`] = `
   left: -0.35rem;
   content: '';
   display: block;
-  border: solid rgba(0,125,250,0.6) 0.2rem;
+  border: solid #007dfa3C 0.2rem;
   border-radius: 0.5rem;
   pointer-events: none;
 }
@@ -341,7 +341,7 @@ exports[`<HomePage /> should render correctly 1`] = `
   width: 100%;
   -webkit-text-decoration: none;
   text-decoration: none;
-  box-shadow: 0.2rem 0.2rem 0.5rem 0 rgba(37,32,31,0.3);
+  box-shadow: 0.2rem 0.2rem 0.5rem 0 #25201f1E;
   cursor: pointer;
   box-sizing: border-box;
   padding: 0;
@@ -359,7 +359,7 @@ exports[`<HomePage /> should render correctly 1`] = `
 
 .c30:not(:disabled):focus,.c30:not(:disabled):focus-within,
 .c30:not(:disabled):active,.c30:not(:disabled):hover {
-  box-shadow: 0.4rem 0.4rem 1rem 0 rgba(37,32,31,0.3);
+  box-shadow: 0.4rem 0.4rem 1rem 0 #25201f1E;
 }
 
 .c33 {
@@ -379,7 +379,7 @@ exports[`<HomePage /> should render correctly 1`] = `
   height: calc(100% + 2rem);
   margin-top: -1rem;
   margin-left: -1rem;
-  background-color: white;
+  background-color: #ffffff;
   background-position: center;
   background-size: cover;
 }
@@ -422,7 +422,7 @@ exports[`<HomePage /> should render correctly 1`] = `
   left: -0.35rem;
   content: '';
   display: block;
-  border: solid rgba(0,125,250,0.6) 0.2rem;
+  border: solid #007dfa3C 0.2rem;
   border-radius: 0.5rem;
   pointer-events: none;
 }
@@ -440,7 +440,7 @@ exports[`<HomePage /> should render correctly 1`] = `
 
 .c41:disabled {
   background-color: #cdcdd7;
-  color: rgb(100,100,100);
+  color: #646464;
 }
 
 .c43 {
@@ -741,7 +741,7 @@ exports[`<HomePage /> should render correctly 1`] = `
   transform: rotate(20deg);
   -webkit-transition: left 0.4s ease-in-out;
   transition: left 0.4s ease-in-out;
-  background-color: white;
+  background-color: #ffffff;
   -webkit-filter: blur(1.5rem);
   filter: blur(1.5rem);
   pointer-events: none;
@@ -761,10 +761,12 @@ exports[`<HomePage /> should render correctly 1`] = `
   -ms-flex-align: center;
   align-items: center;
   text-align: left;
+  padding-top: 2rem;
 }
 
 .c74 {
   font-size: 1.2rem;
+  text-align: center;
 }
 
 .c24 {
@@ -818,7 +820,7 @@ exports[`<HomePage /> should render correctly 1`] = `
   left: -0.35rem;
   content: '';
   display: block;
-  border: solid rgba(0,125,250,0.6) 0.2rem;
+  border: solid #007dfa3C 0.2rem;
   border-radius: 0.5rem;
   pointer-events: none;
 }
@@ -930,7 +932,7 @@ exports[`<HomePage /> should render correctly 1`] = `
   background-color: #1e1e1e;
   background-position: center;
   background-size: cover;
-  color: white;
+  color: #ffffff;
 }
 
 .c81 {
@@ -961,14 +963,14 @@ exports[`<HomePage /> should render correctly 1`] = `
 @media (prefers-color-scheme:dark) {
   .c11:focus-within::after,
   .c11:focus::after {
-    border-color: rgba(0,125,250,0.6);
+    border-color: #007dfa3C;
   }
 }
 
 @media (prefers-color-scheme:dark) {
   .c11 {
-    color: orchid;
-    fill: orchid;
+    color: #da70d6;
+    fill: #da70d6;
   }
 
   .c11:hover {
@@ -980,7 +982,7 @@ exports[`<HomePage /> should render correctly 1`] = `
 @media (prefers-color-scheme:dark) {
   .c89:focus-within::after,
   .c89:focus::after {
-    border-color: rgba(0,125,250,0.6);
+    border-color: #007dfa3C;
   }
 }
 
@@ -1063,20 +1065,20 @@ exports[`<HomePage /> should render correctly 1`] = `
 
 @media (prefers-color-scheme:dark) {
   .c25 {
-    color: white;
+    color: #ffffff;
   }
 }
 
 @media (prefers-color-scheme:dark) {
   .c30 {
-    box-shadow: 0.44rem 0.44rem 1rem 0 transparent;
+    box-shadow: 0.44rem 0.44rem 1rem 0 #00000000;
   }
 }
 
 @media (prefers-color-scheme:dark) {
   .c30:not(:disabled):focus,.c30:not(:disabled):focus-within,
   .c30:not(:disabled):active,.c30:not(:disabled):hover {
-    box-shadow: 0.2rem 0.2rem 0.5rem 0 transparent;
+    box-shadow: 0.2rem 0.2rem 0.5rem 0 #00000000;
   }
 }
 
@@ -1089,7 +1091,7 @@ exports[`<HomePage /> should render correctly 1`] = `
 @media (prefers-color-scheme:dark) {
   .c41:focus-within::after,
   .c41:focus::after {
-    border-color: rgba(0,125,250,0.6);
+    border-color: #007dfa3C;
   }
 }
 
@@ -1117,8 +1119,8 @@ exports[`<HomePage /> should render correctly 1`] = `
 
 @media (prefers-color-scheme:dark) {
   .c41:disabled {
-    background-color: rgb(89,89,89);
-    color: darkgray;
+    background-color: #595959;
+    color: #a9a9a9;
   }
 }
 
@@ -1188,7 +1190,7 @@ exports[`<HomePage /> should render correctly 1`] = `
 
 @media (prefers-color-scheme:dark) {
   .c78 {
-    background-color: black;
+    background-color: #000000;
   }
 }
 
@@ -1220,7 +1222,7 @@ exports[`<HomePage /> should render correctly 1`] = `
 @media (prefers-color-scheme:dark) {
   .c82:focus-within::after,
   .c82:focus::after {
-    border-color: rgba(0,125,250,0.6);
+    border-color: #007dfa3C;
   }
 }
 
@@ -1232,7 +1234,7 @@ exports[`<HomePage /> should render correctly 1`] = `
 
 @media (prefers-color-scheme:dark) {
   .c83 {
-    color: white;
+    color: #ffffff;
   }
 }
 
