@@ -25,11 +25,11 @@ exports[`<AdminUsers /> should render correctly - index 1`] = `
   top: 0;
   width: 13rem;
   height: 100vh;
-  background-image: linear-gradient( 90deg, rgb(238,238,238), rgb(245,245,245), rgb(238,238,238) );
+  background-image: linear-gradient( 90deg,rgb(238,238,238),rgb(245,245,245),rgb(238,238,238) );
   background-repeat: no-repeat;
   background-size: 12.5rem 100%;
-  -webkit-animation: sjjMW 3.5s ease-in-out infinite;
-  animation: sjjMW 3.5s ease-in-out infinite;
+  -webkit-animation: eflhBg 3.5s ease-in-out infinite;
+  animation: eflhBg 3.5s ease-in-out infinite;
 }
 
 .c0 {
@@ -57,7 +57,7 @@ exports[`<AdminUsers /> should render correctly - index 1`] = `
 
 @media (prefers-color-scheme:dark) {
   .c2 {
-    background-image: linear-gradient( 90deg, rgb(17,17,17), rgb(50,50,50), rgb(17,17,17) );
+    background-image: linear-gradient( 90deg,rgb(17,17,17),rgb(50,50,50),rgb(17,17,17) );
   }
 }
 
@@ -185,8 +185,8 @@ exports[`<AdminUsers /> should render correctly with admin user 1`] = `
 }
 
 .c0 {
-  -webkit-animation: bbwGtI 0.4s ease-in-out;
-  animation: bbwGtI 0.4s ease-in-out;
+  -webkit-animation: eTsntO 0.4s ease-in-out;
+  animation: eTsntO 0.4s ease-in-out;
 }
 
 .c17 {
@@ -441,14 +441,6 @@ exports[`<AdminUsers /> should render correctly with admin user 1`] = `
   .c14 {
     background-color: #1e1e1e;
   }
-}
-
-@media (prefers-color-scheme:dark) {
-
-}
-
-@media (prefers-color-scheme:dark) {
-
 }
 
 @media (prefers-color-scheme:dark) {
@@ -626,8 +618,8 @@ exports[`<AdminUsers /> should render correctly with createError 1`] = `
 }
 
 .c0 {
-  -webkit-animation: bbwGtI 0.4s ease-in-out;
-  animation: bbwGtI 0.4s ease-in-out;
+  -webkit-animation: eTsntO 0.4s ease-in-out;
+  animation: eTsntO 0.4s ease-in-out;
 }
 
 .c17 {
@@ -882,14 +874,6 @@ exports[`<AdminUsers /> should render correctly with createError 1`] = `
   .c14 {
     background-color: #1e1e1e;
   }
-}
-
-@media (prefers-color-scheme:dark) {
-
-}
-
-@media (prefers-color-scheme:dark) {
-
 }
 
 @media (prefers-color-scheme:dark) {
@@ -1067,8 +1051,8 @@ exports[`<AdminUsers /> should render correctly with creating=true 1`] = `
 }
 
 .c0 {
-  -webkit-animation: bbwGtI 0.4s ease-in-out;
-  animation: bbwGtI 0.4s ease-in-out;
+  -webkit-animation: eTsntO 0.4s ease-in-out;
+  animation: eTsntO 0.4s ease-in-out;
 }
 
 .c17 {
@@ -1326,14 +1310,6 @@ exports[`<AdminUsers /> should render correctly with creating=true 1`] = `
 }
 
 @media (prefers-color-scheme:dark) {
-
-}
-
-@media (prefers-color-scheme:dark) {
-
-}
-
-@media (prefers-color-scheme:dark) {
   .c12 {
     box-shadow: 0.44rem 0.44rem 1rem 0 #00000000;
   }
@@ -1470,11 +1446,11 @@ exports[`<AdminUsers /> should render correctly with initial state 1`] = `
   top: 0;
   width: 13rem;
   height: 100vh;
-  background-image: linear-gradient( 90deg, rgb(238,238,238), rgb(245,245,245), rgb(238,238,238) );
+  background-image: linear-gradient( 90deg,rgb(238,238,238),rgb(245,245,245),rgb(238,238,238) );
   background-repeat: no-repeat;
   background-size: 12.5rem 100%;
-  -webkit-animation: sjjMW 3.5s ease-in-out infinite;
-  animation: sjjMW 3.5s ease-in-out infinite;
+  -webkit-animation: eflhBg 3.5s ease-in-out infinite;
+  animation: eflhBg 3.5s ease-in-out infinite;
 }
 
 .c0 {
@@ -1502,7 +1478,7 @@ exports[`<AdminUsers /> should render correctly with initial state 1`] = `
 
 @media (prefers-color-scheme:dark) {
   .c2 {
-    background-image: linear-gradient( 90deg, rgb(17,17,17), rgb(50,50,50), rgb(17,17,17) );
+    background-image: linear-gradient( 90deg,rgb(17,17,17),rgb(50,50,50),rgb(17,17,17) );
   }
 }
 
@@ -1630,8 +1606,8 @@ exports[`<AdminUsers /> should render correctly with loadError 1`] = `
 }
 
 .c0 {
-  -webkit-animation: bbwGtI 0.4s ease-in-out;
-  animation: bbwGtI 0.4s ease-in-out;
+  -webkit-animation: eTsntO 0.4s ease-in-out;
+  animation: eTsntO 0.4s ease-in-out;
 }
 
 .c19 {
@@ -1913,14 +1889,6 @@ exports[`<AdminUsers /> should render correctly with loadError 1`] = `
 }
 
 @media (prefers-color-scheme:dark) {
-
-}
-
-@media (prefers-color-scheme:dark) {
-
-}
-
-@media (prefers-color-scheme:dark) {
   .c14 {
     box-shadow: 0.44rem 0.44rem 1rem 0 #00000000;
   }
@@ -2106,8 +2074,8 @@ exports[`<AdminUsers /> should render correctly with loading=true 1`] = `
 }
 
 .c0 {
-  -webkit-animation: bbwGtI 0.4s ease-in-out;
-  animation: bbwGtI 0.4s ease-in-out;
+  -webkit-animation: eTsntO 0.4s ease-in-out;
+  animation: eTsntO 0.4s ease-in-out;
 }
 
 .c29 {
@@ -2138,8 +2106,8 @@ exports[`<AdminUsers /> should render correctly with loading=true 1`] = `
   border-radius: 1rem;
   background-color: transparent;
   background-color: currentColor;
-  -webkit-animation: fzQzkt 0.8s infinite linear;
-  animation: fzQzkt 0.8s infinite linear;
+  -webkit-animation: dJmicz 0.8s infinite linear;
+  animation: dJmicz 0.8s infinite linear;
   -webkit-transform-origin: center -0.16rem;
   -ms-transform-origin: center -0.16rem;
   transform-origin: center -0.16rem;
@@ -2159,8 +2127,8 @@ exports[`<AdminUsers /> should render correctly with loading=true 1`] = `
   border-radius: 1rem;
   background-color: transparent;
   background-color: currentColor;
-  -webkit-animation: fzQzkt 0.8s infinite linear;
-  animation: fzQzkt 0.8s infinite linear;
+  -webkit-animation: dJmicz 0.8s infinite linear;
+  animation: dJmicz 0.8s infinite linear;
   -webkit-transform-origin: center -0.16rem;
   -ms-transform-origin: center -0.16rem;
   transform-origin: center -0.16rem;
@@ -2180,8 +2148,8 @@ exports[`<AdminUsers /> should render correctly with loading=true 1`] = `
   border-radius: 1rem;
   background-color: transparent;
   background-color: currentColor;
-  -webkit-animation: fzQzkt 0.8s infinite linear;
-  animation: fzQzkt 0.8s infinite linear;
+  -webkit-animation: dJmicz 0.8s infinite linear;
+  animation: dJmicz 0.8s infinite linear;
   -webkit-transform-origin: center -0.16rem;
   -ms-transform-origin: center -0.16rem;
   transform-origin: center -0.16rem;
@@ -2201,8 +2169,8 @@ exports[`<AdminUsers /> should render correctly with loading=true 1`] = `
   border-radius: 1rem;
   background-color: transparent;
   background-color: currentColor;
-  -webkit-animation: fzQzkt 0.8s infinite linear;
-  animation: fzQzkt 0.8s infinite linear;
+  -webkit-animation: dJmicz 0.8s infinite linear;
+  animation: dJmicz 0.8s infinite linear;
   -webkit-transform-origin: center -0.16rem;
   -ms-transform-origin: center -0.16rem;
   transform-origin: center -0.16rem;
@@ -2222,8 +2190,8 @@ exports[`<AdminUsers /> should render correctly with loading=true 1`] = `
   border-radius: 1rem;
   background-color: transparent;
   background-color: currentColor;
-  -webkit-animation: fzQzkt 0.8s infinite linear;
-  animation: fzQzkt 0.8s infinite linear;
+  -webkit-animation: dJmicz 0.8s infinite linear;
+  animation: dJmicz 0.8s infinite linear;
   -webkit-transform-origin: center -0.16rem;
   -ms-transform-origin: center -0.16rem;
   transform-origin: center -0.16rem;
@@ -2243,8 +2211,8 @@ exports[`<AdminUsers /> should render correctly with loading=true 1`] = `
   border-radius: 1rem;
   background-color: transparent;
   background-color: currentColor;
-  -webkit-animation: fzQzkt 0.8s infinite linear;
-  animation: fzQzkt 0.8s infinite linear;
+  -webkit-animation: dJmicz 0.8s infinite linear;
+  animation: dJmicz 0.8s infinite linear;
   -webkit-transform-origin: center -0.16rem;
   -ms-transform-origin: center -0.16rem;
   transform-origin: center -0.16rem;
@@ -2264,8 +2232,8 @@ exports[`<AdminUsers /> should render correctly with loading=true 1`] = `
   border-radius: 1rem;
   background-color: transparent;
   background-color: currentColor;
-  -webkit-animation: fzQzkt 0.8s infinite linear;
-  animation: fzQzkt 0.8s infinite linear;
+  -webkit-animation: dJmicz 0.8s infinite linear;
+  animation: dJmicz 0.8s infinite linear;
   -webkit-transform-origin: center -0.16rem;
   -ms-transform-origin: center -0.16rem;
   transform-origin: center -0.16rem;
@@ -2285,8 +2253,8 @@ exports[`<AdminUsers /> should render correctly with loading=true 1`] = `
   border-radius: 1rem;
   background-color: transparent;
   background-color: currentColor;
-  -webkit-animation: fzQzkt 0.8s infinite linear;
-  animation: fzQzkt 0.8s infinite linear;
+  -webkit-animation: dJmicz 0.8s infinite linear;
+  animation: dJmicz 0.8s infinite linear;
   -webkit-transform-origin: center -0.16rem;
   -ms-transform-origin: center -0.16rem;
   transform-origin: center -0.16rem;
@@ -2670,14 +2638,6 @@ exports[`<AdminUsers /> should render correctly with loading=true 1`] = `
 }
 
 @media (prefers-color-scheme:dark) {
-
-}
-
-@media (prefers-color-scheme:dark) {
-
-}
-
-@media (prefers-color-scheme:dark) {
   .c24 {
     box-shadow: 0.44rem 0.44rem 1rem 0 #00000000;
   }
@@ -2886,8 +2846,8 @@ exports[`<AdminUsers /> should render correctly with removeError 1`] = `
 }
 
 .c0 {
-  -webkit-animation: bbwGtI 0.4s ease-in-out;
-  animation: bbwGtI 0.4s ease-in-out;
+  -webkit-animation: eTsntO 0.4s ease-in-out;
+  animation: eTsntO 0.4s ease-in-out;
 }
 
 .c17 {
@@ -3142,14 +3102,6 @@ exports[`<AdminUsers /> should render correctly with removeError 1`] = `
   .c14 {
     background-color: #1e1e1e;
   }
-}
-
-@media (prefers-color-scheme:dark) {
-
-}
-
-@media (prefers-color-scheme:dark) {
-
 }
 
 @media (prefers-color-scheme:dark) {
@@ -3327,8 +3279,8 @@ exports[`<AdminUsers /> should render correctly with removing=true 1`] = `
 }
 
 .c0 {
-  -webkit-animation: bbwGtI 0.4s ease-in-out;
-  animation: bbwGtI 0.4s ease-in-out;
+  -webkit-animation: eTsntO 0.4s ease-in-out;
+  animation: eTsntO 0.4s ease-in-out;
 }
 
 .c17 {
@@ -3583,14 +3535,6 @@ exports[`<AdminUsers /> should render correctly with removing=true 1`] = `
   .c14 {
     background-color: #1e1e1e;
   }
-}
-
-@media (prefers-color-scheme:dark) {
-
-}
-
-@media (prefers-color-scheme:dark) {
-
 }
 
 @media (prefers-color-scheme:dark) {
@@ -3768,8 +3712,8 @@ exports[`<AdminUsers /> should render correctly with requestError 1`] = `
 }
 
 .c0 {
-  -webkit-animation: bbwGtI 0.4s ease-in-out;
-  animation: bbwGtI 0.4s ease-in-out;
+  -webkit-animation: eTsntO 0.4s ease-in-out;
+  animation: eTsntO 0.4s ease-in-out;
 }
 
 .c17 {
@@ -4024,14 +3968,6 @@ exports[`<AdminUsers /> should render correctly with requestError 1`] = `
   .c14 {
     background-color: #1e1e1e;
   }
-}
-
-@media (prefers-color-scheme:dark) {
-
-}
-
-@media (prefers-color-scheme:dark) {
-
 }
 
 @media (prefers-color-scheme:dark) {
@@ -4209,8 +4145,8 @@ exports[`<AdminUsers /> should render correctly with requesting=true 1`] = `
 }
 
 .c0 {
-  -webkit-animation: bbwGtI 0.4s ease-in-out;
-  animation: bbwGtI 0.4s ease-in-out;
+  -webkit-animation: eTsntO 0.4s ease-in-out;
+  animation: eTsntO 0.4s ease-in-out;
 }
 
 .c17 {
@@ -4465,14 +4401,6 @@ exports[`<AdminUsers /> should render correctly with requesting=true 1`] = `
   .c14 {
     background-color: #1e1e1e;
   }
-}
-
-@media (prefers-color-scheme:dark) {
-
-}
-
-@media (prefers-color-scheme:dark) {
-
 }
 
 @media (prefers-color-scheme:dark) {
@@ -4650,8 +4578,8 @@ exports[`<AdminUsers /> should render correctly with updateError 1`] = `
 }
 
 .c0 {
-  -webkit-animation: bbwGtI 0.4s ease-in-out;
-  animation: bbwGtI 0.4s ease-in-out;
+  -webkit-animation: eTsntO 0.4s ease-in-out;
+  animation: eTsntO 0.4s ease-in-out;
 }
 
 .c17 {
@@ -4906,14 +4834,6 @@ exports[`<AdminUsers /> should render correctly with updateError 1`] = `
   .c14 {
     background-color: #1e1e1e;
   }
-}
-
-@media (prefers-color-scheme:dark) {
-
-}
-
-@media (prefers-color-scheme:dark) {
-
 }
 
 @media (prefers-color-scheme:dark) {
@@ -5091,8 +5011,8 @@ exports[`<AdminUsers /> should render correctly with updating=true 1`] = `
 }
 
 .c0 {
-  -webkit-animation: bbwGtI 0.4s ease-in-out;
-  animation: bbwGtI 0.4s ease-in-out;
+  -webkit-animation: eTsntO 0.4s ease-in-out;
+  animation: eTsntO 0.4s ease-in-out;
 }
 
 .c17 {
@@ -5347,14 +5267,6 @@ exports[`<AdminUsers /> should render correctly with updating=true 1`] = `
   .c14 {
     background-color: #1e1e1e;
   }
-}
-
-@media (prefers-color-scheme:dark) {
-
-}
-
-@media (prefers-color-scheme:dark) {
-
 }
 
 @media (prefers-color-scheme:dark) {
@@ -5657,8 +5569,8 @@ exports[`<AdminUsers /> should render correctly with users 1`] = `
 }
 
 .c0 {
-  -webkit-animation: bbwGtI 0.4s ease-in-out;
-  animation: bbwGtI 0.4s ease-in-out;
+  -webkit-animation: eTsntO 0.4s ease-in-out;
+  animation: eTsntO 0.4s ease-in-out;
 }
 
 .c19 {
@@ -5856,90 +5768,6 @@ exports[`<AdminUsers /> should render correctly with users 1`] = `
   box-shadow: 0.4rem 0.4rem 1rem 0 #25201f1E;
 }
 
-.c22 {
-  position: relative;
-  display: inline-block;
-  z-index: 1;
-  width: 100%;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  box-shadow: 0.2rem 0.2rem 0.5rem 0 #25201f1E;
-  cursor: pointer;
-  box-sizing: border-box;
-  padding: 0;
-  -webkit-transition: all 0.4s;
-  transition: all 0.4s;
-  border: none;
-  border-radius: 0.35rem;
-  background: none;
-  text-align: left;
-}
-
-.c22:disabled {
-  cursor: not-allowed;
-}
-
-.c22:not(:disabled):focus,.c22:not(:disabled):focus-within,
-.c22:not(:disabled):active,.c22:not(:disabled):hover {
-  box-shadow: 0.4rem 0.4rem 1rem 0 #25201f1E;
-}
-
-.c23 {
-  position: relative;
-  display: inline-block;
-  z-index: 1;
-  width: 100%;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  box-shadow: 0.2rem 0.2rem 0.5rem 0 #25201f1E;
-  cursor: pointer;
-  box-sizing: border-box;
-  padding: 0;
-  -webkit-transition: all 0.4s;
-  transition: all 0.4s;
-  border: none;
-  border-radius: 0.35rem;
-  background: none;
-  text-align: left;
-}
-
-.c23:disabled {
-  cursor: not-allowed;
-}
-
-.c23:not(:disabled):focus,.c23:not(:disabled):focus-within,
-.c23:not(:disabled):active,.c23:not(:disabled):hover {
-  box-shadow: 0.4rem 0.4rem 1rem 0 #25201f1E;
-}
-
-.c24 {
-  position: relative;
-  display: inline-block;
-  z-index: 1;
-  width: 100%;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  box-shadow: 0.2rem 0.2rem 0.5rem 0 #25201f1E;
-  cursor: pointer;
-  box-sizing: border-box;
-  padding: 0;
-  -webkit-transition: all 0.4s;
-  transition: all 0.4s;
-  border: none;
-  border-radius: 0.35rem;
-  background: none;
-  text-align: left;
-}
-
-.c24:disabled {
-  cursor: not-allowed;
-}
-
-.c24:not(:disabled):focus,.c24:not(:disabled):focus-within,
-.c24:not(:disabled):active,.c24:not(:disabled):hover {
-  box-shadow: 0.4rem 0.4rem 1rem 0 #25201f1E;
-}
-
 @media (prefers-color-scheme:dark) {
   .c2:focus-within::after,
   .c2:focus::after {
@@ -6017,38 +5845,6 @@ exports[`<AdminUsers /> should render correctly with users 1`] = `
 }
 
 @media (prefers-color-scheme:dark) {
-
-}
-
-@media (prefers-color-scheme:dark) {
-
-}
-
-@media (prefers-color-scheme:dark) {
-
-}
-
-@media (prefers-color-scheme:dark) {
-
-}
-
-@media (prefers-color-scheme:dark) {
-
-}
-
-@media (prefers-color-scheme:dark) {
-
-}
-
-@media (prefers-color-scheme:dark) {
-
-}
-
-@media (prefers-color-scheme:dark) {
-
-}
-
-@media (prefers-color-scheme:dark) {
   .c14 {
     box-shadow: 0.44rem 0.44rem 1rem 0 #00000000;
   }
@@ -6057,45 +5853,6 @@ exports[`<AdminUsers /> should render correctly with users 1`] = `
 @media (prefers-color-scheme:dark) {
   .c14:not(:disabled):focus,.c14:not(:disabled):focus-within,
   .c14:not(:disabled):active,.c14:not(:disabled):hover {
-    box-shadow: 0.2rem 0.2rem 0.5rem 0 #00000000;
-  }
-}
-
-@media (prefers-color-scheme:dark) {
-  .c22 {
-    box-shadow: 0.44rem 0.44rem 1rem 0 #00000000;
-  }
-}
-
-@media (prefers-color-scheme:dark) {
-  .c22:not(:disabled):focus,.c22:not(:disabled):focus-within,
-  .c22:not(:disabled):active,.c22:not(:disabled):hover {
-    box-shadow: 0.2rem 0.2rem 0.5rem 0 #00000000;
-  }
-}
-
-@media (prefers-color-scheme:dark) {
-  .c23 {
-    box-shadow: 0.44rem 0.44rem 1rem 0 #00000000;
-  }
-}
-
-@media (prefers-color-scheme:dark) {
-  .c23:not(:disabled):focus,.c23:not(:disabled):focus-within,
-  .c23:not(:disabled):active,.c23:not(:disabled):hover {
-    box-shadow: 0.2rem 0.2rem 0.5rem 0 #00000000;
-  }
-}
-
-@media (prefers-color-scheme:dark) {
-  .c24 {
-    box-shadow: 0.44rem 0.44rem 1rem 0 #00000000;
-  }
-}
-
-@media (prefers-color-scheme:dark) {
-  .c24:not(:disabled):focus,.c24:not(:disabled):focus-within,
-  .c24:not(:disabled):active,.c24:not(:disabled):hover {
     box-shadow: 0.2rem 0.2rem 0.5rem 0 #00000000;
   }
 }
@@ -6203,7 +5960,7 @@ exports[`<AdminUsers /> should render correctly with users 1`] = `
           </div>
         </a>
         <a
-          class="c22"
+          class="c14"
           href="/admin/users?highlight=1"
           id="1"
         >
@@ -6241,7 +5998,7 @@ exports[`<AdminUsers /> should render correctly with users 1`] = `
           </div>
         </a>
         <a
-          class="c23"
+          class="c14"
           href="/admin/users?highlight=2"
           id="2"
         >
@@ -6279,7 +6036,7 @@ exports[`<AdminUsers /> should render correctly with users 1`] = `
           </div>
         </a>
         <a
-          class="c24"
+          class="c14"
           href="/admin/users?highlight=3"
           id="3"
         >

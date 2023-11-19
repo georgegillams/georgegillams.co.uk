@@ -182,8 +182,8 @@ exports[`<AdminAnalytics /> should render correctly with admin user 1`] = `
 }
 
 .c0 {
-  -webkit-animation: bbwGtI 0.4s ease-in-out;
-  animation: bbwGtI 0.4s ease-in-out;
+  -webkit-animation: eTsntO 0.4s ease-in-out;
+  animation: eTsntO 0.4s ease-in-out;
 }
 
 .c6 {
@@ -443,8 +443,8 @@ exports[`<AdminAnalytics /> should render correctly with analytics 1`] = `
 }
 
 .c0 {
-  -webkit-animation: bbwGtI 0.4s ease-in-out;
-  animation: bbwGtI 0.4s ease-in-out;
+  -webkit-animation: eTsntO 0.4s ease-in-out;
+  animation: eTsntO 0.4s ease-in-out;
 }
 
 .c6 {
@@ -818,11 +818,11 @@ exports[`<AdminAnalytics /> should render correctly with loadError 1`] = `
   top: 0;
   width: 13rem;
   height: 100vh;
-  background-image: linear-gradient( 90deg, rgb(238,238,238), rgb(245,245,245), rgb(238,238,238) );
+  background-image: linear-gradient( 90deg,rgb(238,238,238),rgb(245,245,245),rgb(238,238,238) );
   background-repeat: no-repeat;
   background-size: 12.5rem 100%;
-  -webkit-animation: sjjMW 3.5s ease-in-out infinite;
-  animation: sjjMW 3.5s ease-in-out infinite;
+  -webkit-animation: eflhBg 3.5s ease-in-out infinite;
+  animation: eflhBg 3.5s ease-in-out infinite;
 }
 
 .c0 {
@@ -856,7 +856,7 @@ exports[`<AdminAnalytics /> should render correctly with loadError 1`] = `
 
 @media (prefers-color-scheme:dark) {
   .c2 {
-    background-image: linear-gradient( 90deg, rgb(17,17,17), rgb(50,50,50), rgb(17,17,17) );
+    background-image: linear-gradient( 90deg,rgb(17,17,17),rgb(50,50,50),rgb(17,17,17) );
   }
 }
 
@@ -988,8 +988,8 @@ exports[`<AdminAnalytics /> should render correctly with loading=true 1`] = `
 }
 
 .c0 {
-  -webkit-animation: bbwGtI 0.4s ease-in-out;
-  animation: bbwGtI 0.4s ease-in-out;
+  -webkit-animation: eTsntO 0.4s ease-in-out;
+  animation: eTsntO 0.4s ease-in-out;
 }
 
 .c10 {
@@ -1009,8 +1009,8 @@ exports[`<AdminAnalytics /> should render correctly with loading=true 1`] = `
   border-radius: 1rem;
   background-color: transparent;
   background-color: currentColor;
-  -webkit-animation: fzQzkt 0.8s infinite linear;
-  animation: fzQzkt 0.8s infinite linear;
+  -webkit-animation: dJmicz 0.8s infinite linear;
+  animation: dJmicz 0.8s infinite linear;
   -webkit-transform-origin: center -0.16rem;
   -ms-transform-origin: center -0.16rem;
   transform-origin: center -0.16rem;
@@ -1030,8 +1030,8 @@ exports[`<AdminAnalytics /> should render correctly with loading=true 1`] = `
   border-radius: 1rem;
   background-color: transparent;
   background-color: currentColor;
-  -webkit-animation: fzQzkt 0.8s infinite linear;
-  animation: fzQzkt 0.8s infinite linear;
+  -webkit-animation: dJmicz 0.8s infinite linear;
+  animation: dJmicz 0.8s infinite linear;
   -webkit-transform-origin: center -0.16rem;
   -ms-transform-origin: center -0.16rem;
   transform-origin: center -0.16rem;
@@ -1051,8 +1051,8 @@ exports[`<AdminAnalytics /> should render correctly with loading=true 1`] = `
   border-radius: 1rem;
   background-color: transparent;
   background-color: currentColor;
-  -webkit-animation: fzQzkt 0.8s infinite linear;
-  animation: fzQzkt 0.8s infinite linear;
+  -webkit-animation: dJmicz 0.8s infinite linear;
+  animation: dJmicz 0.8s infinite linear;
   -webkit-transform-origin: center -0.16rem;
   -ms-transform-origin: center -0.16rem;
   transform-origin: center -0.16rem;
@@ -1072,8 +1072,8 @@ exports[`<AdminAnalytics /> should render correctly with loading=true 1`] = `
   border-radius: 1rem;
   background-color: transparent;
   background-color: currentColor;
-  -webkit-animation: fzQzkt 0.8s infinite linear;
-  animation: fzQzkt 0.8s infinite linear;
+  -webkit-animation: dJmicz 0.8s infinite linear;
+  animation: dJmicz 0.8s infinite linear;
   -webkit-transform-origin: center -0.16rem;
   -ms-transform-origin: center -0.16rem;
   transform-origin: center -0.16rem;
@@ -1093,8 +1093,8 @@ exports[`<AdminAnalytics /> should render correctly with loading=true 1`] = `
   border-radius: 1rem;
   background-color: transparent;
   background-color: currentColor;
-  -webkit-animation: fzQzkt 0.8s infinite linear;
-  animation: fzQzkt 0.8s infinite linear;
+  -webkit-animation: dJmicz 0.8s infinite linear;
+  animation: dJmicz 0.8s infinite linear;
   -webkit-transform-origin: center -0.16rem;
   -ms-transform-origin: center -0.16rem;
   transform-origin: center -0.16rem;
@@ -1114,8 +1114,8 @@ exports[`<AdminAnalytics /> should render correctly with loading=true 1`] = `
   border-radius: 1rem;
   background-color: transparent;
   background-color: currentColor;
-  -webkit-animation: fzQzkt 0.8s infinite linear;
-  animation: fzQzkt 0.8s infinite linear;
+  -webkit-animation: dJmicz 0.8s infinite linear;
+  animation: dJmicz 0.8s infinite linear;
   -webkit-transform-origin: center -0.16rem;
   -ms-transform-origin: center -0.16rem;
   transform-origin: center -0.16rem;
@@ -1135,8 +1135,8 @@ exports[`<AdminAnalytics /> should render correctly with loading=true 1`] = `
   border-radius: 1rem;
   background-color: transparent;
   background-color: currentColor;
-  -webkit-animation: fzQzkt 0.8s infinite linear;
-  animation: fzQzkt 0.8s infinite linear;
+  -webkit-animation: dJmicz 0.8s infinite linear;
+  animation: dJmicz 0.8s infinite linear;
   -webkit-transform-origin: center -0.16rem;
   -ms-transform-origin: center -0.16rem;
   transform-origin: center -0.16rem;
@@ -1156,8 +1156,8 @@ exports[`<AdminAnalytics /> should render correctly with loading=true 1`] = `
   border-radius: 1rem;
   background-color: transparent;
   background-color: currentColor;
-  -webkit-animation: fzQzkt 0.8s infinite linear;
-  animation: fzQzkt 0.8s infinite linear;
+  -webkit-animation: dJmicz 0.8s infinite linear;
+  animation: dJmicz 0.8s infinite linear;
   -webkit-transform-origin: center -0.16rem;
   -ms-transform-origin: center -0.16rem;
   transform-origin: center -0.16rem;

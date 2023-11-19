@@ -25,11 +25,11 @@ exports[`<AdminNotifications /> should render correctly - index 1`] = `
   top: 0;
   width: 13rem;
   height: 100vh;
-  background-image: linear-gradient( 90deg, rgb(238,238,238), rgb(245,245,245), rgb(238,238,238) );
+  background-image: linear-gradient( 90deg,rgb(238,238,238),rgb(245,245,245),rgb(238,238,238) );
   background-repeat: no-repeat;
   background-size: 12.5rem 100%;
-  -webkit-animation: sjjMW 3.5s ease-in-out infinite;
-  animation: sjjMW 3.5s ease-in-out infinite;
+  -webkit-animation: eflhBg 3.5s ease-in-out infinite;
+  animation: eflhBg 3.5s ease-in-out infinite;
 }
 
 .c0 {
@@ -69,7 +69,7 @@ exports[`<AdminNotifications /> should render correctly - index 1`] = `
 
 @media (prefers-color-scheme:dark) {
   .c3 {
-    background-image: linear-gradient( 90deg, rgb(17,17,17), rgb(50,50,50), rgb(17,17,17) );
+    background-image: linear-gradient( 90deg,rgb(17,17,17),rgb(50,50,50),rgb(17,17,17) );
   }
 }
 
@@ -208,11 +208,11 @@ exports[`<AdminNotifications /> should render correctly with admin user 1`] = `
 }
 
 .c1 {
-  -webkit-animation: bbwGtI 0.4s ease-in-out;
-  animation: bbwGtI 0.4s ease-in-out;
+  -webkit-animation: eTsntO 0.4s ease-in-out;
+  animation: eTsntO 0.4s ease-in-out;
 }
 
-.c15 {
+.c14 {
   position: relative;
   min-width: 5rem;
   padding: 0.43rem 1.125rem 0.32rem 1.125rem;
@@ -231,13 +231,13 @@ exports[`<AdminNotifications /> should render correctly with admin user 1`] = `
   color: white;
 }
 
-.c15:focus-within,
-.c15:focus {
+.c14:focus-within,
+.c14:focus {
   outline: none !important;
 }
 
-.c15:focus-within::after,
-.c15:focus::after {
+.c14:focus-within::after,
+.c14:focus::after {
   position: absolute;
   top: -0.35rem;
   right: -0.35rem;
@@ -250,23 +250,23 @@ exports[`<AdminNotifications /> should render correctly with admin user 1`] = `
   pointer-events: none;
 }
 
-.c15:focus,
-.c15:hover {
+.c14:focus,
+.c14:hover {
   background-color: #004F8C;
   color: white;
 }
 
-.c15:active {
+.c14:active {
   background-color: #003E6F;
   color: white;
 }
 
-.c15:disabled {
+.c14:disabled {
   background-color: #cdcdd7;
   color: #646464;
 }
 
-.c17 {
+.c16 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -323,7 +323,7 @@ exports[`<AdminNotifications /> should render correctly with admin user 1`] = `
   pointer-events: none;
 }
 
-.c16 {
+.c15 {
   margin-bottom: 1rem;
   margin-top: 1rem;
 }
@@ -347,7 +347,7 @@ exports[`<AdminNotifications /> should render correctly with admin user 1`] = `
   font-weight: bold;
 }
 
-.c18 {
+.c17 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -358,7 +358,7 @@ exports[`<AdminNotifications /> should render correctly with admin user 1`] = `
   padding-top: 1rem;
 }
 
-.c18 > *:not(:first-child) {
+.c17 > *:not(:first-child) {
   margin-top: 1rem;
 }
 
@@ -385,23 +385,6 @@ exports[`<AdminNotifications /> should render correctly with admin user 1`] = `
   fill: #00a698;
 }
 
-.c14 {
-  padding: 0.375rem 0.75rem;
-  -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
-  border: none;
-  outline: none;
-  background-color: transparent;
-  color: #1e1e1e;
-  font-size: 1rem;
-}
-
-.c14:disabled {
-  color: #b2b2bf;
-}
-
 @media (prefers-color-scheme:dark) {
   .c3:focus-within::after,
   .c3:focus::after {
@@ -422,36 +405,36 @@ exports[`<AdminNotifications /> should render correctly with admin user 1`] = `
 }
 
 @media (prefers-color-scheme:dark) {
-  .c15:focus-within::after,
-  .c15:focus::after {
+  .c14:focus-within::after,
+  .c14:focus::after {
     border-color: #007dfa3C;
   }
 }
 
 @media (prefers-color-scheme:dark) {
-  .c15 {
+  .c14 {
     background-color: #025CA2;
     color: white;
   }
 }
 
 @media (prefers-color-scheme:dark) {
-  .c15:focus,
-  .c15:hover {
+  .c14:focus,
+  .c14:hover {
     background-color: #004479;
     color: white;
   }
 }
 
 @media (prefers-color-scheme:dark) {
-  .c15:active {
+  .c14:active {
     background-color: #003965;
     color: white;
   }
 }
 
 @media (prefers-color-scheme:dark) {
-  .c15:disabled {
+  .c14:disabled {
     background-color: #595959;
     color: #a9a9a9;
   }
@@ -492,18 +475,6 @@ exports[`<AdminNotifications /> should render correctly with admin user 1`] = `
 
 @media (prefers-color-scheme:dark) {
   .c10:disabled {
-    color: #7b7b86;
-  }
-}
-
-@media (prefers-color-scheme:dark) {
-  .c14 {
-    color: #ffffff;
-  }
-}
-
-@media (prefers-color-scheme:dark) {
-  .c14:disabled {
     color: #7b7b86;
   }
 }
@@ -591,7 +562,7 @@ exports[`<AdminNotifications /> should render correctly with admin user 1`] = `
           <select
             aria-disabled="false"
             aria-invalid="false"
-            class="c14"
+            class="c10"
             id="type_FORM_ID"
             name="Type"
           >
@@ -625,28 +596,28 @@ exports[`<AdminNotifications /> should render correctly with admin user 1`] = `
         </div>
       </div>
       <button
-        class="c15 c16"
+        class="c14 c15"
         type="button"
       >
         <span
-          class="c17"
+          class="c16"
         >
           Create notification
         </span>
       </button>
     </div>
     <button
-      class="c15 outer"
+      class="c14 outer"
       type="button"
     >
       <span
-        class="c17"
+        class="c16"
       >
         Reload notifications
       </span>
     </button>
     <div
-      class="c18"
+      class="c17"
     />
   </div>
 </div>
@@ -677,11 +648,11 @@ exports[`<AdminNotifications /> should render correctly with initial state 1`] =
   top: 0;
   width: 13rem;
   height: 100vh;
-  background-image: linear-gradient( 90deg, rgb(238,238,238), rgb(245,245,245), rgb(238,238,238) );
+  background-image: linear-gradient( 90deg,rgb(238,238,238),rgb(245,245,245),rgb(238,238,238) );
   background-repeat: no-repeat;
   background-size: 12.5rem 100%;
-  -webkit-animation: sjjMW 3.5s ease-in-out infinite;
-  animation: sjjMW 3.5s ease-in-out infinite;
+  -webkit-animation: eflhBg 3.5s ease-in-out infinite;
+  animation: eflhBg 3.5s ease-in-out infinite;
 }
 
 .c0 {
@@ -721,7 +692,7 @@ exports[`<AdminNotifications /> should render correctly with initial state 1`] =
 
 @media (prefers-color-scheme:dark) {
   .c3 {
-    background-image: linear-gradient( 90deg, rgb(17,17,17), rgb(50,50,50), rgb(17,17,17) );
+    background-image: linear-gradient( 90deg,rgb(17,17,17),rgb(50,50,50),rgb(17,17,17) );
   }
 }
 
@@ -860,11 +831,11 @@ exports[`<AdminNotifications /> should render correctly with loadError 1`] = `
 }
 
 .c1 {
-  -webkit-animation: bbwGtI 0.4s ease-in-out;
-  animation: bbwGtI 0.4s ease-in-out;
+  -webkit-animation: eTsntO 0.4s ease-in-out;
+  animation: eTsntO 0.4s ease-in-out;
 }
 
-.c15 {
+.c14 {
   position: relative;
   min-width: 5rem;
   padding: 0.43rem 1.125rem 0.32rem 1.125rem;
@@ -883,13 +854,13 @@ exports[`<AdminNotifications /> should render correctly with loadError 1`] = `
   color: white;
 }
 
-.c15:focus-within,
-.c15:focus {
+.c14:focus-within,
+.c14:focus {
   outline: none !important;
 }
 
-.c15:focus-within::after,
-.c15:focus::after {
+.c14:focus-within::after,
+.c14:focus::after {
   position: absolute;
   top: -0.35rem;
   right: -0.35rem;
@@ -902,23 +873,23 @@ exports[`<AdminNotifications /> should render correctly with loadError 1`] = `
   pointer-events: none;
 }
 
-.c15:focus,
-.c15:hover {
+.c14:focus,
+.c14:hover {
   background-color: #004F8C;
   color: white;
 }
 
-.c15:active {
+.c14:active {
   background-color: #003E6F;
   color: white;
 }
 
-.c15:disabled {
+.c14:disabled {
   background-color: #cdcdd7;
   color: #646464;
 }
 
-.c17 {
+.c16 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -929,7 +900,7 @@ exports[`<AdminNotifications /> should render correctly with loadError 1`] = `
   justify-content: center;
 }
 
-.c19 {
+.c18 {
   display: inline-block;
   margin-bottom: 0;
   padding-bottom: 0;
@@ -937,7 +908,7 @@ exports[`<AdminNotifications /> should render correctly with loadError 1`] = `
   margin-top: 2rem;
 }
 
-.c19:first-of-type {
+.c18:first-of-type {
   margin-top: 0.86rem;
 }
 
@@ -953,7 +924,7 @@ exports[`<AdminNotifications /> should render correctly with loadError 1`] = `
   padding-left: 1rem;
 }
 
-.c20 {
+.c19 {
   color: #E02626;
   fill: #E02626;
 }
@@ -992,7 +963,7 @@ exports[`<AdminNotifications /> should render correctly with loadError 1`] = `
   pointer-events: none;
 }
 
-.c16 {
+.c15 {
   margin-bottom: 1rem;
   margin-top: 1rem;
 }
@@ -1016,7 +987,7 @@ exports[`<AdminNotifications /> should render correctly with loadError 1`] = `
   font-weight: bold;
 }
 
-.c18 {
+.c17 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1027,7 +998,7 @@ exports[`<AdminNotifications /> should render correctly with loadError 1`] = `
   padding-top: 1rem;
 }
 
-.c18 > *:not(:first-child) {
+.c17 > *:not(:first-child) {
   margin-top: 1rem;
 }
 
@@ -1054,23 +1025,6 @@ exports[`<AdminNotifications /> should render correctly with loadError 1`] = `
   fill: #00a698;
 }
 
-.c14 {
-  padding: 0.375rem 0.75rem;
-  -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
-  border: none;
-  outline: none;
-  background-color: transparent;
-  color: #1e1e1e;
-  font-size: 1rem;
-}
-
-.c14:disabled {
-  color: #b2b2bf;
-}
-
 @media (prefers-color-scheme:dark) {
   .c3:focus-within::after,
   .c3:focus::after {
@@ -1091,36 +1045,36 @@ exports[`<AdminNotifications /> should render correctly with loadError 1`] = `
 }
 
 @media (prefers-color-scheme:dark) {
-  .c15:focus-within::after,
-  .c15:focus::after {
+  .c14:focus-within::after,
+  .c14:focus::after {
     border-color: #007dfa3C;
   }
 }
 
 @media (prefers-color-scheme:dark) {
-  .c15 {
+  .c14 {
     background-color: #025CA2;
     color: white;
   }
 }
 
 @media (prefers-color-scheme:dark) {
-  .c15:focus,
-  .c15:hover {
+  .c14:focus,
+  .c14:hover {
     background-color: #004479;
     color: white;
   }
 }
 
 @media (prefers-color-scheme:dark) {
-  .c15:active {
+  .c14:active {
     background-color: #003965;
     color: white;
   }
 }
 
 @media (prefers-color-scheme:dark) {
-  .c15:disabled {
+  .c14:disabled {
     background-color: #595959;
     color: #a9a9a9;
   }
@@ -1134,7 +1088,7 @@ exports[`<AdminNotifications /> should render correctly with loadError 1`] = `
 }
 
 @media (prefers-color-scheme:dark) {
-  .c20 {
+  .c19 {
     color: #CA2020;
     fill: #CA2020;
   }
@@ -1168,18 +1122,6 @@ exports[`<AdminNotifications /> should render correctly with loadError 1`] = `
 
 @media (prefers-color-scheme:dark) {
   .c10:disabled {
-    color: #7b7b86;
-  }
-}
-
-@media (prefers-color-scheme:dark) {
-  .c14 {
-    color: #ffffff;
-  }
-}
-
-@media (prefers-color-scheme:dark) {
-  .c14:disabled {
     color: #7b7b86;
   }
 }
@@ -1267,7 +1209,7 @@ exports[`<AdminNotifications /> should render correctly with loadError 1`] = `
           <select
             aria-disabled="false"
             aria-invalid="false"
-            class="c14"
+            class="c10"
             id="type_FORM_ID"
             name="Type"
           >
@@ -1301,34 +1243,34 @@ exports[`<AdminNotifications /> should render correctly with loadError 1`] = `
         </div>
       </div>
       <button
-        class="c15 c16"
+        class="c14 c15"
         type="button"
       >
         <span
-          class="c17"
+          class="c16"
         >
           Create notification
         </span>
       </button>
     </div>
     <button
-      class="c15 outer"
+      class="c14 outer"
       type="button"
     >
       <span
-        class="c17"
+        class="c16"
       >
         Reload notifications
       </span>
     </button>
     <div
-      class="c18"
+      class="c17"
     >
       <span
-        class="c19"
+        class="c18"
       >
         <span
-          class="c20"
+          class="c19"
         >
           Could not load notifications
           <br />
@@ -1402,16 +1344,37 @@ exports[`<AdminNotifications /> should render correctly with loading=true 1`] = 
 }
 
 .c1 {
-  -webkit-animation: bbwGtI 0.4s ease-in-out;
-  animation: bbwGtI 0.4s ease-in-out;
+  -webkit-animation: eTsntO 0.4s ease-in-out;
+  animation: eTsntO 0.4s ease-in-out;
 }
 
-.c21 {
+.c20 {
   position: relative;
   display: inline-block;
   width: 1.125rem;
   height: 1.125rem;
   color: #1e1e1e;
+}
+
+.c21 {
+  position: absolute;
+  bottom: 0.05rem;
+  left: 0.5rem;
+  width: 0.13rem;
+  height: 0.3rem;
+  border-radius: 1rem;
+  background-color: transparent;
+  background-color: currentColor;
+  -webkit-animation: dJmicz 0.8s infinite linear;
+  animation: dJmicz 0.8s infinite linear;
+  -webkit-transform-origin: center -0.16rem;
+  -ms-transform-origin: center -0.16rem;
+  transform-origin: center -0.16rem;
+  -webkit-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-animation-delay: -0.15000000000000002s;
+  animation-delay: -0.15000000000000002s;
 }
 
 .c22 {
@@ -1423,16 +1386,16 @@ exports[`<AdminNotifications /> should render correctly with loading=true 1`] = 
   border-radius: 1rem;
   background-color: transparent;
   background-color: currentColor;
-  -webkit-animation: fzQzkt 0.8s infinite linear;
-  animation: fzQzkt 0.8s infinite linear;
+  -webkit-animation: dJmicz 0.8s infinite linear;
+  animation: dJmicz 0.8s infinite linear;
   -webkit-transform-origin: center -0.16rem;
   -ms-transform-origin: center -0.16rem;
   transform-origin: center -0.16rem;
-  -webkit-transform: rotate(0deg);
-  -ms-transform: rotate(0deg);
-  transform: rotate(0deg);
-  -webkit-animation-delay: -0.15000000000000002s;
-  animation-delay: -0.15000000000000002s;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  -webkit-animation-delay: -0.05000000000000002s;
+  animation-delay: -0.05000000000000002s;
 }
 
 .c23 {
@@ -1444,16 +1407,16 @@ exports[`<AdminNotifications /> should render correctly with loading=true 1`] = 
   border-radius: 1rem;
   background-color: transparent;
   background-color: currentColor;
-  -webkit-animation: fzQzkt 0.8s infinite linear;
-  animation: fzQzkt 0.8s infinite linear;
+  -webkit-animation: dJmicz 0.8s infinite linear;
+  animation: dJmicz 0.8s infinite linear;
   -webkit-transform-origin: center -0.16rem;
   -ms-transform-origin: center -0.16rem;
   transform-origin: center -0.16rem;
-  -webkit-transform: rotate(45deg);
-  -ms-transform: rotate(45deg);
-  transform: rotate(45deg);
-  -webkit-animation-delay: -0.05000000000000002s;
-  animation-delay: -0.05000000000000002s;
+  -webkit-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
+  -webkit-animation-delay: 0.04999999999999999s;
+  animation-delay: 0.04999999999999999s;
 }
 
 .c24 {
@@ -1465,16 +1428,16 @@ exports[`<AdminNotifications /> should render correctly with loading=true 1`] = 
   border-radius: 1rem;
   background-color: transparent;
   background-color: currentColor;
-  -webkit-animation: fzQzkt 0.8s infinite linear;
-  animation: fzQzkt 0.8s infinite linear;
+  -webkit-animation: dJmicz 0.8s infinite linear;
+  animation: dJmicz 0.8s infinite linear;
   -webkit-transform-origin: center -0.16rem;
   -ms-transform-origin: center -0.16rem;
   transform-origin: center -0.16rem;
-  -webkit-transform: rotate(90deg);
-  -ms-transform: rotate(90deg);
-  transform: rotate(90deg);
-  -webkit-animation-delay: 0.04999999999999999s;
-  animation-delay: 0.04999999999999999s;
+  -webkit-transform: rotate(135deg);
+  -ms-transform: rotate(135deg);
+  transform: rotate(135deg);
+  -webkit-animation-delay: 0.15000000000000002s;
+  animation-delay: 0.15000000000000002s;
 }
 
 .c25 {
@@ -1486,16 +1449,16 @@ exports[`<AdminNotifications /> should render correctly with loading=true 1`] = 
   border-radius: 1rem;
   background-color: transparent;
   background-color: currentColor;
-  -webkit-animation: fzQzkt 0.8s infinite linear;
-  animation: fzQzkt 0.8s infinite linear;
+  -webkit-animation: dJmicz 0.8s infinite linear;
+  animation: dJmicz 0.8s infinite linear;
   -webkit-transform-origin: center -0.16rem;
   -ms-transform-origin: center -0.16rem;
   transform-origin: center -0.16rem;
-  -webkit-transform: rotate(135deg);
-  -ms-transform: rotate(135deg);
-  transform: rotate(135deg);
-  -webkit-animation-delay: 0.15000000000000002s;
-  animation-delay: 0.15000000000000002s;
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg);
+  -webkit-animation-delay: 0.25s;
+  animation-delay: 0.25s;
 }
 
 .c26 {
@@ -1507,16 +1470,16 @@ exports[`<AdminNotifications /> should render correctly with loading=true 1`] = 
   border-radius: 1rem;
   background-color: transparent;
   background-color: currentColor;
-  -webkit-animation: fzQzkt 0.8s infinite linear;
-  animation: fzQzkt 0.8s infinite linear;
+  -webkit-animation: dJmicz 0.8s infinite linear;
+  animation: dJmicz 0.8s infinite linear;
   -webkit-transform-origin: center -0.16rem;
   -ms-transform-origin: center -0.16rem;
   transform-origin: center -0.16rem;
-  -webkit-transform: rotate(180deg);
-  -ms-transform: rotate(180deg);
-  transform: rotate(180deg);
-  -webkit-animation-delay: 0.25s;
-  animation-delay: 0.25s;
+  -webkit-transform: rotate(225deg);
+  -ms-transform: rotate(225deg);
+  transform: rotate(225deg);
+  -webkit-animation-delay: 0.35s;
+  animation-delay: 0.35s;
 }
 
 .c27 {
@@ -1528,16 +1491,16 @@ exports[`<AdminNotifications /> should render correctly with loading=true 1`] = 
   border-radius: 1rem;
   background-color: transparent;
   background-color: currentColor;
-  -webkit-animation: fzQzkt 0.8s infinite linear;
-  animation: fzQzkt 0.8s infinite linear;
+  -webkit-animation: dJmicz 0.8s infinite linear;
+  animation: dJmicz 0.8s infinite linear;
   -webkit-transform-origin: center -0.16rem;
   -ms-transform-origin: center -0.16rem;
   transform-origin: center -0.16rem;
-  -webkit-transform: rotate(225deg);
-  -ms-transform: rotate(225deg);
-  transform: rotate(225deg);
-  -webkit-animation-delay: 0.35s;
-  animation-delay: 0.35s;
+  -webkit-transform: rotate(270deg);
+  -ms-transform: rotate(270deg);
+  transform: rotate(270deg);
+  -webkit-animation-delay: 0.45000000000000007s;
+  animation-delay: 0.45000000000000007s;
 }
 
 .c28 {
@@ -1549,29 +1512,8 @@ exports[`<AdminNotifications /> should render correctly with loading=true 1`] = 
   border-radius: 1rem;
   background-color: transparent;
   background-color: currentColor;
-  -webkit-animation: fzQzkt 0.8s infinite linear;
-  animation: fzQzkt 0.8s infinite linear;
-  -webkit-transform-origin: center -0.16rem;
-  -ms-transform-origin: center -0.16rem;
-  transform-origin: center -0.16rem;
-  -webkit-transform: rotate(270deg);
-  -ms-transform: rotate(270deg);
-  transform: rotate(270deg);
-  -webkit-animation-delay: 0.45000000000000007s;
-  animation-delay: 0.45000000000000007s;
-}
-
-.c29 {
-  position: absolute;
-  bottom: 0.05rem;
-  left: 0.5rem;
-  width: 0.13rem;
-  height: 0.3rem;
-  border-radius: 1rem;
-  background-color: transparent;
-  background-color: currentColor;
-  -webkit-animation: fzQzkt 0.8s infinite linear;
-  animation: fzQzkt 0.8s infinite linear;
+  -webkit-animation: dJmicz 0.8s infinite linear;
+  animation: dJmicz 0.8s infinite linear;
   -webkit-transform-origin: center -0.16rem;
   -ms-transform-origin: center -0.16rem;
   transform-origin: center -0.16rem;
@@ -1582,7 +1524,7 @@ exports[`<AdminNotifications /> should render correctly with loading=true 1`] = 
   animation-delay: 0.55s;
 }
 
-.c15 {
+.c14 {
   position: relative;
   min-width: 5rem;
   padding: 0.43rem 1.125rem 0.32rem 1.125rem;
@@ -1601,13 +1543,13 @@ exports[`<AdminNotifications /> should render correctly with loading=true 1`] = 
   color: white;
 }
 
-.c15:focus-within,
-.c15:focus {
+.c14:focus-within,
+.c14:focus {
   outline: none !important;
 }
 
-.c15:focus-within::after,
-.c15:focus::after {
+.c14:focus-within::after,
+.c14:focus::after {
   position: absolute;
   top: -0.35rem;
   right: -0.35rem;
@@ -1620,23 +1562,23 @@ exports[`<AdminNotifications /> should render correctly with loading=true 1`] = 
   pointer-events: none;
 }
 
-.c15:focus,
-.c15:hover {
+.c14:focus,
+.c14:hover {
   background-color: #004F8C;
   color: white;
 }
 
-.c15:active {
+.c14:active {
   background-color: #003E6F;
   color: white;
 }
 
-.c15:disabled {
+.c14:disabled {
   background-color: #cdcdd7;
   color: #646464;
 }
 
-.c18 {
+.c17 {
   position: relative;
   min-width: 5rem;
   padding: 0.43rem 1.125rem 0.32rem 1.125rem;
@@ -1656,13 +1598,13 @@ exports[`<AdminNotifications /> should render correctly with loading=true 1`] = 
   cursor: default;
 }
 
-.c18:focus-within,
-.c18:focus {
+.c17:focus-within,
+.c17:focus {
   outline: none !important;
 }
 
-.c18:focus-within::after,
-.c18:focus::after {
+.c17:focus-within::after,
+.c17:focus::after {
   position: absolute;
   top: -0.35rem;
   right: -0.35rem;
@@ -1675,23 +1617,23 @@ exports[`<AdminNotifications /> should render correctly with loading=true 1`] = 
   pointer-events: none;
 }
 
-.c18:focus,
-.c18:hover {
+.c17:focus,
+.c17:hover {
   background-color: #004F8C;
   color: white;
 }
 
-.c18:active {
+.c17:active {
   background-color: #003E6F;
   color: white;
 }
 
-.c18:disabled {
+.c17:disabled {
   background-color: #cdcdd7;
   color: #646464;
 }
 
-.c17 {
+.c16 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1702,7 +1644,7 @@ exports[`<AdminNotifications /> should render correctly with loading=true 1`] = 
   justify-content: center;
 }
 
-.c19 {
+.c18 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1714,7 +1656,7 @@ exports[`<AdminNotifications /> should render correctly with loading=true 1`] = 
   opacity: 0.1;
 }
 
-.c20 {
+.c19 {
   position: absolute;
   top: 0;
   left: 0;
@@ -1780,7 +1722,7 @@ exports[`<AdminNotifications /> should render correctly with loading=true 1`] = 
   pointer-events: none;
 }
 
-.c16 {
+.c15 {
   margin-bottom: 1rem;
   margin-top: 1rem;
 }
@@ -1804,7 +1746,7 @@ exports[`<AdminNotifications /> should render correctly with loading=true 1`] = 
   font-weight: bold;
 }
 
-.c30 {
+.c29 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1815,7 +1757,7 @@ exports[`<AdminNotifications /> should render correctly with loading=true 1`] = 
   padding-top: 1rem;
 }
 
-.c30 > *:not(:first-child) {
+.c29 > *:not(:first-child) {
   margin-top: 1rem;
 }
 
@@ -1842,23 +1784,6 @@ exports[`<AdminNotifications /> should render correctly with loading=true 1`] = 
   fill: #00a698;
 }
 
-.c14 {
-  padding: 0.375rem 0.75rem;
-  -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
-  border: none;
-  outline: none;
-  background-color: transparent;
-  color: #1e1e1e;
-  font-size: 1rem;
-}
-
-.c14:disabled {
-  color: #b2b2bf;
-}
-
 @media (prefers-color-scheme:dark) {
   .c3:focus-within::after,
   .c3:focus::after {
@@ -1879,78 +1804,78 @@ exports[`<AdminNotifications /> should render correctly with loading=true 1`] = 
 }
 
 @media (prefers-color-scheme:dark) {
-  .c21 {
+  .c20 {
     color: #ffffff;
   }
 }
 
 @media (prefers-color-scheme:dark) {
-  .c15:focus-within::after,
-  .c15:focus::after {
+  .c14:focus-within::after,
+  .c14:focus::after {
     border-color: #007dfa3C;
   }
 }
 
 @media (prefers-color-scheme:dark) {
-  .c15 {
+  .c14 {
     background-color: #025CA2;
     color: white;
   }
 }
 
 @media (prefers-color-scheme:dark) {
-  .c15:focus,
-  .c15:hover {
+  .c14:focus,
+  .c14:hover {
     background-color: #004479;
     color: white;
   }
 }
 
 @media (prefers-color-scheme:dark) {
-  .c15:active {
+  .c14:active {
     background-color: #003965;
     color: white;
   }
 }
 
 @media (prefers-color-scheme:dark) {
-  .c15:disabled {
+  .c14:disabled {
     background-color: #595959;
     color: #a9a9a9;
   }
 }
 
 @media (prefers-color-scheme:dark) {
-  .c18:focus-within::after,
-  .c18:focus::after {
+  .c17:focus-within::after,
+  .c17:focus::after {
     border-color: #007dfa3C;
   }
 }
 
 @media (prefers-color-scheme:dark) {
-  .c18 {
+  .c17 {
     background-color: #025CA2;
     color: white;
   }
 }
 
 @media (prefers-color-scheme:dark) {
-  .c18:focus,
-  .c18:hover {
+  .c17:focus,
+  .c17:hover {
     background-color: #004479;
     color: white;
   }
 }
 
 @media (prefers-color-scheme:dark) {
-  .c18:active {
+  .c17:active {
     background-color: #003965;
     color: white;
   }
 }
 
 @media (prefers-color-scheme:dark) {
-  .c18:disabled {
+  .c17:disabled {
     background-color: #595959;
     color: #a9a9a9;
   }
@@ -1991,18 +1916,6 @@ exports[`<AdminNotifications /> should render correctly with loading=true 1`] = 
 
 @media (prefers-color-scheme:dark) {
   .c10:disabled {
-    color: #7b7b86;
-  }
-}
-
-@media (prefers-color-scheme:dark) {
-  .c14 {
-    color: #ffffff;
-  }
-}
-
-@media (prefers-color-scheme:dark) {
-  .c14:disabled {
     color: #7b7b86;
   }
 }
@@ -2090,7 +2003,7 @@ exports[`<AdminNotifications /> should render correctly with loading=true 1`] = 
           <select
             aria-disabled="false"
             aria-invalid="false"
-            class="c14"
+            class="c10"
             id="type_FORM_ID"
             name="Type"
           >
@@ -2124,33 +2037,36 @@ exports[`<AdminNotifications /> should render correctly with loading=true 1`] = 
         </div>
       </div>
       <button
-        class="c15 c16"
+        class="c14 c15"
         type="button"
       >
         <span
-          class="c17"
+          class="c16"
         >
           Create notification
         </span>
       </button>
     </div>
     <button
-      class="c18 outer"
+      class="c17 outer"
       disabled=""
       type="button"
     >
       <span
-        class="c19"
+        class="c18"
       >
         Reload notifications
       </span>
       <div
         aria-hidden="true"
-        class="c20"
+        class="c19"
       >
         <div
-          class="c21"
+          class="c20"
         >
+          <div
+            class="c21"
+          />
           <div
             class="c22"
           />
@@ -2172,14 +2088,11 @@ exports[`<AdminNotifications /> should render correctly with loading=true 1`] = 
           <div
             class="c28"
           />
-          <div
-            class="c29"
-          />
         </div>
       </div>
     </button>
     <div
-      class="c30"
+      class="c29"
     />
   </div>
 </div>
@@ -2247,11 +2160,11 @@ exports[`<AdminNotifications /> should render correctly with notifications 1`] =
 }
 
 .c1 {
-  -webkit-animation: bbwGtI 0.4s ease-in-out;
-  animation: bbwGtI 0.4s ease-in-out;
+  -webkit-animation: eTsntO 0.4s ease-in-out;
+  animation: eTsntO 0.4s ease-in-out;
 }
 
-.c15 {
+.c14 {
   position: relative;
   min-width: 5rem;
   padding: 0.43rem 1.125rem 0.32rem 1.125rem;
@@ -2270,13 +2183,13 @@ exports[`<AdminNotifications /> should render correctly with notifications 1`] =
   color: white;
 }
 
-.c15:focus-within,
-.c15:focus {
+.c14:focus-within,
+.c14:focus {
   outline: none !important;
 }
 
-.c15:focus-within::after,
-.c15:focus::after {
+.c14:focus-within::after,
+.c14:focus::after {
   position: absolute;
   top: -0.35rem;
   right: -0.35rem;
@@ -2289,23 +2202,23 @@ exports[`<AdminNotifications /> should render correctly with notifications 1`] =
   pointer-events: none;
 }
 
-.c15:focus,
-.c15:hover {
+.c14:focus,
+.c14:hover {
   background-color: #004F8C;
   color: white;
 }
 
-.c15:active {
+.c14:active {
   background-color: #003E6F;
   color: white;
 }
 
-.c15:disabled {
+.c14:disabled {
   background-color: #cdcdd7;
   color: #646464;
 }
 
-.c20 {
+.c19 {
   position: relative;
   min-width: 5rem;
   padding: 0.43rem 1.125rem 0.32rem 1.125rem;
@@ -2324,13 +2237,13 @@ exports[`<AdminNotifications /> should render correctly with notifications 1`] =
   color: white;
 }
 
-.c20:focus-within,
-.c20:focus {
+.c19:focus-within,
+.c19:focus {
   outline: none !important;
 }
 
-.c20:focus-within::after,
-.c20:focus::after {
+.c19:focus-within::after,
+.c19:focus::after {
   position: absolute;
   top: -0.35rem;
   right: -0.35rem;
@@ -2343,23 +2256,23 @@ exports[`<AdminNotifications /> should render correctly with notifications 1`] =
   pointer-events: none;
 }
 
-.c20:focus,
-.c20:hover {
+.c19:focus,
+.c19:hover {
   background-color: #BA2020;
   color: white;
 }
 
-.c20:active {
+.c19:active {
   background-color: #9F1717;
   color: white;
 }
 
-.c20:disabled {
+.c19:disabled {
   background-color: #cdcdd7;
   color: #646464;
 }
 
-.c17 {
+.c16 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2382,7 +2295,7 @@ exports[`<AdminNotifications /> should render correctly with notifications 1`] =
   padding-left: 1rem;
 }
 
-.c19 {
+.c18 {
   width: 100%;
   display: -webkit-box;
   display: -webkit-flex;
@@ -2408,7 +2321,7 @@ exports[`<AdminNotifications /> should render correctly with notifications 1`] =
   background-color: darkgreen;
 }
 
-.c21 {
+.c20 {
   width: 100%;
   display: -webkit-box;
   display: -webkit-flex;
@@ -2434,7 +2347,7 @@ exports[`<AdminNotifications /> should render correctly with notifications 1`] =
   background-color: darkorange;
 }
 
-.c22 {
+.c21 {
   width: 100%;
   display: -webkit-box;
   display: -webkit-flex;
@@ -2494,7 +2407,7 @@ exports[`<AdminNotifications /> should render correctly with notifications 1`] =
   pointer-events: none;
 }
 
-.c16 {
+.c15 {
   margin-bottom: 1rem;
   margin-top: 1rem;
 }
@@ -2518,7 +2431,7 @@ exports[`<AdminNotifications /> should render correctly with notifications 1`] =
   font-weight: bold;
 }
 
-.c18 {
+.c17 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2529,7 +2442,7 @@ exports[`<AdminNotifications /> should render correctly with notifications 1`] =
   padding-top: 1rem;
 }
 
-.c18 > *:not(:first-child) {
+.c17 > *:not(:first-child) {
   margin-top: 1rem;
 }
 
@@ -2556,23 +2469,6 @@ exports[`<AdminNotifications /> should render correctly with notifications 1`] =
   fill: #00a698;
 }
 
-.c14 {
-  padding: 0.375rem 0.75rem;
-  -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
-  border: none;
-  outline: none;
-  background-color: transparent;
-  color: #1e1e1e;
-  font-size: 1rem;
-}
-
-.c14:disabled {
-  color: #b2b2bf;
-}
-
 @media (prefers-color-scheme:dark) {
   .c3:focus-within::after,
   .c3:focus::after {
@@ -2593,72 +2489,72 @@ exports[`<AdminNotifications /> should render correctly with notifications 1`] =
 }
 
 @media (prefers-color-scheme:dark) {
-  .c15:focus-within::after,
-  .c15:focus::after {
+  .c14:focus-within::after,
+  .c14:focus::after {
     border-color: #007dfa3C;
   }
 }
 
 @media (prefers-color-scheme:dark) {
-  .c15 {
+  .c14 {
     background-color: #025CA2;
     color: white;
   }
 }
 
 @media (prefers-color-scheme:dark) {
-  .c15:focus,
-  .c15:hover {
+  .c14:focus,
+  .c14:hover {
     background-color: #004479;
     color: white;
   }
 }
 
 @media (prefers-color-scheme:dark) {
-  .c15:active {
+  .c14:active {
     background-color: #003965;
     color: white;
   }
 }
 
 @media (prefers-color-scheme:dark) {
-  .c15:disabled {
+  .c14:disabled {
     background-color: #595959;
     color: #a9a9a9;
   }
 }
 
 @media (prefers-color-scheme:dark) {
-  .c20:focus-within::after,
-  .c20:focus::after {
+  .c19:focus-within::after,
+  .c19:focus::after {
     border-color: #007dfa3C;
   }
 }
 
 @media (prefers-color-scheme:dark) {
-  .c20 {
+  .c19 {
     background-color: #CA2020;
     color: white;
   }
 }
 
 @media (prefers-color-scheme:dark) {
-  .c20:focus,
-  .c20:hover {
+  .c19:focus,
+  .c19:hover {
     background-color: #891111;
     color: white;
   }
 }
 
 @media (prefers-color-scheme:dark) {
-  .c20:active {
+  .c19:active {
     background-color: #730D0D;
     color: white;
   }
 }
 
 @media (prefers-color-scheme:dark) {
-  .c20:disabled {
+  .c19:disabled {
     background-color: #595959;
     color: #a9a9a9;
   }
@@ -2699,18 +2595,6 @@ exports[`<AdminNotifications /> should render correctly with notifications 1`] =
 
 @media (prefers-color-scheme:dark) {
   .c10:disabled {
-    color: #7b7b86;
-  }
-}
-
-@media (prefers-color-scheme:dark) {
-  .c14 {
-    color: #ffffff;
-  }
-}
-
-@media (prefers-color-scheme:dark) {
-  .c14:disabled {
     color: #7b7b86;
   }
 }
@@ -2798,7 +2682,7 @@ exports[`<AdminNotifications /> should render correctly with notifications 1`] =
           <select
             aria-disabled="false"
             aria-invalid="false"
-            class="c14"
+            class="c10"
             id="type_FORM_ID"
             name="Type"
           >
@@ -2832,42 +2716,60 @@ exports[`<AdminNotifications /> should render correctly with notifications 1`] =
         </div>
       </div>
       <button
-        class="c15 c16"
+        class="c14 c15"
         type="button"
       >
         <span
-          class="c17"
+          class="c16"
         >
           Create notification
         </span>
       </button>
     </div>
     <button
-      class="c15 outer"
+      class="c14 outer"
       type="button"
     >
       <span
-        class="c17"
+        class="c16"
       >
         Reload notifications
       </span>
     </button>
     <div
-      class="c18"
+      class="c17"
     >
       <div>
         <div
-          class="c19"
+          class="c18"
           type="success"
         >
           message1
         </div>
         <button
-          class="c20 outer"
+          class="c19 outer"
           type="button"
         >
           <span
-            class="c17"
+            class="c16"
+          >
+            Remove
+          </span>
+        </button>
+      </div>
+      <div>
+        <div
+          class="c20"
+          type="warn"
+        >
+          message2
+        </div>
+        <button
+          class="c19 outer"
+          type="button"
+        >
+          <span
+            class="c16"
           >
             Remove
           </span>
@@ -2876,34 +2778,16 @@ exports[`<AdminNotifications /> should render correctly with notifications 1`] =
       <div>
         <div
           class="c21"
-          type="warn"
-        >
-          message2
-        </div>
-        <button
-          class="c20 outer"
-          type="button"
-        >
-          <span
-            class="c17"
-          >
-            Remove
-          </span>
-        </button>
-      </div>
-      <div>
-        <div
-          class="c22"
           type="error"
         >
           message3
         </div>
         <button
-          class="c20 outer"
+          class="c19 outer"
           type="button"
         >
           <span
-            class="c17"
+            class="c16"
           >
             Remove
           </span>
