@@ -41,11 +41,11 @@ exports[`<Account /> should render correctly - index 1`] = `
   top: 0;
   width: 13rem;
   height: 100vh;
-  background-image: linear-gradient( 90deg, rgb(238,238,238), rgb(245,245,245), rgb(238,238,238) );
+  background-image: linear-gradient( 90deg,rgb(238,238,238),rgb(245,245,245),rgb(238,238,238) );
   background-repeat: no-repeat;
   background-size: 12.5rem 100%;
-  -webkit-animation: sjjMW 3.5s ease-in-out infinite;
-  animation: sjjMW 3.5s ease-in-out infinite;
+  -webkit-animation: eflhBg 3.5s ease-in-out infinite;
+  animation: eflhBg 3.5s ease-in-out infinite;
 }
 
 @media (min-width:50.25rem) {
@@ -69,7 +69,7 @@ exports[`<Account /> should render correctly - index 1`] = `
 
 @media (prefers-color-scheme:dark) {
   .c2 {
-    background-image: linear-gradient( 90deg, rgb(17,17,17), rgb(50,50,50), rgb(17,17,17) );
+    background-image: linear-gradient( 90deg,rgb(17,17,17),rgb(50,50,50),rgb(17,17,17) );
   }
 }
 
@@ -132,8 +132,8 @@ exports[`<Account /> should render correctly with initial state 1`] = `
 }
 
 .c1 {
-  -webkit-animation: bbwGtI 0.4s ease-in-out;
-  animation: bbwGtI 0.4s ease-in-out;
+  -webkit-animation: eTsntO 0.4s ease-in-out;
+  animation: eTsntO 0.4s ease-in-out;
 }
 
 .c5 {
@@ -418,8 +418,8 @@ exports[`<Account /> should render correctly with initial state 2`] = `
 }
 
 .c1 {
-  -webkit-animation: bbwGtI 0.4s ease-in-out;
-  animation: bbwGtI 0.4s ease-in-out;
+  -webkit-animation: eTsntO 0.4s ease-in-out;
+  animation: eTsntO 0.4s ease-in-out;
 }
 
 .c5 {
@@ -704,8 +704,8 @@ exports[`<Account /> should render correctly with logOutError 1`] = `
 }
 
 .c1 {
-  -webkit-animation: bbwGtI 0.4s ease-in-out;
-  animation: bbwGtI 0.4s ease-in-out;
+  -webkit-animation: eTsntO 0.4s ease-in-out;
+  animation: eTsntO 0.4s ease-in-out;
 }
 
 .c5 {
@@ -990,8 +990,8 @@ exports[`<Account /> should render correctly with logOutResult 1`] = `
 }
 
 .c1 {
-  -webkit-animation: bbwGtI 0.4s ease-in-out;
-  animation: bbwGtI 0.4s ease-in-out;
+  -webkit-animation: eTsntO 0.4s ease-in-out;
+  animation: eTsntO 0.4s ease-in-out;
 }
 
 .c5 {
@@ -1276,8 +1276,8 @@ exports[`<Account /> should render correctly with loggingOut=true 1`] = `
 }
 
 .c1 {
-  -webkit-animation: bbwGtI 0.4s ease-in-out;
-  animation: bbwGtI 0.4s ease-in-out;
+  -webkit-animation: eTsntO 0.4s ease-in-out;
+  animation: eTsntO 0.4s ease-in-out;
 }
 
 .c11 {
@@ -1297,8 +1297,8 @@ exports[`<Account /> should render correctly with loggingOut=true 1`] = `
   border-radius: 1rem;
   background-color: transparent;
   background-color: currentColor;
-  -webkit-animation: fzQzkt 0.8s infinite linear;
-  animation: fzQzkt 0.8s infinite linear;
+  -webkit-animation: dJmicz 0.8s infinite linear;
+  animation: dJmicz 0.8s infinite linear;
   -webkit-transform-origin: center -0.16rem;
   -ms-transform-origin: center -0.16rem;
   transform-origin: center -0.16rem;
@@ -1318,8 +1318,8 @@ exports[`<Account /> should render correctly with loggingOut=true 1`] = `
   border-radius: 1rem;
   background-color: transparent;
   background-color: currentColor;
-  -webkit-animation: fzQzkt 0.8s infinite linear;
-  animation: fzQzkt 0.8s infinite linear;
+  -webkit-animation: dJmicz 0.8s infinite linear;
+  animation: dJmicz 0.8s infinite linear;
   -webkit-transform-origin: center -0.16rem;
   -ms-transform-origin: center -0.16rem;
   transform-origin: center -0.16rem;
@@ -1339,8 +1339,8 @@ exports[`<Account /> should render correctly with loggingOut=true 1`] = `
   border-radius: 1rem;
   background-color: transparent;
   background-color: currentColor;
-  -webkit-animation: fzQzkt 0.8s infinite linear;
-  animation: fzQzkt 0.8s infinite linear;
+  -webkit-animation: dJmicz 0.8s infinite linear;
+  animation: dJmicz 0.8s infinite linear;
   -webkit-transform-origin: center -0.16rem;
   -ms-transform-origin: center -0.16rem;
   transform-origin: center -0.16rem;
@@ -1360,8 +1360,8 @@ exports[`<Account /> should render correctly with loggingOut=true 1`] = `
   border-radius: 1rem;
   background-color: transparent;
   background-color: currentColor;
-  -webkit-animation: fzQzkt 0.8s infinite linear;
-  animation: fzQzkt 0.8s infinite linear;
+  -webkit-animation: dJmicz 0.8s infinite linear;
+  animation: dJmicz 0.8s infinite linear;
   -webkit-transform-origin: center -0.16rem;
   -ms-transform-origin: center -0.16rem;
   transform-origin: center -0.16rem;
@@ -1381,8 +1381,8 @@ exports[`<Account /> should render correctly with loggingOut=true 1`] = `
   border-radius: 1rem;
   background-color: transparent;
   background-color: currentColor;
-  -webkit-animation: fzQzkt 0.8s infinite linear;
-  animation: fzQzkt 0.8s infinite linear;
+  -webkit-animation: dJmicz 0.8s infinite linear;
+  animation: dJmicz 0.8s infinite linear;
   -webkit-transform-origin: center -0.16rem;
   -ms-transform-origin: center -0.16rem;
   transform-origin: center -0.16rem;
@@ -1402,8 +1402,8 @@ exports[`<Account /> should render correctly with loggingOut=true 1`] = `
   border-radius: 1rem;
   background-color: transparent;
   background-color: currentColor;
-  -webkit-animation: fzQzkt 0.8s infinite linear;
-  animation: fzQzkt 0.8s infinite linear;
+  -webkit-animation: dJmicz 0.8s infinite linear;
+  animation: dJmicz 0.8s infinite linear;
   -webkit-transform-origin: center -0.16rem;
   -ms-transform-origin: center -0.16rem;
   transform-origin: center -0.16rem;
@@ -1423,8 +1423,8 @@ exports[`<Account /> should render correctly with loggingOut=true 1`] = `
   border-radius: 1rem;
   background-color: transparent;
   background-color: currentColor;
-  -webkit-animation: fzQzkt 0.8s infinite linear;
-  animation: fzQzkt 0.8s infinite linear;
+  -webkit-animation: dJmicz 0.8s infinite linear;
+  animation: dJmicz 0.8s infinite linear;
   -webkit-transform-origin: center -0.16rem;
   -ms-transform-origin: center -0.16rem;
   transform-origin: center -0.16rem;
@@ -1444,8 +1444,8 @@ exports[`<Account /> should render correctly with loggingOut=true 1`] = `
   border-radius: 1rem;
   background-color: transparent;
   background-color: currentColor;
-  -webkit-animation: fzQzkt 0.8s infinite linear;
-  animation: fzQzkt 0.8s infinite linear;
+  -webkit-animation: dJmicz 0.8s infinite linear;
+  animation: dJmicz 0.8s infinite linear;
   -webkit-transform-origin: center -0.16rem;
   -ms-transform-origin: center -0.16rem;
   transform-origin: center -0.16rem;
@@ -1828,11 +1828,11 @@ exports[`<Account /> should render correctly with no user 1`] = `
   top: 0;
   width: 13rem;
   height: 100vh;
-  background-image: linear-gradient( 90deg, rgb(238,238,238), rgb(245,245,245), rgb(238,238,238) );
+  background-image: linear-gradient( 90deg,rgb(238,238,238),rgb(245,245,245),rgb(238,238,238) );
   background-repeat: no-repeat;
   background-size: 12.5rem 100%;
-  -webkit-animation: sjjMW 3.5s ease-in-out infinite;
-  animation: sjjMW 3.5s ease-in-out infinite;
+  -webkit-animation: eflhBg 3.5s ease-in-out infinite;
+  animation: eflhBg 3.5s ease-in-out infinite;
 }
 
 @media (min-width:50.25rem) {
@@ -1856,7 +1856,7 @@ exports[`<Account /> should render correctly with no user 1`] = `
 
 @media (prefers-color-scheme:dark) {
   .c2 {
-    background-image: linear-gradient( 90deg, rgb(17,17,17), rgb(50,50,50), rgb(17,17,17) );
+    background-image: linear-gradient( 90deg,rgb(17,17,17),rgb(50,50,50),rgb(17,17,17) );
   }
 }
 
@@ -1919,8 +1919,8 @@ exports[`<Account /> should render correctly with requestVerificationEmailError 
 }
 
 .c1 {
-  -webkit-animation: bbwGtI 0.4s ease-in-out;
-  animation: bbwGtI 0.4s ease-in-out;
+  -webkit-animation: eTsntO 0.4s ease-in-out;
+  animation: eTsntO 0.4s ease-in-out;
 }
 
 .c5 {
@@ -2205,8 +2205,8 @@ exports[`<Account /> should render correctly with requestVerificationEmailResult
 }
 
 .c1 {
-  -webkit-animation: bbwGtI 0.4s ease-in-out;
-  animation: bbwGtI 0.4s ease-in-out;
+  -webkit-animation: eTsntO 0.4s ease-in-out;
+  animation: eTsntO 0.4s ease-in-out;
 }
 
 .c5 {
@@ -2491,8 +2491,8 @@ exports[`<Account /> should render correctly with requestingVerificationEmail=tr
 }
 
 .c1 {
-  -webkit-animation: bbwGtI 0.4s ease-in-out;
-  animation: bbwGtI 0.4s ease-in-out;
+  -webkit-animation: eTsntO 0.4s ease-in-out;
+  animation: eTsntO 0.4s ease-in-out;
 }
 
 .c9 {
@@ -2512,8 +2512,8 @@ exports[`<Account /> should render correctly with requestingVerificationEmail=tr
   border-radius: 1rem;
   background-color: transparent;
   background-color: currentColor;
-  -webkit-animation: fzQzkt 0.8s infinite linear;
-  animation: fzQzkt 0.8s infinite linear;
+  -webkit-animation: dJmicz 0.8s infinite linear;
+  animation: dJmicz 0.8s infinite linear;
   -webkit-transform-origin: center -0.16rem;
   -ms-transform-origin: center -0.16rem;
   transform-origin: center -0.16rem;
@@ -2533,8 +2533,8 @@ exports[`<Account /> should render correctly with requestingVerificationEmail=tr
   border-radius: 1rem;
   background-color: transparent;
   background-color: currentColor;
-  -webkit-animation: fzQzkt 0.8s infinite linear;
-  animation: fzQzkt 0.8s infinite linear;
+  -webkit-animation: dJmicz 0.8s infinite linear;
+  animation: dJmicz 0.8s infinite linear;
   -webkit-transform-origin: center -0.16rem;
   -ms-transform-origin: center -0.16rem;
   transform-origin: center -0.16rem;
@@ -2554,8 +2554,8 @@ exports[`<Account /> should render correctly with requestingVerificationEmail=tr
   border-radius: 1rem;
   background-color: transparent;
   background-color: currentColor;
-  -webkit-animation: fzQzkt 0.8s infinite linear;
-  animation: fzQzkt 0.8s infinite linear;
+  -webkit-animation: dJmicz 0.8s infinite linear;
+  animation: dJmicz 0.8s infinite linear;
   -webkit-transform-origin: center -0.16rem;
   -ms-transform-origin: center -0.16rem;
   transform-origin: center -0.16rem;
@@ -2575,8 +2575,8 @@ exports[`<Account /> should render correctly with requestingVerificationEmail=tr
   border-radius: 1rem;
   background-color: transparent;
   background-color: currentColor;
-  -webkit-animation: fzQzkt 0.8s infinite linear;
-  animation: fzQzkt 0.8s infinite linear;
+  -webkit-animation: dJmicz 0.8s infinite linear;
+  animation: dJmicz 0.8s infinite linear;
   -webkit-transform-origin: center -0.16rem;
   -ms-transform-origin: center -0.16rem;
   transform-origin: center -0.16rem;
@@ -2596,8 +2596,8 @@ exports[`<Account /> should render correctly with requestingVerificationEmail=tr
   border-radius: 1rem;
   background-color: transparent;
   background-color: currentColor;
-  -webkit-animation: fzQzkt 0.8s infinite linear;
-  animation: fzQzkt 0.8s infinite linear;
+  -webkit-animation: dJmicz 0.8s infinite linear;
+  animation: dJmicz 0.8s infinite linear;
   -webkit-transform-origin: center -0.16rem;
   -ms-transform-origin: center -0.16rem;
   transform-origin: center -0.16rem;
@@ -2617,8 +2617,8 @@ exports[`<Account /> should render correctly with requestingVerificationEmail=tr
   border-radius: 1rem;
   background-color: transparent;
   background-color: currentColor;
-  -webkit-animation: fzQzkt 0.8s infinite linear;
-  animation: fzQzkt 0.8s infinite linear;
+  -webkit-animation: dJmicz 0.8s infinite linear;
+  animation: dJmicz 0.8s infinite linear;
   -webkit-transform-origin: center -0.16rem;
   -ms-transform-origin: center -0.16rem;
   transform-origin: center -0.16rem;
@@ -2638,8 +2638,8 @@ exports[`<Account /> should render correctly with requestingVerificationEmail=tr
   border-radius: 1rem;
   background-color: transparent;
   background-color: currentColor;
-  -webkit-animation: fzQzkt 0.8s infinite linear;
-  animation: fzQzkt 0.8s infinite linear;
+  -webkit-animation: dJmicz 0.8s infinite linear;
+  animation: dJmicz 0.8s infinite linear;
   -webkit-transform-origin: center -0.16rem;
   -ms-transform-origin: center -0.16rem;
   transform-origin: center -0.16rem;
@@ -2659,8 +2659,8 @@ exports[`<Account /> should render correctly with requestingVerificationEmail=tr
   border-radius: 1rem;
   background-color: transparent;
   background-color: currentColor;
-  -webkit-animation: fzQzkt 0.8s infinite linear;
-  animation: fzQzkt 0.8s infinite linear;
+  -webkit-animation: dJmicz 0.8s infinite linear;
+  animation: dJmicz 0.8s infinite linear;
   -webkit-transform-origin: center -0.16rem;
   -ms-transform-origin: center -0.16rem;
   transform-origin: center -0.16rem;
@@ -3026,8 +3026,8 @@ exports[`<Account /> should render correctly with user with emailVerified=true 1
 }
 
 .c1 {
-  -webkit-animation: bbwGtI 0.4s ease-in-out;
-  animation: bbwGtI 0.4s ease-in-out;
+  -webkit-animation: eTsntO 0.4s ease-in-out;
+  animation: eTsntO 0.4s ease-in-out;
 }
 
 .c5 {

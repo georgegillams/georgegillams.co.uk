@@ -97,11 +97,11 @@ exports[`<BlogList /> should render correctly - index 1`] = `
   top: 0;
   width: 13rem;
   height: 100vh;
-  background-image: linear-gradient( 90deg, rgb(238,238,238), rgb(245,245,245), rgb(238,238,238) );
+  background-image: linear-gradient( 90deg,rgb(238,238,238),rgb(245,245,245),rgb(238,238,238) );
   background-repeat: no-repeat;
   background-size: 12.5rem 100%;
-  -webkit-animation: sjjMW 3.5s ease-in-out infinite;
-  animation: sjjMW 3.5s ease-in-out infinite;
+  -webkit-animation: eflhBg 3.5s ease-in-out infinite;
+  animation: eflhBg 3.5s ease-in-out infinite;
 }
 
 .c7 {
@@ -173,7 +173,7 @@ exports[`<BlogList /> should render correctly - index 1`] = `
 
 @media (prefers-color-scheme:dark) {
   .c1 {
-    background-image: linear-gradient( 90deg, rgb(17,17,17), rgb(50,50,50), rgb(17,17,17) );
+    background-image: linear-gradient( 90deg,rgb(17,17,17),rgb(50,50,50),rgb(17,17,17) );
   }
 }
 
@@ -411,11 +411,11 @@ exports[`<BlogList /> should render correctly authenticated with blogs 1`] = `
   top: 0;
   width: 13rem;
   height: 100vh;
-  background-image: linear-gradient( 90deg, rgb(238,238,238), rgb(245,245,245), rgb(238,238,238) );
+  background-image: linear-gradient( 90deg,rgb(238,238,238),rgb(245,245,245),rgb(238,238,238) );
   background-repeat: no-repeat;
   background-size: 12.5rem 100%;
-  -webkit-animation: sjjMW 3.5s ease-in-out infinite;
-  animation: sjjMW 3.5s ease-in-out infinite;
+  -webkit-animation: eflhBg 3.5s ease-in-out infinite;
+  animation: eflhBg 3.5s ease-in-out infinite;
 }
 
 .c9 {
@@ -487,7 +487,7 @@ exports[`<BlogList /> should render correctly authenticated with blogs 1`] = `
 
 @media (prefers-color-scheme:dark) {
   .c3 {
-    background-image: linear-gradient( 90deg, rgb(17,17,17), rgb(50,50,50), rgb(17,17,17) );
+    background-image: linear-gradient( 90deg,rgb(17,17,17),rgb(50,50,50),rgb(17,17,17) );
   }
 }
 
@@ -1097,11 +1097,11 @@ exports[`<BlogList /> should render correctly with blog load error 1`] = `
   top: 0;
   width: 13rem;
   height: 100vh;
-  background-image: linear-gradient( 90deg, rgb(238,238,238), rgb(245,245,245), rgb(238,238,238) );
+  background-image: linear-gradient( 90deg,rgb(238,238,238),rgb(245,245,245),rgb(238,238,238) );
   background-repeat: no-repeat;
   background-size: 12.5rem 100%;
-  -webkit-animation: sjjMW 3.5s ease-in-out infinite;
-  animation: sjjMW 3.5s ease-in-out infinite;
+  -webkit-animation: eflhBg 3.5s ease-in-out infinite;
+  animation: eflhBg 3.5s ease-in-out infinite;
 }
 
 .c8 {
@@ -1173,7 +1173,7 @@ exports[`<BlogList /> should render correctly with blog load error 1`] = `
 
 @media (prefers-color-scheme:dark) {
   .c1 {
-    background-image: linear-gradient( 90deg, rgb(17,17,17), rgb(50,50,50), rgb(17,17,17) );
+    background-image: linear-gradient( 90deg,rgb(17,17,17),rgb(50,50,50),rgb(17,17,17) );
   }
 }
 
@@ -1421,11 +1421,11 @@ exports[`<BlogList /> should render correctly with blogs 1`] = `
   top: 0;
   width: 13rem;
   height: 100vh;
-  background-image: linear-gradient( 90deg, rgb(238,238,238), rgb(245,245,245), rgb(238,238,238) );
+  background-image: linear-gradient( 90deg,rgb(238,238,238),rgb(245,245,245),rgb(238,238,238) );
   background-repeat: no-repeat;
   background-size: 12.5rem 100%;
-  -webkit-animation: sjjMW 3.5s ease-in-out infinite;
-  animation: sjjMW 3.5s ease-in-out infinite;
+  -webkit-animation: eflhBg 3.5s ease-in-out infinite;
+  animation: eflhBg 3.5s ease-in-out infinite;
 }
 
 .c9 {
@@ -1497,7 +1497,7 @@ exports[`<BlogList /> should render correctly with blogs 1`] = `
 
 @media (prefers-color-scheme:dark) {
   .c3 {
-    background-image: linear-gradient( 90deg, rgb(17,17,17), rgb(50,50,50), rgb(17,17,17) );
+    background-image: linear-gradient( 90deg,rgb(17,17,17),rgb(50,50,50),rgb(17,17,17) );
   }
 }
 
@@ -2038,11 +2038,11 @@ exports[`<BlogList /> should render correctly with initial state 1`] = `
   top: 0;
   width: 13rem;
   height: 100vh;
-  background-image: linear-gradient( 90deg, rgb(238,238,238), rgb(245,245,245), rgb(238,238,238) );
+  background-image: linear-gradient( 90deg,rgb(238,238,238),rgb(245,245,245),rgb(238,238,238) );
   background-repeat: no-repeat;
   background-size: 12.5rem 100%;
-  -webkit-animation: sjjMW 3.5s ease-in-out infinite;
-  animation: sjjMW 3.5s ease-in-out infinite;
+  -webkit-animation: eflhBg 3.5s ease-in-out infinite;
+  animation: eflhBg 3.5s ease-in-out infinite;
 }
 
 .c7 {
@@ -2114,7 +2114,7 @@ exports[`<BlogList /> should render correctly with initial state 1`] = `
 
 @media (prefers-color-scheme:dark) {
   .c1 {
-    background-image: linear-gradient( 90deg, rgb(17,17,17), rgb(50,50,50), rgb(17,17,17) );
+    background-image: linear-gradient( 90deg,rgb(17,17,17),rgb(50,50,50),rgb(17,17,17) );
   }
 }
 
@@ -2352,11 +2352,11 @@ exports[`<BlogList /> should render correctly with ssrBlogs 1`] = `
   top: 0;
   width: 13rem;
   height: 100vh;
-  background-image: linear-gradient( 90deg, rgb(238,238,238), rgb(245,245,245), rgb(238,238,238) );
+  background-image: linear-gradient( 90deg,rgb(238,238,238),rgb(245,245,245),rgb(238,238,238) );
   background-repeat: no-repeat;
   background-size: 12.5rem 100%;
-  -webkit-animation: sjjMW 3.5s ease-in-out infinite;
-  animation: sjjMW 3.5s ease-in-out infinite;
+  -webkit-animation: eflhBg 3.5s ease-in-out infinite;
+  animation: eflhBg 3.5s ease-in-out infinite;
 }
 
 .c9 {
@@ -2428,7 +2428,7 @@ exports[`<BlogList /> should render correctly with ssrBlogs 1`] = `
 
 @media (prefers-color-scheme:dark) {
   .c3 {
-    background-image: linear-gradient( 90deg, rgb(17,17,17), rgb(50,50,50), rgb(17,17,17) );
+    background-image: linear-gradient( 90deg,rgb(17,17,17),rgb(50,50,50),rgb(17,17,17) );
   }
 }
 
