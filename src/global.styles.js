@@ -37,6 +37,7 @@ body {
 html {
   /* Ensures that anchor links take the user slightly further down the page to allow for the nav bar height */
   scroll-padding-top: calc(${navigationBarHeight} + ${spacingLg});
+  scroll-behavior: smooth;
 }
 
 body {
