@@ -699,7 +699,7 @@ exports[`<SiteMap /> should render correctly - index 1`] = `
               <span
                 class="c11"
               >
-                404 error page - not found
+                error page - not found
               </span>
             </a>
             <br />
@@ -710,7 +710,7 @@ exports[`<SiteMap /> should render correctly - index 1`] = `
               <span
                 class="c11"
               >
-                418 error page - I'm a teapot
+                error page - I'm a teapot
               </span>
             </a>
           </span>
@@ -2186,7 +2186,7 @@ exports[`<SiteMap /> should render correctly 1`] = `
               <span
                 class="c11"
               >
-                404 error page - not found
+                error page - not found
               </span>
             </a>
             <br />
@@ -2197,7 +2197,7 @@ exports[`<SiteMap /> should render correctly 1`] = `
               <span
                 class="c11"
               >
-                418 error page - I'm a teapot
+                error page - I'm a teapot
               </span>
             </a>
           </span>
@@ -3601,7 +3601,7 @@ exports[`<SiteMap /> should render correctly with blogs 1`] = `
               <span
                 class="c11"
               >
-                404 error page - not found
+                error page - not found
               </span>
             </a>
             <br />
@@ -3612,7 +3612,7 @@ exports[`<SiteMap /> should render correctly with blogs 1`] = `
               <span
                 class="c11"
               >
-                418 error page - I'm a teapot
+                error page - I'm a teapot
               </span>
             </a>
           </span>
@@ -5087,7 +5087,7 @@ exports[`<SiteMap /> should render correctly with blogs and admin user 1`] = `
               <span
                 class="c11"
               >
-                404 error page - not found
+                error page - not found
               </span>
             </a>
             <br />
@@ -5098,7 +5098,7 @@ exports[`<SiteMap /> should render correctly with blogs and admin user 1`] = `
               <span
                 class="c11"
               >
-                418 error page - I'm a teapot
+                error page - I'm a teapot
               </span>
             </a>
           </span>
@@ -6502,7 +6502,7 @@ exports[`<SiteMap /> should render correctly with ssrBlogs 1`] = `
               <span
                 class="c11"
               >
-                404 error page - not found
+                error page - not found
               </span>
             </a>
             <br />
@@ -6513,7 +6513,7 @@ exports[`<SiteMap /> should render correctly with ssrBlogs 1`] = `
               <span
                 class="c11"
               >
-                418 error page - I'm a teapot
+                error page - I'm a teapot
               </span>
             </a>
           </span>
