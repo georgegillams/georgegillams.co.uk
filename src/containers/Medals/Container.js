@@ -155,8 +155,8 @@ const Medals = () => {
         <Subsection>
           <StyledMedalShelf>
             <EventPatch
-              background={notBlack}
-              foreground="yellow"
+              background="#000000"
+              foreground="#feed00"
               title="HYROX London"
               year="2023"
               stravaLink="https://www.strava.com/activities/10281041890"
