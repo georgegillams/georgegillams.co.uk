@@ -148,6 +148,12 @@ const Medals = () => {
               year="2023"
               stravaLink="https://www.strava.com/activities/9070888539"
             />
+          </StyledMedalShelf>
+        </Subsection>
+      </SectionWithScroll>
+      <SectionWithScroll name="HYROX">
+        <Subsection>
+          <StyledMedalShelf>
             <EventPatch
               background={notBlack}
               foreground="yellow"
