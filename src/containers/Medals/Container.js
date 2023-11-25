@@ -159,7 +159,7 @@ const Medals = () => {
               foreground="yellow"
               title="HYROX London"
               year="2023"
-              stravaLink="https://www.strava.com/activities/TODOTODO"
+              stravaLink="https://www.strava.com/activities/10281041890"
             />
           </StyledMedalShelf>
         </Subsection>
