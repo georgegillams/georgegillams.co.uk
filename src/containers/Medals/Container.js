@@ -151,6 +151,19 @@ const Medals = () => {
           </StyledMedalShelf>
         </Subsection>
       </SectionWithScroll>
+      <SectionWithScroll name="HYROX">
+        <Subsection>
+          <StyledMedalShelf>
+            <EventPatch
+              background="#000000"
+              foreground="#feed00"
+              title="HYROX London"
+              year="2023"
+              stravaLink="https://www.strava.com/activities/10281041890"
+            />
+          </StyledMedalShelf>
+        </Subsection>
+      </SectionWithScroll>
       <SectionWithScroll name="Runs">
         <Subsection>
           <StyledMedalShelf>
