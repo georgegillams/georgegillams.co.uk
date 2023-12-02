@@ -264,8 +264,8 @@ exports[`<Medals /> should render correctly 1`] = `
   -webkit-text-decoration: none;
   text-decoration: none;
   position: relative;
-  color: #feed00;
-  fill: #feed00;
+  color: #ffed00;
+  fill: #ffed00;
 }
 
 .c88:focus-within,
@@ -579,8 +579,8 @@ exports[`<Medals /> should render correctly 1`] = `
   border-radius: 0.375rem;
   box-shadow: 0.2rem 0.2rem 0.5rem 0 #25201f1E;
   background: #000000;
-  color: #feed00;
-  fill: #feed00;
+  color: #ffed00;
+  fill: #ffed00;
 }
 
 .c89 {
@@ -1136,8 +1136,8 @@ exports[`<Medals /> should render correctly 1`] = `
 
 @media (prefers-color-scheme:dark) {
   .c88 {
-    color: #feed00;
-    fill: #feed00;
+    color: #ffed00;
+    fill: #ffed00;
   }
 
   .c88:hover {
