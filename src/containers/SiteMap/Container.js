@@ -138,9 +138,9 @@ const SiteMap = props => {
               SiteMap.xml
             </TextLink>
             <br />
-            <TextLink href="/404">error page - not found</TextLink>
+            <TextLink href="/404">Error page - not found</TextLink>
             <br />
-            <TextLink href="/teapot">error page - I&apos;m a teapot</TextLink>
+            <TextLink href="/teapot">Error page - I&apos;m a teapot</TextLink>
           </Paragraph>
         </StyledSubsectionWithScroll>
         <StyledSubsectionWithScroll anchor={false} name="API">
