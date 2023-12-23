@@ -20,7 +20,7 @@ export const TFWrapper = styled.div`
   height: ${TF_HEIGHT};
   background: ${primaryColor};
   padding: ${spacingLg};
-  border-radius: ${borderRadiusSm};
+  border-radius: calc(2 * ${borderRadiusSm});
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -31,6 +31,14 @@ export const TFWrapper = styled.div`
 
   @media (min-width: ${breakpointSm}) {
     padding: calc(2 * ${spacingLg});
+  }
+
+  .js & {
+    @supports (mask-image: paint(smooth-corners)) {
+      border-radius: 0;
+      mask-image: paint(smooth-corners);
+      --smooth-corners: 20;
+    }
   }
 `;
 
