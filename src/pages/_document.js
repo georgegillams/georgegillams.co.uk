@@ -3,7 +3,7 @@ import Document, { Html, Head, Main, NextScript } from 'next/document';
 import appConfig from 'helpers/appConfig';
 import { ServerStyleSheet } from 'styled-components';
 import JSFeatureDetector, { NO_JS_CLASSNAME } from '@george-gillams/components/js-feature-detector';
-import { SmoothCornersWorkletLoader } from './SmoothCornersWorkletLoader';
+import { SmoothCornersWorkletLoader } from 'components/worklet-loaders/smooth-corners-worklet-loader';
 
 class MyDocument extends Document {
   static async getInitialProps(ctx) {
