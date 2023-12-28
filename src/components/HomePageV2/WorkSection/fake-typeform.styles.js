@@ -9,7 +9,6 @@ import {
   spacingXs,
 } from '@george-gillams/components/constants/layout';
 import { notBlack, primaryColor, primaryColorDark } from '@george-gillams/components/constants/colors';
-import { projectUnderTest } from 'helpers/appConfig';
 
 import SmoothCornersContainer from '@george-gillams/components/smooth-corners-container';
 
@@ -23,9 +22,7 @@ export const TFWrapper = styled(SmoothCornersContainer).attrs({
     bottomRight: 40,
     bottomLeft: 40,
   },
-  ...(projectUnderTest && {
-    idSuffixGenerator: () => 'test-id',
-  }),
+  idSuffixGenerator: () => 'homepage-typeform',
 })`
   width: ${TF_WIDTH};
   text-align: left;

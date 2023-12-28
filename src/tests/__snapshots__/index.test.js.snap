@@ -183,8 +183,8 @@ exports[`<HomePage /> should render correctly 1`] = `
 
 .c19 {
   overflow: hidden;
-  -webkit-clip-path: url(#squircleMask-test-id);
-  clip-path: url(#squircleMask-test-id);
+  -webkit-clip-path: url(#squircleMask-homepage-typeform);
+  clip-path: url(#squircleMask-homepage-typeform);
 }
 
 .no-js .c18 {
@@ -1457,7 +1457,7 @@ exports[`<HomePage /> should render correctly 1`] = `
                     xmlns="http://www.w3.org/2000/svg"
                   >
                     <clippath
-                      id="squircleMask-test-id"
+                      id="squircleMask-homepage-typeform"
                     >
                       <path
                         d="M0 0C0 0 0 0 0 0C0 0 0 0 0 0C0 0 0 0 0 0C0 0 0 0 0 0Z"
