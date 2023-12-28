@@ -9,6 +9,7 @@
     "url": "git://github.com/georgegillams/webapp-boilerplate.git"
   },
   "scripts": {
+    "postinstall": "cp ./node_modules/@george-gillams/components/smooth-corners-container/worklet.js ./public/static/smooth-corners-worklet.js",
     "prebuild": "yarn build:clean",
     "build:clean": "rimraf ./build",
     "link-helpers:clean": "rm -f $(pwd)/src/helpers $(pwd)/server/helpers",
@@ -52,7 +53,7 @@
     ]
   },
   "dependencies": {
-    "@george-gillams/components": "^28.13.0",
+    "@george-gillams/components": "^28.14.0",
     "@george-gillams/webapp": "1.0.5",
     "@next/bundle-analyzer": "^13.0.3",
     "async-lock": "^1.4.0",

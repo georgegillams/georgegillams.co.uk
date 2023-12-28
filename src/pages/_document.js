@@ -3,7 +3,7 @@ import Document, { Html, Head, Main, NextScript } from 'next/document';
 import appConfig from 'helpers/appConfig';
 import { ServerStyleSheet } from 'styled-components';
 import JSFeatureDetector, { NO_JS_CLASSNAME } from '@george-gillams/components/js-feature-detector';
-import { SmoothCornersWorkletLoader } from 'components/worklet-loaders/smooth-corners-worklet-loader';
+import { SmoothCornersWorkletLoader } from '@george-gillams/components/smooth-corners-container';
 
 class MyDocument extends Document {
   static async getInitialProps(ctx) {
@@ -50,7 +50,7 @@ class MyDocument extends Document {
 
         <body>
           <JSFeatureDetector />
-          <SmoothCornersWorkletLoader />
+          <SmoothCornersWorkletLoader workletUrl="/static/smooth-corners-worklet.js" />
           {/* Fixes FOUC in Firefox: https://bugzilla.mozilla.org/show_bug.cgi?id=1404468 */}
           <script>0</script>
           <Main />
