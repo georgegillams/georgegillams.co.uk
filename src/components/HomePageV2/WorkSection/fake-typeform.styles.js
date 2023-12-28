@@ -2,7 +2,6 @@ import styled from 'styled-components';
 
 import Text from '@george-gillams/components/text';
 import {
-  borderRadiusSm,
   breakpointSm,
   spacingBase,
   spacingLg,
@@ -10,17 +9,29 @@ import {
   spacingXs,
 } from '@george-gillams/components/constants/layout';
 import { notBlack, primaryColor, primaryColorDark } from '@george-gillams/components/constants/colors';
+import { projectUnderTest } from 'helpers/appConfig';
+
+import SmoothCornersContainer from '@george-gillams/components/smooth-corners-container';
 
 export const TF_WIDTH = '24rem';
 export const TF_HEIGHT = '16rem';
 
-export const TFWrapper = styled.div`
+export const TFWrapper = styled(SmoothCornersContainer).attrs({
+  cornerRadiuses: {
+    topLeft: 40,
+    topRight: 40,
+    bottomRight: 40,
+    bottomLeft: 40,
+  },
+  ...(projectUnderTest && {
+    idSuffixGenerator: () => 'test-id',
+  }),
+})`
   width: ${TF_WIDTH};
   text-align: left;
   height: ${TF_HEIGHT};
   background: ${primaryColor};
   padding: ${spacingLg};
-  border-radius: calc(2 * ${borderRadiusSm});
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -31,14 +42,6 @@ export const TFWrapper = styled.div`
 
   @media (min-width: ${breakpointSm}) {
     padding: calc(2 * ${spacingLg});
-  }
-
-  .js & {
-    @supports (mask-image: paint(smooth-corners)) {
-      border-radius: 0;
-      mask-image: paint(smooth-corners);
-      --smooth-corners: 20;
-    }
   }
 `;
 

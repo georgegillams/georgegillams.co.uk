@@ -65,7 +65,7 @@ exports[`<HomePage /> should render correctly 1`] = `
   fill: #44aeff;
 }
 
-.c90 {
+.c92 {
   display: inline-block;
   border-radius: 0.25rem;
   font-weight: bold;
@@ -76,14 +76,14 @@ exports[`<HomePage /> should render correctly 1`] = `
   fill: white;
 }
 
-.c90:focus-within,
-.c90:focus {
+.c92:focus-within,
+.c92:focus {
   position: relative;
   outline: none !important;
 }
 
-.c90:focus-within::after,
-.c90:focus::after {
+.c92:focus-within::after,
+.c92:focus::after {
   position: absolute;
   top: -0.35rem;
   right: -0.35rem;
@@ -96,7 +96,7 @@ exports[`<HomePage /> should render correctly 1`] = `
   pointer-events: none;
 }
 
-.c90:hover {
+.c92:hover {
   color: white;
   fill: white;
 }
@@ -125,13 +125,13 @@ exports[`<HomePage /> should render correctly 1`] = `
   font-weight: bold;
 }
 
-.c27 {
+.c29 {
   margin: 0;
   font-size: 2.2rem;
   font-weight: bold;
 }
 
-.c39 {
+.c41 {
   margin: 0;
   font-size: 1.5rem;
   font-weight: bold;
@@ -141,7 +141,7 @@ exports[`<HomePage /> should render correctly 1`] = `
   margin: 0;
 }
 
-.c20 {
+.c21 {
   margin: 0;
   font-size: 1.2rem;
 }
@@ -174,13 +174,36 @@ exports[`<HomePage /> should render correctly 1`] = `
   margin-top: 0.86rem;
 }
 
+.no-js .c18 {
+  -webkit-clip-path: unset;
+  clip-path: unset;
+  -webkit-mask-image: unset;
+  mask-image: unset;
+}
+
 .c19 {
+  overflow: hidden;
+  -webkit-clip-path: url(#squircleMask-test-id);
+  clip-path: url(#squircleMask-test-id);
+}
+
+.no-js .c18 {
+  -webkit-clip-path: unset;
+  clip-path: unset;
+  -webkit-mask-image: unset;
+  mask-image: unset;
+}
+
+.c26 {
+  position: absolute;
+}
+
+.c20 {
   width: 24rem;
   text-align: left;
   height: 16rem;
   background: #44aeff;
   padding: 2rem;
-  border-radius: calc(2 * 0.375rem);
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -194,7 +217,7 @@ exports[`<HomePage /> should render correctly 1`] = `
   justify-content: center;
 }
 
-.c22 {
+.c23 {
   padding: 0.375rem;
   background: rgba(0,0,0,0.1);
   border-radius: 0.2rem;
@@ -216,14 +239,14 @@ exports[`<HomePage /> should render correctly 1`] = `
   outline: none;
 }
 
-.c22:hover,
-.c22:focus,
-.c22:active {
+.c23:hover,
+.c23:focus,
+.c23:active {
   background: rgba(0,0,0,0.2);
   box-shadow: 0px 0px 0px 1px #1e1e1e inset;
 }
 
-.c21 {
+.c22 {
   margin-top: 1rem;
   display: -webkit-box;
   display: -webkit-flex;
@@ -238,15 +261,15 @@ exports[`<HomePage /> should render correctly 1`] = `
   align-items: flex-start;
 }
 
-.c21 > * {
+.c22 > * {
   margin-top: 1rem;
 }
 
-.c24 {
+.c25 {
   padding-top: 0.1rem;
 }
 
-.c23 {
+.c24 {
   padding-top: 0.1rem;
   width: 1.2rem;
   height: 1.2rem;
@@ -319,22 +342,22 @@ exports[`<HomePage /> should render correctly 1`] = `
   transition-delay: 0.4s;
 }
 
-.c26 {
+.c28 {
   width: 100%;
   color: #1e1e1e;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
-.c28 {
+.c30 {
   margin: 3.34rem 0 0 0;
 }
 
-.c40 {
+.c42 {
   margin: 0;
 }
 
-.c31 {
+.c33 {
   position: relative;
   display: inline-block;
   z-index: 1;
@@ -353,16 +376,16 @@ exports[`<HomePage /> should render correctly 1`] = `
   text-align: left;
 }
 
-.c31:disabled {
+.c33:disabled {
   cursor: not-allowed;
 }
 
-.c31:not(:disabled):focus,.c31:not(:disabled):focus-within,
-.c31:not(:disabled):active,.c31:not(:disabled):hover {
+.c33:not(:disabled):focus,.c33:not(:disabled):focus-within,
+.c33:not(:disabled):active,.c33:not(:disabled):hover {
   box-shadow: 0.4rem 0.4rem 1rem 0 #25201f1E;
 }
 
-.c34 {
+.c36 {
   position: relative;
   width: 100%;
   height: 100%;
@@ -370,7 +393,7 @@ exports[`<HomePage /> should render correctly 1`] = `
   overflow: hidden;
 }
 
-.c35 {
+.c37 {
   position: absolute;
   top: 0;
   left: 0;
@@ -384,11 +407,11 @@ exports[`<HomePage /> should render correctly 1`] = `
   background-size: cover;
 }
 
-.c36 {
+.c38 {
   height: 100%;
 }
 
-.c42 {
+.c44 {
   position: relative;
   min-width: 5rem;
   padding: 0.43rem 1.125rem 0.32rem 1.125rem;
@@ -408,13 +431,13 @@ exports[`<HomePage /> should render correctly 1`] = `
   display: inline-block;
 }
 
-.c42:focus-within,
-.c42:focus {
+.c44:focus-within,
+.c44:focus {
   outline: none !important;
 }
 
-.c42:focus-within::after,
-.c42:focus::after {
+.c44:focus-within::after,
+.c44:focus::after {
   position: absolute;
   top: -0.35rem;
   right: -0.35rem;
@@ -427,23 +450,23 @@ exports[`<HomePage /> should render correctly 1`] = `
   pointer-events: none;
 }
 
-.c42:focus,
-.c42:hover {
+.c44:focus,
+.c44:hover {
   background-color: #004F8C;
   color: white;
 }
 
-.c42:active {
+.c44:active {
   background-color: #003E6F;
   color: white;
 }
 
-.c42:disabled {
+.c44:disabled {
   background-color: #cdcdd7;
   color: #646464;
 }
 
-.c44 {
+.c46 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -454,7 +477,7 @@ exports[`<HomePage /> should render correctly 1`] = `
   justify-content: center;
 }
 
-.c32 {
+.c34 {
   height: 100%;
   display: -webkit-box;
   display: -webkit-flex;
@@ -462,18 +485,7 @@ exports[`<HomePage /> should render correctly 1`] = `
   display: flex;
 }
 
-.c37 {
-  height: 100%;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-}
-
-.c53 {
+.c39 {
   height: 100%;
   display: -webkit-box;
   display: -webkit-flex;
@@ -484,49 +496,60 @@ exports[`<HomePage /> should render correctly 1`] = `
   flex-direction: column;
 }
 
-.c38 {
+.c55 {
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.c40 {
   padding: 1rem;
 }
 
-.c41 {
+.c43 {
   font-size: 1.2rem;
 }
 
+.c47 {
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  -webkit-mask-image: linear-gradient( to bottom,rgba(0,0,0,0) 0%,rgba(0,0,0,1) 25% );
+  mask-image: linear-gradient( to bottom,rgba(0,0,0,0) 0%,rgba(0,0,0,1) 25% );
+}
+
+.c56 {
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  -webkit-mask-image: linear-gradient( to bottom,rgba(0,0,0,0) 0%,rgba(0,0,0,1) 25% );
+  mask-image: linear-gradient( to bottom,rgba(0,0,0,0) 0%,rgba(0,0,0,1) 25% );
+}
+
 .c45 {
-  -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
-  -webkit-mask-image: linear-gradient( to bottom,rgba(0,0,0,0) 0%,rgba(0,0,0,1) 25% );
-  mask-image: linear-gradient( to bottom,rgba(0,0,0,0) 0%,rgba(0,0,0,1) 25% );
-}
-
-.c54 {
-  -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
-  -webkit-mask-image: linear-gradient( to bottom,rgba(0,0,0,0) 0%,rgba(0,0,0,1) 25% );
-  mask-image: linear-gradient( to bottom,rgba(0,0,0,0) 0%,rgba(0,0,0,1) 25% );
-}
-
-.c43 {
   margin-top: 1rem;
 }
 
-.c47 {
+.c49 {
   position: relative;
   width: 100%;
   min-height: 15rem;
 }
 
-.c49 {
+.c51 {
   position: absolute;
   -webkit-animation: doIKbv 10s linear infinite;
   animation: doIKbv 10s linear infinite;
 }
 
-.c51 {
+.c53 {
   background-color: #f4f4f4;
   width: 4rem;
   height: 4rem;
@@ -534,7 +557,7 @@ exports[`<HomePage /> should render correctly 1`] = `
   margin: 0 1rem 1rem 0;
 }
 
-.c50 {
+.c52 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -544,7 +567,7 @@ exports[`<HomePage /> should render correctly 1`] = `
   flex-direction: row;
 }
 
-.c70 {
+.c72 {
   width: 14rem;
   height: 14rem;
   fill: none;
@@ -552,72 +575,72 @@ exports[`<HomePage /> should render correctly 1`] = `
   filter: drop-shadow(0px 0px 0.4px #1e1e1e);
 }
 
-.c58 {
+.c60 {
   position: relative;
   width: 14rem;
   height: 14rem;
 }
 
-.c60 {
+.c62 {
   width: 14rem;
   height: 14rem;
 }
 
-.c61 {
+.c63 {
   fill: #a0a0a0;
 }
 
-.c62 {
+.c64 {
   fill: #d9d9d9;
 }
 
-.c63 {
+.c65 {
   fill: #C50722;
 }
 
-.c72 {
+.c74 {
   fill: #11388E;
 }
 
-.c73 {
+.c75 {
   fill: #549C00;
 }
 
-.c64 {
+.c66 {
   fill: none;
 }
 
-.c65 {
+.c67 {
   font-size: 0.3rem;
   font-weight: bold;
   fill: white;
 }
 
-.c66 {
+.c68 {
   text-shadow: 0px 0px 3px white;
 }
 
-.c67 {
+.c69 {
   fill: none;
 }
 
-.c68 {
+.c70 {
   font-size: 0.5rem;
   font-weight: bold;
   fill: #d9d9d9;
 }
 
-.c69 {
+.c71 {
   text-shadow: 1px 1px 2px #1e1e1e;
 }
 
-.c71 {
+.c73 {
   position: absolute;
   right: calc(14rem / 2);
   bottom: 0;
 }
 
-.c55 {
+.c57 {
   position: relative;
   display: -webkit-box;
   display: -webkit-flex;
@@ -632,7 +655,7 @@ exports[`<HomePage /> should render correctly 1`] = `
   min-height: 9rem;
 }
 
-.c57 {
+.c59 {
   position: absolute;
   -webkit-animation: eenrYr 10s linear infinite;
   animation: eenrYr 10s linear infinite;
@@ -645,7 +668,7 @@ exports[`<HomePage /> should render correctly 1`] = `
   flex-direction: row;
 }
 
-.c59 {
+.c61 {
   width: 14rem;
   height: 14rem;
   margin: 0 calc(2rem - 7rem) 0 0;
@@ -654,11 +677,11 @@ exports[`<HomePage /> should render correctly 1`] = `
   transform: scale(0.5);
 }
 
-.c29 {
+.c31 {
   font-size: 1.2rem;
 }
 
-.c30 {
+.c32 {
   margin-top: 2rem;
   display: -webkit-box;
   display: -webkit-flex;
@@ -669,7 +692,7 @@ exports[`<HomePage /> should render correctly 1`] = `
   flex-direction: column;
 }
 
-.c33 {
+.c35 {
   margin-bottom: 2rem;
   width: 100%;
   max-width: 24rem;
@@ -677,7 +700,7 @@ exports[`<HomePage /> should render correctly 1`] = `
   margin-right: auto;
 }
 
-.c46 {
+.c48 {
   -webkit-box-flex: 1;
   -webkit-flex-grow: 1;
   -ms-flex-positive: 1;
@@ -688,24 +711,24 @@ exports[`<HomePage /> should render correctly 1`] = `
   margin-right: auto;
 }
 
-.c52 {
+.c54 {
   width: 100%;
   max-width: 24rem;
   margin-left: auto;
   margin-right: auto;
 }
 
-.c48 {
+.c50 {
   width: 100%;
   height: 100%;
 }
 
-.c56 {
+.c58 {
   width: 100%;
   height: 100%;
 }
 
-.c76 {
+.c78 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -723,15 +746,15 @@ exports[`<HomePage /> should render correctly 1`] = `
   overflow: hidden;
 }
 
-.c77 {
+.c79 {
   position: relative;
 }
 
-.c78 {
+.c80 {
   font-size: 2.2rem;
 }
 
-.c79 {
+.c81 {
   position: absolute;
   top: -400%;
   width: 20rem;
@@ -747,7 +770,7 @@ exports[`<HomePage /> should render correctly 1`] = `
   pointer-events: none;
 }
 
-.c74 {
+.c76 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -764,17 +787,17 @@ exports[`<HomePage /> should render correctly 1`] = `
   padding-top: 2rem;
 }
 
-.c75 {
+.c77 {
   font-size: 1.2rem;
   text-align: center;
 }
 
-.c25 {
+.c27 {
   width: 100%;
   margin-top: 2rem;
 }
 
-.c81 {
+.c83 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -801,18 +824,18 @@ exports[`<HomePage /> should render correctly 1`] = `
   padding: 0;
 }
 
-.c83 {
+.c85 {
   border-radius: 0.25rem;
 }
 
-.c83:focus-within,
-.c83:focus {
+.c85:focus-within,
+.c85:focus {
   position: relative;
   outline: none !important;
 }
 
-.c83:focus-within::after,
-.c83:focus::after {
+.c85:focus-within::after,
+.c85:focus::after {
   position: absolute;
   top: -0.35rem;
   right: -0.35rem;
@@ -825,16 +848,16 @@ exports[`<HomePage /> should render correctly 1`] = `
   pointer-events: none;
 }
 
-.c83:hover,
-.c83:active,
-.c83:focus {
+.c85:hover,
+.c85:active,
+.c85:focus {
   -webkit-animation-duration: 0.4s;
   animation-duration: 0.4s;
   -webkit-animation-name: cMFrpC;
   animation-name: cMFrpC;
 }
 
-.c84 {
+.c86 {
   display: inline-block;
   padding-top: 0.1rem;
   border-radius: 0.25rem;
@@ -844,7 +867,7 @@ exports[`<HomePage /> should render correctly 1`] = `
   font-weight: bold;
 }
 
-.c88 {
+.c90 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -864,7 +887,7 @@ exports[`<HomePage /> should render correctly 1`] = `
   margin: auto;
 }
 
-.c89 > * {
+.c91 > * {
   margin: 0.5rem 0.5rem 0 0.5rem;
   display: -webkit-box;
   display: -webkit-flex;
@@ -879,7 +902,7 @@ exports[`<HomePage /> should render correctly 1`] = `
   align-items: center;
 }
 
-.c86 {
+.c88 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -899,7 +922,7 @@ exports[`<HomePage /> should render correctly 1`] = `
   align-items: center;
 }
 
-.c87 {
+.c89 {
   display: inline-block;
   width: 100%;
   max-width: 2.3rem;
@@ -910,12 +933,12 @@ exports[`<HomePage /> should render correctly 1`] = `
   filter: brightness(0) invert(1);
 }
 
-.c87:hover {
+.c89:hover {
   -webkit-filter: brightness(0) invert(1) opacity(70%);
   filter: brightness(0) invert(1) opacity(70%);
 }
 
-.c80 {
+.c82 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -935,11 +958,11 @@ exports[`<HomePage /> should render correctly 1`] = `
   color: #ffffff;
 }
 
-.c82 {
+.c84 {
   text-align: center;
 }
 
-.c85 {
+.c87 {
   text-align: center;
 }
 
@@ -980,47 +1003,64 @@ exports[`<HomePage /> should render correctly 1`] = `
 }
 
 @media (prefers-color-scheme:dark) {
-  .c90:focus-within::after,
-  .c90:focus::after {
+  .c92:focus-within::after,
+  .c92:focus::after {
     border-color: #007dfa3C;
   }
 }
 
 @media (prefers-color-scheme:dark) {
-  .c90 {
+  .c92 {
     color: white;
     fill: white;
   }
 
-  .c90:hover {
+  .c92:hover {
     color: white;
     fill: white;
-  }
-}
-
-@media (prefers-color-scheme:dark) {
-  .c19 {
-    background: #005da3;
-  }
-}
-
-@media (min-width:32.25rem) {
-  .c19 {
-    padding: calc(2 * 2rem);
   }
 }
 
 @supports (-webkit-mask-image:paint(smooth-corners)) or (mask-image:paint(smooth-corners)) {
   .js .c18 {
     border-radius: 0;
+  }
+}
+
+@supports (-webkit-mask-image:paint(smooth-corners)) or (mask-image:paint(smooth-corners)) {
+  .c19 {
+    -webkit-clip-path: unset;
+    clip-path: unset;
     -webkit-mask-image: paint(smooth-corners);
     mask-image: paint(smooth-corners);
-    --smooth-corners: 20;
+    --smooth-corners: 40 40 40 40;
+  }
+
+  .js .c18 {
+    border-radius: 0;
+  }
+}
+
+@supports (-webkit-mask-image:paint(smooth-corners)) or (mask-image:paint(smooth-corners)) {
+  .c26 {
+    display: none;
   }
 }
 
 @media (prefers-color-scheme:dark) {
-  .c22 {
+  .c20 {
+    background: #005da3;
+  }
+}
+
+@media (min-width:32.25rem) {
+  .c20 {
+    padding: calc(2 * 2rem);
+  }
+}
+
+@media (prefers-color-scheme:dark) {
+  .c23 {
     background: rgba(255,255,255,0.2);
     box-shadow: 0px 0px 0px 1px white inset;
     color: white;
@@ -1028,16 +1068,16 @@ exports[`<HomePage /> should render correctly 1`] = `
 }
 
 @media (prefers-color-scheme:dark) {
-  .c22:hover,
-  .c22:focus,
-  .c22:active {
+  .c23:hover,
+  .c23:focus,
+  .c23:active {
     background: rgba(255,255,255,0.4);
     box-shadow: 0px 0px 0px 2px white inset;
   }
 }
 
 @media (prefers-color-scheme:dark) {
-  .c23 {
+  .c24 {
     background: rgba(0,0,0,0.2);
     box-shadow: 0px 0px 0px 1px white inset;
   }
@@ -1073,68 +1113,68 @@ exports[`<HomePage /> should render correctly 1`] = `
 }
 
 @media (prefers-color-scheme:dark) {
-  .c26 {
+  .c28 {
     color: #ffffff;
   }
 }
 
 @media (prefers-color-scheme:dark) {
-  .c31 {
+  .c33 {
     box-shadow: 0.44rem 0.44rem 1rem 0 #00000000;
   }
 }
 
 @media (prefers-color-scheme:dark) {
-  .c31:not(:disabled):focus,.c31:not(:disabled):focus-within,
-  .c31:not(:disabled):active,.c31:not(:disabled):hover {
+  .c33:not(:disabled):focus,.c33:not(:disabled):focus-within,
+  .c33:not(:disabled):active,.c33:not(:disabled):hover {
     box-shadow: 0.2rem 0.2rem 0.5rem 0 #00000000;
   }
 }
 
 @media (prefers-color-scheme:dark) {
-  .c35 {
+  .c37 {
     background-color: #1e1e1e;
   }
 }
 
 @media (prefers-color-scheme:dark) {
-  .c42:focus-within::after,
-  .c42:focus::after {
+  .c44:focus-within::after,
+  .c44:focus::after {
     border-color: #007dfa3C;
   }
 }
 
 @media (prefers-color-scheme:dark) {
-  .c42 {
+  .c44 {
     background-color: #025CA2;
     color: white;
   }
 }
 
 @media (prefers-color-scheme:dark) {
-  .c42:focus,
-  .c42:hover {
+  .c44:focus,
+  .c44:hover {
     background-color: #004479;
     color: white;
   }
 }
 
 @media (prefers-color-scheme:dark) {
-  .c42:active {
+  .c44:active {
     background-color: #003965;
     color: white;
   }
 }
 
 @media (prefers-color-scheme:dark) {
-  .c42:disabled {
+  .c44:disabled {
     background-color: #595959;
     color: #a9a9a9;
   }
 }
 
 @media (min-width:50.25rem) {
-  .c53 {
+  .c55 {
     -webkit-flex-direction: row;
     -ms-flex-direction: row;
     flex-direction: row;
@@ -1142,26 +1182,26 @@ exports[`<HomePage /> should render correctly 1`] = `
 }
 
 @media (min-width:50.25rem) {
-  .c54 {
+  .c56 {
     -webkit-mask-image: linear-gradient( to right,rgba(0,0,0,0) 0%,rgba(0,0,0,1) 25% );
     mask-image: linear-gradient( to right,rgba(0,0,0,0) 0%,rgba(0,0,0,1) 25% );
   }
 }
 
 @media (prefers-color-scheme:dark) {
-  .c51 {
+  .c53 {
     background-color: #191a1b;
   }
 }
 
 @media (min-width:50.25rem) {
-  .c59 {
+  .c61 {
     margin: 0 calc(4 * 2rem - 7rem) 0 0;
   }
 }
 
 @media (min-width:50.25rem) {
-  .c30 {
+  .c32 {
     -webkit-flex-direction: row;
     -ms-flex-direction: row;
     flex-direction: row;
@@ -1174,7 +1214,7 @@ exports[`<HomePage /> should render correctly 1`] = `
 }
 
 @media (min-width:50.25rem) {
-  .c33 {
+  .c35 {
     max-width: 20rem;
     margin-right: 2rem;
     margin-left: unset;
@@ -1182,7 +1222,7 @@ exports[`<HomePage /> should render correctly 1`] = `
 }
 
 @media (min-width:50.25rem) {
-  .c46 {
+  .c48 {
     max-width: unset;
     margin-left: unset;
     margin-right: unset;
@@ -1190,7 +1230,7 @@ exports[`<HomePage /> should render correctly 1`] = `
 }
 
 @media (min-width:50.25rem) {
-  .c52 {
+  .c54 {
     max-width: unset;
     margin-left: unset;
     margin-right: unset;
@@ -1198,7 +1238,7 @@ exports[`<HomePage /> should render correctly 1`] = `
 }
 
 @media (prefers-color-scheme:dark) {
-  .c79 {
+  .c81 {
     background-color: #000000;
   }
 }
@@ -1208,7 +1248,7 @@ exports[`<HomePage /> should render correctly 1`] = `
 }
 
 @media (min-width:50.25rem) {
-  .c25 {
+  .c27 {
     margin-top: 4rem;
   }
 }
@@ -1218,7 +1258,7 @@ exports[`<HomePage /> should render correctly 1`] = `
 }
 
 @media (min-width:50.25rem) {
-  .c81 {
+  .c83 {
     padding-right: unset;
     padding-left: unset;
     -webkit-align-items: unset;
@@ -1229,32 +1269,32 @@ exports[`<HomePage /> should render correctly 1`] = `
 }
 
 @media (prefers-color-scheme:dark) {
-  .c83:focus-within::after,
-  .c83:focus::after {
+  .c85:focus-within::after,
+  .c85:focus::after {
     border-color: #007dfa3C;
   }
 }
 
 @media (min-width:32.25rem) {
-  .c84 {
+  .c86 {
     font-size: 3rem;
   }
 }
 
 @media (prefers-color-scheme:dark) {
-  .c84 {
+  .c86 {
     color: #ffffff;
   }
 }
 
 @media (min-width:32.25rem) {
-  .c80 {
+  .c82 {
     padding: 2rem 2rem;
   }
 }
 
 @media (prefers-color-scheme:dark) {
-  .c80 {
+  .c82 {
     border-top: solid #44aeff 0.15rem;
     background-color: #050d1b;
   }
@@ -1367,49 +1407,63 @@ exports[`<HomePage /> should render correctly 1`] = `
                   class="c17 home-page-work-seciton__typeform--hide"
                 >
                   <div
-                    class="c18 c19"
+                    class="c18 c19 c20"
                   >
                     <span
-                      class="c20"
+                      class="c21"
                     >
                       1. 
                       Where to?
                     </span>
                     <div
-                      class="c21"
+                      class="c22"
                     >
                       <a
-                        class="c22"
+                        class="c23"
                         href="/work"
                       >
                         <div
-                          class="c23"
+                          class="c24"
                         >
                           A
                         </div>
                         <span
-                          class="c12 c24"
+                          class="c12 c25"
                         >
                           My work
                         </span>
                       </a>
                       <a
-                        class="c22"
+                        class="c23"
                         href="https://typeform.com"
                       >
                         <div
-                          class="c23"
+                          class="c24"
                         >
                           B
                         </div>
                         <span
-                          class="c12 c24"
+                          class="c12 c25"
                         >
                           Typeform
                         </span>
                       </a>
                     </div>
                   </div>
+                  <svg
+                    class="c26"
+                    height="0"
+                    width="0"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <clippath
+                      id="squircleMask-test-id"
+                    >
+                      <path
+                        d="M0 0C0 0 0 0 0 0C0 0 0 0 0 0C0 0 0 0 0 0C0 0 0 0 0 0Z"
+                      />
+                    </clippath>
+                  </svg>
                 </div>
               </div>
             </div>
@@ -1427,19 +1481,19 @@ exports[`<HomePage /> should render correctly 1`] = `
           class="c6 animated-content__wrapper--hidden"
         >
           <div
-            class="life-sectionstyles__Wrapper-sc-17amgn9-0 c25"
+            class="life-sectionstyles__Wrapper-sc-17amgn9-0 c27"
           >
             <div
-              class="c26"
+              class="c28"
             >
               <h1
-                class="c27 c28"
+                class="c29 c30"
                 id="about"
               >
                 About
               </h1>
               <span
-                class="c9 c29"
+                class="c9 c31"
               >
                 I love travel, photography, and obstacle course racing.
               </span>
@@ -1454,398 +1508,398 @@ exports[`<HomePage /> should render correctly 1`] = `
                   class="c6 animated-content__wrapper--hidden"
                 >
                   <div
-                    class="c30"
+                    class="c32"
                   >
                     <div
-                      class="c31 c32 c33"
+                      class="c33 c34 c35"
                       role="group"
                       tabindex="-1"
                     >
                       <div
-                        class="c34"
+                        class="c36"
                       >
                         <div
-                          class="c35"
+                          class="c37"
                         />
                         <div
-                          class="c36"
+                          class="c38"
                         >
                           <div
-                            class="c37"
+                            class="c39"
                           >
                             <div
-                              class="c38"
+                              class="c40"
                             >
                               <div
-                                class="c26 homepage-cardstyles__StyledSubsection-sc-1cl3ne9-4"
+                                class="c28 homepage-cardstyles__StyledSubsection-sc-1cl3ne9-4"
                               >
                                 <h1
-                                  class="c39 c40"
+                                  class="c41 c42"
                                   id="blog"
                                 >
                                   Blog
                                 </h1>
                                 <span
-                                  class="c9 c41"
+                                  class="c9 c43"
                                 >
                                   I occasionally write about tech, photography and OCR.
                                 </span>
                               </div>
                               <a
                                 aria-label="Blog →"
-                                class="c42 c43"
+                                class="c44 c45"
                                 href="/blog"
                               >
                                 <span
-                                  class="c44"
+                                  class="c46"
                                 >
                                   Blog →
                                 </span>
                               </a>
                             </div>
                             <div
-                              class="c45"
+                              class="c47"
                             />
                           </div>
                         </div>
                       </div>
                     </div>
                     <div
-                      class="c31 c32 c46"
+                      class="c33 c34 c48"
                       role="group"
                       tabindex="-1"
                     >
                       <div
-                        class="c34"
+                        class="c36"
                       >
                         <div
-                          class="c35"
+                          class="c37"
                         />
                         <div
-                          class="c36"
+                          class="c38"
                         >
                           <div
-                            class="c37"
+                            class="c39"
                           >
                             <div
-                              class="c38"
+                              class="c40"
                             >
                               <div
-                                class="c26 homepage-cardstyles__StyledSubsection-sc-1cl3ne9-4"
+                                class="c28 homepage-cardstyles__StyledSubsection-sc-1cl3ne9-4"
                               >
                                 <h1
-                                  class="c39 c40"
+                                  class="c41 c42"
                                   id="photography"
                                 >
                                   Photography
                                 </h1>
                                 <span
-                                  class="c9 c41"
+                                  class="c9 c43"
                                 >
                                   Check out my photos. Disclaimer: 99% of them are the dog.
                                 </span>
                               </div>
                               <a
                                 aria-label="Photos →"
-                                class="c42 c43"
+                                class="c44 c45"
                                 href="/photography"
                               >
                                 <span
-                                  class="c44"
+                                  class="c46"
                                 >
                                   Photos →
                                 </span>
                               </a>
                             </div>
                             <div
-                              class="c45"
+                              class="c47"
                             >
                               <div
                                 aria-label="A scrolling gallery of image thumbnails. View full images with alt-text on the photography page."
-                                class="c47 c48"
+                                class="c49 c50"
                               >
                                 <div
                                   aria-hidden="true"
-                                  class="c49"
+                                  class="c51"
                                 >
                                   <div
-                                    class="c50"
+                                    class="c52"
                                   >
                                     <div
-                                      class="c51"
+                                      class="c53"
                                     />
                                     <div
-                                      class="c51"
+                                      class="c53"
                                     />
                                     <div
-                                      class="c51"
+                                      class="c53"
                                     />
                                     <div
-                                      class="c51"
+                                      class="c53"
                                     />
                                     <div
-                                      class="c51"
+                                      class="c53"
                                     />
                                     <div
-                                      class="c51"
+                                      class="c53"
                                     />
                                     <div
-                                      class="c51"
+                                      class="c53"
                                     />
                                     <div
-                                      class="c51"
+                                      class="c53"
                                     />
                                   </div>
                                   <div
-                                    class="c50"
+                                    class="c52"
                                   >
                                     <div
-                                      class="c51"
+                                      class="c53"
                                     />
                                     <div
-                                      class="c51"
+                                      class="c53"
                                     />
                                     <div
-                                      class="c51"
+                                      class="c53"
                                     />
                                     <div
-                                      class="c51"
+                                      class="c53"
                                     />
                                     <div
-                                      class="c51"
+                                      class="c53"
                                     />
                                     <div
-                                      class="c51"
+                                      class="c53"
                                     />
                                     <div
-                                      class="c51"
+                                      class="c53"
                                     />
                                     <div
-                                      class="c51"
+                                      class="c53"
                                     />
                                   </div>
                                   <div
-                                    class="c50"
+                                    class="c52"
                                   >
                                     <div
-                                      class="c51"
+                                      class="c53"
                                     />
                                     <div
-                                      class="c51"
+                                      class="c53"
                                     />
                                     <div
-                                      class="c51"
+                                      class="c53"
                                     />
                                     <div
-                                      class="c51"
+                                      class="c53"
                                     />
                                     <div
-                                      class="c51"
+                                      class="c53"
                                     />
                                     <div
-                                      class="c51"
+                                      class="c53"
                                     />
                                     <div
-                                      class="c51"
+                                      class="c53"
                                     />
                                     <div
-                                      class="c51"
+                                      class="c53"
                                     />
                                   </div>
                                   <div
-                                    class="c50"
+                                    class="c52"
                                   >
                                     <div
-                                      class="c51"
+                                      class="c53"
                                     />
                                     <div
-                                      class="c51"
+                                      class="c53"
                                     />
                                     <div
-                                      class="c51"
+                                      class="c53"
                                     />
                                     <div
-                                      class="c51"
+                                      class="c53"
                                     />
                                     <div
-                                      class="c51"
+                                      class="c53"
                                     />
                                     <div
-                                      class="c51"
+                                      class="c53"
                                     />
                                     <div
-                                      class="c51"
+                                      class="c53"
                                     />
                                     <div
-                                      class="c51"
+                                      class="c53"
                                     />
                                   </div>
                                   <div
-                                    class="c50"
+                                    class="c52"
                                   >
                                     <div
-                                      class="c51"
+                                      class="c53"
                                     />
                                     <div
-                                      class="c51"
+                                      class="c53"
                                     />
                                     <div
-                                      class="c51"
+                                      class="c53"
                                     />
                                     <div
-                                      class="c51"
+                                      class="c53"
                                     />
                                     <div
-                                      class="c51"
+                                      class="c53"
                                     />
                                     <div
-                                      class="c51"
+                                      class="c53"
                                     />
                                     <div
-                                      class="c51"
+                                      class="c53"
                                     />
                                     <div
-                                      class="c51"
+                                      class="c53"
                                     />
                                   </div>
                                   <div
-                                    class="c50"
+                                    class="c52"
                                   >
                                     <div
-                                      class="c51"
+                                      class="c53"
                                     />
                                     <div
-                                      class="c51"
+                                      class="c53"
                                     />
                                     <div
-                                      class="c51"
+                                      class="c53"
                                     />
                                     <div
-                                      class="c51"
+                                      class="c53"
                                     />
                                     <div
-                                      class="c51"
+                                      class="c53"
                                     />
                                     <div
-                                      class="c51"
+                                      class="c53"
                                     />
                                     <div
-                                      class="c51"
+                                      class="c53"
                                     />
                                     <div
-                                      class="c51"
+                                      class="c53"
                                     />
                                   </div>
                                   <div
-                                    class="c50"
+                                    class="c52"
                                   >
                                     <div
-                                      class="c51"
+                                      class="c53"
                                     />
                                     <div
-                                      class="c51"
+                                      class="c53"
                                     />
                                     <div
-                                      class="c51"
+                                      class="c53"
                                     />
                                     <div
-                                      class="c51"
+                                      class="c53"
                                     />
                                     <div
-                                      class="c51"
+                                      class="c53"
                                     />
                                     <div
-                                      class="c51"
+                                      class="c53"
                                     />
                                     <div
-                                      class="c51"
+                                      class="c53"
                                     />
                                     <div
-                                      class="c51"
+                                      class="c53"
                                     />
                                   </div>
                                   <div
-                                    class="c50"
+                                    class="c52"
                                   >
                                     <div
-                                      class="c51"
+                                      class="c53"
                                     />
                                     <div
-                                      class="c51"
+                                      class="c53"
                                     />
                                     <div
-                                      class="c51"
+                                      class="c53"
                                     />
                                     <div
-                                      class="c51"
+                                      class="c53"
                                     />
                                     <div
-                                      class="c51"
+                                      class="c53"
                                     />
                                     <div
-                                      class="c51"
+                                      class="c53"
                                     />
                                     <div
-                                      class="c51"
+                                      class="c53"
                                     />
                                     <div
-                                      class="c51"
+                                      class="c53"
                                     />
                                   </div>
                                   <div
-                                    class="c50"
+                                    class="c52"
                                   >
                                     <div
-                                      class="c51"
+                                      class="c53"
                                     />
                                     <div
-                                      class="c51"
+                                      class="c53"
                                     />
                                     <div
-                                      class="c51"
+                                      class="c53"
                                     />
                                     <div
-                                      class="c51"
+                                      class="c53"
                                     />
                                     <div
-                                      class="c51"
+                                      class="c53"
                                     />
                                     <div
-                                      class="c51"
+                                      class="c53"
                                     />
                                     <div
-                                      class="c51"
+                                      class="c53"
                                     />
                                     <div
-                                      class="c51"
+                                      class="c53"
                                     />
                                   </div>
                                   <div
-                                    class="c50"
+                                    class="c52"
                                   >
                                     <div
-                                      class="c51"
+                                      class="c53"
                                     />
                                     <div
-                                      class="c51"
+                                      class="c53"
                                     />
                                     <div
-                                      class="c51"
+                                      class="c53"
                                     />
                                     <div
-                                      class="c51"
+                                      class="c53"
                                     />
                                     <div
-                                      class="c51"
+                                      class="c53"
                                     />
                                     <div
-                                      class="c51"
+                                      class="c53"
                                     />
                                     <div
-                                      class="c51"
+                                      class="c53"
                                     />
                                     <div
-                                      class="c51"
+                                      class="c53"
                                     />
                                   </div>
                                 </div>
@@ -1869,103 +1923,103 @@ exports[`<HomePage /> should render correctly 1`] = `
                   class="c6 animated-content__wrapper--hidden"
                 >
                   <div
-                    class="c31 c32 c52"
+                    class="c33 c34 c54"
                     role="group"
                     tabindex="-1"
                   >
                     <div
-                      class="c34"
+                      class="c36"
                     >
                       <div
-                        class="c35"
+                        class="c37"
                       />
                       <div
-                        class="c36"
+                        class="c38"
                       >
                         <div
-                          class="c53"
+                          class="c55"
                         >
                           <div
-                            class="c38"
+                            class="c40"
                           >
                             <div
-                              class="c26 homepage-cardstyles__StyledSubsection-sc-1cl3ne9-4"
+                              class="c28 homepage-cardstyles__StyledSubsection-sc-1cl3ne9-4"
                             >
                               <h1
-                                class="c39 c40"
+                                class="c41 c42"
                                 id="racing"
                               >
                                 Racing
                               </h1>
                               <span
-                                class="c9 c41"
+                                class="c9 c43"
                               >
                                 Visit my virtual medal shelf.
                               </span>
                             </div>
                             <a
                               aria-label="Medals →"
-                              class="c42 c43"
+                              class="c44 c45"
                               href="/medals"
                             >
                               <span
-                                class="c44"
+                                class="c46"
                               >
                                 Medals →
                               </span>
                             </a>
                           </div>
                           <div
-                            class="c54"
+                            class="c56"
                           >
                             <div
                               aria-label="A scrolling gallery of Spartan medals. View full medals on the medals page."
-                              class="c55 c56"
+                              class="c57 c58"
                             >
                               <div
                                 aria-hidden="true"
-                                class="c57"
+                                class="c59"
                               >
                                 <div
-                                  class="c58 c59"
+                                  class="c60 c61"
                                 >
                                   <svg
-                                    class="c60"
+                                    class="c62"
                                     height="75"
                                     viewBox="0 0 75 75"
                                     width="75"
                                     xmlns="http://www.w3.org/2000/svg"
                                   >
                                     <circle
-                                      class="c61"
+                                      class="c63"
                                       cx="37.5"
                                       cy="37.5"
                                       r="37.5"
                                     />
                                     <circle
-                                      class="c62"
+                                      class="c64"
                                       cx="37.5"
                                       cy="37.5"
                                       r="25.5"
                                     />
                                     <path
-                                      class="c63"
+                                      class="c65"
                                       color="#C50722"
                                       d="M37.5 75C47.4456 75 56.9839 71.0491 64.0165 64.0165C71.0491 56.9839 75 47.4456 75 37.5C75 27.5544 71.0491 18.0161 64.0165 10.9835C56.9839 3.95088 47.4456 -1.186e-07 37.5 0V8.59567C45.1659 8.59567 52.5178 11.6409 57.9384 17.0616C63.3591 22.4822 66.4043 29.8341 66.4043 37.5C66.4043 45.1659 63.3591 52.5178 57.9384 57.9384C52.5178 63.3591 45.1659 66.4043 37.5 66.4043V75Z"
                                     />
                                     <path
-                                      class="c64"
+                                      class="c66"
                                       d="M39 5C55.7705 5 70 20.2016 70 36.9758C70 54.2742 56.7869 70 39 70"
                                       id="textLine1"
                                     />
                                     <text
-                                      class="c65"
+                                      class="c67"
                                       color="white"
                                       width="500"
                                     >
                                       <textpath
                                         alignment-baseline="central"
-                                        class="c66"
+                                        class="c68"
                                         startOffset="17"
                                         xlink:href="#textLine1"
                                       >
@@ -1976,17 +2030,17 @@ exports[`<HomePage /> should render correctly 1`] = `
                                       </textpath>
                                     </text>
                                     <path
-                                      class="c67"
+                                      class="c69"
                                       d="M36 69C19.7705 69 6 54.2661 6 38.0081C6 21.2419 18.7869 6 36 6"
                                       id="textLine2"
                                     />
                                     <text
-                                      class="c68"
+                                      class="c70"
                                       width="500"
                                     >
                                       <textpath
                                         alignment-baseline="central"
-                                        class="0 c69"
+                                        class="0 c71"
                                         startOffset="18"
                                         xlink:href="#textLine2"
                                       >
@@ -1996,7 +2050,7 @@ exports[`<HomePage /> should render correctly 1`] = `
                                       </textpath>
                                     </text>
                                     <svg
-                                      class="c70 "
+                                      class="c72 "
                                       height="44"
                                       viewBox="0 0 200 200"
                                       width="44"
@@ -2048,49 +2102,49 @@ exports[`<HomePage /> should render correctly 1`] = `
                                     </svg>
                                   </svg>
                                   <div
-                                    class="2 c71"
+                                    class="2 c73"
                                   />
                                 </div>
                                 <div
-                                  class="c58 c59"
+                                  class="c60 c61"
                                 >
                                   <svg
-                                    class="c60"
+                                    class="c62"
                                     height="75"
                                     viewBox="0 0 75 75"
                                     width="75"
                                     xmlns="http://www.w3.org/2000/svg"
                                   >
                                     <circle
-                                      class="c61"
+                                      class="c63"
                                       cx="37.5"
                                       cy="37.5"
                                       r="37.5"
                                     />
                                     <circle
-                                      class="c62"
+                                      class="c64"
                                       cx="37.5"
                                       cy="37.5"
                                       r="25.5"
                                     />
                                     <path
-                                      class="c72"
+                                      class="c74"
                                       color="#11388E"
                                       d="M37.5 75C47.4456 75 56.9839 71.0491 64.0165 64.0165C71.0491 56.9839 75 47.4456 75 37.5C75 27.5544 71.0491 18.0161 64.0165 10.9835C56.9839 3.95088 47.4456 -1.186e-07 37.5 0V8.59567C45.1659 8.59567 52.5178 11.6409 57.9384 17.0616C63.3591 22.4822 66.4043 29.8341 66.4043 37.5C66.4043 45.1659 63.3591 52.5178 57.9384 57.9384C52.5178 63.3591 45.1659 66.4043 37.5 66.4043V75Z"
                                     />
                                     <path
-                                      class="c64"
+                                      class="c66"
                                       d="M39 5C55.7705 5 70 20.2016 70 36.9758C70 54.2742 56.7869 70 39 70"
                                       id="textLine1"
                                     />
                                     <text
-                                      class="c65"
+                                      class="c67"
                                       color="white"
                                       width="500"
                                     >
                                       <textpath
                                         alignment-baseline="central"
-                                        class="c66"
+                                        class="c68"
                                         startOffset="17"
                                         xlink:href="#textLine1"
                                       >
@@ -2101,17 +2155,17 @@ exports[`<HomePage /> should render correctly 1`] = `
                                       </textpath>
                                     </text>
                                     <path
-                                      class="c67"
+                                      class="c69"
                                       d="M36 69C19.7705 69 6 54.2661 6 38.0081C6 21.2419 18.7869 6 36 6"
                                       id="textLine2"
                                     />
                                     <text
-                                      class="c68"
+                                      class="c70"
                                       width="500"
                                     >
                                       <textpath
                                         alignment-baseline="central"
-                                        class="0 c69"
+                                        class="0 c71"
                                         startOffset="18"
                                         xlink:href="#textLine2"
                                       >
@@ -2121,7 +2175,7 @@ exports[`<HomePage /> should render correctly 1`] = `
                                       </textpath>
                                     </text>
                                     <svg
-                                      class="c70 "
+                                      class="c72 "
                                       height="44"
                                       viewBox="0 0 200 200"
                                       width="44"
@@ -2173,49 +2227,49 @@ exports[`<HomePage /> should render correctly 1`] = `
                                     </svg>
                                   </svg>
                                   <div
-                                    class="2 c71"
+                                    class="2 c73"
                                   />
                                 </div>
                                 <div
-                                  class="c58 c59"
+                                  class="c60 c61"
                                 >
                                   <svg
-                                    class="c60"
+                                    class="c62"
                                     height="75"
                                     viewBox="0 0 75 75"
                                     width="75"
                                     xmlns="http://www.w3.org/2000/svg"
                                   >
                                     <circle
-                                      class="c61"
+                                      class="c63"
                                       cx="37.5"
                                       cy="37.5"
                                       r="37.5"
                                     />
                                     <circle
-                                      class="c62"
+                                      class="c64"
                                       cx="37.5"
                                       cy="37.5"
                                       r="25.5"
                                     />
                                     <path
-                                      class="c73"
+                                      class="c75"
                                       color="#549C00"
                                       d="M37.5 75C47.4456 75 56.9839 71.0491 64.0165 64.0165C71.0491 56.9839 75 47.4456 75 37.5C75 27.5544 71.0491 18.0161 64.0165 10.9835C56.9839 3.95088 47.4456 -1.186e-07 37.5 0V8.59567C45.1659 8.59567 52.5178 11.6409 57.9384 17.0616C63.3591 22.4822 66.4043 29.8341 66.4043 37.5C66.4043 45.1659 63.3591 52.5178 57.9384 57.9384C52.5178 63.3591 45.1659 66.4043 37.5 66.4043V75Z"
                                     />
                                     <path
-                                      class="c64"
+                                      class="c66"
                                       d="M39 5C55.7705 5 70 20.2016 70 36.9758C70 54.2742 56.7869 70 39 70"
                                       id="textLine1"
                                     />
                                     <text
-                                      class="c65"
+                                      class="c67"
                                       color="white"
                                       width="500"
                                     >
                                       <textpath
                                         alignment-baseline="central"
-                                        class="c66"
+                                        class="c68"
                                         startOffset="17"
                                         xlink:href="#textLine1"
                                       >
@@ -2226,17 +2280,17 @@ exports[`<HomePage /> should render correctly 1`] = `
                                       </textpath>
                                     </text>
                                     <path
-                                      class="c67"
+                                      class="c69"
                                       d="M36 69C19.7705 69 6 54.2661 6 38.0081C6 21.2419 18.7869 6 36 6"
                                       id="textLine2"
                                     />
                                     <text
-                                      class="c68"
+                                      class="c70"
                                       width="500"
                                     >
                                       <textpath
                                         alignment-baseline="central"
-                                        class="0 c69"
+                                        class="0 c71"
                                         startOffset="18"
                                         xlink:href="#textLine2"
                                       >
@@ -2246,7 +2300,7 @@ exports[`<HomePage /> should render correctly 1`] = `
                                       </textpath>
                                     </text>
                                     <svg
-                                      class="c70 "
+                                      class="c72 "
                                       height="44"
                                       viewBox="0 0 200 200"
                                       width="44"
@@ -2298,49 +2352,49 @@ exports[`<HomePage /> should render correctly 1`] = `
                                     </svg>
                                   </svg>
                                   <div
-                                    class="2 c71"
+                                    class="2 c73"
                                   />
                                 </div>
                                 <div
-                                  class="c58 c59"
+                                  class="c60 c61"
                                 >
                                   <svg
-                                    class="c60"
+                                    class="c62"
                                     height="75"
                                     viewBox="0 0 75 75"
                                     width="75"
                                     xmlns="http://www.w3.org/2000/svg"
                                   >
                                     <circle
-                                      class="c61"
+                                      class="c63"
                                       cx="37.5"
                                       cy="37.5"
                                       r="37.5"
                                     />
                                     <circle
-                                      class="c62"
+                                      class="c64"
                                       cx="37.5"
                                       cy="37.5"
                                       r="25.5"
                                     />
                                     <path
-                                      class="c63"
+                                      class="c65"
                                       color="#C50722"
                                       d="M37.5 75C47.4456 75 56.9839 71.0491 64.0165 64.0165C71.0491 56.9839 75 47.4456 75 37.5C75 27.5544 71.0491 18.0161 64.0165 10.9835C56.9839 3.95088 47.4456 -1.186e-07 37.5 0V8.59567C45.1659 8.59567 52.5178 11.6409 57.9384 17.0616C63.3591 22.4822 66.4043 29.8341 66.4043 37.5C66.4043 45.1659 63.3591 52.5178 57.9384 57.9384C52.5178 63.3591 45.1659 66.4043 37.5 66.4043V75Z"
                                     />
                                     <path
-                                      class="c64"
+                                      class="c66"
                                       d="M39 5C55.7705 5 70 20.2016 70 36.9758C70 54.2742 56.7869 70 39 70"
                                       id="textLine1"
                                     />
                                     <text
-                                      class="c65"
+                                      class="c67"
                                       color="white"
                                       width="500"
                                     >
                                       <textpath
                                         alignment-baseline="central"
-                                        class="c66"
+                                        class="c68"
                                         startOffset="17"
                                         xlink:href="#textLine1"
                                       >
@@ -2351,17 +2405,17 @@ exports[`<HomePage /> should render correctly 1`] = `
                                       </textpath>
                                     </text>
                                     <path
-                                      class="c67"
+                                      class="c69"
                                       d="M36 69C19.7705 69 6 54.2661 6 38.0081C6 21.2419 18.7869 6 36 6"
                                       id="textLine2"
                                     />
                                     <text
-                                      class="c68"
+                                      class="c70"
                                       width="500"
                                     >
                                       <textpath
                                         alignment-baseline="central"
-                                        class="0 c69"
+                                        class="0 c71"
                                         startOffset="18"
                                         xlink:href="#textLine2"
                                       >
@@ -2371,7 +2425,7 @@ exports[`<HomePage /> should render correctly 1`] = `
                                       </textpath>
                                     </text>
                                     <svg
-                                      class="c70 "
+                                      class="c72 "
                                       height="44"
                                       viewBox="0 0 200 200"
                                       width="44"
@@ -2423,49 +2477,49 @@ exports[`<HomePage /> should render correctly 1`] = `
                                     </svg>
                                   </svg>
                                   <div
-                                    class="2 c71"
+                                    class="2 c73"
                                   />
                                 </div>
                                 <div
-                                  class="c58 c59"
+                                  class="c60 c61"
                                 >
                                   <svg
-                                    class="c60"
+                                    class="c62"
                                     height="75"
                                     viewBox="0 0 75 75"
                                     width="75"
                                     xmlns="http://www.w3.org/2000/svg"
                                   >
                                     <circle
-                                      class="c61"
+                                      class="c63"
                                       cx="37.5"
                                       cy="37.5"
                                       r="37.5"
                                     />
                                     <circle
-                                      class="c62"
+                                      class="c64"
                                       cx="37.5"
                                       cy="37.5"
                                       r="25.5"
                                     />
                                     <path
-                                      class="c72"
+                                      class="c74"
                                       color="#11388E"
                                       d="M37.5 75C47.4456 75 56.9839 71.0491 64.0165 64.0165C71.0491 56.9839 75 47.4456 75 37.5C75 27.5544 71.0491 18.0161 64.0165 10.9835C56.9839 3.95088 47.4456 -1.186e-07 37.5 0V8.59567C45.1659 8.59567 52.5178 11.6409 57.9384 17.0616C63.3591 22.4822 66.4043 29.8341 66.4043 37.5C66.4043 45.1659 63.3591 52.5178 57.9384 57.9384C52.5178 63.3591 45.1659 66.4043 37.5 66.4043V75Z"
                                     />
                                     <path
-                                      class="c64"
+                                      class="c66"
                                       d="M39 5C55.7705 5 70 20.2016 70 36.9758C70 54.2742 56.7869 70 39 70"
                                       id="textLine1"
                                     />
                                     <text
-                                      class="c65"
+                                      class="c67"
                                       color="white"
                                       width="500"
                                     >
                                       <textpath
                                         alignment-baseline="central"
-                                        class="c66"
+                                        class="c68"
                                         startOffset="17"
                                         xlink:href="#textLine1"
                                       >
@@ -2476,17 +2530,17 @@ exports[`<HomePage /> should render correctly 1`] = `
                                       </textpath>
                                     </text>
                                     <path
-                                      class="c67"
+                                      class="c69"
                                       d="M36 69C19.7705 69 6 54.2661 6 38.0081C6 21.2419 18.7869 6 36 6"
                                       id="textLine2"
                                     />
                                     <text
-                                      class="c68"
+                                      class="c70"
                                       width="500"
                                     >
                                       <textpath
                                         alignment-baseline="central"
-                                        class="0 c69"
+                                        class="0 c71"
                                         startOffset="18"
                                         xlink:href="#textLine2"
                                       >
@@ -2496,7 +2550,7 @@ exports[`<HomePage /> should render correctly 1`] = `
                                       </textpath>
                                     </text>
                                     <svg
-                                      class="c70 "
+                                      class="c72 "
                                       height="44"
                                       viewBox="0 0 200 200"
                                       width="44"
@@ -2548,49 +2602,49 @@ exports[`<HomePage /> should render correctly 1`] = `
                                     </svg>
                                   </svg>
                                   <div
-                                    class="2 c71"
+                                    class="2 c73"
                                   />
                                 </div>
                                 <div
-                                  class="c58 c59"
+                                  class="c60 c61"
                                 >
                                   <svg
-                                    class="c60"
+                                    class="c62"
                                     height="75"
                                     viewBox="0 0 75 75"
                                     width="75"
                                     xmlns="http://www.w3.org/2000/svg"
                                   >
                                     <circle
-                                      class="c61"
+                                      class="c63"
                                       cx="37.5"
                                       cy="37.5"
                                       r="37.5"
                                     />
                                     <circle
-                                      class="c62"
+                                      class="c64"
                                       cx="37.5"
                                       cy="37.5"
                                       r="25.5"
                                     />
                                     <path
-                                      class="c73"
+                                      class="c75"
                                       color="#549C00"
                                       d="M37.5 75C47.4456 75 56.9839 71.0491 64.0165 64.0165C71.0491 56.9839 75 47.4456 75 37.5C75 27.5544 71.0491 18.0161 64.0165 10.9835C56.9839 3.95088 47.4456 -1.186e-07 37.5 0V8.59567C45.1659 8.59567 52.5178 11.6409 57.9384 17.0616C63.3591 22.4822 66.4043 29.8341 66.4043 37.5C66.4043 45.1659 63.3591 52.5178 57.9384 57.9384C52.5178 63.3591 45.1659 66.4043 37.5 66.4043V75Z"
                                     />
                                     <path
-                                      class="c64"
+                                      class="c66"
                                       d="M39 5C55.7705 5 70 20.2016 70 36.9758C70 54.2742 56.7869 70 39 70"
                                       id="textLine1"
                                     />
                                     <text
-                                      class="c65"
+                                      class="c67"
                                       color="white"
                                       width="500"
                                     >
                                       <textpath
                                         alignment-baseline="central"
-                                        class="c66"
+                                        class="c68"
                                         startOffset="17"
                                         xlink:href="#textLine1"
                                       >
@@ -2601,17 +2655,17 @@ exports[`<HomePage /> should render correctly 1`] = `
                                       </textpath>
                                     </text>
                                     <path
-                                      class="c67"
+                                      class="c69"
                                       d="M36 69C19.7705 69 6 54.2661 6 38.0081C6 21.2419 18.7869 6 36 6"
                                       id="textLine2"
                                     />
                                     <text
-                                      class="c68"
+                                      class="c70"
                                       width="500"
                                     >
                                       <textpath
                                         alignment-baseline="central"
-                                        class="0 c69"
+                                        class="0 c71"
                                         startOffset="18"
                                         xlink:href="#textLine2"
                                       >
@@ -2621,7 +2675,7 @@ exports[`<HomePage /> should render correctly 1`] = `
                                       </textpath>
                                     </text>
                                     <svg
-                                      class="c70 "
+                                      class="c72 "
                                       height="44"
                                       viewBox="0 0 200 200"
                                       width="44"
@@ -2673,7 +2727,7 @@ exports[`<HomePage /> should render correctly 1`] = `
                                     </svg>
                                   </svg>
                                   <div
-                                    class="2 c71"
+                                    class="2 c73"
                                   />
                                 </div>
                               </div>
@@ -2701,10 +2755,10 @@ exports[`<HomePage /> should render correctly 1`] = `
         >
           <div>
             <div
-              class="c74"
+              class="c76"
             >
               <span
-                class="c9 c75"
+                class="c9 c77"
               >
                 This site is built in
                  
@@ -2831,7 +2885,7 @@ exports[`<HomePage /> should render correctly 1`] = `
                 . I use it to experiment with things, share stuff I've figured out, and allow people to contact me.
               </span>
               <div
-                class="c76"
+                class="c78"
               >
                 <style>
                   
@@ -2840,10 +2894,10 @@ exports[`<HomePage /> should render correctly 1`] = `
         }
                 </style>
                 <div
-                  class="c77"
+                  class="c79"
                 >
                   <a
-                    class="c11 c78"
+                    class="c11 c80"
                     href="/contact"
                   >
                     <span
@@ -2853,7 +2907,7 @@ exports[`<HomePage /> should render correctly 1`] = `
                     </span>
                   </a>
                   <div
-                    class="c79 home__contact--hide"
+                    class="c81 home__contact--hide"
                     style="left: 300%;"
                   />
                 </div>
@@ -2874,29 +2928,29 @@ exports[`<HomePage /> should render correctly 1`] = `
       class="c6 animated-content__wrapper--hidden"
     >
       <footer
-        class="c80"
+        class="c82"
         id="footer"
       >
         <div
-          class="c81 c82"
+          class="c83 c84"
         >
           <a
-            class="c83"
+            class="c85"
             href="/"
           >
             <span
               aria-label="Home page"
-              class="c84"
+              class="c86"
             >
               G
             </span>
           </a>
         </div>
         <div
-          class="c85"
+          class="c87"
         >
           <span
-            class="c9 c86"
+            class="c9 c88"
           >
             Built in
             <a
@@ -2906,7 +2960,7 @@ exports[`<HomePage /> should render correctly 1`] = `
             >
               <img
                 alt="React"
-                class="c87"
+                class="c89"
                 height="5"
                 width="5"
               />
@@ -2919,7 +2973,7 @@ exports[`<HomePage /> should render correctly 1`] = `
             >
               <img
                 alt="Redux"
-                class="c87"
+                class="c89"
                 height="5"
                 width="5"
               />
@@ -2932,7 +2986,7 @@ exports[`<HomePage /> should render correctly 1`] = `
             >
               <img
                 alt="Amazon Web Services"
-                class="c87"
+                class="c89"
                 height="5"
                 style="margin-top: .8rem; max-width: 2.9rem;"
                 width="8.28"
@@ -2941,13 +2995,13 @@ exports[`<HomePage /> should render correctly 1`] = `
           </span>
         </div>
         <div
-          class="c88 "
+          class="c90 "
         >
           <div
-            class="c89"
+            class="c91"
           >
             <a
-              class="c90"
+              class="c92"
               href="/blog"
             >
               <span
@@ -2957,7 +3011,7 @@ exports[`<HomePage /> should render correctly 1`] = `
               </span>
             </a>
             <a
-              class="c90"
+              class="c92"
               href="/photography"
             >
               <span
@@ -2967,7 +3021,7 @@ exports[`<HomePage /> should render correctly 1`] = `
               </span>
             </a>
             <a
-              class="c90"
+              class="c92"
               href="/work"
             >
               <span
@@ -2977,7 +3031,7 @@ exports[`<HomePage /> should render correctly 1`] = `
               </span>
             </a>
             <a
-              class="c90"
+              class="c92"
               href="/contact"
             >
               <span
@@ -2988,10 +3042,10 @@ exports[`<HomePage /> should render correctly 1`] = `
             </a>
           </div>
           <div
-            class="c89"
+            class="c91"
           >
             <a
-              class="c90"
+              class="c92"
               href="/sitemap"
             >
               <span
@@ -3001,7 +3055,7 @@ exports[`<HomePage /> should render correctly 1`] = `
               </span>
             </a>
             <a
-              class="c90"
+              class="c92"
               href="/privacy-policy"
             >
               <span
@@ -3011,7 +3065,7 @@ exports[`<HomePage /> should render correctly 1`] = `
               </span>
             </a>
             <a
-              class="c90"
+              class="c92"
               href="/login"
             >
               <span
@@ -3021,7 +3075,7 @@ exports[`<HomePage /> should render correctly 1`] = `
               </span>
             </a>
             <a
-              class="c90"
+              class="c92"
               href="/status"
             >
               <span
