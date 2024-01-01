@@ -1,5 +1,6 @@
 const REDIS_STORE_EXTENSIONS = [
   'blogs',
+  'books',
   'comments',
   'payments',
   'profiles',

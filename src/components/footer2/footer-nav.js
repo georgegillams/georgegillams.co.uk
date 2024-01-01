@@ -9,7 +9,7 @@ const TechSpecs = props => {
       <Section>
         <TextLink href="/blog">Blog</TextLink>
         <TextLink href="/photography">Photography</TextLink>
-        {/* <TextLink href="/reading-list">Reading list</TextLink> */}
+        <TextLink href="/reading-list">Reading list</TextLink>
         <TextLink href="/medals">Medals</TextLink>
         <TextLink href="/work">Work</TextLink>
       </Section>

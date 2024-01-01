@@ -25,10 +25,7 @@ const BlogCard = props => {
     blogTags = blog.tags;
   }
 
-  let ariaLabel = 'Blog';
-  if (title) {
-    ariaLabel = title;
-  }
+  let ariaLabel = title;
   if (day && month) {
     ariaLabel = `${ariaLabel}, ${day.split('-').join('to')} ${month}`;
   }

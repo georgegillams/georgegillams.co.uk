@@ -1,0 +1,79 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`BlogList saga deleteBlog actions Should call deleteBlog.failure if API returns error 1`] = `
+{
+  "@@redux-saga/IO": true,
+  "combinator": false,
+  "payload": {
+    "args": [],
+    "selector": [Function],
+  },
+  "type": "SELECT",
+}
+`;
+
+exports[`BlogList saga deleteBlog actions Should call deleteBlog.failure if an exception occurs 1`] = `
+{
+  "@@redux-saga/IO": true,
+  "combinator": false,
+  "payload": {
+    "args": [],
+    "selector": [Function],
+  },
+  "type": "SELECT",
+}
+`;
+
+exports[`BlogList saga deleteBlog actions Should call deleteBlog.success on successful API call 1`] = `
+{
+  "@@redux-saga/IO": true,
+  "combinator": false,
+  "payload": {
+    "args": [],
+    "selector": [Function],
+  },
+  "type": "SELECT",
+}
+`;
+
+exports[`BlogList saga loadBlogs actions Should call loadBlogs.failure if API returns error 1`] = `
+{
+  "@@redux-saga/IO": true,
+  "combinator": false,
+  "payload": {
+    "action": {
+      "type": "app/blog-list/LOAD_BLOGS/REQUEST",
+    },
+    "channel": undefined,
+  },
+  "type": "PUT",
+}
+`;
+
+exports[`BlogList saga loadBlogs actions Should call loadBlogs.failure if an exception occurs 1`] = `
+{
+  "@@redux-saga/IO": true,
+  "combinator": false,
+  "payload": {
+    "action": {
+      "type": "app/blog-list/LOAD_BLOGS/REQUEST",
+    },
+    "channel": undefined,
+  },
+  "type": "PUT",
+}
+`;
+
+exports[`BlogList saga loadBlogs actions Should call loadBlogs.success on successful API call 1`] = `
+{
+  "@@redux-saga/IO": true,
+  "combinator": false,
+  "payload": {
+    "action": {
+      "type": "app/blog-list/LOAD_BLOGS/REQUEST",
+    },
+    "channel": undefined,
+  },
+  "type": "PUT",
+}
+`;

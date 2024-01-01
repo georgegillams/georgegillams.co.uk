@@ -49,6 +49,9 @@ const redirects = [
   { from: '/photoshop', to: '/photography' },
   { from: '/phot', to: '/photography' },
   { from: '/photo', to: '/photography' },
+  { from: '/book', to: '/reading-list' },
+  { from: '/books', to: '/reading-list' },
+  { from: '/reading', to: '/reading-list' },
 
   { from: '/contraster-feedback', to: 'https://form.typeform.com/to/XhSSvzDp' },
 ];

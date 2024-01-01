@@ -1,14 +1,17 @@
 import Button from 'components/common/Button';
 import FeatureCard from 'components/common/FeatureCard';
 import styled, { css } from 'styled-components';
-import BlogCard from './BlogCard';
-import { spacingLg } from '@george-gillams/components/constants/layout';
+import BookCard from './BookCard';
+import { breakpointMd, spacingBase, spacingLg } from '@george-gillams/components/constants/layout';
 
 const cardStyles = props => css`
-  display: inline-block;
   width: 100%;
   margin-bottom: ${spacingLg};
   box-sizing: border-box;
+
+  @media (min-width: ${breakpointMd}) {
+    margin-bottom: calc(${spacingBase} + ${spacingLg});
+  }
 
   ${props.withControls &&
   css`
@@ -20,7 +23,7 @@ export const StyledFeatureCard = styled(FeatureCard)`
   ${props => cardStyles(props)}
 `;
 
-export const StyledBlogCard = styled(BlogCard)`
+export const StyledBookCard = styled(BookCard)`
   ${props => cardStyles(props)}
 `;
 
