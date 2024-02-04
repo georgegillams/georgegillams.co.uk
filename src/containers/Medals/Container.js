@@ -7,7 +7,6 @@ import PageContainer from 'components/common/PageContainer';
 import EventPatch from '@george-gillams/components/event-patch';
 import ToughMudderPatch, { PATCH_TYPE as TM_PATCH_TYPE } from '@george-gillams/components/tough-mudder-patch';
 import SpartanMedal, { EVENT_TYPE as SPARTAN_EVENT_TYPE } from '@george-gillams/components/spartan-medal';
-import SpartanTrifectaDisplay from '@george-gillams/components/spartan-trifecta-display';
 import { StyledMedalShelf } from './container.styles';
 import { notBlack } from '@george-gillams/components/constants/colors';
 import { withScrollAnimation } from '@george-gillams/components/effects';
@@ -47,13 +46,13 @@ const Medals = () => {
             />
           </StyledMedalShelf>
         </Subsection>
-        <Subsection anchor={false} name="Legionaire">
+        {/* <Subsection anchor={false} name="Legionaire">
           <StyledMedalShelf>
             <ToughMudderPatch type={TM_PATCH_TYPE.legionnaire2} />
             <ToughMudderPatch type={TM_PATCH_TYPE.legionnaire3} />
             <ToughMudderPatch type={TM_PATCH_TYPE.legionnaire456} />
           </StyledMedalShelf>
-        </Subsection>
+        </Subsection> */}
       </SectionWithScroll>
       <SectionWithScroll name="Spartan">
         <Subsection>
@@ -115,7 +114,7 @@ const Medals = () => {
             />
           </StyledMedalShelf>
         </Subsection>
-        <Subsection anchor={false} name="Trifectas">
+        {/* <Subsection anchor={false} name="Trifectas">
           <StyledMedalShelf>
             <SpartanTrifectaDisplay
               wedges={[SPARTAN_EVENT_TYPE.sprint, SPARTAN_EVENT_TYPE.super, SPARTAN_EVENT_TYPE.beast]}
@@ -136,7 +135,7 @@ const Medals = () => {
           <StyledMedalShelf>
             <SpartanTrifectaDisplay wedges={[SPARTAN_EVENT_TYPE.obstacleSpecialistWorkshop, null, null]} />
           </StyledMedalShelf>
-        </Subsection>
+        </Subsection> */}
       </SectionWithScroll>
       <SectionWithScroll name="Other OCR">
         <Subsection>
@@ -149,8 +148,8 @@ const Medals = () => {
               stravaLink="https://www.strava.com/activities/9070888539"
             />
             <EventPatch
-              background="#C0C0C0"
-              foreground="#FFD700"
+              background="#636363"
+              foreground="#FFE342"
               title="Bestial T-Rex 12km"
               year="2023"
               stravaLink="https://www.strava.com/activities/10353677047"
@@ -182,7 +181,7 @@ const Medals = () => {
               stravaLink="https://www.strava.com/activities/7790895383"
             />
             <EventPatch
-              background="#FF4E00"
+              background="#F04400"
               foreground="white"
               title="New Forest Half Marathon"
               year="2023"
