@@ -77,7 +77,7 @@ const Contact = () => {
         </SectionWithScroll>
         <SectionWithScroll name="Operator ID">
           <Subsection name="UK"></Subsection>
-          <Paragraph>GBR-OP-267ZQHMWPYGR — expires 8 March 2024</Paragraph>
+          <Paragraph>GBR-OP-267ZQHMWPYGR — expires 8 March 2025</Paragraph>
           <Subsection name="Norway and EASA member states">
             <Paragraph>NOR5p8cfumh4phal — expires 8 March 2024</Paragraph>
           </Subsection>
@@ -85,7 +85,7 @@ const Contact = () => {
         <SectionWithScroll name="Public Liability Insurance">
           <Paragraph>
             Insured Worldwide by Starr International (Europe) Limited (SIEL) to own and operate Unmanned Aerial Systems
-            (UAS) — expires 8 March 2024.
+            (UAS) — expires 8 March 2025.
           </Paragraph>
         </SectionWithScroll>
       </PageTitle>
