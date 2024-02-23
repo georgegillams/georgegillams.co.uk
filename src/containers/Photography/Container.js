@@ -68,7 +68,7 @@ const Photography = props => {
             />
           </ImageWrapper>
         </ScrollAnimationWrapper>
-        <ScrollAnimationWrapper>
+        <ScrollAnimationWrapper style={{ width: '100%' }}>
           <LoadingCover
             loadingSkeleton={PhotographySkeleton}
             loading={!photosToRender || !photosToRender.length}

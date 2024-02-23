@@ -425,7 +425,9 @@ exports[`<Photography /> should render correctly - index 1`] = `
         </div>
       </div>
     </div>
-    <div>
+    <div
+      style="width: 100%;"
+    >
       <style>
         .js .animated-content__wrapper--hidden {
   padding-top: 4rem;
@@ -948,7 +950,9 @@ exports[`<Photography /> should render correctly when loading 1`] = `
         </div>
       </div>
     </div>
-    <div>
+    <div
+      style="width: 100%;"
+    >
       <style>
         .js .animated-content__wrapper--hidden {
   padding-top: 4rem;
@@ -1471,7 +1475,9 @@ exports[`<Photography /> should render correctly with initial state 1`] = `
         </div>
       </div>
     </div>
-    <div>
+    <div
+      style="width: 100%;"
+    >
       <style>
         .js .animated-content__wrapper--hidden {
   padding-top: 4rem;
@@ -1994,7 +2000,9 @@ exports[`<Photography /> should render correctly with loadError 1`] = `
         </div>
       </div>
     </div>
-    <div>
+    <div
+      style="width: 100%;"
+    >
       <style>
         .js .animated-content__wrapper--hidden {
   padding-top: 4rem;
@@ -2517,7 +2525,9 @@ exports[`<Photography /> should render correctly with photos 1`] = `
         </div>
       </div>
     </div>
-    <div>
+    <div
+      style="width: 100%;"
+    >
       <style>
         .js .animated-content__wrapper--hidden {
   padding-top: 4rem;
