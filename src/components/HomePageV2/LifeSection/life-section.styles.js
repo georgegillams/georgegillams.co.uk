@@ -12,56 +12,48 @@ export const StyledParagraph = styled(Paragraph)`
   font-size: ${fontSizeMd};
 `;
 
-export const DualCardWrapper = styled.div`
+export const CardWrapper = styled.div`
   margin-top: ${spacingLg};
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: 1fr;
+  /* grid-template-rows: 1fr 1fr 3fr 2fr; */
+  grid-template-rows: 1fr 3fr 2fr;
+  grid-gap: ${spacingLg};
 
   @media (min-width: ${breakpointMd}) {
-    flex-direction: row;
-    align-items: stretch;
+    grid-template-columns: 3fr 5fr;
+    grid-template-rows: 1.25fr 1.25fr 1fr;
     margin-top: calc(2 * ${spacingLg});
   }
 `;
 
 export const StyledBlogCard = styled(HomepageCard)`
-  margin-bottom: ${spacingLg};
-  width: 100%;
-  max-width: 24rem;
-  margin-left: auto;
-  margin-right: auto;
-
   @media (min-width: ${breakpointMd}) {
-    max-width: 20rem;
-    margin-right: ${spacingLg};
-    margin-left: unset;
+    grid-row: 1;
+    grid-column: 1;
+  }
+`;
+
+export const StyledReadingCard = styled(HomepageCard)`
+  @media (min-width: ${breakpointMd}) {
+    grid-row: 2;
+    grid-column: 1;
   }
 `;
 
 export const StyledPhotographyCard = styled(HomepageCard)`
-  flex-grow: 1;
-  margin-bottom: ${spacingLg};
-  max-width: 24rem;
-  margin-left: auto;
-  margin-right: auto;
-
   @media (min-width: ${breakpointMd}) {
-    max-width: unset;
-    margin-left: unset;
-    margin-right: unset;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    grid-column: 2;
   }
 `;
 
 export const StyledMedalCard = styled(HomepageCard)`
-  width: 100%;
-  max-width: 24rem;
-  margin-left: auto;
-  margin-right: auto;
-
   @media (min-width: ${breakpointMd}) {
-    max-width: unset;
-    margin-left: unset;
-    margin-right: unset;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row: 3;
   }
 `;
 

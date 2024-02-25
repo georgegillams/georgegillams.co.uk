@@ -147,6 +147,7 @@ const Medals = () => {
               title="Nuclear Rush 12km"
               year="2023"
               stravaLink="https://www.strava.com/activities/9070888539"
+              showDarkModeOutline
             />
             <EventPatch
               background="#636363"
@@ -167,6 +168,7 @@ const Medals = () => {
               title="HYROX London"
               year="2023"
               stravaLink="https://www.strava.com/activities/10281041890"
+              showDarkModeOutline
             />
             <EventPatch
               background="#000000"
@@ -174,6 +176,7 @@ const Medals = () => {
               title="HYROX Katowice Doubles"
               year="2024"
               stravaLink="https://www.strava.com/activities/10824673603"
+              showDarkModeOutline
             />
             <EventPatch
               background="#000000"
@@ -181,6 +184,7 @@ const Medals = () => {
               title="HYROX Katowice Relay"
               year="2024"
               stravaLink="https://www.strava.com/activities/10829008206"
+              showDarkModeOutline
             />
           </StyledMedalShelf>
         </Subsection>
