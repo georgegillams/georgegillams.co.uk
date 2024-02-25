@@ -380,6 +380,16 @@ exports[`<Footer /> Should render correctly 1`] = `
         </a>
         <a
           class="c11"
+          href="/medals"
+        >
+          <span
+            class="c12"
+          >
+            Medals
+          </span>
+        </a>
+        <a
+          class="c11"
           href="/work"
         >
           <span
@@ -388,6 +398,10 @@ exports[`<Footer /> Should render correctly 1`] = `
             Work
           </span>
         </a>
+      </div>
+      <div
+        class="c10"
+      >
         <a
           class="c11"
           href="/contact"
@@ -398,10 +412,6 @@ exports[`<Footer /> Should render correctly 1`] = `
             Contact
           </span>
         </a>
-      </div>
-      <div
-        class="c10"
-      >
         <a
           class="c11"
           href="/sitemap"
@@ -828,6 +838,16 @@ exports[`<Footer /> Should render correctly with custom className 1`] = `
         </a>
         <a
           class="c11"
+          href="/medals"
+        >
+          <span
+            class="c12"
+          >
+            Medals
+          </span>
+        </a>
+        <a
+          class="c11"
           href="/work"
         >
           <span
@@ -836,6 +856,10 @@ exports[`<Footer /> Should render correctly with custom className 1`] = `
             Work
           </span>
         </a>
+      </div>
+      <div
+        class="c10"
+      >
         <a
           class="c11"
           href="/contact"
@@ -846,10 +870,6 @@ exports[`<Footer /> Should render correctly with custom className 1`] = `
             Contact
           </span>
         </a>
-      </div>
-      <div
-        class="c10"
-      >
         <a
           class="c11"
           href="/sitemap"

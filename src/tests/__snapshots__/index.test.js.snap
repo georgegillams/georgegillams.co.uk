@@ -3022,6 +3022,16 @@ exports[`<HomePage /> should render correctly 1`] = `
             </a>
             <a
               class="c92"
+              href="/medals"
+            >
+              <span
+                class="c12"
+              >
+                Medals
+              </span>
+            </a>
+            <a
+              class="c92"
               href="/work"
             >
               <span
@@ -3030,6 +3040,10 @@ exports[`<HomePage /> should render correctly 1`] = `
                 Work
               </span>
             </a>
+          </div>
+          <div
+            class="c91"
+          >
             <a
               class="c92"
               href="/contact"
@@ -3040,10 +3054,6 @@ exports[`<HomePage /> should render correctly 1`] = `
                 Contact
               </span>
             </a>
-          </div>
-          <div
-            class="c91"
-          >
             <a
               class="c92"
               href="/sitemap"
