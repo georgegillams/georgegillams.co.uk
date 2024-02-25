@@ -11,7 +11,7 @@ import {
   StyledParagraph,
   StyledPhotoGallery,
   StyledPhotographyCard,
-  StyledReadingCard,
+  // StyledReadingCard,
   Wrapper,
 } from './life-section.styles';
 import { ScrollAnimationWrapper } from '@george-gillams/components/effects';
