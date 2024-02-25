@@ -1090,14 +1090,28 @@ exports[`<Medals /> should render correctly 1`] = `
 }
 
 @media (prefers-color-scheme:dark) {
+
+}
+
+@media (prefers-color-scheme:dark) {
   .c18 {
     box-shadow: 0.44rem 0.44rem 1rem 0 #00000000;
   }
 }
 
 @media (prefers-color-scheme:dark) {
+
+}
+
+@media (prefers-color-scheme:dark) {
   .c58 {
     box-shadow: 0.44rem 0.44rem 1rem 0 #00000000;
+  }
+}
+
+@media (prefers-color-scheme:dark) {
+  .c58 {
+    box-shadow: inset 0px 0px 0px 2px white;
   }
 }
 
@@ -1108,8 +1122,18 @@ exports[`<Medals /> should render correctly 1`] = `
 }
 
 @media (prefers-color-scheme:dark) {
+
+}
+
+@media (prefers-color-scheme:dark) {
   .c62 {
     box-shadow: 0.44rem 0.44rem 1rem 0 #00000000;
+  }
+}
+
+@media (prefers-color-scheme:dark) {
+  .c62 {
+    box-shadow: inset 0px 0px 0px 2px white;
   }
 }
 
@@ -1120,9 +1144,17 @@ exports[`<Medals /> should render correctly 1`] = `
 }
 
 @media (prefers-color-scheme:dark) {
+
+}
+
+@media (prefers-color-scheme:dark) {
   .c65 {
     box-shadow: 0.44rem 0.44rem 1rem 0 #00000000;
   }
+}
+
+@media (prefers-color-scheme:dark) {
+
 }
 
 @media (prefers-color-scheme:dark) {
@@ -1132,9 +1164,17 @@ exports[`<Medals /> should render correctly 1`] = `
 }
 
 @media (prefers-color-scheme:dark) {
+
+}
+
+@media (prefers-color-scheme:dark) {
   .c69 {
     box-shadow: 0.44rem 0.44rem 1rem 0 #00000000;
   }
+}
+
+@media (prefers-color-scheme:dark) {
+
 }
 
 <div>
