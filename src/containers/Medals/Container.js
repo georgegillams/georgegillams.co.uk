@@ -11,6 +11,7 @@ import { StyledMedalShelf } from './container.styles';
 import { notBlack } from '@george-gillams/components/constants/colors';
 import { withScrollAnimation } from '@george-gillams/components/effects';
 const SectionWithScroll = withScrollAnimation(Section);
+const HYROX_YELLOW = '#ffed00';
 
 const Medals = () => {
   return (
@@ -162,10 +163,24 @@ const Medals = () => {
           <StyledMedalShelf>
             <EventPatch
               background="#000000"
-              foreground="#ffed00"
+              foreground={HYROX_YELLOW}
               title="HYROX London"
               year="2023"
               stravaLink="https://www.strava.com/activities/10281041890"
+            />
+            <EventPatch
+              background="#000000"
+              foreground={HYROX_YELLOW}
+              title="HYROX Katowice Doubles"
+              year="2024"
+              stravaLink="https://www.strava.com/activities/10824673603"
+            />
+            <EventPatch
+              background="#000000"
+              foreground={HYROX_YELLOW}
+              title="HYROX Katowice Relay"
+              year="2024"
+              stravaLink="https://www.strava.com/activities/10829008206"
             />
           </StyledMedalShelf>
         </Subsection>
