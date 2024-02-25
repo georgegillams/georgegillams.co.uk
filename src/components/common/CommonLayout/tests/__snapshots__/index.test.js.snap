@@ -414,6 +414,16 @@ exports[`<Layout /> Should render correctly 1`] = `
             </a>
             <a
               class="c14"
+              href="/medals"
+            >
+              <span
+                class="c15"
+              >
+                Medals
+              </span>
+            </a>
+            <a
+              class="c14"
               href="/work"
             >
               <span
@@ -422,6 +432,10 @@ exports[`<Layout /> Should render correctly 1`] = `
                 Work
               </span>
             </a>
+          </div>
+          <div
+            class="c13"
+          >
             <a
               class="c14"
               href="/contact"
@@ -432,10 +446,6 @@ exports[`<Layout /> Should render correctly 1`] = `
                 Contact
               </span>
             </a>
-          </div>
-          <div
-            class="c13"
-          >
             <a
               class="c14"
               href="/sitemap"
@@ -898,6 +908,16 @@ exports[`<Layout /> Should render correctly with spread props 1`] = `
             </a>
             <a
               class="c14"
+              href="/medals"
+            >
+              <span
+                class="c15"
+              >
+                Medals
+              </span>
+            </a>
+            <a
+              class="c14"
               href="/work"
             >
               <span
@@ -906,6 +926,10 @@ exports[`<Layout /> Should render correctly with spread props 1`] = `
                 Work
               </span>
             </a>
+          </div>
+          <div
+            class="c13"
+          >
             <a
               class="c14"
               href="/contact"
@@ -916,10 +940,6 @@ exports[`<Layout /> Should render correctly with spread props 1`] = `
                 Contact
               </span>
             </a>
-          </div>
-          <div
-            class="c13"
-          >
             <a
               class="c14"
               href="/sitemap"
