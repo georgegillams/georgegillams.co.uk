@@ -52,7 +52,8 @@ const appFunc = async (req, res) => {
         } else if (err instanceof Error) {
           // An error that we haven't created. Maybe created by redis or something
           logger.error(`Uncategorised error`, err);
-          const internalServerError = new InternalServerError(err.message);
+          // Do not expose errors that we did not create to the client
+          const internalServerError = new InternalServerError('An unknown error occurred');
           res.status(internalServerError.httpStatus);
           res.json({
             error: internalServerError.category,
@@ -61,7 +62,8 @@ const appFunc = async (req, res) => {
         } else {
           // The error is an invalid object format, instead of being an instance of Error
           logger.error(`LEGACY ERROR - a promise rejected an object instead of an actual Error`, err);
-          const internalServerError = new InternalServerError(err.message);
+          // Do not expose errors that we did not create to the client
+          const internalServerError = new InternalServerError('An unknown error occurred');
           res.status(internalServerError.httpStatus);
           res.json({
             error: internalServerError.category,
