@@ -1364,7 +1364,7 @@
   dependencies:
     regenerator-runtime "^0.13.4"
 
-"@babel/runtime@^7.12.1", "@babel/runtime@^7.21.0", "@babel/runtime@^7.23.2":
+"@babel/runtime@^7.12.1", "@babel/runtime@^7.23.2":
   version "7.23.9"
   resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.23.9.tgz#47791a15e4603bb5f905bc0753801cf21d6345f7"
   integrity sha512-0CX6F+BI2s9dkUqr08KFrAIZgNFj75rdBU/DjCyYLIaV/quFjkk6T+EJ2LkZHyZTbEV4L5p97mNkUsHl2wLFAw==
@@ -1553,12 +1553,11 @@
     recompose "^0.30.0"
     youtube-embed-video "^1.2.1"
 
-"@george-gillams/webapp@1.0.5":
-  version "1.0.5"
-  resolved "https://registry.yarnpkg.com/@george-gillams/webapp/-/webapp-1.0.5.tgz#51b3c1afc7d808aea09bb9a7beee628779982259"
-  integrity sha512-5q3/YrhWmcrQaFt90aT50x+nDZWgAzplO7iFQyRfgooXk4AX4aNVYDwPQBJ5EJVQwsmun1n9lDtmn2Gd04gCRQ==
+"@george-gillams/webapp@1.0.6":
+  version "1.0.6"
+  resolved "https://registry.yarnpkg.com/@george-gillams/webapp/-/webapp-1.0.6.tgz#b5672a98530f95facf71055ad299bd303d2ee308"
+  integrity sha512-T3hi77YfTofIYjqcwrD1CWnUTaCuOFT8rJ8r/jKGcIgpqbTJ7jq0TU8TqA0doTPutq7r7GM0dakwdo3oYHTD4Q==
   dependencies:
-    date-fns "^2.29.3"
     detect-browser "^5.3.0"
     prop-types "^15.8.1"
 
@@ -3140,9 +3139,9 @@ camelize@^1.0.0:
   integrity sha512-W2lPwkBkMZwFlPCXhIlYgxu+7gC/NUlCtdK652DAJ1JdgV0sTrvuPFshNPrFa1TY2JOkLhgdeEBplB4ezEa+xg==
 
 caniuse-lite@^1.0.30001332, caniuse-lite@^1.0.30001400, caniuse-lite@^1.0.30001579, caniuse-lite@^1.0.30001587:
-  version "1.0.30001589"
-  resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30001589.tgz#7ad6dba4c9bf6561aec8291976402339dc157dfb"
-  integrity sha512-vNQWS6kI+q6sBlHbh71IIeC+sRwK2N3EDySc/updIGhIee2x5z00J4c1242/5/d6EpEMdOnk/m+6tuk4/tcsqg==
+  version "1.0.30001591"
+  resolved "https://registry.npmjs.org/caniuse-lite/-/caniuse-lite-1.0.30001591.tgz"
+  integrity sha512-PCzRMei/vXjJyL5mJtzNiUCKP59dm8Apqc3PH8gJkMnMXZGox93RbE76jHsmLwmIo6/3nsYIpJtx0O7u5PqFuQ==
 
 caseless@~0.12.0:
   version "0.12.0"
@@ -3627,13 +3626,6 @@ date-fns@^2.29.3:
   version "2.29.3"
   resolved "https://registry.yarnpkg.com/date-fns/-/date-fns-2.29.3.tgz#27402d2fc67eb442b511b70bbdf98e6411cd68a8"
   integrity sha512-dDCnyH2WnnKusqvZZ6+jA1O51Ibt8ZMRNkDZdyAyK4YfbDwa/cEmuztzG5pk6hqlp9aSBPYcjOlktquahGwGeA==
-
-date-fns@^2.30.0:
-  version "2.30.0"
-  resolved "https://registry.yarnpkg.com/date-fns/-/date-fns-2.30.0.tgz#f367e644839ff57894ec6ac480de40cae4b0f4d0"
-  integrity sha512-fnULvOpxnC5/Vg3NCiWelDsLiUc9bRwAPs/+LfTLNvetFCtCTN+yQz15C/fs4AwX1R9K5GLtLfn8QW+dWisaAw==
-  dependencies:
-    "@babel/runtime" "^7.21.0"
 
 date-format@4.0.3:
   version "4.0.3"
