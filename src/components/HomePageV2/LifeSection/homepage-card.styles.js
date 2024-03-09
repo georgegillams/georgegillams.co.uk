@@ -2,7 +2,7 @@ import styled, { css } from 'styled-components';
 import { breakpointMd, spacingBase } from '@george-gillams/components/constants/layout';
 import { fontSizeMd } from '@george-gillams/components/constants/font';
 import Paragraph from '@george-gillams/components/paragraph';
-import Card from '@george-gillams/components/card';
+import Card from 'components/common/Card';
 import subsection from '@george-gillams/components/subsection';
 import Button from 'components/common/Button';
 import { HP_CARD_LAYOUT } from './HomepageCard-constants';

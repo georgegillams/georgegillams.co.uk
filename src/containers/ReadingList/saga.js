@@ -4,7 +4,7 @@ import request from 'client-utils/common/request';
 import apiStructure from 'helpers/common/apiStructure';
 import { selectState } from './selectors';
 
-import { loadBooks, deleteBook } from './actions';
+import { loadBooks, deleteBook, updateBook } from './actions';
 
 export function* doLoadBooks() {
   const requestURL = apiStructure.loadBooks.fullPath;
@@ -25,6 +25,35 @@ export function* doLoadBooks() {
     yield put(loadBooks.failure(err));
   } finally {
     yield put(loadBooks.fulfill());
+  }
+}
+
+export function* doUpdateBook() {
+  const currentState = yield select(selectState());
+  const { bookToUpdate } = currentState;
+  const requestURL = apiStructure.updateBook.fullPath;
+
+  try {
+    yield put(updateBook.request());
+
+    const result = yield call(request, requestURL, {
+      method: 'POST',
+      body: JSON.stringify(bookToUpdate),
+      headers: {
+        'Content-Type': 'application/json',
+      },
+    });
+
+    if (result.error) {
+      yield put(updateBook.failure(result));
+    } else {
+      yield put(updateBook.success(result));
+    }
+    yield put(loadBooks.trigger());
+  } catch (err) {
+    yield put(updateBook.failure(err));
+  } finally {
+    yield put(updateBook.fulfill());
   }
 }
 
@@ -59,5 +88,6 @@ export function* doDeleteBook() {
 
 export default function* saga() {
   yield takeLatest(loadBooks.TRIGGER, doLoadBooks);
+  yield takeLatest(updateBook.TRIGGER, doUpdateBook);
   yield takeLatest(deleteBook.TRIGGER, doDeleteBook);
 }

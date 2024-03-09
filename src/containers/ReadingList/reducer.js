@@ -1,11 +1,15 @@
 import produce from 'immer';
 
-import { loadBooks, deleteBook } from './actions';
+import { loadBooks, deleteBook, updateBook } from './actions';
 
 export const initialState = {
   books: null,
   loadingBooks: false,
   loadBooksError: null,
+
+  bookToUpdate: null,
+  updatingBook: false,
+  updateBookError: null,
 
   bookToDelete: null,
   deletingBook: false,
@@ -28,6 +32,24 @@ const reducer = (state = initialState, { type, payload }) =>
       case loadBooks.FAILURE:
         draft.loadingBooks = false;
         draft.loadBooksError = payload;
+        break;
+
+      case updateBook.TRIGGER:
+        draft.bookToUpdate = payload;
+        break;
+
+      case updateBook.REQUEST:
+        draft.updatingBook = true;
+        draft.updateBookError = null;
+        break;
+
+      case updateBook.SUCCESS:
+        draft.updatingBook = false;
+        break;
+
+      case updateBook.FAILURE:
+        draft.updatingBook = false;
+        draft.updateBookError = payload;
         break;
 
       case deleteBook.TRIGGER:

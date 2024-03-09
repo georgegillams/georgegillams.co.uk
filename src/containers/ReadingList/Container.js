@@ -12,7 +12,7 @@ import { ScrollAnimationWrapper } from '@george-gillams/components/effects';
 import BooksList from 'components/Books';
 
 const ReadingList = props => {
-  const { ssrBooks, loadBooks, deleteBook, authenticatorState, readingListState } = props;
+  const { ssrBooks, loadBooks, updateBook, deleteBook, authenticatorState, readingListState } = props;
 
   useEffect(() => {
     loadBooks();
@@ -44,7 +44,12 @@ const ReadingList = props => {
           <>
             {booksToRender && (
               <ScrollAnimationWrapper>
-                <BooksList admin={admin} books={booksToRender} deleteBook={admin ? deleteBook : null} />
+                <BooksList
+                  admin={admin}
+                  books={booksToRender}
+                  updateBook={admin ? updateBook : null}
+                  deleteBook={admin ? deleteBook : null}
+                />
               </ScrollAnimationWrapper>
             )}
           </>
@@ -66,6 +71,7 @@ ReadingList.propTypes = {
     user: PropTypes.object,
   }).isRequired,
   loadBooks: PropTypes.func.isRequired,
+  updateBook: PropTypes.func.isRequired,
   deleteBook: PropTypes.func.isRequired,
 };
 
