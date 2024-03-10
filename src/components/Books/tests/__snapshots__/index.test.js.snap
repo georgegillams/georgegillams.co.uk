@@ -1,0 +1,1014 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<BookCard /> Should render correctly 1`] = `
+.c1 {
+  margin: 0;
+  font-size: 1.2rem;
+}
+
+.c3 {
+  margin: 0;
+  font-size: 1rem;
+}
+
+.c0 {
+  display: grid;
+  grid-template-columns: 4rem 1fr;
+  min-height: 4rem;
+  gap: 0.375rem 1rem;
+  opacity: 0.6;
+}
+
+.c2 {
+  grid-row: 1;
+  grid-column: 2;
+}
+
+.c4 {
+  grid-row: 2;
+  grid-column: 2;
+}
+
+.c5 {
+  grid-row: 3;
+  grid-column: 2;
+}
+
+@media (min-width:32.25rem) {
+  .c0 {
+    grid-template-columns: 4rem 1fr 10rem;
+    grid-template-rows: 3;
+  }
+}
+
+@media (min-width:50.25rem) {
+  .c0 {
+    gap: calc(2 * 0.375rem) 1rem;
+    grid-template-columns: 5rem 1fr 10rem;
+  }
+}
+
+<div>
+  <div
+    class="c0"
+  >
+    <h1
+      class="c1 c2"
+    >
+      Book 1 🎉
+    </h1>
+    <span
+      class="c3 c4"
+    >
+      By 
+      Author 1
+    </span>
+    <span
+      class="c3 c5"
+    >
+      Want to read
+    </span>
+  </div>
+</div>
+`;
+
+exports[`<BookCard /> Should render correctly when deleted 1`] = `
+.c1 {
+  margin: 0;
+  font-size: 1.2rem;
+}
+
+.c3 {
+  margin: 0;
+  font-size: 1rem;
+}
+
+.c0 {
+  display: grid;
+  grid-template-columns: 4rem 1fr;
+  min-height: 4rem;
+  gap: 0.375rem 1rem;
+}
+
+.c2 {
+  grid-row: 1;
+  grid-column: 2;
+}
+
+.c4 {
+  grid-row: 2;
+  grid-column: 2;
+}
+
+.c5 {
+  color: orange;
+  grid-row: 3;
+  grid-column: 2;
+}
+
+@media (min-width:32.25rem) {
+  .c0 {
+    grid-template-columns: 4rem 1fr 10rem;
+    grid-template-rows: 3;
+  }
+}
+
+@media (min-width:50.25rem) {
+  .c0 {
+    gap: calc(2 * 0.375rem) 1rem;
+    grid-template-columns: 5rem 1fr 10rem;
+  }
+}
+
+<div>
+  <div
+    class="c0"
+  >
+    <h1
+      class="c1 c2"
+    >
+      Book 3 (DELETED)
+    </h1>
+    <span
+      class="c3 c4"
+    >
+      By 
+      Author 3
+    </span>
+    <span
+      class="c3 c5"
+      color="orange"
+    >
+      Reading now
+    </span>
+  </div>
+</div>
+`;
+
+exports[`<BookCard /> Should render correctly with all parameters supplied 1`] = `
+.c1 {
+  margin: 0;
+  font-size: 1.2rem;
+}
+
+.c3 {
+  margin: 0;
+  font-size: 1rem;
+}
+
+.c0 {
+  display: grid;
+  grid-template-columns: 4rem 1fr;
+  min-height: 4rem;
+  gap: 0.375rem 1rem;
+}
+
+.c2 {
+  grid-row: 1;
+  grid-column: 2;
+}
+
+.c4 {
+  grid-row: 2;
+  grid-column: 2;
+}
+
+.c5 {
+  color: orange;
+  grid-row: 3;
+  grid-column: 2;
+}
+
+@media (min-width:32.25rem) {
+  .c0 {
+    grid-template-columns: 4rem 1fr 10rem;
+    grid-template-rows: 3;
+  }
+}
+
+@media (min-width:50.25rem) {
+  .c0 {
+    gap: calc(2 * 0.375rem) 1rem;
+    grid-template-columns: 5rem 1fr 10rem;
+  }
+}
+
+<div>
+  <div
+    class="c0"
+  >
+    <h1
+      class="c1 c2"
+    >
+      Book 2
+    </h1>
+    <span
+      class="c3 c4"
+    >
+      By 
+      Author 2
+    </span>
+    <span
+      class="c3 c5"
+      color="orange"
+    >
+      Reading now
+    </span>
+  </div>
+</div>
+`;
+
+exports[`<BookCard /> Should render correctly with custom className 1`] = `
+.c1 {
+  margin: 0;
+  font-size: 1.2rem;
+}
+
+.c3 {
+  margin: 0;
+  font-size: 1rem;
+}
+
+.c0 {
+  display: grid;
+  grid-template-columns: 4rem 1fr;
+  min-height: 4rem;
+  gap: 0.375rem 1rem;
+  opacity: 0.6;
+}
+
+.c2 {
+  grid-row: 1;
+  grid-column: 2;
+}
+
+.c4 {
+  grid-row: 2;
+  grid-column: 2;
+}
+
+.c5 {
+  grid-row: 3;
+  grid-column: 2;
+}
+
+@media (min-width:32.25rem) {
+  .c0 {
+    grid-template-columns: 4rem 1fr 10rem;
+    grid-template-rows: 3;
+  }
+}
+
+@media (min-width:50.25rem) {
+  .c0 {
+    gap: calc(2 * 0.375rem) 1rem;
+    grid-template-columns: 5rem 1fr 10rem;
+  }
+}
+
+<div>
+  <div
+    class="c0 test-custom-classname"
+  >
+    <h1
+      class="c1 c2"
+    >
+      Book 1 🎉
+    </h1>
+    <span
+      class="c3 c4"
+    >
+      By 
+      Author 1
+    </span>
+    <span
+      class="c3 c5"
+    >
+      Want to read
+    </span>
+  </div>
+</div>
+`;
+
+exports[`<BooksList /> Should render correctly 1`] = `
+.c2 {
+  margin: 0;
+  font-size: 1.2rem;
+}
+
+.c4 {
+  margin: 0;
+  font-size: 1rem;
+}
+
+.c0 {
+  display: grid;
+  grid-template-columns: 4rem 1fr;
+  min-height: 4rem;
+  gap: 0.375rem 1rem;
+  opacity: 0.6;
+}
+
+.c7 {
+  display: grid;
+  grid-template-columns: 4rem 1fr;
+  min-height: 4rem;
+  gap: 0.375rem 1rem;
+}
+
+.c3 {
+  grid-row: 1;
+  grid-column: 2;
+}
+
+.c5 {
+  grid-row: 2;
+  grid-column: 2;
+}
+
+.c6 {
+  grid-row: 3;
+  grid-column: 2;
+}
+
+.c8 {
+  color: orange;
+  grid-row: 3;
+  grid-column: 2;
+}
+
+.c1 {
+  width: 100%;
+  margin-top: 2rem;
+  box-sizing: border-box;
+}
+
+@media (min-width:32.25rem) {
+  .c0 {
+    grid-template-columns: 4rem 1fr 10rem;
+    grid-template-rows: 3;
+  }
+}
+
+@media (min-width:50.25rem) {
+  .c0 {
+    gap: calc(2 * 0.375rem) 1rem;
+    grid-template-columns: 5rem 1fr 10rem;
+  }
+}
+
+@media (min-width:32.25rem) {
+  .c7 {
+    grid-template-columns: 4rem 1fr 10rem;
+    grid-template-rows: 3;
+  }
+}
+
+@media (min-width:50.25rem) {
+  .c7 {
+    gap: calc(2 * 0.375rem) 1rem;
+    grid-template-columns: 5rem 1fr 10rem;
+  }
+}
+
+@media (min-width:50.25rem) {
+  .c1 {
+    margin-top: calc(1rem + 2rem);
+  }
+}
+
+<div>
+  <div>
+    <div>
+      <div
+        class="c0 c1"
+        id="asdfg"
+      >
+        <h1
+          class="c2 c3"
+        >
+          Book 1 🎉
+        </h1>
+        <span
+          class="c4 c5"
+        >
+          By 
+          Author 1
+        </span>
+        <span
+          class="c4 c6"
+        >
+          Want to read
+        </span>
+      </div>
+    </div>
+    <div>
+      <div
+        class="c7 c1"
+        id="asdfh"
+      >
+        <h1
+          class="c2 c3"
+        >
+          Book 2
+        </h1>
+        <span
+          class="c4 c5"
+        >
+          By 
+          Author 2
+        </span>
+        <span
+          class="c4 c8"
+          color="orange"
+        >
+          Reading now
+        </span>
+      </div>
+    </div>
+    <div>
+      <div
+        class="c7 c1"
+        id="asdfi"
+      >
+        <h1
+          class="c2 c3"
+        >
+          Book 3 (DELETED)
+        </h1>
+        <span
+          class="c4 c5"
+        >
+          By 
+          Author 3
+        </span>
+        <span
+          class="c4 c8"
+          color="orange"
+        >
+          Reading now
+        </span>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`<BooksList /> Should render correctly with custom className 1`] = `
+.c2 {
+  margin: 0;
+  font-size: 1.2rem;
+}
+
+.c4 {
+  margin: 0;
+  font-size: 1rem;
+}
+
+.c0 {
+  display: grid;
+  grid-template-columns: 4rem 1fr;
+  min-height: 4rem;
+  gap: 0.375rem 1rem;
+  opacity: 0.6;
+}
+
+.c7 {
+  display: grid;
+  grid-template-columns: 4rem 1fr;
+  min-height: 4rem;
+  gap: 0.375rem 1rem;
+}
+
+.c3 {
+  grid-row: 1;
+  grid-column: 2;
+}
+
+.c5 {
+  grid-row: 2;
+  grid-column: 2;
+}
+
+.c6 {
+  grid-row: 3;
+  grid-column: 2;
+}
+
+.c8 {
+  color: orange;
+  grid-row: 3;
+  grid-column: 2;
+}
+
+.c1 {
+  width: 100%;
+  margin-top: 2rem;
+  box-sizing: border-box;
+}
+
+@media (min-width:32.25rem) {
+  .c0 {
+    grid-template-columns: 4rem 1fr 10rem;
+    grid-template-rows: 3;
+  }
+}
+
+@media (min-width:50.25rem) {
+  .c0 {
+    gap: calc(2 * 0.375rem) 1rem;
+    grid-template-columns: 5rem 1fr 10rem;
+  }
+}
+
+@media (min-width:32.25rem) {
+  .c7 {
+    grid-template-columns: 4rem 1fr 10rem;
+    grid-template-rows: 3;
+  }
+}
+
+@media (min-width:50.25rem) {
+  .c7 {
+    gap: calc(2 * 0.375rem) 1rem;
+    grid-template-columns: 5rem 1fr 10rem;
+  }
+}
+
+@media (min-width:50.25rem) {
+  .c1 {
+    margin-top: calc(1rem + 2rem);
+  }
+}
+
+<div>
+  <div
+    class="test-custom-classname"
+  >
+    <div>
+      <div
+        class="c0 c1"
+        id="asdfg"
+      >
+        <h1
+          class="c2 c3"
+        >
+          Book 1 🎉
+        </h1>
+        <span
+          class="c4 c5"
+        >
+          By 
+          Author 1
+        </span>
+        <span
+          class="c4 c6"
+        >
+          Want to read
+        </span>
+      </div>
+    </div>
+    <div>
+      <div
+        class="c7 c1"
+        id="asdfh"
+      >
+        <h1
+          class="c2 c3"
+        >
+          Book 2
+        </h1>
+        <span
+          class="c4 c5"
+        >
+          By 
+          Author 2
+        </span>
+        <span
+          class="c4 c8"
+          color="orange"
+        >
+          Reading now
+        </span>
+      </div>
+    </div>
+    <div>
+      <div
+        class="c7 c1"
+        id="asdfi"
+      >
+        <h1
+          class="c2 c3"
+        >
+          Book 3 (DELETED)
+        </h1>
+        <span
+          class="c4 c5"
+        >
+          By 
+          Author 3
+        </span>
+        <span
+          class="c4 c8"
+          color="orange"
+        >
+          Reading now
+        </span>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`<BooksList /> Should render correctly with deleteBook function 1`] = `
+.c7 {
+  position: relative;
+  min-width: 5rem;
+  padding: 0.43rem 1.125rem 0.32rem 1.125rem;
+  -webkit-transition: filter 0.3s;
+  transition: filter 0.3s;
+  border: none;
+  border-radius: 0.25rem;
+  font-size: 1.4rem;
+  font-weight: bold;
+  cursor: pointer;
+  -webkit-text-decoration-color: transparent;
+  text-decoration-color: transparent;
+  -webkit-text-decoration-line: none;
+  text-decoration-line: none;
+  background-color: #E02626;
+  color: white;
+}
+
+.c7:focus-within,
+.c7:focus {
+  outline: none !important;
+}
+
+.c7:focus-within::after,
+.c7:focus::after {
+  position: absolute;
+  top: -0.35rem;
+  right: -0.35rem;
+  bottom: -0.35rem;
+  left: -0.35rem;
+  content: '';
+  display: block;
+  border: solid #007dfa3C 0.2rem;
+  border-radius: 0.5rem;
+  pointer-events: none;
+}
+
+.c7:focus,
+.c7:hover {
+  background-color: #BA2020;
+  color: white;
+}
+
+.c7:active {
+  background-color: #9F1717;
+  color: white;
+}
+
+.c7:disabled {
+  background-color: #cdcdd7;
+  color: #646464;
+}
+
+.c12 {
+  position: relative;
+  min-width: 5rem;
+  padding: 0.43rem 1.125rem 0.32rem 1.125rem;
+  -webkit-transition: filter 0.3s;
+  transition: filter 0.3s;
+  border: none;
+  border-radius: 0.25rem;
+  font-size: 1.4rem;
+  font-weight: bold;
+  cursor: pointer;
+  -webkit-text-decoration-color: transparent;
+  text-decoration-color: transparent;
+  -webkit-text-decoration-line: none;
+  text-decoration-line: none;
+  background-color: #E02626;
+  color: white;
+  cursor: default;
+}
+
+.c12:focus-within,
+.c12:focus {
+  outline: none !important;
+}
+
+.c12:focus-within::after,
+.c12:focus::after {
+  position: absolute;
+  top: -0.35rem;
+  right: -0.35rem;
+  bottom: -0.35rem;
+  left: -0.35rem;
+  content: '';
+  display: block;
+  border: solid #007dfa3C 0.2rem;
+  border-radius: 0.5rem;
+  pointer-events: none;
+}
+
+.c12:focus,
+.c12:hover {
+  background-color: #BA2020;
+  color: white;
+}
+
+.c12:active {
+  background-color: #9F1717;
+  color: white;
+}
+
+.c12:disabled {
+  background-color: #cdcdd7;
+  color: #646464;
+}
+
+.c9 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.c2 {
+  margin: 0;
+  font-size: 1.2rem;
+}
+
+.c4 {
+  margin: 0;
+  font-size: 1rem;
+}
+
+.c0 {
+  display: grid;
+  grid-template-columns: 4rem 1fr;
+  min-height: 4rem;
+  gap: 0.375rem 1rem;
+  opacity: 0.6;
+}
+
+.c10 {
+  display: grid;
+  grid-template-columns: 4rem 1fr;
+  min-height: 4rem;
+  gap: 0.375rem 1rem;
+}
+
+.c3 {
+  grid-row: 1;
+  grid-column: 2;
+}
+
+.c5 {
+  grid-row: 2;
+  grid-column: 2;
+}
+
+.c6 {
+  grid-row: 3;
+  grid-column: 2;
+}
+
+.c11 {
+  color: orange;
+  grid-row: 3;
+  grid-column: 2;
+}
+
+.c1 {
+  width: 100%;
+  margin-top: 2rem;
+  box-sizing: border-box;
+  margin-bottom: 1rem;
+}
+
+.c8 {
+  margin-bottom: 2rem;
+  box-sizing: border-box;
+}
+
+@media (prefers-color-scheme:dark) {
+  .c7:focus-within::after,
+  .c7:focus::after {
+    border-color: #007dfa3C;
+  }
+}
+
+@media (prefers-color-scheme:dark) {
+  .c7 {
+    background-color: #CA2020;
+    color: white;
+  }
+}
+
+@media (prefers-color-scheme:dark) {
+  .c7:focus,
+  .c7:hover {
+    background-color: #891111;
+    color: white;
+  }
+}
+
+@media (prefers-color-scheme:dark) {
+  .c7:active {
+    background-color: #730D0D;
+    color: white;
+  }
+}
+
+@media (prefers-color-scheme:dark) {
+  .c7:disabled {
+    background-color: #595959;
+    color: #a9a9a9;
+  }
+}
+
+@media (prefers-color-scheme:dark) {
+  .c12:focus-within::after,
+  .c12:focus::after {
+    border-color: #007dfa3C;
+  }
+}
+
+@media (prefers-color-scheme:dark) {
+  .c12 {
+    background-color: #CA2020;
+    color: white;
+  }
+}
+
+@media (prefers-color-scheme:dark) {
+  .c12:focus,
+  .c12:hover {
+    background-color: #891111;
+    color: white;
+  }
+}
+
+@media (prefers-color-scheme:dark) {
+  .c12:active {
+    background-color: #730D0D;
+    color: white;
+  }
+}
+
+@media (prefers-color-scheme:dark) {
+  .c12:disabled {
+    background-color: #595959;
+    color: #a9a9a9;
+  }
+}
+
+@media (min-width:32.25rem) {
+  .c0 {
+    grid-template-columns: 4rem 1fr 10rem;
+    grid-template-rows: 3;
+  }
+}
+
+@media (min-width:50.25rem) {
+  .c0 {
+    gap: calc(2 * 0.375rem) 1rem;
+    grid-template-columns: 5rem 1fr 10rem;
+  }
+}
+
+@media (min-width:32.25rem) {
+  .c10 {
+    grid-template-columns: 4rem 1fr 10rem;
+    grid-template-rows: 3;
+  }
+}
+
+@media (min-width:50.25rem) {
+  .c10 {
+    gap: calc(2 * 0.375rem) 1rem;
+    grid-template-columns: 5rem 1fr 10rem;
+  }
+}
+
+@media (min-width:50.25rem) {
+  .c1 {
+    margin-top: calc(1rem + 2rem);
+  }
+}
+
+<div>
+  <div>
+    <div>
+      <div
+        class="c0 c1"
+        id="asdfg"
+      >
+        <h1
+          class="c2 c3"
+        >
+          Book 1 🎉
+        </h1>
+        <span
+          class="c4 c5"
+        >
+          By 
+          Author 1
+        </span>
+        <span
+          class="c4 c6"
+        >
+          Want to read
+        </span>
+      </div>
+      <button
+        class="c7 c8"
+        type="button"
+      >
+        <span
+          class="c9"
+        >
+          Delete book
+        </span>
+      </button>
+    </div>
+    <div>
+      <div
+        class="c10 c1"
+        id="asdfh"
+      >
+        <h1
+          class="c2 c3"
+        >
+          Book 2
+        </h1>
+        <span
+          class="c4 c5"
+        >
+          By 
+          Author 2
+        </span>
+        <span
+          class="c4 c11"
+          color="orange"
+        >
+          Reading now
+        </span>
+      </div>
+      <button
+        class="c7 c8"
+        type="button"
+      >
+        <span
+          class="c9"
+        >
+          Delete book
+        </span>
+      </button>
+    </div>
+    <div>
+      <div
+        class="c10 c1"
+        id="asdfi"
+      >
+        <h1
+          class="c2 c3"
+        >
+          Book 3 (DELETED)
+        </h1>
+        <span
+          class="c4 c5"
+        >
+          By 
+          Author 3
+        </span>
+        <span
+          class="c4 c11"
+          color="orange"
+        >
+          Reading now
+        </span>
+      </div>
+      <button
+        class="c12 c8"
+        disabled=""
+        type="button"
+      >
+        <span
+          class="c9"
+        >
+          Delete book
+        </span>
+      </button>
+    </div>
+  </div>
+</div>
+`;

@@ -524,6 +524,17 @@ exports[`<Authenticator /> should render correctly - index 1`] = `
             </span>
           </a>
           <a
+            aria-label="Reading"
+            class="c12"
+            href="/reading-list"
+          >
+            <span
+              class="c13"
+            >
+              Reading
+            </span>
+          </a>
+          <a
             aria-label="Work"
             class="c12"
             href="/work"
@@ -1073,6 +1084,17 @@ exports[`<Authenticator /> should render correctly with default state 1`] = `
               class="c13"
             >
               Photography
+            </span>
+          </a>
+          <a
+            aria-label="Reading"
+            class="c12"
+            href="/reading-list"
+          >
+            <span
+              class="c13"
+            >
+              Reading
             </span>
           </a>
           <a
@@ -1628,6 +1650,17 @@ exports[`<Authenticator /> should render correctly with null user 1`] = `
             </span>
           </a>
           <a
+            aria-label="Reading"
+            class="c12"
+            href="/reading-list"
+          >
+            <span
+              class="c13"
+            >
+              Reading
+            </span>
+          </a>
+          <a
             aria-label="Work"
             class="c12"
             href="/work"
@@ -2177,6 +2210,17 @@ exports[`<Authenticator /> should render correctly with user 1`] = `
               class="c13"
             >
               Photography
+            </span>
+          </a>
+          <a
+            aria-label="Reading"
+            class="c12"
+            href="/reading-list"
+          >
+            <span
+              class="c13"
+            >
+              Reading
             </span>
           </a>
           <a

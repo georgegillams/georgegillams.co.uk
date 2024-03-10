@@ -359,6 +359,42 @@ exports[`<SiteMap /> should render correctly - index 1`] = `
         >
           <h1
             class="c7 c8"
+            id="reading-list-📚"
+          >
+            Reading list 📚
+          </h1>
+          <span
+            class="c9"
+          >
+            <a
+              class="c10"
+              href="/reading-list"
+            >
+              <span
+                class="c11"
+              >
+                Reading list
+              </span>
+            </a>
+          </span>
+        </div>
+      </div>
+    </div>
+    <div>
+      <style>
+        .js .animated-content__wrapper--hidden {
+  padding-top: 4rem;
+  opacity: 0.01;
+}
+      </style>
+      <div
+        class="c4 animated-content__wrapper--hidden"
+      >
+        <div
+          class="c5 c6"
+        >
+          <h1
+            class="c7 c8"
             id="medals-🏅"
           >
             Medals 🏅
@@ -1462,6 +1498,45 @@ exports[`<SiteMap /> should render correctly - index 1`] = `
                   class="c11"
                 >
                   /photo ⇒ /photography
+                </span>
+              </a>
+              <br />
+            </div>
+            <div>
+              <a
+                class="c10"
+                href="/book"
+              >
+                <span
+                  class="c11"
+                >
+                  /book ⇒ /reading-list
+                </span>
+              </a>
+              <br />
+            </div>
+            <div>
+              <a
+                class="c10"
+                href="/books"
+              >
+                <span
+                  class="c11"
+                >
+                  /books ⇒ /reading-list
+                </span>
+              </a>
+              <br />
+            </div>
+            <div>
+              <a
+                class="c10"
+                href="/reading"
+              >
+                <span
+                  class="c11"
+                >
+                  /reading ⇒ /reading-list
                 </span>
               </a>
               <br />
@@ -1846,6 +1921,42 @@ exports[`<SiteMap /> should render correctly 1`] = `
         >
           <h1
             class="c7 c8"
+            id="reading-list-📚"
+          >
+            Reading list 📚
+          </h1>
+          <span
+            class="c9"
+          >
+            <a
+              class="c10"
+              href="/reading-list"
+            >
+              <span
+                class="c11"
+              >
+                Reading list
+              </span>
+            </a>
+          </span>
+        </div>
+      </div>
+    </div>
+    <div>
+      <style>
+        .js .animated-content__wrapper--hidden {
+  padding-top: 4rem;
+  opacity: 0.01;
+}
+      </style>
+      <div
+        class="c4 animated-content__wrapper--hidden"
+      >
+        <div
+          class="c5 c6"
+        >
+          <h1
+            class="c7 c8"
             id="medals-🏅"
           >
             Medals 🏅
@@ -2949,6 +3060,45 @@ exports[`<SiteMap /> should render correctly 1`] = `
                   class="c11"
                 >
                   /photo ⇒ /photography
+                </span>
+              </a>
+              <br />
+            </div>
+            <div>
+              <a
+                class="c10"
+                href="/book"
+              >
+                <span
+                  class="c11"
+                >
+                  /book ⇒ /reading-list
+                </span>
+              </a>
+              <br />
+            </div>
+            <div>
+              <a
+                class="c10"
+                href="/books"
+              >
+                <span
+                  class="c11"
+                >
+                  /books ⇒ /reading-list
+                </span>
+              </a>
+              <br />
+            </div>
+            <div>
+              <a
+                class="c10"
+                href="/reading"
+              >
+                <span
+                  class="c11"
+                >
+                  /reading ⇒ /reading-list
                 </span>
               </a>
               <br />
@@ -3261,6 +3411,42 @@ exports[`<SiteMap /> should render correctly with blogs 1`] = `
         >
           <h1
             class="c7 c8"
+            id="reading-list-📚"
+          >
+            Reading list 📚
+          </h1>
+          <span
+            class="c9"
+          >
+            <a
+              class="c10"
+              href="/reading-list"
+            >
+              <span
+                class="c11"
+              >
+                Reading list
+              </span>
+            </a>
+          </span>
+        </div>
+      </div>
+    </div>
+    <div>
+      <style>
+        .js .animated-content__wrapper--hidden {
+  padding-top: 4rem;
+  opacity: 0.01;
+}
+      </style>
+      <div
+        class="c4 animated-content__wrapper--hidden"
+      >
+        <div
+          class="c5 c6"
+        >
+          <h1
+            class="c7 c8"
             id="medals-🏅"
           >
             Medals 🏅
@@ -4364,6 +4550,45 @@ exports[`<SiteMap /> should render correctly with blogs 1`] = `
                   class="c11"
                 >
                   /photo ⇒ /photography
+                </span>
+              </a>
+              <br />
+            </div>
+            <div>
+              <a
+                class="c10"
+                href="/book"
+              >
+                <span
+                  class="c11"
+                >
+                  /book ⇒ /reading-list
+                </span>
+              </a>
+              <br />
+            </div>
+            <div>
+              <a
+                class="c10"
+                href="/books"
+              >
+                <span
+                  class="c11"
+                >
+                  /books ⇒ /reading-list
+                </span>
+              </a>
+              <br />
+            </div>
+            <div>
+              <a
+                class="c10"
+                href="/reading"
+              >
+                <span
+                  class="c11"
+                >
+                  /reading ⇒ /reading-list
                 </span>
               </a>
               <br />
@@ -4747,6 +4972,42 @@ exports[`<SiteMap /> should render correctly with blogs and admin user 1`] = `
         >
           <h1
             class="c7 c8"
+            id="reading-list-📚"
+          >
+            Reading list 📚
+          </h1>
+          <span
+            class="c9"
+          >
+            <a
+              class="c10"
+              href="/reading-list"
+            >
+              <span
+                class="c11"
+              >
+                Reading list
+              </span>
+            </a>
+          </span>
+        </div>
+      </div>
+    </div>
+    <div>
+      <style>
+        .js .animated-content__wrapper--hidden {
+  padding-top: 4rem;
+  opacity: 0.01;
+}
+      </style>
+      <div
+        class="c4 animated-content__wrapper--hidden"
+      >
+        <div
+          class="c5 c6"
+        >
+          <h1
+            class="c7 c8"
             id="medals-🏅"
           >
             Medals 🏅
@@ -5850,6 +6111,45 @@ exports[`<SiteMap /> should render correctly with blogs and admin user 1`] = `
                   class="c11"
                 >
                   /photo ⇒ /photography
+                </span>
+              </a>
+              <br />
+            </div>
+            <div>
+              <a
+                class="c10"
+                href="/book"
+              >
+                <span
+                  class="c11"
+                >
+                  /book ⇒ /reading-list
+                </span>
+              </a>
+              <br />
+            </div>
+            <div>
+              <a
+                class="c10"
+                href="/books"
+              >
+                <span
+                  class="c11"
+                >
+                  /books ⇒ /reading-list
+                </span>
+              </a>
+              <br />
+            </div>
+            <div>
+              <a
+                class="c10"
+                href="/reading"
+              >
+                <span
+                  class="c11"
+                >
+                  /reading ⇒ /reading-list
                 </span>
               </a>
               <br />
@@ -6162,6 +6462,42 @@ exports[`<SiteMap /> should render correctly with ssrBlogs 1`] = `
         >
           <h1
             class="c7 c8"
+            id="reading-list-📚"
+          >
+            Reading list 📚
+          </h1>
+          <span
+            class="c9"
+          >
+            <a
+              class="c10"
+              href="/reading-list"
+            >
+              <span
+                class="c11"
+              >
+                Reading list
+              </span>
+            </a>
+          </span>
+        </div>
+      </div>
+    </div>
+    <div>
+      <style>
+        .js .animated-content__wrapper--hidden {
+  padding-top: 4rem;
+  opacity: 0.01;
+}
+      </style>
+      <div
+        class="c4 animated-content__wrapper--hidden"
+      >
+        <div
+          class="c5 c6"
+        >
+          <h1
+            class="c7 c8"
             id="medals-🏅"
           >
             Medals 🏅
@@ -7265,6 +7601,45 @@ exports[`<SiteMap /> should render correctly with ssrBlogs 1`] = `
                   class="c11"
                 >
                   /photo ⇒ /photography
+                </span>
+              </a>
+              <br />
+            </div>
+            <div>
+              <a
+                class="c10"
+                href="/book"
+              >
+                <span
+                  class="c11"
+                >
+                  /book ⇒ /reading-list
+                </span>
+              </a>
+              <br />
+            </div>
+            <div>
+              <a
+                class="c10"
+                href="/books"
+              >
+                <span
+                  class="c11"
+                >
+                  /books ⇒ /reading-list
+                </span>
+              </a>
+              <br />
+            </div>
+            <div>
+              <a
+                class="c10"
+                href="/reading"
+              >
+                <span
+                  class="c11"
+                >
+                  /reading ⇒ /reading-list
                 </span>
               </a>
               <br />

@@ -11,7 +11,7 @@ import {
   StyledParagraph,
   StyledPhotoGallery,
   StyledPhotographyCard,
-  // StyledReadingCard,
+  StyledReadingCard,
   Wrapper,
 } from './life-section.styles';
 import { ScrollAnimationWrapper } from '@george-gillams/components/effects';
@@ -32,13 +32,13 @@ const LifeSection = props => {
               href="/blog"
               layout={HP_CARD_LAYOUT.COLUMN}
             />
-            {/* <StyledReadingCard
+            <StyledReadingCard
               title="Reading list"
               blurb="See what I'm reading."
               linkText="Reading list →"
               href="/reading-list"
               layout={HP_CARD_LAYOUT.COLUMN}
-            /> */}
+            />
             <StyledPhotographyCard
               title="Photography"
               blurb="Check out my photos. Disclaimer: 99% of them are the dog."

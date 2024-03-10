@@ -10,7 +10,7 @@ import LoadingCover from '@george-gillams/components/loading-cover';
 import { ImageWrapper, LinkContainer, StyledImage } from './photography.styles';
 import PhotoGallery from 'components/photo-gallery';
 import { ANIMATIONS, ScrollAnimationWrapper, withScrollAnimation } from '@george-gillams/components/effects';
-import Button from 'components/common/Button/Button';
+import Button from 'components/common/Button';
 import IopMember from './images/iop-member.jpg';
 import GuildQualified from './images/guild-qualified.jpg';
 

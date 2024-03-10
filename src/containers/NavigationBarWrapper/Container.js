@@ -15,6 +15,7 @@ const NavigationBarWrapper = props => {
   const menuItems = [
     <NavigationItem key="blog" name="Blog" href="/blog" />,
     <NavigationItem key="photography" name="Photography" href="/photography" />,
+    <NavigationItem key="reading-list" name="Reading" href="/reading-list" />,
     <NavigationItem key="work" name="Work" href="/work" />,
     <NavigationItem key="contact" name="Contact" href="/contact" />,
     adminItem,

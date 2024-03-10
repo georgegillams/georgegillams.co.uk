@@ -1,0 +1,73 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`BookList saga deleteBook actions Should call deleteBook.failure if API returns error 1`] = `
+{
+  "@@redux-saga/IO": true,
+  "combinator": false,
+  "payload": {
+    "args": [],
+    "selector": [Function],
+  },
+  "type": "SELECT",
+}
+`;
+
+exports[`BookList saga deleteBook actions Should call deleteBook.failure if an exception occurs 1`] = `
+{
+  "@@redux-saga/IO": true,
+  "combinator": false,
+  "payload": {
+    "args": [],
+    "selector": [Function],
+  },
+  "type": "SELECT",
+}
+`;
+
+exports[`BookList saga deleteBook actions Should call deleteBook.success on successful API call 1`] = `
+{
+  "@@redux-saga/IO": true,
+  "combinator": false,
+  "payload": {
+    "args": [],
+    "selector": [Function],
+  },
+  "type": "SELECT",
+}
+`;
+
+exports[`BookList saga loadBooks actions Should call loadBooks.failure if API returns error 1`] = `
+{
+  "@@redux-saga/IO": true,
+  "combinator": false,
+  "payload": {
+    "args": [],
+    "selector": [Function],
+  },
+  "type": "SELECT",
+}
+`;
+
+exports[`BookList saga loadBooks actions Should call loadBooks.failure if an exception occurs 1`] = `
+{
+  "@@redux-saga/IO": true,
+  "combinator": false,
+  "payload": {
+    "args": [],
+    "selector": [Function],
+  },
+  "type": "SELECT",
+}
+`;
+
+exports[`BookList saga loadBooks actions Should call loadBooks.success on successful API call 1`] = `
+{
+  "@@redux-saga/IO": true,
+  "combinator": false,
+  "payload": {
+    "args": [],
+    "selector": [Function],
+  },
+  "type": "SELECT",
+}
+`;

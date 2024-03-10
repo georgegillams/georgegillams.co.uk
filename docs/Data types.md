@@ -17,6 +17,21 @@ db key: `blogs`
 | showInBlogsList       | bool          | stored |                 |
 | showInTravelBlogsList | bool          | stored |                 |
 
+## Books
+
+db key: `books`
+
+| name               | type   | source | description                                  |
+| ------------------ | ------ | ------ | -------------------------------------------- |
+| title              | string | stored |                                              |
+| author             | string | stored |                                              |
+| bookImage          | string | stored |                                              |
+| status             | string | stored | One of 'toRead', 'currentlyReading', 'using' |
+| recommendation     | number | stored | Out of 10                                    |
+| recommendationText | string | stored |                                              |
+| amazonLink         | string | stored | Can be affiliate link                        |
+| audibleLink        | string | stored |                                              |
+
 ## Support
 
 db key: `support`

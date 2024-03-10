@@ -12,6 +12,16 @@ const apiStructureWithDescriptionsExtensions = apiStructure => {
   apiStructure.updateBlog.description = 'Update a blog';
   apiStructure.updateBlog.authorisation = 'Admin only';
 
+  // Books
+  apiStructure.createBook.description = 'List a new book';
+  apiStructure.createBook.authorisation = 'Admin only';
+  apiStructure.deleteBook.description = 'Remove a book';
+  apiStructure.deleteBook.authorisation = 'Admin only';
+  apiStructure.loadBooks.description = 'Load all books. If not admin, only non-deleted books will be loaded.';
+  apiStructure.loadBooks.authorisation = 'None';
+  apiStructure.updateBook.description = 'Update a book';
+  apiStructure.updateBook.authorisation = 'Admin only';
+
   // Make payment
   apiStructure.loadPayment.description = 'TODO';
   apiStructure.loadPayment.authorisation = 'TODO';

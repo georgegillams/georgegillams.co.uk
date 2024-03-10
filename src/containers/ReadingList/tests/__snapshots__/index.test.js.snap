@@ -1,0 +1,2246 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<BookList /> should render correctly - index 1`] = `
+.c2 {
+  position: relative;
+  width: 100%;
+  border-radius: 0.25rem;
+  background-color: rgb(238,238,238);
+  overflow: hidden;
+  width: 100%;
+  height: 10rem;
+  margin-bottom: 1.2rem;
+}
+
+.c3 {
+  position: absolute;
+  top: 0;
+  width: 13rem;
+  height: 100vh;
+  background-image: linear-gradient( 90deg,rgb(238,238,238),rgb(245,245,245),rgb(238,238,238) );
+  background-repeat: no-repeat;
+  background-size: 12.5rem 100%;
+  -webkit-animation: eflhBg 3.5s ease-in-out infinite;
+  animation: eflhBg 3.5s ease-in-out infinite;
+}
+
+.c0 {
+  display: block;
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  overflow: hidden;
+  padding-bottom: 2rem;
+  max-width: 41.25rem;
+  padding-right: 1rem;
+  padding-left: 1rem;
+}
+
+.c1 {
+  margin-top: 2rem;
+}
+
+@media (prefers-color-scheme:dark) {
+  .c2 {
+    background-color: rgb(17,17,17);
+  }
+}
+
+@media (prefers-color-scheme:dark) {
+  .c3 {
+    background-image: linear-gradient( 90deg,rgb(17,17,17),rgb(50,50,50),rgb(17,17,17) );
+  }
+}
+
+@media (min-width:50.25rem) {
+  .c0 {
+    padding-right: 2rem;
+    padding-left: 2rem;
+  }
+}
+
+<div>
+  <div
+    class="c0 page-containerstyles__StyledPageContainer-sc-19l7k4-0 c1"
+    width="prose"
+  >
+    <div
+      class="c2"
+    >
+      <div
+        class="c3"
+        style="margin-left: -0px;"
+      />
+    </div>
+    <div
+      class="c2"
+    >
+      <div
+        class="c3"
+        style="margin-left: -0px;"
+      />
+    </div>
+    <div
+      class="c2"
+    >
+      <div
+        class="c3"
+        style="margin-left: -0px;"
+      />
+    </div>
+    <div
+      class="c2"
+    >
+      <div
+        class="c3"
+        style="margin-left: -0px;"
+      />
+    </div>
+    <div
+      class="c2"
+    >
+      <div
+        class="c3"
+        style="margin-left: -0px;"
+      />
+    </div>
+  </div>
+</div>
+`;
+
+exports[`<BookList /> should render correctly authenticated with books 1`] = `
+.c3 {
+  margin: 0;
+  font-size: 2.4rem;
+  font-weight: bold;
+}
+
+.c8 {
+  margin: 0;
+  font-size: 1.2rem;
+}
+
+.c29 {
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.c10 {
+  margin: 0;
+  font-size: 1rem;
+}
+
+.c17 {
+  width: 1.25rem;
+  height: 1.25rem;
+}
+
+.c28 {
+  width: 100%;
+  color: #1e1e1e;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c30 {
+  margin: 2.13rem 0 0 0;
+}
+
+.c0 {
+  display: block;
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  overflow: hidden;
+  padding-bottom: 2rem;
+  max-width: 41.25rem;
+  padding-right: 1rem;
+  padding-left: 1rem;
+}
+
+.c1 {
+  margin-top: 2rem;
+}
+
+.c5 {
+  padding-top: 0;
+  opacity: 1;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+.c2 {
+  -webkit-animation: eTsntO 0.4s ease-in-out;
+  animation: eTsntO 0.4s ease-in-out;
+}
+
+.c20 {
+  position: relative;
+  min-width: 5rem;
+  padding: 0.43rem 1.125rem 0.32rem 1.125rem;
+  -webkit-transition: filter 0.3s;
+  transition: filter 0.3s;
+  border: none;
+  border-radius: 0.25rem;
+  font-size: 1.4rem;
+  font-weight: bold;
+  cursor: pointer;
+  -webkit-text-decoration-color: transparent;
+  text-decoration-color: transparent;
+  -webkit-text-decoration-line: none;
+  text-decoration-line: none;
+  background-color: #0067B7;
+  color: white;
+}
+
+.c20:focus-within,
+.c20:focus {
+  outline: none !important;
+}
+
+.c20:focus-within::after,
+.c20:focus::after {
+  position: absolute;
+  top: -0.35rem;
+  right: -0.35rem;
+  bottom: -0.35rem;
+  left: -0.35rem;
+  content: '';
+  display: block;
+  border: solid #007dfa3C 0.2rem;
+  border-radius: 0.5rem;
+  pointer-events: none;
+}
+
+.c20:focus,
+.c20:hover {
+  background-color: #004F8C;
+  color: white;
+}
+
+.c20:active {
+  background-color: #003E6F;
+  color: white;
+}
+
+.c20:disabled {
+  background-color: #cdcdd7;
+  color: #646464;
+}
+
+.c23 {
+  position: relative;
+  min-width: 5rem;
+  padding: 0.43rem 1.125rem 0.32rem 1.125rem;
+  -webkit-transition: filter 0.3s;
+  transition: filter 0.3s;
+  border: none;
+  border-radius: 0.25rem;
+  font-size: 1.4rem;
+  font-weight: bold;
+  cursor: pointer;
+  -webkit-text-decoration-color: transparent;
+  text-decoration-color: transparent;
+  -webkit-text-decoration-line: none;
+  text-decoration-line: none;
+  background-color: #E02626;
+  color: white;
+}
+
+.c23:focus-within,
+.c23:focus {
+  outline: none !important;
+}
+
+.c23:focus-within::after,
+.c23:focus::after {
+  position: absolute;
+  top: -0.35rem;
+  right: -0.35rem;
+  bottom: -0.35rem;
+  left: -0.35rem;
+  content: '';
+  display: block;
+  border: solid #007dfa3C 0.2rem;
+  border-radius: 0.5rem;
+  pointer-events: none;
+}
+
+.c23:focus,
+.c23:hover {
+  background-color: #BA2020;
+  color: white;
+}
+
+.c23:active {
+  background-color: #9F1717;
+  color: white;
+}
+
+.c23:disabled {
+  background-color: #cdcdd7;
+  color: #646464;
+}
+
+.c27 {
+  position: relative;
+  min-width: 5rem;
+  padding: 0.43rem 1.125rem 0.32rem 1.125rem;
+  -webkit-transition: filter 0.3s;
+  transition: filter 0.3s;
+  border: none;
+  border-radius: 0.25rem;
+  font-size: 1.4rem;
+  font-weight: bold;
+  cursor: pointer;
+  -webkit-text-decoration-color: transparent;
+  text-decoration-color: transparent;
+  -webkit-text-decoration-line: none;
+  text-decoration-line: none;
+  background-color: #E02626;
+  color: white;
+  cursor: default;
+}
+
+.c27:focus-within,
+.c27:focus {
+  outline: none !important;
+}
+
+.c27:focus-within::after,
+.c27:focus::after {
+  position: absolute;
+  top: -0.35rem;
+  right: -0.35rem;
+  bottom: -0.35rem;
+  left: -0.35rem;
+  content: '';
+  display: block;
+  border: solid #007dfa3C 0.2rem;
+  border-radius: 0.5rem;
+  pointer-events: none;
+}
+
+.c27:focus,
+.c27:hover {
+  background-color: #BA2020;
+  color: white;
+}
+
+.c27:active {
+  background-color: #9F1717;
+  color: white;
+}
+
+.c27:disabled {
+  background-color: #cdcdd7;
+  color: #646464;
+}
+
+.c22 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.c6 {
+  display: grid;
+  grid-template-columns: 4rem 1fr;
+  min-height: 4rem;
+  gap: 0.375rem 1rem;
+  opacity: 0.6;
+}
+
+.c25 {
+  display: grid;
+  grid-template-columns: 4rem 1fr;
+  min-height: 4rem;
+  gap: 0.375rem 1rem;
+}
+
+.c9 {
+  grid-row: 1;
+  grid-column: 2;
+}
+
+.c11 {
+  grid-row: 2;
+  grid-column: 2;
+}
+
+.c12 {
+  grid-row: 3;
+  grid-column: 2;
+}
+
+.c26 {
+  color: orange;
+  grid-row: 3;
+  grid-column: 2;
+}
+
+.c7 {
+  width: 100%;
+  margin-top: 2rem;
+  box-sizing: border-box;
+  margin-bottom: 1rem;
+}
+
+.c24 {
+  margin-bottom: 2rem;
+  box-sizing: border-box;
+}
+
+.c14 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border: 1px #b2b2bf solid;
+  border-radius: 0.25rem;
+  background-color: #ffffff;
+}
+
+.c14:focus-within,
+.c14:focus {
+  position: relative;
+  outline: none !important;
+}
+
+.c14:focus-within::after,
+.c14:focus::after {
+  position: absolute;
+  top: -0.35rem;
+  right: -0.35rem;
+  bottom: -0.35rem;
+  left: -0.35rem;
+  content: '';
+  display: block;
+  border: solid #007dfa3C 0.2rem;
+  border-radius: 0.5rem;
+  pointer-events: none;
+}
+
+.c21 {
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
+
+.c15 {
+  margin-bottom: 1rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.c19 {
+  margin-bottom: 1rem;
+}
+
+.c13 {
+  display: inline-block;
+  width: 100%;
+  margin: 0 0 0.375rem 0.1rem;
+  color: #1e1e1e;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.c31 {
+  display: inline-block;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  line-height: 1.5;
+  margin-top: 2rem;
+}
+
+.c31:first-of-type {
+  margin-top: 0.86rem;
+}
+
+.c4 {
+  margin: 2.3rem 0 0 0;
+}
+
+.c16 {
+  padding: 0.375rem 0.75rem;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  color: #1e1e1e;
+  font-size: 1rem;
+}
+
+.c16:disabled {
+  color: #b2b2bf;
+}
+
+.c18 {
+  margin-right: 0.5rem;
+  color: #00a698;
+  fill: #00a698;
+}
+
+@media (prefers-color-scheme:dark) {
+  .c28 {
+    color: #ffffff;
+  }
+}
+
+@media (min-width:50.25rem) {
+  .c0 {
+    padding-right: 2rem;
+    padding-left: 2rem;
+  }
+}
+
+@media (prefers-color-scheme:dark) {
+  .c20:focus-within::after,
+  .c20:focus::after {
+    border-color: #007dfa3C;
+  }
+}
+
+@media (prefers-color-scheme:dark) {
+  .c20 {
+    background-color: #025CA2;
+    color: white;
+  }
+}
+
+@media (prefers-color-scheme:dark) {
+  .c20:focus,
+  .c20:hover {
+    background-color: #004479;
+    color: white;
+  }
+}
+
+@media (prefers-color-scheme:dark) {
+  .c20:active {
+    background-color: #003965;
+    color: white;
+  }
+}
+
+@media (prefers-color-scheme:dark) {
+  .c20:disabled {
+    background-color: #595959;
+    color: #a9a9a9;
+  }
+}
+
+@media (prefers-color-scheme:dark) {
+  .c23:focus-within::after,
+  .c23:focus::after {
+    border-color: #007dfa3C;
+  }
+}
+
+@media (prefers-color-scheme:dark) {
+  .c23 {
+    background-color: #CA2020;
+    color: white;
+  }
+}
+
+@media (prefers-color-scheme:dark) {
+  .c23:focus,
+  .c23:hover {
+    background-color: #891111;
+    color: white;
+  }
+}
+
+@media (prefers-color-scheme:dark) {
+  .c23:active {
+    background-color: #730D0D;
+    color: white;
+  }
+}
+
+@media (prefers-color-scheme:dark) {
+  .c23:disabled {
+    background-color: #595959;
+    color: #a9a9a9;
+  }
+}
+
+@media (prefers-color-scheme:dark) {
+  .c27:focus-within::after,
+  .c27:focus::after {
+    border-color: #007dfa3C;
+  }
+}
+
+@media (prefers-color-scheme:dark) {
+  .c27 {
+    background-color: #CA2020;
+    color: white;
+  }
+}
+
+@media (prefers-color-scheme:dark) {
+  .c27:focus,
+  .c27:hover {
+    background-color: #891111;
+    color: white;
+  }
+}
+
+@media (prefers-color-scheme:dark) {
+  .c27:active {
+    background-color: #730D0D;
+    color: white;
+  }
+}
+
+@media (prefers-color-scheme:dark) {
+  .c27:disabled {
+    background-color: #595959;
+    color: #a9a9a9;
+  }
+}
+
+@media (min-width:32.25rem) {
+  .c6 {
+    grid-template-columns: 4rem 1fr 10rem;
+    grid-template-rows: 3;
+  }
+}
+
+@media (min-width:50.25rem) {
+  .c6 {
+    gap: calc(2 * 0.375rem) 1rem;
+    grid-template-columns: 5rem 1fr 10rem;
+  }
+}
+
+@media (min-width:32.25rem) {
+  .c25 {
+    grid-template-columns: 4rem 1fr 10rem;
+    grid-template-rows: 3;
+  }
+}
+
+@media (min-width:50.25rem) {
+  .c25 {
+    gap: calc(2 * 0.375rem) 1rem;
+    grid-template-columns: 5rem 1fr 10rem;
+  }
+}
+
+@media (min-width:50.25rem) {
+  .c7 {
+    margin-top: calc(1rem + 2rem);
+  }
+}
+
+@media (prefers-color-scheme:dark) {
+  .c14:focus-within::after,
+  .c14:focus::after {
+    border-color: #007dfa3C;
+  }
+}
+
+@media (prefers-color-scheme:dark) {
+  .c14 {
+    border-color: white;
+    background-color: #000000;
+  }
+}
+
+@media (prefers-color-scheme:dark) {
+  .c13 {
+    color: #ffffff;
+  }
+}
+
+@media (prefers-color-scheme:dark) {
+  .c16 {
+    color: #ffffff;
+  }
+}
+
+@media (prefers-color-scheme:dark) {
+  .c16:disabled {
+    color: #7b7b86;
+  }
+}
+
+<div>
+  <div
+    class="c0 page-containerstyles__StyledPageContainer-sc-19l7k4-0 c1"
+    width="prose"
+  >
+    <div
+      class="c2"
+    >
+      <h1
+        class="c3 c4"
+      >
+        My reading list
+      </h1>
+    </div>
+    <div>
+      <style>
+        .js .animated-content__wrapper--hidden {
+  padding-top: 4rem;
+  opacity: 0.01;
+}
+      </style>
+      <div
+        class="c5 animated-content__wrapper--hidden"
+      >
+        <div>
+          <div>
+            <div
+              class="c6 c7"
+              id="asdfg"
+            >
+              <h1
+                class="c8 c9"
+              >
+                Book 1 🎉
+              </h1>
+              <span
+                class="c10 c11"
+              >
+                By 
+                Author 1
+              </span>
+              <span
+                class="c10 c12"
+              >
+                Want to read
+              </span>
+            </div>
+            <div
+              class=""
+            >
+              <label
+                class="c13"
+                for="title_FORM_ID"
+              >
+                Title
+              </label>
+              <div
+                class="c14 c15"
+                placeholder="Title"
+              >
+                <input
+                  aria-disabled="false"
+                  aria-invalid="false"
+                  class="c16"
+                  id="title_FORM_ID"
+                  name="Title"
+                  value="Book 1 🎉"
+                />
+                <svg
+                  class="c17 c18"
+                  height="18"
+                  viewBox="0 0 24 24"
+                  width="18"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M9.4 20c-.5 0-.9-.2-1.3-.5l-5.8-5.1c-.4-.4-.5-1-.1-1.4l1.3-1.5c.4-.4 1-.5 1.4-.1l4 3.5c.2.1.4.1.6 0l9.2-10.5c.4-.4 1-.5 1.4-.1l1.5 1.3c.4.4.5 1 .1 1.4L10.9 19.3c-.4.5-.9.7-1.5.7z"
+                  />
+                </svg>
+              </div>
+              <label
+                class="c13"
+                for="author_FORM_ID"
+              >
+                Author
+              </label>
+              <div
+                class="c14 c15"
+                placeholder="Author"
+              >
+                <input
+                  aria-disabled="false"
+                  aria-invalid="false"
+                  class="c16"
+                  id="author_FORM_ID"
+                  name="Author"
+                  value="Author 1"
+                />
+                <svg
+                  class="c17 c18"
+                  height="18"
+                  viewBox="0 0 24 24"
+                  width="18"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M9.4 20c-.5 0-.9-.2-1.3-.5l-5.8-5.1c-.4-.4-.5-1-.1-1.4l1.3-1.5c.4-.4 1-.5 1.4-.1l4 3.5c.2.1.4.1.6 0l9.2-10.5c.4-.4 1-.5 1.4-.1l1.5 1.3c.4.4.5 1 .1 1.4L10.9 19.3c-.4.5-.9.7-1.5.7z"
+                  />
+                </svg>
+              </div>
+              <label
+                class="c13"
+                for="bookImage_FORM_ID"
+              >
+                Book image
+              </label>
+              <div
+                class="c14 c15"
+                placeholder="Book image"
+              >
+                <input
+                  aria-disabled="false"
+                  aria-invalid="false"
+                  class="c16"
+                  id="bookImage_FORM_ID"
+                  name="Book image"
+                  value=""
+                />
+                <svg
+                  class="c17 c18"
+                  height="18"
+                  viewBox="0 0 24 24"
+                  width="18"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M9.4 20c-.5 0-.9-.2-1.3-.5l-5.8-5.1c-.4-.4-.5-1-.1-1.4l1.3-1.5c.4-.4 1-.5 1.4-.1l4 3.5c.2.1.4.1.6 0l9.2-10.5c.4-.4 1-.5 1.4-.1l1.5 1.3c.4.4.5 1 .1 1.4L10.9 19.3c-.4.5-.9.7-1.5.7z"
+                  />
+                </svg>
+              </div>
+              <label
+                class="c13"
+                for="recommendation_FORM_ID"
+              >
+                Recommendation
+              </label>
+              <div
+                class="c14 c15"
+                placeholder="Recommendation"
+              >
+                <input
+                  aria-disabled="false"
+                  aria-invalid="false"
+                  class="c16"
+                  id="recommendation_FORM_ID"
+                  name="Recommendation"
+                  value=""
+                />
+                <svg
+                  class="c17 c18"
+                  height="18"
+                  viewBox="0 0 24 24"
+                  width="18"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M9.4 20c-.5 0-.9-.2-1.3-.5l-5.8-5.1c-.4-.4-.5-1-.1-1.4l1.3-1.5c.4-.4 1-.5 1.4-.1l4 3.5c.2.1.4.1.6 0l9.2-10.5c.4-.4 1-.5 1.4-.1l1.5 1.3c.4.4.5 1 .1 1.4L10.9 19.3c-.4.5-.9.7-1.5.7z"
+                  />
+                </svg>
+              </div>
+              <label
+                class="c13"
+                for="amazonLink_FORM_ID"
+              >
+                Amazon link
+              </label>
+              <div
+                class="c14 c15"
+                placeholder="Amazon link"
+              >
+                <input
+                  aria-disabled="false"
+                  aria-invalid="false"
+                  class="c16"
+                  id="amazonLink_FORM_ID"
+                  name="Amazon link"
+                  value=""
+                />
+                <svg
+                  class="c17 c18"
+                  height="18"
+                  viewBox="0 0 24 24"
+                  width="18"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M9.4 20c-.5 0-.9-.2-1.3-.5l-5.8-5.1c-.4-.4-.5-1-.1-1.4l1.3-1.5c.4-.4 1-.5 1.4-.1l4 3.5c.2.1.4.1.6 0l9.2-10.5c.4-.4 1-.5 1.4-.1l1.5 1.3c.4.4.5 1 .1 1.4L10.9 19.3c-.4.5-.9.7-1.5.7z"
+                  />
+                </svg>
+              </div>
+              <label
+                class="c13"
+                for="audibleLink_FORM_ID"
+              >
+                Audible link
+              </label>
+              <div
+                class="c14 c15"
+                placeholder="Audible link"
+              >
+                <input
+                  aria-disabled="false"
+                  aria-invalid="false"
+                  class="c16"
+                  id="audibleLink_FORM_ID"
+                  name="Audible link"
+                  value=""
+                />
+                <svg
+                  class="c17 c18"
+                  height="18"
+                  viewBox="0 0 24 24"
+                  width="18"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M9.4 20c-.5 0-.9-.2-1.3-.5l-5.8-5.1c-.4-.4-.5-1-.1-1.4l1.3-1.5c.4-.4 1-.5 1.4-.1l4 3.5c.2.1.4.1.6 0l9.2-10.5c.4-.4 1-.5 1.4-.1l1.5 1.3c.4.4.5 1 .1 1.4L10.9 19.3c-.4.5-.9.7-1.5.7z"
+                  />
+                </svg>
+              </div>
+              <label
+                class="c13"
+                for="status_FORM_ID"
+              >
+                Status
+              </label>
+              <div
+                class="c19"
+                placeholder="Status"
+              >
+                <div
+                  class="c14"
+                >
+                  <select
+                    aria-disabled="false"
+                    aria-invalid="false"
+                    class="c16"
+                    id="status_FORM_ID"
+                    name="Status"
+                  >
+                    <option
+                      value="toRead"
+                    >
+                      Want to read
+                    </option>
+                    <option
+                      value="currentlyReading"
+                    >
+                      Currently reading
+                    </option>
+                    <option
+                      value="using"
+                    >
+                      Using
+                    </option>
+                  </select>
+                  <svg
+                    class="c17 c18"
+                    height="18"
+                    viewBox="0 0 24 24"
+                    width="18"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M9.4 20c-.5 0-.9-.2-1.3-.5l-5.8-5.1c-.4-.4-.5-1-.1-1.4l1.3-1.5c.4-.4 1-.5 1.4-.1l4 3.5c.2.1.4.1.6 0l9.2-10.5c.4-.4 1-.5 1.4-.1l1.5 1.3c.4.4.5 1 .1 1.4L10.9 19.3c-.4.5-.9.7-1.5.7z"
+                    />
+                  </svg>
+                </div>
+              </div>
+              <button
+                class="c20 c21"
+                type="button"
+              >
+                <span
+                  class="c22"
+                >
+                  Save
+                </span>
+              </button>
+            </div>
+            <button
+              class="c23 c24"
+              type="button"
+            >
+              <span
+                class="c22"
+              >
+                Delete book
+              </span>
+            </button>
+          </div>
+          <div>
+            <div
+              class="c25 c7"
+              id="asdfh"
+            >
+              <h1
+                class="c8 c9"
+              >
+                Book 2
+              </h1>
+              <span
+                class="c10 c11"
+              >
+                By 
+                Author 2
+              </span>
+              <span
+                class="c10 c26"
+                color="orange"
+              >
+                Reading now
+              </span>
+            </div>
+            <div
+              class=""
+            >
+              <label
+                class="c13"
+                for="title_FORM_ID"
+              >
+                Title
+              </label>
+              <div
+                class="c14 c15"
+                placeholder="Title"
+              >
+                <input
+                  aria-disabled="false"
+                  aria-invalid="false"
+                  class="c16"
+                  id="title_FORM_ID"
+                  name="Title"
+                  value="Book 2"
+                />
+                <svg
+                  class="c17 c18"
+                  height="18"
+                  viewBox="0 0 24 24"
+                  width="18"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M9.4 20c-.5 0-.9-.2-1.3-.5l-5.8-5.1c-.4-.4-.5-1-.1-1.4l1.3-1.5c.4-.4 1-.5 1.4-.1l4 3.5c.2.1.4.1.6 0l9.2-10.5c.4-.4 1-.5 1.4-.1l1.5 1.3c.4.4.5 1 .1 1.4L10.9 19.3c-.4.5-.9.7-1.5.7z"
+                  />
+                </svg>
+              </div>
+              <label
+                class="c13"
+                for="author_FORM_ID"
+              >
+                Author
+              </label>
+              <div
+                class="c14 c15"
+                placeholder="Author"
+              >
+                <input
+                  aria-disabled="false"
+                  aria-invalid="false"
+                  class="c16"
+                  id="author_FORM_ID"
+                  name="Author"
+                  value="Author 2"
+                />
+                <svg
+                  class="c17 c18"
+                  height="18"
+                  viewBox="0 0 24 24"
+                  width="18"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M9.4 20c-.5 0-.9-.2-1.3-.5l-5.8-5.1c-.4-.4-.5-1-.1-1.4l1.3-1.5c.4-.4 1-.5 1.4-.1l4 3.5c.2.1.4.1.6 0l9.2-10.5c.4-.4 1-.5 1.4-.1l1.5 1.3c.4.4.5 1 .1 1.4L10.9 19.3c-.4.5-.9.7-1.5.7z"
+                  />
+                </svg>
+              </div>
+              <label
+                class="c13"
+                for="bookImage_FORM_ID"
+              >
+                Book image
+              </label>
+              <div
+                class="c14 c15"
+                placeholder="Book image"
+              >
+                <input
+                  aria-disabled="false"
+                  aria-invalid="false"
+                  class="c16"
+                  id="bookImage_FORM_ID"
+                  name="Book image"
+                  value=""
+                />
+                <svg
+                  class="c17 c18"
+                  height="18"
+                  viewBox="0 0 24 24"
+                  width="18"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M9.4 20c-.5 0-.9-.2-1.3-.5l-5.8-5.1c-.4-.4-.5-1-.1-1.4l1.3-1.5c.4-.4 1-.5 1.4-.1l4 3.5c.2.1.4.1.6 0l9.2-10.5c.4-.4 1-.5 1.4-.1l1.5 1.3c.4.4.5 1 .1 1.4L10.9 19.3c-.4.5-.9.7-1.5.7z"
+                  />
+                </svg>
+              </div>
+              <label
+                class="c13"
+                for="recommendation_FORM_ID"
+              >
+                Recommendation
+              </label>
+              <div
+                class="c14 c15"
+                placeholder="Recommendation"
+              >
+                <input
+                  aria-disabled="false"
+                  aria-invalid="false"
+                  class="c16"
+                  id="recommendation_FORM_ID"
+                  name="Recommendation"
+                  value=""
+                />
+                <svg
+                  class="c17 c18"
+                  height="18"
+                  viewBox="0 0 24 24"
+                  width="18"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M9.4 20c-.5 0-.9-.2-1.3-.5l-5.8-5.1c-.4-.4-.5-1-.1-1.4l1.3-1.5c.4-.4 1-.5 1.4-.1l4 3.5c.2.1.4.1.6 0l9.2-10.5c.4-.4 1-.5 1.4-.1l1.5 1.3c.4.4.5 1 .1 1.4L10.9 19.3c-.4.5-.9.7-1.5.7z"
+                  />
+                </svg>
+              </div>
+              <label
+                class="c13"
+                for="amazonLink_FORM_ID"
+              >
+                Amazon link
+              </label>
+              <div
+                class="c14 c15"
+                placeholder="Amazon link"
+              >
+                <input
+                  aria-disabled="false"
+                  aria-invalid="false"
+                  class="c16"
+                  id="amazonLink_FORM_ID"
+                  name="Amazon link"
+                  value=""
+                />
+                <svg
+                  class="c17 c18"
+                  height="18"
+                  viewBox="0 0 24 24"
+                  width="18"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M9.4 20c-.5 0-.9-.2-1.3-.5l-5.8-5.1c-.4-.4-.5-1-.1-1.4l1.3-1.5c.4-.4 1-.5 1.4-.1l4 3.5c.2.1.4.1.6 0l9.2-10.5c.4-.4 1-.5 1.4-.1l1.5 1.3c.4.4.5 1 .1 1.4L10.9 19.3c-.4.5-.9.7-1.5.7z"
+                  />
+                </svg>
+              </div>
+              <label
+                class="c13"
+                for="audibleLink_FORM_ID"
+              >
+                Audible link
+              </label>
+              <div
+                class="c14 c15"
+                placeholder="Audible link"
+              >
+                <input
+                  aria-disabled="false"
+                  aria-invalid="false"
+                  class="c16"
+                  id="audibleLink_FORM_ID"
+                  name="Audible link"
+                  value=""
+                />
+                <svg
+                  class="c17 c18"
+                  height="18"
+                  viewBox="0 0 24 24"
+                  width="18"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M9.4 20c-.5 0-.9-.2-1.3-.5l-5.8-5.1c-.4-.4-.5-1-.1-1.4l1.3-1.5c.4-.4 1-.5 1.4-.1l4 3.5c.2.1.4.1.6 0l9.2-10.5c.4-.4 1-.5 1.4-.1l1.5 1.3c.4.4.5 1 .1 1.4L10.9 19.3c-.4.5-.9.7-1.5.7z"
+                  />
+                </svg>
+              </div>
+              <label
+                class="c13"
+                for="status_FORM_ID"
+              >
+                Status
+              </label>
+              <div
+                class="c19"
+                placeholder="Status"
+              >
+                <div
+                  class="c14"
+                >
+                  <select
+                    aria-disabled="false"
+                    aria-invalid="false"
+                    class="c16"
+                    id="status_FORM_ID"
+                    name="Status"
+                  >
+                    <option
+                      value="toRead"
+                    >
+                      Want to read
+                    </option>
+                    <option
+                      value="currentlyReading"
+                    >
+                      Currently reading
+                    </option>
+                    <option
+                      value="using"
+                    >
+                      Using
+                    </option>
+                  </select>
+                  <svg
+                    class="c17 c18"
+                    height="18"
+                    viewBox="0 0 24 24"
+                    width="18"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M9.4 20c-.5 0-.9-.2-1.3-.5l-5.8-5.1c-.4-.4-.5-1-.1-1.4l1.3-1.5c.4-.4 1-.5 1.4-.1l4 3.5c.2.1.4.1.6 0l9.2-10.5c.4-.4 1-.5 1.4-.1l1.5 1.3c.4.4.5 1 .1 1.4L10.9 19.3c-.4.5-.9.7-1.5.7z"
+                    />
+                  </svg>
+                </div>
+              </div>
+              <button
+                class="c20 c21"
+                type="button"
+              >
+                <span
+                  class="c22"
+                >
+                  Save
+                </span>
+              </button>
+            </div>
+            <button
+              class="c23 c24"
+              type="button"
+            >
+              <span
+                class="c22"
+              >
+                Delete book
+              </span>
+            </button>
+          </div>
+          <div>
+            <div
+              class="c25 c7"
+              id="asdfi"
+            >
+              <h1
+                class="c8 c9"
+              >
+                Book 3 (DELETED)
+              </h1>
+              <span
+                class="c10 c11"
+              >
+                By 
+                Author 3
+              </span>
+              <span
+                class="c10 c26"
+                color="orange"
+              >
+                Reading now
+              </span>
+            </div>
+            <button
+              class="c27 c24"
+              disabled=""
+              type="button"
+            >
+              <span
+                class="c22"
+              >
+                Delete book
+              </span>
+            </button>
+          </div>
+          <div
+            class="c28"
+          >
+            <h1
+              class="c29 c30"
+              id="create-new-book"
+            >
+              Create new book
+            </h1>
+            <span
+              class="c31"
+              style="width: 100%;"
+            >
+              <div
+                class=""
+              >
+                <label
+                  class="c13"
+                  for="title_FORM_ID"
+                >
+                  Title
+                </label>
+                <div
+                  class="c14 c15"
+                  placeholder="Title"
+                >
+                  <input
+                    aria-disabled="false"
+                    aria-invalid="false"
+                    class="c16"
+                    id="title_FORM_ID"
+                    name="Title"
+                    value=""
+                  />
+                  <svg
+                    class="c17 c18"
+                    height="18"
+                    viewBox="0 0 24 24"
+                    width="18"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M9.4 20c-.5 0-.9-.2-1.3-.5l-5.8-5.1c-.4-.4-.5-1-.1-1.4l1.3-1.5c.4-.4 1-.5 1.4-.1l4 3.5c.2.1.4.1.6 0l9.2-10.5c.4-.4 1-.5 1.4-.1l1.5 1.3c.4.4.5 1 .1 1.4L10.9 19.3c-.4.5-.9.7-1.5.7z"
+                    />
+                  </svg>
+                </div>
+                <label
+                  class="c13"
+                  for="author_FORM_ID"
+                >
+                  Author
+                </label>
+                <div
+                  class="c14 c15"
+                  placeholder="Author"
+                >
+                  <input
+                    aria-disabled="false"
+                    aria-invalid="false"
+                    class="c16"
+                    id="author_FORM_ID"
+                    name="Author"
+                    value=""
+                  />
+                  <svg
+                    class="c17 c18"
+                    height="18"
+                    viewBox="0 0 24 24"
+                    width="18"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M9.4 20c-.5 0-.9-.2-1.3-.5l-5.8-5.1c-.4-.4-.5-1-.1-1.4l1.3-1.5c.4-.4 1-.5 1.4-.1l4 3.5c.2.1.4.1.6 0l9.2-10.5c.4-.4 1-.5 1.4-.1l1.5 1.3c.4.4.5 1 .1 1.4L10.9 19.3c-.4.5-.9.7-1.5.7z"
+                    />
+                  </svg>
+                </div>
+                <label
+                  class="c13"
+                  for="bookImage_FORM_ID"
+                >
+                  Book image
+                </label>
+                <div
+                  class="c14 c15"
+                  placeholder="Book image"
+                >
+                  <input
+                    aria-disabled="false"
+                    aria-invalid="false"
+                    class="c16"
+                    id="bookImage_FORM_ID"
+                    name="Book image"
+                    value=""
+                  />
+                  <svg
+                    class="c17 c18"
+                    height="18"
+                    viewBox="0 0 24 24"
+                    width="18"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M9.4 20c-.5 0-.9-.2-1.3-.5l-5.8-5.1c-.4-.4-.5-1-.1-1.4l1.3-1.5c.4-.4 1-.5 1.4-.1l4 3.5c.2.1.4.1.6 0l9.2-10.5c.4-.4 1-.5 1.4-.1l1.5 1.3c.4.4.5 1 .1 1.4L10.9 19.3c-.4.5-.9.7-1.5.7z"
+                    />
+                  </svg>
+                </div>
+                <label
+                  class="c13"
+                  for="recommendation_FORM_ID"
+                >
+                  Recommendation
+                </label>
+                <div
+                  class="c14 c15"
+                  placeholder="Recommendation"
+                >
+                  <input
+                    aria-disabled="false"
+                    aria-invalid="false"
+                    class="c16"
+                    id="recommendation_FORM_ID"
+                    name="Recommendation"
+                    value=""
+                  />
+                  <svg
+                    class="c17 c18"
+                    height="18"
+                    viewBox="0 0 24 24"
+                    width="18"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M9.4 20c-.5 0-.9-.2-1.3-.5l-5.8-5.1c-.4-.4-.5-1-.1-1.4l1.3-1.5c.4-.4 1-.5 1.4-.1l4 3.5c.2.1.4.1.6 0l9.2-10.5c.4-.4 1-.5 1.4-.1l1.5 1.3c.4.4.5 1 .1 1.4L10.9 19.3c-.4.5-.9.7-1.5.7z"
+                    />
+                  </svg>
+                </div>
+                <label
+                  class="c13"
+                  for="amazonLink_FORM_ID"
+                >
+                  Amazon link
+                </label>
+                <div
+                  class="c14 c15"
+                  placeholder="Amazon link"
+                >
+                  <input
+                    aria-disabled="false"
+                    aria-invalid="false"
+                    class="c16"
+                    id="amazonLink_FORM_ID"
+                    name="Amazon link"
+                    value=""
+                  />
+                  <svg
+                    class="c17 c18"
+                    height="18"
+                    viewBox="0 0 24 24"
+                    width="18"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M9.4 20c-.5 0-.9-.2-1.3-.5l-5.8-5.1c-.4-.4-.5-1-.1-1.4l1.3-1.5c.4-.4 1-.5 1.4-.1l4 3.5c.2.1.4.1.6 0l9.2-10.5c.4-.4 1-.5 1.4-.1l1.5 1.3c.4.4.5 1 .1 1.4L10.9 19.3c-.4.5-.9.7-1.5.7z"
+                    />
+                  </svg>
+                </div>
+                <label
+                  class="c13"
+                  for="audibleLink_FORM_ID"
+                >
+                  Audible link
+                </label>
+                <div
+                  class="c14 c15"
+                  placeholder="Audible link"
+                >
+                  <input
+                    aria-disabled="false"
+                    aria-invalid="false"
+                    class="c16"
+                    id="audibleLink_FORM_ID"
+                    name="Audible link"
+                    value=""
+                  />
+                  <svg
+                    class="c17 c18"
+                    height="18"
+                    viewBox="0 0 24 24"
+                    width="18"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M9.4 20c-.5 0-.9-.2-1.3-.5l-5.8-5.1c-.4-.4-.5-1-.1-1.4l1.3-1.5c.4-.4 1-.5 1.4-.1l4 3.5c.2.1.4.1.6 0l9.2-10.5c.4-.4 1-.5 1.4-.1l1.5 1.3c.4.4.5 1 .1 1.4L10.9 19.3c-.4.5-.9.7-1.5.7z"
+                    />
+                  </svg>
+                </div>
+                <label
+                  class="c13"
+                  for="status_FORM_ID"
+                >
+                  Status
+                </label>
+                <div
+                  class="c19"
+                  placeholder="Status"
+                >
+                  <div
+                    class="c14"
+                  >
+                    <select
+                      aria-disabled="false"
+                      aria-invalid="false"
+                      class="c16"
+                      id="status_FORM_ID"
+                      name="Status"
+                    >
+                      <option
+                        value="toRead"
+                      >
+                        Want to read
+                      </option>
+                      <option
+                        value="currentlyReading"
+                      >
+                        Currently reading
+                      </option>
+                      <option
+                        value="using"
+                      >
+                        Using
+                      </option>
+                    </select>
+                    <svg
+                      class="c17 c18"
+                      height="18"
+                      viewBox="0 0 24 24"
+                      width="18"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M9.4 20c-.5 0-.9-.2-1.3-.5l-5.8-5.1c-.4-.4-.5-1-.1-1.4l1.3-1.5c.4-.4 1-.5 1.4-.1l4 3.5c.2.1.4.1.6 0l9.2-10.5c.4-.4 1-.5 1.4-.1l1.5 1.3c.4.4.5 1 .1 1.4L10.9 19.3c-.4.5-.9.7-1.5.7z"
+                      />
+                    </svg>
+                  </div>
+                </div>
+                <button
+                  class="c20 c21"
+                  type="button"
+                >
+                  <span
+                    class="c22"
+                  >
+                    Create new book
+                  </span>
+                </button>
+              </div>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`<BookList /> should render correctly with book load error 1`] = `
+.c2 {
+  position: relative;
+  width: 100%;
+  border-radius: 0.25rem;
+  background-color: rgb(238,238,238);
+  overflow: hidden;
+  width: 100%;
+  height: 10rem;
+  margin-bottom: 1.2rem;
+}
+
+.c3 {
+  position: absolute;
+  top: 0;
+  width: 13rem;
+  height: 100vh;
+  background-image: linear-gradient( 90deg,rgb(238,238,238),rgb(245,245,245),rgb(238,238,238) );
+  background-repeat: no-repeat;
+  background-size: 12.5rem 100%;
+  -webkit-animation: eflhBg 3.5s ease-in-out infinite;
+  animation: eflhBg 3.5s ease-in-out infinite;
+}
+
+.c0 {
+  display: block;
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  overflow: hidden;
+  padding-bottom: 2rem;
+  max-width: 41.25rem;
+  padding-right: 1rem;
+  padding-left: 1rem;
+}
+
+.c1 {
+  margin-top: 2rem;
+}
+
+@media (prefers-color-scheme:dark) {
+  .c2 {
+    background-color: rgb(17,17,17);
+  }
+}
+
+@media (prefers-color-scheme:dark) {
+  .c3 {
+    background-image: linear-gradient( 90deg,rgb(17,17,17),rgb(50,50,50),rgb(17,17,17) );
+  }
+}
+
+@media (min-width:50.25rem) {
+  .c0 {
+    padding-right: 2rem;
+    padding-left: 2rem;
+  }
+}
+
+<div>
+  <div
+    class="c0 page-containerstyles__StyledPageContainer-sc-19l7k4-0 c1"
+    width="prose"
+  >
+    <div
+      class="c2"
+    >
+      <div
+        class="c3"
+        style="margin-left: -0px;"
+      />
+    </div>
+    <div
+      class="c2"
+    >
+      <div
+        class="c3"
+        style="margin-left: -0px;"
+      />
+    </div>
+    <div
+      class="c2"
+    >
+      <div
+        class="c3"
+        style="margin-left: -0px;"
+      />
+    </div>
+    <div
+      class="c2"
+    >
+      <div
+        class="c3"
+        style="margin-left: -0px;"
+      />
+    </div>
+    <div
+      class="c2"
+    >
+      <div
+        class="c3"
+        style="margin-left: -0px;"
+      />
+    </div>
+  </div>
+</div>
+`;
+
+exports[`<BookList /> should render correctly with books 1`] = `
+.c3 {
+  margin: 0;
+  font-size: 2.4rem;
+  font-weight: bold;
+}
+
+.c8 {
+  margin: 0;
+  font-size: 1.2rem;
+}
+
+.c10 {
+  margin: 0;
+  font-size: 1rem;
+}
+
+.c0 {
+  display: block;
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  overflow: hidden;
+  padding-bottom: 2rem;
+  max-width: 41.25rem;
+  padding-right: 1rem;
+  padding-left: 1rem;
+}
+
+.c1 {
+  margin-top: 2rem;
+}
+
+.c5 {
+  padding-top: 0;
+  opacity: 1;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+.c2 {
+  -webkit-animation: eTsntO 0.4s ease-in-out;
+  animation: eTsntO 0.4s ease-in-out;
+}
+
+.c6 {
+  display: grid;
+  grid-template-columns: 4rem 1fr;
+  min-height: 4rem;
+  gap: 0.375rem 1rem;
+  opacity: 0.6;
+}
+
+.c13 {
+  display: grid;
+  grid-template-columns: 4rem 1fr;
+  min-height: 4rem;
+  gap: 0.375rem 1rem;
+}
+
+.c9 {
+  grid-row: 1;
+  grid-column: 2;
+}
+
+.c11 {
+  grid-row: 2;
+  grid-column: 2;
+}
+
+.c12 {
+  grid-row: 3;
+  grid-column: 2;
+}
+
+.c14 {
+  color: orange;
+  grid-row: 3;
+  grid-column: 2;
+}
+
+.c7 {
+  width: 100%;
+  margin-top: 2rem;
+  box-sizing: border-box;
+}
+
+.c4 {
+  margin: 2.3rem 0 0 0;
+}
+
+@media (min-width:50.25rem) {
+  .c0 {
+    padding-right: 2rem;
+    padding-left: 2rem;
+  }
+}
+
+@media (min-width:32.25rem) {
+  .c6 {
+    grid-template-columns: 4rem 1fr 10rem;
+    grid-template-rows: 3;
+  }
+}
+
+@media (min-width:50.25rem) {
+  .c6 {
+    gap: calc(2 * 0.375rem) 1rem;
+    grid-template-columns: 5rem 1fr 10rem;
+  }
+}
+
+@media (min-width:32.25rem) {
+  .c13 {
+    grid-template-columns: 4rem 1fr 10rem;
+    grid-template-rows: 3;
+  }
+}
+
+@media (min-width:50.25rem) {
+  .c13 {
+    gap: calc(2 * 0.375rem) 1rem;
+    grid-template-columns: 5rem 1fr 10rem;
+  }
+}
+
+@media (min-width:50.25rem) {
+  .c7 {
+    margin-top: calc(1rem + 2rem);
+  }
+}
+
+<div>
+  <div
+    class="c0 page-containerstyles__StyledPageContainer-sc-19l7k4-0 c1"
+    width="prose"
+  >
+    <div
+      class="c2"
+    >
+      <h1
+        class="c3 c4"
+      >
+        My reading list
+      </h1>
+    </div>
+    <div>
+      <style>
+        .js .animated-content__wrapper--hidden {
+  padding-top: 4rem;
+  opacity: 0.01;
+}
+      </style>
+      <div
+        class="c5 animated-content__wrapper--hidden"
+      >
+        <div>
+          <div>
+            <div
+              class="c6 c7"
+              id="asdfg"
+            >
+              <h1
+                class="c8 c9"
+              >
+                Book 1 🎉
+              </h1>
+              <span
+                class="c10 c11"
+              >
+                By 
+                Author 1
+              </span>
+              <span
+                class="c10 c12"
+              >
+                Want to read
+              </span>
+            </div>
+          </div>
+          <div>
+            <div
+              class="c13 c7"
+              id="asdfh"
+            >
+              <h1
+                class="c8 c9"
+              >
+                Book 2
+              </h1>
+              <span
+                class="c10 c11"
+              >
+                By 
+                Author 2
+              </span>
+              <span
+                class="c10 c14"
+                color="orange"
+              >
+                Reading now
+              </span>
+            </div>
+          </div>
+          <div>
+            <div
+              class="c13 c7"
+              id="asdfi"
+            >
+              <h1
+                class="c8 c9"
+              >
+                Book 3 (DELETED)
+              </h1>
+              <span
+                class="c10 c11"
+              >
+                By 
+                Author 3
+              </span>
+              <span
+                class="c10 c14"
+                color="orange"
+              >
+                Reading now
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`<BookList /> should render correctly with initial state 1`] = `
+.c2 {
+  position: relative;
+  width: 100%;
+  border-radius: 0.25rem;
+  background-color: rgb(238,238,238);
+  overflow: hidden;
+  width: 100%;
+  height: 10rem;
+  margin-bottom: 1.2rem;
+}
+
+.c3 {
+  position: absolute;
+  top: 0;
+  width: 13rem;
+  height: 100vh;
+  background-image: linear-gradient( 90deg,rgb(238,238,238),rgb(245,245,245),rgb(238,238,238) );
+  background-repeat: no-repeat;
+  background-size: 12.5rem 100%;
+  -webkit-animation: eflhBg 3.5s ease-in-out infinite;
+  animation: eflhBg 3.5s ease-in-out infinite;
+}
+
+.c0 {
+  display: block;
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  overflow: hidden;
+  padding-bottom: 2rem;
+  max-width: 41.25rem;
+  padding-right: 1rem;
+  padding-left: 1rem;
+}
+
+.c1 {
+  margin-top: 2rem;
+}
+
+@media (prefers-color-scheme:dark) {
+  .c2 {
+    background-color: rgb(17,17,17);
+  }
+}
+
+@media (prefers-color-scheme:dark) {
+  .c3 {
+    background-image: linear-gradient( 90deg,rgb(17,17,17),rgb(50,50,50),rgb(17,17,17) );
+  }
+}
+
+@media (min-width:50.25rem) {
+  .c0 {
+    padding-right: 2rem;
+    padding-left: 2rem;
+  }
+}
+
+<div>
+  <div
+    class="c0 page-containerstyles__StyledPageContainer-sc-19l7k4-0 c1"
+    width="prose"
+  >
+    <div
+      class="c2"
+    >
+      <div
+        class="c3"
+        style="margin-left: -0px;"
+      />
+    </div>
+    <div
+      class="c2"
+    >
+      <div
+        class="c3"
+        style="margin-left: -0px;"
+      />
+    </div>
+    <div
+      class="c2"
+    >
+      <div
+        class="c3"
+        style="margin-left: -0px;"
+      />
+    </div>
+    <div
+      class="c2"
+    >
+      <div
+        class="c3"
+        style="margin-left: -0px;"
+      />
+    </div>
+    <div
+      class="c2"
+    >
+      <div
+        class="c3"
+        style="margin-left: -0px;"
+      />
+    </div>
+  </div>
+</div>
+`;
+
+exports[`<BookList /> should render correctly with ssrBooks 1`] = `
+.c3 {
+  margin: 0;
+  font-size: 2.4rem;
+  font-weight: bold;
+}
+
+.c8 {
+  margin: 0;
+  font-size: 1.2rem;
+}
+
+.c10 {
+  margin: 0;
+  font-size: 1rem;
+}
+
+.c0 {
+  display: block;
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  overflow: hidden;
+  padding-bottom: 2rem;
+  max-width: 41.25rem;
+  padding-right: 1rem;
+  padding-left: 1rem;
+}
+
+.c1 {
+  margin-top: 2rem;
+}
+
+.c5 {
+  padding-top: 0;
+  opacity: 1;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+.c2 {
+  -webkit-animation: eTsntO 0.4s ease-in-out;
+  animation: eTsntO 0.4s ease-in-out;
+}
+
+.c6 {
+  display: grid;
+  grid-template-columns: 4rem 1fr;
+  min-height: 4rem;
+  gap: 0.375rem 1rem;
+  opacity: 0.6;
+}
+
+.c13 {
+  display: grid;
+  grid-template-columns: 4rem 1fr;
+  min-height: 4rem;
+  gap: 0.375rem 1rem;
+}
+
+.c9 {
+  grid-row: 1;
+  grid-column: 2;
+}
+
+.c11 {
+  grid-row: 2;
+  grid-column: 2;
+}
+
+.c12 {
+  grid-row: 3;
+  grid-column: 2;
+}
+
+.c14 {
+  color: orange;
+  grid-row: 3;
+  grid-column: 2;
+}
+
+.c7 {
+  width: 100%;
+  margin-top: 2rem;
+  box-sizing: border-box;
+}
+
+.c4 {
+  margin: 2.3rem 0 0 0;
+}
+
+@media (min-width:50.25rem) {
+  .c0 {
+    padding-right: 2rem;
+    padding-left: 2rem;
+  }
+}
+
+@media (min-width:32.25rem) {
+  .c6 {
+    grid-template-columns: 4rem 1fr 10rem;
+    grid-template-rows: 3;
+  }
+}
+
+@media (min-width:50.25rem) {
+  .c6 {
+    gap: calc(2 * 0.375rem) 1rem;
+    grid-template-columns: 5rem 1fr 10rem;
+  }
+}
+
+@media (min-width:32.25rem) {
+  .c13 {
+    grid-template-columns: 4rem 1fr 10rem;
+    grid-template-rows: 3;
+  }
+}
+
+@media (min-width:50.25rem) {
+  .c13 {
+    gap: calc(2 * 0.375rem) 1rem;
+    grid-template-columns: 5rem 1fr 10rem;
+  }
+}
+
+@media (min-width:50.25rem) {
+  .c7 {
+    margin-top: calc(1rem + 2rem);
+  }
+}
+
+<div>
+  <div
+    class="c0 page-containerstyles__StyledPageContainer-sc-19l7k4-0 c1"
+    width="prose"
+  >
+    <div
+      class="c2"
+    >
+      <h1
+        class="c3 c4"
+      >
+        My reading list
+      </h1>
+    </div>
+    <div>
+      <style>
+        .js .animated-content__wrapper--hidden {
+  padding-top: 4rem;
+  opacity: 0.01;
+}
+      </style>
+      <div
+        class="c5 animated-content__wrapper--hidden"
+      >
+        <div>
+          <div>
+            <div
+              class="c6 c7"
+              id="asdfg"
+            >
+              <h1
+                class="c8 c9"
+              >
+                Book 1 🎉
+              </h1>
+              <span
+                class="c10 c11"
+              >
+                By 
+                Author 1
+              </span>
+              <span
+                class="c10 c12"
+              >
+                Want to read
+              </span>
+            </div>
+          </div>
+          <div>
+            <div
+              class="c13 c7"
+              id="asdfh"
+            >
+              <h1
+                class="c8 c9"
+              >
+                Book 2
+              </h1>
+              <span
+                class="c10 c11"
+              >
+                By 
+                Author 2
+              </span>
+              <span
+                class="c10 c14"
+                color="orange"
+              >
+                Reading now
+              </span>
+            </div>
+          </div>
+          <div>
+            <div
+              class="c13 c7"
+              id="asdfi"
+            >
+              <h1
+                class="c8 c9"
+              >
+                Book 3 (DELETED)
+              </h1>
+              <span
+                class="c10 c11"
+              >
+                By 
+                Author 3
+              </span>
+              <span
+                class="c10 c14"
+                color="orange"
+              >
+                Reading now
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
