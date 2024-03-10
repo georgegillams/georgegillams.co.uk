@@ -8,19 +8,13 @@ import Subsection from '@george-gillams/components/subsection';
 import Paragraph from '@george-gillams/components/paragraph';
 
 const BooksList = props => {
-  const { admin, books, createBook, updateBook, deleteBook, linkPrefix, ...rest } = props;
+  const { admin, books, createBook, updateBook, deleteBook, ...rest } = props;
 
   return (
     <div {...rest}>
       {books.map(book => (
         <div key={book.id}>
-          <StyledBookCard
-            key={`card_${book.id}`}
-            id={book.id}
-            book={book}
-            linkPrefix={linkPrefix}
-            withControls={!!deleteBook}
-          />
+          <StyledBookCard key={`card_${book.id}`} id={book.id} book={book} withControls={!!deleteBook} />
           {updateBook && !book.deleted && <BookEditForm book={book} updateBook={updateBook} submitLabel="Save" />}
           {deleteBook && (
             <StyledButton
@@ -48,7 +42,6 @@ const BooksList = props => {
 
 BooksList.propTypes = {
   books: PropTypes.arrayOf(PropTypes.object).isRequired,
-  linkPrefix: PropTypes.string.isRequired,
   admin: PropTypes.bool,
   createBook: PropTypes.func,
   updateBook: PropTypes.func,

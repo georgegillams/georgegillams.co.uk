@@ -1,114 +1,111 @@
 import { put, takeLatest } from 'redux-saga/effects';
 
-import { loadBlogs, deleteBlog } from '../actions';
+import { loadBooks, deleteBook } from '../actions';
 
-import saga, { doLoadBlogs, doDeleteBlog } from '../saga';
+import saga, { doLoadBooks, doDeleteBook } from '../saga';
 
-describe('BlogList saga', () => {
+describe('BookList saga', () => {
   let mainSaga;
 
   beforeEach(() => {
     mainSaga = saga();
   });
 
-  it('Should load blogs on loadBlogs TRIGGER', () => {
+  it('Should load books on loadBooks TRIGGER', () => {
     const takeLatestDescriptor = mainSaga.next().value;
-    expect(takeLatestDescriptor).toEqual(takeLatest(loadBlogs.TRIGGER, doLoadBlogs));
+    expect(takeLatestDescriptor).toEqual(takeLatest(loadBooks.TRIGGER, doLoadBooks));
   });
 
-  it('Should load blogs on deleteBlog TRIGGER', () => {
-    mainSaga.next();
-    const takeLatestDescriptor = mainSaga.next().value;
-    expect(takeLatestDescriptor).toEqual(takeLatest(deleteBlog.TRIGGER, doDeleteBlog));
-  });
-
-  describe('loadBlogs actions', () => {
-    let loadBlogsGenerator;
+  describe('loadBooks actions', () => {
+    let loadBooksGenerator;
 
     const response = {
-      blogs: 'list of blogs',
+      books: 'list of books',
       status: 200,
     };
 
     beforeEach(() => {
-      loadBlogsGenerator = doLoadBlogs();
+      loadBooksGenerator = doLoadBooks();
 
-      const selectDescriptor = loadBlogsGenerator.next().value;
+      const selectDescriptor = loadBooksGenerator.next().value;
       expect(selectDescriptor).toMatchSnapshot();
     });
 
-    it('Should call loadBlogs.success on successful API call', () => {
-      loadBlogsGenerator.next();
-      const putSuccess = loadBlogsGenerator.next(response).value;
-      loadBlogsGenerator.next();
+    it('Should call loadBooks.success on successful API call', () => {
+      loadBooksGenerator.next({ highlightedBook: null });
+      loadBooksGenerator.next();
+      const putSuccess = loadBooksGenerator.next(response).value;
+      loadBooksGenerator.next();
 
-      expect(putSuccess).toEqual(put(loadBlogs.success(response)));
+      expect(putSuccess).toEqual(put(loadBooks.success(response)));
     });
 
-    it('Should call loadBlogs.failure if API returns error', () => {
+    it('Should call loadBooks.failure if API returns error', () => {
       const response = {
         error: 'error_type',
         errorMessage: 'Error message',
         status: 500,
       };
-      loadBlogsGenerator.next();
-      const putSuccess = loadBlogsGenerator.next(response).value;
-      loadBlogsGenerator.next();
+      loadBooksGenerator.next({ highlightedBook: null });
+      loadBooksGenerator.next();
+      const putSuccess = loadBooksGenerator.next(response).value;
+      loadBooksGenerator.next();
 
-      expect(putSuccess).toEqual(put(loadBlogs.failure(response)));
+      expect(putSuccess).toEqual(put(loadBooks.failure(response)));
     });
 
-    it('Should call loadBlogs.failure if an exception occurs', () => {
+    it('Should call loadBooks.failure if an exception occurs', () => {
       const response = new Error('Some error');
-      const putFailure = loadBlogsGenerator.throw(response).value;
+      loadBooksGenerator.next({ highlightedBook: null });
+      const putFailure = loadBooksGenerator.throw(response).value;
 
-      expect(putFailure).toEqual(put(loadBlogs.failure(response)));
+      expect(putFailure).toEqual(put(loadBooks.failure(response)));
     });
   });
 
-  describe('deleteBlog actions', () => {
-    let deleteBlogGenerator;
+  describe('deleteBook actions', () => {
+    let deleteBookGenerator;
 
     const response = {
       status: 200,
     };
 
     beforeEach(() => {
-      deleteBlogGenerator = doDeleteBlog();
+      deleteBookGenerator = doDeleteBook();
 
-      const selectDescriptor = deleteBlogGenerator.next().value;
+      const selectDescriptor = deleteBookGenerator.next().value;
       expect(selectDescriptor).toMatchSnapshot();
     });
 
-    it('Should call deleteBlog.success on successful API call', () => {
-      deleteBlogGenerator.next({ blogToDelete: 'some-blog-id' });
-      deleteBlogGenerator.next();
-      const putSuccess = deleteBlogGenerator.next(response).value;
-      deleteBlogGenerator.next();
+    it('Should call deleteBook.success on successful API call', () => {
+      deleteBookGenerator.next({ bookToDelete: 'some-book-id' });
+      deleteBookGenerator.next();
+      const putSuccess = deleteBookGenerator.next(response).value;
+      deleteBookGenerator.next();
 
-      expect(putSuccess).toEqual(put(deleteBlog.success()));
+      expect(putSuccess).toEqual(put(deleteBook.success()));
     });
 
-    it('Should call deleteBlog.failure if API returns error', () => {
+    it('Should call deleteBook.failure if API returns error', () => {
       const response = {
         error: 'error_type',
         errorMessage: 'Error message',
         status: 500,
       };
-      deleteBlogGenerator.next({ blogToDelete: 'some-blog-id' });
-      deleteBlogGenerator.next();
-      const putSuccess = deleteBlogGenerator.next(response).value;
-      deleteBlogGenerator.next();
+      deleteBookGenerator.next({ bookToDelete: 'some-book-id' });
+      deleteBookGenerator.next();
+      const putSuccess = deleteBookGenerator.next(response).value;
+      deleteBookGenerator.next();
 
-      expect(putSuccess).toEqual(put(deleteBlog.failure(response)));
+      expect(putSuccess).toEqual(put(deleteBook.failure(response)));
     });
 
-    it('Should call deleteBlog.failure if an exception occurs', () => {
+    it('Should call deleteBook.failure if an exception occurs', () => {
       const response = new Error('Some error');
-      deleteBlogGenerator.next({ blogToDelete: 'some-blog-id' });
-      const putFailure = deleteBlogGenerator.throw(response).value;
+      deleteBookGenerator.next({ bookToDelete: 'some-book-id' });
+      const putFailure = deleteBookGenerator.throw(response).value;
 
-      expect(putFailure).toEqual(put(deleteBlog.failure(response)));
+      expect(putFailure).toEqual(put(deleteBook.failure(response)));
     });
   });
 });

@@ -414,6 +414,16 @@ exports[`<Layout /> Should render correctly 1`] = `
             </a>
             <a
               class="c14"
+              href="/reading-list"
+            >
+              <span
+                class="c15"
+              >
+                Reading list
+              </span>
+            </a>
+            <a
+              class="c14"
               href="/medals"
             >
               <span
@@ -904,6 +914,16 @@ exports[`<Layout /> Should render correctly with spread props 1`] = `
                 class="c15"
               >
                 Photography
+              </span>
+            </a>
+            <a
+              class="c14"
+              href="/reading-list"
+            >
+              <span
+                class="c15"
+              >
+                Reading list
               </span>
             </a>
             <a

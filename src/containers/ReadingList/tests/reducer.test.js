@@ -1,8 +1,8 @@
-import blogListReducer from '../reducer';
-import { loadBlogs, deleteBlog } from '../actions';
+import bookListReducer from '../reducer';
+import { loadBooks, deleteBook } from '../actions';
 import { initialState } from '../reducer';
 
-describe('blogListReducer', () => {
+describe('bookListReducer', () => {
   let state;
 
   beforeEach(() => {
@@ -12,63 +12,63 @@ describe('blogListReducer', () => {
   });
 
   it('should return the initial state', () => {
-    expect(blogListReducer(undefined, {})).toEqual(state);
+    expect(bookListReducer(undefined, {})).toEqual(state);
   });
 
-  describe('loadBlogs actions', () => {
-    it('should handle the action loadBlogs.REQUEST correctly', () => {
+  describe('loadBooks actions', () => {
+    it('should handle the action loadBooks.REQUEST correctly', () => {
       const expectResult = {
         ...state,
-        loadingBlogs: true,
+        loadingBooks: true,
       };
 
-      expect(blogListReducer(state, loadBlogs.request())).toEqual(expectResult);
+      expect(bookListReducer(state, loadBooks.request())).toEqual(expectResult);
     });
 
-    it('should return the action loadBlogs.SUCCESS correctly', () => {
+    it('should return the action loadBooks.SUCCESS correctly', () => {
       const expectResult = {
         ...state,
-        blogs: 'Some blogs',
+        books: 'Some books',
       };
 
-      expect(blogListReducer(state, loadBlogs.success({ blogs: 'Some blogs' }))).toEqual(expectResult);
+      expect(bookListReducer(state, loadBooks.success({ books: 'Some books' }))).toEqual(expectResult);
     });
 
-    it('should return the action loadBlogs.FAILURE correctly', () => {
+    it('should return the action loadBooks.FAILURE correctly', () => {
       const expectResult = {
         ...state,
-        loadBlogsError: 'some error',
+        loadBooksError: 'some error',
       };
 
-      expect(blogListReducer(state, loadBlogs.failure('some error'))).toEqual(expectResult);
+      expect(bookListReducer(state, loadBooks.failure('some error'))).toEqual(expectResult);
     });
   });
 
-  describe('deleteBlog actions', () => {
-    it('should handle the action deleteBlog.REQUEST correctly', () => {
+  describe('deleteBook actions', () => {
+    it('should handle the action deleteBook.REQUEST correctly', () => {
       const expectResult = {
         ...state,
-        deletingBlog: true,
+        deletingBook: true,
       };
 
-      expect(blogListReducer(state, deleteBlog.request())).toEqual(expectResult);
+      expect(bookListReducer(state, deleteBook.request())).toEqual(expectResult);
     });
 
-    it('should return the action deleteBlog.SUCCESS correctly', () => {
+    it('should return the action deleteBook.SUCCESS correctly', () => {
       const expectResult = {
         ...state,
       };
 
-      expect(blogListReducer(state, deleteBlog.success())).toEqual(expectResult);
+      expect(bookListReducer(state, deleteBook.success())).toEqual(expectResult);
     });
 
-    it('should return the action deleteBlog.FAILURE correctly', () => {
+    it('should return the action deleteBook.FAILURE correctly', () => {
       const expectResult = {
         ...state,
-        deleteBlogError: 'some error',
+        deleteBookError: 'some error',
       };
 
-      expect(blogListReducer(state, deleteBlog.failure('some error'))).toEqual(expectResult);
+      expect(bookListReducer(state, deleteBook.failure('some error'))).toEqual(expectResult);
     });
   });
 });

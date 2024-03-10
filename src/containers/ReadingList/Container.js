@@ -21,7 +21,7 @@ const ReadingList = props => {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
-  let booksToRender = readingListState.books || ssrBooks;
+  let booksToRender = readingListState?.books || ssrBooks;
 
   const admin = authenticatorState.user && authenticatorState.user.admin;
 

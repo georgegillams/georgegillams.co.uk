@@ -1,87 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<BlogList /> should render correctly - index 1`] = `
-.c5 {
-  margin: 0;
-  font-size: 1.5rem;
-  font-weight: bold;
-}
-
-.c9 {
-  margin: 0;
-}
-
-.c11 {
-  width: 1.25rem;
-  height: 1.25rem;
-}
-
-.c8 {
-  display: inline-block;
-  border-radius: 0.25rem;
-  font-weight: bold;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  position: relative;
-  color: #9932cc;
-  fill: #9932cc;
-}
-
-.c8:focus-within,
-.c8:focus {
-  position: relative;
-  outline: none !important;
-}
-
-.c8:focus-within::after,
-.c8:focus::after {
-  position: absolute;
-  top: -0.35rem;
-  right: -0.35rem;
-  bottom: -0.35rem;
-  left: -0.35rem;
-  content: '';
-  display: block;
-  border: solid #007dfa3C 0.2rem;
-  border-radius: 0.5rem;
-  pointer-events: none;
-}
-
-.c8:hover {
-  color: #44aeff;
-  fill: #44aeff;
-}
-
-.c10 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  width: 0.4rem;
-  height: 1rem;
-  margin-left: 0.55rem;
-}
-
-.c12 {
-  position: absolute;
-  width: 1rem;
-  height: 1rem;
-  margin-top: 0.12rem;
-  margin-left: -0.45rem;
-}
-
-.c3 {
-  width: 100%;
-  color: #1e1e1e;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-}
-
-.c6 {
-  margin: 2.13rem 0 0 0;
-}
-
-.c0 {
+exports[`<BookList /> should render correctly - index 1`] = `
+.c2 {
   position: relative;
   width: 100%;
   border-radius: 0.25rem;
@@ -92,320 +12,6 @@ exports[`<BlogList /> should render correctly - index 1`] = `
   margin-bottom: 1.2rem;
 }
 
-.c1 {
-  position: absolute;
-  top: 0;
-  width: 13rem;
-  height: 100vh;
-  background-image: linear-gradient( 90deg,rgb(238,238,238),rgb(245,245,245),rgb(238,238,238) );
-  background-repeat: no-repeat;
-  background-size: 12.5rem 100%;
-  -webkit-animation: eflhBg 3.5s ease-in-out infinite;
-  animation: eflhBg 3.5s ease-in-out infinite;
-}
-
-.c7 {
-  display: inline-block;
-  margin-bottom: 0;
-  padding-bottom: 0;
-  line-height: 1.5;
-  margin-top: 2rem;
-}
-
-.c7:first-of-type {
-  margin-top: 0.86rem;
-}
-
-.c2 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  width: 100%;
-  margin-top: 2rem;
-  margin-left: 0;
-  padding-top: 1rem;
-  padding-bottom: 2rem;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  background-color: #fbfbfb;
-}
-
-.c4 {
-  width: 100%;
-  padding-right: 1.875rem;
-  padding-left: 1.865rem;
-  text-align: center;
-}
-
-@media (prefers-color-scheme:dark) {
-  .c8:focus-within::after,
-  .c8:focus::after {
-    border-color: #007dfa3C;
-  }
-}
-
-@media (prefers-color-scheme:dark) {
-  .c8 {
-    color: #da70d6;
-    fill: #da70d6;
-  }
-
-  .c8:hover {
-    color: #44aeff;
-    fill: #44aeff;
-  }
-}
-
-@media (prefers-color-scheme:dark) {
-  .c3 {
-    color: #ffffff;
-  }
-}
-
-@media (prefers-color-scheme:dark) {
-  .c0 {
-    background-color: rgb(17,17,17);
-  }
-}
-
-@media (prefers-color-scheme:dark) {
-  .c1 {
-    background-image: linear-gradient( 90deg,rgb(17,17,17),rgb(50,50,50),rgb(17,17,17) );
-  }
-}
-
-@media (prefers-color-scheme:dark) {
-  .c2 {
-    background-color: #121313;
-  }
-}
-
-<div>
-  <div
-    class="page-containerstyles__StyledPageContainer-sc-19l7k4-0 "
-    width="default"
-  >
-    <div
-      class="c0"
-    >
-      <div
-        class="c1"
-        style="margin-left: -0px;"
-      />
-    </div>
-    <div
-      class="c0"
-    >
-      <div
-        class="c1"
-        style="margin-left: -0px;"
-      />
-    </div>
-    <div
-      class="c0"
-    >
-      <div
-        class="c1"
-        style="margin-left: -0px;"
-      />
-    </div>
-    <div
-      class="c0"
-    >
-      <div
-        class="c1"
-        style="margin-left: -0px;"
-      />
-    </div>
-    <div
-      class="c0"
-    >
-      <div
-        class="c1"
-        style="margin-left: -0px;"
-      />
-    </div>
-  </div>
-  <div>
-    <style>
-      .js .animated-content__wrapper--hidden {
-  opacity: 0.01;
-}
-    </style>
-    <div
-      class="animated-content__wrapper--hidden"
-    >
-      <div
-        class="c2"
-      >
-        <div
-          class="c3 c4"
-        >
-          <h1
-            class="c5 c6"
-            id="copyright"
-          >
-            Copyright
-          </h1>
-          <span
-            class="c7"
-          >
-            Most of my photos are licensed under
-             
-            <a
-              aria-label="Creative Commons BY-SA 3.0 (opens in a new tab)"
-              class="c8"
-              href="https://creativecommons.org/licenses/by-sa/3.0/"
-              rel="noopener noreferrer"
-              target="_blank"
-            >
-              <span
-                class="c9"
-              >
-                Creative Commons BY-SA 3.0
-              </span>
-              <div
-                class="c10"
-              >
-                <svg
-                  class="c11 c12"
-                  height="18"
-                  viewBox="0 0 24 24"
-                  width="18"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M12.5 11.3c.4.4 1 .4 1.4 0L19 6.2V9c0 .6.4 1 1 1s1-.4 1-1V4c0-.6-.4-1-1-1h-5c-.6 0-1 .4-1 1s.4 1 1 1h2.4l-4.9 4.9c-.4.4-.4 1 0 1.4zM19 19c0 1.1-.9 2-2 2H5c-1.1 0-2-.9-2-2V7c0-1.1.9-2 2-2h7v2H5v12h12v-7h2"
-                  />
-                </svg>
-              </div>
-            </a>
-            .
-            <br />
-            If you are unsure about your right to use them please 
-            <a
-              class="c8"
-              href="/contact"
-            >
-              <span
-                class="c9"
-              >
-                contact me
-              </span>
-            </a>
-            .
-          </span>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-`;
-
-exports[`<BlogList /> should render correctly authenticated with blogs 1`] = `
-.c0 {
-  margin: 0;
-  font-size: 2.2rem;
-  font-weight: bold;
-}
-
-.c7 {
-  margin: 0;
-  font-size: 1.5rem;
-  font-weight: bold;
-}
-
-.c1 {
-  margin: 0;
-  font-size: 1.5rem;
-  font-weight: bold;
-}
-
-.c11 {
-  margin: 0;
-}
-
-.c13 {
-  width: 1.25rem;
-  height: 1.25rem;
-}
-
-.c10 {
-  display: inline-block;
-  border-radius: 0.25rem;
-  font-weight: bold;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  position: relative;
-  color: #9932cc;
-  fill: #9932cc;
-}
-
-.c10:focus-within,
-.c10:focus {
-  position: relative;
-  outline: none !important;
-}
-
-.c10:focus-within::after,
-.c10:focus::after {
-  position: absolute;
-  top: -0.35rem;
-  right: -0.35rem;
-  bottom: -0.35rem;
-  left: -0.35rem;
-  content: '';
-  display: block;
-  border: solid #007dfa3C 0.2rem;
-  border-radius: 0.5rem;
-  pointer-events: none;
-}
-
-.c10:hover {
-  color: #44aeff;
-  fill: #44aeff;
-}
-
-.c12 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  width: 0.4rem;
-  height: 1rem;
-  margin-left: 0.55rem;
-}
-
-.c14 {
-  position: absolute;
-  width: 1rem;
-  height: 1rem;
-  margin-top: 0.12rem;
-  margin-left: -0.45rem;
-}
-
-.c5 {
-  width: 100%;
-  color: #1e1e1e;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-}
-
-.c8 {
-  margin: 2.13rem 0 0 0;
-}
-
-.c2 {
-  position: relative;
-  width: 100%;
-  border-radius: 0.25rem;
-  background-color: rgb(238,238,238);
-  overflow: hidden;
-}
-
 .c3 {
   position: absolute;
   top: 0;
@@ -418,65 +24,20 @@ exports[`<BlogList /> should render correctly authenticated with blogs 1`] = `
   animation: eflhBg 3.5s ease-in-out infinite;
 }
 
-.c9 {
-  display: inline-block;
-  margin-bottom: 0;
-  padding-bottom: 0;
-  line-height: 1.5;
-  margin-top: 2rem;
-}
-
-.c9:first-of-type {
-  margin-top: 0.86rem;
-}
-
-.c4 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
+.c0 {
+  display: block;
   width: 100%;
-  margin-top: 2rem;
-  margin-left: 0;
-  padding-top: 1rem;
+  margin-right: auto;
+  margin-left: auto;
+  overflow: hidden;
   padding-bottom: 2rem;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  background-color: #fbfbfb;
+  max-width: 41.25rem;
+  padding-right: 1rem;
+  padding-left: 1rem;
 }
 
-.c6 {
-  width: 100%;
-  padding-right: 1.875rem;
-  padding-left: 1.865rem;
-  text-align: center;
-}
-
-@media (prefers-color-scheme:dark) {
-  .c10:focus-within::after,
-  .c10:focus::after {
-    border-color: #007dfa3C;
-  }
-}
-
-@media (prefers-color-scheme:dark) {
-  .c10 {
-    color: #da70d6;
-    fill: #da70d6;
-  }
-
-  .c10:hover {
-    color: #44aeff;
-    fill: #44aeff;
-  }
-}
-
-@media (prefers-color-scheme:dark) {
-  .c5 {
-    color: #ffffff;
-  }
+.c1 {
+  margin-top: 2rem;
 }
 
 @media (prefers-color-scheme:dark) {
@@ -491,877 +52,155 @@ exports[`<BlogList /> should render correctly authenticated with blogs 1`] = `
   }
 }
 
-@media (prefers-color-scheme:dark) {
-  .c4 {
-    background-color: #121313;
-  }
-}
-
-<div>
-  <div
-    class="page-containerstyles__StyledPageContainer-sc-19l7k4-0 "
-    width="default"
-  >
-    <div>
-      <style>
-        .js .animated-content__wrapper--hidden {
-  padding-top: 4rem;
-  opacity: 0.01;
-}
-      </style>
-      <div
-        class="animated-content__wrapper--hidden"
-      >
-        <div>
-          <a
-            aria-label="Add a new blog"
-            class=""
-            href="/create-blog"
-          >
-            <div
-              class=""
-            >
-              <div
-                class=""
-              />
-              <div
-                class=""
-              >
-                <div
-                  aria-hidden="true"
-                  class=""
-                >
-                  <div
-                    class="date container"
-                  />
-                  <div
-                    class=""
-                  >
-                    <h1
-                      class="c0"
-                    >
-                      Add a new blog
-                    </h1>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </a>
-          <div>
-            <a
-              aria-label="Blog 1 , NaN Invalid Date"
-              class=""
-              href="/blog/asdfg"
-            >
-              <div
-                class=""
-              >
-                <div
-                  class=""
-                />
-                <div
-                  class=""
-                >
-                  <div
-                    aria-hidden="true"
-                    class=""
-                  >
-                    <div
-                      class="date container"
-                    >
-                      <div
-                        class=""
-                      >
-                        <span
-                          class="c1"
-                        >
-                          NaN Invalid Date
-                        </span>
-                      </div>
-                      <div
-                        class=""
-                      >
-                        <span
-                          class="c1"
-                        >
-                          NaN
-                        </span>
-                      </div>
-                      <div
-                        class=""
-                      >
-                        <span
-                          class="c1"
-                        >
-                          Invalid Date
-                        </span>
-                      </div>
-                    </div>
-                    <div
-                      class=""
-                    >
-                      <h1
-                        class="c0"
-                      >
-                        Blog 1 
-                      </h1>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </a>
-            <button
-              class=""
-              type="button"
-            >
-              <span
-                class=""
-              >
-                Delete blog
-              </span>
-            </button>
-          </div>
-          <div>
-            <a
-              aria-label="St Ives  2018, 23to30 Dec, Tagged travel"
-              class=""
-              href="/blog/zxywvuts"
-            >
-              <div
-                class=""
-              >
-                <div
-                  class=""
-                />
-                <div
-                  class=""
-                >
-                  <div
-                    aria-hidden="true"
-                    class=""
-                  >
-                    <div
-                      class="date container"
-                    >
-                      <div
-                        class=""
-                      >
-                        <span
-                          class="c1"
-                        >
-                          23-30 Dec
-                        </span>
-                      </div>
-                      <div
-                        class=""
-                      >
-                        <span
-                          class="c1"
-                        >
-                          23-30
-                        </span>
-                      </div>
-                      <div
-                        class=""
-                      >
-                        <span
-                          class="c1"
-                        >
-                          Dec
-                        </span>
-                      </div>
-                    </div>
-                    <div
-                      class=""
-                    >
-                      <h1
-                        class="c0"
-                      >
-                        St Ives  2018
-                      </h1>
-                      <div
-                        class=""
-                      >
-                        <div
-                          class=""
-                        >
-                          <span
-                            class=""
-                            type="travel"
-                          >
-                            Travel
-                          </span>
-                        </div>
-                      </div>
-                    </div>
-                    <div
-                      class=""
-                    >
-                      <div
-                        class=""
-                      >
-                        <style>
-                          
-          .js .gg-image__img--hide-js {display: none;}
-          .no-js .gg-image__img--hide-no-js {display: none;}
-        
-                        </style>
-                        <div
-                          class=""
-                          style="padding-bottom: 100%;"
-                        >
-                          <div
-                            class=""
-                          >
-                            <div
-                              class="c2 "
-                            >
-                              <div
-                                class="c3"
-                                style="margin-left: -0px;"
-                              />
-                            </div>
-                          </div>
-                          <div
-                            class="gg-image__img--hide-no-js"
-                          >
-                            <img
-                              alt="card"
-                              class=""
-                              src="https://i.imgur.com/ppPEuDs.jpg"
-                            />
-                            <img
-                              alt="card"
-                              class=""
-                              src="https://i.imgur.com/ppPEuDs.jpg"
-                            />
-                          </div>
-                          <div
-                            class="gg-image__img--hide-js"
-                          >
-                            <img
-                              alt="card"
-                              class=""
-                              src="https://i.imgur.com/ppPEuDs.jpg"
-                            />
-                            <img
-                              alt="card"
-                              class=""
-                              src="https://i.imgur.com/ppPEuDs.jpg"
-                            />
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </a>
-            <button
-              class=""
-              type="button"
-            >
-              <span
-                class=""
-              >
-                Delete blog
-              </span>
-            </button>
-          </div>
-          <div>
-            <a
-              aria-label="Untitled blog (DELETED), 23to30 Dec, Tagged travel"
-              class=""
-              href="/blog/mndyd8"
-            >
-              <div
-                class=""
-              >
-                <div
-                  class=""
-                />
-                <div
-                  class=""
-                >
-                  <div
-                    aria-hidden="true"
-                    class=""
-                  >
-                    <div
-                      class="date container"
-                    >
-                      <div
-                        class=""
-                      >
-                        <span
-                          class="c1"
-                        >
-                          23-30 Dec
-                        </span>
-                      </div>
-                      <div
-                        class=""
-                      >
-                        <span
-                          class="c1"
-                        >
-                          23-30
-                        </span>
-                      </div>
-                      <div
-                        class=""
-                      >
-                        <span
-                          class="c1"
-                        >
-                          Dec
-                        </span>
-                      </div>
-                    </div>
-                    <div
-                      class=""
-                    >
-                      <h1
-                        class="c0"
-                      >
-                        Untitled blog (DELETED)
-                      </h1>
-                      <div
-                        class=""
-                      >
-                        <div
-                          class=""
-                        >
-                          <span
-                            class=""
-                            type="travel"
-                          >
-                            Travel
-                          </span>
-                        </div>
-                      </div>
-                    </div>
-                    <div
-                      class=""
-                    >
-                      <div
-                        class=""
-                      >
-                        <style>
-                          
-          .js .gg-image__img--hide-js {display: none;}
-          .no-js .gg-image__img--hide-no-js {display: none;}
-        
-                        </style>
-                        <div
-                          class=""
-                          style="padding-bottom: 100%;"
-                        >
-                          <div
-                            class=""
-                          >
-                            <div
-                              class="c2 "
-                            >
-                              <div
-                                class="c3"
-                                style="margin-left: -0px;"
-                              />
-                            </div>
-                          </div>
-                          <div
-                            class="gg-image__img--hide-no-js"
-                          >
-                            <img
-                              alt="card"
-                              class=""
-                              src="https://i.imgur.com/ppPEuDs.jpg"
-                            />
-                            <img
-                              alt="card"
-                              class=""
-                              src="https://i.imgur.com/ppPEuDs.jpg"
-                            />
-                          </div>
-                          <div
-                            class="gg-image__img--hide-js"
-                          >
-                            <img
-                              alt="card"
-                              class=""
-                              src="https://i.imgur.com/ppPEuDs.jpg"
-                            />
-                            <img
-                              alt="card"
-                              class=""
-                              src="https://i.imgur.com/ppPEuDs.jpg"
-                            />
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </a>
-            <button
-              class=""
-              disabled=""
-              type="button"
-            >
-              <span
-                class=""
-              >
-                Delete blog
-              </span>
-            </button>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div>
-    <style>
-      .js .animated-content__wrapper--hidden {
-  opacity: 0.01;
-}
-    </style>
-    <div
-      class="animated-content__wrapper--hidden"
-    >
-      <div
-        class="c4"
-      >
-        <div
-          class="c5 c6"
-        >
-          <h1
-            class="c7 c8"
-            id="copyright"
-          >
-            Copyright
-          </h1>
-          <span
-            class="c9"
-          >
-            Most of my photos are licensed under
-             
-            <a
-              aria-label="Creative Commons BY-SA 3.0 (opens in a new tab)"
-              class="c10"
-              href="https://creativecommons.org/licenses/by-sa/3.0/"
-              rel="noopener noreferrer"
-              target="_blank"
-            >
-              <span
-                class="c11"
-              >
-                Creative Commons BY-SA 3.0
-              </span>
-              <div
-                class="c12"
-              >
-                <svg
-                  class="c13 c14"
-                  height="18"
-                  viewBox="0 0 24 24"
-                  width="18"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M12.5 11.3c.4.4 1 .4 1.4 0L19 6.2V9c0 .6.4 1 1 1s1-.4 1-1V4c0-.6-.4-1-1-1h-5c-.6 0-1 .4-1 1s.4 1 1 1h2.4l-4.9 4.9c-.4.4-.4 1 0 1.4zM19 19c0 1.1-.9 2-2 2H5c-1.1 0-2-.9-2-2V7c0-1.1.9-2 2-2h7v2H5v12h12v-7h2"
-                  />
-                </svg>
-              </div>
-            </a>
-            .
-            <br />
-            If you are unsure about your right to use them please 
-            <a
-              class="c10"
-              href="/contact"
-            >
-              <span
-                class="c11"
-              >
-                contact me
-              </span>
-            </a>
-            .
-          </span>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-`;
-
-exports[`<BlogList /> should render correctly with blog load error 1`] = `
-.c3 {
-  margin: 0;
-  font-size: 1.5rem;
-  font-weight: bold;
-}
-
-.c10 {
-  margin: 0;
-}
-
-.c12 {
-  width: 1.25rem;
-  height: 1.25rem;
-}
-
-.c9 {
-  display: inline-block;
-  border-radius: 0.25rem;
-  font-weight: bold;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  position: relative;
-  color: #9932cc;
-  fill: #9932cc;
-}
-
-.c9:focus-within,
-.c9:focus {
-  position: relative;
-  outline: none !important;
-}
-
-.c9:focus-within::after,
-.c9:focus::after {
-  position: absolute;
-  top: -0.35rem;
-  right: -0.35rem;
-  bottom: -0.35rem;
-  left: -0.35rem;
-  content: '';
-  display: block;
-  border: solid #007dfa3C 0.2rem;
-  border-radius: 0.5rem;
-  pointer-events: none;
-}
-
-.c9:hover {
-  color: #44aeff;
-  fill: #44aeff;
-}
-
-.c11 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  width: 0.4rem;
-  height: 1rem;
-  margin-left: 0.55rem;
-}
-
-.c13 {
-  position: absolute;
-  width: 1rem;
-  height: 1rem;
-  margin-top: 0.12rem;
-  margin-left: -0.45rem;
-}
-
-.c2 {
-  width: 100%;
-  color: #1e1e1e;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-}
-
-.c4 {
-  margin: 0;
-}
-
-.c7 {
-  margin: 2.13rem 0 0 0;
-}
-
-.c0 {
-  position: relative;
-  width: 100%;
-  border-radius: 0.25rem;
-  background-color: rgb(238,238,238);
-  overflow: hidden;
-  width: 100%;
-  height: 10rem;
-  margin-bottom: 1.2rem;
-}
-
-.c1 {
-  position: absolute;
-  top: 0;
-  width: 13rem;
-  height: 100vh;
-  background-image: linear-gradient( 90deg,rgb(238,238,238),rgb(245,245,245),rgb(238,238,238) );
-  background-repeat: no-repeat;
-  background-size: 12.5rem 100%;
-  -webkit-animation: eflhBg 3.5s ease-in-out infinite;
-  animation: eflhBg 3.5s ease-in-out infinite;
-}
-
-.c8 {
-  display: inline-block;
-  margin-bottom: 0;
-  padding-bottom: 0;
-  line-height: 1.5;
-  margin-top: 2rem;
-}
-
-.c8:first-of-type {
-  margin-top: 0.86rem;
-}
-
-.c5 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  width: 100%;
-  margin-top: 2rem;
-  margin-left: 0;
-  padding-top: 1rem;
-  padding-bottom: 2rem;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  background-color: #fbfbfb;
-}
-
-.c6 {
-  width: 100%;
-  padding-right: 1.875rem;
-  padding-left: 1.865rem;
-  text-align: center;
-}
-
-@media (prefers-color-scheme:dark) {
-  .c9:focus-within::after,
-  .c9:focus::after {
-    border-color: #007dfa3C;
-  }
-}
-
-@media (prefers-color-scheme:dark) {
-  .c9 {
-    color: #da70d6;
-    fill: #da70d6;
-  }
-
-  .c9:hover {
-    color: #44aeff;
-    fill: #44aeff;
-  }
-}
-
-@media (prefers-color-scheme:dark) {
-  .c2 {
-    color: #ffffff;
-  }
-}
-
-@media (prefers-color-scheme:dark) {
+@media (min-width:50.25rem) {
   .c0 {
-    background-color: rgb(17,17,17);
-  }
-}
-
-@media (prefers-color-scheme:dark) {
-  .c1 {
-    background-image: linear-gradient( 90deg,rgb(17,17,17),rgb(50,50,50),rgb(17,17,17) );
-  }
-}
-
-@media (prefers-color-scheme:dark) {
-  .c5 {
-    background-color: #121313;
+    padding-right: 2rem;
+    padding-left: 2rem;
   }
 }
 
 <div>
   <div
-    class="page-containerstyles__StyledPageContainer-sc-19l7k4-0 "
-    width="default"
+    class="c0 page-containerstyles__StyledPageContainer-sc-19l7k4-0 c1"
+    width="prose"
   >
     <div
-      class="c0"
+      class="c2"
     >
       <div
-        class="c1"
-        style="margin-left: -0px;"
-      />
-    </div>
-    <div
-      class="c0"
-    >
-      <div
-        class="c1"
-        style="margin-left: -0px;"
-      />
-    </div>
-    <div
-      class="c0"
-    >
-      <div
-        class="c1"
-        style="margin-left: -0px;"
-      />
-    </div>
-    <div
-      class="c0"
-    >
-      <div
-        class="c1"
-        style="margin-left: -0px;"
-      />
-    </div>
-    <div
-      class="c0"
-    >
-      <div
-        class="c1"
+        class="c3"
         style="margin-left: -0px;"
       />
     </div>
     <div
       class="c2"
     >
-      <h1
-        class="c3 c4"
-        id="this-is-taking-a-while.-maybe-something-isn't-quite-right..."
-      >
-        This is taking a while. Maybe something isn't quite right...
-      </h1>
+      <div
+        class="c3"
+        style="margin-left: -0px;"
+      />
     </div>
-  </div>
-  <div>
-    <style>
-      .js .animated-content__wrapper--hidden {
-  opacity: 0.01;
-}
-    </style>
     <div
-      class="animated-content__wrapper--hidden"
+      class="c2"
     >
       <div
-        class="c5"
-      >
-        <div
-          class="c2 c6"
-        >
-          <h1
-            class="c3 c7"
-            id="copyright"
-          >
-            Copyright
-          </h1>
-          <span
-            class="c8"
-          >
-            Most of my photos are licensed under
-             
-            <a
-              aria-label="Creative Commons BY-SA 3.0 (opens in a new tab)"
-              class="c9"
-              href="https://creativecommons.org/licenses/by-sa/3.0/"
-              rel="noopener noreferrer"
-              target="_blank"
-            >
-              <span
-                class="c10"
-              >
-                Creative Commons BY-SA 3.0
-              </span>
-              <div
-                class="c11"
-              >
-                <svg
-                  class="c12 c13"
-                  height="18"
-                  viewBox="0 0 24 24"
-                  width="18"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M12.5 11.3c.4.4 1 .4 1.4 0L19 6.2V9c0 .6.4 1 1 1s1-.4 1-1V4c0-.6-.4-1-1-1h-5c-.6 0-1 .4-1 1s.4 1 1 1h2.4l-4.9 4.9c-.4.4-.4 1 0 1.4zM19 19c0 1.1-.9 2-2 2H5c-1.1 0-2-.9-2-2V7c0-1.1.9-2 2-2h7v2H5v12h12v-7h2"
-                  />
-                </svg>
-              </div>
-            </a>
-            .
-            <br />
-            If you are unsure about your right to use them please 
-            <a
-              class="c9"
-              href="/contact"
-            >
-              <span
-                class="c10"
-              >
-                contact me
-              </span>
-            </a>
-            .
-          </span>
-        </div>
-      </div>
+        class="c3"
+        style="margin-left: -0px;"
+      />
+    </div>
+    <div
+      class="c2"
+    >
+      <div
+        class="c3"
+        style="margin-left: -0px;"
+      />
+    </div>
+    <div
+      class="c2"
+    >
+      <div
+        class="c3"
+        style="margin-left: -0px;"
+      />
     </div>
   </div>
 </div>
 `;
 
-exports[`<BlogList /> should render correctly with blogs 1`] = `
-.c1 {
+exports[`<BookList /> should render correctly authenticated with books 1`] = `
+.c3 {
   margin: 0;
-  font-size: 2.2rem;
+  font-size: 2.4rem;
   font-weight: bold;
 }
 
-.c7 {
+.c8 {
+  margin: 0;
+  font-size: 1.2rem;
+}
+
+.c29 {
   margin: 0;
   font-size: 1.5rem;
   font-weight: bold;
 }
 
-.c0 {
+.c10 {
   margin: 0;
-  font-size: 1.5rem;
-  font-weight: bold;
+  font-size: 1rem;
 }
 
-.c11 {
-  margin: 0;
-}
-
-.c13 {
+.c17 {
   width: 1.25rem;
   height: 1.25rem;
 }
 
-.c10 {
-  display: inline-block;
-  border-radius: 0.25rem;
-  font-weight: bold;
+.c28 {
+  width: 100%;
+  color: #1e1e1e;
   -webkit-text-decoration: none;
   text-decoration: none;
-  position: relative;
-  color: #9932cc;
-  fill: #9932cc;
 }
 
-.c10:focus-within,
-.c10:focus {
+.c30 {
+  margin: 2.13rem 0 0 0;
+}
+
+.c0 {
+  display: block;
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  overflow: hidden;
+  padding-bottom: 2rem;
+  max-width: 41.25rem;
+  padding-right: 1rem;
+  padding-left: 1rem;
+}
+
+.c1 {
+  margin-top: 2rem;
+}
+
+.c5 {
+  padding-top: 0;
+  opacity: 1;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+.c2 {
+  -webkit-animation: eTsntO 0.4s ease-in-out;
+  animation: eTsntO 0.4s ease-in-out;
+}
+
+.c20 {
   position: relative;
+  min-width: 5rem;
+  padding: 0.43rem 1.125rem 0.32rem 1.125rem;
+  -webkit-transition: filter 0.3s;
+  transition: filter 0.3s;
+  border: none;
+  border-radius: 0.25rem;
+  font-size: 1.4rem;
+  font-weight: bold;
+  cursor: pointer;
+  -webkit-text-decoration-color: transparent;
+  text-decoration-color: transparent;
+  -webkit-text-decoration-line: none;
+  text-decoration-line: none;
+  background-color: #0067B7;
+  color: white;
+}
+
+.c20:focus-within,
+.c20:focus {
   outline: none !important;
 }
 
-.c10:focus-within::after,
-.c10:focus::after {
+.c20:focus-within::after,
+.c20:focus::after {
   position: absolute;
   top: -0.35rem;
   right: -0.35rem;
@@ -1374,61 +213,249 @@ exports[`<BlogList /> should render correctly with blogs 1`] = `
   pointer-events: none;
 }
 
-.c10:hover {
-  color: #44aeff;
-  fill: #44aeff;
+.c20:focus,
+.c20:hover {
+  background-color: #004F8C;
+  color: white;
 }
 
-.c12 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  width: 0.4rem;
-  height: 1rem;
-  margin-left: 0.55rem;
+.c20:active {
+  background-color: #003E6F;
+  color: white;
 }
 
-.c14 {
-  position: absolute;
-  width: 1rem;
-  height: 1rem;
-  margin-top: 0.12rem;
-  margin-left: -0.45rem;
+.c20:disabled {
+  background-color: #cdcdd7;
+  color: #646464;
 }
 
-.c5 {
-  width: 100%;
-  color: #1e1e1e;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-}
-
-.c8 {
-  margin: 2.13rem 0 0 0;
-}
-
-.c2 {
+.c23 {
   position: relative;
-  width: 100%;
+  min-width: 5rem;
+  padding: 0.43rem 1.125rem 0.32rem 1.125rem;
+  -webkit-transition: filter 0.3s;
+  transition: filter 0.3s;
+  border: none;
   border-radius: 0.25rem;
-  background-color: rgb(238,238,238);
-  overflow: hidden;
+  font-size: 1.4rem;
+  font-weight: bold;
+  cursor: pointer;
+  -webkit-text-decoration-color: transparent;
+  text-decoration-color: transparent;
+  -webkit-text-decoration-line: none;
+  text-decoration-line: none;
+  background-color: #E02626;
+  color: white;
 }
 
-.c3 {
+.c23:focus-within,
+.c23:focus {
+  outline: none !important;
+}
+
+.c23:focus-within::after,
+.c23:focus::after {
   position: absolute;
-  top: 0;
-  width: 13rem;
-  height: 100vh;
-  background-image: linear-gradient( 90deg,rgb(238,238,238),rgb(245,245,245),rgb(238,238,238) );
-  background-repeat: no-repeat;
-  background-size: 12.5rem 100%;
-  -webkit-animation: eflhBg 3.5s ease-in-out infinite;
-  animation: eflhBg 3.5s ease-in-out infinite;
+  top: -0.35rem;
+  right: -0.35rem;
+  bottom: -0.35rem;
+  left: -0.35rem;
+  content: '';
+  display: block;
+  border: solid #007dfa3C 0.2rem;
+  border-radius: 0.5rem;
+  pointer-events: none;
+}
+
+.c23:focus,
+.c23:hover {
+  background-color: #BA2020;
+  color: white;
+}
+
+.c23:active {
+  background-color: #9F1717;
+  color: white;
+}
+
+.c23:disabled {
+  background-color: #cdcdd7;
+  color: #646464;
+}
+
+.c27 {
+  position: relative;
+  min-width: 5rem;
+  padding: 0.43rem 1.125rem 0.32rem 1.125rem;
+  -webkit-transition: filter 0.3s;
+  transition: filter 0.3s;
+  border: none;
+  border-radius: 0.25rem;
+  font-size: 1.4rem;
+  font-weight: bold;
+  cursor: pointer;
+  -webkit-text-decoration-color: transparent;
+  text-decoration-color: transparent;
+  -webkit-text-decoration-line: none;
+  text-decoration-line: none;
+  background-color: #E02626;
+  color: white;
+  cursor: default;
+}
+
+.c27:focus-within,
+.c27:focus {
+  outline: none !important;
+}
+
+.c27:focus-within::after,
+.c27:focus::after {
+  position: absolute;
+  top: -0.35rem;
+  right: -0.35rem;
+  bottom: -0.35rem;
+  left: -0.35rem;
+  content: '';
+  display: block;
+  border: solid #007dfa3C 0.2rem;
+  border-radius: 0.5rem;
+  pointer-events: none;
+}
+
+.c27:focus,
+.c27:hover {
+  background-color: #BA2020;
+  color: white;
+}
+
+.c27:active {
+  background-color: #9F1717;
+  color: white;
+}
+
+.c27:disabled {
+  background-color: #cdcdd7;
+  color: #646464;
+}
+
+.c22 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.c6 {
+  display: grid;
+  grid-template-columns: 4rem 1fr;
+  min-height: 4rem;
+  gap: 0.375rem 1rem;
+  opacity: 0.6;
+}
+
+.c25 {
+  display: grid;
+  grid-template-columns: 4rem 1fr;
+  min-height: 4rem;
+  gap: 0.375rem 1rem;
 }
 
 .c9 {
+  grid-row: 1;
+  grid-column: 2;
+}
+
+.c11 {
+  grid-row: 2;
+  grid-column: 2;
+}
+
+.c12 {
+  grid-row: 3;
+  grid-column: 2;
+}
+
+.c26 {
+  color: orange;
+  grid-row: 3;
+  grid-column: 2;
+}
+
+.c7 {
+  width: 100%;
+  margin-top: 2rem;
+  box-sizing: border-box;
+  margin-bottom: 1rem;
+}
+
+.c24 {
+  margin-bottom: 2rem;
+  box-sizing: border-box;
+}
+
+.c14 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border: 1px #b2b2bf solid;
+  border-radius: 0.25rem;
+  background-color: #ffffff;
+}
+
+.c14:focus-within,
+.c14:focus {
+  position: relative;
+  outline: none !important;
+}
+
+.c14:focus-within::after,
+.c14:focus::after {
+  position: absolute;
+  top: -0.35rem;
+  right: -0.35rem;
+  bottom: -0.35rem;
+  left: -0.35rem;
+  content: '';
+  display: block;
+  border: solid #007dfa3C 0.2rem;
+  border-radius: 0.5rem;
+  pointer-events: none;
+}
+
+.c21 {
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
+
+.c15 {
+  margin-bottom: 1rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.c19 {
+  margin-bottom: 1rem;
+}
+
+.c13 {
+  display: inline-block;
+  width: 100%;
+  margin: 0 0 0.375rem 0.1rem;
+  color: #1e1e1e;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.c31 {
   display: inline-block;
   margin-bottom: 0;
   padding-bottom: 0;
@@ -1436,82 +463,238 @@ exports[`<BlogList /> should render correctly with blogs 1`] = `
   margin-top: 2rem;
 }
 
-.c9:first-of-type {
+.c31:first-of-type {
   margin-top: 0.86rem;
 }
 
 .c4 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  width: 100%;
-  margin-top: 2rem;
-  margin-left: 0;
-  padding-top: 1rem;
-  padding-bottom: 2rem;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  background-color: #fbfbfb;
+  margin: 2.3rem 0 0 0;
 }
 
-.c6 {
-  width: 100%;
-  padding-right: 1.875rem;
-  padding-left: 1.865rem;
-  text-align: center;
+.c16 {
+  padding: 0.375rem 0.75rem;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  color: #1e1e1e;
+  font-size: 1rem;
+}
+
+.c16:disabled {
+  color: #b2b2bf;
+}
+
+.c18 {
+  margin-right: 0.5rem;
+  color: #00a698;
+  fill: #00a698;
 }
 
 @media (prefers-color-scheme:dark) {
-  .c10:focus-within::after,
-  .c10:focus::after {
+  .c28 {
+    color: #ffffff;
+  }
+}
+
+@media (min-width:50.25rem) {
+  .c0 {
+    padding-right: 2rem;
+    padding-left: 2rem;
+  }
+}
+
+@media (prefers-color-scheme:dark) {
+  .c20:focus-within::after,
+  .c20:focus::after {
     border-color: #007dfa3C;
   }
 }
 
 @media (prefers-color-scheme:dark) {
-  .c10 {
-    color: #da70d6;
-    fill: #da70d6;
-  }
-
-  .c10:hover {
-    color: #44aeff;
-    fill: #44aeff;
+  .c20 {
+    background-color: #025CA2;
+    color: white;
   }
 }
 
 @media (prefers-color-scheme:dark) {
-  .c5 {
+  .c20:focus,
+  .c20:hover {
+    background-color: #004479;
+    color: white;
+  }
+}
+
+@media (prefers-color-scheme:dark) {
+  .c20:active {
+    background-color: #003965;
+    color: white;
+  }
+}
+
+@media (prefers-color-scheme:dark) {
+  .c20:disabled {
+    background-color: #595959;
+    color: #a9a9a9;
+  }
+}
+
+@media (prefers-color-scheme:dark) {
+  .c23:focus-within::after,
+  .c23:focus::after {
+    border-color: #007dfa3C;
+  }
+}
+
+@media (prefers-color-scheme:dark) {
+  .c23 {
+    background-color: #CA2020;
+    color: white;
+  }
+}
+
+@media (prefers-color-scheme:dark) {
+  .c23:focus,
+  .c23:hover {
+    background-color: #891111;
+    color: white;
+  }
+}
+
+@media (prefers-color-scheme:dark) {
+  .c23:active {
+    background-color: #730D0D;
+    color: white;
+  }
+}
+
+@media (prefers-color-scheme:dark) {
+  .c23:disabled {
+    background-color: #595959;
+    color: #a9a9a9;
+  }
+}
+
+@media (prefers-color-scheme:dark) {
+  .c27:focus-within::after,
+  .c27:focus::after {
+    border-color: #007dfa3C;
+  }
+}
+
+@media (prefers-color-scheme:dark) {
+  .c27 {
+    background-color: #CA2020;
+    color: white;
+  }
+}
+
+@media (prefers-color-scheme:dark) {
+  .c27:focus,
+  .c27:hover {
+    background-color: #891111;
+    color: white;
+  }
+}
+
+@media (prefers-color-scheme:dark) {
+  .c27:active {
+    background-color: #730D0D;
+    color: white;
+  }
+}
+
+@media (prefers-color-scheme:dark) {
+  .c27:disabled {
+    background-color: #595959;
+    color: #a9a9a9;
+  }
+}
+
+@media (min-width:32.25rem) {
+  .c6 {
+    grid-template-columns: 4rem 1fr 10rem;
+    grid-template-rows: 3;
+  }
+}
+
+@media (min-width:50.25rem) {
+  .c6 {
+    gap: calc(2 * 0.375rem) 1rem;
+    grid-template-columns: 5rem 1fr 10rem;
+  }
+}
+
+@media (min-width:32.25rem) {
+  .c25 {
+    grid-template-columns: 4rem 1fr 10rem;
+    grid-template-rows: 3;
+  }
+}
+
+@media (min-width:50.25rem) {
+  .c25 {
+    gap: calc(2 * 0.375rem) 1rem;
+    grid-template-columns: 5rem 1fr 10rem;
+  }
+}
+
+@media (min-width:50.25rem) {
+  .c7 {
+    margin-top: calc(1rem + 2rem);
+  }
+}
+
+@media (prefers-color-scheme:dark) {
+  .c14:focus-within::after,
+  .c14:focus::after {
+    border-color: #007dfa3C;
+  }
+}
+
+@media (prefers-color-scheme:dark) {
+  .c14 {
+    border-color: white;
+    background-color: #000000;
+  }
+}
+
+@media (prefers-color-scheme:dark) {
+  .c13 {
     color: #ffffff;
   }
 }
 
 @media (prefers-color-scheme:dark) {
-  .c2 {
-    background-color: rgb(17,17,17);
+  .c16 {
+    color: #ffffff;
   }
 }
 
 @media (prefers-color-scheme:dark) {
-  .c3 {
-    background-image: linear-gradient( 90deg,rgb(17,17,17),rgb(50,50,50),rgb(17,17,17) );
-  }
-}
-
-@media (prefers-color-scheme:dark) {
-  .c4 {
-    background-color: #121313;
+  .c16:disabled {
+    color: #7b7b86;
   }
 }
 
 <div>
   <div
-    class="page-containerstyles__StyledPageContainer-sc-19l7k4-0 "
-    width="default"
+    class="c0 page-containerstyles__StyledPageContainer-sc-19l7k4-0 c1"
+    width="prose"
   >
+    <div
+      class="c2"
+    >
+      <h1
+        class="c3 c4"
+      >
+        My reading list
+      </h1>
+    </div>
     <div>
       <style>
         .js .animated-content__wrapper--hidden {
@@ -1520,420 +703,855 @@ exports[`<BlogList /> should render correctly with blogs 1`] = `
 }
       </style>
       <div
-        class="animated-content__wrapper--hidden"
+        class="c5 animated-content__wrapper--hidden"
       >
         <div>
           <div>
-            <a
-              aria-label="Blog 1 , NaN Invalid Date"
-              class=""
-              href="/blog/asdfg"
+            <div
+              class="c6 c7"
+              id="asdfg"
             >
-              <div
-                class=""
+              <h1
+                class="c8 c9"
               >
-                <div
-                  class=""
-                />
-                <div
-                  class=""
-                >
-                  <div
-                    aria-hidden="true"
-                    class=""
-                  >
-                    <div
-                      class="date container"
-                    >
-                      <div
-                        class=""
-                      >
-                        <span
-                          class="c0"
-                        >
-                          NaN Invalid Date
-                        </span>
-                      </div>
-                      <div
-                        class=""
-                      >
-                        <span
-                          class="c0"
-                        >
-                          NaN
-                        </span>
-                      </div>
-                      <div
-                        class=""
-                      >
-                        <span
-                          class="c0"
-                        >
-                          Invalid Date
-                        </span>
-                      </div>
-                    </div>
-                    <div
-                      class=""
-                    >
-                      <h1
-                        class="c1"
-                      >
-                        Blog 1 
-                      </h1>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </a>
-          </div>
-          <div>
-            <a
-              aria-label="St Ives  2018, 23to30 Dec, Tagged travel"
-              class=""
-              href="/blog/zxywvuts"
-            >
-              <div
-                class=""
-              >
-                <div
-                  class=""
-                />
-                <div
-                  class=""
-                >
-                  <div
-                    aria-hidden="true"
-                    class=""
-                  >
-                    <div
-                      class="date container"
-                    >
-                      <div
-                        class=""
-                      >
-                        <span
-                          class="c0"
-                        >
-                          23-30 Dec
-                        </span>
-                      </div>
-                      <div
-                        class=""
-                      >
-                        <span
-                          class="c0"
-                        >
-                          23-30
-                        </span>
-                      </div>
-                      <div
-                        class=""
-                      >
-                        <span
-                          class="c0"
-                        >
-                          Dec
-                        </span>
-                      </div>
-                    </div>
-                    <div
-                      class=""
-                    >
-                      <h1
-                        class="c1"
-                      >
-                        St Ives  2018
-                      </h1>
-                      <div
-                        class=""
-                      >
-                        <div
-                          class=""
-                        >
-                          <span
-                            class=""
-                            type="travel"
-                          >
-                            Travel
-                          </span>
-                        </div>
-                      </div>
-                    </div>
-                    <div
-                      class=""
-                    >
-                      <div
-                        class=""
-                      >
-                        <style>
-                          
-          .js .gg-image__img--hide-js {display: none;}
-          .no-js .gg-image__img--hide-no-js {display: none;}
-        
-                        </style>
-                        <div
-                          class=""
-                          style="padding-bottom: 100%;"
-                        >
-                          <div
-                            class=""
-                          >
-                            <div
-                              class="c2 "
-                            >
-                              <div
-                                class="c3"
-                                style="margin-left: -0px;"
-                              />
-                            </div>
-                          </div>
-                          <div
-                            class="gg-image__img--hide-no-js"
-                          >
-                            <img
-                              alt="card"
-                              class=""
-                              src="https://i.imgur.com/ppPEuDs.jpg"
-                            />
-                            <img
-                              alt="card"
-                              class=""
-                              src="https://i.imgur.com/ppPEuDs.jpg"
-                            />
-                          </div>
-                          <div
-                            class="gg-image__img--hide-js"
-                          >
-                            <img
-                              alt="card"
-                              class=""
-                              src="https://i.imgur.com/ppPEuDs.jpg"
-                            />
-                            <img
-                              alt="card"
-                              class=""
-                              src="https://i.imgur.com/ppPEuDs.jpg"
-                            />
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </a>
-          </div>
-          <div>
-            <a
-              aria-label="Untitled blog (DELETED), 23to30 Dec, Tagged travel"
-              class=""
-              href="/blog/mndyd8"
-            >
-              <div
-                class=""
-              >
-                <div
-                  class=""
-                />
-                <div
-                  class=""
-                >
-                  <div
-                    aria-hidden="true"
-                    class=""
-                  >
-                    <div
-                      class="date container"
-                    >
-                      <div
-                        class=""
-                      >
-                        <span
-                          class="c0"
-                        >
-                          23-30 Dec
-                        </span>
-                      </div>
-                      <div
-                        class=""
-                      >
-                        <span
-                          class="c0"
-                        >
-                          23-30
-                        </span>
-                      </div>
-                      <div
-                        class=""
-                      >
-                        <span
-                          class="c0"
-                        >
-                          Dec
-                        </span>
-                      </div>
-                    </div>
-                    <div
-                      class=""
-                    >
-                      <h1
-                        class="c1"
-                      >
-                        Untitled blog (DELETED)
-                      </h1>
-                      <div
-                        class=""
-                      >
-                        <div
-                          class=""
-                        >
-                          <span
-                            class=""
-                            type="travel"
-                          >
-                            Travel
-                          </span>
-                        </div>
-                      </div>
-                    </div>
-                    <div
-                      class=""
-                    >
-                      <div
-                        class=""
-                      >
-                        <style>
-                          
-          .js .gg-image__img--hide-js {display: none;}
-          .no-js .gg-image__img--hide-no-js {display: none;}
-        
-                        </style>
-                        <div
-                          class=""
-                          style="padding-bottom: 100%;"
-                        >
-                          <div
-                            class=""
-                          >
-                            <div
-                              class="c2 "
-                            >
-                              <div
-                                class="c3"
-                                style="margin-left: -0px;"
-                              />
-                            </div>
-                          </div>
-                          <div
-                            class="gg-image__img--hide-no-js"
-                          >
-                            <img
-                              alt="card"
-                              class=""
-                              src="https://i.imgur.com/ppPEuDs.jpg"
-                            />
-                            <img
-                              alt="card"
-                              class=""
-                              src="https://i.imgur.com/ppPEuDs.jpg"
-                            />
-                          </div>
-                          <div
-                            class="gg-image__img--hide-js"
-                          >
-                            <img
-                              alt="card"
-                              class=""
-                              src="https://i.imgur.com/ppPEuDs.jpg"
-                            />
-                            <img
-                              alt="card"
-                              class=""
-                              src="https://i.imgur.com/ppPEuDs.jpg"
-                            />
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div>
-    <style>
-      .js .animated-content__wrapper--hidden {
-  opacity: 0.01;
-}
-    </style>
-    <div
-      class="animated-content__wrapper--hidden"
-    >
-      <div
-        class="c4"
-      >
-        <div
-          class="c5 c6"
-        >
-          <h1
-            class="c7 c8"
-            id="copyright"
-          >
-            Copyright
-          </h1>
-          <span
-            class="c9"
-          >
-            Most of my photos are licensed under
-             
-            <a
-              aria-label="Creative Commons BY-SA 3.0 (opens in a new tab)"
-              class="c10"
-              href="https://creativecommons.org/licenses/by-sa/3.0/"
-              rel="noopener noreferrer"
-              target="_blank"
-            >
+                Book 1 🎉
+              </h1>
               <span
-                class="c11"
+                class="c10 c11"
               >
-                Creative Commons BY-SA 3.0
+                By 
+                Author 1
               </span>
-              <div
-                class="c12"
+              <span
+                class="c10 c12"
               >
+                Want to read
+              </span>
+            </div>
+            <div
+              class=""
+            >
+              <label
+                class="c13"
+                for="title_FORM_ID"
+              >
+                Title
+              </label>
+              <div
+                class="c14 c15"
+                placeholder="Title"
+              >
+                <input
+                  aria-disabled="false"
+                  aria-invalid="false"
+                  class="c16"
+                  id="title_FORM_ID"
+                  name="Title"
+                  value="Book 1 🎉"
+                />
                 <svg
-                  class="c13 c14"
+                  class="c17 c18"
                   height="18"
                   viewBox="0 0 24 24"
                   width="18"
                   xmlns="http://www.w3.org/2000/svg"
                 >
                   <path
-                    d="M12.5 11.3c.4.4 1 .4 1.4 0L19 6.2V9c0 .6.4 1 1 1s1-.4 1-1V4c0-.6-.4-1-1-1h-5c-.6 0-1 .4-1 1s.4 1 1 1h2.4l-4.9 4.9c-.4.4-.4 1 0 1.4zM19 19c0 1.1-.9 2-2 2H5c-1.1 0-2-.9-2-2V7c0-1.1.9-2 2-2h7v2H5v12h12v-7h2"
+                    d="M9.4 20c-.5 0-.9-.2-1.3-.5l-5.8-5.1c-.4-.4-.5-1-.1-1.4l1.3-1.5c.4-.4 1-.5 1.4-.1l4 3.5c.2.1.4.1.6 0l9.2-10.5c.4-.4 1-.5 1.4-.1l1.5 1.3c.4.4.5 1 .1 1.4L10.9 19.3c-.4.5-.9.7-1.5.7z"
                   />
                 </svg>
               </div>
-            </a>
-            .
-            <br />
-            If you are unsure about your right to use them please 
-            <a
-              class="c10"
-              href="/contact"
+              <label
+                class="c13"
+                for="author_FORM_ID"
+              >
+                Author
+              </label>
+              <div
+                class="c14 c15"
+                placeholder="Author"
+              >
+                <input
+                  aria-disabled="false"
+                  aria-invalid="false"
+                  class="c16"
+                  id="author_FORM_ID"
+                  name="Author"
+                  value="Author 1"
+                />
+                <svg
+                  class="c17 c18"
+                  height="18"
+                  viewBox="0 0 24 24"
+                  width="18"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M9.4 20c-.5 0-.9-.2-1.3-.5l-5.8-5.1c-.4-.4-.5-1-.1-1.4l1.3-1.5c.4-.4 1-.5 1.4-.1l4 3.5c.2.1.4.1.6 0l9.2-10.5c.4-.4 1-.5 1.4-.1l1.5 1.3c.4.4.5 1 .1 1.4L10.9 19.3c-.4.5-.9.7-1.5.7z"
+                  />
+                </svg>
+              </div>
+              <label
+                class="c13"
+                for="bookImage_FORM_ID"
+              >
+                Book image
+              </label>
+              <div
+                class="c14 c15"
+                placeholder="Book image"
+              >
+                <input
+                  aria-disabled="false"
+                  aria-invalid="false"
+                  class="c16"
+                  id="bookImage_FORM_ID"
+                  name="Book image"
+                  value=""
+                />
+                <svg
+                  class="c17 c18"
+                  height="18"
+                  viewBox="0 0 24 24"
+                  width="18"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M9.4 20c-.5 0-.9-.2-1.3-.5l-5.8-5.1c-.4-.4-.5-1-.1-1.4l1.3-1.5c.4-.4 1-.5 1.4-.1l4 3.5c.2.1.4.1.6 0l9.2-10.5c.4-.4 1-.5 1.4-.1l1.5 1.3c.4.4.5 1 .1 1.4L10.9 19.3c-.4.5-.9.7-1.5.7z"
+                  />
+                </svg>
+              </div>
+              <label
+                class="c13"
+                for="recommendation_FORM_ID"
+              >
+                Recommendation
+              </label>
+              <div
+                class="c14 c15"
+                placeholder="Recommendation"
+              >
+                <input
+                  aria-disabled="false"
+                  aria-invalid="false"
+                  class="c16"
+                  id="recommendation_FORM_ID"
+                  name="Recommendation"
+                  value=""
+                />
+                <svg
+                  class="c17 c18"
+                  height="18"
+                  viewBox="0 0 24 24"
+                  width="18"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M9.4 20c-.5 0-.9-.2-1.3-.5l-5.8-5.1c-.4-.4-.5-1-.1-1.4l1.3-1.5c.4-.4 1-.5 1.4-.1l4 3.5c.2.1.4.1.6 0l9.2-10.5c.4-.4 1-.5 1.4-.1l1.5 1.3c.4.4.5 1 .1 1.4L10.9 19.3c-.4.5-.9.7-1.5.7z"
+                  />
+                </svg>
+              </div>
+              <label
+                class="c13"
+                for="amazonLink_FORM_ID"
+              >
+                Amazon link
+              </label>
+              <div
+                class="c14 c15"
+                placeholder="Amazon link"
+              >
+                <input
+                  aria-disabled="false"
+                  aria-invalid="false"
+                  class="c16"
+                  id="amazonLink_FORM_ID"
+                  name="Amazon link"
+                  value=""
+                />
+                <svg
+                  class="c17 c18"
+                  height="18"
+                  viewBox="0 0 24 24"
+                  width="18"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M9.4 20c-.5 0-.9-.2-1.3-.5l-5.8-5.1c-.4-.4-.5-1-.1-1.4l1.3-1.5c.4-.4 1-.5 1.4-.1l4 3.5c.2.1.4.1.6 0l9.2-10.5c.4-.4 1-.5 1.4-.1l1.5 1.3c.4.4.5 1 .1 1.4L10.9 19.3c-.4.5-.9.7-1.5.7z"
+                  />
+                </svg>
+              </div>
+              <label
+                class="c13"
+                for="audibleLink_FORM_ID"
+              >
+                Audible link
+              </label>
+              <div
+                class="c14 c15"
+                placeholder="Audible link"
+              >
+                <input
+                  aria-disabled="false"
+                  aria-invalid="false"
+                  class="c16"
+                  id="audibleLink_FORM_ID"
+                  name="Audible link"
+                  value=""
+                />
+                <svg
+                  class="c17 c18"
+                  height="18"
+                  viewBox="0 0 24 24"
+                  width="18"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M9.4 20c-.5 0-.9-.2-1.3-.5l-5.8-5.1c-.4-.4-.5-1-.1-1.4l1.3-1.5c.4-.4 1-.5 1.4-.1l4 3.5c.2.1.4.1.6 0l9.2-10.5c.4-.4 1-.5 1.4-.1l1.5 1.3c.4.4.5 1 .1 1.4L10.9 19.3c-.4.5-.9.7-1.5.7z"
+                  />
+                </svg>
+              </div>
+              <label
+                class="c13"
+                for="status_FORM_ID"
+              >
+                Status
+              </label>
+              <div
+                class="c19"
+                placeholder="Status"
+              >
+                <div
+                  class="c14"
+                >
+                  <select
+                    aria-disabled="false"
+                    aria-invalid="false"
+                    class="c16"
+                    id="status_FORM_ID"
+                    name="Status"
+                  >
+                    <option
+                      value="toRead"
+                    >
+                      Want to read
+                    </option>
+                    <option
+                      value="currentlyReading"
+                    >
+                      Currently reading
+                    </option>
+                    <option
+                      value="using"
+                    >
+                      Using
+                    </option>
+                  </select>
+                  <svg
+                    class="c17 c18"
+                    height="18"
+                    viewBox="0 0 24 24"
+                    width="18"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M9.4 20c-.5 0-.9-.2-1.3-.5l-5.8-5.1c-.4-.4-.5-1-.1-1.4l1.3-1.5c.4-.4 1-.5 1.4-.1l4 3.5c.2.1.4.1.6 0l9.2-10.5c.4-.4 1-.5 1.4-.1l1.5 1.3c.4.4.5 1 .1 1.4L10.9 19.3c-.4.5-.9.7-1.5.7z"
+                    />
+                  </svg>
+                </div>
+              </div>
+              <button
+                class="c20 c21"
+                type="button"
+              >
+                <span
+                  class="c22"
+                >
+                  Save
+                </span>
+              </button>
+            </div>
+            <button
+              class="c23 c24"
+              type="button"
             >
               <span
-                class="c11"
+                class="c22"
               >
-                contact me
+                Delete book
               </span>
-            </a>
-            .
-          </span>
+            </button>
+          </div>
+          <div>
+            <div
+              class="c25 c7"
+              id="asdfh"
+            >
+              <h1
+                class="c8 c9"
+              >
+                Book 2
+              </h1>
+              <span
+                class="c10 c11"
+              >
+                By 
+                Author 2
+              </span>
+              <span
+                class="c10 c26"
+                color="orange"
+              >
+                Reading now
+              </span>
+            </div>
+            <div
+              class=""
+            >
+              <label
+                class="c13"
+                for="title_FORM_ID"
+              >
+                Title
+              </label>
+              <div
+                class="c14 c15"
+                placeholder="Title"
+              >
+                <input
+                  aria-disabled="false"
+                  aria-invalid="false"
+                  class="c16"
+                  id="title_FORM_ID"
+                  name="Title"
+                  value="Book 2"
+                />
+                <svg
+                  class="c17 c18"
+                  height="18"
+                  viewBox="0 0 24 24"
+                  width="18"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M9.4 20c-.5 0-.9-.2-1.3-.5l-5.8-5.1c-.4-.4-.5-1-.1-1.4l1.3-1.5c.4-.4 1-.5 1.4-.1l4 3.5c.2.1.4.1.6 0l9.2-10.5c.4-.4 1-.5 1.4-.1l1.5 1.3c.4.4.5 1 .1 1.4L10.9 19.3c-.4.5-.9.7-1.5.7z"
+                  />
+                </svg>
+              </div>
+              <label
+                class="c13"
+                for="author_FORM_ID"
+              >
+                Author
+              </label>
+              <div
+                class="c14 c15"
+                placeholder="Author"
+              >
+                <input
+                  aria-disabled="false"
+                  aria-invalid="false"
+                  class="c16"
+                  id="author_FORM_ID"
+                  name="Author"
+                  value="Author 2"
+                />
+                <svg
+                  class="c17 c18"
+                  height="18"
+                  viewBox="0 0 24 24"
+                  width="18"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M9.4 20c-.5 0-.9-.2-1.3-.5l-5.8-5.1c-.4-.4-.5-1-.1-1.4l1.3-1.5c.4-.4 1-.5 1.4-.1l4 3.5c.2.1.4.1.6 0l9.2-10.5c.4-.4 1-.5 1.4-.1l1.5 1.3c.4.4.5 1 .1 1.4L10.9 19.3c-.4.5-.9.7-1.5.7z"
+                  />
+                </svg>
+              </div>
+              <label
+                class="c13"
+                for="bookImage_FORM_ID"
+              >
+                Book image
+              </label>
+              <div
+                class="c14 c15"
+                placeholder="Book image"
+              >
+                <input
+                  aria-disabled="false"
+                  aria-invalid="false"
+                  class="c16"
+                  id="bookImage_FORM_ID"
+                  name="Book image"
+                  value=""
+                />
+                <svg
+                  class="c17 c18"
+                  height="18"
+                  viewBox="0 0 24 24"
+                  width="18"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M9.4 20c-.5 0-.9-.2-1.3-.5l-5.8-5.1c-.4-.4-.5-1-.1-1.4l1.3-1.5c.4-.4 1-.5 1.4-.1l4 3.5c.2.1.4.1.6 0l9.2-10.5c.4-.4 1-.5 1.4-.1l1.5 1.3c.4.4.5 1 .1 1.4L10.9 19.3c-.4.5-.9.7-1.5.7z"
+                  />
+                </svg>
+              </div>
+              <label
+                class="c13"
+                for="recommendation_FORM_ID"
+              >
+                Recommendation
+              </label>
+              <div
+                class="c14 c15"
+                placeholder="Recommendation"
+              >
+                <input
+                  aria-disabled="false"
+                  aria-invalid="false"
+                  class="c16"
+                  id="recommendation_FORM_ID"
+                  name="Recommendation"
+                  value=""
+                />
+                <svg
+                  class="c17 c18"
+                  height="18"
+                  viewBox="0 0 24 24"
+                  width="18"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M9.4 20c-.5 0-.9-.2-1.3-.5l-5.8-5.1c-.4-.4-.5-1-.1-1.4l1.3-1.5c.4-.4 1-.5 1.4-.1l4 3.5c.2.1.4.1.6 0l9.2-10.5c.4-.4 1-.5 1.4-.1l1.5 1.3c.4.4.5 1 .1 1.4L10.9 19.3c-.4.5-.9.7-1.5.7z"
+                  />
+                </svg>
+              </div>
+              <label
+                class="c13"
+                for="amazonLink_FORM_ID"
+              >
+                Amazon link
+              </label>
+              <div
+                class="c14 c15"
+                placeholder="Amazon link"
+              >
+                <input
+                  aria-disabled="false"
+                  aria-invalid="false"
+                  class="c16"
+                  id="amazonLink_FORM_ID"
+                  name="Amazon link"
+                  value=""
+                />
+                <svg
+                  class="c17 c18"
+                  height="18"
+                  viewBox="0 0 24 24"
+                  width="18"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M9.4 20c-.5 0-.9-.2-1.3-.5l-5.8-5.1c-.4-.4-.5-1-.1-1.4l1.3-1.5c.4-.4 1-.5 1.4-.1l4 3.5c.2.1.4.1.6 0l9.2-10.5c.4-.4 1-.5 1.4-.1l1.5 1.3c.4.4.5 1 .1 1.4L10.9 19.3c-.4.5-.9.7-1.5.7z"
+                  />
+                </svg>
+              </div>
+              <label
+                class="c13"
+                for="audibleLink_FORM_ID"
+              >
+                Audible link
+              </label>
+              <div
+                class="c14 c15"
+                placeholder="Audible link"
+              >
+                <input
+                  aria-disabled="false"
+                  aria-invalid="false"
+                  class="c16"
+                  id="audibleLink_FORM_ID"
+                  name="Audible link"
+                  value=""
+                />
+                <svg
+                  class="c17 c18"
+                  height="18"
+                  viewBox="0 0 24 24"
+                  width="18"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M9.4 20c-.5 0-.9-.2-1.3-.5l-5.8-5.1c-.4-.4-.5-1-.1-1.4l1.3-1.5c.4-.4 1-.5 1.4-.1l4 3.5c.2.1.4.1.6 0l9.2-10.5c.4-.4 1-.5 1.4-.1l1.5 1.3c.4.4.5 1 .1 1.4L10.9 19.3c-.4.5-.9.7-1.5.7z"
+                  />
+                </svg>
+              </div>
+              <label
+                class="c13"
+                for="status_FORM_ID"
+              >
+                Status
+              </label>
+              <div
+                class="c19"
+                placeholder="Status"
+              >
+                <div
+                  class="c14"
+                >
+                  <select
+                    aria-disabled="false"
+                    aria-invalid="false"
+                    class="c16"
+                    id="status_FORM_ID"
+                    name="Status"
+                  >
+                    <option
+                      value="toRead"
+                    >
+                      Want to read
+                    </option>
+                    <option
+                      value="currentlyReading"
+                    >
+                      Currently reading
+                    </option>
+                    <option
+                      value="using"
+                    >
+                      Using
+                    </option>
+                  </select>
+                  <svg
+                    class="c17 c18"
+                    height="18"
+                    viewBox="0 0 24 24"
+                    width="18"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M9.4 20c-.5 0-.9-.2-1.3-.5l-5.8-5.1c-.4-.4-.5-1-.1-1.4l1.3-1.5c.4-.4 1-.5 1.4-.1l4 3.5c.2.1.4.1.6 0l9.2-10.5c.4-.4 1-.5 1.4-.1l1.5 1.3c.4.4.5 1 .1 1.4L10.9 19.3c-.4.5-.9.7-1.5.7z"
+                    />
+                  </svg>
+                </div>
+              </div>
+              <button
+                class="c20 c21"
+                type="button"
+              >
+                <span
+                  class="c22"
+                >
+                  Save
+                </span>
+              </button>
+            </div>
+            <button
+              class="c23 c24"
+              type="button"
+            >
+              <span
+                class="c22"
+              >
+                Delete book
+              </span>
+            </button>
+          </div>
+          <div>
+            <div
+              class="c25 c7"
+              id="asdfi"
+            >
+              <h1
+                class="c8 c9"
+              >
+                Book 3 (DELETED)
+              </h1>
+              <span
+                class="c10 c11"
+              >
+                By 
+                Author 3
+              </span>
+              <span
+                class="c10 c26"
+                color="orange"
+              >
+                Reading now
+              </span>
+            </div>
+            <button
+              class="c27 c24"
+              disabled=""
+              type="button"
+            >
+              <span
+                class="c22"
+              >
+                Delete book
+              </span>
+            </button>
+          </div>
+          <div
+            class="c28"
+          >
+            <h1
+              class="c29 c30"
+              id="create-new-book"
+            >
+              Create new book
+            </h1>
+            <span
+              class="c31"
+              style="width: 100%;"
+            >
+              <div
+                class=""
+              >
+                <label
+                  class="c13"
+                  for="title_FORM_ID"
+                >
+                  Title
+                </label>
+                <div
+                  class="c14 c15"
+                  placeholder="Title"
+                >
+                  <input
+                    aria-disabled="false"
+                    aria-invalid="false"
+                    class="c16"
+                    id="title_FORM_ID"
+                    name="Title"
+                    value=""
+                  />
+                  <svg
+                    class="c17 c18"
+                    height="18"
+                    viewBox="0 0 24 24"
+                    width="18"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M9.4 20c-.5 0-.9-.2-1.3-.5l-5.8-5.1c-.4-.4-.5-1-.1-1.4l1.3-1.5c.4-.4 1-.5 1.4-.1l4 3.5c.2.1.4.1.6 0l9.2-10.5c.4-.4 1-.5 1.4-.1l1.5 1.3c.4.4.5 1 .1 1.4L10.9 19.3c-.4.5-.9.7-1.5.7z"
+                    />
+                  </svg>
+                </div>
+                <label
+                  class="c13"
+                  for="author_FORM_ID"
+                >
+                  Author
+                </label>
+                <div
+                  class="c14 c15"
+                  placeholder="Author"
+                >
+                  <input
+                    aria-disabled="false"
+                    aria-invalid="false"
+                    class="c16"
+                    id="author_FORM_ID"
+                    name="Author"
+                    value=""
+                  />
+                  <svg
+                    class="c17 c18"
+                    height="18"
+                    viewBox="0 0 24 24"
+                    width="18"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M9.4 20c-.5 0-.9-.2-1.3-.5l-5.8-5.1c-.4-.4-.5-1-.1-1.4l1.3-1.5c.4-.4 1-.5 1.4-.1l4 3.5c.2.1.4.1.6 0l9.2-10.5c.4-.4 1-.5 1.4-.1l1.5 1.3c.4.4.5 1 .1 1.4L10.9 19.3c-.4.5-.9.7-1.5.7z"
+                    />
+                  </svg>
+                </div>
+                <label
+                  class="c13"
+                  for="bookImage_FORM_ID"
+                >
+                  Book image
+                </label>
+                <div
+                  class="c14 c15"
+                  placeholder="Book image"
+                >
+                  <input
+                    aria-disabled="false"
+                    aria-invalid="false"
+                    class="c16"
+                    id="bookImage_FORM_ID"
+                    name="Book image"
+                    value=""
+                  />
+                  <svg
+                    class="c17 c18"
+                    height="18"
+                    viewBox="0 0 24 24"
+                    width="18"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M9.4 20c-.5 0-.9-.2-1.3-.5l-5.8-5.1c-.4-.4-.5-1-.1-1.4l1.3-1.5c.4-.4 1-.5 1.4-.1l4 3.5c.2.1.4.1.6 0l9.2-10.5c.4-.4 1-.5 1.4-.1l1.5 1.3c.4.4.5 1 .1 1.4L10.9 19.3c-.4.5-.9.7-1.5.7z"
+                    />
+                  </svg>
+                </div>
+                <label
+                  class="c13"
+                  for="recommendation_FORM_ID"
+                >
+                  Recommendation
+                </label>
+                <div
+                  class="c14 c15"
+                  placeholder="Recommendation"
+                >
+                  <input
+                    aria-disabled="false"
+                    aria-invalid="false"
+                    class="c16"
+                    id="recommendation_FORM_ID"
+                    name="Recommendation"
+                    value=""
+                  />
+                  <svg
+                    class="c17 c18"
+                    height="18"
+                    viewBox="0 0 24 24"
+                    width="18"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M9.4 20c-.5 0-.9-.2-1.3-.5l-5.8-5.1c-.4-.4-.5-1-.1-1.4l1.3-1.5c.4-.4 1-.5 1.4-.1l4 3.5c.2.1.4.1.6 0l9.2-10.5c.4-.4 1-.5 1.4-.1l1.5 1.3c.4.4.5 1 .1 1.4L10.9 19.3c-.4.5-.9.7-1.5.7z"
+                    />
+                  </svg>
+                </div>
+                <label
+                  class="c13"
+                  for="amazonLink_FORM_ID"
+                >
+                  Amazon link
+                </label>
+                <div
+                  class="c14 c15"
+                  placeholder="Amazon link"
+                >
+                  <input
+                    aria-disabled="false"
+                    aria-invalid="false"
+                    class="c16"
+                    id="amazonLink_FORM_ID"
+                    name="Amazon link"
+                    value=""
+                  />
+                  <svg
+                    class="c17 c18"
+                    height="18"
+                    viewBox="0 0 24 24"
+                    width="18"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M9.4 20c-.5 0-.9-.2-1.3-.5l-5.8-5.1c-.4-.4-.5-1-.1-1.4l1.3-1.5c.4-.4 1-.5 1.4-.1l4 3.5c.2.1.4.1.6 0l9.2-10.5c.4-.4 1-.5 1.4-.1l1.5 1.3c.4.4.5 1 .1 1.4L10.9 19.3c-.4.5-.9.7-1.5.7z"
+                    />
+                  </svg>
+                </div>
+                <label
+                  class="c13"
+                  for="audibleLink_FORM_ID"
+                >
+                  Audible link
+                </label>
+                <div
+                  class="c14 c15"
+                  placeholder="Audible link"
+                >
+                  <input
+                    aria-disabled="false"
+                    aria-invalid="false"
+                    class="c16"
+                    id="audibleLink_FORM_ID"
+                    name="Audible link"
+                    value=""
+                  />
+                  <svg
+                    class="c17 c18"
+                    height="18"
+                    viewBox="0 0 24 24"
+                    width="18"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M9.4 20c-.5 0-.9-.2-1.3-.5l-5.8-5.1c-.4-.4-.5-1-.1-1.4l1.3-1.5c.4-.4 1-.5 1.4-.1l4 3.5c.2.1.4.1.6 0l9.2-10.5c.4-.4 1-.5 1.4-.1l1.5 1.3c.4.4.5 1 .1 1.4L10.9 19.3c-.4.5-.9.7-1.5.7z"
+                    />
+                  </svg>
+                </div>
+                <label
+                  class="c13"
+                  for="status_FORM_ID"
+                >
+                  Status
+                </label>
+                <div
+                  class="c19"
+                  placeholder="Status"
+                >
+                  <div
+                    class="c14"
+                  >
+                    <select
+                      aria-disabled="false"
+                      aria-invalid="false"
+                      class="c16"
+                      id="status_FORM_ID"
+                      name="Status"
+                    >
+                      <option
+                        value="toRead"
+                      >
+                        Want to read
+                      </option>
+                      <option
+                        value="currentlyReading"
+                      >
+                        Currently reading
+                      </option>
+                      <option
+                        value="using"
+                      >
+                        Using
+                      </option>
+                    </select>
+                    <svg
+                      class="c17 c18"
+                      height="18"
+                      viewBox="0 0 24 24"
+                      width="18"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M9.4 20c-.5 0-.9-.2-1.3-.5l-5.8-5.1c-.4-.4-.5-1-.1-1.4l1.3-1.5c.4-.4 1-.5 1.4-.1l4 3.5c.2.1.4.1.6 0l9.2-10.5c.4-.4 1-.5 1.4-.1l1.5 1.3c.4.4.5 1 .1 1.4L10.9 19.3c-.4.5-.9.7-1.5.7z"
+                      />
+                    </svg>
+                  </div>
+                </div>
+                <button
+                  class="c20 c21"
+                  type="button"
+                >
+                  <span
+                    class="c22"
+                  >
+                    Create new book
+                  </span>
+                </button>
+              </div>
+            </span>
+          </div>
         </div>
       </div>
     </div>
@@ -1941,88 +1559,8 @@ exports[`<BlogList /> should render correctly with blogs 1`] = `
 </div>
 `;
 
-exports[`<BlogList /> should render correctly with initial state 1`] = `
-.c5 {
-  margin: 0;
-  font-size: 1.5rem;
-  font-weight: bold;
-}
-
-.c9 {
-  margin: 0;
-}
-
-.c11 {
-  width: 1.25rem;
-  height: 1.25rem;
-}
-
-.c8 {
-  display: inline-block;
-  border-radius: 0.25rem;
-  font-weight: bold;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  position: relative;
-  color: #9932cc;
-  fill: #9932cc;
-}
-
-.c8:focus-within,
-.c8:focus {
-  position: relative;
-  outline: none !important;
-}
-
-.c8:focus-within::after,
-.c8:focus::after {
-  position: absolute;
-  top: -0.35rem;
-  right: -0.35rem;
-  bottom: -0.35rem;
-  left: -0.35rem;
-  content: '';
-  display: block;
-  border: solid #007dfa3C 0.2rem;
-  border-radius: 0.5rem;
-  pointer-events: none;
-}
-
-.c8:hover {
-  color: #44aeff;
-  fill: #44aeff;
-}
-
-.c10 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  width: 0.4rem;
-  height: 1rem;
-  margin-left: 0.55rem;
-}
-
-.c12 {
-  position: absolute;
-  width: 1rem;
-  height: 1rem;
-  margin-top: 0.12rem;
-  margin-left: -0.45rem;
-}
-
-.c3 {
-  width: 100%;
-  color: #1e1e1e;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-}
-
-.c6 {
-  margin: 2.13rem 0 0 0;
-}
-
-.c0 {
+exports[`<BookList /> should render correctly with book load error 1`] = `
+.c2 {
   position: relative;
   width: 100%;
   border-radius: 0.25rem;
@@ -2033,7 +1571,7 @@ exports[`<BlogList /> should render correctly with initial state 1`] = `
   margin-bottom: 1.2rem;
 }
 
-.c1 {
+.c3 {
   position: absolute;
   top: 0;
   width: 13rem;
@@ -2045,200 +1583,318 @@ exports[`<BlogList /> should render correctly with initial state 1`] = `
   animation: eflhBg 3.5s ease-in-out infinite;
 }
 
-.c7 {
-  display: inline-block;
-  margin-bottom: 0;
-  padding-bottom: 0;
-  line-height: 1.5;
-  margin-top: 2rem;
-}
-
-.c7:first-of-type {
-  margin-top: 0.86rem;
-}
-
-.c2 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
+.c0 {
+  display: block;
   width: 100%;
-  margin-top: 2rem;
-  margin-left: 0;
-  padding-top: 1rem;
+  margin-right: auto;
+  margin-left: auto;
+  overflow: hidden;
   padding-bottom: 2rem;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  background-color: #fbfbfb;
+  max-width: 41.25rem;
+  padding-right: 1rem;
+  padding-left: 1rem;
 }
 
-.c4 {
-  width: 100%;
-  padding-right: 1.875rem;
-  padding-left: 1.865rem;
-  text-align: center;
+.c1 {
+  margin-top: 2rem;
 }
 
 @media (prefers-color-scheme:dark) {
-  .c8:focus-within::after,
-  .c8:focus::after {
-    border-color: #007dfa3C;
-  }
-}
-
-@media (prefers-color-scheme:dark) {
-  .c8 {
-    color: #da70d6;
-    fill: #da70d6;
-  }
-
-  .c8:hover {
-    color: #44aeff;
-    fill: #44aeff;
-  }
-}
-
-@media (prefers-color-scheme:dark) {
-  .c3 {
-    color: #ffffff;
-  }
-}
-
-@media (prefers-color-scheme:dark) {
-  .c0 {
+  .c2 {
     background-color: rgb(17,17,17);
   }
 }
 
 @media (prefers-color-scheme:dark) {
-  .c1 {
+  .c3 {
     background-image: linear-gradient( 90deg,rgb(17,17,17),rgb(50,50,50),rgb(17,17,17) );
   }
 }
 
-@media (prefers-color-scheme:dark) {
-  .c2 {
-    background-color: #121313;
+@media (min-width:50.25rem) {
+  .c0 {
+    padding-right: 2rem;
+    padding-left: 2rem;
   }
 }
 
 <div>
   <div
-    class="page-containerstyles__StyledPageContainer-sc-19l7k4-0 "
-    width="default"
+    class="c0 page-containerstyles__StyledPageContainer-sc-19l7k4-0 c1"
+    width="prose"
   >
     <div
-      class="c0"
+      class="c2"
     >
       <div
-        class="c1"
+        class="c3"
         style="margin-left: -0px;"
       />
     </div>
     <div
-      class="c0"
+      class="c2"
     >
       <div
-        class="c1"
+        class="c3"
         style="margin-left: -0px;"
       />
     </div>
     <div
-      class="c0"
+      class="c2"
     >
       <div
-        class="c1"
+        class="c3"
         style="margin-left: -0px;"
       />
     </div>
     <div
-      class="c0"
+      class="c2"
     >
       <div
-        class="c1"
+        class="c3"
         style="margin-left: -0px;"
       />
     </div>
     <div
-      class="c0"
+      class="c2"
     >
       <div
-        class="c1"
+        class="c3"
         style="margin-left: -0px;"
       />
     </div>
   </div>
-  <div>
-    <style>
-      .js .animated-content__wrapper--hidden {
+</div>
+`;
+
+exports[`<BookList /> should render correctly with books 1`] = `
+.c3 {
+  margin: 0;
+  font-size: 2.4rem;
+  font-weight: bold;
+}
+
+.c8 {
+  margin: 0;
+  font-size: 1.2rem;
+}
+
+.c10 {
+  margin: 0;
+  font-size: 1rem;
+}
+
+.c0 {
+  display: block;
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  overflow: hidden;
+  padding-bottom: 2rem;
+  max-width: 41.25rem;
+  padding-right: 1rem;
+  padding-left: 1rem;
+}
+
+.c1 {
+  margin-top: 2rem;
+}
+
+.c5 {
+  padding-top: 0;
+  opacity: 1;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+.c2 {
+  -webkit-animation: eTsntO 0.4s ease-in-out;
+  animation: eTsntO 0.4s ease-in-out;
+}
+
+.c6 {
+  display: grid;
+  grid-template-columns: 4rem 1fr;
+  min-height: 4rem;
+  gap: 0.375rem 1rem;
+  opacity: 0.6;
+}
+
+.c13 {
+  display: grid;
+  grid-template-columns: 4rem 1fr;
+  min-height: 4rem;
+  gap: 0.375rem 1rem;
+}
+
+.c9 {
+  grid-row: 1;
+  grid-column: 2;
+}
+
+.c11 {
+  grid-row: 2;
+  grid-column: 2;
+}
+
+.c12 {
+  grid-row: 3;
+  grid-column: 2;
+}
+
+.c14 {
+  color: orange;
+  grid-row: 3;
+  grid-column: 2;
+}
+
+.c7 {
+  width: 100%;
+  margin-top: 2rem;
+  box-sizing: border-box;
+}
+
+.c4 {
+  margin: 2.3rem 0 0 0;
+}
+
+@media (min-width:50.25rem) {
+  .c0 {
+    padding-right: 2rem;
+    padding-left: 2rem;
+  }
+}
+
+@media (min-width:32.25rem) {
+  .c6 {
+    grid-template-columns: 4rem 1fr 10rem;
+    grid-template-rows: 3;
+  }
+}
+
+@media (min-width:50.25rem) {
+  .c6 {
+    gap: calc(2 * 0.375rem) 1rem;
+    grid-template-columns: 5rem 1fr 10rem;
+  }
+}
+
+@media (min-width:32.25rem) {
+  .c13 {
+    grid-template-columns: 4rem 1fr 10rem;
+    grid-template-rows: 3;
+  }
+}
+
+@media (min-width:50.25rem) {
+  .c13 {
+    gap: calc(2 * 0.375rem) 1rem;
+    grid-template-columns: 5rem 1fr 10rem;
+  }
+}
+
+@media (min-width:50.25rem) {
+  .c7 {
+    margin-top: calc(1rem + 2rem);
+  }
+}
+
+<div>
+  <div
+    class="c0 page-containerstyles__StyledPageContainer-sc-19l7k4-0 c1"
+    width="prose"
+  >
+    <div
+      class="c2"
+    >
+      <h1
+        class="c3 c4"
+      >
+        My reading list
+      </h1>
+    </div>
+    <div>
+      <style>
+        .js .animated-content__wrapper--hidden {
+  padding-top: 4rem;
   opacity: 0.01;
 }
-    </style>
-    <div
-      class="animated-content__wrapper--hidden"
-    >
+      </style>
       <div
-        class="c2"
+        class="c5 animated-content__wrapper--hidden"
       >
-        <div
-          class="c3 c4"
-        >
-          <h1
-            class="c5 c6"
-            id="copyright"
-          >
-            Copyright
-          </h1>
-          <span
-            class="c7"
-          >
-            Most of my photos are licensed under
-             
-            <a
-              aria-label="Creative Commons BY-SA 3.0 (opens in a new tab)"
-              class="c8"
-              href="https://creativecommons.org/licenses/by-sa/3.0/"
-              rel="noopener noreferrer"
-              target="_blank"
+        <div>
+          <div>
+            <div
+              class="c6 c7"
+              id="asdfg"
             >
+              <h1
+                class="c8 c9"
+              >
+                Book 1 🎉
+              </h1>
               <span
-                class="c9"
+                class="c10 c11"
               >
-                Creative Commons BY-SA 3.0
+                By 
+                Author 1
               </span>
-              <div
-                class="c10"
+              <span
+                class="c10 c12"
               >
-                <svg
-                  class="c11 c12"
-                  height="18"
-                  viewBox="0 0 24 24"
-                  width="18"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M12.5 11.3c.4.4 1 .4 1.4 0L19 6.2V9c0 .6.4 1 1 1s1-.4 1-1V4c0-.6-.4-1-1-1h-5c-.6 0-1 .4-1 1s.4 1 1 1h2.4l-4.9 4.9c-.4.4-.4 1 0 1.4zM19 19c0 1.1-.9 2-2 2H5c-1.1 0-2-.9-2-2V7c0-1.1.9-2 2-2h7v2H5v12h12v-7h2"
-                  />
-                </svg>
-              </div>
-            </a>
-            .
-            <br />
-            If you are unsure about your right to use them please 
-            <a
-              class="c8"
-              href="/contact"
+                Want to read
+              </span>
+            </div>
+          </div>
+          <div>
+            <div
+              class="c13 c7"
+              id="asdfh"
             >
-              <span
-                class="c9"
+              <h1
+                class="c8 c9"
               >
-                contact me
+                Book 2
+              </h1>
+              <span
+                class="c10 c11"
+              >
+                By 
+                Author 2
               </span>
-            </a>
-            .
-          </span>
+              <span
+                class="c10 c14"
+                color="orange"
+              >
+                Reading now
+              </span>
+            </div>
+          </div>
+          <div>
+            <div
+              class="c13 c7"
+              id="asdfi"
+            >
+              <h1
+                class="c8 c9"
+              >
+                Book 3 (DELETED)
+              </h1>
+              <span
+                class="c10 c11"
+              >
+                By 
+                Author 3
+              </span>
+              <span
+                class="c10 c14"
+                color="orange"
+              >
+                Reading now
+              </span>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -2246,105 +1902,16 @@ exports[`<BlogList /> should render correctly with initial state 1`] = `
 </div>
 `;
 
-exports[`<BlogList /> should render correctly with ssrBlogs 1`] = `
-.c1 {
-  margin: 0;
-  font-size: 2.2rem;
-  font-weight: bold;
-}
-
-.c7 {
-  margin: 0;
-  font-size: 1.5rem;
-  font-weight: bold;
-}
-
-.c0 {
-  margin: 0;
-  font-size: 1.5rem;
-  font-weight: bold;
-}
-
-.c11 {
-  margin: 0;
-}
-
-.c13 {
-  width: 1.25rem;
-  height: 1.25rem;
-}
-
-.c10 {
-  display: inline-block;
-  border-radius: 0.25rem;
-  font-weight: bold;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  position: relative;
-  color: #9932cc;
-  fill: #9932cc;
-}
-
-.c10:focus-within,
-.c10:focus {
-  position: relative;
-  outline: none !important;
-}
-
-.c10:focus-within::after,
-.c10:focus::after {
-  position: absolute;
-  top: -0.35rem;
-  right: -0.35rem;
-  bottom: -0.35rem;
-  left: -0.35rem;
-  content: '';
-  display: block;
-  border: solid #007dfa3C 0.2rem;
-  border-radius: 0.5rem;
-  pointer-events: none;
-}
-
-.c10:hover {
-  color: #44aeff;
-  fill: #44aeff;
-}
-
-.c12 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  width: 0.4rem;
-  height: 1rem;
-  margin-left: 0.55rem;
-}
-
-.c14 {
-  position: absolute;
-  width: 1rem;
-  height: 1rem;
-  margin-top: 0.12rem;
-  margin-left: -0.45rem;
-}
-
-.c5 {
-  width: 100%;
-  color: #1e1e1e;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-}
-
-.c8 {
-  margin: 2.13rem 0 0 0;
-}
-
+exports[`<BookList /> should render correctly with initial state 1`] = `
 .c2 {
   position: relative;
   width: 100%;
   border-radius: 0.25rem;
   background-color: rgb(238,238,238);
   overflow: hidden;
+  width: 100%;
+  height: 10rem;
+  margin-bottom: 1.2rem;
 }
 
 .c3 {
@@ -2359,65 +1926,20 @@ exports[`<BlogList /> should render correctly with ssrBlogs 1`] = `
   animation: eflhBg 3.5s ease-in-out infinite;
 }
 
-.c9 {
-  display: inline-block;
-  margin-bottom: 0;
-  padding-bottom: 0;
-  line-height: 1.5;
-  margin-top: 2rem;
-}
-
-.c9:first-of-type {
-  margin-top: 0.86rem;
-}
-
-.c4 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
+.c0 {
+  display: block;
   width: 100%;
-  margin-top: 2rem;
-  margin-left: 0;
-  padding-top: 1rem;
+  margin-right: auto;
+  margin-left: auto;
+  overflow: hidden;
   padding-bottom: 2rem;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  background-color: #fbfbfb;
+  max-width: 41.25rem;
+  padding-right: 1rem;
+  padding-left: 1rem;
 }
 
-.c6 {
-  width: 100%;
-  padding-right: 1.875rem;
-  padding-left: 1.865rem;
-  text-align: center;
-}
-
-@media (prefers-color-scheme:dark) {
-  .c10:focus-within::after,
-  .c10:focus::after {
-    border-color: #007dfa3C;
-  }
-}
-
-@media (prefers-color-scheme:dark) {
-  .c10 {
-    color: #da70d6;
-    fill: #da70d6;
-  }
-
-  .c10:hover {
-    color: #44aeff;
-    fill: #44aeff;
-  }
-}
-
-@media (prefers-color-scheme:dark) {
-  .c5 {
-    color: #ffffff;
-  }
+.c1 {
+  margin-top: 2rem;
 }
 
 @media (prefers-color-scheme:dark) {
@@ -2432,17 +1954,208 @@ exports[`<BlogList /> should render correctly with ssrBlogs 1`] = `
   }
 }
 
-@media (prefers-color-scheme:dark) {
-  .c4 {
-    background-color: #121313;
+@media (min-width:50.25rem) {
+  .c0 {
+    padding-right: 2rem;
+    padding-left: 2rem;
   }
 }
 
 <div>
   <div
-    class="page-containerstyles__StyledPageContainer-sc-19l7k4-0 "
-    width="default"
+    class="c0 page-containerstyles__StyledPageContainer-sc-19l7k4-0 c1"
+    width="prose"
   >
+    <div
+      class="c2"
+    >
+      <div
+        class="c3"
+        style="margin-left: -0px;"
+      />
+    </div>
+    <div
+      class="c2"
+    >
+      <div
+        class="c3"
+        style="margin-left: -0px;"
+      />
+    </div>
+    <div
+      class="c2"
+    >
+      <div
+        class="c3"
+        style="margin-left: -0px;"
+      />
+    </div>
+    <div
+      class="c2"
+    >
+      <div
+        class="c3"
+        style="margin-left: -0px;"
+      />
+    </div>
+    <div
+      class="c2"
+    >
+      <div
+        class="c3"
+        style="margin-left: -0px;"
+      />
+    </div>
+  </div>
+</div>
+`;
+
+exports[`<BookList /> should render correctly with ssrBooks 1`] = `
+.c3 {
+  margin: 0;
+  font-size: 2.4rem;
+  font-weight: bold;
+}
+
+.c8 {
+  margin: 0;
+  font-size: 1.2rem;
+}
+
+.c10 {
+  margin: 0;
+  font-size: 1rem;
+}
+
+.c0 {
+  display: block;
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  overflow: hidden;
+  padding-bottom: 2rem;
+  max-width: 41.25rem;
+  padding-right: 1rem;
+  padding-left: 1rem;
+}
+
+.c1 {
+  margin-top: 2rem;
+}
+
+.c5 {
+  padding-top: 0;
+  opacity: 1;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+.c2 {
+  -webkit-animation: eTsntO 0.4s ease-in-out;
+  animation: eTsntO 0.4s ease-in-out;
+}
+
+.c6 {
+  display: grid;
+  grid-template-columns: 4rem 1fr;
+  min-height: 4rem;
+  gap: 0.375rem 1rem;
+  opacity: 0.6;
+}
+
+.c13 {
+  display: grid;
+  grid-template-columns: 4rem 1fr;
+  min-height: 4rem;
+  gap: 0.375rem 1rem;
+}
+
+.c9 {
+  grid-row: 1;
+  grid-column: 2;
+}
+
+.c11 {
+  grid-row: 2;
+  grid-column: 2;
+}
+
+.c12 {
+  grid-row: 3;
+  grid-column: 2;
+}
+
+.c14 {
+  color: orange;
+  grid-row: 3;
+  grid-column: 2;
+}
+
+.c7 {
+  width: 100%;
+  margin-top: 2rem;
+  box-sizing: border-box;
+}
+
+.c4 {
+  margin: 2.3rem 0 0 0;
+}
+
+@media (min-width:50.25rem) {
+  .c0 {
+    padding-right: 2rem;
+    padding-left: 2rem;
+  }
+}
+
+@media (min-width:32.25rem) {
+  .c6 {
+    grid-template-columns: 4rem 1fr 10rem;
+    grid-template-rows: 3;
+  }
+}
+
+@media (min-width:50.25rem) {
+  .c6 {
+    gap: calc(2 * 0.375rem) 1rem;
+    grid-template-columns: 5rem 1fr 10rem;
+  }
+}
+
+@media (min-width:32.25rem) {
+  .c13 {
+    grid-template-columns: 4rem 1fr 10rem;
+    grid-template-rows: 3;
+  }
+}
+
+@media (min-width:50.25rem) {
+  .c13 {
+    gap: calc(2 * 0.375rem) 1rem;
+    grid-template-columns: 5rem 1fr 10rem;
+  }
+}
+
+@media (min-width:50.25rem) {
+  .c7 {
+    margin-top: calc(1rem + 2rem);
+  }
+}
+
+<div>
+  <div
+    class="c0 page-containerstyles__StyledPageContainer-sc-19l7k4-0 c1"
+    width="prose"
+  >
+    <div
+      class="c2"
+    >
+      <h1
+        class="c3 c4"
+      >
+        My reading list
+      </h1>
+    </div>
     <div>
       <style>
         .js .animated-content__wrapper--hidden {
@@ -2451,420 +2164,80 @@ exports[`<BlogList /> should render correctly with ssrBlogs 1`] = `
 }
       </style>
       <div
-        class="animated-content__wrapper--hidden"
+        class="c5 animated-content__wrapper--hidden"
       >
         <div>
           <div>
-            <a
-              aria-label="Blog 1 , NaN Invalid Date"
-              class=""
-              href="/blog/asdfg"
+            <div
+              class="c6 c7"
+              id="asdfg"
             >
-              <div
-                class=""
+              <h1
+                class="c8 c9"
               >
-                <div
-                  class=""
-                />
-                <div
-                  class=""
-                >
-                  <div
-                    aria-hidden="true"
-                    class=""
-                  >
-                    <div
-                      class="date container"
-                    >
-                      <div
-                        class=""
-                      >
-                        <span
-                          class="c0"
-                        >
-                          NaN Invalid Date
-                        </span>
-                      </div>
-                      <div
-                        class=""
-                      >
-                        <span
-                          class="c0"
-                        >
-                          NaN
-                        </span>
-                      </div>
-                      <div
-                        class=""
-                      >
-                        <span
-                          class="c0"
-                        >
-                          Invalid Date
-                        </span>
-                      </div>
-                    </div>
-                    <div
-                      class=""
-                    >
-                      <h1
-                        class="c1"
-                      >
-                        Blog 1 
-                      </h1>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </a>
+                Book 1 🎉
+              </h1>
+              <span
+                class="c10 c11"
+              >
+                By 
+                Author 1
+              </span>
+              <span
+                class="c10 c12"
+              >
+                Want to read
+              </span>
+            </div>
           </div>
           <div>
-            <a
-              aria-label="St Ives  2018, 23to30 Dec, Tagged travel"
-              class=""
-              href="/blog/zxywvuts"
+            <div
+              class="c13 c7"
+              id="asdfh"
             >
-              <div
-                class=""
+              <h1
+                class="c8 c9"
               >
-                <div
-                  class=""
-                />
-                <div
-                  class=""
-                >
-                  <div
-                    aria-hidden="true"
-                    class=""
-                  >
-                    <div
-                      class="date container"
-                    >
-                      <div
-                        class=""
-                      >
-                        <span
-                          class="c0"
-                        >
-                          23-30 Dec
-                        </span>
-                      </div>
-                      <div
-                        class=""
-                      >
-                        <span
-                          class="c0"
-                        >
-                          23-30
-                        </span>
-                      </div>
-                      <div
-                        class=""
-                      >
-                        <span
-                          class="c0"
-                        >
-                          Dec
-                        </span>
-                      </div>
-                    </div>
-                    <div
-                      class=""
-                    >
-                      <h1
-                        class="c1"
-                      >
-                        St Ives  2018
-                      </h1>
-                      <div
-                        class=""
-                      >
-                        <div
-                          class=""
-                        >
-                          <span
-                            class=""
-                            type="travel"
-                          >
-                            Travel
-                          </span>
-                        </div>
-                      </div>
-                    </div>
-                    <div
-                      class=""
-                    >
-                      <div
-                        class=""
-                      >
-                        <style>
-                          
-          .js .gg-image__img--hide-js {display: none;}
-          .no-js .gg-image__img--hide-no-js {display: none;}
-        
-                        </style>
-                        <div
-                          class=""
-                          style="padding-bottom: 100%;"
-                        >
-                          <div
-                            class=""
-                          >
-                            <div
-                              class="c2 "
-                            >
-                              <div
-                                class="c3"
-                                style="margin-left: -0px;"
-                              />
-                            </div>
-                          </div>
-                          <div
-                            class="gg-image__img--hide-no-js"
-                          >
-                            <img
-                              alt="card"
-                              class=""
-                              src="https://i.imgur.com/ppPEuDs.jpg"
-                            />
-                            <img
-                              alt="card"
-                              class=""
-                              src="https://i.imgur.com/ppPEuDs.jpg"
-                            />
-                          </div>
-                          <div
-                            class="gg-image__img--hide-js"
-                          >
-                            <img
-                              alt="card"
-                              class=""
-                              src="https://i.imgur.com/ppPEuDs.jpg"
-                            />
-                            <img
-                              alt="card"
-                              class=""
-                              src="https://i.imgur.com/ppPEuDs.jpg"
-                            />
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </a>
+                Book 2
+              </h1>
+              <span
+                class="c10 c11"
+              >
+                By 
+                Author 2
+              </span>
+              <span
+                class="c10 c14"
+                color="orange"
+              >
+                Reading now
+              </span>
+            </div>
           </div>
           <div>
-            <a
-              aria-label="Untitled blog (DELETED), 23to30 Dec, Tagged travel"
-              class=""
-              href="/blog/mndyd8"
+            <div
+              class="c13 c7"
+              id="asdfi"
             >
-              <div
-                class=""
+              <h1
+                class="c8 c9"
               >
-                <div
-                  class=""
-                />
-                <div
-                  class=""
-                >
-                  <div
-                    aria-hidden="true"
-                    class=""
-                  >
-                    <div
-                      class="date container"
-                    >
-                      <div
-                        class=""
-                      >
-                        <span
-                          class="c0"
-                        >
-                          23-30 Dec
-                        </span>
-                      </div>
-                      <div
-                        class=""
-                      >
-                        <span
-                          class="c0"
-                        >
-                          23-30
-                        </span>
-                      </div>
-                      <div
-                        class=""
-                      >
-                        <span
-                          class="c0"
-                        >
-                          Dec
-                        </span>
-                      </div>
-                    </div>
-                    <div
-                      class=""
-                    >
-                      <h1
-                        class="c1"
-                      >
-                        Untitled blog (DELETED)
-                      </h1>
-                      <div
-                        class=""
-                      >
-                        <div
-                          class=""
-                        >
-                          <span
-                            class=""
-                            type="travel"
-                          >
-                            Travel
-                          </span>
-                        </div>
-                      </div>
-                    </div>
-                    <div
-                      class=""
-                    >
-                      <div
-                        class=""
-                      >
-                        <style>
-                          
-          .js .gg-image__img--hide-js {display: none;}
-          .no-js .gg-image__img--hide-no-js {display: none;}
-        
-                        </style>
-                        <div
-                          class=""
-                          style="padding-bottom: 100%;"
-                        >
-                          <div
-                            class=""
-                          >
-                            <div
-                              class="c2 "
-                            >
-                              <div
-                                class="c3"
-                                style="margin-left: -0px;"
-                              />
-                            </div>
-                          </div>
-                          <div
-                            class="gg-image__img--hide-no-js"
-                          >
-                            <img
-                              alt="card"
-                              class=""
-                              src="https://i.imgur.com/ppPEuDs.jpg"
-                            />
-                            <img
-                              alt="card"
-                              class=""
-                              src="https://i.imgur.com/ppPEuDs.jpg"
-                            />
-                          </div>
-                          <div
-                            class="gg-image__img--hide-js"
-                          >
-                            <img
-                              alt="card"
-                              class=""
-                              src="https://i.imgur.com/ppPEuDs.jpg"
-                            />
-                            <img
-                              alt="card"
-                              class=""
-                              src="https://i.imgur.com/ppPEuDs.jpg"
-                            />
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </a>
+                Book 3 (DELETED)
+              </h1>
+              <span
+                class="c10 c11"
+              >
+                By 
+                Author 3
+              </span>
+              <span
+                class="c10 c14"
+                color="orange"
+              >
+                Reading now
+              </span>
+            </div>
           </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div>
-    <style>
-      .js .animated-content__wrapper--hidden {
-  opacity: 0.01;
-}
-    </style>
-    <div
-      class="animated-content__wrapper--hidden"
-    >
-      <div
-        class="c4"
-      >
-        <div
-          class="c5 c6"
-        >
-          <h1
-            class="c7 c8"
-            id="copyright"
-          >
-            Copyright
-          </h1>
-          <span
-            class="c9"
-          >
-            Most of my photos are licensed under
-             
-            <a
-              aria-label="Creative Commons BY-SA 3.0 (opens in a new tab)"
-              class="c10"
-              href="https://creativecommons.org/licenses/by-sa/3.0/"
-              rel="noopener noreferrer"
-              target="_blank"
-            >
-              <span
-                class="c11"
-              >
-                Creative Commons BY-SA 3.0
-              </span>
-              <div
-                class="c12"
-              >
-                <svg
-                  class="c13 c14"
-                  height="18"
-                  viewBox="0 0 24 24"
-                  width="18"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M12.5 11.3c.4.4 1 .4 1.4 0L19 6.2V9c0 .6.4 1 1 1s1-.4 1-1V4c0-.6-.4-1-1-1h-5c-.6 0-1 .4-1 1s.4 1 1 1h2.4l-4.9 4.9c-.4.4-.4 1 0 1.4zM19 19c0 1.1-.9 2-2 2H5c-1.1 0-2-.9-2-2V7c0-1.1.9-2 2-2h7v2H5v12h12v-7h2"
-                  />
-                </svg>
-              </div>
-            </a>
-            .
-            <br />
-            If you are unsure about your right to use them please 
-            <a
-              class="c10"
-              href="/contact"
-            >
-              <span
-                class="c11"
-              >
-                contact me
-              </span>
-            </a>
-            .
-          </span>
         </div>
       </div>
     </div>

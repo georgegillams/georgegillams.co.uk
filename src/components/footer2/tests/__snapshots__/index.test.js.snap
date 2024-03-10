@@ -380,6 +380,16 @@ exports[`<Footer /> Should render correctly 1`] = `
         </a>
         <a
           class="c11"
+          href="/reading-list"
+        >
+          <span
+            class="c12"
+          >
+            Reading list
+          </span>
+        </a>
+        <a
+          class="c11"
           href="/medals"
         >
           <span
@@ -834,6 +844,16 @@ exports[`<Footer /> Should render correctly with custom className 1`] = `
             class="c12"
           >
             Photography
+          </span>
+        </a>
+        <a
+          class="c11"
+          href="/reading-list"
+        >
+          <span
+            class="c12"
+          >
+            Reading list
           </span>
         </a>
         <a

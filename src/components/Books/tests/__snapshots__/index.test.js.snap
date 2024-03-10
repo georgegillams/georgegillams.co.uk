@@ -1,2864 +1,543 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<BlogCard /> Should render correctly 1`] = `
-.c0 {
-  position: relative;
-  display: inline-block;
-  z-index: 1;
-  width: 100%;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  box-shadow: 0.2rem 0.2rem 0.5rem 0 #25201f1E;
-  cursor: pointer;
-  box-sizing: border-box;
-  padding: 0;
-  -webkit-transition: all 0.4s;
-  transition: all 0.4s;
-  border: none;
-  border-radius: 0.35rem;
-  background: none;
-  text-align: left;
-}
-
-.c0:disabled {
-  cursor: not-allowed;
-}
-
-.c0:not(:disabled):focus,.c0:not(:disabled):focus-within,
-.c0:not(:disabled):active,.c0:not(:disabled):hover {
-  box-shadow: 0.4rem 0.4rem 1rem 0 #25201f1E;
-}
-
-.c2 {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  border-radius: 0.35rem;
-  overflow: hidden;
+exports[`<BookCard /> Should render correctly 1`] = `
+.c1 {
+  margin: 0;
+  font-size: 1.2rem;
 }
 
 .c3 {
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: -1;
-  width: calc(100% + 2rem);
-  height: calc(100% + 2rem);
-  margin-top: -1rem;
-  margin-left: -1rem;
-  background-color: #ffffff;
-  background-position: center;
-  background-size: cover;
-}
-
-.c4 {
-  height: 100%;
-  padding: 2rem;
-}
-
-.c1 {
-  color: #1e1e1e;
-}
-
-.c1:focus,
-.c1:active,
-.c1:hover {
-  color: #44aeff;
-}
-
-.c5 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  width: 100%;
-  height: 100%;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  box-sizing: border-box;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-content: space-around;
-  -ms-flex-line-pack: space-around;
-  align-content: space-around;
-}
-
-.c6 {
-  position: relative;
-  z-index: 3;
-  border-radius: 0.35rem;
-  overflow: hidden;
-  box-sizing: border-box;
-  width: 6.5rem;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  text-align: center;
-}
-
-.c10 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  z-index: 3;
-  min-width: 100%;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-pack: space-around;
-  -webkit-justify-content: space-around;
-  -ms-flex-pack: space-around;
-  justify-content: space-around;
-  -webkit-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
-  text-align: center;
-}
-
-.c9 {
-  display: none;
-}
-
-.c11 {
   margin: 0;
-  font-size: 2.2rem;
-  font-weight: bold;
-}
-
-.c8 {
-  margin: 0;
-  font-size: 1.5rem;
-  font-weight: bold;
-}
-
-@media (prefers-color-scheme:dark) {
-  .c0 {
-    box-shadow: 0.44rem 0.44rem 1rem 0 #00000000;
-  }
-}
-
-@media (prefers-color-scheme:dark) {
-  .c0:not(:disabled):focus,.c0:not(:disabled):focus-within,
-  .c0:not(:disabled):active,.c0:not(:disabled):hover {
-    box-shadow: 0.2rem 0.2rem 0.5rem 0 #00000000;
-  }
-}
-
-@media (prefers-color-scheme:dark) {
-  .c3 {
-    background-color: #1e1e1e;
-  }
-}
-
-@media (prefers-color-scheme:dark) {
-  .c1 {
-    color: #ffffff;
-  }
-}
-
-@media (prefers-color-scheme:dark) {
-  .c1:focus,
-  .c1:active,
-  .c1:hover {
-    color: #44aeff;
-  }
-}
-
-@media (min-width:32.25rem) {
-  .c5 {
-    -webkit-flex-direction: row;
-    -ms-flex-direction: row;
-    flex-direction: row;
-    -webkit-flex-wrap: wrap;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-  }
-}
-
-@media (min-width:32.25rem) {
-  .c5 {
-    -webkit-box-pack: unset;
-    -webkit-justify-content: unset;
-    -ms-flex-pack: unset;
-    justify-content: unset;
-    -webkit-align-content: unset;
-    -ms-flex-line-pack: unset;
-    align-content: unset;
-  }
-}
-
-@media (min-width:32.25rem) {
-  .c10 {
-    min-width: 10rem;
-    text-align: unset;
-  }
-}
-
-@media (min-width:32.25rem) {
-  .c7 {
-    display: none;
-  }
-}
-
-@media (min-width:32.25rem) {
-  .c9 {
-    display: inherit;
-  }
-}
-
-<div>
-  <a
-    aria-label="Blog 1 , NaN Invalid Date"
-    class="c0 c1"
-    href="/blog/asdfg"
-  >
-    <div
-      class="c2"
-    >
-      <div
-        class="c3"
-      />
-      <div
-        class="c4"
-      >
-        <div
-          aria-hidden="true"
-          class="c5"
-        >
-          <div
-            class="c6 date container"
-          >
-            <div
-              class="c7"
-            >
-              <span
-                class="c8"
-              >
-                NaN Invalid Date
-              </span>
-            </div>
-            <div
-              class="c9"
-            >
-              <span
-                class="c8"
-              >
-                NaN
-              </span>
-            </div>
-            <div
-              class="c9"
-            >
-              <span
-                class="c8"
-              >
-                Invalid Date
-              </span>
-            </div>
-          </div>
-          <div
-            class="c10"
-          >
-            <h1
-              class="c11"
-            >
-              Blog 1 
-            </h1>
-          </div>
-        </div>
-      </div>
-    </div>
-  </a>
-</div>
-`;
-
-exports[`<BlogCard /> Should render correctly when deleted 1`] = `
-.c0 {
-  position: relative;
-  display: inline-block;
-  z-index: 1;
-  width: 100%;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  box-shadow: 0.2rem 0.2rem 0.5rem 0 #25201f1E;
-  cursor: pointer;
-  box-sizing: border-box;
-  padding: 0;
-  -webkit-transition: all 0.4s;
-  transition: all 0.4s;
-  border: none;
-  border-radius: 0.35rem;
-  background: none;
-  text-align: left;
-}
-
-.c0:disabled {
-  cursor: not-allowed;
-}
-
-.c0:not(:disabled):focus,.c0:not(:disabled):focus-within,
-.c0:not(:disabled):active,.c0:not(:disabled):hover {
-  box-shadow: 0.4rem 0.4rem 1rem 0 #25201f1E;
-}
-
-.c2 {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  border-radius: 0.35rem;
-  overflow: hidden;
-}
-
-.c3 {
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: -1;
-  width: calc(100% + 2rem);
-  height: calc(100% + 2rem);
-  margin-top: -1rem;
-  margin-left: -1rem;
-  background-color: #ffffff;
-  background-position: center;
-  background-size: cover;
-}
-
-.c4 {
-  height: 100%;
-  padding: 2rem;
-}
-
-.c19 {
-  position: relative;
-  width: 100%;
-  border-radius: 0.25rem;
-  background-color: rgb(238,238,238);
-  overflow: hidden;
-}
-
-.c21 {
-  position: absolute;
-  top: 0;
-  width: 13rem;
-  height: 100vh;
-  background-image: linear-gradient( 90deg,rgb(238,238,238),rgb(245,245,245),rgb(238,238,238) );
-  background-repeat: no-repeat;
-  background-size: 12.5rem 100%;
-  -webkit-animation: eflhBg 3.5s ease-in-out infinite;
-  animation: eflhBg 3.5s ease-in-out infinite;
-}
-
-.c15 {
-  position: relative;
-}
-
-.c17 {
-  height: 0;
-}
-
-.c18 {
-  position: absolute;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  width: 100%;
-  height: 100%;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.c20 {
-  z-index: -1;
-  width: 100%;
-  height: 100%;
-}
-
-.c22 {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  -webkit-transition: opacity ease-in-out 0.4s;
-  transition: opacity ease-in-out 0.4s;
-  opacity: 0;
-}
-
-.c24 {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  -webkit-transition: opacity ease-in-out 0.4s;
-  transition: opacity ease-in-out 0.4s;
-}
-
-.c23 {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  -webkit-transition: opacity ease-in-out 0.4s;
-  transition: opacity ease-in-out 0.4s;
-  opacity: 0;
-  display: none;
-}
-
-.c25 {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  -webkit-transition: opacity ease-in-out 0.4s;
-  transition: opacity ease-in-out 0.4s;
-  display: none;
-}
-
-.c1 {
-  color: #1e1e1e;
-}
-
-.c1:focus,
-.c1:active,
-.c1:hover {
-  color: #44aeff;
-}
-
-.c5 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  width: 100%;
-  height: 100%;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  box-sizing: border-box;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-content: space-around;
-  -ms-flex-line-pack: space-around;
-  align-content: space-around;
-}
-
-.c6 {
-  position: relative;
-  z-index: 3;
-  border-radius: 0.35rem;
-  overflow: hidden;
-  box-sizing: border-box;
-  width: 6.5rem;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  text-align: center;
-}
-
-.c10 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  z-index: 3;
-  min-width: 100%;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-pack: space-around;
-  -webkit-justify-content: space-around;
-  -ms-flex-pack: space-around;
-  justify-content: space-around;
-  -webkit-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
-  text-align: center;
-}
-
-.c14 {
-  display: block;
-  z-index: 3;
-  width: 6rem;
-  height: 6rem;
-  justify-self: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-align-content: center;
-  -ms-flex-line-pack: center;
-  align-content: center;
-  -webkit-align-self: center;
-  -ms-flex-item-align: center;
-  align-self: center;
-  border-radius: 50rem;
-  background-position: center;
-  background-size: cover;
-  overflow: hidden;
-}
-
-.c9 {
-  display: none;
-}
-
-.c16 {
-  z-index: 3;
-  width: 100%;
-  height: 100%;
-}
-
-.c12 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  grid-area: children;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-text-decoration: none !important;
-  text-decoration: none !important;
-  -webkit-text-decoration-color: transparent !important;
-  text-decoration-color: transparent !important;
-  -webkit-text-decoration-line: none !important;
-  text-decoration-line: none !important;
-}
-
-.c11 {
-  margin: 0;
-  font-size: 2.2rem;
-  font-weight: bold;
-}
-
-.c8 {
-  margin: 0;
-  font-size: 1.5rem;
-  font-weight: bold;
-}
-
-.c13 {
-  position: relative;
-  top: 0.15rem;
-  height: 1rem;
-  padding: 0.17rem 0.4rem 0.27rem;
-  -webkit-transition: all 0.4s;
-  transition: all 0.4s;
-  border: none;
-  border-radius: 0.2rem;
-  color: white;
   font-size: 1rem;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  -webkit-text-decoration-color: transparent;
-  text-decoration-color: transparent;
-  -webkit-text-decoration-line: none;
-  text-decoration-line: none;
-  background-color: #01579b;
 }
 
-@media (prefers-color-scheme:dark) {
+.c0 {
+  display: grid;
+  grid-template-columns: 4rem 1fr;
+  min-height: 4rem;
+  gap: 0.375rem 1rem;
+  opacity: 0.6;
+}
+
+.c2 {
+  grid-row: 1;
+  grid-column: 2;
+}
+
+.c4 {
+  grid-row: 2;
+  grid-column: 2;
+}
+
+.c5 {
+  grid-row: 3;
+  grid-column: 2;
+}
+
+@media (min-width:32.25rem) {
   .c0 {
-    box-shadow: 0.44rem 0.44rem 1rem 0 #00000000;
+    grid-template-columns: 4rem 1fr 10rem;
+    grid-template-rows: 3;
   }
 }
 
-@media (prefers-color-scheme:dark) {
-  .c0:not(:disabled):focus,.c0:not(:disabled):focus-within,
-  .c0:not(:disabled):active,.c0:not(:disabled):hover {
-    box-shadow: 0.2rem 0.2rem 0.5rem 0 #00000000;
-  }
-}
-
-@media (prefers-color-scheme:dark) {
-  .c3 {
-    background-color: #1e1e1e;
-  }
-}
-
-@media (prefers-color-scheme:dark) {
-  .c19 {
-    background-color: rgb(17,17,17);
-  }
-}
-
-@media (prefers-color-scheme:dark) {
-  .c21 {
-    background-image: linear-gradient( 90deg,rgb(17,17,17),rgb(50,50,50),rgb(17,17,17) );
-  }
-}
-
-@media (prefers-color-scheme:dark) {
-  .c22 {
-    display: none;
-  }
-}
-
-@media (prefers-color-scheme:dark) {
-  .c24 {
-    display: none;
-  }
-}
-
-@media (prefers-color-scheme:dark) {
-  .c23 {
-    display: unset;
-  }
-}
-
-@media (prefers-color-scheme:dark) {
-  .c25 {
-    display: unset;
-  }
-}
-
-@media (prefers-color-scheme:dark) {
-  .c1 {
-    color: #ffffff;
-  }
-}
-
-@media (prefers-color-scheme:dark) {
-  .c1:focus,
-  .c1:active,
-  .c1:hover {
-    color: #44aeff;
-  }
-}
-
-@media (min-width:32.25rem) {
-  .c5 {
-    -webkit-flex-direction: row;
-    -ms-flex-direction: row;
-    flex-direction: row;
-    -webkit-flex-wrap: wrap;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-  }
-}
-
-@media (min-width:32.25rem) {
-  .c5 {
-    -webkit-box-pack: unset;
-    -webkit-justify-content: unset;
-    -ms-flex-pack: unset;
-    justify-content: unset;
-    -webkit-align-content: unset;
-    -ms-flex-line-pack: unset;
-    align-content: unset;
-  }
-}
-
-@media (min-width:32.25rem) {
-  .c10 {
-    min-width: 10rem;
-    text-align: unset;
-  }
-}
-
-@media (min-width:32.25rem) {
-  .c7 {
-    display: none;
-  }
-}
-
-@media (min-width:32.25rem) {
-  .c9 {
-    display: inherit;
+@media (min-width:50.25rem) {
+  .c0 {
+    gap: calc(2 * 0.375rem) 1rem;
+    grid-template-columns: 5rem 1fr 10rem;
   }
 }
 
 <div>
-  <a
-    aria-label="Untitled blog (DELETED), 23to30 Dec, Tagged travel"
-    class="c0 c1"
-    href="/blog/mndyd8"
+  <div
+    class="c0"
   >
-    <div
-      class="c2"
+    <h1
+      class="c1 c2"
     >
-      <div
-        class="c3"
-      />
-      <div
-        class="c4"
-      >
-        <div
-          aria-hidden="true"
-          class="c5"
-        >
-          <div
-            class="c6 date container"
-          >
-            <div
-              class="c7"
-            >
-              <span
-                class="c8"
-              >
-                23-30 Dec
-              </span>
-            </div>
-            <div
-              class="c9"
-            >
-              <span
-                class="c8"
-              >
-                23-30
-              </span>
-            </div>
-            <div
-              class="c9"
-            >
-              <span
-                class="c8"
-              >
-                Dec
-              </span>
-            </div>
-          </div>
-          <div
-            class="c10"
-          >
-            <h1
-              class="c11"
-            >
-              Untitled blog (DELETED)
-            </h1>
-            <div
-              class="c12"
-            >
-              <div
-                class=""
-              >
-                <span
-                  class="c13"
-                  type="travel"
-                >
-                  Travel
-                </span>
-              </div>
-            </div>
-          </div>
-          <div
-            class="c14"
-          >
-            <div
-              class="c15 c16"
-            >
-              <style>
-                
-          .js .gg-image__img--hide-js {display: none;}
-          .no-js .gg-image__img--hide-no-js {display: none;}
-        
-              </style>
-              <div
-                class="c17"
-                style="padding-bottom: 100%;"
-              >
-                <div
-                  class="c18"
-                >
-                  <div
-                    class="c19 c20"
-                  >
-                    <div
-                      class="c21"
-                      style="margin-left: -0px;"
-                    />
-                  </div>
-                </div>
-                <div
-                  class="gg-image__img--hide-no-js"
-                >
-                  <img
-                    alt="card"
-                    class="c22"
-                    src="https://i.imgur.com/ppPEuDs.jpg"
-                  />
-                  <img
-                    alt="card"
-                    class="c23"
-                    src="https://i.imgur.com/ppPEuDs.jpg"
-                  />
-                </div>
-                <div
-                  class="gg-image__img--hide-js"
-                >
-                  <img
-                    alt="card"
-                    class="c24"
-                    src="https://i.imgur.com/ppPEuDs.jpg"
-                  />
-                  <img
-                    alt="card"
-                    class="c25"
-                    src="https://i.imgur.com/ppPEuDs.jpg"
-                  />
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </a>
+      Book 1 🎉
+    </h1>
+    <span
+      class="c3 c4"
+    >
+      By 
+      Author 1
+    </span>
+    <span
+      class="c3 c5"
+    >
+      Want to read
+    </span>
+  </div>
 </div>
 `;
 
-exports[`<BlogCard /> Should render correctly with all parameters supplied 1`] = `
-.c0 {
-  position: relative;
-  display: inline-block;
-  z-index: 1;
-  width: 100%;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  box-shadow: 0.2rem 0.2rem 0.5rem 0 #25201f1E;
-  cursor: pointer;
-  box-sizing: border-box;
-  padding: 0;
-  -webkit-transition: all 0.4s;
-  transition: all 0.4s;
-  border: none;
-  border-radius: 0.35rem;
-  background: none;
-  text-align: left;
-}
-
-.c0:disabled {
-  cursor: not-allowed;
-}
-
-.c0:not(:disabled):focus,.c0:not(:disabled):focus-within,
-.c0:not(:disabled):active,.c0:not(:disabled):hover {
-  box-shadow: 0.4rem 0.4rem 1rem 0 #25201f1E;
-}
-
-.c2 {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  border-radius: 0.35rem;
-  overflow: hidden;
+exports[`<BookCard /> Should render correctly when deleted 1`] = `
+.c1 {
+  margin: 0;
+  font-size: 1.2rem;
 }
 
 .c3 {
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: -1;
-  width: calc(100% + 2rem);
-  height: calc(100% + 2rem);
-  margin-top: -1rem;
-  margin-left: -1rem;
-  background-color: #ffffff;
-  background-position: center;
-  background-size: cover;
-}
-
-.c4 {
-  height: 100%;
-  padding: 2rem;
-}
-
-.c19 {
-  position: relative;
-  width: 100%;
-  border-radius: 0.25rem;
-  background-color: rgb(238,238,238);
-  overflow: hidden;
-}
-
-.c21 {
-  position: absolute;
-  top: 0;
-  width: 13rem;
-  height: 100vh;
-  background-image: linear-gradient( 90deg,rgb(238,238,238),rgb(245,245,245),rgb(238,238,238) );
-  background-repeat: no-repeat;
-  background-size: 12.5rem 100%;
-  -webkit-animation: eflhBg 3.5s ease-in-out infinite;
-  animation: eflhBg 3.5s ease-in-out infinite;
-}
-
-.c15 {
-  position: relative;
-}
-
-.c17 {
-  height: 0;
-}
-
-.c18 {
-  position: absolute;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  width: 100%;
-  height: 100%;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.c20 {
-  z-index: -1;
-  width: 100%;
-  height: 100%;
-}
-
-.c22 {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  -webkit-transition: opacity ease-in-out 0.4s;
-  transition: opacity ease-in-out 0.4s;
-  opacity: 0;
-}
-
-.c24 {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  -webkit-transition: opacity ease-in-out 0.4s;
-  transition: opacity ease-in-out 0.4s;
-}
-
-.c23 {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  -webkit-transition: opacity ease-in-out 0.4s;
-  transition: opacity ease-in-out 0.4s;
-  opacity: 0;
-  display: none;
-}
-
-.c25 {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  -webkit-transition: opacity ease-in-out 0.4s;
-  transition: opacity ease-in-out 0.4s;
-  display: none;
-}
-
-.c1 {
-  color: #1e1e1e;
-}
-
-.c1:focus,
-.c1:active,
-.c1:hover {
-  color: #44aeff;
-}
-
-.c5 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  width: 100%;
-  height: 100%;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  box-sizing: border-box;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-content: space-around;
-  -ms-flex-line-pack: space-around;
-  align-content: space-around;
-}
-
-.c6 {
-  position: relative;
-  z-index: 3;
-  border-radius: 0.35rem;
-  overflow: hidden;
-  box-sizing: border-box;
-  width: 6.5rem;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  text-align: center;
-}
-
-.c10 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  z-index: 3;
-  min-width: 100%;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-pack: space-around;
-  -webkit-justify-content: space-around;
-  -ms-flex-pack: space-around;
-  justify-content: space-around;
-  -webkit-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
-  text-align: center;
-}
-
-.c14 {
-  display: block;
-  z-index: 3;
-  width: 6rem;
-  height: 6rem;
-  justify-self: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-align-content: center;
-  -ms-flex-line-pack: center;
-  align-content: center;
-  -webkit-align-self: center;
-  -ms-flex-item-align: center;
-  align-self: center;
-  border-radius: 50rem;
-  background-position: center;
-  background-size: cover;
-  overflow: hidden;
-}
-
-.c9 {
-  display: none;
-}
-
-.c16 {
-  z-index: 3;
-  width: 100%;
-  height: 100%;
-}
-
-.c12 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  grid-area: children;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-text-decoration: none !important;
-  text-decoration: none !important;
-  -webkit-text-decoration-color: transparent !important;
-  text-decoration-color: transparent !important;
-  -webkit-text-decoration-line: none !important;
-  text-decoration-line: none !important;
-}
-
-.c11 {
   margin: 0;
-  font-size: 2.2rem;
-  font-weight: bold;
-}
-
-.c8 {
-  margin: 0;
-  font-size: 1.5rem;
-  font-weight: bold;
-}
-
-.c13 {
-  position: relative;
-  top: 0.15rem;
-  height: 1rem;
-  padding: 0.17rem 0.4rem 0.27rem;
-  -webkit-transition: all 0.4s;
-  transition: all 0.4s;
-  border: none;
-  border-radius: 0.2rem;
-  color: white;
   font-size: 1rem;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  -webkit-text-decoration-color: transparent;
-  text-decoration-color: transparent;
-  -webkit-text-decoration-line: none;
-  text-decoration-line: none;
-  background-color: #01579b;
 }
 
-@media (prefers-color-scheme:dark) {
-  .c0 {
-    box-shadow: 0.44rem 0.44rem 1rem 0 #00000000;
-  }
-}
-
-@media (prefers-color-scheme:dark) {
-  .c0:not(:disabled):focus,.c0:not(:disabled):focus-within,
-  .c0:not(:disabled):active,.c0:not(:disabled):hover {
-    box-shadow: 0.2rem 0.2rem 0.5rem 0 #00000000;
-  }
-}
-
-@media (prefers-color-scheme:dark) {
-  .c3 {
-    background-color: #1e1e1e;
-  }
-}
-
-@media (prefers-color-scheme:dark) {
-  .c19 {
-    background-color: rgb(17,17,17);
-  }
-}
-
-@media (prefers-color-scheme:dark) {
-  .c21 {
-    background-image: linear-gradient( 90deg,rgb(17,17,17),rgb(50,50,50),rgb(17,17,17) );
-  }
-}
-
-@media (prefers-color-scheme:dark) {
-  .c22 {
-    display: none;
-  }
-}
-
-@media (prefers-color-scheme:dark) {
-  .c24 {
-    display: none;
-  }
-}
-
-@media (prefers-color-scheme:dark) {
-  .c23 {
-    display: unset;
-  }
-}
-
-@media (prefers-color-scheme:dark) {
-  .c25 {
-    display: unset;
-  }
-}
-
-@media (prefers-color-scheme:dark) {
-  .c1 {
-    color: #ffffff;
-  }
-}
-
-@media (prefers-color-scheme:dark) {
-  .c1:focus,
-  .c1:active,
-  .c1:hover {
-    color: #44aeff;
-  }
-}
-
-@media (min-width:32.25rem) {
-  .c5 {
-    -webkit-flex-direction: row;
-    -ms-flex-direction: row;
-    flex-direction: row;
-    -webkit-flex-wrap: wrap;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-  }
-}
-
-@media (min-width:32.25rem) {
-  .c5 {
-    -webkit-box-pack: unset;
-    -webkit-justify-content: unset;
-    -ms-flex-pack: unset;
-    justify-content: unset;
-    -webkit-align-content: unset;
-    -ms-flex-line-pack: unset;
-    align-content: unset;
-  }
-}
-
-@media (min-width:32.25rem) {
-  .c10 {
-    min-width: 10rem;
-    text-align: unset;
-  }
-}
-
-@media (min-width:32.25rem) {
-  .c7 {
-    display: none;
-  }
-}
-
-@media (min-width:32.25rem) {
-  .c9 {
-    display: inherit;
-  }
-}
-
-<div>
-  <a
-    aria-label="St Ives  2018, 23to30 Dec, Tagged travel"
-    class="c0 c1"
-    href="/blog/zxywvuts"
-  >
-    <div
-      class="c2"
-    >
-      <div
-        class="c3"
-      />
-      <div
-        class="c4"
-      >
-        <div
-          aria-hidden="true"
-          class="c5"
-        >
-          <div
-            class="c6 date container"
-          >
-            <div
-              class="c7"
-            >
-              <span
-                class="c8"
-              >
-                23-30 Dec
-              </span>
-            </div>
-            <div
-              class="c9"
-            >
-              <span
-                class="c8"
-              >
-                23-30
-              </span>
-            </div>
-            <div
-              class="c9"
-            >
-              <span
-                class="c8"
-              >
-                Dec
-              </span>
-            </div>
-          </div>
-          <div
-            class="c10"
-          >
-            <h1
-              class="c11"
-            >
-              St Ives  2018
-            </h1>
-            <div
-              class="c12"
-            >
-              <div
-                class=""
-              >
-                <span
-                  class="c13"
-                  type="travel"
-                >
-                  Travel
-                </span>
-              </div>
-            </div>
-          </div>
-          <div
-            class="c14"
-          >
-            <div
-              class="c15 c16"
-            >
-              <style>
-                
-          .js .gg-image__img--hide-js {display: none;}
-          .no-js .gg-image__img--hide-no-js {display: none;}
-        
-              </style>
-              <div
-                class="c17"
-                style="padding-bottom: 100%;"
-              >
-                <div
-                  class="c18"
-                >
-                  <div
-                    class="c19 c20"
-                  >
-                    <div
-                      class="c21"
-                      style="margin-left: -0px;"
-                    />
-                  </div>
-                </div>
-                <div
-                  class="gg-image__img--hide-no-js"
-                >
-                  <img
-                    alt="card"
-                    class="c22"
-                    src="https://i.imgur.com/ppPEuDs.jpg"
-                  />
-                  <img
-                    alt="card"
-                    class="c23"
-                    src="https://i.imgur.com/ppPEuDs.jpg"
-                  />
-                </div>
-                <div
-                  class="gg-image__img--hide-js"
-                >
-                  <img
-                    alt="card"
-                    class="c24"
-                    src="https://i.imgur.com/ppPEuDs.jpg"
-                  />
-                  <img
-                    alt="card"
-                    class="c25"
-                    src="https://i.imgur.com/ppPEuDs.jpg"
-                  />
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </a>
-</div>
-`;
-
-exports[`<BlogCard /> Should render correctly with custom className 1`] = `
 .c0 {
-  position: relative;
-  display: inline-block;
-  z-index: 1;
-  width: 100%;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  box-shadow: 0.2rem 0.2rem 0.5rem 0 #25201f1E;
-  cursor: pointer;
-  box-sizing: border-box;
-  padding: 0;
-  -webkit-transition: all 0.4s;
-  transition: all 0.4s;
-  border: none;
-  border-radius: 0.35rem;
-  background: none;
-  text-align: left;
-}
-
-.c0:disabled {
-  cursor: not-allowed;
-}
-
-.c0:not(:disabled):focus,.c0:not(:disabled):focus-within,
-.c0:not(:disabled):active,.c0:not(:disabled):hover {
-  box-shadow: 0.4rem 0.4rem 1rem 0 #25201f1E;
+  display: grid;
+  grid-template-columns: 4rem 1fr;
+  min-height: 4rem;
+  gap: 0.375rem 1rem;
 }
 
 .c2 {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  border-radius: 0.35rem;
-  overflow: hidden;
-}
-
-.c3 {
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: -1;
-  width: calc(100% + 2rem);
-  height: calc(100% + 2rem);
-  margin-top: -1rem;
-  margin-left: -1rem;
-  background-color: #ffffff;
-  background-position: center;
-  background-size: cover;
+  grid-row: 1;
+  grid-column: 2;
 }
 
 .c4 {
-  height: 100%;
-  padding: 2rem;
-}
-
-.c1 {
-  color: #1e1e1e;
-}
-
-.c1:focus,
-.c1:active,
-.c1:hover {
-  color: #44aeff;
+  grid-row: 2;
+  grid-column: 2;
 }
 
 .c5 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  width: 100%;
-  height: 100%;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  box-sizing: border-box;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-content: space-around;
-  -ms-flex-line-pack: space-around;
-  align-content: space-around;
+  color: orange;
+  grid-row: 3;
+  grid-column: 2;
 }
 
-.c6 {
-  position: relative;
-  z-index: 3;
-  border-radius: 0.35rem;
-  overflow: hidden;
-  box-sizing: border-box;
-  width: 6.5rem;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  text-align: center;
-}
-
-.c10 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  z-index: 3;
-  min-width: 100%;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-pack: space-around;
-  -webkit-justify-content: space-around;
-  -ms-flex-pack: space-around;
-  justify-content: space-around;
-  -webkit-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
-  text-align: center;
-}
-
-.c9 {
-  display: none;
-}
-
-.c11 {
-  margin: 0;
-  font-size: 2.2rem;
-  font-weight: bold;
-}
-
-.c8 {
-  margin: 0;
-  font-size: 1.5rem;
-  font-weight: bold;
-}
-
-@media (prefers-color-scheme:dark) {
+@media (min-width:32.25rem) {
   .c0 {
-    box-shadow: 0.44rem 0.44rem 1rem 0 #00000000;
+    grid-template-columns: 4rem 1fr 10rem;
+    grid-template-rows: 3;
   }
 }
 
-@media (prefers-color-scheme:dark) {
-  .c0:not(:disabled):focus,.c0:not(:disabled):focus-within,
-  .c0:not(:disabled):active,.c0:not(:disabled):hover {
-    box-shadow: 0.2rem 0.2rem 0.5rem 0 #00000000;
-  }
-}
-
-@media (prefers-color-scheme:dark) {
-  .c3 {
-    background-color: #1e1e1e;
-  }
-}
-
-@media (prefers-color-scheme:dark) {
-  .c1 {
-    color: #ffffff;
-  }
-}
-
-@media (prefers-color-scheme:dark) {
-  .c1:focus,
-  .c1:active,
-  .c1:hover {
-    color: #44aeff;
-  }
-}
-
-@media (min-width:32.25rem) {
-  .c5 {
-    -webkit-flex-direction: row;
-    -ms-flex-direction: row;
-    flex-direction: row;
-    -webkit-flex-wrap: wrap;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-  }
-}
-
-@media (min-width:32.25rem) {
-  .c5 {
-    -webkit-box-pack: unset;
-    -webkit-justify-content: unset;
-    -ms-flex-pack: unset;
-    justify-content: unset;
-    -webkit-align-content: unset;
-    -ms-flex-line-pack: unset;
-    align-content: unset;
-  }
-}
-
-@media (min-width:32.25rem) {
-  .c10 {
-    min-width: 10rem;
-    text-align: unset;
-  }
-}
-
-@media (min-width:32.25rem) {
-  .c7 {
-    display: none;
-  }
-}
-
-@media (min-width:32.25rem) {
-  .c9 {
-    display: inherit;
+@media (min-width:50.25rem) {
+  .c0 {
+    gap: calc(2 * 0.375rem) 1rem;
+    grid-template-columns: 5rem 1fr 10rem;
   }
 }
 
 <div>
-  <a
-    aria-label="Blog 1 , NaN Invalid Date"
-    class="c0 c1 test-custom-classname"
-    href="/blog/asdfg"
+  <div
+    class="c0"
   >
-    <div
-      class="c2"
+    <h1
+      class="c1 c2"
     >
-      <div
-        class="c3"
-      />
-      <div
-        class="c4"
-      >
-        <div
-          aria-hidden="true"
-          class="c5"
-        >
-          <div
-            class="c6 date container"
-          >
-            <div
-              class="c7"
-            >
-              <span
-                class="c8"
-              >
-                NaN Invalid Date
-              </span>
-            </div>
-            <div
-              class="c9"
-            >
-              <span
-                class="c8"
-              >
-                NaN
-              </span>
-            </div>
-            <div
-              class="c9"
-            >
-              <span
-                class="c8"
-              >
-                Invalid Date
-              </span>
-            </div>
-          </div>
-          <div
-            class="c10"
-          >
-            <h1
-              class="c11"
-            >
-              Blog 1 
-            </h1>
-          </div>
-        </div>
-      </div>
-    </div>
-  </a>
+      Book 3 (DELETED)
+    </h1>
+    <span
+      class="c3 c4"
+    >
+      By 
+      Author 3
+    </span>
+    <span
+      class="c3 c5"
+      color="orange"
+    >
+      Reading now
+    </span>
+  </div>
 </div>
 `;
 
-exports[`<BlogsList /> Should render correctly 1`] = `
-.c0 {
-  position: relative;
-  display: inline-block;
-  z-index: 1;
-  width: 100%;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  box-shadow: 0.2rem 0.2rem 0.5rem 0 #25201f1E;
-  cursor: pointer;
-  box-sizing: border-box;
-  padding: 0;
-  -webkit-transition: all 0.4s;
-  transition: all 0.4s;
-  border: none;
-  border-radius: 0.35rem;
-  background: none;
-  text-align: left;
-}
-
-.c0:disabled {
-  cursor: not-allowed;
-}
-
-.c0:not(:disabled):focus,.c0:not(:disabled):focus-within,
-.c0:not(:disabled):active,.c0:not(:disabled):hover {
-  box-shadow: 0.4rem 0.4rem 1rem 0 #25201f1E;
+exports[`<BookCard /> Should render correctly with all parameters supplied 1`] = `
+.c1 {
+  margin: 0;
+  font-size: 1.2rem;
 }
 
 .c3 {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  border-radius: 0.35rem;
-  overflow: hidden;
+  margin: 0;
+  font-size: 1rem;
+}
+
+.c0 {
+  display: grid;
+  grid-template-columns: 4rem 1fr;
+  min-height: 4rem;
+  gap: 0.375rem 1rem;
+}
+
+.c2 {
+  grid-row: 1;
+  grid-column: 2;
 }
 
 .c4 {
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: -1;
-  width: calc(100% + 2rem);
-  height: calc(100% + 2rem);
-  margin-top: -1rem;
-  margin-left: -1rem;
-  background-color: #ffffff;
-  background-position: center;
-  background-size: cover;
+  grid-row: 2;
+  grid-column: 2;
 }
 
 .c5 {
-  height: 100%;
-  padding: 2rem;
+  color: orange;
+  grid-row: 3;
+  grid-column: 2;
 }
 
-.c20 {
-  position: relative;
-  width: 100%;
-  border-radius: 0.25rem;
-  background-color: rgb(238,238,238);
-  overflow: hidden;
+@media (min-width:32.25rem) {
+  .c0 {
+    grid-template-columns: 4rem 1fr 10rem;
+    grid-template-rows: 3;
+  }
 }
 
-.c22 {
-  position: absolute;
-  top: 0;
-  width: 13rem;
-  height: 100vh;
-  background-image: linear-gradient( 90deg,rgb(238,238,238),rgb(245,245,245),rgb(238,238,238) );
-  background-repeat: no-repeat;
-  background-size: 12.5rem 100%;
-  -webkit-animation: eflhBg 3.5s ease-in-out infinite;
-  animation: eflhBg 3.5s ease-in-out infinite;
+@media (min-width:50.25rem) {
+  .c0 {
+    gap: calc(2 * 0.375rem) 1rem;
+    grid-template-columns: 5rem 1fr 10rem;
+  }
 }
 
-.c16 {
-  position: relative;
-}
+<div>
+  <div
+    class="c0"
+  >
+    <h1
+      class="c1 c2"
+    >
+      Book 2
+    </h1>
+    <span
+      class="c3 c4"
+    >
+      By 
+      Author 2
+    </span>
+    <span
+      class="c3 c5"
+      color="orange"
+    >
+      Reading now
+    </span>
+  </div>
+</div>
+`;
 
-.c18 {
-  height: 0;
-}
-
-.c19 {
-  position: absolute;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  width: 100%;
-  height: 100%;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.c21 {
-  z-index: -1;
-  width: 100%;
-  height: 100%;
-}
-
-.c23 {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  -webkit-transition: opacity ease-in-out 0.4s;
-  transition: opacity ease-in-out 0.4s;
-  opacity: 0;
-}
-
-.c25 {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  -webkit-transition: opacity ease-in-out 0.4s;
-  transition: opacity ease-in-out 0.4s;
-}
-
-.c24 {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  -webkit-transition: opacity ease-in-out 0.4s;
-  transition: opacity ease-in-out 0.4s;
-  opacity: 0;
-  display: none;
-}
-
-.c26 {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  -webkit-transition: opacity ease-in-out 0.4s;
-  transition: opacity ease-in-out 0.4s;
-  display: none;
-}
-
+exports[`<BookCard /> Should render correctly with custom className 1`] = `
 .c1 {
-  color: #1e1e1e;
+  margin: 0;
+  font-size: 1.2rem;
 }
 
-.c1:focus,
-.c1:active,
-.c1:hover {
-  color: #44aeff;
+.c3 {
+  margin: 0;
+  font-size: 1rem;
 }
 
-.c6 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  width: 100%;
-  height: 100%;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  box-sizing: border-box;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-content: space-around;
-  -ms-flex-line-pack: space-around;
-  align-content: space-around;
+.c0 {
+  display: grid;
+  grid-template-columns: 4rem 1fr;
+  min-height: 4rem;
+  gap: 0.375rem 1rem;
+  opacity: 0.6;
+}
+
+.c2 {
+  grid-row: 1;
+  grid-column: 2;
+}
+
+.c4 {
+  grid-row: 2;
+  grid-column: 2;
+}
+
+.c5 {
+  grid-row: 3;
+  grid-column: 2;
+}
+
+@media (min-width:32.25rem) {
+  .c0 {
+    grid-template-columns: 4rem 1fr 10rem;
+    grid-template-rows: 3;
+  }
+}
+
+@media (min-width:50.25rem) {
+  .c0 {
+    gap: calc(2 * 0.375rem) 1rem;
+    grid-template-columns: 5rem 1fr 10rem;
+  }
+}
+
+<div>
+  <div
+    class="c0 test-custom-classname"
+  >
+    <h1
+      class="c1 c2"
+    >
+      Book 1 🎉
+    </h1>
+    <span
+      class="c3 c4"
+    >
+      By 
+      Author 1
+    </span>
+    <span
+      class="c3 c5"
+    >
+      Want to read
+    </span>
+  </div>
+</div>
+`;
+
+exports[`<BooksList /> Should render correctly 1`] = `
+.c2 {
+  margin: 0;
+  font-size: 1.2rem;
+}
+
+.c4 {
+  margin: 0;
+  font-size: 1rem;
+}
+
+.c0 {
+  display: grid;
+  grid-template-columns: 4rem 1fr;
+  min-height: 4rem;
+  gap: 0.375rem 1rem;
+  opacity: 0.6;
 }
 
 .c7 {
-  position: relative;
-  z-index: 3;
-  border-radius: 0.35rem;
-  overflow: hidden;
-  box-sizing: border-box;
-  width: 6.5rem;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  text-align: center;
+  display: grid;
+  grid-template-columns: 4rem 1fr;
+  min-height: 4rem;
+  gap: 0.375rem 1rem;
 }
 
-.c11 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  z-index: 3;
-  min-width: 100%;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-pack: space-around;
-  -webkit-justify-content: space-around;
-  -ms-flex-pack: space-around;
-  justify-content: space-around;
-  -webkit-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
-  text-align: center;
+.c3 {
+  grid-row: 1;
+  grid-column: 2;
 }
 
-.c15 {
-  display: block;
-  z-index: 3;
-  width: 6rem;
-  height: 6rem;
-  justify-self: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-align-content: center;
-  -ms-flex-line-pack: center;
-  align-content: center;
-  -webkit-align-self: center;
-  -ms-flex-item-align: center;
-  align-self: center;
-  border-radius: 50rem;
-  background-position: center;
-  background-size: cover;
-  overflow: hidden;
+.c5 {
+  grid-row: 2;
+  grid-column: 2;
 }
 
-.c10 {
-  display: none;
+.c6 {
+  grid-row: 3;
+  grid-column: 2;
 }
 
-.c17 {
-  z-index: 3;
+.c8 {
+  color: orange;
+  grid-row: 3;
+  grid-column: 2;
+}
+
+.c1 {
   width: 100%;
-  height: 100%;
-}
-
-.c13 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  grid-area: children;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-text-decoration: none !important;
-  text-decoration: none !important;
-  -webkit-text-decoration-color: transparent !important;
-  text-decoration-color: transparent !important;
-  -webkit-text-decoration-line: none !important;
-  text-decoration-line: none !important;
-}
-
-.c12 {
-  margin: 0;
-  font-size: 2.2rem;
-  font-weight: bold;
-}
-
-.c9 {
-  margin: 0;
-  font-size: 1.5rem;
-  font-weight: bold;
-}
-
-.c14 {
-  position: relative;
-  top: 0.15rem;
-  height: 1rem;
-  padding: 0.17rem 0.4rem 0.27rem;
-  -webkit-transition: all 0.4s;
-  transition: all 0.4s;
-  border: none;
-  border-radius: 0.2rem;
-  color: white;
-  font-size: 1rem;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  -webkit-text-decoration-color: transparent;
-  text-decoration-color: transparent;
-  -webkit-text-decoration-line: none;
-  text-decoration-line: none;
-  background-color: #01579b;
-}
-
-.c2 {
-  display: inline-block;
-  width: 100%;
-  margin-bottom: 2rem;
+  margin-top: 2rem;
   box-sizing: border-box;
 }
 
-@media (prefers-color-scheme:dark) {
+@media (min-width:32.25rem) {
   .c0 {
-    box-shadow: 0.44rem 0.44rem 1rem 0 #00000000;
+    grid-template-columns: 4rem 1fr 10rem;
+    grid-template-rows: 3;
   }
 }
 
-@media (prefers-color-scheme:dark) {
-  .c0:not(:disabled):focus,.c0:not(:disabled):focus-within,
-  .c0:not(:disabled):active,.c0:not(:disabled):hover {
-    box-shadow: 0.2rem 0.2rem 0.5rem 0 #00000000;
+@media (min-width:50.25rem) {
+  .c0 {
+    gap: calc(2 * 0.375rem) 1rem;
+    grid-template-columns: 5rem 1fr 10rem;
   }
 }
 
-@media (prefers-color-scheme:dark) {
-  .c4 {
-    background-color: #1e1e1e;
+@media (min-width:32.25rem) {
+  .c7 {
+    grid-template-columns: 4rem 1fr 10rem;
+    grid-template-rows: 3;
   }
 }
 
-@media (prefers-color-scheme:dark) {
-  .c20 {
-    background-color: rgb(17,17,17);
+@media (min-width:50.25rem) {
+  .c7 {
+    gap: calc(2 * 0.375rem) 1rem;
+    grid-template-columns: 5rem 1fr 10rem;
   }
 }
 
-@media (prefers-color-scheme:dark) {
-  .c22 {
-    background-image: linear-gradient( 90deg,rgb(17,17,17),rgb(50,50,50),rgb(17,17,17) );
-  }
-}
-
-@media (prefers-color-scheme:dark) {
-  .c23 {
-    display: none;
-  }
-}
-
-@media (prefers-color-scheme:dark) {
-  .c25 {
-    display: none;
-  }
-}
-
-@media (prefers-color-scheme:dark) {
-  .c24 {
-    display: unset;
-  }
-}
-
-@media (prefers-color-scheme:dark) {
-  .c26 {
-    display: unset;
-  }
-}
-
-@media (prefers-color-scheme:dark) {
+@media (min-width:50.25rem) {
   .c1 {
-    color: #ffffff;
-  }
-}
-
-@media (prefers-color-scheme:dark) {
-  .c1:focus,
-  .c1:active,
-  .c1:hover {
-    color: #44aeff;
-  }
-}
-
-@media (min-width:32.25rem) {
-  .c6 {
-    -webkit-flex-direction: row;
-    -ms-flex-direction: row;
-    flex-direction: row;
-    -webkit-flex-wrap: wrap;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-  }
-}
-
-@media (min-width:32.25rem) {
-  .c6 {
-    -webkit-box-pack: unset;
-    -webkit-justify-content: unset;
-    -ms-flex-pack: unset;
-    justify-content: unset;
-    -webkit-align-content: unset;
-    -ms-flex-line-pack: unset;
-    align-content: unset;
-  }
-}
-
-@media (min-width:32.25rem) {
-  .c11 {
-    min-width: 10rem;
-    text-align: unset;
-  }
-}
-
-@media (min-width:32.25rem) {
-  .c8 {
-    display: none;
-  }
-}
-
-@media (min-width:32.25rem) {
-  .c10 {
-    display: inherit;
+    margin-top: calc(1rem + 2rem);
   }
 }
 
 <div>
   <div>
     <div>
-      <a
-        aria-label="Blog 1 , NaN Invalid Date"
-        class="c0 c1 c2"
-        href="/blog/asdfg"
+      <div
+        class="c0 c1"
+        id="asdfg"
       >
-        <div
-          class="c3"
+        <h1
+          class="c2 c3"
         >
-          <div
-            class="c4"
-          />
-          <div
-            class="c5"
-          >
-            <div
-              aria-hidden="true"
-              class="c6"
-            >
-              <div
-                class="c7 date container"
-              >
-                <div
-                  class="c8"
-                >
-                  <span
-                    class="c9"
-                  >
-                    NaN Invalid Date
-                  </span>
-                </div>
-                <div
-                  class="c10"
-                >
-                  <span
-                    class="c9"
-                  >
-                    NaN
-                  </span>
-                </div>
-                <div
-                  class="c10"
-                >
-                  <span
-                    class="c9"
-                  >
-                    Invalid Date
-                  </span>
-                </div>
-              </div>
-              <div
-                class="c11"
-              >
-                <h1
-                  class="c12"
-                >
-                  Blog 1 
-                </h1>
-              </div>
-            </div>
-          </div>
-        </div>
-      </a>
+          Book 1 🎉
+        </h1>
+        <span
+          class="c4 c5"
+        >
+          By 
+          Author 1
+        </span>
+        <span
+          class="c4 c6"
+        >
+          Want to read
+        </span>
+      </div>
     </div>
     <div>
-      <a
-        aria-label="St Ives  2018, 23to30 Dec, Tagged travel"
-        class="c0 c1 c2"
-        href="/blog/zxywvuts"
+      <div
+        class="c7 c1"
+        id="asdfh"
       >
-        <div
-          class="c3"
+        <h1
+          class="c2 c3"
         >
-          <div
-            class="c4"
-          />
-          <div
-            class="c5"
-          >
-            <div
-              aria-hidden="true"
-              class="c6"
-            >
-              <div
-                class="c7 date container"
-              >
-                <div
-                  class="c8"
-                >
-                  <span
-                    class="c9"
-                  >
-                    23-30 Dec
-                  </span>
-                </div>
-                <div
-                  class="c10"
-                >
-                  <span
-                    class="c9"
-                  >
-                    23-30
-                  </span>
-                </div>
-                <div
-                  class="c10"
-                >
-                  <span
-                    class="c9"
-                  >
-                    Dec
-                  </span>
-                </div>
-              </div>
-              <div
-                class="c11"
-              >
-                <h1
-                  class="c12"
-                >
-                  St Ives  2018
-                </h1>
-                <div
-                  class="c13"
-                >
-                  <div
-                    class=""
-                  >
-                    <span
-                      class="c14"
-                      type="travel"
-                    >
-                      Travel
-                    </span>
-                  </div>
-                </div>
-              </div>
-              <div
-                class="c15"
-              >
-                <div
-                  class="c16 c17"
-                >
-                  <style>
-                    
-          .js .gg-image__img--hide-js {display: none;}
-          .no-js .gg-image__img--hide-no-js {display: none;}
-        
-                  </style>
-                  <div
-                    class="c18"
-                    style="padding-bottom: 100%;"
-                  >
-                    <div
-                      class="c19"
-                    >
-                      <div
-                        class="c20 c21"
-                      >
-                        <div
-                          class="c22"
-                          style="margin-left: -0px;"
-                        />
-                      </div>
-                    </div>
-                    <div
-                      class="gg-image__img--hide-no-js"
-                    >
-                      <img
-                        alt="card"
-                        class="c23"
-                        src="https://i.imgur.com/ppPEuDs.jpg"
-                      />
-                      <img
-                        alt="card"
-                        class="c24"
-                        src="https://i.imgur.com/ppPEuDs.jpg"
-                      />
-                    </div>
-                    <div
-                      class="gg-image__img--hide-js"
-                    >
-                      <img
-                        alt="card"
-                        class="c25"
-                        src="https://i.imgur.com/ppPEuDs.jpg"
-                      />
-                      <img
-                        alt="card"
-                        class="c26"
-                        src="https://i.imgur.com/ppPEuDs.jpg"
-                      />
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </a>
+          Book 2
+        </h1>
+        <span
+          class="c4 c5"
+        >
+          By 
+          Author 2
+        </span>
+        <span
+          class="c4 c8"
+          color="orange"
+        >
+          Reading now
+        </span>
+      </div>
     </div>
     <div>
-      <a
-        aria-label="Untitled blog (DELETED), 23to30 Dec, Tagged travel"
-        class="c0 c1 c2"
-        href="/blog/mndyd8"
+      <div
+        class="c7 c1"
+        id="asdfi"
       >
-        <div
-          class="c3"
+        <h1
+          class="c2 c3"
         >
-          <div
-            class="c4"
-          />
-          <div
-            class="c5"
-          >
-            <div
-              aria-hidden="true"
-              class="c6"
-            >
-              <div
-                class="c7 date container"
-              >
-                <div
-                  class="c8"
-                >
-                  <span
-                    class="c9"
-                  >
-                    23-30 Dec
-                  </span>
-                </div>
-                <div
-                  class="c10"
-                >
-                  <span
-                    class="c9"
-                  >
-                    23-30
-                  </span>
-                </div>
-                <div
-                  class="c10"
-                >
-                  <span
-                    class="c9"
-                  >
-                    Dec
-                  </span>
-                </div>
-              </div>
-              <div
-                class="c11"
-              >
-                <h1
-                  class="c12"
-                >
-                  Untitled blog (DELETED)
-                </h1>
-                <div
-                  class="c13"
-                >
-                  <div
-                    class=""
-                  >
-                    <span
-                      class="c14"
-                      type="travel"
-                    >
-                      Travel
-                    </span>
-                  </div>
-                </div>
-              </div>
-              <div
-                class="c15"
-              >
-                <div
-                  class="c16 c17"
-                >
-                  <style>
-                    
-          .js .gg-image__img--hide-js {display: none;}
-          .no-js .gg-image__img--hide-no-js {display: none;}
-        
-                  </style>
-                  <div
-                    class="c18"
-                    style="padding-bottom: 100%;"
-                  >
-                    <div
-                      class="c19"
-                    >
-                      <div
-                        class="c20 c21"
-                      >
-                        <div
-                          class="c22"
-                          style="margin-left: -0px;"
-                        />
-                      </div>
-                    </div>
-                    <div
-                      class="gg-image__img--hide-no-js"
-                    >
-                      <img
-                        alt="card"
-                        class="c23"
-                        src="https://i.imgur.com/ppPEuDs.jpg"
-                      />
-                      <img
-                        alt="card"
-                        class="c24"
-                        src="https://i.imgur.com/ppPEuDs.jpg"
-                      />
-                    </div>
-                    <div
-                      class="gg-image__img--hide-js"
-                    >
-                      <img
-                        alt="card"
-                        class="c25"
-                        src="https://i.imgur.com/ppPEuDs.jpg"
-                      />
-                      <img
-                        alt="card"
-                        class="c26"
-                        src="https://i.imgur.com/ppPEuDs.jpg"
-                      />
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </a>
+          Book 3 (DELETED)
+        </h1>
+        <span
+          class="c4 c5"
+        >
+          By 
+          Author 3
+        </span>
+        <span
+          class="c4 c8"
+          color="orange"
+        >
+          Reading now
+        </span>
+      </div>
     </div>
   </div>
 </div>
 `;
 
-exports[`<BlogsList /> Should render correctly with custom className 1`] = `
-.c0 {
-  position: relative;
-  display: inline-block;
-  z-index: 1;
-  width: 100%;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  box-shadow: 0.2rem 0.2rem 0.5rem 0 #25201f1E;
-  cursor: pointer;
-  box-sizing: border-box;
-  padding: 0;
-  -webkit-transition: all 0.4s;
-  transition: all 0.4s;
-  border: none;
-  border-radius: 0.35rem;
-  background: none;
-  text-align: left;
-}
-
-.c0:disabled {
-  cursor: not-allowed;
-}
-
-.c0:not(:disabled):focus,.c0:not(:disabled):focus-within,
-.c0:not(:disabled):active,.c0:not(:disabled):hover {
-  box-shadow: 0.4rem 0.4rem 1rem 0 #25201f1E;
-}
-
-.c3 {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  border-radius: 0.35rem;
-  overflow: hidden;
+exports[`<BooksList /> Should render correctly with custom className 1`] = `
+.c2 {
+  margin: 0;
+  font-size: 1.2rem;
 }
 
 .c4 {
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: -1;
-  width: calc(100% + 2rem);
-  height: calc(100% + 2rem);
-  margin-top: -1rem;
-  margin-left: -1rem;
-  background-color: #ffffff;
-  background-position: center;
-  background-size: cover;
+  margin: 0;
+  font-size: 1rem;
 }
 
-.c5 {
-  height: 100%;
-  padding: 2rem;
-}
-
-.c20 {
-  position: relative;
-  width: 100%;
-  border-radius: 0.25rem;
-  background-color: rgb(238,238,238);
-  overflow: hidden;
-}
-
-.c22 {
-  position: absolute;
-  top: 0;
-  width: 13rem;
-  height: 100vh;
-  background-image: linear-gradient( 90deg,rgb(238,238,238),rgb(245,245,245),rgb(238,238,238) );
-  background-repeat: no-repeat;
-  background-size: 12.5rem 100%;
-  -webkit-animation: eflhBg 3.5s ease-in-out infinite;
-  animation: eflhBg 3.5s ease-in-out infinite;
-}
-
-.c16 {
-  position: relative;
-}
-
-.c18 {
-  height: 0;
-}
-
-.c19 {
-  position: absolute;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  width: 100%;
-  height: 100%;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.c21 {
-  z-index: -1;
-  width: 100%;
-  height: 100%;
-}
-
-.c23 {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  -webkit-transition: opacity ease-in-out 0.4s;
-  transition: opacity ease-in-out 0.4s;
-  opacity: 0;
-}
-
-.c25 {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  -webkit-transition: opacity ease-in-out 0.4s;
-  transition: opacity ease-in-out 0.4s;
-}
-
-.c24 {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  -webkit-transition: opacity ease-in-out 0.4s;
-  transition: opacity ease-in-out 0.4s;
-  opacity: 0;
-  display: none;
-}
-
-.c26 {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  -webkit-transition: opacity ease-in-out 0.4s;
-  transition: opacity ease-in-out 0.4s;
-  display: none;
-}
-
-.c1 {
-  color: #1e1e1e;
-}
-
-.c1:focus,
-.c1:active,
-.c1:hover {
-  color: #44aeff;
-}
-
-.c6 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  width: 100%;
-  height: 100%;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  box-sizing: border-box;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-content: space-around;
-  -ms-flex-line-pack: space-around;
-  align-content: space-around;
+.c0 {
+  display: grid;
+  grid-template-columns: 4rem 1fr;
+  min-height: 4rem;
+  gap: 0.375rem 1rem;
+  opacity: 0.6;
 }
 
 .c7 {
-  position: relative;
-  z-index: 3;
-  border-radius: 0.35rem;
-  overflow: hidden;
-  box-sizing: border-box;
-  width: 6.5rem;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  text-align: center;
+  display: grid;
+  grid-template-columns: 4rem 1fr;
+  min-height: 4rem;
+  gap: 0.375rem 1rem;
 }
 
-.c11 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  z-index: 3;
-  min-width: 100%;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-pack: space-around;
-  -webkit-justify-content: space-around;
-  -ms-flex-pack: space-around;
-  justify-content: space-around;
-  -webkit-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
-  text-align: center;
+.c3 {
+  grid-row: 1;
+  grid-column: 2;
 }
 
-.c15 {
-  display: block;
-  z-index: 3;
-  width: 6rem;
-  height: 6rem;
-  justify-self: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-align-content: center;
-  -ms-flex-line-pack: center;
-  align-content: center;
-  -webkit-align-self: center;
-  -ms-flex-item-align: center;
-  align-self: center;
-  border-radius: 50rem;
-  background-position: center;
-  background-size: cover;
-  overflow: hidden;
+.c5 {
+  grid-row: 2;
+  grid-column: 2;
 }
 
-.c10 {
-  display: none;
+.c6 {
+  grid-row: 3;
+  grid-column: 2;
 }
 
-.c17 {
-  z-index: 3;
+.c8 {
+  color: orange;
+  grid-row: 3;
+  grid-column: 2;
+}
+
+.c1 {
   width: 100%;
-  height: 100%;
-}
-
-.c13 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  grid-area: children;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-text-decoration: none !important;
-  text-decoration: none !important;
-  -webkit-text-decoration-color: transparent !important;
-  text-decoration-color: transparent !important;
-  -webkit-text-decoration-line: none !important;
-  text-decoration-line: none !important;
-}
-
-.c12 {
-  margin: 0;
-  font-size: 2.2rem;
-  font-weight: bold;
-}
-
-.c9 {
-  margin: 0;
-  font-size: 1.5rem;
-  font-weight: bold;
-}
-
-.c14 {
-  position: relative;
-  top: 0.15rem;
-  height: 1rem;
-  padding: 0.17rem 0.4rem 0.27rem;
-  -webkit-transition: all 0.4s;
-  transition: all 0.4s;
-  border: none;
-  border-radius: 0.2rem;
-  color: white;
-  font-size: 1rem;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  -webkit-text-decoration-color: transparent;
-  text-decoration-color: transparent;
-  -webkit-text-decoration-line: none;
-  text-decoration-line: none;
-  background-color: #01579b;
-}
-
-.c2 {
-  display: inline-block;
-  width: 100%;
-  margin-bottom: 2rem;
+  margin-top: 2rem;
   box-sizing: border-box;
 }
 
-@media (prefers-color-scheme:dark) {
+@media (min-width:32.25rem) {
   .c0 {
-    box-shadow: 0.44rem 0.44rem 1rem 0 #00000000;
+    grid-template-columns: 4rem 1fr 10rem;
+    grid-template-rows: 3;
   }
 }
 
-@media (prefers-color-scheme:dark) {
-  .c0:not(:disabled):focus,.c0:not(:disabled):focus-within,
-  .c0:not(:disabled):active,.c0:not(:disabled):hover {
-    box-shadow: 0.2rem 0.2rem 0.5rem 0 #00000000;
+@media (min-width:50.25rem) {
+  .c0 {
+    gap: calc(2 * 0.375rem) 1rem;
+    grid-template-columns: 5rem 1fr 10rem;
   }
 }
 
-@media (prefers-color-scheme:dark) {
-  .c4 {
-    background-color: #1e1e1e;
+@media (min-width:32.25rem) {
+  .c7 {
+    grid-template-columns: 4rem 1fr 10rem;
+    grid-template-rows: 3;
   }
 }
 
-@media (prefers-color-scheme:dark) {
-  .c20 {
-    background-color: rgb(17,17,17);
+@media (min-width:50.25rem) {
+  .c7 {
+    gap: calc(2 * 0.375rem) 1rem;
+    grid-template-columns: 5rem 1fr 10rem;
   }
 }
 
-@media (prefers-color-scheme:dark) {
-  .c22 {
-    background-image: linear-gradient( 90deg,rgb(17,17,17),rgb(50,50,50),rgb(17,17,17) );
-  }
-}
-
-@media (prefers-color-scheme:dark) {
-  .c23 {
-    display: none;
-  }
-}
-
-@media (prefers-color-scheme:dark) {
-  .c25 {
-    display: none;
-  }
-}
-
-@media (prefers-color-scheme:dark) {
-  .c24 {
-    display: unset;
-  }
-}
-
-@media (prefers-color-scheme:dark) {
-  .c26 {
-    display: unset;
-  }
-}
-
-@media (prefers-color-scheme:dark) {
+@media (min-width:50.25rem) {
   .c1 {
-    color: #ffffff;
-  }
-}
-
-@media (prefers-color-scheme:dark) {
-  .c1:focus,
-  .c1:active,
-  .c1:hover {
-    color: #44aeff;
-  }
-}
-
-@media (min-width:32.25rem) {
-  .c6 {
-    -webkit-flex-direction: row;
-    -ms-flex-direction: row;
-    flex-direction: row;
-    -webkit-flex-wrap: wrap;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-  }
-}
-
-@media (min-width:32.25rem) {
-  .c6 {
-    -webkit-box-pack: unset;
-    -webkit-justify-content: unset;
-    -ms-flex-pack: unset;
-    justify-content: unset;
-    -webkit-align-content: unset;
-    -ms-flex-line-pack: unset;
-    align-content: unset;
-  }
-}
-
-@media (min-width:32.25rem) {
-  .c11 {
-    min-width: 10rem;
-    text-align: unset;
-  }
-}
-
-@media (min-width:32.25rem) {
-  .c8 {
-    display: none;
-  }
-}
-
-@media (min-width:32.25rem) {
-  .c10 {
-    display: inherit;
+    margin-top: calc(1rem + 2rem);
   }
 }
 
@@ -2867,349 +546,82 @@ exports[`<BlogsList /> Should render correctly with custom className 1`] = `
     class="test-custom-classname"
   >
     <div>
-      <a
-        aria-label="Blog 1 , NaN Invalid Date"
-        class="c0 c1 c2"
-        href="/blog/asdfg"
+      <div
+        class="c0 c1"
+        id="asdfg"
       >
-        <div
-          class="c3"
+        <h1
+          class="c2 c3"
         >
-          <div
-            class="c4"
-          />
-          <div
-            class="c5"
-          >
-            <div
-              aria-hidden="true"
-              class="c6"
-            >
-              <div
-                class="c7 date container"
-              >
-                <div
-                  class="c8"
-                >
-                  <span
-                    class="c9"
-                  >
-                    NaN Invalid Date
-                  </span>
-                </div>
-                <div
-                  class="c10"
-                >
-                  <span
-                    class="c9"
-                  >
-                    NaN
-                  </span>
-                </div>
-                <div
-                  class="c10"
-                >
-                  <span
-                    class="c9"
-                  >
-                    Invalid Date
-                  </span>
-                </div>
-              </div>
-              <div
-                class="c11"
-              >
-                <h1
-                  class="c12"
-                >
-                  Blog 1 
-                </h1>
-              </div>
-            </div>
-          </div>
-        </div>
-      </a>
+          Book 1 🎉
+        </h1>
+        <span
+          class="c4 c5"
+        >
+          By 
+          Author 1
+        </span>
+        <span
+          class="c4 c6"
+        >
+          Want to read
+        </span>
+      </div>
     </div>
     <div>
-      <a
-        aria-label="St Ives  2018, 23to30 Dec, Tagged travel"
-        class="c0 c1 c2"
-        href="/blog/zxywvuts"
+      <div
+        class="c7 c1"
+        id="asdfh"
       >
-        <div
-          class="c3"
+        <h1
+          class="c2 c3"
         >
-          <div
-            class="c4"
-          />
-          <div
-            class="c5"
-          >
-            <div
-              aria-hidden="true"
-              class="c6"
-            >
-              <div
-                class="c7 date container"
-              >
-                <div
-                  class="c8"
-                >
-                  <span
-                    class="c9"
-                  >
-                    23-30 Dec
-                  </span>
-                </div>
-                <div
-                  class="c10"
-                >
-                  <span
-                    class="c9"
-                  >
-                    23-30
-                  </span>
-                </div>
-                <div
-                  class="c10"
-                >
-                  <span
-                    class="c9"
-                  >
-                    Dec
-                  </span>
-                </div>
-              </div>
-              <div
-                class="c11"
-              >
-                <h1
-                  class="c12"
-                >
-                  St Ives  2018
-                </h1>
-                <div
-                  class="c13"
-                >
-                  <div
-                    class=""
-                  >
-                    <span
-                      class="c14"
-                      type="travel"
-                    >
-                      Travel
-                    </span>
-                  </div>
-                </div>
-              </div>
-              <div
-                class="c15"
-              >
-                <div
-                  class="c16 c17"
-                >
-                  <style>
-                    
-          .js .gg-image__img--hide-js {display: none;}
-          .no-js .gg-image__img--hide-no-js {display: none;}
-        
-                  </style>
-                  <div
-                    class="c18"
-                    style="padding-bottom: 100%;"
-                  >
-                    <div
-                      class="c19"
-                    >
-                      <div
-                        class="c20 c21"
-                      >
-                        <div
-                          class="c22"
-                          style="margin-left: -0px;"
-                        />
-                      </div>
-                    </div>
-                    <div
-                      class="gg-image__img--hide-no-js"
-                    >
-                      <img
-                        alt="card"
-                        class="c23"
-                        src="https://i.imgur.com/ppPEuDs.jpg"
-                      />
-                      <img
-                        alt="card"
-                        class="c24"
-                        src="https://i.imgur.com/ppPEuDs.jpg"
-                      />
-                    </div>
-                    <div
-                      class="gg-image__img--hide-js"
-                    >
-                      <img
-                        alt="card"
-                        class="c25"
-                        src="https://i.imgur.com/ppPEuDs.jpg"
-                      />
-                      <img
-                        alt="card"
-                        class="c26"
-                        src="https://i.imgur.com/ppPEuDs.jpg"
-                      />
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </a>
+          Book 2
+        </h1>
+        <span
+          class="c4 c5"
+        >
+          By 
+          Author 2
+        </span>
+        <span
+          class="c4 c8"
+          color="orange"
+        >
+          Reading now
+        </span>
+      </div>
     </div>
     <div>
-      <a
-        aria-label="Untitled blog (DELETED), 23to30 Dec, Tagged travel"
-        class="c0 c1 c2"
-        href="/blog/mndyd8"
+      <div
+        class="c7 c1"
+        id="asdfi"
       >
-        <div
-          class="c3"
+        <h1
+          class="c2 c3"
         >
-          <div
-            class="c4"
-          />
-          <div
-            class="c5"
-          >
-            <div
-              aria-hidden="true"
-              class="c6"
-            >
-              <div
-                class="c7 date container"
-              >
-                <div
-                  class="c8"
-                >
-                  <span
-                    class="c9"
-                  >
-                    23-30 Dec
-                  </span>
-                </div>
-                <div
-                  class="c10"
-                >
-                  <span
-                    class="c9"
-                  >
-                    23-30
-                  </span>
-                </div>
-                <div
-                  class="c10"
-                >
-                  <span
-                    class="c9"
-                  >
-                    Dec
-                  </span>
-                </div>
-              </div>
-              <div
-                class="c11"
-              >
-                <h1
-                  class="c12"
-                >
-                  Untitled blog (DELETED)
-                </h1>
-                <div
-                  class="c13"
-                >
-                  <div
-                    class=""
-                  >
-                    <span
-                      class="c14"
-                      type="travel"
-                    >
-                      Travel
-                    </span>
-                  </div>
-                </div>
-              </div>
-              <div
-                class="c15"
-              >
-                <div
-                  class="c16 c17"
-                >
-                  <style>
-                    
-          .js .gg-image__img--hide-js {display: none;}
-          .no-js .gg-image__img--hide-no-js {display: none;}
-        
-                  </style>
-                  <div
-                    class="c18"
-                    style="padding-bottom: 100%;"
-                  >
-                    <div
-                      class="c19"
-                    >
-                      <div
-                        class="c20 c21"
-                      >
-                        <div
-                          class="c22"
-                          style="margin-left: -0px;"
-                        />
-                      </div>
-                    </div>
-                    <div
-                      class="gg-image__img--hide-no-js"
-                    >
-                      <img
-                        alt="card"
-                        class="c23"
-                        src="https://i.imgur.com/ppPEuDs.jpg"
-                      />
-                      <img
-                        alt="card"
-                        class="c24"
-                        src="https://i.imgur.com/ppPEuDs.jpg"
-                      />
-                    </div>
-                    <div
-                      class="gg-image__img--hide-js"
-                    >
-                      <img
-                        alt="card"
-                        class="c25"
-                        src="https://i.imgur.com/ppPEuDs.jpg"
-                      />
-                      <img
-                        alt="card"
-                        class="c26"
-                        src="https://i.imgur.com/ppPEuDs.jpg"
-                      />
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </a>
+          Book 3 (DELETED)
+        </h1>
+        <span
+          class="c4 c5"
+        >
+          By 
+          Author 3
+        </span>
+        <span
+          class="c4 c8"
+          color="orange"
+        >
+          Reading now
+        </span>
+      </div>
     </div>
   </div>
 </div>
 `;
 
-exports[`<BlogsList /> Should render correctly with deleteBlog function 1`] = `
-.c13 {
+exports[`<BooksList /> Should render correctly with deleteBook function 1`] = `
+.c7 {
   position: relative;
   min-width: 5rem;
   padding: 0.43rem 1.125rem 0.32rem 1.125rem;
@@ -3228,13 +640,13 @@ exports[`<BlogsList /> Should render correctly with deleteBlog function 1`] = `
   color: white;
 }
 
-.c13:focus-within,
-.c13:focus {
+.c7:focus-within,
+.c7:focus {
   outline: none !important;
 }
 
-.c13:focus-within::after,
-.c13:focus::after {
+.c7:focus-within::after,
+.c7:focus::after {
   position: absolute;
   top: -0.35rem;
   right: -0.35rem;
@@ -3247,23 +659,23 @@ exports[`<BlogsList /> Should render correctly with deleteBlog function 1`] = `
   pointer-events: none;
 }
 
-.c13:focus,
-.c13:hover {
+.c7:focus,
+.c7:hover {
   background-color: #BA2020;
   color: white;
 }
 
-.c13:active {
+.c7:active {
   background-color: #9F1717;
   color: white;
 }
 
-.c13:disabled {
+.c7:disabled {
   background-color: #cdcdd7;
   color: #646464;
 }
 
-.c30 {
+.c12 {
   position: relative;
   min-width: 5rem;
   padding: 0.43rem 1.125rem 0.32rem 1.125rem;
@@ -3283,13 +695,13 @@ exports[`<BlogsList /> Should render correctly with deleteBlog function 1`] = `
   cursor: default;
 }
 
-.c30:focus-within,
-.c30:focus {
+.c12:focus-within,
+.c12:focus {
   outline: none !important;
 }
 
-.c30:focus-within::after,
-.c30:focus::after {
+.c12:focus-within::after,
+.c12:focus::after {
   position: absolute;
   top: -0.35rem;
   right: -0.35rem;
@@ -3302,901 +714,298 @@ exports[`<BlogsList /> Should render correctly with deleteBlog function 1`] = `
   pointer-events: none;
 }
 
-.c30:focus,
-.c30:hover {
+.c12:focus,
+.c12:hover {
   background-color: #BA2020;
   color: white;
 }
 
-.c30:active {
+.c12:active {
   background-color: #9F1717;
   color: white;
 }
 
-.c30:disabled {
+.c12:disabled {
   background-color: #cdcdd7;
   color: #646464;
 }
 
-.c15 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-}
-
-.c0 {
-  position: relative;
-  display: inline-block;
-  z-index: 1;
-  width: 100%;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  box-shadow: 0.2rem 0.2rem 0.5rem 0 #25201f1E;
-  cursor: pointer;
-  box-sizing: border-box;
-  padding: 0;
-  -webkit-transition: all 0.4s;
-  transition: all 0.4s;
-  border: none;
-  border-radius: 0.35rem;
-  background: none;
-  text-align: left;
-}
-
-.c0:disabled {
-  cursor: not-allowed;
-}
-
-.c0:not(:disabled):focus,.c0:not(:disabled):focus-within,
-.c0:not(:disabled):active,.c0:not(:disabled):hover {
-  box-shadow: 0.4rem 0.4rem 1rem 0 #25201f1E;
-}
-
-.c3 {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  border-radius: 0.35rem;
-  overflow: hidden;
-}
-
-.c4 {
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: -1;
-  width: calc(100% + 2rem);
-  height: calc(100% + 2rem);
-  margin-top: -1rem;
-  margin-left: -1rem;
-  background-color: #ffffff;
-  background-position: center;
-  background-size: cover;
-}
-
-.c5 {
-  height: 100%;
-  padding: 2rem;
-}
-
-.c23 {
-  position: relative;
-  width: 100%;
-  border-radius: 0.25rem;
-  background-color: rgb(238,238,238);
-  overflow: hidden;
-}
-
-.c25 {
-  position: absolute;
-  top: 0;
-  width: 13rem;
-  height: 100vh;
-  background-image: linear-gradient( 90deg,rgb(238,238,238),rgb(245,245,245),rgb(238,238,238) );
-  background-repeat: no-repeat;
-  background-size: 12.5rem 100%;
-  -webkit-animation: eflhBg 3.5s ease-in-out infinite;
-  animation: eflhBg 3.5s ease-in-out infinite;
-}
-
-.c19 {
-  position: relative;
-}
-
-.c21 {
-  height: 0;
-}
-
-.c22 {
-  position: absolute;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  width: 100%;
-  height: 100%;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.c24 {
-  z-index: -1;
-  width: 100%;
-  height: 100%;
-}
-
-.c26 {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  -webkit-transition: opacity ease-in-out 0.4s;
-  transition: opacity ease-in-out 0.4s;
-  opacity: 0;
-}
-
-.c28 {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  -webkit-transition: opacity ease-in-out 0.4s;
-  transition: opacity ease-in-out 0.4s;
-}
-
-.c27 {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  -webkit-transition: opacity ease-in-out 0.4s;
-  transition: opacity ease-in-out 0.4s;
-  opacity: 0;
-  display: none;
-}
-
-.c29 {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  -webkit-transition: opacity ease-in-out 0.4s;
-  transition: opacity ease-in-out 0.4s;
-  display: none;
-}
-
-.c1 {
-  color: #1e1e1e;
-}
-
-.c1:focus,
-.c1:active,
-.c1:hover {
-  color: #44aeff;
-}
-
-.c6 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  width: 100%;
-  height: 100%;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  box-sizing: border-box;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-content: space-around;
-  -ms-flex-line-pack: space-around;
-  align-content: space-around;
-}
-
-.c7 {
-  position: relative;
-  z-index: 3;
-  border-radius: 0.35rem;
-  overflow: hidden;
-  box-sizing: border-box;
-  width: 6.5rem;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  text-align: center;
-}
-
-.c11 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  z-index: 3;
-  min-width: 100%;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-pack: space-around;
-  -webkit-justify-content: space-around;
-  -ms-flex-pack: space-around;
-  justify-content: space-around;
-  -webkit-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
-  text-align: center;
-}
-
-.c18 {
-  display: block;
-  z-index: 3;
-  width: 6rem;
-  height: 6rem;
-  justify-self: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-align-content: center;
-  -ms-flex-line-pack: center;
-  align-content: center;
-  -webkit-align-self: center;
-  -ms-flex-item-align: center;
-  align-self: center;
-  border-radius: 50rem;
-  background-position: center;
-  background-size: cover;
-  overflow: hidden;
-}
-
-.c10 {
-  display: none;
-}
-
-.c20 {
-  z-index: 3;
-  width: 100%;
-  height: 100%;
-}
-
-.c16 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  grid-area: children;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-text-decoration: none !important;
-  text-decoration: none !important;
-  -webkit-text-decoration-color: transparent !important;
-  text-decoration-color: transparent !important;
-  -webkit-text-decoration-line: none !important;
-  text-decoration-line: none !important;
-}
-
-.c12 {
-  margin: 0;
-  font-size: 2.2rem;
-  font-weight: bold;
-}
-
 .c9 {
-  margin: 0;
-  font-size: 1.5rem;
-  font-weight: bold;
-}
-
-.c17 {
-  position: relative;
-  top: 0.15rem;
-  height: 1rem;
-  padding: 0.17rem 0.4rem 0.27rem;
-  -webkit-transition: all 0.4s;
-  transition: all 0.4s;
-  border: none;
-  border-radius: 0.2rem;
-  color: white;
-  font-size: 1rem;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  -webkit-text-decoration-color: transparent;
-  text-decoration-color: transparent;
-  -webkit-text-decoration-line: none;
-  text-decoration-line: none;
-  background-color: #01579b;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 .c2 {
-  display: inline-block;
+  margin: 0;
+  font-size: 1.2rem;
+}
+
+.c4 {
+  margin: 0;
+  font-size: 1rem;
+}
+
+.c0 {
+  display: grid;
+  grid-template-columns: 4rem 1fr;
+  min-height: 4rem;
+  gap: 0.375rem 1rem;
+  opacity: 0.6;
+}
+
+.c10 {
+  display: grid;
+  grid-template-columns: 4rem 1fr;
+  min-height: 4rem;
+  gap: 0.375rem 1rem;
+}
+
+.c3 {
+  grid-row: 1;
+  grid-column: 2;
+}
+
+.c5 {
+  grid-row: 2;
+  grid-column: 2;
+}
+
+.c6 {
+  grid-row: 3;
+  grid-column: 2;
+}
+
+.c11 {
+  color: orange;
+  grid-row: 3;
+  grid-column: 2;
+}
+
+.c1 {
   width: 100%;
-  margin-bottom: 2rem;
+  margin-top: 2rem;
   box-sizing: border-box;
-  margin-bottom: 0.5rem;
+  margin-bottom: 1rem;
 }
 
-.c14 {
+.c8 {
   margin-bottom: 2rem;
   box-sizing: border-box;
 }
 
 @media (prefers-color-scheme:dark) {
-  .c13:focus-within::after,
-  .c13:focus::after {
+  .c7:focus-within::after,
+  .c7:focus::after {
     border-color: #007dfa3C;
   }
 }
 
 @media (prefers-color-scheme:dark) {
-  .c13 {
+  .c7 {
     background-color: #CA2020;
     color: white;
   }
 }
 
 @media (prefers-color-scheme:dark) {
-  .c13:focus,
-  .c13:hover {
+  .c7:focus,
+  .c7:hover {
     background-color: #891111;
     color: white;
   }
 }
 
 @media (prefers-color-scheme:dark) {
-  .c13:active {
+  .c7:active {
     background-color: #730D0D;
     color: white;
   }
 }
 
 @media (prefers-color-scheme:dark) {
-  .c13:disabled {
+  .c7:disabled {
     background-color: #595959;
     color: #a9a9a9;
   }
 }
 
 @media (prefers-color-scheme:dark) {
-  .c30:focus-within::after,
-  .c30:focus::after {
+  .c12:focus-within::after,
+  .c12:focus::after {
     border-color: #007dfa3C;
   }
 }
 
 @media (prefers-color-scheme:dark) {
-  .c30 {
+  .c12 {
     background-color: #CA2020;
     color: white;
   }
 }
 
 @media (prefers-color-scheme:dark) {
-  .c30:focus,
-  .c30:hover {
+  .c12:focus,
+  .c12:hover {
     background-color: #891111;
     color: white;
   }
 }
 
 @media (prefers-color-scheme:dark) {
-  .c30:active {
+  .c12:active {
     background-color: #730D0D;
     color: white;
   }
 }
 
 @media (prefers-color-scheme:dark) {
-  .c30:disabled {
+  .c12:disabled {
     background-color: #595959;
     color: #a9a9a9;
   }
 }
 
-@media (prefers-color-scheme:dark) {
+@media (min-width:32.25rem) {
   .c0 {
-    box-shadow: 0.44rem 0.44rem 1rem 0 #00000000;
+    grid-template-columns: 4rem 1fr 10rem;
+    grid-template-rows: 3;
   }
 }
 
-@media (prefers-color-scheme:dark) {
-  .c0:not(:disabled):focus,.c0:not(:disabled):focus-within,
-  .c0:not(:disabled):active,.c0:not(:disabled):hover {
-    box-shadow: 0.2rem 0.2rem 0.5rem 0 #00000000;
-  }
-}
-
-@media (prefers-color-scheme:dark) {
-  .c4 {
-    background-color: #1e1e1e;
-  }
-}
-
-@media (prefers-color-scheme:dark) {
-  .c23 {
-    background-color: rgb(17,17,17);
-  }
-}
-
-@media (prefers-color-scheme:dark) {
-  .c25 {
-    background-image: linear-gradient( 90deg,rgb(17,17,17),rgb(50,50,50),rgb(17,17,17) );
-  }
-}
-
-@media (prefers-color-scheme:dark) {
-  .c26 {
-    display: none;
-  }
-}
-
-@media (prefers-color-scheme:dark) {
-  .c28 {
-    display: none;
-  }
-}
-
-@media (prefers-color-scheme:dark) {
-  .c27 {
-    display: unset;
-  }
-}
-
-@media (prefers-color-scheme:dark) {
-  .c29 {
-    display: unset;
-  }
-}
-
-@media (prefers-color-scheme:dark) {
-  .c1 {
-    color: #ffffff;
-  }
-}
-
-@media (prefers-color-scheme:dark) {
-  .c1:focus,
-  .c1:active,
-  .c1:hover {
-    color: #44aeff;
-  }
-}
-
-@media (min-width:32.25rem) {
-  .c6 {
-    -webkit-flex-direction: row;
-    -ms-flex-direction: row;
-    flex-direction: row;
-    -webkit-flex-wrap: wrap;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-  }
-}
-
-@media (min-width:32.25rem) {
-  .c6 {
-    -webkit-box-pack: unset;
-    -webkit-justify-content: unset;
-    -ms-flex-pack: unset;
-    justify-content: unset;
-    -webkit-align-content: unset;
-    -ms-flex-line-pack: unset;
-    align-content: unset;
-  }
-}
-
-@media (min-width:32.25rem) {
-  .c11 {
-    min-width: 10rem;
-    text-align: unset;
-  }
-}
-
-@media (min-width:32.25rem) {
-  .c8 {
-    display: none;
+@media (min-width:50.25rem) {
+  .c0 {
+    gap: calc(2 * 0.375rem) 1rem;
+    grid-template-columns: 5rem 1fr 10rem;
   }
 }
 
 @media (min-width:32.25rem) {
   .c10 {
-    display: inherit;
+    grid-template-columns: 4rem 1fr 10rem;
+    grid-template-rows: 3;
+  }
+}
+
+@media (min-width:50.25rem) {
+  .c10 {
+    gap: calc(2 * 0.375rem) 1rem;
+    grid-template-columns: 5rem 1fr 10rem;
+  }
+}
+
+@media (min-width:50.25rem) {
+  .c1 {
+    margin-top: calc(1rem + 2rem);
   }
 }
 
 <div>
   <div>
     <div>
-      <a
-        aria-label="Blog 1 , NaN Invalid Date"
-        class="c0 c1 c2"
-        href="/blog/asdfg"
+      <div
+        class="c0 c1"
+        id="asdfg"
       >
-        <div
-          class="c3"
+        <h1
+          class="c2 c3"
         >
-          <div
-            class="c4"
-          />
-          <div
-            class="c5"
-          >
-            <div
-              aria-hidden="true"
-              class="c6"
-            >
-              <div
-                class="c7 date container"
-              >
-                <div
-                  class="c8"
-                >
-                  <span
-                    class="c9"
-                  >
-                    NaN Invalid Date
-                  </span>
-                </div>
-                <div
-                  class="c10"
-                >
-                  <span
-                    class="c9"
-                  >
-                    NaN
-                  </span>
-                </div>
-                <div
-                  class="c10"
-                >
-                  <span
-                    class="c9"
-                  >
-                    Invalid Date
-                  </span>
-                </div>
-              </div>
-              <div
-                class="c11"
-              >
-                <h1
-                  class="c12"
-                >
-                  Blog 1 
-                </h1>
-              </div>
-            </div>
-          </div>
-        </div>
-      </a>
+          Book 1 🎉
+        </h1>
+        <span
+          class="c4 c5"
+        >
+          By 
+          Author 1
+        </span>
+        <span
+          class="c4 c6"
+        >
+          Want to read
+        </span>
+      </div>
       <button
-        class="c13 c14"
+        class="c7 c8"
         type="button"
       >
         <span
-          class="c15"
+          class="c9"
         >
-          Delete blog
+          Delete book
         </span>
       </button>
     </div>
     <div>
-      <a
-        aria-label="St Ives  2018, 23to30 Dec, Tagged travel"
-        class="c0 c1 c2"
-        href="/blog/zxywvuts"
+      <div
+        class="c10 c1"
+        id="asdfh"
       >
-        <div
-          class="c3"
+        <h1
+          class="c2 c3"
         >
-          <div
-            class="c4"
-          />
-          <div
-            class="c5"
-          >
-            <div
-              aria-hidden="true"
-              class="c6"
-            >
-              <div
-                class="c7 date container"
-              >
-                <div
-                  class="c8"
-                >
-                  <span
-                    class="c9"
-                  >
-                    23-30 Dec
-                  </span>
-                </div>
-                <div
-                  class="c10"
-                >
-                  <span
-                    class="c9"
-                  >
-                    23-30
-                  </span>
-                </div>
-                <div
-                  class="c10"
-                >
-                  <span
-                    class="c9"
-                  >
-                    Dec
-                  </span>
-                </div>
-              </div>
-              <div
-                class="c11"
-              >
-                <h1
-                  class="c12"
-                >
-                  St Ives  2018
-                </h1>
-                <div
-                  class="c16"
-                >
-                  <div
-                    class=""
-                  >
-                    <span
-                      class="c17"
-                      type="travel"
-                    >
-                      Travel
-                    </span>
-                  </div>
-                </div>
-              </div>
-              <div
-                class="c18"
-              >
-                <div
-                  class="c19 c20"
-                >
-                  <style>
-                    
-          .js .gg-image__img--hide-js {display: none;}
-          .no-js .gg-image__img--hide-no-js {display: none;}
-        
-                  </style>
-                  <div
-                    class="c21"
-                    style="padding-bottom: 100%;"
-                  >
-                    <div
-                      class="c22"
-                    >
-                      <div
-                        class="c23 c24"
-                      >
-                        <div
-                          class="c25"
-                          style="margin-left: -0px;"
-                        />
-                      </div>
-                    </div>
-                    <div
-                      class="gg-image__img--hide-no-js"
-                    >
-                      <img
-                        alt="card"
-                        class="c26"
-                        src="https://i.imgur.com/ppPEuDs.jpg"
-                      />
-                      <img
-                        alt="card"
-                        class="c27"
-                        src="https://i.imgur.com/ppPEuDs.jpg"
-                      />
-                    </div>
-                    <div
-                      class="gg-image__img--hide-js"
-                    >
-                      <img
-                        alt="card"
-                        class="c28"
-                        src="https://i.imgur.com/ppPEuDs.jpg"
-                      />
-                      <img
-                        alt="card"
-                        class="c29"
-                        src="https://i.imgur.com/ppPEuDs.jpg"
-                      />
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </a>
+          Book 2
+        </h1>
+        <span
+          class="c4 c5"
+        >
+          By 
+          Author 2
+        </span>
+        <span
+          class="c4 c11"
+          color="orange"
+        >
+          Reading now
+        </span>
+      </div>
       <button
-        class="c13 c14"
+        class="c7 c8"
         type="button"
       >
         <span
-          class="c15"
+          class="c9"
         >
-          Delete blog
+          Delete book
         </span>
       </button>
     </div>
     <div>
-      <a
-        aria-label="Untitled blog (DELETED), 23to30 Dec, Tagged travel"
-        class="c0 c1 c2"
-        href="/blog/mndyd8"
+      <div
+        class="c10 c1"
+        id="asdfi"
       >
-        <div
-          class="c3"
+        <h1
+          class="c2 c3"
         >
-          <div
-            class="c4"
-          />
-          <div
-            class="c5"
-          >
-            <div
-              aria-hidden="true"
-              class="c6"
-            >
-              <div
-                class="c7 date container"
-              >
-                <div
-                  class="c8"
-                >
-                  <span
-                    class="c9"
-                  >
-                    23-30 Dec
-                  </span>
-                </div>
-                <div
-                  class="c10"
-                >
-                  <span
-                    class="c9"
-                  >
-                    23-30
-                  </span>
-                </div>
-                <div
-                  class="c10"
-                >
-                  <span
-                    class="c9"
-                  >
-                    Dec
-                  </span>
-                </div>
-              </div>
-              <div
-                class="c11"
-              >
-                <h1
-                  class="c12"
-                >
-                  Untitled blog (DELETED)
-                </h1>
-                <div
-                  class="c16"
-                >
-                  <div
-                    class=""
-                  >
-                    <span
-                      class="c17"
-                      type="travel"
-                    >
-                      Travel
-                    </span>
-                  </div>
-                </div>
-              </div>
-              <div
-                class="c18"
-              >
-                <div
-                  class="c19 c20"
-                >
-                  <style>
-                    
-          .js .gg-image__img--hide-js {display: none;}
-          .no-js .gg-image__img--hide-no-js {display: none;}
-        
-                  </style>
-                  <div
-                    class="c21"
-                    style="padding-bottom: 100%;"
-                  >
-                    <div
-                      class="c22"
-                    >
-                      <div
-                        class="c23 c24"
-                      >
-                        <div
-                          class="c25"
-                          style="margin-left: -0px;"
-                        />
-                      </div>
-                    </div>
-                    <div
-                      class="gg-image__img--hide-no-js"
-                    >
-                      <img
-                        alt="card"
-                        class="c26"
-                        src="https://i.imgur.com/ppPEuDs.jpg"
-                      />
-                      <img
-                        alt="card"
-                        class="c27"
-                        src="https://i.imgur.com/ppPEuDs.jpg"
-                      />
-                    </div>
-                    <div
-                      class="gg-image__img--hide-js"
-                    >
-                      <img
-                        alt="card"
-                        class="c28"
-                        src="https://i.imgur.com/ppPEuDs.jpg"
-                      />
-                      <img
-                        alt="card"
-                        class="c29"
-                        src="https://i.imgur.com/ppPEuDs.jpg"
-                      />
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </a>
+          Book 3 (DELETED)
+        </h1>
+        <span
+          class="c4 c5"
+        >
+          By 
+          Author 3
+        </span>
+        <span
+          class="c4 c11"
+          color="orange"
+        >
+          Reading now
+        </span>
+      </div>
       <button
-        class="c30 c14"
+        class="c12 c8"
         disabled=""
         type="button"
       >
         <span
-          class="c15"
+          class="c9"
         >
-          Delete blog
+          Delete book
         </span>
       </button>
     </div>

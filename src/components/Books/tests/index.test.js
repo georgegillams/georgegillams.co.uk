@@ -2,90 +2,69 @@ import React from 'react';
 
 import { render } from '@testing-library/react';
 
-import { BlogCard, BlogsList } from '..';
+import { BookCard, BooksList } from '..';
 
-const testBlogs = [
+const testBooks = [
   {
-    title: 'Blog 1 🎉',
+    title: 'Book 1 🎉',
+    author: 'Author 1',
     id: 'asdfg',
-    published: true,
-    showInBlogsList: true,
+    status: 'toRead',
   },
   {
-    tags: ['travel'],
-    requestedId: 'st-ives-2019',
-    title: 'St. Ives ⛵ 2018',
-    id: 'zxywvuts',
-    timestamp: 1595000996720,
-    authorId: 'direct_API_invocator',
-    blogImage: 'https://i.imgur.com/ppPEuDs.jpg',
-    blogCardDate: '23-30',
-    published: true,
-    showInBlogsList: true,
-    blogBannerColor: '#01579b',
-    publishedTimestamp: '1577422800',
-    lastUpdatedTimestamp: 1595000996720,
+    title: 'Book 2',
+    author: 'Author 2',
+    id: 'asdfh',
+    status: 'currentlyReading',
   },
   {
-    tags: ['travel'],
-    requestedId: 'st-ives-2019',
+    title: 'Book 3',
+    author: 'Author 3',
+    id: 'asdfi',
+    status: 'currentlyReading',
     deleted: true,
-    id: 'mndyd8',
-    timestamp: 1595000996720,
-    authorId: 'direct_API_invocator',
-    blogImage: 'https://i.imgur.com/ppPEuDs.jpg',
-    blogCardDate: '23-30',
-    published: true,
-    showInBlogsList: true,
-    blogBannerColor: '#01579b',
-    publishedTimestamp: '1577422800',
-    lastUpdatedTimestamp: 1595000996720,
   },
 ];
 
-describe('<BlogCard />', () => {
+describe('<BookCard />', () => {
   it('Should render correctly', () => {
-    const { container } = render(<BlogCard linkPrefix="/blog" blog={testBlogs[0]} />);
+    const { container } = render(<BookCard book={testBooks[0]} />);
 
     expect(container).toMatchSnapshot();
   });
 
   it('Should render correctly with all parameters supplied', () => {
-    const { container } = render(<BlogCard linkPrefix="/blog" blog={testBlogs[1]} />);
+    const { container } = render(<BookCard book={testBooks[1]} />);
 
     expect(container).toMatchSnapshot();
   });
 
   it('Should render correctly when deleted', () => {
-    const { container } = render(<BlogCard linkPrefix="/blog" blog={testBlogs[2]} />);
+    const { container } = render(<BookCard book={testBooks[2]} />);
 
     expect(container).toMatchSnapshot();
   });
 
   it('Should render correctly with custom className', () => {
-    const { container } = render(
-      <BlogCard linkPrefix="/blog" blog={testBlogs[0]} className={'test-custom-classname'} />
-    );
+    const { container } = render(<BookCard book={testBooks[0]} className={'test-custom-classname'} />);
 
     expect(container).toMatchSnapshot();
   });
 });
 
-describe('<BlogsList />', () => {
+describe('<BooksList />', () => {
   it('Should render correctly', () => {
-    const { container } = render(<BlogsList linkPrefix="/blog" blogs={testBlogs} />);
+    const { container } = render(<BooksList books={testBooks} />);
 
     expect(container).toMatchSnapshot();
   });
-  it('Should render correctly with deleteBlog function', () => {
-    const { container } = render(<BlogsList linkPrefix="/blog" blogs={testBlogs} deleteBlog={() => null} />);
+  it('Should render correctly with deleteBook function', () => {
+    const { container } = render(<BooksList books={testBooks} deleteBook={() => null} />);
 
     expect(container).toMatchSnapshot();
   });
   it('Should render correctly with custom className', () => {
-    const { container } = render(
-      <BlogsList linkPrefix="/blog" blogs={testBlogs} className={'test-custom-classname'} />
-    );
+    const { container } = render(<BooksList books={testBooks} className={'test-custom-classname'} />);
 
     expect(container).toMatchSnapshot();
   });

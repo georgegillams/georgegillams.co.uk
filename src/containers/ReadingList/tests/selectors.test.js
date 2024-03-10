@@ -1,21 +1,21 @@
 import { selectState, selectDomain } from '../selectors';
 import { initialState } from '../reducer';
 
-describe('selectBlogList', () => {
+describe('selectBookList', () => {
   it('should select the initial state', () => {
     const mockedState = {};
 
     expect(selectDomain(mockedState)).toEqual(initialState);
   });
 
-  it('should select the blogs state', () => {
+  it('should select the books state', () => {
     const state = {
       ...initialState,
-      blogs: 'Some blogs',
+      books: 'Some books',
     };
 
     const mockedState = {
-      ['blog-list']: state,
+      ['reading-list']: state,
     };
 
     const selectStateMock = selectState();

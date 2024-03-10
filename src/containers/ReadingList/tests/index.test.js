@@ -6,49 +6,32 @@ import { initialState } from '../reducer';
 
 import configureStore from 'client-utils/common/redux/configure-store';
 
-import BlogListIndex from '../index';
+import BookListIndex from '../index';
 import ReadingList from '../Container';
 
-const testBlogs = [
+const testBooks = [
   {
-    title: 'Blog 1 🎉',
+    title: 'Book 1 🎉',
+    author: 'Author 1',
     id: 'asdfg',
-    published: true,
-    showInBlogsList: true,
+    status: 'toRead',
   },
   {
-    tags: ['travel'],
-    requestedId: 'st-ives-2019',
-    title: 'St. Ives ⛵ 2018',
-    id: 'zxywvuts',
-    timestamp: 1595000996720,
-    authorId: 'direct_API_invocator',
-    blogImage: 'https://i.imgur.com/ppPEuDs.jpg',
-    blogCardDate: '23-30',
-    published: true,
-    showInBlogsList: true,
-    blogBannerColor: '#01579b',
-    publishedTimestamp: '1577422800',
-    lastUpdatedTimestamp: 1595000996720,
+    title: 'Book 2',
+    author: 'Author 2',
+    id: 'asdfh',
+    status: 'currentlyReading',
   },
   {
-    tags: ['travel'],
-    requestedId: 'st-ives-2019',
+    title: 'Book 3',
+    author: 'Author 3',
+    id: 'asdfi',
+    status: 'currentlyReading',
     deleted: true,
-    id: 'mndyd8',
-    timestamp: 1595000996720,
-    authorId: 'direct_API_invocator',
-    blogImage: 'https://i.imgur.com/ppPEuDs.jpg',
-    blogCardDate: '23-30',
-    published: true,
-    showInBlogsList: true,
-    blogBannerColor: '#01579b',
-    publishedTimestamp: '1577422800',
-    lastUpdatedTimestamp: 1595000996720,
   },
 ];
 
-describe('<BlogList />', () => {
+describe('<BookList />', () => {
   let store;
   const spy = jest.fn();
 
@@ -59,7 +42,7 @@ describe('<BlogList />', () => {
   it('should render correctly - index', () => {
     const { container } = render(
       <Provider store={store}>
-        <BlogListIndex />
+        <BookListIndex />
       </Provider>
     );
 
@@ -71,10 +54,12 @@ describe('<BlogList />', () => {
       <Provider store={store}>
         <ReadingList
           logout={spy}
-          loadBlogs={spy}
-          deleteBlog={spy}
-          linkPrefix="/blog"
-          blogListState={{
+          loadBooks={spy}
+          createBook={spy}
+          updateBook={spy}
+          deleteBook={spy}
+          linkPrefix="/book"
+          readingListState={{
             ...initialState,
           }}
           authenticatorState={{
@@ -87,17 +72,19 @@ describe('<BlogList />', () => {
     expect(container).toMatchSnapshot();
   });
 
-  it('should render correctly with blog load error', () => {
+  it('should render correctly with book load error', () => {
     const { container } = render(
       <Provider store={store}>
         <ReadingList
           logout={spy}
-          loadBlogs={spy}
-          deleteBlog={spy}
-          linkPrefix="/blog"
-          blogListState={{
+          loadBooks={spy}
+          createBook={spy}
+          updateBook={spy}
+          deleteBook={spy}
+          linkPrefix="/book"
+          readingListState={{
             ...initialState,
-            blogsLoadError: { error: 'not_found', errorMessage: 'Some error' },
+            booksLoadError: { error: 'not_found', errorMessage: 'Some error' },
           }}
           authenticatorState={{
             ...initialAuthenticatorState,
@@ -109,16 +96,18 @@ describe('<BlogList />', () => {
     expect(container).toMatchSnapshot();
   });
 
-  it('should render correctly with ssrBlogs', () => {
+  it('should render correctly with ssrBooks', () => {
     const { container } = render(
       <Provider store={store}>
         <ReadingList
           logout={spy}
-          loadBlogs={spy}
-          deleteBlog={spy}
-          linkPrefix="/blog"
-          ssrBlogs={testBlogs}
-          blogListState={{
+          loadBooks={spy}
+          createBook={spy}
+          updateBook={spy}
+          deleteBook={spy}
+          linkPrefix="/book"
+          ssrBooks={testBooks}
+          readingListState={{
             ...initialState,
           }}
           authenticatorState={{
@@ -130,17 +119,19 @@ describe('<BlogList />', () => {
 
     expect(container).toMatchSnapshot();
   });
-  it('should render correctly with blogs', () => {
+  it('should render correctly with books', () => {
     const { container } = render(
       <Provider store={store}>
         <ReadingList
           logout={spy}
-          loadBlogs={spy}
-          deleteBlog={spy}
-          linkPrefix="/blog"
-          blogListState={{
+          loadBooks={spy}
+          createBook={spy}
+          updateBook={spy}
+          deleteBook={spy}
+          linkPrefix="/book"
+          readingListState={{
             ...initialState,
-            blogs: testBlogs,
+            books: testBooks,
           }}
           authenticatorState={{
             ...initialAuthenticatorState,
@@ -152,17 +143,19 @@ describe('<BlogList />', () => {
     expect(container).toMatchSnapshot();
   });
 
-  it('should render correctly authenticated with blogs', () => {
+  it('should render correctly authenticated with books', () => {
     const { container } = render(
       <Provider store={store}>
         <ReadingList
           logout={spy}
-          loadBlogs={spy}
-          deleteBlog={spy}
-          linkPrefix="/blog"
-          blogListState={{
+          loadBooks={spy}
+          createBook={spy}
+          updateBook={spy}
+          deleteBook={spy}
+          linkPrefix="/book"
+          readingListState={{
             ...initialState,
-            blogs: testBlogs,
+            books: testBooks,
           }}
           authenticatorState={{
             ...initialAuthenticatorState,

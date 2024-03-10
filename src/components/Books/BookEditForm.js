@@ -14,6 +14,7 @@ const BookEditForm = props => {
 
   return (
     <FormBuilder
+      test={process.env.NODE_ENV === 'test'}
       formFields={[
         {
           id: 'title',
