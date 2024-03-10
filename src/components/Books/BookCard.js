@@ -59,7 +59,7 @@ const BookCard = props => {
             </TextLink>
           )}
           {audibleLink && (
-            <TextLink hrefExternal href={amazonLink} aria-label="View on Audible">
+            <TextLink hrefExternal href={audibleLink} aria-label="View on Audible">
               Audible
             </TextLink>
           )}
