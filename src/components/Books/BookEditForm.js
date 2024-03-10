@@ -1,12 +1,10 @@
 import React, { useEffect, useState } from 'react';
 import PropTypes from 'prop-types';
-import { BUTTON_TYPES } from '@george-gillams/components/button/constants';
 
-import { StyledBookCard, StyledButton, StyledFeatureCard } from './books-list.styles';
 import FormBuilder from '@george-gillams/components/form-builder';
 
 const BookEditForm = props => {
-  const { book, updateBook, ...rest } = props;
+  const { book, updateBook, submitLabel, ...rest } = props;
 
   const [editedBook, setUpdatedBook] = useState(book);
 
@@ -62,7 +60,7 @@ const BookEditForm = props => {
       entity={editedBook}
       onDataChanged={b => setUpdatedBook(b)}
       onSubmit={() => updateBook(editedBook)}
-      submitLabel={'Save'}
+      submitLabel={submitLabel}
       {...rest}
     />
   );
@@ -71,6 +69,7 @@ const BookEditForm = props => {
 BookEditForm.propTypes = {
   book: PropTypes.object.isRequired,
   updateBook: PropTypes.func.isRequired,
+  submitLabel: PropTypes.string.isRequired,
 };
 
 export default BookEditForm;

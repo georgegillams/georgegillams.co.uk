@@ -1,11 +1,17 @@
 import produce from 'immer';
 
-import { loadBooks, deleteBook, updateBook } from './actions';
+import { loadBooks, deleteBook, updateBook, createBook, setHighlightedBook } from './actions';
 
 export const initialState = {
+  highlightedBook: null,
+
   books: null,
   loadingBooks: false,
   loadBooksError: null,
+
+  bookToCreate: null,
+  creatingBook: false,
+  createBookError: null,
 
   bookToUpdate: null,
   updatingBook: false,
@@ -19,6 +25,10 @@ export const initialState = {
 const reducer = (state = initialState, { type, payload }) =>
   produce(state, draft => {
     switch (type) {
+      case setHighlightedBook.TRIGGER:
+        draft.highlightedBook = payload;
+        break;
+
       case loadBooks.REQUEST:
         draft.loadingBooks = true;
         draft.loadBooksError = null;
@@ -32,6 +42,24 @@ const reducer = (state = initialState, { type, payload }) =>
       case loadBooks.FAILURE:
         draft.loadingBooks = false;
         draft.loadBooksError = payload;
+        break;
+
+      case createBook.TRIGGER:
+        draft.bookToCreate = payload;
+        break;
+
+      case createBook.REQUEST:
+        draft.creatingBook = true;
+        draft.createBookError = null;
+        break;
+
+      case createBook.SUCCESS:
+        draft.creatingBook = false;
+        break;
+
+      case createBook.FAILURE:
+        draft.creatingBook = false;
+        draft.createBookError = payload;
         break;
 
       case updateBook.TRIGGER:

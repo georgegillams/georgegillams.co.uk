@@ -1,7 +1,13 @@
 import styled, { css } from 'styled-components';
 import Text, { SIZES, TAG_NAME } from '@george-gillams/components/text';
 import Image from '@george-gillams/components/image/image';
-import { breakpointMd, breakpointSm, spacingBase, spacingSm } from '@george-gillams/components/constants/layout';
+import {
+  borderRadiusSm,
+  breakpointMd,
+  breakpointSm,
+  spacingBase,
+  spacingSm,
+} from '@george-gillams/components/constants/layout';
 
 const HEIGHT_MOBILE = '4rem';
 const HEIGHT_DESKTOP = '5rem';
@@ -11,7 +17,6 @@ export const Wrapper = styled.div`
   grid-template-columns: ${HEIGHT_MOBILE} 1fr;
   min-height: ${HEIGHT_MOBILE};
   gap: ${spacingSm} ${spacingBase};
-  /* align-items: center; */
 
   @media (min-width: ${breakpointSm}) {
     grid-template-columns: ${HEIGHT_MOBILE} 1fr 10rem;
@@ -38,6 +43,8 @@ export const CoverImage = styled(Image).attrs({
   grid-row-end: 4;
   height: ${HEIGHT_MOBILE};
   width: ${HEIGHT_MOBILE};
+  border-radius: ${borderRadiusSm};
+  overflow: hidden;
 
   @media (min-width: ${breakpointMd}) {
     height: ${HEIGHT_DESKTOP};

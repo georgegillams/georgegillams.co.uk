@@ -4,7 +4,7 @@ import { compose } from 'redux';
 import { connect } from 'react-redux';
 import { createStructuredSelector } from 'reselect';
 
-import { loadBooks, updateBook, deleteBook } from './actions';
+import { loadBooks, updateBook, deleteBook, createBook } from './actions';
 import { selectState as selectAuthenticatorState } from 'containers/common/Authenticator/selectors';
 import { selectState } from './selectors';
 import ReadingList from './Container';
@@ -24,6 +24,7 @@ const mapStateToProps = createStructuredSelector({
 export function mapDispatchToProps(dispatch) {
   return {
     loadBooks: payload => dispatch(loadBooks(payload)),
+    createBook: payload => dispatch(createBook(payload)),
     updateBook: payload => dispatch(updateBook(payload)),
     deleteBook: payload => dispatch(deleteBook(payload)),
   };

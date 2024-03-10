@@ -10,9 +10,11 @@ import appConfig from 'helpers/appConfig';
 import { StyledPageContainer } from './container.styles';
 import { ScrollAnimationWrapper } from '@george-gillams/components/effects';
 import BooksList from 'components/Books';
+import PageTitle from '@george-gillams/components/page-title';
+import { WIDTHS } from '@george-gillams/components/page-container';
 
 const ReadingList = props => {
-  const { ssrBooks, loadBooks, updateBook, deleteBook, authenticatorState, readingListState } = props;
+  const { ssrBooks, loadBooks, createBook, updateBook, deleteBook, authenticatorState, readingListState } = props;
 
   useEffect(() => {
     loadBooks();
@@ -25,7 +27,7 @@ const ReadingList = props => {
 
   return (
     <>
-      <StyledPageContainer>
+      <StyledPageContainer width={WIDTHS.prose} bottomPadding>
         <DebugObject
           debugTitle="Books"
           debugObject={{
@@ -42,16 +44,19 @@ const ReadingList = props => {
           loading={!booksToRender}
           error={!!readingListState.loadBooksError}>
           <>
-            {booksToRender && (
-              <ScrollAnimationWrapper>
-                <BooksList
-                  admin={admin}
-                  books={booksToRender}
-                  updateBook={admin ? updateBook : null}
-                  deleteBook={admin ? deleteBook : null}
-                />
-              </ScrollAnimationWrapper>
-            )}
+            <PageTitle padding name="My reading list">
+              {booksToRender && (
+                <ScrollAnimationWrapper>
+                  <BooksList
+                    admin={admin}
+                    books={booksToRender}
+                    createBook={admin ? createBook : null}
+                    updateBook={admin ? updateBook : null}
+                    deleteBook={admin ? deleteBook : null}
+                  />
+                </ScrollAnimationWrapper>
+              )}
+            </PageTitle>
           </>
         </LoadingCover>
       </StyledPageContainer>
@@ -71,6 +76,7 @@ ReadingList.propTypes = {
     user: PropTypes.object,
   }).isRequired,
   loadBooks: PropTypes.func.isRequired,
+  createBook: PropTypes.func.isRequired,
   updateBook: PropTypes.func.isRequired,
   deleteBook: PropTypes.func.isRequired,
 };

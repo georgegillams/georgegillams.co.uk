@@ -6,16 +6,16 @@ import { breakpointMd, spacingBase, spacingLg } from '@george-gillams/components
 
 const cardStyles = props => css`
   width: 100%;
-  margin-bottom: ${spacingLg};
+  margin-top: ${spacingLg};
   box-sizing: border-box;
 
   @media (min-width: ${breakpointMd}) {
-    margin-bottom: calc(${spacingBase} + ${spacingLg});
+    margin-top: calc(${spacingBase} + ${spacingLg});
   }
 
   ${props.withControls &&
   css`
-    margin-bottom: 0.5rem;
+    margin-bottom: 1rem;
   `}
 `;
 
