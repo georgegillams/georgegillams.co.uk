@@ -156,6 +156,14 @@ const Medals = () => {
               year="2023"
               stravaLink="https://www.strava.com/activities/10353677047"
             />
+            <EventPatch
+              background={notBlack}
+              foreground="#F80F11"
+              title="Tartan Warrior 8km"
+              year="2024"
+              stravaLink="https://www.strava.com/activities/11027300530"
+              showDarkModeOutline
+            />
           </StyledMedalShelf>
         </Subsection>
       </SectionWithScroll>
