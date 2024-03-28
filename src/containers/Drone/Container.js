@@ -79,7 +79,7 @@ const Contact = () => {
           <Subsection name="UK"></Subsection>
           <Paragraph>GBR-OP-267ZQHMWPYGR — expires 8 March 2025</Paragraph>
           <Subsection name="Norway and EASA member states">
-            <Paragraph>NOR5p8cfumh4phal — expires 8 March 2024</Paragraph>
+            <Paragraph>NOR5p8cfumh4phal — expires 28 March 2025</Paragraph>
           </Subsection>
         </SectionWithScroll>
         <SectionWithScroll name="Public Liability Insurance">
