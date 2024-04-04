@@ -26,7 +26,7 @@ const UserEditForm = props => {
           id: 'uname',
           name: 'Display name',
           validationRegex: USERNAME_REGEX,
-          show: true,
+
           inputProps: {
             spellCheck: 'false',
           },
@@ -35,7 +35,7 @@ const UserEditForm = props => {
           id: 'name',
           name: 'Real name',
           validationRegex: NAME_REGEX,
-          show: true,
+
           inputProps: {
             spellCheck: 'false',
             autofill: 'name',
@@ -45,7 +45,7 @@ const UserEditForm = props => {
           id: 'email',
           name: 'Email',
           validationRegex: EMAIL_REGEX,
-          show: true,
+
           inputProps: {
             spellCheck: 'false',
             autofill: 'email',
