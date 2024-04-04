@@ -27,7 +27,7 @@ const SignUpForm = props => {
           id: 'uname',
           name: 'Display name',
           validationRegex: USERNAME_REGEX,
-          show: true,
+
           inputProps: {
             autofill: 'username',
           },
@@ -36,7 +36,7 @@ const SignUpForm = props => {
           id: 'email',
           name: 'Email',
           validationRegex: EMAIL_REGEX,
-          show: true,
+
           inputProps: {
             spellCheck: 'false',
             autofill: 'email',
@@ -46,7 +46,6 @@ const SignUpForm = props => {
           type: 'CHECKBOX',
           id: 'consent',
           name: 'I consent to the data entered above being stored.',
-          show: true,
         },
       ]}
       test={process.env.NODE_ENV === 'test'}

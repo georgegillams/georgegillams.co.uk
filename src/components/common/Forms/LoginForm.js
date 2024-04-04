@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import FormBuilder from '@george-gillams/components/form-builder';
+import FormBuilder, { FORM_FIELD_VISIBILITY } from '@george-gillams/components/form-builder';
 
 import { EMAIL_REGEX } from '@george-gillams/webapp/helpers/regexConstants';
 
@@ -28,10 +28,20 @@ const LoginForm = props => {
           id: 'email',
           name: 'Email',
           validationRegex: EMAIL_REGEX,
-          show: true,
           inputProps: {
             spellCheck: 'false',
             autofill: 'username',
+            autocomplete: 'username',
+          },
+        },
+        {
+          id: 'password',
+          name: 'Password',
+          visibility: FORM_FIELD_VISIBILITY.VISUALLY_HIDDEN,
+          inputProps: {
+            spellCheck: 'false',
+            autofill: 'current-password',
+            autocomplete: 'current-password',
           },
         },
       ]}

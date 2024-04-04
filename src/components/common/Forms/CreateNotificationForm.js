@@ -14,7 +14,6 @@ const CreateNotificationForm = props => {
         {
           id: 'message',
           name: 'Message',
-          show: true,
         },
         {
           id: 'type',
@@ -25,7 +24,6 @@ const CreateNotificationForm = props => {
             { value: 'warn', name: 'Warning (orange)' },
             { value: 'error', name: 'Error (red)' },
           ],
-          show: true,
         },
       ]}
       onSubmit={onSubmit}

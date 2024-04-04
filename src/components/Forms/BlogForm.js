@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import FormBuilder from '@george-gillams/components/form-builder';
+import FormBuilder, { FORM_FIELD_VISIBILITY } from '@george-gillams/components/form-builder';
 
 import { STRING_REGEX, ID_REGEX, ANYTHING_REGEX } from '@george-gillams/webapp/helpers/regexConstants';
 
@@ -18,71 +18,61 @@ const BlogForm = props => {
           id: 'requestedId',
           name: 'Requested ID',
           validationRegex: ID_REGEX,
-          show: !blog.id,
+          visibility: !blog.id ? FORM_FIELD_VISIBILITY.VISIBLE : FORM_FIELD_VISIBILITY.HIDDEN,
         },
         {
           id: 'title',
           name: 'Title',
           validationRegex: ANYTHING_REGEX,
-          show: true,
         },
         {
           id: 'tags',
           name: 'Tags',
           validationRegex: ANYTHING_REGEX,
-          show: true,
         },
         {
           id: 'blogImage',
           name: 'Blog image',
           validationRegex: ANYTHING_REGEX,
-          show: true,
         },
         {
           id: 'publishedTimestamp',
           name: 'Published timestamp',
           validationRegex: ANYTHING_REGEX,
-          show: true,
         },
         {
           id: 'blogCardDate',
           name: 'Blog card date override',
           validationRegex: ANYTHING_REGEX,
-          show: true,
         },
         {
           id: 'light',
           name: 'Light',
           validationRegex: null,
           type: 'CHECKBOX',
-          show: true,
         },
         {
           id: 'published',
           name: 'Published',
           validationRegex: null,
           type: 'CHECKBOX',
-          show: true,
         },
         {
           id: 'showInBlogsList',
           name: 'Show in blogs list',
           validationRegex: null,
           type: 'CHECKBOX',
-          show: true,
         },
         {
           id: 'blogImageBorderColor',
           name: 'Blog image border color',
           validationRegex: STRING_REGEX,
-          show: true,
         },
         {
           id: 'content',
           name: 'Content',
           long: true,
           validationRegex: ANYTHING_REGEX,
-          show: true,
         },
       ]}
       test={process.env.NODE_ENV === 'test'}
