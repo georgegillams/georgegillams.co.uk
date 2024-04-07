@@ -24,13 +24,11 @@ const SupportForm = props => {
           id: 'description',
           name: 'Description',
           validationRegex: ANYTHING_REGEX,
-          show: true,
         },
         {
           id: 'url',
           name: 'URL',
           validationRegex: ANYTHING_REGEX,
-          show: true,
         },
       ]}
       submitLabel="Add link"

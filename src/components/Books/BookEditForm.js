@@ -19,32 +19,26 @@ const BookEditForm = props => {
         {
           id: 'title',
           name: 'Title',
-          show: true,
         },
         {
           id: 'author',
           name: 'Author',
-          show: true,
         },
         {
           id: 'bookImage',
           name: 'Book image',
-          show: true,
         },
         {
           id: 'recommendation',
           name: 'Recommendation',
-          show: true,
         },
         {
           id: 'amazonLink',
           name: 'Amazon link',
-          show: true,
         },
         {
           id: 'audibleLink',
           name: 'Audible link',
-          show: true,
         },
         {
           id: 'status',
@@ -55,7 +49,6 @@ const BookEditForm = props => {
             { value: 'currentlyReading', name: 'Currently reading' },
             { value: 'using', name: 'Using' },
           ],
-          show: true,
         },
       ]}
       entity={editedBook}
