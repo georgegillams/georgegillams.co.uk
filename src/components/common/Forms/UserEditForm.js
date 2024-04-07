@@ -54,7 +54,7 @@ const UserEditForm = props => {
         {
           id: 'admin',
           name: 'Is admin',
-          visibility: showAdminControls ? FORM_FIELD_VISIBILITY.VISIBLE : FORM_FIELD_VISIBILITY.HIDDEN,
+          visibility: showAdminControls ? FORM_FIELD_VISIBILITY.VISIBLE : FORM_FIELD_VISIBILITY.OFF,
           type: 'CHECKBOX',
         },
       ]}

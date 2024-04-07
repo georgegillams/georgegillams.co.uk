@@ -1541,10 +1541,10 @@
   resolved "https://registry.yarnpkg.com/@eslint/js/-/js-8.56.0.tgz#ef20350fec605a7f7035a01764731b2de0f3782b"
   integrity sha512-gMsVel9D7f2HLkBma9VbtzZRehRogVRfbr++f06nL2vnCGCNlzOD+/MUov/F4p8myyAHspEhVobgjpX64q5m6A==
 
-"@george-gillams/components@^29.0.1":
-  version "29.0.1"
-  resolved "https://registry.yarnpkg.com/@george-gillams/components/-/components-29.0.1.tgz#48f8fa28ae7e220306f65699bccc68d2c26979e4"
-  integrity sha512-jw1afeHx5NG4fSAeF8FW5KdMhHx3bJLKm6j9fn8bJYpjjKszvFhggblAhYxePm5M0m1c8zmUbsxYUlPfNQoZ9Q==
+"@george-gillams/components@^29.0.3":
+  version "29.0.3"
+  resolved "https://registry.yarnpkg.com/@george-gillams/components/-/components-29.0.3.tgz#b179e03e008766a0d15cadc1215cc2e3acc855fa"
+  integrity sha512-hJ2jtYKOPjGTmQoHudNpnHIY98OVDZaeq4QUv6g7YV2JvpZnhqj0I14UAf//jx0a+9RJz51f/ryVkRIphYjBRw==
   dependencies:
     a11y-focus-scope "^1.1.3"
     date-fns "^2.29.3"

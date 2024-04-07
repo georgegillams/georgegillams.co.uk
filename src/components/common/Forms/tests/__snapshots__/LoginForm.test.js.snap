@@ -263,6 +263,7 @@ exports[`<LoginForm /> Should render correctly 1`] = `
           id="email_FORM_ID"
           name="Email"
           spellcheck="false"
+          type="email"
           value=""
         />
         <svg
@@ -302,7 +303,7 @@ exports[`<LoginForm /> Should render correctly 1`] = `
           id="password_FORM_ID"
           name="Password"
           spellcheck="false"
-          tabindex="-1"
+          type="password"
           value=""
         />
         <svg
