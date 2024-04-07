@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import FormBuilder from '@george-gillams/components/form-builder';
+import FormBuilder, { FORM_FIELD_VISIBILITY } from '@george-gillams/components/form-builder';
 
 import { EMAIL_REGEX, USERNAME_REGEX, NAME_REGEX } from '@george-gillams/webapp/helpers/regexConstants';
 
@@ -54,7 +54,7 @@ const UserEditForm = props => {
         {
           id: 'admin',
           name: 'Is admin',
-          show: showAdminControls,
+          visibility: showAdminControls ? FORM_FIELD_VISIBILITY.VISIBLE : FORM_FIELD_VISIBILITY.HIDDEN,
           type: 'CHECKBOX',
         },
       ]}
