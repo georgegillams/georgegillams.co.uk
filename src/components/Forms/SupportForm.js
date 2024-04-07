@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import FormBuilder from '@george-gillams/components/form-builder';
+import FormBuilder, { FORM_FIELD_VISIBILITY } from '@george-gillams/components/form-builder';
 
 import { ANYTHING_REGEX } from '@george-gillams/webapp/helpers/regexConstants';
 
@@ -18,7 +18,7 @@ const SupportForm = props => {
           id: 'name',
           name: 'Name',
           validationRegex: ANYTHING_REGEX,
-          show: !link.id,
+          visibility: !link.id ? FORM_FIELD_VISIBILITY.VISIBLE : FORM_FIELD_VISIBILITY.HIDDEN,
         },
         {
           id: 'description',
