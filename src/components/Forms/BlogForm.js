@@ -18,7 +18,7 @@ const BlogForm = props => {
           id: 'requestedId',
           name: 'Requested ID',
           validationRegex: ID_REGEX,
-          visibility: !blog.id ? FORM_FIELD_VISIBILITY.VISIBLE : FORM_FIELD_VISIBILITY.HIDDEN,
+          visibility: !blog.id ? FORM_FIELD_VISIBILITY.VISIBLE : FORM_FIELD_VISIBILITY.OFF,
         },
         {
           id: 'title',

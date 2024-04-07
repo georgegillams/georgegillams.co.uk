@@ -18,7 +18,7 @@ const SupportForm = props => {
           id: 'name',
           name: 'Name',
           validationRegex: ANYTHING_REGEX,
-          visibility: !link.id ? FORM_FIELD_VISIBILITY.VISIBLE : FORM_FIELD_VISIBILITY.HIDDEN,
+          visibility: !link.id ? FORM_FIELD_VISIBILITY.VISIBLE : FORM_FIELD_VISIBILITY.OFF,
         },
         {
           id: 'description',

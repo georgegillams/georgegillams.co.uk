@@ -29,6 +29,7 @@ const LoginForm = props => {
           name: 'Email',
           validationRegex: EMAIL_REGEX,
           inputProps: {
+            type: 'email',
             spellCheck: 'false',
             autofill: 'username',
             autocomplete: 'username',
@@ -39,6 +40,7 @@ const LoginForm = props => {
           name: 'Password',
           visibility: FORM_FIELD_VISIBILITY.VISUALLY_HIDDEN,
           inputProps: {
+            type: 'password',
             spellCheck: 'false',
             autofill: 'current-password',
             autocomplete: 'current-password',
