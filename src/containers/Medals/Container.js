@@ -113,6 +113,11 @@ const Medals = () => {
               year="2023"
               stravaLink="https://www.strava.com/activities/9992819542"
             />
+            <SpartanMedal
+              type={SPARTAN_EVENT_TYPE.beast}
+              year="2024"
+              stravaLink="https://www.strava.com/activities/11383917878"
+            />
           </StyledMedalShelf>
         </Subsection>
         {/* <Subsection anchor={false} name="Trifectas">
@@ -162,6 +167,14 @@ const Medals = () => {
               title="Tartan Warrior 8km"
               year="2024"
               stravaLink="https://www.strava.com/activities/11027300530"
+              showDarkModeOutline
+            />
+            <EventPatch
+              background={notBlack}
+              foreground="#FFF200"
+              title="Nuclear Challenge Cup 15km"
+              year="2024"
+              stravaLink="https://www.strava.com/activities/11391838834"
               showDarkModeOutline
             />
           </StyledMedalShelf>
