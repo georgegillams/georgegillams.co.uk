@@ -177,6 +177,20 @@ const Medals = () => {
               stravaLink="https://www.strava.com/activities/11391838834"
               showDarkModeOutline
             />
+            <EventPatch
+              background="#FFFFFF"
+              foreground="#088544"
+              title="OCREC Short Course"
+              year="2024"
+              stravaLink="https://www.strava.com/activities/11650394161"
+            />
+            <EventPatch
+              background="#FFFFFF"
+              foreground="#088544"
+              title="OCREC Standard Course"
+              year="2024"
+              stravaLink="https://www.strava.com/activities/11657867054"
+            />
           </StyledMedalShelf>
         </Subsection>
       </SectionWithScroll>
@@ -210,7 +224,7 @@ const Medals = () => {
           </StyledMedalShelf>
         </Subsection>
       </SectionWithScroll>
-      <SectionWithScroll name="Runs">
+      <SectionWithScroll name="Running">
         <Subsection>
           <StyledMedalShelf>
             <EventPatch
