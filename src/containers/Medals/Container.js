@@ -17,44 +17,6 @@ const Medals = () => {
   return (
     <PageContainer bottomPadding>
       <PageTitle anchor={false} name="Medals"></PageTitle>
-      <SectionWithScroll name="Tough Mudder">
-        <Subsection>
-          <StyledMedalShelf>
-            <ToughMudderPatch
-              type={TM_PATCH_TYPE.eventFull}
-              year={2016}
-              stravaLink="https://www.strava.com/activities/787876867"
-            />
-            <ToughMudderPatch
-              type={TM_PATCH_TYPE.eventHalf}
-              year={2016}
-              stravaLink="https://www.strava.com/activities/787876472"
-            />
-            <ToughMudderPatch
-              type={TM_PATCH_TYPE.eventFull}
-              year={2017}
-              stravaLink="https://www.strava.com/activities/973508848"
-            />
-            <ToughMudderPatch
-              type={TM_PATCH_TYPE.eventFull}
-              year={2017}
-              stravaLink="https://www.strava.com/activities/998731470"
-            />
-            <ToughMudderPatch
-              type={TM_PATCH_TYPE.eventFull}
-              year={2018}
-              stravaLink="https://www.strava.com/activities/1551224197"
-            />
-          </StyledMedalShelf>
-        </Subsection>
-        {/* <Subsection anchor={false} name="Legionaire">
-          <StyledMedalShelf>
-            <ToughMudderPatch type={TM_PATCH_TYPE.legionnaire2} />
-            <ToughMudderPatch type={TM_PATCH_TYPE.legionnaire3} />
-            <ToughMudderPatch type={TM_PATCH_TYPE.legionnaire456} />
-          </StyledMedalShelf>
-        </Subsection> */}
-      </SectionWithScroll>
       <SectionWithScroll name="Spartan">
         <Subsection>
           <StyledMedalShelf>
@@ -117,6 +79,16 @@ const Medals = () => {
               type={SPARTAN_EVENT_TYPE.beast}
               year="2024"
               stravaLink="https://www.strava.com/activities/11383917878"
+            />
+            <SpartanMedal
+              type={SPARTAN_EVENT_TYPE.sprint}
+              year="2024"
+              stravaLink="https://www.strava.com/activities/11767286534"
+            />
+            <SpartanMedal
+              type={SPARTAN_EVENT_TYPE.super}
+              year="2024"
+              stravaLink="https://www.strava.com/activities/11772961887"
             />
           </StyledMedalShelf>
         </Subsection>
@@ -190,6 +162,14 @@ const Medals = () => {
               title="OCREC Standard Course"
               year="2024"
               stravaLink="https://www.strava.com/activities/11657867054"
+            />
+            <EventPatch
+              background={notBlack}
+              foreground="white"
+              title="British Championships"
+              year="2024"
+              stravaLink="https://www.strava.com/activities/11765215916"
+              showDarkModeOutline
             />
           </StyledMedalShelf>
         </Subsection>
@@ -270,6 +250,44 @@ const Medals = () => {
             />
           </StyledMedalShelf>
         </Subsection>
+      </SectionWithScroll>
+      <SectionWithScroll name="Tough Mudder">
+        <Subsection>
+          <StyledMedalShelf>
+            <ToughMudderPatch
+              type={TM_PATCH_TYPE.eventFull}
+              year={2016}
+              stravaLink="https://www.strava.com/activities/787876867"
+            />
+            <ToughMudderPatch
+              type={TM_PATCH_TYPE.eventHalf}
+              year={2016}
+              stravaLink="https://www.strava.com/activities/787876472"
+            />
+            <ToughMudderPatch
+              type={TM_PATCH_TYPE.eventFull}
+              year={2017}
+              stravaLink="https://www.strava.com/activities/973508848"
+            />
+            <ToughMudderPatch
+              type={TM_PATCH_TYPE.eventFull}
+              year={2017}
+              stravaLink="https://www.strava.com/activities/998731470"
+            />
+            <ToughMudderPatch
+              type={TM_PATCH_TYPE.eventFull}
+              year={2018}
+              stravaLink="https://www.strava.com/activities/1551224197"
+            />
+          </StyledMedalShelf>
+        </Subsection>
+        {/* <Subsection anchor={false} name="Legionaire">
+          <StyledMedalShelf>
+            <ToughMudderPatch type={TM_PATCH_TYPE.legionnaire2} />
+            <ToughMudderPatch type={TM_PATCH_TYPE.legionnaire3} />
+            <ToughMudderPatch type={TM_PATCH_TYPE.legionnaire456} />
+          </StyledMedalShelf>
+        </Subsection> */}
       </SectionWithScroll>
     </PageContainer>
   );
