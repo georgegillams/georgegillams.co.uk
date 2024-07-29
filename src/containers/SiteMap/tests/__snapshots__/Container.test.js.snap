@@ -1206,6 +1206,19 @@ exports[`<SiteMap /> should render correctly - index 1`] = `
             <div>
               <a
                 class="c10"
+                href="/linktree"
+              >
+                <span
+                  class="c11"
+                >
+                  /linktree ⇒ https://linktr.ee/georgegillams
+                </span>
+              </a>
+              <br />
+            </div>
+            <div>
+              <a
+                class="c10"
                 href="/wp-admin"
               >
                 <span
@@ -2768,6 +2781,19 @@ exports[`<SiteMap /> should render correctly 1`] = `
             <div>
               <a
                 class="c10"
+                href="/linktree"
+              >
+                <span
+                  class="c11"
+                >
+                  /linktree ⇒ https://linktr.ee/georgegillams
+                </span>
+              </a>
+              <br />
+            </div>
+            <div>
+              <a
+                class="c10"
                 href="/wp-admin"
               >
                 <span
@@ -4251,6 +4277,19 @@ exports[`<SiteMap /> should render correctly with blogs 1`] = `
                   class="c11"
                 >
                   /spartan ⇒ https://uk.spartan.com/en/race/profile/3661120
+                </span>
+              </a>
+              <br />
+            </div>
+            <div>
+              <a
+                class="c10"
+                href="/linktree"
+              >
+                <span
+                  class="c11"
+                >
+                  /linktree ⇒ https://linktr.ee/georgegillams
                 </span>
               </a>
               <br />
@@ -5819,6 +5858,19 @@ exports[`<SiteMap /> should render correctly with blogs and admin user 1`] = `
             <div>
               <a
                 class="c10"
+                href="/linktree"
+              >
+                <span
+                  class="c11"
+                >
+                  /linktree ⇒ https://linktr.ee/georgegillams
+                </span>
+              </a>
+              <br />
+            </div>
+            <div>
+              <a
+                class="c10"
                 href="/wp-admin"
               >
                 <span
@@ -7302,6 +7354,19 @@ exports[`<SiteMap /> should render correctly with ssrBlogs 1`] = `
                   class="c11"
                 >
                   /spartan ⇒ https://uk.spartan.com/en/race/profile/3661120
+                </span>
+              </a>
+              <br />
+            </div>
+            <div>
+              <a
+                class="c10"
+                href="/linktree"
+              >
+                <span
+                  class="c11"
+                >
+                  /linktree ⇒ https://linktr.ee/georgegillams
                 </span>
               </a>
               <br />

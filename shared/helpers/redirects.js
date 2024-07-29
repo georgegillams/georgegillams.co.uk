@@ -24,6 +24,7 @@ const redirects = [
   { from: '/facebook', to: 'https://www.facebook.com/profile.php?id=100073681786600' },
   { from: '/instagram', to: 'https://www.instagram.com/georgegillams/' },
   { from: '/spartan', to: 'https://uk.spartan.com/en/race/profile/3661120' },
+  { from: '/linktree', to: 'https://linktr.ee/georgegillams' },
 
   { from: '/wp-admin', to: '/admin' },
   { from: '/about', to: '/' },
