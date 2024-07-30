@@ -15,15 +15,17 @@ import { BUTTON_SIZES } from '@george-gillams/components/button';
 import { withScrollAnimation } from '@george-gillams/components/effects';
 const SectionWithScroll = withScrollAnimation(Section);
 
-const Contact = () => {
+const Drone = () => {
   return (
     <PageContainer width={WIDTHS.default} bottomPadding>
       <PageTitle name="Drone">
         <SectionWithScroll name="Have you found a drone?">
-          <Paragraph>Thank you! 🙏 Please tap the button to fill in a form and get my drone back to me!</Paragraph>
+          <Paragraph>
+            Thank you! 🙏 Please tap the button below to fill in a form and get my drone back to me!
+          </Paragraph>
           <br />
           <Paragraph>
-            <Button size={BUTTON_SIZES.large} hrefExternal href="https://form.typeform.com/to/hzJMvzsT">
+            <Button size={BUTTON_SIZES.large} hrefExternal href="https://form.typeform.com/to/hzJMvzsT#item=drone">
               I&#39;ve found your drone →
             </Button>
           </Paragraph>
@@ -93,4 +95,4 @@ const Contact = () => {
   );
 };
 
-export default Contact;
+export default Drone;
