@@ -424,12 +424,12 @@ exports[`<Layout /> Should render correctly 1`] = `
             </a>
             <a
               class="c14"
-              href="/medals"
+              href="/races"
             >
               <span
                 class="c15"
               >
-                Medals
+                Races
               </span>
             </a>
             <a
@@ -928,12 +928,12 @@ exports[`<Layout /> Should render correctly with spread props 1`] = `
             </a>
             <a
               class="c14"
-              href="/medals"
+              href="/races"
             >
               <span
                 class="c15"
               >
-                Medals
+                Races
               </span>
             </a>
             <a

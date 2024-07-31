@@ -92,9 +92,9 @@ const SiteMap = props => {
             <TextLink href="/reading-list">Reading list</TextLink>
           </Paragraph>
         </StyledSubsectionWithScroll>
-        <StyledSubsectionWithScroll anchor={false} name="Medals 🏅">
+        <StyledSubsectionWithScroll anchor={false} name="Races 🏅">
           <Paragraph>
-            <TextLink href="/medals">Medals</TextLink>
+            <TextLink href="/races">Races</TextLink>
           </Paragraph>
         </StyledSubsectionWithScroll>
         <StyledSubsectionWithScroll anchor={false} name="Work 📱">

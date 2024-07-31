@@ -1967,18 +1967,18 @@ exports[`<HomePage /> should render correctly 1`] = `
                                 <span
                                   class="c9 c43"
                                 >
-                                  Visit my virtual medal shelf.
+                                  See the races I've completed.
                                 </span>
                               </div>
                               <a
-                                aria-label="Medals →"
+                                aria-label="Races →"
                                 class="c44 c45"
-                                href="/medals"
+                                href="/races"
                               >
                                 <span
                                   class="c46"
                                 >
-                                  Medals →
+                                  Races →
                                 </span>
                               </a>
                             </div>
@@ -3046,12 +3046,12 @@ exports[`<HomePage /> should render correctly 1`] = `
             </a>
             <a
               class="c93"
-              href="/medals"
+              href="/races"
             >
               <span
                 class="c12"
               >
-                Medals
+                Races
               </span>
             </a>
             <a

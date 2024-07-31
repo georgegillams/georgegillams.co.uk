@@ -10,7 +10,7 @@ const TechSpecs = props => {
         <TextLink href="/blog">Blog</TextLink>
         <TextLink href="/photography">Photography</TextLink>
         <TextLink href="/reading-list">Reading list</TextLink>
-        <TextLink href="/medals">Medals</TextLink>
+        <TextLink href="/races">Races</TextLink>
         <TextLink href="/work">Work</TextLink>
       </Section>
       <Section>

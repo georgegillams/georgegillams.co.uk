@@ -395,21 +395,21 @@ exports[`<SiteMap /> should render correctly - index 1`] = `
         >
           <h1
             class="c7 c8"
-            id="medals-🏅"
+            id="races-🏅"
           >
-            Medals 🏅
+            Races 🏅
           </h1>
           <span
             class="c9"
           >
             <a
               class="c10"
-              href="/medals"
+              href="/races"
             >
               <span
                 class="c11"
               >
-                Medals
+                Races
               </span>
             </a>
           </span>
@@ -1550,6 +1550,19 @@ exports[`<SiteMap /> should render correctly - index 1`] = `
                   class="c11"
                 >
                   /reading ⇒ /reading-list
+                </span>
+              </a>
+              <br />
+            </div>
+            <div>
+              <a
+                class="c10"
+                href="/medals"
+              >
+                <span
+                  class="c11"
+                >
+                  /medals ⇒ /races
                 </span>
               </a>
               <br />
@@ -1970,21 +1983,21 @@ exports[`<SiteMap /> should render correctly 1`] = `
         >
           <h1
             class="c7 c8"
-            id="medals-🏅"
+            id="races-🏅"
           >
-            Medals 🏅
+            Races 🏅
           </h1>
           <span
             class="c9"
           >
             <a
               class="c10"
-              href="/medals"
+              href="/races"
             >
               <span
                 class="c11"
               >
-                Medals
+                Races
               </span>
             </a>
           </span>
@@ -3125,6 +3138,19 @@ exports[`<SiteMap /> should render correctly 1`] = `
                   class="c11"
                 >
                   /reading ⇒ /reading-list
+                </span>
+              </a>
+              <br />
+            </div>
+            <div>
+              <a
+                class="c10"
+                href="/medals"
+              >
+                <span
+                  class="c11"
+                >
+                  /medals ⇒ /races
                 </span>
               </a>
               <br />
@@ -3473,21 +3499,21 @@ exports[`<SiteMap /> should render correctly with blogs 1`] = `
         >
           <h1
             class="c7 c8"
-            id="medals-🏅"
+            id="races-🏅"
           >
-            Medals 🏅
+            Races 🏅
           </h1>
           <span
             class="c9"
           >
             <a
               class="c10"
-              href="/medals"
+              href="/races"
             >
               <span
                 class="c11"
               >
-                Medals
+                Races
               </span>
             </a>
           </span>
@@ -4628,6 +4654,19 @@ exports[`<SiteMap /> should render correctly with blogs 1`] = `
                   class="c11"
                 >
                   /reading ⇒ /reading-list
+                </span>
+              </a>
+              <br />
+            </div>
+            <div>
+              <a
+                class="c10"
+                href="/medals"
+              >
+                <span
+                  class="c11"
+                >
+                  /medals ⇒ /races
                 </span>
               </a>
               <br />
@@ -5047,21 +5086,21 @@ exports[`<SiteMap /> should render correctly with blogs and admin user 1`] = `
         >
           <h1
             class="c7 c8"
-            id="medals-🏅"
+            id="races-🏅"
           >
-            Medals 🏅
+            Races 🏅
           </h1>
           <span
             class="c9"
           >
             <a
               class="c10"
-              href="/medals"
+              href="/races"
             >
               <span
                 class="c11"
               >
-                Medals
+                Races
               </span>
             </a>
           </span>
@@ -6202,6 +6241,19 @@ exports[`<SiteMap /> should render correctly with blogs and admin user 1`] = `
                   class="c11"
                 >
                   /reading ⇒ /reading-list
+                </span>
+              </a>
+              <br />
+            </div>
+            <div>
+              <a
+                class="c10"
+                href="/medals"
+              >
+                <span
+                  class="c11"
+                >
+                  /medals ⇒ /races
                 </span>
               </a>
               <br />
@@ -6550,21 +6602,21 @@ exports[`<SiteMap /> should render correctly with ssrBlogs 1`] = `
         >
           <h1
             class="c7 c8"
-            id="medals-🏅"
+            id="races-🏅"
           >
-            Medals 🏅
+            Races 🏅
           </h1>
           <span
             class="c9"
           >
             <a
               class="c10"
-              href="/medals"
+              href="/races"
             >
               <span
                 class="c11"
               >
-                Medals
+                Races
               </span>
             </a>
           </span>
@@ -7705,6 +7757,19 @@ exports[`<SiteMap /> should render correctly with ssrBlogs 1`] = `
                   class="c11"
                 >
                   /reading ⇒ /reading-list
+                </span>
+              </a>
+              <br />
+            </div>
+            <div>
+              <a
+                class="c10"
+                href="/medals"
+              >
+                <span
+                  class="c11"
+                >
+                  /medals ⇒ /races
                 </span>
               </a>
               <br />

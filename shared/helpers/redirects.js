@@ -53,6 +53,7 @@ const redirects = [
   { from: '/book', to: '/reading-list' },
   { from: '/books', to: '/reading-list' },
   { from: '/reading', to: '/reading-list' },
+  { from: '/medals', to: '/races' },
 
   { from: '/contraster-feedback', to: 'https://form.typeform.com/to/XhSSvzDp' },
 ];
