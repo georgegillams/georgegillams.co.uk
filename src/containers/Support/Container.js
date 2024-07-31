@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 
 import DebugObject from 'components/common/DebugObject';
@@ -14,13 +14,14 @@ import Button from 'components/common/Button';
 import ErrorDisplay from 'components/common/ErrorDisplay';
 import PageContainer from 'components/common/PageContainer';
 import { Controls, SupportError } from './support.styles';
+import { useEffectOnce } from 'react-use';
 
 const Support = props => {
   const { loadLinks, createLink, deleteLink, supportState, authenticatorState } = props;
 
   const [newLink, setNewLink] = useState(null);
 
-  useEffect(() => {
+  useEffectOnce(() => {
     loadLinks();
 
     const interval = setInterval(() => loadLinks(), 30000);
@@ -29,7 +30,7 @@ const Support = props => {
       clearInterval(interval);
     };
     return cleanUp;
-  }, []);
+  });
 
   let supportLinks = null;
   if (supportState.links && supportState.links.map) {

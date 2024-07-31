@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import DebugObject from 'components/common/DebugObject';
 import LoadingCover from '@george-gillams/components/loading-cover';
@@ -17,6 +17,7 @@ import Head from 'next/head';
 import PageContainer, { WIDTHS } from 'components/common/PageContainer';
 import { DateContainer, TagList } from './blog-renderer.styles';
 import { ANIMATIONS, withScrollAnimation } from '@george-gillams/components/effects';
+import { useEffectOnce } from 'react-use';
 
 const CreativeCommonsWithScroll = withScrollAnimation(CreativeCommons, { animation: ANIMATIONS.fade });
 
@@ -26,9 +27,9 @@ const BlogRenderer = props => {
 
   const [newBlog, setNewBlog] = useState(null);
 
-  useEffect(() => {
+  useEffectOnce(() => {
     loadBlog(blogId);
-  }, []);
+  });
 
   let blog = null;
   if (blogRenderState.blogs && blogRenderState.blogs[blogId]) {
