@@ -16,7 +16,7 @@ const HYROX_YELLOW = '#ffed00';
 const Medals = () => {
   return (
     <PageContainer bottomPadding>
-      <PageTitle anchor={false} name="Medals"></PageTitle>
+      <PageTitle anchor={false} name="Races"></PageTitle>
       <SectionWithScroll name="Spartan">
         <Subsection>
           <StyledMedalShelf>

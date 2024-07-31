@@ -49,9 +49,9 @@ const LifeSection = props => {
             </StyledPhotographyCard>
             <StyledMedalCard
               title="Racing"
-              blurb="Visit my virtual medal shelf."
-              linkText="Medals →"
-              href="/medals"
+              blurb="See the races I've completed."
+              linkText="Races →"
+              href="/races"
               layout={HP_CARD_LAYOUT.AUTO}>
               <StyledMedals />
             </StyledMedalCard>
