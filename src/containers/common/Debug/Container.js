@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import Checkbox from '@george-gillams/components/checkbox';
 import Paragraph from '@george-gillams/components/paragraph';
@@ -10,6 +10,7 @@ import {
 import PageContainer from 'components/common/PageContainer';
 import { VStack } from 'components/common/Stacks';
 import { ANIMATIONS, withScrollAnimation } from '@george-gillams/components/effects';
+import { useEffectOnce } from 'react-use';
 
 const VStackWithScroll = withScrollAnimation(VStack, { animation: ANIMATIONS.fade });
 
@@ -17,10 +18,10 @@ const StatusControl = props => {
   const { name, storageKey, ...rest } = props;
   const [isEnabled, setIsEnabled] = useState(false);
 
-  useEffect(() => {
+  useEffectOnce(() => {
     const debugEnabled = window.localStorage.getItem(storageKey) === 'true';
     setIsEnabled(debugEnabled);
-  }, []);
+  });
 
   const onValueChanged = newValue => {
     setIsEnabled(newValue);

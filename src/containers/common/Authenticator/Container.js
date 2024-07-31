@@ -1,13 +1,14 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import PropTypes from 'prop-types';
 import DebugObject from 'components/common/DebugObject';
+import { useEffectOnce } from 'react-use';
 
 const Authenticator = props => {
   const { loadAuth, authenticatorState } = props;
 
-  useEffect(() => {
+  useEffectOnce(() => {
     loadAuth();
-  }, []);
+  });
 
   return (
     <div>
