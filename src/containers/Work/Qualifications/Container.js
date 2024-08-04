@@ -13,6 +13,7 @@ import { EVENT_TYPE as SPARTAN_EVENT_TYPE } from '@george-gillams/components/spa
 import TotalTypescriptCertificate1 from './images/total-typescript/1-certificate.png';
 import TotalTypescriptCertificate2 from './images/total-typescript/2-certificate.png';
 // import TotalTypescriptCertificate3 from './images/total-typescript/3-certificate.png';
+// import TotalTypescriptCertificate4 from './images/total-typescript/4-certificate.png';
 
 import ProductPsychologyMasterclassCertificate from './images/product-psychology-masterclass-certificate.jpg';
 import DiplomaPhotographyCertificate from './images/diploma-photography-certificate.jpg';
@@ -91,6 +92,15 @@ const WorkQualifications = () => (
           aspectY={1190}
           lightSrc={TotalTypescriptCertificate3.src}
           darkSrc={TotalTypescriptCertificate3.src}
+        /> */}
+        {/* <StyledImage
+          imgProps={{
+            alt: "Certificate of Completion of Total TypeScript's Advanced React with TypeScript Workshop.",
+          }}
+          aspectX={1684}
+          aspectY={1190}
+          lightSrc={TotalTypescriptCertificate4.src}
+          darkSrc={TotalTypescriptCertificate4.src}
         /> */}
       </SubsectionWithScroll>
       <SubsectionWithScroll name="Product Psychology Masterclass">

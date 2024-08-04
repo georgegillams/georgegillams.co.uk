@@ -1,17 +1,18 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import PropTypes from 'prop-types';
 import DebugObject from 'components/common/DebugObject';
 import { StyledNotification } from './notifications.styles';
 import useTabMadeVisible from 'client-utils/common/useTabMadeVisible';
+import { useEffectOnce } from 'react-use';
 
 const Notifications = props => {
   const { load, notificationsState } = props;
   const { notifications } = notificationsState;
 
   useTabMadeVisible(load);
-  useEffect(() => {
+  useEffectOnce(() => {
     load();
-  }, []);
+  });
 
   const filteredNotifications =
     notifications &&

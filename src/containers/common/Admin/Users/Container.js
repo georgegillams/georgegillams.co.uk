@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import PropTypes from 'prop-types';
 import PageTitle from 'components/common/PageTitle';
 import DebugObject from 'components/common/DebugObject';
@@ -21,9 +21,9 @@ import AdminUsersAPIEntity from './AdminUsersAPIEntity';
 import useTabMadeVisible from 'client-utils/common/useTabMadeVisible';
 import { ControlPanel, Count } from './admin-users.styles';
 import { HStack, VStack } from 'components/common/Stacks';
+import { useEffectOnce } from 'react-use';
 
 const AdminUsers = props => {
-  const [firstPageHit, setFirstPageHit] = useState(true);
   const [highlightId, setHighlightId] = useState(null);
   const [highlightToScrollTo, setHighlightToScrollTo] = useState(null);
   const [showFilters, setShowFilters] = useState(false);
@@ -48,9 +48,9 @@ const AdminUsers = props => {
 
   useTabMadeVisible(load);
 
-  useEffect(() => {
+  useEffectOnce(() => {
     load();
-  }, []);
+  });
 
   const scrollToHighlightedId = () => {
     if (!highlightToScrollTo) {
@@ -64,18 +64,20 @@ const AdminUsers = props => {
     }
   };
 
+  const firstPageHitDone = useRef(false);
+
   useEffect(() => {
     if (!router || !router.query || !router.query.highlight) {
       setHighlightId(null);
-      setFirstPageHit(false);
+      firstPageHitDone.current = true;
       return;
     }
 
     const highlight = router.query.highlight;
     setHighlightId(highlight);
-    if (firstPageHit) {
+    if (!firstPageHitDone.current) {
       setHighlightToScrollTo(highlight);
-      setFirstPageHit(false);
+      firstPageHitDone.current = true;
     }
   }, [router]);
 

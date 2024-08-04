@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import PropTypes from 'prop-types';
 import Paragraph from '@george-gillams/components/paragraph';
 import Skeleton, { SKELETON_STYLES } from '@george-gillams/components/skeleton';
@@ -11,14 +11,15 @@ import DebugObject from 'components/common/DebugObject';
 import PageContainer from 'components/common/PageContainer';
 import { StyledSubsection } from './site-map.styles';
 import { withScrollAnimation } from '@george-gillams/components/effects';
+import { useEffectOnce } from 'react-use';
 const StyledSubsectionWithScroll = withScrollAnimation(StyledSubsection);
 
 const SiteMap = props => {
   const { ssrBlogs, loadBlogs, blogListState, authenticatorState } = props;
 
-  useEffect(() => {
+  useEffectOnce(() => {
     loadBlogs();
-  }, []);
+  });
 
   let blogList = null;
   let writingBlogList = null;

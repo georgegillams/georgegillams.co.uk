@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import PropTypes from 'prop-types';
 import PageTitle from 'components/common/PageTitle';
 
@@ -13,15 +13,16 @@ import { ANIMATIONS, ScrollAnimationWrapper, withScrollAnimation } from '@george
 import Button from 'components/common/Button';
 import IopMember from './images/iop-member.jpg';
 import GuildQualified from './images/guild-qualified.jpg';
+import { useEffectOnce } from 'react-use';
 
 const CreativeCommonsWithScroll = withScrollAnimation(CreativeCommons, { animation: ANIMATIONS.fade });
 
 const Photography = props => {
   const { ssrPhotos, loadPhotos, photographyState } = props;
 
-  useEffect(() => {
+  useEffectOnce(() => {
     loadPhotos();
-  }, []);
+  });
 
   const photosToRender = JSON.parse(JSON.stringify(photographyState.photos || ssrPhotos));
 

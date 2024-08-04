@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import PropTypes from 'prop-types';
 import PageTitle from 'components/common/PageTitle';
 import DebugObject from 'components/common/DebugObject';
@@ -15,9 +15,9 @@ import AdminEmailAPIEntity from './AdminEmailAPIEntity';
 import useTabMadeVisible from 'client-utils/common/useTabMadeVisible';
 import { Count, StyledButton, StyledSplitDetailView } from './admin-emails.styles';
 import { VStack } from 'components/common/Stacks';
+import { useEffectOnce } from 'react-use';
 
 const AdminEmails = props => {
-  const [firstPageHit, setFirstPageHit] = useState(true);
   const [highlightId, setHighlightId] = useState(null);
   const [highlightToScrollTo, setHighlightToScrollTo] = useState(null);
 
@@ -36,9 +36,9 @@ const AdminEmails = props => {
 
   useTabMadeVisible(load);
 
-  useEffect(() => {
+  useEffectOnce(() => {
     load();
-  }, []);
+  });
 
   const scrollToHighlightedId = () => {
     if (!highlightToScrollTo) {
@@ -52,18 +52,20 @@ const AdminEmails = props => {
     }
   };
 
+  const firstPageHitDone = useRef(false);
+
   useEffect(() => {
     if (!router || !router.query || !router.query.highlight) {
       setHighlightId(null);
-      setFirstPageHit(false);
+      firstPageHitDone.current = true;
       return;
     }
 
     const highlight = router.query.highlight;
     setHighlightId(highlight);
-    if (firstPageHit) {
+    if (!firstPageHitDone.current) {
       setHighlightToScrollTo(highlight);
-      setFirstPageHit(false);
+      firstPageHitDone.current = true;
     }
   }, [router]);
 
