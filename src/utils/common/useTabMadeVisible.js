@@ -1,4 +1,4 @@
-import { useEffect } from 'react';
+import { useEffectOnce } from 'react-use';
 
 const getBrowserApiKeys = () => {
   let hidden, visibilityChange;
@@ -28,7 +28,7 @@ const useTabMadeVisible = action => {
   }
 
   // eslint-disable-next-line react-hooks/rules-of-hooks
-  useEffect(() => {
+  useEffectOnce(() => {
     const { hidden, visibilityChange } = getBrowserApiKeys();
 
     if (typeof document.addEventListener === 'undefined' || hidden === undefined) {
@@ -48,7 +48,7 @@ const useTabMadeVisible = action => {
       document.removeEventListener(visibilityChange, handleVisibilityChange);
     };
     return cleanUp;
-  }, []);
+  });
 };
 
 export default useTabMadeVisible;

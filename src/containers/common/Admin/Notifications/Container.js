@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import PageTitle from 'components/common/PageTitle';
 import DebugObject from 'components/common/DebugObject';
@@ -16,6 +16,7 @@ import useTabMadeVisible from 'client-utils/common/useTabMadeVisible';
 import { CreateNotificationForm } from 'components/common/Forms';
 import PageContainer from 'components/common/PageContainer';
 import { VStack } from 'components/common/Stacks';
+import { useEffectOnce } from 'react-use';
 
 const AdminNotifications = props => {
   const {
@@ -34,9 +35,9 @@ const AdminNotifications = props => {
 
   const [newNotification, setNewNotification] = useState({ type: 'success' });
 
-  useEffect(() => {
+  useEffectOnce(() => {
     load();
-  }, []);
+  });
 
   const showNotifications = !!notifications && !!notifications.map && notifications.length > 0;
 

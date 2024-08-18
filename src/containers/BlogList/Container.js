@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import PropTypes from 'prop-types';
 import DebugObject from 'components/common/DebugObject';
 import LoadingCover from '@george-gillams/components/loading-cover';
@@ -11,15 +11,16 @@ import Head from 'next/head';
 import appConfig from 'helpers/appConfig';
 import { StyledPageContainer } from './container.styles';
 import { ANIMATIONS, ScrollAnimationWrapper, withScrollAnimation } from '@george-gillams/components/effects';
+import { useEffectOnce } from 'react-use';
 
 const CreativeCommonsWithScroll = withScrollAnimation(CreativeCommons, { animation: ANIMATIONS.fade });
 
 const BlogList = props => {
   const { ssrBlogs, loadBlogs, deleteBlog, filter, authenticatorState, blogListState, linkPrefix } = props;
 
-  useEffect(() => {
+  useEffectOnce(() => {
     loadBlogs();
-  }, []);
+  });
 
   let filteredBlogs = blogListState.blogs || ssrBlogs;
   if (filter && filteredBlogs && filteredBlogs.filter) {

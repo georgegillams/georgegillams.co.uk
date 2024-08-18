@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import PageTitle from 'components/common/PageTitle';
 import DebugObject from 'components/common/DebugObject';
@@ -12,6 +12,7 @@ import ErrorDisplay from 'components/common/ErrorDisplay';
 
 import { Count, Control, StyledAnalyticsEntity, CardContainer } from './admin-analytics.styles';
 import useTabMadeVisible from 'client-utils/common/useTabMadeVisible';
+import { useEffectOnce } from 'react-use';
 
 const AdminAnalytics = props => {
   const [showFilters, setShowFilters] = useState(false);
@@ -29,9 +30,9 @@ const AdminAnalytics = props => {
 
   useTabMadeVisible(load);
 
-  useEffect(() => {
+  useEffectOnce(() => {
     load();
-  }, []);
+  });
 
   const showAnalytics = !!analytics && !!analytics.length && !!analytics.map;
 

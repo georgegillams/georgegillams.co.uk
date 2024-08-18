@@ -1,8 +1,9 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import DebugObject from 'components/common/DebugObject';
 import { detect } from 'detect-browser';
 import { withRouter } from 'next/router';
+import { useEffectOnce } from 'react-use';
 
 const Analytics = props => {
   const [analytic, setAnalytic] = useState(null);
@@ -51,7 +52,7 @@ const Analytics = props => {
     };
   };
 
-  useEffect(() => {
+  useEffectOnce(() => {
     // Create the analytic data as soon as the container loads...
     const newAnalytic = constructAnalytic();
     if (!analytic) {
@@ -62,7 +63,7 @@ const Analytics = props => {
       sendAnalytic(analyticToSend);
       setAnalyticSent(true);
     }
-  }, []);
+  });
 
   return (
     <div>
