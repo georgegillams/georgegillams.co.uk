@@ -90,6 +90,11 @@ const Medals = () => {
               year="2024"
               stravaLink="https://www.strava.com/activities/11772961887"
             />
+            <SpartanMedal
+              type={SPARTAN_EVENT_TYPE.sprint}
+              year="2024"
+              stravaLink="https://www.strava.com/activities/12117240459"
+            />
           </StyledMedalShelf>
         </Subsection>
         {/* <Subsection anchor={false} name="Trifectas">
