@@ -7,6 +7,7 @@ import { AnimatedWrapperInner, AnimatedWrapperOuter, Content, StyledParagraph, W
 import { breakpointSm } from '@george-gillams/components/constants/layout';
 import { JS_CLASSNAME } from '@george-gillams/components/js-feature-detector';
 import FakeTypeform from './fake-typeform';
+import { currentLevelWithAOrAn } from 'helpers/current-level-tmp';
 
 const HIDE_CLASS_NAME = `home-page-work-seciton__typeform--hide`;
 
@@ -34,10 +35,10 @@ const WorkSection = props => {
       </style>
       <Content>
         <StyledParagraph>
-          I&#39;m a web developer at{' '}
+          I&#39;m {currentLevelWithAOrAn} Software Engineer at{' '}
           <TextLink hrefExternal href="https://typeform.com/">
             Typeform
-          </TextLink>{' '}
+          </TextLink>
           .
           <br />
           I’m also an accessibility champion and design system enthusiast.
@@ -48,7 +49,7 @@ const WorkSection = props => {
       <AnimatedWrapperOuter>
         <AnimatedWrapperInner className={hasBeenMostlyInView || hasBeenFullyInView ? '' : HIDE_CLASS_NAME}>
           <FakeTypeform
-            questionTitle="Where to?"
+            questionTitle="Where to next?"
             links={[
               { text: 'My work', href: '/work' },
               { text: 'Typeform', href: 'https://typeform.com' },

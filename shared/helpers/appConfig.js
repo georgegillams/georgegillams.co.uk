@@ -1,4 +1,7 @@
 // Note that these values are fixed for the client at build-time.
+
+const { currentLevel } = require('./current-level-tmp');
+
 // They are populated at build-time by babel, so destructuring syntax is not supported
 const NODE_ENV = process.env.NODE_ENV;
 const PROJECT_UNDER_TEST = process.env.PROJECT_UNDER_TEST;
@@ -17,7 +20,8 @@ const environment = {
 
 const projectName = 'GEORGEGILLAMS';
 const projectTitle = 'George Gillams';
-const projectDescription = 'Personal website of George Gillams - open-source Software Engineer';
+// eslint-disable-next-line max-len
+const projectDescription = `Personal website of George Gillams - ${currentLevel} Software Engineer and Obstacle Race Athlete`;
 const githubRepo = 'georgegillams/georgegillams.co.uk';
 const githubRepoUrl = `https://github.com/${githubRepo}`;
 const port = PORT || 3000;
