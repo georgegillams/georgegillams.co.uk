@@ -1044,7 +1044,9 @@ exports[`<Home /> should render correctly 1`] = `
               <span
                 class="c7 c8"
               >
-                I'm a web developer at
+                I'm 
+                a Senior
+                 Software Engineer at
                  
                 <a
                   aria-label="Typeform (opens in a new tab)"
@@ -1074,7 +1076,6 @@ exports[`<Home /> should render correctly 1`] = `
                     </svg>
                   </div>
                 </a>
-                 
                 .
                 <br />
                 I’m also an accessibility champion and design system enthusiast.
@@ -1104,7 +1105,7 @@ exports[`<Home /> should render correctly 1`] = `
                     class="c19"
                   >
                     1. 
-                    Where to?
+                    Where to next?
                   </span>
                   <div
                     class="c20"
@@ -3697,7 +3698,9 @@ exports[`<Home /> should render correctly with admin user 1`] = `
               <span
                 class="c7 c8"
               >
-                I'm a web developer at
+                I'm 
+                a Senior
+                 Software Engineer at
                  
                 <a
                   aria-label="Typeform (opens in a new tab)"
@@ -3727,7 +3730,6 @@ exports[`<Home /> should render correctly with admin user 1`] = `
                     </svg>
                   </div>
                 </a>
-                 
                 .
                 <br />
                 I’m also an accessibility champion and design system enthusiast.
@@ -3757,7 +3759,7 @@ exports[`<Home /> should render correctly with admin user 1`] = `
                     class="c19"
                   >
                     1. 
-                    Where to?
+                    Where to next?
                   </span>
                   <div
                     class="c20"
@@ -6350,7 +6352,9 @@ exports[`<Home /> should render correctly with no user 1`] = `
               <span
                 class="c7 c8"
               >
-                I'm a web developer at
+                I'm 
+                a Senior
+                 Software Engineer at
                  
                 <a
                   aria-label="Typeform (opens in a new tab)"
@@ -6380,7 +6384,6 @@ exports[`<Home /> should render correctly with no user 1`] = `
                     </svg>
                   </div>
                 </a>
-                 
                 .
                 <br />
                 I’m also an accessibility champion and design system enthusiast.
@@ -6410,7 +6413,7 @@ exports[`<Home /> should render correctly with no user 1`] = `
                     class="c19"
                   >
                     1. 
-                    Where to?
+                    Where to next?
                   </span>
                   <div
                     class="c20"
@@ -9003,7 +9006,9 @@ exports[`<Home /> should render correctly with user 1`] = `
               <span
                 class="c7 c8"
               >
-                I'm a web developer at
+                I'm 
+                a Senior
+                 Software Engineer at
                  
                 <a
                   aria-label="Typeform (opens in a new tab)"
@@ -9033,7 +9038,6 @@ exports[`<Home /> should render correctly with user 1`] = `
                     </svg>
                   </div>
                 </a>
-                 
                 .
                 <br />
                 I’m also an accessibility champion and design system enthusiast.
@@ -9063,7 +9067,7 @@ exports[`<Home /> should render correctly with user 1`] = `
                     class="c19"
                   >
                     1. 
-                    Where to?
+                    Where to next?
                   </span>
                   <div
                     class="c20"

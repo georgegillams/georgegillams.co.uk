@@ -22,11 +22,15 @@ const Work = () => (
 
       <SubsectionWithScroll name="Typeform">
         <Paragraph>
-          I maintain{' '}
+          I&#39;m part of the Product Experience team at Typeform, building features across several ownerships to make
+          the product automagically fulfil the needs of every customer.
+        </Paragraph>
+        <Paragraph>
+          Before that, I helped to maintain{' '}
           <TextLink href="https://www.typeform.com/" hrefExternal>
-            Typeform&#39;s
-          </TextLink>{' '}
-          public sites, including{' '}
+            the public site
+          </TextLink>
+          , including{' '}
           <TextLink href="https://www.typeform.com/surveys/" hrefExternal>
             landing pages
           </TextLink>
@@ -46,12 +50,17 @@ const Work = () => (
           <TextLink href="https://www.typeform.com/signup/" hrefExternal>
             signup
           </TextLink>
-          . They&#39;re built using React, Styled Components and Next.js. We have a strong focus on SEO, speed, and
-          empowering content creators to deliver content/experiments with as little friction as possible.
+          . In this team there was a strong focus on SEO and empowering content creators to deliver content/experiments
+          with as little friction as possible.
         </Paragraph>
       </SubsectionWithScroll>
 
       <SubsectionWithScroll name="Skyscanner">
+        <Paragraph>
+          During my time at Skyscanner, I was a strong advocate for digital accessibility across our web and mobile
+          apps. I became the lead digital accessibility engineer in the company, which involved auditing, design
+          reviews, training, and knowledge sharing sessions with other companies.
+        </Paragraph>
         <Paragraph>
           <TextLink hrefExternal href="https://backpack.github.io/">
             Backpack

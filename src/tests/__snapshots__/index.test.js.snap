@@ -1325,7 +1325,9 @@ exports[`<HomePage /> should render correctly 1`] = `
                 <span
                   class="c9 c10"
                 >
-                  I'm a web developer at
+                  I'm 
+                  a Senior
+                   Software Engineer at
                    
                   <a
                     aria-label="Typeform (opens in a new tab)"
@@ -1355,7 +1357,6 @@ exports[`<HomePage /> should render correctly 1`] = `
                       </svg>
                     </div>
                   </a>
-                   
                   .
                   <br />
                   I’m also an accessibility champion and design system enthusiast.
@@ -1385,7 +1386,7 @@ exports[`<HomePage /> should render correctly 1`] = `
                       class="c21"
                     >
                       1. 
-                      Where to?
+                      Where to next?
                     </span>
                     <div
                       class="c22"
