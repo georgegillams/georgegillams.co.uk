@@ -22,8 +22,9 @@ const Work = () => (
 
       <SubsectionWithScroll name="Typeform">
         <Paragraph>
-          I&#39;m part of the Product Experience team at Typeform, building features across several ownerships to make
-          the product automagically fulfil the needs of every customer.
+          I&#39;m an Expert Software Engineer in the Workflows team at Typeform, building features across several
+          ownerships to enable users to fulfil their goals with a self-explanatory experience that delivers the right
+          features when and where they&#39;re needed.
         </Paragraph>
         <Paragraph>
           Before that, I helped to maintain{' '}
@@ -50,8 +51,8 @@ const Work = () => (
           <TextLink href="https://www.typeform.com/signup/" hrefExternal>
             signup
           </TextLink>
-          . In this team there was a strong focus on SEO and empowering content creators to deliver content/experiments
-          with as little friction as possible.
+          . This required a strong focus on SEO, and maintaining a Content Management System (Contentful) that empowered
+          content creators to deliver content/experiments with as little friction as possible.
         </Paragraph>
       </SubsectionWithScroll>
 
