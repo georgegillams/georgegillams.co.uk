@@ -16,6 +16,7 @@ import instagramLogo from './instagram.svg';
 import formLogo from './form.svg';
 import PageContainer, { WIDTHS } from 'components/common/PageContainer';
 import { IconImage, ImageIconContainer, InfoCellContainer, Spacer, StyledInfoCellWithScroll } from './contact.styles';
+import { CONTACT_FORM } from 'client-utils/common/typeformConstants';
 
 const Contact = () => {
   return (
@@ -26,7 +27,7 @@ const Contact = () => {
           <StyledInfoCellWithScroll
             title="Form"
             content={
-              <TextLink href="https://form.typeform.com/to/WJSWmnKh" hrefExternal>
+              <TextLink href={CONTACT_FORM} hrefExternal>
                 Fill in my contact form
               </TextLink>
             }

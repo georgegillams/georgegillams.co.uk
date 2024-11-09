@@ -1,3 +1,4 @@
+import { CONTACT_FORM, CONTRASTER_FEEDBACK_FORM } from 'client-utils/common/typeformConstants';
 import appConfig from './appConfig';
 
 const redirects = [
@@ -8,7 +9,7 @@ const redirects = [
   { from: '/copyright', to: 'https://creativecommons.org/licenses/by-sa/3.0/' },
   { from: '/flickr', to: 'https://www.flickr.com/photos/georgegillams' },
   { from: '/youtube', to: 'https://www.youtube.com/channel/UCT42ju8eCIWexjzT2whVOgQ' },
-  { from: '/typeform', to: 'https://form.typeform.com/to/WJSWmnKh' },
+  { from: '/typeform', to: CONTACT_FORM },
   { from: '/monzo', to: 'https://join.monzo.com/r/vjd3d74' },
   { from: '/github', to: 'https://github.com/georgegillams' },
   { from: '/dotfiles', to: 'https://github.com/georgegillams/dotfiles' },
@@ -55,7 +56,7 @@ const redirects = [
   { from: '/reading', to: '/reading-list' },
   { from: '/medals', to: '/races' },
 
-  { from: '/contraster-feedback', to: 'https://form.typeform.com/to/XhSSvzDp' },
+  { from: '/contraster-feedback', to: CONTRASTER_FEEDBACK_FORM },
 ];
 
 export default redirects;
