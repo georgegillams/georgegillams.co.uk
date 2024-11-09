@@ -1,5 +1,5 @@
-import { CONTACT_FORM, CONTRASTER_FEEDBACK_FORM } from 'client-utils/common/typeformConstants';
 import appConfig from './appConfig';
+import { CONTACT_FORM, CONTRASTER_FEEDBACK_FORM } from './typeformConstants';
 
 const redirects = [
   {

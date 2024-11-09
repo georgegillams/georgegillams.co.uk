@@ -13,7 +13,7 @@ import TextLink from 'components/common/TextLink';
 import Button from 'components/common/Button';
 import { BUTTON_SIZES } from '@george-gillams/components/button';
 import { withScrollAnimation } from '@george-gillams/components/effects';
-import { LOST_FOUND_FORM } from 'client-utils/common/typeformConstants';
+import { LOST_FOUND_FORM } from 'helpers/typeformConstants';
 const SectionWithScroll = withScrollAnimation(Section);
 
 const Drone = () => {

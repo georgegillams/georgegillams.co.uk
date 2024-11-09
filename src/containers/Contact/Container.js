@@ -16,7 +16,7 @@ import instagramLogo from './instagram.svg';
 import formLogo from './form.svg';
 import PageContainer, { WIDTHS } from 'components/common/PageContainer';
 import { IconImage, ImageIconContainer, InfoCellContainer, Spacer, StyledInfoCellWithScroll } from './contact.styles';
-import { CONTACT_FORM } from 'client-utils/common/typeformConstants';
+import { CONTACT_FORM } from 'helpers/typeformConstants';
 
 const Contact = () => {
   return (
