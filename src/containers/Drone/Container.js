@@ -14,7 +14,14 @@ import Button from 'components/common/Button';
 import { BUTTON_SIZES } from '@george-gillams/components/button';
 import { withScrollAnimation } from '@george-gillams/components/effects';
 import { LOST_FOUND_FORM } from 'helpers/typeformConstants';
+
 const SectionWithScroll = withScrollAnimation(Section);
+
+const UK_TRAINING_EXPIRY = '8 March 2028';
+const EASA_TRAINING_EXPIRY = '8 March 2028';
+const UK_OPERATOR_ID_EXPIRY = '8 March 2025';
+const EASA_OPERATOR_ID_EXPIRY = '28 March 2025';
+const INSURANCE_EXPIRY = '8 March 2026';
 
 const Drone = () => {
   return (
@@ -66,7 +73,7 @@ const Drone = () => {
         <SectionWithScroll name="Proof of completion of online training">
           <Subsection name="UK">
             <StyledImage lightSrc={ukCaaFlyerId.src} darkSrc={ukCaaFlyerId.src} aspectX={1916} aspectY={1354} />
-            <Paragraph>GBR-RP-B88RNYQSNJ62 — expires 8 March 2028</Paragraph>
+            <Paragraph>GBR-RP-B88RNYQSNJ62 — expires {UK_TRAINING_EXPIRY}</Paragraph>
           </Subsection>
           <Subsection name="Norway and EASA member states">
             <StyledImage
@@ -75,20 +82,20 @@ const Drone = () => {
               aspectX={2098}
               aspectY={1384}
             />
-            <Paragraph>NOR-RP-4zb7de1751cj — expires 8 March 2028</Paragraph>
+            <Paragraph>NOR-RP-4zb7de1751cj — expires {EASA_TRAINING_EXPIRY}</Paragraph>
           </Subsection>
         </SectionWithScroll>
         <SectionWithScroll name="Operator ID">
           <Subsection name="UK"></Subsection>
-          <Paragraph>GBR-OP-267ZQHMWPYGR — expires 8 March 2025</Paragraph>
+          <Paragraph>GBR-OP-267ZQHMWPYGR — expires {UK_OPERATOR_ID_EXPIRY}</Paragraph>
           <Subsection name="Norway and EASA member states">
-            <Paragraph>NOR5p8cfumh4phal — expires 28 March 2025</Paragraph>
+            <Paragraph>NOR5p8cfumh4phal — expires {EASA_OPERATOR_ID_EXPIRY}</Paragraph>
           </Subsection>
         </SectionWithScroll>
         <SectionWithScroll name="Public Liability Insurance">
           <Paragraph>
             Insured Worldwide by Starr International (Europe) Limited (SIEL) to own and operate Unmanned Aerial Systems
-            (UAS) — expires 8 March 2025.
+            (UAS) — expires {INSURANCE_EXPIRY}.
           </Paragraph>
         </SectionWithScroll>
       </PageTitle>
