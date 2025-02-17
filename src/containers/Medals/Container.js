@@ -241,6 +241,13 @@ const Medals = () => {
               year="2023"
               stravaLink="https://www.strava.com/activities/9821124828"
             />
+            <EventPatch
+              background="#8358B9"
+              foreground="white"
+              title="RunThrough Southampton 10km"
+              year="2025"
+              stravaLink="https://www.strava.com/activities/13640778020"
+            />
           </StyledMedalShelf>
         </Subsection>
       </SectionWithScroll>
