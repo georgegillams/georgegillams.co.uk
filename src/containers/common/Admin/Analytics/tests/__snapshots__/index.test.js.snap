@@ -193,9 +193,9 @@ exports[`<AdminAnalytics /> should render correctly with admin user 1`] = `
   -webkit-transition: filter 0.3s;
   transition: filter 0.3s;
   border: none;
-  border-radius: 0.25rem;
+  border-radius: 0.5rem;
   font-size: 1.4rem;
-  font-weight: bold;
+  font-weight: normal;
   cursor: pointer;
   -webkit-text-decoration-color: transparent;
   text-decoration-color: transparent;
@@ -203,6 +203,7 @@ exports[`<AdminAnalytics /> should render correctly with admin user 1`] = `
   text-decoration-line: none;
   background-color: #0067B7;
   color: white;
+  box-shadow: none;
 }
 
 .c6:focus-within,
@@ -303,6 +304,7 @@ exports[`<AdminAnalytics /> should render correctly with admin user 1`] = `
   .c6 {
     background-color: #025CA2;
     color: white;
+    box-shadow: none;
   }
 }
 
@@ -454,9 +456,9 @@ exports[`<AdminAnalytics /> should render correctly with analytics 1`] = `
   -webkit-transition: filter 0.3s;
   transition: filter 0.3s;
   border: none;
-  border-radius: 0.25rem;
+  border-radius: 0.5rem;
   font-size: 1.4rem;
-  font-weight: bold;
+  font-weight: normal;
   cursor: pointer;
   -webkit-text-decoration-color: transparent;
   text-decoration-color: transparent;
@@ -464,6 +466,7 @@ exports[`<AdminAnalytics /> should render correctly with analytics 1`] = `
   text-decoration-line: none;
   background-color: #0067B7;
   color: white;
+  box-shadow: none;
 }
 
 .c6:focus-within,
@@ -564,6 +567,7 @@ exports[`<AdminAnalytics /> should render correctly with analytics 1`] = `
   .c6 {
     background-color: #025CA2;
     color: white;
+    box-shadow: none;
   }
 }
 
@@ -811,6 +815,7 @@ exports[`<AdminAnalytics /> should render correctly with loadError 1`] = `
   max-width: 25rem;
   height: 10rem;
   margin-bottom: 1.2rem;
+  border-radius: 0.75rem;
 }
 
 .c2 {
@@ -1175,9 +1180,9 @@ exports[`<AdminAnalytics /> should render correctly with loading=true 1`] = `
   -webkit-transition: filter 0.3s;
   transition: filter 0.3s;
   border: none;
-  border-radius: 0.25rem;
+  border-radius: 0.5rem;
   font-size: 1.4rem;
-  font-weight: bold;
+  font-weight: normal;
   cursor: pointer;
   -webkit-text-decoration-color: transparent;
   text-decoration-color: transparent;
@@ -1185,6 +1190,7 @@ exports[`<AdminAnalytics /> should render correctly with loading=true 1`] = `
   text-decoration-line: none;
   background-color: #0067B7;
   color: white;
+  box-shadow: none;
   cursor: default;
 }
 
@@ -1230,9 +1236,9 @@ exports[`<AdminAnalytics /> should render correctly with loading=true 1`] = `
   -webkit-transition: filter 0.3s;
   transition: filter 0.3s;
   border: none;
-  border-radius: 0.25rem;
+  border-radius: 0.5rem;
   font-size: 1.4rem;
-  font-weight: bold;
+  font-weight: normal;
   cursor: pointer;
   -webkit-text-decoration-color: transparent;
   text-decoration-color: transparent;
@@ -1240,6 +1246,7 @@ exports[`<AdminAnalytics /> should render correctly with loading=true 1`] = `
   text-decoration-line: none;
   background-color: #0067B7;
   color: white;
+  box-shadow: none;
 }
 
 .c19:focus-within,
@@ -1378,6 +1385,7 @@ exports[`<AdminAnalytics /> should render correctly with loading=true 1`] = `
   .c6 {
     background-color: #025CA2;
     color: white;
+    box-shadow: none;
   }
 }
 
@@ -1414,6 +1422,7 @@ exports[`<AdminAnalytics /> should render correctly with loading=true 1`] = `
   .c19 {
     background-color: #025CA2;
     color: white;
+    box-shadow: none;
   }
 }
 

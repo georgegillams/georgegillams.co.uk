@@ -90,6 +90,7 @@ exports[`<BlogList /> should render correctly - index 1`] = `
   width: 100%;
   height: 10rem;
   margin-bottom: 1.2rem;
+  border-radius: 0.75rem;
 }
 
 .c1 {
@@ -1090,6 +1091,7 @@ exports[`<BlogList /> should render correctly with blog load error 1`] = `
   width: 100%;
   height: 10rem;
   margin-bottom: 1.2rem;
+  border-radius: 0.75rem;
 }
 
 .c1 {
@@ -2031,6 +2033,7 @@ exports[`<BlogList /> should render correctly with initial state 1`] = `
   width: 100%;
   height: 10rem;
   margin-bottom: 1.2rem;
+  border-radius: 0.75rem;
 }
 
 .c1 {

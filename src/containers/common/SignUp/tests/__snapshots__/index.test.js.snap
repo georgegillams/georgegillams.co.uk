@@ -32,7 +32,7 @@ exports[`<SignUp /> should render correctly - index 1`] = `
   width: 12rem;
   height: 2.6rem;
   margin-bottom: 1.2rem;
-  border-radius: 0.25rem;
+  border-radius: 0.75rem;
   overflow: hidden;
 }
 
@@ -157,7 +157,7 @@ exports[`<SignUp /> should render correctly with initial state 1`] = `
   width: 12rem;
   height: 2.6rem;
   margin-bottom: 1.2rem;
-  border-radius: 0.25rem;
+  border-radius: 0.75rem;
   overflow: hidden;
 }
 
@@ -282,7 +282,7 @@ exports[`<SignUp /> should render correctly with signUpError 1`] = `
   width: 12rem;
   height: 2.6rem;
   margin-bottom: 1.2rem;
-  border-radius: 0.25rem;
+  border-radius: 0.75rem;
   overflow: hidden;
 }
 
@@ -407,7 +407,7 @@ exports[`<SignUp /> should render correctly with signUpResult 1`] = `
   width: 12rem;
   height: 2.6rem;
   margin-bottom: 1.2rem;
-  border-radius: 0.25rem;
+  border-radius: 0.75rem;
   overflow: hidden;
 }
 
@@ -532,7 +532,7 @@ exports[`<SignUp /> should render correctly with signingUp=true 1`] = `
   width: 12rem;
   height: 2.6rem;
   margin-bottom: 1.2rem;
-  border-radius: 0.25rem;
+  border-radius: 0.75rem;
   overflow: hidden;
 }
 

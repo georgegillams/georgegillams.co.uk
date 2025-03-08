@@ -43,7 +43,7 @@ exports[`<Login /> should render correctly - index 1`] = `
   width: 12rem;
   height: 2.6rem;
   margin-bottom: 1.2rem;
-  border-radius: 0.25rem;
+  border-radius: 0.75rem;
   overflow: hidden;
 }
 
@@ -193,7 +193,7 @@ exports[`<Login /> should render correctly with initial state 1`] = `
   width: 12rem;
   height: 2.6rem;
   margin-bottom: 1.2rem;
-  border-radius: 0.25rem;
+  border-radius: 0.75rem;
   overflow: hidden;
 }
 
@@ -343,7 +343,7 @@ exports[`<Login /> should render correctly with loggingIn=true 1`] = `
   width: 12rem;
   height: 2.6rem;
   margin-bottom: 1.2rem;
-  border-radius: 0.25rem;
+  border-radius: 0.75rem;
   overflow: hidden;
 }
 
@@ -493,7 +493,7 @@ exports[`<Login /> should render correctly with loginError 1`] = `
   width: 12rem;
   height: 2.6rem;
   margin-bottom: 1.2rem;
-  border-radius: 0.25rem;
+  border-radius: 0.75rem;
   overflow: hidden;
 }
 
@@ -643,7 +643,7 @@ exports[`<Login /> should render correctly with loginResult 1`] = `
   width: 12rem;
   height: 2.6rem;
   margin-bottom: 1.2rem;
-  border-radius: 0.25rem;
+  border-radius: 0.75rem;
   overflow: hidden;
 }
 

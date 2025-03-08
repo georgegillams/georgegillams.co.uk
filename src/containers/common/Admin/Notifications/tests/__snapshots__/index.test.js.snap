@@ -219,9 +219,9 @@ exports[`<AdminNotifications /> should render correctly with admin user 1`] = `
   -webkit-transition: filter 0.3s;
   transition: filter 0.3s;
   border: none;
-  border-radius: 0.25rem;
+  border-radius: 0.5rem;
   font-size: 1.4rem;
-  font-weight: bold;
+  font-weight: normal;
   cursor: pointer;
   -webkit-text-decoration-color: transparent;
   text-decoration-color: transparent;
@@ -229,6 +229,7 @@ exports[`<AdminNotifications /> should render correctly with admin user 1`] = `
   text-decoration-line: none;
   background-color: #0067B7;
   color: white;
+  box-shadow: none;
 }
 
 .c14:focus-within,
@@ -415,6 +416,7 @@ exports[`<AdminNotifications /> should render correctly with admin user 1`] = `
   .c14 {
     background-color: #025CA2;
     color: white;
+    box-shadow: none;
   }
 }
 
@@ -853,9 +855,9 @@ exports[`<AdminNotifications /> should render correctly with loadError 1`] = `
   -webkit-transition: filter 0.3s;
   transition: filter 0.3s;
   border: none;
-  border-radius: 0.25rem;
+  border-radius: 0.5rem;
   font-size: 1.4rem;
-  font-weight: bold;
+  font-weight: normal;
   cursor: pointer;
   -webkit-text-decoration-color: transparent;
   text-decoration-color: transparent;
@@ -863,6 +865,7 @@ exports[`<AdminNotifications /> should render correctly with loadError 1`] = `
   text-decoration-line: none;
   background-color: #0067B7;
   color: white;
+  box-shadow: none;
 }
 
 .c14:focus-within,
@@ -1066,6 +1069,7 @@ exports[`<AdminNotifications /> should render correctly with loadError 1`] = `
   .c14 {
     background-color: #025CA2;
     color: white;
+    box-shadow: none;
   }
 }
 
@@ -1553,9 +1557,9 @@ exports[`<AdminNotifications /> should render correctly with loading=true 1`] = 
   -webkit-transition: filter 0.3s;
   transition: filter 0.3s;
   border: none;
-  border-radius: 0.25rem;
+  border-radius: 0.5rem;
   font-size: 1.4rem;
-  font-weight: bold;
+  font-weight: normal;
   cursor: pointer;
   -webkit-text-decoration-color: transparent;
   text-decoration-color: transparent;
@@ -1563,6 +1567,7 @@ exports[`<AdminNotifications /> should render correctly with loading=true 1`] = 
   text-decoration-line: none;
   background-color: #0067B7;
   color: white;
+  box-shadow: none;
 }
 
 .c14:focus-within,
@@ -1607,9 +1612,9 @@ exports[`<AdminNotifications /> should render correctly with loading=true 1`] = 
   -webkit-transition: filter 0.3s;
   transition: filter 0.3s;
   border: none;
-  border-radius: 0.25rem;
+  border-radius: 0.5rem;
   font-size: 1.4rem;
-  font-weight: bold;
+  font-weight: normal;
   cursor: pointer;
   -webkit-text-decoration-color: transparent;
   text-decoration-color: transparent;
@@ -1617,6 +1622,7 @@ exports[`<AdminNotifications /> should render correctly with loading=true 1`] = 
   text-decoration-line: none;
   background-color: #0067B7;
   color: white;
+  box-shadow: none;
   cursor: default;
 }
 
@@ -1842,6 +1848,7 @@ exports[`<AdminNotifications /> should render correctly with loading=true 1`] = 
   .c14 {
     background-color: #025CA2;
     color: white;
+    box-shadow: none;
   }
 }
 
@@ -1878,6 +1885,7 @@ exports[`<AdminNotifications /> should render correctly with loading=true 1`] = 
   .c17 {
     background-color: #025CA2;
     color: white;
+    box-shadow: none;
   }
 }
 
@@ -2204,9 +2212,9 @@ exports[`<AdminNotifications /> should render correctly with notifications 1`] =
   -webkit-transition: filter 0.3s;
   transition: filter 0.3s;
   border: none;
-  border-radius: 0.25rem;
+  border-radius: 0.5rem;
   font-size: 1.4rem;
-  font-weight: bold;
+  font-weight: normal;
   cursor: pointer;
   -webkit-text-decoration-color: transparent;
   text-decoration-color: transparent;
@@ -2214,6 +2222,7 @@ exports[`<AdminNotifications /> should render correctly with notifications 1`] =
   text-decoration-line: none;
   background-color: #0067B7;
   color: white;
+  box-shadow: none;
 }
 
 .c14:focus-within,
@@ -2258,9 +2267,9 @@ exports[`<AdminNotifications /> should render correctly with notifications 1`] =
   -webkit-transition: filter 0.3s;
   transition: filter 0.3s;
   border: none;
-  border-radius: 0.25rem;
+  border-radius: 0.5rem;
   font-size: 1.4rem;
-  font-weight: bold;
+  font-weight: normal;
   cursor: pointer;
   -webkit-text-decoration-color: transparent;
   text-decoration-color: transparent;
@@ -2268,6 +2277,7 @@ exports[`<AdminNotifications /> should render correctly with notifications 1`] =
   text-decoration-line: none;
   background-color: #E02626;
   color: white;
+  box-shadow: none;
 }
 
 .c19:focus-within,
@@ -2532,6 +2542,7 @@ exports[`<AdminNotifications /> should render correctly with notifications 1`] =
   .c14 {
     background-color: #025CA2;
     color: white;
+    box-shadow: none;
   }
 }
 
@@ -2568,6 +2579,7 @@ exports[`<AdminNotifications /> should render correctly with notifications 1`] =
   .c19 {
     background-color: #CA2020;
     color: white;
+    box-shadow: none;
   }
 }
 
