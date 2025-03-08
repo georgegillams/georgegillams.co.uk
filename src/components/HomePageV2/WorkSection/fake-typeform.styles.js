@@ -65,10 +65,10 @@ export const TFOptionLink = styled.a`
   &:focus,
   &:active {
     background: rgba(0, 0, 0, 0.2);
-    box-shadow: 0px 0px 0px 1px ${notBlack} inset;
+    box-shadow: 0px 0px 0px 2px ${notBlack} inset;
 
     @media (prefers-color-scheme: dark) {
-      background: rgba(255, 255, 255, 0.4);
+      background: rgba(255, 255, 255, 0.3);
       box-shadow: 0px 0px 0px 2px white inset;
     }
   }

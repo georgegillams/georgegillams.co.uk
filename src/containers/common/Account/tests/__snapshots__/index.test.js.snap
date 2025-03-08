@@ -32,7 +32,7 @@ exports[`<Account /> should render correctly - index 1`] = `
   width: 12rem;
   height: 2.6rem;
   margin-bottom: 1.2rem;
-  border-radius: 0.25rem;
+  border-radius: 0.75rem;
   overflow: hidden;
 }
 
@@ -143,9 +143,9 @@ exports[`<Account /> should render correctly with initial state 1`] = `
   -webkit-transition: filter 0.3s;
   transition: filter 0.3s;
   border: none;
-  border-radius: 0.25rem;
+  border-radius: 0.5rem;
   font-size: 1.4rem;
-  font-weight: bold;
+  font-weight: normal;
   cursor: pointer;
   -webkit-text-decoration-color: transparent;
   text-decoration-color: transparent;
@@ -153,6 +153,7 @@ exports[`<Account /> should render correctly with initial state 1`] = `
   text-decoration-line: none;
   background-color: #0067B7;
   color: white;
+  box-shadow: none;
 }
 
 .c5:focus-within,
@@ -197,9 +198,9 @@ exports[`<Account /> should render correctly with initial state 1`] = `
   -webkit-transition: filter 0.3s;
   transition: filter 0.3s;
   border: none;
-  border-radius: 0.25rem;
+  border-radius: 0.5rem;
   font-size: 1.4rem;
-  font-weight: bold;
+  font-weight: normal;
   cursor: pointer;
   -webkit-text-decoration-color: transparent;
   text-decoration-color: transparent;
@@ -207,6 +208,7 @@ exports[`<Account /> should render correctly with initial state 1`] = `
   text-decoration-line: none;
   background-color: #E02626;
   color: white;
+  box-shadow: none;
 }
 
 .c8:focus-within,
@@ -291,6 +293,7 @@ exports[`<Account /> should render correctly with initial state 1`] = `
   .c5 {
     background-color: #025CA2;
     color: white;
+    box-shadow: none;
   }
 }
 
@@ -327,6 +330,7 @@ exports[`<Account /> should render correctly with initial state 1`] = `
   .c8 {
     background-color: #CA2020;
     color: white;
+    box-shadow: none;
   }
 }
 
@@ -429,9 +433,9 @@ exports[`<Account /> should render correctly with initial state 2`] = `
   -webkit-transition: filter 0.3s;
   transition: filter 0.3s;
   border: none;
-  border-radius: 0.25rem;
+  border-radius: 0.5rem;
   font-size: 1.4rem;
-  font-weight: bold;
+  font-weight: normal;
   cursor: pointer;
   -webkit-text-decoration-color: transparent;
   text-decoration-color: transparent;
@@ -439,6 +443,7 @@ exports[`<Account /> should render correctly with initial state 2`] = `
   text-decoration-line: none;
   background-color: #0067B7;
   color: white;
+  box-shadow: none;
 }
 
 .c5:focus-within,
@@ -483,9 +488,9 @@ exports[`<Account /> should render correctly with initial state 2`] = `
   -webkit-transition: filter 0.3s;
   transition: filter 0.3s;
   border: none;
-  border-radius: 0.25rem;
+  border-radius: 0.5rem;
   font-size: 1.4rem;
-  font-weight: bold;
+  font-weight: normal;
   cursor: pointer;
   -webkit-text-decoration-color: transparent;
   text-decoration-color: transparent;
@@ -493,6 +498,7 @@ exports[`<Account /> should render correctly with initial state 2`] = `
   text-decoration-line: none;
   background-color: #E02626;
   color: white;
+  box-shadow: none;
 }
 
 .c8:focus-within,
@@ -577,6 +583,7 @@ exports[`<Account /> should render correctly with initial state 2`] = `
   .c5 {
     background-color: #025CA2;
     color: white;
+    box-shadow: none;
   }
 }
 
@@ -613,6 +620,7 @@ exports[`<Account /> should render correctly with initial state 2`] = `
   .c8 {
     background-color: #CA2020;
     color: white;
+    box-shadow: none;
   }
 }
 
@@ -715,9 +723,9 @@ exports[`<Account /> should render correctly with logOutError 1`] = `
   -webkit-transition: filter 0.3s;
   transition: filter 0.3s;
   border: none;
-  border-radius: 0.25rem;
+  border-radius: 0.5rem;
   font-size: 1.4rem;
-  font-weight: bold;
+  font-weight: normal;
   cursor: pointer;
   -webkit-text-decoration-color: transparent;
   text-decoration-color: transparent;
@@ -725,6 +733,7 @@ exports[`<Account /> should render correctly with logOutError 1`] = `
   text-decoration-line: none;
   background-color: #0067B7;
   color: white;
+  box-shadow: none;
 }
 
 .c5:focus-within,
@@ -769,9 +778,9 @@ exports[`<Account /> should render correctly with logOutError 1`] = `
   -webkit-transition: filter 0.3s;
   transition: filter 0.3s;
   border: none;
-  border-radius: 0.25rem;
+  border-radius: 0.5rem;
   font-size: 1.4rem;
-  font-weight: bold;
+  font-weight: normal;
   cursor: pointer;
   -webkit-text-decoration-color: transparent;
   text-decoration-color: transparent;
@@ -779,6 +788,7 @@ exports[`<Account /> should render correctly with logOutError 1`] = `
   text-decoration-line: none;
   background-color: #E02626;
   color: white;
+  box-shadow: none;
 }
 
 .c8:focus-within,
@@ -863,6 +873,7 @@ exports[`<Account /> should render correctly with logOutError 1`] = `
   .c5 {
     background-color: #025CA2;
     color: white;
+    box-shadow: none;
   }
 }
 
@@ -899,6 +910,7 @@ exports[`<Account /> should render correctly with logOutError 1`] = `
   .c8 {
     background-color: #CA2020;
     color: white;
+    box-shadow: none;
   }
 }
 
@@ -1001,9 +1013,9 @@ exports[`<Account /> should render correctly with logOutResult 1`] = `
   -webkit-transition: filter 0.3s;
   transition: filter 0.3s;
   border: none;
-  border-radius: 0.25rem;
+  border-radius: 0.5rem;
   font-size: 1.4rem;
-  font-weight: bold;
+  font-weight: normal;
   cursor: pointer;
   -webkit-text-decoration-color: transparent;
   text-decoration-color: transparent;
@@ -1011,6 +1023,7 @@ exports[`<Account /> should render correctly with logOutResult 1`] = `
   text-decoration-line: none;
   background-color: #0067B7;
   color: white;
+  box-shadow: none;
 }
 
 .c5:focus-within,
@@ -1055,9 +1068,9 @@ exports[`<Account /> should render correctly with logOutResult 1`] = `
   -webkit-transition: filter 0.3s;
   transition: filter 0.3s;
   border: none;
-  border-radius: 0.25rem;
+  border-radius: 0.5rem;
   font-size: 1.4rem;
-  font-weight: bold;
+  font-weight: normal;
   cursor: pointer;
   -webkit-text-decoration-color: transparent;
   text-decoration-color: transparent;
@@ -1065,6 +1078,7 @@ exports[`<Account /> should render correctly with logOutResult 1`] = `
   text-decoration-line: none;
   background-color: #E02626;
   color: white;
+  box-shadow: none;
 }
 
 .c8:focus-within,
@@ -1149,6 +1163,7 @@ exports[`<Account /> should render correctly with logOutResult 1`] = `
   .c5 {
     background-color: #025CA2;
     color: white;
+    box-shadow: none;
   }
 }
 
@@ -1185,6 +1200,7 @@ exports[`<Account /> should render correctly with logOutResult 1`] = `
   .c8 {
     background-color: #CA2020;
     color: white;
+    box-shadow: none;
   }
 }
 
@@ -1463,9 +1479,9 @@ exports[`<Account /> should render correctly with loggingOut=true 1`] = `
   -webkit-transition: filter 0.3s;
   transition: filter 0.3s;
   border: none;
-  border-radius: 0.25rem;
+  border-radius: 0.5rem;
   font-size: 1.4rem;
-  font-weight: bold;
+  font-weight: normal;
   cursor: pointer;
   -webkit-text-decoration-color: transparent;
   text-decoration-color: transparent;
@@ -1473,6 +1489,7 @@ exports[`<Account /> should render correctly with loggingOut=true 1`] = `
   text-decoration-line: none;
   background-color: #0067B7;
   color: white;
+  box-shadow: none;
 }
 
 .c5:focus-within,
@@ -1517,9 +1534,9 @@ exports[`<Account /> should render correctly with loggingOut=true 1`] = `
   -webkit-transition: filter 0.3s;
   transition: filter 0.3s;
   border: none;
-  border-radius: 0.25rem;
+  border-radius: 0.5rem;
   font-size: 1.4rem;
-  font-weight: bold;
+  font-weight: normal;
   cursor: pointer;
   -webkit-text-decoration-color: transparent;
   text-decoration-color: transparent;
@@ -1527,6 +1544,7 @@ exports[`<Account /> should render correctly with loggingOut=true 1`] = `
   text-decoration-line: none;
   background-color: #E02626;
   color: white;
+  box-shadow: none;
   cursor: default;
 }
 
@@ -1650,6 +1668,7 @@ exports[`<Account /> should render correctly with loggingOut=true 1`] = `
   .c5 {
     background-color: #025CA2;
     color: white;
+    box-shadow: none;
   }
 }
 
@@ -1686,6 +1705,7 @@ exports[`<Account /> should render correctly with loggingOut=true 1`] = `
   .c8 {
     background-color: #CA2020;
     color: white;
+    box-shadow: none;
   }
 }
 
@@ -1819,7 +1839,7 @@ exports[`<Account /> should render correctly with no user 1`] = `
   width: 12rem;
   height: 2.6rem;
   margin-bottom: 1.2rem;
-  border-radius: 0.25rem;
+  border-radius: 0.75rem;
   overflow: hidden;
 }
 
@@ -1930,9 +1950,9 @@ exports[`<Account /> should render correctly with requestVerificationEmailError 
   -webkit-transition: filter 0.3s;
   transition: filter 0.3s;
   border: none;
-  border-radius: 0.25rem;
+  border-radius: 0.5rem;
   font-size: 1.4rem;
-  font-weight: bold;
+  font-weight: normal;
   cursor: pointer;
   -webkit-text-decoration-color: transparent;
   text-decoration-color: transparent;
@@ -1940,6 +1960,7 @@ exports[`<Account /> should render correctly with requestVerificationEmailError 
   text-decoration-line: none;
   background-color: #0067B7;
   color: white;
+  box-shadow: none;
 }
 
 .c5:focus-within,
@@ -1984,9 +2005,9 @@ exports[`<Account /> should render correctly with requestVerificationEmailError 
   -webkit-transition: filter 0.3s;
   transition: filter 0.3s;
   border: none;
-  border-radius: 0.25rem;
+  border-radius: 0.5rem;
   font-size: 1.4rem;
-  font-weight: bold;
+  font-weight: normal;
   cursor: pointer;
   -webkit-text-decoration-color: transparent;
   text-decoration-color: transparent;
@@ -1994,6 +2015,7 @@ exports[`<Account /> should render correctly with requestVerificationEmailError 
   text-decoration-line: none;
   background-color: #E02626;
   color: white;
+  box-shadow: none;
 }
 
 .c8:focus-within,
@@ -2078,6 +2100,7 @@ exports[`<Account /> should render correctly with requestVerificationEmailError 
   .c5 {
     background-color: #025CA2;
     color: white;
+    box-shadow: none;
   }
 }
 
@@ -2114,6 +2137,7 @@ exports[`<Account /> should render correctly with requestVerificationEmailError 
   .c8 {
     background-color: #CA2020;
     color: white;
+    box-shadow: none;
   }
 }
 
@@ -2216,9 +2240,9 @@ exports[`<Account /> should render correctly with requestVerificationEmailResult
   -webkit-transition: filter 0.3s;
   transition: filter 0.3s;
   border: none;
-  border-radius: 0.25rem;
+  border-radius: 0.5rem;
   font-size: 1.4rem;
-  font-weight: bold;
+  font-weight: normal;
   cursor: pointer;
   -webkit-text-decoration-color: transparent;
   text-decoration-color: transparent;
@@ -2226,6 +2250,7 @@ exports[`<Account /> should render correctly with requestVerificationEmailResult
   text-decoration-line: none;
   background-color: #0067B7;
   color: white;
+  box-shadow: none;
 }
 
 .c5:focus-within,
@@ -2270,9 +2295,9 @@ exports[`<Account /> should render correctly with requestVerificationEmailResult
   -webkit-transition: filter 0.3s;
   transition: filter 0.3s;
   border: none;
-  border-radius: 0.25rem;
+  border-radius: 0.5rem;
   font-size: 1.4rem;
-  font-weight: bold;
+  font-weight: normal;
   cursor: pointer;
   -webkit-text-decoration-color: transparent;
   text-decoration-color: transparent;
@@ -2280,6 +2305,7 @@ exports[`<Account /> should render correctly with requestVerificationEmailResult
   text-decoration-line: none;
   background-color: #E02626;
   color: white;
+  box-shadow: none;
 }
 
 .c8:focus-within,
@@ -2364,6 +2390,7 @@ exports[`<Account /> should render correctly with requestVerificationEmailResult
   .c5 {
     background-color: #025CA2;
     color: white;
+    box-shadow: none;
   }
 }
 
@@ -2400,6 +2427,7 @@ exports[`<Account /> should render correctly with requestVerificationEmailResult
   .c8 {
     background-color: #CA2020;
     color: white;
+    box-shadow: none;
   }
 }
 
@@ -2678,9 +2706,9 @@ exports[`<Account /> should render correctly with requestingVerificationEmail=tr
   -webkit-transition: filter 0.3s;
   transition: filter 0.3s;
   border: none;
-  border-radius: 0.25rem;
+  border-radius: 0.5rem;
   font-size: 1.4rem;
-  font-weight: bold;
+  font-weight: normal;
   cursor: pointer;
   -webkit-text-decoration-color: transparent;
   text-decoration-color: transparent;
@@ -2688,6 +2716,7 @@ exports[`<Account /> should render correctly with requestingVerificationEmail=tr
   text-decoration-line: none;
   background-color: #0067B7;
   color: white;
+  box-shadow: none;
   cursor: default;
 }
 
@@ -2733,9 +2762,9 @@ exports[`<Account /> should render correctly with requestingVerificationEmail=tr
   -webkit-transition: filter 0.3s;
   transition: filter 0.3s;
   border: none;
-  border-radius: 0.25rem;
+  border-radius: 0.5rem;
   font-size: 1.4rem;
-  font-weight: bold;
+  font-weight: normal;
   cursor: pointer;
   -webkit-text-decoration-color: transparent;
   text-decoration-color: transparent;
@@ -2743,6 +2772,7 @@ exports[`<Account /> should render correctly with requestingVerificationEmail=tr
   text-decoration-line: none;
   background-color: #E02626;
   color: white;
+  box-shadow: none;
 }
 
 .c18:focus-within,
@@ -2865,6 +2895,7 @@ exports[`<Account /> should render correctly with requestingVerificationEmail=tr
   .c5 {
     background-color: #025CA2;
     color: white;
+    box-shadow: none;
   }
 }
 
@@ -2901,6 +2932,7 @@ exports[`<Account /> should render correctly with requestingVerificationEmail=tr
   .c18 {
     background-color: #CA2020;
     color: white;
+    box-shadow: none;
   }
 }
 
@@ -3037,9 +3069,9 @@ exports[`<Account /> should render correctly with user with emailVerified=true 1
   -webkit-transition: filter 0.3s;
   transition: filter 0.3s;
   border: none;
-  border-radius: 0.25rem;
+  border-radius: 0.5rem;
   font-size: 1.4rem;
-  font-weight: bold;
+  font-weight: normal;
   cursor: pointer;
   -webkit-text-decoration-color: transparent;
   text-decoration-color: transparent;
@@ -3047,6 +3079,7 @@ exports[`<Account /> should render correctly with user with emailVerified=true 1
   text-decoration-line: none;
   background-color: #E02626;
   color: white;
+  box-shadow: none;
 }
 
 .c5:focus-within,
@@ -3127,6 +3160,7 @@ exports[`<Account /> should render correctly with user with emailVerified=true 1
   .c5 {
     background-color: #CA2020;
     color: white;
+    box-shadow: none;
   }
 }
 

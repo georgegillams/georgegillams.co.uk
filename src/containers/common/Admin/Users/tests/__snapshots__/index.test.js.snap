@@ -207,9 +207,9 @@ exports[`<AdminUsers /> should render correctly with admin user 1`] = `
   -webkit-transition: filter 0.3s;
   transition: filter 0.3s;
   border: none;
-  border-radius: 0.25rem;
+  border-radius: 0.5rem;
   font-size: 1.4rem;
-  font-weight: bold;
+  font-weight: normal;
   cursor: pointer;
   -webkit-text-decoration-color: transparent;
   text-decoration-color: transparent;
@@ -217,6 +217,7 @@ exports[`<AdminUsers /> should render correctly with admin user 1`] = `
   text-decoration-line: none;
   background-color: #0067B7;
   color: white;
+  box-shadow: none;
 }
 
 .c7:focus-within,
@@ -285,7 +286,7 @@ exports[`<AdminUsers /> should render correctly with admin user 1`] = `
   position: relative;
   width: 100%;
   height: 100%;
-  border-radius: 0.35rem;
+  border-radius: 0.75rem;
   overflow: hidden;
 }
 
@@ -353,7 +354,7 @@ exports[`<AdminUsers /> should render correctly with admin user 1`] = `
   -webkit-transition: all 0.4s;
   transition: all 0.4s;
   border: none;
-  border-radius: 0.35rem;
+  border-radius: 0.75rem;
   background: none;
   text-align: left;
 }
@@ -403,6 +404,7 @@ exports[`<AdminUsers /> should render correctly with admin user 1`] = `
   .c7 {
     background-color: #025CA2;
     color: white;
+    box-shadow: none;
   }
 }
 
@@ -640,9 +642,9 @@ exports[`<AdminUsers /> should render correctly with createError 1`] = `
   -webkit-transition: filter 0.3s;
   transition: filter 0.3s;
   border: none;
-  border-radius: 0.25rem;
+  border-radius: 0.5rem;
   font-size: 1.4rem;
-  font-weight: bold;
+  font-weight: normal;
   cursor: pointer;
   -webkit-text-decoration-color: transparent;
   text-decoration-color: transparent;
@@ -650,6 +652,7 @@ exports[`<AdminUsers /> should render correctly with createError 1`] = `
   text-decoration-line: none;
   background-color: #0067B7;
   color: white;
+  box-shadow: none;
 }
 
 .c7:focus-within,
@@ -718,7 +721,7 @@ exports[`<AdminUsers /> should render correctly with createError 1`] = `
   position: relative;
   width: 100%;
   height: 100%;
-  border-radius: 0.35rem;
+  border-radius: 0.75rem;
   overflow: hidden;
 }
 
@@ -786,7 +789,7 @@ exports[`<AdminUsers /> should render correctly with createError 1`] = `
   -webkit-transition: all 0.4s;
   transition: all 0.4s;
   border: none;
-  border-radius: 0.35rem;
+  border-radius: 0.75rem;
   background: none;
   text-align: left;
 }
@@ -836,6 +839,7 @@ exports[`<AdminUsers /> should render correctly with createError 1`] = `
   .c7 {
     background-color: #025CA2;
     color: white;
+    box-shadow: none;
   }
 }
 
@@ -1073,9 +1077,9 @@ exports[`<AdminUsers /> should render correctly with creating=true 1`] = `
   -webkit-transition: filter 0.3s;
   transition: filter 0.3s;
   border: none;
-  border-radius: 0.25rem;
+  border-radius: 0.5rem;
   font-size: 1.4rem;
-  font-weight: bold;
+  font-weight: normal;
   cursor: pointer;
   -webkit-text-decoration-color: transparent;
   text-decoration-color: transparent;
@@ -1083,6 +1087,7 @@ exports[`<AdminUsers /> should render correctly with creating=true 1`] = `
   text-decoration-line: none;
   background-color: #0067B7;
   color: white;
+  box-shadow: none;
 }
 
 .c7:focus-within,
@@ -1151,7 +1156,7 @@ exports[`<AdminUsers /> should render correctly with creating=true 1`] = `
   position: relative;
   width: 100%;
   height: 100%;
-  border-radius: 0.35rem;
+  border-radius: 0.75rem;
   overflow: hidden;
 }
 
@@ -1219,7 +1224,7 @@ exports[`<AdminUsers /> should render correctly with creating=true 1`] = `
   -webkit-transition: all 0.4s;
   transition: all 0.4s;
   border: none;
-  border-radius: 0.35rem;
+  border-radius: 0.75rem;
   background: none;
   text-align: left;
 }
@@ -1269,6 +1274,7 @@ exports[`<AdminUsers /> should render correctly with creating=true 1`] = `
   .c7 {
     background-color: #025CA2;
     color: white;
+    box-shadow: none;
   }
 }
 
@@ -1628,9 +1634,9 @@ exports[`<AdminUsers /> should render correctly with loadError 1`] = `
   -webkit-transition: filter 0.3s;
   transition: filter 0.3s;
   border: none;
-  border-radius: 0.25rem;
+  border-radius: 0.5rem;
   font-size: 1.4rem;
-  font-weight: bold;
+  font-weight: normal;
   cursor: pointer;
   -webkit-text-decoration-color: transparent;
   text-decoration-color: transparent;
@@ -1638,6 +1644,7 @@ exports[`<AdminUsers /> should render correctly with loadError 1`] = `
   text-decoration-line: none;
   background-color: #0067B7;
   color: white;
+  box-shadow: none;
 }
 
 .c7:focus-within,
@@ -1706,7 +1713,7 @@ exports[`<AdminUsers /> should render correctly with loadError 1`] = `
   position: relative;
   width: 100%;
   height: 100%;
-  border-radius: 0.35rem;
+  border-radius: 0.75rem;
   overflow: hidden;
 }
 
@@ -1791,7 +1798,7 @@ exports[`<AdminUsers /> should render correctly with loadError 1`] = `
   -webkit-transition: all 0.4s;
   transition: all 0.4s;
   border: none;
-  border-radius: 0.35rem;
+  border-radius: 0.75rem;
   background: none;
   text-align: left;
 }
@@ -1841,6 +1848,7 @@ exports[`<AdminUsers /> should render correctly with loadError 1`] = `
   .c7 {
     background-color: #025CA2;
     color: white;
+    box-shadow: none;
   }
 }
 
@@ -2272,9 +2280,9 @@ exports[`<AdminUsers /> should render correctly with loading=true 1`] = `
   -webkit-transition: filter 0.3s;
   transition: filter 0.3s;
   border: none;
-  border-radius: 0.25rem;
+  border-radius: 0.5rem;
   font-size: 1.4rem;
-  font-weight: bold;
+  font-weight: normal;
   cursor: pointer;
   -webkit-text-decoration-color: transparent;
   text-decoration-color: transparent;
@@ -2282,6 +2290,7 @@ exports[`<AdminUsers /> should render correctly with loading=true 1`] = `
   text-decoration-line: none;
   background-color: #0067B7;
   color: white;
+  box-shadow: none;
   cursor: default;
 }
 
@@ -2327,9 +2336,9 @@ exports[`<AdminUsers /> should render correctly with loading=true 1`] = `
   -webkit-transition: filter 0.3s;
   transition: filter 0.3s;
   border: none;
-  border-radius: 0.25rem;
+  border-radius: 0.5rem;
   font-size: 1.4rem;
-  font-weight: bold;
+  font-weight: normal;
   cursor: pointer;
   -webkit-text-decoration-color: transparent;
   text-decoration-color: transparent;
@@ -2337,6 +2346,7 @@ exports[`<AdminUsers /> should render correctly with loading=true 1`] = `
   text-decoration-line: none;
   background-color: #0067B7;
   color: white;
+  box-shadow: none;
 }
 
 .c19:focus-within,
@@ -2437,7 +2447,7 @@ exports[`<AdminUsers /> should render correctly with loading=true 1`] = `
   position: relative;
   width: 100%;
   height: 100%;
-  border-radius: 0.35rem;
+  border-radius: 0.75rem;
   overflow: hidden;
 }
 
@@ -2505,7 +2515,7 @@ exports[`<AdminUsers /> should render correctly with loading=true 1`] = `
   -webkit-transition: all 0.4s;
   transition: all 0.4s;
   border: none;
-  border-radius: 0.35rem;
+  border-radius: 0.75rem;
   background: none;
   text-align: left;
 }
@@ -2561,6 +2571,7 @@ exports[`<AdminUsers /> should render correctly with loading=true 1`] = `
   .c7 {
     background-color: #025CA2;
     color: white;
+    box-shadow: none;
   }
 }
 
@@ -2597,6 +2608,7 @@ exports[`<AdminUsers /> should render correctly with loading=true 1`] = `
   .c19 {
     background-color: #025CA2;
     color: white;
+    box-shadow: none;
   }
 }
 
@@ -2868,9 +2880,9 @@ exports[`<AdminUsers /> should render correctly with removeError 1`] = `
   -webkit-transition: filter 0.3s;
   transition: filter 0.3s;
   border: none;
-  border-radius: 0.25rem;
+  border-radius: 0.5rem;
   font-size: 1.4rem;
-  font-weight: bold;
+  font-weight: normal;
   cursor: pointer;
   -webkit-text-decoration-color: transparent;
   text-decoration-color: transparent;
@@ -2878,6 +2890,7 @@ exports[`<AdminUsers /> should render correctly with removeError 1`] = `
   text-decoration-line: none;
   background-color: #0067B7;
   color: white;
+  box-shadow: none;
 }
 
 .c7:focus-within,
@@ -2946,7 +2959,7 @@ exports[`<AdminUsers /> should render correctly with removeError 1`] = `
   position: relative;
   width: 100%;
   height: 100%;
-  border-radius: 0.35rem;
+  border-radius: 0.75rem;
   overflow: hidden;
 }
 
@@ -3014,7 +3027,7 @@ exports[`<AdminUsers /> should render correctly with removeError 1`] = `
   -webkit-transition: all 0.4s;
   transition: all 0.4s;
   border: none;
-  border-radius: 0.35rem;
+  border-radius: 0.75rem;
   background: none;
   text-align: left;
 }
@@ -3064,6 +3077,7 @@ exports[`<AdminUsers /> should render correctly with removeError 1`] = `
   .c7 {
     background-color: #025CA2;
     color: white;
+    box-shadow: none;
   }
 }
 
@@ -3301,9 +3315,9 @@ exports[`<AdminUsers /> should render correctly with removing=true 1`] = `
   -webkit-transition: filter 0.3s;
   transition: filter 0.3s;
   border: none;
-  border-radius: 0.25rem;
+  border-radius: 0.5rem;
   font-size: 1.4rem;
-  font-weight: bold;
+  font-weight: normal;
   cursor: pointer;
   -webkit-text-decoration-color: transparent;
   text-decoration-color: transparent;
@@ -3311,6 +3325,7 @@ exports[`<AdminUsers /> should render correctly with removing=true 1`] = `
   text-decoration-line: none;
   background-color: #0067B7;
   color: white;
+  box-shadow: none;
 }
 
 .c7:focus-within,
@@ -3379,7 +3394,7 @@ exports[`<AdminUsers /> should render correctly with removing=true 1`] = `
   position: relative;
   width: 100%;
   height: 100%;
-  border-radius: 0.35rem;
+  border-radius: 0.75rem;
   overflow: hidden;
 }
 
@@ -3447,7 +3462,7 @@ exports[`<AdminUsers /> should render correctly with removing=true 1`] = `
   -webkit-transition: all 0.4s;
   transition: all 0.4s;
   border: none;
-  border-radius: 0.35rem;
+  border-radius: 0.75rem;
   background: none;
   text-align: left;
 }
@@ -3497,6 +3512,7 @@ exports[`<AdminUsers /> should render correctly with removing=true 1`] = `
   .c7 {
     background-color: #025CA2;
     color: white;
+    box-shadow: none;
   }
 }
 
@@ -3734,9 +3750,9 @@ exports[`<AdminUsers /> should render correctly with requestError 1`] = `
   -webkit-transition: filter 0.3s;
   transition: filter 0.3s;
   border: none;
-  border-radius: 0.25rem;
+  border-radius: 0.5rem;
   font-size: 1.4rem;
-  font-weight: bold;
+  font-weight: normal;
   cursor: pointer;
   -webkit-text-decoration-color: transparent;
   text-decoration-color: transparent;
@@ -3744,6 +3760,7 @@ exports[`<AdminUsers /> should render correctly with requestError 1`] = `
   text-decoration-line: none;
   background-color: #0067B7;
   color: white;
+  box-shadow: none;
 }
 
 .c7:focus-within,
@@ -3812,7 +3829,7 @@ exports[`<AdminUsers /> should render correctly with requestError 1`] = `
   position: relative;
   width: 100%;
   height: 100%;
-  border-radius: 0.35rem;
+  border-radius: 0.75rem;
   overflow: hidden;
 }
 
@@ -3880,7 +3897,7 @@ exports[`<AdminUsers /> should render correctly with requestError 1`] = `
   -webkit-transition: all 0.4s;
   transition: all 0.4s;
   border: none;
-  border-radius: 0.35rem;
+  border-radius: 0.75rem;
   background: none;
   text-align: left;
 }
@@ -3930,6 +3947,7 @@ exports[`<AdminUsers /> should render correctly with requestError 1`] = `
   .c7 {
     background-color: #025CA2;
     color: white;
+    box-shadow: none;
   }
 }
 
@@ -4167,9 +4185,9 @@ exports[`<AdminUsers /> should render correctly with requesting=true 1`] = `
   -webkit-transition: filter 0.3s;
   transition: filter 0.3s;
   border: none;
-  border-radius: 0.25rem;
+  border-radius: 0.5rem;
   font-size: 1.4rem;
-  font-weight: bold;
+  font-weight: normal;
   cursor: pointer;
   -webkit-text-decoration-color: transparent;
   text-decoration-color: transparent;
@@ -4177,6 +4195,7 @@ exports[`<AdminUsers /> should render correctly with requesting=true 1`] = `
   text-decoration-line: none;
   background-color: #0067B7;
   color: white;
+  box-shadow: none;
 }
 
 .c7:focus-within,
@@ -4245,7 +4264,7 @@ exports[`<AdminUsers /> should render correctly with requesting=true 1`] = `
   position: relative;
   width: 100%;
   height: 100%;
-  border-radius: 0.35rem;
+  border-radius: 0.75rem;
   overflow: hidden;
 }
 
@@ -4313,7 +4332,7 @@ exports[`<AdminUsers /> should render correctly with requesting=true 1`] = `
   -webkit-transition: all 0.4s;
   transition: all 0.4s;
   border: none;
-  border-radius: 0.35rem;
+  border-radius: 0.75rem;
   background: none;
   text-align: left;
 }
@@ -4363,6 +4382,7 @@ exports[`<AdminUsers /> should render correctly with requesting=true 1`] = `
   .c7 {
     background-color: #025CA2;
     color: white;
+    box-shadow: none;
   }
 }
 
@@ -4600,9 +4620,9 @@ exports[`<AdminUsers /> should render correctly with updateError 1`] = `
   -webkit-transition: filter 0.3s;
   transition: filter 0.3s;
   border: none;
-  border-radius: 0.25rem;
+  border-radius: 0.5rem;
   font-size: 1.4rem;
-  font-weight: bold;
+  font-weight: normal;
   cursor: pointer;
   -webkit-text-decoration-color: transparent;
   text-decoration-color: transparent;
@@ -4610,6 +4630,7 @@ exports[`<AdminUsers /> should render correctly with updateError 1`] = `
   text-decoration-line: none;
   background-color: #0067B7;
   color: white;
+  box-shadow: none;
 }
 
 .c7:focus-within,
@@ -4678,7 +4699,7 @@ exports[`<AdminUsers /> should render correctly with updateError 1`] = `
   position: relative;
   width: 100%;
   height: 100%;
-  border-radius: 0.35rem;
+  border-radius: 0.75rem;
   overflow: hidden;
 }
 
@@ -4746,7 +4767,7 @@ exports[`<AdminUsers /> should render correctly with updateError 1`] = `
   -webkit-transition: all 0.4s;
   transition: all 0.4s;
   border: none;
-  border-radius: 0.35rem;
+  border-radius: 0.75rem;
   background: none;
   text-align: left;
 }
@@ -4796,6 +4817,7 @@ exports[`<AdminUsers /> should render correctly with updateError 1`] = `
   .c7 {
     background-color: #025CA2;
     color: white;
+    box-shadow: none;
   }
 }
 
@@ -5033,9 +5055,9 @@ exports[`<AdminUsers /> should render correctly with updating=true 1`] = `
   -webkit-transition: filter 0.3s;
   transition: filter 0.3s;
   border: none;
-  border-radius: 0.25rem;
+  border-radius: 0.5rem;
   font-size: 1.4rem;
-  font-weight: bold;
+  font-weight: normal;
   cursor: pointer;
   -webkit-text-decoration-color: transparent;
   text-decoration-color: transparent;
@@ -5043,6 +5065,7 @@ exports[`<AdminUsers /> should render correctly with updating=true 1`] = `
   text-decoration-line: none;
   background-color: #0067B7;
   color: white;
+  box-shadow: none;
 }
 
 .c7:focus-within,
@@ -5111,7 +5134,7 @@ exports[`<AdminUsers /> should render correctly with updating=true 1`] = `
   position: relative;
   width: 100%;
   height: 100%;
-  border-radius: 0.35rem;
+  border-radius: 0.75rem;
   overflow: hidden;
 }
 
@@ -5179,7 +5202,7 @@ exports[`<AdminUsers /> should render correctly with updating=true 1`] = `
   -webkit-transition: all 0.4s;
   transition: all 0.4s;
   border: none;
-  border-radius: 0.35rem;
+  border-radius: 0.75rem;
   background: none;
   text-align: left;
 }
@@ -5229,6 +5252,7 @@ exports[`<AdminUsers /> should render correctly with updating=true 1`] = `
   .c7 {
     background-color: #025CA2;
     color: white;
+    box-shadow: none;
   }
 }
 
@@ -5591,9 +5615,9 @@ exports[`<AdminUsers /> should render correctly with users 1`] = `
   -webkit-transition: filter 0.3s;
   transition: filter 0.3s;
   border: none;
-  border-radius: 0.25rem;
+  border-radius: 0.5rem;
   font-size: 1.4rem;
-  font-weight: bold;
+  font-weight: normal;
   cursor: pointer;
   -webkit-text-decoration-color: transparent;
   text-decoration-color: transparent;
@@ -5601,6 +5625,7 @@ exports[`<AdminUsers /> should render correctly with users 1`] = `
   text-decoration-line: none;
   background-color: #0067B7;
   color: white;
+  box-shadow: none;
 }
 
 .c7:focus-within,
@@ -5669,7 +5694,7 @@ exports[`<AdminUsers /> should render correctly with users 1`] = `
   position: relative;
   width: 100%;
   height: 100%;
-  border-radius: 0.35rem;
+  border-radius: 0.75rem;
   overflow: hidden;
 }
 
@@ -5754,7 +5779,7 @@ exports[`<AdminUsers /> should render correctly with users 1`] = `
   -webkit-transition: all 0.4s;
   transition: all 0.4s;
   border: none;
-  border-radius: 0.35rem;
+  border-radius: 0.75rem;
   background: none;
   text-align: left;
 }
@@ -5804,6 +5829,7 @@ exports[`<AdminUsers /> should render correctly with users 1`] = `
   .c7 {
     background-color: #025CA2;
     color: white;
+    box-shadow: none;
   }
 }
 

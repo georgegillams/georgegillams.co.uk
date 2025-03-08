@@ -16,6 +16,7 @@ exports[`<Support /> should render correctly - index 1`] = `
   width: 100%;
   height: 10rem;
   margin-bottom: 1.2rem;
+  border-radius: 0.75rem;
 }
 
 .c8 {
@@ -46,9 +47,9 @@ exports[`<Support /> should render correctly - index 1`] = `
   -webkit-transition: filter 0.3s;
   transition: filter 0.3s;
   border: none;
-  border-radius: 0.25rem;
+  border-radius: 0.5rem;
   font-size: 1.4rem;
-  font-weight: bold;
+  font-weight: normal;
   cursor: pointer;
   -webkit-text-decoration-color: transparent;
   text-decoration-color: transparent;
@@ -56,6 +57,7 @@ exports[`<Support /> should render correctly - index 1`] = `
   text-decoration-line: none;
   background-color: #0067B7;
   color: white;
+  box-shadow: none;
   cursor: default;
 }
 
@@ -166,6 +168,7 @@ exports[`<Support /> should render correctly - index 1`] = `
   .c5 {
     background-color: #025CA2;
     color: white;
+    box-shadow: none;
   }
 }
 
@@ -255,6 +258,7 @@ exports[`<Support /> should render correctly when loading 1`] = `
   width: 100%;
   height: 10rem;
   margin-bottom: 1.2rem;
+  border-radius: 0.75rem;
 }
 
 .c8 {
@@ -285,9 +289,9 @@ exports[`<Support /> should render correctly when loading 1`] = `
   -webkit-transition: filter 0.3s;
   transition: filter 0.3s;
   border: none;
-  border-radius: 0.25rem;
+  border-radius: 0.5rem;
   font-size: 1.4rem;
-  font-weight: bold;
+  font-weight: normal;
   cursor: pointer;
   -webkit-text-decoration-color: transparent;
   text-decoration-color: transparent;
@@ -295,6 +299,7 @@ exports[`<Support /> should render correctly when loading 1`] = `
   text-decoration-line: none;
   background-color: #0067B7;
   color: white;
+  box-shadow: none;
   cursor: default;
 }
 
@@ -385,6 +390,7 @@ exports[`<Support /> should render correctly when loading 1`] = `
   .c5 {
     background-color: #025CA2;
     color: white;
+    box-shadow: none;
   }
 }
 
@@ -491,6 +497,7 @@ exports[`<Support /> should render correctly with admin 1`] = `
   width: 100%;
   height: 10rem;
   margin-bottom: 1.2rem;
+  border-radius: 0.75rem;
 }
 
 .c8 {
@@ -521,9 +528,9 @@ exports[`<Support /> should render correctly with admin 1`] = `
   -webkit-transition: filter 0.3s;
   transition: filter 0.3s;
   border: none;
-  border-radius: 0.25rem;
+  border-radius: 0.5rem;
   font-size: 1.4rem;
-  font-weight: bold;
+  font-weight: normal;
   cursor: pointer;
   -webkit-text-decoration-color: transparent;
   text-decoration-color: transparent;
@@ -531,6 +538,7 @@ exports[`<Support /> should render correctly with admin 1`] = `
   text-decoration-line: none;
   background-color: #0067B7;
   color: white;
+  box-shadow: none;
 }
 
 .c5:focus-within,
@@ -626,6 +634,7 @@ exports[`<Support /> should render correctly with admin 1`] = `
   .c5 {
     background-color: #025CA2;
     color: white;
+    box-shadow: none;
   }
 }
 
@@ -744,6 +753,7 @@ exports[`<Support /> should render correctly with admin and createLinkError 1`] 
   width: 100%;
   height: 10rem;
   margin-bottom: 1.2rem;
+  border-radius: 0.75rem;
 }
 
 .c8 {
@@ -774,9 +784,9 @@ exports[`<Support /> should render correctly with admin and createLinkError 1`] 
   -webkit-transition: filter 0.3s;
   transition: filter 0.3s;
   border: none;
-  border-radius: 0.25rem;
+  border-radius: 0.5rem;
   font-size: 1.4rem;
-  font-weight: bold;
+  font-weight: normal;
   cursor: pointer;
   -webkit-text-decoration-color: transparent;
   text-decoration-color: transparent;
@@ -784,6 +794,7 @@ exports[`<Support /> should render correctly with admin and createLinkError 1`] 
   text-decoration-line: none;
   background-color: #0067B7;
   color: white;
+  box-shadow: none;
 }
 
 .c5:focus-within,
@@ -896,6 +907,7 @@ exports[`<Support /> should render correctly with admin and createLinkError 1`] 
   .c5 {
     background-color: #025CA2;
     color: white;
+    box-shadow: none;
   }
 }
 
@@ -1032,6 +1044,7 @@ exports[`<Support /> should render correctly with admin and deleteLinkError 1`] 
   width: 100%;
   height: 10rem;
   margin-bottom: 1.2rem;
+  border-radius: 0.75rem;
 }
 
 .c8 {
@@ -1062,9 +1075,9 @@ exports[`<Support /> should render correctly with admin and deleteLinkError 1`] 
   -webkit-transition: filter 0.3s;
   transition: filter 0.3s;
   border: none;
-  border-radius: 0.25rem;
+  border-radius: 0.5rem;
   font-size: 1.4rem;
-  font-weight: bold;
+  font-weight: normal;
   cursor: pointer;
   -webkit-text-decoration-color: transparent;
   text-decoration-color: transparent;
@@ -1072,6 +1085,7 @@ exports[`<Support /> should render correctly with admin and deleteLinkError 1`] 
   text-decoration-line: none;
   background-color: #0067B7;
   color: white;
+  box-shadow: none;
 }
 
 .c5:focus-within,
@@ -1184,6 +1198,7 @@ exports[`<Support /> should render correctly with admin and deleteLinkError 1`] 
   .c5 {
     background-color: #025CA2;
     color: white;
+    box-shadow: none;
   }
 }
 
@@ -1303,6 +1318,7 @@ exports[`<Support /> should render correctly with initial state 1`] = `
   width: 100%;
   height: 10rem;
   margin-bottom: 1.2rem;
+  border-radius: 0.75rem;
 }
 
 .c8 {
@@ -1333,9 +1349,9 @@ exports[`<Support /> should render correctly with initial state 1`] = `
   -webkit-transition: filter 0.3s;
   transition: filter 0.3s;
   border: none;
-  border-radius: 0.25rem;
+  border-radius: 0.5rem;
   font-size: 1.4rem;
-  font-weight: bold;
+  font-weight: normal;
   cursor: pointer;
   -webkit-text-decoration-color: transparent;
   text-decoration-color: transparent;
@@ -1343,6 +1359,7 @@ exports[`<Support /> should render correctly with initial state 1`] = `
   text-decoration-line: none;
   background-color: #0067B7;
   color: white;
+  box-shadow: none;
 }
 
 .c5:focus-within,
@@ -1432,6 +1449,7 @@ exports[`<Support /> should render correctly with initial state 1`] = `
   .c5 {
     background-color: #025CA2;
     color: white;
+    box-shadow: none;
   }
 }
 
@@ -1607,9 +1625,9 @@ exports[`<Support /> should render correctly with links 1`] = `
   -webkit-transition: filter 0.3s;
   transition: filter 0.3s;
   border: none;
-  border-radius: 0.25rem;
+  border-radius: 0.5rem;
   font-size: 1.4rem;
-  font-weight: bold;
+  font-weight: normal;
   cursor: pointer;
   -webkit-text-decoration-color: transparent;
   text-decoration-color: transparent;
@@ -1617,6 +1635,7 @@ exports[`<Support /> should render correctly with links 1`] = `
   text-decoration-line: none;
   background-color: #0067B7;
   color: white;
+  box-shadow: none;
 }
 
 .c5:focus-within,
@@ -1737,6 +1756,7 @@ exports[`<Support /> should render correctly with links 1`] = `
   .c5 {
     background-color: #025CA2;
     color: white;
+    box-shadow: none;
   }
 }
 
@@ -1905,6 +1925,7 @@ exports[`<Support /> should render correctly with loadError 1`] = `
   width: 100%;
   height: 10rem;
   margin-bottom: 1.2rem;
+  border-radius: 0.75rem;
 }
 
 .c10 {
@@ -1935,9 +1956,9 @@ exports[`<Support /> should render correctly with loadError 1`] = `
   -webkit-transition: filter 0.3s;
   transition: filter 0.3s;
   border: none;
-  border-radius: 0.25rem;
+  border-radius: 0.5rem;
   font-size: 1.4rem;
-  font-weight: bold;
+  font-weight: normal;
   cursor: pointer;
   -webkit-text-decoration-color: transparent;
   text-decoration-color: transparent;
@@ -1945,6 +1966,7 @@ exports[`<Support /> should render correctly with loadError 1`] = `
   text-decoration-line: none;
   background-color: #0067B7;
   color: white;
+  box-shadow: none;
 }
 
 .c5:focus-within,
@@ -2051,6 +2073,7 @@ exports[`<Support /> should render correctly with loadError 1`] = `
   .c5 {
     background-color: #025CA2;
     color: white;
+    box-shadow: none;
   }
 }
 

@@ -123,9 +123,9 @@ exports[`<Authenticator /> should render correctly - index 1`] = `
   -webkit-transition: filter 0.3s;
   transition: filter 0.3s;
   border: none;
-  border-radius: 0.25rem;
+  border-radius: 0.5rem;
   font-size: 1.4rem;
-  font-weight: bold;
+  font-weight: normal;
   cursor: pointer;
   -webkit-text-decoration-color: transparent;
   text-decoration-color: transparent;
@@ -133,9 +133,9 @@ exports[`<Authenticator /> should render correctly - index 1`] = `
   text-decoration-line: none;
   background-color: transparent;
   color: #1e1e1e;
+  box-shadow: none;
   min-width: unset;
   padding: 0.2rem 0.8rem;
-  font-weight: normal;
   display: inline-block;
 }
 
@@ -338,6 +338,7 @@ exports[`<Authenticator /> should render correctly - index 1`] = `
   .c12 {
     background-color: transparent;
     color: white;
+    box-shadow: none;
   }
 }
 
@@ -686,9 +687,9 @@ exports[`<Authenticator /> should render correctly with default state 1`] = `
   -webkit-transition: filter 0.3s;
   transition: filter 0.3s;
   border: none;
-  border-radius: 0.25rem;
+  border-radius: 0.5rem;
   font-size: 1.4rem;
-  font-weight: bold;
+  font-weight: normal;
   cursor: pointer;
   -webkit-text-decoration-color: transparent;
   text-decoration-color: transparent;
@@ -696,9 +697,9 @@ exports[`<Authenticator /> should render correctly with default state 1`] = `
   text-decoration-line: none;
   background-color: transparent;
   color: #1e1e1e;
+  box-shadow: none;
   min-width: unset;
   padding: 0.2rem 0.8rem;
-  font-weight: normal;
   display: inline-block;
 }
 
@@ -901,6 +902,7 @@ exports[`<Authenticator /> should render correctly with default state 1`] = `
   .c12 {
     background-color: transparent;
     color: white;
+    box-shadow: none;
   }
 }
 
@@ -1249,9 +1251,9 @@ exports[`<Authenticator /> should render correctly with null user 1`] = `
   -webkit-transition: filter 0.3s;
   transition: filter 0.3s;
   border: none;
-  border-radius: 0.25rem;
+  border-radius: 0.5rem;
   font-size: 1.4rem;
-  font-weight: bold;
+  font-weight: normal;
   cursor: pointer;
   -webkit-text-decoration-color: transparent;
   text-decoration-color: transparent;
@@ -1259,9 +1261,9 @@ exports[`<Authenticator /> should render correctly with null user 1`] = `
   text-decoration-line: none;
   background-color: transparent;
   color: #1e1e1e;
+  box-shadow: none;
   min-width: unset;
   padding: 0.2rem 0.8rem;
-  font-weight: normal;
   display: inline-block;
 }
 
@@ -1464,6 +1466,7 @@ exports[`<Authenticator /> should render correctly with null user 1`] = `
   .c12 {
     background-color: transparent;
     color: white;
+    box-shadow: none;
   }
 }
 
@@ -1812,9 +1815,9 @@ exports[`<Authenticator /> should render correctly with user 1`] = `
   -webkit-transition: filter 0.3s;
   transition: filter 0.3s;
   border: none;
-  border-radius: 0.25rem;
+  border-radius: 0.5rem;
   font-size: 1.4rem;
-  font-weight: bold;
+  font-weight: normal;
   cursor: pointer;
   -webkit-text-decoration-color: transparent;
   text-decoration-color: transparent;
@@ -1822,9 +1825,9 @@ exports[`<Authenticator /> should render correctly with user 1`] = `
   text-decoration-line: none;
   background-color: transparent;
   color: #1e1e1e;
+  box-shadow: none;
   min-width: unset;
   padding: 0.2rem 0.8rem;
-  font-weight: normal;
   display: inline-block;
 }
 
@@ -2027,6 +2030,7 @@ exports[`<Authenticator /> should render correctly with user 1`] = `
   .c12 {
     background-color: transparent;
     color: white;
+    box-shadow: none;
   }
 }
 
