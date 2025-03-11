@@ -8,7 +8,9 @@ import configureStore from 'client-utils/common/redux/configure-store';
 import NavigationBarWrapperIndex from '../index';
 import NavigationBarWrapper from '../Container';
 
-describe('<Authenticator />', () => {
+jest.mock('next/router', () => ({ withRouter: component => component }));
+
+describe('<NavigationBarWrapper />', () => {
   let store;
 
   beforeAll(() => {

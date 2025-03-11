@@ -44,6 +44,7 @@ exports[`<LoginForm /> Should render correctly 1`] = `
 .c8:hover {
   background-color: #004F8C;
   color: white;
+  box-shadow: none;
 }
 
 .c8:active {
@@ -182,6 +183,7 @@ exports[`<LoginForm /> Should render correctly 1`] = `
   .c8:hover {
     background-color: #004479;
     color: white;
+    box-shadow: none;
   }
 }
 

@@ -391,6 +391,7 @@ exports[`<Home /> should render correctly 1`] = `
 .c42:hover {
   background-color: #004F8C;
   color: white;
+  box-shadow: none;
 }
 
 .c42:active {
@@ -882,6 +883,7 @@ exports[`<Home /> should render correctly 1`] = `
   .c42:hover {
     background-color: #004479;
     color: white;
+    box-shadow: none;
   }
 }
 
@@ -3045,6 +3047,7 @@ exports[`<Home /> should render correctly with admin user 1`] = `
 .c42:hover {
   background-color: #004F8C;
   color: white;
+  box-shadow: none;
 }
 
 .c42:active {
@@ -3536,6 +3539,7 @@ exports[`<Home /> should render correctly with admin user 1`] = `
   .c42:hover {
     background-color: #004479;
     color: white;
+    box-shadow: none;
   }
 }
 
@@ -5699,6 +5703,7 @@ exports[`<Home /> should render correctly with no user 1`] = `
 .c42:hover {
   background-color: #004F8C;
   color: white;
+  box-shadow: none;
 }
 
 .c42:active {
@@ -6190,6 +6195,7 @@ exports[`<Home /> should render correctly with no user 1`] = `
   .c42:hover {
     background-color: #004479;
     color: white;
+    box-shadow: none;
   }
 }
 
@@ -8353,6 +8359,7 @@ exports[`<Home /> should render correctly with user 1`] = `
 .c42:hover {
   background-color: #004F8C;
   color: white;
+  box-shadow: none;
 }
 
 .c42:active {
@@ -8844,6 +8851,7 @@ exports[`<Home /> should render correctly with user 1`] = `
   .c42:hover {
     background-color: #004479;
     color: white;
+    box-shadow: none;
   }
 }
 

@@ -45,6 +45,7 @@ exports[`<SignUpForm /> Should render correctly 1`] = `
 .c12:hover {
   background-color: #004F8C;
   color: white;
+  box-shadow: none;
 }
 
 .c12:active {
@@ -244,6 +245,7 @@ exports[`<SignUpForm /> Should render correctly 1`] = `
   .c12:hover {
     background-color: #004479;
     color: white;
+    box-shadow: none;
   }
 }
 

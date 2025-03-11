@@ -16,7 +16,7 @@ const applyProductionSecurity = appConfig.isProduction && !appConfig.projectUnde
 
 const applySecurityPractises = server => {
   const cspDirectives = {
-    defaultSrc: ["'self'", 'www.youtube.com'],
+    defaultSrc: ["'self'", 'www.youtube.com', 'storybook.georgegillams.co.uk'],
     baseUri: ["'self'"],
     fontSrc: ["'self'", 'https:', 'data:'],
     frameAncestors: ["'self'"],

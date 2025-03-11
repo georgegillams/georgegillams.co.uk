@@ -255,6 +255,7 @@ exports[`<AdminNotifications /> should render correctly with admin user 1`] = `
 .c14:hover {
   background-color: #004F8C;
   color: white;
+  box-shadow: none;
 }
 
 .c14:active {
@@ -425,6 +426,7 @@ exports[`<AdminNotifications /> should render correctly with admin user 1`] = `
   .c14:hover {
     background-color: #004479;
     color: white;
+    box-shadow: none;
   }
 }
 
@@ -891,6 +893,7 @@ exports[`<AdminNotifications /> should render correctly with loadError 1`] = `
 .c14:hover {
   background-color: #004F8C;
   color: white;
+  box-shadow: none;
 }
 
 .c14:active {
@@ -1078,6 +1081,7 @@ exports[`<AdminNotifications /> should render correctly with loadError 1`] = `
   .c14:hover {
     background-color: #004479;
     color: white;
+    box-shadow: none;
   }
 }
 
@@ -1593,6 +1597,7 @@ exports[`<AdminNotifications /> should render correctly with loading=true 1`] = 
 .c14:hover {
   background-color: #004F8C;
   color: white;
+  box-shadow: none;
 }
 
 .c14:active {
@@ -1649,6 +1654,7 @@ exports[`<AdminNotifications /> should render correctly with loading=true 1`] = 
 .c17:hover {
   background-color: #004F8C;
   color: white;
+  box-shadow: none;
 }
 
 .c17:active {
@@ -1857,6 +1863,7 @@ exports[`<AdminNotifications /> should render correctly with loading=true 1`] = 
   .c14:hover {
     background-color: #004479;
     color: white;
+    box-shadow: none;
   }
 }
 
@@ -1894,6 +1901,7 @@ exports[`<AdminNotifications /> should render correctly with loading=true 1`] = 
   .c17:hover {
     background-color: #004479;
     color: white;
+    box-shadow: none;
   }
 }
 
@@ -2248,6 +2256,7 @@ exports[`<AdminNotifications /> should render correctly with notifications 1`] =
 .c14:hover {
   background-color: #004F8C;
   color: white;
+  box-shadow: none;
 }
 
 .c14:active {
@@ -2303,6 +2312,7 @@ exports[`<AdminNotifications /> should render correctly with notifications 1`] =
 .c19:hover {
   background-color: #BA2020;
   color: white;
+  box-shadow: none;
 }
 
 .c19:active {
@@ -2551,6 +2561,7 @@ exports[`<AdminNotifications /> should render correctly with notifications 1`] =
   .c14:hover {
     background-color: #004479;
     color: white;
+    box-shadow: none;
   }
 }
 
@@ -2588,6 +2599,7 @@ exports[`<AdminNotifications /> should render correctly with notifications 1`] =
   .c19:hover {
     background-color: #891111;
     color: white;
+    box-shadow: none;
   }
 }
 

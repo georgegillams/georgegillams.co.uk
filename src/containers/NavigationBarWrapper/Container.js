@@ -1,23 +1,36 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import NavigationBar from '@george-gillams/components/navigation-bar';
-import NavigationItem from 'components/common/NavigationItem';
+import NavigationBar, { NavigationItem } from '@george-gillams/components/navigation-bar';
 
 import Logo from 'components/Logo';
 import BurgerButtonLink from './BurgerButtonLink';
+import { withRouter } from 'next/router';
 
 const NavigationBarWrapper = props => {
-  const { authenticatorState } = props;
+  const { authenticatorState, router } = props;
   const { user } = authenticatorState;
 
-  const adminItem = user && user.admin ? <NavigationItem name="Admin" href="/admin" /> : null;
+  const pathname = router?.pathname ?? '';
+
+  const adminItem =
+    user && user.admin ? <NavigationItem name="Admin" href="/admin" selected={pathname.startsWith('/admin')} /> : null;
 
   const menuItems = [
-    <NavigationItem key="blog" name="Blog" href="/blog" />,
-    <NavigationItem key="photography" name="Photography" href="/photography" />,
-    <NavigationItem key="reading-list" name="Reading" href="/reading-list" />,
-    <NavigationItem key="work" name="Work" href="/work" />,
-    <NavigationItem key="contact" name="Contact" href="/contact" />,
+    <NavigationItem key="blog" name="Blog" href="/blog" selected={pathname.startsWith('/blog')} />,
+    <NavigationItem
+      key="photography"
+      name="Photography"
+      href="/photography"
+      selected={pathname.startsWith('/photography')}
+    />,
+    <NavigationItem
+      key="reading-list"
+      name="Reading"
+      href="/reading-list"
+      selected={pathname.startsWith('/reading-list')}
+    />,
+    <NavigationItem key="work" name="Work" href="/work" selected={pathname.startsWith('/work')} />,
+    <NavigationItem key="contact" name="Contact" href="/contact" selected={pathname.startsWith('/contact')} />,
     adminItem,
   ];
 
@@ -33,9 +46,8 @@ const NavigationBarWrapper = props => {
 };
 
 NavigationBarWrapper.propTypes = {
-  authenticatorState: PropTypes.shape({
-    user: PropTypes.object,
-  }).isRequired,
+  authenticatorState: PropTypes.object.isRequired,
+  router: PropTypes.object.isRequired,
 };
 
-export default NavigationBarWrapper;
+export default withRouter(NavigationBarWrapper);

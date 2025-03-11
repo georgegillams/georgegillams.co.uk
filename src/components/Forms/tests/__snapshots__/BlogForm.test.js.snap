@@ -44,6 +44,7 @@ exports[`<BlogForm /> Should render correctly 1`] = `
 .c13:hover {
   background-color: #004F8C;
   color: white;
+  box-shadow: none;
 }
 
 .c13:active {
@@ -247,6 +248,7 @@ exports[`<BlogForm /> Should render correctly 1`] = `
   .c13:hover {
     background-color: #004479;
     color: white;
+    box-shadow: none;
   }
 }
 
@@ -751,6 +753,7 @@ exports[`<BlogForm /> Should render correctly with no blog id 1`] = `
 .c13:hover {
   background-color: #004F8C;
   color: white;
+  box-shadow: none;
 }
 
 .c13:active {
@@ -954,6 +957,7 @@ exports[`<BlogForm /> Should render correctly with no blog id 1`] = `
   .c13:hover {
     background-color: #004479;
     color: white;
+    box-shadow: none;
   }
 }
 

@@ -44,6 +44,7 @@ exports[`<UserEditForm /> Should render correctly 1`] = `
 .c6:hover {
   background-color: #004F8C;
   color: white;
+  box-shadow: none;
 }
 
 .c6:active {
@@ -169,6 +170,7 @@ exports[`<UserEditForm /> Should render correctly 1`] = `
   .c6:hover {
     background-color: #004479;
     color: white;
+    box-shadow: none;
   }
 }
 
@@ -393,6 +395,7 @@ exports[`<UserEditForm /> Should render correctly with admin controls shown 1`] 
 .c12:hover {
   background-color: #004F8C;
   color: white;
+  box-shadow: none;
 }
 
 .c12:active {
@@ -592,6 +595,7 @@ exports[`<UserEditForm /> Should render correctly with admin controls shown 1`] 
   .c12:hover {
     background-color: #004479;
     color: white;
+    box-shadow: none;
   }
 }
 

@@ -84,6 +84,7 @@ exports[`<Support /> should render correctly - index 1`] = `
 .c5:hover {
   background-color: #004F8C;
   color: white;
+  box-shadow: none;
 }
 
 .c5:active {
@@ -177,6 +178,7 @@ exports[`<Support /> should render correctly - index 1`] = `
   .c5:hover {
     background-color: #004479;
     color: white;
+    box-shadow: none;
   }
 }
 
@@ -326,6 +328,7 @@ exports[`<Support /> should render correctly when loading 1`] = `
 .c5:hover {
   background-color: #004F8C;
   color: white;
+  box-shadow: none;
 }
 
 .c5:active {
@@ -399,6 +402,7 @@ exports[`<Support /> should render correctly when loading 1`] = `
   .c5:hover {
     background-color: #004479;
     color: white;
+    box-shadow: none;
   }
 }
 
@@ -564,6 +568,7 @@ exports[`<Support /> should render correctly with admin 1`] = `
 .c5:hover {
   background-color: #004F8C;
   color: white;
+  box-shadow: none;
 }
 
 .c5:active {
@@ -643,6 +648,7 @@ exports[`<Support /> should render correctly with admin 1`] = `
   .c5:hover {
     background-color: #004479;
     color: white;
+    box-shadow: none;
   }
 }
 
@@ -820,6 +826,7 @@ exports[`<Support /> should render correctly with admin and createLinkError 1`] 
 .c5:hover {
   background-color: #004F8C;
   color: white;
+  box-shadow: none;
 }
 
 .c5:active {
@@ -916,6 +923,7 @@ exports[`<Support /> should render correctly with admin and createLinkError 1`] 
   .c5:hover {
     background-color: #004479;
     color: white;
+    box-shadow: none;
   }
 }
 
@@ -1111,6 +1119,7 @@ exports[`<Support /> should render correctly with admin and deleteLinkError 1`] 
 .c5:hover {
   background-color: #004F8C;
   color: white;
+  box-shadow: none;
 }
 
 .c5:active {
@@ -1207,6 +1216,7 @@ exports[`<Support /> should render correctly with admin and deleteLinkError 1`] 
   .c5:hover {
     background-color: #004479;
     color: white;
+    box-shadow: none;
   }
 }
 
@@ -1385,6 +1395,7 @@ exports[`<Support /> should render correctly with initial state 1`] = `
 .c5:hover {
   background-color: #004F8C;
   color: white;
+  box-shadow: none;
 }
 
 .c5:active {
@@ -1458,6 +1469,7 @@ exports[`<Support /> should render correctly with initial state 1`] = `
   .c5:hover {
     background-color: #004479;
     color: white;
+    box-shadow: none;
   }
 }
 
@@ -1661,6 +1673,7 @@ exports[`<Support /> should render correctly with links 1`] = `
 .c5:hover {
   background-color: #004F8C;
   color: white;
+  box-shadow: none;
 }
 
 .c5:active {
@@ -1765,6 +1778,7 @@ exports[`<Support /> should render correctly with links 1`] = `
   .c5:hover {
     background-color: #004479;
     color: white;
+    box-shadow: none;
   }
 }
 
@@ -1992,6 +2006,7 @@ exports[`<Support /> should render correctly with loadError 1`] = `
 .c5:hover {
   background-color: #004F8C;
   color: white;
+  box-shadow: none;
 }
 
 .c5:active {
@@ -2082,6 +2097,7 @@ exports[`<Support /> should render correctly with loadError 1`] = `
   .c5:hover {
     background-color: #004479;
     color: white;
+    box-shadow: none;
   }
 }
 
