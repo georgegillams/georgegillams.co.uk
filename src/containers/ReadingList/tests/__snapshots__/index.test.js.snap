@@ -219,6 +219,7 @@ exports[`<BookList /> should render correctly authenticated with books 1`] = `
 .c20:hover {
   background-color: #004F8C;
   color: white;
+  box-shadow: none;
 }
 
 .c20:active {
@@ -274,6 +275,7 @@ exports[`<BookList /> should render correctly authenticated with books 1`] = `
 .c23:hover {
   background-color: #BA2020;
   color: white;
+  box-shadow: none;
 }
 
 .c23:active {
@@ -330,6 +332,7 @@ exports[`<BookList /> should render correctly authenticated with books 1`] = `
 .c27:hover {
   background-color: #BA2020;
   color: white;
+  box-shadow: none;
 }
 
 .c27:active {
@@ -531,6 +534,7 @@ exports[`<BookList /> should render correctly authenticated with books 1`] = `
   .c20:hover {
     background-color: #004479;
     color: white;
+    box-shadow: none;
   }
 }
 
@@ -568,6 +572,7 @@ exports[`<BookList /> should render correctly authenticated with books 1`] = `
   .c23:hover {
     background-color: #891111;
     color: white;
+    box-shadow: none;
   }
 }
 
@@ -605,6 +610,7 @@ exports[`<BookList /> should render correctly authenticated with books 1`] = `
   .c27:hover {
     background-color: #891111;
     color: white;
+    box-shadow: none;
   }
 }
 

@@ -3252,6 +3252,7 @@ exports[`<BlogsList /> Should render correctly with deleteBlog function 1`] = `
 .c13:hover {
   background-color: #BA2020;
   color: white;
+  box-shadow: none;
 }
 
 .c13:active {
@@ -3308,6 +3309,7 @@ exports[`<BlogsList /> Should render correctly with deleteBlog function 1`] = `
 .c30:hover {
   background-color: #BA2020;
   color: white;
+  box-shadow: none;
 }
 
 .c30:active {
@@ -3668,6 +3670,7 @@ exports[`<BlogsList /> Should render correctly with deleteBlog function 1`] = `
   .c13:hover {
     background-color: #891111;
     color: white;
+    box-shadow: none;
   }
 }
 
@@ -3705,6 +3708,7 @@ exports[`<BlogsList /> Should render correctly with deleteBlog function 1`] = `
   .c30:hover {
     background-color: #891111;
     color: white;
+    box-shadow: none;
   }
 }
 

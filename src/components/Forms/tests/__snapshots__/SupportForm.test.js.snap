@@ -44,6 +44,7 @@ exports[`<SupportForm /> Should render correctly 1`] = `
 .c6:hover {
   background-color: #004F8C;
   color: white;
+  box-shadow: none;
 }
 
 .c6:active {
@@ -169,6 +170,7 @@ exports[`<SupportForm /> Should render correctly 1`] = `
   .c6:hover {
     background-color: #004479;
     color: white;
+    box-shadow: none;
   }
 }
 
@@ -352,6 +354,7 @@ exports[`<SupportForm /> Should render correctly with no link id 1`] = `
 .c6:hover {
   background-color: #004F8C;
   color: white;
+  box-shadow: none;
 }
 
 .c6:active {
@@ -477,6 +480,7 @@ exports[`<SupportForm /> Should render correctly with no link id 1`] = `
   .c6:hover {
     background-color: #004479;
     color: white;
+    box-shadow: none;
   }
 }
 

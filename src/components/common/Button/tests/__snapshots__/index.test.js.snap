@@ -45,6 +45,7 @@ exports[`<Button /> Should render correctly 1`] = `
 .c0:hover {
   background-color: #004F8C;
   color: white;
+  box-shadow: none;
 }
 
 .c0:active {
@@ -88,6 +89,7 @@ exports[`<Button /> Should render correctly 1`] = `
   .c0:hover {
     background-color: #004479;
     color: white;
+    box-shadow: none;
   }
 }
 
@@ -162,6 +164,7 @@ exports[`<Button /> Should render correctly hrefExternal 1`] = `
 .c0:hover {
   background-color: #004F8C;
   color: white;
+  box-shadow: none;
 }
 
 .c0:active {
@@ -205,6 +208,7 @@ exports[`<Button /> Should render correctly hrefExternal 1`] = `
   .c0:hover {
     background-color: #004479;
     color: white;
+    box-shadow: none;
   }
 }
 
@@ -281,6 +285,7 @@ exports[`<Button /> Should render with nextified href 1`] = `
 .c0:hover {
   background-color: #004F8C;
   color: white;
+  box-shadow: none;
 }
 
 .c0:active {
@@ -324,6 +329,7 @@ exports[`<Button /> Should render with nextified href 1`] = `
   .c0:hover {
     background-color: #004479;
     color: white;
+    box-shadow: none;
   }
 }
 

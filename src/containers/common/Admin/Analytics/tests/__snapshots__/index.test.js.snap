@@ -229,6 +229,7 @@ exports[`<AdminAnalytics /> should render correctly with admin user 1`] = `
 .c6:hover {
   background-color: #004F8C;
   color: white;
+  box-shadow: none;
 }
 
 .c6:active {
@@ -313,6 +314,7 @@ exports[`<AdminAnalytics /> should render correctly with admin user 1`] = `
   .c6:hover {
     background-color: #004479;
     color: white;
+    box-shadow: none;
   }
 }
 
@@ -492,6 +494,7 @@ exports[`<AdminAnalytics /> should render correctly with analytics 1`] = `
 .c6:hover {
   background-color: #004F8C;
   color: white;
+  box-shadow: none;
 }
 
 .c6:active {
@@ -576,6 +579,7 @@ exports[`<AdminAnalytics /> should render correctly with analytics 1`] = `
   .c6:hover {
     background-color: #004479;
     color: white;
+    box-shadow: none;
   }
 }
 
@@ -1217,6 +1221,7 @@ exports[`<AdminAnalytics /> should render correctly with loading=true 1`] = `
 .c6:hover {
   background-color: #004F8C;
   color: white;
+  box-shadow: none;
 }
 
 .c6:active {
@@ -1272,6 +1277,7 @@ exports[`<AdminAnalytics /> should render correctly with loading=true 1`] = `
 .c19:hover {
   background-color: #004F8C;
   color: white;
+  box-shadow: none;
 }
 
 .c19:active {
@@ -1394,6 +1400,7 @@ exports[`<AdminAnalytics /> should render correctly with loading=true 1`] = `
   .c6:hover {
     background-color: #004479;
     color: white;
+    box-shadow: none;
   }
 }
 
@@ -1431,6 +1438,7 @@ exports[`<AdminAnalytics /> should render correctly with loading=true 1`] = `
   .c19:hover {
     background-color: #004479;
     color: white;
+    box-shadow: none;
   }
 }
 

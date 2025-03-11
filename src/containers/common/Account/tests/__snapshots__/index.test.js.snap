@@ -179,6 +179,7 @@ exports[`<Account /> should render correctly with initial state 1`] = `
 .c5:hover {
   background-color: #004F8C;
   color: white;
+  box-shadow: none;
 }
 
 .c5:active {
@@ -234,6 +235,7 @@ exports[`<Account /> should render correctly with initial state 1`] = `
 .c8:hover {
   background-color: #BA2020;
   color: white;
+  box-shadow: none;
 }
 
 .c8:active {
@@ -302,6 +304,7 @@ exports[`<Account /> should render correctly with initial state 1`] = `
   .c5:hover {
     background-color: #004479;
     color: white;
+    box-shadow: none;
   }
 }
 
@@ -339,6 +342,7 @@ exports[`<Account /> should render correctly with initial state 1`] = `
   .c8:hover {
     background-color: #891111;
     color: white;
+    box-shadow: none;
   }
 }
 
@@ -469,6 +473,7 @@ exports[`<Account /> should render correctly with initial state 2`] = `
 .c5:hover {
   background-color: #004F8C;
   color: white;
+  box-shadow: none;
 }
 
 .c5:active {
@@ -524,6 +529,7 @@ exports[`<Account /> should render correctly with initial state 2`] = `
 .c8:hover {
   background-color: #BA2020;
   color: white;
+  box-shadow: none;
 }
 
 .c8:active {
@@ -592,6 +598,7 @@ exports[`<Account /> should render correctly with initial state 2`] = `
   .c5:hover {
     background-color: #004479;
     color: white;
+    box-shadow: none;
   }
 }
 
@@ -629,6 +636,7 @@ exports[`<Account /> should render correctly with initial state 2`] = `
   .c8:hover {
     background-color: #891111;
     color: white;
+    box-shadow: none;
   }
 }
 
@@ -759,6 +767,7 @@ exports[`<Account /> should render correctly with logOutError 1`] = `
 .c5:hover {
   background-color: #004F8C;
   color: white;
+  box-shadow: none;
 }
 
 .c5:active {
@@ -814,6 +823,7 @@ exports[`<Account /> should render correctly with logOutError 1`] = `
 .c8:hover {
   background-color: #BA2020;
   color: white;
+  box-shadow: none;
 }
 
 .c8:active {
@@ -882,6 +892,7 @@ exports[`<Account /> should render correctly with logOutError 1`] = `
   .c5:hover {
     background-color: #004479;
     color: white;
+    box-shadow: none;
   }
 }
 
@@ -919,6 +930,7 @@ exports[`<Account /> should render correctly with logOutError 1`] = `
   .c8:hover {
     background-color: #891111;
     color: white;
+    box-shadow: none;
   }
 }
 
@@ -1049,6 +1061,7 @@ exports[`<Account /> should render correctly with logOutResult 1`] = `
 .c5:hover {
   background-color: #004F8C;
   color: white;
+  box-shadow: none;
 }
 
 .c5:active {
@@ -1104,6 +1117,7 @@ exports[`<Account /> should render correctly with logOutResult 1`] = `
 .c8:hover {
   background-color: #BA2020;
   color: white;
+  box-shadow: none;
 }
 
 .c8:active {
@@ -1172,6 +1186,7 @@ exports[`<Account /> should render correctly with logOutResult 1`] = `
   .c5:hover {
     background-color: #004479;
     color: white;
+    box-shadow: none;
   }
 }
 
@@ -1209,6 +1224,7 @@ exports[`<Account /> should render correctly with logOutResult 1`] = `
   .c8:hover {
     background-color: #891111;
     color: white;
+    box-shadow: none;
   }
 }
 
@@ -1515,6 +1531,7 @@ exports[`<Account /> should render correctly with loggingOut=true 1`] = `
 .c5:hover {
   background-color: #004F8C;
   color: white;
+  box-shadow: none;
 }
 
 .c5:active {
@@ -1571,6 +1588,7 @@ exports[`<Account /> should render correctly with loggingOut=true 1`] = `
 .c8:hover {
   background-color: #BA2020;
   color: white;
+  box-shadow: none;
 }
 
 .c8:active {
@@ -1677,6 +1695,7 @@ exports[`<Account /> should render correctly with loggingOut=true 1`] = `
   .c5:hover {
     background-color: #004479;
     color: white;
+    box-shadow: none;
   }
 }
 
@@ -1714,6 +1733,7 @@ exports[`<Account /> should render correctly with loggingOut=true 1`] = `
   .c8:hover {
     background-color: #891111;
     color: white;
+    box-shadow: none;
   }
 }
 
@@ -1986,6 +2006,7 @@ exports[`<Account /> should render correctly with requestVerificationEmailError 
 .c5:hover {
   background-color: #004F8C;
   color: white;
+  box-shadow: none;
 }
 
 .c5:active {
@@ -2041,6 +2062,7 @@ exports[`<Account /> should render correctly with requestVerificationEmailError 
 .c8:hover {
   background-color: #BA2020;
   color: white;
+  box-shadow: none;
 }
 
 .c8:active {
@@ -2109,6 +2131,7 @@ exports[`<Account /> should render correctly with requestVerificationEmailError 
   .c5:hover {
     background-color: #004479;
     color: white;
+    box-shadow: none;
   }
 }
 
@@ -2146,6 +2169,7 @@ exports[`<Account /> should render correctly with requestVerificationEmailError 
   .c8:hover {
     background-color: #891111;
     color: white;
+    box-shadow: none;
   }
 }
 
@@ -2276,6 +2300,7 @@ exports[`<Account /> should render correctly with requestVerificationEmailResult
 .c5:hover {
   background-color: #004F8C;
   color: white;
+  box-shadow: none;
 }
 
 .c5:active {
@@ -2331,6 +2356,7 @@ exports[`<Account /> should render correctly with requestVerificationEmailResult
 .c8:hover {
   background-color: #BA2020;
   color: white;
+  box-shadow: none;
 }
 
 .c8:active {
@@ -2399,6 +2425,7 @@ exports[`<Account /> should render correctly with requestVerificationEmailResult
   .c5:hover {
     background-color: #004479;
     color: white;
+    box-shadow: none;
   }
 }
 
@@ -2436,6 +2463,7 @@ exports[`<Account /> should render correctly with requestVerificationEmailResult
   .c8:hover {
     background-color: #891111;
     color: white;
+    box-shadow: none;
   }
 }
 
@@ -2743,6 +2771,7 @@ exports[`<Account /> should render correctly with requestingVerificationEmail=tr
 .c5:hover {
   background-color: #004F8C;
   color: white;
+  box-shadow: none;
 }
 
 .c5:active {
@@ -2798,6 +2827,7 @@ exports[`<Account /> should render correctly with requestingVerificationEmail=tr
 .c18:hover {
   background-color: #BA2020;
   color: white;
+  box-shadow: none;
 }
 
 .c18:active {
@@ -2904,6 +2934,7 @@ exports[`<Account /> should render correctly with requestingVerificationEmail=tr
   .c5:hover {
     background-color: #004479;
     color: white;
+    box-shadow: none;
   }
 }
 
@@ -2941,6 +2972,7 @@ exports[`<Account /> should render correctly with requestingVerificationEmail=tr
   .c18:hover {
     background-color: #891111;
     color: white;
+    box-shadow: none;
   }
 }
 
@@ -3105,6 +3137,7 @@ exports[`<Account /> should render correctly with user with emailVerified=true 1
 .c5:hover {
   background-color: #BA2020;
   color: white;
+  box-shadow: none;
 }
 
 .c5:active {
@@ -3169,6 +3202,7 @@ exports[`<Account /> should render correctly with user with emailVerified=true 1
   .c5:hover {
     background-color: #891111;
     color: white;
+    box-shadow: none;
   }
 }
 
