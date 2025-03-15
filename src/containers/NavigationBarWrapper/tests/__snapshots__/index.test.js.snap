@@ -10,14 +10,12 @@ exports[`<NavigationBarWrapper /> should render correctly - index 1`] = `
   background-color: transparent;
 }
 
-.c5:focus-within,
-.c5:focus {
+.c5:focus-visible {
   position: relative;
   outline: none !important;
 }
 
-.c5:focus-within::after,
-.c5:focus::after {
+.c5:focus-visible::after {
   position: absolute;
   top: -0.35rem;
   right: -0.35rem;
@@ -25,7 +23,7 @@ exports[`<NavigationBarWrapper /> should render correctly - index 1`] = `
   left: -0.35rem;
   content: '';
   display: block;
-  border: solid #007dfa3C 0.2rem;
+  border: solid #44aeff 0.2rem;
   border-radius: 0.5rem;
   pointer-events: none;
 }
@@ -144,13 +142,11 @@ exports[`<NavigationBarWrapper /> should render correctly - index 1`] = `
   display: inline-block;
 }
 
-.c14:focus-within,
-.c14:focus {
+.c14:focus-visible {
   outline: none !important;
 }
 
-.c14:focus-within::after,
-.c14:focus::after {
+.c14:focus-visible::after {
   position: absolute;
   top: -0.35rem;
   right: -0.35rem;
@@ -158,7 +154,7 @@ exports[`<NavigationBarWrapper /> should render correctly - index 1`] = `
   left: -0.35rem;
   content: '';
   display: block;
-  border: solid #007dfa3C 0.2rem;
+  border: solid #44aeff 0.2rem;
   border-radius: 0.5rem;
   pointer-events: none;
 }
@@ -244,14 +240,12 @@ exports[`<NavigationBarWrapper /> should render correctly - index 1`] = `
   border-radius: 0.25rem;
 }
 
-.c9:focus-within,
-.c9:focus {
+.c9:focus-visible {
   position: relative;
   outline: none !important;
 }
 
-.c9:focus-within::after,
-.c9:focus::after {
+.c9:focus-visible::after {
   position: absolute;
   top: -0.35rem;
   right: -0.35rem;
@@ -259,7 +253,7 @@ exports[`<NavigationBarWrapper /> should render correctly - index 1`] = `
   left: -0.35rem;
   content: '';
   display: block;
-  border: solid #007dfa3C 0.2rem;
+  border: solid #44aeff 0.2rem;
   border-radius: 0.5rem;
   pointer-events: none;
 }
@@ -284,9 +278,8 @@ exports[`<NavigationBarWrapper /> should render correctly - index 1`] = `
 }
 
 @media (prefers-color-scheme:dark) {
-  .c5:focus-within::after,
-  .c5:focus::after {
-    border-color: #007dfa3C;
+  .c5:focus-visible::after {
+    border-color: #ffffff;
   }
 }
 
@@ -352,9 +345,8 @@ exports[`<NavigationBarWrapper /> should render correctly - index 1`] = `
 }
 
 @media (prefers-color-scheme:dark) {
-  .c14:focus-within::after,
-  .c14:focus::after {
-    border-color: #007dfa3C;
+  .c14:focus-visible::after {
+    border-color: #ffffff;
   }
 }
 
@@ -407,9 +399,8 @@ exports[`<NavigationBarWrapper /> should render correctly - index 1`] = `
 }
 
 @media (prefers-color-scheme:dark) {
-  .c9:focus-within::after,
-  .c9:focus::after {
-    border-color: #007dfa3C;
+  .c9:focus-visible::after {
+    border-color: #ffffff;
   }
 }
 
@@ -647,14 +638,12 @@ exports[`<NavigationBarWrapper /> should render correctly with default state 1`]
   background-color: transparent;
 }
 
-.c5:focus-within,
-.c5:focus {
+.c5:focus-visible {
   position: relative;
   outline: none !important;
 }
 
-.c5:focus-within::after,
-.c5:focus::after {
+.c5:focus-visible::after {
   position: absolute;
   top: -0.35rem;
   right: -0.35rem;
@@ -662,7 +651,7 @@ exports[`<NavigationBarWrapper /> should render correctly with default state 1`]
   left: -0.35rem;
   content: '';
   display: block;
-  border: solid #007dfa3C 0.2rem;
+  border: solid #44aeff 0.2rem;
   border-radius: 0.5rem;
   pointer-events: none;
 }
@@ -781,13 +770,11 @@ exports[`<NavigationBarWrapper /> should render correctly with default state 1`]
   display: inline-block;
 }
 
-.c14:focus-within,
-.c14:focus {
+.c14:focus-visible {
   outline: none !important;
 }
 
-.c14:focus-within::after,
-.c14:focus::after {
+.c14:focus-visible::after {
   position: absolute;
   top: -0.35rem;
   right: -0.35rem;
@@ -795,7 +782,7 @@ exports[`<NavigationBarWrapper /> should render correctly with default state 1`]
   left: -0.35rem;
   content: '';
   display: block;
-  border: solid #007dfa3C 0.2rem;
+  border: solid #44aeff 0.2rem;
   border-radius: 0.5rem;
   pointer-events: none;
 }
@@ -881,14 +868,12 @@ exports[`<NavigationBarWrapper /> should render correctly with default state 1`]
   border-radius: 0.25rem;
 }
 
-.c9:focus-within,
-.c9:focus {
+.c9:focus-visible {
   position: relative;
   outline: none !important;
 }
 
-.c9:focus-within::after,
-.c9:focus::after {
+.c9:focus-visible::after {
   position: absolute;
   top: -0.35rem;
   right: -0.35rem;
@@ -896,7 +881,7 @@ exports[`<NavigationBarWrapper /> should render correctly with default state 1`]
   left: -0.35rem;
   content: '';
   display: block;
-  border: solid #007dfa3C 0.2rem;
+  border: solid #44aeff 0.2rem;
   border-radius: 0.5rem;
   pointer-events: none;
 }
@@ -921,9 +906,8 @@ exports[`<NavigationBarWrapper /> should render correctly with default state 1`]
 }
 
 @media (prefers-color-scheme:dark) {
-  .c5:focus-within::after,
-  .c5:focus::after {
-    border-color: #007dfa3C;
+  .c5:focus-visible::after {
+    border-color: #ffffff;
   }
 }
 
@@ -989,9 +973,8 @@ exports[`<NavigationBarWrapper /> should render correctly with default state 1`]
 }
 
 @media (prefers-color-scheme:dark) {
-  .c14:focus-within::after,
-  .c14:focus::after {
-    border-color: #007dfa3C;
+  .c14:focus-visible::after {
+    border-color: #ffffff;
   }
 }
 
@@ -1044,9 +1027,8 @@ exports[`<NavigationBarWrapper /> should render correctly with default state 1`]
 }
 
 @media (prefers-color-scheme:dark) {
-  .c9:focus-within::after,
-  .c9:focus::after {
-    border-color: #007dfa3C;
+  .c9:focus-visible::after {
+    border-color: #ffffff;
   }
 }
 
@@ -1284,14 +1266,12 @@ exports[`<NavigationBarWrapper /> should render correctly with null user 1`] = `
   background-color: transparent;
 }
 
-.c5:focus-within,
-.c5:focus {
+.c5:focus-visible {
   position: relative;
   outline: none !important;
 }
 
-.c5:focus-within::after,
-.c5:focus::after {
+.c5:focus-visible::after {
   position: absolute;
   top: -0.35rem;
   right: -0.35rem;
@@ -1299,7 +1279,7 @@ exports[`<NavigationBarWrapper /> should render correctly with null user 1`] = `
   left: -0.35rem;
   content: '';
   display: block;
-  border: solid #007dfa3C 0.2rem;
+  border: solid #44aeff 0.2rem;
   border-radius: 0.5rem;
   pointer-events: none;
 }
@@ -1418,13 +1398,11 @@ exports[`<NavigationBarWrapper /> should render correctly with null user 1`] = `
   display: inline-block;
 }
 
-.c14:focus-within,
-.c14:focus {
+.c14:focus-visible {
   outline: none !important;
 }
 
-.c14:focus-within::after,
-.c14:focus::after {
+.c14:focus-visible::after {
   position: absolute;
   top: -0.35rem;
   right: -0.35rem;
@@ -1432,7 +1410,7 @@ exports[`<NavigationBarWrapper /> should render correctly with null user 1`] = `
   left: -0.35rem;
   content: '';
   display: block;
-  border: solid #007dfa3C 0.2rem;
+  border: solid #44aeff 0.2rem;
   border-radius: 0.5rem;
   pointer-events: none;
 }
@@ -1518,14 +1496,12 @@ exports[`<NavigationBarWrapper /> should render correctly with null user 1`] = `
   border-radius: 0.25rem;
 }
 
-.c9:focus-within,
-.c9:focus {
+.c9:focus-visible {
   position: relative;
   outline: none !important;
 }
 
-.c9:focus-within::after,
-.c9:focus::after {
+.c9:focus-visible::after {
   position: absolute;
   top: -0.35rem;
   right: -0.35rem;
@@ -1533,7 +1509,7 @@ exports[`<NavigationBarWrapper /> should render correctly with null user 1`] = `
   left: -0.35rem;
   content: '';
   display: block;
-  border: solid #007dfa3C 0.2rem;
+  border: solid #44aeff 0.2rem;
   border-radius: 0.5rem;
   pointer-events: none;
 }
@@ -1558,9 +1534,8 @@ exports[`<NavigationBarWrapper /> should render correctly with null user 1`] = `
 }
 
 @media (prefers-color-scheme:dark) {
-  .c5:focus-within::after,
-  .c5:focus::after {
-    border-color: #007dfa3C;
+  .c5:focus-visible::after {
+    border-color: #ffffff;
   }
 }
 
@@ -1626,9 +1601,8 @@ exports[`<NavigationBarWrapper /> should render correctly with null user 1`] = `
 }
 
 @media (prefers-color-scheme:dark) {
-  .c14:focus-within::after,
-  .c14:focus::after {
-    border-color: #007dfa3C;
+  .c14:focus-visible::after {
+    border-color: #ffffff;
   }
 }
 
@@ -1681,9 +1655,8 @@ exports[`<NavigationBarWrapper /> should render correctly with null user 1`] = `
 }
 
 @media (prefers-color-scheme:dark) {
-  .c9:focus-within::after,
-  .c9:focus::after {
-    border-color: #007dfa3C;
+  .c9:focus-visible::after {
+    border-color: #ffffff;
   }
 }
 
@@ -1921,14 +1894,12 @@ exports[`<NavigationBarWrapper /> should render correctly with user 1`] = `
   background-color: transparent;
 }
 
-.c5:focus-within,
-.c5:focus {
+.c5:focus-visible {
   position: relative;
   outline: none !important;
 }
 
-.c5:focus-within::after,
-.c5:focus::after {
+.c5:focus-visible::after {
   position: absolute;
   top: -0.35rem;
   right: -0.35rem;
@@ -1936,7 +1907,7 @@ exports[`<NavigationBarWrapper /> should render correctly with user 1`] = `
   left: -0.35rem;
   content: '';
   display: block;
-  border: solid #007dfa3C 0.2rem;
+  border: solid #44aeff 0.2rem;
   border-radius: 0.5rem;
   pointer-events: none;
 }
@@ -2055,13 +2026,11 @@ exports[`<NavigationBarWrapper /> should render correctly with user 1`] = `
   display: inline-block;
 }
 
-.c14:focus-within,
-.c14:focus {
+.c14:focus-visible {
   outline: none !important;
 }
 
-.c14:focus-within::after,
-.c14:focus::after {
+.c14:focus-visible::after {
   position: absolute;
   top: -0.35rem;
   right: -0.35rem;
@@ -2069,7 +2038,7 @@ exports[`<NavigationBarWrapper /> should render correctly with user 1`] = `
   left: -0.35rem;
   content: '';
   display: block;
-  border: solid #007dfa3C 0.2rem;
+  border: solid #44aeff 0.2rem;
   border-radius: 0.5rem;
   pointer-events: none;
 }
@@ -2155,14 +2124,12 @@ exports[`<NavigationBarWrapper /> should render correctly with user 1`] = `
   border-radius: 0.25rem;
 }
 
-.c9:focus-within,
-.c9:focus {
+.c9:focus-visible {
   position: relative;
   outline: none !important;
 }
 
-.c9:focus-within::after,
-.c9:focus::after {
+.c9:focus-visible::after {
   position: absolute;
   top: -0.35rem;
   right: -0.35rem;
@@ -2170,7 +2137,7 @@ exports[`<NavigationBarWrapper /> should render correctly with user 1`] = `
   left: -0.35rem;
   content: '';
   display: block;
-  border: solid #007dfa3C 0.2rem;
+  border: solid #44aeff 0.2rem;
   border-radius: 0.5rem;
   pointer-events: none;
 }
@@ -2195,9 +2162,8 @@ exports[`<NavigationBarWrapper /> should render correctly with user 1`] = `
 }
 
 @media (prefers-color-scheme:dark) {
-  .c5:focus-within::after,
-  .c5:focus::after {
-    border-color: #007dfa3C;
+  .c5:focus-visible::after {
+    border-color: #ffffff;
   }
 }
 
@@ -2263,9 +2229,8 @@ exports[`<NavigationBarWrapper /> should render correctly with user 1`] = `
 }
 
 @media (prefers-color-scheme:dark) {
-  .c14:focus-within::after,
-  .c14:focus::after {
-    border-color: #007dfa3C;
+  .c14:focus-visible::after {
+    border-color: #ffffff;
   }
 }
 
@@ -2318,9 +2283,8 @@ exports[`<NavigationBarWrapper /> should render correctly with user 1`] = `
 }
 
 @media (prefers-color-scheme:dark) {
-  .c9:focus-within::after,
-  .c9:focus::after {
-    border-color: #007dfa3C;
+  .c9:focus-visible::after {
+    border-color: #ffffff;
   }
 }
 

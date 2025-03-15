@@ -47,6 +47,24 @@ exports[`<Card /> Should render correctly 1`] = `
   text-align: left;
 }
 
+.c0:focus-visible {
+  position: relative;
+  outline: none !important;
+}
+
+.c0:focus-visible::after {
+  position: absolute;
+  top: -0.35rem;
+  right: -0.35rem;
+  bottom: -0.35rem;
+  left: -0.35rem;
+  content: '';
+  display: block;
+  border: solid #44aeff 0.2rem;
+  border-radius: 0.5rem;
+  pointer-events: none;
+}
+
 .c0:disabled {
   cursor: not-allowed;
 }
@@ -65,6 +83,12 @@ exports[`<Card /> Should render correctly 1`] = `
 @media (prefers-color-scheme:dark) {
   .c0 {
     box-shadow: 0.44rem 0.44rem 1rem 0 #00000000;
+  }
+}
+
+@media (prefers-color-scheme:dark) {
+  .c0:focus-visible::after {
+    border-color: #ffffff;
   }
 }
 
@@ -141,6 +165,24 @@ exports[`<Card /> Should render correctly hrefExternal 1`] = `
   text-align: left;
 }
 
+.c0:focus-visible {
+  position: relative;
+  outline: none !important;
+}
+
+.c0:focus-visible::after {
+  position: absolute;
+  top: -0.35rem;
+  right: -0.35rem;
+  bottom: -0.35rem;
+  left: -0.35rem;
+  content: '';
+  display: block;
+  border: solid #44aeff 0.2rem;
+  border-radius: 0.5rem;
+  pointer-events: none;
+}
+
 .c0:disabled {
   cursor: not-allowed;
 }
@@ -159,6 +201,12 @@ exports[`<Card /> Should render correctly hrefExternal 1`] = `
 @media (prefers-color-scheme:dark) {
   .c0 {
     box-shadow: 0.44rem 0.44rem 1rem 0 #00000000;
+  }
+}
+
+@media (prefers-color-scheme:dark) {
+  .c0:focus-visible::after {
+    border-color: #ffffff;
   }
 }
 
@@ -235,6 +283,24 @@ exports[`<Card /> Should render correctly with custom className 1`] = `
   text-align: left;
 }
 
+.c0:focus-visible {
+  position: relative;
+  outline: none !important;
+}
+
+.c0:focus-visible::after {
+  position: absolute;
+  top: -0.35rem;
+  right: -0.35rem;
+  bottom: -0.35rem;
+  left: -0.35rem;
+  content: '';
+  display: block;
+  border: solid #44aeff 0.2rem;
+  border-radius: 0.5rem;
+  pointer-events: none;
+}
+
 .c0:disabled {
   cursor: not-allowed;
 }
@@ -253,6 +319,12 @@ exports[`<Card /> Should render correctly with custom className 1`] = `
 @media (prefers-color-scheme:dark) {
   .c0 {
     box-shadow: 0.44rem 0.44rem 1rem 0 #00000000;
+  }
+}
+
+@media (prefers-color-scheme:dark) {
+  .c0:focus-visible::after {
+    border-color: #ffffff;
   }
 }
 
@@ -329,6 +401,24 @@ exports[`<Card /> Should render with nextified href 1`] = `
   text-align: left;
 }
 
+.c0:focus-visible {
+  position: relative;
+  outline: none !important;
+}
+
+.c0:focus-visible::after {
+  position: absolute;
+  top: -0.35rem;
+  right: -0.35rem;
+  bottom: -0.35rem;
+  left: -0.35rem;
+  content: '';
+  display: block;
+  border: solid #44aeff 0.2rem;
+  border-radius: 0.5rem;
+  pointer-events: none;
+}
+
 .c0:disabled {
   cursor: not-allowed;
 }
@@ -347,6 +437,12 @@ exports[`<Card /> Should render with nextified href 1`] = `
 @media (prefers-color-scheme:dark) {
   .c0 {
     box-shadow: 0.44rem 0.44rem 1rem 0 #00000000;
+  }
+}
+
+@media (prefers-color-scheme:dark) {
+  .c0:focus-visible::after {
+    border-color: #ffffff;
   }
 }
 

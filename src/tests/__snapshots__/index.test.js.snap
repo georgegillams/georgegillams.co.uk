@@ -40,14 +40,12 @@ exports[`<HomePage /> should render correctly 1`] = `
   fill: #9932cc;
 }
 
-.c11:focus-within,
-.c11:focus {
+.c11:focus-visible {
   position: relative;
   outline: none !important;
 }
 
-.c11:focus-within::after,
-.c11:focus::after {
+.c11:focus-visible::after {
   position: absolute;
   top: -0.35rem;
   right: -0.35rem;
@@ -55,7 +53,7 @@ exports[`<HomePage /> should render correctly 1`] = `
   left: -0.35rem;
   content: '';
   display: block;
-  border: solid #007dfa3C 0.2rem;
+  border: solid #44aeff 0.2rem;
   border-radius: 0.5rem;
   pointer-events: none;
 }
@@ -65,7 +63,7 @@ exports[`<HomePage /> should render correctly 1`] = `
   fill: #44aeff;
 }
 
-.c93 {
+.c90 {
   display: inline-block;
   border-radius: 0.25rem;
   font-weight: bold;
@@ -76,14 +74,12 @@ exports[`<HomePage /> should render correctly 1`] = `
   fill: white;
 }
 
-.c93:focus-within,
-.c93:focus {
+.c90:focus-visible {
   position: relative;
   outline: none !important;
 }
 
-.c93:focus-within::after,
-.c93:focus::after {
+.c90:focus-visible::after {
   position: absolute;
   top: -0.35rem;
   right: -0.35rem;
@@ -91,12 +87,12 @@ exports[`<HomePage /> should render correctly 1`] = `
   left: -0.35rem;
   content: '';
   display: block;
-  border: solid #007dfa3C 0.2rem;
+  border: solid #44aeff 0.2rem;
   border-radius: 0.5rem;
   pointer-events: none;
 }
 
-.c93:hover {
+.c90:hover {
   color: white;
   fill: white;
 }
@@ -404,13 +400,11 @@ exports[`<HomePage /> should render correctly 1`] = `
   display: inline-block;
 }
 
-.c44:focus-within,
-.c44:focus {
+.c44:focus-visible {
   outline: none !important;
 }
 
-.c44:focus-within::after,
-.c44:focus::after {
+.c44:focus-visible::after {
   position: absolute;
   top: -0.35rem;
   right: -0.35rem;
@@ -418,7 +412,7 @@ exports[`<HomePage /> should render correctly 1`] = `
   left: -0.35rem;
   content: '';
   display: block;
-  border: solid #007dfa3C 0.2rem;
+  border: solid #44aeff 0.2rem;
   border-radius: 0.5rem;
   pointer-events: none;
 }
@@ -773,14 +767,12 @@ exports[`<HomePage /> should render correctly 1`] = `
   border-radius: 0.25rem;
 }
 
-.c86:focus-within,
-.c86:focus {
+.c86:focus-visible {
   position: relative;
   outline: none !important;
 }
 
-.c86:focus-within::after,
-.c86:focus::after {
+.c86:focus-visible::after {
   position: absolute;
   top: -0.35rem;
   right: -0.35rem;
@@ -788,7 +780,7 @@ exports[`<HomePage /> should render correctly 1`] = `
   left: -0.35rem;
   content: '';
   display: block;
-  border: solid #007dfa3C 0.2rem;
+  border: solid #44aeff 0.2rem;
   border-radius: 0.5rem;
   pointer-events: none;
 }
@@ -812,7 +804,7 @@ exports[`<HomePage /> should render correctly 1`] = `
   font-weight: bold;
 }
 
-.c91 {
+.c92 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -832,7 +824,7 @@ exports[`<HomePage /> should render correctly 1`] = `
   margin: auto;
 }
 
-.c92 > * {
+.c93 > * {
   margin: 0.5rem 0.5rem 0 0.5rem;
   display: -webkit-box;
   display: -webkit-flex;
@@ -867,7 +859,7 @@ exports[`<HomePage /> should render correctly 1`] = `
   align-items: center;
 }
 
-.c90 {
+.c91 {
   display: inline-block;
   width: 100%;
   max-width: 2.3rem;
@@ -878,7 +870,7 @@ exports[`<HomePage /> should render correctly 1`] = `
   filter: brightness(0) invert(1);
 }
 
-.c90:hover {
+.c91:hover {
   -webkit-filter: brightness(0) invert(1) opacity(70%);
   filter: brightness(0) invert(1) opacity(70%);
 }
@@ -957,9 +949,8 @@ exports[`<HomePage /> should render correctly 1`] = `
 }
 
 @media (prefers-color-scheme:dark) {
-  .c11:focus-within::after,
-  .c11:focus::after {
-    border-color: #007dfa3C;
+  .c11:focus-visible::after {
+    border-color: #ffffff;
   }
 }
 
@@ -976,19 +967,18 @@ exports[`<HomePage /> should render correctly 1`] = `
 }
 
 @media (prefers-color-scheme:dark) {
-  .c93:focus-within::after,
-  .c93:focus::after {
-    border-color: #007dfa3C;
+  .c90:focus-visible::after {
+    border-color: #ffffff;
   }
 }
 
 @media (prefers-color-scheme:dark) {
-  .c93 {
+  .c90 {
     color: white;
     fill: white;
   }
 
-  .c93:hover {
+  .c90:hover {
     color: white;
     fill: white;
   }
@@ -1098,9 +1088,8 @@ exports[`<HomePage /> should render correctly 1`] = `
 }
 
 @media (prefers-color-scheme:dark) {
-  .c44:focus-within::after,
-  .c44:focus::after {
-    border-color: #007dfa3C;
+  .c44:focus-visible::after {
+    border-color: #ffffff;
   }
 }
 
@@ -1232,9 +1221,8 @@ exports[`<HomePage /> should render correctly 1`] = `
 }
 
 @media (prefers-color-scheme:dark) {
-  .c86:focus-within::after,
-  .c86:focus::after {
-    border-color: #007dfa3C;
+  .c86:focus-visible::after {
+    border-color: #ffffff;
   }
 }
 
@@ -2971,54 +2959,69 @@ exports[`<HomePage /> should render correctly 1`] = `
           >
             Built in
             <a
+              class="c90"
               href="https://reactjs.org/"
               rel="noopener noreferrer"
               target="_blank"
             >
-              <img
-                alt="React"
-                class="c90"
-                height="5"
-                width="5"
-              />
+              <span
+                class="c12"
+              >
+                <img
+                  alt="React"
+                  class="c91"
+                  height="5"
+                  width="5"
+                />
+              </span>
             </a>
-            and
+            with
             <a
+              class="c90"
               href="https://redux.js.org/"
               rel="noopener noreferrer"
               target="_blank"
             >
-              <img
-                alt="Redux"
-                class="c90"
-                height="5"
-                width="5"
-              />
+              <span
+                class="c12"
+              >
+                <img
+                  alt="Redux"
+                  class="c91"
+                  height="5"
+                  width="5"
+                />
+              </span>
             </a>
             Hosted on
             <a
+              class="c90"
               href="https://aws.amazon.com/"
               rel="noopener noreferrer"
               target="_blank"
             >
-              <img
-                alt="Amazon Web Services"
-                class="c90"
-                height="5"
-                style="margin-top: .8rem; max-width: 2.9rem;"
-                width="8.28"
-              />
+              <span
+                class="c12"
+              >
+                <img
+                  alt="Amazon Web Services"
+                  class="c91"
+                  height="5"
+                  style="margin-top: .8rem; max-width: 2.9rem;"
+                  width="8.28"
+                />
+              </span>
             </a>
           </span>
         </div>
         <div
-          class="c91 "
+          class="c92 "
         >
           <div
-            class="c92"
+            class="c93"
           >
             <a
-              class="c93"
+              class="c90"
               href="/blog"
             >
               <span
@@ -3028,7 +3031,7 @@ exports[`<HomePage /> should render correctly 1`] = `
               </span>
             </a>
             <a
-              class="c93"
+              class="c90"
               href="/photography"
             >
               <span
@@ -3038,7 +3041,7 @@ exports[`<HomePage /> should render correctly 1`] = `
               </span>
             </a>
             <a
-              class="c93"
+              class="c90"
               href="/reading-list"
             >
               <span
@@ -3048,7 +3051,7 @@ exports[`<HomePage /> should render correctly 1`] = `
               </span>
             </a>
             <a
-              class="c93"
+              class="c90"
               href="/races"
             >
               <span
@@ -3058,7 +3061,7 @@ exports[`<HomePage /> should render correctly 1`] = `
               </span>
             </a>
             <a
-              class="c93"
+              class="c90"
               href="/work"
             >
               <span
@@ -3069,10 +3072,10 @@ exports[`<HomePage /> should render correctly 1`] = `
             </a>
           </div>
           <div
-            class="c92"
+            class="c93"
           >
             <a
-              class="c93"
+              class="c90"
               href="/contact"
             >
               <span
@@ -3082,7 +3085,7 @@ exports[`<HomePage /> should render correctly 1`] = `
               </span>
             </a>
             <a
-              class="c93"
+              class="c90"
               href="/sitemap"
             >
               <span
@@ -3092,7 +3095,7 @@ exports[`<HomePage /> should render correctly 1`] = `
               </span>
             </a>
             <a
-              class="c93"
+              class="c90"
               href="/privacy-policy"
             >
               <span
@@ -3102,7 +3105,7 @@ exports[`<HomePage /> should render correctly 1`] = `
               </span>
             </a>
             <a
-              class="c93"
+              class="c90"
               href="/login"
             >
               <span
@@ -3112,7 +3115,7 @@ exports[`<HomePage /> should render correctly 1`] = `
               </span>
             </a>
             <a
-              class="c93"
+              class="c90"
               href="/status"
             >
               <span

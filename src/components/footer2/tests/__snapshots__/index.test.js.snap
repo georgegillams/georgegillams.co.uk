@@ -32,14 +32,12 @@ exports[`<Footer /> Should render correctly 1`] = `
   border-radius: 0.25rem;
 }
 
-.c3:focus-within,
-.c3:focus {
+.c3:focus-visible {
   position: relative;
   outline: none !important;
 }
 
-.c3:focus-within::after,
-.c3:focus::after {
+.c3:focus-visible::after {
   position: absolute;
   top: -0.35rem;
   right: -0.35rem;
@@ -47,7 +45,7 @@ exports[`<Footer /> Should render correctly 1`] = `
   left: -0.35rem;
   content: '';
   display: block;
-  border: solid #007dfa3C 0.2rem;
+  border: solid #44aeff 0.2rem;
   border-radius: 0.5rem;
   pointer-events: none;
 }
@@ -71,7 +69,7 @@ exports[`<Footer /> Should render correctly 1`] = `
   font-weight: bold;
 }
 
-.c11 {
+.c8 {
   display: inline-block;
   border-radius: 0.25rem;
   font-weight: bold;
@@ -82,14 +80,12 @@ exports[`<Footer /> Should render correctly 1`] = `
   fill: white;
 }
 
-.c11:focus-within,
-.c11:focus {
+.c8:focus-visible {
   position: relative;
   outline: none !important;
 }
 
-.c11:focus-within::after,
-.c11:focus::after {
+.c8:focus-visible::after {
   position: absolute;
   top: -0.35rem;
   right: -0.35rem;
@@ -97,21 +93,21 @@ exports[`<Footer /> Should render correctly 1`] = `
   left: -0.35rem;
   content: '';
   display: block;
-  border: solid #007dfa3C 0.2rem;
+  border: solid #44aeff 0.2rem;
   border-radius: 0.5rem;
   pointer-events: none;
 }
 
-.c11:hover {
+.c8:hover {
   color: white;
   fill: white;
 }
 
-.c12 {
+.c9 {
   margin: 0;
 }
 
-.c9 {
+.c11 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -131,7 +127,7 @@ exports[`<Footer /> Should render correctly 1`] = `
   margin: auto;
 }
 
-.c10 > * {
+.c12 > * {
   margin: 0.5rem 0.5rem 0 0.5rem;
   display: -webkit-box;
   display: -webkit-flex;
@@ -178,7 +174,7 @@ exports[`<Footer /> Should render correctly 1`] = `
   align-items: center;
 }
 
-.c8 {
+.c10 {
   display: inline-block;
   width: 100%;
   max-width: 2.3rem;
@@ -189,7 +185,7 @@ exports[`<Footer /> Should render correctly 1`] = `
   filter: brightness(0) invert(1);
 }
 
-.c8:hover {
+.c10:hover {
   -webkit-filter: brightness(0) invert(1) opacity(70%);
   filter: brightness(0) invert(1) opacity(70%);
 }
@@ -234,9 +230,8 @@ exports[`<Footer /> Should render correctly 1`] = `
 }
 
 @media (prefers-color-scheme:dark) {
-  .c3:focus-within::after,
-  .c3:focus::after {
-    border-color: #007dfa3C;
+  .c3:focus-visible::after {
+    border-color: #ffffff;
   }
 }
 
@@ -253,19 +248,18 @@ exports[`<Footer /> Should render correctly 1`] = `
 }
 
 @media (prefers-color-scheme:dark) {
-  .c11:focus-within::after,
-  .c11:focus::after {
-    border-color: #007dfa3C;
+  .c8:focus-visible::after {
+    border-color: #ffffff;
   }
 }
 
 @media (prefers-color-scheme:dark) {
-  .c11 {
+  .c8 {
     color: white;
     fill: white;
   }
 
-  .c11:hover {
+  .c8:hover {
     color: white;
     fill: white;
   }
@@ -312,152 +306,167 @@ exports[`<Footer /> Should render correctly 1`] = `
       >
         Built in
         <a
+          class="c8"
           href="https://reactjs.org/"
           rel="noopener noreferrer"
           target="_blank"
         >
-          <img
-            alt="React"
-            class="c8"
-            height="5"
-            width="5"
-          />
+          <span
+            class="c9"
+          >
+            <img
+              alt="React"
+              class="c10"
+              height="5"
+              width="5"
+            />
+          </span>
         </a>
-        and
+        with
         <a
+          class="c8"
           href="https://redux.js.org/"
           rel="noopener noreferrer"
           target="_blank"
         >
-          <img
-            alt="Redux"
-            class="c8"
-            height="5"
-            width="5"
-          />
+          <span
+            class="c9"
+          >
+            <img
+              alt="Redux"
+              class="c10"
+              height="5"
+              width="5"
+            />
+          </span>
         </a>
         Hosted on
         <a
+          class="c8"
           href="https://aws.amazon.com/"
           rel="noopener noreferrer"
           target="_blank"
         >
-          <img
-            alt="Amazon Web Services"
-            class="c8"
-            height="5"
-            style="margin-top: .8rem; max-width: 2.9rem;"
-            width="8.28"
-          />
+          <span
+            class="c9"
+          >
+            <img
+              alt="Amazon Web Services"
+              class="c10"
+              height="5"
+              style="margin-top: .8rem; max-width: 2.9rem;"
+              width="8.28"
+            />
+          </span>
         </a>
       </span>
     </div>
     <div
-      class="c9 "
+      class="c11 "
     >
       <div
-        class="c10"
+        class="c12"
       >
         <a
-          class="c11"
+          class="c8"
           href="/blog"
         >
           <span
-            class="c12"
+            class="c9"
           >
             Blog
           </span>
         </a>
         <a
-          class="c11"
+          class="c8"
           href="/photography"
         >
           <span
-            class="c12"
+            class="c9"
           >
             Photography
           </span>
         </a>
         <a
-          class="c11"
+          class="c8"
           href="/reading-list"
         >
           <span
-            class="c12"
+            class="c9"
           >
             Reading list
           </span>
         </a>
         <a
-          class="c11"
+          class="c8"
           href="/races"
         >
           <span
-            class="c12"
+            class="c9"
           >
             Races
           </span>
         </a>
         <a
-          class="c11"
+          class="c8"
           href="/work"
         >
           <span
-            class="c12"
+            class="c9"
           >
             Work
           </span>
         </a>
       </div>
       <div
-        class="c10"
+        class="c12"
       >
         <a
-          class="c11"
+          class="c8"
           href="/contact"
         >
           <span
-            class="c12"
+            class="c9"
           >
             Contact
           </span>
         </a>
         <a
-          class="c11"
+          class="c8"
           href="/sitemap"
         >
           <span
-            class="c12"
+            class="c9"
           >
             Site map
           </span>
         </a>
         <a
-          class="c11"
+          class="c8"
           href="/privacy-policy"
         >
           <span
-            class="c12"
+            class="c9"
           >
             Privacy
           </span>
         </a>
         <a
-          class="c11"
+          class="c8"
           href="/login"
         >
           <span
-            class="c12"
+            class="c9"
           >
             Login/Account
           </span>
         </a>
         <a
-          class="c11"
+          class="c8"
           href="/status"
         >
           <span
-            class="c12"
+            class="c9"
           >
             Status
           </span>
@@ -500,14 +509,12 @@ exports[`<Footer /> Should render correctly with custom className 1`] = `
   border-radius: 0.25rem;
 }
 
-.c3:focus-within,
-.c3:focus {
+.c3:focus-visible {
   position: relative;
   outline: none !important;
 }
 
-.c3:focus-within::after,
-.c3:focus::after {
+.c3:focus-visible::after {
   position: absolute;
   top: -0.35rem;
   right: -0.35rem;
@@ -515,7 +522,7 @@ exports[`<Footer /> Should render correctly with custom className 1`] = `
   left: -0.35rem;
   content: '';
   display: block;
-  border: solid #007dfa3C 0.2rem;
+  border: solid #44aeff 0.2rem;
   border-radius: 0.5rem;
   pointer-events: none;
 }
@@ -539,7 +546,7 @@ exports[`<Footer /> Should render correctly with custom className 1`] = `
   font-weight: bold;
 }
 
-.c11 {
+.c8 {
   display: inline-block;
   border-radius: 0.25rem;
   font-weight: bold;
@@ -550,14 +557,12 @@ exports[`<Footer /> Should render correctly with custom className 1`] = `
   fill: white;
 }
 
-.c11:focus-within,
-.c11:focus {
+.c8:focus-visible {
   position: relative;
   outline: none !important;
 }
 
-.c11:focus-within::after,
-.c11:focus::after {
+.c8:focus-visible::after {
   position: absolute;
   top: -0.35rem;
   right: -0.35rem;
@@ -565,21 +570,21 @@ exports[`<Footer /> Should render correctly with custom className 1`] = `
   left: -0.35rem;
   content: '';
   display: block;
-  border: solid #007dfa3C 0.2rem;
+  border: solid #44aeff 0.2rem;
   border-radius: 0.5rem;
   pointer-events: none;
 }
 
-.c11:hover {
+.c8:hover {
   color: white;
   fill: white;
 }
 
-.c12 {
+.c9 {
   margin: 0;
 }
 
-.c9 {
+.c11 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -599,7 +604,7 @@ exports[`<Footer /> Should render correctly with custom className 1`] = `
   margin: auto;
 }
 
-.c10 > * {
+.c12 > * {
   margin: 0.5rem 0.5rem 0 0.5rem;
   display: -webkit-box;
   display: -webkit-flex;
@@ -646,7 +651,7 @@ exports[`<Footer /> Should render correctly with custom className 1`] = `
   align-items: center;
 }
 
-.c8 {
+.c10 {
   display: inline-block;
   width: 100%;
   max-width: 2.3rem;
@@ -657,7 +662,7 @@ exports[`<Footer /> Should render correctly with custom className 1`] = `
   filter: brightness(0) invert(1);
 }
 
-.c8:hover {
+.c10:hover {
   -webkit-filter: brightness(0) invert(1) opacity(70%);
   filter: brightness(0) invert(1) opacity(70%);
 }
@@ -702,9 +707,8 @@ exports[`<Footer /> Should render correctly with custom className 1`] = `
 }
 
 @media (prefers-color-scheme:dark) {
-  .c3:focus-within::after,
-  .c3:focus::after {
-    border-color: #007dfa3C;
+  .c3:focus-visible::after {
+    border-color: #ffffff;
   }
 }
 
@@ -721,19 +725,18 @@ exports[`<Footer /> Should render correctly with custom className 1`] = `
 }
 
 @media (prefers-color-scheme:dark) {
-  .c11:focus-within::after,
-  .c11:focus::after {
-    border-color: #007dfa3C;
+  .c8:focus-visible::after {
+    border-color: #ffffff;
   }
 }
 
 @media (prefers-color-scheme:dark) {
-  .c11 {
+  .c8 {
     color: white;
     fill: white;
   }
 
-  .c11:hover {
+  .c8:hover {
     color: white;
     fill: white;
   }
@@ -780,152 +783,167 @@ exports[`<Footer /> Should render correctly with custom className 1`] = `
       >
         Built in
         <a
+          class="c8"
           href="https://reactjs.org/"
           rel="noopener noreferrer"
           target="_blank"
         >
-          <img
-            alt="React"
-            class="c8"
-            height="5"
-            width="5"
-          />
+          <span
+            class="c9"
+          >
+            <img
+              alt="React"
+              class="c10"
+              height="5"
+              width="5"
+            />
+          </span>
         </a>
-        and
+        with
         <a
+          class="c8"
           href="https://redux.js.org/"
           rel="noopener noreferrer"
           target="_blank"
         >
-          <img
-            alt="Redux"
-            class="c8"
-            height="5"
-            width="5"
-          />
+          <span
+            class="c9"
+          >
+            <img
+              alt="Redux"
+              class="c10"
+              height="5"
+              width="5"
+            />
+          </span>
         </a>
         Hosted on
         <a
+          class="c8"
           href="https://aws.amazon.com/"
           rel="noopener noreferrer"
           target="_blank"
         >
-          <img
-            alt="Amazon Web Services"
-            class="c8"
-            height="5"
-            style="margin-top: .8rem; max-width: 2.9rem;"
-            width="8.28"
-          />
+          <span
+            class="c9"
+          >
+            <img
+              alt="Amazon Web Services"
+              class="c10"
+              height="5"
+              style="margin-top: .8rem; max-width: 2.9rem;"
+              width="8.28"
+            />
+          </span>
         </a>
       </span>
     </div>
     <div
-      class="c9 "
+      class="c11 "
     >
       <div
-        class="c10"
+        class="c12"
       >
         <a
-          class="c11"
+          class="c8"
           href="/blog"
         >
           <span
-            class="c12"
+            class="c9"
           >
             Blog
           </span>
         </a>
         <a
-          class="c11"
+          class="c8"
           href="/photography"
         >
           <span
-            class="c12"
+            class="c9"
           >
             Photography
           </span>
         </a>
         <a
-          class="c11"
+          class="c8"
           href="/reading-list"
         >
           <span
-            class="c12"
+            class="c9"
           >
             Reading list
           </span>
         </a>
         <a
-          class="c11"
+          class="c8"
           href="/races"
         >
           <span
-            class="c12"
+            class="c9"
           >
             Races
           </span>
         </a>
         <a
-          class="c11"
+          class="c8"
           href="/work"
         >
           <span
-            class="c12"
+            class="c9"
           >
             Work
           </span>
         </a>
       </div>
       <div
-        class="c10"
+        class="c12"
       >
         <a
-          class="c11"
+          class="c8"
           href="/contact"
         >
           <span
-            class="c12"
+            class="c9"
           >
             Contact
           </span>
         </a>
         <a
-          class="c11"
+          class="c8"
           href="/sitemap"
         >
           <span
-            class="c12"
+            class="c9"
           >
             Site map
           </span>
         </a>
         <a
-          class="c11"
+          class="c8"
           href="/privacy-policy"
         >
           <span
-            class="c12"
+            class="c9"
           >
             Privacy
           </span>
         </a>
         <a
-          class="c11"
+          class="c8"
           href="/login"
         >
           <span
-            class="c12"
+            class="c9"
           >
             Login/Account
           </span>
         </a>
         <a
-          class="c11"
+          class="c8"
           href="/status"
         >
           <span
-            class="c12"
+            class="c9"
           >
             Status
           </span>

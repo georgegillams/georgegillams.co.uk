@@ -21,13 +21,11 @@ exports[`<CreateNotificationForm /> Should render correctly 1`] = `
   box-shadow: none;
 }
 
-.c7:focus-within,
-.c7:focus {
+.c7:focus-visible {
   outline: none !important;
 }
 
-.c7:focus-within::after,
-.c7:focus::after {
+.c7:focus-visible::after {
   position: absolute;
   top: -0.35rem;
   right: -0.35rem;
@@ -35,7 +33,7 @@ exports[`<CreateNotificationForm /> Should render correctly 1`] = `
   left: -0.35rem;
   content: '';
   display: block;
-  border: solid #007dfa3C 0.2rem;
+  border: solid #44aeff 0.2rem;
   border-radius: 0.5rem;
   pointer-events: none;
 }
@@ -88,13 +86,13 @@ exports[`<CreateNotificationForm /> Should render correctly 1`] = `
 }
 
 .c1:focus-within,
-.c1:focus {
+.c1:focus-visible {
   position: relative;
   outline: none !important;
 }
 
 .c1:focus-within::after,
-.c1:focus::after {
+.c1:focus-visible::after {
   position: absolute;
   top: -0.35rem;
   right: -0.35rem;
@@ -102,7 +100,7 @@ exports[`<CreateNotificationForm /> Should render correctly 1`] = `
   left: -0.35rem;
   content: '';
   display: block;
-  border: solid #007dfa3C 0.2rem;
+  border: solid #44aeff 0.2rem;
   border-radius: 0.5rem;
   pointer-events: none;
 }
@@ -155,9 +153,8 @@ exports[`<CreateNotificationForm /> Should render correctly 1`] = `
 }
 
 @media (prefers-color-scheme:dark) {
-  .c7:focus-within::after,
-  .c7:focus::after {
-    border-color: #007dfa3C;
+  .c7:focus-visible::after {
+    border-color: #ffffff;
   }
 }
 
@@ -194,8 +191,8 @@ exports[`<CreateNotificationForm /> Should render correctly 1`] = `
 
 @media (prefers-color-scheme:dark) {
   .c1:focus-within::after,
-  .c1:focus::after {
-    border-color: #007dfa3C;
+  .c1:focus-visible::after {
+    border-color: #ffffff;
   }
 }
 

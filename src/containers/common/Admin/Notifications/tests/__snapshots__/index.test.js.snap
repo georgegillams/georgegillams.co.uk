@@ -163,14 +163,12 @@ exports[`<AdminNotifications /> should render correctly with admin user 1`] = `
   fill: #9932cc;
 }
 
-.c3:focus-within,
-.c3:focus {
+.c3:focus-visible {
   position: relative;
   outline: none !important;
 }
 
-.c3:focus-within::after,
-.c3:focus::after {
+.c3:focus-visible::after {
   position: absolute;
   top: -0.35rem;
   right: -0.35rem;
@@ -178,7 +176,7 @@ exports[`<AdminNotifications /> should render correctly with admin user 1`] = `
   left: -0.35rem;
   content: '';
   display: block;
-  border: solid #007dfa3C 0.2rem;
+  border: solid #44aeff 0.2rem;
   border-radius: 0.5rem;
   pointer-events: none;
 }
@@ -232,13 +230,11 @@ exports[`<AdminNotifications /> should render correctly with admin user 1`] = `
   box-shadow: none;
 }
 
-.c14:focus-within,
-.c14:focus {
+.c14:focus-visible {
   outline: none !important;
 }
 
-.c14:focus-within::after,
-.c14:focus::after {
+.c14:focus-visible::after {
   position: absolute;
   top: -0.35rem;
   right: -0.35rem;
@@ -246,7 +242,7 @@ exports[`<AdminNotifications /> should render correctly with admin user 1`] = `
   left: -0.35rem;
   content: '';
   display: block;
-  border: solid #007dfa3C 0.2rem;
+  border: solid #44aeff 0.2rem;
   border-radius: 0.5rem;
   pointer-events: none;
 }
@@ -306,13 +302,13 @@ exports[`<AdminNotifications /> should render correctly with admin user 1`] = `
 }
 
 .c8:focus-within,
-.c8:focus {
+.c8:focus-visible {
   position: relative;
   outline: none !important;
 }
 
 .c8:focus-within::after,
-.c8:focus::after {
+.c8:focus-visible::after {
   position: absolute;
   top: -0.35rem;
   right: -0.35rem;
@@ -320,7 +316,7 @@ exports[`<AdminNotifications /> should render correctly with admin user 1`] = `
   left: -0.35rem;
   content: '';
   display: block;
-  border: solid #007dfa3C 0.2rem;
+  border: solid #44aeff 0.2rem;
   border-radius: 0.5rem;
   pointer-events: none;
 }
@@ -388,9 +384,8 @@ exports[`<AdminNotifications /> should render correctly with admin user 1`] = `
 }
 
 @media (prefers-color-scheme:dark) {
-  .c3:focus-within::after,
-  .c3:focus::after {
-    border-color: #007dfa3C;
+  .c3:focus-visible::after {
+    border-color: #ffffff;
   }
 }
 
@@ -407,9 +402,8 @@ exports[`<AdminNotifications /> should render correctly with admin user 1`] = `
 }
 
 @media (prefers-color-scheme:dark) {
-  .c14:focus-within::after,
-  .c14:focus::after {
-    border-color: #007dfa3C;
+  .c14:focus-visible::after {
+    border-color: #ffffff;
   }
 }
 
@@ -453,8 +447,8 @@ exports[`<AdminNotifications /> should render correctly with admin user 1`] = `
 
 @media (prefers-color-scheme:dark) {
   .c8:focus-within::after,
-  .c8:focus::after {
-    border-color: #007dfa3C;
+  .c8:focus-visible::after {
+    border-color: #ffffff;
   }
 }
 
@@ -801,14 +795,12 @@ exports[`<AdminNotifications /> should render correctly with loadError 1`] = `
   fill: #9932cc;
 }
 
-.c3:focus-within,
-.c3:focus {
+.c3:focus-visible {
   position: relative;
   outline: none !important;
 }
 
-.c3:focus-within::after,
-.c3:focus::after {
+.c3:focus-visible::after {
   position: absolute;
   top: -0.35rem;
   right: -0.35rem;
@@ -816,7 +808,7 @@ exports[`<AdminNotifications /> should render correctly with loadError 1`] = `
   left: -0.35rem;
   content: '';
   display: block;
-  border: solid #007dfa3C 0.2rem;
+  border: solid #44aeff 0.2rem;
   border-radius: 0.5rem;
   pointer-events: none;
 }
@@ -870,13 +862,11 @@ exports[`<AdminNotifications /> should render correctly with loadError 1`] = `
   box-shadow: none;
 }
 
-.c14:focus-within,
-.c14:focus {
+.c14:focus-visible {
   outline: none !important;
 }
 
-.c14:focus-within::after,
-.c14:focus::after {
+.c14:focus-visible::after {
   position: absolute;
   top: -0.35rem;
   right: -0.35rem;
@@ -884,7 +874,7 @@ exports[`<AdminNotifications /> should render correctly with loadError 1`] = `
   left: -0.35rem;
   content: '';
   display: block;
-  border: solid #007dfa3C 0.2rem;
+  border: solid #44aeff 0.2rem;
   border-radius: 0.5rem;
   pointer-events: none;
 }
@@ -961,13 +951,13 @@ exports[`<AdminNotifications /> should render correctly with loadError 1`] = `
 }
 
 .c8:focus-within,
-.c8:focus {
+.c8:focus-visible {
   position: relative;
   outline: none !important;
 }
 
 .c8:focus-within::after,
-.c8:focus::after {
+.c8:focus-visible::after {
   position: absolute;
   top: -0.35rem;
   right: -0.35rem;
@@ -975,7 +965,7 @@ exports[`<AdminNotifications /> should render correctly with loadError 1`] = `
   left: -0.35rem;
   content: '';
   display: block;
-  border: solid #007dfa3C 0.2rem;
+  border: solid #44aeff 0.2rem;
   border-radius: 0.5rem;
   pointer-events: none;
 }
@@ -1043,9 +1033,8 @@ exports[`<AdminNotifications /> should render correctly with loadError 1`] = `
 }
 
 @media (prefers-color-scheme:dark) {
-  .c3:focus-within::after,
-  .c3:focus::after {
-    border-color: #007dfa3C;
+  .c3:focus-visible::after {
+    border-color: #ffffff;
   }
 }
 
@@ -1062,9 +1051,8 @@ exports[`<AdminNotifications /> should render correctly with loadError 1`] = `
 }
 
 @media (prefers-color-scheme:dark) {
-  .c14:focus-within::after,
-  .c14:focus::after {
-    border-color: #007dfa3C;
+  .c14:focus-visible::after {
+    border-color: #ffffff;
   }
 }
 
@@ -1115,8 +1103,8 @@ exports[`<AdminNotifications /> should render correctly with loadError 1`] = `
 
 @media (prefers-color-scheme:dark) {
   .c8:focus-within::after,
-  .c8:focus::after {
-    border-color: #007dfa3C;
+  .c8:focus-visible::after {
+    border-color: #ffffff;
   }
 }
 
@@ -1329,14 +1317,12 @@ exports[`<AdminNotifications /> should render correctly with loading=true 1`] = 
   fill: #9932cc;
 }
 
-.c3:focus-within,
-.c3:focus {
+.c3:focus-visible {
   position: relative;
   outline: none !important;
 }
 
-.c3:focus-within::after,
-.c3:focus::after {
+.c3:focus-visible::after {
   position: absolute;
   top: -0.35rem;
   right: -0.35rem;
@@ -1344,7 +1330,7 @@ exports[`<AdminNotifications /> should render correctly with loading=true 1`] = 
   left: -0.35rem;
   content: '';
   display: block;
-  border: solid #007dfa3C 0.2rem;
+  border: solid #44aeff 0.2rem;
   border-radius: 0.5rem;
   pointer-events: none;
 }
@@ -1574,13 +1560,11 @@ exports[`<AdminNotifications /> should render correctly with loading=true 1`] = 
   box-shadow: none;
 }
 
-.c14:focus-within,
-.c14:focus {
+.c14:focus-visible {
   outline: none !important;
 }
 
-.c14:focus-within::after,
-.c14:focus::after {
+.c14:focus-visible::after {
   position: absolute;
   top: -0.35rem;
   right: -0.35rem;
@@ -1588,7 +1572,7 @@ exports[`<AdminNotifications /> should render correctly with loading=true 1`] = 
   left: -0.35rem;
   content: '';
   display: block;
-  border: solid #007dfa3C 0.2rem;
+  border: solid #44aeff 0.2rem;
   border-radius: 0.5rem;
   pointer-events: none;
 }
@@ -1631,13 +1615,11 @@ exports[`<AdminNotifications /> should render correctly with loading=true 1`] = 
   cursor: default;
 }
 
-.c17:focus-within,
-.c17:focus {
+.c17:focus-visible {
   outline: none !important;
 }
 
-.c17:focus-within::after,
-.c17:focus::after {
+.c17:focus-visible::after {
   position: absolute;
   top: -0.35rem;
   right: -0.35rem;
@@ -1645,7 +1627,7 @@ exports[`<AdminNotifications /> should render correctly with loading=true 1`] = 
   left: -0.35rem;
   content: '';
   display: block;
-  border: solid #007dfa3C 0.2rem;
+  border: solid #44aeff 0.2rem;
   border-radius: 0.5rem;
   pointer-events: none;
 }
@@ -1737,13 +1719,13 @@ exports[`<AdminNotifications /> should render correctly with loading=true 1`] = 
 }
 
 .c8:focus-within,
-.c8:focus {
+.c8:focus-visible {
   position: relative;
   outline: none !important;
 }
 
 .c8:focus-within::after,
-.c8:focus::after {
+.c8:focus-visible::after {
   position: absolute;
   top: -0.35rem;
   right: -0.35rem;
@@ -1751,7 +1733,7 @@ exports[`<AdminNotifications /> should render correctly with loading=true 1`] = 
   left: -0.35rem;
   content: '';
   display: block;
-  border: solid #007dfa3C 0.2rem;
+  border: solid #44aeff 0.2rem;
   border-radius: 0.5rem;
   pointer-events: none;
 }
@@ -1819,9 +1801,8 @@ exports[`<AdminNotifications /> should render correctly with loading=true 1`] = 
 }
 
 @media (prefers-color-scheme:dark) {
-  .c3:focus-within::after,
-  .c3:focus::after {
-    border-color: #007dfa3C;
+  .c3:focus-visible::after {
+    border-color: #ffffff;
   }
 }
 
@@ -1844,9 +1825,8 @@ exports[`<AdminNotifications /> should render correctly with loading=true 1`] = 
 }
 
 @media (prefers-color-scheme:dark) {
-  .c14:focus-within::after,
-  .c14:focus::after {
-    border-color: #007dfa3C;
+  .c14:focus-visible::after {
+    border-color: #ffffff;
   }
 }
 
@@ -1882,9 +1862,8 @@ exports[`<AdminNotifications /> should render correctly with loading=true 1`] = 
 }
 
 @media (prefers-color-scheme:dark) {
-  .c17:focus-within::after,
-  .c17:focus::after {
-    border-color: #007dfa3C;
+  .c17:focus-visible::after {
+    border-color: #ffffff;
   }
 }
 
@@ -1928,8 +1907,8 @@ exports[`<AdminNotifications /> should render correctly with loading=true 1`] = 
 
 @media (prefers-color-scheme:dark) {
   .c8:focus-within::after,
-  .c8:focus::after {
-    border-color: #007dfa3C;
+  .c8:focus-visible::after {
+    border-color: #ffffff;
   }
 }
 
@@ -2164,14 +2143,12 @@ exports[`<AdminNotifications /> should render correctly with notifications 1`] =
   fill: #9932cc;
 }
 
-.c3:focus-within,
-.c3:focus {
+.c3:focus-visible {
   position: relative;
   outline: none !important;
 }
 
-.c3:focus-within::after,
-.c3:focus::after {
+.c3:focus-visible::after {
   position: absolute;
   top: -0.35rem;
   right: -0.35rem;
@@ -2179,7 +2156,7 @@ exports[`<AdminNotifications /> should render correctly with notifications 1`] =
   left: -0.35rem;
   content: '';
   display: block;
-  border: solid #007dfa3C 0.2rem;
+  border: solid #44aeff 0.2rem;
   border-radius: 0.5rem;
   pointer-events: none;
 }
@@ -2233,13 +2210,11 @@ exports[`<AdminNotifications /> should render correctly with notifications 1`] =
   box-shadow: none;
 }
 
-.c14:focus-within,
-.c14:focus {
+.c14:focus-visible {
   outline: none !important;
 }
 
-.c14:focus-within::after,
-.c14:focus::after {
+.c14:focus-visible::after {
   position: absolute;
   top: -0.35rem;
   right: -0.35rem;
@@ -2247,7 +2222,7 @@ exports[`<AdminNotifications /> should render correctly with notifications 1`] =
   left: -0.35rem;
   content: '';
   display: block;
-  border: solid #007dfa3C 0.2rem;
+  border: solid #44aeff 0.2rem;
   border-radius: 0.5rem;
   pointer-events: none;
 }
@@ -2289,13 +2264,11 @@ exports[`<AdminNotifications /> should render correctly with notifications 1`] =
   box-shadow: none;
 }
 
-.c19:focus-within,
-.c19:focus {
+.c19:focus-visible {
   outline: none !important;
 }
 
-.c19:focus-within::after,
-.c19:focus::after {
+.c19:focus-visible::after {
   position: absolute;
   top: -0.35rem;
   right: -0.35rem;
@@ -2303,7 +2276,7 @@ exports[`<AdminNotifications /> should render correctly with notifications 1`] =
   left: -0.35rem;
   content: '';
   display: block;
-  border: solid #007dfa3C 0.2rem;
+  border: solid #44aeff 0.2rem;
   border-radius: 0.5rem;
   pointer-events: none;
 }
@@ -2441,13 +2414,13 @@ exports[`<AdminNotifications /> should render correctly with notifications 1`] =
 }
 
 .c8:focus-within,
-.c8:focus {
+.c8:focus-visible {
   position: relative;
   outline: none !important;
 }
 
 .c8:focus-within::after,
-.c8:focus::after {
+.c8:focus-visible::after {
   position: absolute;
   top: -0.35rem;
   right: -0.35rem;
@@ -2455,7 +2428,7 @@ exports[`<AdminNotifications /> should render correctly with notifications 1`] =
   left: -0.35rem;
   content: '';
   display: block;
-  border: solid #007dfa3C 0.2rem;
+  border: solid #44aeff 0.2rem;
   border-radius: 0.5rem;
   pointer-events: none;
 }
@@ -2523,9 +2496,8 @@ exports[`<AdminNotifications /> should render correctly with notifications 1`] =
 }
 
 @media (prefers-color-scheme:dark) {
-  .c3:focus-within::after,
-  .c3:focus::after {
-    border-color: #007dfa3C;
+  .c3:focus-visible::after {
+    border-color: #ffffff;
   }
 }
 
@@ -2542,9 +2514,8 @@ exports[`<AdminNotifications /> should render correctly with notifications 1`] =
 }
 
 @media (prefers-color-scheme:dark) {
-  .c14:focus-within::after,
-  .c14:focus::after {
-    border-color: #007dfa3C;
+  .c14:focus-visible::after {
+    border-color: #ffffff;
   }
 }
 
@@ -2580,9 +2551,8 @@ exports[`<AdminNotifications /> should render correctly with notifications 1`] =
 }
 
 @media (prefers-color-scheme:dark) {
-  .c19:focus-within::after,
-  .c19:focus::after {
-    border-color: #007dfa3C;
+  .c19:focus-visible::after {
+    border-color: #ffffff;
   }
 }
 
@@ -2626,8 +2596,8 @@ exports[`<AdminNotifications /> should render correctly with notifications 1`] =
 
 @media (prefers-color-scheme:dark) {
   .c8:focus-within::after,
-  .c8:focus::after {
-    border-color: #007dfa3C;
+  .c8:focus-visible::after {
+    border-color: #ffffff;
   }
 }
 
@@ -2878,14 +2848,12 @@ exports[`<AdminNotifications /> should render correctly with user 1`] = `
   fill: #9932cc;
 }
 
-.c5:focus-within,
-.c5:focus {
+.c5:focus-visible {
   position: relative;
   outline: none !important;
 }
 
-.c5:focus-within::after,
-.c5:focus::after {
+.c5:focus-visible::after {
   position: absolute;
   top: -0.35rem;
   right: -0.35rem;
@@ -2893,7 +2861,7 @@ exports[`<AdminNotifications /> should render correctly with user 1`] = `
   left: -0.35rem;
   content: '';
   display: block;
-  border: solid #007dfa3C 0.2rem;
+  border: solid #44aeff 0.2rem;
   border-radius: 0.5rem;
   pointer-events: none;
 }
@@ -2949,9 +2917,8 @@ exports[`<AdminNotifications /> should render correctly with user 1`] = `
 }
 
 @media (prefers-color-scheme:dark) {
-  .c5:focus-within::after,
-  .c5:focus::after {
-    border-color: #007dfa3C;
+  .c5:focus-visible::after {
+    border-color: #ffffff;
   }
 }
 

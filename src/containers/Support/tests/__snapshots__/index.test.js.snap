@@ -61,13 +61,11 @@ exports[`<Support /> should render correctly - index 1`] = `
   cursor: default;
 }
 
-.c5:focus-within,
-.c5:focus {
+.c5:focus-visible {
   outline: none !important;
 }
 
-.c5:focus-within::after,
-.c5:focus::after {
+.c5:focus-visible::after {
   position: absolute;
   top: -0.35rem;
   right: -0.35rem;
@@ -75,7 +73,7 @@ exports[`<Support /> should render correctly - index 1`] = `
   left: -0.35rem;
   content: '';
   display: block;
-  border: solid #007dfa3C 0.2rem;
+  border: solid #44aeff 0.2rem;
   border-radius: 0.5rem;
   pointer-events: none;
 }
@@ -159,9 +157,8 @@ exports[`<Support /> should render correctly - index 1`] = `
 }
 
 @media (prefers-color-scheme:dark) {
-  .c5:focus-within::after,
-  .c5:focus::after {
-    border-color: #007dfa3C;
+  .c5:focus-visible::after {
+    border-color: #ffffff;
   }
 }
 
@@ -305,13 +302,11 @@ exports[`<Support /> should render correctly when loading 1`] = `
   cursor: default;
 }
 
-.c5:focus-within,
-.c5:focus {
+.c5:focus-visible {
   outline: none !important;
 }
 
-.c5:focus-within::after,
-.c5:focus::after {
+.c5:focus-visible::after {
   position: absolute;
   top: -0.35rem;
   right: -0.35rem;
@@ -319,7 +314,7 @@ exports[`<Support /> should render correctly when loading 1`] = `
   left: -0.35rem;
   content: '';
   display: block;
-  border: solid #007dfa3C 0.2rem;
+  border: solid #44aeff 0.2rem;
   border-radius: 0.5rem;
   pointer-events: none;
 }
@@ -383,9 +378,8 @@ exports[`<Support /> should render correctly when loading 1`] = `
 }
 
 @media (prefers-color-scheme:dark) {
-  .c5:focus-within::after,
-  .c5:focus::after {
-    border-color: #007dfa3C;
+  .c5:focus-visible::after {
+    border-color: #ffffff;
   }
 }
 
@@ -545,13 +539,11 @@ exports[`<Support /> should render correctly with admin 1`] = `
   box-shadow: none;
 }
 
-.c5:focus-within,
-.c5:focus {
+.c5:focus-visible {
   outline: none !important;
 }
 
-.c5:focus-within::after,
-.c5:focus::after {
+.c5:focus-visible::after {
   position: absolute;
   top: -0.35rem;
   right: -0.35rem;
@@ -559,7 +551,7 @@ exports[`<Support /> should render correctly with admin 1`] = `
   left: -0.35rem;
   content: '';
   display: block;
-  border: solid #007dfa3C 0.2rem;
+  border: solid #44aeff 0.2rem;
   border-radius: 0.5rem;
   pointer-events: none;
 }
@@ -629,9 +621,8 @@ exports[`<Support /> should render correctly with admin 1`] = `
 }
 
 @media (prefers-color-scheme:dark) {
-  .c5:focus-within::after,
-  .c5:focus::after {
-    border-color: #007dfa3C;
+  .c5:focus-visible::after {
+    border-color: #ffffff;
   }
 }
 
@@ -803,13 +794,11 @@ exports[`<Support /> should render correctly with admin and createLinkError 1`] 
   box-shadow: none;
 }
 
-.c5:focus-within,
-.c5:focus {
+.c5:focus-visible {
   outline: none !important;
 }
 
-.c5:focus-within::after,
-.c5:focus::after {
+.c5:focus-visible::after {
   position: absolute;
   top: -0.35rem;
   right: -0.35rem;
@@ -817,7 +806,7 @@ exports[`<Support /> should render correctly with admin and createLinkError 1`] 
   left: -0.35rem;
   content: '';
   display: block;
-  border: solid #007dfa3C 0.2rem;
+  border: solid #44aeff 0.2rem;
   border-radius: 0.5rem;
   pointer-events: none;
 }
@@ -904,9 +893,8 @@ exports[`<Support /> should render correctly with admin and createLinkError 1`] 
 }
 
 @media (prefers-color-scheme:dark) {
-  .c5:focus-within::after,
-  .c5:focus::after {
-    border-color: #007dfa3C;
+  .c5:focus-visible::after {
+    border-color: #ffffff;
   }
 }
 
@@ -1096,13 +1084,11 @@ exports[`<Support /> should render correctly with admin and deleteLinkError 1`] 
   box-shadow: none;
 }
 
-.c5:focus-within,
-.c5:focus {
+.c5:focus-visible {
   outline: none !important;
 }
 
-.c5:focus-within::after,
-.c5:focus::after {
+.c5:focus-visible::after {
   position: absolute;
   top: -0.35rem;
   right: -0.35rem;
@@ -1110,7 +1096,7 @@ exports[`<Support /> should render correctly with admin and deleteLinkError 1`] 
   left: -0.35rem;
   content: '';
   display: block;
-  border: solid #007dfa3C 0.2rem;
+  border: solid #44aeff 0.2rem;
   border-radius: 0.5rem;
   pointer-events: none;
 }
@@ -1197,9 +1183,8 @@ exports[`<Support /> should render correctly with admin and deleteLinkError 1`] 
 }
 
 @media (prefers-color-scheme:dark) {
-  .c5:focus-within::after,
-  .c5:focus::after {
-    border-color: #007dfa3C;
+  .c5:focus-visible::after {
+    border-color: #ffffff;
   }
 }
 
@@ -1372,13 +1357,11 @@ exports[`<Support /> should render correctly with initial state 1`] = `
   box-shadow: none;
 }
 
-.c5:focus-within,
-.c5:focus {
+.c5:focus-visible {
   outline: none !important;
 }
 
-.c5:focus-within::after,
-.c5:focus::after {
+.c5:focus-visible::after {
   position: absolute;
   top: -0.35rem;
   right: -0.35rem;
@@ -1386,7 +1369,7 @@ exports[`<Support /> should render correctly with initial state 1`] = `
   left: -0.35rem;
   content: '';
   display: block;
-  border: solid #007dfa3C 0.2rem;
+  border: solid #44aeff 0.2rem;
   border-radius: 0.5rem;
   pointer-events: none;
 }
@@ -1450,9 +1433,8 @@ exports[`<Support /> should render correctly with initial state 1`] = `
 }
 
 @media (prefers-color-scheme:dark) {
-  .c5:focus-within::after,
-  .c5:focus::after {
-    border-color: #007dfa3C;
+  .c5:focus-visible::after {
+    border-color: #ffffff;
   }
 }
 
@@ -1567,14 +1549,12 @@ exports[`<Support /> should render correctly with links 1`] = `
   fill: #9932cc;
 }
 
-.c12:focus-within,
-.c12:focus {
+.c12:focus-visible {
   position: relative;
   outline: none !important;
 }
 
-.c12:focus-within::after,
-.c12:focus::after {
+.c12:focus-visible::after {
   position: absolute;
   top: -0.35rem;
   right: -0.35rem;
@@ -1582,7 +1562,7 @@ exports[`<Support /> should render correctly with links 1`] = `
   left: -0.35rem;
   content: '';
   display: block;
-  border: solid #007dfa3C 0.2rem;
+  border: solid #44aeff 0.2rem;
   border-radius: 0.5rem;
   pointer-events: none;
 }
@@ -1650,13 +1630,11 @@ exports[`<Support /> should render correctly with links 1`] = `
   box-shadow: none;
 }
 
-.c5:focus-within,
-.c5:focus {
+.c5:focus-visible {
   outline: none !important;
 }
 
-.c5:focus-within::after,
-.c5:focus::after {
+.c5:focus-visible::after {
   position: absolute;
   top: -0.35rem;
   right: -0.35rem;
@@ -1664,7 +1642,7 @@ exports[`<Support /> should render correctly with links 1`] = `
   left: -0.35rem;
   content: '';
   display: block;
-  border: solid #007dfa3C 0.2rem;
+  border: solid #44aeff 0.2rem;
   border-radius: 0.5rem;
   pointer-events: none;
 }
@@ -1734,9 +1712,8 @@ exports[`<Support /> should render correctly with links 1`] = `
 }
 
 @media (prefers-color-scheme:dark) {
-  .c12:focus-within::after,
-  .c12:focus::after {
-    border-color: #007dfa3C;
+  .c12:focus-visible::after {
+    border-color: #ffffff;
   }
 }
 
@@ -1759,9 +1736,8 @@ exports[`<Support /> should render correctly with links 1`] = `
 }
 
 @media (prefers-color-scheme:dark) {
-  .c5:focus-within::after,
-  .c5:focus::after {
-    border-color: #007dfa3C;
+  .c5:focus-visible::after {
+    border-color: #ffffff;
   }
 }
 
@@ -1983,13 +1959,11 @@ exports[`<Support /> should render correctly with loadError 1`] = `
   box-shadow: none;
 }
 
-.c5:focus-within,
-.c5:focus {
+.c5:focus-visible {
   outline: none !important;
 }
 
-.c5:focus-within::after,
-.c5:focus::after {
+.c5:focus-visible::after {
   position: absolute;
   top: -0.35rem;
   right: -0.35rem;
@@ -1997,7 +1971,7 @@ exports[`<Support /> should render correctly with loadError 1`] = `
   left: -0.35rem;
   content: '';
   display: block;
-  border: solid #007dfa3C 0.2rem;
+  border: solid #44aeff 0.2rem;
   border-radius: 0.5rem;
   pointer-events: none;
 }
@@ -2078,9 +2052,8 @@ exports[`<Support /> should render correctly with loadError 1`] = `
 }
 
 @media (prefers-color-scheme:dark) {
-  .c5:focus-within::after,
-  .c5:focus::after {
-    border-color: #007dfa3C;
+  .c5:focus-visible::after {
+    border-color: #ffffff;
   }
 }
 

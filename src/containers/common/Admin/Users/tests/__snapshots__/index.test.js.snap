@@ -134,14 +134,12 @@ exports[`<AdminUsers /> should render correctly with admin user 1`] = `
   fill: #9932cc;
 }
 
-.c2:focus-within,
-.c2:focus {
+.c2:focus-visible {
   position: relative;
   outline: none !important;
 }
 
-.c2:focus-within::after,
-.c2:focus::after {
+.c2:focus-visible::after {
   position: absolute;
   top: -0.35rem;
   right: -0.35rem;
@@ -149,7 +147,7 @@ exports[`<AdminUsers /> should render correctly with admin user 1`] = `
   left: -0.35rem;
   content: '';
   display: block;
-  border: solid #007dfa3C 0.2rem;
+  border: solid #44aeff 0.2rem;
   border-radius: 0.5rem;
   pointer-events: none;
 }
@@ -220,13 +218,11 @@ exports[`<AdminUsers /> should render correctly with admin user 1`] = `
   box-shadow: none;
 }
 
-.c7:focus-within,
-.c7:focus {
+.c7:focus-visible {
   outline: none !important;
 }
 
-.c7:focus-within::after,
-.c7:focus::after {
+.c7:focus-visible::after {
   position: absolute;
   top: -0.35rem;
   right: -0.35rem;
@@ -234,7 +230,7 @@ exports[`<AdminUsers /> should render correctly with admin user 1`] = `
   left: -0.35rem;
   content: '';
   display: block;
-  border: solid #007dfa3C 0.2rem;
+  border: solid #44aeff 0.2rem;
   border-radius: 0.5rem;
   pointer-events: none;
 }
@@ -360,6 +356,24 @@ exports[`<AdminUsers /> should render correctly with admin user 1`] = `
   text-align: left;
 }
 
+.c12:focus-visible {
+  position: relative;
+  outline: none !important;
+}
+
+.c12:focus-visible::after {
+  position: absolute;
+  top: -0.35rem;
+  right: -0.35rem;
+  bottom: -0.35rem;
+  left: -0.35rem;
+  content: '';
+  display: block;
+  border: solid #44aeff 0.2rem;
+  border-radius: 0.5rem;
+  pointer-events: none;
+}
+
 .c12:disabled {
   cursor: not-allowed;
 }
@@ -370,9 +384,8 @@ exports[`<AdminUsers /> should render correctly with admin user 1`] = `
 }
 
 @media (prefers-color-scheme:dark) {
-  .c2:focus-within::after,
-  .c2:focus::after {
-    border-color: #007dfa3C;
+  .c2:focus-visible::after {
+    border-color: #ffffff;
   }
 }
 
@@ -395,9 +408,8 @@ exports[`<AdminUsers /> should render correctly with admin user 1`] = `
 }
 
 @media (prefers-color-scheme:dark) {
-  .c7:focus-within::after,
-  .c7:focus::after {
-    border-color: #007dfa3C;
+  .c7:focus-visible::after {
+    border-color: #ffffff;
   }
 }
 
@@ -450,6 +462,12 @@ exports[`<AdminUsers /> should render correctly with admin user 1`] = `
 @media (prefers-color-scheme:dark) {
   .c12 {
     box-shadow: 0.44rem 0.44rem 1rem 0 #00000000;
+  }
+}
+
+@media (prefers-color-scheme:dark) {
+  .c12:focus-visible::after {
+    border-color: #ffffff;
   }
 }
 
@@ -571,14 +589,12 @@ exports[`<AdminUsers /> should render correctly with createError 1`] = `
   fill: #9932cc;
 }
 
-.c2:focus-within,
-.c2:focus {
+.c2:focus-visible {
   position: relative;
   outline: none !important;
 }
 
-.c2:focus-within::after,
-.c2:focus::after {
+.c2:focus-visible::after {
   position: absolute;
   top: -0.35rem;
   right: -0.35rem;
@@ -586,7 +602,7 @@ exports[`<AdminUsers /> should render correctly with createError 1`] = `
   left: -0.35rem;
   content: '';
   display: block;
-  border: solid #007dfa3C 0.2rem;
+  border: solid #44aeff 0.2rem;
   border-radius: 0.5rem;
   pointer-events: none;
 }
@@ -657,13 +673,11 @@ exports[`<AdminUsers /> should render correctly with createError 1`] = `
   box-shadow: none;
 }
 
-.c7:focus-within,
-.c7:focus {
+.c7:focus-visible {
   outline: none !important;
 }
 
-.c7:focus-within::after,
-.c7:focus::after {
+.c7:focus-visible::after {
   position: absolute;
   top: -0.35rem;
   right: -0.35rem;
@@ -671,7 +685,7 @@ exports[`<AdminUsers /> should render correctly with createError 1`] = `
   left: -0.35rem;
   content: '';
   display: block;
-  border: solid #007dfa3C 0.2rem;
+  border: solid #44aeff 0.2rem;
   border-radius: 0.5rem;
   pointer-events: none;
 }
@@ -797,6 +811,24 @@ exports[`<AdminUsers /> should render correctly with createError 1`] = `
   text-align: left;
 }
 
+.c12:focus-visible {
+  position: relative;
+  outline: none !important;
+}
+
+.c12:focus-visible::after {
+  position: absolute;
+  top: -0.35rem;
+  right: -0.35rem;
+  bottom: -0.35rem;
+  left: -0.35rem;
+  content: '';
+  display: block;
+  border: solid #44aeff 0.2rem;
+  border-radius: 0.5rem;
+  pointer-events: none;
+}
+
 .c12:disabled {
   cursor: not-allowed;
 }
@@ -807,9 +839,8 @@ exports[`<AdminUsers /> should render correctly with createError 1`] = `
 }
 
 @media (prefers-color-scheme:dark) {
-  .c2:focus-within::after,
-  .c2:focus::after {
-    border-color: #007dfa3C;
+  .c2:focus-visible::after {
+    border-color: #ffffff;
   }
 }
 
@@ -832,9 +863,8 @@ exports[`<AdminUsers /> should render correctly with createError 1`] = `
 }
 
 @media (prefers-color-scheme:dark) {
-  .c7:focus-within::after,
-  .c7:focus::after {
-    border-color: #007dfa3C;
+  .c7:focus-visible::after {
+    border-color: #ffffff;
   }
 }
 
@@ -887,6 +917,12 @@ exports[`<AdminUsers /> should render correctly with createError 1`] = `
 @media (prefers-color-scheme:dark) {
   .c12 {
     box-shadow: 0.44rem 0.44rem 1rem 0 #00000000;
+  }
+}
+
+@media (prefers-color-scheme:dark) {
+  .c12:focus-visible::after {
+    border-color: #ffffff;
   }
 }
 
@@ -1008,14 +1044,12 @@ exports[`<AdminUsers /> should render correctly with creating=true 1`] = `
   fill: #9932cc;
 }
 
-.c2:focus-within,
-.c2:focus {
+.c2:focus-visible {
   position: relative;
   outline: none !important;
 }
 
-.c2:focus-within::after,
-.c2:focus::after {
+.c2:focus-visible::after {
   position: absolute;
   top: -0.35rem;
   right: -0.35rem;
@@ -1023,7 +1057,7 @@ exports[`<AdminUsers /> should render correctly with creating=true 1`] = `
   left: -0.35rem;
   content: '';
   display: block;
-  border: solid #007dfa3C 0.2rem;
+  border: solid #44aeff 0.2rem;
   border-radius: 0.5rem;
   pointer-events: none;
 }
@@ -1094,13 +1128,11 @@ exports[`<AdminUsers /> should render correctly with creating=true 1`] = `
   box-shadow: none;
 }
 
-.c7:focus-within,
-.c7:focus {
+.c7:focus-visible {
   outline: none !important;
 }
 
-.c7:focus-within::after,
-.c7:focus::after {
+.c7:focus-visible::after {
   position: absolute;
   top: -0.35rem;
   right: -0.35rem;
@@ -1108,7 +1140,7 @@ exports[`<AdminUsers /> should render correctly with creating=true 1`] = `
   left: -0.35rem;
   content: '';
   display: block;
-  border: solid #007dfa3C 0.2rem;
+  border: solid #44aeff 0.2rem;
   border-radius: 0.5rem;
   pointer-events: none;
 }
@@ -1234,6 +1266,24 @@ exports[`<AdminUsers /> should render correctly with creating=true 1`] = `
   text-align: left;
 }
 
+.c12:focus-visible {
+  position: relative;
+  outline: none !important;
+}
+
+.c12:focus-visible::after {
+  position: absolute;
+  top: -0.35rem;
+  right: -0.35rem;
+  bottom: -0.35rem;
+  left: -0.35rem;
+  content: '';
+  display: block;
+  border: solid #44aeff 0.2rem;
+  border-radius: 0.5rem;
+  pointer-events: none;
+}
+
 .c12:disabled {
   cursor: not-allowed;
 }
@@ -1244,9 +1294,8 @@ exports[`<AdminUsers /> should render correctly with creating=true 1`] = `
 }
 
 @media (prefers-color-scheme:dark) {
-  .c2:focus-within::after,
-  .c2:focus::after {
-    border-color: #007dfa3C;
+  .c2:focus-visible::after {
+    border-color: #ffffff;
   }
 }
 
@@ -1269,9 +1318,8 @@ exports[`<AdminUsers /> should render correctly with creating=true 1`] = `
 }
 
 @media (prefers-color-scheme:dark) {
-  .c7:focus-within::after,
-  .c7:focus::after {
-    border-color: #007dfa3C;
+  .c7:focus-visible::after {
+    border-color: #ffffff;
   }
 }
 
@@ -1324,6 +1372,12 @@ exports[`<AdminUsers /> should render correctly with creating=true 1`] = `
 @media (prefers-color-scheme:dark) {
   .c12 {
     box-shadow: 0.44rem 0.44rem 1rem 0 #00000000;
+  }
+}
+
+@media (prefers-color-scheme:dark) {
+  .c12:focus-visible::after {
+    border-color: #ffffff;
   }
 }
 
@@ -1567,14 +1621,12 @@ exports[`<AdminUsers /> should render correctly with loadError 1`] = `
   fill: #9932cc;
 }
 
-.c2:focus-within,
-.c2:focus {
+.c2:focus-visible {
   position: relative;
   outline: none !important;
 }
 
-.c2:focus-within::after,
-.c2:focus::after {
+.c2:focus-visible::after {
   position: absolute;
   top: -0.35rem;
   right: -0.35rem;
@@ -1582,7 +1634,7 @@ exports[`<AdminUsers /> should render correctly with loadError 1`] = `
   left: -0.35rem;
   content: '';
   display: block;
-  border: solid #007dfa3C 0.2rem;
+  border: solid #44aeff 0.2rem;
   border-radius: 0.5rem;
   pointer-events: none;
 }
@@ -1653,13 +1705,11 @@ exports[`<AdminUsers /> should render correctly with loadError 1`] = `
   box-shadow: none;
 }
 
-.c7:focus-within,
-.c7:focus {
+.c7:focus-visible {
   outline: none !important;
 }
 
-.c7:focus-within::after,
-.c7:focus::after {
+.c7:focus-visible::after {
   position: absolute;
   top: -0.35rem;
   right: -0.35rem;
@@ -1667,7 +1717,7 @@ exports[`<AdminUsers /> should render correctly with loadError 1`] = `
   left: -0.35rem;
   content: '';
   display: block;
-  border: solid #007dfa3C 0.2rem;
+  border: solid #44aeff 0.2rem;
   border-radius: 0.5rem;
   pointer-events: none;
 }
@@ -1810,6 +1860,24 @@ exports[`<AdminUsers /> should render correctly with loadError 1`] = `
   text-align: left;
 }
 
+.c14:focus-visible {
+  position: relative;
+  outline: none !important;
+}
+
+.c14:focus-visible::after {
+  position: absolute;
+  top: -0.35rem;
+  right: -0.35rem;
+  bottom: -0.35rem;
+  left: -0.35rem;
+  content: '';
+  display: block;
+  border: solid #44aeff 0.2rem;
+  border-radius: 0.5rem;
+  pointer-events: none;
+}
+
 .c14:disabled {
   cursor: not-allowed;
 }
@@ -1820,9 +1888,8 @@ exports[`<AdminUsers /> should render correctly with loadError 1`] = `
 }
 
 @media (prefers-color-scheme:dark) {
-  .c2:focus-within::after,
-  .c2:focus::after {
-    border-color: #007dfa3C;
+  .c2:focus-visible::after {
+    border-color: #ffffff;
   }
 }
 
@@ -1845,9 +1912,8 @@ exports[`<AdminUsers /> should render correctly with loadError 1`] = `
 }
 
 @media (prefers-color-scheme:dark) {
-  .c7:focus-within::after,
-  .c7:focus::after {
-    border-color: #007dfa3C;
+  .c7:focus-visible::after {
+    border-color: #ffffff;
   }
 }
 
@@ -1907,6 +1973,12 @@ exports[`<AdminUsers /> should render correctly with loadError 1`] = `
 @media (prefers-color-scheme:dark) {
   .c14 {
     box-shadow: 0.44rem 0.44rem 1rem 0 #00000000;
+  }
+}
+
+@media (prefers-color-scheme:dark) {
+  .c14:focus-visible::after {
+    border-color: #ffffff;
   }
 }
 
@@ -2039,14 +2111,12 @@ exports[`<AdminUsers /> should render correctly with loading=true 1`] = `
   fill: #9932cc;
 }
 
-.c2:focus-within,
-.c2:focus {
+.c2:focus-visible {
   position: relative;
   outline: none !important;
 }
 
-.c2:focus-within::after,
-.c2:focus::after {
+.c2:focus-visible::after {
   position: absolute;
   top: -0.35rem;
   right: -0.35rem;
@@ -2054,7 +2124,7 @@ exports[`<AdminUsers /> should render correctly with loading=true 1`] = `
   left: -0.35rem;
   content: '';
   display: block;
-  border: solid #007dfa3C 0.2rem;
+  border: solid #44aeff 0.2rem;
   border-radius: 0.5rem;
   pointer-events: none;
 }
@@ -2302,13 +2372,11 @@ exports[`<AdminUsers /> should render correctly with loading=true 1`] = `
   cursor: default;
 }
 
-.c7:focus-within,
-.c7:focus {
+.c7:focus-visible {
   outline: none !important;
 }
 
-.c7:focus-within::after,
-.c7:focus::after {
+.c7:focus-visible::after {
   position: absolute;
   top: -0.35rem;
   right: -0.35rem;
@@ -2316,7 +2384,7 @@ exports[`<AdminUsers /> should render correctly with loading=true 1`] = `
   left: -0.35rem;
   content: '';
   display: block;
-  border: solid #007dfa3C 0.2rem;
+  border: solid #44aeff 0.2rem;
   border-radius: 0.5rem;
   pointer-events: none;
 }
@@ -2358,13 +2426,11 @@ exports[`<AdminUsers /> should render correctly with loading=true 1`] = `
   box-shadow: none;
 }
 
-.c19:focus-within,
-.c19:focus {
+.c19:focus-visible {
   outline: none !important;
 }
 
-.c19:focus-within::after,
-.c19:focus::after {
+.c19:focus-visible::after {
   position: absolute;
   top: -0.35rem;
   right: -0.35rem;
@@ -2372,7 +2438,7 @@ exports[`<AdminUsers /> should render correctly with loading=true 1`] = `
   left: -0.35rem;
   content: '';
   display: block;
-  border: solid #007dfa3C 0.2rem;
+  border: solid #44aeff 0.2rem;
   border-radius: 0.5rem;
   pointer-events: none;
 }
@@ -2530,6 +2596,24 @@ exports[`<AdminUsers /> should render correctly with loading=true 1`] = `
   text-align: left;
 }
 
+.c24:focus-visible {
+  position: relative;
+  outline: none !important;
+}
+
+.c24:focus-visible::after {
+  position: absolute;
+  top: -0.35rem;
+  right: -0.35rem;
+  bottom: -0.35rem;
+  left: -0.35rem;
+  content: '';
+  display: block;
+  border: solid #44aeff 0.2rem;
+  border-radius: 0.5rem;
+  pointer-events: none;
+}
+
 .c24:disabled {
   cursor: not-allowed;
 }
@@ -2540,9 +2624,8 @@ exports[`<AdminUsers /> should render correctly with loading=true 1`] = `
 }
 
 @media (prefers-color-scheme:dark) {
-  .c2:focus-within::after,
-  .c2:focus::after {
-    border-color: #007dfa3C;
+  .c2:focus-visible::after {
+    border-color: #ffffff;
   }
 }
 
@@ -2571,9 +2654,8 @@ exports[`<AdminUsers /> should render correctly with loading=true 1`] = `
 }
 
 @media (prefers-color-scheme:dark) {
-  .c7:focus-within::after,
-  .c7:focus::after {
-    border-color: #007dfa3C;
+  .c7:focus-visible::after {
+    border-color: #ffffff;
   }
 }
 
@@ -2609,9 +2691,8 @@ exports[`<AdminUsers /> should render correctly with loading=true 1`] = `
 }
 
 @media (prefers-color-scheme:dark) {
-  .c19:focus-within::after,
-  .c19:focus::after {
-    border-color: #007dfa3C;
+  .c19:focus-visible::after {
+    border-color: #ffffff;
   }
 }
 
@@ -2664,6 +2745,12 @@ exports[`<AdminUsers /> should render correctly with loading=true 1`] = `
 @media (prefers-color-scheme:dark) {
   .c24 {
     box-shadow: 0.44rem 0.44rem 1rem 0 #00000000;
+  }
+}
+
+@media (prefers-color-scheme:dark) {
+  .c24:focus-visible::after {
+    border-color: #ffffff;
   }
 }
 
@@ -2819,14 +2906,12 @@ exports[`<AdminUsers /> should render correctly with removeError 1`] = `
   fill: #9932cc;
 }
 
-.c2:focus-within,
-.c2:focus {
+.c2:focus-visible {
   position: relative;
   outline: none !important;
 }
 
-.c2:focus-within::after,
-.c2:focus::after {
+.c2:focus-visible::after {
   position: absolute;
   top: -0.35rem;
   right: -0.35rem;
@@ -2834,7 +2919,7 @@ exports[`<AdminUsers /> should render correctly with removeError 1`] = `
   left: -0.35rem;
   content: '';
   display: block;
-  border: solid #007dfa3C 0.2rem;
+  border: solid #44aeff 0.2rem;
   border-radius: 0.5rem;
   pointer-events: none;
 }
@@ -2905,13 +2990,11 @@ exports[`<AdminUsers /> should render correctly with removeError 1`] = `
   box-shadow: none;
 }
 
-.c7:focus-within,
-.c7:focus {
+.c7:focus-visible {
   outline: none !important;
 }
 
-.c7:focus-within::after,
-.c7:focus::after {
+.c7:focus-visible::after {
   position: absolute;
   top: -0.35rem;
   right: -0.35rem;
@@ -2919,7 +3002,7 @@ exports[`<AdminUsers /> should render correctly with removeError 1`] = `
   left: -0.35rem;
   content: '';
   display: block;
-  border: solid #007dfa3C 0.2rem;
+  border: solid #44aeff 0.2rem;
   border-radius: 0.5rem;
   pointer-events: none;
 }
@@ -3045,6 +3128,24 @@ exports[`<AdminUsers /> should render correctly with removeError 1`] = `
   text-align: left;
 }
 
+.c12:focus-visible {
+  position: relative;
+  outline: none !important;
+}
+
+.c12:focus-visible::after {
+  position: absolute;
+  top: -0.35rem;
+  right: -0.35rem;
+  bottom: -0.35rem;
+  left: -0.35rem;
+  content: '';
+  display: block;
+  border: solid #44aeff 0.2rem;
+  border-radius: 0.5rem;
+  pointer-events: none;
+}
+
 .c12:disabled {
   cursor: not-allowed;
 }
@@ -3055,9 +3156,8 @@ exports[`<AdminUsers /> should render correctly with removeError 1`] = `
 }
 
 @media (prefers-color-scheme:dark) {
-  .c2:focus-within::after,
-  .c2:focus::after {
-    border-color: #007dfa3C;
+  .c2:focus-visible::after {
+    border-color: #ffffff;
   }
 }
 
@@ -3080,9 +3180,8 @@ exports[`<AdminUsers /> should render correctly with removeError 1`] = `
 }
 
 @media (prefers-color-scheme:dark) {
-  .c7:focus-within::after,
-  .c7:focus::after {
-    border-color: #007dfa3C;
+  .c7:focus-visible::after {
+    border-color: #ffffff;
   }
 }
 
@@ -3135,6 +3234,12 @@ exports[`<AdminUsers /> should render correctly with removeError 1`] = `
 @media (prefers-color-scheme:dark) {
   .c12 {
     box-shadow: 0.44rem 0.44rem 1rem 0 #00000000;
+  }
+}
+
+@media (prefers-color-scheme:dark) {
+  .c12:focus-visible::after {
+    border-color: #ffffff;
   }
 }
 
@@ -3256,14 +3361,12 @@ exports[`<AdminUsers /> should render correctly with removing=true 1`] = `
   fill: #9932cc;
 }
 
-.c2:focus-within,
-.c2:focus {
+.c2:focus-visible {
   position: relative;
   outline: none !important;
 }
 
-.c2:focus-within::after,
-.c2:focus::after {
+.c2:focus-visible::after {
   position: absolute;
   top: -0.35rem;
   right: -0.35rem;
@@ -3271,7 +3374,7 @@ exports[`<AdminUsers /> should render correctly with removing=true 1`] = `
   left: -0.35rem;
   content: '';
   display: block;
-  border: solid #007dfa3C 0.2rem;
+  border: solid #44aeff 0.2rem;
   border-radius: 0.5rem;
   pointer-events: none;
 }
@@ -3342,13 +3445,11 @@ exports[`<AdminUsers /> should render correctly with removing=true 1`] = `
   box-shadow: none;
 }
 
-.c7:focus-within,
-.c7:focus {
+.c7:focus-visible {
   outline: none !important;
 }
 
-.c7:focus-within::after,
-.c7:focus::after {
+.c7:focus-visible::after {
   position: absolute;
   top: -0.35rem;
   right: -0.35rem;
@@ -3356,7 +3457,7 @@ exports[`<AdminUsers /> should render correctly with removing=true 1`] = `
   left: -0.35rem;
   content: '';
   display: block;
-  border: solid #007dfa3C 0.2rem;
+  border: solid #44aeff 0.2rem;
   border-radius: 0.5rem;
   pointer-events: none;
 }
@@ -3482,6 +3583,24 @@ exports[`<AdminUsers /> should render correctly with removing=true 1`] = `
   text-align: left;
 }
 
+.c12:focus-visible {
+  position: relative;
+  outline: none !important;
+}
+
+.c12:focus-visible::after {
+  position: absolute;
+  top: -0.35rem;
+  right: -0.35rem;
+  bottom: -0.35rem;
+  left: -0.35rem;
+  content: '';
+  display: block;
+  border: solid #44aeff 0.2rem;
+  border-radius: 0.5rem;
+  pointer-events: none;
+}
+
 .c12:disabled {
   cursor: not-allowed;
 }
@@ -3492,9 +3611,8 @@ exports[`<AdminUsers /> should render correctly with removing=true 1`] = `
 }
 
 @media (prefers-color-scheme:dark) {
-  .c2:focus-within::after,
-  .c2:focus::after {
-    border-color: #007dfa3C;
+  .c2:focus-visible::after {
+    border-color: #ffffff;
   }
 }
 
@@ -3517,9 +3635,8 @@ exports[`<AdminUsers /> should render correctly with removing=true 1`] = `
 }
 
 @media (prefers-color-scheme:dark) {
-  .c7:focus-within::after,
-  .c7:focus::after {
-    border-color: #007dfa3C;
+  .c7:focus-visible::after {
+    border-color: #ffffff;
   }
 }
 
@@ -3572,6 +3689,12 @@ exports[`<AdminUsers /> should render correctly with removing=true 1`] = `
 @media (prefers-color-scheme:dark) {
   .c12 {
     box-shadow: 0.44rem 0.44rem 1rem 0 #00000000;
+  }
+}
+
+@media (prefers-color-scheme:dark) {
+  .c12:focus-visible::after {
+    border-color: #ffffff;
   }
 }
 
@@ -3693,14 +3816,12 @@ exports[`<AdminUsers /> should render correctly with requestError 1`] = `
   fill: #9932cc;
 }
 
-.c2:focus-within,
-.c2:focus {
+.c2:focus-visible {
   position: relative;
   outline: none !important;
 }
 
-.c2:focus-within::after,
-.c2:focus::after {
+.c2:focus-visible::after {
   position: absolute;
   top: -0.35rem;
   right: -0.35rem;
@@ -3708,7 +3829,7 @@ exports[`<AdminUsers /> should render correctly with requestError 1`] = `
   left: -0.35rem;
   content: '';
   display: block;
-  border: solid #007dfa3C 0.2rem;
+  border: solid #44aeff 0.2rem;
   border-radius: 0.5rem;
   pointer-events: none;
 }
@@ -3779,13 +3900,11 @@ exports[`<AdminUsers /> should render correctly with requestError 1`] = `
   box-shadow: none;
 }
 
-.c7:focus-within,
-.c7:focus {
+.c7:focus-visible {
   outline: none !important;
 }
 
-.c7:focus-within::after,
-.c7:focus::after {
+.c7:focus-visible::after {
   position: absolute;
   top: -0.35rem;
   right: -0.35rem;
@@ -3793,7 +3912,7 @@ exports[`<AdminUsers /> should render correctly with requestError 1`] = `
   left: -0.35rem;
   content: '';
   display: block;
-  border: solid #007dfa3C 0.2rem;
+  border: solid #44aeff 0.2rem;
   border-radius: 0.5rem;
   pointer-events: none;
 }
@@ -3919,6 +4038,24 @@ exports[`<AdminUsers /> should render correctly with requestError 1`] = `
   text-align: left;
 }
 
+.c12:focus-visible {
+  position: relative;
+  outline: none !important;
+}
+
+.c12:focus-visible::after {
+  position: absolute;
+  top: -0.35rem;
+  right: -0.35rem;
+  bottom: -0.35rem;
+  left: -0.35rem;
+  content: '';
+  display: block;
+  border: solid #44aeff 0.2rem;
+  border-radius: 0.5rem;
+  pointer-events: none;
+}
+
 .c12:disabled {
   cursor: not-allowed;
 }
@@ -3929,9 +4066,8 @@ exports[`<AdminUsers /> should render correctly with requestError 1`] = `
 }
 
 @media (prefers-color-scheme:dark) {
-  .c2:focus-within::after,
-  .c2:focus::after {
-    border-color: #007dfa3C;
+  .c2:focus-visible::after {
+    border-color: #ffffff;
   }
 }
 
@@ -3954,9 +4090,8 @@ exports[`<AdminUsers /> should render correctly with requestError 1`] = `
 }
 
 @media (prefers-color-scheme:dark) {
-  .c7:focus-within::after,
-  .c7:focus::after {
-    border-color: #007dfa3C;
+  .c7:focus-visible::after {
+    border-color: #ffffff;
   }
 }
 
@@ -4009,6 +4144,12 @@ exports[`<AdminUsers /> should render correctly with requestError 1`] = `
 @media (prefers-color-scheme:dark) {
   .c12 {
     box-shadow: 0.44rem 0.44rem 1rem 0 #00000000;
+  }
+}
+
+@media (prefers-color-scheme:dark) {
+  .c12:focus-visible::after {
+    border-color: #ffffff;
   }
 }
 
@@ -4130,14 +4271,12 @@ exports[`<AdminUsers /> should render correctly with requesting=true 1`] = `
   fill: #9932cc;
 }
 
-.c2:focus-within,
-.c2:focus {
+.c2:focus-visible {
   position: relative;
   outline: none !important;
 }
 
-.c2:focus-within::after,
-.c2:focus::after {
+.c2:focus-visible::after {
   position: absolute;
   top: -0.35rem;
   right: -0.35rem;
@@ -4145,7 +4284,7 @@ exports[`<AdminUsers /> should render correctly with requesting=true 1`] = `
   left: -0.35rem;
   content: '';
   display: block;
-  border: solid #007dfa3C 0.2rem;
+  border: solid #44aeff 0.2rem;
   border-radius: 0.5rem;
   pointer-events: none;
 }
@@ -4216,13 +4355,11 @@ exports[`<AdminUsers /> should render correctly with requesting=true 1`] = `
   box-shadow: none;
 }
 
-.c7:focus-within,
-.c7:focus {
+.c7:focus-visible {
   outline: none !important;
 }
 
-.c7:focus-within::after,
-.c7:focus::after {
+.c7:focus-visible::after {
   position: absolute;
   top: -0.35rem;
   right: -0.35rem;
@@ -4230,7 +4367,7 @@ exports[`<AdminUsers /> should render correctly with requesting=true 1`] = `
   left: -0.35rem;
   content: '';
   display: block;
-  border: solid #007dfa3C 0.2rem;
+  border: solid #44aeff 0.2rem;
   border-radius: 0.5rem;
   pointer-events: none;
 }
@@ -4356,6 +4493,24 @@ exports[`<AdminUsers /> should render correctly with requesting=true 1`] = `
   text-align: left;
 }
 
+.c12:focus-visible {
+  position: relative;
+  outline: none !important;
+}
+
+.c12:focus-visible::after {
+  position: absolute;
+  top: -0.35rem;
+  right: -0.35rem;
+  bottom: -0.35rem;
+  left: -0.35rem;
+  content: '';
+  display: block;
+  border: solid #44aeff 0.2rem;
+  border-radius: 0.5rem;
+  pointer-events: none;
+}
+
 .c12:disabled {
   cursor: not-allowed;
 }
@@ -4366,9 +4521,8 @@ exports[`<AdminUsers /> should render correctly with requesting=true 1`] = `
 }
 
 @media (prefers-color-scheme:dark) {
-  .c2:focus-within::after,
-  .c2:focus::after {
-    border-color: #007dfa3C;
+  .c2:focus-visible::after {
+    border-color: #ffffff;
   }
 }
 
@@ -4391,9 +4545,8 @@ exports[`<AdminUsers /> should render correctly with requesting=true 1`] = `
 }
 
 @media (prefers-color-scheme:dark) {
-  .c7:focus-within::after,
-  .c7:focus::after {
-    border-color: #007dfa3C;
+  .c7:focus-visible::after {
+    border-color: #ffffff;
   }
 }
 
@@ -4446,6 +4599,12 @@ exports[`<AdminUsers /> should render correctly with requesting=true 1`] = `
 @media (prefers-color-scheme:dark) {
   .c12 {
     box-shadow: 0.44rem 0.44rem 1rem 0 #00000000;
+  }
+}
+
+@media (prefers-color-scheme:dark) {
+  .c12:focus-visible::after {
+    border-color: #ffffff;
   }
 }
 
@@ -4567,14 +4726,12 @@ exports[`<AdminUsers /> should render correctly with updateError 1`] = `
   fill: #9932cc;
 }
 
-.c2:focus-within,
-.c2:focus {
+.c2:focus-visible {
   position: relative;
   outline: none !important;
 }
 
-.c2:focus-within::after,
-.c2:focus::after {
+.c2:focus-visible::after {
   position: absolute;
   top: -0.35rem;
   right: -0.35rem;
@@ -4582,7 +4739,7 @@ exports[`<AdminUsers /> should render correctly with updateError 1`] = `
   left: -0.35rem;
   content: '';
   display: block;
-  border: solid #007dfa3C 0.2rem;
+  border: solid #44aeff 0.2rem;
   border-radius: 0.5rem;
   pointer-events: none;
 }
@@ -4653,13 +4810,11 @@ exports[`<AdminUsers /> should render correctly with updateError 1`] = `
   box-shadow: none;
 }
 
-.c7:focus-within,
-.c7:focus {
+.c7:focus-visible {
   outline: none !important;
 }
 
-.c7:focus-within::after,
-.c7:focus::after {
+.c7:focus-visible::after {
   position: absolute;
   top: -0.35rem;
   right: -0.35rem;
@@ -4667,7 +4822,7 @@ exports[`<AdminUsers /> should render correctly with updateError 1`] = `
   left: -0.35rem;
   content: '';
   display: block;
-  border: solid #007dfa3C 0.2rem;
+  border: solid #44aeff 0.2rem;
   border-radius: 0.5rem;
   pointer-events: none;
 }
@@ -4793,6 +4948,24 @@ exports[`<AdminUsers /> should render correctly with updateError 1`] = `
   text-align: left;
 }
 
+.c12:focus-visible {
+  position: relative;
+  outline: none !important;
+}
+
+.c12:focus-visible::after {
+  position: absolute;
+  top: -0.35rem;
+  right: -0.35rem;
+  bottom: -0.35rem;
+  left: -0.35rem;
+  content: '';
+  display: block;
+  border: solid #44aeff 0.2rem;
+  border-radius: 0.5rem;
+  pointer-events: none;
+}
+
 .c12:disabled {
   cursor: not-allowed;
 }
@@ -4803,9 +4976,8 @@ exports[`<AdminUsers /> should render correctly with updateError 1`] = `
 }
 
 @media (prefers-color-scheme:dark) {
-  .c2:focus-within::after,
-  .c2:focus::after {
-    border-color: #007dfa3C;
+  .c2:focus-visible::after {
+    border-color: #ffffff;
   }
 }
 
@@ -4828,9 +5000,8 @@ exports[`<AdminUsers /> should render correctly with updateError 1`] = `
 }
 
 @media (prefers-color-scheme:dark) {
-  .c7:focus-within::after,
-  .c7:focus::after {
-    border-color: #007dfa3C;
+  .c7:focus-visible::after {
+    border-color: #ffffff;
   }
 }
 
@@ -4883,6 +5054,12 @@ exports[`<AdminUsers /> should render correctly with updateError 1`] = `
 @media (prefers-color-scheme:dark) {
   .c12 {
     box-shadow: 0.44rem 0.44rem 1rem 0 #00000000;
+  }
+}
+
+@media (prefers-color-scheme:dark) {
+  .c12:focus-visible::after {
+    border-color: #ffffff;
   }
 }
 
@@ -5004,14 +5181,12 @@ exports[`<AdminUsers /> should render correctly with updating=true 1`] = `
   fill: #9932cc;
 }
 
-.c2:focus-within,
-.c2:focus {
+.c2:focus-visible {
   position: relative;
   outline: none !important;
 }
 
-.c2:focus-within::after,
-.c2:focus::after {
+.c2:focus-visible::after {
   position: absolute;
   top: -0.35rem;
   right: -0.35rem;
@@ -5019,7 +5194,7 @@ exports[`<AdminUsers /> should render correctly with updating=true 1`] = `
   left: -0.35rem;
   content: '';
   display: block;
-  border: solid #007dfa3C 0.2rem;
+  border: solid #44aeff 0.2rem;
   border-radius: 0.5rem;
   pointer-events: none;
 }
@@ -5090,13 +5265,11 @@ exports[`<AdminUsers /> should render correctly with updating=true 1`] = `
   box-shadow: none;
 }
 
-.c7:focus-within,
-.c7:focus {
+.c7:focus-visible {
   outline: none !important;
 }
 
-.c7:focus-within::after,
-.c7:focus::after {
+.c7:focus-visible::after {
   position: absolute;
   top: -0.35rem;
   right: -0.35rem;
@@ -5104,7 +5277,7 @@ exports[`<AdminUsers /> should render correctly with updating=true 1`] = `
   left: -0.35rem;
   content: '';
   display: block;
-  border: solid #007dfa3C 0.2rem;
+  border: solid #44aeff 0.2rem;
   border-radius: 0.5rem;
   pointer-events: none;
 }
@@ -5230,6 +5403,24 @@ exports[`<AdminUsers /> should render correctly with updating=true 1`] = `
   text-align: left;
 }
 
+.c12:focus-visible {
+  position: relative;
+  outline: none !important;
+}
+
+.c12:focus-visible::after {
+  position: absolute;
+  top: -0.35rem;
+  right: -0.35rem;
+  bottom: -0.35rem;
+  left: -0.35rem;
+  content: '';
+  display: block;
+  border: solid #44aeff 0.2rem;
+  border-radius: 0.5rem;
+  pointer-events: none;
+}
+
 .c12:disabled {
   cursor: not-allowed;
 }
@@ -5240,9 +5431,8 @@ exports[`<AdminUsers /> should render correctly with updating=true 1`] = `
 }
 
 @media (prefers-color-scheme:dark) {
-  .c2:focus-within::after,
-  .c2:focus::after {
-    border-color: #007dfa3C;
+  .c2:focus-visible::after {
+    border-color: #ffffff;
   }
 }
 
@@ -5265,9 +5455,8 @@ exports[`<AdminUsers /> should render correctly with updating=true 1`] = `
 }
 
 @media (prefers-color-scheme:dark) {
-  .c7:focus-within::after,
-  .c7:focus::after {
-    border-color: #007dfa3C;
+  .c7:focus-visible::after {
+    border-color: #ffffff;
   }
 }
 
@@ -5320,6 +5509,12 @@ exports[`<AdminUsers /> should render correctly with updating=true 1`] = `
 @media (prefers-color-scheme:dark) {
   .c12 {
     box-shadow: 0.44rem 0.44rem 1rem 0 #00000000;
+  }
+}
+
+@media (prefers-color-scheme:dark) {
+  .c12:focus-visible::after {
+    border-color: #ffffff;
   }
 }
 
@@ -5441,14 +5636,12 @@ exports[`<AdminUsers /> should render correctly with user 1`] = `
   fill: #9932cc;
 }
 
-.c4:focus-within,
-.c4:focus {
+.c4:focus-visible {
   position: relative;
   outline: none !important;
 }
 
-.c4:focus-within::after,
-.c4:focus::after {
+.c4:focus-visible::after {
   position: absolute;
   top: -0.35rem;
   right: -0.35rem;
@@ -5456,7 +5649,7 @@ exports[`<AdminUsers /> should render correctly with user 1`] = `
   left: -0.35rem;
   content: '';
   display: block;
-  border: solid #007dfa3C 0.2rem;
+  border: solid #44aeff 0.2rem;
   border-radius: 0.5rem;
   pointer-events: none;
 }
@@ -5500,9 +5693,8 @@ exports[`<AdminUsers /> should render correctly with user 1`] = `
 }
 
 @media (prefers-color-scheme:dark) {
-  .c4:focus-within::after,
-  .c4:focus::after {
-    border-color: #007dfa3C;
+  .c4:focus-visible::after {
+    border-color: #ffffff;
   }
 }
 
@@ -5566,14 +5758,12 @@ exports[`<AdminUsers /> should render correctly with users 1`] = `
   fill: #9932cc;
 }
 
-.c2:focus-within,
-.c2:focus {
+.c2:focus-visible {
   position: relative;
   outline: none !important;
 }
 
-.c2:focus-within::after,
-.c2:focus::after {
+.c2:focus-visible::after {
   position: absolute;
   top: -0.35rem;
   right: -0.35rem;
@@ -5581,7 +5771,7 @@ exports[`<AdminUsers /> should render correctly with users 1`] = `
   left: -0.35rem;
   content: '';
   display: block;
-  border: solid #007dfa3C 0.2rem;
+  border: solid #44aeff 0.2rem;
   border-radius: 0.5rem;
   pointer-events: none;
 }
@@ -5652,13 +5842,11 @@ exports[`<AdminUsers /> should render correctly with users 1`] = `
   box-shadow: none;
 }
 
-.c7:focus-within,
-.c7:focus {
+.c7:focus-visible {
   outline: none !important;
 }
 
-.c7:focus-within::after,
-.c7:focus::after {
+.c7:focus-visible::after {
   position: absolute;
   top: -0.35rem;
   right: -0.35rem;
@@ -5666,7 +5854,7 @@ exports[`<AdminUsers /> should render correctly with users 1`] = `
   left: -0.35rem;
   content: '';
   display: block;
-  border: solid #007dfa3C 0.2rem;
+  border: solid #44aeff 0.2rem;
   border-radius: 0.5rem;
   pointer-events: none;
 }
@@ -5809,6 +5997,24 @@ exports[`<AdminUsers /> should render correctly with users 1`] = `
   text-align: left;
 }
 
+.c14:focus-visible {
+  position: relative;
+  outline: none !important;
+}
+
+.c14:focus-visible::after {
+  position: absolute;
+  top: -0.35rem;
+  right: -0.35rem;
+  bottom: -0.35rem;
+  left: -0.35rem;
+  content: '';
+  display: block;
+  border: solid #44aeff 0.2rem;
+  border-radius: 0.5rem;
+  pointer-events: none;
+}
+
 .c14:disabled {
   cursor: not-allowed;
 }
@@ -5819,9 +6025,8 @@ exports[`<AdminUsers /> should render correctly with users 1`] = `
 }
 
 @media (prefers-color-scheme:dark) {
-  .c2:focus-within::after,
-  .c2:focus::after {
-    border-color: #007dfa3C;
+  .c2:focus-visible::after {
+    border-color: #ffffff;
   }
 }
 
@@ -5844,9 +6049,8 @@ exports[`<AdminUsers /> should render correctly with users 1`] = `
 }
 
 @media (prefers-color-scheme:dark) {
-  .c7:focus-within::after,
-  .c7:focus::after {
-    border-color: #007dfa3C;
+  .c7:focus-visible::after {
+    border-color: #ffffff;
   }
 }
 
@@ -5899,6 +6103,12 @@ exports[`<AdminUsers /> should render correctly with users 1`] = `
 @media (prefers-color-scheme:dark) {
   .c14 {
     box-shadow: 0.44rem 0.44rem 1rem 0 #00000000;
+  }
+}
+
+@media (prefers-color-scheme:dark) {
+  .c14:focus-visible::after {
+    border-color: #ffffff;
   }
 }
 

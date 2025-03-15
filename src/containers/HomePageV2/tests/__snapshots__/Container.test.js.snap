@@ -40,14 +40,12 @@ exports[`<Home /> should render correctly 1`] = `
   fill: #9932cc;
 }
 
-.c9:focus-within,
-.c9:focus {
+.c9:focus-visible {
   position: relative;
   outline: none !important;
 }
 
-.c9:focus-within::after,
-.c9:focus::after {
+.c9:focus-visible::after {
   position: absolute;
   top: -0.35rem;
   right: -0.35rem;
@@ -55,7 +53,7 @@ exports[`<Home /> should render correctly 1`] = `
   left: -0.35rem;
   content: '';
   display: block;
-  border: solid #007dfa3C 0.2rem;
+  border: solid #44aeff 0.2rem;
   border-radius: 0.5rem;
   pointer-events: none;
 }
@@ -368,13 +366,11 @@ exports[`<Home /> should render correctly 1`] = `
   display: inline-block;
 }
 
-.c42:focus-within,
-.c42:focus {
+.c42:focus-visible {
   outline: none !important;
 }
 
-.c42:focus-within::after,
-.c42:focus::after {
+.c42:focus-visible::after {
   position: absolute;
   top: -0.35rem;
   right: -0.35rem;
@@ -382,7 +378,7 @@ exports[`<Home /> should render correctly 1`] = `
   left: -0.35rem;
   content: '';
   display: block;
-  border: solid #007dfa3C 0.2rem;
+  border: solid #44aeff 0.2rem;
   border-radius: 0.5rem;
   pointer-events: none;
 }
@@ -742,9 +738,8 @@ exports[`<Home /> should render correctly 1`] = `
 }
 
 @media (prefers-color-scheme:dark) {
-  .c9:focus-within::after,
-  .c9:focus::after {
-    border-color: #007dfa3C;
+  .c9:focus-visible::after {
+    border-color: #ffffff;
   }
 }
 
@@ -864,9 +859,8 @@ exports[`<Home /> should render correctly 1`] = `
 }
 
 @media (prefers-color-scheme:dark) {
-  .c42:focus-within::after,
-  .c42:focus::after {
-    border-color: #007dfa3C;
+  .c42:focus-visible::after {
+    border-color: #ffffff;
   }
 }
 
@@ -2696,14 +2690,12 @@ exports[`<Home /> should render correctly with admin user 1`] = `
   fill: #9932cc;
 }
 
-.c9:focus-within,
-.c9:focus {
+.c9:focus-visible {
   position: relative;
   outline: none !important;
 }
 
-.c9:focus-within::after,
-.c9:focus::after {
+.c9:focus-visible::after {
   position: absolute;
   top: -0.35rem;
   right: -0.35rem;
@@ -2711,7 +2703,7 @@ exports[`<Home /> should render correctly with admin user 1`] = `
   left: -0.35rem;
   content: '';
   display: block;
-  border: solid #007dfa3C 0.2rem;
+  border: solid #44aeff 0.2rem;
   border-radius: 0.5rem;
   pointer-events: none;
 }
@@ -3024,13 +3016,11 @@ exports[`<Home /> should render correctly with admin user 1`] = `
   display: inline-block;
 }
 
-.c42:focus-within,
-.c42:focus {
+.c42:focus-visible {
   outline: none !important;
 }
 
-.c42:focus-within::after,
-.c42:focus::after {
+.c42:focus-visible::after {
   position: absolute;
   top: -0.35rem;
   right: -0.35rem;
@@ -3038,7 +3028,7 @@ exports[`<Home /> should render correctly with admin user 1`] = `
   left: -0.35rem;
   content: '';
   display: block;
-  border: solid #007dfa3C 0.2rem;
+  border: solid #44aeff 0.2rem;
   border-radius: 0.5rem;
   pointer-events: none;
 }
@@ -3398,9 +3388,8 @@ exports[`<Home /> should render correctly with admin user 1`] = `
 }
 
 @media (prefers-color-scheme:dark) {
-  .c9:focus-within::after,
-  .c9:focus::after {
-    border-color: #007dfa3C;
+  .c9:focus-visible::after {
+    border-color: #ffffff;
   }
 }
 
@@ -3520,9 +3509,8 @@ exports[`<Home /> should render correctly with admin user 1`] = `
 }
 
 @media (prefers-color-scheme:dark) {
-  .c42:focus-within::after,
-  .c42:focus::after {
-    border-color: #007dfa3C;
+  .c42:focus-visible::after {
+    border-color: #ffffff;
   }
 }
 
@@ -5352,14 +5340,12 @@ exports[`<Home /> should render correctly with no user 1`] = `
   fill: #9932cc;
 }
 
-.c9:focus-within,
-.c9:focus {
+.c9:focus-visible {
   position: relative;
   outline: none !important;
 }
 
-.c9:focus-within::after,
-.c9:focus::after {
+.c9:focus-visible::after {
   position: absolute;
   top: -0.35rem;
   right: -0.35rem;
@@ -5367,7 +5353,7 @@ exports[`<Home /> should render correctly with no user 1`] = `
   left: -0.35rem;
   content: '';
   display: block;
-  border: solid #007dfa3C 0.2rem;
+  border: solid #44aeff 0.2rem;
   border-radius: 0.5rem;
   pointer-events: none;
 }
@@ -5680,13 +5666,11 @@ exports[`<Home /> should render correctly with no user 1`] = `
   display: inline-block;
 }
 
-.c42:focus-within,
-.c42:focus {
+.c42:focus-visible {
   outline: none !important;
 }
 
-.c42:focus-within::after,
-.c42:focus::after {
+.c42:focus-visible::after {
   position: absolute;
   top: -0.35rem;
   right: -0.35rem;
@@ -5694,7 +5678,7 @@ exports[`<Home /> should render correctly with no user 1`] = `
   left: -0.35rem;
   content: '';
   display: block;
-  border: solid #007dfa3C 0.2rem;
+  border: solid #44aeff 0.2rem;
   border-radius: 0.5rem;
   pointer-events: none;
 }
@@ -6054,9 +6038,8 @@ exports[`<Home /> should render correctly with no user 1`] = `
 }
 
 @media (prefers-color-scheme:dark) {
-  .c9:focus-within::after,
-  .c9:focus::after {
-    border-color: #007dfa3C;
+  .c9:focus-visible::after {
+    border-color: #ffffff;
   }
 }
 
@@ -6176,9 +6159,8 @@ exports[`<Home /> should render correctly with no user 1`] = `
 }
 
 @media (prefers-color-scheme:dark) {
-  .c42:focus-within::after,
-  .c42:focus::after {
-    border-color: #007dfa3C;
+  .c42:focus-visible::after {
+    border-color: #ffffff;
   }
 }
 
@@ -8008,14 +7990,12 @@ exports[`<Home /> should render correctly with user 1`] = `
   fill: #9932cc;
 }
 
-.c9:focus-within,
-.c9:focus {
+.c9:focus-visible {
   position: relative;
   outline: none !important;
 }
 
-.c9:focus-within::after,
-.c9:focus::after {
+.c9:focus-visible::after {
   position: absolute;
   top: -0.35rem;
   right: -0.35rem;
@@ -8023,7 +8003,7 @@ exports[`<Home /> should render correctly with user 1`] = `
   left: -0.35rem;
   content: '';
   display: block;
-  border: solid #007dfa3C 0.2rem;
+  border: solid #44aeff 0.2rem;
   border-radius: 0.5rem;
   pointer-events: none;
 }
@@ -8336,13 +8316,11 @@ exports[`<Home /> should render correctly with user 1`] = `
   display: inline-block;
 }
 
-.c42:focus-within,
-.c42:focus {
+.c42:focus-visible {
   outline: none !important;
 }
 
-.c42:focus-within::after,
-.c42:focus::after {
+.c42:focus-visible::after {
   position: absolute;
   top: -0.35rem;
   right: -0.35rem;
@@ -8350,7 +8328,7 @@ exports[`<Home /> should render correctly with user 1`] = `
   left: -0.35rem;
   content: '';
   display: block;
-  border: solid #007dfa3C 0.2rem;
+  border: solid #44aeff 0.2rem;
   border-radius: 0.5rem;
   pointer-events: none;
 }
@@ -8710,9 +8688,8 @@ exports[`<Home /> should render correctly with user 1`] = `
 }
 
 @media (prefers-color-scheme:dark) {
-  .c9:focus-within::after,
-  .c9:focus::after {
-    border-color: #007dfa3C;
+  .c9:focus-visible::after {
+    border-color: #ffffff;
   }
 }
 
@@ -8832,9 +8809,8 @@ exports[`<Home /> should render correctly with user 1`] = `
 }
 
 @media (prefers-color-scheme:dark) {
-  .c42:focus-within::after,
-  .c42:focus::after {
-    border-color: #007dfa3C;
+  .c42:focus-visible::after {
+    border-color: #ffffff;
   }
 }
 
