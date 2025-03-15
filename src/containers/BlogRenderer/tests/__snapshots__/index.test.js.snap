@@ -27,14 +27,12 @@ exports[`<BlogRenderer /> should render correctly - index 1`] = `
   fill: #9932cc;
 }
 
-.c10:focus-within,
-.c10:focus {
+.c10:focus-visible {
   position: relative;
   outline: none !important;
 }
 
-.c10:focus-within::after,
-.c10:focus::after {
+.c10:focus-visible::after {
   position: absolute;
   top: -0.35rem;
   right: -0.35rem;
@@ -42,7 +40,7 @@ exports[`<BlogRenderer /> should render correctly - index 1`] = `
   left: -0.35rem;
   content: '';
   display: block;
-  border: solid #007dfa3C 0.2rem;
+  border: solid #44aeff 0.2rem;
   border-radius: 0.5rem;
   pointer-events: none;
 }
@@ -155,9 +153,8 @@ exports[`<BlogRenderer /> should render correctly - index 1`] = `
 }
 
 @media (prefers-color-scheme:dark) {
-  .c10:focus-within::after,
-  .c10:focus::after {
-    border-color: #007dfa3C;
+  .c10:focus-visible::after {
+    border-color: #ffffff;
   }
 }
 
@@ -334,14 +331,12 @@ exports[`<BlogRenderer /> should render correctly with blog 1`] = `
   fill: #9932cc;
 }
 
-.c0:focus-within,
-.c0:focus {
+.c0:focus-visible {
   position: relative;
   outline: none !important;
 }
 
-.c0:focus-within::after,
-.c0:focus::after {
+.c0:focus-visible::after {
   position: absolute;
   top: -0.35rem;
   right: -0.35rem;
@@ -349,7 +344,7 @@ exports[`<BlogRenderer /> should render correctly with blog 1`] = `
   left: -0.35rem;
   content: '';
   display: block;
-  border: solid #007dfa3C 0.2rem;
+  border: solid #44aeff 0.2rem;
   border-radius: 0.5rem;
   pointer-events: none;
 }
@@ -456,9 +451,8 @@ exports[`<BlogRenderer /> should render correctly with blog 1`] = `
 }
 
 @media (prefers-color-scheme:dark) {
-  .c0:focus-within::after,
-  .c0:focus::after {
-    border-color: #007dfa3C;
+  .c0:focus-visible::after {
+    border-color: #ffffff;
   }
 }
 
@@ -702,14 +696,12 @@ exports[`<BlogRenderer /> should render correctly with blog and admin 1`] = `
   fill: #9932cc;
 }
 
-.c0:focus-within,
-.c0:focus {
+.c0:focus-visible {
   position: relative;
   outline: none !important;
 }
 
-.c0:focus-within::after,
-.c0:focus::after {
+.c0:focus-visible::after {
   position: absolute;
   top: -0.35rem;
   right: -0.35rem;
@@ -717,7 +709,7 @@ exports[`<BlogRenderer /> should render correctly with blog and admin 1`] = `
   left: -0.35rem;
   content: '';
   display: block;
-  border: solid #007dfa3C 0.2rem;
+  border: solid #44aeff 0.2rem;
   border-radius: 0.5rem;
   pointer-events: none;
 }
@@ -828,9 +820,8 @@ exports[`<BlogRenderer /> should render correctly with blog and admin 1`] = `
 }
 
 @media (prefers-color-scheme:dark) {
-  .c0:focus-within::after,
-  .c0:focus::after {
-    border-color: #007dfa3C;
+  .c0:focus-visible::after {
+    border-color: #ffffff;
   }
 }
 
@@ -1075,14 +1066,12 @@ exports[`<BlogRenderer /> should render correctly with blog load error 1`] = `
   fill: #9932cc;
 }
 
-.c11:focus-within,
-.c11:focus {
+.c11:focus-visible {
   position: relative;
   outline: none !important;
 }
 
-.c11:focus-within::after,
-.c11:focus::after {
+.c11:focus-visible::after {
   position: absolute;
   top: -0.35rem;
   right: -0.35rem;
@@ -1090,7 +1079,7 @@ exports[`<BlogRenderer /> should render correctly with blog load error 1`] = `
   left: -0.35rem;
   content: '';
   display: block;
-  border: solid #007dfa3C 0.2rem;
+  border: solid #44aeff 0.2rem;
   border-radius: 0.5rem;
   pointer-events: none;
 }
@@ -1207,9 +1196,8 @@ exports[`<BlogRenderer /> should render correctly with blog load error 1`] = `
 }
 
 @media (prefers-color-scheme:dark) {
-  .c11:focus-within::after,
-  .c11:focus::after {
-    border-color: #007dfa3C;
+  .c11:focus-visible::after {
+    border-color: #ffffff;
   }
 }
 
@@ -1401,14 +1389,12 @@ exports[`<BlogRenderer /> should render correctly with initial state 1`] = `
   fill: #9932cc;
 }
 
-.c10:focus-within,
-.c10:focus {
+.c10:focus-visible {
   position: relative;
   outline: none !important;
 }
 
-.c10:focus-within::after,
-.c10:focus::after {
+.c10:focus-visible::after {
   position: absolute;
   top: -0.35rem;
   right: -0.35rem;
@@ -1416,7 +1402,7 @@ exports[`<BlogRenderer /> should render correctly with initial state 1`] = `
   left: -0.35rem;
   content: '';
   display: block;
-  border: solid #007dfa3C 0.2rem;
+  border: solid #44aeff 0.2rem;
   border-radius: 0.5rem;
   pointer-events: none;
 }
@@ -1529,9 +1515,8 @@ exports[`<BlogRenderer /> should render correctly with initial state 1`] = `
 }
 
 @media (prefers-color-scheme:dark) {
-  .c10:focus-within::after,
-  .c10:focus::after {
-    border-color: #007dfa3C;
+  .c10:focus-visible::after {
+    border-color: #ffffff;
   }
 }
 
@@ -1708,14 +1693,12 @@ exports[`<BlogRenderer /> should render correctly with ssrBlog 1`] = `
   fill: #9932cc;
 }
 
-.c0:focus-within,
-.c0:focus {
+.c0:focus-visible {
   position: relative;
   outline: none !important;
 }
 
-.c0:focus-within::after,
-.c0:focus::after {
+.c0:focus-visible::after {
   position: absolute;
   top: -0.35rem;
   right: -0.35rem;
@@ -1723,7 +1706,7 @@ exports[`<BlogRenderer /> should render correctly with ssrBlog 1`] = `
   left: -0.35rem;
   content: '';
   display: block;
-  border: solid #007dfa3C 0.2rem;
+  border: solid #44aeff 0.2rem;
   border-radius: 0.5rem;
   pointer-events: none;
 }
@@ -1830,9 +1813,8 @@ exports[`<BlogRenderer /> should render correctly with ssrBlog 1`] = `
 }
 
 @media (prefers-color-scheme:dark) {
-  .c0:focus-within::after,
-  .c0:focus::after {
-    border-color: #007dfa3C;
+  .c0:focus-visible::after {
+    border-color: #ffffff;
   }
 }
 

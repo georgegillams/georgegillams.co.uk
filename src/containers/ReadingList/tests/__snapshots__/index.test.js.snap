@@ -196,13 +196,11 @@ exports[`<BookList /> should render correctly authenticated with books 1`] = `
   box-shadow: none;
 }
 
-.c20:focus-within,
-.c20:focus {
+.c20:focus-visible {
   outline: none !important;
 }
 
-.c20:focus-within::after,
-.c20:focus::after {
+.c20:focus-visible::after {
   position: absolute;
   top: -0.35rem;
   right: -0.35rem;
@@ -210,7 +208,7 @@ exports[`<BookList /> should render correctly authenticated with books 1`] = `
   left: -0.35rem;
   content: '';
   display: block;
-  border: solid #007dfa3C 0.2rem;
+  border: solid #44aeff 0.2rem;
   border-radius: 0.5rem;
   pointer-events: none;
 }
@@ -252,13 +250,11 @@ exports[`<BookList /> should render correctly authenticated with books 1`] = `
   box-shadow: none;
 }
 
-.c23:focus-within,
-.c23:focus {
+.c23:focus-visible {
   outline: none !important;
 }
 
-.c23:focus-within::after,
-.c23:focus::after {
+.c23:focus-visible::after {
   position: absolute;
   top: -0.35rem;
   right: -0.35rem;
@@ -266,7 +262,7 @@ exports[`<BookList /> should render correctly authenticated with books 1`] = `
   left: -0.35rem;
   content: '';
   display: block;
-  border: solid #007dfa3C 0.2rem;
+  border: solid #44aeff 0.2rem;
   border-radius: 0.5rem;
   pointer-events: none;
 }
@@ -309,13 +305,11 @@ exports[`<BookList /> should render correctly authenticated with books 1`] = `
   cursor: default;
 }
 
-.c27:focus-within,
-.c27:focus {
+.c27:focus-visible {
   outline: none !important;
 }
 
-.c27:focus-within::after,
-.c27:focus::after {
+.c27:focus-visible::after {
   position: absolute;
   top: -0.35rem;
   right: -0.35rem;
@@ -323,7 +317,7 @@ exports[`<BookList /> should render correctly authenticated with books 1`] = `
   left: -0.35rem;
   content: '';
   display: block;
-  border: solid #007dfa3C 0.2rem;
+  border: solid #44aeff 0.2rem;
   border-radius: 0.5rem;
   pointer-events: none;
 }
@@ -419,13 +413,13 @@ exports[`<BookList /> should render correctly authenticated with books 1`] = `
 }
 
 .c14:focus-within,
-.c14:focus {
+.c14:focus-visible {
   position: relative;
   outline: none !important;
 }
 
 .c14:focus-within::after,
-.c14:focus::after {
+.c14:focus-visible::after {
   position: absolute;
   top: -0.35rem;
   right: -0.35rem;
@@ -433,7 +427,7 @@ exports[`<BookList /> should render correctly authenticated with books 1`] = `
   left: -0.35rem;
   content: '';
   display: block;
-  border: solid #007dfa3C 0.2rem;
+  border: solid #44aeff 0.2rem;
   border-radius: 0.5rem;
   pointer-events: none;
 }
@@ -515,9 +509,8 @@ exports[`<BookList /> should render correctly authenticated with books 1`] = `
 }
 
 @media (prefers-color-scheme:dark) {
-  .c20:focus-within::after,
-  .c20:focus::after {
-    border-color: #007dfa3C;
+  .c20:focus-visible::after {
+    border-color: #ffffff;
   }
 }
 
@@ -553,9 +546,8 @@ exports[`<BookList /> should render correctly authenticated with books 1`] = `
 }
 
 @media (prefers-color-scheme:dark) {
-  .c23:focus-within::after,
-  .c23:focus::after {
-    border-color: #007dfa3C;
+  .c23:focus-visible::after {
+    border-color: #ffffff;
   }
 }
 
@@ -591,9 +583,8 @@ exports[`<BookList /> should render correctly authenticated with books 1`] = `
 }
 
 @media (prefers-color-scheme:dark) {
-  .c27:focus-within::after,
-  .c27:focus::after {
-    border-color: #007dfa3C;
+  .c27:focus-visible::after {
+    border-color: #ffffff;
   }
 }
 
@@ -664,8 +655,8 @@ exports[`<BookList /> should render correctly authenticated with books 1`] = `
 
 @media (prefers-color-scheme:dark) {
   .c14:focus-within::after,
-  .c14:focus::after {
-    border-color: #007dfa3C;
+  .c14:focus-visible::after {
+    border-color: #ffffff;
   }
 }
 

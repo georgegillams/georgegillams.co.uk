@@ -641,13 +641,11 @@ exports[`<BooksList /> Should render correctly with deleteBook function 1`] = `
   box-shadow: none;
 }
 
-.c7:focus-within,
-.c7:focus {
+.c7:focus-visible {
   outline: none !important;
 }
 
-.c7:focus-within::after,
-.c7:focus::after {
+.c7:focus-visible::after {
   position: absolute;
   top: -0.35rem;
   right: -0.35rem;
@@ -655,7 +653,7 @@ exports[`<BooksList /> Should render correctly with deleteBook function 1`] = `
   left: -0.35rem;
   content: '';
   display: block;
-  border: solid #007dfa3C 0.2rem;
+  border: solid #44aeff 0.2rem;
   border-radius: 0.5rem;
   pointer-events: none;
 }
@@ -698,13 +696,11 @@ exports[`<BooksList /> Should render correctly with deleteBook function 1`] = `
   cursor: default;
 }
 
-.c12:focus-within,
-.c12:focus {
+.c12:focus-visible {
   outline: none !important;
 }
 
-.c12:focus-within::after,
-.c12:focus::after {
+.c12:focus-visible::after {
   position: absolute;
   top: -0.35rem;
   right: -0.35rem;
@@ -712,7 +708,7 @@ exports[`<BooksList /> Should render correctly with deleteBook function 1`] = `
   left: -0.35rem;
   content: '';
   display: block;
-  border: solid #007dfa3C 0.2rem;
+  border: solid #44aeff 0.2rem;
   border-radius: 0.5rem;
   pointer-events: none;
 }
@@ -804,9 +800,8 @@ exports[`<BooksList /> Should render correctly with deleteBook function 1`] = `
 }
 
 @media (prefers-color-scheme:dark) {
-  .c7:focus-within::after,
-  .c7:focus::after {
-    border-color: #007dfa3C;
+  .c7:focus-visible::after {
+    border-color: #ffffff;
   }
 }
 
@@ -842,9 +837,8 @@ exports[`<BooksList /> Should render correctly with deleteBook function 1`] = `
 }
 
 @media (prefers-color-scheme:dark) {
-  .c12:focus-within::after,
-  .c12:focus::after {
-    border-color: #007dfa3C;
+  .c12:focus-visible::after {
+    border-color: #ffffff;
   }
 }
 

@@ -156,13 +156,11 @@ exports[`<Account /> should render correctly with initial state 1`] = `
   box-shadow: none;
 }
 
-.c5:focus-within,
-.c5:focus {
+.c5:focus-visible {
   outline: none !important;
 }
 
-.c5:focus-within::after,
-.c5:focus::after {
+.c5:focus-visible::after {
   position: absolute;
   top: -0.35rem;
   right: -0.35rem;
@@ -170,7 +168,7 @@ exports[`<Account /> should render correctly with initial state 1`] = `
   left: -0.35rem;
   content: '';
   display: block;
-  border: solid #007dfa3C 0.2rem;
+  border: solid #44aeff 0.2rem;
   border-radius: 0.5rem;
   pointer-events: none;
 }
@@ -212,13 +210,11 @@ exports[`<Account /> should render correctly with initial state 1`] = `
   box-shadow: none;
 }
 
-.c8:focus-within,
-.c8:focus {
+.c8:focus-visible {
   outline: none !important;
 }
 
-.c8:focus-within::after,
-.c8:focus::after {
+.c8:focus-visible::after {
   position: absolute;
   top: -0.35rem;
   right: -0.35rem;
@@ -226,7 +222,7 @@ exports[`<Account /> should render correctly with initial state 1`] = `
   left: -0.35rem;
   content: '';
   display: block;
-  border: solid #007dfa3C 0.2rem;
+  border: solid #44aeff 0.2rem;
   border-radius: 0.5rem;
   pointer-events: none;
 }
@@ -285,9 +281,8 @@ exports[`<Account /> should render correctly with initial state 1`] = `
 }
 
 @media (prefers-color-scheme:dark) {
-  .c5:focus-within::after,
-  .c5:focus::after {
-    border-color: #007dfa3C;
+  .c5:focus-visible::after {
+    border-color: #ffffff;
   }
 }
 
@@ -323,9 +318,8 @@ exports[`<Account /> should render correctly with initial state 1`] = `
 }
 
 @media (prefers-color-scheme:dark) {
-  .c8:focus-within::after,
-  .c8:focus::after {
-    border-color: #007dfa3C;
+  .c8:focus-visible::after {
+    border-color: #ffffff;
   }
 }
 
@@ -450,13 +444,11 @@ exports[`<Account /> should render correctly with initial state 2`] = `
   box-shadow: none;
 }
 
-.c5:focus-within,
-.c5:focus {
+.c5:focus-visible {
   outline: none !important;
 }
 
-.c5:focus-within::after,
-.c5:focus::after {
+.c5:focus-visible::after {
   position: absolute;
   top: -0.35rem;
   right: -0.35rem;
@@ -464,7 +456,7 @@ exports[`<Account /> should render correctly with initial state 2`] = `
   left: -0.35rem;
   content: '';
   display: block;
-  border: solid #007dfa3C 0.2rem;
+  border: solid #44aeff 0.2rem;
   border-radius: 0.5rem;
   pointer-events: none;
 }
@@ -506,13 +498,11 @@ exports[`<Account /> should render correctly with initial state 2`] = `
   box-shadow: none;
 }
 
-.c8:focus-within,
-.c8:focus {
+.c8:focus-visible {
   outline: none !important;
 }
 
-.c8:focus-within::after,
-.c8:focus::after {
+.c8:focus-visible::after {
   position: absolute;
   top: -0.35rem;
   right: -0.35rem;
@@ -520,7 +510,7 @@ exports[`<Account /> should render correctly with initial state 2`] = `
   left: -0.35rem;
   content: '';
   display: block;
-  border: solid #007dfa3C 0.2rem;
+  border: solid #44aeff 0.2rem;
   border-radius: 0.5rem;
   pointer-events: none;
 }
@@ -579,9 +569,8 @@ exports[`<Account /> should render correctly with initial state 2`] = `
 }
 
 @media (prefers-color-scheme:dark) {
-  .c5:focus-within::after,
-  .c5:focus::after {
-    border-color: #007dfa3C;
+  .c5:focus-visible::after {
+    border-color: #ffffff;
   }
 }
 
@@ -617,9 +606,8 @@ exports[`<Account /> should render correctly with initial state 2`] = `
 }
 
 @media (prefers-color-scheme:dark) {
-  .c8:focus-within::after,
-  .c8:focus::after {
-    border-color: #007dfa3C;
+  .c8:focus-visible::after {
+    border-color: #ffffff;
   }
 }
 
@@ -744,13 +732,11 @@ exports[`<Account /> should render correctly with logOutError 1`] = `
   box-shadow: none;
 }
 
-.c5:focus-within,
-.c5:focus {
+.c5:focus-visible {
   outline: none !important;
 }
 
-.c5:focus-within::after,
-.c5:focus::after {
+.c5:focus-visible::after {
   position: absolute;
   top: -0.35rem;
   right: -0.35rem;
@@ -758,7 +744,7 @@ exports[`<Account /> should render correctly with logOutError 1`] = `
   left: -0.35rem;
   content: '';
   display: block;
-  border: solid #007dfa3C 0.2rem;
+  border: solid #44aeff 0.2rem;
   border-radius: 0.5rem;
   pointer-events: none;
 }
@@ -800,13 +786,11 @@ exports[`<Account /> should render correctly with logOutError 1`] = `
   box-shadow: none;
 }
 
-.c8:focus-within,
-.c8:focus {
+.c8:focus-visible {
   outline: none !important;
 }
 
-.c8:focus-within::after,
-.c8:focus::after {
+.c8:focus-visible::after {
   position: absolute;
   top: -0.35rem;
   right: -0.35rem;
@@ -814,7 +798,7 @@ exports[`<Account /> should render correctly with logOutError 1`] = `
   left: -0.35rem;
   content: '';
   display: block;
-  border: solid #007dfa3C 0.2rem;
+  border: solid #44aeff 0.2rem;
   border-radius: 0.5rem;
   pointer-events: none;
 }
@@ -873,9 +857,8 @@ exports[`<Account /> should render correctly with logOutError 1`] = `
 }
 
 @media (prefers-color-scheme:dark) {
-  .c5:focus-within::after,
-  .c5:focus::after {
-    border-color: #007dfa3C;
+  .c5:focus-visible::after {
+    border-color: #ffffff;
   }
 }
 
@@ -911,9 +894,8 @@ exports[`<Account /> should render correctly with logOutError 1`] = `
 }
 
 @media (prefers-color-scheme:dark) {
-  .c8:focus-within::after,
-  .c8:focus::after {
-    border-color: #007dfa3C;
+  .c8:focus-visible::after {
+    border-color: #ffffff;
   }
 }
 
@@ -1038,13 +1020,11 @@ exports[`<Account /> should render correctly with logOutResult 1`] = `
   box-shadow: none;
 }
 
-.c5:focus-within,
-.c5:focus {
+.c5:focus-visible {
   outline: none !important;
 }
 
-.c5:focus-within::after,
-.c5:focus::after {
+.c5:focus-visible::after {
   position: absolute;
   top: -0.35rem;
   right: -0.35rem;
@@ -1052,7 +1032,7 @@ exports[`<Account /> should render correctly with logOutResult 1`] = `
   left: -0.35rem;
   content: '';
   display: block;
-  border: solid #007dfa3C 0.2rem;
+  border: solid #44aeff 0.2rem;
   border-radius: 0.5rem;
   pointer-events: none;
 }
@@ -1094,13 +1074,11 @@ exports[`<Account /> should render correctly with logOutResult 1`] = `
   box-shadow: none;
 }
 
-.c8:focus-within,
-.c8:focus {
+.c8:focus-visible {
   outline: none !important;
 }
 
-.c8:focus-within::after,
-.c8:focus::after {
+.c8:focus-visible::after {
   position: absolute;
   top: -0.35rem;
   right: -0.35rem;
@@ -1108,7 +1086,7 @@ exports[`<Account /> should render correctly with logOutResult 1`] = `
   left: -0.35rem;
   content: '';
   display: block;
-  border: solid #007dfa3C 0.2rem;
+  border: solid #44aeff 0.2rem;
   border-radius: 0.5rem;
   pointer-events: none;
 }
@@ -1167,9 +1145,8 @@ exports[`<Account /> should render correctly with logOutResult 1`] = `
 }
 
 @media (prefers-color-scheme:dark) {
-  .c5:focus-within::after,
-  .c5:focus::after {
-    border-color: #007dfa3C;
+  .c5:focus-visible::after {
+    border-color: #ffffff;
   }
 }
 
@@ -1205,9 +1182,8 @@ exports[`<Account /> should render correctly with logOutResult 1`] = `
 }
 
 @media (prefers-color-scheme:dark) {
-  .c8:focus-within::after,
-  .c8:focus::after {
-    border-color: #007dfa3C;
+  .c8:focus-visible::after {
+    border-color: #ffffff;
   }
 }
 
@@ -1508,13 +1484,11 @@ exports[`<Account /> should render correctly with loggingOut=true 1`] = `
   box-shadow: none;
 }
 
-.c5:focus-within,
-.c5:focus {
+.c5:focus-visible {
   outline: none !important;
 }
 
-.c5:focus-within::after,
-.c5:focus::after {
+.c5:focus-visible::after {
   position: absolute;
   top: -0.35rem;
   right: -0.35rem;
@@ -1522,7 +1496,7 @@ exports[`<Account /> should render correctly with loggingOut=true 1`] = `
   left: -0.35rem;
   content: '';
   display: block;
-  border: solid #007dfa3C 0.2rem;
+  border: solid #44aeff 0.2rem;
   border-radius: 0.5rem;
   pointer-events: none;
 }
@@ -1565,13 +1539,11 @@ exports[`<Account /> should render correctly with loggingOut=true 1`] = `
   cursor: default;
 }
 
-.c8:focus-within,
-.c8:focus {
+.c8:focus-visible {
   outline: none !important;
 }
 
-.c8:focus-within::after,
-.c8:focus::after {
+.c8:focus-visible::after {
   position: absolute;
   top: -0.35rem;
   right: -0.35rem;
@@ -1579,7 +1551,7 @@ exports[`<Account /> should render correctly with loggingOut=true 1`] = `
   left: -0.35rem;
   content: '';
   display: block;
-  border: solid #007dfa3C 0.2rem;
+  border: solid #44aeff 0.2rem;
   border-radius: 0.5rem;
   pointer-events: none;
 }
@@ -1676,9 +1648,8 @@ exports[`<Account /> should render correctly with loggingOut=true 1`] = `
 }
 
 @media (prefers-color-scheme:dark) {
-  .c5:focus-within::after,
-  .c5:focus::after {
-    border-color: #007dfa3C;
+  .c5:focus-visible::after {
+    border-color: #ffffff;
   }
 }
 
@@ -1714,9 +1685,8 @@ exports[`<Account /> should render correctly with loggingOut=true 1`] = `
 }
 
 @media (prefers-color-scheme:dark) {
-  .c8:focus-within::after,
-  .c8:focus::after {
-    border-color: #007dfa3C;
+  .c8:focus-visible::after {
+    border-color: #ffffff;
   }
 }
 
@@ -1983,13 +1953,11 @@ exports[`<Account /> should render correctly with requestVerificationEmailError 
   box-shadow: none;
 }
 
-.c5:focus-within,
-.c5:focus {
+.c5:focus-visible {
   outline: none !important;
 }
 
-.c5:focus-within::after,
-.c5:focus::after {
+.c5:focus-visible::after {
   position: absolute;
   top: -0.35rem;
   right: -0.35rem;
@@ -1997,7 +1965,7 @@ exports[`<Account /> should render correctly with requestVerificationEmailError 
   left: -0.35rem;
   content: '';
   display: block;
-  border: solid #007dfa3C 0.2rem;
+  border: solid #44aeff 0.2rem;
   border-radius: 0.5rem;
   pointer-events: none;
 }
@@ -2039,13 +2007,11 @@ exports[`<Account /> should render correctly with requestVerificationEmailError 
   box-shadow: none;
 }
 
-.c8:focus-within,
-.c8:focus {
+.c8:focus-visible {
   outline: none !important;
 }
 
-.c8:focus-within::after,
-.c8:focus::after {
+.c8:focus-visible::after {
   position: absolute;
   top: -0.35rem;
   right: -0.35rem;
@@ -2053,7 +2019,7 @@ exports[`<Account /> should render correctly with requestVerificationEmailError 
   left: -0.35rem;
   content: '';
   display: block;
-  border: solid #007dfa3C 0.2rem;
+  border: solid #44aeff 0.2rem;
   border-radius: 0.5rem;
   pointer-events: none;
 }
@@ -2112,9 +2078,8 @@ exports[`<Account /> should render correctly with requestVerificationEmailError 
 }
 
 @media (prefers-color-scheme:dark) {
-  .c5:focus-within::after,
-  .c5:focus::after {
-    border-color: #007dfa3C;
+  .c5:focus-visible::after {
+    border-color: #ffffff;
   }
 }
 
@@ -2150,9 +2115,8 @@ exports[`<Account /> should render correctly with requestVerificationEmailError 
 }
 
 @media (prefers-color-scheme:dark) {
-  .c8:focus-within::after,
-  .c8:focus::after {
-    border-color: #007dfa3C;
+  .c8:focus-visible::after {
+    border-color: #ffffff;
   }
 }
 
@@ -2277,13 +2241,11 @@ exports[`<Account /> should render correctly with requestVerificationEmailResult
   box-shadow: none;
 }
 
-.c5:focus-within,
-.c5:focus {
+.c5:focus-visible {
   outline: none !important;
 }
 
-.c5:focus-within::after,
-.c5:focus::after {
+.c5:focus-visible::after {
   position: absolute;
   top: -0.35rem;
   right: -0.35rem;
@@ -2291,7 +2253,7 @@ exports[`<Account /> should render correctly with requestVerificationEmailResult
   left: -0.35rem;
   content: '';
   display: block;
-  border: solid #007dfa3C 0.2rem;
+  border: solid #44aeff 0.2rem;
   border-radius: 0.5rem;
   pointer-events: none;
 }
@@ -2333,13 +2295,11 @@ exports[`<Account /> should render correctly with requestVerificationEmailResult
   box-shadow: none;
 }
 
-.c8:focus-within,
-.c8:focus {
+.c8:focus-visible {
   outline: none !important;
 }
 
-.c8:focus-within::after,
-.c8:focus::after {
+.c8:focus-visible::after {
   position: absolute;
   top: -0.35rem;
   right: -0.35rem;
@@ -2347,7 +2307,7 @@ exports[`<Account /> should render correctly with requestVerificationEmailResult
   left: -0.35rem;
   content: '';
   display: block;
-  border: solid #007dfa3C 0.2rem;
+  border: solid #44aeff 0.2rem;
   border-radius: 0.5rem;
   pointer-events: none;
 }
@@ -2406,9 +2366,8 @@ exports[`<Account /> should render correctly with requestVerificationEmailResult
 }
 
 @media (prefers-color-scheme:dark) {
-  .c5:focus-within::after,
-  .c5:focus::after {
-    border-color: #007dfa3C;
+  .c5:focus-visible::after {
+    border-color: #ffffff;
   }
 }
 
@@ -2444,9 +2403,8 @@ exports[`<Account /> should render correctly with requestVerificationEmailResult
 }
 
 @media (prefers-color-scheme:dark) {
-  .c8:focus-within::after,
-  .c8:focus::after {
-    border-color: #007dfa3C;
+  .c8:focus-visible::after {
+    border-color: #ffffff;
   }
 }
 
@@ -2748,13 +2706,11 @@ exports[`<Account /> should render correctly with requestingVerificationEmail=tr
   cursor: default;
 }
 
-.c5:focus-within,
-.c5:focus {
+.c5:focus-visible {
   outline: none !important;
 }
 
-.c5:focus-within::after,
-.c5:focus::after {
+.c5:focus-visible::after {
   position: absolute;
   top: -0.35rem;
   right: -0.35rem;
@@ -2762,7 +2718,7 @@ exports[`<Account /> should render correctly with requestingVerificationEmail=tr
   left: -0.35rem;
   content: '';
   display: block;
-  border: solid #007dfa3C 0.2rem;
+  border: solid #44aeff 0.2rem;
   border-radius: 0.5rem;
   pointer-events: none;
 }
@@ -2804,13 +2760,11 @@ exports[`<Account /> should render correctly with requestingVerificationEmail=tr
   box-shadow: none;
 }
 
-.c18:focus-within,
-.c18:focus {
+.c18:focus-visible {
   outline: none !important;
 }
 
-.c18:focus-within::after,
-.c18:focus::after {
+.c18:focus-visible::after {
   position: absolute;
   top: -0.35rem;
   right: -0.35rem;
@@ -2818,7 +2772,7 @@ exports[`<Account /> should render correctly with requestingVerificationEmail=tr
   left: -0.35rem;
   content: '';
   display: block;
-  border: solid #007dfa3C 0.2rem;
+  border: solid #44aeff 0.2rem;
   border-radius: 0.5rem;
   pointer-events: none;
 }
@@ -2915,9 +2869,8 @@ exports[`<Account /> should render correctly with requestingVerificationEmail=tr
 }
 
 @media (prefers-color-scheme:dark) {
-  .c5:focus-within::after,
-  .c5:focus::after {
-    border-color: #007dfa3C;
+  .c5:focus-visible::after {
+    border-color: #ffffff;
   }
 }
 
@@ -2953,9 +2906,8 @@ exports[`<Account /> should render correctly with requestingVerificationEmail=tr
 }
 
 @media (prefers-color-scheme:dark) {
-  .c18:focus-within::after,
-  .c18:focus::after {
-    border-color: #007dfa3C;
+  .c18:focus-visible::after {
+    border-color: #ffffff;
   }
 }
 
@@ -3114,13 +3066,11 @@ exports[`<Account /> should render correctly with user with emailVerified=true 1
   box-shadow: none;
 }
 
-.c5:focus-within,
-.c5:focus {
+.c5:focus-visible {
   outline: none !important;
 }
 
-.c5:focus-within::after,
-.c5:focus::after {
+.c5:focus-visible::after {
   position: absolute;
   top: -0.35rem;
   right: -0.35rem;
@@ -3128,7 +3078,7 @@ exports[`<Account /> should render correctly with user with emailVerified=true 1
   left: -0.35rem;
   content: '';
   display: block;
-  border: solid #007dfa3C 0.2rem;
+  border: solid #44aeff 0.2rem;
   border-radius: 0.5rem;
   pointer-events: none;
 }
@@ -3183,9 +3133,8 @@ exports[`<Account /> should render correctly with user with emailVerified=true 1
 }
 
 @media (prefers-color-scheme:dark) {
-  .c5:focus-within::after,
-  .c5:focus::after {
-    border-color: #007dfa3C;
+  .c5:focus-visible::after {
+    border-color: #ffffff;
   }
 }
 

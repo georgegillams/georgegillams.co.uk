@@ -32,14 +32,12 @@ exports[`<Layout /> Should render correctly 1`] = `
   border-radius: 0.25rem;
 }
 
-.c6:focus-within,
-.c6:focus {
+.c6:focus-visible {
   position: relative;
   outline: none !important;
 }
 
-.c6:focus-within::after,
-.c6:focus::after {
+.c6:focus-visible::after {
   position: absolute;
   top: -0.35rem;
   right: -0.35rem;
@@ -47,7 +45,7 @@ exports[`<Layout /> Should render correctly 1`] = `
   left: -0.35rem;
   content: '';
   display: block;
-  border: solid #007dfa3C 0.2rem;
+  border: solid #44aeff 0.2rem;
   border-radius: 0.5rem;
   pointer-events: none;
 }
@@ -71,7 +69,7 @@ exports[`<Layout /> Should render correctly 1`] = `
   font-weight: bold;
 }
 
-.c14 {
+.c11 {
   display: inline-block;
   border-radius: 0.25rem;
   font-weight: bold;
@@ -82,14 +80,12 @@ exports[`<Layout /> Should render correctly 1`] = `
   fill: white;
 }
 
-.c14:focus-within,
-.c14:focus {
+.c11:focus-visible {
   position: relative;
   outline: none !important;
 }
 
-.c14:focus-within::after,
-.c14:focus::after {
+.c11:focus-visible::after {
   position: absolute;
   top: -0.35rem;
   right: -0.35rem;
@@ -97,21 +93,21 @@ exports[`<Layout /> Should render correctly 1`] = `
   left: -0.35rem;
   content: '';
   display: block;
-  border: solid #007dfa3C 0.2rem;
+  border: solid #44aeff 0.2rem;
   border-radius: 0.5rem;
   pointer-events: none;
 }
 
-.c14:hover {
+.c11:hover {
   color: white;
   fill: white;
 }
 
-.c15 {
+.c12 {
   margin: 0;
 }
 
-.c12 {
+.c14 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -131,7 +127,7 @@ exports[`<Layout /> Should render correctly 1`] = `
   margin: auto;
 }
 
-.c13 > * {
+.c15 > * {
   margin: 0.5rem 0.5rem 0 0.5rem;
   display: -webkit-box;
   display: -webkit-flex;
@@ -178,7 +174,7 @@ exports[`<Layout /> Should render correctly 1`] = `
   align-items: center;
 }
 
-.c11 {
+.c13 {
   display: inline-block;
   width: 100%;
   max-width: 2.3rem;
@@ -189,7 +185,7 @@ exports[`<Layout /> Should render correctly 1`] = `
   filter: brightness(0) invert(1);
 }
 
-.c11:hover {
+.c13:hover {
   -webkit-filter: brightness(0) invert(1) opacity(70%);
   filter: brightness(0) invert(1) opacity(70%);
 }
@@ -251,9 +247,8 @@ exports[`<Layout /> Should render correctly 1`] = `
 }
 
 @media (prefers-color-scheme:dark) {
-  .c6:focus-within::after,
-  .c6:focus::after {
-    border-color: #007dfa3C;
+  .c6:focus-visible::after {
+    border-color: #ffffff;
   }
 }
 
@@ -270,19 +265,18 @@ exports[`<Layout /> Should render correctly 1`] = `
 }
 
 @media (prefers-color-scheme:dark) {
-  .c14:focus-within::after,
-  .c14:focus::after {
-    border-color: #007dfa3C;
+  .c11:focus-visible::after {
+    border-color: #ffffff;
   }
 }
 
 @media (prefers-color-scheme:dark) {
-  .c14 {
+  .c11 {
     color: white;
     fill: white;
   }
 
-  .c14:hover {
+  .c11:hover {
     color: white;
     fill: white;
   }
@@ -346,152 +340,167 @@ exports[`<Layout /> Should render correctly 1`] = `
           >
             Built in
             <a
+              class="c11"
               href="https://reactjs.org/"
               rel="noopener noreferrer"
               target="_blank"
             >
-              <img
-                alt="React"
-                class="c11"
-                height="5"
-                width="5"
-              />
+              <span
+                class="c12"
+              >
+                <img
+                  alt="React"
+                  class="c13"
+                  height="5"
+                  width="5"
+                />
+              </span>
             </a>
-            and
+            with
             <a
+              class="c11"
               href="https://redux.js.org/"
               rel="noopener noreferrer"
               target="_blank"
             >
-              <img
-                alt="Redux"
-                class="c11"
-                height="5"
-                width="5"
-              />
+              <span
+                class="c12"
+              >
+                <img
+                  alt="Redux"
+                  class="c13"
+                  height="5"
+                  width="5"
+                />
+              </span>
             </a>
             Hosted on
             <a
+              class="c11"
               href="https://aws.amazon.com/"
               rel="noopener noreferrer"
               target="_blank"
             >
-              <img
-                alt="Amazon Web Services"
-                class="c11"
-                height="5"
-                style="margin-top: .8rem; max-width: 2.9rem;"
-                width="8.28"
-              />
+              <span
+                class="c12"
+              >
+                <img
+                  alt="Amazon Web Services"
+                  class="c13"
+                  height="5"
+                  style="margin-top: .8rem; max-width: 2.9rem;"
+                  width="8.28"
+                />
+              </span>
             </a>
           </span>
         </div>
         <div
-          class="c12 "
+          class="c14 "
         >
           <div
-            class="c13"
+            class="c15"
           >
             <a
-              class="c14"
+              class="c11"
               href="/blog"
             >
               <span
-                class="c15"
+                class="c12"
               >
                 Blog
               </span>
             </a>
             <a
-              class="c14"
+              class="c11"
               href="/photography"
             >
               <span
-                class="c15"
+                class="c12"
               >
                 Photography
               </span>
             </a>
             <a
-              class="c14"
+              class="c11"
               href="/reading-list"
             >
               <span
-                class="c15"
+                class="c12"
               >
                 Reading list
               </span>
             </a>
             <a
-              class="c14"
+              class="c11"
               href="/races"
             >
               <span
-                class="c15"
+                class="c12"
               >
                 Races
               </span>
             </a>
             <a
-              class="c14"
+              class="c11"
               href="/work"
             >
               <span
-                class="c15"
+                class="c12"
               >
                 Work
               </span>
             </a>
           </div>
           <div
-            class="c13"
+            class="c15"
           >
             <a
-              class="c14"
+              class="c11"
               href="/contact"
             >
               <span
-                class="c15"
+                class="c12"
               >
                 Contact
               </span>
             </a>
             <a
-              class="c14"
+              class="c11"
               href="/sitemap"
             >
               <span
-                class="c15"
+                class="c12"
               >
                 Site map
               </span>
             </a>
             <a
-              class="c14"
+              class="c11"
               href="/privacy-policy"
             >
               <span
-                class="c15"
+                class="c12"
               >
                 Privacy
               </span>
             </a>
             <a
-              class="c14"
+              class="c11"
               href="/login"
             >
               <span
-                class="c15"
+                class="c12"
               >
                 Login/Account
               </span>
             </a>
             <a
-              class="c14"
+              class="c11"
               href="/status"
             >
               <span
-                class="c15"
+                class="c12"
               >
                 Status
               </span>
@@ -536,14 +545,12 @@ exports[`<Layout /> Should render correctly with spread props 1`] = `
   border-radius: 0.25rem;
 }
 
-.c6:focus-within,
-.c6:focus {
+.c6:focus-visible {
   position: relative;
   outline: none !important;
 }
 
-.c6:focus-within::after,
-.c6:focus::after {
+.c6:focus-visible::after {
   position: absolute;
   top: -0.35rem;
   right: -0.35rem;
@@ -551,7 +558,7 @@ exports[`<Layout /> Should render correctly with spread props 1`] = `
   left: -0.35rem;
   content: '';
   display: block;
-  border: solid #007dfa3C 0.2rem;
+  border: solid #44aeff 0.2rem;
   border-radius: 0.5rem;
   pointer-events: none;
 }
@@ -575,7 +582,7 @@ exports[`<Layout /> Should render correctly with spread props 1`] = `
   font-weight: bold;
 }
 
-.c14 {
+.c11 {
   display: inline-block;
   border-radius: 0.25rem;
   font-weight: bold;
@@ -586,14 +593,12 @@ exports[`<Layout /> Should render correctly with spread props 1`] = `
   fill: white;
 }
 
-.c14:focus-within,
-.c14:focus {
+.c11:focus-visible {
   position: relative;
   outline: none !important;
 }
 
-.c14:focus-within::after,
-.c14:focus::after {
+.c11:focus-visible::after {
   position: absolute;
   top: -0.35rem;
   right: -0.35rem;
@@ -601,21 +606,21 @@ exports[`<Layout /> Should render correctly with spread props 1`] = `
   left: -0.35rem;
   content: '';
   display: block;
-  border: solid #007dfa3C 0.2rem;
+  border: solid #44aeff 0.2rem;
   border-radius: 0.5rem;
   pointer-events: none;
 }
 
-.c14:hover {
+.c11:hover {
   color: white;
   fill: white;
 }
 
-.c15 {
+.c12 {
   margin: 0;
 }
 
-.c12 {
+.c14 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -635,7 +640,7 @@ exports[`<Layout /> Should render correctly with spread props 1`] = `
   margin: auto;
 }
 
-.c13 > * {
+.c15 > * {
   margin: 0.5rem 0.5rem 0 0.5rem;
   display: -webkit-box;
   display: -webkit-flex;
@@ -682,7 +687,7 @@ exports[`<Layout /> Should render correctly with spread props 1`] = `
   align-items: center;
 }
 
-.c11 {
+.c13 {
   display: inline-block;
   width: 100%;
   max-width: 2.3rem;
@@ -693,7 +698,7 @@ exports[`<Layout /> Should render correctly with spread props 1`] = `
   filter: brightness(0) invert(1);
 }
 
-.c11:hover {
+.c13:hover {
   -webkit-filter: brightness(0) invert(1) opacity(70%);
   filter: brightness(0) invert(1) opacity(70%);
 }
@@ -755,9 +760,8 @@ exports[`<Layout /> Should render correctly with spread props 1`] = `
 }
 
 @media (prefers-color-scheme:dark) {
-  .c6:focus-within::after,
-  .c6:focus::after {
-    border-color: #007dfa3C;
+  .c6:focus-visible::after {
+    border-color: #ffffff;
   }
 }
 
@@ -774,19 +778,18 @@ exports[`<Layout /> Should render correctly with spread props 1`] = `
 }
 
 @media (prefers-color-scheme:dark) {
-  .c14:focus-within::after,
-  .c14:focus::after {
-    border-color: #007dfa3C;
+  .c11:focus-visible::after {
+    border-color: #ffffff;
   }
 }
 
 @media (prefers-color-scheme:dark) {
-  .c14 {
+  .c11 {
     color: white;
     fill: white;
   }
 
-  .c14:hover {
+  .c11:hover {
     color: white;
     fill: white;
   }
@@ -850,152 +853,167 @@ exports[`<Layout /> Should render correctly with spread props 1`] = `
           >
             Built in
             <a
+              class="c11"
               href="https://reactjs.org/"
               rel="noopener noreferrer"
               target="_blank"
             >
-              <img
-                alt="React"
-                class="c11"
-                height="5"
-                width="5"
-              />
+              <span
+                class="c12"
+              >
+                <img
+                  alt="React"
+                  class="c13"
+                  height="5"
+                  width="5"
+                />
+              </span>
             </a>
-            and
+            with
             <a
+              class="c11"
               href="https://redux.js.org/"
               rel="noopener noreferrer"
               target="_blank"
             >
-              <img
-                alt="Redux"
-                class="c11"
-                height="5"
-                width="5"
-              />
+              <span
+                class="c12"
+              >
+                <img
+                  alt="Redux"
+                  class="c13"
+                  height="5"
+                  width="5"
+                />
+              </span>
             </a>
             Hosted on
             <a
+              class="c11"
               href="https://aws.amazon.com/"
               rel="noopener noreferrer"
               target="_blank"
             >
-              <img
-                alt="Amazon Web Services"
-                class="c11"
-                height="5"
-                style="margin-top: .8rem; max-width: 2.9rem;"
-                width="8.28"
-              />
+              <span
+                class="c12"
+              >
+                <img
+                  alt="Amazon Web Services"
+                  class="c13"
+                  height="5"
+                  style="margin-top: .8rem; max-width: 2.9rem;"
+                  width="8.28"
+                />
+              </span>
             </a>
           </span>
         </div>
         <div
-          class="c12 "
+          class="c14 "
         >
           <div
-            class="c13"
+            class="c15"
           >
             <a
-              class="c14"
+              class="c11"
               href="/blog"
             >
               <span
-                class="c15"
+                class="c12"
               >
                 Blog
               </span>
             </a>
             <a
-              class="c14"
+              class="c11"
               href="/photography"
             >
               <span
-                class="c15"
+                class="c12"
               >
                 Photography
               </span>
             </a>
             <a
-              class="c14"
+              class="c11"
               href="/reading-list"
             >
               <span
-                class="c15"
+                class="c12"
               >
                 Reading list
               </span>
             </a>
             <a
-              class="c14"
+              class="c11"
               href="/races"
             >
               <span
-                class="c15"
+                class="c12"
               >
                 Races
               </span>
             </a>
             <a
-              class="c14"
+              class="c11"
               href="/work"
             >
               <span
-                class="c15"
+                class="c12"
               >
                 Work
               </span>
             </a>
           </div>
           <div
-            class="c13"
+            class="c15"
           >
             <a
-              class="c14"
+              class="c11"
               href="/contact"
             >
               <span
-                class="c15"
+                class="c12"
               >
                 Contact
               </span>
             </a>
             <a
-              class="c14"
+              class="c11"
               href="/sitemap"
             >
               <span
-                class="c15"
+                class="c12"
               >
                 Site map
               </span>
             </a>
             <a
-              class="c14"
+              class="c11"
               href="/privacy-policy"
             >
               <span
-                class="c15"
+                class="c12"
               >
                 Privacy
               </span>
             </a>
             <a
-              class="c14"
+              class="c11"
               href="/login"
             >
               <span
-                class="c15"
+                class="c12"
               >
                 Login/Account
               </span>
             </a>
             <a
-              class="c14"
+              class="c11"
               href="/status"
             >
               <span
-                class="c15"
+                class="c12"
               >
                 Status
               </span>

@@ -17,14 +17,12 @@ exports[`<Coffee /> should render correctly 1`] = `
   fill: #9932cc;
 }
 
-.c7:focus-within,
-.c7:focus {
+.c7:focus-visible {
   position: relative;
   outline: none !important;
 }
 
-.c7:focus-within::after,
-.c7:focus::after {
+.c7:focus-visible::after {
   position: absolute;
   top: -0.35rem;
   right: -0.35rem;
@@ -32,7 +30,7 @@ exports[`<Coffee /> should render correctly 1`] = `
   left: -0.35rem;
   content: '';
   display: block;
-  border: solid #007dfa3C 0.2rem;
+  border: solid #44aeff 0.2rem;
   border-radius: 0.5rem;
   pointer-events: none;
 }
@@ -125,9 +123,8 @@ exports[`<Coffee /> should render correctly 1`] = `
 }
 
 @media (prefers-color-scheme:dark) {
-  .c7:focus-within::after,
-  .c7:focus::after {
-    border-color: #007dfa3C;
+  .c7:focus-visible::after {
+    border-color: #ffffff;
   }
 }
 
