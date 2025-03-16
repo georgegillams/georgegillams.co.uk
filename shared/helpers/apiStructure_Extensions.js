@@ -33,6 +33,30 @@ const apiStructureExtensions = {
 
   // Photo showcase
   loadShowcaseImages: { method: GET, path: '/photo-showcase/load-all' },
+
+  // Webhooks
+  createWebhookEndpoint: {
+    method: POST,
+    path: '/webhooks/create',
+  },
+  deleteWebhookEndpoint: {
+    method: POST,
+    path: '/webhooks/delete',
+  },
+  loadWebhookEndpoints: {
+    method: GET,
+    path: '/webhooks/load-all',
+  },
+  loadWebhookNotifications: {
+    method: GET,
+    path: '/webhooks/notifications/load-all/:id',
+  },
+
+  // Webhook notifications
+  createWebhookNotification: {
+    method: POST,
+    path: '/v1/webhook/:id/notification',
+  },
 };
 
 export default { apiStructureExtensions };

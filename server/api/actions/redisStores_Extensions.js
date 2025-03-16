@@ -7,6 +7,8 @@ const REDIS_STORE_EXTENSIONS = [
   'stripepayments',
   'support',
   'userDetails',
+  'webhooks',
+  'webhook-notifications',
 ];
 
 export default { REDIS_STORE_EXTENSIONS };
